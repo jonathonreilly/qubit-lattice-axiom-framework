@@ -272,3 +272,184 @@ shows two things about the form (PROVED parts marked).
    without any change of S_ev. This is a reason to prefer (SEAM-L1); it is not a computed fact.
 
 Status of the plan: steps 1-5 done. Step 6 (the SU(2) attack) next.
+
+## 6. STEP B: the attack on (SEAM) for SU(2) Wilson at beta 2.3-2.6 (step 6)
+
+Outcome first. (SEAM) is NOT proved. What is proved here is a bracket: (SEAM)_a lies between the
+glue half at time a (below, row 920) and a thermal sum at a later time times one seam number
+(above, Proposition Q, new). So the seam form holds no content that is easier than a thermal seed.
+The SU(2)-specific step, a seed at order one, stays OPEN. Details follow.
+
+Ceilings read for this step (status file `library/gap-status-1113.md` lines 68, 110, 112, 341;
+READ, not re-derived): worst-case single-link criteria stop at beta 1/3, the area-law chart at 2/3,
+vertex blocks with worst-case single-link responses at 0.775, background-uniform layer twist
+bounds at 4 G_3 = 1.0109. The window 2.3-2.6 is above all of them.
+
+### 6.1 The junction lemma and Proposition Q (PROVED, group-blind; by hand; not yet checked)
+
+Notation (row 863 I1, READ through row 920 3a): nu = Omega^2 dU; P = Omega^(-1) (T/lambda_0) Omega
+is the self-adjoint Markov operator of the vacuum chain on L^2(nu), with eigenfunctions phi_i =
+e_i/Omega and eigenvalues r_i in (0, 1] on gauge-invariant functions (all eight centre sectors),
+r_0 = 1. N_theta = Nt_theta/lambda_0, n(theta) = <Omega, N_theta Omega> = Phi_theta/lambda_0^2 > 0.
+Nt_theta is symmetric: K_theta(U, W; U', W') = K_theta(U', W'; U, W) (invert g, h; A1 and A2 are
+symmetric, B1 and B2 exchange). P_theta = E_theta^inf, the doubled vacuum with the seam.
+
+Lemma J (junction; PROVED). Under P_theta let Z_0 = (U, U'), and Z_k = (Y'_k, Y_k), where Y'_k is
+copy 1's slice k steps before U and Y_k its slice k steps after U'. Then:
+(a) Z_0 has density kappa_(theta,0)(U, U') = N_theta(U, U')/(n(theta) Omega(U) Omega(U')) with
+    respect to nu x nu.
+(b) (Z_k) is a Markov chain with the product kernel P x P, whatever theta is. Its law at step k has
+    density kappa_(theta,k) = (P x P)^k kappa_(theta,0) with respect to nu x nu, and
+    1 + X_theta(k) := ||kappa_(theta,k)||^2 in L^2(nu x nu) = Tr[(T^ ^k N_theta T^ ^k)^2]/n(theta)^2,
+    T^ = T/lambda_0. X_theta(k) is the chi-square distance of the law of Z_k from nu x nu.
+    X_0(k) = S(4k + 2), the full gauge-invariant thermal sum at time 4k + 2; X_1(k) = 0.
+(c) Given Z_0, the seam variables (W, W', g, h) are independent of (Z_k), k >= 1. So with
+    f_theta(Z_0) := E[delta_l | Z_0] (|f_theta| <= 4): E[delta_l | Z_k] = E[f_theta(Z_0) | Z_k].
+Proof. The copy-1 density of (Y'_k, ..., U; U', ..., Y_k) under P_theta is proportional to
+Omega(Y'_k) T^ ^k(Y'_k, U) N_theta(U, U') T^ ^k(U', Y_k) Omega(Y_k), because T^ ^k Omega = Omega
+extends each vacuum half-line by k steps. Dividing by Omega(U) and Omega(U') shows that, given
+(U, U'), Y'_k and Y_k are independent with laws P^k(U, .) and P^k(U', .). This is (b) and (c);
+(a) is k = 0. The density formula uses the reversibility of P x P for nu x nu. The trace formula:
+kappa_(theta,k)(Y', Y) = (T^ ^k N_theta T^ ^k)(Y', Y)/(n Omega(Y') Omega(Y)). Endpoints: N_0 = T^,
+N_1 = |Omega><Omega| (row 920 Lemma S2). QED
+Reading. The whole theta-family is one fixed product chain P x P with a theta-dependent initial
+law. All dependence on theta sits in kappa_(theta,0), that is in the pair law of (U, U').
+
+Proposition Q (a one-link bound on Delta_theta by two global numbers; PROVED). Let k >= 0 be an
+integer with n := a - 1 - 2k >= 1, and
+  y_theta := sqrt( S_ev(2n) (1 + X_theta(k)) ),   2n = 2a - 2 - 4k.
+Then |Delta_theta(a; b)| E_theta^inf[rho] <= 8 y_theta, and E_theta^inf[rho] >= 1 - y_theta. So if
+y_theta < 1 then |Delta_theta(a; b)| <= 8 y_theta/(1 - y_theta).
+Proof. By row 920 C3 (first identity, check 921 Section 7) with d = k: the ring law has density
+q/E[q] on Z_k, q = pbar_n(Y_k, Y'_k), and Delta_theta E[q] = Cov(delta_l, q(Z_k)). Put dbar =
+E[delta_l] and H := (f_k - dbar) kappa_(theta,k), f_k = E[f_theta(Z_0) | Z_k] (Lemma J (c)). For
+every square-integrable g: E[(delta_l - dbar) g(Z_k)] = <H, g> in L^2(nu x nu). So
+Delta_theta E[q] = <H, q - 1> (as <H, 1> = 0). In L^2(nu x nu), q - 1 = sum over even i >= 1 of
+r_i^n phi_i x phi_i, an orthogonal expansion with squared norm S_ev(2n). Cauchy-Schwarz:
+|<H, q - 1>| <= sqrt(S_ev(2n)) ||H||, and ||H||^2 <= 64 ||kappa_(theta,k)||^2 = 64 (1 + X_theta(k))
+since |f_k - dbar| <= 8. Also E[q] = 1 + <kappa_(theta,k) - 1, q - 1> >= 1 - sqrt(S_ev(2n) X_theta(k)).
+QED
+The weight kappa cancels exactly in <H, q - 1>; no pointwise bound on a density is used, and no
+supremum over environments. The constant 8 is one link's oscillation: there is no factor b^3.
+
+Corollaries (PROVED).
+(Q1) (SEAM)_a holds if sup_theta y_theta <= psi_*(a, beta)/9. Neither (I2) nor a local (I3) is
+     needed; (I1) is not needed either. What suffices is: the even thermal sum at the later time
+     2a - 2 - 4k, and X(k) := sup_theta X_theta(k), the seam pair's chi-square distance from product.
+(Q2) The bracket. (SEAM)_a implies S_ev(a) <= 1/10 (row 920). (SEAM)_a is implied by
+     S_ev(2a - 2 - 4k) (1 + X(k)) <= (psi_*/9)^2. So the sup form costs, over the glue half, at
+     most a later time and the one number X(k).
+(Q3) Q cannot prove the glue half. Summing Q over the seam, log(1 + S_ev(a)) <= 24 beta b^3
+     sup_theta y_theta/(1 - y_theta). At theta = 0, y_0^2 = S_ev(2a - 2 - 4k)(1 + S(4k + 2)), and
+     S_ev(a)^2 <= S_ev(2a - 2 - 4k) S_ev(4k + 2) holds already by Cauchy-Schwarz on the eigenvalue
+     sum. So the summed bound is that trivial inequality, weakened by 24 beta b^3 and a supremum.
+(Q4) Answer to "the weakest of (I1)-(I3) that suffices": none of them in local form. Their job in
+     C3 is done by S_ev(2n) and X(k). But both are thermal sums (X_theta(k) + 1 is the normalized
+     partition function of a ring of length 4k + 2 with two seams). No input below a seed remains.
+
+Where the photon breaks Q (the exact step). In FP, S_ev(2n) is the product of Theorem A1 at time
+2n. The 26 lowest momenta give log(1 + S_ev(2n)) >= 52 e^(-2n omega) with 2n omega <= 2a * 0.4535/a
+< 1, so log(1 + S_ev(2n)) > 52/e > 19, S_ev(2n) > e^19 - 1, and y_theta > 1 for every theta: the hypothesis of Q fails at the factor S_ev(2n), at every size. The
+failing object is the count of soft even states, sum_i r_i^(2n), not the seam. For frozen Q_8 and
+2T the same factor fails by the degenerate flat states (Section 7).
+
+Lemma SP (spectral form of the Lipschitz function; PROVED). With F as in Section 5,
+  e^(F(theta)) = 1 + sum over even i >= 1 of r_i^(a-1) n_i(theta),
+  n_i(theta) := <e_i, N_theta e_i>/n(theta),  n_i(0) = r_i,  n_i(1) = 0.
+Proof. Tr(T^(a-1) P_0 Nt_theta) = sum over even i of lambda_i^(a-1) <e_i, Nt_theta e_i> (T trace
+class, Nt_theta bounded and centre-commuting by S1); divide by lambda_0^(a-1) <Omega, Nt_theta Omega>;
+endpoints by S2. QED
+So (SEAM) asks that the weighted count sum_i r_i^(a-1) n_i(theta) move slowly in theta. A proof
+needs the count itself.
+
+### 6.2 Routes tried in this session, and where each stops
+
+1. Global L^2 derivative. e^F - 1 = Tr(R M_theta) with R the off-vacuum part of T^ ^t and
+   M_theta = T^ ^d N_theta T^ ^d/n(theta); then S_ev(tau) <= sqrt(S_ev(2t)) sup_theta ||Q M'_theta Q||_HS.
+   True, and empty: for any path from Q M_0 Q = Q T^ ^(2d+1) Q to Q M_1 Q = 0 the supremum of the
+   derivative norm is at least the distance sqrt(S_ev(4d + 2)). The only non-empty content of
+   (SEAM) is that delta_l is one link (no b^3); Q keeps exactly that.
+2. Continuity in the time extent. S_ev(tau) is continuous, decreasing, and tends to 0. An
+   inequality s(a) <= A sqrt(s(2a - c)) iterates to s(a) <= A^2 r_1^(a - c), which removes the
+   extensive multiplicity. But A carries 1 + X_0(k) >= 1 + S(4k + 2), and the result is weaker
+   than row 895's G1, S_ev(a) <= r_1^(a - t_0) S_ev(t_0) (this is (Q3) again). Stop.
+3. Hoelder in theta. K_theta <= K_0^(1-theta) K_1^theta pointwise, so log Z_theta(a) and
+   log Phi_theta are convex (row 920 Stop V has this). F is their difference; the reference enters
+   with the wrong sign and costs the extensive seam free energy log(lambda_0^2/Phi_theta). Stop.
+4. Curvature of the group (the property U(1) lacks: Ric > 0 on SU(2), Ric = 0 on U(1)). This is
+   row 920's Route L. Bakry-Emery needs Hess of the action above -Ric; proved range beta < 1/4
+   (READ through row 920). Not improved here. The photon breaks it at the zero modes of the
+   Hessian with no curvature to pay for them.
+5. The centre. U(1) contains Z_2, and in FP the even fluxes e = 2j alone give S_ev > 21 at
+   beta >= 1 (Theorem A2): centre-evenness does not help a group with a larger centre. For SU(2)
+   the centre is exactly Z_2, so there is no even flux tower. This removes the torelons, not the
+   photon; it is a necessary property and proves nothing by itself.
+6. The abelian seam identity. For U(1) the four seam plaquette angles of one link satisfy
+   phi_B1 + phi_B2 = phi_A1 + phi_A2 exactly, and the seam decouples mode by mode into the 4 x 4
+   forms of Proposition G. SU(2) has no such identity. This explains why Step A is solvable; it
+   gives no bound for SU(2).
+7. Worst-case local criteria for X_theta(k) or S_ev. Excluded in the window by the ceilings above
+   (2.3 > 1.0109), for the families those rows cover.
+
+### 6.3 Verdict of Step B
+
+- (SEAM)_a at beta 2.3-2.6: OPEN. Not proved, not refuted.
+- New and PROVED: Lemma J, Proposition Q with (Q1)-(Q4), Lemma SP. They show that (SEAM) is
+  bracketed by thermal sums, so it is not an independent handle on the seed.
+- The property U(1) lacks that a proof must use is a bound on the count of even states,
+  sum_i r_i^t, at some time: in FP the 26 softest momenta already break it. Every reduction of
+  this session returns to that count. No argument found here supplies it for SU(2) at order one.
+- What would be a real advance (proposals, not results): (i) any bound on X(k) = sup_theta
+  X_theta(k) in terms of X_0(k) = S(4k + 2); this is the only place where an intermediate theta
+  enters, and it would make the sup form equivalent to thermal sums; (ii) work with (SEAM-L1) or
+  with the thermal sums directly, since by (Q2)-(Q3) the seam adds no leverage.
+
+## 7. Binding checks (step 7)
+
+- Group-blindness. Lemma J, Proposition Q and Lemma SP use only: T positive, trace class, with a
+  simple positive vacuum; S1, S2; C3's first identity. They hold verbatim for Wilson U(1) with the
+  flips of Z_2, and for Q_8 and 2T with Haar sums (their one-link kernels are positive, because
+  the powers of the fundamental character have non-negative character coefficients). None of them
+  asserts smallness, so none can contradict a fact test.
+- Frozen Q_8, 2T (check 896 D6, through check 921 Section 12.2). On a fixed box at large finite
+  beta, S_ev(t) >= 1/2 at the times covered there. Then y_theta >= sqrt(1/2) for every theta, far
+  above psi_*/9: the hypothesis of (Q1) fails, as it must, at the factor S_ev(2n). The failing
+  object is again the even count (the second flat state), not the seam. (SEAM-L1) fails there too,
+  since it implies the glue half.
+- Free photon (Section 4). Fails (GLUE-FP), (SEAM), (SEAM-L1) and the hypothesis of (Q1) at every
+  size; the failing factor is S_ev.
+- Frozen Z_2. Row 920 and check 921 Section 12.3: S_ev -> 0 on a fixed box. Proposition Q then
+  bounds Delta_theta wherever X_theta(k) stays bounded; X_theta(k) for frozen Z_2 was not
+  computed here (OPEN, not needed).
+- Ceilings 2/3, 0.775, 4 G_3 = 1.0109. They bound methods that take a supremum over backgrounds or
+  exteriors. Proposition Q takes none: its only pointwise input is |delta_l| <= 4. So Q is not
+  capped by them, and it also proves nothing at order one. Any attempt to supply S_ev(2n) or X(k)
+  by worst-case block criteria at beta 2.3-2.6 lies above all three ceilings.
+- The seed thresholds of Theorem SH and row 918's margins are not used anywhere in this note.
+
+## 8. Result (step 8)
+
+| Statement | Label |
+|---|---|
+| Lemma M, Lemma F, Theorem A1: exact S_ev of the free-photon model FP | PROVED (hand) |
+| Theorem A2: log(1 + S_ev(a; (24a)^3)) > 31 in FP for every a and beta | PROVED (hand) |
+| Proposition G: one-mode seam determinant, closed form of Delta on path G, (INS) by algebra, Delta^G > 0 | PROVED (hand); cross-checked by a GUIDE run |
+| U(1) (FP) fails (GLUE-FP) and (SEAM)_a at every a; factor > 325 | PROVED given check 921 Section 4 |
+| The factor is 3.2e4; table of Section 4; layer sizes a^-2, interior a^-4, average a^-3 | GUIDE (lattice sums), ARGUED (limits) |
+| "a^-4 against a^-3": the endpoint is 3/(2a) times the average; no contradiction with (INS) | ARGUED (limits), GUIDE (table) |
+| Compact Wilson U(1) at beta 2.3 fails | GUIDE only (photon assumed) |
+| (SEAM) is |F'| <= log 1.1; recommended form (SEAM-L1) | PROVED (reformulation); recommendation |
+| Lemma J (junction: one product chain, theta only in the initial law) | PROVED (hand), not yet checked |
+| Proposition Q and (Q1)-(Q4): |Delta_theta| <= 8y/(1 - y), y^2 = S_ev(2a-2-4k)(1 + X_theta(k)) | PROVED (hand), not yet checked |
+| Lemma SP (spectral form of F) | PROVED (hand), not yet checked |
+| (SEAM)_a, (SEAM-L1)_a, (GLUE-FP)_a for SU(2) at beta 2.3-2.6 | OPEN |
+| A bound on X(k) = sup_theta X_theta(k) by X_0(k) | OPEN |
+| (I1)-(I3) at order one | OPEN (and not needed in local form, by (Q1)) |
+
+Limits of this note. Proofs are by hand and checked by no other model. The numeric run is GUIDE
+only (two short jobs under the machine lock, 141 MB peak; scripts and logs in
+`/tmp/gap-seam-max-929/`, not committed). The Sussman-Alpoge account was used only through rows
+920, 921 (its transfer machinery GL8); the outline was not re-read in this session. Rows 796, 798
+and the PR branches were not opened. Nothing here is a mass gap, and nothing grants status.
+
+Status of the plan: steps 1-8 done.

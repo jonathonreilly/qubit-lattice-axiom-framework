@@ -22,7 +22,7 @@ Marks used: PROVED (every step written here), ARGUED (argument written, a step n
 ## Log
 
 - 22:56Z. File created. Memory free 64 percent (`memory_pressure`). No numeric job started.
-- 23:25Z. Step 1 written (goal and object, read narrowly). Step 2 written (six approaches of my own).
+- 23:08Z. Step 1 written (goal and object, read narrowly). Step 2 written (six approaches of my own).
 
 ## Step 1. Goal and object (read narrowly; no route file, no digest)
 
@@ -71,3 +71,102 @@ Notation: a_T0(beta) is the spacing that the existence chain attaches to beta (t
 **A6. Continuum value.** By (R3), (SEED-phys) on the tail is: limsup over iota of S_iota(ell_*/a_iota; (2 ell_*/a_iota)^3) < 1/5041. This is the continuum value of a ratio of torus partition functions. *Crux lemma (C + N):* the limit exists, and it is below 1/5041 at one ell_*. *First doubt:* the existence chain controls the tr F^2 sector on a small physical torus; the thermal sum is a trace over all gauge-invariant states of a large box.
 
 **Ranking before the fact tests.** A4 has a crux lemma that can be proved now and that changes what the lane's size test asks. A2 has a provable part (the ladder exists, with a dichotomy) and an open crux. A1, A5 and A6 name the inputs that any proof needs from the ultraviolet side. A3 is the weakest. The fact tests come next (Step 3).
+
+## Step 3. Fact tests (before any proof attempt; one verdict per test)
+
+Read for the definitions only: `gap-direction2-max.md` lines 229-270, `gap-assume-opus.md` line 139 (K7), `gap-pca-opus.md` line 319 (FT-FK). No run was made. Every verdict is by hand, with RECALLED facts marked.
+
+The statement under test is (CARRY): *if the seed holds at (beta_0, n_0), then every beta >= beta_0 has a seed at some size n(beta)*, and its strong form (CARRY-AF): *with n(beta) a_T0(beta) bounded*. Each test asks: does (CARRY) hold in the model, and which crux lemma of Step 2 fails there?
+
+| Test | Does (CARRY) hold there? | What fails in the seed | Crux lemmas that must fail there, and do | Crux lemmas that survive |
+|---|---|---|---|---|
+| **Free photon (FP)** | Vacuous. FP has no seed at any size or coupling: it is scale free, E_1 n stays near pi, and the continuum thermal sum of a photon gas in the box (2 ell)^3 at time ell is a fixed number of order e^(1.75) - 1 (Stefan-Boltzmann, RECALLED), far above 1/5041. | The rate: E_1 = omega_min tends to 0 like 1/side. | (HC-phys) of A4 and (N) of A1, A6 fail, as they must. | Lemma IHC of A4 holds in every mode (checked by hand below). (TH) holds. Exact RG invariance (A1) holds. So these three decide no rate, and say so. |
+| **Compact U(1)** | **No.** A seed at small beta is expected (the strong-coupling expansion is group-blind; ARGUED, row 701 is for SU(2)). At large beta the theory has a massless phase (Guth 1980; Frohlich and Spencer 1982; RECALLED), and a seed implies a gap. | The gap. In the Coulomb phase E_1 is at most the lowest photon energy, of order 1/side. | (NO-STALL) of A2: the ladder exists (its proof is group-blind) and stops below the transition. (SUM-RULE) of A3. (HC-phys), (N). | Lemma IHC, the Ladder Lemma, the RG invariance: all group-blind and true. |
+| **Frozen Q_8 and 2T** | **No.** At large beta a finite group freezes; the flat sectors of the periodic box are degenerate up to a splitting that tends to 0 (check 896 D6, ARGUED rate). The thermal sum counts them: S >= (number of flat sectors) - 1, roughly. 2T freezes near 2.15 to 2.2 (RECALLED), below the window point 2.3. | The count and the gap, both. | (NO-STALL), (SUM-RULE), (HC-phys), (N). | The group-blind lemmas. A finite group has no bridge gradient; Lemma IHC still holds (its proof uses only reversibility, (5.3) and Holder). |
+| **SMALL-BOX** | Consistent. At fixed lattice size the seed must fail for large beta. (CARRY) lets n(beta) grow. | E_1 x side tends to 0 on a physically small box. | Any form of A2 or A3 with a step in beta that does not shrink the physical box. | The Ladder Lemma: its intervals [beta_k, beta_(k+1)] end where the seed at size 2^(k+1) n_0 ends. (HC-phys) is asked on a box of large physical size only. |
+| **K7 (mixed weight, first-order line ending near (1.48, 0.90))** | **No, along a line of fixed beta_A above 0.9.** At the coexistence point two bulk phases tie; the box has two near-vacua and E_1 tends to 0 with the volume. On the line through the end point the gap closes continuously (GUIDE fact, RECALLED). Past the line a massive weak-coupling phase is expected again. | The gap at one finite coupling. | (NO-STALL) and (SUM-RULE): **any proof of them that also reads for the mixed weight is wrong.** The ladder of A2 stops at the line although seeds exist beyond it. | The tail forms A1, A4, A5, A6: K7 does not touch the limit beta_F -> infinity. This is (R3) seen in a model. |
+| **FT-FK** | Not a model of (CARRY). | n/a | An A5 step that uses only the kinetic kernel of one layer decides nothing. | Lemma IHC claims no rate, so it passes by claiming nothing. A1, A2, A6 use the whole weight. |
+| **Ceilings 2/3, 0.775, 1.0109** | Bind forms with a supremum over the conditioning slice. | n/a | A finite-size criterion with every boundary condition (Dobrushin-Shlosman type) as a robust form of the seed in A1. Lemma G of Step 5 uses a sup norm of the perturbation and is crude for this reason. | (HC-phys), (TH), IHC are averaged statements with no boundary slice. |
+
+**Hand check of Lemma IHC in one Gaussian mode (PROVED).** For one photon mode of energy omega, X(t) = -log(1 - e^(-omega t)) and (HC-vac) holds with alpha = omega (Nelson). With x = e^(-2 omega s), y = e^(-2 omega m), the claim X(2s + 2m) <= (2y/(1 + y)) X(2s) reads f(x) := (2y/(1 + y))(-log(1 - x)) + log(1 - x y) >= 0. f(0) = 0 and f'(x) = y (1 - y)(1 + x)/((1 + y)(1 - x)(1 - x y)) >= 0. So it holds, and as x -> 0 the two sides differ by the factor 2/(1 + y) <= 2: the lemma is sharp up to that factor.
+
+**What the tests decide.**
+
+1. (CARRY) is false in three models that share every structural property of the object except the group or the weight: compact U(1), the frozen groups, and the mixed weight. So **no group-blind and no weight-blind argument carries a seed upward in beta.** The ladder from the window (A2, A3) has to cross every coupling between beta_0 and infinity, and at each one it needs a fact that is quantitative for the Wilson weight. I see no such fact. A2 keeps its provable part (the ladder and the dichotomy); its crux (NO-STALL) is marked as failing the K7 test in every structural form.
+2. The tail forms pass all tests, because they claim nothing between beta_0 and the tail. By (R3) the tail is all the consumer needs.
+3. **Best approach: A4.** Its crux lemma (IHC) is group-blind and claims no rate, so every test passes; it is provable; and it changes the lane's size test from K_a, which grows without bound in physical units (R2), to a number fixed in physical units. A2's Ladder Lemma is proved beside it, because it states exactly what one seed gives.
+
+## Step 4. Duplicate check for the crux lemma (rule 0a; 23:16Z)
+
+Searched `library/open-core.md`, the FINISH rows and `library/gap-*.md` for: interpolat, Riesz, "start time", "starting time", "tanh(alpha", SEED-rate, Stefan, "constant physics", NO-STALL, ladder, IHC, and the patterns "X(2s", "S(2s + 2m", "from any start", "from a later".
+
+- `open-core.md`: no hit for any of these in the sense used here (4 hits of "interpolat" are block interpolation maps).
+- FINISH rows: "ladder" occurs in rows 609, 610 (rim scale), 899 (finite-subgroup ladder) and 978 (this row). No row states a contraction of X from a later start time, a rate form of (SEED-phys), or the component of seeded couplings.
+- Gap files: the only statements on X(2s) are (5.3) and I(U_0; U_s) <= X(2s) of row 931 (`gap-direction-max.md` L276, L344). Proposition HC starts at s = 1 only (L305-312). "seed-rate" in `gap-lsivac-check-astra.md` L102 is the size test K_a, a different thing.
+
+No match. Lemma IHC, Corollary CU and Lemma LAD are not covered by another row. `gap-phys-seed.md` is read in Step 7, after the attack, as the row orders; if it holds any of them, Step 7 says so.
+
+## Step 5. The attack: Lemma IHC and what follows from it
+
+Setting of row 931 (`gap-direction-max.md` Step 5), any compact gauge group: nu is the vacuum law of a slice of the periodic box B, P the vacuum chain, self-adjoint on L^2(nu) (gauge-invariant functions), p_s(u, .) the density of P^s(u, .) with respect to nu, and (5.3): 1 + S(2s; B) = E_(u ~ nu) ||p_s(u, .)||_2^2 for integers s >= 1.
+
+### 5.1 Lemma IHC (interpolated hypercontractivity). PROVED, group-blind, by hand; not checked by another model
+
+**Statement.** Assume (HC-vac)_alpha on B: ||P^m h||_2 <= ||h||_(q'), q' = 1 + e^(-2 alpha m), for every integer m >= 0 and every gauge-invariant h. Then for all integers s >= 1 and m >= 0:
+
+  X(2s + 2m; B) <= theta_m X(2s; B),   theta_m := 1 - tanh(alpha m) = 2/(1 + e^(2 alpha m)) <= 2 e^(-2 alpha m).
+
+**Proof.** Fix u. (i) p_(s+m)(u, .) = P^m p_s(u, .), by the Chapman-Kolmogorov equation and the symmetry of the densities (P is self-adjoint on L^2(nu)). The function p_s(u, .) is gauge invariant, so (HC-vac) applies: ||p_(s+m)(u, .)||_2 <= ||p_s(u, .)||_(q').
+(ii) g := p_s(u, .) is non-negative with ||g||_1 = 1. Holder's inequality between L^1 and L^2: for 1 <= q' <= 2 and 1/q' = (1 - theta) + theta/2, ||g||_(q') <= ||g||_1^(1 - theta) ||g||_2^theta = ||g||_2^theta. Here theta = 2 (q' - 1)/q' = 2 e^(-2 alpha m)/(1 + e^(-2 alpha m)) = theta_m, and 0 < theta_m <= 1.
+(iii) So ||p_(s+m)(u, .)||_2^2 <= (||p_s(u, .)||_2^2)^(theta_m). Average over u ~ nu. The map x -> x^theta is concave for 0 < theta <= 1, so by Jensen E_u ||p_(s+m)(u, .)||_2^2 <= (E_u ||p_s(u, .)||_2^2)^(theta_m).
+(iv) By (5.3) this is 1 + S(2s + 2m) <= (1 + S(2s))^(theta_m). Take logarithms. QED
+
+**Remarks (each PROVED in a line).**
+- s = 1 returns Proposition HC with a slightly better constant: X(2) <= log sup p_1 <= 36 beta |B| (Lemma HOT), so X(2m + 2) <= 72 beta |B|/(1 + e^(2 alpha m)).
+- Odd times: S is non-increasing in t, so X(t) <= X(2 floor(t/2)).
+- Necessity of the rate, as in Lemma RATE (c): if X(2s + 2m) <= C e^(-2 alpha m) for all m then E_1(B) >= alpha. So Lemma IHC changes the constant in front and never the rate.
+- Sharpness: in one Gaussian mode the two sides differ by at most the factor 2/(1 + e^(-2 alpha m)) (Step 3).
+- A finer start value (ARGUED, not used): as q' -> 1 the Renyi divergence of order q' of p_s(u, .) tends to its relative entropy, so for large m the factor X(2s) can be replaced by about the mutual information I(U_0; U_s) <= X(2s).
+
+### 5.2 Corollary CU (the chain, uniform in the cutoff). PROVED implication
+
+Let iota range over a family of cutoffs (beta_iota, a_iota). Fix a physical length ell and a physical time tau_0 < ell. Put n = n_iota with n a_iota = ell (or the nearest integer above), B = (2n)^3. Assume:
+
+- **(TH)** there is Theta < infinity, independent of iota, and for each iota an even integer t_0 <= tau_0/a_iota with X_iota(t_0; B) <= Theta;
+- **(HC-phys)** there is M_H > 0, independent of iota, such that (HC-vac)_alpha holds on B at beta_iota with alpha >= M_H a_iota.
+
+Then X_iota(n; B) <= 2 Theta e^(-M_H (ell - tau_0 - a_iota)) for every iota. So (SEED-phys) holds with ell_* = ell and s_* as soon as
+
+  (SIZE-phys)   M_H (ell - tau_0 - a_iota) >= log(2 Theta/log(1 + s_*)).
+
+Proof. Lemma IHC with 2s = t_0 and 2s + 2m = 2 floor(n/2) >= n - 1, then monotonicity in t. QED
+
+**Where (TH) comes from (PROVED implication).** Suppose two-sided stability holds with one bulk constant: there are e_iota and c_F with |log Z_iota(B x t) - e_iota |B| t| <= c_F |B| t (a_iota/a_*)^4 for all t >= t_0, the volume |B| t counted in lattice sites. Then X(t_0; B) = log Z(B x t_0) - t_0 lim_(t') (1/t') log Z(B x t') <= 2 c_F |B| t_0 (a_iota/a_*)^4, which is 16 c_F ell^3 tau_0/a_*^4 in physical units: (TH) with Theta polynomial in ell. With such a Theta, (SIZE-phys) holds for every large ell, since its left side is linear in ell and its right side is logarithmic.
+
+**What changes for the lane.** The size test "m_0++ >= K_a" of row 974, K_a = (C_beta + 3 log a)/(a - 2), becomes: gap >= M_H >= K_phys(ell) := log(2 Theta(ell)/x_*)/(ell - tau_0), in physical units. K_phys does not depend on the cutoff. K_a times the physical seed size grows like 3 log(1/a_iota) + log beta_iota (R2). The price is the input (TH): at a fixed coupling it needs a bound on the thermal sum at one earlier time that is better than Lemma HOT, and I have none at beta 2.3 (OPEN there). In the limit it is the two-sided form of ultraviolet stability, an interface statement of the existence chain (CT4 of GOAL.md is its lower half).
+
+### 5.3 Lemma LAD (what one seed gives, exactly). PROVED GIVEN Theorem S, group-blind
+
+Let G := { beta > 0 : S_beta(n; (2n)^3) < 1/5041 for some integer n >= 3 }. For s_* < 1/5041 let n(beta; s_*) be the least n >= 3 with S_beta(n; (2n)^3) <= s_*.
+
+(a) beta -> S_beta(t; B) is continuous for each box. (Z_beta(B x t) is an integral of a continuous bounded weight; lambda_0(beta) is the operator norm of the positive self-adjoint R_beta, and R_beta is norm continuous in beta because its kernel is uniformly continuous in beta on a compact space.)
+(b) G is open. (A strict inequality and (a).)
+(c) n(beta; s_*) is finite on G and locally bounded there. (Let beta in G with a seed of value s at n. Take r with (5041 s)^(2^r)/5041 < s_*. Theorem S gives S_beta(2^r n) < s_*, strictly; by (a) this holds near beta.)
+(d) Let (beta_-, beta_+) be the component of G that contains beta_0. If beta_+ < infinity, then S_(beta_+)(n; (2n)^3) >= 1/5041 for every n >= 3, and n(beta; s_*) -> infinity as beta increases to beta_+. (The first claim is beta_+ not in G. For the second: if n(beta_j; s_*) = n along a sequence beta_j -> beta_+, then by (a) S_(beta_+)(n) <= s_* < 1/5041, so beta_+ is in G.)
+(e) With the unit a_seed(beta) := 1/n(beta; s_*), (SEED-phys) holds on every family inside (beta_-, beta_+), with ell_* = 1, by definition. For another unit a(beta): (SEED-phys) holds on a family inside the component if sup over iota of n(beta_iota; s_*) a(beta_iota) is finite; and if (SEED-phys) holds with (ell_*, s_*) then n(beta_iota; s_*) a(beta_iota) <= ell_*.
+
+So: **(CARRY) is the statement beta_+ = infinity, and (CARRY-AF) is sup over beta >= beta_0 of n(beta; s_*) a_T0(beta) < infinity.** One seed gives the open set (b) and nothing on its size. The ladder of A2 is the proof of (c). In compact U(1), in the frozen groups and on K7 lines the lemma holds and beta_+ is finite (Step 3).
+
+### 5.4 Lemma G (how far continuity alone reaches). PROVED GIVEN the trace formula and (K1), (K2) of `gap-seed-limit.md` Section 1
+
+For the Wilson weight exp(beta sum_p P_p), |P_p| <= 1: d X_beta(t; B)/d beta = sum over the 6 |B| t plaquettes of B x t of [<P_p>_(B x t) - <P_p>_(B x infinity)], and each bracket is at most 2 S(t - 1; B)/(1 + S(t; B)) in absolute value. So |d X/d beta| <= 12 |B| t S(t - 1; B).
+
+Proof. log Z is differentiable with derivative the sum of <P_p>; lambda_0 is a simple isolated eigenvalue of an analytic family, and the derivative of (1/t') log Z(B x t') converges to that of log lambda_0 (convex functions with a differentiable limit). For one plaquette F = P_p of time width w <= 1: <F>_(B x t) = [<Omega, k_F Omega> + Tr(Rx^(t - w) k_F)]/(1 + S(t)), |Tr(Rx^(t - w) k_F)| <= S(t - w) by (K1), and <Omega, k_F Omega> = <F>_(B x infinity) by (K2). QED
+
+Reading. On the seed box |B| t = 8 n^4. A seed with margin survives a change of beta of order (margin)/(96 n^4 S), where the truth, if masses scale, is a change of order one (a factor in the scale). The bound loses the volume because it charges every plaquette the full thermal weight, where a state of a few particles has an action excess of order one in total (A3's sum rule). With this bound the steps of the ladder are summable, like 16^(-k). So **continuity alone climbs a finite distance in beta.** This is the exact place where A2 and A3 stop.
+
+### 5.5 Where the attack stands
+
+- Crux lemma of A4, Lemma IHC: **PROVED.** Corollary CU: PROVED implication. Lemma LAD, Lemma G: PROVED GIVEN the named inputs.
+- (SEED-phys) is **not** proved. After Corollary CU it rests on (TH) (ultraviolet, an interface statement of the existence chain, OPEN there) and on (HC-phys), which by Theorem BR is: the bridge inequalities (LSI-br)_s on the box of physical side 2 ell hold with (1/2) integral of alpha_s ds >= M_H a_iota, uniformly in the cutoff. (HC-phys) contains the uniform gap. It is OPEN, and a result at beta 2.3 is one member of the family, not on its tail.
+- (HC-phys) is the right shape in the one case I can do by hand: a free field of mass M on the lattice satisfies it with M_H equal to the lowest mode energy over a_iota, which tends to M (Nelson's bound mode by mode; the modes are independent). PROVED for that model; it says nothing on SU(2).

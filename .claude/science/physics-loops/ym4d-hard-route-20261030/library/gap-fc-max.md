@@ -25,7 +25,9 @@ The transfer-matrix and vacuum-slice setting builds on Ethan Sussman and Levent 
 ## Status log
 
 - 08:51Z file created. Nothing proved yet.
-- 09:20Z Steps 1-3 written below. Branch decision: row 946 did NOT refute (FC); so (FC) is attacked.
+- about 08:58Z Steps 1-3 written below. Branch decision: row 946 did NOT refute (FC); so (FC) is attacked.
+- about 09:00Z Step 4 written. 09:03Z Step 5 (Theorem BR) written. 09:06Z Step 6 criteria written; numeric lock held by row 950 (gap-sc-950) until 09:59Z at the latest; the run waits.
+- (Clock times in this log are from `date -u`; the session started 08:51Z.)
 
 ## Steps 1-3: inputs read, branch decision, duplicate check (READ; no new claim)
 
@@ -67,7 +69,7 @@ Fisher-information statement; I did not repeat those greps. Their account enters
 (outline (GL8), located by checks 927, 933, 938). Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as
 authors of their text.
 
-## Step 4: (FC) with the rate the seed needs, and its fact tests (09:35Z)
+## Step 4: (FC) with the rate the seed needs, and its fact tests (about 09:00Z)
 
 **4.1 The statement (substitution in the arrows of row 941 Step 6; check 943 wrote the same line).**
 Put K_a := (C_beta(x_*) + 3 log a)/(a - 2) for even a >= 4. The route (FC) + (C1-av) -> (LSI-vac) -> (HC-vac) -> seed
@@ -107,3 +109,128 @@ E[g K psi] = E[u log u] = Ent(u), give the claim. QED
 With (HC-vac)_alpha and its dual, K = P^(2m), a = 1 + e^(-2 alpha m), b = 1 + e^(2 alpha m), a/b = e^(-2 alpha m):
   (EC-nec):  (HC-vac)_alpha  implies  Ent_nu(P^(2m) g) <= e^(-2 alpha m) Ent_nu(g)  for every m >= 1.
 So entropy contraction is necessary for the seed route, and Fisher-information contraction is not.
+
+## Step 5: the bridge between two slices (about 09:03Z). Theorem BR: PROVED implication, by hand
+
+Idea. Row 941 (A7) used one mid-slice variable. Here the whole segment between two slices is used: the kernel
+e^(beta <x, w>) on M x M is the heat kernel of R^N at time 1/beta. So one step of the slice chain is an ambient
+Brownian motion of duration 1/beta, conditioned at both ends. Entropy and L^p norms can be differentiated along it.
+This gives (HC-vac) directly. (LSI-vac), (FC), (C1-av), (COV), (SG-step) and (SC) do not occur.
+
+**5.1 Objects.** g_s(v) := (2 pi s)^(-N/2) e^(-|v|^2/(2s)) on R^N. For 0 < s <= 1/beta and y in R^N:
+  h_s(y) := integral over M of g_s(y - w) m(dw).
+For 0 < s < 1/beta put s' := 1/beta - s and nu_s(dy) := Z^(-1) h_s(y) h_(s')(y) dy on R^N, Z := integral over M of h_(1/beta) dm.
+Facts (each one line):
+- (B1) On M x M, g_(1/beta)(x - w) = kap e^(beta <x, w>), kap := (beta/2 pi)^(N/2) e^(-beta L) (|x|^2 = |w|^2 = L). So for x in M:
+  h_(1/beta)(x) = kap lambda_0 e^(V(x)/2) Omega(x), nu(dx) = h_(1/beta)(x) m(dx)/Z, and
+  P_0 f(x) = h_(1/beta)(x)^(-1) integral of g_(1/beta)(x - w) f(w) m(dw).
+- (B2) h_s is smooth and positive, d/ds h_s = (1/2) Laplacian h_s, and g_s * h_t = h_(s+t). The integral of h_s h_(s') dy
+  is Z for every s (semigroup property). So nu_s is a probability density, and nu_s = nu_(s') (symmetry).
+- (B3) nu_s is the law of y = (1 - lam) U_0 + lam U_1 + (lam (1 - lam)/beta)^(1/2) xi, with lam = beta s, (U_0, U_1) two
+  consecutive slices of the vacuum chain (law J of row 941 (A1)) and xi a standard Gaussian of R^N, independent.
+  (The density of (x, y, w) is m(dx) g_s(x - y) g_(s')(y - w) m(dw) dy/Z; complete the square in y.)
+- (B4) -log nu_s(y) = |y|^2/(2s) + |y|^2/(2s') - Lambda(y/s) - Lambda(y/s') + const, Lambda the convex function of row 941 (A2).
+  At s = 1/(2 beta) this is the mid-slice law eta of (A7).
+- (B5) The gauge group acts on R^N by orthogonal maps that preserve M and m. So h_s and nu_s are gauge invariant.
+
+**5.2 Theorem BR.** Let 0 < eps < 1/(2 beta) and let alpha: [eps, 1/beta - eps] -> [0, infinity) be piecewise
+continuous. Assume, for every s in that interval:
+  (LSI-br)_s: Ent_(nu_s)(phi^2) <= (2/alpha_s) integral of |grad phi|^2 d nu_s
+  for every gauge-invariant phi in C^1(R^N) with delta <= phi <= 1/delta for some delta > 0 and bounded gradient.
+Put A := integral over [eps, 1/beta - eps] of alpha_s ds. Then for gauge-invariant f and 1 < p < infinity:
+  ||P f||_(L^q(nu)) <= ||f||_(L^p(nu)),   q := 1 + (p - 1) e^A.
+Consequently (HC-vac)_alpha holds with alpha = A/2: ||P^m h||_2 <= ||h||_(q'), q' = 1 + e^(-A m), for every integer m >= 0.
+
+Proof. It is enough to take f continuous, gauge invariant, delta <= f <= 1/delta (then |P f| <= P |f| and density).
+(i) The flow. For 0 <= s < 1/beta put N_s(y) := integral over M of g_(s')(y - w) f(w) m(dw) and u_s := N_s/h_(s').
+N_s and h_(s') solve the backward heat equation d/ds phi = -(1/2) Laplacian phi. So
+  d/ds u = -(1/2) Laplacian u - grad log h_(s') . grad u,   delta <= u_s <= 1/delta,   u_0 = P_0 f on M (by (B1)).
+u_s is gauge invariant by (B5). grad log h_(s')(y) = (E[w | y] - y)/s' with |E[w | y]| <= L^(1/2), so all derivatives of u_s
+grow at most polynomially, locally uniformly in s in (0, 1/beta), and h_s h_(s') has Gaussian tails. Differentiation
+under the integral and integration by parts below are therefore legitimate.
+(ii) The derivative. For a C^1 function q(s) > 1 put F(s) := integral of u_s^q(s) d nu_s. Then
+  F'(s) = q' integral of u^q log u d nu_s + (1/2) q (q - 1) integral of u^(q-2) |grad u|^2 d nu_s.
+Computation. Z F = integral of u^q h_s h_(s') dy. Three terms: (a) q' integral of u^q log u h_s h_(s');
+(b) q integral of u^(q-1) (d/ds u) h_s h_(s'); (c) (1/2) integral of u^q (h_(s') Laplacian h_s - h_s Laplacian h_(s')).
+(c) = -(1/2) integral of grad(u^q) . (h_(s') grad h_s - h_s grad h_(s')).
+(b) = -(1/2) integral of (Laplacian u) q u^(q-1) h_s h_(s') - integral of grad(u^q) . (grad h_(s')) h_s
+    = (1/2) q (q - 1) integral of u^(q-2) |grad u|^2 h_s h_(s') + (1/2) integral of grad(u^q) . (h_(s') grad h_s + h_s grad h_(s'))
+      - integral of grad(u^q) . (grad h_(s')) h_s
+    = (1/2) q (q - 1) integral of u^(q-2) |grad u|^2 h_s h_(s') + (1/2) integral of grad(u^q) . (h_(s') grad h_s - h_s grad h_(s')).
+The last term cancels (c).
+(iii) Gross's step. d/ds log ||u_s||_(L^q(s)(nu_s)) = (q F)^(-1) [ (q'/q) Ent_(nu_s)(u^q) + (1/2) q (q - 1) integral of u^(q-2) |grad u|^2 d nu_s ].
+With phi := u^(q/2): the last integral is (4/q^2) integral of |grad phi|^2 d nu_s >= (2 alpha_s/q^2) Ent_(nu_s)(u^q) by (LSI-br)_s.
+Choose q' = -alpha_s (q - 1), that is q(s) - 1 = (p - 1) exp(integral over [s, 1/beta - eps] of alpha). Then the bracket is
+at least (Ent/q)(q' + (q - 1) alpha_s) = 0. So s -> ||u_s||_(L^q(s)(nu_s)) is non-decreasing on [eps, 1/beta - eps].
+(iv) The ends. K(x, dy) := g_eps(x - y) h_(1/beta - eps)(y) dy/h_(1/beta)(x) is a probability kernel from M to R^N, with
+u_0 = K u_eps and nu K = nu_eps (by (B1), (B2)). Jensen: ||u_0||_(L^q(nu)) <= ||u_eps||_(L^q(nu_eps)). In the same way
+u_(1/beta - eps)(y) = integral of f(w) g_eps(y - w) m(dw)/h_eps(y), and this kernel maps nu_(1/beta - eps) to nu. Jensen:
+||u_(1/beta - eps)||_(L^p) <= ||f||_(L^p(nu)).
+(v) For P^m apply the one-step bound m times with p_k - 1 = e^(-A (m - k)): q' = p_0 = 1 + e^(-A m), p_m = 2. QED
+
+**5.3 Corollaries (same proof; PROVED implications).**
+- (BR-gap) If Var_(nu_s)(phi) <= (1/gam_s) integral of |grad phi|^2 d nu_s for gauge-invariant phi, then
+  ||P f||_2^2 <= exp(-integral of gam_s ds) ||f||_2^2 for gauge-invariant f of nu-mean zero. So
+  E_1 >= (1/2) integral over (0, 1/beta) of gam_s ds.   (Take q = 2 constant in (ii): F' = integral of |grad u|^2 d nu_s >= gam_s F.)
+- (BR-ent) Under the hypothesis of Theorem BR: Ent_nu(P g) <= e^(-A) Ent_nu(g) for gauge-invariant densities g.
+  (Step 4.5 with K = P, a = p, b = 1 + (p - 1) e^A, and p -> infinity.)
+- (BR-loss; ARGUED, not used below) With g_s := d(mu_s)/d(nu_s), mu_s the law at time s of the bridge started from
+  g nu: d/ds Ent_(nu_s)(g_s) = -(1/2) I_s, I_s := integral of |grad g_s|^2/g_s d nu_s. So the one-step entropy loss is
+  (1/2) integral over (0, 1/beta) of I_s ds. In this language (C1-av) reads integral of I_s ds <= I_0/alpha_c, and (FC) reads
+  I_(1/beta) <= theta I_0: two statements on the Fisher profile s -> I_s. That profile is not monotone without a
+  convexity bound. (LSI-br) asks I_s >= 2 alpha_s Ent_(nu_s)(g_s) at each s instead, and this is what Gross's step uses.
+
+**5.4 Checks by hand.**
+- One Gaussian mode (flat model of rows 931, 940, 941; m ~ e^(-c w^2/2) dw with c = beta (e^omega - 1), from
+  precision(pi_x) = beta + c = beta e^omega). h_s is Gaussian with precision c/(1 + c s). So nu_s is Gaussian with
+  precision A_s = c/(1 + c s) + c/(1 + c s'), and alpha_s = gam_s = A_s. Integral over (0, 1/beta) of c/(1 + c s) ds
+  = log(1 + c/beta) = omega. So A = 2 omega: Theorem BR returns alpha = omega (Nelson's exponent), (BR-gap) returns
+  E_1 >= omega, (BR-ent) returns e^(-2 omega). All three are the exact values. At s = 1/(2 beta): A_s = 4 beta tanh(omega/2),
+  the precision of eta in row 941 (A7).
+- Normalisation. The generator in (i) is (1/2) Laplacian + drift, and the rate in (iii) is alpha_s for LSI in the
+  form Ent(phi^2) <= (2/alpha) integral |grad phi|^2, for which N(0, 1/A) has alpha = A. The Gaussian check fixes both.
+- Free rotor chain on the circle, large beta (asymptotic check). nu is uniform on S^1 in R^2. nu_s is radial,
+  within O(beta^(-1/2)) of the unit circle, and its Poincare constant on the first angular mode is 1 + O(1/beta).
+  (BR-gap) gives E_1 >= (1/(2 beta))(1 + o(1)); the truth is -log(I_1(beta)/I_0(beta)) = 1/(2 beta) + O(beta^(-2)). Sharp to
+  leading order.
+
+**5.5 Fact tests of (LSI-br) with the seed rate.** The seed needs A/2 >= K_a on B = (24a)^3 (Step 4.1 form:
+(1/2) integral over (0, 1/beta) of alpha_s ds >= (C_beta(x_*) + 3 log a)/(a - 2)).
+- FT-U1 (FP photon sector): A/2 = omega_min < 0.27/a. Fails for every a by the factor above 59, as it must.
+- SMALL-BOX: A/2 <= (1/(2 beta)) sup_s alpha_s. Consistent with a rate that vanishes as beta grows at fixed lattice
+  size, if sup_s alpha_s stays bounded there (not proved).
+- Double wells that one kinetic step jumps (ARGUED; this is where (GC) and (FC) are false, row 941 Run 4). By (B3),
+  nu_s for s in the middle third of (0, 1/beta) is the two-slice average smoothed by a Gaussian of variance at
+  least 2/(9 beta). Two wells of nu closer than that width merge in nu_s, so gam_s is of order one there, and
+  (BR-gap) gives a gap of order one over 3 beta times that constant. Near s = 0 the constant can be small; the
+  theorem only needs alpha_s >= 0 there. So the bridge form does not have the defect of (GC). A GUIDE run of
+  this claim is Step 6.
+- A ceiling if gauge invariance is dropped (PROVED). For a linear phi(y) = <z, y>: Var_(nu_s)(phi) = v_s |z|^2 with
+  v_s = (1 - 2 lam (1 - lam)(1 - tau))/4 + lam (1 - lam)/beta, tau := E_J <x_l, w_l> (the mean time-like plaquette), by (B3) and
+  Elitzur's argument of row 941 (A5) applied to the pair (U_0, U_1): E[x_l (x) w_l'] = 0 for l != l', and
+  E[x_l (x) w_l] = (tau/4) Id_4 because it commutes with SO(4). tau >= 0 since T_0 >= 0. So for beta >= 2,
+  v_s >= 1/8 + 1/(4 beta), and a Theorem BR for ALL functions cannot give more than A/2 <= 4/(beta + 2): 0.93 at
+  beta 2.3 and 0.87 at 2.6. Linear functions are not gauge invariant, so this does not cap Theorem BR as stated.
+  It shows that the restriction to gauge-invariant phi in (LSI-br) carries weight: without it the route needs
+  K_a <= 0.93, that is a >= 32 at beta 2.3 (K_30 = 0.936, K_32 = (16 + 10.40)/30 = 0.880).
+- Method ceiling carried over (row 941 ceiling (ii), PROVED there): nu_s is not log-concave for beta > 2 (at y = 0,
+  Elitzur). So (LSI-br) cannot come from the Bakry-Emery criterion on R^N in the window. It needs an LSI for a
+  non-convex measure.
+
+## Step 6: GUIDE run on the flat line chain (criteria written 09:06Z, before the run)
+
+Purpose. Guard Theorem BR against an error of normalisation, and test the double-well claim of 5.5. Refute or
+guide only. Model: x in R on a grid, T_0(x, w) = e^(-V(x)/2) e^(-beta (x - w)^2/2) e^(-V(w)/2), the flat chain of rows
+931, 940 and 941. P, nu, r_1, theta_GC as in row 941 Run 4. m has density psi = e^(-V/2) Omega; h_s = g_s * psi;
+nu_s ~ h_s h_(1/beta - s); gam_s := Poincare constant of nu_s (second eigenvalue of the stiffness problem).
+The integral over (0, 1/beta) is a midpoint rule with 40 nodes. Script: `/tmp/gap-fc-947/scripts/br_guide.py`
+(not committed; its full text is short and is reproduced at the end of this step).
+Criteria:
+- K1: r_1^2 <= exp(-integral of gam_s ds), within 2 percent of the exponent. This is (BR-gap). A violation means an
+  error in Theorem BR or in the code; then stop and re-derive.
+- K2: Gaussian V: equality within 1 percent, both equal to e^(-2 omega).
+- K3: where theta_GC >= 1 ((GC) false): report E_BR/E_1 with E_BR := (1/2) integral of gam_s ds. The claim "the bridge
+  form does not have the defect of (GC)" is supported (GUIDE) iff E_BR/E_1 >= 0.25 in those cases, and refuted as a
+  general claim by one case with theta_GC >= 1 and E_BR/E_1 < 0.05.
+Cases: two Gaussians (beta 1, kappa 1; beta 2.3, kappa 0.5); double wells V = h (x^2 - a^2)^2 with
+(beta, a, h) = (1, 0.5, 40), (1, 0.6, 60), (1, 1.0, 8), (1, 1.5, 4), (2.3, 0.33, 400), (2.3, 0.5, 100), (2.3, 0.8, 30).

@@ -10,6 +10,7 @@ standing. The rule is the row "Research sections" in
 |---|---|---|
 | [ym4d/](ym4d/README.md) | Parts and posted notes on 4D lattice Yang–Mills, working on the Sussman–Alpöge account | verification inventory open; obligation listed there |
 | [mass-gap/su2-aligned-response/](mass-gap/su2-aligned-response/README.md) | Five notes of the SU(2) gauge-aligned response lane | none yet; listed there as an open obligation |
+| [d4-gauged-finite-rungs/](d4-gauged-finite-rungs/README.md) | Supplied Wilson-seeded D4 blocking in finite U(1) backgrounds | finite compute checks and solver-failure control; infinite-rung and uniform-locality obligations remain open |
 
 Each part says who wrote it and who read it. Words such as "frozen" and
 "checked line by line" are defined in each section's README. They are project

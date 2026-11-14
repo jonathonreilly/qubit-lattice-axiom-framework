@@ -11,6 +11,7 @@ A run guides or refutes at GUIDE level; it proves nothing.
 - 2026-11-14 18:46Z: file created with plan (save protocol).
 - 2026-11-14 18:49Z: steps 1-3 written (criteria fixed before any run); script `guide/lane976/esc976.py` written, not yet run. Numeric lock held by gap-tiesearch-973 (row 973, its tielab.py runs are live; lease to 22:53Z); memory 69 percent free. Waiting for the lock; no run of this row has started.
 - 2026-11-14 20:49Z: a 2-hour background wait on the lock was stopped at its time limit; row 973 re-acquired the lock at 19:35Z (lease to 01:35Z, tielab.py runs live); memory 46 percent free (below the 50 percent rule). Still no run of this row; waiting again (at most 2 h).
+- 2026-11-14 22:45Z: second wait ended, lock still held by gap-tiesearch-973 (lease to 01:35Z, tielab.py live); memory 49 percent free. No run of this row yet; a third wait started.
 
 ## Plan (at most eight steps; one per response)
 

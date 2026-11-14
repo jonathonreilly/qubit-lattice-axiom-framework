@@ -169,3 +169,33 @@ Reading (GUIDE). On the 4^3 box the largest ratio is in the winding (flux) secto
 - (G) Local glueball states, energy m_G at zero momentum (heavier at k != 0). In the span through the plaquette-type fields. Floor 1/(2 beta m_G).
 On the seed box (side >= 720) E_flux is about sigma times 720 (about 98 at beta 2.3, about 13 at beta 2.6, by the recalled string tensions), so (F) and (P) are irrelevant there and only (G) and other local modes remain. On the measured boxes (F) and (P) can dominate. So a measured R_J that falls with L because (F) gets heavy says nothing for the seed box; the seed-relevant numbers are the local sectors at the largest L, and the glueball floor.
 **6.2 Consequence for (LSI-J-seed) (PROVED given 4.2; same content as row 947 4.2).** On the seed box, R_J >= 1/(2 beta m_G) whenever m_G <= 1 (with m_G the lowest energy there). (LSI-J-seed)_a needs R_J <= 1/(2 beta K_a). So it needs m_G >= K_a. With recalled lattice values of the 0++ mass (m_G about 3.7 sqrt(sigma): about 1.37 at beta 2.3, about 0.49 at beta 2.6; recalled, not checked here; this run's plaquette correlators give a rough check in Section 7) this would rule out a <= 40 at beta 2.6 (K_40 = 0.716) and be marginal at a = 60 (K_60 = 0.490); at beta 2.3 it rules out nothing for a >= 30 (K_30 = 0.936 < 1.37). This last step rests on recalled masses: GUIDE, not PROVED.
+
+### 5c. SU(2) beta 2.3, all sizes (GUIDE; runs 11:29-11:40Z; 1200 configurations each, central pair at K' = 10; logs `su2_b2.3_L*.log`)
+
+Top generalized eigenvalue per sector (raw +- jackknife error; bias-corrected in brackets). R_J^top = max over sectors.
+
+| L | S0e (k = 0, even) | S0o (k = 0, winding) | S1e (k_min, even) | S1o (k_min, winding) | R_J^top | C4: max deviation K' = 10 vs K = 6 |
+|---|---|---|---|---|---|---|
+| 4 | 0.1595 +- 0.0055 | **0.5665 +- 0.0172** | 0.1197 +- 0.0022 | 0.1016 +- 0.0011 | 0.567 (S0o) | 1.6 err |
+| 6 | **0.1504 +- 0.0049** | 0.1353 +- 0.0027 | 0.1342 +- 0.0022 | 0.0813 +- 0.0011 | 0.150 (S0e) | 1.9 err |
+| 8 | **0.1696 +- 0.0061** | 0.0574 +- 0.0016 | 0.1461 +- 0.0025 | 0.0519 +- 0.0006 | 0.170 (S0e) | 1.2 err |
+| 10 | **0.1708 +- 0.0081** | 0.0382 +- 0.0011 | 0.1460 +- 0.0017 | 0.0368 +- 0.0004 | 0.171 (S0e) | 1.4 err |
+| 12 | **0.1638 +- 0.0080** | 0.0294 +- 0.0008 | 0.1500 +- 0.0019 | 0.0294 +- 0.0004 | 0.164 (S0e) | 1.2 err |
+
+Energies from the slab time correlators (E_eff over tau = 1-3, weighted; plaquette channel E_eff(1)) and the floors of Lemma GAP-R:
+
+| L | E_flux (winding) | floor 1/(2 beta E_flux) | E_eff(1) plaquette channel | floor 1/(2 beta E) |
+|---|---|---|---|---|
+| 4 | 0.333 +- 0.008 | 0.654 +- 0.015 | 1.26 +- 0.27 | 0.17 |
+| 6 | 0.652 +- 0.021 | 0.333 +- 0.010 | 1.73 +- 0.26 | 0.13 |
+| 8 | 1.20 +- 0.13 | 0.18 +- 0.02 | 1.16 +- 0.18 | 0.19 |
+| 10 | 1.48 +- 0.42 | 0.15 +- 0.04 | 1.43 +- 0.23 | 0.15 |
+| 12 | (noise) | - | 1.27 +- 0.16 | 0.17 |
+
+(An effective energy approaches the lowest energy from above, so a floor computed from it is itself an underestimate of 1/(2 beta E_1).) The flux energies agree with sigma L - pi/(3L) for the recalled sigma = 0.136 (0.28, 0.64, 0.96); the plaquette channel gives m_G about 1.3, against the recalled 1.37.
+
+**Verdicts at beta 2.3 (pre-stated rules of Section 2).**
+- C4: PASS at every L (largest deviation 1.9 combined errors, over all 20 sector comparisons).
+- S1: fit of log R_J^top against log L over L = 6, 8, 10, 12: kappa = 0.162 +- 0.077 (chi^2 3.7 for 2 dof), 2.1 sigma, below the 3 sigma required; R(12) - R(6) = +0.013 +- 0.009 (1.4 combined errors, below 3). **No GROWTH: R_J^top is bounded over L = 4..12 at beta 2.3 (GUIDE only; proves nothing).** Per sector: S0e kappa = 0.16 +- 0.08; S0o kappa = -2.26 +- 0.05; S1o kappa = -1.48 +- 0.03; S1e kappa = 0.146 +- 0.029 (5 sigma, but the values 0.134, 0.146, 0.146, 0.150 saturate: k_min = 2 pi/L tends to 0, and S1e tends to the zero-momentum value of the same fields, which S0e bounds at about 0.17; a saturating approach, not a power).
+- S3: on the 4^3 box R_J^top - 3 err = 0.515 exceeds R*_30, R*_40, R*_60 (0.232, 0.305, 0.446). So the 4^3 box has no (LSI-J) with alpha_J >= 2 beta K_a for a <= 60 (GUIDE, box-local). Cause: the light torelon (E = 0.33). On boxes 6 to 12 nothing exceeds any threshold: the largest R_J^top - 3 err is 0.151 (L = 8), against R*_30 = 0.232.
+- Local sector against the glueball floor: on L = 8 to 12 the variational S0e top (0.164 to 0.171) equals, within errors, the floor 1/(2 beta m_G) of about 0.17 from the plaquette channel. Two estimators (the variational span and the gap floor through Lemma GAP-R) agree on the size of the local slow mode. They use the same configurations, so this is not an independent check.

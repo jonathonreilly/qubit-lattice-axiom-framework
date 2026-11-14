@@ -222,12 +222,28 @@ Energies from the slab time correlators (E_eff over tau = 1-3, weighted; plaquet
 
 ### 5e (interim, 12:05Z). SU(2) beta 2.6, L = 4..12 (1200 configurations each, central pair K' = 12, extra pair K = 8)
 
-| L | S0e | S0o (winding) | S1e | S1o | R_J^top | E_flux (tau 1-5) | floor 1/(2 beta E_flux) | Binder U of M |
+| L | S0e | S0o (winding) | S1e | S1o | R_J^top | E_flux (weighted tau 1-3) | floor 1/(2 beta E_flux) | Binder U of M |
 |---|---|---|---|---|---|---|---|---|
-| 4 | 0.1221 +- 0.0057 | **1.5419 +- 0.0565** | 0.0933 +- 0.0015 | 0.0885 +- 0.0012 | 1.542 (S0o) | 0.13 | about 1.49 | 0.42 |
-| 6 | 0.1147 +- 0.0045 | **0.6396 +- 0.0244** | 0.1057 +- 0.0019 | 0.0832 +- 0.0014 | 0.640 (S0o) | 0.135 | about 1.42 | 0.31 |
-| 8 | 0.1072 +- 0.0032 | **0.2464 +- 0.0076** | 0.1076 +- 0.0019 | 0.0654 +- 0.0009 | 0.246 (S0o) | 0.15 | about 1.30 | 0.18 |
-| 10 | **0.1118 +- 0.0047** | 0.1084 +- 0.0042 | 0.1080 +- 0.0026 | 0.0474 +- 0.0006 | 0.112 (S0e) | 0.15 | about 1.28 | 0.105 |
-| 12 | **0.1179 +- 0.0054** | 0.0555 +- 0.0016 | 0.1130 +- 0.0020 | 0.0359 +- 0.0006 | 0.118 (S0e) | 0.15 | about 1.3 | 0.035 |
+| 4 | 0.1221 +- 0.0057 | **1.5419 +- 0.0565** | 0.0933 +- 0.0015 | 0.0885 +- 0.0012 | 1.542 (S0o) | 0.132 | 1.46 +- 0.03 | 0.42 |
+| 6 | 0.1147 +- 0.0045 | **0.6396 +- 0.0244** | 0.1057 +- 0.0019 | 0.0832 +- 0.0014 | 0.640 (S0o) | 0.136 | 1.42 +- 0.05 | 0.31 |
+| 8 | 0.1072 +- 0.0032 | **0.2464 +- 0.0076** | 0.1076 +- 0.0019 | 0.0654 +- 0.0009 | 0.246 (S0o) | 0.152 | 1.27 +- 0.03 | 0.18 |
+| 10 | **0.1118 +- 0.0047** | 0.1084 +- 0.0042 | 0.1080 +- 0.0026 | 0.0474 +- 0.0006 | 0.112 (S0e) | 0.165 | 1.17 +- 0.04 | 0.105 |
+| 12 | **0.1179 +- 0.0054** | 0.0555 +- 0.0016 | 0.1130 +- 0.0020 | 0.0359 +- 0.0006 | 0.118 (S0e) | 0.168 | 1.14 +- 0.08 | 0.035 |
 
-The flux energy stays near 0.13-0.15 from L = 4 to 12 (box at or below the deconfinement length; Nambu-Goto with the recalled sigma = 0.0176 gives 0.11 at L = 10 and 0.16 at L = 12), so the floor of Lemma GAP-R stays near 1.3-1.5, while the variational winding sector falls by a factor 28 (raw winding lines lose their overlap with the flux state as the Polyakov loops disorder: Binder U 0.42 -> 0.105). The local sectors are flat at 0.107-0.122. C4 (K' = 12 against K = 8), computed: all 20 sector comparisons at L = 4..12 within 2.3 combined errors (largest: S1e at L = 6, +2.3): PASS. (An earlier draft of this line said 1.7 before the deviations were computed; corrected at 12:05Z.)
+The flux energy stays near 0.13-0.17 from L = 4 to 12 (box at or below the deconfinement length; Nambu-Goto with the recalled sigma = 0.0176 gives 0.11 at L = 10 and 0.16 at L = 12), so the floor of Lemma GAP-R stays at 1.1-1.5, while the variational winding sector falls by a factor 28 (raw winding lines lose their overlap with the flux state as the Polyakov loops disorder: Binder U 0.42 -> 0.105). The local sectors are flat at 0.107-0.122. C4 (K' = 12 against K = 8), computed: all 20 sector comparisons at L = 4..12 within 2.3 combined errors (largest: S1e at L = 6, +2.3): PASS. (An earlier draft of this line said 1.7 before the deviations were computed; corrected at 12:05Z.)
+
+### 5f. SU(2) beta 2.6, L = 14 and 16, and the verdicts at beta 2.6 (runs to 12:20:23Z; L = 14: 1200 configurations, L = 16: 800)
+
+| L | S0e | S0o (winding) | S1e | S1o | R_J^top | E_flux (weighted tau 1-3) | floor 1/(2 beta E_flux) | Binder U | C4 max deviation |
+|---|---|---|---|---|---|---|---|---|---|
+| 14 | **0.1170 +- 0.0062** | 0.0311 +- 0.0007 | 0.1085 +- 0.0016 | 0.0281 +- 0.0003 | 0.117 (S0e) | 0.238 +- 0.028 | 0.81 +- 0.10 | -0.015 | 1.9 err |
+| 16 | **0.1182 +- 0.0059** | 0.0239 +- 0.0008 | 0.1057 +- 0.0023 | 0.0227 +- 0.0004 | 0.118 (S0e) | 0.30 +- 0.11 | 0.65 +- 0.24 | -0.042 | 1.1 err |
+
+(The E_flux and floor columns of the interim table 5e were first written from E_eff(tau) by eye (about 1.49, 1.42, 1.30, 1.28, 1.3); at 12:21Z they were replaced by the computed weighted plateaus of `analyze954.py`.) The flux energy starts to grow at L = 14-16 (Nambu-Goto with the recalled sigma: 0.21 and 0.25), and the Polyakov loops are disordered (Binder U about 0) from L = 12 on, as S2 placed L_c near 10.6.
+
+**Verdicts at beta 2.6 (pre-stated rules).**
+- C4: PASS at every L (largest deviation over all 28 sector comparisons: 2.3 combined errors, S1e at L = 6).
+- S1: R_J^top = 1.542, 0.640, 0.246, 0.112, 0.118, 0.117, 0.118 for L = 4, 6, ..., 16. Fit over L >= 6: kappa = -1.81 +- 0.05 (not a power law: chi^2 306 for 4 dof; it falls, then is flat); R(16) - R(6) = -0.52 +- 0.03. **No GROWTH at beta 2.6 over L = 4..16 (GUIDE only).** Per sector over L >= 6: S0e kappa = 0.068 +- 0.052 (values 0.115, 0.107, 0.112, 0.118, 0.117, 0.118: flat); S1e kappa = 0.024 +- 0.022 (flat); S0o kappa = -3.50 +- 0.04; S1o kappa = -1.38 +- 0.02.
+- S2: no growth to classify. The large values at L = 4-8 sit in the winding sector, in boxes at or below L_c (Binder U 0.42, 0.31, 0.18), as S2 anticipated; above L_c (L = 12-16) the top is the local sector, flat at 0.117-0.118.
+- S3 (variational, box-local): R_J^top - 3 err exceeds R*_a on the 4^3 box for every a in {30, 40, 60, 100, 200}, on 6^3 for a in {30, 40, 60}, on 8^3 for a = 30; on 10^3 to 16^3 for no a (largest R_J^top - 3 err = 0.102 against R*_30 = 0.205).
+- Floors (Lemma GAP-R, CONDITIONAL on row 947's unchecked (BR-gap) and Lemma J): the flux floor is 1.46, 1.42, 1.27, 1.17, 1.14 for L = 4-12 (errors 0.03-0.08), 0.81 +- 0.10 at L = 14, 0.65 +- 0.24 at L = 16. If GAP-R holds, every measured beta 2.6 box up to L = 14 has R_J above R*_a for a <= 100 (R*_100 = 0.630), through its light flux state. Box-local; the flux energy on the seed box is about sigma x 720, about 13.

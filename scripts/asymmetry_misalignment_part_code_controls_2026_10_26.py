@@ -2,6 +2,7 @@
 """(a) logical action of the 168-group on N(S)/S; (b) best alignment of code symmetries with cube O_h;
 (c) Hamming/RM(1,3) common cause: projections of S; (d) numerology controls: [[8,3,2]] cube colour code,
 random 8-qubit stabiliser codes, and how often perm x uniform-frame groups contain an order-7 element."""
+AUDIT_TIMEOUT_SEC = 300
 import itertools, collections, random, time
 t0 = time.time(); n = 8
 def pauli(s):

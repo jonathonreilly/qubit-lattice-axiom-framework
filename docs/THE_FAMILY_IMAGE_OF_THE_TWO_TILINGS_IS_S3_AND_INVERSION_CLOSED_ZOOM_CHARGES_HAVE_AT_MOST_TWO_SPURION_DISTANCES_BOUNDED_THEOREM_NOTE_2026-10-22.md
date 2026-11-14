@@ -13,6 +13,10 @@ runner: scripts/the_family_image_of_the_two_tilings_is_s3_and_inversion_closed_z
 Claim type: bounded_theorem.
 Primary runner: `scripts/the_family_image_of_the_two_tilings_is_s3_and_inversion_closed_zoom_charges_have_at_most_two_spurion_distances_2026_10_22.py`.
 
+**Repair 2026-11-14 (PR 10129 hold).** The runner now exits nonzero on any failed check. The tribimaximal comparison (item 13) is computed from the supplied neutrino values alone, so it is printed as an estimate and not counted; item 14 counts only the computed zero entry. Item 7 now carries a proof for every N; the N < 40 enumeration is its finite check.
+
+**Local labels (2026-11-14).** "The register" (its turn-fixed family reading, the update law's tilings and translations, and the conditional anomaly count rule) is the source branch's register text, not in this repository. These are supplied assumptions here, not entries of [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md); neither carries premise weight.
+
 The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. It reads the three families as the turn-fixed characters of the update law's tick translations, and measured fermion masses span five orders of magnitude within a sector. A Froggatt-Nielsen-type hierarchy needs a family grading with three distinct pairwise spurion distances. This note asks whether the rules' structure supplies one: the point groups of the two tilings, the A4 or S4 triplets that exist, the zoom-b characters, and the textures they allow. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the inputs used here.
 
 ## Statement
@@ -28,7 +32,7 @@ A. Point groups of the two tilings (exact, enumerated over the 48 signed permuta
 B. Families at zoom b (exact, enumerated).
 
 6. At zoom b the turn fixes exactly the b diagonal positions (the rest are three-cycles), all with the same turn charge, so there are b chiral families. The update law's period 2 conserves only b' = b / gcd(b, 2) characters of T(2 e_i) on them: for even b, positions j and j + b/2 are one character.
-7. Three distinct cyclic distances first occur in Z_6 ({0, 1, 3}). In every Z_N with N < 40, a negation-closed triple has at most two. With the tick's k -> -k (inversion) unbroken, no zoom gives three spurion distances.
+7. Three distinct cyclic distances first occur in Z_6 ({0, 1, 3}). Every negation-closed triple of distinct elements of Z_N has at most two distinct cyclic distances, for every N. Proof (from the PR 10129 landing review, 2026-11-13): a negation-closed set of three distinct elements cannot consist of three self-inverse elements, since Z_N has at most two (0 and N/2), so it is {s, a, -a} with 2s = 0 and a != -a. Because -s = s, s - (-a) = -(s - a), so d(s, a) = d(s, -a), and the only other distance is d(a, -a). The runner checks this by enumeration for N < 40. So, with the tick's k -> -k (inversion) unbroken, no zoom gives three spurion distances.
 8. Anomaly filter. With the register's conditional count rule (the turn-SU(2) anomaly 4N mod 3 vanishes for the light families and for any gapped set) and b' >= 6, zoom 7 fails (4 x 7 = 1 mod 3), and the viable zooms up to 30 are 9, 12, 15, ..., 30. The smallest are 9 (Z_9) and 12 (Z_6). The runner states that both need b - 3 chiral families removed by a family-selective symmetric gapping term that no law supplies.
 
 C. Textures, M_ij ~ eps^f(q_Qi - q_Rj +- h), with f the spurion distance and the conjugate Higgs carrying -h.
@@ -67,7 +71,7 @@ All draws use one fixed seed (20261022).
 
 Supplied measured inputs: light neutrino count N_nu = 2.984 +- 0.008 from the Z width, with a fourth chiral family excluded by Higgs rates (stated); mass targets m_t : m_c : m_u = 1 : 7e-3 : 1e-5 and m_b : m_s : m_d = 1 : 2e-2 : 1e-3, |V_us|, |V_cb|, |V_ub| = 0.225, 0.042, 0.0037, so the up-to-down hierarchy ratio (m_u m_c / m_t^2) / (m_d m_s / m_b^2) is 3.5e-03; lepton mixing s12^2 = 0.307(12), s13^2 = 0.0220(6), s23^2 = 0.45-0.58.
 
-13. Tribimaximal mixing (exact A4 residual symmetries, which need an A4 triplet the site group lacks): s12^2 = 1/3 pulls +2.2 sigma and s13 = 0 pulls -37 sigma. Excluded by theta13.
+13. Tribimaximal mixing (exact A4 residual symmetries, which need an A4 triplet the site group lacks): s12^2 = 1/3 pulls +2.2 sigma and s13 = 0 pulls -37 sigma against the supplied measured theta13 (estimate; printed, not counted).
 14. The residual groups that do exist (charged leptons keep the family Z_3 and neutrinos keep inversion, or the reverse) fix a column or row (0, 1/sqrt2, 1/sqrt2) in the character basis, which the runner computes. That is a zero in the mixing matrix, whose smallest measured entry is |U_e3| = 0.148. Placing the zero at U_e3 gives s13^2 = 0, -37 sigma. The runner states that pure character-against-position mixing gives all |U|^2 = 1/3.
 
 ## Boundary
@@ -81,7 +85,7 @@ Supplied: the zoom-3 family reading and its zoom-b extension; the register's con
 ## Dependencies
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): Z^3 sites, one qubit per site, nearest-neighbour admissibility, records. They fix none of the supplied inputs above.
-- [Candidate-law register](CANDIDATE_LAWS.md): the update law's two cube tilings, copy mass and tick translations T(2 e_i), the turn-fixed family reading, and the conditional anomaly count rule. Zero premise weight; results using it are conditional on it.
+- [Candidate-law register](CANDIDATE_LAWS.md): zero premise weight. The update law's two cube tilings, copy mass and tick translations T(2 e_i), the turn-fixed family reading and the conditional anomaly count rule are the source branch's register text (see Local labels), not entries of that file; results using them are conditional on them as supplied assumptions.
 
 ## How to run
 
@@ -89,4 +93,4 @@ Supplied: the zoom-3 family reading and its zoom-b extension; the register's con
 python3 scripts/the_family_image_of_the_two_tilings_is_s3_and_inversion_closed_zoom_charges_have_at_most_two_spurion_distances_2026_10_22.py
 ```
 
-Needs numpy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 19 s with about 60 MB resident, prints about 5.3 kB and ends with `TOTAL: PASS=14 FAIL=0`. Its random draws use a fixed seed; two runs gave identical output apart from the runtime line.
+Needs numpy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 19 s with about 60 MB resident, prints about 5.4 kB and ends with `TOTAL: PASS=13 FAIL=0`. Its random draws use a fixed seed; two runs gave identical output apart from the runtime line.

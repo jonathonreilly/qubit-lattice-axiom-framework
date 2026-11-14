@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_minimal_turn_neutral_far_wall_term_for_three_families_has_a_free_family_matrix_whose_only_rule_blind_choice_keeps_u3_so_no_family_label_2026_10_24.py
-runner_sha256: dd217cd3d8c331ce0b7d431fc01854f1e0479e986f5bdedcd61d3f78f508b176
-input_fingerprint_sha256: 123619aca431bdfb7df5fe31fb4cd33e65fb3c35b525ae425dad8a59d3f32ae0
+runner_sha256: 9a92c0e26594eb7ce3f9b17282a394a0a43fd5053536f0e7c8f2ce1448f3552b
+input_fingerprint_sha256: a4b4c43dda2cbb3d6ccdc2df8ca6152322bdbbca602c62a995b71dcc99c1f857
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 == A. lattice, turn charge, anomaly [T]

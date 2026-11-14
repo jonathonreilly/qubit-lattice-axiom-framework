@@ -17,6 +17,7 @@ from scipy.linalg import expm, null_space
 
 AUDIT_TIMEOUT_SEC = 60
 rng = np.random.default_rng(20261022)
+rng_k = np.random.default_rng(20261114)   # 2026-11-14 repair: separate stream, so the original draws below are unchanged
 NPASS = NFAIL = 0
 
 
@@ -26,6 +27,10 @@ def check(name, ok, detail=""):
     NPASS += ok
     NFAIL += (not ok)
     print(("PASS " if ok else "FAIL ") + name + (f"  [{detail}]" if detail else ""))
+
+
+def note(kind, name, detail=""):   # printed, not counted (argued steps and estimates against supplied measured values)
+    print(f"{kind}: " + name + (f"  [{detail}]" if detail else ""))
 
 
 def nullsp(rows):
@@ -198,9 +203,8 @@ for R0, t0 in G:
 E_irrep = {"E": 2, "C2": 2, "C3": -1, "C4": 0, "C2'": 0}
 check("A7 taste per chirality (after the i^odd phase) = E of O (chars E,C2,C3,C4,C2' = 2,2,-1,0,0): 4 tastes = E + E, NOT 1 + 3",
       len(G) == 24 and all(ch[c] == {float(E_irrep[c])} for c in E_irrep), f"group order {len(G)}, chars {dict((k, sorted(v)) for k, v in ch.items())}")
-check("A8 theorem: 1+3 is impossible: chi is a rotation-invariant traceless taste operator, so by Schur it "
-      "would be a scalar on a 1 and on a 3, with trace +-1 +-3 != 0",
-      all(abs(a + b) > 0 for a in (1, -1) for b in (3, -3)))
+note("ARGUED (not counted)", "A8 Schur: a traceless invariant chi forbids 1+3 on any one-mode cell (trace +-1 +-3 != 0); "
+     "this cell's instance is A6, A7", str(sorted({a + b for a in (1, -1) for b in (3, -3)})))
 check("A9 the three axis half-turns act trivially on taste: taste rotations factor through S3 (axis "
       "permutations); E = (3 axes) - (singlet), i.e. d - 1 = 2 tastes per chirality",
       all(np.allclose(tau[n], np.eye(8), atol=1e-6) or np.allclose(tau[n], -np.eye(8), atol=1e-6)
@@ -224,9 +228,22 @@ def commutant(ops):
 ks = [rng.uniform(-1.5, 1.5, 3) for _ in range(3)]
 d0 = commutant([U(k) for k in ks]); dr = commutant([U(k) for k in ks] + V)
 dm = commutant([U(k, mu=0.2, M=0.7) for k in ks])
-check("A11 exact internal symmetries: commutant of the tick over all k has dim 8 (dim 1 with rotations); "
-      "with CL-1's copy mass it is dim 1: no exact taste symmetry is left to protect any multiplet",
-      d0 == 8 and dr == 1 and dm == 1, f"dims {d0}, {dr}, {dm}")
+# 2026-11-14 repair (hold finding 1): the commutant over a finite momentum set only bounds the all-k commutant from
+# above. The all-k commutant lies inside every finite-sample commutant and contains the scalars, so a finite sample
+# that already gives dim 1 fixes the all-k value at exactly 1. Three momenta give 8: an undersampled upper bound.
+dims_k = {}
+for nk in (12, 20):
+    kk = [rng_k.uniform(-1.5, 1.5, 3) for _ in range(nk)]
+    dims_k[nk] = (commutant([U(k) for k in kk]), commutant([U(k) for k in kk] + V), commutant([U(k, mu=0.2, M=0.7) for k in kk]))
+check("A11 all-k cell-local commutant of the tick is the scalars (also with rotations, with the copy mass): dim 1 "
+      "at 12 and 20 momenta bounds it, and it contains the scalars",
+      all(d == (1, 1, 1) for d in dims_k.values()), f"12: {dims_k[12]}, 20: {dims_k[20]}")
+check("A11u 3 momenta give dim 8: an upper bound, not the all-k value (rejected by A11)",
+      d0 == 8 and dims_k[12][0] < d0, f"3 momenta: {d0}, {dr}, {dm}")
+kk12 = [rng_k.uniform(-1.5, 1.5, 3) for _ in range(12)]
+d_ctrl = commutant([expm(-1j * 0.3 * Re) for _ in kk12])
+check("A11c control: without the odd tiling the update is k-independent and its commutant is large",
+      d_ctrl > 1, f"dim {d_ctrl}")
 ev = np.sort(np.round(np.angle(np.linalg.eigvals(U(np.zeros(3), mu=0.2, M=0.7))), 6))
 ok_cs = np.allclose(s_copy @ chi, chi @ s_copy, atol=1e-6) and all(np.allclose(s_copy @ a, a @ s_copy, atol=1e-6) for a in Ah)
 check("A12 CL-1 copy sign commutes with A and chi; copy mass leaves 4 light states (+-mu) = 2 spin x 1 taste "
@@ -363,9 +380,9 @@ def fval(c):
 
 fq = {c: fval(c) for c in CRN}
 okf = np.isclose(fq[(0, 0, 0)], fq[(1, 1, 1)]) and all(not np.isclose(fq[tuple(np.eye(3, dtype=int)[i])], fq[tuple(1 - np.eye(3, dtype=int)[i])]) for i in range(3))
-check("C7 a swap-type protecting charge exists only as a FREE-hop charge: Q_f = sum_k f(k) n_k with "
-      "f = sum cos k_i - 3 prod cos k_i (range 3) allows the singlet mass and forbids the triplet's; the only "
-      "finite-range unitary scalars are translations, which do not (C4)", okf,
+check("C7 a swap-type protecting charge on the free hop: Q_f = sum_k f(k) n_k with "
+      "f = sum cos k_i - 3 prod cos k_i (range 3) allows the singlet mass and forbids the triplet's; no translation "
+      "class does (C4); other charges were not searched", okf,
       f"f: singlet {fq[(0,0,0)]:.0f},{fq[(1,1,1)]:.0f}; triplet {fq[(1,0,0)]:.0f} vs {fq[(0,1,1)]:.0f}")
 L = 4
 N = L ** 3
@@ -391,9 +408,22 @@ H0, Q0 = build(th0)
 thA = [0.3 * rng.standard_normal((L, L, L)) for _ in range(3)]
 HA, QA = build(thA)
 r0 = np.linalg.norm(H0 @ Q0 - Q0 @ H0); rA = np.linalg.norm(HA @ QA - QA @ HA) / np.linalg.norm(QA)
-check("C8 that charge is broken by any link field: [Q_f, H] = 0 on free links, O(1) with random link phases "
-      "(covariantised, 4^3 torus): gauge couplings regenerate triplet masses (not protected)",
-      r0 < 1e-10 and rA > 1e-2, f"free {r0:.1e}, linked {rA:.3f}")
+check("C8 the covariantised charge fails to commute with H on the seeded random link background (size 0.3, 4^3): "
+      "not protected against general link fields; [Q_f, H] = 0 on free links",
+      r0 < 1e-10 and rA > 1e-2, f"free {r0:.1e}, random background {rA:.3f}")
+# 2026-11-14 repair (hold finding 4): explicit link fields that keep the charge. With T_i = e^{i a_i} S_i (constant
+# phases) all T_i and T_i^+ commute, Q_f is a polynomial in C_i = (T_i + T_i^+)/2 and H = sum (T_i - T_i^+)/(2i) x sigma_i,
+# so [Q_f, H] = 0; a gauge transform conjugates both by one diagonal unitary and keeps the identity.
+thC = [np.full((L, L, L), a) for a in (0.7, -1.3, 2.1)]
+gG = rng_k.uniform(-np.pi, np.pi, (L, L, L))
+thG = [np.roll(gG, -1, axis=i) - gG for i in range(3)]          # theta_i(x) = g(x + e_i) - g(x)
+rC = [np.linalg.norm(Hh @ Qh - Qh @ Hh) / np.linalg.norm(Qh) for Hh, Qh in
+      (build(thC), build(thG), build([thC[i] + thG[i] for i in range(3)]))]
+check("C8w counterexample to 'broken by any link field': constant-phase and pure-gauge links keep [Q_f, H] = 0",
+      max(rC) < 1e-12, "constant {:.0e}, gauge {:.0e}, both {:.0e}".format(*rC))
+th1 = [np.zeros((L, L, L)) for _ in range(3)]; th1[0][0, 0, 0] = 0.3
+H1, Q1 = build(th1); r1 = np.linalg.norm(H1 @ Q1 - Q1 @ H1) / np.linalg.norm(Q1)
+check("C8f control: one link phase 0.3 (flux on 4 plaquettes) breaks it", r1 > 1e-3, f"{r1:.3f}")
 
 # ------------------------------------------------------------------ D. measurement
 print("== D. families as a rotation triplet vs measured masses, mixing and the Z width ==")
@@ -411,9 +441,8 @@ check("D1 a T1 family triplet: O keeps 3 degenerate; D4, D3 keep a degenerate pa
       str(dims))
 F = np.array([[np.exp(2j * np.pi * a * b / 3) for b in range(3)] for a in range(3)]) / np.sqrt(3)
 Vus_meas, Vud_meas = 0.22500, 0.97435
-check("D2 mixing: a shared residual gives V = permutation (|V_us| = 0 vs 0.2250); C3 vs D2 residuals give "
-      "|V_ij| = 1/sqrt3 (|V_ud| 0.577 vs 0.97435): both excluded, so masses+mixing need generic breaking "
-      "(no prediction)", abs(abs(F[0, 0]) - 1 / np.sqrt(3)) < 1e-12 and abs(1 / np.sqrt(3) - Vud_meas) > 0.3 and Vus_meas > 0.2)
+note("ESTIMATE (not counted; CKM supplied)", "D2 a shared residual gives a permutation V (|V_us| 0 vs 0.2250); C3 vs D2 "
+     "gives |V_ij| = 1/sqrt3 (|V_ud| 0.577 vs 0.97435): neither matches (no prediction)", f"|F_00| = {abs(F[0, 0]):.3f}")
 chars = []
 for i in range(3):
     c1 = np.eye(3, dtype=int)[i]; c2 = 1 - c1
@@ -422,7 +451,7 @@ check("D3 in C the three triplet pairs carry distinct fcc characters, so every f
       "family-diagonal: no mixing until fcc is broken in the family sector (a further supplied breaking)",
       len(set(chars)) == 3, str(chars))
 Nnu, sNnu = 2.9840, 0.0082
-check("D4 Z width: N_nu = 2.9840 +- 0.0082 (LEP) excludes 4 degenerate light (B5/A10) and 1 "
-      "(CL-1 copy mass, A12); 3 is reached only by the tuned m_t = 0 of C3",
-      (4 - Nnu) / sNnu > 100 and (Nnu - 1) / sNnu > 200, f"{(4-Nnu)/sNnu:.0f} and {(Nnu-1)/sNnu:.0f} sigma")
+note("ESTIMATE (not counted; LEP N_nu supplied)", "D4 N_nu = 2.9840 +- 0.0082 vs 4 light (B5/A10) and 1 (A12); 3 "
+     "only by the tuned m_t = 0 of C3", f"{(4-Nnu)/sNnu:.0f} and {(Nnu-1)/sNnu:.0f} sigma")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
+raise SystemExit(1 if NFAIL else 0)

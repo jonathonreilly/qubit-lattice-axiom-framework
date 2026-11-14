@@ -1,3 +1,5 @@
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_octonion_table_2026_10_26.py",)
 import itertools, collections, numpy as np
 src = __import__('pathlib').Path(__file__).with_name('asymmetry_misalignment_part_octonion_table_2026_10_26.py').read_text().split("# ---- Frobenius")[0]
 exec(src)
@@ -73,3 +75,21 @@ print("preimage of F21: order", len(pre), "; element orders", dict(sorted(collec
 # orbit of the real unit: automorphisms fix 1; orbits on the 8 basis lines
 print("automorphisms fix the real unit: True by construction; orbit sizes on the 7 imaginary lines under the preimage of F21:",
       sorted(collections.Counter(min(A[0][i] for A in pre if True) for i in range(7)).values()))
+# 2026-11-14 repair (PR 10129 hold, finding 3): C (x) O is not M_8(C). Left multiplications L_a on O = R^8 (and on
+# C (x) O = C^8) generate the full matrix algebra; the algebra C (x) O itself has complex dimension 8 and a nonzero associator.
+def span_dim(mats): return np.linalg.matrix_rank(np.array([m.ravel() for m in mats]), 1e-9)
+def generated_dim(Ls, n):
+    words, basis, d = list(Ls), [np.eye(n)] + list(Ls), 0
+    while True:
+        words = [a @ b for a in words for b in Ls]; basis += words
+        d_new = span_dim(basis)
+        if d_new == d: return d
+        d = d_new
+LO = [M[a].T.copy() for a in range(8)]                       # (L_a)[c, b] = M[a, b, c]
+LH = [M[a][np.ix_(Hidx, Hidx)].T.copy() for a in Hidx]       # left multiplications of the quaternion subalgebra on itself
+rng3 = np.random.default_rng(20261114)
+xc, yc, zc = (rng3.normal(size=8) + 1j * rng3.normal(size=8) for _ in range(3))
+ass_c = np.abs(omul(omul(xc, yc), zc) - omul(xc, omul(yc, zc))).max()
+print(f"left-multiplication algebra of O: span(L_a) dim {span_dim(LO)}, generated associative algebra dim {generated_dim(LO, 8)} "
+      f"(M_8 has 64); C x O: complex dim 8, complex associator {ass_c:.2f}")
+print(f"associative control, quaternion subalgebra: generated dim {generated_dim(LH, 4)} (H itself; M_4 has 16)")

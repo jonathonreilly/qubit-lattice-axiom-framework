@@ -2,6 +2,8 @@
 """POST HOC (not pre-registered; disclosed): rerun the cross-talk scan with a generic cell-periodic 4x4 vertex
 V(c) (all spinor structures, symmetrised to each sector's residual antiunitary) so that the Lorentz-scalar channel
 has non-degenerate inter-family entries; purpose: test whether D2's non-decaying leak survives when J_tree != 0."""
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_sector_crosstalk_2026_10_26.py",)
 import numpy as np, itertools
 src = __import__('pathlib').Path(__file__).with_name('asymmetry_misalignment_part_sector_crosstalk_2026_10_26.py').read_text().split("# ------------------------------------------------------------------ setup checks")[0]
 exec(src)

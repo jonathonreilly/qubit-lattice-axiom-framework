@@ -59,10 +59,15 @@ for k in range(200):
 Js, Ts = np.array(Js), np.array(Ts)
 chk("A5 generic vacuum phase: J != 0 AND theta_bar_tree = O(1) (strong CP fails)", np.median(Js) > 1e-3 and np.median(Ts) > 0.1,
     "median|J|=%.2e median|arg det|=%.2f, min|arg det|=%.1e (need <1e-10)" % (np.median(Js), np.median(Ts), Ts.min()))
-# one-field renormalizable potential: V(a) = 2 k v^3 cos3a -> aligned minima -> J=0
+# one-field renormalizable potential: its phase-dependent part is V(a) = 2 k v^3 cos3a (k phi^3 + cc, argued) -> aligned
+# minima -> J=0, for nonzero k. 2026-11-14 repair (hold): at k = 0 the phase is flat and no alignment is selected.
 aa = np.linspace(0, 2*np.pi, 20001)
-amin = aa[np.argmin(np.cos(3*aa))]
-chk("A6 one-field Z3+T potential (k phi^3+cc) minimum is aligned -> J=0", abs(JA(amin)) < 1e-6, "a*=%.4f J=%.1e" % (amin, JA(amin)))
+amins = {k: aa[np.argmin(2*k*np.cos(3*aa))] for k in (1.0, -1.0)}
+chk("A6 one-field Z3+T potential, phase part 2 k v^3 cos 3a with k != 0 (k = +1, -1): minimum aligned -> J=0",
+    all(abs(JA(m)) < 1e-6 and abs(np.sin(3*m)) < 1e-3 for m in amins.values()),
+    ", ".join("k=%+.0f: a*=%.4f J=%.1e" % (k, m, JA(m)) for k, m in amins.items()))
+print("EDGE (not counted): at k = 0 the phase potential is flat (range of 2 k cos 3a over a: %.1e), so the renormalisable "
+      "one-field potential selects no alignment there" % np.ptp(0.0*np.cos(3*aa)))
 # reflection (1<->2, phi<->phi*) forces det real but also J=0
 Pm = np.array([[1, 0, 0], [0, 0, 1], [0, 1, 0]])
 def refl(c):
@@ -132,6 +137,7 @@ Mpl = 2.4e18
 for v in (1e3, 1e8):
     sig = v**3; Hd = sig/Mpl**2; Td = np.sqrt(Hd*Mpl)
     print("  v=%.0e GeV: sigma~v^3, wall domination at T~%.1e GeV" % (v, Td))
-chk("C1 ZKO: stable Z3 walls need sigma^(1/3) < ~1 MeV -> NB scale requires breaking before/during inflation (T_RH < v)",
-    np.sqrt((1e3)**3/Mpl) > 1e-12)
+print("ESTIMATE (not counted; supplied v, M_Pl and the ZKO bound only): C1 stable Z3 walls need sigma^(1/3) < ~1 MeV -> "
+      "the NB scale requires breaking before/during inflation (T_RH < v) | sqrt(v^3/M_Pl) at v = 1 TeV: %.1e" % np.sqrt((1e3)**3/Mpl))
 print("TOTAL: PASS=%d FAIL=%d" % (P, F))
+raise SystemExit(1 if F else 0)

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_light_copy_carries_a_nonzero_turn_charge_so_a_symmetrically_gapped_mirror_needs_family_count_zero_mod_three_2026_10_22.py
-runner_sha256: df9c8307f8dd904dde98ebfcfa7eb4673529ed85fd76850daa29ced075b7a553
-input_fingerprint_sha256: d0d10202eb6faf8581c13b2ebc91f201c4ccee411e990bf93622676ae58f75e3
+runner_sha256: 445f1d8e506165a0388c49f653ce8aca2ec05db0824f0b031b662e17cbce5322
+input_fingerprint_sha256: 45e3f4fe68e281f1d690ccf9645edaed8a8e013e7b30610a7da65acfb33199e4
 timeout_sec: 90
 exit_code: 0
-elapsed_sec: 5.32
+elapsed_sec: 2.82
 status: ok
 ----- stdout -----
 == A. CL-1 cell: one mode per site per internal component, face phase -1, cube tick ==
@@ -43,8 +43,8 @@ PASS F1 for N family-blind copies every cone-rule sum is tr(chi) x tr(Q) = 0 for
 PASS F2 the only N-sensitive datum is the multiplicative vertex phase after the mirror is removed (= D1)
 == G. estimate against measurement (not a check of the rule) ==
   LEP N_nu = 2.984 +- 0.0082: N = 3 at 2.0 sigma, N = 6 at 368 sigma; N = 1 (copy mass, one family) at 242 sigma
-PASS G1 among the allowed set {3, 6, 9, ...} only N = 3 survives the Z width (>300 sigma for N = 6)
-TOTAL: PASS=29 FAIL=0
+ESTIMATE (not counted; computed from the supplied LEP N_nu only): G1 among the allowed set {3, 6, 9, ...} only N = 3 is near the Z width (2.0 sigma; N = 6 at 368 sigma)
+TOTAL: PASS=28 FAIL=0
 
 ----- stderr -----
 

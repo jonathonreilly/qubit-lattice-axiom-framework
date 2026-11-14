@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Sharpened T1: invariant maximal anticommuting 7-sets (Cl(0,7) / octonion left-multiplication sets) of
 logical Paulis under G (168) and under the qubit stabiliser F21 (21); count all such 7-sets for reference."""
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_logical_orbits_2026_10_26.py",)
 import itertools, collections
 exec(__import__('pathlib').Path(__file__).with_name('asymmetry_misalignment_part_logical_orbits_2026_10_26.py').read_text().split("orb = []")[0])   # reuse: G, S, N, canon, reps, zero, act, FR, symp, mul
 nz = [r for r in reps if r != zero]

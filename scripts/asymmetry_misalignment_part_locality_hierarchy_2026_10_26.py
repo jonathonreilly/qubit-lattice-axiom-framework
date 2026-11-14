@@ -3,6 +3,8 @@
 compatibility with the CP misalignment of Test B.
 X-family Yukawa from a 2x2x2-cell-periodic on-site vertex profile f(c), c in {0,1}^3:
   Y_ab = sum_c f(c) exp(i (X_a + X_b).c)  =  sum_c f(c) s(c)_a s(c)_b,   s(c)_a = (-1)^{c_a}."""
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_slab_family_characters_2026_10_26.py",)
 import itertools, numpy as np
 rng = np.random.default_rng(424242)
 cells = [np.array(c) for c in itertools.product((0, 1), repeat=3)]

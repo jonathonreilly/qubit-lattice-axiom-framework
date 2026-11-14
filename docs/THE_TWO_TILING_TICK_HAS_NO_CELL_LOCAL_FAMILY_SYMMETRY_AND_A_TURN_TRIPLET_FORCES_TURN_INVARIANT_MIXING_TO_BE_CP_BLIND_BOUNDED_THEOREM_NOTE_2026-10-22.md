@@ -13,13 +13,12 @@ runner: scripts/the_two_tiling_tick_has_no_cell_local_family_symmetry_and_a_turn
 
 # The two-tiling tick has no cell-local family symmetry, and a turn triplet forces turn-invariant mixing to be CP-blind
 
-Claim type: bounded_theorem. Runner: runner.py (TOTAL: PASS=10 FAIL=0, seed 20261022).
-- Through scripts/runner_cache.execute_runner under the unique filename
-  scripts/two_tiling_family_space_agent_test_20261022.py: status ok, exit 0, 1.8 s, 2994 characters of stdout.
-- Peak memory is about 120 MB.
-- The copy and its live log were removed afterwards.
+Claim type: bounded_theorem.
+Primary runner: `scripts/the_two_tiling_tick_has_no_cell_local_family_symmetry_and_a_turn_triplet_forces_turn_invariant_mixing_to_be_cp_blind_2026_10_22.py` (9 PASS / 0 FAIL, seed 20261022). C3 is a count of supplied fitted coefficients; since the 2026-11-14 repair it is printed as `SUPPLIED`, not counted (the source version counted it as a literal pass, total 10). The runner exits nonzero on any failed check.
 
 The minimal axioms are unchanged, and the register carries no premise weight.
+
+**Local labels (2026-11-14).** CL-1 here names this note's supplied cube-tick update law (the source branch's register text), not entry CL-1 of [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md); it carries no premise weight. "The register" is that source-branch text, not in this repository. Source names used below: families-from-tastes is [#10016](THE_CUBE_TASTES_ARE_TWO_DOUBLETS_AND_NO_SYMMETRY_PROTECTS_A_FAMILY_TRIPLET_BOUNDED_THEOREM_NOTE_2026-10-22.md) and family-count-5mode is [#10022](THE_LIGHT_COPY_CARRIES_A_NONZERO_TURN_CHARGE_SO_A_SYMMETRICALLY_GAPPED_MIRROR_NEEDS_FAMILY_COUNT_ZERO_MOD_THREE_BOUNDED_THEOREM_NOTE_2026-10-22.md), both carried in this PR; zoom-three-links (#10046) and family-register (#9915) are recorded only in the consolidation map's logged table and are historical reported results, unverified here.
 
 ## Questions
 
@@ -50,7 +49,7 @@ zoom-three-links found that one cube's tick commutant is M2+M2 (2 families per s
   structural, fixed step at mu = 0, mu != 0, and with the copy mass. It is saturated at 12 and at 20 momenta.
   - With 3 momenta the computation gives 4 or 8. That is an upper bound only.
   - This NARROWS families-from-tastes A11 ("dim 8 over all k"). That runner used 3 momenta, and its 8 is an
-    undersampled bound.
+    undersampled bound. Since 2026-11-14 the carried #10016 note and runner state the corrected value (dim 1).
   - Taste symmetries of this tick are not cell-local, so CL-1's two tilings leave no internal family symmetry at all.
 - A2 (exact at the tested momenta; generic, axis, 0, pi). U(k) is 4-fold degenerate without the copy mass and 2-fold
   degenerate with it:
@@ -96,8 +95,8 @@ zoom-three-links found that one cube's tick commutant is M2+M2 (2 families per s
 - C1 (finite, every family space found). Turn-invariant up and down masses do fail to commute (|[Mu,Md]| = 3 to 155),
   so mixing angles are nonzero. Every CP quartet vanishes, at 1e-16. The axis-choosing control (non-invariant masses)
   gives |J| of about 0.06, so the test is live.
-- C3. Every coefficient of an invariant mass operator is FITTED. In B1 that is 6 real numbers per mass per sector
-  (invariant algebra M2+C+C), and no rule fixes them.
+- C3 (supplied count, printed, not counted). Every coefficient of an invariant mass operator is FITTED. In B1 that is
+  6 real numbers per mass per sector (invariant algebra M2+C+C), and no rule fixes them.
 
 ## Verdict
 
@@ -144,7 +143,7 @@ in magnitude only if it is fixed by the vacuum energy. Untested.
 ## Repo context
 
 - Builds on zoom-three-links (single-cube commutant M2+M2) and family-count-5mode (N = 0 mod 3 via the turn charge).
-- Narrows families-from-tastes A11 (dim 8 is undersampled; the true value is 1).
+- Narrows families-from-tastes A11 (dim 8 is undersampled; the true value is 1). The carried #10016 states the corrected value.
 - Consistent with the families-from-tastes E+E taste content and one light family.
 - Consistent with family-register (F3 = 3 from a supplied register: the C2 lemma applies to it too. A turn-invariant
   mass on its 3 protected families can give J != 0 only if the turn fixes all three, which it does there by

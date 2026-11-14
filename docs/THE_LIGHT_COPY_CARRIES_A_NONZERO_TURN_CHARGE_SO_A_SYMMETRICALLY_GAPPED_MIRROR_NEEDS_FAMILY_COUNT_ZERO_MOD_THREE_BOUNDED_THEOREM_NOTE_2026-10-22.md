@@ -10,8 +10,12 @@ runner: scripts/the_light_copy_carries_a_nonzero_turn_charge_so_a_symmetrically_
 
 # The light copy carries a nonzero turn charge, so a symmetrically gapped mirror needs a family count of 0 mod 3
 
-Claim type: bounded_theorem (conditional). Runner: runner.py (PASS=29, FAIL=0, about 3 s, about 60 MB). Through
-scripts/runner_cache.execute_runner it gave status ok, exit 0, 4.4 s and 4270 characters of stdout.
+Claim type: bounded_theorem (conditional).
+Primary runner: `scripts/the_light_copy_carries_a_nonzero_turn_charge_so_a_symmetrically_gapped_mirror_needs_family_count_zero_mod_three_2026_10_22.py` (28 PASS / 0 FAIL, about 3 s, about 60 MB; exits nonzero on any failed check). The Z-width comparison G1 is computed from the supplied LEP value alone, so since 2026-11-14 it is printed as an estimate and not counted (the source version counted it, total 29).
+
+**Scope note (2026-11-14).** The count is a necessary condition inside this note's setting: one uniform copy-sign rule, and a mirror gapped symmetrically keeping Spin(10) and one turn, with 't Hooft matching, crystalline equivalence and the gapping itself cited, not established. Later notes outside this PR (#10063, #10064, #10065, #10035, recorded only in the consolidation map) apply a twist k = -q_mirror under which every N_f is allowed when the mirror carries the light copy's turn charge; this note excludes a fermion-number Z3 twist unless 3 | N. The two analyses differ on whether that twist is available and are not reconciled here. The count is not shown to hold for every realisation of the mirror.
+
+**Local labels (2026-11-14).** CL-1 here names the source's supplied cube-tick update law (cell, tilings, copy mass), not entry CL-1 of [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md); "the register", R1 and the minimal-toe ruleset (its rows 15 and P0) are source-branch texts that are not in this repository. None carries premise weight. families-from-tastes is [#10016](THE_CUBE_TASTES_ARE_TWO_DOUBLETS_AND_NO_SYMMETRY_PROTECTS_A_FAMILY_TRIPLET_BOUNDED_THEOREM_NOTE_2026-10-22.md), carried in this PR. why-five-modes (the five-mode Spin(10) content, outside this theme) and families-mod-3 (#9903, logged in the consolidation map) are not in this repository; what this note takes from them is a supplied input and a historical reported result, unverified here. The main-branch notes meant by THREE_GENERATION_OBSERVABLE / STRUCTURE are [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) and [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md).
 
 ## Question
 
@@ -101,7 +105,7 @@ exactly three families with 5 modes per site and CL-1's cell and tick. It tests 
    - The count enters only through the multiplicative vertex phase once the mirror is removed. The cone rule's
      q_L - q_R = 0 (B4) is what makes the light phase equal the mirror's inverse.
 
-## Against measurement (estimate, not a check)
+## Against measurement (estimate, not a check; printed, not counted)
 
 - LEP N_nu = 2.9840 +- 0.0082. N = 3 is at 2.0 sigma, N = 6 at 368 sigma, and N = 1 at 242 sigma.
 - Among the allowed set, only 3 survives. This uses no fit: the rule outputs {3, 6, ...}, and measurement
@@ -111,7 +115,7 @@ exactly three families with 5 modes per site and CL-1's cell and tick. It tests 
 
 - (a) Doubling multiplicity: **nothing**. The counts are 2 or 1 per family, never 3.
 - (b) Discrete anomaly of the kept turn: **N = 0 mod 3, smallest 3**. Conditional on SMG keeping Spin(10) and one
-  turn, and on uniform copy-sign. One family is excluded unconditionally within the setting.
+  turn, and on uniform copy-sign. One family is excluded under every copy-sign choice, still conditional on that SMG.
 - (b') SU(3)_family anomaly freedom: **nothing** (it forbids gauging).
 - (c) Cone-rule sums: **nothing alone**. They supply q_L = q_R.
 - (d) Fitted counts: rejected.

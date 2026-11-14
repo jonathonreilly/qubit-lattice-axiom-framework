@@ -8,14 +8,14 @@ upstream_dependencies:
   - the_family_class_tick_keeps_a_time_reversing_antiunitary_that_fixes_every_family_so_it_supplies_no_quark_cp_phase_and_keeps_theta_bar_at_zero_or_pi_bounded_theorem_note_2026-10-24
   - far_termination_winding_keeps_a_pi_free_screening_near_wall_but_the_end_is_a_chosen_boundary_bit_and_the_far_wall_must_gap_all_three_families_together_bounded_theorem_note_2026-10-24
   - a_turn_kept_by_the_update_and_broken_by_the_vacuum_gives_cp_and_theta_bar_together_unless_a_nelson_barr_block_is_supplied_bounded_theorem_note_2026-10-22 (open PR #10047)
-runner: see stems.txt
+runner: scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py
 ---
 
 # No vacuum of the family-blind rules tested gives three hierarchical families with a T-odd phase: adjoint vacua cannot enter masses, and quartic alignment is T-even
 
 Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [S] reading or estimate.
-Runner: runner.py, TOTAL: PASS=12 FAIL=0, 8 s, 175 MB peak, 2.1 k characters, seeded, AUDIT_TIMEOUT_SEC = 120.
-Tested under a unique filename (scratchpad spontaneous_family_breaking_test_run.py, deleted). Axioms and CL text
+Primary runner: `scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py` (TOTAL: PASS=12 FAIL=0, 8 s, 175 MB peak, 2.1 k characters, seeded, AUDIT_TIMEOUT_SEC = 120; since 2026-11-14 it exits nonzero on any failed check).
+The source tested it under a unique filename (scratchpad spontaneous_family_breaking_test_run.py, deleted). Axioms and CL text
 unchanged. No rule adopted. Criteria: criteria_pre_run.txt, written before code.
 Deviations from the pre-run criteria (recorded as results, not hidden):
 - C1 first run FAILED as a sampling defect: the g range (0.5-6) left only 2/150 sets condensed (the det channel is
@@ -32,9 +32,11 @@ nothing relevant; open PRs: #10047 (spontaneous-turn-cp), #10068 (cp-source-new-
 (Lemma, centre identity D2, epsilon structure), family-labels (R1-R3, 12 kept antiunitaries), cp-source-new-tick
 (generalized-CP lemma), far-termination-winding (bulk keeps T, X = 1 on copies). Contradicts none.
 
+**Local labels (2026-11-14).** "The register", its registers and links, family-labels, BACKLOG 5b and R1-R3 are source-branch texts and supplied models, not in this repository; CL text means the source's own candidate-law text, not [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md). None carries premise weight. Source names: gap-vertex-family-tensor is [#10071](THE_MINIMAL_TURN_NEUTRAL_FAR_WALL_TERM_FOR_THREE_FAMILIES_HAS_A_FREE_FAMILY_MATRIX_WHOSE_ONLY_RULE_BLIND_CHOICE_KEEPS_U3_SO_NO_FAMILY_LABEL_BOUNDED_THEOREM_NOTE_2026-10-24.md), cp-source-new-tick is [#10068](THE_FAMILY_CLASS_TICK_KEEPS_A_TIME_REVERSING_ANTIUNITARY_THAT_FIXES_EVERY_FAMILY_SO_IT_SUPPLIES_NO_QUARK_CP_PHASE_AND_KEEPS_THETA_BAR_AT_ZERO_OR_PI_BOUNDED_THEOREM_NOTE_2026-10-24.md) and spontaneous-turn-cp is [#10047](A_TURN_KEPT_BY_THE_UPDATE_AND_BROKEN_BY_THE_VACUUM_GIVES_CP_AND_THETA_BAR_TOGETHER_UNLESS_A_NELSON_BARR_BLOCK_IS_SUPPLIED_BOUNDED_THEOREM_NOTE_2026-10-22.md), all carried in this PR. family-labels and far-termination-winding (#10074) are recorded only in the consolidation map or the source branch; what this note takes from them is a supplied input or a historical reported result, unverified here. The cited Li 1974 potential result is a literature input, not checked here.
+
 ## Question (BACKLOG 5b)
-The adopted rules are family-blind (U(3) commutant), so forced terms cannot label families (gap-vertex Lemma). Can a
-VACUUM of the adopted registers break U(3) spontaneously into three families with (i) a hierarchy and (ii) a phase odd
+The supplied rules (called adopted in the source) are family-blind (U(3) commutant), so forced terms cannot label families (gap-vertex Lemma). Can a
+VACUUM of the supplied registers break U(3) spontaneously into three families with (i) a hierarchy and (ii) a phase odd
 under every family-fixing antiunitary (J != 0), with no fitted input?
 
 ## A. Which order parameters can matter [T]
@@ -60,7 +62,7 @@ Supplied: naive lattice Dirac band E = +-|sin K| (DOS ~ e^2 at the node; stand-i
 L = 24^3, on-site exchange g, family-total charge fixed (sum delta = 0).
 - The node's vanishing DOS makes the band cost steeper than g delta^2 at small delta, so U(3) is unbroken below a
   finite threshold: g_c = 2.40 in band units (bandwidth 1.73). A Gauss-law-sized coupling (alpha ~ 1/137 in cell units)
-  is 3e-3 of g_c: no breaking from the adopted links.
+  is 3e-3 of g_c: no breaking from the supplied links.
 - Above g_c the transition is first order straight to the constraint polytope's vertex (1, 0, -1): U(1)^3, three
   distinct families (one family's sea empty, one full, one at the node). No U(2)xU(1) window appeared.
 - Physics reading [S]: this is a family-density (chemical-potential) texture, a Lorentz vector order with cell-scale
@@ -102,7 +104,7 @@ breaking), all U(3)-invariant terms to quartic order, seeded couplings (FITTED c
   spectrum; the minima seem to sit on the boundary where that phase is 0 or pi. Not proved.
 - E3 [T]. If masses were Hermitian functions of adjoints, arg det would be 0 or pi (theta_tree = 0 or pi), a
   parity-type (Babu-Mohapatra) protection. But A0 forbids adjoints from entering 16.16 masses, so this protection is not
-  available on the adopted content; a triality-carrying (6-valued) vacuum has independent phases, and theta_bar
+  available on the supplied content; a triality-carrying (6-valued) vacuum has independent phases, and theta_bar
   returns with J (cp-source-new-tick section 5, #10047).
 - Verdict (c): a T-odd vacuum needs at least sextic terms with chosen signs/sizes (not tested); couplings are not fixed
   by any rule: gate item 1 would fail. theta_bar: protected only in the forbidden adjoint case.

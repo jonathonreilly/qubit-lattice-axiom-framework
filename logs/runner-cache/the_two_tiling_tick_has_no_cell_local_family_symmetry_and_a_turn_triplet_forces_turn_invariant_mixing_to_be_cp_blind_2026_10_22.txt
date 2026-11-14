@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_two_tiling_tick_has_no_cell_local_family_symmetry_and_a_turn_triplet_forces_turn_invariant_mixing_to_be_cp_blind_2026_10_22.py
-runner_sha256: 3c376f4e84943f30cf279e389d570316534cf1d645a85ade4a7cf2469f5a5ac5
-input_fingerprint_sha256: 98c03828d50a7bd0256e4ffca10d6ef002fe4d5d62930db4b42d5bb51f325187
+runner_sha256: 4ce51e0361a33ae4e562938e02d64c7077e00a46c583d03fd66d48c0e149af90
+input_fingerprint_sha256: d24b40b3179317381f621ece3bb2f450e26b6242032abffcbc818806b2a6099f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.05
+elapsed_sec: 1.92
 status: ok
 ----- stdout -----
 == A. CL-1 two-tiling update, Bloch over 2Z^3 (8 modes per cell)
@@ -19,8 +19,8 @@ status: ok
 == C. Family mixing from turn-invariant (no axis chosen) mass operators
 [PASS] C1 [F] invariant up/down masses on each family space; J = 0 exactly when no turn eigenvalue holds >= 3 families: B1 family space, commutant masses [2, 1, 1]: J 1e-16 |[Mu,Md]| 3.7 ctrl 0.077 | A no-copy k=axis dim 4 [2, 1, 1]: J 1e-16 |[Mu,Md]| 109.7 ctrl 0.082 | A no-copy k=0 dim 4 [2, 1, 1]: J 7e-17 |[Mu,Md]| 61.2 ctrl 0.070 | A no-copy k=pi dim 4 [2, 1, 1]: J 7e-17 |[Mu,Md]| 75.6 ctrl 0.079
 [PASS] C2 [T] Z3 lemma, three families: max |det[Hu,Hd]| (prop. to J) 3e-45 for a turn triplet, 7e-29 for 1+1+w, 1166.3 when the turn is a scalar: [Hu,Hd] is in (+)M_n, each block traceless, so J = 0 unless one turn eigenvalue holds all three families
-[PASS] C3 [T] fitted count: every coefficient of an invariant up/down mass operator is FITTED; B1 needs 6 real numbers per mass per sector (M2+C+C), none fixed by a rule
-TOTAL: PASS=10 FAIL=0
+SUPPLIED (not counted): C3 fitted count: every coefficient of an invariant up/down mass operator is FITTED; B1 needs 6 real numbers per mass per sector (M2+C+C), none fixed by a rule
+TOTAL: PASS=9 FAIL=0
 
 ----- stderr -----
 

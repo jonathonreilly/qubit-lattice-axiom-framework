@@ -2,6 +2,7 @@
 """Octonion checks: cyclic table, signed automorphisms (expect 1344, pure-perm 21 = F21), Frobenius as a colour
 rotation, u -> -u inside G2, left multiplications as 3-qubit Paulis, Cayley-form support = RM(1,3) weight-4 words,
 Jordan identity on H_n(O) for n = 2,3,4, and the Furey 1+3+3+1 split."""
+AUDIT_TIMEOUT_SEC = 300
 import itertools, collections, numpy as np
 rng = np.random.default_rng(7)
 # basis index 0 = real unit '1'; imaginary units e_{i}, i in Z7, stored at index i+1

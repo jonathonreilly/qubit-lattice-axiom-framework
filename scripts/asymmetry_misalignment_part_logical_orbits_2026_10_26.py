@@ -2,6 +2,7 @@
 """Structure of the logical orbits (7, 28, 28) of the 168-group on N(S)/S: is the 7-orbit a Lagrangian
 (logical stabiliser state => G fixes a logical stabiliser basis) or a maximal anticommuting set (Cl(0,7),
 octonion left multiplications)?  Also: does the logical image preserve any 3-qubit tensor decomposition?"""
+AUDIT_TIMEOUT_SEC = 300
 import itertools, collections
 n = 8
 def pauli(s):

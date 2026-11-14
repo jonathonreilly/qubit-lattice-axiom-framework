@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Test A (pre-registered in sol_criteria_pre_run.txt): on the adopted Wilson-type domain-wall slab
+"""Test A (pre-registered in sol_criteria_pre_run.txt): on the supplied (in the source: adopted) Wilson-type domain-wall slab
 (4 components per Z^3 site, Shamir layer hop A_UP = (G5 + i G4)/2, as in the cube-three-families runner),
 take the (2,4) window (m = 3), extract the three near-wall X-point Weyl families, bring every node to ONE
 standard Weyl form (Lorentz-consistent frames), and compute the family action of rotations, translations
 and the antiunitary T. Kill condition: no antiunitary, or all real family actions scalar, or non-real."""
+AUDIT_TIMEOUT_SEC = 300
 import itertools, numpy as np
 np.set_printoptions(precision=4, suppress=True)
 s0 = np.eye(2, dtype=complex); sx = np.array([[0, 1], [1, 0]], complex); sy = np.array([[0, -1j], [1j, 0]]); sz = np.diag([1., -1]).astype(complex)

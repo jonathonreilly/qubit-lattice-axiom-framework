@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_2026_10_24.py
-runner_sha256: 3314b622b7222ec9204bc1437214ebc8ac6b856a8228118d66ae74896199016f
-input_fingerprint_sha256: d4829c5dd4fa9cf65e2125073001cfdc9259384290684b866540b6c9e52e8a9c
+runner_sha256: f7c003645dcc24ea454866543c50d62d5d0f4154f761aca7b8a0b749938179ca
+input_fingerprint_sha256: d270f01116a102d386253c86d7bc347ff180d02e12d5ebdcca0978e209e809a4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.05
+elapsed_sec: 9.41
 status: ok
 ----- stdout -----
 PASS A0 triality: SU(3) singlets in adj x adj x 6 and adj x 6 (mass term from adjoint vacua): dims 0,0; 6x6 0, 6bar x 6 1

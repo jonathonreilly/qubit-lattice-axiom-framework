@@ -15,6 +15,8 @@ Primary runner: `scripts/translation_invariant_terms_give_family_diagonal_mixing
 
 The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its family entry reads three families at zoom 3, where the three-fold turn about a site's body diagonal fixes three of the 27 positions of each 3x3x3 block. This note asks what can mix those families, given that the register's update law (CL-1 in the three-law numbering) builds the cube tick from two tilings offset by (1,1,1), and what measured mixing then demands. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose neither the zoom-3 reading nor any vacuum.
 
+**Local labels (2026-11-14).** "The register" and "the update law" (CL-1 in the source's three-law numbering) are the source branch's register text, which is not in this repository. The cube tick, copy mass, two tilings and the zoom-3 family reading are supplied assumptions of this note. They are not entries of [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md), whose historical aliases CL-1 to CL-3 name a lossless-influence clause, a record-removal clause and a pending conservation proposal; neither carries premise weight.
+
 ## Statement
 
 Supplied model: the update law's cube tick (spin-3/2 edge hop W on 2x2x2 cubes, the two tilings, even cubes exp(-i(eps - mu/2)R) wrapped by the copy-mass factor exp(i(M N/4)(1 - s)R), odd cubes exp(+i(eps + mu/2)R)), one mode per site, single-particle sector, and the zoom-3 family reading in which the families are the turn-fixed sectors (j, j, j), j = 0, 1, 2, of the 27 translation sectors.
@@ -31,7 +33,7 @@ Item 1: sector a is built from the sites 2n + c with the phase w^(-a.n), n runni
 
 ## Checks
 
-The runner ends with `TOTAL: PASS=14 FAIL=0` in about 2 s, on a 6^3 torus.
+The runner ends with `TOTAL: PASS=10 FAIL=0` in about 2 s, on a 6^3 torus, and exits nonzero on any failed check. Since the 2026-11-14 repair four lines are printed and not counted: the measured inputs, D2 (a comparison computed from the supplied measured moduli alone), and E2 and F1 (stated steps). The source version counted them as literal passes (total 14).
 
 Finite diagnostics:
 - The tick at (eps, mu, M N) = (0.03, 0.002, 0.02) is unitary and its commutators with T(2e_1), T(2e_2), T(2e_3) vanish, while those with T(e_1) and T(1,1,1) are 0.0253 and 0.0289.
@@ -49,7 +51,7 @@ Stated, not computed by the runner: that a species-blind single channel aligns t
 
 Measured inputs: PDG 2024 CKM moduli and errors, quark running masses at M_Z, charged-lepton masses, J = 3.12e-5, NuFIT 6.0 normal ordering.
 - Sorted measured rows (0.0037, 0.225, 0.9744) and (0.0086, 0.0411, 0.9991): the smallest moduli differ by 24 sigma and the middle ones by 184 sigma, so every rule that keeps a family three-cycle in both quark sectors is excluded, and a family flux of that type cannot be the source of quark mixing.
-- For the site plus cube texture with the measured m2/m3, free angles and phases, and |V_us| held at 0.225, the smallest |V_cb| found by 60 Nelder-Mead starts is 0.0723 (about sqrt(m_s/m_b) - sqrt(m_c/m_t) = 0.137 - 0.060 with an angle factor), against the measured 0.0418 +- 0.0008. This is a float search, so the bound is the best found, not a proved minimum; it indicates that this vacuum needs at least a third channel for the first family.
+- For the site plus cube texture with the measured m2/m3, free angles and phases, and |V_us| held at 0.225, the smallest |V_cb| found by 60 seeded Nelder-Mead starts (uniform in [0, 2 pi)^4, objective |V_cb| + 1e3 max(0, ||V_us| - 0.22501| - 0.002)) is 0.0723 (about sqrt(m_s/m_b) - sqrt(m_c/m_t) = 0.137 - 0.060 with an angle factor), against the measured 0.0418 +- 0.0008. This is a finite float search (runner E4, a finite-search check). 0.0723 is the best value found, not a proved minimum and not a lower bound, so the site plus cube vacuum is not excluded here. Whether it needs a third channel for the first family is open.
 - A single species-blind channel would make the neutrino mixing share the charged-lepton alignment, against NuFIT |U_mu3| of about 0.68.
 - Look-elsewhere: the six adjacent mass ratios read as integer powers of 2 or 3 sit on average 0.18 and 0.28 from integers (p = 0.13 and 0.62 against log-uniform ratios); the best free base, 16.83, has p = 0.46. There is no rung-ratio signal.
 
@@ -60,7 +62,7 @@ Supplied: the tick parameters, the zoom-3 family reading (fine momenta j(1,1,1) 
 ## Dependencies
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): unchanged.
-- [Candidate-law register](CANDIDATE_LAWS.md): the update law's cube tick, copy mass and two tilings, and the zoom-3 family entry. Zero premise weight; results are conditional on them.
+- [Candidate-law register](CANDIDATE_LAWS.md): zero premise weight. The update law's cube tick, copy mass and two tilings, and the zoom-3 family entry, are the source branch's register text (see Local labels), not entries of that file; results are conditional on them as supplied assumptions.
 
 ## How to run
 
@@ -68,4 +70,4 @@ Supplied: the tick parameters, the zoom-3 family reading (fine momenta j(1,1,1) 
 python3 scripts/translation_invariant_terms_give_family_diagonal_mixing_and_a_kept_family_three_cycle_is_excluded_2026_10_22.py
 ```
 
-Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 2 s, prints about 4.4 kB and ends with `TOTAL: PASS=14 FAIL=0`.
+Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 2 s, prints about 4.9 kB and ends with `TOTAL: PASS=10 FAIL=0`.

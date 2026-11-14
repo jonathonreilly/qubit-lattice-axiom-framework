@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""new-tick-recheck: which results derived with CL-1's W = 0 tick survive the adopted family-class tick
+"""new-tick-recheck: which results derived with CL-1's W = 0 tick survive the supplied (in the source: adopted) family-class tick
 (FREEZE, W_F = (-2,1,1))?  1 lapse in the step;  2 speed tie;  3 overlap (GW, doublers, index);  4 Floquet-pi slab.
 Labels: [T] exact, [F] finite diagnostic, [S] estimate / reading. Verdicts follow criteria_pre_run.txt."""
 AUDIT_TIMEOUT_SEC = 120

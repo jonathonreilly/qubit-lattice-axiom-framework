@@ -220,14 +220,16 @@ check("[E] with independent supplied triples for Q, u^c, d^c (eps 0.22): Z_9 nev
 print("== D. lepton mixing [M approx: s12^2 0.307(12), s13^2 0.0220(6), s23^2 0.45-0.58 (octant)]")
 s12, s13 = (1 / 3, 0.307, 0.012), (0.0, 0.0220, 0.0006)
 pull12 = (s12[0] - s12[1]) / s12[2]; pull13 = (s13[0] - s13[1]) / s13[2]
-check("[E] tribimaximal (exact A4 residuals, which need an A4 triplet the site group lacks): s12^2 = 1/3, s23^2 = 1/2, "
-      "s13 = 0 is excluded by theta13", abs(pull13) > 30, f"pulls: s12^2 {pull12:+.1f} sigma, s13^2 {pull13:+.0f} sigma")
+print("ESTIMATE (not counted; computed from the supplied NuFIT values only): tribimaximal (exact A4 residuals, which need an "
+      "A4 triplet the site group lacks): s12^2 = 1/3, s23^2 = 1/2, s13 = 0 is far from the measured theta13"
+      f" | pulls: s12^2 {pull12:+.1f} sigma, s13^2 {pull13:+.0f} sigma")
 P = np.array([[w ** (-j * x) for x in range(3)] for j in range(3)]) / np.sqrt(3)
 anti = P @ np.array([0, 1, -1]) / np.sqrt(2)
-check("[E] the residual groups that do exist (charged leptons keep the family Z_3, neutrinos keep inversion, or the "
-      "reverse) fix a column or row (0, 1/sqrt2, 1/sqrt2): a zero in the mixing matrix, whose smallest measured entry is "
-      "|U_e3| = 0.148; pure character-vs-position mixing gives all |U|^2 = 1/3",
-      np.allclose(np.abs(anti), [0, 1 / np.sqrt(2), 1 / np.sqrt(2)]) and abs(pull13) > 30,
+check("[T] the residual groups that do exist (charged leptons keep the family Z_3, neutrinos keep inversion, or the "
+      "reverse) fix a column or row (0, 1/sqrt2, 1/sqrt2): a zero in the mixing matrix (estimate, not counted here: the "
+      "smallest measured entry is |U_e3| = 0.148); pure character-vs-position mixing gives all |U|^2 = 1/3",
+      np.allclose(np.abs(anti), [0, 1 / np.sqrt(2), 1 / np.sqrt(2)]),
       f"|anti| in characters {np.round(np.abs(anti), 3)}; best placement (zero at U_e3): s13^2 = 0, {pull13:+.0f} sigma")
 print(f"runtime {time.time() - t0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

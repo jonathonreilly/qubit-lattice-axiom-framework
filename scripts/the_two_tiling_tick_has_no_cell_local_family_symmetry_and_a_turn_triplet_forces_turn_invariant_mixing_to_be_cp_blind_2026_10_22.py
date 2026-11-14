@@ -293,6 +293,7 @@ check("C2 [T]", lem["1,w,w2"] < 1e-12 and lem["1,1,w"] < 1e-12 and lem["1,1,1"] 
       f"Z3 lemma, three families: max |det[Hu,Hd]| (prop. to J) {lem['1,w,w2']:.0e} for a turn triplet, {lem['1,1,w']:.0e} "
       f"for 1+1+w, {lem['1,1,1']:.1f} when the turn is a scalar: [Hu,Hd] is in (+)M_n, each block traceless, so J = 0 "
       "unless one turn eigenvalue holds all three families")
-check("C3 [T]", True, "fitted count: every coefficient of an invariant up/down mass operator is FITTED; B1 needs 6 real "
+print("SUPPLIED (not counted): C3 fitted count: every coefficient of an invariant up/down mass operator is FITTED; B1 needs 6 real "
       "numbers per mass per sector (M2+C+C), none fixed by a rule")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

@@ -338,8 +338,10 @@ Lam, vH, mu_q = 2.435e18, 246.0, 2.16e-3
 M1 = 7.5e-11 * mu_q * Lam / vH; M2 = np.sqrt(7.5e-11) * mu_q * Lam / vH
 print(f"   full copies (theta ~ eps): sigma ~ M < {M1:.1e} GeV; singlet-only (theta ~ eps^2): sigma ~ M < {M2:.1e} GeV")
 print(f"   copies and sigma at the cell scale give eps ~ v/m_u = {vH / mu_q:.0e}: no protection there")
-check("[E] the zoom-3 Nelson-Barr structure needs its vector-like copies and CP-odd vacua far below the cell scale: about "
-      "1.6 TeV for full copies (at the LHC vector-like quark bounds, ~1.3-1.5 TeV), about 2e8 GeV for singlet-only copies",
-      1e3 < M1 < 3e3 and 1e8 < M2 < 3e8, f"{M1:.0f} GeV, {M2:.1e} GeV")
+print("ESTIMATE (not counted; computed from the supplied unit map, v, m_u and the theta_bar bound only): with these inputs the "
+      "zoom-3 Nelson-Barr structure needs its vector-like copies and CP-odd vacua far below the cell scale: about 1.6 TeV for "
+      "full copies (at the quoted LHC vector-like quark bounds, ~1.3-1.5 TeV), about 2e8 GeV for singlet-only copies"
+      f" | {M1:.0f} GeV, {M2:.1e} GeV")
 print(f"runtime {time.time() - T0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

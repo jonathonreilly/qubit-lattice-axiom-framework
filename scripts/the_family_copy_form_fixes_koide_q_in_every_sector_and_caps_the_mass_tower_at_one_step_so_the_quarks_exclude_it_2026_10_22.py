@@ -174,3 +174,4 @@ print("   count: the copy form uses 3 scales + 3 phases (the phases are not in C
 print("   Q values (leptons pass, up and down fail by > 5 sigma) and gives no mixing; the SM uses 9 + 4.")
 print(f"runtime {time.time()-t0:.1f} s")
 print(f"TOTAL: PASS={NP} FAIL={NF}")
+raise SystemExit(1 if NF else 0)

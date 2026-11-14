@@ -176,3 +176,4 @@ for i in range(3):
         m8_in.append([sum(O3[r][c]*x[c] for c in range(6)) for r in range(6)] == [F(t) for t in y])
 check("H7 none of the 9 minimal (norm-8) monomials lies in this gapping lattice: the minimal term is not part of it", not any(m8_in))
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

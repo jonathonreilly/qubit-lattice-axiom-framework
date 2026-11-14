@@ -1,5 +1,7 @@
 """Class-inverting automorphisms (Chen-Fallbacher-Mahanthappa-Ratz-Trautner 2014 'type' test) for F21 = T7 (code point
-stabiliser) and Delta(27) (PR #10077 (ii)), plus AGammaL(1,8). Brute force over generator images."""
+stabiliser) and Delta(27) (PR #10077 (ii)). Brute force over generator images. AGammaL(1,8) is not analysed here.
+2026-11-14 repair: control S3 (every class is real, so every automorphism is class-inverting) added; the driver runs this part."""
+AUDIT_TIMEOUT_SEC = 300
 import itertools
 def mk(gens, mul, e):
     G = {e}; fr = [e]
@@ -47,3 +49,7 @@ analyse("F21 = Z7 x| Z3 (T7)", [(1, 1), (2, 0)], mul21, (1, 0), inv21)
 mulH = lambda p, q: ((p[0] + q[0]) % 3, (p[1] + q[1]) % 3, (p[2] + q[2] + p[0] * q[1]) % 3)
 invH = lambda p: ((-p[0]) % 3, (-p[1]) % 3, (-p[2] + p[0] * p[1]) % 3)
 analyse("Delta(27) = Heis(Z3)", [(1, 0, 0), (0, 1, 0)], mulH, (0, 0, 0), invH)
+# control: S3 as affine maps x -> a x + b on Z3, a in {1, 2}; its classes are real, so all 6 automorphisms invert classes
+mul3 = lambda p, q: ((p[0] * q[0]) % 3, (p[0] * q[1] + p[1]) % 3)
+inv3 = lambda p: (pow(p[0], -1, 3), (-pow(p[0], -1, 3) * p[1]) % 3)
+analyse("S3 control", [(1, 1), (2, 0)], mul3, (1, 0), inv3)

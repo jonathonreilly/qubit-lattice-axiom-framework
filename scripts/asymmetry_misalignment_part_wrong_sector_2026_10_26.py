@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """sol_E v3: couplings the charge principle still allows. Criteria: sol_E_v3_criteria_pre_run.txt (frozen before
 the first run). Uses the v2 model definitions (sol_E_charged_orders_v2.py). Deterministic, numpy only."""
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_charged_orders_2026_10_26.py",)
 import io, contextlib, itertools, time, numpy as np
 T00 = time.time()
 src = __import__('pathlib').Path(__file__).with_name('asymmetry_misalignment_part_charged_orders_2026_10_26.py').read_text().split("PRINC = ['uu_onsite'")[0]

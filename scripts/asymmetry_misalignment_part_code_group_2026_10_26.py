@@ -2,6 +2,7 @@
 """Independent re-derivation of the [[8,3,3]] code symmetry group (perm x uniform frame),
 its isomorphism type, the full LC x perm automorphism group (different method: GL(5,2) acting on
 the stabiliser space S, permuting the 8 subspaces K_j = {s in S : s|_j = I}), and the logical action."""
+AUDIT_TIMEOUT_SEC = 300
 import itertools, collections, sys, time
 t0 = time.time()
 n = 8

@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""T2: can the CL-1 cell tick U1(k) or the adopted FREEZE tick U_F(K) (8 cell components = 8 cube sites) commute with
+"""T2: can the CL-1 cell tick U1(k) or the supplied (in the source: adopted) FREEZE tick U_F(K) (8 cell components = 8 cube sites) commute with
 a Singer-type site permutation (order 7, one fixed site), dressed by arbitrary diagonal phases?  Necessary condition:
 the elementwise modulus |U| must be invariant under the permutation for every K (internal symmetry), or covariant
 under some K -> gK (point-group-like).  Also: which site permutations preserve |U| at all (the tick's own monomial group)."""
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_freeze_tick_rebuild_2026_10_26.py",)
 import itertools, collections, numpy as np
 exec(__import__('pathlib').Path(__file__).with_name('asymmetry_misalignment_part_freeze_tick_rebuild_2026_10_26.py').read_text())        # defines U1, UF, CELL, IDX, rng, ...
 Ks = [np.array(v) for v in ([0.37, -1.1, 0.8], [2.2, 0.4, -0.3], [-0.9, 1.7, 2.5], [0.0, 0.0, 0.0])]

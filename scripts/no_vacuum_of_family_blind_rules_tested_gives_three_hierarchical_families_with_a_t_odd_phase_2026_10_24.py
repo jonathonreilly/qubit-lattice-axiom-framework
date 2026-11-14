@@ -1,7 +1,7 @@
 AUDIT_INPUT_PATHS = ('docs/NO_VACUUM_OF_FAMILY_BLIND_RULES_TESTED_GIVES_THREE_HIERARCHICAL_FAMILIES_WITH_A_T_ODD_PHASE_ADJOINT_VACUA_CANNOT_ENTER_MASSES_AND_QUARTIC_ALIGNMENT_IS_T_EVEN_BOUNDED_THEOREM_NOTE_2026-10-24.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
 #!/usr/bin/env python3
 """spontaneous-family-breaking (BACKLOG 5b): can a vacuum break the family U(3) of the
-family-blind adopted rules into three families with a hierarchy and a T-odd phase?
+family-blind supplied rules (called adopted in the source) into three families with a hierarchy and a T-odd phase?
 
 Sections: A0 triality of mass terms, A1 Spin(10) bilinear singlets, A2 Wick/exchange sign,
 B family Stoner on a supplied half-filled lattice Dirac band, C det channel of the forced
@@ -310,3 +310,4 @@ for t in range(200):
 check("E3 Hermitian mass functions of adjoints: arg det in {0, pi}", max(dets) < 1e-12,
       f"max |Im det|/|det| {max(dets):.1e} (but A0: adjoints cannot enter a 16.16 mass term)")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+raise SystemExit(1 if FAIL else 0)

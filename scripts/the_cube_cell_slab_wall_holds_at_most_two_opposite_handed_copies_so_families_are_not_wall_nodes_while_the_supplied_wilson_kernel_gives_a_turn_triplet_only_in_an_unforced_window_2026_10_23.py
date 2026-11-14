@@ -2,7 +2,7 @@ AUDIT_INPUT_PATHS = ('docs/THE_CUBE_CELL_SLAB_WALL_HOLDS_AT_MOST_TWO_OPPOSITE_HA
 #!/usr/bin/env python3
 """Wall families on the domain-wall slab (supplied free models, seeded, self-contained).
 
-W. The adopted tick-form slab (chiral-tick-form): Wilson-type kernel, 4 components per Z^3 site, Ls layers.
+W. The supplied tick-form slab (the source's adopted slab, chiral-tick-form): Wilson-type kernel, 4 components per Z^3 site, Ls layers.
    Scan the layer mass m across its windows; count near-wall Weyl nodes, momenta, chiralities; act with the
    three-fold turn about (111) on the wall-node space.
 C. The same slab built on CL-1's own cell: 2x2x2 cube cell (8 one-mode sites, face phase -1, both tilings),
@@ -67,7 +67,7 @@ def HW_bulk(k, p, m): return HW_layer(k, m) + AW * np.exp(1j * p) + AW.conj().T 
 
 corners = [np.array(c) * np.pi for c in itertools.product((0, 1), repeat=3)]
 cname = lambda c: "G" if sum(c) == 0 else ("X" if sum(c) < 1.5 * np.pi else ("M" if sum(c) < 2.5 * np.pi else "R"))
-print("== W. adopted slab (Wilson-type kernel, 4 components per site); layer mass m scanned over its windows")
+print("== W. supplied tick-form slab (the source's adopted slab; Wilson-type kernel, 4 components per site); layer mass m scanned over its windows")
 LsW = 12; mW = [0.6, 1.0, 3.0, 5.0, 7.0]; resW = {}
 g8 = np.linspace(-np.pi, np.pi, 8, endpoint=False)
 for m in mW:
@@ -201,13 +201,29 @@ check("C2b [F]", okg, "(pre-set 'gapped at Mc = 3' FAILED on the first run; reco
       "(CL-1's copy operator (1 - s) R_e does not anticommute with D), so a separate s = -1-only window at large copy mass is not a "
       "gapped slab phase; the gapped s = -1-only window is (2, 2 + Mc) at small Mc",
       "; ".join(f"({q[0]},{q[1]}): gap {resC[q][0]:.1e}" for q in gl))
-stray = 0
-for kk in itertools.product(np.linspace(-np.pi, np.pi, 8, endpoint=False), repeat=3):
-    k = np.array(kk)
-    if np.linalg.norm(k) < 0.9: continue
-    if np.abs(np.linalg.eigvalsh(HC(k, 1.5, 1.0, LsC))).min() < 0.05: stray += 1
-check("C3 [F]", stray == 0, "no wall state anywhere else in the block zone ((m,Mc) = (1.5,1), 8^3 grid; pre-set: 0): "
-      "the cell has no X, M, R copies at all, so at most 2 wall copies per field", f"stray {stray}")
+# 2026-11-14 repair (hold finding 9). Exact part: at Mc = 0 the kinetic term D x 1 anticommutes with the rest of the
+# cell slab (B, eps and the layer hop), so H^2 = D^2 x 1 + M^2 and every wall zero mode lies in ker D. The copy mass
+# (1 - s) R_e does not anticommute with D (C2b), so with Mc > 0 this argument does not apply.
+rng_r = np.random.default_rng(20261114)
+acd = {}
+for Mc_ in (0.0, 1.0):
+    kr = rng_r.uniform(-np.pi, np.pi, 3); _, _, Rer, Ror, _ = cell(kr); Dl = np.kron(np.eye(LsC), Rer - Ror)
+    rest = HC(kr, 1.5, Mc_, LsC) - Dl; acd[Mc_] = np.abs(Dl @ rest + rest @ Dl).max()
+check("C1b [T]", acd[0.0] < 1e-12 and acd[1.0] > 1e-2, "at Mc = 0 the kinetic term D anticommutes with the rest of the cell "
+      "slab at generic K, so H^2 = D^2 + M^2 and wall zero modes need ker D; control: at Mc = 1 it does not, so for Mc > 0 "
+      "this bound does not apply", f"defect Mc = 0: {acd[0.0]:.0e}; Mc = 1: {acd[1.0]:.2f}")
+stray = {}
+for q in gp:
+    st_, mn_ = 0, 9.0
+    for kk in itertools.product(np.linspace(-np.pi, np.pi, 8, endpoint=False), repeat=3):
+        k = np.array(kk)
+        if np.linalg.norm(k) < 0.9: continue
+        e_ = np.abs(np.linalg.eigvalsh(HC(k, q[0], q[1], LsC))).min(); mn_ = min(mn_, e_); st_ += e_ < 0.05
+    stray[q] = (st_, mn_)
+check("C3 [F]", all(v[0] == 0 for v in stray.values()), "finite-grid diagnostic, not a theorem: at the six gapped test points "
+      "(m, Mc) with Mc <= 1, on an 8^3 grid with |k| >= 0.9 and Ls = 24, no state below 0.05 (the source's pre-set point "
+      "(1.5, 1) included); off-K = 0 wall zeros at other (m, Mc) are not excluded",
+      "; ".join(f"{q}: min|E| {v[1]:.2f}" for q, v in stray.items()))
 chC = {q: (chirality(resC[q][3], np.zeros(3), resC[q][4]), chirality(resC[q][3], np.zeros(3), resC[q][5])) for q in [(0.4, 0.8), (2.4, 0.8), (0.5, 1.0), (2.5, 1.0)]}
 ok = all(v[0] is not None and v[0] == -v[1] for v in chC.values()) and chC[(0.4, 0.8)][0] == chC[(0.5, 1.0)][0]
 check("C4 [F]", ok, "chirality of a lone wall copy (s+ alone at small m, s- alone at m in (2, 2 + Mc)), near vs far (pre-set: far = -near; recorded which hand each copy has)",
@@ -251,3 +267,4 @@ print("   C6 [T] cited (chiral-tick-form A-T2): for every m a local slab has zer
 print("Supplied: both slab kernels, Ls, m, Mc (copy mass in slab units), free fields; nothing in CL-1 fixes the layer-mass window.")
 print(f"elapsed {time.time() - T0:.1f}s, peak RSS {resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 2 ** 20:.0f} MB")
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
+raise SystemExit(1 if NP[1] else 0)

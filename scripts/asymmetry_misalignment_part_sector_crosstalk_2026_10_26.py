@@ -4,6 +4,7 @@ Criteria: sol_D_criteria_pre_run.txt (frozen before the first run). numpy only, 
 Supplied: slab form and m, three species as slab copies, vertex spinor structure Cvert = 1 (x) eps, cell-periodic
 profiles, potentials of the same residual symmetry as their vertex (strength kappa = 1), mirror exclusion.
 Derived: every Yukawa and every cross-talk vertex from the slab's own near-wall wavefunctions and resolvent."""
+AUDIT_TIMEOUT_SEC = 300
 import itertools, time, numpy as np
 T0 = time.time(); NP = [0, 0]
 def check(tag, ok, msg):

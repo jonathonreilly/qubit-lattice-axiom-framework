@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/the_family_class_tick_keeps_a_time_reversing_antiunitary_that_fixes_every_family_so_it_supplies_no_quark_cp_phase_and_keeps_theta_bar_at_zero_or_pi_2026_10_24.py
-runner_sha256: 9a65667ecf947a17269b2a91c120c8df9f2e95d8bbcd7a6c07bb9df93bd48353
-input_fingerprint_sha256: f75e56e2309a0d4890db19151484e5e1cf9aedacf5f3a7b1220e21e06acf35ef
+runner_sha256: 047aacbb0f1dbaa38fafc04f1d3383f16e9deb10e47c2725f52a838093fa295a
+input_fingerprint_sha256: 6d234e69c7dad54e9a193b83e4ca4437f6afa041d2cd4b9b02d49e7f10e450b7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 == A. the tick's light node (five-direction Clifford walk)

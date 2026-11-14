@@ -13,7 +13,8 @@ diagnostic, [E] estimate against measurement, [M] measured input.
  C. a k -> -k symmetry of the tick makes families 1 and 2 degenerate; breaking it splits masses only
  D. family flux: any surviving (twisted) family three-cycle gives a permuted-circulant |CKM|
  E. a vacuum on the zoom-3 coarse sites: democratic, rank one; site + cube channels give the open-spine
-    texture with m1 = 0 and |V_cb| >= 0.072 at |V_us| = 0.225
+    texture with m1 = 0; a seeded finite search (60 Nelder-Mead starts) finds |V_cb| no smaller than 0.072 at
+    |V_us| = 0.225 (best found, not a proved minimum; no exclusion is claimed)
  F. zoom ladder: rung-scaled masses and a look-elsewhere check
 """
 import itertools, time
@@ -27,6 +28,8 @@ def check(tag, name, ok, detail=''):
     global NP, NF
     NP += bool(ok); NF += (not ok)
     print(f"[{'PASS' if ok else 'FAIL'}] {tag} {name}" + (f" | {detail}" if detail else ''))
+def note(kind, name, detail=''):   # printed, not counted: supplied inputs, stated steps, constant-only comparisons
+    print(f"{kind}: {name}" + (f" | {detail}" if detail else ''))
 rng = np.random.default_rng(20261022)
 w3 = np.exp(2j * np.pi / 3)
 
@@ -37,9 +40,9 @@ VM = np.array([[0.97435, 0.22501, 0.003732], [0.22487, 0.97349, 0.04183], [0.008
 VS = np.array([[1.6e-4, 6.8e-4, 9e-5], [6.8e-4, 1.6e-4, 7.5e-4], [1.8e-4, 7.3e-4, 3.2e-5]])
 J_meas = 3.12e-5
 Q = lambda m: sum(m) / sum(np.sqrt(m)) ** 2
-check('[M]', 'ratios m3/m2, m2/m1: lep %.1f %.1f, up %.0f %.0f, down %.1f %.1f; Koide Q lep %.5f down %.3f up %.3f; J = 3.12e-5' % (
+note('MEASURED INPUT (not counted)', 'ratios m3/m2, m2/m1: lep %.1f %.1f, up %.0f %.0f, down %.1f %.1f; Koide Q lep %.5f down %.3f up %.3f; J = 3.12e-5' % (
     ml['tau']/ml['mu'], ml['mu']/ml['e'], mq['t']/mq['c'], mq['c']/mq['u'], mq['b']/mq['s'], mq['s']/mq['d'],
-    Q(list(ml.values())), Q([mq['d'], mq['s'], mq['b']]), Q([mq['u'], mq['c'], mq['t']])), True)
+    Q(list(ml.values())), Q([mq['d'], mq['s'], mq['b']]), Q([mq['u'], mq['c'], mq['t']])))
 
 print('== B. CL-1 tick on a 6^3 torus: translation charge is the family label')
 r3 = np.sqrt(3.0); C8 = np.array(list(itertools.product((0, 1), repeat=3)))
@@ -127,9 +130,9 @@ check('[T]', 'D1 if each quark sector keeps a family three-cycle C_s = D_s C D_s
       'orderings, so |V| is a permuted circulant: every row and column holds the same three moduli', worst < 1e-10, '200 random fluxes, %.0e' % worst)
 o0, o2 = np.argsort(VM[0]), np.argsort(VM[2]); rm = np.array([VM[0][o0], VM[2][o2]])
 sig = [abs(VM[0][o0[k]]-VM[2][o2[k]])/np.hypot(VS[0][o0[k]], VS[2][o2[k]]) for k in range(3)]
-check('[E]', 'D2 measured rows sorted: %s vs %s: smallest moduli differ by %.0f sigma, middle by %.0f sigma: every rule that leaves a '
-      'family three-cycle in both quark sectors is excluded; the AB-type family flux cannot be the source of quark mixing'
-      % (np.round(rm[0], 4), np.round(rm[1], 4), sig[0], sig[1]), min(sig[:2]) > 20)
+note('ESTIMATE (not counted; measured CKM moduli supplied)', 'D2 measured rows sorted: %s vs %s: smallest moduli differ by %.0f sigma, '
+     'middle by %.0f sigma; with D1, a rule that leaves a family three-cycle in both quark sectors does not fit the measured moduli, '
+     'so that AB-type family flux is not the source of quark mixing' % (np.round(rm[0], 4), np.round(rm[1], 4), sig[0], sig[1]))
 
 print('== E. a vacuum on the zoom-3 coarse sites (candidate rule, supplied)')
 comb = np.zeros(N); comb[[idx(3*np.array(n)) for n in itertools.product(range(2), repeat=3)]] = 1
@@ -140,9 +143,10 @@ rk = [np.linalg.matrix_rank(np.einsum('ijcc->ijc', Mf)[:, :, c], 1e-10) for c in
 check('[F]', 'E1 a term on the coarse sites 3Z^3 breaks the 2Z^3 charge (sectors leak) and couples the three families democratically: '
       '|<j,c|V|j\',c>| = 1/27 for all j, j\', rank one in family space for each class c', leak(U3) > 1e-4 and np.abs(mags - 1/27).max() < 1e-12
       and offc < 1e-12 and set(rk) == {1}, 'leak %.1e, rank %s' % (leak(U3), set(rk)))
-check('[T]', 'E2 one vacuum channel per sector gives a rank-one mass: one massive family (the coarse site\'s own mode) and two massless; '
-      'a species-blind channel aligns the heavy family across sectors, V_tb = 1, V_cb = V_ub = 0 at this order; Cabibbo and J undetermined',
-      True, 'measured m3/m2 >= 16.8 in all charged sectors, |V_tb| 0.99912, but NuFIT |U_mu3| ~ 0.68: neutrinos cannot share the channel')
+note('STATED (not counted; rank one per class is computed in E1)', 'E2 one vacuum channel per sector gives a rank-one mass: one massive '
+     'family (the coarse site\'s own mode) and two massless; a species-blind channel aligns the heavy family across sectors, V_tb = 1, '
+     'V_cb = V_ub = 0 at this order; Cabibbo and J undetermined', 'measured m3/m2 >= 16.8 in all charged sectors, |V_tb| 0.99912, but '
+     'NuFIT |U_mu3| ~ 0.68: neutrinos would not share the channel')
 def chain(m2, m3, th):
     c = m3-m2; r = np.sqrt(m2*m3); M = np.array([[0, r*np.cos(th), 0], [r*np.cos(th), c, r*np.sin(th)], [0, r*np.sin(th), 0]])
     w, v = np.linalg.eigh(M); o = np.argsort(abs(w)); return abs(w[o]), v[:, o]
@@ -158,14 +162,17 @@ def pen(p):
     v = np.abs(Vch(p, QS)); return v[1, 2] + 1e3*max(0, abs(v[0, 1]-0.22501)-0.002)
 best = min((minimize(pen, rng.uniform(0, 2*np.pi, 4), method='Nelder-Mead') for _ in range(60)), key=lambda r: r.fun)
 vb = np.abs(Vch(best.x, QS))
-check('[E]', 'E4 with the measured m2/m3 and free angles and phases, |V_us| = 0.225 forces |V_cb| >= %.4f (about sqrt(m_s/m_b) cos - '
-      'sqrt(m_c/m_t) = %.3f - %.3f) vs 0.0418 +- 0.0008: the site + cube vacuum is excluded; the first family needs a third channel'
-      % (vb[1, 2], np.sqrt(mq['s']/mq['b']), np.sqrt(mq['c']/mq['t'])), vb[1, 2] > 0.06 and abs(vb[0, 1]-0.225) < 0.003)
+check('[F] finite search', 'E4 with the measured m2/m3, free angles (th_u, th_d) and phases (2): 60 seeded Nelder-Mead starts, uniform '
+      'in [0, 2 pi)^4, objective |V_cb| + 1e3 max(0, ||V_us| - 0.22501| - 0.002): the smallest |V_cb| FOUND at |V_us| = 0.225 is %.4f '
+      '(about sqrt(m_s/m_b) cos - sqrt(m_c/m_t) = %.3f - %.3f) vs 0.0418 +- 0.0008. Best found, not a proved minimum: no lower bound '
+      'and no exclusion of the site + cube vacuum is claimed' % (vb[1, 2], np.sqrt(mq['s']/mq['b']), np.sqrt(mq['c']/mq['t'])),
+      vb[1, 2] > 0.06 and abs(vb[0, 1]-0.225) < 0.003, 'best objective %.4f' % best.fun)
 
 print('== F. zoom ladder')
-check('[T]', 'F1 CL-1 fixes the tick as one fraction of each cube\'s light crossing, so a rung-n cube has N_n = 2^n N_0 and a family with '
-      'the same mass angle there has m = mu/N_n: masses go as 2^-n (3^-n at zoom 3); but the zoom-3 register puts all three families on one '
-      'rung, and PR #9883 finds the coarse gap rung-invariant, so neither reading gives a ladder without a further rule', True)
+note('STATED (not counted)', 'F1 CL-1 fixes the tick as one fraction of each cube\'s light crossing, so a rung-n cube has N_n = 2^n N_0 '
+     'and a family with the same mass angle there has m = mu/N_n: masses go as 2^-n (3^-n at zoom 3); but the zoom-3 register puts all three '
+     'families on one rung, and PR #9883 (cited, not rerun) reports the coarse gap rung-invariant, so neither reading gives a ladder '
+     'without a further rule')
 lr = np.log(np.array([ml['tau']/ml['mu'], ml['mu']/ml['e'], mq['t']/mq['c'], mq['c']/mq['u'], mq['b']/mq['s'], mq['s']/mq['d']]))
 def stat(x, base): y = x/np.log(base); return np.mean(np.abs(y - np.round(y)))
 sims = rng.uniform(np.log(10), np.log(600), (20000, 6))
@@ -177,7 +184,9 @@ check('[E]', 'F2 look-elsewhere: the six adjacent ratios as integer powers of 2 
       min(ps.values()) > 0.01)
 
 print('elapsed_seconds %.1f' % (time.time()-T0))
-print('theorems: B2, D1, E2, E3, F1; finite: B1, B3, C1, C2, E1; estimates: D2, E4, F2.')
+print('counted: theorems B2, D1, E3; finite B1, B3, C1, C2, E1; finite search E4; estimate F2. Printed, not counted: the '
+      'measured inputs, D2 (constant-only comparison), E2 and F1 (stated).')
 print('supplied: the zoom-3 family reading (fine momenta j(1,1,1) or register copies), the coarse-site vacuum and its channels, '
       'species couplings per channel, phases; PDG/NuFIT inputs.')
 print(f'\nTOTAL: PASS={NP} FAIL={NF}')
+raise SystemExit(1 if NF else 0)

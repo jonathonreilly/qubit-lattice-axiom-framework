@@ -9,16 +9,18 @@ upstream_dependencies:
   - the_slab_mirror_sits_on_the_light_copy_so_the_turn_anomaly_allows_every_family_count_and_the_number_conserving_spin12_term_cannot_gap_the_mirror_bounded_theorem_note_2026-10-23
   - the_spin10_pair_square_on_two_sixteens_is_a_spin12_casimir_with_a_unique_singlet_ground_state_and_gap_four_g_but_a_frozen_far_region_still_moves_the_mirror_bounded_theorem_note_2026-10-23
   - the_family_class_tick_gives_no_family_label_from_the_copy_mass_slab_depth_zoom_rung_or_record_cadence_and_its_copy_mass_keeps_the_family_fixing_antiunitary_bounded_theorem_note_2026-10-24
-runner: see stems.txt
+runner: scripts/the_minimal_turn_neutral_far_wall_term_for_three_families_has_a_free_family_matrix_whose_only_rule_blind_choice_keeps_u3_so_no_family_label_2026_10_24.py
 ---
 
 # The minimal turn-neutral far-wall term for three families has a free family matrix whose only rule-blind choice keeps U(3), so it gives no family label
 
 Claim type: bounded_theorem. Labels: [T] exact, [F] finite or numerical, [S] argued reading.
-Runner: runner.py, TOTAL: PASS=20 FAIL=0, under 1 s, about 40 MB, 2.9 k characters, seeded, AUDIT_TIMEOUT_SEC = 120.
-It was tested under a unique filename (gap_vertex_family_tensor_test_run.py, then deleted). Axioms and CL text are
+Primary runner: `scripts/the_minimal_turn_neutral_far_wall_term_for_three_families_has_a_free_family_matrix_whose_only_rule_blind_choice_keeps_u3_so_no_family_label_2026_10_24.py` (TOTAL: PASS=20 FAIL=0, under 1 s, about 40 MB, 2.9 k characters, seeded, AUDIT_TIMEOUT_SEC = 120; since 2026-11-14 it exits nonzero on any failed check).
+The source tested it under a unique filename (gap_vertex_family_tensor_test_run.py, then deleted). Axioms and CL text are
 unchanged, and no rule is adopted. Criteria were written before any code ran (criteria_pre_run.txt). Every prediction held.
 Verdict: FAIL on brief P2 (menu M4), on both FAIL branches.
+
+**Local labels (2026-11-14).** The family-class tick, the 1+1D 3-4-5-0 far-wall proxy (far-wall-smg), family-labels, "brief P2" and "menu M4" are source-branch texts and supplied models, not in this repository; CL text means the source's own candidate-law text, not [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md). None carries premise weight. far-wall-smg (#10058) and the other source names below are recorded only in the consolidation map or the source branch; what this note takes from them (for example far-wall-smg A2, rederived here) is a supplied input or a historical reported result, unverified here.
 
 ## Question (brief P2)
 On the family-class tick the mirror sits in the other copy, with turn charge q = 1 for every family. For N_f = 3, what is

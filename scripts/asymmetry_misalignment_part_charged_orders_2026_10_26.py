@@ -4,7 +4,13 @@ same model and frozen thresholds as sol_E_charged_orders.py (run 1), plus
  1. the full principle-allowed local Yukawa vertex (on-site + X-shifted and Q-shifted transverse bonds),
  2. a degeneracy-safe Jarlskog invariant, and
  3. T-symmetrised numerics (removes rounding-induced T violation only).
-Self-contained, numpy only, deterministic."""
+Self-contained, numpy only, deterministic.
+2026-11-14 repair (PR 10129 hold, finding 6): the thresholds in this file differ from those the note's appendix lists as
+frozen (E1 |sin| 1e-8 vs 1e-12 and median |J|/Jmax 1e-2 vs 1e-3; E2 1e-6 vs 1e-10; E5 1e-9 vs 1e-12; E7 counted at
+eps_max >= 1e-6 vs report-only). The criteria files are not carried in the repository, so which set was fixed first is
+not checkable here. The counted checks keep this file's (as-run) thresholds; each affected check also prints its outcome
+under the appendix thresholds on a CRITERIA line, not counted. Finding 2: E1 also reports the branch of arg det(Yu Yd)."""
+AUDIT_TIMEOUT_SEC = 900
 import itertools, time, numpy as np
 T0 = time.time(); NP = [0, 0]
 def check(tag, ok, msg):
@@ -163,10 +169,20 @@ for order in ('a', 'b'):
         res[order, D] = [evaluate(sl, dr, lu, ld, PRINC) for dr in DR]
 mx_tree = max(abs(np.sin(o['th_tree'])) for k in res for o in res[k]); medJ = np.median([abs(o['J_tree']) for k in res for o in res[k]])
 ndeg = sum(o['deg_tree'] for k in res for o in res[k]); minv = np.median([o['inv_tree'] for k in res for o in res[k]])
+def wrap2(x): return (x + np.pi) % (2 * np.pi) - np.pi
+def crit(tag, appendix_ok, appendix_rule, asrun_ok, asrun_rule):
+    print(f"  CRITERIA {tag} (not counted): appendix [{appendix_rule}] -> {'PASS' if appendix_ok else 'FAIL'}; "
+          f"as run [{asrun_rule}] -> {'PASS' if asrun_ok else 'FAIL'}")
+nbr = sum(abs(wrap2(-np.angle(np.linalg.det(o['Yu'])) - np.angle(np.linalg.det(o['Yd'])))) > np.pi / 2 for k in res for o in res[k])
+ntot = sum(len(v) for v in res.values())
 check("E1", mx_tree < 1e-8 and medJ > 1e-2, f"tree: max |sin theta_bar_tree| {mx_tree:.1e}; median |J_tree|/Jmax {medJ:.2f} "
-      f"(degenerate spectra {ndeg}/{sum(len(v) for v in res.values())}; median commutator invariant {minv:.1e})")
+      f"(degenerate spectra {ndeg}/{ntot}; median commutator invariant {minv:.1e}); arg det(Yu Yd) = pi in {nbr} of {ntot} "
+      f"draws: theta_bar_tree in {{0, pi}}, branch not selected")
+crit("E1", mx_tree < 1e-12 and medJ > 1e-3, "|sin| < 1e-12, median |J|/Jmax > 1e-3", mx_tree < 1e-8 and medJ > 1e-2,
+     "|sin| < 1e-8, median |J|/Jmax > 1e-2")
 e2 = max(abs(o['c_uu_onsite']) for k in res for o in res[k])
 check("E2", e2 < 1e-6, f"on-site |phi_u|^2 channel alone: max |theta_bar_ind|/eps^2 = {e2:.1e}")
+crit("E2", e2 < 1e-10, "< 1e-10", e2 < 1e-6, "< 1e-6")
 print("  c2(Delta) = median |theta_bar_ind|/eps^2 (all allowed channels) and by channel; Ls = 48")
 print("  Delta |  a: total  uu_bond  mixed     dd   |  b: total  uu_bond  mixed     dd")
 c2 = {}
@@ -184,6 +200,7 @@ check("E3", c2min * EPS_EW ** 2 < 1e-10, f"electroweak-scale order eps = {EPS_EW
 check("E3h", c2min * 0.2 ** 2 < 1e-10, f"lattice-scale order eps = 0.2: min_Delta median theta_bar_ind = {c2min * 0.04:.1e}")
 emax = np.sqrt(1e-10 / c2min)
 check("E7", emax >= 1e-6, f"quality bound: c2_min = {c2min:.2e}, eps_max = sqrt(1e-10/c2_min) = {emax:.1e} (order amplitude / cutoff)")
+crit("E7", True, "report only, no pass criterion", emax >= 1e-6, "eps_max >= 1e-6")
 # E4 control: linear couplings restore an O(eps) leak
 c1 = []
 for order in ('a', 'b'):
@@ -198,6 +215,7 @@ for _ in range(6):
     for D in (0, 3, 9):
         o = evaluate(sl, dr, 1, 1 + D, PRINC + ['lin']); mxJ = max(mxJ, abs(o['J_tree']), abs(o['J_corr'])); mxth = max(mxth, abs(np.sin(o['th_tree'])), abs(np.sin(o['th_corr'])))
 check("E5", mxJ < 1e-9 and mxth < 1e-9, f"aligned orders (both T-even): max |J|/Jmax {mxJ:.1e}, max |sin theta| {mxth:.1e} (tree and corrected, incl. linear terms)")
+crit("E5", mxJ < 1e-12 and mxth < 1e-12, "J, |sin theta| < 1e-12", mxJ < 1e-9 and mxth < 1e-9, "< 1e-9")
 # E6 convergence
 sl56 = Slab(56); conv = []
 for order in ('a', 'b'):

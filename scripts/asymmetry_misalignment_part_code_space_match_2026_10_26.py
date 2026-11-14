@@ -2,6 +2,8 @@
 PASS iff min over (site labelling x uniform frame) of ||(1-P) G V|| < 1e-10, for the fermionic
 second quantisation G of the K = 0 cell block of CL-1 (eps .3, 1.1) or FREEZE, under Jordan-Wigner.
 Controls: identity tick (must pass), Haar-random number-conserving cell unitary (baseline)."""
+AUDIT_TIMEOUT_SEC = 1500
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_freeze_tick_rebuild_2026_10_26.py",)
 import itertools as it, numpy as np, sys, os
 src = open(__import__('pathlib').Path(__file__).with_name('asymmetry_misalignment_part_freeze_tick_rebuild_2026_10_26.py')).read()
 ns = {}; exec(compile(src, 'freeze_build.py', 'exec'), ns)

@@ -8,10 +8,14 @@ upstream_dependencies:
 runner: scripts/the_lattice_theta_density_is_odd_under_the_kept_antiunitary_and_zoom_three_characters_give_theta_bar_zero_at_renormalisable_order_2026_10_22.py
 ---
 
-# The lattice theta density is odd under the kept antiunitary, and zoom-3 characters give theta_bar = 0 at renormalisable order
+# The lattice theta density is odd under the kept antiunitary, and zoom-3 characters keep theta_bar in {0, pi} at renormalisable order
 
 Claim type: bounded_theorem.
 Primary runner: `scripts/the_lattice_theta_density_is_odd_under_the_kept_antiunitary_and_zoom_three_characters_give_theta_bar_zero_at_renormalisable_order_2026_10_22.py`.
+
+**Repair 2026-11-14 (PR 10129 hold, finding 2).** The source title said zoom-3 characters give theta_bar = 0. Its own item 10 states arg det(M_u M_d) in {0, pi}, and an antiunitary symmetry fixes theta only modulo pi; the title now says {0, pi}. The sign branch is not selected here. The final estimate line is computed from supplied constants alone, so it is printed and not counted.
+
+**Local labels (2026-11-14).** "The register" (its quantum link registers with real terms, its zoom-3 family reading of the update law's tick) is the source branch's register text, not in this repository. Those inputs are supplied assumptions of this note. They are not entries of [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md), whose historical aliases CL-1 to CL-3 name other clauses; neither carries premise weight.
 
 The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its gauge content lives on quantum link registers (rishon links), its family structure is read from the zoom-3 translation characters of the update law's tick, and its terms are real in the occupation basis, so complex conjugation K is a kept antiunitary. This note asks where the strong-CP parameter theta_bar can enter: as a lattice theta density in the link sector, as a phase of the det term, as a vacuum phase in the mass matrices, or through heavy copies. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix none of the inputs used here.
 
@@ -82,7 +86,7 @@ Supplied: the spin-1/2 U(1) links on one cube, the random real field, the SU(3) 
 ## Dependencies
 
 - [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): Z^3 sites, one qubit per site, nearest-neighbour admissibility, records. They fix none of the supplied inputs above.
-- [Candidate-law register](CANDIDATE_LAWS.md): the update law's tick translations (read at zoom 3 for the family characters), the quantum link registers with real terms (the kept antiunitary). Zero premise weight; results using it are conditional on it.
+- [Candidate-law register](CANDIDATE_LAWS.md): zero premise weight. The update law's tick translations (read at zoom 3 for the family characters) and the quantum link registers with real terms (the kept antiunitary) are the source branch's register text (see Local labels), not entries of that file; results using them are conditional on them as supplied assumptions.
 
 ## How to run
 
@@ -90,4 +94,4 @@ Supplied: the spin-1/2 U(1) links on one cube, the random real field, the SU(3) 
 python3 scripts/the_lattice_theta_density_is_odd_under_the_kept_antiunitary_and_zoom_three_characters_give_theta_bar_zero_at_renormalisable_order_2026_10_22.py
 ```
 
-Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 1 s with about 100 MB resident, prints about 4.3 kB and ends with `TOTAL: PASS=12 FAIL=0`. Its random draws use a fixed seed; two repeated runs gave identical output.
+Needs numpy and scipy. It is self-contained, declares `AUDIT_TIMEOUT_SEC = 120`, runs in about 1 s with about 100 MB resident, prints about 4.4 kB and ends with `TOTAL: PASS=11 FAIL=0` (the estimate line is not counted) and exits nonzero on any failed check. Its random draws use a fixed seed; two repeated runs gave identical output.

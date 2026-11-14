@@ -1,3 +1,5 @@
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ("scripts/asymmetry_misalignment_part_posthoc_generic_vertex_2026_10_26.py", "scripts/asymmetry_misalignment_part_sector_crosstalk_2026_10_26.py",)
 # diagnostic only: re-examine the sol_D post-hoc claim "median |J|/Jmax 0.2-0.5" (generic cell-periodic on-site vertex)
 import numpy as np
 src = __import__('pathlib').Path(__file__).with_name('asymmetry_misalignment_part_posthoc_generic_vertex_2026_10_26.py').read_text().split("t = lambda Y, dY")[0]

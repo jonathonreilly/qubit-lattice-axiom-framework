@@ -2,7 +2,7 @@ AUDIT_INPUT_PATHS = ('docs/THE_FAMILY_CLASS_TICK_KEEPS_A_TIME_REVERSING_ANTIUNIT
 #!/usr/bin/env python3
 """cp-source-new-tick: where can a quark-mixing CP phase come from on the family-class tick?
 
-Supplied model, finite diagnostic + exact lemmas. The adopted tick's light node is rebuilt as the exact
+Supplied model, finite diagnostic + exact lemmas. The supplied tick's (called adopted in the source) light node is rebuilt as the exact
 five-direction Clifford walk U = f + i n.Gamma (new-tick-recheck section 3; any 4-d Cl(5) irrep is unitarily
 equivalent, so the basis is a convention): f = mean cos K, hops sin K_a / sqrt3 on tau3 sigma_a, L-R pieces
 Re H, Im H on tau1, tau2, H = (sqrt2/3)(cos Kx + w* cos Ky + w cos Kz). Families: 3, mass matrices supplied.
@@ -223,3 +223,4 @@ check("F1 generic supplied phases: J != 0 and theta_bar O(1); none passes 1e-10"
 print("VERDICT: tick does not supply CP. J != 0 is ALLOWED only with supplied mass-sector phases that break the kept")
 print("T x C2' (not just T); then theta_bar is O(1) unless a Nelson-Barr-type reading is also supplied.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+raise SystemExit(1 if FAIL else 0)

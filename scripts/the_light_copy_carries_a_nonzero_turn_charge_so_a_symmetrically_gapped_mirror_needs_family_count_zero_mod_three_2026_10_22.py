@@ -326,6 +326,7 @@ Nnu, dN = 2.9840, 0.0082
 sig = {N: abs(N - Nnu) / dN for N in (3, 6)}
 print(f"  LEP N_nu = {Nnu} +- {dN}: N = 3 at {sig[3]:.1f} sigma, N = 6 at {sig[6]:.0f} sigma; N = 1 (copy mass, one "
       f"family) at {abs(1 - Nnu) / dN:.0f} sigma")
-check("G1 among the allowed set {3, 6, 9, ...} only N = 3 survives the Z width (>300 sigma for N = 6)",
-      sig[3] < 3 and sig[6] > 300)
+print("ESTIMATE (not counted; computed from the supplied LEP N_nu only): G1 among the allowed set {3, 6, 9, ...} only "
+      f"N = 3 is near the Z width ({sig[3]:.1f} sigma; N = 6 at {sig[6]:.0f} sigma)")
 print(f"TOTAL: PASS={NPASS} FAIL={NFAIL}")
+raise SystemExit(1 if NFAIL else 0)

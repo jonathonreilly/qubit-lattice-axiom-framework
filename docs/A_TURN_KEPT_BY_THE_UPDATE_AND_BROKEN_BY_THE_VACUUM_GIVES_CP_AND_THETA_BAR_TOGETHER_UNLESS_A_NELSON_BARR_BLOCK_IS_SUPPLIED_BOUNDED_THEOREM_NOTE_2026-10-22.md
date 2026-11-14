@@ -1,17 +1,21 @@
 ---
 claim_id: a_turn_kept_by_the_update_and_broken_by_the_vacuum_gives_cp_and_theta_bar_together_unless_a_nelson_barr_block_is_supplied_bounded_theorem_note_2026-10-22
 claim_type: bounded_theorem
-claim_scope: "Supplied model, finite diagnostic. Three families with turn charges (1, w, w^2) on Q, u, d; mass entries need a vacuum field of charge q_L - q_R mod 3; all couplings real (T/CP of the update); CP broken only by vacuum phases. (A) Exact: one turn-charged order parameter phi with linear couplings gives det M = p + r1 phi^3 + r2 phi*^3, so Im det = (r1 - r2) v^3 sin 3a; J is 2pi/3-periodic and odd in a. Turn-aligned vacua (phi^3 real) give J = 0 and arg det in {0, pi}. A generic phase gives J != 0 and theta_bar_tree = O(1) (median 1.5 rad over 200 seeded samples, smallest 1e-3, against < 1e-10 required). The renormalizable one-field Z3+T potential has aligned minima only. A reflection (1<->2, phi<->phi*) forces det real and J = 0 together. One tuned real relation gives theta_tree = 0 with J != 0 (FITTED). (B) A Nelson-Barr-type block keeps the turn exact and theta_tree real: the light block comes from a real-aligned turn-charged chi, plus one heavy vector-like down-type copy D and two Z2-odd turn-charged phi1, phi2 entering only the D_L d_R row; the Z2 forbids Q D_R. Then det M_d = det(m_d) M_D is real for every vacuum, and the Z3 x Z2 x T potential's minimum gives J != 0 in 21/40 seeded cases (J = 0 for real phases). J is unsuppressed only for |F| ~ M_D; theta_tree = pi in 17/40 cases (a discrete sign choice). (C) Estimate: a spontaneously broken turn makes Z3 domain walls, so the breaking must happen before or during inflation (T_RH < v). All coupling values are FITTED or seeded."
+claim_scope: "Supplied model, finite diagnostic. Three families with turn charges (1, w, w^2) on Q, u, d; mass entries need a vacuum field of charge q_L - q_R mod 3; all couplings real (T/CP of the update); CP broken only by vacuum phases. (A) Exact: one turn-charged order parameter phi with linear couplings gives det M = p + r1 phi^3 + r2 phi*^3, so Im det = (r1 - r2) v^3 sin 3a; J is 2pi/3-periodic and odd in a. Turn-aligned vacua (phi^3 real) give J = 0 and arg det in {0, pi}. A generic phase gives J != 0 and theta_bar_tree = O(1) (median 1.5 rad over 200 seeded samples, smallest 1e-3, against < 1e-10 required). The renormalizable one-field Z3+T potential has aligned minima for every nonzero cubic coefficient; at zero cubic coefficient the phase is flat. A reflection (1<->2, phi<->phi*) forces det real and J = 0 together. One tuned real relation gives theta_tree = 0 with J != 0 (FITTED). (B) A Nelson-Barr-type block keeps the turn exact and theta_tree real: the light block comes from a real-aligned turn-charged chi, plus one heavy vector-like down-type copy D and two Z2-odd turn-charged phi1, phi2 entering only the D_L d_R row; the Z2 forbids Q D_R. Then det M_d = det(m_d) M_D is real for every vacuum, and the Z3 x Z2 x T potential's minimum gives J != 0 in 21/40 seeded cases (J = 0 for real phases). J is unsuppressed only for |F| ~ M_D; theta_tree = pi in 17/40 cases (a discrete sign choice). (C) Estimate: a spontaneously broken turn makes Z3 domain walls, so the breaking must happen before or during inflation (T_RH < v). All coupling values are FITTED or seeded."
 upstream_dependencies:
   - the_two_tiling_tick_has_no_cell_local_family_symmetry_and_a_turn_triplet_forces_turn_invariant_mixing_to_be_cp_blind_bounded_theorem_note_2026-10-22
   - the_light_copy_carries_a_nonzero_turn_charge_so_a_symmetrically_gapped_mirror_needs_family_count_zero_mod_three_bounded_theorem_note_2026-10-22
   - a_path_sum_flavour_rule_with_forced_rungs_is_family_blind_or_flat_and_its_structural_theta_bar_zeros_kill_cp_or_tie_down_to_up_bounded_theorem_note_2026-10-22
-runner: see stems.txt
+runner: scripts/a_turn_kept_by_the_update_and_broken_by_the_vacuum_gives_cp_and_theta_bar_together_unless_a_nelson_barr_block_is_supplied_2026_10_22.py
 ---
 
 # A turn kept by the update and broken by the vacuum gives CP and theta-bar together unless a Nelson-Barr block is supplied
 
-Runner: runner.py (PASS=15, FAIL=0, 1.4 s, 80 MB). The harness copy gave status ok, exit 0, 1.0 s.
+Primary runner: `scripts/a_turn_kept_by_the_update_and_broken_by_the_vacuum_gives_cp_and_theta_bar_together_unless_a_nelson_barr_block_is_supplied_2026_10_22.py` (14 PASS / 0 FAIL, about 1 s, 80 MB; exits nonzero on any failed check). The domain-wall estimate C1 is computed from supplied constants alone and, since 2026-11-14, is printed and not counted (the source version counted it, total 15).
+
+**Repair 2026-11-14 (PR 10129 hold).** The statement "the renormalisable one-field Z3 + T potential has aligned minima only" needs a nonzero cubic coefficient k: its phase-dependent part is 2 k v^3 cos 3a, so for k != 0 the minima are aligned (checked for k = +1 and -1, A6), and at k = 0 the phase is flat and no alignment is selected (printed edge case).
+
+**Local labels (2026-11-14).** "The update" is the source's supplied cube-tick update law with its exact turn and T, not an entry of [`CANDIDATE_LAWS.md`](CANDIDATE_LAWS.md). two-tiling-family-space is [#10044](THE_TWO_TILING_TICK_HAS_NO_CELL_LOCAL_FAMILY_SYMMETRY_AND_A_TURN_TRIPLET_FORCES_TURN_INVARIANT_MIXING_TO_BE_CP_BLIND_BOUNDED_THEOREM_NOTE_2026-10-22.md) and family-count-5mode is [#10022](THE_LIGHT_COPY_CARRIES_A_NONZERO_TURN_CHARGE_SO_A_SYMMETRICALLY_GAPPED_MIRROR_NEEDS_FAMILY_COUNT_ZERO_MOD_THREE_BOUNDED_THEOREM_NOTE_2026-10-22.md), carried in this PR; the path-sum flavour rule note (#10001) and "composite before atomic" are recorded only in the consolidation map or the source branch.
 
 ## Question
 two-tiling-family-space (TURN-CP lemma): if the masses are turn-invariant on a turn-charged triplet, then J = 0.
@@ -24,7 +28,7 @@ and the vacuum breaks both spontaneously.
    the mirror-gap scale, in the light sector (v_phi << Lambda_mirror). If the turn-breaking condensate is itself
    what gaps the mirror, the turn is broken there and the count constraint is lost.
 2. The vacuum can give J != 0: there is no masking lemma once the vacuum carries turn charge (A3, A5, B3).
-3. Strong CP with one turn-charged order parameter fails structurally (A4, A5). The determinant carries charge 0,
+3. Strong CP with one turn-charged order parameter fails structurally (A4, A5; A6 needs a nonzero cubic coefficient). The determinant carries charge 0,
    so it depends on phi only through |phi|^2 and phi^3. The same CP-odd invariant Im phi^3 feeds both J and arg det.
    No structural choice in this class separates them. The reflection that forces arg det = 0 also forces J = 0 (A7).
    Tuning one relation is a fit (A8).
@@ -45,9 +49,9 @@ and the vacuum breaks both spontaneously.
 ## Theorems / finite diagnostics / estimates / speculation
 - Exact (supplied model): A1, A2, A4, A7, B1, B2 and B4.
 - Finite seeded diagnostics: A5, A8, B3, B5 and B6. J values from random O(1) couplings are not compared with 3.08e-5.
-- Estimate: C.
+- Estimate: C (printed, not counted).
 - Speculation: the extra Z2 might be a cube parity, and chi/phi might be cube-turn-charged composites. Neither is
-  shown. YT_CLASS_7_SPONTANEOUS_C3_BREAKING_NOTE_2026-04-18 (on main) found no retained bilinear that carries a
+  shown. [YT_CLASS_7_SPONTANEOUS_C3_BREAKING_NOTE_2026-04-18](YT_CLASS_7_SPONTANEOUS_C3_BREAKING_NOTE_2026-04-18.md) (on main) found no retained bilinear that carries a
   generation label and could break C3; that would have to be overturned first.
 
 ## Gate (anti-smuggling)

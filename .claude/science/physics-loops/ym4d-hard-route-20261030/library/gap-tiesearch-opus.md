@@ -261,3 +261,41 @@ K3 failed at 23 percent, so the L = 16 values carry about 15 percent errors, not
   g + 2 sigma = 1.17. So u_xy at beta 2.4 rises by about 1.3 from L = 8 to 16 (row 950 read "saturation, about 8" from one chain
   at L = 8 and 12); the rise is below the 1.25-per-step criterion.
 
+- z-twist pi/4 replicas: L = 16 seeds 32, 33: 10.24, 19.79; L = 8 seed 32: 9.27. Pooled: L = 8 7.70 +- 1.57 (6.13, 9.27); L = 16
+  12.87 +- 2.75 (7.05, 14.39 hot, 10.24, 19.79); g = 1.137 +- 0.119, g + 2 sigma = 1.375, g - 2 sigma = 0.899: **INCONCLUSIVE**.
+- Last extension, fixed at 22:02Z before it runs (`full24e.sh`): z-twist pi/4 at beta 2.4, 4 more chains at L = 8 (seeds 33-36)
+  and 6 more at L = 16 (seeds 34-39), same lengths. **Stop rule:** the verdict at 2.4 is taken from all chains after this batch by the
+  rules of Section 2 and the pooling of 5.1; no further runs are added whatever the outcome (no optional stopping).
+
+## 6. Reading (step 7; written while the last batch runs; the beta 2.4 verdict is filled in 6.3 after it)
+
+**6.1 What the runs show at beta 2.3 (GUIDE).** On every slice tried, including the two flat colour twists that turn the
+frame order into a gauge-inequivalent Ising tie (row 952, 1.4), the lag-0 tie-mode variance stays at 2.2 to 2.9 from L = 8 to
+16. No slice of reduced symmetry orders at 2.3 on these sides. Row 970's A1 refutation does not extend to beta 2.3 on this
+search, and the constant that survives through Lemma SUB is kbar_(s,0) >= about 51 to 61 at the mid-slice (5 to 6 times
+the zero-field value 10.6), as row 970 estimated (53).
+
+**6.2 What the runs show at beta 2.4 (GUIDE).** All three slices taken to L = 16 rise from L = 8 to 16 by factors 1.3 (u_xy), 1.3
+(z-twist pi/2) and about 1.7 (z-twist pi/4, provisional), with chain-to-chain spreads of 20 to 40 percent at L = 16. Per step of 2
+that is 1.06 to 1.14, below the 1.25 of the criterion but not flat. Sides 10 to 14 are single chains and scatter (u_xy: 8.5,
+12.7, 7.1), so the shape of the rise (logarithmic, a slow power, or a crossover to order above L = 16) is not resolved.
+Row 950's "saturation at about 8" at u_xy rested on one chain each at L = 8, 12; with replicas the L = 16 value is 10.2 +- 1.5.
+Reading: beta 2.4 lies close to the boundary-ordering point that rows 950 and 952 placed near 2.45; the correlation length
+of the colour mode in the boundary layer is comparable to the box. A criterion of 1.25 per step cannot separate "large but
+finite" from "slowly diverging" here. Size through Lemma SUB at the mid-slice: kbar_(s,0) >= 4 beta^2 lambda = 23.0 lambda,
+so at least about 236 (u_xy) and 255 (z-twist pi/2) at L = 16, against the zero-field 2 beta^2 = 11.5: 20 times larger, and
+not shown to be box-uniform.
+
+**6.3 Limits (both betas).** (i) t = 0 only (Lemma SUB); row 970's 7a found that coupling slices strengthens the order at 2.6,
+so t > 0 could be worse, not tested here. (ii) Slab thickness T = 6, cold starts except K3, 3000 thermalisation sweeps; K3
+failed the 15 percent rule at 2.3 (u_xy) and at 2.4 for z-twist pi/4, and passed at the edge for z-twist pi/2: block errors
+understate the errors at L = 16, so the verdicts use chain spreads where replicas exist and single chains elsewhere.
+(iii) Named modes only; the connected structure factor over all k (available for runs after 17:30Z) agrees with the named
+mode on every slice except interp, whose named mode is not its soft mode (its connected top eigenvalue is flat, 0.5 to 0.6).
+(iv) The identification of the observable with Var_(pi_(beta u))(<z, w>), z orthogonal to the gauge orbit, is row 970's (3.4,
+3.5); its check is row 972. For the twisted slices the colour-3 tie mode is gauge-invariant data (row 952, 1.4(b)-(d)), so
+these also bear on the quotient form of row 970 Section 5, at lag 0 only (no frame average run here). Since the lagged
+value decreases in the lag to the frame-averaged variance (row 952, 1.2, PROVED there), a lag-0 value that does not grow
+bounds the frame-averaged one too; a growing lag-0 value would not by itself refute the quotient form.
+(v) A search that finds no growth proves no bound; "not refuted" is only that.
+

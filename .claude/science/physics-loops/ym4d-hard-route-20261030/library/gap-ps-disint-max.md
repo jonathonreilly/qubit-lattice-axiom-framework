@@ -36,10 +36,11 @@ Status log (updated in place):
   of the GUIDE batch 12:32:07Z (sanity only, stopped); relaunch (batch 1b) 12:34:19Z. Everything in Sections 1-6 and
   7a was written between 12:06Z and 12:36Z, in the order of the file. The order "criteria, then run" is as stated.
 - 12:06Z file created. Then, in order: Sections 1-2; Section 3 (STEP 1); Section 4 (STEP 2); Section 7a (criteria);
-  first launch 12:32Z; amendment (A1); relaunch 12:34Z; Sections 5-6; Section 7 (7.1, 7.2).
+  first launch 12:32:07Z; Sections 5-6; amendment (A1) (moved next to 7a at the end); relaunch 12:34:19Z;
+  Section 7 (7.1, 7.2) at 12:34:40Z.
 - 12:36Z: batch 1b running; batch 1c (dense counts, addition (A2)) queued behind it.
 - 12:41Z: batch 1b done (12:34:19Z-12:39:51Z); Section 7b written with its results; batch 1c running.
-- 12:45Z: batch 1c done (12:39:51Z-12:41:13Z); dense counts added to 7b; self-check corrections (four numbers or
+- 12:43Z: batch 1c done (12:39:51Z-12:41:13Z); dense counts added to 7b; self-check corrections (four numbers or
   wordings in Sections 1, 3, 4); Section 8 (verdicts) and the RESULT line written. Item finished.
 
 ## 1. Target, objects, duplicate check (READ; no new claim)
@@ -342,6 +343,15 @@ curvature defects (stated in Section 7b if this happens). My expectation before 
 strongly negative (about -beta x 3.6), the positive part comes from the commutator terms and from negative
 plaquettes; I expect HOLDS at L = 4 for beta = 2.3 with a few violating local modes at L = 6. I do not know.
 
+**7a, amendment (A1), written about 12:33Z after the first launch and before any production number.** The first launch
+(12:32:07Z) ran the sanity checks only and stopped at its own rule: S1 passed (worst relative error 2.8e-6), S2 passed
+(top eigenvalue 2.0e-14 at the flat configuration), S3 gave 1.66e-7 against the stated 1e-7. No production run was
+made. Cause: S3 used a central difference along the product geodesic U_l exp(tau xi_l), which leaves the gauge orbit
+at second order, so the difference has a truncation error of order tau^2 that I had not allowed for. Amended S3:
+the central difference along gauge directions at tau = 2e-3, 1e-3, 5e-4 must fall by a factor 4 at each halving
+(between 3.6 and 4.4), which shows that the derivative at tau = 0 vanishes and the residue is truncation. All other
+rules are unchanged. Relaunched as batch 1b at 12:34:19Z.
+
 ## 5. STEP 3, stage A: the adaptation written as a proof, as far as it is true
 
 **5.1 Lemma BLK (block laws; PROVED given Holley-Stroock and the Haar inequality, both RECALLED).** Write
@@ -443,15 +453,6 @@ identity for block side 1 (no integration), at typical configurations.
   gap first (B4).
 So the Wilson-loop growth (O1) is the first obstruction, and it is not the deepest one. Even with an explicit
 block weight, the absorber (O2) would fail in the window, and what has to be absorbed is not small (O3).
-
-**7a, amendment (A1), written about 12:33Z after the first launch and before any production number.** The first launch
-(12:32:07Z) ran the sanity checks only and stopped at its own rule: S1 passed (worst relative error 2.8e-6), S2 passed
-(top eigenvalue 2.0e-14 at the flat configuration), S3 gave 1.66e-7 against the stated 1e-7. No production run was
-made. Cause: S3 used a central difference along the product geodesic U_l exp(tau xi_l), which leaves the gauge orbit
-at second order, so the difference has a truncation error of order tau^2 that I had not allowed for. Amended S3:
-the central difference along gauge directions at tau = 2e-3, 1e-3, 5e-4 must fall by a factor 4 at each halving
-(between 3.6 and 4.4), which shows that the derivative at tau = 0 vanishes and the residue is truncation. All other
-rules are unchanged. Relaunched as batch 1b at 12:34:19Z.
 
 ## 7. The smallest unproved inequality (written about 12:35Z, while batch 1b runs; 7b holds the test results)
 
@@ -557,7 +558,7 @@ directions out of ten, with a dense set of local unstable directions of strength
 these modes with a field-theory object; by Lemma HESS they come from the commutator part and from negative
 plaquettes.
 
-## 8. Verdicts (written 12:45Z)
+## 8. Verdicts (written 12:43Z)
 
 Reading order: Sections 1 to 4, then 5, 6, 7 (7.1, 7.2), then 7a, 7b. Sections 7a and 7b sit where they were
 written.

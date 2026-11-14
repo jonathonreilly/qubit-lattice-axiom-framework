@@ -1,0 +1,6 @@
+beta 2.3  r* = 0.428  P(r<r*) = 0.0205  P(r<0.4) = 0.0156  ktan(0+) = -1.380  ktan(1) = 2.783
+   identity: E[ktan] = 2.7697   2 E[r^-2] = 2.7697   E r^2 = 1.1744
+   worst-case conditioning: P(chi2_4 < 0.16/c) = 0.1684
+beta 2.6  r* = 0.555  P(r<r*) = 0.0538  P(r<0.4) = 0.0137  ktan(0+) = -3.120  ktan(1) = 2.816
+   identity: E[ktan] = 2.7312   2 E[r^-2] = 2.7312   E r^2 = 1.1448
+   worst-case conditioning: P(chi2_4 < 0.16/c) = 0.2028

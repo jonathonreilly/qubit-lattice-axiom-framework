@@ -36,6 +36,8 @@ from are rows 1007, 1009, 1010 of this lane. The Schrodinger-functional coupling
 - 2026-11-15T18:08Z: Step 1 done (inputs read, record located). See Section 1.
 - 2026-11-15T18:32Z: Steps 2-3 written (Sections 2, 3): mechanism list; lattice class, Proposition A, Proposition W, log sum.
 - 2026-11-15T18:35Z: Section 4 written: Propositions B, B', SEAG, Lemmas CEN, EMB; the first piece (twist with classical cost, start bound) FAILS for SU(2) in the class.
+- 2026-11-15T18:41Z: GUIDE control of Proposition SEAG run (PASS at three points, 4.8); Sections 5 (compare) and 6 (tests) written.
+- 2026-11-15T18:43Z: Section 7 written: Task 4 has no statement (fails at the twist); Lemma FR; the missing objects (N1)-(N3).
 
 ## 1. Step 1: inputs read, and where the lane's record sits (exercise step 0)
 
@@ -328,3 +330,136 @@ step of row 1010.
 - So the pinned-cell iteration, as a class-supremum induction, has no 4D gauge form with constant link twists.
   The row's third seed (a Schrodinger-functional stiffness uniform over all Dirichlet data) is refuted in this
   form. The first and second seeds (log sum, bracket) are true as identities and have no class to act on.
+
+### 4.8 GUIDE control of Proposition SEAG (run 2026-11-15 18:40Z; it decides nothing)
+
+Script `/tmp/row1011-scripts/seag.py` (plain numpy, quaternion links, checkerboard heat bath, periodic lattice;
+outputs in `/tmp/row1011-out/`; numeric lock held as `row1011-fable` and released; memory 69 percent free).
+Reading written before the run: PASS if E[X^2], -E[D_B^2 A] and 36 b E[t_p] agree pairwise within 3 standard
+errors, for B = a d(indicator of z), averaged over the sites z. FAIL would mean an algebra error in 3.2, 3.3 or 4.4.
+
+| lattice, b | E[X^2] | -E[D_B^2 A] | 36 b E[t_p] | largest pairwise difference |
+|---|---|---|---|---|
+| 4^4, 1.0 | 8.732(28) | 8.773(17) | 8.768(17) | 1.1 s.e. |
+| 4^4, 2.3 | 50.45(28) | 50.43(10) | 50.41(9) | 0.5 s.e. |
+| 6^4, 2.6 | 62.77(16) | 62.84(5) | 62.77(3) | 1.95 s.e. |
+
+Result: PASS at the three points (7 to 8 seconds each). The mean plaquettes 0.2436, 0.6088 (a 4^4 box), 0.6706
+are in the known range, so the sampler is sane. The run supports the algebra; the proof is the text of 4.4.
+
+## 5. Compare with the earlier work (exercise step 5; searched: `library/gap-*.md`, `library/prior/gap-*.md`,
+## `parts/gap.md`, `library/open-core.md`, the FINISH rows, by the words listed in Section 1 and Durhuus, chiral
+## model, Schwinger-Dyson, Makeenko, Dirichlet-to-Neumann, one-form symmetry, abelian projection, vortex free energy)
+
+| Item of this row | Already in the lane? | Where | Credit |
+|---|---|---|---|
+| Lemma CEN (only central link symmetries) | partly: stated as a GUIDE remark, not proved | `gap-crux-fp.md` L88 ("The centre of SU(2) is finite ... SU(2) has no other continuous symmetry") | row 712 |
+| Lemma EMB (the layer of one link direction is a chiral model in a background) | yes for the layer model with two-sided background; the exact match with OpenAI's local class (pins, signs, right twists, half weights) on the box {0,1,2} x {0,1} x Q(S) is not on file | `gap-crux-fp.md` L369-373 (layer model I(u, v)); `gap-arealaw-opus.md` Lemma S (row 825); `gap-tiltproof-max.md` L240 (D2's O(4) sheets) | Durhuus and Frohlich 1980 (idea; the lane records their paper as read by row 831); rows 712, 825, 977 |
+| "The flat background is not the worst": equal rough slices break the slab symmetry to Z_2 and the slab can order | yes (ARGUED there) | `gap-brainstorm2-max.md` L263 (G8) | row 876 |
+| Proposition W (second-order Schwinger-Dyson for the action) | partly: the lane has the first-order Ward form for Wilson loops | `gap-loop-eq-opus.md` Lemma 1.1, 1.2 (row 754) | row 754 |
+| Proposition A (iii), the Neumann datum | partly: the first-step electric field as a score | `gap-sgstep-opus.md` Section 2 (row 944, Lemma TG / EF, per the lane index) | row 944 |
+| Proposition B, B' (covariance of the pin supremum; no curl bound) | not found (no hit for a pin supremum, a covariance of the supremum, or a Schrodinger-functional bound uniform in boundary data) | scope as in the heading | - |
+| Proposition SEAG | not found | same scope | - |
+| The gauge "twist" has no continuous form on gauge-invariant data | yes, at reading level | row 1007 B(5), `prior/gap-2don-proofs-read-opus.md` L159-161; row 1009 Step 7 rows 2-4 | rows 1007, 1009 |
+
+What the fresh pass added: Propositions A, W as exact lattice statements, Propositions B, B', SEAG, and the exact
+form of Lemma EMB. What it only found again: CEN's content, the layer model, the G8 warning.
+
+Two reading-level remarks of row 1009 are corrected by Section 4 (ARGUED until checked):
+- Row 1009 Step 7, row 3 (L406): a Schrodinger-functional form of H <= b "would follow the same way by dropping a
+  variance". It does not: by Proposition SEAG the direct term is not classical, at any pin.
+- Row 1009 Step 6 note (i) (L387-390): "an UPPER bound on a response ... is the direction a supremum over pins can
+  keep". For SU(2) the supremum over pins of the response to a fixed-colour field is not bounded by the classical
+  action (Proposition B'). The binding fact is gauge covariance, not Theorem D2.
+
+## 6. Step 4 (Task 2): the tests
+
+"Candidate" below means the class-supremum iteration of Section 3 with constant link twists. After Section 4 it
+has no start, so most tests are answered by what they say about the surviving pieces.
+
+| Test | What it was run on | Result |
+|---|---|---|
+| Compact U(1): the gain must be zero | Propositions A, W with all fields in one axis | PASS, and it locates the failure. For U(1): kappa = 0, every bracket in Proposition W vanishes, the twist is the one-form symmetry, H_c <= b on the whole class, and no step lowers it. For SU(2): the brackets are there and the symmetric twist is not (Lemma CEN). The 2D O(N) models have both at once; the two gauge models have one each. |
+| Lemma PT (product with a massless factor), `gap-crux-exercise3-max.md` L690 | a gain statement for SU(2) x Villain U(1) | Not reached: no gain statement exists. On the sheets of Lemma EMB the answer is row 1009's (the step reads one factor). |
+| Proposition NP, `gap-crux-exercise4-max.md` L383 | the candidate | Passes trivially: no value of D is read. |
+| Theorem D2, `gap-tiltproof-max.md` L240 | the supremum over boundary pins | D2 does not bind a class of cubes with boundary pins: its sheets need links pinned in the interior. It binds every class that contains thin boxes or interior pins, through Lemma EMB, as a constraint and not a refutation: by D2 5.4 the sheet structure factor is at least A (1/4 - G_S/b) with G_S about (1/(2 pi)) log S + 0.0488, positive while log S < (pi/2) b - 0.31. So a statement uniform on such a class has a length of at least order e^((pi/2) b) (PROVED GIVEN D2's two ported inputs, row 1000). What binds the cube class is Proposition B' (gauge covariance). |
+| Lemma SHEET at fixed b, `gap-sepinput-max.md` L358 | strengths in [0, b] | Does not bind: its proof needs the coupling on the tube to tend to infinity. At fixed b the frozen structures come from pins, not strengths: Lemma EMB. |
+| The G8 warning, `gap-brainstorm2-max.md` L263 (added test) | classes with thin boxes | A thin box with equal curved faces is a 2D model whose continuous symmetry is broken to Z_2 by the background; the lane ARGUES it can order like an Ising model. If so, NO statement of mixing holds uniformly on a class with thin boxes at large b. OpenAI's class avoids this because its twists are one-sided. Not rebuilt here. |
+| Frozen Q_8 and 2T, `parts/gap.md` L199 | Sections 3-4 | The derivatives of Propositions A, W do not exist for a finite group. Lemma CEN holds with the same centre Z_2. So whatever survives Section 4 for SU(2) (the central twists) holds verbatim for Q_8 and 2T, which have degenerate flat states at large coupling. A gauge gain must therefore use the Lie algebra, that is exactly the part with no class. PASS as a constraint; it leaves nothing to test. |
+| Five dimensions, `gap-crux-fp.md` L76, L266 | Sections 3-4 | Everything in Sections 3 and 4 is dimension free except 3.4: the sum of the inverse fourth powers is a logarithm only in d = 4, and the classical action of a constant-field twist is scale invariant only in d = 4. Proposition B' fails the candidate in every dimension. Lemma EMB's sheets exist in every d >= 3 and are 2D models, so a gapped sheet says nothing about the bulk (in 5D the bulk is believed massless at weak coupling). |
+| Instantons and refilling, row 1010 L136, L201 | the pinned class | On the lattice a pure-gauge pin of any winding is exactly gauge trivial (3.1), so C_b has no sectors and the test does not bind the class. It binds any repair by smooth frames (Remark HOPF) and the carry across cutoffs (row 1010), which this row does not reach. |
+| Row 1010's exponent condition (L202, unchecked): mixing exponent below 3/2 of one loop | the sheets | ARGUED arithmetic. With beta = 4/g^2 and b_0 = 11/(24 pi^2), one loop gives log(xi) = (3 pi^2/11) b = 2.69 b for 4D SU(2); the 2D O(4) sheet has log(xi) = pi b (OpenAI, O(4) mass paper). The ratio is 11/(3 pi) = 1.17, inside 3/2. So one-sided sheets alone would not break the 4D exponent condition; two-sided ones (G8) are another matter. |
+
+## 7. Step 6 (Task 4): the one-step gain has no statement in the class; what a 4D form would need
+
+### 7.1 The exact step that fails
+
+The 2D induction hypothesis is "H_c(A, A) <= h |A|^2 for constant twists A, uniformly on the class". A gauge form
+needs, for every cell of a tiling and every ring configuration, a boundary field that (i) is the restriction of
+one field on the ring links and (ii) is "constant" in a sense in which its direct cost is the classical action.
+Proposition B says the supremum over pins forgets the colour coherence of the field. Proposition B' says the
+classical normalisation is then false at every scale. Lemma CEN says no exact symmetry restores it. Proposition
+SEAG says the start bound is not "drop the covariance" even at the trivial pin. So the one-step gain cannot be
+written as a statement on C_b: it FAILS at (M2), before any constant. Task 4 has no statement to give.
+
+### 7.2 The three seeds of the row
+
+- Seed 1 (scale invariance; waves on frequency shells): true as arithmetic. The classical action of a
+  constant-field twist is scale invariant in d = 4, and the shell sum of |k|^(-4) is (1/(8 pi^2)) log (3.4). It has
+  no class to act on: along a fixed-colour wave the Hessian of the ring action is mass-like, not k^2-like (4.4).
+- Seed 2 (the bracket of the field strength): true as an identity, Proposition W. The same non-commutativity that
+  gives the bracket removes the symmetric twist (Lemma CEN). In the 2D model the two are separate: the symmetry is
+  exact and the bracket only rotates the current.
+- Seed 3 (a Schrodinger-functional stiffness uniform over all Dirichlet data): FAILS (Proposition B').
+
+### 7.3 Lemma FR (a colour frame costs at least the non-abelian part of the pin; PROVED)
+
+For a unit-vector field n on the sites put D_l n = n_tail(l) - Ad(omega_l) n_head(l) (the covariant difference; it is
+gauge covariant). For every plaquette p with base x,
+
+  2 |s_p(omega) x n_x| = |(1 - Ad(omega_p)) n_x| <= |D_(l_1) n| + |D_(l_2) n| + |D_(l_3) n| + |D_(l_4) n|.
+
+Hence, with lambda_x(omega) = min over unit n of the sum over plaquettes p based at x of |s_p x n|^2 and
+NA(omega) = sum over sites of lambda_x(omega): every frame has sum over links of |D_l n|^2 >= NA(omega)/24.
+
+Proof. Telescope n_x - Ad(omega_p) n_x along the four links; each term is a rotated D_l n. Ad(omega_p) is the rotation
+about s_p by twice the class angle, so |(1 - Ad(omega_p)) n| = 2 |sin phi_p| |n_perp| = 2 |s_p x n|. Square, use
+(a_1 + ... + a_4)^2 <= 4 sum a_i^2, and that a link lies in at most 6 plaquettes. QED
+
+Use. The exact relation between a frame twist and a gauge transformation is theta n = d lambda n with
+(d lambda)_l n_tail = [gauge direction of lambda n]_l + lambda_head D_l n (direct computation from 3.1). So the Ward identity of
+the U(1) about n fails exactly by the frame defect D n, and the direct term along theta n has a mass-like part of
+order b theta^2 |D n|^2. NA(omega) is zero only when all plaquette axes at each site are parallel (an abelian pin).
+ARGUED size: for a typical configuration at coupling b, |s_p|^2 is of order 1/b with independent directions, so
+NA is of order (number of sites)/b and the mass-like part is of order theta^2 per plaquette, with no factor b. For
+the potential of a constant field this exceeds the classical b f^2 S^4 once S^2 is above order b. So no choice of
+frame removes the term on typical link-level pins beyond log S = (1/2) log b; only a cancellation against the
+current variance can, and Proposition W gives that cancellation only for exact symmetries.
+
+### 7.4 What a replacement would have to supply (each is OPEN; none is attacked here)
+
+- (N1) **A frame on typical ring configurations.** A gauge-covariant, ring-measurable frame whose defect is small
+  on the cells of the tiling, with the rare cells where it is not small controlled (Remark HOPF: it cannot exist
+  on all pins). This is a small-field / large-field statement about typical fields. It is the account's kind of
+  object, not a class supremum.
+- (N2) **The cancellation of the mass-like term.** An exact or controlled Ward identity for the U(1) about the
+  frame, with the defect term of 7.3 bounded. In the continuum this is background gauge invariance.
+- (N3) **The gain.** Then the bracket of Proposition W and the shell sum (1/(8 pi^2)) log would enter as in the 2D
+  proof. The orbital (diamagnetic) part of the one-loop response has the sign that RAISES the stiffness; the
+  spin (bracket) part lowers it and is larger (RECALLED: the split 11/3 = 4 - 1/3 of the one-loop coefficient).
+  A variance lower bound would have to capture the bracket part while (N2) controls the other. Not derived here.
+- Kind under lead rule W2: (N1)-(N3) read typical fields of the Wilson measure at small effective coupling. That
+  is the (K-flow) kind with first-passage data. The frame exists only while the non-abelian part of the
+  block-scale field is small, that is above the band. So this repair does not cross the band by itself (reading).
+  The 2D engine crosses its band because its twist is defined on every configuration at every coupling.
+
+### 7.5 A reading of the right uniform object (reading; one identity PROVED)
+
+By Proposition A (iii) the Hessian of the pinned free energy is a boundary term minus the covariance of the
+Neumann data N_l. For two boundary fields with supports that share no plaquette, the mixed second derivative is
+exactly - Cov(N(B), N(B')). So the class-uniform, gauge-covariant object that the gauge theory does have is the
+boundary-to-boundary covariance of the Neumann data across a cell, a mixing statement between parts of the
+boundary, uniform over pins. In the 2D model the global symmetry gives a sum rule that turns this into a
+stiffness with a classical normalisation; the gauge class has no sum rule (Lemma CEN). A uniform bound on that
+covariance is a finite-size mixing condition of Dobrushin-Shlosman type. On classes with thin boxes it is
+constrained by Theorem D2 and threatened by the G8 warning (Section 6). No attack here.

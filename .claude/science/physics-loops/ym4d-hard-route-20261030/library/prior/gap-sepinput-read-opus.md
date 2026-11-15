@@ -123,8 +123,8 @@ segment beta_A >~ 1.3-1.5 (towards the triple point (0.55, 2.34)), and the endpo
 above, beta_F about 1.2 or below. The arithmetic of row 712 (3b.3: oscillation 3.14, Lipschitz constant 3.88, second
 local maximum at U = -1 since beta_A > 3 beta_F/8) holds a fortiori there: at (1.2, 1.25), 3 beta_F/8 = 0.45 < 1.25,
 Lipschitz constant beta_F + 8 beta_A/3 = 4.53, oscillation of log w on [-1,1]: max 1.2 + 1.25 = 2.45 at x = 1; min at
-x = -3(1.2)/(8(1.25)) = -0.36, value -0.432 - 1.25/3 + 1.25(4(0.13))/3 ... = -0.633 (hand arithmetic: 1.2(-0.36) =
--0.432; (4(0.1296) - 1)/3 = -0.1605, times 1.25 = -0.2006; sum -0.633); oscillation 3.08, Wilson-equivalent beta 1.54.
+x = -3(1.2)/(8(1.25)) = -0.36, value -0.633 (hand arithmetic: 1.2(-0.36) = -0.432; (4(0.1296) - 1)/3 = -0.1605,
+times 1.25 = -0.2006; sum -0.633); oscillation 3.08, Wilson-equivalent beta 1.54.
 
 **3.2 What the endpoint is: three published readings.**
 
@@ -229,9 +229,9 @@ not checked.
 **4.4 What on the Wilson axis is monotone in beta, exactly (my own one-line remark, PROVED, and it does NOT separate).**
 d<sum_p x_p>/dbeta = Var(sum_p x_p) >= 0 on every finite torus, for every weight exp(beta F) and in particular along any
 line through the K7 plane (with F the directional derivative of the action). So plaquette monotonicity in beta holds
-for K7 too and cannot separate. What separates numerically is the SIZE of the specific heat: no growth with volume on
-the axis (Bhanot-Creutz "shadow", already read) against a volume-proportional peak (first order) or a divergence
-(endpoint) in K7.
+for K7 too and cannot separate. What could separate numerically is the SIZE of the specific heat: a finite peak on the axis against a
+volume-proportional peak (first order) or a divergence (endpoint) in K7. NOT CHECKED here: the lane's reading of
+Bhanot-Creutz records only that the SU(2) peak is a "shadow"; no volume-scaling study of the axis peak was read.
 
 - Step 4 done. Next: Step 5 (rigorous correlation inequalities and exact one-plaquette facts).
 
@@ -302,3 +302,143 @@ Barreto arXiv:2402.12277 (Z_3 only). Griffiths (Z_2) and Ginibre (U(1)) inequali
 separating mechanism are row 708's (`gap-mid-max.md` L46). Plaquette monotonicity is universal (Section 4.4).
 
 - 2026-11-15T06:10Z (`date -u`): Step 5 done. Earlier times I had written in this log were estimates and are removed. Next: Step 6 (centre vortex / Z_2 monopole densities and vortex free energy on the axis).
+
+## 6. Step 6: centre vortices, Z_2 and SO(3)-Z_2 monopoles, the Wilson axis against the K7 plane
+
+All NUMERICAL unless marked. The vortex free energy literature (Kovacs-Tomboulis hep-lat/0002004, Phys. Rev. Lett. 85
+(2000) 704; 't Hooft loop studies) is already in the lane (`prior/gap-lit-flux.md`, `prior/gap-twist-data.md`) and is not
+repeated; its one line for this row: the vortex free energy decides confinement, which K7 also has, so it does not
+separate (Section 5.1).
+
+- **SO(3)-Z_2 monopoles percolate in the whole arena (Wilson axis).** M. Grady, arXiv:1306.6921 (TeX `z2sup.tex`
+  L120-130, L315-334): with the standard Wilson action, "The monopoles were found to form a percolating cluster just
+  beyond beta = 3.2 ... The monopoles percolate in the confining phase"; "infinite lattice percolation point of
+  3.19 +- 0.03"; "The SO(3)-Z2 monopoles are ubiquitous even at these relatively weak couplings, occupying approximately
+  13% of the dual lattice links at the percolation threshold." So for beta < 3.19 (the arena included) these objects
+  percolate on the Wilson axis, by Grady's measurement (16^4 to 40^4). Grady reads beta 3.2 as a bulk transition; the
+  standard reading (Teper's data to beta 2.85, step scaling) sees no transition; this disagreement is not settled here.
+- **A constrained action with Wilson symmetries and a Wilson-arena plaquette that does NOT confine (Grady's claim).**
+  hep-lat/9806024 (preprint) and arXiv:1306.6921: eliminating SO(3)-Z_2 monopoles (and Z_2 strings) by constraint gives
+  "deconfines for all beta ... despite a rather strong average plaquette of around 0.64. This corresponds to an effective
+  Wilson beta of 2.45"; and at beta = 0 on up to 60^4 "a Coulombic form with moderately running coupling". If right,
+  this is a K7-type test of a new kind: a weight (a constraint, so not of the class of row 712's (TM-gen) with a strictly
+  positive one-link kernel) whose plaquette matches the arena and which has NO gap. It says a separating input must see
+  the monopole content, not the plaquette value.
+- **Positive plaquette model confines (contrary datum).** J. D. Stack, S. D. Neiman, hep-lat/9601019, Phys. Lett. B377
+  (1996) 113: in the positive plaquette model (constraint tr U_p > 0, which "suppresses Z2 monopoles and vortices"),
+  "the monopole contribution to the string tension agrees with the string tension calculated directly from the SU(2)
+  links" (MAG monopoles, so confinement persists without Z_2 monopoles). Grady's claim needs the additional SO(3)-Z_2
+  monopole constraint.
+- **The adjoint direction is carried by Z_2 monopoles and vortices (Villain mixed action).** Datta-Gavai
+  hep-lat/9905030 (Section 3.4): with Z_2 monopoles fully suppressed the Villain mixed action is self-dual in
+  (beta_F, beta_A), and with Z_2 vortices also suppressed "the extended model reduces to the Wilson action with a
+  modified coupling". Exact for the Villain form (a change of variables), NUMERICAL for the phase consequences.
+- **SO(3) = SU(2) summed over twist sectors.** Ph. de Forcrand, O. Jahn, hep-lat/0205026 (published as Nucl. Phys. B651
+  (2003) 125, RECALLED, not checked): "We exhibit an analytic path in coupling space showing the equivalence of the SO(3)
+  theory with SU(2) summed over all twist sectors ... indicating that O(700)^4 lattices are necessary to probe the confined
+  phase." So the far end of the K7 line (beta_A large, beta_F small, the SO(3) theory) is the twist-summed SU(2) theory
+  with a very small string tension at its crossover: its bulk transition lies at couplings where the twist sum, not the
+  zero-twist sector, decides; this ties K7 to the lane's flux-sector machinery (Theorem S, (TM-tw)), as a reading.
+- **Thick vortices at weak coupling.** Kovacs-Tomboulis hep-lat/9711009, Phys. Rev. D57 (1998) 4054: "the full SU(2)
+  string tension at weak coupling arises from the presence of vortices linked to the Wilson loop ... The numerical
+  results are stable under alternate choice of lattice action". Centre-projected vortex density scales physically
+  (Engelhardt-Langfeld-Reinhardt hep-lat/9801030, Phys. Lett. B431 (1998) 141: "The vortex density scales according to
+  the renormalization group", about 2 vortices/fm^2). These are confinement data; like 5.1, they do not separate from K7.
+
+**Reading for row 996 (ARGUED).** Of the published diagnostics, the ones that are DIFFERENT on the Wilson axis and on
+the K7 line are: (a) Z_2-monopole density and its jump across the K7 line (Bhanot-Creutz, Gavai et al.: the bulk line is a
+Z_2-monopole condensation line in the SO(3)/Z_2 language; the Villain duality of Datta-Gavai makes this exact for the
+Villain form); (b) the 0++ correlation length (Section 4.1); (c) the specific heat's volume scaling (Section 4.4). (d)
+the coefficient sign c_1 - c_{1/2}^2 (Section 5.2) is the only EXACT one-plaquette separator found. Confinement data
+(vortex free energy, string tension, Tomboulis) do not separate.
+
+- Step 6 done.
+
+## 7. Step 7: the Sussman-Alpoge repository (credit: Ethan Sussman and Levent Alpoge, text authored with Claude and Codex)
+
+Searched: the lane's index of the outline `YM4_sketch_500.tex` at 31a47c543775 (`library/sa-index/chunk-*.md`) and of the
+complete account (`library/sa-index/ca-full/index.tsv`, 1,647 entries), then the outline itself (fetched by raw URL to
+`/tmp/sep995/sa/ym4.tex`, 32,992 lines) for: adjoint, mixed, Bessel, character, Villain, heat kernel, Turan,
+log-concave, Bhanot, monopole, bulk transition.
+
+- **No statement about mixed or adjoint plaquette actions, the K7 plane, Z_2 monopoles or a bulk transition** in the
+  outline or in the account's index titles. (Account index hits for "adjoint" are the adjoint representation of the
+  group: CA-I `4.24:lem-adjoint-norm` L100278, `4.24:lem-rotation-trace` L100406; and `4.36:lem-plaquette-action`
+  L160392 is the complexified Wilson plaquette action. Titles only; bodies not read.)
+- **The outline's one Wilson-specific coefficient computation**, outline L2094-2240 (READ): theorem "Link symmetry of every
+  periodic Wilson state" (L2112-2117): "Every periodic DLR state of the four-dimensional SU(2) Wilson interaction at
+  beta > 0 is invariant under every link reflection." Its one-plaquette inputs are (GL3) c_l = (2 e^(-beta)/beta)
+  I_{2l+1}(beta) > 0 (positive Peter-Weyl eigenvalues of the one-bond convolution) and (GL4) "I_{n+1}/I_n <= beta/(2(n+1)),
+  I_n/I_{n+1} = 2(n+1)/beta + I_{n+2}/I_{n+1} <= C_beta (1 + n)" (L2232-2239), used for smooth convergence of a
+  conjugated operator (GL5). Status in the outline: "proved in detail" (index, unchecked). Reading (ARGUED): both
+  inputs are a positivity and a polynomial ratio bound; a K7 weight with beta_F > 0 has strictly positive coefficients
+  (lane, Section 2) of factorial decay, and I expect the same polynomial ratio bound; so this theorem does not use a
+  property that separates Wilson from K7, and it does not use the Turan inequality of Section 5.2. NOT CHECKED for K7.
+- The outline's "Marginal log-concavity from one-dimensional transport" (L27149-27202, (GCB5)) is log-concavity of a
+  kernel in field variables, not of the character sequence; not related to Section 5.2 (title and tag read only).
+
+Verdict: the Sussman-Alpoge texts contain no separating input; their Bessel facts (GL3, GL4) are the Wilson case of
+facts that K7 shares.
+
+- Step 7 done.
+
+## 8. Step 8: table of hits for row 996, and RESULT
+
+Marks: THM = theorem in the source; THM-CITED = theorem cited, not re-proved here; PROVED-HERE = short proof in this file
+from a cited theorem; NUM = Monte Carlo or series; CLAIM = published claim that is disputed or a minority reading.
+"Separates?" says whether the statement is true on the Wilson axis at 2.3-2.6 and false (or different) on K7.
+Grep of FINISH.md, `library/open-core.md`, `library/*.md`, `library/prior/*.md` for Turan / coefficient log-concavity:
+no earlier occurrence (so 8.1 row 1 is NEW to the lane); the other rows' lane status is in the last column.
+
+| # | Statement | Kind | Couplings | Source (quote in section) | Separates? | Lane |
+|---|---|---|---|---|---|---|
+| 1 | Wilson: n -> c_{n/2} = I_{n+1}/I_1 strictly log-concave; c_{n/2} < c_{1/2}^n, so c_1 < c_{1/2}^2 | THM-CITED (Turan for I_nu, nu > -1) + PROVED-HERE | every beta > 0 | Baricz-Ponnusamy arXiv:1010.3346 Sec. 1 citing Thiruvenkatachar-Nanjundiah 1951, Amos 1974, Joshi-Bissu 1991, Lorch 1994; F_j = (2/beta) I_{d_j}: Tomboulis 0707.2179 L318, SA outline (GL3) L2210 (5.2) | YES, exact and one-plaquette: fails at every K7 point tested (c_1 - c_{1/2}^2 = +0.02 at (1.48, 0.90) to +0.28 at the triple point) and for w_p (p >= 2 at small beta; +0.04 to +0.13 at test points); holds for heat kernel. Not preserved by decimation | NEW |
+| 2 | Bulk first-order line is absent at beta_A = 1.25 on N^4, N <= 16; the 1981 endpoint (1.48, 0.90) is not a bulk endpoint | NUM | beta_A = 1.25; beta_A = 1.1 | Gavai hep-lat/9603003; Mathur-Gavai hep-lat/9410004 (3.1) | Locates K7: coexistence only for beta_A >~ 1.3-1.5 | NEW (lane had BC 1981 and Rinaldi 2012) |
+| 3 | Endpoint is a critical point with only the 0++ channel critical (phi^4 / 4D Gaussian scalar); string tension and other glueballs unchanged | NUM | SU(3) along its line; SU(2) heavy-adjoint-quark version | Heller hep-lat/9508009; Lucini-Patella-Rago 1309.1614 (3.2) | YES numerically: at the endpoint a m_0++ -> 0; on the axis a m_0++ = 1.22 (2.3) to 0.51 (2.6) | NEW |
+| 4 | Endpoint tricritical; a second-order bulk line continues "to and beyond the Wilson axis" | CLAIM (NUM) | along the BC line | Grady hep-lat/0404015 (3.2) | Would UNDO the separation if true (a transition on the axis); not the accepted reading; outside 2.3-2.6 if at 3.2 | NEW |
+| 5 | Wilson-axis transition at beta about 3.19 (SO(3)-Z_2 monopole percolation; Coulomb-gauge magnetisation); these monopoles percolate for beta < 3.19, about 13 percent of dual links at threshold | CLAIM (NUM) | 16^4-40^4 | Grady 1306.6921 (3.3, 6) | No for the arena (arena is on the "confining" side in either reading) | NEW |
+| 6 | Monopole-constrained action, plaquette 0.64 (Wilson-equivalent beta 2.45), Coulombic at all beta | CLAIM (NUM) | beta = 0, up to 60^4 | Grady hep-lat/9806024, 1306.6921 (3.3) | A K7-type test of a new kind (a constraint): same plaquette as the arena, no gap | NEW |
+| 7 | Positive plaquette model (tr U_p > 0) still confines | NUM | | Stack-Neiman hep-lat/9601019 (6) | contra item 6 for Z_2 monopoles alone | NEW |
+| 8 | Villain mixed action: Z_2 monopoles suppressed gives fundamental-adjoint self-duality; Z_2 monopoles and vortices suppressed gives Wilson with a modified coupling | exact change of variables (Villain) + NUM | whole plane | Datta-Gavai hep-lat/9905030, 9909139 (3.4) | Names the separating content: the adjoint direction is Z_2-monopole / vortex content | NEW |
+| 9 | Deconfinement line joins the bulk line at its endpoint; first-order deconfinement for beta_A >= 1.1 (universality class change) | NUM | N_t = 2-8 | Gavai-Grady-Mathur hep-lat/9403001; Mathur-Gavai 9410004; Gavai-Mathur 9512015 (3.2) | Different at finite T; not a T = 0 separator | NEW |
+| 10 | Wilson axis: m_0++/sqrt(sigma) falls from 3.85 (2.6) to 3.30 (2.3) and 3.08 (2.2), m_2++/sqrt(sigma) flat at 5.3-5.9 | NUM (my ratios of published rows) | 2.2-2.85 | Teper hep-th/9812187 Table 10 (4.1) | YES numerically (axis is off-critical; the shadow is visible but finite) | lane had Teper's 2.3 / 2.6 rows (row 974); ratios and pattern NEW |
+| 11 | Non-perturbative a dg^(-2)/da: minimum magnitude 0.0754 at beta 2.38-2.39, 0.0848 at 2.3, 0.0812 at 2.6; one-loop 0.0929 | NUM (spline fit to T_c data, checked against MCRG) | 2.15-2.80 | Engels-Karsch-Redlich hep-lat/9408009 table (4.2) | YES numerically: a 20-25 percent dip, no zero, on the axis | NEW |
+| 12 | Plaquette increases with beta | PROVED-HERE (Var >= 0) | all | (4.4) | NO (holds along every line in the K7 plane) | - |
+| 13 | Tomboulis all-coupling confinement uses only 1 >= c_j >= 0 | CLAIM (disputed by Ito-Seiler) | all | 0707.2179 L290-345, L676-679 (5.1) | NO (K7 has the same property; both K7 bulk phases confine) | Tomboulis and Ito-Seiler in lane; the hypothesis reading NEW |
+| 14 | SA outline link-symmetry theorem uses (GL3) positivity and (GL4) ratio bounds of Bessel coefficients | THM in outline ("proved in detail", unchecked) | beta > 0 | YM4_sketch_500.tex L2112-2239 (7) | NO (inputs shared by K7, ARGUED) | NEW |
+| 15 | SO(3) (far end of the K7 line) = SU(2) summed over twist sectors; O(700)^4 needed to see SO(3) confinement | exact path (Villain) + NUM | weak coupling | de Forcrand-Jahn hep-lat/0205026 (6) | Ties K7's far end to twist sectors | NEW |
+| 16 | No SU(2) Griffiths / Ginibre-type correlation inequality found | negative search | | arXiv API queries (5.3) | - | consistent with row 708 |
+
+**What row 996 can take from this (ARGUED, not proved).** (i) The only exact, one-plaquette, K7-false and w_p-false
+property found is row 1 (log-concavity of the normalised character coefficients, equivalently the Turan inequality for
+I_nu). It is quantitative in the sense row 712 predicted (it fails at small beta_A > 3 beta_F^2/16), it holds for the
+heat-kernel weight, and it is not preserved by decimation; whether some lemma of the lane can consume it is row 996's
+question. (ii) The published numerical separators are spectral (the 0++ correlation length: Heller; Teper rows) and
+thermodynamic (beta-function dip without a zero: Engels-Karsch-Redlich; the specific-heat "shadow" of Bhanot-Creutz,
+whose volume scaling was not read), plus the Z_2-monopole content (Datta-Gavai, Grady). (iii) Two corrections to the lane's K7 bookkeeping:
+the 1981 endpoint (1.48, 0.90) is not a bulk endpoint on large lattices (Gavai 1996: no first-order bulk transition at
+beta_A = 1.25 on 16^4), so "no seed at any size" should be quoted on the segment beta_A >~ 1.3-1.5 of the line
+(Rinaldi et al. 2012 and Gavai 1996 together); and the endpoint's nature is disputed (critical with a scalar 0++
+continuum, versus Grady's tricritical reading with a second-order line through the Wilson axis).
+
+**Not done.** Full texts read: Engels-Karsch-Redlich (table), Teper (Tables 8-12), Tomboulis (L286-349, L670-690), Grady
+2013 (L95-130, L300-335), SA outline (L2094-2240). Everything else in Sections 3 and 6 is ABSTRACT-LEVEL. Not read:
+Bhanot-Creutz and Rinaldi again (lane has them), Mack-Petkova, Brower-Kessler-Levine, Halliday-Schwimmer,
+Greensite-Lautrup, Caneschi-Halliday-Schwimmer (pre-arXiv, no open copy sought); the published version of de
+Forcrand-Jahn (journal reference RECALLED). The INSPIRE citation query for rebuttals of Grady failed (query syntax
+returned unrelated records); whether Grady's beta = 3.2 claim has a published rebuttal is NOT CHECKED. The w_p test
+couplings are arbitrary (beta_t(p) unknown). The one numeric job was a 1D quadrature under the numeric lock (< 2 s,
+memory 70 percent free).
+
+- 2026-11-15T06:13Z (`date -u`): Step 8 done; row complete.
+
+RESULT: literature reading done (16 hits tabled, 4 full-text reads, rest abstract-level). One exact one-plaquette
+separator found and NEW to the lane: the Wilson character coefficients c_j = I_{2j+1}/I_1 are strictly log-concave in j
+(Turan inequality, THM-CITED; consequence c_1 < c_{1/2}^2 PROVED here), while every K7 point tested (c_1 - c_{1/2}^2 =
++0.02 to +0.28) and w_p (p >= 2) violate it (GUIDE quadrature plus a small-coupling argument); it is not preserved by
+decimation. Numerical separators: a m_0++ = 1.22-0.51 on the axis at 2.3-2.6 with m_0++/sqrt(sigma) dipping only to 3.3
+(Teper) and a 25 percent beta-function dip without a zero (Engels-Karsch-Redlich), against a vanishing 0++ mass at the
+K7 endpoint (Heller; Lucini-Patella-Rago). Correction: the 1981 endpoint (1.48, 0.90) is not a bulk endpoint on large
+lattices (Gavai 1996), so K7's coexistence is supported only for beta_A >~ 1.3-1.5. Open: no consumer of the
+log-concavity property is identified (row 996); Grady's tricritical / beta 3.2 claims are recorded, not settled;
+confinement-type results (Tomboulis, vortex free energy, SA link symmetry) do not separate.

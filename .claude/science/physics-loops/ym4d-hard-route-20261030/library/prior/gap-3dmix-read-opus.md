@@ -165,3 +165,118 @@ abelian, ultraviolet stability on a fixed torus. Not SU(2), not infrared. NO.
 **Step 3 verdict.** The Balaban-school 3D work (Balaban, Dimock, Sussman-Alpoge YM3, Aronow-Lopatto) is ultraviolet:
 fixed physical torus, weak coupling at the cutoff, and every volume-free inequality in it is a conditional (fibre) inequality
 for one RG step given the coarse field. None reaches the order-one coupling at the coarse end, which is where nu_0 lives.
+
+## Step 4. Stochastic-analysis and probabilistic results (written 2026-11-15T01:51Z)
+
+Search: arXiv API (export.arxiv.org), three abstract queries saved in `/tmp/gap3dmix-arx/`: (q1) "lattice gauge" with
+"log-Sobolev" / "spectral gap" / "Poincare inequality" / "mixing time"; (q2) "Yang-Mills" + lattice with "log-Sobolev" /
+"Bakry" / "spectral gap" / "Langevin" / "mass gap" (60 distinct hits listed); (q3) "lattice gauge" + "weak coupling" with
+decay / mass gap; (q4) 3D nonabelian lattice + gap / clustering in math-ph or math.PR (0 hits); (q5) "area law" + "lattice
+Yang-Mills" in math.PR / math-ph. Abstracts read for every paper below; full texts not read unless stated.
+
+| Hit | Statement (abstract level) | Coupling range | Volume-free? | Supplies Route 2 (i)? |
+|---|---|---|---|---|
+| 4a. Shen-Zhu-Zhu, arXiv:2204.12737 | Langevin dynamics, Bakry-Emery; unique infinite-volume measure, "Log-Sobolev and Poincare inequalities hold", exponential decay of correlations, "strictly positive mass gap", any d > 1 | "\|beta\| < 1/(16(d-1))" for SU(N), 't Hooft scaling (coefficient N beta of Re tr). d = 3: \|beta\| < 1/32, i.e. Wilson beta_W = N^2 beta < 1/8 for SU(2) in the lane's weight exp(-beta sum (1 - (1/2) tr U_p)) (conversion checked against (1.2) "S(Q) = N beta Re sum Tr(Q_p)" and (1.3) of the v1 PDF, pp. 3-4) | YES | NO: strong coupling only; the window is beta_W of order 2 |
+| 4b. Shen-Zhu-Zhu, arXiv:2401.13299 (YM-Higgs) | same conclusions with a Higgs field | "(beta, kappa) are small" | YES | NO: strong coupling |
+| 4c. Cao-Nissim-Sheffield, arXiv:2509.04688 | area law via the SZZ dynamics, verifying "the mass gap condition from [DF80]" | 't Hooft regime (small beta N) | YES | NO: strong coupling |
+| 4d. Cao-Nissim-Sheffield, arXiv:2505.16585 | area law in "expanded regimes", master loop equation | U(N), mainly large N; improves Osterwalder-Seiler | area law, not mixing | NO |
+| 4e. Nissim, arXiv:2510.22788 | mass gap and unique infinite-volume limit for U(N) | 't Hooft regime | YES | NO: strong coupling, U(N) |
+| 4f. Piazza-Shen, arXiv:2610.35286 | LSI for 2D SU(N) "at all couplings" (lane row 957 read it in full) | all beta, d = 2 only | per row 957 | NO: d = 2; row 957 found the disintegration does not lift (`library/gap-ps-disint-max.md` Section 6) |
+| 4g. Adhikari-Cao, arXiv:2202.10375 | "exponential decay of correlations" for gauge-invariant functions | FINITE gauge groups, weak coupling | YES | NO: the Peierls mechanism needs a finite group; SU(2) has spin waves |
+| 4h. Chevyrev-Qu-Shen, arXiv:2608.27828 | 3D U(1) Langevin converges to the one-form stochastic heat equation | weak-coupling scaling, fixed torus | NO | NO: abelian, fixed torus |
+| 4i. Chandra-Chevyrev-Hairer-Shen, arXiv:2201.03487 (3D YMH) | local-in-time solutions of the renormalised SPDE (lane record `prior/gap-lit-grok.md` L95) | continuum, short time | NO | NO |
+| 4j. Stahl-Placke-Khemani-Li, arXiv:2601.06010 | 3D Z_2 LGT: Glauber "t_mix = exp[Omega(L)]" in the deconfined phase | weak coupling, Z_2 | a NEGATIVE result for dynamics | NO; see the remark below |
+| 4k. Faria da Veiga-O'Carroll, arXiv:2509.03513 | charge-conjugation sectors, Elitzur, "no local mass term"; "also hold in dimension three" | structural; gap only "expected" | NO | NO |
+| 4l. Anishetty-Sreeraj, arXiv:1802.06198 | "(2+1) SU(2)" dual loop description, mass gap "in the weak coupling limit" by a phase-space path-integral analysis | physics derivation, not a theorem | NO | NO: not a proof |
+
+**Remark on 4j (why "mixing" in the row's wording needs care).** Route 2 (i) needs a STATIC quantity: s times a
+susceptibility of nu_0 below one, uniform in the box. A dynamical mixing time is a different quantity. 4j shows, for the
+3D Z_2 theory at weak coupling, a Glauber mixing time exp(Omega(L)) even though the static Z_2 gauge theory at weak
+coupling has decaying gauge-invariant correlations (it is dual to the high-temperature 3D Ising model; standard duality,
+from memory, not re-derived here). The barrier is between topological (holonomy) sectors of the torus. The same caution
+applies to SU(2) slices on a periodic box: a volume-free LSI or Poincare constant for local dynamics can fail on a torus
+through flux sectors even where the susceptibility of local observables is finite. So the right input to seek is a
+susceptibility (or a Dobrushin-type influence) bound, not a log-Sobolev constant; none exists in either form at the window.
+Not verified: whether the slice boxes of Route 2 are periodic or have free walls (row 988's B is "the cube"; check there).
+
+**Step 4 verdict.** Every volume-free functional inequality for nonabelian lattice gauge theory in d >= 3 found here is
+in the strong-coupling regime (4a-4e) or for finite groups (4g). Nothing reaches order-one or weak coupling for SU(2) in
+d = 3. This agrees with the lane's earlier records (Step 1 list) and adds 4b, 4c, 4d, 4e, 4h, 4j, 4k, 4l as new entries.
+
+## Step 5. Expansions around decoupled slices (the anchor of Identity G itself) (written 2026-11-15T01:52Z)
+
+Identity G anchors at beta_t = 0 with the spatial coupling fixed. In the literature this is the anisotropic lattice at
+small temporal coupling, the regime of "layered" phases (Fu and Nielsen, 1984, for abelian models; from memory, not read).
+Search: arXiv API (c1) "layer phase" / "layered phase" / "anisotropic" + gauge + lattice + rigorous / cluster expansion /
+"we prove" / dimensional reduction (6 hits); (c2) "dimensional reduction" + "lattice gauge" + high temperature / cluster
+expansion (2 hits). Lane grep for "layer phase", "layered phase", "Fu-Nielsen": no hit in `library/`.
+- Knechtli-Luz-Rago, arXiv:1110.4210, "On the phase structure of five-dimensional SU(2) gauge theories with anisotropic
+  couplings": Monte Carlo and mean-field physics, d = 5. Not a theorem. NO.
+- Irges-Knechtli arXiv:0910.5427, Caselle-D'Adda hep-lat/9403027: physics, not d = 3 slice mixing. NO.
+- No rigorous expansion in beta_t around decoupled slices was found for any nonabelian group with slices outside the
+  strong-coupling regime. Such an expansion is a cluster expansion in the time direction whose polymer activities are
+  connected correlations of the slice law nu_0; it converges only if nu_0 clusters summably, which is the same 3D input.
+  So this path does not give a supplier either. (The last sentence is my reading of the structure, ARGUED, not a theorem.)
+
+## Step 6. Summary table (all hits, this run and the lane's earlier records)
+
+| Source | Statement | Coupling range | Volume-free? |
+|---|---|---|---|
+| SA YM3_II Thm C-367-2 (L22346) / YM3_supplement (L32450) | weak Poincare with defect, mixing of continuum Langevin | 3D continuum, fixed torus | NO ("constants depend on ell", L25077; "without supplying a spectral gap uniform in volume", supp. L32446) |
+| SA YM3_II Lemma C-367-7 (iv) (L22681) | fibre LSI, fine field given block field, constant free of K, k, W, ell, b | weak coupling at each RG step, small-field cut | YES, but conditional on the coarse field |
+| SA YM3_II Lemma sf-plat (L35324) | clustering at rate R/\|v\| to the invariant sigma-field | limits at g | bound yes, but 1/\|v\| is not summable in d = 3 |
+| SA YM3_supplement Sketch C-361-3 (L35818) | small half-box free-energy defect e(l) <= 0.069 implies gap, by e(2l) <= 12.9 e(l)^2 | 3D, any label | conditional; the hypothesis is OPEN |
+| SA YM3_I / YM3_main scope lines | "asserts no mass gap"; "mass gap open" | - | - |
+| Aronow-Lopatto 3D SU(2) torus | continuum limit of flowed Wilson loops; fibre LSI from D^2 V >= I/2 | fixed torus, weak at cutoff | NO ("prove nothing about a mass gap", s01 L70) |
+| Balaban CMP 102 (1985) 255-275 | UV stability: upper and lower bounds on the partition function | 3D, fixed torus | NO (size of the integral only) |
+| Shen-Zhu-Zhu 2204.12737; 2401.13299 | LSI, Poincare, mass gap, unique infinite-volume limit | SU(N): \|beta\| < 1/(16(d-1)); SU(2), d = 3: beta_W < 1/8 | YES, strong coupling only |
+| Cao-Nissim-Sheffield 2509.04688, 2505.16585; Nissim 2510.22788 | area law / mass gap | 't Hooft (small beta N) regimes | YES, strong coupling only |
+| Piazza-Shen 2610.35286 | LSI at all couplings | d = 2 only | YES, but d = 2 |
+| Adhikari-Cao 2202.10375 | exponential decay of correlations | finite groups, weak coupling | YES, finite groups only |
+| Goepfert-Mack CMP 82 (lane record) | confinement / gap | 3D U(1) Villain, all couplings | YES, abelian only |
+| Chatterjee / Adhikari-Cao 2602.00436 (lane record) | confinement with a central U(1) | 3D, groups with central U(1) | per the lane record; SU(2) has no central U(1) |
+| Chevyrev-Qu-Shen 2608.27828; CCHS 2201.03487 | Langevin scaling / local solutions | fixed torus, short time | NO |
+| Stahl-Placke-Khemani-Li 2601.06010 | Glauber t_mix = exp(Omega(L)) for 3D Z_2 deconfined | weak coupling, Z_2 | negative for dynamics |
+| Nair 2608.10133, Anishetty-Sreeraj 1802.06198, Cherrington 0908.1893 | 3D gap arguments | physics / Hamiltonian | not theorems |
+
+## Step 7. Verdict on Route 2 (i) (written 2026-11-15T01:52Z)
+
+**Verdict: Route 2 (i) has NO supplier in the literature found.** Route 2 (i) needs a volume-free bound on a susceptibility
+(or a Dobrushin-type total influence) of nu_0, three-dimensional SU(2) Wilson theory at the order-one unit coupling, on
+boxes of up to e^(c/g^2) cells. Every volume-free inequality found for 3D nonabelian lattice gauge theory is one of:
+(1) strong coupling, beta_W < 1/8 for SU(2) in d = 3 (Shen-Zhu-Zhu; the 't Hooft-regime papers; Osterwalder-Seiler type);
+(2) finite gauge groups at weak coupling (Adhikari-Cao); (3) abelian (Goepfert-Mack 3D U(1)); (4) a conditional fibre
+inequality for one RG step given the coarse field (SA YM3_II Lemma C-367-7 (iv); Aronow-Lopatto), which is the
+ultraviolet end and leaves the coarse end, where nu_0 sits, untouched. At the coarse end, Sussman-Alpoge YM3 and
+Aronow-Lopatto state the gap is open, and the SA mixing theorem has constants that depend on the torus.
+This matches row 988's expectation in N4 ("it is the three-dimensional gap problem at fixed lattice coupling").
+
+**What is new for the lane from this reading (each labelled).**
+- (R1, from the source, sketch status there) SA `YM3_supplement.tex` Sketch C-361-3 (L35807-35870) is a 3D finite-size
+  criterion of the lane's own seed-plus-doubling shape: e(l) = 2 log Z(l,2l,2l) - log Z(2l,2l,2l) <= x_0 <= 0.069 at one
+  scale gives e(2l) <= 12.9 e(l)^2 and a gap 2 log(1/theta)/ell_0, theta = 12.9 x_0. So Route 2 (i)'s 3D input reduces, if
+  that sketch holds, to a 3D seed at the unit coupling: a small half-box defect of nu_0 on one box. That seed is open, and
+  it is the same kind of statement as the 4D seed. Route 2 therefore moves the 4D seed to a 3D seed plus (ii); it does not
+  remove a seed. ARGUED from the quoted statements; the 3D criterion was not checked here.
+- (R2) The input to ask for is static (a susceptibility or an influence sum), not a dynamical mixing time or LSI
+  constant: 4j shows that local dynamics can mix in time exp(Omega(L)) on a torus through topological sectors while
+  static correlations still decay. ARGUED; the Z_2 duality fact is from memory.
+- (R3) The only volume-free nonabelian weak-coupling inequality in 3D is the fibre LSI (D^2 Psi_W >= gamma_r/4 in a gauge
+  chart). It is the 3D form of the lane's own fluctuation-integral convexity and gives nothing at the unit scale.
+
+**Record for Identity G (as N4 asks; the edit to `library/gap-unit-max.md` is for its owner, I did not make it).**
+Identity G (row 988, `library/gap-unit-max.md` L202-213) stays an exact anchor (PROVED by hand there, not checked) with
+no supplier for Route 2 (i): no published volume-free susceptibility, mixing or log-Sobolev bound exists for 3D SU(2)
+lattice gauge theory outside the strong-coupling range beta_W < 1/8 (Shen-Zhu-Zhu (1.3)), as of this search
+(2026-11-15). Route 2 (ii) (no level crossing) was not in scope and was not examined.
+
+**What this run did not do.** No numeric job (none needed). Not read: the five-part Aronow-Lopatto version on hexagonmath.org
+(sign-in page), Balaban CMP 102a itself (Cloudflare at Deep Blue; quoted via SA YM3_I L89012-89019), CMP 95/109/116/119
+(not on disk), full texts of 4b-4l (abstracts only), the Fu-Nielsen layered-phase papers (pre-arXiv, from memory only).
+A search that finds nothing does not prove that nothing exists.
+
+## Status log (continued)
+- 2026-11-15 01:46Z Step 1; 01:47Z Step 2; 01:49Z-01:50Z Step 3; 01:51Z Step 4 (SZZ normalisation checked from PDF);
+  01:52Z Steps 5-6; 01:52Z Step 7 and RESULT. Times from date -u.
+
+RESULT: Row 992 (Claude Opus 5.5 high, Mac mini worker; literature reading, no numeric run, checked by no one): NO supplier for Route 2 (i) — no volume-free susceptibility, mixing or log-Sobolev bound for 3D SU(2) lattice gauge theory exists outside strong coupling (Shen-Zhu-Zhu: beta_W < 1/8 in d = 3), finite groups (Adhikari-Cao) or abelian U(1) (Goepfert-Mack); Sussman-Alpoge YM3 and Aronow-Lopatto give only fixed-torus or conditional fibre (fine-given-coarse) inequalities and state the 3D gap open; SA's 3D finite-size criterion (YM3_supplement Sketch C-361-3) would reduce the input to an open 3D seed e(l) <= 0.069. Identity G stays an exact anchor with no supplier; Route 2 (i) and (ii) stay OPEN.

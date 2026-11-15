@@ -115,3 +115,46 @@ What I expect, said before the attack: (Y-SEED) at L_* near the correlation leng
 No approach above supplies the order-one input from soft arguments. The attack in Steps 4-6 proves the core of A and
 then tries three routes to (Y-SEED).
 
+## Step 3. Fact tests, one verdict each; first comparison with the lane's core statements
+
+Read for this step (statements only): `gap-crux-restate.md` 3.1 and 3.4 (Theorem D, Lemmas K, X, E, Theorem S,
+Corollary S3'); `gap-phys-seed.md` L253-327 (Lemma Z, Theorem ZD, ZD-c, Corollary Z4); `gap-ladder-max.md` 5.7
+(Proposition Delta, Corollary CU, square-root test); `gap-tiltproof-max.md` L240 (Theorem D2); `gap-ymcons-opus.md`
+L134 (Lemma META); `gap-constraints-max.md` L73 (K7); `gap-pca-opus.md` L319 (FT-FK); `gap-hcphys-max.md` 3.0 (CAP).
+
+### 3.1 What the core statements already hold (found right after Step 2 was written)
+
+- Approach A is in the lane, in a stronger form. (A1) is Lemma K; my exchange identity is Lemma X; (A3) is
+  Proposition Delta of row 708: g(a; b^3) <= (b/a)^3 Delta(a^4); my y(L) is the lane's Delta(L^4) = D(L); (A4) is the
+  line "Delta(n^4) = sum over k of 16^(-(k+1)) Phi(2^k n)" (`gap-crux-restate.md` L123). Theorem D (b) needs ONE doubling
+  defect, not the series: 1 + S(n; (2n)^3) <= exp(Phi(n)), Phi(n) = 16 F(n^4) - F((2n)^4). Theorem S turns s < 1/5041
+  into a gap on all cubes. So (Y-SEED) is the lane's (SEED): Phi(n) <= 1.9 x 10^(-4) at one n. My claim that A
+  "would answer (PQ-EX)" is void: Corollary CU (row 978 5.7) already uses hypercubic tori only, through (APR).
+- Approach D is in the lane: row 982 Route 2 (d), (e) (Renyi-2 form), and `gap-compress-opus.md` L113.
+- A sixth approach I wrote down while reading (Fisher zeros: a volume-uniform zero-free neighbourhood of [0, beta] in
+  complex beta, the strong-coupling disc as anchor, the two-constants theorem for 16 F(n) - F(2n)) is the lane's
+  Route Z (`gap-skeleton-final.md` 4.2; `gap-crux-fp.md` L232: "the zero-free radius shrinks like a power of the gap").
+- My formula "seed = integral over the coupling of a finite-size plaquette shift" is Theorem D (f).
+
+### 3.2 Test table (one verdict per approach and test)
+
+Tests: CAP = Lemma CAP (b) of row 982 (an integrated bridge Poincare constant is at most (e^(2 E_1) - 1)/2);
+COUNT = Lemma COUNT (b) (a decay claim caps log N(E)); D2 = Theorem D2 of row 977 (no criterion with a supremum over
+tilts); META = Lemma META of row 975 (name the transience input); SQRT = the square-root test of row 978 5.7 (a
+space-time constant restricted to a slice returns omega^2/2, not omega); PH = free photon; U1 = compact U(1), both must
+fail through the rate; Q8 = frozen Q_8 and 2T; K7 = the mixed-action endpoint; FK = FT-FK.
+
+| Approach | CAP, COUNT | D2 | META | SQRT | PH, U1 | Q8, 2T | K7 | FK | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| A hypercube / seed form | not engaged: exact, no rate | n/a | n/a | n/a | pass: Phi >= 0.41 for U(1) (row 697 fact (ii)) | pass: Phi -> log of the vacuum count | pass: no seed at the endpoint | n/a | sound, group-blind, already there; all content is in the seed |
+| B twisted seed, marginal engine | COUNT engaged: a massless box has N(E) of a gas with M = 0 | n/a | fails to name it: the twisted sector of Q_8 is gapped, the full box is not | n/a | pass (no twist for U(1)) | FAILS unless the engine reads Z_m/Z_0 | must fail at the endpoint; no step named | n/a | no seed below the massless floor (Step 4) |
+| C orbit-space curvature | CAP engaged: caps the constant by E_1 | pointwise form is a supremum over fields: hit by D2 | not named | FAILS on the 4D law; open on the slice law | pass (O'Neill term zero for U(1)) | pass (no manifold) | must fail; no step named | n/a | fails by size, Step 6 |
+| D purity | as A | n/a | n/a | n/a | as A | as A | as A | n/a | a form of A |
+| E operator comparison | fails COUNT at once: loses a constant per site | - | - | - | - | - | - | - | dead |
+| Z zeros (Route Z) | not engaged | n/a | n/a | n/a | pass: zeros pinch the axis at the transition | pass | pass: zeros pinch at the endpoint | n/a | sound implication, already there; hypothesis is the open part |
+| G anchor at beta_t = 0 (Step 5) | not engaged: an identity | n/a | not named | n/a | pass: the identity holds for U(1) and proves nothing | pass | pass: a level crossing on the path is not excluded | pass: the path acts on the kinetic part, and the identity keeps V | restates the seed along a new path |
+
+Reading of the table. No approach of mine names a transience input (META) and none has a step that U(1) fails
+through a rate while SU(2) passes. Each sound one (A, D, Z, G) is exact and group-blind, so it carries the seed and
+cannot supply it. This is the lane's own finding (`gap-constraints-max.md` Section 2), reached again from the object.
+

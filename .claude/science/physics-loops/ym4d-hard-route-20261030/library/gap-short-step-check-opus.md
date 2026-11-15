@@ -39,6 +39,7 @@ Order note: W1 fixes the order of the statements and puts the tests first. The t
 - 21:21Z (`date -u`): file created.
 - Step 1 done before 21:27Z (an earlier estimate of 21:30Z is replaced).
 - 21:27Z (`date -u`): step 2 written (PAR, MP: no WRONG). Step 3, Lemma NAB, next.
+- 21:31Z: step 3 written (NAB: no WRONG; defect N1, hypothesis). 21:33Z: step 4 (ADD, CHAIN). 21:36Z: step 5 (FLOW, PROJ, FR+, SPLIT). 21:37Z: step 6 (DICH, ENG, test (f)). Step 7, the ARGUED items, next.
 
 ## Step 1. Duplicate check and scope
 
@@ -151,3 +152,57 @@ Side remarks checked: K_c transforms as Ad(g_tail(l)) K Ad(g_tail(l'))^T, so |K|
 ### Verdicts of Step 4
 - Lemma ADD (with the identity and the series): CORRECT-NO-ADVANCE. It is an exact restatement: (T-per) is (CAS) of row 708, which the lane already holds as blocked-equivalent.
 - Lemma CHAIN: CORRECT-NO-ADVANCE. A correct exact identity, immediate from (M1) and Proposition A; it frames (T-pin) and moves no open item ((T-pin) has no blind half and no consumer, as the note says).
+
+## Step 5. Test (e); Lemma FLOW (4.1); Lemma PROJ (4.2); Lemma FR+ (4.3); Lemma SPLIT (4.4)
+
+Read in full: the note L213-270. Conventions of row 1011 3.1-3.2 (read in Step 4).
+
+### Test (e): the Jacobian formula. PASS.
+The interior part of V at time s is the vector field sum over interior l and a of b_l^a(., omega_s) xi_l^a, where xi_l^a is the generator of U_l -> exp(eps e_a) U_l. Each xi_l^a has Haar divergence 0 (Haar measure is left invariant), so the Haar divergence of V is sum over l, a of xi_l^a(b_l^a), which is the note's div V. The map U -> U_eps solves a non-autonomous ODE on a compact manifold, so it is a diffeomorphism, and Liouville's formula for a time-dependent field gives d/ds log J_s(U) = (div V)(tau_s(U)). The time dependence enters only through omega_s = exp(s B) omega, which the formula allows.
+
+### Lemma FLOW (CORRECT)
+Z_c(omega_eps) = integral of exp(A(tau_eps(U, omega))) J_eps(U) dU, and A(tau_eps) - A + log J_eps = integral from 0 to eps of [(V A)(tau_s) + (div V)(tau_s)] ds = g_eps. So F_c(omega_eps) - F_c(omega) = - log E_omega[e^(g_eps)]. g' = Psi_V and g'' = V Psi_V at 0. d^2/d eps^2 of log E[e^g] at 0 is E[g''] + E[g'^2] - E[g']^2, so H_c = - E[V Psi_V] - Var(Psi_V), with equality in the bound iff Psi_V is a.s. constant; Jensen gives the last bound. With b = 0 inside, Psi_V = A' = X_c(B) and - E[V Psi_V] = - E[A''] = E sum_p beta_p w_p (t_p |delta_p|^2 + kappa_p . s_p) by Proposition A (i): this is Proposition A (ii). For B = 0: F_c is constant along the flow, so E[Psi_V] = 0 and E[Psi_V^2] = - E[V Psi_V].
+The existence of a flow with Psi_V constant is ARGUED, as marked: for V = V_0 + grad phi on the interior, Psi changes by L phi with L the generator e^(-A) div(e^A grad .), elliptic and self-adjoint in L^2(e^A dU) with kernel the constants, so L phi = E[Psi_(V_0)] - Psi_(V_0) is solvable by the Fredholm alternative. Not rebuilt; not used. So "response <= cost of every flow" is PROVED, and "response = least cost" rests on that ARGUED existence (an infimum statement would follow without it only if inf Var(Psi_V) = 0, which is the same fact).
+
+### Lemma PROJ (CORRECT; one domain precision in (iv))
+(i) X(theta n) = - sum_l theta_l n_tail(l) . N_l at each fixed U; X is linear in the field values, so a U-dependent frame is allowed.
+(ii), (iii) g_x U_l g_y^(-1) = exp(eps lambda_x n_x) exp(- eps lambda_y Ad(U_l) n_y) U_l, so the first-order generator is G_l = lambda_tail n_tail - lambda_head Ad(U_l) n_head (tail frame). The action is gauge invariant at each U, so X(G) = 0 whatever the dependence of n on U. (ii): lambda = indicator of z, n_z = a: - sum over tail z of a . N_l + sum over head z of (Ad(U_l) a) . N_l = 0, and (Ad(U_l) a) . N = a . Ad(U_l)^(-1) N. (iii): G_l = (d lambda)_l n_tail + lambda_head D_l n, so X((d lambda) n) = sum_l lambda_head (D_l n) . N_l; with X((d lambda) n) = - sum_z lambda_z (div j)_z, (div j)_z = sum over tail z of j_l - sum over head z of j_l, this is (div j)_z = - sum over head z of (D_l n) . N_l at every site with no pinned link.
+(iv) Q(dlambda) = E[(sum_z lambda_z (div j)_z)^2] vanishes for every lambda (zero at pinned sites) iff (div j)_z = 0 a.s. at each such z: correct. Precision: "its cost form is Q(theta) = E[(sum theta_l j_l)^2]" holds for theta = 0 on the pinned links (then the cost - E[V Psi_V] of the divergence-free move equals E[Psi_V^2] by FLOW's last remark, and E[Psi_V] = 0, so it is a covariance). For theta with boundary values the cost is - E[V V A], not Q(theta). The "iff" uses only gradients of lambda that vanish at pinned sites, so the claim stands. "Divergence free (for instance tree-transported)" is a hypothesis: it needs n_tail(l) not to depend on U_l; I did not check C8 of row 1013 for the orientation convention that gives this.
+
+### Lemma FR+ (CORRECT)
+The telescoping identity holds exactly: v_x - Ad(U_p) v_x = D_(l1) v + Ad(U_1) D_(l2) v - Ad(U_1 U_2 U_3^(-1)) D_(l3) v - Ad(U_1 U_2 U_3^(-1) U_4^(-1)) D_(l4) v (I wrote out the four brackets; the signs of the last two come from v_head - Ad(U^(-1)) v_tail = - Ad(U^(-1)) D_l v). Ad(omega_p) is the rotation about s_p by twice the class angle phi, so |(1 - Ad(omega_p)) v| = 2 |sin phi| |v_perp| = 2 |s_p x v|. Then |s_p x v_x|^2 <= sum over the links of p of |D_l v|^2, the sum over the six plaquettes based at x is at least lambda_x |v_x|^2 (degree-2 homogeneity; v_x = 0 trivial), and each link lies in at most 6 plaquettes.
+
+### Lemma SPLIT (CORRECT for its exact claims; one size sentence is ARGUED, not PROVED)
+U(1): with tau = prod_i tau_i^(alpha_i), multiplicativity gives tau = sigma^(alpha_1 + ... + alpha_n) on bd; tau is closed outside the union of the P_i and equals tau_i^(alpha_i) times a field closed on P_i. The proof of PAR (i) then gives Z(sigma^(sum alpha) Om) = Z(Om) E[prod_i r_i(alpha_i)]. Jensen with alpha_i = alpha/n: rho(alpha) = E[exp(- sum v_i(alpha/n))] >= exp(- sum E v_i(alpha/n)), so V(alpha) <= sum_i E v_i(alpha/n). With v_i(alpha') <= (h/2) alpha'^2 for every sub-pin: V(alpha) <= n (h/2)(alpha/n)^2 = (h/(2n)) alpha^2, for every outer pin. Correct.
+SU(2): for a plaquette whose links l_1 and l_3 both cross the cut, U_p -> g U_1 U_2 U_3^(-1) g^(-1) U_4^(-1), and tr(W g^(-1) u^(-1) g) = tr(W u^(-1)) for all W iff g commutes with u = U_4 (the tangential link joining the two tails). So the exact fractional identity needs every such u in the centraliser of n (reducible along the cut), a set of Haar measure zero. Correct.
+The last sentence, "the defect per crossing plaquette is the second-order term beta theta^2 |u_perp|^2", is a size, not an identity. Ad(g^(-1)) u^(-1) - u^(-1) is of first order in theta (- 2 theta n x Im(u^(-1)) + O(theta^2)), so the change of the action has a first-order term of size beta theta |u_perp| |s_p|; the second-order classical term of Proposition A (i) is (beta/2) |delta_p|^2 t_p with |delta_p|^2 close to theta^2 |n - Ad(u) n|^2 = 4 theta^2 |s(u) x n|^2 when U_p is near 1. So the sentence holds in order of magnitude in the weak-coupling (classical) regime, with a constant near 2 for the normalisation |u_perp| = |s(u) x n|. It should carry the mark ARGUED. Nothing in the note rests on its exact form.
+
+### Verdicts of Step 5
+- Lemma FLOW (test (e) included): ADVANCE (narrow). The exact cost form of field-dependent moves with their Jacobian is new in written form and covers what check 1015 listed as not covered by Lemma WN. Blind, as the note says. Existence of the minimiser: ARGUED.
+- Lemma PROJ: ADVANCE (narrow), with the domain precision of (iv). It states, for field-dependent frames, the exact condition (j conserved) under which the cost is a curl form.
+- Lemma FR+: CORRECT-NO-ADVANCE (a one-line extension of Lemma FR, as the note says).
+- Lemma SPLIT: ADVANCE (narrow) for the U(1) division identity with Jensen and the exact SU(2) reducibility statement; the size sentence at L269 is ARGUED, not PROVED.
+
+## Step 6. Lemma DICH (5.1); Proposition ENG (5.5); test (f), the map of 3.4
+
+Read in full: the note L279-362 (Section 5) and L197-203 (3.4).
+
+### Lemma DICH (CORRECT)
+Let J* be the first j >= j_0 with R_j < r_0. By the blind half R_j <= r_1 for j >= j_0, so every step j -> j + 1 with j_0 <= j < J* is random or structured (a step of both kinds is counted once). Random steps: R_(J* - 1) >= r_0 and R decreases by at least delta at each random step before it, so there are at most (r_1 - r_0)/delta random steps before step J* - 1, plus possibly step J* - 1 itself. Structured steps: E is non-decreasing, starts at least 0 and stays at most E_max, so at most E_max/eps. Hence J* - j_0 <= (r_1 - r_0)/delta + 1 + E_max/eps; the "+ 1" of the statement is exactly the last random step. If R_j >= r_0 for all j the same counts give a contradiction, so J* exists. The note's two-line proof is right; this is the bookkeeping behind its "+ 1".
+
+### Proposition ENG (CORRECT as an implication)
+Multiply (FL) by c_2 Rbar(l) >= 0 and insert in (DEC): Rbar(2l) <= Rbar(l) - c_2 Rbar(l) NA_l <= Rbar(l) - c_1 c_2 Rbar(l) min(1, 1/Rbar(l)) = Rbar(l) - c_1 c_2 min(Rbar(l), 1). Needs c_1, c_2 >= 0. The consequence in 7.3 (O1 with L = 2 follows when c_1 c_2 min(r_0, 1) >= delta) is correct, since Rbar(l) >= r_0 on the band.
+Wording only: 5.5 says NA_l lies in [0, 1] and "for bare links it is the lambda_x of Lemma NAB"; but lambda_x = lambda_2 + lambda_3 <= (2/3) tr M <= 4. Use lambda_x/4 if the [0, 1] range is wanted. ENG itself does not use NA_l <= 1 (it needs c_2 NA_l <= 1 only for (DEC) to be meaningful).
+
+### Test (f): the hand values of the map r -> 2 artanh(tanh(kappa r/2)^4). PASS.
+By hand (tanh(u) = (e^(2u) - 1)/(e^(2u) + 1), 2 artanh(x) = ln((1 + x)/(1 - x))), kappa = 4:
+- r = 0.3: tanh(0.6) = 2.320117/4.320117 = 0.53705; fourth power 0.083188; ln(1.083188/0.916812) = ln 1.18147 = 0.1668. Note: 0.167.
+- r = 0.4: tanh(0.8) = 3.953032/5.953032 = 0.66404; fourth power 0.19443; ln(1.19443/0.80557) = ln 1.48272 = 0.3939. Note: 0.394.
+- r = 0.5: tanh(1) = 0.761594; fourth power 0.33643; ln(1.33643/0.66357) = ln 2.01400 = 0.7001. Note: 0.70.
+The fixed point lies between 0.402 (value 0.3993, contracts) and 0.405 (value 0.4076, expands), so "contracts below r = 0.40 and expands above" is right to two digits. Large r: tanh(2r)^4 = 1 - 8 e^(-4r) + ..., so the map is 4 r - ln 4 + o(1): "like R(2l) = 4 R(l) - log 4" is right. kappa = 1: tanh(r/2)^4 < tanh(r/2), so the map is below r for every r > 0 ("a contraction" in the sense f(r) < r; its slope tends to 1 at large r, where f(r) = r - ln 4 + o(1), so it is not a uniform Lipschitz contraction; the note's use needs only f(r) < r).
+The inequality tanh(xi(Sigma_2l, D_2l)/2) <= tanh(xi(Sigma_2l, D_l)/2)^4 is Lemma PAR (iii) with four parallel copies of D_l in D_2l, which test (a) allows (squares that share an edge line are admissible sub-containers).
+
+### Verdicts of Step 6
+- Lemma DICH: CORRECT-NO-ADVANCE (counting; the note says so).
+- Proposition ENG: CORRECT-NO-ADVANCE (an implication; (FL) at the cell scale and (DEC) are open).
+- 3.4 hand values: correct.

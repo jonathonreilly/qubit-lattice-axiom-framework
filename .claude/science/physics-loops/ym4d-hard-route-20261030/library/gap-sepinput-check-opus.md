@@ -22,7 +22,7 @@ Scope (row 997): check line by line 5.1 (Identity MIX, v = 8 beta_A/3), 5.2 and 
 
 (Appended below as each step finishes.)
 
-### Step 1 (07:20Z): what is under check
+### Step 1: what is under check
 
 Read in full: `library/gap-sepinput-max.md` (571 lines, file as at 011ea3c56). Read for the K7 definition: `gap-mid-max.md` L48 (one-plaquette weight exp(beta_F x + beta_A (4 x^2 - 1)/3), x = (1/2) tr U_p) and `gap-constraints-max.md` L73. The Sussman-Alpoge account is not read: no item under check cites it.
 
@@ -41,7 +41,7 @@ Items and lines (all line numbers are in `gap-sepinput-max.md`):
 
 Method: each step is redone by hand from the definitions. No numeric run is used for any verdict. The GUIDE controls of the note (5.4, 5.5 remark 3, 6.4 control, 6.5) are not checked and carry no weight here.
 
-### Step 2 (07:24Z): 5.0 and 5.1, Identity MIX. Verdict HOLDS
+### Step 2: 5.0 and 5.1, Identity MIX. Verdict HOLDS
 
 **5.0 (L256-267).** Hess_b F = C: d/db_p F = <x_p>, d^2/(db_p db_q) F = <x_p x_q> - <x_p><x_q>. Differentiation under the integral is allowed: the integral is over a compact group and the integrand is smooth in (b, v). The bound Sigma^2 <= abs(P): lambda_max(C) = sup over unit a of Var<a, x> <= E <a, x>^2 <= abs(x)^2 <= abs(P). Sigma^2 > 0: at b = 0 each U_p is a product of four independent Haar links, so Var x_p = 1/4. HOLDS. (Sigma^2(v) is finite for every real v by the same bound.)
 
@@ -61,7 +61,7 @@ Method: each step is redone by hand from the definitions. No numeric run is used
 
 **Verdict 5.1: HOLDS.** No correction.
 
-### Step 3 (07:45Z): 5.2 Proposition TILT and 5.3 corollaries. Verdict HOLDS (K7-A: HOLDS, one wording remark)
+### Step 3: 5.2 Proposition TILT and 5.3 corollaries. Verdict HOLDS (K7-A: HOLDS, one wording remark)
 
 **Brascamp-Lieb, with its hypotheses (source read).** E. A. Carlen, D. Cordero-Erausquin, E. H. Lieb, "Asymmetric covariance estimates of Brascamp-Lieb type and related inequalities for log-concave measures", arXiv:1106.0709v2, Section 1, quoted from the PDF fetched to `/tmp/chk997/src/` (extract `/tmp/chk997/out/ccl.txt`): "Let f be a C2 strictly convex function on Rn such that e−f is integrable. By strictly convex, we mean that the Hessian matrix, Hessf, of f is everywhere positive." With dmu = e^(-f) dx normalised and h real in L^2(mu): "The Brascamp-Lieb (BL) inequality [4] for the variance of h is var(h) ≤ ∫Rn (∇h, Hess−1 f ∇h) dµ". Their [4] is H. J. Brascamp and E. H. Lieb, J. Funct. Anal. 22, 366-389 (1976), the paper the note cites. Their Theorem 1.1 takes locally Lipschitz functions that are square integrable. The theorem number 4.1 in the note is not confirmed by this source; the statement is.
 
@@ -100,7 +100,7 @@ By 5.1 (a), each bracket is a probability density in s for each t. This is the f
 
 **Verdict 5.3: LIP HOLDS; K7-A HOLDS (wording remark on "the limit"); K7-B HOLDS; Reading HOLDS; Remark POL: its formulas HOLD, and its open step closes by the identity above.**
 
-### Step 4 (07:58Z): 5.5 Lemma SHEET. Verdict HOLDS (two precision remarks)
+### Step 4: 5.5 Lemma SHEET. Verdict HOLDS (two precision remarks)
 
 **Labels (mine).** Level i is the (1,2)-plaquette p_i at y_0 = x + i e_3, with corners y_1 = y_0 + e_1, y_2 = y_0 + e_1 + e_2, y_3 = y_0 + e_2. Horizontal links of level i: h_1 = U(y_0, 1), h_2 = U(y_1, 2), h_3 = U(y_3, 1), h_4 = U(y_0, 2); so U_(p_i) = h_1 h_2 h_3^* h_4^*. Vertical links of cube i: V_a = U(y_a, 3), a = 0, ..., 3. Primes mark level i+1.
 
@@ -127,7 +127,7 @@ U_(p_(i+1)) = h_1' h_2' h_3'^* h_4'^* = V_0^* k_1^* h_1 k_2^* h_2 h_3^* k_3 h_4^
 
 **Verdict 5.5: HOLDS.** Remarks 1-2 are precision points, not corrections of the statement's truth on the lane's tori.
 
-### Step 5 (08:06Z): Proposition MF. Verdict HOLDS AFTER CORRECTION (the equivalence at L398-400 is one implication)
+### Step 5: Proposition MF. Verdict HOLDS AFTER CORRECTION (the equivalence at L398-400 is one implication)
 
 **Setting (L393-396).** tau := w/abs(P), s of law N(0, tau): E exp(s E) = exp(tau E^2/2) = exp(w E^2/(2 abs(P))). HOLDS. The mean-field model is mu^MF_(beta,w)(dU) proportional to exp(beta E + w E^2/(2 abs(P))) dU, and Z^MF(beta, w) = int gamma_tau(ds) Z_W(beta + s), with F = log Z_W on the homogeneous axis. As in 5.1 (with one variable): the s-marginal is pi proportional to exp(-H), H(s) = abs(P) s^2/(2w) - F(beta + s); given U, s is N(tau E(U), tau). So Var_pi(s) = tau^2 Var^MF(E) + tau (L481 of the self-check). HOLDS.
 
@@ -139,7 +139,7 @@ U_(p_(i+1)) = h_1' h_2' h_3'^* h_4'^* = V_0^* k_1^* h_1 k_2^* h_2 h_3^* k_3 h_4^
 
 **Verdict MF: HOLDS AFTER CORRECTION.** Inequality and contrapositive hold (now without the citation); the equivalence at L398-400 and L517-518 is one implication only.
 
-### Step 6 (08:12Z): 6.3 Proposition ELL. Verdict HOLDS
+### Step 6: 6.3 Proposition ELL. Verdict HOLDS
 
 **Polar form (L422-423).** Haar measure on SU(2) = S^3 in the coordinates g = cos theta + sin theta n, theta in [0, pi], n in S^2, is (2/pi) sin^2 theta d theta times the uniform law on S^2, with theta and n independent. So x = cos theta has density (2/pi) sin^2 theta / sin theta = (2/pi) sqrt(1 - x^2) on [-1, 1]. HOLDS.
 
@@ -152,3 +152,49 @@ U_(p_(i+1)) = h_1' h_2' h_3'^* h_4'^* = V_0^* k_1^* h_1 k_2^* h_2 h_3^* k_3 h_4^
 **Mass and convexity (L427-428).** Total mass: int over [-1,1]^2 of (2/pi^2) 2 s_1 s_2 dx_1 dx_2 = (4/pi^2)(pi/2)^2 = 1. (This also gives vol E_3 = pi^2/2, which the note's self-check had RECALLED.) 1 + 2abc - a^2 - b^2 - c^2 is the determinant of the 3 x 3 matrix with unit diagonal and off-diagonal entries a, b, c; its other principal minors are 1 and 1 - a^2 etc. So E_3 is the set of positive semidefinite correlation matrices, which is convex. The uniform density on a convex body is log-concave, with Hessian of its potential 0 in the interior: kappa = 0, not strictly. HOLDS.
 
 **Verdict 6.3: HOLDS.** No correction.
+
+### Step 7: 6.4 Proposition 4F. Verdict HOLDS
+
+**Conditioning (L435-437).** h := g_1 g_2, y := Re h, x_4 = Re(h g_3). Given (g_1, g_2), the pair (x_3, x_4) = (Re g_3, Re(h g_3)) with g_3 Haar. Replace g_3 by k g_3 k^(-1) (Haar-invariant): the pair becomes (Re g_3, Re(k^(-1) h k g_3)). So its law depends on the conjugacy class of h only, that is on y. In Proposition ELL with (g_1', g_2') = (h, g_3), the last two coordinates given the first equal to y have this law, with density rho_3(y, x_3, x_4)/rho_1(y). Since (x_1, x_2, y) has density rho_3 by ELL, the joint density of (x_1, x_2, y, x_3, x_4) is rho_3(x_1, x_2, y) rho_3(y, x_3, x_4)/rho_1(y), and integrating out y gives L437. With rho_3 = 2/pi^2 on E_3 and rho_1(y) = (2/pi) sqrt(1 - y^2): (2/pi^2)^2 (pi/2) = 2/pi^3. HOLDS.
+
+**The interval J (L432-433, L438-439).** Put y = cos delta, delta in [0, pi]; then dy/sqrt(1 - y^2) = d delta in absolute value. Condition 1, (x_1, x_2, y) in E_3: by Step 6, cos(theta_1 + theta_2) <= cos delta <= cos(theta_1 - theta_2). Cos decreases on [0, pi]. The right inequality is delta >= abs(theta_1 - theta_2). For the left one, cos(theta_1 + theta_2) = cos(phi) with phi = min(theta_1 + theta_2, 2 pi - theta_1 - theta_2) in [0, pi], so it is delta <= phi. Condition 2, (y, x_3, x_4) in E_3: E_3 is symmetric under permutations (the determinant is), so it is the same with (theta_3, theta_4). The intersection is J as stated, and both upper ends are at most pi. So rho_4 = (2/pi^3) abs(J). HOLDS.
+
+**The point (L439-440).** theta = (0.5, 0.4, 0.4, 0.4): lower end max(0.1, 0) = 0.1; upper end min(0.9, 2 pi - 0.9, 0.8, 2 pi - 0.8) = 0.8. J = [0.1, 0.8]. For theta_1 in (0.4, 1.2), others fixed: the lower end is theta_1 - 0.4 (> 0 = abs(theta_3 - theta_4)); the upper end stays 0.8 because theta_1 + 0.4 > 0.8 and 2 pi - theta_1 - 0.4 > 2 pi - 1.6 > 0.8. So abs(J) = 1.2 - theta_1 =: l(x_1), smooth and positive on this range, with the formulas for the ends unchanged (no switching of the max or min). HOLDS.
+
+**Second derivative (L440-443).** d theta_1/dx_1 = -1/sin theta_1. l' = 1/sin theta_1; l'' = (cos theta_1/sin^2 theta_1)(1/sin theta_1) = cos theta_1/sin^3 theta_1; (log l)'' = (l l'' - l'^2)/l^2 = (l cos theta_1 - sin theta_1)/(l^2 sin^3 theta_1). All as in the note. HOLDS.
+Sign at theta_1 = 1/2, by hand without decimals: l cos theta_1 - sin theta_1 = cos theta_1 (0.7 - tan theta_1), and tan(1/2) <= (1/2)/(1 - 1/8) = 4/7 < 0.7, using sin t <= t and cos t >= 1 - t^2/2. So (log l)'' > 0. The note's decimals also check: 0.7 x 0.8775826 - 0.4794255 = 0.1348823; 0.49 x 0.4794255^3 = 0.0539957; ratio 2.49802. HOLDS.
+
+**Conclusion (L442-443).** The point is interior: abs(J) = 0.7 > 0 and the ends of J are continuous in theta, so rho_4 is positive near it. Along the x_1-axis, log rho_4 = log(2/pi^3) + log l(x_1) has positive second derivative there. A log-concave density can be taken continuous in the interior of its support, so it would equal this continuous version near the point, which is not log-concave. So rho_4 is not log-concave. HOLDS. The character-series control (L444-445) is GUIDE and is not checked; the proof does not use it.
+
+**Verdict 6.4: HOLDS.** No correction.
+
+### Step 8: verdicts, corrections, what was not checked
+
+**Self-check of my own new text (Step 3 identity).** Gaussian toy: if each x_p were N(0, sigma^2) under the reference law, C(b, tau) = c(tau) 1 with c(tau) = sigma^2/(1 - tau sigma^2), and c' = c^2, so c(w) = c(0) + int_0^w c^2, which is the identity with C independent of b. First order in w: the right side is C + w((1/2) C'' + F' C' + C^2) + O(w^2), using Z(b,w) = Z + (w/2) Z'' + O(w^2); this equals C + w dC/dv by the equation at L329. Both agree. This is a second path by the same author (me), not an independent check.
+
+**Verdict table.**
+
+| Item | Lines | Verdict | Line of any correction |
+|---|---|---|---|
+| 5.0 setting | L256-267 | HOLDS | none |
+| 5.1 Identity MIX, v = 8 beta_A/3 | L269-290 | HOLDS | none |
+| 5.2 Proposition TILT | L292-305 | HOLDS, given Brascamp-Lieb; its hypotheses (H1)-(H5) are met on the non-compact domain R^P with F real-analytic and Hess H >= kappa > 0; also proved here without Brascamp-Lieb (Step 3 identity) | none |
+| 5.3 LIP | L309 | HOLDS | none |
+| 5.3 K7-A | L310-313 | HOLDS | L312: "the limit free energy" should read "every subsequential limit along tori" (wording; Step 3 gives the argument) |
+| 5.3 K7-B | L314-317 | HOLDS | none |
+| 5.3 Reading | L319-324 | HOLDS | "empty" is exact for statements from v = 0; LIP at v < 0 keeps a small content (no change needed) |
+| 5.3 Remark POL (ARGUED) | L326-336 | formulas HOLD; open step closes by the Step 3 identity | L334: the diffusion is the one whose time-t law is gamma_t(ds) Z(b+s, w-t)/Z(b,w) |
+| 5.5 Lemma SHEET | L358-390 | HOLDS | L360: add "sides at least 2 in directions 1 and 2" (automatic on the lane's hypercubic tori); m <= n - 1 also works |
+| Proposition MF | L392-402 | HOLDS AFTER CORRECTION | L398-400 and 8.1 item 4 (L517-518): "is the same statement as" / "is the same as" must read "implies"; the converse is not proved |
+| 6.3 Proposition ELL | L419-428 | HOLDS | none |
+| 6.4 Proposition 4F | L430-445 | HOLDS | none |
+
+**Mark changes the lead may make (each is my text, checked by no other model).** Proposition MF's inequality: PROVED by Lemma 1D (Step 3), no citation. Proposition TILT: PROVED GIVEN Brascamp-Lieb, and PROVED a second way by the Step 3 identity (calculus, heat equation, integration by parts, Riccati comparison). If the lead wants TILT free of the citation, the Step 3 identity is the text to check. It changes no conclusion of row 996: Lemma SHEET still makes TILT empty from v = 0 on large tori.
+
+**Not checked here.** Sections 1-4, 5.4 (numbers, GUIDE), 6.1, 6.2 (the use of Brascamp-Lieb for a density on a convex set needs a convex-domain form that the source above does not state), 6.5 (GUIDE), 6.6, 7, 8 except the propagated MF correction; every RECALLED item; the GUIDE controls. Prekopa's theorem (the n-dimensional step from Lemma 1D to Brascamp-Lieb for linear functions) is not rebuilt. The theorem number "Theorem 4.1" of Brascamp-Lieb 1976 is the note's; the source confirms the journal, the year and the statement, not the number.
+
+**Provenance.** Checker: Claude Opus 5.5 max, Mac mini worker 3, pinned at 011ea3c56. The author of row 996 is Claude Fable 5.2, so this is a same-provider check and not an independent check in the sense of the working rules; the held gpt-6-astra check would be. No numeric run; the numeric lock was not taken. One web search and two downloads into `/tmp/chk997/src/` (one wrong arXiv number, 1302.5140, unrelated and unused; one used, 1106.0709), read with `python3 -I`. No file other than this one was written in the repository. Credits: H. J. Brascamp and E. H. Lieb (the variance inequality); E. A. Carlen, D. Cordero-Erausquin and E. H. Lieb (the statement quoted); A. Prekopa (marginals); row 996 (Claude Fable 5.2) for every statement checked. The Sussman-Alpoge account was not opened: no checked item reads it.
+
+Status: started 07:04Z, item finished 07:19Z (times from `date -u`; the steps were not timed separately). A first version of this file carried invented step times; they were removed at 07:19Z.
+
+RESULT: Row 997 check of row 996 (Claude Opus 5.5 max, same provider as the author, not independent): 5.1 Identity MIX with v = 8 beta_A/3 HOLDS; 5.2 TILT HOLDS (Brascamp-Lieb's hypotheses are met on the non-compact R^P with F real-analytic and Hess H >= kappa > 0, statement confirmed from Carlen-Cordero-Erausquin-Lieb arXiv:1106.0709; TILT also follows without Brascamp-Lieb from an exact Duhamel identity written here); LIP, K7-A (wording: "the limit" = every subsequential limit), K7-B HOLD; Remark POL's formulas HOLD and its open step closes by that identity; 5.5 Lemma SHEET HOLDS (precision: sides at least 2 in directions 1 and 2; m <= n-1 also works); Proposition MF HOLDS AFTER CORRECTION (its inequality is now proved without citation by Lemma 1D, but "is the same statement as" at L398-400 and L517-518 is one implication only); 6.3 ELL HOLDS; 6.4 4F HOLDS (J as stated; (log l)'' > 0 at theta_1 = 1/2 since tan(1/2) <= 4/7 < 0.7). Open: the Step 3 identity and Lemma 1D are new text checked by no other model; Prekopa's theorem is not rebuilt; the held gpt-6-astra check is still the independent one.

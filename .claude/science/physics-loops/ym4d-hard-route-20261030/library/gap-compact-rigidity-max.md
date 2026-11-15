@@ -49,7 +49,7 @@ Grep of `library/gap-*.md`, `library/prior/gap-*.md`, `parts/*.md` for: Kenig, c
 | Limit states of a seeded sequence | `library/gap-seed-limit.md` L140-172, L258-282 | Tychonoff compactness for states on local functions of the lattice at one coupling; every limit state clusters, GIVEN the gap hypothesis (G) | Compactness of the gapped branch, on the lattice at fixed coupling. Not a limit along the trajectory, and not the gapless branch. |
 | Item 29 of the second brainstorm | `library/gap-brainstorm2-max.md` L179, L239, L318 | "either (Z-UNB) holds, or the limit theory contains a massless singlet vector state, that is, an emergent conserved two-form current. Then exclude the second branch for SU(2) (no continuous one-form symmetry survives non-abelian fusion)"; verdict there: "needs a monotone parameter ... equals Theorem R" | The rigidity seed of this row, in one sentence, dropped without a statement. This row states it and tests it (Step 4). |
 | Row 745 literature | `library/prior/gap-lit-rigid.md` | Nguyen, Tanizaki and Unsal 2023 (arXiv:2306.02485): for a gapped 4D theory with Z_N one-form symmetry, the pattern of light flux sectors, under a 0/1 assumption on sector ratios | Rigidity inside the gapped branch (Theorem R of row 742). Not the gapless branch. |
-| Soft exclusion of branch G | row 988 Route 3 (`parts/gap.md` L61-62, L65-66) | set aside; re-judged "too strong" by row 998 6d | The only earlier attempt on branch G by soft means. Its verdict binds Step 4: a class-wide soft statement with no ultraviolet hypothesis is refuted by w_p (Proposition V) and by U(1). |
+| Soft exclusion of branch G | row 988 Route 3, `library/gap-unit-max.md` L231-247 (`parts/gap.md` L61-62, L65-66) | "(a) The second branch is what a scale-invariant infrared limit looks like ... no contradiction follows from the two ends alone"; verdict FAILS at (b); "The order-one input is the exclusion of a gapless scale-invariant branch beyond first passage". Re-judged "too strong" by row 998 6d | The only earlier attempt on branch G by soft means, and the earlier form of this row's conclusion. It has no limit object and no theorem. Its verdict binds Step 4: a class-wide soft statement with no ultraviolet hypothesis is refuted by w_p (Proposition V) and by U(1). |
 | "Rigidity" elsewhere in the lane | `gap-means-max.md` (duality rigidity, Theorem R); `gap-seeddec-max.md` (rigidity of minimal fillings) | other meanings of the word | none |
 
 ### 1.3 Duplicate-attack check (rule 0a)
@@ -234,7 +234,7 @@ Fix the family (Z_j, u_j) and D_0. Let Omega be the set of all limits of admissi
 
 Proof. (a) Omega lies in the product of the intervals [0, C(x)], which is compact and metrisable. Closed: let E_n in Omega tend to E. Enumerate DD^4. For each n choose an index of the admissible sequence of E_n so far out that the rescaled datum is within 1/n of E_n on the first n quadruples, k >= n, and (H1), (H2) hold for abs(m) <= n with 1/n in place of 1/i. These indices form an admissible sequence with limit E. sigma maps the limit of (j_i, k_i) to the limit of (j_i, k_i + 1), which is admissible; the same for k_i - 1. sigma is continuous for pointwise convergence.
 (b) The first sentence is Theorem CE (ii). If (PHYS-SEED) fails, Theorem CE (i)(b) gives an admissible sequence. If it holds at a size l with S_j <= q'/5041, q' < 1, for all large j, then Theorem S gives S_j <= q'^(2^k)/5041 < 1/5041 at the sizes 2^k l, so (H2) fails at every scale for large i.
-(c) If Lambda(sigma E) < Lambda(E) for all E, the continuous function Lambda - Lambda o sigma has a positive minimum delta on the compact set Omega, and Lambda(sigma^n E) <= Lambda(E) - n delta is unbounded below; but Lambda is bounded. The other case is the same for sigma^(-1). Take Lambda(E) = D_E(1); then Lambda(sigma E) = D_E(2).
+(c) If Lambda(sigma E) < Lambda(E) for all E, the continuous function Lambda - Lambda o sigma has a positive minimum delta on the compact set Omega, and Lambda(sigma^n E) <= Lambda(E) - n delta is unbounded below; but Lambda is bounded. This gives E_+. Apply it to - Lambda to get E_-. Take Lambda(E) = D_E(1); then Lambda(sigma E) = D_E(2).
 (d) The closed non-empty sigma-invariant subsets of Omega, ordered by inclusion, have a minimal member (Zorn's lemma; a chain has a non-empty intersection by compactness). Let M be minimal, E in M, and U an open neighbourhood of E. For y in M the orbit of y is dense in M, so M is covered by the open sets sigma^(-n) U, n in Z, and by finitely many of them, n = n_1, ..., n_p. For each t, sigma^t E lies in some sigma^(-n_l) U, so sigma^(t + n_l) E lies in U. The return times have gaps at most 2 max abs(n_l).
 (e) Lambda(sigma^n E) is non-increasing in n and bounded. By (d) there are n_i -> +infinity with sigma^(n_i) E -> E (the forward limit set of E is closed, invariant and not empty, so it is M). So Lambda(E) = lim Lambda(sigma^(n_i) E) = inf over n >= 0, and Lambda(sigma^n E) = Lambda(E) for n >= 0. The same argument at sigma^(-n) E gives all n. Lambda is continuous and the orbit is dense in its closure. QED
 
@@ -261,7 +261,7 @@ Realisations in lattice models (recalled, not rebuilt): the Ising model on Z^4 i
 
 Proof. Lemma PT (a), (c) for each datum, and Theorem CE (b) for the limits. For (i): S_* >= S_*^1 >= 1/5041; D adds; the gap of a product is the least of the two gaps. For (ii): by Lemma Z3, D_j(L) <= 1024 q'^(2^k)/5041 at the sizes from 2^k l on, so D^(j_i,k_i)(b) -> 0 for every b, and Delta_* <= C(x) D_* = 0 by Theorem CE (a). QED
 
-**Proposition NR (no rigidity on torus data; PROVED).** Let CC be any set of eternal data that is closed under pointwise limits and contains the rescaled data of every family of the engine's class (so every condition that defines CC is "kept"). Then CC contains critical elements: the constants log m. If in addition the photon limit exists (A7 with bounded D; recalled), CC contains it and all its sums with other limits. So the statement "CC contains no critical element" is false for every such CC. A rigidity statement must cut the class by a property that the limits of A_(m,eps), of the photon, and of every product with them do not have.
+**Proposition NR (no rigidity on torus data; PROVED).** Let CC be any set of eternal data that contains the limit of every admissible sequence of every family of data in the sense of (E1)-(E3) (so every condition that defines CC is "kept", and is proved from (E1)-(E3) alone). Then CC contains critical elements: the constants log m. If in addition the photon limit exists (A7 with bounded D; recalled), CC contains it and all its sums with other limits. So the statement "CC contains no critical element" is false for every such CC. A rigidity statement must cut the class by a property that the limits of A_(m,eps), of the photon, and of every product with them do not have.
 
 **Verdicts of the three tests named in the row.**
 
@@ -338,4 +338,50 @@ In this object the group is kept: for a U(1) theory the limit law sits on U(1)-v
 - Seed (b): PROVED empty in the blow-down form (Proposition SI); target-equivalent or FAILS in the two-ended forms.
 - Seed (c): stops at the missing object of rows 1011 and 1013 (not attacked, rule 0a).
 - New for the lane's test table: the finite clock model as a theorem-grade comparison family for every argument from the discreteness of the symmetry group or from pi_1.
+
+## 5. Step 5 result (Task 3): the first piece that survives is proved; the rigidity half stops at one lemma
+
+### 5.1 The piece that survives, and its proof
+
+The first piece of the architecture is the compactness step. It survives its tests and it is proved by hand in Section 3: Lemma UF, Theorem CE, Proposition OM, Theorem CR, Lemma PT-inf. The proofs use: A1, A2, A4 (checked in rows 698, 699), Theorem S (checked), Proposition Delta at r = 2 and Lemma Z (lane marks: checked row 709; PROVED GIVEN Proposition Delta), Lemma Z3 and Theorem ZD-c (row 720; lane check row 727), Lemma PT (check 999). They use no run, no measure theory beyond sums of exponentials, a diagonal argument on a countable set, and Zorn's lemma once (Proposition OM (d)).
+
+Points a checker should test first: (1) the tail bound of Step 3 of Theorem CE at the time T/2, and that (T/2, B) is in the domain for large i; (2) that E_0 <= 0, so that the count of levels in Step 1 is right for negative E too; (3) Lemma UF: the strict margin c_S < 1/5041; (4) Step 5: the two constants d_min and 34.11, and that both inequalities read one scale only; (5) Proposition OM (a): the diagonal choice keeps (H1) and (H2); (6) Lemma PT-inf (ii): that Lemma Z3 is uniform in j from the seed of (PHYS-SEED).
+
+**Corollary TRI (a trichotomy with no hypothesis; PROVED given Section 3).** For every family of data with units, at least one of these holds: (I) (PHYS-SEED); (II) (BDD-Delta) fails; (III) there is a uniformly recurrent critical element. (I) excludes (II) (Lemma Z3) and (III) (Proposition OM (b)).
+
+Proof. If (I) and (II) fail, Theorem CE (i)(b) and Proposition OM (d) give (III). QED
+
+For Wilson SU(2) on the account's trajectory this says: the wall is the exclusion of (II) and (III). (II) is the open statement (BDD-Delta) (A6). (III) is (LIOU).
+
+### 5.2 The counterexamples that were built
+
+- The data A_(m,eps) and their limits log m (3.7, PROVED): critical elements exist under the engine's axioms alone.
+- Sums with any bounded limit (Lemma PT-inf (i), PROVED): the critical elements absorb.
+- The limit of Proposition NP's model is the constant log 2 (PT-inf (ii), PROVED given NP's inputs): a contracting history leaves no trace.
+- The finite clock model against seed (a) (4.3; cited, not rebuilt).
+
+### 5.3 The rigidity half: four ways tried, and where each stops (rule 11)
+
+**Way 1, a Liouville lemma from the kept properties of Theorem CE.** Stops at Proposition NR: the constants log m have every kept property.
+
+**Way 2, the centre grading and pi_1 (seed (a)).** The grading is kept and holds for the constants and for the photon. The step "trivial pi_1 forbids an emergent photon" is false for the finite clock model. With "connected" added, the statement has no mechanism left.
+
+**Way 3, a monotone that carries the ultraviolet data (seed (b), Remark MON).** A monotone Lambda would do two things: turn recurrent elements into Lambda-stationary ones (OM (e)), and pass one ultraviolet number to the limit. The engine has one exact monotone, Lemma K (d): the deficit kappa(b) of the ground state does not increase when **one** side b of the box grows and the other sides are fixed (`gap-crux-restate.md` L178). It is the reason Theorem S exists. It is a monotone for the stretch of one side. The blow-down doubles all four sides, and for that map the engine gives only D(2a) <= 16 D(a) (A2) and D(2a) = 16 D(a) - Phi(a). I checked the natural candidates against the photon picture: D, s, z and the slab coefficient are constant on a scale-invariant element, so none of them can be strictly monotone on the class; and any Lambda with Lambda(photon) below the SU(2) ultraviolet value is blind. No candidate on record is above. This is row 1002's result; nothing is added.
+
+**Way 4, an enriched limit in which "generated by SU(2) alone" is kept (4.4).** It needs two statements, both open, neither attacked here:
+
+- (COMPL) Completeness. Along an admissible sequence, every level r of a box with e_r^* finite is seen by block variables: for every eps > 0 there are N and a continuous function F of the N-block variables of the time-zero slice with norm of (psi_r^(i) - F Omega^(i)) at most eps for all large i. (psi_r the normalised eigenvector, Omega the ground state.) This is an ultraviolet regularity statement for low eigenvectors at order-one coupling, uniform in the cutoff. Lane grep for "cyclic" and "completeness": no statement of this kind on record; it is not in `library/open-core.md`. The account's Theorem 0 concerns the tr(F^2) sector on R^4 and holds no eigenvector of a box.
+- (LIOU-c) No complete critical element exists for SU(2). No mechanism: the three seeds are those of 4.3.
+
+So Way 4 is two open lemmas in place of one, and the second is the wall again. It is not proposed.
+
+**The one precise lemma that is left, and why each way failed.**
+
+> (LIOU) Wilson SU(2) on the account's trajectory, with (BDD-Delta), has no uniformly recurrent critical element (definitions of 3.1 and 3.5).
+
+Way 1 failed because the kept properties are those of the engine, and the engine holds for models with two vacua. Way 2 failed because the symmetry data of the limit do not separate SU(2) from models that have critical elements, and emergence of a continuous one-form symmetry is a theorem in a model with none. Way 3 failed because no monotone for the doubling of all sides is known, and the known monotones of field theory are blind. Way 4 failed because it replaces the lemma by itself plus an ultraviolet statement.
+
+### 5.4 A reading from the two-dimensional proofs (reading; sources as read by rows 1007, 1009, 1010, not re-read here)
+
+The two-dimensional O(3) model is the case where the crux is now proved (OpenAI's posted, unrefereed texts; rows 1007-1010). Would this architecture have found that proof? The kept properties of a blow-down limit there are: the global O(3) symmetry, reflection positivity, the exchange of axes. A gapless O(3)-symmetric scale-invariant theory with these properties is believed to exist: the model with topological angle pi, whose infrared limit is the SU(2) level-one conformal theory (Haldane; Affleck; recalled, belief grade for a Euclidean lattice model with these positivity properties). If that is right, soft rigidity fails in two dimensions as well, in the same class. The posted proofs do not argue on a limit. They use a class of finite cells with all bond strengths in [0, b] and an inequality with an explicit gain per scale (row 1009). So the case that was solved was solved by a quantitative step on a class closed under conditioning, and not by a Liouville theorem. This supports the lane's sentence that the missing object in four dimensions is the short step, and it counts against expecting the rigidity half of this architecture to be easier than the wall.
 

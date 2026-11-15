@@ -46,7 +46,7 @@ CORRECT-NO-ADVANCE, WRONG), then only the defects that break something, each wit
 
 ## Progress
 
-- Step 1 done (2026-11-15, after 22:14Z). Next: Step 2, read source Section 6 and run tests (a)-(e).
+- Steps 1-8 done (last write 2026-11-15T22:28Z). The report is in Step 8 and the RESULT line ends the file.
 
 ## Step 2. Tests (a)-(e), run first (W1 order)
 
@@ -253,3 +253,167 @@ source as not re-read; I did not read it either.
 (S-a) example checked: V(y) = y^3 gives G = 9 y^4, zero at 0, positive mean under any law not carried by 0.
 
 Next: Step 7, W1 (i) (Section 4 rows against the check files) and W1 (iv) (6.4 items 1-4, T3, 5.2).
+
+## Step 7. W1 (i): Section 4 status words against the check files; W1 (iv): 6.4, T3, 5.2
+
+### 7.1 W1 (i). Is each status word the check's own verdict?
+
+Check files (source Section 2): 998 = `gap-crux-exercise3-check-astra.md`, 1000 = `gap-d2-inputs-check-astra.md`,
+968 = `gap-avgcurv-check-astra.md`, 970 = `gap-direction2-check-astra.md`, 977 = `gap-tiltproof-check-astra.md`,
+978 = `gap-ladder-check-astra.md`, 988 = `gap-unit-check-astra.md`. All cited lines were opened.
+The checks use HOLDS / HOLDS AFTER CORRECTION / FAILS. Row 1021 maps them to its own words (L336-338):
+stands = HOLDS (after correction); narrowed = holds in a smaller written form; no longer supported = FAILS.
+So no status word is literally the check's word; the question is whether the mapping is faithful.
+
+| Row | Status word in 1021 | Check verdict at the cited lines | Faithful? |
+|---|---|---|---|
+| A1 | narrowed (998 L139, L140, L145, L146, L153) | L139 PT1 HOLDS AFTER CORRECTION; L140 I28 FAILS; L145 KF(d) "separating number" FAILS; L146 KF1 HOLDS AFTER CORRECTION; L153 "(better: w_p)" FAILS | Yes in substance: (i)-(iv) match these lines and L213-219. The check rules on row 998's statements, not on rule W2; "narrowed" is the row's summary. Note: `parts/gap.md` L90 already holds the corrected text and names "Villain U(1) at beta at least 2^14" in the product clause (blame: 1e33bfef1, 2026-11-15 20:15Z, before row 1021 ran). So 7.3's "except that its product clause should name the admitted factor" and W2 (c) are already done. |
+| A2 | no longer supported (1000 L41-43; 998 L151) | 1000 L41 (e) FAILS, L42 (f) FAILS, L43 (line 46) FAILS; L85 "a conditional benchmark warning, not a proved exclusion"; **998 L151: HOLDS AFTER CORRECTION**, "retain the claim as that row's argued restriction on the specified port" | Yes as "no longer supported as a discard test" (check 1000). Incomplete: A2 cites 998 L151 only for the T2 dependence; its own verdict keeps N2 as an ARGUED restriction. This matches `parts/gap.md` L91 ("kept as a belief"). The same applies to 4.3 row 24. |
+| B5 | (a) stands; (b), (c) no longer supported | L329 AVG(a) HOLDS AFTER CORRECTION, L330 AVG(b),(c) HOLDS; L334 "the broader impossibility claim FAILS" and L382-388 "statements about this attempt, not exclusions"; L324 frozen-group inference FAILS, L363-371 | Yes, all three. |
+| B6 | (a) narrowed; (b), (c) no longer supported; (d) narrowed | L213 SUB HOLDS; L197 integral growth inference FAILS; L201 "not a mathematical refutation"; L203, L229 quotient/ABS-flow refutation FAILS; L226 CLASS FAILS; L205, L207 | (b), (c) yes. (a) and (d): check 970 alone gives "not a mathematical refutation" (no longer supported); the narrowing to the supremum form comes from check 977 (B7), which B6's last column says. So "narrowed" is a two-check synthesis, not check 970's verdict. |
+| B7 | D1 stands; D2, CAP, ZERO-CEIL stand after correction; QUOT-CAP conditional | L384 D1 HOLDS; L389 D2 5.5 HOLDS AFTER CORRECTION; L390 CAP, L383 ZERO-CEIL HOLD AFTER CORRECTION; L391 QUOT-CAP HOLDS AFTER CORRECTION with the uniform-in-b hypothesis; L392 589/69, 178859/8211; L395-396 | Yes. |
+| B8 | (a) no longer supported as universal; (b) stands after correction; (c) no longer supported | L386 universal exclusion FAILS (L385 scalar test HOLDS AFTER CORRECTION); L388 R2 HOLDS AFTER CORRECTION; L381 literal identification FAILS (L380) | Yes. |
+| B10 | (a) narrowed; (b) stands as an open premise; (c) confirmed after correction; (d) stands | L452 FLOOR HOLDS AFTER CORRECTION (traced sector; inference to an excluded excitation FAILS); L450 Identity G HOLDS AFTER CORRECTION; 998 L152 HOLDS AFTER CORRECTION; L455 7.1 HOLDS AFTER CORRECTION, L451 ORD real time FAILS | (a), (c), (d) yes. **(b) no**: check 988 says it did not check row 988's direction proposals (L457-458; source 2.10 L233-234 records this). Only Identity G was checked. By the row's own vocabulary (L338), (b) is "not covered" (its identity HOLDS AFTER CORRECTION). |
+| B13 | (a), (b), (c) no longer supported; (d) split | L145, L140, L153 FAILS; L187-189 "X:755-756 and 770 FAIL" for the printed CONTR; L159 HOLDS for the original CAS | Yes. |
+| C1 | narrowed (998 L140, L146, L213-219) | L140 FAILS; L146 HOLDS AFTER CORRECTION; L213-219 domain test (no verdict word) | Yes in substance. "Theorem-grade in the lane for Villain at beta >= 2^14" is not at the cited lines; it is check 998 L95-102 ("relevant prior progress", `gap-tu-retry.md` 198-250), which keeps "the transfer/insertion application" as a named input. "Theorem-grade" should carry that input. |
+| C8 | D2 stands after correction; SUB stands | 977: D2 HOLDS AFTER CORRECTION (L389, RESULT L404); 970 L213 SUB HOLDS; L207 typical-tilt form with a bad set not refuted | Yes. |
+
+Count: eight rows faithful in substance (A1, B5, B7, B8, B13, C1, C8, and A2 with the noted omission);
+one wrong status word (B10 (b): "stands" where the check did not rule); one two-check synthesis labelled
+with one check (B6 (a), (d)). None of these changes the registry of Section 5 or its ranking: LC's
+unblocking rests on A2/A10 (check 1000 L41-43, L85), which is faithful.
+
+### 7.2 W1 (iv). Section 6.4 items 1-4, the verdict on T3, and the reading on (ABS-flow) in 5.2
+
+**Item 1 (L628-640). CORRECT given (K3); ADVANCE.** Redone: for any target slice variance S, a Gaussian chain
+with the bare kernel exists (sinh omega = 1/(2 beta_0 S), c = beta_0 (e^omega - 1)). With S = L^K/(a_+ beta_K),
+(K2) gives omega <= a_+ beta_K/(2 beta_0 L^K); then mu^2 = 2 beta_0 (cosh omega - 1), about beta_0 omega^2, at most
+about a_+^2 beta_K^2/(4 beta_0 L^(2K)): space-like stiffness of order beta_K^2/beta_0 at q of order L^(-K), time-like
+stiffness beta_0 (K1). (K3) then forbids (P1) once beta_0 > 2 a_+ beta_K. Cross-provider agreement: check 1000
+L53-83 builds the same chain (E = (beta_K/beta_0)|p|, covariance about 1/(2 beta_K |p|), "bare kinetic
+coefficient unchanged") and its sigma^2 = 1/(2 beta_0 sinh E) (L65-66) is test (a) by another provider. Check
+1000 used the chain to break an inference; row 1021 adds that the chain fails (P1) in reading (K3). The two
+agree. The last sentence (the independent-level field breaks (ii)) is ARGUED, as marked.
+
+**Item 2 (L641-644). CORRECT; CORRECT-NO-ADVANCE.** The count is made for linear statistics in a gauge-fixed
+chart (row 982 L88, L113); NS shows that ambient linear statistics are not soft. Check 1000 L45-51 makes the
+same point (the colour test is not invariant under the full SU(2) action). Limit, which the source does not
+overstep: linear statistics of a gauge-fixed chart are other functions of the slice, and item 2 says nothing
+about whether some gauge-invariant function is soft.
+
+**Item 3 (L645-651). CORRECT given (E1) and the gap on the gauge-invariant sector; CORRECT-NO-ADVANCE.**
+For mean-zero gauge-invariant f, ||P f||^2 <= e^(-2 E_1) ||f||^2, so EE(f) = ||f||^2 - ||P f||^2 >= (1 - e^(-2 E_1)) Var(f).
+Per unit of s: beta_0 (1 - e^(-2 M a)), about 2 beta_0 M a. This bounds interpolant energies only, not the
+constants gam_s, so it does not conflict with check 982 L63-67 (no lower bound on the integral of gam_s from E_1).
+"The gap restated" is the right label.
+
+**Item 4 (L652-654). Direction CORRECT; the mark over-reads. CORRECT-NO-ADVANCE with a label defect.**
+PROVED part: all terms D_k D_k^T/rho_k are positive semidefinite, so the TEL output 1/||sum_k D_k D_k^T/rho_k|| is
+at most rho_K/||D_K||^2. The size a_- beta_K a/l_unit needs ||R_0 D_K||^2 of order L^K, which row 982 L113 marks
+ARGUED; check 982 (`gap-hcphys-check-astra.md` L80) holds the use "AFTER CORRECTION as a conditional benchmark
+only", and asks for the full-action rate lambda_k beta_k in place of a_- beta_k. So item 4 is "PROVED for the
+structure, ARGUED for the size", not "PROVED in row 982; check 982 HOLDS". It is a warning; nothing rests on it.
+
+**Verdict on T3 (L656-658). CORRECT given (K3); ADVANCE (a filter narrowed).** "FAILS as a discard test" means:
+no M' in K with H true and T false is on record, and in the Gaussian class there is none once
+beta_0 > 2 a_+ beta_K, given (K3). It does not mean that T3's conclusion is false; a non-Gaussian benchmark is
+not excluded, and the source says so ("No model ... is on record"). Before row 1021, `parts/gap.md` L91 already
+had N2 UNSUPPORTED after check 1000; row 1021 adds the Gaussian-class reason and moves T3 to a warning on TEL.
+
+**Reading on (ABS-flow) in 5.2 (L476-482). Rewriting CORRECT; conclusion CORRECT as labelled (ARGUED); the
+stated reason is incomplete. CORRECT-NO-ADVANCE.**
+- Redone at t = 0 from `gap-avgcurv-max.md` L373-375, with mu' = F nu_s (E F = 1), v = grad log F, C_phi the
+  covariance of J_(b,phi): grad F^(1/2) = F^(1/2) v/2 gives LHS = (1/2) E_mu'[v^T C_phi v],
+  2 kap E|grad F^(1/2)|^2 = (kap/2) E_mu'|v|^2, (1/4) E[F |Hess log F|^2] = (1/4) E_mu'|grad v|^2. Times 2:
+  E_mu'[v^T (C_phi - kap) v] <= (1/2) E_mu'|grad v|^2. Same as the source.
+- Conclusion "the supremum argument of D2 does not transfer": correct as a statement about D2's proof, which
+  evaluates C_phi at single pinned tilts, while (ABS-flow) averages over a smooth gauge-invariant density.
+  Consistent with check 970 L203, L229 and C8.
+- Reason given ("that part is charged with the same kap on the right"): incomplete. kap is subtracted from C_phi
+  pointwise, so the kap term alone does not block a transfer where C_phi > kap (D2's sheets give exactly that).
+  What blocks the direct transfer is the localisation cost (1/2) E_mu'|grad v|^2 together with the gauge
+  invariance of F (no linear log F, Lemma INV). One-line illustration (ARGUED, not a bound on kap): for
+  F = e^(lambda G), v = lambda grad G vanishes at the maximum of G where mu' concentrates, and near it
+  E|v|^2 grows like lambda while E|grad v|^2 grows like lambda^2. The source's own label "ARGUED; not a bound on
+  kap" is right.
+
+### 7.3 Two notes for the lead on the W2 edits (outside (i)-(iv); one line each)
+
+- W2 (a) proposes "A row on level convexity must name ... and the pointwise bound (R-pt)". (R-pt) is the
+  hypothesis (ii) of Lemma LIFT, the first open step of the attack in 6.5, not a necessary condition for every
+  level-convexity row. Suggested wording: "... with a unit-level inequality; through Lemma LIFT this needs the
+  pointwise bound (R-pt)". Also cite 6.4 as "given the reading of (P1) in (K3)".
+- W2 (c) is already in `parts/gap.md` L90 (see A1).
+
+## Step 8. Report
+
+**Provenance.** Claude Opus 5.5, max effort, Mac mini worker 2; source `library/gap-registry-after-checks-max.md`
+at commit f6c0017dc (row 1021, written by Claude Fable 5.2 max). Same provider as the author: this is one
+reading by a different model of the same provider, not a cross-provider check and not an audit. No
+subagents, no numeric run, no commit or push. One public source was read: CA-II at 31a47c543775, lines
+80025-80048 and 80150-80180 (Sussman and Alpoge, with Claude and Codex as authors of their text).
+
+**Verdict per statement.** (Words: ADVANCE = correct and it changes the lane's record; CORRECT-NO-ADVANCE =
+correct, record unchanged; WRONG = a line fails.)
+
+| Statement (source line) | Verdict | Note |
+|---|---|---|
+| Test (a) sigma^2 = 1/(2 beta sinh omega) | passes | three routes; also check 1000 L65-66 (other provider) |
+| Test (b) (1 - e^(-omega))/sinh omega = 2/(e^omega + 1) | passes | |
+| Test (c) gauge invariance of the path law; side 3 | passes | side 2 really fails |
+| Test (d) (E1) used for gauge-invariant f only | passes | L550 states it for all f; also true |
+| Test (e) (K3) a fair reading of (P1) | passes as a reading | quote at hcphys L46 faithful to CA-II 80163-80172; the 2 a_+ threshold is model-dependent |
+| Lemma S1 (L557) | CORRECT-NO-ADVANCE | |
+| Proposition FR (L562) | CORRECT-NO-ADVANCE (given (E1)) | at T = 1 it is (E1) |
+| Lemma EL (L573) | ADVANCE | one unstated step (tau_k free of l, by lattice symmetry on a cubic box) |
+| Corollary NS (L588) | CORRECT-NO-ADVANCE | about ambient linear statistics only |
+| Lemma KL (i)-(iii) (L594) | ADVANCE | |
+| (K1), (K2), (K3) (L616-620) | CORRECT (part of KL's ADVANCE) | (K3): edge case p = 0 excluded by mu^2 > 0 |
+| 6.4 item 1 (L628) | CORRECT given (K3); ADVANCE | last sentence ARGUED, as marked |
+| 6.4 item 2 (L641) | CORRECT-NO-ADVANCE | |
+| 6.4 item 3 (L645) | CORRECT-NO-ADVANCE (given (E1)) | the gap restated |
+| 6.4 item 4 (L652) | CORRECT-NO-ADVANCE; mark over-reads | size is ARGUED, not PROVED (defect 2) |
+| Verdict on T3 (L656) | CORRECT given (K3); ADVANCE | "FAILS as a discard test" = no valid benchmark on record; T3's conclusion is not shown false |
+| 6.5 arithmetic after LIFT; averaged statement (L671-681) | CORRECT (given (E1) and the stated hypothesis) | |
+| Lemma LIFT (L665) | CORRECT-NO-ADVANCE | |
+| Lemma NB (L683) | CORRECT-NO-ADVANCE | ambient gradient; tangential version has the same ratio |
+| 5.2 reading on (ABS-flow) (L476) | CORRECT-NO-ADVANCE as ARGUED | reason incomplete (defect 3) |
+| Section 4, ten rows of W1 (i) | eight faithful in substance, B6 (a)/(d) a two-check synthesis, B10 (b) wrong word | table in 7.1 |
+
+**Stop rule.** No WRONG in Lemma KL or Lemma EL. The rule was not triggered.
+
+**Defects (ranked by what each breaks; none breaks a PROVED statement, the T3 verdict or the ranking).**
+1. B10 (b) (source L372): "stands as an open premise" is not a check verdict. Check 988 L457-458 did not check
+   row 988's direction proposals (the source says so at L233-234). By the source's own vocabulary (L338) it is
+   "not covered"; only Identity G HOLDS AFTER CORRECTION (L450).
+2. 6.4 item 4 (L652): "PROVED in row 982, Lemma TEL; check 982 HOLDS" over-reads. The bound
+   TEL output <= rho_K/||D_K||^2 is proved; the size a_- beta_K a/l_unit rests on ||R_0 D_K||^2 of order L^K, ARGUED in
+   row 982 L113 and held only "as a conditional benchmark" by check 982 L80 (which also asks for lambda_k beta_k).
+3. 5.2 (L478-480): the reason "charged with the same kap on the right" does not by itself block a transfer of
+   D2; kap is subtracted from C_phi pointwise. The block is the localisation cost (1/2) E_mu'|grad v|^2 and the
+   gauge invariance of F. The conclusion and its label ARGUED stand.
+4. B6 (a), (d) (L368): "narrowed" uses check 977 (B7); check 970 alone says "not a mathematical refutation"
+   (L201) and FAILS the growth inference (L197).
+5. A2 (L349): check 998 L151's own verdict is HOLDS AFTER CORRECTION, keeping N2 "as that row's argued
+   restriction"; A2 cites that line only for T2. (Same for 4.3 row 24.)
+6. C1 (L412): "theorem-grade in the lane for Villain at beta >= 2^14" comes from check 998 L95-102, which keeps
+   "the transfer/insertion application" as a named input.
+7. 7.3 (L776-777) and W2 (c) (L815): already done; `parts/gap.md` L90 names "Villain U(1) at beta at least 2^14"
+   since 1e33bfef1 (20:15Z), before row 1021 ran.
+8. W2 (a) (L812-813): "must name ... the pointwise bound (R-pt)" turns the first open step of one attack (the
+   LIFT route) into a requirement for every level-convexity row. Repair (unproved wording): "through Lemma
+   LIFT this needs (R-pt)"; and cite 6.4 "given the reading of (P1) in (K3)".
+
+**What this check does not cover.** Sections 1-3 and 5.1 of the source beyond the rows W1 names; rows of
+Section 4 outside A1, A2, B5, B6, B7, B8, B10, B13, C1, C8; the derivation of (E1) itself (taken from row 982
+and its check, as the source does); CA-I Def 1.5 (the source's reading in Lemma NB); a derivation of (K3)
+from the literal (P1) (not attempted: no new attack). The ARGUED transfer of the qualitative clause of 6.4
+item 1 to the literal (P1) in Step 2 (e) is mine and unproved.
+
+## Status log
+
+- 2026-11-15T22:14Z: file created with plan (Step 1).
+- Steps 2-7 appended in order (tests; EL and NS; KL; S1 and FR; LIFT and NB; Section 4 rows and 6.4/5.2).
+- 2026-11-15T22:28Z: Step 8 (this report) written.
+
+RESULT: Row 1023 (Claude Opus 5.5 max, Mac mini worker 2; same-provider check of row 1021 W1, not cross-provider; no numeric run, no subagents): tests (a)-(e) pass ((e) only as a reading: (K3) keeps the two-sided isotropic shape of (P1), CA-II 80163-80172 quoted faithfully, but its frequency form and threshold 2 a_+ are not derived from (P1)); Lemma EL and Lemma KL with (K1)-(K3) redone by hand, no WRONG, both ADVANCE (stop rule not triggered); Lemma S1, Proposition FR (given (E1)), Corollary NS, Lemma LIFT, Lemma NB CORRECT-NO-ADVANCE; 6.4 items 1-3 correct (item 1 given (K3)), item 4 correct in direction but its size is ARGUED not PROVED; the verdict "T3 FAILS as a discard test" is CORRECT given (K3) and means no valid benchmark is on record, not that T3's conclusion is false; the 5.2 (ABS-flow) rewriting is correct and its ARGUED conclusion stands, with an incomplete reason; Section 4: eight of the ten named rows match their check lines in substance, B6 (a)/(d) is a two-check synthesis, and B10 (b) "stands" is not a check verdict (should be "not covered"); W2 (c) is already in parts/gap.md L90, and W2 (a) should not make (R-pt) a requirement for every level-convexity row. Still open: (R-pt), a unit-level log-Sobolev inequality for a gauge-invariant slice variable, a derivation of (K3) from the literal (P1), (W), (LIOU), (BDD-Delta), the seed.

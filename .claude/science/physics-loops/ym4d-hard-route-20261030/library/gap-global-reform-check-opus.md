@@ -16,6 +16,7 @@ independent cross-provider check. Pinned at commit 0d3b45d91. No commit, no push
 - 20:56Z: step 5 done (Lemma MC (a)-(c), test (e)): MC HOLDS; test (e) PARTLY: the 'void solution' meets the words of row 1013's (i) only in the measure sense of 'global'; scope note on CEN+'s reading sentence.
 - 20:59Z: step 6 done (Lemma HW (i)-(iii) with the mixed coefficient; Proposition LG with test (d)): both HOLD; one cosmetic note on LG's leading-order display.
 - 21:02Z: step 7 done (Identity HAM1; Lemma GT (ii), (iv); Identity CUBE): all HOLD; one completeness note on GT (ii). No numeric run in this check.
+- 21:05Z: step 8 done (anchors re-printed and corrected; verdict table; RESULT). Check finished.
 
 ## Plan (W1 of the checked file, L1004-1018; at most eight steps; one step per response, result appended before the next)
 
@@ -162,7 +163,10 @@ Redone line by line.
 - **The failing line (L765-766):** "the right side of (BH) is at least 3 (1 - 2^(d-2) e(b))^2/(2^(d-2) e(b))". The step
   uses E t >= 1 - 2^(d-2) e(b) and then squares it, which is valid only when 1 - 2^(d-2) e(b) >= 0. Without that
   qualifier the display is false: as b -> 0, e(b) -> W, so the display tends to 3 (2^(d-2) W - 1)^2/(2^(d-2) W), a
-  positive box-size number, while the right side of (BH) tends to 0 (E_free t_p -> 0). **Correction:** "for every b
+  positive box-size number (2^(d-2) W >= the number of plaquettes >= 3), while the right side of (BH) tends to 0
+  (E_free t_p -> 0). The display carries no range of b of its own (the b >= 1 of the sentence before it belongs to
+  the bound on e(b)). GUIDE only, not a proof: on the 3D control box of 7.3 (d = 3, W = 24) at b = 1, E t = 0.125
+  gives 2 e(1) about 42, so the display would be about 120 against a right side of about 0.13. **Correction:** "for every b
   with 2^(d-2) e(b) <= 1, the right side of (BH) is at least 3 (1 - 2^(d-2) e(b))^2/(2^(d-2) e(b))". Since
   e(b) <= (16 W + 4.92 L + 3 L log b)/b -> 0, the qualifier holds for all large b, and the statement of the theorem
   (growth to infinity at least like b/log b at a fixed box, constants depending on the box through W and L) follows
@@ -469,3 +473,59 @@ gauge transformation of V; Re(e^(theta a)(v_0 + v)) = cos(theta) v_0 - sin(theta
   configuration with onto differential. Correct. U(1): the outward face angles sum to 0 mod 2 pi (each link twice
   with opposite signs). Correct. The Reading after the proof (fibre count on the 4D torus) is labelled ARGUED and
   is not checked.
+
+## 8. Step 8: verdicts, what was not checked, RESULT
+
+### 8.1 Verdict table (W1's order; anchors are lines of `library/gap-global-reform-max.md` at 0d3b45d91, re-printed)
+
+| W1 item | Statement (anchor) | Verdict | Failing line and correction |
+|---|---|---|---|
+| test (a) | BH: psi a function of the pin; B = a d lambda supported on the boundary links at z | YES / YES | - |
+| test (b) | AV: pin law under E_free is Z_c(omega)/Z_free with the weights w_p | YES | - |
+| (i) | Identity AV (L693-707) | HOLDS | - |
+| (ii) | Theorem BH Steps 1-3 (L732-738) | HOLD | add one line: E_free psi^2 = (2/3) E(1 - t^2) > 0 before dividing |
+| (ii) | BH Step 4, the two expansions (L739-744) | HOLDS | - |
+| (ii) | BH Step 5, four gauge averages, 2 E t and (2/3) E(1 - t^2) (L745-751) | HOLDS | - |
+| (ii) | BH Step 6, edge link and positivity (L752-759) | HOLDS | - |
+| (ii) | BH Step 7, the constants (L760-766) | HOLDS AFTER CORRECTION | L765-766: the final display needs "for b with 2^(d-2) e(b) <= 1" (it squares E t >= 1 - 2^(d-2) e(b)); without it the display is false for small b. The growth like b/log b is unaffected |
+| (ii) | Theorem BH as a whole (L719-766) | HOLDS AFTER CORRECTION | the two items above; (BH), constant 6, positivity for every b > 0 and the no-curl-bound conclusion stand |
+| (iii) | Corollary AV2 (L708-717) | HOLDS | - |
+| (iii) | Corollary BH2 (L768-783) | HOLDS AFTER CORRECTION | L770: the corner twist at x + nu is - theta_3, not theta_3; only squares enter, nothing downstream changes. Needs only WN (i) and the cross-term step of WN (iii), both redone here |
+| (iv) | Lemma CEN+ Steps 1-4, proper and improper cases, lattice statement (L446-489) | HOLDS | test (c): YES, M ranges over SU(2) |
+| (iv) | CEN+ reading "no hidden rigid symmetry of any kind" (L484-485) and the (R-a) status line (L657) | HOLDS AFTER CORRECTION | the lemma assumes every plaquette trace is kept; a symmetry of the measure is weaker; add that hypothesis to the two sentences, or the bridge sketched in 5.3 (checker's sketch, unchecked; invertible maps only) |
+| (v) | Lemma MC (a)-(c) (L506-521) | HOLDS | domain remark: {Sigma_l != 0} has full measure iff some beta_p > 0 at l; extend by the identity |
+| test (e) | Lemma MC as a reading of row 1013's condition (i) (6.2, L645-646) | PARTLY | MC meets the words only with "global symmetry" read as "symmetry of the measure"; row 1013 (L183) used "global" in the physics sense, which MC (a local invariance, L525-526) does not meet. Suggested wording in 5.2 |
+| (vi) | Lemma HW (i)-(iii), mixed coefficient (L307-324) | HOLDS | - |
+| (vii) | Proposition LG: moment rule, trace 4 Re(U_gamma) cos(eta(gamma)), kappa^2 L/8, kappa^4/64 (L331-346) | HOLDS | cosmetic, L349: write sum_p E_YM[t_p] (d eta)_p^2 unless E t_p is p-independent |
+| test (d) | LG: left and right multiplications commute; sign of the twist | YES / YES | - |
+| (viii) | Identity HAM1 (L566-576) | HOLDS | - |
+| (ix) | Lemma GT (ii), (iv) (L838, L843-850) | HOLD | wording of (ii): "the two legs of p that are not links of alpha" also covers plaquettes at a turn of alpha; measure with all links integrated (or E avoiding pinned links) |
+| (x) | Identity CUBE: density, r(c) = 2/(3 pi^2), Hessian - (1 + 12/pi^2), Sard consequence (L857-874) | HOLDS | - |
+
+**Stop rule.** No statement of 7.1-7.2 is WRONG; the rule did not fire, and every W1 item was done.
+
+### 8.2 Read in passing (not in W1's redo list; checked only as stated)
+
+Lemma AUX (a)-(c), Identities H2 and H3, Lemma REM's displayed step, and the PROVED part of 7.4 (a): with
+lambda the indicator of x + mu, delta_p(B) = n_x - Ad(U_1) n_(x+mu) = D_(l_1) n, so the hypothesis gives D_l n . s_p = 0; if D n = 0
+on every link then Ad(U_p) n_x = n_x around every plaquette, so s_p is parallel to n_x, which contradicts the
+spanning (this last step is elementary and does not need Lemma FR). All correct as stated.
+
+### 8.3 Not checked
+
+The ARGUED items (6.2 as a filter, 6.3, the summed-action part of 7.4 (a), the size-uniform growth "of order b S",
+the Readings after Lemma MC, Proposition LG, Lemma GT and Identity CUBE, the d = 5 and Dobrushin sentences of
+3.1); the candidates of 3.2-3.6, 4.4, 4.6 and Section 5; the two GUIDE runs (7.3, 7.6; a second run of the same
+scripts would not be an independent check); the literature lens and the registry. No numeric run was made in this
+check. This check is same-provider (Claude Opus 5.5 checking Claude Fable 5.2); the file asks for a cross-provider
+check, which the lead may still add.
+
+### 8.4 For the lead (W2 and the record)
+
+- Theorem BH stands after a one-line correction, so W2's step "family G1 of row 1011 is retired by proof for
+  homogeneous strengths" is supported by this check (same-provider).
+- Corrections to carry into the checked file or `parts/gap.md` when the lead edits them: the qualifier of BH Step 7;
+  the positivity line of BH Step 2; the sign at L770; the hypothesis "keeps every plaquette trace" in L484-485 and
+  L657 (or the bridge of 5.3, after its own check); the wording of 6.2 on Lemma MC (5.2 above).
+
+RESULT: Check W1 of row 1016 (same-provider, Claude Opus 5.5 max on Mac mini, no numeric run): Identity AV, Corollary AV2, Lemma CEN+ (both cases and the lattice statement; test (c) yes), Lemma MC (a)-(c), Lemma HW (i)-(iii) with the mixed coefficient, Proposition LG (moment rule, trace 4 Re(U_gamma) cos(eta(gamma)), kappa^2 L/8, kappa^4/64; test (d) yes), Identity HAM1, Lemma GT (ii), (iv) and Identity CUBE (r(c) = 2/(3 pi^2), Hessian -(1 + 12/pi^2)) HOLD; Theorem BH HOLDS AFTER CORRECTION (Step 7's last display needs 2^(d-2) e(b) <= 1, Step 2 needs E psi^2 > 0; (BH) with constant 6, positivity for every b > 0, no pin-uniform curl bound, growth like b/log b all stand), Corollary BH2 HOLDS AFTER CORRECTION (sign of the x + nu corner twist, harmless); test (e) PARTLY (Lemma MC meets row 1013's condition (i) only with "global" read as "symmetry of the measure", not in row 1013's physics sense), and the reading "no hidden rigid symmetry" needs CEN+'s hypothesis or the sketched bridge; no WRONG, stop rule not fired. Open: a cross-provider check; the ARGUED items of row 1016 (6.2 as a filter, the summed-action form of 7.4 (a), growth of order b S); the bridge of 5.3 (unchecked); (W) and the wall, untouched.

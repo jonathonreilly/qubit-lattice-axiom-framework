@@ -54,3 +54,32 @@ the two block errors; REFUTED if g - 2 sigma_g > 1.25 and no single step shows a
   autocorrelation of the per-sweep series reported as a check. If tau_int exceeds a twentieth of the block length, the side is marked UNDER-SAMPLED.
 - Lattice sums G_S and thresholds lam_* are recomputed in the script (floating, GUIDE) and compared with row 977's values.
 
+## Step 2. Machine state, lock, efficiency rules (done 00:44Z)
+
+- `memory_pressure`: 70 percent free at start. Numeric lock: `python3 scripts/lab_ops.py numeric-lock acquire --holder lane980-pinsheet-guide-w2`
+  returned status acquired, holder_id lane980-pinsheet-guide-w2 (mine), expires 2026-11-15T10:44Z. One job at a time, BLAS threads 1, `nice`,
+  RSS stop at 2 GB inside the program (lattice at S = 24, T = 48 is about 85 MB). No process pool.
+- Repo search for prior work on these runs: grep of FINISH.md and library/ for `gap-pinsheet` finds only row 980 itself and row 977's
+  proposal (gap-tiltproof-max.md 290, 413). Row 973's `lane973` scripts (sg2lab.py, a half-space slab with a frozen slice) are a different
+  geometry; I wrote a new simulator rather than modify them. Not an open lemma, so no open-core check is needed: this is a GUIDE row.
+
+## Step 3. Simulator and its validation (GUIDE; done 00:45Z)
+
+Files: `library/guide/lane980/pinsheet.c` (SU(2) Wilson, Kennedy-Pendleton heat bath + 4 over-relaxation sweeps per sweep, frozen-link
+mask for modes P1 and P3; compiled to /tmp, binary not kept), `analyze.py` (16-block errors, Sokal-window tau_int, jackknife xi),
+`run.sh` (sequential driver with the memory check). Data in `library/guide/lane980/data/`.
+
+Validation (each is an independent check of the update, not of the criteria):
+- Unfrozen 8^4, beta 2.3, 300 sweeps: plaquette 0.60266 +- 0.00030; the large-volume value at beta 2.3 is about 0.6024 (RECALLED, not re-read). Agrees.
+- Unfrozen 4^4, beta 0.2, 2000 sweeps: plaquette 0.049935 +- 0.00026 against the leading strong-coupling value I_2(0.2)/I_1(0.2) = 0.049917. Agrees.
+- P1 pilot, S = 8, T = 16, 2000 sweeps (seed 21): E[a_0^2] = 0.2476 +- 0.0029, the value 1/4 forced by the plane-wise O(4) symmetry of
+  Lemma D1(iii). Agrees. Pilot R_8 = 42.23 +- 0.02, tau = 0.7514 +- 0.0002, xi_2nd = 7.8 (about the side). Production numbers in Step 4.
+- Speed: about 70 ns per link update on the M4 (one core).
+
+Lattice sums (floating, GUIDE; agree with row 977 5.5 and 10.1): G_8 = 0.37929, G_12 = 0.44405, G_16 = 0.48992, G_24 = 0.55452.
+Thresholds lam_* = 4A(1/4 - G_S/beta): 21.78, 32.79, 37.88 (and 20.52 on side 24, not a criterion). P3 thresholds G_S/beta: 0.1649, 0.1931, 0.2130.
+
+Production plan (fixed 00:45Z, before any production data): P1 sides 8, 12, 16, 24 with T = 2S, 500/500/500/400 thermalisation sweeps
+from the cold start, 10000/8000/5000/2500 measured sweeps; P3 sides 8, 12, 16 with 10000/8000/5000. One chain per side (seeds in run.sh).
+Extra check added now: the infrared bound itself, Ghat^e(p_1) <= 1/(2 beta E(p_1)) (row 977 5.3), per component, from the p_1 data.
+

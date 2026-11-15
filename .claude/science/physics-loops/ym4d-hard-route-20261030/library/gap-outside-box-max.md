@@ -298,3 +298,11 @@ Twist classes k in Z_2^6 (k_(mu nu) for mu < nu), partition functions Z^k(n) and
 Proof. (a) is the split of a twist into its planes through mu (flips) and the others (the operator), `gap-assume-opus.md` L494, with Lemma A for the positive operator. For the last sentence write Tr(T^j C) = lambda_0^j (1 + S_even(j) - S_odd(j)); the top eigenvector is even. (b): a plane twist is a product of flips on a stack of plaquettes that the plane (mu, nu) meets once per period; a torus with side j n_mu is a j-fold cover in direction mu, and the pulled-back class is j k_(mu nu). In operator form: Tr((T^(n_mu) C)^j) and C^2 = 1. (c): if mu and nu are clean then k_(mu rho) = k_(nu rho) = 0 for all rho, and only the entry of the complementary plane is free. (d) is immediate. QED
 
 Reading. The thin twisted torus (row 842, ideas 31 and G7 of row 858) has an engine in its two long directions only. "No monotonicity in n is known" (`gap-brainstorm-max.md` L404) has this structural reason behind it: the twisted plane is exactly the pair of directions where the engine's traces lose their sign.
+
+### 6.4 A guard run for Lemma LYP (a run can refute or guide; it proves nothing)
+
+Pre-registered before the run (2026-11-15, before any output was seen). Purpose: catch an algebra slip in the three formulas of 6.1 and in part (b). Script and output: a scratch folder under /tmp (path in the log line below); under the numeric lock; memory free 69 percent at start.
+
+- R1 (formula). For SU(2) at beta = 1, kappa = 0.7 (real) compare the series of 6.1 with a direct Monte Carlo integral over four Haar-random unit quaternions (2 x 10^6 samples). PASS reading: agreement within 4 standard errors. FAIL reading: a disagreement above that (then the Schur step or a coefficient is wrong).
+- R2 (part (b)). For beta = 1 evaluate Z_G(1, i y) on the grid y = 0, 0.01, ..., 40 for U(1) and SU(2). PASS: the minimum is positive. FAIL: a value <= 0 (then (b) is false as written).
+- R3 (part (c)). For beta = 1 search a zero by Newton iteration started off the axis near i j, j the first positive zero of J_1 (SU(2)) or of J_0 (U(1)). PASS: a zero with |Re kappa| > 10^(-3) and |Z| < 10^(-25) there. FAIL: no such zero found from five starting points (this would not refute (c), which is a proof of existence; it would send me back to the formulas).

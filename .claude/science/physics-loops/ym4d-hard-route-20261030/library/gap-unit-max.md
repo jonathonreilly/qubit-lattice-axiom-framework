@@ -26,6 +26,9 @@ OPEN, RECALLED (a literature statement quoted, not rebuilt here), GUIDE (numeric
 
 - 2026-11-15T00:45Z: session start; row 988 read (FINISH.md line 1065); output file created. No earlier run of this
   item exists at the pinned commit (`library/gap-unit-max.md` and `library/guide/lane988/` were absent).
+- 2026-11-15T01:30Z: Steps 1 to 3 written (the first response was lost at the output limit; work redone in small steps).
+- 2026-11-15T01:37Z: Steps 4 to 8 written; all eight steps of the plan are done. No script or data was produced, so
+  `library/guide/lane988/` was not created. The lease above may be released.
 
 ## Step 1. Scope, object, goal, duplicate check
 
@@ -211,8 +214,9 @@ value. This differs from Theorem D (f), whose path runs through isotropic strong
 
 Attack on the path. Two inputs would be needed.
  (i) A seed in the time direction for small s, uniform in the box. One-link influence is small in total variation:
-     changing one link of U changes the density of the next slice by a factor in [e^(-6 s), e^(6 s)] (PROVED: one
-     factor k_s in [e^(-2s), e^(s)] changes, and the normalisation absorbs the rest). But the changed law can differ on
+     changing one link of U changes the density of the next slice by a factor in [e^(-4 s), e^(4 s)] (PROVED: one
+     factor e^(-s (1 - (1/2) tr)) in [e^(-2s), 1] changes inside the gauge average, so the kernel changes by a factor in
+     [e^(-2s), e^(2s)], and so does the normalising constant). But the changed law can differ on
      all links, through the correlations of the slice law nu_0, the three-dimensional theory at the unit coupling. A
      volume-free rate needs s times a susceptibility of nu_0 below one. That is a mixing statement for three-dimensional
      SU(2) at weak coupling: OPEN, and not in the account.
@@ -257,3 +261,109 @@ massless floor (Route 1), a path that still crosses the band and needs a three-d
 soft exclusion of the gapless branch (Route 3). No counterexample to (U1) or (U2) was found: both are consistent
 with a glueball gas (X about |B| t^(-3) for t below the correlation length, exponential beyond it).
 
+## Step 7. Rows 720, 970, 975-986 read; per approach, is it already there
+
+Read in full: rows 720, 970, 975, 976, 977, 982. Read as head plus full RESULT text: rows 978, 979, 981, 983, 984,
+985, 986. Row 980 has no result yet (brief only). Also read after the attack: `gap-skeleton-max-b.md` L304-330
+(Corollary 4, Lemma HM, the crux (BD) of Route Z) and `gap-skeleton-final.md` L133.
+
+| Approach or route of this file | Already there? | Where |
+|---|---|---|
+| A, hypercube reduction, (A1)-(A4), (Y-SEED) | YES, all of it, stronger | Lemmas K, X, E, Theorem S (rows 697-699); Theorem D (b), (f); Proposition Delta (row 708, checked 709); Lemma Z, Theorems ZD, ZD-c, Corollary Z4 (row 720); Corollary CU (row 978) |
+| B and Route 1, twisted or flux-projected seed, marginal engine | YES | row 720 Part 2: "every step-scaling coupling ... and every twist ratio holds the flux half at most and fails at a point with two confining phases"; P1 of row 712 (14.8 correlation lengths at threshold 1/1650; my 17.04 is the same floor at 1/5041); SMALL-BOX; ideas 8, 15, 31 |
+| C, orbit-space curvature | YES | ideas 18, G2 (row 876); rows 863, 957, 968; Theorem QUOT of row 970; the supremum forms are refuted by Theorem D2 (row 977, checked 979) |
+| D, purity / Renyi-2 | YES | row 982 Route 2 (d), (e); Lemma RENYI of row 975 (S_2 below 0.439 gives S below 3/10; photon S_2 at least 5.06) |
+| E, operator comparison | in kind | Lemmas SVD and VOL of row 975 (a gap alone misses the seed by a volume factor) |
+| Z, zeros in complex beta with harmonic measure of a strip | YES, including the width | `gap-skeleton-max-b.md` Theorem LP, Lemma HM, Corollary 4; its line "w_inf = 11/(6 pi) = 0.584 for SU(2) ... |Im(1/g^2)| < pi b_0" is the number I derived again; the periodic torus fails it (zeros of the 4^4 lattice at Im beta 0.18 to 0.22, `gap-skeleton-final.md` L133), which is why Route Z moved to boxes with free walls ((ZF_B), rows 677, 681) |
+| G and Route 2, anchor at beta_t = 0 | the anchor NO (greps: "beta_t = 0", "temporal coupling", "anisotrop" over `library/gap-*.md`); the failure YES | idea 32 of row 859 is the opposite line beta_s = 0; the failure (ii) is (NOCRIT) of row 709 on another path, as row 978 found for every carry in the coupling |
+| Route 3, exclude the gapless branch | YES | row 720 Part 4: "Carrying the T0 chain past first passage to order-one coupling is the crux itself"; Corollary Z4; K7 = Proposition V of row 708 |
+
+So seven approaches written blind from the object all landed on existing rows. The three routes of row 982 and the
+three of this file fail at the same place seen from six sides.
+
+### 7.1 Two small items that I did not find in the lane (each to be checked before any use)
+
+**Lemma ORD (PROVED given two RECALLED classical facts: analytic perturbation of a simple isolated eigenvalue;
+a kernel entire in beta with smooth values gives a trace-class-valued analytic family).** For SU(2) Wilson on a
+periodic box B with all sides at least 4 and every t >= 1, S(t; B) is analytic in beta near 0 and has a zero of order
+at least 4t there. The same
+holds in beta_t at fixed real beta_s.
+Proof. K_beta = sum over R of rho_R(beta) P_R on gauge-invariant functions, rho_R = product over links of rho_(j_l),
+rho_j(beta) = I_(2j+1)(beta)/I_1(beta) with a zero of order 2j at 0. Gauss's law forces the support of a non-trivial R
+to contain a closed loop (every site it touches has at least two of its links), of length at least 4 since the sides
+are at least 4; so at least 4 links carry 2j >= 1, and K_beta - P_0 = beta^4 N(beta) with N analytic near 0.
+T_0 := A P_0 A has rank one with eigenvalue integral e^(-beta V), not 0 near beta = 0, and T_0 (1 - Pi_0) = 0 for its
+Riesz projection Pi_0. So T' := T (1 - Pi) = O(beta^4) in trace norm, and S(t) = Tr T'^t / lambda_0^t = O(beta^(4t)). QED
+
+**Schwarz form of the transport (PROVED, classical one line).** Let D be simply connected with 0 in D, phi the
+conformal map of D onto the unit disc with phi(0) = 0, and h analytic on D with |h| <= M and a zero of order N at 0.
+Then |h| <= M |phi|^N on D. (Apply the maximum principle to h(phi^(-1)(w))/w^N.)
+
+**Consequence (ARGUED; the Borel-Caratheodory step is not written out).** Put G_n := 2 log Z(n, 2n, 2n, 2n) -
+log Z((2n)^4) = 2 X(n; (2n)^3) - X(2n; (2n)^3). For real beta, 1 + S(n; (2n)^3) <= exp(G_n) (first line of the proof of
+Theorem D (b)). By Lemma ORD, G_n has a zero of order at least 4n at 0. If the two partition functions have no zero
+in a simply connected D' that holds 0, then |G_n| <= C n^4 on a smaller D, and G_n(beta) <= C n^4 |phi_D(beta)|^(4n).
+So zero-freeness of these two families on one fixed domain gives (SEED) at every real beta in D, with no
+strong-coupling expansion (SC) and no bound (BD) as separate hypotheses, and with the Green function of D in place of
+kappa_0 times the harmonic measure. This is Corollary 4 of `gap-skeleton-max-b.md` in the limit r_0 -> 0. It does not
+revive Route Z on periodic tori: the lane found that the zero-free tube of periodic tori is too thin at weak coupling.
+Whether Lemma ORD holds for boxes with free walls, where it could replace (SC_B), was not checked.
+
+## Step 8. Verdicts, marks, what stays open, next step
+
+### 8.1 Verdicts on the row
+
+- Goal (U1) or (U2): NOT proved. No counterexample. Both stay OPEN.
+- Approaches from the object: seven written (A, B, C, D, E in Step 2; Z and G during Step 3). Fact tests: Step 3.2.
+- Crux attack: the crux lemma (SEED at the unit scale, the consumer of (U1)/(U2)) failed by three routes of mine,
+  different from row 982's three: Route 1 at the massless floor, Route 2 at a three-dimensional mixing input and at
+  (NOCRIT) on the beta_t path, Route 3 at K7. All three fail beyond first passage, at order-one coupling.
+- Rows 720, 970, 975-986: every approach is already there except the anchor of G and the two items of 7.1.
+- No numeric run was made. No GUIDE job was needed: no statement here had a cheap refutation test that the lane
+  has not run.
+
+### 8.2 Marks
+
+| Statement | Mark |
+|---|---|
+| (A1)-(A4) of Step 2 | PROVED in the lane (Lemma K, Proposition Delta, Theorem D); ported, not redone |
+| Lemma FLOOR (sector form; side times gap above 17.04 at threshold 1/5041) | PROVED (one line; Theorem D (c) read backwards) |
+| Identity G (S = 0 at beta_t = 0 for every beta_s; X as an integral over beta_t) | PROVED by hand, not checked |
+| One-link influence bound e^(+-4s) of Route 2 (i) | PROVED by hand, not checked |
+| Two-level monotonicity of the gap ratio in tau | PROVED (the displayed formula) |
+| No level crossing on the beta_t path; band crossed near s of order 1/beta_s | ARGUED / OPEN |
+| A volume-free temporal seed at small beta_t for large beta_s | OPEN (needs 3D mixing at weak coupling) |
+| Lemma ORD | PROVED given two RECALLED facts, not checked |
+| Schwarz form | PROVED (classical) |
+| Zero-freeness of two torus families gives (SEED) | ARGUED |
+| Exclusion of the gapless branch of Corollary Z4 beyond first passage | OPEN; it is the crux |
+| (UNIT), (U1), (U2), (HC-phys), (SEED-phys) | OPEN |
+
+### 8.3 What this run did not cover
+
+Rows 978-986 were read as results, not as files, except the sections of rows 978 and 982 quoted in Steps 1 and 3.
+The account was not read here (the family and first passage are quoted from row 982 4.3). Lemma ORD and Identity G
+have no check. The first response of the session was lost at the output limit; its work was redone in smaller steps.
+
+### 8.4 Next step (each item is a complete brief)
+
+**N1, check (small).** One line-by-line check, by another model, of Identity G, Lemma ORD and the consequence in 7.1
+of `library/gap-unit-max.md`. Write out the Borel-Caratheodory step: with zeta_n := Z/Z(beta = 0), zeta_n(0) = 1 and
+log|zeta_n| <= c |beta| Vol on D', show |log zeta_n| <= C Vol on D. Verdict per item: HOLDS, HOLDS AFTER CORRECTION, FAILS.
+
+**N2, for the lead (I may not edit other files).** Do not queue another direction-author row that starts from the
+object of (U1)/(U2). Evidence: seven blind approaches here and three routes each in rows 982 and 988 all return
+to rows 697-720, 859, 876 and Route Z (row 670). The route "soft, group-blind supplier of the seed" is exhausted. A row on
+(U1)/(U2) has value only if it brings an input that tells the Wilson trajectory from K7 beyond first passage.
+
+**N3, port reading (only if Route Z on free-wall boxes is still live, rows 677 and 681).** Read `gap-sc-box.md` and
+`gap-zf-box-x.md`. Decide whether Lemma ORD holds for boxes with free walls (is the thermal or winding sum of the box
+identically 0 at beta = 0, with a zero of order proportional to the side?). If yes, state the Schwarz form of Theorem
+ZB with (ZF_B) as the only hypothesis. If the lane's present (SC_B) already serves every consumer, say so and stop.
+
+**N4, a reading, not a proof row.** For Route 2 (i): search the literature once for a volume-free mixing or
+susceptibility bound for three-dimensional SU(2) lattice gauge theory at weak coupling (expected answer: none; it is
+the three-dimensional gap problem at fixed lattice coupling). If none, record Identity G as an exact anchor with no
+supplier and close the item.
+
+RESULT: Row 988 (Claude Fable 5.2 max, Mac mini worker 1; author, checked by no one; no numeric run; ended 2026-11-15T01:37Z). (U1) and (U2) are NOT proved and no counterexample was found. Seven approaches written from the object before any route file (hypercube reduction, twisted seed with a marginal engine, orbit-space curvature, purity, operator comparison, zeros with a strip, anchor at zero temporal coupling) all land on existing lane material (Theorems S, D, ZD, Proposition Delta, row 720 Part 2 and Part 4, ideas 8, 15, 18, 31, 32, Route Z with its width 11/(6 pi)), except the anchor itself. The crux lemma failed by three new routes, each beyond first passage at order-one coupling: no seed below the massless floor (side times gap above 17.04), a beta_t path that needs three-dimensional mixing and (NOCRIT), no soft exclusion of the gapless branch of Corollary Z4 (K7). PROVED by hand, unchecked: Lemma FLOOR (sector form), Identity G (S = 0 at beta_t = 0 for every beta_s, X as a beta_t integral), Lemma ORD (S(t; B) has a zero of order 4t at beta = 0), the Schwarz form of the Route Z transport (zero-freeness of two torus families gives the seed without (SC); ARGUED in its last step). OPEN: (UNIT), (U1), (U2), (HC-phys), (SEED-phys), and the one input every route lacks, the exclusion of a gapless scale-invariant branch beyond first passage. Next: N1 check of the three small items; N2 the lead should not queue another direction row on (U1)/(U2) without an input that separates the Wilson trajectory from K7.

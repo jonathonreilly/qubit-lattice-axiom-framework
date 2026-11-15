@@ -95,40 +95,40 @@ by one other model; it grants no status.
 
 - HOLDS: Lemma Q, SH' with threshold 1/550 at ratio 2 and even a (L392); the HC table and the BR-J consequence
   after correction (L396); the conditional ratio-4 HC/BR-J seed route, K_30 about 0.811 at beta 2.3 (L452);
-  SEED-FP composition (L398); DEN as one E2 denominator substitution (L378).
-- FAILS: G3, the exclusion of projected averaging (explicit normalized-Haar-average counterexample, L372);
-  OVL for all trial times or all lenses (L389); the q = 1.6 ordering (L393: q = 8/5 is strictly better than
+  SEED-FP composition (L398); DEN as one E2 denominator substitution (L377).
+- FAILS: G3, the exclusion of projected averaging (explicit normalized-Haar-average counterexample, L373);
+  OVL for all trial times or all lenses (L390); the q = 1.6 ordering (L393: q = 8/5 is strictly better than
   q = 3/2 on the proved interval); "each valid in the whole class" (L404); **the global no-gain and
-  stop-queuing recommendation (L409): "The support does not exclude the advertised route family. The narrower
+  stop-queuing recommendation (L408): "The support does not exclude the advertised route family. The narrower
   result is that this note supplies no improving variable-geometry bound."**
-- Narrowed: DEN's "no room" use holds for one one-side, seed-time comparison only, at most g/23 (L379); the
+- Narrowed: DEN's "no room" use holds for one one-side, seed-time comparison only, at most g/23 (L378); the
   dominance table gives no new rectangular numerator bound and does not prove absence of other comparisons (L385).
-- Open as before: the seed and (LSI-J-seed) (L410).
+- Open as before: the seed and (LSI-J-seed) (L409).
 
-**2.2 Row 963 (`gap-rotgeom-opus.md`), check `gap-rotgeom-check-astra.md` (verdict map L314-360, RESULT L370).**
+**2.2 Row 963 (`gap-rotgeom-opus.md`), check `gap-rotgeom-check-astra.md` (verdict map L314-362, RESULT L370).**
 
 - HOLDS: R1-R4 (twists, mapping torus, characters), frozen trivial-sector counts, the local diagonal reflection
   positivity argument, straight-torus non-separation for N >= 3, Lemma M (no light-cone mirror among lattice
   hyperplane reflections), D2 on the displayed period lattice, same-state conditional D4.
-- FAILS: "every sector form fails all rivals" (L335: nonzero-momentum frozen sectors are empty); "no coordinate
-  mirrors or axis operators" (L339: an explicit invariant period lattice, and D2's twisted axis channel);
-  "same finite thermal sum; only bulk-pressure bridge" (L345); "every seed form passes the fact-test filter"
-  (L347); **the three-part "buys nothing" verdict (L350): replace by "no sufficient replacement is established
-  here"**; the final result as a blanket obstruction (L357).
-- Not supplied by the check (L359-362): (LSI-J-seed), (SEED-FP), a diagonal finite-torus transfer construction,
+- FAILS: "every sector form fails all rivals" (L338: nonzero-momentum frozen sectors are empty); "no coordinate
+  mirrors or axis operators" (L343: an explicit invariant period lattice, and D2's twisted axis channel);
+  "same finite thermal sum; only bulk-pressure bridge" (L350); "every seed form passes the fact-test filter"
+  (L352); **the three-part "buys nothing" verdict (L355): replace by "no sufficient replacement is established
+  here"**; the final result as a blanket obstruction (L362).
+- Not supplied by the check (L364-367): (LSI-J-seed), (SEED-FP), a diagonal finite-torus transfer construction,
   an admissible diagonal recursion, shape independence, a projected seed consumer.
 
-**2.3 Row 965 (`gap-squeeze-opus.md`), check `gap-squeeze-check-astra.md` (dispositions L322-354, defects L356-372, RESULT L394).**
+**2.3 Row 965 (`gap-squeeze-opus.md`), check `gap-squeeze-check-astra.md` (dispositions L322-357, defects L359-378, RESULT L394).**
 
 - HOLDS (mostly after correction): COUNT on its schedule, BND, SHELL, FLUX, LEAK, PR/window, HALF, QF, the
   free-plaquette endpoint bounds (with 0.03019, 0.03694), the cube static formula, the one-link ceiling 3.
-- FAILS: "doubled time for the full SU(2) seed" as an established consequence (overlap input missing, L339);
-  top-level periodic r_1^w (L343); literature-to-J equivalence as a supplied implication (L344); the frozen
-  centre-even-gap assertion (flat-state construction, L347 and defect 5); the quantitative full-window claim for
-  the open endpoint (L348); **"every averaged squeeze is unchanged / every computable endpoint harder" (L354,
+- FAILS: "doubled time for the full SU(2) seed" as an established consequence (overlap input missing, L340);
+  top-level periodic r_1^w (L344); literature-to-J equivalence as a supplied implication (L345); the frozen
+  centre-even-gap assertion (flat-state construction, L348 and defect 5); the quantitative full-window claim for
+  the open endpoint (L349); **"every averaged squeeze is unchanged / every computable endpoint harder" (L356,
   defect 8): "a computable endpoint does not logically force a supremum over exterior data, and no such
   necessity theorem appears."**
-- To retain (L374-378): "none of the displayed estimates supplies a new seed bound". Not to retain: the request
+- To retain (L379-383): "none of the displayed estimates supplies a new seed bound". Not to retain: the request
   to stop all squeeze lanes; the claimed equivalence of the pointwise-in-beta target to the seed; that EP1
   settles every open-box obstruction.
 
@@ -144,45 +144,45 @@ by one other model; it grants no status.
   Q_phi(z) = 0 (the SO(2) radial example); the claim "strictly stronger than the gap" is not established.
 - Also (L207): SUB does not refute (LOC-COV)'s typical-tilt formulation, which allows a bad set and a
   negative-curvature budget.
-- Open as before: (LSI-traj-seed) (L205, L248). Raw lattice result files of the GUIDE runs are absent at the pin (L191).
+- Open as before: (LSI-traj-seed) (L205, L248). Raw lattice result files of the GUIDE runs are absent at the pin (L190).
 
-**2.5 Row 968 (`gap-avgcurv-max.md`), check `gap-avgcurv-check-astra.md` (table L312-339, scope notes L341-387, RESULT L474).**
+**2.5 Row 968 (`gap-avgcurv-max.md`), check `gap-avgcurv-check-astra.md` (table L312-337, scope notes L339-388, RESULT L474).**
 
 - HOLDS: Proposition FLOW, Lemma Z, Lemma NEC, the positive-radius ANG formula, AVG (b), (c), SCHR, the 6.3
   direction-resolved implication, the (ABS-flow) sufficient implication 7.1 (L335), the horizontal Fourier test
   7.2; POL-BR and AVG (a) after correction (explicit BBD extension, exact sine-cosine argument).
-- FAILS: the inference that frozen-group failure must occur at nonzero tilt (L325, L364-372: the necessary
+- FAILS: the inference that frozen-group failure must occur at nonzero tilt (L324, L363-371: the necessary
   growth k*/beta to infinity does not exceed the zero-field ceiling O(beta^2)); the broad conditional-CAP
-  and (LOC-COV) obstruction claims (L334, L381-387): "LOC-COV plus CAP is one sufficient implementation of an
+  and (LOC-COV) obstruction claims (L334, L382-388): "LOC-COV plus CAP is one sufficient implementation of an
   averaged estimate. The text supplies no argument that every proof of ABS-flow must use LOC-COV, or that Ricci
   cannot help any collective horizontal direction... The negative conclusions in 5.5 and 8.2 must be
   statements about this attempt, not exclusions of other mechanisms."
 - Narrowed: the strict hierarchy of 7.1 is a chain of sufficient implications; strictness and necessity of
-  (LOC-COV) are not established (L336). The surviving claim on POL-BR (L352-357): "POL-BR itself has no
+  (LOC-COV) are not established (L336). The surviving claim on POL-BR (L351-358): "POL-BR itself has no
   fixed-beta smallness threshold, and the known zero-field obstruction does not kill its finite-interval
   integral. Its actual uniform hypothesis still requires proof."
-- DENS (death by volume, L374-379) holds after adding the horizontal premise; it names no seed-box size.
+- DENS (death by volume, L373-379) holds after adding the horizontal premise; it names no seed-box size.
 - Open as before: (LSI-J-seed), (LSI-br-seed), (ABS-flow-seed), the seed.
 
-**2.6 Row 977 (`gap-tiltproof-max.md`), check `gap-tiltproof-check-astra.md` (table L380-391, RESULT L404).**
+**2.6 Row 977 (`gap-tiltproof-max.md`), check `gap-tiltproof-check-astra.md` (table L381-392, RESULT L404).**
 
 - HOLDS: Theorem D1; D2 steps 5.1-5.4. HOLDS AFTER CORRECTION: Theorem D2 (normalize self-inverse modes, exact
   or downward-rounded constants; "the spectral theorem itself holds"), ZERO-CEIL (remove the unproved 0.234/117
   deduction), CAP (state beta lambda_* >= 3/2; side-4 and side-8 caps hold with exact bounds 589/69 and
   178859/8211), QUOT-CAP (uniform-in-b hypothesis; the side-16 number replaced).
-- Scope sentences (L393-396): "No failing structural step was found in the pinned-sheet mechanism... The generic
+- Scope sentences (L394-397): "No failing structural step was found in the pinned-sheet mechanism... The generic
   box-uniform bound remains open. The finite seed is excluded by ZERO-CEIL, conditional on the stated POL-BR
   output formula and the supplied seed target." Also (L377-378): "Finite-size growth also does not refute
   existence of some finite box-uniform bound without a proved continuation to arbitrarily large sides."
 - Not proved: side-120 numerical claims; the uniform-in-b q_0 hypothesis of QUOT-CAP.
 
-**2.7 Row 978 (`gap-ladder-max.md`), check `gap-ladder-check-astra.md` (table L375-388, RESULT L399).**
+**2.7 Row 978 (`gap-ladder-max.md`), check `gap-ladder-check-astra.md` (table L377-388, RESULT L399).**
 
 - HOLDS: Lemma IHC; 5.6 (a) trajectory restriction; the defective inequality with spectral tail (defect is an
   input). HOLDS AFTER CORRECTION: abstract Corollary CU; (TH) through 1.1.5 (iii) with the full vacuum
   normalization and an explicit determinant-comparison input; the (APR) form; R2.
-- FAILS: (TH) assumption (a), the literal identification (L380: "The density lemma removes the Gaussian
-  normalizers"); **the 5.7 universal method exclusion (L384: "The calculation does not cover methods retaining
+- FAILS: (TH) assumption (a), the literal identification (L381: "The density lemma removes the Gaussian
+  normalizers"); **the 5.7 universal method exclusion (L386: "The calculation does not cover methods retaining
   further information")**. The Gaussian scalar square-root loss holds for the tested scalar restriction only.
 - Delivered consumer statement (L390-392): a correctly normalized uniform start bound plus (HC-phys) at a box
   satisfying (SIZE-phys) gives (SEED-phys). Neither hypothesis is proved for SU(2).
@@ -195,7 +195,7 @@ by one other model; it grants no status.
 - FAILS: L70's two-sided comparison; **the hierarchy at L131/L274, the deduction of pointwise U3 from the
   integrated decay (L93)**; L225's blanket Poincare-absence claim.
 - Narrowed: COUNT's reading is an upper bound on state counts from a thermal envelope, not an equivalence with
-  a gas model or with hypercontractivity (L105); on the U1 time grid the bound carries an extra 2 T E (L107-112).
+  a gas model or with hypercontractivity (L110); on the U1 time grid the bound carries an extra 2 T E (L112-117).
 - Correct replacement (L95-100): "U1 implies U2; U3 separately implies the seed under EE(b)'s size condition...
   Neither this proof nor the original EE identifies U1, U2 and UNIT as equivalent."
 
@@ -217,7 +217,7 @@ by one other model; it grants no status.
   excitation of the full trace.
 - The corrected implication: a seed at each fixed nonnegative coupling from a common zero-free domain. That
   domain, the cutoff-uniform physical seed, (U1) and (U2) stay open. The check did not check the rest of row
-  988's direction proposals (L457).
+  988's direction proposals (L458).
 
 **2.11 Row 993 (`gap-idab-opus.md`), check `gap-idab-check-astra.md` (E_0 readings L185-216, table L384-400, RESULT L419).**
 
@@ -233,36 +233,36 @@ by one other model; it grants no status.
 
 - HOLDS: Identity MIX, Proposition TILT, LIP, K7-A, K7-B, ELL. HOLDS AFTER CORRECTION: POL, SU(2) SHEET
   (embedded non-degenerate tube made explicit), MF, 4F.
-- FAILS: SHEET's extension to other groups from positive variance alone (cyclic-group example, L310).
+- FAILS: SHEET's extension to other groups from positive variance alone (cyclic-group example, L311).
 - Survives (L316): "The source's SU(2) obstruction to a volume-uniform covariance supremum survives."
 
 **2.13 Row 998 (`gap-crux-exercise3-max.md`), check `gap-crux-exercise3-check-astra.md` (table L133-159, L162-195, RESULT L249).**
 
 - HOLDS: Lemma PT (a)-(d); KF (a), (b); 6d rows 30, 33, ex2 #18, ex2 6c point 1; the frozen Q_8/2T correction.
 - HOLDS AFTER CORRECTION: Corollary PT1 (replace "U(1) in its massless phase" by an admitted factor with no
-  periodic seed; "an always-false hypothesis is no counterexample to a valid implication", L140); KF (c)
+  periodic seed; "an always-false hypothesis is no counterexample to a valid implication", L139); KF (c)
   (require K_j to infinity at one fixed g); KF1 (delete the unconditional list of necessary U(1)/photon tests:
   "each comparison must meet the same H, including its ultraviolet clause", L146); 6d row 24 (the dependency
   is T2 and T3, L151); 6d row 28 (re-admit K-flow: "replace 'valid necessary conditions' by tests whose
   hypotheses must be verified", L152).
-- FAILS: **I28, the published Wilson U(1) supplier of "no seed" (L141)**; **KF (d), "it must contain a
+- FAILS: **I28, the published Wilson U(1) supplier of "no seed" (L140)**; **KF (d), "it must contain a
   separating number" (L145: "No such necessity follows from contraposition")**; 6d row 28 "(better: w_p)" for
   Route 3 (b) (L153: "V proves no seed, not branch G. Bounded D at its transition is missing"); the claimed
   non-converse of the printed (CONTR) (L162-190: the existential-base (CONTR) is equivalent to (PHYS-SEED) by Z3).
 - Kept: the original (CAS) of row 708 (start at size 3, every integer size in its band) has no proved converse
-  (L156). Logical limit (L213-219): a Wilson-only first-passage clause already excludes the standalone U(1)
+  (L159). Logical limit (L213-219): a Wilson-only first-passage clause already excludes the standalone U(1)
   and free-photon comparisons; "no comparison model constrains an implication before this domain test."
 
 **2.14 Row 1000 (`gap-d2-inputs.md`), check `gap-d2-inputs-check-astra.md` (Step 2 table L33-43, L45-91, disposition L247-267).**
 
 - HOLDS: Lemma RP and Corollary PT (the reflection-positivity inputs). HOLDS AFTER CORRECTION: Lemma GD and
   Corollary IR and their consumption by Theorem D2.
-- FAILS: **Step 2's confirmation of T3 and of rule N2**: L42 (e) "no law meeting the claimed common premises is
-  constructed"; L44 (f) the claimed Gaussian energy identity is false (exact one-mode check: sigma^2 (1 - e^(-2E))
+- FAILS: **Step 2's confirmation of T3 and of rule N2**: source line 42 (e), check L41, "no law meeting the claimed common premises is
+  constructed"; source line 44 (f), check L42, the claimed Gaussian energy identity is false (exact one-mode check: sigma^2 (1 - e^(-2E))
   = e^(-E)/beta_0, not 1/beta_0; choosing E = (beta_K/beta_0)|p| gives covariance of order 1/(2 beta_K |p|) with
-  the bare kinetic coefficient unchanged, L60-83); L46 "The required transfer-structure conclusion does not
+  the bare kinetic coefficient unchanged, L56-83); source line 46, check L43, "The required transfer-structure conclusion does not
   follow... The text has not proved that every level-convexity route must fail or must use the named repair."
-- Also a domain defect at L36 (L48-54): the linear colour test f(A) = sum <w_b, A_b> is not invariant under
+- Also a domain defect at source line 36 (check L45-52): the linear colour test f(A) = sum <w_b, A_b> is not invariant under
   constant SU(2) rotations, and Theorem BR needs that invariance; "a suitable invariant nonlinear or quadratic
   test and its estimates are not supplied".
 - What may be retained (L85-91): "a conditional benchmark warning, not a proved exclusion". TEL on independent
@@ -271,14 +271,14 @@ by one other model; it grants no status.
 
 **2.15 Summary of Step 2.** The fourteen checks leave the core lemmas standing (most after stated corrections)
 and remove eleven broad negative claims as proofs. Those eleven are the input of Section 4:
-(i) varying geometry buys nothing (960 L409); (ii) rotated or diagonal geometry buys nothing (963 L350);
-(iii) every averaged squeeze is unchanged (965 L354); (iv) the (LOC-COV)/conditional-CAP obstruction and the
-frozen-group nonzero-tilt inference (968 L325, L334); (v) the refutation of the integrated-flow, quotient and
+(i) varying geometry buys nothing (960 L408); (ii) rotated or diagonal geometry buys nothing (963 L355);
+(iii) every averaged squeeze is unchanged (965 L356); (iv) the (LOC-COV)/conditional-CAP obstruction and the
+frozen-group nonzero-tilt inference (968 L324, L334); (v) the refutation of the integrated-flow, quotient and
 ABS-flow forms, and CLASS's threefold failure (970 L226, L229); (vi) the universal method exclusion of 5.7
-(978 L384); (vii) the hierarchy U1/U2/U3 and the blanket Poincare-absence claim (982 L93); (viii) the restricted
+(978 L386); (vii) the hierarchy U1/U2/U3 and the blanket Poincare-absence claim (982 L93); (viii) the restricted
 sector inference of FLOOR and ORD in real time (988); (ix) the full-E_0 identification (993 L196); (x) the
-compulsory separating number KF (d), the Wilson U(1) supplier I28, and "(better: w_p)" (998 L141, L145, L153);
-(xi) T3 and rule N2 (1000 L42-46). No check supplies a seed, a rate, or any order-one estimate.
+compulsory separating number KF (d), the Wilson U(1) supplier I28, and "(better: w_p)" (998 L140, L145, L153);
+(xi) T3 and rule N2 (1000 L41-43). No check supplies a seed, a rate, or any order-one estimate.
 
 ## 3. Step 3: today's rows 1011, 1013, 1016, 1017 and their same-provider checks 1014, 1015, 1019, 1020
 
@@ -331,34 +331,34 @@ L441-450); the RESULT text of rows 1011-1018; additional reads named in the rows
 
 | # | Rule (where) | Status after the checks | What it now says |
 |---|---|---|---|
-| A1 | Rule W2: a direction row states its kind, (K-one) or (K-flow); tests per kind (`parts/gap.md` L90) | **narrowed** by check 998 (L140, L141, L145, L146, L153) | (i) A (K-one) hypothesis need not name a number: KF (d) FAILS. (ii) A comparison model binds a tool only after the tool's own hypothesis H, with its ultraviolet clause, is verified on that model; a Wilson-only first-passage clause excludes the standalone U(1) and photon comparisons. (iii) The product clause needs an admitted no-seed factor (in the lane: Villain U(1) at beta >= 2^14); the published Wilson U(1) supplier I28 FAILS as cited. (iv) w_p (Proposition V) proves no seed at one coupling, not branch G. The clauses on Theorem D2 and Lemma SHEET stand (A6, C8, C9). |
-| A2 | Row 982 N2: no row on (LSI-br) from the account's level convexity (`parts/gap.md` L91; FINISH L1081) | **no longer supported**: check 1000 L42, L44, L46; check 998 L151 (the rule also leans on T2) | T3 (the port is short by beta_K/beta_0) is ARGUED only. What may be kept is "a conditional benchmark warning, not a proved exclusion" (check 1000 L85). T2 stays as a constraint in the valid form: a proof must use more than (P1)-(P3) and "order-one coupling at the unit", or read first-passage data. Section 6 decides what the route is worth. |
+| A1 | Rule W2: a direction row states its kind, (K-one) or (K-flow); tests per kind (`parts/gap.md` L90) | **narrowed** by check 998 (L139, L140, L145, L146, L153) | (i) A (K-one) hypothesis need not name a number: KF (d) FAILS. (ii) A comparison model binds a tool only after the tool's own hypothesis H, with its ultraviolet clause, is verified on that model; a Wilson-only first-passage clause excludes the standalone U(1) and photon comparisons. (iii) The product clause needs an admitted no-seed factor (in the lane: Villain U(1) at beta >= 2^14); the published Wilson U(1) supplier I28 FAILS as cited. (iv) w_p (Proposition V) proves no seed at one coupling, not branch G. The clauses on Theorem D2 and Lemma SHEET stand (A6, C8, C9). |
+| A2 | Row 982 N2: no row on (LSI-br) from the account's level convexity (`parts/gap.md` L91; FINISH L1081) | **no longer supported**: check 1000 L41-43 (source lines 42, 44, 46); check 998 L151 (the rule also leans on T2) | T3 (the port is short by beta_K/beta_0) is ARGUED only. What may be kept is "a conditional benchmark warning, not a proved exclusion" (check 1000 L85). T2 stays as a constraint in the valid form: a proof must use more than (P1)-(P3) and "order-one coupling at the unit", or read first-passage data. Section 6 decides what the route is worth. |
 | A3 | Row 1002 filter for (K-flow) rows (the 2D O(N) plausibility test) (`parts/gap.md` L92) | withdrawn by rows 1003, 1006 before the checks; **not covered** | Not a test. The 2D model is a source of mechanisms. |
 | A4 | The reading of the 2D pinned-cell mechanism; "the direct port FAILS in the class of all pins and strengths" (`parts/gap.md` L93; rows 1011, 1013, 1016) | **not covered** by a cross-provider check; same-provider checks 1014, 1015, 1020: no WRONG | Stands as same-provider-checked. Theorem BH covers homogeneous strengths. The corrected reopen condition (rigid group, charged pins, response on the gauge-invariant algebra) is ARGUED. |
 | A5 | "Not refuted" notes on rows 970 and 960-965 (`parts/gap.md` L94-95) | **stands** (they record checks 970, 960, 963, 965) | See B1-B3, B6. |
-| A6 | Lead note under row 996: a hypothesis uniform over plaquette coupling fields gets no row (FINISH L1105) | **stands for SU(2)**, after correction (check 996 L308: embedded non-degenerate tube); **narrowed** for other groups (L310: needs the identity-maximizer hypothesis) | Lemma SHEET binds all-fields forms for SU(2). |
+| A6 | Lead note under row 996: a hypothesis uniform over plaquette coupling fields gets no row (FINISH L1105) | **stands for SU(2)**, after correction (check 996 L310: embedded non-degenerate tube); **narrowed** for other groups (L311: needs the identity-maximizer hypothesis) | Lemma SHEET binds all-fields forms for SU(2). |
 | A7 | Last sentence of row 988 N2: no row "without an input that separates the Wilson trajectory from K7" | replaced by W2; the replacement **stands after correction** (check 998 L152) | (K-flow) rows are admissible. "Valid necessary conditions" is replaced by "tests whose hypotheses must be verified". |
 | A8 | Lead note under row 998: the conditional dichotomy (W4, route RD) is not queued; "proofs or counterexamples, not a catalogue of open conditions" (FINISH L1104) | **not covered** (an owner-level rule, not a mathematical verdict) | Unchanged. Corollary TRI of row 1017 is a hypothesis-free form of the same statement. |
 | A9 | Row 998 9.5, "what not to do next" (`parts/gap.md` L70-72): no further fresh-framing exercise by this model family; no further one-scale search against K7; no monotone or convex statement along scales by class-wide tools; no urgent theta(L) run; no Migdal-Kadanoff comparison | **stands** as advice; one clause **narrowed** | "Class-wide tools": the product test holds (PT (a)-(d), check 998 L135-138), but the objection "a decrease persists" is ARGUED only (L147). This row is itself a registry row, not a fresh-framing exercise. |
-| A10 | Lead note under row 1000: "a route must use the transfer structure at each level" (FINISH L1081) | **no longer supported** as a rule (check 1000 L46) | "The text has not proved that every level-convexity route must fail or must use the named repair." |
+| A10 | Lead note under row 1000: "a route must use the transfer structure at each level" (FINISH L1081) | **no longer supported** as a rule (check 1000 L43) | "The text has not proved that every level-convexity route must fail or must use the named repair." |
 
 ### 4.2 Discard verdicts of the fourteen checked rows
 
 | # | Verdict (row; where) | Status | Narrowed form, or what comes back |
 |---|---|---|---|
-| B1 | Row 960: varying the geometry buys nothing; stop queuing such rows (`gap-vargeom-opus.md` 4.4, L152, L208-218) | **no longer supported**: check 960 L409; also G3 FAILS (L372), OVL for all trial times FAILS (L389), the q = 1.6 ordering FAILS (L393) | "This note supplies no improving variable-geometry bound." Back: projected averaging; lens states at long trial times; other comparisons than the displayed ones; real second times q = 8/5. |
-| B2 | Row 963: rotated or diagonal geometry buys nothing (three parts) | **no longer supported**: check 963 L350, L357; parts at L335, L339, L345, L347 | "No sufficient replacement is established here." Back: diagonal tori with coordinate mirrors on an invariant period lattice and D2's twisted axis channel; sector forms with empty nonzero-momentum frozen sectors. Missing objects named at L359-362. |
-| B3 | Row 965: every averaged squeeze leaves the crux unchanged; every computable endpoint is harder; stop all squeeze rows | **no longer supported**: check 965 L354, defect 8 (L370-372) | "None of the displayed estimates supplies a new seed bound." Back: time-dependent squeezes; averaged block estimates. Struck: the equivalence of the pointwise-in-beta target to the seed; "EP1 settles every open-box obstruction". |
+| B1 | Row 960: varying the geometry buys nothing; stop queuing such rows (`gap-vargeom-opus.md` 4.4, L152, L208-218) | **no longer supported**: check 960 L408; also G3 FAILS (L373), OVL for all trial times FAILS (L390), the q = 1.6 ordering FAILS (L393) | "This note supplies no improving variable-geometry bound." Back: projected averaging; lens states at long trial times; other comparisons than the displayed ones; real second times q = 8/5. |
+| B2 | Row 963: rotated or diagonal geometry buys nothing (three parts) | **no longer supported**: check 963 L355, L362; parts at L338, L343, L350, L352 | "No sufficient replacement is established here." Back: diagonal tori with coordinate mirrors on an invariant period lattice and D2's twisted axis channel; sector forms with empty nonzero-momentum frozen sectors. Missing objects named at L364-367. |
+| B3 | Row 965: every averaged squeeze leaves the crux unchanged; every computable endpoint is harder; stop all squeeze rows | **no longer supported**: check 965 L356, defect 8 (L375-378) | "None of the displayed estimates supplies a new seed bound." Back: time-dependent squeezes; averaged block estimates. Struck: the equivalence of the pointwise-in-beta target to the seed; "EP1 settles every open-box obstruction". |
 | B4 | Row 962: no relaxation of the constraint system is a new input (row 998 6a row 22) | **not covered**; weakened in part, since three members of the family lost their proofs (B1-B3) | Valid as reported; not re-derived. |
-| B5 | Row 968: (a) averaged forms reduce to the pointwise criterion or to the Poincare inequality (Proposition AVG); (b) the obstruction through (LOC-COV) and conditional CAP (5.5, 8.2); (c) frozen groups must fail at non-zero tilt | (a) **stands** (check 968 L328-329); (b) **no longer supported** (L334, L381-387); (c) **no longer supported** (L325, L364-372) | (b): "statements about this attempt, not exclusions of other mechanisms". Back: collective Ricci terms; other proofs of entropic stability; conditional CAP. |
-| B6 | Row 970: (a) a box-uniform (TILT-COV-sup) is refuted in the upper window; (b) the quotient form and (ABS-flow) are refuted with it; (c) all three seed hypotheses of class S fail for the interacting law; (d) "do not queue proofs of (TILT-COV-sup), its quotient form, or (ABS-flow)" | (a) **narrowed**: Lemma SUB stands (L211), but the run "supports growth at the sampled parameters, not a mathematical refutation" (L201); (b) **no longer supported** (L229, L203); (c) **no longer supported** (L226); (d) **narrowed** to the supremum form | The supremum form stays dead for the use at the seed box through B7. The quotient form, the averaged form (ABS-flow), the integrated form, (LOC-COV) with a bad set (L207), and (LSI-traj-seed) are open. |
-| B7 | Row 977: Theorem D2 (every kbar of the supremum form is at least lam_* k00, from hard-pinned sheets), Corollary CAP, ZERO-CEIL, QUOT-CAP | D1 **stands**; D2, CAP, ZERO-CEIL **stand after correction** (check 977 L380-391); QUOT-CAP **stands only as a conditional statement** (uniform-in-b q_0 hypothesis, unproved) | Theorem-grade by hand at sides 4 and 8 (589/69, 178859/8211). Side-120 numbers are ARGUED. "The generic box-uniform bound remains open": D2 caps the use, not the existence, of a box-uniform kbar. |
-| B8 | Row 978: (a) 5.7, every one-shot method loses a square root; (b) a carrier of a seed from one coupling to finer cutoffs is (NOCRIT) plus a climb (R2); (c) (TH) by literal identification | (a) **no longer supported** as universal (check 978 L384); (b) **stands after correction** (L388); (c) **no longer supported** (L380) | (a) holds for the tested scalar restriction. (c): (TH) needs the full vacuum normalization and a determinant comparison, so it now rests on (DET) and on (E0-tor) (B11). |
-| B9 | Row 982: (a) N2 and T3; (b) the hierarchy U1/U2/U3 and the reading "the seed is exactly (UNIT-EE)"; (c) no Poincare inequality (L225); (d) Route 2 (a), no (HC) on all of L^2; (e) Lemmas CAP, COUNT as necessary conditions | (a) **no longer supported** (A2); (b) **no longer supported** (check 982 L93); (c) **no longer supported** (RESULT L195); (d) **stands**; (e) **stand**, COUNT **narrowed** (L105-112) | (b): "U1 implies U2; U3 separately implies the seed." No equivalence of U1, U2, (UNIT). |
+| B5 | Row 968: (a) averaged forms reduce to the pointwise criterion or to the Poincare inequality (Proposition AVG); (b) the obstruction through (LOC-COV) and conditional CAP (5.5, 8.2); (c) frozen groups must fail at non-zero tilt | (a) **stands** (check 968 L329-330); (b) **no longer supported** (L334, L382-388); (c) **no longer supported** (L324, L363-371) | (b): "statements about this attempt, not exclusions of other mechanisms". Back: collective Ricci terms; other proofs of entropic stability; conditional CAP. |
+| B6 | Row 970: (a) a box-uniform (TILT-COV-sup) is refuted in the upper window; (b) the quotient form and (ABS-flow) are refuted with it; (c) all three seed hypotheses of class S fail for the interacting law; (d) "do not queue proofs of (TILT-COV-sup), its quotient form, or (ABS-flow)" | (a) **narrowed**: Lemma SUB stands (L213), but the run "supports growth at the sampled parameters, not a mathematical refutation" (L201); (b) **no longer supported** (L229, L203); (c) **no longer supported** (L226); (d) **narrowed** to the supremum form | The supremum form stays dead for the use at the seed box through B7. The quotient form, the averaged form (ABS-flow), the integrated form, (LOC-COV) with a bad set (L207), and (LSI-traj-seed) are open. |
+| B7 | Row 977: Theorem D2 (every kbar of the supremum form is at least lam_* k00, from hard-pinned sheets), Corollary CAP, ZERO-CEIL, QUOT-CAP | D1 **stands**; D2, CAP, ZERO-CEIL **stand after correction** (check 977 L381-392); QUOT-CAP **stands only as a conditional statement** (uniform-in-b q_0 hypothesis, unproved) | Theorem-grade by hand at sides 4 and 8 (589/69, 178859/8211). Side-120 numbers are ARGUED. "The generic box-uniform bound remains open": D2 caps the use, not the existence, of a box-uniform kbar. |
+| B8 | Row 978: (a) 5.7, every one-shot method loses a square root; (b) a carrier of a seed from one coupling to finer cutoffs is (NOCRIT) plus a climb (R2); (c) (TH) by literal identification | (a) **no longer supported** as universal (check 978 L386); (b) **stands after correction** (L388); (c) **no longer supported** (L381) | (a) holds for the tested scalar restriction. (c): (TH) needs the full vacuum normalization and a determinant comparison, so it now rests on (DET) and on (E0-tor) (B11). |
+| B9 | Row 982: (a) N2 and T3; (b) the hierarchy U1/U2/U3 and the reading "the seed is exactly (UNIT-EE)"; (c) no Poincare inequality (L225); (d) Route 2 (a), no (HC) on all of L^2; (e) Lemmas CAP, COUNT as necessary conditions | (a) **no longer supported** (A2); (b) **no longer supported** (check 982 L93); (c) **no longer supported** (RESULT L195); (d) **stands**; (e) **stand**, COUNT **narrowed** (L110-117) | (b): "U1 implies U2; U3 separately implies the seed." No equivalence of U1, U2, (UNIT). |
 | B10 | Row 988: (a) Lemma FLOOR, no seed below the massless floor 17.04; (b) the beta_t path needs 3D mixing and (NOCRIT); (c) Route 3 (c), soft exclusion of branch G is impossible without a separator from K7; (d) Route Z needs a common zero-free domain | (a) **narrowed** (check 988 L452: the gap is that of the traced sector; the inference from a restricted sector to the full trace FAILS; the full-trace threshold holds); (b) **stands** as an open premise (Identity G after correction); (c) "too strong" (row 998), **confirmed after correction** (check 998 L152); (d) **stands** (7.1 after correction), ORD in real time FAILS | Back from (a): seeds in restricted or twisted sectors are not excluded by FLOOR. This meets route RE (sector engines). |
 | B11 | Rows 987, 993: (DET) and the identification inputs of (TH) | Lemmas **stand**; "no elimination factor at identity" **no longer supported** (check 987 L349); the full-E_0 identification **no longer supported** (check 993 L196) | The extensive base (TH) is conditional on the account, (DET) and the open (E0-tor). |
 | B12 | Row 996: (a) hypotheses uniform over coupling fields are empty on large tori (SHEET); (b) one-plaquette separating properties have no consumer | (a) **stands for SU(2)** after correction (A6); (b) **stands in range**, (K-one) only (check 998 L154) | - |
-| B13 | Row 998: (a) KF (d), a (K-one) input must contain a separating number; (b) I28; (c) "(better: w_p)" refutes soft statements about branch G; (d) (CONTR) has no converse; (e) "RA is stronger than the target" | (a), (b), (c) **no longer supported** (check 998 L145, L141, L153); (d) **no longer supported** for the printed existential-base (CONTR), which is equivalent to (PHYS-SEED) (L162-190); **stands** for the original (CAS) of row 708 (L156) | (e): the strength of RA is "unknown/comparable or stronger" for (CAS) with a prescribed start; "target-equivalent" for (CONTR). |
+| B13 | Row 998: (a) KF (d), a (K-one) input must contain a separating number; (b) I28; (c) "(better: w_p)" refutes soft statements about branch G; (d) (CONTR) has no converse; (e) "RA is stronger than the target" | (a), (b), (c) **no longer supported** (check 998 L145, L140, L153); (d) **no longer supported** for the printed existential-base (CONTR), which is equivalent to (PHYS-SEED) (L162-190); **stands** for the original (CAS) of row 708 (L159) | (e): the strength of RA is "unknown/comparable or stronger" for (CAS) with a prescribed start; "target-equivalent" for (CONTR). |
 | B14 | Row 1000: reflection positivity and Gaussian domination as inputs of D2 | **stand** (RP, PT), **stand after correction** (GD, IR) | Theorem D2 now has cross-provider support for its two ported lemmas. |
 
 ### 4.3 Older discard verdicts (exercise 2 rows 1-18; row 998 rows 19-33 not listed above)
@@ -367,7 +367,7 @@ None of these was read by the fourteen checks unless a line says so. All are "va
 
 | # | Verdict | Status |
 |---|---|---|
-| 1-3 | worst-case Dobrushin (ceilings 2/3, 0.775); background-uniform twist bounds (1.0109); annealed block condition | **not covered**; valid as ranges only (C11). Check 968 L352-357 corrects one reading: ceiling (i) of row 941 is a flipped spatial link at non-zero endpoint tilt, not a zero-field statement. |
+| 1-3 | worst-case Dobrushin (ceilings 2/3, 0.775); background-uniform twist bounds (1.0109); annealed block condition | **not covered**; valid as ranges only (C11). Check 968 L351-358 corrects one reading: ceiling (i) of row 941 is a flipped spatial link at non-zero endpoint tilt, not a zero-field statement. |
 | 4, 5 | one-way step for a torus quantity; (MONO-Delta) false for the ordered Ising model | **not covered** |
 | 6-9 | linear (ES-1); Wilson-loop association (EP-NO); fixed-radius loop equations; full-L^2 block certificate | **not covered** |
 | 10 | soft block step then a high-temperature theorem: circular | **not covered** |
@@ -375,7 +375,7 @@ None of these was read by the fourteen checks unless a line says so. All are "va
 | 13 | flux half from glue half by clustering | **not covered** |
 | 15 | vacuum Bakry-Emery (G2) is the Langevin gap | **not covered**. Section 6 uses its exact form (the ground-state Dirichlet form). |
 | 17 | thick vortex by field-independent spreading | **not covered** by the fourteen; row 1018 (Lemma PAR, Corollary MP) narrowed "no topological twist" to cubes |
-| 18 | hierarchical and Migdal-Kadanoff lattices are group-blind | **stands** (check 998 L155, scope only) |
+| 18 | hierarchical and Migdal-Kadanoff lattices are group-blind | **stands** (check 998 L156, scope only) |
 | 19 | (TILT-COV-sup) and (ABS-flow) "refuted, theorem-grade" | **narrowed**: theorem-grade for the supremum form only (B7). For (ABS-flow) **no longer supported** (B6 (b)). |
 | 20 | box-uniform quotient form fails (q_0 about 0.24 with QUOT-CAP) | **narrowed**: a GUIDE number in a conditional proposition (B7); check 970 L203 |
 | 21 | forms uniform over coupling fields | **stands** for SU(2) (A6) |
@@ -389,26 +389,26 @@ None of these was read by the fourteen checks unless a line says so. All are "va
 | 30 | one-plaquette separating properties | **stands in range** (B12 (b)) |
 | 31 | averaged curvature, Polchinski flow, Piazza-Shen: "did not close; circular" | **narrowed**: Proposition AVG stands; the obstruction claims do not (B5) |
 | 32 | plaquette automata; squeeze, rotate, vary the box: "no input" | **narrowed** to "no bound found in these notes" (B1-B3) |
-| 33 | (DRIFT)_c and (ESC) | (ESC): "not tested", not "fails" (**stands**, check 998 L154); (DRIFT) open |
+| 33 | (DRIFT)_c and (ESC) | (ESC): "not tested", not "fails" (**stands**, check 998 L155); (DRIFT) open |
 
 ### 4.4 Filters: the test table, row by row
 
 | # | Test (source: `parts/gap.md` L199-213 unless named) | Status | Valid form now |
 |---|---|---|---|
-| C1 | Compact U(1), Coulomb phase | **narrowed** (check 998 L141, L146, L213-219) | Theorem-grade in the lane for Villain at beta >= 2^14. The cited published Wilson supplier of "no seed" FAILS. It binds a tool only if the tool's hypothesis holds for U(1); a hypothesis with a Wilson SU(2) first-passage clause is not bound. |
+| C1 | Compact U(1), Coulomb phase | **narrowed** (check 998 L140, L146, L213-219) | Theorem-grade in the lane for Villain at beta >= 2^14. The cited published Wilson supplier of "no seed" FAILS. It binds a tool only if the tool's hypothesis holds for U(1); a hypothesis with a Wilson SU(2) first-passage clause is not bound. |
 | C2 | Free photon "through the rate"; the floor 17.04 | **stands** for the full trace (check 988 L452) | Not for a restricted sector. |
-| C3 | Product with a massless factor (Lemma PT, Corollary PT1) | PT **stands**; PT1 **stands after correction** (check 998 L140, L147) | Binds a hypothesis that holds on a second factor and survives the product with an admitted no-seed factor. |
+| C3 | Product with a massless factor (Lemma PT, Corollary PT1) | PT **stands**; PT1 **stands after correction** (check 998 L139, L147) | Binds a hypothesis that holds on a second factor and survives the product with an admitted no-seed factor. |
 | C4 | Frozen Z_2 | **not covered** | T_per only, beta above 2.191. |
 | C5 | Frozen Q_8, 2T | **stands** in the frozen limit (check 998 L150; check 965 defect 5) | At least two centre-even flat states in the frozen limit. No fixed finite coupling is inferred. |
 | C6 | w_p at its transition coupling (Proposition V) | **stands after correction** (check 998 L148) | Failure of T_fix at one coupling, given van Enter and Shlosman and (TM-gen). "A number" is not forced. No statement on branch G. |
 | C7 | K7 line and end point | **stands** as BELIEF (check 998 L149) | A belief-grade analogue of C6 for a seed conclusion only. |
-| C8 | Theorem D2; Lemma SUB | D2 **stands after correction** (check 977); SUB **stands** (check 970 L211) | D2 binds the supremum-over-tilts form at every flow time. Neither binds a typical-tilt form with a bad set (check 970 L207) nor, by any written argument, the averaged form (ABS-flow). |
-| C9 | Lemma SHEET | **stands for SU(2)** after correction; **narrowed** for other groups (check 996 L308-310) | Forms uniform over coupling fields. |
+| C8 | Theorem D2; Lemma SUB | D2 **stands after correction** (check 977); SUB **stands** (check 970 L213) | D2 binds the supremum-over-tilts form at every flow time. Neither binds a typical-tilt form with a bad set (check 970 L207) nor, by any written argument, the averaged form (ABS-flow). |
+| C9 | Lemma SHEET | **stands for SU(2)** after correction; **narrowed** for other groups (check 996 L310-311) | Forms uniform over coupling fields. |
 | C10 | Lemmas CAP, COUNT | **stand** (check 982); COUNT's reading **narrowed** | CAP: (1/2) integral of gam_s ds <= (e^(2 E_1) - 1)/2 for a rate obtained through Theorem BR. |
 | C11 | Ceilings 1/3, 2/3, 0.775, 1.0109 | **not covered** | Ranges of single families. |
 | C12 | ZERO-CEIL (row 977 2.0) | **stands after correction** (check 977 L383) | Caps the output of Theorem POL-BR for the supremum form at 2 beta/(e^beta - 1), so it excludes the a = 30 seed through that formula. It is a statement on one formula. |
 | C13 | Lemma NEC (row 968 4.1): k* >= 2 beta log(1/E_1) | **stands** (check 968, Section 4 heading) | Given the repaired POL-BR and Proposition HC. |
-| C14 | DEN, "no room" (row 960) | **narrowed** (check 960 L379) | One one-side, seed-time comparison; at most g/23. |
+| C14 | DEN, "no room" (row 960) | **narrowed** (check 960 L378) | One one-side, seed-time comparison; at most g/23. |
 | C15 | Proposition NP (row 1003) | **not covered** (same-provider check 1006) | No proof of (CAS) by induction on finitely many values of D. |
 | C16 | The five-dimensional test; instanton and refilling tests | **not covered** | As reported. |
 | C17 | Proposition SI, Lemma PT-inf, the constants log m (row 1017) | **not covered** (same-provider check 1019) | Soft rigidity statements on blow-down limits fail. |
@@ -442,7 +442,7 @@ L142-170); row 982 Steps 2-4 and 8.4 (`gap-hcphys-max.md` L40-163, L258-275); ro
 |---|---|---|---|---|---|---|---|---|
 | 1 | **LC**, level convexity as a carrier to (LSI-br) | fine slice law and bridge marginals nu_s in the fine link metric; entropy over the account's levels below the unit ((P1)-(P3)), plus one inequality at the unit | the unit inequality ((U1) or an LSI of the unit block law), the exact size of the loss between unit metric and fine metric (T3, "roughness"), and (TR-LF) | stronger ((U1) with (TH) gives the seed; no converse) | set aside by rule N2 until 2026-11-15; now provisional | **yes**: N2 / T3 (A2, A10) | decide T3 by hand: is the factor beta_K/beta_0 a property of the model or of the linear count? One session, no run | the lead rule A2/A10; whether the Theorem BR family can be used at all in the continuum form (HC-phys) |
 | 2 | **RF-avg**, averaged and trajectory flow forms at one coupling, with consumer **K4** (the ratio-4 HC/BR-J route) | bridge marginals; Polchinski flow of the middle layer; (ABS-flow), (LOC-COV) with a bad set, (LSI-traj-seed)_a; consumer: Proposition HC on (a; (4a)^3), K_30 = 0.811 at beta 2.3 | (ABS-flow-seed)_a or (LSI-traj-seed)_a or (LSI-J-seed)_a at one beta of the window, then the carry of row 978 R2 ((NOCRIT) and a climb) | unknown/comparable (a fixed-coupling statement of kind (K-one); with the carry it gives (W)) | active, no mechanism; K4 is candidate-complete as an implication (check 960) | **yes** for (ABS-flow) and the integrated form (B6 (b), row 998 6a row 19); (LSI-traj-seed) was never refuted | GUIDE: the entropy form (EC-traj) at intermediate k, beta 2.3, sides 12 to 24 (row 974 left it untested); hours under the lock. By hand: none known | keeps or retires the whole bridge family at fixed coupling |
-| 3 | **GEO**, other geometries for the engine | Theorem S / SH' on other complexes: real second times (Lemma Q), diagonal tori with twisted axis channel, time-dependent squeezes, projected averaging | the same seed with another threshold or box | unknown/comparable (an engine change; it supplies no input) | provisional | **yes** (B1, B2, B3) | by hand: the q = 8/5 line of Theorem SH' (check 960 L393); a diagonal finite-torus transfer construction (check 963 L359). Hours each | thresholds and box sizes only (K_a of route 2 falls); not the wall |
+| 3 | **GEO**, other geometries for the engine | Theorem S / SH' on other complexes: real second times (Lemma Q), diagonal tori with twisted axis channel, time-dependent squeezes, projected averaging | the same seed with another threshold or box | unknown/comparable (an engine change; it supplies no input) | provisional | **yes** (B1, B2, B3) | by hand: the q = 8/5 line of Theorem SH' (check 960 L393); a diagonal finite-torus transfer construction (check 963 L365). Hours each | thresholds and box sizes only (K_a of route 2 falls); not the wall |
 | 4 | **RD / TRI**, the dichotomy or trichotomy as a theorem | Theorem ZD-c, Corollary Z4 (row 720); Corollary TRI (row 1017) | none (given its inputs) | weaker | candidate-complete as a weaker statement | no (A8 is an owner-level rule) | an owner decision; no cost | whether a conditional theorem is a milestone |
 | 5 | **RF-quot**, quotient form | (TILT-COV-quot) box-uniform; gain Q_phi from the gauge orbit | a box-uniform bound; QUOT-CAP caps it if q_0 >= 0.24 uniformly in b | stronger | blocked-local on one number | partly (row 998 6a row 20 rests on a GUIDE; B7) | by hand: q_0 > G_S/beta on side 4 (threshold 0.117; proved 0.064, row 977 9.1). Needs the vacuum on a pinned slice; not cheap | retires the form at theorem grade on small boxes only |
 | 6 | **RE + F3**, sector engines and vortex containers | flux sectors, centre twists; Lemma PAR, Corollary MP (row 1018) | (EV-STEP); (SER) and (SPR) with kappa phi < 1 | weaker (one sector) | blocked-local | partly: FLOOR no longer excludes a seed in a restricted sector (B10 (a)) | none cheap; no mechanism for (SER) or (SPR) | - |
@@ -452,7 +452,7 @@ L142-170); row 982 Steps 2-4 and 8.4 (`gap-hcphys-max.md` L40-163, L258-275); ro
 | 10 | **RC**, a one-scale property | a property of the measure at one scale | none with a consumer | target-equivalent | blocked-equivalent | no (KF (d) failing widens the search; it supplies no candidate) | none | - |
 | 11 | **KF-frame / F2**, typical-field colour frame; pinned short step O1 | (N1)-(N3) of row 1011; (FL), (DEC) of row 1018 | (DEC) and a consumer | unknown | blocked-local | no | none | - |
 | 12 | **Route Z; beta_t path** | zero-free torus families; Identity G | a common zero-free domain; 3D mixing and (NOCRIT) | unknown | blocked on open premises (B10 (b), (d) stand) | no | none | - |
-| 13 | **RG**, hierarchical comparison | Migdal-Kadanoff flows | - | unknown | retired (group-blind; check 998 L155) | no | none | - |
+| 13 | **RG**, hierarchical comparison | Migdal-Kadanoff flows | - | unknown | retired (group-blind; check 998 L156) | no | none | - |
 
 ### 5.2 Kill pass (skill step 7), one line per route
 
@@ -488,3 +488,222 @@ Routes that were blocked only by a verdict that no longer stands: **LC** (N2/T3)
 (ABS-flow) and the integrated form, and **RF-quot** in part; **GEO** (three notes); a seed in a restricted
 sector under **RE** (the FLOOR inference). The family of (K-flow) rows as a whole was freed earlier by rule W2.
 None of them gained a mechanism from the checks.
+
+## 6. Task (3): the top route LC. Its first lemma, the attack by hand, and the verdict
+
+Kind of result: a check of the lane's own argued verdict T3 (row 982), with four small lemmas proved by hand,
+and one corrected filter. It is a result about a carrier. It does not move the wall (W).
+
+### 6.0 Duplicate check (rule 0a), run before the attack
+
+- `library/open-core.md`: no entry of the gap lane (grep for roughness, LSI-br, level convexity, HC-phys,
+  UNIT, LSI-traj, ABS-flow, LIOU: no hit). `library/open-registry.md`: no hit.
+- `FINISH.md`: "T3 and the roughness exponent" are listed OPEN in the RESULT text of rows 982 and 984. Row 1000
+  Step 2 tried to confirm T3; that confirmation FAILS in the cross-provider check (Section 2.14). N4 of row
+  982 (a one-loop test of the exponent) was never queued. No live row attacks T3. Row 1018 does not touch it.
+- Prior statements used below, with credit: Theorem BR, the Gaussian mode and the linear ceiling (row 947,
+  `gap-fc-max.md` 5.2, 5.4, 5.5); Elitzur's argument for the pair (row 941 (A5); Lemma Z, row 968 3.2); Lemma
+  CAP, Lemma TEL and T3 (row 982); the endpoint proof of the energy identity and the one-mode check (the
+  gpt-6-astra checks of rows 982 and 1000); the port answer on equal-time statements (row 985). Time
+  decimation is a known family (row 962 B7, rows 846-877) and is not proposed again.
+
+### 6.1 The route, and the statement that blocked it
+
+**Route LC.** Prove (LSI-br)_s on the fine lattice with (1/2) integral of alpha_s ds >= M_H a_iota, M_H free of the
+cutoff, from the account's level convexity (P1)-(P3) below the unit and one inequality at the unit. Theorem BR
+then gives (HC-vac), and Proposition HC gives the decay of the thermal sum.
+
+**T3 (row 982, `gap-hcphys-max.md` L88; its reading at L99).** "Needed (Lemma CAP): sup_s alpha_s >= 2 beta_0 M_H a_iota, bare
+beta_0. Given by the port: stiffness a_- beta_k at level k ... one level-k bond moves L^(3k) fine slice links
+by L^(-k) each, so ||R_0 D_k||^2 is of order L^k. A level-by-level bound (Lemma TEL) then gives 1/alpha of
+order the sum over k of L^k/(a_- beta_k) ... alpha of order a_- beta_K a/l_unit ... Benchmark: a Gaussian field
+with independent levels of stiffness beta_k satisfies (P1)-(P3) and has exactly this slice precision. So no
+argument from (P1)-(P3) alone gives more."
+
+**The first lemma of the route** is therefore the decision of T3: is the factor beta_K/beta_0 forced on
+every proof that goes through the levels, or is it a property of one estimate?
+
+### 6.2 Setting, and the one identity taken from the lane
+
+As in Theorem BR (`gap-fc-max.md` L128-142). beta is the bare coupling, b = 1/beta. (X_t), t in Z, is the
+stationary vacuum chain on M in R^N, with one-step law J and transition operator P, self-adjoint on L^2(nu).
+For continuous f on M, u_s^f(y) = E[f(X_1) | Y_s = y] is its bridge interpolant, 0 < s < b, and
+
+  EE(f) := integral over (0, 1/beta) of E_(nu_s) |grad u_s^f|^2 ds   (the bridge energy of f).
+
+**(E1) Energy identity.** EE(f) = ||f||^2 - ||P f||^2 = <f, (1 - P^2) f>_nu for every continuous f.
+Source: row 982 Lemma CAP (a), (a') (`gap-hcphys-max.md` L66-68); the two end limits are written in the
+gpt-6-astra check (`gap-hcphys-check-astra.md` L42-55, "HOLDS AFTER CORRECTION"). I use it as given and
+did not re-derive it. Every statement below that names (E1) is "PROVED given (E1)".
+
+### 6.3 Four lemmas (PROVED by hand; elementary; not checked)
+
+**Lemma S1.** Let P be a self-adjoint contraction on a Hilbert space and T >= 1 an integer. Then, as
+quadratic forms, 1 - P^2 <= 1 - P^(2T) <= T (1 - P^2).
+Proof. By the spectral theorem it is enough to take a number mu = lambda^2 in [0, 1]. Then
+1 - mu^T = (1 - mu)(1 + mu + ... + mu^(T-1)), and the second factor lies in [1, T]. QED
+
+**Proposition FR (the bare diffusion bound; PROVED given (E1)).** For continuous f on M and every T >= 1:
+
+  EE(f) <= ||f||^2 - ||P^T f||^2 <= T EE(f),   that is   (1/2) E |f(X_(2T)) - f(X_0)|^2 <= T integral over (0, 1/beta) of E_(nu_s) |grad u_s^f|^2 ds.
+
+Proof. ||f||^2 - ||P^T f||^2 = <f, (1 - P^(2T)) f>. Apply Lemma S1 and (E1). For the second form,
+E |f(X_(2T)) - f(X_0)|^2 = 2 ||f||^2 - 2 <f, P^(2T) f>. QED
+Reading. The bridge has length 1/beta. So the mean-square displacement of any slice function in one step
+is at most 2/beta times the mean over s of its Dirichlet energy. The coupling is the bare one, at every
+lag T. No gap is assumed. The statement holds for every model with this kernel: it is blind.
+
+**Lemma EL (Elitzur at every time lag; lags 0 and 1 are row 941 (A5), row 947 5.5 and row 968 Lemma Z).**
+On a cubic periodic box of side at least 3, for all integers k >= 0 and all links l, l':
+
+  E[X_(0,l) (x) X_(k,l')] = delta_(l l') (tau_k/4) Id_4,   tau_k := E <X_(0,l), X_(k,l)>,  tau_0 = 1,  tau_(2j) >= 0.
+
+So for every z in R^N and f_z := <z, .>:  <f_z, P^k f_z> = tau_k |z|^2/4,  Var_nu(f_z) = |z|^2/4,  and
+||f_z||^2 - ||P^T f_z||^2 = (1 - tau_(2T)) |z|^2/4.
+Proof. T_0(x, w) = e^(-V(x)/2) e^(beta <x, w>) e^(-V(w)/2) is invariant when one gauge transformation acts on x
+and on w, and its top eigenfunction is unique, so it is gauge invariant. Hence the law of the whole path is
+invariant under gauge transformations that do not depend on the time. Two distinct links do not have the
+same pair of end sites. For l != l' take the central element -1 at an end site of l that is not an end
+site of l': it changes the sign of X_(0,l) and not of X_(k,l'), so the expectation vanishes. For l = l'
+the matrix commutes with q -> g q h^(-1) for independent g, h at the two ends, that is with SO(4), so it is a
+multiple of Id_4; take the trace. The same flip gives E X_(0,l) = 0. tau_(2j) = 4 <f_z, P^(2j) f_z>/|z|^2 >= 0. QED
+
+**Corollary NS (no soft linear statistic; PROVED).** In the ambient coordinates in which Theorem BR is
+posed, the slice covariance is exactly (1/4) Id_N, and every linear statistic <z, x>, smooth at the unit scale
+or rough, has the autocorrelation tau_k of one link. A covariance of the form sum over k of
+R_0 D_k C_k D_k^T R_0^T with norm of order L^K/beta_K is not the covariance of the slice law in these
+coordinates. (For nu_s the same holds with v_s of row 947 5.5 in place of 1/4.)
+
+**Lemma KL (a Gaussian chain carries the bare stiffness at every frequency; PROVED).** One real mode, as
+in row 947 5.4: the kernel is the heat kernel of time 1/beta, m(dw) = e^(-c w^2/2) dw, c > 0, and
+omega := log(1 + c/beta). Then the vacuum chain is the stationary Gaussian process with
+E[X_0 X_k] = sigma^2 e^(-omega |k|), sigma^2 = 1/(2 beta sinh omega), and:
+
+- (i) its spectral density is S(p) = 1/(beta (2 - 2 cos p) + 2 beta (cosh omega - 1)), p in [-pi, pi];
+- (ii) E |X_T - X_0|^2 = (1 - e^(-omega T))/(beta sinh omega) <= T/beta for every T >= 1;
+- (iii) for every finitely supported real sequence (c_t) with sum zero, Var(sum of c_t X_t) is at most its
+  value for the free walk with step variance 1/beta, namely (1/beta) times the integral over [-pi, pi] of
+  |c-hat(p)|^2/(2 - 2 cos p) dp/(2 pi).
+
+Proof. The two-slice law J has precision matrix [[beta + c, -beta], [-beta, beta + c]] (`gap-fc-max.md` L510),
+and beta + c = beta e^omega. So E[X_1 | X_0] = e^(-omega) X_0, and the precision of nu is
+(beta + c) - beta^2/(beta + c) = beta (e^omega - e^(-omega)) = 2 beta sinh omega. A stationary Gaussian Markov chain with
+these two numbers has the stated covariance. (i) The sum over k of e^(-omega |k|) e^(i k p) is
+sinh omega/(cosh omega - cos p); multiply by sigma^2. (ii) E |X_T - X_0|^2 = 2 sigma^2 (1 - e^(-omega T)), and
+1 - e^(-omega T) <= T (1 - e^(-omega)), and (1 - e^(-omega))/sinh omega = 2/(e^omega + 1) <= 1. (iii) The variance is the integral
+of |c-hat|^2 S dp/(2 pi), S(p) <= 1/(beta (2 - 2 cos p)), and c-hat(0) = 0 makes the integral finite. QED
+
+Consequences, each one line from (i)-(iii), for any Gaussian chain with this kernel (a product of such
+modes):
+
+- (K1) The precision of the path measure in a mode is beta (2 - 2 cos p) + mu^2, mu^2 = 2 beta (cosh omega - 1). The
+  coefficient of the time-like difference term is the bare beta at every frequency. It does not run.
+- (K2) Slice variance and rate are tied: 2 beta sigma^2 sinh omega = 1. A mode with sigma^2 >= S has omega <= 1/(2 beta S).
+- (K3) If a two-sided, isotropic form bound a_- beta_K (2 - 2 cos p + q^2) <= beta (2 - 2 cos p) + mu^2 <=
+  a_+ beta_K (2 - 2 cos p + q^2) holds for one frequency with 2 - 2 cos p >= q^2, then beta <= 2 a_+ beta_K.
+
+### 6.4 T3 in the valid form of a discard test (skill 6c)
+
+The tool: H = "(P1)-(P3) at the levels below the unit, and one inequality at the unit"; T = "(LSI-br)
+with a rate free of the cutoff"; the class K = reversible chains with the kernel e^(beta_0 <x, w>), on which
+Theorem BR is posed. T3 says "H does not give T", by a benchmark M'.
+
+1. **The benchmark is outside K (PROVED for Gaussian chains, given the reading of (P1) in (K3)).** A
+   Gaussian chain with the slice variance of the count, sigma^2 of order L^K/(a_+ beta_K) in a unit mode, exists.
+   By (K2) its rate is at most a_+ beta_K/(2 beta_0 L^K): this is exactly the loss that T3 names. But by (K1) and
+   (K3) that chain does not satisfy (P1): its time-like stiffness is beta_0 and its space-like stiffness is
+   of order beta_K^2/beta_0, not beta_K in both. A Gaussian chain with (P1) has beta_0 <= 2 a_+ beta_K. So for
+   beta_0 > 2 a_+ beta_K no Gaussian chain satisfies the premises of T3. The independent-level Gaussian field
+   of T3 satisfies (P1) but is not a chain with the bare kernel (its time-like increments break (ii)).
+   In the words of the skill: M' is outside K, or H(M') is false. This agrees with the cross-provider
+   finding "no law meeting the claimed common premises is constructed" (`gap-d2-inputs-check-astra.md` L41)
+   and makes it exact in the Gaussian class.
+2. **The count is not a statement about the functions that (LSI-br) reads (PROVED).** The count is made
+   in a gauge-fixed chart, for linear statistics. In ambient coordinates no linear statistic is soft
+   (Corollary NS). (LSI-br) is posed for gauge-invariant functions. The check of row 1000 found the same
+   defect at one line (`gap-d2-inputs-check-astra.md` L45-52).
+3. **On gauge-invariant functions the chain gives the bare coupling by an identity (PROVED given (E1)).**
+   For continuous gauge-invariant f of mean zero, Proposition FR with T = 1 and the definition of the
+   gap give Var_nu(f) (1 - e^(-2 E_1)) <= EE(f). (This is the paragraph after Lemma TEL in row 982, there
+   ARGUED because (a') was; with (E1) it is exact.) So no upper bound on gam_s or alpha_s below the bare
+   order follows from the structure of the chain.
+4. **What stays true (PROVED in row 982, Lemma TEL; check 982 HOLDS).** Lemma TEL, used with the operator
+   norm of sum over k of D_k D_k^T/rho_k, cannot return more than a_- beta_K a/l_unit. This is a statement on
+   one estimate.
+
+**Verdict on T3: FAILS as a discard test; it stands as a warning on one estimate.** No model with H true
+and T false is on record, and none exists in the Gaussian class.
+
+### 6.5 The first lemma in a form the chain allows; the attack; where it stops
+
+(LSI-br) reads functions of one slice (or of the bridge point). So a unit-level input has to be a
+statement on a gauge-invariant variable V of one slice.
+
+**Lemma LIFT (PROVED, two lines).** Let mu be a probability measure on R^N, V: R^N -> R^d a C^1 map with
+law rho. Assume (i) Ent_rho(phi^2) <= (2/varrho) integral of |grad phi|^2 d rho for C^1 functions phi on R^d, and
+(ii) G(y) := DV(y) DV(y)^T >= r Id_d for mu-almost every y, r > 0. Then for f = phi(V):
+Ent_mu(f^2) <= (2/(varrho r)) integral of |grad f|^2 d mu.
+Proof. Ent_mu(f^2) = Ent_rho(phi^2), and |grad f|^2 = <grad phi, G grad phi> >= r |grad phi(V)|^2. QED
+
+So on functions of V the fine constant is varrho r. If the unit-level constant is varrho = varrho_0 beta_K (the
+normalisation of (P2)), the bare constant varrho_0 r_0 beta_0 a/l_unit follows from
+
+  (R-pt)   G >= r_0 (beta_0/beta_K) L^(-K) Id_d almost everywhere.
+
+**What is proved towards (R-pt).** Its average along the bridge, for each unit vector e (Proposition FR
+with T = L^K): the bridge energy of <e, V> is at least L^(-K) (||<e, V>||^2 - ||P^T <e, V>||^2). If the
+increment of <e, V> over two units of time has mean square at least c/beta_K, the mean over s of the
+energy is at least c (beta_0/beta_K) L^(-K). Mark: PROVED given (E1) and given that hypothesis on the
+increment, which is not derived from the account here.
+
+**Lemma NB (why (R-pt) has the right size; PROVED, calculus).** Let S_1, ..., S_n be unit vectors of R^d
+with mean Phi != 0, and n-hat := Phi/|Phi|. For a unit vector e orthogonal to n-hat:
+the gradient of <e, n-hat> with respect to S_i is e/(n |Phi|), so the sum over i of its squared norms is
+1/(n |Phi|^2); for the mean itself the sum is 1/n; and <e, n-hat> = <e, Phi>/|Phi|.
+Proof. d n-hat = (Id - n-hat n-hat^T) d Phi/|Phi| and d Phi = (1/n) sum of d S_i. QED
+Reading. Normalising a block average multiplies its fluctuation and its fine gradient by the same factor
+1/|Phi|. So the quotient of variance by squared gradient, which is what a Poincare or log-Sobolev constant
+reads, does not see the normalisation. "Running" (the normalised block variable fluctuates more) and
+"roughness" (its fine gradient is larger) are one factor. The count of T3 pairs the stiffness of the
+normalised variable with the gradient of the linear average. (That the account's block average is of this
+kind is a reading of its definition, CA-I Def 1.5; not re-read in this row.)
+
+**Where the attack stops (four points, each exact).**
+
+- (S-a) (R-pt) is pointwise; Proposition FR gives an average. An average does not give a pointwise bound
+  (for V(y) = y^3 on the line, G = 9 y^4 vanishes at 0 and has a positive mean under any law not carried
+  by 0). No counterexample for the model is claimed. OPEN.
+- (S-b) Hypothesis (i) is not a port. (P1)-(P3) are statements on four-dimensional fluctuation fields in a
+  block gauge (CA-II 80039-80041, 80156-80172, as quoted in row 982 Step 2). A function of one fine slice
+  is not a function of one level's fluctuation field. The account has no equal-time statement: row 985
+  found no slab tori and no decay in Euclidean time ((PQ-EX): NO; (TR-LF): not found). OPEN, and new.
+- (S-c) Proposition FR bounds an energy by an increment. An entropy cannot be bounded by increments of
+  the chain (row 982 Route 2 (a), HOLDS in its check). So FR alone does not give a log-Sobolev inequality.
+- (S-d) Hypothesis (i) at the unit is the order-one input. In log-Sobolev form it is stronger than the
+  seed. It is the wall.
+
+### 6.6 Result of the attack
+
+| Statement | Mark | Where |
+|---|---|---|
+| Lemma S1; Proposition FR (bare diffusion bound at every lag) | PROVED; FR given (E1) | 6.3 |
+| Lemma EL, Corollary NS (slice covariance is Id/4 at lag 0, tau_k Id/4 at lag k; no soft linear statistic) | PROVED | 6.3 |
+| Lemma KL with (K1)-(K3) (Gaussian chains: bare time-like stiffness at every frequency; variance and rate tied) | PROVED | 6.3 |
+| T3 as a discard test | FAILS: its benchmark is outside the class of Theorem BR, for every Gaussian chain | 6.4 |
+| T3 as a warning on Lemma TEL with operator norms | stands (row 982; check 982) | 6.4 |
+| Lemma LIFT; Lemma NB | PROVED | 6.5 |
+| (R-pt), the pointwise roughness of a unit variable | OPEN; its bridge average is PROVED given a hypothesis on increments | 6.5 |
+| A unit-level log-Sobolev inequality for a gauge-invariant variable of one slice | OPEN; not a port; it is the wall in log-Sobolev form | 6.5 |
+| (W), (CAS), the seed | not moved | - |
+
+**Corrected filter (skill: "a corrected filter").** Rule N2 of row 982 and the lead note "a route must use
+the transfer structure at each level" are not discard tests. In the valid form: the factor beta_K/beta_0 is a
+property of Lemma TEL with operator norms, not of the model; the exact relations of the chain (FR, the
+Rayleigh form) carry beta_0; the linear count has no counterpart in ambient coordinates. What comes back:
+route LC as a carrier. Where it matters: off the wall. The route still needs the unit inequality.
+
+**For the lead.** Do not queue a proof row on route LC now. Reason: not T3, but (S-b) and (S-d): its first
+lemma is not a port and its unit input is the wall. Keep the route as the carrier for the day a unit-level
+inequality exists; then (R-pt) is its first open step, and Lemma NB says which size to expect.
+
+No numeric run was made in this row. The lemmas of 6.3 and 6.5 are algebra and one spectral inequality.

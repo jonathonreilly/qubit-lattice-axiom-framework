@@ -5,7 +5,7 @@ lease_until: 2026-11-16T06:24Z
 
 Working file of one worker session, pinned at commit d06a5b87b on `claude/ym4d-hard-route`. Research-stage working state. It grants no status and nothing here is a public claim. Marks used: PROVED (written argument, checkable by hand), ARGUED (argument with a named hole), OPEN, FAILS.
 
-Status of this file: COMPLETE (2026-11-15T23:05Z). Nothing in this file is checked by another model. Sections were appended step by step.
+Status of this file: COMPLETE. Times by `date -u`: file created 2026-11-15T18:25Z, last section written 19:31Z; step times were not measured and none is given. Nothing in this file is checked by another model. Sections were appended step by step.
 
 ## Plan (eight steps, one per response; each appends its result before the next)
 
@@ -30,9 +30,9 @@ Status block (kept current):
 - Step 7 (novelty, ranking, work items W1, W2): done, Section 7. A ninth candidate and the main conclusion: Section 6.
 - Step 8 (report and RESULT): done, Section 8.
 
-Progress marker 1a (18:40Z). Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-356 and rows 998-1013 (L1077-1098); `parts/gap.md`; the four prior reads (rows 1007, 1009, 1010, 1012). Still to read in this step: the in-progress file of row 1011, `library/gap-crux-fp.md` (five-dimensional test, Proposition V), the statements of Lemma PT, Proposition NP, Theorem D2, Lemma SHEET, the exercise skill, `library/open-core.md` (duplicate check).
+Progress marker 1a. Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-356 and rows 998-1013 (L1077-1098); `parts/gap.md`; the four prior reads (rows 1007, 1009, 1010, 1012). Still to read in this step: the in-progress file of row 1011, `library/gap-crux-fp.md` (five-dimensional test, Proposition V), the statements of Lemma PT, Proposition NP, Theorem D2, Lemma SHEET, the exercise skill, `library/open-core.md` (duplicate check).
 
-## 1. Step 1 result: provenance, inputs, and the kill sheet (done 2026-11-15T19:05Z)
+## 1. Step 1 result: provenance, inputs, and the kill sheet
 
 **Provenance.** Anthropic, Claude Fable 5.2, max effort, one session on Mac mini worker 2, no subagents. Nothing in this file is checked by another model. The target is a standalone proof target, so the contract of `GOAL.md` (no computer-assisted step; proofs that could be formalized in Lean) replaces the framework refresher read of the exercise skill. The skill was fetched at main 8b11ae2bb9 with its one reference file `proof-search-governance.md` into `/tmp/row1013-skill/` and read in full. Its literature lens is not run (the row: rows 1007, 1009, 1010, 1012 are that lens).
 
@@ -69,7 +69,7 @@ Progress marker 1a (18:40Z). Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-35
 - (C-mix) the 4D analogue of Proposition 2.1: a mixing bound for Wilson SU(2) at every weak bare coupling, with an explicit length X(beta) whose exponent is below 3/2 times the one-loop exponent, uniform in plaquette strengths up to beta as far as Theorem D (f) needs it. With the carry of row 1010 6.5 (partly RECALLED, with the refilling obstruction K8) it gives the seed on the trajectory.
 - (C-W) the wall (W) directly; (C-CAS) one contraction factor theta below 1 of the Casimir free energy on a bounded range of sizes; (C-seed) the periodic seed at one size.
 
-## 2. Step 2 result: the discovery logic of the 2D proofs, as design rules (done 2026-11-15T19:40Z)
+## 2. Step 2 result: the discovery logic of the 2D proofs, as design rules
 
 **This is a reconstruction from the texts' own structure. It is not a fact about how the proofs were found.** All mathematics restated is OpenAI's. Primary texts fetched into `/tmp/row1013-on`, `/tmp/row1013-o4`, `/tmp/row1013-o3` (not committed). Read here in the primary text: [B] "Exponential decay in two-dimensional classical O(n) models" pp. 1-12; [28] "Sharp mass bounds for the two-dimensional O(4) model" pp. 4-8. The rest is cited through rows 1007, 1009, 1010 with their line numbers. [15] = the O(3) continuum paper.
 
@@ -90,7 +90,7 @@ Progress marker 1a (18:40Z). Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-35
 
 **What this says an inventor needs in 4D (the three slots).** (i) A response quantity with a blind upper bound and gradient invariance (R2, R3). (ii) Two non-commuting families of trivial moves whose commutator is the twist, with a scale-invariant cost (R4-R6). (iii) A representation that turns a small response into decay of all observables (R9), inside a class that survives Theorem D2, the slab device and Lemma SHEET (R7). Row 1011 tests the choice (i) = Schrodinger-functional stiffness, (ii) = field-strength bracket of gauge waves. Step 3 fills the slots differently.
 
-## 3. Step 3 result: eight candidate mechanisms for 4D lattice SU(2) (done 2026-11-15T21:10Z)
+## 3. Step 3 result: eight candidate mechanisms for 4D lattice SU(2)
 
 Notation. Links U_l in SU(2), plaquette weight exp(beta x_p), x_p = (1/2) tr U_p. A **link-end** is a pair (l, x) with x an end of l; a **corner** is a pair (p, x) with x a site of p. Lab frame = the frame in which the integration variables are written; no gauge is fixed unless said.
 
@@ -100,14 +100,14 @@ Lane grep before writing (terms: white noise, corner twist, non-central, biharmo
 
 **C1. Corner-twist family inequality (the port of [B], not of [28]).**
 - Object. Left and right translations of single links, U_l -> e^(F_(l,x)) U_l e^(-F_(l,y)), F a field on link-ends with values in su(2). They are changes of Haar variables. They turn the action into a **corner-twisted action**: at each corner (p, x) a group element G_(p,x) is inserted between the two links of p at x. W(G) = E exp(beta sum_p [x_p(G) - x_p]) has the exact invariance W(G^F) = W(G). A gauge transformation is the case F_(l,x) = lambda_x for all link-ends at x.
-- (a) Monotone: the response R(theta, theta) = -D^2 W for one-axis corner twists theta c; or the finite ratio Z(t)/Z(0). (b) Class: every finite subcomplex, strengths in [0, beta], any pinned link set; conditioning keeps it, as in [B]. (c) Identity: W(delta F) = W(B) with B_(p,x) = (1/2)[F_(l,x), F_(l',x)] + O(F^3), the bracket at the corner; [B] (2.10)-(2.15) carry over word for word (edges become corners, vertices become link-ends). (d) Dimension-4 input wanted: sum over modes of (signal)^2/(cost). (e) Consumer: the analogue of [B] Proposition 3.1, then Proposition 2.1.
+- (a) Monotone: the response R(theta, theta) = -D^2 W for one-axis corner twists theta c; or the finite ratio Z(t)/Z(0). (b) Class: every finite subcomplex, strengths in [0, beta], any pinned link set; conditioning keeps it, as in [B]. (c) Identity: W(delta F) = W(B) with B_(p,x) = (1/2)[F_(l,x), F_(l',x)] + O(F^3), the bracket at the corner; [B] (2.10)-(2.15) should carry over (ARGUED, not written out; edges become corners, vertices become link-ends). (d) Dimension-4 input wanted: sum over modes of (signal)^2/(cost). (e) Consumer: the analogue of [B] Proposition 3.1, then Proposition 2.1.
 
 **C2. Centre flux reached through non-central sheet twists.**
 - Object. On a periodic box insert g in SU(2) at one corner of each plaquette of a co-closed sheet (all (1,2)-plaquettes at (x_1, x_2) = (0, 0)). Z(g) is a class function with Z(1) = Z and Z(-1) = Z_tw, the 't Hooft twisted partition function. So g_t = exp(t c), 0 <= t <= pi, is a continuous path between the two flux sectors, which [B] p. 12 would integrate.
 - (a) Monotone: F(t) = -log Z(g_t)/Z(1). (b) Class: periodic boxes (reflection positive). (c) Identity: every element of SU(2) is a commutator, so for every t there are holonomies with [Omega_1, Omega_2] = g_t^(-1) and the classical cost of the twist is zero; in U(1) it is of order beta t^2. (d) The aspect ratio of the box is scale-free in d = 4. (e) Consumer: the flux half of the periodic seed (T_per), or Tomboulis-Yaffe.
 
 **C3. Winding-sector twist.**
-- Object. Dirichlet data on the boundary of a 4D cube, changed by a gauge map Omega of the boundary. Claim (Lemma TWIST below): the change is removable exactly when Omega extends to the cube, that is when deg Omega = 0. So the only gauge twists of pinned boundary data that the bulk can feel are the classes k in pi_3(SU(2)) = Z.
+- Object. Dirichlet data on the boundary of a 4D cube, changed by a gauge map Omega of the boundary. Expectation before the test (from the continuum picture): the change is removable exactly when Omega extends to the cube with small action, that is when deg Omega = 0, so the bulk would feel the classes k in pi_3(SU(2)) = Z. The test (Lemma TWIST, 4.2) shows that on the lattice this expectation is false: every Omega extends.
 - (a) Monotone: Z_k/Z_0. (b) Class: all Dirichlet cubes; conditioning on cell boundaries keeps it and the degree is additive. (c) Identity: pi_3(SU(2)) = Z; none for U(1) or a finite group. (d) The instanton action is scale-free in d = 4. (e) Consumer: none found; possible use in the refilling step (K8).
 
 **C4. Third copy through an auxiliary-boson representation (found again: row 859 family, `gap-brainstorm2-max.md` L178).**
@@ -123,13 +123,13 @@ Lane grep before writing (terms: white noise, corner twist, non-central, biharmo
 
 **C7. Biharmonic frame field (a soft covariant gauge kernel).**
 - Object. Insert 1 = int d Omega rho_alpha(Omega given U), rho_alpha = exp(-(1/alpha) G(U^Omega))/N_alpha(U), G(V) = sum_x abs((div A(V))(x))^2, A(V)_l the su(2) part of V_l. This is an exact probability kernel, as the observation kernel of [15] (3.3) is. The dressed links V = U^Omega carry an honest global colour symmetry V -> k^(-1) V k. Its local version leaves the action and N_alpha unchanged and costs only through G: (1/alpha) times a covariant biharmonic form of k.
-- (a) Monotone: the twist stiffness of global colour, at most 1/alpha times a scale-free form. (b) Class: every background U and every pin; the frame is an O(4) field with fixed right twists, which is inside the class of [28] Section 3.1. (c) Identity: the bracket of global colour rotations; [B] Proposition 2.2 holds word for word, conditionally on U. (d) **The divergence-squared functional is scale-free in d = 4: its mode sum is sum abs(k)^(-4), a logarithm.** This is the 2D harmonic sum of R6, in four dimensions, exactly. (e) Consumer: to be found.
+- (a) Monotone: the twist stiffness of global colour, at most 1/alpha times a scale-free form. (b) Class: every background U and every pin; the frame is an O(4) field with fixed right twists, which is inside the class of [28] Section 3.1. (c) Identity: the bracket of global colour rotations; [B] Proposition 2.2 holds word for word, conditionally on U. (d) **The divergence-squared functional is scale-free in d = 4: its mode sum is sum abs(k)^(-4), a logarithm.** This is the 2D harmonic sum of R6 in four dimensions; it holds for smooth dressed links only (see the kill table). (e) Consumer: to be found.
 
 **C8. Tree-transported translations (covariant moves with Jacobian one).**
 - Object. Fix a rooted spanning tree and an order of the links in which each tree path gamma_l comes before l. The map U_l -> exp(f_l Ad(U_(gamma_l)) c) U_l is triangular, so it keeps the Haar measure although it depends on the field (the argument of Lemma SHEET). It translates each link along a colour axis carried from the root by the field itself.
 - (a) Monotone: a Schrodinger-functional response, but with exact covariant Ward identities and no gauge fixing. (b) Class: Dirichlet cells with a radial tree. (c) Identity: the bracket of two transported axes. (d) Scale invariance of the Yang-Mills action. (e) Consumer: Proposition 2.1 analogue.
 
-## 4. Step 4 result: three exact lemmas, then the kill table (done 2026-11-15T21:55Z)
+## 4. Step 4 result: three exact lemmas, then the kill table
 
 All statements here are written by Claude Fable 5.2 and checked by no one. No numeric run was made.
 
@@ -163,7 +163,7 @@ Proof. Apply (iii) to F = 1 at the start of l and 0 elsewhere: E[(sum_q y_3(U_(q
 
 So rho is the correlation of the field strengths of different plaquettes on one link. For a single free plaquette rho = 0. ARGUED, not proved: rho > 0 for small beta > 0 (first non-zero term from the cube, positive character coefficients), and rho -> 1/2 as beta -> infinity (free-field count: E(1 - x_p) = 3/(4 beta), RECALLED, half the one-plaquette value 3/(2 beta)). A proof that rho > 0 at large beta needs E(1 - x_p) < 3/(2 beta) with a written constant; the lane's RECALLED bound 2/beta is not enough.
 
-**What Lemma WN means.** The Ward identities of link translations live on the **corner graph**: vertices are link-ends, edges are corners. A corner joins two link-ends at the same site. So this graph is a disjoint union of one copy of the 24-edge graph K_(2,2,2,2) per site. The exact analogue of [B] Lemma 2.1 and Proposition 2.2 holds on it (the algebra of [B] p. 4-8 uses nothing else), but it is a statement about one site at a time. There is no path in this graph from one site to the next, so there is no family with a harmonic sum. In the spin model the same graph is the lattice itself.
+**What Lemma WN means.** The Ward identities of link translations live on the **corner graph**: vertices are link-ends, edges are corners. A corner joins two link-ends at the same site. So this graph is a disjoint union of one copy of the 24-edge graph K_(2,2,2,2) per site. The exact analogue of [B] Lemma 2.1 is Lemma WN (iii). The analogue of Proposition 2.2 is expected by the same algebra (ARGUED; not written out). Whatever its form, its cost side is a sum over sites of one-site terms. There is no path in this graph from one site to the next, so there is no family with a harmonic sum. In the spin model the same graph is the lattice itself.
 
 ### 4.2 Lemma TWIST: every gauge twist of Dirichlet data is removable on the lattice (PROVED, one line)
 
@@ -188,7 +188,7 @@ Tests K1-K9 of Section 1.2. "pass" means only that the test does not refute the 
 
 | Cand. | Decisive test and reason | U(1) (K5) | Q_8, 2T (K6) | d = 5 (K7) | D2, slab, SHEET (K3, K3', K4) | PT, NP (K1, K2) | Spec check S0-S4 | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| C1 corner-twist inequality | Lemma WN: the cost form is site-local, so R6 has no harmonic sum; the family inequality is a one-site statement | gain zero (one axis) | uses the Lie algebra | fails in every d, also d = 4 | not reached | not reached | S2 fails (no rate) | **FAILS** (PROVED) |
+| C1 corner-twist inequality | Lemma WN: the cost form is site-local, so R6 has no harmonic sum; the family inequality is a one-site statement | gain zero (one axis) | uses the Lie algebra | fails in every d, also d = 4 | not reached | not reached | S2 fails (no rate) | **FAILS** (Lemma WN PROVED; the conclusion from it ARGUED) |
 | C2 non-central path to the centre twist | Corollary WN2: -Z''(0)/Z(0) = beta rho(beta) times the sheet area; the bound Z'' >= -delta Z that [B] p. 12 integrates is false at t = 0 unless rho = 0 | U(1): the twist costs classically | no continuous path in a finite group | no dimension input | periodic only | feeds the flux half only (RE, blocked-local) | S2 fails | **FAILS** (identity PROVED; rho > 0 ARGUED) |
 | C3 winding-sector twist | Lemma TWIST: Z_k = Z_0 exactly on the lattice | - | - | - | - | - | the object is void | **FAILS** (PROVED) |
 | C4 induced-boson third copy | the weight is not the Wilson weight; colour is not exchangeable given the links; no consumer; Proposition V warns for non-linear weights | - | - | no input | - | - | S0: a frame change (row 1004 family (c)) | **FAILS** for T0 (ARGUED); found again |
@@ -199,7 +199,7 @@ Tests K1-K9 of Section 1.2. "pass" means only that the test does not refute the 
 
 **No candidate survives.** Three die by exact lemmas (C1, C2, C3), five by argued reasons. Every continuous-twist candidate either returns to the Schrodinger-functional family of row 1011 or has a site-local cost form.
 
-## 5. Steps 5 and 6 result: no survivor; what the counterexamples say about the one open door (done 2026-11-15T22:25Z)
+## 5. Steps 5 and 6 result: no survivor; what the counterexamples say about the one open door
 
 Task (4) of the row asks for the first lemma of each survivor, or the counterexample. There is no survivor. The counterexamples are built: Lemma WN with Corollaries WN1-WN3 (C1, C2) and Lemma TWIST (C3). This section adds two lemmas that follow from the same computations. They concern the only door left by Proposition LOC, a response to gauge-invariant boundary data. They do not redo row 1011's port; they are constraints that any such port meets at its first step. On the path of the target only as constraints.
 
@@ -238,7 +238,7 @@ Task (4) of the row asks for the first lemma of each survivor, or the counterexa
 | Lemma SLAB (identity) | PROVED, unchecked | constraint on any gauge class (R7) |
 | Lemma SLAB (no uniform mixing) | ARGUED, given a RECALLED theorem | the same |
 
-## 6. A ninth candidate found while closing the table, and the main conclusion (done 2026-11-15T22:50Z)
+## 6. A ninth candidate found while closing the table, and the main conclusion
 
 ### 6.1 C9: moves along a Laplacian frame (ARGUED; no lemma proved)
 
@@ -259,7 +259,7 @@ This agrees with the lane's sentence "the one selective fact that is provable to
 - **K3' (slab device)** is added to the kill sheet as a test of classes; Lemma SLAB is its exact part.
 - No other filter was changed. Theorem D2, Lemma SHEET, Lemma PT and Proposition NP were used as they stand and re-derived nowhere.
 
-## 7. Step 7 result: novelty, ranking, work items (done 2026-11-15T23:00Z)
+## 7. Step 7 result: novelty, ranking, work items
 
 ### 7.1 Novelty
 
@@ -284,7 +284,7 @@ There is no survivor to rank. Ranked by what each result changes, divided by the
 
 **Not proposed.** (1) A proof that rho(beta) > 0 at large beta (it needs E(1 - x_p) < 3/(3 + 2 beta) with a written constant): it would only complete the kill of C2. (2) The Jacobian of the Laplacian-frame moves of C9: it works above the band only. (3) Any row on C4 (another action), C5 (on file as the frustration bootstrap, with row 834's open inequality), C6, C7.
 
-## 8. Step 8: report (exercise skill, step 9) and RESULT (2026-11-15T23:05Z)
+## 8. Step 8: report (exercise skill, step 9) and RESULT
 
 **What this run did not cover.** No numeric run. No literature search. The primary 2D texts were read only at [B] pp. 1-12 and [28] pp. 4-8; the rest through rows 1007, 1009, 1010. The lane was searched by grep for the listed terms only, not read. Row 1011's result did not exist at this pin. Nothing here is checked by another model.
 

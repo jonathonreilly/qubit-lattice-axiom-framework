@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/floquet_sea_vacuum_source_is_zero_planckian_or_mass_dominated_not_measured_lambda_2026_10_21.py
+runner_sha256: 46ca8c1411743fb1650a15f68d276d6bbe071f819edb2329f6ce599d47909d37
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.93
+status: ok
+----- stdout -----
+== A. bands, sum rules and the sea phase (per block = 8 sites; per tick)
+[PASS] det U(K) = 1 at every K (W(mu) = e^{i mu/2} exp(i(pi-mu)P_-), rank P_- = 4): sum of all 8 quasi-energies = 0
+[PASS] spectrum symmetric w <-> -w; 4 negative and 4 positive bands at each K (mu = 0.37)
+[PASS] mu = 0: K -> K + pi(1,1,1) maps |w| -> pi - |w|, so occupied phases of each K pair sum to -4 pi exactly  max dev 5.3e-15
+[PASS] mu = 0 sea phase per block per tick = -2 pi exactly (= 0 mod 2 pi: the vacuum odds return to themselves each tick); generator (i log U) reading: -pi/4 per site  <E_sea>/block = -6.283185307180
+[PASS] Floquet Hellmann-Feynman: dE_sea/dmu = -<B> per block per tick (-<B>/2 from each half-tick), i.e. -<B>/8 per site  max dev 2.2e-09
+   I0 = 1.1567154153; massive-sea residual per block (E_sea(mu) - E_sea(0)) vs -I0 mu^2: mu=0.05: -2.8865e-03 / -2.8918e-03; mu=0.1: -1.1517e-02 / -1.1567e-02; mu=0.2: -4.5680e-02 / -4.6269e-02
+[PASS] fixed-mass residual: E_sea(mu) + 2 pi = -I0 mu^2 (1 + O(mu^2 ln mu)) per block per tick (does not cancel)
+   sea kinetic stress, mu = 0: zone [-pi,pi): p = -1.4936, zone [0,2pi): p = 1.4936; rho = -6.2832 per block
+[PASS] the sea's pressure is zone-dependent (opposite sign for the two inversion-symmetric zones): the rules do not fix the vacuum equation of state; neither zone gives p = -rho (w = -1)  w = p/rho = 0.2377 or -0.2377
+== B. one-block model M1: dressed vacuum
+[PASS] K-conserving M1 (as supplied, coupling a+ b+ c + h.c.): the empty state is an exact Floquet eigenstate with phase 0; dressed vacuum = bare vacuum, Born-mean source exactly 0  |<0|vac>| - 1 = 0.0e+00, quasi-energy -0.0e+00
+   (Delta, gc): source / formula: (1.20,0.02) -2.983e-04/-2.923e-04; (1.20,0.01) -7.459e-05/-7.308e-05; (3.14,0.02) -3.328e-11/-1.225e-20; (3.14,0.01) -2.080e-12/-3.062e-21; (5.08,0.02) +2.930e-04/+2.923e-04; (5.08,0.01) +7.325e-05/+7.308e-05
+   rotating coupling off: shift / formula - 1 = -2.5e-04, -6.2e-05, -2.5e-04, -6.2e-05; with g = 0.12 on, the O(g^2) cross-dressing adds about 2 percent
+[PASS] counter-rotating variant (supplied a+ b+ c+ + h.c.): Born-mean source <i log U> of the dressed vacuum = its quasi-energy = -(gc^2/2) cot(Delta/2) + O(gc^4), Delta = 2 eps + Omega; vanishes at Delta = pi, flips sign above
+   Delta and 2pi - Delta shifts: -2.982840e-04 and +2.929525e-04 (sum -5.33e-06); the bare deposit is 3.96e-04 > 0 while the total is < 0: the interaction share carries the sign
+[PASS] Floquet sum rule: channels at Delta and 2 pi - Delta (= -Delta mod 2 pi) cancel the vacuum shift; in this balanced toy to machine precision at every g tried, while one channel alone gives -(g^2/2) cot(Delta/2)  balanced shift -2.2e-16 (g=0.02), -1.4e-16 (g=0.3); single channel -2.9227e-04
+== C. condensate rule (Hartree): dressed-sea condensation energy per site per tick
+[PASS] mean-field vacuum energy E_sea(mu) - E_sea(0) + mu^2/(32 g) at the gap root: integration by parts consistent  -2.500315e-04
+   condensation energy per site: mu=0.01: -8.6533e-10 (lead -7.5767e-10); mu=0.001: -1.2442e-13 (lead -1.1365e-13); mu=0.0001: -1.6230e-17 (lead -1.5153e-17)
+[PASS] the mu^2 (m^2 M_P^2-type) term cancels at the gap root; residual = -(a/16) mu^4 ln(1/mu) + O(mu^4), a = 3 sqrt3/(2 pi^2)
+== D. units, measured value, noise wander
+   measured (Planck 2018): rho_L = 5.251e-10 J/m^3 = 1.133e-123 rho_P; Lambda l_P^2 = 2.848e-122; (2.3 meV)^4 = 5.84e-10 J/m^3
+[PASS] measured rho_Lambda / rho_P = 1.13e-123 (Omega_L 0.6847 +- 0.0073, H0 67.4 +- 0.5): nonzero at > 90 sigma
+   massless sea, generator reading (-pi/4 /site)    |rho|/rho_P = 1.08e-03  (x 9.5e+119 measured)
+   massless sea, phase-mod-2pi reading              |rho|/rho_P = 0.00e+00  (= 0, measured excludes 0)
+   band-relative (relays relative to the sea)       |rho|/rho_P = 0.00e+00  (= 0, measured excludes 0)
+   fixed-mass residual, electron                    |rho|/rho_P = 1.16e-47  (x 1.0e+76 measured)
+   fixed-mass residual, top                         |rho|/rho_P = 1.33e-36  (x 1.2e+87 measured)
+   condensate residual, electron                    |rho|/rho_P = 3.87e-90  (x 3.4e+33 measured)
+   condensate residual, top                         |rho|/rho_P = 3.76e-68  (x 3.3e+55 measured)
+   condensate residual, 50 meV neutrino             |rho|/rho_P = 4.70e-118  (x 4.1e+05 measured)
+[PASS] no rule-level vacuum source lands within 3 orders of measured: Planckian, zero, or >= 1e30 too large for any charged species
+   wander over the Hubble volume after 13.8 Gyr (2.8e+60 half-ticks), relic neutrinos 336/cm^3, delta = 0.05 eV   : 1.6e-139 rho_P
+   wander over the Hubble volume after 13.8 Gyr (2.8e+60 half-ticks), electrons 0.22/m^3, delta = m_e             : 4.2e-137 rho_P
+   wander over the Hubble volume after 13.8 Gyr (2.8e+60 half-ticks), baryons 0.25/m^3, delta = m_p               : 8.2e-134 rho_P
+   wander over the Hubble volume after 13.8 Gyr (2.8e+60 half-ticks), same neutrinos, Planck-size jumps pi hbar/tau: 2.1e-110 rho_P
+[PASS] zero-mean record noise: Hubble-volume rms wander with relay-scale jumps is 1e-11 to 1e-19 of the measured value; only Planck-size jumps per record reach it (and overshoot)  max relay-scale 8.2e-134, Planck-jump 2.1e-110
+   not in the rules (literature scaling, Sorkin-type): rho_P/sqrt(N_cells) with N_cells = 2.8e+241 in the Hubble 4-volume -> 1.9e-121 rho_P (x 166 measured); needs Poisson cell-count noise a regular lattice lacks
+   same scaling counted in Planck 4-volumes: 6.9e-123 rho_P; the factor is convention, the H^2 scaling is the content
+supplied: the CL-2 hop and mass parameter, the sea filling and log branch, the M1 couplings (counter-rotating term is a variant),
+  the B^2 rule + Hartree, the unit map a = sqrt(8 pi) l_P and tau = 2a/(sqrt3 c), unimodular reading, jump sizes, densities.
+elapsed_seconds 5.7
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/vacuum_cosmology_navigation_map_check_2026_11_14.py
+runner_sha256: 9181fba244cfd5be5e2cedf8fe08c5d2f0b265d9ca06bcd09f8ffb3321c70f37
+input_fingerprint_sha256: f484d994e13ea3b9e4f9ef7c638442b7d3b61088f2364ba2ca08bf2537fea910
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+Navigation map check: vacuum-cosmology carried and logged notes
+==============================================================================
+[PASS] the map has 13 'Carried notes' sections, each naming one carried note -- 13
+[PASS] no carried note appears in two sections
+[PASS] each section quotes its carried note's current claim_scope verbatim -- 13 of 13 match
+[PASS] each section's runner link is its carried note's own frontmatter runner, and the file exists -- 13 of 13 match
+[PASS] 13 carried and 15 logged source PRs, 28 distinct, none both carried and logged -- carried 13, logged 15, distinct 28
+[PASS] every repository link in the map resolves -- 26 links
+[PASS] control rejects mutant: a quotation with its last word dropped still matches
+[PASS] control rejects mutant: the first section's runner link pointed at the second note's runner
+
+SUMMARY: PASS=8 FAIL=0
+Scope: the map's quotations, runner links, coverage, PR counts and links. The carried notes' science is checked by their own runners.
+
+----- stderr -----
+

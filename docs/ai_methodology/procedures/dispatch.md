@@ -17,8 +17,7 @@ Nothing here grants standing.
 - A brief (next section), and one worktree per worker that survives a reboot
   (`lab_ops.py worktree-add`).
 - The lead's own derivation of the load-bearing step, at least in sketch,
-  where one is possible. Results were strongest when the algebra was worked
-  before the brief and weakest when open mathematics was handed over.
+  where possible: worked algebra dispatched well, open mathematics badly.
 
 ## The brief
 
@@ -43,6 +42,9 @@ Every dispatch names:
 8. **External actions.** Commit, push, network and PRs are denied unless
    named. Name the procedures the worker may follow; it runs no `check`,
    `land` or `audit`. Do not ban repository instructions wholesale.
+9. **Provenance.** Its `Provenance` line (`RULES.md` section 5); an id or
+   effort it cannot see is `subagent-of-<lead session>` or `unreported`. A
+   fresh clone sets `user.name` and `user.email` before its first commit.
 
 Keep it neutral: a proof sketch is a candidate with its unproved steps
 labelled. Mark context "do not copy into files". When an edit touches text
@@ -58,17 +60,15 @@ that code reads, list strings that must survive and strings that must go.
    what the machine carries, jobs times one job's peak memory, not a quota.
 3. **Lock numerics.** One numeric job per machine: `lab_ops.py numeric-lock
    acquire`, `refresh` before expiry, `release` after the job has stopped.
-   (Reference: launch checks.)
 4. **Launch** in the background with standard input closed, the prompt read
    from the brief file, and the log and final message captured. Record the
    exact command. (Reference: launch and reliability.)
 5. **Confirm.** Say "launched" until the first events show the model and
    effort; compare them with the role's row in `SETTINGS.md` and the target's
    model floor; then say "running". (Reference: launch checks.)
-6. **Wait** for the worker's exit or deadline, on the handle your own launch
-   returned. Silence, idle local CPU and an empty output file are not a hang.
-   Do not poll or match log text: workers echo the prompt. (Reference:
-   launch and reliability.)
+6. **Wait** for exit or deadline on your own launch's handle. Silence, idle
+   local CPU and an empty output file are not a hang. Do not poll or match log
+   text: workers echo the prompt. (Reference: launch and reliability.)
 7. **Salvage** on a tool failure or expired deadline: read status, checkpoint
    what exists, interrupt only your own worker, revalidate what you recover.
    A partial transcript is no result. Relaunch smaller. (Same reference.)

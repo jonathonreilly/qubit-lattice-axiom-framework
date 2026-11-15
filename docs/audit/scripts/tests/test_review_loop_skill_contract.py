@@ -1712,6 +1712,7 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
             work, log = root / "work", root / "calls.log"
             work.mkdir()
             env = dict(os.environ, GIT_CONFIG_NOSYSTEM="1", GIT_CONFIG_GLOBAL=os.devnull,
+                       GIT_COMMITTER_NAME="Fixture", GIT_COMMITTER_EMAIL="fixture@example.invalid",
                        GIT_CEILING_DIRECTORIES=str(root), BASH_ENV=str(root / "doubles.sh"))
             subprocess.run(["git", "init", "-q", "-b", "main"], cwd=work, env=env, check=True)
             (root / "train.txt").write_text(train_text)

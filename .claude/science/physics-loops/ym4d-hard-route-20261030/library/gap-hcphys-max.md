@@ -61,7 +61,7 @@ The statement under test is the route of N2: *(LSI-br) on the fine lattice from 
 
 ### 3.0 Lemma CAP (the size the bridge constants must have). PROVED given Theorem BR, steps (ii) and (iv); by hand; not checked
 
-Setting of Theorem BR. For gauge-invariant continuous f let u_s be its bridge interpolant (u_s = N_s/h_(s'), `gap-fc-max.md` 5.2 (i)), and let gam_s be the best constant in Var_(nu_s)(phi) <= (1/gam_s) integral |grad phi|^2 d nu_s over gauge-invariant phi.
+Setting of Theorem BR. For gauge-invariant continuous f let u_s be its bridge interpolant (u_s = N_s/h_(s'), `gap-fc-max.md` 5.2 (i)). Let gam: (0, 1/beta) -> [0, infinity) be piecewise continuous with Var_(nu_s)(phi) <= (1/gam_s) integral |grad phi|^2 d nu_s for gauge-invariant phi in C^1 with bounded gradient (the hypothesis of (BR-gap)). The first excited state f_1 is continuous, since P has a continuous kernel.
 
 (a) *Energy bound.* For every 0 < eps < 1/(2 beta): integral over [eps, 1/beta - eps] of E_(nu_s) |grad u_s|^2 ds <= ||f||_2^2 - ||P f||_2^2 = <f, (1 - P^2) f>_nu.
 
@@ -73,6 +73,8 @@ Proof. (a) Step (ii) of Theorem BR with q = 2 constant: F(s) := integral u_s^2 d
 (b) Take f = f_1, the first excited state, of mean zero and norm one. The mean of u_s under nu_s is the mean of f (the kernels of step (iv) map nu_s to nu). F is non-decreasing, so Var_(nu_s)(u_s) = F(s) >= F(eps) >= ||P f_1||^2 = e^(-2 E_1). Hence E_(nu_s) |grad u_s|^2 >= gam_s e^(-2 E_1). Integrate, use (a): e^(-2 E_1) integral of gam_s ds <= 1 - e^(-2 E_1). Let eps -> 0. QED
 
 Reading. Along a family with E_1 = M a_iota the average over s of gam_s is at most 2 beta_0 M a_iota (1 + o(1)), and (HC-phys) needs the average of alpha_s to be at least 2 beta_0 M_H a_iota. So **the bridge constants are of the order beta_0 a_iota times a physical mass, with the bare coupling beta_0.** The number 1/beta_0 is the length of the bridge. This is exact; no renormalised coupling enters.
+
+Hand check in one Gaussian mode (`gap-fc-max.md` 5.4): gam_s = c/(1 + c s) + c/(1 + c s'), the integral of gam_s over (0, 1/beta) is 2 omega, and E_1 = omega. (b) reads omega <= (e^(2 omega) - 1)/2, true, and sharp as omega -> 0. In the proof, e^(-2 omega) 2 omega <= 1 - e^(-2 omega) is the same inequality.
 
 ### 3.1 The tests
 
@@ -142,9 +144,9 @@ Proof. (b), (c): X is C^1 and positive, (log X)' = -U/X. (d): X = log(1 + S) <= 
 
   log N(E) <= E tau + (E/M)(1 + log(2 Theta M/E)).
 
-(c) If E_1 >= M_1 and N(E) <= e^(E t_c - 1) for all E >= M_1 with some t_c, then S(t) <= e^(-M_1 (t - t_c))/(1 - ... ) is small for t - t_c large; precisely S(t) <= integral over E >= M_1 of t e^(-t E) N(E) dE <= (t/(t - t_c)) e^(-1 - M_1 (t - t_c)) for t > t_c.
+(c) For t >= t_c: S(t) <= e^(-E_1 (t - t_c)) S(t_c). (This is the step of Lemma Z of row 720.)
 
-Proof. (a) Markov: N(E) e^(-t E) <= sum over i >= 0 of e^(-t E_i). (b) Put t = tau + (1/M) log(2 Theta M/E) >= tau in (a). (c) S(t) = integral of e^(-t E) dN(E) over E >= M_1 = integral of t e^(-t E) (N(E) - 1) dE, by parts. QED
+Proof. (a) Markov: N(E) e^(-t E) <= sum over i >= 0 of e^(-t E_i). (b) Put t = tau + (1/M) log(2 Theta M/E) >= tau in (a); then X(t) <= E/M. (c) Each term has e^(-E_i t) <= e^(-E_1 (t - t_c)) e^(-E_i t_c). QED
 
 Reading of (b): E/M quanta, each with a phase space of order Theta M/E. It is the count of a gas of mass M in the box, with Theta in place of the volume. So **(HC-phys) with (TH) is, at the level of the thermal sum, the statement that the box has at most the states of a massive gas, up to energies of the order of the volume.** The gap alone does not give this (it gives (d) of Lemma EE only). This is what separates (HC-phys) from the gap, in a form with no metric.
 
@@ -154,7 +156,112 @@ Reading of (b): E/M quanta, each with a phase space of order Theta M/E. It is th
 
 Order of choice. The family and its unit; tau_0 = l and Theta(ell) from (TH); then kappa; then ell.
 
-By Lemma EE (d) and Lemma COUNT (c), (UNIT) follows from two halves: a gap M_1 on the cube, and a bounded thermal sum at one time t_c with t_c a_iota bounded. These are (Z-UNB) and (BDD-Delta) of row 720, Theorem ZD (named match, row 978 5.7). In the hypercontractive form (U1) it is (LSI-traj-seed) of row 970 for the unit effective action in place of the Wilson weight at 2.3 (named match). By T2 the statement must be false for the weights w_p at beta_t(p): there E_1 tends to 0 with the volume, so (d) fails, as it must.
+By Lemma EE (d) and Lemma COUNT (c), the seed follows from two halves (and (UNIT) holds beyond t_c with kappa a_iota = E_1/2): a gap M_1 on the cube, and a bounded thermal sum at one time t_c with t_c a_iota bounded. These are (Z-UNB) and (BDD-Delta) of row 720, Theorem ZD (named match, row 978 5.7). In the hypercontractive form (U1) it is (LSI-traj-seed) of row 970 for the unit effective action in place of the Wilson weight at 2.3 (named match). By T2 the statement must be false for the weights w_p at beta_t(p): there E_1 tends to 0 with the volume, so (d) fails, as it must.
 
-What this step changes in N2: the inequality left at the unit is not an inequality in the fine link metric. Forms (U2) and (U3) do not see the levels below the unit at all, so the loss of T3 does not occur in them. It occurs in any proof of (U1) through Theorem BR on the fine lattice, because A <= (1/beta_0) sup alpha_s (Lemma CAP (c)).
+## Steps 5 to 7. The attack on (UNIT), three routes
+
+Each route is stated with its argument, the exact step where it fails, and what is left.
+
+### Route 1 (Step 5). Theorem BR on the fine lattice, fed by the port: the route N2 posed
+
+Plan. Telescope the entropy of a slice function over the levels (Lemma TEL), use the Bakry-Emery constant a_- beta_k of each small-field level (P2, P3), and add one log-Sobolev inequality for the unit level. Put the result in Theorem BR.
+
+What holds. Lemma TEL in the benchmark. The square-root scaling (T4). Lemma CAP.
+
+Where it fails, three places.
+
+1. *The bare coupling (T3).* Theorem BR returns A/2 <= (1/(2 beta_0)) sup alpha_s (Lemma CAP (c)). The levels k <= K give 1/alpha at least of order L^K/(a_+ beta_K) in the benchmark. So the rate is at most of order (beta_K/beta_0)/l_unit in physical units, and it tends to 0 like 1/log(1/a_iota). Remark on size: the true mass is exponentially small in units of l_unit when the unit is at weak coupling, so this bound lies above the true mass until beta_0 is of order beta_K/(M l_unit). The failure is on the tail of the family. The tail is what (SEED-phys) reads (row 978, R3). Once the levels between the unit and the correlation length are counted as well, the loss against the true rate is the factor (stiffness at the correlation length)/beta_0, at every cutoff.
+2. *No convexity at the unit level.* The level K, and every level between l_unit and the correlation length, has no small-field statement. A log-Sobolev constant rho_K for the four-dimensional unit law, free of the volume, is not in the account and is false for w_p at beta_t(p) (T2).
+3. *Dependent levels and large fields.* The telescoping for dependent levels has a covariance term, and the mixture over large-field regions needs (TR-LF) (T6). Not reached.
+
+What would repair place 1: the exponent of the roughness of the gradient, exactly one (paragraph after Lemma TEL). It is a statement on the non-Gaussian structure at every level, not a port. Left OPEN, not attacked further: place 2 stops the route in any case.
+
+Verdict: FAILS at place 1 on the tail and at place 2 at every cutoff.
+
+### Route 2 (Step 6). A functional inequality with no metric, for the chain in unit steps
+
+Plan. Avoid the fine metric: use the form of the unit-step chain, E_c(phi) := <phi, (1 - P^(2T)) phi>_nu = (1/2) E |phi(U_0) - phi(U_(2T))|^2, and look for an inequality Ent_nu(phi^2) <= C E_c(phi) that gives (U1).
+
+(a) *The plain form is false in every model (PROVED, two lines).* nu has no atoms. Take phi = 1_A/nu(A)^(1/2). Then Ent_nu(phi^2) = log(1/nu(A)), which is unbounded, and E_c(phi) <= ||phi||_2^2 = 1. So no inequality Ent_nu(phi^2) <= C E_c(phi) holds on L^2(nu), for any reversible chain on a space without atoms. Equivalently, the continuous-time semigroup e^(-tau (1 - P^(2T))) is at least e^(-tau) times the identity on non-negative functions, so it is bounded from L^p to L^q for no q > p.
+
+(b) *Restricted to the trajectory class.* The functions p_s(u, .) have entropy at most X(2s) <= Theta, so (a) does not apply to them. But the step from a log-Sobolev inequality to hypercontractivity (Gross) differentiates along a flow and uses the inequality on powers of the evolved function. In discrete time there is no flow except the bridge of Theorem BR, and the bridge is in the fine metric: Route 1.
+
+(c) *The exact dual form (RECALLED: Carlen and Cordero-Erausquin 2009, subadditivity of entropy and Brascamp-Lieb inequalities; not rebuilt).* E[F(U_0) G(U_m)] <= ||F||_p ||G||_p for all F, G is equivalent to: (1/p)(Ent_nu(rho_0) + Ent_nu(rho_m)) <= Ent_(J_m)(rho) for every density rho with respect to the two-slice law J_m, with marginal densities rho_0, rho_m. This has no metric and it can be stated for two slabs of unit-scale variables. It is equivalent to the two-function form of hypercontractivity, so it is a restatement of (U1), not a smaller statement. The passage from slabs of block variables back to fine slices needs the block variables of a slab to screen the fine past from the fine future; that holds only up to the decay of the fluctuation covariances (CA-II 83869), and L^p norms are not stable under such errors.
+
+(d) *A remark that is exact (PROVED, one line).* 1 + S(2s) = integral of p_s(u, w)^2 nu(du) nu(dw), so X(2s) is the Renyi divergence of order 2 of the two-slice law J_s from the product nu x nu. (U2) says that this divergence contracts by 1 - tanh(alpha_* m) per m units of extra lag, from the one start J_s. It is a strong data-processing inequality for one divergence and one start law.
+
+Where it fails: at (b). No functional inequality without a metric lies between (U1) and a log-Sobolev inequality. The only embedding of the chain in a flow is the fine bridge.
+
+Verdict: FAILS; it returns (U1) or (U2) unchanged. What is left of it: the forms (c) and (d) as statements, for a later direct attack.
+
+### Route 3 (Step 7). The entropy-energy form (U3), by a count of states
+
+Plan. Prove (UNIT-EE) on [tau_0, ell] in three ranges. Cold range, S(t) <= 1: Lemma EE (d) gives it from the gap, with kappa a_iota = E_1/2. Hot end: U/X is of order 3/t for a gas of massless quanta (X of order |B|/t^3; RECALLED, Stefan-Boltzmann). Middle range: from the hot end down to t_c.
+
+What holds. Lemma EE and Lemma COUNT. With them the seed needs exactly: (i) a gap M_1 on the cube; (ii) X(t_c; B) <= log 2 at a time t_c with ell - t_c >= (2/M_1) log((log 2)/log(1 + s_*)).
+
+Where it fails: at (ii), the middle range. The start value Theta is of the order of the volume of the cube. The hot-end rate 3/t integrates to a power, X(t) <= X(tau_0)(tau_0/t)^3, which is not small at t = ell for the cube of side 2 ell. So (ii) needs the count of Lemma COUNT (b) with a mass: at most the states of a massive gas, for energies up to the order of the volume. The gap does not give this (it bounds the lowest state only). By Proposition Delta of row 709, in the form quoted in row 978, 5.7 (X(t; b^3) <= (b/t)^3 Delta(t^4) for b >= t; not re-read here): (ii) with t_c = ell/2 follows from Delta((ell/2)^4) <= (log 2)/64 on the symmetric torus of side ell/2, and then the seed needs M_1 ell >= 4 log((log 2)/log(1 + s_*)), about 32.6 at s_* = 1/5041; or the seed follows at once, with no gap, from Delta(ell^4) <= log(1 + s_*)/8. Both are (BDD-Delta) with (MONO-Delta) of row 720, Corollary MB1. **Named match: rows 720 and 727. I stop here and do not attack it** (rule 0a).
+
+A crossed-channel identity, for the record (PROVED from the hypercubic symmetry of the torus partition function). With B' := (2n)^2 x t and mu_0(B') the top eigenvalue of its transfer operator, X'(.; B') its thermal sum: X(t; (2n)^3) = 2n log mu_0(B') - t log lambda_0((2n)^3) + X'(2n; B'). The seed quantity is a difference of two ground-state energies plus a thermal sum of the crossed channel at the longer time 2n. It moves the count to the box B' and does not remove it.
+
+Verdict: FAILS at (ii); what is left is rows 720's open pair, (BDD-Delta) and (MONO-Delta), with the gap (Z-UNB).
+
+### Where the attack stands
+
+(UNIT) failed by three different routes: in the fine metric (Route 1), with no metric as a functional inequality (Route 2), and as a count of states (Route 3). Each stops at the same object: the thermal sum of the cube between the hot end and the cold range, at a coupling of order one. No counterexample to (UNIT) or to (HC-phys) was found: Lemma COUNT (b) agrees with a gas of mass M_H <= m_0++ in every regime that I can check by hand. The stop rule of the row is met.
+
+What this changes in N2: the inequality left at the unit is not an inequality in the fine link metric. Forms (U2) and (U3) do not see the levels below the unit at all, so the loss of T3 does not occur in them. It occurs in any proof of (U1) through Theorem BR on the fine lattice, because A <= (1/beta_0) sup alpha_s (Lemma CAP (c)).
+
+## Step 8. Verdicts, marks, what stays open, next step
+
+### 8.1 Verdicts on the row
+
+1. **Port question.** Below the unit the account's small-field statements give this and no more: each fluctuation law, given the coarser field, is uniformly log-concave on a convex product window, with a constant free of the level, in the Euclidean norm of the rescaled fluctuation variable (unscaled field g_k A). In the level-k link metric the constant is a_- beta_k. The lower form bound is a hypothesis that the account takes from Balaban's operator theorem (CA-II 80163-80172, 75164-75195, 81161-81190, 80039-80041). The account states no log-Sobolev, Poincare or hypercontractive inequality (CA-II 84184-84186; greps in `guide/lane982/SOURCES.md`).
+2. **Can this feed (LSI-br)?** Not at a cutoff-uniform rate. Theorem BR needs bridge constants of order beta_0 a_iota M with the bare coupling (Lemma CAP, exact). The port has the running coupling beta_k. The level-by-level count (Lemma TEL) is short by beta_K/beta_0, one power of log(1/a_iota), on the tail of the family (T3, ARGUED). A fine-lattice proof needs an identity of the transfer structure at every level.
+3. **The inequality left at the unit.** (UNIT): the entropy-energy inequality U(t) >= kappa a_iota X(t) for the thermal states of the cube, on the physical time interval [tau_0, ell]. It is a statement on torus partition functions, hence on the unit effective weights alone (given (EX) on slabs, port question PQ-EX). (HC-phys) in unit steps implies its integrated form (Lemma EE). With (TH), (HC-phys) is the count of a massive gas (Lemma COUNT (b)).
+4. **The attack.** (UNIT) failed by three routes: fine metric, no metric, count of states. All three stop at the thermal sum of the cube between the hot end and the cold range. No counterexample was found.
+
+Kind of result: a reading of the account (port answer); new implications inside this target's gap lane (Lemmas CAP, TEL, EE, COUNT); a direction verdict on N2. It is not a check of the account's proofs and not a correction of its text.
+
+### 8.2 Marks
+
+| Statement | Mark |
+|---|---|
+| Port answer (P1)-(P5), with the quoted lines | read from the text; quotes to be re-read by the checker |
+| Lemma CAP (a), (b), (c) | PROVED given Theorem BR steps (ii), (iv) and (BR-gap); (c) uses the classical step from log-Sobolev to Poincare (RECALLED); not checked |
+| Lemma TEL (independent levels) | PROVED given tensorisation of entropy (RECALLED, classical); not checked |
+| T3 verdict (loss beta_K/beta_0) | ARGUED: the linear count of ||R_0 D_k||^2, the benchmark as a member of (P1)-(P3), and the Bakry-Emery constant on a convex window (RECALLED) are not rebuilt |
+| Roughness exponent equal to one | ARGUED consequence of Lemma CAP if the gap holds; OPEN as a statement at each level |
+| T1b (compact U(1): no first passage), T6 (TR-LF) | ARGUED; (TR-LF) OPEN, a port question |
+| Lemma EE (a)-(d) | PROVED ((a) given Lemma IHC of row 978, unchecked there until row 981 reports) |
+| Lemma COUNT (a)-(c) | PROVED |
+| Route 2 (a): no log-Sobolev inequality for the form of 1 - P^(2T) on a space without atoms | PROVED |
+| Route 2 (c): the dual entropy form | RECALLED (Carlen and Cordero-Erausquin 2009), not rebuilt, not used |
+| Crossed-channel identity (Route 3) | PROVED given the hypercubic symmetry of the torus partition function |
+| (EX) on slabs with unequal sides, for the account's weights (PQ-EX) | OPEN, port question |
+| (UNIT), (HC-phys), (U1), (U2) | OPEN |
+| (BDD-Delta), (MONO-Delta), (Z-UNB) of row 720; (LSI-traj-seed) of row 970 | OPEN, named matches, not attacked |
+
+### 8.3 What this run did not cover
+
+- CA-III and the outline were not opened. CA-I was only grepped. Proofs of the account were not read, only the statements quoted in Step 2.
+- Balaban's operator theorem (CMP 95, 99b) was not read; `~/ym4d-papers` does not exist on this worker.
+- The minimiser kernels D_k of the account were not read; the count ||R_0 D_k||^2 of order L^k is the linear count.
+- Proposition Delta (row 709) and Theorem ZD (row 720) were used as quoted in row 978, not re-read.
+- No numeric run. No GUIDE test was needed for a verdict.
+- The telescoping for dependent levels and the large-field mixture were not written, because Route 1 fails before them.
+
+### 8.4 Next step (each item is a complete brief)
+
+**N1, check (another model, high effort).** Check line by line `library/gap-hcphys-max.md`: Lemma CAP (3.0), with the two end inequalities of Theorem BR (iv) at q = p = 2 and the claim Var_(nu_s)(u_s) = F(s) for a mean-zero f; Lemma TEL (3.3); Lemma EE and Lemma COUNT (4.2); Route 2 (a); the crossed-channel identity. Re-read the quoted lines of CA-II (list in `guide/lane982/SOURCES.md`) and say whether (P1)-(P4) state them faithfully. Verdict per statement. Moves: the direction verdict on N2.
+
+**N2, for the lead (I may not edit other files).** Do not queue a proof of (LSI-br) on the fine lattice from the account's small-field convexity: it is short by beta_K/beta_0 (T3) and has no input at the unit (T2). In `gap-ladder-max.md` 8.4 N2, the statement to keep is (U1) or (U2) in unit steps, or (UNIT-EE); the levels below the unit enter through (EX) and (TH) only. Row 978's reduction and row 720's Theorem ZD meet at one object, the thermal sum of the cube between the hot end and the cold range (Lemma COUNT), so they are not two independent chances.
+
+**N3, reading (Claude Opus 5.5, high; port, quotes only).** Two port questions. (PQ-EX): do the account's steps, as written, build the effective weight and keep Z on tori with unequal sides (a slab B x t with t different from the side of B, and t -> infinity for lambda_0), with the same constants? Start at the outline lines 21521-21532 and the CA statements they cite. (TR-LF): does the account bound the decay in time of a large-field indicator of level k, or only its probability per unit of four-dimensional volume? Quote file and line; answer yes, no, or not found with the greps used.
+
+**N4, hand computation, optional (one observable, one loop).** Test of the roughness exponent of 3.3. Take one explicit gauge-invariant slice function f at block scale (the trace of a plaquette of once-blocked links, in the account's block average). Compute to one loop the two sides of Lemma CAP (a) with gam replaced by the actual ratio: E_nu |grad f|^2/(beta_0 Var_nu(f)) against 1 - (the spectral average of e^(-2E) in the state f Omega). Criteria before the computation: if the one-loop ratio shows the factor beta_0/beta_1 (one block step) with coefficient one, the mechanism is confirmed at one level and a fine-lattice identity is worth a direction row; if the coefficient differs from one, the paragraph after Lemma TEL is wrong and is withdrawn. It decides nothing on (UNIT).
+
+**N5, for the rows at fixed coupling (968 to 977).** Lemma CAP (b) bounds what any bridge route can return: (1/2) integral of gam_s ds <= (e^(2 E_1) - 1)/2. Lemma COUNT (b) is a necessary condition for (HC-traj) with a start value: log N(E) <= E tau + (E/M)(1 + log(2 Theta M/E)). Both can be used as fact tests of a claimed rate.
+
+RESULT: Row 982 (Claude Fable 5.2 max, Mac mini worker 3; author, checked by no one; no numeric run). Port answer: below the unit the account gives only conditional, four-dimensional, small-field uniform log-concavity of each fluctuation law, constant a_- in the Euclidean norm of the rescaled variable (a_- beta_k in the level-k link metric), with the form bound taken as a hypothesis from Balaban's operator theorem (CA-II 80163-80172, 75164-75195, 81161-81190); it states no log-Sobolev or hypercontractive inequality. PROVED by hand (unchecked): Lemma CAP (the bridge constants of Theorem BR must be of order beta_0 a M with the bare coupling; (1/2) integral gam_s ds <= (e^(2 E_1) - 1)/2), Lemma TEL (level-by-level log-Sobolev count, independent levels), Lemma EE ((HC-phys) in unit steps gives the entropy-energy form U >= kappa X, which is exactly what the seed reads), Lemma COUNT ((HC-phys) with (TH) is the state count of a massive gas), Route 2 (a) (no metric-free log-Sobolev inequality for the unit-step chain). ARGUED: the port fed into Theorem BR is short by beta_K/beta_0, one power of log(1/a), on the tail (fact test T3 fails); the other tests pass or bind only the unit inequality. The crux lemma (UNIT) failed by three routes (fine metric, no metric, count of states), all at the thermal sum of the cube between the hot end and the cold range; no counterexample. OPEN: (UNIT), (HC-phys), the port questions (PQ-EX) and (TR-LF), the roughness exponent; named matches not attacked: (LSI-traj-seed) of row 970, (BDD-Delta), (MONO-Delta), (Z-UNB) of row 720. Next: N1 check; N2 the lead should not queue (LSI-br) from sub-unit convexity; N3 port reading of (PQ-EX) and (TR-LF).
 

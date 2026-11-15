@@ -476,3 +476,169 @@ YM the only such point is strong coupling (the electric term), so the method rea
 as `gap-brainstorm-max.md` G15 already says. E5 transports equivalence along a path that is already gapped and cannot
 open a gap. Nothing here reaches order-one coupling.
 
+## Step 6b: topic F (gradient flow and stochastic quantisation as monotones)
+
+Sources: arXiv abstracts in `/tmp/gor1005/f` (not committed). On file (Step 1, F): Shen-Zhu-Zhu 2204.12737 and
+2401.13299, Chandra-Chevyrev-Hairer-Shen 2D YM and 3D YMH, Chevyrev 2202.13359, Chevyrev-Shen, Piazza-Shen 2D,
+Mondal; Luscher's Wilson flow appears in `gap-brainstorm-max.md`, `gap-skeleton-max.md`, `gap-vacsub-max.md` and
+`prior/gap-lit-transport.md`. New items marked NEW.
+
+**F1. Luscher, "Properties and uses of the Wilson flow in lattice QCD", JHEP 1008:071, arXiv:1006.4518.**
+"the gauge field obtained at flow time t > 0 is a smooth renormalized field"; observables at flow time t "probe the
+theory at length scales on the order of sqrt(t)"; topological sectors "rapidly separate" as the lattice spacing goes
+to zero. Grade: the flow equation and its per-configuration monotonicity are exact (the Wilson action decreases along
+its own gradient flow, d/dt S_W(V_t) = -|grad S_W(V_t)|^2 <= 0, recalled, elementary, not rebuilt; label gap until
+written); the field-theory claims are perturbative and NUM. SU(3) (any group). Selective: the per-configuration
+monotone is NOT selective (any gauge action decreases along its own gradient flow, the U(1) action included). The
+derived coupling g_GF^2(t) proportional to t^2 <E(t)> is a running coupling; its growth with t is a (K-flow) quantity
+of the type row 1002 already records (step scaling, H16 there).
+
+**F2. Luscher and Weisz, JHEP 1102:051, arXiv:1101.0963 (NEW).** "For any matter multiplet and to all loop orders, we
+show that the correlation functions are finite, i.e. do not require additional renormalization". Grade: theorem in
+renormalised perturbation theory (all orders), not non-perturbative. 4D, any gauge group. Not selective.
+
+**F3. Gradient flow as an RG (NEW).** Sonoda and Suzuki, PTEP (2019), arXiv:1901.05169: "a concrete correspondence
+between a gradient flow and the renormalization group flow for a generic scalar field theory" with "a particular
+choice of the cutoff function" (exact RG). Abe and Fukuma, PTEP (2018), arXiv:1805.12094: effective action along the
+flow, local potential approximation. Carosso, Hasenfratz, Neil, PRL 121 (2018) 201601, arXiv:1806.01385: a continuous
+real-space RG built on gradient flow, used numerically for SU(3) with N_f = 12. Grades: formal correspondence (scalar
+theory, exact-RG level), approximation (LPA), NUM. Not selective; none states a monotone.
+
+**F4. Waldron, "Long-time existence for Yang-Mills flow", Invent. Math. 217 (2019) 1069, arXiv:1610.03424 (NEW).**
+"finite-time singularities do not occur in four-dimensional Yang-Mills flow, confirming the conjecture of Schlatter,
+Struwe, and Tahvildar-Zadeh." Grade CT (classical PDE). 4D, compact group. Relevance: the classical YM heat flow is
+globally defined in 4D (for smooth data), so a flow-time frame is well posed classically; it is a statement about the
+classical flow, not about the measure, and it is not selective.
+
+**F5. Stochastic quantisation (on file, re-read abstracts).** Shen, Zhu, Zhu, arXiv:2204.12737: Langevin dynamics,
+"ergodicity, functional inequalities, large N limits, and mass gap" assuming |beta| < 1/(16(d - 1)) for SU(N) (strong
+coupling, any d). Shen, Zhu, Zhu, arXiv:2401.13299: same for lattice Yang-Mills-Higgs in a strong-coupling region of
+(beta, kappa). Chevyrev, J. Math. Phys. 63 (2022), arXiv:2202.13359: review of 2D and 3D stochastic YM heat flow,
+renormalised to be "gauge covariant in law", with a state space of distributional 1-forms. Grades LT (strong coupling)
+and CT (local-in-time solution theory in 2D/3D). Selective at strong coupling (a mass gap). Not in 4D; not at order-one
+coupling. The Langevin generator's spectral gap at weak coupling is not known for any non-abelian lattice gauge theory
+in d >= 3 (bounded search, consistent with `prior/gap-3dmix-read-opus.md` L282).
+
+**F6. Monotones along the flow in the quantum theory.** No published monotone of a gradient-flow quantity in the
+quantum measure (e.g. t^2 <E(t)> increasing in t) was found, rigorous or numerical-with-claim. Recalled, not rebuilt
+(label gap): for a free massless photon, scale invariance makes t^2 <E(t)> independent of t at large t, so any
+selective flow-time statement must be a growth statement about t^2 <E(t)>, the same kind of (K-flow) input that row
+1002 found nowhere.
+
+**Step 6b summary.** Gradient flow gives a well-posed classical frame (F4) and a renormalised probe (F1, F2), and
+stochastic quantisation gives gaps at strong coupling (F5). The only monotone is per configuration and blind. Nothing
+reaches order-one coupling in 4D or gives a selective monotone.
+
+## Step 7: synthesis
+
+### 7.1 Sussman-Alpoge account
+
+Credit: Ethan Sussman and Levent Alpoge (text authored with Claude and Codex), `YM4_sketch_500.tex` at `31a47c543775`,
+read through the lane's full-read index `library/sa-index/` (row 244). Grep of the index for every topic of this row:
+adiabatic continuity, Unsal, centre-stabilised, S^3, hyperbolic space, supersymmetry, Gopfert-Mack, Polyakov,
+Bravyi/Hastings/Michalakis: 0 hits. "Wilson flow": 1 hit (chunk-15 L78, an own-counterterm ledger that "transfers its
+coefficient to Wilson flow", the bare action's flow, not the gradient flow). "twist": 15 hits in 7 chunks, all
+background adjoint twists of the covariance (chunk-07 L29, L70, L147; chunk-08 L80; 4.12 refined minimiser), not 't
+Hooft flux. So the account uses none of these frame changes; it states no mass gap (GOAL.md, T0). Row 992 already
+read their 3D supplement (YM3_supplement Sketch C-361-3: a 3D finite-size criterion with an open seed). A direct read of
+their repository tree through `gh api` was attempted in this run and the tool call was denied; I did not retry it.
+
+### 7.2 Table (one row per source; Grade: LT lattice theorem, CT continuum theorem, PT perturbative theorem,
+SC semiclassical, NUM numerical, BEL belief/conjecture; Sel = would tell a gapped theory from one with a massless
+factor)
+
+| # | Source | Statement (short) | Grade | Group, dim | Sel |
+|---|---|---|---|---|---|
+| A1 | Unsal-Yaffe 0803.0344 | deformed YM on R^3 x small S^1: gap, linear confinement; continuity "expected" | SC; BEL | SU(N), 4D deformed | yes at small L |
+| A2 | Shifman-Unsal 0802.1232 | QCD-like, one fermion, double trace: confinement, chi SB at small r; continuity argued | SC; BEL | SU(N), 4D + matter | yes at small r |
+| A3 | Unsal 0708.1772 | SU(2) QCD(adj) small S^1: gap, area law; a chiral transition must occur | SC | SU(2), 4D + adj | yes; continuity fails for chiral data |
+| A4 | Poppitz-Schafer-Unsal 1205.0290 | (m, L) plane: line of centre transitions; pure YM end = thermal transition | SC; BEL | SU(2), 4D + adj Weyl | yes; undeformed continuity FAILS |
+| A5 | PSU 1212.1238 | same mechanism all simple groups | SC | all simple | yes |
+| A6 | Tanizaki-Unsal 2201.06166 | small T^2 with 't Hooft flux: centre-vortex confinement; continuity conjectured | SC; BEL | SU(N), 4D undeformed | yes at small T^2 |
+| A7 | Guvendik-Schaefer-Unsal 2405.13696 | monopole regime and vortex regime connected inside the EFT | SC | SU(N), 4D | yes (weak coupling only) |
+| A8 | Dobozy-Poppitz 2606.22078 | classical fractional-charge saddles across R^{4-k} x T^k | NUM (classical) | SU(N), 4D | no |
+| A9 | Bonati et al. 1807.06558, 2012.13246; Vairinhos 1111.0303 | trace-deformed lattice YM; reconfinement first order | NUM | SU(3), SU(2) 3D | in kind; shows a transition |
+| A10 | Bergner-Piemonte 1410.3668 | lattice SYM + soft mass: deconfined region shrinks to none at small mass | NUM | SU(2), 4D | in kind |
+| A11 | Cossu-D'Elia 0904.1353 | adjoint QCD: four phases in L_c | NUM | SU(3), 4D + adj | continuity fails |
+| A12 | Poppitz 2111.10423 | review; bions need analytic continuation | SC | SU(2) | yes at small L |
+| B1 | Gopfert-Mack CMP 82 | string tension > 0 all g; alpha >= c m_D/beta; continuum = free scalar of mass m_D | LT | U(1) Villain, 3D | YES |
+| B2 | Chatterjee 2602.00436 | log potential for G with central U(1) | LT | U(n)-type, 3D | weak |
+| B3 | Garban-Sepulveda 2107.04021 | perimeter law with monopole correction | LT | U(1) Villain, 4D | shows 4D U(1) massless |
+| B4 | Chevyrev-Garban 2404.09928 | Villain = limit of Wilson/Manton on carpet graph, non-abelian too | LT | any compact, any d | n/a (bridge) |
+| B5 | Athenodorou-Bonati-Soler Calero 2608.27976 | 3D U(1) continuum limit pathological; monopole fugacity fix | NUM | U(1), 3D | in kind |
+| B6 | Laine hep-lat/9604011 | 4D vs 3D reduced theory "prevent rigorous conclusions" | NUM | SU(2)+Higgs | n/a |
+| C1 | van Baal hep-ph/0008206 Sec. 5-6 | S^3: lowest free mode eigenvalue 4 (omega = 2/R); effective Hamiltonian spectra | PT/SC/NUM | SU(2), S^3 x R | NO (curvature gap) |
+| C2 | Aharony et al. hep-th/0310285 | weak-coupling large-N YM on S^3: Hagedorn/deconfinement transition | exact at g = 0; PT | SU(N), S^3 | NO (Gauss-law kinematics) |
+| C3 | Aharony-Berkooz-Tong-Yankielowicz 1210.5195; Ciccone et al. 2407.06268 | AdS_4: Dirichlet b.c. must have a transition in the radius; Neumann believed smooth | PT (1 loop); BEL | SU(N), AdS_4 = H^4 | gap no; boundary data partly |
+| C4 | Lawrie-Oh-Shahshahani 1502.00697 | classical equivariant YM on H^4 | CT classical | SU(2), H^4 | no |
+| D1 | Edwards-von Smekal 0908.4030; 1012.0408 | vortex free energy matched to 2D Ising interface at T_c | NUM + BEL | SU(2), 3D | in kind |
+| D2 | Goller-Porta 2501.10065; Bachmann-Goller-Porta 2508.21502 | RP + chessboard fix pi-flux; massive monopoles; gapped, topological | LT (Hamiltonian) | Z_2 + fermions, 2+1 | yes |
+| E1 | Bravyi-Hastings-Michalakis 1001.0344 | gap stable under small local perturbations of commuting-projector TQO | theorem | spins, any D | yes, near FF point only |
+| E2 | Michalakis-Pytel (Zwolak) 1109.1588 | same for frustration-free with LTQO | theorem | spins | yes, small perturbation |
+| E3 | Nachtergaele-Sims-Young 2102.07209 | bulk-gap stability, no uniform finite-volume gap needed | theorem | spins | yes, small perturbation |
+| E4 | NSY 1810.02428 | LR bounds and spectral flow incl. unbounded on-site terms | theorem | quantum lattice | n/a (frame) |
+| E5 | Bachmann-Michalakis-Nachtergaele-Sims 1102.0842 | gapped path => automorphic equivalence | theorem | spins | presupposes gap |
+| E6 | Lemm-Mozgunov 1801.08915 | finite-size gap > c n^{-3/2} => gapped (FF, boundary) | theorem | spins 1D/2D | yes, FF only |
+| E7 | Cubitt-Perez-Garcia-Wolf 1502.04573 | gap problem undecidable (2D, 1D) | theorem | spins | n/a |
+| F1 | Luscher 1006.4518 | Wilson flow: smooth renormalised field; per-config action decreases | exact (classical) + PT/NUM | any | no |
+| F2 | Luscher-Weisz 1101.0963 | flowed correlators finite to all orders | PT | any, 4D | no |
+| F3 | Sonoda-Suzuki 1901.05169; Abe-Fukuma 1805.12094; Carosso-Hasenfratz-Neil 1806.01385 | flow as RG | formal / LPA / NUM | scalar; SU(3) | no |
+| F4 | Waldron 1610.03424 | 4D YM heat flow: no finite-time singularity | CT classical | compact G, 4D | no |
+| F5 | Shen-Zhu-Zhu 2204.12737, 2401.13299; Chevyrev 2202.13359 | Langevin: ergodicity, LSI, mass gap at strong coupling; 2D/3D SQ solution theory | LT (strong); CT (local) | SU(N), any d; 2D/3D | yes at strong coupling |
+| G1 | Douglas-Shenker hep-th/9503163 | N = 2 -> N = 1: confining, broken U(1)^{N-1} EFT | exact holomorphy + EFT; BEL | SU(N), 4D + adj | yes near N = 2 |
+| G2 | Alvarez-Gaume et al. hep-th/9604004 | soft N = 2 breaking, exact potential for small breaking; pure YM "hints" | SC/EFT; BEL | SU(2) | yes near N = 2 |
+| G3 | Murayama 2104.01179 | SQCD + AMSB exact for m << Lambda; possible transition at m ~ Lambda | SC/EFT; BEL | SU(N_c) + quarks | yes at small m |
+| G4 | Cordova-Dumitrescu 1806.09592 | N = 2 SYM + SUSY-breaking scalar mass: small M gives a Coulomb phase (massless photons) | SC/EFT | SU(2), 4D + 2 adj | shows a massless end |
+
+### 7.3 Reading for row 1004 (no new claim; what the literature supports)
+
+1. **Rigorous and selective:** B1 (3D U(1), all couplings), D2 (Z_2 + fermions in 2+1, by RP and chessboard), E1-E3,
+   E6 (spin systems near a frustration-free point), F5 (strong coupling). None is 4D non-abelian at order-one coupling.
+   Each has a named structural input absent from 4D SU(2) at beta ~ 2.3: abelian duality with point monopoles (B1),
+   a finite group and fermion-fixed flux (D2), frustration-freeness and small perturbation (E), strong coupling (F5).
+   This matches row 1002's filter: each rigorous crossing names a low-dimensional or special-structure input.
+2. **Selective but semiclassical:** every calculable end of a frame change (A1-A7, A12, G1-G3) is selective in kind.
+   Every continuity from that end to undeformed 4D YM on R^4 is a belief, stated as such by the authors (A1 "expected",
+   A2 "we argue", A6 "We conjecture", G2 "hints", G3 "may be in the same universality class").
+3. **Published counter-evidence to continuity:** pure YM on R^3 x S^1 has the thermal transition (A4); the trace
+   deformation has a first-order reconfinement line (A9); adjoint QCD has intermediate centre-broken phases in L (A11);
+   chiral data must jump in QCD(adj) (A3); a soft deformation of N = 2 SYM can end in a Coulomb phase with massless
+   photons (G4); YM in AdS_4 with Dirichlet conditions must have a transition in the radius (C3). So a frame change
+   that carries a gap back must exclude transitions by an argument stronger than "no order parameter".
+4. **Non-selective frame changes:** S^3 and AdS_4/H^4 (C1-C3): the gap at small radius is curvature or Gauss-law
+   kinematics and a free photon has it; uniformity in R is the original problem. Gradient flow (F1-F4): blind
+   per-configuration monotone. Automorphic equivalence (E5): presupposes the gap.
+5. **Nearest to the lane's own work:** the undeformed twisted thin torus (A6, A7) is the one frame change that alters
+   only the geometry and keeps the Wilson action; the lane already attacks it as Route T (rows 678, 679, 842, 862) and
+   records (AC') as the authors' conjecture (`gap-skeleton-final.md` L249). D2 is a technique precedent for the RP and
+   chessboard steps the lane uses there (Theorem BAD, row 842).
+
+## Step 8: what was not done, and the result
+
+Provenance: Claude Opus 5.5, high effort, Mac mini worker 3, pinned at 95fecd964, one session, no subagents, no
+numeric run (reading item; memory_pressure not needed), 2026-11-15 15:54Z to 2026-11-15T16:05Z. Checked by no one.
+
+Not done or not read (each is a gap in this reading, not a finding):
+- Gopfert-Mack full text: Springer paywall; only the full abstract was read. Stopped there per FINISH rules.
+- Primary text read only for Unsal-Yaffe 0803.0344 (Step 2b) and van Baal hep-ph/0008206 Sections 5-6 (Step 4).
+  All other entries are abstract level.
+- Not located or not read: Callan-Wilczek NPB 340 (1990); Hosotani PLB 147 (1984); Cutkosky J. Math. Phys. 25 (1984);
+  van Baal-van den Heuvel hep-lat/9310005; Jaffe-Ritter CMP 270 (2007); Dimock on curved backgrounds; journal
+  reference of A4 (given from memory, marked).
+- The Michalakis-Zwolak = Michalakis-Pytel identification (E2) is mine and not checked against a source.
+- Direct read of the Sussman-Alpoge repository tree through `gh api` was denied by the tool permission; the lane's
+  full-read index of YM4_sketch_500.tex was used instead (7.1).
+- Spectral facts on S^3 and H^n and the free-photon behaviour of t^2 <E(t)> are recalled, not rebuilt (label gap).
+
+RESULT: Row 1005 (literature reading on frame changes for the gap, 7 topics, about 45 sources, 2 primary texts;
+no attack, no new claim; checked by no one): no published rigorous result carries a gap from a changed frame
+(R^3 x S^1, R^2 x T^2 with 't Hooft flux, S^3, AdS_4/H^4, a soft-broken SUSY parent, a Hamiltonian path, a flow
+time) to 4D SU(2) at order-one coupling. The rigorous selective results (Gopfert-Mack 3D U(1); Goller-Porta Z_2 +
+fermions by reflection positivity; Bravyi-Hastings-Michalakis, Michalakis-Pytel, Nachtergaele-Sims-Young, Lemm-Mozgunov
+near frustration-free points; Shen-Zhu-Zhu at strong coupling) each rest on an input that 4D SU(2) at beta ~ 2.3
+lacks. Every calculable end (small S^1 deformed or with adjoints, small T^2 with flux, near-SUSY soft breaking) is
+semiclassical and selective, and every continuity to R^4 is the authors' stated belief or conjecture; published
+counter-evidence shows transitions on several such paths (thermal and reconfinement lines, centre-broken phases in
+adjoint QCD, a Coulomb end of soft-broken N = 2, Dirichlet AdS_4). S^3 and AdS_4 gaps and gradient-flow monotones are
+not selective. Open: everything; (AC') of Route T remains the authors' conjecture, and the sources listed above as not
+read.

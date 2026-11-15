@@ -31,7 +31,7 @@ Marks: PROVED, ARGUED, OPEN, FAILS.
 
 ## State of attack
 
-Steps 1-5 done 07:45Z. Next: Step 7, verdict table and RESULT (Step 6, rebuilds, is folded into Steps 2-5).
+All steps done 08:00Z. Item complete; verdicts in Step 7. Checked by no one; no numeric run.
 
 ## Step log
 
@@ -227,9 +227,52 @@ Mark: **PROVED given four read-offs, two of which are ARGUED**:
 **Lemma MIN (Balaban's background form at 1 is the Hessian of the constrained minimum). PROVED, given CMP 109 (0.21) and (2.6)-(2.8).** Let m(B') = A(U_k(e^{iB'})) at U_{k+1} = 1 (so V^(k) = 1), where U_k(V) is a minimizer of the Wilson action A on {U : M^k(U) = V} (CMP 109 (0.21): "the minima of the functional U -> A''(U) on U : Ubar^k = M^k(U) = V"). Let K be the linear part of M^k at 1 and f_p(B) = min{<A, Delta^W A> : K A = B}. Then the quadratic part of m at 0 is (1/2) f_p.
 *Proof.* Write A(e^{iA}) = (1/2)<A, Delta^W A> + O(|A|^3) near A = 0 (the Wilson action is analytic, minimal and 0 at 1; Delta^W its Hessian). M^k(e^{iA}) = e^{i(KA + O(|A|^2))} (analytic, Lemma LR setting).
 Upper bound: fix B' and A with K A = B'. K is surjective (it has the pivot block L^{-3} I per coarse bond at one step, Step 3 (d), and composition of surjections), so by the implicit function theorem there is A_t = tA + O(t^2) with M^k(e^{iA_t}) = e^{itB'} exactly. Then m(tB') <= A(e^{iA_t}) = (t^2/2)<A, Delta^W A> + O(t^3). Minimize over A: m(tB') <= (t^2/2) f_p(B') + O(t^3).
-Lower bound: the minimizer U_k(e^{itB'}) can be written e^{iA_t} with |A_t| <= C t (Balaban's bound for H_1 B and A_1, CMP 102 (103)-(104), in Landau gauge; gauge choice does not change the action). The constraint gives K A_t = tB' + O(t^2). So m(tB') = (1/2)<A_t, Delta^W A_t> + O(t^3) >= (1/2) f_p(K A_t) + O(t^3) = (t^2/2) f_p(B') + O(t^3), using that f_p is a quadratic form (continuous, and f_p(tB' + O(t^2)) = t^2 f_p(B') + O(t^3)). QED.
+Lower bound: the minimizer U_k(e^{itB'}) can be written e^{iA_t} with |A_t| <= C t: in Landau gauge A_t = A_1 + H_1(tB') - HD(A_1 + H_1(tB')) (CMP 102 (174)) is analytic in t and 0 at t = 0, since A_1 is an analytic function of H_1 B beginning at second order (CMP 102 pp. 305-306, (176)-(177)); gauge choice does not change the action. The constraint gives K A_t = tB' + O(t^2). So m(tB') = (1/2)<A_t, Delta^W A_t> + O(t^3) >= (1/2) f_p(K A_t) + O(t^3) = (t^2/2) f_p(B') + O(t^3), using that f_p is a quadratic form (continuous, and f_p(tB' + O(t^2)) = t^2 f_p(B') + O(t^3)). QED.
 CMP 109 (2.6)-(2.8) at J = 0 say m(B') = (1/2)<H_1 B', Delta_1 H_1 B'> + V(H_1 B') with V of third order. Comparing quadratic parts: <H_1 B', Delta_1 H_1 B'> = f_p(B'). This replaces (r2) and (r3): no formula for H_1 and no property of Balaban's R is needed. What remains used from Balaban: (0.21) (U_k(V) is a constrained minimizer), the O(t) bound, and the statement (2.8).
 
 **pr-lay's side** still uses Lemma GS in the straightened chart: R the orthogonal projection onto Delta N(Q') (SA L7188; pr-lay's R formula is this projection by Lemma R, since ker(Q'G') = G'^{-1} N(Q') = Delta N(Q')), and (QD) for the straightened rows with the block mean Q' (SA L10139 implies it by contrast with the plain average; one-step check in Step 5a, sign from SA's construction): ARGUED for (QD), PROVED otherwise.
 
 **(ID-b) final.** C^* Delta^(k)(1) C = pr-lay (7) at P_0: background parts equal (Lemma MIN; Lemmas V, GS, PS), gauge parts equal (b2), eliminations equal and second-order fibre terms zero (b3). **PROVED, conditional on two ARGUED inputs**: (QD) for SA's straightened rows at 1 (sign), and (r4) the common overall normalization of SA's display L10200-10206 and Balaban's (2.11) (any mismatch is one positive scalar and is harmless for (DET)).
+
+### Step 5e. (QD) for the straightened rows at 1, settled (07:55Z)
+
+**Lemma QD. PROVED on SA's definitions as quoted (row 990 Step 3: SA L9634).** At U_0 = 1 the straightened row Q^st and the block mean Q' satisfy Q^st D lambda = Dbar Q' lambda, at one step and at k steps.
+*One step.* SA's chart: M(e^{iA})(c) = v(c_-) e^{i Q^st(A)(c)} v(c_+)^{-1}, with v(y) "the mean over a block of the change in the contour variables", i.e. v(y) = mean_{x in B(y)} [U(y,x) U_0(y,x)^{-1}], linear part s(y) = L^{-4} sum_{x in B(y)} abar(y,x). Linear parts: K A(c) = s(y) + Q^st A(c) - s(y'), so Q^st A = K A + Dbar s (Dbar s(c) = s(y') - s(y)). For A = D lambda (with (D lambda)(b) = lambda(b_+) - lambda(b_-), the convention in which row 990 found K D lambda(c) = lambda(y') - lambda(y)): abar(y,x) = lambda(x) - lambda(y), s(y) = (mean_{B(y)} lambda) - lambda(y), and Q^st D lambda(c) = [lambda(y') - lambda(y)] + [mean_{B(y')} lambda - lambda(y')] - [mean_{B(y)} lambda - lambda(y)] = mean_{B(y')} lambda - mean_{B(y)} lambda = Dbar(Q' lambda)(c).
+*Consistency check on the sign of v.* Under a gauge transformation u, U(y,x) -> u(y) U(y,x) u(x)^{-1}; at U = 1 the block mean of the contour variables becomes u(y) mean_x u(x)^{-1}, so v -> u(y) ubar(y)^{-1} v with ubar the block mean, and M(U^u)(c) = u(y) M(U)(c) u(y')^{-1} forces e^{iQ^st} -> ubar(y) e^{iQ^st} ubar(y')^{-1}: covariance under the block mean, which is the linear statement above. With the inverse reading of "change" the straightened row would be covariant under u(y)^2 ubar(y)^{-1}, which is not an average; so the reading used is the one SA's text describes.
+*k steps.* SA L10212: Q^st_k = eta Q(W_{k-1}) ... Q(W_0), a composite of one-step linear parts; at 1 each satisfies Q_1 D = Dbar Q'_1, so the composite satisfies it with Q'_k = (Q'_1)^k, which for nested centred odd blocks is the mean over B^k(y) (a mean of L^4 means of L^4 values each). QED.
+
+So the (QD) input of Step 5d is PROVED on SA's definitions; (ID-b) now rests only on (r4) (overall normalization), ARGUED.
+
+### Step 7. Verdicts (08:00Z)
+
+| Item | Mark | Where |
+|---|---|---|
+| (3.33) of CMP 119, exact: sum_c log z^(k)(c) - (1/2) log det(C^* Delta^(k) C) + log int dA e^{-|A|^2/2} | read from PDF | Step 2a |
+| z^(k)(c) is defined nowhere by formula; CMP 119 sends the elimination to CMP 109 Sect. 2 | read | Step 2a |
+| Lemma C: the constants of CMP 119 (3.15) (d(g) log g_k, log sigma_0 per bond; -log z per non-centre block site) and of (3.33) ((1/2) log 2 pi per coordinate) are torus-free numbers times counts proportional to n^4 | PROVED | Step 2c |
+| Lemma ZB (a): the delta elimination is diagonal in the pivots, z^(k)(c) = abs det_g K_c(V^(k))^{-1} | PROVED | Step 3 |
+| Lemma ZB (b): this is the z^(k)(c) of CMP 119 (3.33) | ARGUED (no printed formula) | Step 3 |
+| (ID-a'): log z^(k)(c) is a local, translation-covariant rule of the background on the double block of c | PROVED on (a) | Step 3 |
+| z^(k)(c) at U = 1 equals L^9 for every cell on every torus (matches SA's L^9 and RF61's 36 log L per coarse site) | PROVED | Step 3 |
+| (ID-a): z^(k)(c) and the measure constants are torus-free per cell/bond at U = 1 | PROVED (identification (b) ARGUED) | Step 3 |
+| E_0^(j), reading (i) (the constants of the prefactor, as CA-I (n2) and CMP 119 p. 273 say): the same additive set function on both tori | PROVED | Step 3 |
+| E_0^(j), reading (ii) (Balaban's full vacuum counterterm E^(j)(Lambda_j, 1), CMP 119 (2.25)-(2.27)): exactly the same on both tori | FAILS at CMP 119 (2.27): the sum over X subset Lambda_j depends on the torus through wrapping domains; hand example: log det(-Delta + m^2)/n on Z_1 vs Z_2. Differences are O(e^{-kappa' n}) per site (ARGUED from (iv)); (DET) needs only a bound | Step 3 |
+| The account uses reading (i) | ARGUED (CA-I L104010-104013, L106147-106150) | Step 3 |
+| Item (2): CMP 109 (0.3), G(y,x), (0.10)-(0.12) are SA's (QC1)-(QC3) formula for formula; the account's M is a bond-by-bond local covariant rule near 1; Lemma LR applies; row 990 Step 6b closed | PROVED | Step 4 |
+| Lemma V (Schur complement = constrained minimum; independent of a) | PROVED | Step 5a |
+| Lemma R (pr-lay's R = orthogonal projection onto Delta N(Q') = SA L7188's R) | PROVED | Steps 5a, 5d |
+| Lemma GS (the DRD^T term drops out of the row form, given QD) | PROVED | Step 5a |
+| Lemma PS (plain and straightened charts give the same background form) | PROVED | Step 5a |
+| Lemma QD (straightened rows satisfy QD = Dbar Q' at 1, k steps) | PROVED on SA's definitions | Step 5e |
+| Lemma MIN (Balaban's H_1^T Delta_1 H_1 at 1 = Hessian of the constrained minimum = f_p) | PROVED given CMP 109 (0.21), (2.6)-(2.8), CMP 102 (174)-(177) | Step 5d |
+| Lemma B1 (Balaban's second expression; SA's "vanishes on shell" remark) | PROVED as identity; not needed after MIN | Step 5b |
+| (b2) gauge term: Balaban's G^(2) = SA's G^(2)_V = pr-lay's K_GF at 1 (same function, x_k = g_k^{-2}, trace normalizations checked) | PROVED | Step 5c |
+| (b3) elimination: C = C_V at 1 (unique derivative of the pivot graph); second-order fibre term 0 at J = 0 | PROVED | Step 5c |
+| (ID-b): Balaban's C^* Delta^(k) C at U = 1 equals pr-lay (7) at P_0 | PROVED up to (r4), the common overall normalization of SA L10200-10206 and CMP 109 (2.11): ARGUED; a mismatch is one positive scalar and leaves (DET) unchanged | Steps 5a-5e |
+| CMP 109's plain average has Q' = point evaluation at centres, not the block mean of CMP 99 (3.19); harmless for (ID-b) by Lemma MIN | caveat, PROVED | Step 5d |
+
+**Credits.** T. Balaban, CMP 102 (1985) 277-309, CMP 99 (1985) 389-434, CMP 109 (1987) 249-301, CMP 119 (1988) 243-285: definitions, the step integral and the delta elimination, read from the PDFs on this machine (not committed). Sussman and Alpoge's outline and complete account (with Claude and Codex as authors of their text), commit c7fef8b = 31a47c543775 (outline SHA-256 d7f77d4d...): QC1-QC4, the chart L9634, the soft gauge L7180-7188, the display L10200-10208. Rows 987, 989, 990 of this repository: Lemmas A, P, LR, Z, Z', the (QC15)-(QC16) hand checks.
+
+**What is left (for the lead).** (1) The other-provider line-by-line check of this note (gpt-6-astra). (2) (r4): one sentence from Sussman and Alpoge, or a reading of SA L14091-14107, on the normalization of A relative to Balaban's (2.11). (3) The identification of z^(k)(c) with Lemma ZB's Jacobian rests on CMP 119's sentence, not a printed formula; any normalization variant is covered by Lemma C. (4) Nothing here touches pr-lay W (existence of the inverses) or the top weight of row 990 (iii).
+
+RESULT: Row 993 (Claude Opus 5.5 high, Mac mini worker 3; checked by no one; no numeric run). (ID-a') PROVED: Balaban's delta elimination (CMP 109 p. 268, CMP 119 p. 267) is diagonal in the pivots, so z^(k)(c) = abs det K_c(V^(k))^{-1} is a local covariant rule on the double block of c, and z^(k)(c) = L^9 at U = 1 on every torus. The identification with CMP 119 (3.33)'s unprinted z^(k)(c) is ARGUED. The constants of (3.15) and (3.33) are torus-free numbers per bond, site or coordinate (Lemma C, PROVED). So (ID-a) is PROVED with that identification ARGUED. E_0^(j) is the same additive set function on both tori under the account's reading, the prefactor constants (PROVED). Exact equality FAILS for Balaban's full vacuum counterterm (CMP 119 (2.27), wrapping domains), but (DET) needs only a bound. Item (2) PROVED: CMP 109 (0.3), G(y,x) and (0.10)-(0.12) are SA's (QC1)-(QC3), so the account's block map is a bond-by-bond local covariant rule and Lemma LR closes row 990 Step 6b. (ID-b) PROVED up to one ARGUED normalization (r4). At U = 1, C^* Delta^(k) C equals pr-lay (7) at P_0: the background parts agree (Lemmas V, GS, PS, QD, MIN), the gauge terms are the same function, and the eliminations have the same derivative with no fibre term at J = 0. Open: the other-provider check, (r4), and pr-lay W.

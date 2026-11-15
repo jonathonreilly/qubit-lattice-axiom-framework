@@ -14,6 +14,7 @@ A run guides or refutes at GUIDE level; it proves nothing.
 - 2026-11-14 22:45Z: second wait ended, lock still held by gap-tiesearch-973 (lease to 01:35Z, tielab.py live); memory 49 percent free. No run of this row yet; a third wait started.
 - 2026-11-14 23:30Z: lock free at 23:27Z; acquired as holder gap-escape-976 (status shows holder_id gap-escape-976). Memory 43-46 percent free (top users: an iOS Simulator runtime, not mine), below the 50 percent rule, so no run started; polling memory for at most 60 min.
 - 2026-11-14 23:31Z: memory 60-62 percent free at 23:30Z; lock refreshed (holder gap-escape-976, to 03:31Z). Smoke test (L 8, T 40, beta 2.3, 28 sweeps, 4.5 s; log `guide/lane976/logs/smoke_b2.3_L8.npz`): 0.16 s per sweep; s_1 = 0.47. Production batch `guide/lane976/run976.sh` started 23:31Z with the sizes of 3.5 unchanged (48 runs + vacuum and buffer controls; estimate about 3 h, wall clock limit of the background job 2 h, so it may need a restart for the tail).
+- 2026-11-15 00:14Z: batch done 00:13:31Z (60 runs, no errors), lock released 00:13Z; Steps 5-8 and RESULT written. Item finished.
 
 ## Plan (at most eight steps; one per response)
 
@@ -154,3 +155,95 @@ of slice k over all configurations (added after the criteria; reported, not used
 sweeps) at L 8, T 40 takes about 15 s (0.03 s per sweep; the smoke test's 4.5 s for 28 sweeps was mostly start-up).
 First two runs (beta 2.3, L 8, cold, 80 configurations): s_1 = 0.463, s_2 = 0.402, s_k = 0.40 for k >= 2, largest s_1 seen
 0.496; f_k = f'_k = 0 at every k. Bulk 1 - <P> = 0.40 matches the recalled <P> = 0.60 at beta 2.3.
+
+## Steps 5-6 (done). Production runs (23:31:21Z-00:13:31Z under the numeric lock held by gap-escape-976, memory 60-62 percent free at start; lock released 00:13Z)
+
+60 runs, no error in `guide/lane976/logs/batch976.log`. Sizes exactly as fixed in 3.5: beta 2.3, 2.4 at T = 40; beta 2.6 at
+T = 56; L = 8 and 12; cold and hot starts; 4 seeds x 40 configurations (every 5 sweeps after 300) = 160 configurations per
+cell, 12 cells, 1,920 u_xy configurations in all. Vacuum control: 2 seeds x 40 at L = 8 per beta (vacuum slice = middle
+slice of a free hot-start slab, T 16, 300 sweeps). Buffer control: 1 seed x 40 at L = 8, T = 46 (beta 2.3, 2.4) and 61 (2.6).
+Raw arrays: `guide/lane976/logs/*.npz`; analysis `guide/lane976/logs/ana976.txt` and `ana976.json` (from `ana976.py`).
+
+## Step 7 (done). Results against the pre-set criteria
+
+### 7.1 xy action s_k (mean +- s.e. over 4 seeds; cold start; hot start agrees, see 7.3) and the largest single value
+
+| beta | L | s_0 | s_1 | s_2 | s_3 | s_8 | s_30 | s_45 | largest s_1 of 160 | f_k, f'_k at every k |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2.3 | 8 | 2 | 0.4650(15) | 0.4047(19) | 0.3990(6) | 0.3983(9) | 0.3965(21) | | 0.507 | 0 |
+| 2.3 | 12 | 2 | 0.4653(5) | 0.4042(8) | 0.3969(9) | 0.3991(5) | 0.3991(7) | | 0.496 | 0 |
+| 2.4 | 8 | 2 | 0.4364(13) | 0.3786(11) | 0.3722(8) | 0.3701(12) | 0.3710(6) | | 0.487 | 0 |
+| 2.4 | 12 | 2 | 0.4376(7) | 0.3759(5) | 0.3715(9) | 0.3706(3) | 0.3692(4) | | 0.461 | 0 |
+| 2.6 | 8 | 2 | 0.3874(26) | 0.3322(12) | 0.3300(11) | 0.3297(3) | 0.3310(10) | 0.3281(13) | 0.420 | 0 |
+| 2.6 | 12 | 2 | 0.3905(13) | 0.3329(6) | 0.3316(9) | 0.3297(4) | 0.3293(3) | 0.3290(7) | 0.409 | 0 |
+
+Not one of the 1,920 u_xy configurations has s_k >= 1.8 at any measured k >= 1: the largest xy action of slice 1 seen
+anywhere is 0.507, against the threshold 1.8 and the frozen 2. So f_k = f'_k = 0 at k = 1, 2, 3, 4, 8, 16, 30 (45).
+Error bars as fixed in 3.2: the conservative 95 percent bound with blocks as units is f <= 3/16 = 0.19 per cell; with
+configurations 5 sweeps apart treated as units it is 3/160 = 0.019 per cell and 3/1920 = 0.0016 pooled. The margin
+(0.51 against 1.8; the threshold lies 75 per-configuration standard deviations above the mean s_1 at beta 2.3, L 8
+(spread 0.018), and 165 at beta 2.6, L 12 (spread 0.0085); computed from the npz files)
+makes the bound academic. Slice 1 keeps about 0.06 more xy action than the bulk; by k = 2 it is within 0.005 of the bulk.
+
+### 7.2 Colour order O_k and the frame memory D_k (secondary)
+
+| beta | L | O_1bar cold / hot | O_2 | O_3 | O_k, k >= 4 (noise floor) | D_1 | D_3 | D_8 | D_16 |
+|---|---|---|---|---|---|---|---|---|---|
+| 2.3 | 8 | 0.091 / 0.092 | 0.022 | 0.021 | 0.019-0.020 | 0.091 | 0.048 | 0.024 | 0.025 |
+| 2.3 | 12 | 0.041 / 0.033 | 0.012 | 0.011 | 0.010-0.011 | 0.041 | 0.025 | 0.013 | 0.014 |
+| 2.4 | 8 | 0.126 / 0.130 | 0.024 | 0.020 | 0.020 | 0.126 | 0.074 | 0.028 | 0.024 |
+| 2.4 | 12 | 0.060 / 0.059 | 0.013 | 0.011 | 0.011 | 0.060 | 0.036 | 0.014 | 0.013 |
+| 2.6 | 8 | 0.230 / 0.233 | 0.030 | 0.019 | 0.019 | 0.230 | 0.145 | 0.037 | 0.024 |
+| 2.6 | 12 | 0.123 / 0.168 | 0.016 | 0.010 | 0.010 | 0.123 | 0.078 | 0.021 | 0.013 |
+
+The vacuum-start control gives O and D of 0.018-0.025 at L = 8 at every k: that is the noise floor of a disordered field.
+Reading (GUIDE): the step-1 field carries the boundary-layer colour order of rows 950/952 (O_1 grows with beta, and at
+beta 2.3 falls with L like L^(-3/2), i.e. no order, as row 950 found); the step-k field is at the noise floor from k = 2-3
+on. The memory of slice 0's colour frame (D_k, the displacement of slice k from u_xy along the tie mode) decays over a few
+slices (D_3/D_1 about 0.5-0.65, at the floor by k = 8-16 at every beta and L). One irregularity: at beta 2.6, L = 12, O_1bar
+is 0.123 cold against 0.168 hot (27 percent apart). O_1 is not in a verdict except through the threshold O_1bar/2, and A
+fails on its plaquette clause anyway; I record it as a sign that the colour direction of the ordered layer at beta 2.6,
+L = 12 equilibrates slowly in the heat bath (consistent with row 950's growing susceptibility there), not as a result.
+
+### 7.3 Controls (as fixed in 3.4)
+- (C-start) PASS everywhere: f_3 and f_a are 0 for cold and hot; s_k cold against hot differ by at most 0.003 (k >= 4)
+  against the tolerance 0.05.
+- (C-vac) PASS: vacuum start against u_xy start at k >= 8: 0.399 / 0.398 (beta 2.3), 0.370 / 0.370 (2.4), 0.329 / 0.330 (2.6),
+  within 0.002. Bulk <P> = 1 - s: 0.60, 0.63, 0.67 against the recalled 0.60, 0.63, 0.67. In the vacuum start the frozen
+  slice is typical, so the analogous "within 10 percent of the frozen value" set holds with f' = 0.89-1.00 at every k: the
+  pipeline does detect a set that is not left.
+- (C-buffer) PASS: s_30 at L = 8 with T = 40 against T = 46: 0.397 / 0.399 (2.3), 0.371 / 0.370 (2.4); s_45 with T = 56 against
+  T = 61 at 2.6: 0.328 / 0.334; all within 0.03. (The top slice itself sits higher, s_T about 0.42 at beta 2.3: the half-weight
+  free top, which the buffer removes from k <= a.)
+
+### 7.4 Verdicts (Section 3.3)
+- beta 2.3, 2.4 (a = 30) and 2.6 (a = 45), L = 8 and 12, for A and for A': **TRANSIENT**. 1 - f_3 = 1.00 >= 0.95 (pooled:
+  0 of 640 configurations per beta in A at k = 3). REFUTE is excluded: f_a = 0 against 0.30.
+- Prediction of Step 3b scored: s_1 < 1.0 at all betas (seen 0.39-0.47): correct; f_1 = 0: correct; O_k decays in a few
+  steps: correct (noise floor by k = 2-3).
+
+## Step 8. What this shows and what it does not
+
+Shown (GUIDE, not proof): from the layered pi-flux slice u_xy, the SU(2) Wilson half-slab at beta 2.3, 2.4, 2.6 on L = 8, 12
+leaves the set A of row 975 1(e), and the purely gauge-invariant set A' = {s_xy >= 1.8}, in one step in every one of 1,920
+configurations; the excess xy action is gone by step 2, and the colour order of the step field and the memory of the frozen
+frame are at the noise floor by k = 2-3 and k = 8-16. So the high-action ties of rows 950, 952, 970 at u_xy are transient
+for the trace at GUIDE level, Outcome B of row 975 8.2: by Lemma META, the set A (or A') adds nothing to S(a;B) beyond
+its tiny stationary probability, and this test gives no objection to the box (a; (4a)^3) at a = 30 (beta 2.3-2.4) or 45 (2.6).
+Not shown, and why the result is weak (ARGUED, Step 3b): u_xy is a hilltop of the slice potential (each xy plaquette a
+thin centre vortex at action 2 beta, removable for about 0.9 beta per site in one step along the tie mode), so a set
+defined by "xy action near the frozen value" is left in one step for a classical reason; the run confirms that but could
+not have found anything else. The escape test of 1(e) therefore does NOT test the sets that could actually be metastable
+after relaxation: (i) the colour direction n chosen by the ordered boundary layer at beta >= 2.5 (row 950's order lives in
+the step-1 field, which is not a slice set; D_k suggests its memory is lost in about 8-16 slices, but D is frame-dependent,
+caveat C1); (ii) spatial centre-holonomy (flux) sectors of a small torus at large beta, which a relaxed slice could sit in
+for long (row 975 1(c)(ii) names this as the U(1) failure mode; for SU(2) at L = 8-12 and beta 2.6 the torus is near the
+deconfinement extent, `gap-sc-max.md` 5.7 caveat). A later row that wants a real ESC test should take A = a holonomy
+sector or a fixed-n neighbourhood of the RELAXED slice and start from pi(.|A), not from a frozen point (caveat R1).
+Point start only (R1); L = 8, 12 only (C3; s_k agrees between L = 8 and 12 to 0.003, so no L dependence is visible).
+Nothing in the proof chain changes; Lemma META and Corollary ESC-nec were not re-checked here.
+Credits: slab code and the u_xy slice from row 952 (`guide/lane952/sg2lab.py`, Claude Opus 5.5), the colour-order
+observable from row 950 (`gap-sc-max.md` 5.5-5.7), the test design from row 975 (`gap-ymcons-opus.md` 1(e)). The Sussman-Alpoge
+repository was not needed for this numeric test and was not read in this row.
+
+RESULT: Row 976 (GUIDE, Claude Opus 5.5 high, Mac mini): escape test 1(e) of row 975 run as pre-set: SU(2) half-slab frozen at u_xy, beta 2.3/2.4 (T 40, a 30) and 2.6 (T 56, a 45), L 8 and 12, cold and hot, 1,920 configurations: no configuration has xy action >= 1.8 at any k >= 1 (largest s_1 = 0.51 against frozen 2; s_k at the bulk 0.40/0.37/0.33 by k = 2), so f_k = 0 for A and the gauge-invariant A' at every k; verdict TRANSIENT at all three betas (ties of rows 950/952/970 at u_xy are transient, Outcome B), REFUTE excluded; start, vacuum and buffer controls pass; colour order and frame memory at noise by k = 2-3 and 8-16. Weak by construction (u_xy is a hilltop, left in one step classically, Step 3b); OPEN: escape from metastable sets of the relaxed slice (colour direction n of the ordered layer at beta >= 2.5, centre-holonomy sectors of small tori), a pi(.|A) start, and the seed itself.

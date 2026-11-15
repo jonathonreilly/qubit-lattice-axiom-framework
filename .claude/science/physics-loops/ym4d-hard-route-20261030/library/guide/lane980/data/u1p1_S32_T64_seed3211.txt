@@ -1,0 +1,3 @@
+# pinsheet_u1 mode=1 S=32 T=64 beta=2.300000 ntherm=300 nmeas=1500 nor=4 seed=3211 frozen_links=163840
+# cols: sweep R=|M|^2/A Gp1=|F(p1)|^2/A tau=<cos(P-P')> c0sq=<cos^2 P> plaq(every 10, else -1)
+300 883.39719267 3.29335686 0.92032133 0.44233932 0.88584792

@@ -36,6 +36,8 @@ Author: Claude Fable 5.2 (max), Mac mini worker. Not yet checked by another mode
 - 20:15Z step 3 written (auxiliary fields: Lemma AUX, H1-H3, Lemma HW, Proposition LG, HS1; all five FAIL).
 - 20:18Z step 4 written (Lemma CEN+, Lemma REM, Lemma MC, Identity HAM1; gauge fixings, Hamiltonian, comparisons: all FAIL).
 - 20:22Z steps 5 and 6 written (test table; no survivor for (i); the reopen condition corrected to rigid + charged pins + on the gauge-invariant algebra).
+- 20:25-20:26Z GUIDE control of the algebra of Theorem BH run under the numeric lock (two runs of 27 s; lock released); all four pre-registered readings pass.
+- 20:28Z step 7 written (Identity AV, Corollary AV2, Theorem BH, Lemma GT, Lemma SOFT; reopen (ii) FAILS pointwise).
 
 ## 1. Step 1: inputs, the wall stated twice, the target contract (exercise steps 0 and 1)
 
@@ -629,3 +631,191 @@ A general no-go would need a definition of "exact reformulation". With none, the
 Lemma MC and every Gibbs sampler give measure-preserving maps of the orbit space. With "the new variables are
 link variables and the maps are on-site and rigid" it is Lemma CEN+. With "an added field and a group on it" it
 is Lemma AUX. A statement between these two is OPEN and is not attacked here; no consumer needs it.
+
+## 7. Step 7: the homogeneous-strength case of Proposition B' (proved), and reopen condition (ii)
+
+### 7.0 Pre-registration of a GUIDE control (written before the run; a run may refute or guide, it proves nothing)
+
+Script `/tmp/row1016-scripts/bh_control.py` (plain Python, no numpy; kept beside its output
+`/tmp/row1016-scripts/bh_control.out`). Model: the open box {0,1,2}^3 with all 54 links integrated, weight
+exp(b sum_p w_p t_p), w_p = 1/2 in the boundary faces and 1 elsewhere, b = 1 and b = 3; heat bath; 100,000 sweeps
+after 300; blocked errors (40 blocks). Boundary plaquette p_0 = ((0,0,0); 1, 2), site z = (1,0,0), field
+B = a d lambda_z on the four boundary links at z, X = D_B A, psi = D_B t_(p_0) (central differences, step 1e-4;
+second difference with step 1e-3; step-halving printed). The identities under test are dimension-free, so a
+three-dimensional box is a valid control of the algebra. Readings fixed now:
+- C1: E[X psi] - 2 E[t_(p_0)] is 0 within 3 standard errors.
+- C2: E[psi^2] - (2/3) E[1 - t_(p_0)^2] is 0 within 3 standard errors.
+- C3: E[X^2] + E[D_B^2 A] is 0 within 3 standard errors.
+- C4: the nested estimate of E_free[(E_omega X)^2] (500 pins from the chain; for each, the 6 interior links are
+  resampled in two independent runs of 300 sweeps and the two means are multiplied) is at least
+  6 E[t_(p_0)]^2 / E[1 - t_(p_0)^2] minus 3 standard errors.
+A failure of C1-C3 beyond 5 standard errors means an error in the algebra of 7.2. A failure of C4 means an error
+in Identity AV or in the Cauchy-Schwarz step. A pass decides nothing.
+
+### 7.1 Identity AV (the free-ensemble mean of the pinned stiffness; PROVED)
+
+Setting and notation of row 1011 3.1-3.2: a box c, pin omega on the boundary links, A_c = sum_p beta_p w_p t_p,
+Z_c(omega) the integral over the interior links, F_c = - log Z_c, and for a field B on the boundary links
+H_c(omega; B) = d^2/d eps^2 F_c(e^(eps B) omega) at 0, X_c(B) = d/d eps A_c(e^(eps B) U) at 0 with B extended by zero.
+E_omega is the pinned expectation. **E_free** is the expectation in the same box with all links integrated; under it
+the boundary links have density Z_c(omega)/Z_free with respect to Haar measure.
+
+**Statement.** For every box, every strength field, every gauge group and every fixed boundary field B:
+  E_free[ H_c(.; B) ] = E_free[ (E_omega X_c(B))^2 ] >= 0.
+**Proof.** Z(eps, omega) = Z_c(e^(eps B) omega) is smooth and positive, and its integral over the pins does not depend on
+eps (left translation of each boundary link by a fixed element). So the integral of the second eps-derivative of Z
+over the pins is 0. With F = - log Z: F'' = - Z''/Z + (Z'/Z)^2, hence int Z F'' d omega = int Z (F')^2 d omega. Divide by
+Z_free. Last, Z' = Z E_omega[X_c(B)], so F' = - E_omega[X_c(B)]. QED
+
+**Corollary AV2 (the mean over pins is blind to colour coherence; PROVED given Proposition A (iii) of row 1011).**
+Write X_c(B) = - sum over boundary links of B_l . N_l and n_l(omega) = E_omega[N_l]. For a unit a and a real boundary field
+theta,
+  E_free[ H_c(.; a theta) ] = (1/3) sum over boundary sites x of E_free | sum over boundary links l with tail x of theta_l n_l |^2.
+Proof. N_l(U^g) = Ad(g_tail(l)) N_l(U) (from D_B A(U) = D_(Ad_g B) A(U^g)), so n_l(omega^g) = Ad(g_tail(l)) n_l(omega), and the
+free ensemble of pins is invariant under omega -> omega^g. Average over independent Haar elements g_x: terms with
+different tails vanish, and int (a . Ad(g) u)(a . Ad(g) v) dg = u . v/3. QED
+So the mean response to a fixed-colour field is a site-diagonal form in theta: no derivative of theta appears. This
+is the averaged form of Proposition B of row 1011. Replacing the supremum over pins by a gauge-invariant
+average over pins does not restore the colour coherence (assumption A4 of 2.3).
+
+### 7.2 Theorem BH (Proposition B' holds for homogeneous strengths; PROVED, with an explicit constant)
+
+**Statement.** Let c = prod {0, ..., S_mu} in dimension d >= 3 with all S_mu >= 1, and beta_p = b > 0 on every
+plaquette (weights w_p as in row 1011). Let p_0 = (x; mu, nu) be a boundary plaquette, z = x + mu, lambda the indicator
+of z, a a unit vector, and B = a d lambda on the boundary links ((d lambda)_l = lambda(head) - lambda(tail)). Then
+  sup over pins of H_c(omega; B) >= E_free[H_c(.; B)] >= 6 (E_free t_(p_0))^2 / E_free(1 - t_(p_0)^2).      (BH)
+There is a boundary plaquette with E_free t_(p_0) > 0, for every b > 0. The boundary field theta = d lambda has the
+extension d lambda with zero curl on every plaquette. So for homogeneous strength there is no constant K with
+H_c(omega; a theta) <= K inf over extensions of sum_p w_p (d theta~)_p^2 for all pins and all real boundary fields theta.
+Moreover the right side of (BH) tends to infinity as b -> infinity at a fixed box, at least like b/log b.
+(BH) holds for every strength field; only the last two sentences use that the strengths are homogeneous.
+
+**Proof.** Step 1. The supremum is at least the mean, and the mean is E_free[(E_omega X)^2] by Identity AV, X = X_c(B).
+Step 2. psi = d/d eps t_(p_0)(e^(eps B) U) at 0 depends only on the links of p_0, which are boundary links. So psi is a
+function of the pin, E_free[psi E_omega X] = E_free[psi X], and by Cauchy-Schwarz
+  E_free[(E_omega X)^2] >= (E_free[psi X])^2 / E_free[psi^2].
+Step 3. In the free model the map U -> e^(eps B) U (B extended by zero) keeps the Haar measure, so the integral of
+exp(A_c(e^(eps B) U)) psi(e^(eps B) U) does not depend on eps. Its derivative at 0 gives
+E_free[X psi] = - E_free[D_B psi], with D_B psi = d^2/d eps^2 t_(p_0)(e^(eps B) U) at 0.
+Step 4 (the plaquette). On p_0: B_1 = a (the head of l_1 is z), B_2 = - a (the tail of l_2 is z), B_3 = B_4 = 0. Put
+V = U_2 U_3^(-1) U_4^(-1), so U_p = U_1 V, and a' = Ad(U_1) a, t = Re U_p, s = Im U_p. Then
+t_(p_0)(e^(eps B) U) = Re(e^(eps a) U_1 e^(-eps a) V), and with Re(v q) = - v . Im q and a a' = - a . a' + a x a':
+  psi = Re(a U_p) - Re(a' U_p) = - (a - a') . s,
+  D_B psi = Re(a^2 U_p) - 2 Re(a a' U_p) + Re(a'^2 U_p) = - 2 t + 2 (a . a') t + 2 (a x a') . s.
+(These are - delta . s and - (|delta|^2 t + kappa . s) of Proposition A with delta = a - a', kappa = - 2 a x a'.)
+Step 5 (gauge averages; the free model is invariant under the gauge group at every site of c). The gauge
+transformation h at x maps s -> Ad(h) s, a' -> Ad(h) a', and keeps t and a' . s. The Haar mean of Ad(h) v is 0 and
+that of (Ad(h) v)_i (Ad(h) w)_j is (v . w/3) delta_ij. So E[(a . a') t] = 0, E[(a x a') . s] = 0 (the trace of v -> a x v is
+0), E[(a . s)(a' . s)] = 0 and E[(a . s)^2] = E|s|^2/3. The gauge transformation h' at z maps U_1 -> U_1 h'^(-1),
+U_2 -> h' U_2, keeps U_p, and maps a' . s to (Ad(h'^(-1)) a) . (Ad(U_1^(-1)) s); so E[(a' . s)^2] = E|s|^2/3. Hence
+  E_free[X psi] = 2 E_free[t],   E_free[psi^2] = (2/3) E_free|s|^2 = (2/3) E_free[1 - t^2].
+Steps 1-5 give (BH).
+Step 6 (a boundary plaquette with positive mean). Let l_e be the link from the corner 0 along axis 1. The
+plaquettes that contain it are (0; 1, nu), nu = 2, ..., d; each lies in a boundary face (x_rho = 0 for a third
+direction rho; this uses d >= 3). Given the other links, U = U_(l_e) has density prop. to exp(Re(U Sigma)) with
+Sigma = sum_nu b w_nu sigma_nu, and Re(U Sigma) = sum_nu b w_nu t_((0;1,nu)). With c = Re(U Sigma-hat) the conditional mean of c is
+int c e^(rc) (1 - c^2)^(1/2) dc / int e^(rc) (1 - c^2)^(1/2) dc with r = |Sigma|, which is > 0 for r > 0 (pair c with - c).
+Sigma is continuous and equals b sum w_nu at the trivial configuration, so r > 0 with positive probability. Hence
+sum_nu b w_nu E_free t_((0;1,nu)) > 0 and one of these boundary plaquettes has E_free t > 0. Label it (0; 1, nu), z = e_1.
+Step 7 (large b). Let phi(b) = log int exp(- b sum_p w_p (1 - t_p)) dU and e(b) = - phi'(b) = E_free[sum_p w_p (1 - t_p)]. phi is
+convex and phi <= 0 = phi(0), so (b/2) e(b) <= phi(b/2) - phi(b) <= - phi(b). On the set where |U_l - 1| <= r for all links
+(r <= 1): |U_p - 1| <= 4 r, so 1 - t_p = (1/2)|U_p - 1|^2 <= 8 r^2; the Haar measure of {|U - 1| <= r} is at least
+(2/pi) int_0^r sin^2 >= 8 r^3/(3 pi^3). With r = b^(-1/2), b >= 1, W = sum_p w_p and L links:
+phi(b) >= - 8 W - L log(3 pi^3/8) - (3 L/2) log b, so e(b) <= (16 W + 4.92 L + 3 L log b)/b. For every plaquette
+E_free(1 - t_p) <= e(b)/w_p <= 2^(d-2) e(b), E(1 - t^2) <= 2 E(1 - t), and the right side of (BH) is at least
+3 (1 - 2^(d-2) e(b))^2 / (2^(d-2) e(b)). QED
+
+**What this closes.** Check 1014 (defect 1) left the physical Schrodinger-functional class (homogeneous bare
+coupling, all Dirichlet data) refuted at ARGUED level only, and named an unproved route (omega = 1 minimises
+F_int). Theorem BH proves the failure of a pin-uniform curl bound in that class for every b > 0, without that
+minimisation, and gives a lower bound that grows with b. It does not give row 1011's ARGUED growth in the cell
+size ("at least of order b S"): that statement stays ARGUED. Family G1 of row 1011 9.8 is now retired by proof for
+homogeneous strengths as well. Theorem BH says nothing about the trivial pin: the Schrodinger-functional bound
+H_c(1; a theta) <= b times the classical action stays OPEN (row 1011 4.4).
+
+### 7.3 Result of the control pre-registered in 7.0 (GUIDE; run 2026-11-15 20:25-20:26Z under the numeric lock)
+
+Memory free 63 percent at the start. Output `/tmp/row1016-scripts/bh_control.out`. Step-halving changed X, psi and
+the second difference by less than 1e-9, 2e-9 and 6e-7.
+
+| b | E t_(p_0) | C1: E[X psi] - 2 E[t] | C2: E[psi^2] - (2/3) E[1 - t^2] | C3: E[X^2] + E[D_B^2 A] | C4: nested E_free[(E_omega X)^2] | bound of (BH) | E[X^2] |
+|---|---|---|---|---|---|---|---|
+| 1 | 0.1248(15) | -0.0011(32) | 0.0004(20) | -0.0032(33) | 0.243(19) | 0.126 | 0.2488(12) |
+| 3 | 0.3610(11) | -0.0014(42) | 0.0002(19) | -0.0015(154) | 2.12(14) | 1.148 | 2.164(11) |
+
+All four readings pass at both couplings as pre-registered (C1-C3 within one standard error of zero; C4 above
+the bound by 6 and 7 standard errors). The run did not refute the algebra of 7.2. It decides nothing.
+
+### 7.4 Reopen condition (ii): covariant moves, Jacobian, curl form
+
+Three exact statements locate it. None gives a survivor.
+
+**(a) One-axis moves along a frame: a curl-form cost forces a reducible field (PROVED from Lemma FR's identity).**
+Let n be a unit-vector field on sites and B = theta_l n_tail(l). By row 1011 7.3 ("Use"), for theta = d lambda the field B is
+a gauge direction plus the field lambda_head(l) D_l n. So "the direct cost of theta n vanishes for every closed theta" holds
+on a configuration only if D_l n = 0 on every link, and then by Lemma FR every plaquette axis at every site is
+parallel to n (NA = 0). At a response of order one the non-abelian part is of order one per site (ARGUED size,
+row 1011 7.3). So the cost form of a frame move is not a curl form pointwise, for any frame, field-dependent or
+not. What is left is a cancellation against the current variance: items (N1)-(N3) of row 1011 7.4, OPEN, of the
+first-passage kind.
+
+**(b) Lemma GT (holonomy-axis twists: the only frame that is covariantly constant at every coupling lives on
+curves; PROVED).** Let alpha be a closed lattice path through distinct sites y_0, ..., y_(m-1) such that no other
+lattice link joins two of its sites, h_i its holonomy based at y_i, and, where h_0 is not +-1, n_i = Im h_i/|Im h_i|.
+Then n_i = Ad(u_i) n_(i+1) for the transporter u_i of the link from y_i to y_(i+1): the axis is covariantly constant
+along alpha, at every coupling. Let E be a set of link-ends (l, y_i) with l not in alpha, and tau_t the map that multiplies
+U_l by e^(t n_i) on the left if y_i is the tail of l and by e^(-t n_i) on the right if y_i is its head, for (l, y_i) in E.
+(i) tau_t keeps the Haar measure (the multipliers depend only on links of alpha, which do not move), and it is a
+one-parameter group. (ii) A plaquette that contains a link of alpha and the legs e at y_i, e' at y_(i+1) changes by the
+insertion e^(t (1_E(e') - 1_E(e)) n_i); a plaquette with a corner at y_i and no link of alpha changes by
+e^(t (1_E(e') - 1_E(e)) n_i) for its two link-ends there. (iii) In d = 2, with alpha a simple closed curve and E the
+link-ends on one side, every plaquette trace is invariant: tau_t is an exact symmetry of every action that is a
+sum of class functions of single plaquettes, it is not a gauge transformation, and twists along crossing curves
+do not commute. This is Goldman's twist flow on the lattice (Goldman 1986; RECALLED for the name only). (iv) In
+d >= 3 every E that is neither empty nor complete at a site cuts corners there. If each plaquette has at most
+one cut corner, then with X = sum over cut corners of (+-) beta_p n_i . s_(p, y_i):
+  E[X] = 0 and E[X^2] = sum over cut corners of beta_p E[t_p].
+Proof. h_i = u_i h_(i+1) u_i^(-1) gives the axis rule. (i) Fubini. (ii) U_l e^(t n_(i+1)) = e^(t n_i) U_l for the link of alpha.
+(iii) follows from (ii). (iv) Along the flow n does not change, a single insertion gives
+Re(e^(theta n) U_(p,y)) = cos(theta) t_p - sin(theta) n . s_(p,y), and the integral of exp(S o tau_t) does not depend on t; take two
+derivatives at 0. QED
+Reading. The rigid-symmetry structure of the 2D engine does exist in a gauge theory, exactly and at every
+coupling, on one-dimensional sets: the axis of a loop's own holonomy. A twist along it has Jacobian one. In
+d >= 3 its cost is a line of corner terms, one-dimensional, with the white-noise sum rule (iv), which holds for
+U(1) too. A surface has no such axis unless the field on it is reducible. So (ii) fails by dimension, not by
+the Jacobian.
+
+**(c) Lemma SOFT and Identity CUBE (the Bianchi constraint on class angles is soft for SU(2); PROVED).** For the
+twelve links of one 3-cube under Haar measure, the class angles phi_1, ..., phi_6 of the six plaquettes have the joint
+density
+  r(phi) = (2/pi)^6 prod_i sin(phi_i) sum over k >= 1 of k^(-4) prod_i sin(k phi_i)   on [0, pi]^6,
+a continuous function. At the centre c = (pi/2, ..., pi/2): r(c) = 2/(3 pi^2) > 0, the gradient of log r is 0, and
+the Hessian of log r is - (1 + 12/pi^2) times the identity. Consequently there is a configuration of the cube at
+which the differential of the map U -> (t_1, ..., t_6) is onto: every first-order change of the six traces is made
+by a link field. For compact U(1) the six angles satisfy one linear equation and the image is a hyperplane.
+Proof. With chi_k(phi) = sin(k phi)/sin(phi), d mu = (2/pi) sin^2 and a_k(beta) = int e^(beta cos) chi_k d mu, the character expansion
+and the gluing rule int chi_j(A U) chi_k(U^(-1) B) dU = delta_jk chi_j(AB)/j give, for six couplings,
+Z(beta_1, ..., beta_6) = sum_k k^2 prod_i (a_k(beta_i)/k) (for equal couplings this is the lane's formula,
+`gap-skeleton-max-b.md` L581). The series sum_k k^(-4) prod chi_k(phi_i) prod sin^2(phi_i) converges absolutely to a bounded
+function with the same Laplace transform in the variables cos phi_i; a finite measure on a compact set is fixed by
+its Laplace transform. At c only odd k contribute: sum over odd k of k^(-4) = pi^4/96. For the Hessian, with
+P = prod sin and Q the series: the first derivatives of P and Q vanish at c (cos(pi/2) = 0; for odd k,
+cos(k pi/2) = 0; for even k the other factors vanish), the mixed second derivatives vanish for the same reason,
+and the pure ones are - 1 and - (sum over odd k of k^(-2))/(pi^4/96) = - (pi^2/8)(96/pi^4). The image of the trace map
+has positive measure near c, so by Sard's theorem it contains a regular value. QED
+Reading (ARGUED). On a 4D torus of N sites the gauge orbits have dimension 9N and there are 6N plaquettes, so
+the same holds generically with fibres of dimension 3N; this count is not proved here. So SU(2) has
+"angle moves": covariant link fields that change the class angles of chosen plaquettes and no others, which
+do not exist for U(1). Along them the Wilson weight changes exactly as in an abelian theory, plaquette by
+plaquette. Their Jacobian is the change of r, a beta-independent entropy of the Bianchi constraint. This is the
+exact form of "covariant moves with a controlled Jacobian": the cost form is abelian at every response, and
+the whole problem moves into the Hessian of log r. Tests. Row 670's verdict on plaquette variables
+(`gap-skeleton-max-b.md` L215-220) binds: a bound on the covariance of the angle field in its own metric holds
+for a massless photon too and says nothing about decay. Five dimensions: the same structure, no dimension-4
+input. Consumer: none. **FAILS as a route; the two exact statements are constraints.**
+
+**Step 7 result.** PROVED: Identity AV, Corollary AV2, Theorem BH (the homogeneous-strength case of Proposition B',
+every b > 0, with constant 6 (E t)^2/E(1 - t^2) and growth at least b/log b at a fixed box), Lemma GT,
+Lemma SOFT with Identity CUBE. A GUIDE control of the algebra of BH passed. Reopen condition (ii): FAILS in the
+pointwise form (Lemma FR); its averaged form is (N1)-(N3) of row 1011, OPEN and not attacked; the two other
+readings (holonomy-axis twists, angle moves) are exact and have no consumer.

@@ -58,11 +58,11 @@ beta_A = 0 itself at beta = 2.3-2.6 (no bulk transition, crossover, monotonicity
 and monopole densities); (C) name exact properties of the one-plaquette fundamental weight that fail for
 beta_A > 0 (or for w_p, p > 1).
 
-- 2026-11-15T06:08Z: Step 1 done.
+- Step 1 done (before 06:10Z by `date -u`).
 
 ## 2. Step 2: what the lane has already read (not repeated here)
 
-Grep of `library/prior/*.md` for Bhanot, Creutz, adjoint, mixed action, endpoint (2026-11-15T06:12Z). Already read:
+Grep of `library/prior/*.md` for Bhanot, Creutz, adjoint, mixed action, endpoint. Already read:
 
 | Source | Where in the lane | What it gave |
 |---|---|---|
@@ -85,12 +85,12 @@ log-concave in j; used in Migdal-Kadanoff bounds by Ito and by Tomboulis), the v
 "confinement for all beta" claim with the Ito-Seiler critique, which is the one published argument that claims to
 use the Wilson weight's coefficients.
 
-- 2026-11-15T06:14Z: Step 2 done.
+- Step 2 done (before 06:10Z).
 
 ## 3. Step 3: K7 in the published phase diagrams (location and nature of the endpoint)
 
 Search path: arXiv API (export.arxiv.org) queries on "mixed action" + SU(2) + adjoint, "bulk" + adjoint + SU(2),
-SO(3) + monopole (hep-lat), then the arXiv abstracts of the hits (scratch `/tmp/sep995/`, 2026-11-15T06:15-06:25Z).
+SO(3) + monopole (hep-lat), then the arXiv abstracts of the hits (scratch `/tmp/sep995/`, 2026-11-15, before 06:10Z).
 All hits in this section are NUMERICAL (Monte Carlo, or mean-field / strong-coupling series), none is a theorem.
 Normalisation of all SU(2) papers below: Bhanot-Creutz, S_p = beta(1 - tr U/2) + beta_A(1 - tr_A U/3), i.e. the K7
 weight of Section 1 with beta = beta_F, unless said otherwise. Quotes are from the arXiv abstracts unless a page is given.
@@ -175,4 +175,130 @@ Reading (ARGUED): in the Villain mixed form, the whole adjoint direction is carr
 both suppressed, the mixed plane collapses to the Wilson axis. This makes the Z_2-monopole density the published
 order parameter that tells the K7 line from the Wilson axis (Section 6 collects its values).
 
-- 2026-11-15T06:27Z: Step 3 done (abstract level; full texts not read; next: Step 4, Wilson axis numerics).
+- Step 3 done (abstract level; full texts not read; next: Step 4, Wilson axis numerics).
+
+## 4. Step 4: the Wilson axis itself, numerical results in and near beta 2.3-2.6
+
+All NUMERICAL. Sources fetched into `/tmp/sep995/dl/` (not committed), read with PyMuPDF / sed.
+
+**4.1 The scalar glueball dips towards strong coupling, the tensor does not (the endpoint's "shadow" on the axis).**
+M. Teper, "Glueball masses and other physical properties of SU(N) gauge theories in D = 3+1: a review of lattice
+results for theorists", hep-th/9812187, Appendix A, Table 10 (p. 12 of the arXiv PDF; Wilson plaquette action: "All
+these calculations use the standard Wilson plaquette action"). Rows read (beta, lattice, a sqrt(sigma), a m_0++, a m_2++):
+2.2 (8^3 10): 0.467(10), 1.44(8), 2.76(45); 2.3 (10^4): 0.3687(22), 1.216(23), 1.94(8); 2.4 (14^4): 0.2686(21), 0.959(20),
+1.487(33); 2.4 (16^4): 0.2660(21), 0.936(23), 1.520(30); 2.5 (16^4): 0.1834(26), 0.660(22), 1.028(27); 2.5 (20^4):
+0.1881(28), 0.723(23), 1.051(26); 2.5 (32^4): 0.187(12), 0.70(4), 0.99(4); 2.6 (20^4): 0.1326(30), 0.51(3), 0.73(4);
+2.7 (32^4): 0.1005(20), 0.39(3), 0.55(3); 2.85: 0.0636(12), 0.229(12), 0.353(16).
+My ratios (hand arithmetic from these rows; errors not propagated):
+
+| beta | m_0++/sqrt(sigma) | m_2++/sqrt(sigma) |
+|---|---|---|
+| 2.2 | 3.08 | 5.9 |
+| 2.3 | 3.30 | 5.26 |
+| 2.4 | 3.57 (14^4), 3.52 (16^4) | 5.54, 5.71 |
+| 2.5 | 3.60 / 3.84 / 3.74 (16^4 / 20^4 / 32^4) | 5.61 / 5.59 / 5.29 |
+| 2.6 | 3.85 | 5.50 |
+| 2.7 | 3.88 | 5.47 |
+
+Continuum (Teper, Table 8 and Table 12 for improved actions): m_0++/sqrt(sigma) about 3.7-4.0, m_2++/sqrt(sigma)
+about 5.5-5.9. So on the Wilson axis the 0++ ratio falls by about 15-20 percent between beta 2.6 and 2.2 while the
+2++ ratio stays flat: the same pattern Heller reports for SU(3) along the axis towards its endpoint (Section 3.2).
+In the arena the 0++ mass in lattice units stays large: a m_0++ >= 0.51 at beta <= 2.6, = 1.22 at 2.3, i.e. a
+correlation length below 2 lattice units in the most critical channel. This is the published quantitative statement
+that the arena is OFF the critical endpoint: at the endpoint a m_0++ -> 0 (Heller SU(3); Lucini-Patella-Rago SU(2)
+with heavy adjoint quarks, Gaussian scalar), while sqrt(sigma)/T_c and the other glueballs do not move.
+
+**4.2 The lattice beta function: a 25 percent dip, not a zero.** J. Engels, F. Karsch, K. Redlich, "Scaling properties of
+the energy density in SU(2) lattice gauge theory", hep-lat/9408009 (Nucl. Phys. B435 (1995) 295), Table "nonpert"
+(TeX lines 520-575): non-perturbative a dg^(-2)/da (beta = 4/g^2), from a spline fit to the measured deconfinement
+couplings g_c^2 at N_t = 2, 3, 4, 5, 6, 8, 16, checked against MCRG Delta beta data. Values: -0.1379 (2.15), -0.1174
+(2.20), -0.0848 (2.30), -0.0754 (2.38-2.39, the minimum of |.|), -0.0779 (2.50), -0.0812 (2.60), -0.0848 (2.80),
+-0.0929 (beta -> infinity, the one-loop value -2 b_0). Quote (TeX L367-369): "physical quantities such as the critical
+temperature or the string tension are violating asymptotic scaling in the range of coupling constants considered so
+far ... Nevertheless the scaling of dimensionless ratios of observables works remarkably well". Reading: on [2.3, 2.6]
+|a dbeta/da| = 4 |a dg^(-2)/da| lies in [0.30, 0.34], smooth, against 0.37 (one loop) and about 0.40 (two loop at
+beta 2.4, my arithmetic with b_0 = 22/(48 pi^2), b_1 = 136/(3 (16 pi^2)^2)). A bulk critical point on the axis would
+make it vanish; the dip is the endpoint's shadow at finite distance. NUMERICAL, a fit, not a bound.
+
+**4.3 Step scaling (abstract only).** M. Luscher, P. Weisz, R. Sommer, U. Wolff, "Computation of the running coupling
+in the SU(2) Yang-Mills theory", hep-lat/9207010, Nucl. Phys. B389 (1993) 247 (NUMERICAL, finite-size scaling, Wilson
+action): "already at rather low q, the evolution of alpha(q) is well described by the 2-loop approximation to the
+Callan-Symanzik beta-function". The bare couplings used were NOT READ here; whether its steps pass through 2.3-2.6 is
+not checked.
+
+**4.4 What on the Wilson axis is monotone in beta, exactly (my own one-line remark, PROVED, and it does NOT separate).**
+d<sum_p x_p>/dbeta = Var(sum_p x_p) >= 0 on every finite torus, for every weight exp(beta F) and in particular along any
+line through the K7 plane (with F the directional derivative of the action). So plaquette monotonicity in beta holds
+for K7 too and cannot separate. What separates numerically is the SIZE of the specific heat: no growth with volume on
+the axis (Bhanot-Creutz "shadow", already read) against a volume-proportional peak (first order) or a divergence
+(endpoint) in K7.
+
+- Step 4 done. Next: Step 5 (rigorous correlation inequalities and exact one-plaquette facts).
+
+## 5. Step 5: rigorous statements on the Wilson axis, and exact one-plaquette facts that fail for K7
+
+**5.1 Tomboulis's all-coupling argument is blind to K7 (THEOREM-LEVEL CLAIM, disputed; hypothesis read).**
+E. T. Tomboulis, "Confinement for all values of the coupling in four-dimensional SU(2) gauge theory", arXiv:0707.2179
+(TeX `confI.tex`, read L286-349, L670-690). The action enters only through its normalised character coefficients:
+"We start with some appropriate plaquette action A_p ... which, for definiteness, is taken to be the Wilson action"
+(L290-292), and the property used is (L343-345) "F_j(beta) >= 0, hence 1 >= c_j(beta) >= 0 all j, which implies that the
+measure ... satisfies reflection positivity". After one decimation step the effective action "will generally contain
+all representations ... among the effective couplings beta_j(m) negative ones will occur" (L676-679). K7 (beta_F,
+beta_A >= 0) and w_p have 1 >= c_j >= 0 (lane: `prior/gap-vir-lit.md` L51; check of row 712 L86). So by row 712's
+Proposition T3 the argument, if repaired, could not use anything that separates Wilson from K7; it is consistent with K7
+only because both K7 bulk phases confine (Section 3.2, Gavai-Grady-Mathur). The Ito-Seiler critique (arXiv:0711.4930,
+0803.3019, 0901.4246, PoS Confinement8:034) is already in the lane (`prior/gap-lit-2.md` L45-49,
+`prior/gap-crux-lit-nonab.md` L246). Verdict for row 996: confinement-type inputs do not separate; the mass gap does.
+
+**5.2 An exact one-plaquette property of the Wilson weight that K7 and w_p violate: log-concave character coefficients
+(adjoint subordination).** Sources: the Wilson coefficients F_j(beta) = (2/beta) I_{d_j}(beta), d_j = 2j + 1 (Tomboulis
+L316-318), so the normalised coefficients are c_j(beta) = I_{2j+1}(beta)/I_1(beta). The Turan inequality for modified
+Bessel functions, "I_{nu-1}(u) I_{nu+1}(u) - [I_nu(u)]^2 < 0 ... where nu > -1 and u > 0 ... was proved first in 1951 by
+Thiruvenkatachar and Nanjundiah and later in 1974 by Amos ... In 1991 Joshi and Bissu ... in 1994 Lorch" (quoted from
+A. Baricz, S. Ponnusamy, "On Turan type inequalities for modified Bessel functions", arXiv:1010.3346, Proc. AMS 141
+(2013) 523, Section 1). THEOREM (cited).
+
+Consequence (PROVED here, two lines, from the cited theorem). For the Wilson weight at every beta > 0 the sequence
+n -> c_{n/2}(beta) (n = 0, 1, 2, ...; c_0 = 1) is strictly log-concave: c_{n/2}^2 > c_{(n-1)/2} c_{(n+1)/2} (Turan at
+nu = n + 1 >= 1). Hence the ratios r_n = c_{n/2}/c_{(n-1)/2} strictly decrease, r_1 = c_{1/2}, and
+c_{n/2} < c_{1/2}^n for n >= 2; in particular c_1 < c_{1/2}^2 ("adjoint subordination": every higher representation is
+weaker than the matching power of the fundamental). The same holds for the heat-kernel weight, c_j = exp(-t j(j+1)),
+whose logarithm is concave in j (my arithmetic: c_1 = e^(-2t) < c_{1/2}^2 = e^(-3t/2)).
+
+Fails for K7 and for w_p (GUIDE numbers, plus a small-coupling argument). 1D quadrature (`/tmp/sep995/scripts/chars.py`,
+200,001-point trapezoid on [0, pi] with Haar weight (2/pi) sin^2; control: Wilson at 2.3 reproduces I_{n+1}/I_1 =
+0.4793, 0.1665, 0.0450 to 4 digits; run under the numeric lock, 2026-11-15T06:09Z, memory 70 percent free, < 2 s):
+
+| weight | c_{1/2} | c_1 | c_1 - c_{1/2}^2 |
+|---|---|---|---|
+| Wilson beta 2.3 | 0.4793 | 0.1665 | -0.0632 |
+| Wilson beta 2.6 | 0.5203 | 0.1995 | -0.0713 |
+| K7 (1.48, 0.90), Bhanot-Creutz endpoint | 0.4326 | 0.2106 | +0.0235 |
+| K7 (1.2, 1.25), later endpoint estimate | 0.4012 | 0.2358 | +0.0749 |
+| K7 (1.0, 1.5) | 0.3682 | 0.2559 | +0.1204 |
+| K7 (0.8, 1.8) | 0.3278 | 0.2862 | +0.1787 |
+| K7 (0.55, 2.34), triple point | 0.2655 | 0.3537 | +0.2832 (and c_1 > c_{1/2}) |
+| w_p, p = 10, beta 6 | 0.6701 | 0.5762 | +0.1272 |
+| w_p, p = 50, beta 10 | 0.8415 | 0.8288 | +0.1206 |
+| w_p, p = 200, beta 14 | 0.9541 | 0.9519 | +0.0416 |
+
+(The w_p couplings are arbitrary test points: the van Enter-Shlosman beta_t(p) is not known numerically.) Small
+coupling (my arithmetic, ARGUED to second order): with Haar E[x^2] = 1/4 and orthonormal characters, c_{1/2} = beta_F/4
++ O(beta^3) and c_1 = beta_F^2/24 + beta_A/9 + O(beta^2 beta_A, beta^3), so c_1 - c_{1/2}^2 = beta_A/9 - beta_F^2/48 +
+..., positive as soon as beta_A > 3 beta_F^2/16 at small couplings; for w_p, p >= 2, ((1 + x)/2)^p has a chi_1 component
+with positive coefficient, so c_1 is linear in beta while c_{1/2}^2 is quadratic, and the inequality fails at small beta.
+So log-concavity is NOT a qualitative property of "no adjoint term": it fails for every K7 point tested and for w_p, and it
+is a quantitative statement of row 712's "how far log w is from linear in x" (Section 1). Caveat (from Tomboulis L676-679):
+decimation does not preserve it (effective actions acquire all representations, some with negative couplings), so it is a
+property of the BARE weight at one scale only. I found no lattice-gauge paper that uses the Turan inequality or
+log-concavity of c_j; NOT FOUND in this search, not a nonexistence claim.
+
+**5.3 Correlation inequalities for SU(2): negative search result.** arXiv API queries ("correlation inequalities" AND
+gauge in math-ph / math.PR / hep-lat; "Wilson loop" AND monotone in math.PR / math-ph) returned no SU(2) Griffiths- or
+Ginibre-type inequality. Hits: Kovacs-Tomboulis hep-lat/9607068 (Nucl. Phys. Proc. Suppl. 53 (1997) 509): "A sufficient
+condition for confinement was previously translated into Z(2) monopole correlation inequalities in a related SO(3) gauge
+theory ... present some Monte Carlo evidence" (a condition with numerical support, not a theorem; Section 6); Mota-Sa
+Barreto arXiv:2402.12277 (Z_3 only). Griffiths (Z_2) and Ginibre (U(1)) inequalities and their irrelevance as the
+separating mechanism are row 708's (`gap-mid-max.md` L46). Plaquette monotonicity is universal (Section 4.4).
+
+- 2026-11-15T06:10Z (`date -u`): Step 5 done. Earlier times I had written in this log were estimates and are removed. Next: Step 6 (centre vortex / Z_2 monopole densities and vortex free energy on the axis).

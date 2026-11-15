@@ -1,0 +1,22 @@
+# GA1-5-Φ referee closure R1: one check
+
+Checker: Codex gpt-6-astra, reasoning effort low, read-only, laptop, 2026-11-07 (run log ~/toe-lap/prior/check_r1.log). One check of one proof: GA15PHI_REFEREE.md section 4. The lead (Claude Opus 5.5) copied the checker's final message below unchanged.
+
+R1’s construction works with two stated repairs: the electric phase is per link, and the \(m=9\) transfer must include determinant twists in the gauge representations.
+
+| # | R1 step | Status | Check or repair |
+|---|---|---|---|
+| 1 | Step 0: lifts at \(m=1\) | **CORRECT** | One-rishon lifts permute basis vectors. Different links are ordinary tensor factors. Thus the stated \(r,h\) relations hold exactly. |
+| 2 | Step 1: sector and reflections | **CORRECT** | Point reflection preserves the displayed hexagon orientation. It preserves the diagonal occupations and each tiling. Translation extends this to every swap pair. |
+| 3 | Step 1: electric phase | **ERROR** | \(e^{-i\tau_E/4}\) is the phase **per link**, not the whole \(W_E\). On \(L\) finite links the phase is \(e^{-i\tau_E|L|/4}\). In infinite volume, use the local automorphism: it acts trivially on this sector. This repairs the stationarity argument. |
+| 4 | Step 2: corner spaces and orbit | **CORRECT** | Diagonal corners have three occupied ends. Other corners have one. These charges identify the diagonal. Its orientation-preserving stabilizer is \(C_3\), giving eight distinct sectors. |
+| 5 | Step 2: multiplicity eigenvectors | **CORRECT** | The standard \(S_3\) subspace is preserved by plain permutations as well as signed permutations. Transport by \(h\) reverses the \(r\) eigenvalues. The canonical hexagon intertwiners introduce no signs at \(m=1\). The four displayed transformation identities follow. |
+| 6 | Step 3: \(F+F^*\) | **CORRECT** | Source and target lie in distinct sectors. Thus \(F^2=0\) and \(J_P^2=F^*F+FF^*\). Equal \(r\) eigenvalues give equivariance. The displayed \(h\) calculation gives \(hFh^{-1}=F^*\). Hence \(J_P\) is \(D_3\)-invariant. |
+| 7 | Step 3: cube gate and admissibility | **CORRECT** | Different diagonals use disjoint sector pairs. Therefore \(J^3=J\), and \(1-J^2-iJ=e^{-i\pi J/2}\) is unitary. Stabilizer invariance permits covariant transport. The six sublayers \(G,S_o,S_e,W_E,G^*,W_E^{-1}\) satisfy GA1-P-5. Proposition C supplies finite-depth NN-a compilation. |
+| 8 | Step 4: stationary state | **CORRECT** | The reflection group acts freely on sites. Transport therefore defines consistent star data. Each selected star space has form \(V_\lambda\otimes L_z\). Matched multiplicity swaps preserve its product density. Together with row 3’s repair and empty matter, this proves D1. Rotation invariance of the state is unnecessary. |
+| 9 | Step 4: neutral propagation | **CORRECT** | The normalized \(q\)-density gives \(\omega(X)=0\) and \(\omega(X^2)=1\). Product structure gives orthonormal translates. The two reflections compose to translation by \(-2(1,1,1)\). Support preservation justifies the stated GNS transport identity. |
+| 10 | Step 5: conjugation and orthogonality | **CORRECT** | The two diagonal \(q\) factors have density \(I_4/4\), independent of the representation factors. Conjugation moves \(X_P\) into \(X'_P\), leaving \(E_P\) fixed. The resulting density is sector diagonal; \(A'\) is off-diagonal on its support. Every \(N\in\mathcal N\) preserves those sectors, so \(\omega'(N^*A')=0\). Closure gives the asserted band orthogonality. Theorem 7 gives \(V(K)=e^{-iK\cdot1}\), node \(0\), and \(N_j=1\). |
+| 11 | \(m=9\): hole transfer | **INCOMPLETE** | The sign calculation is correct, but “unchanged” suppresses gauge-representation changes. Write \(D=\det V\). Then \(\Lambda^{5-k}V\simeq D\otimes(\Lambda^kV)^*\). Each cube-corner representation becomes \(D^3\otimes E_w^*\); each star becomes \(D^6\otimes E_z^*\). In particular, replace the \(e_i\) star types by \(D^6\otimes(S^2V)^*\) or \(D^6\otimes(\Lambda^2V)^*\). These common character twists preserve commutants and multiplicities. Dualizing the construction supplies the missing transfer. |
+| 12 | Compatibility with Theorem 8 | **CORRECT** | \(\sigma_A\) is not \(\sigma^\to\). Its directed hexagon permits a finite circulation preserving corner charges. Theorem 8’s one-sided tail-number argument applies only to \(\sigma^\to\). R1 neither starts there nor obtains \(\sigma_A\) by conjugating a state carried there. |
+
+VERDICT: R1 holds with stated repairs

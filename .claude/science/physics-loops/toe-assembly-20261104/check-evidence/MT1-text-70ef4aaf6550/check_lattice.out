@@ -1,0 +1,68 @@
+PASS T4 six generators Hermitian involutions, pairwise anticommuting
+PASS T4 64 monomials orthogonal basis of M_8
+PASS L=2: R_e^2=R_o^2=1 (LW1 A1 given)
+PASS L=2: T4 fibre formulas R_e(K), R_o(K) at all 1 momenta
+PASS L=2: T1 all 24 sign lifts exist, cell-periodic
+PASS L=2: T1 fibre covariance rho R_T(K) rho* = R_T(QK), rho-hat K-independent unitary
+PASS L=2: T4 rotation rules A_j->A_pi(j), Gamma_j->s_j Gamma_pi(j)
+PASS L=2: T1 uniqueness (diagonal commutant is 1-dimensional)
+PASS L=2: T5 perpendicular face half-turn lifts anticommute on the torus
+PASS L=2: T5 rho-hat(h_1) proportional to Gamma_2 Gamma_3
+PASS L=2: T5 remark: perpendicular edge half-turn lifts anticommute
+PASS L=2: T5 remark: sign-lift face quarter-turn fourth power = -1
+PASS L=2: C3/LW1 A2: signed diagonal translation tau with tau R_e tau^-1=-R_o, tau R_o tau^-1=-R_e exists
+PASS L=2: C3 tau-hat(0) proportional to chi
+PASS L=2 eps=0.3: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=2 eps=0.9: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=2 eps=1.4: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=4: R_e^2=R_o^2=1 (LW1 A1 given)
+PASS L=4: T4 fibre formulas R_e(K), R_o(K) at all 8 momenta
+PASS L=4: T1 all 24 sign lifts exist, cell-periodic
+PASS L=4: T1 fibre covariance rho R_T(K) rho* = R_T(QK), rho-hat K-independent unitary
+PASS L=4: T4 rotation rules A_j->A_pi(j), Gamma_j->s_j Gamma_pi(j)
+PASS L=4: T1 uniqueness (diagonal commutant is 1-dimensional)
+PASS L=4: T5 perpendicular face half-turn lifts anticommute on the torus
+PASS L=4: T5 rho-hat(h_1) proportional to Gamma_2 Gamma_3
+PASS L=4: T5 remark: perpendicular edge half-turn lifts anticommute
+PASS L=4: T5 remark: sign-lift face quarter-turn fourth power = -1
+PASS L=4: C7(b) exactly 3 of 24 sign lifts commute with W R_T W* (found 3: [((0, 1, 2), (1, 1, 1)), ((1, 2, 0), (1, 1, 1)), ((2, 0, 1), (1, 1, 1))])
+PASS L=4: C7(d) W rho W* and W* rho W are phases times rho D_Q
+PASS L=4: C7(c) rho-hat prod Z_j maps Gamma_k->Gamma_pi(k), A_k->s_k A_pi(k)
+PASS L=4: C3/LW1 A2: signed diagonal translation tau with tau R_e tau^-1=-R_o, tau R_o tau^-1=-R_e exists
+PASS L=4: C3 tau-hat(0) proportional to chi
+PASS L=4 eps=0.3: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=4 eps=0.9: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=4 eps=1.4: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=6: R_e^2=R_o^2=1 (LW1 A1 given)
+PASS L=6: T4 fibre formulas R_e(K), R_o(K) at all 27 momenta
+PASS L=6 control: R_o(K) with +sin K Gamma is rejected
+PASS L=6: T1 all 24 sign lifts exist, cell-periodic
+PASS L=6: T1 fibre covariance rho R_T(K) rho* = R_T(QK), rho-hat K-independent unitary
+PASS L=6: T4 rotation rules A_j->A_pi(j), Gamma_j->s_j Gamma_pi(j)
+PASS L=6: T1 uniqueness (diagonal commutant is 1-dimensional)
+PASS L=6: T5 perpendicular face half-turn lifts anticommute on the torus
+PASS L=6: T5 rho-hat(h_1) proportional to Gamma_2 Gamma_3
+PASS L=6: T5 remark: perpendicular edge half-turn lifts anticommute
+PASS L=6: T5 remark: sign-lift face quarter-turn fourth power = -1
+PASS L=6: C3/LW1 A2: signed diagonal translation tau with tau R_e tau^-1=-R_o, tau R_o tau^-1=-R_e exists
+PASS L=6: C3 tau-hat(0) proportional to chi
+PASS L=6 eps=0.3: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=6 eps=0.9: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS L=6 eps=1.4: sigma=V_e^-1 tau commutes with V; sigma-hat(0) prop chi_G (and not prop chi)
+PASS T7 h(K)=v sum K_j G_j + O(K^2), eigenvalues +-v|K| fourfold (4 eps values)
+PASS T7 control: leading term with Gamma_j instead of G_j is rejected
+PASS T7 V(K)=I only at K=0 on a 13^3 grid (min distance elsewhere 0.168)
+PASS T7 mu>0: V(0)=exp(i mu R_e), R_e anticommutes with Gamma_j
+PASS T8 S and S^A are spin-1/2 triples, mutually commuting, S commutes with R_e
+PASS T8 chi commutes with Gamma, S, S^A; anticommutes with A; eigenspaces 4+4
+PASS T8 rho-hat(Q)=S(Q~)T(Q), T commutes with Gamma, T A_j T*=A_pi(j); 3-cycles taste 2pi/3 about (1,1,1); transpositions chi*taste pi about (e_j-e_k)/sqrt2
+PASS T8 scalar T exactly for identity and three face half-turns (Cor 9.1 third claim): [((0, 1, 2), (-1, -1, 1)), ((0, 1, 2), (-1, 1, -1)), ((0, 1, 2), (1, -1, -1)), ((0, 1, 2), (1, 1, 1))]
+   character moduli per chirality by class (trQ, pi=id): {((-1, False), '+'): [np.float64(0.0)], ((-1, False), '-'): [np.float64(0.0)], ((-1, True), '+'): [np.float64(0.0)], ((-1, True), '-'): [np.float64(0.0)], ((0, False), '+'): [np.float64(1.0)], ((0, False), '-'): [np.float64(1.0)], ((1, False), '+'): [np.float64(0.0)], ((1, False), '-'): [np.float64(0.0)], ((3, True), '+'): [np.float64(4.0)], ((3, True), '-'): [np.float64(4.0)]}
+PASS T8 remark: character moduli 4,1,0,0,0 on id, 3-fold, face half-turn, quarter-turn, edge half-turn
+PASS T8 chirality +: commutant of the 4-dim projective cell representation has dimension 1
+PASS T8 chirality +: commutant of taste operators has dimension 4 (=4 iff taste irreducible on C^2)
+PASS T8 chirality -: commutant of the 4-dim projective cell representation has dimension 1
+PASS T8 chirality -: commutant of taste operators has dimension 4 (=4 iff taste irreducible on C^2)
+PASS Cor 9.1 / T9: U commutes with S and T(Q); T(Q) commutes with G_j
+   D S_k D* == S^A_k up to sign pattern: [[True, False], [True, False], [True, False]]
+ALL PASS

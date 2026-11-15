@@ -1,0 +1,19 @@
+Z2.3 L=2: imag 4.0e-17 gram-residual 4.4e-16 symmetry 5.0e-17 max leak/theta^4 0.0051 (<=1.75) min g/L^3 0.2500 (>=0.078) sup|psi(n)|e^(0.5|n|/L) 0.882
+   control box kernel leak/theta^4 at theta=0.01: 625.0
+Z2.3 L=3: imag 4.8e-17 gram-residual 1.2e-16 symmetry 3.5e-17 max leak/theta^4 0.0054 (<=1.75) min g/L^3 0.4074 (>=0.078) sup|psi(n)|e^(0.5|n|/L) 0.843
+   control box kernel leak/theta^4 at theta=0.01: 740.7
+Z2.3 L=4: imag 6.4e-17 gram-residual 3.3e-16 symmetry 1.1e-16 max leak/theta^4 0.0052 (<=1.75) min g/L^3 0.3125 (>=0.078) sup|psi(n)|e^(0.5|n|/L) 0.721
+   control box kernel leak/theta^4 at theta=0.01: 781.2
+Z2.3 L=5: imag 2.6e-17 gram-residual 4.0e-17 symmetry 5.6e-17 max leak/theta^4 0.0053 (<=1.75) min g/L^3 0.3600 (>=0.078) sup|psi(n)|e^(0.5|n|/L) 0.694
+   control box kernel leak/theta^4 at theta=0.01: 800.0
+Z2.3 L=8: imag 2.0e-17 gram-residual 1.1e-16 symmetry 3.6e-17 max leak/theta^4 0.0052 (<=1.75) min g/L^3 0.3281 (>=0.078) sup|psi(n)|e^(0.5|n|/L) 0.547
+   control box kernel leak/theta^4 at theta=0.01: 820.3
+Z2.3 covariance (5) L=2: max residual 1.0e-17; control (rotation about centre shifted by (2,0,0)): 0.314
+Z2.3 covariance (5) L=3: max residual 2.8e-17; control (rotation about centre shifted by (2,0,0)): 0.219
+Z2.4: max lhs/bound over 4000 random cases 0.361 (<=1); control bound delta/(4g): max ratio 1.57 (>1 shows the control fails)
+Z2(1) isometry residual of J~(theta) built in real space: 2.5e-15
+Z2(3) m=0 step: max ||W L h(th/L) W* - h(th)||/|th|^3 = 0.0202 (<=1.5); control without twist: 1.18
+Z2(3) full: max lhs/bound = 0.0294 (<=1)   Z2(4) full: max lhs/bound = 0.00116 (<=1)
+   control no-twist ||L h(th/L)-h(th)||/|th|^3 at |th|=0.2: 0.26;  with twist: 0.0042
+   control no-twist ||L h(th/L)-h(th)||/|th|^3 at |th|=0.05: 1.05;  with twist: 0.0040
+   control no-twist ||L h(th/L)-h(th)||/|th|^3 at |th|=0.0125: 4.21;  with twist: 0.0040

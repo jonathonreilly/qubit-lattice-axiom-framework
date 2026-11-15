@@ -1,0 +1,4 @@
+higher correlations: max |detM-detN|/(n^((n+2)/2) beta) = 1.000 (<=1); control with factor 1: 38.48 (>1)
+Z2.2: reality residual of O-frame walk 0.0e+00, of O-frame twist 0.0e+00; control (twist without the site-phase gauge): 0.120
+Z2.2: residue phases cancel, entry phase (-1)^(c+u): True
+remark: ||V(0)-exp(i mu R)|| = 3.621217236862614e-16

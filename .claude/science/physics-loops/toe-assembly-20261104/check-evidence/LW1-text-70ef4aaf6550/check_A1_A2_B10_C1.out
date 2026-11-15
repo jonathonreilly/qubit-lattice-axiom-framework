@@ -1,0 +1,44 @@
+A1 ownership violations: 0
+A1 faces with product != -1: 0
+A1 |Re^2-I|,|Ro^2-I|: 2.220446049250313e-16 2.220446049250313e-16
+B10 |{Re,Ro}-(1/3)sum T_{+-2e_i}|: 1.1102230246251565e-16
+eps=0.7 mu=0.3: unitary err 4.4e-16; min|w|=0.300000 (mu=0.3) max|w|=1.195757 (2eps=1.4) n(+)= 108 n(-)= 108 n(0)= 0
+   spectrum vs formula (sorted angle diff): 1.9984014443252818e-15
+   |Theta V Theta^-1 - V|: 0.0
+   P_xx range: 0.4999999999999991 0.5000000000000008  |Theta P Theta^-1-(I-P)|: 1.7763568394002505e-15  |[P,V]|: 1.0071436563295217e-15
+eps=1.3 mu=0.0: unitary err 2.2e-16; min|w|=0.000000 (mu=0.0) max|w|=1.974326 (2eps=2.6) n(+)= 104 n(-)= 104 n(0)= 8
+   spectrum vs formula (sorted angle diff): 1.1688597274317792e-15
+   |Theta V Theta^-1 - V|: 0.0
+eps=0.2 mu=0.39: unitary err 4.4e-16; min|w|=0.390000 (mu=0.39) max|w|=0.397522 (2eps=0.4) n(+)= 108 n(-)= 108 n(0)= 0
+   spectrum vs formula (sorted angle diff): 1.5543122344752192e-15
+   |Theta V Theta^-1 - V|: 0.0
+   P_xx range: 0.49999999999999933 0.5000000000000007  |Theta P Theta^-1-(I-P)|: 1.734723475976807e-15  |[P,V]|: 8.881784197001252e-16
+eps=1.5 mu=2.9: unitary err 6.7e-16; min|w|=2.900000 (mu=2.9) max|w|=2.969531 (2eps=3.0) n(+)= 108 n(-)= 108 n(0)= 0
+   spectrum vs formula (sorted angle diff): 1.3322676295501878e-15
+   |Theta V Theta^-1 - V|: 0.0
+   P_xx range: 0.4999999999999989 0.5000000000000007  |Theta P Theta^-1-(I-P)|: 3.986394547794703e-15  |[P,V]|: 1.1103097574110884e-15
+A2 |O|= 24
+A2: rotations about c0 (t=0) that are symmetries with a common sign gauge for BOTH half ticks: 24 /24; odd-translation classes excluded by moduli: 168 /168; anomalies: 0
+A2 stabilizer of site 0 in G: 3  residues reached from 0 by O_{c0}: 8
+A2 mu=0.0: |S Ve S^-1 - Vo|=0.00e+00, |S Vo S^-1 - Ve|=0.00e+00
+A2 mu=0.3: |S Ve S^-1 - Vo|=1.93e-01, |S Vo S^-1 - Ve|=1.93e-01
+B10(1) fibre spectrum vs formula, 2000 random (eps,mu,K): max err 8.755149383254945e-15  interval violations 0
+B10 trace of fibre hops at random K: 0.0 0.0
+C1 eps=0.3 T4=1.0000 rel.err at k=.2,.1,.05: 5.974e-07 3.732e-08 2.332e-09 ratios 16.0 16.0
+C1 eps=0.3 T4=0.3333 rel.err at k=.2,.1,.05: 1.812e-08 1.131e-09 7.065e-11 ratios 16.0 16.0
+C1 eps=0.3 T4=0.6190 rel.err at k=.2,.1,.05: 3.225e-07 2.015e-08 1.259e-09 ratios 16.0 16.0
+C1 eps=0.3 T4=0.6498 rel.err at k=.2,.1,.05: 3.667e-07 2.291e-08 1.432e-09 ratios 16.0 16.0
+   control (T4/23 instead of T4/24) ratio: 4.01  (s^2/70 instead of /72 not shown)
+C1 eps=1.1 T4=1.0000 rel.err at k=.2,.1,.05: 8.462e-07 5.294e-08 3.309e-09 ratios 16.0 16.0
+C1 eps=1.1 T4=0.3333 rel.err at k=.2,.1,.05: 1.172e-07 7.322e-09 4.576e-10 ratios 16.0 16.0
+C1 eps=1.1 T4=0.6190 rel.err at k=.2,.1,.05: 3.738e-07 2.337e-08 1.460e-09 ratios 16.0 16.0
+C1 eps=1.1 T4=0.6498 rel.err at k=.2,.1,.05: 3.900e-07 2.438e-08 1.524e-09 ratios 16.0 16.0
+   control (T4/23 instead of T4/24) ratio: 3.99  (s^2/70 instead of /72 not shown)
+C1 eps=1.55 T4=1.0000 rel.err at k=.2,.1,.05: 1.110e-06 6.941e-08 4.338e-09 ratios 16.0 16.0
+C1 eps=1.55 T4=0.3333 rel.err at k=.2,.1,.05: 3.206e-10 2.002e-11 1.252e-12 ratios 16.0 16.0
+C1 eps=1.55 T4=0.6190 rel.err at k=.2,.1,.05: 4.202e-07 2.625e-08 1.641e-09 ratios 16.0 16.0
+C1 eps=1.55 T4=0.6498 rel.err at k=.2,.1,.05: 4.540e-07 2.837e-08 1.773e-09 ratios 16.0 16.0
+   control (T4/23 instead of T4/24) ratio: 3.99  (s^2/70 instead of /72 not shown)
+C1 sympy series of w in k: sqrt(3)*s*x*(-3*T*x**2 + s**2*x**2 + 72)/216
+   stated: -sqrt(3)*T*s*x**3/72 + sqrt(3)*s**3*x**3/216 + sqrt(3)*s*x/3
+   difference: 0

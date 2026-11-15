@@ -1,0 +1,14 @@
+PASS T2 (U): t_il t_ki t_ij = - t_ij t_ki t_il, nonzero, random link matrices, random colours
+PASS T2 control: with a different central mode the relation L=-R with L nonzero fails
+PASS T2 control: hard-core boson hops give L=+R (nonzero), not L=-R
+PASS T2 (O): Majorana version, random link matrices
+   control m=0: link hop component nonzero? False (expected False)
+   control m=10: link hop component nonzero? False (expected False)
+PASS C1 (U): r^y_j r^x_k^dagger nonzero on Lambda^m C^10 for all 1<=m<=9, zero for m=0,10
+PASS C1 (O): (i eta_a eta_{10+b})^2 = 1 for all a,b
+PASS C2 [check]: product of the ten Majoranas of one end = i(-1)^p
+PASS C2/C8: eta_1...eta_20 = -(-1)^{p_x+p_y}, i.e. -1 on the even (S_+) sector; end factors commute
+PASS C2 step 1 (U): r_A^dagger r_B restricts to +-(one matrix unit) on Lambda^m C^10
+PASS C2 step 1 (O): d_A^dagger P_0 d_B is +-(one matrix unit) on the 10-mode Fock space
+ALL PASS
+python3 check_T2_C1.py  1.04s user 0.07s system 88% cpu 1.260 total

@@ -1,0 +1,4 @@
+instance 0 (modes 3): min cost 0.162366; min-cost face is a single point, uniqueness immediate
+instance 1 (modes 3): min cost 0.623421; min-cost face is a single point, uniqueness immediate
+instance 2: min cost 0.565044; face dimension 6; max spread of entropy maximiser over 4 starts 2.00e-09; constraint residual 1.7e-16; entropy 2.77162999
+instance 3: min cost 1.061561; face dimension 4; max spread of entropy maximiser over 4 starts 5.45e-10; constraint residual 5.6e-17; entropy 2.83511302

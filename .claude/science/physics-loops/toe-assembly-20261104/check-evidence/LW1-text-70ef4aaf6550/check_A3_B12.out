@@ -1,0 +1,9 @@
+A3 event set equals equal-parity set in box: True
+A3 equals 2*D4^* in box: True
+A3 min norm^2: 4 count: 24 all-odd: 16 axis: 8 contains (0,0,0,2): True  e4 in lattice: False
+A3 Phi(E) subset D4: True  norm halves: True  inverse of small D4 vectors in E: True  Phi(inv)=id: True
+B12 |Aut(E)| (orthogonal, origin fixed): 1152  (|W(F4)|=1152)
+B12 stabilizer of oriented time direction: 48  of the line: 96  elements moving it off its line: 1056
+B12 all stabilizer elements are signed spatial permutations: True
+B12 automorphisms mapping slices h=0,1 into single slices: 96  ; all of them keep the time line: True
+B12 swap(1,4) is an automorphism: True

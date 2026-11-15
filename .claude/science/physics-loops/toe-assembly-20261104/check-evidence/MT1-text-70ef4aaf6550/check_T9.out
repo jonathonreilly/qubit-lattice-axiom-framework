@@ -1,0 +1,7 @@
+Pauli (2-dim): [K_i,K_j]=-i v^2 eps(L+S^N): True; [J,h_1]=0: True; S^N su(2): True; Casimir 3/4: True
+reducible 4-dim, sigma x diag: [K_i,K_j]=-i v^2 eps(L+S^N): True; [J,h_1]=0: True; S^N su(2): True; Casimir 3/4: True
+left-handed -sigma (2-dim): [K_i,K_j]=-i v^2 eps(L+S^N): True; [J,h_1]=0: True; S^N su(2): True; Casimir 3/4: True
+control (L - S^N rejected): True
+control (non-Clifford triple rejected): True
+ALL PASS
+python3 check_T9.py  1.87s user 0.05s system 94% cpu 2.036 total

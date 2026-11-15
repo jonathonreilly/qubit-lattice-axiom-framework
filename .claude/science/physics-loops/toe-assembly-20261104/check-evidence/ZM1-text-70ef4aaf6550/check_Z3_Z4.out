@@ -1,0 +1,11 @@
+Z3 instance S=0.5: 30/30 runs reached an exact solution of CAR + [G_y,Psi]=0; max ||T_y||,||T'_y|| over them = 2.44e-08 (claim: 0)
+   control A (CAR only, no gauge condition): max ||T_y||+||T'_y|| = 1.570 (nonzero expected)
+   control B (gauge only): Psi=J^dag c_y has ||[G_y,Psi]||=0.0e+00, ||Psi^2||=0.0e+00, ||{Psi,Psi*}-1||=2.000 (not a fermion)
+Z3 instance S=1.0: 30/30 runs reached an exact solution of CAR + [G_y,Psi]=0; max ||T_y||,||T'_y|| over them = 2.61e-08 (claim: 0)
+   control A (CAR only, no gauge condition): max ||T_y||+||T'_y|| = 2.047 (nonzero expected)
+   control B (gauge only): Psi=J^dag c_y has ||[G_y,Psi]||=0.0e+00, ||Psi^2||=0.0e+00, ||{Psi,Psi*}-1||=3.464 (not a fermion)
+Z3(d): generic solution of [Lambda,T]=T: ||[Lam,T]-T||=1.1e-16, ||T^N||=0.0e+00 with N=4 distinct eigenvalues, normality defect ||TT*-T*T||=14.54
+Z4 instance |S|=1: distinct eigenvalues of H = 4 >= |S|+1 = 2
+Z4 instance |S|=2: distinct eigenvalues of H = 5 >= |S|+1 = 3
+Z4 instance |S|=3: distinct eigenvalues of H = 6 >= |S|+1 = 4
+Z4 instance |S|=4: distinct eigenvalues of H = 7 >= |S|+1 = 5

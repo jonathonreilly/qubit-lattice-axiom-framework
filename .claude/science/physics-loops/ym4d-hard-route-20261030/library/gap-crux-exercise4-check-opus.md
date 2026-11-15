@@ -7,6 +7,8 @@ Row: 1006 `gap-crux-exercise4-check-opus`, queued 2026-11-15 16:42Z, Mac mini wo
 Checker: Claude Opus 5.5 (max), Anthropic. Checked file: `library/gap-crux-exercise4-max.md` (row 1003), written by
 Claude Fable 5.2 (Anthropic). **Same provider: this is not a cross-provider check** (FINISH row 1006 says so).
 Pinned commit: e299f9765 on `claude/ym4d-hard-route`. Started 2026-11-15 16:42:51Z (`date -u`).
+Provenance: Claude Opus 5.5 (max), commit e299f9765, Mac mini worker 1; a research-text check, not an audit; it grants no
+status. Verdict scale of W1 (HOLDS / HOLDS AFTER CORRECTION / FAILS / OPEN); summary in Section 6.
 
 ## 0. Plan (at most eight steps; one step per response; result appended before the next)
 
@@ -39,6 +41,20 @@ scale, so W1's scale is used, and the FINISH reading is given once in the verdic
 - Step 4 done 16:53Z: statement (ii), with the literature finding (two posted proofs of the 2D O(N >= 3) gap).
 - Step 5 done 16:58Z: statement (iii).
 - Step 6 done 17:02Z: statement (iv), hand check and independent control run (lock acquired and released).
+- Step 7 done 17:04Z: statement (v), ten anchors.
+- Step 8 done: verdict table, ranked defects, RESULT (see the time at the end of Section 6.4).
+
+## R. Repo search (rule "Repo first", FINISH L340)
+
+A check with no new attack. The repo search of row 1003 (its 7.9: main at 8b11ae2 and PR #10114 at f76f6c6, narrow) is
+inherited. Mine, for what this check adds:
+- this folder (`grep -rl`): no file cites arXiv:2611.04908, 2611.01532, 2610.16824, "Ding, Huang" or a proof of
+  Polyakov's conjecture; the nearest record is Ursachi's conditional criterion (`prior/gap-crux-lit-2.md` L309);
+- PR #10114 at f76f6c6 (bare blob-less fetch into `/tmp/row1006-check/git`, `git show` of four files): `RTARGET.md`,
+  `MASS_GAP_TARGET.md`, `MASS_GAP_CONSTRUCTION_ASTRA.md`, `MASS_GAP_LOCAL_BLOCK_ASTRA.md` have no "2611.04908",
+  "Heisenberg", "loop soup" or "Lupu"; "Polyakov" appears only for the one-loop rate and the instanton bound (RTARGET
+  L13, L26). `RTARGET.md` L39-41 holds the Kopper quote that row 1003 2.2 (b) uses, word for word.
+- Not searched: main, PRs #10133, #10134, #10141, #10144, the other 1,200 files of PR #10114.
 
 ## 1. Statement (i): Lemma NP0, Proposition NP, Corollary NP1, Section 6.1 (row 1003 L342-438, L579-594)
 
@@ -150,7 +166,7 @@ abstract, quoted: "we prove exponential decay for the spin correlation of the sp
 inverse temperature beta > 0. In particular, our work confirms Polyakov's prediction in 1975 on the Heisenberg model".
 Method (abstract): a loop soup on the metric graph with intensity N/2 conditioned on the local times, Lupu's
 isomorphism, random signs on clusters; "exponential decay for every real-valued N > 2"; the mechanism "does not
-necessarily rely on the rotation symmetry". Two companion preprints confirm that the claim is current: Y. R. Pei,
+necessarily rely on the rotation symmetry". Two nearby preprints give the context: Y. R. Pei,
 arXiv:2611.01532 (v2, 2026-11) "Polyakov predicted ... and proofs of this have recently been posted" (it uses "the
 annulus crossing bound of Ding, Huang and Yang"; it mentions "another isotropic proof"); C. Garban, N. de Montgolfier,
 arXiv:2610.16824 (2026-10-12), anisotropic perturbations, BKT phase for lambda < 1. **And a second, independent proof:**
@@ -380,3 +396,111 @@ N = infinity identities (the lattice form of (ENV), the bond energy) hold numeri
 anything about SU(2), and nothing beyond GUIDE about the scaling form of Steps 2 and 4. The 0.5-1.7 percent R2
 mismatch therefore sits in the scaling conversion dy/db = -2 pi y (lattice corrections of relative order mu), not in
 (ENV) itself. That agrees with row 1003's reading at L531-532.
+
+## 5. Statement (v): ten anchors of Sections 3 and 4, chosen by me, each printed and compared
+
+Choice: the anchors that carry V1-V3 and S2 (the section's conclusions), plus the account anchors of the table. Each
+line was printed at this pin (e299f9765) with `sed -n`; the account anchors through
+`library/sa-index/ca-full/index.tsv` (file, line, label, status, title).
+
+| # | Anchor (cited at) | Printed text, in short | Check |
+|---|---|---|---|
+| 1 | `parts/gap.md` L193 (V3, L322-323) | test table, row "Product with a massless factor": "ARGUED only: it also refutes a class-wide step 'a decrease of D or S under doubling persists' (3.2, L5)" | HOLDS (quoted exactly) |
+| 2 | `gap-crux-exercise3-check-opus.md` L203 (check 999; V3, L323) | "correctly marked ARGUED (L5 says the two factors were not constructed)" | HOLDS (quoted exactly) |
+| 3 | `parts/gap.md` L63, set-aside method 31 (S2 L252; Section 4 row 10) | item 31 starts at the end of L62 and reads on L63 "averaged curvature, Polchinski flow, Piazza-Shen (rows 957, 968)" | HOLDS (anchor off by one line, content right) |
+| 4 | registry RE, "blocked-local at (EV-STEP)" (Section 4 rows 1, 3) | `parts/gap.md` L148 "RE, sector engines ... blocked-local ... row 731"; L165 "RE wounded: (EV-STEP) is open" | HOLDS |
+| 5 | `gap-phys-seed.md` L371-373 (Section 4 row 16; also 5.2 point 3, L569) | "(MONO-Delta) is false in the ordered phase (GUIDE run, with the leading term by hand)"; exact transfer matrices of the **two-dimensional** Ising model, tori n = 3 to 8 | HOLDS in content. **Mark dropped:** the source is a GUIDE run (2D Ising) with the leading term by hand; row 1003 cites it as a fact. It is used only as supporting text for the registry status of RB, so no verdict depends on it |
+| 6 | `gap-mid-max.md` L229-232 (Section 4 row 1, PT column) | "U small, S_0 not small (PROVED GIVEN the strong-coupling seed and `gap-seed-shape.md` 4.1)": Wilson SU(2) at small coupling times the **ordered** 4D Ising model; centre flips act on the gauge factor only | HOLDS for the conclusion ((st-F) never gives (W) alone). **Wording:** row 1003 says "a product with a centre-neutral massless factor"; the anchor's factor is the ordered Ising model (no seed, not massless). A massless U(1) factor also works, by Corollary PT1 of row 998, which is the right citation for "massless" |
+| 7 | `gap-mid-max.md` L212 (Section 4 row 12) | "(GUIDE.) ... Delta(a^4) is c_1 log(1/g^2(a)) + c_2 ... One doubling changes it by about -2 c_1 b_0 g^2 log 2" | HOLDS for "D falls at a rate of order b_0 g^2 per doubling (GUIDE)". "**and z rises**" is not in the anchor. Arithmetic of Section 3 row 12 re-checked: b_0 = 11/(24 pi^2) = 0.04644; 2 b_0 log 2 = 0.0644 |
+| 8 | `gap-form-exercise.md` L352 (Section 3 row 7; Section 4 row 7) | "14 \| Loop equations, bootstrap \| numerical \| rule f \| as reported" | HOLDS |
+| 9 | `gap-brainstorm-max.md` L404 (Section 3 row 15; Section 4 row 14) | idea 31: thin twisted torus, centre vortices as fractional instantons; "no monotonicity in n is known" | HOLDS |
+| 10 | `gap-crux-exercise2-max.md` L155, L430 (Section 3 row 9; Section 4 row 9) | I19 "Borgs and Seiler 1983 ... deconfined ... recalled; row 869 found a mismatch in one use of it"; K6 "Critical slab ... (Borgs-Seiler, recalled)" | HOLDS |
+
+Also printed and right (account, via the index): CA-I 4.24:prop-flat-holonomy L102460 PROVED "A flat background with
+non-central holonomy" (row 1); CA-I 4.2:lem-one-loop L3901 CITED (B-CMP109 (1.22), Theorem 3; B-CMP116 (2.41)) and CA-II
+5.14:thm-one-loop-law L27042 PROVED "Exact one-loop law of the construction's running coupling" (row 12); CA-II
+8.10:lem-pure-gauge L114125 PROVED "Flat fields on simply connected complexes are pure gauge" (row 4: the account's
+nearest statement, not the conditioned-product form of the Bianchi identity, which is the lane's
+`gap-skeleton-max-b.md` form). Read for statement (iii) and right: `gap-crux-restate.md` L53; `gap-crux-exercise2-max.md`
+L192 (a); `gap-next3-max.md` L39; `gap-crux-exercise-r858-max.md` L155; `gap-brainstorm-max.md` L336.
+
+Same defect as in statement (iii), now in Section 4: row 5 of the Section 4 table marks U(1) "shares it" and FG
+"share it" for "Elitzur; mean Hessian diagonal". Both are wrong for the mean-Hessian clause (3.2 above). Its verdict
+("found again: row 863 ... row 968 Proposition AVG") is unaffected.
+
+**Verdict on statement (v): HOLDS** (ten of ten anchors exist and say what is cited; three small slips, none
+load-bearing: a dropped GUIDE mark (5), a factor named "massless" where the anchor's factor is the ordered Ising
+model (6), and a clause "z rises" that the anchor does not contain (7)).
+
+## 6. Verdicts, defects, and what goes to the lead
+
+### 6.1 Verdict per statement (W1's scale)
+
+| Statement | Verdict | First failing line | One-line repair |
+|---|---|---|---|
+| (i) Lemma NP0, Proposition NP, Corollary NP1, Section 6.1 | **HOLDS AFTER CORRECTION** (Lemma NP0, Proposition NP, Section 6.1 HOLD; Corollary NP1's proof line fails) | L411-412: "(c) with (a) contradicts the conclusion" (at theta_0 = min(theta, theta') < theta' it does not) | "(b) at theta gives the hypothesis; if the conclusion held at theta', D_M(n_j) <= theta'^(j-J) D_M(n_J) -> 0, against (a)" |
+| (ii) Section 2.2 (a)-(d): the 2D filter is not a test in the form of step 6c | **HOLDS AFTER CORRECTION** ((a), (c), (d) HOLD; (b) corrected) | L125 "That is the open problem as stated", premise L102-103 | "That is Polyakov's conjecture: claimed proved for every N >= 3 in two posted, unrefereed proofs (OpenAI 2026-10-06; arXiv:2611.04908); in the lane's periodic form it needs a bridge that is not written" |
+| (iii) The "Q_8, 2T" column, S2, Fact T in Q_8 | **HOLDS AFTER CORRECTION** (FAILS as written; Fact T in Q_8 HOLDS, computed) | Section 3 row 5 cell "yes; U(1) too" (mean-Hessian clause); S2 L245 "one input only" | "Both at once: two clauses of a gauge quotient of a continuous non-abelian group: the O'Neill term (10) and the mean-Hessian clause (5)" |
+| (iv) Section 5.2 Steps 1-3, the torus gap equation, (ENV), E_L | **HOLDS** | none | none; independent control run T1-T5 PASS (GUIDE) |
+| (v) Ten anchors of Sections 3 and 4 | **HOLDS** | none load-bearing | three slips listed in Section 5 |
+
+In the scale of FINISH L344: every statement is CORRECT-NO-ADVANCE after its correction (row 1003's results are about
+filters and a counterexample, off the direct path, as the row itself says); none is WRONG.
+
+### 6.2 Defects, ranked by what each breaks (at most ten)
+
+1. **(ii) The literature premise of Section 2 is out of date** (L102-103, used at L125, L138-139, 2.3 L174, 7.7 L711,
+   7.8 L722 and the RESULT line). The 2D O(N >= 3) gap at every beta has two posted proofs at the pin date: OpenAI,
+   2026-10-06 (as reported by DHY; not located or read here), and Ding-Huang-Yang, arXiv:2611.04908, 2026-11-03 (pages
+   1-6 read). Both are about infinite-volume decay; neither is refereed. Breaks: the size of the "price" in (b)-(d), and
+   the wording W2 (a) would copy into `parts/gap.md` L92. Does not break: "not a test" (a fortiori).
+2. **(iii) S2 "one input only, the O'Neill term" (L245)** fails. The mean-Hessian clause of input 5 also separates SU(2)
+   from Q_8, 2T and the 2D model. The table row 5 (Section 3) and row 5 (Section 4) wrongly give it to U(1) and Q_8.
+   Breaks: the count in S2 and in the RESULT's "only the O'Neill term is in both". Does not break V1: the clause's
+   consumers (row 968 Proposition AVG; idea 48 (d)) are blocked or are ideas.
+3. **(iii) Section 3 rows 7 and 16, Q_8 column**: the Mandelstam half of 7 and the beta-identity of 16 are shared by
+   Q_8 and 2T (16: by every group). Breaks: S2's second bullet as written. The sorting moves toward "shared", so no new
+   separating input appears.
+4. **(i) Corollary NP1, L411-412**: the proof quotes (c) where it needs (c)'s argument at theta'. Statement true;
+   one-line repair above. The same repair applies to the 1.2 x 10^(-5) version of 6.1.
+5. **(i) Citation of (i6)** (L365-366): the "no seed" form is Theorem ZD (B) => (A) (`gap-phys-seed.md` L296-303,
+   checked in row 727). `gap-mid-max.md` L63 states the "no uniform gap" form. For M both premises hold. Nothing breaks.
+6. **(v) Three anchor slips**: the GUIDE mark of `gap-phys-seed.md` L371-373 (a 2D Ising run) is dropped at L297 and
+   L569; "centre-neutral massless factor" at L282, where the anchor `gap-mid-max.md` L229-232 uses the ordered Ising model
+   (the massless case is Corollary PT1); "and z rises" at L293 is not in `gap-mid-max.md` L212. Nothing breaks.
+7. **(ii) L118** "both exclusion clauses apply": only "H(M') is not known" applies as a fact. "T(M') is true there" holds
+   only through the new, unrefereed proofs and a bridge. (a) does not use the clause.
+8. **(iii) Completions, not defects**: row 8 (author: "not checked") is "yes", shared, ARGUED from Lemma S's proof (only
+   its S^3 form (ii) is SU(2)'s). Row 19 (author: unchecked) holds as "centre-flux part only (= row 3)".
+
+### 6.3 For the lead (evidence for other owners; nothing edited outside this file)
+
+- W2 (a) of row 1003: if 2.3's text goes into `parts/gap.md` L92, replace "the open two-dimensional gap" by "the
+  two-dimensional gap (claimed proved for N >= 3 in two posted, unrefereed proofs, OpenAI 2026-10-06 and arXiv:2611.04908;
+  open in the lane's periodic form by one bridge)". W2 (b): pointing the test-table cell L193 to Proposition NP is
+  supported by this check (statement (i) HOLDS AFTER CORRECTION; the Peierls input stays RECALLED).
+- Row 998 I37, row 1002 item 6, and any lane text that says the 2D O(N >= 3) gap is open: out of date in the same way
+  (not checked line by line here).
+- A reading item, if the lead wants one (not proposed as a row by me; W1 forbids a new attack): the OpenAI proof of
+  2026-10-06, described by DHY as resting on "the non-commutativity of rotations on S^2" and a family of spin waves on
+  S^2, is a gap mechanism "from the group" in an asymptotically free model. That is the kind of input `parts/gap.md`
+  L147 names for reopening RA. Whether anything transfers to a gauge field or to four dimensions is unknown. DHY's
+  loop-soup proof is planar (an annulus crossing bound) and is less likely to transfer.
+
+### 6.4 What this check did not cover
+
+- The proofs of Theorems 1, 2 of `gap-seed-sc.md`, Theorem D, Theorem S, Theorem ZD, Lemma PT and Proposition R were
+  not re-derived beyond the lines used (each is cited with its check row). The Peierls input stays RECALLED.
+- DHY was read at pages 1-6 only (statement, remarks, the AI-use statement). Pei and Garban-de Montgolfier were read at
+  abstract level only. The OpenAI proof was not located. No claim here says that any of them is correct.
+- Section 4's verdict column (V1) was not re-derived. Section 2.2 (e), 2.3, 2.4, Steps 2 and 4 of 5.2 and Section 6.2
+  were not checked beyond the lines named.
+- Independence: the checker and the author are the same provider (Anthropic). The checks that used a different
+  derivation or data path are: test (e) of (i) (four thermal terms instead of Lemma A (b)); the Fact T computation; the
+  slab argument for row 8; the mean-Hessian argument for row 5; (ENV) via the coupling derivative; the bond energy from
+  the lattice Green's function; and the control run (a 1D product formula instead of 2D sums).
+
+Cost and time: started 16:42:51Z, sections written in order; the last section written at 17:05:50Z (`date -u`), one control run of 2 s under
+the numeric lock, three arXiv API queries, one arXiv PDF, one blob-less fetch of PR #10114.
+
+RESULT: Check of row 1003 (Claude Opus 5.5 max, same provider as the author; not an audit). (i) Lemma NP0, Proposition NP and Section 6.1 HOLD (tests (a)-(e) pass; Lemma PT runs with an Ising factor). Corollary NP1 HOLDS AFTER CORRECTION: its proof at L411-412 quotes (c) where it needs (c)'s argument at theta' (one line). The citation of (i6) should add Theorem ZD (B)=>(A). (ii) HOLDS AFTER CORRECTION: the 2D O(N) filter is not a test in the form of step 6c (a fortiori). Its premise "the 2D O(N>=3) gap is open" (L102-103, L125) is out of date: two posted, unrefereed proofs exist (OpenAI 2026-10-06, per Ding-Huang-Yang; Ding-Huang-Yang arXiv:2611.04908, 2026-11-03), so the "price" is far smaller and the Patrascioiu-Seiler scenario is contradicted. (iii) HOLDS AFTER CORRECTION: Fact T in Q_8 holds (computed). S2 "one input only, the O'Neill term" fails: the mean-Hessian clause of input 5 is a second "both" input (the cells give it wrongly to U(1) and Q_8). The Mandelstam half of row 7 and the beta-identity of row 16 are shared by Q_8 and 2T. Rows 8 and 19 completed (8 shared). No new consumer, so V1 is untouched. (iv) HOLDS: Steps 1-3, the torus gap equation, (ENV) and E_L were re-derived. An independent control run (T1-T5) PASSes and adds the exact lattice identity dd/db = (L^2/2)(mu_L - mu_inf) (GUIDE). (v) HOLDS: 10/10 anchors, three slips that nothing rests on. Open: the Peierls input (RECALLED); whether the new 2D proofs are correct, and the bridge from them to the lane's periodic seed; whether the OpenAI S^2 mechanism says anything for SU(2) gauge fields (reading only, not attacked); the wall (W) and (CAS), untouched.

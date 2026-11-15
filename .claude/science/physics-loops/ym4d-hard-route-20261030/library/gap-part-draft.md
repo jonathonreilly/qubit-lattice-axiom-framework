@@ -1,0 +1,266 @@
+lead: anthropic/claude-opus-5-5/high mac-mini-worker
+lease_until: 2026-11-16T02:08Z
+
+# gap-part-draft: draft state file for the gap part (row 1001)
+
+Row 1001 (`FINISH.md` line 1080), work item W5 of row 998. Bookkeeping, no proof. The lead places this file at
+`parts/gap.md` with the lead header. Pinned at commit f75650fe8 on `claude/ym4d-hard-route`. Every claim below is
+copied with its row and file line; this file adds no claim of its own.
+
+## State of attack
+
+Abbreviations: "row 998" = `library/gap-crux-exercise3-max.md` (Claude Fable 5.2 max, checked by no one at this pin;
+its check is row 999). "FINISH" = `FINISH.md` at f75650fe8.
+
+### Formulation
+
+- Objects, engine, dichotomy and continuum form: row 998 1.2, L111-127 (DEF from `gap-crux-restate.md` Section 1;
+  engine = Theorem S, `gap-crux-restate.md` 3.4, "checked in rows 698 and 699", L117-118; dichotomy = Corollary Z4,
+  `gap-phys-seed.md` L322, row 720, "PROVED GIVEN Theorem ZD", L120; continuum form = Theorem ZD-c, same file L311, L125).
+- The wall, verbatim (row 998 L129-131): "For Wilson SU(2) along the account's trajectory (first-passage data,
+  dilated), prove: (W) There is a physical size L in P with z^-(L) > 256 D_0 + 30, where D_0 bounds D^+ on the sizes
+  from L/4 on."
+- Equivalent or sufficient forms on record (row 998 L133-136): (PHYS-SEED); the fixed-coupling seed (SEED) at each
+  beta of the window 2.3 to 2.6 with a carry to finer cutoffs; (U1) or (U2) of row 982 together with the start value
+  (TH) from the account.
+- Quantifiers, allowed premises, outcomes that do not count, required comparison cases: row 998 L138-151. Among
+  them: no computer-assisted step (GOAL.md, owner 2026-11-01; row 998 L142-143); a statement with a supremum over
+  tilts is false by Theorem D2 (row 977), one uniform over plaquette coupling fields is false by Lemma SHEET (row 996)
+  (row 998 L145-148); comparison cases compact U(1) at weak coupling, frozen Q_8 and 2T, the K7 endpoint, the free
+  photon (row 998 L150-151).
+- In plain words (row 998 9.1, L829-830): "the missing piece is one statement: on each doubling of the box, between
+  the last small box and the first good box, a certain free energy shrinks by a fixed factor. In a model with a
+  massless particle it never gets small."
+
+### Hardest open obligation
+
+(W) above. Its price on record is the section "The exact price" below (row 998 9.6, L880-888): (W) iff (BDD-Delta)
+and (Z-UNB) (Theorem ZD-c, row 720), and (W) follows from (CAS) with theta < 1 and an extensive base (row 708).
+
+- What fails now (row 998 L153-155): "Each route ends at an inequality for the thermal sum of the cube at order-one
+  coupling. The last six rows (982, 988, 996 and their checks) end at the same sentence: no input excludes branch G
+  beyond first passage."
+- The blockage in one sentence (row 998 6b, L525-527): "every engine found is blind, so its seed sits in the band;
+  the one selective fact that is provable today, asymptotic freedom at small coupling, has no engine that carries it
+  across the band; and since row 988 the lane has searched (K-one) only."
+- The two kinds of input (row 998 6b, L519-523): (K-one) a property of the measure at one scale in the band, with a
+  number in it; (K-flow) a statement that starts from first-passage data and is carried through the band by a step
+  that fails for U(1), for frozen groups and for products with a massless factor. Row 998 6c point 5 (L564-566): for
+  (K-flow) tools the lane has constraints and no refutation device.
+
+### Routes tried and why they failed
+
+- The seven route families RA-RG, their kill verdicts and reopen conditions: section "Route registry" below (row 998
+  7.3-7.5, L641-682). None is near closure; RA, RB, RF, RC are blocked-equivalent, RE blocked-local, RG retired, RD
+  survives only as a weaker (conditional) statement (L674-682).
+- Methods set aside before row 879: exercise 2 (row 878) 6a rows 1-18, `gap-crux-exercise2-max.md` 6a (cited by
+  row 998 L492; not copied here).
+- Methods set aside, rows 879-997 as digested by row 998 (6a, L499-513; taken from RESULT lines, not files, L493-495;
+  rows 879-956 not covered, L495): 19 box-uniform tilted covariance (rows 970, 977, 979); 20 quotient form (rows 977,
+  980); 21 hypotheses uniform over coupling fields (rows 996, 997); 22 relaxations of the constraint system (row 962);
+  23 a carrier of a seed to finer cutoffs (row 978); 24 (LSI-br) from small-field convexity (row 982 N2; ARGUED,
+  unchecked, row 984); 25 (UNIT) by metrics or counts (row 982); 26 a seed below the massless floor (row 988, Lemma
+  FLOOR); 27 the beta_t path from zero temporal coupling (rows 988, 992); 28 soft exclusion of branch G (row 988
+  Route 3); 29 Route Z in Schwarz form (rows 988, 991); 30 one-plaquette separating properties (rows 995, 996); 31
+  averaged curvature, Polchinski flow, Piazza-Shen (rows 957, 968); 32 plaquette cellular automata, squeeze/rotate
+  (rows 960-967); 33 (DRIFT)_c and (ESC) (rows 975, 976).
+- Verdicts re-judged by row 998 (6d, L568-590; ARGUED until row 999): 6a row 28 (row 988 Route 3 (c) and N2) "too
+  strong" (L581); 6a row 30 valid in range, (K-one) only (L583); 6a row 33: the verdict on ESC is "not tested", not
+  "fails" (L585); exercise 2 6c point 1 (Q_8, 2T bind T_per only) FAILS as a blanket exemption, holds for Z_2 (L587).
+- Row 998's own outcome (9.2, L835, L846): the exercise did not pass the wall and did not price it more exactly than
+  rows 708 and 720; "This run produced mainly a map that the lane already had."
+- What not to do next (row 998 9.5, L871-878): another fresh-framing exercise by this model family; another search
+  for a one-scale property separating Wilson from K7; a proof of a monotone or convex statement along scales by
+  class-wide tools; the theta(L) measurement as an urgent item; a comparison with Migdal-Kadanoff flows.
+
+### Next action
+
+Queued by the lead from row 998's work items (9.7, L890-953) on 2026-11-15 14:08Z:
+
+| Row | Name | Work item | What it does | Output | Source |
+|---|---|---|---|---|---|
+| 999 | `gap-crux-exercise3-check-opus` | W1 (L895-910) | check of row 998: (i) Lemma PT, Corollary PT1; (ii) Proposition KF, Corollary KF1; (iii) four rows of the 6c table; (iv) 6d rows 24, 28, 30, 33 and the last two; (v) the two corrections of 8.5. No new attack. A gpt-6-astra check is held. | `library/gap-crux-exercise3-check-opus.md` | FINISH L1078 |
+| 1000 | `gap-d2-inputs-opus` | W3 (L920-930) | (i) verdict on T3 of row 982 (`gap-hcphys-max.md` L99, L177); (ii) hand proofs of reflection positivity in the form Theorem D2 uses and of Frohlich-Simon-Spencer Gaussian domination with (G1)-(G4) (`gap-tiltproof-max.md` 5.2-5.3) | `library/gap-d2-inputs.md` | FINISH L1079 |
+| 1001 | `gap-part-draft-opus` | W5 (L942-946) | this draft state file; the lead places it at `parts/gap.md` | `library/gap-part-draft.md` | FINISH L1080 |
+
+Lead note (FINISH L1081): W2 waits for W1; W4 (conditional dichotomy as a milestone) not queued: "the owner standard
+is proofs or counterexamples, not a catalogue of open conditions." Row 998 9.4 point 3 (L866-867) proposes no proof
+row on (CAS), (DRIFT), (CONTR), (U1) or (U2): "No mechanism for the selective step is on record".
+
+## Obligations
+
+Labels per `docs/ai_methodology/skills/physics-loop/references/long-running-execution.md` L259-264. No file under
+`gates/` names this lane (`ls gates | grep -i -E "gap|seed|engine|zd|dichot"` returned nothing at f75650fe8), so no
+obligation here carries `implication` or `discharged`; the lane's own check rows are named in each line. Consumer
+"the gap" means a proof of (W) (row 998 L157-158: "Closure: a proof of (W)").
+
+- gap: physical-size seed beyond first passage, (W) -> the gap. Row 998 L129-131; OPEN in its RESULT (FINISH L1077).
+- gap: bounded Casimir free energy on physical sizes, (BDD-Delta), with unbounded size-times-gap, (Z-UNB) (together
+  equivalent to (PHYS-SEED)) -> (W) by Theorem ZD-c. Row 998 L125-127, L884; OPEN in FINISH L1077.
+- gap: contraction of the Casimir free energy under doubling, (CAS) with theta < 1 on a bounded range -> (W), with the
+  extensive base below. Row 708 `gap-mid-max.md` L64; row 998 L885-886; "(CAS) gives the seed; the converse is not
+  proved" (ARGUED, row 998 L804-808).
+- gap: unit-chain functional inequalities (U1), (U2), (HC-phys) -> (W) with (TH). Row 982 `gap-hcphys-max.md` L135-163
+  (corrected by row 984); stronger than the target (row 998 L665).
+- gap: an even step, (EV-STEP) -> the even-sector statement (G_ev) of row 731. Row 998 L664, L676.
+- unchecked: extensive base (TH) given the account and (DET) -> (CAS) route. Row 978 `gap-ladder-max.md` L150; row 998
+  L885-886.
+- unchecked (lane-checked in rows 698, 699; no gate): seed engine, Theorem S -> Theorem ZD. Row 998 L117-118.
+- unchecked (lane: "PROVED GIVEN Theorem ZD", row 720; no gate): dichotomy Theorem ZD-c and Corollary Z4 -> the price
+  and route RD. Row 998 L120-127, L674.
+- unchecked: product with a massless factor, Lemma PT and Corollary PT1, given the U(1) theorem -> test table.
+  Row 998 8.1 (L690); check = row 999.
+- unchecked: what K7 and w_p bind, Proposition KF and Corollary KF1 -> rewording of the lead rule (W2). Row 998 8.2
+  (L724); check = row 999.
+- unchecked (ARGUED): T3, small-field convexity short by beta_K/beta_0 -> lead rule row 982 N2. `gap-hcphys-max.md`
+  L99, L177; row 998 L577, L921-922; verdict = row 1000.
+- unchecked (ported, not rebuilt): reflection positivity at bisecting planes, and Frohlich-Simon-Spencer Gaussian
+  domination with (G1)-(G4) -> Theorem D2 -> discard verdicts of rows 970, 977, 982 N2. Row 998 L923-929; rebuild =
+  row 1000.
+- unchecked (lane, GIVEN the two lemmas above; row 979): Theorem D2 and Lemma SUB -> rule against supremum-over-tilt
+  forms. Row 998 L546.
+- unchecked (same-provider check 997): Lemma SHEET -> rule against forms uniform over coupling fields. Row 998 L547.
+
+## Requests
+
+- target lead: place this file at `parts/gap.md` with the lead header (row 1001, FINISH L1080).
+- target lead: after row 999 confirms Proposition KF, reword the standing rule of row 988 N2 and the note under row
+  996 (W2, row 998 L912-918, proposed text there); FINISH L1081: "W2 waits for W1".
+- owner, through the target lead: does a theorem "the continuum theory has a mass gap, or it is in branch G at every
+  size, or its Casimir free energy is unbounded" count as a milestone of the later target? (W4, row 998 L933-934.)
+  The lead did not queue it (FINISH L1081).
+- cross-provider checker: the held gpt-6-astra check of row 998 (FINISH L1078).
+
+## Route registry (copied from row 998, `library/gap-crux-exercise3-max.md` 7.5, L668-682)
+
+Source: row 998, `gap-crux-exercise3-max.md` L670-682 (ranking and registry), with the route definitions of 7.3
+(L641-651) and the kill verdicts of 7.4 (L653-666). "Ranked by what a route would change, divided by what it costs
+to find out" (L670). The governance words and the stop/reopen conditions are row 998's.
+
+| Rank | Route | Strength against the target | Status (governance words) | Concrete evidence | Stop or reopen condition | Source line |
+|---|---|---|---|---|---|---|
+| 1 | RD, the dichotomy theorem | weaker | candidate-complete as a weaker statement, GIVEN its inputs | Theorem ZD-c, Corollary Z4 (row 720) | owner says a conditional theorem counts, or not | L674 |
+| 2 | RA, contraction of D | stronger | blocked-equivalent | Proposition CT (row 998 8.3) | reopen on a mechanism that gives theta < 1 from the group | L675 |
+| 3 | RE, sector engines | unknown | blocked-local | row 731 | reopen on an even step | L676 |
+| 4 | RF, functional inequalities | stronger | blocked-equivalent | rows 978-988 | reopen on a typical-field or flow-weighted form with a supplier | L677 |
+| 5 | RB, sign in beta | stronger | blocked-equivalent | Theorem D (f) | as RA | L678 |
+| 6 | RC, one-scale number | target-equivalent | blocked-equivalent | row 996 | reopen on a hand bound in the band | L679 |
+| 7 | RG, hierarchical comparison | unknown | retired | rows 859, 876, 878 | reopen on an exact inequality that fails for U(1) | L680 |
+
+Row 998's closing sentence (L682): "No route is near closure. Three families are blocked because their terminal
+obligation is the target or stronger."
+
+Kill verdicts behind the statuses (row 998 7.4, L659-666, quoted in short):
+
+| Route | Verdict (row 998) | Reason as written there |
+|---|---|---|
+| RA | wounded; blocked: terminal obligation is the target or stronger | (CONTR) gives (W) (Proposition CT); (W) does not give (CONTR) by the lane's theorems (8.3); it is (CAS) of row 708 (`gap-mid-max.md` L64-67) (L660) |
+| RB | wounded; blocked as RA | a sign with no small number; false in the class (exercise 2, 6a row 5) (L661) |
+| RC | dead for now | no candidate; every one-scale property found has no consumer (row 996) (L662) |
+| RD | survives | weaker than the target by design; the owner decides whether it counts (L663) |
+| RE | wounded | (EV-STEP) is open; the even sector alone has no symmetric form (Remark 2.A) (L664) |
+| RF | wounded; blocked: stronger than the target | (HC-phys) with (TH) gives the seed; the converse is unknown (row 984) (L665) |
+| RG | dead as a mechanism | the hierarchical flow is group-blind (row 878, 6a row 18); the departing step is the crux (L666) |
+
+Corrections that row 998 itself made after the registry (8.5, L794-819), which bear on it:
+
+- Proposition CT is not new: (CONTR)_theta is (CAS) of row 708 (`gap-mid-max.md` L64; verdict L67, L209-215,
+  "it restates the seed in steps"). Row 998 L799-803. Row 998 keeps one ARGUED remark: "(CAS) gives the seed; the
+  converse is not proved" (L804-808). Row 998 L818: "Proposition CT is a found-again statement with a governance label."
+- The finite-group narrowing is struck in part: row 884's check (`gap-crux-exercise2-check-astra.md` L227-259,
+  L352) marks the argument FAILS; "Q_8 and 2T remain tests of even-sector tools" (row 998 L809-815). The narrowing
+  holds for Z_2.
+
+## Test table (copied from row 998, `library/gap-crux-exercise3-max.md` 6c, L529-566)
+
+Source: row 998, `gap-crux-exercise3-max.md` 6c. The definitions (L531-534), the table (L536-550) and the five points
+(L552-566) are copied verbatim; only the last column, the source line, is added here. The row "Frozen Q_8, 2T" is
+the version corrected by row 998 itself in 8.5 (L809-815), after check 884 (`gap-crux-exercise2-check-astra.md` L227-259).
+
+> Definitions as in the skill: a tool is a hypothesis H with a written proof of "H(M) implies T(M)" on a class K. A
+> model M' with T(M') false refutes the tool only if H(M') is true. Otherwise it says what a proof of H must use.
+> T_fix: a seed at the coupling of M'. T_W: (W) along a sequence with first-passage data. T_per: the periodic seed
+> (flux sectors included). T_ev: the even-sector statement (G_ev) of row 731.
+
+| Test (model M') | Class K | The exact T that fails in M' | How the failure is known | What a tool must use to pass | Binds from | Source line |
+|---|---|---|---|---|---|---|
+| Compact U(1), Coulomb phase | reflection-positive gauge models with (TM) | T_fix, T_per, T_ev, and T_W along every sequence beta_j to infinity (L1) | THM, published, recalled (Guth; Frohlich and Spencer); in the lane for Villain at beta >= 2^14 (row 786, per exercise 2). At beta of order 1 to a few it is a BELIEF. | the non-abelian structure | theorem-grade at very large beta only. T_W-tools are bound in full, because their couplings tend to infinity. | L538 |
+| Free photon "through the rate" | Gaussian model on the same lattice | T_per at every size: S_2 >= 5.06 constant (row 975, L428-430); the massless floor 17.04 (row 988) | THM, lane (hand calculations; check 991 for FLOOR) | a rate or a drift that the photon does not have | every size | L539 |
+| Product with a massless factor (L5; device of row 708) | the engine's class (F1) | T_fix, T_per, T_W (PROVED given the U(1) theorem). ARGUED only: it also refutes a class-wide step "a decrease of D or S under doubling persists" (3.2, L5) | THM given the U(1) theorem and a strong-coupling seed (I27, I28); the product algebra is checked (row 709) | the whole state space (no decoupled sector) | as the U(1) test | L540 |
+| Frozen Z_2 | same | T_per only. T_ev and the full seed are true there. | THM, lane (Peierls, beta above 2.191; exercise 2, 6c) | connectedness, for T_per tools only | beta above 2.191 | L541 |
+| Frozen Q_8, 2T | same | T_per; and, in the frozen limit, T_ev too: the frozen transfer operator has at least two centre-even flat states at every box (cross-provider check, row 884, `gap-crux-exercise2-check-astra.md` L227-259). **Corrected in 8.5.** | BELIEF at order one (transition couplings from numerics); the frozen-limit statement is the check's | as Z_2 for T_per; for T_ev: the non-abelian flat states | order one: belief | L542 |
+| w_p at its transition coupling (Proposition V) | positive-character weights on SU(2) | T_fix at one coupling, every size | THM, published (van Enter and Shlosman), cited; Proposition V proved in the lane given it | a number (how far log w is from linear), **or** first-passage data | one coupling per p, p large. It does not test T_W-tools that read first-passage data (C3). | L543 |
+| K7 line | same | T_fix on the line | BELIEF (numerics; row 995: supported for beta_A about 1.3 to 1.5 only) | as w_p | as w_p; it is the belief-grade form of the w_p test | L544 |
+| K7 end point (a massless scalar) | same | T_fix at one point | BELIEF (row 995 doubts the 1981 end point) | as w_p | one point | L545 |
+| Theorem D2; Lemma SUB | any gauge group in the class | not a model: a theorem that a form of hypothesis is false (supremum over tilts) | THM, lane, GIVEN two ported lemmas not rebuilt (row 979) | typical tilts, or a flow-weighted form | beta above 4 G_S (1.07 on side 4), so also on the trajectory | L546 |
+| Lemma SHEET | any group | a form of hypothesis is false (uniform over coupling fields) | THM, lane (check 997, same provider) | typical coupling fields | every large torus | L547 |
+| Lemmas CAP, COUNT | - | necessary conditions on a rate obtained through Theorem BR | THM, lane (check 984) | - | they bind that route only | L548 |
+| Ceilings 1/3, 2/3, 0.775, 1.0109 | - | not models: ranges where a family of majorants stops | THM, lane (checks 840, 841, 849, 857) | another family | "needs a small number": valid as ranges; each caps one family (row 861) | L549 |
+| Gauge theories with matter in the conformal window | outside K (non-local weight after integrating the matter) | T_W | BELIEF | the Markov property of the gauge field | not a valid test for tools that use locality of the weight | L550 |
+
+Points that follow from the valid form.
+
+1. **K7 and w_p test T_fix.** A tool for T_W whose hypothesis contains first-passage data has H(M') false at K7 and at
+   w_p for a trivial reason, so these models give no constraint on it. They do refute class-wide soft statements
+   with no ultraviolet hypothesis, as row 988 Route 3 (b) says.
+2. **For T_W the theorem-grade tests are U(1), the free photon, the product with a massless factor, D2 and SHEET.**
+   None of them asks for a number at one scale. They ask for: non-abelian structure, a rate, the whole state
+   space, typical fields.
+3. **The K7 line itself is a belief; its theorem-grade form is Proposition V.** A row that discards on K7 should cite
+   Proposition V and say for which p.
+4. **A pass is no support.** (DRIFT), (CVX), (HC-phys), (U1), (U2) all pass every test. That says only what their
+   proofs must use.
+5. **The tests are not enough for (K-flow).** No test on record is a model of the SU(2) class with first-passage data
+   and no gap. None is believed to exist (I32). So for (K-flow) tools the lane has constraints (points 1, 2) and
+   no refutation device. This is a property of the problem, not a gap of the lane.
+
+## The exact price (copied from row 998, `library/gap-crux-exercise3-max.md` 9.6, L880-888)
+
+Copied verbatim from row 998: the first sentence is L882; the three items are L884, L885-886 and L887-888.
+In the second item, (CAS) is row 708's `gap-mid-max.md` L64 (identified by row 998 8.5, L798-801).
+
+Not sharpened by this run. On record, each "PROVED GIVEN" in the lane:
+
+- (W) holds if and only if (BDD-Delta) and (Z-UNB) hold (Theorem ZD-c, row 720).
+- (W) follows from (CAS) with theta < 1 and an extensive base (row 708; base: row 978 L150, conditional on the
+  account and on (DET)). So the order-one input can be one number theta < 1 on a bounded range of sizes.
+- In words (exercise 2, 9.6, and 6b here): the wall is the absence of one selective inequality at every scale
+  between first passage and the seed size. Selective means: false for a massless factor.
+
+## Draft log (row 1001; the lead may drop this section on placing)
+
+Plan (save protocol; one step per response):
+
+1. Create this file with the plan. (done 2026-11-15T14:08Z)
+2. Read the part-file format of the research procedure and an existing `parts/*.md` for the layout.
+3. Read `library/gap-crux-exercise3-max.md` 7.5 (registry with reopen conditions); copy it with row numbers.
+4. Read 6c (test table); copy it.
+5. Read 9.6 (price); copy it.
+6. Read rows 998-1001 in `FINISH.md`; write State of attack (formulation, hardest open obligation, routes tried,
+   next action = rows 999-1001), Obligations, Requests.
+7. Check every citation (row number and file line) by grep against the pinned files.
+8. Status line and RESULT.
+
+Status log (UTC from `date -u`):
+
+- 2026-11-15T14:08Z step 1 done.
+- 2026-11-15T14:09Z steps 2-3 done (format read: `docs/ai_methodology/skills/physics-loop/references/long-running-execution.md` L239-272; registry copied).
+- 2026-11-15T14:09Z step 4 done (test table of 6c copied).
+- 2026-11-15T14:09Z step 5 done (price of 9.6 copied).
+- 2026-11-15T14:11Z step 6 done (State of attack, Obligations, Requests written; plan moved to the end).
+- 2026-11-15T14:11Z step 7 done: every row-998 line cited here was printed from the pinned file and compared;
+  eleven anchors were off by one to three lines and were corrected (8.5, 6a, 6d, 9.1, 9.4, 9.5, W3, W4, label
+  table). External anchors printed and matched: `gap-mid-max.md` L64 ((CAS)), `gap-ladder-max.md` L150 ((TH)),
+  `gap-hcphys-max.md` L99, L177 (T3), L135-163 ((U1) to the two halves), `gap-phys-seed.md` L311 (ZD-c), L322 (Z4),
+  `gap-crux-exercise2-check-astra.md` L227 (section 7, Q8/2T narrowing FAILS), FINISH L1077-1081.
+  Not verified: the content of rows 698, 699, 708, 720, 731, 878 beyond the lines row 998 quotes.
+- 2026-11-15T14:12Z step 8 done. No numeric job, no proof, no edit outside this file.
+
+RESULT: Row 1001 (Claude Opus 5.5 high, Mac mini worker; bookkeeping, no proof, unchecked): draft state file for the
+gap part written in the research-procedure format (State of attack: formulation, hardest open obligation (W),
+routes tried, next action = rows 999, 1000, 1001; Obligations by name with labels gap/unchecked, none implication or
+discharged because no gap-lane gate exists; Requests to the lead, the owner and the held cross-provider check), with
+row 998's registry of 7.5 and its reopen conditions, the 6c test table and the 9.6 price copied verbatim with source
+lines; every claim cited by row and line, line anchors checked against f75650fe8. Open: everything row 998 left open
+((W), (PHYS-SEED), (BDD-Delta), (Z-UNB), (CAS), (U1), (U2), (HC-phys), (EV-STEP)); the lead still has to place the
+file at `parts/gap.md`.

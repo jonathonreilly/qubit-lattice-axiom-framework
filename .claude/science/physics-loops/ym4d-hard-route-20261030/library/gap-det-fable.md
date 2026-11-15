@@ -320,3 +320,237 @@ whenever the form is built from stencil operators (the same local rule on
 every torus) by sums, products, transposes and inverses: a stencil operator R
 satisfies R pi^* = pi^* R by definition, and Lemma P (ii), (iii) carries this
 through the algebra. Steps 4-6 check these against the sources.
+
+## Step 4. The ports: what the three named sources give, and what Step 2-3 change (02:10Z)
+
+Sussman and Alpoge (with Claude and Codex), repository at HEAD c7fef8b; read at
+the lines row 986 located.
+
+1. **YM3_I Proposition II-44-37 and L60813-60846 (3D, proved there).** The
+   trivial-background value is expanded by the logarithm series of a gapped
+   positive form: "f_b(Y;P) = 3 log c_N - sum_{n>=1} (1/n) tr T_Y^n(b,b)",
+   T_Y = 1 - c_N^{-1} A_{Y,N}, |T_Y| <= q_N < 1 (L40737-40755), then Moebius
+   inversion over coarse regions gives local terms n^(j)(X,b) = -(1/2)
+   E^N(X;P_0,b) with |n^(j)(X,z)| <= E_N e^{-delta_N M d_j(X)} (II-45-8,
+   II-45-65, L60818-60835), and "The same change of coordinates used for the
+   normalizer transports these constants between local lattice charts. In
+   particular, their definition does not introduce a choice of a larger torus"
+   (L60843-60846). Proposition III-7-12 then compares two tori term by term.
+   **Ported here:** the logarithm series of 1 - A/Lambda (Step 2 (f), Step 3).
+   **Changed:** no Moebius inversion and no local family at U = 1; the series
+   is compared on closed walks through Lemma P, so the 4D case needs no
+   analogue of the local-chart identity and no decay rate above the polymer
+   entropy. Credit for the mechanism (log series of the gapped form; the
+   torus-free extensive coefficients II-192-10) is theirs.
+2. **YM4_1400 eq:flow-RF61 (L86260-86301; 4D, a target there).** "n_k^tot =
+   36 N_{k+1} log L - (1/2) log det(C^T Delta^(k) C)|_1", "C is the actual
+   linear embedding of nonpivot coordinates into full constrained
+   fluctuations; this determinant is on the free color coordinates", count
+   N^(k) "with -3 log theta_k/2 per free bond", and "The determinant estimates
+   and first-step sign in (RF61) remain actual Gaussian targets". This has the
+   shape of (S1): scalars times counts, plus -(1/2) log det of one form on the
+   free coordinates. Of the three targets in RF61, Corollary B addresses the
+   two-torus comparison that (TH) needs, and (S2) gives |log det| <= d n^4
+   max(|log gamma|, |log B|), which is the form of |n_k^tot| <= C N_{k+1}
+   (ARGUED, on (S2)). The local family n^(k+1)(X,z) with common lifts and the
+   first-step sign n_0^tot < 0 are NOT addressed here; (DET) does not need them.
+3. **Repository, frozen `library/hma.md` Theorem 5 and D3, D5 (4D).** D3 (3):
+   A^Y(P) = C_V^T [iota^T {(Q G_1 Q^T)^{-1} - a} iota + G^Y_V - E_amb[...J]]
+   C_V; D5: full Gaussian S = I; Theorem 5 (16): -(1/2) log det A_S =
+   -(1/2)|S| log Lambda + sum_X N_S(X;P), valid at P_0; and after (21): "A
+   ratio tau adds -|S|_scalar Log tau/2, assigned per integrated coordinate;
+   u -> b adds the corresponding fixed theta_j scalar factor". **Ported
+   here:** the form (the operator whose determinant is the step's Gaussian
+   value on the free coordinates, and the per-coordinate scalars). **Not used
+   here:** the local family N_S and its bound (19); Lemma A' replaces them at
+   U = 1. So this row does not depend on hma's premise list M beyond the two
+   statements quoted in Step 5.
+
+## Step 5. (S1)-(S3) for the repository's step form at U = 1 (02:25Z)
+
+The form is `library/pr-lay.md` (6)-(7) (frozen; "This is SA 10200-10208 and
+14091-14107 with active injections explicit", pr-lay L83), equal at a real
+axial V to hma's A^Y (hma D2, L30: "At a real axial V it is SA 7181-7182").
+Take U = 1 on a torus with no large-field region (Omega_0 = ... = Omega_{k+1}
+= the torus, so the separation condition pr-lay (1) is empty), depth k = j,
+P_0 = (1,0,0). Then J = 0, so in pr-lay (6) G = G_0 = G_1, and
+
+  A_j := A(P_0) = C^T [ iota^T {(Q G_0 Q^T)^{-1} - a} iota + K_GF ] C,
+  G_0 = (Delta^W + D R D^T + Q^T a Q)^{-1},
+  R = 1 - G' Q'^T (Q' G'^2 Q'^T)^{-1} Q' G',  G' = (D^T D + Q'^T a Q')^{-1}.
+
+**(S3): ARGUED (bookkeeping).** With T_m of side 2L^m in level-K units (CA-II
+Definition 8.22 (b): the volume (2L^m)^4), the level-j lattice has side
+2L^{m+K-j}; free coordinates are the positively stored non-pivot level-j
+bonds with three colours, "at most twelve coordinates per site" (pr-lay L24).
+The number of coordinates per site is not constant (pivots are removed), so
+X_n is to be read as: a set with a free action of the translations of the
+torus by L Z^4 and a fixed number d_L of coordinates per L-block. Lemma P and
+Lemma A' use only a free action of Gamma on a finite index set and a distance
+with |x+g-x| >= |v|_1 for the minimal lift v; with "d n^4" replaced by the
+number of coordinates, d_L (n/L)^4, the proofs are unchanged.
+
+**(S1), periodization part: ARGUED from Lemma P, on a reading of the imported
+definitions.** Each primitive in the display (D, D^T: covariant difference at
+U = 1; Q, Q': the straightened averages at U = 1; a: the row weights;
+Delta^W: the Wilson Hessian at 1; K_GF: the Hessian of the soft gauge
+functional at V = 1; C: the derivative of the pivot graph at V = 1; iota) is
+defined by a finite stencil rule that reads the lattice near a point, the same
+rule on every torus. For such an operator R, R_{n'} pi^* = pi^* R_n holds by
+definition (apply the rule to a periodic field). Lemma P (ii), (iii), in its
+rectangular form across the bare lattice and the level-j lattice, carries this
+through the sums, products, transposes and the four inverses of the display,
+provided the inverses exist on the larger torus (pr-lay W, L103: "all inverses
+in (6)-(7) exist"). Hence A_j on T_m is Per of A_j on T_m' (m <= m').
+What is read and not proved here: that every primitive is such a stencil rule
+at U = 1, and that the pivot choice and the gauge-fixing choice on T_m' are
+the pull-back of those on T_m (YM4_1400 L102650-102654 asserts "fixed choice
+of gauges give the same two scalars for the two tori"). pr-lay L74: "These
+maps, their branches and boundary conventions are imported". This is the
+first input to check against the definitions (I-loc).
+
+**(S1), scalar part: ARGUED.** By hma (21) with S = I the Gaussian integral
+over the free coordinates is (2 pi)^{|I|/2} (det A_j)^{-1/2}; the ratio tau,
+the change of variable u -> b (theta_j) and the pivot Jacobian (YM4_1400:
+36 log L per coarse site) are scalars per coordinate or per coarse site
+(hma L275; RF61). On a torus without large-field region every count is an
+exact multiple of the number of L-blocks, with torus-free coefficients
+provided the coupling sequence is the same on both tori (CA-II lemma,
+hypothesis of a common sequence; YM4_1400 L102576). So G^(j)(T_m) =
+c_{j,K} n^4 - (1/2) log det A_j with c_{j,K} free of m.
+
+**(S2): PORTED, conditional on the frozen imports R and W of hm/pr-lay.**
+- Gap: pr-lay R (L99): "A(P_0) exists, is real symmetric, and A(P_0) >= c_L I
+  whenever the longer sequence satisfies those floors and U has real bound
+  < a_R in the stated axial representative". U = 1 has real bound 0 and is
+  axial (all contours are I). So gamma = c_L.
+- Decay and upper bound: hm Lemma 1 (4): the precision is a sum of labelled
+  terms with max of row and column sums of e^{mu_W t_omega} m_omega(x,y) at
+  most W, t_omega >= d(x,y), d the periodic l^infty distance of base points
+  (hm L13), and "At global pairs the resulting fixed-region expansion sums to
+  the actual symmetric precision (7) of pr-lay" (hm L42). Since |.|_1 <=
+  4|.|_infty: (A2') with mu_0 = mu_W/4, C_A = W; and B = W by Schur.
+- Uniformity: hm L49: "All imported constants/floors are uniform in depth,
+  volume, region shape and larger admitted layer gaps." c_L, W, mu_W are
+  early constants depending on L and the fixed parameters.
+- Conditions: the torus room of pr-lay L26 on the LARGER torus only (Lemma A'
+  uses (S2) for A' only; the smaller torus gets gamma <= A <= B from Lemma P).
+  R and W are themselves conditional in the library (pr-lay L101, L112: flat
+  c0-loc inputs, a2-curved inputs, h-walk gate repairs). At U = 1 the curved
+  inputs are evaluated at the flat background; whether they then reduce to
+  the checked flat package (row 95, `library/flat-port.md`) was not traced in
+  this row.
+
+**Result of Step 5.** For the repository's step form (pr-lay (7) = hma D3 at
+U = 1, full torus), (DET) holds with
+
+  c_det = (d_L/(2L^4)) log(2W/c_L) c_eps (15/(4 nu^5)) L^{-5m}/(L-1),
+  nu = mu_W c_L/(8W),  c_eps = e^{nu}[coth(nu/2)^4 - 1],
+
+m = min(m, m'), given (I-loc) and the imports R, W. The constant depends on L
+and the fixed parameters only; not on K, g_0, g, m'. Status: PROVED as an
+implication from (I-loc), R, W; each of those is ARGUED or imported, as marked.
+
+## Step 6. Identification with the account's step normaliser: OPEN input (02:35Z)
+
+The account does not define its Gaussian integral; it cites it. CA-I
+Definition 4.2 (a) (L3769-3775): "Z^(j-1) is the Gaussian integral that
+normalises the fluctuation measure of step j, as in [(3.28)]{B-CMP119} and
+{B-CMP116}." CA-II hypothesis (a) (L141289-141290): "the logarithm of the
+Gaussian integral of step j at the trivial background". Balaban's papers are
+not on this machine (`~/ym4d-papers` absent), so CMP 119 (3.28) and CMP 116
+Sections 1-2 were not read, and nothing below is quoted from them.
+
+**(ID), the identification, stated as an OPEN input.** For every j < K and
+every torus T_m in the range, Balaban's Z^(j)(1) on T_m (CMP 119 (3.28)) is
+
+  Z^(j)(1) = exp[c_{j,K} #(T_m at level j)] det(A_j)^{-1/2},
+
+with c_{j,K} torus-free and A_j a real symmetric positive form on the free
+(constraint- and gauge-reduced) coordinates that is (i) built from stencil
+operators at U = 1 by sums, products, transposes and inverses, and (ii)
+satisfies (A2'), (A3') uniformly in j and the volume.
+
+What supports (ID) without settling it: `library/ol.md` L52 (row 320, on CMP
+109 (1.22)): "The Gaussian includes the constraint and gauge Jacobians of
+Balaban's step"; `library/b109.md` L131-132: the Haar/coarea factors, pivot
+and Gaussian normalization are CMP 109 (0.11)-(0.16), (1.4)-(1.5),
+(2.4)-(2.13), and "this alone does not identify every Haar or determinant
+factor of the physical integral"; YM4_1400 RF61 writes the 4D number as
+-(1/2) log det(C^T Delta^(k) C)|_1 plus counts; hma L277: "SA 17528-17545
+uses the compressed determinant in (21), together with elimination factors
+z^(j)" and "this determinant theorem does not prove the z^(j) bounds". On a
+torus with no large-field region and U = 1 there is no conditional step and
+no elimination factor, so only the full determinant S = I occurs (ARGUED).
+
+Corollary B does not care which form it is: any definition of the step's
+Gaussian integral at U = 1 that satisfies (S1)-(S3) gives (DET). So (ID) (i)
+is a reading task (the definition in CMP 119 (3.28) / CMP 116 against Lemma
+P), and (ID) (ii) is Balaban's flat propagator estimates (CMP 95, 96; row 95)
+for his Delta^(k) at U = 1 reduced to the free coordinates. Neither needs a
+new estimate if the definitions are as RF61 and pr-lay (7) write them.
+
+## Step 7. Check of the argument (02:45Z)
+
+1. *Quantifiers and order of constants.* L and the fixed parameters; then the
+   early constants c_L, W, mu_W of hm (before kappa, hm L49); then nu, c_eps,
+   c_det. K, j, m' arbitrary afterwards. c_det is non-increasing in m; at the
+   bottom of the range it is a number depending on L and p only. No cycle.
+2. *Hypothesis (A1') is not needed in full.* The proof of Lemma A' uses only
+   covariance under Gamma = nZ^4/n'Z^4 (for Per to exist and for
+   sum_{xbar} T'^k(x,x) = (n/n')^4 tr T'^k). Covariance under LZ^4 is not
+   used. So the pivot pattern need not be block-periodic, only pulled back
+   from the smaller torus.
+3. *Where the gap is used.* Only in q' < 1 and nu > 0. If the form had a zero
+   mode on a torus (constant fields), (A3') would fail and the lemma with it;
+   in pr-lay (7) the averaging constraint and the axial gauge remove them
+   (import R). A form with a torus-dependent zero-mode treatment would break
+   (S1); none appears in pr-lay (6)-(7).
+4. *One-sided or two-sided.* Two tori of the family are always nested
+   (2L^m | 2L^m'), so the bound is two-sided for every pair, with
+   m = min(m, m'). (TH) needs only one side.
+5. *Uniformity in K.* The sum over levels is sum_{u>=1} L^{4u} eps(2L^{m+u}),
+   convergent with a bound free of K; this is the point where a torus-wide
+   number of order one per level would have cost K (2L^m)^{-4} (CA-II
+   L141426-141432). Here the per-level error is exponentially small in the
+   side of that level's lattice.
+6. *No computer-assisted step.* None. The toy run prepared as a refutation
+   test (`/tmp/gapdet987/scripts/check_Aprime.py`, two-dimensional tori, pass
+   and fail criteria written first) was NOT run: the numeric lock was held by
+   `lane980-pinsheet-guide-w2` until 10:44Z (memory free 70 percent, so memory
+   was not the obstacle). Lemma A' was checked by hand only.
+7. *Lean-formalizable.* Lemma P is linear algebra over a finite quotient;
+   Lemma A' uses the Schur test, similarity by a diagonal matrix, eigenvalues
+   of a real symmetric matrix, and log(1-x) = -sum x^k/k on [0,q].
+   Lemma A (infinite lattice) additionally uses bounded operators on l^2(X);
+   it is not needed for Corollary B.
+8. *Not independently checked.* Written by one model in one session; by the
+   model rule an Opus line-by-line check is owed before any use.
+
+## Step 8. Verdict and next step (02:50Z)
+
+| Statement | Mark |
+|---|---|
+| Lemma A (infinite lattice to torus) | PROVED |
+| Lemma P (periodization = restriction to periodic vectors) | PROVED |
+| Lemma A' (nested tori) | PROVED |
+| Corollary B: (S1)-(S3) imply (DET), explicit c_det, K-free, two-sided | PROVED |
+| (S3) sides and counts | ARGUED |
+| (S1) for pr-lay (7)/hma D3 at U = 1 (periodization via Lemma P; per-coordinate scalars) | ARGUED, on reading (I-loc) |
+| (S2) for the same form: gap c_L, decay mu_W, bound W, uniform | PORTED from frozen hm (4), pr-lay R; conditional on imports R, W |
+| (DET) for the repository's step form | PROVED as an implication from (I-loc), R, W |
+| (ID): the account's Z^(j)(1) (Balaban CMP 119 (3.28)) has the form (S1)-(S2) | OPEN input (papers absent here) |
+| RF61's local family with common lifts, and the first-step sign | not addressed; not needed by (DET) |
+
+**Next step (for the lead; not done here).**
+1. A reading row on the machine that has the scans: CMP 119 (3.28) and CMP 116
+   Sections 1-2 (and CMP 109 (1.4)-(1.7), (2.4)-(2.13)), to settle (ID) (i):
+   write Balaban's Z^(k)(1) as scalars per coordinate times det^{-1/2} of a
+   form in stencil operators; and (ID) (ii) from the flat package of row 95.
+2. An Opus line-by-line check of Lemma P, Lemma A', Corollary B and of the
+   reading (I-loc) of pr-lay (6)-(8) at U = 1.
+3. The toy run, when the numeric lock is free (a guide; it can only refute).
+4. Row 981's open input can then read: "(DET) follows from Corollary B of
+   `library/gap-det-fable.md` given (ID); delta = delta-bar_vac + c_det".
+
+RESULT: Row 987 (Claude Fable 5.2 medium, Mac mini worker 3; one session, checked by no one, no numeric run: the lock was held by lane 980). PROVED: Lemma A' (for a real symmetric matrix on a torus with gap gamma, bound B and kernel decay (mu_0, C_A), and its periodization on any sub-torus of side n, the log-determinant densities differ by at most log(2B/gamma)[coth(nu n/2)^4 - 1], nu = mu_0 gamma/(2 C_A)), with Lemma P (periodization is restriction to periodic vectors, so it passes through sums, products, transposes and inverses) and the infinite-lattice Lemma A; and Corollary B: if the step-j Gaussian integral at U = 1 is exp(torus-free scalar times count) times det^{-1/2} of one such form with constants uniform in level and volume, then |G_m/(2L^m)^4 - G_m'/(2L^m')^4| <= c_det = (d/2) log(2B/gamma) c_eps (15/(4 nu^5)) L^{-5 min(m,m')}/(L-1), two-sided, free of K, g_0, g. For the repository's step form (pr-lay (7) = hma D3 at U = 1) the inputs are PORTED from frozen hm (4) and pr-lay R (gap c_L, decay mu_W, bound W; conditional on their imports R, W) and ARGUED by Lemma P on a reading of the imported definitions as stencil operators (I-loc). The mechanism (log series of the gapped form, torus-free counting coefficients) is Sussman and Alpoge's YM3_I II-44-37 / III-7-12; the 4D change is that closed walks are compared through periodization, so no local family, common-lift identity or entropy rate is needed. OPEN: (ID), that the account's step normaliser (Balaban CMP 119 (3.28), cited and not defined in CA) is of that form, since Balaban's papers are absent on this machine; (I-loc); the Opus check; RF61's local family and first-step sign are not addressed.

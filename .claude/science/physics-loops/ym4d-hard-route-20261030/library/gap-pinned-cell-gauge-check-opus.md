@@ -35,6 +35,9 @@ Stop rule (W1): stop at the first WRONG that breaks 4.7 and report it.
 - 2026-11-15T18:54Z: file created, plan written. Next: step 1.
 - 2026-11-15T18:56Z: step 1 done (Section 1). Next: step 2, tests (a)-(c).
 - 2026-11-15T18:58Z: step 2 done (Section 2): tests (a), (b), (c) PASS; scope remark on (a). Next: step 3, (i) Proposition A (i), (ii) Proposition W.
+- 2026-11-15T19:00Z: step 3 done (Section 3): Proposition A (i) and Proposition W re-derived, both CORRECT-NO-ADVANCE, no defect. Next: step 4, (iii) B and B', (iv) SEAG.
+- 2026-11-15T19:03Z: step 4 done (Section 4): B CORRECT-NO-ADVANCE; B' PROVED part ADVANCE; SEAG identity CORRECT-NO-ADVANCE with defect 1 (averaging site at the far corner, repaired) and a scope remark. Next: step 5, (v) CEN and CEN2, (vi) EMB against OpenAI p. 13.
+- 2026-11-15T19:05Z: step 5 part 1 written (5 (v)): CEN, CEN2 CORRECT-NO-ADVANCE. Next: fetch OpenAI O(4) paper, check EMB.
 
 ## 1. Step 1: the brief, copied, and what this check reads
 
@@ -137,3 +140,199 @@ sentence stands as written (every deviation from the abelian Ward identity is pr
 take "gauge directions are null directions of H_c" as exact at a general pin.
 
 Tests: (a) PASS (with the scope remark), (b) PASS, (c) PASS. No WRONG so far; continue.
+
+## 3. Step 3: (i) Proposition A (i) and (ii) Proposition W, redone by hand
+
+### (i) Proposition A (i) (row 1011 L163-178). CORRECT-NO-ADVANCE.
+
+Holonomy. (e^(eps B_1) U_1)(e^(eps B_2) U_2)(e^(eps B_3) U_3)^(-1)(e^(eps B_4) U_4)^(-1), with (e^(eps B_3) U_3)^(-1) = U_3^(-1) e^(-eps B_3). Each
+exponential is moved to the far left past the unperturbed product standing left of it, using g e^X g^(-1) = e^(Ad(g) X)
+(exact): e^(eps B_1) U_1 e^(eps B_2) = e^(eps B_1) e^(eps Ad(U_1) B_2) U_1; then U_1 U_2 U_3^(-1) e^(-eps B_3) = e^(-eps Ad(U_1 U_2 U_3^(-1)) B_3) U_1 U_2 U_3^(-1);
+then U_p e^(-eps B_4) = e^(-eps Ad(U_p) B_4) U_p. So U_p(eps) = E(eps) U_p with E as stated, a = (c_1, c_2, -c_3, -c_4), and
+the c_i use the unperturbed links. Exact for all eps, as the row says.
+
+Second order, by a route other than the row's (direct differentiation instead of the product expansion):
+E'(0) = sum a_i = delta_p and E''(0) = sum_i a_i^2 + 2 sum_(i<j) a_i a_j. With a_i a_j = - a_i . a_j + a_i x a_j:
+E''(0) = - |sum a_i|^2 + 2 sum_(i<j) a_i x a_j = - |delta_p|^2 + kappa_p, since [a_i, a_j] = 2 a_i x a_j. Then
+t_p(eps) = Re(E(eps) U_p) with U_p = t_p + s_p and Re(u (t + s)) = - u . s for imaginary u gives
+t_p - eps delta_p . s_p - (eps^2/2)(|delta_p|^2 t_p + kappa_p . s_p) + O(eps^3). Agrees with L164 term by term.
+
+Also checked (used by B' and SEAG, not listed in W1): A (ii) and A (iii). (ii): on interior links e^(eps B_l) is a
+fixed left translation, so by left invariance of Haar measure Z(eps) = int exp(A_c(e^(eps B_bd) omega, U_int)) dU_int at
+EVERY eps, for every extension; hence F'' = - E[A''] - Var(A') with A'(0) = X_c(B), A''(0) = - sum beta w (t |delta|^2 + kappa . s).
+The formula of L168 follows, and independence of the extension holds at every eps, not only at second order.
+(iii): delta_p . s_p = sum_i (+-) B_(l_i) . Ad(T_i^(-1)) s_p (Ad orthogonal), regrouped by link; N_l is the derivative of A_c
+in the boundary link l. Correct. The U(1) remark (L180-182): all fields and links in one torus, so Ad acts trivially
+on a, delta_p = a (d theta)_p, kappa_p = 0, and beta_p t_p <= |beta_p| <= b gives H_c <= b sum w_p (d theta~)_p^2 for every pin
+and every extension, so for the infimum over extensions. Correct.
+
+Why no advance: an exact second-order expansion, used inside the row as the tool for B' and SEAG; no open statement
+of the lane consumes it.
+
+### (ii) Proposition W (row 1011 L186-200). CORRECT-NO-ADVANCE.
+
+The order of the eight factors. On link 3, (e^(d B_3) e^(e B'_3) U_3)^(-1) = U_3^(-1) e^(-e B'_3) e^(-d B_3), so after moving left the
+B'-factor precedes the B-factor; the same on link 4; on links 1, 2 the B-factor comes first. This is exactly the
+row's order [c_1][c'_1][c_2][c'_2][-c'_3][-c_3][-c'_4][-c_4] (L187), with c'_i formed with the same transports as c_i.
+
+Vanishing derivative. Since B = 0 on boundary links, on every link e^(d B_l) e^(e B'_l) is either the fixed left
+translation of an interior link or e^(e B'_l) on a boundary link, so N(d, e) does not depend on d for any e. Hence
+0 = d_d d_e N(0, 0) = Z (E[d_d d_e A] + E[X_c(B) X_c(B')]), with d_d A(0, 0) = X_c(B), d_e A(0, 0) = X_c(B') by A (i).
+
+Mixed coefficient. In a product of eight exponentials each carrying d or e, the d e coefficient is the sum over
+mixed pairs k < m of f_k f_m. Each unordered pair {a_i, a'_j} occurs exactly once, so the symmetric part sums to
+- sum_(i,j) a_i . a'_j = - delta_p(B) . delta_p(B'); the antisymmetric part is (1/2) sum over mixed pairs of [earlier, later]
+= (1/2) kappa_p(B, B'). Taking Re against U_p: d_d d_e t_p = - t_p delta_p(B) . delta_p(B') - (1/2) kappa_p(B, B') . s_p.
+Inserting into the vanishing derivative gives the displayed identity of L190 exactly (signs and the factor 1/2).
+
+Same-link part. Pairs on one link: link 1, [c_1, c'_1] = [B_1, B'_1]; link 2, [c_2, c'_2] = Ad(U_1)[B_2, B'_2] (Ad is a Lie
+algebra automorphism); link 3, [-c'_3, -c_3] = - Ad(U_1 U_2 U_3^(-1))[B_3, B'_3]; link 4, [-c'_4, -c_4] = - Ad(U_p)[B_4, B'_4]. The sum is
+delta_p([B, B']) with the signs of delta_p, so the same-link part of the bracket term is
+(1/2) sum beta w delta_p([B, B']) . s_p = - (1/2) X_c([B, B']), as L193 states. [B, B'] vanishes on boundary links, so
+E[X_c([B, B'])] = 0 by the first-order identity; the term is a covariance, not a mean. For U(1) all brackets vanish.
+
+Consistency used later by SEAG: with B' = B, for links i < j both mixed pairs (B-slot of i, B'-slot of j) and
+(B'-slot of i, B-slot of j) have i first, so they give 2 [a_i, a_j]; same-link pairs give [a_i, a_i] = 0. Hence
+kappa_p(B, B) = 2 kappa_p(B) (L304), and Proposition W gives E[X_c(B)^2] = E[direct term of B], which with
+H_c(omega; B) = 0 for B vanishing on the boundary (Z does not change) is the same statement read from A (ii).
+
+Why no advance: the second-order Schwinger-Dyson identity, a direct corollary of left invariance of Haar measure;
+the lane had the first-order form (row 754). Correct, with no consumer outside the row.
+
+Defects found in (i)-(ii): none.
+
+## 4. Step 4: (iii) Propositions B, B' and (iv) Proposition SEAG, redone by hand
+
+### (iii-1) Proposition B (row 1011 L221-232). CORRECT-NO-ADVANCE.
+
+Covariance with the tail convention: (e^(eps B) omega)^g_l = g_tail e^(eps B_l) omega_l g_head^(-1) = e^(eps Ad(g_tail) B_l) g_tail omega_l g_head^(-1)
+= (e^(eps Ad_g B) omega^g)_l, exactly, for every eps. F_c is gauge invariant (extend g arbitrarily to interior sites;
+interior links change by U -> U^g, Haar measure and every t_p are invariant). So F_c(e^(eps B) omega) =
+F_c(e^(eps Ad_g B) omega^g) for all eps, and the second derivatives agree: H_c(omega; B) = H_c(omega^g; Ad_g B). omega -> omega^g is
+a bijection of pins, so the suprema agree. Orbit: (Ad_g (a theta))_l = theta_l Ad(g_tail(l)) a, and Ad: SU(2) -> SO(3) is onto,
+so n_x = Ad(g_x) a is an arbitrary unit vector at each site, independently (|a| = 1). Correct as written. No advance:
+a one-line consequence of gauge invariance; its content is used through B'.
+
+### (iii-2) Proposition B' (row 1011 L234-261). PROVED part: ADVANCE. ARGUED part: labelled honestly.
+
+The value H_c(1; B) for the boundary strength field. With beta_p = b on boundary plaquettes and 0 elsewhere, every
+plaquette with an interior link has strength 0, so int exp(A_c) dU_int = exp(b sum_bdry w_p t_p(omega)) (Haar measure
+normalised) and F_c(omega) = - b sum over boundary plaquettes of w_p t_p(omega), a deterministic function of the pin.
+By A (i) at U = 1 (t_p = 1, s_p = 0, all transports trivial, so c_i = B_i): H_c(1; B) = b sum_bdry w_p |B_1 + B_2 - B_3 - B_4|^2
+for every su(2)-valued boundary field B. Correct (L245-247).
+
+Reduction to the trivial pin. Given n, choose g_x with Ad(g_x) n_x = a. Then Ad_g(theta n) = a theta and, by B,
+H_c(1; theta n) = H_c(1^g; a theta) <= sup over pins of H_c(omega; a theta). Correct (L247-248).
+
+First lower bound (closed theta). theta = d lambda, lambda the indicator of a boundary site z, with the head-minus-tail
+convention. Take any boundary plaquette p and call its vertex x + mu = z (all four vertices of a boundary plaquette
+are boundary sites). Then theta_1 = + 1 (head of l_1 is z), theta_2 = - 1 (tail of l_2 is z), theta_3 = theta_4 = 0 (z is not an
+endpoint of l_3 = (x + nu -> x + mu + nu) or l_4 = (x -> x + nu)), so d(theta n)_p = n_x - n_z (L249). Every other boundary plaquette
+contributes a term >= 0. Choosing n_x != n_z gives sup over pins of H_c(omega; a theta) >= b w_p |n_x - n_z|^2 > 0, while
+the extension d lambda~ (lambda~ = lambda extended by 0) has curl zero on every plaquette, so the infimum of the classical
+action is 0. Hence no K exists. The statement "there is NO constant K ... for all pins, all strength fields in [0, b]
+and all real boundary fields theta" is PROVED, for the class with all strength profiles (Section 2 (a)).
+
+Second lower bound (random signs). The tails of l_1, ..., l_4 are x, x + mu, x + nu, x (L250), so with n_y = eps_y a,
+d(theta n)_p = a [eps_x (theta_1 - theta_4) + eps_(x+mu) theta_2 - eps_(x+nu) theta_3]. x, x + mu, x + nu are distinct, the signs are
+independent with mean 0, so the mean square is theta_2^2 + theta_3^2 + (theta_1 - theta_4)^2 (|a| = 1), and the supremum over n is at
+least the mean. Summing over boundary plaquettes with w_p gives the second bound of L242-243. Correct.
+
+The ARGUED reading (L253-261). Cauchy-Schwarz on a square of side r with flux f r^2: (f r^2)^2 <= 4 r sum theta^2, so
+sum theta^2 >= f^2 r^3/4, for every gauge of the potential (the flux is gauge invariant). Concentric squares with
+disjoint perimeters (sides S, S - 2, ...) in each of the order S slices of a boundary 3-face give order f^2 S^5; each
+boundary link away from edges is l_2 or l_3 of some boundary plaquette with w_p >= 1/4, so the second bound gives a pin
+supremum of order b f^2 S^5 against the classical b f^2 S^4. So the best uniform h is at least of order b S. The
+orders check; the constants are not computed, and the row marks them ARGUED. The homogeneous-strength case is marked
+ARGUED only (L259-261); see Section 2 (a) for its scope.
+
+Why ADVANCE: the PROVED part turns the reading-level remark of rows 1007 B(5) and 1009 Step 7 (no continuous gauge
+twist) into a proof that the transcribed induction hypothesis, a classical-action bound uniform over C_b, is false at
+every scale and for every constant. It is the statement that carries the FAIL verdict of 4.7 for (M2)-(M3).
+
+### (iv) Proposition SEAG (row 1011 L294-318). Identity: CORRECT; one imprecise sentence in the proof (not breaking).
+
+Setting: z interior with all neighbours interior; B_l = + a on links with head z, - a on links with tail z (|a| = 1),
+B = 0 elsewhere, so B = 0 on boundary links. Every plaquette containing z is not in a boundary 3-face, so w_p = 1.
+
+First equality. Proposition W with B' = B and kappa_p(B, B) = 2 kappa_p(B) (Section 3 (ii)): E[X_c(B)^2] = E[direct term];
+and E[X_c(B)] = 0, so E[X^2] = Var. Correct.
+
+The four corner cases, recomputed. For each of the 6 planes (mu, nu), z is one corner of 4 plaquettes:
+- Base x = z: B_1 = B_4 = - a, B_2 = B_3 = 0. Vanishes identically (Section 2 (b)).
+- z = x + mu: B_1 = + a (head z), B_2 = - a (tail z), B_3 = B_4 = 0. a_1 = a, a_2 = - Ad(U_1) a. Gauge transformation h at z:
+  U_1 -> U_1 h^(-1), U_2 -> h U_2, U_p invariant (z is not the base), a_1 invariant, a_2 -> - Ad(U_1) Ad(h^(-1)) a.
+- z = x + nu: B_4 = + a (head z), B_3 = - a (tail z), B_1 = B_2 = 0. a_3 = Ad(T_3) a with T_3 = U_1 U_2 U_3^(-1), a_4 = - Ad(U_p) a.
+  Gauge h at z: U_3 -> h U_3, U_4 -> U_4 h^(-1), so T_3 -> T_3 h^(-1), U_p invariant; a_3 -> Ad(T_3) Ad(h^(-1)) a, a_4 invariant.
+- z = x + mu + nu: B_2 = B_3 = + a (both heads z), B_1 = B_4 = 0. a_2 = Ad(U_1) a, a_3 = - Ad(T_3) a. Gauge h at z: U_2 -> U_2 h^(-1),
+  U_3 -> U_3 h^(-1), so T_3 is INVARIANT and a_2, a_3 are both invariant: the gauge transformation at z does nothing
+  here. The one that works is at x + mu (a neighbour of z, so interior): U_1 -> U_1 h^(-1), U_2 -> h U_2, T_3 and U_p
+  invariant, a_2 -> Ad(U_1) Ad(h^(-1)) a, a_3 invariant. (At x + nu also works.)
+
+Gauge-averaging step. In each non-base corner exactly two a_i are non-zero, |a_i| = |a_j| = 1, so the direct term is
+t_p (2 + 2 a_i . a_j) + (+-)[a_i, a_j] . s_p. For a gauge transformation at an interior site s other than the base, the law,
+t_p and s_p are invariant, a_j is invariant and a_i = M Ad(h^(-1)) a with M fixed; int over SO(3) of Ad(h^(-1)) a dh = 0, and both
+the cross term and the bracket are linear in a_i. So each non-base corner gives 2 beta_p E[t_p], for every (c, omega, beta).
+
+Count. 6 planes x 4 corners = 24 plaquettes at z; 6 are based at z and give 0; 18 give 2 beta_p w_p E[t_p]. In a
+homogeneous interior (beta_p = b, w_p = 1, E[t_p] the same at the 18) the value is 2 x 18 x b E[t_p] = 36 b E[t_p]. Correct
+(L300-302). Arithmetic against the GUIDE table of 4.8: 36 x 1.0 x 0.2436 = 8.77, 36 x 2.3 x 0.6088 = 50.41,
+36 x 2.6 x 0.6706 = 62.77, as tabulated (consistency of the table only; it decides nothing).
+
+Defect 1 (proof text, L308-310; does not break 4.7). "the two links at z have transported colours that differ by
+Ad of a link variable ending at an interior site; averaging over the gauge transformation at that site": at the
+corner z = x + mu + nu the colours differ by Ad(U_2 U_3^(-1)), a two-link transport through z, and the gauge
+transformation at z leaves both colours invariant. The averaging site must be x + mu (or x + nu), the head of U_1
+(or of U_4). Repair (checked above): use the site x + mu, which is interior because it is a neighbour of z. The value
+and the count are unchanged.
+
+Scope of the "Meaning" paragraph (L312-318; reading, not under W1). SEAG proves the identity for the interior field
+a d lambda, whose boundary data are 0 and whose H_c is 0. It does not by itself prove that "drop the covariance" fails
+for every extension of a non-zero boundary field: by A (ii) the direct term depends on the extension, and the zero
+extension of the zero field has direct term 0. So "the start bound is not 'drop the covariance' even at the trivial
+pin" (L312, 9.2 item 2, RESULT) is proved for fixed-colour extensions of the form a d lambda, and is a reading for an
+optimal extension. 4.7's FAIL of (M3) on C_b does not need it: B' already proves that no classical start bound holds
+uniformly on C_b, by any method. Verdict: CORRECT-NO-ADVANCE (the identity is right and new to the lane, but the
+verdict of 4.7 rests on B'; SEAG's own consequence beyond B' is the reading above).
+
+No WRONG in (iii)-(iv). Continue.
+
+## 5. Step 5: (v) Lemma CEN, Corollary CEN2; (vi) Lemma EMB against OpenAI's p. 13
+
+### (v-1) Lemma CEN (row 1011 L263-276). CORRECT-NO-ADVANCE.
+
+Re(X U) = Re(X' U) for all unit U forces X = X': Re(x y) is the R^4 inner product of x with conj(y), and the conjugates of
+unit quaternions span H. By cyclicity of Re, t_p(hU) = Re(U_1 X) with X = h_2 U_2 U_3^(-1) h_3^(-1) U_4^(-1) h_4^(-1) h_1, and
+t_p(U) = Re(U_1 X') with X' = U_2 U_3^(-1) U_4^(-1). So X = X' for all U_2, U_3, U_4 (L269). U_2 = U_3 = U_4 = 1 gives
+h_2 h_3^(-1) h_4^(-1) h_1 = 1; with U_3 = U_4 = 1 this turns X = X' into h_2 U_2 h_2^(-1) = U_2 for all U_2, so h_2 = +-1.
+"The other links are the same": done here for h_3 by isolating U_3^(-1) instead of U_1: Re(U_3^(-1) h_3^(-1) U_4^(-1) h_4^(-1) h_1 U_1 h_2 U_2)
+= Re(U_3^(-1) U_4^(-1) U_1 U_2) for all U; U_1 = U_2 = U_4 = 1 gives h_4^(-1) h_1 h_2 = h_3, and then h_3^(-1) U_4^(-1) h_3 = U_4^(-1)
+for all U_4, so h_3 = +-1; h_1 and h_4 likewise by isolating U_2 and U_4^(-1). With all h_l = +-1 the relation becomes
+h_1 h_2 h_3 h_4 = 1. Correct as written; the phrase "the other links are the same" needs the cyclic rotation shown
+here, which is routine.
+
+The remarks after it (L272-276). A central link field h with values +-1 gives t_p(hU) = (h_1 h_2 h_3 h_4) t_p(U), so a
+non-closed h flips the signs of the strengths by the exact two-cochain dh: these are the signed strengths of the
+class. On a box, H^2(B^4, S^3; Z_2) = H_2(B^4; Z_2) = 0 (Lefschetz duality), so every closed Z_2 two-cochain relative to
+the boundary is exact, and its h is absorbed by a change of variables inside and a change of pin on the boundary.
+Correct. Why no advance: the lane had the content as a remark (row 712, `gap-crux-fp.md` L88); this is its
+elementary proof.
+
+### (v-2) Corollary CEN2 (row 1011 L278-288). CORRECT-NO-ADVANCE.
+
+With M = h_2 U_2 U_3^(-1) h_3^(-1) U_4^(-1) and M' = U_2 U_3^(-1) U_4^(-1), cyclicity of the trace gives
+Re tr(rho(U_1) Y) = 0 for all U_1 in G, Y = rho(M h_4^(-1) h_1) - rho(M'). rho unitary gives Y* = rho((M h_4^(-1) h_1)^(-1)) - rho(M'^(-1)), so
+tr(Y* Y) = tr(rho(A) Y) - tr(rho(B) Y) is real, and its real part is 0 - 0 = 0. So Y = 0, and faithfulness gives
+M h_4^(-1) h_1 = M'. The rest is Lemma CEN with "commutes with every U_2" giving h_2 in Z(G), and the other links by the
+same cyclic rotation. The closed relation h_1 h_2 h_3^(-1) h_4^(-1) = 1 holds in the abelian group Z(G). No use of
+connectedness: it holds for finite G too, as the Q_8 / 2T test of row 1011 Section 6 uses. Correct.
+
+Scope of the reading "no Wilson lattice gauge theory has a link twist that is an exact symmetry on every
+configuration and also has a bracket term" (L281-283): the lemma is about configuration-independent LEFT multipliers,
+the form in which a boundary field acts (e^(eps B) U). Two-sided multipliers h_l U_l k_l were checked here too (same
+argument at each corner, with the corner products k_1 h_2, k_2 k_3^(-1), h_3^(-1) k_4^(-1), h_4^(-1) h_1 in place of the h's): each corner
+product must be central, so a two-sided symmetric multiplier is a gauge transformation times a central field, and
+gauge transformations do not change F_c at any order. So the reading holds in that wider form as well. It is a
+necessary condition on THIS engine (a symmetric twist on every configuration), as row 1011 9.6 says, not a statement
+about the wall (W).
+

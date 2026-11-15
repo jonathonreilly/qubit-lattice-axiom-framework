@@ -334,9 +334,9 @@ Wilson loops weighted by kappa^(length) and by the squared flux of d eta through
    of side R costs kappa R^(d-2): scale invariant in d = 2, growing like R^2 in d = 4. The shell sum of |k|^(-2)
    is a logarithm only in d = 2. ARGUED consequence: no gain per scale in d = 4. This agrees with the known
    order of the 4D O(4) model at large kappa in a flat background (Frohlich, Simon and Spencer; RECALLED).
-4. Five dimensions (K7), valid form. For kappa below an absolute constant the field phi is in its
-   high-temperature regime in every background and every dimension (RECALLED: Dobrushin uniqueness, uniform in
-   U; not rebuilt). So "the custodial response is small" is true in d = 5 at weak gauge coupling, where the gauge
+4. Five dimensions (K7), valid form. For kappa below a constant that depends only on the dimension the field
+   phi is in its high-temperature regime in every background (RECALLED: Dobrushin uniqueness, uniform in U; not
+   rebuilt). So "the custodial response is small" is true in d = 5 at weak gauge coupling, where the gauge
    field is believed massless. A step "small custodial response implies decay of all observables" would be
    refuted there at belief level, and at theorem level by the product of GH with a Villain U(1) factor (Lemma PT).
 5. As a comparison model, GH(beta, kappa) is row 1004's I10 and row 859's idea 33: the open step is uniformity as
@@ -724,6 +724,23 @@ convex and phi <= 0 = phi(0), so (b/2) e(b) <= phi(b/2) - phi(b) <= - phi(b). On
 phi(b) >= - 8 W - L log(3 pi^3/8) - (3 L/2) log b, so e(b) <= (16 W + 4.92 L + 3 L log b)/b. For every plaquette
 E_free(1 - t_p) <= e(b)/w_p <= 2^(d-2) e(b), E(1 - t^2) <= 2 E(1 - t), and the right side of (BH) is at least
 3 (1 - 2^(d-2) e(b))^2 / (2^(d-2) e(b)). QED
+
+**Corollary BH2 (every fixed-colour boundary field; PROVED).** For a real boundary field theta and a boundary
+plaquette p write theta_(p,y) for the corner twists of B = a theta (with row 1011's labels they are theta_1 - theta_4 at x, theta_2
+at x + mu, theta_3 at x + nu, 0 at x + mu + nu) and m_p(theta) = sum_y theta_(p,y)^2. Let Q be any set of boundary plaquettes with
+E_free t_p > 0, and n_Q the largest number of plaquettes of Q with a non-zero corner twist at one site. Then, for
+every strength field,
+  sup over pins of H_c(omega; a theta) >= E_free[H_c(.; a theta)]
+      >= 3 (sum over Q of E_free[t_p] m_p(theta))^2 / ( n_Q max over Q of E_free[1 - t_p^2] sum over Q of m_p(theta) ).
+Proof. As Steps 1-3 with psi = sum over Q of D_B t_p. By Lemma WN (i) of row 1013, D_B t_p = - sum_y theta_(p,y) a . s_(p,y),
+with s_(p,y) the imaginary part of the holonomy of p based at y. The gauge average at y kills every product of
+terms at two different sites and gives (1/3) s_(p,y) . s_(q,y) at one site. So E_free[X psi] = sum over Q of E_free[t_p] m_p
+(Lemma WN (iii) for one plaquette), and E_free[psi^2] = (1/3) sum_y E_free | sum over Q of theta_(p,y) s_(p,y) |^2, which by
+Minkowski's inequality and |s|^2 = 1 - t^2 is at most (1/3) max E(1 - t^2) n_Q sum over Q of m_p. QED
+For Q = {p_0} and theta = d lambda_z this is (BH). The functional sum_p m_p(theta) is the one of row 1011's second bound in
+Proposition B' (L242-243). So that bound holds for homogeneous strengths with b replaced by a ratio of plaquette
+means of the free box. ARGUED only: that this ratio is bounded below uniformly in the size of the box at fixed b
+(it needs lower bounds on E_free t_p for boundary plaquettes that do not depend on the size).
 
 **What this closes.** Check 1014 (defect 1) left the physical Schrodinger-functional class (homogeneous bare
 coupling, all Dirichlet data) refuted at ARGUED level only, and named an unproved route (omega = 1 minimises

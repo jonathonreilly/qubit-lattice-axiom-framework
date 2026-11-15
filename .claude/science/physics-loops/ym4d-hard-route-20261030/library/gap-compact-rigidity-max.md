@@ -126,3 +126,148 @@ One search, by the arXiv API, 14 records fetched into a new scratch folder, abst
 - **C6 (the gain of the architecture, to be proved in Section 3).** Compactness turns a strict inequality without a rate into a uniform one. So the order-one input can be a statement about each limit object, with no number in it (a Liouville statement). This is weaker in form than (CAS) with theta below 1.
 - **C7 (belief).** A rigidity proof must use that the theory is pure gauge and that its continuum limit is unique. These are the properties that A16 lacks. No exact identity on record carries them to the limit.
 
+## 3. Step 3 result (Task 1): the compactness step, stated exactly and proved; what is kept, what is lost; the first tests
+
+Everything in 3.1-3.6 is proved by hand here from the lane's checked statements A1-A4 and Lemma Z. Nothing is checked by another model. No run was made.
+
+### 3.1 Definitions
+
+**Datum.** A datum is a function Z from quadruples n of integers n_i >= 3 to the positive numbers with:
+
+- (E1) Z is symmetric under permutations of the four sides;
+- (E2) for each box B = (n_2, n_3, n_4) there are numbers lambda_0(B) > lambda_1(B) >= lambda_2(B) >= ... >= 0 with Z(k, B) = sum over r of lambda_r(B)^k for every k >= 3;
+- (E3) f := inf over n of log Z(n)/abs(n) is finite.
+
+Every model of the engine's class at one coupling is a datum (A1). For a datum: Delta(n) = log Z(n) - f abs(n) >= 0, D(a) = Delta(a, a, a, a), and the levels E_r(B) := - log lambda_r(B) + f abs(B) (with E_r = +infinity if lambda_r = 0), so that
+
+ exp Delta(k, B) = sum over r of exp(- k E_r(B)).
+
+E_0(B) <= 0, because Delta(k, B) >= 0 for all k and Delta(k, B) + k E_0(B) = log(1 + S(k; B)) tends to 0 as k grows. S(k; B) = sum over r >= 1 of exp(- k (E_r(B) - E_0(B))) and m(B) = E_1(B) - E_0(B).
+
+**Dyadic scales.** DD = {2^i : i in Z}. A quadruple x in DD^4 is a physical torus in units of one size l_1. An **eternal datum** is a function Delta_* from DD^4 to [0, infinity).
+
+**Rescaling.** Let Z_j be data and u_j >= 3 integers (the number of lattice sites in the length l_1; for one model at one coupling, Z_j = Z and u_j = u). For k >= 0 and x in DD^4 with all x_i >= 2^(-k) put
+
+ Delta^(j,k)(x) := Delta_j(2^k u_j x), and e_r^(j,k)(B) := 2^k u_j E_r^(j)(2^k u_j B) for B in DD^3.
+
+Then exp Delta^(j,k)(T, B) = sum over r of exp(- T e_r^(j,k)(B)). Put D^(j,k)(b) = Delta^(j,k)(b, b, b, b), s^(j,k)(b) = S_j at the time 2^k u_j b/2 on the cube of side 2^k u_j b, and z^(j,k)(b) = b (e_1^(j,k) - e_0^(j,k))(b, b, b).
+
+**Admissible sequence, with the bound D_0.** A sequence (j_i, k_i), k_i -> infinity, such that for every m in Z there is i(m) with, for all i >= i(m):
+
+- (H1) D^(j_i,k_i)(2^m) <= D_0 + 1/i;
+- (H2) s^(j_i,k_i)(2^m) >= 1/5041 (no seed of Theorem S at the size 2^(k_i+m) u_(j_i)).
+
+**Critical element.** An eternal datum Delta_* with, for every b in DD: s_*(b) >= 1/5041, d_min <= D_*(b) <= D_0 with d_min := (1/8) log(1 + 1/5041) > 2.47 x 10^(-5), and z_*(b) <= 256 D_*(b/4) + 34.11. (The quantities s_*, z_* are defined from the levels of the limit in Theorem CE (b).)
+
+### 3.2 Lemma UF (the failure of the seed has a uniform form; PROVED given Theorem S)
+
+Let Z_j, u_j be as above and P = {2^i : i >= 0}. Suppose that for every l in P the upper limit over j of S_j(l u_j/2; (l u_j)^3) is at least 1/5041. (This is the failure of (PHYS-SEED) with the threshold of Theorem S.) Then there is a subsequence along which, for every l in P, S_j(l u_j/2; (l u_j)^3) >= 1/5041 for all large j.
+
+Proof. For each j let l*_j be the least l in P with S_j(l u_j/2; (l u_j)^3) < 1/5041, or infinity. By Theorem S (the map x -> ((1 + x)^64 - 1)^2 sends [0, 1/5041) into itself), a seed at l gives a seed at 2l, so the sizes with a seed are exactly the l >= l*_j. Suppose l*_j <= L for all large j. Then for all large j, S_j at the size L is below 1/5041, and by Theorem S, S_j at the size 2L is at most c_S := ((1 + 1/5041)^64 - 1)^2 <= (e^(64/5041) - 1)^2 < (0.01278)^2 < 1.64 x 10^(-4) < 1/5041. So the upper limit at 2L is below 1/5041, against the hypothesis. Hence for each i there are infinitely many j with l*_j > 2^i. Choose j_1 < j_2 < ... with l*_(j_i) > 2^i. QED
+
+At one coupling the statement is empty: branch G of Corollary Z4 is "no seed at any size".
+
+### 3.3 Theorem CE (compactness; PROVED given A1-A4, Lemma Z, Proposition Delta)
+
+**(i) Existence of admissible sequences.** (a) One datum in branch G: if D(a) <= D_0 for all a >= a_0 and no size has a seed, then every sequence (j, k_i) with k_i -> infinity is admissible. (b) A trajectory: if (BDD-Delta) holds with the bound D_0 from L_0 on, and (PHYS-SEED) fails, then there is an admissible sequence with j_i -> infinity.
+
+**(ii) Limit.** Every admissible sequence has a subsequence along which Delta^(j_i,k_i)(x) converges for every x in DD^4, to an eternal datum Delta_*, and e_r^(j_i,k_i)(B) converges in (-infinity, +infinity] for every r >= 0 and every B in DD^3, to e_r^*(B). The limit has these properties.
+
+- (a) Delta_* is symmetric, and Delta_*(x) <= (x_1 x_2 x_3 x_4/mu^4) D_0 with mu = min x_i.
+- (b) Spectral form. For every T in DD and B in DD^3: exp Delta_*(T, B) = sum over r of exp(- T e_r^*(B)), with e_0^*(B) <= e_1^*(B) <= ..., e_0^*(B) finite and at most 0. So in each of the four directions the limit is a sum of exponentials with multiplicities that are non-negative integers. S_*(T; B) := sum over r >= 1 of exp(- T (e_r^* - e_0^*)(B)) is the limit of the rescaled thermal sums.
+- (c) Every inequality of the engine that is non-strict and reads finitely many values holds for the limit. Examples: Delta_*(2 x_1, x_2, x_3, x_4) <= 2 Delta_*(x); S_*(2b; (4b)^3) <= ((1 + S_*(b; (2b)^3))^64 - 1)^2; S_*(b; (2b)^3) <= exp(8 D_*(b)) - 1.
+- (d) Delta_* is a critical element.
+- (e) Centre grading. Along a further subsequence each twisted quotient Z^(1 nu)/Z converges, and each level r of each box has a limit sign eps_r^nu in {+1, -1}, nu = 2, 3, 4, with eps_0^nu = +1 and zeta_*^(1 nu)(T, B) exp Delta_*(T, B) = sum over r of eps_r^nu exp(- T e_r^*(B)).
+
+Proof. (i)(a) is the definition. (i)(b): by Lemma UF take a subsequence J with l*_j -> infinity. Let i_0 be such that 2^(i_0) >= L_0. For i >= 1 put k_i = 2i + i_0 and choose j_i in J, j_i > j_(i-1), with l*_(j_i) > 2^(k_i + i) and D_(j_i)(2^(k_i+m) u_(j_i)) <= D_0 + 1/i for the finitely many m with abs(m) <= i. The second condition holds for all large j, because the sizes 2^(k_i+m) are at least 2^(i_0) >= L_0 and D^+ <= D_0 there. Then (H1) and (H2) hold with i(m) = abs(m).
+
+(ii) Step 1, bounds. Fix x in DD^4 with least entry mu = 2^m. The torus 2^k u x arises from the symmetric torus of side 2^k u mu by multiplying sides by powers of 2. By A2, Delta^(j,k)(x) <= (x_1 x_2 x_3 x_4/mu^4) D^(j,k)(mu) <= C(x) := (x_1 x_2 x_3 x_4/mu^4)(D_0 + 1) for i >= i(m). Fix B in DD^3 and T in DD. From exp(- T e_0) <= exp Delta(T, B): - C(T, B)/T <= e_0^(j,k)(B) <= 0. The number of levels r with e_r <= E is at most exp(T E + C(T, B)), because each such level adds at least exp(- T E) to exp Delta(T, B).
+
+Step 2, extraction. DD^4 and DD^3 x {0, 1, 2, ...} are countable. The numbers Delta^(j_i,k_i)(x) lie in [0, C(x)] for large i, and each e_r^(j_i,k_i)(B) lies in [- C/T, +infinity]. A diagonal subsequence makes all of them converge.
+
+Step 3, the spectral form. Fix T and B, and write C' = C(T/2, B). For E > 0 let R(E) be the integer part of exp(T E/2 + C') + 1. By Step 1 at the time T/2, for every i (large) the levels with index r >= R(E) are above E, so e_r^* >= E for these r, and
+
+ sum over r >= R(E) of exp(- T e_r^(i)) <= exp(- T E/2) sum over r of exp(- (T/2) e_r^(i)) <= exp(- T E/2 + C').
+
+The same bound holds for the limit levels (each partial sum of the limit series is a limit of partial sums). The finite sum over r < R(E) converges term by term (a term with e_r -> +infinity tends to 0). So the upper and lower limits of sum over r of exp(- T e_r^(i)) differ from sum over r of exp(- T e_r^*) by at most 2 exp(- T E/2 + C'), for every E. This gives (b). e_0^* is finite by Step 1. Symmetry and the bound in (a) pass to the limit.
+
+Step 4, the thermal sums. S^(i)(T; B) = exp(Delta^(i)(T, B) + T e_0^(i)(B)) - 1 converges to exp(Delta_*(T, B) + T e_0^*(B)) - 1 = S_*(T; B). So every non-strict inequality between finitely many values of Delta, S, e_0, e_1 that holds for each datum holds in the limit: (c). The three examples are A2, Theorem S, and Proposition Delta at b = 2a.
+
+Step 5, (d). By (H2) and Step 4, s_*(b) >= 1/5041. By (H1), D_*(b) <= D_0. For each datum, Proposition Delta gives S(a; (2a)^3) <= exp(8 D(a)) - 1, so (H2) gives exp(8 D^(i)(b/2)) - 1 >= 1/5041 at every scale, and D_* >= d_min. For each datum, Lemma Z with T_0 = b/4 and T = b/2 gives S(b/2; b^3) <= exp(64 D(b/4) - (b/4) m(b^3)). With (H2): (b/4) m(b^3) <= 64 D(b/4) + log 5041, and 4 log 5041 < 34.11. Since z^(i)(b) = b (e_1^(i) - e_0^(i)) converges to z_*(b), the bound passes to the limit; in particular e_1^* is finite on cubes.
+
+Step 6, (e). The centre flips commute with T_B, so the levels can be listed with signs: Z^(1 nu)(k, B) = sum over r of eps_r^nu lambda_r^k, eps_0^nu = +1 (A4). The quotients lie in (0, 1] and the signs in a finite set, so a further diagonal subsequence makes them converge. The proof of Step 3 applies to the signed series, because its tail is bounded by the unsigned tail. QED
+
+Remarks. (1) Only doublings are used, so the limit is defined on dyadic sizes. (2) The hypothesis of (i)(b) is exactly the branch that Theorem ZD-c leaves when (BDD-Delta) holds. If (BDD-Delta) fails, (W) fails by Theorem ZD-c and no limit is extracted here; that branch is the open statement (BDD-Delta) (A6), which I do not attack. (3) The constants 2.47 x 10^(-5) and 34.11 replace the lane's 6.1 x 10^(-4) and 29.64. They come from Theorem S's threshold alone and need the same scale only. The lane's sharper values (Theorem SH) also pass to the limit, with five more doublings in the window.
+
+### 3.4 What the limit keeps and what it can lose
+
+| Kept (PROVED in Theorem CE) | Form in the limit |
+|---|---|
+| Positivity of the transfer operator in each direction (reflection positivity of partition functions) | (b): a sum of exponentials with non-negative integer multiplicities, in each of the four directions |
+| The exchange of axes | (a) |
+| The engine | (c) |
+| The centre symmetry | (e): a Z_2^3 grading of the levels of each box, vacuum even |
+| The gapless branch at every scale, upwards and downwards | (d) |
+
+| Can be lost | Why, with an example |
+|---|---|
+| The simple ground state | Levels can merge with the vacuum: z_* = 0 is allowed. Example: the data A_eps of 3.6 (limit constant log m). |
+| Levels above every bound | e_r^* = +infinity is allowed; harmless. |
+| **The ultraviolet data of the trajectory** | By (d), D_* <= D_0 at every scale, small scales included. On the trajectory the Casimir free energy is believed to grow like log(1/g(L)) at small L (`gap-phys-seed.md` L109, GUIDE). The blow-down shifts every fixed physical scale to zero. Asymptotic freedom is a statement at fixed physical scales, so the limit does not carry it. |
+| The gauge group, the action, the Markov property of the plaquette weight | The limit is a function of four sizes with signs. Lemma PT-inf (3.6): it is the same for a model and for its product with any seeded factor. |
+| Sizes that are not dyadic; rotations beyond the exchange of axes | not in the construction |
+| Scale invariance | not automatic: the limit set is invariant under the doubling, a limit need not be a fixed point (3.5) |
+| Uniqueness | different subsequences may give different limits |
+| Completeness of the gauge-invariant observables | The limit holds no observables. An enriched limit is discussed in Section 4. |
+
+So the answer to the row's first question is: reflection positivity and the centre symmetry are kept; **the account's ultraviolet data are not kept by any blow-down limit.** A limit that keeps them is the continuum limit at fixed physical sizes (k_i fixed, j_i -> infinity; it needs A5 at each size). That object is the theory itself, not a scale-compact critical element, and a Liouville statement for it is (W) in other words.
+
+### 3.5 Proposition OM (the set of critical elements; PROVED, elementary topological dynamics)
+
+Fix the family (Z_j, u_j) and D_0. Let Omega be the set of all limits of admissible sequences, with the topology of pointwise convergence on DD^4, and sigma the doubling: (sigma Delta)(x) = Delta(2x).
+
+- (a) Omega is compact, and sigma is a homeomorphism of Omega onto itself.
+- (b) Omega is empty if and only if no admissible sequence exists. For a trajectory with (BDD-Delta): Omega is empty if and only if (PHYS-SEED) holds.
+- (c) (Stall.) If Omega is not empty, then for every continuous function Lambda on Omega there are elements E_+ and E_- with Lambda(sigma E_+) >= Lambda(E_+) and Lambda(sigma E_-) <= Lambda(E_-). In particular some critical element has D_*(2) >= D_*(1).
+- (d) (Recurrence.) If Omega is not empty, it contains a uniformly recurrent element E: for every finite set of quadruples and every eps > 0, the integers t with abs(sigma^t E - E) < eps on that set have bounded gaps.
+- (e) (A monotone gives stationarity.) If Lambda is continuous and Lambda(sigma E) <= Lambda(E) on Omega, then Lambda is constant on the orbit closure of every uniformly recurrent element.
+
+Proof. (a) Omega lies in the product of the intervals [0, C(x)], which is compact and metrisable. Closed: let E_n in Omega tend to E. Enumerate DD^4. For each n choose an index of the admissible sequence of E_n so far out that the rescaled datum is within 1/n of E_n on the first n quadruples, k >= n, and (H1), (H2) hold for abs(m) <= n with 1/n in place of 1/i. These indices form an admissible sequence with limit E. sigma maps the limit of (j_i, k_i) to the limit of (j_i, k_i + 1), which is admissible; the same for k_i - 1. sigma is continuous for pointwise convergence.
+(b) The first sentence is Theorem CE (ii). If (PHYS-SEED) fails, Theorem CE (i)(b) gives an admissible sequence. If it holds at a size l with S_j <= q'/5041, q' < 1, for all large j, then Theorem S gives S_j <= q'^(2^k)/5041 < 1/5041 at the sizes 2^k l, so (H2) fails at every scale for large i.
+(c) If Lambda(sigma E) < Lambda(E) for all E, the continuous function Lambda - Lambda o sigma has a positive minimum delta on the compact set Omega, and Lambda(sigma^n E) <= Lambda(E) - n delta is unbounded below; but Lambda is bounded. The other case is the same for sigma^(-1). Take Lambda(E) = D_E(1); then Lambda(sigma E) = D_E(2).
+(d) The closed non-empty sigma-invariant subsets of Omega, ordered by inclusion, have a minimal member (Zorn's lemma; a chain has a non-empty intersection by compactness). Let M be minimal, E in M, and U an open neighbourhood of E. For y in M the orbit of y is dense in M, so M is covered by the open sets sigma^(-n) U, n in Z, and by finitely many of them, n = n_1, ..., n_p. For each t, sigma^t E lies in some sigma^(-n_l) U, so sigma^(t + n_l) E lies in U. The return times have gaps at most 2 max abs(n_l).
+(e) Lambda(sigma^n E) is non-increasing in n and bounded. By (d) there are n_i -> +infinity with sigma^(n_i) E -> E (the forward limit set of E is closed, invariant and not empty, so it is M). So Lambda(E) = lim Lambda(sigma^(n_i) E) = inf over n >= 0, and Lambda(sigma^n E) = Lambda(E) for n >= 0. The same argument at sigma^(-n) E gives all n. Lambda is continuous and the orbit is dense in its closure. QED
+
+### 3.6 Theorem CR (the wall in Liouville form) and what it adds to (CAS)
+
+**Theorem CR (PROVED given Theorem ZD-c and 3.2-3.5).** For a trajectory with (BDD-Delta), these are equivalent: (1) (W); (2) (PHYS-SEED); (3) Omega is empty; (4) Omega has no uniformly recurrent element; (5) for one continuous Lambda, no element of Omega has Lambda(sigma E) >= Lambda(E).
+
+Proof. (1) and (2) are equivalent by Theorem ZD-c given (BDD-Delta). (2) and (3): Proposition OM (b). (3) gives (4) and (5) at once; (4) gives (3) by OM (d); (5) gives (3) by OM (c). QED
+
+**What is new against (CAS).** Row 708 (`gap-mid-max.md` L64-67) states (CAS) with a number theta < 1 on a range, and judges: "(CAS) is the statement that the theory has no fixed point of the doubling map above the threshold ... it restates the seed in steps." Theorem CR is the exact form of that sentence. It shows: (i) no rate is needed. A strict inequality on each limit object, with no uniformity, is enough: this is (5). (ii) The objects that must be excluded are not only fixed points. They are the uniformly recurrent critical elements; they are fixed points only if a monotone exists (OM (e)), and a blind monotone would do for that. (iii) The form (5) with Lambda = D reads: the wall holds as soon as no critical element has a doubling on which its Casimir free energy does not fall.
+
+**What is not new.** The content. Theorem CR is an equivalence, so each of (3)-(5) is target-equivalent. The gain is in the form: the order-one input is now a statement about limit objects with exact scale covariance, and with no number in it.
+
+### 3.7 The first test: no-rigidity models inside the limit class (Lemma PT, Proposition NP, five dimensions)
+
+**The data A_(m,eps) (PROVED; an explicit family).** For an integer m >= 2 and eps > 0 put Z(n) = 1 + (m - 1) exp(- eps abs(n)). (E1) is clear. (E2): T_B = diag(1, t, ..., t) on C^m with t = exp(- eps abs(B)) < 1. (E3): f = 0. So A_(m,eps) is a datum, with Delta(n) = log(1 + (m - 1) exp(- eps abs(n))). Take eps_j -> 0, u_j = 3 and k_i with eps_(j_i) 16^(k_i + i) 3^4 -> 0. Then (H1) holds with D_0 = log m, (H2) holds because s = (m - 1) exp(- eps abs(n)) -> m - 1 >= 1, and the limit is the constant Delta_* = log m. So **the constants log m, m >= 2, are critical elements**, fixed by sigma, with z_* = 0 and all m levels at the vacuum.
+
+Realisations in lattice models (recalled, not rebuilt): the Ising model on Z^4 in its ordered phase gives log 2 (the model of Proposition NP's input (i5)); frozen Z_2 gauge theory gives log 8 (eight flux sectors, `gap-mid-max.md` L66). The data A_(m,eps) themselves are a model of slow tunnelling between m vacua.
+
+**Lemma PT-inf (products in the limit; PROVED given Lemma PT (a), (c)).** Let two families of data share the units u_j, and let (j_i, k_i) be a sequence along which both rescaled families converge, to Delta_*^1 and Delta_*^2. Then the product family converges to Delta_*^1 + Delta_*^2, its levels are the sums e_r^1 + e_q^2, and 1 + S_* = (1 + S_*^1)(1 + S_*^2). Consequences:
+
+- (i) If Delta_*^1 is a critical element and D_*^2 is bounded, the sum is a critical element (with the bound D_0^1 + D_0^2 and with z_* = min).
+- (ii) If the second family has a seed (uniformly: (PHYS-SEED)), then Delta_*^2 = 0 (Lemma Z3: its Casimir free energy tends to 0 along the doublings), and the limit of the product is Delta_*^1. **The blow-down limit forgets every seeded factor.**
+
+Proof. Lemma PT (a), (c) for each datum, and Theorem CE (b) for the limits. For (i): S_* >= S_*^1 >= 1/5041; D adds; the gap of a product is the least of the two gaps. For (ii): by Lemma Z3, D_j(L) <= 1024 q'^(2^k)/5041 at the sizes from 2^k l on, so D^(j_i,k_i)(b) -> 0 for every b, and Delta_* <= C(x) D_* = 0 by Theorem CE (a). QED
+
+**Proposition NR (no rigidity on torus data; PROVED).** Let CC be any set of eternal data that is closed under pointwise limits and contains the rescaled data of every family of the engine's class (so every condition that defines CC is "kept"). Then CC contains critical elements: the constants log m. If in addition the photon limit exists (A7 with bounded D; recalled), CC contains it and all its sums with other limits. So the statement "CC contains no critical element" is false for every such CC. A rigidity statement must cut the class by a property that the limits of A_(m,eps), of the photon, and of every product with them do not have.
+
+**Verdicts of the three tests named in the row.**
+
+- **Lemma PT.** The limit class is closed under sums, and the critical elements are absorbing: critical plus bounded is critical (PT-inf (i)). So "a product with a massless factor is a scale-invariant limit too": yes, exactly. What rigidity would have to use that the product lacks: by PT-inf (ii) the limit of (gapped SU(2)) x (photon) is the photon limit, with no trace of SU(2). So no property of the limit torus data can be "the SU(2) part has property P". Rigidity must read an object in which "generated by the SU(2) variables alone" is a kept property. The torus data are not such an object.
+- **Proposition NP.** Its model M is K copies of strong-coupling SU(2) times ordered Ising. By PT-inf (ii) its blow-down limit is the constant log 2: the J contracting doublings leave no trace. So a limit argument is not refuted by NP, and it cannot use a finite history either. This agrees with NP's remark 4.
+- **Five dimensions.** The construction is the same with five sides. If five-dimensional SU(2) at weak coupling has massless gluons (A17, belief), it has critical elements. A rigidity statement must use the dimension through a kept property; the number of sides is the only place where the limit shows it.
+
+**Result of Task 1.** The compactness step holds (Theorem CE, PROVED). The extracted object lies in a class with theorem-grade no-rigidity models (the constants log m), and the class is closed under products. On torus data the architecture is therefore an exact restatement of the wall (Theorem CR), with one gain in form (no rate). Mark for "rigidity on torus data": FAILS (Proposition NR).
+

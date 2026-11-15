@@ -51,6 +51,7 @@ Luscher, Narayanan, Weisz, Wolff and Durhuus, Frohlich are RECALLED or cited thr
 - 2026-11-15T18:41Z: GUIDE control of Proposition SEAG run (PASS at three points, 4.8); Sections 5 (compare) and 6 (tests) written.
 - 2026-11-15T18:43Z: Section 7 written: Task 4 has no statement (fails at the twist); Lemma FR; the missing objects (N1)-(N3).
 - 2026-11-15T18:45Z: Sections 8 (cross-branch search) and 9 (report, work items, registry, RESULT) written. Run ended after the anchor check.
+- 2026-11-15T18:48Z: second pass on the surviving ideas (axial gauge, temporal twist, abelian rings, larger groups): no symmetric twist found; Corollary CEN2 and Remark AR added; times of Section 8 corrected.
 
 ## 1. Step 1: inputs read, and where the lane's record sits (exercise step 0)
 
@@ -274,6 +275,22 @@ already uses (Theorem D (e), flux sectors). On a cube with pinned boundary every
 relative to a change of pin, so a cube has no topological twist at all. A discrete twist has no Hessian, so (M5)
 and (M6) have nothing to act on.
 
+**Corollary CEN2 (every gauge group; PROVED).** Let G be a compact group, rho a faithful unitary representation, and
+the plaquette energy Re tr rho(U_p). Then Lemma CEN holds with "central" in place of "+1 or -1": the
+configuration-independent link multipliers that preserve every plaquette energy are the closed fields with values in
+the centre Z(G). So they form an abelian group, and for B, B' in its Lie algebra every bracket kappa_p(B, B') of
+Proposition W is zero. Hence no Wilson lattice gauge theory has a link twist that is an exact symmetry on every
+configuration, (M2), and also has a bracket term, (M6). The 2D engine needs both at once.
+
+Proof. Put X = rho(M h_4^(-1) h_1) and X' = rho(M') with M, M' as in the proof of Lemma CEN, and Y = X - X'. The
+hypothesis gives Re tr(rho(U) Y) = 0 for all U in G. Y* is a difference of two elements of rho(G), because rho is
+unitary. So tr(Y* Y) = 0 and Y = 0. rho is faithful, so M h_4^(-1) h_1 = M' for all U_2, U_3, U_4, and the proof of
+Lemma CEN continues word for word. QED
+
+Reading. In the language of generalised symmetries, the symmetric link twists are the one-form symmetry, and a
+one-form symmetry is abelian. The 2D O(N) twist is a zero-form symmetry, which can be non-abelian. U(2) is the
+clean example: its centre U(1) gives a continuous twist with a classical direct cost on the whole class and no bracket.
+
 ### 4.4 Proposition SEAG (the direct term is not classical, even at the trivial pin)
 
 Let z be an interior site of c all of whose neighbours are interior sites, lambda the indicator of z, and
@@ -333,6 +350,17 @@ colour frame adapted to the pin", the object that would replace the missing glob
 pins even among pure-gauge ones. This is the place where pi_3(SU(2)) = Z meets the stiffness, beside the refilling
 step of row 1010.
 
+### 4.6b Remark AR (abelian rings: where the gain would have to come from; reading, the closure is trivial)
+
+Fix a tiling and force the links of its cell boundaries into one maximal torus T_a; keep the interiors in SU(2).
+Then every cell has an abelian pin, F_c depends on the abelian field strength of the pin only, the twist a theta is
+exact, and the class is closed. But this model is a compact U(1) theory on the skeleton with cell actions F_c: the
+ring variables commute, every bracket vanishes, and a step from side R to side l R gains nothing. So in a gauge
+form the gain of one step must come from the colour-perpendicular fluctuations of the RING links, and those are
+exactly the fluctuations that take the cell pins out of the abelian family. In the 2D model the same
+perpendicular fluctuations of ring spins leave every cell inside the class, because the rotated pin is again a pin
+with the same symmetric twist. This is the incompatibility of Corollary CEN2 seen inside one step.
+
 ### 4.7 Verdict on the first piece
 
 - The class (M1): exists (3.1). The exact Hessian (M4): exists (chain rule). The identity with a bracket: exists
@@ -362,9 +390,11 @@ errors, for B = a d(indicator of z), averaged over the sites z. FAIL would mean 
 Result: PASS at the three points (7 to 8 seconds each). The mean plaquettes 0.2436, 0.6088 (a 4^4 box), 0.6706
 are in the known range, so the sampler is sane. The run supports the algebra; the proof is the text of 4.4.
 
-## 5. Compare with the earlier work (exercise step 5; searched: `library/gap-*.md`, `library/prior/gap-*.md`,
-## `parts/gap.md`, `library/open-core.md`, the FINISH rows, by the words listed in Section 1 and Durhuus, chiral
-## model, Schwinger-Dyson, Makeenko, Dirichlet-to-Neumann, one-form symmetry, abelian projection, vortex free energy)
+## 5. Compare with the earlier work (exercise step 5)
+
+Searched: `library/gap-*.md`, `library/prior/gap-*.md`, `parts/gap.md`, `library/open-core.md` and the FINISH rows, by
+the words listed in Section 1 and by Durhuus, chiral model, Schwinger-Dyson, Makeenko, Dirichlet-to-Neumann,
+one-form symmetry, abelian projection, vortex free energy. The search across branches is Section 8.
 
 | Item of this row | Already in the lane? | Where | Credit |
 |---|---|---|---|
@@ -517,7 +547,8 @@ not cover forms that hold only for typical fields. Getting past it needs a twist
    (Lemma CEN); the start bound is not "drop the covariance" even at the trivial pin (Proposition SEAG, with a
    passing numeric control, 4.8). PROVED, unchecked; the scaling constants are ARGUED.
 3. Compact U(1) has the twist and the start bound, and zero gain. SU(2) has the bracket and no twist. The 2D
-   models have both. This is the structural reason in one line (PROVED as the sum of 3.2, 3.3, 4.3).
+   models have both. For every gauge group the symmetric link twists are central, so abelian, so without a
+   bracket (Corollary CEN2, PROVED): a one-form symmetry is abelian. This is the structural reason in one line.
 4. The 2D class sits inside the gauge class exactly, on thin boxes with one flat face (Lemma EMB; the layer idea
    is Durhuus and Frohlich's and is on file in rows 712, 825, 977). It says nothing about the bulk.
 5. A repair needs a colour frame, which costs at least the non-abelian part of the pin (Lemma FR, PROVED). Such
@@ -578,7 +609,7 @@ Not proposed, with reasons:
 
 | Family | Object | Mechanism | Terminal obligation | Strength vs (W) | Status | Evidence | Reopen condition |
 |---|---|---|---|---|---|---|---|
-| G1 class supremum, constant link twists | Hessian of the pinned free energy on C_b | 2D iteration transcribed | a twist with classical direct cost on every pin | stronger (it would give uniform mixing) | retired | Propositions B, B', SEAG, Lemma CEN | an exact continuous symmetry of a reformulated model |
+| G1 class supremum, constant link twists | Hessian of the pinned free energy on C_b | 2D iteration transcribed | a twist with classical direct cost on every pin | stronger (it would give uniform mixing) | retired | Propositions B, B', SEAG, Lemma CEN, Corollary CEN2 | a reformulation with an exact non-abelian zero-form symmetry on every configuration |
 | G2 typical pins with a colour frame | the same Hessian along theta n | background-field Ward identity plus bracket | (N1)-(N3) of 7.4 | unknown; reads first passage | blocked-local | Lemma FR, Remark HOPF | a frame and a controlled Ward identity on typical fields that persist into the band |
 | G3 abelian pins | F_c on one maximal torus | exact U(1) Ward identity | closure under conditioning | weaker (one family of pins) | blocked-local | 4.7 (ii) | a conditioning that keeps the pins abelian |
 | G4 sheets | thin boxes with a flat face | the 2D theorem itself | none (it is OpenAI's theorem) | weaker (no statement on the bulk) | candidate-complete as a 2D statement, GIVEN OpenAI's proof | Lemma EMB | a comparison from sheets to the bulk |
@@ -588,4 +619,4 @@ Assumptions most likely to be wrong in this row: that a class of cubes is the on
 typical pins was not formalised); the ARGUED sizes in 7.3. Most expensive if wrong: Proposition B' (it carries the
 verdict). Literature worth translating: none found by this row; row 1012 reads the published record.
 
-RESULT: Row 1011, exercise on transferring OpenAI's 2D pinned-cell stiffness iteration to 4D SU(2); checked by no one. PROVED by hand (unchecked): the lattice pieces that are identities exist (the pinned class; Proposition A, the exact response to a link rotation; Proposition W, the Ward identity with its bracket term; the 4D shell sum (1/(8 pi^2)) log). PROVED (unchecked): the piece that carries the 2D proof FAILS for SU(2) in the class of all pins and strengths in [0, b]: the supremum over pins is invariant under site-wise colour rotation of the twist (Proposition B), so no bound by the classical action holds and the best uniform constant grows like b S (Proposition B'; constants ARGUED); the only link symmetries are central (Lemma CEN); the start bound is not "drop the covariance" even at the trivial pin (Proposition SEAG; a numeric control of its identity passed at three points, guide only); a colour frame costs at least the non-abelian part of the pin (Lemma FR). Compact U(1) has the twist with zero gain, SU(2) has the bracket with no twist. The 2D class embeds exactly on thin boxes with a flat face (Lemma EMB; idea of Durhuus and Frohlich, on file in rows 712, 825, 977) and says nothing on the bulk. Tests: U(1) passes with zero gain; Theorem D2 and Lemma SHEET do not bind a class of cubes (Proposition B' does); Q_8, 2T, five dimensions and instantons constrain only a repair. Corrected: two reading-level remarks of row 1009. The one-step gain has no statement, so Task 4 gives no constants. OPEN: a typical-field form with a colour frame ((N1)-(N3) of 7.4), which would read first-passage data and not cross the band by this mechanism; the Schrodinger-functional bound at the trivial pin; the wall (W) is not moved.
+RESULT: Row 1011, exercise on transferring OpenAI's 2D pinned-cell stiffness iteration to 4D SU(2); checked by no one. PROVED by hand (unchecked): the lattice pieces that are identities exist (the pinned class; Proposition A, the exact response to a link rotation; Proposition W, the Ward identity with its bracket term; the 4D shell sum (1/(8 pi^2)) log). PROVED (unchecked): the piece that carries the 2D proof FAILS for SU(2) in the class of all pins and strengths in [0, b]: the supremum over pins is invariant under site-wise colour rotation of the twist (Proposition B), so no bound by the classical action holds and the best uniform constant grows like b S (Proposition B'; constants ARGUED); the only link symmetries are central, for every gauge group, so a symmetric twist never has a bracket (Lemma CEN, Corollary CEN2); the start bound is not "drop the covariance" even at the trivial pin (Proposition SEAG; a numeric control of its identity passed at three points, guide only); a colour frame costs at least the non-abelian part of the pin (Lemma FR). Compact U(1) has the twist with zero gain, SU(2) has the bracket with no twist. The 2D class embeds exactly on thin boxes with a flat face (Lemma EMB; idea of Durhuus and Frohlich, on file in rows 712, 825, 977) and says nothing on the bulk. Tests: U(1) passes with zero gain; Theorem D2 and Lemma SHEET do not bind a class of cubes (Proposition B' does); Q_8, 2T, five dimensions and instantons constrain only a repair. Corrected: two reading-level remarks of row 1009. The one-step gain has no statement, so Task 4 gives no constants. OPEN: a typical-field form with a colour frame ((N1)-(N3) of 7.4), which would read first-passage data and not cross the band by this mechanism; the Schrodinger-functional bound at the trivial pin; the wall (W) is not moved.

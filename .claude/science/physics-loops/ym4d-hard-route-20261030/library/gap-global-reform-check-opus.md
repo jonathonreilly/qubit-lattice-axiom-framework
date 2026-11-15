@@ -15,6 +15,7 @@ independent cross-provider check. Pinned at commit 0d3b45d91. No commit, no push
 - 20:53Z: step 4 done (Lemma CEN+, test (c)): HOLDS, both cases and the lattice statement.
 - 20:56Z: step 5 done (Lemma MC (a)-(c), test (e)): MC HOLDS; test (e) PARTLY: the 'void solution' meets the words of row 1013's (i) only in the measure sense of 'global'; scope note on CEN+'s reading sentence.
 - 20:59Z: step 6 done (Lemma HW (i)-(iii) with the mixed coefficient; Proposition LG with test (d)): both HOLD; one cosmetic note on LG's leading-order display.
+- 21:02Z: step 7 done (Identity HAM1; Lemma GT (ii), (iv); Identity CUBE): all HOLD; one completeness note on GT (ii). No numeric run in this check.
 
 ## Plan (W1 of the checked file, L1004-1018; at most eight steps; one step per response, result appended before the next)
 
@@ -68,7 +69,7 @@ on their values.
 
 ## 2. Step 2: (i) Identity AV and (ii) Theorem BH Steps 1-5, redone by hand
 
-### 2.1 Identity AV (checked file L693-708): **HOLDS**
+### 2.1 Identity AV (checked file L693-707): **HOLDS**
 
 Redone. For fixed B on the boundary links, Z(eps, omega) := Z_c(e^(eps B) omega) is real-analytic in (eps, omega) and
 positive (compact group, smooth integrand). For each boundary link, omega_l -> e^(eps B_l) omega_l is a left
@@ -82,7 +83,7 @@ It is the Fisher-information identity E[- (log p)''] = E[((log p)')^2] for the m
 measure-preserving flow. Valid for every box, strength field (signed too), compact gauge group and fixed B, as
 stated. Nothing to correct.
 
-### 2.2 Theorem BH, Steps 1-3 (L733-741): **HOLD**
+### 2.2 Theorem BH, Steps 1-3 (L732-738): **HOLD**
 
 - Step 1: E_free restricted to pins is a probability measure and H_c(.; B) is continuous, so sup >= mean. With 2.1.
 - Step 2: psi is a function of the pin (test (a)); by test (b), E_free[psi X] = E_free[psi E_omega X]; Cauchy-Schwarz
@@ -94,7 +95,7 @@ stated. Nothing to correct.
   eps -> t_(p_0)(e^(eps B) U) uses e^(eps' B) e^(eps B) = e^((eps + eps') B) link by link (one fixed B_l per link: a
   one-parameter subgroup). Steps 1-3 use no property of the strengths: (BH) holds for every strength field, as stated.
 
-### 2.3 Theorem BH, Step 4, the two expansions (L742-749): **HOLDS**
+### 2.3 Theorem BH, Step 4, the two expansions (L739-744): **HOLDS**
 
 Redone. U_1 -> e^(eps a) U_1, U_2 -> e^(-eps a) U_2, U_3, U_4 fixed, so U_p(eps) = e^(eps a) U_1 e^(-eps a) V with
 V = U_2 U_3^(-1) U_4^(-1); and U_1 e^(-eps a) = e^(-eps a') U_1 with a' = Ad(U_1) a (unit, imaginary), so
@@ -105,9 +106,9 @@ With Re(v q) = - v . Im q for imaginary v:
   a a' = - a . a' + a x a', Re(a a' U_p) = - (a . a') t - (a x a') . s, so D_B psi = - 2 t + 2 (a . a') t + 2 (a x a') . s. (matches)
 - Cross-check against Proposition A (row 1011 3.2): a_1 = c_1 = a, a_2 = c_2 = Ad(U_1)(- a) = - a', a_3 = a_4 = 0, so
   delta = a - a', kappa = [a_1, a_2] = 2 a x (- a') = - 2 a x a', and - (|delta|^2 t + kappa . s) with |a - a'|^2 = 2 - 2 a . a'
-  gives the same D_B psi. The parenthetical of L748-749 is right.
+  gives the same D_B psi. The parenthetical of L744 is right.
 
-### 2.4 Theorem BH, Step 5, the four gauge averages (L750-757): **HOLDS**
+### 2.4 Theorem BH, Step 5, the four gauge averages (L745-751): **HOLDS**
 
 The free law is invariant under U -> U^g for every fixed g: sites of c -> G (Haar on every link, A_c gauge
 invariant), so one may average over g Haar-distributed and independent of U. Write R = Ad(h) (Haar on SO(3)), with
@@ -126,7 +127,7 @@ int R v dR = 0 and int (R v)_i (R w)_j dR = (v . w/3) delta_ij.
 
 ## 3. Step 3: (ii) Theorem BH Steps 6-7 and (iii) Corollaries AV2, BH2
 
-### 3.1 Theorem BH, Step 6 (the edge link and positivity; L758-766): **HOLDS**
+### 3.1 Theorem BH, Step 6 (the edge link and positivity; L752-759): **HOLDS**
 
 - The plaquettes of c that contain l_e = (0 -> e_1) are the squares {0, e_1, e_nu, e_1 + e_nu}, nu = 2, ..., d; the
   squares {0, e_1, - e_nu, e_1 - e_nu} leave the box. Each has x_rho = 0 for every rho not in {1, nu}, and d >= 3
@@ -142,7 +143,7 @@ int R v dR = 0 and int (R v)_i (R w)_j dR = (v . w/3) delta_ij.
   = E_free[r m(r)] > 0, and some (0; 1, nu) has E_free t > 0; with x = 0, mu = 1 it has z = e_1. Uses only beta > 0 on
   the d - 1 plaquettes at l_e.
 
-### 3.2 Theorem BH, Step 7 (the constants; L767-776): **HOLDS AFTER CORRECTION** (last display needs a qualifier)
+### 3.2 Theorem BH, Step 7 (the constants; L760-766): **HOLDS AFTER CORRECTION** (last display needs a qualifier)
 
 Redone line by line.
 - phi(b) = log int exp(- b G) dU, G = sum_p w_p (1 - t_p) >= 0: a log-Laplace transform, so convex; phi <= 0 = phi(0);
@@ -158,7 +159,7 @@ Redone line by line.
   2 log(3 pi^3/8) = 2 log 11.6274 = 4.9067 <= 4.92. Correct (rounded up, as it must be).
 - E_free(1 - t_p) <= e(b)/w_p (all terms of G are >= 0) and w_p >= 2^(-(d-2)) (a plaquette lies in at most d - 2 boundary
   hyperplanes, all S_rho >= 1); 1 - t^2 = (1 - t)(1 + t) <= 2 (1 - t). Correct.
-- **The failing line (L775-776):** "the right side of (BH) is at least 3 (1 - 2^(d-2) e(b))^2/(2^(d-2) e(b))". The step
+- **The failing line (L765-766):** "the right side of (BH) is at least 3 (1 - 2^(d-2) e(b))^2/(2^(d-2) e(b))". The step
   uses E t >= 1 - 2^(d-2) e(b) and then squares it, which is valid only when 1 - 2^(d-2) e(b) >= 0. Without that
   qualifier the display is false: as b -> 0, e(b) -> W, so the display tends to 3 (2^(d-2) W - 1)^2/(2^(d-2) W), a
   positive box-size number, while the right side of (BH) tends to 0 (E_free t_p -> 0). **Correction:** "for every b
@@ -174,7 +175,7 @@ E_free psi^2 > 0 of 2.2. Neither is a WRONG; the stop rule does not fire.
 
 ### 3.3 Corollaries AV2 and BH2
 
-**Corollary AV2 (L710-722): HOLDS.** (a) Linearity: X_c(B) = - sum_l B_l . N_l with N_l the tail-frame gradient of A_c
+**Corollary AV2 (L708-717): HOLDS.** (a) Linearity: X_c(B) = - sum_l B_l . N_l with N_l the tail-frame gradient of A_c
 in the boundary link l (Proposition A (iii) of row 1011 is only this definition). (b) Covariance: from
 (e^(eps B) U)^g = e^(eps Ad_g B) U^g link by link and A_c(U^g) = A_c(U), X_c(B)(U) = X_c(Ad_g B)(U^g) for all B, hence
 N_l(U^g) = Ad(g_tail(l)) N_l(U). (c) Pinned means: E_(omega^g)[N_l] = E_omega[N_l(U^g)] by the change of variables
@@ -185,12 +186,12 @@ different tails (int Ad(g) v dg = 0) and gives (1/3) n_l . n_l' for equal tails.
 boundary links). The reading "site-diagonal: no difference of theta across two sites appears" is accurate; within
 one site the form couples the links with that tail (corner-type differences, as in Lemma WN).
 
-**Corollary BH2 (L778-797): HOLDS AFTER CORRECTION (cosmetic sign).**
+**Corollary BH2 (L768-783): HOLDS AFTER CORRECTION (cosmetic sign).**
 - Corner twists of B = a theta on p = (x; mu, nu), from Proposition A: delta_p . s_p = (theta_1 - theta_4) a . s_(p,x)
   + theta_2 a . s_(p,x+mu) - theta_3 a . s_(p,x+nu) (use Ad(g) a . s_p = a . s(g^(-1) U_p g) with g = U_1, U_1 U_2 U_3^(-1), U_p).
-  So the twist at x + nu is **- theta_3**, not theta_3 as written at L780 (Lemma WN's rule theta_(p,y) = F_(l',y) - F_(l,y)
+  So the twist at x + nu is **- theta_3**, not theta_3 as written at L770 (Lemma WN's rule theta_(p,y) = F_(l',y) - F_(l,y)
   gives the same: p arrives at x + nu along l_3 at its tail, where F = theta_3, and leaves along l_4 at its head, where
-  F = 0). Row 1011's own Proposition B' proof (L254-255) has the - sign. Only squares theta_(p,y)^2 enter m_p, the
+  F = 0). Row 1011's own Proposition B' proof (L251) has the - sign. Only squares theta_(p,y)^2 enter m_p, the
   numerator and the bound, so nothing downstream changes. Correction: "- theta_3 at x + nu".
 - psi = sum_Q D_B t_p is a function of the pin (Q consists of boundary plaquettes). D_B t_p = - sum_y theta_(p,y) a . s_(p,y)
   (Lemma WN (i), redone here from Proposition A as above). D_B^2 t_p = - t_p m_p + (cross terms in pairs of distinct
@@ -210,7 +211,7 @@ one site the form couples the links with that tail (corner-type differences, as 
 - Dependence on Lemma WN: only WN (i) and the cross-term step of WN (iii) are used, and both are redone above, so
   BH2 does not need row 1013's (unchecked) record.
 
-## 4. Step 4: (iv) Lemma CEN+ (checked file L446-490), with test (c)
+## 4. Step 4: (iv) Lemma CEN+ (checked file L446-489), with test (c)
 
 Notation: <p, q> = Re(p q-bar) is the Euclidean inner product of H = R^4, and q-bar = q^(-1) on unit quaternions.
 
@@ -267,14 +268,14 @@ g_tail u g_head^(-1), and trace preservation at U = 1 gives prod_(l in p) sigma_
 closed Z_2 link field. The scope is on-site maps (each phi_l a function of U_l alone), as the title says.
 
 **Lemma CEN+: HOLDS** (plaquette statement, both cases, and lattice statement). No continuity, group law or measure
-is used, as claimed. The remark on other groups (L486-490) is labelled ARGUED and is not checked; its two facts
+is used, as claimed. The remark on other groups (L486-489) is labelled ARGUED and is not checked; its two facts
 (complex conjugation keeps Re tr for SU(N); every automorphism of SU(2) is inner) are true.
 
-**Lemma REM (L492-505; not in W1's list, read in passing).** The displayed step is correct: if no site is an end of
+**Lemma REM (L491-504; not in W1's list, read in passing).** The displayed step is correct: if no site is an end of
 both a link of P_B and a link of P minus P_B, then g = k on the sites of P_B and 1 elsewhere gives u^g = u' on P, and
 Z(u^g) = Z(u) by the change of variables on the integrated links. Not checked further.
 
-## 5. Step 5: (v) Lemma MC (checked file L506-531), test (e), and a scope note on Lemma CEN+'s reading
+## 5. Step 5: (v) Lemma MC (checked file L506-530), test (e), and a scope note on Lemma CEN+'s reading
 
 ### 5.1 Lemma MC: **HOLDS** ((a), (b), (c); one domain remark)
 
@@ -308,7 +309,7 @@ gauge-invariant observables. But row 1013 uses "global" in the physics sense in 
 centre"; under the measure reading that sentence would itself be false by Lemma MC), and in that sense a global
 symmetry is a field-independent map applied with one element everywhere, whose localisation is not a symmetry.
 R_(l,k) acts on one link with a field-dependent axis, and the checked file itself calls it "a local invariance"
-(L524-525). So: the sentence "Lemma MC meets it and gives nothing" (L645-646) is fair about the WORDING (the
+(L525-526). So: the sentence "Lemma MC meets it and gives nothing" (L645-646) is fair about the WORDING (the
 wording does not exclude field-dependent maps, so it admits void solutions such as MC or any Gibbs-sampler
 step, as 6.3 says), but it is not a counterexample to what row 1013 meant. Correction to the wording of 6.2
 (HOLDS AFTER CORRECTION): "Lemma MC meets the literal words of (i) when 'global symmetry' is read as 'symmetry of
@@ -399,6 +400,72 @@ gauge transformation of V; Re(e^(theta a)(v_0 + v)) = cos(theta) v_0 - sin(theta
   four links and the unique pairing at each corner: kappa^4 c(1)^4 . 4 t_p cos((d eta)_p) = (kappa^4/64) t_p cos((d eta)_p),
   orientation-free (cos even, Re U = Re U^(-1)). Correct. The other order-4 terms (one link with n_l = 4; two doubled
   links) live on trees, where every closed walk has U_gamma = 1 and eta(gamma) = 0: free of U and of eta. Correct.
-- Leading-order response (L353-355), **cosmetic:** "(kappa^4/64) E_YM[t_p] sum_p (d eta)_p^2" should read
+- Leading-order response (L348-349), **cosmetic:** "(kappa^4/64) E_YM[t_p] sum_p (d eta)_p^2" should read
   "(kappa^4/64) sum_p E_YM[t_p] (d eta)_p^2" unless E_YM[t_p] does not depend on p (torus). The derivation
   (N^(eps eta)/N_kappa = 1 + (kappa^4/64) sum_p t_p (cos(eps (d eta)_p) - 1) + O(kappa^6) on a finite lattice) is right.
+
+## 7. Step 7: (viii) Identity HAM1, (ix) Lemma GT (ii), (iv), (x) Identity CUBE
+
+### 7.1 Identity HAM1 (checked file L566-576): **HOLDS**
+
+- Class function: a time-independent gauge transformation g (g_(x,t) = g_x for all t) keeps the temporal links pinned
+  to 1, sends the layer link k_x to g_x k_x g_x^(-1), keeps Haar measure on the spatial links and the action. The g_x
+  are independent, so Z is a class function of each k_x separately. Correct.
+- Peter-Weyl: Z is real-analytic in the k_x, so its expansion in prod_x chi_(j_x)(k_x) converges absolutely and
+  uniformly, with coefficients int Z prod chi_(j_x)(k_x) dk (SU(2) characters are real and orthonormal). Correct.
+- Coefficient: in the fully integrated periodic theory the integrand exp(S) prod_x chi_(j_x)(P_x) is gauge invariant;
+  the temporal-gauge change of variables (for each x, g_(x,0) = 1, g_(x,t+1) = g_(x,t) U_((x,t),0)) depends on temporal links
+  only, so Haar invariance on the spatial links removes it, it sets T - 1 temporal layers to 1 and leaves the
+  layer link equal to a conjugate of P_x; the map (U_((x,0),0), ..., U_((x,T-1),0)) -> P_x pushes Haar to Haar. So
+  int Z({k}) prod chi_(j_x)(k_x) dk = Z_YM E_YM[prod chi_(j_x)(P_x)]. Correct. (The ARGUED sentences after the identity, on
+  large T and compact U(1), are not checked.)
+
+### 7.2 Lemma GT (ii) and (iv) (checked file L831-850; (ii) at L838, (iv) at L843-850): **HOLD** (one completeness note on (ii))
+
+- Axis rule (used by (ii)): h_i = u_i u_(i+1) ... u_(i-1) and h_(i+1) = u_(i+1) ... u_(i-1) u_i, so h_i = u_i h_(i+1) u_i^(-1) and
+  n_i = Ad(u_i) n_(i+1). (i): a link not in alpha has at most one end on alpha (the hypothesis excludes a non-alpha link
+  joining two sites of alpha), so it gets at most one multiplier, which depends on links of alpha only; Fubini.
+- (ii), first clause, redone: base the holonomy of p at y_i and start along the alpha link u_i. Whatever the
+  orientation of the leg e' at y_(i+1), the word gets e^(t 1_E(e') n_(i+1)) just after u_i (left multiplier if y_(i+1) is the
+  tail of e', or the inverse of a right multiplier e^(-t n_(i+1)) if it is the head); likewise e^(- t 1_E(e) n_i) at the end of
+  the word, arriving at y_i along e. Then u_i e^(s n_(i+1)) = e^(s n_i) u_i, and the two insertions have the one axis n_i, so
+  Re of the twisted holonomy = Re(e^(t (1_E(e') - 1_E(e)) n_i) U_(p,y_i)). Correct. Second clause: the same two insertions at
+  one corner, cyclically joined. Correct. **Completeness note:** a plaquette that contains two links of alpha (alpha
+  turns at y_i; its legs sit at y_(i-1) and y_(i+1)) is not literally covered by the wording "the legs e at y_i, e' at
+  y_(i+1)"; the same algebra (also e^(-s n_(i-1)) u_(i-1) = u_(i-1) e^(-s n_i)) gives the same single insertion based at y_i, so
+  nothing changes. Suggested wording: "the two legs of p that are not links of alpha".
+- (iv), the cut-corner claim: in d >= 3, at a site y_i the non-alpha link-ends form a connected graph under "span a
+  plaquette" (straight alpha: complete multipartite on +-e_2, ..., +-e_d; alpha turning in e_1, e_2: - e_1 and - e_2 are
+  joined, and +-e_3 joins both), so a proper non-empty E at y_i has a corner with one leg in E and one not; that
+  plaquette contains no alpha link (a far link of it in alpha would put a non-alpha leg between two alpha sites).
+  Correct. In d = 2 with alpha straight the two non-alpha ends are not joined, consistent with (iii).
+- (iv), the sum rule, redone: n is constant along the flow, so with at most one cut corner per plaquette,
+  S o tau_t - S = sum over cut corners of beta_p [ (cos t - 1) t_p - (+-) sin t n_i . s_(p,y_i) ] (Re(e^(theta n) U) = cos(theta) t -
+  sin(theta) n . s), uncut corners contributing e^0. With phi(t) = S o tau_t - S and E exp(phi(t)) = 1 for all t ((i)),
+  E phi'(0) = 0 and E[phi''(0) + phi'(0)^2] = 0, i.e. E[X] = 0 and E[X^2] = sum over cut corners of beta_p E[t_p] (the sign
+  of X is a convention). Correct. Setting note: the measure has all links integrated, or E avoids pinned links;
+  the file leaves this implicit.
+
+### 7.3 Identity CUBE (checked file L857-874): **HOLDS** (density, r(c), Hessian, the Sard consequence)
+
+- Expansion: exp(beta cos phi) = sum_k a_k(beta) chi_k(phi) with a_k = int e^(beta cos) chi_k d mu, d mu = (2/pi) sin^2 phi d phi
+  (orthonormal characters chi_k = sin(k phi)/sin phi, k the dimension). Gluing on the cube (each of the 12 links in two
+  faces; chi_k(U^(-1)) = chi_k(U), so orientations do not matter): gauge-fix a tree (V - 1 = 7 links), merge the 6 face
+  characters along 5 links (factor k^(-5)), the remaining E - V + 1 - 5 = 0 links leave chi_k(1) = k. So
+  int prod_i chi_(k_i)(U_(p_i)) dU = delta(all k_i equal) k^(2-6) and Z = sum_k k^(-4) prod_i a_k(beta_i) = sum_k k^2 prod_i (a_k(beta_i)/k).
+  Correct (and consistent with G1 of 7.5: E prod chi_k = k^(-4)).
+- Density: sum_k k^(-4) prod_i (2/pi) sin^2(phi_i) chi_k(phi_i) = (2/pi)^6 prod sin(phi_i) sum_k k^(-4) prod sin(k phi_i) = r(phi), absolutely
+  convergent (sum k^(-4)), continuous; dominated convergence gives its Laplace transform in (cos phi_i) as Z; a finite
+  signed measure on [-1, 1]^6 is fixed by its moments, so r d phi is the law, and r >= 0 (a.e., then everywhere by
+  continuity). Normalisation check: int_0^pi sin phi sin(k phi) d phi = (pi/2) delta_(k1), so int r = (2/pi)^6 (pi/2)^6 = 1.
+- **r(c) = 2/(3 pi^2):** sin(k pi/2)^6 = 1 for odd k and 0 for even k, sum over odd k of k^(-4) = (15/16)(pi^4/90) = pi^4/96, and
+  (2/pi)^6 pi^4/96 = 64/(96 pi^2) = 2/(3 pi^2). Correct.
+- **Gradient and Hessian:** log r = const + sum log sin(phi_i) + log Q. At c: (log sin)' = cot = 0, (log sin)'' = - 1/sin^2 = - 1.
+  dQ/d phi_j = sum k^(-3) cos(k phi_j) prod_(i != j) sin(k phi_i) = 0 (odd k: cos = 0; even k: sin = 0). d^2Q/d phi_j^2 = - sum k^(-2)
+  prod_i sin(k phi_i) = - sum over odd k of k^(-2) = - pi^2/8. Mixed d^2Q/d phi_j d phi_l = sum k^(-2) cos cos prod(4 sines) = 0 (same
+  parity argument). So Hess log Q = Hess Q/Q = - (pi^2/8)(96/pi^4) I = - (12/pi^2) I and Hess log r = - (1 + 12/pi^2) I. Correct.
+- Consequence: r continuous and r(c) > 0 make the image of the smooth map U -> (t_1, ..., t_6) a set of positive measure;
+  critical values have measure zero (Sard), so the image contains a regular value, and any preimage of it is a
+  configuration with onto differential. Correct. U(1): the outward face angles sum to 0 mod 2 pi (each link twice
+  with opposite signs). Correct. The Reading after the proof (fibre count on the 4D torus) is labelled ARGUED and
+  is not checked.

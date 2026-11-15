@@ -38,6 +38,8 @@ Status log (times from `date -u`):
 - 2026-11-15 16:23Z: Step 4 done (Section 4: the step each input would feed, and the tests). No input survives with a consumer. Two items go to Step 5: a counterexample to class-wide persistence, and the N = infinity test.
 - 2026-11-15 16:25Z: Step 5, first part done (Section 5.1: Proposition NP, a no-seed model of the class whose D contracts on J consecutive doublings; PROVED by hand given named lane inputs and the Peierls bound). Next: 5.2, the N = infinity test.
 - 2026-11-15 16:26Z: Step 5, second part: the hand computation of 5.2 and the pre-registered reading of its control run are written; the run has not started.
+- 2026-11-15 16:29Z: Step 5, second part done: control run 16:27:02Z-16:27:06Z under the numeric lock (holder row1003-fable-ninf, acquired 16:26:58Z, released after the run; memory 69 percent free before). C0, R1, R2 PASS by the pre-registered reading. Results in 5.2.
+- 2026-11-15 16:31Z: Step 6 done (Section 6: a second derivation of NP (a) that does not use Theorem SH; five further candidates, each found again in the lane and not attacked).
 
 **Skill header (exercise skill, Output rules).** Written by Anthropic Claude Fable 5.2, effort max, Mac mini worker
 session, commit 95fecd964, 2026-11-15. Nothing in this file is checked by another model. The skill's framework
@@ -506,3 +508,97 @@ coupling is of order one, with theta tending to 1 only at the ultraviolet end. T
   (L^2/4 pi)(mu_L - mu_inf) in log L. PASS if they agree within 5 percent at each b. FAIL above 20 percent. Between
   the two: report as "lattice corrections, not decided".
 - R3 (no pass or fail): the table of d(2L)/d(L).
+
+**Control run: result (GUIDE; run 2026-11-15 16:27:02Z to 16:27:06Z, numeric lock held, 0.1 GB, exit 0; output kept
+at `/tmp/row1003-num/ninf.out` on the Mini, outside git).** The reading above was not changed.
+
+| b | mu_inf | C0: mu_inf / (32 exp(-4 pi b)) | R1: largest d(L+1) - d(L) | R1 violations above 10^(-9) | R2: d(16) - d(256) | R2: trapezoid of (L^2/4 pi)(mu_L - mu_inf) | R2 ratio |
+|---|---|---|---|---|---|---|---|
+| 0.6 | 1.6776 x 10^(-2) | 0.9864 | + 7.3 x 10^(-12) | 0 | 0.158161 | 0.155450 | 1.0174 |
+| 0.7 | 4.8179 x 10^(-3) | 0.9953 | - 4.6 x 10^(-9) | 0 | 0.317669 | 0.315009 | 1.0084 |
+| 0.8 | 1.3755 x 10^(-3) | 0.9984 | - 7.3 x 10^(-7) | 0 | 0.466551 | 0.464390 | 1.0047 |
+
+- C0: PASS (0.9984 at b = 0.8).
+- R1: PASS at each b by the written criterion. Limit of the run: at b = 0.6 and L above about 150, d is below the
+  floating accuracy of the difference of two numbers of size 10^5 (about 10^(-11)); the one positive step,
+  7.3 x 10^(-12), and a value d(256) of order - 10^(-11) are rounding. There the run decides nothing; the hand
+  result at large y covers that end.
+- R2: PASS at each b (within 5 percent). The mismatch falls with mu (1.7, 0.8, 0.5 percent), as a lattice correction
+  of relative order mu should.
+- R3, the ratio under one doubling, with y = L sqrt(mu_inf) and x = L sqrt(mu_L):
+
+| b | L | y | x | d(L) | d(2L)/d(L) | (x^2 - y^2)/(4 pi d) |
+|---|---|---|---|---|---|---|
+| 0.8 | 4 | 0.148 | 1.358 | 0.7379 | 0.824 | 0.197 |
+| 0.8 | 8 | 0.297 | 1.523 | 0.6082 | 0.767 | 0.292 |
+| 0.8 | 16 | 0.593 | 1.762 | 0.4667 | 0.642 | 0.469 |
+| 0.8 | 32 | 1.187 | 2.150 | 0.2996 | 0.417 | 0.853 |
+| 0.8 | 64 | 2.374 | 2.914 | 0.1248 | 0.135 | 1.821 |
+| 0.8 | 128 | 4.747 | 4.842 | 0.01682 | 0.0116 | 4.284 |
+| 0.7 | 16 | 1.111 | 2.100 | 0.3177 | 0.442 | 0.796 |
+| 0.7 | 64 | 4.442 | 4.564 | 0.02215 | 0.0157 | 3.947 |
+| 0.6 | 16 | 2.072 | 2.707 | 0.1582 | 0.183 | 1.526 |
+| 0.6 | 64 | 8.289 | 8.293 | 6.17 x 10^(-4) | 3 x 10^(-4) | 7.771 |
+
+Core lines of the script (plain numpy, `python3 -I`, `nice`; bisection in log mu, 90 steps; bulk on a 2048^2 lattice):
+`A = s[:,None] + s[None,:] + mu` with `s = 4 sin^2(pi k/L)`; gap equation `sum(1/A)/L^2 = b`;
+`phi = 0.5*b*L*L*mu - 0.5*sum(log A)`; `d[L] = phi(L, mu_L) - L*L*phi(2048, mu_inf)/2048^2`.
+
+**What the test gives, and what it does not.**
+
+1. (CAS) is not refuted as a form of the target by the one asymptotically free model with a proved crossing: at
+   N = infinity D falls at every size, and the ratio under doubling is 0.82 at y = 0.15, 0.42 at y = 1.2, 0.012 at
+   y = 4.7 (GUIDE values at b = 0.8). A pass is no support for SU(2).
+2. The last column of the R3 table rises with the size at each coupling in the run. So in this model the
+   logarithm of d is concave in the logarithm of the size at the sizes computed (GUIDE; by hand only at the two
+   ends, Step 4). This is route CX of exercise 2 (`gap-crux-exercise2-max.md` L467, L517-523: "wounded: convexity
+   is false in the class near an ordered critical point; no blind proof"). Nothing is added to its status for
+   SU(2).
+3. The mechanism at N = infinity is (ENV), and (ENV) has two halves. The first half is exact and class-wide: the
+   derivative of D in the coupling is the number of bonds times the finite-size shift of the bond energy. For
+   this model the bond energy is E_L = 1 - 1/(4b) + mu_L/4 (from the gap equation), so the shift is
+   (mu_L - mu_inf)/4. For SU(2) the same half is Theorem D (f): dD/d beta = 6 n^4 (abar_inf - abar_n) (row 998
+   L780). The second half is the sign and the size of the shift. At N = infinity it comes from Step 1: one
+   collective variable, a convex bulk function, a finite-size term that decreases in the mass. For SU(2) the
+   second half is the registry's route RB (the sign in beta) with a rate, and (VIR_K) of row 708: blocked, with
+   (MONO-Delta) false for the ordered Ising model (`gap-phys-seed.md` L371-373). SU(2) at N = 2 has no collective
+   variable of this kind on record.
+4. So the test finds no new input. It confirms that in the solvable case the crossing rests on the large-N
+   saddle, the "second small parameter" of row 998 3.4 (s1) and of row 1002 item 5.
+
+Marks: (ENV) and Steps 1, 3: PROVED by hand from the N = infinity formulas, which are RECALLED and formal. Steps
+2, 4: ARGUED. The run: GUIDE. Written by Claude Fable 5.2, checked by no one.
+
+## 6. Second pass
+
+### 6.1 Proposition NP (a) and (c) without Theorem SH (PROVED; a shorter chain of inputs)
+
+Proposition NP (a) uses (i6), which rests on Proposition Delta and Theorem SH (same-provider check; the
+cross-provider check of Theorem SH is row 959, queued, per row 998 I7). Part (c) needs less: only that D_M does not
+tend to 0 along the sizes n_j. This follows from Theorem D alone (checked rows 698, 699):
+
+- Theorem D gives 1 + S(n; (2n)^3) <= exp(Phi(n)) (row 998 I5), and (i3) with Phi >= 0 gives D(n) >= Phi(n)/16.
+  So D(n) >= (1/16) log(1 + S(n; (2n)^3)) in every model of the class.
+- "No seed" for M means S_M(n; (2n)^3) >= 1/5041 for every n >= 3. This holds: by Lemma PT (c), S_M >= S of the
+  Ising factor at every box and time, and the Ising factor has S(n; (2n)^3) >= 1/5041 for every n >= 3, because one
+  value below 1/5041 would give a uniform gap by Theorem S, against (i5).
+- So D_M(n) >= (1/16) log(1 + 1/5041) > 1.2 x 10^(-5) for every n >= 3, and (c) follows as before.
+
+With this, Proposition NP (b), (c) and Corollary NP1 (with the threshold 1.2 x 10^(-5) in place of 6.1 x 10^(-4))
+rest on: Lemma PT; Theorem D and Theorem S; Proposition R; Theorems 1 and 2 of `gap-seed-sc.md`; (i2); and the
+Peierls bound for the Ising model. Arithmetic: log(1 + 1/5041) = 1.98 x 10^(-4); divided by 16 it is 1.24 x 10^(-5).
+
+### 6.2 Candidates looked at for a second attempt, each found again and not attacked
+
+The skill's rule: search the registry before each attempt; if another row holds it, name the match and stop.
+
+| Candidate (written before the grep) | Match in the lane | What the match says |
+|---|---|---|
+| A Jensen bound for the twist free energy: spread the vortex by a fixed multiplication of the links and average over the untwisted measure | row 876 idea 14, `gap-brainstorm2-max.md` L216 | "seam multiplication by a non-central constant conjugates the neighbouring links and costs order beta per plaquette for a rough field (ARGUED); the cheapest fixed insertion costs about beta L^2" |
+| An exact one-variable form of D by convex duality in the energy density: D(n; beta) = sup over e of [Delta_n(e) - n^4 psi*(e; beta)] | no file has this form; it is Theorem D (f) again | a three-line computation by convex conjugates (F_n and f are convex in beta; D >= 0 gives Delta_n >= 0); not written out here, so its mark is reading. It is useless: its envelope derivative is the identity of Theorem D (f), and nothing is known about Delta_n in n |
+| The two-layer SU(2) model with frozen layers is the principal chiral model, so the O(4) model sits in the closure of the gauge class with coupling fields | row 876 G8, `gap-brainstorm2-max.md` L263; Lemma SHEET's mechanism (`gap-sepinput-max.md` L379-381) | in three dimensions the slab is a two-dimensional O(4)-type model; in four dimensions the frozen slab is three-dimensional and orders (rows 950, 952) |
+| SU(2) with an adjoint scalar as a test with a non-abelian group and a massless phase | `gap-crux-exercise-r858-max.md` L342 (E3) | "The centre and the twists survive. In four dimensions the Higgs phase has a massless photon. It moves toward the U(1) test" |
+| "A massless branch needs a continuous symmetry": a dichotomy with an emergent two-form current | row 876 idea 29, `gap-brainstorm2-max.md` L179 | stated there as an idea; no theorem (Goldstone's theorem has no converse) |
+
+Nothing else was attacked. I found no named sub-step under 5.1 or 5.2 that another proof attempt could take: 5.1
+is complete, and 5.2 ends at route RB, which the registry holds as blocked-equivalent.

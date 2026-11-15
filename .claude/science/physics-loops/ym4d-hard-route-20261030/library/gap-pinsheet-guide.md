@@ -157,3 +157,24 @@ with T = 2S; 500/500/300 thermalisation and 8000/4000/1500 measured sweeps; same
 strong coupling <cos theta_p> = I_1(beta)/I_0(beta) at beta 0.2, and the weak-coupling equipartition value 1 - 1/(4 beta) at beta 10.
 Also, before P2 and after P1 side 24: a second P3 side-16 chain (seed 1604), Step 5 amendment. Driver `run2.sh`.
 
+## Step 7. P1 side 24 and the P1 verdicts (GUIDE; analysed 02:23Z)
+
+Raw `data/p1_S24_T48_seed2401.txt`, analysis `data/analysis_p1_S24.txt`; 16 blocks of 156 sweeps (2672 s of CPU).
+
+| side | R_S | R_S/A | tau | xi_2nd | Ghat^e(p_1) | IR bound | E[a_0^2] |
+|---|---|---|---|---|---|---|---|
+| 24 | 327.81 +- 0.09 | 0.569 | 0.75092 +- 0.00005 | 25.35 +- 0.04 | 1.829 | 6.380 | 0.2537 +- 0.0027 (UNDER-SAMPLED: tau_int 14 > 156/20; not a criterion observable) |
+
+R_S tau_int 1.1, half-chain test -0.84 sigma.
+
+**P1 verdicts (rules of Step 1).**
+- **C1 (test of Theorem D2): holds.** R_8 = 42.241 +- 0.004 >= 21.78; R_12 = 89.94 +- 0.02 >= 32.79; R_16 = 153.83 +- 0.03 >= 37.88. No violation; the
+  measured values are 1.9, 2.7 and 4.1 times the bounds. D2 is not refuted and this row's result stands. The infrared bound of row 977 5.3
+  also holds directly at p_1 on all four sides (measured/bound 0.38, 0.33, 0.31, 0.29).
+- **C2 (growth): "sheet longer than the box".** R_24 = 327.8 +- 0.1 >= 144 (R_24/A = 0.569 against the threshold 0.25). xi_2nd/S = 0.98, 1.03, 1.05, 1.06
+  on sides 8 to 24: the pinned sheet is ordered on the box at every side run; R_S/A falls slowly (0.660, 0.625, 0.601, 0.569), roughly by
+  0.03 per factor 1.5 to 2 of the side, as a spin-wave reduction of an ordered 2D O(4) sheet would. Nothing here decides saturation above side 24.
+- **C3: tau = 0.7513, 0.7512, 0.7510, 0.7509** (errors 1e-4 or less) on sides 8, 12, 16, 24: below 0.8, so 6.2(b)'s growth route
+  (which needs tau >= 0.8) does **not** apply. tau is flat in the side.
+- Measured per-link G^e-hat(0) = R_S/4: 10.56, 22.48, 38.46, 81.95, against row 977 10.5's proved/argued floors 5.44, 8.20, 9.47 (side 24 no floor).
+

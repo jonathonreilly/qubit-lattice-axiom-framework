@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-29T23:00:36.016195+00:00",
+  "exit_code": 1,
+  "wall_seconds": 0.37099866702919826,
+  "peak_rss_KiB": 125936,
+  "termination_reason": null,
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_wrong_divisor.py",
+  "script_sha256": "547886c1b3f0e8e627b4a06911e03b05dfecfd465338c53ac0541c950e2005e2",
+  "stdout_sha256": "19ca5b3458196bf570dfa64a5f1125a2b48e9e196b9cd07d8864886ceb84de2f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

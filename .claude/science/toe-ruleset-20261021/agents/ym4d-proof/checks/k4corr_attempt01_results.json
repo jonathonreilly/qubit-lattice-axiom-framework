@@ -1,0 +1,255 @@
+{
+  "utc": "2026-10-30T05:06:20.917926+00:00",
+  "scope": "exact algebra only; actual YM coefficient and remainder OPEN",
+  "passed": true,
+  "checks": [
+    {
+      "name": "coupling_conversion",
+      "passed": true
+    },
+    {
+      "name": "inverse_coupling_slope",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_factor_two",
+      "passed": true
+    },
+    {
+      "name": "clover_gamma_no_h2",
+      "passed": true
+    },
+    {
+      "name": "clover_gamma_h4",
+      "passed": true
+    },
+    {
+      "name": "clover_gamma_h6",
+      "passed": true
+    },
+    {
+      "name": "independent_u_derivative",
+      "passed": true
+    },
+    {
+      "name": "canonical_gamma",
+      "passed": true
+    },
+    {
+      "name": "canonical_rescaling_route",
+      "passed": true
+    },
+    {
+      "name": "mutation_canonical_used_for_clover",
+      "passed": true
+    },
+    {
+      "name": "ward_differential_identity",
+      "passed": true
+    },
+    {
+      "name": "ward_first_coefficient",
+      "passed": true
+    },
+    {
+      "name": "rg_log_order_2",
+      "passed": true
+    },
+    {
+      "name": "mutation_log_sign_2",
+      "passed": true
+    },
+    {
+      "name": "rg_log_order_4",
+      "passed": true
+    },
+    {
+      "name": "mutation_log_sign_4",
+      "passed": true
+    },
+    {
+      "name": "ratio_first_coefficient",
+      "passed": true
+    },
+    {
+      "name": "ratio_common_log_zero",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_denominator_square",
+      "passed": true
+    },
+    {
+      "name": "finite_factor_cancels_through_h4",
+      "passed": true
+    },
+    {
+      "name": "ward_factor_cancels_through_h4",
+      "passed": true
+    },
+    {
+      "name": "mutation_single_ward_denominator",
+      "passed": true
+    },
+    {
+      "name": "coupling_scheme_first_invariant",
+      "passed": true
+    },
+    {
+      "name": "coupling_scheme_next_shift",
+      "passed": true
+    },
+    {
+      "name": "ratio_next_log",
+      "passed": true
+    },
+    {
+      "name": "smooth_A_enclosure",
+      "passed": true
+    },
+    {
+      "name": "smooth_B_enclosure",
+      "passed": true
+    },
+    {
+      "name": "smooth_ratio_lower",
+      "passed": true
+    },
+    {
+      "name": "smooth_ratio_upper",
+      "passed": true
+    },
+    {
+      "name": "positivity_rectangle",
+      "passed": true
+    },
+    {
+      "name": "witness_lower_margin",
+      "passed": true
+    },
+    {
+      "name": "error_budget",
+      "passed": true
+    },
+    {
+      "name": "correction_sign_-1",
+      "passed": true
+    },
+    {
+      "name": "correction_sign_1",
+      "passed": true
+    },
+    {
+      "name": "mutation_no_uniform_remainder",
+      "passed": true,
+      "example": "-9999/10001",
+      "scope": "scalar logical counterexample, not a YM law"
+    },
+    {
+      "name": "reciprocal_0_0_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_0_0_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_0_1_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_0_1_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_0_2_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_0_2_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_1_0_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_1_0_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_1_1_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_1_1_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_1_2_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_1_2_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_2_0_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_2_0_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_2_1_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_2_1_1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_2_2_-1",
+      "passed": true
+    },
+    {
+      "name": "reciprocal_2_2_1",
+      "passed": true
+    },
+    {
+      "name": "mutation_drop_reciprocal_two",
+      "passed": true
+    }
+  ],
+  "guards": [
+    {
+      "free_percent": 52,
+      "loads": [
+        2.03515625,
+        2.21142578125,
+        2.16162109375
+      ],
+      "peak_rss_bytes": 21233664
+    },
+    {
+      "free_percent": 52,
+      "loads": [
+        2.03515625,
+        2.21142578125,
+        2.16162109375
+      ],
+      "peak_rss_bytes": 21577728
+    }
+  ],
+  "nice": 20,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "criteria_sha256": "93d98e599b58de25af139683ea0175e385ef28bdad3d05a80b967b6fd2b58dda",
+  "assertion_count": 54
+}

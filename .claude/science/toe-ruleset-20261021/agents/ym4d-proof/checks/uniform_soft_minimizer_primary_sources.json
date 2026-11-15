@@ -1,0 +1,14 @@
+[
+  {
+    "tag": "axial",
+    "url": "https://arxiv.org/pdf/1410.2798v3",
+    "retrieved_utc": "2026-10-29T17:24:35.374482+00:00",
+    "error": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'))"
+  },
+  {
+    "tag": "multiscale",
+    "url": "https://arxiv.org/pdf/1712.10029v3",
+    "retrieved_utc": "2026-10-29T17:24:35.438137+00:00",
+    "error": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'))"
+  }
+]

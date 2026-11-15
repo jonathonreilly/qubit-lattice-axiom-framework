@@ -1,0 +1,5 @@
+L1 ln10 enclosure inside [..684017, ..684018] and width<1e-30: True (width 4.0e-45)
+L2 3ln2+ln(5/4) overlaps ln10 enclosure, overlap width<1e-30: True
+L3 ln2 enclosure inside [..309417, ..309418]: True
+L4 (designed FAIL) shifted enclosure inside the window: False -> FAILS (as designed)
+VERDICT: log enclosures CERTIFIED; ru55_3 verdicts stand with K4 replaced by L1-L4

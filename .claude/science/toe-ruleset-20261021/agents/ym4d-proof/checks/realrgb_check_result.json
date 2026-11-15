@@ -1,0 +1,539 @@
+{
+  "kind": "exact finite regression, not Yang\u2013Mills evidence",
+  "started_utc": "2026-10-30T08:08:38Z",
+  "criteria_sha256": "fc6f590ca1643be8fbdfcf225b90f91db7c7830acbf76e06b39dcdd3506b857f",
+  "script_sha256": "49b46a90b8dede375b992025b5f9a8ac0ce4a9a5c8892acb88ab399de313d2f5",
+  "checks": [
+    {
+      "name": "Bell partitions",
+      "actual": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          7,
+          6,
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          7,
+          6,
+          1
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "Bell recurrence",
+      "actual": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          7,
+          6,
+          1
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          7,
+          6,
+          1
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "Reciprocal recurrence",
+      "actual": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          9,
+          13
+        ],
+        [
+          0,
+          1,
+          21,
+          78,
+          75
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          9,
+          13
+        ],
+        [
+          0,
+          1,
+          21,
+          78,
+          75
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "Reciprocal partitions",
+      "actual": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          9,
+          13
+        ],
+        [
+          0,
+          1,
+          21,
+          78,
+          75
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          9,
+          13
+        ],
+        [
+          0,
+          1,
+          21,
+          78,
+          75
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "Quotient Leibniz",
+      "actual": [
+        [
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          2,
+          18,
+          26
+        ],
+        [
+          0,
+          2,
+          42,
+          156,
+          150
+        ]
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          2,
+          18,
+          26
+        ],
+        [
+          0,
+          2,
+          42,
+          156,
+          150
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "P4 at unit arguments",
+      "actual": "117/4",
+      "expected": "117/4",
+      "passed": true
+    },
+    {
+      "name": "Logarithmic partitions",
+      "actual": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          6,
+          6
+        ],
+        [
+          0,
+          1,
+          14,
+          36,
+          26
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          6,
+          6
+        ],
+        [
+          0,
+          1,
+          14,
+          36,
+          26
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "RD3 hole geometry",
+      "actual": [
+        81,
+        297,
+        82
+      ],
+      "expected": [
+        81,
+        297,
+        82
+      ],
+      "passed": true
+    },
+    {
+      "name": "Source manifest preserved",
+      "actual": {
+        "PROCESS_LIGHT.md": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+        "HANDOFF.md": "5dddf7b321fccab35e25f88d37ef3a51332e486d5f4b87e37efbbb3c534c6307",
+        "briefs_q/REALRGB/AUTHOR.md": "c113f8875bb38a901fb4081bdae6d81d0929e068a49f5290a35d2f2ee8fdec61",
+        "REALONLY.md": "3856594faffe9b1c6beab42f38385c820f06ab7476c4cbdd6934b5bf30bac019",
+        "CHARGE.md": "8c5a5ecdb95a32089f2005bf6597d4aedefa660b9b9f8c1cc7b7a01374afc1ef",
+        "RENEW.md": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+        "RD3.md": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+        "RD4.md": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+        "JMBRA.md": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+        "JMBRB.md": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+        "LFPRICE.md": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+        "LIB1.md": "1e843c88ae26a2e69241dbdc3fa72c5b54e49a3b1669565f9e869a620a19aad1"
+      },
+      "expected": {
+        "PROCESS_LIGHT.md": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+        "HANDOFF.md": "5dddf7b321fccab35e25f88d37ef3a51332e486d5f4b87e37efbbb3c534c6307",
+        "briefs_q/REALRGB/AUTHOR.md": "c113f8875bb38a901fb4081bdae6d81d0929e068a49f5290a35d2f2ee8fdec61",
+        "REALONLY.md": "3856594faffe9b1c6beab42f38385c820f06ab7476c4cbdd6934b5bf30bac019",
+        "CHARGE.md": "8c5a5ecdb95a32089f2005bf6597d4aedefa660b9b9f8c1cc7b7a01374afc1ef",
+        "RENEW.md": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+        "RD3.md": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+        "RD4.md": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+        "JMBRA.md": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+        "JMBRB.md": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+        "LFPRICE.md": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+        "LIB1.md": "1e843c88ae26a2e69241dbdc3fa72c5b54e49a3b1669565f9e869a620a19aad1"
+      },
+      "passed": true
+    }
+  ],
+  "resources": [
+    {
+      "label": "startup",
+      "load": [
+        1.94775390625,
+        1.83349609375,
+        1.85888671875
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 21659648,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "Bell",
+      "load": [
+        1.94775390625,
+        1.83349609375,
+        1.85888671875
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 21692416,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "reciprocal",
+      "load": [
+        1.94775390625,
+        1.83349609375,
+        1.85888671875
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 21692416,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "quotient",
+      "load": [
+        1.94775390625,
+        1.83349609375,
+        1.85888671875
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 21692416,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "logarithm",
+      "load": [
+        1.94775390625,
+        1.83349609375,
+        1.85888671875
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 21692416,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "geometry",
+      "load": [
+        1.94775390625,
+        1.83349609375,
+        1.85888671875
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 21741568,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "finished",
+      "load": [
+        1.94775390625,
+        1.83349609375,
+        1.85888671875
+      ],
+      "free_percent": 50.0,
+      "rss_bytes": 21741568,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "status": "PASS",
+  "finished_utc": "2026-10-30T08:08:38Z"
+}

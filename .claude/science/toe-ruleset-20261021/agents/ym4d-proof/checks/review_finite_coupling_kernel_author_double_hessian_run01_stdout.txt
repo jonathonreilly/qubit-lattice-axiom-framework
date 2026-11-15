@@ -1,0 +1,479 @@
+{
+  "criteria": "finite_coupling_kernel_criteria.md",
+  "program": "review_finite_coupling_kernel_author_double_hessian.py",
+  "runtime": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "elapsed": 0.18573362496681511
+  },
+  "passed": 34,
+  "total": 35,
+  "checks": [
+    {
+      "name": "SU2 saddle determinant",
+      "value": 9.747130304736826e-19,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 saddle traceless residual",
+      "value": 1.5739583667947396e-16,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 noncommuting/nonunitary witness",
+      "value": [
+        0.001396199126199392,
+        0.017650543275769193
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 full Haar and translated cycle t=3.0",
+      "value": 3.318212733971112e-16,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 full Haar and translated cycle t=12.0",
+      "value": 1.366657621506026e-15,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 full Haar and translated cycle t=40.0",
+      "value": 2.9957007752940593e-15,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "wrong dual-quaternion sign",
+      "value": 0.0016016655816989114,
+      "passed": true,
+      "kind": "mutation"
+    },
+    {
+      "name": "SU2 logarithmic remainder t=40.0",
+      "value": -0.3797934887149323,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 finite-u spread coefficient t=40.0",
+      "value": -0.3846965791144519,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 logarithmic remainder t=80.0",
+      "value": -0.37736980607498277,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 finite-u spread coefficient t=80.0",
+      "value": -0.37976609913215054,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 logarithmic remainder t=160.0",
+      "value": -0.3761783357640063,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU2 finite-u spread coefficient t=160.0",
+      "value": -0.37736318494636656,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "wrong Gaussian determinant power",
+      "value": 0.15122720076957785,
+      "passed": true,
+      "kind": "mutation"
+    },
+    {
+      "name": "SU3 full Weyl Haar normalization",
+      "value": [
+        0.9999999999999998,
+        0.0
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 grids t=40.0 s=(1+0j)",
+      "value": 1.4957434264410772e-16,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 eight-colour remainder t=40.0",
+      "value": [
+        -1.0583927111363085,
+        0.0
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 grids t=80.0 s=(1+0j)",
+      "value": 2.9510524105395066e-16,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 eight-colour remainder t=80.0",
+      "value": [
+        -1.0280907865579747,
+        0.0
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 grids t=160.0 s=(1+0j)",
+      "value": 2.3455111305533993e-15,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 eight-colour remainder t=160.0",
+      "value": [
+        -1.0137878955000348,
+        0.0
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 grids t=40.0 s=(1.000014400921659+7.2004608294930876e-06j)",
+      "value": 1.4958289855723578e-16,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 grids t=80.0 s=(1.000014400921659+7.2004608294930876e-06j)",
+      "value": 4.426832766773863e-16,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 grids t=160.0 s=(1.000014400921659+7.2004608294930876e-06j)",
+      "value": 2.492248904388858e-15,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "discard SU3 Haar Vandermonde",
+      "value": 9540.62566895138,
+      "passed": true,
+      "kind": "mutation"
+    },
+    {
+      "name": "SU3 constructed pair inside proved domain",
+      "value": 0.14662888031443896,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 noncommuting SL saddle",
+      "value": 1.5700924591658034e-16,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 full eight-colour Hessian",
+      "value": 0.9428090473199008,
+      "passed": false,
+      "kind": "ordinary"
+    },
+    {
+      "name": "SU3 genuine odd cubic and parity",
+      "value": [
+        [
+          -7.257747386024237e-06,
+          0.0
+        ],
+        0.0,
+        4.0488174878755556e-19
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "U(N) polar violates SU3 constraint",
+      "value": 0.11986418932249628,
+      "passed": true,
+      "kind": "mutation"
+    },
+    {
+      "name": "actual S4 count and length",
+      "value": [
+        1944,
+        11,
+        459
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "arbitrary-holonomy brick lift exact contours",
+      "value": 0.0,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "actual complex S4 in fixed matrix domain",
+      "value": 0.006437881580498782,
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "inverse mean and conjugate are both wrong",
+      "value": [
+        0.002275517825735855,
+        0.0133699655845579
+      ],
+      "passed": true,
+      "kind": "ordinary"
+    },
+    {
+      "name": "wrong S4 divisor 6L^4",
+      "value": 4.242640687119285,
+      "passed": true,
+      "kind": "mutation"
+    }
+  ],
+  "details": {
+    "SU2_complex_pair": {
+      "M_plus": [
+        [
+          [
+            1.012,
+            -0.008
+          ],
+          [
+            0.013435028842544402,
+            0.034648232278140824
+          ]
+        ],
+        [
+          [
+            -0.013435028842544402,
+            0.019091883092036785
+          ],
+          [
+            1.012,
+            -0.008
+          ]
+        ]
+      ],
+      "M_minus": [
+        [
+          [
+            1.006,
+            -0.005849242404917498
+          ],
+          [
+            -0.009899494936611665,
+            0.00565685424949238
+          ]
+        ],
+        [
+          [
+            -0.009899494936611665,
+            0.00565685424949238
+          ],
+          [
+            1.006,
+            0.023849242404917495
+          ]
+        ]
+      ],
+      "integrals": [
+        {
+          "t": 3.0,
+          "exact": [
+            2.6768038974186914,
+            0.0021722304735839254
+          ],
+          "direct": [
+            2.676803897418692,
+            0.0021722304735839327
+          ],
+          "translated": [
+            2.6768038974186923,
+            0.002172230473583934
+          ]
+        },
+        {
+          "t": 12.0,
+          "exact": [
+            3327.4011286843684,
+            16.628507870286043
+          ],
+          "direct": [
+            3327.401128684364,
+            16.628507870286047
+          ],
+          "translated": [
+            3327.401128684369,
+            16.62850787028608
+          ]
+        },
+        {
+          "t": 40.0,
+          "exact": [
+            1043313707943393.0,
+            19045660628348.438
+          ],
+          "direct": [
+            1043313707943390.2,
+            19045660628348.402
+          ],
+          "translated": [
+            1043313707943396.1,
+            19045660628348.516
+          ]
+        }
+      ],
+      "scope": "wider algebra control, not the conservative fixed-neighborhood certificate"
+    },
+    "SU3_full_Haar": {
+      "A_identity": 14.885880176388383,
+      "samples": [
+        {
+          "t": 40.0,
+          "s": [
+            1.0,
+            0.0
+          ],
+          "lam": [
+            0.0,
+            0.0
+          ],
+          "Z_centered": [
+            5.662956174707735e-06,
+            0.0
+          ],
+          "tE": [
+            -1.0583927111363085,
+            0.0
+          ]
+        },
+        {
+          "t": 80.0,
+          "s": [
+            1.0,
+            0.0
+          ],
+          "lam": [
+            0.0,
+            0.0
+          ],
+          "Z_centered": [
+            3.587842697359309e-07,
+            0.0
+          ],
+          "tE": [
+            -1.0280907865579747,
+            0.0
+          ]
+        },
+        {
+          "t": 160.0,
+          "s": [
+            1.0,
+            0.0
+          ],
+          "lam": [
+            0.0,
+            0.0
+          ],
+          "Z_centered": [
+            2.2570585367848255e-08,
+            0.0
+          ],
+          "tE": [
+            -1.0137878955000348,
+            0.0
+          ]
+        },
+        {
+          "t": 40.0,
+          "s": [
+            1.000014400921659,
+            7.2004608294930876e-06
+          ],
+          "lam": [
+            5.76036866359447e-06,
+            2.880184331797235e-06
+          ],
+          "Z_centered": [
+            5.662632262592616e-06,
+            -1.61948826708666e-10
+          ],
+          "tE": [
+            -1.0583765617748222,
+            8.074491158856612e-06
+          ]
+        },
+        {
+          "t": 80.0,
+          "s": [
+            1.000014400921659,
+            7.2004608294930876e-06
+          ],
+          "lam": [
+            5.76036866359447e-06,
+            2.880184331797235e-06
+          ],
+          "Z_centered": [
+            3.587636712753064e-07,
+            -1.0298768538133105e-11
+          ],
+          "tE": [
+            -1.028075561605772,
+            7.612300158362286e-06
+          ]
+        },
+        {
+          "t": 160.0,
+          "s": [
+            1.000014400921659,
+            7.2004608294930876e-06
+          ],
+          "lam": [
+            5.76036866359447e-06,
+            2.880184331797235e-06
+          ],
+          "Z_centered": [
+            2.2569287341922373e-08,
+            -6.489838084686676e-13
+          ],
+          "tE": [
+            -1.0137730940404655,
+            7.400559922165795e-06
+          ]
+        }
+      ]
+    },
+    "S4": {
+      "count": 1944,
+      "distinct_reader_links": 459,
+      "inside_link_radius": 7.0820987060459106e-06,
+      "inside_parameter_ratio": 0.006437881580498782,
+      "wider_probe_amplitude": 0.035,
+      "wider_probe_errors": [
+        0.002275517825735855,
+        0.0133699655845579
+      ]
+    }
+  }
+}

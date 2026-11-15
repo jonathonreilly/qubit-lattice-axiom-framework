@@ -1,0 +1,305 @@
+{
+  "created_utc": "2026-10-29T19:06:37.937460+00:00",
+  "independence": "No author checker read or imported before this implementation/execution.",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "checks": [
+    {
+      "name": "local_tree_count",
+      "passed": true,
+      "tree": 80,
+      "free": 244
+    },
+    {
+      "name": "all_actual_contours_and_integer_fillings",
+      "passed": true,
+      "contours": 7776,
+      "max_length": 11,
+      "max_filling_l1": 39,
+      "max_endpoint_blocks": 2
+    },
+    {
+      "name": "every_free_edge_tree_recovery_filling",
+      "passed": true,
+      "max_filling_l1": 33
+    },
+    {
+      "name": "symbol_gap_and_root_domain_[0.0, 0.0, 0.0, 0.0]",
+      "passed": true,
+      "min_H": 0.019826155965320145,
+      "min_B": -3.8314777495604993e-16,
+      "root_Q_error": 0.0,
+      "root_curl_error": 0.0,
+      "harmonic_quotients": [
+        0.025925925925927226,
+        0.02592592592592737,
+        0.025925925925927226,
+        0.02592592592592737
+      ]
+    },
+    {
+      "name": "all_four_harmonic_modes_retained",
+      "passed": true
+    },
+    {
+      "name": "zero_momentum_bare_four_harmonics",
+      "passed": true
+    },
+    {
+      "name": "symbol_gap_and_root_domain_[0.31, 0.47, -0.29, 0.71]",
+      "passed": true,
+      "min_H": 0.02324415663142644,
+      "min_B": -2.9292346886894117e-18,
+      "root_Q_error": 5.594315114139762e-17,
+      "root_curl_error": 4.869218060375926e-16,
+      "harmonic_quotients": []
+    },
+    {
+      "name": "symbol_gap_and_root_domain_[3.141592653589793, 0.0, 0.0, 0.0]",
+      "passed": true,
+      "min_H": 0.02191170887345288,
+      "min_B": -5.780286185919749e-17,
+      "root_Q_error": 1.3322676295501878e-15,
+      "root_curl_error": 0.0,
+      "harmonic_quotients": []
+    },
+    {
+      "name": "symbol_gap_and_root_domain_[1e-07, 0.0, 0.0, 0.0]",
+      "passed": true,
+      "min_H": 0.019826155965323316,
+      "min_B": -1.0123745047599264e-16,
+      "root_Q_error": 2.64697796016969e-23,
+      "root_curl_error": 0.0,
+      "harmonic_quotients": []
+    },
+    {
+      "name": "actual_periodic_vs_bloch_precision",
+      "passed": true,
+      "errors": [
+        8.883560376240486e-14,
+        3.9170581571568066e-14
+      ]
+    },
+    {
+      "name": "actual_support_and_row_sum",
+      "passed": true,
+      "max_block_l1_range": 2,
+      "max_abs_row_sum": 24.38724547577927
+    },
+    {
+      "name": "actual_noncommuting_kernel_quadrature_Hessian",
+      "passed": true,
+      "hessian_steps": [
+        0.4396297165198959,
+        0.4396298058928494,
+        0.43962980456058176
+      ],
+      "prediction": 0.4396298254327867,
+      "spread": 0.8327878113694909,
+      "mean_sq": 0.017333376948085368,
+      "quadrature_mean": 0.3650355797941613
+    },
+    {
+      "name": "exact_tree_gauge_and_inverse",
+      "passed": true,
+      "max_tree_error": 1.1102230246251565e-15,
+      "max_reconstruction_error": 2.1094237467877974e-15,
+      "free_total": 3904
+    },
+    {
+      "name": "global_gauge_invariant_Wilson_and_actual_means",
+      "passed": true,
+      "max_plaquette_trace_error": 2.4424906541753444e-15,
+      "mean_errors": [
+        1.1449174941446927e-16,
+        6.245004513516506e-17
+      ],
+      "plaquettes": 7776
+    },
+    {
+      "name": "Haar_root_product_coefficient_SU2",
+      "passed": true
+    },
+    {
+      "name": "Haar_root_product_coefficient_SU3",
+      "passed": true
+    },
+    {
+      "name": "Haar_root_product_coefficient_SU4",
+      "passed": true
+    },
+    {
+      "name": "resolvent_square_root_constant",
+      "passed": true,
+      "quadrature": 0.5640122796503926,
+      "root_form": 0.5640122796503937
+    },
+    {
+      "name": "exact_restricted_chart_all_prefactors",
+      "passed": true,
+      "direct": 0.1010919126952427,
+      "gaussian": 0.10109191269524272,
+      "h2": 0.017911224007836134
+    },
+    {
+      "name": "fixed_V_fine_integral_not_one",
+      "passed": true
+    },
+    {
+      "name": "full_rank_colour_determinant_budget",
+      "passed": true
+    }
+  ],
+  "mutations": [
+    {
+      "name": "delete_root_modes",
+      "rejected": true,
+      "missing": 4
+    },
+    {
+      "name": "wrong_Q_average_half",
+      "rejected": true
+    },
+    {
+      "name": "omit_finite_u_spread",
+      "rejected": true,
+      "separation": 0.42567643611737305
+    },
+    {
+      "name": "wrong_HS_factor",
+      "rejected": true
+    },
+    {
+      "name": "treat_uncentered_normalizer_constant",
+      "rejected": true
+    },
+    {
+      "name": "unmatched_endpoint_coordinate_order",
+      "rejected": true,
+      "separation": 0.004468825533163516
+    },
+    {
+      "name": "omit_Haar_SU2",
+      "rejected": true
+    },
+    {
+      "name": "omit_Haar_SU3",
+      "rejected": true
+    },
+    {
+      "name": "omit_Haar_SU4",
+      "rejected": true
+    },
+    {
+      "name": "lose_square_root_pi",
+      "rejected": true
+    },
+    {
+      "name": "drop_probability_Haar_density",
+      "rejected": true
+    },
+    {
+      "name": "drop_Nt_vacuum_factor",
+      "rejected": true
+    },
+    {
+      "name": "drop_N_over_u_scaling",
+      "rejected": true
+    },
+    {
+      "name": "drop_colour_det_power",
+      "rejected": true
+    },
+    {
+      "name": "lose_Gaussian_half",
+      "rejected": true
+    },
+    {
+      "name": "dimension_free_trace_budget",
+      "rejected": true,
+      "actual_logdet": 266.9187591463496,
+      "wrong_bound": 0.22314355131420976
+    }
+  ],
+  "spectrum": [
+    {
+      "p": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min_H": 0.019826155965320145,
+      "min_K": 0.3097156687042668,
+      "bare_near_zero_count": 4
+    },
+    {
+      "p": [
+        0.31,
+        0.47,
+        -0.29,
+        0.71
+      ],
+      "min_H": 0.02324415663142644,
+      "min_K": 0.31320212867317565,
+      "bare_near_zero_count": 1
+    },
+    {
+      "p": [
+        3.141592653589793,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min_H": 0.02191170887345288,
+      "min_K": 0.31187147185192265,
+      "bare_near_zero_count": 1
+    },
+    {
+      "p": [
+        1e-07,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min_H": 0.019826155965323316,
+      "min_K": 0.30971566870427086,
+      "bare_near_zero_count": 4
+    }
+  ],
+  "haar": [
+    {
+      "N": 2,
+      "steps": [
+        0.3333333555177697,
+        0.33333333883112,
+        0.33333333418761296
+      ],
+      "expected": 0.3333333333333333
+    },
+    {
+      "N": 3,
+      "steps": [
+        0.5000000249333297,
+        0.500000006813105,
+        0.5000000008675145
+      ],
+      "expected": 0.5
+    },
+    {
+      "N": 4,
+      "steps": [
+        0.6666666915441695,
+        0.6666666713461078,
+        0.6666666742346873
+      ],
+      "expected": 0.6666666666666666
+    }
+  ],
+  "passed": 21,
+  "total": 21,
+  "mutations_rejected": 16,
+  "mutations_total": 16,
+  "limits": "Finite floating diagnostics, not interval certificates or uniform proofs. Integer filling identities exhaustive only for L=3. Full analytic proof separately reviewed."
+}

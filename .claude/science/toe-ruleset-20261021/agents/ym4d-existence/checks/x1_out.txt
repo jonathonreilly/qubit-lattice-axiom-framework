@@ -1,0 +1,5 @@
+n=4: A1 max|dd|=0.00e+00  A2 max|D2-diag|=0.00e+00  A3 max|D1-diag|=0.00e+00
+n=5: A1 max|dd|=0.00e+00  A2 max|D2-diag|=0.00e+00  A3 max|D1-diag|=0.00e+00
+tau=0.5: B1 min heat-kernel entry=1.139e-05  B2 response F12(origin)=2.957e-05
+tau=2.0: B1 min heat-kernel entry=1.042e-03  B2 response F12(origin)=1.617e-04
+PASS A_ok= True B_ok= True

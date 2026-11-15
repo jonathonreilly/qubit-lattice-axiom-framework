@@ -1,0 +1,260 @@
+{
+  "created_utc": "2026-10-29T19:07:00.030429+00:00",
+  "scope": "Actual independent read coverage and input identity, not a theorem/audit verdict. Methodology pinned to explicit fetched main; combined validation and publication remain coordinator responsibilities.",
+  "local_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+      "bytes": 35698,
+      "sha256": "513e44546c5147caa44479c616937994f46aab09764a9808a87f3edddb05e294",
+      "read_coverage": "Whole original 1-544; repaired hypothesis and complete original-to-current diff."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "bytes": 775810,
+      "sha256": "7e620eea1a45ba97168a5be944eee43b950f2c390494e446524e597f2242be68",
+      "read_coverage": "1046-1110;2106-2143;4984-5055. Consumed definitions/interfaces only, not whole-file proof certification."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ROTDEF.md",
+      "bytes": 63680,
+      "sha256": "413261674aaafa7c68793e9f10ebc1421fdf92871bd583f7c654981511104bf2",
+      "read_coverage": "1-150, exact clover/source definition and normalization."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "bytes": 97416,
+      "sha256": "7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0",
+      "read_coverage": "124-204;267-369;767-795. No whole EXT or trajectory certification."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_OSLEAF.md",
+      "bytes": 51234,
+      "sha256": "cc19dc83485bfbac0d3b7f8186fea27918b522783af4ffe7e1f8bb257d4625e3",
+      "read_coverage": "F1-F15 and bankable discussion; 62-88 and 88-174 reissued to resolve earlier output truncation. Consumed FS hypothesis matching and conditional algebra only; SRCCD variance proof not recertified."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "bytes": 48847,
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "read_coverage": "100-264;400-450;652-690. Actual data/kernel, source bound/relative-source corollary, complex-domain qualification; whole history theorem not recertified."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "bytes": 51453,
+      "sha256": "f1f991dea8062bfc7176a68cc639beacd848d4fb9cdd0bd4917198e39dac51b5",
+      "read_coverage": "198-357;481-578;743-797. Coordinate/normalizer/domain intersections only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HRP_R2.md",
+      "bytes": 11671,
+      "sha256": "1cb5688e8289606e1524513ecf186a7283239fd53539916665d511e67f944a3b",
+      "read_coverage": "Whole file; documentary evidence, no rerun of HRP runner."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SPHERE2.md",
+      "bytes": 40243,
+      "sha256": "1576d59b4cb15a44519fa8a3d34b2ecbf922377d4379dcff4caf31432a8b684b",
+      "read_coverage": "73-118;240-250. Conditional route boundaries; not whole sphere proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "bytes": 7507,
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "read_coverage": "Whole file."
+    }
+  ],
+  "portable_methodology": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "bytes": 1615,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "read_coverage": "Whole applicable instruction/premise document; truncated ranges reissued where needed."
+    }
+  ],
+  "external_inputs": [
+    {
+      "path": "/tmp/euclidean_rotation_import_20261029/RPM1.tex",
+      "bytes": 129379,
+      "sha256": "ae201364acf2ea69cc01cc323db925793f26743ca02cbe404ef6086d778a7801",
+      "read_coverage": "Scientific body 702-2867 including appendices/bibliography; preamble not reviewed. Exact interface and bounded cone checked, full candidate theorem not certified.",
+      "git_blob": "86d31273743ea0b3dc2b99090058ce3b930fba5a"
+    },
+    {
+      "path": "/tmp/euclidean_rotation_import_20261029/RPM1.pdf",
+      "bytes": 715932,
+      "sha256": "1167b22c8a8fd957f66193a5d56c32c3683305d618a6dde5949b44731e8f6872",
+      "read_coverage": "Hashed only; scientific reading used paired TeX."
+    },
+    {
+      "path": "/tmp/euclidean_rotation_import_20261029/RP1O1.pdf",
+      "bytes": 616689,
+      "sha256": "e3b552e8f516424b9cd272bd13307aef35d9f1dc5f54b89822ab45817c0b235b",
+      "read_coverage": "Extracted PDF pages 1-2 and 31-33."
+    },
+    {
+      "path": "/tmp/euclidean_rotation_import_20261029/Sokal1982.pdf",
+      "bytes": 7137274,
+      "sha256": "46597fd3bb94fb9809f979ca018df04ff43a304519c27603f60f63ecde54e51a",
+      "read_coverage": "Extracted published pages 327-330 and 374-375."
+    },
+    {
+      "path": "/tmp/euclidean_rotation_import_20261029/JaffeJaekelMartinez2013.pdf",
+      "bytes": 520345,
+      "sha256": "c2f657e7320f9fd1a6d60b2738fa5a6821fde6e8c6ab2f6dfa308f719840ade1",
+      "read_coverage": "Extracted PDF pages 25-26, section VI, VI.1-VI.5."
+    }
+  ],
+  "public_pin": {
+    "repository": "ethanwsussman/Yang--Mills-LLM-experiment",
+    "commit": "1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310",
+    "readmes_read": "Whole root and RP O(d) trick (RP1) READMEs via GitHub connector",
+    "root_readme_blob": "24778ac2d5498b4cab2568447b58ae4e2b9c6612",
+    "rp_readme_blob": "1578fbcec3cd49a25c5163ab83c6eb33414250da",
+    "tex_blob": "86d31273743ea0b3dc2b99090058ce3b930fba5a"
+  },
+  "author_evidence_coverage": "Full final runner and criteria, all receipts/manifests/validation/vocabulary; earlier code versions by full semantic differences and outputs by parsed key differences plus full final reproduction. All17 original hashes checked before fix.",
+  "independence": "Initial criteria and runner precede author checker inspection; source note constants were already read. Post-inspection matrix/mutations labeled. Initial matching quaternion fixture is not counted as implementation diversity.",
+  "requested_worker_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "fork_turns": "none"
+  },
+  "backend_metadata_independently_verified": false,
+  "external_theorem_certified": false,
+  "full_four_dimensional_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

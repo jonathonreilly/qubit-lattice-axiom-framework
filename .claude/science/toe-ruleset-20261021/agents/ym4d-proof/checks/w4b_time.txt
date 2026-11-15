@@ -1,0 +1,6 @@
+w4b run: lock acquired 10:39:02 load { 2.48 3.07 3.31 }
+w4b run: exit 143 end 10:49:54
+w4b run: lock released 10:49:54
+w4b run 2: lock acquired 10:50:17 load { 5.53 3.83 3.49 }
+w4b run 2: exit 0 end 10:50:21
+w4b run 2: lock released 10:50:21

@@ -1,0 +1,10 @@
+(L,j,k)=(3,1,2) n_k=9 n_j=3: C1=True C2=True C3=True [psi(1)=-640/2187 = -2.926383e-01] C4: nonzero count=6/10 C5(linear tents vanish)=True  C6: N0-Nj=524880 < N0-Nk=531360  -> PASS
+(L,j,k)=(3,1,3) n_k=27 n_j=3: C1=True C2=True C3=True [psi(1)=-9280/177147 = -5.238587e-02] C4: nonzero count=18/28 C5(linear tents vanish)=True  C6: N0-Nj=42515280 < N0-Nk=43046640  -> PASS
+(L,j,k)=(3,2,3) n_k=27 n_j=9: C1=True C2=True C3=True [psi(1)=-9280/177147 = -5.238587e-02] C4: nonzero count=24/28 C5(linear tents vanish)=True  C6: N0-Nj=43040160 < N0-Nk=43046640  -> PASS
+(L,j,k)=(5,1,2) n_k=25 n_j=5: C1=True C2=True C3=True [psi(1)=-5376/78125 = -6.881280e-02] C4: nonzero count=20/26 C5(linear tents vanish)=True  C6: N0-Nj=31590000 < N0-Nk=31640544  -> PASS
+(L,j,k)=(7,1,2) n_k=49 n_j=7: C1=True C2=True C3=True [psi(1)=-129600/5764801 = -2.248126e-02] C4: nonzero count=42/50 C5(linear tents vanish)=True  C6: N0-Nj=466754400 < N0-Nk=466948800  -> PASS
+(L,j,k)=(3,1,4) n_k=81 n_j=3: C1=True C2=True C3=True [psi(1)=-95680/14348907 = -6.668104e-03] C4: nonzero count=54/82 C5(linear tents vanish)=True  C6: N0-Nj=3443737680 < N0-Nk=3486784320  -> PASS
+OVERALL: PASS
+real 0.02
+user 0.01
+sys 0.00

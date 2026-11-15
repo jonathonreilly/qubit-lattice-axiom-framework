@@ -1,0 +1,11 @@
+A1 PASS
+A2 PASS
+A3 PASS
+A4 PASS
+Ac1_fires PASS
+B1 PASS
+B2 PASS
+B3 PASS
+Bc1_fires PASS
+Bc2_fires PASS
+Bc3_fires PASS

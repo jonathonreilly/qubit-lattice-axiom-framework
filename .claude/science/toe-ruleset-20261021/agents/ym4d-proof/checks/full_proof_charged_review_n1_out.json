@@ -1,0 +1,298 @@
+{
+  "depth": 1,
+  "top": [
+    1,
+    2,
+    1,
+    1
+  ],
+  "shapes": [
+    [
+      3,
+      6,
+      3,
+      3
+    ],
+    [
+      1,
+      2,
+      1,
+      1
+    ]
+  ],
+  "kappas": [
+    0.8
+  ],
+  "n_hidden": 648,
+  "n_contours": 15552,
+  "linear_solver": [
+    {
+      "stop": 2,
+      "iterations": 8,
+      "normr": 0.43052477179981874,
+      "normar": 7.651954713523393e-15
+    },
+    {
+      "stop": 2,
+      "iterations": 8,
+      "normr": 0.9257729804693103,
+      "normar": 4.880814552313364e-15
+    },
+    {
+      "stop": 2,
+      "iterations": 8,
+      "normr": 0.30407513010630705,
+      "normar": 4.990934025915954e-15
+    }
+  ],
+  "source_solver": [
+    {
+      "stop": 1,
+      "iterations": 17,
+      "normr": 7.399263136444533e-16,
+      "normar": 9.069449253879579e-17
+    },
+    {
+      "stop": 1,
+      "iterations": 17,
+      "normr": 3.1216178241303943e-16,
+      "normar": 1.0701371302781481e-16
+    },
+    {
+      "stop": 1,
+      "iterations": 17,
+      "normr": 3.259259995748921e-16,
+      "normar": 3.8678512053229283e-16
+    }
+  ],
+  "second_solver": [
+    {
+      "stop": 1,
+      "iterations": 17,
+      "normr": 8.248209605138931e-17,
+      "normar": 4.972432823916129e-17
+    },
+    {
+      "stop": 1,
+      "iterations": 17,
+      "normr": 4.883928208718538e-17,
+      "normar": 7.086783303263531e-17
+    },
+    {
+      "stop": 1,
+      "iterations": 17,
+      "normr": 8.448291816570045e-17,
+      "normar": 1.0156780540304182e-16
+    }
+  ],
+  "F2": 0.5674344376247418,
+  "F3": 0.007099490366533806,
+  "exchange": 0.05152441268428902,
+  "divergence": [
+    0.391180145545473
+  ],
+  "bare_quartic": 0.19003908423870242,
+  "completed_quartic": 0.13851467155441338,
+  "finite_eps": [
+    0.04,
+    0.02,
+    0.01
+  ],
+  "finite_quartic": [
+    0.13855639725326702,
+    0.1385250998774839,
+    0.138517861682794
+  ],
+  "extrapolated_quartic": 0.13851544895123072,
+  "elapsed_seconds": 0.8219201564788818,
+  "checks": [
+    {
+      "name": "linear_stationary_equations",
+      "error": 1.0910553563236924e-14,
+      "scale": 0.48927007825205837,
+      "threshold": 5.892700782520583e-09,
+      "pass_": true
+    },
+    {
+      "name": "root_straight_funnel_level0",
+      "error": 0.0,
+      "scale": 1.0,
+      "threshold": 1.1000000000000001e-09,
+      "pass_": true
+    },
+    {
+      "name": "straight_row_level0",
+      "error": 4.440892098500626e-16,
+      "scale": 1.0,
+      "threshold": 1.1000000000000001e-08,
+      "pass_": true
+    },
+    {
+      "name": "straight_column_level0",
+      "error": 0.0,
+      "scale": 1.0,
+      "threshold": 1.1000000000000001e-08,
+      "pass_": true
+    },
+    {
+      "name": "linear_coclosed_level0",
+      "error": 4.5837158775175465e-15,
+      "scale": 1.0,
+      "threshold": 1.1000000000000001e-08,
+      "pass_": true
+    },
+    {
+      "name": "endpoint_mutation_level0",
+      "witness": 0.2395943639576011,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "source_in_range_of_hidden_D_transpose",
+      "error": 6.796831886221909e-16,
+      "scale": 0.8102544537679613,
+      "threshold": 9.102544537679615e-09,
+      "pass_": true
+    },
+    {
+      "name": "second_stationary_equations",
+      "error": 8.591075926252257e-16,
+      "scale": 0.38017007915135265,
+      "threshold": 4.801700791513527e-09,
+      "pass_": true
+    },
+    {
+      "name": "direct_second_Euler",
+      "error": 1.2364958355473498e-15,
+      "scale": 0.3801700791513528,
+      "threshold": 4.8017007915135284e-09,
+      "pass_": true
+    },
+    {
+      "name": "log_covariance_level0",
+      "error": 9.79736436130962e-16,
+      "scale": 0.7823602910909472,
+      "threshold": 8.823602910909473e-09,
+      "pass_": true
+    },
+    {
+      "name": "right_covariance_level0",
+      "error": 9.443016277923543e-16,
+      "scale": 0.39118014554547376,
+      "threshold": 4.9118014554547375e-09,
+      "pass_": true
+    },
+    {
+      "name": "ordinary_coclosed_mutation_level0",
+      "witness": 0.391180145545473,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "log_right_half_factor_mutation_level0",
+      "witness": 0.3911801455454736,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "self_loop_incidence_mutation_level0",
+      "witness": 0.7823602910909472,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "independent_source_direction",
+      "error": 9.623413177450857e-13,
+      "scale": 0.25351692911701573,
+      "threshold": 3.5351692911701572e-09,
+      "pass_": true
+    },
+    {
+      "name": "charged_source_nonzero",
+      "witness": 0.3801700791513528,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "exchange_omission",
+      "witness": 0.05152441268428902,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "exchange_sign",
+      "witness": 0.10304882536857804,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "exchange_half_factor",
+      "witness": 0.02576220634214451,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "direct_product_BCH2",
+      "error": 0.0,
+      "scale": 0.1672383116429964,
+      "threshold": 2.672383116429964e-10,
+      "pass_": true
+    },
+    {
+      "name": "path_divisor_mutation",
+      "witness": 0.05325949791293712,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "product_polynomial_F2",
+      "error": 2.220446049250313e-15,
+      "scale": 0.5674344376247418,
+      "threshold": 6.674344376247417e-10,
+      "pass_": true
+    },
+    {
+      "name": "product_polynomial_F3",
+      "error": 1.2004286453759505e-15,
+      "scale": 0.007099490366533806,
+      "threshold": 1.0709949036653381e-10,
+      "pass_": true
+    },
+    {
+      "name": "quartic_stationary_direct_group",
+      "error": 7.77396817336351e-07,
+      "scale": 0.13851467155441338,
+      "threshold": 4.770293431088268e-06,
+      "pass_": true
+    },
+    {
+      "name": "centered_constant_B_cancellation",
+      "error": 2.7505065210463323e-17,
+      "scale": 1.0,
+      "threshold": 1.1000000000000001e-09,
+      "pass_": true
+    },
+    {
+      "name": "constant_individual_B_nonzero",
+      "witness": 0.8248636250920515,
+      "floor": 1e-07,
+      "pass_": true
+    },
+    {
+      "name": "geometric_current_identity",
+      "error": 0.0,
+      "scale": 1.0,
+      "threshold": 1.1000000000000001e-09,
+      "pass_": true
+    },
+    {
+      "name": "omitted_4d_density_mutation",
+      "witness": 80.0,
+      "floor": 1e-07,
+      "pass_": true
+    }
+  ],
+  "passed": 28,
+  "total": 28,
+  "implementation": "independent geometric paths, quaternion product jets, rectangular LSMR"
+}

@@ -1,0 +1,975 @@
+dag55_1: graph /Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/dag55_1_graph.py
+====================================================================================================
+REAL GRAPH
+====================================================================================================
+S (schema): PASS  (0 error(s))
+S2 (string audit): PASS  (0 miss(es))
+
+E. counts: nodes 189 {'live': 164, 'off': 16, 'superseded': 3, 'unplaced': 6}; edges 353 {'def': 245, 'fixedpoint': 1, 'implicit': 3, 'le': 58, 'order': 10, 'req': 36}; absorbing edges 2
+DAG-F3 (unplaced) nodes:
+  U_M_pkg: M = M(L, κ_±) (LINEAR_PACKAGE Theorem 4.2′'s package constant) -- M also names other objects (M̄_c, Lemma PM's matrix M, Theorem CE's M-units); its consumers ((GAP-Z), TU-4, lane A's W0/GU/LIN0) are inside BFT's proof route, not modelled here
+  U_Qstr: Q_str (two operators: NORMS 81 entries vs LINEAR_PACKAGE 135) -- consumed only inside NORMS/N1-15 (off-route)
+  U_eps1_FLOW: ε_1 at FLOW l.1927 (disc radius) and l.2834 (|q_αF| ≤ ε_1) -- one or two objects: REVIEW55_CONST K9 left the count ≥ 5, possibly 6, NOT-VERIFIED; neither is RLARGE's χ_Q cut
+  U_eta_COF: η in C_fun's O((k−1)η²) (BFT_B's row size) -- whether η is BFT's fixed curvature size ε (≤ ε_0, fixed: KF-F2) or a g_k-scale quantity (KF-F3) is Step 4's question; not decidable from the strings I read
+  U_m_norm: m (𝔐's exponential weight, written bare) vs m_0 (BFT-3/BFT-4) -- THETAW J5 / REVIEW55_TUNIF W13: 'flagged, not decided' whether one constant or three
+  U_theta_w: θ_w as written in REVIEW_S22's BFT (one weight for ≥ 3 jobs) -- candidates: θ_w^c, θ_w^r, θ (source weight ω_l), θ_A — the decoupling is CONFIRMED faithful (REVIEW55_TUNIF W2), so the placed nodes are the decoupled ones; the single θ_w is not placed
+
+== B-all (every edge): 2 nontrivial SCC(s)
+  SCC (12 nodes): B_0, a, a_A, b_D, c_A, c_B, c_U, c_f, c_plus, n_H, n_sharp, theta
+  one explicit cycle:
+    B_0 -> c_B  [def]  RLARGE.md: "38416B_0/log L"
+    c_B -> n_H  [def]  RLARGE.md: "n_H := ⌊(4 + c_B)/(aβ_-)⌋"
+    n_H -> n_sharp  [le]  RLARGE.md: "n_♯ ≥ max{n^J_*, n_H}"
+    n_sharp -> c_A  [implicit]  HW.md: "R_{S,E} := ∩_j{every *-component of (D_j ∪ E^{(j)}) ∩ S^{(j)} has ≤ n_♯ cubes}"  + "C_A, c_A independent of g, K, T, k and the law" (HW.md)
+    c_A -> c_plus  [def]  HW.md: "c_+ = c_A + c_U (c_U := 2ε_2 ≤ 1)"
+    c_plus -> c_f  [def]  HW.md: "c_f := 531441·c_+"
+    c_f -> B_0  [def]  RLARGE.md: "B_0 = c_LI + c_f + 164ε_♯"
+  SCC (4 nodes): dbeta, eff_seq, kernel_seq, stage_consts
+  one explicit cycle:
+    dbeta -> eff_seq  [def]  RLARGE.md: "But F-flow at n = k + 1 consumes (RLF-δ)_j for j ≤ k (u_{k+1} contains δβ_k)"
+    eff_seq -> kernel_seq  [fixedpoint]  RLARGE.md: "The fixed point is consistent only if the kernel coupling sequence is fixed first"
+    kernel_seq -> stage_consts  [def]  RLARGE.md: "stage-k constants also use the kernel coupling g_{k+1} of K_{k+1} through CL^J"
+    stage_consts -> dbeta  [def]  RLARGE.md: "Derived at level k from data on levels [0, k] only"  + "itself an output of stage k (through δβ_k)" (RLARGE.md)
+
+== B-strict (without implicit/fixedpoint edges): 0 nontrivial SCC(s)
+
+== B-all restricted to live nodes: 2 nontrivial SCC(s): {B_0, a, a_A, b_D, c_A, c_B, c_U, c_f, c_plus, n_H, n_sharp, theta}; {dbeta, eff_seq, kernel_seq, stage_consts}
+
+DAG-F1 verdict: FOUND in B-all; NOT FOUND in B-strict (def/le/order/req only).
+
+== C. growth seeds (K, T, Tk) with evidence:
+  [off] C_flat_i K: PROOF.md: "absolute-value recursion compounds by Z_colZ_row² ≈ 1.3·10³ per level"
+  [live] C_fun K: REVIEW_BFT_B_S9_S10.md: "9.31·e·(k−1) ≈ 25(k−1)"
+  [live] C_fun K: REVIEW55_BFTB.md: "Not k-uniform; the k-uniform form needs a level-decay input for the rows (lane A's (SPD)/(W2))."
+  [off] C_theta_i K: PROOF.md: "C_θ^{(i)} ≥ Π_{j≤i}(4κ_{j-1}𝔠_∞^{(j)}) grows geometrically"
+  [superseded] NL4 Tk: NLOC.md: "with a constant that grows like T^{d+2}"
+  [off] PLD_xS K: REVIEW55_HWPLD.md: "compounds geometrically; §18.11's UPGRADE is a downgrade"
+  [off] SDP_column K: RLARGE.md: "the bound) shows it is not obtainable by column induction inside ∫W·1_𝔥 (LF-count at n = 1, ×81 per level)."
+  [superseded] S_T T: GREENT.md: "unconditional at **fixed** T and **not** uniform in T"
+  [live] V_LF K: RLARGE.md: "the only K-divergent quantity (HIST (P3))"
+  [live] V_LF T: HW.md: "𝒱_K^{LF}/|T| is not O(e^{-a'/g_K²})"
+  [off] eps_unif K: PROOF.md: "ε_unif = O(1/k)"
+== C. weak (uniformity-not-established) tags (Tfix, unstated-K, unstated-T) with evidence:
+  [live] C4 unstated-T: ../ym4d-existence/EXISTENCE.md: "E||1 - U_k(p)||⁴ ≤ C_4g_k⁴, volume- and K-uniform (⇐ Theorem CB + a prefactor-free (RLF-3^dis) at"
+  [live] C4 unstated-K: ../ym4d-existence/EXISTENCE.md: "E||1 - U_k(p)||⁴ ≤ C_4g_k⁴, volume- and K-uniform (⇐ Theorem CB + a prefactor-free (RLF-3^dis) at"
+  [live] CEexp unstated-K: ../ym4d-existence/EXISTENCE.md: "**(L-loc)_k OPEN, inside the B-NA wall** (needs all-order mixed-derivative decay: BFT-3 states orders ≤ 4 only, so (L-loc)_k is beyond BFT as stated [inference])"
+  [off] K_bar unstated-T: PROOF.md: "The exact-input LP values grow with T (row 252: 0.062 at T = 4, 0.090 at T = 6;"
+  [live] dbeta unstated-T: RLARGE.md: "no source proves that the sea average is torus-independent above the wrap levels (U5)"
+  [live] eps_N5_unif unstated-K: RLARGE.md: "constants are not covered by CI-bg; the level-uniform form is GAP along the per-level route"
+  [live] sigma_fl unstated-K: PLD.md: "Levels k ≥ 1 need σ_fl at level k (N5 level-uniformity, BFT)."
+
+-- GROWTH (K/T/Tk) on the full graph: seeds ['C_flat_i', 'C_fun', 'C_theta_i', 'NL4', 'PLD_xS', 'SDP_column', 'S_T', 'V_LF', 'eps_unif']; tainted 51 node(s)
+   A5: C_fun -> BFT5 -> a5G -> A5
+   BFT5: C_fun -> BFT5
+   B_0: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> c_f -> B_0
+   C4: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> C4
+   C_A: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A
+   C_H: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc -> C_ell -> C_H
+   C_ell: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc -> C_ell
+   C_ellp: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc -> C_ell -> C_ellp
+   C_fc: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc
+   C_rho: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho
+   IkE: C_fun -> BFT5 -> a5G -> A5 -> IkE
+   K0_T1: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0 -> R_g -> K0_T1
+   Kcompat: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> C4 -> Kcompat
+   N1_15: NL4 -> N1_15
+   RLF3dis: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis
+   R_g: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0 -> R_g
+   SF_last: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_sharp -> W -> SF_last
+   W: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_sharp -> W
+   a: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a
+   a5G: C_fun -> BFT5 -> a5G
+   a_A: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A
+   a_prime: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> a_prime
+   b_D: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> b_D
+   b_n: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_U -> b_n
+   beta_p: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho -> beta_p
+   c_A: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A
+   c_B: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> c_f -> B_0 -> c_B
+   c_U: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_U
+   c_f: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> c_f
+   c_plus: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus
+   c_sf: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_sf
+   eps_sharp: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> eps_sharp
+   g0: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0
+   g1_FLOW: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho -> gamma -> g1_FLOW
+   g2_CRC: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> g2_CRC
+   g_3: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> g_3
+   g_c: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> C4 -> Kcompat -> g_c
+   gamma: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho -> gamma
+   lambda_star: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> theta -> lambda_star
+   n_H: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_H
+   n_sharp: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_sharp
+   theta: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> theta
+   SINK g0: TAINTED via C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0
+
+-- UNIFORMITY-NOT-ESTABLISHED (Tfix/unstated) on the full graph: seeds ['C4', 'CEexp', 'K_bar', 'dbeta', 'eps_N5_unif', 'sigma_fl']; tainted 61 node(s)
+   B_0: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> c_f -> B_0
+   CEcond: CEexp -> CEcond
+   C_A: eps_N5_unif -> eps1 -> IkE -> C_A
+   C_H: eps_N5_unif -> eps1 -> a_bad -> C_fc -> C_ell -> C_H
+   C_ell: eps_N5_unif -> eps1 -> a_bad -> C_fc -> C_ell
+   C_ellp: eps_N5_unif -> eps1 -> a_bad -> C_fc -> C_ell -> C_ellp
+   C_fc: eps_N5_unif -> eps1 -> a_bad -> C_fc
+   C_rho: eps_N5_unif -> eps1 -> IkE -> C_rho
+   EX_first: eps_N5_unif -> eps1 -> EX_first
+   IkE: eps_N5_unif -> eps1 -> IkE
+   K0_T1: C4 -> Kcompat -> g_3 -> g0 -> R_g -> K0_T1
+   Kcompat: C4 -> Kcompat
+   RLF3dis: eps_N5_unif -> eps1 -> a_bad -> a -> RLF3dis
+   R_g: C4 -> Kcompat -> g_3 -> g0 -> R_g
+   SF_last: eps_N5_unif -> eps1 -> a_bad -> a -> n_sharp -> W -> SF_last
+   V_LF: dbeta -> V_LF
+   W: eps_N5_unif -> eps1 -> a_bad -> a -> n_sharp -> W
+   a: eps_N5_unif -> eps1 -> a_bad -> a
+   a_A: eps_N5_unif -> eps1 -> IkE -> a_A
+   a_D: eps_N5_unif -> eps1 -> a_bad -> a_D
+   a_RS: eps_N5_unif -> eps1 -> a_RS
+   a_bad: eps_N5_unif -> eps1 -> a_bad
+   a_cb: eps_N5_unif -> eps_loc -> a_cb
+   a_prime: eps_N5_unif -> eps1 -> a_bad -> a -> a_prime
+   a_ret: sigma_fl -> a_ret
+   b_D: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> b_D
+   b_n: eps_N5_unif -> eps1 -> IkE -> c_A -> c_U -> b_n
+   beta_p: eps_N5_unif -> eps1 -> IkE -> C_rho -> beta_p
+   c_A: eps_N5_unif -> eps1 -> IkE -> c_A
+   c_B: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> c_f -> B_0 -> c_B
+   c_U: eps_N5_unif -> eps1 -> IkE -> c_A -> c_U
+   c_f: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> c_f
+   c_plus: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus
+   c_sf: eps_N5_unif -> eps1 -> IkE -> c_sf
+   eff_seq: dbeta -> eff_seq
+   eps1: eps_N5_unif -> eps1
+   eps_J_loc: eps_N5_unif -> eps_J_loc
+   eps_loc: eps_N5_unif -> eps_loc
+   eps_sharp: eps_N5_unif -> eps1 -> a_bad -> a -> eps_sharp
+   eps_unif: K_bar -> eps_unif
+   eta_1: eps_N5_unif -> eps1 -> eta_1
+   eta_q: eps_N5_unif -> eps1 -> eta_q
+   g0: C4 -> Kcompat -> g_3 -> g0
+   g1_FLOW: sigma_fl -> a_ret -> gamma0 -> gamma -> g1_FLOW
+   g2_CRC: eps_N5_unif -> eps1 -> a_bad -> a -> g2_CRC
+   g_3: C4 -> Kcompat -> g_3
+   g_c: C4 -> Kcompat -> g_c
+   gamma: sigma_fl -> a_ret -> gamma0 -> gamma
+   gamma0: sigma_fl -> a_ret -> gamma0
+   kernel_seq: dbeta -> eff_seq -> kernel_seq
+   lambda_star: sigma_fl -> a_ret -> theta -> lambda_star
+   n_H: eps_N5_unif -> eps1 -> a_bad -> a -> n_H
+   n_sharp: eps_N5_unif -> eps1 -> a_bad -> a -> n_sharp
+   stage_consts: eps_N5_unif -> eps1 -> stage_consts
+   theta: sigma_fl -> a_ret -> theta
+   SINK g0: TAINTED via C4 -> Kcompat -> g_3 -> g0
+
+-- GROWTH (K/T/Tk) on the live subgraph: seeds ['C_fun', 'V_LF']; tainted 43 node(s)
+   A5: C_fun -> BFT5 -> a5G -> A5
+   BFT5: C_fun -> BFT5
+   B_0: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> c_f -> B_0
+   C4: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> C4
+   C_A: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A
+   C_H: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc -> C_ell -> C_H
+   C_ell: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc -> C_ell
+   C_ellp: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc -> C_ell -> C_ellp
+   C_fc: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> C_fc
+   C_rho: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho
+   IkE: C_fun -> BFT5 -> a5G -> A5 -> IkE
+   K0_T1: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0 -> R_g -> K0_T1
+   Kcompat: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> C4 -> Kcompat
+   RLF3dis: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis
+   R_g: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0 -> R_g
+   SF_last: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_sharp -> W -> SF_last
+   W: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_sharp -> W
+   a: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a
+   a5G: C_fun -> BFT5 -> a5G
+   a_A: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A
+   a_prime: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> a_prime
+   b_D: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> b_D
+   b_n: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_U -> b_n
+   beta_p: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho -> beta_p
+   c_A: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A
+   c_B: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> c_f -> B_0 -> c_B
+   c_U: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_U
+   c_f: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus -> c_f
+   c_plus: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_A -> c_plus
+   c_sf: C_fun -> BFT5 -> a5G -> A5 -> IkE -> c_sf
+   eps_sharp: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> eps_sharp
+   g0: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0
+   g1_FLOW: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho -> gamma -> g1_FLOW
+   g2_CRC: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> g2_CRC
+   g_3: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> g_3
+   g_c: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> RLF3dis -> C4 -> Kcompat -> g_c
+   gamma: C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_rho -> gamma
+   lambda_star: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> theta -> lambda_star
+   n_H: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_H
+   n_sharp: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> a -> n_sharp
+   theta: C_fun -> BFT5 -> a5G -> A5 -> IkE -> a_A -> theta
+   SINK g0: TAINTED via C_fun -> BFT5 -> a5G -> A5 -> IkE -> C_A -> g0
+
+-- UNIFORMITY-NOT-ESTABLISHED (Tfix/unstated) on the live subgraph: seeds ['C4', 'CEexp', 'dbeta', 'eps_N5_unif', 'sigma_fl']; tainted 57 node(s)
+   B_0: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> c_f -> B_0
+   CEcond: CEexp -> CEcond
+   C_A: eps_N5_unif -> eps1 -> IkE -> C_A
+   C_H: eps_N5_unif -> eps1 -> a_bad -> C_fc -> C_ell -> C_H
+   C_ell: eps_N5_unif -> eps1 -> a_bad -> C_fc -> C_ell
+   C_ellp: eps_N5_unif -> eps1 -> a_bad -> C_fc -> C_ell -> C_ellp
+   C_fc: eps_N5_unif -> eps1 -> a_bad -> C_fc
+   C_rho: eps_N5_unif -> eps1 -> IkE -> C_rho
+   EX_first: eps_N5_unif -> eps1 -> EX_first
+   IkE: eps_N5_unif -> eps1 -> IkE
+   K0_T1: C4 -> Kcompat -> g_3 -> g0 -> R_g -> K0_T1
+   Kcompat: C4 -> Kcompat
+   RLF3dis: eps_N5_unif -> eps1 -> a_bad -> a -> RLF3dis
+   R_g: C4 -> Kcompat -> g_3 -> g0 -> R_g
+   SF_last: eps_N5_unif -> eps1 -> a_bad -> a -> n_sharp -> W -> SF_last
+   V_LF: dbeta -> V_LF
+   W: eps_N5_unif -> eps1 -> a_bad -> a -> n_sharp -> W
+   a: eps_N5_unif -> eps1 -> a_bad -> a
+   a_A: eps_N5_unif -> eps1 -> IkE -> a_A
+   a_D: eps_N5_unif -> eps1 -> a_bad -> a_D
+   a_bad: eps_N5_unif -> eps1 -> a_bad
+   a_cb: eps_N5_unif -> eps_loc -> a_cb
+   a_prime: eps_N5_unif -> eps1 -> a_bad -> a -> a_prime
+   a_ret: sigma_fl -> a_ret
+   b_D: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> b_D
+   b_n: eps_N5_unif -> eps1 -> IkE -> c_A -> c_U -> b_n
+   beta_p: eps_N5_unif -> eps1 -> IkE -> C_rho -> beta_p
+   c_A: eps_N5_unif -> eps1 -> IkE -> c_A
+   c_B: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> c_f -> B_0 -> c_B
+   c_U: eps_N5_unif -> eps1 -> IkE -> c_A -> c_U
+   c_f: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus -> c_f
+   c_plus: eps_N5_unif -> eps1 -> IkE -> c_A -> c_plus
+   c_sf: eps_N5_unif -> eps1 -> IkE -> c_sf
+   eff_seq: dbeta -> eff_seq
+   eps1: eps_N5_unif -> eps1
+   eps_J_loc: eps_N5_unif -> eps_J_loc
+   eps_loc: eps_N5_unif -> eps_loc
+   eps_sharp: eps_N5_unif -> eps1 -> a_bad -> a -> eps_sharp
+   eta_q: eps_N5_unif -> eps1 -> eta_q
+   g0: C4 -> Kcompat -> g_3 -> g0
+   g1_FLOW: sigma_fl -> a_ret -> gamma0 -> gamma -> g1_FLOW
+   g2_CRC: eps_N5_unif -> eps1 -> a_bad -> a -> g2_CRC
+   g_3: C4 -> Kcompat -> g_3
+   g_c: C4 -> Kcompat -> g_c
+   gamma: sigma_fl -> a_ret -> gamma0 -> gamma
+   gamma0: sigma_fl -> a_ret -> gamma0
+   kernel_seq: dbeta -> eff_seq -> kernel_seq
+   lambda_star: sigma_fl -> a_ret -> theta -> lambda_star
+   n_H: eps_N5_unif -> eps1 -> a_bad -> a -> n_H
+   n_sharp: eps_N5_unif -> eps1 -> a_bad -> a -> n_sharp
+   stage_consts: eps_N5_unif -> eps1 -> stage_consts
+   theta: sigma_fl -> a_ret -> theta
+   SINK g0: TAINTED via C4 -> Kcompat -> g_3 -> g0
+
+DAG-F2 verdict: FOUND (live seeds: ['C_fun', 'V_LF'])
+
+== D. order (live subgraph, B-strict edges): 164 position(s); validity re-check PASS
+    0 t[0] A_d
+    1 t[0] L
+    2 t[0] N
+    3 t[0] d
+    4 t[0] kappa0
+    5 t[0] kappa_RL
+    6 t[0] kappa_pm
+    7 t[0] m_ES1
+    8 t[0] n_1
+    9 t[0] n_int
+   10 t[0] p_L
+   11 t[0] q_M
+   12 t[0] theta_A
+   13 t[0] theta_src
+   14 t[0] alpha_BFT
+   15 t[0] theta_wc
+   16 t[0] theta_wr
+   17 t[1] A_cg
+   18 t[1] C0_BFT
+   19 t[1] C0_SQ
+   20 t[1] C3
+   21 t[1] C_Omega
+   22 t[1] C_fun
+   23 t[1] C_prime
+   24 t[1] C_r_SQ
+   25 t[1] E2F
+   26 t[1] E_0
+   27 t[1] F_sched
+   28 t[1] C_T
+   29 t[1] A0_SQ
+   30 t[1] G_inf
+   31 t[1] K_FP
+   32 t[1] LIF
+   33 t[1] MSSob
+   34 t[1] N_prime
+   35 t[1] R0
+   36 t[1] R
+   37 t[1] SC_k
+   38 t[1] C_p_RLF0
+   39 t[1] T0_BFT
+   40 t[1] b_1
+   41 t[1] beta0p
+   42 t[1] beta_m
+   43 t[1] c_LI
+   44 t[1] c_att
+   45 t[1] c_flat
+   46 t[1] c_pr
+   47 t[1] delta_0
+   48 t[1] gap0
+   49 t[1] kappa0_CE
+   50 t[1] kappa_d
+   51 t[1] lam_bg
+   52 t[1] m0_BFT
+   53 t[1] m_N5
+   54 t[1] q_RES
+   55 t[1] B0_SQ
+   56 t[1] C_D
+   57 t[1] C_err
+   58 t[1] rstar
+   59 t[1] C_Delta
+   60 t[1] alpha_star
+   61 t[1] S_prime
+   62 t[1] gamma_prime
+   63 t[1] R_star_N5
+   64 t[1] T0_N5
+   65 t[1] c_inf
+   66 t[1] C_bg
+   67 t[1] r_flat
+   68 t[1] C_flat_PR
+   69 t[1] sf_chain
+   70 t[1] theta_cb
+   71 t[2] eps0_BFT
+   72 t[2] eps_star_EPST
+   73 t[2] eps_star_N5
+   74 t[2] eps_br
+   75 t[2] g_FS1
+   76 t[2] n_J_star
+   77 t[2] rC_BFT
+   78 t[1] BFT012
+   79 t[1] BFT3
+   80 t[1] BFT4
+   81 t[1] BFT5
+   82 t[1] a5G
+   83 t[1] A5
+   84 t[1] sigma_fl
+   85 t[2] eps_N5_unif
+   86 t[1] CEexp
+   87 t[2] tau_c
+   88 t[1] a_p_ac
+   89 t[1] rho_band
+   90 t[1] a_sh
+   91 t[1] aprime_DX
+   92 t[2] eps_bg
+   93 t[2] g_DX
+   94 t[2] g_band
+   95 t[2] g_hole
+   96 t[2] g_star_SF
+   97 t[2] tau_sizes
+   98 t[2] theta0_SUP
+   99 t[2] theta_G
+  100 t[2] theta_eps
+  101 t[2] theta0_SQ4
+  102 t[2] tau_R
+  103 t[1] REGmin
+  104 t[2] theta_sharp_SQ
+  105 t[2] tau_flat
+  106 t[2] eta_flat
+  107 t[2] eps1
+  108 t[1] EX_first
+  109 t[1] CEcond
+  110 t[1] IkE
+  111 t[1] C_rho
+  112 t[2] eps_J_loc
+  113 t[2] eta_q
+  114 t[2] eps_loc
+  115 t[1] a_ret
+  116 t[2] gamma0
+  117 t[2] gamma
+  118 t[1] beta_p
+  119 t[2] g1_FLOW
+  120 t[2] t_pr
+  121 t[1] CLSmin
+  122 t[1] a_bad
+  123 t[1] a_cb
+  124 t[1] a_D
+  125 t[1] c_A
+  126 t[1] c_U
+  127 t[1] c_plus
+  128 t[1] b_D
+  129 t[1] b_n
+  130 t[1] c_f
+  131 t[1] B_0
+  132 t[1] c_B
+  133 t[3] kernel_seq
+  134 t[1] stage_consts
+  135 t[1] C_A
+  136 t[1] a_A
+  137 t[1] theta
+  138 t[1] a
+  139 t[1] c_sf
+  140 t[1] C_fc
+  141 t[1] lambda_star
+  142 t[1] C_ell
+  143 t[1] C_ellp
+  144 t[1] RLF3dis
+  145 t[1] C4
+  146 t[1] Kcompat
+  147 t[2] g2_CRC
+  148 t[2] g_3
+  149 t[2] g_c
+  150 t[2] n_H
+  151 t[2] n_sharp
+  152 t[1] C_H
+  153 t[2] W
+  154 t[1] SF_last
+  155 t[3] dbeta
+  156 t[3] V_LF
+  157 t[1] NA_empty
+  158 t[1] a_prime
+  159 t[3] eff_seq
+  160 t[3] eps_sharp
+  161 t[4] g0
+  162 t[3] R_g
+  163 t[3] K0_T1
+
+== D. order (live subgraph, all edges (SCCs condensed)): 150 position(s); validity re-check PASS
+    0 t[0] A_d
+    1 t[0] L
+    2 t[0] N
+    3 t[0] d
+    4 t[0] kappa0
+    5 t[0] kappa_RL
+    6 t[0] kappa_pm
+    7 t[0] m_ES1
+    8 t[0] n_1
+    9 t[0] n_int
+   10 t[0] p_L
+   11 t[0] q_M
+   12 t[0] theta_A
+   13 t[0] theta_src
+   14 t[0] alpha_BFT
+   15 t[0] theta_wc
+   16 t[0] theta_wr
+   17 t[1] A_cg
+   18 t[1] C0_BFT
+   19 t[1] C0_SQ
+   20 t[1] C3
+   21 t[1] C_Omega
+   22 t[1] C_fun
+   23 t[1] C_prime
+   24 t[1] C_r_SQ
+   25 t[1] E2F
+   26 t[1] E_0
+   27 t[1] F_sched
+   28 t[1] C_T
+   29 t[1] A0_SQ
+   30 t[1] G_inf
+   31 t[1] K_FP
+   32 t[1] LIF
+   33 t[1] MSSob
+   34 t[1] N_prime
+   35 t[1] R0
+   36 t[1] R
+   37 t[1] SC_k
+   38 t[1] C_p_RLF0
+   39 t[1] T0_BFT
+   40 t[1] b_1
+   41 t[1] beta0p
+   42 t[1] beta_m
+   43 t[1] c_LI
+   44 t[1] c_att
+   45 t[1] c_flat
+   46 t[1] c_pr
+   47 t[1] delta_0
+   48 t[1] gap0
+   49 t[1] kappa0_CE
+   50 t[1] kappa_d
+   51 t[1] lam_bg
+   52 t[1] m0_BFT
+   53 t[1] m_N5
+   54 t[1] q_RES
+   55 t[1] B0_SQ
+   56 t[1] C_D
+   57 t[1] C_err
+   58 t[1] rstar
+   59 t[1] C_Delta
+   60 t[1] alpha_star
+   61 t[1] S_prime
+   62 t[1] gamma_prime
+   63 t[1] R_star_N5
+   64 t[1] T0_N5
+   65 t[1] c_inf
+   66 t[1] C_bg
+   67 t[1] r_flat
+   68 t[1] C_flat_PR
+   69 t[1] sf_chain
+   70 t[1] theta_cb
+   71 t[2] eps0_BFT
+   72 t[2] eps_star_EPST
+   73 t[2] eps_star_N5
+   74 t[2] eps_br
+   75 t[2] g_FS1
+   76 t[2] n_J_star
+   77 t[2] rC_BFT
+   78 t[1] BFT012
+   79 t[1] BFT3
+   80 t[1] BFT4
+   81 t[1] BFT5
+   82 t[1] a5G
+   83 t[1] A5
+   84 t[1] sigma_fl
+   85 t[2] eps_N5_unif
+   86 t[1] CEexp
+   87 t[2] tau_c
+   88 t[1] a_p_ac
+   89 t[1] rho_band
+   90 t[1] a_sh
+   91 t[1] aprime_DX
+   92 t[2] eps_bg
+   93 t[2] g_DX
+   94 t[2] g_band
+   95 t[2] g_hole
+   96 t[2] g_star_SF
+   97 t[2] tau_sizes
+   98 t[2] theta0_SUP
+   99 t[2] theta_G
+  100 t[2] theta_eps
+  101 t[2] theta0_SQ4
+  102 t[2] tau_R
+  103 t[1] REGmin
+  104 t[2] theta_sharp_SQ
+  105 t[2] tau_flat
+  106 t[2] eta_flat
+  107 t[2] eps1
+  108 t[1] EX_first
+  109 t[1] CEcond
+  110 t[1] IkE
+  111 t[1] C_rho
+  112 t[1, 3] dbeta + eff_seq + kernel_seq + stage_consts
+  113 t[2] eps_J_loc
+  114 t[2] eta_q
+  115 t[2] eps_loc
+  116 t[1] a_ret
+  117 t[2] gamma0
+  118 t[2] gamma
+  119 t[1] beta_p
+  120 t[2] g1_FLOW
+  121 t[2] t_pr
+  122 t[1] CLSmin
+  123 t[1] a_bad
+  124 t[1] a_cb
+  125 t[1] a_D
+  126 t[1, 2] B_0 + a + a_A + b_D + c_A + c_B + c_U + c_f + c_plus + n_H + n_sharp + theta
+  127 t[1] C_A
+  128 t[1] b_n
+  129 t[1] c_sf
+  130 t[1] C_fc
+  131 t[1] lambda_star
+  132 t[1] C_ell
+  133 t[1] C_H
+  134 t[1] C_ellp
+  135 t[1] RLF3dis
+  136 t[1] C4
+  137 t[1] Kcompat
+  138 t[2] W
+  139 t[1] SF_last
+  140 t[2] g2_CRC
+  141 t[2] g_3
+  142 t[2] g_c
+  143 t[3] V_LF
+  144 t[1] NA_empty
+  145 t[1] a_prime
+  146 t[3] eps_sharp
+  147 t[4] g0
+  148 t[3] R_g
+  149 t[3] K0_T1
+
+== D. order (full graph, all edges (SCCs condensed)): 175 position(s); validity re-check PASS
+    0 t[0] A_d
+    1 t[0] L
+    2 t[0] N
+    3 t[0] d
+    4 t[0] kappa0
+    5 t[0] kappa_RL
+    6 t[0] kappa_pm
+    7 t[0] m_ES1
+    8 t[0] n_1
+    9 t[0] n_int
+   10 t[0] p_L
+   11 t[0] q_M
+   12 t[0] theta_A
+   13 t[0] theta_src
+   14 t[0] alpha_BFT
+   15 t[0] theta_wc
+   16 t[0] theta_wr
+   17 t[1] A_cg
+   18 t[1] A_inout
+   19 t[1] C0_BFT
+   20 t[1] C0_SQ
+   21 t[1] C3
+   22 t[1] C_Omega
+   23 t[1] C_fun
+   24 t[1] C_prime
+   25 t[1] C_r_SQ
+   26 t[1] E2F
+   27 t[1] E_0
+   28 t[1] F_sched
+   29 t[1] C_T
+   30 t[1] A0_SQ
+   31 t[1] G_inf
+   32 t[1] K_FP
+   33 t[1] K_bar
+   34 t[1] LIF
+   35 t[1] MSSob
+   36 t[1] NL4
+   37 t[1] N_prime
+   38 t[1] PLD_xS
+   39 t[1] R0
+   40 t[1] R
+   41 t[1] SC_k
+   42 t[1] C_p_RLF0
+   43 t[1] SDP_column
+   44 t[1] S_T
+   45 t[1] T0_BFT
+   46 t[1] U_M_pkg
+   47 t[1] U_Qstr
+   48 t[1] U_eps1_FLOW
+   49 t[1] U_eta_COF
+   50 t[1] U_m_norm
+   51 t[1] U_theta_w
+   52 t[1] a_sharp_v1
+   53 t[1] b_1
+   54 t[1] beta0p
+   55 t[1] beta_m
+   56 t[1] c_LI
+   57 t[1] c_RS_joint
+   58 t[1] c_att
+   59 t[1] c_flat
+   60 t[1] c_pr
+   61 t[1] delta_0
+   62 t[1] gap0
+   63 t[1] kappa0_CE
+   64 t[1] kappa_d
+   65 t[1] lam_bg
+   66 t[1] m0_BFT
+   67 t[1] m_N5
+   68 t[1] ell_theta
+   69 t[1] q0_NQ
+   70 t[1] N1_15
+   71 t[1] q_RES
+   72 t[1] B0_SQ
+   73 t[1] C_D
+   74 t[1] C_err
+   75 t[1] rstar
+   76 t[1] C_Delta
+   77 t[1] alpha_star
+   78 t[1] S_prime
+   79 t[1] gamma_prime
+   80 t[1] R_star_N5
+   81 t[1] T0_N5
+   82 t[1] c_inf
+   83 t[1] C_bg
+   84 t[1] r_flat
+   85 t[1] C_flat_PR
+   86 t[1] C_flat_i
+   87 t[1] C_theta
+   88 t[1] C_theta_i
+   89 t[1] sf_chain
+   90 t[1] theta_cb
+   91 t[2] eps0_BFT
+   92 t[2] eps_star_EPST
+   93 t[2] eps_star_N5
+   94 t[2] eps_br
+   95 t[2] eps_theta
+   96 t[2] eps_unif
+   97 t[2] g_FS1
+   98 t[2] n_J_star
+   99 t[2] rC_BFT
+  100 t[1] BFT012
+  101 t[1] BFT3
+  102 t[1] BFT4
+  103 t[1] BFT5
+  104 t[1] a5G
+  105 t[1] A5
+  106 t[1] sigma_fl
+  107 t[2] eps_N5_unif
+  108 t[1] CEexp
+  109 t[2] tau_c
+  110 t[1] a_p_ac
+  111 t[1] rho_band
+  112 t[1] a_sh
+  113 t[1] aprime_DX
+  114 t[2] eps_bg
+  115 t[2] g_DX
+  116 t[2] g_band
+  117 t[2] g_hole
+  118 t[2] g_star_SF
+  119 t[2] tau_sharp
+  120 t[2] tau_sizes
+  121 t[2] theta0_SUP
+  122 t[2] theta_G
+  123 t[2] theta_eps
+  124 t[2] theta0_SQ4
+  125 t[2] tau_R
+  126 t[1] REGmin
+  127 t[2] theta_sharp_SQ
+  128 t[2] tau_flat
+  129 t[2] eta_flat
+  130 t[2] eps1
+  131 t[1] EX_first
+  132 t[1] CEcond
+  133 t[1] IkE
+  134 t[1] C_rho
+  135 t[1, 3] dbeta + eff_seq + kernel_seq + stage_consts
+  136 t[2] eps_J_loc
+  137 t[2] eta_1
+  138 t[1] a_RS
+  139 t[2] eta_q
+  140 t[2] eps_loc
+  141 t[1] a_ret
+  142 t[2] gamma0
+  143 t[2] gamma
+  144 t[1] beta_p
+  145 t[2] g1_FLOW
+  146 t[2] t_pr
+  147 t[1] CLSmin
+  148 t[1] a_bad
+  149 t[1] a_cb
+  150 t[1] a_D
+  151 t[1, 2] B_0 + a + a_A + b_D + c_A + c_B + c_U + c_f + c_plus + n_H + n_sharp + theta
+  152 t[1] C_A
+  153 t[1] b_n
+  154 t[1] c_sf
+  155 t[1] C_fc
+  156 t[1] lambda_star
+  157 t[1] C_ell
+  158 t[1] C_H
+  159 t[1] C_ellp
+  160 t[1] RLF3dis
+  161 t[1] C4
+  162 t[1] Kcompat
+  163 t[2] W
+  164 t[1] SF_last
+  165 t[2] g2_CRC
+  166 t[2] g_3
+  167 t[2] g_c
+  168 t[3] V_LF
+  169 t[1] NA_empty
+  170 t[1] a_prime
+  171 t[3] eps_sharp
+  172 t[4] g0
+  173 t[3] R_g
+  174 t[3] K0_T1
+
+== volume behaviour as stated by the sources (informational 'vol' field):
+  [live      ] t0 A_d              n/a
+  [live      ] t0 L                n/a
+  [live      ] t0 N                n/a
+  [live      ] t0 alpha_BFT        n/a
+  [live      ] t0 d                n/a
+  [live      ] t0 kappa0           n/a
+  [live      ] t0 kappa_RL         n/a
+  [live      ] t0 kappa_pm         n/a
+  [live      ] t0 m_ES1            n/a
+  [live      ] t0 n_1              n/a
+  [live      ] t0 n_int            n/a
+  [live      ] t0 p_L              n/a
+  [live      ] t0 q_M              n/a
+  [live      ] t0 theta_A          n/a
+  [live      ] t0 theta_src        n/a
+  [live      ] t0 theta_wc         n/a
+  [live      ] t0 theta_wr         n/a
+  [live      ] t1 A0_SQ            depth-uniform
+  [live      ] t1 A5               unstated
+  [live      ] t1 A_cg             controls V_c on B_{3R/4−3}
+  [live      ] t1 B0_SQ            n/a
+  [live      ] t1 BFT012           target uniform in k and T ≥ T_0
+  [live      ] t1 BFT3             target uniform in k and T ≥ T_0
+  [live      ] t1 BFT4             target uniform in k and T ≥ T_0
+  [live      ] t1 BFT5             target uniform in k and T; clause (b) CONDITIONAL on (CO-fun)
+  [live      ] t1 B_0              'the same at every level'
+  [live      ] t1 C0_BFT           as ε_0
+  [live      ] t1 C0_SQ            n/a
+  [live      ] t1 C3               n/a
+  [live      ] t1 C4               REQUIRED volume- and K-uniform; no source proves it
+  [live      ] t1 CEcond           unstated
+  [live      ] t1 CEexp            'level-uniform' required; (L-loc)_k needs all-order decay beyond BFT-3
+  [live      ] t1 CLSmin           depth-uniform (SQ)
+  [live      ] t1 C_A              required independent of K, T, k and the law; n_♯-uniformity not listed
+  [live      ] t1 C_D              depth-uniform
+  [live      ] t1 C_Delta          n/a (local)
+  [live      ] t1 C_H              K-, T-independent constant (multiplies |T|: extensive bound)
+  [live      ] t1 C_Omega          n/a
+  [live      ] t1 C_T              'on a 4D lattice torus (or on Z⁴)'
+  [live      ] t1 C_bg             as 𝔠_∞
+  [live      ] t1 C_ell            'the same at every level' (RLARGE l.545)
+  [live      ] t1 C_ellp           as C_ℓ
+  [live      ] t1 C_err            n/a
+  [live      ] t1 C_fc             'the same constant at every level'
+  [live      ] t1 C_flat_PR        n/a (local)
+  [live      ] t1 C_fun            T-uniform; NOT k-uniform
+  [live      ] t1 C_p_RLF0         unstated
+  [live      ] t1 C_prime          n/a
+  [live      ] t1 C_r_SQ           uniformly in k
+  [live      ] t1 C_rho            unstated (a node-A output)
+  [live      ] t1 E2F              'independent of g ≤ g_0, k, K, T' asserted
+  [live      ] t1 EX_first         n does not depend on g
+  [live      ] t1 E_0              asserted independent of g, k, K, T (hypothesis)
+  [live      ] t1 F_sched          sup over the ball radius R is finite (asymptote 16/α²)
+  [live      ] t1 G_inf            'every background, frozen holes too'
+  [live      ] t1 IkE              hypothesis: 'all constants (E_0, κ_p, α_E, C_ℓ, B_0) independent of g, k, K, T and 𝔥'
+  [live      ] t1 K_FP             n/a
+  [live      ] t1 Kcompat          g-independent apart from ρ
+  [live      ] t1 LIF              unstated
+  [live      ] t1 MSSob            unstated
+  [live      ] t1 NA_empty         'uniformly in K' required
+  [live      ] t1 N_prime          unstated (a weighted norm of Õ^{1/2})
+  [live      ] t1 R                stated: does not depend on K or on the torus
+  [live      ] t1 R0               stated K- and torus-free (F-tune)
+  [live      ] t1 REGmin           depth-uniform; 'any T with level-k side ≥ 3'
+  [live      ] t1 RLF3dis          'prefactor-free' and g-scaled thresholds demanded by (MOM_4); not stated by layer 1
+  [live      ] t1 R_star_N5        n/a
+  [live      ] t1 SC_k             unstated
+  [live      ] t1 SF_last          wrap levels K-independent (K16)
+  [live      ] t1 S_prime          n/a
+  [live      ] t1 T0_BFT           lower bound on T only
+  [live      ] t1 T0_N5            lower bound on T only; N5-sf0 holds 'uniformly in k … and T ≥ T_0'
+  [live      ] t1 a                as its inputs; U1 open (a_A unfixed)
+  [live      ] t1 a5G              as BFT
+  [live      ] t1 a_A              required independent of K, T, k and the law (HW §18.1); n_♯-uniformity not listed
+  [live      ] t1 a_D              as inputs
+  [live      ] t1 a_bad            as ε_1, c_pr, t_pr
+  [live      ] t1 a_cb             as inputs
+  [live      ] t1 a_p_ac           as τ_c
+  [live      ] t1 a_prime          n/a
+  [live      ] t1 a_ret            per cube, on the chart; 'Levels k ≥ 1 need σ_fl at level k (N5 level-uniformity, BFT)'
+  [live      ] t1 a_sh             a fixed R_sh-neighbourhood: g- and T-independent (needs a torus larger than it)
+  [live      ] t1 alpha_star       n/a
+  [live      ] t1 aprime_DX        n/a
+  [live      ] t1 b_1              n/a
+  [live      ] t1 b_D              n/a
+  [live      ] t1 b_n              n/a
+  [live      ] t1 beta0p           infinite-volume β (Def F-g, (SF-∞))
+  [live      ] t1 beta_m           stated K/T-free
+  [live      ] t1 beta_p           stated K/T-free
+  [live      ] t1 c_A              required independent of K, T, k and the law; n_♯-uniformity not listed
+  [live      ] t1 c_B              n/a
+  [live      ] t1 c_LI             unstated
+  [live      ] t1 c_U              n/a
+  [live      ] t1 c_att            n/a
+  [live      ] t1 c_f              as c_+
+  [live      ] t1 c_flat           n/a
+  [live      ] t1 c_inf            'on tori T ≥ T_0' (CI-bg); level 0 only — 'the level-1 𝔠_∞^{(1)} is not covered'
+  [live      ] t1 c_plus           as c_A
+  [live      ] t1 c_pr             depth-uniform (SQ)
+  [live      ] t1 c_sf             required 'uniformly under conditioning'; K/T unstated
+  [live      ] t1 delta_0          n/a
+  [live      ] t1 gamma_prime      n/a
+  [live      ] t1 gap0             'on every torus, compressions included'
+  [live      ] t1 kappa0_CE        n/a
+  [live      ] t1 kappa_d          K-, T-independent (RLF v3 statement)
+  [live      ] t1 lam_bg           on tori T ≥ T_0 (CI-bg)
+  [live      ] t1 lambda_star      bounded by 12θ under g_K² ≤ 1/(2R)
+  [live      ] t1 m0_BFT           as ε_0
+  [live      ] t1 m_N5             n/a
+  [live      ] t1 q_RES            n/a
+  [live      ] t1 r_flat           n/a (local)
+  [live      ] t1 rho_band         as τ_c
+  [live      ] t1 rstar            n/a (local)
+  [live      ] t1 sf_chain         g-independent and volume-independent
+  [live      ] t1 sigma_fl         level 0 certified; level k ≥ 1 needs BFT
+  [live      ] t1 stage_consts     unstated
+  [live      ] t1 theta            g/K/T-independent constant
+  [live      ] t1 theta_cb         n/a
+  [live      ] t2 W                K-independent; ≈ 184 wrap levels (§5.4 [hand])
+  [live      ] t2 eps0_BFT         claimed for every k ≥ 1 and every torus with level-k side ≥ T_0 (OPEN)
+  [live      ] t2 eps1             g-, K-, T-independent (a fixed threshold)
+  [live      ] t2 eps_J_loc        as ε_1
+  [live      ] t2 eps_N5_unif      K-uniform only under BFT; per-level route GAP (CURV-F2′, CURV-F2″)
+  [live      ] t2 eps_bg           as τ_c
+  [live      ] t2 eps_br           'Let T ≥ T_0' (lower bound only)
+  [live      ] t2 eps_loc          as ε_1
+  [live      ] t2 eps_star_EPST    'on a 4D lattice torus (or on Z⁴)'; scale-invariant in R
+  [live      ] t2 eps_star_N5      uniform in T ≥ T_0 (stated)
+  [live      ] t2 eta_flat         depth-uniform
+  [live      ] t2 eta_q            as ε_1
+  [live      ] t2 g1_FLOW          stated K/T-free
+  [live      ] t2 g2_CRC           g-independent ceiling
+  [live      ] t2 g_3              g-independent
+  [live      ] t2 g_DX             g-independent; per deep block
+  [live      ] t2 g_FS1            g-independent
+  [live      ] t2 g_band           g-independent
+  [live      ] t2 g_c              unstated
+  [live      ] t2 g_hole           g-independent
+  [live      ] t2 g_star_SF        g-, T-independent
+  [live      ] t2 gamma            stated K/T-free
+  [live      ] t2 gamma0           g-independent (RLARGE l.198); K/T: as its inputs
+  [live      ] t2 n_H              K-, g-independent (RLARGE §5.4 'Every row is K-independent')
+  [live      ] t2 n_J_star         n/a
+  [live      ] t2 n_sharp          K-independent
+  [live      ] t2 rC_BFT           as ε_0
+  [live      ] t2 t_pr             depth-uniform (SQ)
+  [live      ] t2 tau_R            n/a
+  [live      ] t2 tau_c            'g-independent and volume-independent' (SF s5 F2 chain)
+  [live      ] t2 tau_flat         depth-uniform
+  [live      ] t2 tau_sizes        n/a
+  [live      ] t2 theta0_SQ4       depth-uniform
+  [live      ] t2 theta0_SUP       n/a
+  [live      ] t2 theta_G          'depth-independent'
+  [live      ] t2 theta_eps        n/a
+  [live      ] t2 theta_sharp_SQ   n/a
+  [live      ] t3 K0_T1            lower bounds only: 'every hypercubic torus of side T ≥ T_1(R)'
+  [live      ] t3 R_g              n/a
+  [live      ] t3 V_LF             extensive in |T| and divergent in K BY DESIGN
+  [live      ] t3 dbeta            UNSTATED: 'infinite-volume numbers' asserted, torus-independence above the wrap levels unproven (K9/U5)
+  [live      ] t3 eff_seq          infinite-volume β by definition (FLOW Def F-g)
+  [live      ] t3 eps_sharp        → 0 as g_K → 0 at fixed n_♯
+  [live      ] t3 kernel_seq       n/a
+  [live      ] t4 g0               claimed independent of g, K, T (RLF v3 statement)
+  [off       ] t1 A_inout          n/a
+  [off       ] t1 C_flat_i         per level
+  [off       ] t1 C_theta          level 0/1; level-uniform form ⇐ BFT-4 (REVIEW_S22)
+  [off       ] t1 C_theta_i        per level
+  [off       ] t1 K_bar            grows with T toward the smooth value ≈ 1/9 (measured)
+  [off       ] t1 N1_15            k-uniform; T-uniform via TU-6 (CONFIRMED w/ repairs); NL-4 route ∝ T^{d+2}; no live consumer (NQ_DEF §D5.4, REVIEW55_NORMS F8)
+  [off       ] t1 PLD_xS           per level
+  [off       ] t1 SDP_column       per level
+  [off       ] t1 a_RS             n/a
+  [off       ] t1 c_RS_joint       n/a
+  [off       ] t1 ell_theta        'T ≥ ℓ_θ + 1' (lower bound)
+  [off       ] t1 q0_NQ            uniform in j, k, T (any m consecutive levels)
+  [off       ] t2 eps_theta        'T ≥ ℓ_θ + 1' (lower bound)
+  [off       ] t2 eps_unif         per level
+  [off       ] t2 eta_1            n/a
+  [off       ] t2 tau_sharp        as τ_c
+  [superseded] t1 NL4              fixed coarse side only
+  [superseded] t1 S_T              grows like log T
+  [superseded] t1 a_sharp_v1       n/a
+  [unplaced  ] t1 U_M_pkg          'uniformly in k ≥ 1, T'
+  [unplaced  ] t1 U_Qstr           n/a
+  [unplaced  ] t1 U_eps1_FLOW      n/a
+  [unplaced  ] t1 U_eta_COF        n/a
+  [unplaced  ] t1 U_m_norm         n/a
+  [unplaced  ] t1 U_theta_w        n/a
+
+====================================================================================================
+CONTROLS
+====================================================================================================
+C1 B-all: SCC containing g0 and eps1: yes; cycle through the injected edge: eps1 -> ... -> g0 -> eps1 (4 edges)
+    eps1 -> IkE  [def]  HIST.md: "α_E ≥ c·ε_1 (a g-INDEPENDENT radius: the whole ε_1-domain)"
+    IkE -> C_A  [req]  RLARGE.md: "(SDP)^A ⇐ (I_{k-1}^E)''(d'') + (CLS-min) + (W1-ret'^J)_{k-1}(c) + (SC)_{k-1} [A/PLD, s-P] + I-tay^J [R/HIST, s]"
+    C_A -> g0  [le]  HW.md: "holds once a_A/g_K² ≥ a/g_K² exceeds log(2Δ_ρ²C_A) + a_AR + c_+c_att"
+    g0 -> eps1  [le]  INJECTED
+C1 B-strict: SCC containing g0 and eps1: yes; cycle through the injected edge: eps1 -> ... -> g0 -> eps1 (4 edges)
+    eps1 -> IkE  [def]  HIST.md: "α_E ≥ c·ε_1 (a g-INDEPENDENT radius: the whole ε_1-domain)"
+    IkE -> C_A  [req]  RLARGE.md: "(SDP)^A ⇐ (I_{k-1}^E)''(d'') + (CLS-min) + (W1-ret'^J)_{k-1}(c) + (SC)_{k-1} [A/PLD, s-P] + I-tay^J [R/HIST, s]"
+    C_A -> g0  [le]  HW.md: "holds once a_A/g_K² ≥ a/g_K² exceeds log(2Δ_ρ²C_A) + a_AR + c_+c_att"
+    g0 -> eps1  [le]  INJECTED
+C1 (pre-condition: strict path eps1 -> g0 exists in the real graph: yes) -> FIRES (as designed)
+C2: seed kappa_pm (tier 0) tagged K (INJECTED); sink g0 TAINTED via kappa_pm -> A0_SQ -> C_D -> REGmin -> CLSmin -> C_A -> g0 -> FIRES (as designed)
+C3: schema on a graph with a dangling edge -> FAIL (as designed): ['edge#353 eps1->ZZZ_nonexistent: dst not a node']
+C4: null control: SCCs []; order ['a', 'b', 'c', 'd', 'e', 'f'] (expected ['a', 'b', 'c', 'd', 'e', 'f']) -> PASS (as designed)
+C5: positive control: nontrivial SCCs [['a', 'b', 'c']] (expected [['a', 'b', 'c']]) -> FIRES (as designed)
+C6: absorb control: x tainted True, y tainted False -> PASS (as designed)
+C7: string audit with edge#0's string replaced -> FAIL on exactly that record (as designed): [('edge#0 beta0p->beta_m', 'FLOW.md', 'ZZZ-NOT-IN-ANY-FILE-dag55', 'MISS')]
+
+CONTROLS: {'C1': True, 'C2': True, 'C3': True, 'C4': True, 'C5': True, 'C6': True, 'C7': True} -> checker ABLE TO DECIDE
+
+====================================================================================================
+FINAL: checker ABLE TO DECIDE; DAG-F1 FOUND (B-all), NOT FOUND (B-strict); DAG-F2 FOUND (live seeds ['C_fun', 'V_LF']).

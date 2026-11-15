@@ -1,0 +1,7 @@
+B0: theta^2 coefficients 1/4 1/4 True
+B1: difference 0 True | B1-F (u=1/g^2) difference nonzero: True
+B2: difference 0 True
+B3: Theta/e = -11*N**2/(24*pi**2) True
+B4: True
+RESULTS: {'B0': True, 'B1': True, 'B1-F': True, 'B2': True, 'B3': True, 'B4': True}
+VERDICT: PASS

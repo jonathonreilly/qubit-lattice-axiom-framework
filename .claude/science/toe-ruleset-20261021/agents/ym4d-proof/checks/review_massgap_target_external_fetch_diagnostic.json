@@ -1,0 +1,16 @@
+{
+  "prior_fetch_diagnostic": "System Python trust roots lacked the issuer; initial failure record remains unchanged. This diagnostic uses the installed certifi trust store, with TLS verification retained.",
+  "sources": [
+    {
+      "bytes": 195976,
+      "read_scope": "Primary sections 3 and 4, PDF pages 5 and 6; web extracted lines 178\u2013225. No claim of complete PDF reading.",
+      "sha256": "3558403ca14c11e382f73a09e548222708540bfdf478cf96aa11c52d43e23e09",
+      "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf"
+    },
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+    }
+  ],
+  "utc": "2026-10-29T14:33:07.707497+00:00"
+}

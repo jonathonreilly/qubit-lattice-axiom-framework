@@ -1,0 +1,363 @@
+{
+  "created_utc": "2026-10-29T20:38:59.588859+00:00",
+  "criteria_sha256": "e159322586c475e9ee2a16a599f0e935a1d1deae1c696b8cbecb003570c9cdeb",
+  "script_sha256": "09ed5d5104fb8fc76bfadc1a659a4ec1058d33c0047a3ce8bff9d8fd3b28d180",
+  "independent_oracle": {
+    "binding": {
+      "source_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_check.py",
+      "base_source_sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+      "compiled_source_sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+      "substitution": null,
+      "execution": "Exact function definitions compiled; main() invoked. Only the I/O footer is skipped."
+    },
+    "counts": {
+      "connected_graphs": 44,
+      "full_norm_comparisons": 646,
+      "saturated_inputs": 5220,
+      "cycle_permutation_coefficient_cases": 72,
+      "path_permutations": 6
+    },
+    "discriminating_oracle_comparisons": {
+      "roots_only": 278,
+      "weight_only": 558,
+      "both_active": 558
+    },
+    "asymmetric_paths": [
+      {
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "root_sums": {
+          "0": "4/3",
+          "1": "44/15",
+          "2": "8/5"
+        }
+      },
+      {
+        "order": [
+          0,
+          2,
+          1
+        ],
+        "root_sums": {
+          "0": "4/3",
+          "1": "8/5",
+          "2": "44/15"
+        }
+      },
+      {
+        "order": [
+          1,
+          0,
+          2
+        ],
+        "root_sums": {
+          "0": "44/15",
+          "1": "4/3",
+          "2": "8/5"
+        }
+      },
+      {
+        "order": [
+          1,
+          2,
+          0
+        ],
+        "root_sums": {
+          "0": "8/5",
+          "1": "4/3",
+          "2": "44/15"
+        }
+      },
+      {
+        "order": [
+          2,
+          0,
+          1
+        ],
+        "root_sums": {
+          "0": "44/15",
+          "1": "8/5",
+          "2": "4/3"
+        }
+      },
+      {
+        "order": [
+          2,
+          1,
+          0
+        ],
+        "root_sums": {
+          "0": "8/5",
+          "1": "44/15",
+          "2": "4/3"
+        }
+      }
+    ],
+    "resources": [
+      {
+        "where": "independent set oracle: start",
+        "max_rss_bytes": 24788992,
+        "load_averages": [
+          2.7216796875,
+          2.38232421875,
+          2.2900390625
+        ],
+        "memory_free_percent": 57,
+        "nice": 10,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.0027355420170351863
+      },
+      {
+        "where": "independent graph 10",
+        "max_rss_bytes": 24788992,
+        "load_averages": [
+          2.7216796875,
+          2.38232421875,
+          2.2900390625
+        ],
+        "memory_free_percent": 57,
+        "nice": 10,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.008224125020205975
+      },
+      {
+        "where": "independent graph 20",
+        "max_rss_bytes": 24788992,
+        "load_averages": [
+          2.7216796875,
+          2.38232421875,
+          2.2900390625
+        ],
+        "memory_free_percent": 57,
+        "nice": 10,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.019481042050756514
+      },
+      {
+        "where": "independent graph 30",
+        "max_rss_bytes": 24788992,
+        "load_averages": [
+          2.7216796875,
+          2.38232421875,
+          2.2900390625
+        ],
+        "memory_free_percent": 57,
+        "nice": 10,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.03057070804061368
+      },
+      {
+        "where": "independent graph 40",
+        "max_rss_bytes": 24788992,
+        "load_averages": [
+          2.7216796875,
+          2.38232421875,
+          2.2900390625
+        ],
+        "memory_free_percent": 57,
+        "nice": 10,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.041937667003367096
+      },
+      {
+        "where": "independent set oracle: completion",
+        "max_rss_bytes": 24788992,
+        "load_averages": [
+          2.7216796875,
+          2.38232421875,
+          2.2900390625
+        ],
+        "memory_free_percent": 57,
+        "nice": 10,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.05061591701814905
+      }
+    ],
+    "limits": "Finite implementation checks only; no whole-library theorem rereview."
+  },
+  "source_executions": [
+    {
+      "case": "baseline",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_check.py",
+        "--child",
+        "baseline"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_assertion": null,
+      "actual_reason": null,
+      "expected_outcome_observed": true,
+      "compiled_source_sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+      "stdout_sha256": "819b93b7bca2dfd429ef7cb8f712df91b265959c59b6765d4401477f64cfaa5e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "original_active",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_check.py",
+        "--child",
+        "original_active"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_assertion": null,
+      "actual_reason": null,
+      "expected_outcome_observed": true,
+      "compiled_source_sha256": "518b6958f306bf572e55c8ec1774f30c4d0578c9e96dfca3535acab78903d5b3",
+      "stdout_sha256": "3aa170598e016678ca24473ec7cbebf56549bd45aa1885dd6b30af2d24c11cd6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "both_active",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_check.py",
+        "--child",
+        "both_active"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_assertion": "exact_cycle_output_full_norm",
+      "actual_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "expected_outcome_observed": true,
+      "compiled_source_sha256": "21103c0dac0bb43ee4a03d3a68ed0a4252640c3d1af3461c0e99d8315f0dec66",
+      "stdout_sha256": "a1076572cd45dbeba2093ba6ae6342a254bc01447993e885c626f91e7dd0a156",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "roots_active",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_check.py",
+        "--child",
+        "roots_active"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_assertion": "exact_inactive_root_output_full_norm",
+      "actual_reason": "AssertionError('exact_inactive_root_output_full_norm')",
+      "expected_outcome_observed": true,
+      "compiled_source_sha256": "d97626ec5e80f0b4cbd314a56f5c17e487f27b4a48b4f5e9bcf01198ab9a7b02",
+      "stdout_sha256": "453698f6a3dcf3c732b3c20a89d161445ff8932fb8bc5fb2cb37b301530d524d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "weight_active",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_check.py",
+        "--child",
+        "weight_active"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_assertion": "exact_cycle_output_full_norm",
+      "actual_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "expected_outcome_observed": true,
+      "compiled_source_sha256": "c1efe80a09bc99f5da21e2570135d85c6b0130c9b0a78c94e5caeec2af85f529",
+      "stdout_sha256": "53b66917a14541560545830a61f04f357c3eaa57d38881cbbc708261b477e9e4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "unchanged_original_predicate_counts": {
+    "polynomial_identity_with_inactive_remainder": 2187,
+    "active_norm_contraction": 2187,
+    "bounded_hole_full_norm": 2184,
+    "rooted_entropy_bound": 576,
+    "two_closure_algorithms": 36873,
+    "new_polymer_class": 36873,
+    "containment_and_active_identity": 36873,
+    "ambient_tree_monotonicity": 36873,
+    "all_original_monomial_sources_retained": 36873,
+    "pointwise_decay_bound": 8972,
+    "no_hole_identity": 3,
+    "native_4d_closure": 6288,
+    "native_4d_geometry": 6288,
+    "native_4d_tree": 6288,
+    "mutation_setup_full_hole": 1,
+    "mutation_rejected_drop_inactive_remainder": 1,
+    "mutation_rejected_erase_inactive_source": 1,
+    "mutation_rejected_fill_intersected_only": 1,
+    "mutation_rejected_identify_active_and_full_norms": 1
+  },
+  "added_exact_predicates": {
+    "exact_cycle_input_full_norm": 1,
+    "exact_cycle_output_full_norm": 1,
+    "exact_cycle_output_active_norm": 1,
+    "exact_overlap_supports": 1,
+    "exact_inactive_root_output_full_norm": 1,
+    "exact_overlap_output_active_norm": 1,
+    "exact_overlap_active_roots_full_weight": 1
+  },
+  "resource_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "all_expected_outcomes": true
+}

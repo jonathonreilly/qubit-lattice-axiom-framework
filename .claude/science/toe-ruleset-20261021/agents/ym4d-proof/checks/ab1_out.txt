@@ -1,0 +1,80 @@
+==============================================================================
+ab1 — T55-M margins. Exact rationals. Criteria: checks/ab1_criteria.md
+==============================================================================
+
+(A1) a_RS at eps_1=6.7e-40 : 5.931360E-166
+     SYMBOLS l.356 ledger    : 5.931360E-166
+     |delta| = 0.000000 decades  -> PASS
+
+(A2) which branch attains the min in a_RS?
+     6.7e-40  (RLARGE l.72, headline)   plaq=5.931360E-166 kern=8.767578E-82  -> plaquette
+     8.95e-40 (RLARGE l.611)            plaq=1.888631E-165 kern=1.564502E-81  -> plaquette
+     9.52e-40 (RLARGE l.71)             plaq=2.417703E-165 kern=1.770125E-81  -> plaquette
+     1.27e-39 (RLARGE l.611)            plaq=7.657199E-165 kern=3.150195E-81  -> plaquette
+     -> PASS
+
+(A3) RS-lin per-cube = min(eta_q^2/2N, k*eps^2/1024N)/81 = 6.524987E-89
+     [S25-CLAIM] 6.525e-89 ; |delta| = 0.000001 decades -> PASS
+     (RS-lin min attained by: plaquette)
+
+(A4) gain over a_RS/625 = 79.83731 decades ; [S25-CLAIM] 79.84 ; |delta| = 0.00269 -> PASS
+
+(A5) RS-lin ceiling vs DX' (C_Omega=1) = +61.41664 ; [S25-CLAIM] +61.42 ; |delta| = 0.00336 -> PASS
+
+(A6) a_RS ceiling vs DX' (C_Omega=1) = -15.62479 ; PROOF l.71-73 -15.62 ; |delta| = 0.00479 -> PASS
+     with c_RS=625: -18.42067  (ARS_FIX's -18.41 pair)
+
+(A7) LIVE exponent a = theta*c_pr*eps^2 = 1.040415E-86  (RLARGE l.612 says ~1.0e-86)
+     a/10^2 vs DX' = +63.61927 decades -> l.618 is TRUE at a  -> PASS
+
+(A8) C_Omega at which the a_RS breach reverses = 4.214885E+15
+     [S25-CLAIM] 4.14e15 ; |delta| = 0.00779 decades -> PASS
+
+(A9) decomposition of (A4):
+     log10(eta_q/eta_1)^2 = 78.94991   [HIST l.181 predicts log10(4/eps^2) = 78.94991, |delta|=0.000000]
+     log10(625/81)        = 0.88739
+     sum                  = 79.83731 vs (A4) 79.83731, |delta|=0.000000 -> PASS
+
+(A10) spread over the four live eps_1 (defect 2):
+     eps_1                                (A4) gain  (A5) RSlin-DX  (A6) aRS-DX   (A7) a-DX
+     6.7e-40  (RLARGE l.72, headline)      +79.8373       +61.4166     -15.6248    +63.6193
+     8.95e-40 (RLARGE l.611)               +79.5858       +61.6681     -15.1218    +63.8708
+     9.52e-40 (RLARGE l.71)                +79.5322       +61.7218     -15.0145    +63.9244
+     1.27e-39 (RLARGE l.611)               +79.2818       +61.9721     -14.5139    +64.1747
+     signs constant across spread -> PASS
+
+------------------------------------------------------------------------------
+DESIGNED-FAIL CONTROLS (each MUST fail)
+------------------------------------------------------------------------------
+
+(C-F1) eta_q -> eta_1 : gain = 0.88739 decades (pre-registered: 0.888, NOT 79.84)
+       does it pass (A4)'s threshold? False  -> control FAILED as designed
+
+(C-F2) 'a_RS's min is the kernel branch' : False  -> control FAILED as designed
+
+(C-F3) (A7) run with a_RS in place of a : clears DX'? False  -> control FAILED as designed
+
+(C-F4) (A1) at eps_1 = 0.5 : a_RS = 1.839650E-10, matches ledger? False
+       -> control FAILED as designed
+
+------------------------------------------------------------------------------
+POST-HOC (not pre-registered; reported as post-hoc)
+------------------------------------------------------------------------------
+  live a vs RS-lin per-cube : log10(a / RS-lin) = +2.20263 decades
+  i.e. the LIVE route's exponent is BETTER than RS-lin's joint-route per-cube value
+  eta_1 = 4.870877E-83  eta_q = 1.453993E-43  (delta_0/9 cap binds? False)
+  a_bad = c_pr*eps^2 = 2.496996E-85  (RLARGE l.93 says ~2.5e-85)
+
+==============================================================================
+  A1   PASS
+  A2   PASS
+  A3   PASS
+  A4   PASS
+  A5   PASS
+  A6   PASS
+  A7   PASS
+  A8   PASS
+  A9   PASS
+  A10  PASS
+  CONTROLS all failed as designed: True
+==============================================================================

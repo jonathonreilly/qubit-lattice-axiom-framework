@@ -1,0 +1,184 @@
+{
+  "schema": "uniform-soft-minimizer-author-receipt-v1",
+  "frozen_utc": "2026-10-29T17:42:14.397559+00:00",
+  "author_task": "/root/uniform_soft_minimizer",
+  "author_scope": "FC19 with theta=L^-2 for the actual normalized d=4 S4-prime soft chain, and the neutral FC20 quartic consequence",
+  "independent_review_status": "pending",
+  "audit_status": "not asserted; authority remains with independent audit",
+  "note": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4"
+  },
+  "input_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_inputs.json",
+    "sha256": "e61933a28ea8538a6e596ffa7e188bf6f0b107a49cb68a83f25713b970b0ea8f"
+  },
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+      "bytes": 26375
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+      "sha256": "4fa4a16746a0d7cb2d6c73416a8077d984015723278108372a48a4d3c311650d",
+      "bytes": 13513
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_out.json",
+      "sha256": "6fd353bfef9de4406ba80163bcf0f3310b5b38caf3cdbe8c1ae948f2f7a5a2b1",
+      "bytes": 11721
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_criteria.md",
+      "sha256": "c3df93a5846c19d7f3af56dcda74fc9fdb350648c7deca161642fe8000ccdf85",
+      "bytes": 2717
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_out.json",
+      "sha256": "1531629d3c38b51e94a6082eff1f9fae7c4aef9e4cb18515ee428ce30ca89f07",
+      "bytes": 6281
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_out.json",
+      "sha256": "14fc01ec85f2bb5d6acd7d50b4b02e14a8402e1b53abf98ce976a16f7949d2a5",
+      "bytes": 5798
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02.py",
+      "sha256": "7aa7442b3f29606b3c076a9e6f6bde39b3f344d4905f8ee39217767980806421",
+      "bytes": 4350
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_criteria.md",
+      "sha256": "6b476964c0bd01e8a012ff60955a0e5005eeb0d1707eda3498613536b31a1e41",
+      "bytes": 1713
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_out.json",
+      "sha256": "f69616b6011206d82e46081803bfe61f6d2cf289e4db0861dd67988947dc727e",
+      "bytes": 6679
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_inputs.json",
+      "sha256": "e61933a28ea8538a6e596ffa7e188bf6f0b107a49cb68a83f25713b970b0ea8f",
+      "bytes": 10796
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources.json",
+      "sha256": "241065b085afc90c1833cf76b23b51fd3f71f5dc429c9bc72cda18bb7eb1ee8b",
+      "bytes": 615
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources02.json",
+      "sha256": "d0c52e176064badd40eab464d9854656a82df94c6bc78b378c0d9aef129231bf",
+      "bytes": 1331
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    }
+  ],
+  "executions": [
+    {
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+      "arguments": "--mode bloch",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_err.txt",
+      "exit_code": 0,
+      "runs": 1,
+      "passed": 81,
+      "total": 81,
+      "elapsed_seconds": 2.879215717315674,
+      "finite_test_scope": "Finite checks and explicit sufficient inequalities; no numerical proof of depth uniformity",
+      "code_preserved_after_execution": true
+    },
+    {
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+      "arguments": "--mode periodic",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_err.txt",
+      "exit_code": 0,
+      "runs": 1,
+      "passed": 62,
+      "total": 62,
+      "elapsed_seconds": 0.5854551792144775,
+      "finite_test_scope": "Finite checks and explicit sufficient inequalities; no numerical proof of depth uniformity",
+      "code_preserved_after_execution": true
+    },
+    {
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+      "arguments": "--mode strip",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_err.txt",
+      "exit_code": 0,
+      "runs": 1,
+      "passed": 64,
+      "total": 64,
+      "elapsed_seconds": 3.409385681152344e-05,
+      "finite_test_scope": "Finite checks and explicit sufficient inequalities; no numerical proof of depth uniformity",
+      "code_preserved_after_execution": true
+    },
+    {
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02.py",
+      "arguments": "",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_err.txt",
+      "exit_code": 0,
+      "runs": 1,
+      "passed": 53,
+      "total": 53,
+      "elapsed_seconds": 3.705963134765625,
+      "finite_test_scope": "Exact d=4 L=3 path fillings and disclosed post-run density mutation; finite support for the general proof",
+      "code_preserved_after_execution": true
+    }
+  ],
+  "independence_limits": [
+    "Program01 imports no predecessor/reviewer helpers and constructs actual S4-prime contours independently, but it is author-run evidence and not an independent review.",
+    "Its first 56 path predicates repeat in all three modes; 81+62+64 are invocation counts, not 207 independent controls.",
+    "Program02 exact filling construction is separate from the prior dual and minimizer formulas; its density mutation selected one saved result after observing it. This exposure was declared before Program02 execution.",
+    "Finite-depth floating-point solves and strip arithmetic do not establish an all-depth theorem. Uniformity is proved analytically; integer surface-boundary checks are exact."
+  ],
+  "preserved_failures": [
+    "Initial system-CA arXiv download failed and is preserved in uniform_soft_minimizer_primary_sources.json; verified certifi TLS retrieval succeeded in the second record.",
+    "Incorrect endpoint, dimension/length scale, counting adjoint, output density, oversized sufficient strip, missing plaquette and uncurled quartic mutations are explicitly rejected. An oversized-strip rejection is not a proved pole."
+  ],
+  "mechanical_checks": {
+    "python_ast_parse": "passed for both programs",
+    "all_json_parse": "passed for owned JSON files",
+    "local_note_links": "all targets present at freeze",
+    "consumed_source_hashes": "all nine match input manifest",
+    "vocabulary": "zero violations in scoped note/criteria run"
+  },
+  "remains_open": [
+    "Full-colour charged cubic-source exchange and finite-part increment producer",
+    "Nonlinear complex-neighborhood stability and source derivatives",
+    "Conditional fluctuation covariance/inverse localization",
+    "Interacting multiscale RG and source/sea estimates",
+    "Continuum OS existence/reconstruction and physical Hamiltonian mass gap"
+  ],
+  "no_git_or_audit_mutations_by_worker": true,
+  "third_party_full_documents": "PDFs/text remain only in /tmp; metadata and concise comparisons only in this unit",
+  "receipt_self_hash": "Excluded to avoid circular binding; report its external SHA-256 in the parent handoff."
+}

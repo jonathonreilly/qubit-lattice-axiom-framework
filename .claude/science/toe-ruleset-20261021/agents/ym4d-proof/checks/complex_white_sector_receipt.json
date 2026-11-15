@@ -1,0 +1,44 @@
+{
+  "schema": "complex_white_sector_receipt_v1",
+  "date": "2026-10-30",
+  "role": "Author freeze and mechanical packet receipt only. No independent scientific grade.",
+  "source": {
+    "file": "COMPLEX_WHITE_SECTOR_ASTRA.md",
+    "sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+    "lines": 747
+  },
+  "manifest": {
+    "file": "checks/complex_white_sector_read_manifest.json",
+    "sha256": "fb366c85c2af332bc667d57d21f52a799baf8aa4c4c744403df9c0dd62af4107",
+    "lines": 97
+  },
+  "freeze_order": "747-line mathematical source was frozen and its exact hash sent to root before creating this manifest and receipt.",
+  "bounded_claim": "Actual original source-free white scalar cube as an explicit joint coarse/source holomorphic chain; complete-original-reader log relative to the identical transported original-a chart after cancellation of the full actual critical prefactor.",
+  "exact_ratio": "log(Z_Omega/Z_a,tr)=d log z_p+T_p+J_p-H_a",
+  "proved_rate": "CW32/CW36: O(sigma p_Omega^3)+O(sigma^2) plus explicit scalar and chart cutoff terms; the full ratio is not claimed rare.",
+  "domain": "One fixed positive original-source rho. CW33 matches HC when p_a/K(q)^2=O(p_Omega); otherwise CW35 explicitly narrows coarse and real-center curvature widths. Original cutoffs are unchanged. One sufficiently large u0 is volume-independent.",
+  "branch_and_reader_checks": "Actual transported finite-u Haar-inclusive phase; joint normalizer branch and actual-V coefficient agreement; accretive principal resolvents, both endpoints and marked sums; Stieltjes half powers; source-zero E/h projections; precision-pair masks; every scalar end/corner, mode and normalizer.",
+  "mechanical_checks": {
+    "source_hash_unchanged_since_freeze": true,
+    "unique_equation_labels_1_through_37": true,
+    "missing_local_links": [],
+    "accidental_patch_markers": false
+  },
+  "open": [
+    "Separate original G-minus-Omega and G^c history estimates",
+    "Selected conditional derivatives and inherited/future-conditioned histories",
+    "White-ball/slice/effective-input identification and effective iteration",
+    "Full non-free continuum existence",
+    "Positive physical continuum mass gap"
+  ],
+  "provisional_dependency": "WS631 was read frozen; its fresh review was pending during authoring. Its real matching was reconstructed and no review report was used as a premise.",
+  "independent_review": "Requested from root for a DIFFERENT fresh hostile source-first reviewer; pending. Same-family review must be disclosed.",
+  "self_assigned_verdict": null,
+  "science_numerical_runs": 0,
+  "author_writes": [
+    "COMPLEX_WHITE_SECTOR_ASTRA.md",
+    "checks/complex_white_sector_read_manifest.json",
+    "checks/complex_white_sector_receipt.json"
+  ],
+  "publication_owner": "root; no predecessor/shared-front/Git/PR/audit/ledger edits by this author."
+}

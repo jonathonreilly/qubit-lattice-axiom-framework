@@ -1,0 +1,19 @@
+PASS A1: c_pr=1/1797760=5.562478e-07  kappa_min=1/84270=1.186662e-05
+PASS A2: u*eps1^2=4.489000e+15  (eps1/gK)^2=4.489000e+15  rel.diff=0.00e+00
+PASS A3: control at eps1=gK: value=1.000000000000000 (must be 1)
+PASS B1: b_n(1,1)=20416938755 (2.0417e+10)  b_n(82,82)/b_n(1,1)=82.000000  b_D ratio=82.000000
+PASS B2: g2_CRC(c+=1)=4.8979e-97 (recorded 4.9e-97, rel.diff 0.000)  ratio before/after ring=82.0000
+PASS B3: shift(log c_lcr=1e9)=1.048979  (<=1.05)
+PASS B3n: control shift(log c_lcr=1e11)=5.8979  (>=5)
+PASS C1: equality at kappa_min: True ; strict at kappa=1: True ; fails at kappa_min/2: True
+PASS C2: a_A/a_bad=1/4  kappa_crit=1/14045=7.119972e-05
+PASS C3: 2-branch assembly: 0 violations over 20*9 cases
+PASS D1: dof=52488  log c_1(Gaussian, lambda_f=1/2)=18190.9546
+PASS D2: lambda_min ratio=4.8030e+06   a_ret/a_bad would become 1.6719e-13 (from 8.03e-7)
+PASS E1: sum_{r=1..i}3^{k-i} identity and bound: 0 violations over k<=30
+PASS E1n: control at L=2: first violation (k,i,sum,2^k/2)=(2, 2, 3, 2.0)
+PASS F1: detached-cube ||{y}||_sh for depth K-j=2..10: [82, 338, 594, 850, 1106, 1362, 1618, 1874, 2130]
+FAIL F2: 81 + 2401*32*80*sum 3^-m = 272109224821849118989935434224401903230506584426763053847638559661806345642972326143268384346186912507/88537996291958256446260440678593208943077817551131498658191653913030830300434060998128233014667 (recorded Delta_sh=3073361); p4 D2b excess 256 <= Delta_sh
+PASS G1: m_star=41.3678  6*L^4*a/g^2=4.8600e+10  m_star*ln324=239.1369
+
+SUMMARY: FAIL: F2

@@ -1,0 +1,69 @@
+{
+  "schema": "ym4d.research_gate.vocabulary_check.v1",
+  "created_utc": "2026-10-30T16:35:07.899660+00:00",
+  "method": "Direct explicit paths to lint_one_file(..., apply_fix=False); no CLI .claude exclusion.",
+  "tool": {
+    "path": "scripts/vocab_lint.py",
+    "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+    "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+  },
+  "vocabulary": {
+    "path": "docs/repo/controlled_vocabulary.yaml",
+    "commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+    "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15"
+  },
+  "files_scanned": 4,
+  "violations": 0,
+  "source_bytes_unchanged": true,
+  "reports": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/determinant-colour-cc799d903f.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_read_manifest.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_findings.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  ],
+  "checked_sha256": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/determinant-colour-cc799d903f.md": "0681285274966b654345b150614a6e288beedfd852caf6d9ce2e7fb0a96cae59",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_read_manifest.json": "d7b6d2de0d193012e7076766b74e248b10d77040d9f8219b9f0d0317bd879e82",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_findings.json": "b0e73bf3cab2461d8303dd4718502d9d1a60aa5a97f3142ae85e6ab8d1cec76d"
+  },
+  "report_links": [
+    {
+      "target": "../DETERMINANT_SIGN_ASTRA.md",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "../checks/gate_determinant_colour_cc799d903f_source_findings.json",
+      "exists": true,
+      "portable": true
+    },
+    {
+      "target": "../checks/gate_determinant_colour_cc799d903f_source_read_manifest.json",
+      "exists": true,
+      "portable": true
+    }
+  ],
+  "report_lines": 140,
+  "report_fences_balanced": true
+}

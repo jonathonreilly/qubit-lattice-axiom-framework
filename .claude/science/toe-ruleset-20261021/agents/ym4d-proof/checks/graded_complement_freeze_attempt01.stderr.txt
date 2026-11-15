@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze.py", line 80, in <module>
+    add('ASSUMPTIONS_AND_IMPORTS.md','Complete unchanged prior CC read reused.','Supplied mathematical model, not derivation or primitive adoption.',True)
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze.py", line 73, in add
+    assert record['sha256'] == prior['sha256'], f'Changed reused scientific input {name}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Changed reused scientific input ASSUMPTIONS_AND_IMPORTS.md

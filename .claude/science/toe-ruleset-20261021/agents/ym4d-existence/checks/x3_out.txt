@@ -1,0 +1,8 @@
+A q=3: min eig/max eig = -7.015e-16, max|G-G^T| = 6.94e-18
+A q=5: min eig/max eig = -9.060e-16, max|G-G^T| = 3.47e-18
+A: PASS
+B1 normalised: worst min eig/max eig over grid = -1.953e-01
+B2 unnormalised: worst min eig/max eig over grid = -5.175e-16
+C SU(2): max ||R||_op/delta^2 = 0.4300, min slack of inequality = 6.750e-07
+C SU(3): max ||R||_op/delta^2 = 0.3379, min slack of inequality = 6.475e-09
+C: PASS

@@ -1,0 +1,383 @@
+{
+  "schema": "independent-source-read-coverage-v1",
+  "reviewer_context": "/root/review_white_sector_matching",
+  "independence": "Same-family fresh reviewer, distinct from /root/chart_boundary_forest; no backend/model attestation",
+  "created_utc": "2026-10-30T11:46:17.198758+00:00",
+  "source_only_before_author_packet": true,
+  "coverage_policy": "Only explicit untruncated line windows are credited. Full-file hashes identify bytes, not whole-file reading. Routing searches are not source-reading credit. Needed windows from aggregate/command-truncated output were read again.",
+  "mathematical_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "bytes": 31597,
+      "lines": 631,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 220,
+          "bytes": 10889,
+          "sha256": "cd4e0cfe8c004875f70f2063b5c80a4d31c0be289ce60d816fbf17bfc88f1dce",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 221,
+          "last_line": 440,
+          "bytes": 10860,
+          "sha256": "976f4f3dcf924d08dd42e858aa2ed0f807475b20467eecb893257d880d95c5d7",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 441,
+          "last_line": 631,
+          "bytes": 9848,
+          "sha256": "d7619b657ed9c19d2d74d1f7476938590ce763590fac373b9da30fba8fddf2a2",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Complete target; 221-440 and 441-631 re-read without truncation."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "lines": 722,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 250,
+          "bytes": 13863,
+          "sha256": "32f831494e89ed715985725bb39757176bc44553f0555d6608ee9a37e3d5090d",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 251,
+          "last_line": 630,
+          "bytes": 19564,
+          "sha256": "da6088de82687a499c6115d0c75887185baad4708834098da638dbb41c91a826",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Actual phase, tree/modes, critical branch, cube, reader algebra, margins and scope. No claim of reading 631-722."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "bytes": 35303,
+      "lines": 627,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 310,
+          "bytes": 16497,
+          "sha256": "99d0900c72d5346e1621366105b3f1b90fec34ad80b232e5c5e92b4ebbe12368",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 311,
+          "last_line": 551,
+          "bytes": 13625,
+          "sha256": "66d09f613fbe1deb70903c9c180b5f80f31d1b1495422f67d19e565ae35861e6",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Corrected contour, scalar functional, forest/decorations, exact source and normalization. No diagnostic packet used."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "bytes": 31328,
+      "lines": 592,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 300,
+          "bytes": 15782,
+          "sha256": "27c819cd6aa6ddf71a2485a320f6d2f1d8996ccc990aaa56d5dd7f02677d941b",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 301,
+          "last_line": 592,
+          "bytes": 15546,
+          "sha256": "a8665534c2cf19fbe67b9bd045b20ad66b0d98e0b3e0b57a9b162fe4e76d411e",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Complete regional source, including empty-stencil/full-region specialization."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "bytes": 27875,
+      "lines": 510,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 160,
+          "bytes": 8655,
+          "sha256": "5e004a9a65805a4545f27ea6d6811460178e05656133655bba0d38a96a6d476f",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 161,
+          "last_line": 510,
+          "bytes": 19220,
+          "sha256": "01a55f6a6fbd8c3c8a164fc44b5f6c8f0c743ec39656b758ff425be4ef907f48",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Complete regional chart source."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "read_windows": [
+        {
+          "first_line": 31,
+          "last_line": 340,
+          "bytes": 15228,
+          "sha256": "773460d099bb2d1183fee3869a57e98e15bbd9404b1d29081937c4a445eb1043",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Actual lift, gauge/Haar, flat-brick gap, finite-u Hessian, analytic vertices and critical branch."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "bytes": 29068,
+      "lines": 556,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 200,
+          "bytes": 11178,
+          "sha256": "c4d937bee71a32f270ffb8b24306984778f946c02459b311f73b39d365c730d0",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Actual finite-u lift/analytic supplier and core/residual construction start; re-read untruncated. RF supplies the consumed regional continuation."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "bytes": 41908,
+      "lines": 790,
+      "read_windows": [
+        {
+          "first_line": 22,
+          "last_line": 128,
+          "bytes": 5938,
+          "sha256": "dafb7043c4b267eabda369394630b9b2aba76b1be1dd153d118c2acf2669aca1",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 454,
+          "last_line": 500,
+          "bytes": 2273,
+          "sha256": "44d80dad761c1d67e219c7f68c77925c2c1bbbe62c91374c44d0342609d9430c",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 500,
+          "last_line": 556,
+          "bytes": 3096,
+          "sha256": "f453c0813e88bd48977b04d74089398a059a33e54494a0ab9b7fe07731647acc",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 657,
+          "last_line": 737,
+          "bytes": 4245,
+          "sha256": "38ceb7948ceee37cc1572c3033010181380cb2774f6a9e06b6c022cc0918f7e2",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Source-free sectors, normalization and tree-stationary intrinsic/Gram dictionary. Its stronger interacting theorem is not imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "bytes": 31368,
+      "lines": 580,
+      "read_windows": [
+        {
+          "first_line": 108,
+          "last_line": 180,
+          "bytes": 3982,
+          "sha256": "9f1c4912d5639613749b018e07d1ba13aa732235fd276984f4a4ada0331f8b22",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 397,
+          "last_line": 434,
+          "bytes": 2188,
+          "sha256": "3f359fadbf1a2e71b397377ebf2d1d5fa34464b2065b7cf19cfa34cd2d83d9b9",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Cube/half-power definition and cutoff-power compatibility only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "bytes": 12513,
+      "lines": 247,
+      "read_windows": [
+        {
+          "first_line": 35,
+          "last_line": 168,
+          "bytes": 6704,
+          "sha256": "4b740d7a73fbd816b42619d6af2c958ea4ad244bf8d97bcd50e62de4e57b8689",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Fixed-ceiling shrinking-chart substitutions and side sigma cancellations."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "bytes": 36894,
+      "lines": 711,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 225,
+          "bytes": 11477,
+          "sha256": "c73e44e51a420471025834a64350569707fd431472438a91e4d1b1503c9d87f7",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 226,
+          "last_line": 456,
+          "bytes": 11591,
+          "sha256": "dabce466dda0f4c6fb20ea3d7f0c333e9072121cfc6918905a6ce2652fefd3f5",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 457,
+          "last_line": 681,
+          "bytes": 11974,
+          "sha256": "3cc197787529db38d2748dd9d377875752b6caeabad640323c44c67b3b53e673",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Complete consumed chart argument through exact logarithm, including sides, jets, marks, forests, parity and regrouping."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "bytes": 32110,
+      "lines": 624,
+      "read_windows": [
+        {
+          "first_line": 112,
+          "last_line": 280,
+          "bytes": 7789,
+          "sha256": "f1a8249a4efeafc809b87a8beaa0dddfa4d71b99a356a65befdf2f8cc6dc6a95",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Consumed local coefficient, marked Mayer and parity envelopes."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "bytes": 36322,
+      "lines": 713,
+      "read_windows": [
+        {
+          "first_line": 160,
+          "last_line": 410,
+          "bytes": 12687,
+          "sha256": "649b70ace61bafb72b01c97857d067c2faf2bf1024417000c59dc79cd45cf0f6",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Normalized active-marginal loop/chain and scalar derivative library with its actual mark proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "bytes": 25946,
+      "lines": 508,
+      "read_windows": [
+        {
+          "first_line": 1,
+          "last_line": 125,
+          "bytes": 6131,
+          "sha256": "e7ba353812adcdb158e5e2e80f32b68d913e5b1f8e64ed769613fcd97a77edd7",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Context inspection to resolve overloaded SC abbreviation; not intended SC3 citation, no new theorem imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "bytes": 29717,
+      "lines": 597,
+      "read_windows": [
+        {
+          "first_line": 38,
+          "last_line": 103,
+          "bytes": 3551,
+          "sha256": "03359c79f1ebc8aa2bd1b50f730446a62bc3454d5d8f339d27a55377a57df6b9",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Intended SC3 chart/cut convention; no compact-return estimate imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "bytes": 94345,
+      "lines": 812,
+      "read_windows": [
+        {
+          "first_line": 312,
+          "last_line": 376,
+          "bytes": 7861,
+          "sha256": "d2a9375c05480312f8caa5b2ec05237a309eee8ceddfdda00815c472a7db7926",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 465,
+          "last_line": 529,
+          "bytes": 7406,
+          "sha256": "a0c2761bc45b3e034c29078e331719caf51cf4ed3f1f2e9eb97f38db7da3a157",
+          "untruncated_read": true
+        },
+        {
+          "first_line": 665,
+          "last_line": 686,
+          "bytes": 2700,
+          "sha256": "46d830e1dee03d307615d35b83726a7873e8ad28fb3ec4a26695d9723348c14d",
+          "untruncated_read": true
+        }
+      ],
+      "purpose": "Fixed-real-t normalizer mathematics and corrections; literal white-ball/slice/effective-polymer consumer and S9 boundary only."
+    }
+  ],
+  "procedure_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "complete_pinned_procedure_reads": [
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "docs/ai_methodology/skills/review-loop/SKILL.md",
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md"
+  ],
+  "other_instruction_reads": [
+    "Machine user-provided instructions",
+    "Applicable ancestor AGENTS.md",
+    "Workspace AGENTS.md, complete",
+    "Lane PROCESS_LIGHT.md, 11 lines, complete",
+    "Installed review-loop SKILL.md, complete, then pinned entry point used"
+  ],
+  "packet_or_prior_review_reads": []
+}

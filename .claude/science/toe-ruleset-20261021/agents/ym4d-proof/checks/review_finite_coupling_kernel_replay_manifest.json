@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-10-29T23:00:19.444585+00:00",
+  "author_program_sha256": "df7b497469d73c1bc2b8faa7caea589a1f619057fec5b78566d376462e4001b0",
+  "criteria_sha256": "bd8d2aff957e3a6480ff90ff5a90226fe9ff898a2e35baaec9d105b96bd9ba13",
+  "copies": [
+    {
+      "name": "replay",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_replay.py",
+      "sha256": "ce772cd66b327697dc3a9d78e7b2126221fd5f737ed0bc3ab28a4361b412c548",
+      "substitution": null,
+      "result_redirect": "review_finite_coupling_kernel_author_replay_results.json"
+    },
+    {
+      "name": "dual_sign",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_dual_sign.py",
+      "sha256": "068c9ab9734bb8464ed664ffd73c288d4c252ab6c20033969d2b79f9c7cbe949",
+      "substitution": [
+        "(a[1:]-b[1:])/2",
+        "(a[1:]+b[1:])/2"
+      ],
+      "result_redirect": "review_finite_coupling_kernel_author_dual_sign_results.json"
+    },
+    {
+      "name": "unconstrained_saddle",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_unconstrained_saddle.py",
+      "sha256": "b346ba7f3ce39c41c4a1e18168da7fa442ec1ec68e502f505dcd75586cc392cf",
+      "substitution": [
+        "yn=y+.5*p0(expm(-y)@p-q@expm(y))",
+        "yn=y+.5*(expm(-y)@p-q@expm(y))"
+      ],
+      "result_redirect": "review_finite_coupling_kernel_author_unconstrained_saddle_results.json"
+    },
+    {
+      "name": "missing_haar",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_missing_haar.py",
+      "sha256": "0ca782209ed76e83c45bd7e05aa3720e392bcc778087cb71e286fe0bf60977a0",
+      "substitution": [
+        "(vand/6 if haar else 1)",
+        "(1 if haar else 1)"
+      ],
+      "result_redirect": "review_finite_coupling_kernel_author_missing_haar_results.json"
+    },
+    {
+      "name": "double_hessian",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_double_hessian.py",
+      "sha256": "2c00678f4a1c64cdbdeb030208bef0c659dc69ac8a10311e6c733282ac18cf6b",
+      "substitution": [
+        "-np.trace(ss@(a@b+b@a))/6",
+        "-np.trace(ss@(a@b+b@a))/3"
+      ],
+      "result_redirect": "review_finite_coupling_kernel_author_double_hessian_results.json"
+    },
+    {
+      "name": "wrong_divisor",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_wrong_divisor.py",
+      "sha256": "547886c1b3f0e8e627b4a06911e03b05dfecfd465338c53ac0541c950e2005e2",
+      "substitution": [
+        "return np.mean(mats,axis=0),np.mean([np.linalg.inv(v) for v in mats],axis=0),mats",
+        "return 4*np.mean(mats,axis=0),4*np.mean([np.linalg.inv(v) for v in mats],axis=0),mats"
+      ],
+      "result_redirect": "review_finite_coupling_kernel_author_wrong_divisor_results.json"
+    },
+    {
+      "name": "inverse_of_mean",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_inverse_of_mean.py",
+      "sha256": "1edefb7b77a00956e1825280ccebabf3a1afced9a663a7153cdca22e704edad4",
+      "substitution": [
+        "np.mean([np.linalg.inv(v) for v in mats],axis=0)",
+        "np.linalg.inv(np.mean(mats,axis=0))"
+      ],
+      "result_redirect": "review_finite_coupling_kernel_author_inverse_of_mean_results.json"
+    },
+    {
+      "name": "double_cubic",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_double_cubic.py",
+      "sha256": "a6b239cb821bbbb1dc763a3f1f4ad7709c10e36c7dcf4577ab61639fdcaf37ed",
+      "substitution": [
+        "f3=ll*np.trace(X@X@X)/18",
+        "f3=ll*np.trace(X@X@X)/9"
+      ],
+      "result_redirect": "review_finite_coupling_kernel_author_double_cubic_results.json"
+    }
+  ]
+}

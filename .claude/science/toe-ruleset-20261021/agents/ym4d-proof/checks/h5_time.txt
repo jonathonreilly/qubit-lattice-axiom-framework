@@ -1,0 +1,2 @@
+h5_cone_and_dM.py first and only run: lock taken 2026-10-28 00:21:39 UTC, done 00:21:41 UTC; wall 1.7 s; peak RSS 148 MB; load 3.25 (1-min); memory free 39% (memory_pressure, checked 00:10 UTC); nice 10, OPENBLAS/OMP/MKL/VECLIB threads 1; run without python -I (numpy/scipy are user-site).
+Result: OVERALL FAIL as pre-registered (B3 slope 5.367 outside [5.5, 6.5]; only 20/50 samples had d > 0 at all four y); A1-A3, B1, B2, B4 PASS.

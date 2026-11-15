@@ -1,0 +1,45 @@
+== A1/A6 (CONFIRMATORY): the session-6 constants and ceilings, c_A = 0, c_U = 1, C_l = 1, R = 0 ==
+  session5 no ring                c_+=     1 b_n=       20416938755 b_D=       20415875872 c_f=      531441  g2_CRC=4.89789E-97  n_T=9.99104E+96
+  session5 ring x17 (session 6)   c_+=    17 b_n=      347087344163 b_D=      347069275168 c_f=     9034497  g2_CRC=2.88112E-98  n_T=1.69847E+98
+  session5 ring x82 (PLD §18.4)   c_+=    82 b_n=     1674185866133 b_D=     1674098709808 c_f=    43578162  g2_CRC=5.97305E-99  n_T=8.19264E+98
+  session6 no ring                c_+=     1 b_n=          65633123 b_D=          65620000 c_f=        6561  g2_CRC=1.52362E-94  n_T=3.21128E+94
+  session6 ring x17 (session 6)   c_+=    17 b_n=        1115603075 b_D=        1115380000 c_f=      111537  g2_CRC=8.96376E-96  n_T=5.45840E+95
+  session6 ring x82 (PLD §18.4)   c_+=    82 b_n=        5381106005 b_D=        5380030000 c_f=      538002  g2_CRC=1.85835E-96  n_T=2.63286E+96
+== A4 (CONFIRMATORY): session 5's own numbers, no ring ==
+  g2_CRC = 4.897894E-97 (review S5-12: 4.89789e-97) ; n_T = 9.991038E+96 (review: 9.99104e96) ; b_n = 20416938755 (review: 20416938755)
+  REL-boot ceiling (B_*=c_f+1, HIST 38417) = 4.898021E-97 (review: 4.89802e-97) ; HIST-sum condition = 4.898012E-97 (review: 4.898e-97)
+  n_H(a,B_0) = 9.991019E+96 (review: 9.99102e96)  ->  reproduction OK
+== A2 (PRE-REGISTERED): does S5-12's four-way coincidence survive at the session-6 constants? ==
+  session5 ring= 1 per-level=HIST  : (S2)=4.89789E-97 REL-boot=4.89802E-97 HIST-sum=4.89801E-97  spread=1.0000 | n_T=9.99104E+96 n_H=9.99102E+96 ratio=1.0000
+  session5 ring= 1 per-level=sharp : (S2)=4.89789E-97 REL-boot=4.89802E-97 HIST-sum=4.89801E-97  spread=1.0000 | n_T=9.99104E+96 n_H=9.99102E+96 ratio=1.0000
+  session5 ring=17 per-level=HIST  : (S2)=2.88112E-98 REL-boot=2.88119E-98 HIST-sum=2.88119E-98  spread=1.0000 | n_T=1.69847E+98 n_H=1.69847E+98 ratio=1.0000
+  session5 ring=17 per-level=sharp : (S2)=2.88112E-98 REL-boot=2.88119E-98 HIST-sum=2.88119E-98  spread=1.0000 | n_T=1.69847E+98 n_H=1.69847E+98 ratio=1.0000
+  session5 ring=82 per-level=HIST  : (S2)=5.97305E-99 REL-boot=5.97321E-99 HIST-sum=5.97321E-99  spread=1.0000 | n_T=8.19264E+98 n_H=8.19264E+98 ratio=1.0000
+  session5 ring=82 per-level=sharp : (S2)=5.97305E-99 REL-boot=5.97321E-99 HIST-sum=5.97321E-99  spread=1.0000 | n_T=8.19264E+98 n_H=8.19264E+98 ratio=1.0000
+  session6 ring= 1 per-level=HIST  : (S2)=1.52362E-94 REL-boot=3.96680E-95 HIST-sum=3.96620E-95  spread=3.8415 | n_T=3.21128E+94 n_H=1.23346E+95 ratio=3.8410
+  session6 ring= 1 per-level=sharp : (S2)=1.52362E-94 REL-boot=1.52377E-94 HIST-sum=1.52354E-94  spread=1.0002 | n_T=3.21128E+94 n_H=3.21080E+94 ratio=1.0002
+  session6 ring=17 per-level=HIST  : (S2)=8.96376E-96 REL-boot=2.33375E-96 HIST-sum=2.33373E-96  spread=3.8410 | n_T=5.45840E+95 n_H=2.09688E+96 ratio=3.8416
+  session6 ring=17 per-level=sharp : (S2)=8.96376E-96 REL-boot=8.96466E-96 HIST-sum=8.96458E-96  spread=1.0001 | n_T=5.45840E+95 n_H=5.45835E+95 ratio=1.0000
+  session6 ring=82 per-level=HIST  : (S2)=1.85835E-96 REL-boot=4.83829E-97 HIST-sum=4.83828E-97  spread=3.8409 | n_T=2.63286E+96 n_H=1.01144E+97 ratio=3.8416
+  session6 ring=82 per-level=sharp : (S2)=1.85835E-96 REL-boot=1.85854E-96 HIST-sum=1.85854E-96  spread=1.0001 | n_T=2.63286E+96 n_H=2.63285E+96 ratio=1.0000
+== A3 (PRE-REGISTERED): g2_CRC against the recorded (RLF-delta) ceiling 1e-94, four scenarios (c_A=0, c_U=1) ==
+  session 5, no ring     g2_CRC = 4.89789E-97 = 4.89789E-03 x 1e-94  ->  BELOW (breach by 204.17) the recorded ceiling
+  session 5, ring x82    g2_CRC = 5.97305E-99 = 5.97305E-05 x 1e-94  ->  BELOW (breach by 16741.86) the recorded ceiling
+  session 5, ring x17    g2_CRC = 2.88112E-98 = 2.88112E-04 x 1e-94  ->  BELOW (breach by 3470.87) the recorded ceiling
+  session 6, no ring     g2_CRC = 1.52362E-94 = 1.52362E+00 x 1e-94  ->  ABOVE the recorded ceiling
+  session 6, ring x82    g2_CRC = 1.85835E-96 = 1.85835E-02 x 1e-94  ->  BELOW (breach by 53.81) the recorded ceiling
+  session 6, ring x17    g2_CRC = 8.96376E-96 = 8.96376E-02 x 1e-94  ->  BELOW (breach by 11.16) the recorded ceiling
+== A5 (PRE-REGISTERED): against DX' (g_0^2 ~ 2.5e-152/C_Omega, C_Omega = 1) ==
+  session 6, ring x17    slack against DX' at c_+=1: x3.5855E+56 ; g2_CRC >= 2.5e-152 while c_+ <= 6.0954E+57
+  session 6, ring x82    slack against DX' at c_+=1: x7.4334E+55 ; g2_CRC >= 2.5e-152 while c_+ <= 6.0954E+57
+  session 5, no ring     slack against DX' at c_+=1: x1.9592E+55 ; g2_CRC >= 2.5e-152 while c_+ <= 1.9592E+55
+== (S1) and a_ret, session 6 with the x17 ring (c_A=0, c_U=1, C_A=1, R=0) ==
+  (S1) ceiling = 1.83822E-93 ; g2_ret = 3.67644E-98 ; c_att(8) session6 = 320001 (session 5: 1229313) ; Delta_rho^2 = 6.9756E+09
+  (S1) is implied by (S2) here: True
+== ratios session 5 -> session 6 (same ring) ==
+  ring= 1 : g2_CRC x311.077 ; n_T /311.123 ; c_f /81.000
+  ring=17 : g2_CRC x311.121 ; n_T /311.167 ; c_f /81.000
+  ring=82 : g2_CRC x311.123 ; n_T /311.169 ; c_f /81.000
+RESULTS: A1:PASS A2:PASS A3:PASS A4:PASS A5:PASS A6:PASS
+OVERALL A PASS
+secs 0.01

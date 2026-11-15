@@ -1,0 +1,82 @@
+--- checks/realrga_review_source_v1.md
++++ REALRGA.md
+@@ -72,8 +72,9 @@
+ 
+ ### 2.1 Real fields and derivative order — definitions
+ 
+-Work on real group variables and a real open source neighborhood, with a
+-specified closed interior domain D_j^R for uniform bounds. Sources still
++Work on real group variables and an open real evaluation domain D_j^R,
++with all stated uniform jet bounds on that domain. Declare closed inner
++evaluation sets and their margins inside D_j^R. Sources still
+ read their original labels. Exterior fields, inactive regions, past
+ readers, and all kernel normalizer readers remain in the supported data.
+ For charts use U_b=Ubar_b exp(a_b), a_b in su(N), inside a specified
+@@ -121,7 +122,7 @@
+ distinct-label coefficient. (RGA3) gives a possibly coarser factorial
+ upper bound; it never changes that coefficient identity. All jets are
+ jets of the SAME real functions and project consistently when labels or
+-orders are removed. Derivatives require a real neighborhood of D_j^R;
++orders are removed. Derivative neighborhoods stay inside D_j^R;
+ no fictitious source cube extending outside it is used.
+ 
+ ### 2.2 Field-size regulators and complete supports — definitions
+@@ -317,7 +318,7 @@
+     Z_red(y)=sum_(I subset labels) A_I(y),  A_empty=1.   (RGA15)
+ 
+ Each atom has a nonempty connected full support H_i. Require A_I to be C
+-through the chosen mixed orders on the real neighborhood, to read only
++through the chosen mixed orders on D_j^R, to read only
+ union H_i, and to factor EXACTLY over the overlap components of I.
+ This is an identity of functions, hence of their jets. It follows from
+ product-cell or complete-ancestor integration only when all extra
+@@ -353,7 +354,9 @@
+ the remaining unit of support exponent. Marking a root changes 1/m! to
+ 1/(m-1)!, giving the claimed supported log bound. RGA8 controls jets of
+ every product, so this is also uniform convergence of every included
+-derivative, not only of values.
++derivative, not only of values. In particular the series converges in
++C^(p,q) on every compact subset of the open real domain; no smooth
++extension beyond a closed set is inferred from bounds only on that set.
+ 
+ To identify the real logarithm without assuming nonvanishing, multiply
+ A_I by z^|I|. Both majorants converge absolutely for real |z|<2, since
+@@ -430,6 +433,9 @@
+ Let lambda_q control the returned irrelevant linear operator, s_(j,q)
+ the genuinely new-gap continuation after matching, eta_(j,q) ALL remaining
+ failures, e_(j,q) the newly generated input, and B_q,C_q>=0. Require
++lambda_q>=0, M_q>0, and, uniformly over the claimed family,
++0<=s_(j,q)<=s_*q, 0<=eta_(j,q)<=eta_*q, 0<=e_(j,q)<=e_*q,
++with finite nonnegative starred bounds. Require
+ 
+     x_(j+1,q) <= (lambda_q+B_q s_(j,q)+eta_(j,q)) x_(j,q)
+                               +C_q x_(j,q)^2+B_q e_(j,q),
+@@ -485,12 +491,14 @@
+ | CHARGE C14,C24–C26: joint prices, extracted windows or both creation sums | **NEEDS-REWORK** | Replace the complex norm by H1–H5, including all differentiated references. Actual local estimates remain OPEN; its scalar real C11 is not a jet estimate. |
+ | RD3 sections 1–2,5,7–8: nonzero witness, exact normalized transfer, matched comparison and full-factor bookkeeping | **CARRIES** on its real scope | Retain history mass, exterior inverse, all prefactors, additive complements and zero children. All-history uniform budgets remain OPEN. |
+ | RD3 section 3's finite complex sector/germ and complex-TV debit | **OBSOLETE** as requirements | RGA-Z gives real nonvanishing on admitted fibers. Local real log derivatives and moving-sector regularity need H1–H3; finite positive lower bounds do not close them. |
++| RD3 section 4 D14–D16: integrated hard-cut species and normalized mandatory-event diagnostic | Finite real algebra **CARRIES**; quantitative joint jets **NEEDS-REWORK** | Full overlap events and their common product reference remain. A selected event of mass p has normalized insertion 1_E/p of L1 norm one, so its old price cannot be reused. Differentiating retained-field cuts requires RGA-I's explicit treatment. |
+ | RD3 section 6 D22–D23 hole transfer | **CARRIES** as a Banach-valued fixed-mask inequality; derivative acquisition **NEEDS-REWORK** | The full norm costs 730 at rate 649mu or 1+297 exp(81mu) at the same rate for that specified hole. Use already controlled real jets; no new derivative follows from values. |
+ | RD4 C1–C4, L1–L4: mandatory extraction, positive cells, exact split and matched real ratio | **CARRIES** | Mandatory mass is spent once; zero fibers and differing hard supports stay explicit. Fixed real positive cells have TV=1. |
+ | RD4 C6–C9,L6–L8,K1–K3,I1–I4: gas, price, normalized comparison and induction | **NEEDS-REWORK**, with the real algebra CARRIES | Use RGA13–RGA17 with jets. Remove only the genuine complex-TV/polar-continuation debit; retain reference, boundary, entropy, support and numerator costs. Exact final integration is still required before logs. |
+ | RD4 L5 and the complex domain/contour portions of B2 | **OBSOLETE** in IH_R | Real chart/domain control and all complementary sectors replace their roles; existing contour identities are not partially reused with sides deleted. |
+ | JMBRA A3–A12: actual replacement, reader elimination, ancestral grouping, coefficient factorization | **CARRIES** | Holds before logs and includes fixed-output kernels. Positive normalized kernels integrate to one only when unread. Real differentiation adds RGA13–RGA14. |
+ | JMBRA A13–A18: two tree bounds and weighted readers, including roots in tails | **CARRIES** as norm-algebra implications; actual inputs **NEEDS-REWORK** | RGA8/RGA16 provide the real jet version. A14's mixed bounds, complete roots, rates and all reader costs remain. A23's matched estimates are still OPEN. |
++| JMBRA A19–A23b: reference survival, matched boundary/tail bounds, charge comparison and bulk source response | **CARRIES** at its real/conditional scope; local joint jets **NEEDS-REWORK** | Kernel normalization does not remove a retained cut's survival denominator. Matching must include the integrated bulk/source remainder; a bare equality away from the core is insufficient. A23a tests only the specified direct-Haar supremum expansion. |
+ | JMBRA A24–A25 finite complex germ; complex contour costs | **OBSOLETE** requirements | Replaced by positive real fibers plus separate local derivative budgets. Completion-failure witnesses and A27/A28 price/extraction obligations CARRY at their original scope. |
+ | JMBRB B-RB, B-MASS, B-GAP, B-GEOM, B-RENEW, B-SEAM, B-MATCH | **CARRIES** at their scopes | Reblocking cannot reprice old mass; fresh gap estimates are plain-forward-law bounds; rough coherent inputs and matched boundaries remain. Their scalar estimates alone are not jet estimates. |
+ | JMBRB B-JOINT,B30,B-ITER | **NEEDS-REWORK** in their hypotheses; grouping/invariance CARRIES | Real jet-integrated bounds replace holomorphic joint bounds. eta_q still includes every coherent/completion failure. Uniformity and relevant recursions are still OPEN. |
+@@ -522,8 +530,11 @@
+ real interfaces in REALONLY's section 1 table.
+ 
+ **JETS (finite orders).** Carry the conditional original-source log
+-Phi_j=log E[exp(sum z_i O_i)|U_j] and all its marked jets. Real conditional
+-expectation and the finite nilpotent log identity give
++Phi_j=log E[exp(sum z_i O_i)|U_j] and all its marked jets
++J_(j,B)=partial_B Phi_j(0;U_j). Conditional expectations and cumulants
++in the following identity use the unperturbed actual chain. For a
++nonzero source base point its corresponding tilted law would be required.
++Real conditional expectation and the finite nilpotent log identity give
+ 
+     J_(j+1),B=sum_(pi partition B)
+                      kappa(J_j,C:C in pi | U_(j+1)).   (RGA19)

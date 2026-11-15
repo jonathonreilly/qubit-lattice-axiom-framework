@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-29T23:49:53.929720+00:00",
+  "status": "pending_fresh_independent_review",
+  "author": "root coordinator",
+  "finding": "REVIEW2_HRP finding1, upstream temporal-extent-two endpoint convention",
+  "base_revision": "295b508bea2c65bf548172f3190e32f7f7eaf6cf",
+  "sources_before": {
+    "OSLEAF55.md": "7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0",
+    "HRP.md": "f1f991dea8062bfc7176a68cc639beacd848d4fb9cdd0bd4917198e39dac51b5"
+  },
+  "sources_after": {
+    "OSLEAF55.md": "7f73bedc795e9356f65651a0d39b1fd3e8300fb460846cf84a45f0c5307f0c1c",
+    "HRP.md": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e"
+  },
+  "correction_note": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_half_arc_correction.md",
+    "sha256": "bc1711cfd37e78768168c89d6b78c233b913a73ff427f89b4cdd27ca7b0e7757"
+  },
+  "review2_source_sha256": "095a038fb111b456d63c0262b968aaa7b3d08bede58ce34ab214320cda972278",
+  "numerical_runs": 0,
+  "evidence_or_criteria_changes": false,
+  "scope": "Finite geometric-half domain and its existing RP export only; continuum hypotheses and full goals remain OPEN"
+}

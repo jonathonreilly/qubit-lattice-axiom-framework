@@ -1,0 +1,10 @@
+W0: schema 0 misses 0; B-strict SCCs []; cutoff SCC [14]: ['B_0', 'SC_k', 'a', 'a_A', 'a_ret', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta']
+     a_ret in cutoff SCC: True; theta in cutoff SCC: True; SC_k in: True
+W6: schema 0 misses 0; B-strict SCCs []; cutoff SCC [14]: ['B_0', 'SC_k', 'a', 'a_A', 'a_ret', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp', 'theta']
+     a_ret in cutoff SCC: True; theta in cutoff SCC: True; SC_k in: True
+W8: schema 0 misses 0; B-strict SCCs []; cutoff SCC [12]: ['B_0', 'SC_k', 'a', 'a_A', 'b_D', 'c_A', 'c_B', 'c_U', 'c_f', 'c_plus', 'n_H', 'n_sharp']
+     a_ret in cutoff SCC: False; theta in cutoff SCC: False; SC_k in: True
+REPRO (Codex: 14 nodes incl. SC_k, a_ret): True
+U1-LOOP claim 'a_ret is in the cutoff loop only through the fallback edge a_ret -> theta': True
+Control (inject gamma0 -> n_sharp into W8): a_ret back in the cutoff SCC: FIRES
+FINAL: B-strict/audit PASS; REPRO True; claim True; control fires

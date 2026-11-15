@@ -1,0 +1,23 @@
+{
+  "label": "tree_group_author",
+  "command": [
+    "/usr/local/bin/python3",
+    "soft_fluctuation_tree_group.py"
+  ],
+  "copies": {
+    "soft_fluctuation_tree_group.py": "4815deb9b3bb71483dfeec5fb55d67312dbb11e0823862ef8b0973e30593c19a"
+  },
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/tree_group_author",
+  "exit_code": 0,
+  "wall_seconds": 0.7244079113006592,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_tree_group_author_out.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_tree_group_author_err.txt",
+  "stdout_sha256": "df49c9e873cec3b242fca226d309d59a5974c32091ebe8b6af6bcc70698d998d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_02.json",
+  "reference_sha256": "503eef57f75af37c79e15c0fcc1d30394d2d98975517080ec03727f700d42492",
+  "excluded_top_level_field": "elapsed_seconds",
+  "exact_non_time_json_match": true,
+  "differing_top_level_keys": [],
+  "source_and_reference_unchanged": true
+}

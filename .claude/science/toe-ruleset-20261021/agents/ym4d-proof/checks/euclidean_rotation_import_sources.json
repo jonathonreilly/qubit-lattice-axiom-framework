@@ -1,0 +1,269 @@
+{
+  "created_utc": "2026-10-29T18:21:24.454561+00:00",
+  "scope": "Author research/input identity manifest; not an audit verdict or complete independent review",
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "head_at_manifest": "4a8afc90247d771b95c9661737dc08509456ab28",
+  "root_current_main_methodology": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "primary_candidate": {
+    "repository": "ethanwsussman/Yang--Mills-LLM-experiment",
+    "commit": "1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310",
+    "tree": "92cef4189c052ea361a13a1cee054317b9125b6c",
+    "files": [
+      {
+        "path": "README.md",
+        "git_blob": "24778ac2d5498b4cab2568447b58ae4e2b9c6612",
+        "coverage": "Entire README read via GitHub plugin; tentative scope/authorship disclaimer retained."
+      },
+      {
+        "path": "RP O(d) trick (RP1)/README.md",
+        "git_blob": "1578fbcec3cd49a25c5163ab83c6eb33414250da",
+        "coverage": "Entire README read; human manuscript not yet added, tentative status."
+      },
+      {
+        "path": "RP O(d) trick (RP1)/RPM1.tex",
+        "git_blob": "86d31273743ea0b3dc2b99090058ce3b930fba5a",
+        "sha256": "ae201364acf2ea69cc01cc323db925793f26743ca02cbe404ef6086d778a7801",
+        "coverage": "Scientific body lines 702-2858 and bibliography read; title/macro pages not source of a scientific claim. GitHub plugin and raw pinned fetch matched Git blob."
+      }
+    ]
+  },
+  "primary_research_files": [
+    {
+      "local_research_copy": "/tmp/euclidean_rotation_import_20261029/RPM1.pdf",
+      "sha256": "1167b22c8a8fd957f66193a5d56c32c3683305d618a6dde5949b44731e8f6872",
+      "bytes": 715932,
+      "read_coverage": "Companion rendered edition; full scientific argument read in exact paired TeX, no independent PDF proof certification."
+    },
+    {
+      "local_research_copy": "/tmp/euclidean_rotation_import_20261029/RP1O1.pdf",
+      "sha256": "e3b552e8f516424b9cd272bd13307aef35d9f1dc5f54b89822ab45817c0b235b",
+      "bytes": 616689,
+      "read_coverage": "Introduction and final A.application only; historical scalar supplement explicitly conditional."
+    },
+    {
+      "local_research_copy": "/tmp/euclidean_rotation_import_20261029/Sokal1982.pdf",
+      "sha256": "46597fd3bb94fb9809f979ca018df04ff43a304519c27603f60f63ecde54e51a",
+      "bytes": 7137274,
+      "read_coverage": "Pages 327-330 and 374-375; same-state mirror/exhaustion, spectral proposal. No whole-paper certification."
+    },
+    {
+      "local_research_copy": "/tmp/euclidean_rotation_import_20261029/JaffeJaekelMartinez2013.pdf",
+      "sha256": "c2f657e7320f9fd1a6d60b2738fa5a6821fde6e8c6ab2f6dfa308f719840ade1",
+      "bytes": 520345,
+      "read_coverage": "Section VI pages 25-26; Proposition VI.1 and eqs VI.1-VI.5 only."
+    }
+  ],
+  "download_records": {
+    "downloads_attempt01.json": [
+      {
+        "file": "RP1O1.pdf",
+        "url": "https://raw.githubusercontent.com/ethanwsussman/Yang--Mills-LLM-experiment/1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310/RP%20O(d)%20trick%20(RP1)/RP1O1.pdf",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+      },
+      {
+        "file": "RPM1.pdf",
+        "url": "https://raw.githubusercontent.com/ethanwsussman/Yang--Mills-LLM-experiment/1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310/RP%20O(d)%20trick%20(RP1)/RPM1.pdf",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+      },
+      {
+        "file": "Sokal1982.pdf",
+        "url": "https://www.numdam.org/item/10.24033/aihpa.221/pdf/",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+      },
+      {
+        "file": "JaffeJaekelMartinez2013.pdf",
+        "url": "https://arxiv.org/pdf/1302.5935v1",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+      }
+    ],
+    "downloads_attempt02.json": [
+      {
+        "file": "RP1O1.pdf",
+        "url": "https://raw.githubusercontent.com/ethanwsussman/Yang--Mills-LLM-experiment/1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310/RP%20O(d)%20trick%20(RP1)/RP1O1.pdf",
+        "exit_code": 0,
+        "stderr": "",
+        "sha256": "e3b552e8f516424b9cd272bd13307aef35d9f1dc5f54b89822ab45817c0b235b",
+        "pages": 33,
+        "text_chars": 51964
+      },
+      {
+        "file": "RPM1.pdf",
+        "url": "https://raw.githubusercontent.com/ethanwsussman/Yang--Mills-LLM-experiment/1b92bd0347e3b8763cd8ecc1f96dc3c2a92dd310/RP%20O(d)%20trick%20(RP1)/RPM1.pdf",
+        "exit_code": 0,
+        "stderr": "",
+        "sha256": "1167b22c8a8fd957f66193a5d56c32c3683305d618a6dde5949b44731e8f6872",
+        "pages": 30,
+        "text_chars": 80860
+      },
+      {
+        "file": "JaffeJaekelMartinez2013.pdf",
+        "url": "https://arxiv.org/pdf/1302.5935v1",
+        "exit_code": 0,
+        "stderr": "",
+        "sha256": "c2f657e7320f9fd1a6d60b2738fa5a6821fde6e8c6ab2f6dfa308f719840ade1",
+        "pages": 50,
+        "text_chars": 90912
+      }
+    ],
+    "downloads_attempt03.json": {
+      "file": "Sokal1982.pdf",
+      "url": "https://www.numdam.org/article/AIHPA_1982__37_4_317_0.pdf",
+      "exit_code": 0,
+      "stderr": "",
+      "sha256": "46597fd3bb94fb9809f979ca018df04ff43a304519c27603f60f63ecde54e51a",
+      "pages": 83,
+      "text_chars": 176117
+    }
+  },
+  "original_local_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_coverage": "Current disposition and target; S3/S4 prime and double-prime; Decision 4 normalized kernel; L9 coordinate RP, translations and open continuous-rotation leaf. Current change from base is only a coordinator checkpoint, inspected in full.",
+      "base_revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "base_sha256": "b14a7c0a3738117de28778827e9b5b08be338f7093941a48b6db4aac066cf0e8",
+      "working_sha256": "7e620eea1a45ba97168a5be944eee43b950f2c390494e446524e597f2242be68",
+      "unchanged_from_base": false,
+      "working_git_blob": "2d4f9b79fe37e1c32372c4e4b9d69d0a807e0901"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ROTDEF.md",
+      "read_coverage": "Sections 2.1-2.2 full actual clover definition, source normalization and local support; soft-chain interface.",
+      "base_revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "base_sha256": "413261674aaafa7c68793e9f10ebc1421fdf92871bd583f7c654981511104bf2",
+      "working_sha256": "413261674aaafa7c68793e9f10ebc1421fdf92871bd583f7c654981511104bf2",
+      "unchanged_from_base": true,
+      "working_git_blob": "eea63a92915302a0fa1ab28da34fbf6df96495ce"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "read_coverage": "D1-D9, OWN-alg, RP-lat, CLOSURE-sep, CONTRACT-sep and ordinary/flat domain definitions; not the whole document.",
+      "base_revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "base_sha256": "7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0",
+      "working_sha256": "7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0",
+      "unchanged_from_base": true,
+      "working_git_blob": "2b978a2b41b691ec0da529b8cb620e366312abef"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_OSLEAF.md",
+      "read_coverage": "F1-F5, F8-F9, F12 and final bankable subset; parts of other findings; no claim of complete read.",
+      "base_revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "base_sha256": "cc19dc83485bfbac0d3b7f8186fea27918b522783af4ffe7e1f8bb257d4625e3",
+      "working_sha256": "cc19dc83485bfbac0d3b7f8186fea27918b522783af4ffe7e1f8bb257d4625e3",
+      "unchanged_from_base": true,
+      "working_git_blob": "2a0a2036d2095671f4067643c24bee504d571898"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SPHERE2.md",
+      "read_coverage": "Relevant conditional Ward, operator tower and seam/observable matching findings F7-F13; not a whole-file review.",
+      "base_revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "base_sha256": "1576d59b4cb15a44519fa8a3d34b2ecbf922377d4379dcff4caf31432a8b684b",
+      "working_sha256": "1576d59b4cb15a44519fa8a3d34b2ecbf922377d4379dcff4caf31432a8b684b",
+      "unchanged_from_base": true,
+      "working_git_blob": "83887935a4a3379df3bf1829698be9701b34ea36"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "read_coverage": "H1-H5, H9 and source-domain statements; fixed-coarse-field density and source parameters; later source-radius findings searched; no whole-file certification.",
+      "base_revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "base_sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "working_sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "unchanged_from_base": true,
+      "working_git_blob": "205490b1a4398ed443af4806cd420508d0c0a9b1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "read_coverage": "Complete file; full observable algebra, nontriviality, unique vacuum, positive physical spectral gap, and MG producers.",
+      "base_revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "base_sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "working_sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "unchanged_from_base": true,
+      "working_git_blob": "446a06f8064144be1f87a8e02b2c73130947e772"
+    }
+  ],
+  "concurrent_coordinate_packet_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "revision": "93a9d1a141849dfac1d8f1a585a17e43211ef271",
+      "sha256": "d85027730ac0c7d4c6102ede801be3f4f8cd3b89a34910675280cde15a5f11b7",
+      "read_coverage": "Immutable sections 3-4 and 6 read in full; headlines/consumer map searched; no claim of complete read.",
+      "role": "Documentary coordinate-RP/domain overlap; not a premise of the new diagonal factorization."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HRP.md",
+      "revision": "93a9d1a141849dfac1d8f1a585a17e43211ef271",
+      "sha256": "b02e4fad071318c6558699469eae78397986f325fde7c26848cfd45acea42fd6",
+      "read_coverage": "Entire immutable source review read; HOLD explicitly retained; later executed certificates not reviewed in this unit.",
+      "role": "Documentary coordinate-RP/domain overlap; not a premise of the new diagonal factorization."
+    }
+  ],
+  "methodology_inputs": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    }
+  ],
+  "unread_original_attributions": [
+    "Streater original article",
+    "Glaser original article"
+  ],
+  "target_status": {
+    "full_ym4_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN"
+  }
+}

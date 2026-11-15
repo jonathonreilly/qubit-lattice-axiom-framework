@@ -1,0 +1,41 @@
+{
+  "unit": "charged_stationary_jet",
+  "unexpected_scientific_control_failures": [
+    {
+      "program": "charged_stationary_jet_01_initial.py",
+      "output": "charged_stationary_jet_01_initial_out.json",
+      "stderr": "charged_stationary_jet_01_initial_err.txt",
+      "predicate": "reject_constant_endpoint_mutation",
+      "observed": 1.76506328985706e-18,
+      "required_gt": 0.0001,
+      "interpretation": "This proposed detector is ineffective: centered constant mean BCH2 also vanishes with the endpoint removed. No threshold was relaxed. Original run36/37 preserved; mutation remains rejected independently by root covariance and supplementary exact nonconstant action/gauge controls.",
+      "resolution": "Preserved as diagnostic, not counted as a new rejection in final40/40 run."
+    }
+  ],
+  "operational_reads": [
+    {
+      "item": "local main9ce38a06db4ab4b8457e724fff0d70d88bf1ed81",
+      "result": "Stale; initial methodology git-show paths failed. Superseded by explicit fetched ca2bc7d authority."
+    },
+    {
+      "item": "docs/ai_methodology/skills/CLAIM_STATUS_PROTOCOL.md atca2bc7d",
+      "result": "Wrong path, git-show128; corrected to physics-loop/references/CLAIM_STATUS.md and fully read."
+    },
+    {
+      "item": "https://doi.org/10.1007/BF01208956",
+      "result": "Unverified guessed DOI retrieval failed; not cited or used. Correct Balaban DOI discovered from primary metadata."
+    },
+    {
+      "item": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/46461/220_2005_Article_BF01229381.pdf?sequence=1",
+      "result": "web tool Internal Error/access failure; body not read or imported."
+    },
+    {
+      "item": "Large combined exploratory tool outputs",
+      "result": "Some truncated. Read coverage distinguishes complete bounded rereads from partial evidence; no full-repository/full-paper review claim."
+    },
+    {
+      "item": "An incomplete apply_patch probe after source drafting",
+      "result": "Failed expected-line match; no file mutation occurred. Correct intended constant-field proof patch applied afterward."
+    }
+  ]
+}

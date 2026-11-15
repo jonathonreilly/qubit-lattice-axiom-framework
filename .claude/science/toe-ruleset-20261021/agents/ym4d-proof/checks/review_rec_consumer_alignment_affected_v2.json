@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-30T00:49:22.151953+00:00",
+  "verdict": "LAND_SCOPED_CONSUMER_CORRECTION",
+  "osleaf_v1_sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8",
+  "osleaf_v2_sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+  "osleaf_v2_bytes": 109340,
+  "assembly_sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+  "line_change_opcodes_0_based_half_open": [
+    [
+      "replace",
+      922,
+      927,
+      922,
+      942
+    ]
+  ],
+  "one_replace_hunk_only": true,
+  "outside_hunk_byte_identical": true,
+  "rp_math_bytes": 2591,
+  "rp_math_sha256": "086bef4ca78481cf27a81c4f70b47254d65e47eb3a8ea8d41e563ea71eea545c",
+  "rp_math_unchanged": true,
+  "findings_sha256": "9b88255b97b61cdd759c3cc51ba60559ebb81371bdd5aa97c0bbf95c4a23506f",
+  "parent_metadata_read_before_findings": false,
+  "observed_head": "ddc0515e563507c74050d9c55201abb6981d4d69"
+}

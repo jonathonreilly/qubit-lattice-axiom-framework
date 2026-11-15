@@ -1,0 +1,77 @@
+=== d=2 k=1 nfree=60 rows=29  (t=0.0s)
+  A  all levels : conv=True relgrad=3.6e-16 it=     5 Nall=4.2569 N0=4.2569 Rctr=1.8920 E=9.4599e-01
+      curv*L^2(k-i): 4.257 | res*L^2(k-1-i): 0.473
+  A1 level 0 only: Nall=4.2569 N0=4.2569 Rctr=1.8920 conv=True
+  A2 random signs: Nall=2.1285 N0=2.1285 Rctr=0.9460 conv=True
+=== d=2 k=2 nfree=672 rows=353  (t=0.0s)
+  A  all levels : conv=True relgrad=5.4e-12 it=    69 Nall=7.4895 N0=7.4895 Rctr=2.3116 E=1.8493e-01
+      curv*L^2(k-i): 7.489 7.193 | res*L^2(k-1-i): 0.277 0.092
+  A1 level 0 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 1 only: Nall=7.4895 N0=7.4895 Rctr=2.3116 conv=True
+  A2 random signs: Nall=5.9539 N0=3.0050 Rctr=0.9275 conv=True
+=== d=2 k=3 nfree=6396 rows=3485  (t=0.0s)
+  A  all levels : conv=True relgrad=3.8e-12 it=   260 Nall=8.7320 N0=8.7320 Rctr=2.3477 E=2.3956e-02
+      curv*L^2(k-i): 8.732 8.598 7.194 | res*L^2(k-1-i): 0.108 0.036 0.012
+  A1 level 0 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 1 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 2 only: Nall=8.7320 N0=8.7320 Rctr=2.3477 conv=True
+  A2 random signs: Nall=4.0495 N0=0.0898 Rctr=0.0242 conv=True
+=== d=2 k=4 nfree=58560 rows=32321  (t=0.1s)
+  A  all levels : conv=True relgrad=2.5e-12 it=   887 Nall=8.9612 N0=8.9612 Rctr=2.2960 E=2.7317e-03
+      curv*L^2(k-i): 8.961 8.913 8.414 7.129 | res*L^2(k-1-i): 0.037 0.012 0.004 0.001
+  A1 level 0 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 1 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 2 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 3 only: Nall=8.9612 N0=8.9612 Rctr=2.2960 conv=True
+  A2 random signs: Nall=4.5724 N0=0.0091 Rctr=0.0023 conv=True
+=== d=2 k=5 nfree=529980 rows=293789  (t=1.8s)
+  A  all levels : conv=True relgrad=1.6e-12 it=  2920 Nall=8.9948 N0=8.9948 Rctr=2.2672 E=3.0465e-04
+      curv*L^2(k-i): 8.995 8.978 8.809 8.358 7.114 | res*L^2(k-1-i): 0.012 0.004 0.001 0.000 0.000
+  A1 level 0 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 1 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 2 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 3 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 4 only: Nall=8.9948 N0=8.9948 Rctr=2.2672 conv=True
+  A2 random signs: Nall=8.6044 N0=4.8405 Rctr=1.2201 conv=True
+=== d=3 k=1 nfree=252 rows=199  (t=62.5s)
+  A  all levels : conv=True relgrad=4.7e-16 it=     5 Nall=2.1875 N0=2.1875 Rctr=0.9722 E=1.4584e+00
+      curv*L^2(k-i): 2.188 | res*L^2(k-1-i): 0.729
+  A1 level 0 only: Nall=2.1875 N0=2.1875 Rctr=0.9722 conv=True
+  A2 random signs: Nall=1.0938 N0=1.0938 Rctr=0.4861 conv=True
+  B (sigma=1.0000) : conv=True relgrad=8.4e-16 it=    21 Nall=1.0526 N0=1.0526 Rctr=0.8973 E=8.4938e-02
+      curv*L^2(k-i): 1.053 | res*L^2(k-1-i): 0.095
+  C (sigma=2.0000) : conv=True relgrad=6.1e-16 it=    17 Nall=0.1728 N0=0.1728 Rctr=0.1128 E=1.6608e-02
+      curv*L^2(k-i): 0.346 | res*L^2(k-1-i): 0.068
+=== d=3 k=2 nfree=8352 rows=7753  (t=62.5s)
+  A  all levels : conv=True relgrad=2.3e-11 it=    85 Nall=5.0335 N0=4.0054 Rctr=1.2362 E=8.9009e-01
+      curv*L^2(k-i): 4.005 5.033 | res*L^2(k-1-i): 0.445 0.445
+  A1 level 0 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 1 only: Nall=5.0335 N0=4.0054 Rctr=1.2362 conv=True
+  A2 random signs: Nall=4.0031 N0=0.0082 Rctr=0.0025 conv=True
+  B (sigma=1.0000) : conv=True relgrad=1.6e-11 it=    94 Nall=1.9332 N0=1.9332 Rctr=1.7490 E=5.7757e-02
+      curv*L^2(k-i): 1.933 0.930 | res*L^2(k-1-i): 0.077 0.077
+  C (sigma=3.5556) : conv=True relgrad=6.7e-12 it=    84 Nall=0.6537 N0=0.2034 Rctr=0.0914 E=2.0667e-02
+      curv*L^2(k-i): 0.723 2.324 | res*L^2(k-1-i): 0.062 0.062
+=== d=3 k=3 nfree=238716 rows=233023  (t=62.6s)
+  A  all levels : conv=True relgrad=3.3e-11 it=   245 Nall=6.7818 N0=6.2598 Rctr=1.6830 E=4.6369e-01
+      curv*L^2(k-i): 6.260 6.782 6.167 | res*L^2(k-1-i): 0.232 0.232 0.232
+  A1 level 0 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 1 only: Nall=4.0000 N0=0.0000 Rctr=0.0000 conv=True
+  A1 level 2 only: Nall=6.7818 N0=6.2598 Rctr=1.6830 conv=True
+  A2 random signs: Nall=10.9139 N0=6.3817 Rctr=1.7158 conv=True
+  B (sigma=1.0000) : conv=True relgrad=5.6e-11 it=   270 Nall=2.8372 N0=2.8372 Rctr=2.6728 E=2.6320e-02
+      curv*L^2(k-i): 2.837 1.516 0.879 | res*L^2(k-1-i): 0.042 0.042 0.042
+  C (sigma=4.1728) : conv=True relgrad=2.7e-11 it=   255 Nall=0.8884 N0=0.2758 Rctr=0.0999 E=1.2686e-02
+      curv*L^2(k-i): 1.151 3.707 2.446 | res*L^2(k-1-i): 0.037 0.037 0.037
+=== d=4 k=1 nfree=972 rows=1093  (t=66.1s)
+  A  all levels : conv=True relgrad=4.9e-16 it=     5 Nall=0.8898 N0=0.8898 Rctr=0.3955 E=1.7797e+00
+      curv*L^2(k-i): 0.890 | res*L^2(k-1-i): 0.890
+=== d=4 k=2 nfree=97200 rows=133249  (t=66.1s)
+  A  all levels : conv=True relgrad=6.7e-11 it=    89 Nall=3.6267 N0=0.8399 Rctr=0.2592 E=1.6797e+00
+      curv*L^2(k-i): 0.840 3.627 | res*L^2(k-1-i): 0.280 0.840
+SUMMARY  A: d=2 N0 4.2569 7.4895 8.7320 8.9612 8.9948 | Nall 4.2569 7.4895 8.7320 8.9612 8.9948
+         A: d=3 N0 2.1875 4.0054 6.2598 | Nall 2.1875 5.0335 6.7818 ; d=4 N0 0.8898 0.8399 | Nall 0.8898 3.6267
+         B: Rctr 0.8973 1.7490 2.6728 | N0 1.0526 1.9332 2.8372
+         C: N0 0.1728 0.2034 0.2758 | Rctr 0.1128 0.0914 0.0999
+Q1 PASS  QA FAIL  QB PASS  QC FAIL
+OVERALL: FAIL   (wall 66.2 s, peak RSS 217 MB)

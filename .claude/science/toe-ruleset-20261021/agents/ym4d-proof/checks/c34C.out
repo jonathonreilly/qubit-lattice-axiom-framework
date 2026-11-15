@@ -1,0 +1,30 @@
+  d=1 g0=0.5 seed=0: gamma=0.250 m=0.18 ratios 0.324 0.390 0.488
+  d=1 g0=0.5 seed=1: gamma=0.250 m=0.15 ratios 0.314 0.385 0.488
+  d=1 g0=0.5 seed=2: gamma=0.250 m=0.20 ratios 0.326 0.391 0.488
+  d=1 g0=0.5 seed=3: gamma=0.250 m=0.19 ratios 0.326 0.391 0.488
+  d=1 g0=1.0 seed=0: gamma=0.630 m=0.28 ratios 0.360 0.417 0.484
+  d=1 g0=1.0 seed=1: gamma=0.654 m=0.26 ratios 0.361 0.420 0.485
+  d=1 g0=1.0 seed=2: gamma=0.546 m=0.24 ratios 0.338 0.400 0.480
+  d=1 g0=1.0 seed=3: gamma=0.556 m=0.22 ratios 0.341 0.403 0.481
+  d=1 g0=2.0 seed=0: gamma=1.630 m=0.53 ratios 0.421 0.457 0.485
+  d=1 g0=2.0 seed=1: gamma=1.654 m=0.49 ratios 0.423 0.459 0.486
+  d=1 g0=2.0 seed=2: gamma=1.546 m=0.52 ratios 0.406 0.448 0.482
+  d=1 g0=2.0 seed=3: gamma=1.556 m=0.47 ratios 0.408 0.449 0.482
+  d=2 g0=0.5 seed=0: gamma=0.250 m=0.10 ratios 0.301 0.379 0.488
+  d=2 g0=0.5 seed=1: gamma=0.250 m=0.09 ratios 0.298 0.378 0.488
+  d=2 g0=0.5 seed=2: gamma=0.250 m=0.09 ratios 0.299 0.378 0.488
+  d=2 g0=0.5 seed=3: gamma=0.250 m=0.10 ratios 0.300 0.378 0.488
+  d=2 g0=1.0 seed=0: gamma=0.500 m=0.10 ratios 0.301 0.379 0.478
+  d=2 g0=1.0 seed=1: gamma=0.500 m=0.09 ratios 0.298 0.378 0.478
+  d=2 g0=1.0 seed=2: gamma=0.500 m=0.09 ratios 0.299 0.378 0.478
+  d=2 g0=1.0 seed=3: gamma=0.500 m=0.10 ratios 0.300 0.378 0.478
+  d=2 g0=2.0 seed=0: gamma=1.293 m=0.17 ratios 0.352 0.415 0.472
+  d=2 g0=2.0 seed=1: gamma=1.358 m=0.18 ratios 0.363 0.422 0.474
+  d=2 g0=2.0 seed=2: gamma=1.370 m=0.18 ratios 0.366 0.424 0.475
+  d=2 g0=2.0 seed=3: gamma=1.301 m=0.17 ratios 0.353 0.416 0.472
+C: m found in 24/24 instances
+C1 PASS
+C2 PASS
+C3 PASS
+C4 PASS
+Part C: PASS

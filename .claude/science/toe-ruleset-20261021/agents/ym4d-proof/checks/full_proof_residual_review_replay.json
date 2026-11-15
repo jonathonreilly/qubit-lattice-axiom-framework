@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-29T13:12:57.576531+00:00",
+  "receipt_sha256": "97d14406a0cfc947a12f09d39e2ad79636975434a613dc74c4e5e0dd0c4ca061",
+  "source_note_sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+  "verified_artifacts": 11,
+  "ignored_output_keys": [
+    "started_utc",
+    "finished_utc"
+  ],
+  "runs": [
+    {
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_01.py",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_equal_except_utc": true,
+      "stderr_bytes": 0,
+      "passed": 51,
+      "total": 52,
+      "output_sha256": "c288dec944023592bc6637ab878fbd4a43383dbb4a6d74b2ec05ff0ebb03d768"
+    },
+    {
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_02.py",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "output_equal_except_utc": true,
+      "stderr_bytes": 0,
+      "passed": 27,
+      "total": 27,
+      "output_sha256": "9d70ca423ddfbc56725054c53c3c9da46e75db3c9c766fe7c60b92cc41717797"
+    }
+  ],
+  "limits": "Reproduction of frozen independent review evidence only. First-run failure is the preserved reviewer noncommuting-Gram fixture expectation. No additional source proof or full T_OS certification."
+}

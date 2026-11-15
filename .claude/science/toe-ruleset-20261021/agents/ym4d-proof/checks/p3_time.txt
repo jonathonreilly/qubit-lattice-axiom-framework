@@ -1,0 +1,11 @@
+p3 run record (lane E session 3)
+- criteria checks/p3_criteria.md written ~00:26 UTC 2026-10-28, after PLD.md §15.1-§15.5 and before the script.
+- Pre-run script edits (before any run, disclosed): principal_log rewritten to diagonalise a commuting Hermitian
+  combination (orthonormal eigenbasis); greedy net condition simplified to "min distance > 1/2". No criterion edited.
+- Lock wait from 00:27:07 UTC (lock held by another agent); acquired 00:32:07; load 3.13 3.61 3.75; 34% memory free;
+  nice 10; OPENBLAS/OMP/MKL/VECLIB threads 1; PYTHONDONTWRITEBYTECODE=1; python3 without -I; no timeout. Released by trap.
+- One run, exit 0 at 00:32:08: 1.14 s real, peak RSS 90 MB. SUMMARY: ALL PASS.
+- Disclosure B3: the sampled covering minimum is 0.87439, 6.1e-4 below 0.875, inside the criteria's stated 1e-3
+  sampling tolerance (the greedy set certifies covering of its own 20000 sample points only; the bound |N| <= 5^3 used
+  in the proof is the volumetric one, not this set).
+- Disclosure B5: Monte Carlo 23.118 vs exact 24.167, inside 3 standard errors (2.625); the estimator is heavy-tailed.

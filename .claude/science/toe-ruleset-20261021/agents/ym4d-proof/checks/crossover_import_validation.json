@@ -1,0 +1,174 @@
+{
+  "utc": "2026-10-29T17:45:52.893669+00:00",
+  "vocabulary": {
+    "argv": [
+      "/usr/local/bin/python3",
+      "scripts/vocab_lint.py",
+      "--report-only",
+      "--report-path",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_criteria.md"
+    ],
+    "exit_code": 0,
+    "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json\n",
+    "stderr": ""
+  },
+  "python_syntax": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py",
+      "ok": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+      "ok": true
+    }
+  ],
+  "json_parse": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.receipt.json",
+      "ok": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stdout.json",
+      "ok": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_downloads.json",
+      "ok": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json",
+      "ok": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_manifest.json",
+      "ok": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_prose_status.json",
+      "ok": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.receipt.json",
+      "ok": true
+    }
+  ],
+  "relative_links": [
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "MASS_GAP_TARGET.md",
+      "exists": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_criteria.md",
+      "exists": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_manifest.json",
+      "exists": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "exists": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_attempt01.py",
+      "exists": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_attempt01.receipt.json",
+      "exists": true
+    },
+    {
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_attempt01.stdout.json",
+      "exists": true
+    }
+  ],
+  "whitespace": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.receipt.json",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stderr.txt",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stdout.json",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_criteria.md",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_downloads.json",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stderr.txt",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stdout.txt",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_manifest.json",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_prose_status.json",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.receipt.json",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stderr.txt",
+      "trailing_space_lines": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stdout.txt",
+      "trailing_space_lines": []
+    }
+  ],
+  "hidden_condition_scan": [],
+  "checks": {
+    "runner_snapshot_identical": true,
+    "source_hash_matches_receipt": true,
+    "stdout_hash_matches_receipt": true,
+    "stderr_hash_matches_receipt": true,
+    "attempt_success": true,
+    "no_closed_target_rows": true,
+    "all_local_links_exist": true,
+    "no_trailing_whitespace": true,
+    "vocabulary_success": true,
+    "no_full_third_party_copy_in_owned_set": true
+  },
+  "all_passed": true
+}

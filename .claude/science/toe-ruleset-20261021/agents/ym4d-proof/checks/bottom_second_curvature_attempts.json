@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-10-29T20:05:17.400725+00:00",
+  "criteria": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_criteria.md",
+    "sha256": "a70fa63222663487566be4450b5fd25815c12d09553babce118664be130029b7",
+    "bytes": 3046
+  },
+  "criteria_written_before_code": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "program": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01.py",
+        "sha256": "3e996c7ae4b9e92ca756e827d16160ad54ae323c373264bf980dc60442fc0808",
+        "bytes": 6192
+      },
+      "command": "python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01.py > .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_out.json 2> .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_err.txt",
+      "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+      "tool_session_id": 99081,
+      "observed_exit_code": 0,
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_out.json",
+        "sha256": "34c0a218592ac1b9764b76aff43b2d09935e9bb48832ec735b10bdca05dd08a2",
+        "bytes": 25459
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "passed": 76,
+      "total": 76,
+      "elapsed_seconds": 0.9118480682373047,
+      "threshold_changes": 0,
+      "implementation_changes_after_first_run": 0
+    },
+    {
+      "attempt": 1,
+      "program": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02.py",
+        "sha256": "5f0d3dbad4ce83cf22e1522607e211cc9574596b1f41911f7934b7fd896ff7c5",
+        "bytes": 10831
+      },
+      "command": "OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02.py > .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_out.json 2> .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_err.txt",
+      "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+      "tool_session_id": 7693,
+      "observed_exit_code": 0,
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_out.json",
+        "sha256": "425cae6c2906bc001a914fe50e3dc88685e723dc1c7d1266a49cddd5ad2331c4",
+        "bytes": 10743
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "passed": 61,
+      "total": 61,
+      "elapsed_seconds": 7.217893123626709,
+      "threshold_changes": 0,
+      "implementation_changes_after_first_run": 0
+    }
+  ],
+  "failures": [],
+  "retrieval_failures": [
+    {
+      "url": "https://arxiv.org/html/2303.10754v2",
+      "outcome": "404; abstract retrieved separately"
+    }
+  ],
+  "false_starts": "No new numerical predicate failed. Prior charged-unit failures remain in its immutable packet; no new file overwrote them.",
+  "runtime": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+  },
+  "limits": "Finite controls are ordinary floating-point support, not interval certification, all-depth sampling, or proof of the complex analytic estimates. No full repository pipeline run by this bounded worker."
+}

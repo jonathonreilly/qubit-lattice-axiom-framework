@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-10-29T17:52:51.397987+00:00",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "criteria_sha256": "c7b9f0b6fa0ad158e88d837f75702f93f64e80d58c29f33367aa43f90db8d8ab",
+  "source_files": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_manifest.json": "50af7f02d0dea358ad7e7e68badb6b3919b3e6834b0e13b085af806a824141b7",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check.py": "5b7ceb26a0129b77711529c033b6f6b2bfde590142b1dc5d873658dfc27c2731",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_criteria.md": "380eeff8b7f303640d7cf6a0ce87f98ec0c14af558e8f19d402e73ece6c91870",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_fetch_record.json": "80424281fa274e2a41af39c083f41218881dc07ac6683417f1d7cd3dc01eabde",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_literature.md": "e083b404dd68c428a65a9b7b95df9e0b50138cb6b3642dddb7ae07f60f98e466",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_read_coverage.json": "131c0e879a08d14425ae01d55f9cb9afde7fbb8f2aef4b93f9e6f0e51c8fe0de",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_results.md": "d07db16cdf78ced0cf456bc974da17234c3bf7577600c18e0820a8c12bd3f957",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_01.json": "c10a6274b394ff868abc44b2f5a79f51f6ccfba01ec75adbfbc7fa2fff4c5e86",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_02.json": "52d3b95cdb0749d476e33a36ec79c25d4dfc424e58f23503c211bca6b7c9837b"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "unit": "frozen_transported_chart",
+  "created_utc": "2026-10-30T10:25:45.443569+00:00",
+  "source_freeze": {
+    "path": "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+    "lines": 787,
+    "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8"
+  },
+  "read_manifest": {
+    "path": "checks/frozen_transported_chart_read_manifest.json",
+    "sha256": "b0bc47ee7ffa1257554f53e0a87dc4892df2849a4414eaff14f5d5b559fc3b49"
+  },
+  "source_frozen_before_provenance": true,
+  "author_proposal_status": "pending_fresh_independent_review",
+  "strongest_claim": "Actual global and deterministic regional frozen/transported product-link chart logarithms with a shared full frozen-phase prefactor and a rare transport-bearing complete-reader bound.",
+  "new_steps": [
+    "FT3–FT10: exact output-numerator-only perturbation and actual frozen-coordinate regional critical/covariance library, retaining original fine normalizers and all modes.",
+    "FT11–FT16: actual ordered holomorphic Phi map, local Haar pullback identity and exact cofactor-velocity boundary current.",
+    "FT17–FT25: one full prefactor for all transport masks, old/new faces and corners, active Haar, touching constants and three-state flags.",
+    "FT26–FT33: density-only covariance forests with variable local shifts, individual scalar factorials and actual-face-rooted marked shift costs.",
+    "FT34–FT38: separate positive rescalings preserve new transport rarity through raw connected sums, full-reader regrouping and the logarithm.",
+    "FT39–FT42: explicit fixed/shrinking radius order, q-good fixed exterior specialization, Cauchy jet costs and the exact CG Delta_chart logarithm."
+  ],
+  "explicit_limits": [
+    "No Q/G/Omega/history predicate or rough compact numerator is moved.",
+    "The two coordinate stationary points are not identified; the Haar-Jacobian phase term is retained.",
+    "Regional estimates use the actual regional shift budget and sufficiently small fixed touching boundary values.",
+    "The coarse width of a compact numerator is not enlarged by this pure-chart theorem; QC is not a premise.",
+    "Delta_chart itself can grow with volume; its connected logarithm has the uniform rooted reader bound.",
+    "Marked compact expectation estimates, effective histories, continuum existence, non-freeness and physical continuum mass gap remain open."
+  ],
+  "verification": {
+    "source_sha256_and_line_count_checked_before_metadata": true,
+    "input_identities_recomputed": true,
+    "verification_kind": "Textual mathematics and structural provenance only; no scientific numerical experiment or numerical evidence for the theorem.",
+    "science_numerical_runs": []
+  },
+  "review_request": {
+    "owner": "parent/root",
+    "required": "DIFFERENT fresh hostile reviewer, exact frozen source; verdict LAND or HOLD.",
+    "same_family_disclosure": "Author is Codex; a future Codex reviewer is same-family despite being a different fresh reviewer.",
+    "targets": [
+      "Numerator-only frozen perturbation and actual normalizer domains",
+      "Regional force/Hessian/tail budgets and common ambient family",
+      "Phi order, traceless branch, Haar Jacobian and cofactor signs",
+      "Variable-shift density jets without a hidden chain rule",
+      "All scalar factorials, colour dimensions, vertex/face flags and corners",
+      "Transport rarity through both final positive tree sums",
+      "Shrinking radius order and compact/hard-predicate scope boundaries"
+    ]
+  },
+  "ownership": {
+    "new_files_only": [
+      "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "checks/frozen_transported_chart_read_manifest.json",
+      "checks/frozen_transported_chart_receipt.json"
+    ],
+    "predecessor_edits": false,
+    "shared_front_edits": false,
+    "git_or_pr_mutations": false,
+    "audit_or_ledger_edits": false,
+    "extra_workers": false
+  }
+}

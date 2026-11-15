@@ -1,0 +1,222 @@
+{
+  "record_type": "independent_source_findings_before_author_receipt",
+  "created_utc": "2026-10-30T04:18:40.885950+00:00",
+  "reviewer": "fresh same-family reviewer context /root/review_external_return_bridge",
+  "requested_configuration": "Astra/max requested; backend model and effort not independently attested",
+  "target_sha256": "66df23c70e3ef7f08e3960b314d3ae7356d01a235ce2038258109e35af384291",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "external_repository": "MathePhysics/4D_Wilson_Loop_RG",
+  "external_commit": "70d9a772fc9c7b47e36fd5e384fe42e07e7ccded",
+  "external_commit_time_utc": "2026-10-29T11:56:26Z",
+  "external_tree": "ecf05363643c315bd6416062c3297204b666f625",
+  "external_identity_check": "After passage inspection, GitHub connector commit/tree mapping was matched to blob SHA1, then raw pinned bytes were independently SHA256/Git-blob hashed with curl and Python hashlib. No full third-party source saved to this packet.",
+  "author_receipt_opened": false,
+  "prior_review_opened": false,
+  "source_order": "Target and primary/local mathematical sources, then exact upstream blob checks, then this findings freeze. External gamma section 19 was read as part of the mathematical source; no linked review report was opened.",
+  "local_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTERNAL_RETURN_BRIDGE_ASTRA.md",
+      "sha256": "66df23c70e3ef7f08e3960b314d3ae7356d01a235ce2038258109e35af384291",
+      "bytes": 18258,
+      "read_windows_1_based": [
+        [
+          1,
+          299
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "bytes": 42966,
+      "read_windows_1_based": [
+        [
+          1,
+          76
+        ],
+        [
+          334,
+          669
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "bytes": 32868,
+      "read_windows_1_based": [
+        [
+          1,
+          37
+        ],
+        [
+          401,
+          590
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "bytes": 25946,
+      "read_windows_1_based": [
+        [
+          1,
+          35
+        ],
+        [
+          327,
+          508
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "read_windows_1_based": "complete",
+      "scope": "lane process"
+    }
+  ],
+  "external_sources": [
+    {
+      "path": "drafts/WILSON_IT1_CAUCHY_ESTIMATE_2026_10_27.md",
+      "blob_sha1": "82f7bd9b9b147096d2a2a78f207750257f18de5c",
+      "sha256": "8b42e1e7397aedd3145e20e5388f3d8518f060765f15c76f7165d6f05aaad2d7",
+      "bytes": 323615,
+      "read_windows_1_based": [
+        [
+          1,
+          19
+        ],
+        [
+          36,
+          48
+        ],
+        [
+          891,
+          953
+        ]
+      ],
+      "scope": "complete section 11 and opening/setting/constants/source inventory; no certification of external suppliers",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CAUCHY_ESTIMATE_2026_10_27.md"
+    },
+    {
+      "path": "drafts/WILSON_IT1_CONTINUUM_LIMIT_CLOSURE_2026_10_26.md",
+      "blob_sha1": "e66d0b34f9bb5c7fa5f51ffe6d6cd9b60837b9f4",
+      "sha256": "302d20f45aaf24434211181577f9827168d07247003478ccee36dd040af519f2",
+      "bytes": 88617,
+      "read_windows_1_based": [
+        [
+          90,
+          114
+        ]
+      ],
+      "scope": "complete section 7",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CONTINUUM_LIMIT_CLOSURE_2026_10_26.md"
+    },
+    {
+      "path": "drafts/WILSON_IT1_LF_GAMMA_REPAIR_ATTEMPTS_2026_10_28.md",
+      "blob_sha1": "5c129d4e65723be6ac6750177bc32a0ee4ed06aa",
+      "sha256": "b02fe17a8894df7ba3a9272df98c8100902966a699345a708f67d8600f37587a",
+      "bytes": 142512,
+      "read_windows_1_based": [
+        [
+          1,
+          29
+        ],
+        [
+          680,
+          726
+        ],
+        [
+          1154,
+          1278
+        ],
+        [
+          1385,
+          1674
+        ],
+        [
+          1980,
+          2084
+        ]
+      ],
+      "scope": "sections 12.1,16,18-21,22.8,23 and opening; no review of Gaussian sections 22.1-22.7 or linked reviewer reports",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_LF_GAMMA_REPAIR_ATTEMPTS_2026_10_28.md"
+    },
+    {
+      "path": "drafts/BALABAN_PAPER_LABELS.md",
+      "blob_sha1": "11c3a5fa36783ec6eb70c8d96e55364f490149c0",
+      "sha256": "24a34f691d6189555ebb74349657d71000a88942c29f357bb37ef0a0b34a45ee",
+      "bytes": 9197,
+      "read_windows_1_based": [
+        [
+          1,
+          44
+        ]
+      ],
+      "scope": "bibliography only; no original Balaban proofs read",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/BALABAN_PAPER_LABELS.md"
+    },
+    {
+      "path": "README.md",
+      "blob_sha1": "2adfd57420e1b2618d3a4bb2f1e1c8bb59b8f028",
+      "sha256": "ffb428984b61984648a9de1a17e0d0b9e1227d5b68679cddad89dcd0975f0390",
+      "bytes": 19565,
+      "read_windows_1_based": [
+        [
+          1,
+          79
+        ]
+      ],
+      "scope": "authorship and explicit finite-volume programme context; status labels not proof",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/README.md"
+    }
+  ],
+  "findings": [
+    {
+      "id": "comparison-domain",
+      "conclusion": "Accurate. Cauchy 893 and 918-936 bound real whole stopping-torus integrals with F proportional to N_s^4(1+log(1/g_a)); continuum 92-113 fixes exterior data and retains the unproved local quotient/test-margin input. No implication from the whole-integral result to that fixed-exterior statement is supplied."
+    },
+    {
+      "id": "history-accounting",
+      "conclusion": "Accurate and conditional. From kappa_tr=kappa_hat+G+H and Pc+CP P<=H+G/2 one gets -kappa_tr+Pc<=-kappa_hat-CP P-G/2. Combining Z0>=exp(-F) with sum nonempty pattern bounds gives exp(2F)(exp(s)-1); positivity gives w0>=1/(1+delta). None verifies the modified scale-dependent recurrence, source normalisation/cancellation assumptions, or history entropy."
+    },
+    {
+      "id": "marked-marginal",
+      "conclusion": "Accurate. Gamma 1480-1484 separates the full preliminary logarithm from its localized pieces; 1551 and 1581 retain mixed-domain norm transfer and stopped-history reserve; 1645-1671 require the actual localized representation and weighted marked norms; 2028/2054/2081 retain the mixed-domain identification, non-small mixed quadratic issue, complete potential majorant and marked localization."
+    },
+    {
+      "id": "reusable-mechanism",
+      "conclusion": "The reusable content is conditional ordered telescoping with common envelopes and all hybrid/test-function marks, followed by one terminal payment P exp(-cP)<=1/(ec), c>0. Costs are allocated before entropy. This is not a theorem for the actual interacting kernels, and it grants no reserve again at prefixes or re-entry."
+    },
+    {
+      "id": "local-interface-match",
+      "conclusion": "Accurate as a structural comparison only. RD4 352-397 needs matching of all measures/actions/cuts/normalizers and denominator nonvanishing/TV; 401-460 needs full-reader connected types and exact gluing as well as L7. SC 367-497 retains covariance readers, determinant normalization, connected summation and original cut/history interfaces. External active integration P and spatial Y/tree weights do not establish RD4 cardinality norm or original Wilson/Decision-4 identity."
+    },
+    {
+      "id": "scope",
+      "conclusion": "No substantive correction identified. Target explicitly imports no gauge theorem, does not allege a whole-paper defect or no-go, and leaves fixed-history normalized return, 4D continuum existence and the physical continuum mass gap OPEN. Its Cauchy/gamma starting-hash qualification is accurate. Preliminary scoped disposition LAND as a literature interpretation only."
+    }
+  ],
+  "not_performed": [
+    "no new Yang-Mills proof",
+    "no complete external-paper review",
+    "no recursive local-producer re-review",
+    "no original Balaban/Dimock theorem verification",
+    "no numerical experiment",
+    "no author freezer",
+    "no git mutation/fetch/commit/push",
+    "no audit/ledger/front/index operation",
+    "no additional worker"
+  ],
+  "tool_failures": [
+    "Oversize node hashing request rejected at 64000-byte auto-review limit; recovered by independent raw-byte hashing with curl/Python, without a permission request.",
+    "Python urllib certificate verification failed before reading source bytes; recovered using curl with its normal TLS verification."
+  ]
+}

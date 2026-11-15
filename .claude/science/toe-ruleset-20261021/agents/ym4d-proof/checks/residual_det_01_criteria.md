@@ -1,0 +1,12 @@
+# Exact controls for the completed determinant and transverse correction
+
+Written before the script. Prior exposure: the algebra in RESIDUAL_DETERMINANT_ASTRA §1 and the author's hand derivation of the continuum soft-distance transverse correction. The expected coefficient −3 below comes from that derivation, not from a computation to be retargeted.
+
+1. Construct a five-dimensional joint Hessian in moving orthonormal fine/coarse Hodge frames. Compare its determinant through order two by a direct permutation expansion against the exact Schur product, and compare the direct log-determinant coefficient against all five reduced trace groups plus the mass/gauge determinants. The moving frames are polynomial jets of exact rotations; their first and second derivatives must both be included.
+2. Check the full residual combination including the compressed covariance S, both gauge factors, and the off-shell Wilson block. Omitting a gauge factor, freezing only the transverse frame, replacing the completed A by the Wilson transverse block, and using half the required relative bubble coefficient must each be rejected on the selected nondegenerate rational instance.
+3. For the soft-distance model with D_A=(1,0), D_B=(1,t), μ=3/2 and H_W,TT=5, independently eliminate (coarse transverse,h) in its original 3×3 Hessian and compare with elimination of h first. The expected A is 5−(9/2)t²−(3/2)t⁴. Verify fine gauge-row completion and both mixed gauge-row identities. Omitting either projected h coupling must change the quadratic answer. This is an algebraic model/control, not an actual lattice SU(N) configuration.
+4. Check the separate-pole criterion: (2,2) is integrable at both centres and yields scaled P² log(1/P)→0 for two O(P²) residuals; (3,3) is also separately integrable but has nonzero scaling degree after the same residual factors; (4,2) is not locally integrable and cannot be accepted merely from its total degree.
+
+No floating-point arithmetic is allowed in a verdict. Direct determinant coefficients use polynomial convolution and the permutation definition, independently of inverse/trace formulas. Failure output is preserved. A failed assertion is not repaired by changing its expected value without recording the mistake and a new derivation. These checks certify finite algebra and scaling arithmetic only; the analytic estimates and actual-action identification require written proofs.
+
+UTC: 2026-10-29T12:12:51.568968+00:00

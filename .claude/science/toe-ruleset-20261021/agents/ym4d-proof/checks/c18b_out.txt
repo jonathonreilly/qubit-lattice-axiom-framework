@@ -1,0 +1,10 @@
+background: S_f=19.689152 max plaquette angle/2=0.1745
+t=0 R=0.812630
+t=0.005 R=0.812342
+t=0.01 R=0.811479
+t=0.02 R=0.808047
+t=0.04 R=0.794612
+(R(t)-R(0))/t: 0.0576 0.1151 0.2292 0.4504
+PASS c18b: |R(t)-R(0)| <= C t with C=0.450, R(0)=0.812630
+runtime 6.1 s
+TOTAL: PASS=1 FAIL=0

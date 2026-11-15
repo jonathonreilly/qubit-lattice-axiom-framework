@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_atoms_wrong_order.py", line 53, in <module>
+    ck('actual_inverse_order',np.linalg.norm(np.linalg.inv(ident-R)@P-G,np.inf)<1e-12)
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_atoms_wrong_order.py", line 7, in ck
+    if not v:raise AssertionError(n)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: actual_inverse_order

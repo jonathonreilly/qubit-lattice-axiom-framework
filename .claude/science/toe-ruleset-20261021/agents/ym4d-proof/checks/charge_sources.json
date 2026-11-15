@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-10-30T06:10:02.528205+00:00",
+  "head": "114cc809e9eca45a98dd0932b133457fa1f60ede",
+  "local_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "remote_freshness": "unverified: FETCH_HEAD write denied",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "sha256": "6b57e1cdf2db8f40cb6fa163add31bf1e4ffab2e05cc4e92a7e175c72f350ad6",
+      "bytes": 68555,
+      "lines": 1017
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/CHARGE/AUTHOR.md",
+      "sha256": "6ef277f174e59ff7cb13ec94780296b0985a14fefc35f0dac4bcb7820f0a5ba4",
+      "bytes": 3624,
+      "lines": 19
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/CHARGE/REVIEW.md",
+      "sha256": "6dd2205bd294ffe895998542da811b9ce7a715fbda42725aac7ce166cb753e13",
+      "bytes": 798,
+      "lines": 10
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md",
+      "sha256": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+      "bytes": 34511,
+      "lines": 623
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RENEW.md",
+      "sha256": "8c414efb7ab0e152da523ff9a56f192fc2fbee4282394a0fa0a448ecc62ea3ad",
+      "bytes": 21796,
+      "lines": 335
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md",
+      "sha256": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+      "bytes": 42883,
+      "lines": 767
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md",
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "bytes": 41724,
+      "lines": 766
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "bytes": 40582,
+      "lines": 764
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD3.md",
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "bytes": 36157,
+      "lines": 654
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "bytes": 42966,
+      "lines": 741
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+      "sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902",
+      "bytes": 352591,
+      "lines": 3750
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md",
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+      "bytes": 662171,
+      "lines": 4782
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BFT_B_S9_S10.md",
+      "sha256": "e3503ed4a087b330db0272b50a4212f37eb64e83f15bf312c7d4ec5a7cadc6b7",
+      "bytes": 101434,
+      "lines": 1070
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD.md",
+      "sha256": "890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968",
+      "bytes": 134852,
+      "lines": 661
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-existence/EXISTENCE.md",
+      "sha256": "14345292370a55e1dabbb0875e70b4a989bfdf096841255bed7eb75771a647f0",
+      "bytes": 495233,
+      "lines": 4858
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "lines": 26
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "lines": 193
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "lines": 93
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "lines": 354
+    }
+  ],
+  "coverage": "See CHARGE_LOG.md; full hashes do not certify full reading of large historical files."
+}

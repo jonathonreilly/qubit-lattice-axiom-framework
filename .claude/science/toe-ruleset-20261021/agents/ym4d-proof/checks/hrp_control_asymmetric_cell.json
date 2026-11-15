@@ -1,0 +1,43 @@
+{
+  "name": "control_asymmetric_cell",
+  "matrix_numerator": [
+    [
+      40,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      24,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "denominator": 40,
+  "basis": [
+    "1",
+    "a",
+    "b",
+    "ab"
+  ],
+  "certificate": {
+    "psd": false,
+    "hermitian": false
+  },
+  "extra": {
+    "interaction": "one closed crossing walk with holonomy a+ b-"
+  }
+}

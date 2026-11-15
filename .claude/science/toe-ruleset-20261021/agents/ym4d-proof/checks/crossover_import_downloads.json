@@ -1,0 +1,28 @@
+[
+  {
+    "name": "abdesselam_rivasseau_9409094v1",
+    "url": "https://arxiv.org/pdf/hep-th/9409094v1",
+    "returncode": 0,
+    "stderr": "",
+    "local_only_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.pdf",
+    "sha256": "6498535d584bd935cd3d57f565d9c662c4fccbba31f623850431d2de3b4d8bee",
+    "bytes": 303807,
+    "valid_pdf_header": true,
+    "pages": 36,
+    "text_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.txt",
+    "text_sha256": "8249f0a4b74a5487de9474f5a7c59fecb6558f3af51de247a4f559ecac592edc"
+  },
+  {
+    "name": "abdesselam_bkar_notes",
+    "url": "https://mabdesselam.github.io/BKAR.pdf",
+    "returncode": 0,
+    "stderr": "",
+    "local_only_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_bkar_notes.pdf",
+    "sha256": "b53076ce94c8a5b704e275f12f7412337b39486a161e7810ce9879509e679d90",
+    "bytes": 174669,
+    "valid_pdf_header": true,
+    "pages": 10,
+    "text_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_bkar_notes.txt",
+    "text_sha256": "f03ef0bcc728722ba9c3bef0db9748031f84a8d777a8b14d77978c719dca489a"
+  }
+]

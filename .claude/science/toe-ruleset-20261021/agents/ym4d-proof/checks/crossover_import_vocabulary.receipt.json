@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-29T17:41:48.100204+00:00",
+  "argv": [
+    "python3",
+    "scripts/vocab_lint.py",
+    "--fix",
+    "--report-path",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_prose_status.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_criteria.md"
+  ],
+  "returncode": 0
+}

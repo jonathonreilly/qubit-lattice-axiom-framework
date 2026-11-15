@@ -1,0 +1,341 @@
+{
+  "schema": "review_holomorphic_compact_return_receipt_v1",
+  "stage": "final review report binding after source-only freeze and packet consistency",
+  "created_at_utc": "2026-10-30T11:09:37.791062+00:00",
+  "verdict": "LAND",
+  "verdict_scope": "Exact HC1-HC40 supplied-model one-bare-step original-cut logarithm relative to frozen product chart; optional transported reference with separate transport rate; fixed-center complex tube and fixed positive original-source radius.",
+  "proof_obligation_disposition": "CLOSED within stated theorem scope",
+  "full_non_free_continuum_existence": "OPEN",
+  "positive_physical_continuum_mass_gap": "OPEN",
+  "reviewer": {
+    "identity": "/root/review_holomorphic_compact_return",
+    "authorship": "Fresh context independent of author",
+    "family": "same-family Codex",
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "max",
+    "backend_independently_attested": false
+  },
+  "methodology_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+    "sha256": "63f39da653ebe955f5f0b37facaef5eb7d7898d148dbff8245d35f7a3495b78a",
+    "lines": 47
+  },
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+    "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+    "lines": 734,
+    "read_ranges": [
+      [
+        1,
+        734
+      ]
+    ],
+    "coverage": "full"
+  },
+  "source_pins": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "lines": 734,
+      "read_ranges": [
+        [
+          1,
+          734
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "lines": 591,
+      "read_ranges": [
+        [
+          1,
+          591
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "lines": 787,
+      "read_ranges": [
+        [
+          1,
+          787
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "lines": 753,
+      "read_ranges": [
+        [
+          1,
+          753
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "lines": 644,
+      "read_ranges": [
+        [
+          1,
+          644
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "read_ranges": [
+        [
+          1,
+          597
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "read_ranges": [
+        [
+          1,
+          711
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "read_ranges": [
+        [
+          1,
+          556
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "coverage": "full"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "read_ranges": [
+        [
+          87,
+          644
+        ]
+      ],
+      "coverage": "consumed arguments only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "lines": 624,
+      "read_ranges": [
+        [
+          1,
+          390
+        ]
+      ],
+      "coverage": "consumed arguments only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "lines": 568,
+      "read_ranges": [
+        [
+          1,
+          390
+        ]
+      ],
+      "coverage": "consumed arguments only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "lines": 617,
+      "read_ranges": [
+        [
+          1,
+          420
+        ]
+      ],
+      "coverage": "consumed arguments only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "lines": 641,
+      "read_ranges": [
+        [
+          1,
+          300
+        ]
+      ],
+      "coverage": "consumed arguments only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+      "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+      "lines": 707,
+      "read_ranges": [
+        [
+          1,
+          260
+        ]
+      ],
+      "coverage": "consumed arguments only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "lines": 812,
+      "read_ranges": [
+        [
+          312,
+          376
+        ],
+        [
+          656,
+          682
+        ]
+      ],
+      "coverage": "consumed arguments only"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_read_coverage.json",
+      "sha256": "179d8e2f195e3e0d6098e4d3e7764e3ed4b90426dde152efd71dc6942e2258f2",
+      "lines": 331
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_only_findings.md",
+      "sha256": "59382f4e637e769b3598219d3baec9274a3f8eefe4b0dd356ac2ae47bc60738a",
+      "lines": 64
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_freeze.json",
+      "sha256": "6f93df5000835c7f326828fdd617ca0084613d23137a2ef9a24f796cc6d84365",
+      "lines": 10
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_packet_consistency.json",
+      "sha256": "dd66e7ef9743c1ca0f3afb9c8a90630e618695296763560a659d96a979c0efc2",
+      "lines": 204
+    }
+  ],
+  "author_packet": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/holomorphic_compact_return_read_manifest.json",
+      "sha256": "9c233b3cae6757bc696358ed6ab9d704569e304addf4048283a55fcd736395d6",
+      "lines": 67,
+      "expected_sha256": "9c233b3cae6757bc696358ed6ab9d704569e304addf4048283a55fcd736395d6",
+      "expected_lines": 67,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/holomorphic_compact_return_receipt.json",
+      "sha256": "39c34266cf66e58cb586f12271a09da692a0d0c794efc8a0307cc218e302affc",
+      "lines": 55,
+      "expected_sha256": "39c34266cf66e58cb586f12271a09da692a0d0c794efc8a0307cc218e302affc",
+      "expected_lines": 55,
+      "match": true
+    }
+  ],
+  "chronology": [
+    "Read target mathematics and exact consumed producer arguments",
+    "Freeze independent source-only findings and exact read/hash coverage",
+    "Open both author packet files",
+    "Finish independent packet consistency check",
+    "Write final report and this binding receipt",
+    "Independently recheck frozen source and artifact hashes into final_recheck.json"
+  ],
+  "material_findings": [],
+  "source_repairs_required": [],
+  "open_consumer_interfaces": [
+    "Moving-center coarse derivatives and global effective potential",
+    "Inherited or future-conditioned histories; all-history return",
+    "Effective-class iteration and wider coarse/derivative domain",
+    "White-Omega matching and separate original complement bounds",
+    "Continuum existence, non-freeness and physical mass-gap reconstruction"
+  ],
+  "independent_math_checks": [
+    "Manual rough-word paired trace expansion and Young-debit arithmetic",
+    "Local shell/brick and selected-dummy-domain bijection reconstruction",
+    "Full-block covariance marginal, density-only forest and rare-root count",
+    "Independent two-stage positive charge-rescaling algebra",
+    "Explicit common-tube translation inequality and asymptotic cost comparison",
+    "Reference-change sign and fixed-center factorial inverse-radius derivatives"
+  ],
+  "checks_not_run": [
+    "Numerical science/author runner",
+    "Branch-wide pipeline, strict lint and integration gates"
+  ],
+  "source_or_predecessor_edits": false,
+  "git_pr_audit_operations": false,
+  "extra_workers_spawned": false,
+  "author_packet_or_prior_review_used_as_mathematical_premise": false,
+  "authorized_write_set": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_read_coverage.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_only_findings.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_freeze.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_packet_consistency.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_final_recheck.json"
+  ],
+  "final_recheck_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_final_recheck.json"
+}

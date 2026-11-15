@@ -1,0 +1,457 @@
+{
+  "created_utc": "2026-10-29T15:12:53.013725+00:00",
+  "scope": "Independent review of one new scientific unit in PR10114; original complete source and exact consumed premises. Not whole PR or theory certification.",
+  "main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "rows": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "revision": "worktree",
+      "sha256": "197c2662d562fc1b4194e77e4dc0c670f339254d2eca3f8164f01eb2c78e325e",
+      "bytes": 28372,
+      "lines": 509,
+      "read_scope": "Original 503 lines completely read at cdc877b; complete six-line orientation amendment read and confirmed against that original. Further repair reporting changes require affected read.",
+      "role": "reviewed scientific unit",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "revision": "worktree",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507,
+      "lines": 133,
+      "read_scope": "Complete file, including dense-state criterion, physical rate, uniform prefactor/onset and safe-time hierarchy.",
+      "role": "target specification, not missing infrared input",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "revision": "worktree",
+      "sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+      "bytes": 770668,
+      "lines": 7182,
+      "read_scope": "932-1026 (target and entire Setting), 2015-2065 (Decision 4 and D4-norm with D4-obs); heading search elsewhere is navigation only.",
+      "role": "Consumed Wilson action, group/spacing, S4 path definitions and exact normalized kernel; no whole-proof certification",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "revision": "worktree",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "bytes": 203830,
+      "lines": 1900,
+      "read_scope": "34-47 and 104-130 (complete conventions and exact multi-level chain section); surrounding lines returned incidentally are not whole-file certification.",
+      "role": "Consumed plain-chain normalization and conditional independence; no history-restricted theorem consumed",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_ASTRA.md",
+      "revision": "worktree",
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "bytes": 46461,
+      "lines": 855,
+      "read_scope": "1-110; 300-314; 803-end, plus heading/open-scope navigation.",
+      "role": "Scope context only; no parametrix, critical-map or return theorem used",
+      "complete_file_read": false
+    },
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "lines": 26,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "lines": 193,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "lines": 370,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "lines": 96,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "lines": 183,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "lines": 248,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "lines": 140,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "lines": 394,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "bytes": 21536,
+      "lines": 366,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "lines": 354,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "lines": 233,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "lines": 57,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "lines": 99,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "lines": 110,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "bytes": 3694,
+      "lines": 72,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "bytes": 10595,
+      "lines": 202,
+      "read_scope": "Complete file; initially truncated batches were recovered in bounded subsequent reads.",
+      "role": "governance/authority boundary only; no physics conclusion imported",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f6b39e5a1b23b62053b1fdb53c2eedbadc34628ff12a7a9a058b2c91c483a711",
+      "bytes": 17501,
+      "lines": 368,
+      "read_scope": "Complete note, checking the stated object and scope; linked proof closures and runners not recursively certified.",
+      "role": "prior-art context only; no unproved source result is a premise of the new proof",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "0bfb6dd97b50c569233b1b152c543ce091dd2db1c29d64c41de88c9348799636",
+      "bytes": 13379,
+      "lines": 276,
+      "read_scope": "Complete note, checking the stated object and scope; linked proof closures and runners not recursively certified.",
+      "role": "prior-art context only; no unproved source result is a premise of the new proof",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f81916765febda3dd378650d3298cd2a2afc368824ea14e618607a71a472dc80",
+      "bytes": 7548,
+      "lines": 265,
+      "read_scope": "Complete note, checking the stated object and scope; linked proof closures and runners not recursively certified.",
+      "role": "prior-art context only; no unproved source result is a premise of the new proof",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "d8ba4a2c73d6bb897d3ebea4601f4a89a53e37830b582b0df40f5f3d67494bf1",
+      "bytes": 4898,
+      "lines": 92,
+      "read_scope": "Complete note, checking the stated object and scope; linked proof closures and runners not recursively certified.",
+      "role": "prior-art context only; no unproved source result is a premise of the new proof",
+      "complete_file_read": true
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "bytes": 39977,
+      "lines": 773,
+      "read_scope": "55-142, 192-230, 309-434; targeted heading/term scan elsewhere",
+      "role": "governance navigation only",
+      "complete_file_read": false
+    },
+    {
+      "path": "docs/audit/README.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "bytes": 35690,
+      "lines": 643,
+      "read_scope": "67-113, 213-240, 318-361, 600-643; targeted authority/typing scan elsewhere",
+      "role": "governance navigation only",
+      "complete_file_read": false
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce",
+      "bytes": 22309,
+      "lines": 381,
+      "read_scope": "1-38, 291-335 and targeted Yang-Mills/Wilson/mass-gap/name scan; not full queue certification",
+      "role": "governance navigation only",
+      "complete_file_read": false
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
+      "bytes": 109438,
+      "lines": 224,
+      "read_scope": "Header/section navigation and exact relevant prior-art runner-name search; no matching canonical row used",
+      "role": "governance navigation only",
+      "complete_file_read": false
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "bytes": 11572,
+      "lines": 142,
+      "read_scope": "Description and relevant Wilson historical entries only; explicitly zero premise weight",
+      "role": "governance navigation only",
+      "complete_file_read": false
+    },
+    {
+      "path": "docs/audit/data/ledger/na/native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "ab8d10e262667c631125cd2bb2e75fa78077d8ddca4f99c42505959231e8918b",
+      "bytes": 12014,
+      "lines": 180,
+      "read_scope": "claim_id, claim_type, audit_status, effective_status, note_path, claim_scope, deps only",
+      "role": "verification of author prior-art status sentence, no premise authority",
+      "complete_file_read": false
+    },
+    {
+      "path": "docs/audit/data/ledger/wi/wilson_staggered_constrained_fiber_dobrushin_and_raw_rg_unit_directions_bounded_theorem_note_2026-07-12.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "a28409bc9c1fa7c8474753f327b65a16e46ac7d84fc28d142504df1fa88d66f2",
+      "bytes": 13498,
+      "lines": 247,
+      "read_scope": "claim_id, claim_type, audit_status, effective_status, note_path, claim_scope, deps only",
+      "role": "verification of author prior-art status sentence, no premise authority",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_criteria.md",
+      "revision": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+      "sha256": "5c1ba60e54b76a7817b152b749c68cbd820f35100ff84cb4881e06f2b4a3994d",
+      "bytes": 3862,
+      "lines": 57,
+      "read_scope": "Complete file read only after reviewer precriteria and independent implementation had been fixed (runner/criteria inspected after independent execution).",
+      "role": "original author evidence, not independent path",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_exact.py",
+      "revision": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+      "sha256": "526d1aa38d28e4adcb4676a535a0304195a24528c3538b61091955ae691d820c",
+      "bytes": 10587,
+      "lines": 213,
+      "read_scope": "Complete file read only after reviewer precriteria and independent implementation had been fixed (runner/criteria inspected after independent execution).",
+      "role": "original author evidence, not independent path",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_manifest.json",
+      "revision": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+      "sha256": "5b1321d6e0fbc11e1445736fbdc61aaf5bf4ca47fee9cef2ce72783c8551dbdb",
+      "bytes": 14595,
+      "lines": 282,
+      "read_scope": "Complete file read only after reviewer precriteria and independent implementation had been fixed (runner/criteria inspected after independent execution).",
+      "role": "original author evidence, not independent path",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results.json",
+      "revision": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+      "sha256": "b0e4205e21a0f8758ac1474b922348cd738be4e49be150d31af33eac2e60eb1e",
+      "bytes": 13638,
+      "lines": 492,
+      "read_scope": "All check rows and diagnostics read; resolution/runtime metadata read in the complete runner and replay.",
+      "role": "author results reused through coordinator byte-identical replay",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.py",
+      "revision": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+      "sha256": "88de387d2af2d47cba6743408eab146a038c926c85c8bbcb33dd92ae17bed8d6",
+      "bytes": 10487,
+      "lines": 212,
+      "read_scope": "Complete script reconstructed from complete final script and exact three-line difference.",
+      "role": "preserved original author implementation",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.json",
+      "revision": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+      "sha256": "fc4d105069a655d732038bf86c9c224d2e7453fbdd4eec81d1b2fe8fd8a7ed1d",
+      "bytes": 13229,
+      "lines": 484,
+      "read_scope": "Summary, all diagnostics, failed-row query (none) and source-version diff.",
+      "role": "preserved original author result, not an independent execution",
+      "complete_file_read": false
+    }
+  ],
+  "external_context": [
+    {
+      "url": "https://arxiv.org/abs/2204.12737",
+      "scope": "abstract only",
+      "role": "strong-coupling prior art; no theorem imported"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/0003491678900398",
+      "scope": "publisher abstract only",
+      "role": "lattice positivity/strong-coupling prior art; no theorem imported",
+      "access_note": "DOI direct open failed; publisher search result supplied abstract"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/BF01614090",
+      "scope": "publisher abstract only",
+      "role": "transfer positivity prior art; no theorem imported",
+      "access_note": "DOI direct open failed; direct Springer article succeeded"
+    }
+  ],
+  "whole_file_scope_warning": "A full-file hash identifies bytes; only complete_file_read=true rows have full text coverage. Contextual reads confer no scientific certification."
+}

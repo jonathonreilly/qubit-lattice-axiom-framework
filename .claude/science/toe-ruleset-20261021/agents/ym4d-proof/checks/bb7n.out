@@ -1,0 +1,12 @@
+L0 linear structure: max|Q_ax R b - b|/max|b| = 0.0e+00; max|R(d nu) - dC_0 nu|/max|nu| = 2.5e-16: PASS
+N-a depth uniformity (f_k = 0.2602): R_1, R_2, R_3 = 1.2769, 1.3100, 1.3252: PASS
+N-b deviation from the linear chain (k = 3): max_j |f_j - f^lin_j f_k/f^lin_k|/f_k = 0.0026: PASS
+N-c exact covariance under a Haar-random level-k gauge: max plaquette |log hol| difference = 3.4e-16: PASS
+N-d control (global-log linear refinement of log V^h): max coarse curvature difference / f_k = 875.666 (>= 0.1 required: PASS); same on the ungauged log V: 5.3296 (informational)
+N-e informational:
+  a: f_k = 0.2602; f_j/f_k (j = k..k-3) = 1.0000, 1.2769, 1.3100, 1.3252; linear f^lin_j/f^lin_k = 1.0000, 1.2771, 1.3102, 1.3278
+     max own|A^X| / (rho_(j+1)^2 f_(j+1)) per step = 1.478, 2.872, 4.903
+  2a: f_k = 0.5212; f_j/f_k (j = k..k-3) = 1.0000, 1.2774, 1.3104, 1.3207; linear f^lin_j/f^lin_k = 1.0000, 1.2771, 1.3102, 1.3278
+     max own|A^X| / (rho_(j+1)^2 f_(j+1)) per step = 1.482, 2.895, 4.899
+VERDICT: ALL PASS (L0, N-a..N-d)
+[t = 0.8 s]

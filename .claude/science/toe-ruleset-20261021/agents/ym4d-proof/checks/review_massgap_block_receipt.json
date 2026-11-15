@@ -1,0 +1,59 @@
+{
+  "schema": "bounded-scientific-review-receipt-v1",
+  "created_utc": "2026-10-29T17:07:35.128005+00:00",
+  "reviewer": "/root/review_massgap_block",
+  "decision": "supported_within_stated_fixed_spacing_scope",
+  "scope": "All-beta finite-volume local ratios and uniform one-step witness; 0<beta<=1/32 full physical fixed-spacing thermodynamic endpoint including injectivity; no continuum closure",
+  "MG_rows_closed": [],
+  "report": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+    "sha256": "2f41121ba740c77040f24be09a15f6671af3691dc28721400f5786722e49ba58"
+  },
+  "manifest": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_manifest.json",
+    "sha256": "d1d6f5b1d52e56e9a993e4382bc9994ea15c9179951d4fdde1d5da2050b96f5a"
+  },
+  "source_confirmation": {
+    "original_commit": "47a916398fb58231d809695485812faf25c70ce9",
+    "original_main_sha256": "f75e8cfc6f9e4310a9ba78ce7d8d53a6c729f4cac10599b430fb9234403c8d25",
+    "current_commit": "1d221a0063566d5270b60cc543690d7c4d8c68ba",
+    "current_main_sha256": "0cdbfd18a97f6240b07f4a6047073fe6dc2abe2949af9ccb6f6bd191498bae3d",
+    "supplement_sha256": "820bceb7c30ad7a4e42eb0733018923ace7bcd57023163fe7a639b3d74a02acf",
+    "repair": "Exact portable-link/wording-only diff read; no mathematical changes; current source confirmed in same review context."
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "original_sha256": "f75e8cfc6f9e4310a9ba78ce7d8d53a6c729f4cac10599b430fb9234403c8d25",
+      "disposition": "bounded scientific argument supported; original absolute procedure link corrected",
+      "recovery": "same-context confirmation of link/wording-only change; no formula changes",
+      "final_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "final_sha256": "0cdbfd18a97f6240b07f4a6047073fe6dc2abe2949af9ccb6f6bd191498bae3d"
+    },
+    {
+      "original_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity.md",
+      "original_sha256": "820bceb7c30ad7a4e42eb0733018923ace7bcd57023163fe7a639b3d74a02acf",
+      "disposition": "current supporting proof fully reviewed within small-beta fixed-spacing scope",
+      "recovery": "unchanged source; no finite-to-infinite injectivity shortcut used",
+      "final_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity.md",
+      "final_sha256": "820bceb7c30ad7a4e42eb0733018923ace7bcd57023163fe7a639b3d74a02acf"
+    }
+  ],
+  "diagnostics": {
+    "independent_unit": "112/112 including 13 killed mutation predicates across 11 families",
+    "external_implications": "8/8 exact predicates; an external proof inference fails",
+    "author": "108+23 reported; root owns replay; not added to independent count"
+  },
+  "identity_limits": "Scientific review only. Does not bind a staged tree, remote PR head, audit graph/cache closure or combined integration result.",
+  "reviewer_final_binding": "The stated disposition binds precisely the hashes above and the consumed mathematical dependencies in the manifest. Original and repaired source lineage preserved.",
+  "frozen_utc": "2026-10-29T17:07:35.128005+00:00",
+  "local_only_research_inputs": {
+    "directory": "/tmp/ym-review-massgap-block-research-20261029",
+    "files": 8,
+    "status": "not intended for staging/republication; exact hashes, URLs and coverage in manifest",
+    "relocation_metadata": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_research_relocation.json",
+      "sha256": "8daf86993047959ae429d0853a8b123034bc45524d32fff4778d0f326175d4b1"
+    }
+  }
+}

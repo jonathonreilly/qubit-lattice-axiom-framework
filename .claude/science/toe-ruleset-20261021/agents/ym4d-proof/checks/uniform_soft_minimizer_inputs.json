@@ -1,0 +1,244 @@
+{
+  "schema": "uniform-soft-minimizer-inputs-v1",
+  "created_utc": "2026-10-29T17:39:29.214612+00:00",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "head_observed": "4f04b662f4d72d7ef269f6d9693ae9ff6424acf9",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "author_role": "bounded worker; no git or audit-status mutation",
+  "mathematical_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "read_coverage": "Sections 1, 2.4\u20132.5, 3.1, 3.4\u20133.8, 4.1\u20134.3, 6.7; selected proof-bearing sections, not asserted as full-file coverage",
+      "role": "mathematical_source"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "read_coverage": "Lines 2380\u20132505, 2649\u20132798, 3113\u20133168, 3230\u20133239: full displayed arguments and repairs for IT-str, LED-dual/symb/unif, EXP-id/real/strip, N2-exp, N2-exp-prime, and intermediate-curvature KF",
+      "role": "mathematical_source"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577,
+      "read_coverage": "Sections 89 and 98: established derivative dictionary and longitudinal normalization distinction",
+      "role": "mathematical_source"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S13_S14.md",
+      "sha256": "875bf6b27bd37e832e7766cc95b96f0d2233eeb960fd16e82aa19d5dee794d62",
+      "bytes": 33308,
+      "read_coverage": "Selected N2-exp and sharpening findings/repairs; review records are not substituted for proof reads",
+      "role": "review_record"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S15_CONVERGENCE.md",
+      "sha256": "329f0980a3570c8e068b6454490ec62aa80fb850e05d89843d1955ba75a4fb24",
+      "bytes": 27703,
+      "read_coverage": "Lines 42\u2013115: repaired strip constants and the full KF proof",
+      "role": "review_record"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S16_S17.md",
+      "sha256": "8ab27ebdb373f5c771a5d005827c4e32fad1c3736aed173691d134c49db123ec",
+      "bytes": 40178,
+      "read_coverage": "Lines 1\u201390: linear package assessment, constant selection and repairs",
+      "role": "review_record"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "read_coverage": "FC1\u2013FC20; exact target, scales, neutral quartic and full-colour scope",
+      "role": "mathematical_source"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc",
+      "bytes": 29488,
+      "read_coverage": "Selected target/scope and FC18\u2013FC20 review passages, including lines 90\u2013135; not asserted as full report coverage",
+      "role": "review_record"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_receipt.json",
+      "sha256": "e30df91f8682af55d857295b928e04f9bfa75c77f352ad51f88c2b3521e24d1d",
+      "bytes": 15395,
+      "read_coverage": "Frozen receipt identity; documentary input, not replacement proof",
+      "role": "review_record"
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "read_coverage": "complete; Discovery covered in batched reads through EOF"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/abstract-algebraic-core-extraction.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68",
+      "bytes": 2147,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/route-patterns.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "912f9616bf83a5b8d43674b0b787727f294fdac636d86aff36ee218e0a079e47",
+      "bytes": 5469,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "bytes": 1615,
+      "read_coverage": "complete"
+    }
+  ],
+  "installed_skills": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "role": "installed routing source; immutable current-main entry point and applicable references also read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "role": "installed routing source; immutable current-main entry point and applicable references also read"
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/pdf/1410.2798v3",
+      "local_only_path": "/tmp/uniform_soft_minimizer_primary/axial.pdf",
+      "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "bytes": 292405,
+      "read_pdf_pages_1_based": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "role": "original theorem/proof and hypothesis comparison; no theorem imported into soft d=4 proof",
+      "repository_republication": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/1712.10029v3",
+      "local_only_path": "/tmp/uniform_soft_minimizer_primary/multiscale.pdf",
+      "sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e",
+      "bytes": 600279,
+      "read_pdf_pages_1_based": [
+        26,
+        27,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "role": "original theorem/proof and hypothesis comparison; no theorem imported into soft d=4 proof",
+      "repository_republication": false
+    }
+  ],
+  "normalized_model": "Actual d=4 S4-prime rooted endpoint path mean; counting inner products; finite positive soft penalties; all gauge and harmonic constants retained. Scalar one-colour linearization, with finite Cartan multiplicities in the quartic application.",
+  "scope": "FC19 depth-uniform neutral linear data-to-curvature/residual/spread kernels; FC20 neutral quartic coefficient bound. Independent review pending. No fluctuation covariance, nonlinear RG, finite-part increment theorem, full existence or continuum physical mass-gap closure.",
+  "original_full_colour_source_sha256": "e18ce796044a7f1a1f0a086043e5c072ed7e8b7da9af5097ff34e64526de7944",
+  "source_difference": "Only FC3 prose repair assigning Gram S^2 to Delta_f L_har rather than L_har, per frozen source/review inputs.",
+  "workspace_instructions": {
+    "path": "AGENTS.md",
+    "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+    "bytes": 1118
+  }
+}

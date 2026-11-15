@@ -1,0 +1,109 @@
+{
+  "created_utc": "2026-10-29T20:32:22.396369+00:00",
+  "source_and_evidence_hash_checks": [
+    {
+      "manifest": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_independent_freeze.json",
+        "sha256": "00090d20ca7255d805996514b97d1992230a50a294b29805678ab60984130aa8",
+        "bytes": 4061
+      },
+      "bound_files": 13,
+      "all_unchanged": true
+    },
+    {
+      "manifest": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_receipt.json",
+        "sha256": "5613420d87a16c573b2848cf43d2385cad7961dac3f0d0379fd5ce975d97e5df",
+        "bytes": 13087
+      },
+      "bound_files": 26,
+      "all_unchanged": true
+    }
+  ],
+  "compiled_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_01.py",
+      "sha256": "ce5d6cc00a174ef9fb03703329e0fd7fec7879c7d65594ae005f2f93bfd63d17",
+      "bytes": 15731
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_affected_02.py",
+      "sha256": "9b0a4b7a077b3d330a02592e7aef8576707183e4462203c4faf3e43d96495cd3",
+      "bytes": 12275
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_geometry_01.py",
+      "sha256": "20525c4b080f85d78e8a3893015bb4586ca6fd66fa9cc79a55f449c564c4e50f",
+      "bytes": 10090
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_Wilson_error_01.py",
+      "sha256": "31a2be98ce6adf5dab758096233c41e9a2cb4a82c4a68cd4d7f1196b9f6656c0",
+      "bytes": 15404
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_haar_gradient_01.py",
+      "sha256": "79035e199e305aa5a4d06d218d6e1ad8ff6d2497840350d97eb88d292afb2920",
+      "bytes": 15383
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_normalizer_gradient_01.py",
+      "sha256": "892c94d976f63ca23abbb2a6ca37f9f73354df6ec153c5e71139d25c8e608cca",
+      "bytes": 15373
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_spread_01.py",
+      "sha256": "7ea53853e5baa14777b18a1aebc3869c0bdc643a54dceeac0d1a4a7876025ce3",
+      "bytes": 15349
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_crossing_01.py",
+      "sha256": "3c88fd09ec1b771efe8e337387c52981ef88160d8be88e77a41fe9a0bd0bd74c",
+      "bytes": 8735
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_transport_01.py",
+      "sha256": "05f450f669aabb86e127c82a61ed9e2d6770b244c9cb319b6387f9284624495d",
+      "bytes": 15423
+    }
+  ],
+  "report_relative_links": [
+    "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+    "checks/covariant_soft_background_receipt.json",
+    "checks/review_covariant_background_criteria.md",
+    "checks/review_covariant_background_independent_freeze.json",
+    "checks/review_covariant_background_analytic_01.md",
+    "checks/review_covariant_background_read_manifest.json",
+    "PROCESS_LIGHT.md",
+    "checks/review_covariant_background_geometry_01.stdout.json",
+    "checks/review_covariant_background_density_01.stdout.txt",
+    "checks/review_covariant_background_density_affected_02.stdout.json",
+    "checks/review_covariant_background_density_failure_01.json",
+    "checks/review_covariant_background_author_replay.json",
+    "checks/review_covariant_background_author_mutations_01.json"
+  ],
+  "markdown_whitespace": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "trailing_whitespace_lines": [],
+      "final_newline": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_analytic_01.md",
+      "trailing_whitespace_lines": [],
+      "final_newline": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_criteria.md",
+      "trailing_whitespace_lines": [],
+      "final_newline": true
+    }
+  ],
+  "vocabulary_lint": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_vocab_lint.txt",
+    "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "bytes": 81,
+    "exit_code": 0,
+    "summary": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)"
+  }
+}

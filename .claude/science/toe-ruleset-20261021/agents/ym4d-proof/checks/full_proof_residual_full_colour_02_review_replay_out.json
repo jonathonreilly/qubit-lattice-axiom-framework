@@ -1,0 +1,306 @@
+{
+  "scope": "Finite numerical d=4 actual S4-prime/Wilson controls, no interval or uniform theorem",
+  "passed": 35,
+  "total": 35,
+  "checks": [
+    {
+      "name": "actual_incidence_curl_d_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_full_periodic_S4_prime_Qd",
+      "passed": true,
+      "detail": 2.6645352591003757e-15
+    },
+    {
+      "name": "actual_full_periodic_contour_count",
+      "passed": true,
+      "detail": [
+        124416,
+        5184
+      ]
+    },
+    {
+      "name": "periodic_harmonic_projection_with_root_mean",
+      "passed": true,
+      "detail": 1.3322676295501878e-15
+    },
+    {
+      "name": "root_mean_omission_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_lift_constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_S_single_constant_kernel",
+      "passed": true,
+      "detail": [
+        4.973799150320701e-14,
+        6.254295532646045,
+        6.254295532646047,
+        6.254295532646048,
+        6.254295532646052,
+        6.623655913978492,
+        6.623655913978492,
+        6.623655913978493,
+        6.623655913978493,
+        6.623655913978495,
+        6.623655913978497,
+        6.816269284712479,
+        6.81626928471248,
+        6.816269284712482,
+        6.816269284712483,
+        6.953199617956066
+      ]
+    },
+    {
+      "name": "actual_4D_scalar_ell4_Gram",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "scalar_Gram_omission_is_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_nonlinear_neutral_Md_scale_0.0",
+      "passed": true,
+      "detail": 2.6645352591003757e-15
+    },
+    {
+      "name": "actual_nonlinear_neutral_harmonic_map_scale_0.0",
+      "passed": true,
+      "detail": 1.249000902703301e-16
+    },
+    {
+      "name": "completed_ghost_fixed_left_right_kernels_scale_0.0",
+      "passed": true,
+      "detail": 1.2656542480726785e-14
+    },
+    {
+      "name": "completed_ghost_ell4_determinant_scale_0.0",
+      "passed": true,
+      "detail": 4.547473508864641e-13
+    },
+    {
+      "name": "fine_harmonic_graph_Gram_scale_0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "coarse_harmonic_graph_Gram_scale_0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_nonlinear_neutral_Md_scale_0.7",
+      "passed": true,
+      "detail": 2.6645352591003757e-15
+    },
+    {
+      "name": "actual_nonlinear_neutral_harmonic_map_scale_0.7",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "completed_ghost_fixed_left_right_kernels_scale_0.7",
+      "passed": true,
+      "detail": 2.0372592501871623e-14
+    },
+    {
+      "name": "completed_ghost_ell4_determinant_scale_0.7",
+      "passed": true,
+      "detail": 4.547473508864641e-13
+    },
+    {
+      "name": "fine_harmonic_graph_Gram_scale_0.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "coarse_harmonic_graph_Gram_scale_0.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_nonlinear_neutral_Md_scale_1.1",
+      "passed": true,
+      "detail": 1.3322676295501878e-15
+    },
+    {
+      "name": "actual_nonlinear_neutral_harmonic_map_scale_1.1",
+      "passed": true,
+      "detail": 9.71445146547012e-17
+    },
+    {
+      "name": "completed_ghost_fixed_left_right_kernels_scale_1.1",
+      "passed": true,
+      "detail": 2.4591439995447217e-14
+    },
+    {
+      "name": "completed_ghost_ell4_determinant_scale_1.1",
+      "passed": true,
+      "detail": 9.094947017729282e-13
+    },
+    {
+      "name": "fine_harmonic_graph_Gram_scale_1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "coarse_harmonic_graph_Gram_scale_1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_quadratic_stationary_solve",
+      "passed": true,
+      "detail": {
+        "info": 0,
+        "relative_residual": 3.322627383891368e-15
+      }
+    },
+    {
+      "name": "actual_stationary_internal_gauge",
+      "passed": true,
+      "detail": 3.122502256758253e-17
+    },
+    {
+      "name": "actual_normalized_quartic_linear",
+      "passed": true,
+      "detail": {
+        "direct_values": [
+          -0.013591009699845906,
+          -0.013591972999779553,
+          -0.013592199013609975
+        ],
+        "Richardson": -0.01359227435155345,
+        "FC18": -0.013592293460292048,
+        "error": 1.910873859839457e-08
+      }
+    },
+    {
+      "name": "actual_normalized_quartic_cubic_corrected",
+      "passed": true,
+      "detail": {
+        "direct_values": [
+          -0.013582447920069672,
+          -0.013589830864640872,
+          -0.0135917104466179
+        ],
+        "Richardson": -0.013592336973943577,
+        "FC18": -0.013592293460292048,
+        "error": 4.351365152921449e-08
+      }
+    },
+    {
+      "name": "actual_neutral_quartic_is_nonzero",
+      "passed": true,
+      "detail": -0.013592293460292048
+    },
+    {
+      "name": "actual_polar_variance_term_is_nonzero",
+      "passed": true,
+      "detail": -9.383431401259588e-05
+    },
+    {
+      "name": "exact_action_harmonic_shift_at_nonzero_residual",
+      "passed": true,
+      "detail": -8.881784197001252e-16
+    },
+    {
+      "name": "harmonic_measure_log_ratio",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "scalar_domains": {
+      "fine_sites": 1296,
+      "coarse_sites": 16,
+      "projection_error": 1.3322676295501878e-15,
+      "scalar_log_Gram_error": 8.881784197001252e-16,
+      "ell4": 81
+    },
+    "actual_background_samples": [
+      {
+        "scale": 0.0,
+        "M_gauge_error": 2.6645352591003757e-15,
+        "M_harmonic_error": 1.249000902703301e-16,
+        "completed_ghost_kernel_error": 1.2656542480726785e-14,
+        "logdet_error": 4.547473508864641e-13,
+        "covariance_range": [
+          0.7692307692307692,
+          0.7692307692307692
+        ]
+      },
+      {
+        "scale": 0.7,
+        "M_gauge_error": 2.6645352591003757e-15,
+        "M_harmonic_error": 1.1102230246251565e-16,
+        "completed_ghost_kernel_error": 2.0372592501871623e-14,
+        "logdet_error": 4.547473508864641e-13,
+        "covariance_range": [
+          0.7695270670212523,
+          0.7702464547581885
+        ]
+      },
+      {
+        "scale": 1.1,
+        "M_gauge_error": 1.3322676295501878e-15,
+        "M_harmonic_error": 9.71445146547012e-17,
+        "completed_ghost_kernel_error": 2.4591439995447217e-14,
+        "logdet_error": 9.094947017729282e-13,
+        "covariance_range": [
+          0.7699626387231867,
+          0.7717422347266292
+        ]
+      }
+    ],
+    "stationary_quartic": {
+      "E2": 1.469435813573181,
+      "FC18_parts": [
+        -7.812285865709184e-06,
+        1.5059828174861055e-06,
+        -9.383431401259588e-05,
+        -0.013492152843231228
+      ],
+      "E4": -0.013592293460292048,
+      "epsilon": [
+        0.15,
+        0.075,
+        0.0375
+      ],
+      "samples": {
+        "linear": {
+          "direct": [
+            -0.013591009699845906,
+            -0.013591972999779553,
+            -0.013592199013609975
+          ],
+          "Richardson": -0.01359227435155345
+        },
+        "cubic_corrected": {
+          "direct": [
+            -0.013582447920069672,
+            -0.013589830864640872,
+            -0.0135917104466179
+          ],
+          "Richardson": -0.013592336973943577
+        }
+      }
+    }
+  },
+  "seconds": 1.2850961670046672,
+  "versions": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0"
+  }
+}

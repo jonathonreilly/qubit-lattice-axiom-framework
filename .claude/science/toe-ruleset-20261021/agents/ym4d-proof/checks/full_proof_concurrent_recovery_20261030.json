@@ -1,0 +1,203 @@
+{
+  "purpose": "Preserve already-published concurrent work while pushing the separately reviewed coordinator checkpoint; not a new scientific review or audit",
+  "created_utc": "2026-10-30T01:21:25.985320+00:00",
+  "coordinator_checkpoint": "108f59242a90dcc68c44fd2e06e1f4a12b9e5c19",
+  "concurrent_remote_head": "f401d825dcdaac36b13f0aee885f16099d066abb",
+  "merge_head": "20e7a00de6103f8ceb7567397884297a1824e6d8",
+  "current_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "concurrent_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/AUDIT.md",
+      "sha256": "765abb796087032d950e0db436952c61bd08b100648fa55f2cedbe31a66c619e",
+      "bytes": 98720
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/AUDIT_LOG.md",
+      "sha256": "3f1a61b03bf716a7b0122b1ccffcdcc9ab652d446d217add3c69a86e4705d660",
+      "bytes": 8882
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/N5B.md",
+      "sha256": "317a1ba0a08ccd188e4c9c15bb7eeb8894e646a6521b3b4e8de6961e8d9693da",
+      "bytes": 30305
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/N5B_LOG.md",
+      "sha256": "5b6511c9d77388497af019899ba90c2242f12b2cb9ba1344fd3a27c137ae9d54",
+      "bytes": 7402
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_AUDIT.md",
+      "sha256": "ef97ff490e709788924277960d6d0f2d7c0703ab1a67f783a461e97f1bf742c6",
+      "bytes": 14744
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_N5B.md",
+      "sha256": "ae7eb7264f61d316d0dab20d1b01819b77e2502984901d3f563ce9711c6eb407",
+      "bytes": 21941
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_TQ.md",
+      "sha256": "e4013db4bff4379aa8bf83dbf72d8530193ff4d08874edae161e89ee8b4dbfad",
+      "bytes": 22009
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TQ.md",
+      "sha256": "c184ec1ad4dfae8626676e99e4bc6ec2ec513c6230a6dc38b21ec00ba6d640aa",
+      "bytes": 29333
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TQ_LOG.md",
+      "sha256": "679a4615da1e2c13e65d5f04e3fcd011b920af7c391d40c565bbecb7c8180248",
+      "bytes": 9536
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/AUDIT/AUTHOR.md",
+      "sha256": "4140c1c164f3458174007190313ea244b2f3970712bf39c29743747e6d1ac037",
+      "bytes": 2900
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/AUDIT/REVIEW.md",
+      "sha256": "a802a3c219f84cbcaf39dd6fc3efc1182cbf3c656e6e0bf490e9fea8fba96b3b",
+      "bytes": 795
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/N5B/AUTHOR.md",
+      "sha256": "b2224f104bcde90685fb1d18174f5f250a6c0041b2f53bb383a746d47f63c8ca",
+      "bytes": 2303
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/N5B/REVIEW.md",
+      "sha256": "4c3f060a0b74b1e0ba6b7e19156332dd1a3f76607e6b1e0bcb85629319a3b12f",
+      "bytes": 789
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/TQ/AUTHOR.md",
+      "sha256": "b73adbbdbb52f10e4fb2b5a9dc25655b4b2c8e8ba55e632929922d9d04c67962",
+      "bytes": 2189
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/TQ/REVIEW.md",
+      "sha256": "ae1dc7dc478f063be9c77ce04e80f2931d2491cbd6d9b04a90f3f08afe71f8f1",
+      "bytes": 786
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_build.py",
+      "sha256": "6c4bc66a3c5d41ae1397fbb76c2f15a6c1f829da1813f460efdadfae3c224ceb",
+      "bytes": 60773
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_criteria.md",
+      "sha256": "fc949da1dc1f4cbde34037f9d94c7b91c93c535c6d32d0b370a06f5725bfbd42",
+      "bytes": 973
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_graph.json",
+      "sha256": "4b6f7f0da6d59105024d5ce896aa47f56984160d130c8799636fe432de4c88d6",
+      "bytes": 337261
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_review.md",
+      "sha256": "2de0c0216e6b1619c5e58123e8002640d7fe38d91379ea14281d8b95ff1b80eb",
+      "bytes": 12348
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_source_manifest.json",
+      "sha256": "69b82eccf31a9dde15db0687f2968a3e5b123938ab6d572a0779a616af1cf404",
+      "bytes": 621647
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_validate.py",
+      "sha256": "27b0865dc3bf214c583a307009da1b88356d6d2e89ce72e8fc016089d7a31262",
+      "bytes": 7079
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_validation.json",
+      "sha256": "15dbc9a6f5bf833c5e65ccec4f617f626ca6c41a645a2901ee1250f98e5214ad",
+      "bytes": 6908
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_checks.py",
+      "sha256": "8d675d23178eda204e09681b536d7ad1e3c41ac443eed988db3ebd4d5110b4e0",
+      "bytes": 7841
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_checks_err.txt",
+      "sha256": "011368f5d6135648e761b10716552df4dc6699cb7dc2b291d1e4608c0a6fe4d8",
+      "bytes": 474
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_checks_out.txt",
+      "sha256": "f39e92c7a2dc7dc72727014d7ed484baa8d11866b68d977b4d09b34fc75dd53e",
+      "bytes": 56
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_checks_run2_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_checks_run2_out.txt",
+      "sha256": "0f3c4a66f7736be2cd779b1ecf5bc88cb22a9e2af6328223531c13a6cefe939b",
+      "bytes": 1232
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_completion.json",
+      "sha256": "8e388a86d526251dbac94e6a86fd61e78def12991102ab4f738ecb6534ddd6bd",
+      "bytes": 1700
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_criteria.md",
+      "sha256": "3e28cd892d78459af61b4a74073a95cccf2ee00fd17c5598c5e847bd7767a943",
+      "bytes": 2570
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_review.md",
+      "sha256": "25a4e3e3be1221c1b507aef10c7ce1f490ec2294802d219fcddbb3846bf28dd2",
+      "bytes": 15681
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_source_manifest.json",
+      "sha256": "4bf19cbf3492255648c88c763cf887bdca0b629cff21019923e5abacda93d333",
+      "bytes": 366694
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_validation.json",
+      "sha256": "e31a2d25701809d15bd81d38b88168ab143a6c6013e8523b865b2d378236d7bd",
+      "bytes": 620
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_validation_final.json",
+      "sha256": "d4fce684a83d7e313bada36e05f66b9655d0bbdb9c12dd22d6becb6fbdd718d9",
+      "bytes": 700
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/tq_review.md",
+      "sha256": "492ae53d7de71a40f19bcf36ab90c6c049f6111c28da4a540d6f19f154d302ac",
+      "bytes": 20034
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/tq_sources.sha256",
+      "sha256": "fd112b101b44ed720694fdc555f432ad570a68540d7d0dc954a75e63ea982301",
+      "bytes": 1100
+    }
+  ],
+  "coordinator_read_coverage": {
+    "REVIEW_TQ.md": "lines1-68 only",
+    "REVIEW_AUDIT.md": "lines1-70 only",
+    "REVIEW_N5B.md": "lines1-70 only"
+  },
+  "reported_dispositions_not_coordinator_recertification": {
+    "TQ": "Scoped conditional LAND/actual Wilson target UNDECIDED",
+    "AUDIT": "Scoped dependency-mapping LAND; not an audit-status assignment or proof",
+    "N5B": "HOLD: averaged actual-law hypotheses do not establish the stronger uniform UV-only characterization. Narrow correction remains outstanding."
+  },
+  "validation": {
+    "byte_exact_preservation": 35,
+    "JSON": 7,
+    "AST_only": 3,
+    "scientific_runners_executed": 0,
+    "integration_or_audit_pipelines_executed": 0
+  },
+  "full_exist_and_continuum_gap": "Both OPEN; no promotion from inherited verdicts"
+}

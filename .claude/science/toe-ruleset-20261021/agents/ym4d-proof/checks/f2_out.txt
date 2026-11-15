@@ -1,0 +1,12 @@
+[A] PASS :: dense tau=0.094699845771, alias tau=0.094699845771, rel=1.7e-14; SM rel=3.5e-16
+[E] PASS :: two-step marginal vs one-step(kappa_eff=0.577358): max diff 6.3e-14
+[B] PASS :: tau(7,1): nP=8 0.0506151, nP=12 0.0506263, diff 1.1e-05
+   (t=2s)
+   kappa_c=0.25: slope/(1/8pi^2) along (3,5),...,(13,15): 1.0191, 1.0076, 1.0042, 1.0026, 1.0018, 1.0013   [t=7s]
+   kappa_c=1.0: slope/(1/8pi^2) along (3,5),...,(13,15): 1.0421, 1.0166, 1.0090, 1.0056, 1.0039, 1.0028   [t=12s]
+   kappa_c=4.0: slope/(1/8pi^2) along (3,5),...,(13,15): 1.0731, 1.0282, 1.0152, 1.0095, 1.0065, 1.0048   [t=17s]
+   kappa_c=inf: slope/(1/8pi^2) along (3,5),...,(13,15): 1.0622, 1.0217, 1.0117, 1.0075, 1.0052, 1.0038   [t=22s]
+[C] PASS :: slope at (13,15) / (1/8pi^2): k_c=0.25: 1.0013, k_c=1.0: 1.0028, k_c=4.0: 1.0048, k_c=inf: 1.0038
+[D] PASS :: kappa spread of the (13,15) slope = 0.0035 x 1/(8pi^2)
+   constants tau(15,k_c) - log(15)/(8pi^2): k_c=0.25: 0.03285, k_c=1.0: 0.02603, k_c=4.0: 0.01982, k_c=inf: 0.01346
+f2 done: ALL PASS; wall 22.1s

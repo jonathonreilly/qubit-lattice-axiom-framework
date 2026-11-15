@@ -1,0 +1,126 @@
+{
+  "record_kind": "immutable source-only findings before charter/scripts/logs/literature",
+  "frozen_at_utc": "2026-10-30T15:33:54.522440+00:00",
+  "target_revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+  "target_sha256": "b08b227815452220023e5508ea02403e49069555ab67bb33486da1cdcc3f5887",
+  "source_verdict": "LAND for bounded research source; HOLD for any full all-history return, non-free continuum existence, or positive physical continuum mass gap assertion",
+  "material_errors_found": [],
+  "positive_findings": [
+    {
+      "id": "radial_forward",
+      "lines": [
+        450,
+        724
+      ],
+      "finding": "Direct S3 Haar-coordinate calculation gives Gamma(3/2,1) decreasing tilt; endpoints r=0/t=0, joint last-layer integration and normalizer reciprocal jets are handled. Wilson rough-mean price applies only to the first bare step. The chessboard/ribbon and distinct witness counts justify this bounded use."
+    },
+    {
+      "id": "posterior_and_caps",
+      "lines": [
+        426,
+        448,
+        744,
+        817,
+        819,
+        1141
+      ],
+      "finding": "Bayes denominator is rho_(j+1); normalized covariance identity retains it. Flat Hessian includes t alpha Q*Q+t(1-alpha)R*R and excludes then restores Haar explicitly. Bloch-kernel argument kills all residual flat modes on the true root-fixed tree quotient. Local Hessian perturbation and mixed Dirichlet/Neumann vector forms justify the rectangular sector covariance."
+    },
+    {
+      "id": "rough_core",
+      "lines": [
+        1143,
+        1602
+      ],
+      "finding": "Negative rough direction includes full normalized kernel and is restricted to kappa<4L. Zero-staple -u^2/4 is output-integrated only. Same-exterior/pinned-output rough/good ratio has distinct original plaquette witnesses, fixed source class, total allocations xi<=1-theta, polynomial kernel-height price, ten-position quotient calculus and complete support count. No conditional probability or complete RG activity is silently substituted."
+    },
+    {
+      "id": "common_cap",
+      "lines": [
+        1604,
+        1831
+      ],
+      "finding": "Real linear tilts preserve the cap Hessian; centered Gaussian integration yields joint quadratic moments. Global colour sign flips preserve the rectangle and show zero mean at B=0. Mean response, sixfold link incidence and cutoff gradient bounds give CC9/CC13 only for the declared cap and larger coefficient. CC14 correctly identifies failure of a ball-volume majorant."
+    },
+    {
+      "id": "cycle3_walk_and_tree",
+      "lines": [
+        1833,
+        2040
+      ],
+      "finding": "Comparison-matrix negativity is a failure of entrywise absolute walks, not of signed inversion. Independently derived tree-column counts and pair incidences reproduce WP2 by hand. Axial alias identity gives a_L=(L^2-1)/(6L^2), GS1/GS3; fixed-volume uniqueness and polynomial kernel-height bounds justify GS6. GS7 is restricted to replacing the leading tree term by u W."
+    },
+    {
+      "id": "cycle3_supported_branch",
+      "lines": [
+        2042,
+        2204
+      ],
+      "finding": "Full signed inverse entries decay and admit decorated path supports. The local complex square root is away from its cut, degree-two nonlinear force coefficients have the displayed Cauchy majorant, and TB6 makes the supported fixed point contractive. TB7 is a complete-reader component-rooted stationary-branch expansion at zero source, not the normalized fluctuation integral."
+    }
+  ],
+  "independent_manual_controls": {
+    "WP2": {
+      "removed_tree_columns": [
+        54,
+        18,
+        6,
+        2
+      ],
+      "free_columns": [
+        27,
+        63,
+        75,
+        79
+      ],
+      "equal_direction_ordered_incidences": [
+        162,
+        342,
+        426,
+        462
+      ],
+      "unequal_pair_ordered_incidences_mu_lt_nu": [
+        216,
+        216,
+        216,
+        504,
+        504,
+        600
+      ],
+      "derivation": "For mu<nu, every deleted nu-link has four deleted mu-neighbours, so ordered surviving pair count=2(324-4r_mu)=648-8r_mu. Summing gives 2256; equal-direction counts are 486-12r_mu plus internal deleted-deleted incidences. Q*Q has entry 1/729 within each direction, yielding trace 1067500 and off-diagonal absolute sum 2672928 for 729H. Their difference divided by 729*244 is -401357/44469."
+    },
+    "GS2": "Differentiate sum csc^2=L^2 csc^2 twice, using (csc^2)second=6csc^4-4csc^2; then keep Fourier-cell L^-4 and map L^2 factors. This gives 1/s-a_L without a matrix diagnostic.",
+    "TB6": "With a<=2 Lbar b, x=C_N(a+b)<=1/2; x^2/(1-x)<=2x^2 and its scalar derivative <=8x. The force derivative is <=24 K0 C_N^2 Lbar b<=1/2; 18K0 C_N^2 Lbar^2 b^2 fits the remaining linear ball margin. K0>=M_N/g yields Hessian positivity."
+  },
+  "full_target_blockers": [
+    {
+      "id": "U1_actual_posterior",
+      "finding": "No all-history connected normalized fluctuation expansion with complete readers, original-source jets and the common posterior denominator. The stationary branch is only its deterministic bare leading part."
+    },
+    {
+      "id": "U2_original_reserves",
+      "finding": "No regeneration of unused original-action and gap fractions through arbitrary rough/hole mixtures. First-step Wilson prices and common-cap concentration cannot be copied onto inherited rho_j."
+    },
+    {
+      "id": "U3_operator_transport",
+      "finding": "No actual transport/extraction bound with jointly feasible contraction/coefficient constants. LOCOP ideal dilation is conditional; tree/Wilson leading conversion fails at the displayed choice."
+    },
+    {
+      "id": "U4_domains",
+      "finding": "No complete base/stable hard-history domain construction, cap complement bound or required mu+2 support reserve. TB7 sigma<eta_G is only a small positive rate."
+    },
+    {
+      "id": "continuum_and_gap",
+      "finding": "Finite-depth or bare-sector estimates do not establish continuum tightness/reconstruction, non-freeness, or a positive spectral gap in physical units. The manuscript makes no such theorem claim."
+    }
+  ],
+  "supplier_interface_limits": [
+    "FLOW F-strip gives the same variational reference organization and explicitly outputs u_j T_(j+1) before coupling renormalization; the change to u_(j+1) and all coefficient remainders remain U3.",
+    "LOCOP acts on additive logarithmic activities on its actual gauge-invariant, complete-reader container domain. It cannot be applied directly to z_S, to a component of TB7, or to a multiplicative rough weight.",
+    "MATCHB rebuilds the same conditional cancellation/reciprocal algebra; RC adds a fixed-roughness price, not an arbitrary-depth conditional normalization theorem.",
+    "The separate CB/BM supplier uses probability Haar and the same paired mean but HS coordinates, a different axis ordering of the exact block tree and a V-dependent lift. For N=2 its HS scalar coordinate is sqrt(2) times the quaternion coefficient. Its actual finite-u critical field includes Haar and normalizer corrections; TB7 solves only F_B. A common-domain coordinate/branch comparison is needed before combining quantitative bounds.",
+    "ME4-ME8 is an actual complete-reader analytic substitution mechanism; applying it requires a marked vector bound over every output anchor, fine analyticity, the stated finite-jet norms and support reserves. TB7 supplies only a component-rooted zero-source norm at sigma<eta_G, so it is not automatically that supplier. Its chart/cap means also differ from the common-cap expectation bar A."
+  ],
+  "negative_scope": "No universal no-go inferred; signed Gaussian resummation, normalized fluctuation expansion, matched rough-interface estimates, and other constructions remain open. No formal N1-N8 packet PASS or audit readiness asserted.",
+  "execution": "No scientific/numerical runs, mutations to science, git, locks, fronts, or audit state."
+}

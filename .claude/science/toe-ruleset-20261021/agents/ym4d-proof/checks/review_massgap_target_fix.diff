@@ -1,0 +1,27 @@
+--- frozen_original
++++ frozen_onset_fix
+@@ -79,9 +79,12 @@
+ ## 3. The actual estimate still to construct
+ 
+ A usable sufficient lattice statement is MG1 for the appropriately
+-renormalized reflected observables, with the same physical m_* and A_F
+-uniform in both ultraviolet cutoff and volume, at separations t below
+-the finite-volume wrap-around region. For each fixed physical t, first
++renormalized reflected observables. For each physical F, choose finite
++A_F and t_F independent of ultraviolet cutoff and volume, and a common
++physical m_*>0. Require the estimate for t_F<=t<=T_safe(volume), with
++T_safe tending to infinity along the same hierarchy, so every fixed
++t>=t_F eventually lies below the finite-volume wrap-around bound.
++For each such fixed physical t, first
+ pass to the same continuum/infinite-volume hierarchy used by the existence
+ proof. The uniform estimate then survives. Only after this passage is
+ t sent to infinity in the spectral argument. No interchange of an
+@@ -94,7 +97,7 @@
+ | MG0: existence and reconstruction | Actual common hierarchy, physical normalization, complete field-domain and OS/reconstruction hypotheses | Open; the existing T_OS producer work continues |
+ | MG1: infrared estimate | Uniform exponential reflected-correlation decay for a dense observable family, or an equivalent physical transfer-operator gap | Not constructed |
+ | MG2: source transport | Exact fine-to-coarse observable maps with quantitatively decaying tails, all products, normalizers and failed returns retained | Open; source-local construction covers only its stated sectors |
+-| MG3: cutoff/volume passage | Uniform physical rate and prefactors on the same trajectory, with the fixed-t limit justified | Open |
++| MG3: cutoff/volume passage | Uniform physical rate, prefactors and onset time on the same trajectory, with the fixed-t limit justified | Open |
+ | MG4: non-trivial excited sector | A surviving non-vacuum observable state in the reconstructed theory | Open; the existing non-freeness and lower-matching inputs remain necessary |
+ | MG5: final theorem scope | Correct local Yang–Mills identification; exact gauge-group and observable quantifiers | Open; no whole-theorem certification |
+ 

@@ -1,0 +1,46 @@
+{
+  "frozen_utc": "2026-10-29T14:16:38.228990+00:00",
+  "scope": "actual normalized gauge-change identity, tuned partial fixing derivative, grouped background Ward/continuity argument and candidate zero residual in the stated antiperiodic paired-root sector; neutral/full-periodic bridge and physical mass gap not proved",
+  "checks": {
+    "passed": 13,
+    "total": 13,
+    "stderr_bytes": 0
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_working.md",
+      "bytes": 25703,
+      "sha256": "8a7c87c9b737ee88372eb985189bcd0e25440986868cc8d92062b84f6cb92cd1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.criteria.md",
+      "bytes": 1352,
+      "sha256": "ff720bfd406438b675775473e6485c991e099719ffb94c4791380f2db9951e6e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.py",
+      "bytes": 3277,
+      "sha256": "c6177199459d646413c2a83552f28c4e970963284f2275ef0b72c6a304a258df"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.out.json",
+      "bytes": 1319,
+      "sha256": "c52b4d505807a26d55568ddde5385678410efbd851f96f6eb9d15137024a7f21"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "unchanged_prior_checkpoints": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_lattice_bridge_working.md",
+      "sha256": "bb67ad564747c4c9954ae93f88aa3f43a806c88b0aefedd5ef54a945e1512c6b"
+    }
+  ]
+}

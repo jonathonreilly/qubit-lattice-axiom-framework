@@ -1,0 +1,22 @@
+gt1_const.py -- explicit constants of GREENT.md Theorem GT-1/GT-2, and the section-G3 price.
+Scalar IEEE-double arithmetic; no arrays; no BLAS; single process.  Grid-evaluated upper sums.
+a0=0.4431134627 a1=0.3926990817 b1=1.3473723598 a2=0.5466693227 b2=1.8154122758 xi=0.5430806348
+
+d=3 :  Chat_1 = 3.963703 (worst s=2 R=4)   ->  C_1 = d^((d-1)/2) Chat_1 = 11.8911
+d=3 :  Chat_2 = 42.809271 (worst s=3 R=6)   ->  C_2 = d^(d/2)     Chat_2 = 222.4435
+
+d=4 :  Chat_1 = 6.694741 (worst s=3 R=6)   ->  C_1 = d^((d-1)/2) Chat_1 = 53.5579
+d=4 :  Chat_2 = 106.415811 (worst s=3 R=6)   ->  C_2 = d^(d/2)     Chat_2 = 1702.6530
+d=4 : REPORTED (rounded up) C_1 = 53.6 , C_2 = 1702.7
+
+creep check (d=4, R=1e3*2s): s , s^3*int Vcal , s^4*int Wcal
+   s=      1 : 0.666241 , nan
+   s=      2 : 3.038123 , 21.851904
+   s=      4 : 2.061587 , 38.788814
+   s=      8 : 1.447515 , 14.192884
+   s=     16 : 1.250524 , 9.418562
+   s=     64 : 1.131628 , 7.153835
+   s=    256 : 1.104555 , 6.699638
+   s=   2048 : 1.096915 , 6.574290
+   s=  16384 : 1.095969 , 6.558648
+   s= 131072 : 1.095851 , 6.556697

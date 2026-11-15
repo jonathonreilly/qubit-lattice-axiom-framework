@@ -1,0 +1,508 @@
+{
+  "record_type": "immutable_source_first_read_manifest",
+  "created_utc": "2026-10-30T15:09:11.362018+00:00",
+  "reviewer": "/root/review_bare_determinant_coupling",
+  "author_context": "/root/mixed_cap_chart",
+  "independence": "distinct fresh source-first context; same-family; not external peer review or independent backend attestation",
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "observed_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+  "worktree_HEAD": "7e4473dd789505441da42011c7b0b1f1930ed1ea",
+  "procedure_choice": "Pinned repository procedure selected by coordinator. Installed entrypoints were read and differ from pinned entries; no installed references mixed into pinned procedure. Root owns integration/publication; this is a scoped source review, not a whole-branch landing gate.",
+  "entries": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "bytes": 29763,
+      "lines": 581,
+      "role": "review_target",
+      "consumed_windows": [
+        [
+          1,
+          581
+        ]
+      ],
+      "coverage": "full_scientific_read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+      "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "bytes": 35619,
+      "lines": 670,
+      "role": "scientific_supplier",
+      "consumed_windows": [
+        [
+          1,
+          610
+        ]
+      ],
+      "coverage": "partial_scientific_read; only the named interfaces are reviewed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "role": "scientific_supplier",
+      "consumed_windows": [
+        [
+          1,
+          439
+        ]
+      ],
+      "coverage": "partial_scientific_read; only the named interfaces are reviewed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "bytes": 30169,
+      "lines": 590,
+      "role": "scientific_supplier",
+      "consumed_windows": [
+        [
+          1,
+          365
+        ]
+      ],
+      "coverage": "partial_scientific_read; only the named interfaces are reviewed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "bytes": 41908,
+      "lines": 790,
+      "role": "scientific_supplier",
+      "consumed_windows": [
+        [
+          22,
+          314
+        ],
+        [
+          586,
+          731
+        ]
+      ],
+      "coverage": "partial_scientific_read; only the named interfaces are reviewed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "bytes": 30430,
+      "lines": 583,
+      "role": "documentary_adjacent_supplier",
+      "consumed_windows": [
+        [
+          1,
+          1
+        ],
+        [
+          34,
+          34
+        ],
+        [
+          95,
+          95
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          252,
+          252
+        ],
+        [
+          352,
+          352
+        ],
+        [
+          386,
+          386
+        ],
+        [
+          458,
+          458
+        ],
+        [
+          542,
+          542
+        ],
+        [
+          558,
+          558
+        ],
+        [
+          564,
+          564
+        ],
+        [
+          570,
+          570
+        ]
+      ],
+      "coverage": "heading/link index and hash only; no original-cut remainder proof reviewed or consumed"
+    },
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "bytes": 5441,
+      "lines": 31,
+      "role": "process_only",
+      "consumed_windows": [
+        [
+          1,
+          31
+        ]
+      ],
+      "coverage": "full_process_read; no scientific evidence"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "lines": 26,
+      "role": "process_only",
+      "consumed_windows": [
+        [
+          1,
+          26
+        ]
+      ],
+      "coverage": "full_process_read; no scientific evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "role": "process_only",
+      "consumed_windows": [
+        [
+          1,
+          11
+        ]
+      ],
+      "coverage": "full_process_read; no scientific evidence"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140,
+      "role": "process_only",
+      "consumed_windows": [
+        [
+          1,
+          140
+        ]
+      ],
+      "coverage": "full_process_read; no scientific evidence"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "lines": 313,
+      "role": "process_only",
+      "consumed_windows": [
+        [
+          1,
+          313
+        ]
+      ],
+      "coverage": "full_process_read; no scientific evidence"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          193
+        ]
+      ],
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "lines": 193,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          35
+        ]
+      ],
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          93
+        ]
+      ],
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "lines": 93,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          370
+        ]
+      ],
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "lines": 370,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          96
+        ]
+      ],
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "lines": 96,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          183
+        ]
+      ],
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "lines": 183,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          248
+        ]
+      ],
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "lines": 248,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          140
+        ]
+      ],
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "lines": 140,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          394
+        ]
+      ],
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "lines": 394,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          126
+        ]
+      ],
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          233
+        ]
+      ],
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "lines": 233,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          130
+        ]
+      ],
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "role": "process_only",
+      "coverage": "full_process_read; not mathematical evidence",
+      "consumed_windows": [
+        [
+          1,
+          52
+        ]
+      ],
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52,
+      "pin_equals_observed_main": true,
+      "pin_equals_worktree": true
+    },
+    {
+      "path": "scripts/vocab_lint.py",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "bytes": 14183,
+      "lines": 392,
+      "role": "mechanical_tool",
+      "consumed_windows": [
+        [
+          1,
+          115
+        ],
+        [
+          190,
+          265
+        ]
+      ],
+      "coverage": "partial_implementation_read; full bytes will be bound for direct lint execution"
+    },
+    {
+      "path": "docs/repo/controlled_vocabulary.yaml",
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "bytes": 53269,
+      "lines": 939,
+      "role": "mechanical_tool_input",
+      "consumed_windows": [],
+      "coverage": "hash_only; rules are consumed by the linter, not as scientific evidence"
+    }
+  ],
+  "primary_literature": [
+    {
+      "path": "/tmp/review_bare_determinant_coupling_primary/hep-lat9504006.pdf",
+      "sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e",
+      "bytes": 211800,
+      "lines": null,
+      "role": "primary_literature_comparison_only",
+      "coverage": "partial_primary_read via web-rendered PDF text; local full PDF bytes cached only for identity, not full-paper verification",
+      "consumed_windows": "PDF 13-15; section 5.1 equations (5.1)-(5.8), opening section 5.2 including (5.10). Web extracted windows 692-835, with returned surrounding context.",
+      "url": "https://arxiv.org/pdf/hep-lat/9504006",
+      "pages": 26
+    },
+    {
+      "path": "/tmp/review_bare_determinant_coupling_primary/hep-lat9505011.pdf",
+      "sha256": "c622299795225c3b360fe9c6c395d8aa4705ee4f3a9d8cdbb51ca6b0844b81ff",
+      "bytes": 395988,
+      "lines": null,
+      "role": "primary_literature_comparison_only",
+      "coverage": "partial_primary_read via web-rendered PDF text; local full PDF bytes cached only for identity, not full-paper verification",
+      "consumed_windows": "PDF 6-11 selective windows: section 4.1 (4.1)-(4.3), momentum-rule paragraph, section 4.3 colour/contraction context, section 5 (5.1)-(5.6). Web extracted windows 315-417 and 483-655.",
+      "url": "https://arxiv.org/pdf/hep-lat/9505011",
+      "pages": 35
+    },
+    {
+      "path": "/tmp/review_bare_determinant_coupling_primary/hep-lat9506030v1.pdf",
+      "sha256": "e3ae911b69f206fa230af3bb73070912e679dbb4386ad84874eef4cc71b1fb35",
+      "bytes": 313178,
+      "lines": null,
+      "role": "primary_literature_comparison_only",
+      "coverage": "partial_primary_read via web-rendered PDF text; local full PDF bytes cached only for identity, not full-paper verification",
+      "consumed_windows": "PDF 6-11 selective windows: sections 2-4 equations (4)-(11), (13)-(16), kernel type-I/II and fixed-point context. Web extracted windows 148-375.",
+      "url": "https://arxiv.org/pdf/hep-lat/9506030v1",
+      "pages": 34
+    }
+  ],
+  "prior_reviews_read": [],
+  "author_packet_read": false,
+  "root_scientific_fronts_read": [],
+  "scope_limits": [
+    "No scientific numerical run, simulation, integrand evaluation or executable vertex verification. Independent checks are written algebra and analytic estimates.",
+    "No original-cut remainder re-review: BR remains documentary adjacency.",
+    "No proof of coefficient value, sign, universal beta coefficient, Wilson closure, inherited-action closure, repeated trajectory, non-freeness, continuum existence or positive physical continuum mass gap.",
+    "Framework authority was read after the target and scientific suppliers. No approved primitive is used to derive the supplied SU(N) Wilson/blocking model.",
+    "No source edits, audit outputs, Git commits or pushes."
+  ]
+}

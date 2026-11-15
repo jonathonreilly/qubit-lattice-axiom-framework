@@ -1,0 +1,21 @@
+e1b_power.py -- re-run of criterion e1-5; checks/e1_criteria.md untouched.
+
+=== the exact requirement, computed (this is why e1-5 had no power) ===
+  eta_flat                          = 3.52309230578E-88
+  exact bound sqrt(eta_flat/4C_3)   = 9.38495112638E-45
+  TAUFLAT §4 C quotes               = 9.38496E-45
+  quoted / exact                    = 1.000000946   -> quoted value is ABOVE the bound
+  clause at TAUFLAT's quoted value  : FAILS
+  clause at the exact bound E_x     : HOLDS
+  shortfall at the quoted value     : 8.21E-7 decades of energy
+  decades below E_t required        : 4.8536
+
+=== e1-5 POWER, re-asked at E_x (criteria unchanged) ===
+  e1-2 at E_x  : FLOOR-RESPECTED      e1-2 at E_c1 : FLOOR-VIOLATED      FLIPPED: True
+  clause at E_x: CLAUSE-HOLDS        clause at E_c2: CLAUSE-FAILS        FLIPPED: True
+  VERDICT e1-5 (re-run id e1b): HAS-POWER (both flip)
+
+=== third flip, pre-registered in e1_criteria §e1-5 as the independent construction ===
+  the floor check is tested against EXISTENCE.md's own window statement, a different file
+  from the one proposing the change.  Boundary: the window closes at ε = g_DX = 1.567E-76;
+  E_x is 31.78 decades above it, E_c1 is 4.20 decades below it.

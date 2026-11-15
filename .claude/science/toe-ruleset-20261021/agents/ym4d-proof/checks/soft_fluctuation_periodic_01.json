@@ -1,0 +1,74 @@
+{
+  "scope": "finite author diagnostics; all-volume theorem requires the written local proof",
+  "mode": "periodic",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "elapsed_seconds": 5.320212166989222,
+  "passed": 8,
+  "total": 8,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "periodic_real_inverse_and_square_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "direct_periodic_inverse_vs_Bloch_periodization",
+      "pass": true,
+      "detail": 1.2378986724570495e-14
+    },
+    {
+      "name": "direct_full_operator_vs_Bloch_counting",
+      "pass": true,
+      "detail": 6.394884621840902e-14
+    },
+    {
+      "name": "inverse_square_root_covariance_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "distinct_input_output_densities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "complete_row_column_mass",
+      "pass": true,
+      "detail": {
+        "output_total": 1963.4366523020508,
+        "input_total": 1963.4366523020512
+      }
+    },
+    {
+      "name": "wrong_output_density_control",
+      "pass": true,
+      "detail": {
+        "wrong": 985.758319262758,
+        "actual": 1963.4366523020512
+      }
+    },
+    {
+      "name": "discarded_zero_momentum_control",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "periodic": {
+      "T": 2,
+      "matrix_dimension_one_colour": 3904,
+      "square_root_weighted_row_max": 21.330099495859795,
+      "square_root_weighted_column_max": 21.330099495859773,
+      "curvature_square_root_row_max": 7.607514825369768,
+      "curvature_square_root_column_max": 10.68056411260968,
+      "direct_inverse_error": 1.2378986724570495e-14
+    }
+  },
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

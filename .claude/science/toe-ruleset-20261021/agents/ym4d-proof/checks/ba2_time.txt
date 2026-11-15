@@ -1,0 +1,40 @@
+lock acquired 05:51:36Z;  1:51  up 5 days, 19:40, 2 users, load averages: 5.39 4.16 3.86; System-wide memory free percentage: 53%
+        8.30 real         8.11 user         0.16 sys
+           817790976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               58815  page reclaims
+                  87  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                1236  involuntary context switches
+        113179130152  instructions retired
+         31235818856  cycles elapsed
+           828064872  peak memory footprint
+V done 05:51:45Z
+      108.69 real       108.03 user         0.55 sys
+           270811136  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23009  page reclaims
+                 136  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+               10467  involuntary context switches
+       1944942098474  instructions retired
+        407869457527  cycles elapsed
+           254919328  peak memory footprint
+M done 05:53:33Z
+lock released 05:53:33Z

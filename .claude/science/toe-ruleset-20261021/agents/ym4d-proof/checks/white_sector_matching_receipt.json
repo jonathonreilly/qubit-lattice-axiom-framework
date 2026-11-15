@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "role": "Author analytic checks and provenance; not independent review or audit.",
+  "requested_configuration": "Coordinator-requested Astra/max; no independent backend attestation.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+    "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+    "lines": 631
+  },
+  "source_frozen_at_utc": "2026-10-30T11:23:43.685342+00:00",
+  "freeze_order": "Mathematical source was frozen and its exact hash sent to root and the complex-white author before this provenance package. No source byte has changed after that announcement.",
+  "bounded_result": "WS28-29 give the actual complete-original-reader log Gamma_a=d log z_p+T_p+J_p-H_a, at mu=(16R)^-4/2, for the literal old scalar Omega and original-a chart. WS31 is small with leading O(sigma p^3); it is not an entirely rare exponent.",
+  "author_analytic_checks": [
+    "WS4-7: scalar b_abs=vK B pays all colours; face-range 8 safely covers sup-range 2. Radius-(R+8) full collars retain residual readers. Both endpoint and marked sums have finite 9^4 box incidence, including small tori.",
+    "WS8-14: one R satisfies both exponential white and O(1/R) regional residual criteria. Fixed preliminary ceilings precede final radii. The old-SA field is explicitly put in the same ordinary cube; pointwise contraction identifies actual branches without identifying atom decompositions. Critical resolvent integration and K0 C0 pay both half-power marked norms.",
+    "WS15-18: the shift is exactly sigma^-1 C0^-1(b_epsilon-b0), with C0 fixed in epsilon. All oriented ends/corners remain. Original local Taylor expansion precedes nonlocal whitening, retains every reader, and stays in its finite analytic polydisc.",
+    "WS19-23: FR's individual scalar factorial recursion and full marked incidence replace any false finite white-coordinate incidence. Its full-Gaussian comparison is only for U=0 polynomial coefficients with global quadratic domination. L_G contains the determinant; only T_p is the rare Gaussian correction.",
+    "WS24-29: full affine Gram/Jacobian, h_N, all scalar modes, full critical action, finite-u normalizers and empty-stencil outside phase match exactly. The determinant branch follows from its finite identity and continuation from epsilon=0; no multiplicative matrix-square-root formula or tree-only intrinsic Hessian is used.",
+    "WS30-31: fixed source radius survives the common shrinking RF/RC family, all sigma poles are already paid in RC18, and sigma p^3 tends to zero for the admitted logarithmic p. The residual nonlinear price is not renamed rare. Coarse/source extension and STEP55's white-ball/effective consumer remain separate."
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_read_manifest.json",
+      "sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "lines": 129
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9
+    }
+  ],
+  "preservation_check": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+    "sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+    "lines": 76,
+    "use": "All 20 frozen mathematical source hashes enumerated here were rechecked unchanged, along with this unit's exact input hashes. This mechanical comparison is not a new source read or scientific proof."
+  },
+  "mechanical_checks": {
+    "equation_labels": "WS1-WS31 defined once, in order",
+    "fences": "balanced",
+    "trailing_whitespace": "none",
+    "relative_source_links": "all resolve",
+    "vocab_lint": "report-only, zero violations",
+    "json": "parseable",
+    "source_hash": "unchanged since announced freeze"
+  },
+  "credit": "Constructive antecedents: Bałaban and Dimock; bounded primary method comparison: Benzi-Simoncini. No external theorem replaces the displayed derivations.",
+  "remaining_interfaces": "Joint complex coarse tube; a purely rare matched nonlinear ratio; total original-cut/white assembly on one exact domain; separate G/history and effective-level return; non-free continuum existence and positive physical continuum mass gap.",
+  "scientific_numerical_experiments": "none",
+  "independent_review": "A DIFFERENT fresh hostile reviewer was requested from root on the exact frozen source; no reviewer verdict is claimed.",
+  "operations": "Only WHITE_SECTOR_MATCHING_ASTRA.md and checks/white_sector_matching_* authored.",
+  "packaged_at_utc": "2026-10-30T11:28:57.697961+00:00"
+}

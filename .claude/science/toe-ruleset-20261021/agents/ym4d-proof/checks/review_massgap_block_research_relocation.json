@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-29T17:04:00.815491+00:00",
+  "files": [
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_chatterjee_v5.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_chatterjee_v5.pdf",
+      "sha256": "34c1e44bf9ca8374103e87a7870557fcc16b7a40e112b90cc9a1e08073d60e4b",
+      "bytes": 335742,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_comparison_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_comparison_v1.pdf",
+      "sha256": "5df16281b38a776ed2026c925f0a3c97c3b90a60407390e06e4280beb18cc9da",
+      "bytes": 492828,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_faizal_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_faizal_v1.pdf",
+      "sha256": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+      "bytes": 4636244,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "sha256": "a80fbf446b0d251dc18d919c7336375365d7d711187fd1bb676741fcad91b431",
+      "bytes": 86541,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_luscher.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_luscher.pdf",
+      "sha256": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561",
+      "bytes": 248,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_szz_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_szz_v1.pdf",
+      "sha256": "21d0cf19e74e13f8468d1f980ba05849a781f28018301ea2b11d7551822597d1",
+      "bytes": 525950,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_kirk_v4.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.pdf",
+      "sha256": "b91c6c2b9ba7cd4d5476aa6a2e823569507682c24cf103933ff9f97c73260bed",
+      "bytes": 1372548,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_kirk_v4.txt",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.txt",
+      "sha256": "62e6276fcc0d9cbc361e57134a3073e5bfe8bdc12b2300c1de008fa9d60b7032",
+      "bytes": 407397,
+      "publication_status": "local-only research input; do not stage or republish"
+    }
+  ]
+}

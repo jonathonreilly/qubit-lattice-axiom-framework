@@ -1,0 +1,391 @@
+{
+  "checks": [
+    {
+      "name": "nonzero coarse curvature",
+      "passed": true,
+      "detail": "0.058289468923936290159034340252170811888137084717894832456495673969"
+    },
+    {
+      "name": "full colour generator",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual six plaquettes 0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual normalized Haar kernel 0.0",
+      "passed": true,
+      "detail": "1.9477360341059855734986041168888586336447610416554925134354966433e-66"
+    },
+    {
+      "name": "actual six plaquettes 0.03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual normalized Haar kernel 0.03",
+      "passed": true,
+      "detail": "1.5586195251198243564392953657083768053586600393903141648041026773e-65"
+    },
+    {
+      "name": "actual six plaquettes -0.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual normalized Haar kernel -0.12",
+      "passed": true,
+      "detail": "1.9563590943494858892717635447194148195694292651235995917085161893e-65"
+    },
+    {
+      "name": "actual six plaquettes (0.045 + 0.018j)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual normalized Haar kernel (0.045 + 0.018j)",
+      "passed": true,
+      "detail": "5.7092394716526381723000438415628287821685580448254698020998891379e-68"
+    },
+    {
+      "name": "actual six plaquettes (-0.08 + 0.011j)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual normalized Haar kernel (-0.08 + 0.011j)",
+      "passed": true,
+      "detail": "3.3175505447983728037334640527991486518619854690719614009889156382e-65"
+    },
+    {
+      "name": "normalized full three-colour Haar constant",
+      "passed": true,
+      "detail": "1.0"
+    },
+    {
+      "name": "finite-u full density Hessian",
+      "passed": true,
+      "detail": "-1.5192908393215677995957187631299131446753545333791911946047647985e-64"
+    },
+    {
+      "name": "HS Haar coefficient N^2/(6u)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual real and source-complex critical residuals",
+      "passed": true,
+      "detail": "7.2074008293396197065624338106187014660705692641439429926853819681e-73"
+    },
+    {
+      "name": "complex symmetric covariance branch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "omitting normalizer changes actual critical equation",
+      "passed": true,
+      "detail": "-0.0059250240314449768907622506775091884664254930078374486830080712753"
+    },
+    {
+      "name": "omitting Haar changes actual critical equation",
+      "passed": true,
+      "detail": "0.0064312911560852138521312823908099878370711120845878392412177646955"
+    },
+    {
+      "name": "fixed real Haar fibre exact Gaussian factorization",
+      "passed": true,
+      "detail": "1.483682494516754675974509941169409051770350492058382613084606634e-65"
+    },
+    {
+      "name": "source vacuum omission rejected",
+      "passed": true,
+      "detail": "0.00015891862521137598719756917303331627520419423282798650648682371649"
+    },
+    {
+      "name": "canonical linear source omission rejected",
+      "passed": true,
+      "detail": "0.00000016049327795830288070758868190163230985250892357706691326451833862"
+    },
+    {
+      "name": "Haar constant omission rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "covariance Jacobian omission rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-complex normalized contour return",
+      "passed": true,
+      "detail": "(2.6462867631310571948829848756603940653181719968450115183125900536e-66 + 1.0432142298808372647370505423102736131346275940256287194399172353e-68j)"
+    },
+    {
+      "name": "contour start is exact fixed sector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nontrivial full face correction",
+      "passed": true,
+      "detail": "(-0.00073036090815982319611870921423195742740405045628055252567731005002 - 0.00046801620948294527250482750778314558604176224682541828062140507952j)"
+    }
+  ],
+  "parameters": {
+    "alpha": "0.43",
+    "b": "0.07",
+    "u": "17.0",
+    "kappa": "1.1",
+    "p": "1.15",
+    "epsilon": "(0.014 + 0.009j)",
+    "affected_word_fraction": "0.037037037037037037037037037037037037037037037037037037037037037037"
+  },
+  "dps": 65,
+  "critical": {
+    "a0": "-0.0096468768829366927474725262272615845639742731112011860212340457925",
+    "a1": "(-0.0097594584855532361196019716362460082948743888362610965364668798001 - 0.000072137952004684434645754001605949919643344363326274880193709336135j)",
+    "k0": "102.72097537434713307837682860833667219221467240240510164558011097",
+    "k1": "(102.95869481600106182689395997850774030176485850913943408240076462 + 0.15282023437337320028620631263628545517915347659462928455845582625j)",
+    "residual": "7.2074008293396197065624338106187014660705692641439429926853819681e-73"
+  },
+  "fixed_integral": "(0.47415130612115771127831706590031738853346239530562611043799774709 - 0.00021558059161788475307259426959130681904551993717636928826827518621j)",
+  "factored_integral": "(0.47415130612115771127831706590031738853346239530562611043799774708 - 0.0002155805916178847530725942695913068190455199371763692882682751862j)",
+  "normalized_flux": "(-0.00073036090815982319611870921423195742740405045628055252567731004738 - 0.00046801620948294527250482750778314558604176224682541828062140507951j)",
+  "log_contour_ratio": "(-0.00073036090815982319611870921423195742740405045628055252567731005002 - 0.00046801620948294527250482750778314558604176224682541828062140507952j)",
+  "resources": [
+    {
+      "where": "start",
+      "rss": 22790144,
+      "free": 54,
+      "load": [
+        2.1083984375,
+        2.01904296875,
+        1.9423828125
+      ],
+      "nice": 10,
+      "elapsed": 0.0026375839952379465,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "direct geometry and group normalizer",
+      "rss": 24346624,
+      "free": 54,
+      "load": [
+        2.1083984375,
+        2.01904296875,
+        1.9423828125
+      ],
+      "nice": 10,
+      "elapsed": 0.2722110839677043,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "critical equations",
+      "rss": 24363008,
+      "free": 54,
+      "load": [
+        2.1083984375,
+        2.01904296875,
+        1.9423828125
+      ],
+      "nice": 10,
+      "elapsed": 0.33044054196216166,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "nodes 32",
+      "rss": 24363008,
+      "free": 54,
+      "load": [
+        2.1083984375,
+        2.01904296875,
+        1.9423828125
+      ],
+      "nice": 10,
+      "elapsed": 0.369667999970261,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "nodes 48",
+      "rss": 24363008,
+      "free": 54,
+      "load": [
+        2.1083984375,
+        2.01904296875,
+        1.9423828125
+      ],
+      "nice": 10,
+      "elapsed": 0.45253787498222664,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "nodes 96",
+      "rss": 24395776,
+      "free": 54,
+      "load": [
+        2.1083984375,
+        2.01904296875,
+        1.9423828125
+      ],
+      "nice": 10,
+      "elapsed": 0.7690755839576013,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "fixed real integration set",
+      "rss": 24395776,
+      "free": 54,
+      "load": [
+        2.1083984375,
+        2.01904296875,
+        1.9423828125
+      ],
+      "nice": 10,
+      "elapsed": 0.8058244590065442,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "flux 8",
+      "rss": 24412160,
+      "free": 54,
+      "load": [
+        2.259765625,
+        2.0517578125,
+        1.9541015625
+      ],
+      "nice": 10,
+      "elapsed": 1.0474082089494914,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "flux 16",
+      "rss": 24412160,
+      "free": 54,
+      "load": [
+        2.259765625,
+        2.0517578125,
+        1.9541015625
+      ],
+      "nice": 10,
+      "elapsed": 1.253244666964747,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "flux 24",
+      "rss": 24412160,
+      "free": 54,
+      "load": [
+        2.259765625,
+        2.0517578125,
+        1.9541015625
+      ],
+      "nice": 10,
+      "elapsed": 1.4591681250021793,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "flux 32",
+      "rss": 24412160,
+      "free": 54,
+      "load": [
+        2.259765625,
+        2.0517578125,
+        1.9541015625
+      ],
+      "nice": 10,
+      "elapsed": 1.6652410840033554,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "completion",
+      "rss": 24412160,
+      "free": 54,
+      "load": [
+        2.259765625,
+        2.0517578125,
+        1.9541015625
+      ],
+      "nice": 10,
+      "elapsed": 1.666871249966789,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "scope": "Actual SU(2) full-Haar density fibre; all-volume/support and full coupled claims rest on the analytic proof, not this finite check."
+}

@@ -1,0 +1,12 @@
+--- G4 cylinder n=9, basis size 27 (expected 3n = 27)
+   every basis vector exactly horizontal at tau in {1/10,1/7,3/5}
+   dim ker Q_0 = 3 (expected 3: wall-to-wall holonomy)
+   K^T Q_1 K == 0 : True
+   Qeff (on K) = [['-144', '0', '0'], ['0', '-144', '0'], ['0', '0', '0']] ; chosen coeffs (-3, -3, -3) value -2592
+   certified order 2 ; coefficients below it zero: True ; n_2 = -2592 ; tail bound at 1/10: 141.388684878528 < |n|: True ; direct==pQp: True
+   kappa = 2450.611315121472  D_max = 261.8575930764  c_* = 2269084551038400/247334195090033 ~ 9.174164333453458   => RQ_cyl(tau) <= -c_* tau^2 on (0,1/10]
+   leading RQ coefficient n_2/D(0) = -32/3 ~ -10.666666666666666
+   identity 2S1/S0 = 20/((n_perp+1)^2+1) for n_perp=1..200: True
+   tau=1/10: n_perp(tau) = 20 (region x1-width 9, x2 periodic, x3,x4 extent 20+2): RQ_4D <= -c_* tau^2/2 < 0
+   tau=1/50: n_perp(tau) = 104 (region x1-width 9, x2 periodic, x3,x4 extent 104+2): RQ_4D <= -c_* tau^2/2 < 0
+   tau=1/1000: n_perp(tau) = 2088 (region x1-width 9, x2 periodic, x3,x4 extent 2088+2): RQ_4D <= -c_* tau^2/2 < 0

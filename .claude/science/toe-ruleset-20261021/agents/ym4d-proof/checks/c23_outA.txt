@@ -1,0 +1,31 @@
+d=2 k=1: fine side 27, 1458 unknowns; LSMR its [41, 15, 45, 39], normal-eq rel 3.7e-14; 0 s
+   data R: E_k/|dB|^2 = 0.05863, E_W/|dB|^2 = 0.07951
+   data S: E_k/|dB|^2 = 0.05727, E_W/|dB|^2 = 0.06104
+   Q1 orbit: max|dr|/max|r| = 1.1e-13; Q2 closed: E/|B|^2 = 8.6e-28; I1: sup|r_top|/sup|dB| = 0.1694, sup|f_0|/sup|dB| = 1.0724
+   I2 local energy per cell vs r: r=0:5.49e-02 r=1:3.40e-02 r=2:1.48e-03 r=3:7.73e-07 r=4:1.74e-09; fitted decay rate m = 6.828
+d=2 k=2: fine side 81, 14580 unknowns; LSMR its [152, 72, 163, 134], normal-eq rel 4.3e-14; 0 s
+   data R: E_k/|dB|^2 = 0.01436, E_W/|dB|^2 = 0.02975
+   data S: E_k/|dB|^2 = 0.00683, E_W/|dB|^2 = 0.01053
+   Q1 orbit: max|dr|/max|r| = 4.8e-13; Q2 closed: E/|B|^2 = 2.2e-26; I1: sup|r_top|/sup|dB| = 0.0457, sup|f_0|/sup|dB| = 2.4774
+   I2 local energy per cell vs r: r=0:1.26e-02 r=1:1.11e-02 r=2:7.85e-04 r=3:2.36e-05 r=4:7.39e-07; fitted decay rate m = 3.484
+d=2 k=3: fine side 243, 132678 unknowns; LSMR its [503, 237, 543, 448], normal-eq rel 3.4e-14; 2 s
+   data R: E_k/|dB|^2 = 0.00237, E_W/|dB|^2 = 0.02540
+   data S: E_k/|dB|^2 = 0.00080, E_W/|dB|^2 = 0.00624
+   Q1 orbit: max|dr|/max|r| = 2.9e-12; Q2 closed: E/|B|^2 = 1.1e-25; I1: sup|r_top|/sup|dB| = 0.0094, sup|f_0|/sup|dB| = 3.7032
+   I2 local energy per cell vs r: r=0:1.91e-03 r=1:1.88e-03 r=2:1.57e-04 r=3:9.81e-06 r=4:6.15e-07; fitted decay rate m = 2.771
+d=2 k=4: fine side 729, 1195560 unknowns; LSMR its [1639, 877, 1777, 1455], normal-eq rel 2.4e-14; 49 s
+   data R: E_k/|dB|^2 = 0.00029, E_W/|dB|^2 = 0.02405
+   data S: E_k/|dB|^2 = 0.00008, E_W/|dB|^2 = 0.00380
+   Q1 orbit: max|dr|/max|r| = 4.5e-11; Q2 closed: E/|B|^2 = 4.4e-25; I1: sup|r_top|/sup|dB| = 0.0011, sup|f_0|/sup|dB| = 4.0517
+   I2 local energy per cell vs r: r=0:2.27e-04 r=1:2.27e-04 r=2:1.95e-05 r=3:1.37e-06 r=4:9.71e-08; fitted decay rate m = 2.651
+d=4 k=1: fine side 9, 26244 unknowns; LSMR its [59, 47, 62, 40], normal-eq rel 2.2e-13; 0 s
+   data R: E_k/|dB|^2 = 0.05634, E_W/|dB|^2 = 0.26514
+   data S: E_k/|dB|^2 = 0.05437, E_W/|dB|^2 = 0.29189
+   Q1 orbit: max|dr|/max|r| = 1.1e-13; Q2 closed: E/|B|^2 = 4.2e-27; I1: sup|r_top|/sup|dB| = 0.4284, sup|f_0|/sup|dB| = 0.1401
+V1: PASS
+V2: PASS
+Q1: PASS
+Q2: PASS
+Q3: FAIL
+I2 decay rates m_k (k = 1..4): 6.828 3.484 2.771 2.651; m_4 >= 0.5 m_2: True (informational)
+c23 A: VALID; time 65 s, peak RSS 469 MB

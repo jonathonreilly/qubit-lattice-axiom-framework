@@ -1,0 +1,33 @@
+tau = 0      PD(kappa=1/4, 1, 4) = [True, True, True]   t=4.9s
+tau = 1/80   PD(kappa=1/4, 1, 4) = [True, True, True]   t=10.0s
+tau = 1/60   PD(kappa=1/4, 1, 4) = [True, True, True]   t=15.1s
+tau = 1/50   PD(kappa=1/4, 1, 4) = [True, True, True]   t=20.2s
+tau = 1/40   PD(kappa=1/4, 1, 4) = [True, True, True]   t=25.2s
+tau = 1/35   PD(kappa=1/4, 1, 4) = [True, True, True]   t=30.3s
+tau = 1/30   PD(kappa=1/4, 1, 4) = [False, True, True]   t=35.3s
+tau = 1/25   PD(kappa=1/4, 1, 4) = [False, True, True]   t=40.3s
+tau = 1/22   PD(kappa=1/4, 1, 4) = [False, True, True]   t=45.5s
+tau = 1/20   PD(kappa=1/4, 1, 4) = [False, True, True]   t=50.6s
+tau = 1/18   PD(kappa=1/4, 1, 4) = [False, True, True]   t=55.6s
+tau = 1/17   PD(kappa=1/4, 1, 4) = [False, True, True]   t=60.8s
+tau = 1/16   PD(kappa=1/4, 1, 4) = [False, False, True]   t=66.0s
+tau = 1/15   PD(kappa=1/4, 1, 4) = [False, False, True]   t=71.2s
+tau = 1/14   PD(kappa=1/4, 1, 4) = [False, False, True]   t=76.4s
+tau = 1/13   PD(kappa=1/4, 1, 4) = [False, False, True]   t=81.4s
+tau = 1/12   PD(kappa=1/4, 1, 4) = [False, False, True]   t=86.5s
+tau = 1/11   PD(kappa=1/4, 1, 4) = [False, False, True]   t=91.6s
+tau = 1/10   PD(kappa=1/4, 1, 4) = [False, False, True]   t=96.7s
+tau = 1/9    PD(kappa=1/4, 1, 4) = [False, False, True]   t=101.7s
+tau = 1/8    PD(kappa=1/4, 1, 4) = [False, False, False]   t=106.8s
+tau = 1/7    PD(kappa=1/4, 1, 4) = [False, False, False]   t=111.8s
+tau = 1/6    PD(kappa=1/4, 1, 4) = [False, False, False]   t=116.8s
+tau = 1/5    PD(kappa=1/4, 1, 4) = [False, False, False]   t=121.8s
+tau = 1/4    PD(kappa=1/4, 1, 4) = [False, False, False]   t=126.8s
+kappa_0 = 1/4: monotone True ; last PD tau_+ = 1/35 ; first non-PD tau_- = 1/30
+kappa_0 = 1: monotone True ; last PD tau_+ = 1/17 ; first non-PD tau_- = 1/16
+kappa_0 = 4: monotone True ; last PD tau_+ = 1/9 ; first non-PD tau_- = 1/8
+W1 (kappa=1 bracket inside [1/18, 1/14], monotone): True
+W2 (tau_c(4)/tau_c(1) in [1.4, 2.6]): True  ratio of midpoints = 578/297
+W3 (tau_c(1/4)/tau_c(1) in [0.35, 0.65]): True  ratio of midpoints = 1768/3465
+C1 (tau = 0 PD for all kappa): True ; C2 (tau = 1/4 not PD for kappa = 1/4, 1): True
+OVERALL: PASS  total 126.8s

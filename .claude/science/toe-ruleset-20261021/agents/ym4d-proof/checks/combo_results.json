@@ -1,0 +1,484 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "id": "gaussian_arbitrary_means_K4",
+      "control": false,
+      "passed": true,
+      "obtained": [],
+      "expected": [],
+      "difference": []
+    },
+    {
+      "id": "amplitude_covariance",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "5/2",
+          "monomial": "C12^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "5/2",
+          "monomial": "C12^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "amplitude_K4",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "9/4",
+          "monomial": "C14^1*C23^1"
+        },
+        {
+          "coefficient": "9/4",
+          "monomial": "C13^1*C24^1"
+        },
+        {
+          "coefficient": "9/4",
+          "monomial": "C12^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "9/4",
+          "monomial": "C14^1*C23^1"
+        },
+        {
+          "coefficient": "9/4",
+          "monomial": "C13^1*C24^1"
+        },
+        {
+          "coefficient": "9/4",
+          "monomial": "C12^1*C34^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "random_shift_covariance",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "1",
+          "monomial": "1"
+        },
+        {
+          "coefficient": "1",
+          "monomial": "C12^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "1",
+          "monomial": "1"
+        },
+        {
+          "coefficient": "1",
+          "monomial": "C12^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "random_shift_K4",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "-2",
+          "monomial": "1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "-2",
+          "monomial": "1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "independent_product_covariance",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "1",
+          "monomial": "C12^2"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "1",
+          "monomial": "C12^2"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "independent_product_K3",
+      "control": false,
+      "passed": true,
+      "obtained": [],
+      "expected": [],
+      "difference": []
+    },
+    {
+      "id": "independent_product_K4",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "2",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "2",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "2",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "2",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "2",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "2",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "affine_1_covariance",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "9/4",
+          "monomial": "C23^2"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "9/4",
+          "monomial": "C23^2"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "affine_1_K4",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "81/8",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "81/8",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "affine_1_ratio_cross_product",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "81/8",
+          "monomial": "C13^1*C14^1*C23^5*C24^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C14^1*C23^5*C34^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C13^1*C23^4*C24^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "81/8",
+          "monomial": "C13^1*C14^1*C23^5*C24^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C14^1*C23^5*C34^1"
+        },
+        {
+          "coefficient": "81/8",
+          "monomial": "C12^1*C13^1*C23^4*C24^1*C34^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "affine_2_covariance",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "4/9",
+          "monomial": "C23^2"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "4/9",
+          "monomial": "C23^2"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "affine_2_K4",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "32/81",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "32/81",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "affine_2_ratio_cross_product",
+      "control": false,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "32/81",
+          "monomial": "C13^1*C14^1*C23^5*C24^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C14^1*C23^5*C34^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C13^1*C23^4*C24^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "32/81",
+          "monomial": "C13^1*C14^1*C23^5*C24^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C14^1*C23^5*C34^1"
+        },
+        {
+          "coefficient": "32/81",
+          "monomial": "C12^1*C13^1*C23^4*C24^1*C34^1"
+        }
+      ],
+      "difference": []
+    },
+    {
+      "id": "control_missing_gaussian_subtraction",
+      "control": true,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "1",
+          "monomial": "C14^1*C23^1"
+        }
+      ],
+      "expected": [],
+      "difference": [
+        {
+          "coefficient": "1",
+          "monomial": "C14^1*C23^1"
+        }
+      ]
+    },
+    {
+      "id": "control_wrong_amplitude_coefficient",
+      "control": true,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "17/2",
+          "monomial": "C14^1*C23^1"
+        },
+        {
+          "coefficient": "17/2",
+          "monomial": "C13^1*C24^1"
+        },
+        {
+          "coefficient": "17/2",
+          "monomial": "C12^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "9/4",
+          "monomial": "C14^1*C23^1"
+        },
+        {
+          "coefficient": "9/4",
+          "monomial": "C13^1*C24^1"
+        },
+        {
+          "coefficient": "9/4",
+          "monomial": "C12^1*C34^1"
+        }
+      ],
+      "difference": [
+        {
+          "coefficient": "25/4",
+          "monomial": "C14^1*C23^1"
+        },
+        {
+          "coefficient": "25/4",
+          "monomial": "C13^1*C24^1"
+        },
+        {
+          "coefficient": "25/4",
+          "monomial": "C12^1*C34^1"
+        }
+      ]
+    },
+    {
+      "id": "control_missing_product_factor_two",
+      "control": true,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "1",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "1",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "1",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "2",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "2",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "2",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ],
+      "difference": [
+        {
+          "coefficient": "-1",
+          "monomial": "C13^1*C14^1*C23^1*C24^1"
+        },
+        {
+          "coefficient": "-1",
+          "monomial": "C12^1*C14^1*C23^1*C34^1"
+        },
+        {
+          "coefficient": "-1",
+          "monomial": "C12^1*C13^1*C24^1*C34^1"
+        }
+      ]
+    },
+    {
+      "id": "control_omitted_mean_variance",
+      "control": true,
+      "passed": true,
+      "obtained": [
+        {
+          "coefficient": "1",
+          "monomial": "C12^1"
+        }
+      ],
+      "expected": [
+        {
+          "coefficient": "1",
+          "monomial": "1"
+        },
+        {
+          "coefficient": "1",
+          "monomial": "C12^1"
+        }
+      ],
+      "difference": [
+        {
+          "coefficient": "-1",
+          "monomial": "1"
+        }
+      ]
+    }
+  ],
+  "scientific_scope": "Formal finite kernel/moment identities only; no YM estimate or AF numerical test.",
+  "criteria_sha256": "f36144079bdf0b84e722898ec744cc936e62d2716166997f5bd306d4220ed88e",
+  "script_sha256": "a25c37855b55a10a7af78a6a17430041ffca91456f22af7f43b22afb51ed5db4",
+  "peak_rss_bytes": 20381696
+}

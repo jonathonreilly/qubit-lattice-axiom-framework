@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-29T23:33:22.215657+00:00",
+  "source": "https://arxiv.org/html/1212.5562v2",
+  "version": "1212.5562v2",
+  "actual_displayed_HTML_ranges": [
+    [
+      1907,
+      2019
+    ],
+    [
+      2021,
+      2124
+    ]
+  ],
+  "read_scope": "Complete displayed Lemma3.15 and proof, plus adjacent normalization and beginning of Lemma3.16; not a complete paper or dependency audit.",
+  "mechanism": "Two analytic decouplings localize fluctuation and background dependence; bulk and boundary terms retain different support accounting.",
+  "interface_warning": "StepH uses distance modulo exterior components. Full-reader support size and arbitrary-hole costs in the present model are separate obligations. Hard indicators are not justified by analytic interpolation.",
+  "new_imported_theorems": false,
+  "scientific_runs": 0,
+  "PDFs_added": false,
+  "action": "Precise primary pointer sent to graded-complement author; independent reconstruction still required."
+}

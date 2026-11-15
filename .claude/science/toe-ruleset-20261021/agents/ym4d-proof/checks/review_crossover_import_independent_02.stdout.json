@@ -1,0 +1,1573 @@
+{
+  "scope": "Independent finite controls plus primary-text proof review; no Yang-Mills continuum theorem",
+  "author_runner_read_before_implementation": false,
+  "runtime": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "sympy": "1.14.0",
+    "numpy": "2.4.1",
+    "mpmath": "1.3.0"
+  },
+  "checks": [
+    {
+      "label": "direct_det_rank_1",
+      "passed": true,
+      "evidence": "4095/4096"
+    },
+    {
+      "label": "trace_rank_1",
+      "passed": true,
+      "evidence": "1/2048"
+    },
+    {
+      "label": "direct_det_rank_2",
+      "passed": true,
+      "evidence": "16769025/16777216"
+    },
+    {
+      "label": "trace_rank_2",
+      "passed": true,
+      "evidence": "1/1024"
+    },
+    {
+      "label": "direct_det_rank_3",
+      "passed": true,
+      "evidence": "68669157375/68719476736"
+    },
+    {
+      "label": "trace_rank_3",
+      "passed": true,
+      "evidence": "3/2048"
+    },
+    {
+      "label": "direct_det_rank_7",
+      "passed": true,
+      "evidence": "19309780749956356667109375/19342813113834066795298816"
+    },
+    {
+      "label": "trace_rank_7",
+      "passed": true,
+      "evidence": "7/2048"
+    },
+    {
+      "label": "direct_det_rank_12",
+      "passed": true,
+      "evidence": "22235498641774645581443610453175918212890625/22300745198530623141535718272648361505980416"
+    },
+    {
+      "label": "trace_rank_12",
+      "passed": true,
+      "evidence": "3/512"
+    },
+    {
+      "label": "missing_rank_mutation_rejected",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_gaussian_integral_0.0",
+      "passed": true,
+      "evidence": "4.392276023603320299612948129659305647384448107033426196093255700065416e-67"
+    },
+    {
+      "label": "conditional_gaussian_integral_0.7",
+      "passed": true,
+      "evidence": "0.0"
+    },
+    {
+      "label": "conditional_gaussian_integral_-2.3",
+      "passed": true,
+      "evidence": "0.0"
+    },
+    {
+      "label": "normalized_gaussian_integral_0.0",
+      "passed": true,
+      "evidence": "4.392276023603320299612948129659305647384448107033426196093255700065416e-67"
+    },
+    {
+      "label": "normalized_gaussian_integral_0.125",
+      "passed": true,
+      "evidence": "9.055679078826712367509119290887791780682531198139138189582614889935501e-72"
+    },
+    {
+      "label": "omitted_prefactor_mutation_0.125",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "wrong_schur_sign_mutation_0.125",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "lost_half_power_mutation_0.125",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "normalized_gaussian_integral_0.6",
+      "passed": true,
+      "evidence": "9.055679078826712367509119290887791780682531198139138189582614889935501e-72"
+    },
+    {
+      "label": "omitted_prefactor_mutation_0.6",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "wrong_schur_sign_mutation_0.6",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "lost_half_power_mutation_0.6",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_hs_budget_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_rank_budget_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_hs_budget_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_rank_budget_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_hs_budget_16",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_rank_budget_16",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_hs_budget_64",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "fixed_rank_budget_64",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_schur_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_logdet_bounds_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_schur_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_logdet_bounds_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_schur_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_logdet_bounds_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_schur_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "rectangular_logdet_bounds_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "lower_logdet_factor_two_mutation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "upper_logdet_lost_denominator_mutation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "general_trace_zero_0",
+      "passed": true,
+      "evidence": "bound uses a symmetric Schur operator majorant"
+    },
+    {
+      "label": "general_lost_denominator_mutation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "general_trace_zero_1",
+      "passed": true,
+      "evidence": "bound uses a symmetric Schur operator majorant"
+    },
+    {
+      "label": "trace_zero_hypothesis_is_necessary",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "source_first_derivative",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "source_second_derivative",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "vacuum_subtraction_does_not_remove_mark",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_0_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_1_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_2_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_0_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_1_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_2_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_0_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_1_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_2_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_0_5",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_1_5",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_2_5",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_0_6",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_1_6",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_path_trace_2_6",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_series_global_logdet",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_cell_budget",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "local_lost_rank_mutation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_tree_length_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_linear_mutation_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_tree_length_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_linear_mutation_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_tree_length_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_linear_mutation_4",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_7",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_tree_length_7",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "grid_diameter_linear_mutation_7",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "straight_path_passing_control",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "four_distinct_edges_3_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "six_plaquette_incidence_3_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conflict_degree_18_3_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "greedy_pivot_lower_bound_3_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "four_distinct_edges_4_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "six_plaquette_incidence_4_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conflict_degree_18_4_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "greedy_pivot_lower_bound_4_True",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "four_distinct_edges_3_False",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "six_plaquette_incidence_3_False",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conflict_degree_18_3_False",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "greedy_pivot_lower_bound_3_False",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, -1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, -1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(-1, 1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(-1, 1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, -1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, -1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 4)_(1, 1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 4)_(1, 1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "nonsharing_exact_product_all_exteriors",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "separately_centered_product_bound",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, -1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, -1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(-1, 1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(-1, 1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, -1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, -1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, -1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, -1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, -1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, -1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, -1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, 1, -1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, -1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, -1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, 1, -1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, -1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, -1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, 1, 1, -1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, 1, -1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, 1, -1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "conditional_normalization_(0, 1)_(1, 1, 1, 1, 1)",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, 1, 1)_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "haar_density_minorization_(0, 1)_(1, 1, 1, 1, 1)_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "shared_plaquette_product_mutation_rejected",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "premature_nonpivot_marginalization_mutation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "beta_zero_endpoint_centered_expectation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "su2_six_staples_minorization_0.0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "su2_six_staples_minorization_0.3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "oscillation_factor_six_mutation_0.3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "su2_six_staples_minorization_1.1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "oscillation_factor_six_mutation_1.1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "two_level_jungle_polynomial_0",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "two_level_jungle_polynomial_1",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "two_level_jungle_polynomial_2",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "two_level_jungle_polynomial_3",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "bkar_convex_block_identity",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "bkar_positivity_principal_minors",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "label": "positivity_lost_transitive_links_mutation",
+      "passed": true,
+      "evidence": null
+    }
+  ],
+  "checks_total": 300,
+  "checks_passed": 300,
+  "failed": [],
+  "observations": {
+    "rank_growth": [
+      {
+        "d": 1,
+        "minus_log_at_zero": "0.0001220852160869572283477327091907168215332340334890595938439472852556797"
+      },
+      {
+        "d": 17,
+        "minus_log_at_zero": "0.002075448673478272881911456056242185966064978569314013095347103849346555"
+      },
+      {
+        "d": 4096,
+        "minus_log_at_zero": "0.5000610450921768073123131768451761010001266011711880963848080804072641"
+      },
+      {
+        "d": 1048576,
+        "minus_log_at_zero": "128.0156275435972626719521732723650818560324098998241526745108685842596"
+      }
+    ],
+    "geometry": [
+      {
+        "q": 2,
+        "n": 16,
+        "diameter": 24,
+        "tree_length": 90,
+        "ratio": "4/15"
+      },
+      {
+        "q": 3,
+        "n": 81,
+        "diameter": 48,
+        "tree_length": 480,
+        "ratio": "1/10"
+      },
+      {
+        "q": 4,
+        "n": 256,
+        "diameter": 72,
+        "tree_length": 1530,
+        "ratio": "4/85"
+      },
+      {
+        "q": 7,
+        "n": 2401,
+        "diameter": 144,
+        "tree_length": 14400,
+        "ratio": "1/100"
+      }
+    ]
+  },
+  "limits": [
+    "No actual Karcher optical matrix instantiated",
+    "No actual many-pivot Wilson reference activity instantiated",
+    "No full marked polymer or continuum estimate",
+    "No whole-paper audit",
+    "Finite forest identities do not verify model-specific amplitudes"
+  ]
+}

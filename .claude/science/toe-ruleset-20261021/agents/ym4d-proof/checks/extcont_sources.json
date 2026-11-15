@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-30T09:26:10Z",
+  "sources": {
+    "briefs_q/EXTCONT/AUTHOR.md": {
+      "size": 2917,
+      "sha256": "92a4330fc075ed6142cdbd4aec14933fd82d603791f958139d787ff4d43453a0",
+      "read_coverage": "complete"
+    },
+    "briefs_q/EXTCONT/REVIEW.md": {
+      "size": 801,
+      "sha256": "1c7a03a3cb7126dc719c9f92a339297192d85fe65c8a425c3873f86b1a7039c5",
+      "read_coverage": "complete; report path adapted to author allowlist"
+    },
+    "PROCESS_LIGHT.md": {
+      "size": 1497,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "read_coverage": "complete"
+    },
+    "HANDOFF.md": {
+      "size": 74187,
+      "sha256": "596c4b34617bb1b1e008a99756b81f54cd03d856a3d3220d131ac63bb8c7a27d",
+      "read_coverage": "current assignments 606-662 and relevant target context"
+    },
+    "REALRGA.md": {
+      "size": 45366,
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "read_coverage": "complete"
+    },
+    "REALRGB.md": {
+      "size": 41918,
+      "sha256": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+      "read_coverage": "complete"
+    },
+    "REVIEW_REALRGA.md": {
+      "size": 24762,
+      "sha256": "37f34b77fd487bc2eff8b3b624854cb636b8dd016c2e5d201a2a02a88fdac2d7",
+      "read_coverage": "complete"
+    },
+    "REVIEW_REALRGB.md": {
+      "size": 21605,
+      "sha256": "dfd8abfde28f8315289b7788ff6e6ba6d74b377b79614b39cfca09690077b07f",
+      "read_coverage": "complete"
+    },
+    "RD3.md": {
+      "size": 36157,
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "read_coverage": "complete"
+    },
+    "RENEW.md": {
+      "size": 34511,
+      "sha256": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+      "read_coverage": "complete"
+    },
+    "LIB1.md": {
+      "size": 44321,
+      "sha256": "1e843c88ae26a2e69241dbdc3fa72c5b54e49a3b1669565f9e869a620a19aad1",
+      "read_coverage": "complete"
+    },
+    "LINEAR_PACKAGE.md": {
+      "size": 48089,
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "read_coverage": "complete"
+    },
+    "FLOW.md": {
+      "size": 539577,
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "read_coverage": "sections 0,3,6-9,15,52,96,99,104-110; not a full-file re-audit"
+    }
+  },
+  "absent": [
+    ".git",
+    "MIXSMALL.md",
+    "briefs_q/MIXSMALL/AUTHOR.md"
+  ],
+  "no_framework_or_audit_status_inferred": true
+}

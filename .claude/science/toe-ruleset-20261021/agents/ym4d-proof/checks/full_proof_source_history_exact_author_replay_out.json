@@ -1,0 +1,52 @@
+{
+  "schema": "source-history-author-exact-v1",
+  "claim_scope": "Finite rational fixture and formal graph checks; not a proof of YM sea averaging or physical mass gap",
+  "checks": {
+    "all_local_zero_source_denominators_positive": true,
+    "collections_biject_bad_sets": true,
+    "disjoint_collars_for_compatible_components": true,
+    "direct_raw_sum_equals_compensated_return": true,
+    "all_failure_history_integrals_match": true,
+    "failure_histories_partition_full_raw_integral": true,
+    "zero_mass_histories_retained_as_zero": true,
+    "joint_hard_history_replacement_matches": true,
+    "merging_overlapping_replacements_preserves_selector": true,
+    "zero_complex_history_numerator_allowed": true,
+    "density_factor_allocation_covers_once": true,
+    "source_stencils_inside_actual_collars": true,
+    "remote_original_source_does_not_enter_activity": true,
+    "local_original_source_is_retained": true,
+    "log_gas_matches_connected_graphs_through_degree_four": true,
+    "all_cluster_unions_connected": true,
+    "remote_source_connector_coefficient": true,
+    "boundary_cluster_cancellation_exact": true,
+    "crossing_clusters_meet_inner_boundary": true,
+    "explicit_root_threshold_nonempty": true,
+    "geometric_animal_majorant_matches_partial_sum": true
+  },
+  "negative_controls": {
+    "remove_compensator_rejected": true,
+    "wrong_frozen_boundary_reference_rejected": true,
+    "drop_local_kernel_normalizer_rejected": true,
+    "drop_external_source_only_factor_rejected": true,
+    "drop_reference_vacuum_factor_rejected": true,
+    "dropping_failure_complement_rejected": true,
+    "read_history_on_sea_instead_of_replaced_links_rejected": true,
+    "correlated_history_replaced_by_product_event_rejected": true,
+    "overlapping_unmerged_collar_selector_control": true,
+    "drop_remote_connector_rejected": true,
+    "drop_boundary_polymers_rejected": true
+  },
+  "counts": {
+    "checks": 21,
+    "negative_controls": 11
+  },
+  "states": 256,
+  "sea_states": 16,
+  "compatible_collections": 16,
+  "raw_integral_exact_digest": "ef2307f4a5ad1f8732ade4892775e2d2b726abf0b61d23dc949cce257be3d169",
+  "history_integral_exact_digest": "328d88015c35f7d299f230712294ad508caa35d381c6a45ddcad86b8d7689b97",
+  "source_sha256": "6d43cdcb8a8067d02ca8279879e83b2812f6ac6741ee1e21ae31b9ad355ddbdd",
+  "elapsed_seconds": 0.6378712910227478,
+  "all_pass": true
+}

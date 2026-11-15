@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-29T22:59:18.919850+00:00",
+  "classification": "Mechanical packaging parser failure; no mathematical or numerical test ran.",
+  "command": "python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_freeze.py",
+  "exit_code": 1,
+  "stderr": "Traceback: line163 assertion target.exists() or target == RECEIPT; AssertionError: Missing source link: c_H r_*^D",
+  "cause": "Naive inline-link regex parsed adjacent brackets in an indented displayed equation as a Markdown link.",
+  "repair": "Skip indented code/equation lines before scanning prose links. No source equation, premise, mathematical threshold or acceptance criterion changed.",
+  "source_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+  "failed_script": "cut_sector_coercivity_freeze_attempt01.py",
+  "partial_outputs_preserved": [
+    "cut_sector_coercivity_read_manifest_attempt01.json",
+    "cut_sector_coercivity_process_attempt01.json"
+  ]
+}

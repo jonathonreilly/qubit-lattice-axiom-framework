@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-29T14:55:08.408208+00:00",
+  "phase": "Before reading author source or controls; parent brief already supplied headline formulas and reported test counts.",
+  "reviewer_context": "Fresh independent restricted-input context; requested Astra/max; same-family, no claim of cross-family diversity.",
+  "main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "head_at_entry": "e4464249d9729a0bf7725be67611aa95aba5df01",
+  "source_hashes": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md": "bc5be24f32bf9285ecab0140993eb9788c6f2736ecd9cbe91254d288cac79f8a",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_manifest.json": "5b1321d6e0fbc11e1445736fbdc61aaf5bf4ca47fee9cef2ce72783c8551dbdb"
+  },
+  "independent_criteria": [
+    "Wilson action and temporal slab: independently integrate the intermediate gauge transformations and match every plaquette factor and half spatial factor; reject if the operator represents uncoupled links or a different measure.",
+    "Transfer positivity and sectors: derive SU(2) character coefficients independently from Haar orthogonality; distinguish pointwise positive kernel, positive definite operator, injectivity, and uniqueness. Check beta=0, beta<0 exclusion, trivial versus nontrivial spatial cycle domains. Show the full invariant Hilbert space is used and contains a nonzero centered state.",
+    "Gap estimate: derive the Doob-transform minorization using an explicit probability measure and operator eigenfunction equation, not the asserted bound. Test finite-dimensional quadrature for the actual one-plaquette gauge-invariant SU(2) Wilson transfer operator with spatial interaction. Mutate omitted spatial weights and wrong temporal powers. Track beta, edge count, temporal spacing and finite-volume/continuum quantifiers.",
+    "Soft filter: integrate normalized SU(2) Haar directly in quaternion coordinates; test nonunit, noncentral and zero path means, normalized versus unnormalized traces, and lambda sign/factor. Use sphere moments and quadrature distinct from author implementation.",
+    "Coarse covariance: derive conditional independence for distinct coarse edges before integrating a correlated fine law. Expand the product to degree eight; test a correlated concrete fine Wilson setup or exact finite-law integral, and an overlapping-edge negative control. Verify the fine probability law is independent of lambda or account for induced dependence.",
+    "Source transport: evaluate derivatives of log partition functions before and after integrating coarse fields; include the normalization denominator. At lambda=0 require source-only covariance persistence. Test dropping the source-only logarithm and assuming reverse reconstruction; inspect whether singular limits actually belong to the finite Wilson family.",
+    "Scope: no general no-go for all renormalization mechanisms; no promotion of finite-volume gap, numerical quadrature or auxiliary kernel spectrum to MG0-MG5. Read each actual load-bearing dependency at an explicit hash and do not treat prior reviews or status labels as premises."
+  ],
+  "failure_policy": "Retain failures and raw outputs; distinguish operational/numerical issues from proof defects; send narrow evidenced findings to parent; author changes require affected same-session confirmation."
+}

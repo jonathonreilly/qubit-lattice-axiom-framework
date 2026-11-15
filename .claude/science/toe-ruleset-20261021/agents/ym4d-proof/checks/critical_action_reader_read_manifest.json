@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "role": "author; fresh independent review pending",
+  "configuration_requested": "Astra/max; not independent backend attestation",
+  "mathematical_source_frozen_before_packaging": {
+    "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+    "lines": 238,
+    "notification": "Source hash and line count sent to coordinator before writing any critical_action_reader_* file."
+  },
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "line_count": 568,
+      "fresh_read_ranges": [
+        [
+          31,
+          87
+        ],
+        [
+          245,
+          259
+        ]
+      ],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          330
+        ]
+      ],
+      "coverage": "Exact supplied normalized kernel, all-transporter lift, double-face plaquette multiplicity and the actual scalar normalizer at the lift. No asymptotic normalizer theorem used."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "line_count": 722,
+      "fresh_read_ranges": [
+        [
+          276,
+          334
+        ],
+        [
+          375,
+          418
+        ]
+      ],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          290
+        ]
+      ],
+      "coverage": "Existing connected action increment, exact lift vacuum and real-coarse/source domain; box-to-original-block rate boundary. New CA is only the explicit FU joint-domain match."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "bytes": 41908,
+      "line_count": 790,
+      "fresh_read_ranges": [
+        [
+          605,
+          668
+        ]
+      ],
+      "reused_same_session_read_ranges": [
+        [
+          24,
+          580
+        ]
+      ],
+      "coverage": "Existing scalar three-mark rule and source-free tree/finite-u action comparison; not imported as a joint original-source theorem."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "bytes": 29068,
+      "line_count": 556,
+      "fresh_read_ranges": [
+        [
+          127,
+          156
+        ],
+        [
+          226,
+          319
+        ],
+        [
+          345,
+          377
+        ],
+        [
+          476,
+          534
+        ]
+      ],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          556
+        ]
+      ],
+      "coverage": "Unchanged complete earlier author construction reused. Actual critical branch, fixed joint domain, full original-reader field and Hessian majorants; finite normalizer/Haar and source-linear Hessian remain."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "bytes": 21272,
+      "line_count": 397,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          397
+        ]
+      ],
+      "coverage": "Unchanged complete earlier author construction reused; fixed R/domain conventions, elementary local K reader labels and CD20 normalization interface."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "37d7e98e627706e6c028b43145cdefc47ca7226e4b732108e5d0c725d213edb4",
+      "bytes": 7918,
+      "line_count": 129,
+      "fresh_read_ranges": [
+        [
+          1,
+          129
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Complete fresh scope/provenance read: accepted unchanged bounded determinant source; verdict is not the proof of the new scalar contraction."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "bytes": 36894,
+      "line_count": 711,
+      "fresh_read_ranges": [
+        [
+          664,
+          691
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Bounded SN30 prefactor placement read only. No shifted integral identity, estimate or fresh review is consumed as a mathematical premise of CA."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "line_count": 11,
+      "fresh_read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Current lane process; source-first freeze, compact provenance and fresh independent review; no numerical physics."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    }
+  ],
+  "protected_predecessor_base": {
+    "manifest": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_read_manifest.json",
+      "sha256": "2d684fdcb3d1b5c8e8abcfd5ce45ff5e0dd54a4decd38250aae579ae22d5b19a",
+      "bytes": 30990
+    },
+    "record_key": "protected_predecessor_files",
+    "records_rechecked": 63,
+    "scope": "The exact pinned existing manifest supplies these 63 records; each current file was rehashed against it. This compact reference does not enlarge prior read coverage."
+  },
+  "additional_protected_records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "bytes": 21272
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_author_checks.md",
+      "sha256": "f3e4525d7cf3bf63c3e7b32b0bdc08fb7f2c36be339fa0a03c48515d06090275",
+      "bytes": 4335
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_freeze.py",
+      "sha256": "464afc0a5a6523f30ad5a49a4d6cb7974037192cdbadecc4ebe81f10814e3826",
+      "bytes": 1512
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_identity_check.json",
+      "sha256": "d5485069b5ebe37f2a8314751e4d90a6d6093ba024ddd9e1a922ca9dba66cf68",
+      "bytes": 892
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_read_manifest.json",
+      "sha256": "2d684fdcb3d1b5c8e8abcfd5ce45ff5e0dd54a4decd38250aae579ae22d5b19a",
+      "bytes": 30990
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_receipt.json",
+      "sha256": "5d045e4b4610652b90c37bbc861ca649d3d3777d7fecc1017a1bd84be21fb27f",
+      "bytes": 2369
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "37d7e98e627706e6c028b43145cdefc47ca7226e4b732108e5d0c725d213edb4",
+      "bytes": 7918
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_final_receipt.json",
+      "sha256": "8c9b7b894e27382a91737e8800abd7951c6fe3ccee6de77b8e2205a608ac748f",
+      "bytes": 8059
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_packet_check.json",
+      "sha256": "ece68cc2a6cac9871b1a3379bd9437c8a8ae651eaaaaf75cd3e33f4b9e636382",
+      "bytes": 29405
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_source_first.json",
+      "sha256": "92b8c82ceb02b7c38d139ee18f090b37ea7f03192c2b2c8c1834820ac1f6a10b",
+      "bytes": 4530
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_source_first.md",
+      "sha256": "c54022d909436d84bc46a8d1b01b08af3589f2582ab78d5e7e008c8c1ee9247f",
+      "bytes": 8786
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "bytes": 36894
+    }
+  ],
+  "protected_unique_files_verified": 75,
+  "mechanical_identity_result": {
+    "mismatches": [],
+    "inputs_checked": 8,
+    "methodology_checked": 12,
+    "source_local_links": [
+      "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "COVARIANT_SOFT_BACKGROUND_ASTRA.md"
+    ],
+    "scientific_evidence": false
+  },
+  "read_limits": [
+    "Initial rg discovery was bounded to the first 65 matches; it is not an exhaustive absence search. Exact consumed ranges are listed above.",
+    "No whole SN source read or shifted nonlinear estimate is claimed.",
+    "The complete same-session author knowledge of unchanged FU and CD is reused only at their pinned bytes and stated domains."
+  ],
+  "existing_results_reused": [
+    "SA connected action increment at real coarse data",
+    "IC scalar matrix/two-vector marking rule",
+    "FU actual joint critical branch and Hessian composition"
+  ],
+  "new_bounded_match": "Explicit joint original-coarse/source action coefficient family at beta=(16R)^(-4), with unscaled action and scalar vacuum costs retained",
+  "new_external_theorem_imports": [],
+  "new_primary_web_reads": [],
+  "numerical_experiments": [],
+  "mechanical_failures_and_repairs": [],
+  "git_operations": 0,
+  "not_proved": [
+    "O(1/u) for the critical action correction",
+    "Relevant-term extraction or renormalization contraction",
+    "Action/determinant or source-vacuum cancellation",
+    "Original-cut/history/effective-level return",
+    "Continuum existence",
+    "Physical continuum mass gap"
+  ]
+}

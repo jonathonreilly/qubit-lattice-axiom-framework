@@ -1,0 +1,57 @@
+{
+  "phase": "independent mathematics before author numerical artifacts",
+  "frozen_utc": "2026-10-29T23:18:53.220292+00:00",
+  "producer_sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882",
+  "read_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882",
+      "coverage": "complete, 1-589; producer aggregates exposed, no numerical artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "coverage": "complete; original-reader construction, finite-u branch, all sector hypotheses, plus unavoidable source-embedded diagnostics"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "coverage": "complete; actual model, tree/Haar, holonomies, finite-u action, critical branch and chart"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "coverage": "104-463 and 528-690; exact raw density/return, fixed source radius, pointwise gas and exclusions"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "coverage": "231-402; complete consumed product/connected-gas lemma and normalization hypotheses"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "coverage": "191-265; actual Sea9 thresholds and history scope"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "coverage": "320-376 and 656-697; single-real-t normalizer/holomorphic polar theorem, relevant errata"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "coverage": "complete"
+    }
+  ],
+  "independent_artifact": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_independent_freeze.md",
+    "sha256": "4721fe06bcf2e4a405334be9ece9750fd02eeb394c305e9fda691110eec196ef"
+  },
+  "original_producer_snapshot": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v1.md",
+    "sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882"
+  },
+  "new_numerical_execution": false,
+  "prior_exposure": "Source-embedded aggregate diagnostic counts and parent scope message disclosed in freeze."
+}

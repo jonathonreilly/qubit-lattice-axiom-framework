@@ -1,0 +1,89 @@
+{
+  "passed": 8,
+  "total": 8,
+  "controls": 3,
+  "failed": [],
+  "checks": [
+    {
+      "name": "all_coordinate_child_cancellations",
+      "pass": true,
+      "value": "84",
+      "control": false
+    },
+    {
+      "name": "object_generating_function",
+      "pass": true,
+      "value": "None",
+      "control": false
+    },
+    {
+      "name": "missing_incoming_leg_rejected",
+      "pass": true,
+      "value": "None",
+      "control": true
+    },
+    {
+      "name": "direct_mixed_log",
+      "pass": true,
+      "value": "m2**2*(m2**2 - m4)/(2*p**4)",
+      "control": false
+    },
+    {
+      "name": "object_forest_mixed_log",
+      "pass": true,
+      "value": "m2**4/(2*p**4) - m2**2*m4/(2*p**4)",
+      "control": false
+    },
+    {
+      "name": "wrong_compatibility_rejected",
+      "pass": true,
+      "value": "-m2**2*m4/(2*p**4)",
+      "control": true
+    },
+    {
+      "name": "missing_attachment_rejected",
+      "pass": true,
+      "value": "m2**4/(2*p**4)",
+      "control": true
+    },
+    {
+      "name": "actual_truncated_gaussian_mixed_coefficient",
+      "pass": true,
+      "value": "-0.015294543782874261663962620364733732244751436578168133064325501748",
+      "control": false
+    }
+  ],
+  "gates": [
+    {
+      "stage": "before_import",
+      "free_percent": 53,
+      "load": [
+        2.14404296875,
+        2.17333984375,
+        2.1708984375
+      ],
+      "rss_bytes": 17612800,
+      "seconds": 0.002118124975822866
+    },
+    {
+      "stage": "complete",
+      "free_percent": 53,
+      "load": [
+        2.14404296875,
+        2.17333984375,
+        2.1708984375
+      ],
+      "rss_bytes": 64749568,
+      "seconds": 0.4657106670201756
+    }
+  ],
+  "lock_read_only": {
+    "expires_at": "2026-10-30T00:33:21.302218+00:00",
+    "holder_id": "01a1873f-103a-7f01-b924-4455238d8a86",
+    "owner": "ym4d-full-proof",
+    "pid": 49524,
+    "purpose": "Continue full PR 10114 proof with independent Astra reviews",
+    "started_at": "2026-10-29T22:33:21.302218+00:00"
+  },
+  "scope": "Post-first-run, preregistered exact mixed-object algebra. Not a uniform theorem certification."
+}

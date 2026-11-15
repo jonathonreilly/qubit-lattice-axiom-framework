@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "role": "Independent reviewer final source/provenance confirmation; not an audit verdict or PR-wide integration approval",
+  "finalized_at_utc": "2026-10-30T07:19:10.976103+00:00",
+  "checked_published_head": "e1b9f00f06d8f07a6d2e209a54e62850a915d9e3",
+  "configuration": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "max",
+    "fork_turns": "none",
+    "independence": "fresh restricted-input same-family Codex review",
+    "backend_attestation": false
+  },
+  "source": {
+    "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+    "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+    "lines": 510
+  },
+  "historical_prepacket_stage": {
+    "frozen_working_report_path": "REVIEW_REGIONAL_CHART_RETURN_ASTRA.md",
+    "frozen_working_report_sha256": "158143f1876d2a75a5aa136bff2e2a6b54dd8224444e9a99aefc70f8b4116011",
+    "historical_report_resolves_to": {
+      "path": "checks/review_regional_chart_return_prepacket_report.md",
+      "sha256": "158143f1876d2a75a5aa136bff2e2a6b54dd8224444e9a99aefc70f8b4116011",
+      "lines": 276,
+      "bytes": 16271
+    },
+    "immutable_read_manifest": {
+      "path": "checks/review_regional_chart_return_read_manifest.json",
+      "sha256": "0a0bdbc209f95c5454f06e6098daa6bb4140fcb971840560bdc3400754160057",
+      "lines": 338,
+      "bytes": 12319
+    },
+    "immutable_freeze_record": {
+      "path": "checks/review_regional_chart_return_freeze.json",
+      "sha256": "994cee6fcefd81cc94d3b01d6dbfc0ff5975eb55dc94382044c666793a8c48c0",
+      "lines": 29,
+      "bytes": 1253
+    },
+    "all_original_bindings_byte_unchanged": true,
+    "interpretation": "The original freeze record is historical and remains unchanged. Its report.path/hash describes the then-current report, preserved exactly at the distinct snapshot path. It does not claim that the extended final report still has the old hash.",
+    "scientific_source_lines_read": 4257,
+    "author_packet_access_before_freeze": false
+  },
+  "final_stage": {
+    "report": {
+      "path": "REVIEW_REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "7d4e00cc3daa7e2d81e1a0ce7245f446bf1b876a3b96d62b0ae6967d8d75f91e",
+      "lines": 324,
+      "bytes": 18981
+    },
+    "historical_report_is_exact_prefix": true,
+    "appended_section_first_line": 278,
+    "postpacket_checks": {
+      "path": "checks/review_regional_chart_return_postpacket_checks.json",
+      "sha256": "d48aed12b868a31ed7c6c17ae5aae760b9d05667052b7deddeb47eeeaa19776d",
+      "lines": 132,
+      "bytes": 5121
+    },
+    "independent_vocab_report": {
+      "path": "checks/review_regional_chart_return_postpacket_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9,
+      "bytes": 153
+    },
+    "author_packets_read": [
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_read_manifest.json",
+        "sha256": "b8e4721771409ea4b7d959b9204ab2cb7bf60a7e38fa6b400a872a1b6d263744",
+        "lines": 175,
+        "bytes": 7309,
+        "read_ranges": [
+          [
+            1,
+            175
+          ]
+        ]
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_receipt.json",
+        "sha256": "29df2267e4765835c3657265926f19af667b0e784adf94f504732e87b0036821",
+        "lines": 71,
+        "bytes": 6069,
+        "read_ranges": [
+          [
+            1,
+            71
+          ]
+        ]
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_vocab.json",
+        "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+        "lines": 9,
+        "bytes": 153,
+        "read_ranges": [
+          [
+            1,
+            9
+          ]
+        ]
+      }
+    ]
+  },
+  "disposition": {
+    "verdict": "LAND",
+    "blocking_mathematical_findings": 0,
+    "blocking_provenance_findings": 0,
+    "mathematical_findings_changed": false,
+    "source_fixes": 0,
+    "source_edits": false,
+    "scope": "Exact bounded deterministic-region original-coordinate chart theorem and its stated physical exterior specialization/shrinking corollary.",
+    "full_continuum_existence": "OPEN",
+    "physical_mass_gap": "OPEN"
+  },
+  "verification": {
+    "independent_source_bindings_unchanged": 8,
+    "author_manifest_input_bindings_verified": 9,
+    "author_protected_sources_verified": 13,
+    "packet_source_records_verified": 2,
+    "receipt_package_bindings_verified": 2,
+    "methodology_reuse_binding_verified_without_content_review": true,
+    "equation_labels_complete_and_unique": true,
+    "fences_balanced": true,
+    "source_trailing_whitespace_absent": true,
+    "source_links_exact_and_resolved": 10,
+    "independent_vocab_lint_returncode": 0,
+    "independent_vocab_violations": 0,
+    "saved_vocab_report_exact_match": true
+  },
+  "operations": {
+    "author_science_reruns": 0,
+    "scientific_numerical_runs": 0,
+    "extra_workers": 0,
+    "git_mutations": 0,
+    "front_mutations": 0,
+    "audit_mutations": 0,
+    "prior_review_reports_consumed": false,
+    "next_matched_regional_ratio_work_consumed": false,
+    "combined_pipeline_runs": 0,
+    "publication_or_merge_performed": false
+  },
+  "limitations": "Present files, declared read-range validity and an independent present-state lint were checked. Historical author reading or lint invocation was not independently authenticated; author analytic summaries remain self-checks, not proof. Shared status fronts and subsequent ratio science are outside this frozen verdict.",
+  "execution_note": "One report-append dispatch failed at JavaScript parsing before tool execution; the subsequent dispatch appended the section successfully. No source or evidence was changed by that failed dispatch."
+}

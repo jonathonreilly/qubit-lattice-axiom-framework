@@ -1,0 +1,28 @@
+P1 N=2 delta=7.813e-04: max|W0-S|/delta = 1.0000 (<=3), max|M-W0|/delta = 1.0562 (<=4)
+P1 N=2 delta=2.604e-04: max|W0-S|/delta = 1.0000 (<=3), max|M-W0|/delta = 1.0235 (<=4)
+P1 N=2 delta=7.813e-05: max|W0-S|/delta = 1.0000 (<=3), max|M-W0|/delta = 1.0090 (<=4)
+P1 N=2 delta=7.813e-06: max|W0-S|/delta = 1.0000 (<=3), max|M-W0|/delta = 1.0717 (<=4)
+P2 (info) N=2 delta=0.01: max|W0-S|/delta = 1.0000
+P2 (info) N=2 delta=0.03: max|W0-S|/delta = 0.9997
+P2 (info) N=2 delta=0.1: max|W0-S|/delta = 0.9963
+P2 (info) N=2 delta=0.3: max|W0-S|/delta = 0.9681
+G N=2: globality PASS
+K1 N=2: PASS; K2: PASS (max phi/x^2 = 0.5000 <= 2.5); K3: PASS
+R N=2 eps1=0.25: eta_q=5.425e-05, delta=4.883e-04, min phi*1024N/eps1^2 = 15.504 (>=1)
+R N=2 eps1=0.5: eta_q=8.681e-05, delta=7.813e-04, min phi*1024N/eps1^2 = 15.603 (>=1)
+R N=2 eps1=1.0: eta_q=8.681e-05, delta=7.813e-04, min phi*1024N/eps1^2 = 15.801 (>=1)
+P1 N=3 delta=5.208e-04: max|W0-S|/delta = 1.0000 (<=3), max|M-W0|/delta = 0.9794 (<=4)
+P1 N=3 delta=1.736e-04: max|W0-S|/delta = 1.0000 (<=3), max|M-W0|/delta = 1.0029 (<=4)
+P1 N=3 delta=5.208e-05: max|W0-S|/delta = 1.0121 (<=3), max|M-W0|/delta = 1.0108 (<=4)
+P1 N=3 delta=5.208e-06: max|W0-S|/delta = 1.0000 (<=3), max|M-W0|/delta = 0.9829 (<=4)
+P2 (info) N=3 delta=0.01: max|W0-S|/delta = 1.0000
+P2 (info) N=3 delta=0.03: max|W0-S|/delta = 0.9997
+P2 (info) N=3 delta=0.1: max|W0-S|/delta = 0.9971
+P2 (info) N=3 delta=0.3: max|W0-S|/delta = 0.9749
+G N=3: globality PASS
+K1 N=3: PASS; K2: PASS (max phi/x^2 = 0.3332 <= 2.5); K3: PASS
+R N=3 eps1=0.25: eta_q=3.617e-05, delta=3.255e-04, min phi*1024N/eps1^2 = 11.824 (>=1)
+R N=3 eps1=0.5: eta_q=5.787e-05, delta=5.208e-04, min phi*1024N/eps1^2 = 11.909 (>=1)
+R N=3 eps1=1.0: eta_q=5.787e-05, delta=5.208e-04, min phi*1024N/eps1^2 = 11.954 (>=1)
+{'P1_N2': 'PASS', 'G_N2': 'PASS', 'K1_N2': 'PASS', 'K2_N2': 'PASS', 'K3_N2': 'PASS', 'R_N2': 'PASS', 'P1_N3': 'PASS', 'G_N3': 'PASS', 'K1_N3': 'PASS', 'K2_N3': 'PASS', 'K3_N3': 'PASS', 'R_N3': 'PASS'}
+h1: PASS  t 211.5s  peak RSS 35 MB

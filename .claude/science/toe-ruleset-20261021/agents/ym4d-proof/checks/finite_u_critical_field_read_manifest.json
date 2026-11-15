@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "role": "author; fresh independent review pending",
+  "configuration_requested": "Astra/max; request is not backend attestation",
+  "entry_head": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+  "observed_head_at_packaging": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+  "mathematical_source_frozen_before_packaging": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+    "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+    "line_count": 556,
+    "notification": "Exact source hash and 556-line count sent to coordinator before any finite_u_critical_field check file was written."
+  },
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "fresh_read_ranges": [
+        [
+          153,
+          330
+        ]
+      ],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          152
+        ]
+      ],
+      "coverage": "Fresh finite-u Hessian/force, centered normalizer/Haar analytic bounds and real/coarse/source critical branches; earlier exact lift/gap mechanism reused at unchanged bytes."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "fresh_read_ranges": [
+        [
+          187,
+          293
+        ],
+        [
+          418,
+          470
+        ]
+      ],
+      "reused_same_session_read_ranges": [
+        [
+          27,
+          185
+        ]
+      ],
+      "coverage": "Existing actual critical-field and critical covariance proof; source-difference/contour interfaces. A truncated initial 260-276 span was repaired by a separate 239-292 read. No whole-source certification."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "fresh_read_ranges": [
+        [
+          1,
+          245
+        ],
+        [
+          410,
+          525
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Actual fixed-source selected-sector statement, polynomial-only FR9 scope, critical-centered remainder and exact normalization/window. Later/omitted forest proof is not newly certified."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "line_count": 790,
+      "fresh_read_ranges": [
+        [
+          129,
+          315
+        ]
+      ],
+      "reused_same_session_read_ranges": [
+        [
+          24,
+          128
+        ]
+      ],
+      "coverage": "Joint local analytic inputs, source-free complex-coarse critical map and inverse construction; no interacting remainder theorem imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "line_count": 266,
+      "fresh_read_ranges": [
+        [
+          1,
+          90
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Classification/exclusion only: actual text explicitly says u-stripped tree phase; not a mathematical input to the finite-u field."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "line_count": 543,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          543
+        ]
+      ],
+      "coverage": "Reused complete author construction at the exact immutable freeze, with its used inverse/geometry/norm/accretivity proof rebuilt in new source section3; not a new independent review."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "306195ea1bb4694d5fe00cab544490684a67f3ee7f3bffae0caca8fd14e5d37e",
+      "line_count": 143,
+      "fresh_read_ranges": [
+        [
+          1,
+          143
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Complete fresh scoped review read after coordinator reported its final LAND; exact source and limits verified."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "line_count": 544,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          25,
+          200
+        ],
+        [
+          240,
+          358
+        ],
+        [
+          360,
+          460
+        ]
+      ],
+      "coverage": "Reused exact prior bounded chart identity, regulator/precision distinction and unresolved consumer boundary; own complete author knowledge is separately frozen in its original packet."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "line_count": 1037,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          822,
+          891
+        ]
+      ],
+      "coverage": "Reused actual R16 two-unit support margin and product-reference boundary at unchanged bytes; no returned-denominator theorem consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "revision_context": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "fresh_read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Complete current owner procedure reread."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "line_count": 93,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "line_count": 434,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "line_count": 336,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "line_count": 309,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "line_count": 370,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "line_count": 354,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233,
+      "coverage": "Reused same-session completed methodology read, exact source hash rechecked for this unit; no changed methodology content."
+    }
+  ],
+  "protected_ps_and_pc_packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "expected_sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "actual_sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_read_manifest.json",
+      "expected_sha256": "7cfda3d8bd2dd1faf0962979de95d253432ae83d3f1cbfd277964e42d3f73c94",
+      "actual_sha256": "7cfda3d8bd2dd1faf0962979de95d253432ae83d3f1cbfd277964e42d3f73c94",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_identity_check.json",
+      "expected_sha256": "f07e55fafc7b4c4805e85375c802bc06087378cb1b10a2ae3646f4ccbb83b6ea",
+      "actual_sha256": "f07e55fafc7b4c4805e85375c802bc06087378cb1b10a2ae3646f4ccbb83b6ea",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_author_checks.md",
+      "expected_sha256": "8bec9657c3b9d7f56ce7d25441eedc08bf7c94f8a82ec99a9966236b2e1632fe",
+      "actual_sha256": "8bec9657c3b9d7f56ce7d25441eedc08bf7c94f8a82ec99a9966236b2e1632fe",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_receipt.json",
+      "expected_sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+      "actual_sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "expected_sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "actual_sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_read_manifest.json",
+      "expected_sha256": "2c396c99b81ceb65f4a1b05e7dacaba5cc62d15ccc80e900d9d8e21052bd9af4",
+      "actual_sha256": "2c396c99b81ceb65f4a1b05e7dacaba5cc62d15ccc80e900d9d8e21052bd9af4",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_author_checks.md",
+      "expected_sha256": "672f98b460907ea7e5f43820af2c38ff67efbe08a2306de0f0a879a644013bf3",
+      "actual_sha256": "672f98b460907ea7e5f43820af2c38ff67efbe08a2306de0f0a879a644013bf3",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_identity_check.json",
+      "expected_sha256": "0a146ad24726ae547dd6af19ad31c4c836fff70a37b83f04284227a73e9a67f4",
+      "actual_sha256": "0a146ad24726ae547dd6af19ad31c4c836fff70a37b83f04284227a73e9a67f4",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_freeze.py",
+      "expected_sha256": "3e2918e07e0a809365c0fcb046fe087282ab88900907723c6dcd9b051d1b4051",
+      "actual_sha256": "3e2918e07e0a809365c0fcb046fe087282ab88900907723c6dcd9b051d1b4051",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_receipt.json",
+      "expected_sha256": "e832c7adc23448a45f714cd338216326da9e827fcb5210763b3ef6e8ff8340bf",
+      "actual_sha256": "e832c7adc23448a45f714cd338216326da9e827fcb5210763b3ef6e8ff8340bf",
+      "unchanged": true
+    }
+  ],
+  "new_external_theorem_imports": [],
+  "new_primary_web_reads": [],
+  "literature_scope": "No new external lemma needed. The complete-reader contraction and critical-Hessian resolvent steps are rebuilt from actual internal source formulas; Ba\u0142aban and Dimock receive architectural credit. Earlier PC primary-paper background is not a mathematical premise here.",
+  "not_consumed": [
+    "Chart-boundary author unfinished source or its suggested translation formula",
+    "Outside-chart theorem or interacting failure-probability bounds",
+    "Uniform soft minimizer tree phase as a finite-u premise",
+    "Inherited histories/effective-level results",
+    "PC or PS authored conclusions without their reconstructed used estimates"
+  ],
+  "numerical_experiments": [],
+  "scope": "Joint source/coarse field continuation and critical-Hessian covariance extension only; no integrated determinant/log normalization, moving-boundary contour, full return, iteration, continuum existence or physical mass gap."
+}

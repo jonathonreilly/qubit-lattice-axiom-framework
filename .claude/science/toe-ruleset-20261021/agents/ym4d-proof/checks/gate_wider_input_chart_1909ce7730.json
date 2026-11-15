@@ -1,0 +1,173 @@
+{
+  "frozen_utc": "2026-10-30T19:55:57.764922+00:00",
+  "supplied_commit": "1909ce7730a54edd1fb254455b8f49a574a1a71f",
+  "procedure_pin": "6243acc936982e945732793bf641442c03abbfea",
+  "source_sha256": "38b36dc3e7add8c941c44153c315cafcc32e94613bb76c8e57bd1e9c102b04d8",
+  "verdict": "pass",
+  "scope": "GH56\u2013GH63 under its physical-cut margins and admitted RF/WR center restrictions; no second-transfer estimate or full-proof result",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "max",
+  "backend_attestation": null,
+  "preflight": "go; 31 GB free disk, 55% free memory, load 2.7; nice works, origin reachable, ulimit unavailable",
+  "reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "sha256": "38b36dc3e7add8c941c44153c315cafcc32e94613bb76c8e57bd1e9c102b04d8",
+      "new_actual_windows": [
+        [
+          200,
+          276
+        ],
+        [
+          314,
+          355
+        ],
+        [
+          630,
+          667
+        ],
+        [
+          779,
+          800
+        ],
+        [
+          890,
+          958
+        ],
+        [
+          976,
+          991
+        ],
+        [
+          1163,
+          1335
+        ]
+      ],
+      "unchanged_prior_windows_reused": [
+        [
+          164,
+          197
+        ],
+        [
+          604,
+          620
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "new_actual_windows": [
+        [
+          151,
+          363
+        ],
+        [
+          430,
+          495
+        ]
+      ],
+      "unchanged_prior_windows_reused": []
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "new_actual_windows": [
+        [
+          38,
+          87
+        ],
+        [
+          146,
+          245
+        ],
+        [
+          290,
+          354
+        ],
+        [
+          357,
+          383
+        ],
+        [
+          668,
+          795
+        ]
+      ],
+      "unchanged_prior_windows_reused": [
+        [
+          87,
+          105
+        ],
+        [
+          249,
+          266
+        ],
+        [
+          485,
+          667
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "new_actual_windows": [],
+      "unchanged_prior_windows_reused": [
+        [
+          49,
+          146
+        ],
+        [
+          165,
+          199
+        ],
+        [
+          365,
+          447
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "new_actual_windows": [],
+      "unchanged_prior_windows_reused": [
+        [
+          249,
+          370
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "new_actual_windows": [],
+      "unchanged_prior_windows_reused": [
+        [
+          99,
+          127
+        ]
+      ]
+    }
+  ],
+  "reuse_scope": "Previously checked bounded WR normalized-density forest and GH49 source-only first-bare-step applicability; actual RC/WR parameter formulas independently checked here. No recursive upstream certification. Metadata hashing does not imply whole-file reading.",
+  "procedure_delta": "Relevant PREFLIGHT and REVIEW_UNITS deltas read: no citation-manifest staging; validation/landing housekeeping not exercised. Broader combined-validation/audit diff output was partial and is not claimed as a full read.",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/wider-input-chart-1909ce7730.md",
+    "sha256": "03b7b108a463f69be7433cfb55d2ecfbadc5ae358330fd6633b222e383d86138"
+  },
+  "author_routing_records_read": false,
+  "external_primary_reads": [],
+  "scientific_jobs": [],
+  "lint": {
+    "method": "direct lint_one_file; apply_fix=False",
+    "tool_pin": "6243acc936982e945732793bf641442c03abbfea",
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/wider-input-chart-1909ce7730.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  }
+}

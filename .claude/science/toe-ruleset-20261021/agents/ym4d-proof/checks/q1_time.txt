@@ -1,0 +1,62 @@
+q1 lock taken 2026-10-28 03:34:59 UTC
+23:34  up 5 days, 17:24, 2 users, load averages: 3.30 3.78 3.72
+System-wide memory free percentage: 40%
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/q1_sq_lin.py", line 78, in <module>
+    lams[J] = lam_max(frame_rows(fam, L, J))
+              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/q1_sq_lin.py", line 59, in lam_max
+    w = eigsh(op, k=1, which="LA", tol=1e-10, return_eigenvectors=False, maxiter=20000)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1779, in eigsh
+    params.iterate()
+    ~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 625, in iterate
+    self._raise_no_convergence()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 422, in _raise_no_convergence
+    raise ArpackNoConvergence(f"No convergence ({num_iter} iterations, "
+                              f"{k_ok}/{self.k} eigenvectors converged)",
+                              ev, vec)
+scipy.sparse.linalg._eigen.arpack.arpack.ArpackNoConvergence: ARPACK error -1: No convergence (20001 iterations, 0/1 eigenvectors converged)
+      101.43 real        97.49 user         0.97 sys
+           148996096  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22531  page reclaims
+                 138  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 411  voluntary context switches
+               73055  involuntary context switches
+       1494406846447  instructions retired
+        351126868435  cycles elapsed
+           150094424  peak memory footprint
+q1 end 03:36:41 UTC
+--- run 2 (after ARPACK crash fix) ---
+q1 lock taken 2026-10-28 03:45:34 UTC
+23:45  up 5 days, 17:34, 2 users, load averages: 2.95 3.26 3.46
+System-wide memory free percentage: 37%
+      378.28 real       366.51 user         4.46 sys
+           781893632  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              227406  page reclaims
+                1175  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 835  voluntary context switches
+              306661  involuntary context switches
+       3563647994860  instructions retired
+       1320997194768  cycles elapsed
+          1052181848  peak memory footprint
+q1 end, lock released 03:51:52 UTC

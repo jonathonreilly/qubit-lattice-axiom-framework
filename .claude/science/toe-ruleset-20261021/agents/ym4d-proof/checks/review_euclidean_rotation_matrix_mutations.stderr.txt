@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations.py", line 21, in <module>
+    negative=gram.subs(s.log(2),-s.log(2));v=s.Matrix([1,-1]);assert (v.T*gram*v)[0]==3 and (v.T*negative*v)[0]==-3
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

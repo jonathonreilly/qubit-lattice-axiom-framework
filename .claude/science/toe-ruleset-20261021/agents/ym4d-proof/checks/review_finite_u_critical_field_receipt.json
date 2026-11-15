@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "role": "independent scoped source review, not audit or integration authority",
+  "utc": "2026-10-30T02:30:46.137052+00:00",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+    "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+    "bytes": 29068,
+    "line_count": 556
+  },
+  "observed_entry_head": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+  "observed_final_head": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "source_verdict": "LAND",
+  "recommendation": "PASS WITH BOUNDED CLAIMS",
+  "claim_strength": "bounded support: joint source/coarse finite-u critical-field construction and critical covariance extension",
+  "reviewer_independence": "fresh Codex reviewer context without authorship; same family; requested Astra/max is not independent backend attestation",
+  "mathematical_findings_frozen_before_author_evidence": true,
+  "review_iterations": 1,
+  "material_findings": 0,
+  "fixed_findings": 0,
+  "skipped_material_findings": 0,
+  "review_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "fc16733dd459d8915611fb80326d9a523d7cca0c8c85814ff79dd33ceaf9a108",
+      "bytes": 10851,
+      "line_count": 165
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_pre_evidence.md",
+      "sha256": "51fa5253ee5089659b782651f30a9f6339a18d645687640c2dedc865d69c6156",
+      "bytes": 13176,
+      "line_count": 231
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_freeze.json",
+      "sha256": "dce57873c6717dc174c34e40bf4f8862f304f3adcf8eaa8e588d03c6faee259c",
+      "bytes": 859,
+      "line_count": 15
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_identity_check.json",
+      "sha256": "d3ca1807995ddb62f1b47052deb3c73ae871cdf0eee27a15da274771a4d6ebe3",
+      "bytes": 13616,
+      "line_count": 346
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_read_manifest.json",
+      "sha256": "d9cbda59e24611b50dcce1c669ceb31c115ccda17cdcc5bb4490de3886d6c910",
+      "bytes": 7184,
+      "line_count": 191
+    }
+  ],
+  "accepted_author_packet": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "bytes": 29068,
+      "disposition": "accepted unchanged for bounded source unit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_read_manifest.json",
+      "sha256": "7602444480b05cd4d200e6ccde82887e0cd9d58e71341fe35e5771f9f92a8bd1",
+      "bytes": 16617,
+      "disposition": "accepted unchanged for bounded source unit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_author_checks.md",
+      "sha256": "06be39a7807fd9aa6519aa2bd0295da28a5f5ab0b450bc6df9fcf8fbbf0c8c4d",
+      "bytes": 5602,
+      "disposition": "accepted unchanged for bounded source unit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_identity_check.json",
+      "sha256": "88d8754c4f53c7874c33517807689453a90138dc1491fbc6f1652614998732d2",
+      "bytes": 8398,
+      "disposition": "accepted unchanged for bounded source unit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_freeze.py",
+      "sha256": "ba22d1561f9548486edf062ae0f2f3386f266cabf5546098dc5caa3d1dbe8324",
+      "bytes": 5338,
+      "disposition": "accepted unchanged for bounded source unit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_receipt.json",
+      "sha256": "19615ba207be2205cc29aa804e057000f301a5bd246be76cf3270ef4f467ca52",
+      "bytes": 3439,
+      "line_count": 63,
+      "disposition": "accepted unchanged for bounded source unit"
+    }
+  ],
+  "author_packet_match_count": 6,
+  "declared_input_match_count": 10,
+  "protected_ps_pc_match_count": 11,
+  "methodology_match_count": 12,
+  "source_and_protected_bytes_rechecked_at_completion": true,
+  "whitespace_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "trailing_whitespace": false,
+      "ends_with_newline": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_pre_evidence.md",
+      "trailing_whitespace": false,
+      "ends_with_newline": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_freeze.json",
+      "trailing_whitespace": false,
+      "ends_with_newline": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_identity_check.json",
+      "trailing_whitespace": false,
+      "ends_with_newline": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_read_manifest.json",
+      "trailing_whitespace": false,
+      "ends_with_newline": true
+    }
+  ],
+  "diff_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "command": "git diff --no-index --check /dev/null <path>",
+      "exit_code": 1,
+      "output": ""
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_pre_evidence.md",
+      "command": "git diff --no-index --check /dev/null <path>",
+      "exit_code": 1,
+      "output": ""
+    }
+  ],
+  "local_links": [
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_pre_evidence.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_freeze.json",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_read_manifest.json",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_pre_evidence.md",
+      "portable_and_exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_identity_check.json",
+      "portable_and_exists": true
+    }
+  ],
+  "author_script_syntax": "AST parse and in-memory compile succeeded; script not executed",
+  "numerical_experiments": 0,
+  "scientific_runner_runs": 0,
+  "full_pipeline_count": 0,
+  "integration_retries": 0,
+  "git_mutations": 0,
+  "commits_created": [],
+  "landed_main_sha": null,
+  "combined_gate": "not performed by this scoped reviewer; coordinator responsibility",
+  "source_edits": 0,
+  "unresolved_inside_stated_proposition": [],
+  "required_downstream_boundary": [
+    "Real delta_V replacements are fixed-real-V slice norms; the joint coarse-tube norm retains delta_hat.",
+    "Only beta=(16R)^(-4) in original blocks; RD two-unit and FR box margins are unmatched.",
+    "Nonlinear regulator must fit alpha_*/U_*^2, not PS gamma.",
+    "Translated real domain and complex contour boundaries are retained.",
+    "Critical action and interacting determinant/reference normalization have not canceled.",
+    "No all-order integrated tree/surface/history sum, original-cut complex nonvanishing, effective-level induction, continuum existence or physical continuum mass gap."
+  ],
+  "not_an_exhaustion_or_no_go": true
+}

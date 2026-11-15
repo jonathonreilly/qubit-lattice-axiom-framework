@@ -1,0 +1,38 @@
+{
+  "schema": "source_local_compact_return_author_receipt_v1",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+    "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+    "lines": 597
+  },
+  "source_frozen_before_metadata": true,
+  "author_check_type": "written derivation plus source/hash/relative-link checks; no scientific numerical experiment",
+  "mathematical_focus": [
+    "Actual matched numerator/chart denominator SC25--SC30",
+    "Signed real critical minimum and energy-weighted imaginary-source derivative SC15--SC21",
+    "Fixed preliminary local Cauchy domain and narrow coarse tube SC22--SC24",
+    "First successful shell partition with full original endpoint/tree readers SC8--SC9",
+    "Full Haar/Gaussian/determinant/normalizer factors SC27--SC29",
+    "Fixed-source shrinking family and explicit full-reader entropy SC31--SC35"
+  ],
+  "independent_review_status": "required; request to parent follows source freeze",
+  "independence": "author self-check only; future Codex review must disclose same-family review",
+  "not_claimed": [
+    "exact whole-complement gas",
+    "whole original-cut zero-free logarithm",
+    "wider STEP/RD4 consumer coarse tube",
+    "inherited-history or effective-level theorem",
+    "non-free continuum existence",
+    "physical continuum mass gap"
+  ],
+  "git_mutations": false,
+  "shared_or_predecessor_edits": false,
+  "numerical_physics_runs": 0,
+  "mechanical_checks": {
+    "source_matches_frozen_sha256": true,
+    "all_listed_dependency_hashes_unchanged": true,
+    "all_relative_markdown_targets_exist": true,
+    "manifest_and_receipt_parse": true,
+    "scope": "Identity, link and metadata checks only; no mathematical certification."
+  }
+}

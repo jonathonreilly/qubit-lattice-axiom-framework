@@ -1,0 +1,92 @@
+{
+  "recorded_utc": "2026-10-30T05:09:04.301731+00:00",
+  "head": "ecd35b1be990b779de0f3af74c299c7cf1855513",
+  "origin_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "sources": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/RENEW/AUTHOR.md": {
+      "sha256": "81586618782dd176a1170df764767d9b33052a4e7aab9b825618a3e78258a35c",
+      "bytes": 3603
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/RENEW/REVIEW.md": {
+      "sha256": "d8ef8cec72ee5351fe7a4fe39ce645b0e26b144b30576291396e7b9d30c94fd1",
+      "bytes": 795
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md": {
+      "sha256": "c5d268f8e013743e40da0e9dae0eb8849b9cddaf3c0b3fd524d56a35a5c045b8",
+      "bytes": 65990
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md": {
+      "sha256": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+      "bytes": 42883
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md": {
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "bytes": 41724
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_JMBRA.md": {
+      "sha256": "ff18738db7af87cac79b9fbe924b7664c0f4721d645be72171d621cb9681619c",
+      "bytes": 26590
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_JMBRB.md": {
+      "sha256": "76bacfc23f945af5cac257a688be0739433e48d48943623bc80b36a3a4b95f04",
+      "bytes": 23947
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md": {
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "bytes": 40582
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD3.md": {
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "bytes": 36157
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md": {
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "bytes": 42966
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LARGE55.md": {
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "bytes": 81497
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD.md": {
+      "sha256": "890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968",
+      "bytes": 134852
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md": {
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md": {
+      "sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902",
+      "bytes": 352591
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md": {
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+      "bytes": 662171
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md": {
+      "sha256": "34e32bf0da1fc41836096cbddfee60355fd9b68e1480383db6d8c9a3cf301f00",
+      "bytes": 800530
+    },
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": {
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788
+    },
+    "docs/ai_methodology/skills/physics-loop/SKILL.md": {
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767
+    },
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md": {
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    }
+  },
+  "numerical_checks": "not run: nice priority denied; no bypass"
+}

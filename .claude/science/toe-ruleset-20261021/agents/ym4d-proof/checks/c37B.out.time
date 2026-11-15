@@ -1,0 +1,5 @@
+c37 B start 2026-10-28 01:38:01 UTC load1 2.45 memfree 44%
+exit 0 end 2026-10-28 01:38:53 UTC
+       52.57 real        51.68 user         0.41 sys
+           561184768  maximum resident set size
+           576275344  peak memory footprint

@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-10-29T20:31:34.357344+00:00",
+  "scope": "Integrate completed source-specific curvature review; no one-loop consumer or continuum closure.",
+  "changes": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "before_sha256": "aed3699a78d91bece185601ee28d60d5258700f0a23b60c54b52db8da9355d03",
+      "after_sha256": "e891f4b8369ed95d46536d6f542535b0944f46f8acc0834f9f75f89fcab2dc05"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "before_sha256": "7066a0ff76c5b0f99ab197a1a711ccd1662ff01f0a5b35dafd276ff789097309",
+      "after_sha256": "a01c5b9673a42f9c5171d7f19022343945a56738cbdf1cdfefb28742003fb440"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "before_sha256": "c072e8623b295da90b3998c7ec33017f8b8b5c92f0e41fb0e144fb93a4f38262",
+      "after_sha256": "da7d562eb2fec901c8ca3c30dc34e04a96123548f9963e81d54843131e43a929"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "before_sha256": "5e2ec3b59bc19312f10e091dd52466d58496bdbf07751b3e48bcf2cd060ce98e",
+      "after_sha256": "1877b4c79ab61e848e210262823ac5ca19e1eb0c38441251008168ea75de3b21"
+    }
+  ],
+  "review_receipt_sha256": "0214f4097bb5413d997de8da03aee955ca0bc196541a261ba1b45a46f63c2fa5",
+  "legacy_PROOF_body_unchanged": true,
+  "root_read_coverage": "Complete113-line curvature review and complete author argument; no additional independent science replay claimed.",
+  "historical_receipts_to_preserve": {
+    "euclidean_rotation_import_receipt.json": {
+      "original_source_commit": "119cd2c7bd3129448d4e48d42e402f7a4ca53b71",
+      "role": "Original author freeze; corrected source/review separately retained"
+    },
+    "review_massgap_block_final_validation.json": {
+      "current_report_manifest_receipt_hashes_match": true,
+      "role": "Historical mechanical validation, not new mathematical evidence"
+    }
+  },
+  "covariant_review": "PENDING",
+  "LIB1_affected_review": "PENDING",
+  "full_existence": "OPEN",
+  "physical_gap": "OPEN",
+  "mechanical_validation": {
+    "files": 28,
+    "local_links_checked": 297,
+    "vocabulary": {
+      "files": [],
+      "schema_version": 1,
+      "summary": {
+        "files_with_violations": 0,
+        "total_auto_correctable": 0,
+        "total_needs_human": 0
+      }
+    },
+    "whitespace_exit": 0,
+    "no_additional_scientific_execution": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "changes": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "before_sha256": "b91b68a2c356a306182f8cbf46dcbc4c47ceaea29abaad58f587bee067102d19",
+      "after_sha256": "5e7aa8119dfb7d29cc38e6f18d4dcc9fa08b6c0340d05907ece749de516728c8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "before_sha256": "5104110930e5303aff1d7cc87c398df8c8b1d4540a5a96dd0c18272a42ced2f9",
+      "after_sha256": "a4f027d8811a3341a5fde758f2a63488c258ad139613311938b0ce5bb358e389"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "before_sha256": "9ae28f3bf50c1dd16037ee38c61bc5d6b6b1cb608645f5634cef49b56e9b53b2",
+      "after_sha256": "a873f2163cd6b29d1c0931a1922d4c2b19ca13faec511d68204f9fa08c52b1b6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "before_sha256": "1596cabd549efac22458dca4a745915e14224a484ca93ad95444a5e6bd66c95e",
+      "after_sha256": "b46d6c9d0ca063de573933b4b285fdde4fd255dc1e2923ca6cf13bcfda13392c"
+    }
+  ],
+  "scope": "Status integration of completed charged review, affected tensor correction and primary-source comparison; no broader proof closure.",
+  "legacy_PROOF_body_sha256": "4efdee19aa03123a89053e466525f0ef5e9d8a4b8eb1ea38a1e87125043e728c",
+  "legacy_unchanged": true,
+  "CJ18": "OPEN",
+  "R_CONT": "OPEN",
+  "full_existence": "OPEN",
+  "physical_gap": "OPEN"
+}

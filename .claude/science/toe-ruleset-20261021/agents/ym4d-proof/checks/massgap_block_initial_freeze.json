@@ -1,0 +1,44 @@
+{
+  "MG_rows_closed": [],
+  "artifacts": [
+    {
+      "bytes": 26388,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "sha256": "f7e1405bb263ea82898c96ca0c80edc8afa90aa76d45a6676f7ccab34fef0fe6"
+    },
+    {
+      "bytes": 3683,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_criteria.md",
+      "sha256": "413d1e761b150d41891c3e94af37e8cab99a8fd2996e7127d8a1e29d13e8ce9c"
+    },
+    {
+      "bytes": 17350,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_exact.py",
+      "sha256": "448734574f786ce4b039326de8b8f151bc5f3c611e5ee2f22cdae8cf0b916d12"
+    },
+    {
+      "bytes": 17079,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_results.json",
+      "sha256": "d698e8d1ecd2e262092c84762a2467cfe37b35ecd8ecc96da1e7b99282ac74e8"
+    },
+    {
+      "bytes": 153,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "bytes": 18946,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_manifest.json",
+      "sha256": "5950544b1dd0a05c832ef945f985c078e6d60d2f7ae515758bee36abae3bab9b"
+    }
+  ],
+  "checks": {
+    "all_mutations_killed": true,
+    "mutation_controls": 22,
+    "passed": 108,
+    "total": 108
+  },
+  "created_utc": "2026-10-29T16:10:39.502500+00:00",
+  "scope": "Wilson local ground-state ratios, volume-independent one-step witness, actual small-beta physical Doob contraction",
+  "status": "Frozen author candidate; independent review pending; no MG0-MG5 closure"
+}

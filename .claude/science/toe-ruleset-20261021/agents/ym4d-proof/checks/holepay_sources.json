@@ -1,0 +1,97 @@
+{
+  "utc": "2026-10-30T11:23:11.300306+00:00",
+  "purpose": "Bookkeeping only; no scientific numerical checks",
+  "head": "688a8ddf958e6a5ba5402d6b7fdad4d283af56df",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/HOLEPAY/AUTHOR.md",
+      "sha256": "37b21c29d92264f4d3185e1302c17ba7590caad4de7857253a2ee29a31ac38c5",
+      "bytes": 2190,
+      "lines": 19
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "sha256": "f48bc7b1759f351dd97c34d0fdfbebfd665cbff0f5ebf38d85e61dcef38f2eb0",
+      "bytes": 80282,
+      "lines": 1188
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTCONT.md",
+      "sha256": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+      "bytes": 37012,
+      "lines": 654
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "bytes": 43186,
+      "lines": 692
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LIB1.md",
+      "sha256": "1e843c88ae26a2e69241dbdc3fa72c5b54e49a3b1669565f9e869a620a19aad1",
+      "bytes": 44321,
+      "lines": 781
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "bytes": 40582,
+      "lines": 764
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGE.md",
+      "sha256": "8c5a5ecdb95a32089f2005bf6597d4aedefa660b9b9f8c1cc7b7a01374afc1ef",
+      "bytes": 35221,
+      "lines": 650
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "bytes": 45366,
+      "lines": 649
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md",
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "bytes": 41724,
+      "lines": 766
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REFMATCH.md",
+      "sha256": "a7f45d815b6c7c4ed51950e0d3cc30ea3a7cb650e0bcb8e508659d197889729c",
+      "bytes": 35087,
+      "lines": 649
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "bytes": 59805,
+      "lines": 1037
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "lines": 193
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "lines": 93
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "lines": 354
+    }
+  ]
+}

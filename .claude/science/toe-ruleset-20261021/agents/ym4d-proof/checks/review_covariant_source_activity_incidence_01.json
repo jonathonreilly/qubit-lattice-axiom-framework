@@ -1,0 +1,73 @@
+{
+  "scope": "Sparse matrices with B_jj=z_v, |z_v|<=1, support {j,v}; all actual product atoms enumerated. This strengthens the earlier closed-count control, not an extra theorem.",
+  "counts": {
+    "A": 65536,
+    "B": 256,
+    "AB": 65536
+  },
+  "A_norms": {
+    "row": 2980.9579870417283,
+    "column": 763125.2446826793,
+    "M": 763125.2446826793,
+    "B": 763125.2446826793,
+    "remote": 0.0
+  },
+  "B_norms": {
+    "row": 2980.9579870417283,
+    "column": 2980.9579870417283,
+    "M": 2980.9579870417283,
+    "B": 763125.2446826793,
+    "remote": 763125.2446826793
+  },
+  "product_norms": {
+    "row": 162754.79141900392,
+    "column": 41665226.60326504,
+    "M": 41665226.60326504,
+    "B": 10666298010.425285,
+    "remote": 10666298010.425285
+  },
+  "correct_bound": 584634983365.2491,
+  "row_only_wrong_bound": 4549688586.500012,
+  "root_only_wrong_bound": 2274844293.250006,
+  "all_expected_controls_rejected": true,
+  "resources": [
+    {
+      "where": "start",
+      "rss": 17072128,
+      "free": 57,
+      "load": [
+        2.19482421875,
+        1.98876953125,
+        1.931640625
+      ],
+      "nice": 10,
+      "elapsed": 0.002841666981112212,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "completion",
+      "rss": 85803008,
+      "free": 57,
+      "load": [
+        2.19482421875,
+        1.98876953125,
+        1.931640625
+      ],
+      "nice": 10,
+      "elapsed": 0.10033224994549528,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ]
+}

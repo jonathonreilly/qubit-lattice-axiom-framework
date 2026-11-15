@@ -1,0 +1,12 @@
+{
+  "kind": "frozen_source_guard_triggered",
+  "exit_code": 1,
+  "error_type": "AssertionError",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+  "expected_sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+  "observed_sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+  "cause": "Coordinator applied the announced source correction while the pre-repair supplement was being packaged.",
+  "disposition": "Guard correctly stopped an assertion that the live source remained unchanged. Pre-repair bytes verified from the supplied immutable Git commit; new bytes checked separately.",
+  "scientific_failure": false,
+  "source_changed_by_reviewer": false
+}

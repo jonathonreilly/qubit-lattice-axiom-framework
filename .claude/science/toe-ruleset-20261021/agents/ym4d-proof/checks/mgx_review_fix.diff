@@ -1,0 +1,156 @@
+--- checks/mgx_review_v1.md	2026-10-29 21:44:32
++++ checks/mgx_review.md	2026-10-29 21:46:24
+@@ -1,8 +1,10 @@
+ # Hostile review of the bounded MGX author unit
+ 
+-Date: 2026-10-29. **One narrow binding source-domain correction is required.**
+-The conditional covariance, transport and spectral arguments are supported;
+-the actual crossover and continuum physical mass gap remain UNDECIDED.
++Date: 2026-10-29. **The corrected bounded note is supported.** The binding
++source-integrability finding and an additional explicit positive-weight
++qualification are confirmed repaired in this same reviewer context. No
++binding finding remains. The actual crossover and continuum physical mass
++gap remain UNDECIDED.
+ 
+ This is a fresh delegated reviewer context, with the inherited model and
+ reasoning configuration unchanged. It is same-family review (Codex reviewing
+@@ -14,10 +16,17 @@
+ 
+ ## Frozen source and authority boundary
+ 
+-- Reviewed `MGX.md`, all 387 lines, SHA256
++- Initially reviewed `MGX.md`, all 387 lines, SHA256
+   `979953ced67ed7a3f115dd6e81565cc04321ab12c0a5118cd7b6d4d39b07c9a2`.
+   This matches `checks/mgx_author_freeze.sha256` and the identical recovery
+-  copy `checks/mgx_author_v1.md`.
++  copy `checks/mgx_author_v1.md`. That original freeze remains historical;
++  it is not a checksum of the corrected working note.
++- Final reviewed `MGX.md` has 388 lines and SHA256
++  `c4a4f5f95f3b499e1c4f7a9a69a24bd2e94b1fb19ee53ceca48e9cc78393c8bb`,
++  matching `checks/mgx_author_v2.sha256`. I independently generated and read
++  the full v1-to-final diff, read the matching `checks/mgx_author_fix.diff`,
++  and reread the affected setup and full covariance argument. Exactly two
++  hunks changed; every other source byte is unchanged.
+ - All 16 entries in `checks/mgx_sources.sha256` matched their actual bytes.
+   The source baseline is `f401d825dcdaac36b13f0aee885f16099d066abb`.
+ - Governing skill and proof-search reference were read at the explicitly
+@@ -27,14 +36,15 @@
+   Cached execution instructions supplied no scientific premise or status.
+ - This is the requested author-unit readiness review only. No Git, PR,
+   ledger, audit, retained-status or integration action is authorized by it.
+-  `LAND` would mean readiness of this bounded note, not an actual landing or
++  `LAND` means readiness of this bounded note, not an actual landing or
+   a physical-gap result. My only written output is this report.
+ 
+-## Binding finding and item verdicts
++## Findings, same-context correction confirmation and item verdicts
+ 
+-**F1 — Source integrability needs its domain, MGX lines 121–127.** Equation
+-(4) introduces source insertions without a boundedness or exponential-moment
+-condition, then asserts that the source-weighted integrals exist whenever the
++**F1 — Source integrability needs its domain, original MGX lines 121–127;
++resolved at final lines 121–128.** The original equation
++(4) introduced source insertions without a boundedness or exponential-moment
++condition, then asserted that the source-weighted integrals exist whenever the
+ kernel does. Compactness and normalization of the kernel are insufficient for
+ arbitrary insertions. A positive compact-group density can have an unbounded
+ L2 insertion with no positive exponential moment. For example, near the
+@@ -43,7 +53,7 @@
+ have a finite integral. The same example can use a plaquette holonomy and
+ therefore be gauge invariant. The kernel `K=1` does not repair this.
+ 
+-**Binding fix:** qualify the setup of (4) by *bounded local finite-cutoff
++**Requested binding fix:** qualify the setup of (4) by *bounded local finite-cutoff
+ insertions F_i and finite source parameters J_i*, or state the required
+ exponential-integrability hypothesis explicitly. The bounded version is
+ already the exact domain in `MASS_GAP_CONSTRUCTION_ASTRA.md:393–397`.
+@@ -51,16 +61,35 @@
+ the covariance identity and section 5, which do not require exponential
+ moments. No change to the overall UNDECIDED conclusion is requested.
+ 
+-| Item and frozen MGX lines | Verdict | Fix or preserved boundary |
++**Actual correction confirmed:** the coordinator specified a continuous
++positive normalized composite S4' kernel, finitely many bounded local
++finite-cutoff insertions, and finite complex sources. The absolute source
++factor is then bounded by `exp(sum_i |J_i| ||F_i||_infinity)`; compactness
++and continuity make the displayed finite integrals well-defined. This
++repairs precisely the claim at issue without silently imposing exponential
++moments on section 5's L2 source contract.
++
++**F2 — Positive exponential-weight parameter, final MGX line 186;
++coordinator-supplied clarification confirmed.** The second correction makes
++`nu>0` explicit before (6). This is the appropriate domain: it ensures that
++the weighted row dominates the unweighted row and that exponential time
++weights are submultiplicative along paths. It also gives positive decay
++in (8). Section 5 already explicitly required positive nu. I checked this
++additional change and its affected premises; it introduces no new physical
++input and changes no constant. No commit was made: the exact two-hunk diff
++and the original/final hashes above are the recovery record. The coordinator
++also preserved the original HOLD report as `checks/mgx_review_v1.md`.
++
++| Item and final MGX lines | Verdict | Fix or preserved boundary |
+ |---|---|---|
+ | Target, dense observable family, same hierarchy and endpoint, 18–63 | Supported within the supplied Wilson model and fixed-spacing scope | None. Keep MG0–MG5 open and the SU(N) group restriction explicit. |
+ | Action normalization, flow window and endpoint comparison, 65–117 | Supported as a normalization identity and conditional flow comparison | None. Keep the final-output exception and formal one-loop continuation qualifications. |
+-| Exact coarse/source weights, 119–135 | HOLD for the overbroad integrability assertion | Apply F1. Existence/locality of the actual all-field coarse action remains a separate producer obligation. |
+-| Zero-Hessian control and full source conditioning, 136–170 | Supported | None. The example is not an actual RG output or a reflection-positive countermodel. Both terms of total covariance remain indispensable. |
+-| Weighted interaction/covariance criterion, 172–248 | Supported conditional finite-volume theorem | None. Its all-field weighted row condition is an unproved input for the actual S4' output. |
+-| Complete transport, onset/window and fixed-time limit, 250–307 | Supported conditional implication | None. The localized conditional means, conditional remainder, MG0 matching and MG4 nontriviality are genuine open hypotheses. |
+-| Direct physical transfer and physical-rate conversion, 309–345 | Supported conditional implication and exact diagnostic | None. The diagonal alternative still needs common physical-time matching; an auxiliary stochastic gap cannot be substituted. |
+-| Final decisions, scientific scope and attribution, 347–387 | Supported | None beyond F1. No GO, universal obstruction, infrared producer, continuum existence or physical-gap theorem has been established. |
++| Exact coarse/source weights, 119–136 | Supported after F1 | F1 repaired and confirmed. Uniform locality and quantitative admissibility of the actual all-field coarse action remain separate producer obligations. |
++| Zero-Hessian control and full source conditioning, 137–171 | Supported | None. The example is not an actual RG output or a reflection-positive countermodel. Both terms of total covariance remain indispensable. |
++| Weighted interaction/covariance criterion, 173–249 | Supported conditional finite-volume theorem with F2 explicit | F2 confirmed. Its all-field weighted row condition is an unproved input for the actual S4' output. |
++| Complete transport, onset/window and fixed-time limit, 251–308 | Supported conditional implication | None. The localized conditional means, conditional remainder, MG0 matching and MG4 nontriviality are genuine open hypotheses. |
++| Direct physical transfer and physical-rate conversion, 310–346 | Supported conditional implication and exact diagnostic | None. The diagonal alternative still needs common physical-time matching; an auxiliary stochastic gap cannot be substituted. |
++| Final decisions, scientific scope and attribution, 348–388 | Supported | None remaining. No GO, universal obstruction, infrared producer, continuum existence or physical-gap theorem has been established. |
+ 
+ ## Independent mathematical checks
+ 
+@@ -115,9 +144,10 @@
+ conditional expectation is an orthogonal projection in L2: decomposing each
+ source into its conditional mean and orthogonal residual makes the cross
+ terms vanish and gives (5), with the second term the conditional residual
+-inner product. For bounded sources, differentiating
+-`Z(J)/Z(0)=integral mu_c(dV) E[exp(sum J_i F_i)|V]` gives the same two
+-terms. At `K=1` the coarse means are constants and the entire fine connected
++inner product. For bounded sources, taking mixed derivatives of the logarithm
++of `Z(J)/Z(0)=integral mu_c(dV) E[exp(sum J_i F_i)|V]` gives the same two
++terms, using a conjugated first insertion for sesquilinear covariance.
++At `K=1` the coarse means are constants and the entire fine connected
+ correlation remains in the conditional term/source-only logarithm. This
+ checks both direction and normalization of the source transport.
+ 
+@@ -137,7 +167,7 @@
+    stay at their respective Gibbs laws. If there are `M` coordinates, the
+    disagreement probabilities satisfy
+    `p_(k+1)<=[(1-1/M)I+C/M] p_k+b/M`. The matrix has row sum strictly less
+-   than one, so iteration gives the limiting bound `p<=D b`, with
++   than one, so iteration gives `limsup_k p_k<=D b`, with
+    `D=(I-C)^(-1)`. Telescoping a real local function over differing
+    coordinates gives `|mu_h f-mu f|<=sum_ij delta_i f D_ij b_j(h)`.
+ 3. Differentiate at `h=0` (boundedness justifies this) to obtain
+@@ -210,8 +240,9 @@
+ No numerical or symbolic experiment was run; the reported rejection of
+ `nice` was not bypassed. Historical diagnostic runners were not replayed,
+ and their PASS counts were not treated as independent evidence. Hashes
+-and file reading were bookkeeping. No editable prompt, scientific source,
+-audit file or ledger was changed by this reviewer.
++and file reading were bookkeeping. All 16 input hashes were rechecked after
++the source correction and remained unchanged. No editable prompt, scientific
++source, audit file or ledger was changed by this reviewer.
+ 
+ The remaining producer is substantial: an actual all-field interaction
+ estimate at fixed physical block size plus complete localized fine-source
+@@ -220,7 +251,8 @@
+ hierarchy. The former is a stronger sufficient package than a mass gap;
+ the latter is essentially a gap estimate in transfer language once its
+ matching hypotheses are supplied. Neither is near closure merely because
+-its contract has now been stated. F1 is a bounded-note domain repair, not
+-resolution of any of these scientific obligations.
++its contract has now been stated. F1 and F2 are bounded-note domain repairs,
++not resolution of any of these scientific obligations. Both are confirmed
++on the final hash above, and no binding fix remains.
+ 
+-VERDICT: HOLD
++VERDICT: LAND

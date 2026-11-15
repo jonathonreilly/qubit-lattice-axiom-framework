@@ -1,0 +1,16 @@
+PASS A1 covariant charges of the line current vanish (PG) | |v|^2=57
+PASS A2 flat charges = (1 - Ad^-1)j, q(y0) != 0 | q(y0)=('-1328/4485', '-112/69', '10624/4485')
+PASS A3 Lambda_A, Lambda_B, Lambda_H are left inverses of -Xi_1 (3 random nu)
+PASS A4 Lambda_A x^phi = -phi and Lambda_B x^phi = -phi
+PASS A5 (Pi^T S)(x^phi) = -<q(y0), v'> for Lambda_A, Lambda_B, and != 0 | value=-1712/897
+PASS A6 hierarchical Lambda_H gives (Pi^T S)(x^phi) = 0
+PASS A7a Q_0 d phi = d ev^(1) phi (contour definition)
+PASS A7b full pairing y(x^phi) = <j_0, d phi> + <s_0, d ev phi> (5 random representations)
+PASS A8 ev^(1) Lambda_H x independent of x_0, dependent on x_1
+CONTROL FIRES C1 curved line holonomy, generic v: covariant charge at y_1 != 0
+CONTROL FIRES C2 2*Lambda_A is not a left inverse
+CONTROL FIRES C3 Lambda_A is not hierarchical: ev^(1) Lambda_A x^phi != 0
+CONTROL FIRES C4 at a level-2 root, Lambda_A x^phi != -phi
+CONTROL FIRES C5 dropping the s_0 term mismatches
+INFO Lambda_A != Lambda_B on a random non-gradient field: True
+SUMMARY: 14 items, all ok = True

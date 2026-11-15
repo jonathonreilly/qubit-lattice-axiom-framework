@@ -1,0 +1,111 @@
+{
+  "purpose": "mechanical identity and link evidence only; not mathematical validation",
+  "source_sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+  "source_lines": 544,
+  "links": [
+    {
+      "target": "RD.md",
+      "exists": true
+    },
+    {
+      "target": "REVIEW_RD_R2.md",
+      "exists": true
+    },
+    {
+      "target": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "GRADED_COMPLEMENT_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "FIXED_SOURCE_RADIUS_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "checks/probability_sensitive_return_read_manifest.json",
+      "exists": true
+    },
+    {
+      "target": "PROCESS_LIGHT.md",
+      "exists": true
+    }
+  ],
+  "input_identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "revision": "3bba91875672becadc0ab120204905d9f1f405a8",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "revision": "ddc0515e563507c74050d9c55201abb6981d4d69",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RD.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RD_R2.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_GRADED_COMPLEMENT_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "revision": "working bytes at freeze",
+      "match": true
+    }
+  ],
+  "all_link_targets_present": true,
+  "all_input_identities_match": true,
+  "numerical_experiments": 0,
+  "scientific_pass_claim": false,
+  "git_mutations": 0
+}

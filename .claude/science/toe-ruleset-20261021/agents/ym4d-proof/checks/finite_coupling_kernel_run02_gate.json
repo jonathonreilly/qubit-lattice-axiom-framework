@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-29T22:28:02.867968+00:00",
+  "lock": {
+    "expires_at": "2026-10-29T23:02:23.558884+00:00",
+    "holder_id": "01a1873f-103a-7f01-b924-4455238d8a86",
+    "owner": "ym4d-full-proof",
+    "pid": 32308,
+    "purpose": "Continue full PR 10114 proof with independent Astra reviews",
+    "started_at": "2026-10-29T21:02:23.558884+00:00"
+  },
+  "lock_sha256": "3c45c5f2c6b9217ae50f4c79b789f839df2b802e2ce43841115a20334f3e6290",
+  "memory_output": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 54%\n",
+  "free_memory_percent": 54,
+  "minimum_memory_percent": 50,
+  "load": [
+    2.6162109375,
+    2.544921875,
+    2.35986328125
+  ],
+  "load_limit": 5.0,
+  "free_disk_gib": 28.68069839477539,
+  "memory_limit_mib": 300,
+  "wall_limit_seconds": 90,
+  "enforcement": "RSS watchdog at .25s, CPU soft limit90s, nice15, threads1; Darwin direct RSS limit previously rejected in CC",
+  "passed": true
+}

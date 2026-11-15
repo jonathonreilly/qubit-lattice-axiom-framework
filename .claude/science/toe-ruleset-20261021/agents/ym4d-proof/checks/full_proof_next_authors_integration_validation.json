@@ -1,0 +1,1306 @@
+{
+  "created_utc": "2026-10-29T18:11:41.177345+00:00",
+  "integration_base": "f078e7af6b9437941bcd43534e681d5a54feb249",
+  "frozen_author_artifacts": 46,
+  "artifact_and_input_bindings_before_summary_edits": 118,
+  "all_six_original_invocations_reproduced": true,
+  "source_control_fix": "SEA-CONTROL-01 additive four-pattern law; independent affected confirmation received, final report pending",
+  "staged_paths_before_validation": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stderr.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_criteria.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_downloads.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stderr.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stdout.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_freeze.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_prose_status.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_validation.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stderr.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stdout.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_bindings.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_preflight_failure.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_replay.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_replay_summary.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_crossover_import_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_crossover_import_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_crossover_import_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_literature_coverage.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_source_sea_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_source_sea_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_source_sea_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_bloch_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_bloch_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_bloch_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_filling_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_filling_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_filling_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_periodic_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_periodic_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_periodic_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_strip_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_strip_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_strip_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check_v2.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_control_fix_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_criteria.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_fetch_record.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_literature.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_read_coverage.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_results.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_01.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_02.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_03.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_03.stderr.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_criteria.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_criteria.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_inputs.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources02.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_vocab.json"
+  ],
+  "local_links": [
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CODEX_REVIEW_ASSEMBLY.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "UNIFORM_SOFT_MINIMIZER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "SOURCE_SEA_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "checks/source_sea_control_fix_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CROSSOVER_LITERATURE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "checks/full_proof_next_authors_replay_summary.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "checks/full_proof_next_authors_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "checks/residual_det_vertices_working.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_RESIDUAL_VERTICES_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "RECOVERY_ALIGNMENT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_RECOVERY_ALIGNMENT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CODEX_REVIEW_MINCB.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CODEX_REVIEW_B2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CODEX_REVIEW_SPHERE2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CODEX_REVIEW_TSE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_MASS_GAP_TARGET_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "OSLEAF55.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CODEX_REVIEW_OSLEAF.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "NONFREE55.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "CODEX_REVIEW_NONFREE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "checks/massgap_block_injectivity.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "checks/full_proof_three_reviews_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "checks/full_proof_three_reviews_replay_confirmation.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_criteria.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_manifest.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_attempt01.py"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_attempt01.receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "target": "checks/crossover_import_attempt01.stdout.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "UNIFORM_SOFT_MINIMIZER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "SOURCE_SEA_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/source_sea_control_fix_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CROSSOVER_LITERATURE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_next_authors_replay_summary.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_next_authors_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/massgap_block_injectivity.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_three_reviews_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_three_reviews_replay_confirmation.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "APPROACH_REGISTRY.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_RECOVERY_UIR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/review_uir_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/review_uir_source_manifest.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_uir_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/source_return_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_source_return_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_cluster_fix.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_RECOVERY_CLUSTER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/review_cluster_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_RECOVERY_ALIGNMENT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/review_alignment_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_alignment_review_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_source_return_fix.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/review_source_return_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_source_review_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/residual_det_frozen_manifest.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/review_residual_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_residual_review_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/residual_det_lattice_bridge_working.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_bridge_review_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/residual_det_vertices_working.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_residual_vertices_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_source_cont_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_source_cont_history_fix.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_MASS_GAP_TARGET_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_massgap_construction_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "recovery_20261029/manifest.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "RECOVERY_ALIGNMENT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "RECOVERY_UIR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "RECOVERY_CLUSTER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_STEP.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_MINCB.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_B2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_LANEA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_SRC2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_TSE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_SPHERE2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_OFFGLOB2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "CODEX_REVIEW_ASSEMBLY.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_source_cont_review_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_massgap_construction_review_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "REVIEW_RESIDUAL_VERTICES_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "target": "checks/full_proof_residual_vertices_review_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "checks/review_source_history_literature.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "checks/review_residual_full_colour_literature.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "checks/review_massgap_block_literature.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "checks/full_proof_literature_coverage.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "checks/full_proof_next_literature_coverage.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "UNIFORM_SOFT_MINIMIZER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "LINEAR_PACKAGE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "CROSSOVER_LITERATURE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "CODEX_REVIEW_OSLEAF.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_STEP.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_MINCB.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_B2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_SRC2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_TSE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_LANEA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_SPHERE2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CODEX_REVIEW_OFFGLOB2.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "RECOVERY_ALIGNMENT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "RECOVERY_UIR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "RECOVERY_CLUSTER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_RECOVERY_ALIGNMENT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_RECOVERY_UIR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_RECOVERY_CLUSTER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "checks/residual_det_vertices_working.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_RESIDUAL_VERTICES_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_MASS_GAP_TARGET_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "checks/full_proof_three_reviews_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "checks/full_proof_three_reviews_replay_confirmation.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "UNIFORM_SOFT_MINIMIZER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "SOURCE_SEA_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "checks/source_sea_control_fix_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "CROSSOVER_LITERATURE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "checks/full_proof_next_authors_replay_summary.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "target": "checks/full_proof_next_authors_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/full_proof_alignment_ba5_fix.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_RECOVERY_ALIGNMENT_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/residual_det_vertices_working.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_MASS_GAP_TARGET_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/full_proof_massgap_construction_review_replay.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_RESIDUAL_VERTICES_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/full_proof_residual_vertices_review_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/massgap_block_injectivity.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/full_proof_three_reviews_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/full_proof_three_reviews_replay_confirmation.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "LITERATURE_BRIDGES.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "UNIFORM_SOFT_MINIMIZER_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "SOURCE_SEA_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/source_sea_control_fix_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "CROSSOVER_LITERATURE_BRIDGE_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/full_proof_next_authors_replay_summary.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "target": "checks/full_proof_next_authors_bindings.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "checks/review_source_history_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "HW.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "checks/source_sea_literature.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "RLARGE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "RLARGE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "checks/source_sea_literature.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "PROOF.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "RLARGE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "checks/source_sea_criteria.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "target": "checks/source_sea_manifest.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "LINEAR_PACKAGE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "PROOF_session16_snapshot.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_S13_S14.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_S15_CONVERGENCE.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_S16_S17.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "FLOW.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_primary_sources02.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_primary_sources.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01_criteria.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01.py"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01_bloch_out.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01_bloch_err.txt"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01_periodic_out.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01_periodic_err.txt"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01_strip_out.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_01_strip_err.txt"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_02_criteria.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_02.py"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_02_out.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_02_err.txt"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_inputs.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/uniform_soft_minimizer_receipt.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_literature.md",
+      "target": "review_source_history_literature.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_results.md",
+      "target": "source_sea_run_02.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_results.md",
+      "target": "source_sea_run_01.json"
+    }
+  ],
+  "local_link_count": 285,
+  "link_scope": "Edited PROOF status header; other packaged Markdown in full",
+  "syntax_json_parsed": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_downloads.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_freeze.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_prose_status.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_validation.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_bindings.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_preflight_failure.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_replay.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_authors_replay_summary.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_crossover_import_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_crossover_import_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_literature_coverage.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_source_sea_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_source_sea_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_bloch_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_bloch_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_filling_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_filling_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_periodic_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_periodic_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_strip_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_uniform_strip_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check_v2.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_control_fix_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_fetch_record.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_read_coverage.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_01.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_02.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_03.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_inputs.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources02.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_vocab.json"
+  ],
+  "vocabulary": {
+    "exit_code": 0,
+    "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /tmp/ym-next-authors-vocab-20261029-final.json\n",
+    "stderr": "",
+    "report": {
+      "files": [],
+      "schema_version": 1,
+      "summary": {
+        "files_with_violations": 0,
+        "total_auto_correctable": 0,
+        "total_needs_human": 0
+      }
+    }
+  },
+  "staged_whitespace": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "initial_preflight_failure": "checks/full_proof_next_authors_preflight_failure.json",
+  "legacy_proof_body_sha256": "4efdee19aa03123a89053e466525f0ef5e9d8a4b8eb1ea38a1e87125043e728c",
+  "complete_external_papers_staged": 0,
+  "scope": "Candidate checkpoint and diagnostic repair; independent reviews separately scoped; full existence and physical continuum gap OPEN."
+}

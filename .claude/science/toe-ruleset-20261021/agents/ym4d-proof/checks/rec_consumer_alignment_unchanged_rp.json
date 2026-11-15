@@ -1,0 +1,66 @@
+{
+  "schema": "unchanged_mathematical_subtext_v1",
+  "baseline_revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "hrp_full_before_sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+  "hrp_full_after_sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+  "blocks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "start_locator": "**Lemma RP-lat",
+      "end_locator": "(the order reversal in F^* is immaterial because lattice moments are symmetric).",
+      "end_locator_included": true,
+      "baseline_lines": [
+        292,
+        313
+      ],
+      "current_lines": [
+        333,
+        354
+      ],
+      "bytes": 2591,
+      "before_sha256": "086bef4ca78481cf27a81c4f70b47254d65e47eb3a8ea8d41e563ea71eea545c",
+      "after_sha256": "086bef4ca78481cf27a81c4f70b47254d65e47eb3a8ea8d41e563ea71eea545c",
+      "byte_identical": true,
+      "exact_utf8_subtext": "**Lemma RP-lat (the L9a mechanism, site reflection — the case used). PROVEN-HERE (standard; Osterwalder–Seiler [m]).** Wilson\nmeasure on Λ_{a,R}, R/a even; θ : t ↦ −t (mod R) fixes the two site planes t = 0 and t = R/2. Choose the closed temporal\narc Λ_+ := [0,R/2] and let 𝔄_+ consist of bounded complex measurable functions of links GEOMETRICALLY CONTAINED in that\nhalf, keeping distinct periodic geometric edges even when their endpoint names coincide. Thus positive temporal edges\nhave base 0 ≤ t ≤ R/2−a, while spatial edges at 0 ≤ t ≤ R/2 are included. Inverse orientations denote the same geometric\nedge. Set (ΘA)(U) := A(θU). Then ω_{a,R}(Θ(A)^*A) ≥ 0 for every A ∈ 𝔄_+.\n*Proof.* Both fixed planes are site planes, so no plaquette straddles one: every plaquette lies in Λ_+ or in Λ_− := θΛ_+, and\nplaquettes inside a fixed plane are θ-invariant (s(U^{-1}) = s(U) absorbs orientation). Hence S_W = S_+ + ΘS_+ with S_+ :=\nΣ_{p⊂Λ_+, p⊄fixed planes}βs(U_p) + ½Σ_{p⊂fixed planes}βs(U_p). Write U = (U_0, U_+, U_−), U_0 the links inside the fixed planes\n(θ-fixed), U_± the remaining links of Λ_±. Then Z·ω(Θ(A)^*A) = ∫dU_0 ∫dU_+dU_− conj(A(θU))e^{−ΘS_+(U)}A(U)e^{−S_+(U)} =\n∫dU_0 |∫dU_+ A(U_0, U_+)e^{−S_+(U_0,U_+)}|² ≥ 0, by the Haar-preserving substitution U_− = θU′_+ and reality of S_+. ∎\n*Extent-two convention.* Endpoint membership alone is insufficient when R/a=2: it includes both temporal arcs. For the\ntwo distinct positively oriented temporal edges U_0,U_1 at one spatial site, F=Re Tr U_0−Re Tr U_1 then satisfies\nF(θU)=−F(U), so ω(Θ(F)^*F)=−ω(F²)<0 under every finite reflection-symmetric Wilson density. The strict sign follows from\nfull support and F not being identically zero. The geometric half above includes only one arc and excludes this F.\nThis corrects the original endpoint-only wording; [the second HRP review](REVIEW2_HRP.md) records its discovery. The\npaired-half proof and all eventual compact-support continuum uses retain their stated hypotheses.\n*Use.* The clover e_a(x) involves only links within distance a of x, and θ maps clover_{μν}(x) onto clover_{μν}(θx), so\nΘ(ê_a(x)) = ê_a(θx) (ω(e_a) is θ-invariant). For F ∈ 𝒜_{𝒟+} with supp F_m ⊂ (B_{R/4})^m and a ≤ τ_F := min{t_1 over supp F},\nA_F ∈ 𝔄_+, and the change of variables x ↦ θx in the lattice sum gives exactly\n  Σ_{n,m}S^{a,R}_{n+m}(ΘF_n^* ⊗ F_m) = ω_{a,R}(Θ(A_F)^*A_F) ≥ 0\n(the order reversal in F^* is immaterial because lattice moments are symmetric)."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "start_locator": "### 3.2 Site reflection",
+      "end_locator": "### 3.3 Mixed reflection",
+      "end_locator_included": false,
+      "baseline_lines": [
+        230,
+        260
+      ],
+      "current_lines": [
+        230,
+        260
+      ],
+      "bytes": 1459,
+      "before_sha256": "85e6446762858aee7d0991898a2bba924050c69b34028eb8f20a2c3486a32130",
+      "after_sha256": "85e6446762858aee7d0991898a2bba924050c69b34028eb8f20a2c3486a32130",
+      "byte_identical": true,
+      "exact_utf8_subtext": "### 3.2 Site reflection and its two boundary slices — PROVEN\n\nSet r_s(t,x)=(−t,x), with fixed site planes t=0,m and closed positive\nhalf the geometric arc 0≤t≤m. Let W be all spatial links inside BOTH\nfixed planes. Reflection fixes each such directed link pointwise; it\ndoes not act on W by group inversion. Let X_+ and X_- be the remaining\nedge variables in the two respective halves. Each elementary plaquette\nis either entirely on a fixed plane or in one closed half. None has\npoints in both open halves. This is the nearest-neighbor cell property;\nit is not a claim about arbitrary extended-loop actions.\n\nFor paired real couplings, write\n\n    S=S_0(W)+S_+(X_+,W)+S_+(ρX_-,W).\n\nS_0 contains each fixed-plane plaquette once. Conditioning on W and\nreflecting the negative variables gives exactly\n\n    Z Q_μ(F,F)=∫ e^{-S_0(W)}\n       |∫ F(X_+,W)e^{-S_+(X_+,W)}dX_+|² dW ≥0.\n\nThis includes all bounded complex measurable F depending on W and X_+,\nwithout gauge invariance. Both fixed planes are integrated, so there is\nno discarded periodic boundary term. Here even the nonnegativity of\nβ_p is unnecessary: all finite real reflection-symmetric Wilson\ncoefficients give a positive fixed-plane weight and the displayed square.\nAt extent 2 classify temporal edges by the arc they traverse, not merely\ntheir endpoint pair. The same formula holds. A negative-coupling test\non a site-contained plaquette is consequently not a general RP control.\n\n"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "start_locator": "### 4.3 Bare-link locality",
+      "end_locator": "## 5. Coordinate-reflection",
+      "end_locator_included": false,
+      "baseline_lines": [
+        324,
+        358
+      ],
+      "current_lines": [
+        324,
+        358
+      ],
+      "bytes": 1901,
+      "before_sha256": "de954ae4b27ad03220c07b253d1286f583f9a677381c0b3a4281b38a5ab318bb",
+      "after_sha256": "de954ae4b27ad03220c07b253d1286f583f9a677381c0b3a4281b38a5ab318bb",
+      "byte_identical": true,
+      "exact_utf8_subtext": "### 4.3 Bare-link locality and positive-half polynomials — PROVEN\n\nROTDEF §2.2 defines the clover energy e_a(x) as a finite real sum of\nWilson plaquette energies, with all its links in the coordinate-distance-a\nneighborhood of x. Its clover set is permuted by a coordinate reflection,\nso e_a(ρU,x)=e_a(U,rx). A real reflection-paired centering c_a(x) and\nnonzero real paired normalization Z_a(x) give the same identity for\nê_a(x)=(e_a(x)−c_a(x))/Z_a(x). In particular c_a(x)=μ(e_a(x)) is paired\nbecause the action and Haar measure are reflection invariant.\n\nIf the support of a test function lies more than a from BOTH boundaries\nof the chosen positive arc, its lattice sum Σ_x v_a(x)f(x)ê_a(x) is\npositive-half measurable, for real reflected volume weights v_a.\nAt a site plane the closed-half algebra also permits tangential links\non the plane; distance ≥a suffices for the clover stencil. For a fixed\ncompact positive-time test with min t=δ>0, and an exhausting torus, these\nconditions hold eventually: a<δ and the distant periodic plane is beyond\nthe entire support and stencil. Products and finite linear combinations\nof such observables are still bounded half-observables at each finite\ncutoff, even though their bounds may grow with a^{-1}.\n\nFor OSLEAF55 D8's finite-sequence map A_F, each multi-test has compact\nsupport with every insertion at strictly positive time. The same stencil\nargument puts A_F in the half-algebra. Reflection commutes exactly with\nthe lattice summation. Consequently\n\n    Σ_{n,m} S^{a,R}_{n+m}(R(F_n^*)⊗F_m)\n       = μ_Wilson((ΘA_F)A_F) = E_ch[(ΘA_F)A_F] ≥0.\n\nThe reversed order in F_n^* merely permutes commuting lattice factors;\ncomplex conjugation is retained. This identity uses bare links, not the\nauxiliary soft variables. Fixed positive-time gradient flow is not a\nstrictly supported observable and is not covered by this support proof.\n\n"
+    }
+  ],
+  "separate_change": "Only the toy-check attribution following the OSLEAF mathematical block and its section 8 scope changed; criteria, runner and recorded outputs did not."
+}

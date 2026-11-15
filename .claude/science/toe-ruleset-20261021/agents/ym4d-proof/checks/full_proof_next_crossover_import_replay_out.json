@@ -1,0 +1,711 @@
+{
+  "schema": "crossover-import-independent-diagnostics-v1",
+  "scope": "Kirk v4 selected Gaussian supplier and pivot-geometry implications only",
+  "source_sha256": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d",
+  "runtime": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  },
+  "gaussian_rank_witness": [
+    {
+      "core_dimension": 1,
+      "operator_row": "1/32",
+      "minus_log_density_ratio_at_zero": "0.000122085216086957228347732709190716821533234033489059593843947285255679707490720852880687104",
+      "necessary_C_in_printed_row_ignoring_support_weight": "0.00229005159238112738486645495911649287891636651880650066265091743671005451316578724817601357"
+    },
+    {
+      "core_dimension": 2,
+      "operator_row": "1/32",
+      "minus_log_density_ratio_at_zero": "0.000244170432173914456695465418381433643066468066978119187687894570511359414981441705761374208",
+      "necessary_C_in_printed_row_ignoring_support_weight": "0.00458010318476225476973290991823298575783273303761300132530183487342010902633157449635202714"
+    },
+    {
+      "core_dimension": 8,
+      "operator_row": "1/32",
+      "minus_log_density_ratio_at_zero": "0.00097668172869565782678186167352573457226587226791247675075157828204543765992576682304549683",
+      "necessary_C_in_printed_row_ignoring_support_weight": "0.0183204127390490190789316396729319430313309321504520053012073394936804361053262979854081085"
+    },
+    {
+      "core_dimension": 128,
+      "operator_row": "1/32",
+      "minus_log_density_ratio_at_zero": "0.0156269076591305252285097867764117531562539562865996280120252525127270025588122691687279493",
+      "necessary_C_in_printed_row_ignoring_support_weight": "0.293126603824784305262906234766911088501294914407232084819317431898886977685220767766529736"
+    },
+    {
+      "core_dimension": 4096,
+      "operator_row": "1/32",
+      "minus_log_density_ratio_at_zero": "0.50006104509217680731231317684517610100012660117118809638480808040726408188199261339929438",
+      "necessary_C_in_printed_row_ignoring_support_weight": "9.38005132239309776841299951254115483204143726103142671421815782076438328592706456852895161"
+    },
+    {
+      "core_dimension": 1048576,
+      "operator_row": "1/32",
+      "minus_log_density_ratio_at_zero": "128.015627543597262671952173272365081856032409899824152674510868584259604961790109030219361",
+      "necessary_C_in_printed_row_ignoring_support_weight": "2401.29313853263302871372787521053563700260793882404523883984840211568212119732852954341161"
+    }
+  ],
+  "rectangular_cross_block_controls": [
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "B": [
+        [
+          "1/32",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/80",
+          "0",
+          "1/50"
+        ]
+      ],
+      "full_precision_det": "654195801/655360000",
+      "hilbert_schmidt_squared": "4549/2560000",
+      "minus_log_normalizer": "0.00088900320689669425673172182512997219848793748453425562160059187476268470575952192665953916"
+    },
+    {
+      "shape": [
+        3,
+        1
+      ],
+      "B": [
+        [
+          "1/10"
+        ],
+        [
+          "-1/20"
+        ],
+        [
+          "1/30"
+        ]
+      ],
+      "full_precision_det": "3551/3600",
+      "hilbert_schmidt_squared": "49/3600",
+      "minus_log_normalizer": "0.0068522957505567379231982453686762198606368527452212117957454437018239551298677851286892207"
+    },
+    {
+      "shape": [
+        3,
+        2
+      ],
+      "B": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "full_precision_det": "1",
+      "hilbert_schmidt_squared": "0",
+      "minus_log_normalizer": "0"
+    }
+  ],
+  "source_normalizer_derivatives": [
+    {
+      "d": 1,
+      "first": "-64/4095",
+      "second": "-16781312/16769025"
+    },
+    {
+      "d": 17,
+      "first": "-1088/4095",
+      "second": "-285282304/16769025"
+    },
+    {
+      "d": 4096,
+      "first": "-262144/4095",
+      "second": "-68736253952/16769025"
+    }
+  ],
+  "pivot_geometry": [
+    {
+      "q": 2,
+      "R": 12,
+      "pivots": 16,
+      "diameter_over_R_nminus1": "4/15"
+    },
+    {
+      "q": 3,
+      "R": 12,
+      "pivots": 81,
+      "diameter_over_R_nminus1": "1/10"
+    },
+    {
+      "q": 5,
+      "R": 12,
+      "pivots": 625,
+      "diameter_over_R_nminus1": "1/39"
+    },
+    {
+      "q": 9,
+      "R": 12,
+      "pivots": 6561,
+      "diameter_over_R_nminus1": "1/205"
+    }
+  ],
+  "finite_haar_control": {
+    "role": "exact finite compact-group algebra control; not physical lattice evidence"
+  },
+  "resolution_certificate": {
+    "per_element": "Exact rational matrix entries and finite Haar probabilities are checked; no physical link integral is numerically simulated.",
+    "per_site": "Checked and not executed as a Wilson site calculation: the original Wilson conditional bound is supplied by a direct analytical proof.",
+    "per_mode": "Symmetric and antisymmetric Gaussian modes independently reproduce the determinant and its indispensable rank multiplicity.",
+    "per_block": "Two arbitrarily sized Gaussian cores are the quantified analytical test family; finite dimensions and rank controls are executed here.",
+    "lattice_wide": "Checked and not executed as continuum evidence: separated finite pivot grids test geometry only, and no Yang\u2013Mills mass-gap claim is inferred."
+  },
+  "continuum_target_rows_closed": [],
+  "checks": [
+    {
+      "name": "printed_weighted_operator_row_small",
+      "pass": true,
+      "detail": {
+        "t": "1/64",
+        "distance_weight": 2,
+        "kappa": "1/32"
+      }
+    },
+    {
+      "name": "plus_minus_diagonalization_d1",
+      "pass": true,
+      "detail": "Independent symmetric/antisymmetric mode transformation"
+    },
+    {
+      "name": "full_schur_determinant_d1",
+      "pass": true,
+      "detail": {
+        "exact_det": "4095/4096",
+        "spectrum_floor": "63/64"
+      }
+    },
+    {
+      "name": "closed_two_step_trace_d1",
+      "pass": true,
+      "detail": {
+        "trace": "1/2048",
+        "rank_multiplier": 1
+      }
+    },
+    {
+      "name": "mutation_wrong_schur_sign_rejected_d1",
+      "pass": true,
+      "detail": "The precision uses det(I-B*B), not det(I+B*B)"
+    },
+    {
+      "name": "plus_minus_diagonalization_d2",
+      "pass": true,
+      "detail": "Independent symmetric/antisymmetric mode transformation"
+    },
+    {
+      "name": "full_schur_determinant_d2",
+      "pass": true,
+      "detail": {
+        "exact_det": "16769025/16777216",
+        "spectrum_floor": "63/64"
+      }
+    },
+    {
+      "name": "closed_two_step_trace_d2",
+      "pass": true,
+      "detail": {
+        "trace": "1/1024",
+        "rank_multiplier": 2
+      }
+    },
+    {
+      "name": "mutation_omit_trace_rank_rejected_d2",
+      "pass": true,
+      "detail": "Replacing every matrix cycle trace by its scalar block-edge product fails"
+    },
+    {
+      "name": "mutation_wrong_schur_sign_rejected_d2",
+      "pass": true,
+      "detail": "The precision uses det(I-B*B), not det(I+B*B)"
+    },
+    {
+      "name": "plus_minus_diagonalization_d3",
+      "pass": true,
+      "detail": "Independent symmetric/antisymmetric mode transformation"
+    },
+    {
+      "name": "full_schur_determinant_d3",
+      "pass": true,
+      "detail": {
+        "exact_det": "68669157375/68719476736",
+        "spectrum_floor": "63/64"
+      }
+    },
+    {
+      "name": "closed_two_step_trace_d3",
+      "pass": true,
+      "detail": {
+        "trace": "3/2048",
+        "rank_multiplier": 3
+      }
+    },
+    {
+      "name": "mutation_omit_trace_rank_rejected_d3",
+      "pass": true,
+      "detail": "Replacing every matrix cycle trace by its scalar block-edge product fails"
+    },
+    {
+      "name": "mutation_wrong_schur_sign_rejected_d3",
+      "pass": true,
+      "detail": "The precision uses det(I-B*B), not det(I+B*B)"
+    },
+    {
+      "name": "plus_minus_diagonalization_d5",
+      "pass": true,
+      "detail": "Independent symmetric/antisymmetric mode transformation"
+    },
+    {
+      "name": "full_schur_determinant_d5",
+      "pass": true,
+      "detail": {
+        "exact_det": "1151514816750309375/1152921504606846976",
+        "spectrum_floor": "63/64"
+      }
+    },
+    {
+      "name": "closed_two_step_trace_d5",
+      "pass": true,
+      "detail": {
+        "trace": "5/2048",
+        "rank_multiplier": 5
+      }
+    },
+    {
+      "name": "mutation_omit_trace_rank_rejected_d5",
+      "pass": true,
+      "detail": "Replacing every matrix cycle trace by its scalar block-edge product fails"
+    },
+    {
+      "name": "mutation_wrong_schur_sign_rejected_d5",
+      "pass": true,
+      "detail": "The precision uses det(I-B*B), not det(I+B*B)"
+    },
+    {
+      "name": "exact_log_normalizer_additivity_d1",
+      "pass": true,
+      "detail": "Each independent pair contributes the same nonzero normalizer"
+    },
+    {
+      "name": "exact_log_normalizer_additivity_d2",
+      "pass": true,
+      "detail": "Each independent pair contributes the same nonzero normalizer"
+    },
+    {
+      "name": "mutation_omit_normalizer_dimension_rejected_d2",
+      "pass": true,
+      "detail": "A rank-independent normalizer is incompatible with the exact determinant"
+    },
+    {
+      "name": "exact_log_normalizer_additivity_d8",
+      "pass": true,
+      "detail": "Each independent pair contributes the same nonzero normalizer"
+    },
+    {
+      "name": "mutation_omit_normalizer_dimension_rejected_d8",
+      "pass": true,
+      "detail": "A rank-independent normalizer is incompatible with the exact determinant"
+    },
+    {
+      "name": "exact_log_normalizer_additivity_d128",
+      "pass": true,
+      "detail": "Each independent pair contributes the same nonzero normalizer"
+    },
+    {
+      "name": "mutation_omit_normalizer_dimension_rejected_d128",
+      "pass": true,
+      "detail": "A rank-independent normalizer is incompatible with the exact determinant"
+    },
+    {
+      "name": "exact_log_normalizer_additivity_d4096",
+      "pass": true,
+      "detail": "Each independent pair contributes the same nonzero normalizer"
+    },
+    {
+      "name": "mutation_omit_normalizer_dimension_rejected_d4096",
+      "pass": true,
+      "detail": "A rank-independent normalizer is incompatible with the exact determinant"
+    },
+    {
+      "name": "exact_log_normalizer_additivity_d1048576",
+      "pass": true,
+      "detail": "Each independent pair contributes the same nonzero normalizer"
+    },
+    {
+      "name": "mutation_omit_normalizer_dimension_rejected_d1048576",
+      "pass": true,
+      "detail": "A rank-independent normalizer is incompatible with the exact determinant"
+    },
+    {
+      "name": "normalization_identity_d1",
+      "pass": true,
+      "detail": "Computed from independent two-dimensional Gaussian mode integrals"
+    },
+    {
+      "name": "mutation_drop_normalizer_rejected_d1",
+      "pass": true,
+      "detail": {
+        "integral_without_scalar_normalizer": "1.00012209266879023593899564642196843915406730815217614518117953228663539745204183849145000"
+      }
+    },
+    {
+      "name": "normalization_identity_d7",
+      "pass": true,
+      "detail": "Computed from independent two-dimensional Gaussian mode integrals"
+    },
+    {
+      "name": "mutation_drop_normalizer_rejected_d7",
+      "pass": true,
+      "detail": {
+        "integral_without_scalar_normalizer": "1.00085496178425426283853191724852939181378967521285405544926020543019371917725825736349175"
+      }
+    },
+    {
+      "name": "normalization_identity_d64",
+      "pass": true,
+      "detail": "Computed from independent two-dimensional Gaussian mode integrals"
+    },
+    {
+      "name": "mutation_drop_normalizer_rejected_d64",
+      "pass": true,
+      "detail": {
+        "integral_without_scalar_normalizer": "1.00784405851744970240095330159541928554182963157156937470858851695651496612903910654622083"
+      }
+    },
+    {
+      "name": "zero_coupling_control",
+      "pass": true,
+      "detail": "Uncoupled normalized Gaussian ratio is identically one"
+    },
+    {
+      "name": "fixed_rank_one_control_d1",
+      "pass": true,
+      "detail": "Growing an uncoupled ambient space does not grow the determinant"
+    },
+    {
+      "name": "fixed_rank_one_control_d4",
+      "pass": true,
+      "detail": "Growing an uncoupled ambient space does not grow the determinant"
+    },
+    {
+      "name": "fixed_rank_one_control_d16",
+      "pass": true,
+      "detail": "Growing an uncoupled ambient space does not grow the determinant"
+    },
+    {
+      "name": "fixed_hilbert_schmidt_control_d1",
+      "pass": true,
+      "detail": {
+        "minus_log_norm": "0.000122085216086957228347732709190716821533234033489059593843947285255679707490720852880687104",
+        "lower": "0.0001220703125",
+        "upper": "0.000122100122100122100122100122100122100122100122100122100122100122100122100122100122100122100"
+      }
+    },
+    {
+      "name": "fixed_hilbert_schmidt_control_d4",
+      "pass": true,
+      "detail": {
+        "minus_log_norm": "0.000122074037941887851442284859613635952932028826365855711750652979943957495110470649967410899",
+        "lower": "0.0001220703125",
+        "upper": "0.000122077763535372031984374046267472379906000122077763535372031984374046267472379906000122078"
+      }
+    },
+    {
+      "name": "fixed_hilbert_schmidt_control_d16",
+      "pass": true,
+      "detail": {
+        "minus_log_norm": "0.000122071243832048627043524381838062655859168801018135545442901465567281332489286105857528589",
+        "lower": "0.0001220703125",
+        "upper": "0.000122072175173571374074921797512779430838483253223468375677119096665903715571831845578698405"
+      }
+    },
+    {
+      "name": "fixed_hilbert_schmidt_control_d64",
+      "pass": true,
+      "detail": {
+        "minus_log_norm": "0.000122070545331235774510166720808756394045096440273516003453646718072801978052176209485320188",
+        "lower": "0.0001220703125",
+        "upper": "0.000122070778163063671354947490491830794642618723368543123409742011039776000122070778163063671"
+      }
+    },
+    {
+      "name": "fixed_hilbert_schmidt_control_d256",
+      "pass": true,
+      "detail": {
+        "minus_log_norm": "0.000122070370707697920928031198243732896405379585204001159856821310273771971118685714732571850",
+        "lower": "0.0001220703125",
+        "upper": "0.000122070428915432849343156188160122070428915432849343156188160122070428915432849343156188160"
+      }
+    },
+    {
+      "name": "rectangular_schur_identity_0",
+      "pass": true,
+      "detail": {
+        "shape": [
+          2,
+          3
+        ],
+        "det": "654195801/655360000"
+      }
+    },
+    {
+      "name": "positive_precision_frobenius_control_0",
+      "pass": true,
+      "detail": {
+        "hilbert_schmidt_squared": "4549/2560000"
+      }
+    },
+    {
+      "name": "dimension_aware_determinant_bounds_0",
+      "pass": true,
+      "detail": {
+        "lower": "0.0008884765625",
+        "value": "0.00088900320689669425673172182512997219848793748453425562160059187476268470575952192665953916",
+        "upper": "0.000890058154118392409011168674335763041435738740441511107041379388608899172787895365632133036"
+      }
+    },
+    {
+      "name": "rectangular_schur_identity_1",
+      "pass": true,
+      "detail": {
+        "shape": [
+          3,
+          1
+        ],
+        "det": "3551/3600"
+      }
+    },
+    {
+      "name": "positive_precision_frobenius_control_1",
+      "pass": true,
+      "detail": {
+        "hilbert_schmidt_squared": "49/3600"
+      }
+    },
+    {
+      "name": "dimension_aware_determinant_bounds_1",
+      "pass": true,
+      "detail": {
+        "lower": "0.00680555555555555555555555555555555555555555555555555555555555555555555555555555555555555556",
+        "value": "0.0068522957505567379231982453686762198606368527452212117957454437018239551298677851286892207",
+        "upper": "0.00689946493945367502112081103914390312588003379329766263024500140805406927626020839200225289"
+      }
+    },
+    {
+      "name": "rectangular_schur_identity_2",
+      "pass": true,
+      "detail": {
+        "shape": [
+          3,
+          2
+        ],
+        "det": "1"
+      }
+    },
+    {
+      "name": "positive_precision_frobenius_control_2",
+      "pass": true,
+      "detail": {
+        "hilbert_schmidt_squared": "0"
+      }
+    },
+    {
+      "name": "dimension_aware_determinant_bounds_2",
+      "pass": true,
+      "detail": {
+        "lower": "0",
+        "value": "0",
+        "upper": "0"
+      }
+    },
+    {
+      "name": "normalizer_source_first_d1",
+      "pass": true,
+      "detail": {
+        "exact": "-64/4095",
+        "finite_difference": "-0.0156288156288156288156288156288156288312665378083552366195513307524888401095"
+      }
+    },
+    {
+      "name": "normalizer_source_second_d1",
+      "pass": true,
+      "detail": {
+        "exact": "-16781312/16769025",
+        "finite_difference": "-1.000732720000119267518534917802317070217558862422272103801"
+      }
+    },
+    {
+      "name": "mutation_discard_source_scalar_rejected_d1",
+      "pass": true,
+      "detail": "Removing the parameter-dependent determinant deletes nonzero responses"
+    },
+    {
+      "name": "normalizer_source_first_d17",
+      "pass": true,
+      "detail": {
+        "exact": "-1088/4095",
+        "finite_difference": "-0.26568986568986568986568986568986569013153114274203902253237262279231028186"
+      }
+    },
+    {
+      "name": "normalizer_source_second_d17",
+      "pass": true,
+      "detail": {
+        "exact": "-285282304/16769025",
+        "finite_difference": "-17.01245624000202754781509360263939019369850066117862576462"
+      }
+    },
+    {
+      "name": "mutation_discard_source_scalar_rejected_d17",
+      "pass": true,
+      "detail": "Removing the parameter-dependent determinant deletes nonzero responses"
+    },
+    {
+      "name": "normalizer_source_first_d4096",
+      "pass": true,
+      "detail": {
+        "exact": "-262144/4095",
+        "finite_difference": "-64.0156288156288156288156288156288156928677388630230491936822507621942890875"
+      }
+    },
+    {
+      "name": "normalizer_source_second_d4096",
+      "pass": true,
+      "detail": {
+        "exact": "-68736253952/16769025",
+        "finite_difference": "-4099.001221120488519755919023318290719611121100481626537165"
+      }
+    },
+    {
+      "name": "mutation_discard_source_scalar_rejected_d4096",
+      "pass": true,
+      "detail": "Removing the parameter-dependent determinant deletes nonzero responses"
+    },
+    {
+      "name": "separated_grid_q2",
+      "pass": true,
+      "detail": {
+        "pivots": 16,
+        "diameter": 48,
+        "metric_mst": 180,
+        "ratio": "4/15"
+      }
+    },
+    {
+      "name": "separated_grid_q3",
+      "pass": true,
+      "detail": {
+        "pivots": 81,
+        "diameter": 96,
+        "metric_mst": 960,
+        "ratio": "1/10"
+      }
+    },
+    {
+      "name": "mutation_diameter_linear_pivot_charge_rejected_q3",
+      "pass": true,
+      "detail": "Even the candidate constant c=1/2 fails; the formula proves failure for every fixed c"
+    },
+    {
+      "name": "separated_grid_q5",
+      "pass": true,
+      "detail": {
+        "pivots": 625,
+        "diameter": 192,
+        "metric_mst": 7488,
+        "ratio": "1/39"
+      }
+    },
+    {
+      "name": "mutation_diameter_linear_pivot_charge_rejected_q5",
+      "pass": true,
+      "detail": "Even the candidate constant c=1/2 fails; the formula proves failure for every fixed c"
+    },
+    {
+      "name": "separated_grid_q9",
+      "pass": true,
+      "detail": {
+        "pivots": 6561,
+        "diameter": 384,
+        "metric_mst": 78720,
+        "ratio": "1/205"
+      }
+    },
+    {
+      "name": "mutation_diameter_linear_pivot_charge_rejected_q9",
+      "pass": true,
+      "detail": "Even the candidate constant c=1/2 fails; the formula proves failure for every fixed c"
+    },
+    {
+      "name": "single_path_geometry_control_n2",
+      "pass": true,
+      "detail": "The linear lower bound is valid for pivots on one straight path"
+    },
+    {
+      "name": "single_path_geometry_control_n7",
+      "pass": true,
+      "detail": "The linear lower bound is valid for pivots on one straight path"
+    },
+    {
+      "name": "single_path_geometry_control_n31",
+      "pass": true,
+      "detail": "The linear lower bound is valid for pivots on one straight path"
+    },
+    {
+      "name": "finite_haar_density_normalized",
+      "pass": true,
+      "detail": {
+        "probabilities": [
+          "7/15",
+          "1/3",
+          "1/5"
+        ],
+        "epsilon": "1/5"
+      }
+    },
+    {
+      "name": "finite_haar_centering",
+      "pass": true,
+      "detail": "The distinguished factor is Haar-centered"
+    },
+    {
+      "name": "finite_haar_product_cancellation_n1",
+      "pass": true,
+      "detail": {
+        "expectation": "-4/15",
+        "minorization_bound": "4/5"
+      }
+    },
+    {
+      "name": "finite_haar_product_cancellation_n2",
+      "pass": true,
+      "detail": {
+        "expectation": "16/225",
+        "minorization_bound": "16/25"
+      }
+    },
+    {
+      "name": "finite_haar_product_cancellation_n4",
+      "pass": true,
+      "detail": {
+        "expectation": "256/50625",
+        "minorization_bound": "256/625"
+      }
+    }
+  ],
+  "passed": 79,
+  "total": 79,
+  "all_passed": true
+}

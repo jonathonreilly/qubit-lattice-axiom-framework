@@ -1,0 +1,50 @@
+{
+  "schema": "source-history-author-exact-v1",
+  "claim_scope": "Finite rational fixture and formal graph checks; not a proof of YM sea averaging or physical mass gap",
+  "checks": {
+    "all_local_zero_source_denominators_positive": true,
+    "collections_biject_bad_sets": true,
+    "disjoint_collars_for_compatible_components": true,
+    "direct_raw_sum_equals_compensated_return": true,
+    "all_failure_history_integrals_match": true,
+    "failure_histories_partition_full_raw_integral": true,
+    "zero_mass_histories_retained_as_zero": true,
+    "joint_hard_history_replacement_matches": true,
+    "merging_overlapping_replacements_preserves_selector": true,
+    "zero_complex_history_numerator_allowed": true,
+    "density_factor_allocation_covers_once": true,
+    "source_stencils_inside_actual_collars": true,
+    "log_gas_matches_connected_graphs_through_degree_four": true,
+    "all_cluster_unions_connected": true,
+    "remote_source_connector_coefficient": true,
+    "boundary_cluster_cancellation_exact": true,
+    "crossing_clusters_meet_inner_boundary": true,
+    "explicit_root_threshold_nonempty": true,
+    "geometric_animal_majorant_matches_partial_sum": true
+  },
+  "negative_controls": {
+    "remove_compensator_rejected": true,
+    "wrong_frozen_boundary_reference_rejected": true,
+    "drop_local_kernel_normalizer_rejected": true,
+    "drop_external_source_only_factor_rejected": true,
+    "drop_reference_vacuum_factor_rejected": true,
+    "dropping_failure_complement_rejected": true,
+    "read_history_on_sea_instead_of_replaced_links_rejected": true,
+    "correlated_history_replaced_by_product_event_rejected": true,
+    "overlapping_unmerged_collar_selector_control": true,
+    "drop_remote_connector_rejected": true,
+    "drop_boundary_polymers_rejected": true
+  },
+  "counts": {
+    "checks": 19,
+    "negative_controls": 11
+  },
+  "states": 256,
+  "sea_states": 16,
+  "compatible_collections": 16,
+  "raw_integral_exact_digest": "809421879a5dffc4994547690eeeb89ae7fc255f4e981aa6db8073ed05d4aa99",
+  "history_integral_exact_digest": "4a0b188d5e0f5442e561e3a030c31ed0103f3ae125145d88d56c7c2eb270f052",
+  "source_sha256": "eca92bf02404426589b6f222fb33f11bb59d5394c1604530613d08564d3570fa",
+  "elapsed_seconds": 0.5534516669576988,
+  "all_pass": true
+}

@@ -1,0 +1,54 @@
+{
+  "bytes": 26224,
+  "changes": [
+    {
+      "new_range": [
+        4,
+        5
+      ],
+      "old_range": [
+        4,
+        3
+      ],
+      "tag": "insert",
+      "text": "\nThe load-bearing local sources are the [frozen harmonic lattice bridge](residual_det_lattice_bridge_working.md), the [finite/model determinant construction](../RESIDUAL_DETERMINANT_ASTRA.md), the [actual root-sector residual definition](../UIR2_55.md), the [normalized flow conventions](../FLOW55.md), and the [actual contour/action definitions](../PROOF.md). The [harmonic-bridge review](../REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md) confirms only its stated finite/free input; it does not review the new vertices below.\n"
+    }
+  ],
+  "dependency_links": [
+    {
+      "exists": true,
+      "link": "residual_det_lattice_bridge_working.md",
+      "resolved": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_lattice_bridge_working.md"
+    },
+    {
+      "exists": true,
+      "link": "../RESIDUAL_DETERMINANT_ASTRA.md",
+      "resolved": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "exists": true,
+      "link": "../UIR2_55.md",
+      "resolved": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md"
+    },
+    {
+      "exists": true,
+      "link": "../FLOW55.md",
+      "resolved": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md"
+    },
+    {
+      "exists": true,
+      "link": "../PROOF.md",
+      "resolved": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md"
+    },
+    {
+      "exists": true,
+      "link": "../REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md",
+      "resolved": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md"
+    }
+  ],
+  "lines": 257,
+  "original_commit": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+  "original_sha256": "8a7c87c9b737ee88372eb985189bcd0e25440986868cc8d92062b84f6cb92cd1",
+  "packaged_sha256": "aa16239e801d371c7242a342b339ed5dfeec8fa75f5dd8a3ac3a128a84989d56",
+  "scope": "Exactly one inserted dependency paragraph; no mathematical byte changed. Resolving targets is a link check, not new source certification."
+}

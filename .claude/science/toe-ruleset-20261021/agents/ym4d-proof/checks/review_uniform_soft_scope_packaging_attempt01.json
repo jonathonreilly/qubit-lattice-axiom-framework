@@ -1,0 +1,13 @@
+{
+  "kind": "reviewer_packaging_check_failure",
+  "exit_code": 1,
+  "error_type": "AssertionError",
+  "observed_tuple": [
+    "checks/review_uniform_soft_scope_review.md",
+    "-log K_t"
+  ],
+  "cause": "A regex link checker interpreted the inline code expression [epsilon^2](-log K_t) as a Markdown link.",
+  "repair": "Exclude fenced and inline code before checking Markdown link targets. No mathematical or numerical change.",
+  "preservation": "Recorded from tool transcript; this is event metadata, not a reconstructed raw stderr stream.",
+  "diagnostic_program_affected": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "phase": "immutable_source_only_freeze",
+  "frozen_at_utc": "2026-10-30T14:02:01.126999+00:00",
+  "author_packet_opened": false,
+  "source_count": 16,
+  "process_count": 21,
+  "mathematical_findings": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_source_findings.md",
+    "sha256": "d9cc0fcd2cc7969535fcf95cb8dccc68429a99cd77fefaa2feaa958eae1ae435",
+    "line_count": 55,
+    "bytes": 10706,
+    "kind": "freeze_artifact",
+    "consumed_line_windows": [
+      [
+        1,
+        55
+      ]
+    ],
+    "scope": "Frozen before author packet",
+    "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+    "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_source_findings.md",
+    "matches_head_bytes": null,
+    "head_blob": null
+  },
+  "read_manifest": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_source_read_manifest.json",
+    "sha256": "cd3ac896e247178b61b278d141ed7276df45c7a85159fe2f36f28fcc787d082a",
+    "line_count": 851,
+    "bytes": 37645,
+    "kind": "freeze_artifact",
+    "consumed_line_windows": [],
+    "scope": "Frozen source and governing identity/read inventory",
+    "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+    "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_source_read_manifest.json",
+    "matches_head_bytes": null,
+    "head_blob": null
+  },
+  "target": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+    "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+    "line_count": 583,
+    "bytes": 30430,
+    "kind": "source_full",
+    "consumed_line_windows": [
+      [
+        1,
+        583
+      ]
+    ],
+    "scope": "Entire new target, read before any author packet or prior review.",
+    "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+    "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+    "matches_head_bytes": true,
+    "head_blob": "310d6c00892f33ac2ff0ffbcf745b6c2ed0230b5"
+  }
+}

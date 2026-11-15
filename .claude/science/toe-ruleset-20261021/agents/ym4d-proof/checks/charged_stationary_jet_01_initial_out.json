@@ -1,0 +1,382 @@
+{
+  "scope": "finite actual normalized SU2 S4-prime tree phase; author check",
+  "checks": [
+    {
+      "name": "all_actual_paths_count",
+      "value": 0.0,
+      "bound": 0.0,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "root_covariance",
+      "value": 2.6645352591003757e-15,
+      "bound": 1e-12,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "reject_deleted_endpoint",
+      "value": 0.9876543209876543,
+      "bound": 0.001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_divisor",
+      "value": 1.9999999999999925,
+      "bound": 0.001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "curl_gradient",
+      "value": 0.0,
+      "bound": 1e-12,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 1.850852071815452e-13,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 1.9756202398220676e-13,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 6.02234207486395e-14,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_slice_gauge",
+      "value": 1.0918349557798024e-14,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "BCH_cubic_same_source",
+      "value": 1.3877787807814457e-15,
+      "bound": 1e-10,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "hidden_source_annihilates_rootzero_gauge",
+      "value": 7.743805596760467e-15,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 1.7651118212329737e-13,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 8.546337142335738e-14,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 1.848727706660635e-13,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "noncommuting_exchange_nonzero",
+      "value": 0.8954898046602893,
+      "bound": 0.0005,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "noncommuting_source_nonzero",
+      "value": 1.7152530859671928,
+      "bound": 0.001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "exact_group_stationary_quartic",
+      "value": 5.7269875730625586e-08,
+      "bound": 9.851831329214863e-05,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "reject_exchange_omitted",
+      "value": 0.8954897473904135,
+      "bound": 0.0009851831329214863,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "reject_exchange_opposite_sign",
+      "value": 1.7909795520507028,
+      "bound": 0.0009851831329214863,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "reject_exchange_lost_half",
+      "value": 0.895489861930165,
+      "bound": 0.0009851831329214863,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "second_current_covariant_divergence",
+      "value": 1.73749903353837e-14,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "reject_second_current_ordinary_coclosed",
+      "value": 1.2692090879126354,
+      "bound": 0.0001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "reject_current_bracket_sign",
+      "value": 2.538418175825286,
+      "bound": 0.0001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "uncorrected_second_current_funnel_nonzero",
+      "value": 0.15669247998921373,
+      "bound": 1e-05,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "actual_hidden_hessian_null",
+      "value": 9.048600559653375e-17,
+      "bound": 1e-10,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "reject_invert_null_identity",
+      "value": 8.0,
+      "bound": 0.001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "reject_rescaled_counting_adjoint",
+      "value": 0.42918147210404217,
+      "bound": 0.001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 0.0,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 0.0,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "linear_solve",
+      "value": 6.02234207486395e-14,
+      "bound": 1e-09,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "cartan_cubic_source_zero",
+      "value": 0.0,
+      "bound": 1e-10,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "constant_mean_BCH2_zero",
+      "value": 2.1844665993782016e-18,
+      "bound": 1e-12,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "constant_individual_BCH2_nonzero",
+      "value": 0.20000000000000004,
+      "bound": 0.001,
+      "direction": "gt",
+      "passed": true
+    },
+    {
+      "name": "constant_residual_zero",
+      "value": 1.3933298959045715e-14,
+      "bound": 1e-12,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "constant_cubic_source_zero",
+      "value": 7.696291994028118e-18,
+      "bound": 1e-10,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "constant_soft_quartic_zero",
+      "value": 6.7564092181087e-15,
+      "bound": 1e-10,
+      "direction": "le",
+      "passed": true
+    },
+    {
+      "name": "reject_constant_endpoint_mutation",
+      "value": 1.76506328985706e-18,
+      "bound": 0.0001,
+      "direction": "gt",
+      "passed": false
+    }
+  ],
+  "passed": 36,
+  "total": 37,
+  "details": {
+    "geometry": {
+      "d": 4,
+      "L": 3,
+      "T": 2,
+      "finest_side": 6,
+      "fine_edges": 5184,
+      "top_edges": 64,
+      "paths": 124416,
+      "paths_per_link": 1944,
+      "max_length": 11,
+      "plaquettes": 7776,
+      "gauge_columns": 1280
+    },
+    "coefficients": {
+      "F2": 18.57310436529984,
+      "F3": -0.32532704487485753,
+      "F4": -1.0748764611826833,
+      "wilson4": 0.5566868049054614,
+      "soft4": -1.6315632660881447,
+      "soft_square": 0.26324207692425605
+    },
+    "cubic": {
+      "wilson": -0.014345095453149641,
+      "soft": -0.31098194942170926,
+      "total": -0.3253270448748589
+    },
+    "exchange": 0.8954898046602893,
+    "stationary_quartic": -1.9703662658429726,
+    "exact_group_samples": [
+      {
+        "epsilon": 0.08,
+        "plus": 0.1186202235524817,
+        "minus": 0.11895429596026763,
+        "quartic_estimate": -1.9679731822343054
+      },
+      {
+        "epsilon": 0.04,
+        "plus": 0.029691088761977014,
+        "minus": 0.02973275999543723,
+        "quartic_estimate": -1.9697678799309672
+      },
+      {
+        "epsilon": 0.02,
+        "plus": 0.007426323435866911,
+        "minus": 0.00743152958705251,
+        "quartic_estimate": -1.9702166264125645
+      }
+    ],
+    "richardson": -1.9703662085730969,
+    "current": {
+      "max_divergence": 1.2692090879126354,
+      "max_commutator": 1.2692090879126507,
+      "funnel_max": 0.15669247998921373
+    },
+    "constant_control": {
+      "coefficients": {
+        "F2": 4.810227666190837e-27,
+        "F3": -2.697841949839133e-16,
+        "F4": 3.504800000000006,
+        "wilson4": 3.5047999999999995,
+        "soft4": 6.7564092181087e-15,
+        "soft_square": 1.2575742546514588e-34
+      },
+      "source_norm": 1.5642749424375878e-16,
+      "individual_BCH2_max": 0.20000000000000004
+    },
+    "solves": [
+      {
+        "info": 0,
+        "iterations": 49,
+        "relative_residual": 1.850852071815452e-13
+      },
+      {
+        "info": 0,
+        "iterations": 49,
+        "relative_residual": 1.9756202398220676e-13
+      },
+      {
+        "info": 0,
+        "iterations": 50,
+        "relative_residual": 6.02234207486395e-14
+      },
+      {
+        "info": 0,
+        "iterations": 57,
+        "relative_residual": 1.7651118212329737e-13
+      },
+      {
+        "info": 0,
+        "iterations": 58,
+        "relative_residual": 8.546337142335738e-14
+      },
+      {
+        "info": 0,
+        "iterations": 57,
+        "relative_residual": 1.848727706660635e-13
+      },
+      {
+        "info": 0,
+        "iterations": 0,
+        "relative_residual": 0.0
+      },
+      {
+        "info": 0,
+        "iterations": 0,
+        "relative_residual": 0.0
+      },
+      {
+        "info": 0,
+        "iterations": 50,
+        "relative_residual": 6.02234207486395e-14
+      }
+    ]
+  },
+  "elapsed_seconds": 4.011653184890747
+}

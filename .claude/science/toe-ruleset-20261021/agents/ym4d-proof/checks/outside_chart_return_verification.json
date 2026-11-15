@@ -1,0 +1,86 @@
+{
+  "CC_CS_owned_records_verified": 64,
+  "CC_CS_receipts_verified": 4,
+  "GC_author_current_non_source_files_verified_including_receipt": 7,
+  "GC_fresh_review_owned_records_verified": 8,
+  "GC_historical_source_reconstructed_exactly": true,
+  "created_utc": "2026-10-30T01:09:26.266380+00:00",
+  "current_input_pins_verified": 23,
+  "equation_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "link_note": "Receipt target is the only intentionally pending link at this stage; the script checks actual existence after writing the receipt.",
+  "methodology_pins_verified": 27,
+  "scientific_numerical_runs": 0,
+  "scope": "Mechanical identity/text evidence only; no independent proof verdict or numerical validation.",
+  "source": {
+    "bytes": 32868,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+    "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4"
+  },
+  "source_freeze_matches": true,
+  "source_lines": 641,
+  "source_relative_links": [
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "line": 41,
+      "pre_receipt_exists": true,
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "line": 636,
+      "pre_receipt_exists": true,
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "line": 638,
+      "pre_receipt_exists": true,
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/outside_chart_return_routes.md"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "line": 639,
+      "pre_receipt_exists": true,
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/outside_chart_return_read_manifest.json"
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "line": 640,
+      "pre_receipt_exists": false,
+      "target": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/outside_chart_return_receipt.json"
+    }
+  ]
+}

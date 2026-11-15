@@ -1,0 +1,256 @@
+{
+  "schema": "review-source-read-coverage-v1",
+  "created_utc": "2026-10-30T12:20:43.005561+00:00",
+  "reviewer_task": "/root/review_bare_cut_white_assembly",
+  "requested_configuration": "gpt-6-astra / max, as stated in parent assignment; no backend attestation",
+  "workspace_head": "67562ae7ad9ba545cb180827a252ab10de211112",
+  "local_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+  "freshness_note": "Explicit frozen candidate source review. No fetch, checkout, commit, push, PR or audit operation performed. Working-file hashes control the source identity; HEAD is context only.",
+  "source_first": {
+    "target_author_packets_opened": false,
+    "prior_reviews_opened": false,
+    "root_status_or_receipts_opened": false,
+    "note": "Incidental author provenance prose inside the required mathematics was seen but supplied no verdict or estimate."
+  },
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "line_count": 443,
+      "coverage": "full",
+      "read_windows_1_based_inclusive": [
+        [
+          1,
+          443
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "line_count": 734,
+      "coverage": "full",
+      "read_windows_1_based_inclusive": [
+        [
+          1,
+          734
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "line_count": 787,
+      "coverage": "full",
+      "read_windows_1_based_inclusive": [
+        [
+          1,
+          787
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "line_count": 747,
+      "coverage": "full",
+      "read_windows_1_based_inclusive": [
+        [
+          1,
+          747
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "line_count": 937,
+      "coverage": "full",
+      "read_windows_1_based_inclusive": [
+        [
+          1,
+          937
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          32,
+          592
+        ]
+      ],
+      "purpose": "Actual phase, common R, regional force, complex core, both tails and actual-data agreement."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          36,
+          510
+        ]
+      ],
+      "purpose": "Actual transported chart, full prefactor, contour hypotheses, precise RC13 budget and canonical coefficient agreement."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          25,
+          549
+        ]
+      ],
+      "purpose": "Scalar normalized contours, polynomial-only tail comparison, full precision forest, moment factorials and source-independent radius."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "line_count": 590,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          12,
+          387
+        ]
+      ],
+      "purpose": "Independent paired-mean zero-free branch, full compact-cycle translation, actual finite-u normalization and fine/coarse domain matching."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "line_count": 692,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          75,
+          232
+        ]
+      ],
+      "purpose": "Ordered Bell-polynomial positive integral calculus and polynomial-in-u rough-normalizer derivative cost."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          38,
+          203
+        ]
+      ],
+      "purpose": "Original cut, exact density/modes, q-good buffer, shell and source-independent charge constants."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "line_count": 591,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          197,
+          434
+        ]
+      ],
+      "purpose": "Actual transported Schur complement with fixed physical boundary, fixed positive source debit and one energy ledger."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "line_count": 753,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          37,
+          703
+        ]
+      ],
+      "purpose": "Actual compact/chart ratio, hard buffers, full-block normalized density forest, rare-root retention and charged logarithm."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          87,
+          163
+        ]
+      ],
+      "purpose": "Complex moving core, principal inverse envelopes and R-independent tail tuning."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          27,
+          103
+        ],
+        [
+          187,
+          315
+        ],
+        [
+          508,
+          571
+        ]
+      ],
+      "purpose": "Original source-free critical white scalar cube, old branch bounds and literal real good-event margins."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "line_count": 631,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          35,
+          96
+        ],
+        [
+          190,
+          291
+        ],
+        [
+          461,
+          552
+        ]
+      ],
+      "purpose": "Real white/chart identity, common-cube branch equality and determinant/Haar normalization."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "line_count": 649,
+      "coverage": "bounded",
+      "read_windows_1_based_inclusive": [
+        [
+          71,
+          181
+        ],
+        [
+          260,
+          415
+        ]
+      ],
+      "purpose": "Actual separate (6,4) norm, full source labels, joint-reference requirement and two support-loss consumer."
+    }
+  ],
+  "external_literature_reads": [],
+  "external_literature_note": "No new external theorem imported or web literature consulted. Background citations in suppliers were not treated as proof.",
+  "coverage_limit": "Only the five named target/primary files were read in full. The other entries are bounded actual mathematical source reads, not claims of full predecessor or entire dependency-DAG review. Truncated output windows were reread for the claimed coverage."
+}

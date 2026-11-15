@@ -1,0 +1,17 @@
+c38 run record (session 22; criteria checks/c38_criteria.md mtime 2026-10-28 03:45:12 UTC, stat'ed into LOG before the
+script; script c38_cubic.py first written after it (03:46-03:51 UTC); first run 03:52:19 UTC; outputs c38{A,B,C,D}.out,
+per-part .out.time).
+Pre-run edit to the script (disclosed; no criterion touched): before the first run, the fibre dictionaries were made to
+drop the 486 x 324 d-fibre and the Q-fibre unless requested (memory at T = 5); a dead line in Torus.gl was removed.
+Post-run addition (disclosed): Part D, a POST-HOC diagnostic added at 03:56:52 UTC after reading B's FAIL; it is not a
+criterion and does not change B's verdict.
+Runner (scratchpad s22/run38.sh): `until mkdir …/locks/numeric; do sleep 20; done`, wait for load1 < 8 and memory free
+>= 25%, nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, PYTHONDONTWRITEBYTECODE=1, /usr/bin/time -l, rmdir exactly once (no
+trap); no `timeout`; python without -I. One lock acquisition per invocation: (A); (C, B); (D).
+A  03:52:19-03:52:24  load1 4.39  free 44%    5 s   peak footprint 612 MB   PASS
+C  03:52:54-03:52:57  load1 4.22  free 49%    3 s   peak footprint  84 MB   informational (prediction met)
+B  03:52:57-03:55:04  load1 4.12  free 44%  127 s   peak footprint 942 MB   FAIL (torus stability; criterion pre-registered)
+D  03:57:31-03:59:06  load1 5.30  free 38%   96 s   peak footprint 904 MB   post-hoc diagnostic
+All peaks < 1 GB; all jobs < 20 min.
+Note: a python process `rdiag.py T 252,482 4,6,8` (not this lane's; started 22:55 EDT) was running throughout without the
+numeric lock, at ~93% of one core.

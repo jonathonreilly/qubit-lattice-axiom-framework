@@ -1,0 +1,30 @@
+A: A_1=9.7201 C_*=12.9601 delta_*=9.734e-16
+A g=0.05: E[1-P]=9.373534e-04 E/g^2=0.37494 bound=1.217e-18 A1=True P(1-P<d*g^2)=1.828e-22 A2=True
+A3 (expectation) |E/g^2-3/8|=0.0001 -> True
+A g=0.1: E[1-P]=3.747650e-03 E/g^2=0.37477 bound=4.867e-18 A1=True P(1-P<d*g^2)=1.829e-22 A2=True
+A g=0.2: E[1-P]=1.496212e-02 E/g^2=0.37405 bound=1.947e-17 A1=True P(1-P<d*g^2)=1.834e-22 A2=True
+A g=0.3: E[1-P]=3.355575e-02 E/g^2=0.37284 bound=4.380e-17 A1=True P(1-P<d*g^2)=1.843e-22 A2=True
+A g=0.5: E[1-P]=9.218515e-02 E/g^2=0.36874 bound=1.217e-16 A1=True P(1-P<d*g^2)=1.872e-22 A2=True
+A4 g=0.1 r=0.05 s/g=0.25: nu(TuS)=8.8291e-05 nu(S)=9.3979e-05 ratio=9.3947e-01 c_s=4.449e-01 relerr=1.9e-11 -> True
+A4 g=0.1 r=0.05 s/g=0.50: nu(TuS)=7.3211e-05 nu(S)=9.3979e-05 ratio=7.7902e-01 c_s=3.916e-02 relerr=1.9e-11 -> True
+A4 g=0.1 r=0.05 s/g=1.00: nu(TuS)=3.4622e-05 nu(S)=9.3979e-05 ratio=3.6840e-01 c_s=2.352e-06 relerr=1.9e-11 -> True
+A4 g=0.1 r=0.15 s/g=0.25: nu(TuS)=2.3566e-03 nu(S)=2.5072e-03 ratio=9.3994e-01 c_s=4.449e-01 relerr=1.8e-11 -> True
+A4 g=0.1 r=0.15 s/g=0.50: nu(TuS)=1.9570e-03 nu(S)=2.5072e-03 ratio=7.8058e-01 c_s=3.916e-02 relerr=1.8e-11 -> True
+A4 g=0.1 r=0.15 s/g=1.00: nu(TuS)=9.3105e-04 nu(S)=2.5072e-03 ratio=3.7135e-01 c_s=2.352e-06 relerr=1.8e-11 -> True
+A4 g=0.3 r=0.05 s/g=0.25: nu(TuS)=8.8964e-05 nu(S)=9.4695e-05 ratio=9.3949e-01 c_s=4.449e-01 relerr=1.9e-11 -> True
+A4 g=0.3 r=0.05 s/g=0.50: nu(TuS)=7.3785e-05 nu(S)=9.4695e-05 ratio=7.7918e-01 c_s=3.916e-02 relerr=1.9e-11 -> True
+A4 g=0.3 r=0.05 s/g=1.00: nu(TuS)=3.5003e-05 nu(S)=9.4695e-05 ratio=3.6964e-01 c_s=2.352e-06 relerr=1.9e-11 -> True
+A4 g=0.3 r=0.15 s/g=0.25: nu(TuS)=2.3745e-03 nu(S)=2.5261e-03 ratio=9.3997e-01 c_s=4.449e-01 relerr=1.8e-11 -> True
+A4 g=0.3 r=0.15 s/g=0.50: nu(TuS)=1.9724e-03 nu(S)=2.5261e-03 ratio=7.8079e-01 c_s=3.916e-02 relerr=1.8e-11 -> True
+A4 g=0.3 r=0.15 s/g=1.00: nu(TuS)=9.4136e-04 nu(S)=2.5261e-03 ratio=3.7265e-01 c_s=2.352e-06 relerr=1.8e-11 -> True
+Pass A: True
+B r=1 (1,2) perp-shift: ||psi0||^2=0.49520 ||Pi_ex psi0||^2=0.14353 B2=True | V(1)=5.9976e-02 (4w=1.333e+00) max V/(4w)=0.0546 B1=True
+B r=1 (0,1) in-plane shift: ||psi0||^2=0.49520 ||Pi_ex psi0||^2=0.14353 B2=True | V(1)=9.6403e-02 (4w=1.333e+00) max V/(4w)=0.0929 B1=True
+B r=2 (1,2) perp-shift: ||psi0||^2=0.44995 ||Pi_ex psi0||^2=0.10892 B2=True | V(1)=6.5126e-03 (4w=4.444e-01) max V/(4w)=0.0400 B1=True
+B r=2 (0,1) in-plane shift: ||psi0||^2=0.44995 ||Pi_ex psi0||^2=0.10892 B2=True | V(1)=1.0050e-02 (4w=4.444e-01) max V/(4w)=0.0710 B1=True
+B r=3 (1,2) perp-shift: ||psi0||^2=0.44505 ||Pi_ex psi0||^2=0.10481 B2=True | V(1)=7.2243e-04 (4w=1.481e-01) max V/(4w)=0.0381 B1=True
+B r=3 (0,1) in-plane shift: ||psi0||^2=0.44505 ||Pi_ex psi0||^2=0.10481 B2=True | V(1)=1.1078e-03 (4w=1.481e-01) max V/(4w)=0.0684 B1=True
+Pass B: True
+B3 (1,2) perp-shift: (a) one-step V(1)/Var0=0.418 -> True; (b) V(j=1) r=1,2,3: 5.998e-02,6.513e-03,7.224e-04 -> True; (c) w=1/3: r=2 3.9931e-02, r=3 3.7363e-02 -> True
+B3 (0,1) in-plane shift: (a) one-step V(1)/Var0=0.672 -> True; (b) V(j=1) r=1,2,3: 9.640e-02,1.005e-02,1.108e-03 -> True; (c) w=1/3: r=2 6.7916e-02, r=3 6.4581e-02 -> True
+PASS A_ok= True B_ok= True

@@ -1,0 +1,64 @@
+{
+  "schema": "marked_compact_chart_author_receipt_v1",
+  "status": "author_proposition_frozen_pending_different_fresh_source_first_review",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+    "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+    "lines": 753
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/marked_compact_chart_read_manifest.json",
+    "sha256": "7d78a27ce53c0112dcee91d40c714c5147e0210e3077b793aeffab2b8d2e3503",
+    "lines": 92
+  },
+  "source_frozen_before_packet": true,
+  "configured_worker_provenance": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "source": "Explicit parent assignment in the human-authorized Astra/max worker context; no independent backend-attestation claim.",
+    "author_identity": "/root/source_local_compact_return",
+    "same_family_disclosure": "Codex author; a different Codex reviewer is independent in authorship but same-family."
+  },
+  "author_results": [
+    "MK1–MK12: same original cut and exact common critical prefactor; real-buffer contour identity with full-block activation, side/bad exclusion, ternary owner flags and principal covariance.",
+    "MK13–MK29: complete original-reader density forest for bounded measurable real-buffer roots, all scalar factorials and covariance tails; marked bulk translation retains its rare group before the full summed b-reader norm.",
+    "MK30–MK31: explicit one-use payment of u delta^2 buffer cost from c u q n_g/8 of the retained c u q n_g/2 reserve, plus full buffer dimension/normalization/polynomial/reader costs.",
+    "MK32–MK35: two charged rescalings and common canonical no-mark indexing; original-cut nonvanishing and connected log relative to the actual original-a chart at fixed real Vbar and complex original sources.",
+    "MK36–MK39: nonempty shrinking regime delta^2=c_delta q/K^4; rare complete-reader norm exp[-c N c_q p^2/32], uniform in T, and fixed-order original-source derivatives."
+  ],
+  "open_interfaces": [
+    "Original white Omega reference and separate original G-minus-Omega/G-complement estimates.",
+    "Complex coarse transport of the actual original cut/sector; no wider tube or corresponding coarse derivative class.",
+    "Inherited/future-conditioned histories and effective iteration.",
+    "Full non-free continuum existence.",
+    "Positive physical continuum mass gap."
+  ],
+  "administrative_checks": {
+    "equation_definitions": "Exactly MK1–MK39, each once and in order.",
+    "local_markdown_links_exist": true,
+    "frozen_source_hash_verified": true,
+    "full_final_source_self_read": true,
+    "protected_supplier_hashes_verified": {
+      "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "COMPACT_RETURN_GLUING_ASTRA.md": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "MIXED_CAP_CHART_ASTRA.md": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+      "REGIONAL_CRITICAL_FIELD_ASTRA.md": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "REGIONAL_CHART_RETURN_ASTRA.md": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "NONLINEAR_CHART_ACTIVITY_ASTRA.md": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "NONLINEAR_READER_RETURN_ASTRA.md": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b"
+    },
+    "no_automated_proof_check_claim": true
+  },
+  "science_numerical_runs": 0,
+  "mutations": {
+    "authorized_files_only": [
+      "MARKED_COMPACT_CHART_ASTRA.md",
+      "checks/marked_compact_chart_read_manifest.json",
+      "checks/marked_compact_chart_receipt.json"
+    ],
+    "git_pr_shared_front_predecessor_audit_ledger_edits": false,
+    "extra_workers_spawned": false
+  },
+  "review_request": "Root to assign a DIFFERENT fresh hostile reviewer. Inspect exact mathematics before the author packet; freeze independent source-first findings before comparing packet claims. Emphasize MK11–MK12, MK18/MK22, MK28 and MK33–MK34."
+}

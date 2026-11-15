@@ -1,0 +1,46 @@
+{
+  "name": "control_asymmetric_cell_hermitian_part",
+  "matrix_numerator": [
+    [
+      80,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      24,
+      0
+    ],
+    [
+      0,
+      24,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "denominator": 80,
+  "basis": [
+    "1",
+    "a",
+    "b",
+    "ab"
+  ],
+  "certificate": {
+    "psd": false,
+    "hermitian": true,
+    "negative_minor": "-576",
+    "indices": [
+      1,
+      2
+    ]
+  },
+  "extra": {}
+}

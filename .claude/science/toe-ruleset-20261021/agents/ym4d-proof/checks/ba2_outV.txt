@@ -1,0 +1,10 @@
+T=3 k=1 kap=(1.0,): V1 rel 5.42e-13 (CG res 6.0e-13, 58 it; LSMR ne 1.8e-14) (0 s, RSS 92 MB)
+T=2 k=2 kap=(1.0, 1.0): V1 rel 2.03e-11 (CG res 8.7e-13, 140 it; LSMR ne 5.1e-14); V2 rel 1.61e-12 (CG res 8.5e-13/8.6e-13, 140/143 it); V3 |r_1 - c/kap_1| 1.4e-14 |r_0| 3.7e-15 |dx_0| 6.0e-16 (CG res 4.9e-13, 2 it)
+    V4: coarse row norms Q(0,1) 2.5309 Q(1,2) 2.5309 Q(0,2) 2.7723; |Q const - L const| 6.2e-15; max L^3|Q^T j|/|j| 1.000000; |d* Q^T j|/|j| 5.1e-16 (4 s, RSS 584 MB)
+T=2 k=2 kap=(0.5, 2.0): V1 rel 1.59e-11 (CG res 9.5e-13, 146 it; LSMR ne 1.2e-14); V2 rel 1.98e-12 (CG res 9.7e-13/9.1e-13, 142/146 it); V3 |r_1 - c/kap_1| 9.2e-15 |r_0| 3.2e-15 |dx_0| 3.1e-16 (CG res 2.5e-13, 2 it) (4 s, RSS 801 MB)
+V0: PASS
+V1: PASS
+V2: PASS
+V3: PASS
+V4: PASS
+ba2 V: time 8 s, peak RSS 802 MB

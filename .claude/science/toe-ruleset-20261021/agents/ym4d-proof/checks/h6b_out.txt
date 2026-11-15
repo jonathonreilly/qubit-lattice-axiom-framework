@@ -1,0 +1,19 @@
+smooth seed 1: additive-error slope 1.017
+  t=0.0001  R_NA=0.013557 R_lin=0.013558 D_rel=1.141e-04 |X-dB|_HS/sqrt(E)=6.406e-05 (/t = 0.641)
+  t=0.0003  R_NA=0.013554 R_lin=0.013558 D_rel=3.500e-04 |X-dB|_HS/sqrt(E)=1.926e-04 (/t = 0.642)
+  t=0.001   R_NA=0.013541 R_lin=0.013558 D_rel=1.259e-03 |X-dB|_HS/sqrt(E)=6.461e-04 (/t = 0.646)
+  t=0.0025  R_NA=0.013509 R_lin=0.013558 D_rel=3.645e-03 |X-dB|_HS/sqrt(E)=1.637e-03 (/t = 0.655)
+  t=0.01    R_NA=0.013225 R_lin=0.013558 D_rel=2.459e-02 |X-dB|_HS/sqrt(E)=6.955e-03 (/t = 0.695)
+smooth seed 2: additive-error slope 0.998
+  t=0.0001  R_NA=0.000657 R_lin=0.000663 D_rel=9.279e-03 |X-dB|_HS/sqrt(E)=1.344e-04 (/t = 1.344)
+  t=0.0003  R_NA=0.000645 R_lin=0.000663 D_rel=2.768e-02 |X-dB|_HS/sqrt(E)=4.033e-04 (/t = 1.344)
+  t=0.001   R_NA=0.000603 R_lin=0.000663 D_rel=9.044e-02 |X-dB|_HS/sqrt(E)=1.344e-03 (/t = 1.344)
+  t=0.0025  R_NA=0.000520 R_lin=0.000663 D_rel=2.163e-01 |X-dB|_HS/sqrt(E)=3.356e-03 (/t = 1.342)
+  t=0.01    R_NA=0.000221 R_lin=0.000663 D_rel=6.672e-01 |X-dB|_HS/sqrt(E)=1.332e-02 (/t = 1.332)
+smooth seed 3: additive-error slope 1.005
+  t=0.0001  R_NA=0.046959 R_lin=0.046923 D_rel=7.800e-04 |X-dB|_HS/sqrt(E)=2.650e-04 (/t = 2.650)
+  t=0.0003  R_NA=0.047032 R_lin=0.046923 D_rel=2.338e-03 |X-dB|_HS/sqrt(E)=7.955e-04 (/t = 2.652)
+  t=0.001   R_NA=0.047287 R_lin=0.046923 D_rel=7.775e-03 |X-dB|_HS/sqrt(E)=2.657e-03 (/t = 2.657)
+  t=0.0025  R_NA=0.047829 R_lin=0.046923 D_rel=1.932e-02 |X-dB|_HS/sqrt(E)=6.672e-03 (/t = 2.669)
+  t=0.01    R_NA=0.050417 R_lin=0.046923 D_rel=7.448e-02 |X-dB|_HS/sqrt(E)=2.719e-02 (/t = 2.719)
+runtime 17.2 s

@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-10-29T12:46:33.595283+00:00",
+  "scope": "Independent source-return review corrections: two domain/reference repairs, two precision clarifications, and one dimension-label correction",
+  "original_commit": "0ea4e56c4c00da4e70863eb274cbee987b7bd917",
+  "original_sha256": "7da909685242b9c9f13e597a641e337d5928f5905211392b154e8f3649bda1ca",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_ASTRA.md",
+  "repaired_sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+  "changes": [
+    {
+      "id": "physical-covariance-domain",
+      "change": "Restrict subtraction of I-Pi to the full space or a Pi-invariant integrated subspace; arbitrary compression bounds apply to the augmented operator only",
+      "counterexample": "Pi=[[1,-1],[-1,1]]/2, O=17I, one-coordinate compression gives 1/3-1/2=-1/6"
+    },
+    {
+      "id": "contour-reference",
+      "change": "Specify A0^(B)=b(B,0)+sigma K(B,0)^(-1/2)w for the O(rho p) displacement estimate; retain the general Stokes identity separately",
+      "counterexample": "F=(a-B)^2/2 has b=B,K=1; a reference at B=0 moves by B/sigma even at epsilon=0"
+    },
+    {
+      "id": "normalizer-vacuum",
+      "change": "Uniform normalizer bound applies to field-dependent differences, derivatives and remainders after subtracting log Ntilde_t(I); vacuum term stays in S0"
+    },
+    {
+      "id": "cluster-threshold",
+      "change": "Choose mu_0>=0 and beta=mu_0+2 for section 3, then require RHS(26)<=1/4 explicitly"
+    },
+    {
+      "id": "contour-form-dimension",
+      "change": "Use n_d for the number of scalar Lie coordinates in the top form, consistently with the domain and 2 n_d faces. Earlier n counts free links.",
+      "scope": "Dimension-label typo; no analytic estimate changes."
+    }
+  ],
+  "source_preservation": "Original author receipt and bytes remain valid at the pinned original commit; this file records the explicit reviewed revision",
+  "review_confirmation": "All five findings confirmed in the completed same-context review, bound to final source 2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+  "prior_repair_sha256": "c0fc371498c1487b401192dc1c90ba6ccffe50c7457b678b321f57f640e3af68",
+  "prior_repair_confirmation": "Both domain/reference corrections confirmed in the same reviewer context before the two precision clarifications below",
+  "updated_utc": "2026-10-29T13:39:20.702146+00:00",
+  "four_hunk_confirmed_sha256": "f7af9a3ab9db86a939dbc313367f4d50145007a821d09b62aa67b358eb8adbfc",
+  "review_report": "REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md",
+  "review_report_sha256": "3b078960b4e5556aad8035ebb2059e7f325893c7b8f9a351900786a7f8d606db",
+  "review_receipt_sha256": "4abd446cf39d5454d9dca04daeaf4f60b8d8b83f80610314410e35d36a9a2374"
+}

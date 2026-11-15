@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-30T11:30:10.260448+00:00",
+  "status": "NOT RUN",
+  "checks": [],
+  "resources": [
+    {
+      "label": "pre-mathematics",
+      "load": [
+        4.18212890625,
+        5.517578125,
+        5.044921875
+      ],
+      "nice": 0,
+      "rss_raw": 22757376,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLAS_NUM_THREADS": "1"
+      },
+      "rss_bytes": 22757376,
+      "free_percent": 41
+    }
+  ],
+  "criteria_sha256": "9eaf6cb4ac6605953326cf29993a81a337ed4c38b463b7ed47fb0251771153f4",
+  "runner_sha256": "71f8f97089192dbf2f4562bdf4caabf6921c66bd077a7d2307adecdcd5c6eae8",
+  "note_sha256": "b64fc9c983cc01b349cfcf7b4890ef8dfba0a8d3d1b9514b8cb0e3928ebed9ee",
+  "scope": "Finite regressions only; no actual history-uniform E15 check",
+  "reason": "Required nice priority unavailable; no unguarded fallback"
+}

@@ -1,0 +1,56 @@
+r55k_2_posthoc.py (POST-HOC) -- library = r55k_1_const.py lines before its first P(...) call
+
+P2  c'_theta at theta = 1/2: (1-1/2)*(4*1/2)^((1/2)/(1-1/2)) = (1/2)*2^1 = 1  [run-2 display fix]
+  >>> P2 (c'_theta(1/2) == 1 exactly): PASS 
+
+P1  QFIX chain under radius allocations CONSISTENT with Stage 1 (P-max, |N_S|=3, c_N=2, C_3=1, m(q) => A_c g_c <= 1)
+    F_a = [6.7202797e2, 6.7202798e2] (R=155) ; F_b = [1.0531742e2, 1.0531743e2] (R=418)
+  -- a: EPSSTAR radii (S1 gap R/4-4, S2 budget R/4-3, R0=64)
+     q=8     m=59156   A_cg_c<=8.17e-1 C_T=[3.1518e15, 3.1519e15] C_D=[2.9103e18, 2.9104e18] eps_cut=[2.5095e-50, 2.5096e-50] obj=[-57.323, -57.322]
+     q=11    m=24462   A_cg_c<=8.17e-1 C_T=[3.7362e13, 3.7363e13] C_D=[2.9602e16, 2.9603e16] eps_cut=[2.4257e-46, 2.4258e-46] obj=[-41.382, -41.381]
+     q=12    m=24023   A_cg_c<=8.17e-1 C_T=[2.0215e13, 2.0216e13] C_D=[1.5488e16, 1.5489e16] eps_cut=[8.8606e-46, 8.8607e-46] obj=[-39.132, -39.131]
+     q=16    m=23665   A_cg_c<=8.17e-1 C_T=[7.7648e12, 7.7649e12] C_D=[5.4297e15, 5.4298e15] eps_cut=[7.2100e-45, 7.2101e-45] obj=[-35.490, -35.489]
+     q=32    m=23588   A_cg_c<=8.17e-1 C_T=[5.5594e12, 5.5595e12] C_D=[3.3978e15, 3.3979e15] eps_cut=[1.8410e-44, 1.8411e-44] obj=[-33.862, -33.861]
+     q=100   m=23579   A_cg_c<=8.17e-1 C_T=[5.3364e12, 5.3365e12] C_D=[2.9812e15, 2.9813e15] eps_cut=[2.3917e-44, 2.3918e-44] obj=[-33.407, -33.406]
+     q=1000  m=23577   A_cg_c<=8.17e-1 C_T=[5.2980e12, 5.2981e12] C_D=[2.8502e15, 2.8503e15] eps_cut=[2.6164e-44, 2.6165e-44] obj=[-33.251, -33.250]
+     q=None  m=23577   A_cg_c<=8.17e-1 C_T=[5.2947e12, 5.2948e12] C_D=[2.8366e15, 2.8367e15] eps_cut=[2.6416e-44, 2.6417e-44] obj=[-33.234, -33.233]
+     lever obj(inf)-obj(8) = [24.0891, 24.0892] ; obj(inf)-obj(12) = [5.8976, 5.8977]
+     real q at which C_D = 6.7e15 (c_N = 2): [14.5701, 14.5702]
+  -- b: S1 gap R/16-4, S2 budget 7R/16-3, R0=256
+     q=8     m=108780  A_cg_c<=8.17e-1 C_T=[4.9390e14, 4.9391e14] C_D=[4.5606e17, 4.5607e17] eps_cut=[1.0219e-48, 1.0220e-48] obj=[-50.884, -50.883]
+     q=11    m=94510   A_cg_c<=8.17e-1 C_T=[5.8419e12, 5.8420e12] C_D=[4.6286e15, 4.6287e15] eps_cut=[9.9218e-45, 9.9219e-45] obj=[-34.935, -34.934]
+     q=12    m=94397   A_cg_c<=8.17e-1 C_T=[3.1576e12, 3.1577e12] C_D=[2.4192e15, 2.4193e15] eps_cut=[3.6318e-44, 3.6319e-44] obj=[-32.681, -32.680]
+     q=16    m=94307   A_cg_c<=8.17e-1 C_T=[1.2114e12, 1.2115e12] C_D=[8.4711e14, 8.4712e14] eps_cut=[2.9622e-43, 2.9623e-43] obj=[-29.035, -29.034]
+     q=32    m=94288   A_cg_c<=8.17e-1 C_T=[8.6923e11, 8.6924e11] C_D=[5.3127e14, 5.3128e14] eps_cut=[7.5310e-43, 7.5311e-43] obj=[-27.414, -27.413]
+     q=100   m=94285   A_cg_c<=8.17e-1 C_T=[8.3529e11, 8.3530e11] C_D=[4.6663e14, 4.6664e14] eps_cut=[9.7619e-43, 9.7620e-43] obj=[-26.964, -26.963]
+     q=1000  m=94285   A_cg_c<=8.17e-1 C_T=[8.2953e11, 8.2954e11] C_D=[4.4627e14, 4.4628e14] eps_cut=[1.0672e-42, 1.0673e-42] obj=[-26.809, -26.808]
+     q=None  m=94285   A_cg_c<=8.17e-1 C_T=[8.2904e11, 8.2905e11] C_D=[4.4415e14, 4.4416e14] eps_cut=[1.0775e-42, 1.0776e-42] obj=[-26.792, -26.791]
+     lever obj(inf)-obj(8) = [24.0919, 24.0920] ; obj(inf)-obj(12) = [5.8891, 5.8892]
+     real q at which C_D = 6.7e15 (c_N = 2): [10.5694, 10.5695]
+  -- ref: EPSSTAR/QFIX as printed (F=175.8, R0=64, S2 budget R/2-4 -- inconsistent)
+     q=8     m=59156   A_cg_c<=8.17e-1 C_T=[8.2451e14, 8.2452e14] C_D=[7.6133e17, 7.6134e17] eps_cut=[3.6672e-49, 3.6673e-49] obj=[-52.665, -52.664]
+     q=11    m=24462   A_cg_c<=8.17e-1 C_T=[9.7737e12, 9.7738e12] C_D=[7.7438e15, 7.7439e15] eps_cut=[3.5447e-45, 3.5448e-45] obj=[-36.724, -36.723]
+     q=12    m=24023   A_cg_c<=8.17e-1 C_T=[5.2883e12, 5.2884e12] C_D=[4.0517e15, 4.0518e15] eps_cut=[1.2948e-44, 1.2949e-44] obj=[-34.473, -34.472]
+     q=16    m=23665   A_cg_c<=8.17e-1 C_T=[2.0312e12, 2.0313e12] C_D=[1.4204e15, 1.4205e15] eps_cut=[1.0535e-43, 1.0536e-43] obj=[-30.831, -30.830]
+     q=32    m=23588   A_cg_c<=8.17e-1 C_T=[1.4543e12, 1.4544e12] C_D=[8.8887e14, 8.8888e14] eps_cut=[2.6903e-43, 2.6904e-43] obj=[-29.203, -29.202]
+     q=100   m=23579   A_cg_c<=8.17e-1 C_T=[1.3960e12, 1.3961e12] C_D=[7.7987e14, 7.7988e14] eps_cut=[3.4950e-43, 3.4951e-43] obj=[-28.748, -28.747]
+     q=1000  m=23577   A_cg_c<=8.17e-1 C_T=[1.3859e12, 1.3860e12] C_D=[7.4562e14, 7.4563e14] eps_cut=[3.8234e-43, 3.8235e-43] obj=[-28.592, -28.591]
+     q=None  m=23577   A_cg_c<=8.17e-1 C_T=[1.3850e12, 1.3851e12] C_D=[7.4206e14, 7.4207e14] eps_cut=[3.8602e-43, 3.8603e-43] obj=[-28.575, -28.574]
+     lever obj(inf)-obj(8) = [24.0891, 24.0892] ; obj(inf)-obj(12) = [5.8976, 5.8977]
+     real q at which C_D = 6.7e15 (c_N = 2): [11.1911, 11.1912]
+  >>> P1-i (q=12 meets C_D <= 6.7e15 under EPSSTAR's own radii): FAIL 
+    log10(eps_cut(12; b)/1.2948e-44) = [0.4479, 0.4480]
+  >>> P1-ii (eps_cut(12) survives a consistent allocation to 0.1 decade): FAIL 
+  >>> P1-iii (lever allocation-independent to 0.01 decade): PASS 
+
+P3  fixed F=175.8, R0=64, q=12: smallest C_T over the delta-budget grid (achievable values; STAR_CONST's C_B^tot = 16/d2 + 54)
+    coarse best: C_T = [4.4363e12, 4.4364e12] at rho=1/1000 delta_2=7/100 T=2/5
+    refined best: C_T(12) = [4.4359e12, 4.4360e12] at rho=1/1000 delta_2=143/2000 T=201/500  (EPSSTAR l.608 says the floor is 4.4e12)
+    at the chosen allocation (delta_2 = rho = 1/16): C_T(12) = [5.288347e12, 5.288348e12]
+
+SUMMARY
+  P2 (c'_theta(1/2) == 1 exactly)                                                  PASS
+  P1-i (q=12 meets C_D <= 6.7e15 under EPSSTAR's own radii)                        FAIL
+  P1-ii (eps_cut(12) survives a consistent allocation to 0.1 decade)               FAIL
+  P1-iii (lever allocation-independent to 0.01 decade)                             PASS
+runtime 9.4 s

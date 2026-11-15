@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "HANDOFF.md": "bbd4a23a4deda9b23137bbbc7f1b45cc26f0e20e78a40d5db5795de302ea5589",
+    "JMBRA.md": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+    "LIB1.md": "1e843c88ae26a2e69241dbdc3fa72c5b54e49a3b1669565f9e869a620a19aad1",
+    "MIXSMALL.md": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+    "PROCESS_LIGHT.md": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "REALRGA.md": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+    "REALRGB.md": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+    "REFMATCH.md": "a7f45d815b6c7c4ed51950e0d3cc30ea3a7cb650e0bcb8e508659d197889729c",
+    "REVIEW_REFMATCH.md": "4c1e0390e3404487f47b7a942c11d2b4b4ed38e8a587821114e7ddb3c2c64334",
+    "briefs_q/MATCHB/AUTHOR.md": "ed06a8487e47669b3555cb09aa59862b1e4eb19dc0c5cf7348f5442a79b04d52",
+    "briefs_q/MATCHB/REVIEW.md": "00e26bc05643d6c0ceee3a9abf936205eb3a1a69b692f92f91a5dcc542b7676d"
+  },
+  "original_file_count": 4013,
+  "read_scope": {
+    "HANDOFF.md": "Current assignments and nearby continuation context; not the entire handoff.",
+    "other listed scientific notes": "Complete required sources; large notes read in range chunks."
+  },
+  "scope": "Current supplied file snapshot; no Git checkout identity is available."
+}

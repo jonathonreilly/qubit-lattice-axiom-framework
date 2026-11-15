@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "intended_polynomial_identity_exact": true,
+    "original_structural_equality_failure_reproduced": true,
+    "remaining_coefficients_positive": true,
+    "remaining_monomials_positive_on_positive_variables": true
+  },
+  "diagnosis": "Structural SymPy equality was the wrong equality test. The exact polynomial residual is zero and the positive remainder proves the intended lower bound. Original 15/16 output is preserved.",
+  "exact_residual": "0",
+  "expanded_left": "q**3*w + q**3",
+  "passed": 4,
+  "total": 4,
+  "unexpanded_right": "q**3*(w + 1)",
+  "utc": "2026-10-29T14:38:40.688788+00:00"
+}

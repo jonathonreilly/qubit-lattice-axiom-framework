@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-10-29T21:10:34.337467+00:00",
+  "scope": "Freeze two unreviewed author packets and reconcile concurrent reviewed Claude library revisions.",
+  "base_merge": "6b28a7cc77f6d28c3683d18e7001029b2bad2481",
+  "root_read_scope": {
+    "SA": "Complete722-line author note; no independent mathematical verdict.",
+    "uniform_one_loop": "Complete688-line author note read across sequential ranges; no independent mathematical verdict.",
+    "concurrent": "Complete REC_LIB_R2, LIB1_R2, SOFTHARD_R2 and LGF review reports; source-hash checks, not a new whole-source theorem review."
+  },
+  "initial_mechanical_attempts": [
+    "Read-only inspection first used files instead of bound_files in SA receipt; schema corrected before staging.",
+    "First status-edit preparation used a nonexistent marker and asserted before writing any file; corrected to the actual Review reproduction marker.",
+    "Two broad link scans falsely parsed mathematical expressions [T](V) and a legacy PROOF expression as file links. Final scan checks explicit local artifact extensions; no source or scientific-check changes resulted."
+  ],
+  "updates": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "before_sha256": "1587cd5d8afe9aaed4523c8434f68a80db9dea0cdc056ef9a3948494361eb940",
+      "after_sha256": "f6fed14a11c7263915a4d06736ca7c79d67214da4ed65270b77f5e5604796cf4"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "before_sha256": "5d5d3eeb04858c1e557451c0d56e3e22c9413a7b0e949ddd652667d7902623b3",
+      "after_sha256": "23cf2737c58d3e3178081c31aed44c583901678fc135b629bd862d652044774c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "before_sha256": "e8bebeb1fe1528373be821e0a3d6f92242e4768a9627457f3312bf0256fc5cf5",
+      "after_sha256": "a8ec4031da6930be03e088b62af43b05bbc81d4af41fd6d8dedab56579e79613"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "before_sha256": "3043f894187d435bc1c64cff5b459b628f78fbbcce3bc9b9717d262a78316b4f",
+      "after_sha256": "14c97770f2ce6c0255590f6e4934218216da98ea3d3bcdd571809a39a70897b6"
+    }
+  ],
+  "legacy_PROOF_body_unchanged": true,
+  "scientific_authority": "Both new author units unreviewed; concurrent verdicts retain exact report/source scope.",
+  "full_existence": "OPEN",
+  "physical_gap": "OPEN",
+  "frozen_author_receipts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_receipt.json",
+      "sha256": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c",
+      "owned_files_verified": 12
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_receipt.json",
+      "sha256": "5e5a7b59c0b69b4e618ddb04de747c4f3ab1e1851b99ec6323553be3b27296aa",
+      "owned_files_verified": 6
+    }
+  ],
+  "current_concurrent_sources_verified": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "sha256": "3a0052652fd4146fd9803b069624ddc7a5357c1a90ff063875a8514a79ef6ae3"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LIB1.md",
+      "sha256": "1e843c88ae26a2e69241dbdc3fa72c5b54e49a3b1669565f9e869a620a19aad1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LGF.md",
+      "sha256": "40ea604c79f17027129628bc8b31f5fd6209da21dded864bf45a422dad24505e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD.md",
+      "sha256": "6f8a3301a0f8af9187a1e941ab98aa7f808b69125fef83abf05faf9bb8a8c8c6"
+    }
+  ],
+  "mechanical_validation": {
+    "files": 25,
+    "relative_artifact_links_checked": 319,
+    "AST_JSON": "pass",
+    "vocabulary": {
+      "files": [],
+      "schema_version": 1,
+      "summary": {
+        "files_with_violations": 0,
+        "total_auto_correctable": 0,
+        "total_needs_human": 0
+      }
+    },
+    "whitespace_exit": 0,
+    "input_pins": "SA 18 scientific + 13 methodology + 2 skills, UL25 inputs matched current bytes",
+    "additional_root_scientific_replay": false
+  }
+}

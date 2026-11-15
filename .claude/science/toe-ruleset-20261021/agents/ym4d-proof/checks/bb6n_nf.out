@@ -1,0 +1,12 @@
+setup: d = 2, SU(2), n = 3, coarse side 5, fine side 15, box side 13; n max|A| = 0.300, eps_f(U) = 2.0155
+N1 critical equation: max|d*w| = 9.96e-13 after 3576 steps: PASS; n max|w| = 0.2409
+N2 uniqueness from 4 random starts (|eta| <= 0.5): max distance 3.20e-11: PASS
+N3 covariance g(U^h) = h(c) g(U) h^-1: max distance 1.44e-11 (max|d*w| 1.0e-12, 3575 steps): PASS
+N4 KΠ (25 boxes x 3 configurations, max|d*w| over all 1.0e-12, 41.7 s):
+  (a) max |log G(U)(c_Y)| = 3.43e-18: PASS
+  (b) idempotence max |log G(Pi(U))| = 3.00e-12: PASS
+  (c) covariance max dist(Pi(U^h), Pi(U)^hhat) = 5.58e-12, max dist(hhat(c_Y), h(c_Y)) = 2.86e-17: PASS
+N5 control (exp-coordinate gluing): max dist(true extension, Karcher root-value formula) = 3.359e-01 (must be >= 1e-4): PASS
+N6 informational: max over boxes n max|w| = 0.2426; eps_f(U) = 2.0155; Karcher extension at U: max|log hhat| = 0.2000
+VERDICT: ALL PASS (N1-N5)
+[t = 45.1 s]

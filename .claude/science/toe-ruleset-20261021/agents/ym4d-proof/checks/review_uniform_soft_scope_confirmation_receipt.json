@@ -1,0 +1,88 @@
+{
+  "schema": "review-uniform-soft-scope-confirmation-receipt-v1",
+  "frozen_utc": "2026-10-29T18:39:53.952730+00:00",
+  "reviewer": "/root/review_uniform_soft",
+  "disposition": "CONFIRMED after the precise tree-phase scope correction",
+  "resolved_finding": "US1-finite-u-scope (P2)",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe"
+  },
+  "before_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "revision": "4a8afc90247d771b95c9661737dc08509456ab28",
+    "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4"
+  },
+  "repair_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_uniform_tree_scope_fix.json",
+    "sha256": "fd2778df5869f21c7083ed1b0f2fcfb467535535cd739731a115632b24b2868e"
+  },
+  "confirmation_report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation.md",
+    "sha256": "fbc18b292c385876eabd205cb1781667933b88fa7dc8e7abff914e0836da338b"
+  },
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation.md",
+      "sha256": "fbc18b292c385876eabd205cb1781667933b88fa7dc8e7abff914e0836da338b",
+      "bytes": 3557
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation_inputs.json",
+      "sha256": "415980af8af98a1bc05725a9b47ea30899de41a46600da91d7974a6fe51bc122",
+      "bytes": 1706
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    }
+  ],
+  "preserved_original_review_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_receipt.json",
+    "sha256": "33b98352bcdae4c40f9db02cefbbdfd225063395da0c7c589ee47626e0ed10a3"
+  },
+  "preserved_pre_repair_scope_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_receipt.json",
+    "sha256": "54ef326a0accde7811db80c2ef85cb5c7907959083ca5252e4d6862b85e61dcb"
+  },
+  "exact_source_confirmation": {
+    "three_replacements_reproduce_new_bytes": true,
+    "all_US1_US17_displays_unchanged": true,
+    "section_2_onward_identical": true,
+    "other_16_author_files_unchanged": true,
+    "all_9_original_consumed_sources_unchanged": true,
+    "original_review_and_scope_artifact_hashes_valid": true
+  },
+  "control_evidence": {
+    "new_actual_finite_u_SU2_control": {
+      "passed": 29,
+      "total": 29,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_01.py",
+      "sha256": "6196bc4fc1c49a9d81944c7c872f14594ef08fe3d211dd2274c32e74fc8d0f30",
+      "output_sha256": "ba766b29a93cd0bd0ec5e6a9121fa3a184666060307ff3608cfcb91e4415a4c4"
+    },
+    "original_controls": "34/34 and 84/84 remain preserved; no rerun because no mathematical formula or implementation changed.",
+    "numerical_limits": "Finite diagnostics do not establish depth-uniform finite-u localization."
+  },
+  "mechanical": {
+    "json_links_whitespace": "passed",
+    "local_links_checked": [
+      "review_uniform_soft_scope_review.md",
+      "../UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "full_proof_uniform_tree_scope_fix.json",
+      "review_uniform_soft_scope_receipt.json",
+      "../REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "review_uniform_soft_receipt.json",
+      "review_uniform_soft_scope_confirmation_receipt.json"
+    ],
+    "scoped_git_diff_check": 0,
+    "vocabulary_violations": 0
+  },
+  "mathematical_scope": "FC19 theta=L^-2 and neutral FC20 hold for the displayed u-stripped normalized tree phase and stationary T_n, not the full finite-u logdensity Hessian.",
+  "no_new_findings": true,
+  "whole_pr_pass": false,
+  "audit_verdict": "none supplied",
+  "both_full_targets": "OPEN",
+  "receipt_self_hash": "Excluded; external hash supplied in parent handoff."
+}

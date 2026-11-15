@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-29T22:02:22.668417+00:00",
+  "exposure": "Independent criteria, implementation and 19/19 execution completed before reading author criteria, main checker, posthoc checker and launcher. Those sources have now been read completely.",
+  "replay": "Run exact frozen author program with the sole literal output-basename substitution necessary to avoid modifying its evidence. Preserve all original thresholds, seed, computations and exit codes. Repeat separately for its already labelled post-hoc program.",
+  "expected_disposition": "A main exit code 1 and 23/24 are an honest reproduction if the same broad-shell predicate fails. The post-hoc pass does not change this.",
+  "independent_checker": "No author imports or code were used; later author exposure does not retroactively confer independence on replay."
+}

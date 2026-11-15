@@ -1,0 +1,922 @@
+{
+  "schema": "separate-author-packet-review-v1",
+  "created_utc": "2026-10-30T15:11:28.200147+00:00",
+  "source_only_freezes_preceded_packet_reads": true,
+  "immutable_source_only_freezes": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mean_reader_return_source_findings.json",
+      "sha256": "da7eba40d05929c1dc78ac86f9620201c498cb7ef121f56a4d4d4c2d25f51c03",
+      "lines": 112,
+      "bytes": 7101
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mean_reader_return_read_manifest.json",
+      "sha256": "0af293a5ceed49f92b072365b235e24b46fb12bdb390d0c31f3c98fb79956b09",
+      "lines": 690,
+      "bytes": 27941
+    }
+  ],
+  "packet_read_in_full": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mean_reader_return_read_manifest.json",
+      "sha256": "e36cfc1bbaa78a8f597b6378a22fc2ca0ed1bf9ec37a474815e4a36edaf4c513",
+      "lines": 192,
+      "bytes": 11400
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mean_reader_return_receipt.json",
+      "sha256": "960f938e2ec7b56def48906510650d801406fad2e9bfb4153800e8a48517e0d8",
+      "lines": 61,
+      "bytes": 5232
+    }
+  ],
+  "provenance_metadata_consumed": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "coverage": "JSON keys and /protected_sources_unchanged only; remaining historical content not used"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "coverage": "JSON keys and /methodology; hash comparison only for its source/governance entries"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_read_manifest.json",
+      "coverage": "schema/role/source/read_limit and RF /inputs entry only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "coverage": "schema/role/source/carried_same_session_reads/read_limits/primary_reading and WR /inputs entry only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_read_manifest.json",
+      "coverage": "schema/role/configuration/source/governing_instructions/primary_reads and MK /inputs entry only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_author_amendment.json",
+      "coverage": "schema/role/pc_read_correction/fresh_installed_skill_reads only; no SG mathematical judgment"
+    }
+  ],
+  "identity_comparisons": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+      "sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "lines": 710,
+      "bytes": 37656,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "bytes": 31328,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "bytes": 29068,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "lines": 937,
+      "bytes": 46438,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "lines": 753,
+      "bytes": 37222,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "lines": 644,
+      "bytes": 32802,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "bytes": 29717,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "bytes": 36894,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "lines": 597,
+      "bytes": 31228,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "lines": 649,
+      "bytes": 45366,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "lines": 692,
+      "bytes": 43186,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "bytes": 1497,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_read_manifest.json",
+      "sha256": "b8e4721771409ea4b7d959b9204ab2cb7bf60a7e38fa6b400a872a1b6d263744",
+      "lines": 175,
+      "bytes": 7309,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "b8e4721771409ea4b7d959b9204ab2cb7bf60a7e38fa6b400a872a1b6d263744",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "lines": 108,
+      "bytes": 7724,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_read_manifest.json",
+      "sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "lines": 127,
+      "bytes": 9686,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246,
+      "bytes": 11048,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "lines": 31,
+      "bytes": 5441,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "lines": 26,
+      "bytes": 1118,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "lines": 140,
+      "bytes": 9276,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "lines": 313,
+      "bytes": 20680,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_author_amendment.json",
+      "sha256": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450",
+      "lines": 96,
+      "bytes": 5778,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "lines": 490,
+      "bytes": 25270,
+      "category": "manifest-explicit-reference",
+      "expected_sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+      "sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "lines": 710,
+      "bytes": 37656,
+      "category": "receipt-explicit-reference",
+      "expected_sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mean_reader_return_read_manifest.json",
+      "sha256": "e36cfc1bbaa78a8f597b6378a22fc2ca0ed1bf9ec37a474815e4a36edaf4c513",
+      "lines": 192,
+      "bytes": 11400,
+      "category": "receipt-explicit-reference",
+      "expected_sha256": "e36cfc1bbaa78a8f597b6378a22fc2ca0ed1bf9ec37a474815e4a36edaf4c513",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "lines": 76,
+      "bytes": 7736,
+      "category": "receipt-explicit-reference",
+      "expected_sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "lines": 597,
+      "bytes": 31228,
+      "category": "receipt-protected-extra",
+      "expected_sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_read_manifest.json",
+      "sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "lines": 127,
+      "bytes": 9686,
+      "category": "receipt-protected-extra",
+      "expected_sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_receipt.json",
+      "sha256": "a83ca29700a623c7c31d9fb15e684c89addb30a0959ca5664029ea029f4a2fa5",
+      "lines": 51,
+      "bytes": 3365,
+      "category": "receipt-protected-extra",
+      "expected_sha256": "a83ca29700a623c7c31d9fb15e684c89addb30a0959ca5664029ea029f4a2fa5",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "lines": 490,
+      "bytes": 25270,
+      "category": "receipt-protected-extra",
+      "expected_sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_read_manifest.json",
+      "sha256": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+      "lines": 122,
+      "bytes": 8864,
+      "category": "receipt-protected-extra",
+      "expected_sha256": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_receipt.json",
+      "sha256": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+      "lines": 53,
+      "bytes": 3714,
+      "category": "receipt-protected-extra",
+      "expected_sha256": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_author_amendment.json",
+      "sha256": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450",
+      "lines": 96,
+      "bytes": 5778,
+      "category": "receipt-protected-extra",
+      "expected_sha256": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "bytes": 31328,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "bytes": 36894,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "lines": 247,
+      "bytes": 12513,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "bytes": 36322,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "lines": 624,
+      "bytes": 32110,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "lines": 508,
+      "bytes": 25946,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "bytes": 29068,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "lines": 543,
+      "bytes": 27584,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "lines": 564,
+      "bytes": 30251,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "lines": 608,
+      "bytes": 30517,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "bytes": 39217,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "lines": 812,
+      "bytes": 94345,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "lines": 580,
+      "bytes": 31368,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "bytes": 27875,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "lines": 238,
+      "bytes": 12324,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "lines": 397,
+      "bytes": 21272,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "bytes": 29717,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "lines": 617,
+      "bytes": 32365,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "lines": 641,
+      "bytes": 32868,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "hash_match": true,
+      "line_count_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "lines": 460,
+      "bytes": 23982,
+      "category": "twenty-protected-source-baseline",
+      "expected_sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "hash_match": true,
+      "line_count_match": true
+    }
+  ],
+  "governing_path_comparisons": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "lines": 193,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "origin/main",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "lines": 193,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "worktree",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "lines": 193,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "lines": 35,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "origin/main",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "lines": 35,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "worktree",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "lines": 35,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "lines": 93,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "origin/main",
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "lines": 93,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "worktree",
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "lines": 93,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "lines": 434,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "origin/main",
+      "expected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "lines": 434,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "worktree",
+      "expected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "lines": 434,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "lines": 336,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "origin/main",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "lines": 336,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "worktree",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "lines": 336,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "lines": 309,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "origin/main",
+      "expected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "lines": 309,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "worktree",
+      "expected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "lines": 309,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "lines": 126,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "origin/main",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "lines": 126,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "worktree",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "lines": 126,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "lines": 130,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "origin/main",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "lines": 130,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "worktree",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "lines": 130,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "lines": 233,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "origin/main",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "lines": 233,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "worktree",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "lines": 233,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "lines": 52,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "origin/main",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "lines": 52,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "worktree",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "lines": 52,
+      "hash_match": true,
+      "line_count_match": true,
+      "coverage": "metadata-hash-only unless separately listed in reviewer source-first manifest"
+    }
+  ],
+  "comparison_count_including_repeated_assertions": 82,
+  "all_comparisons_match": true,
+  "protected_baseline_source_count": 20,
+  "mechanical_checks": {
+    "utf8": true,
+    "source_lines": 710,
+    "equation_tag_count": 35,
+    "unique_equation_tag_count": 35,
+    "no_trailing_whitespace": true,
+    "relative_link_count": 11,
+    "relative_links": [
+      "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "WEIGHTED_RETURN_JETS_ASTRA.md",
+      "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "MARKED_COMPACT_CHART_ASTRA.md",
+      "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "COMPACT_RETURN_GLUING_ASTRA.md",
+      "STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "REALRGA.md",
+      "MIXSMALL.md"
+    ],
+    "all_relative_links_resolve": true
+  },
+  "read_range_validation": {
+    "all_fresh_ranges_within_declared_files": true,
+    "interpretation": "Syntactic bounds and consistency with named carried records only. Hashes and author statements cannot independently attest historical reading or execution."
+  },
+  "packet_verdict": "consistent; no blocking provenance defect observed",
+  "source_findings_changed": false,
+  "blockers": [],
+  "scope_limits": [
+    "No author analytical check is used as mathematical proof or independent corroboration.",
+    "The reviewer independently read actual source before this stage; predecessor reports and review verdicts were never opened.",
+    "Carried-reading statements are explicitly self-reported and were checked only for the named metadata consistency, not externally authenticated.",
+    "Installed distribution observations differ from pinned repository entries; all ten author-consumed pinned paths match selected pin, observed main and working bytes.",
+    "No whole-paper read, backend-model attestation, retained grade or audit verdict is inferred."
+  ]
+}

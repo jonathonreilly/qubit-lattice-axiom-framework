@@ -1,0 +1,5 @@
+lock acquired 03:52:08 UTC; load { 4.00 4.29 3.92 }; System-wide memory free percentage: 50%
+exit 0
+lock released 03:52:17 UTC
+        8.79 real         8.51 user         0.07 sys
+            61014016  maximum resident set size

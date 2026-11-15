@@ -1,0 +1,14 @@
+G1 (M even):
+  M = 8: sum|grad_1 G| = 2.0000000000, M/4 = 2.0000, dev 0.0e+00 [PASS]; max |y|^3|grad G| (|y| >= 1.5) = 0.1726
+  M = 12: sum|grad_1 G| = 3.0000000000, M/4 = 3.0000, dev 2.7e-15 [PASS]; max |y|^3|grad G| (|y| >= 1.5) = 0.1733
+  M = 16: sum|grad_1 G| = 4.0000000000, M/4 = 4.0000, dev 5.3e-15 [PASS]; max |y|^3|grad G| (|y| >= 1.5) = 0.1735
+  M = 24: sum|grad_1 G| = 6.0000000000, M/4 = 6.0000, dev 1.4e-14 [PASS]; max |y|^3|grad G| (|y| >= 1.5) = 0.1735
+  M = 32: sum|grad_1 G| = 8.0000000000, M/4 = 8.0000, dev 2.6e-14 [PASS]; max |y|^3|grad G| (|y| >= 1.5) = 0.1735
+  M = 48: sum|grad_1 G| = 12.0000000000, M/4 = 12.0000, dev 3.6e-14 [PASS]; max |y|^3|grad G| (|y| >= 1.5) = 0.1735
+G2 M = 9: sum|grad_1 G| = 2.2222222222, (M^2-1)/(4M) = 2.2222222222, dev 1.8e-15 [PASS]
+G2 M = 15: sum|grad_1 G| = 3.7333333333, (M^2-1)/(4M) = 3.7333333333, dev 8.9e-16 [PASS]
+G3 cycle heat kernel unimodal: worst max(q(x+1) - q(x))/max q = 1.46e-15 [PASS]
+G4 G_M(., y') symmetric and non-increasing in |y_1|: worst violation 4.54e-17 [PASS]
+G5 transverse sum = -|y|/2 + y^2/(2M) + c: worst deviation 7.11e-15 [PASS]
+VERDICT: ALL PASS (G1-G5)
+[t = 0.2 s]

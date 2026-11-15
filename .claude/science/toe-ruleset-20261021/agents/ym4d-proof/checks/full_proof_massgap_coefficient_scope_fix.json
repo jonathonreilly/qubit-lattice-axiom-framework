@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-29T15:15:00.958256+00:00",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+  "before_commit": "86c7c6925efd08ccf973108fc6d59291aae431d4",
+  "before_sha256": "197c2662d562fc1b4194e77e4dc0c670f339254d2eca3f8164f01eb2c78e325e",
+  "after_sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2",
+  "finding": "The order-eight separated-loop coefficient is not proved nonzero for every actual Wilson prior/loop choice.",
+  "repair": "Changed first nonzero to order-eight, with formula and domain unchanged. Also added an explicitly linked account of the independently requested checker repair and preserved mutations.",
+  "same_context_confirmation": "pending"
+}

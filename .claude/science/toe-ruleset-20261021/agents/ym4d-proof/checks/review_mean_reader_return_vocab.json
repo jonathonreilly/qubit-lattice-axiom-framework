@@ -1,0 +1,35 @@
+{
+  "schema": "explicit-path-vocabulary-check-v1",
+  "created_utc": "2026-10-30T15:19:00.596635+00:00",
+  "method": "scripts/vocab_lint.py lint_one_file(path, load_yaml(), apply_fix=False)",
+  "cli_not_used": true,
+  "scientific_run": false,
+  "packaging_note": "First serialization of the FileReport dataclass failed after both calls; dataclasses.asdict serialization was used on a fresh direct run. The incomplete reviewer check record alone was replaced. No source or report edit occurred.",
+  "results": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+      "sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "lines": 710,
+      "unchanged": true,
+      "result": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+        "violations": [],
+        "auto_corrected": 0,
+        "needs_human_vocab_decision": 0
+      }
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MEAN_READER_RETURN_ASTRA.md",
+      "sha256": "e0ecb36e67f976b0863f51eb4d0e478ce811b3223a67eacb00afb3f042a6e2c0",
+      "lines": 65,
+      "unchanged": true,
+      "result": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MEAN_READER_RETURN_ASTRA.md",
+        "violations": [],
+        "auto_corrected": 0,
+        "needs_human_vocab_decision": 0
+      }
+    }
+  ],
+  "report_metadata_correction_rechecked": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mean_reader_return_packaging_note.json"
+}

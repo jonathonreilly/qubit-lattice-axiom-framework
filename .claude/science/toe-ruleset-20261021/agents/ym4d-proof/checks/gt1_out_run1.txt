@@ -1,0 +1,61 @@
+gt1_green.py -- exact integer/rational lattice Green's function checks
+criteria: checks/gt1_criteria.md (written first).  No numeric lock; integer/Fraction arithmetic only.
+
+=== d=3 R=3 ===
+gt1-A  Hodge(2-form) vs componentwise scalar Laplacian: 241 discrepancies out of 243 entries; adjointness failures: 6  -> FAIL
+gt1-B  solver validation: Delta G = delta_0 - R^-d residual-nonzero sites: 0 ; sum_x G = 0  -> PASS
+gt1-C  m1 = max r^(d-1)|grad G|      = 0.16049383   at x=(0, 0, -1) mu=2  (grad G = 0.16049382716049382)
+gt1-C  m2: no x with r>=2 on this torus
+
+=== d=3 R=4 ===
+gt1-A  Hodge(2-form) vs componentwise scalar Laplacian: 570 discrepancies out of 576 entries; adjointness failures: 6  -> FAIL
+gt1-B  solver validation: Delta G = delta_0 - R^-d residual-nonzero sites: 0 ; sum_x G = 0  -> PASS
+gt1-C  m1 = max r^(d-1)|grad G|      = 0.16406250   at x=(0, 0, -1) mu=2  (grad G = 0.1640625)
+gt1-C  m2 = max_{r>=2} r^d|grad^2 G| = 1.07500000   at x=(0, 0, 2) (mu,nu)=(2,2)  (val = 0.134375)
+
+=== d=3 R=6 ===
+gt1-A  Hodge(2-form) vs componentwise scalar Laplacian: 1929 discrepancies out of 1944 entries; adjointness failures: 6  -> FAIL
+gt1-B  solver validation: Delta G = delta_0 - R^-d residual-nonzero sites: 0 ; sum_x G = 0  -> PASS
+gt1-C  m1 = max r^(d-1)|grad G|      = 0.16589506   at x=(0, 0, -1) mu=2  (grad G = 0.16589506172839505)
+gt1-C  m2 = max_{r>=2} r^d|grad^2 G| = 1.00471380   at x=(0, 0, -2) (mu,nu)=(2,2)  (val = 0.12558922558922558)
+gt1-D  shell s : rho_B (bare, no cancellation) | rho_A (exact, zero-mean source)
+gt1-D    s=1 :     0.16589506 |     0.38369074
+gt1-D    s=2 :     0.32244669 |     0.26231090
+gt1-D    s=3 :     0.23122294 |     0.33744589
+gt1-D    s=4 :     0.17227144 |     0.50017856
+gt1-D    s=5 :     0.10825318 |     0.43301270
+gt1-D  rho_B strictly increasing: False ; rho_A strictly increasing: False  -> FAIL
+
+=== d=4 R=3 ===
+gt1-A  Hodge(2-form) vs componentwise scalar Laplacian: 1449 discrepancies out of 1458 entries; adjointness failures: 6  -> FAIL
+gt1-B  solver validation: Delta G = delta_0 - R^-d residual-nonzero sites: 0 ; sum_x G = 0  -> PASS
+gt1-C  m1 = max r^(d-1)|grad G|      = 0.12345679   at x=(0, 0, 0, -1) mu=3  (grad G = 0.12345679012345678)
+gt1-C  m2 = max_{r>=2} r^d|grad^2 G| = 0.09876543   at x=(1, 1, 1, -1) (mu,nu)=(3,3)  (val = -0.006172839506172839)
+
+=== d=4 R=4 ===
+gt1-A  Hodge(2-form) vs componentwise scalar Laplacian: 4583 discrepancies out of 4608 entries; adjointness failures: 6  -> FAIL
+gt1-B  solver validation: Delta G = delta_0 - R^-d residual-nonzero sites: 0 ; sum_x G = 0  -> PASS
+gt1-C  m1 = max r^(d-1)|grad G|      = 0.13783482   at x=(0, 0, 0, 2) mu=3  (grad G = 0.017229352678571428)
+gt1-C  m2 = max_{r>=2} r^d|grad^2 G| = 1.71651786   at x=(0, 0, 0, 2) (mu,nu)=(3,3)  (val = 0.10728236607142858)
+
+=== d=4 R=6 ===
+gt1-A  Hodge(2-form) vs componentwise scalar Laplacian: 23143 discrepancies out of 23328 entries; adjointness failures: 6  -> FAIL
+gt1-B  solver validation: Delta G = delta_0 - R^-d residual-nonzero sites: 0 ; sum_x G = 0  -> PASS
+gt1-C  m1 = max r^(d-1)|grad G|      = 0.16977914   at x=(0, 0, 0, -2) mu=3  (grad G = 0.021222392576559244)
+gt1-C  m2 = max_{r>=2} r^d|grad^2 G| = 1.65889851   at x=(0, 0, 0, -2) (mu,nu)=(3,3)  (val = 0.1036811568061568)
+gt1-D  shell s : rho_B (bare, no cancellation) | rho_A (exact, zero-mean source)
+gt1-D    s=1 :     0.12490355 |     0.43100783
+gt1-D    s=2 :     0.33955828 |     0.35802964
+gt1-D    s=3 :     0.28093625 |     0.49937250
+gt1-D    s=4 :     0.17731114 |     0.50026172
+gt1-D    s=5 :     0.19487848 |     0.72268044
+gt1-D    s=6 :     0.12500000 |     0.75000000
+gt1-D  rho_B strictly increasing: False ; rho_A strictly increasing: False  -> FAIL
+
+SUMMARY of gt1-C maxima (to be compared with the proven C_1, C_2 of GREENT.md section G2):
+  d=3 R=3 : m1 = 0.16049383   m2 = 0.00000000
+  d=3 R=4 : m1 = 0.16406250   m2 = 1.07500000
+  d=3 R=6 : m1 = 0.16589506   m2 = 1.00471380
+  d=4 R=3 : m1 = 0.12345679   m2 = 0.09876543
+  d=4 R=4 : m1 = 0.13783482   m2 = 1.71651786
+  d=4 R=6 : m1 = 0.16977914   m2 = 1.65889851

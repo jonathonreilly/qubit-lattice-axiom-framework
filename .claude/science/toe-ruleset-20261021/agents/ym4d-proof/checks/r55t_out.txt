@@ -1,0 +1,74 @@
+=== Part A: funnel, d = 4, L = 3 ===
+  order-averaged, k=2: phi = [Fraction(-1, 432), Fraction(-17, 104976)], Phi_2 = -65/26244
+A1: PASS  phi_1=-1/432 phi_2=-17/104976 Phi_2=-65/26244
+  order-averaged, k=3: phi = [Fraction(-1, 432), Fraction(-17, 104976), Fraction(0, 1)], Phi_k = -65/26244
+  order-averaged, k=4: phi = [Fraction(-1, 432), Fraction(-17, 104976), Fraction(0, 1), Fraction(0, 1)], Phi_k = -65/26244
+A2: PASS  termination phi_i = 0 for i >= 3 at k = 3, 4
+  Phi_1(d delta_c)(c) = -80/81; 3^(-4k)-1 = -80/81
+  Phi_2(d delta_c)(c) = -6560/6561; 3^(-4k)-1 = -6560/6561
+  Phi_3(d delta_c)(c) = -531440/531441; 3^(-4k)-1 = -531440/531441
+A3: PASS  Phi_k(d delta_c)(c) = 3^{-4k} - 1 (k-dependent)
+  h_0 kernel order-averaged: max|c| = 10/81, sum|c| = 8/3
+  h_0 kernel fixed order    : max|c| = 1/3, sum|c| = 8/3
+  T6 collision real (max differs): True;  2d*max|c|: avg 80/81, fixed 8/3
+  kernels supported on block-interior links: avg True, fixed True
+A4: PASS  sum|c| avg=8/3 fixed=8/3
+  A5 fixed-order (0123), k=2: phi = [Fraction(-1, 72), Fraction(0, 1)], Phi_2 = -1/72; differs from A1: True
+  A5 fixed-order (0123), k=3: phi = [Fraction(-1, 72), Fraction(0, 1), Fraction(0, 1)], Phi_3 = -1/72
+  A6(a) corner roots: phi = [Fraction(17, 1296), Fraction(0, 1)], Phi = 17/1296 -> A1 fails: True
+  A6(b) no 1/8: phi = [Fraction(-1, 54), Fraction(-17, 13122)], Phi = -130/6561 -> A1 fails: True
+A6: PASS  designed-FAIL controls fired
+A7: PASS  h_0(d lam) = mean - root value (both operators); Q_str d = d A
+=== Part B: TENTQ QFALSE ===
+  d=2 k=1 n=3: TV=12 (2d n^(d-1)=12) Qbox=12 maxD=4 D(c)=4 <chi,D_perp>=8 ||D_perp||=2 R=4/3 = 4/3; n^2-1=8, n^(d-2)-1/n=2/3
+  d=2 k=2 n=9: TV=36 (2d n^(d-1)=36) Qbox=36 maxD=4 D(c)=4 <chi,D_perp>=32 ||D_perp||=2 R=16/9 = 16/9; n^2-1=80, n^(d-2)-1/n=8/9
+  d=2 k=3 n=27: TV=108 (2d n^(d-1)=108) Qbox=108 maxD=4 D(c)=4 <chi,D_perp>=104 ||D_perp||=2 R=52/27 = 52/27; n^2-1=728, n^(d-2)-1/n=26/27
+  d=4 k=1 n=3: TV=216 (2d n^(d-1)=216) Qbox=216 maxD=8 D(c)=8 <chi,D_perp>=208 ||D_perp||=6 R=104/9 = 104/9; n^2-1=8, n^(d-2)-1/n=26/3
+  d=4 k=2 n=9: TV=5832 (2d n^(d-1)=5832) Qbox=5832 maxD=8 D(c)=8 <chi,D_perp>=5824 ||D_perp||=6 R=2912/27 = 2912/27; n^2-1=80, n^(d-2)-1/n=728/9
+B1: PASS  ||d chi^5||_1 = 2d n^{d-1}
+B2: PASS  box sum <chi^5, d* j0> = 2d n^{d-1}
+B3: PASS  ||D||_inf = 2d exactly
+B4: PASS  NEUT-box ratio >= n^2 - 1 (d=4)
+B5: PASS  partition of unity (1-D factor)
+  B6 control (scale n-1, d=4, n=3): TV = 64 vs 2d n^(d-1) = 216
+B6: PASS  control fired (B1 fails under corruption)
+=== Part C: bootstrap algebra ===
+C1: PASS  y = [Fraction(0, 1), Fraction(2, 1)]
+C2: PASS  M >= (A-B)/(1+eps) and M <= (A+B)/(1-eps) on 200 exact instances
+C3: PASS  scalar G=-1/2: y = 2/3 a
+=== Part D: arithmetic ===
+D1: PASS  0.0024768 - 65/26244 = 89/2050312500
+D2: PASS  243/260, mixed 486/65
+D3: PASS  (1/3)sum = (9/26)(n^3-1) k<=6: True; 0.3462 - 9/26 = 3/65000
+D4: PASS  8*65/26244 = 130/6561
+  log10 3 in [0.477121255, 0.477121255]; D in [151.609771638, 151.609771638]; k* in [160.379708395, 160.379708395]; k*_double in [80.939854197, 80.939854197]
+D5: PASS  k* and k*_double intervals; FACEB 81.7 refuted: True
+=== Part E: root map and top-level root charges, d = 2, L = 3, k = 1 ===
+E1: PASS  root covariance Q(d lambda) = d(ev lambda)
+  E2: D(Q^T B) = {(1, 1): Fraction(-1, 1), (4, 1): Fraction(1, 1)}; ev^T d*B = {(4, 1): Fraction(1, 1), (1, 1): Fraction(-1, 1)}; nonzero off roots: {}
+E2: FAIL  GS-BASE reading (D == 0 incl. roots) FAILS: D(Q^T B) = ev^T d*B exactly: True; vanishes off roots ((cc)): True
+E3: PASS  co-closed B gives D(Q^T B) = {}
+=== SUMMARY ===
+A1 PASS
+A2 PASS
+A3 PASS
+A4 PASS
+A6 PASS
+A7 PASS
+B1 PASS
+B2 PASS
+B3 PASS
+B4 PASS
+B5 PASS
+B6 PASS
+C1 PASS
+C2 PASS
+C3 PASS
+D1 PASS
+D2 PASS
+D3 PASS
+D4 PASS
+D5 PASS
+E1 PASS
+E2 FAIL
+E3 PASS

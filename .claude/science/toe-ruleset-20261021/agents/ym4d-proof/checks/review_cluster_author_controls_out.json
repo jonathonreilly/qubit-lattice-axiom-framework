@@ -1,0 +1,138 @@
+{
+  "all_six_author_mutations_detected": true,
+  "exact_author_replay": true,
+  "frozen_revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "runs": [
+    {
+      "all_failed_predicates": [],
+      "detected_at_intended_gate": null,
+      "duration_seconds": 0.04653283301740885,
+      "exact_replay": true,
+      "exit_code": 0,
+      "expected_failed_predicate": null,
+      "mutation": null,
+      "name": "replay",
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_replay.py",
+      "script_sha256": "5f51587d7f1630f6db15fef1dd697340a096839808ea00941b751a12bd70f0e6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "32cd636afae7bf554020db1903051c7efac9357c681f59816e8e2345d1be4239"
+    },
+    {
+      "all_failed_predicates": [
+        "full_logdet_two_exact_paths"
+      ],
+      "detected_at_intended_gate": true,
+      "duration_seconds": 0.04709704197011888,
+      "exact_replay": null,
+      "exit_code": 1,
+      "expected_failed_predicate": "full_logdet_two_exact_paths",
+      "mutation": {
+        "after": "det_derivative = -det[tk] / det[ZERO]",
+        "before": "det_derivative = -det[tk] / (2 * det[ZERO])"
+      },
+      "name": "determinant_half_factor",
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_determinant_half_factor.py",
+      "script_sha256": "749c5c70a6523202040696541fb08ebae62e99052eee37709765af00048159d8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "79e0dc0c92caa5fe752ea5e8e4db35c4b3889e1b6a166b3f24aece63fed90e9f"
+    },
+    {
+      "all_failed_predicates": [
+        "full_logdet_two_exact_paths"
+      ],
+      "detected_at_intended_gate": true,
+      "duration_seconds": 0.04719066701363772,
+      "exact_replay": null,
+      "exit_code": 1,
+      "expected_failed_predicate": "full_logdet_two_exact_paths",
+      "mutation": {
+        "after": "trace_derivative = sum(",
+        "before": "trace_derivative = -sum("
+      },
+      "name": "trace_sign",
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_trace_sign.py",
+      "script_sha256": "ff7339007b9494a238d6567b18c111fc491cd2e8abfe58af0a98be312979eb69",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c065618afda2e6eccd86b82936437fd08d85825935c6a99f8c9ceb9273b794e9"
+    },
+    {
+      "all_failed_predicates": [
+        "all_log_supports_connected"
+      ],
+      "detected_at_intended_gate": true,
+      "duration_seconds": 0.047050332999788225,
+      "exact_replay": null,
+      "exit_code": 1,
+      "expected_failed_predicate": "all_log_supports_connected",
+      "mutation": {
+        "after": "support=frozenset([x, y])",
+        "before": "support=frozenset(range(x, y + 1))"
+      },
+      "name": "long_connector",
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_long_connector.py",
+      "script_sha256": "d3d074db17e571c9493867604e2abea1df2beb4bcd923abf4377ad8990e72b05",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "0b611714520c21976ea0d7b8374b26530bca79e25e862534bd2397f6f7aaa547"
+    },
+    {
+      "all_failed_predicates": [
+        "long_jump_source_coefficient",
+        "sign_corruption_detected"
+      ],
+      "detected_at_intended_gate": true,
+      "duration_seconds": 0.046712332987226546,
+      "exact_replay": null,
+      "exit_code": 1,
+      "expected_failed_predicate": "long_jump_source_coefficient",
+      "mutation": {
+        "after": "probe_expected = F(1, 101 * 104 * 107)",
+        "before": "probe_expected = F(1, 101 * 104 * 108)"
+      },
+      "name": "source_expected",
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_source_expected.py",
+      "script_sha256": "c6d09607af3ef8a593f4d8e3133413f34e203eb704f22a301ded7abfd985d1bd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ed56c67a4187738d4679cb4788dd19702e86e509e40ef7b030c50d94439a46ec"
+    },
+    {
+      "all_failed_predicates": [
+        "finite_operator_majorants"
+      ],
+      "detected_at_intended_gate": true,
+      "duration_seconds": 0.046816457994282246,
+      "exact_replay": null,
+      "exit_code": 1,
+      "expected_failed_predicate": "finite_operator_majorants",
+      "mutation": {
+        "after": "max_row == max_col == F(729, 8191)",
+        "before": "max_row == max_col == F(729, 8192)"
+      },
+      "name": "row_majorant",
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_row_majorant.py",
+      "script_sha256": "afbcc33c7ddd96d2351a8bfa9f2ee5d7042b3eec05a335785b13341966a92931",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8cffb13de8404cc0e557ba6d75c4026b9a493f7400475b4d19e0c3c9fd0fde24"
+    },
+    {
+      "all_failed_predicates": [
+        "direct_log_equals_connected_log_to_degree_6"
+      ],
+      "detected_at_intended_gate": true,
+      "duration_seconds": 0.04656029201578349,
+      "exact_replay": null,
+      "exit_code": 1,
+      "expected_failed_predicate": "direct_log_equals_connected_log_to_degree_6",
+      "mutation": {
+        "after": "if s != t and s & t:",
+        "before": "if s & t:"
+      },
+      "name": "self_polymer",
+      "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_author_self_polymer.py",
+      "script_sha256": "2a0952edfb550604672a6fb790336370b1e2d3ed92980a45c28e91fb75486815",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "23738af1f32117f1fcb4ec69057f12b7c010207ca66dd7e36948e1a3862a2f3b"
+    }
+  ],
+  "scope": "Reproduction and mutation sensitivity of finite author checker only; no general theorem certificate",
+  "source_sha256": "5f51587d7f1630f6db15fef1dd697340a096839808ea00941b751a12bd70f0e6"
+}

@@ -1,0 +1,181 @@
+{
+  "frozen_utc": "2026-10-30T18:48:04.903920+00:00",
+  "head": "30c0d084726c3ee08144516dc86833f085797ff6",
+  "procedure_pin": "53f2c0af7eb59438389b4c2fe75952932d4e95fe",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "max",
+  "backend_attestation": null,
+  "preflight": "go; disk 31 GB, memory 56% free, load 2.2, nice works, origin reachable; ulimit unavailable",
+  "verdict": "pass",
+  "scope": "GH49 first actual RD failure-history original-source-only connected norm on its stated bare-step domain; applicability reuse, not whole-library review",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/inherited-source-norm-30c0d08472.md",
+    "sha256": "09ec8ec548ce451f99d2f83d5d1e57cf828245d414a1a14ed69dc191de20cdcd"
+  },
+  "source_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "sha256": "2b0b511ea539a76ee410dad2f26adf88d9cab294123cad9256ca840b896d08e9",
+      "read_lines_inclusive": [
+        [
+          1,
+          67
+        ],
+        [
+          162,
+          704
+        ],
+        [
+          770,
+          1039
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "read_lines_inclusive": [
+        [
+          40,
+          145
+        ],
+        [
+          249,
+          354
+        ],
+        [
+          358,
+          483
+        ],
+        [
+          485,
+          741
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "817c5ec9516d8c97aee7d41ee08e5a71b827bdacb1c1ee8a34a471111fb6dc9b",
+      "read_lines_inclusive": [
+        [
+          1,
+          45
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "read_lines_inclusive": [
+        [
+          49,
+          86
+        ],
+        [
+          165,
+          199
+        ],
+        [
+          365,
+          447
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "read_lines_inclusive": [
+        [
+          94,
+          115
+        ],
+        [
+          382,
+          434
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "read_lines_inclusive": [
+        [
+          153,
+          181
+        ],
+        [
+          250,
+          275
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "read_lines_inclusive": [
+        [
+          249,
+          370
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "read_lines_inclusive": [
+        [
+          104,
+          194
+        ],
+        [
+          264,
+          332
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md",
+      "sha256": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+      "read_lines_inclusive": [
+        [
+          24,
+          148
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "read_lines_inclusive": [
+        [
+          1,
+          130
+        ]
+      ],
+      "read_mode": "actual source windows, reusing unchanged prior reads where already available"
+    }
+  ],
+  "reused_independent_review_scope": "WR bounded bare-step real moving-center normalized-density forests, source jets, complete readers, pins and rescalings; no upstream whole-note or physical-target certification",
+  "author_routing_records_read": false,
+  "external_primary_reads": [],
+  "scientific_jobs": [],
+  "lint": {
+    "method": "direct lint_one_file, apply_fix=False",
+    "tool_pin": "53f2c0af7eb59438389b4c2fe75952932d4e95fe",
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/inherited-source-norm-30c0d08472.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  }
+}

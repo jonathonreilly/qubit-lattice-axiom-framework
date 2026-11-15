@@ -1,0 +1,51 @@
+{
+  "frozen_utc": "2026-10-29T23:32:05.620841+00:00",
+  "finding": "FR-DOMAIN-1",
+  "status": "RESOLVED_AT_BOUNDED_SCOPE",
+  "before": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v1.md",
+    "bytes": 33082,
+    "sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882"
+  },
+  "after": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v2.md",
+    "bytes": 35303,
+    "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86"
+  },
+  "current_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+    "bytes": 35303,
+    "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86"
+  },
+  "author_correction_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.json",
+    "bytes": 6258,
+    "sha256": "90442d8a513d1770021ea25f644eea1e55598ebc63c91fec3d6c46074215c87d"
+  },
+  "author_correction_note": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.md",
+    "bytes": 4207,
+    "sha256": "65551b97ab4f8ffae2e945c02b471013a4d395744e42c297f7b4fc9d224575d4"
+  },
+  "diff": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_diff.txt",
+    "bytes": 5644,
+    "sha256": "71ddfc97663a5ef4874b7a59453c3833fc372d6d3617c6c6964b75fb086d38e4"
+  },
+  "changed_hunks": 3,
+  "read_coverage": "Complete exact diff; corrected scalar functional/FR9 lines90-175, full affected U=0 proof371-425, actual theorem and exclusions430-574. Remaining source text byte-identical to the fully read original.",
+  "analytic_confirmation": [
+    "FR9 now defines only normalized full-Gaussian polynomial moments. Neither arbitrary finite-disc readers nor unrestricted entire readers are extended.",
+    "Absolute residual quadratic series is dominated by exp(sum_i s_i |z_i|^2/2); selected forest endpoint degrees remain explicit.",
+    "With r=1/16 and s<=1/64, real precision after reserving exp(-p^2/64) is at least 1-r-s-1/32=57/64>0.",
+    "End precision before reservation is at least 3/8-(1+r)^2/128=11999/32768; subtracting 1/64 leaves 11487/32768>0.",
+    "Remaining moments fit the deliberately enlarged constants. This resums residual exponentials by absolute integration, not by a divergent sum of loose factorial bounds.",
+    "The comparison is U=0. FR8 and the interacting bounded-decoration theorem remain on the original finite contour domain.",
+    "Fixed original source radius, actual interacting Haar sector, determinant/vacuum/z_p^d, shrinking curvature window and explicit unestimated complements are unchanged."
+  ],
+  "original_artifact_bindings_verified": 12,
+  "original_non_source_artifacts_unchanged": 11,
+  "producer_input_hashes_verified": 10,
+  "new_numerical_runs_for_correction": 0,
+  "independence": "Same reviewer context affected confirmation after original independent freeze and disclosed author numerical exposure; not a new fresh reviewer."
+}

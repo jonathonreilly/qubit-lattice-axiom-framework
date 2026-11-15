@@ -1,0 +1,16 @@
+d=2 T=5 k=1 kap=(1.0,): ne=1.3e-15 Q1 4.72e-14 Q2 4.01e-14 Q3 2.01e-15 V2 4.8e-14 (0 s, RSS 63 MB)
+d=2 T=5 k=2 kap=(1.0, 1.0): ne=5.8e-15 Q1 1.17e-13 Q2 9.68e-14 Q3 1.87e-14 V2 1.1e-13 Q4 4.30e-13 (Laplace vs direct f 4.4e-16) (0 s, RSS 64 MB)
+d=2 T=5 k=3 kap=(1.0, 1.0, 1.0): ne=5.1e-15 Q1 1.93e-13 Q2 1.34e-13 Q3 1.41e-13 V2 1.9e-13 (0 s, RSS 77 MB)
+d=2 T=5 k=2 kap=(0.5, 2.0): ne=2.3e-15 Q1 1.13e-13 Q2 9.27e-14 Q3 4.15e-14 V2 1.2e-13 (0 s, RSS 77 MB)
+d=2 T=5 k=3 kap=(0.5, 2.0, 1.0): ne=4.4e-15 Q1 1.53e-13 Q2 1.11e-13 Q3 1.30e-13 V2 1.9e-13 (0 s, RSS 78 MB)
+d=3 T=3 k=1 kap=(1.0,): ne=1.1e-14 Q1 2.28e-14 Q2 2.07e-14 Q3 1.70e-15 V2 2.8e-14 (0 s, RSS 79 MB)
+d=4 T=3 k=1 kap=(1.0,): ne=1.8e-14 Q1 7.82e-15 Q2 7.55e-15 Q3 4.04e-15 V2 1.1e-14 Q4 2.13e-13 (Laplace vs direct f 4.2e-16) (2 s, RSS 89 MB)
+d=4 T=3 k=1 kap=(2.5,): ne=1.2e-14 Q1 1.91e-14 Q2 1.84e-14 Q3 4.10e-15 V2 2.5e-14 (0 s, RSS 91 MB)
+d=4 T=2 k=2 kap=(1.0, 1.0): ne=3.1e-14 Q1 7.97e-15 Q2 8.47e-15 Q3 1.36e-14 V2 1.0e-14 (2 s, RSS 458 MB)
+V1: PASS
+V2: PASS
+Q1: PASS
+Q2: PASS
+Q3: PASS
+Q4: PASS
+c26 A: VALID; time 5 s, peak RSS 458 MB

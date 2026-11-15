@@ -1,0 +1,115 @@
+{
+  "utc": "2026-10-30T09:52:57.157338+00:00",
+  "kind": "final source integrity and static artifact checks; no numerical proof credit",
+  "issues": [],
+  "head": "0f561ef0b2dba3b024190fc55717c5b0ca7db881",
+  "scientific_target": "OPEN: all-history matched local mixed-group bound",
+  "independent_review": "LAND: scoped partial research packet, same-family fresh context, no binding fixes",
+  "numerical_controls": "NOT RUN: nice refused; empty check list",
+  "tracked_changes": [],
+  "staged_changes": [],
+  "source_checks": {
+    "REALRGA.md": {
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "unchanged": true
+    },
+    "REALRGB.md": {
+      "sha256": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+      "unchanged": true
+    },
+    "REVIEW_REALRGA.md": {
+      "sha256": "37f34b77fd487bc2eff8b3b624854cb636b8dd016c2e5d201a2a02a88fdac2d7",
+      "unchanged": true
+    },
+    "REVIEW_REALRGB.md": {
+      "sha256": "dfd8abfde28f8315289b7788ff6e6ba6d74b377b79614b39cfca09690077b07f",
+      "unchanged": true
+    },
+    "CHARGE.md": {
+      "sha256": "8c5a5ecdb95a32089f2005bf6597d4aedefa660b9b9f8c1cc7b7a01374afc1ef",
+      "unchanged": true
+    },
+    "JMBRA.md": {
+      "sha256": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+      "unchanged": true
+    },
+    "JMBRB.md": {
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "unchanged": true
+    },
+    "RENEW.md": {
+      "sha256": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+      "unchanged": true
+    },
+    "RD3.md": {
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "unchanged": true
+    },
+    "RD4.md": {
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "unchanged": true
+    },
+    "LIB1.md": {
+      "sha256": "1e843c88ae26a2e69241dbdc3fa72c5b54e49a3b1669565f9e869a620a19aad1",
+      "unchanged": true
+    },
+    "PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "unchanged": true
+    },
+    "HANDOFF.md": {
+      "sha256": "596c4b34617bb1b1e008a99756b81f54cd03d856a3d3220d131ac63bb8c7a27d",
+      "unchanged": true
+    },
+    "briefs_q/MIXSMALL/AUTHOR.md": {
+      "sha256": "40f9355313dd29a65df1c84f34555f31ddfa7c48a68eb1acbf0906769435117b",
+      "unchanged": true
+    },
+    "briefs_q/MIXSMALL/REVIEW.md": {
+      "sha256": "52f376a24785dde64bbed1d2e4a55331a8dc3262ea0bc1a513475a9641fde311",
+      "unchanged": true
+    },
+    "RD.md": {
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "unchanged": true
+    },
+    "FINITE_COUPLING_KERNEL_ASTRA.md": {
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "unchanged": true
+    },
+    "MASS_GAP_CONSTRUCTION_ASTRA.md": {
+      "sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2",
+      "unchanged": true
+    },
+    "SOURCE_LOCAL_RETURN_ASTRA.md": {
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "unchanged": true
+    },
+    "HIST.md": {
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "unchanged": true
+    },
+    "CODEX_REVIEW_LCONV.md": {
+      "sha256": "536a2a690ab12e6f4e94827003d500159f40b2132b5cac05a85a0978242a0dcd",
+      "unchanged": true
+    }
+  },
+  "artifacts": {
+    "MIXSMALL.md": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+    "MIXSMALL_LOG.md": "84030c3084d80f35ac1c5e1cb0c3aa6592ea9ab866a5ca3a40df920daec7dd11",
+    "checks/mixsmall_additional_input_sha256.txt": "50cc0920a7fe5f59097c1d60247ba63909cb713d87bad5c8fb27c5a77434559f",
+    "checks/mixsmall_author_validation.json": "a8f4d9e40669df3207a03b70952f18540e8d79949015279fbd542a5d70f15500",
+    "checks/mixsmall_check.py": "fa233561548b4ccc0250c5291365b75021ef522e8ce50a4ff216deb5ed4876b7",
+    "checks/mixsmall_criteria.md": "8fe1234e0958c07439e312b236e3d94d5f6552818c73bd6983cf33321d920f4e",
+    "checks/mixsmall_hole_analysis.md": "2309f88a022a4328be77e3068dc6d159c88d24354aca75be9b8beeb1eba84cd5",
+    "checks/mixsmall_input_sha256.txt": "13dd25b68dd0e283e3e4b9bf0f0becffc9a2d0f51f268120c29a59e9233be9eb",
+    "checks/mixsmall_normalizer_search.txt": "2f81952a642c5f72ca55d689e0f92f4b62ac374e92920a7ab81f4d720a830ccb",
+    "checks/mixsmall_numeric.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/mixsmall_price_analysis.md": "8d0845cd1254984e4ba57b07ad60156506d293c2ba314e68a2f7c6be1f297e35",
+    "checks/mixsmall_result.json": "f855679ac98f0062f210374cc31104dbc7da92aeba89d8f3eb78b8ee90380ad3",
+    "checks/mixsmall_review.md": "500ddf0445ab2324acad15a1456b94668bba0ddae83fd66d1629246a22caef8e",
+    "checks/mixsmall_scoped_search.txt": "e83cac4d35ecbb18c0ed08980150fe75445d47387984549117a8d038366bae54",
+    "checks/mixsmall_stderr.txt": "1ae2ce53f6c4a3265acd385e7e4a21d827a2b5594337d0d9ae68b92a856b30dc",
+    "checks/mixsmall_stdout.txt": "f855679ac98f0062f210374cc31104dbc7da92aeba89d8f3eb78b8ee90380ad3"
+  }
+}

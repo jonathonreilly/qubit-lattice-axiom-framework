@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "role": "independent reviewer final artifact identity receipt, not audit or integration approval",
+  "created_utc": "2026-10-30T05:03:08.254555+00:00",
+  "verdict": "LAND",
+  "scope": "Only the frozen shifted nonlinear reader-return source and inspected mathematical dependencies at their stated supplied-model, fixed-original-a chart scope.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+    "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "bytes": 36894,
+    "lines": 711
+  },
+  "source_stage_before_author_packet": true,
+  "source_stage_record": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_source_findings.md",
+    "sha256": "a9f6de75226ec2767fd824423105141cd351fbc63367390e5d455218d9034f2c",
+    "bytes": 14469,
+    "lines": 256
+  },
+  "review_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "84854a635242fdf10fd397f0684e7932d08bc149cefde4ff4514ce8bfb67d76c",
+      "bytes": 8044,
+      "lines": 139
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_source_findings.md",
+      "sha256": "a9f6de75226ec2767fd824423105141cd351fbc63367390e5d455218d9034f2c",
+      "bytes": 14469,
+      "lines": 256
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_packet_check.json",
+      "sha256": "2fa70728774063088b7fe1ef17899e3be01ac80d67668babfd00a906b5729b6e",
+      "bytes": 17418,
+      "lines": 480
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9
+    }
+  ],
+  "new_receipt_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_receipt.json",
+  "head": "da8cb2f1cbee73b3df14c46cd130ceb93111731d",
+  "head_movement": "The shared checkout advanced independently; named source and consumed dependency hashes were rechecked unchanged. Whole-PR/source-preservation/combined-integration checks belong to the coordinator.",
+  "mathematical_checks": "Independent written derivations in the immutable source findings; no numerical physics or scientific runner.",
+  "packet_checks": {
+    "passed": 34,
+    "total": 34,
+    "receipt": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_packet_check.json",
+      "sha256": "2fa70728774063088b7fe1ef17899e3be01ac80d67668babfd00a906b5729b6e",
+      "bytes": 17418,
+      "lines": 480
+    }
+  },
+  "review_markdown_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "links_resolve_in_repo": true,
+      "balanced_fences": true,
+      "no_trailing_whitespace": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_source_findings.md",
+      "links_resolve_in_repo": true,
+      "balanced_fences": true,
+      "no_trailing_whitespace": true
+    }
+  ],
+  "diff_checks": [
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "vocabulary_check": {
+    "mode": "report-only",
+    "exit_code": 0,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    },
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9
+    },
+    "script": {
+      "path": "scripts/vocab_lint.py",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "bytes": 14183,
+      "lines": 392
+    },
+    "rules": {
+      "path": "docs/repo/controlled_vocabulary.yaml",
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "bytes": 53269,
+      "lines": 939
+    },
+    "input_files": [
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+        "bytes": 36894,
+        "lines": 711
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "84854a635242fdf10fd397f0684e7932d08bc149cefde4ff4514ce8bfb67d76c",
+        "bytes": 8044,
+        "lines": 139
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_source_findings.md",
+        "sha256": "a9f6de75226ec2767fd824423105141cd351fbc63367390e5d455218d9034f2c",
+        "bytes": 14469,
+        "lines": 256
+      }
+    ],
+    "command": "python3 scripts/vocab_lint.py --report-only --report-path .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_vocab.json .claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md .claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_source_findings.md"
+  },
+  "changed_file_scope": "Exactly the four review_artifacts plus this receipt were created by this reviewer. No existing source or author package was edited. Other actors changes are not this reviewers work.",
+  "commits": 0,
+  "pushes": 0,
+  "pr_edits": 0,
+  "worker_launches": 0,
+  "audits": 0,
+  "material_findings": 0,
+  "source_fixes": 0,
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

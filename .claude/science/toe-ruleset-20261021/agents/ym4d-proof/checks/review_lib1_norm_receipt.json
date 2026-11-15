@@ -1,0 +1,160 @@
+{
+  "frozen_utc": "2026-10-29T20:45:25.654624+00:00",
+  "scope": "B1 implementation-discrimination repair only",
+  "verdict": "LAND",
+  "same_family_review": "Codex reviewing Codex; reviewer did not author repair. Requested Astra/max; backend identity not independently observable. Author code exposed before numerical criteria.",
+  "input_commit": "fcdd32c83bc5aed08ef4f3aa5da512e668d8b216",
+  "original_commit": "f15a7ad33f90d3de8ef2f8b40cada95d009f60bd",
+  "input_repair_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_fix_receipt.json",
+    "sha256": "b5bed0e03189ff647c148aa501e3f9da68a93b87a4708dff65c840e6ebe0b70b",
+    "bytes": 7022
+  },
+  "input_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LIB1.md",
+    "sha256": "098bd38d680f82877911b34782f66394e2d6139c43e61b344b9d3bcef24ff35f",
+    "bytes": 41074
+  },
+  "input_checker": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_check.py",
+    "sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+    "bytes": 13437
+  },
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_LIB1_NORM_CONTROL_ASTRA.md",
+    "sha256": "1b05620925d5a4d95d9e3ed3be8a005b3bc7221fd3f2e6b6c959ca6618772e94",
+    "bytes": 9646
+  },
+  "criteria": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_criteria.md",
+    "sha256": "e159322586c475e9ee2a16a599f0e935a1d1deae1c696b8cbecb003570c9cdeb",
+    "bytes": 1853
+  },
+  "bindings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_bindings.json",
+    "sha256": "d3c3d31dfb0c4522781a546ac4b30e09bc25596e53507b8a82b00486517cdff8",
+    "bytes": 7163
+  },
+  "results": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_result.json",
+    "sha256": "67cffaf5b865398d67de02f509f1a7d7215d769f9db7cb9cfff4d52f45122506",
+    "bytes": 11227
+  },
+  "validation": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_validation.json",
+    "sha256": "e08ee79ee6b19d4b7629b60196ccb2cc2cb2f9055d0f1ed5bcfbd85ab50133f4",
+    "bytes": 1037
+  },
+  "numerical_outcomes": "646 exact norm comparisons on44 graphs;72 relabelled/coefficient-varied cycle cases;6 asymmetric path relabellings;all2184 inequality calls plus2 witnesses bound to shared full-output function;original survivor reproduced;all3 corrected selector mutants rejected at exact expected assertions.",
+  "numerical_failures": [],
+  "administrative_failure": "Initial ad-hoc binding command failed parsing due to an extra brace before executing any check; corrected retry succeeded, recorded in bindings.",
+  "thresholds_relaxed": false,
+  "source_changes_by_reviewer": false,
+  "git_or_shared_or_audit_mutations": false,
+  "prior_CB_review_44_artifacts_unchanged": true,
+  "material_findings": [],
+  "full_library_rereview": false,
+  "whole_PR_or_audit_authority": false,
+  "remaining_targets": {
+    "unrestricted_history_source_and_sea_estimates": "OPEN",
+    "full4D_YM_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN"
+  },
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_LIB1_NORM_CONTROL_ASTRA.md",
+      "sha256": "1b05620925d5a4d95d9e3ed3be8a005b3bc7221fd3f2e6b6c959ca6618772e94",
+      "bytes": 9646
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_baseline_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_baseline_stdout.json",
+      "sha256": "819b93b7bca2dfd429ef7cb8f712df91b265959c59b6765d4401477f64cfaa5e",
+      "bytes": 11445
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_bindings.json",
+      "sha256": "d3c3d31dfb0c4522781a546ac4b30e09bc25596e53507b8a82b00486517cdff8",
+      "bytes": 7163
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_both_active_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_both_active_stdout.json",
+      "sha256": "a1076572cd45dbeba2093ba6ae6342a254bc01447993e885c626f91e7dd0a156",
+      "bytes": 9549
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_check.py",
+      "sha256": "09ed5d5104fb8fc76bfadc1a659a4ec1058d33c0047a3ce8bff9d8fd3b28d180",
+      "bytes": 12748
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_criteria.md",
+      "sha256": "e159322586c475e9ee2a16a599f0e935a1d1deae1c696b8cbecb003570c9cdeb",
+      "bytes": 1853
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_original_active_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_original_active_stdout.json",
+      "sha256": "3aa170598e016678ca24473ec7cbebf56549bd45aa1885dd6b30af2d24c11cd6",
+      "bytes": 10815
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_result.json",
+      "sha256": "67cffaf5b865398d67de02f509f1a7d7215d769f9db7cb9cfff4d52f45122506",
+      "bytes": 11227
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_roots_active_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_roots_active_stdout.json",
+      "sha256": "453698f6a3dcf3c732b3c20a89d161445ff8932fb8bc5fb2cb37b301530d524d",
+      "bytes": 9678
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_run_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_run_stdout.txt",
+      "sha256": "facd3783d9ba6a7a8da299408aa342731e2c13145bf722f785f19e9236cad657",
+      "bytes": 1071
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_validation.json",
+      "sha256": "e08ee79ee6b19d4b7629b60196ccb2cc2cb2f9055d0f1ed5bcfbd85ab50133f4",
+      "bytes": 1037
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_vocab_lint.txt",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_weight_active_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_weight_active_stdout.json",
+      "sha256": "53b66917a14541560545830a61f04f357c3eaa57d38881cbbc708261b477e9e4",
+      "bytes": 9555
+    }
+  ]
+}

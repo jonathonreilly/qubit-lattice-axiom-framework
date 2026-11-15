@@ -1,0 +1,7 @@
+pair kappa=1 khat=1 eta=111/10000 r0=57/100: PASS S1..S4=(True, True, True, True)  [rho_up=0.21631 ePsi_up=0.32328 PsiU/2=0.33741 brV_lo=0.17229 rhs_up=0.16660 f0_up=0.12611]
+pair kappa=1/4 khat=1 eta=77/10000 r0=37/100: PASS S1..S4=(True, True, True, True)  [rho_up=0.17462 ePsi_up=0.27888 PsiU/2=0.29952 brV_lo=0.18143 rhs_up=0.17252 f0_up=0.13504]
+pair kappa=4 khat=1 eta=117/10000 r0=13/20: PASS S1..S4=(True, True, True, True)  [rho_up=0.26058 ePsi_up=0.39395 PsiU/2=0.39870 brV_lo=0.16422 rhs_up=0.16075 f0_up=0.11630]
+pair kappa=1/4 khat=16 eta=37/10000 r0=1/4: PASS S1..S4=(True, True, True, True)  [rho_up=0.14560 ePsi_up=0.22628 PsiU/2=0.28162 brV_lo=0.17693 rhs_up=0.14415 f0_up=0.09515]
+pair kappa=4 khat=16 eta=41/5000 r0=3/5: PASS S1..S4=(True, True, True, True)  [rho_up=0.23504 ePsi_up=0.35549 PsiU/2=0.35878 brV_lo=0.12040 rhs_up=0.11754 f0_up=0.08772]
+CONTROL kappa=1 khat=1 eta=0.02 r0=0.57: FAIL S1..S4=(True, False, False, False) (designed to FAIL)  [rho_up=0.40565 ePsi_up=0.79773 PsiU/2=0.33741 brV_lo=-0.10313 rhs_up=0.14416 f0_up=0.23266]
+SUMMARY: all printed pairs PASS = True | control failed as designed = True

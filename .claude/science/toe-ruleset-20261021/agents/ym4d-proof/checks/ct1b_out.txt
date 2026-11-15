@@ -1,0 +1,101 @@
+================================================================================
+POST-HOC 1 -- schedule factors F, with my criteria's three errors corrected
+================================================================================
+  written schedule, scanned over R >= 128 (REVIEW_SQ_S4 S4-6's fixed R_0):
+    max F = 4080.0000 at R = 255 (i* = 1)
+      R=128    i*=1   F=2048.0000
+      R=200    i*=1   F=3200.0000
+      R=255    i*=1   F=4080.0000
+      R=256    i*=2   F=1448.1547
+      R=511    i*=2   F=2045.9990
+      R=512    i*=3   F=1217.7481
+      R=1023   i*=3   F=1447.8010
+      R=4096   i*=6   F=1046.4227
+      R=65536  i*=10  F=1025.3872
+    trivial branch for R < 128 forces C_T >= 127^2 = 16129
+
+  optimised schedule (budget R/2 - 4, gaps prop 2^-i, dmin 12), R >= 32:
+    max F = 175.8028 at R = 79 (i* = 1)
+    asymptote F(R -> inf) = 64.0099
+    trivial branch for R < 32 forces C_T >= 31^2 = 961
+
+  dmin sensitivity of the optimised max F and of the trivial floor:
+    dmin=4     R_0=16    max F=83.565 at R=31     trivial floor=(R_0-1)^2=225
+    dmin=8     R_0=24    max F=128.723 at R=55     trivial floor=(R_0-1)^2=529
+    dmin=12    R_0=32    max F=175.803 at R=79     trivial floor=(R_0-1)^2=961
+    dmin=16    R_0=40    max F=223.347 at R=103    trivial floor=(R_0-1)^2=1521
+    dmin=24    R_0=56    max F=318.895 at R=151    trivial floor=(R_0-1)^2=3025
+
+================================================================================
+POST-HOC 2 -- beta-products B(m) = prod_{i>=0} beta_i^{m/p_i}
+================================================================================
+    m=4     B(m)=     43.9486   (crude bound 2^{2m} = 256)
+    m=4.1   B(m)=     48.3080   (crude bound 2^{2m} = 294.1)
+    m=4.25  B(m)=     55.6710   (crude bound 2^{2m} = 362)
+    m=4.5   B(m)=     70.5202   (crude bound 2^{2m} = 512)
+    m=5     B(m)=    113.1570   (crude bound 2^{2m} = 1024)
+    m=6     B(m)=    291.3519   (crude bound 2^{2m} = 4096)
+    m=8     B(m)=   1931.4811   (crude bound 2^{2m} = 6.554e+04)
+
+================================================================================
+POST-HOC 3 -- C_T(q):  a = q/(q-4) is the exponent on the potential norm
+================================================================================
+  C_T = sqrt(6) * F * B(4a) * Chat
+  Chat = 0.5*(A_s gamma_s)^a + 0.5*(A_c gamma_c)^2 + 288*C_1*Q
+  A_s gamma_s = 36 * C_1 * C_V * |N_1^plaq|     (the nbr exponents cancel exactly)
+  A_c gamma_c = 36 * C_1 * |N_3^plaq|^{3/4} * c_c * eps_star   (V_c: sigma=4 always, a_c=2)
+  |N_1^plaq| = 486, |N_3^plaq|^{3/4} = 1314.9, F = 175.80 (optimised)
+
+  reference point C_1 = 20, C_V = 100, c_c = 50, eps_* = 1e-4:
+    q      a        C_T          verdict vs 1e13
+    5      5.0000   1.852e+48    OVER
+    6      3.0000   7.831e+29    OVER
+    8      2.0000   5.092e+20    OVER
+    12     1.5000   1.299e+16    OVER
+    16     1.3333   3.848e+14    OVER
+    24     1.2000   2.385e+13    OVER
+    32     1.1429   7.543e+12    UNDER
+    50     1.0870   2.604e+12    UNDER
+    64     1.0667   1.814e+12    UNDER
+    100    1.0417   1.192e+12    UNDER
+    200    1.0204   8.546e+11    UNDER
+    400    1.0101   7.341e+11    UNDER
+
+  breakdown at q = 8 and q = 100 (reference point):
+      q=8:
+        a=2.0000  (A g)_s=3.499e+07  term_s=6.122e+14  term_c=1.12e+07  288C1Q=1.575e+08  B=1931
+      q=100:
+        a=1.0417  (A g)_s=3.499e+07  term_s=3.608e+07  term_c=1.12e+07  288C1Q=6.499e+06  B=51.45
+
+  sensitivity: C_T at q = 8 and q = 100 over the SUPPLIED constants
+    C_1        C_V        C_T(q=8)       C_T(q=100)    
+    5          20         1.273e+18      5.802e+10     
+    5          100        3.183e+19      2.402e+11     
+    5          500        7.956e+20      1.204e+12     
+    20         20         2.037e+19      4.267e+11     
+    20         100        5.092e+20      1.192e+12     
+    20         500        1.273e+22      5.242e+12     
+    100        20         5.092e+20      7.15e+12      
+    100        100        1.273e+22      1.12e+13      
+    100        500        3.183e+23      3.266e+13     
+
+  the q needed to bring C_T under 1e13, as a function of (C_1, C_V):
+    C_1=5      C_V=20      q_min = 16
+    C_1=5      C_V=100     q_min = 21
+    C_1=5      C_V=500     q_min = 32
+    C_1=20     C_V=20      q_min = 20
+    C_1=20     C_V=100     q_min = 30
+    C_1=20     C_V=500     q_min = 59
+    C_1=100    C_V=20      q_min = 48
+    C_1=100    C_V=100     q_min = 132
+    C_1=100    C_V=500     q_min = None
+
+  eps_* sensitivity of the V_c term at q = 100 (C_1=20, C_V=100):
+    eps_*=1e-02     C_T = 2.483e+15
+    eps_*=1e-04     C_T = 1.192e+12
+    eps_*=1e-06     C_T = 9.434e+11
+    eps_*=1e-08     C_T = 9.434e+11
+
+  the written schedule instead of the optimised one, at q=100 (factor F only):
+    F_written(max, R>=128) = 4080.00 -> C_T scales by 23.21
+================================================================================

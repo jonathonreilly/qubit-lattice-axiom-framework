@@ -1,0 +1,154 @@
+{
+  "created_utc": "2026-10-29T18:04:28.772957+00:00",
+  "finding": "SEA-CONTROL-01",
+  "scope": "Repair an author diagnostic placeholder; no mathematical theorem text or original evidence changed. Independent affected re-review pending.",
+  "reviewer": "/root/review_source_sea",
+  "repair_author": "/root",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check_v2.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T18:04:27.607713+00:00",
+  "elapsed_seconds": 1.165149084001314,
+  "exit_code": 0,
+  "originals_unchanged": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check.py": "5b7ceb26a0129b77711529c033b6f6b2bfde590142b1dc5d873658dfc27c2731",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_01.json": "c10a6274b394ff868abc44b2f5a79f51f6ccfba01ec75adbfbc7fa2fff4c5e86",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_02.json": "52d3b95cdb0749d476e33a36ec79c25d4dfc424e58f23503c211bca6b7c9837b",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_manifest.json": "50af7f02d0dea358ad7e7e68badb6b3919b3e6834b0e13b085af806a824141b7",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438"
+  },
+  "new_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_check_v2.py",
+      "sha256": "e726f9f6fb717039f61780fca4a57ccbe2cdcbfa2740a4404244d315f47506f7",
+      "bytes": 19069
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_03.json",
+      "sha256": "47f5c4783a2d939913410777f3b41a07d262ad2b9ac5ba2413f823e115f921b2",
+      "bytes": 12104
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_sea_run_03.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "all_other_groups_identical": true,
+  "previous_z2_fields_identical": {
+    "configurations": true,
+    "exact_patterns": true,
+    "good_reference_haar_mass": true,
+    "holes_checked": true,
+    "infinite_penalty_limit": true,
+    "model": true,
+    "mutation_omitted_penalty_detected": true,
+    "mutation_probability_only_reference_detected": true,
+    "realized_patterns": true,
+    "sharp_q": true,
+    "tilted_checks": true
+  },
+  "explicit_law": {
+    "all_subset_moments": [
+      {
+        "budget": "1",
+        "moment": "1",
+        "subset": 0
+      },
+      {
+        "budget": "1/4",
+        "moment": "1/4",
+        "subset": 1
+      },
+      {
+        "budget": "1/4",
+        "moment": "1/4",
+        "subset": 2
+      },
+      {
+        "budget": "1/16",
+        "moment": "0",
+        "subset": 3
+      },
+      {
+        "budget": "1/4",
+        "moment": "1/4",
+        "subset": 4
+      },
+      {
+        "budget": "1/16",
+        "moment": "0",
+        "subset": 5
+      },
+      {
+        "budget": "1/16",
+        "moment": "0",
+        "subset": 6
+      },
+      {
+        "budget": "1/64",
+        "moment": "0",
+        "subset": 7
+      },
+      {
+        "budget": "1/4",
+        "moment": "1/4",
+        "subset": 8
+      },
+      {
+        "budget": "1/16",
+        "moment": "0",
+        "subset": 9
+      },
+      {
+        "budget": "1/16",
+        "moment": "0",
+        "subset": 10
+      },
+      {
+        "budget": "1/64",
+        "moment": "0",
+        "subset": 11
+      },
+      {
+        "budget": "1/16",
+        "moment": "0",
+        "subset": 12
+      },
+      {
+        "budget": "1/64",
+        "moment": "0",
+        "subset": 13
+      },
+      {
+        "budget": "1/64",
+        "moment": "0",
+        "subset": 14
+      },
+      {
+        "budget": "1/256",
+        "moment": "0",
+        "subset": 15
+      }
+    ],
+    "empty_reference_mass": "0",
+    "failed_reference_inequality_patterns": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "law": {
+      "1": "1/4",
+      "2": "1/4",
+      "4": "1/4",
+      "8": "1/4"
+    },
+    "scope": "generic probability law, not the Wilson tilted family",
+    "zero_reference_division_used": false
+  },
+  "all_six_groups_pass": true,
+  "stderr_empty": true
+}

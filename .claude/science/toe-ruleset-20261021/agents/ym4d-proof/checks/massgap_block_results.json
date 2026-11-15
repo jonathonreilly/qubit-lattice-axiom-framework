@@ -1,0 +1,648 @@
+{
+  "MG_rows_closed": [],
+  "all_passed": true,
+  "checks": [
+    {
+      "Q": "217/576",
+      "name": "endpoint exact constants",
+      "passed": true,
+      "q": "7/16",
+      "r": "18/359"
+    },
+    {
+      "edges": 192,
+      "name": "3D torus side 4: b=4,p_B=13",
+      "p_B": 13,
+      "passed": true
+    },
+    {
+      "name": "3D torus side 4: spatial row 12",
+      "passed": true
+    },
+    {
+      "name": "assembled half-slab interior row 14",
+      "passed": true
+    },
+    {
+      "name": "assembled half-slab endpoint row 13",
+      "passed": true
+    },
+    {
+      "name": "mutation: omit spatial plaquettes from actual slab adjacency",
+      "passed": true
+    },
+    {
+      "edges": 375,
+      "name": "3D torus side 5: b=4,p_B=13",
+      "p_B": 13,
+      "passed": true
+    },
+    {
+      "name": "3D torus side 5: spatial row 12",
+      "passed": true
+    },
+    {
+      "construction": "psi^2=u(Pu)/<u,Pu>; A=u/psi",
+      "mean": "28800/130817",
+      "name": "exact tensor center is actual Perron pi",
+      "passed": true
+    },
+    {
+      "name": "operator rank-one projection of full tensor form",
+      "numerator": "1833078401/4238470800",
+      "passed": true,
+      "projected": "540378520668486681602/1464288817030841625605"
+    },
+    {
+      "name": "pointwise exterior positive kernel lower bound",
+      "passed": true
+    },
+    {
+      "name": "pointwise denominator bound retains exterior kernel",
+      "passed": true
+    },
+    {
+      "correlation": "1833078401/17113087489",
+      "eta": "6241/364810",
+      "local_ratio": "191/79",
+      "name": "exact entangled tensor witness bound",
+      "passed": true
+    },
+    {
+      "name": "local rank-one sharp saturation",
+      "passed": true
+    },
+    {
+      "name": "local operator inequality: all exact principal minors",
+      "passed": true
+    },
+    {
+      "name": "mutation: omit implemented local edge power in rank-one bound",
+      "passed": true
+    },
+    {
+      "name": "mutation: replace local convolution eigenvalue by one",
+      "passed": true
+    },
+    {
+      "name": "mutation: omit edge power in uniform witness fixture",
+      "passed": true
+    },
+    {
+      "exact_difference": "11796480/17113087489",
+      "name": "mutation: replace retained exterior kernel by identity",
+      "passed": true
+    },
+    {
+      "correlation": "1/9",
+      "local_bound": "1/10",
+      "name": "actual spectator tensor product, spectator count 0",
+      "passed": true
+    },
+    {
+      "correlation": "1/9",
+      "local_bound": "1/10",
+      "name": "actual spectator tensor product, spectator count 1",
+      "passed": true
+    },
+    {
+      "correlation": "1/9",
+      "local_bound": "1/10",
+      "name": "actual spectator tensor product, spectator count 3",
+      "passed": true
+    },
+    {
+      "name": "mutation: use total edge count instead of block count",
+      "passed": true
+    },
+    {
+      "name": "finite Z2 full transfer Perron identity",
+      "passed": true
+    },
+    {
+      "name": "finite Z2 actual Doob normalization and stationarity",
+      "passed": true
+    },
+    {
+      "name": "actual open slab including terminal half factor",
+      "passed": true
+    },
+    {
+      "difference": 0.09142140296540746,
+      "name": "mutation: replace terminal half-spatial factor by full factor",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 local Perron ratio edge 0",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 u ratio edge 0",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 local Perron ratio edge 1",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 u ratio edge 1",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 local Perron ratio edge 2",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 u ratio edge 2",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 local Perron ratio edge 3",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 u ratio edge 3",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 local Perron ratio edge 4",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 u ratio edge 4",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 local Perron ratio edge 5",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 u ratio edge 5",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 local Perron ratio edge 6",
+      "passed": true
+    },
+    {
+      "name": "actual Z2 u ratio edge 6",
+      "passed": true
+    },
+    {
+      "auxiliary_mean": 0.38695230859649615,
+      "name": "mutation: center observable under auxiliary A psi measure",
+      "passed": true,
+      "pi_mean": 0.3939157564612682
+    },
+    {
+      "name": "mutation: omit psi from implemented conditional kernel",
+      "passed": true,
+      "stationarity_error": 0.003832413699641591
+    },
+    {
+      "name": "explicit gauge projector agrees on both loop observables",
+      "passed": true
+    },
+    {
+      "name": "mutation: extend projector-removal equality to gauge-variant functions",
+      "passed": true
+    },
+    {
+      "integrated_covariance": 0.03347240828325238,
+      "mixed": 0.03347240828325215,
+      "name": "actual slab mixed-ratio covariance identity",
+      "passed": true
+    },
+    {
+      "name": "mutation: omit covariance in actual boundary response",
+      "passed": true
+    },
+    {
+      "name": "half-line boundary resolvent matches independent slab inverse",
+      "passed": true
+    },
+    {
+      "name": "assembled actual step majorant obeys volume-free row bound",
+      "passed": true
+    },
+    {
+      "max_actual": 0.02499480271778931,
+      "max_majorant": 0.02501654554450796,
+      "name": "actual ground-state output conditionals satisfy assembled majorant",
+      "passed": true
+    },
+    {
+      "name": "mutation: omit magnetic spatial terms from implemented step majorant",
+      "passed": true
+    },
+    {
+      "defects": [
+        0.024979187466766195,
+        1.1102230246251565e-16,
+        1.1102230246251565e-16,
+        1.1102230246251565e-16,
+        1.1102230246251565e-16,
+        1.1102230246251565e-16,
+        1.1102230246251565e-16
+      ],
+      "name": "actual input source conditional defect has one-site support",
+      "passed": true
+    },
+    {
+      "name": "mutation: shift implemented boundary source support to adjacent output link",
+      "passed": true
+    },
+    {
+      "lhs": 3.120519654883913e-06,
+      "name": "actual physical-time oscillation contraction: left_loop",
+      "passed": true,
+      "rhs": 0.28610729023383774
+    },
+    {
+      "name": "actual physical covariance left_loop, n=0",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance left_loop, n=1",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance left_loop, n=2",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance left_loop, n=3",
+      "passed": true
+    },
+    {
+      "lhs": 3.1205196548006464e-06,
+      "name": "actual physical-time oscillation contraction: right_loop",
+      "passed": true,
+      "rhs": 0.28610729023383774
+    },
+    {
+      "name": "actual physical covariance right_loop, n=0",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance right_loop, n=1",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance right_loop, n=2",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance right_loop, n=3",
+      "passed": true
+    },
+    {
+      "lhs": 1.589159198669629e-07,
+      "name": "actual physical-time oscillation contraction: loop_product",
+      "passed": true,
+      "rhs": 0.4291609353507566
+    },
+    {
+      "name": "actual physical covariance loop_product, n=0",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance loop_product, n=1",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance loop_product, n=2",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance loop_product, n=3",
+      "passed": true
+    },
+    {
+      "lhs": 0.014409092278062542,
+      "name": "actual physical-time oscillation contraction: all_sector_function",
+      "passed": true,
+      "rhs": 0.3231713144994859
+    },
+    {
+      "name": "actual physical covariance all_sector_function, n=0",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance all_sector_function, n=1",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance all_sector_function, n=2",
+      "passed": true
+    },
+    {
+      "name": "actual physical covariance all_sector_function, n=3",
+      "passed": true
+    },
+    {
+      "name": "SU2 coordinate Haar character orthonormality",
+      "passed": true
+    },
+    {
+      "name": "SU2 coordinate Haar loop variance",
+      "passed": true
+    },
+    {
+      "name": "SU3 complex-character Haar loop variance",
+      "passed": true
+    },
+    {
+      "name": "mutation: use self-conjugate SU2 factor for SU3",
+      "passed": true
+    },
+    {
+      "error": 1.734723475976807e-17,
+      "name": "SU2 actual cycle independent operator beta=0.125",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual open-slab factors beta=0.125",
+      "passed": true
+    },
+    {
+      "covariance_difference": 9.708321064514367e-19,
+      "name": "SU2 independent top eigenvalue and centered covariance beta=0.125",
+      "passed": true
+    },
+    {
+      "actual_pi_mean": 0.03122973409072523,
+      "covariance": 2.368724165111607e-07,
+      "eta": 1.9519648765385382e-08,
+      "name": "SU2 actual centered one-step witness beta=0.125",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual local Perron and u ratios beta=0.125",
+      "passed": true,
+      "ratio_log_range": 2.375198396159517e-07,
+      "u_log_range": 0.24986912978121856
+    },
+    {
+      "name": "mutation: mutate implemented SU2 cycle power beta=0.125",
+      "passed": true
+    },
+    {
+      "name": "mutation: mutate implemented SU2 dimension division beta=0.125",
+      "passed": true
+    },
+    {
+      "error": 1.3877787807814457e-17,
+      "name": "SU2 actual cycle independent operator beta=0.5",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual open-slab factors beta=0.5",
+      "passed": true
+    },
+    {
+      "covariance_difference": 1.4230153513872246e-19,
+      "name": "SU2 independent top eigenvalue and centered covariance beta=0.5",
+      "passed": true
+    },
+    {
+      "actual_pi_mean": 0.12377414315191622,
+      "covariance": 5.505327826794456e-05,
+      "eta": 2.656555870992947e-09,
+      "name": "SU2 actual centered one-step witness beta=0.5",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual local Perron and u ratios beta=0.5",
+      "passed": true,
+      "ratio_log_range": 0.00023180565284558474,
+      "u_log_range": 0.9997073746983606
+    },
+    {
+      "name": "mutation: mutate implemented SU2 cycle power beta=0.5",
+      "passed": true
+    },
+    {
+      "name": "mutation: mutate implemented SU2 dimension division beta=0.5",
+      "passed": true
+    },
+    {
+      "error": 1.0408340855860843e-17,
+      "name": "SU2 actual cycle independent operator beta=1.0",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual open-slab factors beta=1.0",
+      "passed": true
+    },
+    {
+      "covariance_difference": 1.3010426069826053e-18,
+      "name": "SU2 independent top eigenvalue and centered covariance beta=1.0",
+      "passed": true
+    },
+    {
+      "actual_pi_mean": 0.2416145459778698,
+      "covariance": 0.0006526827117760494,
+      "eta": 1.692594691751677e-12,
+      "name": "SU2 actual centered one-step witness beta=1.0",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual local Perron and u ratios beta=1.0",
+      "passed": true,
+      "ratio_log_range": 0.006411426238859375,
+      "u_log_range": 2.0053625643298894
+    },
+    {
+      "name": "mutation: mutate implemented SU2 cycle power beta=1.0",
+      "passed": true
+    },
+    {
+      "name": "mutation: mutate implemented SU2 dimension division beta=1.0",
+      "passed": true
+    },
+    {
+      "error": 7.806255641895632e-18,
+      "name": "SU2 actual cycle independent operator beta=3.0",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual open-slab factors beta=3.0",
+      "passed": true
+    },
+    {
+      "covariance_difference": 1.3010426069826053e-18,
+      "name": "SU2 independent top eigenvalue and centered covariance beta=3.0",
+      "passed": true
+    },
+    {
+      "actual_pi_mean": 0.6144003777283062,
+      "covariance": 0.0033744161161003905,
+      "eta": 1.6081645922132808e-28,
+      "name": "SU2 actual centered one-step witness beta=3.0",
+      "passed": true
+    },
+    {
+      "name": "SU2 actual local Perron and u ratios beta=3.0",
+      "passed": true,
+      "ratio_log_range": 0.4988828669015001,
+      "u_log_range": 6.49573628117459
+    },
+    {
+      "name": "mutation: mutate implemented SU2 cycle power beta=3.0",
+      "passed": true
+    },
+    {
+      "name": "mutation: mutate implemented SU2 dimension division beta=3.0",
+      "passed": true
+    },
+    {
+      "name": "physical units at spacing 1.0",
+      "passed": true
+    },
+    {
+      "name": "physical units at spacing 0.5",
+      "passed": true
+    },
+    {
+      "name": "physical units at spacing 0.25",
+      "passed": true
+    }
+  ],
+  "independent_review": false,
+  "metrics": {
+    "full_scope_not_executed": [
+      "continuum existence",
+      "large-beta all-half-slab covariance bound",
+      "exact RG crossover with all source-only and conditional terms",
+      "cutoff-uniform physical-time prefactor and onset",
+      "continuum finite-energy witness",
+      "independent review"
+    ],
+    "su2_beta_0.125": {
+      "covariance": 2.368724165111607e-07,
+      "eta": 1.9519648765385382e-08,
+      "lambda0": 0.8842216551468034
+    },
+    "su2_beta_0.5": {
+      "covariance": 5.505327826794456e-05,
+      "eta": 2.656555870992947e-09,
+      "lambda0": 0.6256921892863321
+    },
+    "su2_beta_1.0": {
+      "covariance": 0.0006526827117760494,
+      "eta": 1.692594691751677e-12,
+      "lambda0": 0.41614119036459746
+    },
+    "su2_beta_3.0": {
+      "covariance": 0.0033744161161003905,
+      "eta": 1.6081645922132808e-28,
+      "lambda0": 0.14985296131056575
+    }
+  },
+  "mutations": [
+    {
+      "killed": true,
+      "name": "omit spatial plaquettes from actual slab adjacency"
+    },
+    {
+      "killed": true,
+      "name": "omit implemented local edge power in rank-one bound"
+    },
+    {
+      "killed": true,
+      "name": "replace local convolution eigenvalue by one"
+    },
+    {
+      "killed": true,
+      "name": "omit edge power in uniform witness fixture"
+    },
+    {
+      "exact_difference": "11796480/17113087489",
+      "killed": true,
+      "name": "replace retained exterior kernel by identity"
+    },
+    {
+      "killed": true,
+      "name": "use total edge count instead of block count"
+    },
+    {
+      "difference": 0.09142140296540746,
+      "killed": true,
+      "name": "replace terminal half-spatial factor by full factor"
+    },
+    {
+      "auxiliary_mean": 0.38695230859649615,
+      "killed": true,
+      "name": "center observable under auxiliary A psi measure",
+      "pi_mean": 0.3939157564612682
+    },
+    {
+      "killed": true,
+      "name": "omit psi from implemented conditional kernel",
+      "stationarity_error": 0.003832413699641591
+    },
+    {
+      "killed": true,
+      "name": "extend projector-removal equality to gauge-variant functions"
+    },
+    {
+      "killed": true,
+      "name": "omit covariance in actual boundary response"
+    },
+    {
+      "killed": true,
+      "name": "omit magnetic spatial terms from implemented step majorant"
+    },
+    {
+      "killed": true,
+      "name": "shift implemented boundary source support to adjacent output link"
+    },
+    {
+      "killed": true,
+      "name": "use self-conjugate SU2 factor for SU3"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 cycle power beta=0.125"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 dimension division beta=0.125"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 cycle power beta=0.5"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 dimension division beta=0.5"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 cycle power beta=1.0"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 dimension division beta=1.0"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 cycle power beta=3.0"
+    },
+    {
+      "killed": true,
+      "name": "mutate implemented SU2 dimension division beta=3.0"
+    }
+  ],
+  "passed": 108,
+  "scope": "finite author controls; analytic candidate is separately stated in note",
+  "script_sha256": "448734574f786ce4b039326de8b8f151bc5f3c611e5ee2f22cdae8cf0b916d12",
+  "total": 108,
+  "versions": {
+    "numpy": "2.4.1",
+    "python": "3.12.8",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  }
+}

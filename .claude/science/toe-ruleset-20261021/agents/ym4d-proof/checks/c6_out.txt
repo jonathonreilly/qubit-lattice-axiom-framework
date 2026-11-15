@@ -1,0 +1,23 @@
+PASS (A) d=2 block Hodge-Poincare: lambda_min = 4n^2 sin^2(pi/2n) >= 4, no averaging term needed | n=2:8.0000 n=3:9.0000 n=5:9.5492 n=8:9.7434
+PASS (A) d=3 block Hodge-Poincare: lambda_min = 4n^2 sin^2(pi/2n) >= 4, no averaging term needed | n=2:8.0000 n=3:9.0000 n=4:9.3726
+PASS (A) d=4 block Hodge-Poincare: lambda_min = 4n^2 sin^2(pi/2n) >= 4, no averaging term needed | n=2:8.0000 n=3:9.0000 n=4:9.3726
+INFO d=2 n=3 dof=72: const-mode err 2.2e-16; ||Q_row||^2_H-1 = 0.3186 (straight legs only 0.2879); axial-restricted lambda_min <= 0.3171 (0s)
+INFO d=2 n=7 dof=392: const-mode err 1.3e-15; ||Q_row||^2_H-1 = 0.3093 (straight legs only 0.2812); axial-restricted lambda_min <= 0.1334 (0s)
+INFO d=2 n=15 dof=1800: const-mode err 2.1e-14; ||Q_row||^2_H-1 = 0.3075 (straight legs only 0.2801); axial-restricted lambda_min <= 0.0621 (0s)
+INFO d=2 n=31 dof=7688: const-mode err 1.9e-14; ||Q_row||^2_H-1 = 0.3071 (straight legs only 0.2799); axial-restricted lambda_min <= 0.0307 (3s)
+INFO d=3 n=3 dof=648: const-mode err 2.2e-15; ||Q_row||^2_H-1 = 0.2139 (straight legs only 0.1652); axial-restricted lambda_min <= 0.2879 (3s)
+INFO d=3 n=5 dof=3000: const-mode err 3.3e-14; ||Q_row||^2_H-1 = 0.2159 (straight legs only 0.1594); axial-restricted lambda_min <= 0.1877 (3s)
+INFO d=3 n=9 dof=17496: const-mode err 1.0e-13; ||Q_row||^2_H-1 = 0.2251 (straight legs only 0.1572); axial-restricted lambda_min <= 0.0841 (6s)
+INFO d=3 n=15 dof=81000: const-mode err 6.7e-13; ||Q_row||^2_H-1 = 0.2361 (straight legs only 0.1565); axial-restricted lambda_min <= None (21s)
+INFO d=4 n=3 dof=5184: const-mode err 7.5e-15; ||Q_row||^2_H-1 = 0.1961 (straight legs only 0.0994); axial-restricted lambda_min <= 0.2919 (21s)
+INFO d=4 n=5 dof=40000: const-mode err 1.9e-13; ||Q_row||^2_H-1 = 0.2607 (straight legs only 0.0937); axial-restricted lambda_min <= 0.1877 (25s)
+INFO d=4 n=7 dof=153664: const-mode err 1.4e-12; ||Q_row||^2_H-1 = 0.3338 (straight legs only 0.0921); axial-restricted lambda_min <= None (44s)
+PASS (B) constant 1-forms are exact eigenvectors of the Feynman-gauge operator with eigenvalue a (T = 2 torus) | max err 1.4e-12
+PASS (B') d=4: H^-1 norm^2 of the S4 averaging functional grows with n, roughly linearly (last/first >= 0.5 * n_last/n_first) | 0.196, 0.261, 0.334
+PASS (B') d=2 control: H^-1 norm^2 stays bounded (last/first < 2) | 0.319, 0.309, 0.307, 0.307
+PASS (B') straight-leg part alone stays bounded in every d (last/first < 2) | d=2: 0.288,0.281,0.280,0.280; d=3: 0.165,0.159,0.157,0.157; d=4: 0.099,0.094,0.092
+INFO d=3 H^-1 norm^2: 0.214, 0.216, 0.225, 0.236
+PASS (C) d=2 complete-axial-gauge restriction (residual coarse gauge NOT fixed): lambda_min ~ a c/n, as predicted for coarse pure-gauge modes on inter-block faces (n*lambda in [0.5, 1.5]) -- a gauge artifact | 0.3171, 0.1334, 0.0621, 0.0307
+PASS (C) d=4 complete-axial-gauge restriction (residual coarse gauge NOT fixed): lambda_min ~ a c/n, as predicted for coarse pure-gauge modes on inter-block faces (n*lambda in [0.5, 1.5]) -- a gauge artifact | 0.2919, 0.1877
+runtime 44 s
+TOTAL: PASS=9 FAIL=0

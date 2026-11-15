@@ -1,0 +1,43 @@
+check p7 (PLD lane E, session 7) -- run record
+==============================================
+criteria : checks/p7_criteria.md  md5 ceaf6aa8f145413a3dd4f35ea673c955  5869 bytes  written 2026-10-28 14:20:23 UTC
+script   : checks/p7_pld.py       md5 d182f1d6f8d662bec4066e38d4b6cf30             written 2026-10-28 14:20:56 UTC
+ORDER    : the criteria file was written BEFORE the script existed, and before any session-7 number was computed.
+           No constant derived in session 7 appears in any PASS/FAIL condition of the criteria file; every number
+           quoted there is sourced inline to RLARGE / HW / PLD sessions <= 6 (p4, p5, p6 records) or is pure lattice
+           geometry (d = 4, L = 3, powers of 2, 3, 5).
+
+ONE run, 2026-10-28 14:21 UTC:
+  command : OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
+            PYTHONDONTWRITEBYTECODE=1 /usr/bin/time -l nice -n 10 python3 -I checks/p7_pld.py
+  exit    : 0
+  real    : 17.51 s      user 17.37 s     sys 0.04 s
+  max RSS : 19611648 B = 19.6 MB
+  load at launch: 2.99 / 2.58 / 2.31  (brief's threshold is < 8)
+  stdout  : checks/p7_out.txt      stderr: checks/p7_err.txt (the /usr/bin/time -l report only)
+
+NUMERIC LOCK: **NOT TAKEN**, deliberately, per the session-24 brief's exemption for exact rational/symbolic arithmetic
+in plain python. p7_pld.py imports only `fractions`, `decimal` and `sys`: no numpy, no BLAS, no linear algebra, no
+sampling, no parallelism. Single thread, nice 10, 19.6 MB (cap 1 GB), 17.5 s (cap 20 min). No trap, no pkill, no
+process left behind, no re-run.
+
+SUMMARY AS RUN: 13 criteria, 0 FAIL. All four negative controls (A3, B2, C1n, D2) behaved as designed.
+  A1  PASS  u*eps1^2 == (eps1/gK)^2 exactly; value 4.489000e+15 == p6 A2's recorded 4.489e15
+  A2  PASS  margin 2.2445e+15 ; log-miss ratio against the 1e9 ceiling 2.2445e+06
+  A3  PASS  (negative control) with eps1 := gK the quantity is exactly 1
+  B1  PASS  (dof/2)*ln(1/(1-lam)) = 18190.954606 vs p6 D1's recorded 18190.95, diff 0.0046
+  B2  PASS  (negative control) 0 at lam = 0 ; 362574.26 at lam = 1 - 1e-6
+  B3  PASS  equipartition B = 52488 vs restated ceiling 2.0e9 ; 4.58 decades of margin
+  C1  PASS  1/(1-x) <= 1+2x for x in {2^-1 .. 2^-10}, 0 violations
+  C1n PASS  (negative control) the inequality FAILS at x = 3/4 (4 vs 5/2), so x <= 1/2 is load-bearing
+  C2  PASS  level-0 window log C_fc = 13.7254756
+  D1  PASS  d = 4 exponent -1 ; increments 2.302135, 2.302540 vs ln 10 = 2.302585 -> logarithmically divergent
+  D2  PASS  (negative control) d = 5 exponent -2 ; partial sum 1.64492406 vs pi^2/6 = 1.64493406 -> convergent
+  E1  PASS  chi = 625 ; theta_max = 6.6667e-05 > the recorded fallback 8e-7
+  F1  PASS  1+3^d = 82 (closed column), 1+2^d = 17 (open column), ratio 81/16
+
+SCOPE. p7 is arithmetic about constants recorded in earlier sessions and about inequalities PLD/HW already state. It
+tests NOTHING about the lattice measure: not (CLS-min), not (LCR^act'), not (EQ-bc), not (BCH-1)/(BCH-0), not (W0-EQ),
+not (CEM^COL)/(CEM-1)/(CEM-2), not (E2^F'), and nothing nonabelian. In particular NO number in p7 is evidence for or
+against any open statement of section 19. D1/D2 are an INDICATIVE power count only, labelled as such in PLD.md section
+19.6, and are not a proof of anything.

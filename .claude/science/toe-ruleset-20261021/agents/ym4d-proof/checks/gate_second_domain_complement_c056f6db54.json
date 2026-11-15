@@ -1,0 +1,102 @@
+{
+  "frozen_utc": "2026-10-30T19:20:34.296669+00:00",
+  "head": "c056f6db54a2e1579acf85b98fb375013c0b9045",
+  "procedure_pin": "53f2c0af7eb59438389b4c2fe75952932d4e95fe",
+  "source_sha256": "60937c96f93a01a4cfcf7c8a8abe628d0e41b5634a5519bb12c3a6374411b336",
+  "verdict": "pass",
+  "scope": "GH52\u2013GH55 fixed-volume two-step posterior lower bound and exclusion of the stated stronger upper-bound family",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "max",
+  "backend_attestation": null,
+  "preflight": "go; 31 GB disk, 54% free memory, load 3.9, nice works, origin reachable; ulimit unavailable",
+  "reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "sha256": "60937c96f93a01a4cfcf7c8a8abe628d0e41b5634a5519bb12c3a6374411b336",
+      "read_lines_inclusive": [
+        [
+          164,
+          197
+        ],
+        [
+          604,
+          620
+        ],
+        [
+          1040,
+          1161
+        ]
+      ],
+      "mode": "actual source; unchanged earlier reads reused where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "read_lines_inclusive": [
+        [
+          249,
+          264
+        ]
+      ],
+      "mode": "actual source; unchanged earlier reads reused where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "read_lines_inclusive": [
+        [
+          49,
+          146
+        ],
+        [
+          398,
+          410
+        ]
+      ],
+      "mode": "actual source; unchanged earlier reads reused where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "read_lines_inclusive": [
+        [
+          87,
+          105
+        ],
+        [
+          249,
+          266
+        ]
+      ],
+      "mode": "actual source; unchanged earlier reads reused where already available"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "read_lines_inclusive": [
+        [
+          33,
+          143
+        ]
+      ],
+      "mode": "actual source; unchanged earlier reads reused where already available"
+    }
+  ],
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/second-domain-complement-c056f6db54.md",
+    "sha256": "08d59dd4312783713bdc9b2b67a830ab15b0989fb723f01dee9c550ddc8020a4"
+  },
+  "author_routing_records_read": false,
+  "external_primary_reads": [],
+  "scientific_jobs": [],
+  "lint": {
+    "method": "direct lint_one_file; apply_fix=False",
+    "tool_pin": "53f2c0af7eb59438389b4c2fe75952932d4e95fe",
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/second-domain-complement-c056f6db54.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  }
+}

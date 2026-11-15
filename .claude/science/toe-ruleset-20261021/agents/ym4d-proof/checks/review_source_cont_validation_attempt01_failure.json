@@ -1,0 +1,5 @@
+{
+  "failure": "Initial bare closing-bracket-parenthesis regex misclassified indented mathematical function notation 1_[-p,p](W_i) as a Markdown destination and stopped with AssertionError.",
+  "recovery": "Restrict to actual bracketed Markdown link syntax outside four-space indented formulas. No scientific source or computed evidence changed.",
+  "failed_step_exit_code": 1
+}

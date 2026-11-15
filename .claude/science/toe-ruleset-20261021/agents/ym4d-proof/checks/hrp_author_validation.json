@@ -1,0 +1,150 @@
+{
+  "utc": "2026-10-29T17:34:23.902673+00:00",
+  "kind": "mechanical_author_validation_not_science_or_independent_review",
+  "python_ast": "parsed",
+  "shell_syntax": "parsed",
+  "git_diff_check_exit": 0,
+  "criteria_unchanged": true,
+  "prestated_prefix_unchanged": true,
+  "numeric_lock_absent": true,
+  "source_checks": {
+    "briefs_hrp/AUTHOR_BRIEF_HRP.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "465aaa4e5c14f38daf739c188bfa1b2ee97c9adf9b70e97312c774ab0e55ca3c"
+    },
+    "ASSEMBLY55.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7"
+    },
+    "SPHERE55.md": {
+      "check": "original_prefix_unchanged",
+      "ok": true,
+      "current_sha256": "658bdd59998263c824b6f3c2cc239df6b16cad8704eae0b0e44ff97413366cba"
+    },
+    "CODEX_REVIEW_P4.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "12d59c044e86af2fe66806332aed9a2e98181409e075151a983c4b4eeb7d1b34"
+    },
+    "CODEX_REVIEW_HINT.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "8b6aa074911debcb7f0f8530b2bb04ec3e22812bc0295cc87d2ce665f0fd129e"
+    },
+    "PANEL_P1.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "feba5a1f2c0fc2c6ebc3373a5edfc3aec2ff0bb242550f4112b00e4d5a74a645"
+    },
+    "OSLEAF55.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0"
+    },
+    "PROOF.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "50534f5ac1c1efe3aca10cedfbca32608f2fd47d9429f32566627b42aebed406"
+    },
+    "HANDOFF.md": {
+      "check": "original_prefix_unchanged",
+      "ok": true,
+      "current_sha256": "ad2ffa6db132c302a3283050bfe2f6cb14e130d454ba2f710f24ffd7960bd4e3"
+    },
+    "ROTDEF.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "413261674aaafa7c68793e9f10ebc1421fdf92871bd583f7c654981511104bf2"
+    },
+    "RLARGE.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2"
+    },
+    "SRCAN55.md": {
+      "check": "whole_file_unchanged",
+      "ok": true,
+      "current_sha256": "7d6770a75318f6f9368428d1a01e36c2de5f56ea008071b531d71318ad78faa4"
+    }
+  },
+  "main_import_hashes_unchanged": true,
+  "artifacts": {
+    "HRP.md": {
+      "bytes": 46818,
+      "sha256": "d85027730ac0c7d4c6102ede801be3f4f8cd3b89a34910675280cde15a5f11b7"
+    },
+    "HRP_LOG.md": {
+      "bytes": 9584,
+      "sha256": "8431dc348de69c17d1e3525e904e65048f3a8134ee40b5d4a94fcb4d10854c2c"
+    },
+    "SPHERE55.md": {
+      "bytes": 82451,
+      "sha256": "658bdd59998263c824b6f3c2cc239df6b16cad8704eae0b0e44ff97413366cba"
+    },
+    "HANDOFF.md": {
+      "bytes": 37466,
+      "sha256": "ad2ffa6db132c302a3283050bfe2f6cb14e130d454ba2f710f24ffd7960bd4e3"
+    },
+    "checks/hrp_attempt1_err.txt": {
+      "bytes": 763,
+      "sha256": "575ba07862b014c8b4d0d6c78d31d89a73996f4dbe29f10f196d5c4bd5de1213"
+    },
+    "checks/hrp_attempt1_out.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "checks/hrp_attempt1_preflight.txt": {
+      "bytes": 1103,
+      "sha256": "b0fa795905e3eac61f284c45023b1445dc261a902ab2e327b96e3710f7c60edd"
+    },
+    "checks/hrp_attempt1_run.sh": {
+      "bytes": 1691,
+      "sha256": "2dffd4949e2185a4b2fe5d192dd0f178b2d044a3849cfa469287db7b92215582"
+    },
+    "checks/hrp_attempt1_script.py": {
+      "bytes": 24582,
+      "sha256": "31af46940c861b09cc7aac42efd00261790296b652bbeacd1ede6c6362c137d1"
+    },
+    "checks/hrp_attempt1_time.txt": {
+      "bytes": 179,
+      "sha256": "4e60e8c2b1f204314d8d27a7b65347f872bc3ad744ed7004f5a128cf5166b936"
+    },
+    "checks/hrp_criteria.md": {
+      "bytes": 2734,
+      "sha256": "3e00f5ec5bbc32522636004aa72628c45884fe3762573c047e1105593ea82173"
+    },
+    "checks/hrp_err.txt": {
+      "bytes": 763,
+      "sha256": "575ba07862b014c8b4d0d6c78d31d89a73996f4dbe29f10f196d5c4bd5de1213"
+    },
+    "checks/hrp_exact.py": {
+      "bytes": 25529,
+      "sha256": "e951fb782c09534aac8a7c178b5963b731274fff83de6c34a5b7afe52415e2b6"
+    },
+    "checks/hrp_out.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "checks/hrp_preflight.txt": {
+      "bytes": 1103,
+      "sha256": "b0fa795905e3eac61f284c45023b1445dc261a902ab2e327b96e3710f7c60edd"
+    },
+    "checks/hrp_run.sh": {
+      "bytes": 1691,
+      "sha256": "893d362daf45eeb30c78a6cb1b658a4572d696b62f05ebad9813c7c72a86ba98"
+    },
+    "checks/hrp_sources_initial.json": {
+      "bytes": 2558,
+      "sha256": "00e40a7a68dc92d80f4b6957daeca21210453aa0c6562c4485968280f3b3785f"
+    },
+    "checks/hrp_time.txt": {
+      "bytes": 179,
+      "sha256": "4e60e8c2b1f204314d8d27a7b65347f872bc3ad744ed7004f5a128cf5166b936"
+    }
+  },
+  "numeric_execution": "BLOCKED before computations by mandatory nice priority",
+  "independent_review": "PENDING",
+  "attempt1_source_archives_match_recorded_hashes": true
+}

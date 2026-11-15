@@ -1,0 +1,52 @@
+{
+  "record_kind": "additional mathematical checks AFTER author-context exposure; not part of source-only freeze",
+  "recorded_at_utc": "2026-10-30T15:41:41.276534+00:00",
+  "target_revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+  "frozen_source_manifest_sha256": "9681c4a7f4ed628a0fe1b28050eab41aeacc793b4f04e0247d4ae8fcc9d83bc9",
+  "frozen_source_findings_sha256": "44fdc817526034c60be5ac13410a8551b3767f50abdad7040b43d518c8c9398a",
+  "papers": [
+    {
+      "url": "https://arxiv.org/pdf/math-ph/0610025v2",
+      "pdf_sha256": "0895449a770754915ad6d3cf44049b92d4981b1ace6dfeac76cf0380768a8733",
+      "total_pdf_pages": 75,
+      "read_one_based_pdf_pages": [
+        43,
+        44,
+        45,
+        46
+      ],
+      "bounded_text_sha256": "f20f15b8e1df67814cc386f78540a747a4d81d5236566268c7d754bbc5761171",
+      "role_check": "Theorem 5.8 assumes reflection positivity across each neighboring block plane and an even factor torus. Overlapping block boundaries are allowed. Its maximal-run proof agrees with the rebuilt Wilson chessboard use; it says nothing about inherited conditional actions.",
+      "full_paper_read": false,
+      "cache_publish": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/1310.2526v7",
+      "pdf_sha256": "f86893b5051a150a6827fd0523aa3733c5970a3cccc44b17a794f58cc4601727",
+      "total_pdf_pages": 24,
+      "read_one_based_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        18,
+        19
+      ],
+      "bounded_text_sha256": "628c0213d1c5fa672e310ae648c0afbb6a4f1dfefda44a26206c450a2989556a",
+      "role_check": "Theorem 1.1 assumes C2 boundary; Theorem 1.2(1) uses positive weighted curvature and convex Neumann boundary. The rectangle is not covered verbatim. These pages confirm the sign and duality role; the manuscript supplies its own rectangular mixed boundary argument.",
+      "full_paper_read": false,
+      "cache_publish": false
+    }
+  ],
+  "additional_web_coverage": "Primary landing-page version metadata and bounded search/open extracts only; full-paper read is not claimed. The cited HSE author-copy introduction/Theorem 1.1 excerpts were also inspected before the versioned arXiv extraction.",
+  "imports_check": {
+    "covariance": "Rectangle scalar Neumann Poisson equation yields gradient component i with Dirichlet data on i-faces and Neumann data on other faces. Component weights are spatial-index constants; they preserve this form domain and commute with the scalar diffusion. Uniform Hessian lower bound and finite-range upper bound are local cap hypotheses only.",
+    "convexity": "The flat Bloch kernel proof and rowwise nonlinear perturbation supply the cap Hessian. Source allowance is a real Hessian budget; all real linear tilts keep it. No extension to arbitrary inherited density or cap complement.",
+    "cluster": "No external cluster theorem supplies a missing normalized expansion here. RC17 bounds a connected family of same-exterior ratios but RC19 explicitly retains the common exterior measure; these are not shown to be factorized activities. TB is a supported analytic fixed-point series, not an integration/log expansion. The missing complete partition, exact normalization, connected activities and marked norm remain U1/U4."
+  },
+  "change_to_source_only_findings": false,
+  "final_scoped_verdict": "LAND for bounded research mathematics at c7ff8a85; HOLD for full all-history return, non-free 4D continuum existence, and positive physical continuum mass gap; diagnostic preregistration unverified."
+}

@@ -1,0 +1,72 @@
+{
+  "gaussian_square_cumulants_1_to_8": [
+    "0",
+    "2",
+    "8",
+    "48",
+    "384",
+    "3840",
+    "46080",
+    "645120"
+  ],
+  "gaussian_square_laplace_at_radius": "infinite",
+  "stationary_gaussian_non_rp_determinant": "-exp(-18) + exp(-20)",
+  "additional_mutations": [
+    {
+      "mutation": "crossing_height",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "e265d85f17875ac8620269384fecd5838044b4d4dea087bfc05213113b4ecc84"
+    },
+    {
+      "mutation": "fixed_corners_opposite",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "6fb037096cdd795f8319bade6dc728dab769dc3b8f67eebbe9e7405598e3ae9f"
+    },
+    {
+      "mutation": "clover_radius",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "b079d1445aac554062f3d4c7c23d133c74c5e0eb15ead42f54e60ac2695fc82d"
+    },
+    {
+      "mutation": "boundary_block_restriction",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "64d22a5d3f0cea4e7fb45244d25bcc4768e9ced441f21acd7cdabc7a22dbd4d2"
+    },
+    {
+      "mutation": "torus_fixed_corner_count",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "03acd1b185570b68aba53eeb570c635d019ba68dd98ae96603ff8fa89dee9ae8"
+    },
+    {
+      "mutation": "torus_fourier_normalizer",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "c482862ade5281f1e36712c64748143662a41c98d70fcd4eb80f7347344465cf"
+    },
+    {
+      "mutation": "torus_minor_expected_value",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "97b9a42be8d3c80b52bb73232fa77a3c79783db3f4bbde9fd4c958ece295aa2f"
+    },
+    {
+      "mutation": "rotation_pole_expected_value",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "f21c132486099a2282b94a70b037cce5bc23afe1e29a7e376cc4da2d5aa82f2b"
+    },
+    {
+      "mutation": "isotropic_power_control",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "be0add5050e0bfc8b354c5eb730f6afd40b2a572bdb2580130aff7c06b80be17"
+    },
+    {
+      "mutation": "high_frequency_power",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "c4fc57d8ab7e6717bfabd0ffb0ba926e5a13774cf48424753c619923455e29cd"
+    },
+    {
+      "mutation": "gaussian_integral_normalization",
+      "rejected_by": "AssertionError",
+      "mutant_sha256": "31ca5df772a5b3c602a24501a3f4a584bd8d910b29fa5586be3bbc3f03c316ce"
+    }
+  ],
+  "scope": "Listed controls only; no continuum or full-theorem certification."
+}

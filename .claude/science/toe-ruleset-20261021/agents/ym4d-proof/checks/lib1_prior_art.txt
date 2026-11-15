@@ -1,0 +1,101 @@
+COMMAND: ['rg', '-n', '-i', 'resumm|inactive region|punctured.distance|boundary.polymer', '--glob', '*.md', '--glob', '!LIB1*', '--glob', '!checks/lib1_*', '.']
+EXIT: 0
+./SOFTHARD.md:349:| R10. **Boundary-polymer resummation — J. Dimock**, L3 Appendix B Lemma 19, (238)–(245). | Enlarging the inactive region regroups boundary activities while preserving their sum and controlling a decay loss. Both routes; useful for hole/collar interfaces. Reuse the lane's proved hull and connected-support combinatorics if the distances coincide. | 3–6 pages including the polymer counting input, medium; additional source/indicator locality checks for the actual return. | The regrouping proof is given, but imports the counting bound from part II Lemma E.3. Supply that count and the precise punctured-distance definition locally. It does not establish a gauge R-operation. |
+./STEP55.md:583:| reference comparison (I5) | Theorem CX gives the reference's log as local polymers, so a cone's lateral boundary costs ≤ C·H_V per boundary box per level — a constant c_B = O(H_V), as LARGE55 E13 says; but boundary polymers READ cone variables, so COL's exact integration must be redone with those polymers expanded | ARGUED; the COL-compatibility step is OPEN |
+./STEP55.md:726:| st-24 | reference comparison: c_B = O(H_V) per boundary box per level; COL-compatibility with boundary polymers (§7) | ARGUED / OPEN |
+./STEP55.md:777:   comparison ARGUED (COL-compatibility with boundary polymers OPEN), failed returns OPEN.
+./literature/NOTES.md:343:- (4.34): reduction of the renormalisation-relevant part to E^{(2)}, which is resummed into the vacuum polarisation
+./OFFGLOB2_55.md:853:  restriction of Z(V) up to O(e^{−μ dist(·, ∂C)}) in a frame, and the localized cone energy equals Σ_{X⊂C}R(X) plus boundary polymers
+./SOFTHARD_LOG.md:64:| `sh_dimock_III.pdf` | https://arxiv.org/pdf/1304.0705v1 | Scope; pp.23–27 Lemmas 11–13 and price extraction; p.33 stability/correlation distinction; pp.35–36 resummation/coarse-energy lemmas. |
+./KFACTOR.md:54:  ‖·‖ ≥ c·k; the factor is an object, no resummation can remove it, and only (S1) or (W2) can help.
+./KFACTOR.md:58:- **(S4) RESUMMATION RATHER THAN TERMWISE BOUNDING.**
+./REVIEW_SOFTHARD.md:182:| **R10 — boundary resummation; J. Dimock**, III Appendix B, Lemma 19, (238)–(245). | Regroup boundary activities after enlarging the inactive set, preserving the sum while controlling decay loss in the specified punctured distance. Both routes. | 3–6 pages including counting; medium. Actual source/indicator locality remains additional. | **Regrouping proof present, counting dependency external to that lemma.** Rebuild Part II Lemma E.3's count or supply an already proved matching local count. This is not the nonabelian recycling operation. |
+./PLD.md:3383:    Bianchi/derivative cancellation is what takes K_p from 2.27 to ≈ 0.12). The regress therefore has to be resummed by
+./PLD.md:3688:Bianchi/derivative cancellation that takes K_p^sharp from 2.27 to ≈ 0.12 on closed inputs the same resummation the
+
+COMMAND: ['rg', '-n', 'hull|regroup|X\\^\\+|H26|H27|H24|boundary polymers', 'SF.md', 'RECOVERY_CLUSTER_ASTRA.md', 'SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md', 'STEP55.md']
+EXIT: 0
+STEP55.md:583:| reference comparison (I5) | Theorem CX gives the reference's log as local polymers, so a cone's lateral boundary costs ≤ C·H_V per boundary box per level — a constant c_B = O(H_V), as LARGE55 E13 says; but boundary polymers READ cone variables, so COL's exact integration must be redone with those polymers expanded | ARGUED; the COL-compatibility step is OPEN |
+STEP55.md:726:| st-24 | reference comparison: c_B = O(H_V) per boundary box per level; COL-compatibility with boundary polymers (§7) | ARGUED / OPEN |
+STEP55.md:777:   comparison ARGUED (COL-compatibility with boundary polymers OPEN), failed returns OPEN.
+SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md:593:         sup_(real U,V; D_(rho,lambda)(u)) |V_X^F| <= d_q.                 (H24)
+SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md:614:The units of (H24) are level-zero blocks, one containing L^4 fine sites.
+SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md:630:    absolute value <= d_q |A_F|.                              (H26)
+SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md:634:in (H26) are the source-dependent ones at the same epsilon. Taking its
+SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md:642:       = sum_(connected X meeting both sides)V_X.             (H27)
+SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md:645:of O. By (H24) the right side has modulus at most d_q |boundary_in O|.
+SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md:815:explicit completion caps, then gives (H23)-(H27) on the original source discs
+RECOVERY_CLUSTER_ASTRA.md:219:This proves (C) and absolute convergence of the regrouping. ∎
+RECOVERY_CLUSTER_ASTRA.md:558:original coefficient field, and must charge long jumps before regrouping.
+SF.md:32:  **X^+** := the set of cubes whose closed cube meets the closed cube of some element of X (the *-neighbourhood; X ⊂ X^+).
+SF.md:186:- **Lemma SF-geo (collar tree bound).** In Setting CE, for every polymer X: X^+ is a polymer, d(X^+) ≤ d(X) + 17|X|, hence
+SF.md:187:  **d(X^+) ≤ 273d(X) + 272**. *Planned: PROVEN-HERE ⇐ CE-geo' (not counted).*
+SF.md:188:- **Corollary CE^+ (Theorem CE for collar-dependent activities).** In Setting CE, let H(X, Φ) depend on Φ|_{X^+} only and
+SF.md:191:  {H(X) : X^+ ⊂ Y}, H#(Y) = 0 unless Y is a polymer, and |H#(Y)| ≤ C_1H'_0e^{-(κ'-3κ_0-3)d(Y)}. (κ' > 3κ_0 + 3 ⟺ κ > 273(3κ_0 + 3 +
+SF.md:415:links obey (d)'s hypothesis, H depends on Z only on X^+. (Check s1 A verifies (a)-(d) as exact zero patterns in a d = 2
+SF.md:423:**Lemma SF-geo: PROVEN-HERE ⇐ CE-geo' (not counted).** *Proof.* X^+ is connected (each added cube touches X). Two closed lattice
+SF.md:425:or a single endpoint k_i ± ½; choosing an endpoint in each full factor gives a vertex of Q in Q'. So every cube of X^+ touching
+SF.md:430:cube of X^+. Infimum over τ: d(X^+) ≤ d(X) + 17|X| ≤ d(X) + 17·16(1 + d(X)) = 273d(X) + 272 (CE-geo': |X| ≤ 16(1 + d(X))). ∎
+SF.md:434:H'(Y) := Σ_{X: X^+=Y}H(X) (regroup the finite sum). H'(Y) depends on Φ|_Y only; H'(Y) = 0 unless Y = X^+ for a polymer X, hence
+SF.md:435:unless Y is a polymer. By SF-geo, d(X) ≥ (d(Y) - 272)/273 when X^+ = Y, and the X with X^+ = Y are subsets of Y, at most
+SF.md:438:{H(X) : X^+ ⊂ Y}. ∎ κ' > 3κ_0 + 3 ⟺ κ > 273(3κ_0 + 3 + 16log 2) = 1.2779·10⁵ (s1 E).
+SF.md:458:- (V2) (H2) in Z-variables: fails for s ≡ 1; holds in the collar form "depends on Φ|_{X^+}" at level 0 off the s-support with
+SF.md:632:Z_y ∈ R^n. ν = Π_yν_y is a product probability measure with supp ν_y ⊂ {|Z_y| ≤ p}. X^+ as in §0. δ(y, X) := the fine ℓ^∞
+SF.md:633:torus distance from y to the set of sites of ∪X; n(y, X) := the ℓ^∞ cube-index torus distance from q(y) to X^+. For s ∈ C^Λ,
+SF.md:635:  𝔻_X(μ) := {s ∈ C^Λ : s_y = 1 for every site y of ∪X^+, |s_y| < 1 + e^{μδ(y,X)} otherwise}.
+SF.md:641:    F_X(Z) = Σ_{S⊂Λ∖∪X^+}F_{X,S}(Z),  F_{X,S}(Z) := Σ_{T⊂S}(-1)^{|S∖T|}Φ_X(1_{∪X^+∪T}·Z),
+SF.md:642:  F_{X,S} depends on Z only through Z on (∪X^+) ∪ S, and |F_{X,S}(Z)| ≤ h_0e^{-κd(X)}Π_{y∈S}e^{-μδ(y,X)} with δ(y, X) > M·n(y, X)
+SF.md:643:  and n(y, X) ≥ 1 for y ∉ ∪X^+. *Planned: PROVEN-HERE (counted).*
+SF.md:644:- **Lemma HULL.** For a polymer X and a finite S ⊂ Λ∖∪X^+ there is a polymer Y(X, S) (a fixed rule) with X^+ ⊂ Y(X, S),
+SF.md:745:**Lemma LOC-s: PROVEN-HERE (counted).** *Proof.* Fix X and Z ∈ supp ν; let F := Λ∖∪X^+ (finite) and g(s_F) := Φ_X(s·Z) with s_y = 1
+SF.md:746:on ∪X^+; g is holomorphic on 𝔻 := Π_{y∈F}{|s_y| < 1 + e^{μδ(y,X)}} ⊃ [0, 1]^F. For T ⊂ F write g(1_T) for g at the indicator of T;
+SF.md:747:g(1_T) = Φ_X(1_{∪X^+∪T}·Z). (1) *Identity.* Σ_{S⊂F}Σ_{T⊂S}(-1)^{|S∖T|}g(1_T) = Σ_{T⊂F}g(1_T)Σ_{S: T⊂S⊂F}(-1)^{|S∖T|} = g(1_F) = F_X(Z)
+SF.md:748:(the inner sum is 1 if T = F and 0 otherwise). (2) *Locality.* Every g(1_T) with T ⊂ S reads Z only on ∪X^+ ∪ T ⊂ ∪X^+ ∪ S.
+SF.md:752:let r_y ↑ e^{μδ(y,X)}. (4) *Distance.* y ∉ ∪X^+ means q(y) ∉ X^+, so n := n(y, X) ≥ 1. If a cube Q of X had ℓ^∞ cube-index distance
+SF.md:753:j ≤ n from q(y): j = 1 puts q(y) in X^+; for j ≥ 2, stepping once from Q towards q(y) in every differing coordinate gives a cube of
+SF.md:754:X^+ at distance j - 1 < n, contradicting the definition of n. So every cube of X is at index distance ≥ n + 1 from q(y); two sites
+SF.md:758:**Lemma HULL: PROVEN-HERE (not counted).** *Proof.* Let τ be a connected union of segments in ∪X^+ meeting every closed cube of X^+,
+SF.md:759:of length ≤ d(X^+) + η (η > 0 arbitrary); d(X^+) ≤ 273d(X) + 272 (Lemma SF-geo). For y ∈ S let Q'_y be the lexicographically first
+SF.md:760:cube of X^+ at index distance n_y := n(y, X) from q(y), and work in the lift in which the index displacement Δ ∈ Z⁴ from q(y) to Q'_y
+SF.md:762:and γ_y ⊂ Q'_y a segment from the centre of Q'_y to a point of τ ∩ Q'_y (length ≤ the half-diagonal, 1). Put Y(X, S) := X^+ ∪ {cubes
+SF.md:766:centre), and d(Y(X, S)) ≤ length(τ') ≤ d(X^+) + η + Σ_y(2n_y + 1). Let η → 0. ∎ (s2 B1-B3: the construction on a 7⁴ torus of cubes
+SF.md:771:regroup). By Lemma LOC-s, Σ_XF_X = Σ_XΣ_SF_{X,S} (finite sums). Put H'(Y) := Σ_{(X,S): Y(X,S)=Y}F_{X,S}. Each piece reads Z only on
+SF.md:772:∪X^+ ∪ S ⊂ ∪Y(X, S) (q(y) ∈ Y(X, S)), so H'(Y) depends on Z|_Y only, and H'(Y) = 0 unless Y is a polymer (Lemma HULL). Step 2
+SF.md:773:(bound). Y(X, S) = Y forces X ⊂ X^+ ⊂ Y; dropping every other constraint and using Lemma HULL and Lemma LOC-s (δ > Mn):
+SF.md:774:  e^{κ'd(Y)}|H'(Y)| ≤ h_0e^{272κ'}Σ_{X⊂Y}e^{-(κ - 273κ')d(X)}Σ_{S⊂Λ∖∪X^+}Π_{y∈S}w_y,  w_y := e^{κ'}e^{-(μM - 2κ')n(y,X)}.
+SF.md:775:Σ_SΠ_{y∈S}w_y = Π_y(1 + w_y) ≤ exp(Σ_yw_y). The sites with n(y, X) = n lie in cubes at index distance ≤ n from some cube of X^+, at
+SF.md:776:most |X^+|(2n + 1)⁴ cubes of M⁴ sites, so Σ_yw_y ≤ |X^+|W; |X^+| ≤ 81|X| ≤ 1296(1 + d(X)) (each cube has 3⁴ cubes within index distance 1;
+SF.md:788:crude d(X^+) ≤ 273d(X) + 272: g-independent, extreme, and an existence statement [RSF2-fix CEk-2: and, with the rate loss 1/273,
+SF.md:801:|A_b| ≤ Σ_y|𝒞(b, y)||s_y||Z_y| with |s_y| < 1 + e^{μδ(y,X)} ≤ 2e^{μδ(y,X)} (and |s_y| = 1 on ∪X^+), |Z_y| ≤ p, and
+SF.md:855:requirement e^{-272κ'}c_0 is not reproduced either. The loss is entirely SF-geo's multiplicative d(X^+) ≤ 273d(X) + 272 (HULL's
+SF.md:1033:  {s : s = 1 on ∪X^+; |s_y - σ_y| ≤ r_y for y ∈ S, some σ ∈ [0, 1]^S; s_y = 0 for y ∉ ∪X^+ ∪ S}, for any radii r_y > 0 for which g is
+SF.md:1076:  segments contained in ∪c^+ that meet every closed cube of c. Activities H(X, Φ) for polymers X depend on Φ|_{X^+} only.
+SF.md:1088:- **Corollary CE-exp-col.** Theorem CE-exp with Theorem CE-col in place of Theorem CE and the collar-free hull Y_0(X, S) (X plus the
+SF.md:1104:derivative on the closed polydisc Π_{y∈S}{|s_y - σ_y| ≤ r_y} (F∖S-coordinates fixed at 0, ∪X^+-coordinates fixed at 1) gives
+SF.md:1107:the refinement is load-bearing.) *Use.* Far sites outside ∪X^+ ∪ S contribute NOTHING to the field in the bound, and every site
+SF.md:1136:CE-exp^0) is **large** if X^+ ∩ R ≠ ∅, else **small**; a large X lies in W_α for exactly one α. *Readability:* whether a site is a
+SF.md:1138:on X^+. So every structural fact used for a member below is read on that member's own set.
+SF.md:1139:*Step 2 (localisation).* G_α := exp(Σ_{X large in W_α}H_X(g_0√N𝒞Z)). Apply LOC-s′ to G_α with "X^+" := U_α^+, radii r_y := e^{μδ(y,U_α)}
+SF.md:1146:LOC-s′ with the same radius rule relative to X; X^+ has no Q-site, so the field on X is ≤ ρ' (+ the far large sites, which enter only
+SF.md:1251:d^+(X) ≤ d(X) since ∪X ⊂ ∪X^+. (c) If c^+ is connected then c is 2-connected (two cubes of c whose collars share a cube are at index
+SF.md:1260:Π_X(1 + f_X), f_X := e^{H(X)} - 1. Call X, X' linked if X^+ ∩ X'^+ ≠ ∅. Grouping a collection of distinct polymers by linked-connected
+SF.md:1281:on the cores and no d(X^+) appears. The 1/273 and e^{272κ'} of SF-geo are gone.
+SF.md:1283:**Corollary CE-exp-col: PROVEN-HERE (not counted).** *Proof.* Lemma LOC-s as before; collar-free hull Y_0(X, S): for y ∈ S let Q'_y be a
+SF.md:1286:(HULL's argument with X in place of X^+). F_{X,S} reads ∪X^+ ∪ S ⊂ ∪Y_0^+. Regroup H''(Y_0) := Σ_{Y_0(X,S)=Y_0}F_{X,S} (reads Y_0^+). As in
+SF.md:1288:(Σ_yw_y ≤ |X^+|W_3, |X^+| ≤ 1296(1 + d(X)), e^{κ'(2n+3)} ≤ e^{3κ'}e^{2κ'n}); with κ ≥ κ' + 1296W_3 and 2^{|Y_0|} ≤ 2^{16}e^{16 log 2·d(Y_0)}:
+SF.md:1365:the small pieces through CE-exp-col (collar-free hull Y_0, no 273), the Mayer step through CE-col Step 1 (collar linking, 2-connected
+SF.md:1366:cores), the large components through the collar-free hull Y_0(U_α, S), and the final hard-core step through CE-col Steps 3-4. The
+SF.md:1375:large iff X^+ ∩ R ≠ ∅. κ̂ := κ_c - κ_0 - κ̃_0 - 2. Γ_j := exp(2κ̂(2ℓ_j + 13)⁴ + w_8(2ℓ_j + 15)⁴ + 2h_0(2ℓ_j + 3)⁴).
+SF.md:1442:the cube graph with ℓ^∞-adjacency, so dist(c, S^{(r)}) = max{dist(c, S) - r, 0}. (a) X small means X^+ ∩ R = ∅. H_y ⊂ R is the box of
+SF.md:1443:radius ℓ - 1 about q(y) (ℓ := ℓ_{j_y}), so every cube of X^+ is at distance ≥ ℓ from q(y), i.e. n(y, X) ≥ ℓ. (b) Let y ∈ Q_β, β ≠ α,
+SF.md:1450:d(U_α) ≤ 2(|U_α| - 1) is CE-Q's spanning-tree bound (REVIEW_SF_S3 B-2). (e) If X^+ meets c ∈ R̄_α, some x ∈ X has dist(x, c) ≤ 1. X has
+SF.md:1451:index diameter ≤ 1, so X ⊂ R̄_α^{(2)} = W_α. If X^+ also met c' ∈ R̄_β, then dist(c, c') ≤ 1 + 1 + 1 ≤ 7, so the two cubes would be
+SF.md:1481:*Step 2 (localisation; no (M-Q)).* Large components: G_α := exp(Σ_{X large in W_α}H_X). Apply LOC-s′ with "X^+" := U_α^+ and radii
+SF.md:1489:Small X: LOC-s′ with X^+. X^+ contains no Q-site, so the field is ≤ ρ', and a Q-site in S costs ≤ e^{-μδ/2} by HALO (a), (f). So
+SF.md:1490:|F_{X,S}| ≤ h_0Π_{y∈S}e^{-μδ(y,X)/2}, which is LOC-s's bound at rate μ/2. Corollary CE-exp-col's regrouping on the collar-free hull
+SF.md:1491:Y_0(X, S) gives H''(Y_0) := Σ_{X small, Y_0(X,S)=Y_0}F_{X,S}, which reads Z on ∪Y_0^+. Since d(X) = 0, |X^+| ≤ 1296 and
+SF.md:1501:- G-members: Ŷ_{α,S} := Y_0(U_α, S), CE-exp-col's collar-free hull with the polymer U_α. It satisfies U_α ⊂ Ŷ, q(y) ∈ Ŷ (y ∈ S), and
+SF.md:1513:    Smallness of X ⊂ 𝒵_k (X^+ ⊂ 𝒵_k^+) is decided by R ∩ 𝒵_k^+, which is the computed R(𝒵_k) ∩ 𝒵_k^+ (other clusters' halos lie in
+SF.md:1958:So M_XM_X^T ≥ L^{-2d} and ||M_X^+|| ≤ L^d. (b) For λ ∈ Λ and y ∈ B(X) take one axial path P: c_X → y, |P| ≤ dh. NA-FP (i)'s telescoping gives
+SF.md:1966:on Λ; it is injective with matching dimensions (NA-FP (ii)), so this is its inverse. (e) The η-column of (χ_UΓ)^{-1}(X, ·) is M_X^+δ_{XY} plus
+

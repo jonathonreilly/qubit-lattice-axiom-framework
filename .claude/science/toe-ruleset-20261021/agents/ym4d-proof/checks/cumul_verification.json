@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-30T02:21:53.247144+00:00",
+  "kind": "mechanical provenance and link verification; no new scientific numerics",
+  "passed": true,
+  "checks": {
+    "sources_unchanged": true,
+    "local_links_valid": true,
+    "criteria_hash_matches": true,
+    "exact_script_hash_matches": true,
+    "results_hash_matches_receipt": true,
+    "all_25_exact_checks_passed": true,
+    "resource_guards_passed": true,
+    "fresh_review_land": true,
+    "review_hash_matches": true,
+    "reviewed_scientific_text_unchanged": true
+  },
+  "missing_links": [],
+  "source_count": 10,
+  "reviewed_author_sha256": "a1c239775904835e44fb906a6137c82552e48d64071a6ab775d4f1e4597241a2",
+  "post_review_change": "final provenance paragraph only; scientific text hash reconstruction matches reviewed version",
+  "files": {
+    "CUMUL.md": "50f337bffacc0e49b7e3bc737609190bd106d8b9210c2ab8f1059745cc1bcfd8",
+    "CUMUL_LOG.md": "5deb8346393fc0b8dd4dffad70e8287c5a1d29e77c9392d60432190275b63c6c",
+    "checks/cumul_criteria.md": "138284b36cbc65a8c3acaa1d7b2e929d5c2ad721898b7fc2eaa6f66d7f90e067",
+    "checks/cumul_exact.py": "873ebbb870181043a035e09ffab091403e577805fe7ab6ca63e423c69032b10b",
+    "checks/cumul_numeric.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/cumul_results.json": "1ee615339ac40fd5c211c0008dab7a424010292c269d53a06161fb6f4e6c396a",
+    "checks/cumul_review.md": "0d7ddf20bcab17268adaacb6ad667dcb7647f05cd5e4f1d62a2eb8c81c8946af",
+    "checks/cumul_run.json": "5c2c8bb5c9cfe062abc685c93c884d8027153f42058f6f1bf28c18bd6582ae35",
+    "checks/cumul_run.py": "ea24ca7665bfe85b12deeb7f684e6412822d53229deac79d83ac669407338f36",
+    "checks/cumul_sources.json": "482718a2c3a580d4d3d71d3f228b49db14db878ac710ebb1040b9486e5dcb23c",
+    "checks/cumul_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "review_scope": "same-family fresh-context LAND for comparator, free coefficient and conditional implication; actual YM inputs OPEN; NG-ax unverified"
+}

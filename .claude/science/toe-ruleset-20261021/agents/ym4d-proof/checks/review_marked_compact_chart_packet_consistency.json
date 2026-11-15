@@ -1,0 +1,166 @@
+{
+  "schema": "review-marked-compact-chart-packet-consistency-v1",
+  "stage": "after_immutable_source_only_freeze",
+  "created_utc": "2026-10-30T10:26:47.941832+00:00",
+  "source_only_read_coverage_sha256": "c5042c2d094ef1510759d6ff4e01d5ef10daa386246e5e9fcde2ff787e257fe1",
+  "source_only_findings_sha256": "c1acb9aedd48ed2f9b1eb9535ae9f9e5e0673432fdd99a4a94b31aa27bdbbe21",
+  "author_manifest": {
+    "path": "checks/marked_compact_chart_read_manifest.json",
+    "sha256": "7d78a27ce53c0112dcee91d40c714c5147e0210e3077b793aeffab2b8d2e3503",
+    "lines_read": [
+      1,
+      92
+    ]
+  },
+  "author_receipt": {
+    "path": "checks/marked_compact_chart_receipt.json",
+    "sha256": "d708285a2b2848909c780c61f54fd486f8176c903d292e04d2f19830ddd2d8a0",
+    "lines_read": [
+      1,
+      64
+    ]
+  },
+  "declared_identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "hash_matches": true,
+      "line_count_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "receipt_source_hash_matches": true,
+      "receipt_source_lines_match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/marked_compact_chart_read_manifest.json",
+      "receipt_manifest_hash_matches": true,
+      "receipt_manifest_lines_match": true
+    }
+  ],
+  "receipt_supplier_hash_checks": {
+    "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md": true,
+    "COMPACT_RETURN_GLUING_ASTRA.md": true,
+    "MIXED_CAP_CHART_ASTRA.md": true,
+    "REGIONAL_CRITICAL_FIELD_ASTRA.md": true,
+    "REGIONAL_CHART_RETURN_ASTRA.md": true,
+    "NONLINEAR_CHART_ACTIVITY_ASTRA.md": true,
+    "NONLINEAR_READER_RETURN_ASTRA.md": true,
+    "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": true
+  },
+  "independent_source_pin_recheck": {
+    "MARKED_COMPACT_CHART_ASTRA.md": true,
+    "COMPACT_RETURN_GLUING_ASTRA.md": true,
+    "MIXED_CAP_CHART_ASTRA.md": true,
+    "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": true,
+    "NONLINEAR_READER_RETURN_ASTRA.md": true,
+    "REGIONAL_CRITICAL_FIELD_ASTRA.md": true,
+    "REGIONAL_CHART_RETURN_ASTRA.md": true,
+    "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md": true,
+    "NONLINEAR_CHART_ACTIVITY_ASTRA.md": true,
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md": true,
+    "COVARIANT_SOFT_BACKGROUND_ASTRA.md": true,
+    "CUT_SECTOR_COERCIVITY_ASTRA.md": true,
+    "OUTSIDE_CHART_RETURN_ASTRA.md": true,
+    "SHRINKING_CHART_RETURN_ASTRA.md": true,
+    "STEP55.md": true
+  },
+  "equation_definitions_exactly_1_to_39_once_in_order": true,
+  "local_markdown_links": [
+    {
+      "target": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "COMPACT_RETURN_GLUING_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "MIXED_CAP_CHART_ASTRA.md",
+      "exists": true
+    }
+  ],
+  "manual_semantic_check": {
+    "source_scope_matches_packet": true,
+    "new_connected_claim_is_not_replaced_by_CG_joint_moments": true,
+    "source_and_packet_keep_fixed_real_coarse_domain": true,
+    "all_five_packet_open_interfaces_preserved": true,
+    "both_ultimate_physical_targets_open": true,
+    "model_effort_label_is_request_not_attestation": true,
+    "no_automated_proof_or_independent_author_verdict_claimed": true,
+    "no_material_packet_contradiction_found": true
+  },
+  "limitations": [
+    "Author reading and no-run/mutation assertions are historical self-reports, not independently authenticated by these hashes.",
+    "Parent checkpoint and parent literature packet were not independently inspected or used as scientific premises.",
+    "External primary reading coverage was compared as a bounded attribution claim, not independently reproduced.",
+    "Administrative consistency is not a mathematical theorem test."
+  ],
+  "scientific_runs": 0,
+  "previous_reviews_opened": false,
+  "root_receipts_opened": false
+}

@@ -1,0 +1,35 @@
+{
+  "workdir": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "commands": [
+    "python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01.py > .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_out.json 2> .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_err.txt",
+    "python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02.py > .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02_out.json 2> .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02_err.txt"
+  ],
+  "versions": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "torch": "2.10.0"
+  },
+  "results": [
+    {
+      "program": "01 initial",
+      "exit_code": 1,
+      "predicates": "36/37",
+      "classification": "Preserved failed negative-control detector."
+    },
+    {
+      "program": "01 final",
+      "exit_code": 0,
+      "predicates": "40/40",
+      "classification": "Finite actual one-step SU2 action/jet/current controls."
+    },
+    {
+      "program": "02",
+      "exit_code": 0,
+      "predicates": "19/19",
+      "classification": "Finite actual depth-two source/current controls."
+    }
+  ],
+  "interpretation": "These are author finite controls, not independent review or an all-depth/continuum proof."
+}

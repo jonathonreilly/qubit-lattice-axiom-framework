@@ -1,0 +1,118 @@
+{
+  "created_utc": "2026-10-29T20:22:22.110891+00:00",
+  "scope": "B1 implementation-discrimination repair only; independent affected confirmation pending.",
+  "original_revision": "f15a7ad33f90d3de8ef2f8b40cada95d009f60bd",
+  "source_before_sha256": "cc1252b360b00e0463452febefba22313a1329cfee17515f012d3f4aa9bc8c76",
+  "source_after_sha256": "098bd38d680f82877911b34782f66394e2d6139c43e61b344b9d3bcef24ff35f",
+  "source_change": {
+    "original_paragraph": "- four explicit wrong outputs distinguished: dropping the inactive term,\n  deleting an inactive source, ignoring adjacent inactive components,\n  and identifying the active and full norms.",
+    "replacement_paragraph": "- four toy wrong outputs compared: dropping the inactive term, deleting\n  an inactive source, ignoring adjacent inactive components, and identifying\n  the active and full norms. The original active/full comparison did not\n  test the implementation substitution: [review B1](REVIEW_LIB1.md) showed\n  that this mutation survives. The [subsequent repair](LIB1_NORM_CONTROL_FIX.md)\n  connects exact witnesses to the actual full-output computation and records\n  separate corrected-baseline and mutant executions; affected confirmation\n  is pending."
+  },
+  "log_before_sha256": "b31bbbc52780fddf1779cb95d5a6f7e2405b5981d01dc1870e52bf564cfd7bc7",
+  "log_after_sha256": "45ddd307485381f3eb15ebca29a351d9e16f62d0b30c80c9ef1dee1a20d0239b",
+  "log_appendix": "\n## Subsequent coordinator repair of B1 \u2014 29 October 2026\n\nThe historical author execution above is preserved. Its active/full toy\ncomparison did not reject an actual implementation substitution, as\n[the original independent review](REVIEW_LIB1.md) demonstrated.\n[The separate repair record](LIB1_NORM_CONTROL_FIX.md) documents the corrected\nshared computation, an inactive-root overlap witness, the reproduced original\nsurvivor and three actual rejected mutants. New criteria preceded that\nimplementation and execution; old criteria, result and output files were\nnot overwritten. The first 8,489 source bytes and the mathematical theorem\nare unchanged. Independent affected confirmation is pending; both physical\ncontinuum targets and the missing source/sea estimates remain open.\n",
+  "initial_prefix_bytes": 8489,
+  "initial_prefix_sha256": "1f7367c972e1ad49e81cfccdab1bec07b2259a44616fc45bab28e89174941c3d",
+  "mathematical_sections_unchanged": true,
+  "original_review_sha256": "6d81bcc64fa4ce4ef970549474791c6c9c8ad17d138a5ec972c930ac58e3bff8",
+  "source_read_coverage": [
+    "Complete REVIEW_LIB1.md, lib1_check.py, lib1_criteria.md, LIB1_LOG.md",
+    "LIB1.md lines45-82,357-414,615-680; not a full source rereview"
+  ],
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LIB1.md",
+      "sha256": "098bd38d680f82877911b34782f66394e2d6139c43e61b344b9d3bcef24ff35f",
+      "bytes": 41074
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LIB1_LOG.md",
+      "sha256": "45ddd307485381f3eb15ebca29a351d9e16f62d0b30c80c9ef1dee1a20d0239b",
+      "bytes": 10619
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LIB1_NORM_CONTROL_FIX.md",
+      "sha256": "66d75cd4e8953afaad262dfeb16956119f1782f84ee14afae124f71ba20c9225",
+      "bytes": 4748
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_check.py",
+      "sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+      "bytes": 13437
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_for_full_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_for_full_stdout.json",
+      "sha256": "4d046cebc9e9104c826efa0f7266d981bbc315987841f4944b9cd17eb0843166",
+      "bytes": 8484
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_roots_only_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_roots_only_stdout.json",
+      "sha256": "5d34a5d9c52ef5c8a2b736e35eea27bee6841100161e72448008678615cac134",
+      "bytes": 8602
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_weight_only_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_weight_only_stdout.json",
+      "sha256": "842eec964c7f8aa7b41e5e3ca260e5d228633c7742b16bfe746243cf7c5527a5",
+      "bytes": 8484
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_corrected_baseline_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_corrected_baseline_stdout.json",
+      "sha256": "05f533116f31fc1ba137c9b9f90fe4b993b57c18b8c8ed7e781fbc0f91c1ec24",
+      "bytes": 10333
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_criteria.md",
+      "sha256": "f226f39f170796fdc8b22fed9f6c029fdd7212f890445cab9912da291ac565a1",
+      "bytes": 2640
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_execution.json",
+      "sha256": "a4360a7a0cc8bb3d076ab7e9bccc79f4390b4d502758c1447209ce8b64adb785",
+      "bytes": 12704
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_original.py",
+      "sha256": "63256a04b6d2fc46dad13ee26ae0b0c592e93ac7d271157076ef32d23650fdbc",
+      "bytes": 11328
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_original_active_for_full_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_original_active_for_full_stdout.json",
+      "sha256": "9f6f8c7f1ed5bb45f5d58ae4898f4e9774b492ef7b0d9767061dd4843086239b",
+      "bytes": 9644
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_run.py",
+      "sha256": "e00d03e98e830e1da550171ba21a8e5653e268952ea33381b9cf862bc0a8e4e4",
+      "bytes": 4324
+    }
+  ],
+  "all_expected_execution_outcomes": true,
+  "independent_confirmation": "PENDING",
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

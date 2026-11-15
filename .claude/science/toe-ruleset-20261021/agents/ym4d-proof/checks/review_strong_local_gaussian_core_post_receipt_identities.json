@@ -1,0 +1,782 @@
+{
+  "schema_version": 1,
+  "stage": "FINAL identity check performed AFTER reviewer receipt creation",
+  "started_at_utc": "2026-10-30T14:14:20.064505+00:00",
+  "recorded_at_utc": "2026-10-30T14:14:20.077566+00:00",
+  "reviewer_receipt_created_at_utc": "2026-10-30T14:12:50.239153+00:00",
+  "receipt_precedes_final_check": true,
+  "reviewer_receipt": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_receipt.json",
+    "sha256": "91bd8690626ac3ccc6f73f695747cd956e3d996a922d5897b7b5b3b477b09f40",
+    "lines": 701
+  },
+  "mathematical_verdict": "LAND only for the bounded SG1-SG25 result; immutable source-only mathematics unchanged",
+  "packet_verdict": "PASS with separate amendments and explicit historical/current versions",
+  "current_file_comparison_count": 67,
+  "current_file_unique_paths": 67,
+  "historical_source_reconstruction_comparison_count": 1,
+  "total_identity_comparison_count": 68,
+  "hash_or_line_mismatch_count": 0,
+  "current_file_checks": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "expected_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "observed_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "expected_lines": 140,
+      "observed_lines": 140,
+      "bytes": 9276,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "expected_sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "observed_sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "expected_lines": 313,
+      "observed_lines": 313,
+      "bytes": 20680,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "expected_sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "observed_sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "expected_lines": 31,
+      "observed_lines": 31,
+      "bytes": 5441,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "expected_sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "observed_sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "expected_lines": 564,
+      "observed_lines": 564,
+      "bytes": 30251,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "expected_sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "observed_sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "expected_lines": 747,
+      "observed_lines": 747,
+      "bytes": 38806,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "expected_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "observed_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "expected_lines": 568,
+      "observed_lines": 568,
+      "bytes": 28993,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "expected_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "observed_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "expected_lines": 722,
+      "observed_lines": 722,
+      "bytes": 39217,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "expected_sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "observed_sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "expected_lines": 238,
+      "observed_lines": 238,
+      "bytes": 12324,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "expected_sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "observed_sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "expected_lines": 397,
+      "observed_lines": 397,
+      "bytes": 21272,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "expected_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "observed_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "expected_lines": 617,
+      "observed_lines": 617,
+      "bytes": 32365,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "observed_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "expected_lines": 556,
+      "observed_lines": 556,
+      "bytes": 29068,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "expected_sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "observed_sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "expected_lines": 580,
+      "observed_lines": 580,
+      "bytes": 31368,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "expected_sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "observed_sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "expected_lines": 460,
+      "observed_lines": 460,
+      "bytes": 23982,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "expected_sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "observed_sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "expected_lines": 624,
+      "observed_lines": 624,
+      "bytes": 32110,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "expected_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "observed_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "expected_lines": 713,
+      "observed_lines": 713,
+      "bytes": 36322,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "observed_sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "expected_lines": 641,
+      "observed_lines": 641,
+      "bytes": 32868,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "expected_sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "observed_sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "expected_lines": 543,
+      "observed_lines": 543,
+      "bytes": 27584,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "observed_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "expected_lines": 11,
+      "observed_lines": 11,
+      "bytes": 1497,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "expected_sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "observed_sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "expected_lines": 608,
+      "observed_lines": 608,
+      "bytes": 30517,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "expected_sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "observed_sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "expected_lines": 597,
+      "observed_lines": 597,
+      "bytes": 31228,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "observed_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "expected_lines": 510,
+      "observed_lines": 510,
+      "bytes": 27875,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "observed_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "expected_lines": 592,
+      "observed_lines": 592,
+      "bytes": 31328,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "expected_sha256": "1e3e99cba4d7d0107717824a7412b2a05ee3719338110d9bf7a5bca79dd9ab19",
+      "observed_sha256": "1e3e99cba4d7d0107717824a7412b2a05ee3719338110d9bf7a5bca79dd9ab19",
+      "expected_lines": 148,
+      "observed_lines": 148,
+      "bytes": 9701,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "observed_sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "expected_lines": 508,
+      "observed_lines": 508,
+      "bytes": 25946,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "expected_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "observed_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "expected_lines": 711,
+      "observed_lines": 711,
+      "bytes": 36894,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "observed_sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "expected_lines": 247,
+      "observed_lines": 247,
+      "bytes": 12513,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "observed_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "expected_lines": 597,
+      "observed_lines": 597,
+      "bytes": 29717,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "expected_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "observed_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "expected_lines": 812,
+      "observed_lines": 812,
+      "bytes": 94345,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "expected_sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "observed_sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "expected_lines": 490,
+      "observed_lines": 490,
+      "bytes": 25270,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "expected_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "observed_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "expected_lines": 937,
+      "observed_lines": 937,
+      "bytes": 46438,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "expected_sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "observed_sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "expected_lines": 631,
+      "observed_lines": 631,
+      "bytes": 31597,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "expected_sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "observed_sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "expected_lines": 108,
+      "observed_lines": 108,
+      "bytes": 7724,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "expected_sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "observed_sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "expected_lines": 246,
+      "observed_lines": 246,
+      "bytes": 11048,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "expected_sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "observed_sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "expected_lines": 76,
+      "observed_lines": 76,
+      "bytes": 7736,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_read_manifest.json",
+      "expected_sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "observed_sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "expected_lines": 127,
+      "observed_lines": 127,
+      "bytes": 9686,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_receipt.json",
+      "expected_sha256": "a83ca29700a623c7c31d9fb15e684c89addb30a0959ca5664029ea029f4a2fa5",
+      "observed_sha256": "a83ca29700a623c7c31d9fb15e684c89addb30a0959ca5664029ea029f4a2fa5",
+      "expected_lines": 51,
+      "observed_lines": 51,
+      "bytes": 3365,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_amendment_review.json",
+      "expected_sha256": "d2d4c2c97e6b1cbe9211c0accba55d6abb9d5bf3a0c43e3086b8d63c866978a0",
+      "observed_sha256": "d2d4c2c97e6b1cbe9211c0accba55d6abb9d5bf3a0c43e3086b8d63c866978a0",
+      "expected_lines": 402,
+      "observed_lines": 402,
+      "bytes": 19931,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_final_checks.json",
+      "expected_sha256": "2de7c3779aa8a1cd5ac3cbdc63b9336042dbf2556961a68a9dd02eee694eb5af",
+      "observed_sha256": "2de7c3779aa8a1cd5ac3cbdc63b9336042dbf2556961a68a9dd02eee694eb5af",
+      "expected_lines": 75,
+      "observed_lines": 75,
+      "bytes": 2936,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_packet_checks.json",
+      "expected_sha256": "e1fc51754918ddb08b943395ec7ab852cc8204666e46e528aabde62274d98f01",
+      "observed_sha256": "e1fc51754918ddb08b943395ec7ab852cc8204666e46e528aabde62274d98f01",
+      "expected_lines": 491,
+      "observed_lines": 491,
+      "bytes": 24403,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_protected_checks.json",
+      "expected_sha256": "84d5e6f7475f4a66ccb889906457cff4f92de8d26537834a5c840e84ebc86c03",
+      "observed_sha256": "84d5e6f7475f4a66ccb889906457cff4f92de8d26537834a5c840e84ebc86c03",
+      "expected_lines": 195,
+      "observed_lines": 195,
+      "bytes": 10407,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_read_manifest.json",
+      "expected_sha256": "06944c1046950d262aeba290cbab0d6da202918e408b8b523584da31596ec6e6",
+      "observed_sha256": "06944c1046950d262aeba290cbab0d6da202918e408b8b523584da31596ec6e6",
+      "expected_lines": 525,
+      "observed_lines": 525,
+      "bytes": 19425,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_source_findings.md",
+      "expected_sha256": "18526a589b5772f5fa68e261c2c4dcc5641cfc3951a9dfe2d23b7b3cad112cdd",
+      "observed_sha256": "18526a589b5772f5fa68e261c2c4dcc5641cfc3951a9dfe2d23b7b3cad112cdd",
+      "expected_lines": 185,
+      "observed_lines": 185,
+      "bytes": 11129,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_author_amendment.json",
+      "expected_sha256": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450",
+      "observed_sha256": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450",
+      "expected_lines": 96,
+      "observed_lines": 96,
+      "bytes": 5778,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_links_amendment.json",
+      "expected_sha256": "b878c2299b8a3ae2733073fee3921d2214458389538aa97d9e3dc21cbdf21b01",
+      "observed_sha256": "b878c2299b8a3ae2733073fee3921d2214458389538aa97d9e3dc21cbdf21b01",
+      "expected_lines": 74,
+      "observed_lines": 74,
+      "bytes": 3219,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_read_manifest.json",
+      "expected_sha256": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+      "observed_sha256": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+      "expected_lines": 122,
+      "observed_lines": 122,
+      "bytes": 8864,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_receipt.json",
+      "expected_sha256": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+      "observed_sha256": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+      "expected_lines": 53,
+      "observed_lines": 53,
+      "bytes": 3714,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_read_manifest.json",
+      "expected_sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "observed_sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "expected_lines": 129,
+      "observed_lines": 129,
+      "bytes": 7772,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+      "expected_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "observed_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "expected_lines": 26,
+      "observed_lines": 26,
+      "bytes": 1118,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "observed_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "expected_lines": 233,
+      "observed_lines": 233,
+      "bytes": 11333,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "observed_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "expected_lines": 193,
+      "observed_lines": 193,
+      "bytes": 11788,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "observed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "expected_lines": 130,
+      "observed_lines": 130,
+      "bytes": 6427,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "observed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "expected_lines": 35,
+      "observed_lines": 35,
+      "bytes": 2180,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "expected_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "observed_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "expected_lines": 93,
+      "observed_lines": 93,
+      "bytes": 5767,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "observed_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "expected_lines": 336,
+      "observed_lines": 336,
+      "bytes": 16755,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "expected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "observed_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "expected_lines": 309,
+      "observed_lines": 309,
+      "bytes": 16454,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "expected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "observed_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "expected_lines": 434,
+      "observed_lines": 434,
+      "bytes": 30709,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "observed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "expected_lines": 126,
+      "observed_lines": 126,
+      "bytes": 4975,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "expected_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "observed_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "expected_lines": 370,
+      "observed_lines": 370,
+      "bytes": 24561,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "expected_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "observed_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "expected_lines": 394,
+      "observed_lines": 394,
+      "bytes": 23216,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "expected_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "observed_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "expected_lines": 140,
+      "observed_lines": 140,
+      "bytes": 7554,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "expected_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "observed_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "expected_lines": 96,
+      "observed_lines": 96,
+      "bytes": 5188,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "expected_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "observed_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "expected_lines": 183,
+      "observed_lines": 183,
+      "bytes": 12608,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "expected_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "observed_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "expected_lines": 248,
+      "observed_lines": 248,
+      "bytes": 12940,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/audit/data/axiom_premise_nodes.json",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "observed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "expected_lines": 52,
+      "observed_lines": 52,
+      "bytes": 6416,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/repo/controlled_vocabulary.yaml",
+      "expected_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "observed_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "expected_lines": 939,
+      "observed_lines": 939,
+      "bytes": 53269,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/scripts/vocab_lint.py",
+      "expected_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "observed_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "expected_lines": 392,
+      "observed_lines": 392,
+      "bytes": 14183,
+      "matches": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_receipt.json",
+      "expected_sha256": "91bd8690626ac3ccc6f73f695747cd956e3d996a922d5897b7b5b3b477b09f40",
+      "observed_sha256": "91bd8690626ac3ccc6f73f695747cd956e3d996a922d5897b7b5b3b477b09f40",
+      "expected_lines": 701,
+      "observed_lines": 701,
+      "bytes": 33389,
+      "matches": true
+    }
+  ],
+  "historical_source_reconstruction": {
+    "mode": "Remove exactly the six coordinator-listed link wrappers from the unchanged selected current source",
+    "expected_sha256": "9f99a9ed53057911015041018c0f6b3112d53976e5e64bae1a2b8c6ac5fa211b",
+    "observed_sha256": "9f99a9ed53057911015041018c0f6b3112d53976e5e64bae1a2b8c6ac5fa211b",
+    "expected_lines": 490,
+    "observed_lines": 490,
+    "bytes": 25061,
+    "matches": true
+  },
+  "report_local_link_checks": [
+    {
+      "label": "source",
+      "target": "STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "source-only findings",
+      "target": "checks/review_strong_local_gaussian_core_source_findings.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "read manifest",
+      "target": "checks/review_strong_local_gaussian_core_read_manifest.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "RF",
+      "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "FU",
+      "target": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "CB",
+      "target": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "STEP55",
+      "target": "STEP55.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "WS",
+      "target": "WHITE_SECTOR_MATCHING_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "CW",
+      "target": "COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "WR",
+      "target": "WEIGHTED_RETURN_JETS_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "RJ",
+      "target": "REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "coordinator amendment",
+      "target": "checks/strong_local_gaussian_core_links_amendment.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "original author manifest",
+      "target": "checks/strong_local_gaussian_core_read_manifest.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "receipt",
+      "target": "checks/strong_local_gaussian_core_receipt.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "author amendment",
+      "target": "checks/strong_local_gaussian_core_author_amendment.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "packet checks",
+      "target": "checks/review_strong_local_gaussian_core_packet_checks.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "protected-identity checks",
+      "target": "checks/review_strong_local_gaussian_core_protected_checks.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "amendment assessment",
+      "target": "checks/review_strong_local_gaussian_core_amendment_review.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "final checks",
+      "target": "checks/review_strong_local_gaussian_core_final_checks.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "reviewer receipt",
+      "target": "checks/review_strong_local_gaussian_core_receipt.json",
+      "resolved": true,
+      "check_phase": "before final record write"
+    },
+    {
+      "label": "final identity record",
+      "target": "checks/review_strong_local_gaussian_core_post_receipt_identities.json",
+      "resolved": true,
+      "check_phase": "immediately after this record is written"
+    }
+  ],
+  "report_local_link_count": 21,
+  "all_report_local_links_resolve": true,
+  "read_scope_binding": {
+    "scientific_and_governance_windows": "Immutable review_strong_local_gaussian_core_read_manifest.json, bound by its row above; original source version is historical, all other recorded sources stay current.",
+    "post_freeze_metadata_and_process_windows": "review_strong_local_gaussian_core_amendment_review.json plus original packet/protected/final checks, all bound above.",
+    "metadata_only_limit": "File identity checks do not expand proof reading. Prior review reports and front/registry summaries were not used as scientific evidence.",
+    "primary_literature": "Exact arXiv version URLs, bounded returned windows and comparison-only use are bound through the immutable manifest and receipt. These checks do not assert full-paper reading or a new remote-content hash verification.",
+    "distribution_boundary": "Actual installed skill entries and pinned repo entries are separately hashed; pin/main/worktree equivalence and original checkpoint commit are coordinator provenance, not reviewer Git verification."
+  },
+  "selected_source_version": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+    "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+    "lines": 490
+  },
+  "source_only_findings_immutable": true,
+  "historical_author_packet_immutable": true,
+  "amendments_are_provenance_and_links_only": true,
+  "remaining_target_status": "Full 4D non-free continuum existence and a positive physical continuum mass gap remain OPEN; no interacting forest or independent large-positive-atom theorem is inferred.",
+  "operations": "Only metadata, hashes, line counts and links in this final operation; no scientific execution, source/front/audit edit, Git or publication.",
+  "self_binding": "This record cannot include its own cryptographic digest. Its final digest is returned after write; all local links, including the link to this record, are asserted to exist immediately afterward."
+}

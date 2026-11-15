@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "role": "Author analytic self-check and provenance; not independent review or audit.",
+  "requested_configuration": "Coordinator-requested Astra/max; no separate backend attestation.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+    "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+    "lines": 591
+  },
+  "freeze_order": "Mathematical source announced before provenance packaging. A notified attribution-only author correction preceded this replacement freeze; the exact reversible hunk and initial identity are retained below. No mathematical byte changed.",
+  "author_attribution_correction": {
+    "initial_lines": 588,
+    "initial_sha256": "810bfb72fb9f52945da91673c964067d54ebb498e917f4b97a1a8ff2cd40375b",
+    "replacement_lines": 591,
+    "replacement_sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+    "reason": "PROCESS_LIGHT requires Bałaban/Dimock attribution in every public text. This was an author provenance correction before independent review, not a reviewer repair.",
+    "reversible_unified_diff": "--- QUADRATIC_COARSE_RETURN_ASTRA.md@810bfb72fb9f52945da91673c964067d54ebb498e917f4b97a1a8ff2cd40375b\n+++ QUADRATIC_COARSE_RETURN_ASTRA.md@515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7\n@@ -14,6 +14,9 @@\n or external theorem is needed for these steps. SC's reviewed status is\n provenance; its stated mathematical interface is checked below. This new\n author proposition requires fresh independent review.\n+\n+Credit for the constructive antecedents remains with Bałaban and Dimock.\n+No theorem from their work is imported into this argument.\n \n ~~~yaml\n actual_current_surface_status: bounded-support\n",
+    "reverse_hash_verified": true
+  },
+  "bounded_result": "QC24-25 bound the same actual B_Aj on C_quad eta_c^2 V_K <= c q/32, retaining c u q|A|/2 and all physical prefactors. QC27-30 prove eta_c=Theta(sigma p/K^2) on one shrinking RF/RC family with fixed positive rho.",
+  "author_analytic_checks": [
+    "QC6-7: variance gives 1-m<=q_c without a polar selector. Outside-P_R brick plaquettes have lift I and only exterior free inputs; eight bricks times four telescoping occurrences times six plaquettes gives 192 Q_s, then A_Q=384 B_fill^2. Psi is never replaced by 1-h.",
+    "QC8-9: paired forward/backward trace expansion yields sqrt(2/N)||v||HS sqrt(1-h) plus exp(eta)||v||HS^2/(2N). All rough numerator fine means and original normalizers stay real and fixed. Young spends E/32 and a_shell Q_s/4 once.",
+    "QC10-13: fixed preliminary fine/coarse Cauchy polydiscs stay in the existing analytic chart after the physical boundary substitution. N13 roots include N9 masks; per-scalar incidence and row/column Schur bounds retain the mixed derivative and diagonal 2! factors. No critical branch is assumed on the larger local circles.",
+    "QC14-18: normalized kernel coarse derivative vanishes only at the matching unitary lift, by the original Haar-normalizer differential. Every Wilson local force is curvature-small. The nonzero boundary force remains in QC15. Actual Haar-inclusive stationarity yields the complete Schur complement with the actual full-colour critical inverse; no bare physical stationarity is assumed.",
+    "QC19-22: signed reset normalizers and energy-weighted imaginary-source cost are retained. The displayed single budget is 31-8-4-1-1-1=16 in units 1/32 after the E/32 loss. The interior charge is used pointwise before integration; no second E-2A_ref price is spent.",
+    "QC23-26: maximizer-cap normalizers, h_N, all n0|R| modes, determinant branch and critical action remain. Exact integral locality supplies Gamma_A without shrinking individual RF/RC readers. Arbitrary deep outside factors cancel only in the local ratio and stay in the exterior identity.",
+    "QC27-31: all Cauchy/critical-field constants precede u,q,K; RC17 explicitly admits the larger shrinking tube because delta/tau and eta_c/tau vanish as K^-2. Fixed-rho convergence, entropy/support costs, and ordinary inverse-radius Cauchy jets are retained."
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_read_manifest.json",
+      "sha256": "e5a0a07e1c24607a288a0a0a6001e88a3494be96be783d120c0994f94d0d52a5",
+      "lines": 119
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9
+    }
+  ],
+  "protected_sources_unchanged": {
+    "REGIONAL_CRITICAL_FIELD_ASTRA.md": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+    "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "SHRINKING_CHART_RETURN_ASTRA.md": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+    "NONLINEAR_READER_RETURN_ASTRA.md": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+    "NONLINEAR_CHART_ACTIVITY_ASTRA.md": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+    "SHIFTED_CHART_RETURN_ASTRA.md": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+    "POSITIVE_READER_COVARIANCE_ASTRA.md": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+    "CHART_BOUNDARY_FOREST_ASTRA.md": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+    "READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+    "COVARIANT_SOURCE_ACTIVITY_ASTRA.md": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+    "STEP55.md": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+    "GRADED_COMPLEMENT_ASTRA.md": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+    "REGIONAL_CHART_RETURN_ASTRA.md": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+    "CRITICAL_ACTION_READER_ASTRA.md": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+    "CRITICAL_DETERMINANT_READER_ASTRA.md": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+    "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+    "CUT_SECTOR_COERCIVITY_ASTRA.md": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+    "OUTSIDE_CHART_RETURN_ASTRA.md": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+    "MATCHED_REGIONAL_RATIO_ASTRA.md": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6"
+  },
+  "mechanical_checks": {
+    "equation_labels": "QC1-QC31, each defined exactly once",
+    "fences": "balanced",
+    "trailing_whitespace": "none",
+    "local_links": "all resolve",
+    "vocab_lint": "report-only; zero violations",
+    "source_hash": "replacement freeze unchanged; reversed attribution hunk recovers initial announced hash"
+  },
+  "remaining_interfaces": "Wider original RG coarse class, simultaneous complement gas/gluing, original G/Omega/history transport, inherited effective weights, iteration, non-free continuum existence and positive physical continuum mass gap remain open.",
+  "numerical_experiments": "none",
+  "independent_review": "Fresh independent review requested from coordinator on the exact replacement source; no QC review verdict is claimed.",
+  "operations": "Only QUADRATIC_COARSE_RETURN_ASTRA.md and checks/quadratic_coarse_return_* authored."
+}

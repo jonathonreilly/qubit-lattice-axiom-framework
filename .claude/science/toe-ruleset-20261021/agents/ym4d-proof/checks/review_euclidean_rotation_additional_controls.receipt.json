@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-29T18:59:57.648524+00:00",
+  "returncode": 0,
+  "seconds": 0.3801635000272654,
+  "script_sha256": "a741dd716c91bacc81d2d20a79eadbddb9a50a9244211c7e11955af6224d4316",
+  "criteria_sha256": "314b21116c26b966545f76f5a287fdb2f480677330f24766bfff2ff65ad1be18",
+  "stdout_sha256": "36b54d5546ed2ad11fd01ec62438bafde0b6e894c73100bc684b60e7680f3b9e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Post-inspection additional controls; all prior failures and thresholds preserved."
+}

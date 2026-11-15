@@ -1,0 +1,69 @@
+{
+  "schema": "charged-determinant-author-read-manifest-v1",
+  "role": "AUTHOR, not independent reviewer",
+  "unit": "CHARGED_DETERMINANT_SIGN_ASTRA",
+  "worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-ds-review-20261030",
+  "checkout_head": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+  "procedure_pin": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+  "source_freeze_utc": "2026-10-30T17:39:31Z",
+  "source": {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_DETERMINANT_SIGN_ASTRA.md", "lines": 625, "sha256": "2ab72d652afbae58cbcd071de2a372d98d5a2826281d43c06ec563e701181170"},
+  "route": {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow--charged-coefficient.md", "lines": 79, "sha256": "0b539601fa2e91c0c1d59dd781edeea2556a549358501a208186b6f43094efc5"},
+  "procedure_reads": [
+    {"path": "AGENTS.md", "lines": 27, "sha256": "7def904fdd52d811e7aba87a0d3d859bfb017cccd59703125f4a53f2805aaab2", "read_windows": [[1, 27]]},
+    {"path": "docs/ai_methodology/SCIENCE_WORKFLOW.md", "lines": 242, "sha256": "f7e307ec8c99863d84f24edf26c688d2f1e34245763457665e051fcb859f70f8", "read_windows": [[1, 242]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/SKILL.md", "lines": 95, "sha256": "2f94facbacfaa6844c5dc58541a660fd29e1c42940a85b9412c9dab15568233c", "read_windows": [[1, 95]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md", "lines": 436, "sha256": "a46a632cd2a7e392caf9b9c059440ab48b7dc4b73255323a748b1104596b8c1d", "read_windows": [[1, 220], [221, 436]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md", "lines": 336, "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be", "read_windows": [[1, 336]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md", "lines": 312, "sha256": "a0bfdaeefdce4c6206ba1da549a43735e0784861915769faf1b8c389c6969da8", "read_windows": [[1, 170], [171, 312]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md", "lines": 197, "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666", "read_windows": [[1, 197]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md", "lines": 387, "sha256": "d48c676ab368b5fce8666081f15a251366c303550661427880218ef93cb427a6", "read_windows": [[1, 387]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md", "lines": 126, "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258", "read_windows": [[1, 126]]},
+    {"path": "docs/ai_methodology/skills/workhorse/SKILL.md", "lines": 285, "sha256": "4de0316bbc2b69e7597f90d6d554a2bfeded33a9c9496bd49fa527ad0aab1a0a", "read_windows": [[1, 285]]},
+    {"path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md", "lines": 35, "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0", "read_windows": [[1, 35]]},
+    {"path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md", "lines": 130, "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69", "read_windows": [[1, 120]]},
+    {"path": "docs/audit/data/axiom_premise_nodes.json", "lines": 52, "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37", "read_windows": [[1, 52]]}
+  ],
+  "installed_and_local_reads": [
+    {"path": "/Users/jonBridger/AGENTS.md", "lines": 31, "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d", "read_windows": [[1, 31]], "role": "Machine instructions"},
+    {"path": "/Users/jonBridger/.codex/AGENTS.md", "lines": 30, "sha256": "dc4fd3a79c27994afd8636f748b418a81a5f00b527849331ca1cd21902689aa2", "read_windows": [[1, 30]], "role": "Machine Codex instructions"},
+    {"path": "AGENTS.md", "lines": 26, "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0", "read_windows": [[1, 26]], "role": "Older science-checkout entry; new unit procedure explicitly pinned above"},
+    {"path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md", "lines": 140, "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4", "read_windows": [[1, 140]], "role": "Installed entry, separate from c93 governing source"}
+  ],
+  "science_reads": [
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GOAL.md", "lines": 105, "sha256": "7c81f5f569c41a5e52ed769f834b726ae5cd5b21523fedc2340868d3d3ff5f66", "fresh_windows": [[1, 105]], "retained_prior_windows": [], "consumed_scope": "Full human target and lane dispatch; no writes."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow.md", "lines": 28, "sha256": "fef68f014fb5ded32fbb373f512224ffae1ccdd9c6f42f07bb3ab5fba062f5d6", "fresh_windows": [[1, 28]], "retained_prior_windows": [], "consumed_scope": "Parent part read only."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md", "lines": 11, "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab", "fresh_windows": [[1, 11]], "retained_prior_windows": [], "consumed_scope": "Compact source-first publication protocol."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md", "lines": 610, "sha256": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36", "fresh_windows": [[1, 285], [285, 610]], "retained_prior_windows": [], "consumed_scope": "Exact colour reduction, scalar bound, flat modes and remaining charged target."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md", "lines": 581, "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230", "fresh_windows": [[1, 267]], "retained_prior_windows": [[1, 581]], "consumed_scope": "Intrinsic full determinant, finite words and projection; retained prior author reading is not a fresh reread."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md", "lines": 670, "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff", "fresh_windows": [[350, 610]], "retained_prior_windows": [[1, 670]], "consumed_scope": "Critical curvature and volume-first marginal; retained prior author reading is not a fresh reread."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md", "lines": 790, "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61", "fresh_windows": [[90, 285], [285, 342]], "retained_prior_windows": [[1, 342], [586, 732]], "consumed_scope": "Gapped local inverse and complete-reader marked construction; reused with the new hard gap."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md", "lines": 568, "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74", "fresh_windows": [[1, 155]], "retained_prior_windows": [], "consumed_scope": "Literal paths, tree quotient and CB6 recovery bound."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md", "lines": 590, "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b", "fresh_windows": [[1, 175]], "retained_prior_windows": [[1, 365]], "consumed_scope": "Actual constrained SU saddle and full normalizer Hessian; finite-u remainder is not recomputed."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md", "lines": 583, "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61", "fresh_windows": [], "retained_prior_windows": [[1, 583]], "consumed_scope": "Context for fixed-kappa original-cut interface, not an input to CH25."},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/determinant-colour-cc799d903f.md", "lines": 140, "sha256": "0681285274966b654345b150614a6e288beedfd852caf6d9ce2e7fb0a96cae59", "fresh_windows": [[1, 140]], "retained_prior_windows": [], "consumed_scope": "Completed gate context only; no verdict used as a mathematical premise."}
+  ],
+  "primary_reads": [
+    {"url": "https://arxiv.org/pdf/math-ph/0401043v1", "sha256": "9b0f4e70eae87b21c4e33b4baf458b7af8447027fc4522ae74928e037e1acd7a", "bytes": 348811, "read": "Header/abstract; section 3.2 (3.29)-(3.30), displayed Propositions 3.5-3.6, Lemma 3.11, displayed Proposition 3.12; section 4 (4.36) and triangle-flux discussion. Not a full-paper read.", "mapping": "CH20 rebuilds the discrete finite-jet convolution identity; no general symbol-class theorem imported."},
+    {"url": "https://arxiv.org/pdf/hep-th/0203005v2", "sha256": "28d54f5ea91ac348641fcc42e44a931160965027c716064acc49fb2bbed3ac7b", "bytes": 286359, "read": "Header/abstract/introduction; section IV (4.1)-(4.10), IV C (4.18)-(4.20). Not a full-paper read.", "mapping": "On-shell Ward/constant-field method lead only; axial gauge, regulator and coefficient are not imported."},
+    {"url": "https://arxiv.org/pdf/0709.0781v3", "sha256": "db2ed3d832a763abea185bbf1d14c95faf48a7e9366393df80b5c2ab1980ae3f", "bytes": 274675, "read": "Header/intro; section II (7)-(15), displayed Appendix A theorem (A1), not its whole proof.", "mapping": "Positivity, zero-momentum and integrable-remainder requirements; CH17/CH24-27 independently derive the needed fixed-L estimates."}
+  ],
+  "primary_hash_note": "Exact version PDFs were read with the web tool in the listed windows. Later curl retrieval hashed bytes in memory only; that metadata retrieval is not claimed as additional reading. Python TLS lookup failed; system curl succeeded without disabling verification.",
+  "prior_art_scope": [
+    {"searched_revision": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff", "query": "charged determinant | charged coefficient | magnetic.*Schur | Schur.*magnetic, bounded docs search", "classification": "All seven match lines read; their six source scopes inspected in the listed context windows. No matching actual-kernel charged asymptotic supplied by these hits. This is not an exhaustive repo or PR read.", "observed_matches": 7},
+    {"path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md", "read_windows": [[1, 65]], "classification": "Supplied finite-link CAR Hamiltonian and fermion determinant, nonmatching Yang-Mills blocking problem."},
+    {"scope": "Current lane *ASTRA.md excluding new source and review files", "query": "C_L\\(|small.kappa|log\\(1/kappa\\)|magnetic.symbol|massive.vector", "hits": "Only DS lines 7,246,250,578 in this bounded sweep; DS fully read. Earlier broader output was truncated and is not counted complete."}
+  ],
+  "limits": [
+    "No new global open-PR inventory. Parent supplied the authorized DS gate and task context.",
+    "No audit/retained promotion, independent review, backend attestation or whole-paper reading claimed.",
+    "No numerical science or symbolic coefficient-evaluation job; metadata hashes do not prove CH1."
+  ],
+  "prior_art_context_reads": [
+    {"path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md", "lines": 520, "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4", "revision": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff", "read_windows": [[1, 65]], "classification": "Finite-link CAR dynamics and determinant phase issue, not the present gauge-blocking coefficient."},
+    {"path": "docs/BUS_RESOURCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-10-16.md", "lines": 1373, "sha256": "5f97c4bd3247144f4e62a1f35e7a78dde4ab315a7bbf9e18306591cb34414dc6", "revision": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff", "read_windows": [[1, 45], [921, 929]], "classification": "Supplied control/bus Hamiltonian precision and Schur estimates, nonmatching."},
+    {"path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md", "lines": 145, "sha256": "9a399e73119675c2ac73b7aa2f8f37332e55816872b772e93ae67c5b1fb50fe7", "revision": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff", "read_windows": [[1, 45], [102, 110]], "classification": "Finite Peter-Weyl static-source sector gap, nonmatching."},
+    {"path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md", "lines": 167, "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f", "revision": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff", "read_windows": [[1, 45], [105, 113]], "classification": "Electric-dominated static-source sector bounds, nonmatching."},
+    {"path": "docs/U1_REPRESENTATION_POSITIVE_REGISTRATION_KERNEL_TO_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md", "lines": 536, "sha256": "eef4dd413420b3d000f24ddd9465b0643c337a999e60a820424687352bfcc00e", "revision": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff", "read_windows": [[1, 45], [227, 235]], "classification": "Abelian quadratic registration germ, no charged determinant or normalized paired SU(N) step."},
+    {"path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ASSUMPTIONS_AND_IMPORTS.md", "lines": 3, "sha256": "c39308cb837b36e46157c1869cae55663b7e0a31445ec5891bc138a225d724f7", "revision": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff", "read_windows": [[1, 3]], "classification": "Native ring-exchange premises, nonmatching."}
+  ]
+}

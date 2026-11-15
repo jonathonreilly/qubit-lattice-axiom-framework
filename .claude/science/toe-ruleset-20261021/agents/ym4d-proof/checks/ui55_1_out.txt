@@ -1,0 +1,29 @@
+=== Part A: abstract fine/level split ===
+dims: E_0 = 6, E_n = 3
+A0 (M D_0 = D ev): PASS 
+A1 (Pi D = 0 and B D_0 = 0): PASS 
+A2 (H D_0 = 0 and A D_0 = 0): PASS 
+A3 (SPLIT determinant identity): PASS [lhs = 68410424114801451/140107]
+A4 (envelope = Woodbury: Bf D = 0, Bf|E_n = X|E_n^-1, min value): PASS 
+A5 (fine Feynman form): PASS 
+A6 (level Feynman form): PASS 
+Ac1 control (C^-1 IR term transverse?) must FIRE: PASS 
+Ac2 control (SPLIT without level group) must FIRE: PASS 
+Ac3 control (Feynman form for non-transverse A') must FIRE: PASS 
+PASS(A) = True
+=== Part B: Lemma P-natural on a 2D lattice (S2' root map, L = 3, one step) ===
+B1 (Q d = d_c ev): PASS 
+B2 (Q = Q_str - d_c h): PASS 
+B3 (Q^T Pi Q d = 0): PASS 
+B4 (no cross block P_L O P_T = 0): PASS 
+B5 (on ker d*: Q^T Pi Q = Q_str^T Pi Q_str): PASS 
+B6 (O^-1 = C_perp + d Delta^-2 d*): PASS 
+Bc control (C^-1 IR term: cross block) must FIRE: PASS 
+PASS(B) = True
+=== Part C: composite straight-average kernel ===
+C1 (K_3(z) K_3(z^3) = K_9(z)): PASS 
+C2 (Q_str weights = (tri/3) x (box/3), leg along mu): PASS 
+Cc control (single box in leg direction) must FIRE: PASS 
+leg-direction marginal of Q_str weights: ['1/3', '2/3', '1', '2/3', '1/3']
+PASS(C) = True
+OVERALL: PASS  (20/20 items true; controls counted as true when they fire)

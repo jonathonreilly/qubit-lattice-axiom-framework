@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-29T18:46:48.783599+00:00",
+  "returncode": 0,
+  "seconds": 1.3034334169933572,
+  "script_sha256": "d119d453c5c7ac6a4805fc4a6c160d34d0b82e826794f862c43db3c3fe636ed4",
+  "criteria_sha256": "314b21116c26b966545f76f5a287fdb2f480677330f24766bfff2ff65ad1be18",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "independent_of_author_checker": true,
+  "limits": "Finite exact controls only; no continuum, full theorem, or mass-gap proof."
+}

@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-10-29T19:35:37.505395+00:00",
+  "all_ok": true,
+  "runs": [
+    {
+      "label": "independent",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_soft_fluctuation_independent_02.py"
+      ],
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-covariance-review-replay-z0dlicxf/independent",
+      "exit_code": 0,
+      "wall_seconds": 5.894390917033888,
+      "excluded_top_level_fields": [
+        "created_utc"
+      ],
+      "exact_non_time_json_match": true,
+      "source": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_independent_02.py",
+        "sha256": "5282f29061dcf71c307450b973498dde0ae7d2cb85e5363ad25f9e71f5612c3e"
+      },
+      "reference": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_independent_02.stdout.json",
+        "sha256": "08836dbdf9eae11dc48958bbfd1cefa0e9cb7309f640a2762df7dae6a025ec2d"
+      },
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_independent_out.json",
+        "sha256": "012685b27444b254a127f85fdecde1b345c927b9b0186bd90c149987342915fb"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_independent_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    {
+      "label": "additional",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_soft_fluctuation_additional_02.py"
+      ],
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-covariance-review-replay-z0dlicxf/additional",
+      "exit_code": 0,
+      "wall_seconds": 1.319352041988168,
+      "excluded_top_level_fields": [
+        "created_utc"
+      ],
+      "exact_non_time_json_match": true,
+      "source": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_additional_02.py",
+        "sha256": "fed2c0a7658c147fa793e4a237a3c49c24d54810aae8484659d4fc05b33af7b9"
+      },
+      "reference": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_additional_02.stdout.json",
+        "sha256": "dfb3cd20d7489652a6237df80234155c6410196822eb76a09d2aa2db85c5f48d"
+      },
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_additional_out.json",
+        "sha256": "31aee8cf9c1b48e26e80f174f78faaf57e9ee26b301294522ad01549d7b89f66"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_additional_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    {
+      "label": "affected_chart",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_soft_fluctuation_chart_affected_01.py"
+      ],
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-covariance-review-replay-z0dlicxf/affected_chart",
+      "exit_code": 0,
+      "wall_seconds": 0.29687916702823713,
+      "excluded_top_level_fields": [],
+      "exact_non_time_json_match": true,
+      "source": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_chart_affected_01.py",
+        "sha256": "6fc1f3f5c35ef6502d92c7744b536b09c939dac8e3f796529689b2726a8ededf"
+      },
+      "reference": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_chart_affected_01.stdout.json",
+        "sha256": "b7ff4fc86c81fc4ab19d995eb0f255fc77e85dbe4c1c5ce05ef53377e9838b69"
+      },
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_affected_chart_out.json",
+        "sha256": "b7ff4fc86c81fc4ab19d995eb0f255fc77e85dbe4c1c5ce05ef53377e9838b69"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_affected_chart_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ],
+  "frozen_artifact_records": 53,
+  "scope": "Coordinator reproduction only. Written all-volume mathematics and scientific review remain separately identified; full existence and physical continuum mass gap remain OPEN."
+}

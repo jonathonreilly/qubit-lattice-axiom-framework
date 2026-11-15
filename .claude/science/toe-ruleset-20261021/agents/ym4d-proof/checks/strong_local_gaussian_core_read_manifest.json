@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "role": "Author bounded read provenance only; not independent review or audit.",
+  "requested_configuration": "Astra/max requested by coordinator; backend not independently attested.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+    "lines": 490,
+    "sha256": "9f99a9ed53057911015041018c0f6b3112d53976e5e64bae1a2b8c6ac5fa211b"
+  },
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "lines": 592,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "direct_read_ranges_this_unit": "1-145;245-289;495-592",
+      "use": "Actual phase, finite-u/Haar lift K, whole-link regions, source/field majorants, boundary-only data, physical outside factors and normalization. SG17 uses the exact old RF critical-tail family; its distinct representation is retained.",
+      "carried_same_session_coverage": "145-245 and 290-495 directly read in preceding RJ unit; complete 1-592 read in preceding WHITE unit. Hash unchanged. No review verdict supplies an estimate."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "lines": 747,
+      "sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "direct_read_ranges_this_unit": "181-260",
+      "use": "Column-patch inverse architecture, full readers and both endpoint/marked bounds; its K_b matrix and white-box norm are not imported as the new K_lift original-cell theorem.",
+      "carried_same_session_coverage": "Full 1-747 direct read in BARE_CUT_WHITE unit, recorded in its manifest; hash unchanged."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "lines": 631,
+      "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "direct_read_ranges_this_unit": "105-185",
+      "use": "Real principal inverse envelope, fixed cover, column residual sign, reader incidence and exact inverse word series.",
+      "carried_same_session_coverage": "Own earlier source fully read 1-631; hash unchanged."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "lines": 543,
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "direct_read_ranges_this_unit": "510-550",
+      "use": "Bounded method/scope comparison and primary-literature leads; old PSD local-core weakening is explicitly not inherited."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "lines": 713,
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "direct_read_ranges_this_unit": "120-175",
+      "use": "Bounded check of the original small-tail constants, exact scope of the old 1/R bound and full-colour reader domain. No nonlinear integral conclusion is consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "lines": 597,
+      "sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "direct_read_ranges_this_unit": "No new full reread; source tags located by bounded named-file search.",
+      "use": "Literal support-cost target RJ25; SG23 independently proves the required inequality for the new family. RJ is under different fresh review, and is not a premise for the present matrix construction.",
+      "carried_same_session_coverage": "Own complete 1-597 source authored/read immediately before this unit; frozen hash and packet rechecked."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "lines": 937,
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "direct_read_ranges_this_unit": "No new reread.",
+      "use": "Retained original-J units, ordered Lie paths, actual scalar-label counts and parameter-independent Haar pullback distinctions; SG24-25 rebuild the finite-jet acquisition for these matrix atoms.",
+      "carried_same_session_coverage": "Direct 1-570 read in preceding RJ unit and complete 1-937 in BARE_CUT_WHITE; unchanged hashes and read manifests retained."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "lines": 11,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "direct_read_ranges_this_unit": "No new reread.",
+      "use": "Owner analytic-proof, fresh-review, source-before-packet and root-publication process.",
+      "carried_same_session_coverage": "Complete 1-11 read in preceding RJ unit, unchanged hash rechecked."
+    }
+  ],
+  "carried_same_session_manifests": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_read_manifest.json",
+      "lines": 127,
+      "sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "lines": 108,
+      "sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_read_manifest.json",
+      "lines": 129,
+      "sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "lines": 246,
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0"
+    }
+  ],
+  "governing_instructions": {
+    "retained": "/Users/jonBridger/AGENTS.md, worktree AGENTS.md, installed physics-loop/review-loop instructions and pinned methodology already read in this same author session. Root owns publication and reviewer dispatch; no subworkers.",
+    "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "all_10_consumed_working_path_hashes_match_pinned_manifest": true,
+    "coordinator_observed_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+    "read_limit": "Coordinator supplies origin identity; this author used only direct file hashes, without Git operations."
+  },
+  "primary_reads": [
+    {
+      "url": "https://arxiv.org/html/1206.2212v2",
+      "title": "Roland Bauerschmidt, A simple method for finite range decomposition of quadratic forms and Gaussian fields",
+      "delivered_scope": "Returned HTML 0-117 and 118-184; bounded find excerpts around Theorem 1.2 (192-196), finite propagation and the Chebyshev/polynomial construction (especially 439-479). Other find excerpts were routing, not continuous full-paper coverage.",
+      "use": "Primary finite-range/positive-form and polynomial-method comparison. No theorem about gauge reader coefficients is imported."
+    },
+    {
+      "url": "https://arxiv.org/html/1501.07376v1",
+      "title": "Benzi-Simoncini, Decay bounds for functions of matrices with banded or Kronecker structure",
+      "delivered_scope": "Returned HTML 0-125 and 106-212, including analytic matrix functions, inverse decay and sparse graph-distance discussion; bounded find references to Demko.",
+      "use": "Primary sparse matrix-function comparison; complete-reader coefficient norms are rebuilt separately."
+    }
+  ],
+  "search_limits": "Named-file rg within RF/PC/FU/NRR/RJ/WS/CW was routing. Web search located polynomial inverse/finite-range antecedents; third-party summaries and unrelated search hits carry no proof weight. No exhaustive novelty claim, downloaded PDF or unread all-scale theorem.",
+  "changed_steps": "Actual local-lift arbitrary-hole column parametrix in original-cell weights; transpose-symmetric finite core positive by exact inverse closeness; R-independent active principal inverse bounds; one-R recombination with explicitly distinct RF critical atoms; nonempty ordered radius choice paying RJ25; exact jet and original-label losses.",
+  "interpolation_limit": "Whole-core grouping and small-tail independent masks only; the new sym(Q_q) atoms are not claimed PSD and RF independent large-core theta_A weakening is not inherited.",
+  "remaining_interface": "Nonlocal b/sigma reader localization, actual inherited unregulated vertex sizes, retained rough-field derivatives, full histories, effective induction and physical reconstruction remain open.",
+  "execution": "Analytic proof and metadata only; no scientific numerics, extra workers, Git/front/PR/lock/audit operations, or predecessor edits."
+}

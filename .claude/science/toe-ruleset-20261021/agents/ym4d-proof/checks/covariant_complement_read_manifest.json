@@ -1,0 +1,178 @@
+{
+  "created_utc": "2026-10-29T21:50:18.869803+00:00",
+  "author": "/root/charged_stationary_jet; user-selected Astra/max",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "coverage": "Full; current owner process read at start of this new unit",
+      "role": "Controls direct author edits, numerical criteria, independent review and external-lemma rebuilding"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "coverage": "Full in preceding context of this active CC turn; particularly SA16,SA18-SA22 and SA30-SA34",
+      "role": "Under independent review at dispatch; downstream selected-sector/complement comparison only, not a premise of CC4-CC16"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_receipt.json",
+      "sha256": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c",
+      "bytes": 4131,
+      "coverage": "Source/hash and scope receipt; relevant numeric-plan fields read",
+      "role": "Frozen input identity; no unperformed author replay"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "coverage": "Lines1-210, in particular CB1-CB4 and the exact crossing lift/tree definitions",
+      "role": "Normalization and geometry comparison; no all-field nonlinear inverse imported"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes": 48847,
+      "coverage": "H1-H14 definitions/proof; H15-H20c estimates and source-radius correction; H21-H28 gas/domain proof. Initial full-cat attempt truncated; bounded follow-ups102-313,400-670,670-end plus423-470 and575-608 supply actual consumed coverage. Author evidence section read, no replay claimed.",
+      "role": "Exact H3/H5 reference; H14 history total; H20c/H24-H25 returned-gas premise; complete reader supports"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "bytes": 21817,
+      "coverage": "Full, by1-260 and260-end",
+      "role": "Scoped independent confirmation of H identities, source/gas theorem and open sea/failure interfaces"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "bytes": 23793,
+      "coverage": "Bounded follow-ups1-185 and185-410; final scope paragraph also seen. Initial wider cat was truncated and is not counted as a full current read.",
+      "role": "Sea7/11/14/15/16 have integrated-coarse-field reference; not a fixed-V import"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFTHARD_R2.md",
+      "sha256": "02b7b7ee556df6f501bc0c206497192423b01633c1907fa3bd6ff2019d75ab0b",
+      "bytes": 18251,
+      "coverage": "Full",
+      "role": "Domain distinction: a fixed entire next field cannot have its own indicator returned by integrating the previous field"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "bytes": 203830,
+      "coverage": "Lines102-125 partly visible in navigation batch; complete270-288 consumed, especially joint integrated variables282-286. Large rg was navigation only.",
+      "role": "Actual next-level-interior integration order comparison; no other HIST theorem imported"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PLD.md",
+      "sha256": "089a559f063c87467a804085dc57e313f8ab897d5bf1c09554f5c5fe3f5d811b",
+      "bytes": 389932,
+      "coverage": "Complete481-505; earlier large/truncated reads were navigation only",
+      "role": "SC_k and normalized sea/coarse-analyticity obligations remain open"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LARGE55.md",
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "bytes": 81497,
+      "coverage": "Complete488-527 and725-744",
+      "role": "I3/I5, actual induction domains and E13/E14 corrections; not an imported return estimate"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "sha256": "282318a0c398d49a8c69bc1f2173c90ef463634beaba55e2f4d2792af8b64815",
+      "bytes": 24403,
+      "coverage": "Introduction and B01-B16, B20-B36 visible; relevant B03-B09 refreshed separately. Wider combined output truncated; not claimed complete.",
+      "role": "Prior-art routing, scalar/abelian versus actual nonabelian scope"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "bytes": 10531,
+      "coverage": "Complete table and closing scope paragraph visible before truncation of the following concatenated literature file",
+      "role": "No new physical primitive or model identification imported"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature.md",
+      "sha256": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece",
+      "bytes": 8196,
+      "coverage": "Full ledger visible in bounded current read",
+      "role": "Prior primary-source scopes and hypothesis mismatches; fresh primary reads listed separately"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_read_manifest.json",
+      "sha256": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194",
+      "bytes": 14500,
+      "coverage": "Methodology/read-provenance fields only",
+      "role": "Reuse earlier consistent method/primitive read scopes; no UL mathematics is an input to CC"
+    }
+  ],
+  "methodology": {
+    "consistent_prior_fetched_authority": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+    "new_lane_owner_process_revision": "43ac056899",
+    "stale_local_main_9ce38a06": "not used as authority",
+    "current_entry_refresh": "Installed physics-loop/review-loop concatenation was truncated. It is only a router refresh, not a new complete reference read. Earlier consistent methodology/primitive coverage is reused as recorded in uniform_one_loop_read_manifest.json; PROCESS_LIGHT controls the new author lane.",
+    "AGENTS": "Root AGENTS.md fully read; root controls Git/publication/independent review.",
+    "separate_authorized_UL_repair": "Coordinator temporarily assigned a narrow UL fixed-complement correction. Its own affected receipt binds that separate source. No UL mathematical result is a premise of CC."
+  },
+  "external_reads": [
+    {
+      "url": "https://arxiv.org/html/1410.2798v3",
+      "version": "v3,11Feb2015",
+      "coverage": "Abstract/introduction and section2.1 equations4-11; section2.2 through Proposition1 and opening proof, web lines35-144",
+      "role": "Balaban/Dimock tree-gauge attribution and abelian/dimension mismatch; all needed nonabelian filling/cap estimates rebuilt in CC8-CC15"
+    },
+    {
+      "url": "https://scispace.com/pdf/renormalization-group-approach-to-lattice-gauge-field-4penm4k7hc.pdf",
+      "version": "Balaban CMP116(1988),1-22; DOI10.1007/BF01239022",
+      "coverage": "Original scanned introduction and start of section1, printed pages1-2, web lines0-70",
+      "role": "Localization-before-exponentiation architecture only; no unread theorem/body constants imported"
+    },
+    {
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "version": "v2,2Apr2013",
+      "coverage": "Introduction/model equations1-8; AppendixE selected displayed bounds; AppendixF statement633-638 and visible proof639-646. The long open output truncated; a focused ultralocal find supplies the complete F.1 statement. No complete-paper read claimed.",
+      "role": "Scalar3D/independent-site and small-local-interaction comparison; no cluster theorem imported into the actual cut law"
+    }
+  ],
+  "numerical_evidence": {
+    "criteria": "checks/covariant_complement_criteria.md",
+    "program": "checks/covariant_complement_01.py",
+    "first_mathematical_execution": "Launcher02:23/24 predicates;6/6 mutation controls; one auxiliary broad-shell ratio failed at u40",
+    "preserved_first_launcher_failure": "Launcher01 rejected by Darwin RLIMIT_RSS before runpy entered mathematical program; output empty, stderr preserved",
+    "posthoc": "Separate criterion/program; narrower shells at u40,3/3. Does not retroactively pass first criterion.",
+    "resources": "Coordinator lock read-only; >=50% memory and load<=cores/2; nice15, threads1,90s CPU/wall; external300MiB RSS watchdog after platform rejection of RLIMIT_RSS",
+    "runtime": {
+      "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "platform": "macOS-26.6.2-arm64-arm-64bit"
+    }
+  },
+  "source_domain_boundary": [
+    "CC4-CC16 use real sources and every fixed real V, with explicit smaller epsilon_1 ceiling for the interior-block cap only",
+    "CC17-CC21 consume the reviewed H24 named gas contract on its fixed complex relative-source radius",
+    "Only E=1,R_out=1 in CC18 is automatically the exact original H14 history numerator; other E are sea-side insertions unless H8 joint replacement is used",
+    "Complex envelopes retain exact positive Re(epsilon) history mass; no complex normalization or nonvanishing concluded",
+    "No full complement, optimized-completion boundary, whitening support-size localization, multilevel RG, continuum existence or physical mass gap conclusion"
+  ],
+  "review_state": "Author packet pending fresh independent review; no audit or whole-PR disposition",
+  "ordered_artifact_times": {
+    "covariant_complement_criteria.md": {
+      "mtime_ns": 1793309232523818323,
+      "ctime_ns": 1793309232523818323
+    },
+    "covariant_complement_01.py": {
+      "mtime_ns": 1793309906503716452,
+      "ctime_ns": 1793309906503716452
+    },
+    "covariant_complement_posthoc_criteria.md": {
+      "mtime_ns": 1793310158103808816,
+      "ctime_ns": 1793310158103808816
+    },
+    "covariant_complement_posthoc.py": {
+      "mtime_ns": 1793310259031153074,
+      "ctime_ns": 1793310259031153074
+    }
+  }
+}

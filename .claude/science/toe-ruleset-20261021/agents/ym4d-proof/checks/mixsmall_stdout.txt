@@ -1,0 +1,29 @@
+{
+  "status": "NOT RUN",
+  "checks": [],
+  "resources": [
+    {
+      "label": "before mathematics",
+      "load": [
+        2.39013671875,
+        2.91748046875,
+        2.75439453125
+      ],
+      "nice": 0,
+      "rss_bytes": 22069248,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLAS_NUM_THREADS": "1"
+      },
+      "free_percent": 41
+    }
+  ],
+  "utc": "2026-10-30T09:16:00.079537+00:00",
+  "criteria_sha256": "8fe1234e0958c07439e312b236e3d94d5f6552818c73bd6983cf33321d920f4e",
+  "script_sha256": "fa233561548b4ccc0250c5291365b75021ef522e8ce50a4ff216deb5ed4876b7",
+  "reason": "nice guard not met; no mathematical controls executed"
+}

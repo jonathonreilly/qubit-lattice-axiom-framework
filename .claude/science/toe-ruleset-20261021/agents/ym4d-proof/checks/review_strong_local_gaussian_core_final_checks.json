@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-30T14:10:19.743289+00:00",
+  "scope": "Direct vocabulary, source-link and identity checks only; no science or numerical execution. Report written before this record; reviewer receipt and final post-receipt identity record follow.",
+  "api": "scripts/vocab_lint.py lint_one_file(path, load_yaml(), apply_fix=False)",
+  "cli_not_used": "CLI excludes .claude; explicit Markdown paths supplied directly.",
+  "vocabulary_results": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "lines": 490,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_source_findings.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "18526a589b5772f5fa68e261c2c4dcc5641cfc3951a9dfe2d23b7b3cad112cdd",
+      "lines": 185,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "1e3e99cba4d7d0107717824a7412b2a05ee3719338110d9bf7a5bca79dd9ab19",
+      "lines": 148,
+      "bytes_unchanged": true
+    }
+  ],
+  "total_violations": 0,
+  "source_relative_links": [
+    {
+      "label": "RJ25",
+      "target": "REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "resolved": true
+    },
+    {
+      "label": "WS5--WS6",
+      "target": "WHITE_SECTOR_MATCHING_ASTRA.md",
+      "resolved": true
+    },
+    {
+      "label": "CW9--CW11",
+      "target": "COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "resolved": true
+    },
+    {
+      "label": "RF1--RF5",
+      "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "resolved": true
+    },
+    {
+      "label": "FU",
+      "target": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "resolved": true
+    },
+    {
+      "label": "WR1",
+      "target": "WEIGHTED_RETURN_JETS_ASTRA.md",
+      "resolved": true
+    }
+  ],
+  "source_relative_link_count": 6,
+  "source_relative_links_resolve": true,
+  "report_generated_artifact_links": "Final receipt and post-receipt record do not yet exist at this stage. Their link existence is checked by the final post-receipt operation.",
+  "science_runs": 0,
+  "full_pipeline_runs": 0,
+  "operations": "Metadata/range/hash/link/direct-vocabulary checks only; no source, front, audit, Git or publication edit by reviewer."
+}

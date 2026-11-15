@@ -1,0 +1,33 @@
+q1-G  ||h|| row l1 = 8/3 ; avg_y |y-c_X|_1 = 8/3 ; d(L^2-1)/(4L) = 8/3 ; support = 216
+q1-A  mu=0 : sum_b |Q_root(c,b)| = 205/27 (= 7.592593), support = 459
+q1-C  mu=0 : Q_root vs Q_str^LP - d.h : differing entries = 0
+q1-C' mu=0 : NORMS Q_str (a) in the slice identity: differing entries = 108 (control fires: True)
+q1-H  NORMS Q_str (a): support = 81, row sum = 3
+q1-C' mu=0 : NORMS Q_str (b) in the slice identity: differing entries = 108 (control fires: True)
+q1-H  NORMS Q_str (b): support = 81, row sum = 3
+q1-H  Q_str^LP: support = 135, row sum = 3, multiplicity by longitudinal coordinate = {0: [1], 1: [2], 2: [3], 3: [2], 4: [1]}
+q1-D  mu=0 : Q_root(d lam) = 129 ; lam(c_Y)-lam(c_X) = 129 ; Q_str^LP(d lam) = 141
+q1-A  mu=1 : sum_b |Q_root(c,b)| = 205/27 (= 7.592593), support = 459
+q1-C  mu=1 : Q_root vs Q_str^LP - d.h : differing entries = 0
+q1-C' mu=1 : NORMS Q_str (a) in the slice identity: differing entries = 108 (control fires: True)
+q1-C' mu=1 : NORMS Q_str (b) in the slice identity: differing entries = 108 (control fires: True)
+q1-D  mu=1 : Q_root(d lam) = 201 ; lam(c_Y)-lam(c_X) = 201 ; Q_str^LP(d lam) = 225
+q1-A  mu=2 : sum_b |Q_root(c,b)| = 205/27 (= 7.592593), support = 459
+q1-C  mu=2 : Q_root vs Q_str^LP - d.h : differing entries = 0
+q1-C' mu=2 : NORMS Q_str (a) in the slice identity: differing entries = 108 (control fires: True)
+q1-C' mu=2 : NORMS Q_str (b) in the slice identity: differing entries = 108 (control fires: True)
+q1-D  mu=2 : Q_root(d lam) = 300 ; lam(c_Y)-lam(c_X) = 300 ; Q_str^LP(d lam) = 324
+q1-A  mu=3 : sum_b |Q_root(c,b)| = 205/27 (= 7.592593), support = 459
+q1-C  mu=3 : Q_root vs Q_str^LP - d.h : differing entries = 0
+q1-C' mu=3 : NORMS Q_str (a) in the slice identity: differing entries = 108 (control fires: True)
+q1-C' mu=3 : NORMS Q_str (b) in the slice identity: differing entries = 108 (control fires: True)
+q1-D  mu=3 : Q_root(d lam) = 318 ; lam(c_Y)-lam(c_X) = 318 ; Q_str^LP(d lam) = 348
+q1-C' control fired in 8 of 8 (mu, realisation) cases
+q1-D' control fired in 4 of 4 directions: {0: True, 1: True, 2: True, 3: True}
+q1-E  mu=0 : sum_b |Q^(2)(c,b)| = 2021/81 (= 24.950617), support = 47385
+q1-E  mu=0 : Q_str^(2) row sum = 9, all entries > 0: True, support = 12393
+q1-E  mu=3 : sum_b |Q^(2)(c,b)| = 2021/81 (= 24.950617), support = 47385
+q1-E  mu=3 : Q_str^(2) row sum = 9, all entries > 0: True, support = 12393
+q1-F  NQ-1 sharp bounds j=1,2: 25/3, 91/3 ; q0 = 11/3 ; q0*L^j = 11, 33
+q1-F  computed/L^j: j=1 205/81 (= 2.530864), j=2 2021/729 (= 2.772291)
+SUMMARY q1-A=PASS q1-B=PASS q1-C=PASS q1-D=PASS q1-E=PASS q1-F=PASS q1-G=PASS q1-H=PASS

@@ -1,0 +1,74 @@
+{
+  "role": "Root-coordinator author freeze; fresh independent review required, no independent source verdict",
+  "utc": "2026-10-30T03:24:59.810125+00:00",
+  "entry_head": "3803d1517007fca5e1939bf396dd615623909a80",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_GAUSSIAN_RETURN.md",
+    "sha256": "143c3420a5c333350a875eee49843fa1e00f621af82494e7701f3c7bff08dd8b",
+    "lines": 251,
+    "bytes": 11850
+  },
+  "source_frozen_before_packaging": true,
+  "author": "root coordinator; no specific backend model attestation",
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "read_coverage": "All 556 lines completed in preceding continuation; lines 1-165 reread for this extension, later exact formulas reused at unchanged hash."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "read_coverage": "All 543 lines previously read; same-byte producer estimates reused."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "read_coverage": "All 608 lines read in preceding continuation; 130-205 reread for this extension."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "74332f30c4b51a8886c61883b9c6a4077d0f59716d2aab067d2ccd4d261fa6b1",
+      "read_coverage": "All 173 lines read before using its scoped acceptance; not a substitute for source derivation."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "fc16733dd459d8915611fb80326d9a523d7cca0c8c85814ff79dd33ceaf9a108",
+      "read_coverage": "All 165 lines read in preceding continuation; fixed-real-slice qualification retained."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "read_coverage": "All 11 lines read; no new numerical experiment."
+    }
+  ],
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "methodology_coverage": "Previously completed pinned root physics-loop/review-loop methodology reads reused; this is a new author source and requires a separate independent reviewer. No new authority claimed from hash checks.",
+  "new_argument": "Choose the lift and critical covariance tails below e_0/3 each, keep the lift core and R-independent inverse envelope, verify every RG analytic/marked/normalization hypothesis on the joint FU domain, then derive the normalized critical-Gaussian cutoff logarithm and fixed-coordinate source Cauchy bounds.",
+  "before_freeze_clarification": "Initial draft wrote B_* as the sum of actual marked norms. Before the announced freeze this was replaced by the explicit FU upper budgets b_lift+b_crit, making independence from u,T explicit. No frozen producer changed.",
+  "bounds_checked_in_writing": [
+    "r<=e_0/(4p_0), r<=1/4 imply lift tail <=e_0/3",
+    "d_H<=e_0/(4m_G^2), d_H m_G<=1/4 imply critical tail <=e_0/3",
+    "e_0<=1/(4v), e_0<=a_P/(64v^2) give t_E<=1/4 and q_E<=a_P/48",
+    "Positive source/curvature/coarse radii are chosen after the finite full-reader budgets; they are uniform in u,T",
+    "Small tori retain the critical tail even when their lift tail vanishes",
+    "Normalized empty marginal stays one; complete source and coarse readers survive all residual occurrences",
+    "CG13 concerns fixed source coordinates on rho/2, not a sum over insertion positions"
+  ],
+  "mechanical_checks": {
+    "local_links": 4,
+    "equation_identifiers": 14,
+    "whitespace": "clean",
+    "vocabulary_exit": 0,
+    "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  },
+  "scientific_numerical_experiments": 0,
+  "scope_limits": [
+    "Gaussian centered cutoff only",
+    "No nonlinear or translated-domain substitution in FU30",
+    "No critical-action/determinant cancellation",
+    "No original-cut return, arbitrary histories or effective-level induction",
+    "Continuum existence and physical continuum mass gap OPEN"
+  ],
+  "review_status": "Pending fresh independent review; no adoption yet"
+}

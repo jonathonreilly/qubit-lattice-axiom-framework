@@ -1,0 +1,61 @@
+{
+  "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_01.py",
+  "source_sha256": "1092ace3f41d7437816858bf77272e5dc743c4d8307a799f9c282b727635a7d1",
+  "started_utc": "2026-10-29T23:21:16.466458+00:00",
+  "elapsed_seconds": 4.866086249996442,
+  "exit_code": 0,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_01.stdout.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_01.stderr.txt",
+  "stderr_bytes": 0,
+  "independent_numerics": false,
+  "passed": 46,
+  "total": 46,
+  "controls": 14,
+  "failed": [],
+  "gates": [
+    {
+      "stage": "before_import",
+      "free_percent": 54,
+      "load": [
+        2.177734375,
+        2.18310546875,
+        2.1748046875
+      ],
+      "rss_bytes": 18612224,
+      "seconds": 0.00260358297964558
+    },
+    {
+      "stage": "after_scalar",
+      "free_percent": 54,
+      "load": [
+        2.177734375,
+        2.18310546875,
+        2.1748046875
+      ],
+      "rss_bytes": 26902528,
+      "seconds": 0.3053299579769373
+    },
+    {
+      "stage": "after_matrix_and_decoration",
+      "free_percent": 53,
+      "load": [
+        2.1630859375,
+        2.1796875,
+        2.17333984375
+      ],
+      "rss_bytes": 27508736,
+      "seconds": 4.6486843330203556
+    },
+    {
+      "stage": "complete",
+      "free_percent": 53,
+      "load": [
+        2.1630859375,
+        2.1796875,
+        2.17333984375
+      ],
+      "rss_bytes": 27738112,
+      "seconds": 4.7680831250036135
+    }
+  ]
+}

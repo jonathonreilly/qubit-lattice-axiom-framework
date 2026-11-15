@@ -1,0 +1,31 @@
+{
+  "label": "massgap_literature",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_exact.py",
+  "script_sha256": "1af29bb07a336e06949e4193bf282e81adc4048ffdb00dfb78f00b3535fecb31",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_results.json",
+  "reference_sha256": "fd90a6e51806b6bcf648c51a9d8e8f3d49b47d7d0ce8af26967a4b63befc8d84",
+  "command": [
+    "/usr/local/bin/python3",
+    "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-three-review-replay-yjj8ufoq/review_massgap_block_literature_exact.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T17:23:44.748087+00:00",
+  "finished_utc": "2026-10-29T17:23:44.770615+00:00",
+  "elapsed_seconds": 0.022936583030968904,
+  "exit_code": 0,
+  "stdout": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_literature_review_replay_out.json",
+    "sha256": "fd90a6e51806b6bcf648c51a9d8e8f3d49b47d7d0ce8af26967a4b63befc8d84"
+  },
+  "stderr": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_literature_review_replay_err.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "ignored_comparison_fields": [],
+  "all_other_output_fields_identical": true,
+  "parse_error": null,
+  "original_script_unchanged": true,
+  "reference_unchanged": true,
+  "scope": "Coordinator reproduction of independent reviewer evidence; not a new independent review."
+}

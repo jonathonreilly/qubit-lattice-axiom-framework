@@ -1,0 +1,6 @@
+k=1, n=3: ||d chi5_X||_1 = 216 (= 2d n^3 = 216: True)
+         Q_X (box sum of chi5*D) = 216;  equals ||d chi5||_1: True
+         ||D||_inf = 8 (<= 2d = 8: True);  Q_X/(n||D||_inf) = 9 = 9.0   [n^2 = 9]
+k=2, n=9: ||d chi5_X||_1 = 5832 (= 2d n^3 = 5832: True)
+         Q_X (box sum of chi5*D) = 5832;  equals ||d chi5||_1: True
+         ||D||_inf = 8 (<= 2d = 8: True);  Q_X/(n||D||_inf) = 81 = 81.0   [n^2 = 81]

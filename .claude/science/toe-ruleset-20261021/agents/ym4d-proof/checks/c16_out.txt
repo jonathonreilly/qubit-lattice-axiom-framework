@@ -1,0 +1,13 @@
+PASS R4a N=13 centre: ||Z-1|| < 1/2 and tr log Z = 2 pi i | ||Z-1||=0.4786, tr log=6.2832i
+PASS R4b ||Z-1|| <= tau_N/2 => principal log traceless (N=2..40) | max |tr log| = 3.2e-14
+PASS R4c no nontrivial centre element within tau_N/2 (N=2..40) | violations=0
+PASS B 1 - Re tr U/N = ||1-U||_HS^2/2N >= ||1-U||_op^2/2N | min(lhs - op) = 6.51e-04
+PASS A1(i) d=2: dA'(P) = avg_y flux(square_y) | max err 1.6e-15, 0.0s
+PASS A1(ii) d=2: ||M||^2 <= L^(4-d) = 9 | ||M||^2 = 9.000000; random-field ratio 0.0579
+PASS A1(i) d=3: dA'(P) = avg_y flux(square_y) | max err 1.6e-15, 0.0s
+PASS A1(ii) d=3: ||M||^2 <= L^(4-d) = 3 | ||M||^2 = 3.000000; random-field ratio 0.0119
+PASS A1(i) d=4: dA'(P) = avg_y flux(square_y) | max err 1.2e-14, 1.3s
+PASS A1(ii) d=4: ||M||^2 <= L^(4-d) = 1 | ||M||^2 = 1.000000; random-field ratio 0.0011
+PASS A1(iii) d=2 two steps: each step ratio <= L^2 | ratios 0.0900, 0.0808
+elapsed 2.7s
+TOTAL: PASS=11 FAIL=0

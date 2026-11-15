@@ -1,0 +1,241 @@
+{
+  "schema": "scoped-review-mechanical-checks-v1",
+  "created_utc": "2026-10-30T09:41:16.374623+00:00",
+  "purpose": "Metadata/source consistency only; not a scientific numerical test or proof certificate.",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+    "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+    "bytes": 37311,
+    "line_count": 707
+  },
+  "source_first_evidence_unchanged": true,
+  "all_scientific_source_identities_unchanged": true,
+  "scientific_source_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "matches_source_first": true,
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "matches_source_first": true,
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    }
+  ],
+  "author_packet_reads_complete": true,
+  "author_packet": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mixed_cap_chart_read_manifest.json",
+      "sha256": "a36942039135a33acdf6e5fe457293eb8007ae6b7c087b7bbe9f0b33f116724c",
+      "bytes": 5690,
+      "line_count": 164
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mixed_cap_chart_receipt.json",
+      "sha256": "abce3deb0303404f64e1fc4e9f46a7152d473a2121386069e649cb0d431f36cf",
+      "bytes": 2100,
+      "line_count": 38
+    }
+  ],
+  "packet_source_freezes": [
+    {
+      "record": "author_read_manifest",
+      "matches": true
+    },
+    {
+      "record": "author_receipt",
+      "matches": true
+    }
+  ],
+  "packet_predecessor_checks": [
+    {
+      "path": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597
+    },
+    {
+      "path": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592
+    },
+    {
+      "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510
+    },
+    {
+      "path": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "line_count": 711
+    },
+    {
+      "path": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713
+    },
+    {
+      "path": "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "line_count": 624
+    },
+    {
+      "path": "SHRINKING_CHART_RETURN_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "line_count": 247
+    },
+    {
+      "path": "CHART_BOUNDARY_FOREST_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "line_count": 564
+    },
+    {
+      "path": "MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "hash_and_lines_match": true,
+      "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "line_count": 460
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "hash_and_lines_match": true,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11
+    }
+  ],
+  "equation_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "equation_labels_exactly_MC1_through_MC33": true,
+  "markdown_fence_count": 2,
+  "relative_links": [
+    {
+      "target": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "CHART_BOUNDARY_FOREST_ASTRA.md",
+      "exists": true
+    },
+    {
+      "target": "PROCESS_LIGHT.md",
+      "exists": true
+    },
+    {
+      "target": "checks/mixed_cap_chart_read_manifest.json",
+      "exists": true
+    },
+    {
+      "target": "checks/mixed_cap_chart_receipt.json",
+      "exists": true
+    }
+  ],
+  "all_relative_links_exist": true,
+  "stray_patch_markers": false,
+  "packet_changes_to_independent_math_findings": [],
+  "scientific_runs": 0,
+  "prior_review_files_read": [],
+  "root_receipts_read": []
+}

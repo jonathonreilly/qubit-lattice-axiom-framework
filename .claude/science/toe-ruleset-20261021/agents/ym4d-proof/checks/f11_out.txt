@@ -1,0 +1,47 @@
+f11 (lane C, session 8) start 2026-10-28 06:55:53 UTC; SMOKE = False
+Part G (Theorem G-mag (vi): c'_0 by quadrature vs f9 G2)
+    kappa_0 = 6.154034377778e-04, I_a = 9.242186397107e-03, I_b = 1.794994694614e-01, c'_0 = 1.385868559126e-03
+  [PASS] G-acc: |change| = 1.7e-15
+  [PASS] G-c0 (prediction): c'_0 = 1.385869e-03 vs f9 extrapolation 1.385834e-03: |diff| = 3.5e-08
+    f9 Q =  16: phi = 0.39270, c'(phi) - c'_0 = +4.353e-05, /phi = +1.109e-04
+    f9 Q =  32: phi = 0.19635, c'(phi) - c'_0 = +2.329e-05, /phi = +1.186e-04
+    f9 Q =  64: phi = 0.09817, c'(phi) - c'_0 = +1.211e-05, /phi = +1.234e-04
+    f9 Q = 128: phi = 0.04909, c'(phi) - c'_0 = +6.192e-06, /phi = +1.261e-04
+    f9 Q = 256: phi = 0.02454, c'(phi) - c'_0 = +3.135e-06, /phi = +1.278e-04
+    f9 Q = 512: phi = 0.01227, c'(phi) - c'_0 = +1.579e-06, /phi = +1.286e-04
+Part R (implementation identities)
+  [PASS] R1 reduction (4D 24 orders vs 2D reduced): G_S direct = 1.952189432475250, reduced = 1.952189432475252, |diff| = 1.6e-15; |C_1 - closed| = 0.0e+00
+  [PASS] R1-ctl (one order only; must FAIL R1): |diff| = 3.59e-06
+  [PASS] R2 gauge covariance: |Delta G_S| = 0.0e+00
+  [PASS] R2-ctl (no transport phases; must FAIL R2): |Delta G_S| = 5.67e-03
+  [PASS] R3 Bloch vs direct 2D torus: spectra 1.3e-14, G_S 2.2e-16
+    n = 1: C_n = 2.777777777777778e-02, closed = 2.777777777777778e-02
+    n = 2: C_n = 3.429065287158340e-03, closed = 3.429065287158340e-03
+  [PASS] R4 composite covariance: max rel |C - closed| = 0.0e+00, offdiag = 0.0e+00, diag spread = 5.0e-16
+Part S (scalar proxy, s = 4, L = 3; D = G_S per fine site)
+    n = 1, Q' =  8: Phi = 0.78540, f = 8.726646e-02, D - D0 = 5.406672939801e-06
+    n = 1, Q' = 12: Phi = 0.52360, f = 5.817764e-02, D - D0 = 2.407414496863e-06
+    n = 1, Q' = 16: Phi = 0.39270, f = 4.363323e-02, D - D0 = 1.355055297525e-06
+    n = 1, Q' = 24: Phi = 0.26180, f = 2.908882e-02, D - D0 = 6.025289549516e-07
+    n = 1, Q' = 32: Phi = 0.19635, f = 2.181662e-02, D - D0 = 3.389782714525e-07
+  [PASS] S-grid (n = 1): |D(grid) - D(1.5 grid)| = 1.6e-13 (f = 0 and Q' = 8)
+  [PASS] S-IR (n = 1): f^2 log(1/f) coefficient b = 2.035e-08 (c_g = 1.055e-03)
+  [PASS] S-stab (n = 1): a1 (4 largest) = 7.123425e-04, (4 smallest) = 7.123427e-04
+    piece g: f^2 log(1/f) coefficient = 9.911e-04 (+0.939 c_g)  [reported]
+    piece E: f^2 log(1/f) coefficient = -9.911e-04 (-0.939 c_g)  [reported]
+    n = 1: c^S_n = 7.123425e-04, rho_n = c^S_n - 2 c_g log l = -1.606672e-03, c^S_n - cfrak^S(l^2) = -1.943901e-03  (7 s)
+    n = 2, Q' =  8: Phi = 0.78540, f = 9.696274e-03, D - D0 = 2.710564590558e-07
+    n = 2, Q' = 12: Phi = 0.52360, f = 6.464182e-03, D - D0 = 1.205260919956e-07
+    n = 2, Q' = 16: Phi = 0.39270, f = 4.848137e-03, D - D0 = 6.780724159938e-08
+    n = 2, Q' = 24: Phi = 0.26180, f = 3.232091e-03, D - D0 = 3.014014970937e-08
+    n = 2, Q' = 32: Phi = 0.19635, f = 2.424068e-03, D - D0 = 1.695454088235e-08
+  [PASS] S-grid (n = 2): |D(grid) - D(1.5 grid)| = 7.5e-14 (f = 0 and Q' = 8)
+  [PASS] S-IR (n = 2): f^2 log(1/f) coefficient b = 2.955e-08 (c_g = 1.055e-03)
+  [PASS] S-stab (n = 2): a1 (4 largest) = 2.885494e-03, (4 smallest) = 2.885491e-03
+    piece g: f^2 log(1/f) coefficient = 8.945e-04 (+0.848 c_g)  [reported]
+    piece E: f^2 log(1/f) coefficient = -8.945e-04 (-0.848 c_g)  [reported]
+    n = 2: c^S_n = 2.885494e-03, rho_n = c^S_n - 2 c_g log l = -1.752536e-03, c^S_n - cfrak^S(l^2) = -2.063497e-03  (377 s)
+  [PASS] S-VIR (prediction): (c^S_2 - c^S_1)/(2 c_g log 3) = 0.9371
+Summary: 15/15 verdict lines PASS (controls are lines that must FAIL their test and PASS here when they do)
+  G-acc: PASS; G-c0 (prediction): PASS; R1 reduction (4D 24 orders vs 2D reduced): PASS; R1-ctl (one order only; must FAIL R1): PASS; R2 gauge covariance: PASS; R2-ctl (no transport phases; must FAIL R2): PASS; R3 Bloch vs direct 2D torus: PASS; R4 composite covariance: PASS; S-grid (n = 1): PASS; S-IR (n = 1): PASS; S-stab (n = 1): PASS; S-grid (n = 2): PASS; S-IR (n = 2): PASS; S-stab (n = 2): PASS; S-VIR (prediction): PASS
+elapsed 384.0 s

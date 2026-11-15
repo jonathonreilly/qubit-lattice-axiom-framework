@@ -1,0 +1,8 @@
+N1 (left-trivialised derivative of a path product): PASS
+N1 control CN1 (wrong prefix for reversed links): FIRES
+N2 checked (d, L) = (2, 3)
+N2 checked (d, L) = (2, 5)
+N2 checked (d, L) = (4, 3)
+N2 (first moment L(L-1)/2 along mu; exact cancellation across): PASS
+N2 control CN2 (upper-height convention): FIRES
+OVERALL: PASS

@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-29T18:31:29.910467+00:00",
+  "findings": [
+    "CIB-R1",
+    "CIB-R2"
+  ],
+  "reviewer": "/root/review_crossover_bridge",
+  "repair_author": "/root",
+  "scope": "Independent actual-grid diameter control plus an admissible small structural mark; affected independent re-review pending. No actual Karcher/Wilson counterexample or continuum conclusion.",
+  "original_note": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+    "revision": "4a8afc90247d771b95c9661737dc08509456ab28",
+    "sha256": "de024b1d6df4a959fb85b2743be2141e93446e735a8ebe6672ff8f28f233e33f"
+  },
+  "originals_unchanged": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stdout.json": "d70036c7f3cae79dd860fcebf3f4fe9db12554ba182a6952284b1d3e2bf30718",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_freeze.json": "63ff7f8680d5f36c1e3d5f1021eb839cd4599854a6bc814a440b87356271689f"
+  },
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact_v2.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T18:31:29.643296+00:00",
+  "elapsed_seconds": 0.2670669999788515,
+  "exit_code": 0,
+  "passed": 93,
+  "total": 93,
+  "all_original_check_records_identical": true,
+  "additional_check_names": [
+    "actual_grid_diameter_q2",
+    "actual_grid_diameter_q3",
+    "actual_grid_diameter_q5",
+    "actual_grid_diameter_q9",
+    "admissible_mark_derivative_row",
+    "admissible_mark_first_d1",
+    "admissible_mark_first_d17",
+    "admissible_mark_first_d4096",
+    "admissible_mark_second_d1",
+    "admissible_mark_second_d17",
+    "admissible_mark_second_d4096",
+    "mutation_omitted_mark_chain_factors_rejected_d1",
+    "mutation_omitted_mark_chain_factors_rejected_d17",
+    "mutation_omitted_mark_chain_factors_rejected_d4096"
+  ],
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact_v2.py",
+      "sha256": "15139682cffba6fa1df2cd2beca6268b91b686a956d3546654b8bc786e929eb4",
+      "bytes": 14468
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt02.stdout.json",
+      "sha256": "1cd0d9b7548a54ab8e8a275e32a23cdff9f4b86dc343ba8d43012dfa47feb896",
+      "bytes": 24738
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "sha256": "dafe331c0cb3b60cb4263c015a7686d97b1c671f3ec6d5b831848e0d956325e0",
+      "bytes": 24317
+    }
+  ]
+}

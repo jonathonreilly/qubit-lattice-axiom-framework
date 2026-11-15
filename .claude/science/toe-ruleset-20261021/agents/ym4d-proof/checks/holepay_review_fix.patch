@@ -1,0 +1,151 @@
+--- a/HOLEPAY.md
++++ b/HOLEPAY.md
+@@ -93,7 +93,9 @@
+ inactive roots. Inactive input terms cost at most their original norm.
+ The continuous maximum of s exp(-delta s) is 1/(e delta). At exp(mu)=2,
+ exp(-tau)=1/4, the discrete maximum m/2^m is 1/2 (at m=1,2), so C_hole=4A.
+-Empty/full Lambda are respectively the retained inactive family/identity.
++Empty Lambda leaves the retained inactive family. For full Lambda the
++support map is the identity, but every supplied weight w_X remains; the
++weighted operator is the identity only when those weights are one.
+ This transfers existing jets and does not create them.
+ 
+ On a **common graph**, if Lambda subset Omega and X meets Lambda, then
+@@ -109,6 +111,7 @@
+ active vertex retained separately. They do not vanish from the exponent.
+ 
+ For a final, exactly weighted linear representation on that common graph,
++with w_H=exp(-Q_H),
+ 
+     product_(H in H_X) w_H = exp(-sum_(H in H_X) Q_H)       (HP3)
+ 
+@@ -284,8 +287,9 @@
+ **proved local paired representation** w_F(y)=N_F(y)/D_F(y)>0, with fixed
+ integration domains and all current selector-boundary/transport terms
+ already justified. It must equal the required coefficient with its actual
+-endpoint reference, not a replacement of Z_A. Let n>=1 be its charged
+-count, and let S_X<=c_H n with every reader contained in R_Lambda(X).
++endpoint reference, not a replacement of Z_A. Let n>=1 be its integer
++charged count, c_H>0, and S_X<=c_H n, with every reader contained in
++R_Lambda(X).
+ If reference tails extend outside it, they need a supported decomposition
+ and a full-root tail estimate before using this certificate.
+ 
+@@ -296,8 +300,11 @@
+     |D_I log(integrand_N)|, |D_I log(integrand_D)| <= B n
+        for every permitted nonempty ordered word |I|<=10.       (HP12)
+ 
+-Here A_0>=1, B>=0 are uniform constants in the frozen weighted derivative
+-units. Fixed nonnegative selectors may sit outside the logarithm. Compact
++Require q,c_ref,b_partial,c_partial>=0, A_0>=1 and B>=0, with finite
++constants uniform in the stated family and frozen weighted derivative
++units. In particular b_partial>=0 is needed to replace the boundary
++cardinality by its upper bound. Fixed nonnegative selectors may sit outside
++the logarithm. Compact
+ domination is required. N and D may have different integration spaces,
+ but each domain must be fixed for differentiation. A global denominator
+ with volume-sized scores does not meet this local hypothesis just because
+@@ -336,11 +343,32 @@
+       [q-c_ref-b_partial c_partial-10 log 2-log P(B)]/c_H
+           >= tau > mu,                                 (HP14)
+ 
+-together with HP12's exact representation, complete readers and an
+-envelope controlling the sum of history suprema. Under these hypotheses,
+-HP13 and S_X<=c_H n prove E15 with A=A_0 and this tau; HP1 follows.
+-This is a PROVEN implication, not an assertion that HP12/HP14 hold.
+-Its complete matched-jet component is comparable to the original target,
++together with HP12's exact representation and complete readers. For a
++coefficient actually satisfying HP12, HP13 and S_X<=c_H n prove E15 with
++A=A_0 and this tau. This applies directly to an already summed coefficient
++on one fixed mask only if HP12 is proved for that summed coefficient.
++
++For distinct history masks h, apply HP1 separately, with a common tau and
++A_0. Let K_h include the complete bare input family, including inactive
++terms, and let M_input be the proposed native input budget. One explicit
++sufficient additional envelope is
++
++    sum_h ||K_h||_(mu,T) <= B_hist M_input,
++    ||sum_h output_h||_(mu,T)
++       <= (1+C_hole) B_hist M_input.                    (HP14h)
++
++Here B_hist is finite and uniform in the claimed volume/depth family and
++C_hole is HP1 with A=A_0. The active part alone costs C_hole B_hist.
++Triangle inequality proves the second line from the first and HP1, even
++when inactive-root maps differ between histories. An envelope
++||K_h||<=a_h M_input with sum_h a_h<=B_hist suffices. Neither a per-history
++uniform bound nor sup_root of a summed rooted input implies this sum of
++norms in general. B_hist has not been evaluated, and is not set to one.
++A direct bound for the complete summed representation may avoid this
++stronger sufficient envelope, but requires its own proof.
++
++These are PROVEN implications, not assertions that HP12/HP14/HP14h hold.
++Their complete matched-jet component is comparable to the original target,
+ not a weak auxiliary lemma that makes closure automatic.
+ 
+ HP6 already paid the derivatives of one raw charge. When using HP12–HP14,
+@@ -350,8 +378,12 @@
+ as if two independent reserves were obtained. RGA14's regulator
+ multiplicities and coefficients must be included in that remaining bound.
+ 
+-The direct CHARGE cap method, with a local core of n witnesses in a torus
+-of n_j sites, instead leaves the explicit majorant
++At zero source, the direct CHARGE cap method applies to a nonnegative
++sector numerator, or a complete disjoint history sub-sum, with an actual
++original-action charge at least q n. It does not bound an arbitrary signed
++connected activity. Choose 0<zeta<=1 with 4zeta strictly below every
++retained interior cut in the all-cut denominator. With a local core of n
++witnesses in a torus of n_j sites, it leaves the explicit majorant
+ 
+     log Q_core <= -q n+d_j n_j,
+     d_j=48u_j zeta^2+8N^2 log(1+4N/zeta)+16kappa u_j/L^4. (HP15)
+@@ -359,14 +391,18 @@
+ For this envelope to supply even a scalar tau-price with S_X=c_H n,
+ it would need (q-tau c_H)n-d_j n_j>=-log A_0. For d_j>0 and fixed n,
+ that inequality fails as n_j/n grows. This is a failure of the displayed
+-upper-bound method, not a lower bound on Q_core. REFMATCH RM7–RM12 provides
++upper-bound method, not a lower bound on Q_core. Source-bearing versions
++need their additional original-source bill, as in MIXSMALL MS22; HP15
++asserts only the source-free specialization. REFMATCH RM7–RM12 provides
+ a conditional mechanism for cancelling distant volume with complete
+ derivatives and tail roots. Its MATCH/RM2 premises have not been proved
+ for every actual inherited history, so it cannot silently replace HP15.
+ 
+-Fresh gaps provide q_gap=kappa u a_gap-1-2N^2 log(1+4N kappa u), with
+-the extra derivative cost in MIXSMALL MS17–MS18, on that conditional
+-forward law. For a future weight H the actual law becomes KH-weighted:
++For t=kappa u>=1, fresh gaps provide
++q_gap=kappa u a_gap-1-2N^2 log(1+4N kappa u). MIXSMALL MS17–MS18 adds
++the derivative cost for fixed event boundaries and q_gap>=0 on its
++conditional forward law. For a future weight H the actual law becomes
++KH-weighted:
+ K^H(E)<=K(E) sup H/KH. Taking H=1_E makes K^H(E)=1. Coherent CHARGE C4
+ means also have zero fresh gap at their maximizing outputs. Thus fresh
+ gaps pay their assigned branch, not every inherited hole. This leaves
+--- a/checks/holepay_check.py
++++ b/checks/holepay_check.py
+@@ -17,7 +17,7 @@
+ HERE = Path(__file__).resolve().parent
+ REPORT = {
+     "utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+-    "status": "NOT RUN", "checks": [], "resources": [],
++    "status": "NOT RUN", "math_started": False, "checks": [], "resources": [],
+     "criteria_sha256": hashlib.sha256((HERE / "holepay_criteria.md").read_bytes()).hexdigest(),
+     "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+     "note_sha256": hashlib.sha256((HERE.parent / "HOLEPAY.md").read_bytes()).hexdigest(),
+@@ -237,6 +237,7 @@
+         with (HERE / "holepay_numeric.lock").open("a+") as lock:
+             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+             guard("pre-mathematics")
++            REPORT["math_started"] = True
+             fixed_graph_checks()
+             guard("after fixed graphs")
+             geometry_checks()
+@@ -248,7 +249,7 @@
+             exit_code = 1 if failed else 0
+     except (Refusal, BlockingIOError) as exc:
+         REPORT["reason"] = str(exc)
+-        REPORT["status"] = "INCOMPLETE" if REPORT["checks"] else "NOT RUN"
++        REPORT["status"] = "INCOMPLETE" if REPORT["math_started"] else "NOT RUN"
+     except Exception as exc:
+         REPORT["status"] = "ERROR"
+         REPORT["reason"] = f"{type(exc).__name__}: {exc}"

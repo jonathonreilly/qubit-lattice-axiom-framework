@@ -1,0 +1,54 @@
+{
+  "schema": "explicit_path_vocabulary_check_v1",
+  "checked_utc": "2026-10-30T14:58:11.206793+00:00",
+  "method": "Direct scripts/vocab_lint.py lint_one_file(path, load_yaml(), apply_fix=False); no CLI file collector or excluded .claude paths",
+  "apply_fix": false,
+  "reports": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASSGAP_2606_PRIMARY_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "43277655d33e5a7f90cec29d19ebf4a9d6e0c307526afbeb6263730310c280ce",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASSGAP_2606_PRIMARY_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "b604c69483dc1f6554d77c5e9f423ea050faa2789b5b12d0dc7caa717740dc55",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_source_read_manifest.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "40d9c08234efd2f282f7dbbbe7bde03cd33c760996ef64edd747efdd27ac802a",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_source_findings.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "705bbeb957c0ad2966cdd4620c1ac9a4fc9303359a7edcfeb4ece12a1ddf7939",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_provenance_review.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "fe18257538272f236464a04293064852fc2c8eb61437204efb0a35c1972b165e",
+      "unchanged": true
+    }
+  ],
+  "path_count": 5,
+  "violation_count": 0,
+  "all_inputs_unchanged": true,
+  "script_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+  "vocabulary_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+  "scientific_test": false
+}

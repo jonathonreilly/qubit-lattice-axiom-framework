@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "scope": "mechanical identity/link checks only; not a proof or independent scientific verdict",
+  "source_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+  "source_line_count": 713,
+  "input_identities_matched": 13,
+  "protected_predecessor_files_matched": 53,
+  "methodology_identities_matched": 12,
+  "prior_frozen_receipts_verified": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_receipt.json",
+      "sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+      "declared_records_checked": 4
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_receipt.json",
+      "sha256": "e832c7adc23448a45f714cd338216326da9e827fcb5210763b3ef6e8ff8340bf",
+      "declared_records_checked": 5
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_receipt.json",
+      "sha256": "19615ba207be2205cc29aa804e057000f301a5bd246be76cf3270ef4f467ca52",
+      "declared_records_checked": 5
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_chart_activity_receipt.json",
+      "sha256": "e6ebfd073b98c8edbf172050ec6c1d84bd7fd7613022656e6cbc0668a5367423",
+      "declared_records_checked": 5
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_receipt.json",
+      "sha256": "4c10b17f1ef73fb2a7108220d2d73aab08f530f9b559207395976dbc700635d7",
+      "declared_records_checked": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_final_receipt.json",
+      "sha256": "5f666328783a12dec20a5fce75e658ddf0818a2bdd311f8031e7c4dd1f7fc42d",
+      "declared_records_checked": 0
+    }
+  ],
+  "local_source_links_resolved": [
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+    "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+    "READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md"
+  ],
+  "mathematical_source_unchanged_since_prepackaging_freeze": true,
+  "all_declared_checks_matched": true,
+  "mechanical_failures_and_repairs": [],
+  "numerical_experiments": []
+}

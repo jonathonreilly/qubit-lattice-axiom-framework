@@ -1,0 +1,75 @@
+{
+  "access_date": "2026-10-29",
+  "successful_cached_primary_pdfs": [
+    {
+      "url": "https://arxiv.org/pdf/math-ph/0610025v2",
+      "cache_path": "/private/tmp/source-sea-literature/biskup-v2.pdf",
+      "sha256": "0895449a770754915ad6d3cf44049b92d4981b1ace6dfeac76cf0380768a8733",
+      "bytes": 484355,
+      "in_repository": false
+    },
+    {
+      "url": "https://math.caltech.edu/SimonPapers/93.pdf",
+      "cache_path": "/private/tmp/source-sea-literature/fils-original.pdf",
+      "sha256": "942210d68bb161cd60402f93557f93e88a7a245f45c7688f2ad5f847fd40ecea",
+      "bytes": 3365564,
+      "in_repository": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/1410.2798v3",
+      "cache_path": "/private/tmp/source-sea-literature/dimock-axial-v3.pdf",
+      "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "bytes": 292405,
+      "in_repository": false
+    }
+  ],
+  "web_only_primary": [
+    {
+      "url": "https://arxiv.org/pdf/1212.5562v2",
+      "coverage": "printedpp70,91-92 Lemma3.18 andAppendixF includingproof"
+    }
+  ],
+  "failed_or_limited_access": [
+    {
+      "method": "Python import requests",
+      "result": "ModuleNotFoundError; curl fallback used"
+    },
+    {
+      "method": "urllib",
+      "result": "CERTIFICATE_VERIFY_FAILED; no content imported from failed attempt"
+    },
+    {
+      "url": "https://www.math.caltech.edu/SimonPapers/93.pdf",
+      "result": "certificate hostname mismatch; no-www primary host succeeded"
+    },
+    {
+      "method": "pdftotext",
+      "result": "command absent; pypdf extraction used"
+    },
+    {
+      "url": "https://link.springer.com/content/pdf/10.1007/BF01215753.pdf",
+      "result": "publisher abstract/paywall only; theorem not imported"
+    },
+    {
+      "url": "https://link.springer.com/content/pdf/10.1007/BF01240355.pdf",
+      "result": "publisher abstract/paywall only; theorem not imported"
+    },
+    {
+      "method": "Project Euclid full-text request",
+      "result": "inaccessible; no theorem imported"
+    }
+  ],
+  "external_full_text_packaged": false,
+  "earlier_fetch_record": [
+    {
+      "name": "biskup-v2",
+      "url": "https://arxiv.org/pdf/math-ph/0610025v2",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "name": "fils-original",
+      "url": "https://www.math.caltech.edu/SimonPapers/93.pdf",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    }
+  ]
+}

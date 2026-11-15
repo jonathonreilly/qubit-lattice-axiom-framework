@@ -1,0 +1,422 @@
+{
+  "schema": "crossover-literature-bridge-evidence-v1",
+  "created_utc": "2026-10-29T17:44:18.768047+00:00",
+  "author": "/root/crossover_literature_bridge",
+  "model_context": "Coordinator-assigned Astra/max research worker; no spawned subagents",
+  "worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "allowed_outputs": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_*"
+  ],
+  "status": "open",
+  "claim_type": "open_gate",
+  "target": "Full Yang-Mills continuum existence and physical continuum mass gap",
+  "MG_rows_closed": [],
+  "continuum_existence_closed": false,
+  "governance_main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "governance_reads": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "bytes": 1615,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "role": "methodology or registered-premise context, not imported Yang-Mills dynamics",
+      "read_scope": "Complete applicable text read; initially truncated aggregate reads were supplemented where required."
+    }
+  ],
+  "local_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507,
+      "read_scope": "Complete target read.",
+      "role": "Target and scope"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "sha256": "2f41121ba740c77040f24be09a15f6671af3691dc28721400f5786722e49ba58",
+      "bytes": 21923,
+      "read_scope": "Review context and claimed fixed-spacing boundary; not adopted as a mathematical premise.",
+      "role": "Prior independent review context"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "sha256": "0cdbfd18a97f6240b07f4a6047073fe6dc2abe2949af9ccb6f6bd191498bae3d",
+      "bytes": 27264,
+      "read_scope": "Source identity and established scope supplied by coordinator; no independent full rereview in this unit.",
+      "role": "Fixed-spacing endpoint context only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "sha256": "269fa79fc37f0eab85bb85b154cd1087413c1594cd197cccb6948826414aa967",
+      "bytes": 14915,
+      "read_scope": "Complete register read; previous selected reading followed by complete untruncated read.",
+      "role": "Primary source routing, not inherited verdict"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_manifest.json",
+      "sha256": "d1d6f5b1d52e56e9a993e4382bc9994ea15c9179951d4fdde1d5da2050b96f5a",
+      "bytes": 39117,
+      "read_scope": "Source identities, cache paths and hashes, external primary reads, limits, excluded coverage and packaging fields inspected; not a new audit of all original author inputs.",
+      "role": "Prior source/cache manifest"
+    }
+  ],
+  "external_sources": [
+    {
+      "author": "Harold D. Kirk",
+      "version": "v4 / 2026-08-02",
+      "record_url": "https://zenodo.org/records/21765806",
+      "pdf_url": "https://zenodo.org/records/21765806/files/Kirk_2026_Yang%E2%80%93Mills%20Existence%2C%20Mass%20Gap%2C%20and%20Nontriviality%20for%20Fixed%20Compact%20Simple%20Gauge%20Groups%20via%20Karcher%20Blocking%20and%20Exact%20Haar%E2%80%93Pivot%20Matching.pdf?download=1",
+      "pdf": {
+        "path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.pdf",
+        "sha256": "b91c6c2b9ba7cd4d5476aa6a2e823569507682c24cf103933ff9f97c73260bed",
+        "bytes": 1372548,
+        "read_scope": "118-page PDF cached by prior reviewer; exact bytes reused.",
+        "role": "local-only original primary research input"
+      },
+      "text": {
+        "path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.txt",
+        "sha256": "62e6276fcc0d9cbc361e57134a3073e5bfe8bdc12b2300c1de008fa9d60b7032",
+        "bytes": 407397,
+        "read_scope": "Intervals listed below; text has numbered PDF page markers.",
+        "role": "local-only extraction"
+      },
+      "text_line_intervals_read": [
+        [
+          56,
+          170
+        ],
+        [
+          270,
+          480
+        ],
+        [
+          565,
+          725
+        ],
+        [
+          848,
+          1727
+        ],
+        [
+          2030,
+          2290
+        ],
+        [
+          3670,
+          5268
+        ],
+        [
+          8240,
+          8380
+        ]
+      ],
+      "key_items_read": [
+        "Theorem1.1 and measure conventions",
+        "Lemmas3.1-3.6",
+        "exterior/charge and one-core suppliers in 3.3",
+        "complete Lemma3.26-Theorem3.31 displayed statements/proofs",
+        "Lemmas4.1-4.6 and beginning of Gaussian reference discussion",
+        "selected4.12 and4.13-4.20 exact slice/fiber formulas",
+        "end5.26,Theorem5.27",
+        "Section6.1-6.44 statements and displayed proofs",
+        "Section7.1-7.5 and opening7.6",
+        "References"
+      ],
+      "independent_validation_scope": "Exact Gaussian normalization, operator-versus-trace inference, limited pivot geometry, and compact-Haar mechanism only. No full dependency closure or actual Karcher optical-matrix counterexample.",
+      "role": "Candidate bridge screened, not imported as a continuum theorem"
+    },
+    {
+      "name": "abdesselam_rivasseau_9409094v1",
+      "url": "https://arxiv.org/pdf/hep-th/9409094v1",
+      "returncode": 0,
+      "stderr": "",
+      "local_only_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.pdf",
+      "sha256": "6498535d584bd935cd3d57f565d9c662c4fccbba31f623850431d2de3b4d8bee",
+      "bytes": 303807,
+      "valid_pdf_header": true,
+      "pages": 36,
+      "text_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.txt",
+      "text_sha256": "8249f0a4b74a5487de9474f5a7c59fecb6558f3af51de247a4f559ecac592edc",
+      "role": "Original finite-volume forest/jungle identity and prospective local-ownership mechanism; not a Yang-Mills amplitude or continuum theorem",
+      "read_scope": "PDF pp1-5 through web display; local text lines869-988 (TheoremIII.1, III.2 and displayed proof),1350-1502 (TheoremIV.3/IV.4, complete IV.5 positivity proof),1500-1655 (SectionV.A),2335-2500 (complete SectionV.E). The long upstream proof ofII.1/IV.1 was not independently checked in full."
+    },
+    {
+      "name": "abdesselam_bkar_notes",
+      "url": "https://mabdesselam.github.io/BKAR.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "local_only_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_bkar_notes.pdf",
+      "sha256": "b53076ce94c8a5b704e275f12f7412337b39486a161e7810ce9879509e679d90",
+      "bytes": 174669,
+      "valid_pdf_header": true,
+      "pages": 10,
+      "text_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_bkar_notes.txt",
+      "text_sha256": "f03ef0bcc728722ba9c3bef0db9748031f84a8d777a8b14d77978c719dca489a",
+      "role": "Primary author explanatory notes; no additional theorem imported",
+      "read_scope": "Theorem1, Proposition1 and Theorem2 proof opening, local text lines1-200/PDFpp1-4. Remaining notes not read."
+    }
+  ],
+  "other_primary_leads": [
+    {
+      "url": "https://doi.org/10.1007/BF02097397",
+      "title": "Magnen-Rivasseau-Seneor, Construction of YM4 with an infrared cutoff",
+      "coverage": "Bibliographic/abstract identification; publisher full-text retrieval unsuccessful in web tool. No theorem imported."
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01238433",
+      "title": "Balaban, Large field renormalization II",
+      "coverage": "Primary university record identified; publisher full-text retrieval failed. No theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/hep-th/9605094",
+      "title": "Abdesselam-Rivasseau, An Explicit Large Versus Small Field Multiscale Cluster Expansion",
+      "coverage": "Search/abstract lead only. No theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/1212.5562",
+      "title": "Dimock, Renormalization group according to Balaban II",
+      "coverage": "Search lead only. No theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/2211.03424",
+      "title": "Forsstrom-Lenells-Viklund, Wilson lines in the Abelian lattice Higgs model",
+      "coverage": "Search/abstract and theorem excerpt only; different model. No theorem imported."
+    },
+    {
+      "url": "https://github.com/ethanwsussman/Yang--Mills-LLM-experiment",
+      "coverage": "Primary README description exposed in search result; tentative status, QED3/YM3 manuscripts and developing YM4 existence work noted. No manuscript proof read or theorem imported."
+    }
+  ],
+  "search_coverage": [
+    "Kirk v4 latest Zenodo original record, upstream Gaussian/normalization/marked operator and joint forest claims",
+    "Gaussian determinant trace rank block-polymer operator norm; BKAR original author literature",
+    "Abdesselam Rivasseau Trees forests jungles and large-small field cluster expansion",
+    "Construction of YM4 with infrared cutoff PDF; Magnen Seneor Project Euclid",
+    "Large field renormalization II Euclid; Balaban original paper",
+    "Wilson loop perimeter upper bound Haar conditional pivot original literature"
+  ],
+  "retrieval_limits": [
+    "Zenodo web click on original PDF timed out; exact already-captured and hashed PDF/text reused.",
+    "Springer/DOI full-text retrieval did not succeed for the two historical constructive-gauge records.",
+    "No exhaustive review of arXiv or every new claimed solution."
+  ],
+  "diagnostics": {
+    "criteria": "checks/crossover_import_criteria.md",
+    "criteria_timing": "Written after analytic recognition of the possible determinant omission, before executing computational diagnostics; not blind.",
+    "runner": "checks/crossover_import_exact.py",
+    "immutable_attempt": "checks/crossover_import_attempt01.py",
+    "receipt": "checks/crossover_import_attempt01.receipt.json",
+    "stdout": "checks/crossover_import_attempt01.stdout.json",
+    "stderr": "checks/crossover_import_attempt01.stderr.txt",
+    "result": "79/79 diagnostic checks; mathematical asymptotic statements have explicit analytic proofs in source note.",
+    "excluded_claims": [
+      "No actual Karcher matrix realization of Gaussian witness",
+      "No synthetic activity asserted to be a Wilson reference factor",
+      "No SU(N) numerical integration",
+      "No physical continuum inference from finite tests",
+      "No whole-paper invalidity",
+      "No formal independent audit or landing review"
+    ]
+  },
+  "scoped_import_register": [
+    {
+      "source": "Kirk v4 Lemma3.26 through Theorem3.31 and Section6 consumers",
+      "class": "background context / candidate-screen",
+      "impact": "Unvalidated producer; concrete rank omission in printed determinant inference."
+    },
+    {
+      "source": "Abdesselam-Rivasseau hep-th/9409094v1 III.1, IV.3, IV.5, V.E",
+      "class": "literature theorem / bridge mechanism",
+      "impact": "Finite identities and interpolation positivity provide organization; model-specific charge, covariance and derivative hypotheses remain open."
+    },
+    {
+      "source": "Finite Gaussian and Wilson/Haar definitions displayed in source note",
+      "class": "explicit convention and bounded direct mathematics",
+      "impact": "Exact normalized calculations and restricted-observable lemma only; no continuum closure."
+    }
+  ],
+  "negative_result_discipline": {
+    "scope": "partial-narrowing",
+    "N1_N8": "Source note table records actual coverage and live repair",
+    "formal_negative_route_packet_pass": false,
+    "route_exhaustion": false
+  },
+  "publication_boundary": "Full third-party PDFs/texts are local-only outside the worktree. Only original note, deterministic diagnostics, concise source metadata, and evidence receipts are owned publication outputs.",
+  "mutations_excluded": [
+    "git/commits/branches",
+    "PR metadata",
+    "audit state",
+    "lane locks",
+    "shared status/summaries",
+    "other researchers files"
+  ]
+}

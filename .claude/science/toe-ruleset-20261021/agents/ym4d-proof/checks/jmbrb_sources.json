@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-30T04:22:21.586839+00:00",
+  "root": "/Users/jonBridger/ym4d-lanes/q/M1/repo/.claude/science/toe-ruleset-20261021/agents/ym4d-proof",
+  "git_identity": "Provided file snapshot; git status reports not a git repository. No Git mutation attempted.",
+  "inputs": {
+    "PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497
+    },
+    "HANDOFF.md": {
+      "sha256": "1565cca85302bd182435e224aab7a8e716da65fc96847c9a5cc6641fe19c256d",
+      "bytes": 64815
+    },
+    "briefs_q/JMBRB/AUTHOR.md": {
+      "sha256": "ffdd076f5821c6e9c9487ecb328708f9498ea823c079ca72f7724a1d45236de3",
+      "bytes": 3072
+    },
+    "briefs_q/JMBRB/REVIEW.md": {
+      "sha256": "35cea4a76f051a246f17aa2e3742e1e265cbde9c7fb0d141d853fe154df6c632",
+      "bytes": 795
+    },
+    "LFPRICE.md": {
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "bytes": 40582
+    },
+    "REVIEW_LFPRICE.md": {
+      "sha256": "9b0a99e529b0767012be5e4f913f2b739189284bb606059228e9de001ae481d3",
+      "bytes": 21999
+    },
+    "LARGE55.md": {
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "bytes": 81497
+    },
+    "CODEX_REVIEW_LARGE.md": {
+      "sha256": "cc9d86b0aca6d301e7c4111a8e4eaaafccf4c121323aaa0cb9026448ab38f777",
+      "bytes": 47027
+    },
+    "RLARGE.md": {
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "bytes": 134489
+    },
+    "REVIEW_RLARGE_V3.md": {
+      "sha256": "ac2e6074781f8ba0313b6497ab6ca45c112c8bce3343ecf2ebf005f6a842539d",
+      "bytes": 32643
+    },
+    "RD3.md": {
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "bytes": 36157
+    },
+    "RD4.md": {
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "bytes": 42966
+    },
+    "F17.md": {
+      "sha256": "b2a4f0f8650ff2db736acfaa1b0f30be1d30d449ceb827e32f55186b81e82440",
+      "bytes": 23295
+    },
+    "SOFTHARD.md": {
+      "sha256": "890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968",
+      "bytes": 134852
+    },
+    "PROOF.md": {
+      "sha256": "2e47d6d5a93e1f612cbae387d2516362c5ff12653f4bfb7b9ca21cc33bde805a",
+      "bytes": 799630
+    }
+  },
+  "route_a_search": "No JMBRA file or briefs_q/JMBRA file found by a targeted rg --files search under /Users/jonBridger/ym4d-lanes.",
+  "bookkeeping_nice": 20
+}

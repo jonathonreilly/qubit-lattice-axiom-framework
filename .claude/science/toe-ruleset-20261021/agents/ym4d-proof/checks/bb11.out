@@ -1,0 +1,19 @@
+bb11 -- BFT_B session 11, nonabelian background defects (d=2, L=3, K=2, SU(2) adjoint, exact Q)
+
+A1     PASS  exact identity (d_Z d_Z lam)(p) = (U1-U2) lam(far corner), curved and flat
+A1n    PASS  non-vacuity: d_Z d_Z lam exactly nonzero on the curved background
+A1f    PASS  ||U1-U2||_F^2 = ||Ad_W - 1||_F^2 exactly on every plaquette
+A2     PASS  <j, d_Z lam> = <d_Z^* j, lam> exactly (Tier A: adjointness)
+A3     PASS  |d_Z^* d_Z^* G|_2^2 <= max_p ||Ad_W-1||_F^2 * max|G|_2^2 (bound 23432/3125, worst ratio 199168/59375)
+A3n    PASS  non-vacuity: d_Z^* d_Z^* G exactly nonzero
+A4a    PASS  Q_str^Z d_Z ev^{(l)} = d_Z ev^{(l+1)} exactly on a straight-row tower (l = 0, 1)
+A4b    PASS  defect = (Row_l - A_{l+1}) lam_{l+1}(Y+e_mu) exactly, and nonzero (non-vacuous: True)
+A5     FAIL  lam^{E,Z}(x + d_Z mu) = lam^{E,Z}(x) - mu + mu(c_X) exactly (curved background)
+A6     PASS  nullity of d_Z on the box: curved 0 (pinned) / 0 (unpinned); abelian 3 (unpinned) / 0 (pinned)
+B1a    PASS  sum_X chi_X = 1 and chi_X(c_Y) = delta_XY exactly (quintic tents, spacing 3)
+B1     PASS  Lambda_Z(Pi_E^Z x) = 0 and Pi_E^Z Pi_E^Z = Pi_E^Z exactly at a curved background
+B2     PASS  flat background: d_Z M_G = M_G^base d (True), Q_str^Z M_G = M_G^root Q_str (True), lam^{E,Z} M_G = M_G lam^E (True)
+C1     PASS  abelian control: d_Z d_Z = 0, d_Z^* d_Z^* = 0, root-covariance defect = 0, all exactly
+C2     PASS  perturbed-flat control: intertwining defect exactly nonzero and supported exactly on b_0 (2 plaquettes of A' have holonomy != 1)
+
+VERDICT bb11: NOT ALL PASS -- FAILED: A5

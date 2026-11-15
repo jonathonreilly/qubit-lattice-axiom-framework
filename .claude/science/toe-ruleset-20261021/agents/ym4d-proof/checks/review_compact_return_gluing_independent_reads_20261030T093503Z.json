@@ -1,0 +1,135 @@
+{
+  "stage": "immutable independent source-only findings before author-packet inspection",
+  "created_utc": "2026-10-30T09:35:03.134087+00:00",
+  "configuration_disclosure": "Dispatched as gpt-6-astra/max, fresh restricted-input context, same-family review; configuration is not backend attestation.",
+  "methodology_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "source_reads": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "line_count": 644,
+      "read_ranges": [
+        [
+          1,
+          644
+        ]
+      ],
+      "coverage": "complete; original 299-400 SC overlap reread after aggregate-output truncation"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "read_ranges": [
+        [
+          1,
+          597
+        ]
+      ],
+      "coverage": "complete; original 299-400 SC overlap reread after aggregate-output truncation"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "line_count": 460,
+      "read_ranges": [
+        [
+          1,
+          460
+        ]
+      ],
+      "coverage": "complete; original 299-400 SC overlap reread after aggregate-output truncation"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "coverage": "complete; original 299-400 SC overlap reread after aggregate-output truncation"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "coverage": "complete; original 299-400 SC overlap reread after aggregate-output truncation"
+    }
+  ],
+  "methodology_reads": [
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "ranges": "entire file"
+    },
+    {
+      "path": "AGENTS.md",
+      "ranges": "entire file"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ]
+    },
+    {
+      "at_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "ranges": "entire file"
+    },
+    {
+      "at_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "ranges": "entire file"
+    },
+    {
+      "at_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/workhorse/SKILL.md",
+      "ranges": "entire file"
+    },
+    {
+      "at_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "ranges": "entire file"
+    },
+    {
+      "at_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "ranges": "entire file"
+    },
+    {
+      "at_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "ranges": [
+        [
+          1,
+          230
+        ]
+      ]
+    }
+  ],
+  "excluded_before_freeze": [
+    "all author packets and author science scripts",
+    "previous review contents",
+    "root integration evidence"
+  ],
+  "prior_information": "The bounded review dispatch named target claims, source pins and attack points. No author findings, receipts, previous review findings or root integration evidence were provided/read. Filenames discovered by rg included review paths, but their contents were not opened.",
+  "scientific_numerical_experiments": 0,
+  "source_reviewer_modifications": [],
+  "candidate_source_verdict": "LAND for bounded bare-step statement only; final verdict requires packet consistency check",
+  "independent_findings": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_compact_return_gluing_independent_findings_20261030T093503Z.md",
+    "sha256": "ecc4da1c357295e3e486eb71d24dea550bef67373215cb435684097e33d9873a"
+  }
+}

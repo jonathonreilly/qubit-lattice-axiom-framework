@@ -1,0 +1,89 @@
+{
+  "MG_rows_closed": [],
+  "artifacts": [
+    {
+      "bytes": 27190,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "sha256": "f75e8cfc6f9e4310a9ba78ce7d8d53a6c729f4cac10599b430fb9234403c8d25"
+    },
+    {
+      "bytes": 3683,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_criteria.md",
+      "sha256": "413d1e761b150d41891c3e94af37e8cab99a8fd2996e7127d8a1e29d13e8ce9c"
+    },
+    {
+      "bytes": 17350,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_exact.py",
+      "sha256": "448734574f786ce4b039326de8b8f151bc5f3c611e5ee2f22cdae8cf0b916d12"
+    },
+    {
+      "bytes": 26388,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_initial_endpoint.txt",
+      "sha256": "f7e1405bb263ea82898c96ca0c80edc8afa90aa76d45a6676f7ccab34fef0fe6"
+    },
+    {
+      "bytes": 1766,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_initial_freeze.json",
+      "sha256": "162bb0f4a4c0efce6c3af278fc31cdf8703f27117c49433dc17a6a83f81a24f0"
+    },
+    {
+      "bytes": 18946,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_initial_manifest.json",
+      "sha256": "5950544b1dd0a05c832ef945f985c078e6d60d2f7ae515758bee36abae3bab9b"
+    },
+    {
+      "bytes": 153,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_initial_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "bytes": 8349,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity.md",
+      "sha256": "820bceb7c30ad7a4e42eb0733018923ace7bcd57023163fe7a639b3d74a02acf"
+    },
+    {
+      "bytes": 1732,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity_criteria.md",
+      "sha256": "9d9183cb5a126043653e24a82872f82db8ee544ade886766d57e999b991f55b3"
+    },
+    {
+      "bytes": 3901,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity_exact.py",
+      "sha256": "2283c29577d906f88db0cf522753063a9a5041ae736f424cf247992180616f1a"
+    },
+    {
+      "bytes": 3096,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity_results.json",
+      "sha256": "1cbed59d48fea7dbcc19516f9ac7e4416f28e73ffdda0863de902913d74add9c"
+    },
+    {
+      "bytes": 17079,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_results.json",
+      "sha256": "d698e8d1ecd2e262092c84762a2467cfe37b35ecd8ecc96da1e7b99282ac74e8"
+    },
+    {
+      "bytes": 153,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "bytes": 24915,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_manifest.json",
+      "sha256": "044391102b2468b76ee9583a5d08dbc2db24c77367076e6de7c97750d698026b"
+    }
+  ],
+  "checks": {
+    "all_mutations_killed": true,
+    "combined_passed": 131,
+    "combined_total": 131,
+    "mutation_controls": 22,
+    "passed": 108,
+    "supplement_passed": 23,
+    "supplement_total": 23,
+    "total": 108
+  },
+  "created_utc": "2026-10-29T16:23:37.273504+00:00",
+  "freeze_version": 2,
+  "scope": "Wilson local ground-state ratios, volume-independent one-step witness, actual small-beta physical Doob contraction",
+  "status": "Frozen author candidate including full-space injectivity supplement; independent review pending; no MG0-MG5 closure"
+}

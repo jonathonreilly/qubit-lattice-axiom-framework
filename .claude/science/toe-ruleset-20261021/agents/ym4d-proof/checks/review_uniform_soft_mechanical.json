@@ -1,0 +1,367 @@
+{
+  "schema": "review-uniform-soft-mechanical-v1",
+  "checked_utc": "2026-10-29T18:14:47.520401+00:00",
+  "scope": "Owned review artifacts only; not whole-branch integration or audit readiness.",
+  "python_ast_parsed": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02.py"
+  ],
+  "imports": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01.py": [
+      "collections",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "scipy.linalg",
+      "scipy.sparse",
+      "scipy.sparse.linalg",
+      "sys",
+      "time",
+      "traceback"
+    ],
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02.py": [
+      "itertools",
+      "json",
+      "math",
+      "numpy",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  "preserved_expected_syntax_error": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01.py",
+    "error": "unmatched ')' (<unknown>, line 184)"
+  },
+  "preserved_serialization_source_parses": true,
+  "json_parsed": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_entry_identity.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_failures.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_source_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_vocab.json"
+  ],
+  "intentional_empty_failed_stdout": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_attempt01_out.json"
+  ],
+  "local_links_checked": [
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "UNIFORM_SOFT_MINIMIZER_ASTRA.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_criteria.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_source_manifest.json"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "PROOF_session16_snapshot.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_S13_S14.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_S15_CONVERGENCE.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "REVIEW_S16_S17.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "LINEAR_PACKAGE.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_01.py"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_01_out.json"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_02.py"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_02_out.json"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_control_notes.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_failures.json"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_literature.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "target": "checks/review_uniform_soft_receipt.json"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_control_notes.md",
+      "target": "review_uniform_soft_criteria.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_control_notes.md",
+      "target": "../REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_control_notes.md",
+      "target": "review_uniform_soft_failures.json"
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_literature.md",
+      "target": "review_residual_full_colour_literature.md"
+    }
+  ],
+  "trailing_whitespace": [],
+  "scoped_git_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "limitation": "Untracked files also checked explicitly for trailing whitespace and local links."
+  },
+  "criteria_unchanged": true,
+  "author_17_files_and_receipt_unchanged": true,
+  "all_9_consumed_sources_unchanged": true,
+  "independent_program_counts": [
+    {
+      "program": "01",
+      "passed": 34,
+      "total": 34
+    },
+    {
+      "program": "02",
+      "passed": 84,
+      "total": 84
+    }
+  ],
+  "strict_postexecution_identity_check": {
+    "criterion": 1e-10,
+    "entries": 47,
+    "all_passed": true,
+    "maximum": {
+      "name": "two_residual_formulas_n27_sample2",
+      "error": 8.74087600908654e-11
+    },
+    "errors": [
+      {
+        "name": "alias_dual_identity_n3_sample0",
+        "error": 1.1302211247684974e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n3_sample0",
+        "error": 9.020566245086788e-16
+      },
+      {
+        "name": "two_residual_formulas_n3_sample0",
+        "error": 2.8430016762515787e-15
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n3_sample0",
+        "error": 2.809234570782673e-17
+      },
+      {
+        "name": "alias_dual_identity_n3_sample1",
+        "error": 2.1397388400509621e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n3_sample1",
+        "error": 5.023768742028462e-15
+      },
+      {
+        "name": "two_residual_formulas_n3_sample1",
+        "error": 1.232358443045304e-14
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n3_sample1",
+        "error": 5.284162476208428e-16
+      },
+      {
+        "name": "full_alias_periodic_gluing_n3",
+        "error": 1.6653345369377348e-16
+      },
+      {
+        "name": "alias_dual_identity_n3_sample2",
+        "error": 2.151793283812705e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n3_sample2",
+        "error": 2.91010196897344e-15
+      },
+      {
+        "name": "two_residual_formulas_n3_sample2",
+        "error": 5.942454147859643e-13
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n3_sample2",
+        "error": 1.7557716067391705e-18
+      },
+      {
+        "name": "alias_dual_identity_n9_sample0",
+        "error": 1.626652482538787e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n9_sample0",
+        "error": 1.0977341883793984e-14
+      },
+      {
+        "name": "two_residual_formulas_n9_sample0",
+        "error": 2.4662904511626412e-14
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n9_sample0",
+        "error": 8.327124423340013e-17
+      },
+      {
+        "name": "alias_dual_identity_n9_sample1",
+        "error": 1.7889093593728216e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n9_sample1",
+        "error": 1.3881227394123661e-16
+      },
+      {
+        "name": "two_residual_formulas_n9_sample1",
+        "error": 3.886459514537206e-16
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n9_sample1",
+        "error": 1.1440761069326528e-15
+      },
+      {
+        "name": "full_alias_periodic_gluing_n9",
+        "error": 7.305205878968153e-17
+      },
+      {
+        "name": "alias_dual_identity_n9_sample2",
+        "error": 4.610975860536473e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n9_sample2",
+        "error": 6.32429018551755e-15
+      },
+      {
+        "name": "two_residual_formulas_n9_sample2",
+        "error": 9.224477085459364e-13
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n9_sample2",
+        "error": 1.7649532655793076e-18
+      },
+      {
+        "name": "alias_dual_identity_n27_sample0",
+        "error": 4.1311668129525705e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n27_sample0",
+        "error": 3.647787894230505e-14
+      },
+      {
+        "name": "two_residual_formulas_n27_sample0",
+        "error": 1.4323043374199073e-13
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n27_sample0",
+        "error": 1.3878871967638605e-16
+      },
+      {
+        "name": "alias_dual_identity_n27_sample1",
+        "error": 1.9748086822697277e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n27_sample1",
+        "error": 5.946633143844539e-15
+      },
+      {
+        "name": "two_residual_formulas_n27_sample1",
+        "error": 2.464705423701385e-14
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n27_sample1",
+        "error": 9.733592010251824e-16
+      },
+      {
+        "name": "full_alias_periodic_gluing_n27",
+        "error": 4.840962700147777e-17
+      },
+      {
+        "name": "alias_dual_identity_n27_sample2",
+        "error": 4.038135405768634e-16
+      },
+      {
+        "name": "Psi_Sigma_identity_n27_sample2",
+        "error": 3.424420018798085e-13
+      },
+      {
+        "name": "two_residual_formulas_n27_sample2",
+        "error": 8.74087600908654e-11
+      },
+      {
+        "name": "zero_alias_curvature_cancellation_n27_sample2",
+        "error": 2.607162458234983e-18
+      },
+      {
+        "name": "periodic_image_unfold_row_T3_r3",
+        "error": 4.547473508864641e-13
+      },
+      {
+        "name": "periodic_image_unfold_column_T3_r3",
+        "error": 1.4287432541162514e-15
+      },
+      {
+        "name": "periodic_image_unfold_row_T3_r9",
+        "error": 4.547473508864641e-13
+      },
+      {
+        "name": "periodic_image_unfold_column_T3_r9",
+        "error": 5.674193754278336e-16
+      },
+      {
+        "name": "periodic_image_unfold_row_T5_r3",
+        "error": 0.0
+      },
+      {
+        "name": "periodic_image_unfold_column_T5_r3",
+        "error": 4.2862297623487537e-16
+      },
+      {
+        "name": "periodic_image_unfold_row_T5_r9",
+        "error": 0.0
+      },
+      {
+        "name": "periodic_image_unfold_column_T5_r9",
+        "error": 0.0
+      }
+    ],
+    "disclosure": "Some original in-code cutoffs were looser; this exhaustive postcheck enforces the original criteria on unchanged evidence."
+  },
+  "exact_preserved_repair_diffs": {
+    "01": "--- review_uniform_soft_01_attempt01.py\n+++ review_uniform_soft_01.py\n@@ -181,7 +181,7 @@\n     lift=np.tile(np.eye(4)/3,(81,1));zero_res=np.eye(4)-Q0@lift\n     record('harmonic_zero_energy_lift',max(err(zero_res),err(C0@lift))<1e-10,error=max(err(zero_res),err(C0@lift)))\n     record('harmonic_residual_identity_mutation_rejected',err(np.eye(4)-zero_res)>0.9)\n-    record('d3_length_rescaling_mutation_rejected',err(Q0@lift/3-np.eye(4))>0.5,difference=err(Q0@lift/3-np.eye(4))))\n+    record('d3_length_rescaling_mutation_rejected',err(Q0@lift/3-np.eye(4))>0.5,difference=err(Q0@lift/3-np.eye(4)))\n     # Complete periodic top torus, built by direct gauge-constrained minimizations.\n     T=3; shape=(T,)*4; fhat=np.zeros(shape+(486,4),complex);rhat=np.zeros(shape+(4,4),complex);zhat=np.zeros(shape+(4,4),complex)\n     maxstat=0\n",
+    "02": "--- review_uniform_soft_02_attempt01.py\n+++ review_uniform_soft_02.py\n@@ -65,7 +65,7 @@\n     PsiU=kap*(1-r0**2/6)/(kap+r0**2*R);psi0=4*r0**2/pi**2\n     f0=(4*eta**2/psi0+4*eta/sqrt(psi0))*cosh(eta)\n     bracket=1/((1+rho)*Gamma)-f0/(1-rho);required=.5/((1+rho)*Gamma)\n-    flags=[lam>0,rho<=.5,ePsi<=PsiU/2,bracket>=required,f0<=.15]\n+    flags=list(map(bool,[lam>0,rho<=.5,ePsi<=PsiU/2,bracket>=required,f0<=.15]))\n     return dict(eta=eta,r0=r0,lambda_alias=lam,rho_beta=float(rho),ePsi=float(ePsi),PsiU=PsiU,bracket=float(bracket),required=float(required),fine_condition=f0,conditions=flags,accepted=all(flags))\n \n def periodized_1d(a,T,x):\n"
+  },
+  "vocabulary_violations": 0
+}

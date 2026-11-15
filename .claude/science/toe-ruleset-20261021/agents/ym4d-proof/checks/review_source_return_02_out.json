@@ -1,0 +1,105 @@
+{
+  "all_passed": true,
+  "arithmetic": "exact rational and Gaussian-rational, SymPy polynomial algebra",
+  "checks": {
+    "all_nonzero_endpoints_labelled": true,
+    "all_order_majorant_combinatorial_inequalities": true,
+    "all_walk_labels_connected": true,
+    "bad_gauge_still_preserves_loop_trace": true,
+    "characteristic_adjugate_inverse": true,
+    "coarse_reference_shift_counterexample": true,
+    "collar_fixed": true,
+    "collar_source_changes_local_inverse": true,
+    "column_norm_required": true,
+    "complex_two_form_stokes_identity": true,
+    "exact_third_order_remainder": true,
+    "geometric_remainder_bound": true,
+    "half_logdet_characteristic_vs_trace": true,
+    "hole_parametrix_identity": true,
+    "nonabelian_loop_traces_fixed": true,
+    "nonlinear_original_source_propagation": true,
+    "outside_original_source_invisible": true,
+    "picard_coefficients_solve_stationarity": true,
+    "projection_compression_counterexample": true,
+    "restricted_slice_is_zero": true,
+    "rooted_forest_fixed": true,
+    "same_coarse_reference_repairs_estimate": true,
+    "su2_exact_unitary": true,
+    "su2_normalized_haar_chart_constant": true,
+    "triangle_haar_integral_before_after_tree": true,
+    "two_anchor_transports_fixed": true,
+    "weighted_both_endpoint_bounds": true,
+    "weighted_marked_incidence": true
+  },
+  "controls": {
+    "compressed_physical_positivity_rejected": true,
+    "determinant_half_factor_detected": true,
+    "determinant_sign_detected": true,
+    "discarding_remote_implicit_source_detected": true,
+    "moving_anchor_detected": true,
+    "moving_collar_endpoint_detected": true,
+    "omitted_contour_side_detected": true,
+    "omitted_haar_constant_detected": true,
+    "omitted_scalar_coordinate_count_detected": true,
+    "reversed_contour_side_detected": true,
+    "row_only_marked_bound_rejected": true,
+    "source_linear_term_cannot_be_subtracted": true,
+    "truncated_collar_label_detected": true,
+    "wrong_inverse_order_detected": true,
+    "wrong_parametrix_sign_detected": true,
+    "zero_source_wrong_reference_bound_rejected": true
+  },
+  "data": {
+    "complex_contour": {
+      "after_minus_before": "-1550089/6890625 + 4795739*I/6890625",
+      "oriented_faces": [
+        "-82841092/144703125 + 220101479*I/413437500",
+        "17733742/144703125 - 37219979*I/413437500",
+        "1022404/5359375 + 1174966*I/5359375",
+        "1650191/48234375 + 1659304*I/48234375"
+      ],
+      "side": "-1550089/6890625 + 4795739*I/6890625"
+    },
+    "compressed_augmented_square_root_minus_projector": "-1/6",
+    "enumerated_majorant_monomials": 2942,
+    "haar": {
+      "HS_chart_volume": "4*sqrt(2)*pi**2",
+      "normalized_Haar_c2": "sqrt(2)/(8*pi**2)",
+      "triangle_integral": "1"
+    },
+    "implicit": {
+      "first_remote_coefficient": "2/23",
+      "mixed_second_coefficient": "-128/12167",
+      "order": 5
+    },
+    "minus_half_logdet_derivative": "9/106",
+    "parametrix": {
+      "ambient_vertices": 9,
+      "atoms_through_order_3": 15,
+      "collar_source": 4,
+      "error": "129735197372165534641074963413483370437886047363281250000000/26623422994523838429338014101536467933632950149039013349857115974999520849",
+      "integrated_vertices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "remote_source": 5,
+      "weighted_B_actual": "1576805157927920461918316261563379216810724587958333159734645998864371871/1012847023068456028905717261754607731828660867921529119189440000000000000",
+      "weighted_M_actual": "7431124001900302113289270075586637437822806073083517354604613/37166929214389843693412185578864938495251437939648000000000000",
+      "weighted_r": "17789902553700789206277584273/2652915026953725285600000000000"
+    },
+    "wrong_reference_W_shift_at_epsilon_zero": "2/5"
+  },
+  "limitations": [
+    "Finite algebra and edge cases, not an actual full Yang-Mills Hessian computation.",
+    "The all-volume and all-order claims require the independent analytic arguments in the review.",
+    "No normalized face bound, arbitrary history estimate, higher-level induction or continuum theorem tested."
+  ],
+  "python": "3.12.8",
+  "sympy": "1.14.0"
+}

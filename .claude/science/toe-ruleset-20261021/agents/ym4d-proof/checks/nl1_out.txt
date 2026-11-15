@@ -1,0 +1,4 @@
+nl1-A: cases with nonzero residual on CLOSED input : 0 / 200  ->  PASS
+nl1-B: cases where b != a (different representative): 183 / 200  ->  PASS
+nl1-D: cases with inexact T_alpha division          : 199 / 200  ->  FAIL
+nl1-C: non-closed inputs detected (nonzero residual or inexact division): 20 / 20  ->  PASS

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-30T10:12:38Z",
+  "scope": "administrative integrity verification; no new mathematical test",
+  "preexisting_file_count": 3925,
+  "changed_preexisting": [],
+  "missing_preexisting": [],
+  "new_files_before_this_receipt": [
+    "LOCOP.md",
+    "LOCOP_LOG.md",
+    "checks/locop_check.py",
+    "checks/locop_criteria.md",
+    "checks/locop_inventory_before.json",
+    "checks/locop_results.json",
+    "checks/locop_review.md"
+  ],
+  "unauthorized_new_files": [],
+  "unresolved_local_links": [],
+  "criteria_birth_epoch": 1793353888.7556086,
+  "script_birth_epoch": 1793354423.789076,
+  "criteria_precede_script": true,
+  "criteria_hash_matches_run": true,
+  "script_hash_matches_run": true,
+  "numerical_status": "PASS",
+  "review_verdict": "VERDICT: LAND",
+  "delivered_doc_matches_review": true,
+  "final_artifact_hashes": {
+    "LOCOP.md": "0295d071a60d0ba3abfa23e4722634c7c2ea54921423cd0451aec7381e2c9253",
+    "LOCOP_LOG.md": "f844adc06ced3267e91a95094aa005725a62c8bdd0c99502488706e178c673eb",
+    "checks/locop_check.py": "fd859ed206ce35076f43c0e5adb1e666d74ffec053d2c0397f63606a2c694993",
+    "checks/locop_criteria.md": "11af948015c8993a931699c39901d8410f272a1f18b3cfa9ba107e6af4d24c78",
+    "checks/locop_inventory_before.json": "386e0b4802749455f28f4d9e9b81971109b3b47cabb08edd87962a0a149681b3",
+    "checks/locop_results.json": "d754c91230c7dacdf4625e6f2453a8e8182c1ace7402c8428432012b496a791d",
+    "checks/locop_review.md": "5d96c407591737ac352e304b55b30fb276fa534ae87e973235f1ed8489239945"
+  },
+  "verification_peak_rss_bytes": 23871488,
+  "status": "PASS"
+}

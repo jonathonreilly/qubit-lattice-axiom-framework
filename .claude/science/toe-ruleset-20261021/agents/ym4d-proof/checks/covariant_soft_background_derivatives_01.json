@@ -1,0 +1,143 @@
+{
+  "scope": "finite author diagnostics, not interval or all-volume certificates",
+  "mode": "derivatives",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "passed": 20,
+  "total": 20,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Wilson_defect_complete_block_row_bound",
+      "pass": true,
+      "detail": {
+        "row_norm": 0.013607950587519648,
+        "bound": 0.0633008863052677,
+        "delta": 0.002637536929386154
+      }
+    },
+    {
+      "name": "spread_positive_semidefinite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "finite_u_full_Hessian_2.0",
+      "pass": true,
+      "detail": 1.5978240918435757e-10
+    },
+    {
+      "name": "kernel_gradient_at_lift_2.0",
+      "pass": true,
+      "detail": 4.464950429381985e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_2.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_2.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_finite_u_spread_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonstationary_lift_control",
+      "pass": true,
+      "detail": 0.005390912854945756
+    },
+    {
+      "name": "finite_u_full_Hessian_10.0",
+      "pass": true,
+      "detail": 1.6433130772885337e-10
+    },
+    {
+      "name": "kernel_gradient_at_lift_10.0",
+      "pass": true,
+      "detail": 8.210822832148494e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_10.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_10.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "finite_u_full_Hessian_50.0",
+      "pass": true,
+      "detail": 1.6560531797615113e-10
+    },
+    {
+      "name": "kernel_gradient_at_lift_50.0",
+      "pass": true,
+      "detail": 9.37603494957588e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_50.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_50.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonzero_chart_reverse_gradient",
+      "pass": true,
+      "detail": 5.076214008056627e-10
+    },
+    {
+      "name": "quaternion_matrix_product_convention",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_contours_matrix_vs_quaternion",
+      "pass": true,
+      "detail": 2.2887833992611187e-16
+    },
+    {
+      "name": "drop_Ad_transport_control",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "derivatives": [
+      {
+        "u": 2.0,
+        "finite_difference_error": 1.5978240918435757e-10,
+        "lift_gradient_max": 0.005390912854945756,
+        "minimum_exact_Hessian": 0.35863753471016774
+      },
+      {
+        "u": 10.0,
+        "finite_difference_error": 1.6433130772885337e-10,
+        "lift_gradient_max": 0.005390912854945757,
+        "minimum_exact_Hessian": 0.0919025686910841
+      },
+      {
+        "u": 50.0,
+        "finite_difference_error": 1.6560531797615113e-10,
+        "lift_gradient_max": 0.005390912854945758,
+        "minimum_exact_Hessian": 0.03854954516170338
+      }
+    ]
+  },
+  "elapsed_seconds": 0.7180061250110157,
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "unit": "bare_coupling_match",
+  "source_freeze": {
+    "path": "BARE_COUPLING_MATCH_ASTRA.md",
+    "lines": 670,
+    "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff"
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "retained_methodology_read_records": [
+    "checks/frozen_transported_chart_read_manifest.json",
+    "checks/weighted_return_jets_read_manifest.json"
+  ],
+  "methodology_scope": "Same continued authorized author task. Actual AGENTS, installed physics-loop skill and pinned workflow/proof-search/literature instructions retained from those reads. PROCESS_LIGHT reread; written mathematics requires no numerical preregistration.",
+  "process": {
+    "path": "PROCESS_LIGHT.md",
+    "lines": 11,
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+  },
+  "local_sources": [
+    {
+      "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "lines": 568,
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "read_coverage": "25-236: actual density, paired contours, lift, complete tree/Haar quotient, gap and exact finite-u Hessian."
+    },
+    {
+      "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "lines": 590,
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "read_coverage": "1-365: actual constrained SU saddle, uniform normalized-kernel Laplace remainder and derivative domains; no full-paper claim."
+    },
+    {
+      "path": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "lines": 556,
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "read_coverage": "54-120 and 250-430: actual phase, fixed joint domain, original-reader composition, critical equation and uniqueness/IC branch identification; no full-source claim."
+    },
+    {
+      "path": "CRITICAL_ACTION_READER_ASTRA.md",
+      "lines": 238,
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "read_coverage": "1-215: complete scalar marking and exact lift/normalizer vacuum; no claim of a full-source read."
+    },
+    {
+      "path": "CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "lines": 397,
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "read_coverage": "Complete source, read in bounded ranges through 415: actual full determinant homotopy and critical correction."
+    },
+    {
+      "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "lines": 790,
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "read_coverage": "1-342 and 586-732: fixed complex domain, complete-reader inverses/critical branch/determinant, IC25-IC32 exact tree/one-loop/prefactor dictionary. The intervening nonlinear-core proof is not imported as a new premise."
+    },
+    {
+      "path": "LINEAR_PACKAGE.md",
+      "lines": 538,
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "read_coverage": "1-180: actual Decision4 kernel, root/straight map, one-step linear setting and units. Diagnostic numerics mentioned there are not evidence for this unit."
+    },
+    {
+      "path": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "lines": 723,
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "read_coverage": "1-180: actual tree normalization UL8 and surrounding conventions. No claimed all-depth loop coefficient is imported."
+    },
+    {
+      "path": "LOCOP.md",
+      "lines": 601,
+      "sha256": "0295d071a60d0ba3abfa23e4722634c7c2ea54921423cd0451aec7381e2c9253",
+      "read_coverage": "Opening/L1-L2 and 196-385 including L4-L9: real colour normalization, constant-curvature and scalar/tensor extraction, moment identity, spatial gap. A truncated earlier L3 display is not counted as a full-source read."
+    },
+    {
+      "path": "SPURION.md",
+      "lines": 597,
+      "sha256": "8474bec9faca8b0d9a1318846088e26cf47a06f89748236c8d440bc0ab046667",
+      "read_coverage": "1-205: gauge covariance and the relative-field/physical-field distinction; no full-source claim."
+    },
+    {
+      "path": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "lines": 592,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "read_coverage": "Complete same-author-task read retained from earlier units, as recorded in weighted_return_jets_read_manifest.json; no new regional theorem is imported here."
+    },
+    {
+      "path": "WEIGHTED_RETURN_JETS_ASTRA.md",
+      "lines": 937,
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "read_coverage": "Complete preceding author source retained. Used to identify the prefactor excluded from WR42a and the remaining bare/effective interface, not as a full effective-class closure theorem."
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/pdf/hep-lat/9510026",
+      "read_scope": "Bietenholz-Wiese section 3, equations (3.1)-(3.18), bounded primary PDF text read.",
+      "mapping": "Free continuum gluon/Abelian averaging and projected Gaussian covariance precedent. Actual finite-L Wilson/arithmetic-mean symbol and normalization rebuilt; no interacting/perfect-action theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/pdf/hep-lat/9504006",
+      "read_scope": "Luscher-Weisz section 5.1, equations (5.1)-(5.4), plus introduction/abstract.",
+      "mapping": "Multiplicative background chart and gauge transformation precedent. Their BRS gauge/renormalization result is not substituted for the rooted probability-Haar quotient or an unevaluated loop coefficient."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1410.2798v3",
+      "read_scope": "Dimock introduction and section 2.1-2.2, particularly equations (6),(12)-(15), bounded primary PDF read.",
+      "mapping": "Abelian tree paths and covariant averaging only. The actual non-Abelian section/Haar measure identity is rebuilt."
+    },
+    {
+      "url": "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Renormalization-group-approach-to-lattice-gauge/991031665200104646",
+      "read_scope": "Balaban CMP109 bibliographic record/title only in this unit.",
+      "mapping": "Architectural credit for local effective actions and marginal extraction; no unread theorem imported."
+    }
+  ],
+  "access_limitations": [
+    "Publisher DOI and Euclid full-text attempts for Balaban CMP109 failed; no full-paper read is claimed.",
+    "An earlier oversized local multi-read output was not counted as consumed; required IC25-IC32 and CA/CD passages were reread in bounded chunks."
+  ],
+  "proof_boundary": "Source-free bare one-step prefactor; volume-first flat marginal projection only. Full determinant loop value/sign, arbitrary-momentum Wilson matching, source/class/history closure, AF iteration, non-freeness, continuum existence and physical mass gap remain unproved by this unit."
+}

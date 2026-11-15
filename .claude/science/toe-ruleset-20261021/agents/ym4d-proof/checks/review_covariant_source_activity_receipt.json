@@ -1,0 +1,287 @@
+{
+  "frozen_utc": "2026-10-29T21:58:26.564664+00:00",
+  "state": "FROZEN INDEPENDENT SCOPED REVIEW",
+  "scope": "SA1-SA34 bounded selected real Haar sector, original-V support atoms and normalized source-complex return. Full H24/complement integration remains open.",
+  "verdict": "LAND",
+  "same_family_Codex_review": true,
+  "configuration": "Requested Astra/max; independent backend metadata not available.",
+  "implementation_role": false,
+  "target_source_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+  "author_receipt_sha256": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c",
+  "author_12_bound_files_unchanged": true,
+  "report_sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+  "read_manifest_sha256": "3b1e5e7805129a0d4b5315d314e0276e47af5ecd271ccc5d18e3f4292278fa93",
+  "independent_freeze_sha256": "9dd7bd76a53348dec1bc008829195688e83b4c636a2fc4437544118e171f58bf",
+  "validation_sha256": "c42b444bfddbc4d89fc054f330eb07670071475d17abb25f0897ca134044d15f",
+  "blocking_findings": [],
+  "source_repairs": [],
+  "scientific_baseline_failures": [],
+  "expected_source_mutation_failures": [
+    "actual_no_normalizer",
+    "actual_no_haar",
+    "actual_no_source_vacuum",
+    "atoms_wrong_sign",
+    "atoms_wrong_order"
+  ],
+  "actual_mutation_survivors_in_executed_probes": [],
+  "post_exposure_execution_scope": "Exact actual-checker prefix through fixed-reference assertion plus independent direct-Haar-moment Hessian; exact full atom checker. Full original 98-second actual run read, not rerun.",
+  "all_original_attempts_and_outputs_preserved": true,
+  "resources": {
+    "samples": 67,
+    "maximum_rss_bytes": 98320384,
+    "minimum_free_percent": 54,
+    "maximum_load": 2.37548828125,
+    "all_nice_at_least_10": true,
+    "all_five_thread_variables_one": true,
+    "sequential_no_pools": true,
+    "maximum_copied_child_seconds": 1.5105153329786845
+  },
+  "targets": {
+    "full4D_Yang_Mills_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN",
+    "full_H24_integration": "OPEN"
+  },
+  "authority": "Source-level scoped review only; no audit, retained-grade, whole-library or whole-PR verdict.",
+  "bound_files": [
+    {
+      "path": "REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "bytes": 13623
+    },
+    {
+      "path": "checks/review_covariant_source_activity_atoms.py",
+      "sha256": "80eb04e77e77c7a33bbe2390b222233b5e6411d0e54d6458e4c2102321e2aa57",
+      "bytes": 7092
+    },
+    {
+      "path": "checks/review_covariant_source_activity_atoms_01.json",
+      "sha256": "4f94f24548381e0e397cecaf99585fe82feb554c882e0128d7c21f2ecf81480c",
+      "bytes": 11754
+    },
+    {
+      "path": "checks/review_covariant_source_activity_atoms_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_criteria.md",
+      "sha256": "f47e6dd533ffffa8bdbc5e140e4dc2735835300a461332d2a96f57a35628d763",
+      "bytes": 3791
+    },
+    {
+      "path": "checks/review_covariant_source_activity_entry.json",
+      "sha256": "7c9eb42f55984cd8eb2a1fb693e19defec8f45baa2a073a3d5d86d77d2d2af40",
+      "bytes": 3341
+    },
+    {
+      "path": "checks/review_covariant_source_activity_fibre.py",
+      "sha256": "78225cbc656be62af715078009fd6979196534a0fc87751b507c664ca09a3db8",
+      "bytes": 7471
+    },
+    {
+      "path": "checks/review_covariant_source_activity_fibre_01.json",
+      "sha256": "ca1abfd3817d19a5958126da15d2b016843fc860cdc4868dfd6b017c57be8fd9",
+      "bytes": 11054
+    },
+    {
+      "path": "checks/review_covariant_source_activity_fibre_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_flux.py",
+      "sha256": "118c6b452da2362ec8a164d75427e024425f05856b8ff00acd600a6f5cd320ec",
+      "bytes": 3781
+    },
+    {
+      "path": "checks/review_covariant_source_activity_flux_01.json",
+      "sha256": "3f1b03aa17523af56d28a9e22f9dc46c4b2277dcf65da73d6ebd4b19a2fa6edf",
+      "bytes": 4135
+    },
+    {
+      "path": "checks/review_covariant_source_activity_flux_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_geometry.py",
+      "sha256": "811d0210a61e4bf6528880bf66e35fbb2fe4ad741cc7745fcc88bc97e28fd3c2",
+      "bytes": 7033
+    },
+    {
+      "path": "checks/review_covariant_source_activity_geometry_01.json",
+      "sha256": "831035f0e5328871e106d1fb88320c3799dad81496a8cb31806863f929bafc1c",
+      "bytes": 10440
+    },
+    {
+      "path": "checks/review_covariant_source_activity_geometry_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_incidence.py",
+      "sha256": "ce89baef1c82c544de257b10f0c15e1286c6c4ca8844c05aac6d3b286abae4d6",
+      "bytes": 2340
+    },
+    {
+      "path": "checks/review_covariant_source_activity_incidence_01.json",
+      "sha256": "881934d5ad2c5b3bf39b59e1a8d43b53ccb074490e9d256ef94c36fff90ee984",
+      "bytes": 1812
+    },
+    {
+      "path": "checks/review_covariant_source_activity_incidence_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_independent.md",
+      "sha256": "3ad81c3e3e8bef2c80d3e11f79af6bcd9f8dbafb7281a8b8c353b9951b07141a",
+      "bytes": 20704
+    },
+    {
+      "path": "checks/review_covariant_source_activity_independent_receipt.json",
+      "sha256": "9dd7bd76a53348dec1bc008829195688e83b4c636a2fc4437544118e171f58bf",
+      "bytes": 3846
+    },
+    {
+      "path": "checks/review_covariant_source_activity_post_exposure_plan.md",
+      "sha256": "955c5cc172e1a7168f794efbc67d68daec0b7944922b4ca1a1c5b9883d875cdc",
+      "bytes": 2123
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_baseline.py",
+      "sha256": "1a9cd36a7daece9e2192b812cbc3318a211304f0bb14eba86bbf75c814ff4205",
+      "bytes": 6680
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_baseline.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_baseline.stdout.txt",
+      "sha256": "0a1a0c633dd385dfb1897d53b43605ed8ce4936b155fda82ecf518a6d0b18dcf",
+      "bytes": 1292
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_haar.py",
+      "sha256": "fb08876cf03c945dc3477bd233d9fda826fe00eb2d4b004a963ae9eb04d71fc0",
+      "bytes": 6672
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_haar.stderr.txt",
+      "sha256": "4a51ba82e3a0795fdacc0d6e78d31f210610e67e37b711c8a78b65bf3e2c8730",
+      "bytes": 412
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_haar.stdout.txt",
+      "sha256": "450307f76094c687ffb0917d250b4b3826936d8b7ed82bdf34ad5d9a26253599",
+      "bytes": 1292
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_normalizer.py",
+      "sha256": "252b4cc571551fa18d7f1c97dd6ceb1c7a3ba10c51fe35deb602c120f6cb5595",
+      "bytes": 6656
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_normalizer.stderr.txt",
+      "sha256": "c852bc2a4bfc6d9d739134b03bef500f30ad0dd6625cbcd6bdeb70b96c05b506",
+      "bytes": 418
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_normalizer.stdout.txt",
+      "sha256": "4dab2389e6f7f605de550773ee087e87527b3a23cfe6472b7afd4860d802fbc9",
+      "bytes": 1292
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_source_vacuum.py",
+      "sha256": "52b059094f06475512f21b3ad058e176e0455290db5523843c7f4e1c76d124e0",
+      "bytes": 6678
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_source_vacuum.stderr.txt",
+      "sha256": "1d161fa42230b7eaffa862dc268a61d97b9d3ad2d6f45533c65feecf2ede69f4",
+      "bytes": 725
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_actual_no_source_vacuum.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_baseline.py",
+      "sha256": "943b97af7d8b08392631daf4d96ba322832e2aa43c5ea0eebb745efbd8b734ac",
+      "bytes": 4718
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_baseline.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_baseline.stdout.txt",
+      "sha256": "3fe701773940cec9b29f73347a8ae24646d8c42d6f82f6b563933d92a48b1bfc",
+      "bytes": 1864
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_wrong_order.py",
+      "sha256": "a210a97cc125d79ea219e38b146fd576c8fcaa7d76a3dd853b214e74d5937425",
+      "bytes": 4718
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_wrong_order.stderr.txt",
+      "sha256": "86e1802a532017ac23f01ce3115c7d6e8146e459a99057d1157c35f429169d7e",
+      "bytes": 676
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_wrong_order.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_wrong_sign.py",
+      "sha256": "482f9cae5f52f3a80a50dc5e6c08606a2d72c4fb39ecb0c108f6c1c8a3024a96",
+      "bytes": 4717
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_wrong_sign.stderr.txt",
+      "sha256": "0ce501f6053db33ad4737d35f09941306d35867306a881bcab8c116901a23857",
+      "bytes": 673
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probe_atoms_wrong_sign.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probes.py",
+      "sha256": "b6d5b13e53ea62fb11a9a4034ef06c7c0e0daf1169b32ff23f8aa8e48289ad64",
+      "bytes": 5908
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probes_01.json",
+      "sha256": "ee3a2e64101af3996b875919e8915df042a5bfdb66e02599545e4daaa1987429",
+      "bytes": 15870
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probes_driver_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_probes_driver_01.stdout.txt",
+      "sha256": "f2642afad0cf7bc93f49e1009d00da895d7e9d5687fd40f4bb445d89ba52c0e1",
+      "bytes": 76
+    },
+    {
+      "path": "checks/review_covariant_source_activity_read_manifest.json",
+      "sha256": "3b1e5e7805129a0d4b5315d314e0276e47af5ecd271ccc5d18e3f4292278fa93",
+      "bytes": 20483
+    },
+    {
+      "path": "checks/review_covariant_source_activity_validation.json",
+      "sha256": "c42b444bfddbc4d89fc054f330eb07670071475d17abb25f0897ca134044d15f",
+      "bytes": 1742
+    }
+  ]
+}

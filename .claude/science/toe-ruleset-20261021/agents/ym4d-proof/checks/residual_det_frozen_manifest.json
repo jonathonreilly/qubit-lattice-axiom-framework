@@ -1,0 +1,53 @@
+{
+  "science_baseline": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "methodology_revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+  "freeze_utc": "2026-10-29T12:33:32.418370+00:00",
+  "coverage": "RESIDUAL_DETERMINANT_ASTRA sections 1-4 plus checks 01 and 02; actual lattice/alias identification and residual bound remain open",
+  "files": [
+    {
+      "path": "RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "bytes": 27582
+    },
+    {
+      "path": "checks/residual_det_01.py",
+      "sha256": "71cf096c4ca6544867e353de6691a02a35c2505f1650fb013028ca7e3cc03216",
+      "bytes": 6881
+    },
+    {
+      "path": "checks/residual_det_01_criteria.md",
+      "sha256": "510e36c106f83da6e7f8de042d0f55bb3fef050e35a95ad11efdb64a24e5b994",
+      "bytes": 2471
+    },
+    {
+      "path": "checks/residual_det_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/residual_det_01_out.txt",
+      "sha256": "4af6420348c3ecc0e58cb4d841ebe1095a50f8593cd4ec6508330bff283c0457",
+      "bytes": 1614
+    },
+    {
+      "path": "checks/residual_det_02.py",
+      "sha256": "c40c579b6d0686051d7b13bb8108586675480d9ba7cdd500c9362ee5171b78ef",
+      "bytes": 3378
+    },
+    {
+      "path": "checks/residual_det_02_criteria.md",
+      "sha256": "eedfd7da720fa59a0d76e3d2b775a9c41931d59592ad885b47db63bfefc229d9",
+      "bytes": 1450
+    },
+    {
+      "path": "checks/residual_det_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/residual_det_02_out.txt",
+      "sha256": "44d47437576b0a9740cc429c3e699d315dd41c67d640479163d29d7359e32277",
+      "bytes": 967
+    }
+  ]
+}

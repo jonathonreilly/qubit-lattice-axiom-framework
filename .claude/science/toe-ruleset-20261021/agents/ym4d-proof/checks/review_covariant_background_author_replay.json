@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-10-29T20:24:27.418371+00:00",
+  "author_packet_all26_hashes_match": true,
+  "independent_freeze_sha256": "00090d20ca7255d805996514b97d1992230a50a294b29805678ab60984130aa8",
+  "reproduction_not_independent_implementation": true,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "results": [
+    {
+      "label": "main",
+      "argv": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check.py",
+        "--mode",
+        "all"
+      ],
+      "exit_code": 0,
+      "passed": 49,
+      "total": 49,
+      "elapsed_seconds": 4.319473457988352,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_author_main_01.stdout.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_author_main_01.stderr.txt",
+      "stdout_sha256": "4c4f195a00ac20609da078fa4e1822abba4e7521dd275fe431b75c6e0919ba14",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "label": "geometry_T2",
+      "argv": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry.py",
+        "--torus-side",
+        "2"
+      ],
+      "exit_code": 0,
+      "passed": 16,
+      "total": 16,
+      "elapsed_seconds": 1.686638333951123,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_author_geometry_T2_01.stdout.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_author_geometry_T2_01.stderr.txt",
+      "stdout_sha256": "70754f831b0f966de8d3500a4229df972468c986126a3d9a4fe93a7d03dd15fa",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "label": "geometry_T3",
+      "argv": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry.py",
+        "--torus-side",
+        "3"
+      ],
+      "exit_code": 0,
+      "passed": 16,
+      "total": 16,
+      "elapsed_seconds": 5.746493457991164,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_author_geometry_T3_01.stdout.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_author_geometry_T3_01.stderr.txt",
+      "stdout_sha256": "12ebe0a181f5cfcc31926aef0220dcf5d2a7de369c72cf4f46d6ba248b5c5389",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ]
+}

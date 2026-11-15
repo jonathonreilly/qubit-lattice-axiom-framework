@@ -1,0 +1,102 @@
+{
+  "scope": "Generic marked-lemma witness, not actual optical source dependence",
+  "parameter": "t(s)=(1+s)/64, |s|<=1/4",
+  "marked_row": "5/128",
+  "checks": [
+    {
+      "name": "weighted_marked_row",
+      "passed": true
+    },
+    {
+      "name": "strict_marked_hypothesis",
+      "passed": true
+    },
+    {
+      "name": "uniform_precision_floor",
+      "passed": true
+    },
+    {
+      "name": "unscaled_mark_would_fail",
+      "passed": true
+    },
+    {
+      "name": "first_chain_factor_1",
+      "passed": true
+    },
+    {
+      "name": "second_chain_factor_1",
+      "passed": true
+    },
+    {
+      "name": "first_omitted_chain_mutation_1",
+      "passed": true
+    },
+    {
+      "name": "second_omitted_chain_mutation_1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_constant_still_leaves_marks_1",
+      "passed": true
+    },
+    {
+      "name": "first_chain_factor_2",
+      "passed": true
+    },
+    {
+      "name": "second_chain_factor_2",
+      "passed": true
+    },
+    {
+      "name": "first_omitted_chain_mutation_2",
+      "passed": true
+    },
+    {
+      "name": "second_omitted_chain_mutation_2",
+      "passed": true
+    },
+    {
+      "name": "vacuum_constant_still_leaves_marks_2",
+      "passed": true
+    },
+    {
+      "name": "first_chain_factor_5",
+      "passed": true
+    },
+    {
+      "name": "second_chain_factor_5",
+      "passed": true
+    },
+    {
+      "name": "first_omitted_chain_mutation_5",
+      "passed": true
+    },
+    {
+      "name": "second_omitted_chain_mutation_5",
+      "passed": true
+    },
+    {
+      "name": "vacuum_constant_still_leaves_marks_5",
+      "passed": true
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "values": [
+    {
+      "d": 1,
+      "first": "-1/4095",
+      "second": "-4097/16769025"
+    },
+    {
+      "d": 2,
+      "first": "-2/4095",
+      "second": "-8194/16769025"
+    },
+    {
+      "d": 5,
+      "first": "-1/819",
+      "second": "-4097/3353805"
+    }
+  ]
+}

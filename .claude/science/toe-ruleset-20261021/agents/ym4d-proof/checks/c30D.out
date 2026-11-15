@@ -1,0 +1,9 @@
+D d=2 T=5 k=1 source level 0: sup|r^c_(k-1)|/sup|G^c| = 0.0536; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(0.0536)]  ne 4.8e-14
+D d=2 T=5 k=2 source level 0: sup|r^c_(k-1)|/sup|G^c| = 0.0036; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(0.0109), np.float64(0.0036)]  ne 1.8e-13
+D d=2 T=5 k=2 source level 1: sup|r^c_(k-1)|/sup|G^c| = 0.1060; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(1.9225), np.float64(0.106)]  ne 1.4e-12
+D d=2 T=5 k=3 source level 0: sup|r^c_(k-1)|/sup|G^c| = 0.0001; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(0.0013), np.float64(0.0004), np.float64(0.0001)]  ne 4.8e-13
+D d=2 T=5 k=3 source level 2: sup|r^c_(k-1)|/sup|G^c| = 0.1027; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(5.7227), np.float64(1.9076), np.float64(0.1027)]  ne 2.5e-11
+D d=4 T=2 k=1 source level 0: sup|r^c_(k-1)|/sup|G^c| = 0.0258; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(0.0258)]  ne 5.0e-14
+D d=4 T=2 k=2 source level 0: sup|r^c_(k-1)|/sup|G^c| = 0.0020; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(0.0007), np.float64(0.002)]  ne 1.5e-13
+D d=4 T=2 k=2 source level 1: sup|r^c_(k-1)|/sup|G^c| = 0.0608; L^(k-1-i) sup|r^c_i|/sup|G^c| (i=0..k-1) = [np.float64(4.6445), np.float64(0.0608)]  ne 1.1e-12
+c30 D: done (informational); time 2 s, peak RSS 0.48 GB

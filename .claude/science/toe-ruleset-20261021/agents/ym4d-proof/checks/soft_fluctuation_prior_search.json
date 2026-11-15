@@ -1,0 +1,33 @@
+[
+  {
+    "argv": [
+      "git",
+      "grep",
+      "-n",
+      "-i",
+      "-E",
+      "root-pinned.*covariance|conditional fluctuation|S4.*soft|coarse.*1/38",
+      "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "--",
+      "docs/*.md"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "rg",
+      "-n",
+      "-i",
+      "tree.{0,50}(covariance|gap|precision)|(covariance|precision).{0,40}tree|finite.u.{0,40}(spread|hessian)",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md"
+    ],
+    "returncode": 0,
+    "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md:257:positive once u_0 \u2265 2NC_\ud835\udca9/\u03bb, \u03bb the tree-level gap \u2014 a weak-coupling condition, not a new smallness of the chart.**\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,27 @@
+Execution status: NOT RUN — required nice guard unavailable.
+
+Observed command:
+  nice -n 10 /usr/bin/true
+Observed stderr:
+  nice: setpriority: Operation not permitted
+
+Native memory diagnostic during preflight:
+  The system has 8589934592 (524288 pages with a page size of 16384).
+  System-wide memory free percentage: 40%
+Earlier uptime load averages: 2.12 2.32 2.38.
+These diagnostics are not a later execution receipt.
+
+No arithmetic check was executed, and no PASS count exists. Do not retry
+without nice or relax any guard. Prospective command from the working folder,
+only in an environment where all required guards are available:
+
+  env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+      VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 \
+      PYTHONDONTWRITEBYTECODE=1 nice -n 10 python3 -B checks/mixgff_exact.py
+
+The checker refuses execution unless it observes nice >=10, all thread
+variables equal to 1, load1 <8, native memory free >=30%, an exclusive lock,
+and a successfully installed 800 MiB address-space limit. It rechecks
+resource use between check groups and at completion. It preserves existing
+run/result files rather than silently overwriting them. Its source has not
+been validated by execution in this sandbox.

@@ -1,0 +1,80 @@
+{
+  "phase": "initial independent analytic review before author packaging or predecessor reports",
+  "utc": "2026-10-30T00:21:09.535377+00:00",
+  "head": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "observed_origin_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "6201ec6ec1846e205dd1a3d7dd1df1a3bebb9c6bead14874aff40482d2bb0335",
+      "bytes": 31357,
+      "coverage": "complete, 1-580; read only after coordinator freeze"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "coverage": "complete, 1-568"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "coverage": "complete, 1-722"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "bytes": 32365,
+      "coverage": "complete, 1-617"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "coverage": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md",
+      "sha256": "fb2fa7e0033b1b51c930336b814f6e60622f0bc5f2827a535e47c0f5db0fcf73",
+      "bytes": 4222,
+      "coverage": "complete; task routing, not theorem evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "bytes": 94345,
+      "coverage": "partial: 312-377, 510-570, 656-684; fixed-real-t single-normalizer proof and errata; search hits are routing only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes": 48847,
+      "coverage": "partial: 90-170, 204-336, 424-464, 530-615, 660-695; exact conditional/history/read-domain input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "bytes": 35303,
+      "coverage": "partial: 1-105, 404-548; conclusion/domain and application only, not fresh review of forest proof"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "06ad2b5b52bfa66f7784a1fb97936337c59f5164318f89af9a2a065226671e5f",
+      "bytes": 34089,
+      "coverage": "partial: 1-120, 336-480, 550-588; target and precise sup-norm consumer mismatch"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "bytes": 27582,
+      "coverage": "incidental partial read: 1-260 after ambiguous RD filename search; not consumed by this review"
+    }
+  ],
+  "excluded_until_initial_freeze": [
+    "checks/graded_complement_*",
+    "predecessor review reports",
+    "predecessor author checkers and receipts"
+  ],
+  "numeric_experiments": 0
+}

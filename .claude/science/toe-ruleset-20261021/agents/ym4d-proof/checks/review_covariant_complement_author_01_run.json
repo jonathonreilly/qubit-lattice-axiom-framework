@@ -1,0 +1,10 @@
+{
+  "exit_code": 1,
+  "elapsed_seconds": 1.447711250046268,
+  "peak_rss_kib": 70272,
+  "termination_reason": null,
+  "program_sha256": "3e45372b3c72803270f3c988ba9c644fc126bee84019607242da27057fd37e66",
+  "gate": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_01_gate.json",
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_01.stdout.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_01.stderr.txt"
+}

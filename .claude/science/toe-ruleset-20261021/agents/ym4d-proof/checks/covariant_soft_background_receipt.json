@@ -1,0 +1,281 @@
+{
+  "format": "author-freeze-receipt-v1",
+  "created_utc": "2026-10-29T20:06:52.385949+00:00",
+  "owner": "covariant_soft_background author; requested Astra/max",
+  "workdir": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "source": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+  "claim_status": "bounded-support; independent review pending",
+  "predeclared_initial_criteria_sha256": "c9387686d2121fbecde53114f6d5a3568528461fbc48130bccfa84035714b75c",
+  "input_manifest": "checks/covariant_soft_background_inputs.json",
+  "primary_manifest": "checks/covariant_soft_background_primary_sources.json",
+  "theorem_scope": {
+    "model": "d4 SU(N) Wilson / normalized actual paired S4-prime arithmetic mean",
+    "N": "N>=2",
+    "L": "fixed odd L>=3",
+    "T": "T>=2",
+    "u": "u>=1; fixed real kernel coupling kappa u",
+    "coarse_domain": "max coarse plaquette defect<=delta_star of CB12; no individual-link or holonomy-smallness assumption",
+    "chart": "local traceless su(N) HS ball relative to U0(V), with r<min(injectivity radius,pi/sqrt(N))"
+  },
+  "closed_author_obligations": [
+    "exact U0 contour/fine-plaquette dictionary and L\u00b2 multiplicity",
+    "exact flatness of lifted one/two-block filling bricks, including T2 far-seam distinction",
+    "arbitrary-V covariant principal gap with all free/root/holonomy coordinates retained",
+    "exact finite-u normalizer/Haar Hessian plus Wilson curvature defect and nonzero gradient",
+    "uniform actual smooth-density critical-point contraction and explicit source branch",
+    "tree-versus-finite-u shift bound and first background-derivative localization",
+    "full colour-coupled Gaussian covariance/normalization and potential/curvature map dictionary",
+    "entire strong-good/mismatch event in relative chart; exact original complement retained"
+  ],
+  "not_established": [
+    "critical point belongs to strong good event G",
+    "fixed-V nonemptiness or concentration of G",
+    "interacting conditional covariance decay",
+    "connected source-labelled activity/logarithm bound",
+    "complex nonvanishing of the integrated sea",
+    "arbitrary punctured/frozen-collar domains",
+    "control of nonempty correlated histories at fixedV",
+    "multilevel RG construction",
+    "full continuum YM existence",
+    "physical continuum mass gap"
+  ],
+  "material_scope_boundaries": [
+    "smooth uncut coordinate-density minimizer, not global Haar-density minimum",
+    "actual finite-u point retained, not replaced by tree phase",
+    "all-fine-good plus root-straight mismatch is stronger than original interior-only cuts",
+    "Sea7/11 prices used only in their original integrated-coarse scope",
+    "source vacuum u rho Delta_bg\u00b2 and linear sqrt(u) rho Delta_bg p costs remain",
+    "canonical Gaussian cutoff stays in coordinates to exclude repeated exponential preimages",
+    "all determinant colour/mode counts retained"
+  ],
+  "executions": [
+    {
+      "argv": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check.py",
+        "--mode",
+        "all"
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.stderr",
+      "exit_code": 0,
+      "passed": 49,
+      "total": 49,
+      "elapsed_seconds": 3.8536304580047727,
+      "timeout_seconds": 600,
+      "kind": "raw author diagnostic; not canonical runner-cache envelope"
+    },
+    {
+      "argv": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry.py",
+        "--torus-side",
+        "2"
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.stderr",
+      "exit_code": 0,
+      "passed": 16,
+      "total": 16,
+      "elapsed_seconds": 1.389626667019911,
+      "timeout_seconds": 180,
+      "kind": "raw author diagnostic; not canonical runner-cache envelope"
+    },
+    {
+      "argv": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry.py",
+        "--torus-side",
+        "3"
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.stderr",
+      "exit_code": 0,
+      "passed": 16,
+      "total": 16,
+      "elapsed_seconds": 5.349543125019409,
+      "timeout_seconds": 180,
+      "kind": "raw author diagnostic; not canonical runner-cache envelope"
+    }
+  ],
+  "environment": {
+    "python": "3.12.8",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0"
+  },
+  "final_predicate_instances": 81,
+  "earlier_overlapping_runs_not_added": true,
+  "preserved_warning": {
+    "source": "checks/covariant_soft_background_check_attempt02.py",
+    "stdout": "checks/covariant_soft_background_all_02.json",
+    "stderr": "checks/covariant_soft_background_all_02.stderr",
+    "reported_predicates": "46/46",
+    "issue": "NumPy LU slogdet warnings although emitted determinants were finite",
+    "repair": "Cholesky positive log determinant plus eigenvalue sum cross-check; nonfinite JSON forbidden; no scientific threshold changed"
+  },
+  "version_bindings": [
+    {
+      "source": "checks/covariant_soft_background_check_attempt01.py",
+      "output": "checks/covariant_soft_background_derivatives_01.json"
+    },
+    {
+      "source": "checks/covariant_soft_background_check_attempt02.py",
+      "output": "checks/covariant_soft_background_all_02.json"
+    },
+    {
+      "source": "checks/covariant_soft_background_check_attempt03.py",
+      "output": "checks/covariant_soft_background_all_03.json"
+    },
+    {
+      "source": "checks/covariant_soft_background_geometry_attempt01.py",
+      "output": "checks/covariant_soft_background_geometry_01.json"
+    }
+  ],
+  "evidence_limits": [
+    "floating derivatives/eigenvalues are diagnostics, not interval proofs",
+    "period-one critical-sector tests lift to all T by exact translation symmetry; inhomogeneous all-volume claims rely on written proof",
+    "sampled curvatures are not claimed to meet conservative analytic delta_star",
+    "primary papers are construction comparisons; single-normalizer contract is explicitly named actual-model input"
+  ],
+  "vocabulary_lint": "0 files with violations",
+  "root_owned": [
+    "independent review",
+    "canonical runner-cache",
+    "git/PR10114",
+    "shared summaries",
+    "audit/retention"
+  ],
+  "author_git_mutations": false,
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_02.json",
+      "sha256": "ec6604fba6498a50e7b4023e6a5d8df8ea08168f8886296d98cee76616a8bb6a",
+      "bytes": 12748
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_02.stderr",
+      "sha256": "e822d5fb0f9eb7aca6933a8b9e3ec27f9827e544f4ca0dbeb12af3229a00ea2b",
+      "bytes": 674
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_03.json",
+      "sha256": "67e6b25cc7d4e8ceec7d8178a875c021e040b4a190a256732ae46297f785c941",
+      "bytes": 13059
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_03.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.json",
+      "sha256": "7b6d6b1e318b1a872d43b9b7f64e753555681509d647e2139fbf5cbf57719878",
+      "bytes": 13169
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check.py",
+      "sha256": "f0b6a023ec4c8c2e70ae7d2b1176fc1fdf050dc2da7c6580895fa27b7c5693e6",
+      "bytes": 15389
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt01.py",
+      "sha256": "8df74dea4cdea8e80a82a0c921e64364f2ca3f786042fb48e3943262720fd23d",
+      "bytes": 13835
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt02.py",
+      "sha256": "8bd147aa7dc4683c8d7bfb66ef3b3c77b68702fcbaae86c930deceaa2a0578be",
+      "bytes": 14786
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt03.py",
+      "sha256": "30ab873565eb6ea37df471046e78a62c75596824d6078f2c28abe176115b33db",
+      "bytes": 15311
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_criteria.md",
+      "sha256": "e48a12a79948ffe4505cf2d87502a8bbd4d31915ee520689a8a7e5d2e32035d4",
+      "bytes": 4582
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_criteria_initial.md",
+      "sha256": "c9387686d2121fbecde53114f6d5a3568528461fbc48130bccfa84035714b75c",
+      "bytes": 3765
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_derivatives_01.json",
+      "sha256": "1c73f89e48a80072b7f6ca42df5a2d4f3aaba6773228a3acdfd8e758c0396dbd",
+      "bytes": 3346
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_derivatives_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry.py",
+      "sha256": "86206301935db35ca6c8d912479594a323fce04f412dd22d499ea4a5dcc172af",
+      "bytes": 8719
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_01.json",
+      "sha256": "eac510cb3679e43d669404d625f499cd3cb3381c508b94ea8ddc0177928a7724",
+      "bytes": 2828
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.json",
+      "sha256": "24cca5e22dd3d233e04cf7520668e50a81ed1ffa9f9eafd07a7bd416c5ebbd1e",
+      "bytes": 2825
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.json",
+      "sha256": "17f7bbb7016f94afd6c5d1153d7876a16d70484aecc42016e4b8024f990ac626",
+      "bytes": 2827
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_attempt01.py",
+      "sha256": "6349cf6cd38e48b52ab7eedd8706c3b8505ca950e5778917a8aac8070fb42d9e",
+      "bytes": 8253
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_inputs.json",
+      "sha256": "9fefc54866ffcc84380ccb50d0fbc5183a6c38258cda401588fd509c4621821c",
+      "bytes": 9881
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_primary_sources.json",
+      "sha256": "9916336671fc82d55723c5b464c74b2660abbd89c150b723ca31646042bf00fa",
+      "bytes": 2257
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_vocab_lint.txt",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81
+    }
+  ]
+}

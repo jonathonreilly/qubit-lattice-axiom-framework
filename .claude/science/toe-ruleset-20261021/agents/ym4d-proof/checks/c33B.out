@@ -1,0 +1,11 @@
+B: d=4 T=7; candidate sets 36657; tuples kept 3512; group order 384
+  B3: x in fat({x-e1}) = True; x in fat({x+e1}) = False
+  seed 0: tuple max rel change 8.58e-16; fattened max rel change 3.94e+00
+  seed 1: tuple max rel change 9.87e-16; fattened max rel change 6.84e-01
+  seed 2: tuple max rel change 1.22e-15; fattened max rel change 1.61e+00
+  const: |F^tup - F^fat| rel 2.74e-14; F^tup = [   6.04964746 -633.85169694]
+B1: PASS
+B2: PASS
+B3: PASS
+B4: PASS
+Part B: PASS

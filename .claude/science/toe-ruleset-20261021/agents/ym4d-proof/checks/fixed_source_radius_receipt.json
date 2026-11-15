@@ -1,0 +1,99 @@
+{
+  "frozen_utc": "2026-10-29T23:09:13.721922+00:00",
+  "unit": "FIXED_SOURCE_RADIUS_ASTRA",
+  "status": "FROZEN_PENDING_FRESH_INDEPENDENT_REVIEW",
+  "author": "/root/soft_fluctuation_covariance; requested Astra/max, no backend attestation",
+  "claims": [
+    "FR5-FR20: locally rebuilt complex Gaussian/product-end-contour forest estimate with bounded holomorphic decorations and full original-reader support norms",
+    "FR21-FR25: actual finite-u selected Haar sector at fixed positive relative rho, growing p with sigma*p^3 small, and stated shrinking coarse-curvature window",
+    "FR26: unchanged exact two-piece complement; no estimate or zero-free claim for it"
+  ],
+  "scientific_inputs": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_read_manifest.json",
+    "sha256": "02a9df12fc51fb9aa29fba2909b55f1646d1360752cd0ab95b44ebdba3c68985",
+    "count": 10
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 33082,
+      "sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_01.py",
+      "bytes": 8382,
+      "sha256": "1092ace3f41d7437816858bf77272e5dc743c4d8307a799f9c282b727635a7d1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_01.stdout.json",
+      "bytes": 18415,
+      "sha256": "f7a0d059f94f1b3631252e11827122d6f0c34d1f1eafb20dd35042c6dd4378be"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_attempts.json",
+      "bytes": 2224,
+      "sha256": "7aa571a12a157b7e1b01b4ee7544868102a668f8fe21b043467a7aa55c701b74"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_01.py",
+      "bytes": 3844,
+      "sha256": "2e191a0f9a514e7bd9398550f0ac0f7e77efd91deda6dec329578f4235ab11dc"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_01.stdout.json",
+      "bytes": 2122,
+      "sha256": "416a67be29c40d16a66db335537f5a7cef54b535ec2b95d2e266801b3cfd1ac6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_plan.md",
+      "bytes": 1579,
+      "sha256": "b3559783aa437119d8eb43ab12f03aeb286dd3f758596f2419adaf1a33a0eafe"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_numeric_plan.md",
+      "bytes": 3566,
+      "sha256": "0be5f51afcfac96ae6265a3af560af7e5a156d8edd3de355adbe8bcc453bf7e0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_read_manifest.json",
+      "bytes": 8022,
+      "sha256": "02a9df12fc51fb9aa29fba2909b55f1646d1360752cd0ab95b44ebdba3c68985"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_validation.json",
+      "bytes": 1706,
+      "sha256": "43f30011bdfd151525d9ed337d872557f04e7985792f8f7b75ff988307e5b4a2"
+    }
+  ],
+  "evidence": {
+    "runs": 2,
+    "predicates_passed": 54,
+    "predicates_total": 54,
+    "wrong_formula_or_omission_controls": 17,
+    "scientific_failures": [],
+    "resource_failures": [],
+    "all_numerical_registrations_precede_their_scripts": true,
+    "second_registration_is_explicitly_post_first_run": true,
+    "uniform_theorem_certified_by_numerics": false
+  },
+  "preserved_non_scientific_failure": "One source-locator typo named a nonexistent _actual_01.py; corrected by narrow file listing. Recorded in attempts ledger.",
+  "authority_limits": [
+    "No Git/source-predecessor/shared/audit edits",
+    "Not an independent review of this unit",
+    "Not a whole-PR or retained-grade verdict",
+    "No hard-history completion or normalized complement estimate",
+    "No broader coarse-field or arbitrary-hole coverage",
+    "No multilevel interacting RG claim",
+    "Continuum existence and physical mass gap remain OPEN"
+  ]
+}

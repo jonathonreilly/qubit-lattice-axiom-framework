@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-29T15:14:51.365884+00:00",
+  "fixed_source_sha256": "f1ae35944486ac5b141fb7627ebdb629608af7b5ad095e268b45af86dcfbddbf",
+  "result": "Both formerly surviving implementation mutations now fail for the intended coordinate-kernel comparison; same reviewer context.",
+  "rows": [
+    {
+      "name": "power",
+      "exit_code": 1,
+      "source_sha256": "af295cead42e7ddca2432eb489e357f022209e5342425c5676d1d66ba1b39583",
+      "stdout_sha256": "e6f1af826697deed8b4a9137adb7888c3ce51b973c3a555e3ffff262defbb99f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_rows": [
+        {
+          "detail": {
+            "beta": 0.7,
+            "coordinate": 0.0008151597298852576,
+            "implementation": 0.15650952701409113,
+            "relative_error": 190.9986001223607
+          },
+          "kind": "check",
+          "name": "cycle_coordinate_kernel_ratio",
+          "passed": false
+        },
+        {
+          "detail": {
+            "beta": 0.7,
+            "coordinate_in_implementation_units": 1.0626217172642047,
+            "implementation": 1.0881255883581233,
+            "relative_error": 0.024000893901905407
+          },
+          "kind": "check",
+          "name": "cycle_coordinate_kernel_top",
+          "passed": false
+        }
+      ]
+    },
+    {
+      "name": "dimension",
+      "exit_code": 1,
+      "source_sha256": "52068ca61f0219ce402a4a1f32e3ec803efcaf2cb0562f9803f71d2584e142e4",
+      "stdout_sha256": "9944b40b3807f0f3ccd5977b602b2330b5f81a7be855637f75ae923acc6c870f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failed_rows": [
+        {
+          "detail": {
+            "beta": 0.7,
+            "coordinate": 0.0008151597298852576,
+            "implementation": 0.013003377680017155,
+            "relative_error": 14.951938256134806
+          },
+          "kind": "check",
+          "name": "cycle_coordinate_kernel_ratio",
+          "passed": false
+        },
+        {
+          "detail": {
+            "beta": 0.7,
+            "coordinate_in_implementation_units": 1.0626217172642047,
+            "implementation": 1.0642684838582135,
+            "relative_error": 0.0015497204388486008
+          },
+          "kind": "check",
+          "name": "cycle_coordinate_kernel_top",
+          "passed": false
+        }
+      ]
+    }
+  ]
+}

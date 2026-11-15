@@ -1,0 +1,330 @@
+{
+  "scope": "finite author diagnostics; all-volume theorem requires the written local proof",
+  "mode": "spectral",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "elapsed_seconds": 0.4792985000531189,
+  "passed": 38,
+  "total": 39,
+  "all_pass": false,
+  "checks": [
+    {
+      "name": "bare_closed_slice_null_modes_zero",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "spread_semidefinite_zero",
+      "pass": true,
+      "detail": -1.2781004865952736e-16
+    },
+    {
+      "name": "local_coercivity_zero_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.003562049331089963,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_zero_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.02543542042845925,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_zero_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.0551783743706049,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "harmonic_full_normalization_0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_full_normalization_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_full_normalization_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_full_normalization_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bare_closed_slice_null_modes_generic",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "spread_semidefinite_generic",
+      "pass": true,
+      "detail": -1.6606401081885595e-17
+    },
+    {
+      "name": "local_coercivity_generic_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.0036478485086956945,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_generic_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.028450795457590508,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "unfixed_pinned_gauge_nullity",
+      "pass": true,
+      "detail": 80
+    },
+    {
+      "name": "local_coercivity_generic_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.052521289147539924,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "root_gradient_long_wave_charge_generic",
+      "pass": true,
+      "detail": 0.03703703703703704
+    },
+    {
+      "name": "root_gradient_zero_curl_generic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bare_closed_slice_null_modes_long_1e-3",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "spread_semidefinite_long_1e-3",
+      "pass": true,
+      "detail": -1.2289691023389025e-17
+    },
+    {
+      "name": "local_coercivity_long_1e-3_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.0035620493451035936,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-3_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.02543542120804855,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-3_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.05517837775618452,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "root_gradient_long_wave_charge_long_1e-3",
+      "pass": true,
+      "detail": 0.03703703703703705
+    },
+    {
+      "name": "root_gradient_zero_curl_long_1e-3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bare_closed_slice_null_modes_long_1e-7",
+      "pass": false,
+      "detail": 4
+    },
+    {
+      "name": "spread_semidefinite_long_1e-7",
+      "pass": true,
+      "detail": -9.188592470234128e-17
+    },
+    {
+      "name": "local_coercivity_long_1e-7_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.0035620493310870266,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-7_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.02543542042845705,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-7_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.055178374370607165,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "root_gradient_long_wave_charge_long_1e-7",
+      "pass": true,
+      "detail": 0.03703703703703705
+    },
+    {
+      "name": "root_gradient_zero_curl_long_1e-7",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "details": {
+    "spectra": [
+      {
+        "momentum": "zero",
+        "kappa": 0.1,
+        "min": 0.003562049331089963,
+        "max": 12.000000000000021
+      },
+      {
+        "momentum": "zero",
+        "kappa": 1.0,
+        "min": 0.02543542042845925,
+        "max": 12.000000000000012
+      },
+      {
+        "momentum": "zero",
+        "kappa": 10.0,
+        "min": 0.0551783743706049,
+        "max": 12.00000000000001
+      },
+      {
+        "momentum": "generic",
+        "kappa": 0.1,
+        "min": 0.0036478485086956945,
+        "max": 12.734184149851673
+      },
+      {
+        "momentum": "generic",
+        "kappa": 1.0,
+        "min": 0.028450795457590508,
+        "max": 12.734184409643875
+      },
+      {
+        "momentum": "generic",
+        "kappa": 10.0,
+        "min": 0.052521289147539924,
+        "max": 12.73418725242243
+      },
+      {
+        "momentum": "long_1e-3",
+        "kappa": 0.1,
+        "min": 0.0035620493451035936,
+        "max": 12.000577294702964
+      },
+      {
+        "momentum": "long_1e-3",
+        "kappa": 1.0,
+        "min": 0.02543542120804855,
+        "max": 12.000577294702955
+      },
+      {
+        "momentum": "long_1e-3",
+        "kappa": 10.0,
+        "min": 0.05517837775618452,
+        "max": 12.000577294702966
+      },
+      {
+        "momentum": "long_1e-7",
+        "kappa": 0.1,
+        "min": 0.0035620493310870266,
+        "max": 12.000000057735043
+      },
+      {
+        "momentum": "long_1e-7",
+        "kappa": 1.0,
+        "min": 0.02543542042845705,
+        "max": 12.000000057735036
+      },
+      {
+        "momentum": "long_1e-7",
+        "kappa": 10.0,
+        "min": 0.055178374370607165,
+        "max": 12.00000005773504
+      }
+    ],
+    "analytic_constants": {
+      "L": 3,
+      "C_F": 220449600,
+      "C_Q": 54,
+      "a_kappa1": 4.536184234400969e-09
+    }
+  },
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

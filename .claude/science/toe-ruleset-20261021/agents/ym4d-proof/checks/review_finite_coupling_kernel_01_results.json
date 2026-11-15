@@ -1,0 +1,156 @@
+{
+  "precision_decimal_digits": 60,
+  "checks": [
+    {
+      "name": "resource_child_settings",
+      "pass": true,
+      "nice": 10,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      }
+    },
+    {
+      "name": "exact_Weyl_moments",
+      "pass": true,
+      "norm": "324",
+      "fourth": "360",
+      "third_squared": "1080",
+      "haar_correction": "-6",
+      "quartic_correction": "5",
+      "cubic_lambda_squared_correction": "-5/3"
+    },
+    {
+      "name": "SU3_cutoff_32",
+      "pass": true,
+      "relative": "0.0"
+    },
+    {
+      "name": "SU3_first_correction_32",
+      "pass": true,
+      "tE": "-1.07447915073304416836546152258270238205232121451966864578757",
+      "discrepancy": "0.0744791507330441683654615225827023820523212145196686457875699"
+    },
+    {
+      "name": "control_wrong_dimension_32",
+      "pass": true,
+      "wrong_discrepancy": "277.33335137471116793525831010585332961225237495862177029406"
+    },
+    {
+      "name": "SU3_cutoff_64",
+      "pass": true,
+      "relative": "1.55575381946528542678601601344503106014756304218029178327528e-61"
+    },
+    {
+      "name": "SU3_first_correction_64",
+      "pass": true,
+      "tE": "-1.03544665842266578899319787601494609536962147147938834494835",
+      "discrepancy": "0.035446658422665788993197876014946095369621471479388344948349"
+    },
+    {
+      "name": "control_wrong_dimension_64",
+      "pass": true,
+      "wrong_discrepancy": "665.456739995970162829536034475864451447849750457324432300801"
+    },
+    {
+      "name": "SU3_cutoff_128",
+      "pass": true,
+      "relative": "7.06028086155193551594121218695919146446739361743254951529028e-36"
+    },
+    {
+      "name": "SU3_first_correction_128",
+      "pass": true,
+      "tE": "-1.01731397254092163078194285679399880962219763260441523292119",
+      "discrepancy": "0.0173139725409216307819428567939988096221976326044152329211864"
+    },
+    {
+      "name": "control_wrong_dimension_128",
+      "pass": true,
+      "wrong_discrepancy": "1552.66699842681841472538189492310951129874249859957618446324"
+    },
+    {
+      "name": "SU3_first_correction_approaches",
+      "pass": true,
+      "discrepancies": [
+        "0.0744791507330441683654615225827023820523212145196686457875699",
+        "0.035446658422665788993197876014946095369621471479388344948349",
+        "0.0173139725409216307819428567939988096221976326044152329211864"
+      ]
+    },
+    {
+      "name": "SU3_scalar_constraint_derivative_resolution",
+      "pass": true,
+      "derivatives": [
+        "-0.0262435738567071259988311286382701662656330971649238855670933",
+        "-0.0262435738567308056575755546369119103911490841114986131261825"
+      ],
+      "difference": "0.0000000000000236796587444259986417441255159869465747275590891954132903579"
+    },
+    {
+      "name": "SU3_scalar_constraint_derivative",
+      "pass": true,
+      "t_dlambda2_E": "-3.35917745366154312416967099352472453006708276627182248015136",
+      "discrepancy": "0.0258441203282097908363376601913911967337494329384891468180285"
+    },
+    {
+      "name": "control_erase_scalar_constraint",
+      "pass": true,
+      "mutated_t_dlambda2_E": "0",
+      "discrepancy": "3.33333333333333333333333333333333333333333333333333333333333"
+    },
+    {
+      "name": "S4prime_axis_0",
+      "pass": true,
+      "path_count": 1944,
+      "max_length": 11,
+      "reader_links": 459,
+      "endpoints": true,
+      "lifted_brick": true
+    },
+    {
+      "name": "S4prime_axis_1",
+      "pass": true,
+      "path_count": 1944,
+      "max_length": 11,
+      "reader_links": 459,
+      "endpoints": true,
+      "lifted_brick": true
+    },
+    {
+      "name": "S4prime_axis_2",
+      "pass": true,
+      "path_count": 1944,
+      "max_length": 11,
+      "reader_links": 459,
+      "endpoints": true,
+      "lifted_brick": true
+    },
+    {
+      "name": "S4prime_axis_3",
+      "pass": true,
+      "path_count": 1944,
+      "max_length": 11,
+      "reader_links": 459,
+      "endpoints": true,
+      "lifted_brick": true
+    },
+    {
+      "name": "S4prime_all_reader_incidence",
+      "pass": true,
+      "max_readers": 8,
+      "distinct_fine_links": 5184
+    },
+    {
+      "name": "S4prime_wrapping_noncommuting_holonomy",
+      "pass": true,
+      "max_HS_error": 0.0
+    }
+  ],
+  "passed": 21,
+  "total": 21,
+  "elapsed_seconds": 0.23228200001176447,
+  "maxrss_native": 103514112,
+  "scope": "finite diagnostics only; no numerical certification of conservative t0"
+}

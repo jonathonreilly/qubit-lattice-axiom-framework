@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "role": "Author metadata receipt; not independent review, mathematical validation, or audit.",
+  "source_frozen_before_packaging": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+    "lines": 597,
+    "sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627"
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_read_manifest.json",
+    "lines": 127,
+    "sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e"
+  },
+  "metadata_checks": {
+    "source_identity_still_matches_announced_freeze": true,
+    "equation_definitions_exactly_RJ1_through_RJ26_once": true,
+    "utf8_decoding_succeeded": true,
+    "trailing_whitespace_lines": [],
+    "local_markdown_link_targets_missing": [],
+    "current_input_hashes_match_manifest": true,
+    "all_10_consumed_governing_path_hashes_match_pinned_manifest": true
+  },
+  "protected_predecessor_check": {
+    "prior_receipt": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "lines": 76,
+      "sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3"
+    },
+    "prior_protected_count": 20,
+    "mismatches": [],
+    "additional_frozen_sources_unchanged": {
+      "MARKED_COMPACT_CHART_ASTRA.md": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "WEIGHTED_RETURN_JETS_ASTRA.md": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "COMPACT_RETURN_GLUING_ASTRA.md": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "HOLOMORPHIC_COMPACT_RETURN_ASTRA.md": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "REGIONAL_CRITICAL_FIELD_ASTRA.md": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "BARE_CUT_WHITE_ASSEMBLY_ASTRA.md": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "REALRGA.md": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed"
+    }
+  },
+  "author_derivation_checks": [
+    "RJ2 uses covariance G of the score, adds B I-G, and contracts independent Hermite L2 norms; nu=0 stays exactly one.",
+    "RJ8 includes all determinant/inverse jets through normalized heat/translation operators; scalar leg factorials are preserved.",
+    "RJ15 uses simultaneous event energy, actual upper covariance and overlap multiplicity; it is not a surface or conditional-law estimate.",
+    "RJ17 differentiates the joint normalized marginal once; RJ18 derives the actual core derivative budgets; RJ21 requires complete patch collars and an explicit small input norm.",
+    "RJ23 retains the residual activated-size exponent; RJ24 groups marks on the same occurrence; RJ26 diagnoses only the specified absolute expansion."
+  ],
+  "independent_review_status": "Requested from coordinator on the frozen source; no reviewer verdict claimed.",
+  "physical_scope": "Full covariance/critical-mean reader closure, inherited R_h/Z_A, effective iteration, non-free continuum existence and positive physical mass gap remain OPEN.",
+  "operations": "Only the new source and the two matching check files were written. All checks here are metadata, not scientific numerical experiments."
+}

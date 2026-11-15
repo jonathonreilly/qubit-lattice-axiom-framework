@@ -1,0 +1,8 @@
+{
+  "original_source_sha256": "ce5d6cc00a174ef9fb03703329e0fd7fec7879c7d65594ae005f2f93bfd63d17",
+  "preserved_original": "review_covariant_background_density_01.py and matching stdout/stderr",
+  "first_results": "26/30 checks; 15/16 controls",
+  "failures": "Four step=1e-4 second differences exceeded 2e-5 tolerance by 1.5e-6 to 6.5e-6 while autodiff and independent transported Hessian agree to <2e-15. Vacuum fixture 2.7e-7 did not exceed chosen 1e-6 mutation threshold.",
+  "affected_changes": "Increase finite-difference steps from [.0002,.0001] to [.002,.001], retain same tolerance. Increase vacuum mutation fixture u to1024, retain same detection threshold and reuse actual source energy. Do not rerun successful optimizer/source checks.",
+  "tolerances_relaxed": false
+}

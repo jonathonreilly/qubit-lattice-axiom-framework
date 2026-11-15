@@ -1,0 +1,6 @@
+P1 (Lemma PC): random compact co-closed e = d^T F
+  case 0: cube side q = 3; max|d^T G - e|/max|e| = 3.5e-16; max|G| outside cube = 0.0e+00; sum|G|/(q sum|e|) = 0.3349
+  case 1: cube side q = 3; max|d^T G - e|/max|e| = 4.9e-16; max|G| outside cube = 0.0e+00; sum|G|/(q sum|e|) = 0.4532
+  case 2: cube side q = 5; max|d^T G - e|/max|e| = 6.3e-16; max|G| outside cube = 0.0e+00; sum|G|/(q sum|e|) = 0.2216
+  case 3: cube side q = 5; max|d^T G - e|/max|e| = 8.7e-16; max|G| outside cube = 0.0e+00; sum|G|/(q sum|e|) = 0.2449
+P1 PASS  (0.0 s, RSS 71.66 GB)

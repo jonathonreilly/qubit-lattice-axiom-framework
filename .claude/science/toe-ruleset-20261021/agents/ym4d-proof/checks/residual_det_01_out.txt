@@ -1,0 +1,27 @@
+PASS orthonormal moving-frame jets
+PASS direct permutation determinant is frame invariant
+PASS actual Schur product through second order
+PASS trace expansion versus permutation determinant: 106321/98568
+PASS designed control: wrong half-bubble rejected
+PASS five reduced trace groups exhaust J_red: 2459/2738
+PASS full six-determinant residual combination: 33234083/24149160
+PASS designed control: omitted coarse gauge factor rejected
+PASS designed control: replacing completed A by Wilson TT rejected
+PASS designed control: frozen transverse frame rejected
+PASS unnormalized gauge coordinates need Gram correction
+PASS designed control: missing Gram determinant rejected
+PASS fine gauge-row completion
+PASS mixed rows annihilate both gauge ranges
+PASS soft-distance transverse correction by two eliminations: -3*t**4/2 - 9*t**2/2 + 5
+PASS designed control: projected h coupling 1 is necessary
+PASS designed control: projected h coupling 2 is necessary
+PASS two simple poles are separately integrable
+PASS two simple poles vanish after residual substitution
+PASS designed control: quadratic amplitude alone is insufficient
+PASS designed control: total degree does not permit a fourth-order pole
+SCOPE per_element: rational matrix entries and polynomial coefficients only
+SCOPE per_site: no actual SU(N) lattice site instance claimed
+SCOPE per_mode: algebraic mode model only; no spectral estimate from sampling
+SCOPE per_block: complete finite Schur blocks and their moving-frame trace groups
+SCOPE lattice_wide: no infinite-lattice or depth-uniform theorem certified by this runner
+OVERALL: 21/21 predicates true

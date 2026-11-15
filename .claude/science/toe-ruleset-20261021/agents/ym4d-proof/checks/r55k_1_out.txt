@@ -1,0 +1,235 @@
+r55k_1_const.py  (REVIEW55_CONST)  PB=300 bits, JLOG=75, NEXP=40
+sanity: ln2 = [0.69314718055994530941, 0.69314718055994530942] ; ln10 = [2.30258509299404568401, 2.30258509299404568402]
+sanity: log10(2)+log10(5) = [0.99999999999999999999, 1.00000000000000000001] (must contain 1)
+sanity: exp(ln2) = [1.99999999999999999999, 2.00000000000000000001] (must contain 2)
+
+====================================================================================================
+A. CONST_T
+====================================================================================================
+A1  theta = 4/q at q = 5, 6, 7: ['4/5', '2/3', '4/7']
+  >>> A1 (CONST_T l.307-308: theta<=1/2 for every q>4): FAIL theta = 4/5, 2/3, 4/7 > 1/2; theta<=1/2 iff q>=8 (exact)
+A2  c_theta(q=5) = [1.310719e0, 1.310721e0] ; c_theta(q=6) = [5.925925e-1, 5.925926e-1] ; c_theta(q=8) = [5.000000e-1, 5.000000e-1] [CTRL-1]
+  >>> A2 (CONST_T: c_theta<=1 for every q>4): FAIL c_theta(5) > 1
+  >>> CTRL-1 (c_theta(8) <= 1): PASS 
+A2b c_theta = 1 at s in [3.40349787, 3.40349788] i.e. q in [5.175261, 5.175262]: c_theta <= 1 iff q >= q_c
+A3  c'_theta(q=8) = [9.999999e-1, 1.000001e0]
+A3  c'_theta(q=9) = [8.802975e-1, 8.802976e-1]
+A3  c'_theta(q=10) = [8.207884e-1, 8.207885e-1]
+A3  c'_theta(q=12) = [7.698003e-1, 7.698004e-1]
+A3  c'_theta(q=16) = [7.500000e-1, 7.500000e-1]
+A3  c'_theta(q=32) = [7.925082e-1, 7.925083e-1]
+A3  c'_theta(q=100) = [8.894254e-1, 8.894255e-1]
+A3  c'_theta(q=1000) = [9.795959e-1, 9.795960e-1]
+  >>> A3 (quarter-split constant <= 1 on the grid q>=8): FAIL 
+A4  dominant term 1/2*(36*2000*486)^{q/(q-4)}: q=5 -> base^5/2, q=6 -> base^3/2, q=8 -> base^2/2 ; base = 34992000
+  >>> A4 (CONST_T: q=8 is the worst admissible choice, admissible = q>4): FAIL base^5 and base^3 exceed base^2: q=5,6 are worse than q=8
+A5  B(4) = [4.39486193106e1, 4.39486193107e1] ; B(8) = [1.93148113931e3, 1.93148113932e3]
+  >>> A5 (B(4)=43.95, B(8)=1931.5 within 0.05%): PASS 
+A6  sqrt6*175.8*B(8)*1/2*(36*486)^2 = [1.273012e14, 1.273013e14]
+  >>> A6 (CONST_T q=8 floor 1.27e14): PASS 
+A6b C_1C_V at which the dominant term alone reaches 1e13 at q=8: [2.802746e-1, 2.802747e-1] (CONST_T: 0.2799)
+
+====================================================================================================
+B. STAR_CONST
+====================================================================================================
+B1  T* = [4.180788932e-1, 4.180788933e-1] ; c_s = [4.119229708842e2, 4.119229708843e2] ; c_g = [5.699632830341e3, 5.699632830342e3] ; floor c_s(delta2=rho=0) = [3.191979899e2, 3.191979900e2]
+  >>> B1 (c_s 411.92, c_g 5699.63, floor 319.20): PASS 
+    printed c_s, c_g inside the enclosures: False False
+B2  STAR_CONST harness (R0=32, A_c g_c=1): C_T(11) = [9.811687e12, 9.811688e12] ; C_T(12) = [5.319981e12, 5.319982e12] ; C_T(100) = [1.401052e12, 1.401053e12]
+  >>> B2 (STAR_CONST 8.3: 9.8e12 / 5.3e12 / 1.4e12): PASS 
+CTRL-3 C_T(12) with c_g -> 20: [3.959484e12, 3.959485e12] ; ratio to true [1.34360e0, 1.34361e0]
+  >>> CTRL-3 (C_1 choice moves C_T(12) by > 1%): PASS 
+B3  236.9*c_g = [1.35024301750e6, 1.35024301751e6] ; c_g/20 = [2.84981641517e2, 2.84981641518e2] ; 236.9*c_g/4700 = [2.87285748405e2, 2.87285748406e2] ; 236.9*c_g/4738 = [2.84981641517e2, 2.84981641518e2]
+  >>> B3a (EPSSTAR l.218: 236.9*C_1 at C_1=c_g is 1.348e6): FAIL 
+  >>> B3b (x287 is the ratio of the C_1 values): FAIL 
+
+====================================================================================================
+C. EPSSTAR
+====================================================================================================
+C1  |N_3|^{3/4} = [1.314944908e3, 1.314944909e3] (EPSSTAR 1314.21) ; |N_3|^{1/4}/|N_1|^{3/4} = [1.058421493e-1, 1.058421494e-1] (EPSSTAR 0.105889) ; |N_3|^{3/4}|N_1|^{1/4} = [6.173999999e3, 6.174000001e3] (EPSSTAR 6171.3)
+  >>> C1a (|N_3|^{3/4} = 1314.21): FAIL 
+  >>> C1b (ratio 0.105889): FAIL 
+  >>> C1c (ES-1 needs |N_3| < |N_1|^3, exact): PASS 14406 < 114791256
+C2  C_S1(12,1) = [6.963994967e3, 6.963994968e3] (EPSSTAR 6963.995)
+    A_c g_c bound m=1: [2.4022229e4, 2.4022230e4] ; m=7: [2.8712055e3, 2.8712056e3] ; m=19615: [9.9996098e-1, 9.9996099e-1]
+  >>> C2 (6963.995 ; 2.402e4 ; 2.871e3 ; 0.99996): PASS 
+C3  C_T(12) EPSSTAR harness = [5.288348017e12, 5.288348018e12]
+  >>> C3 (EPSSTAR C_T(12) = 5.288348e12): PASS 
+C4  t_need = 2*6.7e-40*sqrt(5.05e9) = [9.522489170e-35, 9.522489171e-35] ; t_need/3.01e-35 = [3.163617664e0, 3.163617665e0] ; sqrt10 = [3.162277660e0, 3.162277661e0] ; t_need/sqrt10 = [3.011275477e-35, 3.011275478e-35]
+  >>> C4a (EPSSTAR l.525: t_pr >= 3.01e-35): FAIL 
+  >>> C4b ('exactly sqrt10' as the ratio of printed numbers): FAIL 
+  >>> C4c (slip: t_need/sqrt10 rounds to 3.01e-35): PASS 
+C5  C_D ceiling = [1.7811920e13, 1.7811921e13] (EPSSTAR 3.17e13) ; C_T at 0.9e3/0.5e3: [1.97910e10, 1.97911e10] / [3.56238e10, 3.56239e10]
+  >>> C5 (EPSSTAR l.525: C_D <= 3.17e13): FAIL 
+C6  C_T(12) at c_s = 319.19798 with c_g held: [4.04325e12, 4.04326e12] ; log10(5.288348e12/that) = [0.1165, 0.1166]
+  >>> C6i (EPSSTAR l.608: c_s floor gives C_T >= 4.4e12): FAIL 
+
+====================================================================================================
+D. F / Stage-1 radius consistency
+====================================================================================================
+D1  CONST_T budget R/2-4, R>=32: max F = [1.7580281e2, 1.7580282e2] at R=79 (i*=1)
+      R=32      i*=1  F=[8.53333e1, 8.53334e1]
+      R=79      i*=1  F=[1.75802e2, 1.75803e2]
+      R=80      i*=2  F=[7.69800e1, 7.69801e1]
+      R=175     i*=2  F=[1.04279e2, 1.04280e2]
+      R=176     i*=3  F=[7.07755e1, 7.07756e1]
+      R=367     i*=3  F=[8.14827e1, 8.14828e1]
+      R=368     i*=4  F=[6.74300e1, 6.74301e1]
+      R=751     i*=4  F=[7.21773e1, 7.21774e1]
+      ... asymptote check, last rows: R=844424930131952 F=6.4000e1; R=1688849860263919 F=6.4000e1
+  >>> D1 (reproduces CONST_T F_max = 175.8 at R = 79) [CTRL-4]: PASS 
+D2  Stage 2 inside B_{3R/4-3} (budget R/4-3), R>=64: max F = [6.7202797e2, 6.7202798e2] at R=155 (i*=1)
+      R=64      i*=1  F=[3.15076e2, 3.15077e2]
+      R=155     i*=1  F=[6.72027e2, 6.72028e2]
+      R=156     i*=2  F=[2.92716e2, 2.92717e2]
+      R=347     i*=2  F=[4.08162e2, 4.08163e2]
+      R=348     i*=3  F=[2.76704e2, 2.76705e2]
+      R=731     i*=3  F=[3.22485e2, 3.22486e2]
+  >>> D2 (F = 175.8 is consistent with EPSSTAR's Stage-1 radii): FAIL 
+D3  Stage-1 gap R/c-4 (>=12 for R>=16c), Stage-2 budget R(1/2-1/c)-3:
+      c=8    R_0=128   max F = [1.812890e2, 1.812891e2] at R=231 (i*=2)
+      c=16   R_0=256   max F = [1.053174e2, 1.053175e2] at R=418 (i*=3)
+      c=32   R_0=512   max F = [8.168567e1, 8.168568e1] at R=799 (i*=4)
+      c=64   R_0=1024  max F = [7.222274e1, 7.222275e1] at R=1566 (i*=5)
+      c=128  R_0=2048  max F = [6.796898e1, 6.796899e1] at R=3102 (i*=6)
+D4  C_T(12) with D2's F (EPSSTAR's own radii, R0=64, m=19615) = [2.02156e13, 2.02157e13]
+  >>> D4 (C_T(12) <= 1e13 under EPSSTAR's own Stage-1 radii): FAIL 
+      c=8    R0=128   m=47369    A_c g_c<=8.165e-1  C_T(12) = [5.44052e12, 5.44053e12] ; eps_* factor vs m=19615: 4.140e-1
+      c=16   R0=256   m=94397    A_c g_c<=8.165e-1  C_T(12) = [3.15761e12, 3.15762e12] ; eps_* factor vs m=19615: 2.077e-1
+      c=32   R0=512   m=188623   A_c g_c<=8.165e-1  C_T(12) = [2.44817e12, 2.44818e12] ; eps_* factor vs m=19615: 1.039e-1
+      c=64   R0=1024  m=377161   A_c g_c<=8.165e-1  C_T(12) = [2.16423e12, 2.16424e12] ; eps_* factor vs m=19615: 5.200e-2
+      c=128  R0=2048  m=754279   A_c g_c<=8.165e-1  C_T(12) = [2.03664e12, 2.03665e12] ; eps_* factor vs m=19615: 2.600e-2
+
+====================================================================================================
+E. TAUFLAT
+====================================================================================================
+E1  C_D window = [455.2833009, 455.2833010]
+  >>> E1 (C_D <= 455.283301): PASS 
+E2  log10(eta_A/eta_B) = [52.077008, 52.077009] ; shortfall log10(4eps^2/eta_B) = [9.707284, 9.707285] ; t_need(640*53^4) = [9.5224022e-35, 9.5224023e-35]
+  >>> E2 (52.077 ; 9.707 ; 9.5224e-35): PASS 
+    C_D ceiling (640*53^4) = [1.7812002e13, 1.7812003e13] ; C_T band /900, /500 = [1.97911e10, 1.97912e10] , [3.56240e10, 3.56241e10]
+E3  log10(5.288/4.4) = [0.079838, 0.079839] ; log10(5.288/1.396) = [0.578406, 0.578407]
+  >>> E3 (0.080 ; 0.578 as arithmetic): PASS 
+E4  Chat_min (all allocations, all q, P-max) >= 5.17814e5 ; F_min (R>=64, any i*) >= 5.0262e1 at i*=3 ; C_T >= 1.2313e11
+    (2Lam)^Lam*2^sig*64^{2-Lam} by i*: 1:1.239e2, 2:5.786e1, 3:5.026e1, 4:5.179e1, 5:5.507e1, 6:5.808e1, 7:6.031e1, 8:6.179e1, 9:6.271e1, 10:6.326e1
+    most lenient DESC-eps need (c_N=1, q->inf, C_3=1): C_T <= 6.6494e10 ; margin log10(lb/need) = [0.2676, 0.2677]
+  >>> E4 (option A dead under P-max for every allocation, q>=8, R0>=64): PASS 
+    same bound under P-ct (B(4) instead of B(8)): C_T >= 2.801e9  (need 6.650e10) -> not decisive under P-ct
+
+====================================================================================================
+F. EPS1_SWEEP / EPS1_EXEC
+====================================================================================================
+F1  eps_1=6.7e-40    a_RS = 5.931360e-166 ; margin log10(a_RS/100/DX') = [-15.6171, -15.6170]
+F1  eps_1=8.95e-40   a_RS = 1.888631e-165 ; margin log10(a_RS/100/DX') = [-15.1141, -15.1140]
+F1  eps_1=9.52e-40   a_RS = 2.417702e-165 ; margin log10(a_RS/100/DX') = [-15.0069, -15.0068]
+F1  eps_1=1.27e-39   a_RS = 7.657199e-165 ; margin log10(a_RS/100/DX') = [-14.5062, -14.5061]
+F1  eps_1=1.2687e-39 a_RS = 7.625895e-165 ; margin log10(a_RS/100/DX') = [-14.5080, -14.5079]
+  >>> F1 (a_RS 5.93136e-166 ; margin -15.617): PASS 
+F2  cross-ratio = 0.997639 ; range over the printed rounding intervals = [0.989083, 1.006215]
+  >>> F2a ('exactly factorising'): FAIL cross-ratio 0.997639
+  >>> F2b ('factorising within printed precision'): PASS 
+F3  (g/eps_1 at proposed)/(g/eps_1 now) at fixed g = 7.139088e4 ; log10 = [4.853642, 4.853643]
+  >>> F3 (EPS1_SWEEP: 2m*g/eps_1 shrinks as eps_1 falls at fixed g): FAIL 
+F4  sqrt(3.52309230578e-88/4) = [9.384951126377803e-45, 9.384951126377804e-45] ; 9.38495112638e-45 relative excess = [2.34059e-13, 2.34060e-13]
+  >>> F4a (EPS1_SWEEP's 9.38495112638e-45 admissible): FAIL 
+  >>> F4b (EPS1_EXEC: excess 2.3406e-13): PASS 
+  >>> CTRL-2 (9.38495112637e-45 admissible): PASS 
+F5  Delta = [4.853642787, 4.853642788] ; 2D = [9.707285, 9.707286] ; 3D = [14.560928, 14.560929] ; 4D = [19.414571, 19.414572]
+  >>> F5 (4.853643 ; 9.707 ; 14.561 ; 19.415): PASS 
+F6  C_T(8) in EPSSTAR's convention = [8.24514e14, 8.24515e14] ; 2log10(C_T(12)/C_T(8)) = [-4.3858, -4.3857] ; with 1.27e14: [-2.7611, -2.7610]
+  >>> F6 (EPS1_EXEC q=8 row uses the same-convention C_T): FAIL 
+F7  eta_flat at C_D = 900*5.288e12 exactly = 3.523098101594e-88 (EPS1_SWEEP 3.52309230578e-88; from t_pr=1.33384e-39: 3.523092305779e-88)
+  >>> F7 (EPS1_SWEEP's 12-digit eta_flat equals the chain value): FAIL 
+
+====================================================================================================
+G. QFIX
+====================================================================================================
+G1  Lambda(8) = [228.332906, 228.332907] ; Lambda(12) = [189.459168, 189.459169] ; Lambda(inf) = [132.480000, 132.480000]
+  >>> G1 (228.333 ; 189.459 ; 132.48): PASS 
+G2  C_D(11) = [7.74385e15, 7.74386e15] (/6.7e15 = [1.15579e0, 1.15580e0]) ; C_D(12) = [4.05178e15, 4.05179e15] ; C_D(11.5) = [5.42173e15, 5.42174e15]
+  >>> G2a (q=11 fails by x1.16): PASS 
+  >>> G2b (q=12 passes): PASS 
+  >>> G2c (q=12 is the lowest admissible real q): FAIL 
+    real threshold q* (C_D(q*) = 6.7e15, c_N = 2) in [11.19115, 11.19116]
+G3  obj(8) = [-52.664011, -52.664010] ; obj(12) = [-34.472563, -34.472562] ; obj(100) = [-28.747571, -28.747570] ; obj(1000) = [-28.591548, -28.591547] ; obj(inf) = [-28.574905, -28.574904]
+    lever obj(inf)-obj(8) = [24.089105, 24.089106] ; obj(inf)-obj(12) = [5.897657, 5.897658] ; cutoff-only lever (=lever/4) = [6.022276, 6.022277]
+  >>> G3 (total lever 24.089): PASS 
+G4  eps_cut(1000) = [3.8234580e-43, 3.8234581e-43] ; eps_cut(100) = [3.4950274e-43, 3.4950275e-43] ; eps_cut(12) = [1.2948000e-44, 1.2948001e-44]
+  >>> G4a (3.8235e-43): PASS 
+  >>> G4b (3.8e-43 admissible at q=1000): PASS 
+  >>> G4c (QFIX 3.5e-43 admissible at q=100): FAIL 
+G5  theta_eps(1000) at eps_*=1.12e-37 = [2.088557e-39, 2.088558e-39] ; t_SUP(1000) = [5.434154e-38, 5.434155e-38] ; cutoff via theta_eps = [1.469503e-44, 1.469504e-44] ; eps_* needed = [2.914094e-36, 2.914095e-36]
+  >>> G5 (Codex 1.4695e-44 ; 2.9141e-36): PASS 
+G6  sign change of d/dq of the A_c g_c bound at q = 16*27*c_s = [1.77950723421e5, 1.77950723422e5]
+      q=100000    A_c g_c bound (m=19615) = [9.81400874044873e-1, 9.81400874044874e-1]
+      q=177950    A_c g_c bound (m=19615) = [9.81400872752304e-1, 9.81400872752305e-1]
+      q=177951    A_c g_c bound (m=19615) = [9.81400872752304e-1, 9.81400872752305e-1]
+      q=1000000   A_c g_c bound (m=19615) = [9.81400875456478e-1, 9.81400875456479e-1]
+      q=10000000  A_c g_c bound (m=19615) = [9.81400877534510e-1, 9.81400877534511e-1]
+  >>> G6 (QFIX row 4 'wants q large' for all q): FAIL bound rises between q=1e6 and 1e7
+      C_T(q) - C_T(inf) at q=1e6: [8.353e5, 8.354e5]
+      C_T(q) - C_T(inf) at q=1e12: [8.353e-1, 8.354e-1]
+      C_T(q) - C_T(inf) at q=1e30: [8.353e-19, 8.354e-19]
+      C_T(q) - C_T(inf) at q=1e60: [-8.180e-31, 8.180e-31]
+G7  theta_G = theta_SUP(inf) at q = [2.12887e25, 2.12888e25] ; theta_G = theta_eps(inf; 1.12e-37) at q = [5.57302e26, 5.57303e26]
+  >>> G7 (QFIX 5.573e26 reproduces as theta_G vs theta_eps at eps_*=1.12e-37): PASS 
+G8  obj strictly increasing on QFIX's grid: True ; obj(1e4)-obj(1000) = [0.014984, 0.014985] ; obj(1e6)-obj(1000) = [0.016626, 0.016627]
+  >>> G8 ('argmax q = 1000' on QFIX's own grid): FAIL 
+  >>> CTRL-5 (q=1000 is the argmax of the grid truncated at 1000): PASS 
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+  A1 (CONST_T l.307-308: theta<=1/2 for every q>4)                                      FAIL
+  A2 (CONST_T: c_theta<=1 for every q>4)                                                FAIL
+  CTRL-1 (c_theta(8) <= 1)                                                              PASS
+  A3 (quarter-split constant <= 1 on the grid q>=8)                                     FAIL
+  A4 (CONST_T: q=8 is the worst admissible choice, admissible = q>4)                    FAIL
+  A5 (B(4)=43.95, B(8)=1931.5 within 0.05%)                                             PASS
+  A6 (CONST_T q=8 floor 1.27e14)                                                        PASS
+  B1 (c_s 411.92, c_g 5699.63, floor 319.20)                                            PASS
+  B2 (STAR_CONST 8.3: 9.8e12 / 5.3e12 / 1.4e12)                                         PASS
+  CTRL-3 (C_1 choice moves C_T(12) by > 1%)                                             PASS
+  B3a (EPSSTAR l.218: 236.9*C_1 at C_1=c_g is 1.348e6)                                  FAIL
+  B3b (x287 is the ratio of the C_1 values)                                             FAIL
+  C1a (|N_3|^{3/4} = 1314.21)                                                           FAIL
+  C1b (ratio 0.105889)                                                                  FAIL
+  C1c (ES-1 needs |N_3| < |N_1|^3, exact)                                               PASS
+  C2 (6963.995 ; 2.402e4 ; 2.871e3 ; 0.99996)                                           PASS
+  C3 (EPSSTAR C_T(12) = 5.288348e12)                                                    PASS
+  C4a (EPSSTAR l.525: t_pr >= 3.01e-35)                                                 FAIL
+  C4b ('exactly sqrt10' as the ratio of printed numbers)                                FAIL
+  C4c (slip: t_need/sqrt10 rounds to 3.01e-35)                                          PASS
+  C5 (EPSSTAR l.525: C_D <= 3.17e13)                                                    FAIL
+  C6i (EPSSTAR l.608: c_s floor gives C_T >= 4.4e12)                                    FAIL
+  D1 (reproduces CONST_T F_max = 175.8 at R = 79) [CTRL-4]                              PASS
+  D2 (F = 175.8 is consistent with EPSSTAR's Stage-1 radii)                             FAIL
+  D4 (C_T(12) <= 1e13 under EPSSTAR's own Stage-1 radii)                                FAIL
+  E1 (C_D <= 455.283301)                                                                PASS
+  E2 (52.077 ; 9.707 ; 9.5224e-35)                                                      PASS
+  E3 (0.080 ; 0.578 as arithmetic)                                                      PASS
+  E4 (option A dead under P-max for every allocation, q>=8, R0>=64)                     PASS
+  F1 (a_RS 5.93136e-166 ; margin -15.617)                                               PASS
+  F2a ('exactly factorising')                                                           FAIL
+  F2b ('factorising within printed precision')                                          PASS
+  F3 (EPS1_SWEEP: 2m*g/eps_1 shrinks as eps_1 falls at fixed g)                         FAIL
+  F4a (EPS1_SWEEP's 9.38495112638e-45 admissible)                                       FAIL
+  F4b (EPS1_EXEC: excess 2.3406e-13)                                                    PASS
+  CTRL-2 (9.38495112637e-45 admissible)                                                 PASS
+  F5 (4.853643 ; 9.707 ; 14.561 ; 19.415)                                               PASS
+  F6 (EPS1_EXEC q=8 row uses the same-convention C_T)                                   FAIL
+  F7 (EPS1_SWEEP's 12-digit eta_flat equals the chain value)                            FAIL
+  G1 (228.333 ; 189.459 ; 132.48)                                                       PASS
+  G2a (q=11 fails by x1.16)                                                             PASS
+  G2b (q=12 passes)                                                                     PASS
+  G2c (q=12 is the lowest admissible real q)                                            FAIL
+  G3 (total lever 24.089)                                                               PASS
+  G4a (3.8235e-43)                                                                      PASS
+  G4b (3.8e-43 admissible at q=1000)                                                    PASS
+  G4c (QFIX 3.5e-43 admissible at q=100)                                                FAIL
+  G5 (Codex 1.4695e-44 ; 2.9141e-36)                                                    PASS
+  G6 (QFIX row 4 'wants q large' for all q)                                             FAIL
+  G7 (QFIX 5.573e26 reproduces as theta_G vs theta_eps at eps_*=1.12e-37)               PASS
+  G8 ('argmax q = 1000' on QFIX's own grid)                                             FAIL
+  CTRL-5 (q=1000 is the argmax of the grid truncated at 1000)                           PASS
+runtime 11.0 s

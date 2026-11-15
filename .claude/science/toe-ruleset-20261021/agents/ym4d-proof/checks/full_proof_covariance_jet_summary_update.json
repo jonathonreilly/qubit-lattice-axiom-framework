@@ -1,0 +1,27 @@
+{
+  "scope": "Status and provenance only; scientific sources unchanged. Charged-jet review and CJ18 remain open.",
+  "changes": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "before_sha256": "781b8f2a5238587f96f82620590ee7a071508fd73b7b1414722f086ff0ea7d17",
+      "after_sha256": "b91b68a2c356a306182f8cbf46dcbc4c47ceaea29abaad58f587bee067102d19"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "before_sha256": "fddb199d47349f1dbcb308e917b982507dc69b160c76c38e445a95726b104f02",
+      "after_sha256": "5104110930e5303aff1d7cc87c398df8c8b1d4540a5a96dd0c18272a42ced2f9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "before_sha256": "19d2adb94a8ab11f24ee97b7e668dff99b42db8b6ce79764e8ee2a3f6a316629",
+      "after_sha256": "9ae28f3bf50c1dd16037ee38c61bc5d6b6b1cb608645f5634cef49b56e9b53b2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "before_sha256": "0a8decc76db7b12656aa7c0bbc29ce9e0f64445cc38c70baeadd76211164a70c",
+      "after_sha256": "1596cabd549efac22458dca4a745915e14224a484ca93ad95444a5e6bd66c95e"
+    }
+  ],
+  "legacy_PROOF_body_sha256": "4efdee19aa03123a89053e466525f0ef5e9d8a4b8eb1ea38a1e87125043e728c",
+  "legacy_body_unchanged": true
+}

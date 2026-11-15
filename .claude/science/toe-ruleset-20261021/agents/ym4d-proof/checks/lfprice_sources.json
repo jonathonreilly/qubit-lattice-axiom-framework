@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-30T03:03:26.193582+00:00",
+  "head": "544182d4fb203024160dedb786d5ce943b9be0b9",
+  "source_files": {
+    "briefs_q/LFPRICE/AUTHOR.md": {
+      "sha256": "21569b6700f40c8640e53b1b89bb994108e7136f828096bba5433d1cb737c363",
+      "bytes": 3484
+    },
+    "PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497
+    },
+    "HANDOFF.md": {
+      "sha256": "4bf57caff3dd6cd5602692e76dc6aee4d156e08a326eab9eab96ee2b4a2f08c7",
+      "bytes": 62487
+    },
+    "RD4.md": {
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "bytes": 42966
+    },
+    "RD3.md": {
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "bytes": 36157
+    },
+    "REVIEW_RD3.md": {
+      "sha256": "3035fde3f75182f74cf54004cc2d8ccd21f9ffef5bcf9d2158bd483b07655a8e",
+      "bytes": 27114
+    },
+    "REVIEW_RD4.md": {
+      "sha256": "34543d015245362e24e32eb37142f66fc32296c701d8f2a2ea0c0cdb66c65f0d",
+      "bytes": 25209
+    },
+    "checks/rd4_review.md": {
+      "sha256": "39733be892a218e4aaa816f08524e7612f2ba14b4a5a9d495e8269143674de53",
+      "bytes": 21107
+    },
+    "RLARGE.md": {
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "bytes": 134489
+    },
+    "REVIEW_RLARGE_V3.md": {
+      "sha256": "ac2e6074781f8ba0313b6497ab6ca45c112c8bce3343ecf2ebf005f6a842539d",
+      "bytes": 32643
+    },
+    "LARGE55.md": {
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "bytes": 81497
+    },
+    "CODEX_REVIEW_LARGE.md": {
+      "sha256": "cc9d86b0aca6d301e7c4111a8e4eaaafccf4c121323aaa0cb9026448ab38f777",
+      "bytes": 47027
+    },
+    "LCONV55.md": {
+      "sha256": "79a45d830c12282558cbaea63bfca2cf32d0e979b4e07a26a8bdba3e2fbbba16",
+      "bytes": 56764
+    },
+    "CODEX_REVIEW_LCONV.md": {
+      "sha256": "536a2a690ab12e6f4e94827003d500159f40b2132b5cac05a85a0978242a0dcd",
+      "bytes": 39409
+    },
+    "F17.md": {
+      "sha256": "b2a4f0f8650ff2db736acfaa1b0f30be1d30d449ceb827e32f55186b81e82440",
+      "bytes": 23295
+    },
+    "SOFTHARD.md": {
+      "sha256": "890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968",
+      "bytes": 134852
+    }
+  },
+  "coverage_note": "Hashes bind inputs; targeted analytical read coverage is in LFPRICE_LOG.md, not inferred from hashing."
+}

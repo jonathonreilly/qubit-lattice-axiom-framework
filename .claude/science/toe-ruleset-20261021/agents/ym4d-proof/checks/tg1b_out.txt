@@ -1,0 +1,156 @@
+tg1b: TGAUGE_PRICE session 25 repair round.
+criteria: checks/tg1b_criteria.md (written first). tg1 criteria and outputs untouched.
+kernel mass assertion on the true multiplicity table: sum_t mult(t) = 9 == L^2 = 9: True
+
+==============================================================================
+=== Q1 (d=2,k=2,T=3): n=9, level-0 side=27, 9 boxes, |HT|=12 ===
+B1(ii) D(S) root-supported & neutral: True  (supp [(4, 4), (13, 4)], sum 0)
+B1(i)  d*C(j) == D(S) at all 2 sites: True
+
+--- field one-block: #(nu != 0) = 1;  T_res = 22509/440  (NONZERO)
+B1(iii) M = -27981/440;  P + T_res = -27981/440;  equal: True   (P = -459/4)
+B0      non-vacuity (T_res != 0, D(S) != 0, mu_flat != 0, mu_pt != 0): True
+B1(iv/v) mu_flat : dP = 0;  dM = -22509/440;  -T_res = -22509/440;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -459/4  (== P: True)
+B1(iv/v) mu_pt   : dP = 0;  dM = -22509/440;  -T_res = -22509/440;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -459/4  (== P: True)
+B1(iv/v) mu_root : dP = 1823229/35200;  dM = 22509/35200;  -T_res = -22509/440;  rho = 1/80;  T_res(gauged) = 0;  M(gauged) = -2215971/35200  (== P: False)
+B2      CONTROL 1 (mu_root outside Lambda_*): dP = 1823229/35200 (!= 0: True), rho_root = 1/80 (!= 1: True) -> control FIRES (PASS of the control)
+B3      mu_flat l=0: rho_est = 9/2 = 4.5; want 9/2 = 4.5: True;  rho_tv = 9/8 (1.125)
+B3      mu_flat l=1: rho_est = 21/5 = 4.2; want 21/5 = 4.2: True;  rho_tv = 21/20 (1.05)
+B3      mu_pt   l=0: rho_est = 36 = 36.0; want 2d*L^(k-l) = 36: True
+B3      mu_pt   l=1: rho_est = 12 = 12.0; want 2d*L^(k-l) = 12: True
+
+--- field mixed: #(nu != 0) = 4;  T_res = 22509/440  (NONZERO)
+B1(iii) M = -27981/440;  P + T_res = -27981/440;  equal: True   (P = -459/4)
+B0      non-vacuity (T_res != 0, D(S) != 0, mu_flat != 0, mu_pt != 0): True
+B1(iv/v) mu_flat : dP = 0;  dM = -22509/440;  -T_res = -22509/440;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -459/4  (== P: True)
+B1(iv/v) mu_pt   : dP = 0;  dM = -22509/440;  -T_res = -22509/440;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -459/4  (== P: True)
+B1(iv/v) mu_root : dP = 1823229/35200;  dM = 22509/35200;  -T_res = -22509/440;  rho = 1/80;  T_res(gauged) = 0;  M(gauged) = -2215971/35200  (== P: False)
+B2      CONTROL 1 (mu_root outside Lambda_*): dP = 1823229/35200 (!= 0: True), rho_root = 1/80 (!= 1: True) -> control FIRES (PASS of the control)
+B4      l=1: Q_str^(0->l)(d mu) == d(A^(0->l)mu): True;   == d(ev^(0->l)mu): False
+B4      l=2: Q_str^(0->l)(d mu) == d(A^(0->l)mu): True;   == d(ev^(0->l)mu): False
+B5      CONTROL 2 (flat longitudinal multiplicity): mass assertion rejects it (sum_t mult = 5 != 9): True;  B4(i) then holds: False -> control FIRES (PASS of the control)
+
+==============================================================================
+=== Q2 (d=2,k=3,T=2): n=27, level-0 side=54, 4 boxes, |HT|=12 ===
+B1(ii) D(S) root-supported & neutral: True  (supp [(13, 13), (40, 13)], sum 0)
+B1(i)  d*C(j) == D(S) at all 2 sites: True
+
+--- field one-block: #(nu != 0) = 1;  T_res = 1372077/8840  (NONZERO)
+B1(iii) M = -87219/68;  P + T_res = -87219/68;  equal: True   (P = -12710547/8840)
+B0      non-vacuity (T_res != 0, D(S) != 0, mu_flat != 0, mu_pt != 0): True
+B1(iv/v) mu_flat : dP = 0;  dM = -1372077/8840;  -T_res = -1372077/8840;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -12710547/8840  (== P: True)
+B1(iv/v) mu_pt   : dP = 0;  dM = -1372077/8840;  -T_res = -1372077/8840;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -12710547/8840  (== P: True)
+B1(iv/v) mu_root : dP = 142892019/919360;  dM = 196011/919360;  -T_res = -1372077/8840;  rho = 1/728;  T_res(gauged) = 0;  M(gauged) = -1179004869/919360  (== P: False)
+B2      CONTROL 1 (mu_root outside Lambda_*): dP = 142892019/919360 (!= 0: True), rho_root = 1/728 (!= 1: True) -> control FIRES (PASS of the control)
+B3      mu_flat l=0: rho_est = 54/13 = 4.153846153846154; want 54/13 = 4.153846153846154: True;  rho_tv = 27/26 (1.0384615384615385)
+B3      mu_flat l=1: rho_est = 369/91 = 4.054945054945055; want 369/91 = 4.054945054945055: True;  rho_tv = 369/364 (1.0137362637362637)
+B3      mu_flat l=2: rho_est = 366/91 = 4.021978021978022; want 366/91 = 4.021978021978022: True;  rho_tv = 183/182 (1.0054945054945055)
+B3      mu_pt   l=0: rho_est = 108 = 108.0; want 2d*L^(k-l) = 108: True
+B3      mu_pt   l=1: rho_est = 36 = 36.0; want 2d*L^(k-l) = 36: True
+B3      mu_pt   l=2: rho_est = 12 = 12.0; want 2d*L^(k-l) = 12: True
+
+--- field mixed: #(nu != 0) = 2;  T_res = 1681279/26520  (NONZERO)
+B1(iii) M = -1401937/1020;  P + T_res = -1401937/1020;  equal: True   (P = -12710547/8840)
+B0      non-vacuity (T_res != 0, D(S) != 0, mu_flat != 0, mu_pt != 0): True
+B1(iv/v) mu_flat : dP = 0;  dM = -1681279/26520;  -T_res = -1681279/26520;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -12710547/8840  (== P: True)
+B1(iv/v) mu_pt   : dP = 0;  dM = -1681279/26520;  -T_res = -1681279/26520;  rho = 1;  T_res(gauged) = 0;  M(gauged) = -12710547/8840  (== P: True)
+B1(iv/v) mu_root : dP = 408550797/6435520;  dM = 1681279/19306560;  -T_res = -1681279/26520;  rho = 1/728;  T_res(gauged) = 0;  M(gauged) = -8844727419/6435520  (== P: False)
+B2      CONTROL 1 (mu_root outside Lambda_*): dP = 408550797/6435520 (!= 0: True), rho_root = 1/728 (!= 1: True) -> control FIRES (PASS of the control)
+B4      l=1: Q_str^(0->l)(d mu) == d(A^(0->l)mu): True;   == d(ev^(0->l)mu): False
+B4      l=2: Q_str^(0->l)(d mu) == d(A^(0->l)mu): True;   == d(ev^(0->l)mu): False
+B4      l=3: Q_str^(0->l)(d mu) == d(A^(0->l)mu): True;   == d(ev^(0->l)mu): False
+B5      CONTROL 2 (flat longitudinal multiplicity): mass assertion rejects it (sum_t mult = 5 != 9): True;  B4(i) then holds: False -> control FIRES (PASS of the control)
+
+==============================================================================
+=== Q3 (d=4,k=2,T=2): n=9, level-0 side=18, 16 boxes, |HT|=216 ===
+B1(ii) D(S) root-supported & neutral: True  (supp [(4, 4, 4, 4), (13, 4, 4, 4)], sum 0)
+B1(i)  d*C(j) == D(S) at all 2 sites: True
+
+--- field one-block: #(nu != 0) = 1;  T_res = -406327/1389960  (NONZERO)
+B1(iii) M = -406327/1389960;  P + T_res = -406327/1389960;  equal: True   (P = 0)
+B0      non-vacuity (T_res != 0, D(S) != 0, mu_flat != 0, mu_pt != 0): True
+B1(iv/v) mu_flat : dP = 0;  dM = 406327/1389960;  -T_res = 406327/1389960;  rho = 1;  T_res(gauged) = 0;  M(gauged) = 0  (== P: True)
+B1(iv/v) mu_pt   : dP = 0;  dM = 406327/1389960;  -T_res = 406327/1389960;  rho = 1;  T_res(gauged) = 0;  M(gauged) = 0  (== P: True)
+B1(iv/v) mu_root : dP = -10970829/37523200;  dM = -406327/9118137600;  -T_res = 406327/1389960;  rho = 1/6560;  T_res(gauged) = 0;  M(gauged) = -10970829/37523200  (== P: False)
+B2      CONTROL 1 (mu_root outside Lambda_*): dP = -10970829/37523200 (!= 0: True), rho_root = 1/6560 (!= 1: True) -> control FIRES (PASS of the control)
+B3      mu_flat l=0: rho_est = 657/82 = 8.012195121951219; want 657/82 = 8.012195121951219: True;  rho_tv = 657/656 (1.0015243902439024)
+B3      mu_flat l=1: rho_est = 1641/205 = 8.004878048780487; want 1641/205 = 8.004878048780487: True;  rho_tv = 1641/1640 (1.0006097560975609)
+B3      mu_pt   l=0: rho_est = 72 = 72.0; want 2d*L^(k-l) = 72: True
+B3      mu_pt   l=1: rho_est = 24 = 24.0; want 2d*L^(k-l) = 24: True
+
+--- field mixed: #(nu != 0) = 6;  T_res = -406327/1389960  (NONZERO)
+B1(iii) M = -406327/1389960;  P + T_res = -406327/1389960;  equal: True   (P = 0)
+B0      non-vacuity (T_res != 0, D(S) != 0, mu_flat != 0, mu_pt != 0): True
+B1(iv/v) mu_flat : dP = 0;  dM = 406327/1389960;  -T_res = 406327/1389960;  rho = 1;  T_res(gauged) = 0;  M(gauged) = 0  (== P: True)
+B1(iv/v) mu_pt   : dP = 0;  dM = 406327/1389960;  -T_res = 406327/1389960;  rho = 1;  T_res(gauged) = 0;  M(gauged) = 0  (== P: True)
+B1(iv/v) mu_root : dP = -10970829/37523200;  dM = -406327/9118137600;  -T_res = 406327/1389960;  rho = 1/6560;  T_res(gauged) = 0;  M(gauged) = -10970829/37523200  (== P: False)
+B2      CONTROL 1 (mu_root outside Lambda_*): dP = -10970829/37523200 (!= 0: True), rho_root = 1/6560 (!= 1: True) -> control FIRES (PASS of the control)
+B4      l=1: Q_str^(0->l)(d mu) == d(A^(0->l)mu): True;   == d(ev^(0->l)mu): False
+B4      l=2: Q_str^(0->l)(d mu) == d(A^(0->l)mu): True;   == d(ev^(0->l)mu): False
+B5      CONTROL 2 (flat longitudinal multiplicity): mass assertion rejects it (sum_t mult = 5 != 9): True;  B4(i) then holds: False -> control FIRES (PASS of the control)
+
+==============================================================================
+=== B3 (iii): rho_tv decreasing in k at fixed l (d = 2) ===
+  l=0: Q1 (k=2) rho_tv = 9/8 = 1.125000;  Q2 (k=3) rho_tv = 27/26 = 1.038462;  decreasing: True
+  l=1: Q1 (k=2) rho_tv = 21/20 = 1.050000;  Q2 (k=3) rho_tv = 369/364 = 1.013736;  decreasing: True
+
+==============================================================================
+=== VERDICTS ===
+  B0/Q1 (d=2,k=2,T=3)/mixed         : PASS
+  B0/Q1 (d=2,k=2,T=3)/one-block     : PASS
+  B0/Q2 (d=2,k=3,T=2)/mixed         : PASS
+  B0/Q2 (d=2,k=3,T=2)/one-block     : PASS
+  B0/Q3 (d=4,k=2,T=2)/mixed         : PASS
+  B0/Q3 (d=4,k=2,T=2)/one-block     : PASS
+  B1-i/Q1 (d=2,k=2,T=3)             : PASS
+  B1-i/Q2 (d=2,k=3,T=2)             : PASS
+  B1-i/Q3 (d=4,k=2,T=2)             : PASS
+  B1-ii/Q1 (d=2,k=2,T=3)            : PASS
+  B1-ii/Q2 (d=2,k=3,T=2)            : PASS
+  B1-ii/Q3 (d=4,k=2,T=2)            : PASS
+  B1-iii/Q1 (d=2,k=2,T=3)/mixed     : PASS
+  B1-iii/Q1 (d=2,k=2,T=3)/one-block : PASS
+  B1-iii/Q2 (d=2,k=3,T=2)/mixed     : PASS
+  B1-iii/Q2 (d=2,k=3,T=2)/one-block : PASS
+  B1-iii/Q3 (d=4,k=2,T=2)/mixed     : PASS
+  B1-iii/Q3 (d=4,k=2,T=2)/one-block : PASS
+  B1-iv/Q1 (d=2,k=2,T=3)/mixed      : PASS
+  B1-iv/Q1 (d=2,k=2,T=3)/one-block  : PASS
+  B1-iv/Q2 (d=2,k=3,T=2)/mixed      : PASS
+  B1-iv/Q2 (d=2,k=3,T=2)/one-block  : PASS
+  B1-iv/Q3 (d=4,k=2,T=2)/mixed      : PASS
+  B1-iv/Q3 (d=4,k=2,T=2)/one-block  : PASS
+  B1-v/Q1 (d=2,k=2,T=3)/mixed       : PASS
+  B1-v/Q1 (d=2,k=2,T=3)/one-block   : PASS
+  B1-v/Q2 (d=2,k=3,T=2)/mixed       : PASS
+  B1-v/Q2 (d=2,k=3,T=2)/one-block   : PASS
+  B1-v/Q3 (d=4,k=2,T=2)/mixed       : PASS
+  B1-v/Q3 (d=4,k=2,T=2)/one-block   : PASS
+  B2/Q1 (d=2,k=2,T=3)/mixed         : PASS
+  B2/Q1 (d=2,k=2,T=3)/one-block     : PASS
+  B2/Q2 (d=2,k=3,T=2)/mixed         : PASS
+  B2/Q2 (d=2,k=3,T=2)/one-block     : PASS
+  B2/Q3 (d=4,k=2,T=2)/mixed         : PASS
+  B2/Q3 (d=4,k=2,T=2)/one-block     : PASS
+  B3-i/Q1 (d=2,k=2,T=3)             : PASS
+  B3-i/Q2 (d=2,k=3,T=2)             : PASS
+  B3-i/Q3 (d=4,k=2,T=2)             : PASS
+  B3-ii/Q1 (d=2,k=2,T=3)            : PASS
+  B3-ii/Q2 (d=2,k=3,T=2)            : PASS
+  B3-ii/Q3 (d=4,k=2,T=2)            : PASS
+  B3-iii-dec/l=0                    : PASS
+  B3-iii-dec/l=1                    : PASS
+  B3-iii-range/Q1 (d=2,k=2,T=3)     : PASS
+  B3-iii-range/Q2 (d=2,k=3,T=2)     : PASS
+  B3-iii-range/Q3 (d=4,k=2,T=2)     : PASS
+  B4-i/Q1 (d=2,k=2,T=3)             : PASS
+  B4-i/Q2 (d=2,k=3,T=2)             : PASS
+  B4-i/Q3 (d=4,k=2,T=2)             : PASS
+  B4-ii/Q1 (d=2,k=2,T=3)            : PASS
+  B4-ii/Q2 (d=2,k=3,T=2)            : PASS
+  B4-ii/Q3 (d=4,k=2,T=2)            : PASS
+  B5/Q1 (d=2,k=2,T=3)               : PASS
+  B5/Q2 (d=2,k=3,T=2)               : PASS
+  B5/Q3 (d=4,k=2,T=2)               : PASS
+  OVERALL: ALL PASS
+  FAILS: []

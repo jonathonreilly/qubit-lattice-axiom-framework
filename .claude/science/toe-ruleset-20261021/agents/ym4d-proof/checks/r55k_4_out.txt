@@ -1,0 +1,11 @@
+D1 (a) loose  energy shortfall at q=12 = [11.7572, 11.7573]
+D1 (a) sharp  energy shortfall at q=12 = [10.0806, 10.0807]
+D1 (b) loose  energy shortfall at q=12 = [8.5318, 8.5320]
+D1 (b) sharp  energy shortfall at q=12 = [8.1305, 8.1306]
+D2 sqrt6*64*B(8)*5.17814e5 = [1.56790e11, 1.56791e11] ; log10(lb/6.6494e10) = [0.3725, 0.3726]
+  >>> D2 (sharp liminf bound exceeds the most lenient need): PASS 
+D3 log10(1.9252e12/5.288348e12) = [-0.4389, -0.4388]
+D3 log10(2.5062e12/5.288348e12) = [-0.3244, -0.3243]
+D3 log10(3.1576e12/5.288348e12) = [-0.2240, -0.2239]
+D3 log10(7.7008e12/5.288348e12) = [0.1632, 0.1633]
+D3 log10(2.0216e13/5.288348e12) = [0.5823, 0.5824]

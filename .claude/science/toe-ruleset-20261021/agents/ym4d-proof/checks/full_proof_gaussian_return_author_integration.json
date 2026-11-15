@@ -1,0 +1,225 @@
+{
+  "role": "Preservation of a frozen author proposal during fresh independent review; no adopted mathematical verdict",
+  "utc": "2026-10-30T03:02:39.755835+00:00",
+  "head": "d55e65eb929ecf5370e025227e7eac07621c9c10",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+    "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+    "bytes": 30517,
+    "lines": 608
+  },
+  "coordinator_read_coverage": "All 608 source lines in windows 1-210, 211-420, 421-608; source recommendation remains pending fresh independent review. Complete author receipt and mechanical identities checked.",
+  "source_edits_after_freeze": 0,
+  "claimed_scope": "Centered exactly normalized Gaussian cutoff for actual source-free PC lift covariance, complete readers including infinite signed tails; proposed RG29 rate mu=1/[3(16R)^4] with explicit RG8/RG26 thresholds.",
+  "bindings": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_read_manifest.json",
+      "sha256": "09891c4538c4c35426704541da0bcf0496c0a43888c8856aee1e9f7e6061310d",
+      "verified_at": "current"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "verified_at": "current"
+    },
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "verified_at": "current"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "verified_at": "current"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "verified_at": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    }
+  ],
+  "selected_records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "sha256": "dc8e81ee6d455d406bed658557547c900b02518ff1fd68da343dedd6323fd576",
+      "bytes": 35395
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "sha256": "79d92b4cab315c54d7a24da31599935b30ef1b256f68a879f73df98fb7eea637",
+      "bytes": 63063
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "8fdf4062963154c22b2c4fc74106f5f3f5b70c01727d32bdf0471c96d325bcd6",
+      "bytes": 798152
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "bytes": 30517
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "sha256": "97c013f62edc3fb0c15c023f9b8c95fbff20c3deb405de59879aadbdb57b13b2",
+      "bytes": 237715
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_read_manifest.json",
+      "sha256": "09891c4538c4c35426704541da0bcf0496c0a43888c8856aee1e9f7e6061310d",
+      "bytes": 8287
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_receipt.json",
+      "sha256": "4c10b17f1ef73fb2a7108220d2d73aab08f530f9b559207395976dbc700635d7",
+      "bytes": 5288
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    }
+  ],
+  "protected_tracked_lane_blobs_unchanged": 3527,
+  "legacy_PROOF_tail_sha256": "4efdee19aa03123a89053e466525f0ef5e9d8a4b8eb1ea38a1e87125043e728c",
+  "validation": {
+    "JSON_files_including_this_receipt": 4,
+    "links": 503,
+    "vocabulary_exit": 0,
+    "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "whitespace": "clean",
+    "scientific_numerical_runs": 0
+  },
+  "concurrent_preservation": {
+    "head": "d55e65eb929ecf5370e025227e7eac07621c9c10",
+    "operation": "Fast-forward of 10 WLOOP additions; no existing source modified",
+    "records": [
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_WLOOP.md",
+        "sha256": "fcaf6a034972b83ea239eb78229b983334d0d5a9b6c30953a465a37691373821"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WLOOP.md",
+        "sha256": "3fa6a797bab81e930d4d3f081b112da7ecb38a7073a248474731cd61314efa57"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WLOOP_LOG.md",
+        "sha256": "1dc0e541ee776a3107a05eaa6bbd27a73b7f05dc71ba71cca5759facd59f8695"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/WLOOP/AUTHOR.md",
+        "sha256": "958936c0ac488f92fdb80c1d1962751e65ec44c6b95f34cf9b4209b64559ed85"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/WLOOP/REVIEW.md",
+        "sha256": "5acb7feeb6e4b6933d493a945c43321abf687d716f2a30dd386e3aafd538d6d7"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_document_check.json",
+        "sha256": "f1c86d1a89b7ff37e64c18c108e5ee6060d69dfabdc8b82c04fe2b79eddd67cf"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_final_validation.json",
+        "sha256": "f237c4055c170a8c661959a40623f2aa95fef3657335f7c1b1c7abd573beaf09"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_review.md",
+        "sha256": "14146982faf1e9d517feaeff391b9d719b9320c18db028b5c38ab31cce752b3b"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_review_request.json",
+        "sha256": "d85181b1d4ea2c4213726f4eb4edf3231911bb5b047d794586ec65b6472a8061"
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_sources.json",
+        "sha256": "ab026105675ba5ce80a605015aa761b9bb4f8ff5b757612d997c6d0670935e22"
+      }
+    ],
+    "root_read_coverage": {
+      "WLOOP.md": [
+        [
+          1,
+          75
+        ]
+      ],
+      "REVIEW_WLOOP.md": [
+        [
+          1,
+          85
+        ]
+      ]
+    },
+    "scope": "Bounded finite-cutoff/Gaussian-model/conditional loop research note. Full loop-only and combined targets UNDECIDED. No replacement of the requested local-field target or wider non-free-class identification adopted.",
+    "review_configuration": "Fresh same-family disclosed in source; Astra/max independently unconfirmed here."
+  },
+  "publication_guard_record": "A proposed PR body write was withheld when fresh metadata detected the concurrent WLOOP head. Root fetched, inspected the disjoint additions, fast-forwarded, and verified the subsequent body update at d55e65eb92. No concurrent body changes were overwritten.",
+  "fresh_review": "Active independent Astra/max requested context; model request is not backend attestation",
+  "not_adopted": [
+    "RG29 pending independent review",
+    "Other author nonlinear activities",
+    "Other author shifted-chart side/corner estimates"
+  ],
+  "full_interacting_return": "OPEN",
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

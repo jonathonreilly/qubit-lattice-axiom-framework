@@ -1,0 +1,212 @@
+{
+  "schema": "immutable_source_findings_v1",
+  "frozen_utc": "2026-10-30T14:52:04.013832+00:00",
+  "target_sha256": "43277655d33e5a7f90cec29d19ebf4a9d6e0c307526afbeb6263730310c280ce",
+  "scope": "Full 545-line target argument; bounded primary page windows in paired source_read_manifest; no complete-paper or novelty/exhaustive no-go certification.",
+  "mathematical_disposition": "SUPPORTED WITH THE STATED CONDITIONAL BOUNDARIES. The checked proof chain does not supply full non-free 4D SU(N) continuum existence plus a positive physical Hamiltonian gap. No substantive mathematical correction to the target was identified in the examined claims.",
+  "full_target_status": "OPEN; no retained grade or independent audit result is assigned.",
+  "checks": [
+    {
+      "id": "source_check_1",
+      "topic": "C1-C3 and gauge covariance",
+      "result": "The specified harmonic extension is not an ell2 self-adjoint contraction; nested positive compressions need not have positive difference. An energy inner product, boundary-trace variant, or mere positivity of both OS forms does not supply the missing order. BGM translation averaging, Fourier positivity and harmonic cancellation are a different valid scalar construction. The open-transporter curvature-only estimate needs a fixed gauge frame; flat pure gauge data refute its displayed unrestricted form.",
+      "primary_pages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185
+      ],
+      "bgm_pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "source_check_2",
+      "topic": "C4-C6 transfer order and physical time",
+      "result": "Deleting mixed Gram entries is not a positive compression; differentiating a positive family need not preserve positivity. The exact logarithmic physical-time correction differs from the printed estimate, and the diagonal example satisfies the granted comparison with summable positive defects but vanishing physical mass. Fixed physical time plus a strict budget is a valid separate condition.",
+      "primary_pages": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        186,
+        187,
+        188,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201
+      ]
+    },
+    {
+      "id": "source_check_3",
+      "topic": "C7 and original law preservation",
+      "result": "The inserted Theta reweights the fine marginal. Reflection commutation does not remove it or prove collar multiplication close to identity. The regulator-tail objection is to a rate uniform in lambda; if the constant degenerates with lambda, that rate is not supplied. The note states this caveat.",
+      "primary_pages": [
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        415,
+        416,
+        417,
+        418,
+        419
+      ]
+    },
+    {
+      "id": "source_check_4",
+      "topic": "C8-C10 Gaussian estimates and critical entry",
+      "result": "A finite jet at zero is not a global Gaussian integration norm; the un-subtracted free covariance source cumulant persists at zero interaction. The printed inhomogeneous g-squared recurrence does not give exponentially summable errors. C10 correctly refutes the implication from the explicitly listed sector upper estimates; it is not a model satisfying every earlier full-space contraction/continuum hypothesis of Part IV. No correct weak-to-strong original-law trajectory is thereby supplied. Appendix A.10 is repairable with a genuine smallness condition.",
+      "primary_pages": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        589,
+        590,
+        591,
+        592
+      ]
+    },
+    {
+      "id": "source_check_5",
+      "topic": "C11-C12 full hierarchy, symmetry and OS reconstruction",
+      "result": "A bounded comparison need not vanish; vacuum annihilation does not remove inserted defects. Equal one-slice laws can have distinct positive semigroups. Finite hypercubic symmetry is not dense in O(4); the stated continuum error estimate still needs proof. The asserted OS time-translation isometry conflicts with a nontrivial positive Hamiltonian. A finite selected observable set is not the full physical source algebra.",
+      "primary_pages": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        128,
+        129,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552
+      ]
+    },
+    {
+      "id": "source_check_6",
+      "topic": "C13-C14 nontriviality and non-freeness",
+      "result": "A positive heat-mixture cannot yield a compact spectral cutoff with a zero on a finite eigenvalue; the source prints an operator identity, so interpret the objection on the actual spectrum (flat admissible backgrounds and suitable sigma already suffice). The beta-six lower-bound direction, decaying recurrence and composite Gaussian fourth-cumulant objections are sound. Composite non-Gaussianity is not an interacting field theory criterion.",
+      "primary_pages": [
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533
+      ]
+    },
+    {
+      "id": "source_check_7",
+      "topic": "L1-L3 reconstruction and local finite-u match",
+      "result": "L1 follows by normalized kernel integration; its stochastic reflection positivity condition remains separate. L2 follows from quadratic-form order, vacuum-compatible contractions, common physical tau and a strict total defect budget; limit embeddings remain hypotheses. L3 follows by positive spectral measures on a dense centered subspace, including uniqueness; a nonzero positive-time vector supplies a finite-energy spectral witness, not non-freeness. The actual normalized Wilson/FK1 kernel matches L1. L2/L3 and full deterministic S4 observable/source identities are not established for it.",
+      "primary_pages": [
+        28,
+        29,
+        30,
+        193,
+        194,
+        195,
+        196,
+        452,
+        453,
+        454,
+        455,
+        548,
+        549,
+        550,
+        551,
+        552
+      ],
+      "local_definition": "PROOF.md current 2901-2935 and FINITE_COUPLING_KERNEL_ASTRA.md FK1 within lines 1-160"
+    }
+  ],
+  "target_corrections_or_clarifications": [
+    {
+      "id": "finding_1",
+      "severity": "citation-coordinate drift; provenance resolution pending",
+      "target_line": 490,
+      "description": "The cited PROOF.md lines 2838-2874 do not contain the law in the current 8052-line snapshot (sha256 4cfe889ea1ca565d3998236fa4e02e503619b9a329408ddd4a09f805f13fca80). It is at approximately 2901-2935. This is not a mismatch of the normalized law itself. Author provenance has not yet been read; it may bind a different historical snapshot.",
+      "required_action": "For a current-source publication, refresh the line reference or explicitly identify the historical source snapshot; do not silently reuse the old coordinate."
+    },
+    {
+      "id": "clarification_1",
+      "severity": "scope qualification, not a substantive correction",
+      "target_line": 284,
+      "description": "Retain the explicit restriction of C10 to sector estimates (5.17)-(5.24); its map does not satisfy the earlier full-space contraction assumption (5.6). A failure of that sector inference is not a no-go for every Yang-Mills flow."
+    },
+    {
+      "id": "clarification_2",
+      "severity": "exact source-form qualification, not a substantive correction",
+      "target_line": 376,
+      "description": "Part III (10.8) is an operator identity. The compact-cutoff/positive-mixture contradiction must be applied on its actual spectral domain; flat-background finite eigenvalues above the cutoff already show the defect."
+    }
+  ],
+  "later_repairs_checked": "Main Appendix C conditional Gram projection and Appendix D fixed-time comparison, Part II Appendix B, Part III E/S2, and Part IV main/Appendix A critical entry were checked. Some abstract implications survive; no inspected repair matches all required hypotheses to the original full normalized law. This is not coverage of every possible repair in 593 pages.",
+  "premise_disposition": "The four registered axioms and three approved primitives retain their exact source grants. Scale reference supplies units, kinetic isotropy regulator form, realized-state reference pointwise evaluation. No missing RG/source/spectral theorem is imported as a premise.",
+  "formal_gate_boundary": "This is a scoped no-fix mathematical review, not a review-loop landing PASS or an independent audit. The formal N1-N8 multi-route no-go packet and combined landing gates were not completed and are not claimed. No global impossibility claim is certified.",
+  "sequence_limitation": "After reading the target and primary mathematics, a search within PROOF.md to locate the shifted normalized-law definition displayed older lane front-summary verdict snippets. No prior review file was opened, and these snippets were not used as mathematical evidence. The source-first independence claim is qualified accordingly."
+}

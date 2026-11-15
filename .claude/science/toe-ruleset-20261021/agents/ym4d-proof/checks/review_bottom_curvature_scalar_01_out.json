@@ -1,0 +1,257 @@
+{
+  "mode": "scalar",
+  "result": {
+    "counting_norms": [
+      {
+        "ell": 3,
+        "case": "bulk",
+        "row": 0.6910390936597077,
+        "row_over_ell": 0.2303463645532359
+      },
+      {
+        "ell": 3,
+        "case": "face",
+        "row": 0.9113815359997418,
+        "row_over_ell": 0.30379384533324727
+      },
+      {
+        "ell": 5,
+        "case": "bulk",
+        "row": 1.2295675286522545,
+        "row_over_ell": 0.2459135057304509
+      },
+      {
+        "ell": 5,
+        "case": "face",
+        "row": 1.6277263244046543,
+        "row_over_ell": 0.32554526488093083
+      },
+      {
+        "ell": 9,
+        "case": "bulk",
+        "row": 2.2705511887579797,
+        "row_over_ell": 0.2522834654175533
+      },
+      {
+        "ell": 9,
+        "case": "face",
+        "row": 3.021024210483084,
+        "row_over_ell": 0.33566935672034265
+      },
+      {
+        "ell": 15,
+        "case": "bulk",
+        "row": 3.812194854051509,
+        "row_over_ell": 0.2541463236034339
+      },
+      {
+        "ell": 15,
+        "case": "face",
+        "row": 5.083468987059623,
+        "row_over_ell": 0.33889793247064154
+      }
+    ],
+    "heat": [
+      {
+        "time": 0.02,
+        "weighted_difference": 1.9394987312659804,
+        "reference": 1.0071941145557883
+      },
+      {
+        "time": 0.7,
+        "weighted_difference": 0.7834280904858006,
+        "reference": 0.7852347850272337
+      },
+      {
+        "time": 9,
+        "weighted_difference": 0.2074445668836178,
+        "reference": 0.3402342116340735
+      },
+      {
+        "time": 90,
+        "weighted_difference": 0.08011127256805041,
+        "reference": 0.15000883375005633
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "scalar_scaled_3_bulk",
+      "error": 0.2303463645532359,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_projection_bulk",
+      "error": 4.163454131295196e-16,
+      "tolerance": 4e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_inverse_bulk",
+      "error": 2.3314883199248636e-15,
+      "tolerance": 3.975308641975313e-10,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing_cell_normalization_bulk",
+      "discrepancy": 80.00000000000001,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "complex_conjugation_bulk",
+      "discrepancy": 0.05901188754092068,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "full_alias_periodicity_bulk",
+      "error": 3.8913524882416704e-16,
+      "tolerance": 3.062337930003785e-10,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "high_branch_not_periodic_bulk",
+      "discrepancy": 0.40573179910897883,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "scalar_scaled_3_face",
+      "error": 0.30379384533324727,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_projection_face",
+      "error": 6.703827419079492e-16,
+      "tolerance": 4e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_inverse_face",
+      "error": 1.887558505023011e-15,
+      "tolerance": 3.975308641975313e-10,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing_cell_normalization_face",
+      "discrepancy": 80.00000000000003,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "complex_conjugation_face",
+      "discrepancy": 0.04930117530720857,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "full_alias_periodicity_face",
+      "error": 1.4085367781605277e-16,
+      "tolerance": 2.3017814277323768e-10,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "high_branch_not_periodic_face",
+      "discrepancy": 0.007815398228317632,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "scalar_scaled_5_bulk",
+      "error": 0.2459135057304509,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_scaled_5_face",
+      "error": 0.32554526488093083,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_scaled_9_bulk",
+      "error": 0.2522834654175533,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_scaled_9_face",
+      "error": 0.33566935672034265,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_scaled_15_bulk",
+      "error": 0.2541463236034339,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_scaled_15_face",
+      "error": 0.33889793247064154,
+      "tolerance": 2.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_bound_0.02",
+      "error": 1.9256454175383804,
+      "tolerance": 8.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_bound_0.7",
+      "error": 0.9976991664456506,
+      "tolerance": 8.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_bound_9",
+      "error": 0.6097110748719391,
+      "tolerance": 8.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "heat_bound_90",
+      "error": 0.5340436997299189,
+      "tolerance": 8.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "origin_only_counterexample_-1",
+      "discrepancy": 0.03,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "origin_only_counterexample_1",
+      "discrepancy": 0.03,
+      "required_exceed": 1e-08,
+      "passed": true
+    }
+  ],
+  "passed": 26,
+  "total": 26,
+  "seconds": 0.6242339999880642,
+  "limits": "Floating point finite diagnostics; independent proof review needed for uniform theorem. No author helper imports."
+}

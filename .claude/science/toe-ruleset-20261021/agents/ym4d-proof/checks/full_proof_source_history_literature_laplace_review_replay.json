@@ -1,0 +1,33 @@
+{
+  "label": "source_history_literature_laplace",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace.py",
+  "script_sha256": "d5e5a7256959958ee4838900d64416ab4faaef5b273038fe7cfafff07dc85f6a",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace_attempt01.json",
+  "reference_sha256": "ca83e8d845408b49dfffc7ffacecf7c184aec33f0bb81481b6adea601fbac8a5",
+  "command": [
+    "/usr/local/bin/python3",
+    "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-three-review-replay-t9k6xzrd/review_source_history_literature_laplace.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T17:23:44.311623+00:00",
+  "finished_utc": "2026-10-29T17:23:44.746777+00:00",
+  "elapsed_seconds": 0.43554754101205617,
+  "exit_code": 0,
+  "stdout": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_literature_laplace_review_replay_out.json",
+    "sha256": "b409673d6e6ee4439509fac4cad4087192c5e7c9a6ee87bd445177f152ca0482"
+  },
+  "stderr": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_literature_laplace_review_replay_err.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "ignored_comparison_fields": [
+    "/elapsed_seconds"
+  ],
+  "all_other_output_fields_identical": true,
+  "parse_error": null,
+  "original_script_unchanged": true,
+  "reference_unchanged": true,
+  "scope": "Coordinator reproduction of independent reviewer evidence; not a new independent review."
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_actual_no_source_vacuum.py", line 116, in <module>
+    check('exact_fixed_reference_full_factors',abs(Jfixed/J0-1)<mp.mpf('1e-30'))
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_actual_no_source_vacuum.py", line 10, in check
+    if not condition: raise AssertionError(name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: exact_fixed_reference_full_factors

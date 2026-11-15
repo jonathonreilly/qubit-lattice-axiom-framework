@@ -1,0 +1,4 @@
+start 2026-10-28 02:49:55 UTC load 2.38 3.06 3.38 mem 34%
+exit 0 end 2026-10-28 02:49:58 UTC
+        2.74 real         2.50 user         0.08 sys
+           278036480  maximum resident set size

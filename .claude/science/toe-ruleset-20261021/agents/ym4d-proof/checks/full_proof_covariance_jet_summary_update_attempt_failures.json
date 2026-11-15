@@ -1,0 +1,23 @@
+{
+  "attempts": [
+    {
+      "exit_code": 1,
+      "exception": "AssertionError: PROOF.md at <stdin> line45",
+      "cause": "PROOF status is blockquoted; exact ordinary-Markdown guard rejected replacement.",
+      "partial_writes": [
+        "HANDOFF.md",
+        "APPROACH_REGISTRY.md",
+        "SESSION25_RESULTS.md"
+      ]
+    },
+    {
+      "exit_code": 1,
+      "exception": "AssertionError: APPROACH_REGISTRY.md at <stdin> line7",
+      "cause": "Using the next level-three header to delimit the common block included unrelated text in APPROACH_REGISTRY.",
+      "partial_writes": []
+    }
+  ],
+  "source_or_review_artifacts_modified": false,
+  "repair": "Use exact common checkpoint terminator, verify three updated blocks, compare the unquoted PROOF block with its frozen original, change only quoted status, verify full legacy-body SHA256 unchanged.",
+  "scientific_tolerances_changed": false
+}

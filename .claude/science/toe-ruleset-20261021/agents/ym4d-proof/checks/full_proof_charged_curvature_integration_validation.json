@@ -1,0 +1,506 @@
+{
+  "created_utc": "2026-10-29T20:12:55.811662+00:00",
+  "scope": "Mechanical integration of the charged review, REC correction, and author freezes.\n\nThis checks bytes, documentation, and recorded reproductions. It does not add\nan independent mathematical review, certify either new author argument, run\nthe whole repository pipeline, apply audit grades, or complete either target.\n",
+  "all_ok": true,
+  "base_revision": "f15a7ad33f90d3de8ef2f8b40cada95d009f60bd",
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "sha256": "7066a0ff76c5b0f99ab197a1a711ccd1662ff01f0a5b35dafd276ff789097309",
+      "bytes": 17730
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "99534bf125cf2295f69f3afd1598f6d7b00d76ef93c36120e17d0f2f2e161aff",
+      "bytes": 9514
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BOTTOM_SECOND_CURVATURE_ASTRA.md",
+      "sha256": "b735eb1d551c9ba80925c0d22830b17ce823735bf7d9ac5d2e19ddabb2ff3ade",
+      "bytes": 28850
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "sha256": "aed3699a78d91bece185601ee28d60d5258700f0a23b60c54b52db8da9355d03",
+      "bytes": 44931
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "sha256": "2d44b9a6e3a1a0ea4c2c2805e27bb180370e4ee1f43feb3d1e8ad729e4242bec",
+      "bytes": 22546
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "5e2ec3b59bc19312f10e091dd52466d58496bdbf07751b3e48bcf2cd060ce98e",
+      "bytes": 779693
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "sha256": "90e38f069ee9d52c02bcef6024b579b95d752408267763cd6b446f96679f6533",
+      "bytes": 69248
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "f7e02d766c8885dceeeac8d2264784cdc65b85a771ae556efa5935d45236836d",
+      "bytes": 20208
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REC_TENSOR_FIX_ASTRA.md",
+      "sha256": "2f1c4b3b863eba15d270fa56aa86f4dbe7e19c0ac9e165157cecc2f964b6f3ee",
+      "bytes": 5163
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "sha256": "c072e8623b295da90b3998c7ec33017f8b8b5c92f0e41fb0e144fb93a4f38262",
+      "bytes": 220050
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01.py",
+      "sha256": "3e996c7ae4b9e92ca756e827d16160ad54ae323c373264bf980dc60442fc0808",
+      "bytes": 6192
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_01_out.json",
+      "sha256": "34c0a218592ac1b9764b76aff43b2d09935e9bb48832ec735b10bdca05dd08a2",
+      "bytes": 25459
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02.py",
+      "sha256": "5f0d3dbad4ce83cf22e1522607e211cc9574596b1f41911f7934b7fd896ff7c5",
+      "bytes": 10831
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_02_out.json",
+      "sha256": "425cae6c2906bc001a914fe50e3dc88685e723dc1c7d1266a49cddd5ad2331c4",
+      "bytes": 10743
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_attempts.json",
+      "sha256": "dfe430cbbfb5a8b3dea7688128aa7bf1ff2828ee9f2c43e1a907e680a6fc06c5",
+      "bytes": 3973
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_criteria.md",
+      "sha256": "a70fa63222663487566be4450b5fd25815c12d09553babce118664be130029b7",
+      "bytes": 3046
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_freeze.py",
+      "sha256": "5a8c2f5d95e284ed24b263ece73db03355857db797861406abf226573ec7283a",
+      "bytes": 11161
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_read_slices.json",
+      "sha256": "0fec53e7f504c5811d584c3376677ebb95814a29c58fca91124673e9bf93b8e8",
+      "bytes": 87710
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_receipt.json",
+      "sha256": "88d659a2a512fcc57b95dc077836ceb555dbeea177be36cde0abf4f6d0f977b4",
+      "bytes": 5687
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bottom_second_curvature_source_manifest.json",
+      "sha256": "8d68afd95ce5cb2315977a06f8590555b739bc80bdee2afa18eda38388a9ee67",
+      "bytes": 30041
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_02.json",
+      "sha256": "ec6604fba6498a50e7b4023e6a5d8df8ea08168f8886296d98cee76616a8bb6a",
+      "bytes": 12748
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_02.stderr",
+      "sha256": "e822d5fb0f9eb7aca6933a8b9e3ec27f9827e544f4ca0dbeb12af3229a00ea2b",
+      "bytes": 674
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_03.json",
+      "sha256": "67e6b25cc7d4e8ceec7d8178a875c021e040b4a190a256732ae46297f785c941",
+      "bytes": 13059
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_03.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.json",
+      "sha256": "7b6d6b1e318b1a872d43b9b7f64e753555681509d647e2139fbf5cbf57719878",
+      "bytes": 13169
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check.py",
+      "sha256": "f0b6a023ec4c8c2e70ae7d2b1176fc1fdf050dc2da7c6580895fa27b7c5693e6",
+      "bytes": 15389
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt01.py",
+      "sha256": "8df74dea4cdea8e80a82a0c921e64364f2ca3f786042fb48e3943262720fd23d",
+      "bytes": 13835
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt02.py",
+      "sha256": "8bd147aa7dc4683c8d7bfb66ef3b3c77b68702fcbaae86c930deceaa2a0578be",
+      "bytes": 14786
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt03.py",
+      "sha256": "30ab873565eb6ea37df471046e78a62c75596824d6078f2c28abe176115b33db",
+      "bytes": 15311
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_criteria.md",
+      "sha256": "e48a12a79948ffe4505cf2d87502a8bbd4d31915ee520689a8a7e5d2e32035d4",
+      "bytes": 4582
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_criteria_initial.md",
+      "sha256": "c9387686d2121fbecde53114f6d5a3568528461fbc48130bccfa84035714b75c",
+      "bytes": 3765
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_derivatives_01.json",
+      "sha256": "1c73f89e48a80072b7f6ca42df5a2d4f3aaba6773228a3acdfd8e758c0396dbd",
+      "bytes": 3346
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_derivatives_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry.py",
+      "sha256": "86206301935db35ca6c8d912479594a323fce04f412dd22d499ea4a5dcc172af",
+      "bytes": 8719
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_01.json",
+      "sha256": "eac510cb3679e43d669404d625f499cd3cb3381c508b94ea8ddc0177928a7724",
+      "bytes": 2828
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.json",
+      "sha256": "24cca5e22dd3d233e04cf7520668e50a81ed1ffa9f9eafd07a7bd416c5ebbd1e",
+      "bytes": 2825
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.json",
+      "sha256": "17f7bbb7016f94afd6c5d1153d7876a16d70484aecc42016e4b8024f990ac626",
+      "bytes": 2827
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_attempt01.py",
+      "sha256": "6349cf6cd38e48b52ab7eedd8706c3b8505ca950e5778917a8aac8070fb42d9e",
+      "bytes": 8253
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_inputs.json",
+      "sha256": "9fefc54866ffcc84380ccb50d0fbc5183a6c38258cda401588fd509c4621821c",
+      "bytes": 9881
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_primary_sources.json",
+      "sha256": "9916336671fc82d55723c5b464c74b2660abbd89c150b723ca31646042bf00fa",
+      "bytes": 2257
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_receipt.json",
+      "sha256": "5613420d87a16c573b2848cf43d2385cad7961dac3f0d0379fd5ce975d97e5df",
+      "bytes": 13087
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_vocab_lint.txt",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_curvature_integration.py",
+      "sha256": "6898ae2e5fda3aad0a7f6c1da78961b4b02d92469bd676e83c2f92ef7f928710",
+      "bytes": 8022
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_rec_summary_update.json",
+      "sha256": "46f8c037488e594ed3bcaa797f5fa5eca2a7a19b2d0eb01d4446b81ec01dad80",
+      "bytes": 1508
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_bindings.json",
+      "sha256": "99a2b257d728c5432cba562b97cdac2e419ed40e14f3fc2dcac07d81fe16ea6f",
+      "bytes": 8701
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_gauge_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_gauge_out.json",
+      "sha256": "5118ad71a0a151ac3f3fc1554f2a8fd57b7750c5dbed95b7deb1fe4e16950296",
+      "bytes": 2299
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_gauge_replay.json",
+      "sha256": "6f78d1c5e8c88a6570d73bf510afc1c994e6430bf60654649778aef31dc89da7",
+      "bytes": 1424
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_n1_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_n1_out.json",
+      "sha256": "18fabb3934adab063be131d9b4582eea11bd57e9d2bcad9873cd9db5375f6ca3",
+      "bytes": 6663
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_n1_replay.json",
+      "sha256": "3fc2eb0992951d8b3adb21775ce82396cf56daea6ad4b44eb6de336ba0fb9f70",
+      "bytes": 1361
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_n2_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_n2_out.json",
+      "sha256": "254f5a79680568220ed1072f8331c88d42cd466f316b571a31b3ec936b72022c",
+      "bytes": 7528
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_n2_replay.json",
+      "sha256": "a2325b319b6807f4347d259ed6cd3631273ca48fcc746d4c19a999233f1c30f9",
+      "bytes": 1361
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_replay.py",
+      "sha256": "fd081a6161fd6bea012743ec503c5e3ba87f73a3d7180308ef050cecc4a2d121",
+      "bytes": 4258
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_replay_summary.json",
+      "sha256": "5ff39a8d5c3b2faad062615b7310af029d2889fb382d70fdc813f6cb9ae8a656",
+      "bytes": 6502
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_su3_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_su3_out.json",
+      "sha256": "f6eb38abf747c9b4d7e1a87f5258b1d635e7abcfbc64649dfbd436f08013f5bb",
+      "bytes": 3153
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_charged_review_su3_replay.json",
+      "sha256": "4dfdbce9c456b824c8a0fbd462d0f1c113fc15d7fd96ca63199f557fce4b98c8",
+      "bytes": 1411
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_curvature_background_freeze_status.json",
+      "sha256": "e2afeb54b4f23a654baae82a5b6660d3cd0d25d7e0e055d5cd787b8bc36a01be",
+      "bytes": 1663
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_primary_followup_20261029.json",
+      "sha256": "674ecae80983e8a15cb429b9fc05307632aad8ab330463e1518c19f71629a63b",
+      "bytes": 1858
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_rec_tensor_fix.json",
+      "sha256": "7f58b96c737b0c42d6fe24220b2e4c53f4929830710fa0f9c6b3d925f944ecd8",
+      "bytes": 2363
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_attempts.json",
+      "sha256": "46afe0390dd9860586d5d91955a702cb815f2c548c2f4ef88d80a8eb9b3ad809",
+      "bytes": 8351
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_criteria.md",
+      "sha256": "2d0e12fea12629b8585c2138df06db2a41c42601b927d0cec812efba6d77e4cc",
+      "bytes": 3804
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge.py",
+      "sha256": "b33b9e10f7087a94c5e2ebb6b208c7cc1f9866895f4587f9761538f1ece68878",
+      "bytes": 2141
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_01_out.json",
+      "sha256": "5118ad71a0a151ac3f3fc1554f2a8fd57b7750c5dbed95b7deb1fe4e16950296",
+      "bytes": 2299
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_criteria.md",
+      "sha256": "8e3a47179dbefde440a8bb139bc42484f9c23ab2c10f4c061caea675743223b1",
+      "bytes": 858
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent.py",
+      "sha256": "96a60bc9d11ca59c01fc480b59dab6aa9378ee3525043805cd9fd2928894117e",
+      "bytes": 18142
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent_initial.py",
+      "sha256": "084e05a0f7afc5bd6d11ab5e98f0100f08bd71fdbd1092c1fb93258c97fc76d6",
+      "bytes": 18132
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_mechanical.json",
+      "sha256": "057a1cd9378f28bbb2784b6d5d8566d501305dc1648206ddb459a830d684146f",
+      "bytes": 516
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_01_err.txt",
+      "sha256": "4174c864ae60442029f40d13790dd44eb2842f91f38bb061334c35bfaa78bf0f",
+      "bytes": 1902
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_01_out.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_02_out.json",
+      "sha256": "33d751fa2b04b151c4547434c55bafc44f3f994f752b7b004da63fb642807100",
+      "bytes": 6663
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n2_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n2_01_out.json",
+      "sha256": "6cb72382c3428e2810fd62ee62ea895960a0444ee929f549a314f959b5450a37",
+      "bytes": 7528
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_read_manifest.json",
+      "sha256": "dbeda38e3e0e858d74ad84a3d4d0469e464153a061de7eb0995f779b570fa88c",
+      "bytes": 22912
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_receipt.json",
+      "sha256": "ad4226851b1b1d7b29e87f19c42c18a021fd8dd7afbfb5a85eeff5007120962d",
+      "bytes": 22335
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3.py",
+      "sha256": "b4c36fde6a5ee2492af6e81f3bbb63ed645dbfe1d8e000905dee37409a9578e0",
+      "bytes": 4992
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_01_out.json",
+      "sha256": "f6eb38abf747c9b4d7e1a87f5258b1d635e7abcfbc64649dfbd436f08013f5bb",
+      "bytes": 3153
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_criteria.md",
+      "sha256": "eafdab1047addefd3082705c497e15acd8ffa379e5e988edf0773dd035dc956b",
+      "bytes": 1480
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_tensor_fix_receipt.json",
+      "sha256": "599b901309efc62ad8e7bffcf428fbb03d4a236ef2f6fc83c6f4971e4104d0fd",
+      "bytes": 5007
+    }
+  ],
+  "receipt_pins": {
+    "review_charged_jet_receipt.json": "ad4226851b1b1d7b29e87f19c42c18a021fd8dd7afbfb5a85eeff5007120962d",
+    "review_rec_tensor_fix_receipt.json": "599b901309efc62ad8e7bffcf428fbb03d4a236ef2f6fc83c6f4971e4104d0fd",
+    "bottom_second_curvature_receipt.json": "88d659a2a512fcc57b95dc077836ceb555dbeea177be36cde0abf4f6d0f977b4",
+    "covariant_soft_background_receipt.json": "5613420d87a16c573b2848cf43d2385cad7961dac3f0d0379fd5ce975d97e5df"
+  },
+  "bound_artifact_records": 63,
+  "charged_proof_inputs_bound": 10,
+  "rec_fix": {
+    "exact_single_paragraph_replacement": true,
+    "unchanged_prefix_bytes": 5169,
+    "affected_review_confirmed": true,
+    "source_read_ranges_bound": 7,
+    "whole_library_certified": false
+  },
+  "reviewer_programs_reproduced": 4,
+  "reproduced_predicates": 88,
+  "archived_empty_json_preserved": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_01_out.json"
+  ],
+  "local_links_checked": 367,
+  "vocabulary_report": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "vocabulary_stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to /var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-charged-curvature-integration-hewsgb5k/vocab.json\n",
+  "whitespace_exit_code": 0,
+  "legacy_PROOF_body_unchanged": true,
+  "bottom_curvature_independent_review": "PENDING",
+  "covariant_background_independent_review": "PENDING",
+  "LIB1_evidence_hold": "OPEN: B1",
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

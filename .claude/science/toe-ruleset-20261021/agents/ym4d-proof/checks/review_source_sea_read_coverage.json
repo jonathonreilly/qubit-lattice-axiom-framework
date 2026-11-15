@@ -1,0 +1,273 @@
+{
+  "created_at_utc": "2026-10-29T18:13:27.412550+00:00",
+  "scope": "bounded source unit, not whole PR review or audit",
+  "complete_source_and_consumed_context": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "line_count": 454,
+      "revision": "working-tree frozen bytes",
+      "read_kind": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "line_count": 854,
+      "revision": "working-tree frozen bytes",
+      "read_kind": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "line_count": 339,
+      "revision": "working-tree frozen bytes",
+      "read_kind": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "b14a7c0a3738117de28778827e9b5b08be338f7093941a48b6db4aac066cf0e8",
+      "line_count": 7211,
+      "revision": "f078e7af6b9437941bcd43534e681d5a54feb249",
+      "read_kind": "consumed mathematical passages",
+      "ranges": [
+        {
+          "first": 2045,
+          "last": 2088,
+          "sha256": "4434f447b3139b5907aa4b75e10eed5c6c4848b2239d9aa4829dd5e586d227e1"
+        },
+        {
+          "first": 4035,
+          "last": 4150,
+          "sha256": "36d3a82d097dfba3ca4b7da774d3d7445366d7c0b2b778b394b4d77239e2c074"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "line_count": 1267,
+      "revision": "working-tree frozen bytes",
+      "read_kind": "consumed mathematical passages",
+      "ranges": [
+        {
+          "first": 33,
+          "last": 90,
+          "sha256": "c6b0bbb394275d0f521a0e176b37a1ed4b29ef4253208dce5a38104a074bc7fb"
+        },
+        {
+          "first": 275,
+          "last": 365,
+          "sha256": "e1bba5f92d7fe1df731c5fb6d2a8309cb3d67a3520f65e89b934822314200254"
+        },
+        {
+          "first": 940,
+          "last": 1040,
+          "sha256": "fda389770c719063650026a2dda78b16d6ef8408f95245977ee3a0002f6b4f4f"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HW.md",
+      "sha256": "d4b51b6b7c19e41baa0c2dac7ee03d34efc991c7e55a9ef8a766132af17a6028",
+      "line_count": 2411,
+      "revision": "working-tree frozen bytes",
+      "read_kind": "consumed probability/reference passage",
+      "ranges": [
+        {
+          "first": 80,
+          "last": 135,
+          "sha256": "c7b332e2b027770073117a415c93e49ea0bbd43d0b28e46663761b8622d0e846"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RLARGE_V2.md",
+      "sha256": "b0e1b7e20a84e3bb1529c509b1cdacd2c68b1bb8e5354f29bba90952f4983dd8",
+      "line_count": 376,
+      "revision": "working-tree frozen bytes",
+      "read_kind": "consumed frozen-V/kernel-law discussion",
+      "ranges": [
+        {
+          "first": 105,
+          "last": 220,
+          "sha256": "3777c3ff0c9ab882e72e7d21171ed0e26169f38499fbfcbc10ff1c12a9043176"
+        }
+      ]
+    }
+  ],
+  "methodology_read": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "read_kind": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "read_kind": "complete"
+    }
+  ],
+  "methodology_partial_routing_reads": [
+    "Physics DISCOVERY: operative discovery/closure sections read; some combined output truncated; not certified as complete campaign instruction coverage.",
+    "Front-door, opportunity queue, vocabulary, canonical harness and audit README were routing/status-boundary reads, some truncated; not scientific proof authority or a whole-PR coverage claim."
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/pdf/math-ph/0610025v2",
+      "local_path": "/private/tmp/source-sea-literature/biskup-v2.pdf",
+      "sha256": "0895449a770754915ad6d3cf44049b92d4981b1ace6dfeac76cf0380768a8733",
+      "printed_pages_read": "38\u201340, 44\u201346",
+      "complete_input_storage": "outside repository only"
+    },
+    {
+      "url": "https://math.caltech.edu/SimonPapers/93.pdf",
+      "local_path": "/private/tmp/source-sea-literature/fils-original.pdf",
+      "sha256": "942210d68bb161cd60402f93557f93e88a7a245f45c7688f2ad5f847fd40ecea",
+      "printed_pages_read": "5\u20136, 19\u201321",
+      "complete_input_storage": "outside repository only"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1410.2798v3",
+      "local_path": "/private/tmp/source-sea-literature/dimock-axial-v3.pdf",
+      "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "printed_pages_read": "14\u201321",
+      "complete_input_storage": "outside repository only"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1212.5562v2",
+      "printed_pages_read": "91\u201392, Appendix F Theorem F.1 and proof continuation",
+      "access": "fresh primary web PDF; no repository copy",
+      "boundaries": "ultralocal independent measure, small local interactions; not actual nonabelian soft-kernel covariance"
+    }
+  ],
+  "author_evidence_read": "Entire original checker after all three independent first outputs. Ancillary criteria, results, fetch record, read coverage and literature notes read. Original outputs parsed and reproduced; additive v2 diff, affected output and repair receipt read.",
+  "limitations": [
+    "No combined candidate gate, audit worker, current-main preservation certification or PR disposition is executed by this reviewer.",
+    "PROOF mathematical read is pinned to f078e7af6b9437941bcd43534e681d5a54feb249; later header-only status edits are not represented as newly read science.",
+    "No full third-party PDF or converted text is stored in the repository."
+  ],
+  "bookkeeping_failures_preserved": [
+    {
+      "operation": "first read-coverage generation",
+      "exception": "FileNotFoundError: /private/tmp/source-sea-literature/dimock-1410.2798v3.pdf",
+      "cause": "wrong temporary PDF basename in metadata helper; scientific reads had used the existing dimock-axial-v3.pdf",
+      "resolution": "resolved filename against actual temporary input inventory; no scientific computation rerun or evidence overwritten"
+    }
+  ]
+}

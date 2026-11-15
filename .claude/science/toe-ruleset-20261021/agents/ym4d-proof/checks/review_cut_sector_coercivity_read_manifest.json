@@ -1,0 +1,875 @@
+{
+  "author_input_identity_checks": [
+    {
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "ae55788084e0946faa221743e7fe92419e4faef348f00b98aeceeced625e4b40",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "ae55788084e0946faa221743e7fe92419e4faef348f00b98aeceeced625e4b40",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "721d32877285a05ae35aaabc635fa98d3098b7473c3f364d686d5ed29bcbc071",
+      "bytes_match": true,
+      "direct_mathematical_content_read": false,
+      "expected_sha256": "721d32877285a05ae35aaabc635fa98d3098b7473c3f364d686d5ed29bcbc071",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_COMPLEMENT_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "bytes_match": true,
+      "direct_mathematical_content_read": false,
+      "expected_sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "bytes_match": true,
+      "direct_mathematical_content_read": false,
+      "expected_sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "bytes_match": true,
+      "direct_mathematical_content_read": false,
+      "expected_sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "085a78bcae79fe5eb7599fbfa6e95a4d2f165442ed6d03656863da913e142ee7",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "085a78bcae79fe5eb7599fbfa6e95a4d2f165442ed6d03656863da913e142ee7",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA55.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "3045e5d939fb8ff9b130326b8916d00185fd5a23177ad6f32687662ae0dfc76b",
+      "bytes_match": true,
+      "direct_mathematical_content_read": true,
+      "expected_sha256": "3045e5d939fb8ff9b130326b8916d00185fd5a23177ad6f32687662ae0dfc76b",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA_RES55.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    },
+    {
+      "actual_sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "bytes_match": true,
+      "direct_mathematical_content_read": false,
+      "expected_sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "kind": "input_pins",
+      "match": true,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "use": "exact frozen identity only unless listed with actual read ranges above"
+    }
+  ],
+  "author_packaging_reads": [
+    {
+      "bytes": 10863,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_receipt.json",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          192
+        ]
+      ],
+      "role": "author packaging identity/provenance only; not mathematical proof",
+      "sha256": "c1b64e10e94c7dedd0e73195f46e8235f83bbda6665d9a739626ae44eef6fcac",
+      "stage": "after reasoning freeze",
+      "total_lines": 192
+    },
+    {
+      "bytes": 24051,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_read_manifest.json",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          377
+        ]
+      ],
+      "role": "author packaging identity/provenance only; not mathematical proof",
+      "sha256": "6f7dbb5d91a76789df58ce44fecc651acd22af7040b780962c04bdd64d8e343f",
+      "stage": "after reasoning freeze",
+      "total_lines": 377
+    },
+    {
+      "bytes": 17969,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_freeze.py",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          192
+        ]
+      ],
+      "role": "author packaging identity/provenance only; not mathematical proof",
+      "sha256": "e64ca5394d1ca3307c612a3cf3124959ecfba1315469056bd8351d72d81c093a",
+      "stage": "after reasoning freeze",
+      "total_lines": 192
+    },
+    {
+      "bytes": 3223,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_verification.json",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          109
+        ]
+      ],
+      "role": "author packaging identity/provenance only; not mathematical proof",
+      "sha256": "f0b80583b2aeb003ada3c574b2902b056a7062b6e589e7f0280cb11d8974f021",
+      "stage": "after reasoning freeze",
+      "total_lines": 109
+    },
+    {
+      "bytes": 998,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_pack_failure01.json",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          15
+        ]
+      ],
+      "role": "author packaging identity/provenance only; not mathematical proof",
+      "sha256": "26766c32edf29c72f6e74a3b1f942897ab6dc713018235594a2c8e37a62c46a8",
+      "stage": "after reasoning freeze",
+      "total_lines": 15
+    },
+    {
+      "bytes": 5202,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_process.json",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          73
+        ]
+      ],
+      "role": "author packaging identity/provenance only; not mathematical proof",
+      "sha256": "be509c96a217165c98bcc875a0c43998cf6c984291b67054c165625769a14bb2",
+      "stage": "after reasoning freeze",
+      "total_lines": 73
+    },
+    {
+      "bytes": 17543,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_freeze_attempt01.py",
+      "read_kind": "complete diff against fully read final checker",
+      "read_ranges_inclusive": [
+        [
+          1,
+          189
+        ]
+      ],
+      "role": "first parser-attempt code reconstructed from fully read final code and complete diff; failure preserved",
+      "sha256": "465bccda8b04aac849223e6a959647d02f87fad6d9b155c40f215e66581af561",
+      "stage": "after reasoning freeze",
+      "total_lines": 189
+    }
+  ],
+  "coverage_policy": "Exact operative ranges listed, not whole-file claims for partial sources. Hash-only predecessor/author input identities are not read coverage or inherited mathematical judgments. Extra navigation/search hits carry no proof credit.",
+  "created_utc": "2026-10-29T23:17:50.527391+00:00",
+  "failures_and_scope": [
+    "No binding mathematical finding in the independent reconstruction.",
+    "Some broad combined navigation/read outputs truncated; operative proof ranges were re-read separately. This manifest lists only confirmed ranges.",
+    "Author packaging failed once on an indented equation misparsed as a Markdown link. Full code diff inspected after independent reasoning freeze. Failed code and partial outputs preserved, source unchanged.",
+    "Prior CC original 23/24 result, failed finite-width ratio, post-hoc probe and operational failures are unchanged; no new CS numerical claim is made.",
+    "Three approved primitive source-note files were not required or consumed; registry and minimal-axiom boundary were read. The SU(N) model is supplied mathematical data, not derived from those primitives.",
+    "Combined integration, live audit and pipeline gates are coordinator-owned and were not performed by this restricted review worker."
+  ],
+  "format": "independent-source-review-read-manifest-v1",
+  "historical_proof_input": {
+    "commit": "9658cc870d82401001e56b29f351aec5f5f58fa1",
+    "future_front_status_edits": "do not restamp this historical read identity; coordinator may edit front status after review freeze",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    "sha256": "ae55788084e0946faa221743e7fe92419e4faef348f00b98aeceeced625e4b40"
+  },
+  "independent_reasoning_freeze": {
+    "before_author_packaging_inspection": true,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_reasoning.md",
+    "sha256": "3782be34577149a8d0f32d937e864dacbb1405455976a2e3c80d28de36638611",
+    "utc": "2026-10-29T23:11:08.262725+00:00"
+  },
+  "literature": [
+    {
+      "coverage": "Primary extracted PDF text lines 0-143 and 1640-1829 read; intervening find snippets only. Report relies on opening denominator discussion and lines 1686-1769, connected localization/activity discussion. No complete-paper claim.",
+      "retrieval": "web tool, no downloaded or committed PDF; no unobserved binary hash claimed",
+      "role": "architectural comparison and credit; no theorem or constant imported",
+      "title": "Balaban, Large field renormalization II, CMP 122 (1989), 355-392",
+      "url": "https://scispace.com/pdf/large-field-renormalization-ii-localization-exponentiation-h8b7ih93xo.pdf"
+    },
+    {
+      "coverage": "Primary HTML lines 0-118, 1914-1990, and find snippet 812-830. Report relies on lines 58-118 and 1933-1986, especially localization setup and Lemma 3.15 statement, not its unread proof.",
+      "retrieval": "web tool HTML; no local PDF",
+      "role": "scalar d=3 comparison; covariance-square-root localization distinction, not soft SU(N) theorem",
+      "title": "Dimock, The Renormalization Group According to Balaban II, arXiv:1212.5562v2",
+      "url": "https://arxiv.org/html/1212.5562v2"
+    }
+  ],
+  "mathematical_and_scope_reads": [
+    {
+      "bytes": 32365,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          617
+        ]
+      ],
+      "role": "entire frozen producer; all substantive claims reconstructed",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "stage": "before reasoning freeze",
+      "total_lines": 617
+    },
+    {
+      "bytes": 28993,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          31,
+          510
+        ]
+      ],
+      "role": "actual paired paths, tree gauge, background coordinates and critical-branch/precision proof used by CS30-CS32",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "stage": "before reasoning freeze",
+      "total_lines": 568
+    },
+    {
+      "bytes": 28162,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          16,
+          215
+        ]
+      ],
+      "role": "exact good sector/cut conventions and interior contraction proof used by CS17-CS21",
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "stage": "before reasoning freeze",
+      "total_lines": 527
+    },
+    {
+      "bytes": 39217,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          27,
+          375
+        ],
+        [
+          508,
+          633
+        ]
+      ],
+      "role": "actual complete scalar chart, Hessian, affine white map, hard cube and complement/source domains",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "stage": "before reasoning freeze",
+      "total_lines": 722
+    },
+    {
+      "bytes": 48847,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          104,
+          463
+        ],
+        [
+          528,
+          651
+        ]
+      ],
+      "role": "H8 exact joint replacement, full readers, fixed denominators, positive returned gas and H24 collar/tree bound",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "stage": "before reasoning freeze",
+      "total_lines": 854
+    },
+    {
+      "bytes": 23793,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          56,
+          100
+        ],
+        [
+          191,
+          355
+        ]
+      ],
+      "role": "real original-law source convention, normalized histories and reader support domains",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "stage": "before reasoning freeze",
+      "total_lines": 454
+    },
+    {
+      "bytes": 29910,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          32,
+          143
+        ]
+      ],
+      "role": "full-colour scalar covariance and square-root conventions",
+      "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "stage": "before reasoning freeze",
+      "total_lines": 535
+    },
+    {
+      "bytes": 48089,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          51,
+          88
+        ]
+      ],
+      "role": "fixed linear conventions; contextual comparison, not a new uniform nonlinear theorem",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "stage": "before reasoning freeze",
+      "total_lines": 538
+    },
+    {
+      "bytes": 787626,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          2260,
+          2290
+        ]
+      ],
+      "role": "actual Decision 4 paired S4-prime path orientation and inverse convention",
+      "sha256": "ae55788084e0946faa221743e7fe92419e4faef348f00b98aeceeced625e4b40",
+      "stage": "before reasoning freeze",
+      "total_lines": 7428
+    },
+    {
+      "bytes": 94345,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          312,
+          376
+        ],
+        [
+          544,
+          573
+        ],
+        [
+          656,
+          697
+        ]
+      ],
+      "role": "original kernel, all-N phase identity, retained curvature term and explicit errata comparison",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "stage": "before reasoning freeze",
+      "total_lines": 812
+    },
+    {
+      "bytes": 46090,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          108,
+          144
+        ],
+        [
+          216,
+          242
+        ]
+      ],
+      "role": "original-normalizer and all-N sign objections used as negative checks, not inherited review authority",
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d",
+      "stage": "before reasoning freeze",
+      "total_lines": 318
+    },
+    {
+      "bytes": 81610,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA55.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          117,
+          157
+        ]
+      ],
+      "role": "actual volume and length conventions",
+      "sha256": "085a78bcae79fe5eb7599fbfa6e95a4d2f165442ed6d03656863da913e142ee7",
+      "stage": "before reasoning freeze",
+      "total_lines": 749
+    },
+    {
+      "bytes": 60917,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA_RES55.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          87,
+          118
+        ],
+        [
+          191,
+          230
+        ]
+      ],
+      "role": "scope of imported residual machinery; not used as proof of CS",
+      "sha256": "3045e5d939fb8ff9b130326b8916d00185fd5a23177ad6f32687662ae0dfc76b",
+      "stage": "before reasoning freeze",
+      "total_lines": 574
+    },
+    {
+      "bytes": 34340,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          281,
+          321
+        ]
+      ],
+      "role": "repulsive graph-to-tree partition and recursion rebuilt for the consumed H24 step",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "stage": "before reasoning freeze",
+      "total_lines": 582
+    },
+    {
+      "bytes": 1497,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          11
+        ]
+      ],
+      "role": "owner process and exact role/scope restriction",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "stage": "before reasoning freeze",
+      "total_lines": 11
+    },
+    {
+      "bytes": 10531,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          49
+        ]
+      ],
+      "role": "model data explicitly supplied, no primitive derivation or empirical import; scope cross-check",
+      "sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b",
+      "stage": "after reasoning freeze",
+      "total_lines": 49
+    }
+  ],
+  "methodology_and_authority_reads": [
+    {
+      "bytes": 5441,
+      "path": "/Users/jonBridger/AGENTS.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          31
+        ]
+      ],
+      "role": "persistent local execution rules",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "stage": "before reasoning freeze",
+      "total_lines": 31
+    },
+    {
+      "bytes": 1118,
+      "path": "AGENTS.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          26
+        ]
+      ],
+      "role": "repository authority and source-review requirements",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "stage": "before reasoning freeze",
+      "total_lines": 26
+    },
+    {
+      "bytes": 9276,
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          140
+        ]
+      ],
+      "role": "installed physics router",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "stage": "before reasoning freeze",
+      "total_lines": 140
+    },
+    {
+      "bytes": 20680,
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          313
+        ]
+      ],
+      "role": "installed review router",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "stage": "before reasoning freeze",
+      "total_lines": 313
+    },
+    {
+      "bytes": 11788,
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          193
+        ]
+      ],
+      "role": "current-main science workflow",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "stage": "before reasoning freeze",
+      "total_lines": 193
+    },
+    {
+      "bytes": 2180,
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          35
+        ]
+      ],
+      "role": "methodology authority/freshness rule",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "stage": "before reasoning freeze",
+      "total_lines": 35
+    },
+    {
+      "bytes": 5188,
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          96
+        ]
+      ],
+      "role": "independence and review setup",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "stage": "before reasoning freeze",
+      "total_lines": 96
+    },
+    {
+      "bytes": 12608,
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          183
+        ]
+      ],
+      "role": "source unit versus combined integration placement",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "stage": "before reasoning freeze",
+      "total_lines": 183
+    },
+    {
+      "bytes": 12940,
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          248
+        ]
+      ],
+      "role": "mathematics, physical scope, constants and import lenses",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "stage": "before reasoning freeze",
+      "total_lines": 248
+    },
+    {
+      "bytes": 7554,
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          140
+        ]
+      ],
+      "role": "binding finding and final report requirements",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "stage": "before reasoning freeze",
+      "total_lines": 140
+    },
+    {
+      "bytes": 23216,
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          394
+        ]
+      ],
+      "role": "audit/source separation; read in bounded pieces, 1-190 confirmed again after freeze",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "stage": "before reasoning freeze",
+      "total_lines": 394
+    },
+    {
+      "bytes": 4975,
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          126
+        ]
+      ],
+      "role": "proof search scope, evidence and closure discipline",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "stage": "before reasoning freeze",
+      "total_lines": 126
+    },
+    {
+      "bytes": 16755,
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          336
+        ]
+      ],
+      "role": "claim/import/conditional status distinctions",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "stage": "before reasoning freeze",
+      "total_lines": 336
+    },
+    {
+      "bytes": 6427,
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          130
+        ]
+      ],
+      "role": "primitive source authority check",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "stage": "before reasoning freeze",
+      "total_lines": 130
+    },
+    {
+      "bytes": 11333,
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          233
+        ]
+      ],
+      "role": "framework premise boundary; CS is a supplied mathematical model theorem",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "stage": "before reasoning freeze",
+      "total_lines": 233
+    },
+    {
+      "bytes": 6416,
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "read_kind": "direct source read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          52
+        ]
+      ],
+      "role": "registry read only; none of the added primitive content is a premise of CS",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "stage": "partial before freeze, complete confirmed after freeze",
+      "total_lines": 52
+    },
+    {
+      "bytes": 5767,
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "read_kind": "installed full text plus complete diff; not a new blind full-file read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          93
+        ]
+      ],
+      "role": "current-main router content reconstructed from the fully read installed router and full source diff; review addition lines 163-230 read directly",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "stage": "before reasoning freeze",
+      "total_lines": 93
+    },
+    {
+      "bytes": 24561,
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "read_kind": "installed full text plus complete diff; not a new blind full-file read",
+      "read_ranges_inclusive": [
+        [
+          1,
+          370
+        ]
+      ],
+      "role": "current-main router content reconstructed from the fully read installed router and full source diff; review addition lines 163-230 read directly",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "stage": "before reasoning freeze",
+      "total_lines": 370
+    }
+  ],
+  "methodology_snapshot": {
+    "installed_drift": "checked against current-main; user Astra/max overrides lower profiles",
+    "review_workspace_head": "9658cc870d82401001e56b29f351aec5f5f58fa1",
+    "selected_main_commit": "ca2bc7ddf64790da96cd43d42017d000fbfe4808"
+  },
+  "nested_workers": 0,
+  "numerical_experiments": 0,
+  "reviewer": "same-family fresh-context worker, not source author; Astra/max requested, serving backend not independently observable",
+  "source_snapshot": {
+    "lines": 617,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+    "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e"
+  }
+}

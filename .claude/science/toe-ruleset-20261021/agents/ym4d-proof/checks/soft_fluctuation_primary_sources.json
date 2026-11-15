@@ -1,0 +1,47 @@
+{
+  "cache_policy": "reuse identified matching primary PDFs; no full external text packaged",
+  "sources": [
+    {
+      "version": "1410.2798v3",
+      "url": "https://arxiv.org/pdf/1410.2798v3",
+      "cache_pdf": "/tmp/uniform_soft_minimizer_primary/axial.pdf",
+      "pdf_sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "pdf_bytes": 292405,
+      "cache_text": "/tmp/uniform_soft_minimizer_primary/axial.txt",
+      "text_sha256": "e714721c153d08c1b4c36d56db4b7ae9405ae9367e6a93019d74bc3ff147c4e2",
+      "coverage_read": "PDF pp.16-21, sections3.7-3.10, equations100-152 and Propositions7-8",
+      "cache_identity_check": "matched uniform_soft_minimizer_primary_sources02.json and source_sea_fetch_record.json",
+      "role": "non-derivation construction comparison",
+      "external_full_text_in_repository": false
+    },
+    {
+      "version": "1212.5562v2",
+      "url": "https://arxiv.org/pdf/1212.5562v2",
+      "cache_pdf": "/tmp/claude-502/-Users-jonBridger-Toy-Physics--claude-worktrees-yang-mills-proof-df9972/a931aaa3-5369-4512-9e8d-b8590010706c/scratchpad/arxiv_balaban/pdf/1212.5562.pdf",
+      "pdf_sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c",
+      "pdf_bytes": 953179,
+      "cache_text": "/tmp/claude-502/-Users-jonBridger-Toy-Physics--claude-worktrees-yang-mills-proof-df9972/a931aaa3-5369-4512-9e8d-b8590010706c/scratchpad/arxiv_balaban/txt/1212.5562.txt",
+      "text_sha256": "397a2651b949b6f6724c4b3599b23c9882f477a6123972abd793946c21bbd437",
+      "coverage_read": "PDF pp.91-92, AppendixF, equations633-646",
+      "cache_identity_check": "version displayed in cached extracted first-page text; fresh primary version page checked",
+      "role": "non-derivation construction comparison",
+      "external_full_text_in_repository": false
+    },
+    {
+      "version": "hep-th/9409094v1",
+      "url": "https://arxiv.org/pdf/hep-th/9409094v1",
+      "cache_pdf": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.pdf",
+      "pdf_sha256": "6498535d584bd935cd3d57f565d9c662c4fccbba31f623850431d2de3b4d8bee",
+      "pdf_bytes": 303807,
+      "cache_text": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.txt",
+      "text_sha256": "8249f0a4b74a5487de9474f5a7c59fecb6558f3af51de247a4f559ecac592edc",
+      "coverage_read": "PDF pp.31-33, sectionV.E, equationsV.E.1-V.E.4",
+      "cache_identity_check": "versioned crossover cache; fresh primary version page checked",
+      "role": "non-derivation construction comparison",
+      "external_full_text_in_repository": false
+    }
+  ],
+  "preserved_access_issue": "Initial axial text parsing assumed form-feed pages and raised IndexError; read succeeded by explicit PDF PAGE markers.",
+  "manifest_written_utc": "2026-10-29T18:48:37.146882+00:00",
+  "primary_version_page_check_date_utc": "2026-10-29"
+}

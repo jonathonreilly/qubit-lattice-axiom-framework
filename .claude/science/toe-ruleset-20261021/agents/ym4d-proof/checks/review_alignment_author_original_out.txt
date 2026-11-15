@@ -1,0 +1,10 @@
+P m=3: Md, harmonic, completion PASS; merged controls FIRE; Mmerged(1)[1]=-8/9
+P m=5: Md, harmonic, completion PASS; merged controls FIRE; Mmerged(1)[1]=40/99
+P m=9: Md, harmonic, completion PASS; merged controls FIRE; Mmerged(1)[1]=8/153
+C d=4 L=3: all four directions zeroth/midpoint moments and BCH2 areas PASS
+C d=4 L=5: all four directions zeroth/midpoint moments and BCH2 areas PASS
+C controls: lower-corner and single transverse contour FIRE
+A centered commutator: constant/affine cancellation PASS; affine/affine cubic scaling PASS; first residual=(Fraction(2, 27), Fraction(-4, 27), Fraction(-5, 27))
+A uncentered quadratic control FIRE; first residual=(Fraction(-2, 3), Fraction(-4, 3), Fraction(1, 1))
+W G0 exponent: lane alpha=1/4 theta=1/2 PASS; outside-window upper-bound growth control FIRE (not a theorem counterexample)
+OVERALL PASS: exact finite identities and controls only; uniform/analytic statements require note proofs

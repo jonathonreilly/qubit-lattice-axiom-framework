@@ -1,0 +1,27 @@
+{
+  "status": "NOT RUN",
+  "checks": [],
+  "resources": [
+    {
+      "nice": 0,
+      "load": [
+        5.12060546875,
+        2.80029296875,
+        2.4208984375
+      ],
+      "threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      },
+      "peak_rss_bytes": 22560768,
+      "memory_status": "NOT MEASURED"
+    }
+  ],
+  "criteria_sha256": "5fbe724f55153f7800fed79928a81ea94185e74acc522547c104f9208af8de13",
+  "runner_sha256": "12a6389e7c2309ca5e52794d920ec11209467ad641803b5a9da37fc7cf9dfffd",
+  "reason": "RuntimeError('nice < 10')"
+}

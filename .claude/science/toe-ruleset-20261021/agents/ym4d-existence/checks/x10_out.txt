@@ -1,0 +1,32 @@
+x10: odd corner cumulant O = tr(Y12[Y23,Y31]) under centred Gaussian connections
+threads: OMP_NUM_THREADS=1,OPENBLAS_NUM_THREADS=1,VECLIB_MAXIMUM_THREADS=1
+A N=2 sigma=0.10: E[O]/sigma^4 = 4.45910 +- 0.02712 (n=400000 antithetic pairs; max |exp(Y)-U| = 3.6e-15)
+A N=2 sigma=0.15: E[O]/sigma^4 = 4.35301 +- 0.02654 (n=400000 antithetic pairs; max |exp(Y)-U| = 3.6e-15)
+A N=2 sigma=0.20: E[O]/sigma^4 = 4.29349 +- 0.02628 (n=400000 antithetic pairs; max |exp(Y)-U| = 3.4e-15)
+A N=2 sigma=0.25: E[O]/sigma^4 = 4.18235 +- 0.02573 (n=400000 antithetic pairs; max |exp(Y)-U| = 3.6e-15)
+A N=2 sigma=0.30: E[O]/sigma^4 = 4.02040 +- 0.02450 (n=400000 antithetic pairs; max |exp(Y)-U| = 3.4e-15)
+A N=2: fit c4 = 4.4969 +- 0.0221, c6 = -5.230; prediction 3/4 N(N^2-1) = 4.5000; A1 PASS; A2 PASS
+A N=3 sigma=0.10: E[O]/sigma^4 = 17.76277 +- 0.09333 (n=200000 antithetic pairs; max |exp(Y)-U| = 5.5e-15)
+A N=3 sigma=0.15: E[O]/sigma^4 = 17.28511 +- 0.09111 (n=200000 antithetic pairs; max |exp(Y)-U| = 5.3e-15)
+A N=3 sigma=0.20: E[O]/sigma^4 = 16.75375 +- 0.08879 (n=200000 antithetic pairs; max |exp(Y)-U| = 5.2e-15)
+A N=3 sigma=0.25: E[O]/sigma^4 = 16.07071 +- 0.08532 (n=200000 antithetic pairs; max |exp(Y)-U| = 5.1e-15)
+A N=3 sigma=0.30: E[O]/sigma^4 = 14.87569 +- 0.08036 (n=200000 antithetic pairs; max |exp(Y)-U| = 4.9e-15)
+A N=3: fit c4 = 18.1402 +- 0.0755, c6 = -35.353; prediction 3/4 N(N^2-1) = 18.0000; A1 PASS; A2 PASS
+B0 N=2: Wick c4[identity] = 4.500000000000000, prediction 4.5; PASS
+B0 N=3: Wick c4[identity] = 18.000000000000000, prediction 18.0; PASS
+B T=16: G(0) = 0.154387; Feynman-gauge c4 = 0.049608 (SU(2)), 0.198431 (SU(3)); ratio to N(N^2-1): 0.008268
+B T=24: G(0) = 0.154690; Feynman-gauge c4 = 0.049607 (SU(2)), 0.198430 (SU(3)); ratio to N(N^2-1): 0.008268
+B T=32: G(0) = 0.154796; Feynman-gauge c4 = 0.049607 (SU(2)), 0.198429 (SU(3)); ratio to N(N^2-1): 0.008268
+C N=2 sigma=0.10: linearised E[O_lin]/sigma^4 = 0.2147 +- 0.2740
+C N=2 sigma=0.15: linearised E[O_lin]/sigma^4 = 0.1833 +- 0.1815
+C N=2 sigma=0.20: linearised E[O_lin]/sigma^4 = -0.1002 +- 0.1372
+C N=2 sigma=0.25: linearised E[O_lin]/sigma^4 = -0.1906 +- 0.1105
+C N=2 sigma=0.30: linearised E[O_lin]/sigma^4 = 0.0149 +- 0.0914
+C N=2: PASS
+C N=3 sigma=0.10: linearised E[O_lin]/sigma^4 = 0.3000 +- 0.5499
+C N=3 sigma=0.15: linearised E[O_lin]/sigma^4 = -0.1846 +- 0.3638
+C N=3 sigma=0.20: linearised E[O_lin]/sigma^4 = -0.0764 +- 0.2719
+C N=3 sigma=0.25: linearised E[O_lin]/sigma^4 = 0.1199 +- 0.2186
+C N=3 sigma=0.30: linearised E[O_lin]/sigma^4 = 0.1301 +- 0.1819
+C N=3: PASS
+wall 134.3 s; peak RSS 267 MB

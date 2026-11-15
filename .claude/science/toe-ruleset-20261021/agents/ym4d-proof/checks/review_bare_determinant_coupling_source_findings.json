@@ -1,0 +1,87 @@
+{
+  "record_type": "immutable_source_only_findings",
+  "created_utc": "2026-10-30T15:09:11.362018+00:00",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+    "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+    "bytes": 29763,
+    "lines": 581
+  },
+  "author_packet_opened_before_freeze": false,
+  "prior_review_opened_before_freeze": false,
+  "scoped_verdict": "LAND",
+  "material_findings": [],
+  "substantive_repair_required": false,
+  "manual_independent_checks": [
+    {
+      "name": "actual normalized paired-contour kernel and flat precision",
+      "target_lines": [
+        42,
+        171
+      ],
+      "result": "Expanding the numerator and constrained maximum cancels path spread at tree order and leaves one half of ||DA||_HS^2+kappa||B-QA||_HS^2. Tree removal leaves 4L^4-(L^4-1)=3L^4+1 types. CB brick reconstruction controls every free type, including zero momentum. The cell Fourier representation keeps fine aliases in these types; no L^-4 cell-volume factor is missing."
+    },
+    {
+      "name": "commuting and odd critical motion",
+      "target_lines": [
+        173,
+        221
+      ],
+      "result": "Global diagonal conjugation fixes Cartan V and preserves the fixed tree chart; uniqueness implies that every fine critical link is diagonal, including nonregular H. Entrywise conjugation sends real Cartan t to -t. The local traceless logarithm is therefore odd, and polarization followed by complexification kills the mixed second derivative. A is linear through external degree two; exponential second variations remain."
+    },
+    {
+      "name": "constrained saddle recurrence and finite vertices",
+      "target_lines": [
+        223,
+        324
+      ],
+      "result": "At homogeneous degree n the unknown traceless Y_n enters P0(exp(-Y)M^+-M^-exp(Y)) only as -2Y_n. The displayed recursion uniquely gives degrees 1-4; its scalar residual is retained. Finite ordered words with Exp_4 suffice for two fluctuation and up to two external tags. Right-trivialized order exp(A)exp(x), inverse order exp(-x)exp(-A), independent s,t and coefficient extraction give the actual Hessian vertices without extra factors or a hidden critical derivative."
+    },
+    {
+      "name": "full colour decomposition",
+      "target_lines": [
+        278,
+        342
+      ],
+      "result": "The real basis is HS orthonormal. In its complexification -tr(F_ji F_ij)=1, so the dual row is F_ji. Torus invariance gives the whole neutral block plus all ordered roots. The two traces are basis changes of the full Dm0 trace; neutral mixing and root multiplicities remain."
+    },
+    {
+      "name": "trace and transverse normalization",
+      "target_lines": [
+        344,
+        413
+      ],
+      "result": "Direct expansion of one half Tr log yields one half Tr(G K_+- - G K_+ G K_-). The V routing q to q+p and return q+p to q gives the exchange product shown. Phase averaging z_+z_-=epsilon^2/4 makes I equal the BM Pi, not twice Pi. With I(0)=0 and an even axis symbol, beta=one half integral [P^2]J=one quarter integral J double-prime. Averaging 12 ordered planes gives the factor 1/24 in BD29."
+    },
+    {
+      "name": "uniform inverse, moments and thermodynamic limits",
+      "target_lines": [
+        415,
+        475
+      ],
+      "result": "The finite Laurent perturbation is bounded by |P|M_K for |P|<=1. The chosen 2r gives a perturbation below a_gap/2 and hence inverse bound 2/a_gap uniformly over real q and the compact kappa interval. Finite vertices then admit uniform Cauchy coefficient bounds and compatible-grid convergence. IC connected inverse/critical/trace construction and BM22-25 supply fixed-domain original-reader moments and exponentially small seam tails. Gauge Ward identity and continuity force Pi(0)=0 only after the volume limit. No pointwise J(q;0)=0 or finite-volume holonomy deletion is used."
+    },
+    {
+      "name": "intrinsic Haar identity and amplitude",
+      "target_lines": [
+        60,
+        85
+      ],
+      "additional_target_lines": [
+        477,
+        521
+      ],
+      "result": "At a stationary point coordinate Hessian is E^T K_intr E and det E=product j_N. Half log det and minus log Haar cancel exactly. At commuting data the saddle-recentered S has mixed coefficient v H^2; summing the full Casimir gives [z_+z_-]log A=Dv/2 for FLOW-unit H. BM affine tree-gauge calculation gives sum_rho v/P^2=2(L^2-1)/(12L^2), hence alpha_amp=D(L^2-1)/(12L^2). Coordinate Haar contributes minus alpha_Haar to b_det,coord, with alpha_Haar=N^2(L^2-1)(L+1)/72; it cancels the action-side term."
+    },
+    {
+      "name": "matched primary-paper roles",
+      "target_lines": [
+        523,
+        570
+      ],
+      "result": "9504006 supplies comparison background decomposition and gauge law, with its distinct gauge/ghost measure. 9505011 supplies vertex and seagull/exchange organization, not this gapped blocked integrand or its value. 9506030v1 retains an actual SU(N) normalizer and maximum, but its scale-two fuzzy/staple kernels and fixed-point input differ. No literature constant is used as a substitute for the finite recipe."
+    }
+  ],
+  "claim_boundary": "The bounded analytic reduction of the bare coefficient is supported. It is not an evaluated coefficient, sign theorem, universal beta identification, Wilson/inherited-class closure, iterated effective trajectory, continuum existence proof or positive physical continuum mass-gap proof. The full target remains open.",
+  "procedure_boundary": "One restricted source-only review iteration. No source repair, numerical run, pipeline, audit, commit, push or front edit. Same-family independent context, not external review or backend attestation."
+}

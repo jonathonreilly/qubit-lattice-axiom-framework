@@ -1,0 +1,10 @@
+P2 (Lemma LD): Y^p = g-chain + Z;  Z = Z' + x(e)
+  k=1 T=4 r=2: |dY0 - (dg0 + dZ0)| 6.2e-14, |r(Y) - r(Z)| 1.1e-13; |Z - Z' - x(e)| 1.4e-14; sum|j'| 5.367e+00, sum|e| 6.392e+00; CG res 8e-13/9e-13 (6 s, RSS 66 MB)
+  k=1 T=4 r=3: |dY0 - (dg0 + dZ0)| 6.0e-14, |r(Y) - r(Z)| 1.2e-13; |Z - Z' - x(e)| 6.0e-15; sum|j'| 3.167e+00, sum|e| 3.444e+00; CG res 8e-13/1e-12 (10 s, RSS 69 MB)
+    r = inf: max|d^T d g_0 - d^T delta_p| = 2.2e-16 (set to 0)
+  k=1 T=4 r=inf: |dY0 - (dg0 + dZ0)| 5.8e-14, |r(Y) - r(Z)| 1.2e-13; |Z - Z' - x(e)| 0.0e+00; sum|j'| 0.000e+00, sum|e| 0.000e+00; CG res 8e-13/9e-13 (13 s, RSS 69 MB)
+  k=2 T=2 r=2: |dY0 - (dg0 + dZ0)| 3.4e-14, |r(Y) - r(Z)| 5.8e-14; |Z - Z' - x(e)| 2.2e-14; sum|j'| 5.816e+00, sum|e| 6.993e+00; CG res 8e-13/9e-13 (35 s, RSS 92 MB)
+  k=2 T=2 r=3: |dY0 - (dg0 + dZ0)| 3.3e-14, |r(Y) - r(Z)| 9.4e-14; |Z - Z' - x(e)| 2.8e-15; sum|j'| 4.005e+00, sum|e| 4.210e+00; CG res 8e-13/9e-13 (52 s, RSS 96 MB)
+    r = inf: max|d^T d g_0 - d^T delta_p| = 2.2e-16 (set to 0)
+  k=2 T=2 r=inf: |dY0 - (dg0 + dZ0)| 3.3e-14, |r(Y) - r(Z)| 9.7e-14; |Z - Z' - x(e)| 0.0e+00; sum|j'| 0.000e+00, sum|e| 0.000e+00; CG res 8e-13/7e-13 (62 s, RSS 101 MB)
+P2a PASS;  P2b PASS

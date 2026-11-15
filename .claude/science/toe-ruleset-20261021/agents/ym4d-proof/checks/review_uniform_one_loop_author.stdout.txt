@@ -1,0 +1,27 @@
+{"data": {"gradient_residuals": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"], "plaquettes": 6, "rectangles": 12}, "name": "actual_path_counts_and_gradient", "passed": true}
+{"data": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])", "name": "Wilson_gauge_completion", "passed": true}
+{"data": {"nonzero": [], "residual_entries": 48}, "name": "rectangle_rows_from_paths", "passed": true}
+{"data": {"0": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])", "1": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])", "2": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])", "3": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])", "4": "Matrix([[-7/2, 5/16, 15/16, 1/16], [5/16, -127/32, 39/16, 5/16], [15/16, 39/16, -9/4, 15/16], [1/16, 5/16, 15/16, -7/2]])"}, "name": "J1_actual_rectangle_marginal_and_quartic_start", "passed": true}
+{"data": "Matrix([[7/4, -1/4, -3/8, -1/8], [-1/4, 11/8, -3/4, -1/4], [-3/8, -3/4, 3/4, -3/8], [-1/8, -1/4, -3/8, 7/4]])", "name": "M_wrong_rectangle_normalization_fires", "passed": true}
+{"O0": "Matrix([[8, 0, 0, 0], [0, 8, 0, 0], [0, 0, 8, 0], [0, 0, 0, 8]])", "alpha": "0", "dO": "Matrix([[2, 0, 0, 0], [0, 2, 0, 0], [0, 0, 2, 0], [0, 0, 0, 2]])", "ddO": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])", "det_curve": "(z0**2 - 8*z0 + 1)**4/z0**4", "group_coefficient": "-3/16", "scalar_coefficient": "-1/16", "vector_coefficient": "-1/4"}
+{"data": {"direct": "-3/16", "trace": "-3/16"}, "name": "charged_direct_det_vs_full_bubble_alpha=0", "passed": true}
+{"data": {"correct": "-3/16", "wrong": "-3/32"}, "name": "M_quarter_bubble_fires_alpha=0", "passed": true}
+{"data": {"correct": "-3/16", "wrong": "-3/32"}, "name": "M_one_real_root_component_fires_alpha=0", "passed": true}
+{"data": {"eigenvalues": [8.0, 8.0, 8.0, 8.0], "quadratic_lower_fraction": "1"}, "name": "positive_actual_block_alpha=0", "passed": true}
+{"data": {"coefficient": -0.18749982910737373, "error": 1.7089262627223434e-07, "exact": "-3/16"}, "name": "finite_epsilon_det_alpha=0_eps=0.001", "passed": true}
+{"data": {"coefficient": -0.1874999538964417, "error": 4.610355830436674e-08, "exact": "-3/16"}, "name": "finite_epsilon_det_alpha=0_eps=0.0005", "passed": true}
+{"O0": "Matrix([[29/4, 1/4, 1/4, 1/4], [1/4, 29/4, 1/4, 1/4], [1/4, 1/4, 29/4, 1/4], [1/4, 1/4, 1/4, 29/4]])", "alpha": "1/32", "dO": "Matrix([[13/8, 1/4 + I/8, 1/4 + I/8, 1/4 + I/8], [1/4 - I/8, 13/8, 0, 0], [1/4 - I/8, 0, 13/8, 0], [1/4 - I/8, 0, 0, 13/8]])", "ddO": "Matrix([[0, I/4, I/4, I/4], [-I/4, -1/4, 0, 0], [-I/4, 0, -1/4, 0], [-I/4, 0, 0, -1/4]])", "det_curve": "(z0**2 - 8*z0 + 1)**2*(z0**2 + 28*z0 + 1)*(z0**4 + 26*z0**3 - 222*z0**2 + 26*z0 + 1)**2/(32768*z0**7)", "group_coefficient": "-387/1568", "scalar_coefficient": "-1/16", "vector_coefficient": "-485/1568"}
+{"data": {"direct": "-387/1568", "trace": "-387/1568"}, "name": "charged_direct_det_vs_full_bubble_alpha=1/32", "passed": true}
+{"data": {"correct": "-387/1568", "wrong": "-2199/12544"}, "name": "M_quarter_bubble_fires_alpha=1/32", "passed": true}
+{"data": {"correct": "-387/1568", "wrong": "-387/3136"}, "name": "M_one_real_root_component_fires_alpha=1/32", "passed": true}
+{"data": {"eigenvalues": [8.0, 7.0, 7.0, 7.0], "quadratic_lower_fraction": "3/4"}, "name": "positive_actual_block_alpha=1/32", "passed": true}
+{"data": {"coefficient": -0.2468110041897731, "error": 2.2030002283512928e-07, "exact": "-387/1568"}, "name": "finite_epsilon_det_alpha=1/32_eps=0.001", "passed": true}
+{"data": {"coefficient": -0.24681116383984403, "error": 6.064995189403177e-08, "exact": "-387/1568"}, "name": "finite_epsilon_det_alpha=1/32_eps=0.0005", "passed": true}
+{"data": {"links": 324, "plaquettes": 486, "sites": 81}, "name": "periodic_actual_incidence_complex", "passed": true}
+{"data": {"diag_max": 0.49382716049382797, "diag_min": 0.49382716049382613, "max_error": 9.992007221626409e-16, "zero_modes": 4}, "name": "periodic_four_harmonics_and_projector", "passed": true}
+{"data": {"density": 0.75, "target": "3/4"}, "name": "actual_Wilson_wave_divisor", "passed": true}
+{"data": {"beta_coefficient": -0.2469135802469136, "error": 2.7755575615628914e-17, "loop_density": -0.1851851851851852, "target": "-20/81"}, "name": "neutral_Wilson_finite_part", "passed": true}
+{"data": {"correct": -0.24691358024691357, "wrong": 0}, "name": "M_deleted_neutral_vertex_fires", "passed": true}
+{"data": {"correct": -0.24691358024691357, "wrong": -0.25}, "name": "M_infinite_volume_projector_at_finite_T_fires", "passed": true}
+{"data": {"correct": -0.24691358024691357, "wrong": -0.1851851851851852}, "name": "M_missing_Wilson_divisor_fires", "passed": true}
+{"summary": {"all_passed": true, "passed": 24, "scope": "Finite Gaussian normalization controls; no uniform-depth or physical theorem.", "total": 24}}

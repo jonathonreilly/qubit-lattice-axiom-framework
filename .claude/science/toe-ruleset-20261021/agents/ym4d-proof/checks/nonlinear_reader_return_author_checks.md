@@ -1,0 +1,29 @@
+# Nonlinear reader return: author reconstruction
+
+The mathematical source was frozen at SHA256 `0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0`, 713 lines, before this evidence packet was written. This document is an author self-check, not an independent review or retained-grade claim. A different fresh reviewer is required.
+
+## Producer match
+
+NC was provisional at dispatch and received a fresh unchanged scoped LAND before this source freeze; its entire review was then read. RG's complete source and fresh scoped review were read. The actual joint critical field and full covariance are FU's, including its linear source Hessian, finite-t normalizer, Haar term and all modes. The CG bridge and SC shifted-domain unit are not consumed: retuning is rebuilt in NR3-NR8 and shifted boundaries remain separate.
+
+The joint domain retains delta_hat. A delta_V substitution is only a fixed real-V slice. Retuning first fixes R-independent g/v_I/a, then R/beta, then FU's finite marked constants and smaller positive source/coarse radii, then the chart radius and large-u threshold. No source radius is widened.
+
+## New mathematical checks
+
+1. Tail budget: PC r_PC<=e_*/(4p_PC) and r_PC<=1/4 imply E_lift<=e_*/3. FU d_H<=e_*/(4m_G^2) and m_G d_H<=1/4 imply T_crit<=e_*/3. Thus the actual sum satisfies v_I eps<=1/4 and t_E<=a/48. B_E is finite, generally large, and explicitly appears in the final threshold.
+2. Active normalization: only the principal covariance marginal is expanded. Both the determinant trace series and inverse quadratic series remain, with every ordered-list factorial. A nonempty primitive supplies every active field. The empty marginal is exactly one and creates no residual vacuum species.
+3. Core components: the selected primitive family is partitioned by complete reader plus P-collar overlap. Different components have disjoint field sets and structurally zero P cross entries. Each P block, its inverse and its determinant read its one component union; those readers are not charged repeatedly along inverse factors.
+4. Gaussian derivatives: the forest coordinates are independent component pairs. Differentiation of the normalized Gaussian is exact and includes the trace normalizer. All field derivatives remain on the density, so the fixed local nonlinear cutoffs and failures are not differentiated and no integration-by-parts surface is discarded. Radius-two pair analyticity is used only for the forest identity; quantitative coefficient bounds use real forest masks of modulus <=1.
+5. Nonlinear moments: after the density-jet regulator slack, the diagonal dominating variance is 8/a. At most 15 distinct original vertices touch one scalar; the polynomial degree is <=90. The active determinant/colour cost and D-dimensional failure tail are explicit in C_V and q_H. Repetitions are added only in formal positive counts after each admissible moment has been bounded.
+6. Coordinate factorials: an incoming-parent leg at i and child counts k_j contribute product_j sqrt((k_j+1_(j=i))!). Allocating unordered children gives product_j 1/k_j!, hence H0 and H1. H0<=exp(2y) and H1<=exp(4y) at y<=1/2 yield an exponent linear in |I_B|<=n0|S_B|. The component-total factorial shortcut would instead allow a quadratic size cost and is explicitly rejected.
+7. Marked readers: root/base marks cost h; density-list reader marks cost K_m B_E h via the fixed scalar pin mass; a distinguished tree E reader costs at most L_jet^2 B_E h^2 by cutting the positive tree count into two incoming-leg subtrees. This is not a factorization claim for the original coupled integral.
+8. Parity: a one-primitive nonlinear species has no tree edge and every density-list term is even. Its signed integral therefore costs sigma^2 with the complete NC even-reader envelope. Absolute Mayer moments remain O(sigma). For primitive degree >=2, rescaling primitive amplitudes to h_c gives the precise (C0/h_c+L_jet^2 B_E)h^2 bound, keeping the actual u and covariance fixed.
+9. Exact compatibility: raw species retain compatibility of their base reader unions B_z. They are regrouped uniquely by complete-reader overlap, retaining that compatibility inside each group. The outer full-reader exclusion gas is exactly the old gas; incompatibility is not simply replaced. Original vertex uniqueness is preserved in every actual family.
+10. Four distinct beta/8 margins pay primitive overlap components, Gaussian attachments, complete-reader regrouping and the log. Output is beta/2 in original blocks. The conditions h<=h_c, q_H<=1 and epsilon_N<=beta/16 have a nonempty sufficiently-large-u regime since h_v=O(sigma), h_2=O(sigma^2), and h_h=O(exp(-c/sigma^2)), with all constants fixed first.
+11. The actual centered raw top form retains h_N^n, all d Gaussian modes, det K_*^(-1/2), and exp(-F_epsilon(b)/sigma^2). The small connected norm is log J only. The physical chart still has (D_a-b)/sigma; side/corner, original-cut complement, history and multiscale interfaces remain open here.
+
+## Preserved boundaries and evidence
+
+The source records rejected shortcuts rather than numerical failures: using the Gaussian-only endpoint result for nonlinear insertions, losing active normalizers, repeatedly charging complete component readers, collapsing scalar factorials, assuming B_E small, replacing incompatibility, adding an uncharged residual vacuum, and applying parity to absolute moments or translated domains.
+
+No numerical experiment, sample-derived threshold or scientific runner PASS occurred. The verifier below is read-only and checks identities/links only. It does not prove the theorem. No Git mutation, PR operation, shared-front edit, audit, ledger, lock or other-agent source edit was performed. All predecessor source/package files remain immutable. The coordinator owns publication and fresh independent review.

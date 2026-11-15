@@ -1,0 +1,771 @@
+{
+  "schema_version": 1,
+  "phase": "independent findings frozen before target author packet",
+  "frozen_utc": "2026-10-30T06:54:51.944269+00:00",
+  "reviewer_invocation": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "fork_turns": "none",
+    "attestation": "coordinator-reported invocation configuration; not backend attestation"
+  },
+  "worktree_head_observed": "1d92d382416b8a7212c35c0ed886da5d54340f81",
+  "locally_available_origin_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "network_freshness_verified": false,
+  "integration_or_landing_gate_claimed": false,
+  "author_packet_opened_before_freeze": false,
+  "scientific_numerics_run": false,
+  "scientific_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+      "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+      "bytes": 20270,
+      "lines": 398,
+      "displayed_ranges": [
+        [
+          1,
+          398
+        ]
+      ],
+      "complete_argument_read": true,
+      "role": "complete target argument"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "bytes": 32365,
+      "lines": 617,
+      "displayed_ranges": [
+        [
+          47,
+          255
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "CS1-CS14: exact law, paired paths, normalized norms, squared alignment and brick allocation",
+      "additional_search_excerpts": [
+        {
+          "pattern": "CS[0-9]|CB[0-9]|^##|\\]..*\\.md",
+          "returned_line_numbers": [
+            35,
+            36,
+            37,
+            38,
+            39,
+            43,
+            44,
+            47,
+            62,
+            73,
+            78,
+            81,
+            95,
+            99,
+            124,
+            138,
+            141,
+            145,
+            165,
+            178,
+            189,
+            193,
+            203,
+            211,
+            214,
+            223,
+            233,
+            244,
+            246,
+            250,
+            254,
+            256,
+            279,
+            284,
+            290,
+            295,
+            300,
+            316,
+            327,
+            335,
+            338,
+            341,
+            351,
+            359,
+            361,
+            368,
+            372,
+            383,
+            389,
+            395,
+            410,
+            421,
+            431,
+            434,
+            435,
+            437,
+            442,
+            451,
+            453,
+            455,
+            458,
+            463,
+            467,
+            469,
+            479,
+            486,
+            494,
+            502,
+            508,
+            519,
+            526,
+            533,
+            537,
+            548,
+            561,
+            573,
+            576,
+            577,
+            578,
+            598,
+            603,
+            613
+          ]
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "displayed_ranges": [
+        [
+          1,
+          190
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "CB1-CB8: centered geometry, actual normalized law, exact reference and lifted bricks; later Hessian discussion contextual only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "bytes": 32868,
+      "lines": 641,
+      "displayed_ranges": [
+        [
+          39,
+          151
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "OC1-OC4: complete actual readers, all-compact localized energy and explicit reference scope",
+      "additional_search_excerpts": [
+        {
+          "pattern": "^##|CB[0-9]|Decision.4|paired",
+          "returned_line_numbers": [
+            39,
+            52,
+            64,
+            73,
+            98,
+            113,
+            139,
+            151,
+            187,
+            282,
+            366,
+            439,
+            453,
+            525,
+            571
+          ]
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md",
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "bytes": 41724,
+      "lines": 766,
+      "displayed_ranges": [
+        [
+          30,
+          83
+        ],
+        [
+          174,
+          316
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "B1-B5 and B10-B18: original/effective law, Haar tail, paired ribbon geometry, old threshold and ordinary forward law",
+      "additional_search_excerpts": [
+        {
+          "pattern": "^##|B1[0-9]|B[1-9]\\)|LF1[01]|r55a-F10|F4|R[0-9]+\\)",
+          "returned_line_numbers": [
+            30,
+            41,
+            48,
+            58,
+            67,
+            70,
+            75,
+            84,
+            86,
+            94,
+            99,
+            115,
+            120,
+            126,
+            132,
+            139,
+            148,
+            151,
+            157,
+            174,
+            176,
+            181,
+            196,
+            211,
+            220,
+            221,
+            228,
+            241,
+            246,
+            250,
+            260,
+            267,
+            272,
+            284,
+            288,
+            293,
+            315,
+            317,
+            319,
+            326,
+            345,
+            354,
+            365,
+            373,
+            377,
+            379,
+            381,
+            426,
+            450,
+            479,
+            481,
+            564,
+            593,
+            595,
+            627,
+            669,
+            688,
+            712,
+            727,
+            734,
+            745,
+            746
+          ]
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "bytes": 40582,
+      "lines": 764,
+      "displayed_ranges": [
+        [
+          28,
+          74
+        ],
+        [
+          202,
+          239
+        ],
+        [
+          549,
+          599
+        ],
+        [
+          654,
+          709
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "exact all-cut reference; LF4 raw action allocation; LF11 normalized tail; remaining clauses1-5",
+      "additional_search_excerpts": [
+        {
+          "pattern": "^##|B1[0-9]|B[1-9]\\)|LF1[01]|r55a-F10|F4|R[0-9]+\\)",
+          "returned_line_numbers": [
+            28,
+            74,
+            76,
+            106,
+            141,
+            200,
+            202,
+            239,
+            287,
+            319,
+            359,
+            364,
+            366,
+            394,
+            477,
+            547,
+            549,
+            600,
+            601,
+            602,
+            603,
+            621,
+            642,
+            654,
+            687,
+            694,
+            695,
+            710,
+            728,
+            733,
+            734,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md",
+      "sha256": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+      "bytes": 34511,
+      "lines": 623,
+      "displayed_ranges": [
+        [
+          31,
+          76
+        ],
+        [
+          147,
+          301
+        ],
+        [
+          514,
+          560
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "R1-R3 actual words and histories; R8-R16 actual flux and tube argument; exact remaining matched-renewal contract",
+      "additional_search_excerpts": [
+        {
+          "pattern": "^##|B1[0-9]|B[1-9]\\)|LF1[01]|r55a-F10|F4|R[0-9]+\\)",
+          "returned_line_numbers": [
+            31,
+            42,
+            45,
+            51,
+            63,
+            67,
+            77,
+            79,
+            90,
+            98,
+            108,
+            112,
+            123,
+            128,
+            145,
+            147,
+            149,
+            156,
+            158,
+            178,
+            186,
+            190,
+            192,
+            202,
+            204,
+            207,
+            218,
+            225,
+            230,
+            234,
+            238,
+            246,
+            256,
+            265,
+            268,
+            270,
+            272,
+            273,
+            276,
+            283,
+            289,
+            302,
+            304,
+            313,
+            319,
+            322,
+            329,
+            332,
+            338,
+            340,
+            354,
+            361,
+            398,
+            401,
+            414,
+            422,
+            437,
+            444,
+            448,
+            454,
+            470,
+            497,
+            509,
+            511,
+            514,
+            518,
+            519,
+            520,
+            521,
+            522,
+            527,
+            538,
+            553,
+            561,
+            573,
+            580,
+            584,
+            586,
+            592,
+            594,
+            595,
+            596,
+            597,
+            607
+          ]
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW55_ARS.md",
+      "sha256": "79ab307db0f7e918216277cc0f7e884044114705a9f21584df8539aecce2d90e",
+      "bytes": 59178,
+      "lines": 577,
+      "displayed_ranges": [
+        [
+          228,
+          253
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "necessary prior mathematical input r55a-F10; argument inspected, verdict supplies no authority"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_KN.md",
+      "sha256": "9be21efb0097320aaca79a2e068ca59e4f8bfd1864148432d1a508abb724f7d0",
+      "bytes": 36466,
+      "lines": 312,
+      "displayed_ranges": [
+        [
+          62,
+          84
+        ],
+        [
+          200,
+          222
+        ],
+        [
+          292,
+          312
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "necessary earlier trace-difference derivation F4; extra excerpts returned by F4 search, no target-review authority"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "ef4402b19bf268ac6bc684e38942daf1476c84d651ef8b492998cb067506cde8",
+      "bytes": 804887,
+      "lines": 7679,
+      "displayed_ranges": [
+        [
+          1272,
+          1299
+        ],
+        [
+          1470,
+          1492
+        ],
+        [
+          2320,
+          2390
+        ],
+        [
+          2526,
+          2574
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "Decision4 primary paired kernel and S3 convention; 2320-2390 was an incidental wrong-range retrieval and is not an input to the verdict",
+      "additional_search_excerpts": [
+        {
+          "pattern": "Decision 4|Decision-4|24L|S4.?|paired",
+          "selection": "head 55",
+          "returned_line_numbers": [
+            56,
+            102,
+            145,
+            172,
+            221,
+            350,
+            405,
+            660,
+            674,
+            695,
+            702,
+            709,
+            748,
+            823,
+            824,
+            825,
+            1014,
+            1021,
+            1054,
+            1152,
+            1166,
+            1216,
+            1254,
+            1260,
+            1272,
+            1273,
+            1285,
+            1293,
+            1310,
+            1311,
+            1349,
+            1370,
+            1371,
+            1379,
+            1383,
+            1391,
+            1392,
+            1445,
+            1476,
+            1484,
+            1490,
+            1494,
+            1495,
+            1498,
+            1509,
+            1511,
+            1515,
+            1529,
+            1559,
+            1597,
+            1598,
+            1602,
+            1604,
+            1605,
+            1606
+          ]
+        },
+        {
+          "pattern": "D4-norm|M̄|bar T|24L\\^4|24 L\\^4|24L\\^d|24 L\\^d",
+          "selection": "tail 30",
+          "returned_line_numbers": [
+            3252,
+            3924,
+            3955,
+            3998,
+            4019,
+            5702,
+            5945,
+            6176,
+            6182,
+            6196,
+            6210,
+            6222,
+            6237,
+            6532,
+            6535,
+            6566,
+            6574,
+            6582,
+            6659,
+            6724,
+            7039,
+            7163,
+            7165,
+            7191,
+            7194,
+            7196,
+            7198,
+            7250,
+            7354,
+            7355
+          ]
+        },
+        {
+          "pattern": "Lemma D4-norm|\\*\\*L5|D4-norm \\(",
+          "selection": "head 14",
+          "returned_line_numbers": [
+            1274,
+            1606,
+            2525,
+            2538,
+            2619,
+            2696,
+            5702,
+            5945
+          ]
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "displayed_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "complete_argument_read": false,
+      "role": "complete owner process"
+    }
+  ],
+  "procedures_and_authority": [
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "bytes": 5441,
+      "lines": 31,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "lines": 26,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "lines": 193,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "lines": 313,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "lines": 233,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52,
+      "role": "procedure/authority only; no mathematical premise granted"
+    },
+    {
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "lines": 370,
+      "read_note": "read in tool output; entry point and compatibility recovered in overlapping ranges after output truncation",
+      "role": "procedure only; coordinator owns integration gates"
+    },
+    {
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "lines": 96,
+      "read_note": "read in tool output; entry point and compatibility recovered in overlapping ranges after output truncation",
+      "role": "procedure only; coordinator owns integration gates"
+    },
+    {
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "lines": 183,
+      "read_note": "read in tool output; entry point and compatibility recovered in overlapping ranges after output truncation",
+      "role": "procedure only; coordinator owns integration gates"
+    },
+    {
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "lines": 248,
+      "read_note": "read in tool output; entry point and compatibility recovered in overlapping ranges after output truncation",
+      "role": "procedure only; coordinator owns integration gates"
+    },
+    {
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "lines": 140,
+      "read_note": "read in tool output; entry point and compatibility recovered in overlapping ranges after output truncation",
+      "role": "procedure only; coordinator owns integration gates"
+    },
+    {
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "lines": 394,
+      "read_note": "read in tool output; entry point and compatibility recovered in overlapping ranges after output truncation",
+      "role": "procedure only; coordinator owns integration gates"
+    }
+  ],
+  "prepacket_findings_snapshot": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_squared_alignment_price_prepacket_findings.md",
+    "sha256": "325f1c9ede4e3087d1c5236537018c5972fccd1699677c27b95b06df694bc687",
+    "bytes": 11356,
+    "lines": 185
+  },
+  "scope_notes": [
+    "Whole-file identities do not imply a full-file semantic read. Only the target argument is certified in full; necessary ranges and incidental searches are disclosed.",
+    "REVIEW55_ARS F10 and CODEX_REVIEW_KN F4 were read before freezing as required prior mathematical inputs; their verdicts are not evidence.",
+    "No target author checks, manifest or receipt were opened before this manifest and the separate findings snapshot were written.",
+    "Original mathematical field/source readers are checked in findings items2-5 and9; history readers are never replaced by a coarse geometric shadow."
+  ]
+}

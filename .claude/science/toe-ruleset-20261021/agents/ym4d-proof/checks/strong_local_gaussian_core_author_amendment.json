@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "role": "Separate author provenance amendment only; no mathematical repair, independent review or audit verdict.",
+  "coordinator_links_amendment": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_links_amendment.json",
+    "lines": 74,
+    "sha256": "b878c2299b8a3ae2733073fee3921d2214458389538aa97d9e3dc21cbdf21b01"
+  },
+  "historical_checkpoint": {
+    "commit": "43d594a86c35447c17c7b2f0d7884a2289660253",
+    "authority": "Coordinator reported pushed historical checkpoint; author performed no Git operation.",
+    "original_source": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+      "git_commit": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "sha256": "9f99a9ed53057911015041018c0f6b3112d53976e5e64bae1a2b8c6ac5fa211b",
+      "lines": 490
+    },
+    "original_author_manifest": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_read_manifest.json",
+      "git_commit": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "sha256": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+      "lines": 122
+    },
+    "original_author_receipt": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_receipt.json",
+      "git_commit": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "sha256": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+      "lines": 53
+    }
+  },
+  "current_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+    "lines": 490,
+    "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c"
+  },
+  "source_binding_check": {
+    "removed_only_the_six_listed_link_wrappers": true,
+    "stripped_sha256": "9f99a9ed53057911015041018c0f6b3112d53976e5e64bae1a2b8c6ac5fa211b",
+    "equals_original_source_sha256": true,
+    "current_and_stripped_line_counts": 490,
+    "original_author_manifest_and_receipt_unchanged": true
+  },
+  "pc_read_correction": {
+    "source": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "lines": 543,
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8"
+    },
+    "historically_requested_range": "510-550",
+    "actual_available_range_within_that_request": "510-543",
+    "fresh_direct_read_range_this_amendment": "510-543",
+    "coverage_limit": "The original manifest recorded the requested sed range, not a claim that nonexistent lines 544-550 existed. The historical display is not separately reconstructed here; the complete actual available window was freshly delivered and read during this amendment. This does not expand any historical proof coverage."
+  },
+  "fresh_installed_skill_reads": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "lines": 140,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "fresh_direct_read_ranges": "1-140",
+      "reading_status": "Complete direct read during this amendment; no historical coverage is backfilled."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "lines": 313,
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "fresh_direct_read_ranges": "1-313",
+      "reading_status": "Complete direct read during this amendment; no historical coverage is backfilled."
+    }
+  ],
+  "procedure_selection": {
+    "selected_repository_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "selected_author_procedure": "Pinned repository physics-loop entry and its consistently pinned discovery/claim/delivery references, together with owner PROCESS_LIGHT and the coordinator bounded-author instructions. Root owns independent review, Git and publication.",
+    "repository_entry_current_identities": [
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+        "lines": 93,
+        "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "lines": 370,
+        "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+      }
+    ],
+    "reading_limit": "Pinned author-procedure reads were carried from the unchanged chart_boundary_forest manifest; these metadata identities do not claim a new full read of the repository review-loop entry. The freshly read installed files are separate distribution observations and are not conflated with the pinned repository entries.",
+    "freshness_procedure": {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "lines": 35,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    "freshness_direct_read_this_amendment": "1-35",
+    "distribution_mismatch_disposition": "The installed hashes differ from repository hashes. Select the already authorized pinned repository procedure; do not blend installed references into that procedure or change/synchronize distributions in this author unit.",
+    "historical_limit": "No assertion that installed distributions had these bytes during prior author reads, and no backfilled claim that earlier requested 1-220 ranges constituted complete reads of the currently installed files."
+  },
+  "operations": "Only this separate author-amendment JSON was written. The current links-only source, original author packet and immutable source-only reviewer records were not edited. Mathematical work continues in the separate MEAN_READER_RETURN unit."
+}

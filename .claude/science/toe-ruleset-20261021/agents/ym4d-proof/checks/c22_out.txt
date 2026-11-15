@@ -1,0 +1,26 @@
+geometry: 629856 contours, 39366 plaquettes, 3.5 s
+fast factorisation: 157464 axial paths, 0.7 s
+V2 control power: R_ax(Q_root^T r_ctrl) = 9.574, R_ax(Q_str^T r_ctrl) = 0.891 -> PASS
+t=0.02: CONVERGED it=117 |g|/|g0|=6.2e-08 E=1.43362822e-01 (EW 2.239367e-02, ES 1.209691e-01) 47 s
+   N1=9.96e-09  R_ax(J)=1.001  R_ax(Q_str^T r_min)=1.000  R_ax(Q_root^T r_min)=1.016
+   S/t=1.33562  O/t=1.17139  mean eps_V/t=1.21548  mean residual/t=1.26223
+t=0.1: CONVERGED it=161 |g|/|g0|=9.5e-08 E=3.56405808e+00 (EW 5.525337e-01, ES 3.011524e+00) 64 s
+   N1=1.25e-07  R_ax(J)=1.011  R_ax(Q_str^T r_min)=0.999  R_ax(Q_root^T r_min)=1.343
+   S/t=1.35718  O/t=1.19717  mean eps_V/t=1.21541  mean residual/t=1.26199
+V3 start-config N1 (t=0.2) = 1.477e+00 -> PASS
+t=0.2: CONVERGED it=163 |g|/|g0|=9.7e-08 E=1.40021384e+01 (EW 2.112656e+00, ES 1.188948e+01) 70 s
+   N1=4.54e-07  R_ax(J)=1.041  R_ax(Q_str^T r_min)=0.997  R_ax(Q_root^T r_min)=2.084
+   S/t=1.35254  O/t=1.20957  mean eps_V/t=1.21271  mean residual/t=1.25866
+t=0.4: CONVERGED it=565 |g|/|g0|=1.0e-07 E=5.15005219e+01 (EW 6.449722e+00, ES 4.505080e+01) 208 s
+   N1=1.21e-06  R_ax(J)=1.172  R_ax(Q_str^T r_min)=0.979  R_ax(Q_root^T r_min)=4.376
+   S/t=1.23115  O/t=1.11047  mean eps_V/t=1.20648  mean residual/t=1.24908
+   dev_S(0.1) = 0.0161  dev_O(0.1) = 0.0220
+   dev_S(0.2) = 0.0127  dev_O(0.2) = 0.0326
+   dev_S(0.4) = 0.0782  dev_O(0.4) = 0.0520
+V1: PASS
+V2: PASS
+V3: PASS
+Q1: PASS
+Q2: PASS
+Q3: FAIL
+c22: VALID; findings Q1 True, Q2 True, Q3 False; time 394 s, peak RSS 573 MB

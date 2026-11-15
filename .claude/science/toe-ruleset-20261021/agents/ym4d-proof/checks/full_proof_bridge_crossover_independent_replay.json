@@ -1,0 +1,23 @@
+{
+  "label": "crossover_independent",
+  "command": [
+    "/usr/local/bin/python3",
+    "review_crossover_import_independent_02.py"
+  ],
+  "copies": {
+    "review_crossover_import_independent_02.py": "eaf77dcf3b3add6be6962a961973801468d46afbf95d73eedde4da54e088eacf"
+  },
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/crossover_independent",
+  "exit_code": 0,
+  "wall_seconds": 0.9814481735229492,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_crossover_independent_out.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_crossover_independent_err.txt",
+  "stdout_sha256": "e0906081d92d0b53f62d205077583891e20f86ff9738b9c9c49ba7771992b3b9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_independent_02.stdout.json",
+  "reference_sha256": "e0906081d92d0b53f62d205077583891e20f86ff9738b9c9c49ba7771992b3b9",
+  "excluded_top_level_field": null,
+  "exact_non_time_json_match": true,
+  "differing_top_level_keys": [],
+  "source_and_reference_unchanged": true
+}

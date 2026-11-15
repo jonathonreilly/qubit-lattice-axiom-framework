@@ -1,0 +1,146 @@
+{
+  "schema": "independent-review-packet-check-v1",
+  "stage": "separate consistency check after immutable source-only freeze",
+  "created_at_utc": "2026-10-30T11:57:24.759314+00:00",
+  "result": "PASS: reproducible identity and mechanical claims match",
+  "source_only_findings_sha256": "801f442703284fecb960d39c49be52e6446f1d86613c3c0b67038af0b8279639",
+  "source_read_manifest_sha256": "2ad4eb421038cdf696639f3cf020b5b90da0ffb4b8330517016fcbc48da80e07",
+  "author_packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/weighted_return_jets_read_manifest.json",
+      "sha256": "8f6fc077450e62ac5c53c14a626f22e0f7b172cc97ab2e0d9b28042279e1ed0b",
+      "read_windows_inclusive": [
+        [
+          1,
+          113
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/weighted_return_jets_receipt.json",
+      "sha256": "1528907500ba62c1705c2c8745baeb7ae84b1aa6a7c063763de27498c094753c",
+      "read_windows_inclusive": [
+        [
+          1,
+          41
+        ]
+      ]
+    }
+  ],
+  "source_freeze_matches": true,
+  "methodology_revision_matches": true,
+  "local_source_comparisons": [
+    {
+      "path": "REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "sha256_matches": true,
+      "line_count": 649,
+      "line_count_matches": true
+    },
+    {
+      "path": "REALRGB.md",
+      "sha256": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+      "sha256_matches": true,
+      "line_count": 750,
+      "line_count_matches": true
+    },
+    {
+      "path": "MIXSMALL.md",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "sha256_matches": true,
+      "line_count": 692,
+      "line_count_matches": true
+    },
+    {
+      "path": "EXTCONT.md",
+      "sha256": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+      "sha256_matches": true,
+      "line_count": 654,
+      "line_count_matches": true
+    },
+    {
+      "path": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "sha256_matches": true,
+      "line_count": 597,
+      "line_count_matches": true
+    },
+    {
+      "path": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "sha256_matches": true,
+      "line_count": 592,
+      "line_count_matches": true
+    },
+    {
+      "path": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "sha256_matches": true,
+      "line_count": 713,
+      "line_count_matches": true
+    },
+    {
+      "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "sha256_matches": true,
+      "line_count": 510,
+      "line_count_matches": true
+    },
+    {
+      "path": "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "sha256_matches": true,
+      "line_count": 787,
+      "line_count_matches": true
+    },
+    {
+      "path": "HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "sha256_matches": true,
+      "line_count": 734,
+      "line_count_matches": true
+    },
+    {
+      "path": "MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "sha256_matches": true,
+      "line_count": 753,
+      "line_count_matches": true
+    },
+    {
+      "path": "COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "sha256_matches": true,
+      "line_count": 644,
+      "line_count_matches": true
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "sha256_matches": true,
+      "line_count": 11,
+      "line_count_matches": true
+    }
+  ],
+  "reproduced_mechanical_checks": {
+    "existing_local_links": 12,
+    "missing_local_links": [],
+    "equation_labels": 47,
+    "unique_equation_labels": 47,
+    "all_WR1_through_WR45_present": true,
+    "additional_labels": [
+      "WR23a",
+      "WR42a"
+    ],
+    "trailing_whitespace_lines": []
+  },
+  "scope_checks": "Author scope list agrees with the independently reviewed text, including actual moving-center jets, original sources, full normalized moving core, finite Taylor replacement, smaller rate and explicit open targets.",
+  "not_attested": [
+    "Historical author read coverage and inherited prior-task read claims were not independently replayed.",
+    "Prior review mentions in author metadata were not used as mathematical evidence.",
+    "Creation-order/absence claims, author execution history and backend model identity are not attested by this packet check.",
+    "External primary literature read history is not independently attested; no external theorem supplies a missing proof step here."
+  ],
+  "source_verdict_changed": false,
+  "source_edits": []
+}

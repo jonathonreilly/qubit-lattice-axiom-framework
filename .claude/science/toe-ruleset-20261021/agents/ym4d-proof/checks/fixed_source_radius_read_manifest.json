@@ -1,0 +1,124 @@
+{
+  "utc": "2026-10-29T23:02:46.846854+00:00",
+  "author": "/root/soft_fluctuation_covariance; requested Astra/max, backend not independently attested",
+  "role": "Author of this new unit, not its independent reviewer. Earlier SA/CB authorship disclosed; completed independent UL review remains immutable.",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808, as pinned/reconfirmed by coordinator; PROCESS_LIGHT applies to this new lane.",
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "read_coverage": "SA1-SA34; original author read complete in prior lane; current refresh of mathematical sections1-7 and checks/source comparison. Immutable source identity verified.",
+      "role": "Reviewed model/critical-point/original-reader input; the older rho*p^2 argument is explicitly replaced only for its selected sector."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "bytes": 13623,
+      "read_coverage": "Complete current report, including all scope and indicator cautions.",
+      "role": "Scoped LAND input, not an audit or a theorem for the complement."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "read_coverage": "Earlier complete author read; exact unchanged CB1-CB24 contracts consumed through reviewed SA.",
+      "role": "Actual normalized finite-u phase, chart, lift, gap, critical branch; not new geometry here."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "bytes": 17323,
+      "read_coverage": "Earlier complete read; exact unchanged review identity verified.",
+      "role": "Scoped review of CB, not expanded to full transform."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes": 48847,
+      "read_coverage": "Fresh lines410-466 and530-630, plus target locators.",
+      "role": "H20c/H20d fixed original source radius, H24/H25 pointwise gas, original support-size norm and hard-reader limits."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "bytes": 34340,
+      "read_coverage": "Fresh complete section4 lines231-315; earlier broader reads in SA.",
+      "role": "Explicit overlap/Mayer and hard-core connected graph argument; rebuilt with actual new compatibility and moment estimates."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "read_coverage": "Complete11 lines.",
+      "role": "Preregister numerical checks only, local proof rebuilding, independent review, owner publication authority."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual.py",
+      "sha256": "964917975efedcf2898bc1dd532bcf2849f74794b011156c4664425784dacb85",
+      "bytes": 8475,
+      "read_coverage": "Complete source read before new fibre diagnostics; no execution or imports.",
+      "role": "Exact already-reviewed 72/1944 crossing fraction, six-plaquette conditional fibre, one-link Bessel normalizer and three-colour Haar chart; source exposure disclosed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_primary.json",
+      "sha256": "c8a21721c425c62189a5fd7f7a7e682e5419d50a1a6307f37e542bb8e1161030",
+      "bytes": 3429,
+      "read_coverage": "Complete cache/version/coverage metadata.",
+      "role": "Cache identity and prior BFKT/Dimock read scope, not a mathematical premise."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_primary_sources.json",
+      "sha256": "56e8bcee3fe50124b05efcd9391a5116ebd965aed38de7ed137e9111541c6db4",
+      "bytes": 2893,
+      "read_coverage": "Complete cache/version/coverage metadata.",
+      "role": "Matching versioned A-R and Dimock cache paths."
+    }
+  ],
+  "primary_sources": [
+    {
+      "version": "hep-th/9409094v1",
+      "url": "https://arxiv.org/pdf/hep-th/9409094v1",
+      "pdf_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.pdf",
+      "pdf_sha256": "6498535d584bd935cd3d57f565d9c662c4fccbba31f623850431d2de3b4d8bee",
+      "text_path": "/tmp/ym-crossover-import-research-20261029/abdesselam_rivasseau_9409094v1.txt",
+      "text_sha256": "8249f0a4b74a5487de9474f5a7c59fecb6558f3af51de247a4f559ecac592edc",
+      "read_coverage": "Fresh PDF pages3-6 complete (sectionII formula and partial original proof),31-33 complete (V.E plus adjacent context). Own coefficient-probability proof is supplied; no claim to have reread entire sectionII.",
+      "fresh_version_web_open": true,
+      "proof_weight": "Attribution and hypothesis comparison only. Consumed arguments are rebuilt in FR5-FR20.",
+      "full_external_text_in_repository": false
+    },
+    {
+      "version": "1212.5562v2",
+      "url": "https://arxiv.org/pdf/1212.5562v2",
+      "pdf_path": "/tmp/claude-502/-Users-jonBridger-Toy-Physics--claude-worktrees-yang-mills-proof-df9972/a931aaa3-5369-4512-9e8d-b8590010706c/scratchpad/arxiv_balaban/pdf/1212.5562.pdf",
+      "pdf_sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c",
+      "text_path": "/tmp/claude-502/-Users-jonBridger-Toy-Physics--claude-worktrees-yang-mills-proof-df9972/a931aaa3-5369-4512-9e8d-b8590010706c/scratchpad/arxiv_balaban/txt/1212.5562.txt",
+      "text_sha256": "397a2651b949b6f6724c4b3599b23c9882f477a6123972abd793946c21bbd437",
+      "read_coverage": "Fresh complete PDF pages91-92, AppendixF. Independent probability variables and a small sup-norm interaction; not itself a theorem for fixed-rho quadratic sources.",
+      "fresh_version_web_open": true,
+      "proof_weight": "Attribution and hypothesis comparison only. Consumed arguments are rebuilt in FR5-FR20.",
+      "full_external_text_in_repository": false
+    },
+    {
+      "version": "1609.01747v1",
+      "url": "https://arxiv.org/abs/1609.01747v1",
+      "pdf_path": "/tmp/covariant_source_activity_primary/1609.01747v1.pdf",
+      "pdf_sha256": "9db3ed5d6ddbadda08ceb9b81a09db4bb50de3378048c1823249d0b8c682edeb",
+      "text_path": "/tmp/covariant_source_activity_primary/1609.01747v1.txt",
+      "text_sha256": "c8b1ee30e3e29e1b500119d727e0d9a466b5a90830dfd7d54d51b71a4fde09c6",
+      "read_coverage": "Earlier same author context: complete PDF pp1-3,12-15. Reading reused, not reread in this assignment. Contour side/outside terms comparison only.",
+      "fresh_version_web_open": false,
+      "proof_weight": "Attribution and hypothesis comparison only. Consumed arguments are rebuilt in FR5-FR20.",
+      "full_external_text_in_repository": false
+    }
+  ],
+  "not_consumed": [
+    "Concurrent mutable drafts",
+    "REC_CONT seed/exhaustion result",
+    "SOFTHARD R3 as a hard-construction premise",
+    "FK result under independent review",
+    "full PR/audit/retained-grade status"
+  ],
+  "scope": "Actual selected-sector fixed-rho construction; complement, hard histories, all-coarse coverage, multilevel induction, continuum and physical gap excluded."
+}

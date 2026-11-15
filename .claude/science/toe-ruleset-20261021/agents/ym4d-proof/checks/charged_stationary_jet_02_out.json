@@ -1,0 +1,227 @@
+{
+  "scope": "actual d4 rectangular periodic depth2 S4-prime SU2 tree; source control only",
+  "geometry": [
+    {
+      "side": [
+        18,
+        9,
+        9,
+        9
+      ],
+      "links": 52488
+    },
+    {
+      "side": [
+        6,
+        3,
+        3,
+        3
+      ],
+      "links": 648
+    },
+    {
+      "side": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "links": 8
+    }
+  ],
+  "kappas": [
+    0.7,
+    1.4
+  ],
+  "paths": [
+    1259712,
+    15552
+  ],
+  "source_norm": 1.6729492815734421,
+  "exchange": 1.8309882054838833,
+  "current": [
+    {
+      "max_q": 0.055730118745738716,
+      "max_div_q": 0.018485756574143683,
+      "max_mean_B": 0.1566698730615579,
+      "max_DB_source": 0.002396274763953278
+    },
+    {
+      "max_q": 1.2830621036842502,
+      "max_div_q": 1.1385042183716512,
+      "max_mean_B": 0.9724276639585516,
+      "max_DB_source": 0.14498622528209965
+    }
+  ],
+  "max_funnel": 0.1405560763421787,
+  "checks": [
+    {
+      "name": "root_covariance",
+      "value": 2.6645352591003757e-15,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "root_covariance",
+      "value": 2.4424906541753444e-15,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "solve",
+      "value": 1.13000830782194e-12,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "solve",
+      "value": 1.982833708774291e-12,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "solve",
+      "value": 1.924640134065347e-12,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "composite_rootzero_gauge_source",
+      "value": 3.4534874959746276e-14,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "solve",
+      "value": 1.965814355601607e-12,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "solve",
+      "value": 1.2749956751965e-12,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "solve",
+      "value": 1.3454593883587963e-12,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "intermediate_exact_q_recursion",
+      "value": 3.78690134805737e-14,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "reject_omitted_DB_source",
+      "value": 0.1449862252820972,
+      "threshold": 1e-06,
+      "positive": true,
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_kappa_ratio",
+      "value": 0.027865059372871506,
+      "threshold": 1e-06,
+      "positive": true,
+      "passed": true
+    },
+    {
+      "name": "log_current_symmetric_bracket",
+      "value": 7.029099524658022e-14,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "right_current_covariant_divergence",
+      "value": 7.028926052310425e-14,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "log_current_symmetric_bracket",
+      "value": 1.8207657603852567e-14,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "right_current_covariant_divergence",
+      "value": 1.84297022087776e-14,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "forced_straight_current_recursion",
+      "value": 3.7870748204049676e-14,
+      "threshold": 1e-09,
+      "positive": false,
+      "passed": true
+    },
+    {
+      "name": "reject_omitted_funnel",
+      "value": 0.14055607634218706,
+      "threshold": 1e-06,
+      "positive": true,
+      "passed": true
+    },
+    {
+      "name": "reject_funnel_sign",
+      "value": 0.28111215268436573,
+      "threshold": 1e-06,
+      "positive": true,
+      "passed": true
+    }
+  ],
+  "solves": [
+    {
+      "info": 0,
+      "iterations": 161,
+      "relative_error": 1.13000830782194e-12
+    },
+    {
+      "info": 0,
+      "iterations": 160,
+      "relative_error": 1.982833708774291e-12
+    },
+    {
+      "info": 0,
+      "iterations": 160,
+      "relative_error": 1.924640134065347e-12
+    },
+    {
+      "info": 0,
+      "iterations": 176,
+      "relative_error": 1.965814355601607e-12
+    },
+    {
+      "info": 0,
+      "iterations": 176,
+      "relative_error": 1.2749956751965e-12
+    },
+    {
+      "info": 0,
+      "iterations": 176,
+      "relative_error": 1.3454593883587963e-12
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "elapsed_seconds": 3.3205339908599854
+}

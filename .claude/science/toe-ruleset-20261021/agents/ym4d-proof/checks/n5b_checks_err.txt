@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/ym4d-lanes/q/M1/repo/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_checks.py", line 197, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/ym4d-lanes/q/M1/repo/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/n5b_checks.py", line 179, in main
+    resource.setrlimit(resource.RLIMIT_RSS, (LIMIT, LIMIT))
+ValueError: current limit exceeds maximum limit

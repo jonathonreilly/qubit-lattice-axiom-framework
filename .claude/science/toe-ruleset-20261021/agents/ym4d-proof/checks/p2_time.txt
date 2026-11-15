@@ -1,0 +1,9 @@
+start Tue Oct 27 23:40:24 UTC 2026 load { 3.13 3.53 3.47 } System-wide memory free percentage: 48%
+end Tue Oct 27 23:40:24 UTC 2026 rc=0
+        0.62 real         0.51 user         0.02 sys
+            79626240  maximum resident set size
+First and only run; numeric lock held; nice 10; threads 1; python3 without -I (user-site numpy; no external files read).
+Post-run disclosure (2026-10-27 23:42 UTC): D's informational item used (2/N)*4*beta_1(N) (criteria text and script
+alike); the quantity used in PLD.md §14.4 is alpha t^2 beta_1 with alpha = 1/(2N), t = 2, i.e. (2/N)*beta_1(N) =
+22N/(12 pi^2) = 0.1857N, which exceeds log(24 L^4)/log L = 6.8928 first at N = 38 (post-run arithmetic: 0.1857*37 =
+6.872, 0.1857*38 = 7.058), not N = 10. D's PASS condition (n_* = 382, 255) is unaffected; no rerun.

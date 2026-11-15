@@ -1,0 +1,112 @@
+{
+  "schema": "immutable-source-only-findings-v1",
+  "frozen_utc": "2026-10-30T15:08:34.780945+00:00",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+    "absolute_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+    "revision": "worktree-bytes",
+    "sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+    "bytes": 37656,
+    "line_count": 710,
+    "coverage": "full",
+    "consumed_windows": [
+      [
+        1,
+        710
+      ]
+    ],
+    "role": "sole scientific review target",
+    "head_blob_oid": null,
+    "git_tracking": "not-present-at-head"
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mean_reader_return_read_manifest.json",
+    "sha256": "0af293a5ceed49f92b072365b235e24b46fb12bdb390d0c31f3c98fb79956b09"
+  },
+  "author_packet_opened_at_freeze": false,
+  "prior_reviews_opened_at_freeze": false,
+  "source_verdict": "LAND",
+  "verdict_scope": "The new complete-reader analytic-substitution proposition, actual bare/local-small-boundary specialization and elementary normalized real Gaussian shift/jet lemmas, under the literal supplied source hypotheses. Section 6 is checked prior-WR bookkeeping, not a new full return theorem.",
+  "blocking_source_findings": [],
+  "source_edits_required": false,
+  "checks": [
+    {
+      "id": "analytic-substitution",
+      "target_lines": [
+        81,
+        190
+      ],
+      "result": "supported",
+      "reason": "Ordered Leibniz on the downward-closed (6,4) rectangle gives the algebra. Scalar Cauchy yields coefficient majorants. Summing multiindices gives (1-theta)^(-q). A base mark consumes k|Y| and the second d reserve; a mean-reader mark is rooted at its actual output and uses the full vector marked norm. q<=k|Y| and k[-log(1-theta)]<=d pay every size-dependent exponential. No fixed prefactor is asked to dominate growth in arbitrary |Y|."
+    },
+    {
+      "id": "bare-domain-and-counts",
+      "target_lines": [
+        192,
+        312
+      ],
+      "result": "supported under actual local H,a supplier",
+      "reason": "Directional one-variable Cauchy controls the cubic remainder by 128(1+rho)H r_a^3/(sigma^2 a^3), without slot cancellation. Ternary flags cost at most 3^q0; original scalar/colour/source counts and m!n! weights are retained. Fine radius is r_a=sigma p_cut, and the small substitution ratio is C_J t_d/r_a. K is the actual ceiling, with K=O(log u); alpha>5/2 gives h/xi=O(K^2/p_cut)->0 and sigma p_cut^3->0. Three beta/16 losses are explicit. h=1 or arbitrary polynomial radii do not follow."
+    },
+    {
+      "id": "physical-regional-jets",
+      "target_lines": [
+        314,
+        427
+      ],
+      "result": "supported at deterministic masks and small physical boundary",
+      "reason": "Right Haar pullback fixes only the stated original bare selectors. The regional derivative uses the exact ordered product for U_out U0(V)^-1; chi/(32m sqrt(N)h) preserves independent RF domains. k+4D scalar labels and original plaquette sources are counted, the N9 boundary-membership mask remains in b_Lambda, and the Y boundary force is not curvature-suppressed. Touching-vertex active/exterior masks are decided by its original stencil; no deep exterior derivative is inferred. Positive c_z can be fixed first and c_q chosen below the compact cap bound; then sufficiently large u pays the remaining force. Outside-only W_out^H and all vacua stay explicit."
+    },
+    {
+      "id": "normalized-gaussian-shift",
+      "target_lines": [
+        429,
+        547
+      ],
+      "result": "supported as normalized-density identities, not covariance locality",
+      "reason": "Gaussian conditional expectation of the BI Hermite family proves the product scalar-factorial L2 bound and hence L1. Fourier translation identifies the absolutely convergent mean series. At zero order the exact shifted mass is one; only the positive majorant grows in |H|. Covariance derivatives require the normalized heat identity and set partitions. The second factorial split gives L_2=2sqrt(B); the explicitly retained D_10(I) is polynomial in actual active dimension, including all ordered external jet sums. Principal covariance marginals, mixed correlations, and zero-dimensional normalization remain."
+    },
+    {
+      "id": "rough-one-use-ledger",
+      "target_lines": [
+        549,
+        659
+      ],
+      "result": "matching prior WR supplier; no second theorem",
+      "reason": "Actual positive numerator/denominator and rough normalizer scores match MS and WR. The finite square-free real Taylor lift does not assert rough fine analyticity. Full determinant/inverse lists and both tails retain K_g^(k|H_g|). WR34 spends c u q n_g/16 of the one c u q n_g/2 reserve; the remaining 7/16 pays displayed growth and the SAME actual root pin. The marked sum is rooted at X in H_g before using V_beta(b), so no ambient uncharged mean-reader sum appears. Side flux and sphere price keep their own Gaussian exponent."
+    },
+    {
+      "id": "claim-boundary",
+      "target_lines": [
+        661,
+        710
+      ],
+      "result": "honestly bounded",
+      "reason": "No fine-analytic norm is inferred from generic inherited finite-real jets. ME24b gives no covariance reader localization; it requires a displayed extra margin before any activity sum can absorb |I|. Native mu+2, retained hard-cut jets, joint differentiated full R_h/Z_A, all histories, effective iteration and physical reconstruction remain unproved. Strong-core and RJ proposals are not premises of the new analytic or elementary identities."
+    }
+  ],
+  "independent_check_method": "Manual algebra, normalized Fourier/Hermite derivation, support-mark reconstruction, asymptotic inequalities and edge cases; no scientific numerical run.",
+  "edge_cases": [
+    "I_Y empty: changed analytic term zero, original scalar retained",
+    "H empty: no translation dimension factor",
+    "I empty: exact normalized density one and higher jets zero",
+    "Lambda empty: regional mean absent, physical outside factor retained",
+    "source weights zero: omit zero directions",
+    "small torus and arbitrary deterministic holes: full ambient readers remain",
+    "large mean: zero-order L1 remains one but complete data readers are nonlocal"
+  ],
+  "open_physical_objectives": {
+    "full_4d_nonfree_SU_N_continuum_existence": "OPEN",
+    "positive_physical_continuum_mass_gap": "OPEN"
+  },
+  "not_a_no_go": "Failures of an automatic inherited-history transfer are interface gaps, not an obstruction to other representations.",
+  "checks_not_run": [
+    "No scientific runner or experiment; none is a proof premise for the written unit.",
+    "No integration/audit pipeline or Git mutation; root owns publication."
+  ],
+  "mechanical_target_lint": {
+    "method": "scripts/vocab_lint.py lint_one_file(..., apply_fix=False)",
+    "violations": 0,
+    "target_unchanged": true
+  }
+}

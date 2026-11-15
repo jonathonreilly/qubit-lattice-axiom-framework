@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-29T21:48:02.210343+00:00",
+  "review_report_sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+  "final_target_sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+  "correction_receipt_sha256": "b21338a5b2035c5f7b65c13b10721a1a7769ea576d8c23692270b92adbd1957a",
+  "links": [
+    {
+      "target": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/uniform_one_loop_fixed_complement_correction.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_correction_verification.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_read_manifest.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_numeric_plan.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_after_target_plan.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_01.stdout.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_01.stderr.txt",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_02.stdout.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_author_replay.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_attempts.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/review_uniform_one_loop_receipt.json",
+      "exists_or_planned_receipt": true
+    }
+  ],
+  "independent_predicates": [
+    38,
+    38
+  ],
+  "detected_mutation_controls": 14,
+  "author_reproduction": [
+    24,
+    24
+  ],
+  "author_results_match_exactly": true,
+  "resource_halt_preserved": true,
+  "final_disposition": "LAND",
+  "finding_F1": "resolved in final source; no outstanding material finding",
+  "scope": "Volume-first Gaussian one-loop coefficient and every-increment B-BR, under exact normalized-tree/linear/jet/residual contracts; no finite-u/continuum/physical-gap inference."
+}

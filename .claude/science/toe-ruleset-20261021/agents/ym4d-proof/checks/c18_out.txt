@@ -1,0 +1,15 @@
+  smooth-abelian     seed 1: t=0.001 phi=6.012e-04 R=0.042954  t=0.02 phi=1.202e-02 R=0.042954  t=0.04 phi=2.405e-02 R=0.042953  t=0.08 phi=4.810e-02 R=0.042950  t=0.16 phi=9.619e-02 R=0.042939
+PASS (i) smooth-abelian seed 1: R(t_min) <= 1 | R(t_min)=0.042954
+PASS (ii) smooth-abelian seed 1: |R(t)-R(t_min)| vanishes at least linearly in phi | slope=2.00; max |R-R0|/phi=0.000
+  smooth-nonabelian  seed 2: t=0.001 phi=5.571e-04 R=0.034635  t=0.02 phi=1.113e-02 R=0.034618  t=0.04 phi=2.225e-02 R=0.034611  t=0.08 phi=4.447e-02 R=0.034628  t=0.16 phi=8.894e-02 R=0.034791
+PASS (i) smooth-nonabelian seed 2: R(t_min) <= 1 | R(t_min)=0.034635
+FAIL (ii) smooth-nonabelian seed 2: |R(t)-R(t_min)| vanishes at least linearly in phi | slope=0.53; max |R-R0|/phi=0.002
+  smooth-nonabelian  seed 3: t=0.001 phi=6.267e-04 R=0.038592  t=0.02 phi=1.253e-02 R=0.038621  t=0.04 phi=2.507e-02 R=0.038663  t=0.08 phi=5.014e-02 R=0.038783  t=0.16 phi=1.003e-01 R=0.039165
+PASS (i) smooth-nonabelian seed 3: R(t_min) <= 1 | R(t_min)=0.038592
+PASS (ii) smooth-nonabelian seed 3: |R(t)-R(t_min)| vanishes at least linearly in phi | slope=1.29; max |R-R0|/phi=0.006
+  rough              seed 4: t=0.001 phi=4.521e-03 R=0.000947  t=0.02 phi=9.044e-02 R=0.000940  t=0.04 phi=1.809e-01 R=0.000936  t=0.08 phi=3.617e-01 R=0.000937  t=0.16 phi=7.223e-01 R=0.000999
+PASS (i) rough seed 4: R(t_min) <= 1 | R(t_min)=0.000947
+FAIL (ii) rough seed 4: |R(t)-R(t_min)| vanishes at least linearly in phi | slope=0.71; max |R-R0|/phi=0.000
+(iii) max over fields and t of (R - 1)/phi = 0.000 (negative = coarse action below fine action)
+runtime 11.4 s
+TOTAL: PASS=6 FAIL=2

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-29T15:16:49.361958+00:00",
+  "staged_paths_before_record": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_checker_fix.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_coefficient_scope_fix.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_criteria.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_exact.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_dimension.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_dimension.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_dimension.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_power.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_power.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_fix_mutant_power.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results_v2.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results_v2.stderr"
+  ],
+  "vocabulary_files": 6,
+  "vocabulary_violations": 0,
+  "staged_whitespace_exit": 0,
+  "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+  "source_sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2",
+  "checker_sha256": "f1ae35944486ac5b141fb7627ebdb629608af7b5ad095e268b45af86dcfbddbf",
+  "validation": "47/47 repaired author predicates, empty stderr; both formerly surviving mutations now exit1 at both actual coordinate-transfer comparisons, independently confirmed. No repeated unchanged baseline run.",
+  "scope": "Narrow test-strength and coefficient-wording repair; finite positive statements only, full independent unit review pending."
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "role": "author provenance, not independent review or audit",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+    "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+    "lines": 510
+  },
+  "producer_status": "Coordinator reported fresh scoped LAND without repair on the exact RF source hash. RF source arguments and checked hypotheses are used; its review report is not consumed as proof.",
+  "read_limit": "Ranges below distinguish current direct reads from earlier same-session complete author/producer work. Narrow text searches were navigation only. No unseen range or primary paper is claimed read.",
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          592
+        ]
+      ],
+      "use": "RF1-4 and RF27 exact touching/outside/Haar factors; RF12 boundary masks; RF15-20 force, common domain and actual critical point; RF21-24 actual regional covariance and active principal-core bounds; section 5 canonical membership agreement; RF25 determinant branch. Entire frozen source checked; the independent review verdict is not a proof premise."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          235
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          711
+        ]
+      ],
+      "use": "Rebuild changed regional hypotheses and then use the finite-parameter side/primitive/density/connected mechanism. One new regional atom family is used throughout; all local constants are recomputed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "lines": 247,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          92
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          247
+        ]
+      ],
+      "use": "Uniform explicit inequalities and cancellation of sigma powers, with regional force and boundary domains checked separately."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "lines": 624,
+      "direct_read_ranges_this_unit": [
+        [
+          200,
+          310
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          624
+        ]
+      ],
+      "use": "NC12-15 coefficientwise no-side parity; regional active-only Taylor majorants retain exterior data in their full readers."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "direct_read_ranges_this_unit": [
+        [
+          36,
+          125
+        ],
+        [
+          640,
+          713
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          713
+        ]
+      ],
+      "use": "Core inverse/row constants and the bounded centered endpoint; not a shifted or regional theorem by itself."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "lines": 790,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          88
+        ],
+        [
+          480,
+          538
+        ]
+      ],
+      "use": "Bounded comparison with selected white domains and its prior critical-point scope; no regional exterior theorem imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "direct_read_ranges_this_unit": [
+        [
+          625,
+          640
+        ]
+      ],
+      "use": "Bounded selected-domain comparison. The regional stationarity/common local analytic majorant is consumed through the fully read RF source, not attributed to these 16 lines."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "lines": 580,
+      "direct_read_ranges_this_unit": [
+        [
+          195,
+          310
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          195
+        ],
+        [
+          390,
+          430
+        ]
+      ],
+      "use": "GC13-18 constrained conditional minimum and KKT domain comparison; no history denominator transferred."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "lines": 812,
+      "direct_read_ranges_this_unit": [],
+      "earlier_same_session_read_ranges": [
+        [
+          469,
+          543
+        ]
+      ],
+      "use": "Reuse only the earlier literal hole/white-cut hypothesis comparison; no all-cut or effective-level conclusion."
+    }
+  ],
+  "methodology_reuse": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+    "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+    "lines": 246,
+    "use": "Reuse the unchanged same-session AGENTS/PROCESS_LIGHT/physics-loop and relevant review-loop reading, including source-specific methodology selected at main 01589af3faf806b736c42dc2f3bd625e9edead9f. Provenance only."
+  },
+  "new_math": "Regional active-only 2H Cauchy majorant; N9 boundary masks inside N13 primitive readers; exact outside/Haar factorization; actual principal regional family through SN; canonical membership agreement; physical boundary substitution and explicit fixed-source shrinking domain.",
+  "external_math": "No new external theorem or primary-paper premise. The coordinator mentioned Dimock; this author did not read or import that paper in this unit.",
+  "scope": "Fixed original-a auxiliary regional chart with small boundary-only data; exact separate deep-exterior factor. No rough-boundary/history ratio, original G/Omega identity, complement return, effective iteration, continuum existence or physical gap.",
+  "execution": "Only owned regional source/check files; no scientific numerics, additional workers, Git/front/PR/locks/audit operations.",
+  "freeze": "Mathematical source hash announced to coordinator before this package; fresh reviewer dispatched on that exact source."
+}

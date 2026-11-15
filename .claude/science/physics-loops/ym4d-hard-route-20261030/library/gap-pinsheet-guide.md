@@ -83,3 +83,18 @@ Production plan (fixed 00:45Z, before any production data): P1 sides 8, 12, 16, 
 from the cold start, 10000/8000/5000/2500 measured sweeps; P3 sides 8, 12, 16 with 10000/8000/5000. One chain per side (seeds in run.sh).
 Extra check added now: the infrared bound itself, Ghat^e(p_1) <= 1/(2 beta E(p_1)) (row 977 5.3), per component, from the p_1 data.
 
+## Step 4. P1 results (GUIDE), sides 8 and 12 (analysed 00:56Z; sides 16 and 24 follow)
+
+Raw data `library/guide/lane980/data/p1_S8_T16_seed801.txt`, `p1_S12_T24_seed1201.txt`; analysis output `data/analysis_p1_S8_S12.txt`.
+Errors: 16 blocks of 625 (side 8) and 500 (side 12) sweeps.
+
+| side | R_S = E|M|^2/A | R_S/A | lam_* (C1 bound) | tau = E<P,P'> | xi_2nd | Ghat^e(p_1) | IR bound 1/(2 beta E(p_1)) | E[a_0^2] |
+|---|---|---|---|---|---|---|---|---|
+| 8 | 42.241 +- 0.004 | 0.660 | 21.78 | 0.75130 +- 0.00010 | 7.84 +- 0.005 | 0.2851 | 0.7422 | 0.2512 +- 0.0006 |
+| 12 | 89.939 +- 0.017 | 0.625 | 32.79 | 0.75116 +- 0.00006 | 12.33 +- 0.01 | 0.5385 | 1.6226 | 0.2501 +- 0.0017 |
+
+Notes. tau_int of R is about 1 sweep (4 over-relaxation passes per sweep). The half-chain test on side 8 differs by 3.3 sigma
+(42.229 against 42.252, a 0.05 percent shift): the block error there may be low by a factor up to about 3; this does not touch any
+criterion (the C1 margin is thousands of standard errors). E[a_0^2] = 1/4 within errors on both sides (Lemma D1 symmetry).
+The infrared bound of row 977 5.3 holds at p_1 with room (ratio 0.38 and 0.33).
+

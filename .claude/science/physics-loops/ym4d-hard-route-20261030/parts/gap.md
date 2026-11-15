@@ -105,7 +105,8 @@ obligation here carries `implication` or `discharged`; the lane's own check rows
   equivalent to (PHYS-SEED)) -> (W) by Theorem ZD-c. Row 998 L125-127, L884; OPEN in FINISH L1077.
 - gap: contraction of the Casimir free energy under doubling, (CAS) with theta < 1 on a bounded range -> (W), with the
   extensive base below. Row 708 `gap-mid-max.md` L64; row 998 L885-886; "(CAS) gives the seed; the converse is not
-  proved" (ARGUED, row 998 L804-808).
+  proved" (ARGUED, row 998 L804-808). gpt-6-astra check of row 998 (`library/gap-crux-exercise3-check-astra.md` L159, L171):
+  this HOLDS for the original (CAS); the printed existential-base (CONTR) is equivalent to (PHYS-SEED) by Z3.
 - gap: unit-chain functional inequalities (U1), (U2), (HC-phys) -> (W) with (TH). Cross-provider check of row 982 (`library/gap-hcphys-check-astra.md` L93): U1 implies U2 HOLDS; the claimed deduction of the pointwise U3 from the integrated decay FAILS. Row 982 `gap-hcphys-max.md` L135-163
   (corrected by row 984); stronger than the target (row 998 L665).
 - gap: an even step, (EV-STEP) -> the even-sector statement (G_ev) of row 731. Row 998 L664, L676.

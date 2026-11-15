@@ -134,3 +134,223 @@ WN1 writes one number xbar = E x_p for all plaquettes; on a torus with unequal s
 depend on the plane (mu, nu). With equal sides (hypercubic symmetry) it is one number.
 
 - 2026-11-15 20:05Z: step 2 done. Step 3 (WN (i)-(iii), WN1-WN3 line by line) next.
+
+## 3. Step 3 result: Lemma WN (i)-(iii) and Corollaries WN1-WN3, line by line
+
+**WN (i): CONFIRMED.** Redone in test (a). The identity is algebraic and holds for every real
+link-end field F (pinned ends included); the orientation of p does not matter.
+
+**WN (ii): CONFIRMED.** U -> a U b with fixed a, b keeps Haar measure on SU(2) (bi-invariance);
+F = 0 on pinned ends, so tau_t moves only integrated links, one link at a time. Hence
+int exp(H o tau_t) = int exp(H), i.e. E exp(H o tau_t - H) = 1.
+
+**WN (iii): CONFIRMED.** With g(t) = H o tau_t - H, (ii) gives E e^(g(t)) = 1. The integrand is
+smooth on a compact product of groups, so differentiation under the integral is allowed:
+E[g'(0)] = 0 and E[g''(0) + g'(0)^2] = 0, i.e. E[D] + E[X^2] = 0. The second derivative of
+(1/2) tr(prod e^(t theta_i c) V_i) at 0 is sum_i theta_i^2 (1/2) tr(c^2 U_p) plus
+sum over i != j of theta_i theta_j (1/2) tr(c P_ij c P_ji), and c^2 = -1. This is the file's D.
+The cross terms vanish in mean by test (c). The hypothesis of (iii) is exactly what (c) needs.
+
+**WN1: CONFIRMED, with one precision.** Corner values and the count 3: test (d). Second
+derivation (different route, not in the file). The corner sum equals, site by site, the Laplacian
+form of the corner graph at that site: in 4D a site has 8 link-ends (x, +mu) (starts) and
+(x, -mu) (ends), and a corner joins two link-ends of different directions, so the graph is
+K_(2,2,2,2) with 24 edges, one per plaquette through x. Its Laplacian spectrum is 0 (once),
+6 (four times, vectors (1, -1) on one pair {+mu, -mu}), 8 (three times). For a left-translation
+field the values at x are f(x, mu) on the four starts and 0 on the four ends. So
+|F - mean|^2 = sum_mu f(x,mu)^2 - (sum_mu f(x,mu))^2/8 >= (1/2) sum_mu f(x,mu)^2 by Cauchy-Schwarz,
+and the form at x is at least 6 * (1/2) sum_mu f(x,mu)^2 = 3 sum_mu f(x,mu)^2. Summed over sites:
+the file's bound 3 |f|_2^2, and an upper bound 8 |f|_2^2. **New: the constant 3 is attained**, by
+every f with f(x, mu) = a_x independent of mu (then F - mean is (a_x/2)(1, -1) on each pair, an
+eigenvector for 6, and Cauchy-Schwarz is an equality). Precision: E x_p is one number xbar only
+when the torus has equal sides (hypercubic symmetry); otherwise read xbar as the plane-dependent
+mean and the bound with its minimum. xbar >= 0 is not an extra assumption: E[X(f)^2] >= 0 and the
+form is positive for f != 0, so beta xbar >= 0 follows from the identity.
+
+**WN2: CONFIRMED.** W(t) is no longer constant (theta need not be delta F). W'(0) = E[X] with
+X = sum beta_p theta_(p,x) (1/2) tr(c U_(p,x)) = -sum beta_p theta_(p,x) y_3(U_(p,x)), U_(p,x) the
+holonomy of p based at x. The gauge map at the free site x sends U_(p,x) -> h U_(p,x) h^(-1), so
+y(U_(p,x)) -> R(h) y(U_(p,x)), R(h) in SO(3) Haar-distributed; hence E[X] = 0. W''(0) = E[D] + E[X^2].
+Cross terms of D (two non-zero corners of one plaquette, distinct free sites): mean 0 by test (c).
+Cross terms of E[X^2] at distinct sites x != x': the gauge map at x rotates y(U_(p,x)) and leaves
+U_(p',x') unchanged (a holonomy based at x' != x sees h^(-1) h at x), so the mean is 0. Diagonal:
+the Haar average over SO(3) of (R y)_3^2 is |y|^2/3, and |y|^2 = 1 - x_p^2. So
+-W''(0) = sum theta^2 [beta_p E x_p - (beta_p^2/3) E(1 - x_p^2)], as stated. The hypothesis
+"pairwise distinct free sites" is used twice: at most one non-zero corner per site (for E[X^2]),
+and freeness (for E[X] and the cross terms).
+
+**WN3: CONFIRMED (identity), same precision as WN1.** F = 1 at the start s of l, 0 elsewhere:
+each of the six plaquettes through l, oriented to leave s along l, has theta = 1 at s (leave by l:
+F = 1; arrive by a link whose end at s carries 0) and theta = 0 at its other corners. (iii) gives
+E[X^2] = 6 beta xbar, X = -beta sum_q y_3(U_(q,l)), so E[(sum_q y_3)^2] = 6 xbar/beta. All six
+holonomies are based at s; the gauge map at s rotates their sum Y by one R(h), so
+E|Y|^2 = 3 E[Y_3^2] = 18 xbar/beta. Subtract the diagonal sum_q E(1 - x_q^2) = 6 E(1 - x^2)
+(equal sides) and multiply by beta/18: rho = (beta/18) sum_(q != q') E[y_q . y_q'].
+
+**On the ARGUED remarks inside WN3 (not on W1's list; consistency only).** (1) The free-field
+count is right: in the Gaussian limit each of the 3(d - 1) physical modes per site carries 1/2 of
+action and a site has d(d - 1)/2 plaquettes, so beta E(1 - x_p) -> 3/d, i.e. 3/(4 beta) in d = 4
+and 3/(2 beta) for one plaquette (3 modes). With 1 - x^2 ~ 2(1 - x), rho -> 1 - (2 beta/3)(3/(d beta))
+= 1 - 2/d: 1/2 in d = 4, and 0 in d = 2, where a planar gauge field with free boundary is a product of
+independent plaquettes, so rho = 0 exactly. Consistent. (2) Wording: WN3 says a proof of rho > 0
+at large beta "needs E(1 - x_p) < 3/(2 beta)". From 1 + x <= 2, rho >= 1 - (1 + 2 beta/3) E(1 - x),
+so the sufficient condition is E(1 - x_p) < 3/(3 + 2 beta), as 7.3 writes; 3/(2 beta) is only its
+leading order and is not sufficient by itself. Not used by any PROVED statement.
+
+- 2026-11-15 20:25Z: step 3 done. Step 4 (Lemma TWIST) next.
+
+## 4. Step 4 result: Lemma TWIST, line by line
+
+**CONFIRMED, and it holds more generally than stated.** Let Omega~ = Omega on the sites that carry
+a pinned link and 1 elsewhere. The gauge map U_l -> Omega~(s) U_l Omega~(e)^(-1) is, on each
+integrated link, a left and a right translation by fixed elements, so it keeps the Haar measure of
+the integrated links. It sends the pinned data u to u^Omega, and it keeps every plaquette trace.
+Hence Z(u) = int exp H(u, U) dU = int exp H(u^Omega, U^Omega~) dU = Z(u^Omega). Nothing in the proof
+uses the shape of the region, the choice of the pinned set, or continuity of Omega~ at the
+boundary: an integrated link whose two ends are both boundary sites (a chord) is also moved by fixed
+translations. (In a lattice cube every link between two boundary sites lies in a face, so no chord
+occurs there.) Stronger form, same proof: the conditional law given u^Omega is the image of the law
+given u under Omega~, so every gauge-invariant conditional expectation is unchanged too.
+
+**Consequences in the file: CONFIRMED.** Z of a pinned cell depends on the gauge orbit of the data
+only; no winding label of Omega is visible to Z, so C3 as written (Z_k against Z_0) is void. What
+TWIST does not say: with an admissibility constraint on plaquettes (as in Luscher's admissible
+fields) sectors exist, and a small-curvature extension of winding data can still be obstructed.
+That concerns the refilling test K8 and row 1013 6.3, which W1 does not ask me to check.
+
+- 2026-11-15 20:31Z: step 4 done. Step 5 (Lemmas JEN, SLAB) next.
+
+## 5. Step 5 result: Lemma JEN (i)-(ii) and Lemma SLAB, line by line
+
+**JEN (i): CONFIRMED.** Apply tau_eta to all links. On a pinned link l it gives
+e^(eta a_l c) u_l e^(0) = u^(eta)_l, because F = a_l at the start and 0 at the end. On integrated
+links it is a Haar-preserving translation. So
+Z(u^(eta)) = int exp H(u^(eta), U) dU = int exp H(u^(eta), tau_eta U') dU' = Z(u) E_u exp(H o tau_eta - H),
+where H o tau_eta is H after tau_eta on every link. Jensen (exp convex, Z(u) > 0) gives the bound.
+The proof needs Lemma WN (i) only as an identity for each plaquette; WN (i) holds for any F.
+
+**JEN (ii): CONFIRMED.** Test (e). It needs the four sites of p distinct and every corner with
+theta != 0 at a free site; corners with theta = 0 give cos 0 = 1 whatever their site.
+
+**"What it gives": CONFIRMED as a reading of (i)-(ii), with one remark.** For plaquettes whose
+non-zero corners are all free, E_u[x_p - x_p o tau_eta] = E_u[x_p](1 - prod cos(eta theta)), which is
+(eta^2/2) E_u[x_p] sum theta^2 + O(eta^4). The other plaquettes ("at pinned sites") can carry a
+first-order term; their sum is -eta E_u[X] = -eta (d/d eta) log Z(u^(eta)) at 0, so it vanishes
+exactly when u is a critical point of the twist. For u = 1 it vanishes plaquette by plaquette (the
+constant gauge map by i sigma_1 keeps the data 1 and sends y_3 -> -y_3). Step 6 uses this.
+
+**SLAB (identity): CONFIRMED.** Region {0, 1} x B, links of both slices pinned. A plaquette that
+contains an integrated link g(y) = U_4(0, y) is a (mu, 4) plaquette at time 0; going
+(0,y) -> (0,y+mu) -> (1,y+mu) -> (1,y) -> (0,y) its factors are A_mu(y), g(y+mu), A'_mu(y)^(-1),
+g(y)^(-1), so x_p = (1/2) tr(A_mu(y) g(y+mu) A'_mu(y)^(-1) g(y)^(-1)), as stated. In-slice plaquettes
+are constants. For A = A' = 1, (1/2) tr(g h^(-1)) = q_g . q_h (unit quaternions as vectors of R^4),
+so the law is the O(4) model exp(beta sum q_y . q_(y+mu)). The same identity holds when the two
+slices sit inside a larger lattice: every plaquette that contains U_4(0, y) is a (mu, 4) plaquette at
+time 0, so given the two slices the links between them decouple from the rest.
+
+**SLAB (consequence): the ARGUED step is sound as written.** With A = A' = 1 the loop "up at y,
+along slice 1, down at y', back along slice 0" has trace (1/2) tr(g(y) g(y')^(-1)) = q_y . q_y'. On a
+3D torus B, Frohlich, Simon and Spencer (1976; RECALLED, not rebuilt) give long-range order of the
+O(4) model at large beta. So a class that contains these pins at weak coupling has no uniform
+mixing. The pins are atypical (data 1); that is enough against a statement uniform over pins, and
+it says nothing about typical data, as the file's wording already implies.
+
+- 2026-11-15 20:44Z: step 5 done. Step 6 (the two ARGUED remarks) next.
+
+## 6. Step 6 result: the two ARGUED remarks of W1
+
+### 6.1 "The best lab-frame bound is of order beta eta^2 R" (row 1013 5.1): CONFIRMED at the trivial pin, second order in eta, with the minimisation now written out
+
+The file leaves the minimisation over F unwritten. Here it is, for the cube c = {0..R}^4, R >= 3,
+pin u = 1, small eta, axis c fixed (the lab frame). Notation as in Section 2 of this file.
+
+**Step A (where the non-free corners sit).** A site is free iff it is interior. For a plaquette p in
+the plane (mu, nu) whose two other coordinates are interior, the four sites and links are a unit
+square inside [0, R]^2: a corner of it is a boundary site iff it lies on an edge of the square that
+lies on the boundary of [0, R]^2 (R >= 2). So the non-free corners of p form an arc joined by pinned
+links: none, one pinned edge (two corners), or two pinned edges at a corner of [0, R]^2 (three
+corners). If another coordinate is 0 or R, p lies in a face: all four links pinned.
+
+**Step B (the second derivative, exactly).** Let D_p be the second t-derivative of x_p o tau_t at 0.
+Cross terms with a free corner have mean 0 (test (c)). For two non-free corners i, j, one of P_ij,
+P_ji runs along the pinned arc, so it is 1, and (1/2) tr(c P_ij c P_ji) = (1/2) tr(c^2 P) = -x_p. Hence
+ -E_1[D_p] = E_1[x_p] [ sum over free corners theta^2 + (sum over non-free corners theta)^2 ].
+The first-order terms vanish plaquette by plaquette (Section 5, the i sigma_1 symmetry of the pin 1).
+So the Jensen exponent of JEN (i) is (eta^2/2) J(F) + O(eta^3), J(F) = sum_p beta_p (-E_1 D_p).
+
+**Step C (the minimisation decouples).** A corner value theta is a difference of two link-end
+values at one site, and each link-end belongs to one site. So the free corners use only the values
+at free sites, the non-free corners only the values at boundary sites. The free part is minimised,
+to 0, by F constant at each free site (for instance F = 0 on all interior link-ends). For the
+non-free part: a fully pinned p contributes beta_p ((da)_p)^2, fixed (the sum of theta around p is
+the oriented sum of F(l,s) - F(l,e) = a_l). A plaquette with one pinned edge l contributes
+beta_p E_1[x_p] (a_l + phi_out - phi_in)^2, where phi are the values on the integrated link-ends at
+the two ends of l. At a boundary site interior to a 3-face there is exactly one integrated link-end
+(the inward link), so phi is one function on those sites and the term is (a + d phi)_l^2. The way a_l
+is split between the two ends of l does not enter.
+
+**Step D (the size).** Let c_* = min of E_1[x_p] over the plaquettes with one pinned edge. Then
+ min over F of J >= c_* beta * min over phi of sum over face-interior boundary links (a + d phi)_l^2,
+and J at F = 0 on interior link-ends is at most beta (sum over pinned-face plaquettes ((da)_p)^2 +
+4 |a|^2 + edge terms). For a profile of size 1/R that is co-closed on each face with no flux through
+the face boundary (a = curl of a bump of height 1, discretised), <a - d phi, a> = |a|^2 for every
+phi, so the minimum is at least |a|^2, which is of order R^3 * R^-2 = R. The upper side is also of
+order R. So the best lab-frame bound is of order c_* beta eta^2 R, while the classical action of
+the smooth extension is of order beta eta^2 (field strength eta/R^2 on R^4 plaquettes). The factor R
+is confirmed.
+
+**Limits of this confirmation.** (1) The pin is 1. For a non-abelian pin the arcs carry products of
+u, the cross terms are no longer -x_p, and the fixed axis c fits even worse; not computed.
+(2) c_* > 0 is not proved here (expected near 1 at large beta). (3) "curl not zero" in the file must
+be read as "a smooth profile whose non-gradient part is of size 1/R on a positive fraction of the
+boundary"; a curl supported on one plaquette gives an O(1/R^2) bound, not R. (4) Only axis-c fields;
+su(2)-valued field-independent F gives the same structure (free corners decouple by the same gauge
+average), not written out. (5) Second order in eta only.
+
+**Agreement with row 1011 (a different construction, same provider; not an independent check).**
+Row 1011 Proposition A (ii) writes the stiffness as a direct term minus Var X; dropping Var X is the
+second-order Jensen step, so its direct term is J above. Row 1011 Proposition SEAG finds the
+direct term of a curl-free interior field is 36 b E[t_p], not 0: the white-noise term of Lemma WN.
+Row 1011 4.2 (reading) finds the class supremum at least of order b S times the classical action.
+Step D is the fixed-pin counterpart: even at the pin 1 the lab-frame bound carries the factor R.
+
+**The consequence drawn in 5.1 ("even the blind first step needs the account's effective
+actions"): stays ARGUED.** What is shown is that no field-independent axis-c move does better than
+beta eta^2 R. Field-dependent moves (C8) and other inequalities are not covered; the file's reason
+against C8 (frames decohere after a length of order beta, RECALLED) is a heuristic. Row 1011 SEAG
+calls the bound "H_c(1; a theta) <= b times the classical action" OPEN, which is the same gap.
+
+### 6.2 Proposition LOC (row 1013 4.3): ARGUED stands as a summary; two corrections; not a classification theorem
+
+- Item 1 (moves that keep the action are gauge maps): **CONFIRMED for field-independent moves.**
+  For two-sided translations U_l -> L_l U_l R_l^(-1) the plaquette word gets one insertion G_i per
+  corner. If tr(G_1 V_1 ... G_4 V_4) = tr(V_1 ... V_4) for all V_i, then with V_2 = V_3 = V_4 = 1 the
+  product of the G's is 1 (unit quaternions span H), and then tr(V G_2 W G_2^(-1)) = tr(V W) for all
+  V, W forces G_2 central; likewise each G_i. So every corner insertion is +1 or -1: the move is a
+  gauge transformation times a closed centre field. Row 1011 Lemma CEN proves the one-sided case and
+  Corollary CEN2 every compact group. Field-dependent maps that keep the action and Haar measure
+  (field-dependent gauge maps with a triangular dependence) are not covered by item 1; they act
+  trivially on gauge-invariant observables, so the item's conclusion "no signal" still holds for them.
+- Item 2 (link-end translations have a corner-diagonal cost): **CONFIRMED** (Lemma WN; free sites).
+- Item 3 (a): **CONFIRMED** given WN2: for the co-closed sheet on a torus every site is free and the
+  base corners are distinct, so -W''(0) = beta rho A. Also any C^2 path g_t = exp(t xi + t^2 zeta/2 + ...)
+  gives the same W''(0): the zeta term enters as (1/2) tr(zeta U_(p,x)), mean 0 at a free site. The
+  smeared twist has the same W(t) exactly (axis-c insertions commute, tau keeps Haar). The kill of C2
+  still needs rho > 0, which stays ARGUED.
+- Item 3 (b): **CONFIRMED** by Lemma TWIST.
+- Item 4 and the one-sentence reason: **ARGUED, with a wording correction.** "Its only global symmetry
+  on link variables is the centre" is false as written: constant gauge maps U_l -> h U_l h^(-1) are a
+  continuous non-abelian global symmetry of the link variables (and lattice symmetries exist too).
+  They do not move gauge-invariant observables. Correct form, as row 1016 already states it: no
+  continuous non-abelian group acts globally on the integration variables and moves gauge-invariant
+  observables. "Can be filled in these ways only" has no defined class of moves: it holds for
+  field-independent moves by items 1-3; for field-dependent moves it rests on C8 and the RECALLED
+  decoherence length, so it is not a theorem.
+
+### 6.3 Stop rule
+
+W1 says: no new attack. Steps A-D above only write out the minimisation that 5.1 marks as not
+written out; they claim nothing beyond the remark. No numeric run was made (none was needed: every
+check above is a hand computation).
+
+- 2026-11-15 21:02Z: step 6 done. Step 7 (W2 against row 1011) next.

@@ -35,6 +35,7 @@ scale, so W1's scale is used, and the FINISH reading is given once in the verdic
 ## Status log
 
 - 2026-11-15 16:42:51Z: file created (step 0).
+- Steps 1-3 done (plan fixed; statement (i) tests and verdict written).
 
 ## 1. Statement (i): Lemma NP0, Proposition NP, Corollary NP1, Section 6.1 (row 1003 L342-438, L579-594)
 
@@ -82,3 +83,82 @@ L680-720 (Lemma PT, Corollary PT1); `gap-mid-max.md` L36-46, L60-67, L224-232; `
   S3' (`gap-crux-restate.md` L217) gives m(L^3) >= log(1/q)/N > 0 on all L >= 2N, against inf_L m(L^3) = 0 (Peierls,
   RECALLED in `gap-seed-shape.md` L218). Correct.
 
+### 1.2 Line-by-line read and verdicts
+
+- **(i2) L354-355.** D(2n) = F((2n)^4) - 16 f n^4 = 16 F(n^4) - Phi(n) - 16 f n^4 = 16 D(n) - Phi(n). Correct.
+- **(i3) L356-357.** From (i2): D(n) = sum_(i<k) 16^(-(i+1)) Phi(2^i n) + 16^(-k) D(2^k n), and 16^(-k) D(2^k n) =
+  n^4 (F((2^k n)^4)/(2^k n)^4 - f) -> 0 because F(N^4)/N^4 decreases to f (I3). Correct; Proposition R as cited.
+- **(i5), (i6) L362-366. Citation note (not a failing line).** (i6) is written for a model "with no seed" and cited to
+  `gap-mid-max.md` L63, whose text states it for a model "with no uniform gap". The two premises are not known to be
+  the same: whether a uniform gap forces a seed is left open (`gap-phys-seed.md` L309; row 727's check L106 points to
+  (NS-gap) of row 700). The "no seed" form is Theorem ZD, (B) gives (A) (`gap-phys-seed.md` L296-303: D(a) <= 6.1 x
+  10^(-4) gives S(a; (4a)^3) < 1/25, then Theorem SH (i) at r = 4 and S(2k; B) <= S(k; B)^2 give S(N; (2N)^3) < 1/5041;
+  Theorem ZD HOLDS in check row 727, `gap-phys-seed-check.md` L62; the same citation correction was made there for
+  Proposition NM, L96). I re-checked the three lines: exp(64 x 6.1 x 10^(-4)) - 1 = 0.0398 < 1/25, and
+  S(2k) = sum rho_i^(2k) <= (sum rho_i^k)^2. For M both premises hold anyway: no seed by Lemma PT (d) and (i5); no
+  uniform gap by Lemma PT (c) (m = min(m_g, m_I)) and (i5). So Proposition NP (a) stands under either citation.
+- **Lemma NP0 L368-381. HOLDS.** Tests (a), (b) above. The lower bound needs only the existence of beta(n) from the
+  O(beta^(4n+1)) remainder of Theorem 2, which is how it is used. All sizes used are >= 4 (upper) and >= 5 (lower).
+- **Proposition NP L383-406. HOLDS** (with the citation note on (i6)). Tests (c), (d) above. The choice of beta_s is a
+  finite set of conditions, each true for small beta_s (0.03 n_j (6.5536 x 10^8 beta)^(4 n_j) -> 0). (c): if (b) held for
+  all j >= 0, D_M(n_j) <= theta^j D_M(n_0) -> 0, against (a). Correct.
+- **Corollary NP1 L408-412. HOLDS AFTER CORRECTION. First failing line: L411-412, "Take theta_0 = min(theta, theta')
+  in Proposition NP: (b) gives the hypothesis, and (c) with (a) contradicts the conclusion."** Proposition NP (c) run
+  at theta_0 gives one j >= J with D_M(n_(j+1)) > theta_0 D_M(n_j). When theta' > theta (so theta_0 = theta < theta'),
+  this does not contradict the conclusion "D(n_(j+1)) <= theta' D(n_j) for every j >= J". Counter-reading: theta = 0.1,
+  theta' = 0.9, a j with D(n_(j+1)) = 0.5 D(n_j) satisfies (c) at theta_0 = 0.1 and the conclusion at 0.9. **One-line
+  repair:** "(b) at theta gives the hypothesis; if the conclusion held, D_M(n_j) <= theta'^(j-J) D_M(n_J) would tend to
+  0, against (a)" (the argument of (c), not its statement, at theta'; equivalently, (c) holds for every theta'' in
+  (0, 1) with the same proof). The corollary's statement is true; its last sentence ("no class-wide induction step for
+  (CAS) reads only the history of D on finitely many scales") is a reading of the statement and is fair as such.
+- **Remarks 1-6 L414-435.** Checked the two that assert something: Remark 2, J < k(D_M(n_0), theta): from (b) and (a),
+  theta^J D_M(n_0) >= D_M(n_J) > 6.1 x 10^(-4); correct. Remark 4, concavity of j -> log D_M(n_j) is false in M: the
+  increments delta_j = log D_M(n_(j+1)) - log D_M(n_j) satisfy delta_0 <= log theta and, by the argument of (c) at
+  theta, delta_j > log theta for some j >= J, so they are not non-increasing; correct. Remark 5: 1 + S_M =
+  (1 + S_g)^K (1 + S_I) by Lemma PT (c) and induction; correct.
+- **Section 6.1 L579-594. HOLDS.** Test (e). Its heading says "(a) and (c) without Theorem SH": the first half of (a)
+  ("no seed") never used Theorem SH; the second half becomes D_M > 1.2 x 10^(-5) by Theorem D (b), (i3), Lemma PT (c),
+  Corollary S3' and the Peierls fact. The list of inputs at L592-594 is complete for (b), (c). Corollary NP1 with the
+  threshold 1.2 x 10^(-5) needs the same one-line repair as above.
+- **Mark at L383 and L728** ("the only input that is not rebuilt in the lane is the Peierls bound"): accurate. What
+  that input must give is "no uniform gap on the periodic cubes" (inf_L m(L^3) = 0 at J >= J_P), i.e. Peierls plus the
+  tunnelling step from long-range order to lambda_1/lambda_0 -> 1; `gap-seed-shape.md` L218 records both as RECALLED.
+
+**Verdict on statement (i): HOLDS AFTER CORRECTION.** Lemma NP0 HOLDS; Proposition NP HOLDS (citation of (i6) should
+add Theorem ZD (B) => (A), checked row 727); Corollary NP1 HOLDS AFTER CORRECTION (one line, L411-412); Section 6.1
+HOLDS. No number, threshold or conclusion changes. The Peierls input stays RECALLED (not rebuilt here; W1 does not ask).
+Independence: same provider as the author (Anthropic); tests (a), (e) were re-derived by a different path (direct
+arithmetic; the four-thermal-term decomposition instead of Lemma A (b)).
+
+## 2. Statement (ii): Section 2.2 (a)-(d), the 2D O(N) filter against the skill's step 6c
+
+Read: row 1003 L82-194 in full; the exercise skill at main 8b11ae2bb9 (`docs/ai_methodology/skills/exercise/SKILL.md`,
+703 lines, fetched by raw URL into `/tmp/row1006-check/SKILL.md`), L437-490 (step 6c) and L354 (the discard reason
+"it also holds for model X"); `gap-crux-restate.md` L205 (Corollary S2).
+
+### 2.1 Test first: does any theorem make T false for the 2D O(N) model, N >= 3, at some beta? (in progress)
+
+Method: the lane's notes (`gap-crux-lit-cross.md` L79 points to the Patrascioiu-Seiler dissent; nothing proved), then
+three arXiv API queries (`export.arxiv.org/api/query`, results in `/tmp/row1006-check/arx1.xml` ... `arx5.xml`).
+
+**Result. No theorem makes T false. The opposite is now claimed in a preprint.** J. Ding, F. Huang, P. Yang,
+"Exponential decay for the two-dimensional Heisenberg model", arXiv:2611.04908 (posted 2026-11-03, v1, math.PR):
+abstract, quoted: "we prove exponential decay for the spin correlation of the spin O(N) model for N >= 3 at every
+inverse temperature beta > 0. In particular, our work confirms Polyakov's prediction in 1975 on the Heisenberg model".
+Method (abstract): a loop soup on the metric graph with intensity N/2 conditioned on the local times, Lupu's
+isomorphism, random signs on clusters; "exponential decay for every real-valued N > 2"; the mechanism "does not
+necessarily rely on the rotation symmetry". Two companion preprints confirm that the claim is current: Y. R. Pei,
+arXiv:2611.01532 (v2, 2026-11) "Polyakov predicted ... and proofs of this have recently been posted" (it uses "the
+annulus crossing bound of Ding, Huang and Yang"; it mentions "another isotropic proof"); C. Garban, N. de Montgolfier,
+arXiv:2610.16824 (2026-10-12), anisotropic perturbations, BKT phase for lambda < 1. Marks: the three are read at
+abstract level only; DHY is unrefereed and 12 days old; nobody in the lane has read it. Its statement is about
+infinite-volume (or free-boundary, uniform in finite subgraphs) spin correlations, not about the lane's T (the seed
+S(n; 2n) <= 1/20 on periodic tori, Corollary S2); a bridge from the one to the other is not written in the lane (row
+1003 2.2 (e) already notes the same missing bridge for O(2)).
+
+Consequence for row 1003 (to be finished in 2.2): the premise at L102-103, "How T(M') stands: it is OPEN, and believed
+TRUE. A gap at fixed N >= 3 and every beta is unproved (row 998 I37, BELIEF about the state of the literature ...)", is
+out of date at this pin's date (2026-11-15): a proof is claimed and posted. Row 1003 marked the premise as a BELIEF
+about the literature, RECALLED; the belief is now false as a description of the literature. The verdict "not a test"
+(2.2 (a)) only gets stronger (T(M') is not known false; it is claimed true). The "price" readings (b)-(d), which rest
+on "T(M') is open", need correction.

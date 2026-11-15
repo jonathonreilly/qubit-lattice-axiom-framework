@@ -35,9 +35,9 @@ Provenance: Claude Fable 5.2, max effort, Mac mini worker 2, fresh session, pinn
 | 1 Read the frame | done | Section 1 |
 | 2 Assumption lens | done | Section 2: ten assumptions, ranked; A8 (the engine exists in one frame only) and A7 (growth, not a number) carry the frame |
 | 3 Generate | done | Section 3: Lemma FR, Proposition CB, Observation SCH; eighteen ideas I1-I18 as statements with consumers |
-| 4 Test, grep | not started | |
-| 5 Rank | not started | |
-| 6 Top survivor | not started | |
+| 4 Test, grep | done | Section 4: all five seed families are on file with the same verdict (rows 669, 697, 842, 858, 876 and the constraint table); new to the lane: the exterior/sphere frame, Lemmas TW, LYP, GG |
+| 5 Rank | done | Section 5: no idea survives as a route; ranked items are four statements decidable by hand |
+| 6 Attempts, part 1 | done | Section 6: Lemma LYP (the crux (LY) of B9 is false for one plaquette, every beta > 0), Lemma GG (adjoint Higgs family ends at compact U(1) exactly), Lemma TW (engine only in clean directions); all PROVED by hand, unchecked |
 | 7 Second survivor | not started | |
 | 8 Close | not started | |
 
@@ -156,3 +156,145 @@ Reading: a larger theory with a parameter (a Higgs coupling, a source, a deforma
 
 - **I17. A Lee-Yang property in a centre-breaking field.** Precedent (recalled): for ferromagnets the Lee-Yang theorem gives, at every temperature, analyticity and a mass gap in a non-zero field (Lebowitz and Penrose; Froehlich and Rodriguez). It is an exact property with no small parameter. Statement: (LY-link) Z(beta, kappa), with kappa the hopping parameter of a fundamental Higgs field in unitary gauge (a field on links), has zeros only at imaginary kappa; (LY-loop) on Z^3 x Z_Nt, Z(h) = <exp(h sum over x of tr P_x)> has zeros only at imaginary h, P the Polyakov loop. Consumer: a gap at every coupling for kappa or h not 0, then (W) only through Proposition CB, that is, with a seed size bounded as the field goes to 0. First reading: it is not selective (it would hold for U(1) too) and it does not reach zero field; but it is a statement of another type. Kept for a real attempt because it can be decided by hand at the first step.
 - **I18. The complex coupling beta.** Statement: Z has no zero in a complex neighbourhood of the real axis, uniformly in the box. The lane's candidate C4 (`gap-crux-restate.md` Section 2). First reading: on file, stronger than the target.
+
+## 4. Test and compare with the lane (step 4)
+
+The attack files were opened here. Search scope for every "new" mark: `grep -rliE` over `library/` and `parts/` (801 files at this pin), by the object and by at least two wordings; FINISH rows by row name; `library/open-core.md` (no entry on the gap, on twists or on any frame). A hit list is in the appendix. Lines were read at the places cited.
+
+**Main finding of the compare step (plain).** The five seed families of the row are already on file, with the same verdict that my fresh pass reached. They came mainly from run 1 (row 669, `gap-skeleton-max.md`, Part 1.B: B8 to B13), the means note (`gap-means-max.md` 2.2, (M6), (M9)), row 842 (S1, the thin twisted torus), the 52 ideas of row 858 (`gap-brainstorm-max.md`, ideas 8, 9, 31 to 42 and G7, G15), row 876 (`gap-brainstorm2-max.md`, idea 24), and the constraint table of `gap-constraints-max.md` (rows 1 to 14; A4, A5). My three general statements are also on file in other words. Credit goes to those rows (Claude Fable 5.2, Claude Opus 5.5 and Codex gpt-6-astra, as their headers say).
+
+### 4.1 The three general statements
+
+| Statement here | Already on file? | Where | Mark |
+|---|---|---|---|
+| Lemma FR (twisted, sheared, reflected, walled lattices are the same operators on sectors) | yes, in pieces | (TM-c) `gap-crux-restate.md` Section 1; the twist split Z^k = Tr(T_(k_mag)^n C^(e)) <= Z^(k_mag) in `gap-assume-opus.md` L494; sheared tori A4 and the reflected gluing A5 in `gap-constraints-max.md` L185-198, 7.4; wall states, idea 35 of row 858 (`gap-brainstorm-max.md` L320, L408); "only traces cross", `gap-constraints-max.md` row 14 | found again; here it is one statement |
+| Proposition CB (carry-back is uniformity) | yes | C19 of `gap-crux-exercise-astra.md` L384: "The removal needs a positive lower rate uniform in the removal parameter ... A phase diagram or continuity at each finite box is insufficient." | found again; here with the one-line proof and the form "seeds of bounded size" |
+| Observation SCH (frames are schemes) | partly | "Common finding of 4c and 4d" in `gap-brainstorm-max.md` L661 (the form of the seed moves, its location does not); idea 8 (the twist free energy as a running coupling) and idea 36 (the step-scaling function of Luescher, Weisz and Wolff); row 1002 H16 | found again; the list of frames and the free-limit remark of 4.3 are the additions |
+
+### 4.2 The eighteen ideas
+
+Columns: S0 = same crux renamed; S1 non-abelian; S2 a rate; S3 the whole state space; S4 typical fields; S5 names a four-dimensional or gauge input. "-" = the test does not apply because the idea has no tool (no written implication to (W)); D2 and SHEET (S4) apply to no idea here, because none has a supremum over tilts or over coupling fields.
+
+| # | Idea | On file? Where (credit) | Spec check | Verdict |
+|---|---|---|---|---|
+| I1 | time walls, boundary states | yes: idea 35 of row 858; free walls FW1 (check 902), rows 898, 907, 910 per `gap-constraints-max.md` rows 11, 14 ("a gap on a cyclic subspace only"; "doubling needs a new input at every scale") | S0 | FAILS (same operator, one sector); found again |
+| I2 | exterior of a block, radial frame | **new to the lane** (no hit for radial quantisation, scaling dimension, exterior operator; one unrelated hit for Dirichlet-to-Neumann in `gap-novelty-opus.md` L101; maximal correlation is on file for other pairs of regions, `convex-maximal-correlation.md`) | S0; no engine | FAILS (no reflection through a sphere on the lattice; the doubling of the four sides in Theorem S is already the lattice form of a radial doubling) |
+| I3 | coupling profile, strong-coupling exterior | partly: Lemma SHEET (row 996) for coupling fields; idea 4 (tilts), idea 49 (cut the sheet), idea 51 (two-sided subadditivity) of row 858 | - | FAILS for size (a surface term of order n^3 against a number of order 1) |
+| I4 | the logarithm of a box with walls | partly: idea 29 of row 858 (trace anomaly, sum rules); row 1002 H1 to H3 (counting monotones are blind) | S0 as a limit; blind as a monotone | FAILS (no engine; blind) |
+| I5 | small circle, centre kept, continuity | yes: B10 of row 669 with crux (AC) and the sentence "(AC) is the wall" (`gap-skeleton-max.md` L182-188); `gap-means-max.md` 2.2; `gap-ac-lat.md` (AC'-lat), candidate C5 of row 697 | S0; passes S1 to S3 at small size only; S5: the monopole is three-dimensional | FAILS (same crux); found again |
+| I6 | small 2-torus with 't Hooft flux | yes: row 842 (Theorem S1, `gap-s1-opus.md`), ideas 31 and 36 and G7 of row 858, the one-sided step-scaling form (MON') (`gap-brainstorm-max.md` L659, L681), credit Tanizaki and Unsal there | S0 | FAILS (same crux); found again. The explicit reason that the four-direction engine has no twisted form is Lemma TW below (small, new as a statement) |
+| I7 | 3-sphere of radius R | **new to the lane** as a space (the 49 hits for "3-sphere" are the group manifold) | S0; no lattice, no engine | FAILS (cost of an existence proof on another lattice, and the crux stays) |
+| I8 | hyperbolic space | yes: idea 42 of row 858, verdict "Dropped" (`gap-brainstorm-max.md` L438: no translation-invariant transfer operator, the gap is geometric) | S0; S1 fails at fixed radius | FAILS; found again |
+| I9 | sheared tori, the modular group | yes: A4 of `gap-constraints-max.md` L185-195 and 7.4 ("It changes a constant, not the crux") | blind identities | FAILS for the wall; found again |
+| I10 | fundamental Higgs | yes: B9 of row 669 (`gap-skeleton-max.md` L175-180), idea 33 of row 858 (L406), (M6) of `gap-means-max.md` L109, C19 | S0 by Proposition CB | FAILS; found again |
+| I11 | adjoint Higgs family | partly: the "third test" of row 669 (`gap-skeleton-max.md` L77-80), `gap-means-max.md` L51, L70, L112, E3 of `gap-crux-exercise-r858-max.md` L342 ("It moves toward the U(1) test"); all "recalled". The exact end point (Lemma GG) is not written anywhere | a test, not a tool | no route; the lemma is small and new as a statement |
+| I12 | soft-broken supersymmetry, heavy matter | yes: C19; `gap-means-max.md` L51 | S0 by CB; no supplier | FAILS; found again |
+| I13 | N, and the dimension | yes: idea 33, idea 34 of row 858; the N-test and the dimension test of `gap-crux-fp.md` F15, L76, L283 (five dimensions, GUIDE); B8 of row 669 with crux (DF2), credit Durhuus and Froehlich | S2 or false hypothesis | FAILS; found again |
+| I14 | Hamiltonian, stability along a path | yes: ideas 32, 37 and G15 of row 858 ("strong coupling. Not order one"); Wall C (block criteria of Knabe type fail); row 786 (the Langevin gap of Villain U(1) tends to 0, so a group-blind continuation is false) | S0 | FAILS; found again |
+| I15 | gradient flow | partly: idea 9 of row 858 (the flow as a transport map). The flow coupling t^2 E(t) as a selective number: no hit | no consumer | FAILS (no consumer) |
+| I16 | stochastic quantisation | yes: rows 786, 812 to 829 (ranges of the Langevin gap; (G2) equivalent to the uniform gap; W23 "curvature criterion = the gap") | S0 | FAILS; found again |
+| I17 | Lee-Yang in a centre-breaking field | yes: B9 of row 669 with crux (LY) (`gap-skeleton-max.md` L177-180), (M6) with a counterexample at beta = infinity from recalled theorems, and `gap-skeleton-max-b.md` L581 (zeros of one 3-cube in the right half-plane, a numeric GUIDE, for the plaquette field) | not selective; stops at kappa > 0 | FAILS; found again. **New here: a hand proof that the crux (LY) is false already for one plaquette, at every beta > 0 (Lemma LYP, Section 6).** |
+| I18 | complex beta | yes: C4 of row 697, Theorem V (`gap-zf-box-s.md`), Theorems Z and ZB (`gap-skeleton-max-b.md`) | stronger than the target | blocked-equivalent or stronger; found again |
+
+### 4.3 What the fresh pass added, and what it only found again
+
+Added (each is small; none is on the path of the wall):
+
+1. The exterior, radial and 3-sphere frame (I2, I7), with its failure reason. With it, one remark (ARGUED, a reading): **in every frame the first-passage value of the frame's number is a small perturbation of the value of free massless fields in that same frame.** Examples: on the periodic torus z ~ g^(2/3), against 0 for the flat directions; on the 3-sphere R m = 4 - 2 b_0 g^2, against 4 for free gluons under the Gauss law (a Maxwell field has 2); in a twisted box the momenta are shifted by pi/L for SU(2) as for free fields with the same boundary signs. Free massless fields with the same boundary condition are massless models, so an engine that is valid for them has its threshold at or above the free value. So in no frame does a class-wide engine fire at first passage. This is the frame-independent form of "blind engine, selective seed" (`gap-brainstorm-max.md` L661).
+2. Lemma TW (Section 6): the reason that a twisted family has no four-direction engine.
+3. Lemma LYP (Section 6): the crux (LY) of B9 is false for one plaquette.
+4. Lemma GG (Section 6): the end point of the adjoint Higgs family is compact U(1) exactly.
+
+Only found again: everything else in Sections 3.0 to 3.5.
+
+No correction of the earlier work came out of the compare step. In two places the earlier work has the stronger form and I use it: C19 for Proposition CB, and (M6) for the infinite-volume failure of a zero-free half-plane.
+
+## 5. Ranking (step 5)
+
+Rule of the row: what the item would change, divided by the cost to find out.
+
+**No idea of the list survives as a route to (W), to (CAS) or to the gap.** Each one either returns the crux in another scheme (I1, I2, I5 to I10, I12, I14, I16), or has no consumer (I3, I4, I15), or has a false hypothesis or no rate (I13), or is on file as stronger than the target (I18), or is a test (I11). Under the proof-search governance every frame family is `blocked-equivalent` (terminal obligation: the flow of the frame's number does not stop in the band) or `retired`. The reopen condition is the same for all: a mechanism that makes one step of the flow selective. A change of frame does not supply one.
+
+What is left to rank are statements that can be decided by hand and that close something on file:
+
+| Rank | Item | What it changes | Cost | Status after this run |
+|---|---|---|---|---|
+| 1 | (TM-tw) as a lemma of its own: the transfer operator of a twisted box. It is the first lemma of the one frame change that is on the lane's path (the flux half reads twisted partition functions). It was asked for in row 731 (`gap-flux-exercise.md` L660, item 2: "Write `library/gap-transfer-twisted.md`") and in the ledger of row 838 (`gap-assume-opus.md` rows 58, L265, L486-490: "proposed in row 731, never queued. Cheap."). No file of that name exists at this pin; FINISH has no row for it. | Theorem R, the full and kappa seeds and the fusion consumer rest on it; today it lives in two check files | one port from `gap-transfer.md` | Section 7 |
+| 2 | Lemma LYP: the crux (LY) of B9 is false for one plaquette | closes a verdict that rested on "no theorem known" and on a recalled infinite-volume fact | one page | Section 6, PROVED |
+| 3 | Lemma GG: the adjoint Higgs end point | makes the "third test" exact at its end point | half a page | Section 6, PROVED |
+| 4 | Lemma TW: no twisted four-direction engine | a reason on record for "continuation in the fibre size has no engine" | a few lines | Section 6, PROVED |
+| - | I2, I7 (exterior, sphere) | nothing on the wall | an existence proof on another lattice | not proposed |
+
+## 6. Real attempts, part 1: three statements decided by hand (step 6)
+
+Rule 0a before each: `library/open-core.md` has no entry for any of them; FINISH has no row for a Lee-Yang statement, for the adjoint end point or for a twisted engine (searched by "Lee-Yang", "(LY)", "B9", "adjoint Higgs", "Georgi", "TM-tw"). All three are off the direct path of the wall: they close or sharpen verdicts on frame changes.
+
+Notation. I_n is the modified Bessel function, J_n the Bessel function, n an integer. Facts used (classical; each is one line from the series or the integral representation): I_n(iy) = i^n J_n(y) for real y; |I_n(kappa)| <= exp(|Re kappa|) (from I_n(kappa) = (1/2 pi) times the integral over theta of exp(kappa cos theta) cos(n theta)); I_(n-1) - I_(n+1) = (2n/x) I_n; J_n' = (n/y) J_n - J_(n+1); two solutions of the Bessel equation that vanish with their derivative at a point y != 0 vanish identically.
+
+### 6.1 Lemma LYP: a Lee-Yang property in the link field is false for one plaquette
+
+**Setting.** G is Z_2, U(1) or SU(2), with normalized Haar measure, and chi is the function sigma, cos theta or (1/2) tr U. One plaquette with four links U_1, ..., U_4. For beta >= 0 and complex kappa,
+
+  Z_G(beta, kappa) = integral of exp( beta chi(U_1 U_2 U_3^(-1) U_4^(-1)) + kappa (chi(U_1) + chi(U_2) + chi(U_3) + chi(U_4)) ) dU_1 ... dU_4.
+
+For SU(2) this is the weight of B9 (`gap-skeleton-max.md` L177): a fundamental Higgs field of fixed length in the unitary gauge, on the smallest lattice with a plaquette.
+
+**Lemma LYP (PROVED by hand here; checked by no one).** Let beta > 0 and G one of the three groups.
+- (a) kappa -> Z_G(beta, kappa) is an even entire function with |Z_G(beta, kappa)| <= exp(beta + 4 |Re kappa|).
+- (b) Z_G(beta, i y) > 0 for every real y.
+- (c) Z_G(beta, .) has a zero, and every zero has a non-zero real part. So it has a zero with Re kappa > 0.
+
+So the crux (LY) of B9, "Z_Lambda(b, kappa) is not zero for Re kappa > 0, for every b >= 0 and every Lambda", is false for Lambda = one plaquette and every b > 0. At beta = 0 the zeros are on the imaginary axis (four independent links).
+
+**Proof.** Formulas. Expand the plaquette weight in characters and integrate each link.
+
+- Z_2: summing the 16 configurations by the number of minus signs, with x = cosh 2 kappa,
+  Z = (1/16) [ e^beta (e^(4 kappa) + 6 + e^(-4 kappa)) + e^(-beta) (4 e^(2 kappa) + 4 e^(-2 kappa)) ] = (e^beta/4) [ x^2 + 2 e^(-2 beta) x + 1 ].
+- U(1): exp(beta cos phi) = sum over n in Z of I_n(beta) e^(i n phi), and the integral of exp(kappa cos theta) e^(+-i n theta) d theta/2 pi is I_n(kappa). So
+  Z = sum over n in Z of I_n(beta) I_n(kappa)^4.
+- SU(2): exp(x (1/2) tr U) = sum over j of a_j(x) chi_j(U) with a_j(x) = I_(2j)(x) - I_(2j+2)(x) = 2 (2j+1) I_(2j+1)(x)/x (the character is sin((2j+1) theta)/sin theta and the class measure is (2/pi) sin^2 theta d theta). For a class function f with f(U^(-1)) = f(U), the integral of f(U) D^j(U) dU is (1/d_j)(integral of f chi_j) times the identity (Schur), d_j = 2j + 1. So the integral of chi_j(U_1 U_2 U_3^(-1) U_4^(-1)) times the four link weights is d_j (a_j(kappa)/d_j)^4, and with n = 2j + 1:
+  Z = sum over n >= 1 of (2 n^2 I_n(beta)/beta) (2 I_n(kappa)/kappa)^4.
+
+(a) Each term is entire and even in kappa (I_n(-kappa) = (-1)^n I_n(kappa), fourth power). The coefficients are positive and sum to a finite number: at kappa-weights replaced by their bound, sum over n of I_n(beta) = e^beta for U(1), and sum over j of a_j(beta) d_j = e^beta for SU(2) (the expansion at U = 1). With |I_n(kappa)| <= e^(|Re kappa|) and |a_j(kappa)/d_j| <= e^(|Re kappa|) (the integral of |f chi_j| is at most d_j sup |f|), the series converge uniformly on compact sets and |Z| <= e^(beta + 4 |Re kappa|). For Z_2 the formula is explicit.
+
+(b) Z_2: at kappa = i y, x = cos 2y lies in [-1, 1], and x^2 + 2 e^(-2 beta) x + 1 >= 1 - e^(-4 beta) > 0 (minimum at x = -e^(-2 beta)). U(1): I_n(i y)^4 = (i^n J_n(y))^4 = J_n(y)^4 >= 0, so Z(beta, i y) >= I_0(beta) J_0(y)^4 + 2 I_1(beta) J_1(y)^4. J_0 and J_1 = -J_0' have no common zero. SU(2): for y != 0, (2 I_n(i y)/(i y))^4 = (2 i^(n-1) J_n(y)/y)^4 = 16 J_n(y)^4/y^4 >= 0, so Z(beta, i y) >= (32/(beta y^4)) (I_1(beta) J_1(y)^4 + 4 I_2(beta) J_2(y)^4). If J_1(y) = J_2(y) = 0 at y != 0 then J_1'(y) = J_1(y)/y - J_2(y) = 0 and J_1 vanishes identically, which is false. At y = 0, Z(beta, 0) = 2 I_1(beta)/beta > 0.
+
+(c) Z_2: the zeros are the solutions of cosh 2 kappa = -e^(-2 beta) +- i (1 - e^(-4 beta))^(1/2), a non-real number. For kappa = a + i b, Im cosh(2a + 2ib) = sinh 2a sin 2b, so a != 0. U(1) and SU(2): suppose Z(beta, .) has no zero. Then h = log Z is entire with Re h <= beta + 4 |kappa|. By the Borel-Caratheodory inequality and the Cauchy estimates, h is a polynomial of degree at most 1, h = a kappa + b. Z is even, so a = 0 and Z is constant in kappa. But for real kappa -> infinity the first term alone tends to infinity (I_0(kappa) or I_1(kappa)/kappa). So Z has a zero kappa_0. By (b) Re kappa_0 != 0. Z is even, so -kappa_0 is a zero too, and one of the two has positive real part. QED
+
+**Remarks.** (1) Where the zeros go (ARGUED, first order in beta, SU(2)): near a zero i j of 2 I_1(kappa)/kappa the function is A (kappa - i j)^4 + beta B with A, B of one sign on the imaginary axis, so the four-fold zero splits into four zeros at distance of order beta^(1/4) in the four diagonal directions. (2) What this does and does not show. It refutes the half-plane form of the crux as B9 states it. It does not refute a zero-free neighbourhood of the positive real kappa-axis; that weaker form is what the two-constants argument of B9 would use, and (M6) of `gap-means-max.md` L109 names its failure in infinite volume at beta = infinity (recalled theorems on the four-dimensional O(4) model). B9 was already set aside; its verdict "no Lee-Yang property for a plaquette interaction" (`gap-skeleton-max.md` L409) now has a proof at the smallest size. (3) The same computation with the field on the plaquette instead of the links is the positive statement on file: the one-plaquette integral 2 I_1(beta)/beta has imaginary zeros only (`gap-skeleton-max-b.md` L581). (4) The method (positivity on the imaginary axis from a fourth power) uses that a plaquette has four links; it is the four-body nature of the interaction in one line.
+
+### 6.2 Lemma GG: the adjoint Higgs family ends at compact U(1), exactly
+
+**Setting.** A finite lattice (a torus or a box) with sites V, links E, plaquettes P. Link variables U_l in SU(2) with Haar measure dU. Site variables phi_x in S^2, the unit sphere of the Lie algebra su(2) = R^3, with the normalized rotation-invariant measure. w is a continuous, strictly positive class function on SU(2). For kappa >= 0 the weight is
+
+  W_kappa(U, phi) = product over p of w(U_p) times product over links l = (x, y) of exp( kappa (<phi_x, Ad(U_l) phi_y> - 1) ).
+
+It is invariant under U_xy -> g_x U_xy g_y^(-1), phi_x -> Ad(g_x) phi_x. Let H = {u(alpha) = exp(i alpha sigma_3)} be the stabilizer of e_3 = the direction of sigma_3. The compact U(1) model with weight w has link angles theta_l with normalized Lebesgue measure and weight product over p of w(u(theta_p)), theta_p the oriented sum around p.
+
+**Lemma GG (PROVED by hand here; checked by no one).** For every continuous gauge-invariant function F of (U, phi),
+
+  lim as kappa -> infinity of <F>_kappa = <F~>_(U(1), w),  F~(theta) = F( (u(theta_l))_l , phi = e_3 at every site ).
+
+Also c_kappa^(-|E|) Z_kappa -> Z_(U(1), w), with c_kappa = (1 - e^(-2 kappa))/(2 kappa). For the Wilson weight w(U) = exp(beta (1/2) tr U) the limit is compact U(1) with the Wilson weight exp(beta cos theta_p) at the same beta.
+
+**Proof.** Step 1 (unitary gauge). Choose a measurable map s from S^2 to SU(2) with Ad(s(phi)) phi = e_3. For fixed phi put g_x = s(phi_x). By gauge invariance F W_kappa at (U, phi) equals F W_kappa at (g_x U_xy g_y^(-1), e_3). The map U -> (g_x U_xy g_y^(-1)) preserves the Haar measure. So the integral of F W_kappa over U at fixed phi equals the integral of F(U, e_3) W_kappa(U, e_3) dU, which does not depend on phi. The phi-integral is then 1.
+Step 2 (one link). Let t(U) = <e_3, Ad(U) e_3> and nu_kappa(dU) = c_kappa^(-1) exp(kappa (t(U) - 1)) dU. Under Haar measure Ad(U) e_3 is uniform on S^2, so t is uniform on [-1, 1]; this gives c_kappa and nu_kappa(t <= 1 - delta) = (e^(-kappa delta) - e^(-2 kappa))/(1 - e^(-2 kappa)) -> 0 for every delta > 0. The set {t = 1} is H. nu_kappa is invariant under U -> hU and U -> Uh, h in H, because t is and Haar measure is. SU(2) is compact, so every sequence kappa -> infinity has a weakly convergent subsequence; a limit is a probability measure carried by H and invariant under the translations of H, so it is the Haar measure of H. So nu_kappa -> Haar_H weakly.
+Step 3. <F>_kappa is the quotient of the integrals of F(U, e_3) product of w(U_p) and of product of w(U_p) against the product measure of the nu_kappa over the links. Both integrands are continuous. Finite products of weakly convergent probability measures on compact metric spaces converge weakly. The limit of the denominator is Z_(U(1), w) > 0. QED
+
+**Corollary GG1 (PROVED given (TM) for the family; the extension of (TM) to a site field is ARGUED, not written: the time-like hopping kernel exp(kappa <phi, phi'>) is strictly positive and of positive type, and the proof of `gap-transfer.md` runs on the enlarged slice space; credit Osterwalder and Seiler for the gauge-Higgs transfer operator, recalled).** For every box B and time k, the thermal sum S_kappa(k; B) tends to S_(U(1), w)(k; B). Proof: by Lemma A applied to the normalized partition functions Z~ = c_kappa^(-|E|) Z, (Z~(2j)/Z~(j))^(1/j) <= lambda~_0 <= Z~(j)^(1/j) for every j. Let kappa -> infinity, then j -> infinity. Both ends tend to the top eigenvalue of the U(1) model. So lambda~_0,kappa converges to it, and S = Z~(k)/lambda~_0^k - 1 converges. QED
+
+**Reading.** Take for w the class function on SU(2) that equals the Villain function on H: w(U) = sum over n of exp(-(beta/2)(theta(U) - 2 pi n)^2), theta(U) the class angle. It is continuous, positive and of positive type on SU(2) (its character coefficients are differences (1/2)(v_(2j) - v_(2j+2)) of the decreasing Fourier coefficients v_k = c exp(-k^2/(2 beta))). At kappa = 0 the family is a pure SU(2) gauge model of the lane's class. At kappa = infinity it is Villain U(1) at beta, the lane's theorem-grade test (no seed at beta >= 2^14, row 786 and the test table). So for every N_max there is kappa_0 with no seed of size up to N_max for kappa >= kappa_0. The models of the family share with the target: the gauge group SU(2), the plaquette weight, the centre symmetry and the zero cost of the twists (an adjoint field does not see the centre), reflection positivity, locality. They differ by the site field. **So a class-wide tool must use that the state space holds the gauge field only.** This is the content of the "third test" of row 669 (`gap-skeleton-max.md` L77-80, "recalled"); the lemma makes its end point exact. It binds T_fix-tools, and T_W-tools with no ultraviolet clause. For finite kappa the absence of a seed at every size is a BELIEF (the Coulomb phase of the four-dimensional Georgi-Glashow model), not a theorem here.
+
+### 6.3 Lemma TW: which twisted families have an engine
+
+Twist classes k in Z_2^6 (k_(mu nu) for mu < nu), partition functions Z^k(n) and the operators T_(B,m) as in `gap-flux-exercise.md` 3.0 ((TM-tw); see Section 7). Call a direction mu **clean** for k if k_(mu nu) = 0 for every nu.
+
+**Lemma TW (PROVED given (TM-tw) and the reading of the engine's needs in `gap-constraints-max.md` row 1: "The engine needs a trace in both channels of an exchanged pair. ... Spectator directions need (TM) only").**
+- (a) If mu is clean, Z^k(n) = Tr(T_(B,m)^(n_mu)) with T_(B,m) positive, and Lemma A holds in the side n_mu. If mu is not clean, Z^k(n) = Tr(T_(B,m)^(n_mu) C) with a product C != 1 of centre flips: a signed sum of the lambda_i^(n_mu). Then Z^k(n) >= lambda_0^(n_mu) holds only if the centre-odd thermal sum is at most the centre-even one.
+- (b) Multiplying the side n_mu by an integer j multiplies every k_(mu nu) by j modulo 2. So doubling a side removes the twists in the planes through it, and an odd multiple keeps them.
+- (c) An exchanged pair with positive traces in both channels is a pair of clean directions. The classes with two clean directions are k = 0 and the six single-plane twists. For a single-plane twist the engine runs in the two directions outside the plane, at a fixed size of the twisted plane. It does not move the size of the twisted plane: by (b) a doubling leaves the family, and by (a) an odd multiple has a signed trace in the crossed channel.
+- (d) A class that is invariant under all exchanges of axes has all six entries equal. The non-zero one has no clean direction.
+
+Proof. (a) is the split of a twist into its planes through mu (flips) and the others (the operator), `gap-assume-opus.md` L494, with Lemma A for the positive operator. For the last sentence write Tr(T^j C) = lambda_0^j (1 + S_even(j) - S_odd(j)); the top eigenvector is even. (b): a plane twist is a product of flips on a stack of plaquettes that the plane (mu, nu) meets once per period; a torus with side j n_mu is a j-fold cover in direction mu, and the pulled-back class is j k_(mu nu). In operator form: Tr((T^(n_mu) C)^j) and C^2 = 1. (c): if mu and nu are clean then k_(mu rho) = k_(nu rho) = 0 for all rho, and only the entry of the complementary plane is free. (d) is immediate. QED
+
+Reading. The thin twisted torus (row 842, ideas 31 and G7 of row 858) has an engine in its two long directions only. "No monotonicity in n is known" (`gap-brainstorm-max.md` L404) has this structural reason behind it: the twisted plane is exactly the pair of directions where the engine's traces lose their sign.

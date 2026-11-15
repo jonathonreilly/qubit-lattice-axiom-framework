@@ -9,8 +9,8 @@ direct_effective_status_change_allowed_from_this_note: false
 
 **Date:** 2026-05-25
 **Claim type:** bounded_theorem
-**Scope:** exact runner-support bridge for the current finite-k geometry.
-**Status:** finite-k support for the lower-bound runner; no repo-wide
+**Scope:** analytic normalized-derivative identity and numerical diagnostics at the current finite-k geometry.
+**Status:** finite-k replay of the historical potential convention; no repo-wide
 dimension-axiom rewrite and no repo-wide axiom rewrite.
 **Primary runner:** `scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py`
 **Generated output:** `outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json`
@@ -100,13 +100,34 @@ dC/dM |_{M=0}
   = sum_y y * 2 Re(conj(psi_{L_x-1}(0,y)) dot psi_{L_x-1}(y)).
 ```
 
-These are finite-dimensional matrix identities for the exact runner
-update.  No eikonal limit or ray approximation enters.
+These are finite-dimensional derivative identities wherever every intermediate
+norm is nonzero. No eikonal limit or ray approximation enters. The runner
+evaluates this recursion in floating point; the displayed derivative values
+and finite-difference agreement are numerical evidence, not interval-certified
+exact sign bounds or a quantified theorem over other geometries.
 
 ## Result
 
+**Sign-convention correction (2026-10-21).** The historical tables below
+correctly describe `phi=-M f_d` as specified, but this is repulsive for d=1,2:
+with force `F_r=-d phi/dr`, `phi=-Mr` gives `F_r=+M` and
+`phi=-M log r` gives `F_r=+M/r`. The attractive continuation instead uses
+`phi=+Mr` and `phi=+M log r` (r>0), retaining `phi=-M/r^(d-2)` for d>=3.
+The exact tangent recursion is linear in the potential profile, so this
+change reverses the d=1,2 derivatives to `+6178.064177806486` and
+`+693.5367985302938`; all five tested dimensions have a toward infinitesimal
+response. This eliminates the claimed lower-dimensional exclusion from this
+sign test. It does not select any physical dimension.
+
+The runner preserves the original-family replay as recovery evidence and
+separately evaluates the attractive family, including its finite M=0.005
+probe. The finite-probe response is nonlinear, so its value must be recomputed,
+not obtained by negating the old table. No all-M sign theorem is claimed.
+
+### Historical convention tables (not an attractive-force lower bound)
+
 For the runner constants `k=6.0`, `L_x=40`, `L_y=60`, source at
-`y_mid`, and mass offset `+7`, the exact finite-k first derivative is:
+`y_mid`, and mass offset `+7`, the floating-point evaluation of the finite-k first derivative is:
 
 | d | `dC/dM at M=0` | sign |
 |---|---:|---|
@@ -116,12 +137,16 @@ For the runner constants `k=6.0`, `L_x=40`, `L_y=60`, source at
 | 4 | `+119.62276629484603` | toward |
 | 5 | `+145.12754503252833` | toward |
 
-The signs match the lower-bound transition:
+For the historical potential choice and tested dimensions 1–5 only, the signs are:
 
 ```text
 d <= 2  ->  negative centroid response
 d >= 3  ->  positive centroid response.
 ```
+
+The displayed digits are historical float outputs, not certified exact values.
+An independent60-digit product calculation agrees in sign but differs at
+approximately1e-9 in some finite-probe values.
 
 The same runner also checks the finite probe value used by the parent runner
 (`M = 0.005`) and recovers the same sign table:
@@ -134,17 +159,15 @@ The same runner also checks the finite probe value used by the parent runner
 | 4 | `+0.6596476488010232` | toward |
 | 5 | `+0.8307846758016488` | toward |
 
-This supplies the finite-k sign bridge that the V2 lower-bound note was
-missing for the actual runner surface.
+This reproduces the exact historical runner surface but does not supply a
+physical lower-bound bridge: its d<=2 force points away from the source.
 
 ## What This Closes
 
-- It removes WKB/eikonal reasoning as the load-bearing sign argument for the
-  `frontier_dimension_selection.py` finite runner's centroid-sign transition.
-- It gives an independent finite-k derivative certificate for the sign
-  `d <= 2` negative and `d >= 3` positive at the runner's baseline geometry.
-- It verifies that the finite probe value `M = 0.005` used by the runner has
-  the same sign as the exact first derivative.
+- The normalized finite-k derivative identity is valid for the stated update.
+- The historical table is reproducible under its supplied potential signs.
+- The attractive-sign control refutes interpreting the old d<=2 response as
+  an attractive-force exclusion at this baseline geometry.
 
 ## What Remains Open
 
@@ -185,11 +208,21 @@ Run:
 python3 scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
 ```
 
-Expected result:
+The pre-packaging corrected runner on the f24 source surface reported
+`PASS=70 FAIL=1`, with the sole failure being the absent documentary path
+`docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`. That failed result remains
+recovery evidence; the historical artifact has not been recovered or verified.
+It was only an existence anchor: no file content, parameter or proof step was
+read from it. The normalized recursion and attractive-sign counterexample above
+do not rely on that plan.
 
-```text
-SUMMARY: PASS=... FAIL=0
-```
-
-The green result certifies the finite-k runner-sign bridge only.  It is a
-lower-bound repair artifact, not full retained dimension selection.
+The current diagnostic reports this historical availability separately as
+`HISTORICAL_DOCUMENTARY_AVAILABILITY` and `HISTORICAL_PLAN_NONVERIFICATION`.
+Neither presence nor absence earns a PASS. The current score covers only the
+remaining required checks, whose numerical predicates, thresholds and ledger
+checks are unchanged. A zero failure count for that narrower score would not
+resolve the prior missing-artifact failure or certify a lower-dimensional
+exclusion. No fresh execution result is asserted by this source change.
+Source-existence and note-phrase checks are documentary; ledger values supply
+audit provenance, not mathematical proof. This is not full retained dimension
+selection.

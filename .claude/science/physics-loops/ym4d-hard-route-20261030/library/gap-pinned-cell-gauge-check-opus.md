@@ -41,6 +41,7 @@ Stop rule (W1): stop at the first WRONG that breaks 4.7 and report it.
 - 2026-11-15T19:06Z: step 5 done: EMB checked against OpenAI p. 13, CORRECT-NO-ADVANCE. Next: step 6, (vii) Lemma FR.
 - 2026-11-15T19:07Z: step 6 done: Lemma FR CORRECT-NO-ADVANCE, defect 2 (wording of the NA = 0 gloss). Next: step 7, the two corrections of row 1009.
 - 2026-11-15T19:09Z: step 7 done: both corrections of row 1009 UPHELD, each narrowed (Section 7). Next: step 8, verdict table and RESULT.
+- 2026-11-15T19:11Z: step 8 done: verdict table, four non-breaking defects, credits (OpenAI p. 13; Sussman-Alpoge CA-I Lemma 4.5), RESULT. Item finished.
 
 ## 1. Step 1: the brief, copied, and what this check reads
 
@@ -140,7 +141,10 @@ not zero at a pin that is not critical: by Baker-Campbell-Hausdorff, omega^(e^(e
 R_l = - (1/2) [X_tail, Ad(omega_l) X_head], so H_c(omega; G(X)) = - 2 DF_c(omega)[R]. For X = lambda n, Ad(omega_l) n_head =
 n_tail - D_l n, so R_l = (1/2) lambda_tail lambda_head [n_tail, D_l n]: this correction is also proportional to D n. So the
 sentence stands as written (every deviation from the abelian Ward identity is proportional to D n); a reader should not
-take "gauge directions are null directions of H_c" as exact at a general pin.
+take "gauge directions are null directions of H_c" as exact at a general pin. (Published form of the same algebra,
+for the classical action about a background: Sussman and Alpoge, CA-I Lemma 4.5 "Ward identities under nonlinear gauge
+variations", PROVED in their account, last identity <D_U lambda_1, Delta D_U lambda_2> = - 2 <c^(2)(lambda_1, lambda_2), J(U)>, after Balaban
+CMP 99 pp. 422-423; see Section 8.)
 
 Tests: (a) PASS (with the scope remark), (b) PASS, (c) PASS. No WRONG so far; continue.
 
@@ -460,3 +464,71 @@ boxes (Lemma EMB (d)) as a reading, not checked here.
 Both corrections were marked "ARGUED until checked" by row 1011. After this check: correction 1 holds as a correction
 of the method (its consequence for an optimal extension stays a reading); correction 2 holds for the classical
 normalisation, PROVED through B'.
+
+## 8. Step 8: verdicts, defects, stop rule, credits
+
+Provenance: Anthropic Claude Opus 5.5, max effort, commit f4dd47b82, one session, no subagents; not an audit; same
+provider as the writer of row 1011 (Claude Fable 5.2), so not an independent check in the sense of the working rules.
+Independent in derivation only where Sections 2-6 say so (second-order term by direct differentiation; the three
+non-base corners of SEAG recomputed one by one; the telescoping of FR written out; EMB read against the primary text).
+
+### Verdict per statement (W1 order)
+
+| W1 item | Statement (row 1011 lines) | Verdict | Note |
+|---|---|---|---|
+| test (a) | strength field of 4.2 in the class | PASS | in C_b as defined (3.1) and as the queue row states it; proved failure is for the class with all strength profiles |
+| test (b) | base corner of 4.4 vanishes identically | PASS | the deformation is conjugation by e^(-eps a) on that plaquette |
+| test (c) | sign in 7.3 "Use" | PASS | right with (d lambda)_l = lambda_head - lambda_tail, the convention of 4.2 and 4.4 |
+| (i) | Proposition A (i) (L163-178) | CORRECT-NO-ADVANCE | A (ii), A (iii) and the U(1) remark also correct |
+| (ii) | Proposition W (L184-200) | CORRECT-NO-ADVANCE | order of the eight factors, factor 1/2 and same-link part all check |
+| (iii) | Proposition B (L221-232) | CORRECT-NO-ADVANCE | covariance with the tail convention exact for all eps |
+| (iii) | Proposition B' (L234-261) | ADVANCE (PROVED part) | no K exists, by a closed theta; second lower bound correct; b S growth ARGUED, orders consistent |
+| (iv) | Proposition SEAG (L294-318) | CORRECT-NO-ADVANCE | value 2 x 18 x b E[t_p] = 36 b E[t_p] checks; defect 1 in the proof text |
+| (v) | Lemma CEN (L263-276) | CORRECT-NO-ADVANCE | also holds for two-sided multipliers, up to gauge |
+| (v) | Corollary CEN2 (L278-288) | CORRECT-NO-ADVANCE | the trace argument is right; no use of connectedness |
+| (vi) | Lemma EMB (L320-342) vs OpenAI p. 13 | CORRECT-NO-ADVANCE | interior links, bond quaternion, half weights, twist all match |
+| (vii) | Lemma FR (L460-484) | CORRECT-NO-ADVANCE | defect 2 in a gloss |
+| row 1009 corr. 1 | L414-415 on row 1009 L406 | UPHELD, narrowed | the one-line SF route fails; the SF bound itself stays OPEN |
+| row 1009 corr. 2 | L416-418 on row 1009 L387-390 | UPHELD, narrowed | refuted for the classical normalisation, PROVED via B' |
+
+Stop rule: no WRONG was found, so it did not trigger. 4.7 stands: the FAIL of (M2)-(M3) on C_b is PROVED through
+Proposition B' for the class with every strength field in [0, b]; Lemma CEN and Corollary CEN2 (PROVED) say no exact
+symmetric twist exists; SEAG (PROVED identity) shows the direct term of a fixed-colour curl-free field is mass-like.
+
+### Defects, ranked by what they touch (none breaks 4.7)
+
+1. Scope of B' (4.2, 4.7, 9.5, RESULT). The PROVED failure uses a member with zero interior coupling. For a class with
+   homogeneous strength b' w_p, which is also closed under conditioning, the failure is ARGUED only (row 1011 says so at
+   L259-261). Consequence for the lead: the physical Schrodinger-functional form (homogeneous bare coupling, all
+   Dirichlet data) is refuted at ARGUED level, not by proof. A possible route, unproved: omega = 1 minimises F_int
+   (Section 2 (a)).
+2. SEAG proof text (L308-310). At the corner z = x + mu + nu the gauge transformation at z leaves both colours
+   invariant; average at x + mu (or x + nu) instead. Value and count unchanged (Section 4 (iv)).
+3. SEAG's reading (L312-318, 9.2 item 2, RESULT: "the start bound is not 'drop the covariance' even at the trivial
+   pin"). Proved for the fixed-colour field a d lambda; for an optimal extension of a non-zero boundary field it is a
+   reading (Section 4 (iv), Section 7).
+4. FR gloss (L479): NA(omega) = 0 is a site-local condition; "(an abelian pin)" should read "(for instance an abelian
+   pin)" (Section 6).
+
+### What this check did not cover
+
+Outside W1 and not checked: Remark HOPF (ARGUED in the row), Remark AR, Sections 7.1-7.2 and 7.4-7.5 (readings), the
+Section 6 test table except two arithmetic lines, Section 8 of row 1011 (its search), and Theorem D2 itself. The GUIDE
+run of 4.8 was not rerun (only its table was compared with 36 b E[t_p]). Arithmetic side checks, no verdict: 3.4 gives
+(2 pi)^(-4) |S^3| = 2 pi^2/(16 pi^4) = 1/(8 pi^2); Section 6 gives 3 pi^2/11 = 2.692 and 11/(3 pi) = 1.167.
+Repo search ("Repo first"): not run; this row derives nothing new beyond remarks, and row 1011 Section 8 holds the
+search for its objects. No open lemma was attacked, so the grep of `library/open-core.md` before an attack was not
+needed. No numeric job was run.
+
+### Credits
+
+The mathematics checked is row 1011's (Claude Fable 5.2). The 2D mechanism and the local class read on p. 13 are
+OpenAI's ("Sharp mass bounds for the two-dimensional O(4) model", posted, unrefereed, github.com/openai/math at commit
+4eaee87548250b2682affda7d05d947c05554bae). Rows 1009 and 1010 supplied the readings that row 1011 corrects. Sussman
+and Alpoge (text authored with Claude and Codex), `theorem_0_complete_account_raw_I.tex` at commit 31a47c543775,
+CA-I Lemma 4.5 "Ward identities under nonlinear gauge variations" (line 15469; PROVED in their account, after Balaban
+CMP 99 pp. 422-423 and (3.119)-(3.120)): its last identity is the classical form of the remark in Section 2 (c) that a
+gauge direction is not a null direction of the Hessian at a non-critical background. Fetched into
+`/tmp/row1014-sa.JLxWhM/`; lines 15469-15530 read.
+
+RESULT: Row 1014, check of row 1011's work item W1 by Claude Opus 5.5 max (same provider as the writer, so not independent): no WRONG; stop rule not triggered; 4.7 stands. Tests (a), (b), (c) PASS. CORRECT-NO-ADVANCE: Proposition A (i), Proposition W, Proposition B, Proposition SEAG (value 36 b E[t_p] confirmed), Lemma CEN, Corollary CEN2, Lemma EMB (matches OpenAI's p. 13 exactly), Lemma FR. ADVANCE: the proved part of Proposition B' (no pin-uniform classical-action bound on C_b at any scale, for the class with all strength profiles). Both corrections of row 1009 are upheld in narrower form. Four defects, none breaking: B''s proved failure needs zero interior coupling, so the homogeneous-strength (physical Schrodinger-functional) case is ARGUED only; SEAG's averaging site at the far corner must be x + mu (value unchanged); SEAG proves the non-classical direct term only for the field a d lambda; FR's gloss of NA = 0. Still OPEN: the homogeneous-strength form of B', the Schrodinger-functional bound at the trivial pin, and (N1)-(N3) of 7.4; the wall (W) is not moved.

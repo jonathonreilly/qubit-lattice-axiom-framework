@@ -16,6 +16,9 @@ beyond first passage, in a form that an exact tool of the lane can use.
 - 06:50Z and 06:52Z two numeric runs under the lock (holder row996-sepinput, memory 71 percent free, each under 1 minute).
 - 06:54Z correction: the last two bullets of 5.4 were replaced. The three-face control showed that the tilt supremum is
   not attained on the homogeneous axis; Lemma SHEET (5.5) then showed that it is unbounded in the volume.
+- 06:55Z Section 5.5 and Section 6. 06:57Z Sections 7 and 8. 06:58Z Remark POL and the RESULT line. Item ended.
+- Numeric lock: acquired and released twice by this row; not held at the end. No file other than this one was
+  written in the repository. Scratch: `/tmp/sep996/scripts/faces.py`, `cube.py`, logs in `/tmp/sep996/out/`.
 
 ## Plan (eight steps, one per response)
 
@@ -177,7 +180,7 @@ a bounded logarithmic rate along the coupling ((VIR_K), row 708 C-A).
 | (VIR_K): bounded logarithmic rate on the path | E | F | F | F | Theorem TR (in the lane) |
 | finite-size shift of abar on [0, beta] | E | F | F | F | Theorem D (f); it is the seed |
 
-**The no-go test that (F-MIX) gives (Lemma MIX, stated here, proved in Section 4 if it is NEW).** Let H be a
+**The no-go test that (F-MIX) gives (Remark MIX; its exact form is in Section 5.1).** Let H be a
 hypothesis on the unnormalised Wilson measure with plaquette-dependent real couplings (beta_p). If H holds for
 every coupling field, and if H is preserved by positive mixtures over coupling fields, then H holds at K7. So no
 such H can enter a proof of the seed. Every per-plaquette statement that is linear in the weight is of this
@@ -208,7 +211,7 @@ states, microcanonical, elliptope, coupling field, plaquette tilt.
 | (O-THERMAL) | FOUND in substance | row 737 (`gap-means-max.md` L29): the even seed (ES) is the form with no flux sector, and it is still thermal |
 | Plaquette tilts keep the Wilson family | FOUND as an idea | row 859, idea 4 (`gap-brainstorm-max.md` L280, L353): "needs a bound on the plaquette covariance operator along the path, with random inhomogeneous couplings (some negative)". No statement or number there |
 | **F-MIX: K7 is Wilson with annealed Gaussian plaquette couplings** | **NEW** | no hit for it in the lane or in row 995 |
-| **Lemma MIX (the no-go test)** | **NEW** | no hit |
+| **Remark MIX (the no-go test)** | **NEW** | no hit |
 | B4, totally positive Fourier sequence | NEW, no consumer | no hit. Not pursued |
 | The x-picture: Wilson is a linear tilt of the joint law of the plaquette traces; K7 is an anti-Gaussian tilt | NEW (found in Step 4) | no hit for density of states of plaquette traces, elliptope |
 
@@ -235,7 +238,7 @@ correct label of the weight.
 **The candidate I attack: (F-MIX).** It is NEW, exact, and it has consumers of two kinds.
 
 - (i) The lane's fact test (iv), "the candidate must fail at K7". With (F-MIX) the test becomes mechanical for a
-  class of hypotheses (Lemma MIX, Section 5.1).
+  class of hypotheses (Remark MIX, Section 5.1).
 - (ii) Row 859's idea 4 and every criterion of the kind "a covariance bound that is uniform in the tilt". For
   plaquette tilts K7 is exactly the Gaussian mixture of the tilted Wilson measures. So such a criterion can be
   tested at K7 with a number (Proposition TILT, Section 5.2).
@@ -245,7 +248,7 @@ anything at v = 0 from the mixture identity one must start at a negative v (a ne
 tilt-uniform covariance there. Section 6 states that as a property of the joint law of the plaquette traces, proves
 it for three faces, and shows that it fails for four.
 
-Plan change for Steps 5 to 8: Step 5 proves Lemma MIX, Proposition TILT and its corollaries. Step 6 is the
+Plan change for Steps 5 to 8: Step 5 proves Identity MIX, Proposition TILT and its corollaries. Step 6 is the
 x-picture, with the exact line where the Wilson-side input fails. Step 7 is the self-check. Step 8 is the summary.
 
 ## 5. Step 5: the mixture identity as an exact tool (Identity MIX, Proposition TILT)
@@ -316,8 +319,21 @@ since 1/kappa = w/(1 - w Sigma^2(v)). The supremum over b gives the second claim
 **Reading.** Row 712 asked for "a bound on a number (how far log w is from a linear function of x)". The number has
 an exact form. The distance is the noise variance v = 8 beta_A/3. The Wilson-side quantity that bounds it is R(0), the
 inverse of the largest eigenvalue of the plaquette covariance over all real coupling fields: no transition of the
-mixed family at beta_A < (3/8) liminf R_Lambda(0). And the flow law LIP holds on the whole adjoint line, negative
-adjoint couplings included.
+mixed family at beta_A < (3/8) R_Lambda(0) on the torus Lambda. And the flow law LIP holds on the whole adjoint line,
+negative adjoint couplings included. Warning: by Lemma SHEET (5.5) R_Lambda(0) tends to 0 as the torus grows, so
+these statements have content on a fixed torus only.
+
+**Remark POL (a second derivation of LIP; ARGUED, the maximum principle on R^P is not written out).** By 5.1 (a),
+dZ/dv = (1/2) Laplace_b Z. So F = log Z obeys dF/dv = (1/2) Laplace_b F + (1/2) abs(grad_b F)^2, and its Hessian obeys
+
+ dC/dv = (1/2) Laplace_b C + (grad_b F . grad_b) C + C^2.
+
+This is a Polchinski equation in the space of plaquette couplings (the lane used the same equation in field space,
+row 968). The first two terms generate a diffusion of the coupling field; the last is a Riccati term. The maximum
+principle for sup_b lambda_max(C) gives d Sigma^2/dv <= Sigma^4, which is LIP. Along the diffusion the equation reads
+C(b, w) = E[C(b_w, 0)] + int_0^w E[C(b_t, w - t)^2] dt. So a typical-field form needs the covariance of the
+intermediate mixed models along typical coupling paths: it is a random-coupling form of the same problem, as
+row 859 wrote.
 
 ### 5.4 Numbers (GUIDE) and scope
 
@@ -327,15 +343,14 @@ adjoint couplings included.
   it increases, as LIP says. The one-plaquette bound is not sharp.
 - On the homogeneous axis lambda_max(C(beta 1, 0)) >= <1, C 1>/abs(P) = d<x_p>/d beta. The published mean
   plaquettes (RECALLED, not re-read: 0.5692 at 2.2, 0.6023 at 2.3, 0.6300 at 2.4) give a slope of about 0.33 near the
-  crossover. So R(0) <= about 3, and K7-A can at best exclude a transition of K7 below beta_A of about 1.1. Row 995
-  reports no bulk transition at beta_A = 1.25 on 16^4 and an endpoint near (1.2, 1.25), v = 3.3. The two are
-  consistent, and K7-B adds nothing to the axis value there (1/3.3 = 0.30 < 0.33). At the retracted endpoint
-  (1.48, 0.90), v = 2.4, K7-B would have given Sigma^2(0) >= 0.42.
+  crossover. So the axis alone gives R(0) <= about 3: K7-A could never exclude a transition of K7 above beta_A of
+  about 1.1, even if the supremum sat on the axis. Row 995 puts the endpoint near (1.2, 1.25), v = 3.3, above that
+  value, and K7-B adds nothing there to the axis number (1/3.3 = 0.30 < 0.33). The supremum does not sit on the
+  axis (next bullet).
 - Scope (corrected at 06:54Z after the three-face control below; the first version of this bullet called the
   question open). Sigma^2(0) is a supremum over all real coupling fields. It is NOT bounded as the torus grows:
   Lemma SHEET (5.5) gives Sigma^2_Lambda(0) >= (n - 1)/4 on a torus with a side n. So R_Lambda(0) tends to 0 for
-  Wilson SU(2) and for every other group, and 5.2 and 5.3 are true and empty on large tori. The remark above
-  "if the supremum were attained on the axis" is void: it is not attained there.
+  Wilson SU(2) and for every other group, and 5.2 and 5.3 are true and empty on large tori.
 - Consumer. Row 859's idea 4 names this bound ("a bound on the plaquette covariance operator, with inhomogeneous
   couplings, some negative") and says that it is needed along typical paths only. Lemma SHEET shows that the form
   with all coupling fields is false, with an explicit field. A form with typical fields is not proved here.
@@ -440,7 +455,7 @@ is 0.44489, 0.44486, 0.44486, 0.44485, 0.44485 at steps 4, 2, 1, 0.5, 0.25 times
 along a coordinate axis at round points. So rho_6 is not log-concave either, in a small part of its support.
 The marginal of a log-concave measure is log-concave (Prekopa), and rho_6 is a marginal of rho_Lambda. So
 rho_Lambda is not log-concave on a hypercubic torus (GIVEN the GUIDE evaluation; a hand proof is a finite
-computation with a piecewise polynomial of degree four and is not done here).
+computation with a piecewise polynomial in the angles, of degree at most four, and is not done here).
 
 **6.6 Verdict of the attack.** (DOS-kappa) with kappa > 0 uniform in the torus is false by Lemma SHEET alone (PROVED):
 it would give R(0) >= kappa. Plain log-concavity (kappa = 0) holds for one, for independent, and for three faces, and
@@ -450,3 +465,107 @@ axis by convexity in trace variables. The first failing line is "rho_Lambda is l
 What is left of the picture in one dimension: the density g_Lambda(E) of the total sum E = sum_p x_p. "g_Lambda is
 log-concave" says that no torus shows a double peak of the action at any beta. A uniform strict form is the bounded
 specific heat of Proposition MF. Both are B6a.
+
+## 7. Step 7: self-check of what is marked PROVED
+
+Each item was re-derived or tested by a second path. None was read by another model.
+
+| Item | Second path | Result |
+|---|---|---|
+| v = 8 beta_A/3 in (F-MIX) | beta_A (4 x^2 - 1)/3 = (4 beta_A/3) x^2 - beta_A/3, and E exp(s x) = exp(v x^2/2) | holds |
+| Identity MIX (b), s = w x + sqrt(w) xi | completing the square, by hand, twice | holds |
+| Proposition TILT, the constant | Gaussian toy: if x were N(0, sigma^2) under the reference law, the tilted variance at v + w is sigma^2/(1 - w sigma^2) exactly. So the bound is attained and cannot be improved in general; LIP is then an equality | holds, sharp |
+| Proposition TILT, one plaquette | quadrature (5.4): 0.283 <= 0.333, 0.320 <= 0.5, 0.360 <= 1.0, 0.399 <= 10; R(v) + v increases | holds |
+| Proposition TILT, three faces | Monte Carlo (5.5, remark 3): Sigma^2(0) tends to 1/2; at v = 1 the grid maximum is 0.547 <= 0.5/(1 - 0.5) = 1 | holds |
+| Lemma SHEET | m + 1 = 2 gives 1/2, the value seen for three faces with one face frozen; the change of variables was written out link by link | holds |
+| Proposition MF | the same algebra with one variable: Var(s) = (w/abs(P))^2 Var(E) + w/abs(P) and Var(s) <= 1/(abs(P)(1/w - X)) give X/(1 - w X) | holds |
+| Proposition ELL | the volume of E_3 is pi^2/2 (RECALLED), so the density 2/pi^2 has total mass 1; Monte Carlo: 400,000 samples all inside E_3, variances 0.250 | holds |
+| Proposition 4F | character series against the interval formula: abs(J) = 0.7 and (log l)'' = 2.49802 both ways | holds |
+| The cube, 6.5 | step halving stable to five digits | GUIDE only |
+
+My own errors in this run, both corrected in place: (1) the first version of 5.4 called "R(0) > 0 for Wilson SU(2)"
+open and discussed where the supremum is attained; the three-face control and then Lemma SHEET show that R(0)
+tends to 0. (2) The first constant in the four-face series was off by a factor 2 (S_4 = (pi/8) abs(J)); the density in
+6.4 is derived from Proposition ELL and does not use it.
+
+Not checked here: the theorems I cite from memory (Brascamp-Lieb 1976, Prekopa, Edrei, Hartman-Watson, Kent, the
+Turan inequality as quoted by row 995); every statement marked RECALLED or E (expected) in Sections 1 and 2; the
+published plaquette values in 5.4; the numerical phase diagram of the mixed action (taken from row 995).
+
+## 8. Step 8: verdicts, credits, what stays open
+
+### 8.1 Answer to the row
+
+**No input was found that tells the Wilson SU(2) axis from the K7 family in a form that gives the seed or excludes
+the second branch of Corollary Z4.** The inputs that separate Wilson from all five comparison models and have a
+consumer are the three path statements of the lane: (ZF) with Route Z, (VIR_K) with Theorem TR, and the finite-size
+shift of the mean plaquette with Theorem D (f). Every property of the one-plaquette weight that I wrote down is
+either already in the lane or has no consumer.
+
+What the row adds:
+
+1. **Identity MIX (NEW, PROVED).** K7 at (beta_F, beta_A) is the Wilson model with independent, annealed, Gaussian
+   plaquette couplings of mean beta_F and variance 8 beta_A/3. The adjoint direction is the heat flow in the
+   plaquette couplings. This is the exact form of row 712's "how far log w is from a linear function of x".
+2. **Proposition TILT and Corollary LIP (NEW, PROVED GIVEN Brascamp-Lieb).** With R(v) the inverse of the largest
+   plaquette covariance over all coupling fields, R(v) + v does not decrease along the adjoint line, and the mixed
+   model has no transition below v = R(0). The bound is sharp in a Gaussian toy.
+3. **Lemma SHEET (NEW, PROVED).** R_Lambda(0) <= 4/(n - 1): a coupling field that freezes the side plaquettes of a tube
+   makes the stacked plaquettes one variable. So item 2 is empty on large tori, for every group, at every coupling,
+   and every hypothesis of the kind "uniform over plaquette coupling fields" is false. This closes the all-fields
+   form of row 859's idea 4. The typical-field form stays open.
+4. **Proposition MF (PROVED; its content is FOUND).** The global form of the same mixture needs the homogeneous axis
+   only: a bounded specific heat on the whole Wilson axis is the same as stability under a mean-field energy coupling.
+5. **The trace picture (NEW).** Wilson is a linear tilt of the Haar law rho_Lambda of the plaquette traces; K7 is an
+   anti-Gaussian tilt. rho is log-concave for one plaquette (modulus 1), for independent plaquettes, and for three
+   faces with one relation, where it is the uniform law on the elliptope (Proposition ELL, PROVED). It is not
+   log-concave for four faces (Proposition 4F, PROVED by hand) and for one cube (GUIDE). So convexity in trace
+   variables cannot supply a Wilson-side input.
+6. **Turan (row 995's open question).** No consumer in the window; the first line of a consuming lemma is a
+   character expansion, and none converges at u = 0.48 to 0.52.
+
+### 8.2 Marks
+
+| Statement | Mark |
+|---|---|
+| Identity MIX, Remark MIX | PROVED |
+| Proposition TILT; Corollaries LIP, K7-A, K7-B | PROVED GIVEN Brascamp-Lieb (cited from memory); empty on large tori by Lemma SHEET |
+| Lemma SHEET | PROVED |
+| Proposition MF | PROVED GIVEN Brascamp-Lieb in one dimension |
+| Proposition ELL, Proposition 4F | PROVED |
+| rho_6 of one cube is not log-concave; so rho_Lambda is not | GUIDE (closed form, finite differences) |
+| (O-THERMAL), (O-PATH) | ARGUED; FOUND in the lane in substance (rows 737, 712) |
+| "A tilt-uniform bound on the plaquette covariance" | FAILS (Lemma SHEET) |
+| "rho_Lambda is log-concave" as the Wilson-side input | FAILS at four faces |
+| Turan as an input in the window; B4; B8 | FAILS as inputs (no consumer); each is a true label of the weight |
+| A typical-field form of Proposition TILT (row 859, idea 4) | OPEN |
+| An input that excludes the second branch of Corollary Z4 beyond first passage | OPEN; it is still the crux |
+| (U1), (U2) | not attacked (rows 982, 988) |
+
+### 8.3 Credits
+
+A. C. D. van Enter and S. B. Shlosman (first-order transitions for nonlinear gauge weights; in the lane as
+Proposition V). G. Bhanot and M. Creutz (the mixed action). R. V. Gavai, M. Mathur and the other authors read by
+row 995 (the corrected endpoint). H. J. Brascamp and E. H. Lieb (the variance inequality). A. Prekopa (marginals of
+log-concave measures). P. Hartman and G. S. Watson, J. T. Kent (the von Mises-Fisher law as a mixture). A. Edrei (totally
+positive sequences). Row 995 (Claude Opus 5.5) for the digest and the Turan table. Row 988 for the statement of the
+crux, and through it Ethan Sussman and Levent Alpoge (their text authored with Claude and Codex) for the flow up to
+first passage (CA-I 631-683); their repository was not opened in this run.
+
+### 8.4 Next step (each item is a complete brief)
+
+**N1, check (small, another model).** Read `library/gap-sepinput-max.md` 5.1, 5.2, 5.5, 6.3, 6.4 line by line. Points
+to press: the Haar-preserving change of variables in Lemma SHEET (open tube, m <= n - 2); the use of Brascamp-Lieb
+with a non-compact domain and F smooth; the interval J in Proposition 4F. Verdict per item: HOLDS, HOLDS AFTER
+CORRECTION, FAILS.
+
+**N2, for the lead (I may not edit other files).** In the K7 test (test (iv) of row 708, Proposition T1), add one
+line: "K7 is Wilson with annealed Gaussian plaquette couplings of variance 8 beta_A/3 (row 996, Identity MIX)". Two
+consequences for the queue. A candidate whose hypothesis is uniform over plaquette coupling fields is dead by
+Lemma SHEET and needs no row. Row 859's idea 4 is live only in its typical-field form, and a row on it must state
+which substitute for Brascamp-Lieb it uses when the hidden-field potential is not convex.
+
+**N3, not recommended.** A hand proof that the six-face density is not log-concave. It changes no verdict: the
+four-face case and Lemma SHEET already close the route.
+
+RESULT: Row 996 (Claude Fable 5.2 max, Mac mini worker 1; author, checked by no one; two short numeric runs under the lock, GUIDE only). No separating input with a consumer for the seed was found: the inputs that tell Wilson SU(2) from K7, U(1), Q_8 and 2T and that a lane tool can use remain the three path statements already in the lane ((ZF) with Route Z, (VIR_K), the finite-size plaquette shift of Theorem D (f)); every one-plaquette property I wrote blind was FOUND in rows 670-995 or has no consumer (Turan of row 995 included: no consumer in the window). NEW and PROVED: Identity MIX (K7 is Wilson with annealed Gaussian plaquette couplings of variance 8 beta_A/3; the adjoint direction is the heat flow in the couplings); Proposition TILT and Corollary LIP (GIVEN Brascamp-Lieb: with R(v) the inverse of the largest plaquette covariance over all coupling fields, R(v) + v does not decrease and the mixed model has no transition below v = R(0)); Lemma SHEET (R_Lambda(0) <= 4/(n-1) for every group, by a frozen tube, so TILT is empty on large tori and every hypothesis uniform over plaquette coupling fields FAILS); Proposition MF (the global form needs only the specific heat on the axis; content FOUND); Proposition ELL (three faces: the traces are uniform on the elliptope) and Proposition 4F (four faces: the trace density is not log-concave, by hand), so the Wilson-side convexity input FAILS; the cube case is GUIDE. OPEN: a typical-field form of TILT (row 859 idea 4, a random-coupling form of the crux), and the exclusion of the second branch of Corollary Z4 beyond first passage, which is still the crux. (U1)/(U2) were not attacked.

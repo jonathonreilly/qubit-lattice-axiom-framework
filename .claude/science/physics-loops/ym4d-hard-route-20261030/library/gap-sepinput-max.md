@@ -182,3 +182,64 @@ slab structure given the couplings. The separating content must sit in the equal
 
 **Verdict of Step 2.** Among the properties of the weight, none has a consumer. The inputs with a consumer are
 the three path statements, and they are the lane's own. What I add so far is (F-MIX), B8, and the two observations.
+
+## 3. Step 3: the digest of row 995 and the grep of the lane; NEW or FOUND
+
+Read: `library/prior/gap-sepinput-read-opus.md` Sections 1, 3.1 (consequence), 4.4, 5.2, 6 (reading), 8. Grepped in
+`library/gap-*.md` and `library/prior/gap-*.md`: annealed, mixture, Hubbard, Hartman, infinitely divisible, von Mises,
+Lee-Yang, totally positive, Edrei, log-concave, log-convex, Gaussian domination, bootstrap, Bianchi, density of
+states, microcanonical, elliptope, coupling field, plaquette tilt.
+
+| Candidate | Mark | Where it already is |
+|---|---|---|
+| F-LIN, the action is linear in each link as a vector of R^4 | FOUND | row 859, idea 41 (c) (`gap-brainstorm-max.md` L329); row 708 (`gap-mid-max.md` L357: "the one-link law is fixed by one vector, the sum of the staples") |
+| B1, vMF link law | FOUND | 61 files; worst-case link responses are the ceilings 1/3 and 0.775 (rows 835, 836) |
+| B1, Lee-Yang property of the link or plaquette integral | FOUND | row 670 (`gap-skeleton-max-b.md` L581): the one-plaquette integral has it, the Bianchi-constrained system does not (zeros of one 3-cube in the right half-plane, GUIDE) |
+| B3, log-linear in x; the separating property is a number, not a quality | FOUND | row 708 (`gap-mid-max.md` L48, L357), row 712 (`gap-crux-fp.md` L363); van Enter-Shlosman is Proposition V there |
+| B5, bilinear slab rotor | FOUND | the 4 G_3 obstruction (rows 834, 839) |
+| B6a, B6b, (O-PATH) | FOUND | Lemma REG (row 712); Route Z (row 670); the continuity method (M5) of row 737 (`gap-means-max.md` L108): "the set G is open and not closed" in the class |
+| B8, Hartman-Watson mixture | FOUND for the Villain form | `gap-tu-retry.md` L477; heat kernel as idea 17 of row 876 (`gap-brainstorm2-max.md` L164). The SU(2) form (heat kernels on S^3, Levy semigroup) is not there; I found no consumer, so I do not pursue it |
+| B9, Turan, log-concave character coefficients | FOUND | row 995, 5.2, with the K7 values: c_1 - c_(1/2)^2 = +0.02 at (1.48, 0.90), +0.07 at (1.2, 1.25). Row 995 left the consumer to this row. My answer: none (Section 4) |
+| B10, Gaussian domination in the time direction | FOUND | row 712 (`gap-crux-fp.md` L302), with the same bound 1 - 2/beta |
+| (O-THERMAL) | FOUND in substance | row 737 (`gap-means-max.md` L29): the even seed (ES) is the form with no flux sector, and it is still thermal |
+| Plaquette tilts keep the Wilson family | FOUND as an idea | row 859, idea 4 (`gap-brainstorm-max.md` L280, L353): "needs a bound on the plaquette covariance operator along the path, with random inhomogeneous couplings (some negative)". No statement or number there |
+| **F-MIX: K7 is Wilson with annealed Gaussian plaquette couplings** | **NEW** | no hit for it in the lane or in row 995 |
+| **Lemma MIX (the no-go test)** | **NEW** | no hit |
+| B4, totally positive Fourier sequence | NEW, no consumer | no hit. Not pursued |
+| The x-picture: Wilson is a linear tilt of the joint law of the plaquette traces; K7 is an anti-Gaussian tilt | NEW (found in Step 4) | no hit for density of states of plaquette traces, elliptope |
+
+Two facts from row 995 that change the numbers below. The 1981 endpoint (1.48, 0.90) is not a bulk endpoint on
+large lattices; bulk coexistence is supported only for beta_A above about 1.3, and the endpoint is near (1.2, 1.25)
+(Gavai 1996, Mathur-Gavai, as read in row 995, 3.1). In the variable of (F-MIX), v = 8 beta_A / 3, this is
+v* between 3.3 and 4. The earlier value 2.4 belongs to (1.48, 0.90).
+
+## 4. Step 4: the choice, and the duplicate check
+
+**Duplicate check (rule 0a).** `library/open-core.md` (564 lines): no line with K7, mixed action, separating input,
+mixture, Turan or density of states. FINISH rows: 995 is the reading for this row; 859 idea 4 is the nearest idea and
+was not attacked as a statement; (U1)/(U2) attacks are rows 982, 988 and are not repeated here.
+
+**Turan (row 995's question): no consumer. The exact line.** Log-concavity of n -> c_(n/2) is a property of the
+bare one-plaquette weight. A lemma could use it in one place only: to bound the weight of a plaquette of spin j by
+c_(1/2)^(2j) inside a sum over spin assignments. Every such sum in the lane is a convergent expansion, and those
+stop at beta 0.775 or below (u = I_2/I_1 below 0.19), while u = 0.48 to 0.52 on [2.3, 2.6]. Beyond the expansions
+the lane's tools read partition functions of tori, in which the coefficients c_j of one scale never appear alone;
+row 995 notes that decimation does not keep the property. So the first line of any consuming lemma, "expand in
+characters and bound term by term", already fails in the window. Mark: FAILS as an input in the window. It stays a
+correct label of the weight.
+
+**The candidate I attack: (F-MIX).** It is NEW, exact, and it has consumers of two kinds.
+
+- (i) The lane's fact test (iv), "the candidate must fail at K7". With (F-MIX) the test becomes mechanical for a
+  class of hypotheses (Lemma MIX, Section 5.1).
+- (ii) Row 859's idea 4 and every criterion of the kind "a covariance bound that is uniform in the tilt". For
+  plaquette tilts K7 is exactly the Gaussian mixture of the tilted Wilson measures. So such a criterion can be
+  tested at K7 with a number (Proposition TILT, Section 5.2).
+
+What (F-MIX) cannot be: an input that gives the Wilson seed. Wilson is the member v = 0 of the family. To get
+anything at v = 0 from the mixture identity one must start at a negative v (a negative adjoint term) and know the
+tilt-uniform covariance there. Section 6 states that as a property of the joint law of the plaquette traces, proves
+it for three faces, and shows that it fails for four.
+
+Plan change for Steps 5 to 8: Step 5 proves Lemma MIX, Proposition TILT and its corollaries. Step 6 is the
+x-picture, with the exact line where the Wilson-side input fails. Step 7 is the self-check. Step 8 is the summary.

@@ -3,9 +3,31 @@ lease_until: 2026-11-16T07:39Z
 
 # gap-global-reform-max (row 1016): an exact reformulation with a global non-abelian symmetry
 
-Status: IN WORK. Research-stage working state. Nothing here grants status. No claim of a mass gap.
+Status: FINISHED by the author at 20:35Z; see Section 8 and the RESULT line at the end. Research-stage working
+state. Nothing here grants status. No claim of a mass gap. Nothing in this file is checked by another model.
 Pinned at commit b9125417f of `claude/ym4d-hard-route`. Started 2026-11-15T19:39Z (`date -u`).
-Author: Claude Fable 5.2 (max), Mac mini worker. Not yet checked by another model.
+Author: Anthropic, Claude Fable 5.2, max effort, one session on the Mac mini worker, no subagents.
+Exercise skill at main 8b11ae2bb9 (with `proof-search-governance.md`), followed in this order: Section 1 = steps 0-1,
+Section 2 = steps 2-5, Sections 3-7 = steps 6-8, Section 8 = step 9. Marks: PROVED (by hand here, unchecked),
+ARGUED, OPEN, FAILS.
+
+**Status block.** Step 1 done: wall and contract. Step 2 done: blind pass and comparison. Steps 3-4 done: ten
+families, all FAIL condition (i); Lemmas AUX, HW, CEN+, REM, MC, Proposition LG, Identities HS1, HAM1 PROVED.
+Steps 5-6 done: tests; no survivor; the reopen condition corrected. Step 7 done: Theorem BH (homogeneous B')
+PROVED with Identity AV; two controls passed; condition (ii) FAILS pointwise. Step 8 done: report and RESULT.
+
+**What this run did not cover.**
+- No blind check of the plain statement, and the kill passes were made by the writing session (no subagents).
+- Literature: nine arXiv API queries, abstracts only. Every classical theorem cited is recalled, not re-read
+  (Elitzur; Osterwalder and Seiler; Fradkin and Shenker; Brydges, Frohlich and Seiler; McBryan and Spencer;
+  Frohlich, Simon and Spencer; Dobrushin; Goldman; Jeffrey and Weitsman; Witten; Bardeen, Pearson and Rabinovici).
+  OpenAI's 2D texts were not opened here; they enter through rows 1009, 1010, 1013.
+- The lane: `parts/gap.md`, row 1011 (L102-376, L393-622) and row 1013 (L35-299) were read in full; check 1014 at
+  L91-110, L223-258, L440-446, L498-512; every other lane file only at the lines of the grep hits listed in 2.5.
+  Across branches: grep of 67 files of main and 42 files of PR #10114 for thirteen terms.
+- Row 1015 (the check of row 1013) is not at this pin, so Lemmas WN, TWIST, JEN, SLAB are used as unchecked.
+- The fibre count on the 4D torus (7.4 (c)) is not proved. The numeric control is a three-dimensional box at
+  two couplings and decides nothing.
 
 ## 0. Plan (at most eight steps; one step per response; each result is appended before the next step)
 
@@ -38,6 +60,8 @@ Author: Claude Fable 5.2 (max), Mac mini worker. Not yet checked by another mode
 - 20:22Z steps 5 and 6 written (test table; no survivor for (i); the reopen condition corrected to rigid + charged pins + on the gauge-invariant algebra).
 - 20:25-20:26Z GUIDE control of the algebra of Theorem BH run under the numeric lock (two runs of 27 s; lock released); all four pre-registered readings pass.
 - 20:28Z step 7 written (Identity AV, Corollary AV2, Theorem BH, Lemma GT, Lemma SOFT; reopen (ii) FAILS pointwise).
+- 20:35Z step 8 written (report, registry, literature lens, work items, RESULT). Corollary BH2 added at 20:32Z.
+- 20:37-20:38Z second GUIDE control (cube character means; 2D holonomy-axis twist) run under the numeric lock, lock released; both readings pass. Remark 3.6 added.
 
 ## 1. Step 1: inputs, the wall stated twice, the target contract (exercise steps 0 and 1)
 
@@ -397,6 +421,19 @@ there too). So the response is blind, and a small response says nothing about ga
 **FAILS at condition (i) (Elitzur) and at slot (iii).** Quantum link models are other models (finite link
 spaces), not identities for the Wilson weight: no inequality to Wilson SU(2) is on record. **FAILS as stated.**
 
+### 3.6 Remark: first-order (B-field) variables (a reading; ARGUED, no lemma)
+
+In the continuum the action tr(B F) - (g^2/2) |B|^2 with a Lie-algebra two-form B has the shift B -> B + D_A eta,
+eta a Lie-algebra one-form. The first term is invariant by the Bianchi identity, and the cost comes from the
+second term: a covariant curl form of a one-form, the scale-invariant kind in four dimensions. Two facts place
+it. The shifts commute with each other (the gauge group only rotates them), so they have no bracket among
+themselves. And on the lattice the shift is an exact symmetry only where the Bianchi identity is linear: for
+U(1) with the Villain weight, where it is the dual form of the one-form symmetry (RECALLED). For SU(2) the Bianchi
+identity is a product of six group elements, the class angles are tied by no linear relation (Lemma SOFT in
+7.4), and a Fourier form of the plaquette weight in a field B has an oscillating weight. So this family gives
+the abelian structure again, exact for the abelian group only. Not written out; listed so that the family is
+not searched again without a new idea. Identity HS1 is its positive lattice relative.
+
 **Step 3 result.** Five candidates written with their identities. PROVED: Lemma AUX, Identity H3, Lemma HW,
 Proposition LG, Identity HS1. All five FAIL the reopen condition. The nearest is (H): it has a rigid non-abelian
 group, a local gradient twist, a bracket identity and a blind bound, on every gauge background. It fails because
@@ -688,7 +725,8 @@ There is a boundary plaquette with E_free t_(p_0) > 0, for every b > 0. The boun
 extension d lambda with zero curl on every plaquette. So for homogeneous strength there is no constant K with
 H_c(omega; a theta) <= K inf over extensions of sum_p w_p (d theta~)_p^2 for all pins and all real boundary fields theta.
 Moreover the right side of (BH) tends to infinity as b -> infinity at a fixed box, at least like b/log b.
-(BH) holds for every strength field; only the last two sentences use that the strengths are homogeneous.
+The inequality (BH) holds for every strength field. The plaquette with positive mean and the growth in b are
+proved for homogeneous strengths.
 
 **Proof.** Step 1. The supremum is at least the mean, and the mean is E_free[(E_omega X)^2] by Identity AV, X = X_c(B).
 Step 2. psi = d/d eps t_(p_0)(e^(eps B) U) at 0 depends only on the links of p_0, which are boundary links. So psi is a
@@ -713,8 +751,9 @@ Steps 1-5 give (BH).
 Step 6 (a boundary plaquette with positive mean). Let l_e be the link from the corner 0 along axis 1. The
 plaquettes that contain it are (0; 1, nu), nu = 2, ..., d; each lies in a boundary face (x_rho = 0 for a third
 direction rho; this uses d >= 3). Given the other links, U = U_(l_e) has density prop. to exp(Re(U Sigma)) with
-Sigma = sum_nu b w_nu sigma_nu, and Re(U Sigma) = sum_nu b w_nu t_((0;1,nu)). With c = Re(U Sigma-hat) the conditional mean of c is
-int c e^(rc) (1 - c^2)^(1/2) dc / int e^(rc) (1 - c^2)^(1/2) dc with r = |Sigma|, which is > 0 for r > 0 (pair c with - c).
+Sigma = sum_nu b w_nu sigma_nu, and Re(U Sigma) = sum_nu b w_nu t_((0;1,nu)). With y = Re(U Sigma-hat) in [-1, 1] the conditional mean
+of y is int y e^(ry) (1 - y^2)^(1/2) dy / int e^(ry) (1 - y^2)^(1/2) dy with r = |Sigma| (the image of Haar measure under
+U -> Re(U Sigma-hat) is (2/pi)(1 - y^2)^(1/2) dy), which is > 0 for r > 0 (pair y with - y).
 Sigma is continuous and equals b sum w_nu at the trivial configuration, so r > 0 with positive probability. Hence
 sum_nu b w_nu E_free t_((0;1,nu)) > 0 and one of these boundary plaquettes has E_free t > 0. Label it (0; 1, nu), z = e_1.
 Step 7 (large b). Let phi(b) = log int exp(- b sum_p w_p (1 - t_p)) dU and e(b) = - phi'(b) = E_free[sum_p w_p (1 - t_p)]. phi is
@@ -725,8 +764,8 @@ phi(b) >= - 8 W - L log(3 pi^3/8) - (3 L/2) log b, so e(b) <= (16 W + 4.92 L + 3
 E_free(1 - t_p) <= e(b)/w_p <= 2^(d-2) e(b), E(1 - t^2) <= 2 E(1 - t), and the right side of (BH) is at least
 3 (1 - 2^(d-2) e(b))^2 / (2^(d-2) e(b)). QED
 
-**Corollary BH2 (every fixed-colour boundary field; PROVED).** For a real boundary field theta and a boundary
-plaquette p write theta_(p,y) for the corner twists of B = a theta (with row 1011's labels they are theta_1 - theta_4 at x, theta_2
+**Corollary BH2 (every fixed-colour boundary field; PROVED given Lemma WN (i), (iii) of row 1013, unchecked
+there).** For a real boundary field theta and a boundary plaquette p write theta_(p,y) for the corner twists of B = a theta (with row 1011's labels they are theta_1 - theta_4 at x, theta_2
 at x + mu, theta_3 at x + nu, 0 at x + mu + nu) and m_p(theta) = sum_y theta_(p,y)^2. Let Q be any set of boundary plaquettes with
 E_free t_p > 0, and n_Q the largest number of plaquettes of Q with a non-zero corner twist at one site. Then, for
 every strength field,
@@ -744,7 +783,7 @@ means of the free box. ARGUED only: that this ratio is bounded below uniformly i
 
 **What this closes.** Check 1014 (defect 1) left the physical Schrodinger-functional class (homogeneous bare
 coupling, all Dirichlet data) refuted at ARGUED level only, and named an unproved route (omega = 1 minimises
-F_int). Theorem BH proves the failure of a pin-uniform curl bound in that class for every b > 0, without that
+F_int). Theorem BH is a proof (unchecked) that a pin-uniform curl bound fails in that class for every b > 0, without that
 minimisation, and gives a lower bound that grows with b. It does not give row 1011's ARGUED growth in the cell
 size ("at least of order b S"): that statement stays ARGUED. Family G1 of row 1011 9.8 is now retired by proof for
 homogeneous strengths as well. Theorem BH says nothing about the trivial pin: the Schrodinger-functional bound
@@ -831,8 +870,187 @@ the whole problem moves into the Hessian of log r. Tests. Row 670's verdict on p
 for a massless photon too and says nothing about decay. Five dimensions: the same structure, no dimension-4
 input. Consumer: none. **FAILS as a route; the two exact statements are constraints.**
 
+### 7.5 Second GUIDE control, pre-registered (written before the run; it proves nothing)
+
+Script `/tmp/row1016-scripts/gt_cube_control.py`, output `/tmp/row1016-scripts/gt_cube_control.out`. Readings fixed
+now. G1 (the exponent in Identity CUBE, through two coefficients of the series): for twelve independent Haar
+links of one cube, the mean of the product over the six plaquettes of chi_2 = tr U_p is 2^(-4) = 0.0625, and the mean
+of the product of chi_3 = (tr U_p)^2 - 1 is 3^(-4) = 0.01235, each within 3 standard errors (10^6 samples). G2
+(the corner bookkeeping of Lemma GT (ii), (iii)): on an open two-dimensional lattice of 5 x 5 sites with Haar
+links, alpha the perimeter of the central block of 3 x 3 sites and E the four link-ends at alpha of the links to the
+centre site, the twist tau_t with t = 0.7 changes no plaquette trace by more than 1e-12, and it changes the trace
+of the loop around two adjacent plaquettes on the two sides of alpha (so it is not a gauge transformation). A
+failure of G1 means a wrong power of k in Identity CUBE. A failure of G2 means an error in Lemma GT (ii).
+
+### 7.6 Result of the second control (GUIDE; run 2026-11-15 20:37:46-20:38:05Z under the numeric lock; memory free 63 percent)
+
+G1: mean of the product of tr U_p over the cube 0.06144(101) against 0.06250; mean of the product of
+(tr U_p)^2 - 1: 0.01178(100) against 0.01235 (10^6 samples). Both within 1.1 standard errors: pass. G2 (three
+seeds): the largest change of a plaquette trace is 2.2e-16, the holonomy of alpha does not change, and the trace of
+the two-plaquette loop across alpha changes by 0.344, -0.368, 0.354: pass. The run did not refute Identity CUBE's
+exponent or Lemma GT (ii), (iii). It decides nothing.
+
 **Step 7 result.** PROVED: Identity AV, Corollary AV2, Theorem BH (the homogeneous-strength case of Proposition B',
 every b > 0, with constant 6 (E t)^2/E(1 - t^2) and growth at least b/log b at a fixed box), Lemma GT,
 Lemma SOFT with Identity CUBE. A GUIDE control of the algebra of BH passed. Reopen condition (ii): FAILS in the
 pointwise form (Lemma FR); its averaged form is (N1)-(N3) of row 1011, OPEN and not attacked; the two other
 readings (holonomy-axis twists, angle moves) are exact and have no consumer.
+
+## 8. Step 8: report (exercise step 9), consumer (Task 4), registry, RESULT
+
+Every statement carries the mark of the section it comes from. PROVED = proved by hand in this file by Claude
+Fable 5.2, checked by no one. Nothing here is checked by another model.
+
+### 8.1 The wall, in plain words (corrected by the exercise)
+
+OpenAI's two-dimensional proof turns all spins of a magnet together at no cost. A slow turn is then cheap, and it
+gets cheaper at each larger size because turns about different axes do not commute. The gauge field has such an
+operation only as a relabelling that no measurement can see. This row asked for an exact rewriting of the gauge
+theory in which a visible operation of this kind exists, or for moves that follow the field and still have a
+controlled price. What happened: every rewriting that was tried gives one of three things. It gives the same
+invisible relabelling. Or it gives an operation on an added probe field, and then the price measures the probe
+and not the gauge field. Or it gives an operation that is a symmetry link by link, and such an operation has no
+price at all. Getting past the wall needs all of this at once: an operation applied with one fixed setting
+everywhere, boundary data that feel it, and an effect on the measurable quantities of the gauge field itself.
+None was found.
+
+### 8.2 What the exercise found
+
+1. Ten families of reformulation were written with their exact identities (Sections 3, 4). All FAIL the reopen
+   condition (i). PROVED on the way: Lemma AUX, Identity H3, Lemma HW, Proposition LG, Identity HS1, Lemma CEN+,
+   Lemma REM, Lemma MC, Identity HAM1.
+2. The nearest candidate is the frozen fundamental Higgs field with its custodial SU(2). Given any gauge field it
+   has a rigid non-abelian group, a twist that is locally a symmetry, a bracket identity and the blind bound
+   H <= kappa |df|^2 (Lemma HW). Its response is a series of Wilson loops with non-negative coefficients
+   (Proposition LG). It fails because the group fixes every function of the gauge field (Lemma AUX), and because
+   its cost is a Dirichlet form, which is scale invariant in two dimensions and not in four (ARGUED).
+3. In link variables there is no hidden rigid symmetry at all: every family of single-link maps that keeps the
+   plaquette traces is a gauge transformation times a centre field (Lemma CEN+, PROVED).
+4. Row 1013's reopen condition, as worded, has a void solution: the rotations of one link about its staple
+   (Lemma MC, PROVED). The condition is corrected in 6.2 to three parts: rigid, charged pins, on the
+   gauge-invariant algebra.
+5. The homogeneous-strength case that check 1014 left ARGUED is PROVED: Theorem BH, from Identity AV (not found in the lane; scope in 2.5)
+   (the mean of the pinned stiffness over the free ensemble of pins equals the mean square of the conditional
+   Neumann datum). Constant: 6 (E t)^2/E(1 - t^2), growing at least like b/log b at a fixed box. A GUIDE control of
+   its algebra passed (7.3); a second one for Identity CUBE and Lemma GT passed (7.6).
+6. Reopen condition (ii) FAILS in its pointwise form (from Lemma FR). Two exact side results: a covariantly
+   constant colour axis exists at every coupling on closed curves only (Lemma GT), and SU(2) has moves of single
+   plaquette angles whose whole cost is a beta-independent entropy (Lemma SOFT, Identity CUBE).
+
+This run did not pass the wall (W) and did not move it. It closed the reopen condition of rows 1011 and 1013 in
+the forms that were searched, with proofs, and it proved one statement that the lane had marked ARGUED.
+
+### 8.3 Filters corrected (ARGUED until checked)
+
+- **Reopen condition (i) of row 1013 (L277) and of family G1 of row 1011 (L612): too weak as worded.** Valid form:
+  (R-a) rigid, (R-b) charged pins closed under the conditioning used, (R-c) a response on the gauge-invariant
+  algebra (6.2). What comes back: nothing; the corrected condition is harder to meet.
+- **Row 1013 4.1 ("no path in this graph from one site to the next") and Proposition LOC item 2 ("no gradient
+  structure, in any dimension"): valid for general link-end fields; too strong as a sentence.** For conjugation
+  fields the cost form of Lemma WN is a Dirichlet form on links (4.4). The kill of candidate C1 stands: these
+  moves are gauge transformations up to their gradient, and their response is zero without pins.
+- **Check 1014, defect 1 (the homogeneous class is refuted at ARGUED level only): now refuted by proof**
+  (Theorem BH), pending its own check. The route named there (omega = 1 minimises F_int) is not needed.
+- No lead rule of `parts/gap.md` changes in substance. Its sentence at L93 "Reopen condition: an exact
+  reformulation with a global non-abelian symmetry on the integration variables" should carry the three parts.
+
+### 8.4 Consumer (Task 4)
+
+There is no survivor, so no step of the chain to (W) or to a 4D analogue of Proposition 2.1 is replaced, and the
+exponent condition of row 1010 is not reached. The consumers of what was proved are the lane's own records:
+Theorem BH and Corollaries AV2, BH2 feed row 1011's registry (family G1 retired by proof also for homogeneous
+strengths) and close defect 1 of check 1014; Lemma CEN+ and Lemma MC feed the wording of the reopen condition.
+All of them are off the path of (W).
+
+### 8.5 Routes worth doing
+
+None on the path of the wall. One check: W1 below.
+
+### 8.6 What not to do next
+
+- Another search for a global symmetry through auxiliary fields, gauge fixings or the Hamiltonian: Lemmas AUX,
+  CEN+, REM and Identity HAM1 give the reason for each.
+- The 2D engine on the custodial group of a Higgs kernel in d = 4: it measures the probe, and its cost form has
+  no logarithm.
+- A pinned-cell iteration with an average over pins in place of the supremum: Corollary AV2.
+- Complex translations in the lab frame: the insertions average to cosh (4.6).
+- Convexity or Poincare arguments in the metric of plaquette angles: row 670's verdict on A12 binds (7.4 (c)).
+
+### 8.7 The exact price
+
+For (W): not changed (`parts/gap.md` L225-236). For the 2D engine in 4D: located, not priced. The engine needs
+(R-a), (R-b), (R-c) together. In link variables (R-a) is false beyond the gauge group and the centre (Lemma CEN+).
+With an added field (R-c) is false (Lemma AUX). For colour, (R-b) holds only along pinned paths (Lemma REM). This
+is a necessary condition for one engine, with its failure located in ten families. It is not an equivalence for
+the wall.
+
+### 8.8 Work items
+
+**W1, check (a model that did not write this file; a cross-provider check is preferred).** Read
+`library/gap-global-reform-max.md` Sections 3.0, 3.1, 4.1-4.3, 4.5, 7.1, 7.2, 7.4 at the commit that holds it, with
+`library/gap-pinned-cell-gauge-max.md` 3.1-3.2 for notation and `library/gap-invent-selective-max.md` 4.1 for Lemma
+WN. Redo by hand, in this order: (i) Identity AV; (ii) Theorem BH: Step 4 (the two expansions), Step 5 (the four
+gauge averages; the values 2 E t and (2/3) E(1 - t^2)), Step 6 (the edge link and positivity), Step 7 (the
+constants); (iii) Corollaries AV2 and BH2; (iv) Lemma CEN+, Steps 1-4, both cases; (v) Lemma MC (a)-(c); (vi) Lemma
+HW (i)-(iii), in particular the mixed coefficient; (vii) Proposition LG: the moment rule on S^3, the trace
+4 Re(U_gamma) cos(eta(gamma)), the coefficients kappa^2 L/8 and kappa^4/64; (viii) Identity HAM1; (ix) Lemma GT (ii), (iv);
+(x) Identity CUBE: the density, r(c) = 2/(3 pi^2), the Hessian - (1 + 12/pi^2). Test first: (a) in BH, is psi a
+function of the pin, and is the field B (boundary links at z only) the one of the statement; (b) in AV, is the
+law of the boundary links under E_free equal to Z_c(omega)/Z_free with the weights w_p; (c) in CEN+ Step 2, does M
+range over all of SU(2); (d) in LG, that the left and right multiplications commute and the sign of the twist;
+(e) in 6.2, is Lemma MC a fair reading of row 1013's condition (i). Verdict per statement: HOLDS, HOLDS AFTER
+CORRECTION, or WRONG with the failing line. Stop rule: stop at the first WRONG in 7.1-7.2 and report it; no new
+attack. Output `library/gap-global-reform-check-<model>.md`.
+
+**W2, bookkeeping for the lead, after W1.** In `parts/gap.md` L93 replace the reopen sentence by the three parts
+(R-a), (R-b), (R-c) of 6.2, and record that family G1 of row 1011 is retired by proof for homogeneous strengths
+(Theorem BH). No proof row follows from this file.
+
+**Not proposed, with reasons.** (1) A size-uniform lower bound on E_free t_p to turn Corollary BH2 into "the best
+constant grows like S": no consumer. (2) A general no-go theorem between Lemma CEN+ and Lemma AUX: it needs a
+definition of "exact reformulation", and no route consumes it (6.3). (3) Log-concavity of the angle density on
+the 4D lattice: A12's test says it gives no decay. (4) The ordering line of the Higgs kernel in a Wilson
+background: it is physics of the probe (Greensite and Matsuyama, arXiv:2001.03068, treat it as a spin-glass
+order of the custodial group at fixed gauge field). (5) A row on (N1)-(N3) of row 1011: first-passage kind, and
+no mechanism on record carries it across the band.
+
+### 8.9 Appendix
+
+**Approach registry (proof-search governance).**
+
+| Family | Object | Mechanism | Terminal obligation | Strength vs (W) | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| F1 probe field with a custodial group | frozen fundamental field in a gauge background | the 2D engine on the probe | a step from the probe's response to functions of U | unknown; another sector | retired | Lemma AUX, Lemma HW, Proposition LG | an added field whose rigid group moves functions of U |
+| F2 rigid maps of link variables | single-link maps | exact symmetry | existence | - | retired by proof | Lemma CEN+ | none in link variables |
+| F3 residual groups of gauge fixings; Hamiltonian | global colour, G_3, 2D residual group | Elitzur; static charges | pins charged without a pinned path | - | retired | Lemma REM, Identities QL1, HAM1 | a class of pins on which a rigid group acts and cannot be undone |
+| F4 one-sided comparisons | Higgs model, layers, complex shifts | an inequality | a direction that carries decay to Wilson SU(2) | weaker | retired | Proposition LG, Lemma SLAB (row 1013), 4.6 | an inequality from a model with a rigid symmetry to gauge-invariant correlations |
+| F5 pin-averaged stiffness | E_free H_c | Identity AV | colour coherence of the twist | stronger (it would give a uniform bound) | retired by proof | Corollary AV2, Theorem BH, Corollary BH2 | a frame on typical pins: (N1)-(N3) of row 1011 |
+| F6 covariant frames and angle moves | holonomy axis; class angles | exact covariance; abelian cost | a constant axis on a set of full dimension; the entropy Hessian | unknown | blocked-local | Lemma GT, Lemma SOFT, Lemma FR (row 1011) | an axis that stays covariantly constant on a 4D set at order-one fields |
+
+**Literature lens (bounded: nine arXiv API queries by abstract terms on 2026-11-15; abstracts only; classical
+theorems recalled).**
+
+| Source | What it shows | Maps to this row | Read |
+|---|---|---|---|
+| Elitzur 1975 | no spontaneous breaking of a local gauge symmetry | the reason behind Lemmas AUX, REM, MC | recalled |
+| Osterwalder and Seiler 1978; Fradkin and Shenker 1979 | analytic connection of Higgs and confinement regions at large hopping or small beta | (H) as a comparison model; the pure end is outside the region | recalled |
+| Brydges, Frohlich and Seiler 1979 | diamagnetic inequality for lattice Higgs fields | rebuilt for frozen fields as Proposition LG | recalled |
+| McBryan and Spencer 1977 | complex translations, power-law bound in 2D | 4.6: no gain without a frame | recalled |
+| Goldman 1986; Jeffrey and Weitsman 1992; Witten 1991 | twist flows, torus actions and volumes for flat SU(2) connections on surfaces | lens for Lemma GT (iii) and Identity CUBE; no statement imported | recalled |
+| Bardeen, Pearson and Rabinovici 1980 | transverse lattice: link fields as 2D chiral fields | the two-dimensional residual group of 4.4 | recalled |
+| Greensite and Matsuyama, arXiv:2001.03068 | "Custodial symmetry is a global symmetry acting on the Higgs field alone"; an Edwards-Anderson order parameter at fixed gauge field | the physics form of Lemma AUX and of the probe response | abstract |
+| Chatterjee and Yakir, arXiv:2509.19176; Rajasekaran, Yakir and Zhou, arXiv:2603.24555 | decay and Gaussian limits for lattice Higgs models with complete breaking, hopping growing with beta | the Higgs regime of (H); not kappa -> 0 at fixed beta | abstracts |
+| Piazza and Shen, arXiv:2610.35286 | log-Sobolev inequality for 2D SU(N) lattice gauge theory at all couplings | context for d = 2, where Lemma GT (iii) gives exact symmetries; on file in the lane | abstract |
+| Lemoine, arXiv:2604.16252 | state-sum and duality structure of Wilson loops for central plaquette actions | candidate (CH) | abstract |
+| Chatterjee, Frasca, Ghoshal and Groote, arXiv:2608.05415 | exact lattice Dyson-Schwinger identities from left translations | the family of Proposition W and Lemma WN | abstract |
+
+No source was found that supplies conditions (R-a), (R-b), (R-c) together. This is "not found in a bounded
+search".
+
+**Assumptions most likely to be wrong in this row:** that the ten families cover the exact reformulations worth
+trying (non-local dualities with continuous variables were searched only in the Hubbard-Stratonovich form); the
+ARGUED sentences on the ordering of the probe and on d = 5. **Most expensive if wrong:** Identity AV (it carries
+Theorem BH) and Step 3 of Lemma CEN+ (the classical description of O(4)). **Literature proofs worth translating:**
+none for this wall.
+
+RESULT: Row 1016 (Claude Fable 5.2 max, Mac mini worker; author; checked by no one; two short GUIDE runs, no subagents). (i) An exact reformulation of 4D SU(2) with a global non-abelian symmetry: ten families written with exact identities (frozen fundamental Higgs with custodial SU(2), adjoint field, Hubbard-Stratonovich, characters and plaquette variables, temporal gauge and rotor form, tree / two-dimensional-residual / Landau gauges, Hamiltonian with Gauss law, diamagnetic / layer / complex-translation comparisons, single-link rotations); all FAIL. PROVED by hand (unchecked): Lemma CEN+ (every family of single-link maps that keeps the plaquette traces is a gauge transformation times a closed Z_2 field: no hidden rigid symmetry in link variables), Lemma AUX (a group acting on an added field fixes every function of U), Lemma HW with Proposition LG (for the Higgs kernel: local gradient twist, bracket identity, blind bound kappa |df|^2, and the response as a Wilson-loop series with non-negative coefficients; a statement about the probe), Lemma REM (colour twists of pins are removable unless a pinned path carries them), Identity HAM1 (the colour response in temporal gauge is the family of Polyakov-loop correlators), Lemma MC (rotations of one link about its staple are exact continuous non-abelian non-gauge symmetries, so the reopen condition as worded is void), Identity HS1. Corrected filter (ARGUED): the reopen condition must read rigid group + charged pins + response on the gauge-invariant algebra; no candidate meets the three. (ii) Covariant moves: FAILS pointwise (from Lemma FR of row 1011); PROVED side results: Lemma GT (a covariantly constant axis exists at every coupling on closed curves only; Jacobian one; exact symmetry in d = 2, a line of corner costs in d >= 3) and Lemma SOFT with Identity CUBE (the six class angles of a cube have the density (2/pi)^6 prod sin(phi_i) sum_k k^(-4) prod sin(k phi_i), so SU(2) has single-plaquette angle moves; their cost is abelian and their Jacobian is a beta-independent entropy; no consumer). (iii) The homogeneous-strength case of Proposition B', left ARGUED by check 1014: PROVED as Theorem BH from Identity AV (not found in the lane), E_free[H_c(.; B)] = E_free[(E_omega X_c(B))^2], with sup over pins of H_c(omega; a d lambda_z) >= 6 (E_free t_p)^2/E_free(1 - t_p^2) > 0 for every b > 0 and growth at least b/log b at a fixed box; Corollaries AV2 (the pin average is site-diagonal, blind to colour coherence) and BH2 (general boundary fields; given Lemma WN); two pre-registered GUIDE controls passed (the algebra of BH at two couplings; the cube coefficients and the 2D twist). Consumer: none on the path of (W); the results feed row 1011's registry and the wording of the reopen condition. OPEN: (W), (CAS) and every form of the wall, untouched; the size-uniform growth "of order b S" (ARGUED); the Schrodinger-functional bound at the trivial pin; a general no-go between Lemma CEN+ and Lemma AUX; the check W1 of this file.

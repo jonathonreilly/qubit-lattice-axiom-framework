@@ -7,6 +7,10 @@ FINISH row 1019, `gap-compact-rigidity-check-opus`. Checker: Claude Opus 5.5, ma
 
 Source under check: `library/gap-compact-rigidity-max.md` at commit 0d3b45d91 (499 lines), work item W1 at L459 and following.
 
+**Provenance.** Claude Opus 5.5, max effort, Mac mini worker 2; source file at commit 0d3b45d91; one reading by one model of the same provider as the author; not an audit.
+
+**Summary (read first).** First failing step: none. Every statement in W1's list is CORRECT-NO-ADVANCE, re-derived by hand (verdict table 8.1). Theorem CR is a correct equivalent form of (W), given Theorem ZD-c, once its limit set Omega is built with D_0 a bound of (BDD-Delta) (D2). Three scope repairs are needed in the text around it: Corollary TRI (III) (D3), the sentence in 3.6 (iii) and the proposed change 1 to `parts/gap.md` (D4), and the hypothesis of Lemma PT-inf (D12). Ten ranked defects in 8.2; none breaks a statement once repaired. (W), (LIOU) and (BDD-Delta) stay open.
+
 ## Plan (at most eight steps; one per response)
 
 1. Read W1 exactly and the whole of row 1017's file; record the statements to check, the tests W1 asks first, the verdict scale and the stop rule. Read the cited definitions in `parts/gap.md` (Corollary Z4, Theorem ZD-c, (W), (PHYS-SEED), (BDD-Delta), the engine axioms).
@@ -18,7 +22,7 @@ Source under check: `library/gap-compact-rigidity-max.md` at commit 0d3b45d91 (4
 7. Seeds (a)-(c) and the consumer claim, as far as W1 asks.
 8. Verdict table and RESULT line.
 
-(The plan is provisional until step 1 reads W1; it will be revised in place if W1 orders things differently.)
+(Superseded by the revised plan in Step 1. All eight steps are done.)
 
 ## Step 1: what W1 asks (read at L459 of the source)
 
@@ -65,7 +69,7 @@ Each point re-derived by hand. No run.
 1. **Tail bound of CE Step 3 at time T/2; domain.** PASSES. Step 1 at the time T/2 gives #{r : e_r <= E} <= exp(T E/2 + C'), C' = C(T/2, B). R(E) = floor(exp(T E/2 + C') + 1) is larger than that count, and the list is sorted, so every r >= R(E) has e_r > E. Then exp(-T e_r) = exp(-(T/2) e_r) exp(-(T/2) e_r) <= exp(-T E/2) exp(-(T/2) e_r), and the sum over all r of exp(-(T/2) e_r) is exp Delta(T/2, B) <= exp C'. The pair (T/2, B) is in the domain once 2^(-k_i) <= min(T/2, min B), and C' is valid once i >= i(m') with 2^(m') the least entry of (T/2, B); both hold for large i because k_i -> infinity. The same tail bound passes to the limit levels through finite partial sums.
 2. **E_0 <= 0; the count for negative E.** PASSES. E_0(B) <= 0: k E_0(B) = log(1 + S(k; B)) - Delta(k, B) <= log(1 + S(k; B)), and S(k; B) -> 0 as k grows (dominated convergence: each ratio is below 1 by (E2), and the sum is finite at k = 3). The count in Step 1 holds for every real E without this fact: each level with e_r <= E adds at least exp(-T E) to exp Delta(T, B) <= exp C. What E_0 <= 0 is needed for is the upper bound e_0 <= 0, which keeps e_0^* finite, and Proposition Delta.
 3. **Lemma UF, the margin c_S < 1/5041.** PASSES. 64/5041 < 0.012696; e^x - 1 <= x + x^2/2 + x^3/6 + ... < 0.012777 < 0.01278 for that x; 0.01278^2 = 1.6333 x 10^(-4) < 1.64 x 10^(-4) < 1/5041 = 1.9837 x 10^(-4). The map x -> ((1 + x)^64 - 1)^2 is increasing, so the bound holds at every x < 1/5041.
-4. **Step 5: d_min and 34.11; one scale each.** PASSES. d_min = (1/8) log(1 + 1/5041) >= (1/8)(x - x^2/2) with x = 1/5041, which is 2.4794 x 10^(-5) > 2.47 x 10^(-5). 4 log 5041 = 8 log 71, and e^4.2627 > 71 (e^4 > 54.598, e^0.2627 > 1.3004), so 8 log 71 < 34.102 < 34.11. The lower bound reads (H2) at the scale b and D at b/2 (Proposition Delta at ratio 2); the gap bound reads (H2) at b and D at b/4 (Lemma Z with T_0 = b/4, T = b/2, ratio 4). Each is a non-strict inequality between finitely many values at one scale, so each passes to the limit (the scale b and the index condition i >= i(log_2 b) are fixed before the limit).
+4. **Step 5: d_min and 34.11; one scale each.** PASSES. d_min = (1/8) log(1 + 1/5041) >= (1/8)(x - x^2/2) with x = 1/5041, which is 2.4794 x 10^(-5) > 2.47 x 10^(-5). 4 log 5041 = 8 log 71, and e^4.2627 > 71: e^4 > 2.71828^4 > 54.598, e^0.2627 > 1.30043 (the first six terms of its series), and 54.598 x 1.30043 > 71.0008. (A first draft of this line used 1.3004, whose product with 54.598 is 70.9992 < 71; corrected.) So 8 log 71 < 34.102 < 34.11. The lower bound reads (H2) at the scale b and D at b/2 (Proposition Delta at ratio 2); the gap bound reads (H2) at b and D at b/4 (Lemma Z with T_0 = b/4, T = b/2, ratio 4). Each is a non-strict inequality between finitely many values at one scale, so each passes to the limit (the scale b and the index condition i >= i(log_2 b) are fixed before the limit).
 5. **Proposition OM (a): the diagonal choice keeps (H1), (H2).** PASSES, with one omission. Choosing, for the n-th element E_n, an index of its admissible sequence with k >= n, rescaled values within 1/n of E_n on the first n quadruples, and (H1), (H2) at abs(m) <= n with 1/n, gives (H1), (H2) with i(m) = abs(m). The proof does not say "and j >= n". After the second-pass correction the definition asks j_i -> infinity, so this must be added; it is available, because each admissible sequence has j_i -> infinity. Defect D1 below (repair: one clause).
 6. **Lemma PT-inf (ii): Lemma Z3 uniform in j.** PASSES. Lemma Z3's bound 1024 q^(2^k)/5041 depends on q alone. (PHYS-SEED) gives one q' < 1 with 5041 S_j <= q' at the size l for all large j, so q <= q' for all those j. Along a sequence with j_i -> infinity and k_i -> infinity the rescaled D^2 at each fixed b is at most 1024 q'^(2^(k_i + log_2(b/l)))/5041 once 2^(k_i) b >= l, which tends to 0. See Step 7 for what else (ii) reads.
 
@@ -165,11 +169,88 @@ Yes. j_i -> infinity is necessary: (PHYS-SEED) speaks only of large j, so withou
 
 ### 6.4 Corollary TRI: CORRECT, with a scope repair (D3)
 
-As written, (III) "there is a uniformly recurrent critical element" is always true for an abstract eternal datum: the constant log 2 is a critical element fixed by sigma (source 3.7), hence uniformly recurrent. Then "(I) excludes (III)" would be false. The intended reading, which the proof uses, is: (III) for some D_0, Omega(D_0) of this family has a uniformly recurrent element. With it: if (I) and (II) fail, (BDD-Delta) holds with some D_0, CE (i)(b) and OM (d) give (III); (I) gives (BDD-Delta) by Lemma Z3 (D_j <= 1024/5041 from the seeded size on, for all large j); (I) gives Omega(D_0) empty for every D_0 by the direction of OM (b) that holds for every D_0. Lemma Z3 and Theorem S apply to abstract data: their setting (a symmetric W with W(a, b) = Tr T_b^a) is (E1)-(E2). "For every family of data with units" needs the time l u_j/2 to be an integer at least 3 (D7). Verdict: CORRECT-NO-ADVANCE after D3.
+As written, (III) "there is a uniformly recurrent critical element" names neither the family nor D_0. Read over abstract eternal data it is true for every family once D_0 >= log 2: the constant log 2 is then a critical element fixed by sigma (source 3.7), hence uniformly recurrent. (A constant is a critical element only if it is log m for an integer m >= 2: by Lemma LV a T-independent sum of exponentials has all its finite levels at 0.) Then "(I) excludes (III)" would be false. The intended reading, which the proof uses, is: (III) for some D_0, Omega(D_0) of this family has a uniformly recurrent element. With it: if (I) and (II) fail, (BDD-Delta) holds with some D_0, CE (i)(b) and OM (d) give (III); (I) gives (BDD-Delta) by Lemma Z3 (D_j <= 1024/5041 from the seeded size on, for all large j); (I) gives Omega(D_0) empty for every D_0 by the direction of OM (b) that holds for every D_0. Lemma Z3 and Theorem S apply to abstract data: their setting (a symmetric W with W(a, b) = Tr T_b^a) is (E1)-(E2). "For every family of data with units" needs the time l u_j/2 to be an integer at least 3 (D7). Verdict: CORRECT-NO-ADVANCE after D3.
 
 ### 6.5 The text around CR (source L245-249)
 
 - (i) "no rate is needed": right as a reading of (5) => (3); by compactness a strict decrease on every element of Omega is automatically uniform.
 - (ii) "they are fixed points only if a monotone exists (OM (e))": not what OM (e) says. OM (e) gives that Lambda is constant on the orbit closure (Lambda-stationary), not that the element is fixed; Way 3 (L369) words it correctly. D5 (wording).
-- (iii) "the wall holds as soon as no critical element has a doubling on which its Casimir free energy does not fall": must read "no element of Omega" (no critical element of the trajectory). Over all critical elements the premise is always false (log m has D(2) = D(1)), so the sentence is vacuous as written. The same scope is missing in the proposed change 1 to `parts/gap.md` (L414) and in 8.6. D4. Repaired wording: "(W) holds if and only if (BDD-Delta) holds with a bound D_0 and Omega(D_0), the set of blow-down limits of the trajectory, is empty; equivalently it has no uniformly recurrent element; equivalently every element E of Omega(D_0) has D_E(2) < D_E(1)."
+- (iii) "the wall holds as soon as no critical element has a doubling on which its Casimir free energy does not fall": must read "no element of Omega" (no critical element of the trajectory). Over all critical elements with D_0 >= log 2 the premise is always false (log 2 is critical and has D(2) = D(1)), so the sentence is vacuous as written; for any D_0 it is not the statement CR proves, which is about Omega. The same scope is missing in the proposed change 1 to `parts/gap.md` (L414) and in 8.6. D4. Repaired wording: "(W) holds if and only if (BDD-Delta) holds with a bound D_0 and Omega(D_0), the set of blow-down limits of the trajectory, is empty; equivalently it has no uniformly recurrent element; equivalently every element E of Omega(D_0) has D_E(2) < D_E(1)."
 - "A caution on (5)": "a Casimir free energy that falls strictly along the trajectory, to a positive limit, gives a limit object with constant D" is not proved: D^+(L) is an upper limit over j at fixed L, and the values D_(j_i)(2^(k_i) u b) along an admissible sequence are not tied to D^+(2^(k_i) b) without uniformity in j. The logical point of the caution (monotony of D^+ does not give (5)) stands without the example. D6 (mark the example ARGUED).
+
+## Step 7: the data A_(m,eps), Lemma PT-inf (judgement (iii)), Proposition NR, Proposition SI
+
+### 7.1 The data A_(m,eps) and the critical elements log m (source L253): CORRECT
+
+Z(n) = 1 + (m - 1) exp(-eps abs(n)). (E2): T_B = diag(1, t, ..., t) on C^m, t = exp(-eps abs(B)) < 1, and Z(k, B) = 1 + (m - 1) t^k because abs(n) = k abs(B); top level 1, simple. (E3): every log Z(n)/abs(n) is positive and tends to 0 as abs(n) grows, so f = 0. Levels: E_0 = 0, E_1 = ... = E_(m-1) = eps abs(B), the rest +infinity. With u = 3: Delta^(j,k)(x) = log(1 + (m - 1) exp(-81 eps_j 16^k abs(x))) and e_r^(j,k)(B) = 81 eps_j 16^k abs(B) for 1 <= r <= m - 1. Choose k_i -> infinity, then j_i increasing with 81 eps_(j_i) 16^(k_i + i) <= 1/i. For fixed x, abs(x) <= 16^i for large i, so Delta^(i)(x) -> log m and e_r^(i) -> 0 for r < m. (H1): D^(i) <= log m = D_0. (H2): s^(i)(2^m') = (m - 1) exp(-81 eps_(j_i) 16^(k_i + m')/2) -> m - 1 >= 1 (the time (3/2) 2^(k_i + m') is an integer once k_i + m' >= 1). The limit is the constant log m: spectral form with m levels at 0, s_* = m - 1, z_* = 0, D_* = log m in [d_min, D_0], z_* <= 256 log m + 34.11, and sigma fixes it. Right. The lattice realisations (Ising, frozen Z_2) are recalled in the source and were not checked.
+
+### 7.2 Lemma PT-inf (source L257-262): CORRECT after D12; judgement (iii)
+
+Main claim. For abstract data, Lemma PT (a) and (c) hold by the same proofs (fact (F2)), so Delta = Delta^1 + Delta^2 on every torus, and the rescaled product converges to the sum. The spectral form of each limit needs only pointwise convergence to finite values and k_i -> infinity (a convergent sequence is bounded, which replaces (H1) in Step 1 of CE); Lemma LV then identifies the product's limit levels with the sorted sums e_r^1 + e_q^2, and 1 + S_* = (1 + S_*^1)(1 + S_*^2). Right.
+
+(i) Critical plus bounded is critical. S_* >= S_*^1 >= 1/5041; D_* = D_*^1 + D_*^2 lies in [d_min, D_0^1 + sup D_*^2]; the gap of the sum is min(z^1, z^2) because the second level is the smaller of e_1^1 + e_0^2 and e_0^1 + e_1^2; and z_* <= z_*^1 <= 256 D_*^1(b/4) + 34.11 <= 256 D_*(b/4) + 34.11. Right. (It is not claimed that the sum lies in the Omega of the product family, and that is not needed.)
+
+(ii) Seeded factors are forgotten. Lemma Z3 with N = l u_j/2 gives, for all large j, D_j^2 <= 1024 q'^(2^k)/5041 at every lattice size from 2^k l u_j on. At a fixed b, the rescaled size 2^(k_i) u_j b passes 2^k l u_j for every k once k_i is large, so D_*^2(b) = 0; A2 gives Delta_*^2(x) <= (x_1 x_2 x_3 x_4/mu^4) D_*^2(mu) = 0, and Delta >= 0. Right.
+
+**Judgement (iii): does PT-inf (ii) need more than Lemma Z3?** It needs four further inputs, all available, one of them unstated. (1) j_i -> infinity and k_i -> infinity along the sequence: the hypothesis of PT-inf says only "a sequence along which both rescaled families converge". Without j_i -> infinity the seed of (PHYS-SEED), which holds for large j only, does not apply; without k_i -> infinity the sizes do not pass the seeded size. Both hold when the sequence is admissible for the first family; for "one model at one coupling" only k_i -> infinity is needed. D12: add these to the hypothesis. (2) A2, to pass from the symmetric tori to all quadruples (cited in the proof). (3) Lemma PT (a) for abstract data, for "the limit of the product is Delta_*^1" ((F2); the source cites Lemma PT, which is stated for lattice models). (4) The uniformity of Lemma Z3 in j, which holds because its bound depends on q alone (Step 2, point 6). Nothing else.
+
+### 7.3 Proposition NR (source L264): CORRECT
+
+Any CC that contains the limit of every admissible sequence of every family of data contains the limit log m of the family A_(m, eps_j) (7.1). So "CC contains no critical element" is false for every such CC. Right; it is close to a tautology, which is its point. The conditional half ("if the photon limit exists ... CC contains it and all its sums with other limits") holds for sums along a common sequence that is admissible for the product family; "all its sums" is loose. Folded into D13 (wording).
+
+### 7.4 Proposition SI (source L280-282): CORRECT; one reading sentence too strong
+
+Omega = sigma^t Omega (OM (a)) gives Omega in sigma^t QQ for every t. Right. The reading that follows ("A condition 'at small scales the datum looks like X' is, on Omega, the condition 'at every scale ...'"; "No boundary condition at one end of the scale axis is a kept property") is right for a condition on a fixed range of small scales (b <= b_0), and wrong for an asymptotic condition as b -> 0, which is already invariant under sigma, so SI says nothing about it. Example: "D_E(b) converges as b -> 0" is invariant and holds on every Omega made of constants. What actually keeps the trajectory's ultraviolet behaviour (D growing as the coupling falls) out of Omega is CE (d) (D_* <= D_0 at every scale), together with the fact that the small scales of a blow-down limit are large physical sizes of the trajectory. The conclusion of the paragraph stands on those; the sentence as worded is too strong. D14 (reading, breaks no statement).
+
+Verdicts: A_(m,eps) CORRECT-NO-ADVANCE; Lemma PT-inf CORRECT-NO-ADVANCE after D12; Proposition NR CORRECT-NO-ADVANCE; Proposition SI CORRECT-NO-ADVANCE (reading sentence D14).
+
+## Step 8: verdicts, defects, what was not covered
+
+### 8.1 Verdict per statement (first failing step: none)
+
+Defect labels are those used in Steps 2-7; 8.2 ranks them.
+
+| Statement (source section) | Verdict | Defects |
+|---|---|---|
+| Lemma UF (3.2) | CORRECT-NO-ADVANCE | D7 (domain) |
+| Theorem CE (i)(a), (i)(b) (3.3) | CORRECT-NO-ADVANCE | - |
+| Theorem CE (ii)(a)-(e) (3.3) | CORRECT-NO-ADVANCE | D8, D9, D10 |
+| Proposition OM (a)-(e) (3.5) | CORRECT-NO-ADVANCE | D1, D2, D11 |
+| Theorem CR (3.6) | CORRECT-NO-ADVANCE, given Theorem ZD-c, with Omega built at a (BDD-Delta) bound D_0 | D2, D4, D5, D6 |
+| Data A_(m,eps); constants log m critical (3.7) | CORRECT-NO-ADVANCE | - |
+| Lemma PT-inf (3.7) | CORRECT-NO-ADVANCE after D12 | D12 |
+| Proposition NR (3.7) | CORRECT-NO-ADVANCE | D13 |
+| Proposition SI (4.1) | CORRECT-NO-ADVANCE; its reading sentence is too strong | D14 |
+| Lemma LV (6.1) | CORRECT-NO-ADVANCE | - |
+| Corollary TRI (5.1) | CORRECT-NO-ADVANCE after D3 | D3 |
+
+No statement advances an open item: Theorem CR is an equivalent form of (W), as its author says. (W), (LIOU) and (BDD-Delta) stay open.
+
+**Judgements W1 asks for.** (i) Theorem CR is right as stated, with (BDD-Delta) as the only extra hypothesis beyond Theorem ZD-c and its setting, once Omega is built with D_0 a (BDD-Delta) bound; (BDD-Delta) is used only for "Omega empty => (PHYS-SEED)", and (W) iff (PHYS-SEED) needs none (fact (F3)). (ii) The definition with j_i -> infinity (and k_i -> infinity) is the right one for a trajectory; it was not carried into OM (a)'s diagonal (D1). (iii) PT-inf (ii) needs, besides Lemma Z3, only A2, Lemma PT (a) for abstract data, and j_i, k_i -> infinity, the last not stated in its hypothesis (D12).
+
+### 8.2 Defects, ranked by what each would break (none breaks a statement once repaired)
+
+1. **D2, Theorem CR and OM (b): D_0 is not tied to (BDD-Delta).** OM fixes "the family and D_0"; CR says "for a trajectory with (BDD-Delta)". Failure if D_0 is read as free: for D_0 < d_min, Omega(D_0) is empty for every trajectory (CE (d) forces D_* >= d_min), so (3) holds while (1) and (2) may fail. Repair: "Omega = Omega(D_0), D_0 a bound of (BDD-Delta) (any one)". Then CR holds.
+2. **D4, scope of 3.6 (iii), proposed change 1 to `parts/gap.md` (L414) and 8.6.** "No critical element has a doubling on which its Casimir free energy does not fall" quantifies over all critical elements; once D_0 >= log 2 the constant log 2 (D(2) = D(1)) is one of them, so the premise is never met and the sentence is vacuous; for any D_0 it is not what CR proves. It must read "no element of Omega(D_0)". Repaired wording in 6.5. This is the text the lead would place in `parts/gap.md` under W2.
+3. **D3, Corollary TRI (III).** As written, (III) names neither the family nor D_0; for D_0 >= log 2 it is always true (log 2 is a critical element fixed by sigma), and then "(I) excludes (III)" is false. Repair: "(III) for some D_0, Omega(D_0) of this family has a uniformly recurrent element". The proof then holds.
+4. **D12, Lemma PT-inf hypothesis.** Add "j_i -> infinity and k_i -> infinity" (only k_i for one model at one coupling), and note that Lemma PT (a), (c) are used for abstract data (fact (F2); PT is stated for lattice models).
+5. **D1, OM (a) closedness.** Add "and j >= n" to the diagonal choice; the corrected definition asks j_i -> infinity.
+6. **D5, 3.6 (ii).** "They are fixed points only if a monotone exists (OM (e))": OM (e) gives Lambda-stationarity on orbit closures, not fixed points (as Way 3, L369, says).
+7. **D11 and D6.** OM (e)'s parenthesis about "M" refers to the minimal set of (d); the needed fact (returns at arbitrarily large positive times) follows from bounded gaps. The example in "A caution on (5)" (a strictly falling D^+ gives a limit with constant D) is not proved, because D^+ is an upper limit over j at fixed size; mark it ARGUED.
+8. **D14, reading after Proposition SI.** "No boundary condition at one end of the scale axis is a kept property" is false for asymptotic conditions as b -> 0, which are already sigma-invariant (for example "D_E(b) converges as b -> 0" holds on an Omega of constants). That the trajectory's ultraviolet growth is not kept rests on CE (d), not on SI.
+9. **D7, D8, D10, domain and definitions.** The time l u_j/2 must be an integer at least 3 (u_j even, at least 6; ZD-c's setting gives a multiple of 4, at least 12). The definition of a critical element must presuppose the spectral form of CE (b) in each direction (Lemma LV then fixes the levels). The joint Z_2^3 grading of CE (e) needs the three flips to commute, which they do (disjoint sets of links).
+10. **D9, D13, wording.** CE (c)'s general sentence needs "two sides continuous in finitely many converging values, closed inequality"; NR's "all its sums with other limits" means sums along a common admissible sequence of the product family; 3.4 cites "3.6" for the data A_eps, which are in 3.7.
+
+### 8.3 What this check did not cover
+
+- The inputs were read at the lines W1 names (statements and proofs), and their proofs were followed where the check leans on them (Proposition Delta at integer ratio, Lemma Z, Lemma Z3, ZD-c's two directions, Lemma PT (a), (c)); they were not re-checked as a whole. Their own checks: rows 698, 699 (Theorem S), 709 (Proposition Delta), 727 (ZD-c), 999 (Lemma PT).
+- Not in W1 and not checked: Remark (3) of 3.3 (Theorem SH's constants), Remark MON, Sections 3.4 and 3.7 beyond consistency with the theorems (the lattice realisations of log m, the NP and five-dimensional readings are recalled in the source), Sections 4.2-4.4, 5.2-5.4, 6.2, 7.
+- The account's TeX (Sussman and Alpoge, with Claude and Codex as authors of their text) was not read: no statement in W1's scope cites it. The source's credits stand.
+- Repo search: `origin/main` is not a ref of this checkout (`git rev-parse`, 2026-11-15T20:58Z), so main and the open PR branches were not searched. This row derives nothing new, so the rule has no derivation to guard.
+- No numeric run (none needed; the numeric lock was not taken, and memory was not measured). No subagents. The checker (Claude Opus 5.5) is the same provider as the author (Claude Fable 5.2): a second reading by a different model, not an independent check in the working rules' sense.
+
+### 8.4 Run record
+
+Started 2026-11-15T20:45Z; RESULT first written 2026-11-15T21:00Z; final read-through and one arithmetic correction (Step 2, point 4) ended 2026-11-15T21:01Z (all from `date -u`). No file other than this one was written. No commit, no push.
+
+RESULT: Row 1019 (Claude Opus 5.5 max, Mac mini worker 2; check of row 1017's W1, same provider as the author, so not independent; no numeric run, no subagents). First failing step: none. Lemma UF, Theorem CE (i) and (ii)(a)-(e), Proposition OM (a)-(e), Theorem CR, the data A_(m,eps) (the constants log m are critical elements), Lemma PT-inf, Propositions NR and SI, Lemma LV and Corollary TRI are CORRECT-NO-ADVANCE, each re-derived by hand. Judgement (i): Theorem CR is a correct equivalent form of (W) given Theorem ZD-c, with (BDD-Delta) the only extra hypothesis, provided Omega is built with D_0 a (BDD-Delta) bound (D2; with D_0 free and below d_min it fails); (BDD-Delta) is used only for "Omega empty implies (PHYS-SEED)", and (W) iff (PHYS-SEED) needs none. Judgement (ii): j_i -> infinity (with k_i -> infinity) is the right definition; OM (a)'s diagonal must add j >= n (D1). Judgement (iii): PT-inf (ii) needs, besides Lemma Z3, only A2, Lemma PT (a) for abstract data, and j_i, k_i -> infinity, which its hypothesis must state (D12). Scope repairs: TRI's (III) and the wording of 3.6 (iii) and of proposed change 1 to `parts/gap.md` must be restricted to Omega of the trajectory (as written, with D_0 >= log 2, they are false or vacuous because log 2 is always a critical element); smaller wording defects in 8.2. Open, not moved: (W), (LIOU), (BDD-Delta).

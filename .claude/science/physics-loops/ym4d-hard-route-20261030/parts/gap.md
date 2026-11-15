@@ -111,7 +111,7 @@ obligation here carries `implication` or `discharged`; the lane's own check rows
 - gap: unit-chain functional inequalities (U1), (U2), (HC-phys) -> (W) with (TH). Cross-provider check of row 982 (`library/gap-hcphys-check-astra.md` L93): U1 implies U2 HOLDS; the claimed deduction of the pointwise U3 from the integrated decay FAILS. Row 982 `gap-hcphys-max.md` L135-163
   (corrected by row 984); stronger than the target (row 998 L665).
 - gap: an even step, (EV-STEP) -> the even-sector statement (G_ev) of row 731. Row 998 L664, L676.
-- unchecked: extensive base (TH) given the account and (DET) -> (CAS) route. Row 978 `gap-ladder-max.md` L150; row 998
+- cross-provider checked (gpt-6-astra, `library/gap-ladder-check-astra.md`: HOLDS AFTER CORRECTION): extensive base (TH) given the account and (DET) -> (CAS) route. Row 978 `gap-ladder-max.md` L150; row 998
   L885-886.
 - unchecked (lane-checked in rows 698, 699; no gate): seed engine, Theorem S -> Theorem ZD. Row 998 L117-118.
 - unchecked (lane: "PROVED GIVEN Theorem ZD", row 720; no gate): dichotomy Theorem ZD-c and Corollary Z4 -> the price

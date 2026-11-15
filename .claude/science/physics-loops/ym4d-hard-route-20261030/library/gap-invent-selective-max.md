@@ -27,7 +27,8 @@ Status block (kept current):
 - Step 1 (inputs, kill sheet): done, Section 1.
 - Step 2 (design rules R1-R10): done, Section 2.
 - Step 3 (eight candidates C1-C8): done, Section 3.
-- Steps 4-8: not started.
+- Step 4 (Lemmas WN, TWIST; Proposition LOC; kill table): done, Section 4. No candidate survives.
+- Steps 5-8: not started.
 
 Progress marker 1a (18:40Z). Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-356 and rows 998-1013 (L1077-1098); `parts/gap.md`; the four prior reads (rows 1007, 1009, 1010, 1012). Still to read in this step: the in-progress file of row 1011, `library/gap-crux-fp.md` (five-dimensional test, Proposition V), the statements of Lemma PT, Proposition NP, Theorem D2, Lemma SHEET, the exercise skill, `library/open-core.md` (duplicate check).
 
@@ -127,3 +128,73 @@ Lane grep before writing (terms: white noise, corner twist, non-central, biharmo
 **C8. Tree-transported translations (covariant moves with Jacobian one).**
 - Object. Fix a rooted spanning tree and an order of the links in which each tree path gamma_l comes before l. The map U_l -> exp(f_l Ad(U_(gamma_l)) c) U_l is triangular, so it keeps the Haar measure although it depends on the field (the argument of Lemma SHEET). It translates each link along a colour axis carried from the root by the field itself.
 - (a) Monotone: a Schrodinger-functional response, but with exact covariant Ward identities and no gauge fixing. (b) Class: Dirichlet cells with a radial tree. (c) Identity: the bracket of two transported axes. (d) Scale invariance of the Yang-Mills action. (e) Consumer: Proposition 2.1 analogue.
+
+## 4. Step 4 result: three exact lemmas, then the kill table (done 2026-11-15T21:55Z)
+
+All statements here are written by Claude Fable 5.2 and checked by no one. No numeric run was made.
+
+### 4.1 Lemma WN: lab-frame translations are white noise on corners (PROVED by hand)
+
+**Setting.** A finite cell complex in Z^4 or a torus with all sides at least 3. Some links may be pinned; the others carry Haar measure. Weight exp(H), H = sum_p beta_p x_p, strengths beta_p >= 0 arbitrary. A site is **free** if no link at it is pinned. Fix c in su(2) with c^2 = -1 (c = i sigma_3). Write U = x + i y.sigma, so (1/2) tr(c U) = -y_3 and (1/2) tr(c^2 U) = -x. Let F be a real field on link-ends that vanishes on the ends of pinned links, and tau_t the map U_l -> e^(t F_(l,x) c) U_l e^(-t F_(l,y) c) for l from x to y. For a plaquette p with a fixed orientation and a site x of p put theta_(p,x) = F_(l',x) - F_(l,x), where p arrives at x by l and leaves by l'. Put X(F) = d/dt (H o tau_t) at t = 0.
+
+**Statement.** (i) x_p o tau_t = (1/2) tr(prod_(i=1..4) e^(t theta_i c) V_i), with V_1, ..., V_4 the link factors of p in order and theta_i = theta_(p,x_i). (ii) E exp(H o tau_t - H) = 1 for every t. (iii) Suppose that for every p with beta_p > 0 and every two corners of p where theta is not zero, one of the two sites is free. Then
+
+ E[X(F)^2] = sum_p beta_p E[x_p] sum_(x in p) theta_(p,x)^2.
+
+**Proof.** (i) A link traversed forward contributes e^(t F c) U e^(-t F' c), F at its start and F' at its end. A link traversed backward contributes the inverse, e^(t F' c) U^(-1) e^(-t F c). In both cases the factor begins with e^(+t F c) at the site where p leaves along the link, and ends with e^(-t F c) at the site where p arrives. At a corner the two exponentials have the same axis and multiply to e^(t theta c). (ii) tau_t is a left and a right translation of each integrated link, so it keeps the Haar measure: the integral of exp(H o tau_t) equals the integral of exp(H). (iii) Differentiate (ii) twice at t = 0: E[D] + E[X^2] = 0, D the second derivative of H o tau_t. By (i), D = sum_p beta_p [ -x_p sum_i theta_i^2 + 2 sum_(i<j) theta_i theta_j (1/2) tr(c P_ij c P_ji) ], where P_ij is the ordered product of the factors of p from x_i to x_j and P_ij P_ji = U_p. Let x_i be free. The gauge transformation by h at the single site x_i keeps the measure and every x_p. The closed word passes x_i once, so it maps (1/2) tr(c P_ij c P_ji) to (1/2) tr(h^(-1) c h P_ij c P_ji). The Haar average of h^(-1) c h is an Ad-invariant element of su(2), so it is 0. Hence every cross term has mean 0, and E[X^2] = -E[D] is the stated sum. QED
+
+**Corollary WN1 (no cheap direction).** On a torus with constant strength beta, for a left-translation field f on links (F = f at the start of each link, 0 at its end), with xbar = E x_p:
+
+ E[X(f)^2] = beta xbar sum over p = (x; mu, nu), mu < nu, of [ (f_(x,mu) - f_(x,nu))^2 + f_(x+mu,nu)^2 + f_(x+nu,mu)^2 ] >= 3 beta xbar abs(f)_2^2.
+
+(The corners of p = (x; mu, nu), traversed x, x+mu, x+mu+nu, x+nu, carry theta = f_(x,mu) - f_(x,nu), f_(x+mu,nu), 0, -f_(x+nu,mu). Each link is the second link of nu - 1 plaquettes and the third link of 4 - mu plaquettes, three in all.) So the cost of every such move is comparable to its plain l^2 norm. No Dirichlet form, no curl form.
+
+**Corollary WN2 (non-central twists).** Let theta be any real corner field, not necessarily of the form delta F, whose non-zero corners lie at pairwise distinct free sites. Put W(t) = E exp(sum_p beta_p [x_p(t theta) - x_p]), with x_p(theta) the twisted trace of (i). Then W'(0) = 0 and
+
+ -W''(0) = sum over corners (p, x) of theta_(p,x)^2 [ beta_p E x_p - (beta_p^2/3) E(1 - x_p^2) ].
+
+Proof. W''(0) = E[D] + E[X^2] with X = -sum theta_(p,x) beta_p y_3(U_(p,x)), U_(p,x) the holonomy of p based at x. No plaquette has two non-zero corners, so D = -sum beta_p x_p theta^2. The gauge average at a free site x rotates the vector y(U_(p,x)) uniformly. So E[X] = 0, the cross terms of E[X^2] at distinct sites vanish, and E[y_3^2] = E(1 - x_p^2)/3. QED
+
+**Corollary WN3 (the size of the bracket in WN2).** On a torus with constant beta put rho(beta) = xbar - (beta/3) E(1 - x_p^2). For one link l, with the six plaquettes q that contain l all oriented to leave the start of l along l,
+
+ rho(beta) = (beta/18) sum over q != q' of E[ y(U_(q,l)) . y(U_(q',l)) ].
+
+Proof. Apply (iii) to F = 1 at the start of l and 0 elsewhere: E[(sum_q y_3(U_(q,l)))^2] = 6 xbar/beta. The gauge average at the start of l gives E abs(sum_q y(U_(q,l)))^2 = 18 xbar/beta. The diagonal part is 6 E(1 - x^2). QED
+
+So rho is the correlation of the field strengths of different plaquettes on one link. For a single free plaquette rho = 0. ARGUED, not proved: rho > 0 for small beta > 0 (first non-zero term from the cube, positive character coefficients), and rho -> 1/2 as beta -> infinity (free-field count: E(1 - x_p) = 3/(4 beta), RECALLED, half the one-plaquette value 3/(2 beta)). A proof that rho > 0 at large beta needs E(1 - x_p) < 3/(2 beta) with a written constant; the lane's RECALLED bound 2/beta is not enough.
+
+**What Lemma WN means.** The Ward identities of link translations live on the **corner graph**: vertices are link-ends, edges are corners. A corner joins two link-ends at the same site. So this graph is a disjoint union of one copy of the 24-edge graph K_(2,2,2,2) per site. The exact analogue of [B] Lemma 2.1 and Proposition 2.2 holds on it (the algebra of [B] p. 4-8 uses nothing else), but it is a statement about one site at a time. There is no path in this graph from one site to the next, so there is no family with a harmonic sum. In the spin model the same graph is the lattice itself.
+
+### 4.2 Lemma TWIST: every gauge twist of Dirichlet data is removable on the lattice (PROVED, one line)
+
+Let u be link data on the boundary subcomplex of a finite region, Z(u) the integral over the interior links, and Omega any map from the boundary sites to SU(2). Then Z(u^Omega) = Z(u). Proof: extend Omega by 1 to the interior sites; the gauge transformation is a Haar-preserving change of the interior links and maps the weight with data u to the weight with data u^Omega. QED
+
+So on the lattice the partition function of a pinned cell is a function of the gauge orbit of its boundary data only, with no winding label. The degree of Omega (candidate C3) is invisible to Z. A continuous twist of a pinned cell is therefore a path of gauge-inequivalent boundary data: a Schrodinger-functional family.
+
+### 4.3 Proposition LOC (structural; ARGUED from 4.1, 4.2 and the definitions)
+
+In pure SU(2) lattice gauge theory the three slots of Section 2 can be filled in these ways only.
+
+1. Moves that keep the action: the gauge group. Its commutators are gauge transformations, and by Lemma TWIST they change nothing even when they move pinned data. No signal.
+2. Moves that do not keep the action: link-end translations. Their one-axis cost is diagonal in corners (Lemma WN). No gradient structure, in any dimension.
+3. Twists: (a) the centre twist, discrete; every continuous path to it through non-central corner twists has second-order cost beta rho per unit of theta^2 on each twisted plaquette (Corollary WN2), so a thin sheet of area A has curvature beta rho A at t = 0, and the lab-frame smearing of the sheet is the same function of t (exact invariance) and costs the same; (b) a change of the gauge orbit of pinned boundary data.
+4. So a response with a blind upper bound, gradient invariance and a commutator source (R2-R4) exists only in case 3 (b), with moves that are covariant with respect to a field-dependent frame. Covariant moves with Jacobian one exist (C8), but a frame carried by the unblocked field loses its meaning after a length of order beta (adjoint perimeter decay, RECALLED, ultraviolet). A frame that survives must be built from blocked fields. That is the background field of Balaban's account and the object of row 1011.
+
+The reason in one sentence: **the 2D mechanism needs a continuous non-abelian group that acts as a global symmetry on the integration variables; a pure gauge theory has none, because its only global symmetry on link variables is the centre.** This agrees with row 1007 B(5) and adds the exact form of the failure (the corner graph).
+
+### 4.4 Kill table
+
+Tests K1-K9 of Section 1.2. "pass" means only that the test does not refute the candidate in the valid form.
+
+| Cand. | Decisive test and reason | U(1) (K5) | Q_8, 2T (K6) | d = 5 (K7) | D2, slab, SHEET (K3, K3', K4) | PT, NP (K1, K2) | Spec check S0-S4 | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| C1 corner-twist inequality | Lemma WN: the cost form is site-local, so R6 has no harmonic sum; the family inequality is a one-site statement | gain zero (one axis) | uses the Lie algebra | fails in every d, also d = 4 | not reached | not reached | S2 fails (no rate) | **FAILS** (PROVED) |
+| C2 non-central path to the centre twist | Corollary WN2: -Z''(0)/Z(0) = beta rho(beta) times the sheet area; the bound Z'' >= -delta Z that [B] p. 12 integrates is false at t = 0 unless rho = 0 | U(1): the twist costs classically | no continuous path in a finite group | no dimension input | periodic only | feeds the flux half only (RE, blocked-local) | S2 fails | **FAILS** (identity PROVED; rho > 0 ARGUED) |
+| C3 winding-sector twist | Lemma TWIST: Z_k = Z_0 exactly on the lattice | - | - | - | - | - | the object is void | **FAILS** (PROVED) |
+| C4 induced-boson third copy | the weight is not the Wilson weight; colour is not exchangeable given the links; no consumer; Proposition V warns for non-linear weights | - | - | no input | - | - | S0: a frame change (row 1004 family (c)) | **FAILS** for T0 (ARGUED); found again |
+| C5 direction-layer diamagnetic gap | K7: the conditional gain holds in d = 5, where the conclusion is believed false, so all of the crux sits in the gap of the direction-block dynamics; the seagull term it uses is cancelled at long wavelength by the vertex terms (gauge invariance; ARGUED) | gain zero | gain zero when frozen | **fails K7** | pointwise in the background: passes by form | reads one direction given the rest | S0: renames the crux | **FAILS** as a route (ARGUED); found again (row 859 idea 1, row 834) |
+| C6 centre clusters | Ginibre monotonicity gives abs E W_C <= the Z_2 Wilson loop at coupling beta, a perimeter law at weak coupling; the centre variables are frozen there; SO(3) monopole cubes break the ferromagnetic form | - | blind to the group beyond its centre | no input | - | centre-odd sector only | S1 fails | **FAILS** (ARGUED); found again in kind |
+| C7 biharmonic frame field | (1) Proposition LOC 1: the frame decouples from every gauge-invariant observable, and commutators of frame moves are frame moves; (2) the uniform one-axis cost is (C/alpha) abs(df)^2, a Dirichlet form (the biharmonic form holds only for smooth dressed links), so in the class of all backgrounds the mode sum is not a logarithm in d = 4 | gain zero | uses the Lie algebra | scale-free only at d = 4 and only for smooth V | class of all backgrounds: no log | reads no physical factor | S3 fails | **FAILS** (ARGUED); the kernel itself is an exact identity |
+| C8 tree-transported translations | frames carried by unblocked links decohere after length of order beta; the gradient structure survives only up to scales of order beta^(1/3) (wedge loops of area r against beta), which is inside the perturbative range | gain zero | uses the Lie algebra | would use d = 4 | Dirichlet cells | - | S0: with blocked frames it is row 1011 and the account's background | **FAILS** as a band crossing (ARGUED); the triangular Jacobian is exact |
+
+**No candidate survives.** Three die by exact lemmas (C1, C2, C3), five by argued reasons. Every continuous-twist candidate either returns to the Schrodinger-functional family of row 1011 or has a site-local cost form.

@@ -49,7 +49,7 @@ def main():
     beta = float(open(files[0]).readline().split("beta=")[1].split()[0])
     # stationarity: first half against second half of each chain, first observable
     for c in chains:
-        h = len(c) // 2
+        h = len(c) // 16 * 8
         a, b = c[:h, 1], c[h:2 * h, 1]
         ea = a.reshape(8, -1).mean(1).std(ddof=1) / np.sqrt(8)
         eb = b.reshape(8, -1).mean(1).std(ddof=1) / np.sqrt(8)

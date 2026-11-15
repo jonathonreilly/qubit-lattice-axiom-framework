@@ -98,3 +98,11 @@ Notes. tau_int of R is about 1 sweep (4 over-relaxation passes per sweep). The h
 criterion (the C1 margin is thousands of standard errors). E[a_0^2] = 1/4 within errors on both sides (Lemma D1 symmetry).
 The infrared bound of row 977 5.3 holds at p_1 with room (ratio 0.38 and 0.33).
 
+**P1 side 16 (analysed 01:12Z; `data/p1_S16_T32_seed1601.txt`, `data/analysis_p1_S16.txt`; 16 blocks of 312 sweeps).**
+
+| side | R_S | R_S/A | lam_* | tau | xi_2nd | Ghat^e(p_1) | IR bound | E[a_0^2] |
+|---|---|---|---|---|---|---|---|---|
+| 16 | 153.832 +- 0.032 | 0.601 | 37.88 | 0.75099 +- 0.00006 | 16.76 +- 0.02 | 0.8787 | 2.8559 | 0.2514 +- 0.0021 |
+
+Half-chain test 0.97 sigma. (analyze.py: half-split fixed to whole blocks after a reshape error on this file; no number changed.)
+

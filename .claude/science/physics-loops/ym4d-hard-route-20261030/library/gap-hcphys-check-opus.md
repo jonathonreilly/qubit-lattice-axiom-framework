@@ -214,3 +214,51 @@ contained in L^q(nu) for q > p on a non-atomic space. Correct.
 torus and the trace formula Z(B x t) = trace over gauge-invariant states of T_B^t in each direction). Z((2n)^3 x t) =
 lambda_0((2n)^3)^t e^(X(t; (2n)^3)) in the channel of the side t, and = mu_0(B')^(2n) e^(X'(2n; B')) in the channel of a side
 2n, with B' = (2n)^2 x t. Taking logarithms gives the identity exactly; X = log Z - t log lambda_0 is (EX) (L123).
+
+## Step 6. N2's claim: row 978's reduction and row 720's Theorem ZD meet at one object (written 00:32Z)
+
+**Read for this step.** `gap-phys-seed.md` (row 720) L249-333: Lemma Z, Lemma Z3, Theorem ZD, Corollary Z2, Theorem
+ZD-c with (PHYS-SEED), (PHYS-SEED-Delta), (Z-SEED), (BDD-Delta), (Z-UNB), Corollary Z4. Row 978: Corollary CU and its
+(APR) form, the defective form (`gap-ladder-max.md` 5.2, 5.7). Theorem SH, Lemmas Z', E', Corollary S3' and
+Proposition Delta were not re-read; they are the named inputs of Theorem ZD.
+
+**The two reductions, side by side.**
+
+- Row 978 (Corollary CU, 5.7): (TH) and (HC-phys) give (SEED-phys). (TH) is X(tau_0/a_iota; cube) <= Theta, extensive
+  (Theta = (2 ell/L_0)^3 A from (APR) and Proposition Delta). (HC-phys) must carry X from Theta down to log(1 + s_*)
+  by the time ell/a_iota.
+- Row 720 (Theorem ZD-c): (PHYS-SEED) is EQUIVALENT to (BDD-Delta) and (Z-UNB) together. Its route reads X of the cube
+  at the time b/4 through Proposition Delta, X(b/4; b^3) <= 64 D(b/4) (Lemma Z), and then the gap.
+
+**What holds, as an implication (PROVED here from the two checked-or-named statements; one line).** By Corollary CU,
+(TH) and (HC-phys) give the seed at every large half side ell. With l_1 = 2 ell and P = {2^i l_1}, (PHYS-SEED) of
+ZD-c holds at l = l_1, given the side condition of ZD-c (l_1/(4 a_j) an integer at least 3 for all large j). By ZD-c,
+(BDD-Delta) and (Z-UNB) follow. So **(TH) and (HC-phys) imply (BDD-Delta) and (Z-UNB)**: a proof by row 978's route
+contains a proof of row 720's pair, and a refutation of (BDD-Delta) or (Z-UNB) on the family refutes (HC-phys) there
+((TH) comes from the account's own stability statements). The converse is not known: (HC-phys) is stronger than the
+seed (row 978, 5.2), and ZD-c's pair is equivalent to the seed. So "they are not two independent chances" HOLDS, in
+this direction.
+
+**"Meet at one object, the thermal sum of the cube between the hot end and the cold range."** A description, not a
+statement, and it fits: both routes bound the same function X(t; cube) on the range from an extensive start to the
+time where S <= 1. Row 978 reads it from the start time tau_0/a_iota at a rate; row 720 reads it at the one time b/4
+through the Casimir free energy of the symmetric torus (Proposition Delta) and lets the gap finish. The precise form is
+the implication above. Verdict: **HOLDS AFTER CORRECTION**: replace "meet at one object" by "(TH) and (HC-phys) imply
+(BDD-Delta) and (Z-UNB) through the seed (Corollary CU, Theorem ZD-c); the converse is not known".
+
+**Two loose identifications next to the claim.**
+
+- L163, "a gap M_1 on the cube, and a bounded thermal sum at one time t_c with t_c a_iota bounded. These are (Z-UNB) and
+  (BDD-Delta) of row 720": the seed follows from that pair (Lemma COUNT (c): S(ell/a_iota) <= e^(-M_1 (ell - t_c a_iota))
+  once S(t_c) <= 1), correct. But they are not (Z-UNB) and (BDD-Delta) term by term. (Z-UNB) asks only that L m(L^3) is
+  unbounded along P, which is weaker than a uniform gap M_1; (BDD-Delta) bounds the Casimir free energy of the
+  symmetric tori at all large sizes, not S on the cube of side 2 ell at one time. The two pairs are equivalent through
+  the seed (ZD-c one way; Theorem S and Corollary S3' with the side comparisons the other way, not re-checked here).
+  HOLDS AFTER CORRECTION: "equivalent through the seed", not "are".
+- L217, "Each [route] stops at the same object": true of Route 3 (the middle range) and of Route 2 (it returns (U2), a
+  statement on X); Route 1 stops at T3 and at a log-Sobolev constant for the unit law in the fine metric, which is not a
+  statement on X. Wording only; no verdict rests on it.
+
+**Consequence for N2's advice (L266).** "The statement to keep is (U1) or (U2) in unit steps, or (UNIT-EE)": by Step 4,
+(UNIT-EE) in its pointwise form is not implied by (U1) or (U2). The weakest seed-sufficient form is the integral condition
+of Lemma EE (c). Correction: "keep (U1), (U2), or the integral form of Lemma EE (c)".

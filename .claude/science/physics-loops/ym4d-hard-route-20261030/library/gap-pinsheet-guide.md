@@ -122,3 +122,38 @@ still behaves as an O(4)-symmetric ordered sheet whose frame direction is nearly
 This is what row 977 9.1 ARGUED (q_0 = 1/4 up to winding effects); the run sees no winding effect at the 2 to 3 percent level.
 The slow mode of R^0 is the drift of that frame direction, which no exact symmetry averages; its tau_int grows with the side.
 
+**P3 side 16 (analysed 01:38Z; `data/p3_S16_T32_seed1603.txt`, `data/analysis_p3_S16.txt`; 16 blocks of 312 sweeps).**
+
+| side | q_0 | R^0_S | C1 bound | R^0_S/A | R4 | R4/4 | tau | Ghat^0(p_1) | IR bound |
+|---|---|---|---|---|---|---|---|---|---|
+| 16 | 0.2435 +- 0.0066 | 36.67 +- 2.00 | 7.81 | 0.143 | 154.53 +- 0.11 | 38.63 | 0.7516 +- 0.0001 | 0.8865 | 2.8559 |
+
+tau_int of R^0 = 14.4 sweeps against the limit 312/20 = 15.6: passes the fixed rule, narrowly; half-chain test -1.25 sigma.
+
+**P3 verdicts (rules of Step 1, GUIDE).**
+- C1 (test of 9.1(d)): R^0_S >= A(q_0 - G_S/beta): 10.80 >= 5.61, 21.70 >= 7.45, 36.67 >= 7.81. Holds on all three sides (not near the bound).
+  The infrared bound itself also holds at p_1 (0.279, 0.536, 0.886 against 0.742, 1.623, 2.856). 9.1 is not withdrawn.
+- C2: q_0 - 2 errors = 0.2452, 0.2316, 0.2303 >= 0.22 on sides 8, 12, 16. **"QUOT-CAP applies"** (GUIDE): the condition q_0 >= 0.24 of
+  Proposition QUOT-CAP is met by the central values on all three sides (0.253, 0.245, 0.243) and by q_0 - 2 errors >= 0.22 as the criterion asks;
+  q_0 - 2 errors is below 0.24 on sides 12 and 16, so the run supports the condition but does not place q_0 above 0.24 with 2-sigma margin.
+- C3 (row 973 rule): g = (R^0_16/R^0_8)^(1/4) = 1.358, sigma_g = g(r_8 + r_16)/4 = 0.027; g - 2 sigma_g = 1.304 > 1.25. Steps 8 -> 12 and 12 -> 16 both
+  increase (+9.5 and +6.6 sigma), so no decreasing step. **REFUTED (GUIDE) for a box-uniform (TILT-COV-quot) at beta 2.3** in the rule's sense.
+  Robustness, reported, not part of the rule: with every error doubled g - 2 sigma_g = 1.2501 (still above, by 0.0001); with R4/4 in place of
+  R^0 (the O(4)-averaged estimator, error 0.1 percent) g = 1.382. The row-977 expectation "growth factor near (L + 2)^2/L^2 per step" (1.56 to
+  1.27 on 8 -> 16, about 1.41 averaged) matches within errors.
+- Amendment (01:38Z, before the data it governs): one second P3 side-16 chain (seed 1604), run after P1 side 24, as a check of the
+  error of R^0_16 only; the verdict above stays on the first chain by the fixed rule, the second chain is reported beside it.
+
+## Step 6 (prepared 01:41Z, before any P2 data). P2 criterion, copied from gap-tiltproof-max.md 6.4 (line 297-298)
+
+> Row P2 `gap-pinsheet-u1`: the same for compact U(1) at beta 2.3 with sides 8 to 32. Criterion: R_S/A does not fall by more than
+> a factor 2 from side 8 to side 32 (power-law order). This tests the U(1) reading of 5.6.
+
+Readings fixed now: compact U(1) Wilson action beta sum_p (1 - cos theta_p), beta 2.3 (Coulomb phase; transition near 1.01, RECALLED),
+frozen set as P1; R_S := E|M|^2/A with M = sum_y e^(i theta_k(y)) (2 components), averaged over planes and the two slices. Sides 8, 16, 32
+with T = 2S; 500/500/300 thermalisation and 8000/4000/1500 measured sweeps; same block and tau_int rules. Verdict: the criterion HOLDS if
+(R_32/32^2)/(R_8/64) >= 1/2 with the 2-sigma margin on the safe side, FAILS if <= 1/2 likewise, else INCONCLUSIVE. Program
+`pinsheet_u1.c` (von Mises heat bath, Best-Fisher; reflection over-relaxation), validated before production on two exact values:
+strong coupling <cos theta_p> = I_1(beta)/I_0(beta) at beta 0.2, and the weak-coupling equipartition value 1 - 1/(4 beta) at beta 10.
+Also, before P2 and after P1 side 24: a second P3 side-16 chain (seed 1604), Step 5 amendment. Driver `run2.sh`.
+

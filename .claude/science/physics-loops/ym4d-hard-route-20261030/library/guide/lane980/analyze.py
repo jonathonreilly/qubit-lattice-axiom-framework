@@ -2,7 +2,8 @@
 Reads pinsheet output files (one or more chains of one side and mode), drops nothing further
 (thermalisation is already excluded by pinsheet), and reports for each column the mean, the
 16-block standard error, and the integrated autocorrelation time (Sokal window, c = 6).
-Usage: python3 -I analyze.py mode file1 [file2 ...]
+Usage: python3 -I analyze.py mode file1  (mode 1 = P1 SU(2), 2 = P2 U(1), 3 = P3)
+ [file2 ...]
 Several files = independent chains: block errors are computed per chain (16 blocks each) and pooled.
 """
 import sys
@@ -33,7 +34,8 @@ def blocks(x, nb=NB):
 def main():
     mode = int(sys.argv[1])
     files = sys.argv[2:]
-    names = {1: ["R", "Gp1", "tau", "a0sq"], 3: ["R0", "q0", "R4", "G0p1", "tau"]}[mode]
+    names = {1: ["R", "Gp1", "tau", "a0sq"], 2: ["R", "Gp1", "tau", "c0sq"], 3: ["R0", "q0", "R4", "G0p1", "tau"]}[mode]
+    ncomp = {1: 4, 2: 2, 3: 1}[mode]
     chains = [np.loadtxt(f, comments="#") for f in files]
     out = {}
     for j, nm in enumerate(names):
@@ -57,13 +59,13 @@ def main():
     # infrared bound of row 977 5.3 / 9.1(d) at the lowest momentum, per component
     Ep1 = 1 - np.cos(2 * np.pi / S)
     irb = 1 / (2 * beta * Ep1)
-    if mode == 1:
-        g = out["Gp1"][0] / 4
-        print(f"IRB  Ghat^e(p1) = {g:.5f} +- {out['Gp1'][1] / 4:.5f}  <=  1/(2 beta E(p1)) = {irb:.5f} : {'holds' if g <= irb else 'VIOLATED'}")
+    if mode in (1, 2):
+        g = out["Gp1"][0] / ncomp
+        print(f"IRB  Ghat^e(p1) = {g:.5f} +- {out['Gp1'][1] / ncomp:.5f}  <=  1/(2 beta E(p1)) = {irb:.5f} : {'holds' if g <= irb else 'VIOLATED'}")
     if mode == 3:
         g = out["G0p1"][0]
         print(f"IRB  Ghat^0(p1) = {g:.5f} +- {out['G0p1'][1]:.5f}  <=  1/(2 beta E(p1)) = {irb:.5f} : {'holds' if g <= irb else 'VIOLATED'}")
-    if mode == 1:
+    if mode in (1, 2):
         # second-moment correlation length from block means of R (= 4 Ghat(0)) and Gp1 (same normalisation)
         bR, bG = out["R"][4], out["Gp1"][4]
         ratio = bR.mean() / bG.mean()

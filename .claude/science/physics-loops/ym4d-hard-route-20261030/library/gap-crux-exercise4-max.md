@@ -40,6 +40,7 @@ Status log (times from `date -u`):
 - 2026-11-15 16:26Z: Step 5, second part: the hand computation of 5.2 and the pre-registered reading of its control run are written; the run has not started.
 - 2026-11-15 16:29Z: Step 5, second part done: control run 16:27:02Z-16:27:06Z under the numeric lock (holder row1003-fable-ninf, acquired 16:26:58Z, released after the run; memory 69 percent free before). C0, R1, R2 PASS by the pre-registered reading. Results in 5.2.
 - 2026-11-15 16:31Z: Step 6 done (Section 6: a second derivation of NP (a) that does not use Theorem SH; five further candidates, each found again in the lane and not attacked).
+- 2026-11-15 16:34Z: Step 7 done (Section 7: report, work items, marks, repo search, strong words). Step 8: RESULT line at the end of the file.
 
 **Skill header (exercise skill, Output rules).** Written by Anthropic Claude Fable 5.2, effort max, Mac mini worker
 session, commit 95fecd964, 2026-11-15. Nothing in this file is checked by another model. The skill's framework
@@ -49,7 +50,7 @@ task (2) its step 2 on one question, task (3) its step 7 with the kill pass, tas
 step 9. Steps 1, 4, 5 and 6a of the skill are not rebuilt: the row forbids it ("do not rebuild them"), and
 `parts/gap.md` carries them from row 998.
 
-What this run did not cover (kept true as the run goes): see the list at the end of Section 7.
+What this run did not cover: the list is Section 7.8.
 
 ## 1. The crux in its new shape (state at this pin, with anchors; nothing here is mine)
 
@@ -127,7 +128,11 @@ an open problem. The skill's two exclusion clauses quoted above both apply.
   for M' imply the gap of M' for all large beta". Both the implication and its hypothesis are open: no account of
   the kind the lane ports exists for M' (RECALLED: Gawedzki and Kupiainen for the hierarchical model; Mitter and
   Ramadas 1989 for the effective actions of the lattice model; neither was read in this run, and row 1002 H15 says
-  the same at digest level). So for this form the filter's sentence is too strong by one clause: the step would
+  the same at digest level). The other target's file `RTARGET.md` (PR #10114 at f76f6c6, L36-41; found by the repo
+  search of Section 7.9) records the same from a source: Kopper 1999, introduction, read there as a skim: the
+  ultraviolet analysis of the full model had "so far only [been] performed in the hierarchical case"; "So the 2D
+  testbed is itself an open construction, not a solved template". So for this form the filter's sentence is too
+  strong by one clause: the step would
   reduce the two-dimensional gap to its ultraviolet problem. It would not prove it.
 
 In both cases the content is a statement of cost: the step is at least as hard as an open problem of the same
@@ -235,7 +240,7 @@ lattice at order-one coupling by the last three columns.
 - *Gauge kinematics* (1, 2, 3, 4, 5, 6, 9, 20, and 19 in its Z_2 part): the two-dimensional O(N) model lacks them
   or has a poorer analogue. The frozen groups Q_8 and 2T share every one of them. In particular Fact T holds for
   Q_8, because the twist eaters i sigma_1 and i sigma_2 are elements of Q_8.
-- *Geometry of a continuous non-abelian fibre* (10 for the fibre, 11, 7, 16): Q_8, 2T and U(1) lack them. The
+- *Identities and geometry of a continuous non-abelian fibre* (10 for the fibre, 11, 7, 16): Q_8, 2T and U(1) lack them. The
   two-dimensional O(N) model has an analogue of each.
 - *Both at once:* one input only, the O'Neill term of input 10 (the curvature that the gauge quotient adds to a
   continuous non-abelian fibre). U(1) lacks it (the vertical commutator vanishes), Q_8 and 2T lack it, the
@@ -279,7 +284,7 @@ says only what a proof must use.
 | 3 | 't Hooft duality | already consumed: Theorem R reduces the seeds to the even seed (ES) | (ES) reads the whole even sector: pass | - | different duality (continuous centre) | Theorem R holds for them; (ES) fails in the frozen limit (check 884) | poorer analogue | consumed; the open statement is (EV-STEP), registry RE |
 | 4 | Bianchi identity | none. It is the constraint that makes the plaquettes dependent (`gap-skeleton-max-b.md` L94-95) | - | - | shares it (the photon is its consequence) | share it | analogue | not an input of a selective step; row 962 (no relaxation of the constraint system is a new input) |
 | 5 | Elitzur; mean Hessian diagonal | (st-C), (st-0) through an averaged curvature criterion | - | D2 and SH bind the supremum and all-fields forms | shares it | share it | lacks | found again: row 863 ("exact but not a handle"), row 968 Proposition AVG |
-| 6 | no continuous symmetry | (st-0): exclusion of the massless branch ("massless needs a symmetry") | binds: a critical Ising factor is massless at one coupling with no continuous symmetry (device of row 708); for a massless phase with no symmetry I know no theorem-grade model | - | has a continuous centre: pass | share it and have no seed (degenerate sectors, not massless) | lacks | no theorem: Goldstone's theorem has no converse. Found again: row 876 idea 29; row 988 Route 3 (set aside 28, re-judged "too strong" by row 998) |
+| 6 | no continuous symmetry | (st-0): exclusion of the massless branch ("massless needs a symmetry") | binds: a critical Ising factor is massless at one coupling with no continuous symmetry (the product device of row 708 with its Ising factor moved to the critical coupling; that the critical model has no seed is RECALLED, not in the lane); for a massless phase with no symmetry I know no theorem-grade model | - | has a continuous centre: pass | share it and have no seed (degenerate sectors, not massless) | lacks | no theorem: Goldstone's theorem has no converse. Found again: row 876 idea 29; row 988 Route 3 (set aside 28, re-judged "too strong" by row 998) |
 | 7 | loop equations | none by hand (the bootstrap is numerical) | - | - | linear loop equations | lack | analogue | set aside under the no-computer rule: `gap-form-exercise.md` L352 |
 | 8 | Durhuus-Frohlich comparison | (st-F): area law from decay in the 3D chiral model | - | - | - | - | it is the comparison model | range-limited: the 3D model orders at large beta (RECALLED), so the use stops at beta_W < 2/3. Found again: rows 825, 828, 831 |
 | 9 | Borgs-Seiler deconfinement | none (a negative input) | - | - | - | - | lacks | exercise 2 I19, test K6 |
@@ -304,7 +309,7 @@ Section 3 survives with a consumer. Each one falls in one of five cases.
 - It feeds the base or the entry of the band, and nothing in the band: 12, 13, 14, 15.
 - Its step is blocked at a statement that the registry already holds: 1 and 20 at (EV-STEP) and (FLUX-4), 16 at RB.
 - Its step fails in a model of the class: 2 (frozen Q_8; theorem in the frozen limit, belief at order one), 6 in
-  its class-wide form (a critical Ising factor).
+  its class-wide form (a critical Ising factor; RECALLED).
 - It has no step, or its consumer stops below the band: 4, 5, 7, 8, 9, 10, 11, 17, 18, 19.
 
 **V2 (reading).** The five tests split as follows. PT binds every step that feeds (st-F) alone: the flux half
@@ -602,3 +607,177 @@ The skill's rule: search the registry before each attempt; if another row holds 
 
 Nothing else was attacked. I found no named sub-step under 5.1 or 5.2 that another proof attempt could take: 5.1
 is complete, and 5.2 ends at route RB, which the registry holds as blocked-equivalent.
+
+## 7. Report (the skill's step 9)
+
+### 7.1 The wall, in plain words
+
+We want to show that the particles of the theory have a mass. The lane has an engine that proves this from one
+"seed": one box in which a certain free energy is small. The construction of the theory controls only very small
+boxes, and there this free energy is large. The missing piece is one statement: each time the box is doubled,
+between the small boxes and the seed box, the free energy shrinks by a fixed factor. In a model with a massless
+particle it never gets small, so a proof must use something that such models do not have. This run asked which
+facts our model has that its nearest look-alikes lack, and whether one of them can prove the shrinking. (This is
+row 998's plain version, `parts/gap.md` L29-31, with the question of this row added. No blind check ran.)
+
+### 7.2 What the exercise found
+
+1. The newest filter says: a step must name an input that is special to four dimensions or to gauge fields, or
+   it would also prove a famous open problem in two dimensions. This is not a test. The two-dimensional statement
+   is believed true, so "it would also prove it" names a cost and not a contradiction. Section 2.3 gives a valid
+   text. (PROVED as logic, by me, not checked.)
+2. I listed twenty inputs. All twenty were already in the lane. The ones that are exact at the couplings that
+   matter fall in two families. Gauge bookkeeping (flux sectors, twists, duality) is shared with frozen finite
+   groups, which have no seed. The geometry of a continuous group is shared with the two-dimensional model. One
+   input is in both families, and its only known use stops at strong coupling. (ARGUED.)
+3. No input survives with a step that it could prove. (ARGUED; the lane's verdicts were cited, not re-derived.)
+4. One counterexample was built: a model of the lane's class with no seed in which the free energy shrinks by
+   any chosen factor on any chosen number of doublings (Proposition NP). So shrinking on some scales never
+   carries over to the next scale by a general argument. (Proved by hand by me, not checked.)
+5. One test was run by hand, with a small control computation: in the two-dimensional model with infinitely many
+   components, where the crossing is known, the free energy does shrink at every doubling, and the reason is an
+   exact formula (ENV). The reason rests on the large number of components. It gives SU(2) nothing new.
+6. This run did not pass the wall and did not price it more exactly. It produced one corrected filter, one sorting
+   of the inputs, one counterexample and one test. Most of it is a map that the lane already had.
+
+### 7.3 Filters corrected
+
+- **The 2D O(N) filter (`parts/gap.md` L92).** Valid form: Section 2.3. It is a price and a routing rule. It never
+  discards a step. It binds as a constraint only if the two-dimensional gap is false. Nothing comes back, because
+  no row was discarded on it. Mark: PROVED as logic from the skill's definitions; the open status of the
+  two-dimensional gap is a BELIEF about the literature.
+- **Test table, row "Product with a massless factor" (`parts/gap.md` L193).** The cell "ARGUED only: it also
+  refutes a class-wide step 'a decrease of D or S under doubling persists'" now has a construction for D:
+  Proposition NP and Corollary NP1. Until a check record exists it is an argued counterexample. For S the cell
+  stays as it is.
+- **Lead rule W2 (`parts/gap.md` L90), one clause to add (proposed).** After "if it reads one factor of the state
+  space, a product with any no-seed factor binds it": "and if it reads the whole state space only through
+  finitely many values of D, a product binds it too (Proposition NP, row 1003)".
+
+### 7.4 Routes worth doing
+
+None for the proof. This run found no route with a first step that is not already held by a row. Two items of
+housekeeping are in 7.7. I do not present them as routes.
+
+### 7.5 What not to do next
+
+- A (K-flow) row that is discarded, or accepted, because it does or does not name a four-dimensional or
+  gauge-specific input. Reason: Section 2.2.
+- Another inventory of inputs. Reason: twenty inputs, twenty found again (Section 3).
+- A row on Fact T, twists or duality alone for the flux half. Reason: Q_8 has all of them and no seed in the
+  frozen limit (Section 4, rows 1-3).
+- A proof of (CAS) by induction on the history of D. Reason: Proposition NP.
+- A larger computation in the N = infinity model. Reason: the hand formula (ENV) answers it; a pass is no support.
+- Everything in row 998 9.5 (`parts/gap.md` L70-72) stays.
+
+### 7.6 The exact price
+
+Not changed by this run. It is the section "The exact price" of `parts/gap.md` (L221-232). Two remarks, both
+ARGUED: (1) the contraction has to be proved on the whole range down to the threshold; no shorter stretch is
+enough in the class (Proposition NP, remark 2); (2) at theorem grade and at order-one coupling, the list of
+Section 3 holds no input that separates Wilson SU(2) from the frozen groups and from the two-dimensional model at
+once, except the O'Neill term of the gauge quotient, whose known consumer stops near beta = 1/8 (S2).
+
+### 7.7 Work items
+
+**W1. Check of this file (first; a model that did not write it: Claude Opus 5.5 at high effort by the rule of
+`FINISH.md` L301, or gpt-6-astra for a cross-provider check). No new attack.** Statements, in this order:
+
+- (i) Lemma NP0, Proposition NP, Corollary NP1 and Section 6.1 (`library/gap-crux-exercise4-max.md` 5.1, 6.1). Read:
+  `gap-seed-sc.md` L30-47 (Theorems 1 and 2); `gap-crux-exercise3-max.md` L690-713 (Lemma PT); `gap-mid-max.md` L63
+  and L230; `gap-seed-shape.md` L207-221; `gap-phys-seed.md` L283-294 (Proposition R as used). Test first: (a) the
+  arithmetic 0.176 x 32/192 < 0.03 and 12800^2 x 4 = 655,360,000; (b) that Theorem 1 (iii) holds for real beta in
+  [0, 1/12800] with the exponent 4n for n >= 4, and that A_n > 0 in Theorem 2 for n >= 5; (c) that the proof of
+  Lemma PT (a), (c), (d) runs when one factor is the Ising model on sites; (d) the choice of K and the line that
+  gives (b); (e) Section 6.1's bound D >= (1/16) log(1 + S).
+- (ii) Section 2.2 (a)-(d): is the two-dimensional filter a test in the form of the skill's step 6c
+  (`/docs/ai_methodology/skills/exercise/SKILL.md` at main 8b11ae2bb9, lines 437-490)? Test first: whether any
+  theorem makes T false for the O(N) model, N >= 3, at some beta.
+- (iii) S2 of Section 3.1: the column "Q_8, 2T" of the table, row by row (rows 8 and 19 are marked unchecked), and
+  the claim that Fact T holds in Q_8.
+- (iv) Section 5.2 Steps 1 to 3: the form of delta_L, the gap equation of the torus, the identity (ENV), and the
+  bond energy E_L = 1 - 1/(4b) + mu_L/4. The control run may be repeated from the core lines in 5.2.
+- (v) Ten anchors of Sections 3 and 4, chosen by the checker.
+
+Verdict per statement: HOLDS, HOLDS AFTER CORRECTION, FAILS at the first failing line, or OPEN. Stop rule: the
+first failing line of each statement; do not repair beyond one line. Output:
+`library/gap-crux-exercise4-check-<model>.md`, opening with the two header lines.
+
+**W2. For the lead; no row.** (a) Replace the filter line of `parts/gap.md` L92 by the text of Section 2.3, or keep
+it and add "a price, not a test (row 1003, Section 2.2)". (b) After W1: point the cell at L193 to Proposition NP,
+and add the clause of 7.3 to rule W2.
+
+**Not proposed, with reasons.** A proof row on any input of Section 3 (no consumer; V1). A lane on the
+two-dimensional O(N) model (it is the open problem; RTARGET.md of the other target already records that even its
+ultraviolet side is open). A rebuild of the Peierls bound for the four-dimensional Ising model (only if
+Proposition NP is to carry weight in a chain; it carries none now). The analogue of Proposition NP for thermal
+sums (same device; no consumer). A measurement of theta(L) for SU(2) (row 998 8.4: not urgent; unchanged).
+
+### 7.8 Appendix: marks, who checked what, what was not covered
+
+**Marks of the run's own statements.**
+
+| Statement | Where | Mark | Rests on |
+|---|---|---|---|
+| The 2D O(N) filter is not a test in the valid form; it is a price | 2.2 (a), (c), (d) | PROVED as logic | the skill's step 6c; the open status of the 2D gap (BELIEF) |
+| The two cases of the price (fixed coupling; trajectory) | 2.2 (b) | ARGUED | Corollary S2 (membership of the 2D model in the class: ARGUED in 2.1) |
+| Two theorem-grade tests in 2D, copies of (f1), (f2) | 2.2 (e) | reading | published theorems RECALLED; a bridge not written |
+| Table of 20 inputs | 3 | each row its own mark | lane anchors; account titles |
+| S2: two families; one input in both | 3.1 | ARGUED | the table |
+| V1: no input survives with a consumer | 4.1 | ARGUED ("valid as reported; not re-derived") | the lane's verdicts |
+| Lemma NP0, Proposition NP, Corollary NP1 | 5.1, 6.1 | PROVED by hand (argued counterexample in the skill's words) | Lemma PT; Theorems 1, 2 of `gap-seed-sc.md`; Proposition R; Theorem D, Theorem S; Proposition Delta with Theorem SH for the threshold 6.1 x 10^(-4); the Peierls bound (RECALLED) |
+| (ENV) and Steps 1, 3 | 5.2 | PROVED from the N = infinity formulas | those formulas are RECALLED and formal |
+| Steps 2, 4; "(CAS) holds at N = infinity" | 5.2 | ARGUED | scaling limit; leading orders |
+| Control run | 5.2 | GUIDE | - |
+
+**Who checked what.** Everything in this file was written by Claude Fable 5.2 (max) in one session. Nothing in it
+was checked by another model. The lane statements it uses carry the checks named where they are cited.
+
+**What this run did not cover.**
+
+- Steps 1, 4, 5 and 6a of the skill were not rebuilt (the row forbids it); no blind check of the plain version.
+- The proofs behind the lane anchors of Sections 3 and 4 were not re-read. The verdicts are "valid as reported".
+- The account: only the titles in `library/sa-index/ca-full/index.tsv`. No statement of the account was read in
+  its text in this run.
+- Literature: no new search. Published theorems used as RECALLED, not re-read: Frohlich and Spencer; McBryan and
+  Spencer; Kupiainen; Kopper; Borgs and Seiler; Durhuus and Frohlich; Elitzur; the Peierls bound for the Ising
+  model; Mitter and Ramadas; the large-N saddle point of the O(N) model.
+- The list of inputs is what I could name and find. It is not a proof that no other input exists.
+- Proposition NP is written for D only.
+- The N = infinity computation is formal in the limit N to infinity and is done in the scaling limit.
+
+### 7.9 Repo search (rule "Repo first", `FINISH.md` L340)
+
+Done at Step 7, after the attempts, for the two statements of Section 5 (it should have come first; no hit
+changed them). Method: a bare, depth-1, blob-less fetch into `/tmp/row1003-branch-search/`, then `git grep`.
+
+- main at 8b11ae2: the 67 markdown files with "ym4d" in their path, patterns "N = infinity", "large N", "O(N)",
+  "O(3)", "sigma model", "gap equation", "Casimir free energy", "decrease of D", "D under doubling": no relevant
+  hit (four lines, all error terms written O(3), O(4) or unrelated).
+- PR #10114 at f76f6c6 (the other target; read only): its mass-gap notes (11 files), `RTARGET.md` and
+  `CODEX_REVIEW_GAPZ.md`, same patterns. Hits in `RTARGET.md` only: that target uses the two-dimensional O(N) model
+  as a test bed for its ultraviolet large-field count (L8-34) and records that the ultraviolet analysis of the
+  full model is open (L36-41; quoted in Section 2.2). Credit: the authors of that file. No statement of the kind
+  of Proposition NP or (ENV) was found.
+- Not searched: the other 1,200 files of PR #10114; PRs #10133, #10134, #10141, #10144.
+
+### 7.10 Strong words, read against what the run did
+
+- "No input survives" (V1, 7.2): means "no input on a list of twenty that I wrote and found again". It is not a
+  theorem about all inputs.
+- "Every input ... is already on file" (Section 3): true for the twenty; each has its anchor.
+- "PROVED" for Proposition NP: by hand, by one model, unchecked; one input (Peierls) is recalled.
+- "refutes" in Section 4, row 2: in the frozen limit only, on the strength of check 884; at order one it is a
+  belief.
+- "exact" for (ENV): exact in the scaling limit of the formal N = infinity model, not on the lattice (the run
+  shows a mismatch of 0.5 to 1.7 percent on the lattice, falling with mu).
+- "not a test" for the filter: in the skill's sense. As a guide to cost it stands.
+
+**Credits.** The filter and the literature table: row 1002 (Claude Opus 5.5). The product device: row 708, and
+Lemma PT of row 998 (Claude Fable 5.2), checked by row 999 (Claude Opus 5.5). Theorem R: row 737, checked by row
+744 (gpt-6-astra). The frozen-group correction: check 884 (gpt-6-astra). The strong-coupling theorems: rows 694,
+704. The account and its index: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text;
+Balaban's papers through that account. The two-dimensional test bed and its literature note: `RTARGET.md` of the
+other target (PR #10114). The exercise skill: main at 8b11ae2bb9.
+
+RESULT: Row 1003 (Claude Fable 5.2 max, Mac mini worker; checked by no one; one small control run under the numeric lock). (1) Audit of the row 1002 filter: PROVED as logic that the 2D O(N) filter is not a test in the skill's valid form, because the two-dimensional gap is open and believed true; "would also prove an open problem" is a price and a routing rule, never a refutation, and it binds as a constraint only if that gap is false; a valid text is proposed (2.3). (2) Twenty inputs of 4D SU(2) listed with source and lattice status; all twenty were already in the lane. ARGUED: the exact order-one inputs split into gauge kinematics, shared with frozen Q_8 and 2T, and continuous-fibre geometry, shared with 2D O(N); only the O'Neill term is in both, and its known consumer stops near beta 1/8. (3) ARGUED: no input survives with a consumer; each is consumed (Theorem R), feeds only the base or the entry of the band, is blocked at a registry statement ((EV-STEP), (FLUX-4), RB), or fails in a class model. (4) PROVED by hand, unchecked: Proposition NP, a no-seed model of the class (K copies of strong-coupling SU(2) times the ordered Ising model) whose Casimir free energy contracts by any theta on any J consecutive doublings, so no class-wide persistence step reads only the history of D (this turns an ARGUED cell of the test table into a construction); and, formal at N = infinity, the identity (ENV) y d'(y) = -(x^2 - y^2)/(4 pi), by which (CAS) holds in the 2D O(N) model at N = infinity (control run GUIDE: C0, R1, R2 pass); the pass is no support and its mechanism is the large-N saddle. Open: the wall (W), (CAS) and every form on record, untouched; the check of this file (W1); the S-analogue of Proposition NP; the Peierls bound is recalled, not rebuilt.

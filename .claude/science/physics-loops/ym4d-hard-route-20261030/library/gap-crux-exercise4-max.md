@@ -34,6 +34,7 @@ Status log (times from `date -u`):
   row 998 L105-358 and L686-818; `gap-mid-max.md` L40-71, L200-234; `gap-phys-seed.md` L52-66, L249-332;
   `gap-tiltproof-max.md` L236-255; `gap-sepinput-max.md` L356-402; `gap-crux-restate.md` L48-78; FINISH rows 999, 1000, 1003.
 - 2026-11-15 16:01Z: Step 2 done (Section 2: the audit of the 2D O(N) filter). Verdict: a price and a routing rule, not a test.
+- 2026-11-15 16:19Z: Step 3 done (Section 3: 20 inputs with source, lattice status and the two "lacks" columns). All 20 are on file in the lane; anchors given.
 
 **Skill header (exercise skill, Output rules).** Written by Anthropic Claude Fable 5.2, effort max, Mac mini worker
 session, commit 95fecd964, 2026-11-15. Nothing in this file is checked by another model. The skill's framework
@@ -180,3 +181,72 @@ and a pass is no support. It is used in Section 4 only if a candidate reaches th
 the open status itself is a BELIEF about the literature (RECALLED; row 998 I37 and row 1002 item 6 say the same).
 (b): ARGUED. (e): the two rows rest on published theorems that I did not re-read and on a bridge that is not
 written. Checked by no one.
+
+## 3. Task (2): the inputs that four-dimensional SU(2) has
+
+Method. I wrote the list from the definitions and from the literature I know, then ran `grep` over `library/gap-*.md`
+and `library/prior/gap-*.md` for each input before naming it (the lane rule). Every input below is already on file;
+the lane anchor is in the table. The account's own statements were looked up in `library/sa-index/ca-full/index.tsv`
+(titles only; the proofs were not read here). No input in this table is mine.
+
+Columns. "Order one": is it a theorem on the lattice at a coupling of order one? "2D O(N)": L = the model lacks
+it, A = it has an analogue (named). "Product": for M_1 x M_2 with M_1 = Wilson SU(2) and M_2 massless, K = the
+product keeps the input, L = it lacks it. "Q_8, 2T": does the frozen finite group share it? This fourth column is
+not asked by the row. It is added because it decides the result of this section.
+
+| # | Input | Source: account first, then literature, then the lane anchor | Mark | Order one | 2D O(N) | Product | Q_8, 2T |
+|---|---|---|---|---|---|---|---|
+| 1 | Centre Z_2 one-form symmetry: flux sectors, (TM-c), twisted partition functions, Identity FL | account: flat fields with non-central holonomy, CA-I 4.24:prop-flat-holonomy L102460 (it does not use sectors); 't Hooft 1979; `gap-mid-max.md` L219-227 | THM, lane | yes | A: the central element -1 of O(N); charge parity and antiperiodic rings; 4 sectors, not 64 | K | yes |
+| 2 | Fact T: the single-plane twist has classical cost zero (-1 is the commutator of i sigma_1 and i sigma_2) | `gap-crux-restate.md` L53; `gap-crux-exercise2-max.md` L192 (a) | DEF-level fact | yes | L for the central twist (cost beta pi^2 n_2 / (2 n_1), a gradient energy); for N = 3 a twist by a rotation costs zero on its axis | K | yes (i sigma_1, i sigma_2 lie in Q_8) |
+| 3 | 't Hooft duality: electric and magnetic flux are both two-form fluxes in 4D; the axis exchange mixes the 64 twists | 't Hooft 1979; Theorem R, row 737, `gap-means-max.md` Section 4; check row 744 (`gap-brainstorm-max.md` L39) | THM, lane, cross-provider check | yes | A, poorer: the exchange of the two Z_2 twists; no crossed sectors | K | yes |
+| 4 | Lattice Bianchi identity: the plaquette field is a product measure conditioned on every 3-cube | account: CA-II 8.10:lem-pure-gauge L114125; ours: `library/lattice-uhlenbeck.md` Lemma U; `gap-skeleton-max-b.md` L94-95, L215-216 | DEF-level fact | yes | A: the bond variables of a spin model are a flat connection | K | yes; U(1) too |
+| 5 | Local gauge invariance: Elitzur; the Gibbs mean of the Hessian is diagonal; only closed flux | Elitzur 1975; `gap-brainstorm-max.md` L336 (idea 48) | THM | yes | L (global symmetry only) | K | yes; U(1) too |
+| 6 | No continuous global symmetry of any degree: the centre is finite | `gap-crux-restate.md` L160; `gap-crux-fp.md` L88; `gap-brainstorm2-max.md` L179 (idea 29: the massless branch needs an emergent two-form current) | DEF-level fact | yes | L (it has the continuous O(N) symmetry) | L for a U(1) or free-scalar factor; K for a critical Ising factor | yes |
+| 7 | Loop equations in Ward form; SU(2) Mandelstam constraints | Makeenko and Migdal 1979; rows 754, 756 (`gap-brainstorm-max.md` L41); `gap-form-exercise.md` L352 ("numerical, rule f") | THM, lane (Ward form) | yes | A (Schwinger-Dyson equations) | K | no (they need integration by parts on the group) |
+| 8 | Comparison of gauge theory in d dimensions with the chiral model in d - 1 | Durhuus and Frohlich 1980; `gap-next3-max.md` L39; `gap-brainstorm2-max.md` L263 | THM, published; lane rows 825, 828 for the range beta_W < 2/3 | yes, as an inequality; its use stops at 2/3 | L (it is the comparison model: 3D gauge theory is bounded by a 2D O(4)-type model) | K | not checked here |
+| 9 | Deconfinement at fixed time extent and large beta | Borgs and Seiler 1983; `gap-crux-exercise2-max.md` L155, L430 | THM, published, RECALLED (row 869 found a mismatch in one use) | yes; it is a negative input: thin boxes have no seed | L (no thermal transition in 1+1 dimensions) | K | yes (and at every time extent) |
+| 10 | Positive Ricci curvature of SU(2); O'Neill's term on the orbit space | Singer; Feynman 1981; `gap-brainstorm-max.md` L309, L400, L486, L627 (ideas 27, G9); rows 812, 957, 968 | THM as geometry | the geometry yes; its consumer (Bakry-Emery) only below beta about 1/8 | A for the fibre (the sphere); L for the O'Neill term (no gauge quotient) | L as a lower bound on the whole space (a U(1) factor is flat) | no (discrete) |
+| 11 | One-plaquette weight: SU(2) = S^3, log-linear weight, Turan log-concavity of c_j | rows 995, 996; `gap-mid-max.md` L48 | THM, published, cited | yes; kind (K-one) | A (exp(beta s . s') on the sphere) | K | no |
+| 12 | Fact B: b_0 = 11/(24 pi^2) > 0. One doubling lowers 1/g^2 by 2 b_0 log 2 = 0.064 | account: CA-II 5.14:thm-one-loop-law L27042 (PROVED there), CA-I 4.2:lem-one-loop L3901 (CITED: Balaban CMP 109 (1.22) and Theorem 3, CMP 116 (2.41)); first-passage datum SA L6854-6861; `gap-crux-restate.md` L53 | THM, published, perturbative; account: conditional | no. "No exact inequality found here or in the sources uses Fact B at couplings of order one" (L53) | A: b_0 = (N - 2)/(2 pi) > 0 | L for the massless factor (a free photon does not run) | no |
+| 13 | The account's effective actions on the trajectory: stability (ST5)-(ST6), the torus floor l_*(g), (TH), class S | SA L23767-23812, L21454-21534; CA-II 83837-83876, remark "no spectral gap" 84176-84185 (anchors of rows 970, 984); (TH): `gap-ladder-max.md` L141-150 | SUPPLIED (conditional on the account's packages) | no (g small) | L (no such account in print; RECALLED, not searched here) | L (it is a statement about Wilson SU(2); for a product it covers one factor) | no |
+| 14 | Small-volume structure: toron valley, gap 4.1167 g^(2/3)/L, flux splitting exp(-12.4637/g); in a twisted box no zero modes and a gap of order 1/L | Luscher 1982; van Baal; `gap-phys-seed.md` L194; `gap-brainstorm2-max.md` L220 (idea 15); (AC'-lat) `gap-crux-restate.md` L76 | BELIEF (perturbative) | no | A (the rotor zero mode; the coupling of Luscher, Weisz and Wolff) | K | no |
+| 15 | Instantons: action 8 pi^2/g^2; fractional charge in twisted boxes; centre-vortex semiclassics on R^2 x T^2 | Belavin et al. 1975; 't Hooft; Tanizaki and Unsal; `gap-brainstorm-max.md` L316, L404 (idea 31); `gap-brainstorm2-max.md` L175, L230 (idea 25) | BELIEF (semiclassical) | no (RECALLED: a topological charge on the lattice needs small plaquettes) | N = 3: A (action 4 pi/g^2); N >= 4: L | K | no |
+| 16 | Trace anomaly and sum rules: the finite-size shift of the plaquette is a scale derivative | Michael; `gap-brainstorm-max.md` L311 (idea 29), L484 (G8); (VIR_K) `gap-mid-max.md` L52-58; Theorem D (f) | the beta-derivative identity is a THM, lane; the link to a scale derivative needs scaling | the identity yes | A | K | no |
+| 17 | Freedom of the bare weight inside the universality class | (UNIV-FP) `gap-next3-max.md` L282; C4 there L318-319 | OPEN question | no | A | not applicable | no |
+| 18 | In 4D a free photon is infrared stable; in 2D and 3D the massless candidate is unstable | Guth 1980; Frohlich and Spencer 1982; row 1002 item 5 (L336-339); row 786 for Villain at beta >= 2^14 | THM at very large beta | yes, against us | L, to its advantage | not applicable | not applicable |
+| 19 | Self-duality of two-forms in 4D: Bogomolny bound; self-dual Z_2 gauge theory | `gap-crux-exercise-r858-max.md` L155 | THM for Z_2 only | for Z_2 only | L | K | Z_2 part only |
+| 20 | Plaquettes are surfaces: area law as an order parameter; Seiler's and Simon-Yaffe's bounds; Tomboulis-Yaffe inequality | `gap-crux-restate.md` L65-70 (C2, Theorem F); Kanazawa (GUIDE there) | THM, published, cited | yes | L (random walks; no string tension) | K | yes |
+
+### 3.1 What the table shows
+
+**S1 (reading of the table; each cell has the mark of its row).** The row asks for inputs that both comparison
+classes lack. In the strict sense there are two: input 13, the account's data, and input 6 against a factor with a
+continuous symmetry. For all other inputs the product keeps what its SU(2) factor has. This is as it must be: the
+product device (Lemma PT) binds steps that read one factor. It does not bind inputs.
+
+**S2 (ARGUED from the table; this is the result of the section).** Sort the inputs that are theorems on the
+lattice at order-one coupling by the last three columns.
+
+- *Gauge kinematics* (1, 2, 3, 4, 5, 6, 9, 20, and 19 in its Z_2 part): the two-dimensional O(N) model lacks them
+  or has a poorer analogue. The frozen groups Q_8 and 2T share every one of them. In particular Fact T holds for
+  Q_8, because the twist eaters i sigma_1 and i sigma_2 are elements of Q_8.
+- *Geometry of a continuous non-abelian fibre* (10 for the fibre, 11, 7, 16): Q_8, 2T and U(1) lack them. The
+  two-dimensional O(N) model has an analogue of each.
+- *Both at once:* one input only, the O'Neill term of input 10 (the curvature that the gauge quotient adds to a
+  continuous non-abelian fibre). U(1) lacks it (the vertical commutator vanishes), Q_8 and 2T lack it, the
+  two-dimensional model has no gauge quotient, and a product with a U(1) factor has flat directions.
+
+So, at theorem grade and at order-one coupling, no input on this list separates Wilson SU(2) from the frozen
+groups and from the two-dimensional O(N) model at once, except the O'Neill term. Its only known consumer is a
+Bakry-Emery bound, which the Hessian of the action defeats above beta about 1/8 (rows 812, 957, 968; set-aside
+method 31 of `parts/gap.md` L63). The other inputs that separate SU(2) from both classes are perturbative
+(12, 13, 14, 15): they are statements at small g, and they are the first-passage data themselves.
+
+**S3 (reading).** This is the sentence of row 998 6b (`parts/gap.md` L41-43) seen from the side of the inputs:
+"the one selective fact that is provable today, asymptotic freedom at small coupling, has no engine that carries it
+across the band". The list adds no input to it. What it adds is the sorting: the exact inputs fall in two classes,
+and each class is shared with one comparison family in which the conclusion fails or is open.
+
+**Marks of Section 3.** The table: each row has the mark shown; "A", "L", "K" cells are DEF-level readings of the
+models, not proved lemmas, except where a lane row is cited. S2: ARGUED. The column "Q_8, 2T" for rows 8 and 19 was
+not checked. The list is "every input I could name and find", not a proof that no other input exists.

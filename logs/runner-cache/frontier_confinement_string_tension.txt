@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_confinement_string_tension.py
-runner_sha256: 6064d1c55601a7189d9c53e52e170164479ca186b388e85e4da80a460c0a3e14
+runner_sha256: 1a661ce9c032f5c864f43eac5350f184edf8f0695f0ea75cdac10ae3179f6415
+input_fingerprint_sha256: 6e1e76e238ce3166c724a6f5b9907da9b72c0b03d37ef256239c08c511acf072
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 38.44
+elapsed_sec: 43.70
 status: ok
 ----- stdout -----
 ========================================================================
@@ -11,22 +12,23 @@ Confinement and String Tension in the Cl(3) / Z³ Framework
 ========================================================================
 
 SUPPORT: beta=6 graph-first SU(3) context plus imported
-         Yang-Mills/lattice/EFT inputs gives bounded confinement
-         and string-tension consistency.
+         Yang-Mills/lattice/EFT inputs give conditional string-tension
+         estimates; a finite 4⁴ Monte Carlo is a diagnostic only.
+IMPORTED CONTEXT and SUPPLIED lines are printed, not counted.
 
 
 === Part 1: Beta=6 SU(3) support surface ===
 
   [PASS] g_bare² = 4π α_bare = 1  (g² = 1.000000)
   [PASS] β = 2N_c/g² = 6.0  (β = 6.0)
-  [PASS] N_c = 3 (from graph-first SU(3))  (graph-first commutant: gl(3) ⊕ gl(1), compact part su(3))
-  [PASS] Standard SU(3) YM confinement context is imported, not derived here  (used as bounded Yang-Mills/lattice background)
-  [PASS] β = 6.0 sits on the standard low-temperature pure-gauge support surface  (qualitative support only; not a continuum confinement proof)
+  SUPPLIED: N_c = 3 (from graph-first SU(3))  (graph-first commutant: gl(3) ⊕ gl(1), compact part su(3); used in β above)
+  IMPORTED CONTEXT: Standard SU(3) YM confinement is imported, not derived here  (used as bounded Yang-Mills/lattice background)
+  IMPORTED CONTEXT: β = 6.0 is on the standard low-temperature pure-gauge surface  (literature context; not a continuum confinement proof)
   [PASS] Framework plaquette input matches the standard β=6 reuse value  (<P>_framework = 0.5934, <P>_lattice = 0.5934)
 
 === Part 2: QCD coupling running and Λ_QCD ===
 
-  [PASS] Bounded α_s(M_Z) source value = 0.1181 (consumed as EFT input)  (α_s(M_Z) = 0.1181)
+  SUPPLIED: bounded α_s(M_Z) source value = 0.1181 (consumed as EFT input)
   [PASS] [BOUNDED] Λ_MS̄^(5) ≈ 210 MeV (from two-loop formula)  (Λ^(5) = 209.9 MeV (PDG: 210 ± 14 MeV))
   [PASS] [BOUNDED] α_s(m_b) ≈ 0.225 (run from M_Z with N_f = 5)  (α_s(m_b) = 0.2289 (PDG: 0.2268))
   [PASS] [BOUNDED] Λ_MS̄^(4) ≈ 292 MeV  (Λ^(4) = 311.4 MeV)
@@ -34,11 +36,11 @@ SUPPORT: beta=6 graph-first SU(3) context plus imported
   [PASS] [BOUNDED] Λ_MS̄^(3) in range 300–400 MeV (two-loop, no higher-order matching)  (Λ^(3) = 389.3 MeV (PDG: 332 ± 17 MeV; two-loop matching only))
   [PASS] [BOUNDED] α_s(1 GeV) > 0.4 (entering non-perturbative regime)  (α_s(1 GeV) ≈ 0.585 → perturbation theory breaks down)
 
-=== Part 3: String tension prediction ===
+=== Part 3: Conditional string-tension estimates (imported inputs) ===
 
-  [PASS] [BOUNDED] Method 1: √σ from Λ^(3) × (√σ/Λ)_lattice  (√σ = 1.33 × 389 MeV = 518 MeV (exp: 440 MeV, dev: +17.7%))
-  [PASS] [BOUNDED] Method 2: quenched √σ at β = 6.0 from Sommer scale  (√σ_quenched = 484 MeV (quenched value at beta=6))
-  [PASS] [BOUNDED] Method 2: physical √σ with quark screening correction  (√σ_phys ≈ 465 MeV (exp: 440 MeV, dev: +5.6%))
+  [PASS] [BOUNDED] Method 1: √σ from Λ^(3) × supplied (√σ/Λ)_lattice = 1.33  (√σ = 1.33 × 389 MeV = 518 MeV (exp: 440 MeV, dev: +17.7%))
+  [PASS] [BOUNDED] Method 2: quenched √σ at β = 6.0 from supplied Sommer-scale data  (√σ_quenched = 484 MeV (quenched value at beta=6))
+  [PASS] [BOUNDED] Method 2: √σ after the supplied 0.96 screening factor (not derived; see B2)  (√σ_phys ≈ 465 MeV (exp: 440 MeV, dev: +5.6%))
   [PASS] [BOUNDED] Sensitivity: Δ(√σ)/√σ ≈ 1.2% from Δα_s = 0.0002  (source α_s is 0.2% high vs comparator -> √σ shifts by ~+1.2%)
 
 === Part 4: Pure-gauge Monte Carlo at β = 6.0 ===
@@ -57,22 +59,30 @@ SUPPORT: beta=6 graph-first SU(3) context plus imported
   W(1,1) = 0.597349
   W(1,2) = 0.391292
   W(2,2) = 0.204548
-  [PASS] [BOUNDED] W(1,2) < W(1,1) (larger area → smaller Wilson loop)  (W(1,2)=0.3913 < W(1,1)=0.5973)
-  [PASS] [BOUNDED] W(2,2) < W(1,2) (area law: exponential area falloff)  (W(2,2)=0.2045 < W(1,2)=0.3913)
-  [PASS] [BOUNDED] Creutz ratio χ(2,2) > 0 (positive string tension)  (χ(2,2) = 0.2256 → σa² (includes short-distance effects))
+  [PASS] [BOUNDED] W(1,2) < W(1,1): ordering consistent with an area law (a perimeter law also satisfies it)  (W(1,2)=0.3913 < W(1,1)=0.5973)
+  [PASS] [BOUNDED] W(2,2) < W(1,2): ordering consistent with an area law (a perimeter law also satisfies it)  (W(2,2)=0.2045 < W(1,2)=0.3913)
+  χ(2,2) = 0.2256 ± 0.0061 (blocked jackknife, 10 blocks)
+  [PASS] [BOUNDED] Creutz ratio χ(2,2) > 3 errors: rules out a pure perimeter law for these loops  (χ(2,2) = 0.2256 ± 0.0061; short-distance terms also give χ > 0, so this is not an asymptotic string tension)
 
-=== Part 5: Combined confinement result ===
+=== Part 4b: Analytic controls for the Wilson-loop tests ===
 
-  [PASS] Graph-first SU(3) at g_bare = 1 -> beta=6 support surface  (structural context + declared normalization)
-  [PASS] Standard SU(3) YM confinement is bounded imported context  (not a framework-native proof in this note)
-  [PASS] α_s(M_Z) = 0.1181 consumed as a bounded transfer input  (source boundary remains with alpha_s row)
-  [PASS] [BOUNDED] √σ ≈ 440 MeV (determined by α_s through QCD dynamics)  (bounded: conditioned on standard low-energy EFT bridge)
-  [PASS] Framework supplies bounded confinement support, not retained closure  (beta=6 support + imported YM/lattice context)
+  [PASS] Control: a perimeter law W = exp(-c(R+T)) satisfies both ordering tests  (c = 0.5: W(1,1)=0.3679 > W(1,2)=0.2231 > W(2,2)=0.1353)
+  [PASS] Control: the perimeter law has χ(2,2) = 0, so the χ(2,2) > 0 test rejects it  (χ(2,2) = -2.22e-16; the ordering does not discriminate, the Creutz ratio does)
+  [PASS] Control: an area law W = exp(-σRT - c(R+T)) has χ(2,2) = σ  (σ = 0.2, χ(2,2) = 0.200000000000)
+  [PASS] Control: a short-distance toy W = exp(-c(R+T) + κ(R/T+T/R)), no area term, has χ(2,2) = κ > 0  (κ = 0.15, χ(2,2) = 0.150000000000; a positive small-loop χ alone does not establish a string tension)
 
-  --- Experimental predictions ---
-  [PASS] [BOUNDED] Linear Regge trajectories with slope α' = 1/(2πσ) ≈ 0.9 GeV⁻²  (α' = 0.82 GeV⁻² (exp: ≈ 0.9 GeV⁻²))
-  [PASS] [BOUNDED] Deconfining transition at T_c ≈ 270 MeV (from √σ and lattice ratio T_c/√σ)  (T_c/√σ ≈ 0.60 (lattice QCD) → T_c ≈ 264 MeV)
-  [PASS] Flux tube formation between static quarks  (Wilson area law ⇔ linear potential ⇔ chromoelectric flux tube)
+=== Part 5: Imported context (printed, not counted) ===
+
+  IMPORTED CONTEXT: Graph-first SU(3) at g_bare = 1 gives β = 6 (computed in Part 1)  (structural context + declared normalization)
+  IMPORTED CONTEXT: Standard SU(3) YM confinement is imported context  (not a framework-native proof in this note)
+  IMPORTED CONTEXT: α_s(M_Z) = 0.1181 is consumed as a bounded transfer input  (source boundary remains with alpha_s row)
+  IMPORTED CONTEXT: √σ near 440 MeV is the supplied phenomenological comparator  (the Part 3 estimates are conditioned on the standard low-energy EFT bridge)
+  IMPORTED CONTEXT: The note claims bounded support, not retained confinement closure  (beta=6 support + imported YM/lattice context)
+
+  --- Textbook consequences of the imported context (not shown by this runner) ---
+  IMPORTED CONTEXT: Regge slope α' = 1/(2πσ) at the 440 MeV comparator  (α' = 0.82 GeV⁻²; phenomenological value ≈ 0.9 GeV⁻²)
+  IMPORTED CONTEXT: Quenched deconfinement scale from the supplied ratio T_c/√σ ≈ 0.60  (T_c ≈ 264 MeV at √σ = 440 MeV)
+  IMPORTED CONTEXT: Area law ⇔ linear potential ⇔ chromoelectric flux tube  (textbook relation; this runner does not show an area law)
 
 === Part 6: Source-status firewall ===
 
@@ -82,12 +92,15 @@ SUPPORT: beta=6 graph-first SU(3) context plus imported
   [PASS] source note identifies imported YM/lattice/EFT inputs
 
 ========================================================================
-SUMMARY: PASS=34  FAIL=0
+SUMMARY: PASS=26  FAIL=0
 ========================================================================
 
-All checks passed. The branch provides bounded support for
-SU(3) confinement/string-tension consistency; it does not
-claim retained framework-native confinement closure.
+All counted checks passed: β = 6 arithmetic, conditional
+estimates on imported inputs, a finite 4⁴ Monte Carlo diagnostic
+and analytic Wilson-loop controls. The small-loop ordering and
+Creutz ratio do not establish an area law or a string tension;
+confinement stays imported context, and no retained
+framework-native confinement closure is claimed.
 
 ----- stderr -----
 

@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/historic_hierarchy_arithmetic_annotation_check_2026_11_14.py
+runner_sha256: e8e68cab343c9ee134bb51fee2d3adbe3420914877df7e48b0459221251d950f
+input_fingerprint_sha256: 5e5deb7a4e588884b9cf17645148e387b88a113f45b5d8e961f194e3d004ef86
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+HISTORIC HIERARCHY WRAPPERS: 2026-10-21 ARITHMETIC ANNOTATION CHECK
+==============================================================================
+Scope: the annotation's arithmetic for its printed model only. Not the
+historical claim below it, not the archived originals, not physics.
+pi (Machin, Decimal) = 3.141592653589793238462643383280
+  [PASS] pi from Machin's formula agrees with its first 30 published digits
+
+=== HONEST_REVIEW: docs/historic_intake/HISTORIC_HIERARCHY_HONEST_REVIEW_INTAKE_NOTE_2026-08-05.md ===
+
+  [PASS] HONEST_REVIEW: the annotation prints the model this runner evaluates (text binding)
+  [PASS] HONEST_REVIEW: the table has the three supplied (y_t, N_eff) rows  (rows [('0.439', '10.64'), ('0.439', '12'), ('0.9369', '10.64')])
+  [PASS] HONEST_REVIEW: v(y_t=0.439, N_eff=10.64) = 46.12277 GeV at the printed digits  (computed 4.612277043182E+1)
+  [PASS] HONEST_REVIEW: v(y_t=0.439, N_eff=12) = 3623.61063 GeV at the printed digits  (computed 3.623610629634E+3)
+  [PASS] HONEST_REVIEW: v(y_t=0.9369, N_eff=10.64) = 5.18774513e14 GeV at the printed digits  (computed 5.187745130454E+14)
+  [PASS] HONEST_REVIEW: ln(246/2.435e18) = -36.8311468945 at the printed digits  (computed -36.83114689449501)
+  [PASS] HONEST_REVIEW: N_eff for 246 GeV at y_t=0.439 = 11.12360220 at the printed digits  (computed 11.12360219756081)
+  [PASS] HONEST_REVIEW: Z_chi = sqrt(N_eff/12) = 0.96279118 at the printed digits  (computed 0.96279117663008)
+  [PASS] HONEST_REVIEW: the solved inputs reproduce 246 GeV in the printed model  (v = 246.000000 GeV)
+  [PASS] HONEST_REVIEW: literal ln(246e9/2.435e18) = -16.1078810575 at the printed digits  (computed -16.10788105754860)
+  [PASS] HONEST_REVIEW: control: the historical -22.31 is neither logarithm  (mixed-unit -16.1079, consistent-unit -36.8311)
+  [PASS] HONEST_REVIEW: control: N_eff > 12 (Z_chi > 1) is not required by the printed model  (consistent units give N_eff=11.1236, Z_chi=0.9628; N_eff > 12 appears only from -22.31 (18.36) or the mixed-unit log (25.43))
+  [PASS] HONEST_REVIEW: control: y_t=0.9369, N_eff=10.64 does not give 226 GeV  (v = 5.187745E+14 GeV, log10(v/226) = 12.361)
+  [PASS] HONEST_REVIEW: control: the same inputs do not give the historical 5*10^5 GeV  (log10(v/5e5) = 9.016)
+  [PASS] HONEST_REVIEW: control: every printed value moved by one last-digit unit is rejected  (7/7 perturbed values rejected)
+
+=== WHY_226: docs/historic_intake/HISTORIC_HIERARCHY_WHY_226_NOTE_INTAKE_NOTE_2026-08-05.md ===
+
+  [PASS] WHY_226: the annotation prints the model this runner evaluates (text binding)
+  [PASS] WHY_226: the table has the three supplied (y_t, N_eff) rows  (rows [('0.439', '10.64'), ('0.439', '12'), ('0.9369', '10.64')])
+  [PASS] WHY_226: v(y_t=0.439, N_eff=10.64) = 46.12277 GeV at the printed digits  (computed 4.612277043182E+1)
+  [PASS] WHY_226: v(y_t=0.439, N_eff=12) = 3623.61063 GeV at the printed digits  (computed 3.623610629634E+3)
+  [PASS] WHY_226: v(y_t=0.9369, N_eff=10.64) = 5.18774513e14 GeV at the printed digits  (computed 5.187745130454E+14)
+  [PASS] WHY_226: ln(246/2.435e18) = -36.8311468945 at the printed digits  (computed -36.83114689449501)
+  [PASS] WHY_226: N_eff for 246 GeV at y_t=0.439 = 11.12360220 at the printed digits  (computed 11.12360219756081)
+  [PASS] WHY_226: Z_chi = sqrt(N_eff/12) = 0.96279118 at the printed digits  (computed 0.96279117663008)
+  [PASS] WHY_226: the solved inputs reproduce 246 GeV in the printed model  (v = 246.000000 GeV)
+  [PASS] WHY_226: literal ln(246e9/2.435e18) = -16.1078810575 at the printed digits  (computed -16.10788105754860)
+  [PASS] WHY_226: control: the historical -22.31 is neither logarithm  (mixed-unit -16.1079, consistent-unit -36.8311)
+  [PASS] WHY_226: control: N_eff > 12 (Z_chi > 1) is not required by the printed model  (consistent units give N_eff=11.1236, Z_chi=0.9628; N_eff > 12 appears only from -22.31 (18.36) or the mixed-unit log (25.43))
+  [PASS] WHY_226: control: y_t=0.9369, N_eff=10.64 does not give 226 GeV  (v = 5.187745E+14 GeV, log10(v/226) = 12.361)
+  [PASS] WHY_226: 8.45 is the two-decimal rounding of 8 pi^2/(10.64*0.9369^2)  (exponent = 8.4539879900)
+  [PASS] WHY_226: exp(-8.45)*2.435e18 = 5.21e14 GeV at the printed digits, not 226  (computed 5.208475E+14)
+  [PASS] WHY_226: control: every printed value moved by one last-digit unit is rejected  (8/8 perturbed values rejected)
+
+==============================================================================
+SUMMARY: PASS=32 FAIL=0
+==============================================================================
+The 2026-10-21 annotation's printed numbers match the recomputation for the
+printed model. This says nothing about the historical claim or the physics.
+
+----- stderr -----
+

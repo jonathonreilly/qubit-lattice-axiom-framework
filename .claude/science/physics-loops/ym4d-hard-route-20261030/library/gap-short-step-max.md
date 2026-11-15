@@ -348,3 +348,38 @@ This is the 2D statement "each step lowers h by c min(h, 1)" (row 1009 L148-150)
 - (C2) identity of the second-order step: mean of f S_2 equals mean of x_p x_p' + (1/3) y_p . y_p' within 3 standard errors, with f = (y_p x y_p')_3, S_2 = X X' - beta (k-component of the plaquette (x; 1, 3)). FAIL means an algebra error in the proof of (ii).
 - (C3) the inequalities: E(1 - x^2) >= xbar/(2 beta); E[S_2^2] <= 218 beta^2; E|y_p x y_p'|^2 >= 3 (bracket)^2/(218 beta^2); E lambda_x >= (1/6) E|y_p x y_p'|^2. A measured violation beyond 3 standard errors is a FAIL of the lemma.
 - (G) guide only, no pass or fail: beta E lambda_x at the three couplings (the ARGUED size of order 1/beta).
+
+**Follow-up reading, written at about 2026-11-15T21:02Z (between the two runs; the run ended at 21:03Z by `date -u`) before the follow-up run (the first run is kept as it is, see the table below).** In the first run (C2) passed at the three couplings, with the largest deviation 2.3 standard errors at beta = 2.3. Follow-up: the same script at beta = 2.3 only, seed 777, 6000 measurements. Reading: PASS if fS2 - bracket is within 3 standard errors of 0; a deviation above 3 standard errors would mean a small systematic term missing in the proof of (ii).
+
+**Results (first run 34 s, follow-up 52 s; outputs in `/tmp/gss-out-w3/`; lock acquired 21:01Z and released 21:03Z).** Standard errors from 20 bins. "dev" is the deviation in standard errors.
+
+| beta | xbar | (C1) cyX + xbar | (C1) X2 - 6 beta xbar | (C2) fS2 - bracket | E(1 - x^2) against xbar/(2 beta) | E[S_2^2] against 218 beta^2 | E abs(y_p x y_p')^2 against its bound | E lambda_x against (1/6) E abs(y_p x y_p')^2 |
+|---|---|---|---|---|---|---|---|---|
+| 1.0 | 0.2435(4) | -0.0002(9), dev 0.2 | -0.004(4), dev 1.1 | 0.0016(12), dev 1.4 | 0.719 against 0.122 | 2.36 against 218 | 0.345 against 0.00005 | 1.812 against 0.058 |
+| 2.3 | 0.6091(8) | 0.0012(25), dev 0.5 | -0.032(26), dev 1.2 | 0.0111(48), dev 2.3 | 0.539 against 0.132 | 71.2 against 1153 | 0.195 against 0.00036 | 1.299 against 0.032 |
+| 4.0 | 0.8001(1) | -0.0017(33), dev 0.5 | 0.018(57), dev 0.3 | -0.0018(69), dev 0.3 | 0.335 against 0.100 | 369 against 3488 | 0.0747 against 0.00035 | 0.754 against 0.012 |
+| 2.3, follow-up | 0.6094(4) | 0.0019(8), dev 2.3 | -0.007(8), dev 0.9 | -0.0026(21), dev 1.3 | 0.539 against 0.132 | 70.8 against 1153 | 0.194 against 0.00036 | 1.298 against 0.032 |
+
+- (C1) PASS, (C2) PASS, (C3) PASS at all points, by the readings written before each run. The follow-up reading named (C2) only; its (C1) value is reported, 2.3 standard errors, inside the first reading's limit. The error of a difference is taken as if the two means were independent, which they are not; no conclusion rests on it.
+- The mean plaquettes 0.2435 and 0.609 agree with row 1011's control run (0.2436 and 0.6088, another script), so the sampler is sane.
+- (G) Guide: beta E lambda_x = 1.81, 2.99, 3.02 at beta = 1.0, 2.3, 4.0, and beta^2 E|y_p x y_p'|^2 = 0.35, 1.03, 1.19. This is the ARGUED size (lambda_x of order 1/beta, the cross product of order 1/beta^2). The proved bounds are far from sharp: the Cauchy-Schwarz step uses 3 to 4.5 percent of its right side.
+- What the run shows: no sign or count error in the two identities behind Lemma NAB at these points. It proves nothing. The proof is the text of 5.4.
+
+### 6.2 The tests, piece by piece (valid form: a test refutes a tool only if the hypothesis holds and the conclusion fails in the test model)
+
+Pieces. P1 = Lemma PAR and the blind half of (T-vor). P2 = Lemma CHAIN. P3 = Lemmas FLOW, PROJ, FR+, SPLIT. P4 = Lemma NAB, the bare form of (FL). O1 = (DEC), open. O2 = the series bound of 3.4 with spreading, open.
+
+| Test | P1 | P2 | P3 | P4 | O1, O2 (what a proof must use) |
+|---|---|---|---|---|---|
+| Lemma PT (product with a massless factor) | holds per central involution; a twist of the SU(2) factor says nothing on the other factor | K is block diagonal; Rbar^2 adds | the force N splits; identities hold per factor | holds per factor | a response in every Lie algebra direction; the consumer must read the whole state space |
+| Proposition NP (D contracts on J doublings with no seed) | not bound: no value of D is read | not bound | not bound | not bound | a consumer that reads more than finitely many values of D; (T-per) alone is bound |
+| Theorem D2 (no supremum over tilts; pinned sheets) | an identity, so not refuted; the class of containers must fix the aspect ratio, or thin containers hold 2D and 3D spin systems | in law, on cubes: not bound | identities | torus, in law: not bound | no supremum over interior pins; cubes or containers of fixed shape |
+| Lemma SHEET (no uniformity over coupling fields) | holds for every strength field, so it is blind to this | one homogeneous strength | identities | one homogeneous strength | homogeneous strengths |
+| Lemma SLAB | as D2 | not bound | not bound | holds also in the slab model: it is blind | O1 is false in the frozen-slice model (5.5): isotropy of the cell |
+| Compact U(1) | exact division (Lemma SPLIT): scale-invariant blind bound, zero gain | Gaussian composition: Rbar constant (ARGUED) | j is conserved; the cost is a curl form; zero gain | (ii) is empty (one axis) | the bracket; the non-abelian content NA |
+| Frozen Q_8, 2T | **holds verbatim**; so P1 alone gives no short step | not defined (no derivative) | not defined | not defined | the Lie algebra: a continuous path from 1 to -1 |
+| Five dimensions | holds verbatim | holds verbatim | holds verbatim | holds verbatim | **none of the proved pieces sees the dimension.** O1 and O2 must: in five dimensions the classical cost of a thick vortex and of a colour twist doubles per doubling |
+| Instanton cost (row 1013 6.3) | not reached: P1 deforms no field | not reached | binds a repair of route (ii) by smooth frames: a frame adapted to a pin of non-zero degree has defects (Remark HOPF of row 1011), and at order-one coupling such cells are not rare | not reached | a frame may not be assumed smooth on every cell of the band |
+
+Summary of the tests. Every piece proved in this row is blind: it holds in at least one model without a short step (P1 in Q_8, 2T and Z_2; P2, P3, P4 in five dimensions and in the frozen-slice model). So no piece proved here is a selective gain. The selective content is in O1 and O2, and both are open.
+- 2026-11-15T21:08Z (`date -u`). Step 6 done (Section 6). Step 7 next.

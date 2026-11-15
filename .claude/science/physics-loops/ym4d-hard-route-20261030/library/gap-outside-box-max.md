@@ -19,6 +19,7 @@ Provenance: Claude Fable 5.2, max effort, Mac mini worker 2, fresh session, pinn
 ## Log
 
 - 2026-11-15T15:55Z: file created. Steps follow below, in order.
+- 16:36Z steps 2 and 3 written; 16:47Z steps 4 and 5; 16:49Z step 6; 16:57Z guard run and step 7 (new file `library/gap-transfer-twisted.md`); step 8 after that. Times from `date -u`.
 
 ## Header (exercise skill, Output rules)
 
@@ -26,7 +27,7 @@ Provenance: Claude Fable 5.2, max effort, Mac mini worker 2, fresh session, pinn
 - **Nothing in this file is checked by another model.**
 - Skill used: `exercise` at main commit 8b11ae2bb9 (fetched to a scratch folder with `proof-search-governance.md`, `assumption-import-audit.md`, `RULES.md`, `procedures/research.md`, `procedures/check.md`, same commit). The framework refresher list is replaced by `GOAL.md` and `FINISH.md` of this target, as the skill allows for a standalone proof target.
 - Binding limits of the brief: no subagents, no commit, no other file edited, no computer-assisted step in any proof, scope = the frame (row 1003 has the inputs inside the frame, row 1005 the literature on frame changes).
-- What this run did not cover (kept true as the run goes): see the end of the file.
+- What this run did not cover: Section 8.9.
 
 ## Status block (kept current)
 
@@ -39,7 +40,7 @@ Provenance: Claude Fable 5.2, max effort, Mac mini worker 2, fresh session, pinn
 | 5 Rank | done | Section 5: no idea survives as a route; ranked items are four statements decidable by hand |
 | 6 Attempts, part 1 | done | Section 6: Lemma LYP (the crux (LY) of B9 is false for one plaquette, every beta > 0), Lemma GG (adjoint Higgs family ends at compact U(1) exactly), Lemma TW (engine only in clean directions); all PROVED by hand, unchecked |
 | 7 Attempts, part 2 | done | Section 7 and new file `library/gap-transfer-twisted.md`: (TM-tw) written as one lemma with proof (Theorem TW-T), PROVED given `gap-transfer.md` (1)-(4); guard run for Lemma LYP passed (6.4) |
-| 8 Close | not started | |
+| 8 Close | done | Section 8: report, work items, registry, what was not covered, RESULT |
 
 ## 1. The frame as it stands (step 1)
 
@@ -117,8 +118,8 @@ Proof. (i) and (ii) are the spectral theorem for the positive trace-class operat
 
 Reading: twisted, sheared, reflected and walled flat lattices are not new frames. They are the same operators T_B, read on sectors.
 
-**Proposition CB (carry-back is uniformity; PROVED here, elementary).** Let M_t, t in [0, 1], be models of the engine's class on the same lattices, with Z_t(n) continuous in t for every torus n. Then for each N the set {t : S_t(N; (2N)^3) < 1/5041} is open. So M_0 has a seed if and only if there are one N and a sequence t_k -> 0 with a seed of size N at every t_k.
-Proof. S_t(N; B) = Z_t(N, B)/lambda_0,t(B)^N - 1, and lambda_0,t(B) = lim over k of Z_t(k, B)^(1/k) is the top eigenvalue of T_t. Z_t(k, B) = Tr T_t^k for k = 1, 2 is continuous in t, and Tr T^2 controls the Hilbert-Schmidt norm, so T_t is continuous in Hilbert-Schmidt norm; the simple top eigenvalue of a norm-continuous family of compact self-adjoint operators is continuous. So S_t is continuous in t and the set is open. The second sentence is the first one read at t = 0. QED (The step "Z_t(1), Z_t(2) continuous gives T_t continuous in Hilbert-Schmidt norm" needs the kernels: for the families used below the kernel of T_t is jointly continuous in t and the fields on a compact space, which gives it. Mark: PROVED given that.)
+**Proposition CB (carry-back is uniformity; PROVED here, elementary).** Let M_t, t in [0, 1], be models of the engine's class on the same lattices, with Z_t(n) continuous in t for every torus n. Then for each N the function t -> S_t(N; (2N)^3) is continuous, so the set {t : S_t(N; (2N)^3) < 1/5041} is open. So: (i) if M_0 has a seed of size N, then M_t has a seed of size N for all small t; (ii) if there are one N, one q < 1/5041 and a sequence t_k -> 0 with S_(t_k)(N; (2N)^3) <= q, then M_0 has a seed of size N.
+Proof. Fix the box B and write Z_t(k) = Z_t(k, B) = Tr T_t^k. By Lemma A, k -> Z_t(k)^(1/k) is non-increasing with limit lambda_0,t, and lambda_0,t^k >= Z_t(2k)/Z_t(k). So lambda_0,t is the infimum over k of the continuous functions t -> Z_t(k)^(1/k), hence upper semicontinuous in t; and it is the supremum over k of the continuous functions t -> (Z_t(2k)/Z_t(k))^(1/k) (each is at most lambda_0,t, and they tend to it), hence lower semicontinuous. So t -> lambda_0,t is continuous, S_t(N; B) = Z_t(N)/lambda_0,t^N - 1 is continuous, and the set is open. (i) is openness at t = 0, and (ii) is continuity at t = 0. QED (Corrected in step 8: the first version of this proof inferred norm continuity of T_t from the continuity of two traces, which does not follow; the proof above uses only the hypothesis.)
 
 Reading: a larger theory with a parameter (a Higgs coupling, a source, a deformation) helps only if it proves seeds of **bounded size** all the way to the pure end. A gap at every t > 0 whose seed size grows without bound as t -> 0 gives nothing.
 
@@ -127,7 +128,7 @@ Reading: a larger theory with a parameter (a Higgs coupling, a source, a deforma
 ### 3.1 (a) Literally outside the box
 
 - **I1. Time boundaries: free, fixed, twisted, sheared, reflected.** Statement: a bound on the weighted thermal sum S_w(t; B) = sum over i >= 1 of (c_i/c_0)(lambda_i/lambda_0)^t, c_i = |<1, psi_i>|^2, of the slab with free ends. It sees centre-even states only (the vector 1 is invariant under every C_nu). Consumer: the even-sector statement (route RE), not (W). By Lemma FR it is the same operator. First reading: S0 (same crux on a sector).
-- **I2. The exterior of a block; the radial frame.** Statement: let K_r be the conditional-expectation operator from functions of the field outside the cube of side 2r to functions of the field inside the cube of side r, in the infinite-volume state. Its second singular value rho(r) tends to 0 as r grows. In a scale-invariant theory rho(r) is a constant, 2^(-Delta) with Delta the lowest scaling dimension (free scalar: 1/2; Maxwell field strength: 1/4; computed for Gaussian fields from the mean-value property). In a gapped theory rho(r) <= C r^3 exp(-m r). The Dirichlet-to-Neumann operator of the exterior is the Gaussian case of K_r. The radial picture identifies this with the 3-sphere frame I7 (the exterior of a ball is a half-cylinder over S^3 in the variable log r). Consumer: none on file; there is no reflection through a sphere on the lattice, so no engine. First reading: S0, and it loses A8.
+- **I2. The exterior of a block; the radial frame.** Statement: let K_r be the conditional-expectation operator from functions of the field outside the cube of side 2r to functions of the field inside the cube of side r, in the infinite-volume state. Its second singular value rho(r) tends to 0 as r grows. In a scale-invariant theory rho(r) is a constant, 2^(-Delta) with Delta the lowest scaling dimension (free scalar in four dimensions: 1/2, from the mean-value property, on linear functionals; a Maxwell field strength: 1/4 by the same scaling, not computed here; ARGUED). In a gapped theory rho(r) <= C r^3 exp(-m r). The Dirichlet-to-Neumann operator of the exterior is the Gaussian case of K_r. The radial picture identifies this with the 3-sphere frame I7 (the exterior of a ball is a half-cylinder over S^3 in the variable log r). Consumer: none on file; there is no reflection through a sphere on the lattice, so no engine. First reading: S0, and it loses A8.
 - **I3. A coupling profile: weak inside, strong outside.** Statement: for the cube C_n at coupling beta in a sea at coupling beta_out <= beta_sc, bounds uniform as beta_out rises to beta. At beta_out = 0 this is the free boundary. With the weight exp(beta (1/2) tr U_p) and positivity of the character coefficients, F_free is superadditive, so F_free(n)/n^4 <= f~ <= F_per(n)/n^4: both sides are finite-volume numbers. The distance between them is a surface term of order n^3, against the Casimir term of order 1 that the seed needs. Consumer: none. First reading: fails for size (the surface term hides the quantity), not for a test.
 - **I4. The logarithm that a box with a boundary carries.** Statement: for a cube with free walls, F(n) = f n^4 + s_3 n^3 + s_2 n^2 + s_1 n + s_0(n); a five-fold doubling difference isolates s_0(2n) - s_0(n), which tends to 0 in a gapped theory and to -kappa log 2 in a scale-invariant one (kappa from the trace anomaly and the corners). Consumer: none; it is a finite-size form of the counting monotones of row 1002 (H1 to H3). First reading: blind as a monotone, selective only as a limit; S0.
 
@@ -219,7 +220,7 @@ What is left to rank are statements that can be decided by hand and that close s
 
 | Rank | Item | What it changes | Cost | Status after this run |
 |---|---|---|---|---|
-| 1 | (TM-tw) as a lemma of its own: the transfer operator of a twisted box. It is the first lemma of the one frame change that is on the lane's path (the flux half reads twisted partition functions). It was asked for in row 731 (`gap-flux-exercise.md` L660, item 2: "Write `library/gap-transfer-twisted.md`") and in the ledger of row 838 (`gap-assume-opus.md` rows 58, L265, L486-490: "proposed in row 731, never queued. Cheap."). No file of that name exists at this pin; FINISH has no row for it. | Theorem R, the full and kappa seeds and the fusion consumer rest on it; today it lives in two check files | one port from `gap-transfer.md` | Section 7 |
+| 1 | (TM-tw) as a lemma of its own: the transfer operator of a twisted box. It is the first lemma of the one frame change that is on the lane's path (the flux half reads twisted partition functions). It was asked for in row 731 (`gap-flux-exercise.md` L660, item 2: "Write `library/gap-transfer-twisted.md`") and in the ledger of row 838 (`gap-assume-opus.md` rows 58, L265, L486-490: "proposed in row 731, never queued. Cheap."). No file of that name exists at this pin. FINISH names it once, in the result of row 838 ("write (TM-tw) as a lemma"); no row was queued for it. | Theorem R, the full and kappa seeds and the fusion consumer rest on it; today it lives in two check files | one port from `gap-transfer.md` | Section 7 |
 | 2 | Lemma LYP: the crux (LY) of B9 is false for one plaquette | closes a verdict that rested on "no theorem known" and on a recalled infinite-volume fact | one page | Section 6, PROVED |
 | 3 | Lemma GG: the adjoint Higgs end point | makes the "third test" exact at its end point | half a page | Section 6, PROVED |
 | 4 | Lemma TW: no twisted four-direction engine | a reason on record for "continuation in the fibre size has no engine" | a few lines | Section 6, PROVED |
@@ -227,7 +228,7 @@ What is left to rank are statements that can be decided by hand and that close s
 
 ## 6. Real attempts, part 1: three statements decided by hand (step 6)
 
-Rule 0a before each: `library/open-core.md` has no entry for any of them; FINISH has no row for a Lee-Yang statement, for the adjoint end point or for a twisted engine (searched by "Lee-Yang", "(LY)", "B9", "adjoint Higgs", "Georgi", "TM-tw"). All three are off the direct path of the wall: they close or sharpen verdicts on frame changes.
+Rule 0a: `library/open-core.md` has no entry for any of them (checked before the attempts); in FINISH (searched with `grep -n -F` after the lemmas were written, an order I should have reversed): "Lee-Yang" occurs in the briefs of three literature rows (lines 766, 767, 790) and in the result of row 737 (the means note, (M6)); "(LY)", "adjoint Higgs" and "twisted engine" have no hit; "TM-tw" occurs once, in the result of row 838. No row attacks any of the three statements. All three are off the direct path of the wall: they close or sharpen verdicts on frame changes.
 
 Notation. I_n is the modified Bessel function, J_n the Bessel function, n an integer. Facts used (classical; each is one line from the series or the integral representation): I_n(iy) = i^n J_n(y) for real y; |I_n(kappa)| <= exp(|Re kappa|) (from I_n(kappa) = (1/2 pi) times the integral over theta of exp(kappa cos theta) cos(n theta)); I_(n-1) - I_(n+1) = (2n/x) I_n; J_n' = (n/y) J_n - J_(n+1); two solutions of the Bessel equation that vanish with their derivative at a point y != 0 vanish identically.
 
@@ -317,7 +318,7 @@ What the run can and cannot establish: it found no slip in the formulas and it s
 
 ## 7. Real attempts, part 2: the first lemma of the twisted frame, written (step 7)
 
-**What was done.** The item ranked first in Section 5, (TM-tw), is written as a lemma of its own with its proof: `library/gap-transfer-twisted.md` (new file, this run). Rule 0a: `library/open-core.md` has no entry; FINISH has no row for it (`grep -c "TM-tw\|transfer-twisted" FINISH.md` = 0); the file did not exist at this pin. The work item is item 2 of `gap-flux-exercise.md` L660 (row 731), repeated in `gap-assume-opus.md` L265 and L486-490 (row 838).
+**What was done.** The item ranked first in Section 5, (TM-tw), is written as a lemma of its own with its proof: `library/gap-transfer-twisted.md` (new file, this run). Rule 0a: `library/open-core.md` has no entry; FINISH names (TM-tw) once (`grep -c -F "TM-tw" FINISH.md` = 1), in the result of row 838, as a proposed item; no row was queued for it and "transfer-twisted" has no hit; the file did not exist at this pin. The work item is item 2 of `gap-flux-exercise.md` L660 (row 731), repeated in `gap-assume-opus.md` L265 and L486-490 (row 838).
 
 **Statement (Theorem TW-T there; PROVED by hand, given Statements (1) to (4) and Lemmas A0 to A3 of `gap-transfer.md`, which were checked in row 671; this file is checked by no one).** For every box with sides at least 3, every magnetic twist m and every time extent T >= 2: (T1) the gauge-projected operator T_(P,m) is an integral operator with a continuous, symmetric kernel between exp(-12 beta |Lambda|) and 1; (T2) it is positive, Hilbert-Schmidt and trace class; (T3) its top eigenvalue is simple with a continuous, positive, gauge-invariant eigenvector; (T4) the centre flips are commuting unitary involutions that commute with it, and the ground state is even; (T5) Tr(T_(P,m)^T C^e) is the twisted partition function Z^(e,m); (T6) the sector sums are non-negative and satisfy (F1); (T7) the partition function does not depend on the positions of the stacks (Lemma P) and is carried along by permutations of the axes, so every direction can be the time; (T8) Z_(chi,m) <= Z_(0,m), 0 < Z^k <= Z^0, lambda_m <= lambda_0.
 
@@ -326,3 +327,85 @@ What the run can and cannot establish: it found no slip in the formulas and it s
 **Standing.** Nothing in it is new mathematics: the content was in `gap-seed-check.md` (Lemma 1.1, Remark F3) and `gap-flux-exercise.md` (3.0, C2), and row 732 checked the statement. The new thing is the single written proof. It is on the lane's path only through the flux half (Theorem R, the seeds, the fusion consumer); it does not move the wall. It needs one check by another model; the points to test first are listed in its Section 5.
 
 **Not done.** Statement (5) of `gap-transfer.md` for the twisted box (a positive gap of each finite twisted box) is not ported; no consumer on file reads it.
+
+## 8. Report (step 8; the skill's step 9)
+
+### 8.1 The wall, in plain words
+
+We want to show that a certain lattice model of the strong force has a lowest energy step that does not shrink to nothing as the box grows. A machine on file turns one good box into all larger boxes. The good box must be large against the natural length of the model, and there nothing is small. The row asked: does the difficulty come from the kind of box? Would another shape, another boundary, a curved space, a larger theory, another kind of time, or complex numbers put the hard step in a place where something is small? (Analogy: we asked whether the lock is easier to pick from another side of the door.)
+
+### 8.2 What the exercise found
+
+1. It is the same lock from every side that I tried (ARGUED; Sections 3.0, 4, 5). In each frame there is a pure number that stays constant in a massless model and runs off in a gapped one. Asymptotic freedom fixes that number only near its free-field value. A change of frame changes the number, like a change of units; it does not supply the step that makes the number run through the middle range.
+2. The lane had already tried the five families that the row names, and had reached the same verdicts (Section 4.2 lists file and line for each; credit rows 669, 697, 731, 842, 858, 876, 939 and the constraint table). The fresh pass found them again, independently, and adds two frames that were not on file (the outside of a block read as a radial evolution, which is the 3-sphere frame; Section 4.3). They fail for a stated reason.
+3. Four statements were decided by hand (all PROVED here, none checked by another model):
+   - Lemma LYP (6.1): the Lee-Yang property that route B9 hoped for is false already for one plaquette, at every coupling, for Z_2, U(1) and SU(2). A guard run found zeros where the lemma says (6.4).
+   - Lemma GG (6.2): the model with an adjoint Higgs field ends, at infinite hopping, exactly at compact U(1) with the same weight and coupling.
+   - Lemma TW (6.3): the engine runs only in directions that no twisted plane contains; so a twisted family has no engine for the size of its twisted plane.
+   - Theorem TW-T (new file `library/gap-transfer-twisted.md`): the transfer operator of a twisted box, the input (TM-tw), written as one lemma with its proof. Rows 731 and 838 had asked for it.
+4. None of this moves the wall. The run produced mainly a map that the lane already had, plus small closures.
+
+### 8.3 Filters corrected
+
+None. No discard test and no verdict on a frame idea was found wrong or too strong. Re-judged (valid as reported, not all re-derived): B10 "(AC) is the wall"; B9 "dies" (now with a proof at one plaquette for its half-plane form); idea 42 "Dropped"; G15 "strong coupling. Not order one"; A4 "changes a constant"; C19. Two corrections of my own text were made in place and are marked there (the power of g in the twist ratio; the proof of Proposition CB). One possible slip in earlier work, not load-bearing and not checked: idea 8 of row 858 writes the twist free energy as "about 3 log beta"; my count gives (3/2) log beta, which is the count behind the lane's own "765 log(1/g)".
+
+### 8.4 Routes worth doing
+
+None for the wall. I do not propose a proof row on any frame change.
+
+### 8.5 What not to do next
+
+- Another search for a frame (space, boundary, curvature, thin direction, larger theory, other time, complex parameter). Two independent passes (the lane's rows and this one) end at the same statement. Reopen only on a mechanism that makes one step of some frame's flow selective.
+- A Lee-Yang route in a link field. Lemma LYP closes its first step, and (M6) its infinite-volume form.
+- An existence proof on a sphere or on a hyperbolic lattice for the sake of the gap. The crux stays, and the engine is lost.
+- A continuity argument in a compact size that does not name its four-dimensional input. The dimension test of `gap-crux-fp.md` (five dimensions, GUIDE) binds it: the same argument would give a gap that is believed absent there.
+
+### 8.6 The exact price
+
+Not sharpened. In the frame-independent form (ARGUED): for some frame with an engine, the frame's number must leave every bounded set between first passage and the engine's threshold; in every frame the first-passage value tends to the free massless value as g goes to 0, and the threshold of a class-wide engine is at or above the free value. On record the price stays as `parts/gap.md` has it: (W) iff (BDD-Delta) and (Z-UNB); (W) from (CAS) with theta < 1 on a bounded range.
+
+### 8.7 Work items
+
+**W1 (first item: the check of this run's statements, by a model that did not write them; one fresh session; no new attack).** Read `library/gap-outside-box-max.md` Sections 3.0, 6.1, 6.2, 6.3 and `library/gap-transfer-twisted.md` in full, with `library/gap-transfer.md` Sections 1 to 4 and 9.3 open. Verdict per statement (HOLDS, HOLDS AFTER CORRECTION, FAILS):
+- (i) Lemma LYP: the three formulas (recompute the Z_2 sum by hand; the SU(2) coefficient a_j(x) = 2 (2j+1) I_(2j+1)(x)/x; the Schur step); part (b) (the fourth power on the imaginary axis; J_1 and J_2 have no common zero); part (c) (the bound e^(beta + 4 |Re kappa|), Borel-Caratheodory, evenness). Is the sentence "the crux (LY) of B9 is false for one plaquette" a fair reading of `gap-skeleton-max.md` L177-178?
+- (ii) Lemma GG: step 1 (the unitary gauge for a gauge-invariant integrand), step 2 (the limit measure is Haar on the stabilizer), the corollary's use of Lemma A. Is the reading under the lemma right that a twist is no longer free for kappa > 0?
+- (iii) Lemma TW: is "the engine needs a pair of clean directions" a correct reading of Theorem S and of `gap-constraints-max.md` row 1 and Section 7 (Theorem 2O)?
+- (iv) Proposition CB: the semicontinuity argument.
+- (v) Theorem TW-T: the five points of its Section 5.
+Stop rule: at the first statement that FAILS, give the failing step and go on to the next statement; do not repair. Output: `library/gap-outside-box-check.md`, one RESULT line.
+
+**W2 (optional, small; only if the lead wants the count on record).** Decide by hand the power of beta in the twist ratio of the symmetric torus at weak coupling at fixed size: -log(Z^k/Z^0) = (3/2) log beta + O(log log beta) for a single-plane twist (this run, Section 3.0) against "about 3 log beta" (idea 8 of row 858, `gap-brainstorm-max.md` L284). Read `gap-phys-seed.md` for the count behind "765 log(1/g)". Output: three lines in the check file of W1. It bears on no proof.
+
+**Not proposed, with reasons.**
+- A row on the exterior or sphere frame: no consumer, no engine, cost of an existence proof (Section 4.2, I2, I7).
+- A row proving the Coulomb phase of the adjoint Higgs model at finite hopping: it would upgrade Lemma GG from an end point to a line of tests, but the test table already has compact U(1) at theorem grade, and the proof is of the size of the Guth and Froehlich-Spencer theorems.
+- Statement (5) of `gap-transfer.md` for twisted boxes: no consumer reads it.
+- A second literature pass: row 1005 runs it.
+
+### 8.8 Appendix
+
+**Approach registry for the frame families (proof-search governance).**
+
+| Family | Object | Mechanism | Terminal obligation | Strength against the target | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| FA flat boundaries (I1, I9; twists as flips) | the same operators T_B on sectors | Lemma FR | the seed on a sector of the same box | weaker (one sector) | blocked-local | rows 898 to 910; Lemma FR | an engine for one sector ((EV-STEP), route RE) |
+| FB a thin twisted or centre-kept direction (I5, I6) | fibre size l | semiclassics at small l | l m(l) unbounded: (AC), (MON') | unknown or comparable | blocked-equivalent | B10; rows 842, 939; Lemma TW | a monotone quantity in l (the engine cannot be it, Lemma TW) |
+| FC curved space, exterior (I2, I7, I8) | radius | none on a lattice | R m(R) unbounded | comparable | retired | this run; idea 42 | a lattice with a reflection through spheres (none known) |
+| FD a larger theory (I10 to I13) | a parameter t with the pure theory at t = 0 | Proposition CB | seeds of bounded size as t -> 0 | target-equivalent | blocked-equivalent | C19; Lemma GG; (M6) | control uniform up to the pure end |
+| FE another time (I14 to I16) | gap of a generator | curvature of the group at strong coupling | a uniform Poincare inequality | stronger | blocked-equivalent (it is RF) | rows 786, 812 to 829 | as RF in `parts/gap.md` |
+| FF a complex parameter (I17, I18) | a zero-free region | Lee-Yang, dominance | a zero-free region uniform in the box | stronger | retired (I17), blocked-equivalent (I18) | Lemma LYP; (M6); C4 | none known |
+
+**Assumptions most likely to be wrong:** A8 in its strong form "no other frame can have an engine" (I only showed it for twisted flat frames and argued it for the others). **Most expensive if wrong:** A7 (that no frame tells massless from gapped by a number fixed at first passage); a counterexample would be a route. **Literature proofs worth translating:** none found for the wall. For the record of tests: Guth, and Froehlich and Spencer, for the U(1) Coulomb phase (already the lane's test); Lieb and Sokal, and Kozitsky 2026 (on file, `prior/gap-crux-lit-2.md` L199-203) for Lee-Yang theorems of vector ferromagnets, which Lemma LYP shows do not extend to a plaquette term.
+
+**Grep hit list of step 4 (files in `library/` and `parts/` that match, at this pin):** Lee-Yang 12; Dirichlet-to-Neumann 1 (unrelated); Unsal or adiabatic continuity 12; Tanizaki or 't Hooft flux 14; hyperbolic space 5; sheared or helical tori 15 (A4 of `gap-constraints-max.md` is the relevant one); Fradkin-Shenker or Higgs 37; Georgi-Glashow or adjoint Higgs 15; supersymmetry 8; large N 71; Durhuus 21; Kogut-Susskind 13; Bravyi-Hastings-Michalakis 11; gradient or heat flow 19; Langevin or stochastic quantisation 91; Bakry-Emery or Ricci 85; Knabe 17; maximal correlation 14; radial quantisation or scaling dimension 0; Klein bottle 16 per `gap-constraints-max.md` L135; (TM-tw) in 6 files, as a lemma in none.
+
+### 8.9 What this run did not cover
+
+- No primary paper was read. Every literature statement here is recalled and marked so; row 1005 does the reading. The outputs of rows 1003 and 1005 were not read: at this pin row 1003's file holds its plan only and row 1005's file does not exist. An overlap with their later text is possible.
+- The lane's files were read at the cited lines, found by grep, not in full: `gap-brainstorm-max.md` (L42-162 in part, L272-346, L404-438, L482-498, L614-688 in part), `gap-skeleton-max.md` (L166-200 and the Lee-Yang lines), `gap-means-max.md` (L40-54, L109-112, L150), `gap-constraints-max.md` (L95-108 and the hits for shear and Klein), `gap-flux-exercise.md` (L109-135, L218, L660), `gap-seed-check.md` (L30-40, L177), `gap-assume-opus.md` (the (TM-tw) lines), `gap-crux-fp.md` (hits for five dimensions and Durhuus). `gap-crux-fp-check.md` L30-38, named as a source of (TM-tw), was not read. `gap-transfer.md` was read in full for Sections 0 to 4 and 9, not for 5 to 8.
+- The skill's steps were followed in the row's order (frame first), not in full: no blind check of the plain version (no fresh agent allowed); the inventory with marks is Section 1 and the tables of Sections 2 to 4, not a separate table; the audit of the discard tests (skill step 6) was done only for the verdicts on frame ideas (8.3), because row 1003 audits the filters of the crux.
+- The claim "frames are schemes" and the free-limit remark are readings with examples. No theorem covers all frames.
+- Corollary GG1 rests on (TM) for a model with a site field, which is ARGUED here and not written.
+- No statement of this file or of `gap-transfer-twisted.md` is checked by another model.
+
+RESULT: Row 1004 (frame changes for the gap; Claude Fable 5.2 max; checked by no one). No frame change found here moves the wall: of eighteen ideas in the five seed families, sixteen are already on file, twelve in whole and four in part, with the same verdict (rows 669, 697, 731, 842, 858, 876, 939 and `gap-constraints-max.md`; found again), two are new to the lane (the exterior of a block read as a radial or 3-sphere frame) and FAIL for lack of an engine; every family is blocked-equivalent or retired, with one reopen condition (a mechanism that makes one step of a frame's flow selective). ARGUED: a frame is a scheme, and in every frame the first-passage value is a small perturbation of the free massless value, so no class-wide engine fires at first passage. PROVED by hand, unchecked: Lemma LYP (the Lee-Yang crux (LY) of route B9 is false for one plaquette at every beta > 0, for Z_2, U(1) and SU(2); a guard run agrees); Lemma GG (the adjoint Higgs family ends exactly at compact U(1) with the same weight and coupling); Lemma TW (the engine runs only in directions outside every twisted plane); Proposition CB (carry-back needs seeds of bounded size; on file as C19); and Theorem TW-T in the new file `library/gap-transfer-twisted.md` ((TM-tw) as one lemma with proof, asked for in rows 731 and 838; its content was already in two check files). Open: (W), (CAS) and every form of the wall, unchanged; the check of the five statements (work item W1).

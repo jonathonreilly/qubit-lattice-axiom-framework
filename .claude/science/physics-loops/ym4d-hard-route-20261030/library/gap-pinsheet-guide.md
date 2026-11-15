@@ -1,0 +1,56 @@
+lead: anthropic/claude-opus-5-5/high mac-mini-worker
+lease_until: 2026-11-15T12:41Z
+
+# gap-pinsheet-guide (FINISH row 980): GUIDE runs P1 and P3 of row 977
+
+Pinned commit 7362c467a, branch claude/ym4d-hard-route. Status: in progress.
+A GUIDE run refutes or guides; it never proves. Nothing here enters the chain.
+
+## Plan (at most eight steps)
+
+1. Read row 977 (library/gap-tiltproof-max.md) Sections 6.4, 9.2 and the P1/P3 rows; copy the criteria C1-C3 verbatim here before any run.
+2. Read FINISH efficiency rules, numeric-lock usage; check memory_pressure.
+3. Write the simulator (SU(2) Wilson heat bath + overrelaxation with frozen links) in library/guide/lane980/, test it on a small lattice against known plaquette at beta 2.3.
+4. Run P1 (sides 8, 12, 16, 24; T >= 2S) under the numeric lock; record raw data.
+5. Run P3 (sides 8, 12, 16) for q_0 and R^0_S under the lock.
+6. Evaluate C1-C3 for P1 and P3, per criterion.
+7. P2 (compact U(1)) only if time is left.
+8. Summary and RESULT line.
+
+## Step 1. Criteria, copied before any run (READ; gap-tiltproof-max.md 6.4 lines 290-296 and 9.2 lines 413-419; gap-tiesearch-opus.md lines 55-60)
+
+Source: `library/gap-tiltproof-max.md` (row 977, Claude Fable 5.2 max, checked by no one), at commit 7362c467a. Copied verbatim:
+
+> Row P1 `gap-pinsheet-guide`: SU(2) Wilson, beta 2.3, lattices S^3 x T with S = 8, 12, 16, 24 and T >= 2S, two adjacent time slices with
+> all spatial links of directions 2, 3 frozen at 1 and the time-like links between them frozen at 1 (this is J_(beta,phi^infinity)).
+> Observables per plane k and slice: M = sum over y of P_k(y); R_S := E|M|^2/A (equals 4 G^e-hat(0)); tau; second-moment correlation length.
+> C1 (test of Theorem D2): R_8 >= 21.8, R_12 >= 32.8, R_16 >= 37.9. If any is violated by more than 3 standard errors, D2 is
+> wrong and this row's result is withdrawn. C2 (growth): "sheet longer than the box" if R_24 >= 0.25 x 576 = 144. C3: report tau; if tau >= 0.8, 6.2(b) applies.
+
+> Row P3 `gap-pinsheet-quot`: the lattice of row P1 but with ALL spatial links
+> of the two slices frozen at 1 except the direction-1 links of one plane. Measure q_0 (one-link second moment of (1/2) tr P), and
+> R^0_S := E[(sum over y of (1/2) tr P(y))^2]/A on sides 8, 12, 16. C1 (test of 9.1(d)): R^0_S >= A (q_0 - G_S/beta) with the measured q_0, within 3
+> standard errors; else 9.1 is wrong and is withdrawn. C2: "QUOT-CAP applies" if q_0 - 2 errors >= 0.22 on sides 8 to 16.
+> C3 (growth, rule of row 973 Section 2): REFUTED (GUIDE) for a box-uniform (TILT-COV-quot) at beta 2.3 if g - 2 sigma_g > 1.25 on 8 -> 16
+> with no decreasing step. Expected by the sigma-model reading: R^0 about m^2 A/4 with growth factor near (L + 2)^2/L^2 per step.
+
+Row 973's rule (gap-tiesearch-opus.md 55-60), the reference for P3 C3: g := (lambda(16)/lambda(8))^(1/4), error propagated linearly from
+the two block errors; REFUTED if g - 2 sigma_g > 1.25 and no single step shows a decrease by more than 2 standard errors.
+
+**Readings fixed now, before any run (mine; where the copied text leaves a choice).**
+- Notation. P_k(y) is the slice-0 direction-1 link from (k, y) to (k+1, y), y = (y_2, y_3) in the S x S plane, A = S^2; P'_k(y) the slice-1 link.
+  Unit quaternions are 4-vectors, <a, b> = (1/2) tr(a b^dagger).
+- Lattice. Periodic S^3 x T, T = 2S, Wilson action beta sum_p (1 - (1/2) tr U_p), beta = 2.3 on every plaquette (b = beta). Frozen at 1 in P1:
+  the S^3 time-like links from slice 0 to slice 1, and the direction-2 and direction-3 links of slices 0 and 1. All other links are Haar
+  variables (row 977, 5.1: the time-like links outside the layer 0-1 may be Haar; finite T approximates the T -> infinity law).
+- P3 frozen set: the time-like links of layer 0-1 and every spatial link of slices 0 and 1 except the direction-1 links of plane k = 0 in
+  both slices (the tilt <phi, x/s + w/s'> pins x and w on the same links).
+- P1 estimators. R_S is averaged over the S planes and the 2 slices of each configuration (equivalent by translation in direction 1 and by
+  the time reflection through the layer). tau := E<P_k(y), P'_k(y)>, averaged over all k, y. Second-moment length
+  xi := (G(0)/G(p_1) - 1)^(1/2) / (2 sin(pi/S)), G(p) := E|sum_y e^(i p.y) P_k(y)|^2 / A, p_1 = (2 pi/S, 0) and (0, 2 pi/S) averaged.
+- P3 estimators. q_0 := E[((1/2) tr P)^2] over the S^2 free links of slice 0 and the S^2 of slice 1; R^0_S per slice, averaged over the 2 slices.
+  P3 C3 with sides 8, 12, 16 only: g := (R^0_16/R^0_8)^(1/4); "no decreasing step" checked on the steps 8 -> 12 and 12 -> 16 (2 standard errors).
+- Errors. Binned (jackknife-free) block means: 16 blocks after thermalisation; the error is the block standard error, with the integrated
+  autocorrelation of the per-sweep series reported as a check. If tau_int exceeds a twentieth of the block length, the side is marked UNDER-SAMPLED.
+- Lattice sums G_S and thresholds lam_* are recomputed in the script (floating, GUIDE) and compared with row 977's values.
+

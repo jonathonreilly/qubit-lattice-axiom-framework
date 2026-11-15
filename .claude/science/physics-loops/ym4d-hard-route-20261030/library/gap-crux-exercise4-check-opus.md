@@ -36,6 +36,7 @@ scale, so W1's scale is used, and the FINISH reading is given once in the verdic
 
 - 2026-11-15 16:42:51Z: file created (step 0).
 - Steps 1-3 done (plan fixed; statement (i) tests and verdict written).
+- Step 4 done 16:53Z: statement (ii), with the literature finding (two posted proofs of the 2D O(N >= 3) gap).
 
 ## 1. Statement (i): Lemma NP0, Proposition NP, Corollary NP1, Section 6.1 (row 1003 L342-438, L579-594)
 
@@ -136,7 +137,7 @@ Read: row 1003 L82-194 in full; the exercise skill at main 8b11ae2bb9 (`docs/ai_
 703 lines, fetched by raw URL into `/tmp/row1006-check/SKILL.md`), L437-490 (step 6c) and L354 (the discard reason
 "it also holds for model X"); `gap-crux-restate.md` L205 (Corollary S2).
 
-### 2.1 Test first: does any theorem make T false for the 2D O(N) model, N >= 3, at some beta? (in progress)
+### 2.1 Test first: does any theorem make T false for the 2D O(N) model, N >= 3, at some beta?
 
 Method: the lane's notes (`gap-crux-lit-cross.md` L79 points to the Patrascioiu-Seiler dissent; nothing proved), then
 three arXiv API queries (`export.arxiv.org/api/query`, results in `/tmp/row1006-check/arx1.xml` ... `arx5.xml`).
@@ -150,8 +151,14 @@ isomorphism, random signs on clusters; "exponential decay for every real-valued 
 necessarily rely on the rotation symmetry". Two companion preprints confirm that the claim is current: Y. R. Pei,
 arXiv:2611.01532 (v2, 2026-11) "Polyakov predicted ... and proofs of this have recently been posted" (it uses "the
 annulus crossing bound of Ding, Huang and Yang"; it mentions "another isotropic proof"); C. Garban, N. de Montgolfier,
-arXiv:2610.16824 (2026-10-12), anisotropic perturbations, BKT phase for lambda < 1. Marks: the three are read at
-abstract level only; DHY is unrefereed and 12 days old; nobody in the lane has read it. Its statement is about
+arXiv:2610.16824 (2026-10-12), anisotropic perturbations, BKT phase for lambda < 1. **And a second, independent proof:**
+DHY Remark 1.3 (p. 2), Remark 1.5 (p. 3) and their Statement (p. 6): "On Oct 6, 2026, OpenAI released a proof of
+(1.4)"; it "relies crucially on the non-commutativity of rotations on S^2 and on a ... constructed family of spin waves
+on S^2"; "the two approaches are drastically different". DHY give no bibliographic entry for it; I did not locate or read
+it. DHY Theorem 1.1 (p. 2, read): fix N >= 3; for every beta > 0 there is c_beta > 0 with <sigma_o> <= c_beta^(-1)
+exp(-c_beta L) on B_L under constant boundary conditions, and, with free boundary conditions,
+<sigma_u sigma_v>_(B_L, beta) <= c_beta^(-1) exp(-c_beta |u - v|) for u, v in B_(L/2), uniformly in L. Marks: the
+preprints are read at abstract level (Pei, Garban-de Montgolfier) and at pages 1-6 (DHY); DHY is unrefereed and 12 days old; nobody in the lane has read it. Its statement is about
 infinite-volume (or free-boundary, uniform in finite subgraphs) spin correlations, not about the lane's T (the seed
 S(n; 2n) <= 1/20 on periodic tori, Corollary S2); a bridge from the one to the other is not written in the lane (row
 1003 2.2 (e) already notes the same missing bridge for O(2)).
@@ -162,3 +169,54 @@ out of date at this pin's date (2026-11-15): a proof is claimed and posted. Row 
 about the literature, RECALLED; the belief is now false as a description of the literature. The verdict "not a test"
 (2.2 (a)) only gets stronger (T(M') is not known false; it is claimed true). The "price" readings (b)-(d), which rest
 on "T(M') is open", need correction.
+
+Lane search for these sources (rule 0a; `grep -rl` over this folder for 2611.04908, 2611.01532, 2610.16824, "Ding,
+Huang", "Polyakov's prediction/conjecture", "October 6"): no match outside this file. The nearest lane record is
+Ursachi, Research Square rs-11440706/v1 (2026-10-21; a finite seed criterion for the 2D O(3) model on small tori with
+"the one inequality that remains"; `prior/gap-crux-lit-2.md` L309, `prior/gap-seed-lit.md` L20): conditional, not a
+proof. So the two proofs are new to the lane. **Pointer for the lead, not an attack (W1: no new attack):** the OpenAI
+proof is described by DHY as resting on the non-commutativity of rotations on S^2; that is a gap mechanism "from the
+group" in an asymptotically free model, which is the kind of input `parts/gap.md` L147 says RA would reopen on. Whether
+any of it transfers to a gauge field or to four dimensions is unknown; nobody has read it.
+
+### 2.2 Verdicts on Section 2.2 (a)-(d)
+
+- **(a) L115-118, "not a test in the valid form". HOLDS** (a fortiori). Both parts of step 6c need T(M') false
+  (SKILL.md L448-457); T(M') is not known false, and is now claimed true at every beta in two posted proofs. One loose
+  clause, not a failing line for (a): L118 "The skill's two exclusion clauses quoted above both apply". "H(M') is not
+  known" applies. "The proof also runs for M', and T(M') is true there" applies only as far as T(M') is true: at the
+  pin date that rests on two unrefereed proofs of the infinite-volume form, and the lane's periodic form needs a bridge.
+  (a)'s three-line argument does not use the clause.
+- **(b) L120-139, "a price". HOLDS AFTER CORRECTION. First failing line: L125, "That is the open problem as stated"**
+  (and its premise L102-103, "it is OPEN ... A gap at fixed N >= 3 and every beta is unproved"). At the pin date the gap
+  of M' at every beta, in the infinite-volume form, has two posted proofs (OpenAI, 2026-10-06; Ding-Huang-Yang,
+  arXiv:2611.04908, 2026-11-03), neither refereed, neither read by the lane. **One-line repair:** "That is Polyakov's
+  conjecture: claimed proved for every N >= 3 in two posted, unrefereed proofs (OpenAI 2026-10-06; arXiv:2611.04908); in
+  the lane's periodic form (the seed of Corollary S2) it needs a bridge that is not written." With the repair, (b)'s
+  conclusion that the filter is a cost statement stands. The size of the cost changes a lot. It is no longer "at least
+  as hard as an open problem" (L138-139). It is "a further proof, by the transfer-operator route, of a theorem claimed
+  twice". The trajectory form (L127-136) is unchanged: the 2D ultraviolet account is still not in the literature cited
+  (Kopper 1999 via `RTARGET.md`; not re-read here). The new proofs work directly at each beta and give no first-passage
+  account.
+- **(c) L141-146, what it binds. HOLDS as logic.** "Would bind as a constraint ... only if T(M') were false". This is
+  right in the skill's terms: for a tool with a written proof, a false T(M') can only constrain. For a candidate with no
+  written proof, H(M') true together with T(M') false would refute. The filter is stated for steps with proofs, so the
+  parenthesis "(never as a refutation)" stands. Factual note: the scenario that would make it bind (Patrascioiu-Seiler,
+  T(M') false at large beta) is now contradicted by two posted proofs. If they stand, the filter binds nothing, even
+  conditionally. "Easier than the two-dimensional problem" (L145) should read "different from what the two-dimensional
+  proofs use". The logic ("a choice of route, not a condition that a correct proof must meet") is unaffected.
+- **(d) L148-151, "a price, not a refutation". HOLDS.** The skill lists "it also holds for model X" as a discard reason
+  to audit (SKILL.md L353-354, Step 4, the assumptions table, item (d) "Discard tests"). Step 6c makes it valid only with T(M') false. "Test it first where the answer
+  is known" now covers the 2D O(N) model at fixed N >= 3 itself, in the infinite-volume form, if the posted proofs stand.
+
+**Also affected (outside (a)-(d); for the lead; not verdicts):** 2.1 table row L111 ("T_fix and T_W are open"); 2.3
+L174 ("the step costs at least the open two-dimensional gap"); 7.7 L711 ("A lane on the two-dimensional O(N) model (it
+is the open problem ...)"); 7.8 L722 (the mark rests on "the open status of the 2D gap (BELIEF)"); the RESULT line
+("because the two-dimensional gap is open and believed true"). W2 (a), which would copy 2.3 into `parts/gap.md` L92,
+should take the repaired wording. Row 998 I37 and row 1002 item 6 (the same belief) are out of date in the same way.
+I did not check them line by line.
+
+**Verdict on statement (ii): HOLDS AFTER CORRECTION.** The answer to W1's question stands: the 2D filter is not a test
+in the form of step 6c. It is a cost statement and a routing rule. The correction is factual: the "open problem" is,
+at the pin date, a theorem with two posted, unrefereed proofs. That lowers the cost the filter names, and it removes
+the only scenario in which the filter could bind.

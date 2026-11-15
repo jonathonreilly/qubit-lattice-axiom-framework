@@ -11,6 +11,8 @@ independent cross-provider check. Pinned at commit 0d3b45d91. No commit, no push
 
 - 2026-11-15T20:46Z: file created; plan below is provisional until W1 of the checked file (L1004 and following) is read.
 - 20:48Z: steps 1-2 done (inputs read; tests (a), (b); Identity AV; Theorem BH Steps 1-5): all HOLD.
+- 20:51Z: step 3 done (Theorem BH Steps 6-7; Corollaries AV2, BH2): no WRONG in 7.1-7.2; two corrections (Step 7 qualifier; BH2 sign slip), see 3.1-3.3.
+- 20:53Z: step 4 done (Lemma CEN+, test (c)): HOLDS, both cases and the lattice statement.
 
 ## Plan (W1 of the checked file, L1004-1018; at most eight steps; one step per response, result appended before the next)
 
@@ -119,3 +121,153 @@ int R v dR = 0 and int (R v)_i (R w)_j dR = (v . w/3) delta_ij.
 - Steps 1-5 then give E_free[(E_omega X)^2] >= (2 E t)^2/((2/3) E(1 - t^2)) = 6 (E t)^2/E(1 - t^2): the constant 6 of (BH)
   is right. Only gauge invariance of the FREE model is used (it holds at boundary sites too); the pinned model is
   not gauge invariant at boundary sites, and the proof never needs it.
+
+## 3. Step 3: (ii) Theorem BH Steps 6-7 and (iii) Corollaries AV2, BH2
+
+### 3.1 Theorem BH, Step 6 (the edge link and positivity; L758-766): **HOLDS**
+
+- The plaquettes of c that contain l_e = (0 -> e_1) are the squares {0, e_1, e_nu, e_1 + e_nu}, nu = 2, ..., d; the
+  squares {0, e_1, - e_nu, e_1 - e_nu} leave the box. Each has x_rho = 0 for every rho not in {1, nu}, and d >= 3
+  gives at least one such rho, so all four links lie in the face x_rho = 0: boundary links, boundary plaquette.
+  Weights: all d - 2 such rho have x_rho = 0, so w_nu = 2^(-(d-2)) > 0.
+- Conditional law of U = U_(l_e) given all other links under E_free: density prop. to
+  exp(sum_nu b w_nu Re(U sigma_nu)) = exp(Re(U Sigma)), sigma_nu = U_2 U_3^(-1) U_4^(-1) of (0; 1, nu). With
+  Sigma = r Sigma-hat, U Sigma-hat is Haar distributed, and Re of a Haar point of S^3 has density (2/pi)(1 - y^2)^(1/2)
+  on [-1, 1] (normalisation int (1 - y^2)^(1/2) = pi/2). The conditional mean of y is
+  int_0^1 y (e^(ry) - e^(-ry)) (1 - y^2)^(1/2) dy / (positive) > 0 for r > 0, and 0 at r = 0.
+- Sigma = b sum_nu w_nu > 0 at the trivial configuration; by continuity r > 0 on a neighbourhood of it, which has
+  positive E_free-probability (positive continuous density). So E_free[Re(U Sigma)] = sum_nu b w_nu E_free t_((0;1,nu))
+  = E_free[r m(r)] > 0, and some (0; 1, nu) has E_free t > 0; with x = 0, mu = 1 it has z = e_1. Uses only beta > 0 on
+  the d - 1 plaquettes at l_e.
+
+### 3.2 Theorem BH, Step 7 (the constants; L767-776): **HOLDS AFTER CORRECTION** (last display needs a qualifier)
+
+Redone line by line.
+- phi(b) = log int exp(- b G) dU, G = sum_p w_p (1 - t_p) >= 0: a log-Laplace transform, so convex; phi <= 0 = phi(0);
+  e(b) = - phi'(b) = E_free[G] at homogeneous strength b (exp(- b G) = e^(- b W) exp(A_c)). Convexity at b against b/2:
+  phi(b/2) >= phi(b) + (b/2) e(b), so (b/2) e(b) <= phi(b/2) - phi(b) <= - phi(b). Correct.
+- |U_p - 1| <= sum_i |U_i - 1| (telescoping, |AB - 1| <= |A - 1| + |B - 1| for unit A; |U^(-1) - 1| = |U - 1|), so <= 4 r;
+  |q - 1|^2 = 2 - 2 Re q for a unit quaternion, so 1 - t_p = |U_p - 1|^2/2 <= 8 r^2. Correct.
+- Haar: U = cos phi + sin phi n has density (2/pi) sin^2 phi on [0, pi] and |U - 1| = 2 sin(phi/2); since
+  2 arcsin(r/2) >= r the set {|U - 1| <= r} contains {phi <= r}, of measure >= (2/pi) int_0^r sin^2 >= (2/pi)(4/pi^2) r^3/3
+  = 8 r^3/(3 pi^3) (Jordan, sin phi >= 2 phi/pi on [0, pi/2], and r <= 1). Correct.
+- r = b^(-1/2) (b >= 1): on the product set G <= 8 W/b, so phi(b) >= - 8 W + L log(8/(3 pi^3)) - (3 L/2) log b. Correct.
+  Then e(b) <= (2/b)(8 W + L log(3 pi^3/8) + (3 L/2) log b) = (16 W + 2 log(3 pi^3/8) L + 3 L log b)/b, and
+  2 log(3 pi^3/8) = 2 log 11.6274 = 4.9067 <= 4.92. Correct (rounded up, as it must be).
+- E_free(1 - t_p) <= e(b)/w_p (all terms of G are >= 0) and w_p >= 2^(-(d-2)) (a plaquette lies in at most d - 2 boundary
+  hyperplanes, all S_rho >= 1); 1 - t^2 = (1 - t)(1 + t) <= 2 (1 - t). Correct.
+- **The failing line (L775-776):** "the right side of (BH) is at least 3 (1 - 2^(d-2) e(b))^2/(2^(d-2) e(b))". The step
+  uses E t >= 1 - 2^(d-2) e(b) and then squares it, which is valid only when 1 - 2^(d-2) e(b) >= 0. Without that
+  qualifier the display is false: as b -> 0, e(b) -> W, so the display tends to 3 (2^(d-2) W - 1)^2/(2^(d-2) W), a
+  positive box-size number, while the right side of (BH) tends to 0 (E_free t_p -> 0). **Correction:** "for every b
+  with 2^(d-2) e(b) <= 1, the right side of (BH) is at least 3 (1 - 2^(d-2) e(b))^2/(2^(d-2) e(b))". Since
+  e(b) <= (16 W + 4.92 L + 3 L log b)/b -> 0, the qualifier holds for all large b, and the statement of the theorem
+  (growth to infinity at least like b/log b at a fixed box, constants depending on the box through W and L) follows
+  unchanged: for large b the bound is >= (3 - o(1)) b/(2^(d-2) (16 W + 4.92 L + 3 L log b)).
+
+**Theorem BH as a whole: HOLDS AFTER CORRECTION.** The two inequalities of (BH), the constant 6, the existence of a
+boundary plaquette with E_free t > 0 for every b > 0, the consequence "no pin-uniform curl bound for homogeneous
+strength", and the growth like b/log b are all correct. Corrections: the qualifier of 3.2, and the positivity line
+E_free psi^2 > 0 of 2.2. Neither is a WRONG; the stop rule does not fire.
+
+### 3.3 Corollaries AV2 and BH2
+
+**Corollary AV2 (L710-722): HOLDS.** (a) Linearity: X_c(B) = - sum_l B_l . N_l with N_l the tail-frame gradient of A_c
+in the boundary link l (Proposition A (iii) of row 1011 is only this definition). (b) Covariance: from
+(e^(eps B) U)^g = e^(eps Ad_g B) U^g link by link and A_c(U^g) = A_c(U), X_c(B)(U) = X_c(Ad_g B)(U^g) for all B, hence
+N_l(U^g) = Ad(g_tail(l)) N_l(U). (c) Pinned means: E_(omega^g)[N_l] = E_omega[N_l(U^g)] by the change of variables
+U_int -> U_int^g (Haar invariant, and (omega^g, U_int^g) = (omega, U_int)^g), so n_l(omega^g) = Ad(g_tail(l)) n_l(omega).
+(d) Z_c(omega^g) = Z_c(omega) and Haar on pins is gauge invariant, so the free pin law is invariant. (e) By AV,
+E_free[H_c(.; a theta)] = E_free[(sum_l theta_l a . n_l)^2]; averaging over independent Haar g_x kills pairs with
+different tails (int Ad(g) v dg = 0) and gives (1/3) n_l . n_l' for equal tails. Only boundary sites occur (tails of
+boundary links). The reading "site-diagonal: no difference of theta across two sites appears" is accurate; within
+one site the form couples the links with that tail (corner-type differences, as in Lemma WN).
+
+**Corollary BH2 (L778-797): HOLDS AFTER CORRECTION (cosmetic sign).**
+- Corner twists of B = a theta on p = (x; mu, nu), from Proposition A: delta_p . s_p = (theta_1 - theta_4) a . s_(p,x)
+  + theta_2 a . s_(p,x+mu) - theta_3 a . s_(p,x+nu) (use Ad(g) a . s_p = a . s(g^(-1) U_p g) with g = U_1, U_1 U_2 U_3^(-1), U_p).
+  So the twist at x + nu is **- theta_3**, not theta_3 as written at L780 (Lemma WN's rule theta_(p,y) = F_(l',y) - F_(l,y)
+  gives the same: p arrives at x + nu along l_3 at its tail, where F = theta_3, and leaves along l_4 at its head, where
+  F = 0). Row 1011's own Proposition B' proof (L254-255) has the - sign. Only squares theta_(p,y)^2 enter m_p, the
+  numerator and the bound, so nothing downstream changes. Correction: "- theta_3 at x + nu".
+- psi = sum_Q D_B t_p is a function of the pin (Q consists of boundary plaquettes). D_B t_p = - sum_y theta_(p,y) a . s_(p,y)
+  (Lemma WN (i), redone here from Proposition A as above). D_B^2 t_p = - t_p m_p + (cross terms in pairs of distinct
+  corners); in E_free every site is free, and the gauge average at one corner of a pair kills its cross term
+  (the closed word passes that site once): E_free[X psi] = - E_free D_B psi = sum_Q E_free[t_p] m_p. Correct.
+- s_(p,y) -> Ad(h) s_(p,y) under h at y, while s_(q,y') for y' != y is unchanged (the word based at y' passes y once,
+  as ... V h^(-1) h V' ...). So E_free psi^2 = (1/3) sum_y E_free |sum_Q theta_(p,y) s_(p,y)|^2. At one y at most n_Q terms
+  are non-zero, so |sum|^2 <= n_Q sum |theta_(p,y) s_(p,y)|^2 (Cauchy-Schwarz; the file's "Minkowski" followed by the
+  same counting is equivalent), and |s_(p,y)|^2 = 1 - t_p^2 for every base point (conjugate holonomies). Summing over y
+  gives E_free psi^2 <= (1/3) n_Q max_Q E(1 - t^2) sum_Q m_p, and the displayed bound with the constant 3 follows from
+  Steps 1-3. Correct for every strength field.
+- Special case: Q = {p_0}, theta = d lambda_z: twists 1 at x, - 1 at z, 0 elsewhere, m = 2, n_Q = 1, bound
+  3 (2 E t)^2/(2 E(1 - t^2)) = 6 (E t)^2/E(1 - t^2) = (BH). Correct.
+- m_p(theta) = (theta_1 - theta_4)^2 + theta_2^2 + theta_3^2 is the functional of row 1011 Proposition B' (L242-243;
+  there weighted by w_p). Correct. The uniform-in-size lower bound on the ratio is labelled ARGUED in the file and is
+  not checked here.
+- Dependence on Lemma WN: only WN (i) and the cross-term step of WN (iii) are used, and both are redone above, so
+  BH2 does not need row 1013's (unchecked) record.
+
+## 4. Step 4: (iv) Lemma CEN+ (checked file L446-490), with test (c)
+
+Notation: <p, q> = Re(p q-bar) is the Euclidean inner product of H = R^4, and q-bar = q^(-1) on unit quaternions.
+
+**Set-up.** M^(-1) = U_2 U_3^(-1) U_4^(-1), so Re U_p = Re(U_1 M^(-1)) = <U_1, M>; likewise the left side of the hypothesis
+is <phi_1(U_1), M'>. Correct.
+
+**Step 1: HOLDS.** U_1 is a free variable, so U_1 = M is allowed for every (U_2, U_3, U_4); then <M', phi_1(M)> = 1 and
+|M' - phi_1(M)|^2 = 2 - 2 <M', phi_1(M)> = 0. This gives (*).
+
+**Test (c): does M range over all of SU(2)? YES.** M = U_4 U_3 U_2^(-1); U_2 = U_3 = 1, U_4 = M arbitrary.
+
+**Step 2: HOLDS.** By (c), <phi_1(M), phi_1(u)> = <M, u> for all M, u in SU(2). The e_i = 1, i, j, k are unit quaternions,
+so f_i = phi_1(e_i) satisfy <f_i, f_j> = delta_ij (an orthonormal basis of R^4) and <phi_1(u), f_i> = <u, e_i>. Expansion in
+an orthonormal basis gives phi_1(u) = sum_i <u, e_i> f_i = T u with T: e_i -> f_i in O(4). (The file's remark that the
+squares sum to 1 is not needed; expansion in a basis is exact.) No continuity is used, as claimed.
+
+**Step 3: HOLDS.** c = T(1) is a unit quaternion; T' = c^(-1) T is in O(4) and fixes 1, so it preserves Im H = 1-perp
+and acts there by an element of O(3) = SO(3) x {+-I}. Proper: T' = Ad(q) on Im H, so T'(u) = q u q^(-1) for all u and
+phi_1(u) = (c q) u q^(-1). Improper: T' = - Ad(q) on Im H, and u -> q u-bar q^(-1) fixes 1 and is - Ad(q) on Im H, so
+phi_1(u) = (c q) u^(-1) q^(-1). The input "SU(2) -> SO(3) is onto" is classical and named as an input. Correct.
+
+**Step 4, reduction to one type: HOLDS.** From (*): U_2 = U_3 = 1 gives phi_4(u) = phi_1(u) phi_2(1) phi_3(1)^(-1);
+U_2 = U_4 = 1 gives phi_3(u) = phi_4(1)^(-1) phi_1(u) phi_2(1); U_3 = U_4 = 1 gives phi_2(u) = phi_1(u^(-1))^(-1) phi_4(1) phi_3(1).
+If phi_1(u) = L u R^(-1), then phi_2(u) = R u L^(-1) C, so all four are proper; if phi_1(u) = L u^(-1) R^(-1), then
+phi_2(u) = R u^(-1) L^(-1) C, so all four are improper. Correct.
+
+**Step 4, proper case: HOLDS.** The displayed form of (*) is right ((L_2 U_2 R_2^(-1))^(-1) = R_2 U_2^(-1) L_2^(-1)).
+- U_2 = U_3 = 1: L_1^(-1) L_4 U_4 = U_4 z with z = R_1^(-1) L_2 R_2^(-1) R_3 L_3^(-1) R_4 constant; U_4 = 1 gives z = L_1^(-1) L_4,
+  so z commutes with SU(2), z = +-1, L_4 = +-L_1.
+- Cancel L_1 U_4: +- R_4^(-1) L_3 U_3 R_3^(-1) R_2 U_2^(-1) L_2^(-1) = U_3 U_2^(-1) R_1^(-1); at U_2 = 1 this is
+  (R_4^(-1) L_3) U_3 = U_3 z' with z' constant, and U_3 = 1 makes z' = R_4^(-1) L_3 central: R_4^(-1) L_3 = +-1.
+- Cancel U_3: (R_3^(-1) R_2) U_2^(-1) = +- U_2^(-1) (R_1^(-1) L_2); U_2 = 1 makes the two constants equal up to sign, and
+  then central: R_3^(-1) R_2 = +-1, R_1^(-1) L_2 = +-1.
+- Corners: g_x = L_1, g_(x+mu) = R_1, g_(x+mu+nu) = R_2, g_(x+nu) = R_4 give phi_1 = g_x u g_(x+mu)^(-1),
+  phi_4 = +- g_x u g_(x+nu)^(-1), phi_2 = +- g_(x+mu) u g_(x+mu+nu)^(-1), phi_3 = +- g_(x+nu) u (+- g_(x+mu+nu))^(-1): each is
+  sigma_i g_tail u g_head^(-1). The hypothesis then reads (prod sigma_i) Re(g_x U_p g_x^(-1)) = Re U_p; at U = 1, prod sigma_i = +1.
+
+**Step 4, improper case: HOLDS (it does not occur).** The displayed (*) is right: the right side is
+phi_1(U_4 U_3 U_2^(-1)) = L_1 U_2 U_3^(-1) U_4^(-1) R_1^(-1). With U_3 = 1 and P = R_4^(-1) L_3 R_3^(-1) R_2:
+L_4 U_4^(-1) P U_2 L_2^(-1) = L_1 U_2 U_4^(-1) R_1^(-1). U_4 = 1: (L_1^(-1) L_4 P) U_2 = U_2 (R_1^(-1) L_2) for all U_2, so both
+constants equal a central eps. U_2 = 1: (L_1^(-1) L_4) u = u (R_1^(-1) L_2 P^(-1)) for all u = U_4^(-1), so both equal a
+central eps'. Then P = eps eps', L_4 = eps' L_1, L_2 = eps R_1, and substitution gives L_1 U_4^(-1) U_2 R_1^(-1) =
+L_1 U_2 U_4^(-1) R_1^(-1), i.e. U_4^(-1) U_2 = U_2 U_4^(-1) for all U_2, U_4, false at (U_2, U_4) = (i, j). Correct.
+
+**Lattice statement: HOLDS** (for a box with all S_mu >= 1 or a torus with all sides >= 3, in dimension >= 2).
+Details the file compresses, written out: (1) every link lies in a plaquette whose four links are distinct, so the
+plaquette statement applies to it; (2) L u R^(-1) = L' u R'^(-1) for all u forces (L', R') = +-(L, R) (at u = 1,
+L'^(-1) L = R'^(-1) R is central), so each phi_l fixes its pair of link-end elements up to one common sign; (3) at a
+corner of p where p meets y along l and l', both link-end elements at y equal +- g^p_y, hence agree up to sign;
+(4) at a site y of a box, any two incident links in different directions span a square of the box (the box is a
+product of intervals), and every direction has an incident link (S_nu >= 1), so the corner graph at y is complete
+multipartite, connected when d >= 2; (5) so the link-end elements at y are +- g_y for one g_y, phi_l = sigma_l
+g_tail u g_head^(-1), and trace preservation at U = 1 gives prod_(l in p) sigma_l = +1 on every plaquette: sigma is a
+closed Z_2 link field. The scope is on-site maps (each phi_l a function of U_l alone), as the title says.
+
+**Lemma CEN+: HOLDS** (plaquette statement, both cases, and lattice statement). No continuity, group law or measure
+is used, as claimed. The remark on other groups (L486-490) is labelled ARGUED and is not checked; its two facts
+(complex conjugation keeps Re tr for SU(N); every automorphism of SU(2) is inner) are true.
+
+**Lemma REM (L492-505; not in W1's list, read in passing).** The displayed step is correct: if no site is an end of
+both a link of P_B and a link of P minus P_B, then g = k on the sites of P_B and 1 elsewhere gives u^g = u' on P, and
+Z(u^g) = Z(u) by the change of variables on the integrated links. Not checked further.

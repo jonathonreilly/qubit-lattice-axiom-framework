@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/families_flavour_navigation_map_check_2026_11_14.py
+runner_sha256: f0fce419faa8838e2d00aefc7f4b383384d916c32103a3df1a5551e767d7c67a
+input_fingerprint_sha256: a10695d6859d761eb0c37890288f53d78c9bc752b874ba68adca5f20399dcd50
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+Navigation map check: families-flavour carried results
+==============================================================================
+[PASS] the map has 13 'Carried results' sections, each naming one carried note -- 13
+[PASS] no carried note appears in two sections
+[PASS] each section quotes its carried note's current claim_scope verbatim -- 13 of 13 match
+[PASS] each section heading carries its carried note's current title -- 13 of 13 match
+[PASS] every repository link in the map resolves -- 58 links
+[PASS] control rejects mutant: a quotation with its last word dropped still matches
+[PASS] control rejects mutant: a heading with its last word dropped still matches
+
+SUMMARY: PASS=7 FAIL=0
+Scope: the map's quotations, headings, coverage and links. The carried notes' science is checked by their own runners.
+
+----- stderr -----
+

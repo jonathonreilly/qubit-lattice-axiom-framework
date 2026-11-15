@@ -11,13 +11,13 @@ Source pinned at commit 6d2c02ef7 on branch `claude/ym4d-hard-route`.
 ## Plan (at most eight steps; one step per response, result appended before the next)
 
 1. Brief: FINISH rules, rows 1004 and 1008, `gap-outside-box-max.md` 8.7. DONE (below).
-2. (i-b) Lemma LYP2 (Section 6.1b).
-3. (i) Lemma LYP (Section 6.1), and the reading of `gap-skeleton-max.md` L177-178.
-4. (ii) Lemma GG (Section 6.2), with Lemma A as the corollary uses it.
-5. (iii) Lemma TW (Section 6.3) against Theorem S and `gap-constraints-max.md` row 1 and Section 7 (Theorem 2O).
-6. (iv) Proposition CB (Section 3.0): the semicontinuity argument.
-7. (v) Theorem TW-T (`gap-transfer-twisted.md` Section 5, five points), with `gap-transfer.md` Sections 1-4 and 9.3 open.
-8. W2 (three lines), verdict table, RESULT line.
+2. (i-b) Lemma LYP2 (Section 6.1b). DONE.
+3. (i) Lemma LYP (Section 6.1), and the reading of `gap-skeleton-max.md` L177-178. DONE.
+4. (ii) Lemma GG (Section 6.2), with Lemma A as the corollary uses it. DONE.
+5. (iii) Lemma TW (Section 6.3) against Theorem S and `gap-constraints-max.md` row 1 and Section 7 (Theorem 2O). DONE.
+6. (iv) Proposition CB (Section 3.0): the semicontinuity argument. DONE.
+7. (v) Theorem TW-T (`gap-transfer-twisted.md` Section 5, five points), with `gap-transfer.md` Sections 1-4 and 9.3 open. DONE.
+8. W2 (three lines), verdict table, RESULT line. DONE.
 
 ## Step log
 
@@ -354,3 +354,94 @@ The Reading (L125) follows from (ii) with one detail: (ii) needs a uniform margi
 with S_(t_k) -> 1/5041 from below would not carry back. The proposition states the margin; the Reading leaves it
 implicit. Not a defect in the proposition.
 
+### Step 7. (v) Theorem TW-T (`gap-transfer-twisted.md`, read in full; `gap-transfer.md` Sections 1-4 and 9.3 open) (2026-11-15 18:45Z)
+
+**Verdict: HOLDS.** All five points of its Section 5 were redone. No step fails. Two notes, no consequence.
+
+Point (1): is the list 3.1 (ii) of the uses of V in `gap-transfer.md` Sections 1-4 complete? Yes. Every use,
+found by reading L108-180: the definitions of M and T_0 (L111, L114); the bounds of A_T and T_0 in (1a) and
+1.4 (V >= 0 and V <= 6 beta N^3: (v2)); step 1.2, the identity "spatial part of S in slice t = V(U(t))" and
+V(g_t.U(t+1)) = V(U(t+1)) ((v3)); the continuity in 1.3-1.4 ((v1)); the invariance T_0(h.a, h.b) = T_0(a, b)
+in 1.4 and 4.3 ((v3)); self-adjointness in 2.1 and positivity in 2.4 (M a real bounded multiplication: V real,
+in (v1)); Tr T = integral of e^(-V) <= 1 in 3.3 ((v2)); the kernel bounds fed to Lemma A3 in 4.1 and 4.3 ((v1),
+(v2)); the invariance A_T(h.u, v) = A_T(u, v) in 4.2 ((v3)). Steps 1.5, 1.6, 1.7, 2.2, 2.3, 2.5, 3.1, 3.2 do not
+use V beyond these. The cube enters only through the counts and the constants and step 1.1, as 3.1 (i) says;
+N >= 3 is a standing hypothesis there. For V_m: (v1) and (v3) as stated; (v2) with 3 |Lambda| plaquettes each
+in [0, 2 beta], so 0 <= V_m <= 6 beta |Lambda|, and the floor exp(-12 beta |Lambda|) of (T1) is
+e^(-3 beta |Lambda|) twice times K_0 >= e^(-6 beta |Lambda|). The time-like plaquettes of S^(0,m) are untwisted,
+so K_0 is unchanged. Point (1) HOLDS.
+
+Point (2): 3.3 (a). For p based at x in the plane (i, j): if k = i, the links of direction k are (x, i) and
+(x + e_j, i); the base points differ only in coordinate j != i, so both have i-coordinate x_i, and Z_k flips both
+or neither. If k = j, the links are (x + e_i, j) and (x, j), both with j-coordinate x_j. If k is neither, p has no
+link of direction k. With -1 central (and (-u)^(-1) = -u^(-1)), u_p is unchanged. So V_m o Z_k = V_m for every m,
+as `gap-transfer.md` 9.3 (L262) says for m = 0. The commutations of 3.3 (b)-(c) also check: C_E C_k = C_k C_E by
+K_0(u, Z_k w) = K_0(Z_k u, w); P C_k = C_k P by Z_k(h.u) = h.(Z_k u). (d) is the standard simplicity argument.
+Point (2) HOLDS.
+
+Point (3): 3.4. The kernel of T_(P,m) C^e is A_m(u, Z^e w) (substitution w = Z^e v, a measure-preserving
+involution), and Lemma A0 (e) gives the trace as the integral of the product of A_m(u(t), u(t+1)), t <= T-2, and
+A_m(u(T-1), Z^e u(0)). In the last factor, (g.Z^e U(0))_(x,i) = sigma g(x) U(0)_(x,i) g(x+e_i)^(-1) with
+sigma = -1 exactly when e_i = 1 and x_i = 0 (Z^e flips the links (x, i) with x_i = 0 for the i with e_i = 1).
+Then c(U(T-1)_(x,i) (sigma g(x) U(0)_(x,i) g(x+e_i)^(-1))^(-1)) = exp(-beta(1 - (1/2) sigma tr H)), with
+H = g(x) U(0)_(x,i) g(x+e_i)^(-1) U(T-1)_(x,i)^(-1) by tr a = tr a^(-1); by step 1.1 (L127) with t = T-1 and
+t + 1 = 0, H is the holonomy of the time-like plaquette in the plane (0, i) based at (x, T-1). So the sign -1
+sits exactly on the time-like plaquettes of the planes (0, k) with e_k = 1, based at (x, T-1) with x_k = 0:
+the stack of 1.4, one plaquette per value of the other two spatial coordinates. The potential of the last factor
+is V_m(U(0)) by (v3) and 3.3 (a). Point (3) HOLDS.
+
+Point (4): Lemma P, case (3). For P in the plane (mu, nu) based at x, its two links of direction nu are
+(x + e_mu, nu) and (x, nu). The flipped links are (y, nu) with y_mu = b + 1, y_nu = c. So (x + e_mu, nu) flips iff
+x_mu = b and x_nu = c, and (x, nu) flips iff x_mu = b + 1 and x_nu = c. Both at once would need b = b + 1 mod n_mu,
+impossible for n_mu >= 2. So tr U_P changes sign exactly on the two stacks at (b, c) and (b + 1, c), and the new
+sign field is -1 on the stack at (b + 1, c) only. Cases (1) and (2) are right (in case (2) the two links
+(x, nu), (x + e_rho, nu) share the mu- and nu-coordinates). Other planes are untouched, so several twisted planes
+do not interact. Point (4) HOLDS.
+
+Point (5): (S3). For a fixed box, lambda_m^T <= Z^(0,m)_T = sum lambda_i^T <= lambda_m^(T-1) Tr T_(P,m), with
+0 < lambda_m <= Tr T_(P,m) < infinity, so the T-th root tends to lambda_m; the same for m = 0. T >= 3 is used for
+the second part of (S2): it runs Lemma TW-T with directions 1 and 2 as time, and then the box of the other three
+sides contains the side T, which (1.1) requires to be at least 3. The three removal steps of (S2) are right:
+time 0 removes (0,1), (0,2), (0,3); time 1 removes (1,2), (1,3); time 2 removes (2,3); each uses
+Z^(e,m) = sum chi_i(e) lambda_i^T <= sum lambda_i^T. Point (5) HOLDS.
+
+Other parts read, no defect found: (T6) (joint diagonalization of the commuting involutions on each
+finite-dimensional eigenspace; the kernel of T_(P,m) is C-invariant and contributes 0 to the trace); (F1) and its
+inversion; (S1); (T3) via steps 4.1-4.3 with (v3) for T_0,m.
+
+Note 1. Under a permutation of the axes in 3.5, a plaquette may change orientation; tr U_P is unchanged because
+tr U^(-1) = tr U (N.2, N.6 "orientation is irrelevant"). The text does not say this; it is one line.
+Note 2. (TM-tw) as stated in `gap-flux-exercise.md` L115 asks for Z^(e+m)(a, B) = Tr(T_(B,m)^a C^e) "for a >= 3";
+TW-T gives it for every T >= 2, and gives the positions of the stacks by Lemma P. So TW-T covers that input.
+
+### Step 8. W2, verdict table, result (2026-11-15 19:00Z)
+
+**W2 (three lines; a hand count, ARGUED: Laplace asymptotics at a degenerate minimum set, not written as a proof; bears on no proof).**
+1. Count: on the torus n^4 (12 n^4 link dimensions) the periodic flat connections have orbits of dimension 3n^4 - 1 (stabilizer U(1)) over 4 moduli, so 9n^4 - 3 Gaussian directions. A single-plane twist eater is isolated, with a finite stabilizer: the adjoint bundle splits into three flat real line bundles, each with a holonomy -1, so H^0 = H^1 = 0. That leaves 9n^4 directions. The valley near the 16 central points adds a factor c log beta to Z^0 only (integral of d^4x/|x|^4 between beta^(-1/4) and 1). So -log(Z^k/Z^0) = (3/2) log beta + log log beta + O(1): row 1004's power 3/2 is right, and its O(log log beta) is this valley term.
+2. `gap-phys-seed.md` E3 (L416) uses the same 3/2 per torus: (rho^4 - 1)(3/2) log beta, which at rho = 4 is (765/2) log beta = 765 log(1/g) + O(1) (log beta = 2 log(1/g) + log 4), and at rho = 2 is the (45/2) log beta of L451. So "765 log(1/g)" agrees with 3/2 and not with 3.
+3. Row 859 idea 8 (`gap-brainstorm-max.md` L284), "about 3 log beta", is off by a factor 2: the right value is 3 log(1/g) = (3/2) log beta + O(1), as `gap-phys-seed.md` L192 writes for D. This changes only the normalization of its beta_tw = exp(F_tw/3), which is then of order beta^(1/2); the idea itself is unchanged. Row 1004's 8.3 flag of this slip is right.
+
+**Verdict table (W1). Stop rule: no statement FAILS, so it did not trigger.**
+
+| Statement | Verdict | First failing step | Corrections and notes (none breaks a step) |
+|---|---|---|---|
+| (i-b) Lemma LYP2 | HOLDS | none | y_0 is listed per group without saying so; "negative activity" in the Remark is loose (only "not in [0, infinity)" is shown); "at b = 0 it holds" rests on the recalled reality of Bessel zeros |
+| (i) Lemma LYP | HOLDS | none | Z_2 existence of a zero is implicit (cosh is onto C) |
+| (i) sentence "(LY) of B9 is false for one plaquette" (L249) | HOLDS AFTER CORRECTION | - | `gap-skeleton-max.md` L100 fixes Lambda as a finite periodic lattice in d = 4 for B1-B13, so one plaquette is not an instance of (LY). (LY) as written is refuted by LYP2 (every such lattice with sides at least 3, all small b > 0), not by LYP. "Every b > 0" is shown only on one plaquette |
+| (ii) Lemma GG (steps 1-3) | HOLDS | none | - |
+| (ii) Corollary GG1 (use of Lemma A) | HOLDS (implication) | none | Lemma A is `gap-crux-restate.md` L37. The hypothesis "(TM) for the family" must also cover the U(1) end point and the weight w; the (TM) on file is SU(2) Wilson only |
+| (ii) reading "a twist is no longer free for kappa > 0" | HOLDS (classically) | - | complete reason: commuting holonomies in the stabilizer U(1) of phi_0 cannot satisfy the twist relation. Slip in the same Reading: the character coefficients are v_(2j) - v_(2j+2), not half of that; the sign is unaffected |
+| (iii) Lemma TW and its reading of Theorem S, row 1, Theorem 2O | HOLDS | none | it is for one twist class Z^k; the sector sums of Theorem S-w run the engine in every direction and are outside it; (c)'s "only if" holds for the traces (TM-tw) supplies |
+| (iv) Proposition CB | HOLDS | none | the lower-semicontinuity limit needs one line (bracket bound, step 6); the Reading uses the margin q of (ii) implicitly |
+| (v) Theorem TW-T, points (1)-(5) | HOLDS | none | orientation under axis permutations is one unstated line (tr U^(-1) = tr U) |
+
+Provenance and standing. Checked line by line by Claude Opus 5.5, max effort, at commit 6d2c02ef7. The author is
+Claude Fable 5.2: a different model from the same provider, so this is not a cross-provider check (FINISH
+"How we work" item 2). It is one reading, not an audit. No numeric run was made: memory and the numeric lock were
+not needed, since every check above was done by hand. No file other than this one was edited.
+In the scale of the FINISH Rules: (i-b), (i), (ii), (iii), (iv) CORRECT-NO-ADVANCE (row 1004 itself says none moves
+the wall). (v) CORRECT: it supplies (TM-tw) of `gap-flux-exercise.md` L115 as a written lemma, as an implication
+from `gap-transfer.md` Statements (1)-(4) (checked by Codex, row 671), with the stack positions by Lemma P.
+That advances an input of the lane, not the wall.
+
+RESULT: Row 1008 (check of row 1004, work items W1 and W2; Claude Opus 5.5 max, same provider as the author, not a cross-provider check; first failing step none). W1: (i-b) Lemma LYP2 HOLDS; (i) Lemma LYP HOLDS, and its sentence "the crux (LY) of B9 is false for one plaquette" HOLDS AFTER CORRECTION: `gap-skeleton-max.md` L100 makes B9's Lambda a finite periodic lattice in d = 4, so one plaquette is not an instance, and (LY) as written is refuted by LYP2 (every such lattice with sides at least 3, all small b > 0); (ii) Lemma GG HOLDS, Corollary GG1 HOLDS as an implication (its hypothesis "(TM) for the family" must also cover the U(1) end point and the weight w), and "a twist is no longer free for kappa > 0" HOLDS classically; (iii) Lemma TW HOLDS for one twist class (the sector sums of Theorem S-w are outside it); (iv) Proposition CB HOLDS; (v) Theorem TW-T HOLDS on all five points of its Section 5. One slip with no consequence: a factor 1/2 in the character coefficients of the Villain class function (6.2 Reading). W2 (hand count, ARGUED): -log(Z^k/Z^0) = (3/2) log beta + log log beta + O(1); row 859's "about 3 log beta" is a factor-2 slip (it is 3 log(1/g)), and the "765 log(1/g)" of `gap-phys-seed.md` is the same 3/2 count. Open: everything row 1004 left open ((W), (CAS), the wall); the (TM) extensions that GG1 assumes (site field, U(1) end point, weight w); a cross-provider check, if the lead wants one.

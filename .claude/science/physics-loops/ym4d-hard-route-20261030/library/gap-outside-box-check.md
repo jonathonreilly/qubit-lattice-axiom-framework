@@ -271,3 +271,86 @@ Note 3 (outside the brief, recorded only). The Reading's "for every N_max there 
 up to N_max" needs the U(1) no-seed statement to be strict at each of the finitely many sizes (an open
 condition), as in Proposition CB; that is step 6 below.
 
+### Step 5. (iii) Lemma TW (`gap-outside-box-max.md` L312-324) (2026-11-15 18:20Z)
+
+**Verdict: HOLDS.** "The engine needs a pair of clean directions" is a correct reading of Theorem S, of row 1 of
+`gap-constraints-max.md` and of its Theorem 2O, for the partition function Z^k of one twist class. Two scope
+notes below; neither is a failing step.
+
+What the three sources require (read at this pin).
+- Theorem S (`gap-crux-restate.md` 3.4, L170-200). The setting of Lemmas K, X, E (L174) is: W(a, b) = W(b, a),
+  and for each b a positive trace-class T_b with W(a, b) = Tr T_b^a. With the symmetry this is a positive trace
+  in both channels: W(a, b) = Tr T_a^b is what Lemma K (b) and Lemma E use (Tr T_a^(2b) <= (Tr T_a^b)^2), and
+  Lemma K (c) uses that b -> log Tr T_a^b is a log-sum of exponentials with positive weights. The proof of
+  Theorem S (L202) applies Lemma E to the pairs (1,2), (1,3), (1,4), so the cube form needs all four
+  directions in such pairs; a two-direction form (Corollary S2, L205, with the other sides as spectators) needs
+  one pair.
+- Row 1 of the audit (L94): "The engine needs a trace in both channels of an exchanged pair (1.1) ... Spectator
+  directions need (TM) only". Same requirement; a twist in the spectator plane is allowed, because the transfer
+  operator of a box with a twisted spatial weight is positive by (TM-tw).
+- Theorem 2O (L317-409). Setting (2O): positive trace-class T_b and T'_a with W(a, b) = Tr T_b^a = Tr (T'_a)^b,
+  and no symmetry. So 2O removes the exchange symmetry, not the positive trace in each channel. Lemmas K2 (b),
+  E2o and D use Lemma A (a) in both channels.
+
+Lemma TW against these.
+- (a) is (TM-tw) of `gap-flux-exercise.md` L115 read in one direction: the planes through mu enter as the
+  insertion C = C^e, the others as the twisted spatial weight of T_(B,m). The top eigenvector of T_(B,m) is
+  strictly positive (strictly positive kernel, by (TM-tw)), and C maps positive functions to positive functions
+  and commutes with T, so the top eigenvector is C-even; hence Tr(T^j C) = lambda_0^j (1 + S_even(j) - S_odd(j)).
+  Right.
+- (b) Right in its operator form: Tr((T^(n_mu) C)^j) = Tr(T^(j n_mu) C^j), and C^2 = 1. The sentence "multiplying
+  the side n_mu by j multiplies every k_(mu nu) by j modulo 2" means the j-fold cover of the twisted torus, which
+  is the object the engine's step Tr S^(jb) <= (Tr S^b)^j produces; a torus of side j n_mu can of course carry
+  class k itself, but then no such inequality is available. With that reading, "a doubling leaves the family"
+  is right.
+- (c) If mu and nu are clean, every entry with index mu or nu is zero; only the complementary entry is free.
+  So the classes with a clean pair are k = 0 and the six single-plane twists. Exchanging the two clean axes
+  fixes the complementary entry, so Z^k is symmetric in the pair and Theorem S's two-direction form applies,
+  with the twisted plane as spectators. Right.
+- (d) S_4 acts transitively on the six planes, so an invariant class is 0 or all ones, and all ones leaves no
+  clean direction. Right.
+
+Scope note 1 (single class). The lane runs the engine in every direction on sector sums
+W_w = sum over k of w(k) Z^k (`gap-flux-exercise.md` 8.4, Lemma W (b): T_B^w = direct sum of T_(B,m) P_(Sigma,m),
+positive because P_(Sigma,m) is a projection commuting with T). These sum over the twists through mu with
+characters, so the sign is removed. Lemma TW is stated for one class Z^k and does not contradict this. The
+RESULT gloss "the engine runs only in directions outside every twisted plane" is right for one class and should
+say so.
+
+Scope note 2 ("only if"). (c)'s first sentence, "an exchanged pair with positive traces in both channels is a pair
+of clean directions", is shown for the traces that (TM-tw) supplies. A signed trace sum_i c_i lambda_i^n can equal a
+positive trace sum_j mu_j^n for all n only if, at every value lambda, the C-even multiplicity is at least the
+C-odd one (uniqueness of exponential sums); (a) does not exclude this coincidence, and nothing in the lane supplies
+it. The label "PROVED given (TM-tw) and the reading" covers this; it is not a gap in what TW is used for.
+
+### Step 6. (iv) Proposition CB (`gap-outside-box-max.md` L122-125) (2026-11-15 18:30Z)
+
+**Verdict: HOLDS.** The semicontinuity argument (the step-8 version at L123) is right as written.
+
+The argument, redone. Fix the box B = (2N)^3 and the direction of the time k. The hypothesis "models of the
+engine's class" gives, for each t, a positive trace-class T_t != 0 with Z_t(k) = Tr T_t^k; the hypothesis of
+the proposition gives t -> Z_t(k) continuous for every k (every torus k x B).
+- Upper semicontinuity. By Lemma A (a) the sequence Z_t(k)^(1/k) is non-increasing with limit lambda_0,t, so
+  lambda_0,t = inf over k of Z_t(k)^(1/k). An infimum of continuous functions is upper semicontinuous. Right.
+- Lower semicontinuity. Z_t(k) >= lambda_0,t^k > 0, so q_k(t) = (Z_t(2k)/Z_t(k))^(1/k) is continuous. By
+  Lemma A (b), q_k(t) <= lambda_0,t. And q_k(t) -> lambda_0,t: with m the multiplicity of lambda_0 and
+  r_i < 1 the other ratios, q_k = lambda_0 [(m + sum r_i^(2k))/(m + sum r_i^k)]^(1/k), and the bracket lies in
+  [m/(m + Tr T/lambda_0), 1] for k >= 1, so its k-th root tends to 1. Hence lambda_0,t = sup over k of q_k(t),
+  a supremum of continuous functions, lower semicontinuous. Right. (The text says "they tend to it" without the
+  bracket bound; the bound above is the one line it needs.)
+- So lambda_0,t is continuous and positive, and S_t(N; B) = Z_t(N)/lambda_0,t^N - 1 is continuous. The set
+  {t : S_t < 1/5041} is the preimage of an open set, open in [0, 1]. (i) is openness at 0. (ii): the limit of
+  S_(t_k) <= q along t_k -> 0 is S_0 <= q < 1/5041. Right.
+- If only k >= 3 is allowed (tori with sides at least 3), the inf and the sup over k >= 3 are the same limits,
+  so nothing changes.
+- S here is Z/lambda_0^N - 1, the S of the setting of Lemmas K, X, E (`gap-crux-restate.md` L174), which is the
+  S of the seed in Theorem S. Consistent.
+
+The step-8 correction (L123) is right to drop the earlier inference: the continuity of two traces does not give
+norm continuity of T_t, and the proof above does not need it.
+
+The Reading (L125) follows from (ii) with one detail: (ii) needs a uniform margin q < 1/5041 along the sequence;
+"seeds of bounded size" then gives one N that repeats along a subsequence (pigeonhole), and (ii) applies. Seeds
+with S_(t_k) -> 1/5041 from below would not carry back. The proposition states the margin; the Reading leaves it
+implicit. Not a defect in the proposition.
+

@@ -12,6 +12,10 @@ beyond first passage, in a form that an exact tool of the lane can use.
 ## Status log (times from `date -u`)
 
 - 06:17Z start. Output file created. No earlier run of this item exists at the pinned commit.
+- 06:23Z Step 1 written. 06:37Z Step 2. 06:47Z Steps 3 and 4. 06:51Z Section 5.0 to 5.4.
+- 06:50Z and 06:52Z two numeric runs under the lock (holder row996-sepinput, memory 71 percent free, each under 1 minute).
+- 06:54Z correction: the last two bullets of 5.4 were replaced. The three-face control showed that the tilt supremum is
+  not attained on the homogeneous axis; Lemma SHEET (5.5) then showed that it is unbounded in the volume.
 
 ## Plan (eight steps, one per response)
 
@@ -243,3 +247,206 @@ it for three faces, and shows that it fails for four.
 
 Plan change for Steps 5 to 8: Step 5 proves Lemma MIX, Proposition TILT and its corollaries. Step 6 is the
 x-picture, with the exact line where the Wilson-side input fails. Step 7 is the self-check. Step 8 is the summary.
+
+## 5. Step 5: the mixture identity as an exact tool (Identity MIX, Proposition TILT)
+
+### 5.0 Setting
+
+Lambda is a finite torus, L its links, P its plaquettes. For a coupling field b in R^P and a real v:
+
+ mu_(b,v)(dU) = Z(b,v)^(-1) exp( sum_p ( b_p x_p + (v/2) x_p^2 ) ) dU, F(b,v) = log Z(b,v), C(b,v) = Cov_(mu_(b,v))(x), a P x P matrix.
+
+Wilson at beta is mu_(beta 1, 0). K7 at (beta_F, beta_A) is mu_(beta_F 1, v) with v = 8 beta_A/3 (the constant
+exp(-beta_A/3) per plaquette cancels). Hess_b F = C. Put
+
+ Sigma^2(v) := sup over b in R^P of lambda_max(C(b,v)), R(v) := 1/Sigma^2(v).
+
+On a finite torus 0 < Sigma^2 <= abs(P), because abs(x_p) <= 1. Both depend on Lambda.
+
+### 5.1 Identity MIX (PROVED)
+
+Let w > 0 and gamma_w = N(0, w) on each plaquette, independent. Then:
+
+- (a) Z(b, v + w) = int gamma_w(ds) Z(b + s, v).
+- (b) Draw s from pi(ds) := gamma_w(ds) Z(b+s, v)/Z(b, v+w), then U from mu_(b+s, v). The law of U is mu_(b, v+w). Given U, the
+  s_p are independent with law N(w x_p(U), w). So s = w x(U) + sqrt(w) xi, with xi standard Gaussian, independent of U.
+- (c) pi has the density proportional to exp(-H(s)), H(s) = abs(s)^2/(2w) - F(b+s, v), and Hess H(s) = 1/w - C(b+s, v).
+
+Proof. For one real x, int gamma_w(ds) e^(s x) = e^(w x^2/2). All integrands are positive and abs(x_p) <= 1, so Fubini
+applies. The joint density of (U, s) is proportional to exp(-abs(s)^2/(2w) + sum_p (b_p + s_p) x_p + (v/2) sum_p x_p^2).
+Integrate over s: (a) and the first half of (b). Integrate over U: (c). Complete the square,
+-s^2/(2w) + s x = -(s - w x)^2/(2w) + w x^2/2: the second half of (b). QED
+
+With v = 0 and b = beta_F 1 this is (F-MIX): K7 is the Wilson model with annealed Gaussian plaquette couplings of
+variance 8 beta_A/3. In the direction of the adjoint coupling the partition function obeys the heat equation in the
+plaquette couplings: d Z/dv = (1/2) sum_p d^2 Z/d b_p^2.
+
+**Remark MIX (the mechanical form of the K7 test).** (1) A statement about the unnormalised measures
+exp(sum b_p x_p) dU that holds for every b in R^P and is kept by positive mixtures holds at K7. (2) A statement
+"for every coupling field b, a bound on mu_(b,0)" reaches K7 only through the hidden field s, and by (c) the hidden
+field is uniformly log-concave exactly when w Sigma^2(0) < 1. Item (2) is made exact in 5.2.
+
+### 5.2 Proposition TILT (PROVED GIVEN the Brascamp-Lieb inequality)
+
+Let v be real and w > 0 with w Sigma^2(v) < 1. Then for every b in R^P, as matrices,
+
+ C(b, v + w) <= ( Sigma^2(v) / (1 - w Sigma^2(v)) ) 1. So R(v + w) >= R(v) - w.
+
+Proof. By 5.1 (c), Hess H >= kappa := 1/w - Sigma^2(v) > 0 on all of R^P. Brascamp and Lieb (J. Funct. Anal. 22, 1976,
+Theorem 4.1; RECALLED, not rebuilt here): for a probability density proportional to e^(-H) on R^n with H twice
+differentiable and Hess H > 0, Var(g) <= E <grad g, (Hess H)^(-1) grad g>. For g(s) = <a, s> this gives
+Var_pi(<a, s>) <= abs(a)^2/kappa. By 5.1 (b), Cov_pi(s) = w^2 C(b, v+w) + w 1. So
+
+ w^2 <a, C(b, v+w) a> <= abs(a)^2 (1/kappa - w) = abs(a)^2 w^2 Sigma^2(v)/(1 - w Sigma^2(v)),
+
+since 1/kappa = w/(1 - w Sigma^2(v)). The supremum over b gives the second claim. QED
+
+### 5.3 Corollaries (PROVED from 5.2)
+
+- **LIP.** v -> R(v) + v does not decrease on the real line. (If R(v) <= w the claim R(v+w) >= R(v) - w is empty.)
+- **K7-A.** Let 0 <= v < R(0). On the torus Lambda, for every beta_F, the matrix C(beta_F 1, v) is at most
+  Sigma^2(0)/(1 - v Sigma^2(0)). In particular the specific heat (1/abs(P)) d^2 F/d beta_F^2 = <1, C 1>/abs(P) has this
+  bound. If Sigma^2_Lambda(0) <= S for all tori, then for every v < 1/S the limit free energy of K7 is C^(1,1) in
+  beta_F on the whole line: no first-order point and no divergent specific heat.
+- **K7-B.** If lambda := lambda_max(C(beta_F 1, v)) at some beta_F and v > 0, then Sigma^2(0) >= lambda/(1 + v lambda).
+  (If v Sigma^2(0) >= 1 this is immediate. Otherwise invert K7-A.) So at a point of the K7 plane where the variance of
+  the total plaquette sum grows faster than the volume (coexistence, or a divergent specific heat),
+  Sigma^2_Lambda(0) >= 1/v - o(1) as the torus grows.
+
+**Reading.** Row 712 asked for "a bound on a number (how far log w is from a linear function of x)". The number has
+an exact form. The distance is the noise variance v = 8 beta_A/3. The Wilson-side quantity that bounds it is R(0), the
+inverse of the largest eigenvalue of the plaquette covariance over all real coupling fields: no transition of the
+mixed family at beta_A < (3/8) liminf R_Lambda(0). And the flow law LIP holds on the whole adjoint line, negative
+adjoint couplings included.
+
+### 5.4 Numbers (GUIDE) and scope
+
+- One plaquette (exact quadrature, script `/tmp/sep996/scripts/faces.py`, run 06:50Z under the numeric lock, memory 71
+  percent free, under 10 s): Sigma^2(0) = 1/4 at b = 0. sup_b Var at v = 1, 2, 3, 3.9 is 0.283, 0.320, 0.360, 0.399;
+  the bounds of 5.2 are 0.333, 0.5, 1.0, 10. R(v) + v at v = -3, -1, 0, 1, 2, 3 is 2.77, 3.53, 4, 4.53, 5.12, 5.77:
+  it increases, as LIP says. The one-plaquette bound is not sharp.
+- On the homogeneous axis lambda_max(C(beta 1, 0)) >= <1, C 1>/abs(P) = d<x_p>/d beta. The published mean
+  plaquettes (RECALLED, not re-read: 0.5692 at 2.2, 0.6023 at 2.3, 0.6300 at 2.4) give a slope of about 0.33 near the
+  crossover. So R(0) <= about 3, and K7-A can at best exclude a transition of K7 below beta_A of about 1.1. Row 995
+  reports no bulk transition at beta_A = 1.25 on 16^4 and an endpoint near (1.2, 1.25), v = 3.3. The two are
+  consistent, and K7-B adds nothing to the axis value there (1/3.3 = 0.30 < 0.33). At the retracted endpoint
+  (1.48, 0.90), v = 2.4, K7-B would have given Sigma^2(0) >= 0.42.
+- Scope (corrected at 06:54Z after the three-face control below; the first version of this bullet called the
+  question open). Sigma^2(0) is a supremum over all real coupling fields. It is NOT bounded as the torus grows:
+  Lemma SHEET (5.5) gives Sigma^2_Lambda(0) >= (n - 1)/4 on a torus with a side n. So R_Lambda(0) tends to 0 for
+  Wilson SU(2) and for every other group, and 5.2 and 5.3 are true and empty on large tori. The remark above
+  "if the supremum were attained on the axis" is void: it is not attained there.
+- Consumer. Row 859's idea 4 names this bound ("a bound on the plaquette covariance operator, with inhomogeneous
+  couplings, some negative") and says that it is needed along typical paths only. Lemma SHEET shows that the form
+  with all coupling fields is false, with an explicit field. A form with typical fields is not proved here.
+
+### 5.5 Lemma SHEET: the tilt supremum grows with the torus (PROVED)
+
+**Lemma SHEET.** Let the torus have a side n >= 3 in direction 3, and let 1 <= m <= n - 2. Fix a site x and the stacked
+plaquettes p_i = (x + i e_3; 1, 2), i = 0, ..., m. Let Q be the 4m side plaquettes of the m cubes between them, and let
+b^(B) be the coupling field with b = B on Q and b = 0 elsewhere. Then
+
+ lim as B -> infinity of Cov(x_(p_i), x_(p_j)) = 1/4 for all i, j, so liminf lambda_max(C(b^(B), 0)) >= (m + 1)/4, and Sigma^2_Lambda(0) >= (n - 1)/4.
+
+Proof. Only the links of the tube enter the weight: the four horizontal links h(i) = (h_1, ..., h_4)(i) around p_i,
+i = 0, ..., m, and the four vertical links V(i) of the cube between p_i and p_(i+1), i < m. A side plaquette has the
+holonomy k = h(i) V' h(i+1)^* V^*, with V, V' the two vertical links at its ends. For fixed h(i) and V(i), the map
+h(i+1) -> k is a bijection of SU(2) that keeps the Haar measure (an inversion and two translations). The change
+of variables is triangular in the level i. So in the variables (h(0), all V, all k) the weight is the product of
+exp(B x(k)) over the 4m side plaquettes: h(0) and V are Haar, the k are independent with the law proportional to
+exp(B x(k)) dk, and everything is independent. U_(p_0) is a product of four independent Haar links, so it is Haar:
+E x_(p_0) = 0 and Var x_(p_0) = int x^2 (2/pi) sqrt(1 - x^2) dx = 1/4. Solving for h(i+1) = V^* k^* h(i) V' gives
+U_(p_(i+1)) = V_0^* k_1^* h_1 k_2^* h_2 h_3^* k_3 h_4^* k_4 V_0, which is conjugate to U_(p_i) when the four k are 1.
+As B grows each k tends to 1 in probability. So x_(p_i) - x_(p_0) tends to 0 in probability, and in L^2 because it
+is bounded by 2. Hence Cov(x_(p_i), x_(p_j)) tends to Var x_(p_0) = 1/4, and Var(sum_i x_(p_i)) tends to
+(m+1)^2/4. The Rayleigh quotient of C with the indicator vector of {p_0, ..., p_m} is Var(sum_i x_(p_i))/(m+1). QED
+
+Remarks. (1) The proof uses a class function with positive variance and nothing else: it holds for every group. A
+two-dimensional sheet of parallel plaquettes gives a bound of order n^2 in the same way. (2) The frozen side
+plaquettes turn the stack into one variable. No property of the weight can prevent this, because the coupling
+field is free. (3) GUIDE control (run 06:52Z, script `/tmp/sep996/scripts/cube.py`, 400,000 Haar samples): for three
+faces g_1, g_2, g_1 g_2 the largest eigenvalue of the tilted covariance rises from 0.25 at b = 0 to 0.435 at
+b = (5.2, 0, 0) and tends to 1/2, the value of two identified faces.
+
+**Consequence: the exact line where the tool fails.** Proposition TILT needs Hess H >= kappa > 0 at every s in R^P.
+By Lemma SHEET, lambda_max(C(b + s, 0)) exceeds 1/w for s in a set of fields that freeze a tube longer than 4/w.
+That set has a positive, very small Gaussian weight. So H is not convex on R^P once n - 1 > 4/w, and the
+Brascamp-Lieb step has no start. Mark: Proposition TILT is PROVED and is empty on large tori; "a tilt-uniform bound on
+the plaquette covariance" FAILS for every group.
+
+**What survives: the one-dimensional form (Proposition MF, PROVED GIVEN the Brascamp-Lieb inequality in dimension one).** Take one
+global shift s for all plaquettes, with law N(0, w/abs(P)). Then E_s exp(s E) = exp(w E^2/(2 abs(P))), E = sum_p x_p:
+the mixture is the Wilson model with a mean-field coupling of the total energy to itself. The hidden variable has
+H(s) = abs(P) s^2/(2w) - F(beta + s), a function of one variable, and only the homogeneous axis enters. Let
+X_Lambda := sup over real beta of F''(beta)/abs(P), the largest specific heat on the axis. If w X_Lambda < 1, the same
+three lines as in 5.2 give Var(E)/abs(P) <= X_Lambda/(1 - w X_Lambda) for the mean-field model, at every beta. Conversely, a
+double peak of E in the mean-field model at some w forces X_Lambda >= 1/w - o(1). So "the specific heat is bounded on
+the whole Wilson axis, uniformly in the torus" is the same statement as "Wilson is stable under a small mean-field
+energy coupling". It is expected for SU(2), false for Z_2, Q_8, 2T (first order on the axis; RECALLED) and it is
+B6a: FOUND as the conclusion of Lemma REG, with no converse. The K7 direction is the local form of the same
+coupling, and for the local form the axis is not enough: that is the content of Lemma SHEET.
+
+## 6. Step 6: the Wilson-side input in trace variables, and the exact line where it fails
+
+**6.1 The picture.** Let rho_Lambda be the law of the vector x = (x_p) under the Haar measure on the links. It is
+a probability measure on [-1, 1]^P and it does not depend on any coupling. The law of x under mu_(b,v) is
+proportional to exp(<b, x> + (v/2) abs(x)^2) rho_Lambda(dx). So in trace variables Wilson is a linear tilt of rho_Lambda,
+a negative adjoint term is a Gaussian tilt, and K7 is an anti-Gaussian tilt. This is the exact form of "the Wilson
+weight is log-linear in x" for the whole lattice, not for one plaquette.
+
+**6.2 The input that would make 5.2 work from the Wilson side (DOS-kappa).** "rho_Lambda has a density exp(-phi) on a
+convex set, with Hess phi >= kappa >= 0." If it held with kappa > 0, Brascamp-Lieb would give C(b, v) <= 1/(kappa - v)
+for every b and every v < kappa: a tilt-uniform bound, R(0) >= kappa, and no transition of K7 below v = kappa.
+One plaquette has it with kappa = 1: rho_1 = (2/pi) sqrt(1 - x^2), -(log rho_1)'' = (1 + x^2)/(1 - x^2)^2 >= 1.
+Plaquettes whose based loops are part of a free basis of the loop group (no closed surface) are independent Haar
+elements, so they have it with kappa = 1 too.
+
+**6.3 Proposition ELL (three faces; PROVED).** Let g_1, g_2 be independent Haar elements of SU(2) and
+x = (Re g_1, Re g_2, Re(g_1 g_2)). Then x is uniform on the elliptope
+E_3 = {x in [-1,1]^3 : 1 + 2 x_1 x_2 x_3 - x_1^2 - x_2^2 - x_3^2 >= 0}, with density 2/pi^2.
+Proof. Write g_i = cos theta_i + sin theta_i n_i with n_i a unit imaginary quaternion. Under Haar, x_i = cos theta_i
+has the density (2/pi) sqrt(1 - x_i^2), n_i is uniform on the 2-sphere, and all four are independent.
+Re(g_1 g_2) = x_1 x_2 - s_1 s_2 (n_1 . n_2), s_i = sqrt(1 - x_i^2), and n_1 . n_2 is uniform on [-1, 1] (Archimedes).
+So given (x_1, x_2), x_3 is uniform on [x_1 x_2 - s_1 s_2, x_1 x_2 + s_1 s_2], with density 1/(2 s_1 s_2). The joint
+density is (2/pi)^2 s_1 s_2/(2 s_1 s_2) = 2/pi^2 on {(x_3 - x_1 x_2)^2 <= (1 - x_1^2)(1 - x_2^2)}, which is E_3. QED
+E_3 is the set of 3 x 3 correlation matrices, a convex body. So three faces with one relation have (DOS-kappa) with
+kappa = 0 exactly: log-concave, and not strictly.
+
+**6.4 Proposition 4F (four faces; PROVED by hand).** Let g_1, g_2, g_3 be independent Haar elements and
+x = (Re g_1, Re g_2, Re g_3, Re(g_1 g_2 g_3)), theta_i = arccos x_i. Then x has the density
+rho_4(x) = (2/pi^3) abs(J(theta)), where J is the interval
+[max(abs(theta_1 - theta_2), abs(theta_3 - theta_4)), min(theta_1 + theta_2, 2 pi - theta_1 - theta_2, theta_3 + theta_4, 2 pi - theta_3 - theta_4)]
+(empty if the ends cross). rho_4 is not log-concave.
+Proof. Put h = g_1 g_2 and y = Re h = cos delta. By conjugation invariance the law of (x_3, x_4) given (g_1, g_2)
+depends on y only and equals the law of the last two coordinates of Proposition ELL given the first one equal to y.
+So rho_4(x) = int rho_3(x_1, x_2, y) rho_3(y, x_3, x_4)/rho_1(y) dy = (2/pi^2)^2 (pi/2) int dy/sqrt(1 - y^2) over the y that
+lie in both elliptopes. In the variable delta the two conditions are the two intervals whose intersection is J, and
+dy/sqrt(1 - y^2) = d delta. Now take theta = (0.5, 0.4, 0.4, 0.4). Then J = [0.1, 0.8], and for theta_1 in (0.4, 1.2) with
+the other three fixed, abs(J) = 1.2 - theta_1 = 1.2 - arccos x_1 =: l(x_1). l' = 1/sin theta_1, l'' = cos theta_1/sin^3 theta_1, and
+(log l)'' = (l cos theta_1 - sin theta_1)/(l^2 sin^3 theta_1). At theta_1 = 0.5: l = 0.7, cos = 0.8776, sin = 0.4794,
+0.7 x 0.8776 - 0.4794 = 0.1349 > 0. So log rho_4 is strictly convex along the x_1 axis at this point
+((log l)'' = 2.498). QED
+Control: the character form rho_k = (2/pi)^k sum_n n^(2-k) prod_i sin(n theta_i) gives the same density and the same
+second derivative 2.49802 (run 06:50Z, closed form against a 20,000-term series).
+
+**6.5 The cube (GUIDE).** By a shelling of the five-face disc, five of the six plaquette loops of a cube, with base
+paths, form a free basis and the sixth is the inverse of their ordered product. So the six traces of one cube have
+the law of (Re g_1, ..., Re g_5, Re(g_1 ... g_5)), with density rho_6 = (2/pi)^6 S_6,
+S_6 = -(1/64) sum over signs eps in {+1,-1}^6 of (prod eps_i) C_4(sum eps_i theta_i), C_4(phi) = pi^4/90 - pi^2 phi^2/12 +
+pi phi^3/12 - phi^4/48 for phi in [0, 2 pi], continued with period 2 pi. Finite differences of this closed form: of 3,923 random
+interior points, 27 have a positive eigenvalue of the Hessian of log rho_6 in x. The largest is +0.4449 at
+theta = (0.4549, 2.3264, 2.5543, 0.2898, 2.9478, 2.9907), direction (0.203, -0.920, -0.336, 0, 0, 0); the second difference
+is 0.44489, 0.44486, 0.44486, 0.44485, 0.44485 at steps 4, 2, 1, 0.5, 0.25 times 10^(-3). No violation was found
+along a coordinate axis at round points. So rho_6 is not log-concave either, in a small part of its support.
+The marginal of a log-concave measure is log-concave (Prekopa), and rho_6 is a marginal of rho_Lambda. So
+rho_Lambda is not log-concave on a hypercubic torus (GIVEN the GUIDE evaluation; a hand proof is a finite
+computation with a piecewise polynomial of degree four and is not done here).
+
+**6.6 Verdict of the attack.** (DOS-kappa) with kappa > 0 uniform in the torus is false by Lemma SHEET alone (PROVED):
+it would give R(0) >= kappa. Plain log-concavity (kappa = 0) holds for one, for independent, and for three faces, and
+fails at four faces (PROVED) and for one cube (GUIDE). With a defect, Hess phi >= -kappa_1, Brascamp-Lieb applies only
+for v < -kappa_1 and gives nothing at v = 0. So the mixture identity cannot be turned into an input for the Wilson
+axis by convexity in trace variables. The first failing line is "rho_Lambda is log-concave".
+What is left of the picture in one dimension: the density g_Lambda(E) of the total sum E = sum_p x_p. "g_Lambda is
+log-concave" says that no torus shows a double peak of the action at any beta. A uniform strict form is the bounded
+specific heat of Proposition MF. Both are B6a.

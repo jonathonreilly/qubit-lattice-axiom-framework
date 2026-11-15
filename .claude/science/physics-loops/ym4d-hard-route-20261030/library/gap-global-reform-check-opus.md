@@ -13,6 +13,8 @@ independent cross-provider check. Pinned at commit 0d3b45d91. No commit, no push
 - 20:48Z: steps 1-2 done (inputs read; tests (a), (b); Identity AV; Theorem BH Steps 1-5): all HOLD.
 - 20:51Z: step 3 done (Theorem BH Steps 6-7; Corollaries AV2, BH2): no WRONG in 7.1-7.2; two corrections (Step 7 qualifier; BH2 sign slip), see 3.1-3.3.
 - 20:53Z: step 4 done (Lemma CEN+, test (c)): HOLDS, both cases and the lattice statement.
+- 20:56Z: step 5 done (Lemma MC (a)-(c), test (e)): MC HOLDS; test (e) PARTLY: the 'void solution' meets the words of row 1013's (i) only in the measure sense of 'global'; scope note on CEN+'s reading sentence.
+- 20:59Z: step 6 done (Lemma HW (i)-(iii) with the mixed coefficient; Proposition LG with test (d)): both HOLD; one cosmetic note on LG's leading-order display.
 
 ## Plan (W1 of the checked file, L1004-1018; at most eight steps; one step per response, result appended before the next)
 
@@ -271,3 +273,132 @@ is used, as claimed. The remark on other groups (L486-490) is labelled ARGUED an
 **Lemma REM (L492-505; not in W1's list, read in passing).** The displayed step is correct: if no site is an end of
 both a link of P_B and a link of P minus P_B, then g = k on the sites of P_B and 1 elsewhere gives u^g = u' on P, and
 Z(u^g) = Z(u) by the change of variables on the integrated links. Not checked further.
+
+## 5. Step 5: (v) Lemma MC (checked file L506-531), test (e), and a scope note on Lemma CEN+'s reading
+
+### 5.1 Lemma MC: **HOLDS** ((a), (b), (c); one domain remark)
+
+- Set-up: for p containing l, orient the holonomy to start at x along l; t_p = Re(U_l sigma_p) (Re U = Re U^(-1) on SU(2),
+  so the orientation does not matter), and sum_(p contains l) beta_p t_p = Re(U_l Sigma_l). Correct.
+- (a) Given the other links, U_l -> k U_l (Sigma-hat k^(-1) Sigma-hat^(-1)) is a left and a right translation by fixed
+  elements, so it keeps Haar measure on U_l; Fubini gives the product measure. The set {Sigma_l != 0} is invariant
+  (Sigma_l does not involve U_l). Re(U_l' Sigma_l) = |Sigma_l| Re(k U_l Sigma-hat k^(-1)) = |Sigma_l| Re(U_l Sigma-hat) =
+  Re(U_l Sigma_l), and S' is untouched. Composition: R_(l,k)(R_(l,k')(U))_l = k k' U_l Sigma-hat k'^(-1) k^(-1) Sigma-hat^(-1)
+  = R_(l,kk')(U)_l (Sigma-hat is unchanged by R), and R_(l,-1) = id, so it is an action of SU(2)/{+-1} = SO(3). Correct.
+- (b) t_p = Re(U_l Sigma-hat Sigma-hat^(-1) sigma_p) = Re(W q_p) = w_0 q_(p,0) - w . q_p-vec; under R_(l,k), W -> k W k^(-1)
+  (w_0 fixed, w -> Ad(k) w) and q_p is a function of the other links. sum_p beta_p q_p = Sigma-hat^(-1) Sigma_l = |Sigma_l| is
+  real, so sum_p beta_p q_p-vec = 0. Correct.
+- (c) Under R_g: U_l -> g_x U_l g_y^(-1) (l = (x -> y)), sigma_p -> g_y sigma_p g_x^(-1), so Sigma-hat -> g_y Sigma-hat g_x^(-1). Then
+  (R_(l,k) R_g U)_l = k g_x U_l Sigma-hat g_x^(-1) k^(-1) g_x Sigma-hat^(-1) g_y^(-1) and (R_g R_(l,k') U)_l = g_x k' U_l Sigma-hat
+  k'^(-1) Sigma-hat^(-1) g_y^(-1); they agree for k' = g_x^(-1) k g_x, and on the other links both sides are R_g. With a
+  conjugation-invariant law of k, (P F)(R_g U) = int F(R_(l, g_x^(-1) k g_x) U) = (P F)(U) for gauge-invariant F; with Haar
+  law, P t_p = w_0 q_(p,0) != t_p in general, so P is not the identity. Correct.
+- Domain remark (add one line): the map is defined on {Sigma_l != 0}, which has full measure iff beta_p > 0 for some p
+  containing l (Sigma_l is then a non-zero real-analytic function of the other links, equal to sum beta_p at the
+  trivial configuration); extend R_(l,k) by the identity on the null complement. For homogeneous beta > 0,
+  Sigma-hat and hence R_(l,k) do not depend on beta, which is the sense in which it is "exact for every beta".
+
+### 5.2 Test (e): is Lemma MC a fair reading of row 1013's condition (i)? **PARTLY.**
+
+Row 1013's condition (i) (`library/gap-invent-selective-max.md` L277) is quoted exactly in 6.2. Lemma MC meets its
+literal words if "acts as a global symmetry" is read as "acts by maps that keep the whole measure": SO(3) is
+continuous and non-abelian, it acts on the integration variables, it keeps the Wilson measure, and it moves
+gauge-invariant observables. But row 1013 uses "global" in the physics sense in the sentence that motivates (i)
+(same file L183: "a pure gauge theory has none, because its only global symmetry on link variables is the
+centre"; under the measure reading that sentence would itself be false by Lemma MC), and in that sense a global
+symmetry is a field-independent map applied with one element everywhere, whose localisation is not a symmetry.
+R_(l,k) acts on one link with a field-dependent axis, and the checked file itself calls it "a local invariance"
+(L524-525). So: the sentence "Lemma MC meets it and gives nothing" (L645-646) is fair about the WORDING (the
+wording does not exclude field-dependent maps, so it admits void solutions such as MC or any Gibbs-sampler
+step, as 6.3 says), but it is not a counterexample to what row 1013 meant. Correction to the wording of 6.2
+(HOLDS AFTER CORRECTION): "Lemma MC meets the literal words of (i) when 'global symmetry' is read as 'symmetry of
+the measure'; (R-a) states explicitly the sense row 1013 used." The three-part condition (R-a)-(R-c) is a
+reasonable explicit form; whether it is the right filter is a lead's ruling (6.2 labels it ARGUED) and is not
+checked here.
+
+### 5.3 Scope note on Lemma CEN+'s reading (L484-485) and on (R-a)'s status line (L657)
+
+Lemma CEN+ assumes that the maps keep EVERY plaquette trace pointwise. The reading "in link variables there is no
+hidden rigid symmetry of any kind ... beyond the gauge group and the centre one-form symmetry" and the status line
+"(R-a) in link variables: only the gauge group and the centre (Lemma CEN+, PROVED)" speak of symmetries, i.e. maps
+that keep the Wilson MEASURE (or only the total action). That is a weaker hypothesis, and the bridge is not written.
+As written, both sentences HOLD AFTER CORRECTION: either add "that keep every plaquette trace", or add the bridge.
+The bridge looks short; the checker's sketch (not part of W1; unchecked by anyone; for the lead to place):
+(1) on a box or torus with all links integrated, the one-link marginal of the Wilson measure is Haar (gauge
+average at the tail), so an on-site map phi = prod phi_l with phi_* mu = mu has (phi_l)_* Haar = Haar for every l,
+and phi keeps product Haar measure; (2) for phi invertible (bimeasurable), phi_* mu = mu then means S o psi = S a.e.,
+psi = phi^(-1); (3) two distinct links lie in at most one common plaquette, so the mixed second difference of
+S o psi - S in two links of p is that of beta_p (t_p o psi - t_p); hence g_p = t_p o psi - t_p is a.e. a sum of one-link
+functions; (4) averaging over one link with Haar measure (psi_l(U_l) is Haar, so E <psi_1(U_1), M'> = 0 = E <U_1, M>)
+makes the other three one-link functions a.e. constant, so g_p is a.e. constant and its Haar mean is 0: t_p o psi = t_p
+a.e. whenever beta_p != 0; (5) an a.e. version of CEN+ (choose four triples (U_2, U_3, U_4) whose M span H; the M' then
+span H, so psi_1 agrees a.e. with a linear map that is isometric on a dense subset of S^3, hence with some T in O(4);
+then CEN+ applies to the continuous representatives). Non-invertible measure-preserving on-site maps are not
+covered by this sketch.
+
+## 6. Step 6: (vi) Lemma HW and (vii) Proposition LG (checked file L267-369), with test (d)
+
+Context read and found correct on the way (not in W1's redo list): Lemma AUX (a)-(c) (integrate phi at fixed U);
+Identity H2 (with V_l = phi_x^(-1) U_l phi_y = (U^g)_l for g_x = phi_x^(-1), N_kappa(U) = N_kappa(V) by gauge invariance, so
+the (V, phi) density does not involve phi: phi is uniform and independent of V); Identity H3 (V -> k_x V k_y^(-1) is a
+gauge transformation of V; Re(e^(theta a)(v_0 + v)) = cos(theta) v_0 - sin(theta) a . v with theta = f_x - f_y = - (df)_l).
+
+### 6.1 Lemma HW: **HOLDS** ((i), (ii) with the mixed coefficient, (iii))
+
+- (i) e^(F_x) V e^(-F_y) = V + F_x V - V F_y + (1/2) F_x^2 V + (1/2) V F_y^2 - F_x V F_y + O(F^3). First order: Re(F_x V) - Re(V F_y)
+  = - F_x . s + F_y . s = - Delta F . s. Second order: - (1/2)(|F_x|^2 + |F_y|^2) t - Re(F_y F_x V), and Re(F_y F_x V) =
+  - (F_x . F_y) t - (F_y x F_x) . s, so the total is - (1/2) |Delta F|^2 t - (F_x x F_y) . s. Correct. J(F) = - sum_l kappa_l
+  Delta_l F . s_l is the first-order term, i.e. the derivative along phi_x -> phi_x e^(-eps F_x) (which sends V_l to
+  e^(eps F_x) V_l e^(-eps F_y)). Correct.
+- (ii) Translation step: in int exp(A(phi e^(-delta F) e^(-eps F'))) d phi_free substitute phi'_x = phi_x e^(-delta F_x) at free
+  sites (right translation by a fixed element; F = 0 at pinned sites), which removes delta. So the mixed
+  derivative vanishes: E[D_delta D_eps A] + E[J(F) J(F')] = 0. **Mixed coefficient, redone:** the delta eps terms of
+  (1 + eps F'_x)(1 + delta F_x) V (1 - delta F_y)(1 - eps F'_y) are F'_x F_x V - F'_x V F_y - F_x V F'_y + V F_y F'_y (exactly the
+  file's four). With Re(u v q) = - (u . v) t - (u x v) . s for imaginary u, v and cyclicity of Re:
+  t-part: - F'_x . F_x - F_y . F'_y + F_y . F'_x + F'_y . F_x = - Delta F . Delta F';
+  s-part: - F'_x x F_x - F_y x F'_y + F_y x F'_x + F'_y x F_x = F_x x (F'_x - F'_y) + F_y x (F'_x - F'_y) = (F_x + F_y) x Delta F'.
+  So D_delta D_eps A = sum_l kappa_l [ - t_l Delta F . Delta F' + s_l . ((F_x + F_y) x Delta F') ], and (ii) follows with the
+  signs as printed. Special cases: a perpendicular to c kills the contact term and leaves
+  - E sum kappa_l (f_x + f_y)(g_x - g_y)(a x c) . s_l; a = c kills the bracket. Correct.
+- (iii) With f extended arbitrarily to the free sites (the free-site rotation does not change N_pin, Haar), - log N_pin
+  has second derivative - E[A''] - Var(A'); A'' = sum_l kappa_l [ - |Delta F|^2 t_l - 2 (F_x x F_y) . s_l ] with F = a f, so
+  F_x x F_y = 0 and - E[A''] = E sum_l kappa_l t_l (df)_l^2; A' = J_a(f). Then H(f) <= sum_l kappa_l (df)_l^2 <= kappa sum_l (df)_l^2
+  (|t_l| <= 1, Var >= 0), for every extension. Correct. The Remark identifying HW with OpenAI's (3.5)-(3.8) is a
+  reading and is not checked.
+
+### 6.2 Proposition LG: **HOLDS** (one cosmetic note); test (d): **YES** on both counts
+
+- Bond form: Re(e^(-eta a) phi_x^(-1) U phi_y) = Re(phi_x^(-1) U phi_y e^(-eta a)) = <phi_x, U phi_y e^(-eta a)>, so T_l q = U_l q e^(-eta_l a),
+  T_l = L_(U_l) R_(e^(-eta_l a)) in SO(4). Correct.
+- **Moment rule on S^3:** with G standard Gaussian in R^4, G = |G| phi with |G| independent of phi, and
+  E|G|^(2m) = 2^m Gamma(2 + m)/Gamma(2) = 2^m (m + 1)! = 4 . 6 ... (2m + 2). Wick for G divided by this gives
+  E prod <phi, w_i> = c(m) sum over matchings prod <w_i, w_j>, c(m) = 1/(2^m (m + 1)!). Checks: c(1) = 1/4 (E phi_i phi_j =
+  delta_ij/4); c(2) = 1/24, so E phi_1^4 = 3/24 = 1/8 = 3/(n(n + 2)) at n = 4. Correct.
+- Expansion: the integrand is a product over links of exp(kappa <phi_x, T_l phi_y>); expanding and using independent
+  uniform phi_x, the Gaussian picture gives, for each choice of n and of pairings pi at every site, products of
+  traces of products of T_l (forward) and T_l^T (backward) along the closed walks traced by (n, pi), times prod c(m_x)
+  and prod kappa^(n_l)/n_l!. Odd degree gives 0. Correct.
+- **Test (d), commutation:** L_A R_B q = A q B = R_B L_A q by associativity. So along gamma the product is
+  L_(U_gamma) R_(B_gamma), with B_gamma the product of the e^(-+ eta_l a) in reverse order; all of them have the one axis a,
+  so they commute and B_gamma = e^(- eta(gamma) a), eta(gamma) the signed sum (+ forward, - backward; T_l^T = L_(U_l^(-1))
+  R_(e^(+eta_l a))).
+- **Trace 4 Re(U_gamma) cos(eta(gamma)):** sum over e in {1, i, j, k} of e-bar a e = 0 for imaginary a (the four
+  half-turns about 0, i, j, k axes sum to zero), so sum_e e-bar A e = 4 Re A and tr(L_A R_B) = sum_e Re(e-bar A e B)
+  = 4 Re A Re B; with Re e^(-theta a) = cos theta this is 4 t_gamma cos(eta(gamma)). It is also the character of
+  (1/2, 1/2), (2 Re A)(2 Re B). Correct.
+- **Test (d), sign of the twist:** cos is even, so the sign convention of eta(gamma) does not enter the trace;
+  what matters is that forward and backward traversals enter with opposite signs, which the T_l^T rule gives.
+  Consistency with H3: k_x = e^(f_x a) gives Re(k_x V k_y^(-1)) = Re(e^(- (df)_l a) V), i.e. eta = df in LG's convention, and
+  then eta(gamma) = 0 on every closed walk, so N^(df) = N_kappa, as stated (also directly: phi_x -> phi_x e^(- f_x a) is a
+  Haar-preserving change of variables). Correct.
+- Non-negativity and the diamagnetic bound: the coefficients kappa^(n_l)/n_l!, c(m_x) and the 4's are >= 0, and
+  |t_gamma cos(eta(gamma))| <= 1, so each term is bounded by its value at U = 1, eta = 0; those terms are >= 0 and sum to
+  N_kappa(1) (Tonelli). N^eta > 0, so N^eta <= N_kappa(1). Correct.
+- **Coefficients:** order kappa^2: one link with n_l = 2 (no multiple edges in a box or a torus of side >= 3):
+  (kappa^2/2!) c(1)^2 . 4 = kappa^2/8 per link, total kappa^2 L/8. Correct. Order kappa^4: a plaquette with n_l = 1 on its
+  four links and the unique pairing at each corner: kappa^4 c(1)^4 . 4 t_p cos((d eta)_p) = (kappa^4/64) t_p cos((d eta)_p),
+  orientation-free (cos even, Re U = Re U^(-1)). Correct. The other order-4 terms (one link with n_l = 4; two doubled
+  links) live on trees, where every closed walk has U_gamma = 1 and eta(gamma) = 0: free of U and of eta. Correct.
+- Leading-order response (L353-355), **cosmetic:** "(kappa^4/64) E_YM[t_p] sum_p (d eta)_p^2" should read
+  "(kappa^4/64) sum_p E_YM[t_p] (d eta)_p^2" unless E_YM[t_p] does not depend on p (torus). The derivation
+  (N^(eps eta)/N_kappa = 1 + (kappa^4/64) sum_p t_p (cos(eps (d eta)_p) - 1) + O(kappa^6) on a finite lattice) is right.

@@ -191,3 +191,67 @@ The missing statement is a **series bound**: xi(Sigma_2l, D_l) <= kappa xi(Sigma
 - What is established, PROVED: the bracket identity is kept verbatim by model (d), which is ordered at large beta given the RECALLED theorem; the central-twist identities, with their blind half (Lemma PAR), are kept verbatim by model (c). ARGUED: the readings of the last column.
 - So a proof of the short step must use, beyond the bracket: (1) a perfect Lie algebra, in every direction of the response; (2) a continuous path to the centre (spreading); (3) isotropy of the cell in four dimensions, so that the classical cost is scale invariant; (4) the absence of a mass term in the contact term (no matter current); (5) for the consumer, a property of the Wilson weight. Items (1), (3), (5) are found again (rules R4, R6; tests K1, K7, Proposition V). Items (2) and (4) are stated here in exact form: (2) through Lemma PAR, (4) through Lemma GG.
 - Off the path of (W) except as constraints. The one new exact tool is the blind half of (T-vor).
+- 2026-11-15T20:44Z (`date -u`). Step 3 done (Section 3). Step 4, route (ii), next.
+
+## 4. Step 4 result: route (ii), field-dependent covariant moves
+
+Overlap named (rule 0a): row 1016's plan step 7 takes reopen condition (ii) of row 1013 in general. This section keeps to the row's own question: what is the exact cost form of a field-dependent move, and can it stay a curl form at order-one response? Notation of row 1011 3.1-3.2: a link field b acts by U_l -> exp(eps b_l) U_l; X(b) = - sum_l b_l . N_l, with N_l the force on l in the frame of its tail (for a boundary link this is Proposition A (iii)).
+
+### 4.1 Lemma FLOW: the response is a minimum over flows (PROVED; existence of the minimiser ARGUED)
+
+**Setting.** A cell c with pin omega, interior configuration U, action A. A **flow field** V: on each boundary link the fixed rotation B_l (so omega_s = exp(s B) omega); on each interior link l a smooth su(2)-valued function b_l(U, omega). Put div V = sum over interior links l and a = 1, 2, 3 of the derivative of b_l^a in the direction a of link l, and
+
+  Psi_V = V A + div V.
+
+**Statement.** Let tau_s be the flow of V. Then F_c(omega_eps) - F_c(omega) = - log E_omega[exp( integral from 0 to eps of Psi_V(tau_s) ds )]. So F_c' = - E[Psi_V], and
+
+  H_c(omega; B) = - E_omega[V Psi_V] - Var_omega(Psi_V) <= - E_omega[V Psi_V],     F_c(omega_eps) - F_c(omega) <= - E_omega[ integral from 0 to eps of Psi_V(tau_s) ds ].
+
+Equality holds in the first bound if and only if Psi_V is constant almost surely.
+
+**Proof.** For fixed omega the map U -> U_eps is a diffeomorphism of the interior configuration space. Left translations generate divergence-free fields for the Haar measure, so its Jacobian J_eps satisfies (d/ds) log J_s = (div V)(tau_s). Substituting U' = U_eps in Z_c(omega_eps) gives Z_c(omega_eps) = integral of exp(A(tau_eps)) J_eps dU. The exponent minus A is g_eps = integral from 0 to eps of Psi_V(tau_s) ds, with g' = Psi_V and g'' = V Psi_V at 0. Differentiate - log E[exp(g_eps)] twice; the last bound is Jensen. QED
+
+With the extension by zero this is Proposition A (ii) of row 1011. A field with Psi_V constant exists (ARGUED: solve the Poisson equation of the Langevin generator on the compact interior space for the mean-zero function E[X(B)] - X(B); standard elliptic theory, not rebuilt, not used below). So **the response equals the least cost over all flows**, and every explicit flow is a blind bound. This is the exact form of "moves with a controlled Jacobian". For a flow that vanishes on the boundary, E[Psi_V] = 0 and E[Psi_V^2] = - E[V Psi_V]: its cost is a variance.
+
+### 4.2 Lemma PROJ: a frame move sees the projected force; its gradient cost is the non-conservation of that current (PROVED)
+
+A **frame** is a field of unit vectors n_x in su(2) at the sites; it may depend on U in any way. A frame move is b = theta n, b_l = theta_l n_tail(l), theta real. Put j_l = n_tail(l) . N_l (the projected force) and D_l n = n_tail - Ad(U_l) n_head.
+
+**Statement.** For every configuration U:
+(i) X(theta n) = - sum_l theta_l j_l.
+(ii) (Gauss law.) For every site z with no pinned link: sum over l with tail z of N_l = sum over l with head z of Ad(U_l)^(-1) N_l.
+(iii) For lambda a real function on the sites, zero at sites with a pinned link, and (d lambda)_l = lambda_tail - lambda_head: X((d lambda) n) = sum_l lambda_head(l) (D_l n) . N_l. Equivalently, the divergence of j at z is - sum over l with head z of (D_l n) . N_l.
+(iv) If the frame move is divergence free (for instance tree-transported, C8 of row 1013), its cost form is Q(theta) = E[(sum_l theta_l j_l)^2], the covariance of the projected force. Q is a curl form (zero on every gradient) if and only if j is conserved almost surely.
+
+**Proof.** (i) X is linear in the field at the configuration U. (ii), (iii) The field G_l = lambda_tail n_tail - lambda_head Ad(U_l) n_head is the first-order generator of the gauge map g_x = exp(eps lambda_x n_x), because g_x U_l g_y^(-1) = exp(eps lambda_x n_x) exp(- eps lambda_y Ad(U_l) n_y) U_l. The action is gauge invariant, so X(G) = 0 at every U, whatever the dependence of n on U. For (ii) take lambda the indicator of z and a fixed axis. For (iii) write G = (d lambda) n + lambda_head D n. (iv) For a divergence-free field Psi = V A = X(theta n). QED
+
+Reading. In the lab frame (n constant) j_l = a . N_l and its covariance is diagonal by the gauge average: this is Lemma WN. For U(1), j = N is conserved identically. For SU(2), j is the abelian projection of a covariantly conserved force, and it is conserved exactly where D n is orthogonal to the forces.
+
+### 4.3 Lemma FR+: the frame defect in spectral form (PROVED; a one-line extension of Lemma FR of row 1011)
+
+For every field v of vectors in su(2) on the sites (not necessarily of unit length), with lambda_x(omega) = min over unit n of the sum over plaquettes p based at x of |s_p x n|^2 as in row 1011 7.3:
+
+  sum over links of |D_l v|^2 >= (1/6) sum over sites x of lambda_x(omega) |v_x|^2.
+
+Proof. The telescoping identity of Lemma FR, (1 - Ad(omega_p)) v_x = a sum of four rotated terms D_l v, is linear in v, and |(1 - Ad(omega_p)) v| = 2 |s_p x v|. So |s_p x v_x|^2 <= sum over the links of p of |D_l v|^2. Sum over the plaquettes based at x, use the definition of lambda_x for the direction of v_x, and sum over x; a link lies in at most 6 plaquettes. QED
+
+So the adjoint covariant Laplacian of a configuration is bounded below by lambda_x/6 as a multiplication operator: every frame, and every su(2)-valued profile, pays the non-abelian part of the field site by site.
+
+### 4.4 Lemma SPLIT: for U(1) a twist divides exactly; for SU(2) it divides only on a reducible cut (PROVED)
+
+In the setting of Lemma PAR take G = U(1), phase fields in place of sign fields, and twist systems tau_i^(alpha) with tau_i^(alpha) = sigma^(alpha) on the pinned links and closed outside P_i, multiplicative in alpha. Then for all alpha_1, ..., alpha_n:
+
+  E[prod_i r_i(alpha_i; om_i)] = rho(alpha_1 + ... + alpha_n),    so   V(alpha) <= sum_i E[v_i(alpha/n; om_i)]   (Jensen).
+
+Proof: as Lemma PAR (i), with tau = prod_i tau_i^(alpha_i). QED
+
+Use. If each sub-container obeys a quadratic class bound v_i(alpha') <= (h/2) alpha'^2, the large container obeys it with h/n. With n = 4 parallel copies this is the factor 1/4 of doubling the thickness, exactly, for every pin. This is the container form of "the blind bound is scale invariant for compact U(1)" (row 1011 3.2).
+
+For SU(2) the same substitution with a non-central g = exp(theta n) on the links that cross a cut changes the plaquettes that cross the cut twice: the two insertions of g conjugate the tangential link u between them, and the plaquette is unchanged if and only if g commutes with u. So the fractional identity holds exactly on configurations that are reducible along the cut, with axis n. That set has measure zero. Off it the defect per crossing plaquette is the second-order term beta theta^2 |u_perp|^2, where u_perp is the part of u outside the centraliser of n: the mass term of 4.2 (iii) again.
+
+### 4.5 Sizes (ARGUED) and the verdict on route (ii)
+
+- **Bare links, any frame.** By 4.2 the gradient cost of a divergence-free frame move is E[(sum_l lambda_head D_l n . N_l)^2]. With E|N_l|^2 = 18 beta xbar (Lemma WN) and a defect that is not aligned against the forces, this is of order beta E|D n|^2 per site. By 4.3 and typical plaquette axes (|s_p|^2 of order 1/beta, directions not parallel), E|D_l n|^2 is at least of order 1/beta. So the mass term is of order one per site, against a curl term of order beta/l^2 at wavelength l. The curl form survives up to l^2 of order beta. For tree-transported frames the defect on a non-tree link is 1 - Ad of the holonomy of its fundamental loop, and the same count gives l^3 of order beta. Both agree with rows 1011 7.3 and 1013 (C8, C9). Not proved: the lower bound E lambda_x >= c/beta, and the exclusion of a frame built to keep D n orthogonal to the forces (one scalar condition per site against two free angles; no such frame is constructed, none is excluded).
+- **At order-one response.** The band is entered with beta_eff of order one at the cell scale. With bare links at beta of 2.3 to 2.6 the count above gives cells of side 1 to 2 only. With blocked variables a frame with defect of order one per block link exists by definition of "order one", and Lemma FLOW with such a frame can give a blind bound of order one. It cannot give the sign of the next step: the frame Ward identity (4.2 (iii)) has an error term of the same order as the bracket gain, with no small parameter. In 2D the gain c_sh min(v, 1) is positive because the identity is exact.
+- **What an exact repair would be.** A covariant current with j conserved pathwise (4.2 (iv)), or a divisible twist (4.4). Each exists exactly on reducible configurations only. Lemma CEN said this for field-independent multipliers; 4.2 and 4.4 say it for field-dependent frames, in exact form.
+- **Verdict.** Route (ii) FAILS as a mechanism for (SS) at one bare coupling (ARGUED, with the exact Lemmas FLOW, PROJ, FR+, SPLIT behind it). With blocked variables it is the open items (N1)-(N3) of row 1011 7.4, of the (K-flow) kind, and it stops at the upper edge of the band. Tests: compact U(1) passes with zero gain (4.4: exact division, scale-invariant bound, no drop); the five-dimensional test is not reached; Lemma PT is met through the product structure of N. On the path of (W) only as a constraint.

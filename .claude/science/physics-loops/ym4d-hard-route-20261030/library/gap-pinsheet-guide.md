@@ -106,3 +106,19 @@ The infrared bound of row 977 5.3 holds at p_1 with room (ratio 0.38 and 0.33).
 
 Half-chain test 0.97 sigma. (analyze.py: half-split fixed to whole blocks after a reshape error on this file; no number changed.)
 
+## Step 5. P3 results (GUIDE), sides 8 and 12 (analysed 01:22Z; side 16 running)
+
+Raw `data/p3_S8_T16_seed803.txt`, `data/p3_S12_T24_seed1203.txt`; analysis `data/analysis_p3_S8_S12.txt`. 16 blocks of 625 and 500 sweeps.
+R^0_S = E[(sum_y a_0(y))^2]/A (a_0 = (1/2) tr P), averaged over the two slices; R4 := E|M|^2/A (all four components) for comparison with P1.
+
+| side | q_0 | R^0_S | C1 bound A(q_0 - G_S/beta) | R^0_S/A | R4 | R4/4 | tau | Ghat^0(p_1) | IR bound |
+|---|---|---|---|---|---|---|---|---|---|
+| 8 | 0.2526 +- 0.0037 | 10.80 +- 0.27 | 5.61 | 0.169 | 42.37 +- 0.02 | 10.59 | 0.7520 +- 0.0002 | 0.2786 | 0.7422 |
+| 12 | 0.2448 +- 0.0066 | 21.70 +- 1.11 | 7.45 | 0.151 | 90.29 +- 0.06 | 22.57 | 0.7517 +- 0.0002 | 0.5363 | 1.6226 |
+
+tau_int of R^0 is 3.0 (side 8) and 7.8 (side 12) sweeps, under the 1/20-of-a-block limit; half-chain tests -0.8 and -1.4 sigma.
+Observation (not a criterion): q_0 is 1/4 within errors and R^0 = R4/4 within errors, so with every other link pinned the free plane
+still behaves as an O(4)-symmetric ordered sheet whose frame direction is nearly uniform; R4 equals P1's R_S within about 0.3 percent.
+This is what row 977 9.1 ARGUED (q_0 = 1/4 up to winding effects); the run sees no winding effect at the 2 to 3 percent level.
+The slow mode of R^0 is the drift of that frame direction, which no exact symmetry averages; its tau_int grows with the side.
+

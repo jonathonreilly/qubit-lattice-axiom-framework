@@ -85,6 +85,11 @@ Lead note (FINISH L1081): W2 waits for W1; W4 (conditional dichotomy as a milest
 is proofs or counterexamples, not a catalogue of open conditions." Row 998 9.4 point 3 (L866-867) proposes no proof
 row on (CAS), (DRIFT), (CONTR), (U1) or (U2): "No mechanism for the selective step is on record".
 
+### Lead rules in force
+
+- Lead rule W2 (from row 998 W2 as corrected by row 999; it replaces the last sentence of row 988 N2 and the scope note under row 996): A direction row on the order-one input states its kind. (K-one) is a property of the measure at one scale; it names a number and is tested against Proposition V (library/gap-crux-fp.md L356) with p named, and against K7 as a belief. (K-flow) is a statement that reads the first-passage data of Wilson SU(2) (K_j to infinity at one fixed g); no single comparison model binds it, compact U(1) and the free photon included; if it reads one factor of the state space, a product with any no-seed factor binds it (Lemma PT, Villain U(1) at beta at least 2^14); Theorem D2 and Lemma SHEET bind its supremum and all-fields forms. A fact-test table says which T each column tests. Q_8 and 2T stay tests of even-sector tools (check 884). (FINISH row 999.)
+- Row 982 N2 in the narrower form of row 1000 Step 2 (FINISH row 1000).
+
 ## Obligations
 
 Labels per `docs/ai_methodology/skills/physics-loop/references/long-running-execution.md` L259-264. No file under

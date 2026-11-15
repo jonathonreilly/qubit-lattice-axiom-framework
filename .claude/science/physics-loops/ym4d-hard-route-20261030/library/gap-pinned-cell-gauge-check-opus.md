@@ -38,6 +38,9 @@ Stop rule (W1): stop at the first WRONG that breaks 4.7 and report it.
 - 2026-11-15T19:00Z: step 3 done (Section 3): Proposition A (i) and Proposition W re-derived, both CORRECT-NO-ADVANCE, no defect. Next: step 4, (iii) B and B', (iv) SEAG.
 - 2026-11-15T19:03Z: step 4 done (Section 4): B CORRECT-NO-ADVANCE; B' PROVED part ADVANCE; SEAG identity CORRECT-NO-ADVANCE with defect 1 (averaging site at the far corner, repaired) and a scope remark. Next: step 5, (v) CEN and CEN2, (vi) EMB against OpenAI p. 13.
 - 2026-11-15T19:05Z: step 5 part 1 written (5 (v)): CEN, CEN2 CORRECT-NO-ADVANCE. Next: fetch OpenAI O(4) paper, check EMB.
+- 2026-11-15T19:06Z: step 5 done: EMB checked against OpenAI p. 13, CORRECT-NO-ADVANCE. Next: step 6, (vii) Lemma FR.
+- 2026-11-15T19:07Z: step 6 done: Lemma FR CORRECT-NO-ADVANCE, defect 2 (wording of the NA = 0 gloss). Next: step 7, the two corrections of row 1009.
+- 2026-11-15T19:09Z: step 7 done: both corrections of row 1009 UPHELD, each narrowed (Section 7). Next: step 8, verdict table and RESULT.
 
 ## 1. Step 1: the brief, copied, and what this check reads
 
@@ -336,3 +339,124 @@ gauge transformations do not change F_c at any order. So the reading holds in th
 necessary condition on THIS engine (a symmetric twist on every configuration), as row 1011 9.6 says, not a statement
 about the wall (W).
 
+### (vi) Lemma EMB against p. 13 of OpenAI's O(4) paper (row 1011 L320-342). CORRECT-NO-ADVANCE.
+
+Source read: OpenAI, "Sharp mass bounds for the two-dimensional O(4) model" (posted, unrefereed), github.com/openai/math
+at commit 4eaee87548250b2682affda7d05d947c05554bae, `preprints/Sharp-mass-bounds-for-the-two-dimensional-O4-model-September-23-2026/paper.pdf`,
+fetched 2026-11-15 into a new empty folder `/tmp/row1014-src.UwovzH/` (102 pages; text of p. 13 extracted with
+PyMuPDF by a script kept in a separate folder). What p. 13 says, in short: Section 3.1 "Local class and Ward
+identities"; Q(S) = {0, ..., S}^2 with all boundary spins fixed; for each positively oriented edge e = x -> y,
+t_e + s_e = q_y U_e q_x^(-1) with U_e any fixed unit quaternion; signed coefficients |b_e| <= b <= B with w_e = b_e except
+w_e = b_e/2 on edges tangent to the boundary; density Z^(-1) exp(sum_e w_e t_e); (3.4) X_Q, H_Q; (3.5) H_Q <= b I "valid
+with signed coefficients and twists"; (3.6) under q_x -> e^(a f_x) q_x, D_f^2 A = sum_e w_e t_e (f_y - f_x)^2; (3.7) the bracket
+D_eta s_e = t_e (eta_y - eta_x) + (eta_y + eta_x) x s_e.
+
+Interior links. In c = {0,1,2} x {0,1} x {0..S}^2 the boundary 3-faces are x_0 in {0, 2}, x_1 in {0, 1}, y_j in {0, S}.
+Links in directions 0, 2, 3 keep x_1 in {0, 1} fixed, so lie in a face. A direction-1 link (x_0, 0, y) -> (x_0, 1, y) lies
+in a face iff x_0 in {0, 2} or y is on the boundary of the square. So the interior links are exactly q_y = U_1(1, 0, y),
+y in the open square, and the q_y with y on the boundary of the square are pinned (L322-324). Correct.
+
+Plaquettes that see the q_y. A direction-1 link at x_0 = 1 lies in plaquettes of the planes (0,1), (1,2), (1,3) only.
+The (0,1) ones get strength 0. For k = 2, 3 the plaquette based at (1, 0, y) has l_1 = q_y, l_2 = u_k(1,1,y), l_3 = q_(y+k),
+l_4 = u_k(1,0,y), so U_p = q_y u_k(1,1,y) q_(y+k)^(-1) u_k(1,0,y)^(-1); with the trivial pin on x_1 = 0, t_p = Re(q_y u_k(1,1,y) q_(y+k)^(-1))
+= Re(q_(y+k) u_k(1,1,y)^(-1) q_y^(-1)) (Re z = Re z^(-1) for unit z). This is OpenAI's t_e for the edge y -> y + k with
+U_e = u_k(1,1,y)^(-1), a pinned link of the face x_1 = 1 (L330-332). Correct. (U_p is the inverse of OpenAI's bond
+quaternion, so s_p = - s_e; only t enters the density, so the law is the same.)
+
+Weights. Such a plaquette (x_0 = 1, x_1 varying, y_k varying) lies in a boundary 3-face iff y_j in {0, S} for the other
+direction j, that is iff the edge is tangent to the boundary of the square; then it lies in exactly one face, shared
+with one neighbouring cell of the tiling by translates of c, so w_p = 1/2; otherwise w_p = 1. This is OpenAI's half
+allocation. Correct.
+
+Every member arises. Given OpenAI's data (S, boundary spins, U_e, b_e): pin q_y (y on the boundary of the square) to the
+boundary spins, u_k(1,1,y) = U_e^(-1), u_k(1,0,y) = 1, other pinned links arbitrary; beta_p = b_e on the (1,k) plaquettes at
+x_0 = 1 and 0 elsewhere. Signed strengths are needed for signed b_e (the row says "signed if allowed"). Correct.
+
+The twist. B = a f(y) on the direction-1 links acts by q_y -> e^(eps a f(y)) q_y, which is OpenAI's rotation q_x -> e^(a f_x) q_x
+on p. 13, including the fixed boundary spins (consequence (a), L334-336). Correct. Consequence (b): with a pure-gauge
+pin u_k(1,0,y) = h_y h_(y+k)^(-1), Re(q_y u q_(y+k)^(-1) h_(y+k) h_y^(-1)) = Re((h_y^(-1) q_y) u (h_(y+k)^(-1) q_(y+k))^(-1)), so q -> h^(-1) q
+works; with a general pin the bond is two-sided. Correct. (c), (d) are readings; not checked beyond this.
+
+Side check of row 1011's (M2)-(M3) against the same page: (3.6) gives the classical direct cost and (3.5) the free
+start bound H_Q <= b I, valid with signed couplings and twists, as row 1011 Section 2 states.
+
+Why no advance: the layer idea is on file (Durhuus and Frohlich through rows 712, 825, 977); this is its exact match
+with OpenAI's class, with no consumer on the path of (W) (the row says so, L342, 9.5).
+
+## 6. Step 6: (vii) Lemma FR (row 1011 L460-484). CORRECT-NO-ADVANCE.
+
+Covariance of D. Under omega_l -> g_tail omega_l g_head^(-1), n_x -> Ad(g_x) n_x: D_l n -> Ad(g_tail) n_tail - Ad(g_tail omega_l g_head^(-1)) Ad(g_head) n_head
+= Ad(g_tail) D_l n. Gauge covariant in the tail frame, as stated.
+
+Telescoping, written out (the row gives one line). With omega_p = omega_1 omega_2 omega_3^(-1) omega_4^(-1):
+
+  n_x - Ad(omega_p) n_x = D_(l_1) n + Ad(omega_1) D_(l_2) n - Ad(omega_1 omega_2 omega_3^(-1)) D_(l_3) n - Ad(omega_p) D_(l_4) n,
+
+term by term: [n_x - Ad(omega_1) n_(x+mu)] = D_(l_1) n; Ad(omega_1)[n_(x+mu) - Ad(omega_2) n_(x+mu+nu)] = Ad(omega_1) D_(l_2) n;
+Ad(omega_1 omega_2)[n_(x+mu+nu) - Ad(omega_3^(-1)) n_(x+nu)] = - Ad(omega_1 omega_2 omega_3^(-1)) D_(l_3) n; Ad(omega_1 omega_2 omega_3^(-1))[n_(x+nu) - Ad(omega_4^(-1)) n_x]
+= - Ad(omega_p) D_(l_4) n. The four brackets telescope to n_x - Ad(omega_p) n_x (the intermediate terms cancel in pairs), and
+each term is a rotation of one D_l n, so |(1 - Ad(omega_p)) n_x| <= sum_i |D_(l_i) n| by the triangle inequality.
+
+Rotation identity. omega_p = cos phi + s^ sin phi, s_p = s^ sin phi; Ad(omega_p) is the rotation by 2 phi about s^, so
+|(1 - Ad(omega_p)) n| = |n_perp| |1 - e^(2 i phi)| = 2 |sin phi| |n_perp| = 2 |s_p x n|. Correct (L465, L471).
+
+Squaring and summing. (sum of four)^2 <= 4 sum of squares gives |s_p x n_x|^2 <= sum over the four links of p of |D_l n|^2.
+Each plaquette has one base, so summing over x and the plaquettes based at x is summing over all plaquettes; a link
+in direction mu lies in 2 plaquettes of each plane (mu, nu), nu != mu, so in at most 6 in d = 4. Hence
+sum_x sum_(p based at x) |s_p x n_x|^2 <= 6 sum_l |D_l n|^2, and the left side is at least sum_x lambda_x(omega) = NA(omega).
+So sum_l |D_l n|^2 >= NA(omega)/6 for every unit frame n. Correct.
+
+Defect 2 (wording, L479; does not break anything). "NA(omega) is zero only when all plaquette axes at each site are
+parallel (an abelian pin)": the "only when" is right, but NA = 0 is the site-local condition that the axes of the
+plaquettes BASED at each x are parallel to one n_x, which may change from site to site. An abelian pin (all links in
+one maximal torus) has NA = 0; the converse fails. Repair: read "(for instance an abelian pin)". The "Use" and
+"ARGUED size" lines that follow are labelled reading/ARGUED and are not part of W1 (the sign in "Use" is test (c),
+PASS). The order count in "ARGUED size" (mass-like part of order theta^2 per site after b x (1/b); against b f^2 S^4 it
+wins once S^2 > b) is consistent arithmetic of an ARGUED estimate, not a proof.
+
+Why no advance: an elementary inequality, new to the lane, with no consumer (the row's (N1)-(N3) are not attacked).
+
+## 7. Step 7: the two corrections of row 1009 (row 1011 Section 5, L413-418)
+
+Anchors checked: row 1009 = `library/prior/gap-o4-pinned-cell-read-opus.md` at f4dd47b82; L387-390 is Step 6 note (i),
+L406 is Step 7 table row 3. Both citations of row 1011 point at the right lines.
+
+### Correction 1 (row 1009 L406, row 3, analogue column). UPHELD, with a narrower reach than its wording.
+
+Row 1009 wrote: an SF form "1/g-bar^2 <= the bare value times the classical action" "would follow the same way by
+dropping a variance". Row 1011: "It does not: by Proposition SEAG the direct term is not classical, at any pin."
+
+Judgement. "The same way" in 2D is: H <= E[direct term], and the direct term is bounded configuration by
+configuration by b times the classical cost ((3.5), (3.6) on p. 13: |t_e| <= 1 and the cost is (f_y - f_x)^2). In the gauge
+cell, dropping the variance is still valid for every configuration-independent extension B~ of the boundary field
+(A (ii)): H_c <= E[direct(B~)]. What fails is the second half: the direct term t_p |delta_p|^2 + kappa_p . s_p is built from
+adjoint transports by fluctuating links, and SEAG proves, at every pin and every strength field, that a fixed-colour
+curl-free field has E[direct] = 2 sum over 18 plaquettes of beta_p w_p E[t_p] > 0 while its classical action is 0. So the
+one-line route of row 1009 does not exist, and the correction stands as a correction of that route.
+
+Its reach (narrowing, not a defect of the verdict): SEAG proves this for the interior field a d lambda, whose boundary
+data are 0. That dropping the variance fails for EVERY extension of a non-zero boundary field (including an optimal
+one) is not proved in row 1011; it is a reading (row 1011 4.4 "Meaning"). The SF bound itself, at the trivial pin and
+homogeneous strength, is neither proved nor refuted: row 1011 keeps it OPEN (L316-318, 9.7), which is the right label.
+Suggested wording: "It does not follow by that route: by Proposition SEAG the direct term of a fixed-colour field is
+not classical, at any pin; whether the SF bound holds is OPEN."
+
+### Correction 2 (row 1009 L387-390, Step 6 note (i)). UPHELD, with the same precision.
+
+Row 1009 wrote that the pinned-cell supremum "is an UPPER bound on a response, which is the direction a supremum over
+pins can keep", and left open whether Theorem D2 binds a gauge form. Row 1011: for SU(2) the supremum over pins of the
+response to a fixed-colour field is not bounded by the classical action (Proposition B'); the binding fact is gauge
+covariance, not Theorem D2.
+
+Judgement. Read literally, an upper bound is always keepable on a finite cell (for fixed c and b, H_c(omega; B) is
+bounded over the compact set of pins), so row 1009's sentence is not false as a statement about finiteness. What the
+iteration needs is the scale-free form "sup over pins of H_c <= h x classical action", and that is what B' refutes: PROVED
+for the class with all strength profiles (no constant at all, by the closed theta of Section 4 (iii-2)), with the growth
+of the best constant like b S ARGUED. The mechanism is Proposition B (the pin supremum is blind to site-wise colour
+rotations), so "the binding fact is gauge covariance" is right. On D2: this check did not re-read Theorem D2; it agrees
+that B' binds the cube class without D2, and accepts row 1011's reading that D2's sheets need interior pins or thin
+boxes (Lemma EMB (d)) as a reading, not checked here.
+
+Both corrections were marked "ARGUED until checked" by row 1011. After this check: correction 1 holds as a correction
+of the method (its consequence for an optimal extension stays a reading); correction 2 holds for the classical
+normalisation, PROVED through B'.

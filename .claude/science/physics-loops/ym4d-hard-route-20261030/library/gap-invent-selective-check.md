@@ -28,7 +28,9 @@ CONFIRMED, CONFIRMED WITH CORRECTION, NOT CONFIRMED, FALSE.
 
 ## Progress log
 
-- 2026-11-15 19:41Z: file created, plan written. Step 1 next.
+Status: COMPLETE. All eight steps are written below; the verdicts and the RESULT line are in Section 8.
+
+- File created and plan written shortly after 19:39:43Z (date -u at the session start). Step 1 next.
 
 ## 1. Step 1 result: inputs, repo search, checklist
 
@@ -68,7 +70,7 @@ U = x + i y.sigma, x = (1/2) tr U, c = i sigma_3, c^2 = -1. Then (1/2) tr(c U) =
 (1/2) tr(c^2 U) = -x (checked: (1/2) tr(i sigma_3 (x + i y.sigma)) = (1/2) tr(i x sigma_3 - y_3) = -y_3).
 The weight is exp(H), H = sum_p beta_p x_p, x_p = (1/2) tr U_p.
 
-- 2026-11-15 19:52Z: step 1 done. Step 2 (tests (a)-(e)) next.
+- step 1 done. (time not measured) Step 2 (tests (a)-(e)) next.
 
 ## 2. Step 2 result: W1 tests (a)-(e), each redone by hand
 
@@ -133,7 +135,7 @@ corners with theta = 0 contribute cos 0 = 1. (One may also average over independ
 WN1 writes one number xbar = E x_p for all plaquettes; on a torus with unequal sides E x_p can
 depend on the plane (mu, nu). With equal sides (hypercubic symmetry) it is one number.
 
-- 2026-11-15 20:05Z: step 2 done. Step 3 (WN (i)-(iii), WN1-WN3 line by line) next.
+- step 2 done. (time not measured) Step 3 (WN (i)-(iii), WN1-WN3 line by line) next.
 
 ## 3. Step 3 result: Lemma WN (i)-(iii) and Corollaries WN1-WN3, line by line
 
@@ -197,7 +199,7 @@ at large beta "needs E(1 - x_p) < 3/(2 beta)". From 1 + x <= 2, rho >= 1 - (1 + 
 so the sufficient condition is E(1 - x_p) < 3/(3 + 2 beta), as 7.3 writes; 3/(2 beta) is only its
 leading order and is not sufficient by itself. Not used by any PROVED statement.
 
-- 2026-11-15 20:25Z: step 3 done. Step 4 (Lemma TWIST) next.
+- step 3 done. (time not measured) Step 4 (Lemma TWIST) next.
 
 ## 4. Step 4 result: Lemma TWIST, line by line
 
@@ -218,7 +220,7 @@ TWIST does not say: with an admissibility constraint on plaquettes (as in Lusche
 fields) sectors exist, and a small-curvature extension of winding data can still be obstructed.
 That concerns the refilling test K8 and row 1013 6.3, which W1 does not ask me to check.
 
-- 2026-11-15 20:31Z: step 4 done. Step 5 (Lemmas JEN, SLAB) next.
+- step 4 done. (time not measured) Step 5 (Lemmas JEN, SLAB) next.
 
 ## 5. Step 5 result: Lemma JEN (i)-(ii) and Lemma SLAB, line by line
 
@@ -255,7 +257,7 @@ O(4) model at large beta. So a class that contains these pins at weak coupling h
 mixing. The pins are atypical (data 1); that is enough against a statement uniform over pins, and
 it says nothing about typical data, as the file's wording already implies.
 
-- 2026-11-15 20:44Z: step 5 done. Step 6 (the two ARGUED remarks) next.
+- step 5 done. (time not measured) Step 6 (the two ARGUED remarks) next.
 
 ## 6. Step 6 result: the two ARGUED remarks of W1
 
@@ -281,20 +283,23 @@ So the Jensen exponent of JEN (i) is (eta^2/2) J(F) + O(eta^3), J(F) = sum_p bet
 **Step C (the minimisation decouples).** A corner value theta is a difference of two link-end
 values at one site, and each link-end belongs to one site. So the free corners use only the values
 at free sites, the non-free corners only the values at boundary sites. The free part is minimised,
-to 0, by F constant at each free site (for instance F = 0 on all interior link-ends). For the
+to 0, by F constant at each free site (for instance F = 0 on every link-end at a free site). For the
 non-free part: a fully pinned p contributes beta_p ((da)_p)^2, fixed (the sum of theta around p is
 the oriented sum of F(l,s) - F(l,e) = a_l). A plaquette with one pinned edge l contributes
-beta_p E_1[x_p] (a_l + phi_out - phi_in)^2, where phi are the values on the integrated link-ends at
-the two ends of l. At a boundary site interior to a 3-face there is exactly one integrated link-end
+beta_p E_1[x_p] (a_l + phi(head of l) - phi(tail of l))^2 (l traversed forward), where phi(z) is the
+value on the integrated link-end of p at the end z of l. At a boundary site interior to a 3-face there is exactly one integrated link-end
 (the inward link), so phi is one function on those sites and the term is (a + d phi)_l^2. The way a_l
 is split between the two ends of l does not enter.
 
-**Step D (the size).** Let c_* = min of E_1[x_p] over the plaquettes with one pinned edge. Then
+**Step D (the size).** Let c_* = min of E_1[x_p] over all plaquettes of c, assumed > 0 (then every term of J is >= 0,
+and the terms not used below may be dropped). Then
  min over F of J >= c_* beta * min over phi of sum over face-interior boundary links (a + d phi)_l^2,
-and J at F = 0 on interior link-ends is at most beta (sum over pinned-face plaquettes ((da)_p)^2 +
-4 |a|^2 + edge terms). For a profile of size 1/R that is co-closed on each face with no flux through
-the face boundary (a = curl of a bump of height 1, discretised), <a - d phi, a> = |a|^2 for every
-phi, so the minimum is at least |a|^2, which is of order R^3 * R^-2 = R. The upper side is also of
+and J at F = 0 on every link-end of an integrated link is at most beta (sum over pinned-face plaquettes ((da)_p)^2 +
+C |a|^2), C an absolute constant (a pinned link lies in at most a fixed number of plaquettes with a
+pinned edge). Take a = delta psi on the grid of face-interior sites of one face (psi a 2-cochain on
+that grid, a bump of height 1 vanishing near the edge of the face; a = 0 on the other faces). Then
+delta a = 0 on that grid, so <a - d phi, a> = |a|^2 for every phi, and the minimum is at least
+|a|^2, which is of order R^3 * R^-2 = R; da is of order R^-2, not 0. The upper side is also of
 order R. So the best lab-frame bound is of order c_* beta eta^2 R, while the classical action of
 the smooth extension is of order beta eta^2 (field strength eta/R^2 on R^4 plaquettes). The factor R
 is confirmed.
@@ -353,4 +358,116 @@ W1 says: no new attack. Steps A-D above only write out the minimisation that 5.1
 written out; they claim nothing beyond the remark. No numeric run was made (none was needed: every
 check above is a hand computation).
 
-- 2026-11-15 21:02Z: step 6 done. Step 7 (W2 against row 1011) next.
+- step 6 done. (time not measured) Step 7 (W2 against row 1011) next.
+
+## 7. Step 7 result: W2, the three answers for row 1011's construction
+
+Read: row 1013 5.1-5.2 (Section 5 of this file checks them); row 1011
+(`library/gap-pinned-cell-gauge-max.md`) 3.1-3.2, 4.1-4.5, 4.7, 7.1-7.5; the RESULT line of its
+check, row 1014 (`library/gap-pinned-cell-gauge-check-opus.md` L534). Row 1014 does not hold these
+three answers. Row 1013 7.3 asks for them "in the check file of row 1011"; row 1015's brief puts
+them here, and this row edits no other file. The lead may copy them.
+
+**(1) Blind bound on the stiffness of a cell of side R: it scales like beta R, not beta.**
+Row 1011's blind bound is the direct term of its Proposition A (ii), the stiffness with Var X
+dropped (the 2D start bound "H <= b"). For a fixed-colour field B = a theta this is the
+second-order lab-frame Jensen exponent J of Section 6.1 of this file, with F(l, head) = 0. Its
+size: (i) at the trivial pin, of order c_* beta eta^2 R for a smooth non-gradient boundary profile
+(Section 6.1 here; second order; c_* > 0 assumed); (ii) at every pin, a curl-free interior field
+already has direct term 36 b E[t_p], not 0 (row 1011 SEAG, confirmed by row 1014); (iii) over the
+class, sup over pins is at least of order b S times the classical action (row 1011 B'; proved by
+row 1014 only for boundary-only strengths, ARGUED for homogeneous strengths). No covariant
+representative or theorem of the account supplies a bound of order beta in row 1011. Its
+"H_c(1; a theta) <= b times the classical action of the harmonic extension" is OPEN (row 1011 4.4,
+Meaning; row 1014: still OPEN). Lemma FR says every colour frame costs at least NA(omega)/6. The
+supply it names, (N1)-(N2) of 7.4, is a ring-measurable covariant frame with small defect and a
+controlled Ward identity about it (in the continuum, background gauge invariance). Row 1011 does
+not cite the one candidate row 1013 5.1 names, Balaban's Ward-identity extraction of
+(1/g_k^2) A(U_k(V)) on small fields (CMP 109 (0.22), Theorem 1; row 1012 B1).
+
+**(2) Yes: the class contains non-cubic cells, and two pinned parallel hyperplanes at distance 1.**
+Row 1011's cells are boxes, products of intervals {0..S_mu}, with cubes a special case (3.1). The
+box {0..S}^3 x {0, 1} pins both slices x_4 = 0 and x_4 = 1 and the lateral faces. Its integrated
+links are the temporal links over the open square; the plaquettes that contain them are not
+boundary plaquettes, so w_p = 1. With every pin equal to 1 and strength b, this member is exactly
+the 3D O(4) model of row 1013 Lemma SLAB, with fixed boundary spins instead of a torus. So SLAB's
+consequence applies to C_b with one extra step: the order of the boundary-pinned 3D O(4) model at
+large b (RECALLED in kind, not checked here; Frohlich-Simon-Spencer is a torus statement). Row 1011
+4.5 itself embeds OpenAI's 2D class through the thin box {0,1,2} x {0,1} x {0..S}^2 (Lemma EMB,
+confirmed by row 1014) and says that cubes with boundary pins only do not contain such sheets. Row
+1011's failure verdict 4.7 does not use thin boxes: Propositions B, B', SEAG and Lemma CEN hold for
+every box, cubes included.
+
+**(3) It is posed at one fixed bare coupling with no effective actions, and no iteration runs.**
+The class C_b uses bare Wilson cells with strengths in [0, b] (or |beta_p| <= b): one bare coupling,
+no RG, no effective action. The iteration fails at its first piece: (M2), a twist with classical
+direct cost, and (M3), the free start bound, FAIL for SU(2) (row 1011 4.7, 7.1; row 1014: 4.7
+stands, no WRONG). The only repair row 1011 names, (N1)-(N3) of 7.4, reads typical fields of the
+Wilson measure at small effective coupling. Row 1011 7.4 classes this as the (K-flow) kind with
+first-passage data, and as a reading it says the repair does not cross the band by itself. This
+agrees with row 1013 5.1's ARGUED consequence. Both files are by one provider in one session
+family, so the agreement is not an independent check.
+
+- step 7 done. (time not measured) Step 8 (verdict table, RESULT) next.
+
+## 8. Step 8: verdicts, defects, what stays open, RESULT
+
+**Provenance.** Claude Opus 5.5, max effort, Mac mini worker 3, one session, no subagents, at
+commit b9125417f. A check by one model of the same provider as the author (Claude Fable 5.2):
+not an audit and not independent. Where a step used a different derivation it says so (test (b)
+second route, WN1 by the spectrum of K_(2,2,2,2), TWIST in general form). No numeric run and no
+literature search. Times by `date -u`: start 19:39:43Z; 19:56:51Z after step 7. The per-step times
+first written in the progress log were estimates and wrong; they were removed.
+
+**W1: first failing step: none.** Tests (a)-(e) PASS.
+
+| Statement (row 1013) | Verdict | Note |
+|---|---|---|
+| Lemma WN (i), (ii), (iii) | CONFIRMED; CORRECT-NO-ADVANCE | Section 3 |
+| Corollary WN1 | CONFIRMED; CORRECT-NO-ADVANCE | xbar is one number only with equal sides; new: the constant 3 is attained |
+| Corollary WN2 | CONFIRMED; CORRECT-NO-ADVANCE | both uses of "pairwise distinct free sites" checked |
+| Corollary WN3 (identity) | CONFIRMED; CORRECT-NO-ADVANCE | rho > 0 and rho -> 1/2 stay ARGUED; consistent with 1 - 2/d |
+| Lemma TWIST | CONFIRMED; CORRECT-NO-ADVANCE | holds for any region, any pinned set; conditional laws are images |
+| Lemma JEN (i), (ii) | CONFIRMED; CORRECT-NO-ADVANCE | first-order terms vanish at the pin 1 |
+| Lemma SLAB (identity) | CONFIRMED; CORRECT-NO-ADVANCE | also inside a larger lattice |
+| Remark 5.1, "order beta eta^2 R" | CONFIRMED at the pin 1, second order in eta, given c_* > 0 | minimisation written out, 6.1 Steps A-D |
+| Its consequence ("needs the account's effective actions") | stays ARGUED | field-dependent moves not covered |
+| Proposition LOC | stays ARGUED (summary, not a theorem) | item 1 confirmed for field-independent moves; one sentence corrected |
+
+**Defects (none breaks a PROVED statement; ranked by what each affects).**
+1. LOC 4.3, the one-sentence reason: "its only global symmetry on link variables is the centre" is
+   false as written. Constant gauge maps are a continuous non-abelian global symmetry of the link
+   variables, though they do not move gauge-invariant observables. Read: "no continuous non-abelian
+   group acts globally on the integration variables and moves gauge-invariant observables" (as
+   row 1013 7.2 and row 1016 already word the reopen condition). The same fix applies to 6.2.
+2. 5.1, "whose curl is not zero": too weak. The factor R needs a non-gradient part of size 1/R
+   on a positive fraction of the boundary; a curl on one plaquette gives a bound of order 1/R^2.
+   Also the remark is shown here only at the pin 1; at a non-abelian pin it is not computed.
+3. WN1, WN3: E x_p and E(1 - x_p^2) are one number per torus only when all sides are equal.
+   Otherwise use plane-dependent means and their minimum.
+4. WN3: "a proof that rho > 0 at large beta needs E(1 - x_p) < 3/(2 beta)". The sufficient
+   condition from 1 + x <= 2 is E(1 - x_p) < 3/(3 + 2 beta), as 7.3 writes; 3/(2 beta) is only its
+   leading order.
+
+**Additions made by this check (marked; same provider, unchecked by another model).**
+- WN1: the bound 3 beta xbar |f|_2^2 is sharp; equality for every f with f(x, mu) = a_x.
+- TWIST: the conditional law given u^Omega is the image of the law given u (all gauge-invariant
+  conditional expectations agree), for any region and any pinned set.
+- 6.1 Steps A-D: at the pin 1 on a cube, the non-free corners of each plaquette form an arc along
+  pinned links, their cost is coherent, E_1[x_p] (sum of theta)^2, and the best lab-frame
+  second-order Jensen exponent is between c_* beta min_phi |a + d phi|^2 and C beta (|a|^2 + |da|^2).
+
+**W2 (Section 7).** (1) Row 1011's blind bound scales like beta R, not beta. Nothing in row 1011
+supplies a bound of order beta; its trivial-pin Schrodinger-functional bound is OPEN. (2) Yes. C_b
+holds non-cubic boxes, including the slab {0..S}^3 x {0, 1} (Lemma SLAB with fixed boundary spins)
+and the thin boxes of Lemma EMB. (3) It is posed at one bare coupling with no effective actions, but
+no iteration runs: it fails at (M2)-(M3). Its named repair (N1)-(N3) is of the (K-flow) kind.
+
+**Stays open.** rho > 0 at any beta (ARGUED); c_* > 0 (the least mean plaquette of a cube with pin 1);
+remark 5.1 at non-abelian pins; field-dependent moves (C8) and the decoherence length of order
+beta (RECALLED); order of the boundary-pinned 3D O(4) model, which SLAB needs inside C_b; the
+consequence "needs the account's effective actions" (ARGUED). Not checked here, because W1 does not
+ask: design rules R1-R10, candidates C4-C9, the kill table beyond the lemmas, and 6.3 (K8). (W),
+(CAS) and the seed are not moved.
+
+RESULT: Row 1015 (Claude Opus 5.5 max, Mac mini worker 3; check of row 1013's W1 and W2; same provider as the author, so not independent; no numeric run): W1 first failing step none, tests (a)-(e) PASS; Lemma WN (i)-(iii), Corollaries WN1-WN3 (identities), Lemma TWIST, Lemma JEN (i)-(ii) and Lemma SLAB (identity) CONFIRMED, CORRECT-NO-ADVANCE, with four minor defects, none breaking (LOC's "only global symmetry is the centre" is false as written, since constant gauge maps are a global non-abelian symmetry, so read "moves gauge-invariant observables"; 5.1's "curl not zero" needs a non-gradient part of size 1/R; xbar is uniform only with equal sides; the rho > 0 condition is 3/(3 + 2 beta)); new here: WN1's constant 3 is sharp, and remark 5.1 ("best lab-frame bound of order beta eta^2 R") is CONFIRMED at the pin 1 to second order with the minimisation written out (given c_* > 0), while its consequence "needs the account's effective actions" and Proposition LOC stay ARGUED (LOC item 1 confirmed for field-independent moves). W2: (1) row 1011's blind bound scales like beta R (direct term = lab-frame Jensen; SEAG; B'), and nothing there supplies beta; (2) yes, C_b contains non-cubic boxes including the two-slice slab of Lemma SLAB and EMB's thin boxes; (3) it is posed at one bare coupling without effective actions, but it fails at its first piece, and its repair (N1)-(N3) is (K-flow). Open: rho > 0, c_* > 0, non-abelian pins, field-dependent moves (C8), the plus-boundary order for SLAB inside C_b; (W), (CAS) and the seed untouched.

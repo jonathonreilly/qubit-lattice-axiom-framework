@@ -32,6 +32,7 @@ Author: Claude Fable 5.2 (max), Mac mini worker. Not yet checked by another mode
 - 19:39Z file created with the plan. Nothing proved yet.
 - 19:56Z step 1 done (inputs read, wall and contract written). Nothing proved yet.
 - 20:08Z step 2 blind pass written (inventory, conclusions C1-C8, assumptions, candidates). Proofs follow in Sections 3, 4, 7.
+- 20:10Z comparison with the lane and with main / PR #10114 written (2.5). No row holds the items attacked below.
 
 ## 1. Step 1: inputs, the wall stated twice, the target contract (exercise steps 0 and 1)
 
@@ -194,3 +195,41 @@ trace field and angle moves.
 **Step 2 result.** The blind pass gives two statements to prove at once (Lemma CEN+, Theorem BH), one void
 solution of condition (i) that sharpens it (Lemma MC), and ten candidates to write out. Nothing is "new" before
 the comparison of Section 2.5.
+
+### 2.5 Comparison with the earlier work (exercise step 5; rule 0a)
+
+Search scope. (a) grep of `library/gap-*.md`, `library/prior/gap-*.md`, `parts/gap.md`, `library/open-core.md` and
+`FINISH.md` for: custodial, Fradkin, unitary gauge, Hubbard, quantum link, rotor, axial / tree / temporal / Landau
+gauge, Gribov, Gauss law, overrelax, microcanonical, von Mises, Goldman, Jeffrey, diamagnetic, McBryan, complex
+translation, isometry, homogeneous strength, exponential family, gluelump, static charge, Georgi, adjoint Higgs,
+plaquette formulation, Batrouni, free ensemble, average over pins, conditional Neumann, single-link map, stabiliser,
+Elitzur, rigid, residual gauge, global colour, zero-form, class angle, entropy functional, trace field, loop gas.
+(b) Across branches: bare blob-less depth-1 fetch of `main` (8b11ae2bb9) and PR #10114 (f76f6c649c) into
+`/tmp/row1016-git`; `git grep` for custodial, Fradkin, Elitzur, global symmetry, residual gauge, overrelax, von
+Mises, Schrodinger functional, unitary gauge, global colour, non-abelian symmetry, zero-form, Gribov in the 67 `.md`
+files of main with ym4d in the path and in 42 files of `agents/ym4d-proof/` picked by name. Hits: on main only
+"unitary gauge" and "residual gauge" in the existence chain (Balaban's gauges); on PR #10114 two uses of global
+colour invariance in coupling computations. No reformulation with a global symmetry, no custodial twist and no
+Schrodinger-functional average on either branch. `library/open-core.md` lists no item of this row. A bounded
+search gives "not found in the files searched", not "absent".
+
+| Item of the blind pass | Already in the lane? | Where | Credit |
+|---|---|---|---|
+| C2, Lemma MC (single-link rotations about the staple as exact non-gauge symmetries; condition (i) needs "rigid") | partly: the von Mises-Fisher law of a link and overrelaxation are used in the lane's samplers; the reading as a void solution of condition (i) was not found | `gap-fctest-opus.md` L147 (sampler) | row 946 for the sampler |
+| C3, Lemma CEN+ (arbitrary single-link maps) | partly: multipliers only | row 1011 Lemma CEN, Corollary CEN2; `gap-arealaw2-opus.md` 3.1 (stabiliser of a slab law under sitewise rotations) | rows 1011, 831 family |
+| C4, Lemma REM | yes in substance | Lemma TWIST (row 1013 4.2); `gap-brainstorm-max.md` L283, L356 (idea 7: "One rotated boundary condition is a pure gauge and costs exactly nothing", with the squared-link-angle cost); `gap-crux-exercise-r858-max.md` L257 (C2) | rows 1013, 859, 858 |
+| C5, auxiliary kernels | partly | row 1013 C7 (soft gauge kernel; "the frame decouples from every gauge-invariant observable"); `gap-outside-box-max.md` L146 (I10: fundamental Higgs as a larger theory, first reading S0); `gap-brainstorm-max.md` L406 (idea 33: the Higgs handle, continuation in kappa); `gap-tiltproof-max.md` L125-127 ((S4): gauge-Higgs form with a custodial background). Not found: the custodial twist response as a Wilson-loop series with non-negative coefficients | rows 1013, 1004, 859, 979 |
+| Adjoint unit field | yes | `gap-outside-box-max.md` L147 (I11) and Lemma GG (kappa = infinity is compact U(1) exactly) | row 1004 |
+| Layer comparison | yes | Durhuus and Frohlich; `gap-outside-box-max.md` L149 (I13); rows 712, 825, 831; Lemma SLAB (row 1013) | those rows |
+| Hamiltonian with Gauss law | partly: as gap stability along a path (I14), and the gluelump reading of the Witten Laplacian on 1-forms (`gap-brainstorm-max.md` L299). Global colour on an unprojected space: not found | rows 1004, 859 |
+| Hubbard-Stratonovich on quaternions | yes | `gap-brainstorm-max.md` L329 (idea 41 (c)) | row 859 |
+| Complex translations | yes, as a recalled source | `prior/gap-gauge-stiffness-read-opus.md` L98-100 (M4, M5) | row 1012 |
+| C7, plaquette variables and the Bianchi constraint | partly | `gap-skeleton-max-b.md` L215-220 (A12: FALSE as a route, because the Poincare inequality in the plaquette metric also holds for U(1)) and L581 ("the only interaction is the Bianchi constraint"); `gap-pca-opus.md` 5.1. Not found: the fibre count, and "every plaquette field v is a first-order move for SU(2), only exact v for U(1)" | rows 670, 967 |
+| C8, Identity AV and Theorem BH | not found. Check 1014 (L104-109) names another route (omega = 1 minimises F_int), unproved | scope as above | - |
+
+**What the fresh pass added (pending proofs below):** Lemma CEN+, Lemma MC with the sharpened condition "rigid",
+Identity AV and Theorem BH, the loop-gas form of a kernel's twist response, the fibre count behind the angle moves.
+**What it only found again:** Lemma REM, the Higgs field as a larger theory, the adjoint field, the layer
+comparison, the quaternion Hubbard-Stratonovich idea, plaquette variables with the verdict of A12. Where the
+earlier work is stronger I use it: A12's verdict (a covariance bound in the plaquette metric says nothing about
+decay) is the test that candidate (ANG) must meet, and it is applied in Section 7.

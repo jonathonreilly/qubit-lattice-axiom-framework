@@ -98,3 +98,63 @@ Reading. Along a family with E_1 = M a_iota the average over s of gam_s is at mo
 
 So the direction is: do not ask the sub-unit levels for convexity in the fine metric. Ask them only for what is exact under the block map, and put the whole inequality at the unit. Step 4 does this.
 
+### 3.3 Lemma TEL (the level-by-level count behind T3 and T4). PROVED for independent levels, given the tensorisation of entropy (RECALLED, classical)
+
+Let A_0, ..., A_K be independent, A_k in R^(n_k) with law mu_k, and Ent_(mu_k)(phi^2) <= (2/rho_k) integral |grad phi|^2 d mu_k. Let D_k: R^(n_k) -> R^N be linear and Y := sum over k of D_k A_k. Then for every C^1 function f on R^N with bounded gradient:
+
+  Ent(f(Y)^2) <= 2 E <grad f(Y), (sum over k of D_k D_k^T/rho_k) grad f(Y)> <= 2 ||sum over k of D_k D_k^T/rho_k|| E |grad f(Y)|^2.
+
+Proof. For the product law, Ent(g^2) <= sum over k of (2/rho_k) E |grad_(A_k) g|^2 (sub-additivity of entropy over independent coordinates). Put g = f(Y); grad_(A_k) g = D_k^T grad f(Y). QED
+
+Use. With rho_k = a_- beta_k (P2, P3 with the Bakry-Emery constant) and D_k D_k^T of norm of order L^k on the slice, the law of Y has a log-Sobolev constant at least 1/||sum D_k D_k^T/rho_k||, of order a_- beta_K L^(-K). For Gaussian levels with precision at most a_+ beta_k the covariance of Y is at least sum D_k D_k^T/(a_+ beta_k), so the constant is at most a_+ beta_K L^(-K) times a number: the count is sharp in the benchmark. (That ||R_0 D_k||^2 is of order L^k is the linear count of T3; the account's kernel bounds for the minimisers were not read. ARGUED.) For dependent levels there is one more term, the covariance of f^2 with the score of the finer levels; it is not needed, since the route fails T3 already in the benchmark.
+
+**Why the true slice law can be tighter than the benchmark (ARGUED, one paragraph).** Lemma CAP says: Var_nu(f)(1 - e^(-2 E_1)) is at most the bridge energy of f, which carries 1/beta_0. For a gauge-invariant f that lives at the unit scale and has variance of order one this forces a fine gradient with |grad f|^2 of order beta_0 a M, not beta_K a M: larger than the linear count by beta_0/beta_K. The gradient of such an f is rough: it is a smooth kernel times adjoint rotations by the fine holonomies, and its projection on the smooth response D_K is smaller than its norm by a factor that is a product over the levels below K of (1 - c g_k^2). That product is a power of beta_K/beta_0. Lemma CAP fixes the power at one for the functions that saturate the gap. So a proof on the fine lattice needs the exponent exactly: this is the "exact at one loop" of fact test T3. I do not attempt it.
+
+## Step 4. The inequality left at the unit scale
+
+### 4.1 What is exact below the unit
+
+(EX) *Invariance of torus partition functions.* A block map with a normalised kernel leaves Z(B x t) unchanged for every torus on which it is defined (row 978, A1; PROVED there in one line). So
+
+  X_iota(t; B) = log Z_iota(B x t) - t lim over t' of (1/t') log Z_iota(B x t')
+
+is the same number for the fine weight and for the unit-scale effective weight on the blocked torus. No metric and no fine variable occurs in X.
+
+(PQ-EX), a port question that stays OPEN here: the account builds its effective weights on tori with four equal sides l = 2 L^m (outline 21521-21532, quoted in row 978 Step 7 from row 720). X needs the slabs B x t with t different from the side of B, and t' -> infinity. Whether the account's steps apply to these tori with the same constants was not read.
+
+(TH) is the start value of row 978, 5.2 and 5.7: X_iota(tau_0/a_iota; B) <= Theta(ell), from (APR) or from two-sided stability. It is the only other input from below the unit.
+
+### 4.2 Three forms of the unit inequality, in decreasing strength
+
+Let B be the cube of physical side 2 ell, E_0 = 0 < E_1 <= E_2 <= ... the energies of the gauge-invariant transfer operator on B (r_i = e^(-E_i)), and for real t > 0: S(t) = sum over i >= 1 of e^(-E_i t), X(t) = log(1 + S(t)), U(t) := -X'(t) = sum over i of E_i e^(-E_i t)/(1 + S(t)). U(t) is the mean energy of the box in its thermal state at inverse temperature t; X(t) + t U(t) is the entropy S_th(t) of that state.
+
+- **(U1)** (HC-traj) in unit steps: ||P^(m T) g||_2 <= ||g||_(1 + e^(-2 alpha_* m)) for g = p_s(u, .), 2 s a_iota = tau_0, T = l_unit/a_iota fine steps per unit, all integers m >= 0, with alpha_* > 0 free of iota. This is (HC-phys) with M_H = alpha_*/l_unit, asked at whole units of time only.
+- **(U2)** the decay that Lemma IHC returns: X(t + 2 m T) <= (1 - tanh(alpha_* m)) X(t) for t = tau_0/a_iota and all m.
+- **(U3)** the entropy-energy form: there is kappa > 0, free of iota, with
+
+  (UNIT-EE)_kappa   U(t) >= kappa a_iota X(t), that is S_th(t) <= (t + 1/(kappa a_iota)) U(t), for all real t in [tau_0/a_iota, ell/a_iota].
+
+**Lemma EE (PROVED, by hand).** (a) (U1) gives (U2) (Lemma IHC of row 978, with P^T in place of P; its proof uses reversibility, Chapman-Kolmogorov, Holder and Jensen only). (b) (UNIT-EE)_kappa and (TH) give X(ell/a_iota) <= Theta e^(-kappa (ell - tau_0)). So (SEED-phys) holds as soon as kappa (ell - tau_0) >= log(Theta(ell)/log(1 + s_*)). (c) Conversely, X(t_1) = X(t_0) exp(-integral over [t_0, t_1] of U/X): the seed is exactly a lower bound on the integral of U/X. (d) Where S(t) <= 1: U(t)/X(t) >= E_1/2. So with t_c the first time with S(t_c) <= 1, X(t) <= (log 2) e^(-E_1 (t - t_c)/2) for t >= t_c.
+
+Proof. (b), (c): X is C^1 and positive, (log X)' = -U/X. (d): X = log(1 + S) <= S, and U >= E_1 S/(1 + S) >= E_1 S/2. QED
+
+**Lemma COUNT (PROVED, by hand): hypercontractivity is used only to count states.** Let N(E) be the number of i >= 0 with E_i <= E. (a) For every t: N(E) <= e^(t E)(1 + S(t)). (b) If X(t) <= 2 Theta e^(-M (t - tau)) for t >= tau (the conclusion of Corollary CU, lengths in lattice units), then for 0 < E <= 2 Theta M:
+
+  log N(E) <= E tau + (E/M)(1 + log(2 Theta M/E)).
+
+(c) If E_1 >= M_1 and N(E) <= e^(E t_c - 1) for all E >= M_1 with some t_c, then S(t) <= e^(-M_1 (t - t_c))/(1 - ... ) is small for t - t_c large; precisely S(t) <= integral over E >= M_1 of t e^(-t E) N(E) dE <= (t/(t - t_c)) e^(-1 - M_1 (t - t_c)) for t > t_c.
+
+Proof. (a) Markov: N(E) e^(-t E) <= sum over i >= 0 of e^(-t E_i). (b) Put t = tau + (1/M) log(2 Theta M/E) >= tau in (a). (c) S(t) = integral of e^(-t E) dN(E) over E >= M_1 = integral of t e^(-t E) (N(E) - 1) dE, by parts. QED
+
+Reading of (b): E/M quanta, each with a phase space of order Theta M/E. It is the count of a gas of mass M in the box, with Theta in place of the volume. So **(HC-phys) with (TH) is, at the level of the thermal sum, the statement that the box has at most the states of a massive gas, up to energies of the order of the volume.** The gap alone does not give this (it gives (d) of Lemma EE only). This is what separates (HC-phys) from the gap, in a form with no metric.
+
+### 4.3 The unit inequality as the crux lemma
+
+**(UNIT).** For the family of first-passage data of the account, at one ell with kappa (ell - tau_0) >= log(Theta(ell)/log(1 + s_*)): (UNIT-EE)_kappa holds on the cube of physical side 2 ell, with kappa free of the cutoff. By (EX) it is a statement on the unit effective weights alone: the coupling there is in the account's window, of order one in the sense that no further scale is integrated, and the cube has (2 ell/l_unit)^3 unit cells.
+
+Order of choice. The family and its unit; tau_0 = l and Theta(ell) from (TH); then kappa; then ell.
+
+By Lemma EE (d) and Lemma COUNT (c), (UNIT) follows from two halves: a gap M_1 on the cube, and a bounded thermal sum at one time t_c with t_c a_iota bounded. These are (Z-UNB) and (BDD-Delta) of row 720, Theorem ZD (named match, row 978 5.7). In the hypercontractive form (U1) it is (LSI-traj-seed) of row 970 for the unit effective action in place of the Wilson weight at 2.3 (named match). By T2 the statement must be false for the weights w_p at beta_t(p): there E_1 tends to 0 with the volume, so (d) fails, as it must.
+
+What this step changes in N2: the inequality left at the unit is not an inequality in the fine link metric. Forms (U2) and (U3) do not see the levels below the unit at all, so the loss of T3 does not occur in them. It occurs in any proof of (U1) through Theorem BR on the fine lattice, because A <= (1/beta_0) sup alpha_s (Lemma CAP (c)).
+

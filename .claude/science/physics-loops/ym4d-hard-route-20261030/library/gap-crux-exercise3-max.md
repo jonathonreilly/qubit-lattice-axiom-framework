@@ -57,7 +57,8 @@ Status log (UTC, each time read from `date -u`):
 - 2026-11-15T13:50Z. Step 5 on disk. Closed list opened by grep and by targeted reads (lines named in Step 5), not read in full.
 - 2026-11-15T13:53Z. Step 5 addendum and Step 6 on disk.
 - 2026-11-15T13:57Z. Steps 7 and 8 on disk. No numeric job was started (no route had a test that fits the budget; see 8.4).
-- 2026-11-15T14:00Z. 8.5 (corrections after reading rows 708 and 884) and Step 9 on disk. Run ended.
+- 2026-11-15T14:00Z. 8.5 (corrections after reading rows 708 and 884) and Step 9 on disk.
+- 2026-11-15T14:02Z. Last pass: the persistence claim of L5 and C5 is lowered to ARGUED (its two factors were not constructed); the tests of (CONTR) in 8.3 are restated through "no seed"; Lemma PT (a) proof wording fixed. Run ended.
 
 ## Step 0. The record of the wall, and the two lists
 
@@ -272,16 +273,19 @@ flux energy times L are unbounded. So it contains a weak confinement statement.
 data lie below it (F3, BELIEF). So a proof needs a second mechanism M2 that works between first passage and the
 seed scale. M2 cannot hold for every model of the class, because for U(1) nothing changes with the scale.
 
-**L5, the product test (PROVED given I28, I27).** Let M' be the product of compact U(1) at a large coupling and
+**L5, the product test (the constraint is PROVED given I28; the persistence claim is ARGUED; corrected at the end of the run).** Let M' be the product of compact U(1) at a large coupling and
 SU(2) at a small coupling: the group is U(1) x SU(2), the action is the sum of the two Wilson actions, the measure
 is the product measure. M' has (TM) and the axis exchange, so it is in the engine's class (F1). Its thermal sum
 obeys 1 + S = (1 + S_1)(1 + S_2), its D is D_1 + D_2, and its gap is the smaller of the two gaps. M' has no seed,
-because the U(1) factor has none. But D of M' decreases with the size at the scale of the SU(2) correlation
-length, and then stops at D_1 > 0. So no statement of the form "if D (or S) decreases under doubling at one
-scale, it goes on decreasing" can hold for the whole class. The same holds for a trajectory: a decoupled photon
-next to the account's SU(2) theory satisfies every first-passage hypothesis about the SU(2) factor, and (W) fails.
-So a tool for T_W must use that **no part of the low spectrum is a decoupled sector**: it must read the whole
-state space (a count of states, or the simplicity of the group).
+because the U(1) factor has none (Lemma PT (d) in 8.1). Its D is D_1 + D_2; D_2 tends to 0, and D_1 stays above
+6.1 x 10^(-4) at every size (Theorem ZD (B)). ARGUED, not proved: at a scale where D_1 is nearly constant and D_2
+still falls, D of M' falls under a doubling and later stops falling. This needs a massless factor whose D
+converges and a massive factor with a long correlation length; I did not construct them. So the statement "no
+class-wide step of the form: a decrease of D under doubling persists" is ARGUED only. For a trajectory: a
+decoupled photon next to the account's SU(2) theory satisfies every first-passage hypothesis about the SU(2)
+factor, and (W) fails. So a tool for T_W must use that **no part of the low spectrum is a decoupled sector**: it
+must read the whole state space (a count of states, or the simplicity of the group). This last statement is the
+proved part (Corollary PT1).
 
 **L6 (reading; BELIEF through I38).** In the wider class of gauge theories with matter, asymptotic freedom,
 reflection positivity and centre symmetry together do not give a gap. So a proof must use that the field is the
@@ -340,8 +344,8 @@ bounds of I24 are extensive, and D is the part of order one.
   do not read first-passage data. "The separating property is a number" is proved for T_fix only.
 - **C4 (PROVED given I28, I29).** For T_W the theorem-backed tests are U(1) and the frozen groups. They force a
   qualitative property: continuous and non-abelian.
-- **C5 (PROVED given I28, I27).** The product test L5: no class-wide statement "a decrease under doubling persists".
-  A tool for T_W must read the whole state space.
+- **C5 (the constraint PROVED given I28; the rest ARGUED).** The product test L5: a tool for T_W must read the whole
+  state space. ARGUED only: no class-wide statement "a decrease under doubling persists".
 - **C6 (PROVED from C1, C5, I9, with F3 as BELIEF).** A proof anchored in the ultraviolet needs a statement H_L with
   four properties: (i) it holds at first-passage sizes by the account; (ii) it is false for U(1), for frozen
   groups and for the product models; (iii) it passes from L to 2L; (iv) it gives the seed after finitely many
@@ -428,7 +432,7 @@ lines named below. "Found" items are credited to their rows.
 | C2, first half (no seed = D unbounded or G) | yes | Theorem ZD (D), row 720 | - |
 | C2, second half (G1 degenerate sectors, G2 massless) | partly | `gap-flux-exercise.md` 3.4 L181 (row 731: periodic seed = electric flux heavy, full seed = magnetic flux heavy); `gap-ymcons-opus.md` L433 (row 975) | - |
 | F4 and Q1 (the fixed-coupling range is not on the path) | yes | `gap-skeleton-final.md` L535 ("stated with no fixed-beta range in it"); row 978 (I17) | - |
-| C3 (K7 and w_p test T_fix; against T_W they bind only tools that do not read first-passage data) | **partly; the second half is new in the searched scope and contradicts row 988** | first half: `gap-skeleton-final.md` L537 ("The tests, corrected", Proposition T1; ranges from beta about 0.44, 1, 1.6). Against it: `gap-unit-max.md` L238-242 (Route 3 (b), (c)) and its N2 (L357), repeated in row 996's goal | grep of the same files and of `FINISH.md` for "no first-passage", "has no trajectory", "not a trajectory", "constant sequence", "constant trajectory": 1 and 0 hits |
+| C3 (K7 and w_p test T_fix; against T_W they bind only tools that do not read first-passage data) | **partly; the second half was not found in the searched scope and contradicts row 988** | first half: `gap-skeleton-final.md` L537 ("The tests, corrected", Proposition T1; ranges from beta about 0.44, 1, 1.6). Against it: `gap-unit-max.md` L238-242 (Route 3 (b), (c)) and its N2 (L357), repeated in row 996's goal | grep of the same files and of `FINISH.md` for "no first-passage", "has no trajectory", "not a trajectory", "constant sequence", "constant trajectory": 1 and 0 hits |
 | C4 (U(1), frozen groups force continuous and non-abelian) | yes | Facts T and B, `gap-crux-restate.md` L62; every fact-test table since row 697 | - |
 | C5, the product test | partly (see the addendum: the device is row 708's; the massless-factor use was not found) | `gap-mid-max.md` L226-229 | grep of the same files and of `FINISH.md` for "product model", "U(1) x SU(2)", "U(1) times SU(2)", "decoupled photon", "decoupled sector", "decoupled massless": 6 and 1 hits (outside this file) |
 | C6, the contract for an ultraviolet-anchored statement H_L | partly | `gap-ymcons-opus.md` Approach 9, L415-446 (row 975): (DRIFT)_c for the Renyi-2 entropy along doublings, calibrated on the photon (S_2 >= 5.06 constant), "asymptotic freedom at the small boxes and the absence of an infrared fixed point"; its own remark L441: "a monotone that is constant at fixed points gives no drift by itself". Lemma META (row 975). Row 720 Part 2 (step scaling, twist ratios) was not re-read. | the four-property form, with the product models in (ii), was not found by the greps above |
@@ -449,8 +453,8 @@ positive examples for the full seed (Z_2 at large beta).
 **What the fresh pass added** (all unchecked):
 
 1. The product test (L5, C5). It is a model of the engine's class, backed by the same theorem as the U(1) test.
-   It refutes every class-wide step "a decrease under doubling persists", and it shows that a tool for T_W must
-   read the whole state space.
+   It shows that a tool for T_W must read the whole state space (PROVED given the U(1) theorem). That it also
+   refutes every class-wide step "a decrease under doubling persists" is ARGUED only (3.2, L5).
 2. A correction of a filter (C3). Row 988 Route 3 (b)-(c) concludes that branch G "can only be excluded by an
    input that tells the Wilson trajectory from the endpoint family". The valid form gives less: K7 refutes
    class-wide soft statements that do not read ultraviolet data. A statement whose hypothesis contains the
@@ -533,7 +537,7 @@ T_fix: a seed at the coupling of M'. T_W: (W) along a sequence with first-passag
 |---|---|---|---|---|---|
 | Compact U(1), Coulomb phase | reflection-positive gauge models with (TM) | T_fix, T_per, T_ev, and T_W along every sequence beta_j to infinity (L1) | THM, published, recalled (Guth; Frohlich and Spencer); in the lane for Villain at beta >= 2^14 (row 786, per exercise 2). At beta of order 1 to a few it is a BELIEF. | the non-abelian structure | theorem-grade at very large beta only. T_W-tools are bound in full, because their couplings tend to infinity. |
 | Free photon "through the rate" | Gaussian model on the same lattice | T_per at every size: S_2 >= 5.06 constant (row 975, L428-430); the massless floor 17.04 (row 988) | THM, lane (hand calculations; check 991 for FLOOR) | a rate or a drift that the photon does not have | every size |
-| Product with a massless factor (L5; device of row 708) | the engine's class (F1) | T_fix, T_per, T_W; and every step "a decrease of D or S under doubling persists" | THM given the U(1) theorem and a strong-coupling seed (I27, I28); the product algebra is checked (row 709) | the whole state space (no decoupled sector) | as the U(1) test |
+| Product with a massless factor (L5; device of row 708) | the engine's class (F1) | T_fix, T_per, T_W (PROVED given the U(1) theorem). ARGUED only: it also refutes a class-wide step "a decrease of D or S under doubling persists" (3.2, L5) | THM given the U(1) theorem and a strong-coupling seed (I27, I28); the product algebra is checked (row 709) | the whole state space (no decoupled sector) | as the U(1) test |
 | Frozen Z_2 | same | T_per only. T_ev and the full seed are true there. | THM, lane (Peierls, beta above 2.191; exercise 2, 6c) | connectedness, for T_per tools only | beta above 2.191 |
 | Frozen Q_8, 2T | same | T_per; and, in the frozen limit, T_ev too: the frozen transfer operator has at least two centre-even flat states at every box (cross-provider check, row 884, `gap-crux-exercise2-check-astra.md` L227-259). **Corrected in 8.5.** | BELIEF at order one (transition couplings from numerics); the frozen-limit statement is the check's | as Z_2 for T_per; for T_ev: the non-abelian flat states | order one: belief |
 | w_p at its transition coupling (Proposition V) | positive-character weights on SU(2) | T_fix at one coupling, every size | THM, published (van Enter and Shlosman), cited; Proposition V proved in the lane given it | a number (how far log w is from linear), **or** first-passage data | one coupling per p, p large. It does not test T_W-tools that read first-passage data (C3). |
@@ -699,8 +703,9 @@ the same letters with an index for the factors. Then, for every box B and every 
   then S <= 2t + t^2 there.
 
 Proof. (a) The integral factorizes, because the Haar measure of the product group is the product measure and the
-weight is a product. f is the infimum of F(n)/abs(n), and F_i(n)/abs(n) decreases to f_i along multiples (I3), so
-the infimum of the sum is the sum of the infima. (b) The slice space is the tensor product, and the kernel of
+weight is a product. Z is invariant under the exchange of two axes because both factors are. f is the infimum
+of F(n)/abs(n). Each F_i(n)/abs(n) does not increase in each side (I3). So along tori whose four sides all grow,
+both quotients tend to their infima together, and the infimum of the sum is the sum of the infima. (b) The slice space is the tensor product, and the kernel of
 T_B is the product of the two kernels; the gauge projection is the tensor product of the two projections. The
 eigenvalues of a tensor product are the products lambda_i mu_j. The largest is lambda_0 mu_0; it is simple
 because lambda_0 and mu_0 are. The eigenfunction is the product of two positive functions. (c) Tr T_B^k =
@@ -757,16 +762,17 @@ Proof. (a) Let L_k = 2^k L_0. If D^+(L_i) >= eps_0 for all i < k, then D^+(L_k) 
 k. So some L_i with i <= k has D^+(L_i) < eps_0. This is (PHYS-SEED-Delta), and Theorem ZD-c gives (PHYS-SEED).
 (b) is a statement about what is proved, not a counterexample. (c) restates (TH). QED
 
-**Tests of (CONTR) in the valid form** (a pass is no support): U(1) and the free photon: D^+ constant, so the
-hypothesis is false. Frozen groups: D tends to the logarithm of the number of vacua, false. Product with a
-massless factor: D(2L)/D(L) tends to 1, false (Lemma PT (a)). K7 and w_p: not tested (Proposition KF (c)).
+**Tests of (CONTR) in the valid form** (a pass is no support): by (a), read at one coupling, (CONTR) is false in
+every model without a seed. So it is false for U(1) in its massless phase, for the frozen groups, and for a
+product with a massless factor (Corollary PT1). At the transition couplings of K7 and w_p it is false for the
+same reason; as tests of a trajectory statement they do not apply (Proposition KF (c)).
 
 **Strength.** (CONTR) implies the target and is not implied by it. By the governance rule the route is not near
 closure: its status is blocked-equivalent. What the proposition adds is the form of the price: **with the
 account's extensive bound as base, the whole order-one input is one number theta < 1, the contraction factor of
 the Casimir free energy of the symmetric torus under doubling, at the sizes between first passage and the seed.**
-For a massive theory beyond its correlation length theta is tiny; for a massless factor theta = 1; class-wide
-only theta <= 16 is proved.
+For a model with a seed, D falls doubly exponentially from the seed size on (Lemma Z3); for a model without a
+seed no theta < 1 can work; class-wide only D(2L) <= 16 D(L) is proved.
 
 ### 8.4 Tests: what was run and what is deferred
 
@@ -821,7 +827,7 @@ The machine works for every model of a wide class, also for models that have no 
 decide; the number must. On small boxes the theory is nearly free and the number is on the wrong side. It has to
 cross to the right side on boxes where the force is strong, and there no expansion works. The exercise confirms
 that the missing piece is one statement: on each doubling of the box, between the last small box and the first
-good box, a certain free energy shrinks by a fixed factor. Models with a massless particle keep it constant.
+good box, a certain free energy shrinks by a fixed factor. In a model with a massless particle it never gets small.
 Nobody has a reason, usable in a proof, why this model shrinks it. (No blind check of this text ran.)
 
 ### 9.2 What the exercise found
@@ -968,4 +974,4 @@ The tables of Steps 2 to 8 are above, in step order. The approach registry is 7.
   same-provider check. Neither is `checked` in the sense of the rules.
 - "exact price": not found by this run; 9.6 quotes rows 708 and 720.
 
-RESULT: Row 998 (Claude Fable 5.2 max, Mac mini worker 1; author, checked by no one; no numeric run; exercise skill at main 8b11ae2bb9 followed, steps 0 to 9). The wall is NOT passed and NOT priced more exactly than rows 708 and 720 already price it: (W) iff (BDD-Delta) and (Z-UNB) (Theorem ZD-c), and (W) follows from (CAS), one contraction factor theta < 1 of the Casimir free energy under doubling, with the account's extensive bound as base. The fresh pass found the lane's record again (rows 697, 708, 720, 731, 859, 876, 878, 975). PROVED by hand, unchecked: Lemma PT and Corollary PT1 (a product with a massless factor is in the engine's class and has no seed, so a tool must read the whole state space; the device is row 708's); Proposition KF and Corollary KF1 (K7 and w_p bind only hypotheses with no ultraviolet clause). ARGUED filter corrections: row 988 Route 3 (c) and N2 and the scope of row 996 are too strong; K7 is belief-grade and should be cited as Proposition V; row 982 N2 rests on the unchecked T3; the rule against supremum forms rests on two ported lemmas that are not rebuilt. FOUND AGAIN, not new: Proposition CT is (CAS) of row 708. FAILS (my own slips, corrected in place): the Migdal-Kadanoff crossing is group-blind (I34); the finite-group narrowing of exercise 2 was struck in part by check 884, so Q_8 and 2T stay tests of even-sector tools. OPEN: (W), (PHYS-SEED), (BDD-Delta), (Z-UNB), (CAS), (U1), (U2), (HC-phys), and any selective step across the order-one band; no route is near closure (three families are blocked as target-equivalent or stronger). Next: W1 check of this file; W2 rewording of the lead rule after W1; W3 check of T3 and rebuild of the two lemmas under Theorem D2; W4 owner decision on the dichotomy theorem as a milestone; W5 a state file for the gap lane.
+RESULT: Row 998 (Claude Fable 5.2 max, Mac mini worker 1; author, checked by no one; no numeric run; exercise skill at main 8b11ae2bb9 followed, steps 0 to 9). The wall is NOT passed and NOT priced more exactly than rows 708 and 720 already price it: (W) iff (BDD-Delta) and (Z-UNB) (Theorem ZD-c), and (W) follows from (CAS), one contraction factor theta < 1 of the Casimir free energy under doubling, with the account's extensive bound as base. The fresh pass found the lane's record again (rows 697, 708, 720, 731, 859, 876, 878, 975). PROVED by hand, unchecked: Lemma PT and Corollary PT1 (a product with a massless factor is in the engine's class and has no seed, so a tool must read the whole state space; the device is row 708's); Proposition KF and Corollary KF1 (K7 and w_p bind only hypotheses with no ultraviolet clause). ARGUED only: that the product also refutes class-wide steps "a decrease under doubling persists". ARGUED filter corrections: row 988 Route 3 (c) and N2 and the scope of row 996 are too strong; K7 is belief-grade and should be cited as Proposition V; row 982 N2 rests on the unchecked T3; the rule against supremum forms rests on two ported lemmas that are not rebuilt. FOUND AGAIN, not new: Proposition CT is (CAS) of row 708. FAILS (my own slips, corrected in place): the Migdal-Kadanoff crossing is group-blind (I34); the finite-group narrowing of exercise 2 was struck in part by check 884, so Q_8 and 2T stay tests of even-sector tools. OPEN: (W), (PHYS-SEED), (BDD-Delta), (Z-UNB), (CAS), (U1), (U2), (HC-phys), and any selective step across the order-one band; no route is near closure (three families are blocked as target-equivalent or stronger). Next: W1 check of this file; W2 rewording of the lead rule after W1; W3 check of T3 and rebuild of the two lemmas under Theorem D2; W4 owner decision on the dichotomy theorem as a milestone; W5 a state file for the gap lane.

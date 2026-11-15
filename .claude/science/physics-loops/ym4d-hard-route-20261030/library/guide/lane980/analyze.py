@@ -7,6 +7,7 @@ Usage: python3 -I analyze.py mode file1  (mode 1 = P1 SU(2), 2 = P2 U(1), 3 = P3
 Several files = independent chains: block errors are computed per chain (16 blocks each) and pooled.
 """
 import sys
+import gzip
 import numpy as np
 
 NB = 16
@@ -31,6 +32,10 @@ def blocks(x, nb=NB):
     return np.asarray(x[:n], float).reshape(nb, -1).mean(1)
 
 
+def header(f):
+    return (gzip.open(f, 'rt') if f.endswith('.gz') else open(f)).readline()
+
+
 def main():
     mode = int(sys.argv[1])
     files = sys.argv[2:]
@@ -47,8 +52,8 @@ def main():
         print(f"{nm:5s} mean {bl.mean():.6f} err {bl.std(ddof=1) / np.sqrt(len(bl)):.6f} tau_int {ti:.1f} block_len {blen} {flag}")
     pl = np.concatenate([c[c[:, -1] >= 0, -1] for c in chains])
     print(f"plaq  mean {pl.mean():.6f} (n={len(pl)})")
-    S = int(open(files[0]).readline().split("S=")[1].split()[0])
-    beta = float(open(files[0]).readline().split("beta=")[1].split()[0])
+    S = int(header(files[0]).split("S=")[1].split()[0])
+    beta = float(header(files[0]).split("beta=")[1].split()[0])
     # stationarity: first half against second half of each chain, first observable
     for c in chains:
         h = len(c) // 16 * 8

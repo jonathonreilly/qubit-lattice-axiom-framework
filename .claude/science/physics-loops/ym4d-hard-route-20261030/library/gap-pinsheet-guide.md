@@ -3,7 +3,7 @@ lease_until: 2026-11-15T12:41Z
 
 # gap-pinsheet-guide (FINISH row 980): GUIDE runs P1 and P3 of row 977
 
-Pinned commit 7362c467a, branch claude/ym4d-hard-route. Status: in progress.
+Pinned commit 7362c467a, branch claude/ym4d-hard-route. Status: done 06:00Z 2026-11-15 (all of P1, P3 and P2 run; checked by no one).
 A GUIDE run refutes or guides; it never proves. Nothing here enters the chain.
 
 ## Plan (at most eight steps)
@@ -209,3 +209,31 @@ side (two on P3 side 16). Checked by no one.
 - P3 C3: g = 1.358 +- 0.027, g - 2 sigma = 1.304 > 1.25, no decreasing step: REFUTED (GUIDE) for a box-uniform (TILT-COV-quot) at beta 2.3.
 - P2: sides 8, 16 give R_S/A = 0.893, 0.876; side 32 pending.
 
+## Step 10. P2 side 32, P2 verdict, final state (06:00Z)
+
+**P2 side 32** (`data/u1p1_S32_T64_seed3211.txt.gz`, `data/analysis_u1_S32.txt`; 16 blocks of 93 sweeps; 10005 s of CPU): R_32 = 881.38 +- 0.14,
+R_32/A = 0.8607, tau = 0.92009 +- 0.00001, xi_2nd/S = 2.48, Ghat^e(p_1) = 1.819 against the IR bound 11.31; R tau_int 2.4, half-chain test -0.3 sigma.
+(E cos^2 P is UNDER-SAMPLED, tau_int 35; not a criterion observable.) Floor 2A(1/2 - G_32/beta) = 489.4 (G_32 = 0.60033): met.
+
+**P2 verdict: the criterion HOLDS.** (R_32/1024)/(R_8/64) = 0.9637 +- 0.0002 >= 1/2 (by far). R_S/A = 0.893, 0.876, 0.861 on 8, 16, 32: a power law
+with eta about 0.027 over 8 -> 32, the spin-wave behaviour of an XY-like sheet; this is what row 977 5.6 reads for U(1) (variance growing like a
+power of the side, here nearly like the area). It does not separate U(1) from SU(2) on these sides: the SU(2) sheet also falls slowly
+(R_S/A 0.660 -> 0.569 over 8 -> 24, a 14 percent drop against U(1)'s 3.6 percent over 8 -> 32); whether SU(2) saturates near xi_sheet^2 (6.2(c))
+is not reached on sides up to 24.
+
+**Housekeeping.** Numeric lock released 05:53Z (holder lane980-pinsheet-guide-w2). Memory free stayed at 70-71 percent throughout. Raw data gzipped
+(1.8 MB); `analyze.py` reads .gz. Binaries and validation outputs stayed in /tmp/lane980w. No git, no web, no subagent. Files written: this file and
+`library/guide/lane980/` (pinsheet.c, pinsheet_u1.c, analyze.py, run.sh, run2.sh, data/).
+
+**What a reader should not take from this.** A GUIDE run refutes or guides; it never proves. C1 of P1 and P3 not being violated is not a check of
+Theorem D2's proof (row 977 8.3 item 1, the line-by-line check of 5.2, is still open); it only fails to refute it. The P3 C3 "REFUTED" is the rule's
+GUIDE verdict on sides 8 to 16, with one chain on 8 and 12, a frame-direction slow mode in R^0 (tau_int 3 to 14), and a margin that survives doubled
+errors by 0.0001; it is not a proof that (TILT-COV-quot) fails, and it says nothing about flow-weighted forms. q_0 is still OPEN at proof level
+(proved only q_0 >= 0.064); the run puts it at 1/4 within 2 to 3 percent on sides 8 to 16, as row 977 9.1 ARGUED.
+
+**Next (for the lead).** (1) The hand check of row 977 Step 5.2 remains the gate for D2; nothing here replaces it. (2) A proof route for
+q_0 >= 0.24 (row 977 9.1 ARGUED: winding effects of order A e^(-mS)); the run gives the target number to aim at, q_0 = 0.243-0.253.
+(3) If saturation of the SU(2) sheet matters, a larger-side P1 (S = 32, 48) is the run that could see it; at about 0.8 s per sweep on side 24,
+side 48 costs about 13 s per sweep on this machine.
+
+RESULT: GUIDE (Claude Opus 5.5 high, Mac mini, unchecked): P1 — C1 holds (R_8, R_12, R_16 = 42.24, 89.94, 153.83 against D2's floors 21.78, 32.79, 37.88; D2 not refuted), C2 met (R_24 = 327.8 >= 144, sheet longer than the box, xi_2nd about S), C3 tau = 0.751 < 0.8 so 6.2(b) does not apply; P3 — C1 holds on 8, 12, 16, C2 "QUOT-CAP applies" (q_0 = 0.253, 0.245, 0.243, q_0 - 2 err >= 0.23), C3 REFUTED (GUIDE) for box-uniform (TILT-COV-quot) at beta 2.3 (g = 1.358, g - 2 sigma = 1.304 > 1.25, no decreasing step; second side-16 chain agrees); P2 (compact U(1)) — criterion holds (R_S/A 0.893, 0.876, 0.861 on 8, 16, 32; ratio 0.964 >= 1/2); open: the hand check of D2's step 5.2, a proof of q_0 >= 0.24, and whether the SU(2) sheet saturates above side 24.

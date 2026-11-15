@@ -94,12 +94,9 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
 | Lane rows already in actual ready top-10 | 0 |
-| Lane rows added since prior pass | 1 |
+| Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 0 |
-
-Named lane membership churn since the prior pass:
-- added: `dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17`
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
 - `admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21`

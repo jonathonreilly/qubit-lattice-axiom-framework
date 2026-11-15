@@ -10,6 +10,7 @@ Started 2026-11-15T00:21Z. Check item only: no new attack.
 ## Status log
 
 - 2026-11-15T00:21Z: file created with the plan; inputs not yet read.
+- 2026-11-15T00:37Z: Steps 1-8 written (all eight steps of the plan done); the lease may be released.
 
 ## Plan (at most eight steps; one step per response; each result appended before the next)
 
@@ -153,8 +154,8 @@ space in [0, e^(-2 E_1)]). With Lemma CAP (a') (HOLDS, Step 2.4) the right side 
 
 ## Step 4. Lemma EE and Lemma COUNT (4.2), with the forms (U1)-(U3)
 
-Setting (L133). The sums S(t) converge for every real t > 0: P = e^(-V/2) K e^(-V/2) with 0 <= e^(-V/2) <= 1 has
-eigenvalues at most the singular values of the kinetic kernel K, a product over links of Bessel ratios with
+Setting (L133). The sums S(t) converge for every real t > 0: the transfer operator T = e^(-V/2) K e^(-V/2) (P is
+T/lambda_0, conjugated by Omega) with 0 <= e^(-V/2) <= 1 has eigenvalues at most the singular values of the kinetic kernel K, a product over links of Bessel ratios with
 super-exponential decay. Only t >= 1 is used. U = -X' is the thermal mean energy and X + t U the thermal entropy of the
 state with weights e^(-E_i t)/(1 + S(t)): correct (E_0 = 0, so log of the partition function is X).
 
@@ -179,8 +180,9 @@ tau_0/a_iota + 2mT from one start; (U3) bounds U/X at every t of the interval. T
 interval: (U3)_kappa gives X(tau_0/a_iota + 2mT) <= e^(-2 kappa l_unit m) X(tau_0/a_iota) <= (1 - tanh(alpha_* m)) X(tau_0/a_iota)
 with alpha_* = kappa l_unit, for every m with tau_0/a_iota + 2mT <= ell/a_iota (since e^(-2x) <= 2/(1 + e^(2x))). So on
 the range the seed reads, (U3) is at least as strong as (U2), not weaker. Correction: "(U1) => (U2) (Lemma EE (a));
-(U3) => (U2) on [tau_0, ell]; both (U2) and (U3) give the seed with (TH); the weakest of these forms is the integral
-condition of Lemma EE (c), the integral of U/X over [tau_0/a_iota, ell/a_iota] at least log(Theta/log(1 + s_*))."
+(U3) => (U2) on [tau_0, ell]; both (U2) and (U3) give the seed with (TH); the integral condition of
+Lemma EE (c), the integral of U/X over [tau_0/a_iota, ell/a_iota] at least log(X(tau_0/a_iota)/log(1 + s_*)), is the seed
+itself, so it is no crux."
 Consequence for 4.3: (UNIT) is stated in the pointwise form (U3), so (UNIT) is not shown to follow from (HC-phys);
 a failure to prove (UNIT) says nothing on (U1) or (U2). Item 3 of 8.1 is worded correctly ("implies its integrated form").
 
@@ -230,7 +232,7 @@ Proposition Delta were not re-read; they are the named inputs of Theorem ZD.
 - Row 720 (Theorem ZD-c): (PHYS-SEED) is EQUIVALENT to (BDD-Delta) and (Z-UNB) together. Its route reads X of the cube
   at the time b/4 through Proposition Delta, X(b/4; b^3) <= 64 D(b/4) (Lemma Z), and then the gap.
 
-**What holds, as an implication (PROVED here from the two checked-or-named statements; one line).** By Corollary CU,
+**What holds, as an implication (from Corollary CU of row 978 and Theorem ZD-c of row 720, as stated there; one line).** By Corollary CU,
 (TH) and (HC-phys) give the seed at every large half side ell. With l_1 = 2 ell and P = {2^i l_1}, (PHYS-SEED) of
 ZD-c holds at l = l_1, given the side condition of ZD-c (l_1/(4 a_j) an integer at least 3 for all large j). By ZD-c,
 (BDD-Delta) and (Z-UNB) follow. So **(TH) and (HC-phys) imply (BDD-Delta) and (Z-UNB)**: a proof by row 978's route
@@ -260,5 +262,150 @@ the implication above. Verdict: **HOLDS AFTER CORRECTION**: replace "meet at one
   statement on X. Wording only; no verdict rests on it.
 
 **Consequence for N2's advice (L266).** "The statement to keep is (U1) or (U2) in unit steps, or (UNIT-EE)": by Step 4,
-(UNIT-EE) in its pointwise form is not implied by (U1) or (U2). The weakest seed-sufficient form is the integral condition
-of Lemma EE (c). Correction: "keep (U1), (U2), or the integral form of Lemma EE (c)".
+(UNIT-EE) in its pointwise form is not implied by (U1) or (U2). Correction: "keep (U1) or (U2); (UNIT-EE) is a sufficient condition for (U2) on [tau_0, ell], not a
+weaker form; the integral form of Lemma EE (c) is the seed itself".
+
+## Step 7. The account's lines behind (P1)-(P4) (written 00:35Z)
+
+**Source.** Ethan Sussman and Levent Alpoge, complete account of Theorem 0 (text authored with Claude and Codex),
+commit `31a47c543775`, `theorem_0_complete_account_raw_I.tex` (166,711 lines) and `_II.tex` (145,624 lines), fetched
+2026-11-15 by the raw URLs of `guide/lane982/SOURCES.md` into a scratch folder outside the repository; line counts
+match SOURCES.md. Read: every range of SOURCES.md, plus CA-II 79091-79135 and 79202-79256 (Definition
+8.3:not-step-box-window), CA-II 83830-83905 (class data of the class S before Lemma 8.3:lem-correlation-decay),
+CA-II 84166-84177, CA-I 2700-2712, CA-I 46035-46127 (Theorem 4.14:thm-operator-theorem), and the account index
+`library/sa-index/ca-full/index.tsv` for the declared status.
+
+**(P1) The form bound. Quotes faithful; the summary HOLDS AFTER CORRECTION.**
+
+- CA-II 80164-80170 reads as quoted: "From the operator theorem at free current we take the following hypothesis. At
+  each real background configuration of the step, Q is real symmetric and a_- <= Q <= a_+ as forms, ||Q(b, b')|| <=
+  a_+ e^(-c_A dist(b, b')) ..., where 0 < a_- <= a_+ and c_A > 0 do not depend on the level, on K, m, the background
+  configuration or the volume." The inner-product sentence is at 80156-80159. Lemma 8.2:lem-fluctuation-positivity
+  (begins 75164) states the bound Q(U, 0) >= gamma_0/2 "as the antecedent of this lemma". CMP 95 Proposition 1.2 and
+  CMP 99b are cited at 75158-75159, for item (iii) of the preceding definition ("the operator theorem at free current").
+- **Defect.** "So the account takes the lower bound as a hypothesis from Balaban's operator theorem" (L46; again in
+  8.1 item 1, L225) is incomplete. The account states the bound as its own theorem: CA-I 46035,
+  Theorem 4.14:thm-operator-theorem ("The operator theorem at free current"), clause (B): "At every point (U, 0) with
+  U in U_R, Q is real symmetric with gamma_0/2 <= Q <= gamma_1"; clause (I): gamma_0, gamma_1 "depend on d and L only;
+  they are independent of M, k, K, the nest, B, Lambda_t, Z_0, the volume and g". The index of the account lists it as
+  PROVED (`index.tsv`, ca_I.tex 46035; also 4.5:thm-operator-bounds, ca_I.tex 19578, PROVED). Its proof was not read
+  here. CA-II 8.2 and 8.3 import this theorem as a hypothesis of their own statements. Correction: "CA-II 8.2-8.3 take
+  the bound as a hypothesis imported from the account's Theorem 4.14 (B), (I) (CA-I 46035, declared PROVED; the account
+  cites Balaban CMP 95 Proposition 1.2 and CMP 99b for it)". For the port this is the better status: the bound is a
+  cited input of the account's own text, not an open hypothesis.
+
+**(P2) The norm. HOLDS.** CA-II 80038-80041: the window is a function of the integration variable A "taken in the
+rescaled normalisation in which the unscaled fluctuation field is g_k A". CA-II 79202-79212 fixes the variable on
+which Q acts: "The integration variable of [CMP 119 (3.25)] is the scaled fluctuation field A ... Let Q := C^* Delta^(k) C
+on g^(B+)", and the box law is E_e(dy) = Z_e^(-1) 1_(W_I)(y) e^(-H_e(y)) dy with H_e = (1/2)<y, Q_II y> + <y, J A_O> - P_e(y)
+(79248-79256). So the quadratic part is (1/2)<A, Q A> in the scaled variable, and in the unscaled variable g_k A the
+lower bound is a_- g_k^(-2) = a_- x_k, as (P2) says. The lattice of level k has unit spacing in level-k units
+(79113), and d = 4 (79095): "four-dimensional" is correct. The radius b_k = A_1 (log x_k)^(p_0) of 80032-80033
+agrees with b_k = delta_k/g_k of 79126-79131.
+
+**(P3) The class of laws. Quote faithful; the inference HOLDS AFTER CORRECTION (a missing citation).** CA-II 81161-81190
+reads as quoted (Hamiltonian on W, "coercive for phi", lambda := lambda_A - eps_0, nu_H = Z_H^(-1) 1_W e^(-H) dy). At
+phi = 0, Hess H = A - P'' >= lambda on W: correct. But 81161 is an abstract proposition; it does not say that the
+fluctuation laws are coercive with constants free of the level. That link is in the class data before Lemma
+8.3:lem-correlation-decay: CA-II 83846-83855 (Q with q_- <= Q <= q_+, q_- > 0; "The smallness condition of the class
+gives varpi <= q_-/4"; "In the application, P is holomorphic on a complex tube containing K^+ ..."), with q_- = a_-
+from Definition 8.3:def-box-precision. So the conclusion "each small-field fluctuation law is uniformly log-concave on
+a convex window, with a constant free of the level" is the account's reading, with Hess >= q_- - varpi >= (3/4) a_-.
+Correction: cite CA-II 83846-83855 beside 81161. Where the account verifies varpi <= q_-/4 for the step was not read.
+
+**(P4) What the account derives. Quotes and greps faithful; HOLDS, with one nuance for 8.1 item 1.**
+
+- Labels: 81493 opens Theorem 8.3:thm-density-bound ("Two-sided density bound on the read set"); 81804 opens
+  Corollary 8.3:cor-subgaussian-tails; 83869 is Lemma 8.3:lem-correlation-decay, whose statement begins "Assume the
+  following statement, the Helffer-Sjostrand covariance representation". CA-II 84184-84185, of the proof of that lemma
+  (84176-84177 name it): "It uses no spectral gap of -L, no variance inequality for log-concave measures in terms of the
+  inverse Hessian". CA-I 2708 lists "a mass gap" under "Not asserted". All as (P4) says.
+- Greps re-run on the fetched files: CA-I, `Sobolev|Bakry|hypercontract` (case-insensitive): 0 lines. CA-II, same
+  pattern: one line, 133310 ("the discrete Sobolev norm of q"). CA-II, the wider pattern of SOURCES.md: lines 84184,
+  84205, 133310, 135674. Identical to SOURCES.md.
+- Nuance (8.1 item 1, L225, "The account states no log-Sobolev, Poincare or hypercontractive inequality"). The
+  Helffer-Sjostrand representation that Lemma 8.3:lem-correlation-decay assumes (83870-83876: L_V >= lambda_- on vector
+  fields and Cov(F, G) = <grad F, L_V^(-1) grad G>) gives at F = G the Poincare inequality
+  Var(F) <= (1/lambda_-) E|grad F|^2 for smooth V on R^N with Hess V >= lambda_-. So a Poincare inequality for globally
+  uniformly convex laws is one line from a hypothesis the account states; it is not derived there, and it is not stated
+  for the windowed laws. No log-Sobolev or hypercontractive statement is in CA-I or CA-II. Correction to L225:
+  "states no log-Sobolev or hypercontractive inequality, and no Poincare inequality for the windowed laws". (P4)'s
+  own conclusion (no log-Sobolev inequality for a small-field fluctuation law in the account) stands.
+
+## Step 8. Verdicts, defects, and the RESULT line
+
+Provenance: Claude Opus 5.5, max reasoning, Mac mini worker 1, commit 52d3e029c. One line-by-line reading by one other
+model (the author is Claude Fable 5.2). Not an audit. No numeric run; the numeric lock was not taken.
+
+### 8.1 Verdict per statement (lines of `gap-hcphys-max.md`)
+
+| # | Statement | Line | Verdict | Where checked |
+|---|---|---|---|---|
+| 1 | Theorem BR (iv) at q = p = 2: F(eps) >= \|\|P f\|\|^2, F(1/beta - eps) <= \|\|f\|\|^2 | L74 | HOLDS | Step 2.1 |
+| 2 | Var_(nu_s)(u_s) = F(s) for nu-mean-zero f | L75 | HOLDS | Step 2.2 |
+| 3 | Lemma CAP (a), energy bound | L66, L74 | HOLDS | Step 2.3 |
+| 4 | Lemma CAP (a'), energy identity (marked ARGUED) | L68 | HOLDS; the two end limits are now written | Step 2.4 |
+| 5 | Lemma CAP (b), the inequality | L70, L75 | HOLDS | Step 2.5 |
+| 6 | L70: "the integrated bridge Poincare constant equals the gap up to the factor ..." | L70 | FAILS as written; HOLDS AFTER CORRECTION | Step 2.5 |
+| 7 | Lemma CAP (c) | L72 | HOLDS (sharper: A/2 <= E_1) | Step 2.6 |
+| 8 | Reading after CAP; Gaussian hand check | L77, L79 | HOLD (the bound 2 beta_0 M a_iota is exact, no factor 1 + o(1)) | Step 2.7 |
+| 9 | Lemma TEL | L107-111 | HOLDS (given classical tensorisation) | Step 3 |
+| 10 | TEL, Use paragraph | L113 | lower bound HOLDS; orders of size ARGUED, as marked | Step 3 |
+| 11 | Lemma EE (a)-(d) | L141-143 | HOLDS ((a) given Lemma IHC; its four steps re-done for P^T) | Step 4 |
+| 12 | Heading of 4.2, "(U1)-(U3) in decreasing strength" | L131 | FAILS as written; HOLDS AFTER CORRECTION | Step 4 |
+| 13 | Lemma COUNT (a)-(c) | L145-151 | HOLDS ((b): the parenthesis needs tau = t_0 + 2) | Step 4 |
+| 14 | Reading of COUNT: "(HC-phys) with (TH) is ... the count of a massive gas" | L153 | HOLDS AFTER CORRECTION ("implies") | Step 4 |
+| 15 | Route 2 (a) | L189 | HOLDS (also inside the gauge-invariant class) | Step 5 |
+| 16 | Crossed-channel identity | L211 | HOLDS | Step 5 |
+| 17 | N2: row 978's reduction and Theorem ZD "meet at one object", "not two independent chances" | L266 | HOLDS AFTER CORRECTION | Step 6 |
+| 18 | "These are (Z-UNB) and (BDD-Delta) of row 720" | L163 | HOLDS AFTER CORRECTION ("equivalent through the seed") | Step 6 |
+| 19 | N2's advice: keep "(U1) or (U2) ..., or (UNIT-EE)" | L266 | HOLDS AFTER CORRECTION (keep (U1) or (U2); (UNIT-EE) only as a sufficient condition) | Steps 4, 6 |
+| 20 | (P1) quotes; summary "takes the lower bound as a hypothesis from Balaban's operator theorem" | L46, L225 | quotes faithful; summary HOLDS AFTER CORRECTION | Step 7 |
+| 21 | (P2) | L48 | HOLDS | Step 7 |
+| 22 | (P3) | L50 | quote faithful; HOLDS AFTER CORRECTION (missing citation) | Step 7 |
+| 23 | (P4); 8.1 item 1 "no ... Poincare" | L52, L225 | (P4) HOLDS; L225 HOLDS AFTER CORRECTION | Step 7 |
+
+No statement that a PROVED lemma of row 982 rests on FAILS.
+
+### 8.2 Defects, ranked by what each changes
+
+1. **(UNIT) is stated in a form that (HC-phys) is not shown to imply (L131, L139, L157).** Only (U1) => (U2) is
+   proved. On [tau_0, ell] the pointwise (U3) implies (U2) with alpha_* = kappa l_unit, not the converse. So a failure
+   to prove (UNIT) does not bear on (U1) or (U2). Repair (unproved as a crux): state the inequality left at the unit as (U2), which (U1) implies and which with
+   (TH) gives the seed; (U3) is one sufficient condition for (U2) on the range, not a weaker form. The integral
+   condition of Lemma EE (c) is the seed itself, written through U/X, and is no crux.
+2. **(P1) and 8.1 item 1 understate the account's status of the form bound.** The account proves it, by its own
+   declaration, as Theorem 4.14:thm-operator-theorem (B) with uniformity (I) (CA-I 46035; index status PROVED); CA-II
+   8.2-8.3 import it. For a port the bound is then a cited input of the account, not an open hypothesis. Its proof
+   was not read here.
+3. **Lemma CAP (b) adds nothing to (BR-gap) (L70, L272).** Both are upper bounds on the integrated bridge constant;
+   (BR-gap) gives the sharper (1/2) integral of gam_s ds <= E_1. The fact test of N5 should use E_1. The Reading after
+   CAP stands, with the exact bound 2 beta_0 M a_iota.
+4. **N2's "one object" claim is a description (L266, L163).** The precise statement that holds: (TH) and (HC-phys)
+   imply (BDD-Delta) and (Z-UNB), through the seed and Theorem ZD-c (with ZD-c's side condition); the converse is not
+   known. The pair at L163 is equivalent to ZD's pair only through the seed.
+5. **(P3) cites the abstract proposition only (L50).** The account's link to the fluctuation laws (class S, q_- = a_-,
+   varpi <= q_-/4, "In the application") is CA-II 83846-83855.
+6. **L225, "no ... Poincare inequality".** A Poincare inequality for globally uniformly convex V on R^N is one line from
+   the Helffer-Sjostrand hypothesis of Lemma 8.3:lem-correlation-decay (CA-II 83870-83876); none is stated for the
+   windowed laws; no log-Sobolev or hypercontractive statement exists in CA-I or CA-II.
+7. **Wording (L153, L145 parenthesis).** "is" should read "implies"; COUNT (b)'s hypothesis comes from Lemma IHC with
+   tau = t_0 + 2 in lattice units.
+
+### 8.3 Not checked here
+
+- T3 and the roughness exponent (L88, L115 after its first sentence), T1-T10 otherwise, Routes 1 and 3 beyond the
+  crossed-channel identity, Route 2 (b)-(e), (EX)/(PQ-EX), (TR-LF): outside the list of row 984.
+- Lemma IHC itself (its check is row 981; I re-did its four steps only as used in Lemma EE (a)).
+- The inputs of Theorem ZD (Theorem SH, Proposition Delta, Lemmas Z', E', Corollary S3'), and the proof of CA-I
+  Theorem 4.14 and where the account verifies varpi <= q_-/4 for the step.
+
+### 8.4 What this moves
+
+The direction verdict on N2 (row 982, 8.1 items 1-3) stands with the corrections: the port gives level-free uniform
+log-concavity below the unit, now with the account's own theorem behind the form bound; Lemma CAP (c), checked here,
+is the exact reason a fine-lattice proof through Theorem BR needs bridge constants of order beta_0 a_iota M with the
+bare coupling. The statement to keep at the unit is (U1) or (U2); the pointwise (UNIT-EE) is a sufficient condition for (U2) on
+the range, not a weaker form, and the integral form of Lemma EE (c) is the seed itself.
+
+RESULT: Row 984 (Claude Opus 5.5 max, Mac mini worker 1; one line-by-line check of row 982 by another model, not an audit; no numeric run). HOLDS: the end inequalities of Theorem BR (iv) at q = p = 2, Var_(nu_s)(u_s) = F(s) for mean-zero f, Lemma CAP (a), (a') (end limits now written), (b) and (c) as inequalities, Lemma TEL, Lemma EE (a)-(d) (given Lemma IHC), Lemma COUNT (a)-(c), Route 2 (a), the crossed-channel identity, (P2), (P4). HOLDS AFTER CORRECTION: L70 (CAP (b) is weaker than (BR-gap), which gives (1/2) integral gam_s ds <= E_1; no two-sided statement), the 4.2 heading ((U3) implies (U2) on [tau_0, ell], not the converse, so (UNIT) is not implied by (HC-phys); keep (U1) or (U2)), COUNT's reading ("implies"), N2's "one object" claim (precise form: (TH) and (HC-phys) imply (BDD-Delta) and (Z-UNB) through the seed and Theorem ZD-c; converse unknown) and L163, (P1) (the form bound is the account's own Theorem 4.14 (B), (I), CA-I 46035, declared PROVED, imported as a hypothesis by CA-II 8.2-8.3), (P3) (cite CA-II 83846-83855), L225 (Poincare nuance). FAILS: two sentences as written (L70, L131); no proved lemma of row 982 fails. Still OPEN: (UNIT), (U1), (U2), (HC-phys), (PQ-EX), (TR-LF), T3 and the roughness exponent (ARGUED, not checked here); not checked: Lemma IHC (row 981), the inputs of Theorem ZD, the proof of CA-I Theorem 4.14.

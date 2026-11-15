@@ -33,6 +33,8 @@ Author: Claude Fable 5.2 (max), Mac mini worker. Not yet checked by another mode
 - 19:56Z step 1 done (inputs read, wall and contract written). Nothing proved yet.
 - 20:08Z step 2 blind pass written (inventory, conclusions C1-C8, assumptions, candidates). Proofs follow in Sections 3, 4, 7.
 - 20:10Z comparison with the lane and with main / PR #10114 written (2.5). No row holds the items attacked below.
+- 20:15Z step 3 written (auxiliary fields: Lemma AUX, H1-H3, Lemma HW, Proposition LG, HS1; all five FAIL).
+- 20:18Z step 4 written (Lemma CEN+, Lemma REM, Lemma MC, Identity HAM1; gauge fixings, Hamiltonian, comparisons: all FAIL).
 
 ## 1. Step 1: inputs, the wall stated twice, the target contract (exercise steps 0 and 1)
 
@@ -233,3 +235,329 @@ Identity AV and Theorem BH, the loop-gas form of a kernel's twist response, the 
 comparison, the quaternion Hubbard-Stratonovich idea, plaquette variables with the verdict of A12. Where the
 earlier work is stronger I use it: A12's verdict (a covariance bound in the plaquette metric says nothing about
 decay) is the test that candidate (ANG) must meet, and it is applied in Section 7.
+
+## 3. Step 3: candidates with auxiliary fields (Task 1: identity, group, action, what it moves)
+
+Notation. Quaternions: SU(2) = unit quaternions, Re q = (1/2) tr q, Im q in R^3 = su(2), <p, q> = Re(p-bar q) the
+inner product of R^4. For a link l = (x -> y): U_l -> g_x U_l g_y^(-1). YM_beta is the Wilson measure
+prop. to exp(beta sum_p t_p(U)) dU on a finite box or torus, t_p = Re U_p. L = number of links.
+Marks: PROVED = proved by hand here, checked by no one.
+
+### 3.0 Lemma AUX (what a symmetry of an added field can say; PROVED, three lines)
+
+Let (Phi, d phi) be a measure space, K a group that acts on Phi and keeps d phi, and r(U, phi) >= 0 measurable with
+N(U) = int r(U, phi) d phi in (0, infinity) and r(U, k phi) = r(U, phi). Put P(dU, d phi) = YM_beta(dU) r(U, phi) d phi / N(U).
+(a) The U-marginal of P is YM_beta. (b) P is K-invariant, and K fixes every function of U. (c) For a subset of Phi
+(a pin) and a map T of the pinned data, E_P of the twisted weight ratio equals E_YM[N^T_pin(U) / N_pin(U)]: the
+expectation of a functional of U alone.
+Proof. (a) Integrate phi. (b) r and d phi are invariant and K does not act on U. (c) Integrate phi at fixed U. QED
+
+So every Ward identity of K is an identity for the conditional law of phi given U, integrated against YM_beta. It
+contains no derivative of YM_beta in a direction that changes the gauge orbit of U. Reopen condition (i) asks for
+a group that "moves gauge-invariant observables"; in this class K moves only observables that contain phi.
+
+### 3.1 Candidate (H): frozen fundamental Higgs field, custodial SU(2)
+
+**Identity H1 (the model and unitary gauge; DEF plus one change of variables).** Sites carry phi_x in SU(2).
+h_l(U, phi) = Re(phi_x^(-1) U_l phi_y) = <phi_x, U_l phi_y>. GH(beta, kappa) has weight
+exp(beta sum_p t_p(U) + kappa sum_l h_l) dU d phi. Gauge: phi_x -> g_x phi_x. Custodial K = SU(2): phi_x -> phi_x k^(-1).
+With V_l = phi_x^(-1) U_l phi_y: t_p(U) = t_p(V), h_l = Re V_l, and (U, phi) -> (V, phi) keeps the Haar measures. K acts
+by V_l -> k V_l k^(-1).
+
+**Identity H2 (pure gauge theory, exactly; the kernel).** N_kappa(U) = int exp(kappa sum_l h_l(U, phi)) d phi is positive
+and gauge invariant. By Lemma AUX with r = exp(kappa sum h_l): under P the field V has the law
+  mu(dV) prop. to exp(beta sum_p t_p(V) + kappa sum_l Re V_l) / N_kappa(V) dV,
+phi is uniform and independent of V, and E_YM[O(U)] = E_mu[O(V)] for every gauge-invariant O. So Wilson SU(2) is
+the gauge-Higgs model in unitary gauge divided by the non-local factor N_kappa(V).
+
+**Identity H3 (the local twist is a gradient; PROVED).** For f: sites -> R and a unit a in R^3 put k_x = e^(f_x a).
+Then Re(k_x V k_y^(-1)) = Re(e^((f_x - f_y) a) V) = cos((df)_l) Re V + sin((df)_l) a . Im V, with (df)_l = f_y - f_x. The
+map V_l -> k_x V_l k_y^(-1) keeps the Haar measure, every t_p and N_kappa. So in mu the localised custodial rotation
+changes the weight only through df, on every configuration. This is property (M2) of row 1011 Section 2.
+Proof. Re(AB) = Re(BA), and e^(theta a)(v_0 + v) has real part cos(theta) v_0 - sin(theta) a . v. QED
+
+**Lemma HW (the first lemma: Ward identity with bracket, and blind bound; PROVED).** Fix U, any dimension, any
+hopping strengths kappa_l in [0, kappa], any set of pinned sites. Write V_l = t_l + s_l. For a field F: sites -> R^3
+put Delta_l F = F_x - F_y and J(F) = - sum_l kappa_l Delta_l F . s_l, the derivative of the hopping energy along
+phi_x -> phi_x e^(-F_x).
+(i) Re(e^(F_x) V e^(-F_y)) = t - Delta F . s - (1/2) |Delta F|^2 t - (F_x x F_y) . s + O(F^3).
+(ii) If F vanishes on the pinned sites and F' is any field, then in the law of phi given U
+  E[J(F) J(F')] = E sum_l kappa_l [ t_l Delta_l F . Delta_l F' - s_l . ((F_x + F_y) x Delta_l F') ].
+For F = a f, F' = c g with a perpendicular to c the first (contact) term is zero and
+  E[J_a(f) J_c(g)] = - E sum_l kappa_l (f_x + f_y)(g_x - g_y) (a x c) . s_l,
+a current about the third axis. For one axis the bracket term vanishes.
+(iii) For a twist f that does not vanish on the pins, the second derivative of - log N_pin(U; f) is
+  H(f) = E sum_l kappa_l t_l (df)_l^2 - Var(J_a(f)) <= kappa sum_l (df)_l^2.
+Proof. (i) Expand both exponentials to second order; Re(Fq) = Re(qF) = - F . Im q, Re(F^2 q) = - |F|^2 Re q,
+Re(F_x V F_y) = Re(F_y F_x V) = - (F_x . F_y) t - (F_y x F_x) . s. (ii) The integral of
+exp(A(phi e^(-delta F) e^(-eps F'))) over the free phi does not depend on delta (right translation by fixed elements).
+Its mixed derivative at 0 is E[D_delta D_eps A] + E[J(F) J(F')] = 0. The delta eps coefficient of
+Re(e^(eps F'_x) e^(delta F_x) V e^(-delta F_y) e^(-eps F'_y)) is Re(F'_x F_x V) + Re(V F_y F'_y) - Re(F'_x V F_y) - Re(F_x V F'_y)
+= - t Delta F . Delta F' + s . ((F_x + F_y) x Delta F'). (iii) H3 and |t_l| <= 1. QED
+
+Remark. Given U, the field phi with bond quaternion phi_x^(-1) U_l phi_y is a member of OpenAI's local class (fixed unit
+quaternion on each bond, the symmetry on the other side), in any dimension. Lemma HW is their (3.5)-(3.8) in that
+generality; nothing in it uses d = 2. The statements hold jointly in GH(beta, kappa) and in P as well, because K
+does not act on U.
+
+**Proposition LG (the twist response is a Wilson-loop series; PROVED; the diamagnetic inequality rebuilt).** Let eta
+be a real field on links and N^eta_kappa(U) = int exp(kappa sum_l Re(e^(-eta_l a) phi_x^(-1) U_l phi_y)) d phi (no pins). Then
+  N^eta_kappa(U) = sum over (n, pi) of prod_l (kappa^(n_l)/n_l!) prod_x c(m_x) prod over cycles gamma of 4 t_gamma(U) cos(eta(gamma)),
+where n_l >= 0 are integers with even degree 2 m_x at each site, pi is a perfect matching of the half-edges at each
+site, c(m) = 1/(4 . 6 ... (2m + 2)), the cycles gamma are the closed lattice walks traced by (n, pi), t_gamma = Re U_gamma,
+and eta(gamma) is the signed sum of eta along gamma. All coefficients are non-negative. Hence |N^eta_kappa(U)| <= N_kappa(1),
+N^(df)_kappa = N_kappa, and
+  N^eta_kappa(U) = 1 + kappa^2 L/8 + (kappa^4/64) sum_p t_p(U) cos((d eta)_p) + (terms without U at order kappa^4) + O(kappa^6).
+Proof. Re(e^(-eta a) phi_x^(-1) U phi_y) = <phi_x, T_l phi_y> with T_l = (left multiplication by U_l)(right multiplication by
+e^(-eta_l a)) in SO(4). Expand each exponential. For the uniform measure on S^3 and vectors w_1, ..., w_2m in R^4,
+E prod <phi, w_i> = c(m) sum over matchings of prod <w_i, w_j> (the Gaussian Wick rule divided by the radial moment
+4 . 6 ... (2m + 2); odd moments vanish). Matching at every site turns the product into traces over R^4 of products of
+T_l and T_l^T along closed walks. Left and right multiplications commute, so the trace along gamma is
+tr(L_(U_gamma) R_(e^(-eta(gamma) a))) = 4 Re(U_gamma) cos(eta(gamma)) (the character of the representation (1/2, 1/2) of
+SU(2) x SU(2)). The series converges absolutely: its terms are bounded by the terms at U = 1, eta = 0, which sum to
+N_kappa(1). The low orders: one doubled link gives (kappa^2/2)(1/4); one plaquette gives kappa^4 (1/4)^4 . 4. QED
+
+So the custodial response of the kernel is W(eta) = E_YM[N^eta_kappa/N_kappa], and at leading order in kappa
+  - d^2/d eps^2 log W(eps eta) at 0 = (kappa^4/64) E_YM[t_p] sum_p (d eta)_p^2 + O(kappa^6).
+It is a curl form in eta at every beta. Its coefficient is the mean plaquette, and at higher orders a sum of
+Wilson loops weighted by kappa^(length) and by the squared flux of d eta through them.
+
+**Verdict on (H): FAILS as a reopening, with the exact reasons.**
+1. Condition (i), last clause. K moves no function of U (Lemma AUX). The observables it moves contain phi.
+2. Slot (i) is filled, and trivially: H(f) <= kappa |df|^2 on every background (Lemma HW (iii)). But the response
+   is a property of the probe field phi in a YM background (Proposition LG). At kappa -> 0 it is
+   O(kappa^4) times the mean plaquette.
+3. Slot (ii), the dimension. The cost form kappa |df|^2 is a Dirichlet form of a 0-form. A unit twist across a box
+   of side R costs kappa R^(d-2): scale invariant in d = 2, growing like R^2 in d = 4. The shell sum of |k|^(-2)
+   is a logarithm only in d = 2. ARGUED consequence: no gain per scale in d = 4. This agrees with the known
+   order of the 4D O(4) model at large kappa in a flat background (Frohlich, Simon and Spencer; RECALLED).
+4. Five dimensions (K7), valid form. For kappa below an absolute constant the field phi is in its
+   high-temperature regime in every background and every dimension (RECALLED: Dobrushin uniqueness, uniform in
+   U; not rebuilt). So "the custodial response is small" is true in d = 5 at weak gauge coupling, where the gauge
+   field is believed massless. A step "small custodial response implies decay of all observables" would be
+   refuted there at belief level, and at theorem level by the product of GH with a Villain U(1) factor (Lemma PT).
+5. As a comparison model, GH(beta, kappa) is row 1004's I10 and row 859's idea 33: the open step is uniformity as
+   kappa -> 0, which is the crux at the pure end. Found again; no new input.
+
+### 3.2 Candidate (N): a unit adjoint field and the U(1) about it
+
+Kernel: M_kappa(U) = int exp(kappa sum_l n_x . Ad(U_l) n_y) dn, n_x in S^2. It is exact by Lemma AUX. The only maps of
+S^2 that commute with all rotations are +-1, so the added field has **no continuous rigid group at all** (PROVED: a
+map of S^2 commuting with SO(3) fixes or negates each point, by the stabiliser of the point). The moves
+U_l -> e^(theta_l n_x) U_l keep the hopping term and change beta t_p by the curl of theta plus the frame defect of n
+(Lemma FR of row 1011), and they change M_kappa(U), which is not gauge-related. The comparison model without
+1/M_kappa is the Georgi-Glashow family, whose kappa = infinity end is compact U(1) exactly (Lemma GG, row 1004).
+**FAILS; found again** (row 1004 I11; row 1011 7.3).
+
+### 3.3 Candidate (HS): Hubbard-Stratonovich variables
+
+**Identity HS1 (PROVED; a positive form).** For p with links l_1, ..., l_4 put A_p = U_1 U_2 and B_p = U_4 U_3 (the two
+two-link paths from x to x + mu + nu). Then t_p = <A_p, B_p> = (1/2)|A_p + B_p|^2 - 1, and with gamma_beta the centred
+Gaussian law on R^4 of covariance beta,
+  exp(beta t_p) = e^(-beta) int gamma_beta(d w_p) exp(<w_p, U_1 U_2> + <w_p, U_4 U_3>).
+So YM_beta is the U-marginal of a positive measure on (U, w), w_p a quaternion on the diagonal of p, with a
+three-body weight on each of the two triangles of p. A second step, exp(<a, b>) = e^(-(|a|^2+|b|^2)/2) int gamma_1(d z)
+exp(<z, a + b>) with a = U_1^(-1) w, b = U_2, makes every link appear linearly; the links then integrate to
+prod_l Phi(|J_l|), Phi(r) = 2 I_1(r)/r > 0, J_l a sum of quaternion products of the Gaussian fields.
+Proof. |A + B|^2 = 2 + 2 <A, B> for unit quaternions, and int gamma_beta(dw) e^(<w, v>) = e^(beta |v|^2/2). QED
+Group: the gauge group acts on w_p by g_x w_p g_(x+mu+nu)^(-1) and on z likewise. There is no other rigid group: the
+auxiliary fields sit on diagonals and corners and transform as links do. The radial part |w_p| is a random
+plaquette coupling (Identity MIX of row 996 is the same device). **FAILS for (i): no group beyond the gauge
+group.** Found again in kind (row 859 idea 41 (c), row 996).
+
+### 3.4 Candidate (CH): characters, and plaquette variables with Bianchi constraints
+
+The character expansion has discrete variables (spins on plaquettes, intertwiners on links): no continuous group.
+In plaquette variables the Wilson weight prod_p exp(beta Re W_p) is invariant under W_p -> h_p W_p h_p^(-1) for
+every p separately, a rigid on-site action of SU(2)^(plaquettes). The Bianchi constraints (one group-valued
+equation per 3-cube, with transporters) are invariant only under the diagonal subgroup, which is global colour.
+A localised conjugation violates a hard constraint. So the only rigid group is global colour, which moves no
+invariant, and its twists are removable (Lemma REM, Section 4). **FAILS; found again** (A12 of row 670,
+`gap-skeleton-max-b.md` L215-220 and L581; row 967 5.1).
+
+### 3.5 Candidate (QL): rotor form, temporal gauge, quantum links
+
+**Identity QL1 (DEF; exact on a time interval with free ends).** Fix U_4 = 1 by a gauge transformation (Jacobian
+one). The variables are A_l(t), l a spatial link. The weight is
+prod_t exp(beta sum_(spatial p) t_p(A(t))) prod_(l,t) exp(beta <A_l(t), A_l(t+1)>).
+The kinetic factor is, for each spatial link, an O(4) chain in time with a rigid SU(2) x SU(2) acting on that link
+alone. The magnetic factor breaks the product over links to the time-independent gauge group
+G_3 = SU(2)^(spatial sites). So G_3 is a continuous non-abelian group that acts rigidly on the integration
+variables, on-site in time. Its localisation g_x(t) changes only the kinetic factor, through g_x(t)^(-1) g_x(t+1):
+a gradient in time, one chain per spatial site.
+What it moves: no gauge-invariant observable (the gauge-invariant functions in this gauge are the G_3-invariant
+ones). Its twist is a field of pinned temporal links. With free ends it is removable (Lemma TWIST). With pinned
+ends it is the kernel of exp(-T H) without the Gauss projection, composed with a gauge transformation of one end:
+the weights of sectors with static colour charges. ARGUED: these decay in T at a rate given by the energy of a
+static charge, in every gauge theory of the class, compact U(1) included (a static charge has positive energy
+there too). So the response is blind, and a small response says nothing about gauge-invariant correlations.
+**FAILS at condition (i) (Elitzur) and at slot (iii).** Quantum link models are other models (finite link
+spaces), not identities for the Wilson weight: no inequality to Wilson SU(2) is on record. **FAILS as stated.**
+
+**Step 3 result.** Five candidates written with their identities. PROVED: Lemma AUX, Identity H3, Lemma HW,
+Proposition LG, Identity HS1. All five FAIL the reopen condition. The nearest is (H): it has a rigid non-abelian
+group, a local gradient twist, a bracket identity and a blind bound, on every gauge background. It fails because
+the group acts on the probe only, and because its cost form is a Dirichlet form, which is scale invariant in two
+dimensions and not in four.
+
+## 4. Step 4: candidates without auxiliary fields, and three structural lemmas
+
+### 4.1 Lemma CEN+ (every rigid on-site map of link variables is a gauge transformation times a centre field; PROVED)
+
+**Statement.** Let p have links l_1, ..., l_4 with U_p = U_1 U_2 U_3^(-1) U_4^(-1) (row 1011 3.1). Let phi_1, ..., phi_4 be
+arbitrary maps SU(2) -> SU(2) (no continuity, no group law, no measure) with
+  Re(phi_1(U_1) phi_2(U_2) phi_3(U_3)^(-1) phi_4(U_4)^(-1)) = Re(U_1 U_2 U_3^(-1) U_4^(-1))   for all U in SU(2)^4.
+Then there are g_x, g_(x+mu), g_(x+mu+nu), g_(x+nu) in SU(2) and signs sigma_i with product +1 such that
+phi_i(U) = sigma_i g_tail(i) U g_head(i)^(-1). On a lattice in which the corner graph at each site is connected
+(every box or torus of dimension at least 2), a family (phi_l) that keeps every plaquette trace is a gauge
+transformation times a closed Z_2 link field.
+
+**Proof.** Put M = U_4 U_3 U_2^(-1) and M' = phi_4(U_4) phi_3(U_3) phi_2(U_2)^(-1). Then Re U_p = Re(U_1 M^(-1)) = <M, U_1>, and
+the hypothesis reads <M', phi_1(U_1)> = <M, U_1> for all U_1, ..., U_4.
+Step 1. Take U_1 = M. Two unit vectors with inner product 1 are equal, so M' = phi_1(M):
+  (*)  phi_4(U_4) phi_3(U_3) phi_2(U_2)^(-1) = phi_1(U_4 U_3 U_2^(-1))   for all U_2, U_3, U_4.
+Step 2. So <phi_1(M), phi_1(U_1)> = <M, U_1> for all U_1 and all M in SU(2). With f_i = phi_1(e_i) for the basis
+e_0, ..., e_3 = 1, i, j, k: the f_i are orthonormal, <phi_1(u), f_i> = <u, e_i>, and the squares of these numbers
+sum to 1 = |phi_1(u)|^2. So phi_1(u) = sum <u, e_i> f_i: phi_1 is the restriction of some T in O(4).
+Step 3 (classical fact, used as an input: every rotation of R^3 is conjugation by a unit quaternion). Let
+c = T(1) and T' = c^(-1) T. T' fixes 1, so it maps Im H to itself by an element of O(3). If that element is
+Ad(q), then T(u) = c q u q^(-1). If it is - Ad(q), then T(u) = c q u-bar q^(-1). So phi_1(u) = L u R^(-1) (proper) or
+phi_1(u) = L u^(-1) R^(-1) (improper).
+Step 4. Put two of the three variables in (*) equal to 1. Then phi_4 = phi_1 times a constant on the right,
+phi_3 = constant . phi_1 . constant, and phi_2(u) = phi_1(u^(-1))^(-1) . constant. So all four maps have the same type.
+Proper case: phi_i(u) = L_i u R_i^(-1), and (*) reads
+  L_4 U_4 R_4^(-1) L_3 U_3 R_3^(-1) R_2 U_2^(-1) L_2^(-1) = L_1 U_4 U_3 U_2^(-1) R_1^(-1).
+With U_3 = U_2 = 1: (L_1^(-1) L_4) U_4 = U_4 z for all U_4, with z constant. At U_4 = 1, z = L_1^(-1) L_4; then z commutes
+with all of SU(2), so L_4 = +-L_1. Cancel U_4 and repeat with U_2 = 1: R_4^(-1) L_3 = +-1. Cancel U_3 and repeat:
+R_3^(-1) R_2 = +-1 and R_1^(-1) L_2 = +-1. These are the four corners: l_1, l_4 share the tail x (g_x = L_1); l_1 ends
+where l_2 starts (g_(x+mu) = R_1); l_2 and l_3 share the head (g_(x+mu+nu) = R_2); l_4 ends where l_3 starts
+(g_(x+nu) = R_4). Putting the maps back in the hypothesis at U = 1 gives the product of the signs.
+Improper case: (*) reads L_4 U_4^(-1) R_4^(-1) L_3 U_3^(-1) R_3^(-1) R_2 U_2 L_2^(-1) = L_1 U_2 U_3^(-1) U_4^(-1) R_1^(-1). Put U_3 = 1 and
+P = R_4^(-1) L_3 R_3^(-1) R_2. With U_4 = 1: L_1^(-1) L_4 P = R_1^(-1) L_2 = eps = +-1. With U_2 = 1: L_1^(-1) L_4 = eps' = +-1 and
+R_1^(-1) L_2 P^(-1) = eps'. So P = eps eps' and the identity becomes U_4^(-1) U_2 = U_2 U_4^(-1) for all U_2, U_4. This is false
+(U_2 = i, U_4 = j). So the improper case does not occur.
+Lattice statement: by the plaquette statement each phi_l is u -> L_l u R_l^(-1), and at each corner the two
+link-end elements agree up to sign. A connected corner graph gives one g_x per site up to signs; the signs form a
+link field whose product around each plaquette is +1. QED
+
+**What it adds to Lemma CEN.** Row 1011 assumed multipliers U -> h U. Here the maps are arbitrary. So in link
+variables there is no hidden rigid symmetry of any kind, continuous or discrete, beyond the gauge group and the
+centre one-form symmetry. Remark (ARGUED, not written out): for a compact group G and the energy Re tr rho(U_p)
+with rho faithful and irreducible, the same steps give phi_l(U) = L_l alpha(U) R_l^(-1) with alpha an automorphism of G
+that keeps Re tr rho. For SU(N), N >= 3, complex conjugation is such an alpha; for SU(2) every automorphism is
+inner.
+
+### 4.2 Lemma REM (which colour twists of pinned data are removable; PROVED; Lemma TWIST for a general pin)
+
+Let P be any set of pinned links with data u, the other links integrated, Z(u) the partition function. For every
+site map g, Z(u^g) = Z(u) (gauge transformation of all links; row 1013 Lemma TWIST). Let P_B be a subset of P and k
+in SU(2), and let u' be u with u_l replaced by k u_l k^(-1) for l in P_B. If no site is an end of both a link of P_B
+and a link of P minus P_B, then u' = u^g with g = k on the sites of P_B and g = 1 elsewhere, so Z(u') = Z(u).
+So a relative colour rotation of a union of connected components of the pinned graph costs nothing. A rotation of
+part of one component changes the gauge orbit of the pin: it is a Schrodinger-functional deformation, the object
+of row 1011 and of Section 7. Credit: rows 1013 (TWIST), 859 (idea 7), 858 (C2).
+
+Consequence (C6 made exact). Pinned data are charged under global colour only relative to other pinned data in
+the same connected component. A "colour twist between two pins" exists as a non-trivial response only if a pinned
+path joins them. Then the response is the dependence of Z on the holonomy of that path: a correlation of field
+strengths transported along a pinned line.
+
+### 4.3 Lemma MC (exact, continuous, non-abelian symmetries that are not gauge transformations; PROVED)
+
+**Statement.** Fix a link l with tail x and strengths beta_p >= 0. Write S(U) = Re(U_l Sigma_l) + S', where
+Sigma_l = sum over p containing l of beta_p sigma_p, sigma_p the staple with U_(p, based at x, starting along l) = U_l sigma_p,
+and S' does not contain U_l. On the set where Sigma_l is not 0 put Sigma-hat = Sigma_l/|Sigma_l| and, for k in SU(2),
+  R_(l,k): U_l -> k U_l Sigma-hat k^(-1) Sigma-hat^(-1),   all other links fixed.
+Then: (a) R_(l,k) keeps the Haar measure and S, so it keeps YM for every beta, and R_(l,k) R_(l,k') = R_(l,kk'): an
+action of SO(3). (b) With W = U_l Sigma-hat = w_0 + w and q_p = Sigma-hat^(-1) sigma_p = q_(p,0) + q_p-vec:
+t_p = w_0 q_(p,0) - w . q_p-vec, and under R_(l,k) the vector w turns by Ad(k) while w_0 and all q_p stay. So t_p changes
+unless q_p-vec = 0 or w = 0, and sum_p beta_p q_p-vec = 0. (c) R_(l,k) R_g = R_g R_(l, g_x^(-1) k g_x) for a gauge transformation
+R_g, so the average of F o R_(l,k) over k with a conjugation-invariant law maps gauge-invariant F to
+gauge-invariant functions, and it is not the identity.
+**Proof.** (a) For fixed other links the map is a left translation by k and a right translation by
+Sigma-hat k^(-1) Sigma-hat^(-1), and Sigma-hat does not depend on U_l; Fubini gives the product Haar measure.
+Re(U_l' Sigma_l) = |Sigma_l| Re(k W k^(-1)) = Re(U_l Sigma_l). (b) Re(U_l sigma_p) = Re(W q_p). (c) Under g, W -> g_x W g_x^(-1). QED
+
+**Reading.** This is the conditional law of one link: a von Mises-Fisher law on S^3 about the staple direction,
+with its SO(3) of rotations (the continuous form of an overrelaxation step). It shows that reopen condition (i)
+as worded is met in a void way: a continuous non-abelian group, exact for every beta, on the integration
+variables, moving gauge-invariant observables. It gives nothing, for the reason Elitzur's theorem gives: it is a
+local invariance. Each R_(l,k) is separately a symmetry, so a "localised" version is again a symmetry and no cost
+form exists. For compact U(1) the same group is the reflection about the staple (discrete). **The reopen
+condition must read: a rigid group** (field-independent maps of on-site variables, a symmetry only when applied
+everywhere with the same element), with pinned data that are charged under it in the sense of Lemma REM.
+Lemma CEN+ then says: in link variables there is none.
+
+### 4.4 Candidate (GF): gauge fixings with a global residual group
+
+- **Tree gauge** (U_l = 1 on a maximal tree; Jacobian one; exact). Residual group: constant g, acting by
+  conjugation on the other links. It is rigid and non-abelian. It moves no invariant. Its localisation
+  U_l -> e^(f_l a) U_l e^(-f_l a) with a real field f on links has, in the theory without gauge fixing, the cost form
+  (Lemma WN (iii) of row 1013 with F equal to f_l at both ends of l)
+    E[X^2] = sum_p beta_p E[x_p] sum over corners (l, l') of p of (f_l' - f_l)^2.
+  **Remark (a sharpening of row 1013's corner-graph sentence; PROVED given Lemma WN).** For general link-end
+  fields the corner graph is one K_(2,2,2,2) per site. For conjugation fields the two ends of a link carry the same
+  value, the graph on links is connected, and the cost form is a Dirichlet form on the lattice of links. So a
+  gradient structure does exist for the localisation of global colour. It does not help: without pins the
+  response is identically zero (the map keeps the Haar measure, so direct cost and variance cancel exactly); with
+  pins it is removable or a Schrodinger-functional deformation (Lemma REM); and a Dirichlet form of a field on
+  links is not scale invariant in d = 4 (a unit variation across a box of side R costs beta R^2).
+- **Temporal gauge**: Identity QL1 of 3.5 and Identity HAM1 below.
+- **A two-dimensional residual group.** Fix U_4 = 1 everywhere and U_3 = 1 on the hyperplane x_4 = 0 (Jacobian one;
+  free ends). The residual transformations are g(x_1, x_2). For each z = (x_1, x_2) and mu in {1, 2} the field
+  q_(z,mu)(x_3, x_4) = U_mu(z; x_3, x_4) is a two-dimensional chiral field with left group g_z and right group g_(z+mu);
+  the (mu, 4) plaquettes are O(4) bonds without twist, the (mu, 3) plaquettes are O(4) bonds twisted on both sides by
+  the in-plane fields, and the (1, 2) plaquettes couple four chiral fields at one point. This is the transverse
+  lattice picture (Bardeen, Pearson and Rabinovici 1980; RECALLED). The residual group is rigid in the two long
+  directions and non-abelian. It is a subgroup of the gauge group, so it moves no invariant; its localisation is
+  a field of pinned in-plane links, and the response is a function of their gauge orbit. **FAILS (Elitzur).**
+- **Landau gauge.** The minimal Landau gauge is defined by a global minimum; it is non-local and has Gribov
+  copies, and its Jacobian is a Faddeev-Popov determinant on the fundamental region (RECALLED; not rebuilt).
+  Its soft form is the kernel of 3.1 with kappa in place of 1/alpha (row 1013 C7 uses the divergence-squared
+  functional). The residual group is global colour, as for the tree gauge. **FAILS; found again.**
+
+### 4.5 Candidate (HAM): the Hamiltonian with Gauss law
+
+On a torus, or a box with free ends, the physical space is the space of gauge-invariant functions of the spatial
+links. A constant gauge rotation is a gauge transformation, so global colour acts on it as the identity. It acts
+on the larger space without the Gauss projection.
+
+**Identity HAM1 (PROVED).** Take a lattice periodic in time with T slices, all temporal links pinned to 1 except
+those of one layer, pinned to k_x in SU(2) (x a spatial site). Let Z({k_x}) be the integral over the spatial links.
+Then Z is a class function of each k_x, and
+  Z({k_x}) = Z_YM sum over (j_x) of prod_x chi_(j_x)(k_x) E_YM[ prod_x chi_(j_x)(P_x) ],
+where P_x is the Polyakov loop at x, the sum is over all assignments of spins j_x in {0, 1/2, 1, ...}, and Z_YM, E_YM
+belong to the periodic theory with all links integrated.
+Proof. A time-independent gauge transformation g keeps the integral and maps k_x to g_x k_x g_x^(-1): Z is a class
+function of each k_x. Its Peter-Weyl coefficient at (j_x) is the integral of Z prod chi_(j_x)(k_x) over all k_x. Gauging
+the other temporal links back from 1 to Haar-distributed links (Jacobian one) turns k_x into the Polyakov loop
+and the integral into Z_YM E_YM[prod chi_(j_x)(P_x)]. QED
+
+So the response of the unprojected theory to a colour twist in time is exactly the family of Polyakov-loop
+correlators: weights of sectors with static charges. For large T each term with some j_x not 0 is small whenever
+static charges have positive energy. ARGUED: that holds in compact U(1) at weak coupling too (the analogue of
+HAM1 with characters e^(i n theta)), so the response is blind. It is slot (i) with nothing for slot (iii).
+**FAILS.** Found again in part: row 1004 I14 treats the Hamiltonian as a path in g; the gluelump reading is
+row 859 idea 20 (b).
+
+### 4.6 Candidate (CMP): one-sided comparisons with a model that has the symmetry
+
+- **Diamagnetic.** Z_GH(beta, kappa) = Z_YM(beta) E_YM[N_kappa] <= Z_YM(beta) N_kappa(1) (Proposition LG). The direction is
+  fixed and the inequality is exact. It compares free energies only. No statement on correlations follows.
+- **Layer comparison** (Durhuus and Frohlich). Given the other links, one layer of links of one direction is a
+  chiral model one dimension down in a two-sided background. Its rigid group is the stabiliser of the
+  background (`gap-arealaw2-opus.md` 3.1): the full group for a flat one-sided background (Lemma EMB of row
+  1011), and Z_2 for a generic one. In d = 4 the layer is three-dimensional and orders at weak coupling for flat
+  backgrounds (Lemma SLAB of row 1013, with a recalled theorem). **FAILS; found again.**
+- **Complex translations** (McBryan and Spencer). For a holomorphic observable and a real one-axis link-end field
+  F, the contour shift tau_(iF) is exact. For U(1) the Wilson loop gains the factor exp(-<theta, C>) pointwise. For
+  SU(2) in the lab frame it gains nothing: at a free site the insertion e^(i theta a) = cosh(theta) + i a sinh(theta)
+  averages over the gauge group to cosh(theta) >= 1, so E[x_p o tau_(iF)] = E[x_p] prod cosh(theta_(p,x)) (Lemma JEN (ii) of
+  row 1013, continued to imaginary eta; both sides are entire), and the supremum of the shifted loop is at least
+  cosh of the total shift (value at the trivial configuration). The fundamental representation contains both
+  weights about any axis. A gain needs a colour frame, as every real twist does. **FAILS.**
+
+**Step 4 result.** PROVED: Lemma CEN+, Lemma REM, Lemma MC, Identity HAM1, and the remark on conjugation
+fields. All candidates of the list FAIL condition (i) in its rigid form. The common reason has two exact parts:
+in link variables every rigid on-site map is a gauge transformation or a centre field (CEN+), and a colour twist
+of pinned data is removable unless a pinned path carries it (REM).

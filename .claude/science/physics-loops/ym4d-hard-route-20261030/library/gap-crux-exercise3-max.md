@@ -38,7 +38,7 @@ The plan has eight steps. Each maps to steps of the skill.
 | P2 | 2 | Inventory of what is known, with marks; the inputs since rows 858/878/899 | done 2026-11-15T13:44Z: 40 items; 9 are BELIEF |
 | P3 | 3, 4 | Reason up from the inventory; assumptions table | done 2026-11-15T13:48Z: C1-C8; 38 assumptions; top five ranked |
 | P4 | 5 | Open the closed list; compare; mark found or new | done 2026-11-15T13:50Z: most conclusions found again; added: the product test, a correction to row 988 Route 3 (b)-(c), the contract for H_L; I34 corrected |
-| P5 | 6 | Audit of the discard tests (K7, U(1), Q_8, 2T, ceilings), set-aside methods, working rules | pending |
+| P5 | 6 | Audit of the discard tests (K7, U(1), Q_8, 2T, ceilings), set-aside methods, working rules | done 2026-11-15T13:53Z: one verdict too strong (row 988 Route 3 (c), N2; row 996 scope); two lead rules rest on unchecked or unrebuilt inputs; no verdict shown wrong |
 | P6 | 7 | Routes: generate, try to kill, rank | pending |
 | P7 | 8 | Real attempts on the best routes; fact tests | pending |
 | P8 | 9 | Report, work items as complete briefs, RESULT line | pending |
@@ -52,6 +52,7 @@ Status log (UTC, each time read from `date -u`):
 - 2026-11-15T13:44Z. Steps 0 to 2 on disk.
 - 2026-11-15T13:48Z. Steps 3 and 4 on disk (attack files still closed).
 - 2026-11-15T13:50Z. Step 5 on disk. Closed list opened by grep and by targeted reads (lines named in Step 5), not read in full.
+- 2026-11-15T13:53Z. Step 5 addendum and Step 6 on disk.
 
 ## Step 0. The record of the wall, and the two lists
 
@@ -452,3 +453,141 @@ positive examples for the full seed (Z_2 at large beta).
 3. The contract for H_L (C6): four properties that an ultraviolet-anchored statement must have.
 
 **What it only found again:** C1, C2, C4, C7, C8, F4, Q1, Q2, 3.6, and the idea of a drift along doublings (row 975).
+
+### Step 5, addendum (after reading `gap-crux-exercise2-max.md` 6a-6d, 8.1b, 9.3-9.6 and `gap-mid-max.md` L219-234)
+
+Three more items of mine are in the earlier work. I correct the table above.
+
+- **The product device is not new.** Row 708 (`gap-mid-max.md`, "The two parts are independent in the class", checked in
+  row 709, `gap-mid-check.md` L64) takes the product of Wilson SU(2) with an Ising model: the transfer operator is the
+  tensor product and 1 + S = (1 + S_g)(1 + S_I). So the grep count above was a count of other wordings; the device
+  is credited to row 708. What is added here is one use of it: the product with a massless gauge factor as a
+  test of any step "a decrease under doubling persists", and as a test on a trajectory (L5). Mark of that use:
+  not found in the searched scope.
+- **C6 is the blockage sentence of exercise 2** (row 878, 6b): "Every engine found is blind, so its seed sits in the
+  order-one band; and the one selective fact that is provable today (asymptotic freedom at small coupling) has
+  no engine that carries it across the band." Its kinds (K1) small number, (K2) induction with a selective step,
+  (K3) exact formula are my sources (s1)-(s5) in other words.
+- **Convexity along doublings with a base at weak coupling** is route CX of exercise 2 (8.1b): Lemma CX1 proved,
+  (CVX) "false in the class", the base "not available from the account". Its 9.6 states the price in words: "the
+  wall equals the absence of one selective inequality that holds at every scale between first passage and about
+  ten correlation lengths".
+
+So the fresh pass of this run added two things only: the correction C3 (stated as a verdict in 6d below) and the
+massless-factor use of the product device. Everything else was found again.
+
+## Step 6. The blockage: discard tests, set-aside methods, working rules
+
+### 6a. Methods set aside
+
+Rows 1-18 of exercise 2 (`gap-crux-exercise2-max.md` 6a, row 878) are taken as they stand; I do not copy them.
+The rows below are the methods set aside since then (rows 879 to 997). They are taken from RESULT lines of
+`FINISH.md` (a digest), not from the files, except where a line is named. The list covers the rows that the queue
+row names (962, 970, 977-997) and the rows my reading touched (957, 967, 968, 973-976). It does not cover rows 879-956.
+
+| # | Method (authors: the lane's rows) | Reason given | Where | Kind of reason |
+|---|---|---|---|---|
+| 19 | Box-uniform tilted covariance (TILT-COV-sup), (ABS-flow) | Lemma SUB; frozen-slice runs at beta 2.5, 2.6; Theorem D2 from beta 1.07 up | rows 970, 977, 979 | refuted, theorem-grade GIVEN two ported lemmas |
+| 20 | Quotient form (TILT-COV-quot), box-uniform | q_0 about 0.24 (run) with QUOT-CAP | rows 977, 980 | fails a test that rests on a GUIDE |
+| 21 | Hypotheses uniform over plaquette coupling fields (TILT with Brascamp-Lieb) | Lemma SHEET: empty on large tori | rows 996, 997 | refuted, theorem-grade |
+| 22 | Relaxations of the constraint system (17 ideas: geometry, boundaries, shears, projected seeds, ...) | "no relaxation is a new input" | row 962 | wrong quantity (an engine change is not an input) |
+| 23 | A carrier of a seed from one coupling to finer cutoffs | it is (NOCRIT) plus a climb; false for U(1), frozen groups, K7 lines | row 978 | fails a test; open premise |
+| 24 | (LSI-br) on the fine lattice from the account's small-field convexity | short by beta_K/beta_0 (T3) | row 982 (N2) | needs a small number; the reason is ARGUED and unchecked (row 984) |
+| 25 | (UNIT) by a fine metric, by no metric, by a count of states | all stop at the thermal sum of the cube in the band | row 982 | was tried |
+| 26 | A seed below the massless floor (twisted or small boxes) | Lemma FLOOR: side times gap above 17.04 | row 988 | needs a number that first-passage boxes do not have |
+| 27 | The beta_t path from zero temporal coupling (Identity G) | needs three-dimensional mixing and (NOCRIT) | rows 988, 992 | open premise |
+| 28 | Soft exclusion of branch G by asymptotic freedom | "K7 refutes every soft form"; needs an input that tells Wilson from the K7 family | row 988 Route 3, `gap-unit-max.md` L231-246 | fails a test |
+| 29 | Route Z in its Schwarz form (zero-free torus families) | needs n-uniform zero-freeness on periodic tori; the tube width would not give a physical gap | rows 988, 991 | open premise |
+| 30 | One-plaquette separating properties (Turan log-concavity, convexity of the trace density, ...) | no consumer; Proposition 4F: the trace density is not log-concave | rows 995, 996 | wrong quantity (no consumer) |
+| 31 | Averaged curvature / Polchinski flow; Piazza-Shen disintegration | did not close; averaged forms reduce to pointwise or to Poincare itself | rows 957, 968 | circular / was tried |
+| 32 | Plaquette cellular automata; squeeze, rotate, vary the box | GUIDE and analysis rows; no input | rows 960-967 | was tried |
+| 33 | Entropy drift (DRIFT)_c along doublings; escape (ESC) | (DRIFT) open and target-like; the u_xy set is transient in one step | rows 975, 976 | open premise; the ESC test was on the wrong set (row 976's own reading) |
+
+### 6b. First principles on the blockage
+
+A tool must give one inequality at one physical size, uniformly in the cutoff (1.2). By F1 the engine is blind. By
+L1 and L5 the input cannot be blind: it must fail for a massless factor. By F3 it cannot be read off at first
+passage. So the input is one of two kinds:
+
+- (K-one) a property of the measure at one scale in the band, with a number in it; or
+- (K-flow) a statement that starts from first-passage data and is carried through the band by a step that fails
+  for U(1), for frozen groups and for products with a massless factor.
+
+**The blockage in one sentence** (exercise 2's sentence, with one clause added): every engine found is blind, so its
+seed sits in the band; the one selective fact that is provable today, asymptotic freedom at small coupling, has
+no engine that carries it across the band; **and since row 988 the lane has searched (K-one) only.**
+
+### 6c. The discard tests in their logical form
+
+Definitions as in the skill: a tool is a hypothesis H with a written proof of "H(M) implies T(M)" on a class K. A
+model M' with T(M') false refutes the tool only if H(M') is true. Otherwise it says what a proof of H must use.
+T_fix: a seed at the coupling of M'. T_W: (W) along a sequence with first-passage data. T_per: the periodic seed
+(flux sectors included). T_ev: the even-sector statement (G_ev) of row 731.
+
+| Test (model M') | Class K | The exact T that fails in M' | How the failure is known | What a tool must use to pass | Binds from |
+|---|---|---|---|---|---|
+| Compact U(1), Coulomb phase | reflection-positive gauge models with (TM) | T_fix, T_per, T_ev, and T_W along every sequence beta_j to infinity (L1) | THM, published, recalled (Guth; Frohlich and Spencer); in the lane for Villain at beta >= 2^14 (row 786, per exercise 2). At beta of order 1 to a few it is a BELIEF. | the non-abelian structure | theorem-grade at very large beta only. T_W-tools are bound in full, because their couplings tend to infinity. |
+| Free photon "through the rate" | Gaussian model on the same lattice | T_per at every size: S_2 >= 5.06 constant (row 975, L428-430); the massless floor 17.04 (row 988) | THM, lane (hand calculations; check 991 for FLOOR) | a rate or a drift that the photon does not have | every size |
+| Product with a massless factor (L5; device of row 708) | the engine's class (F1) | T_fix, T_per, T_W; and every step "a decrease of D or S under doubling persists" | THM given the U(1) theorem and a strong-coupling seed (I27, I28); the product algebra is checked (row 709) | the whole state space (no decoupled sector) | as the U(1) test |
+| Frozen Z_2 | same | T_per only. T_ev and the full seed are true there. | THM, lane (Peierls, beta above 2.191; exercise 2, 6c) | connectedness, for T_per tools only | beta above 2.191 |
+| Frozen Q_8, 2T | same | T_per only | BELIEF at order one (transition couplings from numerics); theorem-grade only at large beta | as Z_2 | order one: belief |
+| w_p at its transition coupling (Proposition V) | positive-character weights on SU(2) | T_fix at one coupling, every size | THM, published (van Enter and Shlosman), cited; Proposition V proved in the lane given it | a number (how far log w is from linear), **or** first-passage data | one coupling per p, p large. It does not test T_W-tools that read first-passage data (C3). |
+| K7 line | same | T_fix on the line | BELIEF (numerics; row 995: supported for beta_A about 1.3 to 1.5 only) | as w_p | as w_p; it is the belief-grade form of the w_p test |
+| K7 end point (a massless scalar) | same | T_fix at one point | BELIEF (row 995 doubts the 1981 end point) | as w_p | one point |
+| Theorem D2; Lemma SUB | any gauge group in the class | not a model: a theorem that a form of hypothesis is false (supremum over tilts) | THM, lane, GIVEN two ported lemmas not rebuilt (row 979) | typical tilts, or a flow-weighted form | beta above 4 G_S (1.07 on side 4), so also on the trajectory |
+| Lemma SHEET | any group | a form of hypothesis is false (uniform over coupling fields) | THM, lane (check 997, same provider) | typical coupling fields | every large torus |
+| Lemmas CAP, COUNT | - | necessary conditions on a rate obtained through Theorem BR | THM, lane (check 984) | - | they bind that route only |
+| Ceilings 1/3, 2/3, 0.775, 1.0109 | - | not models: ranges where a family of majorants stops | THM, lane (checks 840, 841, 849, 857) | another family | "needs a small number": valid as ranges; each caps one family (row 861) |
+| Gauge theories with matter in the conformal window | outside K (non-local weight after integrating the matter) | T_W | BELIEF | the Markov property of the gauge field | not a valid test for tools that use locality of the weight |
+
+Points that follow from the valid form.
+
+1. **K7 and w_p test T_fix.** A tool for T_W whose hypothesis contains first-passage data has H(M') false at K7 and at
+   w_p for a trivial reason, so these models give no constraint on it. They do refute class-wide soft statements
+   with no ultraviolet hypothesis, as row 988 Route 3 (b) says.
+2. **For T_W the theorem-grade tests are U(1), the free photon, the product with a massless factor, D2 and SHEET.**
+   None of them asks for a number at one scale. They ask for: non-abelian structure, a rate, the whole state
+   space, typical fields.
+3. **The K7 line itself is a belief; its theorem-grade form is Proposition V.** A row that discards on K7 should cite
+   Proposition V and say for which p.
+4. **A pass is no support.** (DRIFT), (CVX), (HC-phys), (U1), (U2) all pass every test. That says only what their
+   proofs must use.
+5. **The tests are not enough for (K-flow).** No test on record is a model of the SU(2) class with first-passage data
+   and no gap. None is believed to exist (I32). So for (K-flow) tools the lane has constraints (points 1, 2) and
+   no refutation device. This is a property of the problem, not a gap of the lane.
+
+### 6d. Verdicts re-judged
+
+| # of 6a | The verdict assumes | Valid in the corrected form? | If not: what comes back, and where |
+|---|---|---|---|
+| 19 | supremum over all tilts; any box | valid for that form, GIVEN the two ported lemmas (not rebuilt, cross-provider check held). Not re-derived. | - |
+| 20 | box-uniform quotient form at beta 2.3 | valid as a GUIDE at fixed coupling. It does not bind T_W formally (F4). Not re-derived. | nothing today |
+| 21 | uniformity over coupling fields | valid (theorem-grade, same-provider check) | - |
+| 22 | an engine change is not an input | valid as reported; not re-derived (the run was partial) | - |
+| 23 | the carry runs along beta at fixed physics | valid. It is a T_fix-type tool, so K7 and w_p bind it. | - |
+| 24 | T3: the port is short by one logarithm | valid as reported, but ARGUED and unchecked (row 984 lists it as not checked). A lead rule rests on it. | work item W3 |
+| 25 | three routes | "was tried": rules out nothing. | - |
+| 26 | a class-wide seed threshold | valid in range: it binds every blind trigger. It does not bind a selective trigger (C6). | - |
+| 27 | - | valid as reported; not re-derived | - |
+| 28 | (c): "the branch can only be excluded by an input that tells the Wilson trajectory from the endpoint family beyond first passage"; N2: no new row "without an input that separates the Wilson trajectory from K7" | **too strong.** (b) is valid: K7 (better: w_p) refutes soft class-wide statements. (c) does not follow: first-passage data already tell the trajectory from K7. The valid necessary conditions are points 1 and 2 of 6c. | The (K-flow) kind comes back as admissible. No instance exists (exercise 2, 6b; route CX failed at its base). On the path of the target. |
+| 29 | n-uniform zero-freeness | valid as reported; not re-derived | - |
+| 30 | the input is a one-scale property of the weight | valid in range: it covers (K-one) candidates only | as 28 |
+| 31, 32 | - | "was tried" / valid as reported; not re-derived | - |
+| 33 | the ESC test set | row 976 itself says the test set was trivially transient; the verdict on ESC is "not tested", not "fails" | a real ESC test needs a set of the relaxed slice (row 976's reading) |
+| ex2 #18 | Migdal-Kadanoff is group-blind | valid; my own inventory slip (I34) confirms it | - |
+| ex2 6c point 1 | Q_8, 2T bind T_per only | valid; kept in the table above | - |
+
+Where the corrected verdicts matter: row 28 and row 30 are on the path. They change what the lead asks of the next
+direction row. They do not supply a tool.
+
+### 6e. The working rules (group (f); questioned on paper, all obeyed in this run)
+
+| Rule | What it does | Finding |
+|---|---|---|
+| "Fact tests before any proof, one verdict each" (rows 988, 996) | filters approaches before work | Sound in the valid form. The fact-test tables have one K7 column for all tools. By 6c point 1 the column should say for which T it is used (T_fix or T_W) and cite Proposition V. |
+| Lead notes "do not queue X" (rows 970, 982 N2, 988 N2, 996 note) | discard whole families | Rows 970 and 996: theorem-grade for the forms named. Row 982 N2 rests on T3, ARGUED and unchecked. Row 988 N2 is too strong (6d row 28). |
+| "Write blind approaches before reading" | fresh look | In rows 988, 996 and here the blind pass found again what the record holds. In this run it cost 3 of 8 steps and added two small items. A grep of the anchors right after writing would cut the cost. |
+| Same-provider checks while the other provider is held | keeps the queue moving | Every check of rows 977-996 (979, 981, 984, 989, 991, 994, 997) is same-provider. Theorem D2, Lemma SHEET, FLOOR and the (DET) chain carry discard verdicts on that basis. |
+| "A proof lane stops after three failed routes" | bounds cost | The stop is fine. The summary "failed by three routes" is then quoted as a property of the statement (rows 982, 988). It is a record of a search. |
+| No computer-assisted step | contract | Not used. On paper: dropping it would not reach the band; it could only move a ceiling. |
+| One row, one session, 128,000 tokens per response | recoverability | A (K-flow) attack is one long induction. It cannot be owned by rows of 40 minutes unless a part file carries its state (the research procedure's `parts/<part>.md`). The gap lane has no such file; its state is spread over row results. |

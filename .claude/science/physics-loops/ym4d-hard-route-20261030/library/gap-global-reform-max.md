@@ -35,6 +35,7 @@ Author: Claude Fable 5.2 (max), Mac mini worker. Not yet checked by another mode
 - 20:10Z comparison with the lane and with main / PR #10114 written (2.5). No row holds the items attacked below.
 - 20:15Z step 3 written (auxiliary fields: Lemma AUX, H1-H3, Lemma HW, Proposition LG, HS1; all five FAIL).
 - 20:18Z step 4 written (Lemma CEN+, Lemma REM, Lemma MC, Identity HAM1; gauge fixings, Hamiltonian, comparisons: all FAIL).
+- 20:22Z steps 5 and 6 written (test table; no survivor for (i); the reopen condition corrected to rigid + charged pins + on the gauge-invariant algebra).
 
 ## 1. Step 1: inputs, the wall stated twice, the target contract (exercise steps 0 and 1)
 
@@ -561,3 +562,70 @@ row 859 idea 20 (b).
 fields. All candidates of the list FAIL condition (i) in its rigid form. The common reason has two exact parts:
 in link variables every rigid on-site map is a gauge transformation or a centre field (CEN+), and a colour twist
 of pinned data is removable unless a pinned path carries it (REM).
+
+## 5. Step 5: the tests (Task 2), in the valid form of the exercise skill
+
+A model refutes a candidate only if the candidate's hypothesis holds there and its conclusion fails. Otherwise the
+test says what a proof must use. "Elitzur" = does the group move a function of U alone. The slots are those of
+row 1013 Section 2: (i) a response with a blind bound and gradient invariance, (ii) a bracket of trivial moves
+with a scale-invariant cost, (iii) a step from small response to decay of all observables.
+
+| Candidate | Elitzur, Lemma CEN+ | Compact U(1): gain must vanish | d = 5 | Lemma PT, Proposition NP | Theorem D2, Lemma SHEET, Lemma SLAB | Slots (i) / (ii) / (iii) | Verdict |
+|---|---|---|---|---|---|---|---|
+| (H) custodial SU(2) of a frozen fundamental field | fails: K fixes every function of U (Lemma AUX) | passes as a constraint: for U(1) the field phi_x in U(1) has a rigid U(1), a gradient twist and no bracket | the hypothesis "custodial response small" holds for small kappa in every dimension; the conclusion fails in d = 5 at belief level | PT: GH times a Villain U(1) factor has a small custodial response and no seed, so a step (iii) that reads phi only is refuted at theorem level (given the U(1) theorem). NP not reached | as a class over all backgrounds: at U = 1 the field phi is the 4D O(4) model, ordered at large kappa (RECALLED); so a uniform statement needs small kappa, where it is trivial | (i) yes, H <= kappa abs(df)^2 (Lemma HW); (ii) bracket yes, scale-invariant cost no in d = 4; (iii) no | FAILS (PROVED parts: AUX, HW, LG) |
+| (N) adjoint unit field | no continuous rigid group on the field (3.2) | - | - | - | kappa = infinity is compact U(1) (Lemma GG, row 1004) | none | FAILS |
+| (HS) Gaussian quaternion fields | gauge group only | same form for U(1) with complex Gaussian fields | no input | - | radial parts are coupling fields: Lemma SHEET binds any statement uniform in them | none | FAILS |
+| (CH) characters; plaquettes with Bianchi | discrete; or global colour only | for U(1) the constraint is linear and the dual is a gauge theory with the one-form symmetry | - | - | - | none | FAILS |
+| (QL), (HAM) temporal gauge, group G_3 | fails: G_3 is a subgroup of the gauge group | the U(1) form of HAM1 has the same content | no input | the response reads static charges, not the spectrum of gauge-invariant states | - | (i) yes, blind; (ii) a gradient in one direction only; (iii) no | FAILS (PROVED: QL1, HAM1) |
+| (GF) tree gauge, global colour | fails | abelian: trivial action | - | - | - | response identically 0 without pins | FAILS |
+| (GF) two-dimensional residual group | fails | same | - | - | contains the sheets of Theorem D2 as conditional laws | none | FAILS |
+| (CMP) diamagnetic | - | holds for U(1) too | holds in every d | - | - | free energies only | FAILS |
+| (CMP) layer comparison | rigid group = stabiliser of the background | - | - | - | Lemma SLAB: the 3D layer orders | hypothesis false at weak coupling | FAILS |
+| (CMP) complex translations | needs a colour frame (cosh factors) | U(1): gives the perimeter law, which is the truth there | - | - | - | one abelian direction, no bracket | FAILS |
+| (MC) single-link rotations about the staple | moves invariants, but is a local invariance | U(1): a reflection | every d | - | - | no cost form, so no slot (i) | void (PROVED: Lemma MC) |
+
+No test had to be bent. Two tests gave more than a verdict. The U(1) column shows again the split of row 1011:
+the rigid group with a gradient twist exists where the bracket vanishes, or on a probe. The d = 5 column kills
+(H) in the valid form: its hypothesis is true there for a blind reason.
+
+## 6. Step 6 (Task 3): no survivor for condition (i); the lemmas that close it, and the condition in its exact form
+
+### 6.1 What was proved for and against
+
+- For the nearest candidate (H) the "first lemma" exists and is proved: Lemma HW (Ward identity with bracket term
+  and blind bound H <= kappa |df|^2 on every gauge background, every dimension) with Proposition LG (the response
+  as a Wilson-loop series with non-negative coefficients). They are statements about the probe field.
+- Against condition (i): Lemma AUX (a group on an added field fixes every function of U), Lemma CEN+ (no rigid
+  on-site map of link variables beyond gauge and centre), Lemma REM (colour twists of pins are removable unless
+  a pinned path carries them), Identity HAM1 (the colour response in temporal gauge is the family of Polyakov
+  loop correlators), Lemma MC (the literal condition has a void solution).
+
+### 6.2 The reopen condition, corrected (a filter correction; ARGUED from the lemmas above)
+
+Row 1013's condition (i) reads "a continuous non-abelian group acts as a global symmetry on the integration
+variables and moves gauge-invariant observables". Lemma MC meets it and gives nothing. The condition that the 2D
+engine uses has three parts, and each must be stated:
+
+(R-a) **Rigid.** The group acts by field-independent maps of on-site variables and is a symmetry only as a whole.
+Then its localisation has a cost form.
+(R-b) **Charged pins.** There is a class of pinned data, closed under the conditioning that the iteration uses,
+on which the group acts and cannot be undone by a change of the integrated variables.
+(R-c) **On the gauge-invariant algebra.** The response to the twist is a derivative of the Wilson measure in a
+direction that changes the gauge orbit, not a conditional response of an added field.
+
+Status of each part for pure SU(2), on record after this row:
+- (R-a) in link variables: only the gauge group and the centre (Lemma CEN+, PROVED). In variables with an added
+  field: rigid groups exist, for example the custodial group (3.1).
+- (R-b): for colour, pins are charged only along pinned paths (Lemma REM, PROVED). For an added field with a
+  rigid group, pins of the added field are charged (3.1), and (R-c) fails (Lemma AUX, PROVED).
+- (R-a), (R-b), (R-c) together: no candidate. This is "not found in the ten families of Sections 3 and 4", not
+  a theorem that none exists. The families cover the row's seeds: auxiliary fields with a custodial group,
+  Hubbard-Stratonovich and character variables, rotor and quantum-link forms, gauge fixings with a global
+  residual group, the Hamiltonian with Gauss law, and one-sided comparisons.
+
+### 6.3 Why no general theorem is claimed
+
+A general no-go would need a definition of "exact reformulation". With none, the claim is false as stated:
+Lemma MC and every Gibbs sampler give measure-preserving maps of the orbit space. With "the new variables are
+link variables and the maps are on-site and rigid" it is Lemma CEN+. With "an added field and a group on it" it
+is Lemma AUX. A statement between these two is OPEN and is not attacked here; no consumer needs it.

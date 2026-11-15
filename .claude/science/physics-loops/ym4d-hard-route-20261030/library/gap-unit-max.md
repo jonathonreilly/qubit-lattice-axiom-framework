@@ -158,3 +158,102 @@ Reading of the table. No approach of mine names a transience input (META) and no
 through a rate while SU(2) passes. Each sound one (A, D, Z, G) is exact and group-blind, so it carries the seed and
 cannot supply it. This is the lane's own finding (`gap-constraints-max.md` Section 2), reached again from the object.
 
+## Steps 4 to 6. The attack on the crux lemma, three routes
+
+**Crux lemma, in the lane's sharpest form (Theorem S, Theorem D (b), Corollary Z4; ported, not redone).**
+(SEED): s = S(n; (2n)^3) < 1/5041 at one n, uniformly in the cutoff; it follows from Phi(n) <= 1.9 x 10^(-4).
+(U1) and (U2) are suppliers of (SEED) through Corollary CU. With (BDD-Delta), D <= D_0, Corollary Z4 gives the
+equivalent target: one cube with b m(b^3) >= 256 D_0 + 29.64. The routes below are mine and are not the three of
+row 982 (fine metric, no metric, count of states).
+
+### Route 1 (Step 4). A seed inside the window: twisted or flux-projected sectors (Approach B)
+
+**Lemma FLOOR (PROVED; it is Theorem D (c) read backwards, stated for any sector).** Let T >= 0 be trace class with
+simple top eigenvalue, and let the trace run over any T-invariant subspace that holds the top eigenvector. If the
+subspace has a level E above the ground level, then S(a) >= e^(-a E). So s < 1/5041 on (n; (2n)^3) forces
+n m((2n)^3) > log 5041 = 2 log 71 > 8.52, that is: side times gap above 17.04.
+Proof. S(a) is a sum of positive terms, one of them e^(-a E). QED
+
+Use. In the window (side far below the correlation length) the periodic cube has levels at (2 pi/side)(1 + o(1))
+(RECALLED, the lane's K5; SU(2) torons lie lower). With side 2n: n E = pi, so s >= e^(-pi) > 0.04 per level.
+In a 't Hooft-twisted cube the momenta are shifted by pi/side (RECALLED, twist-eaters; lane ideas 15 and 31 of
+`gap-brainstorm2-max.md` L220 and `gap-brainstorm-max.md` L404): n E = pi/2, s >= e^(-pi/2) > 0.2. A twist removes
+the toron valley, and the toron valley is not the obstruction: the obstruction is 17.04 against pi.
+A long thin shape (time a = 6 x side) has a perturbative twisted seed, but Lemma X needs a < b: the Casimir deficit
+of a box is bounded by its thermal sum only at a time shorter than the side. So that seed feeds no engine.
+
+What is left of B is a marginal engine: a law that moves s (or the twist ratio r(L) = Z_m/Z_0, lane idea 8,
+`gap-brainstorm-max.md` L284) monotonically across the order-one band. No engine that reads only positivity and the
+exchange symmetry can do this (ARGUED): the Coulomb phase of U(1) has both, and its s is constant in n, at least
+12 e^(-pi) (row 697, fact (ii)). So asymptotic freedom would have to enter as a new exact input valid beyond first
+passage. The account supplies none: its flow constants are defined up to first passage only (CA-I 631-683).
+
+Verdict: FAILS at the first step. Already there: SMALL-BOX and ideas 8, 15, 31. New here: nothing but the sector form
+of the floor and the number 17.04.
+
+### Route 2 (Step 5). A second anchor: zero temporal coupling at the full spatial coupling (Approach G, written here)
+
+Take the anisotropic Wilson weight exp(-beta_s A_s - beta_t A_t), A_t = sum over the 3 |B| t temporal plaquettes of
+(1 - (1/2) tr U_p). T(beta_t) = e^(-V/2) K_(beta_t) e^(-V/2), with V = beta_s (spatial action of one slice).
+
+**Identity G (PROVED, by hand).** For every box B, every t and every beta_s:
+ (a) at beta_t = 0 the slices are independent: Z(B x t) = Z_3(B)^t, T has rank one, and S(t; B) = 0 for all t;
+ (b) X(t; B)(beta_s, beta_t) = 3 |B| t x integral over s in [0, beta_t] of (abar_inf(s) - abar_t(s)), where abar_t(s) is
+     the mean temporal plaquette action on B x t at temporal coupling s and abar_inf its limit as t grows.
+Proof. (a) With no temporal weight the temporal links integrate to 1 and the slices decouple; K_0 is the projection
+on constants. (b) d log Z(B x t)/d beta_t = -3 |B| t abar_t. log lambda_0 is analytic in beta_t (simple isolated top
+eigenvalue of an analytic family of compact operators with strictly positive kernels) and is the limit of the convex
+functions (1/t) log Z(B x t), so its derivative is the limit of theirs, -3 |B| abar_inf. Integrate from 0, with (a). QED
+
+So the seed at the isotropic point is an integral along a path on which the spatial coupling never leaves the unit
+value. This differs from Theorem D (f), whose path runs through isotropic strong coupling, and from idea 32 of row 859
+(the line beta_s = 0). The exchange symmetry is needed only at the end point, where it holds.
+
+Attack on the path. Two inputs would be needed.
+ (i) A seed in the time direction for small s, uniform in the box. One-link influence is small in total variation:
+     changing one link of U changes the density of the next slice by a factor in [e^(-6 s), e^(6 s)] (PROVED: one
+     factor k_s in [e^(-2s), e^(s)] changes, and the normalisation absorbs the rest). But the changed law can differ on
+     all links, through the correlations of the slice law nu_0, the three-dimensional theory at the unit coupling. A
+     volume-free rate needs s times a susceptibility of nu_0 below one. That is a mixing statement for three-dimensional
+     SU(2) at weak coupling: OPEN, and not in the account.
+ (ii) No level crossing along s in (0, beta]. The gap ratio lambda_1/lambda_0 of A e^(-tau C) A is not monotone in tau in
+     general (ARGUED: a narrow deep well against a broad shallow well of V exchanges the ground state as tau grows; for two
+     levels it is monotone, PROVED by det/tr^2 = [e^(-v)/(1 + e^(-v))^2] [4 e^(-tau)/(1 + e^(-tau))^2]). The coupling that
+     runs is of order (beta_s s)^(-1/2), so the order-one band is crossed near s of order 1/beta_s (ARGUED).
+
+Verdict: FAILS at (i) and again at (ii). It restates the seed along another path. What is left: Identity G as an exact
+anchor that needs no strong spatial coupling. Marks: Identity G PROVED; (i), (ii) OPEN.
+
+### Route 3 (Step 6). Exclude the gapless branch of Corollary Z4 by asymptotic freedom
+
+Given (BDD-Delta), Corollary Z4 leaves two branches: (SEED), or every periodic cube of side b >= 4 a_0 has a level
+within (256 D_0 + 29.64)/b of its ground level. Plan: show that the second branch contradicts the ultraviolet data.
+ (a) The second branch is what a scale-invariant infrared limit looks like. The ultraviolet data of the account say
+     that the coupling is small and grows up to first passage. A flow from a free ultraviolet end to an interacting
+     scale-invariant infrared end is a consistent picture in general, so no contradiction follows from the two ends alone.
+ (b) A contradiction needs a statement "light levels on all cubes force the unit action back into the window". K7
+     refutes every soft form of it: at the mixed-action endpoint the cubes have light levels and the coupling is of
+     order one (row 708, Proposition V, as quoted in `gap-constraints-max.md` L73).
+ (c) So the branch can only be excluded by an input that tells the Wilson trajectory from the endpoint family beyond
+     first passage. None is in the account or in the lane.
+
+Verdict: FAILS at (b). Result of the route: the crux in one sentence. **The order-one input is the exclusion of a
+gapless scale-invariant branch beyond first passage**; every exact tool in the lane (positivity, exchange, Theorems S,
+D, ZD, Route Z, Identity G) is blind to the difference between the two branches.
+
+### Correction to Step 2, Approach C
+
+My Step 2 estimate bounded the O'Neill term by a Hilbert-Schmidt norm of ad_X. That is wrong as a bound: the vertical
+part of a bracket of horizontal fields is D_U G_U b(X, Y) with G_U the Green function of the covariant site Laplacian,
+so the term is (1/4) <b, G_U b>, which is unbounded near reducible configurations. The conclusion in kind stands (no
+factor beta in the gain, a factor beta in the negative Hessian directions) and the lane has it with numbers: ideas 18
+and G2 of `gap-brainstorm2-max.md` (L165, L257), rows 863, 957 (Lemma HESS, curvature test) and 968 (Proposition ANG,
+Ricci 2/r^2 at one free link). C was not attacked again.
+
+### Where the attack stands
+
+The crux lemma failed by three routes of mine, each at the order-one band beyond first passage: no seed below the
+massless floor (Route 1), a path that still crosses the band and needs a three-dimensional mixing input (Route 2), no
+soft exclusion of the gapless branch (Route 3). No counterexample to (U1) or (U2) was found: both are consistent
+with a glueball gas (X about |B| t^(-3) for t below the correlation length, exponential beyond it).
+

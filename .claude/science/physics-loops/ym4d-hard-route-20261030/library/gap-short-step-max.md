@@ -20,6 +20,21 @@ Marks used below: PROVED (every step written here), ARGUED (argument written, a 
 7. **First survivor.** Prove it by hand, or build the counterexample.
 8. **Result.** Marks per piece, what stays open, one RESULT line.
 
+## Status block (kept current; read Section 8 first)
+
+- Step 1, inputs and duplicate check: done (Section 1).
+- Step 2, the target: done (Section 2). Three forms; each lacks one clause. (T-per) is (CAS) of row 708 and is not attacked.
+- Step 3, route (iii-b), barrier: done (Section 3). No counter-model in the target's own class. Lemma PAR PROVED.
+- Step 4, route (ii), covariant moves: done (Section 4). FAILS at one bare coupling (ARGUED); Lemmas FLOW, PROJ, FR+, SPLIT PROVED.
+- Step 5, route (iii-a), energy increment: done (Section 5). OPEN; no bounded monotone structure energy; Lemma NAB PROVED.
+- Step 6, control run and tests: done (Section 6). Control of Lemma NAB PASS (a guide). Every proved piece is blind.
+- Step 7, survivor and open statements: done (Section 7). Corollary MP PROVED. Open: O1, O2.
+- Step 8, report and RESULT: Section 8.
+
+**Nothing in this file is checked by another model.**
+
+**What this run did not cover.** No literature search (the row asks for none; rows 1007, 1009, 1010, 1012 are the record). OpenAI's primary texts were not re-read; the 2D short step is used through rows 1009 and 1013. Mack and Petkova's paper was not read; Lemma PAR and Corollary MP are written from the lane's record of its statement. Froehlich, Simon and Spencer's theorem is RECALLED. Proposition NP, Theorem D2 and Lemma SHEET were read at their statements only (`library/gap-crux-exercise4-max.md` L383-392, `library/gap-tiltproof-max.md` L240-246, `library/gap-sepinput-max.md` L358-364). Rows 1016 and 1017 were read at their first step only, as they stood at this pin. Other PR branches were not searched. One numeric run, a guide (6.1). The sizes marked ARGUED in 3.4, 4.5, 5.3 are not proved.
+
 ## Log
 
 - 2026-11-15T20:03Z. File created. No earlier run of this item exists at the pinned commit.
@@ -81,7 +96,7 @@ Proof. D(2a) = F((2a)^4) - 16 f a^4 = 16 F(a^4) - Phi(a) - 16 f a^4 = 16 D(a) - 
 
 Also D(a) = sum over k >= 0 of Phi(2^k a)/16^(k+1) (PROVED: iterate D(a) = Phi(a)/16 + D(2a)/16; D(2^k a)/16^k = a^4 (F/|n| - f) at side 2^k a, which tends to 0). So (T-per) says: Phi at side a exceeds 15 times its own weighted average over the larger sides. In a scale-invariant theory Phi is constant and Phi = 15 D exactly.
 
-**False for compact U(1) and for a product with a massless factor (PROVED, given the U(1) theorem I28 as the lane holds it, Villain at beta >= 2^14, and Proposition Delta).** Such a model has no seed at any size (Corollary PT1, `library/gap-crux-exercise3-max.md` L711). By Proposition Delta, D(a) > 6.1 x 10^(-4) for every a >= 3. If (T-per) held, then after at most (M - 6.1 x 10^(-4))/delta doublings D would be at most 6.1 x 10^(-4). Contradiction. For the free photon D(a) tends to a positive constant (RECALLED in row 708). QED
+**False for compact U(1) and for a product with a massless factor (PROVED, given the U(1) theorem I28 as the lane holds it, Villain at beta >= 2^14, and Proposition Delta).** Such a model has no seed at any size (Corollary PT1, `library/gap-crux-exercise3-max.md` L715). By Proposition Delta, D(a) > 6.1 x 10^(-4) for every a >= 3. If (T-per) held, then after at most (M - 6.1 x 10^(-4))/delta doublings D would be at most 6.1 x 10^(-4). Contradiction. For the free photon D(a) tends to a positive constant (RECALLED in row 708). QED
 
 **What (T-per) lacks: a mechanism slot.** Row 708's verdict stands: "as a mechanism it is empty: it restates the seed in steps." Route RA is blocked-equivalent (`parts/gap.md` L152). The three routes of this row are tests of mechanisms. Each needs an identity in which a gain can appear. That is the second form.
 
@@ -282,7 +297,7 @@ By Lemma PAR the cost of a vortex confined to one of n parallel sub-containers g
 - If the colour axis is coherent across the transverse size (structured), the spread vortex costs the classical amount: K(2l) = K(l), minus the quantum gain. Here K(l) is the cost per patch l^2 of Sigma at thickness l.
 - If it is not coherent (random), fractional twists with independent axes compose like a random walk on the group: n twists of angle theta reach a total angle of order theta sqrt(n). The spreading gain is lost and K(2l) is near 4 K(l) - log 4 (3.4).
 - So in the vortex form randomness raises the normalised cost (loss of spreading) and lowers it (entropy). Which wins is a number. Frozen Z_2 shows both outcomes: no spreading at all, and K flows up above its critical coupling and down below it (THM in the lane for the up side, beta > 2.191; strong coupling for the down side). The standard reading (Mack; 't Hooft; RECALLED, a belief): SU(2) at the scale l_d where colour frames decohere behaves like a Z_2 theory of thick vortices with coupling K(l_d), and confines if K(l_d) is below the critical value.
-- Verdict for (T-vor): the dichotomy "the response drops, or a structure energy rises" FAILS as a soft statement. At order one it is an energy-entropy balance with a threshold. This agrees with the lane's rule that the order-one input is "a number, not a qualitative property" (`library/gap-crux-fp.md` L283).
+- Verdict for (T-vor): the dichotomy "the response drops, or a structure energy rises" FAILS as a soft statement. At order one it is an energy-entropy balance with a threshold. This agrees with the lane's rule that the order-one input is "a number, not a qualitative property" (`library/gap-crux-fp.md` L268).
 
 ### 5.4 Lemma NAB: the structured half at the bare scale. The field is never frameable, with a written bound (PROVED by hand)
 
@@ -327,7 +342,7 @@ This is the 2D statement "each step lowers h by c min(h, 1)" (row 1009 L148-150)
 | Instanton cost (6.3 of row 1013) | not reached | not reached |
 
 **Can either half be proved?**
-- (FL) at the bare scale: PROVED (Lemma NAB), by a Cramer-Rao step with a second-order score. It is blind. At the cell scale it is OPEN and false in a neighbouring model, so it is selective there.
+- (FL): its bare-scale ingredient is PROVED (Lemma NAB: the bare non-abelian content is at least of order 1/beta^2), by a Cramer-Rao step with a second-order score. That ingredient is blind. The comparison with Rbar is not made, so (FL) itself is not proved at any scale. At the cell scale it is OPEN and false in a neighbouring model, so it is selective there.
 - (DEC): OPEN. No exact identity is found that turns non-abelian content into a loss of cross-cell correlation. Lemma CHAIN is the place where it would act: K at scale 2l is a covariance of cell fluxes, and each cell flux depends on the pin through the tensors K_c. For a Gaussian abelian field the tensors compose exactly and Rbar is constant. The statement needed is a strict loss in that composition when the adjoint transport through the cells fluctuates. No proof, and no counterexample in four isotropic dimensions.
 - "The structured half by the account": the account controls the regime g_k <= gamma, where the response falls by the one-loop amount per step. That is a (K-flow) input above the band. Inside the band the account gives nothing, and (FL), (DEC) there are statements at order one.
 - "The random half by strong coupling or mixing": at small beta the vortex form is settled by Dobrushin-type uniqueness (the lane's seed for beta < 1/18), which gives decay uniformly in pins (ARGUED for containers). It does not reach order one.
@@ -335,8 +350,8 @@ This is the 2D statement "each step lowers h by c min(h, 1)" (row 1009 L148-150)
 ### 5.6 Verdict on route (iii-a)
 
 - The counting lemma is trivial (PROVED). The route lives or dies on a bounded monotone structure energy. None is known: NA is not monotone on the class (it falls to 0 in the adjoint Higgs model at large scales, BELIEF; it is constant in model (d)), and every exact monotone of the lane is extensive or blind. With an a-function as the energy (row 1002), the structured steps are bounded in number, and what is left is: no theory that is nearly scale invariant with a response of order one. That is the rigidity statement of row 1017 (named match; not attacked here).
-- In the vortex form the dichotomy has no soft sign (5.3). In the pinned form it takes the shape (FL) and (DEC) (5.5); (FL) is proved at the bare scale (Lemma NAB), and (DEC) is the open selective half.
-- Mark: route (iii-a) OPEN, with one half proved at the bare scale and the other reduced to one named inequality. It does not move (W).
+- In the vortex form the dichotomy has no soft sign (5.3). In the pinned form it takes the shape (FL) and (DEC) (5.5); the bare-scale ingredient of (FL) is proved (Lemma NAB), and (DEC) is the open selective half.
+- Mark: route (iii-a) OPEN. One ingredient of the structured half is proved at the bare scale; the random half is one named inequality with an open slot (the definition of NA at the cell scale). It does not move (W).
 - 2026-11-15T20:59Z (`date -u`). Step 5 done (Section 5). Step 6 next: a GUIDE control of Lemma NAB, then the test table.
 
 ## 6. Step 6: GUIDE control of Lemma NAB, and the tests
@@ -382,4 +397,40 @@ Pieces. P1 = Lemma PAR and the blind half of (T-vor). P2 = Lemma CHAIN. P3 = Lem
 | Instanton cost (row 1013 6.3) | not reached: P1 deforms no field | not reached | binds a repair of route (ii) by smooth frames: a frame adapted to a pin of non-zero degree has defects (Remark HOPF of row 1011), and at order-one coupling such cells are not rare | not reached | a frame may not be assumed smooth on every cell of the band |
 
 Summary of the tests. Every piece proved in this row is blind: it holds in at least one model without a short step (P1 in Q_8, 2T and Z_2; P2, P3, P4 in five dimensions and in the frozen-slice model). So no piece proved here is a selective gain. The selective content is in O1 and O2, and both are open.
-- 2026-11-15T21:08Z (`date -u`). Step 6 done (Section 6). Step 7 next.
+- 2026-11-15T21:05Z (`date -u`). Step 6 done (Section 6). Step 7 next.
+
+## 7. Step 7 result: the first surviving piece, a second derivation of it, and the exact open statements
+
+### 7.1 Which piece survives, and in what sense
+
+The row asks: for the first piece that survives the tests, prove it or build the counterexample. By 6.2 no piece survives as a selective gain. Two pieces survive as exact tools that the lane did not hold in proved form, and both are proved here: Lemma PAR (3.2), which gives a central response a blind half; and Lemma NAB (5.4), a written lower bound on the bare non-abelian content, which is the bare-scale ingredient of the structured half. The counterexamples asked for are the models of 3.3: for a tool made of the central-twist identities alone, frozen Z_2 above its transition; for a tool made of the bracket identity and a symmetric twist, the frozen-slice model.
+
+### 7.2 A second derivation of Lemma PAR in a solvable case (PROVED; same author, so it is a consistency test, not a check)
+
+Take G = Z_2 in two dimensions. A disc of area A with boundary holonomy W = +1 or -1 has Z_A(W) = C_A (1 + W t^A), t = tanh beta (sum over plaquette signs with product W). The container is a disc of area A with pin holonomy W_Om = 1; the twist sigma flips an odd number of boundary links, so rho = (1 - t^A)/(1 + t^A) and tanh(V/2) = t^A. Take two disjoint sub-discs of areas A_1, A_2, with boundary holonomies W_1, W_2, and the rest region of area A_0 = A - A_1 - A_2, whose plaquette product is W_Om W_1 W_2. Then r_i = (1 - W_i t^(A_i))/(1 + W_i t^(A_i)) and a_i = W_i t^(A_i). The weight Z_i(W_i)(1 + r_i) = Z_i(W_i) + Z_i(-W_i) = 2 C_(A_i) does not depend on W_i. So under Etilde the pair (W_1, W_2) has weight proportional to 1 + W_1 W_2 t^(A_0). Hence Etilde[W_1] = 0, Etilde[W_1 W_2] = t^(A_0), and
+
+  Etilde[a_1] = 0,   Etilde[a_1 a_2] = t^(A_1) t^(A_2) t^(A_0) = t^A = tanh(V/2).
+
+This is Lemma PAR (ii) and (iii) in the exact solution, obtained without the substitution argument of 3.2. The sup bound reads t^A <= t^(A_1 + A_2).
+
+### 7.3 The exact open statements this row ends at (quantifiers and constants written)
+
+- **O1, pinned form.** (T-pin) of 2.3 as it stands: there are r_0 < r_1, delta > 0 and an integer L >= 2 such that r_0 <= Rbar(l) <= r_1 implies Rbar(L l) <= Rbar(l) - delta, for Wilson SU(2) at one beta and every l. By Proposition ENG it follows from (FL) and (DEC) for any numbers NA_l in [0, 1] with c_1 c_2 min(r_0, 1) >= delta. At the bare scale Lemma NAB gives the ingredient E lambda_x >= 1/(3924 beta^2) (for xbar >= 3/4); the comparison with Rbar at the smallest cells, which (FL) needs, is not made here (expected sizes: E lambda_x of order 1/beta, Rbar of order beta). Strength against (W): unknown, because (T-pin) has no consumer. Tests it must pass: false in five dimensions and in the frozen-slice model, so its proof must use the isotropic 4D cell.
+- **O2, vortex form.** For cubic containers, with xi the sup over outer pins at distance at least l of the vortex cost: there are kappa, phi with kappa phi < 1 such that, in the band, (SER) xi(Sigma_2l, D) <= kappa xi(Sigma_l, D) and (SPR) xi(Sigma, D_2l) <= phi xi(Sigma, D_l). Classical scaling is kappa = 4, phi = 1/4. Lemma PAR gives, in place of (SPR), only tanh(xi(Sigma, D_2l)/2) <= tanh(xi(Sigma, D_l)/2)^4. Lemma SPLIT gives (SPR) with phi = 1/4 for compact U(1) under a quadratic class bound. For SU(2) neither (SER) nor (SPR) is proved at any constants. Strength against (W): weaker (it would feed the centre-odd sector only, route RE).
+- **Not reduced further.** Neither O1 nor O2 is shown equivalent to (W) or to (CAS). Under the proof-search governance both families are blocked-local, with the reopen conditions of 8.8.
+- 2026-11-15T21:07Z (`date -u`). Step 7 done (Section 7). Step 8, report and RESULT, next.
+
+### 7.4 Corollary MP: the consumer of the central response, rebuilt (PROVED; the statement is Mack and Petkova's criterion as the lane records it)
+
+The lane holds this as RECALLED (`library/prior/gap-lit-grok.md` Section 2: the confining potential is bounded below by a sum of - log tanh(xi_i/2)). The algebra of Lemma PAR gives it in a few lines. I did not read their proof; credit to Mack and Petkova for the statement.
+
+**Setting.** As in Lemma PAR, with no twist of the pin: sub-containers Lam_1, ..., Lam_n with disjoint plaquette sets P_i, and sign fields tau_i that are closed outside P_i and equal to +1 on the pinned links. Let O be a bounded function of the links outside the Lam_i that is **odd under each tau_i**: O(tau_i eta) = - O(eta). Example: O = (1/2) tr of the holonomy of a loop C that crosses each cut an odd number of times (each container links C).
+
+**Statement.** E[O] = Etilde[O a_1 a_2 ... a_n], with Etilde the expectation with the extra weight 2^(-n) prod_i (1 + r_i), which is normalised. Hence
+
+  |E[O]| <= sup|O| prod_i tanh(xi_i/2).
+
+**Proof.** For a subset S substitute eta -> tau_S eta in E[O prod over S of r_i], as in Lemma PAR (i): the weight outside is unchanged, Z_i(tau_i tau_S eta) = Z_i(eta) for i in S, Z_j is unchanged for j not in S, and O picks up (-1)^|S|. So E[O prod_S r_i] = (-1)^|S| E[O]; with O = 1 and no oddness the same step gives E[prod_S r_i] = 1. Then E[O prod_i (1 - r_i)] = sum over S of (-1)^|S| (-1)^|S| E[O] = 2^n E[O], and E[prod_i (1 + r_i)] = 2^n. Write 1 - r_i = (1 + r_i) a_i. QED
+
+So a Wilson loop linked by n disjoint parallel containers is at most the product of the tanh of their sup-pin vortex costs. This is clause (L3) of (T-vor) for centre-odd observables, now with a written proof. It gives no statement on centre-even observables, so no gap (route RE).
+- 2026-11-15T21:09Z (`date -u`). 7.4 added (Corollary MP).

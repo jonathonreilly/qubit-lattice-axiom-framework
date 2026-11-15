@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/gauge_matter_registers_navigation_map_check_2026_11_14.py
+runner_sha256: b14eaea4669e73092e230005c3fd2629c14d911647889b8a8bab390057acc031
+input_fingerprint_sha256: 1e30e21e0f263a9819a3d5166351ebfee0dedf4afccddc9073a33a5167b77e6e
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+Navigation map check: gauge-matter-registers carried notes
+==============================================================================
+[PASS] the map has 12 'Carried notes' sections, each naming one carried note -- 12
+[PASS] no carried note appears in two sections
+[PASS] each section quotes its carried note's current claim_scope verbatim -- 12 of 12 match
+[PASS] every repository link in the map resolves -- 24 links
+[PASS] control rejects mutant: a quotation with its last word dropped still matches
+
+SUMMARY: PASS=5 FAIL=0
+Scope: the map's quotations, coverage and links. The carried notes' science is checked by their own runners.
+
+----- stderr -----
+

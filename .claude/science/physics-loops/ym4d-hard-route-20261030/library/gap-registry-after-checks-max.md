@@ -316,3 +316,110 @@ the same provider as the author, so none is independent.
 Reading for the registry: the four rows are a negative result about one-scale mechanisms that are uniform
 over a class of boundary data or that pass through a scale limit. They leave (K-flow) statements, which
 read the trajectory, as the only family with no refutation device against it (`parts/gap.md` L227-229).
+
+## 4. Task (1): every discard verdict, filter and lead rule, with its status after the checks
+
+Status words. **stands**: the check holds it (with the stated correction, if any). **narrowed**: it holds in a
+smaller form, which is written. **no longer supported**: the check marks its support FAILS; the line is given.
+**not covered**: none of the fourteen checks read it; it is "valid as reported; not re-derived" (skill L502).
+"Check n" means the gpt-6-astra check of row n (file and line as in Section 2). A status is the reading of a
+check file; it grants nothing. Sources of the lists: `parts/gap.md` L49-72, L88-96, L188-229; row 998 6a/6d
+(`gap-crux-exercise3-max.md` L498-513, L568-590); exercise 2 6a/6d (`gap-crux-exercise2-max.md` L394-413,
+L441-450); the RESULT text of rows 1011-1018; additional reads named in the rows (rows 970, 968, 977, 982, 960).
+
+### 4.1 Lead rules in force
+
+| # | Rule (where) | Status after the checks | What it now says |
+|---|---|---|---|
+| A1 | Rule W2: a direction row states its kind, (K-one) or (K-flow); tests per kind (`parts/gap.md` L90) | **narrowed** by check 998 (L140, L141, L145, L146, L153) | (i) A (K-one) hypothesis need not name a number: KF (d) FAILS. (ii) A comparison model binds a tool only after the tool's own hypothesis H, with its ultraviolet clause, is verified on that model; a Wilson-only first-passage clause excludes the standalone U(1) and photon comparisons. (iii) The product clause needs an admitted no-seed factor (in the lane: Villain U(1) at beta >= 2^14); the published Wilson U(1) supplier I28 FAILS as cited. (iv) w_p (Proposition V) proves no seed at one coupling, not branch G. The clauses on Theorem D2 and Lemma SHEET stand (A6, C8, C9). |
+| A2 | Row 982 N2: no row on (LSI-br) from the account's level convexity (`parts/gap.md` L91; FINISH L1081) | **no longer supported**: check 1000 L42, L44, L46; check 998 L151 (the rule also leans on T2) | T3 (the port is short by beta_K/beta_0) is ARGUED only. What may be kept is "a conditional benchmark warning, not a proved exclusion" (check 1000 L85). T2 stays as a constraint in the valid form: a proof must use more than (P1)-(P3) and "order-one coupling at the unit", or read first-passage data. Section 6 decides what the route is worth. |
+| A3 | Row 1002 filter for (K-flow) rows (the 2D O(N) plausibility test) (`parts/gap.md` L92) | withdrawn by rows 1003, 1006 before the checks; **not covered** | Not a test. The 2D model is a source of mechanisms. |
+| A4 | The reading of the 2D pinned-cell mechanism; "the direct port FAILS in the class of all pins and strengths" (`parts/gap.md` L93; rows 1011, 1013, 1016) | **not covered** by a cross-provider check; same-provider checks 1014, 1015, 1020: no WRONG | Stands as same-provider-checked. Theorem BH covers homogeneous strengths. The corrected reopen condition (rigid group, charged pins, response on the gauge-invariant algebra) is ARGUED. |
+| A5 | "Not refuted" notes on rows 970 and 960-965 (`parts/gap.md` L94-95) | **stands** (they record checks 970, 960, 963, 965) | See B1-B3, B6. |
+| A6 | Lead note under row 996: a hypothesis uniform over plaquette coupling fields gets no row (FINISH L1105) | **stands for SU(2)**, after correction (check 996 L308: embedded non-degenerate tube); **narrowed** for other groups (L310: needs the identity-maximizer hypothesis) | Lemma SHEET binds all-fields forms for SU(2). |
+| A7 | Last sentence of row 988 N2: no row "without an input that separates the Wilson trajectory from K7" | replaced by W2; the replacement **stands after correction** (check 998 L152) | (K-flow) rows are admissible. "Valid necessary conditions" is replaced by "tests whose hypotheses must be verified". |
+| A8 | Lead note under row 998: the conditional dichotomy (W4, route RD) is not queued; "proofs or counterexamples, not a catalogue of open conditions" (FINISH L1104) | **not covered** (an owner-level rule, not a mathematical verdict) | Unchanged. Corollary TRI of row 1017 is a hypothesis-free form of the same statement. |
+| A9 | Row 998 9.5, "what not to do next" (`parts/gap.md` L70-72): no further fresh-framing exercise by this model family; no further one-scale search against K7; no monotone or convex statement along scales by class-wide tools; no urgent theta(L) run; no Migdal-Kadanoff comparison | **stands** as advice; one clause **narrowed** | "Class-wide tools": the product test holds (PT (a)-(d), check 998 L135-138), but the objection "a decrease persists" is ARGUED only (L147). This row is itself a registry row, not a fresh-framing exercise. |
+| A10 | Lead note under row 1000: "a route must use the transfer structure at each level" (FINISH L1081) | **no longer supported** as a rule (check 1000 L46) | "The text has not proved that every level-convexity route must fail or must use the named repair." |
+
+### 4.2 Discard verdicts of the fourteen checked rows
+
+| # | Verdict (row; where) | Status | Narrowed form, or what comes back |
+|---|---|---|---|
+| B1 | Row 960: varying the geometry buys nothing; stop queuing such rows (`gap-vargeom-opus.md` 4.4, L152, L208-218) | **no longer supported**: check 960 L409; also G3 FAILS (L372), OVL for all trial times FAILS (L389), the q = 1.6 ordering FAILS (L393) | "This note supplies no improving variable-geometry bound." Back: projected averaging; lens states at long trial times; other comparisons than the displayed ones; real second times q = 8/5. |
+| B2 | Row 963: rotated or diagonal geometry buys nothing (three parts) | **no longer supported**: check 963 L350, L357; parts at L335, L339, L345, L347 | "No sufficient replacement is established here." Back: diagonal tori with coordinate mirrors on an invariant period lattice and D2's twisted axis channel; sector forms with empty nonzero-momentum frozen sectors. Missing objects named at L359-362. |
+| B3 | Row 965: every averaged squeeze leaves the crux unchanged; every computable endpoint is harder; stop all squeeze rows | **no longer supported**: check 965 L354, defect 8 (L370-372) | "None of the displayed estimates supplies a new seed bound." Back: time-dependent squeezes; averaged block estimates. Struck: the equivalence of the pointwise-in-beta target to the seed; "EP1 settles every open-box obstruction". |
+| B4 | Row 962: no relaxation of the constraint system is a new input (row 998 6a row 22) | **not covered**; weakened in part, since three members of the family lost their proofs (B1-B3) | Valid as reported; not re-derived. |
+| B5 | Row 968: (a) averaged forms reduce to the pointwise criterion or to the Poincare inequality (Proposition AVG); (b) the obstruction through (LOC-COV) and conditional CAP (5.5, 8.2); (c) frozen groups must fail at non-zero tilt | (a) **stands** (check 968 L328-329); (b) **no longer supported** (L334, L381-387); (c) **no longer supported** (L325, L364-372) | (b): "statements about this attempt, not exclusions of other mechanisms". Back: collective Ricci terms; other proofs of entropic stability; conditional CAP. |
+| B6 | Row 970: (a) a box-uniform (TILT-COV-sup) is refuted in the upper window; (b) the quotient form and (ABS-flow) are refuted with it; (c) all three seed hypotheses of class S fail for the interacting law; (d) "do not queue proofs of (TILT-COV-sup), its quotient form, or (ABS-flow)" | (a) **narrowed**: Lemma SUB stands (L211), but the run "supports growth at the sampled parameters, not a mathematical refutation" (L201); (b) **no longer supported** (L229, L203); (c) **no longer supported** (L226); (d) **narrowed** to the supremum form | The supremum form stays dead for the use at the seed box through B7. The quotient form, the averaged form (ABS-flow), the integrated form, (LOC-COV) with a bad set (L207), and (LSI-traj-seed) are open. |
+| B7 | Row 977: Theorem D2 (every kbar of the supremum form is at least lam_* k00, from hard-pinned sheets), Corollary CAP, ZERO-CEIL, QUOT-CAP | D1 **stands**; D2, CAP, ZERO-CEIL **stand after correction** (check 977 L380-391); QUOT-CAP **stands only as a conditional statement** (uniform-in-b q_0 hypothesis, unproved) | Theorem-grade by hand at sides 4 and 8 (589/69, 178859/8211). Side-120 numbers are ARGUED. "The generic box-uniform bound remains open": D2 caps the use, not the existence, of a box-uniform kbar. |
+| B8 | Row 978: (a) 5.7, every one-shot method loses a square root; (b) a carrier of a seed from one coupling to finer cutoffs is (NOCRIT) plus a climb (R2); (c) (TH) by literal identification | (a) **no longer supported** as universal (check 978 L384); (b) **stands after correction** (L388); (c) **no longer supported** (L380) | (a) holds for the tested scalar restriction. (c): (TH) needs the full vacuum normalization and a determinant comparison, so it now rests on (DET) and on (E0-tor) (B11). |
+| B9 | Row 982: (a) N2 and T3; (b) the hierarchy U1/U2/U3 and the reading "the seed is exactly (UNIT-EE)"; (c) no Poincare inequality (L225); (d) Route 2 (a), no (HC) on all of L^2; (e) Lemmas CAP, COUNT as necessary conditions | (a) **no longer supported** (A2); (b) **no longer supported** (check 982 L93); (c) **no longer supported** (RESULT L195); (d) **stands**; (e) **stand**, COUNT **narrowed** (L105-112) | (b): "U1 implies U2; U3 separately implies the seed." No equivalence of U1, U2, (UNIT). |
+| B10 | Row 988: (a) Lemma FLOOR, no seed below the massless floor 17.04; (b) the beta_t path needs 3D mixing and (NOCRIT); (c) Route 3 (c), soft exclusion of branch G is impossible without a separator from K7; (d) Route Z needs a common zero-free domain | (a) **narrowed** (check 988 L452: the gap is that of the traced sector; the inference from a restricted sector to the full trace FAILS; the full-trace threshold holds); (b) **stands** as an open premise (Identity G after correction); (c) "too strong" (row 998), **confirmed after correction** (check 998 L152); (d) **stands** (7.1 after correction), ORD in real time FAILS | Back from (a): seeds in restricted or twisted sectors are not excluded by FLOOR. This meets route RE (sector engines). |
+| B11 | Rows 987, 993: (DET) and the identification inputs of (TH) | Lemmas **stand**; "no elimination factor at identity" **no longer supported** (check 987 L349); the full-E_0 identification **no longer supported** (check 993 L196) | The extensive base (TH) is conditional on the account, (DET) and the open (E0-tor). |
+| B12 | Row 996: (a) hypotheses uniform over coupling fields are empty on large tori (SHEET); (b) one-plaquette separating properties have no consumer | (a) **stands for SU(2)** after correction (A6); (b) **stands in range**, (K-one) only (check 998 L154) | - |
+| B13 | Row 998: (a) KF (d), a (K-one) input must contain a separating number; (b) I28; (c) "(better: w_p)" refutes soft statements about branch G; (d) (CONTR) has no converse; (e) "RA is stronger than the target" | (a), (b), (c) **no longer supported** (check 998 L145, L141, L153); (d) **no longer supported** for the printed existential-base (CONTR), which is equivalent to (PHYS-SEED) (L162-190); **stands** for the original (CAS) of row 708 (L156) | (e): the strength of RA is "unknown/comparable or stronger" for (CAS) with a prescribed start; "target-equivalent" for (CONTR). |
+| B14 | Row 1000: reflection positivity and Gaussian domination as inputs of D2 | **stand** (RP, PT), **stand after correction** (GD, IR) | Theorem D2 now has cross-provider support for its two ported lemmas. |
+
+### 4.3 Older discard verdicts (exercise 2 rows 1-18; row 998 rows 19-33 not listed above)
+
+None of these was read by the fourteen checks unless a line says so. All are "valid as reported; not re-derived".
+
+| # | Verdict | Status |
+|---|---|---|
+| 1-3 | worst-case Dobrushin (ceilings 2/3, 0.775); background-uniform twist bounds (1.0109); annealed block condition | **not covered**; valid as ranges only (C11). Check 968 L352-357 corrects one reading: ceiling (i) of row 941 is a flipped spatial link at non-zero endpoint tilt, not a zero-field statement. |
+| 4, 5 | one-way step for a torus quantity; (MONO-Delta) false for the ordered Ising model | **not covered** |
+| 6-9 | linear (ES-1); Wilson-loop association (EP-NO); fixed-radius loop equations; full-L^2 block certificate | **not covered** |
+| 10 | soft block step then a high-temperature theorem: circular | **not covered** |
+| 12, 14, 16 | strand counting (0.2135 against a guide value 0.267); thin Z_2 lift; localization along plaquette tilts | **not covered**; each "needs a small number" and is a range |
+| 13 | flux half from glue half by clustering | **not covered** |
+| 15 | vacuum Bakry-Emery (G2) is the Langevin gap | **not covered**. Section 6 uses its exact form (the ground-state Dirichlet form). |
+| 17 | thick vortex by field-independent spreading | **not covered** by the fourteen; row 1018 (Lemma PAR, Corollary MP) narrowed "no topological twist" to cubes |
+| 18 | hierarchical and Migdal-Kadanoff lattices are group-blind | **stands** (check 998 L155, scope only) |
+| 19 | (TILT-COV-sup) and (ABS-flow) "refuted, theorem-grade" | **narrowed**: theorem-grade for the supremum form only (B7). For (ABS-flow) **no longer supported** (B6 (b)). |
+| 20 | box-uniform quotient form fails (q_0 about 0.24 with QUOT-CAP) | **narrowed**: a GUIDE number in a conditional proposition (B7); check 970 L203 |
+| 21 | forms uniform over coupling fields | **stands** for SU(2) (A6) |
+| 22 | relaxations of the constraint system | B4 |
+| 23 | a carrier of a seed to finer cutoffs | **stands after correction** (B8 (b)) |
+| 24 | (LSI-br) from small-field convexity | **no longer supported** (A2) |
+| 25 | (UNIT) by three routes | "was tried": rules out nothing (row 998 6d) |
+| 26 | a seed below the massless floor | **narrowed** to the full trace (B10 (a)) |
+| 27, 29 | the beta_t path; Route Z in Schwarz form | **stand** as open premises (B10 (b), (d)) |
+| 28 | soft exclusion of branch G | "too strong"; (K-flow) admissible (A7) |
+| 30 | one-plaquette separating properties | **stands in range** (B12 (b)) |
+| 31 | averaged curvature, Polchinski flow, Piazza-Shen: "did not close; circular" | **narrowed**: Proposition AVG stands; the obstruction claims do not (B5) |
+| 32 | plaquette automata; squeeze, rotate, vary the box: "no input" | **narrowed** to "no bound found in these notes" (B1-B3) |
+| 33 | (DRIFT)_c and (ESC) | (ESC): "not tested", not "fails" (**stands**, check 998 L154); (DRIFT) open |
+
+### 4.4 Filters: the test table, row by row
+
+| # | Test (source: `parts/gap.md` L199-213 unless named) | Status | Valid form now |
+|---|---|---|---|
+| C1 | Compact U(1), Coulomb phase | **narrowed** (check 998 L141, L146, L213-219) | Theorem-grade in the lane for Villain at beta >= 2^14. The cited published Wilson supplier of "no seed" FAILS. It binds a tool only if the tool's hypothesis holds for U(1); a hypothesis with a Wilson SU(2) first-passage clause is not bound. |
+| C2 | Free photon "through the rate"; the floor 17.04 | **stands** for the full trace (check 988 L452) | Not for a restricted sector. |
+| C3 | Product with a massless factor (Lemma PT, Corollary PT1) | PT **stands**; PT1 **stands after correction** (check 998 L140, L147) | Binds a hypothesis that holds on a second factor and survives the product with an admitted no-seed factor. |
+| C4 | Frozen Z_2 | **not covered** | T_per only, beta above 2.191. |
+| C5 | Frozen Q_8, 2T | **stands** in the frozen limit (check 998 L150; check 965 defect 5) | At least two centre-even flat states in the frozen limit. No fixed finite coupling is inferred. |
+| C6 | w_p at its transition coupling (Proposition V) | **stands after correction** (check 998 L148) | Failure of T_fix at one coupling, given van Enter and Shlosman and (TM-gen). "A number" is not forced. No statement on branch G. |
+| C7 | K7 line and end point | **stands** as BELIEF (check 998 L149) | A belief-grade analogue of C6 for a seed conclusion only. |
+| C8 | Theorem D2; Lemma SUB | D2 **stands after correction** (check 977); SUB **stands** (check 970 L211) | D2 binds the supremum-over-tilts form at every flow time. Neither binds a typical-tilt form with a bad set (check 970 L207) nor, by any written argument, the averaged form (ABS-flow). |
+| C9 | Lemma SHEET | **stands for SU(2)** after correction; **narrowed** for other groups (check 996 L308-310) | Forms uniform over coupling fields. |
+| C10 | Lemmas CAP, COUNT | **stand** (check 982); COUNT's reading **narrowed** | CAP: (1/2) integral of gam_s ds <= (e^(2 E_1) - 1)/2 for a rate obtained through Theorem BR. |
+| C11 | Ceilings 1/3, 2/3, 0.775, 1.0109 | **not covered** | Ranges of single families. |
+| C12 | ZERO-CEIL (row 977 2.0) | **stands after correction** (check 977 L383) | Caps the output of Theorem POL-BR for the supremum form at 2 beta/(e^beta - 1), so it excludes the a = 30 seed through that formula. It is a statement on one formula. |
+| C13 | Lemma NEC (row 968 4.1): k* >= 2 beta log(1/E_1) | **stands** (check 968, Section 4 heading) | Given the repaired POL-BR and Proposition HC. |
+| C14 | DEN, "no room" (row 960) | **narrowed** (check 960 L379) | One one-side, seed-time comparison; at most g/23. |
+| C15 | Proposition NP (row 1003) | **not covered** (same-provider check 1006) | No proof of (CAS) by induction on finitely many values of D. |
+| C16 | The five-dimensional test; instanton and refilling tests | **not covered** | As reported. |
+| C17 | Proposition SI, Lemma PT-inf, the constants log m (row 1017) | **not covered** (same-provider check 1019) | Soft rigidity statements on blow-down limits fail. |
+| C18 | Gauge theories with matter in the conformal window | **not covered** | Outside K. BELIEF. |
+
+### 4.5 What the table shows
+
+1. Eleven broad negative claims lost their proofs (Section 2.15). In each case the lemmas under the claim
+   stand. So the lane's map of what is proved is intact; its map of what is excluded was too large.
+2. Three theorem-grade filters survive in full for SU(2): Theorem D2 (supremum over tilts), Lemma SHEET
+   (uniformity over coupling fields), Lemma PT with an admitted no-seed factor (class-wide soft statements).
+   Each binds a quantifier (a supremum, a uniformity, a class), not a route.
+3. No check moved the wall. No check supplied a seed, a rate, or a mechanism. Every route that comes back comes
+   back as "not excluded", with its terminal obligation unchanged.

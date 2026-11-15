@@ -423,3 +423,68 @@ None of these was read by the fourteen checks unless a line says so. All are "va
    Each binds a quantifier (a supremum, a uniformity, a class), not a route.
 3. No check moved the wall. No check supplied a seed, a rate, or a mechanism. Every route that comes back comes
    back as "not excluded", with its terminal obligation unchanged.
+
+## 5. Task (2): the route registry, rebuilt from Section 4
+
+Target of every row: (W) (`parts/gap.md` L18-20), or its checked equivalent form of Theorem CR (same-provider
+check 1019). Columns follow the governance file (Section 1.1). "Strength" uses its four words. A family is the
+triple (object, mechanism, terminal obligation). Statuses are the reading of this row; nothing is checked.
+
+Additional reads for this section: row 970 Sections 1, 4, 7 (`gap-direction2-max.md` L39-80, L229-292,
+L402-450); row 968 Section 3, 4.1, 7.1 (`gap-avgcurv-max.md` L124-199, L370-390); row 977 2.0, Step 4, 5.5-6.1,
+9.1 (`gap-tiltproof-max.md` L54-72, L170-200, L235-266, L388-412); row 960 4.3-4.5 (`gap-vargeom-opus.md`
+L142-170); row 982 Steps 2-4 and 8.4 (`gap-hcphys-max.md` L40-163, L258-275); row 947 Step 5
+(`gap-fc-max.md` L121-191); rows 973-975 and 1018 at their RESULT text.
+
+### 5.1 The registry
+
+| Rank | Route | Object and mechanism | Terminal obligation | Strength against (W) | Status | Blocked only by a verdict that no longer stands? | Cheapest decisive next step, and its cost | What the step would change |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **LC**, level convexity as a carrier to (LSI-br) | fine slice law and bridge marginals nu_s in the fine link metric; entropy over the account's levels below the unit ((P1)-(P3)), plus one inequality at the unit | the unit inequality ((U1) or an LSI of the unit block law), the exact size of the loss between unit metric and fine metric (T3, "roughness"), and (TR-LF) | stronger ((U1) with (TH) gives the seed; no converse) | set aside by rule N2 until 2026-11-15; now provisional | **yes**: N2 / T3 (A2, A10) | decide T3 by hand: is the factor beta_K/beta_0 a property of the model or of the linear count? One session, no run | the lead rule A2/A10; whether the Theorem BR family can be used at all in the continuum form (HC-phys) |
+| 2 | **RF-avg**, averaged and trajectory flow forms at one coupling, with consumer **K4** (the ratio-4 HC/BR-J route) | bridge marginals; Polchinski flow of the middle layer; (ABS-flow), (LOC-COV) with a bad set, (LSI-traj-seed)_a; consumer: Proposition HC on (a; (4a)^3), K_30 = 0.811 at beta 2.3 | (ABS-flow-seed)_a or (LSI-traj-seed)_a or (LSI-J-seed)_a at one beta of the window, then the carry of row 978 R2 ((NOCRIT) and a climb) | unknown/comparable (a fixed-coupling statement of kind (K-one); with the carry it gives (W)) | active, no mechanism; K4 is candidate-complete as an implication (check 960) | **yes** for (ABS-flow) and the integrated form (B6 (b), row 998 6a row 19); (LSI-traj-seed) was never refuted | GUIDE: the entropy form (EC-traj) at intermediate k, beta 2.3, sides 12 to 24 (row 974 left it untested); hours under the lock. By hand: none known | keeps or retires the whole bridge family at fixed coupling |
+| 3 | **GEO**, other geometries for the engine | Theorem S / SH' on other complexes: real second times (Lemma Q), diagonal tori with twisted axis channel, time-dependent squeezes, projected averaging | the same seed with another threshold or box | unknown/comparable (an engine change; it supplies no input) | provisional | **yes** (B1, B2, B3) | by hand: the q = 8/5 line of Theorem SH' (check 960 L393); a diagonal finite-torus transfer construction (check 963 L359). Hours each | thresholds and box sizes only (K_a of route 2 falls); not the wall |
+| 4 | **RD / TRI**, the dichotomy or trichotomy as a theorem | Theorem ZD-c, Corollary Z4 (row 720); Corollary TRI (row 1017) | none (given its inputs) | weaker | candidate-complete as a weaker statement | no (A8 is an owner-level rule) | an owner decision; no cost | whether a conditional theorem is a milestone |
+| 5 | **RF-quot**, quotient form | (TILT-COV-quot) box-uniform; gain Q_phi from the gauge orbit | a box-uniform bound; QUOT-CAP caps it if q_0 >= 0.24 uniformly in b | stronger | blocked-local on one number | partly (row 998 6a row 20 rests on a GUIDE; B7) | by hand: q_0 > G_S/beta on side 4 (threshold 0.117; proved 0.064, row 977 9.1). Needs the vacuum on a pinned slice; not cheap | retires the form at theorem grade on small boxes only |
+| 6 | **RE + F3**, sector engines and vortex containers | flux sectors, centre twists; Lemma PAR, Corollary MP (row 1018) | (EV-STEP); (SER) and (SPR) with kappa phi < 1 | weaker (one sector) | blocked-local | partly: FLOOR no longer excludes a seed in a restricted sector (B10 (a)) | none cheap; no mechanism for (SER) or (SPR) | - |
+| 7 | **LIOU**, compactness and rigidity | blow-down limits of torus data; Theorem CE, Theorem CR | (LIOU), with (BDD-Delta) | target-equivalent given (BDD-Delta) | blocked-equivalent | no | none: four soft ways failed (row 1017 5.3); the limit loses the group | - |
+| 8 | **RA / RB**, contraction of D, sign in beta | (CAS) of row 708; printed (CONTR) | theta < 1 on the band | (CAS) with prescribed start: unknown/comparable or stronger; printed (CONTR): target-equivalent (check 998 L162-190) | blocked-equivalent | no | none | - |
+| 9 | **RF-sup**, supremum over tilts | (TILT-COV-sup) | a box-uniform kbar | stronger; by Theorem D2 its constant is at least that of a pinned 2D sheet | retired for the use at the seed box (theorem-grade at sides 4, 8); existence open | no | none; do not attack | - |
+| 10 | **RC**, a one-scale property | a property of the measure at one scale | none with a consumer | target-equivalent | blocked-equivalent | no (KF (d) failing widens the search; it supplies no candidate) | none | - |
+| 11 | **KF-frame / F2**, typical-field colour frame; pinned short step O1 | (N1)-(N3) of row 1011; (FL), (DEC) of row 1018 | (DEC) and a consumer | unknown | blocked-local | no | none | - |
+| 12 | **Route Z; beta_t path** | zero-free torus families; Identity G | a common zero-free domain; 3D mixing and (NOCRIT) | unknown | blocked on open premises (B10 (b), (d) stand) | no | none | - |
+| 13 | **RG**, hierarchical comparison | Migdal-Kadanoff flows | - | unknown | retired (group-blind; check 998 L155) | no | none | - |
+
+### 5.2 Kill pass (skill step 7), one line per route
+
+- LC: does not assume the target below the unit. Its unit inequality is the wall. Kill verdict: wounded;
+  decided in Section 6.
+- RF-avg: no test in the valid form binds it. Theorem D2 binds a supremum; (ABS-flow) at t = 0 reads
+  E_(mu')[v^T (C_phi - kap) v] <= (1/2) E_(mu')|grad v|^2 with v = grad log(d mu'/d nu_s) and C_phi the tilted
+  covariance (multiply (ABS-flow) by F and use grad F^(1/2) = F^(1/2) v/2). A weight F that moves mass to
+  pinned tilts has a large v in the pinned directions, and that part is charged with the same kap on the
+  right. So the supremum argument of D2 does not transfer. Reading, ARGUED; it is not a bound on kap. Lemma
+  META and Lemma DEF of row 975 (each metastable set adds about 1 to S; bad links must be rarer than about
+  7.5 x 10^(-10)) are the standing constraints. Verdict: survives, with no mechanism.
+- K4: an implication that holds. Its hypothesis (LSI-J-seed) is a fixed-coupling statement: w_p and the K7
+  belief test it (rule W2). Verdict: survives as an implication.
+- GEO: an engine change keeps the class (F1), so every blind test passes it and it stays blind. It can lower
+  a threshold. It cannot supply the order-one input. Verdict: survives as an engine item, off the wall.
+- RF-quot: wounded by QUOT-CAP if q_0 >= 0.24; that number is a GUIDE value.
+- RE + F3, LIOU, RA/RB, RC, KF-frame, Route Z, RG: verdicts of rows 998, 1017, 1018 unchanged by the checks.
+
+### 5.3 Ranking rule and the top route
+
+Rank is "what the cheapest decisive step would change, divided by its cost" (skill L590-592). No route has
+a known step that moves the wall. So the rank follows the decisions that a step can move.
+
+- **Top: LC.** It is the only route (a) that was blocked only by a verdict the checks removed, (b) that reads
+  the account's data below the unit, so that no comparison model binds it (rule W2, kind (K-flow)), and (c)
+  whose decisive step is a hand argument of one session. The step decides a lead rule. Section 6 takes it.
+- Second: RF-avg with K4. Its decisive step is a GUIDE run of hours, and its outcome moves the whole bridge
+  family at fixed coupling. It is the larger change at the larger cost.
+- Third: GEO. Cheap steps, small change.
+
+Routes that were blocked only by a verdict that no longer stands: **LC** (N2/T3); in **RF-avg** the forms
+(ABS-flow) and the integrated form, and **RF-quot** in part; **GEO** (three notes); a seed in a restricted
+sector under **RE** (the FLOOR inference). The family of (K-flow) rows as a whole was freed earlier by rule W2.
+None of them gained a mechanism from the checks.

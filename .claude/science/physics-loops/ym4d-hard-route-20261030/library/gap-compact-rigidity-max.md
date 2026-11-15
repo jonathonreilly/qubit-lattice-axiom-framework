@@ -152,7 +152,7 @@ E_0(B) <= 0, because Delta(k, B) >= 0 for all k and Delta(k, B) + k E_0(B) = log
 
 Then exp Delta^(j,k)(T, B) = sum over r of exp(- T e_r^(j,k)(B)). Put D^(j,k)(b) = Delta^(j,k)(b, b, b, b), s^(j,k)(b) = S_j at the time 2^k u_j b/2 on the cube of side 2^k u_j b, and z^(j,k)(b) = b (e_1^(j,k) - e_0^(j,k))(b, b, b).
 
-**Admissible sequence, with the bound D_0.** A sequence (j_i, k_i), k_i -> infinity, such that for every m in Z there is i(m) with, for all i >= i(m):
+**Admissible sequence, with the bound D_0.** A sequence (j_i, k_i) with j_i -> infinity and k_i -> infinity (for one model at one coupling the family is constant in j, and only k_i matters), such that for every m in Z there is i(m) with, for all i >= i(m):
 
 - (H1) D^(j_i,k_i)(2^m) <= D_0 + 1/i;
 - (H2) s^(j_i,k_i)(2^m) >= 1/5041 (no seed of Theorem S at the size 2^(k_i+m) u_(j_i)).
@@ -169,7 +169,7 @@ At one coupling the statement is empty: branch G of Corollary Z4 is "no seed at 
 
 ### 3.3 Theorem CE (compactness; PROVED given A1-A4, Lemma Z, Proposition Delta)
 
-**(i) Existence of admissible sequences.** (a) One datum in branch G: if D(a) <= D_0 for all a >= a_0 and no size has a seed, then every sequence (j, k_i) with k_i -> infinity is admissible. (b) A trajectory: if (BDD-Delta) holds with the bound D_0 from L_0 on, and (PHYS-SEED) fails, then there is an admissible sequence with j_i -> infinity.
+**(i) Existence of admissible sequences.** (a) One datum in branch G (the constant family): if D(a) <= D_0 for all a >= a_0 and no size has a seed, then every sequence with k_i -> infinity is admissible. (b) A trajectory: if (BDD-Delta) holds with the bound D_0 from L_0 on, and (PHYS-SEED) fails, then there is an admissible sequence with j_i -> infinity.
 
 **(ii) Limit.** Every admissible sequence has a subsequence along which Delta^(j_i,k_i)(x) converges for every x in DD^4, to an eternal datum Delta_*, and e_r^(j_i,k_i)(B) converges in (-infinity, +infinity] for every r >= 0 and every B in DD^3, to e_r^*(B). The limit has these properties.
 
@@ -270,4 +270,72 @@ Proof. Lemma PT (a), (c) for each datum, and Theorem CE (b) for the limits. For 
 - **Five dimensions.** The construction is the same with five sides. If five-dimensional SU(2) at weak coupling has massless gluons (A17, belief), it has critical elements. A rigidity statement must use the dimension through a kept property; the number of sides is the only place where the limit shows it.
 
 **Result of Task 1.** The compactness step holds (Theorem CE, PROVED). The extracted object lies in a class with theorem-grade no-rigidity models (the constants log m), and the class is closed under products. On torus data the architecture is therefore an exact restatement of the wall (Theorem CR), with one gain in form (no rate). Mark for "rigidity on torus data": FAILS (Proposition NR).
+
+## 4. Step 4 result (Task 2): the rigidity statement, stated exactly, and its tests
+
+### 4.1 The logical form, and one exact constraint on every rigidity statement
+
+A rigidity statement is a pair: a property PP of families (model, trajectory), and the claim "every family with PP has an empty limit set Omega". A proof would go through **kept properties**: a set QQ of eternal data with Omega contained in QQ for every family with PP, and a Liouville lemma "QQ contains no critical element". A comparison family refutes the statement if it has PP and a non-empty Omega. It constrains the statement if its Omega is not empty: then PP must be false for it, and its limits must lie outside QQ.
+
+**Proposition SI (kept properties are scale-invariant; PROVED, one line).** If Omega is contained in QQ, then Omega is contained in the intersection of the sets sigma^t QQ, t in Z. Proof: Omega = sigma^t Omega (Proposition OM (a)). QED
+
+So a kept property may be assumed invariant under the doubling. A condition "at small scales the datum looks like X" is, on Omega, the condition "at every scale the datum looks like X". For X = the ultraviolet behaviour of the trajectory this contradicts Theorem CE (d). **No boundary condition at one end of the scale axis is a kept property.** This is the exact form of "the blow-down forgets the ultraviolet data".
+
+**Remark MON (the one door for ultraviolet data; ARGUED, the continuum object at each fixed size is assumed).** Let Lambda be continuous on a compact set that contains the rescaled data of the trajectory at every physical scale, and let Lambda not increase under doubling along the trajectory. Then Lambda is constant on Omega, equal to the limit of Lambda at large scales, and this constant is at most the value of Lambda at every finite scale, hence at most its ultraviolet limit Lambda_UV. So the ultraviolet data reach a critical element as one inequality, Lambda(E) <= Lambda_UV. Rigidity by this door needs: every critical element with the kept properties has Lambda > Lambda_UV. Row 1002's finding in this language: for the a-function, Lambda_UV = 3 a_V and the photon has a_V, so the inequality allows the photon. A monotone is blind exactly when some critical element lies below Lambda_UV.
+
+### 4.2 The statement that is exact, and its tests
+
+**(LIOU).** For Wilson SU(2) along the account's trajectory, with (BDD-Delta): the limit set Omega of Section 3.5 has no uniformly recurrent element.
+
+By Theorem CR, (LIOU) is equivalent to (W) given (BDD-Delta). Its tests, in the valid form of the skill:
+
+| Comparison family | Its limit set | How known | (LIOU) there | What a proof for SU(2) must use |
+|---|---|---|---|---|
+| Compact U(1), Villain, beta_j -> infinity | contains a photon limit, if D is bounded | no seed: A7 (published, recalled; lane row 786 for the Langevin form); bounded D: BELIEF (`gap-phys-seed.md` L336) | fails, as it must | the group is not abelian |
+| Frozen Z_2 at large beta | the constant log 8 | THM, lane (Peierls), recalled here | fails | the group is connected (for the flux half) |
+| Frozen Q_8, 2T at large beta | constants log m, m >= 2 the number of degenerate flat states | frozen limit: check 884 (`parts/gap.md` L199); order one: BELIEF | fails | the group is connected and not abelian |
+| **Finite clock Z_N, Villain, N = 16384, beta = 2000** (new in this lane as a comparison model) | contains a massless limit (if D is bounded) | repository note on main, `docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md` (read here: its claim scope and status lines only; "proposed_retained", "Independent review is pending"); method of Frohlich and Spencer, CMP 83 (1982) 411-454 (bibliographic record confirmed by Crossref; abstract not available; recalled) | fails | see 4.3, seed (a) |
+| Product of a family with the photon or with A_(m,eps) | the sum (Lemma PT-inf) | PROVED given the factor | fails | the whole state space |
+| A_(m,eps_j), eps_j -> 0 | the constant log m | PROVED (3.7) | fails | not a gauge model; it shows the engine's axioms alone allow critical elements |
+| SU(2) Wilson in five dimensions, weak coupling | not empty | BELIEF (A17) | fails | the dimension |
+| w_p at its transition coupling; the K7 end point | log 2 (coexistence); a massless scalar | THM given van Enter and Shlosman (Proposition V); BELIEF | fails | first-passage data, or a number |
+| SU(2) with adjoint matter (A16) | a photon limit, or an interacting conformal limit | BELIEF; outside the class K | fails | the theory is pure gauge |
+
+No row of this table is a family with first-passage data of pure SU(2) and a non-empty limit set. So (LIOU) is not refuted, and the table gives the same list of properties as the lane's test table, plus one new entry.
+
+### 4.3 The three seeds of the row, each as an exact statement, with its verdict
+
+**Seed (a), generalized symmetries.** The mechanism proposed: a photon-like critical element carries a continuous magnetic one-form symmetry; the lattice theory has none when pi_1 of the gauge group is trivial; so the symmetry would have to emerge exactly; the centre Z_2 must act on the limit.
+
+- *What is proved here.* The centre does act on every critical element: Theorem CE (e), a Z_2^3 grading of the levels with an even vacuum. This is kept. It excludes nothing: the constants log m carry such gradings (frozen Z_2: all eight sign patterns, one level each), and so does the photon limit of a U(1) theory with its Z_2 subgroup.
+- *The mechanism as a statement.* (R1) "A four-dimensional lattice gauge theory of the class whose gauge group has trivial pi_1 and finite centre has no critical element with a massless vector."
+- *Test.* **(R1) is false.** The finite clock gauge theory Z_N has a discrete gauge group, so pi_1 is trivial; its centre is finite; it has no continuous symmetry of any form on the lattice; and for large N it has a massless phase (the repository note above; Frohlich and Spencer 1982, whose title names the effect: "symmetry restoration"). So a continuous one-form symmetry emerges in a model where the lattice has none. Frozen Q_8 and 2T do not test (R1) (their limits have no massless vector); Z_N does. Mark: FAILS, at the grade of its sources (a published theorem, recalled, and an unaudited repository note; not rebuilt here).
+- *The published picture agrees.* Emergent higher-form symmetries are exact at low energy and are "robust to arbitrary local UV perturbations" (Pace and Wen, A12). So "it would have to emerge exactly" is the generic case, not an obstruction.
+- *What is left of the seed.* If the gauge group is also required to be connected, (R1) becomes a statement about SU(N) and its covering groups only. No comparison model of the class refutes it, and no mechanism proves it: the argument from pi_1 was the mechanism, and it is the part that failed. With adjoint matter the connected form is believed false (A16), so a proof would have to use the absence of matter. Mark for the connected form: OPEN, target-equivalent, no mechanism.
+
+**Seed (b), asymptotic freedom as an ultraviolet boundary condition of the limit.**
+
+- (R2-blow) "No critical element is asymptotically free at small scales." By Proposition SI and Theorem CE (d) this is true and empty: no critical element has any distinguished small-scale behaviour. It gives no contradiction, because nothing says that a critical element of the SU(2) trajectory must be asymptotically free. Mark: PROVED, and useless.
+- (R2-two) "There is no continuum object (limits at fixed physical sizes, k_i fixed) that is asymptotically free at small sizes and has no seed at every size." If the ultraviolet clause is "it is the limit of Wilson SU(2) on the account's trajectory", this is (W) word for word. If the ultraviolet clause is the account's data (bounds on log Z of its tori to an error C l^4, correlations of the action density), the product with the photon has the same data up to that error and no seed: FAILS given the U(1) theorem (Lemma PT, lead rule W2). If the clause is the small-size behaviour of the whole torus function to an error o(1), the product is excluded (its Casimir free energy is larger by the photon's, which is at least d_min), but then an o(1) quantity must be carried across all scales. Remark MON says how: by a monotone, and the only monotones on record are blind. Mark: target-equivalent in the first form, FAILS in the second, OPEN with no mechanism in the third.
+
+**Seed (c), the non-abelian Ward identity of row 1011 (Proposition W) in the limit.**
+
+- Proposition W is an identity for link rotations of the lattice measure at the cutoff scale. A limit form needs: a limit object that still has gauge-field variables; a density for it; and second derivatives of that density. The torus data have none of these. An enriched limit with variables exists by compactness of the group (4.4), but nothing gives its law a density: for the constants log m the natural law sits on flat fields.
+- So a statement (R3) "the limit law satisfies Proposition W with its bracket term" cannot be written before a regularity lemma for the law of block variables at order-one coupling. That lemma is the object that rows 1011 and 1013 name as missing ("a 4D analogue of the 2D short step, a selective gain at order-one response"), and row 1016 works on its reopen condition. By rule 0a I stop here and name the match. Mark: OPEN, not attacked; duplicate of the missing object of rows 1011 and 1013.
+
+### 4.4 An enriched limit in which the group is kept (definition; compactness is free; no rigidity follows)
+
+The torus data forget the group. An object that keeps it: fix an integer N >= 3 and, for each lattice torus with N cells of side h on each side, a block map V = BB(U) from lattice fields to SU(2)-valued fields on the links of the coarse torus of N^4 cells, with (B1) gauge covariance at the coarse sites, (B2) covariance under the centre flips, (B3) covariance under the symmetries of the coarse torus, (B4) locality: a coarse link depends on the lattice links within h/2 of it. The law of V under the lattice measure is a probability measure on the compact space SU(2)^(4 N^4). So along every admissible sequence a subsequence of these laws converges weakly, for every N at once (PROVED: compactness of the group, a diagonal argument). The limit law is gauge invariant, invariant under the centre flips and the lattice symmetries (weak limits keep invariance under continuous maps). Reflection positivity for functions of coarse links at distance more than h/2 from the plane is kept too (ARGUED: such functions are functions of lattice links on one side, and the inequality is closed under weak limits; the reflection positivity of the lattice measure at that plane is the lane's rebuilt Lemma RP of row 1000).
+
+Not addressed here: whether a block map with (B1)-(B4) gives a non-trivial limit as the cutoff is removed. Straight lattice paths do not (their laws tend to independent Haar variables in every theory with a perimeter divergence). The account's averaging maps are the candidates; I did not read them for this.
+
+In this object the group is kept: for a U(1) theory the limit law sits on U(1)-valued fields, for a frozen subgroup on fields with values in it. So a statement can now say "SU(2)". It still cannot say more: the three seeds fail or stop for the reasons of 4.3, which do not depend on the object. The limit law of a product model lives on another space (two fields), so in this object "generated by the SU(2) variables alone" is at least a meaningful condition. What is missing is the link between the two objects: that the torus levels of Theorem CE are all seen by the block variables (completeness). I state it as an open item in Section 5 and do not attack it.
+
+### 4.5 Result of Task 2
+
+- The exact rigidity statement is (LIOU). It is equivalent to (W) given (BDD-Delta), it is false in every comparison family, and no comparison family refutes it. Mark: OPEN, target-equivalent.
+- Seed (a): the mechanism FAILS (finite clock Z_N; at the grade of its sources). The centre grading is kept and excludes nothing (PROVED).
+- Seed (b): PROVED empty in the blow-down form (Proposition SI); target-equivalent or FAILS in the two-ended forms.
+- Seed (c): stops at the missing object of rows 1011 and 1013 (not attacked, rule 0a).
+- New for the lane's test table: the finite clock model as a theorem-grade comparison family for every argument from the discreteness of the symmetry group or from pi_1.
 

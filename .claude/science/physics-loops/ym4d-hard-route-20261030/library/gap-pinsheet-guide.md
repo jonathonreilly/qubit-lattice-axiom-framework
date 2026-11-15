@@ -178,3 +178,34 @@ R_S tau_int 1.1, half-chain test -0.84 sigma.
   (which needs tau >= 0.8) does **not** apply. tau is flat in the side.
 - Measured per-link G^e-hat(0) = R_S/4: 10.56, 22.48, 38.46, 81.95, against row 977 10.5's proved/argued floors 5.44, 8.20, 9.47 (side 24 no floor).
 
+## Step 8. P3 second side-16 chain, and P2 sides 8 and 16 (GUIDE; analysed 03:08Z)
+
+**P3 side 16, chain 2 (seed 1604; `data/p3_S16_T32_seed1604.txt`, `data/analysis_p3_S16_chain2.txt`).** R^0_16 = 36.40 +- 2.00, q_0 = 0.2426 +- 0.0066,
+R4 = 154.67 +- 0.07, tau_int(R^0) = 11.1, half-chain test 0.3 sigma. Chain 1 gave 36.67 +- 2.00: the chains differ by 0.1 sigma, so the block error
+of chain 1 is not too small. Pooled (32 blocks): R^0_16 = 36.54 +- 1.39, q_0 = 0.2430 +- 0.0046. With chain 2 alone g = 1.355, g - 2 sigma_g = 1.301;
+pooled g = 1.356, g - 2 sigma_g = 1.314. The fixed-rule verdict of Step 5 (C3 REFUTED, GUIDE; on chain 1) is unchanged by the check; C2 holds on the
+pooled q_0 too (0.2430 - 0.0092 = 0.2338 >= 0.22).
+
+**P2 (compact U(1), beta 2.3), sides 8 and 16** (`data/u1p1_S8_T16_seed811.txt`, `data/u1p1_S16_T32_seed1611.txt`, `data/analysis_u1_S8_S16.txt`):
+
+| side | R_S = E|M|^2/A | R_S/A | tau = E cos(P - P') | xi_2nd/S | Ghat^e(p_1) | IR bound | E cos^2 P |
+|---|---|---|---|---|---|---|---|
+| 8 | 57.159 +- 0.005 | 0.8931 | 0.92012 +- 0.00006 | 2.08 | 0.1748 | 0.7422 | 0.4975 +- 0.0036 |
+| 16 | 224.294 +- 0.021 | 0.8761 | 0.92010 +- 0.00003 | 2.35 | 0.5171 | 2.8559 | 0.517 +- 0.005 (UNDER-SAMPLED, not a criterion observable) |
+
+R_S tau_int 0.7 and 1.9. (R_16/256)/(R_8/64) = 0.981: a power law S^(-eta) with eta about 0.028 over 8 -> 16. Side 32 is running
+(started 03:07Z; about 5 s per sweep, so about 2.5 h); the P2 verdict waits for it. Row 977 5.6's U(1) floor A(1/2 - G_S/beta) per component, i.e.
+R_S >= 2A(1/2 - G_S/beta) = 42.9 (side 8) and 147.0 (side 16): met (57.2, 224.3).
+
+## Step 9 (provisional, 03:10Z; replaced by Step 10 once P2 side 32 ends). Summary
+
+GUIDE only: nothing below proves or discharges anything; every number is a Monte Carlo estimate with the stated block errors, one chain per
+side (two on P3 side 16). Checked by no one.
+
+- P1 C1: Theorem D2's floors hold (R_8, R_12, R_16 = 42.24, 89.94, 153.83 against 21.78, 32.79, 37.88). D2 not refuted.
+- P1 C2: R_24 = 327.8 >= 144: "sheet longer than the box"; xi_2nd about the side at every side, R_S/A 0.66 -> 0.57 over 8 -> 24.
+- P1 C3: tau = 0.751 at every side, below 0.8: 6.2(b) does not apply.
+- P3 C1: holds on 8, 12, 16 (9.1 not withdrawn). C2: q_0 = 0.253, 0.245, 0.243 (pooled 16: 0.2430 +- 0.0046); "QUOT-CAP applies" (GUIDE).
+- P3 C3: g = 1.358 +- 0.027, g - 2 sigma = 1.304 > 1.25, no decreasing step: REFUTED (GUIDE) for a box-uniform (TILT-COV-quot) at beta 2.3.
+- P2: sides 8, 16 give R_S/A = 0.893, 0.876; side 32 pending.
+

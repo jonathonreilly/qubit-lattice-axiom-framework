@@ -247,3 +247,232 @@ first-order transition or a critical point without symmetry change (A9 shows a f
 Selective at small L: the photon mass is exponentially small but positive and comes from non-abelian monopoles
 (the Wilson line as a compact adjoint Higgs). A theory times a free photon keeps a massless photon here.
 
+## Step 3: topic B (3D compact U(1) gap of Gopfert-Mack, and 4D-to-3D reductions)
+
+Sources: Springer landing page of CMP 82 (abstract; full text paywalled, stopped there per FINISH rules), arXiv API
+abstracts in `/tmp/gor1005/b` (not committed).
+
+**B1. Gopfert and Mack, "Proof of confinement of static quarks in 3-dimensional U(1) lattice gauge theory for all
+values of the coupling constant", CMP 82 (1981/82) 545-606, DOI 10.1007/BF01961240.** Full abstract (new to the lane,
+which had the title and a summary): Villain action, "related to the 3-dimensional Z-ferromagnet by an exact duality
+transformation (and also to a Coulomb system). We show that its string tension alpha is nonzero for all values of the
+coupling constant g^2, and obeys a bound alpha >= const m_D beta^{-1} for small a g^2, with beta = 4 pi^2/g^2 and
+m_D^2 = (2 beta/a^3) e^{-beta v_Cb(0)/2}. A continuum limit a -> 0, m_D fixed, exists and represents a scalar free
+field theory of mass m_D. The string tension alpha m^{-2} in physical units tends to infinity in this limit."
+Grade LT (theorem on the lattice, all couplings), plus a continuum limit that is a FREE massive scalar. Group/dim:
+U(1), d = 3, Villain. Selective: yes, and sharply: the 3D photon becomes massive through the monopole (Debye) gas.
+Reading for the lane: (i) the mechanism is the exact abelian duality to an integer-valued field plus a Coulomb gas;
+(ii) the continuum limit at fixed m_D is Gaussian, so the theorem does not by itself give an interacting theory;
+(iii) the mechanism needs magnetic monopoles to be point-like instantons in d = 3; in d = 4 they are loops and the
+same argument fails (4D U(1) has a Coulomb phase, Guth, Frohlich-Spencer, on file in `gap-lit-u1.md`).
+
+**B2. Chatterjee, arXiv:2602.00436 (on file, `gap-crux-lit-nonab.md` L147).** 3D Wilson LGT with G contained in U(n)
+and containing the scalar circle: |<W_l>| <= n exp{-c (1 + n beta)^{-1} T log(R + 1)} (logarithmic potential, via
+Frohlich's comparison and Glimm-Jaffe). Grade LT. d = 3, groups with a central U(1) (so not SU(2)). Selective only
+in the weak sense of a growing potential; no gap statement.
+
+**B3. Garban and Sepulveda, arXiv:2107.04021 (new to the lane).** 4D U(1) Villain at low temperature:
+|<W_gamma>| <= exp(-(C_GFF/(2 beta))(1 + C beta e^{-2 pi^2 beta})(|gamma| + o(|gamma|))), a perimeter law with the
+monopole correction quantified. Grade LT. d = 4, U(1). It confirms the 4D Coulomb phase quantitatively; it shows the
+GM mechanism does not carry to d = 4 in the bulk.
+
+**B4. Chevyrev and Garban, "Villain action in lattice gauge theory", J. Stat. Phys. 192 (2025) 38, arXiv:2404.09928
+(new to the lane).** Villain interaction is a limit of Wilson and Manton interactions on a larger "carpet graph",
+"our proof also applies to non-Abelian lattice theories". Grade LT. Relevance: a rigorous bridge between Villain and
+Wilson actions, so a GM-type Villain statement need not be lost when the action changes; it does not move the
+mechanism to SU(2).
+
+**B5. Athenodorou, Bonati, Soler Calero, arXiv:2608.27976 (2026, new).** 3D compact U(1): "its continuum limit is
+pathological, since the ratio of the glueball masses to the square root of the string tension vanishes"; a monopole
+fugacity term gives a line of constant physics. Grade NUM. Confirms B1 (ii).
+
+**B6. 4D-to-3D reductions that would carry B1 to a 4D theory on R^3 x S^1.**
+- The semiclassical carriers are A1, A3, A4, A12 of Step 2: at small L, SU(2) YM with a centre-stabilising deformation
+  or adjoint fermions reduces to a 3D compact abelian theory (dual photon) with monopole-instantons; this is the
+  continuum Polyakov mechanism that B1 makes rigorous in the Villain lattice model. Grade SC; nothing rigorous found.
+- Dimensional reduction at high temperature (Laine, PLB 385 (1996) 249, hep-lat/9604011, SU(2)+Higgs): "the lack of a
+  relation of the 4d lattice gauge coupling to continuum physics prevent rigorous conclusions." Grade NUM/perturbative.
+- Rigorous treatment of the 3D Georgi-Glashow (SU(2) + adjoint Higgs) lattice model in the Polyakov regime: NONE
+  FOUND in this search (arXiv API queries for "Polyakov ... monopole ... mass gap ... proof", "Georgi-Glashow AND
+  rigorous" returned nothing). I recall none; this is a bounded search, not a non-existence claim.
+- 3D SU(2) itself: no gap theorem outside strong coupling (on file, `gap-3dmix-read-opus.md` L282).
+- Debye screening rigorous in other models (new, for completeness): D'Alimonte and Lammers, arXiv:2603.28734
+  (2D lattice Coulomb gas, free-energy analyticity and Debye screening in the disordered regime). Grade LT, 2D.
+  Chernodub, Ishiguro, Suzuki, PTP 112 (2004) 1033 (3D SU(2) abelian-projected monopole gas, NUM).
+
+**Step 3 summary.** B1 is the one rigorous, all-coupling, selective gap theorem in this family, and it is abelian and
+three-dimensional with a Gaussian continuum limit. No published rigorous step carries it to a 4D non-abelian theory:
+the carrier (small-L abelianisation of deformed or adjoint-matter SU(2) on R^3 x S^1) is semiclassical, and even the
+3D non-abelian Georgi-Glashow model has no rigorous Polyakov theorem that I found. In 4D bulk U(1) the mechanism
+fails (B3). For the lane this matches row 1002 H17 and adds the exact abstract bound (m_D formula, free-field limit).
+
+## Step 4: topic C (YM on S^3 and on hyperbolic space; small-radius gap and continuity in the radius)
+
+Sources: arXiv abstracts in `/tmp/gor1005/c`; primary text of van Baal's review in `/tmp/gor1005/vb` (not committed).
+
+**C1. van Baal, "QCD in a Finite Volume", hep-ph/0008206 (review, 79 pp.), Section 5 "Gauge Fields on the
+three-Sphere" read in full (pp. 51-58 of the PDF) and Section 6 opening.** Statements:
+- Purpose: "conformal equivalence of S3 x R to R4 gives a very simple and explicit construction for the instantons";
+  theta dependence via boundary conditions on the fundamental domain.
+- The free spectrum: the quadratic fluctuation operator in Coulomb gauge, M_ij = 2 L_1^2 delta_ij + 2 (L_1 + S)^2_ij,
+  "has A(c, d) as its eigenspace for the (lowest) eigenvalue 4. These modes are consequently the equivalent of the
+  zero-momentum modes on the torus, with the difference that their zero-point frequency does not vanish." So on a
+  unit S^3 the free gluon already has frequency 2/R: the gap at small R is curvature, present in a free photon too.
+- The method: an 18-dimensional (c, d) mode space, sphalerons, Gribov and fundamental-domain boundary identifications;
+  effective Hamiltonian with variational solution. "Due to the curvature of the sphere, at large volumes the
+  corrections to the glueball masses are in powers of the inverse radius, as opposed to an exponential approach for
+  the torus."
+- Section 6: SU(2) spectra "for the sphere and the torus, are compatible with m(2+)/m(0+) ~ 1.5 and
+  m(0-)/m(0+) ~ 1.7" near the domain size; "The volume plays the role of the control parameter"; "large field
+  fluctuations are essential".
+Grade: perturbative + effective Hamiltonian on a finite mode space + variational numerics (SC/NUM); no theorem.
+SU(2), S^3 x R. Selective: NO at small radius (every theory, including a free photon, has a gap of order 1/R on
+S^3; for Maxwell on the unit S^3 the lowest coexact 1-form has omega = 2, the same value as the free gluon modes
+above). The selective content would be a lower bound on the gap uniform in R, which is the original problem.
+- References located in the review (abstract-level only, not read): Hosotani, PLB 147 (1984) 44; van Baal and
+  Hari Dass, NPB 385 (1992) 185; van Baal and van den Heuvel, NPB 417 (1994) 215, hep-lat/9310005; Cutkosky,
+  J. Math. Phys. 25 (1984) 939, and Cutkosky-Wang PRD 37 (1988) 3024; van Baal-Cutkosky hep-lat/9208027.
+
+**C2. Aharony, Marsano, Minwalla, Papadodimas, Van Raamsdonk, ATMP 8 (2004) 603, hep-th/0310285.** "weakly coupled,
+large N, d-dimensional SU(N) gauge theories on a class of compact spatial manifolds (including S^{d-1} x time)
+undergo deconfinement phase transitions at temperatures proportional to the inverse length scale"; the analysis
+reduces to a unitary-matrix integral over the thermal holonomy. Grade: exact at zero coupling and perturbative at
+weak coupling, large N (a mathematical statement about the matrix integral is rigorous; the QFT reading is
+perturbative). Selective: NO; the "confined" low-temperature phase at zero coupling comes from the Gauss law
+(singlet constraint) on a compact space, which a free theory with the constraint also has. Lesson for the lane:
+confinement-like behaviour on a compact space can be kinematic.
+
+**C3. Hyperbolic space and AdS_4.**
+- Aharony, Berkooz, Tong, Yankielowicz, "Confinement in Anti-de Sitter Space", JHEP 02 (2013) 076, arXiv:1210.5195:
+  "Four dimensional gauge theories in anti-de Sitter space, including pure Yang-Mills theory, exhibit a quantum phase
+  transition between a deconfined phase and a confined phase as the gauge coupling is varied." Grade SC/BEL.
+- Ciccone, De Cesare, Di Pietro, Serone, arXiv:2407.06268: "The Dirichlet boundary condition cannot exist at
+  arbitrarily large radius because it would give rise to colored asymptotic states in flat space. ... this implies a
+  deconfinement-confinement transition as the radius is increased"; one-loop anomalous dimensions favour
+  "merger and annihilation"; "For the Neumann boundary condition, the lightest scalar operator is found to have a
+  positive anomalous dimension, in agreement with the idea that this boundary condition extrapolates smoothly to
+  flat space." Grade: perturbative (one loop) plus an argument; BEL for the transition and for Neumann smoothness.
+  SU(N), Euclidean AdS_4 = H^4. Selective: partly. In global AdS every field has a discrete spectrum of order 1/R,
+  so a gap is NOT selective; what is selective is the boundary data (a conserved boundary current of colour under
+  Dirichlet conditions, or the Neumann spectrum). Continuity in the radius is a stated belief for Neumann and is
+  stated to FAIL for Dirichlet.
+- Lawrie, Oh, Shahshahani, arXiv:1502.00697: classical equivariant SU(2) YM on 4D hyperbolic space (gap eigenvalues
+  of a linearised operator for the wave equation). Grade CT, classical only, no quantum statement.
+- Callan and Wilczek, "Infrared behavior at negative curvature", NPB 340 (1990) 366 (recalled, not fetched; not on
+  arXiv): hyperbolic space as an infrared regulator. Status in this search: NOT READ.
+- Spectral fact used above (recalled, standard, not rebuilt; label gap): on H^n the Hodge Laplacian on k-forms has
+  essential spectrum starting at ((n-1)/2 - k)^2 for k < (n-1)/2, and L^2 harmonic forms exist only in middle degree
+  k = n/2. For H^4 this gives L^2 harmonic 2-forms (abelian field strengths with zero action cost scale), so a free
+  photon on H^4 is not gapped in any flat-space sense.
+
+**C4. Rigorous constructions.** No rigorous construction of 4D YM on S^3 x R or on H^4 was found. On file: Alonso
+Pichardo, Zenodo preprints 2026 (`gap-crux-lit-2.md` L170-172), not refereed. Rigorous Euclidean QFT on curved
+backgrounds exists for scalar fields (Jaffe-Ritter, CMP 270 (2007), and Dimock, recalled, NOT READ in this run); none
+for gauge fields in 4D.
+
+**Step 4 summary.** The small-radius gap on S^3 (and on AdS_4/H^4) is curvature or kinematics and is NOT selective:
+a free photon has it too. Continuity in the radius is the uniform-in-R lower bound, which is the original problem in
+another geometry; the literature treats it by effective Hamiltonians and variational numerics (van Baal) or by
+one-loop boundary data (AdS), and states a transition for Dirichlet conditions. Nothing rigorous. The AdS boundary
+data (colour currents under Dirichlet conditions) is the only selective handle found in this topic; it is perturbative.
+
+## Step 5: topic D (twisted boundary conditions and flux free energies), additions only
+
+The lane already holds the core of this topic (Step 1, D): 't Hooft 1979, Tomboulis-Yaffe, Borgs-Seiler, Mack-Petkova
+(31 files), Kanazawa (theorem and identity, arXiv:0805.2742), Chatterjee centre symmetry, Ito-Seiler and the
+Tomboulis 2007 failure point (row 797), Kovacs-Tomboulis numerics, Nguyen-Tanizaki-Unsal Appendix A, de Forcrand-Jahn.
+I did not re-search them. arXiv search (sorted by date) for new rigorous items found these, new to the lane:
+
+**D1. Edwards and von Smekal, PLB 681 (2009) 484, arXiv:0908.4030; von Smekal, Edwards, Strodthoff, PoS
+Lattice2010:292, arXiv:1012.0408.** 3D SU(2) (2+1 at finite temperature): the centre-vortex free energy at the
+deconfinement point is matched to "the exactly known value of the interface free energy in the 2D Ising model at
+criticality" to fix beta_c. Grade NUM, with an exact 2D Ising input via universality (the universality step is
+BEL). 3D SU(2). Selective: the vortex free energy is a confinement order parameter, so yes in kind (it is the flux
+quantity the lane already uses, Theorem ZD-c and (W)). Adds nothing rigorous.
+
+**D2. Goller and Porta, arXiv:2501.10065, and Bachmann, Goller, Porta, arXiv:2508.21502.** 2D (2+1 Hamiltonian)
+Z_2 gauge theory coupled to fermions: "Using reflection positivity, we prove that the ground state lies in the sector
+of a uniform pi-flux per plaquette and that the monopoles are massive"; with a staggered fermion mass, "a fully gapped,
+four-dimensional ground state space on large tori. It is topologically ordered." Proof by "reflection positivity and
+chessboard estimates". Grade LT (Hamiltonian lattice theorem). Group Z_2, d = 2 + 1, with matter, at large hopping.
+Selective: yes (gapped vs the semimetal they also prove without the mass). Relevance: the only recent rigorous use I
+found of reflection positivity to fix the flux sector of a lattice gauge theory and then get a gap; the flux is
+fixed by fermions at large hopping (Lieb's flux-phase theorem), not by pure gauge dynamics, and the group is finite.
+It is a precedent for "RP fixes the flux sector", which the lane's twist work (rows 679, 842) already uses through
+chessboard estimates (Theorem BAD).
+
+**D3. Nothing new and rigorous on 4D SU(2) twist free energies.** Kanazawa's theorem (arXiv:0805.2742, on file:
+"An equality is derived through" a blocking of vortex free energies across lattice sizes) remains the latest
+rigorous all-coupling identity found. Tomboulis's 2007 claim (arXiv:0707.2179) is on file with its failure point.
+SO(3)-type and vortex-model papers (Burgio et al. hep-th/0608075, hep-lat/0610097; Quandt-Reinhardt-Engelhardt
+hep-lat/0412033) are NUM or models.
+
+**Step 5 summary.** No new rigorous inequality on 4D SU(2) flux free energies since the lane's last search (row 739,
+2026-11-11). The new rigorous items are Hamiltonian Z_2 + fermion theorems in 2 + 1 dimensions (D2) that use
+reflection positivity to fix the flux sector; they are a technique precedent, not an input.
+
+## Step 6a: topic E (gap stability along paths of local Hamiltonians, and its use for lattice gauge theories)
+
+Sources: arXiv abstracts in `/tmp/gor1005/e` (not committed). Lane holdings: Step 1, E; Knabe and Gosset-Mozgunov
+finite-size criteria are on file (16 and 11 files, e.g. `gap-crux-fp.md`, `prior/gap-math-lit.md`), Cubitt et al. too
+(`gap-crux-exercise-astra.md`). New items are marked NEW.
+
+**E1. Bravyi, Hastings, Michalakis, J. Math. Phys. 51 (2010) 093512, arXiv:1001.0344 (on file, re-read abstract).**
+For H_0 a sum of "geometrically local commuting projectors on a D-dimensional lattice with certain topological order
+conditions", "there exists a constant threshold epsilon > 0 such that for any perturbation V representable as a sum of
+short-range bounded-norm interactions the perturbed Hamiltonian H = H_0 + epsilon V has well-defined spectral bands
+... separated ... by a constant gap." Grade: theorem (quantum lattice, finite-dimensional sites). Selective: yes
+(a gap is a gap), but only near a frustration-free commuting-projector point.
+
+**E2. Michalakis and Pytel, CMP 322 (2013) 277, arXiv:1109.1588 (NEW to the lane; I take this to be the row's
+"Michalakis and Zwolak": Justyna Pytel publishes later as Justyna P. Zwolak; the identification is mine, not
+checked against a source).** "We prove stability of the spectral gap for gapped, frustration-free Hamiltonians under
+general, quasi-local perturbations. We present a necessary and sufficient condition for stability, which we call
+'Local Topological Quantum Order'". Grade: theorem. Needs: frustration-free H_0 with a uniform gap and LTQO;
+perturbation small in norm. Finite-dimensional sites.
+
+**E3. Nachtergaele, Sims, Young, arXiv:2102.07209 (NEW).** "uniformly small short-range perturbations do not close the
+bulk gap above the ground state of frustration-free quantum spin systems that satisfy a standard local topological
+quantum order condition. In contrast with earlier results, we do not require a positive lower bound for finite-system
+Hamiltonians uniform in the system size." Grade: theorem (infinite-system GNS form). Same smallness and frustration-free
+hypotheses.
+
+**E4. Nachtergaele, Sims, Young, J. Math. Phys. 60 (2019) 061101, arXiv:1810.02428 (NEW).** Review/framework of
+Lieb-Robinson bounds, quasi-local maps and spectral-flow automorphisms, including "systems with an infinite-dimensional
+Hilbert space at each lattice site and Hamiltonians that may involve unbounded on-site contributions" (the Kogut-Susskind
+electric term is such an on-site term). Grade: theorems. Relevance: the technical frame needed to even state E1-E3 for
+a lattice gauge Hamiltonian with L^2(SU(2)) on each link exists in this generality for propagation bounds; the
+stability theorems themselves are proved for finite-dimensional sites.
+
+**E5. Bachmann, Michalakis, Nachtergaele, Sims, "Automorphic Equivalence within Gapped Phases", CMP 309 (2012) 835,
+arXiv:1102.0842 (NEW).** If H(s), s in [0, 1], has finite-range interactions continuous in s and "a non-vanishing gap
+above its ground state" for each s, then the ground states are related by a quasi-local automorphism (Hastings'
+quasi-adiabatic flow). Grade: theorem. Direction: gap along the path => equivalence; it does NOT give a gap. Selective:
+it presupposes the gap, so it cannot supply one.
+
+**E6. Lemm and Mozgunov, arXiv:1801.08915 (NEW; Knabe and Gosset-Mozgunov on file).** Finite-size criterion for
+frustration-free systems with boundary: "if the spectral gaps at linear system size n exceed an explicit threshold of
+order n^{-3/2}, then the whole system is gapped" (1D and 2D, finite-range). Grade: theorem. Selective: yes. Needs
+frustration-freeness; pure lattice YM (Kogut-Susskind) is not frustration-free.
+
+**E7. Cubitt, Perez-Garcia, Wolf, Forum Math. Pi 10 (2022) e14, arXiv:1502.04573; Bausch, Cubitt, Lucia,
+Perez-Garcia, PRX 10 (2020) 031038, arXiv:1810.01858 (on file).** The spectral gap problem is undecidable for
+translation-invariant nearest-neighbour Hamiltonians in 2D (and 1D). Grade: theorem. It names the YM gap conjecture as
+an instance of the general problem but does not bear on a specific Hamiltonian; it rules out a uniform algorithm, not a
+proof for SU(2).
+
+**E8. Use for lattice gauge theories.** The lane's own record (`prior/gap-prior.md` L101, L209): a note in this
+repository imports E1 for link-truncated SU(2)/SU(3) Kogut-Susskind Hamiltonians at strong coupling (H(delta) =
+sum n_l + delta sum O_P), i.e. a perturbation of the frustration-free electric term. arXiv search for "lattice gauge AND
+spectral gap AND stability AND Hamiltonian" returned nothing; "Kogut-Susskind AND gap" returned only tensor-network and
+MPS numerics (Tagliacozzo-Celi-Lewenstein PRX 4 (2014) 041024; Milsted PRD 93 (2016) 085012, NUM). Topic D2 above
+(Goller-Porta; Bachmann-Goller-Porta) is the only recent rigorous gapped-phase result for a lattice gauge theory found,
+and it uses reflection positivity, not E1-E3. Not found: any gap-stability theorem for a lattice gauge Hamiltonian away
+from the strong-coupling (electric) point.
+
+**Step 6a summary.** Every gap-stability theorem (E1-E3, E6) needs a frustration-free gapped reference point and a
+perturbation small in norm (or a finite-size gap above an explicit threshold for frustration-free systems). For lattice
+YM the only such point is strong coupling (the electric term), so the method reaches small magnetic perturbations only,
+as `gap-brainstorm-max.md` G15 already says. E5 transports equivalence along a path that is already gapped and cannot
+open a gap. Nothing here reaches order-one coupling.
+

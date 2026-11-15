@@ -26,7 +26,8 @@ Status block (kept current):
 
 - Step 1 (inputs, kill sheet): done, Section 1.
 - Step 2 (design rules R1-R10): done, Section 2.
-- Steps 3-8: not started.
+- Step 3 (eight candidates C1-C8): done, Section 3.
+- Steps 4-8: not started.
 
 Progress marker 1a (18:40Z). Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-356 and rows 998-1013 (L1077-1098); `parts/gap.md`; the four prior reads (rows 1007, 1009, 1010, 1012). Still to read in this step: the in-progress file of row 1011, `library/gap-crux-fp.md` (five-dimensional test, Proposition V), the statements of Lemma PT, Proposition NP, Theorem D2, Lemma SHEET, the exercise skill, `library/open-core.md` (duplicate check).
 
@@ -87,3 +88,42 @@ Progress marker 1a (18:40Z). Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-35
 **The skeleton behind R2-R6, in one sentence (my abstraction, ARGUED).** There is a group of changes of variables under which a background-dependent partition function W is invariant; the twist is a class of backgrounds that the group cannot remove because of the pins; because the group is not abelian, the "linearised orbit" dF misses the true orbit by a second-order commutator field B(F), and the twist class is reachable, with a coefficient that grows like the number of scales, as a sum of such commutator fields; the cost of the trivial moves is bounded by the coupling alone. So a quantity that the trivial moves leave invariant at first order is bounded by a fourth-order variation along them.
 
 **What this says an inventor needs in 4D (the three slots).** (i) A response quantity with a blind upper bound and gradient invariance (R2, R3). (ii) Two non-commuting families of trivial moves whose commutator is the twist, with a scale-invariant cost (R4-R6). (iii) A representation that turns a small response into decay of all observables (R9), inside a class that survives Theorem D2, the slab device and Lemma SHEET (R7). Row 1011 tests the choice (i) = Schrodinger-functional stiffness, (ii) = field-strength bracket of gauge waves. Step 3 fills the slots differently.
+
+## 3. Step 3 result: eight candidate mechanisms for 4D lattice SU(2) (done 2026-11-15T21:10Z)
+
+Notation. Links U_l in SU(2), plaquette weight exp(beta x_p), x_p = (1/2) tr U_p. A **link-end** is a pair (l, x) with x an end of l; a **corner** is a pair (p, x) with x a site of p. Lab frame = the frame in which the integration variables are written; no gauge is fixed unless said.
+
+Not listed: the direct port (Schrodinger-functional stiffness, gauge waves on shells, field-strength bracket). That is row 1011.
+
+Lane grep before writing (terms: white noise, corner twist, non-central, biharmonic, Golterman, diamagnetic, Kato, Zirnbauer, induced gauge, winding sector, frame field, commutator, Fradkin, covariant Laplacian, plaquette random-cluster; scope `library/`, `parts/`, `FINISH.md`). On file already: C4 (`gap-brainstorm2-max.md` L178, idea 28, row 859 family), C5 (`gap-brainstorm-max.md` L277, L523, L622, L688: "frustration bootstrap", with row 834's open nonlinear diamagnetic inequality), the bracket reading of asymptotic freedom (`gap-brainstorm-max.md` L303, Hormander and Solovay-Kitaev), the costly seam move (`gap-brainstorm2-max.md` L161, L216, ARGUED). No hit for: corner twist, biharmonic, frame field, Golterman. So C1, C2, C3, C7, C8 are "not found in the searched scope"; C4, C5, C6 are found again and credited.
+
+**C1. Corner-twist family inequality (the port of [B], not of [28]).**
+- Object. Left and right translations of single links, U_l -> e^(F_(l,x)) U_l e^(-F_(l,y)), F a field on link-ends with values in su(2). They are changes of Haar variables. They turn the action into a **corner-twisted action**: at each corner (p, x) a group element G_(p,x) is inserted between the two links of p at x. W(G) = E exp(beta sum_p [x_p(G) - x_p]) has the exact invariance W(G^F) = W(G). A gauge transformation is the case F_(l,x) = lambda_x for all link-ends at x.
+- (a) Monotone: the response R(theta, theta) = -D^2 W for one-axis corner twists theta c; or the finite ratio Z(t)/Z(0). (b) Class: every finite subcomplex, strengths in [0, beta], any pinned link set; conditioning keeps it, as in [B]. (c) Identity: W(delta F) = W(B) with B_(p,x) = (1/2)[F_(l,x), F_(l',x)] + O(F^3), the bracket at the corner; [B] (2.10)-(2.15) carry over word for word (edges become corners, vertices become link-ends). (d) Dimension-4 input wanted: sum over modes of (signal)^2/(cost). (e) Consumer: the analogue of [B] Proposition 3.1, then Proposition 2.1.
+
+**C2. Centre flux reached through non-central sheet twists.**
+- Object. On a periodic box insert g in SU(2) at one corner of each plaquette of a co-closed sheet (all (1,2)-plaquettes at (x_1, x_2) = (0, 0)). Z(g) is a class function with Z(1) = Z and Z(-1) = Z_tw, the 't Hooft twisted partition function. So g_t = exp(t c), 0 <= t <= pi, is a continuous path between the two flux sectors, which [B] p. 12 would integrate.
+- (a) Monotone: F(t) = -log Z(g_t)/Z(1). (b) Class: periodic boxes (reflection positive). (c) Identity: every element of SU(2) is a commutator, so for every t there are holonomies with [Omega_1, Omega_2] = g_t^(-1) and the classical cost of the twist is zero; in U(1) it is of order beta t^2. (d) The aspect ratio of the box is scale-free in d = 4. (e) Consumer: the flux half of the periodic seed (T_per), or Tomboulis-Yaffe.
+
+**C3. Winding-sector twist.**
+- Object. Dirichlet data on the boundary of a 4D cube, changed by a gauge map Omega of the boundary. Claim (Lemma TWIST below): the change is removable exactly when Omega extends to the cube, that is when deg Omega = 0. So the only gauge twists of pinned boundary data that the bulk can feel are the classes k in pi_3(SU(2)) = Z.
+- (a) Monotone: Z_k/Z_0. (b) Class: all Dirichlet cubes; conditioning on cell boundaries keeps it and the degree is additive. (c) Identity: pi_3(SU(2)) = Z; none for U(1) or a finite group. (d) The instanton action is scale-free in d = 4. (e) Consumer: none found; possible use in the refilling step (K8).
+
+**C4. Third copy through an auxiliary-boson representation (found again: row 859 family, `gap-brainstorm2-max.md` L178).**
+- Object. Weights of Budczies-Zirnbauer type, det(m - U_p)^(-2 N_b), are Gaussian integrals over bosons on corners; the links enter linearly, so they are independent given the bosons, and the N_b flavours are exchangeable. This is the nearest gauge object to the exchangeable copies of Ding, Huang and Yang.
+- (a) Monotone: a crossing probability of flavour clusters. (b) Class: local-time conditions on corners. (c) Identity: moving crossing objects into a spare copy. (d) None. (e) Consumer: none for the Wilson weight.
+
+**C5. Diamagnetic gap of a direction layer (found again: "frustration bootstrap", `gap-brainstorm-max.md` L277; row 834).**
+- Object. Given all links of directions 1, 2, 3, the links of direction 4 are independent from layer to layer, and one layer is a three-dimensional O(4) model g(x) with bond energy beta Re (1/2) tr(A_mu(x) g(x+mu) B_mu(x)^(-1) g(x)^(-1)), A and B the two slices (Lemma LAYER). Its fluctuation operator at a maximiser is beta times the adjoint covariant Laplacian of the slice.
+- (a) Monotone: the conditional Poincare constant of the layer. (b) No class supremum: the comparison with the flat Laplacian is pointwise in the background (Kato), so Theorem D2 and Lemma SHEET do not bind its form. (c) Identity: the adjoint hopping operator has norm below its flat value by the local non-parallelism of the colour-magnetic fields (a bracket [F_p, F_p'] not zero); the gain is zero for an abelian group. (d) None. (e) Consumer: a two-level (direction blocks, then links) Poincare inequality.
+
+**C6. Centre clusters (found again in kind: `prior/gap-lit-flux.md`, `gap-brainstorm-max.md` on the plaquette random-cluster model).**
+- Object. U_l = sigma_l V_l with sigma_l = +-1. Given the SO(3) field, the signs are a Z_2 gauge theory with couplings (beta/2) abs(tr V_p), the gauge analogue of the embedded Ising signs of [B] Section 4. (a) Monotone: the probability that an open plaquette cluster spans a loop. (b) Class: coupling fields in [0, beta]. (c) Identity: Ginibre and the plaquette random-cluster representation. (d) None. (e) Consumer: R9 for centre-odd observables.
+
+**C7. Biharmonic frame field (a soft covariant gauge kernel).**
+- Object. Insert 1 = int d Omega rho_alpha(Omega given U), rho_alpha = exp(-(1/alpha) G(U^Omega))/N_alpha(U), G(V) = sum_x abs((div A(V))(x))^2, A(V)_l the su(2) part of V_l. This is an exact probability kernel, as the observation kernel of [15] (3.3) is. The dressed links V = U^Omega carry an honest global colour symmetry V -> k^(-1) V k. Its local version leaves the action and N_alpha unchanged and costs only through G: (1/alpha) times a covariant biharmonic form of k.
+- (a) Monotone: the twist stiffness of global colour, at most 1/alpha times a scale-free form. (b) Class: every background U and every pin; the frame is an O(4) field with fixed right twists, which is inside the class of [28] Section 3.1. (c) Identity: the bracket of global colour rotations; [B] Proposition 2.2 holds word for word, conditionally on U. (d) **The divergence-squared functional is scale-free in d = 4: its mode sum is sum abs(k)^(-4), a logarithm.** This is the 2D harmonic sum of R6, in four dimensions, exactly. (e) Consumer: to be found.
+
+**C8. Tree-transported translations (covariant moves with Jacobian one).**
+- Object. Fix a rooted spanning tree and an order of the links in which each tree path gamma_l comes before l. The map U_l -> exp(f_l Ad(U_(gamma_l)) c) U_l is triangular, so it keeps the Haar measure although it depends on the field (the argument of Lemma SHEET). It translates each link along a colour axis carried from the root by the field itself.
+- (a) Monotone: a Schrodinger-functional response, but with exact covariant Ward identities and no gauge fixing. (b) Class: Dirichlet cells with a radial tree. (c) Identity: the bracket of two transported axes. (d) Scale invariance of the Yang-Mills action. (e) Consumer: Proposition 2.1 analogue.

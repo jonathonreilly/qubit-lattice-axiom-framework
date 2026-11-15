@@ -57,3 +57,61 @@ HC-phys, LSI-traj-seed, Z-UNB or BDD-Delta. FINISH rows with (UNIT), (U1) or (U2
 (BDD-Delta) of row 720 Theorem ZD; (LSI-traj-seed) of row 970. Row 988 assigns this lemma to this lane, so the attack
 is not a duplicate; rows 720, 970, 975-986 are compared in Step 7.
 
+## Step 2. Approaches of my own, written before any route file or digest was read
+
+Notation of my own. Phi(L_1, L_2, L_3, L_4) := log Z on the periodic torus with these sides (fine lattice units, Wilson
+weight; by (EX) the unit weight gives the same number). f := - lim Phi/Vol_4, the free energy per site in infinite volume.
+
+  Y(L_1, ..., L_4) := Phi(L_1, ..., L_4) + f L_1 L_2 L_3 L_4     (total finite-size excess; symmetric in the four sides)
+  y(L) := Y(L, L, L, L)                                           (excess of the hypercubic torus)
+
+What I use about the object: in each direction mu the torus sum is Tr T_mu^(L_mu) with T_mu >= 0 (Wilson transfer
+operator on the gauge-invariant space of the cross-section; positivity is Osterwalder-Seiler / Luscher, RECALLED).
+
+**Approach A (hypercube reduction).** For A >= 0 trace class, Tr A^k <= (Tr A)^k. So Phi(.., k L_mu, ..) <= k Phi(.., L_mu, ..)
+in each direction. Consequences, each one line (written out and checked in Step 4):
+ (A1) Y >= 0, and Y(.., k L_mu, ..) <= k Y(.., L_mu, ..).
+ (A2) X(t; B) <= Y(B, t), because E_0(B) <= f |B|.
+ (A3) X(t; B) <= (|B|/t^3) y(t) when the three sides of B are multiples of t.
+ (A4) y(L) = sum over j >= 0 of 16^(-j) d(2^j L), d(L) := Phi(L^4) - Phi((2L)^4)/16 >= 0 (one-doubling defect).
+So the seed X(ell; cube of side 2 ell) <= log(1 + s_*) follows from ONE number: y(ell) <= (1/8) log(1 + s_*).
+Only hypercubic tori occur, which are the tori of the account (this would answer (PQ-EX) of row 982 4.1).
+Extensivity of the state count, which the gap alone does not give (Lemma COUNT), is here a consequence of (A3).
+Crux lemma: (Y-SEED) y(L_*) <= eps_* at one L_*, uniformly in the cutoff.
+Expected behaviour (ARGUED, not proved): gapped phase with one vacuum y -> 0 exponentially; free photon y -> a positive
+constant (Casimir energy of the 4-torus is scale free); deconfined finite group y -> log of the number of torus vacua.
+So y is an order parameter for "massive with one vacuum", and the tests can act on its value.
+
+**Approach B (twisted, flux-projected seed at weak coupling, then a marginal engine).** In a box with a 't Hooft twist
+m != 0 there is no toron valley. Perturbation theory at small running coupling g(L) has a gap of order 1/L in the sector
+e.m = 0. So a seed-like inequality X^(m, e.m = 0)(c L; L^3) <= small is within reach of the small-coupling RG at L << xi.
+Crux lemma: an engine that carries a twisted seed across the scale xi. It must use Z_m/Z_0 -> 1 (vortex free energy),
+or else it would prove (U2) for frozen Q_8, where the twisted sector is gapped at all scales and (U2) is false.
+In step-scaling words the crux is a monotone law for r(L) = Z_m(L^4)/Z_0(L^4), a nonperturbative form of asymptotic freedom.
+
+**Approach C (curvature of the orbit space).** In the ground-state representation H - E_0 is the Dirichlet operator of
+nu = Omega^2 on G^E/G^V. O'Neill's formula adds (3/4)|[X, Y]^V|^2 to the sectional curvature of the quotient. The term
+is zero for an abelian group and absent for a finite group, so it has the right sensitivity for the U(1), Q_8, 2T tests.
+Crux lemma: Ric_quotient + Hess(-2 log Omega) >= rho > 0 in an averaged sense.
+My own estimate before reading: the O'Neill term is bounded by the Hilbert-Schmidt norm of ad_X, of order |X|^2 in
+lattice units, with no factor beta. The Hessian of the action has negative directions of order beta. So the pointwise
+criterion fails for beta of order one or more, and an averaged form is what row 977 Theorem D2 speaks about (Step 3).
+
+**Approach D (purity, two replicas).** Tr rho_t^2 = Z(2t)/Z(t)^2 for the thermal state rho_t. With D(t) := log Z(t) -
+(1/2) log Z(2t): D <= X <= 2 D (since X(2t) <= X(t)). So (U2) is decay of the Renyi-2 entropy of the thermal state from an
+extensive value. In four directions the same object is d(L) of (A4). Crux lemma: an upper bound on the "gluing cost"
+Z(L^4)^16/Z((2L)^4). Chessboard estimates give only the lower bound 1. Jensen gives a bound of the order of the
+boundary action, beta L^3. So D has no route to smallness of its own; it is a form of A.
+
+**Approach E (operator comparison).** If H >= H' then Tr e^(-tH) <= Tr e^(-tH'). Golden-Thompson and a trial state give
+X(t) <= log Tr(e^(-tK) e^(-tV)) + t <psi, H psi>. Both sides are extensive and X is their small difference, so any
+comparison loses a constant per site. Fails at once: no crux lemma.
+
+**Choice.** A is the best: it has a proved core, it removes the "between" range of row 982 from the problem, and its
+crux is one number on the account's own tori. B is second: it names where a weak-coupling seed exists and what the
+engine would have to be. C third. D and E are recorded as dead.
+
+What I expect, said before the attack: (Y-SEED) at L_* near the correlation length is as hard as the gap itself.
+No approach above supplies the order-one input from soft arguments. The attack in Steps 4-6 proves the core of A and
+then tries three routes to (Y-SEED).
+

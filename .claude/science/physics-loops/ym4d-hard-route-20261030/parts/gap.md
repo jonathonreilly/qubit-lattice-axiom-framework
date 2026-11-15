@@ -110,9 +110,9 @@ obligation here carries `implication` or `discharged`; the lane's own check rows
   Row 998 8.1 (L690); check = row 999.
 - unchecked: what K7 and w_p bind, Proposition KF and Corollary KF1 -> rewording of the lead rule (W2). Row 998 8.2
   (L724); check = row 999.
-- unchecked (ARGUED): T3, small-field convexity short by beta_K/beta_0 -> lead rule row 982 N2. `gap-hcphys-max.md`
+- argued (row 1000 verdict HOLDS AFTER CORRECTION, `library/gap-d2-inputs.md` Step 2): T3, the account's level convexity (P1)-(P3) through Lemma TEL into Theorem BR is short by beta_K/beta_0 -> lead rule row 982 N2, which now reads in the narrower form of row 1000 Step 2. Was: `gap-hcphys-max.md`
   L99, L177; row 998 L577, L921-922; verdict = row 1000.
-- unchecked (ported, not rebuilt): reflection positivity at bisecting planes, and Frohlich-Simon-Spencer Gaussian
+- unchecked (rebuilt by hand in row 1000, `library/gap-d2-inputs.md` Lemmas RP, GD and Corollaries PT, IR; cross-provider check staged): reflection positivity at bisecting planes, and Frohlich-Simon-Spencer Gaussian
   domination with (G1)-(G4) -> Theorem D2 -> discard verdicts of rows 970, 977, 982 N2. Row 998 L923-929; rebuild =
   row 1000.
 - unchecked (lane, GIVEN the two lemmas above; row 979): Theorem D2 and Lemma SUB -> rule against supremum-over-tilt

@@ -106,7 +106,7 @@ obligation here carries `implication` or `discharged`; the lane's own check rows
 - gap: contraction of the Casimir free energy under doubling, (CAS) with theta < 1 on a bounded range -> (W), with the
   extensive base below. Row 708 `gap-mid-max.md` L64; row 998 L885-886; "(CAS) gives the seed; the converse is not
   proved" (ARGUED, row 998 L804-808).
-- gap: unit-chain functional inequalities (U1), (U2), (HC-phys) -> (W) with (TH). Row 982 `gap-hcphys-max.md` L135-163
+- gap: unit-chain functional inequalities (U1), (U2), (HC-phys) -> (W) with (TH). Cross-provider check of row 982 (`library/gap-hcphys-check-astra.md` L93): U1 implies U2 HOLDS; the claimed deduction of the pointwise U3 from the integrated decay FAILS. Row 982 `gap-hcphys-max.md` L135-163
   (corrected by row 984); stronger than the target (row 998 L665).
 - gap: an even step, (EV-STEP) -> the even-sector statement (G_ev) of row 731. Row 998 L664, L676.
 - unchecked: extensive base (TH) given the account and (DET) -> (CAS) route. Row 978 `gap-ladder-max.md` L150; row 998

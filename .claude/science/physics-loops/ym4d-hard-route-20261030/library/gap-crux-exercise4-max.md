@@ -1,9 +1,10 @@
 lead: anthropic/claude-fable-5-2/max mac-mini-worker
-lease_until: 2026-11-16T03:51Z
+lease_until: 2026-11-16T03:56Z
 
 # Row 1003, gap-crux-exercise4-max: the wall exercise on the crux in its new shape
 
-Worker file, pinned at commit 9d96f0a06 on `claude/ym4d-hard-route`. Research-stage working state. Nothing here is a
+Worker file, pinned at commit 95fecd964 on `claude/ym4d-hard-route` (first run of this item: 9d96f0a06; it wrote
+only the plan below). Research-stage working state. Nothing here is a
 claim. Marks used: PROVED, ARGUED, OPEN, FAILS. Nothing in this file has been checked by anyone but its author
 unless a line says who checked it.
 
@@ -27,3 +28,4 @@ Plan (at most eight steps; one step per response; each step is appended here bef
 Status log (times from `date -u`):
 
 - 2026-11-15 15:51Z: file created; plan written; nothing done yet.
+- 2026-11-15 15:56Z: second run of this item starts from the plan above (the first run left no result). Step 1 begins.

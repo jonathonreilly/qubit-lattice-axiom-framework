@@ -7,20 +7,18 @@ Queue row 1017 of `FINISH.md`, read at commit 2cdb35e78. Worker: Claude Fable 5.
 
 This is research-stage working state. It grants no status. Marks used: PROVED (every step written here, by hand), ARGUED (argument given, one named step not written out), OPEN, FAILS (explicit counterexample or failing step).
 
-## Plan (at most eight steps; one step per response; each step is appended before the next starts)
+**Nothing in this file is checked by another model.** The list "what this run did not cover" is in Section 8.8. The exercise skill (main commit 8b11ae2bb9) was followed as Section 2.1 says; `GOAL.md` and the FINISH rules replace the framework refresher read, because this is a standalone proof target.
 
-1. **Read and pin.** FINISH rules; `parts/gap.md` (Corollary Z4, Theorem ZD-c, the test table); rows 1002, 1011, 1013 and their notes; grep the lane for earlier compactness, limit-point and rigidity attempts ((N) of row 978, limit points of effective actions, `library/gap-ladder-max.md`, `library/gap-crux-fp.md`). Duplicate-attack check against `library/open-core.md` and the FINISH rows. Output: the exact statements this note reads, with file and line.
-2. **Exercise skill and literature lens.** Fetch the exercise skill at main commit 8b11ae2bb9 into a new folder under /tmp, follow it. Literature: Kenig-Merle concentration-compactness and rigidity; limits of lattice gauge measures; generalized symmetries; what is published and what each source proves.
-3. **Task (1), the compactness step.** State it exactly: topology, what is kept, what can be lost. Test it against the no-rigidity models first (Lemma PT, Proposition NP, the five-dimensional test of `library/gap-crux-fp.md`, a product with a massless factor).
-4. **Task (2), the rigidity statement.** State it exactly. Test it against compact U(1) (it must fail there), frozen Q_8 and 2T.
-5. **Task (3), first surviving piece.** Prove it by hand, or build the counterexample.
-6. **Task (3) continued** if step 5 grows long, or the second surviving piece.
-7. **Task (4), the consumer.** Which form of (W) or of the seed the contradiction yields; what it changes in `parts/gap.md`.
-8. **Verdict table and RESULT line.**
+## Status block (one line per step of the plan; kept current)
 
-## Step log
-
-(Each step below is appended when it is finished. A step that stops early says where it stopped.)
+1. **Read and pin: done (Section 1).** The statements read are pinned by file and line. Earlier forms found again: crux lemma (N) of row 978, Route 3 of row 988, the sentence on fixed points of the doubling map in row 708, item 29 of the second brainstorm. No Kenig-Merle architecture was on record. No duplicate in `library/open-core.md`.
+2. **Exercise skill and literature lens: done (Section 2).** Fourteen arXiv records read at abstract level. Known escape for the symmetry seed: emergent one-form symmetries are exact. No published compactness-and-rigidity argument for a lattice gauge theory was found (within the stated scope).
+3. **Task 1, the compactness step: done (Section 3).** PROVED by hand, unchecked: Lemma UF, Theorem CE (a limit object exists; it keeps positivity in four directions, the exchange of axes, the engine and the centre grading; it loses the ultraviolet data), Proposition OM, Theorem CR ((W) is equivalent to "no uniformly recurrent critical element", given (BDD-Delta); no rate is needed). Test: FAILS as a route to rigidity on torus data (Proposition NR: the constants log m are critical elements; Lemma PT-inf: products are absorbed and seeded factors are forgotten).
+4. **Task 2, the rigidity statement: done (Section 4).** The exact statement is (LIOU); it is target-equivalent. Seed (a) FAILS in its mechanism (finite clock Z_N, cited). Seed (b) is empty in the blow-down form (Proposition SI, PROVED) and target-equivalent or failing in the two-ended forms. Seed (c) stops at the missing object of rows 1011 and 1013 (not attacked).
+5. **Task 3, the first surviving piece: done (Section 5).** The compactness step is the piece that survives; it is proved. The rigidity half was tried four ways and stops at the one lemma (LIOU). Corollary TRI: seed, or unbounded Casimir free energy, or a uniformly recurrent critical element.
+6. **Second pass: done (Section 6).** Lemma LV added; one definition corrected. Reading: in the Kenig-Merle picture SU(2) is a problem above the threshold.
+7. **Task 4, the consumer: done (Section 7).** The contradiction would yield (PHYS-SEED), consumed by Theorem ZD-c and Corollary S3'. It does not yield (BDD-Delta). Proposed changes to `parts/gap.md` are listed for the lead.
+8. **Report and RESULT: done (Section 8 and the last line).**
 
 ## 1. Step 1 result: what was read, what is pinned, what was found again
 
@@ -193,7 +191,7 @@ The same bound holds for the limit levels (each partial sum of the limit series 
 
 Step 4, the thermal sums. S^(i)(T; B) = exp(Delta^(i)(T, B) + T e_0^(i)(B)) - 1 converges to exp(Delta_*(T, B) + T e_0^*(B)) - 1 = S_*(T; B). So every non-strict inequality between finitely many values of Delta, S, e_0, e_1 that holds for each datum holds in the limit: (c). The three examples are A2, Theorem S, and Proposition Delta at b = 2a.
 
-Step 5, (d). By (H2) and Step 4, s_*(b) >= 1/5041. By (H1), D_*(b) <= D_0. For each datum, Proposition Delta gives S(a; (2a)^3) <= exp(8 D(a)) - 1, so (H2) gives exp(8 D^(i)(b/2)) - 1 >= 1/5041 at every scale, and D_* >= d_min. For each datum, Lemma Z with T_0 = b/4 and T = b/2 gives S(b/2; b^3) <= exp(64 D(b/4) - (b/4) m(b^3)). With (H2): (b/4) m(b^3) <= 64 D(b/4) + log 5041, and 4 log 5041 < 34.11. Since z^(i)(b) = b (e_1^(i) - e_0^(i)) converges to z_*(b), the bound passes to the limit; in particular e_1^* is finite on cubes.
+Step 5, (d). By (H2) and Step 4, s_*(b) >= 1/5041. By (H1), D_*(b) <= D_0. Proposition Delta at an integer ratio is two lines: log(1 + S(a; b^3)) = Delta(a, b, b, b) + a E_0(b^3) <= Delta(a, b, b, b) <= (b/a)^3 D(a), by E_0 <= 0 and A2. So for each datum S(a; (2a)^3) <= exp(8 D(a)) - 1, so (H2) gives exp(8 D^(i)(b/2)) - 1 >= 1/5041 at every scale, and D_* >= d_min. For each datum, Lemma Z with T_0 = b/4 and T = b/2 gives S(b/2; b^3) <= exp(64 D(b/4) - (b/4) m(b^3)). With (H2): (b/4) m(b^3) <= 64 D(b/4) + log 5041, and 4 log 5041 < 34.11. Since z^(i)(b) = b (e_1^(i) - e_0^(i)) converges to z_*(b), the bound passes to the limit; in particular e_1^* is finite on cubes.
 
 Step 6, (e). The centre flips commute with T_B, so the levels can be listed with signs: Z^(1 nu)(k, B) = sum over r of eps_r^nu lambda_r^k, eps_0^nu = +1 (A4). The quotients lie in (0, 1] and the signs in a finite set, so a further diagonal subsequence makes them converge. The proof of Step 3 applies to the signed series, because its tail is bounded by the unsigned tail. QED
 
@@ -294,7 +292,7 @@ By Theorem CR, (LIOU) is equivalent to (W) given (BDD-Delta). Its tests, in the 
 | Compact U(1), Villain, beta_j -> infinity | contains a photon limit, if D is bounded | no seed: A7 (published, recalled; lane row 786 for the Langevin form); bounded D: BELIEF (`gap-phys-seed.md` L336) | fails, as it must | the group is not abelian |
 | Frozen Z_2 at large beta | the constant log 8 | THM, lane (Peierls), recalled here | fails | the group is connected (for the flux half) |
 | Frozen Q_8, 2T at large beta | constants log m, m >= 2 the number of degenerate flat states | frozen limit: check 884 (`parts/gap.md` L199); order one: BELIEF | fails | the group is connected and not abelian |
-| **Finite clock Z_N, Villain, N = 16384, beta = 2000** (new in this lane as a comparison model) | contains a massless limit (if D is bounded) | repository note on main, `docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md` (read here: its claim scope and status lines only; "proposed_retained", "Independent review is pending"); method of Frohlich and Spencer, CMP 83 (1982) 411-454 (bibliographic record confirmed by Crossref; abstract not available; recalled) | fails | see 4.3, seed (a) |
+| **Finite clock Z_N, Villain, N = 16384, beta = 2000** (new in this lane as a comparison model) | contains a massless limit (if D is bounded) | repository note on main, `docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md` (read here: its front matter and Section 1, the statement; no proof of it was read; its status lines say "proposed_retained", "Independent review is pending"); method of Frohlich and Spencer, CMP 83 (1982) 411-454 (bibliographic record confirmed by Crossref; abstract not available; recalled) | fails | see 4.3, seed (a) |
 | Product of a family with the photon or with A_(m,eps) | the sum (Lemma PT-inf) | PROVED given the factor | fails | the whole state space |
 | A_(m,eps_j), eps_j -> 0 | the constant log m | PROVED (3.7) | fails | not a gauge model; it shows the engine's axioms alone allow critical elements |
 | SU(2) Wilson in five dimensions, weak coupling | not empty | BELIEF (A17) | fails | the dimension |
@@ -308,8 +306,8 @@ No row of this table is a family with first-passage data of pure SU(2) and a non
 **Seed (a), generalized symmetries.** The mechanism proposed: a photon-like critical element carries a continuous magnetic one-form symmetry; the lattice theory has none when pi_1 of the gauge group is trivial; so the symmetry would have to emerge exactly; the centre Z_2 must act on the limit.
 
 - *What is proved here.* The centre does act on every critical element: Theorem CE (e), a Z_2^3 grading of the levels with an even vacuum. This is kept. It excludes nothing: the constants log m carry such gradings (frozen Z_2: all eight sign patterns, one level each), and so does the photon limit of a U(1) theory with its Z_2 subgroup.
-- *The mechanism as a statement.* (R1) "A four-dimensional lattice gauge theory of the class whose gauge group has trivial pi_1 and finite centre has no critical element with a massless vector."
-- *Test.* **(R1) is false.** The finite clock gauge theory Z_N has a discrete gauge group, so pi_1 is trivial; its centre is finite; it has no continuous symmetry of any form on the lattice; and for large N it has a massless phase (the repository note above; Frohlich and Spencer 1982, whose title names the effect: "symmetry restoration"). So a continuous one-form symmetry emerges in a model where the lattice has none. Frozen Q_8 and 2T do not test (R1) (their limits have no massless vector); Z_N does. Mark: FAILS, at the grade of its sources (a published theorem, recalled, and an unaudited repository note; not rebuilt here).
+- *The mechanism as a statement.* (R1) "A four-dimensional lattice gauge theory of the class whose gauge group has trivial pi_1 and finite centre has no massless phase: no coupling at which its infinite-volume limits cluster and have a gapless transfer sector."
+- *Test.* **(R1) is false.** The finite clock gauge theory Z_N has a discrete gauge group, so pi_1 is trivial; its centre is finite; it has no continuous symmetry of any form on the lattice; and for large N it has a massless phase. The repository note above states it for the Villain weight at beta = 2000, N = 16384: "clustering but nonsummable bounded plaquette-score correlations", "Every local subsequential limit has a gapless observable OS transfer sector". The method is that of Frohlich and Spencer 1982, whose title names the effect: "symmetry restoration". By `library/gap-seed-limit.md` (a seed gives exponential clustering of every limit state) such a model has no seed, so its limit set is not empty whenever its Casimir free energy is bounded. So a continuous one-form symmetry emerges in a model where the lattice has none. Frozen Q_8 and 2T do not test (R1) (their limits have no massless vector); Z_N does. Mark: FAILS, at the grade of its sources (a published theorem, recalled, and an unaudited repository note; not rebuilt here).
 - *The published picture agrees.* Emergent higher-form symmetries are exact at low energy and are "robust to arbitrary local UV perturbations" (Pace and Wen, A12). So "it would have to emerge exactly" is the generic case, not an obstruction.
 - *What is left of the seed.* If the gauge group is also required to be connected, (R1) becomes a statement about SU(N) and its covering groups only. No comparison model of the class refutes it, and no mechanism proves it: the argument from pi_1 was the mechanism, and it is the part that failed. With adjoint matter the connected form is believed false (A16), so a proof would have to use the absence of matter. Mark for the connected form: OPEN, target-equivalent, no mechanism.
 
@@ -366,7 +364,7 @@ For Wilson SU(2) on the account's trajectory this says: the wall is the exclusio
 
 **Way 2, the centre grading and pi_1 (seed (a)).** The grading is kept and holds for the constants and for the photon. The step "trivial pi_1 forbids an emergent photon" is false for the finite clock model. With "connected" added, the statement has no mechanism left.
 
-**Way 3, a monotone that carries the ultraviolet data (seed (b), Remark MON).** A monotone Lambda would do two things: turn recurrent elements into Lambda-stationary ones (OM (e)), and pass one ultraviolet number to the limit. The engine has one exact monotone, Lemma K (d): the deficit kappa(b) of the ground state does not increase when **one** side b of the box grows and the other sides are fixed (`gap-crux-restate.md` L178). It is the reason Theorem S exists. It is a monotone for the stretch of one side. The blow-down doubles all four sides, and for that map the engine gives only D(2a) <= 16 D(a) (A2) and D(2a) = 16 D(a) - Phi(a). I checked the natural candidates against the photon picture: D, s, z and the slab coefficient are constant on a scale-invariant element, so none of them can be strictly monotone on the class; and any Lambda with Lambda(photon) below the SU(2) ultraviolet value is blind. No candidate on record is above. This is row 1002's result; nothing is added.
+**Way 3, a monotone that carries the ultraviolet data (seed (b), Remark MON).** A monotone Lambda would do two things: turn recurrent elements into Lambda-stationary ones (OM (e)), and pass one ultraviolet number to the limit. The engine has one exact monotone, Lemma K (d): the deficit kappa(b) of the ground state does not increase when **one** side b of the box grows and the other sides are fixed (`gap-crux-restate.md` L178). It is the reason Theorem S exists. It is a monotone for the stretch of one side. The blow-down doubles all four sides, and for that map the engine gives only D(2a) <= 16 D(a) (A2) and D(2a) = 16 D(a) - Phi(a). Two facts close this way for the abstract class. First, every continuous Lambda is constant along the orbit of a fixed element, and the constants log m are fixed, so no Lambda is strictly monotone on the critical elements of the class; a monotone can only be non-strict, and then it gives stationarity (OM (e)), not emptiness. Second, a non-strict monotone excludes a critical element only if the element lies above the ultraviolet value of Lambda (Remark MON), and for every monotone on record the photon lies below (row 1002). Nothing is added to row 1002 here.
 
 **Way 4, an enriched limit in which "generated by SU(2) alone" is kept (4.4).** It needs two statements, both open, neither attacked here:
 
@@ -384,4 +382,113 @@ Way 1 failed because the kept properties are those of the engine, and the engine
 ### 5.4 A reading from the two-dimensional proofs (reading; sources as read by rows 1007, 1009, 1010, not re-read here)
 
 The two-dimensional O(3) model is the case where the crux is now proved (OpenAI's posted, unrefereed texts; rows 1007-1010). Would this architecture have found that proof? The kept properties of a blow-down limit there are: the global O(3) symmetry, reflection positivity, the exchange of axes. A gapless O(3)-symmetric scale-invariant theory with these properties is believed to exist: the model with topological angle pi, whose infrared limit is the SU(2) level-one conformal theory (Haldane; Affleck; recalled, belief grade for a Euclidean lattice model with these positivity properties). If that is right, soft rigidity fails in two dimensions as well, in the same class. The posted proofs do not argue on a limit. They use a class of finite cells with all bond strengths in [0, b] and an inequality with an explicit gain per scale (row 1009). So the case that was solved was solved by a quantitative step on a class closed under conditioning, and not by a Liouville theorem. This supports the lane's sentence that the missing object in four dimensions is the short step, and it counts against expecting the rigidity half of this architecture to be easier than the wall.
+
+## 6. Step 6 result: second pass on the proofs, and the architecture read against Kenig and Merle
+
+### 6.1 Second pass (same session, so not a check)
+
+I re-derived the steps of Section 3 once more after writing them. Two points were added or corrected in place: the definition of an admissible sequence now asks j_i -> infinity (without it, one lattice model of the family with no seed would make Omega non-empty although (PHYS-SEED) holds for large j); Proposition NR now names the class exactly. One point is added here.
+
+**Lemma LV (the levels are functions of the limit; PROVED).** Let sum over r of exp(- T e_r) = sum over r of exp(- T e'_r) < infinity for every T in DD, with both lists non-decreasing and with finitely many entries below each bound. Then e_r = e'_r for all r. So s_*, z_* and the levels are determined by Delta_*, and on Omega they are continuous for pointwise convergence.
+
+Proof. Multiply by exp(T e_0) and let T = 2^i grow: the left side tends to the multiplicity of e_0, and the right side tends to 0, to the multiplicity of e'_0, or to infinity, as e'_0 is above, equal to, or below e_0. So the lowest levels and their multiplicities agree. Subtract them and repeat. Continuity: along a convergent sequence in Omega the levels are bounded as in Step 1 of Theorem CE, every subsequence has a subsequence along which they converge, and by Step 3 and the uniqueness just proved the limit is the list of the limit datum. QED
+
+So Proposition OM (c) and (e) and Theorem CR (5) apply to Lambda = s_*(1) and Lambda = z_*(1) as well as to D_*(1).
+
+### 6.2 Where SU(2) sits in the Kenig-Merle picture (reading)
+
+Kenig and Merle prove their theorem below a threshold, the energy of the ground state W. Their rigidity step uses that the data lie below W, through a coercive virial identity. Here the role of W is played by the smallest critical element. In every count on record (the a-function, the thermal count of row 1002) the ultraviolet value of SU(2) is that of three gluons, and the smallest massless object, one photon, lies below it. In their terms SU(2) is a problem above the threshold. Above the threshold their method gives no theorem, and the known results for waves are of another kind (a resolution into solitons and radiation). So the architecture, moved to this problem, lacks the two inputs that carry it there: an order (a monotone under which the trajectory stays below every critical element), and an equation for the limit object with a sign (the virial identity). Theorem CE supplies only the third input, compactness. This is the reason, in one paragraph, why the exercise ends at a restatement.
+
+## 7. Step 7 result (Task 4): the consumer
+
+- **What the contradiction would yield.** If (LIOU) held, Theorem CR gives (PHYS-SEED) at Theorem S's threshold: one size l of P with S_j(l/(2 a_j); (l/a_j)^3) below 1/5041 for all large j. The consumer is Theorem ZD-c (`gap-phys-seed.md` L311-320), which turns it into (W), and Corollary S3' (`gap-crux-restate.md` L217), which gives the gap of every cube of side at least l, at least log(1/q')/(l/2) in physical units, uniformly in the cutoff.
+- **What it does not yield.** (BDD-Delta). The architecture works inside it. By Corollary TRI the wall is "(BDD-Delta) and (LIOU)". This is Theorem ZD-c's "(BDD-Delta) and (Z-UNB)" with (Z-UNB) replaced by its Liouville form.
+- **In the form of the seed that row 708 calls (CAS).** Theorem CR (5) with Lambda = D: (W) holds if and only if no critical element has D_*(2) >= D_*(1). The lane had "(CAS) gives the seed; the converse is not proved" (row 998 L804-808, ARGUED). The qualitative form is an equivalence, and it asks for no theta. It is still target-equivalent.
+- **Which form of the seed.** The periodic seed, flux sectors included (the critical elements carry the centre grading, and a limit with light flux sectors is a critical element). An even-sector form would need the engine of row 731, which has no symmetric form (row 998's Remark 2.A); not done here.
+- **For the T0 chain.** Nothing changes. The limit of this note is a blow-down of torus data; it is not a continuum limit of fields, and it does not touch the account's packages.
+
+**Proposed changes to `parts/gap.md` (for the lead; I do not edit that file).**
+
+1. "The exact price": add "(W) holds if and only if (BDD-Delta) holds and the trajectory has no uniformly recurrent critical element; equivalently no critical element on which the Casimir free energy fails to fall on a doubling (Theorem CR, row 1017, unchecked). No rate is needed."
+2. Test table: add the row "Finite clock Z_N, Villain, N = 16384, beta = 2000: a massless phase in a model with a finite gauge group; binds every argument from discreteness of the symmetry or from pi_1; repository note on main (unaudited), Frohlich and Spencer 1982 (recalled)".
+3. Route registry: add the family below.
+
+| Route | Object | Mechanism | Terminal obligation | Strength | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| RH, compactness and rigidity | blow-down limits of torus data (eternal data on dyadic quadruples, with the centre grading) | compactness (Theorem CE), then a Liouville lemma | (LIOU) | target-equivalent given (BDD-Delta) (Theorem CR) | blocked-equivalent | Theorem CE, Propositions OM, NR, SI; Lemma PT-inf (this file, unchecked) | (i) a property that holds on the SU(2) trajectory at all large scales, is kept by limits, and fails for the constants log m, the photon limit and their sums; or (ii) a monotone for the doubling of all four sides whose ultraviolet value for SU(2) lies below its value on every critical element; or (iii) the short step of rows 1011 and 1013, which would give Proposition W a limit form |
+
+## 8. Step 8: report (skill step 9)
+
+### 8.1 The wall, in plain words
+
+The lane needs one inequality at one box size for SU(2): the lowest excitation energy of a periodic box, times the side of the box, must exceed a fixed number. If it fails at every size, the theory looks gapless at every scale. Every exact tool of the lane also holds for theories that are gapless, so none can prove the inequality. This row tested one more way to prove it: suppose it fails, pass to a limit that looks the same at all scales, and show that SU(2) cannot have such a limit.
+
+### 8.2 What the exercise found
+
+1. The first half works and is now a theorem of the lane (proved by Claude Fable 5.2 by hand, not yet checked): if the inequality fails at every size and the Casimir free energy stays bounded, a limit object exists. It is defined at all dyadic scales, it has no seed and a bounded gap-times-size at every scale, it keeps positivity in all four directions and the centre symmetry, and it can be taken almost periodic in scale (Theorem CE, Proposition OM).
+2. The wall is equivalent to the absence of such an object (Theorem CR). The gain is one of form: the missing inequality needs no rate, only strictness on each limit object.
+3. The second half does not work by soft means. The limit keeps nothing that tells SU(2) from a model with two vacua or from a photon: explicit limit objects exist (the constants log m, PROVED), products are absorbed, and the limit forgets the ultraviolet data of the trajectory (Propositions NR and SI, Lemma PT-inf).
+4. The three seeds of the row were tested. The argument from pi_1 fails: a finite clock gauge model has a massless phase with no continuous symmetry on the lattice (cited). Asymptotic freedom cannot be a property of the limit; it could enter only through a monotone, and the known monotones are blind. The non-abelian Ward identity has no limit form without the short step that rows 1011 and 1013 name as missing.
+5. So this run produced a proved compactness theorem, an exact restatement of the wall, and a set of counterexamples to soft rigidity. It did not pass the wall and it found no mechanism for the rigidity half. Read against Kenig and Merle, SU(2) is a problem above the threshold, where their method has no theorem (6.2, reading).
+
+### 8.3 Filters corrected
+
+- No discard test of the lane changed. Lemma PT, Proposition NP and the five-dimensional test bind this architecture as the lane's rule W2 says (3.7).
+- The verdict on (CAS) of row 708 ("it restates the seed in steps") stands and is sharpened: the rate theta is not needed, and the objects to exclude are the uniformly recurrent critical elements, not only fixed points (Theorem CR, Proposition OM). Unchecked.
+- The row's first seed is corrected: "pi_1(SU(2)) = 0, so the magnetic symmetry would have to emerge exactly" is not an obstruction; exact emergence occurs in a model with a finite gauge group (4.3).
+
+### 8.4 Routes worth doing
+
+None on the rigidity half. One piece of bookkeeping has value: the check of Section 3 (W1 below), because Theorem CR changes the wording of the exact price and removes the rate from (CAS).
+
+### 8.5 What not to do next
+
+- Another row on a soft exclusion of the gapless branch (rows 988 Route 3 and this row end at the same place, now with counterexamples).
+- A row on generalized symmetries as a rigidity mechanism for (W): the centre grading is kept and excludes nothing; emergence is not an obstruction.
+- A row on an enriched limit (block variables, completeness) before the short step exists: it needs (COMPL), an ultraviolet statement at order-one coupling, and then the wall again (5.3, Way 4).
+- A search for a monotone under the doubling of all four sides by class-wide tools (already on the lane's list, `parts/gap.md` L70-72; the constants log m show that no strict one exists in the class).
+
+### 8.6 The exact price
+
+(W) holds if and only if (BDD-Delta) holds and the trajectory has no uniformly recurrent critical element (Theorem CR with Theorem ZD-c; proved here given the lane's inputs, unchecked). In the Liouville form the order-one input has no number in it. It is not weaker than the wall.
+
+### 8.7 Work items
+
+**W1, check (a model that did not write this file; high effort).** Check line by line `library/gap-compact-rigidity-max.md` Sections 3.1-3.7 and 6.1: Lemma UF, Theorem CE (i), (ii)(a)-(e), Proposition OM (a)-(e), Theorem CR, the data A_(m,eps), Lemma PT-inf, Proposition NR, Proposition SI (4.1), Lemma LV, Corollary TRI (5.1). Read first: `gap-crux-restate.md` L29-45 and L170-203 (Lemma A, Theorem S); `gap-phys-seed.md` L253-257 (Lemma Z) and L283-294 (Lemma Z3), L311-323 (Theorem ZD-c, Corollary Z4); `gap-mid-max.md` L63 (Proposition Delta); `gap-crux-exercise3-max.md` L690-713 (Lemma PT). Test first the six points listed in 5.1. Then judge: (i) is Theorem CR's equivalence right as stated, with (BDD-Delta) as the only extra hypothesis; (ii) is the admissible-sequence definition the right one for a trajectory (j_i -> infinity); (iii) does Lemma PT-inf (ii) need more than Lemma Z3. Report the first failing step, or none. Stop rule: no new attack. Output `library/gap-compact-rigidity-check.md`.
+
+**W2, bookkeeping (the lead).** If W1 passes: place the three proposed changes of Section 7 in `parts/gap.md`. Before the test-table row is used as a discard test, read the finite clock note's proofs (Sections 2-11) and say whether its model is in the engine's class (positivity of the transfer operator for the Villain weight) and whether its Casimir free energy is bounded; this file read only its front matter and its statement (Section 1).
+
+**Not proposed.** (1) A proof row on (LIOU): it is the wall. (2) A row on (COMPL). (3) A row that computes the limit object of the photon or of the finite clock model: it would only raise a comparison model from "given" to "proved". (4) A numeric illustration of Theorem CE in the two-dimensional Ising model: the theorem is elementary and a run would decide nothing.
+
+### 8.8 Appendix
+
+**Marks.**
+
+| Statement | Where | Mark | Rests on |
+|---|---|---|---|
+| Lemma UF | 3.2 | PROVED by hand, unchecked | Theorem S (checked rows 698, 699) |
+| Theorem CE | 3.3 | PROVED by hand, unchecked | A1, A2, A4; Proposition Delta, Lemma Z (lane) |
+| Proposition OM | 3.5 | PROVED by hand, unchecked | Theorem CE; Zorn's lemma |
+| Theorem CR | 3.6 | PROVED GIVEN Theorem ZD-c (lane check row 727), unchecked | 3.2-3.5 |
+| The data A_(m,eps) and the critical elements log m | 3.7 | PROVED by hand (an argued counterexample in the skill's words) | definitions |
+| Lemma PT-inf | 3.7 | PROVED GIVEN Lemma PT (check 999), Lemma Z3 | Theorem CE |
+| Proposition NR | 3.7 | PROVED | the data A_(m,eps) |
+| Proposition SI | 4.1 | PROVED | OM (a) |
+| Remark MON | 4.1 | ARGUED (the continuum object at fixed sizes is assumed) | - |
+| (R1) is false | 4.3 | FAILS, at the grade of its sources (published theorem recalled; repository note unaudited, statement read, proofs not read) | Frohlich and Spencer 1982; the finite clock note on main |
+| (R2-blow) is true and empty | 4.3 | PROVED | Proposition SI, Theorem CE (d) |
+| (R2-two), second form | 4.3 | FAILS given the U(1) theorem | Lemma PT |
+| (R3) | 4.3 | OPEN, not attacked; match: rows 1011, 1013 | - |
+| Compactness of block-variable laws; kept invariances | 4.4 | PROVED for every block map with (B1)-(B4); reflection positivity ARGUED | compactness of SU(2) |
+| Lemma LV, Corollary TRI | 6.1, 5.1 | PROVED by hand, unchecked | Theorem CE |
+| (LIOU), (BDD-Delta), (COMPL), (LIOU-c), (W) | - | OPEN | - |
+| 5.4, 6.2 | - | reading | - |
+
+**What this run did not cover.** No primary paper was read beyond abstracts (fourteen arXiv records); Frohlich and Spencer 1982, Gidas and Spruck 1981, Buchholz and Fredenhagen 1977 and the Seiberg-Witten and Georgi-Glashow facts are recalled. The finite clock note was read at its front matter and Section 1 (the statement) only; no proof of it was read, and it says itself that it proves no finite-cylinder gap limit. The account's TeX was not opened; A5 is taken from rows 720 and 978. Theorem SH, Proposition Delta, Lemma Z3 and Theorem ZD-c were used as the lane states them and were not re-derived (Lemma Z and the use of Proposition Delta at r = 2 were). The bodies of rows 1003, 1004, 1011, 1013 were read only at the statements cited. No numeric run was made; the numeric lock was never taken. No blind check of the plain version ran (no subagents). Rows 1014, 1015 and 1016 were not read (1015 and 1016 had no RESULT at the pin). The open PR branches were not searched; the repo search covered this folder at the pin and one file of `docs/` at HEAD.
+
+**Repo search (rule "Repo first").** Done in Step 1 for this folder (1.2, 1.3). Outside the folder: `git show HEAD:docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md` (found through row 786's file). `origin/main` is not a ref of this checkout, so main and the open PR branches (#10114, #10133, #10134, #10141, #10144) were not searched.
+
+**Credits.** Carlos Kenig and Frank Merle (the roadmap). Basilis Gidas and Joel Spruck (blow-up and Liouville, recalled). Jurg Frohlich and Thomas Spencer (massless phases of abelian and finite clock gauge theories); the author of the finite clock note on main. Detlev Buchholz and Rainer Verch (scaling limits by compactness). Yoh Tanimoto; Diego Hofman and Nabil Iqbal; Ethan Lake; Davide Gaiotto, Anton Kapustin, Nathan Seiberg and Brian Willett; Salvatore Pace and Xiao-Gang Wen; Edgar Shaghoulian; Zohar Komargodski and Adam Schwimmer; Markus Luty, Joseph Polchinski and Riccardo Rattazzi (the sources of 2.3 and 2.4). Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (the account: the trajectory, first passage, the bound A5; no proof of theirs is used). Tadeusz Balaban (the stability theorem behind A5). OpenAI (the two-dimensional proofs, through rows 1007-1010). Earlier rows of this target: 697, 699 (Theorem S, Lemma E', Corollary S3'), 708 ((CAS), Proposition Delta, the sentence on fixed points of the doubling map), 720 (Lemmas Z, Z3, Theorem ZD-c, Corollary Z4), 786 (the Villain U(1) statement), 978 (crux lemma (N)), 988 (Route 3), 998 (Lemma PT, the test table), 1002, 1003 (Proposition NP), 1011 (Proposition W, Lemma CEN), 1013; and the second brainstorm (item 29).
+
+**Strong words, read against what the run did.** "Theorem", "PROVED": by hand, by one model, unchecked, given the lane's inputs named in the table. "Equivalent" (Theorem CR): given (BDD-Delta) and Theorem ZD-c. "Theorem-grade" for the constants log m: the abstract data A_(m,eps) are proved here; their lattice realisations are recalled. "The limit keeps nothing that tells SU(2) from ...": for the torus data with the centre grading, which is the object of Theorem CE; an enriched object keeps the group (4.4). "No mechanism": none found in this run and none on record in the files read; not a proof that none exists. "Not found" in 2.4: within the stated scope.
 

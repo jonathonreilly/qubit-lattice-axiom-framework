@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/history_actuality_reproduces_the_readable_born_odds_and_which_way_complementarity_but_needs_a_tick_form_the_chiral_weighting_lacks_2026_10_23.py
+runner_sha256: b4c01ce683a3607fa2aadcde3e0252df99afd1a4e9326194c51e22bdb082e083
+input_fingerprint_sha256: 903183be27a1c82a5bb9e7c6fac2fde6d8acd4ced1b08043962db7334b87d474
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.02
+status: ok
+----- stdout -----
+PASS: A1 single-time mode partition decoheres and D(a,a) = Born exactly (any state)  [offdiag 0.0e+00]
+PASS: A2 the unrecorded fine two-time mode partition of this walk and sampled state does NOT decohere; D(a,a) not additive (prediction)  [max offdiag 0.098, marginal error 0.152]
+PASS: A3 CL-2 transport exists for the walk tick, Born marginals kept; its two-time joint is not D(a,a)  [LP min changes 2.0000, Sinkhorn cost 2.0000, marg err 2.1e-15, TV(J,Ddiag) 0.253]
+PASS: A4 pointer-recorded two-time partition decoheres exactly; D(a,a) = Born(pointer, mode) at t2  [offdiag 0.0e+00]
+PASS: A5 CL-2 plan on the recorded toy is a transport: finite, nonnegative, total mass 1, row sums = source odds pb1 (after the copy), column sums = target odds pb2 (t2), zero mass on zero elements of the tick, cost = LP optimum  [LP status 0, min 0.0e+00, |mass-1| 2.2e-16, row err 2.1e-15, col err 2.8e-17, forbidden mass 0.0e+00, cost 2.0000 vs LP 2.0000]
+PASS: A5b the copy is a permutation and the walk support never changes the pointer (moved mass 0); the plan aggregated by (source pointer, final mode) equals the sequential Born joint born_rb = diag D(a,a) of A4, so CL-2's readable (pointer, mode) joint = D(a,a)  [pointer change mass 0.0e+00; |agg - born_rb| 4.2e-17; |agg - diag D| 5.6e-17]
+PASS: A5c control: the A5/A5b assertions reject a zero plan (mass, marginals, cost and the Born joint fail) and the independent product plan pb1 x pb2 (correct marginals; zero elements of the tick, pointer changes and the Born joint fail)  [zero plan: |mass-1| 1.00, joint err 0.35; product plan: forbidden mass 0.687, pointer change 0.687, joint err 0.196]
+PASS: B1 which-way set {path t1, port t2}: |D(L o,R o)| = |<p0|p1>|/4 and visibility V = |<p0|p1>| (7 couplings)  [max dev 1.1e-16, 1.1e-16]
+PASS: B2 record (orthogonal pointer): decoheres, V = 0; no record (c = 1): |D_LR| = 1/4, path set inconsistent, V = 1  [offdiag 2e-17 / 0.25, V 1e-16 / 1.000]
+PASS: B3 read once / two readers: {path, port, pointer, reader} decoheres; disagreeing classes have weight 0; the record carries exactly H(path) = 1 bit, a second reading adds 0  [offdiag 1.5e-17, P(disagree) 2e-33, I = 1.000 bit]
+PASS: C1 coarse-graining the decohering B3 set onto the path keeps it decohering, and its diagonal = the t1 path odds (coarse-graining and marginal identity only; refinements need not decohere, see C2, C3)  [offdiag 0.0e+00, diag [0.5 0.5]]
+PASS: C2 erasure: {path t1, pointer t1'} decoheres if the history ends at t1'; after a coherent un-copy the specified refinements with a final port projection, {path t1, port t2} and {path t1, pointer t1' (Z), port t2}, do not decohere (|D| = 1/4)  [|D_LR| after erase 0.250; with pointer cut 0.250]
+PASS: C3 eraser: the refinement {pointer t1', port t2} with the pointer cut in Z or X at t1' fails (prediction 1/4 each); the port-only set shows the fringe restored (P(port 0) = 1)  [Z 0.250, X 0.250, P(o=0) 1.000]
+PASS: C2b counterexample (decisive control on C2/C3): after the coherent un-copy the coarser path-only single-time partition still decoheres, with the same full decoherence matrix as at t1, and {path t1, pointer t1'} extended by the un-copy without a further projection keeps its matrix; only the port refinement (C2) fails, so the record is not lost in every set  [path-only: |D_after - D_t1| 1.1e-16, offdiag 1.2e-32; path/pointer extended: |dD| 1.1e-16; port refinement offdiag 0.25]
+PASS: C2c control: a class-dependent operator (identity on class 0, X on the path qubit for class 1) is not a common unitary and breaks the identity of C2b (|D(0,1)| = 1/2)  [|D(0,1)| 0.500]
+PASS: C4 arrow is the boundary: pure ready pointer at the start -> records of the past only (I = 1, 0 bit); pure pointer at the end -> records of the future only (0, 1 bit)  [fw 1.00/0.00, rev 0.00/1.00]
+PASS: D1 vector-like overlap (antiperiodic tick): det(1+V) real, >= 0 on every background; an L x R pair of one charge is real too (positive history measure)  [max |Im/det| 6.1e-17, negatives 0, max |arg L x R| 1.8e-15]
+PASS: D2 chiral 3-4-5-0 weight at Q = 0 is complex: small nonzero phase at link noise 0.03 on 4x4 and 6x6 (prediction 1e-7..0.1; one noise level, so no dependence on roughness or size is tested)  [4x4: max|arg| 3.9e-05, 6x6: max|arg| 1.1e-04]
+PASS: D3 WB-phase gauge variation: single charge-5 L det varies, anomaly-free product less (first prediction; a later 10x threshold fails on 6x6)  [4x4: q5 4.6e-03, 3450 7.5e-06, ratio 610, 6x6: q5 2.5e-04, 3450 3.4e-05, ratio 7]
+PASS: D4 on the supplied smooth Q = 1 flux background flux_bg(6, 1) (6x6, uniform plaquette 2 pi/36): negative-mode counts shift by the charge (3+4 L zero modes vs 5 R), so that background's weight is 0 without fermion insertions  [Q 1, shifts {3: -3, 4: -4, 5: 5}, min |eig H| 0.530, max |plaquette| 0.175]
+PASS: D4b counterexample (decisive control on D4): on the rough Q = 1 background flux_bg(6, 1) + 0.4 N(0, 1) (default_rng(10124)) every negative-mode shift is 0 and the spectral gaps are not numerical zeros, so 'every Q = 1 gauge history has unbalanced zero modes' is false; no admissibility domain or index theorem is checked  [Q 1, shifts {3: 0, 4: 0, 5: 0}, min |eig H| q3 0.04083, q4 0.005131, q5 0.02413, max |plaquette| 1.893]
+PASS: D5 classes of Euclidean histories by a local flux record: chiral class weights complex (not probabilities); the tested mirror/square prescription |W|^2 (mirror added = vector-like) gives positive class weights (no claim about other positive reweightings)  [max class |arg| 2.71e-05]
+PASS: E1 two-site record (Bell state): every U x U* local basis is a decohering finest set at least surprise (H = 1 bit): least surprise does NOT fix the set  [H = [1. 1. 1. 1. 1.]]
+PASS: E2 three-site redundant record (GHZ): every least-surprise local basis found is the Z basis (tridecompositional uniqueness, supplied): the selector fixes the set  [11/12 starts reach H = 1; max tilt 3.4e-08; other minima H >= 2.00]
+PASS: E3 without site-locality the least-surprise partition is the state itself (H = 0): locality is the Record axiom's, not the selector's  [H = 6.4e-16]
+PASS: F1 CL-2 record counts per site = sum of single-time Born odds = diagonal D of the single-time sets (the gravity-source reading that would use this rests on a campaign note not in this repository; not checked)  [max z 0.60]
+Supplied: decoherence-functional rule (Gell-Mann-Hartle/Griffiths), coin angle, pointer couplings, m0=1, 3-4-5-0 content, WB phase convention (Narayanan-Neuberger), Elby-Bub uniqueness. Toys only.
+NOT CHECKED (historical reported inputs, not in this repository): overlap-from-walk (no tick form), overlap-colour/nonabelian (source of the chiral weighting), tick-fraction-beta (gravity source), info-accounting (read once).
+elapsed 3.5s, peak RSS 83 MB
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

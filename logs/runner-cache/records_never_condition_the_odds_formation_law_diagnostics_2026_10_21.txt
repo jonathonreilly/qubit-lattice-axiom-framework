@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/records_never_condition_the_odds_formation_law_diagnostics_2026_10_21.py
+runner_sha256: 4ea59c2600ecb3c97cf3f81b7d18d09375e3253ba4e54b2f4f266e2755253d2a
+input_fingerprint_sha256: 02d8224c15f8b84227fd92bd815314f3a9b76e0b3752a2b878d3628ed456a0fd
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.24
+status: ok
+----- stdout -----
+A. single walker: Born statistics and free drift
+[PASS] A1 exact equivariance (minimal switching plus conditional redraws at rate min(1, 2|E|), see G): flow image of the odds is the odds after 100 ticks  max|Q-P|=4.3e-16
+[PASS] A2 sampled relays match the Born histogram (chi2/dof)  chi2/dof=1.412 over 76 bins; Born spread 54.1 sites (ballistic, classical walk ~10)
+[PASS] A3 unconditioned odds keep the drift: exact <x> shift / (v T)  v=0.8926, ratio=0.9845
+[PASS] A4 relays carry the same drift  relay 351.79 vs odds 351.52 sites
+[PASS] A5 conditioning every tick (i) loses the drift  drift ratio 0.111
+[PASS] A6 conditioning at rate 2*eps (iii) loses about half the drift by T=400  rate 0.447/tick, drift ratio 0.466
+B. ideal pointer coupling: definite, agreeing outcomes
+[PASS] B1 pointer reading frequency is the Born weight  0.3024 vs 0.3
+[PASS] B2 joint switching: two readers never disagree  disagreement 0.0000
+[PASS] B3 marginal-only switching: readers disagree at 2p(1-p)  disagreement 0.4188 vs 0.42
+C. singlet: no signalling of outcomes, CHSH
+[PASS] C1 exact odds give CHSH 2 sqrt 2  S=2.828427
+[PASS] C2 relay readings violate CHSH  S_relays=2.841 (local bound 2)
+[PASS] C3 B outcome odds independent of A setting (and of A doing nothing)  P_B(up) spread 5.6e-17
+[PASS] C4 sampled B frequency independent of A setting  0.5060 vs 0.5006
+D. turn source of a distant relay under a remote measurement basis
+[PASS] D1 B position-direction odds at every tick independent of A (burn density unchanged)  max diff 5.6e-17
+[PASS] D2 expected B turns at its coupling tick DEPEND on A basis (signalling via CL-7 turn deposits)  none 0.0000, z 0.3536, x 0.0000; deposit -1 per 1D turn
+[PASS] D3 z-basis value equals sum over A branches of |change of B odds| = sin(pi/4)/2  0.353553
+E. interferometer: candidate keeps fringes; disjoint-support conditioning (iv) erases them
+[PASS] E1 candidate: exact fringe visibility 1  P_R(0)=1.000, P_R(pi)=0.000
+[PASS] E2 candidate relays reproduce the fringe  relays 1.000, 0.000
+[PASS] E3 (iv) conditioning on disjoint branches gives P_R = 1/2 at every phase (visibility 0)  P_R=0.500
+F. two free walkers crossing: conditioning when relays meet (ii) disturbs them
+[PASS] F1 candidate: free crossing leaves walker-1 momentum odds unchanged  TV=8.9e-17
+[PASS] F2 (ii) meeting-conditioning disturbs non-interacting walkers  met fraction 0.42, TV=0.303
+G. the redraw rule used in section A (relay_walk fresh=True)
+[PASS] G1 A1/A2 walker (one site start, theta = pi/4): the odds sit on alternating sublattices, so E_x = 0 at every block and no redraw ever fires; A1/A2 test minimal switching alone  odds-weighted mean redraw rate 0.0e+00 per relay-tick; max|Q-P| 4.3e-16
+[PASS] G2 A3/A4 packet (theta = 0.1, k0 = 0.2): redraws fire, and the exact flow image is the odds with them and without them (minimal switching alone)  odds-weighted mean redraw rate 0.450 per relay-tick; max|Q-P| no redraws 1.0e-15, conditional redraws 9.7e-16
+[PASS] G3 control: redraws from a uniform direction law instead of the conditional odds break it (the redraw keeps Born only because it draws from the conditional odds)  max|Q-P| uniform redraws 0.019
+[PASS] G4 A4 rerun with the redraws disabled: relays moved by minimal switching alone carry the same drift  relay 352.07 vs odds 351.52 sites (new sample)
+
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/records_born_navigation_map_check_2026_11_14.py
+runner_sha256: 31eb8b9e492047947474a99569d10ca3f583675c4fe3928bc56aedbc5c8e4dee
+input_fingerprint_sha256: c19137ef4315b666f64506aac8f05e50224951eb1d50d732610bf6803b30aae8
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+Navigation map check: records-born carried and logged notes
+==============================================================================
+[PASS] the map has 5 'Carried notes' sections, each naming one carried note and its source PR -- 5 sections, PRs [9873, 9893, 9930, 9995, 10054]
+[PASS] no carried note appears in two sections
+[PASS] each section quotes its carried note's current claim_scope verbatim -- 5 of 5 match
+[PASS] each section's Runner link is its carried note's own frontmatter runner -- 5 of 5 match
+[PASS] coverage: 5 carried and exactly the 9 logged source PRs, disjoint, = the 14 that the map's claim_scope states -- carried [9873, 9893, 9930, 9995, 10054]; logged [9866, 9867, 9869, 9871, 9885, 9886, 9887, 9970, 9989]; stated total 14
+[PASS] every repository link in the map resolves (on disk or in the checked-out commit) -- 14 links
+[PASS] control rejects mutant 1: a quotation with its last word dropped
+[PASS] control rejects mutant 2: the runner links of two sections swapped
+[PASS] control rejects mutant 3: one logged row removed
+
+TOTAL: PASS=9 FAIL=0
+Scope: the map's quotations, runner wiring, coverage and links. The carried notes' science is checked by their own runners; the logged notes and the campaign inputs named in the map are not checked here.
+
+----- stderr -----
+

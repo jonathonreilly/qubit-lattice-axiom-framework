@@ -3,7 +3,7 @@ lease_until: 2026-11-16T07:39Z
 
 # gap-global-reform-max (row 1016): an exact reformulation with a global non-abelian symmetry
 
-Status: FINISHED by the author at 20:35Z; see Section 8 and the RESULT line at the end. Research-stage working
+Status: FINISHED by the author at 20:41Z; see Section 8 and the RESULT line at the end. Research-stage working
 state. Nothing here grants status. No claim of a mass gap. Nothing in this file is checked by another model.
 Pinned at commit b9125417f of `claude/ym4d-hard-route`. Started 2026-11-15T19:39Z (`date -u`).
 Author: Anthropic, Claude Fable 5.2, max effort, one session on the Mac mini worker, no subagents.
@@ -14,7 +14,7 @@ ARGUED, OPEN, FAILS.
 **Status block.** Step 1 done: wall and contract. Step 2 done: blind pass and comparison. Steps 3-4 done: ten
 families, all FAIL condition (i); Lemmas AUX, HW, CEN+, REM, MC, Proposition LG, Identities HS1, HAM1 PROVED.
 Steps 5-6 done: tests; no survivor; the reopen condition corrected. Step 7 done: Theorem BH (homogeneous B')
-PROVED with Identity AV; two controls passed; condition (ii) FAILS pointwise. Step 8 done: report and RESULT.
+PROVED with Identity AV; two controls passed; condition (ii) FAILS plaquette by plaquette. Step 8 done: report and RESULT.
 
 **What this run did not cover.**
 - No blind check of the plain statement, and the kill passes were made by the writing session (no subagents).
@@ -59,7 +59,8 @@ PROVED with Identity AV; two controls passed; condition (ii) FAILS pointwise. St
 - 20:18Z step 4 written (Lemma CEN+, Lemma REM, Lemma MC, Identity HAM1; gauge fixings, Hamiltonian, comparisons: all FAIL).
 - 20:22Z steps 5 and 6 written (test table; no survivor for (i); the reopen condition corrected to rigid + charged pins + on the gauge-invariant algebra).
 - 20:25-20:26Z GUIDE control of the algebra of Theorem BH run under the numeric lock (two runs of 27 s; lock released); all four pre-registered readings pass.
-- 20:28Z step 7 written (Identity AV, Corollary AV2, Theorem BH, Lemma GT, Lemma SOFT; reopen (ii) FAILS pointwise).
+- 20:28Z step 7 written (Identity AV, Corollary AV2, Theorem BH, Lemma GT, Lemma SOFT; reopen (ii) FAILS plaquette by plaquette).
+- 20:40Z item 7.4 (a) corrected on re-reading: the summed form was overclaimed as PROVED; it is ARGUED.
 - 20:35Z step 8 written (report, registry, literature lens, work items, RESULT). Corollary BH2 added at 20:32Z.
 - 20:37-20:38Z second GUIDE control (cube character means; 2D holonomy-axis twist) run under the numeric lock, lock released; both readings pass. Remark 3.6 added.
 
@@ -806,14 +807,26 @@ the bound by 6 and 7 standard errors). The run did not refute the algebra of 7.2
 
 Three exact statements locate it. None gives a survivor.
 
-**(a) One-axis moves along a frame: a curl-form cost forces a reducible field (PROVED from Lemma FR's identity).**
-Let n be a unit-vector field on sites and B = theta_l n_tail(l). By row 1011 7.3 ("Use"), for theta = d lambda the field B is
-a gauge direction plus the field lambda_head(l) D_l n. So "the direct cost of theta n vanishes for every closed theta" holds
-on a configuration only if D_l n = 0 on every link, and then by Lemma FR every plaquette axis at every site is
-parallel to n (NA = 0). At a response of order one the non-abelian part is of order one per site (ARGUED size,
-row 1011 7.3). So the cost form of a frame move is not a curl form pointwise, for any frame, field-dependent or
-not. What is left is a cancellation against the current variance: items (N1)-(N3) of row 1011 7.4, OPEN, of the
-first-passage kind.
+**(a) One-axis moves along a frame (PROVED plaquette by plaquette; ARGUED for the summed action).** Let n be a
+unit-vector field on sites and B = theta_l n_tail(l). In compact U(1), and for the 2D rotation, each plaquette (bond)
+energy changes under the twist through (d theta)_p alone. That is the sense of "curl form" in (M2) of row 1011.
+Statement: suppose that on a configuration U the first-order change of every plaquette trace under B = (d lambda) n
+is zero for every site function lambda. Then D_l n . s_p = 0 for every link l = (x -> x + mu) and every plaquette
+p = (x; mu, nu), with s_p based at x. If at every link these plaquette vectors span R^3, then D_l n = 0 on every
+link; by Lemma FR every plaquette axis at every site is then parallel to n, and this contradicts the spanning.
+So on such configurations no frame, field-dependent or not, has a cost form that is a curl form plaquette by
+plaquette. Proof: for lambda the indicator of y = x + mu, Proposition A (i) gives delta_p(B) = n_x - Ad(U_1) n_y = D_(l_1) n
+and the first-order change - delta_p . s_p. QED
+For the summed action the condition is weaker, and its first order can be met: the total first-order change
+depends on d theta alone if and only if sum over links l with head y of D_l n . N_l = 0 at every site y (N_l the force
+on l), one equation per site for two unknowns per site. At second order the condition is that the derivative of
+n_tail(l) . N_l along the field (D_l' n) on the links l' with head y vanishes for every site y and every link l near
+y: about fifty equations per site in d = 4. ARGUED, not proved: on generic configurations this has no solution
+with D n not 0. Sizes (ARGUED, row 1011 7.3): on typical configurations at coupling b the non-abelian part is of
+order 1/b per site, and the term without derivative is of order theta^2 per plaquette, with no factor b. What is
+left is a cancellation against the current variance: items (N1)-(N3) of row 1011 7.4, OPEN, of the first-passage
+kind. (A first draft of this item claimed the summed form as PROVED from Lemma FR; that was wrong and is
+corrected here.)
 
 **(b) Lemma GT (holonomy-axis twists: the only frame that is covariantly constant at every coupling lives on
 curves; PROVED).** Let alpha be a closed lattice path through distinct sites y_0, ..., y_(m-1) such that no other
@@ -892,8 +905,9 @@ exponent or Lemma GT (ii), (iii). It decides nothing.
 
 **Step 7 result.** PROVED: Identity AV, Corollary AV2, Theorem BH (the homogeneous-strength case of Proposition B',
 every b > 0, with constant 6 (E t)^2/E(1 - t^2) and growth at least b/log b at a fixed box), Lemma GT,
-Lemma SOFT with Identity CUBE. A GUIDE control of the algebra of BH passed. Reopen condition (ii): FAILS in the
-pointwise form (Lemma FR); its averaged form is (N1)-(N3) of row 1011, OPEN and not attacked; the two other
+Lemma SOFT with Identity CUBE. Two GUIDE controls passed (7.3, 7.6). Reopen condition (ii): FAILS in the
+plaquette-by-plaquette form (PROVED on configurations whose plaquette axes span R^3 at each link); for the summed
+action it is ARGUED only; its averaged form is (N1)-(N3) of row 1011, OPEN and not attacked; the two other
 readings (holonomy-axis twists, angle moves) are exact and have no consumer.
 
 ## 8. Step 8: report (exercise step 9), consumer (Task 4), registry, RESULT
@@ -933,7 +947,8 @@ None was found.
    (the mean of the pinned stiffness over the free ensemble of pins equals the mean square of the conditional
    Neumann datum). Constant: 6 (E t)^2/E(1 - t^2), growing at least like b/log b at a fixed box. A GUIDE control of
    its algebra passed (7.3); a second one for Identity CUBE and Lemma GT passed (7.6).
-6. Reopen condition (ii) FAILS in its pointwise form (from Lemma FR). Two exact side results: a covariantly
+6. Reopen condition (ii) FAILS plaquette by plaquette (PROVED from Proposition A and Lemma FR of row 1011, on
+   configurations whose plaquette axes span R^3 at each link; for the summed action ARGUED). Two exact side results: a covariantly
    constant colour axis exists at every coupling on closed curves only (Lemma GT), and SU(2) has moves of single
    plaquette angles whose whole cost is a beta-independent entropy (Lemma SOFT, Identity CUBE).
 
@@ -1053,4 +1068,4 @@ ARGUED sentences on the ordering of the probe and on d = 5. **Most expensive if 
 Theorem BH) and Step 3 of Lemma CEN+ (the classical description of O(4)). **Literature proofs worth translating:**
 none for this wall.
 
-RESULT: Row 1016 (Claude Fable 5.2 max, Mac mini worker; author; checked by no one; two short GUIDE runs, no subagents). (i) An exact reformulation of 4D SU(2) with a global non-abelian symmetry: ten families written with exact identities (frozen fundamental Higgs with custodial SU(2), adjoint field, Hubbard-Stratonovich, characters and plaquette variables, temporal gauge and rotor form, tree / two-dimensional-residual / Landau gauges, Hamiltonian with Gauss law, diamagnetic / layer / complex-translation comparisons, single-link rotations); all FAIL. PROVED by hand (unchecked): Lemma CEN+ (every family of single-link maps that keeps the plaquette traces is a gauge transformation times a closed Z_2 field: no hidden rigid symmetry in link variables), Lemma AUX (a group acting on an added field fixes every function of U), Lemma HW with Proposition LG (for the Higgs kernel: local gradient twist, bracket identity, blind bound kappa |df|^2, and the response as a Wilson-loop series with non-negative coefficients; a statement about the probe), Lemma REM (colour twists of pins are removable unless a pinned path carries them), Identity HAM1 (the colour response in temporal gauge is the family of Polyakov-loop correlators), Lemma MC (rotations of one link about its staple are exact continuous non-abelian non-gauge symmetries, so the reopen condition as worded is void), Identity HS1. Corrected filter (ARGUED): the reopen condition must read rigid group + charged pins + response on the gauge-invariant algebra; no candidate meets the three. (ii) Covariant moves: FAILS pointwise (from Lemma FR of row 1011); PROVED side results: Lemma GT (a covariantly constant axis exists at every coupling on closed curves only; Jacobian one; exact symmetry in d = 2, a line of corner costs in d >= 3) and Lemma SOFT with Identity CUBE (the six class angles of a cube have the density (2/pi)^6 prod sin(phi_i) sum_k k^(-4) prod sin(k phi_i), so SU(2) has single-plaquette angle moves; their cost is abelian and their Jacobian is a beta-independent entropy; no consumer). (iii) The homogeneous-strength case of Proposition B', left ARGUED by check 1014: PROVED as Theorem BH from Identity AV (not found in the lane), E_free[H_c(.; B)] = E_free[(E_omega X_c(B))^2], with sup over pins of H_c(omega; a d lambda_z) >= 6 (E_free t_p)^2/E_free(1 - t_p^2) > 0 for every b > 0 and growth at least b/log b at a fixed box; Corollaries AV2 (the pin average is site-diagonal, blind to colour coherence) and BH2 (general boundary fields; given Lemma WN); two pre-registered GUIDE controls passed (the algebra of BH at two couplings; the cube coefficients and the 2D twist). Consumer: none on the path of (W); the results feed row 1011's registry and the wording of the reopen condition. OPEN: (W), (CAS) and every form of the wall, untouched; the size-uniform growth "of order b S" (ARGUED); the Schrodinger-functional bound at the trivial pin; a general no-go between Lemma CEN+ and Lemma AUX; the check W1 of this file.
+RESULT: Row 1016 (Claude Fable 5.2 max, Mac mini worker; author; checked by no one; two short GUIDE runs, no subagents). (i) An exact reformulation of 4D SU(2) with a global non-abelian symmetry: ten families written with exact identities (frozen fundamental Higgs with custodial SU(2), adjoint field, Hubbard-Stratonovich, characters and plaquette variables, temporal gauge and rotor form, tree / two-dimensional-residual / Landau gauges, Hamiltonian with Gauss law, diamagnetic / layer / complex-translation comparisons, single-link rotations); all FAIL. PROVED by hand (unchecked): Lemma CEN+ (every family of single-link maps that keeps the plaquette traces is a gauge transformation times a closed Z_2 field: no hidden rigid symmetry in link variables), Lemma AUX (a group acting on an added field fixes every function of U), Lemma HW with Proposition LG (for the Higgs kernel: local gradient twist, bracket identity, blind bound kappa |df|^2, and the response as a Wilson-loop series with non-negative coefficients; a statement about the probe), Lemma REM (colour twists of pins are removable unless a pinned path carries them), Identity HAM1 (the colour response in temporal gauge is the family of Polyakov-loop correlators), Lemma MC (rotations of one link about its staple are exact continuous non-abelian non-gauge symmetries, so the reopen condition as worded is void), Identity HS1. Corrected filter (ARGUED): the reopen condition must read rigid group + charged pins + response on the gauge-invariant algebra; no candidate meets the three. (ii) Covariant moves: a frame move has no cost form that is a curl form plaquette by plaquette (PROVED from Proposition A and Lemma FR of row 1011 where the plaquette axes at each link span R^3; ARGUED for the summed action); PROVED side results: Lemma GT (a covariantly constant axis exists at every coupling on closed curves only; Jacobian one; exact symmetry in d = 2, a line of corner costs in d >= 3) and Lemma SOFT with Identity CUBE (the six class angles of a cube have the density (2/pi)^6 prod sin(phi_i) sum_k k^(-4) prod sin(k phi_i), so SU(2) has single-plaquette angle moves; their cost is abelian and their Jacobian is a beta-independent entropy; no consumer). (iii) The homogeneous-strength case of Proposition B', left ARGUED by check 1014: PROVED as Theorem BH from Identity AV (not found in the lane), E_free[H_c(.; B)] = E_free[(E_omega X_c(B))^2], with sup over pins of H_c(omega; a d lambda_z) >= 6 (E_free t_p)^2/E_free(1 - t_p^2) > 0 for every b > 0 and growth at least b/log b at a fixed box; Corollaries AV2 (the pin average is site-diagonal, blind to colour coherence) and BH2 (general boundary fields; given Lemma WN); two pre-registered GUIDE controls passed (the algebra of BH at two couplings; the cube coefficients and the 2D twist). Consumer: none on the path of (W); the results feed row 1011's registry and the wording of the reopen condition. OPEN: (W), (CAS) and every form of the wall, untouched; the size-uniform growth "of order b S" (ARGUED); the Schrodinger-functional bound at the trivial pin; a general no-go between Lemma CEN+ and Lemma AUX; the check W1 of this file.

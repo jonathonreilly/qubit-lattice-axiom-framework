@@ -100,3 +100,85 @@ B1 and B5 are the forms an exact tool can use. B3 is the cheapest to test agains
 see no consumer in four dimensions yet. B6 is the honest form of "what is true of Wilson", and it is as hard as the
 gap.
 
+## 2. Step 2: each candidate against Wilson, the comparison models, and a consumer
+
+Read for this step (statements only): (U1), (U2) and Route 3 in `gap-unit-max.md` L33-56, L231-262, L348-357;
+Theorem D and Corollary D2 (`gap-crux-restate.md` L90-123); Lemma Z to Corollary Z4 (`gap-phys-seed.md` L253-327);
+Lemma REG and Proposition V (`gap-crux-fp.md` L342-358); the ceilings (`gap-status-1113.md` L68, L110, L112, L341).
+
+**What "beyond first passage" means (from row 988).** The account's flow is defined up to the first passage of
+the unit coupling into its window (CA-I 631-683). Beyond it the coupling is of order one. The comparison is with
+the mixed-action endpoint: cubes with light levels at order-one coupling.
+
+**What a consumer is.** The lane's exact tools read partition functions of periodic tori. The seed is
+Phi(n) = 16 F(n^4) - F((2n)^4) <= 1.9 x 10^(-4) at one n (Theorem D (b), Theorem S). Theorem D (f) is an identity:
+Phi(n; beta) = 96 n^4 int_0^beta (abar_2n(s) - abar_n(s)) ds. Corollary Z4: with D bounded, either every cube of
+side b has a level within (256 D_0 + 29.64)/b of its ground level, or there is a seed. So a consumer needs one of:
+(SEED) at one size; a bound on the finite-size shift of the mean plaquette along the whole path [0, beta]
+(Theorem D (f)); b m(b^3) > 256 D_0 + 29.64 at one b (Corollary Z4); a zero-free neighbourhood of the path (Route Z);
+a bounded logarithmic rate along the coupling ((VIR_K), row 708 C-A).
+
+**Two observations that order the table (both are short arguments, PROVED at the level of this note).**
+
+- (O-THERMAL) The seed is thermal: 1 + S(n; B) = Tr T^n / lambda_0^n counts every level of the box in every
+  sector. A flux level of the periodic box is invisible to local observables. So an input about local correlations
+  at the one coupling beta cannot give the seed. Test models: Q_8 and 2T in their frozen phase and U(1) in its
+  Coulomb phase have summable plaquette correlations (RECALLED: gapped local sector for the finite groups, decay
+  r^(-8) for the photon) and no seed. Such an input can separate K7 only, where the light level is a scalar that
+  couples to the plaquette.
+- (O-PATH) Each comparison model has a point of non-analyticity of f on the real path from the strong-coupling
+  region to the coupling where its seed fails: the first-order line or the endpoint for K7, the transition for
+  U(1), Q_8 and 2T (RECALLED numerics: 2T freezes near beta 2.2, Q_8 lower). Wilson SU(2) is expected to have none
+  on [0, 2.6]. So the inputs that separate all five models at once are path statements: (ZF), (VIR_K), and the
+  finite-size shift of Theorem D (f). All three are in the lane. A structural property of the weight separates
+  K7 only if the Wilson weight is on the boundary of the property.
+
+**Additions to the list, found while judging (still before the digest was read).**
+
+- **B8, heat-kernel mixture.** The Wilson weight is itself a mixture: I_n(beta)/I_1(beta) = int exp(-(n^2 - 1) t/2)
+  eta~_beta(dt), with eta~_beta the Hartman-Watson law tilted by exp(-t/2) (RECALLED: Hartman and Watson 1974, the
+  von Mises-Fisher law is a mixture of Brownian laws on the sphere; Kent 1977, the mixing law is infinitely
+  divisible). So c_j = I_(2j+1)/I_1 is a mixture of heat-kernel coefficients exp(-2 t j(j+1)), and the kinetic
+  factor of the transfer operator is K = exp(-sum over links of psi_beta(-Delta_link)) with psi_beta a Bernstein
+  function: a Levy semigroup at time one. Consequence for B2: Wilson is extreme among mixtures of Wilson weights,
+  and not extreme among mixtures of heat kernels. "Being a point mass" is relative. Also, for every c > 0,
+  exp(beta x) = E_s exp((beta + s) x - c x^2): Wilson is a Gaussian mixture of negative-adjoint weights.
+- **B9, Turan inequality.** c_1 <= c_(1/2)^2, and k -> c_(k/2) is log-concave, for Wilson at every beta
+  (I_n^2 >= I_(n-1) I_(n+1); RECALLED, Thiruvenkatachar and Nanjundiah 1951, Amos 1974). A mixture of a flat part
+  and a peaked part reverses it: with coefficients rho (1 - eps C_2(j)), rho < 1, the ratio c_1/c_(1/2)^2 is about
+  1/rho > 1. So it should fail for the van Enter-Shlosman weights at coexistence. Value at K7: not computed yet.
+- **B10, Gaussian domination in the time direction (from F-LIN).** In a gauge with unit temporal links on a
+  slab, a temporal Wilson plaquette is 1 - (1/2) abs(U_i(x, t+1) - U_i(x, t))^2. That is the Froehlich-Simon-Spencer
+  form, so shifts h of the difference are dominated: Z(h) <= Z(0) (ARGUED; the reflection step is standard, the
+  gauge fixing on a torus leaves one slab of holonomies). Gauge averaging removes every cross term at second order.
+  What is left is the one-plaquette bound <1 - x_p> <= 2/beta and a sub-Gaussian tail for one plaquette. No
+  information on correlations. At K7 the plaquette term is quartic and the argument has no start.
+
+**Table.** T = true (theorem or exact computation), E = expected, F = false, n/a = does not apply.
+
+| Candidate | Wilson SU(2) | K7 | U(1) Wilson | Q_8, 2T | Consumer |
+|---|---|---|---|---|---|
+| F-MIX / B2: point mass among Wilson mixtures | T (exact) | F (Gaussian mixture) | T | T | none as an input; gives a no-go test (below) |
+| B1: vMF link law, Psi in the Lee-Yang class | T (exact) | F (Fisher-Bingham) | T (in R^2, I_0) | F (finite sum, not a function of abs(h)) | none found: worst-case link response is the 1/3 ceiling; (ZF) is not implied |
+| B3: log-concave in x | T (equality) | F | T | T | none; no theorem "log-concave gives a seed" |
+| B3 weak: monotone in x, unimodal | T | F on the line if beta_A > 3 beta_F/8 | T | T | none; van Enter-Shlosman weights have it |
+| B4: totally positive Fourier sequence | T (Edrei) | F (Edrei) | T | n/a | none in four dimensions |
+| B5: bilinear slab rotor | T | F (quartic) | T | T | the lane uses it as an obstruction (4 G_3) |
+| B6a: bounded plaquette susceptibility at beta | E | F at the endpoint | T in the Coulomb phase | T frozen | none (O-THERMAL) |
+| B6b: zero-free neighbourhood of [0, beta] | E | F | F | F | Route Z (in the lane) |
+| B7: Lie structure, Ricci 2, finite centre | T | T | F (flat, centre U(1)) | F (finite) | none alone: K7 has all of it |
+| B8: heat-kernel mixture, K a Levy semigroup | T (given the sources) | not known | T (Hartman-Watson) | n/a | none found |
+| B9: Turan, c_1 <= c_(1/2)^2 | T | to compute | T | T | none at beta 2.3 (u = 0.48, no convergent expansion) |
+| B10: time-direction Gaussian domination | T (ARGUED) | F | T | T | none: collapses to one plaquette |
+| (VIR_K): bounded logarithmic rate on the path | E | F | F | F | Theorem TR (in the lane) |
+| finite-size shift of abar on [0, beta] | E | F | F | F | Theorem D (f); it is the seed |
+
+**The no-go test that (F-MIX) gives (Lemma MIX, stated here, proved in Section 4 if it is NEW).** Let H be a
+hypothesis on the unnormalised Wilson measure with plaquette-dependent real couplings (beta_p). If H holds for
+every coupling field, and if H is preserved by positive mixtures over coupling fields, then H holds at K7. So no
+such H can enter a proof of the seed. Every per-plaquette statement that is linear in the weight is of this
+kind: positivity of characters, reflection positivity, Lemma A, the vMF link law given the couplings, the bilinear
+slab structure given the couplings. The separating content must sit in the equality of the couplings.
+
+**Verdict of Step 2.** Among the properties of the weight, none has a consumer. The inputs with a consumer are
+the three path statements, and they are the lane's own. What I add so far is (F-MIX), B8, and the two observations.

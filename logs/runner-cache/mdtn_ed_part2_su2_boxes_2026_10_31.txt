@@ -1,0 +1,64 @@
+canonical-singlet ASQR SU(2) MDTN, open boxes; gap = E1 - E0 in the physical (Gauss) sector, units of E(doublet link)=1
+box (1, 1, 1): links=12 sites=8 plaquettes=6 dim(phys canonical sector)=32 (=2^5); lambda_max(D+A)=8.0000; build 0.0s
+   delta= 0.00  E0= 0.000000  gap=4.000000   PT2: 4.000000
+   delta= 0.05  E0=-0.003750  gap=3.996183   PT2: 3.996250
+   delta= 0.10  E0=-0.015003  gap=3.983949   PT2: 3.985000
+   delta= 0.15  E0=-0.033768  gap=3.961079   PT2: 3.966250
+   delta= 0.20  E0=-0.060061  gap=3.924436   PT2: 3.940000
+   delta= 0.30  E0=-0.135373  gap=3.799309   PT2: 3.865000
+   delta= 0.40  E0=-0.241450  gap=3.607590   PT2: 3.760000
+   delta= 0.50  E0=-0.379331  gap=3.379331   PT2: 3.625000
+   delta= 0.75  E0=-0.876517  gap=2.863646   PT2: 3.156250
+   delta= 1.00  E0=-1.625330  gap=2.669591   PT2: 2.500000
+box (1, 1, 2): links=20 sites=12 plaquettes=11 dim(phys canonical sector)=512 (=2^9); lambda_max(D+A)=11.1231; build 0.0s
+   delta= 0.00  E0= 0.000000  gap=4.000000   PT2: 4.000000
+   delta= 0.05  E0=-0.006876  gap=3.994230   PT2: 3.994298
+   delta= 0.10  E0=-0.027512  gap=3.976114   PT2: 3.977192
+   delta= 0.15  E0=-0.061940  gap=3.943347   PT2: 3.948683
+   delta= 0.20  E0=-0.110215  gap=3.892631   PT2: 3.908769
+   delta= 0.30  E0=-0.248730  gap=3.726480   PT2: 3.794730
+   delta= 0.40  E0=-0.444516  gap=3.477458   PT2: 3.635076
+   delta= 0.50  E0=-0.700475  gap=3.177566   PT2: 3.429806
+   delta= 0.75  E0=-1.644670  gap=2.463629   PT2: 2.717063
+   delta= 1.00  E0=-3.144973  gap=2.253601   PT2: 1.719224
+box (1, 1, 3): links=28 sites=16 plaquettes=16 dim(phys canonical sector)=8192 (=2^13); lambda_max(D+A)=12.1005; build 0.0s
+   delta= 0.00  E0= 0.000000  gap=4.000000   PT2: 4.000000
+   delta= 0.05  E0=-0.010001  gap=3.993611   PT2: 3.993687
+   delta= 0.10  E0=-0.040021  gap=3.973545   PT2: 3.974749
+   delta= 0.15  E0=-0.090112  gap=3.937263   PT2: 3.943185
+   delta= 0.20  E0=-0.160369  gap=3.881191   PT2: 3.898995
+   delta= 0.30  E0=-0.362091  gap=3.697942   PT2: 3.772739
+   delta= 0.40  E0=-0.647606  gap=3.422603   PT2: 3.595981
+   delta= 0.50  E0=-1.021743  gap=3.086754   PT2: 3.368720
+   delta= 0.75  E0=-2.417006  gap=2.261090   PT2: 2.579620
+   delta= 1.00  E0=-4.700050  gap=2.084581   PT2: 1.474881
+box (2, 2, 1): links=33 sites=18 plaquettes=20 dim(phys canonical sector)=65536 (=2^16); lambda_max(D+A)=14.1425; build 0.5s
+   delta= 0.00  E0= 0.000000  gap=4.000000   PT2: 4.000000
+   delta= 0.05  E0=-0.012502  gap=3.992336   PT2: 3.992411
+   delta= 0.10  E0=-0.050034  gap=3.968458   PT2: 3.969644
+   delta= 0.15  E0=-0.112678  gap=3.925838   PT2: 3.931699
+   delta= 0.20  E0=-0.200583  gap=3.860878   PT2: 3.878575
+   delta= 0.30  E0=-0.453274  gap=3.652106   PT2: 3.726795
+   delta= 0.40  E0=-0.811827  gap=3.340557   PT2: 3.514302
+   delta= 0.50  E0=-1.283797  gap=2.956049   PT2: 3.241096
+   delta= 0.75  E0=-3.085395  gap=1.986807   PT2: 2.292467
+   delta= 1.00  E0=-6.199254  gap=1.994240   PT2: 0.964386
+box (1, 1, 4): links=36 sites=20 plaquettes=21 dim(phys canonical sector)=131072 (=2^17); lambda_max(D+A)=12.5140; build 1.0s
+   delta= 0.00  E0= 0.000000  gap=4.000000   PT2: 4.000000
+   delta= 0.05  E0=-0.013127  gap=3.993349   PT2: 3.993429
+   delta= 0.10  E0=-0.052530  gap=3.972457   PT2: 3.973715
+   delta= 0.15  E0=-0.118284  gap=3.934680   PT2: 3.940859
+   delta= 0.20  E0=-0.210523  gap=3.876305   PT2: 3.894860
+   delta= 0.30  E0=-0.475452  gap=3.685542   PT2: 3.763435
+   delta= 0.40  E0=-0.850696  gap=3.398276   PT2: 3.579441
+   delta= 0.50  E0=-1.343017  gap=3.045172   PT2: 3.342876
+   delta= 0.75  E0=-3.190060  gap=2.154547   PT2: 2.521471
+   delta= 1.00  E0=-6.264203  gap=2.004202   PT2: 1.371505
+
+(i) single cube, FULL link-qubit space (2^12), H' = sum n - delta sum X_P:
+   delta=0.0: lowest 8 levels (rel. to E0) = [(np.float64(0.0), 'phys'), (np.float64(1.0), 'charged'), (np.float64(1.0), 'charged'), (np.float64(1.0), 'charged'), (np.float64(1.0), 'charged'), (np.float64(1.0), 'charged'), (np.float64(1.0), 'charged'), (np.float64(1.0), 'charged')]
+              ground state physical: True;  physical-sector gap = 4.000000
+   delta=0.1: lowest 8 levels (rel. to E0) = [(np.float64(0.0), 'phys'), (np.float64(0.995), 'charged'), (np.float64(0.995), 'charged'), (np.float64(0.995), 'charged'), (np.float64(0.995), 'charged'), (np.float64(0.995), 'charged'), (np.float64(0.995), 'charged'), (np.float64(0.995), 'charged')]
+              ground state physical: True;  physical-sector gap = 3.983949
+   delta=0.3: lowest 8 levels (rel. to E0) = [(np.float64(0.0), 'phys'), (np.float64(0.9554), 'charged'), (np.float64(0.9554), 'charged'), (np.float64(0.9554), 'charged'), (np.float64(0.9554), 'charged'), (np.float64(0.9554), 'charged'), (np.float64(0.9554), 'charged'), (np.float64(0.9554), 'charged')]
+              ground state physical: True;  physical-sector gap = 3.799309

@@ -255,3 +255,96 @@ For SU(2) the same substitution with a non-central g = exp(theta n) on the links
 - **At order-one response.** The band is entered with beta_eff of order one at the cell scale. With bare links at beta of 2.3 to 2.6 the count above gives cells of side 1 to 2 only. With blocked variables a frame with defect of order one per block link exists by definition of "order one", and Lemma FLOW with such a frame can give a blind bound of order one. It cannot give the sign of the next step: the frame Ward identity (4.2 (iii)) has an error term of the same order as the bracket gain, with no small parameter. In 2D the gain c_sh min(v, 1) is positive because the identity is exact.
 - **What an exact repair would be.** A covariant current with j conserved pathwise (4.2 (iv)), or a divisible twist (4.4). Each exists exactly on reducible configurations only. Lemma CEN said this for field-independent multipliers; 4.2 and 4.4 say it for field-dependent frames, in exact form.
 - **Verdict.** Route (ii) FAILS as a mechanism for (SS) at one bare coupling (ARGUED, with the exact Lemmas FLOW, PROJ, FR+, SPLIT behind it). With blocked variables it is the open items (N1)-(N3) of row 1011 7.4, of the (K-flow) kind, and it stops at the upper edge of the band. Tests: compact U(1) passes with zero gain (4.4: exact division, scale-invariant bound, no drop); the five-dimensional test is not reached; Lemma PT is met through the product structure of N. On the path of (W) only as a constraint.
+- 2026-11-15T20:49Z (`date -u`). Step 4 done (Section 4). Step 5, route (iii-a), next.
+
+## 5. Step 5 result: route (iii-a), energy increment (structure against randomness)
+
+### 5.1 The dichotomy as a lemma (PROVED; it is counting)
+
+**Lemma DICH.** Let R_0, R_1, ... and E_0, E_1, ... be real sequences with 0 <= E_j <= E_max and E_(j+1) >= E_j. Let r_0 < r_1, delta > 0, eps > 0. Suppose R_(j+1) <= R_j for all j (blind half), and for every j with r_0 <= R_j <= r_1: R_(j+1) <= R_j - delta (random case) or E_(j+1) >= E_j + eps (structured case). If R_(j_0) <= r_1, then R_j < r_0 for some j <= j_0 + (r_1 - r_0)/delta + E_max/eps + 1.
+
+Proof. While R_j >= r_0, each step is of one of the two kinds. The first kind occurs at most (r_1 - r_0)/delta times, the second at most E_max/eps times. QED
+
+The lemma needs three things from a model: a blind half for R, a structure energy that is bounded **and monotone**, and the dichotomy itself. The tests below are on these three.
+
+### 5.2 The three forms of the target against the three needs
+
+| Form | Blind half for R | A bounded monotone structure energy | The dichotomy |
+|---|---|---|---|
+| (T-per), R = D | none of the needed kind (D(2a) <= 16 D(a) only) | every exact monotone on file is extensive (F/|n|, the deficit kappa of Lemma K) or blind (row 1002); a scale-invariant theory keeps every normalised quantity constant | equals "no fixed point of the doubling map" (row 708's verdict on (CAS)) |
+| (T-vor), R = vortex cost | yes, in the parallel direction (Lemma PAR) | not needed in the parallel direction: Lemma PAR (iii) is already the random case with no hypothesis | fails in the series direction, see 5.3 |
+| (T-pin), R = Rbar | OPEN | candidate: the non-abelian content NA of Lemma FR; see 5.4-5.5 | OPEN; its exact shape is 5.5 |
+
+### 5.3 (T-vor): randomness has two opposite effects, so the dichotomy has no soft sign (ARGUED; the Z_2 statement is THM, lane)
+
+By Lemma PAR the cost of a vortex confined to one of n parallel sub-containers gains the entropy of its position, with no hypothesis. The other half of a cubic doubling is the series direction (the surface Sigma grows by 4). There the classical neutrality "4 times 1/4" needs the flux to spread over the doubled thickness, and by Lemma SPLIT spreading is exact only along a common colour axis.
+
+- If the colour axis is coherent across the transverse size (structured), the spread vortex costs the classical amount: K(2l) = K(l), minus the quantum gain. Here K(l) is the cost per patch l^2 of Sigma at thickness l.
+- If it is not coherent (random), fractional twists with independent axes compose like a random walk on the group: n twists of angle theta reach a total angle of order theta sqrt(n). The spreading gain is lost and K(2l) is near 4 K(l) - log 4 (3.4).
+- So in the vortex form randomness raises the normalised cost (loss of spreading) and lowers it (entropy). Which wins is a number. Frozen Z_2 shows both outcomes: no spreading at all, and K flows up above its critical coupling and down below it (THM in the lane for the up side, beta > 2.191; strong coupling for the down side). The standard reading (Mack; 't Hooft; RECALLED, a belief): SU(2) at the scale l_d where colour frames decohere behaves like a Z_2 theory of thick vortices with coupling K(l_d), and confines if K(l_d) is below the critical value.
+- Verdict for (T-vor): the dichotomy "the response drops, or a structure energy rises" FAILS as a soft statement. At order one it is an energy-entropy balance with a threshold. This agrees with the lane's rule that the order-one input is "a number, not a qualitative property" (`library/gap-crux-fp.md` L283).
+
+### 5.4 Lemma NAB: the structured half at the bare scale. The field is never frameable, with a written bound (PROVED by hand)
+
+**Setting.** Wilson SU(2), constant beta > 0, a torus with all sides at least 3 (every site free), xbar = E x_p. For a plaquette p based at x write U_p = x_p + y_p, y_p the imaginary part (y_p = s_p of row 1011). lambda_x is as in Lemma FR: the minimum over unit n of the sum, over the six plaquettes (x; mu, nu), of |y_p x n|^2.
+
+**Statement.** (i) E(1 - x_p^2) >= xbar/(2 beta) for every beta > 0.
+(ii) For p = (x; 1, 2) and p' = (x; 3, 4): E|y_p x y_p'|^2 >= 3 (E[x_p x_p'] + (1/3) E[y_p . y_p'])^2 / (218 beta^2). If xbar >= 3/4, the right side is at least 1/(654 beta^2).
+(iii) For every configuration, lambda_x >= (sum over pairs p < p' of |y_p x y_p'|^2) / (sum_p |y_p|^2) >= (1/6) |y_p x y_p'|^2 for each pair. So, if xbar >= 3/4: E lambda_x >= 1/(3924 beta^2), and by Lemma FR every frame, however it depends on the field, has E sum_l |D_l n|^2 >= (number of sites)/(23544 beta^2).
+
+**Proof.** Notation: c, c', e are unit imaginary quaternions; D is the derivative of the left translation U_l -> exp(eps c) U_l of one link l with tail x. For a plaquette q that leaves x along l, D U_q = c U_q, so D x_q = - c . y_q and D y_q = x_q c + c x y_q. Haar invariance gives E[D G] + E[G X] = 0 for smooth G, with X = D A = - beta sum over the six q containing l of c . y_q.
+(i) G = X gives E[X^2] = - E[D X] = beta sum_q E[x_q] = 6 beta xbar. G = c . y_q gives E[(c . y_q) X] = - E[x_q] = - xbar. By Cauchy-Schwarz xbar^2 <= E[(c . y_q)^2] 6 beta xbar. The gauge average at x gives E[(c . y_q)^2] = E|y_q|^2/3 = E(1 - x_q^2)/3. (xbar >= 0 because the derivative of log Z in beta is 0 at beta = 0 and non-decreasing.)
+(ii) Let l = (x, 1) with D, c and l' = (x, 3) with D', c'. Then D moves y_p and not y_p', and D' moves y_p' and not y_p. Put f = (y_p x y_p') . e and S_2 = exp(-A) D D' exp(A) = X X' + D D' A. Two integrations by parts give E[f S_2] = E[D D' f], and E[S_2] = 0. Now D D' f = ((x_p c + c x y_p) x (x_p' c' + c' x y_p')) . e. Average over the gauge rotation at x, which rotates y_p and y_p' together and fixes x_p, x_p': the terms linear in y vanish, and the bilinear term gives (1/3) E[y_p . y_p'] sum_i ((c x e_i) x (c' x e_i)) . e = (1/3) E[y_p . y_p'] (c x c') . e. So with (c x c') . e = 1: E[D D' f] = E[x_p x_p'] + (1/3) E[y_p . y_p']. Cost: the only plaquette that contains l and l' is (x; 1, 3), and D D' of its trace is at most 1 in absolute value, so |D D' A| <= beta. E[X^4] = - 3 E[X^2 D X] <= 18 beta E[X^2] <= 108 beta^2, the same for X'. So E[S_2^2] <= 2 E[X^2 X'^2] + 2 beta^2 <= 218 beta^2. Cauchy-Schwarz: (E[D D' f])^2 <= E[f^2] 218 beta^2, and E[f^2] = E|y_p x y_p'|^2/3 by the gauge average. For the second claim: E[x_p x_p'] >= 1 - 2 E(1 - x_p) = 2 xbar - 1, and |E[y_p . y_p']| <= E(1 - x_p^2) <= 2 (1 - xbar). So the bracket is at least (8 xbar - 5)/3 >= 1/3.
+(iii) Let M = sum_p y_p y_p^T with eigenvalues lambda_1 >= lambda_2 >= lambda_3 >= 0. Then lambda_x = tr M - lambda_1 = lambda_2 + lambda_3. The second symmetric function e_2 = lambda_1 lambda_2 + lambda_1 lambda_3 + lambda_2 lambda_3 is at most (lambda_1 + lambda_2)(lambda_2 + lambda_3) <= tr M (lambda_2 + lambda_3), and e_2 = (1/2)((tr M)^2 - tr M^2) = sum over p < p' of |y_p x y_p'|^2 (Lagrange's identity). tr M = sum_p |y_p|^2 <= 6. QED
+
+Remarks. (a) The proof of (i) is sharp for one free plaquette: with one plaquette on the link, X is beta times - c . y, E[X^2] = beta E x, and the same steps give E(1 - x^2) = 3 E x / beta with equality (test (b) of row 1015). The factor 6 in (i) is the number of plaquettes on a link. (b) The expected size of E lambda_x is of order 1/beta (ARGUED in row 1011 7.3); the proof gives 1/beta^2 because it bounds tr M by 6 in (iii). (c) The lane's RECALLED bound E(1 - x_p) <= 2/beta gives xbar >= 3/4 for beta >= 8; the lemma itself assumes xbar >= 3/4. (d) The lemma is dimension free and holds for every lattice on which x is a free site with these plaquettes. So it does not tell four dimensions from five, or the Wilson model from the models of 3.3 with Haar links. It closes one "not proved" of 4.5 in a weaker form: the mean frame defect is positive, of order at least 1/beta^2.
+
+### 5.5 (T-pin): the shape of an engine, and where each half stands
+
+Write NA_l for a measure of the non-abelian content of the field at the cell scale l, between 0 and 1. For bare links it is the lambda_x of Lemma NAB. For blocked links no exact definition is fixed here; this is the open slot.
+
+**Proposition ENG (arithmetic; PROVED as an implication).** Suppose that for all scales l of a ladder:
+- (FL) NA_l >= c_1 min(1, 1/Rbar(l)) (a fluctuation lower bound: a response of size R allows fluctuations of size 1/R);
+- (DEC) Rbar(2l) <= Rbar(l) (1 - c_2 NA_l) (decoherence: a non-abelian field reduces the colour correlation across the next scale).
+Then Rbar(2l) <= Rbar(l) - c_1 c_2 min(Rbar(l), 1). So Rbar falls by the fixed amount c_1 c_2 per doubling while it is above 1, and by the fixed factor 1 - c_1 c_2 below 1.
+
+Proof. Insert (FL) in (DEC). QED
+
+This is the 2D statement "each step lowers h by c min(h, 1)" (row 1009 L148-150), with the long steps included. In the words of the row: (DEC) is the random half, (FL) is the structured half. With (FL) the structured case does not need to be counted; it is excluded.
+
+**Tests of the two halves.**
+
+| Test | (FL) | (DEC) |
+|---|---|---|
+| Compact U(1), free photon | false: NA = 0 | true and empty |
+| Product with a massless factor | holds per factor | Rbar^2 adds over factors (2.3), so the massless factor keeps Rbar up: the pair gives no drop, as it must |
+| Adjoint Higgs, Coulomb phase (BELIEF for kappa finite) | **false at the cell scale**: the photon has Rbar of order one, the blocked field is abelian up to exp(- m_W l). True at the bare scale (Lemma NAB holds there). So a proof of (FL) at the cell scale must use the absence of a mass term for the off-diagonal directions. | true and empty |
+| Frozen slices, model (d) of 3.3 (THM given the RECALLED order) | holds: spin waves keep NA positive at every scale | **false as written**: the classical cost doubles per doubling, so the true statement there is Rbar(2l) <= 2 Rbar(l)(1 - c NA). A proof of (DEC) must use the isotropic cell in four dimensions. |
+| Five dimensions (BELIEF) | holds at the bare scale (Lemma NAB) | false, as for (d) |
+| Frozen Q_8, 2T | not defined (no Lie algebra; lambda_x exists but the group is discrete) | not defined: K_c is a second derivative |
+| Lemma PT, Proposition NP | (FL) reads the SU(2) factor; the pair then gives a drop of that factor's response only. The consumer must read the whole state space. Proposition NP is not met: no value of D is read. | same |
+| Theorem D2, Lemmas SHEET, SLAB | not bound: the form is in law, on cubes, at one homogeneous strength | SLAB binds through model (d) |
+| Instanton cost (6.3 of row 1013) | not reached | not reached |
+
+**Can either half be proved?**
+- (FL) at the bare scale: PROVED (Lemma NAB), by a Cramer-Rao step with a second-order score. It is blind. At the cell scale it is OPEN and false in a neighbouring model, so it is selective there.
+- (DEC): OPEN. No exact identity is found that turns non-abelian content into a loss of cross-cell correlation. Lemma CHAIN is the place where it would act: K at scale 2l is a covariance of cell fluxes, and each cell flux depends on the pin through the tensors K_c. For a Gaussian abelian field the tensors compose exactly and Rbar is constant. The statement needed is a strict loss in that composition when the adjoint transport through the cells fluctuates. No proof, and no counterexample in four isotropic dimensions.
+- "The structured half by the account": the account controls the regime g_k <= gamma, where the response falls by the one-loop amount per step. That is a (K-flow) input above the band. Inside the band the account gives nothing, and (FL), (DEC) there are statements at order one.
+- "The random half by strong coupling or mixing": at small beta the vortex form is settled by Dobrushin-type uniqueness (the lane's seed for beta < 1/18), which gives decay uniformly in pins (ARGUED for containers). It does not reach order one.
+
+### 5.6 Verdict on route (iii-a)
+
+- The counting lemma is trivial (PROVED). The route lives or dies on a bounded monotone structure energy. None is known: NA is not monotone on the class (it falls to 0 in the adjoint Higgs model at large scales, BELIEF; it is constant in model (d)), and every exact monotone of the lane is extensive or blind. With an a-function as the energy (row 1002), the structured steps are bounded in number, and what is left is: no theory that is nearly scale invariant with a response of order one. That is the rigidity statement of row 1017 (named match; not attacked here).
+- In the vortex form the dichotomy has no soft sign (5.3). In the pinned form it takes the shape (FL) and (DEC) (5.5); (FL) is proved at the bare scale (Lemma NAB), and (DEC) is the open selective half.
+- Mark: route (iii-a) OPEN, with one half proved at the bare scale and the other reduced to one named inequality. It does not move (W).
+- 2026-11-15T20:59Z (`date -u`). Step 5 done (Section 5). Step 6 next: a GUIDE control of Lemma NAB, then the test table.
+
+## 6. Step 6: GUIDE control of Lemma NAB, and the tests
+
+### 6.1 Control run of Lemma NAB (a guide; it can show an algebra error, it proves nothing)
+
+**Reading written before the run (2026-11-15T21:00Z).** Script `/tmp/gss-scripts-w3/nab_control.py`: plain numpy, quaternion links, checkerboard heat bath, torus 4^4, beta in {1.0, 2.3, 4.0}, the axes c = e_1 on the link (x, 1), c' = e_2 on the link (x, 3), e = e_3, all sites x. Memory free 68 percent before the run; numeric lock held as `row1018-fable-w3`.
+- (C1) identity of the first-order step: mean of (c . y_p) X equals - xbar, and mean of X^2 equals 6 beta xbar, each within 3 standard errors. FAIL means a sign or count error in the proof of (i).
+- (C2) identity of the second-order step: mean of f S_2 equals mean of x_p x_p' + (1/3) y_p . y_p' within 3 standard errors, with f = (y_p x y_p')_3, S_2 = X X' - beta (k-component of the plaquette (x; 1, 3)). FAIL means an algebra error in the proof of (ii).
+- (C3) the inequalities: E(1 - x^2) >= xbar/(2 beta); E[S_2^2] <= 218 beta^2; E|y_p x y_p'|^2 >= 3 (bracket)^2/(218 beta^2); E lambda_x >= (1/6) E|y_p x y_p'|^2. A measured violation beyond 3 standard errors is a FAIL of the lemma.
+- (G) guide only, no pass or fail: beta E lambda_x at the three couplings (the ARGUED size of order 1/beta).

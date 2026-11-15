@@ -5,7 +5,7 @@ lease_until: 2026-11-16T06:24Z
 
 Working file of one worker session, pinned at commit d06a5b87b on `claude/ym4d-hard-route`. Research-stage working state. It grants no status and nothing here is a public claim. Marks used: PROVED (written argument, checkable by hand), ARGUED (argument with a named hole), OPEN, FAILS.
 
-Status of this file: IN PROGRESS. Sections are appended step by step; the last section present is the point reached.
+Status of this file: COMPLETE (2026-11-15T23:05Z). Nothing in this file is checked by another model. Sections were appended step by step.
 
 ## Plan (eight steps, one per response; each appends its result before the next)
 
@@ -20,15 +20,15 @@ Status of this file: IN PROGRESS. Sections are appended step by step; the last s
 
 ## Step log
 
-(step 1 in progress, started 2026-11-15T18:25Z)
-
 Status block (kept current):
 
 - Step 1 (inputs, kill sheet): done, Section 1.
 - Step 2 (design rules R1-R10): done, Section 2.
 - Step 3 (eight candidates C1-C8): done, Section 3.
 - Step 4 (Lemmas WN, TWIST; Proposition LOC; kill table): done, Section 4. No candidate survives.
-- Steps 5-8: not started.
+- Steps 5-6 (no survivor; Lemmas JEN, SLAB as constraints on the open door): done, Section 5.
+- Step 7 (novelty, ranking, work items W1, W2): done, Section 7. A ninth candidate and the main conclusion: Section 6.
+- Step 8 (report and RESULT): done, Section 8.
 
 Progress marker 1a (18:40Z). Read in full: `GOAL.md`; `FINISH.md` L1-90, L299-356 and rows 998-1013 (L1077-1098); `parts/gap.md`; the four prior reads (rows 1007, 1009, 1010, 1012). Still to read in this step: the in-progress file of row 1011, `library/gap-crux-fp.md` (five-dimensional test, Proposition V), the statements of Lemma PT, Proposition NP, Theorem D2, Lemma SHEET, the exercise skill, `library/open-core.md` (duplicate check).
 
@@ -153,7 +153,7 @@ All statements here are written by Claude Fable 5.2 and checked by no one. No nu
 
  -W''(0) = sum over corners (p, x) of theta_(p,x)^2 [ beta_p E x_p - (beta_p^2/3) E(1 - x_p^2) ].
 
-Proof. W''(0) = E[D] + E[X^2] with X = -sum theta_(p,x) beta_p y_3(U_(p,x)), U_(p,x) the holonomy of p based at x. No plaquette has two non-zero corners, so D = -sum beta_p x_p theta^2. The gauge average at a free site x rotates the vector y(U_(p,x)) uniformly. So E[X] = 0, the cross terms of E[X^2] at distinct sites vanish, and E[y_3^2] = E(1 - x_p^2)/3. QED
+Proof. W''(0) = E[D] + E[X^2] with X = -sum theta_(p,x) beta_p y_3(U_(p,x)), U_(p,x) the holonomy of p based at x. The cross terms of D (two non-zero corners of one plaquette, at distinct free sites) have mean 0 as in (iii), so E[D] = -sum beta_p E[x_p] theta_(p,x)^2. The gauge average at a free site x rotates the vector y(U_(p,x)) uniformly. So E[X] = 0, the cross terms of E[X^2] at distinct sites vanish, and E[y_3^2] = E(1 - x_p^2)/3. QED
 
 **Corollary WN3 (the size of the bracket in WN2).** On a torus with constant beta put rho(beta) = xbar - (beta/3) E(1 - x_p^2). For one link l, with the six plaquettes q that contain l all oriented to leave the start of l along l,
 
@@ -198,3 +198,102 @@ Tests K1-K9 of Section 1.2. "pass" means only that the test does not refute the 
 | C8 tree-transported translations | frames carried by unblocked links decohere after length of order beta; the gradient structure survives only up to scales of order beta^(1/3) (wedge loops of area r against beta), which is inside the perturbative range | gain zero | uses the Lie algebra | would use d = 4 | Dirichlet cells | - | S0: with blocked frames it is row 1011 and the account's background | **FAILS** as a band crossing (ARGUED); the triangular Jacobian is exact |
 
 **No candidate survives.** Three die by exact lemmas (C1, C2, C3), five by argued reasons. Every continuous-twist candidate either returns to the Schrodinger-functional family of row 1011 or has a site-local cost form.
+
+## 5. Steps 5 and 6 result: no survivor; what the counterexamples say about the one open door (done 2026-11-15T22:25Z)
+
+Task (4) of the row asks for the first lemma of each survivor, or the counterexample. There is no survivor. The counterexamples are built: Lemma WN with Corollaries WN1-WN3 (C1, C2) and Lemma TWIST (C3). This section adds two lemmas that follow from the same computations. They concern the only door left by Proposition LOC, a response to gauge-invariant boundary data. They do not redo row 1011's port; they are constraints that any such port meets at its first step. On the path of the target only as constraints.
+
+### 5.1 Lemma JEN: the lab-frame blind bound of a boundary twist (PROVED by hand)
+
+**Setting.** As in Lemma WN. Pinned data u; a real field a on the pinned links; twisted data u^(eta)_l = e^(eta a_l c) u_l. Let F be any link-end field with F = a_l at the start of each pinned link l, F = 0 at the end of each pinned link, and arbitrary values on the ends of integrated links. Let theta = delta F be its corner field and tau_eta its translation, acting on all links. E_u is the expectation with data u.
+
+**Statement.** (i) Z(u^(eta))/Z(u) = E_u exp(H o tau_eta - H) >= exp( - sum_p beta_p E_u[x_p - x_p o tau_eta] ). (ii) If all corners of p with theta not zero are at free sites, then E_u[x_p o tau_eta] = E_u[x_p] prod over the corners of p of cos(eta theta_(p,x)).
+
+**Proof.** (i) In the integral for Z(u^(eta)) translate the integrated links by tau_eta; this keeps the Haar measure, and the weight becomes exp(H o tau_eta) at data u, by Lemma WN (i) applied to all links. Then Jensen. (ii) Average over the gauge group at each free corner site of p, one site after the other. The insertion e^(eta theta c) = cos(eta theta) + sin(eta theta) c becomes cos(eta theta) times the identity, because the Haar average of h^(-1) c h is 0. The trace is linear in each insertion. QED
+
+**What it gives.** The cost of the twist, -log Z(u^(eta))/Z(u), is at most the sum over bulk plaquettes of beta_p E[x_p] (1 - prod cos(eta theta)) plus the terms of the plaquettes at pinned sites. For small eta this is (beta xbar eta^2/2) times the squared l^2 norm of the corner field. By Section 4.1 the corner graph is site-local: values of F on integrated link-ends can cancel only the part of a that is constant over the pinned link-ends of one site, that is a gauge transformation. So (ARGUED; the minimisation over F is not written out) for a boundary field of size 1/R on a boundary of R^3 sites, whose curl is not zero, the best lab-frame bound is of order beta eta^2 R. The classical action of the induced background is of order beta eta^2, with no factor R.
+
+**Contrast with 2D (OpenAI's [B] (3.3)-(3.4), [28] (3.5)).** There the same Jensen step, or dropping the variance, with a smooth profile Theta across the annulus gives b times the Dirichlet energy of Theta, which is of order b at every scale. The profile can be spread because one-axis rotations at different sites commute and the cost form is a lattice gradient. In the gauge theory the spread is blocked by Lemma WN.
+
+**Consequence for a pinned-cell iteration in 4D (ARGUED).** The start of the 2D iteration, "stiffness at most b on every cell, every pin", is one line in 2D. Its 4D analogue, "the response of a pinned cell to a boundary field is at most a constant times beta times the classical action of the background, for every cell size up to the correlation length and all boundary data", is not available from the lattice identities above. On record it exists only as Balaban's Ward-identity extraction of (1/g_k^2) A(U_k(V)) on small fields while every g_k is small (CMP 109 (0.22), Theorem 1; row 1012 B1). So a 4D form of the iteration cannot be "one fixed bare coupling, no RG, no first-passage data" as in 2D. Even its blind first step needs the account's effective actions, and then it is a (K-flow) statement in the sense of lead rule W2, with the open step still the selective gain across the band.
+
+### 5.2 Lemma SLAB: conditioning can create an ordered spin system (identity PROVED; consequence ARGUED)
+
+**Statement.** Let B be a finite three-dimensional box or torus. Pin every link inside the two slices {0} x B and {1} x B, to data A and A'. The only integrated links are g(y) = U_4(0, y), y in B. Their law is the three-dimensional model with density proportional to exp( beta sum over y, mu of (1/2) tr(A_mu(y) g(y+mu) A'_mu(y)^(-1) g(y)^(-1)) ). For A = A' = 1 it is the O(4) model exp(beta sum q_y . q_(y+mu)), q the unit quaternion of g.
+
+**Proof.** The plaquettes that contain an integrated link are the (mu, 4) plaquettes between the slices; each is the displayed trace. QED
+
+**Consequence.** For large beta the three-dimensional O(4) model has long-range order (Frohlich, Simon and Spencer 1976; RECALLED, not rebuilt). The two-point function of g is the expectation of a gauge-invariant loop (up at y, along the pinned slice, down at y', back). So at weak coupling a family of conditional laws that contains "given two neighbouring hyperplanes" has no uniform mixing. In the 2D spin class the corresponding conditioned systems are one-dimensional and massive, so the 2D class has no such member. A gauge class closed under conditioning must therefore fix the shape of its cells. This is the same construction as Theorem D2's pinned sheet, one dimension up; D2 is credited (row 977, `gap-tiltproof-max.md` L240).
+
+### 5.3 Where each exact statement sits
+
+| Statement | Mark | Used for |
+|---|---|---|
+| Lemma WN (i)-(iii), Corollaries WN1, WN2, WN3 | PROVED by hand, unchecked | kills C1, C2; the corner graph |
+| rho(beta) > 0 for small beta and rho -> 1/2 | ARGUED | size of the kill of C2 |
+| Lemma TWIST | PROVED, unchecked | kills C3; corrects the wording of K8 (see 6.3) |
+| Proposition LOC | ARGUED | the structural conclusion |
+| Lemma JEN (i), (ii) | PROVED by hand, unchecked | the blind bound of a boundary twist |
+| "best lab-frame bound is of order beta eta^2 R" | ARGUED | constraint on row 1011's first step |
+| Lemma SLAB (identity) | PROVED, unchecked | constraint on any gauge class (R7) |
+| Lemma SLAB (no uniform mixing) | ARGUED, given a RECALLED theorem | the same |
+
+## 6. A ninth candidate found while closing the table, and the main conclusion (done 2026-11-15T22:50Z)
+
+### 6.1 C9: moves along a Laplacian frame (ARGUED; no lemma proved)
+
+- Object. A covariant adjoint frame Omega[U] in SO(3) at each site, for example the three lowest eigenvectors of the adjoint covariant Laplacian after polar decomposition (the Laplacian gauge of Vink and Wiese, RECALLED; lane grep: "Vink", "Laplacian cent": no file). Moves U_l -> Omega_x e^(F_l) Omega_x^(-1) U_l with F_l in su(2) written in the body frame. If the frame were covariantly constant, a one-axis move would change every plaquette by the abelian curl (dF)_p exactly, and the algebra of Section 2 (two axes, bracket along the third, shells of modes) would have the power counting of the Yang-Mills action: the sum over four-dimensional shells of abs(k)^(-4) is a logarithm. In that sense the twist two-form is the bracket [a_i, abar_i] of two one-forms, as the 2D twist one-form is S(f_i, fbar_i).
+- (a) Monotone: a boundary-field response. (b) Class: Dirichlet cells. (c) Identity: the bracket in the body frame. (d) Scale invariance of the Yang-Mills action. (e) Consumer: the Proposition 2.1 analogue.
+- What stops it. The frame defect D_l Omega = Omega_x - Ad(U_l) Omega_y is not zero; its mean square is the lowest eigenvalue of the adjoint Laplacian. It adds to the cost form beta abs(dF)^2 a term without derivative, of order beta times abs(D Omega)^2 times abs(F)^2. On unblocked links this is of order one per link (ultraviolet), so the gradient structure holds only up to wavelengths of order sqrt(beta). With frames of blocked fields at scale s it holds while the coupling at scale s is small. And the frame depends on the field, so the moves carry a Jacobian that is not one (unlike C8).
+- Verdict: **FAILS as a band crossing** (ARGUED). It could at best re-derive the running of the response where the coupling is small. Found again in substance: `gap-crux-skeleton-max.md` L236 ("the rotation axis must be covariantly constant"), and Balaban's background field.
+
+### 6.2 The main conclusion of this row (ARGUED, from Lemma WN, Lemma TWIST, Lemma JEN, C8, C9)
+
+**In 2D one exact Ward identity works at every value of the stiffness, large or small, because the symmetry is global and acts on the integration variables. In 4D every substitute found here works only while a colour frame exists across the cell, that is while the response is large (weak effective coupling). So the 2D engine, moved to 4D in any of these forms, reproduces asymptotic freedom above the band and stops at the upper edge of the band.** The 2D papers cross the band with the same identity in its "short step" regime ([28] (3.52), row 1009 L143-150). No 4D counterpart of the short step was found: at order-one response there is no frame, and the lab-frame identities are site-local.
+
+This agrees with the lane's sentence "the one selective fact that is provable today, asymptotic freedom at small coupling, has no engine that carries it across the band" (`parts/gap.md` L41-43). It adds a reason that is specific to the 2D mechanism, and three exact lemmas behind it.
+
+### 6.3 Filters (exercise skill, step 6)
+
+- **K8, valid form (ARGUED).** By Lemma TWIST a partition function with pinned data has no winding label. The refilling problem of row 1010 is a different statement: a region whose exterior data are smooth and wind has no filling of small action. In a comparison of densities such a region is one more kind of large-field region, with an activity of order exp(-c beta_k) at the scale of the refilling. So K8 is a cost with a constant to compute, not an obstruction of principle. The constant for the Wilson action is not computed here; lattice dislocations make it smaller than the continuum 2 pi^2 (RECALLED).
+- **K3' (slab device)** is added to the kill sheet as a test of classes; Lemma SLAB is its exact part.
+- No other filter was changed. Theorem D2, Lemma SHEET, Lemma PT and Proposition NP were used as they stand and re-derived nowhere.
+
+## 7. Step 7 result: novelty, ranking, work items (done 2026-11-15T23:00Z)
+
+### 7.1 Novelty
+
+No claim of novelty is made outside this lane, so no literature search was run (the row allows one only to check such a claim). Lemma WN is a form of the Schwinger-Dyson equations of lattice gauge theory together with Elitzur-type gauge averaging; the soft gauge-fixing kernel of C7 is known (Zwanziger; Parrinello and Jona-Lasinio; RECALLED), and so is the asymptotic freedom of the higher-derivative longitudinal sector (Golterman and Shamir, RECALLED). Inside the lane, by the grep of Section 3: "corner graph", Lemma WN in exact form, Lemma JEN and Lemma TWIST were not found; the argued forms they sharpen are credited (`gap-brainstorm2-max.md` L161, L216; `gap-crux-skeleton-max.md` L236; row 1007 B(5)).
+
+### 7.2 Ranking
+
+There is no survivor to rank. Ranked by what each result changes, divided by the cost to find out:
+
+1. **Lemma JEN and its scaling remark** (cost: one check). If the remark holds, the blind first step of a 4D pinned-cell iteration is not a lattice identity, and row 1011's port must start from the account's effective actions. This changes how row 1011's output is read.
+2. **Lemma SLAB** (cost: one check). It constrains every class closed under conditioning.
+3. **Lemma WN and Proposition LOC** (cost: one check). They close the family "lab-frame Ward identities of link translations" for good, with the reopen condition below.
+4. Lemma TWIST (one line).
+
+**Reopen condition for the families of this row.** (i) An exact reformulation of pure 4D SU(2) lattice theory in which a continuous non-abelian group acts as a global symmetry on the integration variables and moves gauge-invariant observables; or (ii) covariant moves with a controlled Jacobian whose cost form stays a curl form when the response is of order one. Without (i) or (ii) no further invention row on twist mechanisms is proposed.
+
+### 7.3 Work items (each a complete brief)
+
+**W1, check (a model that did not write this file; high effort).** Check line by line `library/gap-invent-selective-max.md` Sections 4.1, 4.2, 5.1, 5.2: Lemma WN (i)-(iii), Corollaries WN1-WN3, Lemma TWIST, Lemma JEN (i)-(ii), Lemma SLAB. Test first: (a) the sign rule of WN (i) for a link traversed backward; (b) the one-plaquette case: for the density exp(beta x) on SU(2), (beta/3) E(1 - x^2) = E x by one integration by parts with the weight (2/pi) sqrt(1 - x^2), so rho = 0 there; (c) in WN (iii), that the gauge average at one free site kills each cross term and that the closed word passes that site once (sides at least 3); (d) the count "three" in WN1; (e) in JEN (ii), that the averages at the four corner sites may be taken one after the other. Then judge the two ARGUED remarks: "the best lab-frame bound is of order beta eta^2 R" (5.1) and Proposition LOC (4.3). Report the first failing step, or none. Stop rule: no new attack. Output `library/gap-invent-selective-check.md`.
+
+**W2, reading for the check of row 1011 (the model that checks `library/gap-pinned-cell-gauge-max.md`).** Read Sections 5.1 and 5.2 of this file. Answer for row 1011's construction: (1) what is its blind bound on the stiffness of a cell of side R, and does it scale like beta or like beta R; if like beta, which covariant representative or which theorem of the account supplies it; (2) does its class contain two pinned parallel hyperplanes at distance below beta, or cells that are not cubes; (3) does its iteration run at one fixed bare coupling without the account's effective actions. No new claim. Output: three lines in the check file of row 1011.
+
+**Not proposed.** (1) A proof that rho(beta) > 0 at large beta (it needs E(1 - x_p) < 3/(3 + 2 beta) with a written constant): it would only complete the kill of C2. (2) The Jacobian of the Laplacian-frame moves of C9: it works above the band only. (3) Any row on C4 (another action), C5 (on file as the frustration bootstrap, with row 834's open inequality), C6, C7.
+
+## 8. Step 8: report (exercise skill, step 9) and RESULT (2026-11-15T23:05Z)
+
+**What this run did not cover.** No numeric run. No literature search. The primary 2D texts were read only at [B] pp. 1-12 and [28] pp. 4-8; the rest through rows 1007, 1009, 1010. The lane was searched by grep for the listed terms only, not read. Row 1011's result did not exist at this pin. Nothing here is checked by another model.
+
+1. **The wall, in plain words.** Two-dimensional spin models with a non-commuting symmetry have a proof that long-range order melts at every temperature. The proof twists the spins on one boundary and shows that the cost of the twist shrinks as the box grows; the shrinking comes from the fact that rotations about two axes do not commute. We asked whether new mathematics of the same kind exists for the four-dimensional SU(2) lattice gauge theory.
+2. **What this run found.** (ARGUED, with PROVED lemmas.) The 2D proofs follow ten design rules (Section 2). Nine gauge mechanisms were built from them, none the direct port of row 1011 (Sections 3, 6.1). None survives. The common reason is exact: in a gauge theory the colour symmetry is local, so the changes of variables that are free do nothing, and the ones that do something cost a fixed amount per site, however smooth they are (Lemma WN, PROVED). A gauge twist of pinned boundary data is always removable (Lemma TWIST, PROVED). What is left is a response to gauge-invariant boundary data with a field-dependent colour frame. That is row 1011's object, and it works only while a frame exists, that is above the band.
+3. **Filters corrected.** K8 (winding and refilling) is a cost, not an obstruction (ARGUED, 6.3). One test added: the slab device (Lemma SLAB).
+4. **Routes worth doing.** None from this row. The reopen condition is in 7.2.
+5. **What not to do next.** Another invention row on twist or stiffness mechanisms in the lab frame; a path to the centre twist through non-central twists; a winding-number twist of pinned data; a third-copy representation for the Wilson weight.
+6. **The exact price.** Not changed: (W), or (CAS), or the seed (`parts/gap.md` L225-236). This row adds: a 4D analogue of the 2D "short step" (a selective gain at order-one response) is the missing object, and no candidate for it was found.
+7. **Work items.** W1 and W2 of 7.3.
+
+RESULT: Row 1013 (Claude Fable 5.2 max, Mac mini worker 2; author, checked by no one; no numeric run, no literature search). (1) Ten design rules R1-R10 reconstructed from OpenAI's 2D texts, each with its place (a reconstruction, ARGUED); forced by "zero gain for the abelian model": two non-commuting axes, order four, a twist that is a bracket of trivial moves. (2) Nine candidate mechanisms for 4D SU(2) that are not the direct port; C4, C5, C6 found again in the lane and credited. (3) No candidate survives: C1 (corner-twist inequality), C2 (non-central path to the centre twist) and C3 (winding twist) FAIL by exact lemmas; C4-C9 FAIL by argued reasons (C5 at the five-dimensional test, C7 and C8-C9 because a colour frame exists only above the band). (4) PROVED by hand, unchecked: Lemma WN with Corollaries WN1-WN3 (the cost form of every lab-frame link translation is diagonal in corners, E X^2 = sum beta_p E x_p theta^2, at least 3 beta xbar times the l^2 norm; non-central twists at free sites cost beta rho per theta^2, rho = (beta/18) times a same-link field-strength correlation), Lemma TWIST (every gauge twist of pinned data is removable; no winding label on the lattice), Lemma JEN (Jensen bound of a boundary twist, with cosine factors), Lemma SLAB (two pinned neighbouring hyperplanes carry the 3D O(4) model). ARGUED: Proposition LOC (a twist with a blind bound and a bracket source exists in pure gauge theory only as a response to gauge-invariant boundary data with a field-dependent frame), the scaling beta eta^2 R of the lab-frame blind bound (so the blind first step of a 4D pinned-cell iteration needs the account's effective actions and is a (K-flow) statement), rho > 0, and the corrected form of the refilling test K8. Open: (W), (CAS) and every form of the wall, untouched; a 4D analogue of the 2D short step at order-one response; the check W1 of this file and the reading W2 for row 1011.

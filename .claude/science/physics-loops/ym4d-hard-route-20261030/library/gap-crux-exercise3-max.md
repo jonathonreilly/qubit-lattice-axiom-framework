@@ -31,8 +31,8 @@ The plan has eight steps. Each maps to steps of the skill.
 
 | Plan step | Skill step | Content | State and main result |
 |---|---|---|---|
-| P1 | 0, 1 | Locate the record; open and closed lists; the wall, plain and precise | done 13:36Z |
-| P2 | 2 | Inventory of what is known, with marks; the inputs since rows 858/878/899 | pending |
+| P1 | 0, 1 | Locate the record; open and closed lists; the wall, plain and precise | done (written before 2026-11-15T13:44Z) |
+| P2 | 2 | Inventory of what is known, with marks; the inputs since rows 858/878/899 | done 2026-11-15T13:44Z: 40 items; 9 are BELIEF |
 | P3 | 3, 4 | Reason up from the inventory; assumptions table | pending |
 | P4 | 5 | Open the closed list; compare; mark found or new | pending |
 | P5 | 6 | Audit of the discard tests (K7, U(1), Q_8, 2T, ceilings), set-aside methods, working rules | pending |
@@ -46,6 +46,7 @@ Status log (UTC, each time read from `date -u`):
 - 2026-11-15T13:34Z. Skill and references fetched into `/tmp/row998-skill/` and read. Rule 0a grep: `library/open-core.md`
   (564 lines) has no line with Z4, gapless, scale-invariant, (U1), (U2), order one, or seed. FINISH rows that hold
   the wall: 982, 988, 996 (all ended, with RESULT lines). No queued row other than this one names it.
+- 2026-11-15T13:44Z. Steps 0 to 2 on disk.
 
 ## Step 0. The record of the wall, and the two lists
 
@@ -144,3 +145,72 @@ passage.
 **What would count.** Progress: a proved property of the Wilson measure that fails at the comparison cases and that
 a written lemma consumes. Closure: a proof of (W). Price: a proof that (W) is equivalent to one named statement.
 No-go: a model of the class in which every proved input of the lane holds and (W) fails.
+
+## Step 2. The inventory: what is known to be true
+
+Sources: the "open now" list of Step 0 and results recalled from the literature. Marks are the skill's. "Lane" means
+a theorem of this repository; its standing word is the lane's own, with the check row. I did not re-check any item.
+"Read here" says how much of the item I read in this run. A recalled published theorem was not re-read.
+
+### 2.1 The object and the engine
+
+| # | Item | Mark | Source | Standing; read here |
+|---|---|---|---|---|
+| I1 | The Wilson SU(2) measure on a periodic torus; Z, F, f, D(a), T, m(B), S(k; B) as in 1.2. | DEF | `gap-crux-restate.md` L36-56 | definitions read in full |
+| I2 | (TM): Z(n) = Tr T^(n_mu) with T positive, trace class; the top eigenvalue is simple with a positive eigenfunction. | THM, lane | `gap-transfer.md`, row 667 | checked rows 671, 698, 699; statement only |
+| I3 | Lemma A and (LB): (Tr T^k)^(1/k) does not increase; F(n)/abs(n) does not increase in each side; D >= 0. | THM, lane | `gap-crux-restate.md` L46-52 | two-line proofs read |
+| I4 | Lemmas K, X, E, E', Theorem S, Corollary S3': one seed S(N; (2N)^3) < 1/5041 gives m(L^3) >= log(1/(5041 s))/N for all L >= 2N. The proof uses (TM) and the exchange of two axes only. | THM, lane | same file 3.4 | checked rows 698, 699 (one correction); read in full |
+| I5 | Theorem D: 1 + S(n; (2n)^3) <= exp(Phi(n)), Phi(n) = 16 F(n^4) - F((2n)^4); Phi(n; beta) = 96 n^4 times the beta-integral of the finite-size shift of the plaquette mean. | THM, lane | same file 3.1 | checked rows 698, 699; read in full |
+| I6 | Proposition Delta: log(1 + S(a; b^3)) <= (b/a)^3 D(a). | THM, lane | row 708 | checked row 709; statement only |
+| I7 | Theorem SH: the table of box shapes and thresholds (1/5041, and 1/1650 with two stages). | THM, lane | row 707 | same-provider check; cross-provider check row 959 queued; read only through its use |
+| I8 | Theorem ZD and ZD-c: the seed is equivalent to "D bounded and b m(b^3) unbounded"; (PHYS-SEED) iff (BDD-Delta) and (Z-UNB). Corollary Z4: the dichotomy G or M. | THM, lane | `gap-phys-seed.md` L296-330 | "PROVED GIVEN" I4, I6, I7; row 727 checked a conditional part; statements and proofs read |
+| I9 | Lemma FLOOR: no seed below the massless floor (side times gap above 17.04). Identity G: S = 0 at zero temporal coupling. Lemma ORD. The Schwarz form of the Route Z transport, with Lemma BC. | THM, lane | rows 988, 991 | check 991 (same provider): HOLDS; RESULT lines only |
+| I10 | Lemma IHC and Corollary CU: (SEED-phys) follows from a start value (TH) at the account's torus time and (HC-phys), a hypercontractive rate M_H a uniform in the cutoff. | THM, lane | rows 978, 981 | check 981 (same provider): HOLDS after correction; RESULT lines only |
+| I11 | Lemmas CAP, TEL, EE, COUNT: the bridge constants are capped; (U1) gives (U2); (U3) gives (U2), not the converse; (HC-phys) with (TH) is the state count of a massive gas. | THM, lane | rows 982, 984 | check 984 (same provider); RESULT lines only |
+| I12 | (TH) needs (DET), a bound between Gaussian normalisers of two tori. Lemma A' and Corollary B give (DET) from (I-loc), R, W; (ID-a) and (ID-b) identify the account's step normaliser, up to one normalisation (r4). | THM, lane; partly ARGUED | rows 986-994 | same-provider checks 989, 994; open: (r4), pr-lay W, the cross-provider check; RESULT lines only |
+
+### 2.2 Results since the last exercises (rows 962 to 997), with their marks
+
+| # | Item | Mark | Source | Standing; read here |
+|---|---|---|---|---|
+| I13 | Audit of 19 constraints and 17 relaxations: no relaxation of the constraint system is a new input for the seed. | reading (the lane's ARGUED) | row 962 | partial run, unchecked; RESULT line only |
+| I14 | Lemma SUB: a tilted covariance is bounded below by the variance at any frozen slice. A box-uniform (TILT-COV-sup), its quotient form and (ABS-flow) are refuted at GUIDE level at beta 2.5 and 2.6. Open form: (LSI-traj-seed). | THM, lane, and GUIDE | row 970 | unchecked (check 972 held); RESULT line only |
+| I15 | Theorem D2: a pinning tilt leaves O(4)-symmetric sheets; the sup-over-tilts covariance is at least lam_* times the zero-tilt value, lam_* >= 8.54 (side 4), 21.78 (side 8). So no criterion with a supremum over tilts reaches the seed at beta 2.3. It holds for Q_8 and 2T too. | THM, lane, GIVEN two ported lemmas (reflection positivity at bisecting planes; Frohlich-Simon-Spencer) | rows 977, 979 | check 979 (same provider): HOLDS; the two ported lemmas are not rebuilt |
+| I16 | The quotient form is refuted at GUIDE level at beta 2.3 (q_0 about 0.24 to 0.25). | GUIDE | row 980 | unchecked run |
+| I17 | A seed at one coupling has no carrier to finer cutoffs except (NOCRIT) plus an asymptotic-freedom climb; beta 2.3 is not a lattice of the account's family. | reading (lane's ARGUED) | row 978 | check 981; RESULT line only |
+| I18 | (UNIT) failed by three routes (fine metric, no metric, count of states). (U1), (U2) failed by three more routes (massless floor; a beta_t path that needs three-dimensional mixing and (NOCRIT); no soft exclusion of branch G). | FAILS (records of failed attempts; they rule out nothing) | rows 982, 988 | RESULT lines only |
+| I19 | Identity MIX: K7 is Wilson with annealed Gaussian plaquette couplings of variance 8 beta_A/3. Lemma SHEET: every hypothesis uniform over plaquette coupling fields fails on large tori, for every group. Propositions TILT, LIP, MF, ELL, 4F. | THM, lane | rows 996, 997 | check 997 (same provider): HOLDS; RESULT lines only |
+| I20 | The Wilson character coefficients c_j = I_(2j+1)/I_1 are strictly log-concave in j (Turan); K7 points and w_p (p >= 2) violate it. No consumer is known. | THM, published, cited; consequence proved in the lane | row 995 | unchecked; RESULT line only |
+| I21 | No separating input with a consumer was found. The inputs that tell Wilson from the comparison models and that a lane tool can use are three path statements: (ZF) with Route Z, (VIR_K), the finite-size plaquette shift of I5. | reading | row 996 | RESULT line only |
+
+### 2.3 The account and the consumer
+
+| # | Item | Mark | Source | Standing; read here |
+|---|---|---|---|---|
+| I22 | The account (Sussman and Alpoge, with Claude and Codex) controls tori whose side is at least l_*(g) times the length where the running coupling is g, g small ("first passage"). "No step of the account integrates the scales between 1 and l." | SUPPLIED (the account, conditional on its packages) | `gap-phys-seed.md` L60-66; SA L6844-6869, L21518-21532 | quoted through the lane's file; SA lines not re-read here |
+| I23 | The account's Theorem 0 does not assert clustering, a unique vacuum or a gap. | SUPPLIED | `GOAL.md` L46 (CA-I 2706-2710) | read in GOAL.md |
+| I24 | The stability bounds give the start value (TH) after correction, given (DET). | THM, lane, conditional | row 981 | same-provider check |
+| I25 | The consumer of (W): the mass gap is a later target, not part of T0. | DEF (contract) | `GOAL.md` L37 | read |
+| I26 | Owner rules: no computer-assisted step; port, do not redo; no duplicate attacks; credit by name. | SUPPLIED (working rules) | `GOAL.md` L10-18, L39-48; `FINISH.md` L52-73 | read |
+
+### 2.4 The nearest models, where the conclusion is true or false for a known reason
+
+| # | Item | Mark | Source | Standing; read here |
+|---|---|---|---|---|
+| I27 | Small beta: a gap and an area law (Osterwalder and Seiler 1978). The lane's proved ranges stop at 1/3, 2/3, 0.775 and 4 G_3 = 1.0109, each for one family of methods. | THM, published, recalled; THM, lane | `gap-status-1113.md` L68, L110, L112, L341 | lane rows 834-841, checks 840, 841, 849, 857; lines read |
+| I28 | Compact U(1) in four dimensions has a massless, deconfined phase at large beta (Guth 1980; Frohlich and Spencer 1982). So it has no seed there. | THM, published, recalled | literature | not re-read; whether the source covers the Wilson form of U(1) was not verified here |
+| I29 | A finite gauge group is frozen at large beta: perimeter law, flux sectors degenerate up to exponentially small terms. So Q_8 and 2T have no seed there. | THM, published, recalled (Peierls argument); lane check 870 | literature; row 870 | not re-read; the freezing couplings (about 2.2 for 2T) are BELIEF from numerics |
+| I30 | The weights w_p = exp(beta ((1 + x)/2)^p) have a first-order transition for large p (van Enter and Shlosman 2005). At the transition coupling there is no seed (Proposition V). | THM, published, cited; THM, lane, GIVEN it | `gap-crux-fp.md` L356-364 | statement and proof of Proposition V read; the published theorem not re-read |
+| I31 | K7: the mixed action exp(beta_F x + beta_A (4x^2 - 1)/3) has a first-order line (Bhanot and Creutz 1981). Row 995: the 1981 end point is not a bulk end point on large lattices (Gavai 1996); coexistence is supported for beta_A about 1.3 to 1.5. | BELIEF (numerics) | `gap-mid-max.md` L48; row 995 | lines read |
+| I32 | Wilson SU(2) has no bulk transition; a m(0++) = 1.22 to 0.51 at beta 2.3 to 2.6 (Teper); the lattice beta function dips by 25 percent without a zero (Engels, Karsch, Redlich). | BELIEF (numerics) | row 995 | RESULT line only |
+| I33 | Small-volume expansion (Luscher; van Baal): in a small periodic box the zero-flux gap is 4.1167 g^(2/3)/L and the flux splitting is of order exp(-12.4637/g). So z tends to 0 at small L. | BELIEF (perturbative, not rigorous) | `gap-phys-seed.md` L194; van Baal hep-ph/0008206 | recalled through the lane's file |
+| I34 | The Migdal-Kadanoff recursion for SU(2) in four dimensions flows to strong coupling from every start value (Ito 1985; Muller and Schiemann 1985). It is the one written proof I know of an order-one crossing for a gauge-type model with no second small parameter. | THM, published, recalled | literature | not re-read; hypotheses recalled only in outline; the lane's record of it is looked up in Step 5 |
+| I35 | Tomboulis (2007): the partition function is bounded above and below by Migdal-Kadanoff decimations. His confinement conclusion has a gap (Ito and Seiler 2007). | THM, published, recalled (the bounds); open (the conclusion) | literature | not re-read |
+| I36 | Order-one crossings with a second small parameter 1/N: Kupiainen 1980 (O(N), d = 2), Kopper, Magnen, Rivasseau 1995 (Gross-Neveu mass generation), Gawedzki and Kupiainen 1986 (hierarchical O(N)). | THM, published, recalled | literature | not re-read |
+| I37 | The mass gap of the O(3) model in two dimensions at every beta is unproved. The engine has a two-dimensional form (Corollary S2), so the same wall stands there. | BELIEF (state of the literature) and THM, lane (Corollary S2, scope corrected in row 698) | `gap-crux-restate.md` 3.4 | read |
+| I38 | Asymptotically free, reflection-positive gauge theories with matter can be gapless in the infrared (Banks and Zaks 1982, perturbative; lattice studies of SU(2) with two adjoint Dirac flavours). | BELIEF | literature | recalled |
+| I39 | Fact T: the single-plane twist has classical cost zero for SU(2); for U(1) it costs beta pi^2 n_3 n_4/(2 n_1 n_2). Fact B: b_0 = 11/(24 pi^2) > 0. "No exact inequality found here or in the sources uses Fact B at couplings of order one." | DEF-level fact (T); THM, published, perturbative, recalled (B); reading (the last sentence) | `gap-crux-restate.md` L62 | read |
+| I40 | In SU(N) Wilson theories with N >= 4 a bulk first-order transition exists at a finite coupling, and the continuum limit lies beyond it. | BELIEF (numerics, recalled) | literature | recalled |
+
+**Counts.** 40 items: 9 BELIEF (I31, I32, I33, I37 in part, I38, I40, and the numeric parts of I29, I14, I16), the rest DEF, SUPPLIED or THM with the standing shown.
+No item of this table is used in a proof below with a mark stronger than its own.

@@ -49,3 +49,71 @@ Marks used below: PROVED (every step written here), ARGUED (argument written, a 
 | Nilpotent groups, the Killing form | lane grep: no file | not on file | used in Section 4. |
 
 **What this run does not cover (kept current).** No literature search beyond the lane's records (rows 1007, 1009, 1010, 1012 are the literature lens of this object; the row asks for none). The primary OpenAI texts were not re-read. PR branches other than this one were not searched. Rows 1016 and 1017 were read only at their first step.
+
+## 2. Step 2 result: the 4D short step as an exact target
+
+Marks: DEF, PROVED (by hand here, checked by no one), ARGUED, OPEN.
+
+### 2.1 The contract (DEF)
+
+A **short step** is a triple (R, class, consumer) with four clauses.
+
+- (L0) **Closure.** The class is kept by the conditioning the proof uses.
+- (L1) **Blind half.** A bound that holds for every model of the class and never loses: R(lQ) <= R(Q) (or a stated blind map).
+- (SS) **Selective half.** There are r_0 < r_1, delta > 0 and an integer l >= 2 with: r_0 <= R(Q) <= r_1 implies R(lQ) <= R(Q) - delta.
+- (L3) **Consumer.** R(Q) <= r_0 for one Q gives the seed of Theorem S (`library/gap-crux-restate.md` L192), or (W).
+
+In OpenAI's 2D proof all four hold on one class: (L0) pinned squares with all pins and strengths; (L1) "the stiffness of the larger square is an average of cell stiffnesses minus a covariance"; (SS) is [28] (3.52); (L3) is [28] 3.9-3.12. In 4D no triple on record has all four. Two forms exist. Each lacks one clause.
+
+### 2.2 Form (T-per): the periodic form. It is (CAS) of row 708 (named match; not attacked here)
+
+Objects (DEF, `library/gap-crux-restate.md` L29-45): Wilson SU(2) at one beta on tori with sides at least 3, F = log Z, f = inf F(n)/|n|, Delta(n) = F(n) - f |n| >= 0, D(a) = Delta(a, a, a, a), Phi(a) = 16 F(a^4) - F((2a)^4) >= 0.
+
+**Target (T-per).** There are delta > 0 and M with D(3) <= M such that, for every a >= 3 with 6.1 x 10^(-4) < D(a) <= M:
+
+  D(2a) <= D(a) - delta.
+
+- Cell Q: the torus of side a. R(Q) = D(a). Class: the engine's class (reflection-positive gauge models with (TM)). (L0): no conditioning is used. (L1): D(2a) <= 16 D(a) only (Lemma A), which is not a blind half in the sense above. (L3): Proposition Delta of row 708 (`library/gap-mid-max.md` L144): D(a) <= 6.1 x 10^(-4) at one a gives the seed.
+
+**Lemma ADD (PROVED).** (T-per) holds if and only if (CAS) of `library/gap-mid-max.md` L64 holds. Both are equivalent to: Phi(a) >= 15 D(a) + delta on the range.
+
+Proof. D(2a) = F((2a)^4) - 16 f a^4 = 16 F(a^4) - Phi(a) - 16 f a^4 = 16 D(a) - Phi(a). So D(2a) <= D(a) - delta is Phi(a) >= 15 D(a) + delta. If (CAS) holds with theta, take delta = (1 - theta) 6.1 x 10^(-4). If (T-per) holds with delta, take theta = 1 - delta/M. In both directions D does not increase along the doublings, so the range condition D <= M is kept. QED
+
+Also D(a) = sum over k >= 0 of Phi(2^k a)/16^(k+1) (PROVED: iterate D(a) = Phi(a)/16 + D(2a)/16; D(2^k a)/16^k = a^4 (F/|n| - f) at side 2^k a, which tends to 0). So (T-per) says: Phi at side a exceeds 15 times its own weighted average over the larger sides. In a scale-invariant theory Phi is constant and Phi = 15 D exactly.
+
+**False for compact U(1) and for a product with a massless factor (PROVED, given the U(1) theorem I28 as the lane holds it, Villain at beta >= 2^14, and Proposition Delta).** Such a model has no seed at any size (Corollary PT1, `library/gap-crux-exercise3-max.md` L711). By Proposition Delta, D(a) > 6.1 x 10^(-4) for every a >= 3. If (T-per) held, then after at most (M - 6.1 x 10^(-4))/delta doublings D would be at most 6.1 x 10^(-4). Contradiction. For the free photon D(a) tends to a positive constant (RECALLED in row 708). QED
+
+**What (T-per) lacks: a mechanism slot.** Row 708's verdict stands: "as a mechanism it is empty: it restates the seed in steps." Route RA is blocked-equivalent (`parts/gap.md` L152). The three routes of this row are tests of mechanisms. Each needs an identity in which a gain can appear. That is the second form.
+
+### 2.3 Form (T-pin): pinned cubes, in the law of the model. It has a mechanism slot and no consumer
+
+Rows 1011, 1013 and their checks leave these facts for any pinned form. A class supremum of a continuous response has no classical bound (Proposition B'). Cells must be cubes (Lemmas SLAB, EMB). The only symmetric link twists are central (Lemma CEN). So the class is taken **in law**, and the response is the one gauge-covariant object that needs no frame: the cross-cell covariance of the Neumann data (row 1011 7.5, registry line G5; credited).
+
+**Objects (DEF).** Wilson SU(2) at coupling beta; mu is a translation-invariant Gibbs state on Z^4, or the law on a large torus. For l >= 2, T_l is the tiling of Z^4 by the cubes x + {0, ..., l}^4, x in l Z^4, with the weights w_p of row 1011 3.1. The **rings** are the boundary links of the cells. F_l is the sigma-algebra of the ring links. If l divides l', then F_l' is contained in F_l. Given F_l the cells are independent, each with the pinned law (c, omega_c, beta) of row 1011 3.1 (Markov). For a boundary link l of a cell c put N_l = sum over plaquettes p of c containing l of (+ or -) beta w_p (s_p transported to the tail of l), as in row 1011 Proposition A (iii), and Nbar_l(omega) = E_(c, omega)[N_l].
+
+For two boundary links l, l' of c that share no plaquette put K_c(omega)(l, l') = Cov_(c, omega)(N_l, N_l'), a 3 x 3 matrix. By Proposition A, minus K_c(omega)(l, l') is the mixed second derivative of F_c in the rotations of l and l'. Under a gauge map g of the boundary sites it changes to Ad(g_tail(l)) K Ad(g_tail(l'))^T. So its Hilbert-Schmidt norm is gauge invariant. With F_- and F_+ the two faces x_1 = const of c, put
+
+  R_c(omega)^2 = l^2 sum over l in F_-, l' in F_+ of |K_c(omega)(l, l')|_HS^2,    Rbar(l) = (E_mu[R_c(omega)^2])^(1/2).
+
+**Lemma CHAIN (the mechanism slot; PROVED).** Let Q be a cube of side L l with pin Omega, tiled by L^4 cells of side l. Let l, l' be boundary links of Q such that no cell contains both. Then
+
+  K_Q(Omega)(l, l') = Cov_(Q, Omega)( sum over cells c containing l of Nbar_l^c , sum over cells c' containing l' of Nbar_l'^c' ).
+
+Proof. F_Q(Omega) = - log of the integral over the inner ring links of exp(- sum_c F_c(omega_c)), because cell actions add (the weights w_p) and the cell interiors are independent given the rings. Rotate l and l' with the extension by zero. The first derivative of sum_c F_c in l is sum over c containing l of Nbar_l^c. The mixed second derivative of sum_c F_c is zero, because no cell contains both links. So the mixed second derivative of F_Q is minus the covariance. QED
+
+In words: the flux correlation across the large cube is the covariance, over ring configurations, of the mean fluxes of the cells at the two faces. The mean flux Nbar_l^c depends on the pin of c at its other faces through - K_c (the same Proposition A). So K at scale L l is built from the tensors K_c at scale l, composed through the ring fluctuations. This is the place where a gain or a loss of one step can be read.
+
+**Target (T-pin) (candidate; its three open slots are named below).** There are r_0 < r_1, delta > 0, an integer L >= 2 with: r_0 <= Rbar(l) <= r_1 implies Rbar(L l) <= Rbar(l) - delta.
+
+- (L0) holds by the tower property of conditional expectations. (L1): OPEN. No inequality Rbar(L l) <= C Rbar(l) is known. (L3): OPEN. No statement "Rbar small gives decay of all observables" is on record (the 4D analogue of rule R9 of row 1013).
+- Size (ARGUED). For a Gaussian field with action (beta/2) sum_p w_p (d phi)_p^2, F_c is beta/2 times the Dirichlet-to-Neumann form of the cube, K_c = - beta times its off-diagonal block, and the kernel between opposite faces is of size l^(-4). Then R_c^2 is of order l^2 l^6 beta^2 l^(-8) = beta^2 at every scale. So Rbar is scale invariant for the free photon, and (T-pin) is false there. The normalisation l^2 is chosen for this. Not proved: the convergence of the lattice kernel.
+- Products (PROVED). For a product model with product weight the Neumann data of the two factors are independent, so K is block diagonal and R_c^2 = R_(1,c)^2 + R_(2,c)^2. A massless factor keeps Rbar above its own value.
+- Compact U(1): at theorem grade (T-pin) is tested only through a consumer, and it has none. At belief grade (Coulomb phase with renormalised stiffness of order one, beta from about 1.01 to a few) it is false.
+
+**Why this form.** Lemma CHAIN is exact, needs no frame, no symmetric twist and no supremum over pins. Its right side is a covariance, so the routes below can be put as questions about one object: route (ii) asks for a flow that bounds it at order-one response; route (iii-a) asks whether the tensors K_c compose coherently (structure) or not (randomness); route (iii-b) asks for a model where they compose coherently for ever.
+
+### 2.4 What "order one" means here
+
+The band of `parts/gap.md` L41-47: the range of scales between first passage (the last scale where the account's coupling g_k is below its threshold gamma) and the seed size. In (T-per) it is 6.1 x 10^(-4) < D <= M. In (T-pin) it is r_0 <= Rbar <= r_1. For each form the long step (R large) is the account's asymptotic freedom and is a (K-flow) input; it is not part of this row.
+
+- 2026-11-15T20:32Z (`date -u`). Step 2 done (Section 2). Step 3, route (iii-b), next.

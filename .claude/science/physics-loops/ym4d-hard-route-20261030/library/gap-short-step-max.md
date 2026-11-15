@@ -117,3 +117,77 @@ In words: the flux correlation across the large cube is the covariance, over rin
 The band of `parts/gap.md` L41-47: the range of scales between first passage (the last scale where the account's coupling g_k is below its threshold gamma) and the seed size. In (T-per) it is 6.1 x 10^(-4) < D <= M. In (T-pin) it is r_0 <= Rbar <= r_1. For each form the long step (R large) is the account's asymptotic freedom and is a (K-flow) input; it is not part of this row.
 
 - 2026-11-15T20:32Z (`date -u`). Step 2 done (Section 2). Step 3, route (iii-b), next.
+
+## 3. Step 3 result: route (iii-b), barrier first
+
+Question of the row: is there a model that keeps every identity the tools use, the bracket term of Proposition W and reflection positivity included, and has no short step? If so, what must a proof use beyond the bracket?
+
+### 3.1 The identities the tools use (inventory; each with its source)
+
+- (T1) Haar invariance on integrated links: Proposition A, Proposition W with its bracket term (row 1011 3.2, 3.3), Lemma WN, Lemma JEN, Lemma TWIST (row 1013 4.1, 4.2, 5.1). Valid for every compact Lie group, every cell complex, every dimension, every strength field.
+- (T2) The cell structure: closure under conditioning on rings (row 1011 3.1), Lemma CHAIN (2.3 here).
+- (T3) Central twists: Lemma CEN, Corollary CEN2 (row 1011 4.3), and Lemma PAR below.
+- (T4) Reflection positivity and the transfer operator (TM), with the blind engine (Lemmas A, K, X, E, Theorem S).
+- (T5) Compactness: |t_p| <= 1.
+
+### 3.2 Lemma PAR: the exact parallel law of central twists (PROVED by hand; the algebra is Mack and Petkova's)
+
+Credit. Mack and Petkova, Ann. Phys. 125 (1980) 117, prove a confinement criterion from vortex containers; the lane holds it as RECALLED (`library/prior/gap-lit-grok.md` Section 2, `library/gap-size-rec-astra.md` 4.1: "Its proof is not rebuilt here"). I did not read their paper. The algebra below is surely theirs in substance. It is written here for the partition function of the container itself, with its exact form. The one-plaquette case is on file as the centre-even form of row 859 (`library/gap-brainstorm2-max.md` L106, L187). No novelty is claimed.
+
+**Setting.** A finite set of links, split into integrated links Lam and pinned links bd. A finite set of plaquettes, each with real strength beta_p (any sign; cell weights w_p absorbed). G is a compact group with a central element -1 of order 2 for which t_p changes sign when one link of p is multiplied by -1 (SU(2), Q_8, 2T, Z_2). Z(Om) is the integral over the integrated links of exp(sum_p beta_p t_p) with pin Om. A **sign field** tau assigns +1 or -1 to every link; (d tau)_p is the product of tau over the four links of p; t_p(tau U) = (d tau)_p t_p(U). tau is **closed** on a set of plaquettes if d tau = 1 there.
+
+Fact 0. If tau is closed on all plaquettes, then Z(tau|_bd Om) = Z(Om). (Substitute U -> tau U on the integrated links.)
+
+**Sub-containers.** Lam_1, ..., Lam_n are disjoint subsets of Lam such that no plaquette contains links of two of them. P_i is the set of plaquettes with at least one link in Lam_i; bd_i is the set of links outside Lam_i that lie in a plaquette of P_i; Z_i(om_i) is the integral over Lam_i of exp(sum over P_i) with pin om_i on bd_i. **Twist system.** Sign fields tau_1, ..., tau_n and sigma with: (H1) tau_i = sigma on bd, for every i; (H2) tau_i is closed on every plaquette outside P_i. Put
+
+  rho = Z(sigma Om)/Z(Om),   r_i(om_i) = Z_i(tau_i om_i)/Z_i(om_i) > 0,   a_i = (1 - r_i)/(1 + r_i) in (-1, 1).
+
+With V = - log rho and v_i = - log r_i (the signed vortex costs): a_i = tanh(v_i/2), and v_i(tau_i om_i) = - v_i(om_i). E is the expectation, in the pinned law with pin Om, of the links outside the Lam_i.
+
+**Statement.** (i) For every subset S of {1, ..., n}: E[prod over i in S of r_i] = rho if |S| is odd, and 1 if |S| is even.
+(ii) Let Etilde be E with the extra weight prod_i (1 + r_i), normalised. Then for every subset M with M not empty:
+
+  Etilde[prod over i in M of a_i] = 0 if M is not all of {1, ..., n},     Etilde[a_1 a_2 ... a_n] = (1 - rho)/(1 + rho) = tanh(V/2).
+
+(iii) So tanh(V/2) is the n-th joint cumulant of (a_1, ..., a_n) under Etilde, and
+
+  |tanh(V/2)| <= prod_i sup |a_i| = prod_i tanh(xi_i/2), xi_i = sup over pins of v_i;     |tanh(V/2)| <= prod_i (Etilde |a_i|^n)^(1/n).
+
+**Proof.** (i) Put tau_S = prod over i in S of tau_i. By (H1), tau_S = sigma^|S| on bd. By (H2) and the disjointness of the P_i, tau_S is closed on every plaquette outside the P_i with i in S, and on P_i (i in S) it equals tau_i times a field closed on P_i. Write Z(sigma^|S| Om) as the integral over the links eta outside the Lam_i of exp(A_rest(eta)) prod_j Z_j(eta|_bd_j), where A_rest is the sum over the plaquettes in no P_j. Substitute eta -> tau_S eta. A_rest is unchanged. For j not in S, Z_j(tau_S eta) = Z_j(eta) by Fact 0 in the sub-container j. For j in S, Z_j(tau_S eta) = Z_j(tau_j eta) by Fact 0 again, which is r_j Z_j(eta). So Z(sigma^|S| Om) = Z(Om) E[prod_S r_i], and sigma^2 = 1.
+(ii) For signs eps_i: E[prod_i (1 + eps_i r_i)] = sum over S of (prod_S eps_i) E[prod_S r_i] = (1/2)[prod(1 + eps_i) + prod(1 - eps_i)] + (rho/2)[prod(1 + eps_i) - prod(1 - eps_i)]. For eps = +1 this is 2^(n-1)(1 + rho). For eps = -1 it is 2^(n-1)(1 - rho). For mixed signs it is 0. Divide the cases "eps_i = -1 on M, +1 off M" by the case eps = +1.
+(iii) A joint cumulant is a sum over partitions of products of mixed moments of the blocks. Every partition other than the one block contains a proper block, whose moment is 0 by (ii). The two bounds are the sup bound and Hoelder's inequality. QED
+
+**What it gives.** For containers Gamma = Sigma x D (Sigma a closed surface of plaquette-dual type, D a transverse disc) with n parallel sub-containers Sigma x D_i, a twist system exists: tau_i = -1 on the links that cross Sigma x (a path in D from inside D_i to a fixed point of the boundary of D, avoiding the other D_j). Then:
+
+- **A blind half for a central response.** The vortex cost of a container is at most that of any parallel sub-container, and tanh(V/2) multiplies over parallel sub-containers. This is clause (L1) for the response xi = sup-pin vortex cost. It holds for every group with a central involution.
+- **An exact statement of "structure against randomness" for this response.** The cost of the large container is exactly an n-point cumulant of the sub-container activities. If the activities were independent under Etilde, the cost would be 0. A positive cost is exactly a rigid parity correlation of the activities.
+- **A third form of the target, (T-vor).** R = xi (sup-pin), or the moment form (Etilde |a|^n)^(1/n) with the outer pin taken in supremum; (L0) holds (pinned sub-containers), (L1) is Lemma PAR, (L3) is Mack and Petkova's criterion for the centre-odd sector only (RECALLED; route RE of `parts/gap.md` L153, which still needs the even step). (SS) is OPEN, and its exact form is in 3.4 below.
+
+### 3.3 The barrier table (valid form of each test: a model with the identity and without the conclusion)
+
+| Model | Identities it keeps | No short step: standing | What a proof must therefore use |
+|---|---|---|---|
+| (a) Compact U(1); free photon | all of (T1)-(T5); every bracket is 0 | THM for Villain at beta >= 2^14 (lane I28); free photon exact | a bracket (rule R4 of row 1013) |
+| (b) Product with a massless factor | all; the bracket of the SU(2) factor is there | PROVED given (a) (Lemma PT) | the whole state space: a response in every Lie algebra direction, so a perfect Lie algebra, [g, g] = g |
+| (c) Frozen Z_2 (and Q_8, 2T) | (T2)-(T5); Lemma PAR verbatim, with its blind half | Z_2: THM, lane (Peierls, beta > 2.191; T_per). Q_8, 2T: BELIEF at order one | a continuous path from 1 to -1: a vortex whose flux is spread over many sub-containers (fractional vorticity). Lemma PAR sees only vorticity 0 or 1 in each sub-container. |
+| (d) Frozen slices: every spatial link pinned to 1 (Lemma SLAB of row 1013 on every slice) | (T1) for the time-like links with the full O(4) bracket and an exact symmetric twist with classical cost; (T4): it is a stack of independent 3D O(4) models, one per time layer; (T5) | long-range order at large beta: Froehlich, Simon and Spencer 1976, RECALLED (the lane's rebuilt Gaussian domination, row 1000, is its main input; the order itself is not rebuilt) | that all six plaquette orientations fluctuate at comparable strength: the classical cost of a twist is scale invariant only for the full 4D curl form. In (d) the cost of a twist at scale l is beta l. |
+| (e) Adjoint Higgs field of unit length, hopping kappa | (T1) with a matter current added to X; brackets present for kappa finite | end point kappa = infinity is compact U(1) exactly (Lemma GG, row 1004; THM with (a)); kappa finite: BELIEF | the absence of a matter current: the contact term of Proposition W is a covariant curl form with no mass term |
+| (f) SU(2) in five dimensions | all of (T1)-(T5), with the same formulas | BELIEF (numerics, F15 of `gap-crux-fp.md`) | dimension 4, through one mode sum (rule R6) |
+| (g) Weights exp(beta ((1+x)/2)^p), p large; the K7 line | all, with the weight's derivatives in place of beta | first-order transition: THM (van Enter and Shlosman; Proposition V). A massless singlet at the K7 end point: BELIEF | not a barrier to a colour response dropping. It binds the consumer (L3): a small colour response does not give the gap of singlet observables without a property of the Wilson weight. |
+
+Remarks. (d) is a translation-invariant form of Lemma SLAB and of Theorem D2's sheets (rows 977, 1013; credited). Proof of the identification: with all spatial links equal to 1, the plaquette (x, t; i, 4) is (1/2) tr(q(x+i, t) q(x, t)^(-1)), q = the time-like link; plaquettes of different layers share no integrated link. (c): every finite group with a central involution satisfies Lemma PAR; Q_8 is nilpotent, so its commutators are central.
+
+### 3.4 What the barriers leave: the exact open half in the form (T-vor)
+
+Take cubic containers: Sigma of linear size l, D of side l; doubling gives Sigma of size 2l and D of side 2l. The large container holds 4 parallel copies of (Sigma_2l, D_l). By Lemma PAR,
+
+  tanh(xi(Sigma_2l, D_2l)/2) <= tanh(xi(Sigma_2l, D_l)/2)^4.
+
+The missing statement is a **series bound**: xi(Sigma_2l, D_l) <= kappa xi(Sigma_l, D_l). Arithmetic of the map r -> 2 artanh(tanh(kappa r/2)^4) (hand values: kappa = 4: 0.3 -> 0.167, 0.4 -> 0.394, 0.5 -> 0.70; kappa = 1: a contraction everywhere): with kappa = 4 it contracts below r = 0.40 and expands above, like R(2l) = 4 R(l) - log 4 for large R. Classical scaling of a thick vortex says kappa = 4 at fixed thickness and a factor 1/4 from doubling the thickness. The blind half recovers only the entropy term log 4 of that factor 1/4. So in this form the short step is exactly: **the gain of spreading a centre flux continuously over the doubled thickness**, at order-one cost. Frozen Z_2 has no such spreading and has R(2l) near 4 R(l). Two cautions. The series bound is not proved at any kappa (a closed vortex cannot be cut into pinned patches without a thin crossing at each cut). And at weak coupling the sup-pin cost is not scale invariant: for a pin that forces a non-abelian interior curvature of order one per plaquette, a spread vortex pays the mass term of Lemma FR on its whole spread region, so the cheapest vortex is thin and costs of order beta |Sigma| (ARGUED). So the supremum must be taken over outer pins at distance at least l, or in moments (the Hoelder form of (iii)).
+
+### 3.5 Verdict on route (iii-b)
+
+- No model is built that keeps (T1)-(T5) on isotropic cubic cells in four dimensions, for a connected simple group without matter, and has no short step. None is believed to exist (test table point 5, `parts/gap.md` L222). Mark: OPEN, as before this row.
+- What is established, PROVED: the bracket identity is kept verbatim by model (d), which is ordered at large beta given the RECALLED theorem; the central-twist identities, with their blind half (Lemma PAR), are kept verbatim by model (c). ARGUED: the readings of the last column.
+- So a proof of the short step must use, beyond the bracket: (1) a perfect Lie algebra, in every direction of the response; (2) a continuous path to the centre (spreading); (3) isotropy of the cell in four dimensions, so that the classical cost is scale invariant; (4) the absence of a mass term in the contact term (no matter current); (5) for the consumer, a property of the Wilson weight. Items (1), (3), (5) are found again (rules R4, R6; tests K1, K7, Proposition V). Items (2) and (4) are stated here in exact form: (2) through Lemma PAR, (4) through Lemma GG.
+- Off the path of (W) except as constraints. The one new exact tool is the blind half of (T-vor).

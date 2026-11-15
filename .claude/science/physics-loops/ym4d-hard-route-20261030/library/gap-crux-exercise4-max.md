@@ -35,6 +35,9 @@ Status log (times from `date -u`):
   `gap-tiltproof-max.md` L236-255; `gap-sepinput-max.md` L356-402; `gap-crux-restate.md` L48-78; FINISH rows 999, 1000, 1003.
 - 2026-11-15 16:01Z: Step 2 done (Section 2: the audit of the 2D O(N) filter). Verdict: a price and a routing rule, not a test.
 - 2026-11-15 16:19Z: Step 3 done (Section 3: 20 inputs with source, lattice status and the two "lacks" columns). All 20 are on file in the lane; anchors given.
+- 2026-11-15 16:23Z: Step 4 done (Section 4: the step each input would feed, and the tests). No input survives with a consumer. Two items go to Step 5: a counterexample to class-wide persistence, and the N = infinity test.
+- 2026-11-15 16:25Z: Step 5, first part done (Section 5.1: Proposition NP, a no-seed model of the class whose D contracts on J consecutive doublings; PROVED by hand given named lane inputs and the Peierls bound). Next: 5.2, the N = infinity test.
+- 2026-11-15 16:26Z: Step 5, second part: the hand computation of 5.2 and the pre-registered reading of its control run are written; the run has not started.
 
 **Skill header (exercise skill, Output rules).** Written by Anthropic Claude Fable 5.2, effort max, Mac mini worker
 session, commit 95fecd964, 2026-11-15. Nothing in this file is checked by another model. The skill's framework
@@ -250,3 +253,256 @@ and each class is shared with one comparison family in which the conclusion fail
 **Marks of Section 3.** The table: each row has the mark shown; "A", "L", "K" cells are DEF-level readings of the
 models, not proved lemmas, except where a lane row is cited. S2: ARGUED. The column "Q_8, 2T" for rows 8 and 19 was
 not checked. The list is "every input I could name and find", not a proof that no other input exists.
+
+## 4. Task (3): the step each input would feed, and the tests
+
+The chain to (W), cut in steps (from Section 1 and `gap-mid-max.md` L219-227):
+
+- (st-B) the base: a bound on D^+ at the size where the band starts ((TH), given (DET)).
+- (st-P) the perturbative stretch: from the account's small g to a coupling of order one.
+- (st-C) the contraction of D in the band: (CAS) with theta < 1.
+- (st-F) the flux half: the weight U of the sectors of non-zero flux is small (L E_e(L) unbounded).
+- (st-0) the zero-flux half: S_0 is small (L m_0(L) unbounded).
+- (st-E) the engine from the seed on (Theorem S; done).
+
+Tests, in the valid form of the skill: PT = product with a no-seed factor (Lemma PT); D2 = Theorem D2; SH = Lemma
+SHEET; U(1) = compact U(1) at weak coupling; FG = frozen Q_8, 2T; 2D = the two-dimensional O(N) model, read as in
+Section 2 (a price, never a refutation). "-" means the test does not apply to this kind of step. A "pass" entry
+says only what a proof must use.
+
+| # | Input | Step it would feed | PT | D2, SH | U(1) | FG | 2D (price) | Verdict; where the lane has it |
+|---|---|---|---|---|---|---|---|---|
+| 1 | centre flux sectors | (st-F), through Identity FL and Theorem F | binds: a product with a centre-neutral massless factor passes every flux-half statement and has no seed; so (st-F) never gives (W) alone (`gap-mid-max.md` L229-232) | - | the flux half is false there | the flux half is false there at large beta; so the input is not enough | the charged sector is the whole 2D problem | found again: row 731, registry RE (blocked-local at (EV-STEP)) |
+| 2 | Fact T | (st-F) at small size: a twisted box with no classical cost and no zero modes; the chart (CH) of (AC'-lat) | as row 1 | - | lacks Fact T: pass | **refutes** "Fact T gives the flux half" in the frozen limit: Q_8 has the twist eaters and T_per fails (check 884 for the frozen limit; at order one a BELIEF) | lacks | dead as a single input; found again: row 697 C5, row 859 idea 31, row 876 ideas 10, 15 |
+| 3 | 't Hooft duality | already consumed: Theorem R reduces the seeds to the even seed (ES) | (ES) reads the whole even sector: pass | - | different duality (continuous centre) | Theorem R holds for them; (ES) fails in the frozen limit (check 884) | poorer analogue | consumed; the open statement is (EV-STEP), registry RE |
+| 4 | Bianchi identity | none. It is the constraint that makes the plaquettes dependent (`gap-skeleton-max-b.md` L94-95) | - | - | shares it (the photon is its consequence) | share it | analogue | not an input of a selective step; row 962 (no relaxation of the constraint system is a new input) |
+| 5 | Elitzur; mean Hessian diagonal | (st-C), (st-0) through an averaged curvature criterion | - | D2 and SH bind the supremum and all-fields forms | shares it | share it | lacks | found again: row 863 ("exact but not a handle"), row 968 Proposition AVG |
+| 6 | no continuous symmetry | (st-0): exclusion of the massless branch ("massless needs a symmetry") | binds: a critical Ising factor is massless at one coupling with no continuous symmetry (device of row 708); for a massless phase with no symmetry I know no theorem-grade model | - | has a continuous centre: pass | share it and have no seed (degenerate sectors, not massless) | lacks | no theorem: Goldstone's theorem has no converse. Found again: row 876 idea 29; row 988 Route 3 (set aside 28, re-judged "too strong" by row 998) |
+| 7 | loop equations | none by hand (the bootstrap is numerical) | - | - | linear loop equations | lack | analogue | set aside under the no-computer rule: `gap-form-exercise.md` L352 |
+| 8 | Durhuus-Frohlich comparison | (st-F): area law from decay in the 3D chiral model | - | - | - | - | it is the comparison model | range-limited: the 3D model orders at large beta (RECALLED), so the use stops at beta_W < 2/3. Found again: rows 825, 828, 831 |
+| 9 | Borgs-Seiler deconfinement | none (a negative input) | - | - | - | - | lacks | exercise 2 I19, test K6 |
+| 10 | Ricci curvature; O'Neill term | (st-C), (st-0) through a Bakry-Emery or Polchinski bound | pass (a U(1) factor is flat) | D2 and SH bind the supremum and all-fields forms | flat: pass | lack: pass | fibre part: the 2D price; O'Neill part: no analogue | no consumer above beta about 1/8: rows 812, 957, 968; set-aside method 31 |
+| 11 | one-plaquette weight | kind (K-one), not (K-flow) | - | - | - | - | analogue | no consumer: row 996 |
+| 12 | Fact B, b_0 > 0 | (st-P) at its lower end: D falls and z rises at a rate of order b_0 g^2 per doubling (GUIDE, `gap-mid-max.md` L212) | pass (D is additive, the photon part does not fall) | - | b_0 = 0: pass | lack | has it: the same statement holds there; the price is the 2D one | feeds the entry only; theta tends to 1 as g tends to 0. It needs D^+ to precision g^2, and the account gives an extensive bound. Found again: row 708 5.2 |
+| 13 | the account's effective actions | (st-B) | - | - | - | - | lacks | the base only: rows 978-994. Row 982 N2 in the form of row 1000 forbids one use of it for the band |
+| 14 | small-volume structure, twisted box | start values (z near 0, D large; twisted: z of order one); then a continuation in the size | as row 1 for the twisted half | - | no isolated twisted vacuum: pass | lack | analogue (twisted rings; the Luscher-Weisz-Wolff coupling) | the continuation is the band itself: "no monotonicity" (`gap-brainstorm-max.md` L404). Found again |
+| 15 | instantons | none through order one | - | - | lacks | lack | N = 3 has them | first-passage statement in another geometry (idea 31). Found again |
+| 16 | trace anomaly, sum rules | (st-C) in the coupling: (VIR_K), (NOCRIT-HF), the sign in beta (registry RB) | pass | - | the shift vanishes: pass | - | analogue | blocked-equivalent: registry RB; (MONO-Delta) is false for the ordered Ising model (`gap-phys-seed.md` L371-373) |
+| 17 | freedom of the bare weight | (st-F) for a weight with a Griffiths structure of the centre (C4) | as row 1 | - | - | - | analogue | VARIANT, needs (UNIV-FP), open: `gap-next3-max.md` L282, L318 |
+| 18 | photon stable in 4D | none (against us) | | | | | | row 1002 item 5 |
+| 19 | self-duality of two-forms | none for SU(2) | | | | | | - |
+| 20 | surfaces, area law | (st-F): Theorem F given (FLUX-4) | as row 1 | - | the inequality of Tomboulis and Yaffe holds for U(1) too (GUIDE, Kanazawa); (TUBE) fails there | (FLUX-4) fails there | lacks | found again: row 697 C2 |
+
+### 4.1 What the table shows
+
+**V1 (ARGUED; the rows cite the lane's verdicts, which I did not re-derive: "valid as reported").** No input of
+Section 3 survives with a consumer. Each one falls in one of five cases.
+
+- Its step is already consumed by a theorem of the lane: 3.
+- It feeds the base or the entry of the band, and nothing in the band: 12, 13, 14, 15.
+- Its step is blocked at a statement that the registry already holds: 1 and 20 at (EV-STEP) and (FLUX-4), 16 at RB.
+- Its step fails in a model of the class: 2 (frozen Q_8; theorem in the frozen limit, belief at order one), 6 in
+  its class-wide form (a critical Ising factor).
+- It has no step, or its consumer stops below the band: 4, 5, 7, 8, 9, 10, 11, 17, 18, 19.
+
+**V2 (reading).** The five tests split as follows. PT binds every step that feeds (st-F) alone: the flux half
+never gives (W). D2 and SH bind only the curvature inputs 5 and 10. U(1) is passed by every input that uses the
+commutator or the running. FG is the test that the gauge-kinematic inputs fail. The two-dimensional model prices
+the inputs of the continuous fibre. So the two families of Section 3.1 meet two different tests, and no single
+input passes both with a consumer.
+
+**V3 (one place where a statement of the lane is ARGUED only and a counterexample can be built).** The test table
+(`parts/gap.md` L193) carries "ARGUED only: it also refutes a class-wide step 'a decrease of D or S under doubling
+persists'" (row 998 L5; check 999 L203: "correctly marked ARGUED (L5 says the two factors were not constructed)").
+This is the class-wide form of the step (st-C). Section 5.1 builds the two factors.
+
+**V4 (one test named and never run).** Row 998 3.3 names the O(N) model in two dimensions at N = infinity as the
+toy for a claimed statement along scales and does not build it. Section 2.4 says what such a test can show.
+Section 5.2 runs it by hand for (CAS).
+
+## 5. Task (4): attempts
+
+The row's first clause ("if one input survives with a consumer, write the exact lemma it needs") has no case: by
+V1 no input survives. The second clause ("if a step fails in a model of the class, build the counterexample") has
+one case that is not on record as a construction: V3. Section 5.1 builds it. Section 5.2 runs the test of V4.
+
+Rule 0a before each attempt. `library/open-core.md` has no line of the gap lane (it lists hard-core items; `grep`
+for gap, seed, (W), CAS returned only unrelated lines). `grep -l -i` for "persist" with "decrease" over
+`library/gap-*.md` and `library/prior/`: three files, row 998, its check 999 and the draft of `parts/gap.md`; all
+three carry the statement as ARGUED, with no construction. `grep -l -i "gap equation"`: row 998 (the toy named,
+not built), row 1002 (literature), rows 934 and its check (another object). So neither attempt repeats a row.
+
+### 5.1 Proposition NP: contraction of D on any number of doublings does not persist in the class
+
+**Setting.** "The class" is the engine's class: models on the periodic lattice Z^4 tori with a partition function
+that is invariant under permutations of the axes, with (TM) in each direction, and a simple top eigenvalue
+(`gap-seed-shape.md` L207). D, Phi, S as in Section 1; for every model of the class, Phi(n) = 16 F(n^4) - F((2n)^4)
+is non-negative (Theorem D (a), Lemma A).
+
+**Inputs, each with its mark.**
+
+- (i1) Lemma PT (a), (d) (row 998 L690-713; check 999: HOLDS). Its proof uses (TM), the symmetry of Z and the
+  monotonicity I3 of each factor, and nothing about gauge fields. So it holds when a factor is a spin model of the
+  class; this is the device of row 708 (`gap-mid-max.md` L230). By induction it holds for finitely many factors.
+- (i2) D(2n) = 16 D(n) - Phi(n) <= 16 D(n), for every model of the class. Proof: D(2n) = F((2n)^4) - 16 f n^4 =
+  16 F(n^4) - Phi(n) - 16 f n^4. PROVED (two lines, from the definitions and Phi >= 0).
+- (i3) D(n) = sum over i >= 0 of 16^(-(i+1)) Phi(2^i n) (Proposition R of row 697, as used in `gap-phys-seed.md`
+  L294). THM, lane, checked rows 698, 699.
+- (i4) Wilson SU(2) at small coupling (`gap-seed-sc.md` L34-47, Theorems 1 and 2; lane mark: PROVED GIVEN Theorem
+  SC's lemmas, checked in rows 694 and 704). For n >= 4 and 0 <= beta <= 1/12800:
+  0 <= Phi(n; beta) <= 0.16 n^4 (12800 beta)^(4n). For each n >= 5: Phi(n; beta) = A_n beta^(4n) + O(beta^(4n+1))
+  as beta tends to 0, with A_n = 192 n^3 4^(-4n) > 0.
+- (i5) A model of the class with no seed: the Ising model on the sites of Z^4 at a coupling J >= J_P
+  (`gap-seed-shape.md` L209-219: membership in the class PROVED there; no gap RECALLED there from the Peierls
+  argument, not rebuilt). A seed gives a uniform gap (Theorem S), so this model has no seed.
+- (i6) In a model of the class with no seed, D(a) > 6.1 x 10^(-4) for every a >= 3 (Proposition Delta with Theorem
+  SH, `gap-mid-max.md` L63; checked row 709).
+
+**Lemma NP0 (two-sided control at strong coupling; PROVED given (i3), (i4)).** Let u(n; beta) be the Casimir free
+energy D of Wilson SU(2) at the coupling beta. For n >= 5 there is beta(n) > 0 such that for 0 < beta <=
+min(beta(n), 1/25600):
+
+ (A_n / 32) beta^(4n) <= u(n; beta), u(2n; beta) <= 0.176 n^4 (12800 beta)^(8n), and so
+ u(2n; beta) / u(n; beta) <= 0.03 n (6.5536 x 10^8 beta)^(4n).
+
+Proof. Put t = 12800 beta <= 1/2. By (i3) and Phi >= 0, u(n) >= Phi(n)/16. By the second line of (i4) there is
+beta(n) > 0 with Phi(n; beta) >= (A_n/2) beta^(4n) for 0 < beta <= beta(n). This is the lower bound. For the upper
+bound at any m >= 4, (i3) and the first line of (i4) give u(m) <= sum over i of 16^(-(i+1)) 0.16 (2^i m)^4
+t^(4 m 2^i) = 0.01 m^4 sum over i of t^(4 m 2^i) <= 0.01 m^4 t^(4m) / (1 - t^(4m)) <= 0.011 m^4 t^(4m), because
+t^(4m) <= 2^(-16). At m = 2n this is 0.011 x 16 n^4 t^(8n) = 0.176 n^4 t^(8n). The quotient is at most
+0.176 n^4 t^(8n) x 32 x 4^(4n) / (192 n^3 beta^(4n)) = (0.176 x 32/192) n (12800^2 x 4 x beta)^(4n), and
+0.176 x 32/192 < 0.03, 12800^2 x 4 = 655,360,000. QED
+
+**Proposition NP (PROVED given (i1)-(i6); the only input that is not rebuilt in the lane is the Peierls bound
+behind (i5)).** Let J >= 1 be an integer, 0 < theta < 1, and a_0 >= 5. Put n_j = 2^j a_0. There are a coupling
+beta_s > 0, an integer K >= 1 and a model M of the class, the product of K copies of Wilson SU(2) at beta_s with
+the Ising model of (i5), such that:
+
+- (a) M has no seed, and D_M(a) > 6.1 x 10^(-4) for every a >= 3;
+- (b) D_M(n_(j+1)) <= theta D_M(n_j) for j = 0, 1, ..., J - 1;
+- (c) there is j >= J with D_M(n_(j+1)) > theta D_M(n_j).
+
+So in M the contraction (CAS) holds, with the given theta, on J consecutive doublings on which D is above the
+threshold, and M has no seed.
+
+Proof. Choose beta_s with 0 < beta_s <= 1/25600, beta_s <= beta(n_j) and 0.03 n_j (6.5536 x 10^8 beta_s)^(4 n_j) <=
+theta/2 for j = 0, ..., J - 1. This is a finite set of conditions, each true for all small beta_s. Write u(n) for
+u(n; beta_s) and v(n) for D of the Ising factor. By Lemma NP0, u(n_j) > 0 and u(n_(j+1)) <= (theta/2) u(n_j) for
+j < J. Choose an integer K >= (32/theta) v(n_j)/u(n_j) for every j < J. Let M be the product. By (i1),
+D_M = K u + v, and a seed of M at a size N would be a seed of each factor at N. The Ising factor has none (i5).
+So M has no seed, and (i6) gives (a). For j < J, by (i2) for the Ising factor and the choice of K:
+
+ D_M(n_(j+1)) = K u(n_(j+1)) + v(n_(j+1)) <= (theta/2) K u(n_j) + 16 v(n_j) <= (theta/2) K u(n_j) + (theta/2) K u(n_j)
+ <= theta D_M(n_j).
+
+This is (b). If (b) held for every j >= 0, then D_M(n_j) <= theta^j D_M(n_0) would fall below 6.1 x 10^(-4),
+against (a). So (c) holds. QED
+
+**Corollary NP1 (what it refutes; PROVED as logic from Proposition NP).** Let J >= 1 and theta, theta' in (0, 1).
+The following statement is false in the class: "if D(2^(j+1) a) <= theta D(2^j a) for j = 0, ..., J - 1 and
+D(2^J a) > 6.1 x 10^(-4), then D(2^(j+1) a) <= theta' D(2^j a) for every j >= J with D(2^j a) > 6.1 x 10^(-4)".
+(Take theta_0 = min(theta, theta') in Proposition NP: (b) gives the hypothesis, and (c) with (a) contradicts the
+conclusion.) So no class-wide induction step for (CAS) reads only the history of D on finitely many scales.
+
+**Remarks.**
+
+1. *What is new against row 998.* L5 of row 998 argued the same conclusion from a massless factor "whose D
+   converges" and a massive factor "with a long correlation length", and did not construct them. The construction
+   above needs neither: the K copies make the falling part large, and (i2) controls the other factor at every
+   size. It also needs no theorem about U(1): the no-seed factor is the ordered Ising model.
+2. *The count in (CAS) is sharp in the class.* (CAS) with the pair (M, theta) gives the seed after
+   k(M, theta) = log(M / 6.1 x 10^(-4)) / log(1/theta) doublings (`gap-mid-max.md` L65). Proposition NP shows that J
+   contracting doublings with J < k prove nothing: in the model M the start value D_M(n_0) is so large that
+   J < k(D_M(n_0), theta). A proof of (CAS) must cover the whole range down to the threshold.
+3. *What it binds.* Class-wide persistence steps, and any step whose hypothesis is a finite history of the
+   whole-space quantity D. Lead rule W2 already binds hypotheses that read one factor. This adds: reading the
+   whole state space through D alone is not enough either; the step from L to 2L must use a property of the
+   measure at the scale L that the product M does not have.
+4. *What it does not bind.* A (K-flow) step whose hypothesis contains the first-passage data of Wilson SU(2). M
+   is a model at one fixed coupling, with a product group. A concavity statement for log D along doublings is
+   false in M (the fall stops), so such a statement is selective; Proposition NP does not say whether it is
+   true for SU(2).
+5. *The same for S.* By Lemma PT (c), 1 + S_M = (1 + S_g)^K (1 + S_Ising). I did not write the analogue of (b) for
+   thermal sums.
+6. *On or off the path.* Off the direct path: it is a statement about a filter. It turns one ARGUED cell of the
+   test table (`parts/gap.md` L193) into a construction.
+
+Mark: Proposition NP and Corollary NP1 are proved by Claude Fable 5.2 by hand, not yet checked by another model.
+The arithmetic to re-check: 0.176 x 32/192 = 0.0293; 12800^2 = 163,840,000; the geometric sum with t^(4m) <= 2^(-16).
+
+### 5.2 The N = infinity test of (CAS) in two dimensions (hand computation: ARGUED, formal at N = infinity; one control run: GUIDE)
+
+**What is tested.** Section 2.3 asks that a (K-flow) candidate be tried first in a two-dimensional model where the
+answer is known. The candidate here is the lane's own (st-C): strict fall of the Casimir free energy D under
+doubling, with one theta < 1 from a size where the coupling is of order one ((CAS), `gap-mid-max.md` L64). The model
+is the O(N) model on the square lattice at N = infinity. Reading fixed before the computation: if D rises
+somewhere there, (CAS) is not a consequence of "gap and asymptotic freedom" and the form of the target is too
+strong; if D falls, nothing is supported (a pass is no support), and the computation shows by which mechanism it
+falls in the one case where the band is crossed by a proof.
+
+**The model at N = infinity (formal; the exchange of the limit N to infinity with the integral is not proved
+here; RECALLED as the standard saddle point).** Unit spins s_x in S^(N-1) on the periodic L x L lattice, weight
+exp(N b sum over bonds of s_x . s_y). With a Lagrange multiplier for the constraint and the Gaussian integral over
+the spins, log Z_N(L) = N [L^2 kappa(b) + min over mu > 0 of phi_L(mu)] + o(N), where kappa does not depend on L and
+
+ phi_L(mu) = (b/2) L^2 mu - (1/2) sum over the L^2 momenta p of log(p^^2 + mu), p^^2 = 4 sin^2(p_1/2) + 4 sin^2(p_2/2).
+
+phi_L is strictly convex in mu > 0, so the minimiser mu_L is unique; it solves the gap equation
+(1/L^2) sum over p of 1/(p^^2 + mu) = b. In infinite volume the same holds with the integral over the Brillouin
+zone, phi_inf and mu_inf. In two dimensions the integral of 1/(p^^2 + mu) diverges as mu tends to 0, so mu_inf > 0
+at every b: this is the infrared divergence that row 1002 item 5 names. Put
+
+ d(L) := limit of D_N(L)/N = min over mu of phi_L(mu) - L^2 phi_inf(mu_inf).
+
+**Step 1 (the variational form; PROVED from the formulas above).** Write psi(mu) := phi_inf(mu) - phi_inf(mu_inf) and
+delta_L(mu) := phi_L(mu) - L^2 phi_inf(mu). Then d(L) = min over mu of [L^2 psi(mu) + delta_L(mu)], where:
+
+- psi >= 0, psi is strictly convex, psi(mu_inf) = 0 = psi'(mu_inf);
+- delta_L(mu) = (L^2/2) sum over n in Z^2, n not 0, of the integral over t > 0 of (dt/t) exp(-t mu) K_t(nL), with K_t
+  the heat kernel of the lattice Laplacian, which is positive. (Poisson summation of the momentum sum, and
+  log A = - integral of (dt/t)(exp(-tA) - exp(-t)).) So delta_L > 0, and delta_L is strictly decreasing in mu.
+
+delta_L(mu) is the Casimir free energy of a free field of mass sqrt(mu). The first term is the cost of moving the
+mass away from its bulk value. Since delta_L decreases in mu, the minimiser has psi'(mu_L) > 0, so mu_L > mu_inf:
+the mass on the torus is above the bulk mass.
+
+**Step 2 (the scaling limit; ARGUED: the lattice corrections of relative order mu are dropped).** For mu small,
+psi'(mu) = (1/8 pi) log(mu/mu_inf), so psi(mu) = (1/8 pi) [mu log(mu/mu_inf) - mu + mu_inf], and delta_L(mu) = c(x)
+with x = sqrt(mu) L and c(x) = (1/2) sum over n not 0 of (x/(pi |n|)) K_1(x |n|) (K_0, K_1 the Macdonald
+functions). With y = sqrt(mu_inf) L, the size in units of the correlation length:
+
+ d(y) = min over x of [Psi(x, y) + c(x)], Psi(x, y) = (1/8 pi) [x^2 log(x^2/y^2) - x^2 + y^2].
+
+The stationarity equation is the gap equation of the torus, log(x/y) = sum over n in Z^2, n not 0, of K_0(x |n|).
+
+**Step 3 (the identity; PROVED from Step 2 by the envelope theorem).** d'(y) = (dPsi/dy)(x(y), y), so
+
+ y d'(y) = - (x(y)^2 - y^2) / (4 pi) = - (L^2 / 4 pi) (mu_L - mu_inf) < 0. (ENV)
+
+In words: the derivative of the Casimir free energy in the logarithm of the size is minus the shift of the mass
+squared between the torus and the bulk, in units of the size. The sign is the sign of that shift.
+
+**Step 4 (the two ends; ARGUED, leading orders only).** For y small: sum of K_0(x |n|) = 2 pi/x^2 + O(log), so
+x^2 = 2 pi / log(1/y) to leading order, d = (1/2) log log(1/y) + O(1), and - y d'/d tends to 0: the ratio
+d(2y)/d(y) tends to 1 at the ultraviolet end. For y large: x^2 - y^2 = 8 y^2 K_0(y) and d = (2y/pi) K_1(y) to
+leading order, so - y d'/d = y (1 + o(1)): the ratio d(2y)/d(y) tends to 0 like exp(-y).
+
+**Result (ARGUED given Steps 1 to 4).** At N = infinity, in the scaling limit, d is strictly decreasing at every
+size, and for every y_0 > 0 the supremum over y >= y_0 of d(2y)/d(y) is below 1 (d is continuous and positive,
+the ratio is below 1 at every y by (ENV), and it tends to 0). So (CAS) holds there from every size at which the
+coupling is of order one, with theta tending to 1 only at the ultraviolet end. This is the shape that row 708
+5.2 item 2 describes for SU(2) as a GUIDE (`gap-mid-max.md` L212). The test is passed. A pass is no support.
+
+**Control run (GUIDE). Pre-registered reading, written before the run.** The run checks the algebra of Steps 1 to
+3 on the lattice formulas. It can show a slip in the hand computation. It says nothing about SU(2).
+
+- Script: `/tmp/row1003-num/ninf.py` (plain numpy; under the numeric lock; core lines copied below after the run).
+- Couplings b = 0.6, 0.7, 0.8 (mu_inf = 32 exp(-4 pi b) to leading order: 0.017, 0.0048, 0.0014). Bulk values from
+  a periodic 2048 x 2048 lattice (its own finite-size error is of order exp(-2048 sqrt(mu_inf)), below 10^(-30)).
+- C0 (control of the bulk solver): mu_inf / (32 exp(-4 pi b)) within 10 percent of 1 at b = 0.8.
+- R1: d(L) at every integer L from 4 to 256 (b = 0.8: to 320). PASS if d is strictly decreasing in L at each b.
+  FAIL if d(L+1) > d(L) + 10^(-9) anywhere.
+- R2: for the integers L from 16 to 256, compare d(16) - d(256) with the trapezoid sum of
+  (L^2/4 pi)(mu_L - mu_inf) in log L. PASS if they agree within 5 percent at each b. FAIL above 20 percent. Between
+  the two: report as "lattice corrections, not decided".
+- R3 (no pass or fail): the table of d(2L)/d(L).

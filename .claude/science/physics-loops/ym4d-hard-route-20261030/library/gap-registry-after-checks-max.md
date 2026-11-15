@@ -33,7 +33,21 @@ or guide, and no status rests on one.
 
 ## Status log
 
-- 2026-11-15T21:19Z: file created with the plan. Nothing else done yet.
+- 2026-11-15T21:19Z: file created with the plan.
+- Later entries: "Status log (continued)" before the RESULT line.
+
+## Status block (one line per step of the plan; kept current)
+
+1. Skill and state file read: done (Section 1).
+2. Fourteen checks read at verdict tables and RESULT lines: done (Section 2). Eleven broad negative claims lost their support; the lemmas stand.
+3. Rows 1011-1020 read at their RESULT text; Theorem CR and (LIOU) read in the file: done (Section 3).
+4. Task (1), the status table: done (Section 4).
+5. Task (2), the registry and the ranking: done (Section 5). Top route by change over cost: LC (level convexity).
+6. Task (3a), duplicate check and first lemma: done (6.0-6.4). T3 FAILS as a discard test.
+7. Task (3b), the attack: done (6.5-6.6). Stops at (R-pt) and at a unit-level inequality on one slice. No numeric run.
+8. Anchors printed and corrected, PROVED items re-read, report and RESULT: done (Section 7).
+
+**Nothing in this file is checked by another model.** What this run did not cover: Section 7.8.
 
 ## 1. Step 1: the skill's procedure, and the state file
 
@@ -418,9 +432,10 @@ None of these was read by the fourteen checks unless a line says so. All are "va
 
 1. Eleven broad negative claims lost their proofs (Section 2.15). In each case the lemmas under the claim
    stand. So the lane's map of what is proved is intact; its map of what is excluded was too large.
-2. Three theorem-grade filters survive in full for SU(2): Theorem D2 (supremum over tilts), Lemma SHEET
-   (uniformity over coupling fields), Lemma PT with an admitted no-seed factor (class-wide soft statements).
-   Each binds a quantifier (a supremum, a uniformity, a class), not a route.
+2. Three lane theorems survive the checks as filters for SU(2), each after its stated correction: Theorem D2
+   (supremum over tilts), Lemma SHEET (uniformity over coupling fields), Lemma PT with an admitted no-seed
+   factor (class-wide soft statements). Each binds a quantifier (a supremum, a uniformity, a class), not a
+   route.
 3. No check moved the wall. No check supplied a seed, a rate, or a mechanism. Every route that comes back comes
    back as "not excluded", with its terminal obligation unchanged.
 
@@ -441,7 +456,7 @@ L142-170); row 982 Steps 2-4 and 8.4 (`gap-hcphys-max.md` L40-163, L258-275); ro
 | Rank | Route | Object and mechanism | Terminal obligation | Strength against (W) | Status | Blocked only by a verdict that no longer stands? | Cheapest decisive next step, and its cost | What the step would change |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **LC**, level convexity as a carrier to (LSI-br) | fine slice law and bridge marginals nu_s in the fine link metric; entropy over the account's levels below the unit ((P1)-(P3)), plus one inequality at the unit | the unit inequality ((U1) or an LSI of the unit block law), the exact size of the loss between unit metric and fine metric (T3, "roughness"), and (TR-LF) | stronger ((U1) with (TH) gives the seed; no converse) | set aside by rule N2 until 2026-11-15; now provisional | **yes**: N2 / T3 (A2, A10) | decide T3 by hand: is the factor beta_K/beta_0 a property of the model or of the linear count? One session, no run | the lead rule A2/A10; whether the Theorem BR family can be used at all in the continuum form (HC-phys) |
-| 2 | **RF-avg**, averaged and trajectory flow forms at one coupling, with consumer **K4** (the ratio-4 HC/BR-J route) | bridge marginals; Polchinski flow of the middle layer; (ABS-flow), (LOC-COV) with a bad set, (LSI-traj-seed)_a; consumer: Proposition HC on (a; (4a)^3), K_30 = 0.811 at beta 2.3 | (ABS-flow-seed)_a or (LSI-traj-seed)_a or (LSI-J-seed)_a at one beta of the window, then the carry of row 978 R2 ((NOCRIT) and a climb) | unknown/comparable (a fixed-coupling statement of kind (K-one); with the carry it gives (W)) | active, no mechanism; K4 is candidate-complete as an implication (check 960) | **yes** for (ABS-flow) and the integrated form (B6 (b), row 998 6a row 19); (LSI-traj-seed) was never refuted | GUIDE: the entropy form (EC-traj) at intermediate k, beta 2.3, sides 12 to 24 (row 974 left it untested); hours under the lock. By hand: none known | keeps or retires the whole bridge family at fixed coupling |
+| 2 | **RF-avg**, averaged and trajectory flow forms at one coupling, with consumer **K4** (the ratio-4 HC/BR-J route) | bridge marginals; Polchinski flow of the middle layer; (ABS-flow), (LOC-COV) with a bad set, (LSI-traj-seed)_a; consumer: Proposition HC on (a; (4a)^3), K_30 = 0.811 at beta 2.3 | (ABS-flow-seed)_a or (LSI-traj-seed)_a or (LSI-J-seed)_a at one beta of the window, then the carry of row 978 R2 ((NOCRIT) and a climb) | unknown/comparable (a fixed-coupling statement of kind (K-one); with the carry it gives (W)) | active, no mechanism; K4 is candidate-complete as an implication (check 960) | **yes** for (ABS-flow) and the integrated form (B6 (b), row 998 6a row 19); (LSI-traj-seed) was never refuted | GUIDE: the entropy form (EC-traj) at intermediate k at beta 2.3 (row 974 left it untested). It needs an estimator of a relative entropy in very high dimension, which the lane does not have; the chi-square form X is done (row 974: not refuted at 2.3 for a >= 21). By hand: none known | keeps or retires the whole bridge family at fixed coupling |
 | 3 | **GEO**, other geometries for the engine | Theorem S / SH' on other complexes: real second times (Lemma Q), diagonal tori with twisted axis channel, time-dependent squeezes, projected averaging | the same seed with another threshold or box | unknown/comparable (an engine change; it supplies no input) | provisional | **yes** (B1, B2, B3) | by hand: the q = 8/5 line of Theorem SH' (check 960 L393); a diagonal finite-torus transfer construction (check 963 L365). Hours each | thresholds and box sizes only (K_a of route 2 falls); not the wall |
 | 4 | **RD / TRI**, the dichotomy or trichotomy as a theorem | Theorem ZD-c, Corollary Z4 (row 720); Corollary TRI (row 1017) | none (given its inputs) | weaker | candidate-complete as a weaker statement | no (A8 is an owner-level rule) | an owner decision; no cost | whether a conditional theorem is a milestone |
 | 5 | **RF-quot**, quotient form | (TILT-COV-quot) box-uniform; gain Q_phi from the gauge orbit | a box-uniform bound; QUOT-CAP caps it if q_0 >= 0.24 uniformly in b | stronger | blocked-local on one number | partly (row 998 6a row 20 rests on a GUIDE; B7) | by hand: q_0 > G_S/beta on side 4 (threshold 0.117; proved 0.064, row 977 9.1). Needs the vacuum on a pinned slice; not cheap | retires the form at theorem grade on small boxes only |
@@ -477,11 +492,12 @@ L142-170); row 982 Steps 2-4 and 8.4 (`gap-hcphys-max.md` L40-163, L258-275); ro
 Rank is "what the cheapest decisive step would change, divided by its cost" (skill L590-592). No route has
 a known step that moves the wall. So the rank follows the decisions that a step can move.
 
-- **Top: LC.** It is the only route (a) that was blocked only by a verdict the checks removed, (b) that reads
-  the account's data below the unit, so that no comparison model binds it (rule W2, kind (K-flow)), and (c)
-  whose decisive step is a hand argument of one session. The step decides a lead rule. Section 6 takes it.
-- Second: RF-avg with K4. Its decisive step is a GUIDE run of hours, and its outcome moves the whole bridge
-  family at fixed coupling. It is the larger change at the larger cost.
+- **Top: LC.** It is the only route that has all three of these: (a) it was blocked only by a verdict the
+  checks removed; (b) it reads the account's data below the unit, so that no comparison model binds it (rule
+  W2, kind (K-flow)); (c) its decisive step is a hand argument of one session. The step decides a lead rule.
+  Section 6 takes it.
+- Second: RF-avg with K4. Its outcome would move the whole bridge family at fixed coupling. Its decisive
+  step is a GUIDE test with no estimator yet (see the table). It is the larger change at the larger cost.
 - Third: GEO. Cheap steps, small change.
 
 Routes that were blocked only by a verdict that no longer stands: **LC** (N2/T3); in **RF-avg** the forms
@@ -543,15 +559,16 @@ quadratic forms, 1 - P^2 <= 1 - P^(2T) <= T (1 - P^2).
 Proof. By the spectral theorem it is enough to take a number mu = lambda^2 in [0, 1]. Then
 1 - mu^T = (1 - mu)(1 + mu + ... + mu^(T-1)), and the second factor lies in [1, T]. QED
 
-**Proposition FR (the bare diffusion bound; PROVED given (E1)).** For continuous f on M and every T >= 1:
+**Proposition FR (the bare diffusion bound; PROVED given (E1)).** For continuous gauge-invariant f on M (the class
+for which the lane states (E1); its proof does not use the invariance) and every T >= 1:
 
   EE(f) <= ||f||^2 - ||P^T f||^2 <= T EE(f),   that is   (1/2) E |f(X_(2T)) - f(X_0)|^2 <= T integral over (0, 1/beta) of E_(nu_s) |grad u_s^f|^2 ds.
 
 Proof. ||f||^2 - ||P^T f||^2 = <f, (1 - P^(2T)) f>. Apply Lemma S1 and (E1). For the second form,
 E |f(X_(2T)) - f(X_0)|^2 = 2 ||f||^2 - 2 <f, P^(2T) f>. QED
-Reading. The bridge has length 1/beta. So the mean-square displacement of any slice function in one step
-is at most 2/beta times the mean over s of its Dirichlet energy. The coupling is the bare one, at every
-lag T. No gap is assumed. The statement holds for every model with this kernel: it is blind.
+Reading. The bridge has length 1/beta. Over two steps the mean-square displacement of f equals 2/beta times
+the mean over s of the Dirichlet energy of its interpolant. Over 2T steps it is at most T times that. The
+coupling is the bare one, at every lag T. No gap is assumed. The statement holds for every model with this kernel: it is blind.
 
 **Lemma EL (Elitzur at every time lag; lags 0 and 1 are row 941 (A5), row 947 5.5 and row 968 Lemma Z).**
 On a cubic periodic box of side at least 3, for all integers k >= 0 and all links l, l':
@@ -610,11 +627,14 @@ Theorem BR is posed. T3 says "H does not give T", by a benchmark M'.
 
 1. **The benchmark is outside K (PROVED for Gaussian chains, given the reading of (P1) in (K3)).** A
    Gaussian chain with the slice variance of the count, sigma^2 of order L^K/(a_+ beta_K) in a unit mode, exists.
-   By (K2) its rate is at most a_+ beta_K/(2 beta_0 L^K): this is exactly the loss that T3 names. But by (K1) and
+   By (K2) its rate is at most a_+ beta_K/(2 beta_0 L^K): this is the loss that T3 names. But by (K1) and
    (K3) that chain does not satisfy (P1): its time-like stiffness is beta_0 and its space-like stiffness is
    of order beta_K^2/beta_0, not beta_K in both. A Gaussian chain with (P1) has beta_0 <= 2 a_+ beta_K. So for
-   beta_0 > 2 a_+ beta_K no Gaussian chain satisfies the premises of T3. The independent-level Gaussian field
-   of T3 satisfies (P1) but is not a chain with the bare kernel (its time-like increments break (ii)).
+   beta_0 > 2 a_+ beta_K no Gaussian chain satisfies the premises of T3. (The sizes use a unit mode of spatial
+   momentum of order L^(-K).) The independent-level Gaussian field of T3 satisfies (P1), but it is not a
+   chain with the bare kernel if its level-K values at two adjacent unit times differ by an amount of the
+   order of their size: then its time-like increments break (ii). That last property is ARGUED, since the
+   benchmark was never written down.
    In the words of the skill: M' is outside K, or H(M') is false. This agrees with the cross-provider
    finding "no law meeting the claimed common premises is constructed" (`gap-d2-inputs-check-astra.md` L41)
    and makes it exact in the Gaussian class.
@@ -625,14 +645,17 @@ Theorem BR is posed. T3 says "H does not give T", by a benchmark M'.
 3. **On gauge-invariant functions the chain gives the bare coupling by an identity (PROVED given (E1)).**
    For continuous gauge-invariant f of mean zero, Proposition FR with T = 1 and the definition of the
    gap give Var_nu(f) (1 - e^(-2 E_1)) <= EE(f). (This is the paragraph after Lemma TEL in row 982, there
-   ARGUED because (a') was; with (E1) it is exact.) So no upper bound on gam_s or alpha_s below the bare
-   order follows from the structure of the chain.
+   ARGUED because (a') was; with (E1) it is exact.) So, if the gap is E_1 = M a, the bridge inequality in
+   its form integrated over s holds for every such f with the constant 1 - e^(-2 M a), which is of the bare
+   order 2 beta_0 M a per unit of s. The beta_K of the count does not enter. This is the gap restated; it
+   supplies no proof of it.
 4. **What stays true (PROVED in row 982, Lemma TEL; check 982 HOLDS).** Lemma TEL, used with the operator
    norm of sum over k of D_k D_k^T/rho_k, cannot return more than a_- beta_K a/l_unit. This is a statement on
    one estimate.
 
 **Verdict on T3: FAILS as a discard test; it stands as a warning on one estimate.** No model with H true
-and T false is on record, and none exists in the Gaussian class.
+and T false is on record. In the Gaussian class there is none with beta_0 > 2 a_+ beta_K, given the reading
+of (P1) in (K3).
 
 ### 6.5 The first lemma in a form the chain allows; the attack; where it stops
 
@@ -650,11 +673,12 @@ normalisation of (P2)), the bare constant varrho_0 r_0 beta_0 a/l_unit follows f
 
   (R-pt)   G >= r_0 (beta_0/beta_K) L^(-K) Id_d almost everywhere.
 
-**What is proved towards (R-pt).** Its average along the bridge, for each unit vector e (Proposition FR
-with T = L^K): the bridge energy of <e, V> is at least L^(-K) (||<e, V>||^2 - ||P^T <e, V>||^2). If the
-increment of <e, V> over two units of time has mean square at least c/beta_K, the mean over s of the
-energy is at least c (beta_0/beta_K) L^(-K). Mark: PROVED given (E1) and given that hypothesis on the
-increment, which is not derived from the account here.
+**What is proved in its place.** An averaged statement on the interpolant, for each unit vector e
+(Proposition FR with T = L^K): the bridge energy of <e, V> is at least L^(-K) (||<e, V>||^2 - ||P^T <e, V>||^2).
+If the increment of <e, V> over two units of time has mean square at least c/beta_K, the mean over s of
+the energy of the interpolant is at least (c/2) (beta_0/beta_K) L^(-K). Mark: PROVED given (E1) and given that
+hypothesis on the increment, which is not derived from the account here. This is not (R-pt): it is an
+average, and it concerns the interpolant u_s, not V at a point.
 
 **Lemma NB (why (R-pt) has the right size; PROVED, calculus).** Let S_1, ..., S_n be unit vectors of R^d
 with mean Phi != 0, and n-hat := Phi/|Phi|. For a unit vector e orthogonal to n-hat:
@@ -676,7 +700,8 @@ kind is a reading of its definition, CA-I Def 1.5; not re-read in this row.)
 - (S-b) Hypothesis (i) is not a port. (P1)-(P3) are statements on four-dimensional fluctuation fields in a
   block gauge (CA-II 80039-80041, 80156-80172, as quoted in row 982 Step 2). A function of one fine slice
   is not a function of one level's fluctuation field. The account has no equal-time statement: row 985
-  found no slab tori and no decay in Euclidean time ((PQ-EX): NO; (TR-LF): not found). OPEN, and new.
+  found no slab tori and no decay in Euclidean time ((PQ-EX): NO; (TR-LF): not found). OPEN; not found in
+  the account by that reading, which was a bounded search.
 - (S-c) Proposition FR bounds an energy by an increment. An entropy cannot be bounded by increments of
   the chain (row 982 Route 2 (a), HOLDS in its check). So FR alone does not give a log-Sobolev inequality.
 - (S-d) Hypothesis (i) at the unit is the order-one input. In log-Sobolev form it is stronger than the
@@ -692,7 +717,7 @@ kind is a reading of its definition, CA-I Def 1.5; not re-read in this row.)
 | T3 as a discard test | FAILS: its benchmark is outside the class of Theorem BR, for every Gaussian chain | 6.4 |
 | T3 as a warning on Lemma TEL with operator norms | stands (row 982; check 982) | 6.4 |
 | Lemma LIFT; Lemma NB | PROVED | 6.5 |
-| (R-pt), the pointwise roughness of a unit variable | OPEN; its bridge average is PROVED given a hypothesis on increments | 6.5 |
+| (R-pt), the pointwise roughness of a unit variable | OPEN; an averaged form for the interpolant is PROVED given (E1) and a hypothesis on increments | 6.5 |
 | A unit-level log-Sobolev inequality for a gauge-invariant variable of one slice | OPEN; not a port; it is the wall in log-Sobolev form | 6.5 |
 | (W), (CAS), the seed | not moved | - |
 
@@ -707,3 +732,128 @@ lemma is not a port and its unit input is the wall. Keep the route as the carrie
 inequality exists; then (R-pt) is its first open step, and Lemma NB says which size to expect.
 
 No numeric run was made in this row. The lemmas of 6.3 and 6.5 are algebra and one spectral inequality.
+
+## 7. Report (skill step 9)
+
+Every claim carries the mark of its section. Nothing in this file is checked by another model.
+
+**7.1 The wall, in plain words.** We want to show that the four-dimensional gauge field has a smallest
+energy step above its ground state. An engine in the lane (Theorem S, checked inside the lane only) gives this once one inequality holds on a
+box of one fixed physical size. Small boxes are understood, and so are boxes where the inequality already holds.
+The middle range is not: there the field is neither weakly nor strongly coupled. Every exact formula found
+so far also holds in a model with a massless particle, where the inequality is false. The lane therefore
+set many ideas aside. Fourteen checks by another provider now show that many of those verdicts were proved
+less well than their lemmas. Getting past the wall still needs one inequality that fails for the massless
+models. (Analogy: the lemmas are the roads that exist; the verdicts were "road closed" signs, and several
+signs were put up without a survey.)
+
+**7.2 What this row found.**
+1. The lemmas of the fourteen checked rows stand, most after stated corrections. Eleven broad negative
+   claims do not (Section 2.15). Section 4 gives every discard verdict, filter and lead rule with its status.
+2. Three filters survive as lane theorems for SU(2): Theorem D2, Lemma SHEET, Lemma PT with an admitted
+   no-seed factor. Each binds a quantifier, not a route (Section 4.5).
+3. The registry is rebuilt (Section 5). Four families were blocked only by verdicts that no longer stand:
+   level convexity (LC), the averaged and quotient flow forms, the geometry family, and seeds in a restricted
+   sector. None of them gained a mechanism. No route is near closure.
+4. The top route by "change divided by cost" was LC, because its blocking verdict T3 could be decided by
+   hand. It is decided (Section 6): T3 FAILS as a discard test. Its Gaussian benchmark is outside the class
+   of Theorem BR (Lemma KL, PROVED; given the reading of (P1) in (K3)). In the coordinates of Theorem BR no linear statistic is soft (Lemma EL,
+   Corollary NS, PROVED). The exact relations of the chain carry the bare coupling (Proposition FR, PROVED
+   given the lane's energy identity).
+5. The attack on LC's own first lemma stops at two open statements: a pointwise roughness bound (R-pt), and
+   a unit-level log-Sobolev inequality for a gauge-invariant variable of one slice. The second is the wall
+   in log-Sobolev form. So LC is a carrier, not a way past the wall.
+6. The wall (W) is not moved.
+
+**7.3 Filters corrected (each ARGUED until checked; details in Section 4 and 6.6).**
+- Row 982 N2 and the note "a route must use the transfer structure at each level": not discard tests. Valid
+  form: a warning on Lemma TEL with operator norms. Range: every use of the level count on gauge-invariant
+  functions. What comes back: LC as a carrier. Off the wall.
+- Row 998 6a row 19: Theorem D2 binds the supremum form, not (ABS-flow). (This is check 970's finding; the
+  reading in 5.2 says why the supremum argument does not transfer. ARGUED.)
+- Rows 960, 963, 965: "buys nothing" becomes "no bound found in these notes".
+- Row 988 FLOOR: binds the full trace only.
+- Row 998 KF (d), I28, "(better: w_p)": struck by its check; rule W2 already holds the corrected text,
+  except that its product clause should name the admitted factor (Villain U(1), beta >= 2^14).
+
+**7.4 Routes worth doing.** None that moves the wall. Two items of bookkeeping follow (7.7). No attack row is
+proposed.
+
+**7.5 What not to do next.**
+- A proof row on (LSI-br) from level convexity: its first lemma is not a port, and its unit input is the
+  wall (6.5 (S-b), (S-d)).
+- A row that repairs T3 by a Gaussian benchmark: by Lemma KL no Gaussian chain with the bare kernel
+  satisfies (P1), in the reading of (K3), once beta_0 > 2 a_+ beta_K.
+- A proof row on (ABS-flow), on the quotient form, or on a geometry variant, because "it is no longer
+  refuted": each has its old terminal obligation and no mechanism (5.1).
+- A row on the supremum form (TILT-COV-sup): Theorem D2 stands.
+
+**7.6 The exact price.** Not changed by this row: (W) holds if and only if (BDD-Delta) and (Z-UNB) hold
+(Theorem ZD-c, row 720); given (BDD-Delta), if and only if (LIOU) holds (Theorem CR, row 1017, same-provider
+check). The checks removed verdicts; they did not lower the price.
+
+**7.7 Work items (each a complete brief).**
+
+W1, check (a model that did not write this file; another provider if possible; high effort). Read
+`library/gap-registry-after-checks-max.md` at the commit that holds it. (i) Section 4: for the rows A1, A2,
+B5, B6, B7, B8, B10, B13, C1, C8 open the cited check file at the cited lines and say whether the status
+word is the check's own verdict. (ii) Section 6.3: redo by hand Lemma S1, Proposition FR, Lemma EL, Lemma
+KL (i)-(iii) and (K1)-(K3). (iii) Section 6.5: Lemma LIFT, Lemma NB. Test first: (a) sigma^2 = 1/(2 beta sinh
+omega) against `gap-fc-max.md` L193-197 and L510; (b) in KL (ii), (1 - e^(-omega))/sinh omega = 2/(e^omega + 1);
+(c) in Lemma EL, that the law of the whole path is invariant under time-independent gauge transformations,
+and that side 3 is enough; (d) whether (E1) is used for gauge-invariant f only; (e) whether (K3) is a fair
+reading of (P1) (CA-II 80163-80172 as quoted in `gap-hcphys-max.md` L46). (iv) Judge 6.4 items 1-4 and the
+verdict on T3; judge the ARGUED reading on (ABS-flow) in 5.2. Verdict per statement: ADVANCE,
+CORRECT-NO-ADVANCE or WRONG with the failing line. Stop rule: stop at the first WRONG in Lemma KL or Lemma
+EL and report it; no new attack. Output `library/gap-registry-after-checks-check-<model>.md`.
+
+W2, for the target lead (I may not edit other files). In `parts/gap.md`: (a) at L91 replace the N2 line by:
+"Row 982 N2 is not a discard test (cross-provider check of row 1000; row 1021 6.4). T3 is a warning on
+Lemma TEL with operator norms. A row on level convexity must name a gauge-invariant variable of one slice
+with a unit-level inequality, and the pointwise bound (R-pt) of row 1021 6.5; neither is a port." (b) In
+the list "Routes tried", mark rows 19, 20, 24, 26, 31, 32 with the statuses of Section 4.3. (c) In rule W2
+name the admitted no-seed factor of the product clause. (d) Add route LC to the registry with the line of
+Section 5.1. Wait for W1 before (a) and (d).
+
+Not proposed, with reasons:
+- A GUIDE run of (EC-traj): no estimator of a relative entropy in the needed dimension is on file; the
+  chi-square form is done (row 974).
+- A one-loop computation of the size of |Phi| in the account's block average (N4 of row 982 in the form of
+  Lemma NB): it would fix a constant of the carrier and decides nothing on the unit inequality.
+- A hand proof of q_0 > G_S/beta on side 4 (route RF-quot): it needs the vacuum on a pinned slice and
+  would retire one form on small boxes only.
+- A row on (LIOU): four soft ways failed in row 1017 and the checks changed nothing there.
+
+**7.8 What this run did not cover.**
+- The fourteen check files were read at their verdict tables and RESULT lines, not in full. Rows 960, 963,
+  965, 968, 970, 977, 982 and 947 were read at the sections named in 5 and 6.2, not in full.
+- Rows 1011, 1013, 1016 and their checks were read at their RESULT text in `FINISH.md` only. Row 1017 was
+  read at five passages. Row 1018 was read at its status block, 7.3 and Section 8.
+- Rows 879-956 of the queue and exercise 2's rows 1-18 were not re-derived; their statuses are "valid as
+  reported" (Section 4.3).
+- No literature search and no numeric run. No other branch was searched. The Sussman-Alpoge texts were
+  not opened in this row; their lines are cited through rows 982 and 985, which read them (credit: Sussman
+  and Alpoge, with Claude and Codex as authors of their text; Balaban for the operator theorem they quote).
+- The energy identity (E1) and Theorem BR were used as the lane states them. The exercise skill's steps 1
+  to 5 (fresh inventory with the attack files closed) were not run: the row asks for its registry, ranking
+  and test steps only.
+- No blind check and no independent pass (no subagents).
+
+**7.9 Approach registry.** Section 5.1 is the registry in the governance columns. After Section 6 the
+line of LC reads: strength "stronger"; status "blocked-equivalent at the unit (the wall in log-Sobolev
+form); blocked-local at (R-pt)"; evidence: Lemmas S1, EL, KL, LIFT, NB, Proposition FR, and the failure of
+T3 as a discard test; reopen condition: a unit-level inequality for a gauge-invariant variable of one slice.
+
+Assumptions most likely to be wrong in this row: the reading of (P1) in (K3); the ARGUED property of the
+benchmark in 6.4 item 1; the ARGUED reading on (ABS-flow) in 5.2. Most expensive if wrong: Lemma EL and
+Lemma KL, which carry the verdict on T3.
+
+## Status log (continued)
+
+- 2026-11-15T21:41Z: Sections 1-4 on file (Steps 1-4 of the plan).
+- 2026-11-15T21:52Z: Section 5 on file (Step 5).
+- 2026-11-15T22:02Z: Section 6 on file (Steps 6-7; no numeric run was needed).
+- 2026-11-15T22:06Z: anchors printed and corrected against the files; PROVED items re-read; Section 7 and the
+  RESULT line written (Step 8).
+
+RESULT: Row 1021 (Claude Fable 5.2 max, Mac mini worker 1; author, checked by no one; no numeric run, no literature search, no subagents). (1) Table of every discard verdict, filter and lead rule with its status after the fourteen gpt-6-astra checks (Section 4): the lemmas stand, most after stated corrections; eleven broad negative claims are no longer supported (rows 960, 963, 965 "buys nothing"; row 968's (LOC-COV) obstruction; row 970's refutation of the integrated, quotient and (ABS-flow) forms; row 978's universal square-root exclusion; row 982's N2/T3, hierarchy and Poincare-absence claims; row 988's restricted-sector FLOOR inference; row 993's full-E_0 identification; row 998's KF (d), I28 and "(better: w_p)"; row 1000's confirmation of T3); Theorem D2, Lemma SHEET (SU(2)) and Lemma PT with an admitted no-seed factor stand as filters on quantifiers. (2) Registry rebuilt (Section 5): four families were blocked only by verdicts that no longer stand (level convexity LC; averaged and quotient flow forms; geometry; restricted-sector seeds); none gained a mechanism; no route is near closure; top by change over cost was LC. (3) Attack on LC: PROVED by hand, unchecked: Lemma S1 and Proposition FR (the mean-square displacement over 2T steps is at most T times the bridge energy, with the bare coupling; given the lane's energy identity), Lemma EL and Corollary NS (slice covariance is Id/4 and every linear statistic has the autocorrelation of one link, at every lag), Lemma KL (a Gaussian chain has the bare time-like stiffness at every frequency; 2 beta sigma^2 sinh omega = 1), Lemma LIFT, Lemma NB. Corrected filter: T3 FAILS as a discard test (its Gaussian benchmark is outside the class of Theorem BR, given the reading of (P1) in (K3); the count is not about gauge-invariant functions) and stands only as a warning on Lemma TEL with operator norms. OPEN: (R-pt), the pointwise roughness of a unit variable; a unit-level log-Sobolev inequality for a gauge-invariant variable of one slice (not a port; the wall in log-Sobolev form); the ARGUED readings of 5.2 and 6.4 item 1; the check W1. Not moved: (W), (CAS), (LIOU), (BDD-Delta), the seed.

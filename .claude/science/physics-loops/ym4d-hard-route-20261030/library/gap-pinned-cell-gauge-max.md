@@ -13,6 +13,18 @@ canonical massive continuum limit of the two-dimensional O(3) model", Sections 2
 from are rows 1007, 1009, 1010 of this lane. The Schrodinger-functional coupling is Luscher, Narayanan, Weisz, Wolff
 (1992). Sussman and Alpoge (with Claude and Codex as authors of their text) are credited where their account is read.
 
+**Status block.** Step 1 inputs: done (Section 1). Step 2 mechanism list: done (Section 2). Step 3 lattice
+statements: done (Section 3; Propositions A, W). Step 5 first piece: done (Section 4; it FAILS for SU(2), with
+proofs and one passing numeric control). Step 4 tests: done (Section 6). Step 6 one-step gain: no statement exists
+(Section 7). Compare with earlier work: Sections 5 and 8. Report and RESULT: Section 9. The sections are in work
+order; read 9.1-9.2 first, then 4.7.
+
+**What this run did not cover.** OpenAI's O(4) paper was re-read at p. 13 only; everything else of both OpenAI
+papers is used through rows 1009 and 1010 (readings, unchecked). The part of the 2D proof after small stiffness
+(coarse orientations, association) was not examined. No published literature was searched (companion row 1012);
+Luscher, Narayanan, Weisz, Wolff and Durhuus, Frohlich are RECALLED or cited through lane files. PRs #10133,
+#10134, #10141, #10144 were not searched. No typical-pin form was formalised or tested.
+
 ## 0. Plan (save protocol; at most eight steps, one step per response, result appended before the next)
 
 1. Read the inputs: `parts/gap.md`, rows 1009, 1010, 1007 in full, the exercise skill at main 8b11ae2bb9. Note what
@@ -38,6 +50,7 @@ from are rows 1007, 1009, 1010 of this lane. The Schrodinger-functional coupling
 - 2026-11-15T18:35Z: Section 4 written: Propositions B, B', SEAG, Lemmas CEN, EMB; the first piece (twist with classical cost, start bound) FAILS for SU(2) in the class.
 - 2026-11-15T18:41Z: GUIDE control of Proposition SEAG run (PASS at three points, 4.8); Sections 5 (compare) and 6 (tests) written.
 - 2026-11-15T18:43Z: Section 7 written: Task 4 has no statement (fails at the twist); Lemma FR; the missing objects (N1)-(N3).
+- 2026-11-15T18:45Z: Sections 8 (cross-branch search) and 9 (report, work items, registry, RESULT) written. Run ended after the anchor check.
 
 ## 1. Step 1: inputs read, and where the lane's record sits (exercise step 0)
 
@@ -236,13 +249,15 @@ d(theta n)_p = n_x - n_z, which is not zero when n_x differs from n_z. For the s
 independent signs eps_x: the tails of l_1, ..., l_4 are x, x + mu, x + nu, x, so d(theta n)_p = a [eps_x (theta_1 - theta_4) +
 eps_(x+mu) theta_2 - eps_(x+nu) theta_3], and the mean of its square is the stated sum. QED
 
-Reading. For the potential of a constant field strength f on a cube of side S, theta is of order f S on most
-boundary links. So the class supremum of the response is at least of order b f^2 S^5, against the classical
-b f^2 S^4. The hypothesis "H_c <= h on constant twists, uniformly over the class", normalised by the classical
-action, is false for SU(2) at every scale and every h, already at the start. For U(1) it is true with h = b (3.2).
-With a homogeneous interior strength b the same conclusion is ARGUED only (a rough pure-gauge pin turns a theta into
-a rough field at the trivial pin; its cost is of order b per link at large b by the classical action; not proved
-here for all b).
+Reading (ARGUED for the constants). For a potential theta of a constant field strength f on a cube of side S, a
+boundary square of side r has |sum of theta around it| = |f| r^2, so the sum of theta^2 over its 4 r links is at least
+f^2 r^3/4 (Cauchy-Schwarz). Nested squares in the slices of the boundary faces give sum of theta^2 over boundary links of
+order f^2 S^5 for EVERY choice of the potential. So the class supremum of the response is at least of order
+b f^2 S^5, against the classical b f^2 S^4: the best constant h in "H_c <= h times the classical action, uniformly on
+the class" is at least of order b S. It grows with the scale; it does not start at b and decrease. For closed theta
+no constant works. For U(1) the bound holds with h = b at every scale (3.2). With a homogeneous interior strength b
+the same conclusion is ARGUED only (a rough pure-gauge pin turns a theta into a rough field at the trivial pin; at
+large b its cost is of order b per link by the classical action; not proved here for all b).
 
 ### 4.3 Lemma CEN (the only link symmetries are central)
 
@@ -382,7 +397,7 @@ has no start, so most tests are answered by what they say about the surviving pi
 | Compact U(1): the gain must be zero | Propositions A, W with all fields in one axis | PASS, and it locates the failure. For U(1): kappa = 0, every bracket in Proposition W vanishes, the twist is the one-form symmetry, H_c <= b on the whole class, and no step lowers it. For SU(2): the brackets are there and the symmetric twist is not (Lemma CEN). The 2D O(N) models have both at once; the two gauge models have one each. |
 | Lemma PT (product with a massless factor), `gap-crux-exercise3-max.md` L690 | a gain statement for SU(2) x Villain U(1) | Not reached: no gain statement exists. On the sheets of Lemma EMB the answer is row 1009's (the step reads one factor). |
 | Proposition NP, `gap-crux-exercise4-max.md` L383 | the candidate | Passes trivially: no value of D is read. |
-| Theorem D2, `gap-tiltproof-max.md` L240 | the supremum over boundary pins | D2 does not bind a class of cubes with boundary pins: its sheets need links pinned in the interior. It binds every class that contains thin boxes or interior pins, through Lemma EMB, as a constraint and not a refutation: by D2 5.4 the sheet structure factor is at least A (1/4 - G_S/b) with G_S about (1/(2 pi)) log S + 0.0488, positive while log S < (pi/2) b - 0.31. So a statement uniform on such a class has a length of at least order e^((pi/2) b) (PROVED GIVEN D2's two ported inputs, row 1000). What binds the cube class is Proposition B' (gauge covariance). |
+| Theorem D2, `gap-tiltproof-max.md` L240 | the supremum over boundary pins | D2 does not bind a class of cubes with boundary pins: its sheets need links pinned in the interior. It binds every class that contains thin boxes or interior pins, through Lemma EMB, as a constraint and not a refutation: by D2 5.4 the sheet structure factor is at least A (1/4 - G_S/b) with G_S about (1/(2 pi)) log S + 0.0488, positive while log S < (pi/2) b - 0.31. So a statement of mixing uniform on such a class has a length of at least order e^((pi/2) b) (ARGUED from D2 5.4: mixing with length X bounds the sheet structure factor by a constant times X^2; D2 itself is PROVED GIVEN its two ported inputs, rebuilt in row 1000). What binds the cube class is Proposition B' (gauge covariance). |
 | Lemma SHEET at fixed b, `gap-sepinput-max.md` L358 | strengths in [0, b] | Does not bind: its proof needs the coupling on the tube to tend to infinity. At fixed b the frozen structures come from pins, not strengths: Lemma EMB. |
 | The G8 warning, `gap-brainstorm2-max.md` L263 (added test) | classes with thin boxes | A thin box with equal curved faces is a 2D model whose continuous symmetry is broken to Z_2 by the background; the lane ARGUES it can order like an Ising model. If so, NO statement of mixing holds uniformly on a class with thin boxes at large b. OpenAI's class avoids this because its twists are one-sided. Not rebuilt here. |
 | Frozen Q_8 and 2T, `parts/gap.md` L199 | Sections 3-4 | The derivatives of Propositions A, W do not exist for a finite group. Lemma CEN holds with the same centre Z_2. So whatever survives Section 4 for SU(2) (the central twists) holds verbatim for Q_8 and 2T, which have degenerate flat states at large coupling. A gauge gain must therefore use the Lie algebra, that is exactly the part with no class. PASS as a constraint; it leaves nothing to test. |
@@ -420,14 +435,16 @@ gauge covariant). For every plaquette p with base x,
   2 |s_p(omega) x n_x| = |(1 - Ad(omega_p)) n_x| <= |D_(l_1) n| + |D_(l_2) n| + |D_(l_3) n| + |D_(l_4) n|.
 
 Hence, with lambda_x(omega) = min over unit n of the sum over plaquettes p based at x of |s_p x n|^2 and
-NA(omega) = sum over sites of lambda_x(omega): every frame has sum over links of |D_l n|^2 >= NA(omega)/24.
+NA(omega) = sum over sites of lambda_x(omega): every frame has sum over links of |D_l n|^2 >= NA(omega)/6.
 
 Proof. Telescope n_x - Ad(omega_p) n_x along the four links; each term is a rotated D_l n. Ad(omega_p) is the rotation
-about s_p by twice the class angle, so |(1 - Ad(omega_p)) n| = 2 |sin phi_p| |n_perp| = 2 |s_p x n|. Square, use
-(a_1 + ... + a_4)^2 <= 4 sum a_i^2, and that a link lies in at most 6 plaquettes. QED
+about s_p by twice the class angle, so |(1 - Ad(omega_p)) n| = 2 |sin phi_p| |n_perp| = 2 |s_p x n|. Square and use
+(a_1 + ... + a_4)^2 <= 4 sum a_i^2: |s_p x n_x|^2 <= sum over the links of p of |D_l n|^2. Sum over p; a link lies in at
+most 6 plaquettes. QED
 
 Use. The exact relation between a frame twist and a gauge transformation is theta n = d lambda n with
-(d lambda)_l n_tail = [gauge direction of lambda n]_l + lambda_head D_l n (direct computation from 3.1). So the Ward identity of
+(d lambda)_l n_tail = [gauge direction of - lambda n]_l + lambda_head D_l n (direct computation from 3.1: the gauge
+direction of mu n is mu_tail n_tail - mu_head Ad(omega_l) n_head). So the Ward identity of
 the U(1) about n fails exactly by the frame defect D n, and the direct term along theta n has a mass-like part of
 order b theta^2 |D n|^2. NA(omega) is zero only when all plaquette axes at each site are parallel (an abelian pin).
 ARGUED size: for a typical configuration at coupling b, |s_p|^2 is of order 1/b with independent directions, so
@@ -463,3 +480,112 @@ boundary, uniform over pins. In the 2D model the global symmetry gives a sum rul
 stiffness with a classical normalisation; the gauge class has no sum rule (Lemma CEN). A uniform bound on that
 covariance is a finite-size mixing condition of Dobrushin-Shlosman type. On classes with thin boxes it is
 constrained by Theorem D2 and threatened by the G8 warning (Section 6). No attack here.
+
+## 8. Repo search across branches (rule "Repo first"; finished 2026-11-15T18:44Z by the file time of its output)
+
+Bare blob-less depth-1 fetch of `main` and of PR #10114 into `/tmp/row1011-git` (nothing in the checkout touched).
+Searched for Schrodinger functional, pinned cell, stiffness, helicity modulus, background field: on main in the 67
+`.md` files with ym4d in the path; on PR #10114 in 44 files of `agents/ym4d-proof/` picked by name (mass gap,
+coupling, flux, twist, background, sigma, RTARGET). Hits: main, 7 files of `research/ym4d/library/` for "background
+field" only (the existence chain's Balaban backgrounds); PR #10114, `FINITE_COUPLING_KERNEL_ASTRA.md` and
+`UNIFORM_ONE_LOOP_COUPLING_ASTRA.md` use "stiffness" for the kernel constant of the soft-kernel route, and
+`RTARGET.md`, `BARE_DETERMINANT_COUPLING_ASTRA.md` have "background field" only. No pinned-cell argument, no
+Schrodinger-functional coupling and no gauge twist stiffness on either branch. PRs #10133, #10134, #10141, #10144
+were not searched (10134 is an older copy of this folder; the others hold existence-chain files, per the lane's
+notes). The search by names is bounded: it is "not found in the files searched", not "absent".
+
+## 9. Report (exercise step 9)
+
+Every statement below carries the mark of the section it comes from. Nothing is checked by another model.
+
+**9.1 The wall, in plain words.** OpenAI's two-dimensional proof takes a block of a magnet with its edge held fixed
+and twists it slowly. A slow twist is cheap on every arrangement of the spins, because turning all spins together
+costs nothing. The proof shows that the block resists the twist less at each larger size; the reason is that
+rotations about different axes do not commute. Once the block is soft, order is lost and a mass gap follows. The
+row asked whether the same step-by-step argument can be written for the four-dimensional gauge field. What
+happens instead: the gauge field has no operation that plays the part of "turn all spins together", except
+multiplying by -1. The evidence covers the argument in its uniform form, over every boundary condition. It does
+not cover forms that hold only for typical fields. Getting past it needs a twist that is cheap on every block.
+
+**9.2 What the exercise found.**
+1. The pieces that are identities exist on the lattice and are proved here: the class of pinned cells, the exact
+   formula for the response to a link rotation (Proposition A), the Ward identity with a bracket term
+   (Proposition W), and the 4D log sum (1/(8 pi^2)) log (3.4). PROVED, unchecked.
+2. The piece that carries the 2D proof does not exist for SU(2): a twist whose direct cost is the classical action
+   on every pin. The supremum over pins is blind to the colour coherence of the twist (Proposition B); the best
+   uniform constant grows like b S instead of starting at b (Proposition B'); the only link symmetries are central
+   (Lemma CEN); the start bound is not "drop the covariance" even at the trivial pin (Proposition SEAG, with a
+   passing numeric control, 4.8). PROVED, unchecked; the scaling constants are ARGUED.
+3. Compact U(1) has the twist and the start bound, and zero gain. SU(2) has the bracket and no twist. The 2D
+   models have both. This is the structural reason in one line (PROVED as the sum of 3.2, 3.3, 4.3).
+4. The 2D class sits inside the gauge class exactly, on thin boxes with one flat face (Lemma EMB; the layer idea
+   is Durhuus and Frohlich's and is on file in rows 712, 825, 977). It says nothing about the bulk.
+5. A repair needs a colour frame, which costs at least the non-abelian part of the pin (Lemma FR, PROVED). Such
+   a frame can exist only on typical small-field configurations, that is above the band (reading). So the row's
+   question "does the iteration itself have a 4D gauge form" has the answer: not as a class-supremum induction;
+   a typical-field form would be of the first-passage kind and would not cross the band by this mechanism.
+
+This run did not pass the wall. It produced a located failure with proofs, and no new route with a consumer.
+
+**9.3 Filters corrected.** Two reading-level remarks of row 1009 (Section 5, end): a Schrodinger-functional start
+bound does not follow by dropping a variance; and an upper bound on a response is not kept by a supremum over
+pins for SU(2). One test reading: Theorem D2 does not bind a class of cubes with boundary pins; Proposition B'
+does (Section 6). No lead rule of `parts/gap.md` changes.
+
+**9.4 Routes worth doing.** One, and it is a check: W1 below. No attack route is proposed from this mechanism.
+
+**9.5 What not to do next.**
+- Another transfer of the pinned-cell iteration with constant link twists, or with a Schrodinger-functional
+  coupling taken uniformly over boundary data: refuted in that form (4.2).
+- A frame by gauge fixing on all pins: Lemma FR and Remark HOPF.
+- An argument from the sheets of Lemma EMB to the bulk: the sheets are 2D models in every dimension d >= 3.
+- A class of boxes of all shapes with uniform mixing as hypothesis: Theorem D2 constrains it and the G8 warning
+  (ARGUED in row 876) says it is false at large b.
+
+**9.6 The exact price.** Not found. What is located: the 2D engine uses an exact continuous symmetry that acts on
+every configuration, and SU(2) lattice gauge theory has none beyond the centre (Lemma CEN). This is a necessary
+condition for this engine, not an equivalence for the wall (W).
+
+**9.7 Work items.**
+
+W1 (check; a model that did not write this file; Claude Opus 5.5 high or gpt-6-astra). Read
+`library/gap-pinned-cell-gauge-max.md` Sections 3 and 4 and 7.3 at the commit that holds it. Redo by hand, in this
+order: (i) Proposition A (i): the expansion of t_p(e^(eps B) U) to second order, with the quaternion rules of 3.1;
+(ii) Proposition W: the mixed coefficient and its same-link part; (iii) Proposition B and B': the covariance rule
+with the tail convention, the value H_c(1; B) for the boundary strength field, the two lower bounds; (iv)
+Proposition SEAG: the four corner cases, the gauge-averaging step, the count 6 + 18; (v) Lemma CEN; (vi) Lemma EMB
+against p. 13 of OpenAI's O(4) paper (github.com/openai/math commit 4eaee87548250b2682affda7d05d947c05554bae,
+`preprints/Sharp-mass-bounds-for-the-two-dimensional-O4-model-September-23-2026/paper.pdf`, fetch into a new empty
+/tmp folder); (vii) Lemma FR. Test first: (a) in 4.2, is the strength field (b on boundary plaquettes, 0 inside)
+inside the class the row means; (b) in 4.4, does the base corner vanish identically; (c) the sign in 7.3 "Use".
+Verdict per statement: ADVANCE, CORRECT-NO-ADVANCE or WRONG with the failing line. Also judge the two corrections
+of row 1009 in Section 5. Stop rule: stop at the first WRONG that breaks 4.7 and report it. Output
+`library/gap-pinned-cell-gauge-check-<model>.md`. No new attack.
+
+Not proposed, with reasons:
+- An attack on (N1)-(N3) of 7.4: it is a typical-field statement at small effective coupling; the lane's record
+  says no input carries such a statement across the band (`parts/gap.md` L41-43), and this row adds none.
+- A proof of the G8 warning (a Peierls argument for a thin box with equal curved faces): it would close the
+  uniform-class door for thin boxes by proof, but no route on the path of (W) consumes it.
+- A 3D corollary (area law for 3D SU(2) from the 2D O(4) results through the layer comparison): off the 4D
+  path, and the layer model there has two-sided backgrounds, which OpenAI's theorems do not cover.
+- The Schrodinger-functional bound at the trivial pin, H_c(1; a theta) <= b times the classical action (4.4): OPEN,
+  no consumer in the lane.
+- A numeric measurement of the Hessian on typical pins in a smooth gauge: guide only; no decision of the lane
+  moves on it.
+
+**9.8 Approach registry (proof-search governance).**
+
+| Family | Object | Mechanism | Terminal obligation | Strength vs (W) | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| G1 class supremum, constant link twists | Hessian of the pinned free energy on C_b | 2D iteration transcribed | a twist with classical direct cost on every pin | stronger (it would give uniform mixing) | retired | Propositions B, B', SEAG, Lemma CEN | an exact continuous symmetry of a reformulated model |
+| G2 typical pins with a colour frame | the same Hessian along theta n | background-field Ward identity plus bracket | (N1)-(N3) of 7.4 | unknown; reads first passage | blocked-local | Lemma FR, Remark HOPF | a frame and a controlled Ward identity on typical fields that persist into the band |
+| G3 abelian pins | F_c on one maximal torus | exact U(1) Ward identity | closure under conditioning | weaker (one family of pins) | blocked-local | 4.7 (ii) | a conditioning that keeps the pins abelian |
+| G4 sheets | thin boxes with a flat face | the 2D theorem itself | none (it is OpenAI's theorem) | weaker (no statement on the bulk) | candidate-complete as a 2D statement, GIVEN OpenAI's proof | Lemma EMB | a comparison from sheets to the bulk |
+| G5 boundary Neumann covariance | mixed Hessian across a cell | Dobrushin-Shlosman type condition | uniform-in-pin decay at one scale | stronger | unexplored | 7.5 | a mechanism for decay uniform in pins |
+
+Assumptions most likely to be wrong in this row: that a class of cubes is the only natural class (a class of
+typical pins was not formalised); the ARGUED sizes in 7.3. Most expensive if wrong: Proposition B' (it carries the
+verdict). Literature worth translating: none found by this row; row 1012 reads the published record.
+
+RESULT: Row 1011, exercise on transferring OpenAI's 2D pinned-cell stiffness iteration to 4D SU(2); checked by no one. PROVED by hand (unchecked): the lattice pieces that are identities exist (the pinned class; Proposition A, the exact response to a link rotation; Proposition W, the Ward identity with its bracket term; the 4D shell sum (1/(8 pi^2)) log). PROVED (unchecked): the piece that carries the 2D proof FAILS for SU(2) in the class of all pins and strengths in [0, b]: the supremum over pins is invariant under site-wise colour rotation of the twist (Proposition B), so no bound by the classical action holds and the best uniform constant grows like b S (Proposition B'; constants ARGUED); the only link symmetries are central (Lemma CEN); the start bound is not "drop the covariance" even at the trivial pin (Proposition SEAG; a numeric control of its identity passed at three points, guide only); a colour frame costs at least the non-abelian part of the pin (Lemma FR). Compact U(1) has the twist with zero gain, SU(2) has the bracket with no twist. The 2D class embeds exactly on thin boxes with a flat face (Lemma EMB; idea of Durhuus and Frohlich, on file in rows 712, 825, 977) and says nothing on the bulk. Tests: U(1) passes with zero gain; Theorem D2 and Lemma SHEET do not bind a class of cubes (Proposition B' does); Q_8, 2T, five dimensions and instantons constrain only a repair. Corrected: two reading-level remarks of row 1009. The one-step gain has no statement, so Task 4 gives no constants. OPEN: a typical-field form with a colour frame ((N1)-(N3) of 7.4), which would read first-passage data and not cross the band by this mechanism; the Schrodinger-functional bound at the trivial pin; the wall (W) is not moved.

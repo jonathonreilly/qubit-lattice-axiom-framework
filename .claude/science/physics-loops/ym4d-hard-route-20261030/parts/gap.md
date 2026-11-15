@@ -128,6 +128,7 @@ obligation here carries `implication` or `discharged`; the lane's own check rows
 - unchecked (same-provider check 997): Lemma SHEET -> rule against forms uniform over coupling fields. Row 998 L547.
 - unchecked (row 1003, check 1006 HOLDS, same provider): Proposition NP, a no-seed model of the class in which D contracts by any theta on any J doublings -> rule W2 clause; no proof of (CAS) by induction on the history of D. `library/gap-crux-exercise4-max.md` 5.1, 6.1.
 - unchecked (row 1004; check 1008 HOLDS for all six, same provider; LYP's one-plaquette sentence corrected to 'refuted by LYP2 on every periodic 4D lattice with sides at least 3'): Lemmas LYP and LYP2 (the Lee-Yang crux of route B9 is false for one plaquette at every beta, and on every finite lattice at small beta), Lemma GG, Lemma TW, Proposition CB, Theorem TW-T (the twisted transfer input (TM-tw), `library/gap-transfer-twisted.md`). `library/gap-outside-box-max.md` 6.1-6.3, 7. None moves (W); row 1004 found every frame change blocked-equivalent or retired.
+- open (cross-provider check of row 993, `library/gap-idab-check-astra.md` L196-215): (E0-tor), torus independence up to an exponentially small wrapping tail of the account's whole vacuum counterterm E_0^(j) (CMP 119 p. 279 adds the vacuum values of E^(k+1) and R^(k+1)), needed where (DET) and the (HC-phys) reduction compare two tori; Lemma C of row 993 covers only the explicit prefactor constants. Needs matching non-wrapping coefficients and a summable wrapping tail.
 
 ## Requests
 

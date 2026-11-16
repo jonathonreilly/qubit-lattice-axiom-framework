@@ -56,7 +56,7 @@ PROVED, ARGUED, OPEN, FAILS. Measured data guide or refute; they never discharge
 | 0 record located, closed list | yes (16:00Z) | closed list below; row 1064's reading absent at start |
 | 1 measured record + wall twice | yes (16:05Z) | 33 measured items with sources; leading strong coupling off by 5x at beta 2.3 (L9) |
 | 2-3 inventory, reasoning up (row's steps 1-3) | yes (16:06Z) | C1-C10: gap = 0++ at 3.78 sqrt(sigma); generated in the crossover band beta 2.2-2.4 next to a mixed-action critical end point |
-| 4 assumptions table (>= 40, six groups, Elon pass) | no | |
+| 4 assumptions table (>= 40, six groups, Elon pass) | yes (16:09Z) | 59 rows; top five: Wilson-axis band (c2+b3), strong coupling to the band (c4), no-transition premise (e4), small boxes (c6), gap via confinement (d2, e10) |
 | 5 comparison with lane files | no | |
 | 6 discard tests, set-aside methods | no | |
 | 7 routes, kills | no | |
@@ -279,3 +279,126 @@ Mark: reading (rests on BELIEF items L5, L6, L8, L9).
   guide.
 
 - 16:06Z steps 2-3 written (C1-C10). Next: step 4, the assumptions table.
+
+## Step 4: the assumptions table (59 rows, six groups, with the Elon pass)
+
+Written before any lane file is opened, so "where used" names the row text, the Clay statement or "lane (located in
+step 5)". Columns: **Who requires** (Elon: Clay = Jaffe-Witten statement; owner; lane = the lane's method; habit) |
+**N/M/H** (needed by the target / by the method / habit) | **Record** (S = supports, C = contradicts, O = leaves open,
+with items) | **If wrong** | **Delete?** (can the requirement be deleted, and at what price) | **Check**.
+
+### (a) Target
+
+| ID | Assumption | Who requires | N/M/H | Record | If wrong | Delete? | Check |
+|---|---|---|---|---|---|---|---|
+| a1 | The mass gap is the right object (not confinement, area law, glueball spectrum, clustering) | Clay | N | S: gap is measured directly as the 0++ mass (L1); gap is the weaker of gap/confinement (3.1h) | If the consumer wanted confinement, the target is harder; if clustering, easier | No for Clay; a route that proves confinement to get the gap proves more than needed (3.5) | none needed |
+| a2 | Gap = spectral gap of H above a unique vacuum, equivalently uniform exponential decay of gauge-invariant Euclidean correlations | Clay | N | S: lattice measures exactly this decay (L2) | Different definitions (e.g. without uniqueness of vacuum) change the target at theta = pi (a10) | No | none |
+| a3 | For every compact simple G | Clay | N | S: SU(2), SU(3), SU(N <= 12) all gapped with similar ratios (L1, S1, S4) | An SU(2)-only proof is a partial result | Lane may delete for a first theorem; Clay may not | none |
+| a4 | Existence (construction of the theory) is part of the target; gap without existence is meaningless | Clay | N | O: no measurement bears on existence; numerics presuppose it (ratio scaling L8 is evidence, not existence) | If existence is the hard part, a gap proof conditional on existence prices nothing | No | none |
+| a5 | Infinite volume R^4 | Clay | N | S: finite-volume effects small once box side > 1/T_c (C8) | A torus theorem is a weaker, separate result | No | none |
+| a6 | Exact mathematical statement, no bounded or numerical closure | Clay, owner | N | O (data cannot discharge it) | n/a | No | none |
+| a7 | Non-triviality (not a free field) | Clay | N | S: running coupling and non-Gaussian spectrum measured (E6, L7, L1) | n/a | No | none |
+| a8 | Only Delta > 0 is needed, not its value, nor the spectrum, nor Regge behaviour | Clay | N | S | A route that computes the spectrum proves more than needed | Yes: drop every spectrum ambition | none |
+| a9 | Uniqueness of the vacuum (clustering) is included | Clay (via OS/Wightman) | N | S at theta = 0: no degeneracy seen (L2 correlators decay to <O>^2) | If the vacuum were degenerate, "gap" splits into gap per vacuum | No | none |
+| a10 | theta = 0 | Clay (implicitly), lane | N (implicit) | O: chi measured nonzero (L14), so physics depends on theta; at theta = pi no measurement (sign problem); anomaly arguments (Gaiotto-Kapustin-Komargodski-Seiberg 2017, recalled) say SU(2) at theta = pi cannot be trivially gapped with a unique vacuum | A "for all theta" target would be false with uniqueness at theta = pi (BELIEF) | Already implicit; state it | none |
+
+### (b) Formulation
+
+| ID | Assumption | Who requires | N/M/H | Record | If wrong | Delete? | Check |
+|---|---|---|---|---|---|---|---|
+| b1 | Euclidean OS setting with reflection positivity | Clay allows; lane | M | S: all pure-gauge data are Euclidean lattice data (L1-L19) | Minkowski-only methods would be needed | Keep (cheapest) | T1 |
+| b2 | Lattice regularization of the Euclidean theory | lane | M | S: the data come from it. But the crossover band, specific-heat peak and end point (L5, L6) are features of the lattice, not of the continuum: in the continuum nothing singular happens at the gap scale (L8, E6) | A route with no lattice theory at spacing a ~ 1/Delta never meets the bulk crossover | Partly: the lattice is needed only as a UV regulator; the joining scale need not be a lattice with Wilson action | none run |
+| b3 | The Wilson plaquette action | lane, habit | H | C in part: the Wilson axis passes close to the fundamental-adjoint end point (L6), producing the scalar dip (3.1f); other actions sit at other distances from it (recalled) | An action farther from the end point has a milder band; universality (e6) says the continuum is the same | Yes in principle (universality); price: any proof must then handle that action | none run |
+| b4 | SU(2) rather than SU(3) | lane | M | S: same qualitative physics (C7); SU(2) has the simplest centre Z2 and real representations | Results do not transfer automatically to SU(3) | Clay requires all G later | none |
+| b5 | Pure Yang-Mills rather than QCD | Clay | N | O: experiment measures only QCD (E1-E8), whose light spectrum is gapless in the chiral limit and has string breaking; pure-gauge facts are lattice-only | Experiment cannot test the target directly; all "measured" pure-gauge facts are numerical | No | none |
+| b6 | Periodic torus, then thermodynamic limit | lane, habit | M | C at small sizes: periodic boxes of side < 1/(T_c a) are deconfined (C8) | Small-box theorems describe the deconfined regime | Use boxes >= 1/(T_c a) or free b.c. | L3 |
+| b7 | Only gauge-invariant observables carry meaning | Clay | N | S: gauge-fixed data (L15, L18, L19) are copy- and gauge-dependent | A gauge-fixed route must solve the Gribov problem | No | none |
+| b8 | Compact gauge group, Haar measure on links | Clay (compact G), lane | N | S: compactness gives strong-coupling convergence (T2); compactness alone gives no gap (compact U(1) is gapless at weak coupling, T4) | A non-compact formulation loses T2 | No | T2, T4 |
+| b9 | Exactly four dimensions | Clay | N | S: 4D is marginal (AF, T6); 5D SU(2) has a bulk first-order transition and no interacting continuum limit (Creutz 1979, recalled) | A dimension-blind tool fails in d = 5 (BELIEF) | No | none |
+| b10 | The relevant channel is 0++, read from plaquette-type operators | lane | M | S: 0++ is lightest (L1) | A bound on another channel misses the gap | No | none |
+| b11 | Gauge group SU(2) enters only through its Haar measure and characters | lane | M | O | Route-specific | n/a | none |
+
+### (c) Reduction
+
+| ID | Assumption | Who requires | N/M/H | Record | If wrong | Delete? | Check |
+|---|---|---|---|---|---|---|---|
+| c1 | Multi-scale RG frame: UV control (T5) + IR cluster expansion (T2, T3), joined in a band | lane | M | S for the three-regime picture; the uncovered region is about 2-4 factor-2 blockings at fixed physics (C10) | Other frames (stochastic quantization, bootstrap) avoid the band but have their own walls | Partly (c2) | none |
+| c2 | The band is the order-one *bare* coupling of the Wilson action (row text) | lane | M | S that the gap scale meets the cutoff there (C2); C in part: the band is where the *Wilson* action is near-critical in the extended plane (C4). An RG frame joins at a scale where the *effective* action is O(1), which need not be Wilson | If the joining action is not Wilson, the end point may be farther or nearer | Yes: the joining scale can be chosen; the joining action is the RG's, not Wilson's | step 5 |
+| c3 | One fixed bare coupling at a time, then uniformity | lane | M | O: lattice gap varies smoothly (L2) | A pointwise-in-beta bound without uniformity proves nothing about the continuum | No (uniformity is the content) | none |
+| c4 | The strong-coupling (IR) side can be extended up to the band | lane (if used) | M | C: leading strong coupling is off by 5.4x in sigma a^2 and 2.4x in m a at beta 2.30 (L9); the roughening point estimate is inside the crossover (L10) | IR tools must be applied after further blockings, not at the band | Yes: block until the effective coupling is truly strong | L9 (guide) |
+| c5 | The UV side (perturbative RG) can be run down to the band | lane (if used) | M | S partly: renormalized perturbation theory works from beta about 2.5 (SU(2)) / 5.7 (SU(3)) (S6, L8 boosted); bare-coupling scaling does not (L8) | UV control must use renormalized couplings | n/a | L8 (guide) |
+| c6 | A finite-volume criterion (gap in a box implies gap) at band couplings with small boxes | lane (if used) | M | C for boxes of side < 1/(T_c a): they are deconfined (C8) | Small-box checks measure deconfined physics | Use boxes >= 4 (beta 2.3), >= 8 (2.5), >= 14 (2.7) | L3 |
+| c7 | One inequality (log-Sobolev, Bakry-Emery, correlation inequality) proves it all | habit | M | C (BELIEF test): a tool blind to the adjoint direction cannot hold uniformly near the end point (C9) | One-tool routes have a range bounded by the end point | Yes | none |
+| c8 | Reduction to the centre (Z2) or a finite subgroup | lane (if used) | M | O: Z2 gauge theory alone has a first-order transition (recalled, Creutz-Jacobs-Rebbi 1979) and is a different universality class; the SU(2) end point is where the Z2 and SO(3) lines merge (L6) | A Z2-only argument meets the Z2 transition | n/a | none |
+| c9 | A gauge fixing inside the proof | (if used) | M | C as a warning: Gribov copies change gauge-fixed numbers (L18, L19) | Gribov problem | Avoid gauge fixing at the joining scale | none |
+| c10 | Numerical checks on small lattices (4^4) guide the lane | habit | H | C at beta >= 2.3 (C8) | Wrong-phase guidance | Use L >= 1/(T_c a) | L3 |
+
+### (d) Discard tests (as used generically; the lane's own list is read in step 5 and audited in step 6)
+
+| ID | Assumption | Who requires | N/M/H | Record | If wrong | Delete? | Check |
+|---|---|---|---|---|---|---|---|
+| d1 | "A tool that also proves a gap for 4D compact U(1) at weak coupling is wrong" | lane | M (valid test) | S: T4 is a theorem | n/a: valid in the refutation form | Keep | T4 |
+| d2 | "A tool that also gives a gap in the deconfined (high-T or small-box) theory is wrong" | habit (if used) | H | C: the deconfined theory still has a spatial gap (magnetic and Debye screening, recalled; C8); deconfinement kills the area law, not the gap | Tests against deconfined models discard gap tools wrongly; they test confinement tools only | Restrict to area-law tools | none run (needs reading of spatial screening masses) |
+| d3 | "It needs a small number" (small beta or small g) | lane | M | S that the band has no small bare parameter (C3); O whether a small parameter exists in another variable (distance from the end point, 1/xi, 1/N) | Range form only: write the proved range | Keep in range form | none |
+| d4 | "Its constant depends on the answer" (circular) | lane | M | O | Not circular when the constant depends on a smaller scale (induction over blockings) | Keep in valid form | none |
+| d5 | "It bounds the wrong quantity" (string tension, free energy, plaquette, instead of the gap) | lane | M | S: sigma and Delta are distinct (ratio 3.8, L1) though one-scale | n/a | Keep | none |
+| d6 | "It was tried" (Balaban plus cluster expansions since the 1980s) | habit | H | O: a failed search rules out nothing | n/a | Delete as a reason | none |
+| d7 | NEW from data: "a tool whose hypothesis is blind to the adjoint direction of the action holds also at the fundamental-adjoint critical end point, where some lattice correlation length diverges; so it cannot give a uniform lattice gap in a neighbourhood of the end point" | this run | M | S: L6 (end point exists, MEASURED); channel of the soft mode BELIEF | If the soft mode at the end point is not gauge-invariant-local or not 0++, the test binds a different quantity | Keep as BELIEF test until the end point is a theorem | none (see step 8) |
+| d8 | "A tool that holds also for pure Z2 or SO(3) lattice gauge theory meets their first-order transitions" | lane (if used) | M | S: L6 | n/a | Keep | none |
+| d9 | "A dimension-blind tool fails in d = 5" | habit | M | S (MEASURED bulk transition in 5D SU(2), recalled; not a theorem) | Test rests on BELIEF | Keep as BELIEF test | none |
+| d10 | "Numerics on small lattices decide between routes" | habit | H | C (C8) | Wrong-phase guidance | Delete for beta >= 2.3 with L < 1/(T_c a) | L3 |
+
+### (e) Beliefs
+
+| ID | Assumption | Who requires | N/M/H | Record | If wrong | Delete? | Check |
+|---|---|---|---|---|---|---|---|
+| e1 | Centre vortices are the confinement mechanism | field (part) | H | CONTESTED: projected data favour (L15-L17), twisted-box free energy (T10) gauge invariant; gauge dependence of projection | A vortex-based proof route would aim at a non-mechanism | Not needed for the gap | none |
+| e2 | Dual superconductor / monopole condensation | field (part) | H | CONTESTED (L18: 92 percent abelian, Gribov-sensitive) | same | Not needed | none |
+| e3 | Gribov-Zwanziger horizon / propagator mass is the mechanism | field (part) | H | CONTESTED (L19: decoupling, not scaling) | same | Not needed | none |
+| e4 | No bulk phase transition on the SU(2) Wilson axis at T = 0 | everyone | M (every route joining strong coupling to the continuum along the Wilson axis needs it) | S strongly (L5-L7, L2 smooth) but it is NOT a theorem | If false, the strong-coupling phase (T2) is not the continuum phase on the Wilson axis | Cannot delete on the Wilson axis; can be avoided by joining at an RG effective action instead (c2) | open (mathematics) |
+| e5 | Asymptotic freedom holds non-perturbatively: beta -> infinity is the continuum limit | everyone | N in practice | S (L7, L8 ratio scaling, E6) | No continuum limit at g -> 0 | No | none |
+| e6 | Universality: actions in a neighbourhood give the same continuum theory | everyone | M | S (ratio scaling L8; action comparisons recalled) | Action choice would matter for the target | No | none |
+| e7 | A continuum limit exists with the measured ratios | everyone | N | S (L8) | n/a | No | none |
+| e8 | Large N as a guide: the gap persists at N = infinity | field | H | S (S4: 0++ 3.072 sqrt(sigma)) | n/a | n/a | none |
+| e9 | Glueballs are closed flux tubes (string models) | field (part) | H | CONTESTED as dynamics; long open strings are firm (L11-L13) | n/a | Not needed | none |
+| e10 | The gap is caused by confinement | field (habit) | H | O: one scale (C1) but the gap holds where confinement fails (3.1h) | A route proving the gap through the area law proves more than needed and is harder | Yes | none |
+| e11 | Instantons do not drive the gap or confinement | field | H | S in part (L17: topology follows vortices) | n/a | n/a | none |
+
+### (f) Working rules (questioned on paper only; all obeyed)
+
+| ID | Rule | Who requires | Record | What a different rule would give (not used) |
+|---|---|---|---|---|
+| f1 | No computer-assisted proofs; Lean-formalizable only | owner | O | With interval arithmetic allowed, a finite-volume criterion checked at one band coupling (if one existed) could be certified; not used |
+| f2 | Measured data never discharge a proof step | owner, skill | n/a | n/a |
+| f3 | SU(2) first | lane | S (C7) | SU(3) first would add a first-order deconfinement and a weaker Z3 analogy; no gain |
+| f4 | Lattice first, Wilson action | lane | C in part (b3, c2) | A route that joins at an RG effective action (b2, c2) |
+| f5 | Jaffe-Witten target as the frame | Clay, row 1052 | S that the gap is the measured object (a1); O on theta (a10) | A confinement target is harder; a lattice-uniform target is the honest intermediate |
+| f6 | No subagents; one response <= 128k tokens; write as you go | owner | n/a | n/a |
+| f7 | No lane file before step 5 | row 1063 | n/a | n/a |
+
+### Elon pass (who requires each requirement; what can be deleted)
+
+Required by Clay and not deletable: a1-a7, a9, b5, b7, b9 (and a10 as implicit). Required only by the lane's method
+and deletable at a price: b2 (lattice at the joining scale), b3 (Wilson action), b6 (periodic small boxes), c2 (the
+band in *bare* Wilson coupling), c4 (pushing strong coupling to the band), c6 (small-box criteria), c7 (one tool),
+c10 (small-lattice numerics), d2, d6, d10 (invalid or weak tests), e10 (gap through confinement). Habits with no
+requirer: e1-e3, e9 (mechanism beliefs; no route needs them for the gap).
+
+### Ranking (by how much the problem changes if dropped)
+
+1. **c2 + b3: the band is the Wilson action at order-one bare coupling.** The data place the crossover where the
+   *Wilson* action passes a critical end point of the extended plane (C4). The lane would instead choose the joining
+   action and scale from the RG, and ask how far that action is from the end point.
+2. **c4: strong coupling reaches the band.** Contradicted quantitatively (L9). The lane would block further before
+   using cluster expansions and count the extra blockings (C10).
+3. **e4: no Wilson-axis transition.** Supported but unproved; every Wilson-axis join needs it. The lane would mark it
+   as an open premise of any such route.
+4. **c6/c10/b6: small periodic boxes.** Contradicted at beta >= 2.3 (C8). The lane would re-check any finite-box
+   criterion or numerical guide against 1/(T_c a). (Changes an owner decision if a lane verdict rests on 4^4 data.)
+5. **d2/e10: gap through confinement, and deconfined models as tests.** The data say the gap is the weaker property;
+   the lane would drop area-law intermediates and stop using deconfined models as counterexamples to gap tools.
+
+Rows whose drop would change an owner decision: c2/b3 (the lane's choice of the band), c6/c10 (verdicts from small
+lattices), and a10 (theta stated explicitly in the target).
+
+- 16:09Z step 4 written (59 rows). Next: step 5, open the lane files.

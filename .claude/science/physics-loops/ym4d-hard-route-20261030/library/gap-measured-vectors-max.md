@@ -198,7 +198,7 @@ Notation for W1. Periodic lattice with sides (n_1, n_2, n_3, n_4). C_mu is the c
 - **What it changes.** The flux half would need one size, not a rate. It would not need the vortex containers of (T-vor) or the inequality (TB)_n.
 - **Source and measurements.** D3; the closed-string correction c_L = 0.98(4) of Lucini and Teper (row 1064) gives E(2L) - 2E(L) = pi/(2L) > 0 in the free-string form. Firm as a sign in the measured range (strings longer than 1 fm).
 - **Cheapest kill tests.** (a) Is the finite form true in a solvable Wilson model? (b) Does the consumer reach the cube? (c) K1.
-- **Kill pass.** (a) The finite form (FIN), Z_-/Z_+ at (2 n_1, n_4) at most the square of Z_-/Z_+ at (n_1, n_4), is FALSE for two-dimensional Wilson SU(2) at small beta and large area (Counterexample R3, step 7, PROVED by hand). So only the form with n_4 to infinity first can hold. (b) The consumer does not reach the cube: nothing controls the flux energy when the two transverse sides double. (c) K1: it reads the centre-odd factor only, so by Lemma FAC of row 1025 its conclusion is a flux statement, never the seed. K5: in two dimensions and for abelian groups at strong coupling the asymptotic form holds with equality or by positivity, so it is blind (S1 fails). S0: it is a part of the flux half of (Z-UNB) with a sign in place of a rate; the sign itself has no mechanism.
+- **Kill pass.** (a) The finite form (FIN), Z_-/Z_+ at (2 n_1, n_4) at most the square of Z_-/Z_+ at (n_1, n_4), is FALSE for two-dimensional Wilson SU(2) at small beta and large area (Counterexample R3, step 7, PROVED by hand). So (FIN) does not follow from positivity and axis exchange, which the two-dimensional model has. In the four-dimensional model with decoupled sheets (FIN) holds at large area, by the position entropy of the sheet (step 7, R4). The sign is therefore dynamics, not structure. (b) The consumer does not reach the cube: nothing controls the flux energy when the two transverse sides double. (c) K1: it reads the centre-odd factor only, so by Lemma FAC of row 1025 its conclusion is a flux statement, never the seed. K5: in two dimensions and for abelian groups at strong coupling the asymptotic form holds with equality or by positivity, so it is blind (S1 fails). S0: it is a part of the flux half of (Z-UNB) with a sign in place of a rate; the sign itself has no mechanism.
 - **Verdict.** FAILS as a vector to the gap (flux half only, blind, consumer incomplete). Kept: Lemma R1 and Lemma R2 (exact identities, PROVED in step 7) and Counterexample R3.
 
 ### W2. What convexity alone gives for almost every coupling (source: e4)
@@ -259,3 +259,80 @@ Notation for W1. Periodic lattice with sides (n_1, n_2, n_3, n_4). C_mu is the c
 | W7 large-N bulk transition | test | - | GUIDE-grade test line |
 
 No object is marked CONTESTED-ONLY, because none rests on the vortex, monopole, Gribov or end-point readings. Those readings gave no vector here: their gauge-invariant forms, (T-vor) and (TB)_n, are on file.
+
+## Step 6: task (4), ranking
+
+No object of step 5 survives as a vector to the gap. So the ranking is of the pieces that are kept, by what each would change divided by the cost to find out.
+
+| Rank | Piece | What it would change | Cost to find out | Kind |
+|---|---|---|---|---|
+| 1 | W1, Lemmas R1, R2 and the open sign (SIG-MONO) | It turns the flux half on doubled widths into a sign: the excess Renyi-2 entropy of a long flux tube. The measured Luscher term gives that sign (firm on strings longer than 1 fm). It cannot give the seed (K1), and it stops before the cube | Done here for the identities (step 7). The sign has no mechanism; no row is proposed | exact identity; flux half; blind |
+| 2 | W7, the large-N bulk transition as a test line | One more line in the test table for fixed-coupling tools, on the Wilson weight itself | A lead edit after a reading row confirms the source | test, GUIDE grade |
+| 3 | W2, the almost-every-beta bound | Nothing on the path of (W). It bounds the measure of couplings with a large specific heat | Done (step 7.3) | soft lemma, blind |
+
+**What the measured record weighs on statements already on file (guides; they move no status).** These are numbers the lead can use when ranking rows that exist. Each was computed here by hand from the tables quoted in rows 1063 and 1064.
+
+| On-file statement | Measured guide | Reading |
+|---|---|---|
+| (SUM-RULE), `gap-ladder-max.md` A3: -E_j' <= c E_j + c', "c near c_AF" | -d log(a sqrt(sigma))/d beta = 3.25(4), 3.41(4), 3.51(3), 3.35(3), 3.11(3) on the five intervals from beta 2.2986 to 2.70; for a m_G: 2.44(24), 3.43(27), 3.11(15), 2.99(13), 3.14(13). One loop: 3 pi^2/11 = 2.69. Two loops at beta 2.5: 2.52 | The constant must be at least 3.5 in the band, 30 percent above one loop. A form with c within 25 percent of c_AF is refuted there for the string scale (guide-grade refutation). The ratio is bounded and has its maximum near beta 2.47 |
+| Which half binds at the seed size | L m_G = 30 at L = 7.9/sqrt(sigma). L E_flux(L) = sigma L^2 - pi/3 = 30 at L = 5.6/sqrt(sigma) | At the size where the engine's 30 is reached, the glue half is the binding one. The flux half is reached 1.4 times earlier in size. Found in part: `gap-next3-max.md` L290 ("The glue half had one row") |
+| (MONO-Delta), `gap-phys-seed.md` L351 | The slab analogue, eps - 3p > 0, is measured positive in SU(2) (recalled, not re-read) | Supports the sign as a guide. The symmetric-torus plaquette shift is below the errors of the data in rows 1063 and 1064 (8^4 at beta 2.3: 0.60226(26) against 0.6022) |
+| Test K6 "critical slab" | beta_c(N_t = 4) = 2.2985(6); 1/(T_c a) = 3.8, 5.9, 7.8, 10.6 at beta 2.30, 2.43, 2.51, 2.60 | A tool that reads the specification through windows smaller than these sides has the same input on the critical slab. This is the lane's K6 with the measured sides |
+| Frozen 2T as a test "at order one" | Freezing couplings (recalled, not re-read: Petcher and Weingarten): about 2.2 for 2T, 3.2 for 2O, 5.8 for 2I | In the band [2.3, 2.6] only Q_8 and 2T are frozen; 2T by a margin of about 0.1. 2O and 2I are twins of SU(2) there, not tests (found: `gap-brainstorm2-max.md` G13) |
+
+## Step 7: task (5), hand work on the top piece (W1), and the short proof of W2
+
+Rule 0a before the attempt. `library/open-core.md`: no hit for "Renyi", "excess entropy", "flux ladder", "superadditiv" of flux energies, "E(2L)". FINISH rows: the flux half is held by rows 1018 ((T-vor)), 1025 ((TB)_n) and 1052 (FLUX-W). None states or attacks the doubling of the width. `library/`: "Renyi" occurs for chi-square information between slices (`gap-direction-max.md` L346, `gap-ladder-max.md` L135), not for sector traces; "concavity of flux energies" is named once as an idea (`gap-crux-exercise2-max.md` L382), with no statement. I proceed, and I do not attack (T-vor), (TB)_n or (Z-UNB).
+
+### 7.1 Setting and the three facts used
+
+Wilson SU(2) on the periodic lattice with sides (n_1, n_2, n_3, n_4), all at least 3; the anisotropic Wilson weights are allowed. Notation as in step 5.
+
+- (F1) T_4 is a positive trace-class operator, and it commutes with the centre flip C_1. This is the lane's (E2) with the flux sectors of Theorem R (row 744); used as given.
+- (F2) Tr(T_4^(n_4) C_1) = Z^tw, the integral with the sign of the coupling reversed on the (1,4) plaquettes of one column (one value of (x_1, x_4), all (x_2, x_3)). So 0 < Z^tw <= Z, and Z_+ = (Z + Z^tw)/2, Z_- = (Z - Z^tw)/2. Used as given ('t Hooft 1979; lane: Theorem TW-T, row 1004).
+- (F3) The reversed column is symmetric under the exchange of the axes 1 and 4. So Z^tw = Tr(T_1^(n_1) C_4), where T_1 is the transfer operator along direction 1 on the slice (n_2, n_3, n_4). Hence Z_+ and Z_- are also the traces of T_1^(n_1) over the sectors C_4 = +1 and C_4 = -1.
+
+### 7.2 Lemma R1 (the Renyi ladder; PROVED)
+
+**Statement.** (a) For both signs, Z_s(2 n_1, n_4) <= Z_s(n_1, n_4)^2. Put R_s(n_1, n_4) := log(Z_s(n_1, n_4)^2 / Z_s(2 n_1, n_4)) >= 0. It is the Renyi-2 entropy of the state T_1^(n_1)/Tr on the sector C_4 = s.
+(b) log(Z_-/Z_+)(2 n_1, n_4) = 2 log(Z_-/Z_+)(n_1, n_4) - (R_-(n_1, n_4) - R_+(n_1, n_4)).
+(c) Let lambda_0^s(n_1) be the top eigenvalue of T_4 on the sector C_1 = s of the slice (n_1, n_2, n_3), and rho_s(n_1) := 2 log lambda_0^s(n_1) - log lambda_0^s(2 n_1). Then rho_s >= 0, R_s/n_4 tends to rho_s as n_4 grows, and E(2 n_1) - 2 E(n_1) = rho_-(n_1) - rho_+(n_1).
+
+**Proof.** (a) By (F3), Z_s(n_1, n_4) is the trace of A = T_1^(n_1) restricted to an invariant sector, and A >= 0. For a positive trace-class operator Tr A^2 <= (Tr A)^2, and Tr A^2/(Tr A)^2 = Tr(rho^2) with rho = A/Tr A. (b) is algebra. (c) In the 4-channel Z_s(n_1, n_4) = sum of the n_4-th powers of the eigenvalues of T_4 on the sector, so (1/n_4) log Z_s(n_1, n_4) tends to log lambda_0^s(n_1); the same with 2 n_1. So R_s/n_4 tends to rho_s, which is at least 0 by (a). E(n_1) = log lambda_0^+(n_1) - log lambda_0^-(n_1) by definition; subtract. QED
+
+**Reading.** (SIG-MONO) at the width n_1 is the statement rho_-(n_1) >= rho_+(n_1): the doubling defect of the top eigenvalue is larger in the flux sector than in the vacuum sector. rho_+ is the doubling defect of the vacuum energy of the slice. rho_- - rho_+ is the excess Renyi-2 entropy per unit length of a long flux tube at inverse temperature n_1.
+
+### 7.3 Lemma R2 (twist-ratio form; PROVED)
+
+Put t = Z^tw/Z in (0, 1]. Then Z_-/Z_+ = (1 - t)/(1 + t) = exp(-2 artanh t). So the finite form (FIN) of step 5 holds at (n_1, n_4) if and only if artanh t(2 n_1, n_4) >= 2 artanh t(n_1, n_4), that is t(2 n_1, n_4) >= 2 t/(1 + t^2) with t = t(n_1, n_4). Proof: with t = tanh a, (1 - t)/(1 + t) = e^(-2a) and tanh 2a = 2t/(1 + t^2). QED
+
+### 7.4 Counterexample R3: (FIN) is false for two-dimensional Wilson SU(2) (PROVED)
+
+On the two-dimensional torus with A = n_1 n_4 plaquettes, the character expansion gives (recalled, standard; the lane uses it at `gap-phys-seed.md` L369): Z = sum over j in {0, 1/2, 1, ...} of c_j^A and Z^tw = sum of (-1)^(2j) c_j^A, with c_j = (2/beta) I_(2j+1)(beta), up to a common factor. So Z_+ = sum over integer j, Z_- = sum over half-odd j, and both depend on A only.
+
+Put v = c_1/c_0 = I_3/I_1 and w = c_(3/2)/c_(1/2) = I_4/I_2, and q_A = Z_+/c_0^A = 1 + v^A + ..., p_A = Z_-/c_(1/2)^A = 1 + w^A + .... (FIN) reads p_(2A) q_A^2 <= q_(2A) p_A^2. As A grows, p_(2A) q_A^2 - q_(2A) p_A^2 = 2 (v^A - w^A) + O(v^(2A) + w^(2A)). So (FIN) fails for all large A when v > w.
+
+v > w holds for small beta: I_n(beta) = (beta/2)^n/n! (1 + O(beta^2)), so v = beta^2/24 (1 + O(beta^2)) and w = beta^2/48 (1 + O(beta^2)). At beta = 2, by the series I_n(2) = sum over k of 1/(k! (k + n)!) summed by hand to six terms: I_1 = 1.590636, I_2 = 0.688948, I_3 = 0.212740, I_4 = 0.050728, so v = 0.13374 > w = 0.07363. QED
+
+Reading. In two dimensions the energies are exactly additive, E(n_1) = n_1 log(c_0/c_(1/2)) and rho_- = rho_+ = 0. The finite form still fails, because the vacuum sector has the lighter first excitation (v > w) and so more Renyi entropy at the same temperature. The two-dimensional model has positivity and axis exchange. So (FIN) is not a consequence of those two.
+
+### 7.5 Remark R4: decoupled sheets in four dimensions (PROVED at leading order in u^A; the remainder bound is not written)
+
+Take the anisotropic Wilson weight with coupling beta on the (1,4) plaquettes and 0 on the others. Then Z = (Z_2D)^N and Z^tw = (Z^tw_2D)^N with N = n_2 n_3, so t = x^N with x the two-dimensional twist ratio. With u = c_(1/2)/c_0: 1 - x = 2 u^A p_A/q_A (1 + O(u^A)), hence Z_-/Z_+ = N u^A (p_A/q_A)(1 + O(N u^A)). So the ratio of the two sides of (FIN) is (1/N)(1 + O(v^A) + O(N u^A)). For N >= 2 and A large, (FIN) holds. The factor 1/N is the position entropy of the sheet. So the sign of the finite form is decided by a competition between the position entropy of the flux sheet and the spectra of the two sectors. The energies are again additive: rho_- = rho_+.
+
+### 7.6 A toy in the abstract class (PROVED)
+
+On the four points (s, y), s = +1 or -1, y = 1 or 2, let T have the kernel (1/2)(K_e(y, y') + s s' K_o(y, y')) with K_e = [[3/4, 1/4], [1/4, 3/4]] and K_o = [[1/5, 1/5], [1/5, 1/5]]. All entries are non-negative, T is symmetric, it commutes with the flip of s, and its eigenvalues are 1 and 1/2 on even functions and 2/5 and 0 on odd functions. Then Tr_odd T^k/Tr_even T^k = (2/5)^k/(1 + 2^(-k)), which is 4/15 at k = 1 and 16/125 at k = 2, and 16/125 > (4/15)^2 = 16/225. So the square law fails for a positive, positivity-preserving operator with a Z_2 symmetry.
+
+### 7.7 The mechanism behind the measured sign, and the verdict
+
+- In the free-string form E(L) = sigma L - pi (d - 2)/(6L), so E(2L) - 2E(L) = pi (d - 2)/(4L) = pi/(2L) for d = 4. In the language of Lemma R1 this is the Renyi-2 entropy rate of the two transverse modes of the tube. A bulk excitation that the tube excludes would lower it (ARGUED; no rigorous model built).
+- (SIG-MONO), in the form rho_- >= rho_+, is OPEN for Wilson SU(2) in four dimensions. It holds with equality in two dimensions and for decoupled sheets, for every compact group with a centre flip. So it is blind.
+- First step that fails for a proof: the comparison of the top-eigenvalue doubling defects of two symmetry sectors of one transfer operator. Positivity and axis exchange give each defect a sign (Lemma R1 (a)) and give no order between them (R3, 7.6).
+- Verdict: W1 FAILS as a vector to the gap. I stopped after R4. Not done: a remainder bound in R4; any statement for the isotropic model; the cube.
+
+### 7.8 W2, the proof (PROVED; blind; no consumer)
+
+f is convex in beta (Lemma DIL of row 720 quotes it; it is a limit along doublings of the convex functions F(n)/abs(n)). For every torus, F'(n)/abs(n) = -<A>/abs(n) lies in [-12, 0], because there are six plaquettes per site and 0 <= 1 - x_p <= 2. So f' is non-decreasing with values in [-12, 0] where it exists, and the Stieltjes measure df' has total mass at most 12. Its atoms are countable. Write df' = chi d beta + singular part; then the integral of chi is at most 12, and by Chebyshev's inequality the set where chi > K has measure at most 12/K. On an interval the mass is 6 (P(beta_2+) - P(beta_1-)), with P the infinite-volume mean plaquette. QED
+
+Not shown: that chi(beta) is the sum of truncated plaquette correlations of an infinite-volume state. Compact U(1) and every model with a bounded action satisfy the same statement.

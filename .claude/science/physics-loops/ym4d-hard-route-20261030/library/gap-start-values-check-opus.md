@@ -7,6 +7,8 @@ Row 1059 (`gap-start-values-check-opus`), same-provider check (Claude Opus 5.5 m
 row 1058 (written by Claude Fable 5.2 medium). Pinned commit 631c8f5a6, branch `claude/ym4d-hard-route`.
 Started 2026-11-16T15:18Z (date -u). Same provider as the author, so this is not an independent check in
 the sense of the working rules; row 1060 (gpt-6-astra) is the cross-provider check.
+Verdict table: Step 8 (one verdict per claim; nothing FAILS; row 1058 HOLDS AFTER CORRECTION). RESULT line
+at the end of the file.
 
 Sources credited: the Sussman-Alpoge account (CA-I, CA-II, read through `library/sa-index/` and the pinned
 raw files), Balaban's papers (CMP 119 (3.33)-(3.38) and the series it rests on), and the lane's own rows
@@ -94,15 +96,15 @@ of step j being the logarithm of the Gaussian integral of step j at the trivial 
 normalisers of the two tori are compared by the determinant lemma" (141286-141291); then the split into
 (vac,1) normalisation numbers of step j [B-CMP109 (1.7)] built from log g_j, log z_j and SU(2) constants times
 lattice counts, (vac,2) = sum_z sum_{X∋z} E^(j+1)(X,1,z), (vac,3) = sum_X R^(j+1)(X,1), "evaluated at the
-trivial configuration U=1". Hypothesis (b) (141315-141335): (2.29) of CMP 119 at U=1 makes the unrestricted
+trivial configuration U=1". Hypothesis (b) (141314-141335): (2.29) of CMP 119 at U=1 makes the unrestricted
 sum E^(j+1)(1,z;T) independent of z; |E^(j+1)(X,1,z)| <= E_0 e^(-kappa d_(j+1)(X)); |R^(j+1)(X,1)| <=
 e^(-kappa d_(j+1)(X)); sum_{X∋z} e^(-kappa d/2) <= K_* (CMP 116 (1.26) at rate kappa/2); E_0, K_* depend on L
-and p only. Hypothesis (c) (141336-141374): clause (0) of Theorem 3.1:thm-main, torus-independence lemma parts
+and p only. Hypothesis (c) (141336-141373): clause (0) of Theorem 3.1:thm-main, torus-independence lemma parts
 (i), (iii)(b) and the lift lemma; "It is assumed ... that the running constants g_j and z_j of the steps j<K
 do not depend on the torus" (141347-141349); non-wrapping = image of a set in a closed cube of side at most a
 quarter of 2L^(min(m,m')); assumed bijection of non-wrapping X ∋ z with equal numbers E and R; and "every
 X ... with X ∋ z and d_(j+1)(X) < 2L^(min(m,m')) L^(K-j-1)/(4M) - 2 is non-wrapping" (141369-141372).
-Conclusion (141375-141386): delta_vac := abs(E_m/(2L^m)^4 - E_m'/(2L^m')^4) <= delta-bar_vac :=
+Conclusion (141374-141386): delta_vac := abs(E_m/(2L^m)^4 - E_m'/(2L^m')^4) <= delta-bar_vac :=
 2(E_0+1)K_* sum_{u>=0} L^(4u) exp[-(kappa/2)((1/2)L^11 L^u - 2)], depending only on L and p.
 Verdicts: C1 HOLDS (the lemma is the account's two-torus statement for the counterterm, as an implication
 from (a)-(c); but "the whole E_0^(j)" in C1 is too strong, see 2.4); C3 HOLDS; C4 HOLDS (quote exact);
@@ -214,7 +216,7 @@ E_m is itemised" (CA-II 141529-141530). Two findings from the cited source (CMP 
 - The account cites "[B-CMP109 (1.7)]" for the *normalisation numbers built from log g_j, log z_j and
   constants of SU(2)* of part (vac,1). In the OCR, (1.7) is the localized representation of the step-j
   term, E^(j)(g_(j-1), U_j) = sum over X in D_j of E^(j)(X, U_j) (L659-668: "We assume that it has the
-  representation ... we can represent this term in the form (1.7)"). If the page image confirms this, the
+  representation ... we can represent this term in the form (1.7)"). Confirmed on the page image (6.5): the
   citation of part (vac,1) points at the wrong equation, and the meaning of z_j is not fixed by the cited
   source. The first part's argument (per-block numbers times lattice counts are exactly extensive) does not
   depend on which numbers they are, so this is a citation defect, not a failure of the lemma.
@@ -230,7 +232,8 @@ E_m is itemised" (CA-II 141529-141530). Two findings from the cited source (CMP 
 Verdict for the row's claim "PROVED as an implication from (a)-(c), which were not checked here": the
 implication HOLDS (Step 2.3). Along the lane's trajectory (b) and (c) hold as the account's package
 supplies them (with the two assumed clauses above); (a) is the open point, and it is the same point as
-(G)/(G').
+(G)/(G'). [Refined in Steps 6-7: (a) is consistent with Balaban's bookkeeping, CMP 109 (1.3), which also
+keeps log Z^(j)(1) apart; the open point is then the excluded number itself, i.e. (G) = (DET), not (a).]
 
 Log: step 3 written at 2026-11-16T15:25:54Z (date -u).
 
@@ -356,3 +359,232 @@ The d = 5 sign (+2 log 2) and the d = 4 sign (negative, tending to 0) follow fro
 asymptotic freedom. Nothing is claimed for the trajectory; correct.
 
 Log: step 5 written at 2026-11-16T15:31:39Z (date -u).
+
+## Step 6: the Gaussian normalisers; reading (G') against Balaban's text and the account's bookkeeping
+
+Sources read: Balaban CMP 119 journal pp. 272-274 on page images (PDF pages 30-32 of
+`~/ym4d-papers/balaban_cmp119_243.pdf`, rendered with PyMuPDF into `/tmp/ym4d-chk1059-img/`), pp. 278-279
+in the OCR (`~/ym4d-papers/cmp119.txt` L1784-1796, L1830-1842); CMP 109 pp. 260-261 in the OCR
+(`cmp109.txt` L630-670); CA-I 3766-3786, 4040-4045, 106143-106206; rows 986, 987 and the astra check of 987
+(RESULT lines and `gap-det-check-astra.md` L139-170).
+
+**6.1 Balaban's itemisation of the step's Gaussian normaliser (read on the page images).**
+- p. 272, (3.30): "[the logarithm on the right-hand side of (3.28)] = log[z^(k) ∫ dA exp[-(1/2)<A, C*Δ^(k)CA>]]
+  + log ∫ dμ_{C^(k)(Λ_(k+1))} χ^(k) + g_k ∫_0^1 dt <...>_t". The first term is the step's Gaussian
+  normaliser at the background U_(k+1).
+- p. 273, (3.33): it equals Σ_{c} log z^(k)(c) - (1/2) log det(C*Δ^(k)C) + log ∫ dA exp[-(1/2)|A|^2]. "The
+  factor z^(k) comes from elimination of the δ-functions, and is equal to the product of the factors
+  z^(k)(c)"; "The last term is a number, which contributes to the vacuum energy renormalization, so we
+  include it into the definition of E_0^(k). The first term has already the localized form".
+- p. 274, (3.36): -(1/2) log det(C*Δ^(k)C) = -(1/2) log λ_0 |Λ^(k)*_(k+1)| + (1/2) ∫_0^∞ dλ (λ_0+λ)^(-1)
+  Tr(C*Δ^(k)C - λ_0 I)(C*Δ^(k)C + λI)^(-1). (3.37): the per-bond density E_0^(k+1)(Λ_(k+1), U_(k+1), b) holds
+  -(1/2) log λ_0 and the (b,b) entry of that resolvent term (plus the χ-term and the g_k V'-term). (3.38):
+  the step's logarithm = Σ_c log z^(k)(c) + Σ_b E_0^(k+1)(Λ_(k+1), b) + const, "The constant above is the
+  constant in (3.33), included into the vacuum renormalization E_0^(k)". (3.39): in the whole-space case
+  these coincide with the inductive format (2.26), (2.27).
+- p. 278 (OCR L1790-1793): "the operators in the first integral on the right-hand side of (3.37) are
+  represented by the generalized random walk expansions. After the integration we get a representation of
+  the form (3.47), with terms satisfying (2.42)." p. 279 (OCR L1834-1837): "The vacuum energy
+  renormalization is performed by subtracting the values of E^(k+1) and R''(k+1) at the configuration
+  U_(k+1) = 1 from the corresponding terms, and adding these values to E_0^(k)."
+So in Balaban's text the step's Gaussian normaliser, at every background and so at U = 1, is per-block
+numbers (Σ_c log z^(k)(c); at U = 1 every block gives the same number), a number per variable (the (3.33)
+constant), -(1/2) log λ_0 per bond, and a per-bond resolvent density with a random-walk (localized)
+representation. No torus-wide number is left in it.
+
+**6.2 Where the account puts it.** CA-I 3766-3777 (the complete regular part of step j): "(a) The Gaussian
+normaliser log Z^(j-1)(U_j) - log Z^(j-1)(1). Here Z^(j-1) is the Gaussian integral that normalises the
+fluctuation measure of step j, as in [CMP 119 (3.28)] ... evaluated at the minimal configuration U_j ... and
+at the trivial configuration 1"; CA-I 3784-3785: "In its localised representation this regular part is a
+sum of terms E^(j)(X;(U,J),z)"; CA-I 4043-4045: E^(l),A "is the sum of the Gaussian normaliser and a second
+summand". So the account's localized terms carry the normaliser only after its U = 1 value is subtracted;
+their U = 1 values contain no part of log Z^(j)(1), and the number log Z^(j)(1) is exactly what CA-II
+Lemma 8.22 (a) removes ("the Gaussian normaliser of step j being the logarithm of the Gaussian integral of
+step j at the trivial background", 141289-141290). Hypothesis (a) is consistent with this bookkeeping; the
+clash is only with Definition 8.22's use of the same symbol sum_{j<K} E^(j)_vac for the full constant
+(140919), which row 1058 found through the consumer.
+
+**6.3 Verdict on reading (G').**
+- Row 1058's form of (G') ("If the account's E^(j+1)(X, 1, z) of hypothesis (a) contain these
+  determinant-born terms, the Gaussian normaliser at U = 1 is already in parts (vac,1) and (vac,2), and
+  Lemma 8.22 covers it", L88-89), a conditional the row left undecided: **decided here, its antecedent is
+  false for the account's E-terms, so (G') does not apply and (G) stays.** The determinant-born terms are in
+  the account's E-terms only in the subtracted form log Z(U) - log Z(1) (CA-I 3770-3777), so they add 0 at
+  U = 1; Lemma 8.22 as written does not cover log Z^(j)(1). (The passage is CA-I Definition
+  4.2:def-increment, 3764-3786.) The other conceivable reading, (vac,2) taken with Balaban's
+  unrenormalized new terms (3.37), whose U = 1 values do contain the determinant-born pieces, would make
+  hypothesis (a) remove log Z^(j)(1) twice; the account's own sentence "the one torus-wide number per
+  level, the Gaussian normaliser of the step, is excluded by hypothesis (a)" (CA-II 141427-141429) rules
+  that reading out.
+- What Balaban's text does give (6.1): log Z^(j)(1) = (torus-free per-block number) x (block count) +
+  (N_A/2) log 2π - (1/2) log det(C*Δ^(j)(1)C), with -(1/2) log det = -(1/2) log λ_0 x (bond count) + a
+  localized resolvent density. So the excluded number has the same three-part shape that the proof of
+  Lemma 8.22 uses, and the two-torus comparison (G-tor) is the determinant density comparison of a gapped
+  form at U = 1: this is (DET) exactly as rows 986-989 state it. Row 987's open input (ID) asked that the
+  account's step normaliser be "exp(torus-free scalar times count) times det^(-1/2) of one such form";
+  CMP 119 (3.33) gives that shape with the form C*Δ^(j)C at U = 1 (the elimination factors z^(j)(c) are the
+  per-block scalars, consistent with the astra check's finding that they do not disappear at U = 1). What
+  stays open of (ID) is that C*Δ^(j)C at U = 1 meets row 987's (S1)-(S3) (gap, bound, kernel decay)
+  uniformly in level and volume; CMP 119 uses a λ_0 above a spectral floor r and random-walk expansions,
+  which is the right kind of input, but I did not read their bounds. Rule 0a: (DET)/(ID) belong to rows
+  986-990; not attacked here.
+- Row 1058's quote attribution needs a correction (L82-85): the sentence "contributes to the vacuum energy
+  renormalization, so we include it into the definition of E_0^(k)" is about the last term of (3.33),
+  log ∫ dA exp[-(1/2)|A|^2], not about -(1/2) log λ_0, which sits in the per-bond density (3.37); and the
+  random-walk sentence is on p. 278, not p. 276. The CA-I 106163-106206 reading is right in substance
+  (one density per bond, -(1/2) n_g log λ_0 and the (3.33) constant as single-cube terms), but that passage
+  is the account's bond-density lemma inside one stage, which does not move log Z^(j)(1) into Lemma 8.22's
+  three parts.
+- The consumer remark of row 1058 (7.4 last bullet) therefore resolves to its second branch: CA-II
+  8.22:thm-volume-transfer writes Z_m(0) = e^(E_m) Z~_m(0) with the full constant (141703) and bounds the
+  density difference by Lemma 8.22's delta_vac (141720-141722), whose E_m excludes log Z^(j)(1); its Q_*
+  (141578) lacks the "further constant" of the remark 141531-141535. Bookkeeping inside their text; a
+  candidate for the hardening tally only; nothing to post (rule 6).
+
+**6.4 The other two OPEN items.**
+- "(SV3) and (UV-Cas) reduce to Z~ alone with error B V_m": HOLDS (Step 5): by RED and SV3-red the
+  counterterm side contributes only the tails delta and c_G; the account's only statement on Z~_m(0) is
+  (STAB) (CA-II 140908-140910), whose error is B V_m >= B (2 L^11 M)^4.
+- "The account's sizes differ by powers of odd L": HOLDS. Sides 2L^m (Definition 8.22 via 1.1:def-lattice;
+  trace sub-additivity uses tori n_mu l with n_mu even, CA-II 141001-141005); L is odd (SA L6844 as quoted
+  in `gap-phys-seed.md` L62); ratios of sides are L^(m-m'), never 2.
+
+Log: step 6 written at 2026-11-16T15:37:45Z (date -u).
+
+**6.5 Addendum: CMP 109 pp. 260-261 on page images (PDF pages 12-13 of `balaban_cmp109_249.pdf`).**
+(1.3): "A_k(U_k) = -(1/g_k^2) A(U_k) + Σ_{j=0}^{k-1} {-β_(j+1)(g_j) A(U_k) + [log Z^(j)(U_k) - log Z^(j)(1)]
++ [E^(j+1)(g_j, U_k) - E^(j+1)(g_j, 1)]}"; (1.4): "Z^(j)(U_k) = ∫ dB δ(Q~B) exp[-(1/2)<B, Δ^(j)(U_k)B>]";
+(1.6) absorbs the log Z bracket into E^(j+1) in the same subtracted form; (1.7): "E^(j)(g_(j-1), U_j) =
+Σ_{X ∈ D_j} E^(j)(X, g_(j-1), U_j)", with "the expansion of the log Z^(j-1)(U_j) constructed in [16], implies,
+that we can represent this term in the form (1.7)". Three consequences.
+- Balaban's own effective action carries the Gaussian normaliser as log Z^(j)(U) - log Z^(j)(1), so the
+  account's bookkeeping (CA-I 4.2:def-increment) is Balaban's: log Z^(j)(1) is a separate number of the
+  normalisation constant. This confirms 6.3: (G') in row 1058's form does not apply.
+- Balaban states that log Z^(j-1)(U) has a localized representation of the form (1.7) (by his reference
+  [16]); at U = 1 this is the itemisation 6.1. So the excluded number is not "torus-wide" in the sense of
+  CA-II 141424-141431 (a non-extensive number per torus); it is extensive plus a localized remainder, and
+  the proof of Lemma 8.22 would apply to it given (b)- and (c)-type inputs for its localized terms at U = 1.
+  That is the content (DET) needs; it is owned by rows 986-990 (rule 0a); I only record the source lines.
+- The account cites "[B-CMP109 (1.7)]" for the normalisation numbers of part (vac,1). Equation (1.7) is the
+  localized representation of E^(j), not a list of normalisation numbers, and no z_j occurs in (1.3)-(1.9).
+  Citation defect in their hypothesis (a); it does not affect the proof (part (vac,1) only needs torus-free
+  per-block numbers times counts; at U = 1 the elimination factors z^(k)(c) of CMP 119 (3.33) are such
+  numbers). Report only.
+
+Log: step 6 addendum written at 2026-11-16T15:39:09Z (date -u).
+
+## Step 7: meaning. Is (E0-tor) of `parts/gap.md` closed conditionally on the account's lemma?
+
+`parts/gap.md` L137 asks for "torus independence up to an exponentially small wrapping tail of the account's
+whole vacuum counterterm E_0^(j) (CMP 119 p. 279 adds the vacuum values of E^(k+1) and R^(k+1)) ... Needs
+matching non-wrapping coefficients and a summable wrapping tail". In the account's terms the whole constant
+is Definition 8.22's E_m^Def = E_m + G_m (E_m of Lemma 8.22 (a), G_m = sum over the K steps of
+log Z^(j)(1), Balaban's CMP 109 (1.3)-(1.4)).
+
+**Answer: closed for E_m, not for E_m^Def.**
+- For E_m: (E0-tor) in total form with a summable tail is Lemma WT = CA-II Lemma 8.22 with the smaller side
+  kept, an implication from (a)-(c) that HOLDS (Steps 2.3, 4). Along the lane's trajectory, (b) and (c) hold
+  as the account's package supplies them (Step 3: admissibility CA-I 57079-57083, site-free g_j from 4.38
+  (ii)(b), Balaban's bounds as (H_j)(d)), with two assumed clauses (torus-free z_j; the pair form of the
+  wrapping bound). (a) is consistent with Balaban's own bookkeeping, CMP 109 (1.3), where the normaliser
+  enters as log Z^(j)(U) - log Z^(j)(1) and the E-terms in subtracted form with the localized representation
+  (1.7); its citation for part (vac,1) is wrong (6.5) and the full list of normalisation numbers in (vac,1)
+  is not verified here. Status: implication from the account's Lemma 8.22 and Theorem 4.38 (theirs; 4.38
+  rests on its seven assumed statements and (H_j), which are the hardening tally's).
+- For the Gaussian normalisers G_m: OPEN, and it stays (DET) of rows 986-990 (reading (G') does not apply,
+  6.3). What this check adds for that owner (not an attack): Balaban's text itemises log Z^(j)(U), at every
+  U, as per-block elimination factors, a number per variable, -(1/2) log λ_0 per bond and a localized
+  resolvent density (CMP 119 (3.33), (3.36)-(3.38), p. 278; CMP 109 (1.7) by his [16]). So the step
+  normaliser has the shape "exp(torus-free scalar x count) x det^(-1/2)(C*Δ^(j)(1)C)" that row 987's (ID)
+  asks for; what remains of (ID) is (S1)-(S3) for that form, uniformly in level and volume.
+- So (E0-tor) for the whole counterterm = Lemma WT (closed as above) + (G-tor) = (DET) with the sharper
+  error C_det L^(-5 min(m,m')) of the astra check of row 987 (`gap-det-check-astra.md` L139-170),
+  conditional on (S1)-(S3), (ID), (I-loc).
+
+**What follows for row 1058's consumers (corrections to its 7.3).**
+- Proposition RED and Corollary SV1 stand as implications with (G-tor) as a real input (c_G = 0 is *not*
+  available through (G')). With the astra form of (DET), c_G(l) = C_det (l/2)^(-5), and V_m c_G(l) ~ l^(-1)
+  tends to 0, so RED keeps its meaning.
+- (TH) (`gap-ladder-max.md` L150) quantifies over tori B x t for all t >= t_0 (a fixed box B, time extent
+  t). The account's (STAB) and Lemma 8.22 are stated for the cubic tori T_m only (all four sides 2L^m). So
+  row 1058's sentence "(TH) has its lower end as an implication from labelled statements of the account plus
+  (DET)" HOLDS AFTER CORRECTION: on the account's cubic family, two-sided stability with one bulk constant
+  e = e_inf + g_inf + (E_+^sharp - C_low)/2 and c_F = B/2 + delta + c_G follows; the elongated tori B x t
+  that (TH) reads are not covered by any statement read here.
+- (SV3)/(UV-Cas): OPEN as row 1058 says; reduced to the Casimir part of log Z~_m(0); no statement of the
+  account bounds it (full-text grep, Step 5); and the ratio 2 is not in the account's family.
+
+**Proposed text for `parts/gap.md` L137 (for the lead; replaces row 1058's 7.4 first proposal):**
+"(E0-tor): for the account's E_m (the step Gaussian normalisers log Z^(j)(1) excluded, as in Balaban CMP 109
+(1.3)) it is CA-II Lemma 8.22:lem-vacuum-energy-density; total form with tail = Lemma WT of row 1058,
+PROVED as an implication from (a)-(c) and checked same-provider by row 1059 (HOLDS); along the trajectory
+(b), (c) hold as the account's package supplies them, (a) is consistent with CMP 109 (1.3). Open: the
+Gaussian normalisers, (DET) of rows 986-990; reading (G') does not apply (row 1059 Step 6)."
+
+Log: step 7 written at 2026-11-16T15:40:26Z (date -u).
+
+## Step 8: verdicts (one per claim of the Step 1 table), defects ranked, RESULT
+
+Provenance: Claude Opus 5.5, effort max, Mac mini worker 1, pinned 631c8f5a6; same provider as the author
+(not an independent check; row 1060 is the cross-provider check); not an audit; no numeric run (none was
+needed: every test was a hand computation); no subagent; nothing committed or posted.
+
+| # | Claim (row 1058 lines) | Verdict | Correction or note |
+|---|---|---|---|
+| C1 | Stop condition does not fire; Lemma 8.22 localises "the whole vacuum counterterm" (45-70, RESULT) | HOLDS AFTER CORRECTION | Read "the vacuum counterterm less the step Gaussian normalisers log Z^(j)(1)" (CA-II 141286-141291) |
+| C2 | CA-I Theorem 4.38 quotes (51-55) | HOLDS | CA-I 58279-58281, 58322-58323 |
+| C3 | Lemma 8.22 bound delta-bar_vac (56-59) | HOLDS | CA-II 141374-141386 |
+| C4 | Hypothesis (a) (60-64) | HOLDS | Quote exact; their (vac,1) cites CMP 109 (1.7), which is the localized representation (citation defect in their text, 6.5) |
+| C5 | Hypothesis (c) (65-67) | HOLDS | Also assumes torus-free z_j and the pair form of the wrapping bound (Step 3) |
+| C6 | (G): determinant lemma named, not stated (74-81) | HOLDS | Same three grep hits; agrees with row 986 |
+| C7 | (G'): Balaban places the determinant in the localized terms; Lemma 8.22 covers it if so (82-92) | HOLDS AFTER CORRECTION (quotes); decided: (G') does not apply | The "include it into E_0^(k)" sentence is about the (3.33) constant, not -(1/2) log λ_0; the random-walk sentence is p. 278. Balaban (CMP 109 (1.3)) and the account (CA-I 4.2:def-increment) keep log Z^(j)(1) out of the localized terms, so Lemma 8.22 does not cover it (6.3, 6.5) |
+| C8 | (STAB), B <= C_B(1 + log g^(-2)) (93-95) | HOLDS | CA-II 140908-140910, 140926-140933 |
+| C9 | CA-III Lemma 9.10 compares two runs, not two tori (96-97) | HOLDS | Statement head CA-III 63431-63435 read |
+| C10 | Sides 2L^m, L odd; ratios never 2 (98-100) | HOLDS | |
+| C11 | Identity (T1) and readings (104-119) | HOLDS | Re-derived |
+| C12 | Lemma FV as a shape test (121-126) | HOLDS | Its hypothesis beta >= 16 omitted; no effect |
+| C13 | Lemma WT (i)-(iv) (133-156) | HOLDS (as an implication from (a)-(c)) | Re-derived; (iii) uses L >= 3 |
+| C14 | Corollary WT1 (158-161) | HOLDS | |
+| C15 | Floor remark (173-175) | HOLDS | 6.09e-5 at L = 3 |
+| C16 | (5.1) (184) | HOLDS | |
+| C17 | (TL) (195-199) | HOLDS as a recalled input | The account's sub-additivity covers even sides (any integer ratio); identification with inf over all tori is recalled, not proved |
+| C18 | Proposition RED (201-209) | HOLDS (implication) | (G-tor) is a real input; it cannot be removed through (G') |
+| C19 | Corollary SV1 (211-219) | HOLDS (implication) | Needs (G-tor) in a form that makes G_m/V_m converge, not only the account's constant |
+| C20 | Corollary SV3-red (221-226) | HOLDS | |
+| C21 | (SV3) OPEN; horizon-lemma reading (228-256) | HOLDS | (eq-horizon-cases-c) is part (iii); wording only |
+| C22 | U(1) control (260-266) | (SV2) ARGUED, as stated; (SV3) HOLDS AFTER CORRECTION | "D^+(bL) = D^+(L) in [0, infinity]; the control gives 0 where D^+ is finite" |
+| C23 | Kill tests (268-281) | HOLDS | |
+| C24 | Five-dimensional count (283-290) | HOLDS (GUIDE) | |
+| C25 | Texts for the lead (325-350) | HOLDS AFTER CORRECTION | 7.3: (TH) reads tori B x t, the account covers cubic T_m only; 7.4: drop "or reading (G')"; last bullet resolves to "Q_* lacks the determinant constant" |
+| Test | Gaussian-model tail bound (this check, Step 4) | PASSES | Lemma 8.22's mechanism gives a valid tail at rate log cosh theta; exact tail from (T1) |
+
+Nothing FAILS outright. No line of a proof of row 1058 fails; the corrections are of scope, attribution and
+one undecided reading, which is now decided against the row's hopeful branch.
+
+**Defects, ranked by what they break.**
+1. (G') does not apply (C7, 6.3, 6.5). Breaks: the hope in row 1058 L88-92 and RESULT that the Gaussian
+   normalisers might already be covered; the whole counterterm still needs (DET). Repair (unproved here):
+   (DET) for G_m with the astra form C_det L^(-5 min(m,m')), owned by rows 986-990; CMP 119 (3.33) supplies
+   the scalar-times-count shape of (ID).
+2. (TH) scope (C25, Step 7). Breaks: the sentence that (TH)'s lower end is an implication from the
+   account plus (DET); true on cubic tori only. Repair: a stability statement for tori B x t, not in the
+   account as read.
+3. U(1) (SV3) finiteness (C22). Breaks: nothing downstream; wording.
+4. Quote attribution in (G') (C7). Breaks: nothing; citation.
+5. "Whole vacuum counterterm" wording (C1). Breaks: the parts/gap.md proposal; corrected text in Step 7.
+
+**For the lead (report only; rule 6 bar not met, nothing to post).** In the account: (i) CA-II
+8.22:thm-volume-transfer's Q_* (141578) omits the determinant contribution that its remark 141531-141535
+announces, since Z_m(0) = e^(E_m) Z~_m(0) at 141703 uses the full constant while delta_vac is Lemma 8.22's;
+(ii) hypothesis (a) cites CMP 109 (1.7) for normalisation numbers, but (1.7) is the localized
+representation; (iii) CA-II 141424-141431 calls the step normaliser "torus-wide", while CMP 109 (1.7) and
+CMP 119 (3.33)-(3.38) give it a localized representation. All three are bookkeeping.
+
+Credits: the statements checked are Ethan Sussman and Levent Alpoge's (complete account at 31a47c543775, text
+authored with Claude and Codex), built on Tadeusz Balaban's papers (CMP 109 pp. 260-261, CMP 119 pp.
+272-279 read here); the Gaussian test model is the gpt-6-astra check of row 993's; Lemma FV is row 1028's;
+(DET) is rows 986-989's and the astra check of row 987's; the row under check is Claude Fable 5.2's.
+
+Status: DONE at 2026-11-16T15:41:35Z (date -u).
+
+RESULT: Row 1059 (Claude Opus 5.5 max, same provider, Mac mini worker 1, at 631c8f5a6; no numeric run; not an audit). Row 1058 HOLDS AFTER CORRECTION; nothing FAILS. HOLDS: CA-II Lemma 8.22:lem-vacuum-energy-density and CA-I Theorem 4.38 say what the row uses (quoted with line anchors); Lemma WT (i)-(iv), Corollary WT1, the floor remark, (5.1), Proposition RED, Corollary SV1, Corollary SV3-red as implications; identity (T1); the Gaussian-model tail test (by hand) PASSES; (SV3) and (UV-Cas) reduce to the Casimir part of Z~ with error B V_m; sizes differ by powers of odd L. Along the lane's trajectory hypotheses (b) and (c) of Lemma 8.22 hold as the account's package supplies them (admissibility CA-I 57079-57083, site-free g_j, Balaban's bounds), with two assumed clauses; (a) is consistent with Balaban CMP 109 (1.3), whose (vac,1) citation in the account is wrong. Reading (G') is decided against: Balaban (CMP 109 (1.3)) and the account (CA-I 4.2:def-increment) keep log Z^(j)(1) out of the localized terms, so Lemma 8.22 does not cover the Gaussian normalisers, although CMP 119 (3.33)-(3.38) and CMP 109 (1.7) give them a localized representation. Corrections: "whole counterterm" means the counterterm less log Z^(j)(1); (TH) follows only on the account's cubic tori; U(1) control gives 0 only where D^+ is finite; two quote attributions. Meaning: (E0-tor) of parts/gap.md is closed for the account's E_m as an implication from Lemma 8.22 (theirs, on Theorem 4.38's seven assumed statements); OPEN: the Gaussian normalisers, (DET) of rows 986-990 ((ID) less its shape, which CMP 119 (3.33) supplies), and (SV3)/(UV-Cas), with no statement of the account on the Casimir part of Z~.

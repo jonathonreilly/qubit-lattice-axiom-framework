@@ -131,3 +131,76 @@ Verdict, Step 2: **Proposition SIGN HOLDS; Lemma LT HOLDS; Lemma HT HOLDS.** W1.
 (the smallest torus, 3^4, has 324 links; an exact count is out of reach and the row asks for a hand test).
 
 - 00:40Z Step 2 done. Next: Step 3, Identity MOV (T2 and W1.6) and Lemma FAC against Lemma PT (T3).
+
+## 3. Step 3 result: Identity MOV (T2, W1.6) and Lemma FAC against Lemma PT (T3)
+
+### 3.1 Identity MOV (L758-786)
+
+Re-derived from the definitions; same method as the writer's.
+
+- **(i)** Z(lam) = integral of exp(sum_p (1 + lam delta_p) log f(U_p)); log f is bounded (f continuous, positive, G
+  compact). So (d/dlam) log Z = E_lam[Y] and (d^2/dlam^2) log Z = Var_lam(Y). Same for Z^(12) with Y^tw. For
+  Z^+ = (Z + Z^(12))/2 the first derivative is p E[Y] + (1 - p) E^tw[Y^tw] with p = Z/(Z + Z^(12)), and the second is
+  the variance of the two-component mixture. HOLDS.
+- **(ii)** At lam = 0 the untwisted law is translation invariant. For the twisted law: with tau = tau_e of Fact 1,
+  if U has the law with the stack at c' then W = tau U has the law with the stack at c, and eta^c_p W_p = eta^(c')_p U_p
+  for every p. With translations this gives: the law of the family (eta_p U_p) under the twisted measure is
+  translation invariant, the plaquettes of V included. So E[log f(eta_p U_p)] is one number per orientation, and
+  sum_p delta_p over one orientation is (N/b^2)(b^2 - 1) - N(1 - 1/b^2) = 0 (sides multiples of b). The three first
+  derivatives vanish at lam = 0. HOLDS. (At lam > 0 the weights are not translation invariant; (ii) is claimed at
+  lam = 0 only, and only that is used.)
+- **(iii)** log Z is convex in lam with derivative 0 at 0, so log Z(1) >= log Z(0). Z(1) = F_0'^(|Lambda(1)|)
+  Z(Lambda(1); c') (r = 1; see W1.6 below for the exact integration), so this is T's (U) at r = 1. HOLDS.
+- **(iv)** Taylor's formula with integral remainder for phi = log Z^+ - log Z, phi'(0) = 0 by (ii):
+  phi(1) - phi(0) = integral of (1 - lam) phi''(lam). phi'' = Var^+ - Var = p Var + (1 - p) Var^tw + p (1 - p) (Dm)^2 - Var
+  = (1 - p) {Var^tw - Var + p (Dm)^2}, Dm = E^tw[Y^tw] - E[Y]. This is the printed integrand. Q(1) = (1 + rho_dec)/2
+  with rho_dec = Z^(12)(Lambda(1); c')/Z(Lambda(1); c') (the bulk factor cancels), so phi(1) - phi(0) <= 0 iff
+  rho(Lambda(1); c') <= rho(Lambda), which is (TB)_1. HOLDS.
+
+**T2, the sign of the squared-mean term.** Its coefficient (1 - lam)(1 - p_lam) p_lam is >= 0 (1 - p = rho/(1 + rho)
+> 0), and (Dm)^2 >= 0. So it adds a non-negative amount to log Q(1) - log Q(0), that is it pushes towards
+rho_dec > rho_fine, against (TB)_1. "A squared shift of its mean, which always works against (TB)" (L784-785) is
+right; so is "(TB)_1 needs the twisted model to have the smaller variance, with a margin".
+
+**W1.6, the decimated twisted model has exactly the coarse stack flipped.** At lam = 1 only skeleton plaquettes
+carry weight. Checked which links meet them: a link of direction mu with transverse coordinates (x_nu, x_rho, x_sigma)
+lies in a skeleton plaquette of orientation (mu, nu) iff x_rho, x_sigma are multiples of b; so a link with exactly
+one transverse coordinate off the sublattice lies in one skeleton plane only (interior to one coarse face there), a
+link with none off lies on a coarse edge line, and a link with two or three off lies in no weighted plaquette.
+So the integral is a product over coarse faces glued along coarse edges, and in 2D the interior integral of a b x b
+disc of weights sum_j d_j Fhat_j chi_j gives sum_j d_j Fhat_j^(b^2) chi_j of the boundary holonomy (convolution,
+chi_j * chi_k = delta_jk chi_j/d_j). The twisted model at lam = 1: the skeleton plaquettes of V are those over c_0 at
+heights in (bZ)^2, one in each coarse slice, inside the coarse face over the coarse cell C_0 that contains c_0.
+-1 is central, so it passes through the convolution: the coarse face gets sum_j d_j Fhat_j^(b^2) chi_j(-U_bdry), that
+is f'(-U). Non-skeleton plaquettes of V have exponent 0 and no effect. So the coarse model has exactly the coarse
+stack over C_0 flipped, one coarse plaquette per coarse height. HOLDS.
+
+Verdict: **Identity MOV (i)-(iv) HOLDS.**
+
+### 3.2 Lemma FAC (L340-347) and its reading against Lemma PT (T3)
+
+**Lemma FAC.** The characters of G_1 x G_2 are chi_j chi_k, of dimension d_j d_k; Fubini gives
+Fhat_(j,k) = Fhat^1_j Fhat^2_k, so chat_(j,k) = chat^1_j chat^2_k and c'_(j,k) = (chat^1_j)^(b^2 r) (chat^2_k)^(b^2 r)
+(non-negative coefficients make the real powers well defined); F_0' = (Fhat^1_0 Fhat^2_0)^(b^2). The Haar measure of
+the product is the product measure and the twist (-1, 1) changes only f_1, so Z^(12) = Z_1^(12) Z_2 and rho = rho_1.
+HOLDS. Consequence used by the table: along the bounding sequence, M^n(f_1 f_2) = M^n(f_1) M^n(f_2), so (TB)_n of
+the product with the twist (-1, 1) is (TB)_n of the first factor.
+
+**Against Lemma PT** (`gap-crux-exercise3-max.md` L690-713) **and Corollary PT1** (L715-719). PT's product is the same
+object (group G_1 x G_2, weight w_1 w_2), with the factor indices swapped (PT1 puts U(1) first; FAC puts the factor
+with the central -1 first). PT (a) Z = Z_1 Z_2 is FAC's factorisation. PT1: compact U(1) in its massless phase times
+any model of the class has no seed, so a hypothesis that reads only the other factor cannot belong to a valid tool.
+The table cell (L375) applies this with SU(2) as FAC's G_1 and U(1) as G_2. The reading matches, with one input the
+cell does not name:
+
+- "H_DEC of SU(2) gives H_DEC of the product" needs (O-flow) for the product weight, so the U(1) factor's bounding
+  sequence must also reach small norm. Since ||c|| of the product is (1 + ||c^1||)(1 + ||c^2||) - 1, this holds if both
+  factors flow. For U(1) at r = 1 this is Ito's theorem (U(N), N = 1; row 1025 L200-201 and its U(1) row L379), cited,
+  not rebuilt. With it the cell's conclusion stands: GIVEN H_DEC for SU(2), Ito's flow for U(1), and the U(1)
+  theorem I28 behind PT1, the product has H_DEC true and no seed, so DEC is refuted as a tool for T_fix and T_W; its
+  conclusion T_flux for the twist (-1, 1) is the SU(2) factor's and is untouched.
+
+Verdict: **Lemma FAC HOLDS; T3 passes, HOLDS AFTER CORRECTION for the table cell L375** (add: "given also Ito's flow
+for the U(1) factor"; no conclusion changes).
+
+- 00:43Z Step 3 done. Next: Step 4, Proposition BR against Tomboulis 0707.2179 and PoS(Confinement8)020 (W1.1).

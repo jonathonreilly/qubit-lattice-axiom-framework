@@ -83,6 +83,122 @@ EQC, since |B_i - ceil(N_i B)| = o(N_i).
 non-increasing), and convexity with s = t/2 bounds it below by - (t' - t) 32 (m_2/m_1)^4 D_0/m_1. So the set is
 equicontinuous on compacts; closedness as written (FLOW (e); the proof of FLOW (c) with continuous times; (c)).
 
+## Step 2b result: Proposition T23 (7.2) and Theorem CR^c (7.3)
+
+| Statement | Verdict | Note |
+|---|---|---|
+| Proposition T23 (a)-(d) | HOLDS | |
+| Proposition T23 (e) | HOLDS as an implication on Omega^c(16 D_0); the identification with a limit set "built with sizes 2^i 3^j" stays ARGUED, as the file says | the heading of 7.2 and the RESULT line say "PROVED" for T23 as a whole; it is PROVED except that identification |
+| Proposition T23 (f) | HOLDS | the product family may need to be indexed by i (pairs (j_i, j'_i)); harmless |
+| Theorem CR^c, all five equivalences and the last sentence | HOLDS | test (c) below |
+| By-products (1), (2) of 7.2 | HOLD as stated (upper bounds on D only) | see the note below |
+
+**T23 (e).** Read on Omega^c(16 D_0), (RIG-23) says that no non-empty closed set is invariant under sigma_2 and
+sigma_3 and minimal. By (b) these sets are the closed flow-invariant sets, so (RIG-23) on Omega^c(16 D_0) is
+(4^c) of Theorem CR^c, which is (W). This part is PROVED. The row's own wording of (RIG-23) speaks of a limit set
+built from sizes 2^i 3^j, which the file never defines; identifying it with the restriction of Omega^c is the
+ARGUED step, and no other statement reads it. Repair (unproved, not needed by any consumer): define the grid set
+by (H1), (H2) at the sizes N_i 2^i 3^j; the seed argument of CR^c ("(3^c) gives (2)") shows that (H2) at every
+grid size holds for large i along any dyadic admissible sequence, which gives non-emptiness when (PHYS-SEED)
+fails; the converse direction is that of OM (b).
+
+**T23 (f).** A_(m, eps) is a datum: Z(k, B) = 1^k + (m - 1) exp(- eps |B|)^k, f = 0 (values positive, tending to
+0), Delta = log(1 + (m - 1) exp(- eps |n|)). With eps_i N_i^4 -> 0 the rescaled functions tend to log m and the
+rescaled levels to 0 (m - 1 of them) uniformly on compacts; D <= log m gives local boundedness. Product: f of the
+product is f + f' because F/|n| does not increase in each side (P1), so f is the limit along the diagonal and the
+two Delta add; the top product eigenvalue is strictly largest. Then
+S_(E + E') = (1 + S_E)(1 + S_(E')) - 1 >= S_E.
+
+**Test (c), Theorem CR^c.**
+- "(2) gives (3^c)". q = 5041 S_j(N; (2N)^3) <= q' and N = l u_j/2 >= 6 is an integer by (S0); Corollary S3' gives
+  S_j(2^k N; L^3) <= q'^(2^k)/71 <= s_0 for L in [2^(k+1) N, 2^(k+2) N), k >= k_0; s_0 < 1/71^2 = 1/5041. Thermal
+  sums do not increase in time because lambda_0 > lambda_1 (E2). 2 ceil(y/2) >= ceil(y), so t_i >= L_i/2. The
+  identification of the lattice thermal sum with exp(Delta_i(b/2, b, b, b) + (t_i/N_i) eps_0^(i)(b^3)) - 1 is exact,
+  since ceil(N_i b/2) = t_i and ceil(N_i b) = L_i; the limit is s_E(b) by FLOW (a), (c).
+- "(3^c) gives (2)". (P3)'s second form gives D(a) <= 16 D(2^m N_i) on [2^m N_i, 2^(m+1) N_i], so (j_i, N_i) is a
+  blow-down sequence and D_E <= 16 D_0 at every real b. L_i = 2 ceil(N_i b/2) differs from ceil(N_i b) by 0 or 1,
+  and n_i = L_i/2 = ceil(N_i b/2) is exactly the rounded time of Delta_i(b/2, ...). So the Delta part converges by
+  the "more exactly" form of EQC, and N_i E_0(L_i^3) -> e_0^E(b^3) by Lemma E0 in its lattice form (B_i = L_i^3,
+  B_i/N_i -> (b, b, b)). Theorem S is monotone in s: S(2 n_i; (4 n_i)^3) <= c_S = ((1 + 1/5041)^64 - 1)^2; by hand,
+  64/5041 = 0.012696, e^0.012696 - 1 < 0.012778, square < 1.633 x 10^(-4) < 1.64 x 10^(-4). q_1 < 5041 x 1.64 x 10^(-4)
+  = 0.8267 < 0.83; ln 0.83 < -0.186; q_1^32 < e^(-5.95) < 2.7 x 10^(-3); /71 < 3.9 x 10^(-5) < 1/5041. Corollary S3'
+  with N' = 2 n_i = L_i covers every L >= 2^6 N' = 64 L_i (k >= 5), and the time L/2 >= D/2 for even L. With
+  2^m >= 64 (b + 1) and N_i >= 2: 2^m N_i >= 64 N_i b + 128 >= 64 L_i, and 2^m N_i = 2^(k_i + m) u_(j_i) is even. So
+  s^(j_i,k_i)(2^m) < 1/5041 for all large i, against (H2). The step is right.
+- Last sentence: for x dyadic and i large, ceil(N_i x) = 2^(k_i) u_(j_i) x, so the real limit restricts to the
+  pointwise dyadic limit.
+- (4^c), (5^c): Zorn with the finite intersection property; Krylov-Bogolyubov for a continuous flow on a compact
+  metric space (OM^c (a), (b) supply compactness, metrisability and continuity). Named input, standard.
+
+**By-products of 7.2.** (1) holds: Theorem CR^c is the proof. (2) is (P3) and holds for upper bounds on D. It does
+not remove (S0) from Theorem CR^c: "(2) gives (3^c)" uses that l u_j/2 is an integer, and Theorem CE (i)(b) is
+stated under (S0). The file's wording ("as far as upper bounds on D are concerned") already limits it so.
+
+## Step 3 result: Proposition VIR, Corollaries KB and ENT, the implication from (ENT-lat) (7.3, L716-784)
+
+| Statement | Verdict | Note |
+|---|---|---|
+| Proposition VIR (V1)-(V4) | HOLDS | |
+| Proposition VIR (V5)-(V7) | HOLDS | test (d) below |
+| Proposition VIR (V8) | HOLDS | |
+| Corollary KB | HOLDS | test (e) below; Krylov-Bogolyubov is used only for the existence of nu in ENT and CR^c, not in KB |
+| Corollary ENT, both parts | HOLDS | |
+| (ENT-lat) gives (W) | HOLDS | |
+
+**(V1)-(V4).** x e^(-T x) <= x e^(-T_0 x) <= (2/(T_0 e)) e^(-T_0 x/2) for x >= 0, T >= T_0; x^2 e^(-T_0 x/2) is
+bounded; the levels <= 0 are at most G(T) in number. So G = sum e^(-T e_r) is C^2 on (0, infinity) term by term,
+E' = - <e>, E'' = <e^2> - <e>^2. Gibbs: H = sum p_r (T e_r + E). (V3): (T E' - E)/T^2 = - H/T^2 <= 0 since H >= 0.
+(V4): with g = E(., b^3) convex and b g'(b) = - tau_E(b): g(2b) >= D - tau and g(2b) <= 2 D give tau >= - D;
+g(b/2) >= D + tau/2 and g(b/2) = E(b/2, b, b, b) <= 8 D_E(b/2) (E/x_i non-increasing, three sides) give
+tau <= 16 D_E(b/2) - 2 D. With D <= D_0 this gives |tau| <= 16 D_0, as KB uses.
+
+**Test (d), (V5)-(V7).** (V5): g_n(t) = E_n(t, B_n) -> E(t, B) uniformly for t in compacts, because E_n -> E
+uniformly on compacts and E is jointly continuous (the hypothesis "E continuous" is what this step reads; elements
+of BB are locally Lipschitz). Lemma CVX then needs only the two difference quotients of a convex differentiable
+function; its recalled fact (pointwise convergence of convex functions is locally uniform) is not even needed
+here, since convergence is uniform by hypothesis. So <e> is jointly continuous in (E, T, B). (V6): the four
+telescoping terms move side 1, 2, 3, 4 in turn; after the symmetry the fixed sides are exactly B_1, ..., B_4, and
+each term is the integral of E' = - <e> (E(., B) is C^1). (V7): B_i(lambda) -> b^3 as lambda -> 1, and the integrand
+is within o(1) of <e>(b; b^3) on the whole interval by joint continuity, from either side of lambda = 1. So
+D_E'(b) = - 4 <e>(b; b^3), continuous, and d/ds D_E(e^s) = - 4 tau_E(e^s). (V8): the weights of phi_lambda E at
+(b; b^3) are those of E at (lambda b; (lambda b)^3).
+
+**Test (e), Corollary KB.** E -> tau_E(1) = <e>_E(1; 1^3) is continuous by (V5) and bounded by 16 D_0. The map
+(u, E) -> tau_(phi_(e^u) E)(1) is continuous on [0, s] x Omega^c(D_0) (OM^c (b)) and bounded, so Fubini applies.
+Invariance is used twice, each time on a bounded continuous function: E -> D_E(1) (bounded by D_0) and
+E -> tau_E(1). The identity D_(phi_(e^s) E)(1) - D_E(1) = - 4 integral_0^s tau_(phi_(e^u) E)(1) du is (V7) with (V8).
+
+**Corollary ENT.** The support of an invariant measure is closed, non-empty and invariant (the phi_t are
+homeomorphisms), so it is M. A continuous function >= 0 with nu-integral 0 vanishes on supp nu. The dichotomy is
+exhaustive: if tau_E(1) does not take both strict signs, it is >= 0 or <= 0 on M. D_E(1) is constant on orbits
+(tau = 0, (V7)) and orbits are dense in M. (ENT+) as defined at A2 (tau_E(b) > 0 for all b) equals tau_E(1) > 0
+on the invariant set. Then (ENT+) on Omega^c(16 D_0) iff Omega^c(16 D_0) is empty iff (W), by CR^c.
+
+**(ENT-lat) gives (W).** (P2) at (t - 1, t, t + 1) needs t >= 4. N a_(j_i) >= N_i b l_1/u_(j_i) -> infinity, and
+D_(j_i)(N) -> D_E(b) >= d_min > d_min/2. The increments Delta(t - 1) - Delta(t) do not increase in t, so
+Delta(N - k) - Delta(N) >= k (Delta(N) - Delta(N + 1)) >= k c/N; (ENT-lat) is read only at N. N - k = ceil((1 - h) N)
+is within 2 of ceil(N_i (1 - h) b), so the "more exactly" form of EQC passes to the limit: E((1 - h) b, b^3) - D_E(b)
+>= h c. Letting h -> 0 gives - b g'(b) = tau_E(b) >= c. Then D_E(e^s) <= D_E(1) - 4 c s < 0 for large s, against
+E >= 0. Not checked (record, not mathematics): the sentence that (ENT-lat) is (MONO-Delta) with a rate and is "on
+file as blocked".
+
+## Step 4b result: Lemma Z4 and Corollary Z4' (7.4, L785-821)
+
+| Statement | Verdict | Note |
+|---|---|---|
+| Lemma Z4 (a), (b) | HOLDS | (a) needs no topology: sigma_c y = y for y = tau^a E gives Lambda(sigma_c y) = Lambda(y) directly |
+| Corollary Z4' | HOLDS | e_0(B) > 0 is excluded too (the right side would tend to 0 while exp E >= 1); the text folds this into "it is at least 1 because E >= 0" |
+| "Reading (ARGUED)" | not checked line by line (labelled ARGUED); its one formal use, that a scale-invariant element makes every jointly monotone Lambda constant on its tau-orbit, is Lemma Z4 (a) | |
+
+Details. The tau_i are bijections of functions on DD^4 or (0, infinity)^4 and map X onto X, so tau^a is defined for
+a in Z^4. In (b): sigma_c^(t_n) y -> y for y = tau^a E (tau^a continuous, maps commute); Lambda(sigma_c^t y) does not
+increase in t >= 0, so Lambda(y) = lim Lambda(sigma_c^(t_n) y) <= Lambda(sigma_c y) <= Lambda(y); the chain through
+tau_1 tau_2 tau_3 tau_4 forces Lambda(tau_4 y) = Lambda(y), and commutation gives each i; applying it at tau_i^(-1) y
+gives the inverse steps. In Z4': strictness gives tau_i E = E; then E(2^k T, B) = E(T, B); e_0(B) < 0 makes the right
+side unbounded and e_0(B) > 0 makes it tend to 0 < 1 <= exp E; so e_0(B) = 0 and, by dominated convergence from
+time T, exp E(T, B) = m_0(B), an integer >= 1. The argument in each direction (spectral form in each direction)
+makes E constant; a critical element has s = m - 1 >= 1/5041, so m >= 2.
+
 ## State
 
-Step 2a done (7.1). Next: step 2b, Proposition T23 (7.2) and Theorem CR^c (7.3), test (c).
+Step 4b done. Next: step 5, Theorem CE-II and Proposition NR-II (7.5), tests (f), (g).

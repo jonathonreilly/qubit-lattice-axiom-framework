@@ -110,3 +110,24 @@ Read in full: `parts/gap.md` (261 lines) and `library/gap-wall-vectors-max.md` (
 - Orbit-space curvature, Singer, Mondal: `prior/gap-crux-lit-2.md` L154; row 1032 B8.
 
 Left for step 4: name candidate vectors from the fifteen assumptions and D1-D8, each with a grep of `library/open-core.md` and the FINISH rows.
+
+## Step 4a: candidates that the measured record suggests at once, each grepped before it was named
+
+Rule 0a grep for every line: `library/open-core.md` (0 hits for each word below), FINISH.md rows, and `library/`, `parts/`. "Found" means the idea is on file with the place named. None of these is attacked here.
+
+| Candidate (measured source) | Grep words | Result |
+|---|---|---|
+| Centre-stabilised small circle, deformed Yang-Mills, continuity in the circle size (d2, e10, b6) | Unsal; deformed; adiabatic continuity | Found: rows 1004, 1005 (`gap-outside-box-max.md` L431, `prior/gap-outside-read-opus.md` L103-152), row 858 (`gap-crux-exercise-r858-max.md` L326: "the passage from thin n to n = a ... a conjecture"), `gap-skeleton-max.md` L371 |
+| Rigorous 3D compact U(1) gap as a selective input (Gopfert and Mack) | Gopfert | Found: 19 files, 9 FINISH lines (row 1004 brief) |
+| Binary icosahedral group as a finite twin of SU(2) in the band (c6, c10) | icosahedral | Found: `gap-brainstorm2-max.md` G13 and Top 3; 28 FINISH lines |
+| The critical slab as a test: a tool must use the long sides (C8, L3) | SMALL-BOX; Borgs | Found: test K6 "Critical slab" (`gap-crux-exercise2-max.md` L430); SMALL-BOX (`gap-tiltproof-max.md` L100) |
+| Free-wall boxes, no flux sector (D1, b6) | Route W; W-ENG | Found: rows 858, 900, `gap-next3-max.md` C1; a counterexample to (W-ENG) from positivity and axis exchange alone is in FINISH |
+| Fundamental Higgs field as an infrared regulator, complementarity (d2) | complementarity; Fradkin | Found: `gap-assume-opus.md` item 77 ("Removal needs a uniform rate") |
+| Hot phase: spatial gap at fixed N_t and large beta (d2) | screening mass; dimensional reduction | Not attacked on file; FAILS at once: at fixed N_t and beta to infinity it contains the 3D Yang-Mills gap at weak 3D coupling (the magnetic mass), which is the same wall in three dimensions (ARGUED, standard dimensional reduction, recalled). Rows 988, 992 met the 3D mixing input already |
+| Large N as the small parameter (D8, S4) | large N; Eguchi | Found as M8 of row 1063, off the path. Measured addition (recalled, not re-read): Wilson SU(N) has a first-order bulk transition for N at least 5 (Lucini and Teper 2001), so e4 is false at large N; it binds fixed-coupling tools only, as K7 does |
+| Loop equations with positivity (a bootstrap at order one) | Makeenko; loop-eq | Found: `gap-loop-eq-opus.md`, `prior/gap-crux-lit-nonab.md` L166 |
+| Step-scaling or Schrodinger-functional coupling as the carried quantity (D5, D7) | step-scaling; Schrodinger functional | Found: row 859; `prior/gap-gauge-stiffness-read-opus.md` L67, L179 |
+| Sharpness of the deconfinement transition by Ising-type inequalities for the centre (L3) | sharpness; Simon-Lieb; Griffiths | Found in form: (UNIV-FP) item with "an unfrustrated Z_2 theory with Griffiths inequalities" (row 900), Mack-Petkova (row 1018). It gives the flux half at best |
+| Concavity of the static potential and of the Polyakov-loop free energy (Bachas; Borgs and Seiler) | Bachas | Found: `gap-brainstorm2-max.md` L470. Reflection positivity gives upper bounds on masses only (checked by hand here: log W_L(R) is midpoint convex in R, so the torelon energy is at most every finite-distance slope) |
+
+Reading: every candidate that comes straight from the physics literature of the measured record is on file. This agrees with row 1063 step 7. The rest of step 4 (next block) looks for vectors that come from the numbers and from the places D1-D8, not from the literature list.

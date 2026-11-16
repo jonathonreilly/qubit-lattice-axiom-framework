@@ -7,6 +7,8 @@ Row 1062, `gap-wall-vectors-check-opus`. Written by Claude Opus 5.5 at max effor
 
 Marks: HOLDS, HOLDS AFTER CORRECTION (with the corrected text), FAILS (with the first failing line).
 
+**Summary.** Every item of brief B1 has a verdict below; no verdict of row 1053 FAILS. Corrections are listed in Step 8. **Not covered:** the rows of the 4.1 table other than S0, K1, K5, K6 and K7; the port plausibility of (FACE-TW) (6.5) and the sign-cluster sentence; 6.8; 4.6; the step 3 greps (not re-run); the step 5 ranking; the OpenAI texts (used only as rows 1007 and 1009 read them); the recalled theorems (Peierls for finite-group sheets, Frohlich-Spencer, Frohlich-Simon-Spencer), not rebuilt; Verlinde-Verlinde, Aref'eva, Aref'eva-Volovich, Patel, Ratabole and Batista-Nussinov, not read; row 1061, not read, as the row requires.
+
 ## Plan (at most eight steps; one per response, appended before the next)
 
 1. Read FINISH.md (efficiency rules, build on published work) and row 1053's file in full; record brief B1 (section 8.2) and its file list.
@@ -145,6 +147,80 @@ If the fine members of a projective family are asymptotically free and irrelevan
 - Scales at equal lattice coupling beta = 4/g^2: 4D a Lambda ~ exp(-(beta/4)(24 pi^2/22)) = exp(-(3 pi^2/11) beta) = exp(-2.69 beta); 2D exp(-pi beta), matching xi_2 ~ exp(2 pi beta_M/(n - 2)) = exp(pi beta_M) for O(4). Checked.
 - 4.2 algebra: beta_T = (4/g^2) xi^(-2) and xi_2 = xi exp(4 pi/g^2) give beta_T xi_2^2 = (4/g^2) exp(8 pi/g^2), small only for g^2 large. Checked. The step "the sheets have coupling g(a_perp) at the scale a_perp" is a matching assumption (prefactors and the renormalisation of the anisotropy are dropped). J2 gives the same verdict without it.
 
-## Status
+### Step 6 result: J8, the claim of step 7 that Orland's papers hold the anchor
 
-Steps 1-5 done (C1-C7, J1-J7). Next: step 6 (J8: Orland's papers; fetch open copies, each in a new empty directory).
+**Method.** Open arXiv copies of hep-th/0607013 (v6), 0704.0940 (v2) and 0801.0389 (v2), each fetched into its own new empty folder under `/tmp/row1062-opus/`; text extracted with PyMuPDF by a script kept in a separate folder, run with `python3 -I`. Nothing committed. Read: 0607013 pp. 1-8 and its reference list; 0704.0940 pp. 1-2 and the mass passages (lines on 2 m_1 and M_n = 2m + E_n); 0801.0389 pp. 1-4 and its reference list. Short quotes only.
+
+**Verdict: HOLDS AFTER CORRECTION.** The four-dimensional anchor is in Orland 2008, but Orland credits it to earlier authors, and the 2006-2007 papers hold only the (2+1)-dimensional analogue.
+
+What the papers show (checked against the text):
+- *0801.0389 (3+1, the 2+2 split).* Eq. (1.1): after the rescaling x^(0,3) -> lambda x^(0,3), the action has coefficients lambda^(-2) on F_03^2, 1 on F_0j^2 and F_j3^2, lambda^2 on F_12^2, all over 2 g_0^2. In the file's labels: (beta_L, beta_M, beta_T) proportional to (lambda^(-2), 1, lambda^2). The lattice Hamiltonian (2.2) is H_0 + H' + H''. H' is the longitudinal electric term with (g'_0)^2 = lambda^2 g_0^2. H'' is the transverse plaquette term with 1/(g''_0)^2 = lambda^2/g_0^2. Both vanish as lambda -> 0. In the axial gauge U_3 = 1, the residual gauge invariance (2.9), Gamma(x_perp) Psi = 0, is the file's rigid group G (constant along the longitudinal direction). H_0, (2.12)-(2.13), is a set of lattice principal chiral models, one per transverse link. So the lambda -> 0 point of Orland's effective Hamiltonian is the anchor (infinity, beta_M, 0), in Hamiltonian form. Quotes in row 1053's table: verified.
+- *Earlier credit, which row 1053 misses.* 0801.0389 p. 2: "It has been noted before that the lambda -> 0 limit of QCD is equivalent to a set of principal-chiral SU(N)xSU(N) sigma models [6], [16]". [6] is H. Verlinde and E. Verlinde, PUPT-1319, hep-th/9302104 (1993). [16] is I. Ya. Aref'eva, Phys. Lett. B325 (1994) 171 and B328 (1994) 411. Orland's (2+1) programme starts with P. Orland, Phys. Rev. D71 (2005) 054503 (ref. [1] of 0607013). Not read here, and of possible use for precedence: Aref'eva and Volovich, hep-th/9412155 (an anisotropic renormalization group, [17] of 0801.0389); A. D. Patel, Nucl. Phys. Proc. Suppl. B94 (2001) 260 and R. Ratabole, Nucl. Phys. Proc. Suppl. B129 (2004) 889 ("a lattice gauge theory with different transverse and longitudinal couplings", [18]).
+- *0607013 and 0704.0940 are (2+1)-dimensional.* They have one transverse direction and no transverse plaquette. Their g'_0 -> 0 point (axial gauge U_1 = 1, decoupled ladders, residual constraint (3.2)) is the (2+1)-dimensional face, where the face and the anchor coincide. It is not the four-dimensional anchor.
+- *Form and grade.* Orland works in Hamiltonian form with continuous time; in 0801.0389 x_3 is also made continuous (Section III). The Euclidean lattice statements, Lemma FACE-LIM and Lemma ANCH, are row 1053's own; I did not find them in these papers. Orland's results rest on stated assumptions, not proofs: 0607013 p. 3, "We assume that an anisotropic weak-coupling expansion makes sense and that the result for the SU(2)xSU(2) principal-chiral-sigma-model exact form factor ... is correct". He also needs small g_0 (p. 2 there: "both gauge couplings must be small").
+- *Glueball reading (0704.0940), checked.* The abstract quote is verified. The text says "For small enough g'_0, the very lightest state has a mass well-approximated by 2m_1", gives M_n = 2m + E_n, says states are colour singlets by the residual gauge invariance, and says "The bound-state energies proliferate between 2m and 4m, as g'_0 -> 0". So row 1053's reading ("unfreezing confines the charged particles and keeps a singlet gap near twice the chiral mass") is right for the (2+1)-dimensional face at small g'_0. It is a physics computation.
+- *"Not joined by a controlled step" (lens item 2).* Fair. 0607013 p. 4: "We believe that for e = e' the dimensional argument does yield the right answer, but that there is a crossover phenomenon between (1.3) to the behavior we find in the anisotropic regime." Orland posits a crossover and offers no controlled connection.
+
+**Corrected text for row 1053 step 7 (first table row and lens item 1).** "The four-dimensional anchor is the lambda -> 0 point of the longitudinally rescaled Yang-Mills Hamiltonian, which is a set of principal chiral models (Verlinde and Verlinde 1993, hep-th/9302104; Aref'eva 1994). Orland (Phys. Rev. D 77 (2008) 056004, eqs. (1.1), (2.2), (2.9), (2.12)-(2.13)) gives it as a lattice Hamiltonian in an axial gauge, with the residual gauge group equal to G. His (2+1)-dimensional papers (2005-2007) hold the (2+1)-dimensional face. All of these are physics computations in Hamiltonian form. New to the lane, and not found in these three papers: the Euclidean lattice limit (Lemmas FACE-LIM, ANCH), the use of the posted two-dimensional theorems, the selectivity statement, and Lemmas RIG, FACE-MW and Proposition ITER. Precedence in the wider literature (Patel 2001, Ratabole 2004, Aref'eva-Volovich 1994; Batista-Nussinov 2005 for FACE-MW) was not checked." B3's credit line should name Verlinde and Verlinde and Aref'eva beside Orland.
+
+### Step 7 result: J9, the five vector verdicts
+
+| Vector | Row 1053's verdict | This check | Reason |
+|---|---|---|---|
+| V1, the flat-plane face | FAILS as a route; its bridge (BR-L) contains the target | **HOLDS** | J1: (BR-L) includes beta_L = beta, which is T_JW-lat at one coupling (S0). This reason alone carries the verdict. The second reason in the RESULT line, "flux twists need three-dimensional frames", is ARGUED for one device only (J5) and must carry that scope. The pieces that survive check as follows: FACE-LIM, ANCH, ITER HOLD; ANCH-W, RIG, FACE-MW HOLD AFTER CORRECTION (C3, C4, C5); (FACE-TW) stays OPEN. |
+| V2, parametric seed near the anchor | FAILS (renames the band) | **HOLDS** | J2: in R, on a Lorentz-invariant trajectory, xi_2(beta_M) a_long <= (eps/beta_M)^(1/2) a_perp, so R holds no transverse continuum limit. ARGUED at the level of classical anisotropy. |
+| V3, frozen two-skeleton arrays | FAILS (renaming) | **HOLDS AFTER CORRECTION** | J3: the verdict rests on (b), where the bulk at scale s is the one-box estimate. Reason (a) holds for fundamental charges only; adjoint-charged functions are not decided by the perimeter law. |
+| V4, the infrared measure first | FAILS (renaming) | **HOLDS** | J4: a coarse measure refines to an asymptotically free projective family only on the renormalized trajectory, so "mu_0 in the cluster-expansion domain" is (EXIT). ARGUED. |
+| V5, frozen Pin(2) as a test for T_JW-lat | survives as a GUIDE-grade test | **HOLDS** | C7 (Lemma EVEN) holds. The masslessness of frozen Pin(2) at large coupling is a belief, as labelled; only the leading Gaussian term (abs(x)^(-8) for even observables) is checked. What it adds beyond K5: compact U(1) already binds tools for T_JW-lat at theorem grade through the gain vanishing for abelian groups. Pin(2) adds the one case that K5 leaves open, a non-commutative group with an abelian Lie algebra. So the requirement "the selective identity must use non-commuting infinitesimal rotations" is the right sharpened form, at GUIDE grade. |
+
+**Two RESULT-line wordings of row 1053 to correct (no verdict changes).**
+- "anchor at beta_T = 0 = Orland's coupled chiral models". The anchor is the *decoupled* point: at lambda = 0, Orland's couplings H' and H'' vanish. It is due to Verlinde and Verlinde (1993) and Aref'eva (1994), in lattice Hamiltonian form in Orland (2008). See J8.
+- "gapped at every mixed coupling GIVEN the posted 2D O(4) theorems". This is right only if "theorems" includes the mixing bound of OpenAI's O(4) text, as row 1009 reads it (`library/prior/gap-o4-pinned-cell-read-opus.md` L440-455: "mixing for all local Lipschitz observables"). The O(n) decay theorem alone gives the spin channel only (6.2 says so). Suggested wording: "spin decay at every mixed coupling GIVEN OpenAI's O(n) theorem, and clustering of all local observables GIVEN the O(4) mixing text (rows 1009-1010, reading only)".
+
+### Step 8 result: verdict table, corrections ranked, provenance, RESULT
+
+Written 2026-11-16T16:10Z (`date -u`).
+
+#### 8.1 Verdicts
+
+| Item | Verdict | Where |
+|---|---|---|
+| 6.1 Lemma FACE-LIM | HOLDS | C1 |
+| 6.2 Lemma ANCH | HOLDS | C2 |
+| 6.2 Corollary ANCH-W | HOLDS AFTER CORRECTION (transverse loops: "that traverse some link exactly once") | C3 |
+| 6.3 Lemma RIG | HOLDS; scope sentence AFTER CORRECTION (group-dependent constant) | C4 |
+| 6.4 Lemma FACE-MW | HOLDS AFTER CORRECTION (r >= 1); 24 t^2/log(R/r), 12 pi^2, 48 pi^2 confirmed | C5 |
+| 6.5 Proposition ITER | HOLDS (implication from (FACE-TW) with arbitrary pins) | C6 |
+| 6.7 Lemma EVEN | HOLDS | C7 |
+| 4.1 S0 (V1) | HOLDS | J1 |
+| 4.2 S0 (V2) | HOLDS (simpler kill test given) | J2 |
+| 4.3 S0 (V3) | HOLDS AFTER CORRECTION (reason (a) for fundamental charges only) | J3 |
+| 4.4 S0 (V4) | HOLDS (ARGUED) | J4 |
+| 4.1 dimension count | HOLDS as ARGUED for one device; **a flux twist with frames on a two-dimensional set is only not found, not excluded** | J5 |
+| 6.6 Gaussian checks | HOLD (ARGUED; guides) | J6 |
+| 4.2 one-loop formula | HOLDS (coefficients 0.0929, 0.0796, ratio 3 pi/11; matching at a_perp heuristic) | J7 |
+| Step 7, Orland holds the anchor | HOLDS AFTER CORRECTION (credit Verlinde-Verlinde 1993, Aref'eva 1994; 2006-2007 papers are 2+1) | J8 |
+| V1 FAILS as a route | HOLDS | J9 |
+| V2, V4 renamings | HOLD | J9 |
+| V3 renaming | HOLDS AFTER CORRECTION | J9 |
+| V5 GUIDE-grade test | HOLDS | J9 |
+
+#### 8.2 Corrections, ranked by what each would break if left
+
+1. **Scope of "flux twists need three-dimensional frames"** (4.1, 8.1, RESULT, and B3's note for line F3). It is ARGUED for one device, a fixed-axis rotation on the links that cross a Dirac volume. If the registry note is written without that scope, line F3 would read as retired by an argument that does not exclude other devices. Corrected wording in J5.
+2. **Credit for the anchor** (step 7, lens item 1, B3). Verlinde and Verlinde (hep-th/9302104, 1993) and Aref'eva (Phys. Lett. B325, B328, 1994) come first; Orland 2008 gives the lattice Hamiltonian form; Orland 2005-2007 is (2+1)-dimensional. This binds any outward text (FINISH, "What finishing means", item 4). Corrected text in J8.
+3. **"gapped at every mixed coupling GIVEN the posted 2D O(4) theorems"** (RESULT). The claim needs the O(4) mixing text, not only the O(n) decay theorem. Wording in J9.
+4. **V3 reason (a)** is too broad: adjoint-charged functions exist for SU(2) and are not decided by a perimeter law. The verdict stands on (b). Text in J3.
+5. **Corollary ANCH-W, transverse loops**: the doubled plaquette has expectation -1/2, not 0. Text in C3. Nothing downstream uses it.
+6. **Lemma RIG scope**: "every compact Lie group" holds with a group-dependent constant. Text in C4. Downstream uses are qualitative.
+7. **Lemma FACE-MW**: state r >= 1. Text in C5.
+8. *Strengthenings, not defects.* (a) The K1 product test and the failure of the U(1) form of (FACE-TW) are theorem-grade at beta_T = 0 given Frohlich-Spencer (J1, C6). (b) V2's kill test needs no one-loop matching (J2).
+
+#### 8.3 Provenance and process
+
+- Model: Claude Opus 5.5, max effort, Mac mini worker 3. Same provider as the author of row 1053 (Claude Fable 5.2), so this is not an independent check. One reading; not an audit; no mass gap claimed.
+- Proofs C1-C7 were redone by hand in this file. Judgements J1-J7 are by hand; J8 reads open arXiv copies (folders under `/tmp/row1062-opus/`, not committed).
+- No numeric run (none was needed, so memory pressure was not sampled). No subagent. Nothing committed, claimed or pushed. Only this file was written in the repository.
+- Did not read row 1061's file.
+
+RESULT: Row 1062 (Claude Opus 5.5 max, Mac mini worker 3; same-provider check of row 1053, not independent, not an audit): line by line, Lemma FACE-LIM, Lemma ANCH, Proposition ITER and Lemma EVEN HOLD, and Corollary ANCH-W, Lemma RIG and Lemma FACE-MW HOLD AFTER CORRECTION (a transverse loop has mean 0 only if some link is traversed once, the doubled plaquette giving -1/2; RIG's "every compact group" needs a group-dependent constant; FACE-MW needs r >= 1; the bound 24 t^2/log(R/r) and the constants 12 pi^2 and 48 pi^2 are confirmed); the S0 verdicts of 4.1, 4.2 and 4.4 HOLD and 4.3 HOLDS AFTER CORRECTION (reason (a) fails for adjoint charges, (b) carries it); the dimension count HOLDS only as ARGUED for one device, so a flux twist with frames on a two-dimensional set is not found, not excluded; the Gaussian checks and the one-loop formula HOLD; step 7's Orland claim HOLDS AFTER CORRECTION (the 4D anchor is the lambda -> 0 point of Orland 2008 eqs. (1.1)-(2.13), which Orland credits to Verlinde-Verlinde 1993 and Aref'eva 1994; his 2006-2007 papers are 2+1); the vector verdicts V1, V2, V4, V5 HOLD and V3 HOLDS AFTER CORRECTION; no verdict of row 1053 FAILS. Open: (FACE-TW), (FACE-SG), (BR-L'), the wall (W) and T_JW-lat; the masslessness of frozen Pin(2) stays a belief; the OpenAI texts and the earlier anisotropic literature were not read here.

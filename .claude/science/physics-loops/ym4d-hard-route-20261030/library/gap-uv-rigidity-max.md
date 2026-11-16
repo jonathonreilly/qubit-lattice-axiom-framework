@@ -38,10 +38,12 @@ skill's steps are now folded in; still eight steps).
 4. Task (3): **done** (Section 4). PROVED: Lemma FV (on a fixed lattice torus D(n; beta) >= (3/2) log beta - 59 n^4 - 11 for SU(2), beta >= 16: the free value is infinite); Proposition FRZ (frozen values log 8, log 92, log 244); Proposition CONST (a constant c is a critical element iff c = log m).
 5. Task (4): **done** (Section 5). The chain is a sound tool in the valid form and passes every control; it proves nothing for SU(2), because its hypothesis (a) is the wall there. U(1) with beta_j -> infinity and five dimensions sit in branch (II) (GUIDE), a correction to row 1017's table.
 6. Routes and attempts: **done** (Section 6). The surviving link is (b); its lemma is proved (REC, REC+). Five routes from the corrected picture; none survives as a route to (LIOU); the family is blocked-equivalent.
-7. Second pass: not started.
-8. Report: not started.
+7. Second pass: **done** (Section 7). Eight repairs applied in place; no statement failed.
+8. Report: **done** (Section 8 and the last line).
 
-**Nothing in this file is checked by another model.**
+**Nothing in this file is checked by another model.** The list "what this run did not cover" is in 8.8. The
+exercise skill at main commit 8b11ae2bb9 was followed as 1.1 says; `GOAL.md` and the FINISH rules replace the framework
+refresher read, because this is a standalone proof target.
 
 ## 1. Step 1 result: sources, scope, the wall
 
@@ -325,6 +327,15 @@ of 2.3 this is (ASY; Lambda_D, c_UV). For another continuous functional Lambda (
 are continuous on Omega by Lemma LV) the form is (ASY; Lambda, c_UV), and every statement below holds for it with
 Lambda(Omega) in place of [d_min, D_0].
 
+**What the account's normalisation is (from the lane's index of the account, `library/sa-index/chunk-06.md` rows
+6854-6895; the TeX was not opened).** The first-passage datum is a definition, the dilation identity is proved in
+detail there, and Theorem 0 lists a "nontrivial short-distance normalization" of correlations. That clause speaks
+of correlations at small separations. The objects of Omega hold no observables (R L219), and the account "defines no
+running coupling at the scale of the torus side itself" (PS L66). So the account's normalisation is not a statement
+about D at all; a form in terms of D or of a twist ratio would need a new ultraviolet estimate at the scale of the
+torus. Lemma FV (Step 4) is such an estimate on a fixed lattice. By Lemma ALPHA the answer below does not depend
+on which ultraviolet functional is taken.
+
 **Proposition A1 (what (a) is; PROVED, a restatement of Corollary KEPT).**
 
 - (1) (UV-KEPT; c) holds if and only if Lambda_D = c on the set A of 2.3.
@@ -373,8 +384,9 @@ finite for every L in P_Z. Then:
 - (ii) liminf over j of D_j(L/a_j) <= D_(E_c)(L/l_1) <= D^+(L) for every L in P_Z. So the minus-infinity end of E_c
   is the ultraviolet behaviour of the trajectory.
 - (iii) If (PHYS-SEED) fails, J' can be chosen so that s_(E_c)(b) >= 1/5041 at every dyadic b.
-- (iv) If (PHYS-SEED) fails and (BDD-Delta) holds with the bound (L_0, D_0), then the set omega(E_c) of limits of
-  sigma^(t_n) E_c, t_n -> +infinity, is not empty, closed, sigma-invariant, and contained in Omega(D_0).
+- (iv) If (PHYS-SEED) fails and (BDD-Delta) holds with the bound (L_0, D_0), and J' is chosen as in (iii), then the
+  set omega(E_c) of limits of sigma^(t_n) E_c, t_n -> +infinity, is not empty, closed, sigma-invariant, and contained
+  in Omega(D_0).
 
 Proof. (i) Fix x with least entry mu. By A2 (R L80; valid for every datum, CO fact (F1)),
 Delta_j(u_j x) <= (x_1 x_2 x_3 x_4/mu^4) D_j(u_j mu) <= (x_1 x_2 x_3 x_4/mu^4)(D^+(mu l_1) + 1) for large j. The rest is
@@ -411,16 +423,19 @@ their minus-infinity end is infrared. The two ends are joined by E_c alone: its 
 ultraviolet, and its plus-infinity end omega(E_c) lies in Omega (TWO (iv)). No object has both properties, unless D
 is constant from the ultraviolet to the infrared.
 
-**Corollary CR-1 (the one-orbit form of Theorem CR; PROVED given Theorem CR; (S0-Z) is not needed).** Given (S0)
-and (BDD-Delta) with the bound (L_0, D_0), (PHYS-SEED) fails if and only if some subsequential continuum datum E_c on
-the sizes of P has no seed at any size of P. Then omega(E_c) is a non-empty closed invariant subset of Omega(D_0),
-and it contains a uniformly recurrent element (the proof of OM (d) applies to any non-empty compact invariant
-set).
+**Corollary CR-1 (the one-orbit form of Theorem CR; PROVED given Theorem CR; (S0-Z) is not needed).** Assume (S0) and
+(BDD-Delta) with the bound (L_0, D_0). Let G_0 be the set of dyadic b with b l_1 >= L_0. A **continuum datum on G_0**
+is a pointwise limit E_c of Delta_j(u_j x), x in G_0^4, along a subsequence of the lattices on which the lowest level
+of every box converges too (so s_(E_c)(b), the limit of the thermal sums, is defined for b/2 in G_0). Then:
+(PHYS-SEED) fails if and only if some continuum datum on G_0 has s_(E_c)(b) >= 1/5041 at every b with b/2 in G_0. In
+that case omega(E_c) is a non-empty closed invariant subset of Omega(D_0), and it contains a uniformly recurrent
+element (the proof of OM (d) applies to every non-empty compact invariant set).
 
-Proof. If (PHYS-SEED) fails: TWO (i), (iii), (iv) on the sizes of P, where (TH-Z) is (BDD-Delta) from L_0 on and
-finiteness of D^+ on the finitely many sizes below L_0; if D^+ is infinite at one of these, start the grid at L_0.
-If (PHYS-SEED) holds at l with the margin q' < 1, then S_j <= q'/5041 at l for all large j, and every subsequential
-limit has s(l) <= q'/5041 < 1/5041. QED
+Proof. If (PHYS-SEED) fails: the proof of TWO (i), (iii), (iv) on the grid G_0. There D^+ <= D_0, which replaces
+(TH-Z); the sizes are in P, so Lemma UF applies as it stands; for each x and all large t the point 2^t x lies in
+G_0^4, so omega(E_c) is defined on all of DD^4. If (PHYS-SEED) holds at l with the margin q' < 1, then by Theorem S,
+S_j <= q'/5041 at every size 2^k l for all large j, so every continuum datum has s <= q'/5041 < 1/5041 at each such
+size with half of it in G_0. QED
 
 This is the form (R2-two) of row 1017 (R L319), now with its limit set: the wall is the statement that the
 continuum datum of the trajectory, which is asymptotically free at one end, has a seed at the other.
@@ -432,7 +447,9 @@ E_c, with Lambda(sigma^(t+1) E_c) <= Lambda(sigma^t E_c) for t >= t_0. Then Lamb
 Lambda_IR := lim of Lambda(sigma^t E_c) = inf over t >= t_0. In particular: if D_(E_c)(2b) <= D_(E_c)(b) for b >= b_0,
 then every element of omega(E_c) has D = c_IR := the limit of D_(E_c)(b) as b -> infinity, at every scale.
 
-Proof. A non-increasing sequence that is bounded below converges. For E' in omega(E_c) and an integer s,
+Proof. Each coordinate of sigma^t E_c is bounded for t >= t_0 (TWO (iv)), so the closure of the forward orbit is
+compact and Lambda is bounded on it. A non-increasing sequence that is bounded below converges. For E' in
+omega(E_c) and an integer s,
 sigma^s E' = lim of sigma^(t_n + s) E_c, so Lambda(sigma^s E') = Lambda_IR by continuity. QED
 
 So a constant D on the limit objects comes from **monotony** of D along the trajectory, and the constant is the
@@ -470,7 +487,8 @@ eps_j > 0 with eps_j -> 0. Put
   (H2): s >= (m_0 - 1) exp(- 16^(m - 2i)/2) -> m_0 - 1).
 - **Verdict on (a) for TS.** The only element of Omega is the fixed point log m_0. It is uniformly recurrent, and
   its limit at minus infinity is log m_0. The ultraviolet value of the trajectory is log(m_0 p), and its value at
-  every size up to rho eps^(1/4) l_1 is within eps of that. So (UV-KEPT; c_UV) is false for TS in both forms of 3.1.
+  every size up to rho (eps/(p - 1))^(1/4) l_1 is within eps of that. So (UV-KEPT; c_UV) is false for TS in both forms
+  of 3.1.
 
 Remarks. (1) TS has every property that Theorem CE keeps. So no proof of (a) can rest on those properties and on
 the existence of an ultraviolet value. (2) TS is Lemma PT-inf (ii) read at the ultraviolet end: a seeded factor
@@ -481,15 +499,18 @@ the sense that matters: the constant element with the limit value exists.
 
 ### 3.6 The blockers named in the row
 
-- **Lemma PT-inf and the product with a massless factor.** "A product's limit also has a limit at minus infinity":
-  yes, and it shows where (a) breaks. Let X be the SU(2) trajectory and Y the family A_(m,eps_j) (or the photon at
-  one coupling, given its limit). If X has a seed, the limit set of X x Y is that of Y (PT-inf (ii)): its elements
-  have D = log m at every scale, while the ultraviolet value of X x Y is that of X plus log m. So for X x Y link (a)
-  is false exactly when X has a seed. If X has no seed, the limits are sums, and (a) for X x Y holds if and only if
-  it holds for X with the X-part of the value. So a proof of (a) that also runs for X x Y would decide whether X
-  has a seed. This is the lead rule W2 once more (`parts/gap.md` L93): the proof must read the whole state space.
-  Mark: PT-inf blocks (a) as a class-wide principle (TS); it does not refute (a) for SU(2) alone, where (a) with an
-  ultraviolet value outside [d_min, D_0] is true exactly when the wall holds (A1 (3)).
+- **Lemma PT-inf and the product with a massless factor.** Let X be the SU(2) trajectory and Y the family
+  A_(m,eps_j) with eps_j u_j^4 -> 0 (or the photon at one coupling, given its limit). On every torus D = D_X + D_Y (Lemma PT),
+  and 0 <= D_Y <= log m. So X x Y has the ultraviolet law of X: Lemma FV holds for it with the same right side. X x Y
+  has no seed, because S >= S_Y, which tends to m - 1 at every physical size. If (BDD-Delta) holds for X it holds for
+  X x Y, and then the limit set of X x Y is not empty (Theorem CE (i)(b)), whether X has a seed or not. By Corollary
+  KEPT (4), link (a) with the divergent ultraviolet law is then **false for X x Y**. "A product's limit also has a
+  limit at minus infinity": yes; if X has a seed the limits of X x Y are limits of Y alone (PT-inf (ii)), for example
+  the constant log m. But that limit is not the ultraviolet value. So a proof of (a) for X must fail for X x Y, which
+  has the same ultraviolet law and every kept property: it must read the whole state space. This is the lead rule
+  W2 once more (`parts/gap.md` L93). Mark: PT-inf blocks (a) as a class-wide principle (the family TS is the bare
+  form); it does not refute (a) for SU(2) alone, where (a) with an ultraviolet value outside [d_min, D_0] is true
+  exactly when the wall holds (A1 (3)).
 - **Theorem D2** (`library/gap-tiltproof-max.md` L240: every covariance bound that is uniform over tilts obeys
   kbar >= lam_* k00). (UV-KEPT) and (PLATEAU) speak of the periodic partition functions only; they hold no supremum
   over tilts, pins or coupling fields. So Theorem D2 and Lemma SHEET do not bind them. They bind one way to prove
@@ -559,14 +580,14 @@ outside T as l_1, ..., l_M with h non-decreasing. Their number is M = 4 n^3 (n -
 For i < k the link l_k does not lie in p(l_i): otherwise l_k = l_i', so h(l_k) < h(l_i), against the order.
 
 (A3) Z(n; beta) <= I(beta)^M. Proof: each plaquette weight w(U_p) = exp(- beta (1 - (1/2) tr U_p)) is at most 1. Drop
-all weights except those of p(l_1), ..., p(l_M). Integrate over U_(l_M) first, the other links fixed. By (A2) it occurs
-in the weight of p(l_M) only, as tr(U_(l_M) W) or tr(U_(l_M)^(-1) W) with W a product of other links. Haar measure is
+all weights except those of p(l_1), ..., p(l_M). Integrate over U_(l_M) first, the other links fixed. By (A2), among the
+weights kept it occurs in that of p(l_M) only, as tr(U_(l_M) W) or tr(U_(l_M)^(-1) W) with W a product of other links. Haar measure is
 invariant under translation and inversion, so this integral is I(beta), whatever the other links are. Repeat with
 l_(M-1), ..., l_1. The remaining links integrate to 1.
 
 (A4) f(beta) <= 3 log I(beta) <= 3.42 - (9/2) log beta. Proof: f <= F(n)/n^4 <= (3 - 4/n + n^(-4)) log I(beta) for every
-n, by (A3) and log I <= 0. The right side decreases to 3 log I(beta) as n grows... more exactly it is at least
-3 log I for each n and tends to 3 log I; f is at most each of its values, hence at most their limit. With (A1):
+n, by (A3) and log I <= 0 (f is the infimum over all tori). The right side tends to 3 log I(beta) as n grows, and f
+is at most each of its values; so f <= 3 log I(beta). With (A1):
 3 log I <= (15/2) log(pi/2) - (9/2) log beta, and (pi/2)^(5/2) < 3.1 (as 1.5708^5 < 9.57 < 3.1^2), log 3.1 < 1.14.
 
 **Part B (Z on the fixed torus from below).**
@@ -639,10 +660,11 @@ Remarks.
   lane has I8 (GUIDE): D^+(L) grows like 3 log(1/g(L)). The account bounds D on its own tori above the floor ((TH), I6)
   and gives no asymptotics.
 - By Corollary KEPT (4) and Proposition A1 (3): with a divergent ultraviolet law, link (a) is equivalent to (W),
-  given (BDD-Delta). With the value at one fixed size just above first passage, c = D^+(L_1), link (a) is the
-  plateau statement of 3.2 at that value; the same statement at the size 2 L_1 gives the value D^+(2 L_1), and Omega
-  is the same set for both. So (a) in that form forces D^+(L_1) = D^+(2 L_1) = ...: the Casimir free energy does not
-  run. This contradicts I8 at belief grade; no proof step uses it.
+  given (BDD-Delta). With the value at one fixed size, c = D^+(L_1), link (a) is a plateau statement at that value
+  (3.2). The row's phrase "just above first passage" does not single out one size: L_1 and 2 L_1 both qualify, and
+  by the dilation identity (PS L66) another admissible g' gives another unit. Omega does not depend on this choice.
+  If (a) holds with the value at L_1 and with the value at 2 L_1, and Omega is not empty, then D^+(L_1) = D^+(2 L_1):
+  the Casimir free energy does not run there. This contradicts I8 at belief grade; no proof step uses it.
 
 ### 4.3 Proposition FRZ (frozen values; PROVED)
 
@@ -904,3 +926,209 @@ run.
 | Route | Object | Mechanism | Terminal obligation | Strength | Status | Evidence | Reopen condition |
 |---|---|---|---|---|---|---|---|
 | RH-uv, a kept ultraviolet condition on blow-down limits (sub-family of RH of row 1017) | elements of Omega(D_0) and their minus-infinity end | asymptotic freedom as a boundary condition, then recurrence (Lemma REC) | (UV-KEPT; c) | target-equivalent for c outside [d_min, D_0] (Proposition A1 (3)); an infrared plateau statement for c inside | blocked-equivalent | Lemmas ALPHA, REC, EXCL; Corollary KEPT; Propositions A1, A2, TWO, MON+; the family TS; Lemma FV (this file, unchecked) | a functional of the torus datum that is conserved or monotone along the continuum datum of the trajectory, whose ultraviolet value lies outside its range on critical elements, and which is not additive over decoupled factors |
+
+## 7. Step 7 result: second pass on the proofs (same session, so not a check)
+
+I re-read Sections 2 to 4 from the file and re-derived each step once more. No statement failed. Eight repairs
+were made in place:
+
+1. Proposition TWO (iv) now says that the subsequence J' is the one of (iii) (inside the subsequence of Lemma UF);
+   the proof used it.
+2. Corollary CR-1 was restated on the grid G_0 of sizes from L_0 on, with the definition of a continuum datum on
+   G_0. The first wording spoke of "the sizes of P" and left open what happens at a size below L_0 with D^+ infinite.
+3. Proposition MON+ now says why Lambda is bounded (the closure of the forward orbit is compact).
+4. The family TS: the lower bound for D^+ had the inequality log(1 - w) >= - w the wrong way round; corrected to
+   D^+(L) >= log(m_0 p) - (p - 1)(L/rho)^4, and the range of the plateau to rho (eps/(p - 1))^(1/4) l_1.
+5. Section 3.6, the product: the first wording said that link (a) for X x Y "is false exactly when X has a seed".
+   That was wrong for the divergent ultraviolet law: the limit set of X x Y is never empty, so (a) is false for
+   X x Y in both cases. Rewritten; the conclusion (a proof of (a) must read the whole state space) is the same.
+6. Lemma FV (A3): "among the weights kept" added. (A4): a broken sentence replaced.
+7. Section 4.2: the remark on the value "just above first passage" now states its hypothesis (that (a) holds with
+   the value at L_1 and with the value at 2 L_1).
+8. Section 3.1: a paragraph on what the account's normalisation is, from the lane's index.
+
+Points a checker should test first (the places where I would expect an error, if there is one):
+
+- Lemma REC (i): that the set U contains a basic neighbourhood, and that "bounded gaps" in the sense of OM (d)
+  gives return times that are unbounded **below** (CA L262-271: every interval of 2N + 1 integers holds one).
+- Corollary KEPT (2): that sigma^s E' lies in alpha(E) for every s (ALPHA (i)), so that Lambda is c along the whole
+  orbit of E'.
+- Proposition TWO (iv): the diagonal choice of j_n (three conditions, each on finitely many quantities), and that
+  (H1), (H2) then hold with i(m) = max(1, abs(m)).
+- The family TS: that every admissible sequence has gamma_i -> 0 (the use of (H2) at one large scale m).
+- Lemma FV (A2): the two nu-links of p(l) are tree links; the map is one-to-one; the order property. (B5): the two
+  separation bounds and the count. (B6): the powers of beta. The constants 3.42, 58.92, 10.84.
+- Proposition FRZ: the three centraliser recursions.
+
+## 8. Step 8: report (skill step 9)
+
+### 8.1 The wall, in plain words
+
+The lane must show that the four-dimensional SU(2) theory has no massless particle. It has shown this much: if the
+theory had one, and a certain free energy stayed bounded, there would be a "limit picture" of the theory at very
+large sizes that keeps coming back to itself as the scale is doubled. To finish, one must show that SU(2) has no
+such picture. A photon is such a picture, so every general tool fails. This row asked: SU(2) differs from a photon
+at very small sizes; does that difference survive in the limit picture, as a condition on its small-scale end, so
+that the picture is pinned to one number and can be excluded?
+
+### 8.2 What the exercise found
+
+1. No. Every scale of a limit picture, its small-scale end included, is made of very large physical sizes of the
+   theory. The small physical sizes never appear in it. This is now a short theorem (Lemma ALPHA, proved by Claude
+   Fable 5.2 by hand, not yet checked).
+2. The second step of the lead's reading is right: a picture that keeps coming back to itself and has a limit at
+   one end is constant there (Lemma REC, proved, not yet checked).
+3. So the first step carries all the weight, and it is not a weaker statement than the wall. If the small-size
+   value is a number that limit pictures cannot have, the first step says "there is no limit picture", which is the
+   wall itself. If it is a number they can have, the first step says that the free energy stops changing at large
+   sizes, and nothing about small sizes gives that.
+4. For SU(2) the small-size value is infinite: on a fixed lattice the free energy in question grows at least like
+   (3/2) log beta (Lemma FV, proved by hand with explicit constants, not yet checked). So for SU(2) the first step is
+   the wall. For the frozen groups the value is finite and exact: log 8, log 92, log 244. Limit pictures with these
+   values exist, and nothing in the lane's axioms excludes them.
+5. The one object that does remember the small sizes is the theory itself at fixed sizes. It is not a picture that
+   comes back to itself. The two kinds of object are joined only by following the theory through every scale, and
+   that is the step the lane does not have.
+6. This run did not pass the wall. It priced one more route exactly, corrected one sentence of row 1017 into a
+   theorem, and proved a fact about small sizes that the lane held as a count.
+
+### 8.3 Filters corrected
+
+- **Row 1017's sentence "no boundary condition at one end of the scale axis is a kept property"** (struck by the
+  gpt-6-astra check, item 20). Valid form, proved here: an asymptotic condition at minus infinity is kept exactly
+  when it holds on the alpha-limit sets inside the limit set (Corollary KEPT); on a uniformly recurrent element a
+  condition at one end is a condition on the whole orbit (Lemma REC). The trajectory's ultraviolet normalisation is
+  kept only if its value is taken by critical elements. What comes back: nothing for SU(2); for a model whose free
+  value is finite and realised (frozen groups, U(1) at one coupling) the condition is kept and excludes nothing.
+- **Row 1017's test rows for U(1) with beta_j -> infinity and for five dimensions** ("limit set not empty, if D is
+  bounded"). By the count of Lemma FV, D is believed unbounded there. These families test (BDD-Delta), not (LIOU).
+  GUIDE grade on both sides.
+- No discard test of `parts/gap.md` changed. Rule W2 binds this route as written there (3.6).
+
+### 8.4 Routes worth doing
+
+None on this family. The reopen condition is in 6.5: a functional of the torus datum that is conserved or monotone
+along the continuum datum, whose ultraviolet value lies outside its range on critical elements, and which is not
+additive over decoupled factors. I know no candidate.
+
+### 8.5 What not to do next
+
+- A row that looks for an ultraviolet boundary condition on blow-down limits, in any functional. Lemma ALPHA covers
+  every continuous functional.
+- A row that tries to "exclude the constant element". For a finite value the constants log m are critical elements
+  and the element is a family; for the SU(2) value there is no element.
+- A row that proves the ultraviolet law of D at a fixed small physical size (the small-volume expansion on the
+  account's lattices). It has no consumer: that end of the scale axis is not in any limit object.
+- Using U(1) with beta_j -> infinity, or five dimensions, as tests of a Liouville statement. They are tests of
+  (BDD-Delta).
+
+### 8.6 The exact price
+
+Link (a) of the lead's reading, with the free value of SU(2), is equivalent to (W), given (BDD-Delta) (Proposition
+A1 (3) with Theorem CR; proved here given the lane's inputs; unchecked). With a value in [d_min, D_0] it is
+equivalent to "D takes that value on every alpha-limit point of the limit set", an infrared plateau statement
+(Proposition A1 (1), A2). In neither form is it weaker than the wall.
+
+### 8.7 Work items
+
+**W1, check (a model that did not write this file; high effort).** Check line by line, in
+`library/gap-uv-rigidity-max.md` at the commit that holds it: Lemma ALPHA (2.2), Corollary KEPT (2.3), Lemma REC (2.4),
+Propositions A1 and A2 (3.1, 3.2), Proposition TWO, Lemma EXCL, Corollary CR-1 (3.3), Proposition MON+ (3.4), the
+family TS (3.5), Lemma FV with Parts A and B (4.1), Proposition FRZ (4.3), Proposition CONST (4.4), Lemma REC+ (6.2).
+Read first: `library/gap-compact-rigidity-max.md` L131-158 (definitions), L223-243 (Proposition OM, Theorem CR), L253
+(the data A_(m,eps)), L257-262 (Lemma PT-inf); its checks `gap-compact-rigidity-check-opus.md` L129-141 and
+`gap-compact-rigidity-check-astra.md` items 11, 14, 19, 20; `library/gap-dichotomy.md` L92-136 (the setting). Test first
+the six points listed at the end of Section 7. Then judge: (i) is Proposition A1 (3) right as stated, with
+(BDD-Delta) as the only extra hypothesis beyond Theorem CR; (ii) does the proof of Lemma FV hold with its constants,
+and is its f the infimum the lane uses (`gap-crux-restate.md` L29-45); (iii) is the family TS a family of data with
+units in the sense of `gap-dichotomy.md` L85-101, and is its limit set as stated; (iv) is the correction of 5.2 to
+rows L294 and L300 of `gap-compact-rigidity-max.md` fair as a GUIDE-grade statement. Report the first failing step,
+or none. Stop rule: no new attack. Output: `library/gap-uv-rigidity-check-<model>.md`.
+
+**W2, bookkeeping (the lead).** If W1 passes, in `parts/gap.md`: (1) in the obligation line of row 1017, replace "the
+limit keeps no condition at one end of the scale axis (Proposition SI)" by: "an asymptotic condition at minus
+infinity is kept exactly when it holds on the limit set itself (Corollary KEPT, row 1028); the trajectory's
+ultraviolet normalisation is not kept unless critical elements take its value; with the SU(2) free value the
+statement is (W)". (2) Test table: add the frozen values log 8, log 92, log 244 (Proposition FRZ) to the row
+"Frozen Q_8, 2T"; add to the U(1) row that the family with beta_j -> infinity sits in branch (II) (GUIDE); the same
+for five dimensions where it is used. (3) Route registry: add the row RH-uv of 6.5. (4) At `gap-phys-seed.md` L109
+and L192 the count kappa = 3 has a proved lower half on a fixed lattice: Lemma FV.
+
+**Not proposed.** (1) A proof row on (UV-KEPT) or (PLATEAU): the first is the wall; the second has no mechanism and
+says that the running stops. (2) A row on the upper half of Lemma FV, or on D^+(L) at a fixed small physical size:
+no consumer (Lemma ALPHA). (3) Rows on the routes U1 to U5 of 6.3: no candidate, or held by earlier rows. (4) A
+numeric study of D(n; beta) at weak coupling: it would decide nothing.
+
+### 8.8 Appendix
+
+**Marks.**
+
+| Statement | Where | Mark | Rests on |
+|---|---|---|---|
+| Lemma ALPHA | 2.2 | PROVED by hand, unchecked | Proposition OM (a) (checked: CO, CA) |
+| Corollary KEPT | 2.3 | PROVED, unchecked | ALPHA; Theorem CE (ii)(d) |
+| Lemma REC (link (b)), Lemma REC+ | 2.4, 6.2 | PROVED, unchecked | the definition of OM (d) |
+| Proposition A1; (a) with a value outside [d_min, D_0] is equivalent to (W) | 3.1 | PROVED GIVEN Theorem CR and (BDD-Delta), unchecked | KEPT |
+| Proposition A2, (PLATEAU; c) gives (a) | 3.2 | PROVED, unchecked | the definition of admissible sequences |
+| (PLATEAU; c), (UV-KEPT; c) with c in [d_min, D_0], for SU(2) | 3.2 | OPEN; no mechanism; an infrared statement | - |
+| Proposition TWO, Lemma EXCL, Corollary A3, Corollary CR-1 | 3.3 | PROVED, unchecked (TWO given (S0-Z), (TH-Z); CR-1 given Theorem CR) | Theorem CE's proof, Lemma UF, Theorem S |
+| Proposition MON+ | 3.4 | PROVED, unchecked; its hypothesis (a monotone) is OPEN | TWO |
+| The family TS; link (a) FAILS as a class-wide principle | 3.5 | PROVED (an argued counterexample in the skill's words), unchecked | the data A_(m,eps) (R L253) |
+| Blockers of 3.6 | 3.6 | PT-inf: PROVED given Lemma PT, Lemma FV; D2, SHEET: do not bind (reading of their statements); NP: as cited | - |
+| Lemma FV | 4.1 | PROVED by hand, unchecked; guard run agrees at the tested points | definitions only |
+| D(n; beta) = (3/2) log beta + log log beta + O(1); I8 at a fixed physical size | 4.1, 4.2 | GUIDE | counts; recalled literature |
+| Lemma FV for U(1) and in five dimensions | 4.1 remark 3 | ARGUED (same proof, not written out) | - |
+| Proposition FRZ; the values log 8, log 92, log 244 | 4.3 | PROVED, unchecked; guard run agrees | Burnside; the shelling of 4.1 |
+| Proposition CONST | 4.4 | PROVED, unchecked (found again from CO 6.4) | Lemma LV's argument |
+| Controls of 5.2 | 5.2 | U(1) at one coupling, frozen Q_8 and 2T at large finite beta: BELIEF for their limit sets; TS: PROVED; five dimensions and U(1) with beta_j -> infinity in branch (II): GUIDE | - |
+| Routes U1 to U5 | 6.3 | dead, blocked-equivalent or found again, as stated there | - |
+| (LIOU), (BDD-Delta), (W) | - | OPEN, not moved | - |
+
+**Assumptions most likely to be wrong** (of the reading tested): R1 (shown wrong), R2 (shown wrong on a fixed
+lattice), R4. **Most expensive to be wrong:** B1, (BDD-Delta): every statement about Omega is empty without it.
+**Literature proofs worth translating:** none for this question. The small-volume expansion (Luscher; van Baal)
+would raise I8 from GUIDE, and has no consumer here.
+
+**What this run did not cover.** The account's TeX was not opened; its statements are taken from `gap-phys-seed.md`
+L61-116 and from the lane's index (`library/sa-index/chunk-04.md`, `chunk-06.md`, a few rows). No primary paper was
+read; Luscher, van Baal, Krauth and Staudacher, Conley, Birkhoff, Guth, Frohlich and Spencer are recalled or taken
+through the lane's quotations. `library/gap-dichotomy.md` was read to L300 only. `library/gap-crux-fp.md` was read at
+L50, L66-80, L258-268, L279-285 only. The bodies of rows 988, 1002, 1003, 1004 were read only at the lines cited. Row
+1025 was not read (no RESULT at the pin). The inputs Theorem S, Lemma UF, Theorem CE, Proposition OM, Theorem CR,
+Lemma PT and Lemma PT-inf were used as checked by CO and CA and were not re-derived, except the steps of CE's proof
+that Proposition TWO reuses. The U(1) and five-dimensional forms of Lemma FV were not written out. No upper bound
+for D on a fixed lattice was proved. The limit sets of U(1) at one coupling and of frozen Q_8 and 2T at large finite
+beta are beliefs here. `origin/main` and the open PR branches were not searched (not refs of this checkout); the
+repo search covered this folder at the pin. No blind check of the plain version ran (no subagents). The passes of
+6.3 are passes of one session and are not independent.
+
+**Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (the account: the
+trajectory, the first-passage datum, the dilation identity, (UV-Z); no proof of theirs is used). Tadeusz Balaban
+(the stability theorem behind (UV-Z)). Claude Fable 5.2, row 1017 (Theorems CE and CR, Proposition OM, Lemma PT-inf,
+the data A_(m,eps), Remark MON, the form (R2-two)). The gpt-6-astra check of row 1017 (item 20, the source of this
+row; the exclusion of a divergent ultraviolet law by CE's bound). Claude Opus 5.5, check 1019 (D14: "the small
+scales of a blow-down limit are large physical sizes of the trajectory", which is the idea of Lemma ALPHA; 6.4, the
+constants log m). The target lead (the reading (a)-(b)-(c); link (b) is the lead's). Row 720 (the count kappa = 3,
+Section 1.2 of `gap-phys-seed.md`). Row 1004 and its check 1008 (the count (3/2) log beta for the twist ratio;
+Observation SCH). The gpt-6-astra check `gap-crux-skeleton-check-astra.md` L305 (the frozen formula and its Burnside
+form). Row 1003 (Proposition NP, the device behind TS). Row 998 (Lemma PT, rule W2). Row 712 (`gap-crux-fp.md`, the
+dimension test). Martin Luscher and Pierre van Baal (the small-volume expansion, through row 720). Werner Krauth and
+Matthias Staudacher (the convergence threshold of Yang-Mills integrals, recalled). George Birkhoff (recurrence and
+minimal sets), Charles Conley (Lyapunov functions and chain recurrence), recalled. Carlos Kenig and Frank Merle
+(the roadmap, through row 1017).
+
+**Strong words, read against what the run did.** "PROVED": by hand, by one model, unchecked, given the inputs named
+in the table. "Equivalent" (A1 (3), 8.6): given Theorem CR and (BDD-Delta). "The free value is infinite": on a fixed
+lattice torus as beta grows (Lemma FV); at a fixed small physical size of the trajectory it is a belief. "No
+construction keeps it" (Corollary A3): in the sense of Lemmas ALPHA and EXCL, for extraction by sequences (j_i, k_i)
+from the torus data; not a statement about objects with more structure. "New", "not found": within the search
+scope of 5.5. "Sound tool" (5.1): the implication is proved here and is unchecked. "No candidate", "no mechanism":
+none found in this run and none on record in the files read; not a proof that none exists. "Branch (II)" for U(1)
+with beta_j -> infinity and for five dimensions: GUIDE.
+
+**Run record.** Started 2026-11-16T00:21Z; report written 2026-11-16T00:56Z (both from `date -u`). One guard run under
+the numeric lock (4.6), memory free 68 percent before it; no other run. No subagents. Files written: this one only;
+scratch under `/tmp/ym4d-w3-uvrig/` (the skill text, two reference files, one script and its output). No commit, no
+push.
+
+RESULT: Row 1028 (Claude Fable 5.2 max, Mac mini worker 3; author, checked by no one; one guard run, no subagents). The lead's chain does not pass the wall: link (a) is false as a class-wide principle and, for SU(2), is the wall itself (target-equivalent given (BDD-Delta)); link (b) holds; link (c) is empty for the SU(2) value. PROVED by hand (unchecked): Lemma ALPHA and Corollary KEPT (every scale of a blow-down limit, its minus-infinity end included, is infrared: the alpha-limit set of an element of Omega lies in Omega; an asymptotic condition at minus infinity is kept exactly when it holds there, which is the valid form of the sentence struck by item 20 of the gpt-6-astra check); Lemma REC and REC+ (link (b): a uniformly recurrent element with a limit at one end has D constant, and with a pointwise limit it is a fixed point of the doubling); Proposition A1 (link (a) with an ultraviolet value outside [d_min, D_0], or a divergent law, is equivalent to (W) given (BDD-Delta); with a value inside it is an infrared plateau statement, (PLATEAU), OPEN with no mechanism); Proposition TWO, Lemma EXCL, Corollary CR-1 (the object that keeps the ultraviolet data is the continuum datum at fixed sizes; it is not recurrent; its forward limit set lies in Omega; so CE cannot be strengthened to keep (a)); Proposition MON+ (ultraviolet data reach the limit set only as an inequality through a monotone, which stays OPEN); the family TS (a counterexample to (a) in the class with every kept property: ultraviolet value log(m_0 p) on any number of doublings, limit log m_0); Lemma FV (task 3: on a fixed lattice torus D(n; beta) >= (3/2) log beta - 59 n^4 - 11 for SU(2), beta >= 16, so the free value is +infinity; the count kappa = 3 of row 720 now has a proved lower half); Proposition FRZ (frozen values log 8, log 92, log 244 for Z_2, Q_8, 2T, the same at every size); Proposition CONST (a constant c is a critical element iff c = log m, m >= 2 an integer: the engine, the centre grading and the spectral clause exclude no such constant; for the SU(2) value there is no element, and for a finite value link (c) names a family). Controls (task 4): the chain is a sound tool and passes them all (U(1) at one coupling and frozen Q_8, 2T end at elements that exist; products and TS make (a) false, so a proof of (a) must read the whole state space, rule W2; Theorem D2 and Lemma SHEET do not bind (a)); GUIDE-grade correction to row 1017: U(1) with beta_j -> infinity and five dimensions have unbounded D and sit in branch (II), so they test (BDD-Delta), not (LIOU). OPEN, not moved: (LIOU), (BDD-Delta), (W); the route "kept ultraviolet condition" is blocked-equivalent, with the reopen condition of 6.5.

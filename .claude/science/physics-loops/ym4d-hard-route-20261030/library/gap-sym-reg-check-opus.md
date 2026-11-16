@@ -193,3 +193,28 @@ L >= 3 there are no extra coincidences. Three sets per direction, at most two pe
 six over three directions. Holds.
 
 Verdicts of Step 3: PRIV HOLDS (cube test passed); Corollary P HOLDS; classes (a)-(d) HOLD; range condition HOLDS.
+
+### Step 4 (done 2026-11-16T05:05Z): Lemma SPAN (6.3, L203-212)
+
+**Lemma SPAN. HOLDS, with one scope precision.**
+- The plaquette (x - e_nu; mu, nu) has l_1 = (x - e_nu, mu) = Q_mu and l_3 = (x, mu). Holds.
+- Uniqueness of Q_mu among the plaquettes through the out links of x, re-derived. A plaquette through (x, kappa) that
+  contains a direction-mu link lies in a plane containing mu. If kappa = mu: the direction-mu links are (x, mu),
+  (x + e_lambda, mu) (plaquette (x; mu, lambda)) and (x - e_lambda, mu), (x, mu) (plaquette (x - e_lambda; mu, lambda)); only
+  lambda = nu gives Q_mu. If kappa != mu: the plaquettes (x; kappa, mu) and (x - e_mu; kappa, mu) have direction-mu links at
+  x, x + e_kappa, x - e_mu, x - e_mu + e_kappa, none equal to x - e_nu. On a torus with L >= 3 the offsets differ mod L too.
+  So Q_mu enters only N_(x,mu), only through that plaquette, and not the two other forces. Holds.
+- The form of the term: with U_3 = U_(x,mu), Re U_p = Re(U_3 sigma), sigma = U_2^(-1) Q_mu^(-1) U_4 (a path from x + e_mu to x).
+  So N_(x,mu) = N0_mu + beta w Im(U_(x,mu) U_2^(-1) Q_mu^(-1) U_(x-e_nu,nu)): g_mu = U_(x,mu) U_(x-e_nu+e_mu,nu)^(-1),
+  h_mu = U_(x-e_nu,nu). The text writes the same with g, h unnamed. Holds.
+- Non-vanishing of the determinant: as (Q_1, Q_2, Q_3) vary with all else fixed, (N_1, N_2, N_3) ranges over a product of
+  three closed balls of radius beta w > 0 (centres N0_mu), each N_mu moving with its own Q_mu. det is a non-zero polynomial
+  on R^9, so it does not vanish on that product of balls (a product of open balls is open). Hence det(N_1, N_2, N_3), a
+  real-analytic function of the configuration, is not identically zero, and its zero set is null. Holds.
+- The conclusion: a unit n with n . N_mu = 0 for mu = 1, 2, 3 is a non-zero kernel vector, so det = 0. Holds.
+- Scope precision (not a defect for the row's use, which is in the bulk): in a pinned box, Q_1, Q_2, Q_3 must be
+  integration variables; "all plaquettes present" does not ensure that near the boundary.
+- What SPAN excludes, read exactly: j = 0 on three out links of a site. It does not exclude a site frame with c_l = 0 on
+  each out link through j_l = d_l != 0. The text claims only the first (L203, L206, L356). Holds as stated.
+
+Verdict of Step 4: SPAN HOLDS (scope: the three links Q_mu free).

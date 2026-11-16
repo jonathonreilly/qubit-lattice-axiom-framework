@@ -33,7 +33,7 @@ FLUX-W (a)-(d), the definition of T_JW-lat (6b), sections 6c and 6d, and the Rea
 
 ## Status
 
-Steps 1-4 done (written below). Next: step 5, T_JW-lat.
+Steps 1-7 done (written below). Next: step 8, meaning, verdict table, RESULT.
 
 ## Step 1. Sources read (all at b04caeebc)
 
@@ -192,3 +192,235 @@ in row 1052 ("PROVED by hand here, unchecked; found again in substance") are rig
 link (W) -> flux bound was already on file in substance (`gap-phys-seed.md` L328: "By (TM-c) the space of the
 cube splits into the eight flux sectors, so (Z-UNB) says two things ... L E_e(L) is unbounded for every flux
 e"). What FLUX-W adds is the uniform form E_e >= M_* for every large cube and every large j.
+
+## Step 5. T_JW-lat (row 1052 L485; the brief calls it 6b)
+
+Text checked: "T_JW-lat: there are c > 0 and a physical length l such that for all large j, every
+infinite-volume limit state of the cutoff-j theory (torus limits or DLR states) clusters in the sense of A2 at
+rate c/l in physical units, for a total set of local observables, constants depending on the observable only.
+(T_JW-lat with T0's (H2), (TOT) gives T_JW by A2 (iii); this is the lane's (G2)-(G3) with (G2) taken as the
+hypothesis instead of (W).)" Row 1052 then uses two relations: (R1) "(W) implies T_JW-lat" (L611: "T_JW-lat,
+which the lane's (W) implies"; L565: "weaker than (W) ... by exactly the flux clause"); (R2) T_JW-lat with T0's
+data gives T_JW.
+
+**A2 itself (L194-198): HOLDS.** I redid the proof. psi_F = [F] - <F> Omega lies in Omega-perp, the left side
+is the integral of e^(-t lambda) against the spectral measure mu_F of psi_F, so mu_F([0, Delta - eps]) <=
+C_F e^(-eps t) -> 0, hence E([0, Delta)) psi_F = 0; E([0, Delta)) [F] = <F> Omega; totality gives
+E([0, Delta)) = projection on C Omega. (The file's sentence "E([0, Delta)) Omega... is Omega itself" is
+elliptic but right.) At one fixed cutoff A2 needs no uniformity of C_F at all.
+
+**(R1) fails as written. First failing line: L485, the state class "(torus limits or DLR states)", read with
+L611 "which the lane's (W) implies".** What (W) gives on file is (G2) = Proposition P (`gap-seed-limit.md`
+L188-196): clustering, and the bound ||T_nu^t psi|| <= e^(-M_* t a_j) ||psi|| on the complement of the vacuum,
+for every limit state of an **admissible sequence** of periodic tori (L120, L118: spatial cubes (L_k)^3, time
+extents T_i with T_i - n_(k_i) -> infinity; every integer side by row 703). Two kinds of state in T_JW-lat are
+outside that class:
+
+1. DLR states. `gap-seed-limit.md` L172 (3): "Whether a limit state satisfies the Dobrushin-Lanford-Ruelle
+   equations is not needed here and not proved here"; L288: "It does not show that the limit state is unique,
+   that it is a Gibbs state". Nothing on file gives clustering of a DLR state that is not such a limit state.
+2. Torus limits that are not admissible, e.g. L^3 x T with T -> infinity but T - L/2 -> -infinity, or tori
+   with non-cubic spatial sections. (G1) bounds the thermal sum only from half the side on (`gap-seed-limit.md`
+   L92: "It gives nothing for a < n_k (below half the side)"), and S3' is for cubes only.
+
+So with the state class as written, (W) is not known to imply T_JW-lat. Both statements are then not ordered by
+anything on file: T_JW-lat asks for states (W) does not reach, and (W) asks for the flux bound that T_JW-lat does
+not contain. No counterexample to "(W) implies T_JW-lat" is claimed; the implication is unproved.
+
+**Repair (proved here from the file; same provider, not cross-checked).** Fix the state class to the one (G2)
+covers:
+
+> **T_JW-lat (corrected).** There are c > 0 and l in P such that for all large j, every limit state nu of an
+> admissible sequence of periodic tori at the cutoff j (`gap-seed-limit.md` 4.1; spatial cubes of integer side)
+> has ||T_nu^t psi|| <= e^(-(c/l) t a_j) ||psi|| for all psi orthogonal to its vacuum and all integers t >= 0.
+> (By A2 at the fixed cutoff, this is the same as clustering at rate c/l in physical units for some total set of
+> local positive-time functions, with any constants.)
+
+Then (R1) holds: (W) gives (PHYS-SEED) and (G1) (step 4), and Proposition P (c) with n_j = l/(2 a_j),
+ell_* = l/2, s_* = q'/5041 (`gap-dichotomy.md` L289-290) gives the corrected T_JW-lat with c = 2 log(1/q').
+A variant T_JW-lat+ that keeps the DLR states is a stronger statement, and (W) is not known to imply it.
+
+**(R2) HOLDS AFTER CORRECTION of the mechanism.** "By A2 (iii)" needs constants C_F uniform in the cutoff for
+the lattice versions of each continuum observable. The file says this fails for the natural constants:
+`gap-seed-limit.md` L198, "The sup norms in (b) are useless for renormalized observables". The working route is
+the one on file: the operator bound at each cutoff (which A2 gives at fixed j, with no uniformity in C_F), then
+Proposition P' (`gap-seed-limit.md` L200) with M_* replaced by c/l. P' uses only the operator bound, through the
+positive-time functions of (H2) (for t >= t_0 > 0: <psi, T^t psi> <= e^(-(c/l)(t - t_0) a_j) <psi, T^(t_0) psi>,
+whose right side converges under (H2)). Conclusion: given T0's continuum datum with (P1)-(P4), (H2) for the
+limit states that T_JW-lat covers, and (TOT), the datum has a unique vacuum and spec(H) in {0} union
+[c/l, infinity). Corrected text of the parenthesis: "(T_JW-lat with T0's datum, (H2) and (TOT) gives T_JW by
+A2 at each cutoff and Proposition P' with M_* replaced by c/l.)"
+
+**Does T_JW-lat give the Jaffe-Witten gap for the lattice route?** As an implication, yes, in the same sense as
+(W) does and no more: (i) only given T0's datum, (H2) and (TOT), which nobody supplies (`gap-dichotomy.md`
+L210-211; check 723: "P' additionally needs the continuum datum, positive-time convergence and totality");
+(ii) the gap is on the Hilbert space of that datum. JW's clause is on all of Omega-perp of the theory with all
+local gauge-invariant fields. T0's observable class is the tr(F^2) sector (`gap-seed-limit.md` L204 (4)), so
+(TOT) for a class that generates every local gauge-invariant field is a further input (row 1052 marks this as
+its assumption a3, L284). (iii) (H2) must hold for the states T_JW-lat covers, so T0's lattice states must be
+limit states of admissible cubic tori; for the account's tori of side 2 L^m this is open
+(`gap-seed-limit.md` L204 (5); `gap-dichotomy.md` L107-109). None of (i)-(iii) distinguishes T_JW-lat from (W).
+
+**"This is the lane's (G2)-(G3) with (G2) taken as the hypothesis": HOLDS for the corrected class.** The
+corrected T_JW-lat is Proposition P (c) with M_* replaced by c/l, i.e. (G2) as a hypothesis. So the gap leg
+(G2) -> (G3) consumes exactly T_JW-lat; (W) enters the gap leg only through it.
+
+**Verdict on T_JW-lat (6b): HOLDS AFTER CORRECTION.** Fix the state class as above (else (R1) is unproved), and
+cite P', not A2 (iii) with cutoff-uniform constants, for (R2).
+
+## Step 6. Sections 6c and 6d
+
+Read for this step: row 1052 L491-528; `parts/gap.md` L28-31, L44-50, L66-70, L199-221 (test table and
+definitions T_fix, T_W, T_per, T_ev at L211-212); `library/gap-crux-exercise2-max.md` L428, L436, L552 (Z_2
+above 2.191); `library/gap-crux-exercise2-check-astra.md` L227-259 (check 884: the Q_8, 2T witness).
+
+### 6c
+
+**The elementary fact (L508): "a flat lattice gauge field on a simply connected lattice region is a pure
+gauge". The statement HOLDS; the proof FAILS as written for non-abelian groups and HOLDS AFTER CORRECTION.**
+First failing line: L508, "because each non-tree link closes a cycle that is a product of plaquette boundaries
+on Z^4 (H_1 of the 2-skeleton of Z^4 vanishes)". H_1 = 0 says that each cycle is a sum of plaquette boundaries
+in the abelian group of 1-chains. For a non-abelian group (Q_8, 2T, SU(2)) that is not enough: holonomy is a
+homomorphism from the fundamental group of the 2-complex, so one needs each fundamental cycle to be a product of
+conjugates of plaquette loops, i.e. pi_1 of the 2-skeleton = 1 (true: it equals pi_1(R^4) by cellular
+approximation, but that is a citation, not a hand step). Q_8 and 2T are exactly the cases 6c applies the fact to.
+Corrected proof, by hand, any group G, written so that it can be formalized:
+
+> **Lemma FLAT.** Let Lambda be Z^4 or a box [0, n_1] x ... x [0, n_4] of Z^4 with its links and plaquettes, and
+> let U give each link (x, mu) an element U_(x,mu) of a group G, with every plaquette holonomy
+> U_(x,mu) U_(x+e_mu,nu) U_(x+e_nu,mu)^(-1) U_(x,nu)^(-1) = 1. Then there is g: Lambda -> G with
+> U_(x,mu) = g_x g_(x+e_mu)^(-1) for every link.
+>
+> Proof (complete axial gauge). For x in Lambda let P_x be the lattice path from 0 to x that moves first along
+> direction 1, then 2, then 3, then 4, and h_x the ordered product of U along P_x (an inverse for each step
+> against a link's orientation). Claim: h_x U_(x,mu) = h_(x+e_mu) for every link (x, mu) of Lambda. Prove it for
+> mu = 4, 3, 2, 1 in this order. If (x, mu) lies on the path P_(x+e_mu) (for mu = 4 always; for mu < 4 when
+> x_nu = 0 for all nu > mu), the claim is the definition of h. Otherwise let nu > mu be the largest direction with
+> x_nu != 0, say x_nu > 0 (x_nu < 0 is the same with the plaquette at x), and y = x - e_nu. Flatness of the
+> (mu, nu)-plaquette at y gives U_(x,mu) = U_(y,nu)^(-1) U_(y,mu) U_(y+e_mu,nu). The claim for the nu-links
+> (y, nu) and (y + e_mu, nu) is known (nu > mu was done first), and the claim for (y, mu) holds by induction on
+> |x_nu|. So h_x U_(x,mu) = h_x U_(y,nu)^(-1) U_(y,mu) U_(y+e_mu,nu) = h_y U_(y,mu) U_(y+e_mu,nu)
+> = h_(y+e_mu) U_(y+e_mu,nu) = h_(x+e_mu). Put g_x := h_x^(-1). QED. No step commutes two elements of G.
+
+For a finite box only plaquettes inside the box are used (y_nu = x_nu - 1 >= 0), so free boundary is allowed,
+as L508 says. Consequence used by 6c, checked: in a frozen model (all plaquettes 1) every gauge-invariant
+function of the links of a box takes its value at the trivial field. On a torus whose side exceeds the width
+of the support, the support lies in such a box, so every local gauge-invariant function is a.s. constant in every
+torus state, every limit state is the point mass at the trivial field on local functions, and both the original
+and the corrected T_JW-lat (step 5) hold trivially (the OS space is C Omega). So the frozen models are positive
+controls of T_JW-lat, as 6c says.
+
+**The table's T_JW-lat column: HOLDS, with three wording corrections.**
+
+1. "bind exactly the statements made on periodic tori with all (or all centre-even) sectors" (L508): "exactly"
+   should be "only". The binding comes from flat classes around non-contractible cycles. It reaches every
+   statement made on a region with such cycles and with those sectors kept (periodic tori, and the spatially
+   periodic cylinders L^3 x Z that `gap-seed-limit.md` L118 also uses), and no statement about local functions
+   in limit states or on simply connected boxes.
+2. Frozen Q_8, 2T row (L500): the extra centre-even flat states come from commuting holonomy **triples** with a
+   non-central entry, e.g. (i, 1, 1) against (1, 1, 1) (check 884, L235), not "pairs".
+3. Frozen Z_2 row (L499): the lane's theorem-grade Z_2 test is at beta above 2.191, not at beta = infinity
+   (`parts/gap.md` L220; `gap-crux-exercise2-max.md` L428). At finite beta the flat-field lemma does not apply.
+   There "T_JW-lat true" rests on the recalled weak-coupling decay theorem for finite groups (I16: Adhikari and
+   Cao; the Chatterjee 2020 paper named in the row is about Wilson loops). The verdict "does not bind" stands,
+   with that input marked recalled.
+
+The other rows of the T_JW-lat column check out against the definitions: compact U(1), the free photon and the
+products with a massless factor have power-law or massless decay in every limit state, so T_JW-lat fails there
+and they bind; for Proposition NP, the ordered Ising factor makes the torus limit state the symmetric mixture of
+the two phases, which does not cluster, so NP binds T_JW-lat too (the row says "yes for T_JW"; the same holds for
+T_JW-lat); D2, SUB, SHEET are false hypothesis forms and bind whatever the target.
+
+**Credit, found again.** The scoping itself was on file before row 1052: check 884 (gpt-6-astra,
+`gap-crux-exercise2-check-astra.md` L231): "A local mass gap does not imply every finite-volume seed, especially
+a trace seed counting all topological states. Thus the test for a confinement conclusion is not automatically a
+test for a local mass gap. This part of the narrowing HOLDS." Row 1052 credits row 838 item 94 and the test table.
+What it adds is the topological reason, now with the corrected proof.
+
+**Verdict 6c: HOLDS AFTER CORRECTION** (proof of the flat lemma; three wording repairs). No binding claim changes.
+
+### 6d
+
+Checked: whether any verdict on the lane's lists rests **only** on a frozen-group test. Bounded search:
+`grep` of `parts/gap.md` (258 lines) for "frozen", "Q_8", "2T", "FG". Hits: L30, L49, L70, L151, L201, L207,
+L220-221. None of them is the sole kill of a method. L70 and L201 are the re-judged filter "Q_8, 2T bind T_per
+only", which check 884 struck as a blanket exemption for ES (an even-sector torus statement); that strike stands
+for torus statements, and 6c does not touch it. Exercise 4 input 2 (Fact T) is killed by FG at the flux half,
+which T_JW-lat does not need: moot, as row 1052 says. Rows 1004-1050 were not opened by row 1052 or by me; on
+`parts/gap.md` L136-150 none of their kills is a frozen-group test.
+
+**Verdict 6d: HOLDS (as a statement about verdicts on the methods as they were stated).** A method killed at a
+torus statement stays killed there; whether it can be re-aimed at a simply connected or infinite-volume statement
+is a new route, not a re-judged verdict, and this check makes no attack.
+
+**One consequence row 1052 does not list (for its work item W2).** Two lane filters name the frozen groups as
+models a selective step must fail in: `parts/gap.md` L30 (comparison cases "frozen Q_8 and 2T") and L48-49
+((K-flow): "a step that fails for U(1), for frozen groups and for products with a massless factor"). For a
+T_JW-lat target the frozen groups drop out of both lists (they become positive controls). W2 names only the
+test-table row; if the lead adopts it, L30 and L49 need the same note.
+
+## Step 7. The Reading (row 1052 L563, repeated at L588, L611, L621 and in the RESULT line)
+
+Read for this step: row 1052 L563-565; `parts/gap.md` L17-24 (the lane's target is the wall (W)) and L169
+(registry column "Strength against the target"); `gap-phys-seed.md` L328; `gap-crux-exercise2-max.md` L428;
+FINISH L947 (only the clause on the Peierls test).
+
+The Reading has five parts. Verdict for each.
+
+**R1. "(W) implies the flux bound" (marked argued).** This is FLUX-W (d). HOLDS (step 4, with the wording
+correction). The mark can read: proved by hand from Theorem ZD-c with CR (row 720, check row 730), Corollary
+S3' (rows 697-699) and (S0); checked line by line by Claude Opus 5.5 (this row, same provider); cross-provider
+check pending (row 1055).
+
+**R2. "(d) is a statement that the centre one-form symmetry stays unbroken on large spatial tori".**
+HOLDS AFTER CORRECTION (wording). (d) is a uniform positive lower bound on the flux-sector levels. The usual
+meaning of an unbroken centre symmetry is the area law, which makes E_e(L) grow like sigma L. (d) asks much less;
+the file says so for (Z-UNB) (`gap-phys-seed.md` L328: "The flux part is far weaker than an area law: it asks
+that the flux energy is not of the order of 1/L"). (d) excludes flux sectors that become degenerate with the
+vacuum (E_e -> 0). It is "unbroken centre" only under the physics reading that a gapped phase either confines or
+has degenerate flux sectors. Suggested words: "(d) says the electric flux sectors of large periodic cubes stay a
+fixed physical gap above the vacuum: a non-degeneracy of the flux sectors, implied by the area law and much
+weaker than it."
+
+**R3. The separating example: "a Z_2 topologically ordered phase ... would satisfy T_JW and violate (d), hence
+(W)", marked "recalled, not built".** HOLDS AFTER CORRECTION.
+(i) It is an example in another model (Z_2 at fixed large beta). That model has no continuum limit, so it
+can only satisfy the lattice form: T_JW-lat at one fixed coupling (the constant sequence), not T_JW. It
+separates the logical forms of the two statements on the class of reflection-positive lattice gauge models with
+(TM). It says nothing about Wilson SU(2) on the account's trajectory.
+(ii) The torus half is on file, not only believed. The lane records "the periodic seed" as failing for Z_2
+above beta = 2.191 as THM (Peierls; `gap-crux-exercise2-max.md` L428, which cites FINISH L947; `parts/gap.md`
+L220, "T_per only"). I did not re-derive that Peierls proof; FINISH L947 describes it as refuting "an
+environment-uniform conditional bound (proof valid for beta above 2.191)". So the mark should read: torus half
+lane THM as recorded (not re-derived here); infinite-volume half recalled THM (I16, Adhikari and Cao).
+(iii) A completely hand-checked separation of the forms exists only at the frozen end (beta = infinity). The
+eight flat Z_2 sectors of the periodic cube are exactly degenerate there, so every periodic seed fails, and
+Lemma FLAT (step 6) makes every limit state trivial on local functions, so T_JW-lat holds. That model is trivial
+and has no simple top eigenvalue, so it separates only the forms, and only at the boundary of the class.
+
+**R4. "So, relative to what is proved, (W) is the JW gap plus an unbroken-centre (confinement-type) statement
+on tori"; RESULT line: "(W) = the Clay gap plus an unbroken-centre statement on tori".** FAILS as an identity.
+HOLDS AFTER CORRECTION as a one-way statement. First failing line: L563, the bold sentence. What is proved is one
+direction: (W) implies the corrected T_JW-lat (step 5, through (G2)) and the flux bound (d) (step 4). The
+converse, T_JW-lat (or T_JW) together with (d) implies (W), is not proved. It needs at least:
+(a) a finite-size step, from a clustering rate of infinite-volume limit states and a flux bound to a uniform gap
+of every large periodic cube in the even sector. On file this is the open direction: row 838 item 52 ("a gap
+alone is not shown to give one [a seed]") and check 884 L231 ("A local mass gap does not imply every
+finite-volume seed").
+(b) (BDD-Delta), a bounded Casimir free energy on physical sizes, which (W) contains (Theorem ZD-c) and neither
+T_JW-lat nor (d) mentions (row 1052's own S5, L464).
+(c) For T_JW in place of T_JW-lat: uniformity on every lattice of the sequence (S2, L461), also open.
+So the flux clause is one identified part of the excess of (W) over T_JW-lat, not shown to be the whole excess.
+L565 "weaker than (W) ... by exactly the flux clause" has the same defect: "exactly" must go. Corrected text for
+L563: "So (W) implies T_JW-lat (for limit states of periodic cubes, through (G2)) and the flux bound (d); the
+converse is open (finite-size step, (BDD-Delta)). The flux bound is one identified part of what (W) asks beyond
+the JW gap; on the class of lattice gauge models it is a real part, by Z_2 above 2.191; for SU(2) no separation
+is known or believed (B4)."
+
+**R5. "The lane's registry 'strength against the target' column measures against (W), not against T_JW".**
+HOLDS. `parts/gap.md` L17-24 states the lane's target as (W) itself, and the registry column (L169) is read
+against that target.
+
+**Verdict on the Reading: HOLDS AFTER CORRECTION.** One direction is proved, as the author marks it. The bold
+identity and "exactly" overstate it. The separating example is better supported than the file says (the torus
+half is lane THM), but it lives on the class of models, not on SU(2).

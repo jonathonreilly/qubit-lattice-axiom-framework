@@ -78,3 +78,40 @@ where used.
   for O odd under each tau_i; (T-vor) open half O2: (SER) xi(Sigma_2l, D) <= kappa xi(Sigma_l, D), (SPR)
   xi(Sigma, D_2l) <= phi xi(Sigma, D_l), kappa phi < 1; Lemma PAR holds verbatim in frozen Z_2, Q_8, 2T and in five
   dimensions.
+- 00:09Z primary sources fetched once into /tmp/row1025-lit (one folder each; PyMuPDF text; nothing executed) and read at
+  the pages named in 1.2: Tomboulis 0707.2179v1; Ito and Seiler 0711.4930v1 (in full), 0803.3019v1; PoS
+  Confinement8 020. Step 1 done. Step 2 next.
+
+## 1. Step 1 result: what was read, what is pinned
+
+### 1.1 Header in the form the exercise skill asks
+
+Writer: Claude Fable 5.2 (Anthropic), max effort, Mac mini worker 1, one session, no subagents. Commit fe79776a6.
+Date 2026-11-15/16. **Nothing in this file is checked by another model.** This is a standalone proof target, so
+`GOAL.md` and the FINISH rules replace the skill's framework refresher read (the skill allows this and asks that
+it is said). The row's brief names the files to read first, so the skill's "closed list" is empty here: the brief
+wins. The wall has had five exercises (rows 878, 998, 1003, 1011, 1017); by skill step 0 their inventory,
+assumption tables and set-aside lists are reused, not rewritten. This row runs the skill on one combination.
+
+What this run did not cover is listed in Section 9.4.
+
+### 1.2 Sources, with how each was read
+
+| Source | Read | Used for |
+|---|---|---|
+| `parts/gap.md` (lead, 2026-11-15) | in full | the wall (W), lead rule W2, test table, registry |
+| `library/gap-tomboulis-read.md` (row 797, gpt-6-astra) | in full | the reading of Tomboulis, Kanazawa, Ito and Seiler |
+| `library/gap-tomboulis-check-opus.md` (row 799) | in full | B2 (bracket form), B5 (the 2008 sign is a convention) |
+| `library/gap-kanazawa-astra.md` (row 800, gpt-6-astra) | in full | (K1)-(K8), (K17), (K21), (K-RESP) |
+| `library/gap-compact-rigidity-max.md` (row 1017) | L1-480 | Theorems CE, CR, Propositions OM, NR, SI, Lemma PT-inf |
+| `library/gap-compact-rigidity-check-opus.md` (row 1019) | L145-256 (Steps 6-8, RESULT) | repairs D2, D4, D14 |
+| `library/gap-short-step-max.md` (row 1018) | L70-212, L289-305, L389-443 | Lemma PAR, Corollary MP, (T-vor), (SER), (SPR) |
+| `library/gap-short-step-check-opus.md` (row 1022) | headings and RESULT | no WRONG on PAR, MP |
+| E. T. Tomboulis, arXiv:0707.2179v1 | pp. 7-8, 10, 12-14, 24-28, 43-46 (text layer) | (2.18)-(2.22), (3.12)-(3.29), (5.1)-(5.24), Appendix C |
+| K. R. Ito and E. Seiler, arXiv:0711.4930v1 | in full (10 pp.) | Claim 2.1, Theorem 2.1 (flow at r = 1), (3.1)-(3.11) |
+| K. R. Ito and E. Seiler, arXiv:0803.3019v1 | pp. 6-7, 12-16 | Theorem 2.2, Problems 1-3, Section 3.3 |
+| E. T. Tomboulis, PoS(Confinement8)020 | pp. 6-9 | (4.2)-(4.13), the 2008 repair |
+| T. Kanazawa, arXiv:0805.2742v3 | fetched; not re-read (rows 797, 799, 800 read it) | - |
+| G. Mack and V. B. Petkova, Ann. Phys. 125 (1980) 117 | not fetched; as rebuilt in row 1018 7.4 and confirmed by check 1022 | Corollary MP |
+| Sussman and Alpoge's account (with Claude and Codex as authors of their text) | not opened in this row: rows 797 and 800 searched its index for Tomboulis, Migdal-Kadanoff, Kanazawa and found no entry | - |
+

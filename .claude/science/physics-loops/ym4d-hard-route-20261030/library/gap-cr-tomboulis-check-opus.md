@@ -204,3 +204,141 @@ Verdict: **Lemma FAC HOLDS; T3 passes, HOLDS AFTER CORRECTION for the table cell
 for the U(1) factor"; no conclusion changes).
 
 - 00:43Z Step 3 done. Next: Step 4, Proposition BR against Tomboulis 0707.2179 and PoS(Confinement8)020 (W1.1).
+
+## 4. Step 4 result: Proposition BR against the sources (W1.1), and Estimate RATE
+
+Sources fetched by this check into its own scratch folder (`/tmp/row1029-lit`, PyMuPDF text layer, nothing executed):
+Tomboulis arXiv:0707.2179v1 (T) pp. 7-8, 11-14, 22-30, 43-45; Tomboulis PoS(Confinement8)020 pp. 6-8. Quotes are short.
+
+**Reading of the definitions (L162-186).** T (2.19)-(2.22) p. 8: c_j(n) = chat_j(n)^(b^2 r), F_0(n) = Fhat_0(n)^(b^2),
+Fhat_j = integral of f(U, n - 1)^zeta chi_j/d_j, zeta = b^(d-2) by (2.17). Matches L165. T (3.9) p. 11 allows c^L_j(n) = 0,
+"a restatement of (2.14)"; with it T (3.12) is ctilde = w(alpha) c^U, as row 1025 uses. T (3.16), (3.19): the bulk
+factor is (F_0^U)^(h(alpha, t) |Lambda(m)|), |Lambda(m)| = number of plaquettes (T p. 35, "Let |Lambda(n)| denote the
+number of plaquettes"). (3.22)-(3.24) existence and uniqueness of the level alpha(t); (3.25)-(3.27) alpha_t = v > 0.
+The lane's (I) (L181-188) is a faithful reading.
+
+**W1.1, first part: G^+ is strictly increasing.** T IV.5 (4.16), p. 22: "ln Z^+_(Lambda(m))({ctilde_j(m, alpha, r)}) and
+ln Ztilde^+_(Lambda(m))(beta, h, alpha, t, r) are increasing functions of alpha: d ln Z^+/d alpha > 0". G^+(alpha) of
+L262 is ln Ztilde^+ at fixed t. So G^+ is strictly increasing on (0, 1) (strict by (4.16)). HOLDS.
+
+**W1.1, second part: the quotient of the two fine numbers is Q of the Wilson model.** The fine numbers at step n are
+Z_(Lambda(n-1)) and Z^+_(Lambda(n-1)) of T (5.19)-(5.20). T (5.9) chooses t_m, t_m^+ at every step m < n so that the
+bulk factors agree, and then (5.10) p. 26 reads (1 + Z^(-)_Lambda/Z_Lambda) = 2 Ztilde^+_(Lambda(n))(alpha^+(t^+), t^+)/
+Ztilde_(Lambda(n))(alpha(t), t) = 2 Z^+_(Lambda(n-1))/Z_(Lambda(n-1)). With Z^+ = (Z + Z^(-))/2 (T (5.1)) this is
+Z^+_(Lambda(n-1))/Z_(Lambda(n-1)) = Q(Lambda). HOLDS, given T's claim that (5.9) can be met at each step ("clearly
+always possible by (3.32) and (4.25), and by (5.6)", p. 25; PoS (4.3)-(4.5) adds the condition alpha <= 1 - delta,
+the reason for r_m < 1). This claim is used only by BR (a)-(b); BR (c)-(d) do not use it.
+
+**BR (a)-(d) (L233-248, proof L262-273).** (a): G^+(alpha^+(t)) = log Z^+_fine and G^+(alpha(t)) = log Z_fine +
+log Q_c(alpha(t)) by the two level equations; subtract; strict monotonicity gives the sign. HOLDS. (b): both
+directions follow from (a); I_h is an interval since alpha(.) is continuous (T (3.25)). HOLDS. (c): rho_c is
+continuous on [0, 1], rho_c(0) = 1 (c^L = 0), rho_c <= 1 (T IV.1, (5.3)), so its range is [min rho_c, 1] and
+rho_f <= 1; the IVT gives the claim; (TB)_n gives min rho_c <= rho_c(1) <= rho_f. With (5.24), (5.23) with c^L = 0 is
+"1 >= rho_f >= rho_c(1)", which is (TB)_n. HOLDS. Note: (TB)_n is literally T's (5.22) (p. 27), which T derives from
+(5.17) at the matching point and (5.16); T's own Appendix C §2 (pp. 44-45, (C.14)-(C.15)) reaches (5.23) from the
+assumption "there is t_I with alpha(t_I) < alpha^+(t_I)" and says "One way to complete it would be to show that, for
+some interpolation h, there is at least one value t_I such that alpha(t_I) < alpha^+(t_I)". By BR (a) that
+assumption is rho_f > rho_c(alpha(t_I)), a bracket at an interior point. This confirms BR's reading from the source.
+(d): T's Section 6 consumes V.1 in the form (6.5) p. 29, "exp(-F^(-)_Lambda) = Z^(-)_(Lambda(n))({ctilde(n, alpha*)})/
+Z_(Lambda(n))({ctilde(n, alpha*)})", evaluated "within a convergent strong coupling polymer expansion". The
+existence form of (5.17) supplies such an alpha* in [0, 1] with ctilde(alpha*) <= c^U(n). So (O-flow) and (TB)_n give
+what Section 6 uses. HOLDS. The paraphrase at L272 ("T's use ... is rho_f >= rho(Lambda(n); c^U(n)) and the
+expansion at c^U(n)") is (5.22), not (6.5); both are supplied by (TB)_n, so nothing changes.
+
+Caveat on (d) (not a defect of BR's logic). "With r = 1 the flow is Ito's theorem" (L246-247, and the RESULT line)
+drops row 1025's own caution at L200-203: the quoted theorem is coefficient by coefficient, and the norm form
+||c^U(n)|| <= eps_SC that (O-flow) needs was not checked. So "(TB)_n is the line's only open obligation beyond its
+cited inputs" holds with (O-flow) in norm form counted as a cited input whose form is unverified.
+
+**BR (e) and the W1 judgement on L259.** PoS p. 7 (4.8)-(4.9): the system (4.9) is the two level equations at one
+(alpha, t), that is (O-match)_n. PoS p. 8: Meyer's monotone iteration under (i) F(x_0) < 0, (ii) [1 + lam F_x]^(-1) >= 0
+on D, bounded D with "at least one component of F ... positive on dD"; "the above conditions are satisfied ... for n
+large enough and appropriate choice of ... h" is asserted, not shown. PoS p. 7: the chain "[Z^(-)/Z]_(alpha=0) >
+Z^(-)_Lambda/Z_Lambda > [Z^(-)/Z]_(alpha=1)" is "seen numerically to hold". So (e)'s reading of the source is right,
+and its right-hand inequality is (TB)_n. But the sentence "So a trapping domain exists for some admissible h exactly
+when the bracket holds on its alpha-range: **the trapping domain and the endpoint bracket are the same statement**"
+(L257-259) claims an equivalence of which only one direction is proved:
+- proved: a solution of (4.9) in D (which Meyer's theorem gives from a trapping domain) puts Q_f in Q_c of the
+  alpha-range of D (BR (b)); with (5.24) this gives (TB)_n;
+- proved: (TB)_n gives the consumed (4.12) = (5.17) in existence form, with no domain and no iteration (BR (c));
+- not proved: that the bracket gives a domain with Meyer's hypotheses (i)-(iii), or even a solution of (4.9). A root
+  alpha* of Q_c = Q_f solves (4.9) only if alpha* lies on the level curve, alpha* = alpha(t*) for some admissible h
+  and t*; with h in [0, 1] that needs Z_c(alpha*) <= Z_fine <= (F_0^U)^(|Lambda'|) Z_c(alpha*), which nothing above
+  shows. (Tomboulis's own sentence "by (4.7), is equivalent to a solution of (4.9)", PoS p. 7, skips the same point.)
+**Verdict on L259: HOLDS AFTER CORRECTION.** Replace "a trapping domain exists for some admissible h exactly when the
+bracket holds on its alpha-range: the trapping domain and the endpoint bracket are the same statement" by "a trapping
+domain implies the bracket on its alpha-range, and the bracket alone gives the consumed representation (4.12); so
+for the line's conclusion the trapping domain carries no content beyond (TB)_n". Every use of (e) in row 1025
+(5.1 L416, 8.5 L885-886, RESULT) needs only this one-way form; no conclusion changes.
+
+**Proposition BR, verdict: HOLDS (a)-(d); (e) HOLDS AFTER CORRECTION (wording, above).**
+
+**Estimate RATE (L353-369), marked ARGUED.** Arithmetic re-done: log(psi/sin psi) = psi^2/6 + O(psi^4); with
+beta = 1/(2 tau), 1/(2 tauhat) = zeta beta - (zeta - 1)/3, beta' = (zeta beta - (zeta - 1)/3)/(b^2 r). d = 4 (zeta = b^2):
+beta' = beta/r - (b^2 - 1)/(3 b^2 r); b = 2, r = 1: drop 1/4. d = 5 (zeta = b^3): beta' = (b/r) beta - (b^3 - 1)/(3 b^2 r).
+One loop: Delta beta per doubling = 8 beta_0 log 2 with beta_0 = 11/(24 pi^2), = (11/(3 pi^2)) log 2 = 0.2575;
+log b/Delta_b = 3 b^2 log b/(b^2 - 1) = 2.773 (b = 2), 3.708 (b = 3) against 3 pi^2/11 = 2.692; beta_c(r) =
+(b^2 - 1)/(3 b^2 (1 - r)) = 2.5 at b = 2, r = 0.9; d = 5 threshold (b^2 + b + 1)/(3 b^2). All numbers agree. The mark
+ARGUED is right: the small-angle step is not controlled at couplings of order one, as row 1025 says.
+
+- 00:47Z Step 4 done. Next: Step 5, Identity MIS, Proposition RS (W1.7) and Corollary EVEN against row 1017.
+
+## 5. Step 5 result: Identity MIS, Proposition RS (W1.7), Corollary EVEN, and the FAILS on Question 2
+
+Inputs read for this step: `gap-compact-rigidity-max.md` (row 1017) L140-200 (rescaling, admissible sequence (H1),
+(H2), Lemma UF, Theorem CE with proof). Lane conventions used: F = log Z, f = inf F/|n|, Delta = F - f |n| (row 998
+Lemma PT (a) L703-708; row 1017 L140).
+
+**Identity MIS (L424-432).** At one step (fine torus b n, coarse torus n, 6 |n| coarse plaquettes, T p. 35 for the
+count) the level equation reads F_A(b n) = 6 |n| h(alpha_n, t) log F_0^U + F_B(n; alpha_n). Subtracting
+b^4 f_A |n| and f_B(alpha_n) |n| gives the identity. HOLDS (it is a rewriting). Consequences (a)-(c) (L434-440):
+(a) a common alpha_inf on tori of unbounded volume with bounded Delta forces G(alpha_inf) = b^4 f_A, then
+Delta_A(b n) = Delta_B(n; alpha_inf); (b) is BR (b); (c) O(1/|n|) in alpha is O(1) in Delta. All follow. HOLDS.
+
+**Proposition RS (L471-489).** (i): for fixed m and large i, side/2^(n_(j_i)) = u_0 2^(q_i + m) is an integer >= 3
+(u_0 >= 3, q_i + m >= 0), so (TB) and the coarse bound give u <= g(u_0 2^(q_i + m)) -> 0; by Theorem CE (e) u_E(2^m) is the
+limit of these numbers. HOLDS. (ii): the quotient u_0 2^(q_i + m) drops below 3, and (DEC-traj) speaks only of cubes
+with an integer quotient >= 3. HOLDS. (iii) first part: q_i >= k_i - sup(n_j - e_j) -> infinity. HOLDS.
+
+**W1.7, (iii) second part.** In the proof of Theorem CE (i)(b) (row 1017 L180), k_i = 2 i + i_0 and j_i is any
+member of the Lemma-UF subsequence J with j_i > j_(i-1), l*_(j_i) > 2^(k_i + i), and D_(j_i)(2^(k_i+m) u_(j_i)) <= D_0 + 1/i
+for |m| <= i. Each condition holds for all large j in J (l*_j -> infinity along J; (BDD-Delta) from L_0 on). If
+n_j - e_j -> infinity, the extra condition n_j - e_j > k_i + i also holds for all large j, so j_i can meet all of them,
+and (H1), (H2) hold with i(m) = |m| exactly as before. Omega non-empty is the failure of (PHYS-SEED) (Proposition OM
+(b)), which is the hypothesis of CE (i)(b). Then q_i < -i. **Passes.** HOLDS.
+
+**The rate paragraph (L491-499), marked ARGUED.** log 2^(n_j) = (log 2/Delta_2) beta_j = 2.773 beta_j (Delta_2 = 1/4) or
+2.756 beta_j (0.2515); minus c_AF = 2.692 gives exp(0.064 beta_j) to exp(0.081 beta_j). Direction of the belief
+argument checked: (TB)_n gives sigma_true(beta) >= sigma_c 4^(-n_0(beta)) ~ exp(-2 beta log 2/Delta), and against
+sigma_true ~ exp(-2 c_AF beta) this needs Delta <= log 2/c_AF = 0.2575, a map no faster than the true flow. Right as
+ARGUED (it rests on Estimate RATE at large beta and on the scaling belief, as the text says).
+
+**Reading against Proposition SI (L501-507).** "It is kept exactly under (RATE)" (L504-505) is stronger than (iii):
+(iii) shows "kept" under (RATE) and "not kept" when n_j - e_j -> infinity. If sup(n_j - e_j) is infinite without
+divergence, or diverges only off the Lemma-UF subsequence J, neither part applies. Wording: replace "exactly under
+(RATE)" by "under (RATE), and not when n_j - e_j tends to infinity". The case the paragraph argues for is the second,
+so its conclusion stands. HOLDS AFTER CORRECTION (wording).
+
+**Corollary EVEN (L515-523).** At one coupling write u = u_0 2^0; e_j is constant, which is outside RS's stated setting
+(e_j -> infinity), but the proof of RS (i) applies word for word: q_i = k_i - n_0(beta) -> infinity. So every element of
+Omega^gr of that coupling has u_E = 0 on cubes for the planes (1, nu) of Theorem CE (e), and by the cubic symmetry for
+every plane. The equivalence: a seed at one size gives seeds at all larger sizes (Theorem S), so (H2) fails and Omega
+is empty; no seed at any size gives admissible sequences (CE (i)(a)); a non-empty compact invariant Omega has a
+uniformly recurrent element (OM (d)); every element of Omega lifts to Omega^gr (CE (e)), centre-even under H_DEC.
+HOLDS (GIVEN H_DEC, whose written implication includes the cited coarse expansion T (6.6)-(6.14)). The text's own
+remark "it does not need the limit: u tends to 0 directly" is right; EVEN is a restatement.
+
+**FAILS on Question 2 (5.1-5.5, L400-533).** The verdict "compactness supplies neither the parameter nor the trapping
+domain" HOLDS, and it has a valid-form support that the file does not state in 5.5: Theorem CE and Proposition OM
+are group-blind (they hold for every family of data with (TM); row 1017 3.3, and its Proposition NR uses the
+constants log m), while the parameter exists iff (TB)_n (BR (c)), and (TB)_1 fails for Z_2 at weak coupling
+(Proposition SIGN, proved by hand, no cited input) and for U(1) at large beta (given the cited theorems). So no
+implication "compactness of Omega gives the parameter" can be valid on a class that contains Z_2. 5.1's sentence
+"No compactness of a domain can turn that sign" is the same point said informally. 5.2's last paragraph (the
+SU(2) x SU(2) family, L450-454) is marked ARGUED and is only that: it needs (TB) for the first factor to fail by a
+margin smaller than the second factor's, which is not known.
+
+Verdicts, Step 5: **Identity MIS HOLDS. Proposition RS HOLDS (W1.7 passes). Corollary EVEN HOLDS (given H_DEC). The
+SI reading HOLDS AFTER CORRECTION (wording "exactly"). FAILS on Question 2 HOLDS.**
+
+- 00:50Z Step 5 done. Next: Step 6, Lemma PAR-T (W1.2), Proposition KR, the arithmetic of 6.3.

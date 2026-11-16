@@ -192,3 +192,113 @@ forces in this summed sense exists (OPEN)") is settled: such frames exist, on an
 Sentence L275 of row 1018, for the conserved-current half, is false. The first alternative of the row (no frame on
 an open set of positive measure) is not available as the general statement; whether some other open set has no
 frame is OPEN and was not found (0 failures in 6).
+
+### Step 7: the cost form and the consumer; what alignment gives and what it does not
+
+Numeric lock released at 2026-11-16T00:12Z (`date -u`); no further run.
+
+**7.1 The consumer and the cost form (PROVED; it is Lemma FLOW of row 1018 with Remark JAC).** Cell c, pin omega,
+boundary rotation B_l = theta_l n_tail(l) with n on the boundary a function of the pin, extended inside by
+V = theta n(U). Then H_c(omega; B) <= Q(theta) := - E[V Psi_V], and
+
+  Q(theta) = E sum_p beta w_p (t_p |delta_p(theta n)|^2 + kappa_p(theta n) . s_p)      (direct term, Proposition A)
+           + E sum_l theta_l (V n_tail(l)) . N_l                                          (the frame turns along the flow)
+           - E[ V sum_l theta_l d_l ]                                                     (Jacobian).
+
+Derivation: Psi_V = V A + div V, V A = X(theta n) = - sum theta_l j_l, and V(V A) is the second derivative of A along
+the fixed field plus X(V b). For theta = d lambda with lambda zero at the pinned sites, Q(d lambda) = E[Psi^2] and
+  Psi_(d lambda) = sum_z lambda_z rho_z,    rho_z = sum_(head z) (D_l n) . N_l + (div d)(z).
+Under (AF-1) the first part of rho is zero and **the gradient cost is the variance of the Jacobian current**:
+Q(d lambda) = E[(sum_z lambda_z (div d)(z))^2].
+
+**7.2 Alignment does not make the cost a curl form (PROVED on the cube).** In the cube frame of Step 4 the site
+110 has one outgoing link l, and n_110 may be any unit vector orthogonal to N_l: n = cos(alpha) a + sin(alpha) b
+with (a, b) a covariant orthonormal basis of the plane orthogonal to N_l and alpha any gauge-invariant function.
+Take alpha = alpha_0 + k t_p with p a plaquette through l and k real. On the surface t_p = 0 the frame does not
+depend on k, and d_l = d_l(k = 0) - k (- sin(alpha_0) a + cos(alpha_0) b) . sigma, where sigma is the gradient of t_p in
+the link l (s_p carried to the tail, up to sign). The incoming terms of (div d)(110) do not involve alpha. sigma is
+not parallel to N_l off a null set (N_l is a combination of two plaquette axes), so for a suitable alpha_0 the slope
+in k is not 0, and (div d)(110) is not 0 near that surface for all k but one. So every one of these frames
+satisfies (AF-1), and all but special choices have a non-zero cost on gradients. Conversely the plaquette frame of
+Step 3 has j - d conserved. So (AF-1) neither implies nor excludes a curl form: the Jacobian decides.
+This is the exact form of the "further point" of D2 in check 1022.
+
+**7.3 The condition that would be a repair, (SYM).** A gauge-covariant frame, defined off a null set, with
+ (J) rho_z = 0 almost surely at every free site (the current j - d conserved; equivalently every V_(d lambda)
+     preserves the measure e^A dU), and
+ (LOC) finite range: n_x depends on the links within distance r of x, with the same rule at every site.
+Why both (ARGUED, not a proof). Under (J), Q is a form in d theta (Remark JAC). By integration by parts
+Q(theta) = sum theta_l theta_l' q(l, l') with q(l, l') = E[n_tail(l) . grad_l (j - d)_l'], and under (LOC) q has finite
+range. A translation-invariant, positive, finite-range form that vanishes on gradients has a symbol q^(k) with
+q^(k) xi(k) = 0, hence q^(0) = 0 and q^(k) = O(|k|^2); that gives Q(theta) <= C sum_p (d theta)_p^2 with C of the order of
+the second moment of q. Without (LOC) the kernel can be long-range and the form can be the transverse projector,
+which is a mass term. The finite-volume form of the symbol argument was not written out.
+Count for (J) alone: at each U the aligned frames form a family of dimension V + 1 (GUIDE), and (J) is V - 1
+first-order differential equations on the choice within the family, so local solutions are not excluded by a
+count (ARGUED). Whether they can be local in the lattice is the open point.
+Relation to the lane: Lemma CEN (row 1011 4.3) says a field-independent link symmetry is central. (SYM) asks for
+a field-dependent one-parameter symmetry at each site that is not a gauge transformation (it is one exactly when
+D n = 0). exp(pi n) = -1 for every unit n, so a frame twist by pi is the central twist whatever the frame; that is
+why (SYM) would feed Lemma SPLIT's division for SU(2).
+
+**7.4 Sizes at order-one response (ARGUED).** For the frames of Theorem E and of the GUIDE run, n(U) solves a
+global linear system; no bound on d is available, and rho_z is expected of order one per site, as the projected
+term was in row 1018 4.5. So the count of 4.5 keeps its form for aligned frames: the gradient cost moves from the
+projected force to the Jacobian, with the same order (one per site against beta/l^2). What changes is the logic:
+that count is no longer backed by "no aligned frame exists", which is false.
+
+### Step 8: verdicts, credits, what is left
+
+Provenance: Claude Fable 5.2, medium effort, Mac mini worker 2, commit fe79776a6, one session, no subagents. One
+GUIDE job under the numeric lock (three short scripts in `/tmp/gap-aligned-frame-w2/`, not committed). Unchecked:
+no other provider has read this file. Step 7 of the plan (numeric) was run before Step 6 was written, as a guide.
+
+| Item | Statement | Mark |
+|---|---|---|
+| LIN | (AF-1) is: n on (S^2)^V orthogonal to PP(U), V - 1 linear equations | PROVED |
+| JAC | Psi_(theta n) = - sum theta_l (j_l - d_l); zero gradient cost iff j - d conserved a.s. | PROVED |
+| BACK | a frame that ignores the links with tail x has d = 0 | PROVED |
+| Step 3 | one plaquette: only the axis; Q = (d theta)^2 E[beta cos phi + 2/sin^2 phi] | PROVED |
+| Step 4 | one cube: n orthogonal to the outgoing forces, j = 0, on almost every (non-reducible) U | PROVED |
+| RANK | T_(f*) has kernel the constants on Z_L^4, L >= 3; f* = d* phi* | PROVED (control run agrees, L = 3, 4, 5) |
+| Theorem E | aligned frames on an open gauge-invariant set of positive Wilson measure, a.e. non-reducible | PROVED |
+| E, extent | aligned frames at almost every U of the 4D torus | OPEN (GUIDE: 6 of 6) |
+| E, selection | globally smooth covariant choice on GG | ARGUED |
+| "no frame on an open set" (first alternative of the row) | as a general statement | FAILS (Theorem E; cube) |
+| L275 of row 1018, current half ("only on reducible configurations") | | FAILS (false) |
+| 7.1 | cost form Q(theta) and its consumer Lemma FLOW | PROVED |
+| 7.2 | (AF-1) does not give a curl form; the Jacobian current decides | PROVED (cube) |
+| 7.3 | under (J) and (LOC), Q <= C sum (d theta)^2 | ARGUED |
+| (SYM) | a local covariant frame with j - d conserved, off reducible configurations | OPEN |
+| 7.4 | sizes: gradient cost of order one per site for the frames found | ARGUED |
+| route (ii) FAILS at one bare coupling (row 1018 4.5) | | stays ARGUED; its support is now 7.4 and the absence of (SYM), not non-existence of aligned frames |
+
+**Answer to the row.** The open statement has two halves and they come apart. An aligned frame in the sense of
+check 1022 (projected current conserved pathwise, D n not 0) exists on non-reducible configurations: constructed.
+Its cost is a curl form only if in addition the Jacobian current is conserved, which alignment does not give
+(7.2), and a curl bound at order-one response needs locality as well (7.3). No frame with (SYM) was constructed and
+none was excluded. So neither alternative of the row holds as written: the obstruction is not the non-existence of
+the frame, it is the Jacobian and the range of the frame.
+
+**Text repairs this implies (for the lead; no other file was edited).** Row 1018 L275: replace "Each exists exactly
+on reducible configurations only" by "a divisible twist exists exactly on reducible configurations (SPLIT); a
+pathwise conserved projected current exists on an open set of non-reducible configurations (row 1026, Theorem E),
+but its move is not divergence free and its gradient cost is the variance of the Jacobian current (row 1026 7.1)".
+`parts/gap.md` L137: the aligned frame is no longer "not excluded"; it exists, and the open item is (SYM).
+
+**Credits.** Lemmas FLOW, PROJ, FR+, SPLIT: row 1018 (Claude Fable 5.2). Lemma FR, Proposition A: row 1011. The
+point that a frame meeting the constraint is not divergence free: check 1022, D2 (Claude Opus 5.5). The idea of a
+unit colour field with a conserved abelian current is the abelian projection of 't Hooft and the decomposition of
+Cho and of Faddeev and Niemi, and its lattice forms by Kondo, Shibata and co-workers; these are RECALLED from
+memory, not fetched, not used in any proof here, and their reduction condition (minimise sum |D n|^2) is a
+different condition from (AF-1). The Sussman-Alpoge repository was not used: `library/sa-ledger.md` has no entry
+on colour frames or abelian projection (grep, 0 matches). No published source was used in a proof.
+
+**Not done.** No check by another provider. The finite-volume symbol argument of 7.3. Existence for almost every
+U. Any attack on (SYM): it is a new open statement; grep of `library/open-core.md` and the FINISH rows found no row
+that covers it, and it was not attacked here beyond the count in 7.3. A cell with pinned boundary was not treated
+separately (Theorem E is for the torus; the cube of Step 4 is free).
+
+- 2026-11-16T00:13Z (`date -u`): all steps written.
+
+RESULT: Row 1026. PROVED: an aligned frame (projected current conserved pathwise, D n not 0) exists on non-reducible configurations: on almost every configuration of one cube (n orthogonal to the outgoing forces, j = 0), and on an open gauge-invariant set of positive Wilson measure of the 4D torus Z_L^4, L >= 3 (Theorem E: implicit function theorem at an abelian point, with the hand-proved Lemma RANK for transversality); a GUIDE run found one at 6 of 6 typical 3^4 configurations. So the first alternative of the row and the conserved-current half of L275 of row 1018 FAIL. PROVED: the cost of such a frame is Lemma FLOW's Q(theta) with Psi = - sum theta_l (j_l - d_l); its gradient cost is the variance of the Jacobian current d, and alignment does not make it a curl form (cube example). ARGUED: a curl bound needs j - d conserved and a frame of finite range ((SYM)); sizes for the frames found stay of order one per site, so route (ii)'s FAILS stays ARGUED, now resting on that and not on non-existence. OPEN: (SYM), existence of a local covariant frame with j - d conserved; aligned frames at almost every configuration; a check by another provider.

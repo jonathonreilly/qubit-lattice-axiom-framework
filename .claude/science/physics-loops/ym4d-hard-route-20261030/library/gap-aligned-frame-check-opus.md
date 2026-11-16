@@ -42,11 +42,11 @@ Overlap (rule 0a). This row is a check, and no new lemma is attacked. Grep of `l
 - div V = sum_l theta_l sum_a R_(l,a) n^a_tail(l) = sum_l theta_l d_l, because each R_(l,a) is divergence free and theta does not depend on U.
 So Psi_(theta n) = - sum_l theta_l (j_l - d_l). Sign and normalisation agree with FLOW.
 
-**Independent test on one plaquette.** Here I use the explicit density of the class angle, not the general identity. Gauge U_1 = U_2 = U_3 = 1, U_p = g = exp(phi s^), with frame n = s^ (the axis), and V = e_1 theta on link 1. The flow e^(eps theta s^) g = exp((phi + eps theta) s^) moves phi at speed theta along the axis and fixes s^. The joint law of (phi, s^) under Haar and Wilson has density rho(phi) = e^(beta cos phi) sin^2 phi, times the uniform law on s^. A flow phi -> phi + theta t has Psi = theta (log rho)'(phi) = theta (- beta sin phi + 2 cot phi). The identity gives:
+**Independent test on one plaquette.** Here I use the explicit density of the class angle, not the general identity. Gauge U_1 = U_2 = U_3 = 1, U_p = g = exp(phi s^), with frame n = s^ (the axis), and theta = theta_1 on link 1 and 0 elsewhere. The flow e^(eps theta s^) g = exp((phi + eps theta) s^) moves phi at speed theta along the axis and fixes s^. The joint law of (phi, s^) under Haar and Wilson has density rho(phi) = e^(beta cos phi) sin^2 phi, times the uniform law on s^. A flow phi -> phi + theta t has Psi = theta (log rho)'(phi) = theta (- beta sin phi + 2 cot phi). The identity gives:
 - j_1 = s^ . N_1 = s^ . (beta s) = beta sin phi (N_1 = beta s, as the note's Step 3 says, rederived from Re(e^(eps b) g) = Re g - eps b . s).
 - d_1 = 2 cot phi. I computed it as the trace of the derivative of the axis map g -> s^ under g -> e^(eps e_a) g: delta s^ = eps (cot phi (e_a - (e_a . s^) s^) + e_a x s^), with trace 2 cot phi.
 - - theta (j_1 - d_1) = theta (- beta sin phi + 2 cot phi). This is the same function.
-On links 3 and 4 the trace is tr(Ad(g) M), with M = cot phi P_perp - J, P_perp the projector orthogonal to s^ and J = s^ x. Ad(g) rotates by 2 phi about s^, so tr(Ad(g) M) = 2 cos(2 phi) cot phi + 2 sin(2 phi) = 2 cot phi. So d = 2 cot phi (1, 1, -1, -1), as in note L81.
+On links 3 and 4 the variation enters as e^(- eps e_a) and through Ad(g), so d = - tr(Ad(g) M), with M = cot phi P_perp - J, P_perp the projector orthogonal to s^ and J = s^ x. Ad(g) = exp(2 phi J) rotates by 2 phi about s^, so tr(Ad(g) M) = 2 cos(2 phi) cot phi + 2 sin(2 phi) = 2 cot phi. So d = 2 cot phi (1, 1, -1, -1), as in note L81.
 
 **Normalisation of Q on one plaquette.** c := beta sin phi - 2 cot phi = - (log rho)'. Then E[c^2] = E[c'] = E[beta cos phi + 2 / sin^2 phi], by one integration by parts. The boundary term c rho = - rho' vanishes at 0 and at pi. So note L84 holds. Its two checks also hold: at beta = 0, 2 E[1/sin^2 phi] = 2 (pi / (pi/2)) = 4; at large beta, E[1/phi^2] = 1/sigma^2 = beta for the radius of a 3D Gaussian.
 
@@ -143,7 +143,7 @@ Consistency test: if s_r = 0, then n is proportional to s_p x s_q, and a direct 
 
 **The gradient cost of the corner frame is infinite.** Take lambda = indicator of site 100. Then Psi_(d lambda) = (div d)(100) = d_(100 -> 110) + d_(100 -> 101) - d_1.
 - The first two terms involve only n_100, which is singular only where the two outgoing forces at 100 are parallel.
-- Points of {N_1 parallel to N_2} that are off that set exist. Keep s_p, s_q, s_r parallel to e_3, and give (100; 2, 3) an axis with a part orthogonal to e_3 through the free link (110 -> 111). Then the two forces at 100 have cross product - beta^2 (s_p + s_q) x s', which is not 0. Near such points N_1 . s_r is still not 0, because that is an open condition.
+- Points of {N_1 parallel to N_2} that are off that set exist. Take U_(000 -> 100) = 1 and the values s_p = s_q = e_3/4, s_r = e_3/2 of the point above, and give (100; 2, 3) an axis with a part orthogonal to e_3 through the free link (110 -> 111). Then the two forces at 100 have cross product - beta^2 (s_p + s_q) x s', which is not 0. Near such points N_1 . s_r is still not 0, because that is an open condition.
 - So E[((div d)(100))^2] = + infinity.
 For this frame the "variance of the Jacobian current" of note 7.1 is infinite. The same holds for every frame of the 7.2 family, since they share n_000. Step 7 uses this.
 
@@ -156,7 +156,7 @@ So N_l = beta (d* sin da)_l e. HOLDS; the note's sign is "+" in these convention
 
 **(2) Choice of a.**
 - im d* = d*(im d + ker d*) = im(d* d): HOLDS, since 2-cochains = im d plus (im d)^perp, and (im d)^perp = ker d*.
-- f* lies in im d* by Lemma RANK (a), or by Step 4 (conserved, with zero flux). So a_0 exists.
+- f* lies in im d* by Lemma RANK (a), or by Step 4 above (conserved, with zero flux). So a_0 exists.
 - A (V - 1)-minor mm of T_f is homogeneous of degree V - 1 in f, because the entries of T_f are linear in f.
 - f(eps a_0) = beta eps f* + O(eps^3). So mm(f(eps a_0)) = (beta eps)^(V-1) (mm(f*) + O(eps^2)). The note writes O(eps^V); either form gives "not 0 for small eps > 0". HOLDS.
 
@@ -180,3 +180,114 @@ So N_l = beta (d* sin da)_l e. HOLDS; the note's sign is "+" in these convention
 - L189-192: aligned frames exist on an open set of positive measure, on almost every configuration of one cube, and at 6 of 6 GUIDE configurations; L275's current half is false. HOLDS.
 - L192-194 says the right thing about the first alternative of row 1026: "not available as the general statement; whether some other open set has no frame is OPEN".
 - **The table row L267 ("FAILS (Theorem E; cube)") and RESULT L304 ("So the first alternative of the row ... FAIL") overstate it.** That alternative asks for some open set of positive measure, of non-reducible configurations, with no aligned frame at any point. Theorem E exhibits one open set where frames exist. It does not make the configurations that carry frames dense in Z_L^4. So on Z_L^4 the first alternative is not refuted. It is OPEN, with GUIDE evidence against it (0 failures in 6). On the cube it is refuted, because frames exist almost everywhere. Corrected entry: "first alternative: refuted on one cube; OPEN on Z_L^4; its strong form (L275, current half) is false." **First failing line: L267, repeated at L304. Verdict: HOLDS AFTER CORRECTION; the note's own L192-194 is the correction.**
+
+### Step 7 (done): Remarks LIN, JAC, BACK; the link to Lemma FLOW (7.1); the cube example (7.2)
+
+**Remark LIN (L51-56): HOLDS.**
+- Sum over l of (d lambda)_l j_l = sum over x of n_x . P_x(lambda), since sum_l (lambda_tail - lambda_head) n_tail . N_l regroups by tail.
+- Constants give P = 0, so dim PP is at most V - 1, and dim K is at least 2V + 1.
+- The example K = {v_1 = 2 v_2} has no unit point.
+- "Missing (S^2)^V is open in K": the set of subspaces that meet a fixed compact set is closed.
+
+**Remark JAC (L58-68): HOLDS for smooth frames.**
+- The identity is Step 2.
+- With Psi_(d lambda) = - sum over z of lambda_z div(j - d)(z), the cost on gradients is zero for all lambda vanishing at pinned sites iff div(j - d) = 0 almost surely at every free site.
+- Under that condition, Q(theta + d lambda) = Q(theta). I checked the four terms of the bilinear expansion. Q(theta, d lambda) and Q(d lambda, d lambda) vanish because Psi_(d lambda) = 0. Q(d lambda, theta) = E[Psi_theta Psi_(d lambda)] = 0 by E[V_lambda f] = - E[f Psi_lambda]. Here d lambda = 0 on links between pinned sites, so V_lambda is an interior flow.
+- Precision: "a quadratic form in d theta" holds on a box cell, because there a closed 1-cochain vanishing on the boundary links is d lambda with lambda = 0 on the boundary sites. On a torus Q is a form on theta modulo gradients, and it can still see the 4 harmonic directions.
+- The closing remark (a transverse projector also vanishes on gradients, so vanishing on gradients is not yet a bound by beta sum (d theta)^2) is correct.
+
+**Remark BACK (L70-73): HOLDS.** The loop x -> x - mu -> x - mu - nu -> x - nu -> x uses the links (x - mu -> x), (x - mu - nu -> x - mu), (x - mu - nu -> x - nu), (x - nu -> x). None of them has tail x, so d_l = 0 on every link with tail x.
+
+**7.1, the consumer (L200-212).**
+- The decomposition of Q(theta) HOLDS. V(V A) is the second derivative of A along the fixed field plus X(V b). With Proposition A (i) this gives the direct term, + E sum theta_l (V n_tail) . N_l and - E[V sum theta_l d_l].
+- Q(d lambda) = E[Psi^2] for lambda zero at pinned sites: HOLDS (FLOW's last sentence).
+- Psi_(d lambda) = sum lambda_z rho_z with rho_z = sum over head z of (D_l n) . N_l + (div d)(z): HOLDS (rederived).
+- Under (AF-1) almost surely, Q(d lambda) = E[(sum lambda_z (div d)(z))^2]: HOLDS.
+
+**The link fails for the frames the note builds. Correction needed.** Lemma FLOW is proved for a smooth field b_l(U, omega) on the whole interior configuration space. Its proof uses the flow tau_s and the Liouville formula. 7.1 states no smoothness hypothesis. The RESULT applies it to "such a frame", meaning the aligned frames of Step 4 and Theorem E. Neither kind meets FLOW's hypothesis:
+- (i) **Theorem E's frames are local.** They are defined near the orbit of U_0 only. Any extension to all configurations is not aligned off GG, so "(AF-1) almost surely" fails, and the gradient cost keeps the projected term off GG.
+- (ii) **The cube's frames (j = 0) are singular.** For j = 0, n_000 = N_1 x N_2 / |N_1 x N_2| is forced up to sign and turns once around the codimension-2 set {N_1 parallel to N_2}. By Step 5, d_1 = - beta (N_1 . s_r)/|N_1 x N_2| and E[d_1^2] = + infinity. So Psi_theta is not in L^2 for theta = indicator of link 1. The gradient cost Q(d lambda) with lambda = indicator of site 100 is + infinity.
+- So for these frames FLOW's bound is either not available (i) or void (ii).
+- By contrast, the plaquette-axis frame of note Step 3 is singular only on {s = 0}, which has codimension 3. There d = 2 cot phi is in L^2, as the note checks.
+
+Corrected 7.1: "PROVED for a frame that is smooth on the interior configuration space, or singular only on a set across which integration by parts holds with Psi in L^2. The frames of Step 4 and Theorem E are not of this kind. The corner frame of the cube has infinite gradient cost." **Verdict 7.1: HOLDS AFTER CORRECTION. First failing line: L304 ("PROVED: the cost of such a frame is Lemma FLOW's Q(theta)"), with table row L269.**
+
+**7.2, alignment does not give a curl form (L214-224): HOLDS, and holds more strongly than stated.**
+- The family n_110 = cos(alpha) a + sin(alpha) b with alpha = alpha_0 + k t_p: on {t_p = 0} it does not depend on k. d_l changes there by +- k (- sin(alpha_0) a + cos(alpha_0) b) . sigma, where sigma is s_p carried to 110.
+- The incoming terms of (div d)(110) involve only n_100 and n_010, so they do not depend on alpha.
+- sigma is not parallel to N_l off a null set, since N_l = beta (sigma' + sigma'') comes from the two plaquettes (100; 2, 3) and (010; 1, 3) through l.
+- If (div d)(110) vanished identically for two values of k, the slope would vanish identically. So for all k but at most one it is not identically 0, hence non-zero on an open set by continuity, and Q(d delta_110) > 0. Each step HOLDS.
+- Stronger: every frame of this family shares n_000, so by Step 5 every one has infinite gradient cost at site 100. The k-argument is right, but it is not needed for the conclusion.
+- "Conversely the plaquette frame of Step 3 has j - d conserved": HOLDS (Step 2: j - d = c (1, 1, -1, -1), and its divergence is 0 at all four sites).
+- "(AF-1) neither implies nor excludes a curl form": HOLDS. The "excludes" half is shown only on a reducible example (one plaquette).
+
+### Step 8 (done): the ARGUED (SYM) step, 7.4, the text repairs, verdicts
+
+**(SYM) (7.3, L226-242). The mark ARGUED is right. As stated, (SYM) does not give its conclusion: one clause is missing.**
+- (J) implies "Q is zero on gradients": PROVED for smooth frames (Remark JAC, Step 7).
+- (J) + (LOC) implies Q <= C sum_p (d theta)_p^2 on a translation-invariant torus. The outline is sound. I checked each step:
+  - Positivity and xi* q xi = 0 give q^(k) xi(k) = 0.
+  - xi(k) = i k + O(|k|^2), so q^(0) k = 0 for every k, hence q^(0) = 0.
+  - Positivity and smoothness give ||q^(k)|| = O(|k|^2).
+  - q xi = 0 gives q^(k) <= C |xi|^2 P_perp(k), which is C times the symbol of sum_p (d theta)_p^2. By Lagrange's identity, sum over mu < nu of |xi_mu theta_nu - xi_nu theta_mu|^2 = |xi|^2 |theta|^2 - |conj(xi) . theta|^2.
+  - C is of the order of the second moment of q.
+- **Missing clause (REG).** The kernel q, its second moment and Q itself are finite only if j - d is in L^2 and the integration by parts of Remark JAC holds across the frame's singular set.
+  - A covariant frame cannot be smooth on every configuration (row 1011, Remark HOPF, ARGUED there).
+  - Step 5 shows that the cube's aligned frames (j = 0) have a codimension-2 singular set with d not in L^2.
+  - (LOC) does not exclude this: the cube's n_000 has range 1.
+  So (SYM) needs:
+  - (REG) n is smooth off a closed null set S; E[(j - d)_l^2] < infinity for every l; and E[V f] = - E[f Psi_V] for smooth f.
+  - A candidate sufficient form, not proved here: S of codimension at least 3, with |grad n| <= C / dist(., S). Then d is in L^2 and a bounded V has no flux through thin tubes around S; FLOW's bound for such a field would still need a cutoff argument, which is not written. The plaquette-axis frame of note Step 3 is of this form.
+- Other gaps. The note names the first.
+  - The symbol argument has no finite-volume, pinned-cell form. A cell has no translation invariance.
+  - The size of C against beta is not addressed. A curl bound with C much larger than beta is no gain at order-one response.
+  - The count at L236-238 mixes (J) with "(AF-1) plus div d = 0". (J) is the single condition div(j - d) = 0, that is V - 1 equations on 2V angle functions, and it does not need (AF-1). The conclusion "not excluded by a count" is unaffected.
+- Reading L239-242: V_(d lambda) is a gauge direction iff D n = 0, and exp(pi n) = -1. HOLDS.
+- So (SYM) stays OPEN. With (REG) added it is the right open statement for route (ii). Route (ii)'s FAILS stays ARGUED, as the note says.
+
+**7.4 (L244-248): ARGUED, with a caution.** The note expects rho_z to be of order one per site. For a singular aligned frame it can be infinite: the cube's corner frame has E[((div d)(100))^2] = + infinity (Step 5). The frames of Theorem E and of the GUIDE run are not yet global fields, so no size is defined for them. The logic sentence (the count of 4.5 is no longer backed by non-existence) HOLDS.
+
+**Text repairs the note proposes (L283-287), corrected.**
+- For row 1018 L275, read: "a divisible twist exists exactly on reducible configurations (SPLIT). A pathwise conserved projected current exists on almost every configuration of one cube, and on an open set of non-reducible configurations of Z_L^4 (row 1026, Theorem E). Its move is in general not divergence free (cube family, row 1026 7.2). For a frame that meets (REG), its gradient cost is the variance of the Jacobian current (row 1026 7.1). The cube's corner frame has infinite gradient cost (row 1027, Step 5)."
+- For `parts/gap.md` L137: "the open item is (SYM) with (REG)".
+I did not edit either file: neither is an output of this row.
+
+**Credits.** The recalled literature (abelian projection, Cho, Faddeev-Niemi, Kondo-Shibata) is marked RECALLED by the note and used in no proof. I did not check it. The Sussman-Alpoge account has no matching statement (Step 1). Lemmas FLOW, PROJ, FR+, SPLIT are from row 1018 (Claude Fable 5.2). Lemma FR and Proposition A are from row 1011. D2 is from check 1022 (Claude Opus 5.5).
+
+## Verdicts
+
+| Item (note lines) | Verdict | First failing line, correction |
+|---|---|---|
+| Remark LIN (L51-56) | HOLDS | none |
+| JAC identity Psi_(theta n) = - sum theta_l (j_l - d_l), sign and normalisation (L58-61) | HOLDS | none (Step 2: second derivation from the explicit one-plaquette density) |
+| JAC: zero on gradients iff j - d conserved; Q(theta + d lambda) = Q(theta) (L63-68) | HOLDS for smooth frames | needs FLOW's smoothness; "form in d theta" holds on a cell; on a torus it is modulo harmonic directions |
+| Remark BACK (L70-73) | HOLDS | none |
+| Step 3, one plaquette (L77-89) | HOLDS | L80: the covariant frames are sigma_y s^ with signs, and sigma_w is free |
+| Step 4, one cube (L93-104) | HOLDS | witnesses for "almost every" supplied in Step 5 |
+| Lemma RANK (a), (b) (L127-157) | HOLDS | L153: phi* is a sum of three pieces. L = 3 checked by hand |
+| Theorem E (L165-183) | HOLDS | the base point is reducible, which is harmless; the IFT branch is not covariant at U_0, and the theorem does not claim it is |
+| E, extent / E, selection (L185-187) | OPEN / ARGUED (agree) | "locally it exists" holds only at points with central stabiliser |
+| L275 of row 1018, current half, is false (L192, L268) | HOLDS | as pointwise existence |
+| "First alternative of the row FAILS" (L267, L304) | HOLDS AFTER CORRECTION | first failing line L267: the alternative is refuted on the cube only, and is OPEN on Z_L^4 (the note's own L192-194) |
+| 7.1, cost form and consumer (L200-212, L269, L304) | HOLDS AFTER CORRECTION | first failing line L304: FLOW needs a smooth global field. Theorem E's frames are local; the cube frames are singular, with infinite cost |
+| 7.2, alignment does not give a curl form (L214-224, L270) | HOLDS | holds a fortiori: the cost at site 100 is + infinity |
+| 7.3, (J) + (LOC) give a curl bound (L226-242, L271) | the ARGUED mark is right; (SYM) as stated is insufficient | add (REG): j - d in L^2, and integration by parts across the singular set |
+| (SYM) (L272) | OPEN (agree) | to be stated with (REG) |
+| 7.4, sizes (L244-248, L273) | ARGUED, with a caution | a singular aligned frame can have infinite gradient cost |
+| Route (ii) FAILS stays ARGUED (L274) | HOLDS | none |
+
+**Stop rule.** No proved lemma of the note is wrong: LIN, JAC, BACK, Step 3, Step 4, RANK and Theorem E all hold. Two summary claims overstate: L267/L304 (first alternative) and L304 (the link to FLOW).
+
+**New facts in this check.** Proved by hand here, same provider, not checked by another model:
+- the corner frame of the cube has d_1 = - beta (N_1 . s_r)/|N_1 x N_2|;
+- E[d_1^2] = + infinity;
+- the gradient cost at site 100 is + infinity.
+These are check findings on the note's frames, not an attack on (SYM).
+
+**Not done.**
+- No numeric run. The note's GUIDE runs were not rerun, and its scripts in /tmp were not read.
+- Not checked, because they are not used: the greedy-solving and antipodal-index remarks (L110-114) and the bulk-4D remark (L101-103).
+- Provenance: Claude Opus 5.5 checking Claude Fable 5.2. Same provider, so not independent. A cross-provider check stays open.
+- 2026-11-16T00:39Z (`date -u`): all steps written.
+
+RESULT: Row 1027, check of row 1026 by Claude Opus 5.5 max (same provider as the writer, Claude Fable 5.2, so not independent). No proved lemma fails. HOLDS: the JAC identity Psi_(theta n) = - sum theta_l (j_l - d_l), with FLOW's sign and normalisation (rederived on one plaquette from the explicit density e^(beta cos phi) sin^2 phi); Remarks LIN and BACK; the one-plaquette cost (a precision on signs at L80); the one-cube aligned frame (n orthogonal to the outgoing forces, j = 0) on almost every non-reducible configuration (witnesses supplied); Lemma RANK (a), (b) (L = 3 checked by hand; phi* read as a sum of pieces); Theorem E (the abelian base point is reducible, which is harmless because the non-reducible part of its neighbourhood is open with positive measure; the implicit-function branch is not covariant at U_0, which the theorem does not claim); 7.2 (alignment does not give a curl form). HOLDS AFTER CORRECTION: L267/L304, "the first alternative of the row FAILS", holds on the cube only and stays OPEN on Z_L^4 (as the note's own L192-194 says); L304, "the cost of such a frame is Lemma FLOW's Q(theta)", holds only for smooth global frames, while Theorem E's frames are local and the cube frames are singular. New, by hand: the cube's corner frame has d_1 = - beta (N_1 . s_r)/|N_1 x N_2|, which is not square integrable on the codimension-2 set {N_1 parallel to N_2}, so its gradient cost is + infinity. (SYM) step: ARGUED is the right mark, and the symbol argument is sound on a translation-invariant torus, but (SYM) as stated is insufficient: it needs (REG), j - d in L^2 with integration by parts across the frame's singular set. OPEN: (SYM) with (REG); its pinned-cell form and the size of C against beta; aligned frames at almost every configuration of Z_L^4; a cross-provider check. Route (ii)'s FAILS stays ARGUED.

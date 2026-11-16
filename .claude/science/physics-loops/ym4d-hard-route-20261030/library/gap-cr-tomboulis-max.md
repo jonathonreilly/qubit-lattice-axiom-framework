@@ -29,6 +29,31 @@ where used.
 7. The first surviving piece: prove it by hand or build the counterexample.
 8. Re-read of every PROVED item, verdict table, RESULT line.
 
+## Status block (one line per step; kept current; read Section 8 first)
+
+1. **Read: done (Section 1).** The five named inputs with their checks, the exercise skill, and the primary
+   pages of Tomboulis, Ito and Seiler and the 2008 proceedings paper.
+2. **Question 1: done (Section 2).** The two obligations are (O-flow) and (O-match). Proposition BR (PROVED,
+   unchecked; found again): the matching, the trapping domain and the endpoint bracket are one inequality,
+   (TB)_n; with r = 1 the flow is Ito's theorem (cited), so (TB)_n is the only open obligation of the line
+   beyond its cited inputs.
+3. **Registry grep: done (Section 3).** No duplicate in `library/open-core.md`. Found again: the need for "a
+   sign for the effect of bond moving on the ratio" (row 876 item 16), the bracket remark (check 799), the
+   rate of the map (row 670).
+4. **Tests first: done (Section 4).** The decimation line is a tool for the flux half at one coupling only
+   (Lemma FAC with Lemma PT). (TB)_n is selective: it fails for U(1) (given) and for Z_2 at weak coupling
+   (proved). In the range where the line needs it, it is the flux half with a rate: a rename, FAIL as a step.
+5. **Question 2: done (Section 5). FAILS.** Compactness supplies no sign and Omega holds no action (Identity
+   MIS). Given the bracket, the limit keeps its consequence only if the map is as fast as the true flow
+   (Proposition RS), and it is not at one-loop order (ARGUED). At one coupling the combination gives the even
+   half (Corollary EVEN; found again).
+6. **Question 3: done (Section 6). FAILS as a tool, exact as a dictionary.** Lemma PAR-T (PROVED): on a torus
+   H = log(1 + cumulant of container activities). (K-RESP) is that cumulant bound (Proposition KR). (SER) and
+   (SPR) reach it only with kappa^2 phi < 1.
+7. **First surviving piece and counterexample: done (Section 7).** Proposition SIGN (Z_2, both signs, PROVED).
+   Identity MOV (second-order form of one decimation step, PROVED). (TB)_n for SU(2): three ways stop; OPEN.
+8. **Report and RESULT: done (Sections 8, 9 and the last line).**
+
 ## Status log (times from `date -u`)
 
 - 23:55Z file created; GOAL.md and queue row 1025 read.
@@ -173,7 +198,9 @@ polymer expansion of the coarse model converges uniformly in the torus (the coar
 is such a statement for the one-character weight).
 
 Standing, as read. r = 1: a published theorem for SU(N) and U(N) in dimension at most 4 (K. R. Ito, Phys. Rev.
-Lett. 55 (1985) 558; quoted as Theorem 2.1 of 0711.4930; not read here). b large and r = 1 - b^(-2): Kanazawa v3
+Lett. 55 (1985) 558; quoted as Theorem 2.1 of 0711.4930; not read here; the quotation is coefficient by
+coefficient, c_j(n) -> 0 for each j, and whether Ito's proof gives the norm form was not checked here; for
+Kanazawa's flow row 797 2.2 derives the norm form from uniform convergence of the weight). b large and r = 1 - b^(-2): Kanazawa v3
 Theorem 4, for every compact connected group, U(1) included, conditional on the Mueller-Schiemann inequalities
 (row 797 2.2). Fixed b and fixed r < 1 at all beta: false for the Gaussian model, where beta' = beta/r (Ito and
 Seiler 0803.3019 p. 13, a hand calculation), and T's p. 19 claim for SU(2) is asserted there, not proved. The
@@ -217,7 +244,8 @@ finite). rho_c(0) = 1.
   and T V.2 (5.23) are equivalent.
 - (d) So the conclusion of T Section 5 follows from (O-flow) and (TB)_n for one n >= n_0(beta) alone. No
   interpolation h, no parameter t, no shift (5.9), no continuation and no value r < 1 enters. With r = 1 the flow
-  is Ito's theorem, so the decimation line has **one** open obligation, (TB)_n at r = 1.
+  is Ito's theorem, so the decimation line has **one** open obligation of its own, (TB)_n at r = 1. (Its cited
+  inputs, Ito's flow and the convergence of the coarse expansion T (6.6)-(6.14), are not rebuilt in the lane.)
 - (e) The 2008 repair. PoS p. 7-8 asks for a solution (t, alpha) of the system (4.9), which is (O-match)_n, by a
   monotone iteration (Meyer) with hypotheses (i) F(x_0) < 0, (ii) (1 + lambda F_x)^(-1) >= 0 entrywise on a
   bounded domain D for lambda in [0, lambda_0], (iii) the iterates stay in D, "assured if at least one component
@@ -257,7 +285,7 @@ Row 800 (K1)-(K8), (K17), (K21): for a prescribed small coarse weight, the misma
 Q_f = Z_c^+(alpha)/Z_c(alpha_Lambda) always exists, for **every** number Q_f in [1/2, 1], and the mismatch is
 D = H_f - H_c(alpha) with 0 <= H_c <= 2 N exp(- l^2). So (K-RESP), the bound [D]_+ <= e_a/8, is the bound
 H_f <= e_a/8 + H_c(alpha): up to the explicit coarse error it is the smallness of the fine odd-flux weight
-itself, u_f = (1 - exp(- H_f)) . (PROVED: H = - log(1 - u), so H_f <= eps is u_f <= 1 - exp(- eps).) Section 6
+itself, u_f = (1 - exp(- H_f)). (PROVED: H = - log(1 - u), so H_f <= eps is u_f <= 1 - exp(- eps).) Section 6
 below uses this form.
 
 - Step 2 done. In one sentence: after Proposition BR the decimation line is Ito's flow at r = 1 plus the single
@@ -273,7 +301,7 @@ name these objects: 47 (list by `awk` on the row text), of which the ones that h
 |---|---|---|---|
 | Item 16 of the second brainstorm (row 876) | `library/gap-brainstorm2-max.md` L163, L221 | "The true model differs at bond moving, which bounds Z but not the ratio Z(twist)/Z ... Needs: a sign for the effect of bond moving on the ratio." | **(TB)_n of 2.4 is this need, with quantifiers.** Proposition SIGN (Section 7) answers it for Z_2: no sign. |
 | "Carry by decimation inequalities" (row 978) | `library/gap-ladder-max.md` L224 | found again there; "bond moving bounds Z, not the ratio that the seed reads" | same |
-| C14, Migdal-Kadanoff sandwich (row 889) | `library/gap-next3-max.md` L361 | REJECTED: "bounds log Z with an extensive error and treats U(1) and SU(2) alike" | the extensive error is Kanazawa's mismatch; 5.2 below says what it is in the lane's variables |
+| C14, Migdal-Kadanoff sandwich (row 898) | `library/gap-next3-max.md` L361 | REJECTED: "bounds log Z with an extensive error and treats U(1) and SU(2) alike" | the extensive error is Kanazawa's mismatch; 5.2 below says what it is in the lane's variables |
 | Form F (row 735) | `library/gap-form-exercise.md` L141-145, L348 | the decimation line as "base, one-way step, sufficiency"; Ito's theorem quoted | Proposition BR is the exact one-way step |
 | Numeric guide run of the Migdal-Kadanoff map (row 670) | `library/gap-skeleton-max-b.md` 2.4, item 1 | "The effective coupling ... drops by D = 0.2515 per step at beta = 12, 16, 20 ... c_a = ln 2/D = 2.756. (The true one-loop value is 2.692.)" | the rate of 5.3; a hand derivation of 1/4 is added there |
 | Check 799 B2, B5 | `library/gap-tomboulis-check-opus.md` L114-118, L174-186 | the bracket form; the 2008 sign is a convention | Proposition BR (a)-(e) |
@@ -336,7 +364,9 @@ The true one-loop drop per doubling is (11/(3 pi^2)) log 2 = 0.2575 (c_AF = 3 pi
 For every integer b >= 2 the map is slower than the true flow: log b/Delta_b = 3 b^2 log b/(b^2 - 1) is 2.773
 at b = 2, 3.708 at b = 3 and increases, against c_AF = 2.692. For r < 1 the d = 4 map **raises** beta above
 beta_c(r) = (b^2 - 1)/(3 b^2 (1 - r)) (this is Ito and Seiler's remark of 0803.3019 p. 13-14 with a number). For
-d = 5 it raises beta above (b^2 + b + 1)/(3 b^2) at r = 1.
+d = 5 it raises beta above (b^2 + b + 1)/(3 b^2) at r = 1. Limit of the estimate: Ito and Seiler's own run puts
+the turning point for r = 0.9 near beta = 4.8, and the formula gives 2.5 at b = 2. So at couplings of a few
+units the formula is not accurate (the drop per step is larger there). Only its large-beta limit is used below.
 
 ### 4.3 The table
 
@@ -346,7 +376,7 @@ d = 5 it raises beta above (b^2 + b + 1)/(3 b^2) at r = 1.
 | **Proposition NP** (D contracts on J doublings, no seed) | The line reads no value of D. As a product with a no-seed factor it is bound as under PT. (TB)_1 at strong coupling: holds for Z_2 at small c (Proposition SIGN); for SU(2) not proved here. | Not bound: NP's limits are those of its Ising factor (row 1017 3.7). | not bound |
 | **Theorem D2** (no supremum over tilts) | The line has homogeneous weights and no supremum. Not bound. A proof of (TB)_n through sup-pin boxes would be bound. | not bound | PAR (iii)'s sup form is a supremum over pins: bound. Row 1018 3.4 (caution 2) and 6.2: the sup-pin cost of a thin container is of order beta times its area. So only the moment form of (iii) can feed (K-RESP). |
 | **Lemma SHEET** (no uniformity over coupling fields) | (TB)_n compares two coupling fields (the homogeneous one and the moved one). A form "moving plaquettes never raises rho", uniform over fields or groups, is false (Proposition SIGN). The proof must be for the Wilson field and its own image. | not bound | holds for every strength field; blind |
-| **Compact U(1)** | (O-flow) holds (Ito at r = 1; Kanazawa). (TB)_n fails at large beta and large n, GIVEN Ito's theorem and the torus bound of Ito and Seiler's Theorem 2.2 (2) (cited, not a lane theorem). At the level of rates: the Villain map at r = 1 is beta' = beta up to terms exp(- c beta), so it drifts to strong coupling for ever, and the true theory does not (Coulomb phase). **A proof of (TB)_n must use that the group is not abelian.** | Omega of U(1) holds a photon limit if D is bounded (row 1017 4.2). No parameter exists there, as it must. | PAR-T (6.1) holds with the Z_2 subgroup; its sup and moment bounds are scale invariant with zero gain (row 1018, Lemma SPLIT). (K-RESP) fails. Blind. |
+| **Compact U(1)** | (O-flow) holds (Ito at r = 1; Kanazawa). (TB)_n fails at large beta and large n, GIVEN Ito's theorem and the torus bound of Ito and Seiler's Theorem 2.2 (2) (cited, not a lane theorem). At the level of rates (ARGUED): the Villain map at r = 1 is beta' = beta up to terms exp(- c beta), so it drifts to strong coupling for ever, and the true theory does not (Coulomb phase). **A proof of (TB)_n must use that the group is not abelian.** | Omega of U(1) holds a photon limit if D is bounded (row 1017 4.2). No parameter exists there, as it must. | PAR-T (6.1) holds with the Z_2 subgroup; its sup and moment bounds are scale invariant with zero gain (row 1018, Lemma SPLIT). (K-RESP) fails. Blind. |
 | **Frozen Z_2, Q_8, 2T** | (O-flow) fails at large beta (row 797 3.1, PROVED there for every finite subgroup). (TB)_1 fails at large beta for Z_2 (Proposition SIGN, PROVED); for Q_8 and 2T the same mechanism is ARGUED in 7.3, not proved. **Both hypotheses fail, so no refutation; a proof of H_DEC must use connectedness twice.** | Omega holds the constants log m. | PAR and MP hold verbatim (row 1018 3.3 (c)); (K-RESP)'s analogue fails for Z_2 above beta = 2.191 (the lane's Peierls bound). **So H_VOR does not give (K-RESP): refuted as a tool.** |
 | **Five dimensions** (`gap-crux-fp.md` F15) | (O-flow) fails at large beta by Estimate RATE (ARGUED); T states d <= 4. **The decimation line sees the dimension, through the flow.** This is the one test where it differs from every proved piece of rows 1017 and 1018. (TB)_n in d = 5 is not needed and not known. | The construction is the same with five sides. | PAR-T holds verbatim; blind |
 
@@ -438,21 +468,25 @@ every level of the cube that is odd under the flip of that plane is at + infinit
 u(N'^4; c^U(n_j; beta_j)) <= g(N') for N' >= 3, with one non-increasing g that tends to 0 (T (6.6)-(6.14) would
 give g(N') = C N'^2 exp(- kappa N'^2)).
 
-**Proposition RS (the rate decides).** Assume (DEC-traj). Let (j_i, k_i) be an admissible sequence with limit E, and
-put N'_i(x) = 2^(k_i - n_(j_i)) u_(j_i) x.
-- (i) If N'_i(1) tends to infinity, then u_E(x) = 0 for every x in DD: E is centre-even on cubes for the plane
+**Proposition RS (the rate decides).** Assume (DEC-traj), and let the units be dyadic: u_j = u_0 2^(e_j) with one
+integer u_0 >= 3 and e_j tending to infinity (the cutoffs a_j = l_1/u_j are halved from one to the next). Let
+(j_i, k_i) be an admissible sequence with limit E. A cube of the sequence at the scale x = 2^m has the lattice
+side u_0 2^(e_(j_i) + k_i + m). Put q_i = e_(j_i) + k_i - n_(j_i).
+- (i) If q_i tends to + infinity, then u_E(x) = 0 for every x in DD: E is centre-even on cubes for the plane
   (1,2), and by the symmetry of the sides for every plane.
-- (ii) If N'_i(1) tends to 0, the hypothesis gives no inequality for E at any scale.
-- (iii) If (RATE): sup over j of 2^(n_j)/u_j is finite, then (i) holds for every element of Omega^gr. If instead
-  2^(n_j)/u_j tends to infinity and Omega is not empty, then there are admissible sequences of kind (ii).
+- (ii) If q_i tends to - infinity, the hypothesis gives no inequality for E at any scale.
+- (iii) If (RATE): sup over j of (n_j - e_j) is finite (that is, sup of 2^(n_j)/u_j is finite), then (i) holds for
+  every element of Omega^gr. If instead n_j - e_j tends to infinity and Omega is not empty, then there are
+  admissible sequences of kind (ii).
 
-Proof. (i) For fixed x and large i, N'_i(x) is an integer at least 3 (u_j is a multiple of 4 and k_i - n_(j_i) +
-log_2 x tends to infinity through integers when N'_i tends to infinity). Then (TB) and the coarse bound give
-u_(j_i)(2^(k_i) u_(j_i) x) <= g(N'_i(x)), which tends to 0. (ii) For each x, N'_i(x) < 3 for large i, so no cube of
-the sequence at the scale x admits n_(j_i) halvings, and (DEC-traj) says nothing about it. (iii) First part:
-N'_i(1) >= 2^(k_i)/sup(2^(n_j)/u_j), and k_i tends to infinity. Second part: in the construction of Theorem CE
-(i)(b) the index j_i is any large enough member of the subsequence J of Lemma UF; every condition on it holds
-for all large j in J. Add the condition 2^(n_j)/u_j > 2^(k_i + i). Then N'_i(x) < x 2^(-i). QED
+Proof. (i) For fixed m and large i, q_i + m >= 0, so the side divided by 2^(n_(j_i)) is the integer
+N' = u_0 2^(q_i + m) >= 3. Then (TB) and the coarse bound give u_(j_i)(u_0 2^(e_(j_i) + k_i + m)) <= g(u_0 2^(q_i + m)),
+which tends to 0. (ii) For fixed m and large i the side divided by 2^(n_(j_i)) is u_0 2^(q_i + m) with q_i + m
+tending to - infinity; it is below 3 from some i on. So no cube of the sequence at that scale admits n_(j_i)
+halvings with a quotient of at least 3, and (DEC-traj) says nothing about it. (iii) First part: q_i >= k_i -
+sup(n_j - e_j), and k_i tends to infinity. Second part: in the construction of Theorem CE (i)(b) the index j_i
+is any large enough member of the subsequence J of Lemma UF; every condition on it holds for all large j in J.
+Add the condition n_j - e_j > k_i + i. Then q_i < - i. QED
 
 **The rate (ARGUED, from Estimate RATE and the lane's run).** n_0(beta) is (beta - const)/Delta_2 up to lower
 order, with Delta_2 = 1/4 (hand) or 0.2515 (run), so log 2^(n_j) = 2.77 beta_j or 2.756 beta_j. The trajectory has
@@ -461,21 +495,22 @@ exp(0.06 beta_j) to exp(0.08 beta_j): (RATE) fails, and the second case of (iii)
 b >= 3 the map is slower still. This is not an accident of the scheme. (TB)_n with (O-flow) gives the bound
 sigma_true(beta) >= sigma_MK(beta) for the 't Hooft string tension in lattice units. If a bounding flow were
 faster than the true flow, that bound would exceed the true value at large beta (a BELIEF about the true
-scaling, not a theorem). So **a one-sided decimation bracket can be true only for a flow that is too slow to
-reach a physical size.**
+scaling, not a theorem). So, apart from the borderline case of equal rates, **a one-sided decimation bracket can be true only for a
+flow that is too slow to reach a physical size** (ARGUED, on that belief).
 
 **Reading against Proposition SI.** A kept property holds at every scale of every element of Omega (SI, with
 repair D14: the statement is about conditions on a fixed range of scales). The decimation bound starts at the
 physical size L_MK(j) = 2^(n_j) a_j, which runs to infinity along the trajectory. In the limit it is a condition
-"from the scale X on" with X = lim 2^(n_(j_i))/(2^(k_i) u_(j_i)), and X can be + infinity. So it is not kept. It is
+"from the scale X on" with X = lim 2^(- q_i), and X can be + infinity. So it is not kept. It is
 kept exactly under (RATE), and then it is the sigma-invariant property "centre-even". **The property that the
 argument needs and the decimation flow does not keep is the unit of length:** the flow has its own scale
 2^(n_0(beta)), which is not the trajectory's.
 
 ### 5.4 What the combination gives at one coupling (PROVED GIVEN H_DEC; it is the even half, found again)
 
-At one coupling the family is constant, n_0(beta) is fixed, and every admissible sequence has N'_i tending to
-infinity. So:
+At one coupling the family is constant, n_0(beta) is fixed, and the cubes of an admissible sequence have the
+sides u 2^(k_i + m) with k_i tending to infinity; from some i on they admit n_0(beta) halvings with quotients that
+tend to infinity (case (i) of Proposition RS with e_j constant). So:
 
 **Corollary EVEN.** Let Wilson SU(2) at one beta have D(a) <= D_0 for a >= a_0, and let H_DEC hold at beta with
 b = 2. Then every element of Omega^gr of that coupling is centre-even on cubes. So, with Theorem CE (i)(a) and
@@ -782,3 +817,190 @@ follow from it; it gives no part of the even half and no statement at a physical
 status: blocked-equivalent for the flux half at one coupling; off the path of (W).
 
 - 00:24Z Step 7 done. Step 8 (re-read of the PROVED items, report, RESULT) next.
+
+## 8. Step 8: report (exercise step 9)
+
+Second pass before this report (same session, so not a check): every PROVED item was re-derived once. One defect
+was found and repaired in place: Proposition RS first read "N' tends to infinity, so it is an integer", which is
+false for units that are not dyadic; it now assumes dyadic units and is stated through the exponent q_i.
+
+### 8.1 The wall, in plain words
+
+The lane must show that four-dimensional SU(2) lattice gauge theory has a smallest particle mass above zero.
+It has reduced this to one inequality at one box size, and every exact tool it owns also holds for theories
+with a massless particle. This row tested one more combination of three older ideas. The first is a 2007
+argument of Tomboulis: replace the lattice by a coarser one in a way that can be computed (Migdal and Kadanoff's
+decimation), and show that the true theory is at least as disordered as the computed one. Ito and Seiler, and
+Kanazawa, found that the proof has a hole. The second idea is the lane's new compactness theorem (if the
+inequality fails at all sizes, a limit object exists). The third is the vortex-container method of Mack and
+Petkova. The question was whether the second or the third idea fills the hole of the first.
+
+### 8.2 What the exercise found
+
+1. The hole is one inequality, and nothing else (Proposition BR; proved by Claude Fable 5.2, not yet checked;
+   the core remark is check 799's). All the machinery of interpolation parameters, shifts and the extra
+   parameter r can be dropped. What must be shown is (TB): the odd-flux weight of the true model on a large
+   torus is at most that of the decimated model. With r = 1 the other obligation, the flow, is a published
+   theorem of Ito (cited, not rebuilt here).
+2. Compactness cannot fill it (Section 5; proved in the stated forms, unchecked). The missing thing is a sign
+   at the end of a compact interval, not uniformity. The limit objects of the lane forget the action, and the
+   decimation acts on the action only. Even if (TB) is granted, its bound starts at the decimation's own length,
+   which at one-loop order grows faster than the physical length (argued; the rate 0.25 against 0.2575 per
+   doubling). So it says nothing at a fixed physical size.
+3. The containers cannot fill it either (Section 6; proved, unchecked). On a torus, Mack and Petkova's algebra
+   gives an exact formula: the quantity that row 800 calls (K-RESP) is the logarithm of one plus a joint
+   cumulant of container activities (Lemma PAR-T, Proposition KR). This is a dictionary, not a bound: it holds
+   word for word in the frozen Z_2 theory, where (K-RESP) fails.
+4. (TB) is a selective inequality, not a soft one (Proposition SIGN; proved, unchecked). In the Z_2 theory it
+   is true at strong coupling and false at weak coupling, on every torus. So there is no general rule "moving
+   plaquettes lowers the twist quotient", which the lane had asked for in row 876.
+5. One exact second-order formula for the effect of a decimation step on the twist quotient was written
+   (Identity MOV). It shows why the method that proves the partition-function bounds gives no sign here.
+6. This run did not pass the wall and did not price it more exactly than rows 720 and 1017. It priced the
+   decimation line: its one open inequality is the flux half of the fixed-coupling problem with a rate, in
+   other words. It gives nothing for the even half, and nothing at a physical size.
+
+### 8.3 Filters corrected
+
+- **"The Tomboulis line fails because the bounds hold for U(1) as well"** (`gap-form-exercise.md` L189, L348;
+  `gap-crux-fp.md` L234; `gap-next3-max.md` L361). Valid form: the flow and the partition-function bounds are
+  blind; the hypothesis (TB) is not (it fails for U(1) at large beta, given the cited theorems, and for Z_2 at
+  large beta, proved). So U(1) does not refute the tool "flow and (TB) give the flux bound"; it says that a
+  proof of (TB) must use that the group is not abelian. What sets the line aside is something else: its
+  conclusion is the flux half at one coupling (Lemma FAC with Lemma PT), and its length is not physical
+  (Proposition RS with Estimate RATE). The verdict "set aside" stands; the reason changes. Unchecked.
+- **Row 876 item 16** ("Needs: a sign for the effect of bond moving on the ratio"): answered in the class by
+  Proposition SIGN: no sign. Unchecked.
+- No discard test of `parts/gap.md` changed.
+
+### 8.4 Routes worth doing
+
+None on the path of (W). The decimation line is a route to the flux half at one coupling, and its terminal
+inequality is that half. If the lead ever wants the flux half at one coupling by this line, the object to
+attack is the twist response of the staggered plaquette sum in Identity MOV (iv); it is of the same kind as
+row 800's (K6), and no mechanism is on record for either.
+
+### 8.5 What not to do next
+
+- A row that tries to prove common matching, a trapping domain or a continuation for Tomboulis's
+  interpolation: by Proposition BR these are (TB), and the parameters carry no content.
+- A row that asks compactness, recurrence or a limit object for an interpolation parameter (Section 5).
+- A row that derives (K-RESP) from vortex containers without a container bound in the law (6.3): the
+  dictionary is exact, so nothing is gained by the translation.
+- A decimation scheme with r < 1: the flow turns to weak coupling above beta_c(r) (Estimate RATE; Ito and
+  Seiler), and r is not needed.
+- A numeric test of (TB) for SU(2): Tomboulis reports it as "seen numerically"; a run would not move (W).
+
+### 8.6 The exact price
+
+Not sharpened for (W). For the decimation line, proved here and unchecked: its conclusion (T V.1 and V.2)
+holds if and only if (TB)_n holds (given T (5.24) for the converse), and with Ito's flow at r = 1 this is the
+only open obligation. (TB)_n for n >= n_0(beta) gives the area bound of the odd-flux weight at that coupling. It
+is not known to follow from that bound.
+
+### 8.7 Work items
+
+**W1, check (a model that did not write this file; high effort; cross-provider if one is free).** Check line
+by line in `library/gap-cr-tomboulis-max.md`: Proposition BR (2.4) against T (3.19)-(3.27), (5.10)-(5.24),
+Appendix C and PoS p. 7-8; Lemma FAC (4.2); Identity MIS (5.2); Proposition RS and Corollary EVEN (5.3, 5.4)
+against `library/gap-compact-rigidity-max.md` 3.3 (Theorem CE (i)(b), (ii)(e)) and 3.5; Lemma PAR-T and
+Proposition KR (6.1, 6.2) against `library/gap-short-step-max.md` 3.2 and `library/gap-kanazawa-astra.md` (K2),
+(K21); the arithmetic of 6.3; Proposition SIGN with Lemmas LT and HT (7.2); Identity MOV (7.4). Test first:
+(1) BR (a): that G^+ is strictly increasing and that the quotient of the two fine numbers is Q of the Wilson
+model; (2) Fact 2 (b) of 6.1 for rectangles that share a boundary edge; (3) Lemma LT step (2), the cube
+argument, and the count g_0 per cell; (4) Lemma HT, the parity of N_y; (5) the coarse coefficient of Z_2,
+delta' = q r delta^q (1 + o(1)); (6) Identity MOV (ii): that the decimated twisted model has exactly the coarse
+stack flipped; (7) Proposition RS (iii), second part: that the extra condition on j_i keeps (H1) and (H2).
+Then judge: is "the trapping domain and the endpoint bracket are the same statement" right as worded; is the
+reading 4.4 point 3 ("renames the flux half") right. Verdict per statement: HOLDS, HOLDS AFTER CORRECTION, FAILS.
+Stop rule: no new attack. Output `library/gap-cr-tomboulis-check.md`.
+
+**W2, bookkeeping (the lead).** If W1 passes, add to `parts/gap.md`: (a) in the test table, under compact U(1)
+and frozen Z_2, the note "the decimation bracket (TB) fails here (U(1): given Ito and the torus bound of Ito
+and Seiler; Z_2: Proposition SIGN, row 1025)"; (b) in the route registry the three families of 9.1; (c) under
+row 1018's obligation, "(K-RESP) = log(1 + container cumulant) (Lemma PAR-T, Proposition KR, row 1025)".
+
+**Not proposed.** (1) A proof row on (TB): it is the flux half with a rate, no mechanism is on record, and it
+is off the path of (W). (2) A row on the Q_8 and 2T minimisers of 7.3: it would raise a test from ARGUED to
+PROVED and change no decision. (3) A rebuild of Ito's flow theorem or of the coarse expansion T (6.6)-(6.14):
+needed only if the lead takes up the flux half by this line. (4) A row on the one-loop constants of the twist
+quotient on small tori (the regime below the correlation length): Tomboulis's argument does not use it.
+
+## 9. Appendix
+
+### 9.1 Approach registry (format of the proof-search governance)
+
+| Family | Object | Mechanism | Terminal obligation | Strength against the target | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| DEC, decimation bracket | class weights under M_(b,r); twist quotients of the true and the decimated model | one-sided comparison of odd-flux weights | (TB)_n at r = 1, n >= n_0(beta) | against (W): not comparable, it gives T_flux at one coupling only and at a length that is not physical; against the flux half at one coupling: stronger or equivalent | blocked-equivalent for the flux half; off the path of (W) | Propositions BR, SIGN, RS; Lemma FAC; Identity MOV | a mechanism for the sign of a second-order twist response (Identity MOV (iv)) that uses a connected non-abelian group; or an exact decimation, with no bulk slack and the true one-loop rate |
+| CMP, compactness supplies the parameter | Omega of row 1017 and the interpolation parameter | compactness, recurrence | none could be written | - | retired | 5.1, Identity MIS | a limit object that carries an action on which a decimation acts (it would need (COMPL) of row 1017 5.3) |
+| VOR, containers for (K-RESP) | container activities a_i under the sector-summed law | Mack and Petkova's parity algebra | (CB-mom), the open half O2 of row 1018 in moment form | weaker than (W) (centre-odd sector only) | blocked-local | Lemma PAR-T, Proposition KR, arithmetic of 6.3 | (SER) and (SPR) with kappa^2 phi < 1, or a moment bound on a_i under E^+ |
+
+### 9.2 Verdicts and marks
+
+| Statement | Where | Mark | Rests on |
+|---|---|---|---|
+| Question 1: the two obligations and the 2008 statement | 2.3, 2.4 (e) | READ, with pages | T, Ito and Seiler, PoS as listed in 1.2 |
+| Proposition BR (a)-(e) | 2.4 | PROVED by hand, unchecked; found again (check 799 B2) | T (3.19)-(3.27), III.3, IV.5, (5.10) as read |
+| (O-flow) at r = 1 | 2.3 | cited (Ito 1985), not read, not rebuilt | - |
+| (TB)_n for Wilson SU(2) | 2.4, 7.4 | OPEN | - |
+| (TB)_n for compact U(1), large beta | 4.3 | FAILS, GIVEN Ito's flow and Ito and Seiler's Theorem 2.2 (2) (cited) | - |
+| Lemma FAC | 4.2 | PROVED | definitions |
+| Estimate RATE | 4.2 | ARGUED (small-angle computation; agrees with the run of row 670) | - |
+| Tool DEC gives T_flux only | 4.3, 4.4 | PROVED GIVEN Lemma PT (check 999) and the U(1) theorem | Lemma FAC |
+| Question 2: compactness supplies the parameter | 5.1, 5.2, 5.5 | FAILS | Proposition BR, Identity MIS |
+| Identity MIS | 5.2 | PROVED | 2.2 (I) |
+| Proposition RS | 5.3 | PROVED as a conditional (given (DEC-traj), dyadic units) | Theorem CE, Lemma UF (row 1017; check 1019) |
+| (RATE) fails for integer b | 5.3 | ARGUED | Estimate RATE |
+| Corollary EVEN | 5.4 | PROVED GIVEN H_DEC; found again (route RE) | Theorem CE, Proposition OM |
+| Lemma PAR-T | 6.1 | PROVED by hand, unchecked; the algebra is Mack and Petkova's, as in row 1018 | definitions |
+| Proposition KR | 6.2 | PROVED GIVEN row 800 (K2), (K21) (check 801) | Lemma PAR-T |
+| Question 3: PAR and MP give (K-RESP) | 6.3 | FAILS (frozen Z_2) | the lane's Peierls theorem |
+| kappa^2 phi < 1 gives (K-RESP); kappa phi < 1 gives a power rate | 6.3 | PROVED as arithmetic, for a cost that obeys the three bounds | Lemma PAR-T (iii) |
+| Proposition SIGN, Lemmas LT, HT | 7.2 | PROVED by hand, unchecked | definitions |
+| Frozen Q_8, 2T fail (TB)_1 at large beta | 7.3 | ARGUED | - |
+| Identity MOV (i)-(iv) | 7.4 | PROVED by hand, unchecked | Fact 1 of 6.1; T p. 7 for the exact integration |
+| The step "decimation line" towards (W) | 4.4 | FAILS: it renames the flux half at one coupling | Proposition BR |
+
+### 9.3 Exercise steps, where each is in this file
+
+Steps 0-1: Sections 1 and 8.1. Step 2 (inventory): the sources of 1.2 with their reading state; the lane's
+inventory of row 998 is reused. Step 3 (reason up): 2.4, 4.4. Step 4 (assumptions): the ones that this
+combination adds are in 4.1 (the T of each tool) and 5.3 (the unit of length); the lane's tables are reused.
+Step 5 (compare): Section 3. Step 6 (tests): Section 4. Step 7 (routes, kill): 4.4, 9.1. Step 8 (attempts):
+Sections 5-7. Step 9: Section 8. No blind check of the plain version ran (no subagents).
+
+### 9.4 What this run did not cover
+
+- Ito's 1985 flow theorem, Mueller and Schiemann, Kanazawa v3 and the body of Mack and Petkova were not read
+  here; they are used as the lane's rows 797, 799, 800, 1018, 1022 report them.
+- T's Sections 2 (proof of II.1), 4 and Appendices A, B, D were not re-read; (U), (M), (I) are taken as read
+  by rows 797 and 799. T (6.6)-(6.14), the coarse expansion, is cited, not rebuilt.
+- `library/gap-short-step-max.md` Sections 4, 5.1, 5.4-5.6, 6.1 and the body of its check; Steps 1-5 of
+  `library/gap-compact-rigidity-check-opus.md`; `library/gap-kanazawa-check-opus.md` (row 801).
+- The cross-branch search of main and PR 10114 (rows 797 and 800 ran it for the same names on 2026-11-12).
+- The classification of fine minimisers for Q_8 and 2T (7.3). The one-loop constants of the twist quotient
+  on small tori.
+- No numeric run. The numeric lock was not taken and memory was not measured. No subagents.
+- Sussman and Alpoge's account (with Claude and Codex as authors of their text) was not opened: no statement
+  of this row reads it. Its trajectory enters only through the lane's Theorem CE.
+
+### 9.5 Credits
+
+E. T. Tomboulis (the decimation line, its upper bounds, the sector-summed partition function, the 2008
+repair); T. Kanazawa (the mismatched representation, the counterexample to the continuation, the flow theorem
+for connected groups); K. R. Ito and E. Seiler (the two obligations, the flow at r = 1, the Gaussian example
+for r < 1, the U(1) test); G. Mack and V. B. Petkova (vortex containers, the parity algebra, the loop bound);
+A. A. Migdal and L. P. Kadanoff (the recursion). In the lane: rows 797 and 800 (Codex gpt-6-astra) and their
+checks 799, 801 (Claude Opus 5.5); rows 1017 and 1018 (Claude Fable 5.2) and their checks 1019, 1022; row 876
+item 16 (the question of the sign); row 670 (the run of the map); row 998 (Lemma PT).
+
+- 00:28Z Step 8 done: report and appendix written.
+
+### 9.6 Run record
+
+Started 2026-11-15T23:55Z; report finished 2026-11-16T00:28Z (both from `date -u`). One file written in the checkout (this
+one). No commit, no push, no numeric run, no subagents. Scratch: /tmp/row1025-skill (skill text),
+/tmp/row1025-lit (five PDFs with text dumps), /tmp/row1025-scripts (text extraction and two patch scripts).
+
+RESULT: Row 1025 (Claude Fable 5.2 max, Mac mini worker 1; nothing checked by another model; no numeric run). The combination does not pass the wall and does not price it more exactly. PROVED by hand, unchecked: Proposition BR (Tomboulis's common matching, the 2008 trapping domain and the endpoint bracket are one inequality (TB)_n between the Wilson model and its Migdal-Kadanoff image, "the true model has the smaller odd-flux weight"; with r = 1 the flow is Ito's cited theorem, so (TB)_n is the line's only open obligation beyond its cited inputs; found again from check 799); Lemma FAC (the decimation line reads one factor of a product, so its conclusion is the flux half at one coupling, never the seed or (W)); Identity MIS (a common interpolation parameter is equality of Casimir data of two models); Proposition RS and Corollary EVEN (given the bracket, the blow-down limit keeps it only if the map is as fast as the true flow; at one coupling it leaves the even half, route RE); Lemma PAR-T and Proposition KR (on a torus (K-RESP) is exactly a bound on log(1 + a k-point cumulant of vortex-container activities)); Proposition SIGN (for Z_2 the bracket holds at strong and fails at weak coupling on every torus, so bond moving has no sign on the twist quotient); Identity MOV (the effect of one decimation on the twist quotient is of second order: a difference of variances plus a squared mean shift of the wrong sign). FAILS: Question 2 (compactness of Theorem CR or Proposition OM supplies neither the parameter nor the trapping domain: a sign is missing, not uniformity, and Omega holds no action); Question 3 as a tool (Lemma PAR and Corollary MP hold verbatim in frozen Z_2, where (K-RESP) fails; (SER) and (SPR) give (K-RESP) only with kappa^2 phi < 1); the decimation step towards (W) (it renames the flux half at one coupling). ARGUED: the Migdal-Kadanoff map at b = 2 drops beta by 1/4 per doubling against the true 0.2575, so the bracket's length leaves every physical size; frozen Q_8 and 2T fail the bracket like Z_2. Corrected filter: U(1) does not refute the tool "flow and (TB) give the flux bound" (its hypothesis fails there); the line is set aside because its conclusion is the flux half and its length is not physical. OPEN, not moved: (TB)_n for SU(2), (CB-mom) (= O2 of row 1018), (SER), (SPR), (EV-STEP), (LIOU), (BDD-Delta), (W).

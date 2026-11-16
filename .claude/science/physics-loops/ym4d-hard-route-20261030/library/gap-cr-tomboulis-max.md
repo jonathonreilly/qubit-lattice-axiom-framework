@@ -262,3 +262,238 @@ below uses this form.
 
 - Step 2 done. In one sentence: after Proposition BR the decimation line is Ito's flow at r = 1 plus the single
   comparison inequality (TB)_n, and (K-RESP) is the smallness of u_f.
+
+## 3. Step 3 result: registry grep before the attack (rule 0a), and what is found again
+
+Done at 00:17Z. `library/open-core.md`: no line on Tomboulis, Kanazawa, decimation, Migdal-Kadanoff, a vortex
+container, (K-RESP), (SER), (SPR) or a bracket (grep, zero hits). `library/l17c.md`: zero hits. FINISH rows that
+name these objects: 47 (list by `awk` on the row text), of which the ones that hold a statement used below are:
+
+| Earlier item | Where | What it holds | Relation to this row |
+|---|---|---|---|
+| Item 16 of the second brainstorm (row 876) | `library/gap-brainstorm2-max.md` L163, L221 | "The true model differs at bond moving, which bounds Z but not the ratio Z(twist)/Z ... Needs: a sign for the effect of bond moving on the ratio." | **(TB)_n of 2.4 is this need, with quantifiers.** Proposition SIGN (Section 7) answers it for Z_2: no sign. |
+| "Carry by decimation inequalities" (row 978) | `library/gap-ladder-max.md` L224 | found again there; "bond moving bounds Z, not the ratio that the seed reads" | same |
+| C14, Migdal-Kadanoff sandwich (row 889) | `library/gap-next3-max.md` L361 | REJECTED: "bounds log Z with an extensive error and treats U(1) and SU(2) alike" | the extensive error is Kanazawa's mismatch; 5.2 below says what it is in the lane's variables |
+| Form F (row 735) | `library/gap-form-exercise.md` L141-145, L348 | the decimation line as "base, one-way step, sufficiency"; Ito's theorem quoted | Proposition BR is the exact one-way step |
+| Numeric guide run of the Migdal-Kadanoff map (row 670) | `library/gap-skeleton-max-b.md` 2.4, item 1 | "The effective coupling ... drops by D = 0.2515 per step at beta = 12, 16, 20 ... c_a = ln 2/D = 2.756. (The true one-loop value is 2.692.)" | the rate of 5.3; a hand derivation of 1/4 is added there |
+| Check 799 B2, B5 | `library/gap-tomboulis-check-opus.md` L114-118, L174-186 | the bracket form; the 2008 sign is a convention | Proposition BR (a)-(e) |
+| Row 800 (K17), (K21) | `library/gap-kanazawa-astra.md` | the mismatched representation encodes any ratio; D = H_f - H_c | 2.5; Section 6 |
+| Row 802 | FINISH row 802 RESULT | "Kanazawa inverse representations exist with F(a) = epsilon at every size, so they give no recursion"; a size recursion needs a quartic exponent | Section 6 does not attempt a size recursion (row 802 holds it) |
+| Row 1018 Lemma PAR, Corollary MP, (T-vor), O2 | `library/gap-short-step-max.md` 3.2, 3.4, 7.3, 7.4 | the parallel law on pinned containers; (SER), (SPR) open | Section 6 writes the torus form and reads (K-RESP) through it |
+| Row 1017 Theorem CR, Propositions OM, SI, Lemma PT-inf | `library/gap-compact-rigidity-max.md` 3.5-3.7, 4.1 | the limit set Omega | Section 5 |
+
+I do not attack (SER), (SPR), (CAS), (LIOU), (EV-STEP), (BDD-Delta) or a size recursion for the twist free
+energy (row 802): each is held by a row. Where a step below reduces to one of them I name the match and stop.
+
+Cross-branch search (main and PR 10114): not run in this row. Rows 797 and 800 ran it for the same names on
+2026-11-12 and found only the soft route's Migdal-Kadanoff toy and its literature note. So no item below is
+called new beyond this lane's files at fe79776a6.
+
+## 4. Step 4 result (Question 4, run first as the row orders): the tests
+
+Valid form (`parts/gap.md` L196-199): a tool is a hypothesis H with a written proof of "H(M) implies T(M)". A
+model M' refutes the tool only if H(M') holds and T(M') fails. Otherwise it says what a proof of H must use.
+
+### 4.1 The three candidate tools of the combination
+
+- **Tool DEC** (the decimation line after Proposition BR). H_DEC = (O-flow)_(b,r) and (TB)_n for all n >= n_0(beta)
+  and all admissible tori. Written implication: H_DEC gives the area bound of the odd-flux weight at that
+  coupling, u(Lambda) <= u(Lambda(n); c^U(n)) <= C (L_3 L_4/b^(2n)) exp(- kappa L_1 L_2/b^(2n)) (T (6.6)-(6.14),
+  whose convergence is cited there, not proved; for a one-character coarse weight row 800 (K18) proves it). Its
+  T is therefore **T_flux at one coupling**: the odd-flux weights of the six planes tend to 0 on large tori.
+  T_flux is not T_fix, T_per or T_W (4.3).
+- **Tool CMP** (the combination asked for in Question 2). H_CMP = "the compactness of Omega supplies (O-match)_n
+  or (TB)_n". It has no written implication. Section 5 tests whether one can be written.
+- **Tool VOR** (Question 3). H_VOR = Lemma PAR and Corollary MP on containers. Written implications: PAR (iii)
+  and MP (row 1018). The question is whether they give (K-RESP).
+
+### 4.2 Three lemmas the table uses (PROVED here; Z_2 in full in Section 7)
+
+**Lemma FAC (the decimation map respects products).** Let G = G_1 x G_2 with the product weight
+f(U, V) = f_1(U) f_2(V), f_i positive class functions with non-negative coefficients. Then M_(b,r)(f) =
+M_(b,r)(f_1) M_(b,r)(f_2) and F_0' = F_0'^1 F_0'^2. If -1 is a central involution of G_1, the twist by (-1, 1)
+has rho(n; f) = rho(n; f_1).
+Proof. The irreducible characters of G are chi_j(U) chi_k(V), of dimension d_j d_k. f^(b^2) = f_1^(b^2) f_2^(b^2),
+so Fhat_(j,k) = Fhat^1_j Fhat^2_k and chat_(j,k) = chat^1_j chat^2_k, with chat_0 = 1 in each factor. A power of a
+product is the product of the powers. The Haar integral over G-valued links factorizes, and the twist changes
+f_1 only, so Z^(12) = Z_1^(12) Z_2. QED
+
+**Proposition SIGN (Z_2; proof in 7.2).** For the Z_2 gauge theory with weight 1 + c s_p on a torus whose sides
+are multiples of b with quotients at least 3: (TB)_1 holds for all small c > 0, and fails for all c close to 1,
+for every r in (b^(-16/9), 1]. In the second range the decimated model has the **smaller** odd-flux weight.
+
+**Estimate RATE (ARGUED: a small-angle computation, not a proof; it agrees with the lane's run).** On SU(2) = S^3
+with psi the distance to the identity, the heat kernel is K_tau(psi) = const (psi/sin psi) exp(- psi^2/(4 tau)) up to
+images, and convolution adds tau. Then K_tau^zeta = const (psi/sin psi)^(zeta-1) (psi/sin psi) exp(- zeta psi^2/(4 tau)),
+and (psi/sin psi)^(zeta-1) = exp((zeta - 1) psi^2/6 + O(psi^4)). So the power is K at 1/(4 tauhat) = zeta/(4 tau) -
+(zeta - 1)/6, and b^2 r convolutions give tau' = b^2 r tauhat. With beta = 1/(2 tau) (the Wilson weight is
+exp(- beta psi^2/2 + ...)) and zeta = b^(d-2):
+
+    d = 4:  beta' = beta/r - (b^2 - 1)/(3 b^2 r);      d = 5:  beta' = (b/r) beta - (b^3 - 1)/(3 b^2 r).
+
+For d = 4, r = 1, b = 2 the drop is 1/4 per step; the lane's run found 0.2515 (`gap-skeleton-max-b.md` 2.4).
+The true one-loop drop per doubling is (11/(3 pi^2)) log 2 = 0.2575 (c_AF = 3 pi^2/11, `gap-ladder-max.md` L65).
+For every integer b >= 2 the map is slower than the true flow: log b/Delta_b = 3 b^2 log b/(b^2 - 1) is 2.773
+at b = 2, 3.708 at b = 3 and increases, against c_AF = 2.692. For r < 1 the d = 4 map **raises** beta above
+beta_c(r) = (b^2 - 1)/(3 b^2 (1 - r)) (this is Ito and Seiler's remark of 0803.3019 p. 13-14 with a number). For
+d = 5 it raises beta above (b^2 + b + 1)/(3 b^2) at r = 1.
+
+### 4.3 The table
+
+| Test | Tool DEC (decimation line) | Tool CMP (compactness supplies the parameter) | Tool VOR (PAR and MP give (K-RESP)) |
+|---|---|---|---|
+| **Lemma PT** (product with a massless factor) | By Lemma FAC the line for the twist of the SU(2) factor is the line of that factor. So H_DEC of SU(2) gives H_DEC of the product, and the product has no seed (Corollary PT1, given the U(1) theorem). **The line reads one factor: as a tool for T_fix or T_W it is refuted GIVEN H_DEC for SU(2); as a tool for T_flux it is not touched.** This is lead rule W2's clause. | Lemma PT-inf (row 1017): the limit forgets every seeded factor and absorbs every bounded one. A parameter read off Omega would be the same for SU(2) and for SU(2) x (seeded factor), but (TB)_n of the product with the diagonal twist is not (rho = rho_1 rho_2). So Omega does not determine (TB)_n. | PAR holds per central involution and says nothing on the other factor (row 1018 6.2). (K-RESP) of the SU(2) factor is unchanged. Not bound; the consumer of (K-RESP) is. |
+| **Proposition NP** (D contracts on J doublings, no seed) | The line reads no value of D. As a product with a no-seed factor it is bound as under PT. (TB)_1 at strong coupling: holds for Z_2 at small c (Proposition SIGN); for SU(2) not proved here. | Not bound: NP's limits are those of its Ising factor (row 1017 3.7). | not bound |
+| **Theorem D2** (no supremum over tilts) | The line has homogeneous weights and no supremum. Not bound. A proof of (TB)_n through sup-pin boxes would be bound. | not bound | PAR (iii)'s sup form is a supremum over pins: bound. Row 1018 3.4 (caution 2) and 6.2: the sup-pin cost of a thin container is of order beta times its area. So only the moment form of (iii) can feed (K-RESP). |
+| **Lemma SHEET** (no uniformity over coupling fields) | (TB)_n compares two coupling fields (the homogeneous one and the moved one). A form "moving plaquettes never raises rho", uniform over fields or groups, is false (Proposition SIGN). The proof must be for the Wilson field and its own image. | not bound | holds for every strength field; blind |
+| **Compact U(1)** | (O-flow) holds (Ito at r = 1; Kanazawa). (TB)_n fails at large beta and large n, GIVEN Ito's theorem and the torus bound of Ito and Seiler's Theorem 2.2 (2) (cited, not a lane theorem). At the level of rates: the Villain map at r = 1 is beta' = beta up to terms exp(- c beta), so it drifts to strong coupling for ever, and the true theory does not (Coulomb phase). **A proof of (TB)_n must use that the group is not abelian.** | Omega of U(1) holds a photon limit if D is bounded (row 1017 4.2). No parameter exists there, as it must. | PAR-T (6.1) holds with the Z_2 subgroup; its sup and moment bounds are scale invariant with zero gain (row 1018, Lemma SPLIT). (K-RESP) fails. Blind. |
+| **Frozen Z_2, Q_8, 2T** | (O-flow) fails at large beta (row 797 3.1, PROVED there for every finite subgroup). (TB)_1 fails at large beta for Z_2 (Proposition SIGN, PROVED); for Q_8 and 2T the same mechanism is ARGUED in 7.3, not proved. **Both hypotheses fail, so no refutation; a proof of H_DEC must use connectedness twice.** | Omega holds the constants log m. | PAR and MP hold verbatim (row 1018 3.3 (c)); (K-RESP)'s analogue fails for Z_2 above beta = 2.191 (the lane's Peierls bound). **So H_VOR does not give (K-RESP): refuted as a tool.** |
+| **Five dimensions** (`gap-crux-fp.md` F15) | (O-flow) fails at large beta by Estimate RATE (ARGUED); T states d <= 4. **The decimation line sees the dimension, through the flow.** This is the one test where it differs from every proved piece of rows 1017 and 1018. (TB)_n in d = 5 is not needed and not known. | The construction is the same with five sides. | PAR-T holds verbatim; blind |
+
+### 4.4 What the tests say, before any attack
+
+1. **DEC is a tool for T_flux at one coupling only.** By Lemma FAC and Lemma PT it cannot give the seed or (W),
+   whatever is proved about (TB)_n. Its consumer in the lane is route RE (`parts/gap.md` L159, L177), which
+   still needs the even step.
+2. **(TB)_n is not blind.** It fails for Z_2 at large beta (PROVED) and for U(1) at large beta (GIVEN). It holds
+   for Z_2 at small c. So it is a selective inequality, and it is the only one in the line.
+3. **(TB)_n in the range where DEC needs it is the flux half itself.** DEC uses n >= n_0(beta), so the fine torus
+   has sides of at least 3 b^(n_0(beta)) lattice units. There (TB)_n says: the odd-flux weight of the true model
+   is below that of an explicit strong-coupling model. That is T_flux with a rate. So the step from "T_flux"
+   to "(TB)_n" **renames** the flux half of the fixed-coupling crux. By the row's rule this is a FAIL as a step.
+   What Proposition BR adds is only that the rename is exact (one inequality, r = 1, no parameter).
+4. **VOR is refuted as a tool for (K-RESP)** (frozen Z_2). Section 6 gives the exact identity that replaces it.
+5. **CMP has no implication to test.** Section 5 shows why none can be written.
+
+- 00:17Z Step 3 and Step 4 written. Step 5 (Question 2) next.
+
+## 5. Step 5 result (Question 2): does the compactness of Theorem CR or Proposition OM supply the parameter?
+
+**Answer: no. FAILS, with three written reasons (5.1-5.3) and one conditional theorem that says what the
+combination does give (5.4).** Everything marked PROVED is by hand here and unchecked.
+
+### 5.1 The compactness the decimation argument needs is already there; what is missing is a sign (PROVED)
+
+By Proposition BR (c) the parameter alpha* exists if and only if rho_f lies in the range of the continuous
+function rho_c on the **compact** interval [0, 1]. The range is [min rho_c, 1]. So the only way to fail is
+rho_f < min rho_c: a strict inequality at the lower end. No compactness of a domain can turn that sign.
+
+The same in the printed form. Tomboulis's Psi(1, t) is a function of t through alpha(t) only, alpha(.) is
+increasing, and by row 797 2.1 Psi(1, t) = 0 is Q_c(alpha(t)) = Q_f. Reparametrised by alpha in [0, 1] the domain
+is compact. Kanazawa's example Psi = e^(-t) - 1 + 2 lambda (row 797 2.1) has the same structure: with s = e^(-t)
+in [0, 1] it is s - 1 + 2 lambda, the root s = 1 - 2 lambda leaves the compact domain at lambda = 1/2, and
+Psi(1, s) = s + 1 has one sign on all of it. A branch is trapped exactly when the end-point sign is right.
+The 2008 "bounded invariant domain" is this sign (Proposition BR (e)).
+
+So the row's sentence "by compactness a strict decrease on every element of Omega is automatically uniform"
+(check 1019, 6.5 (i)) has no place to act here: (TB)_n is not short of uniformity. For a fixed torus it is one
+inequality between two numbers.
+
+### 5.2 The parameter is a Casimir datum of two models, and Omega holds the data of one (PROVED)
+
+**Identity MIS.** Fix h and t. Let A be the fine model with bulk free energy f_A per site, and B(alpha) the coarse
+model with weight ctilde(alpha) and bulk free energy f_B(alpha) per site. Let alpha_n be the level parameter of
+2.2 (I) for the fine torus b n and the coarse torus n. Put G(alpha) = 6 h(alpha, t) log F_0^U + f_B(alpha). Then for
+every torus n
+
+    Delta_A(b n) - Delta_B(n; alpha_n) = |n| (G(alpha_n) - b^4 f_A).
+
+Proof. (I) reads F_A(b n) = 6 |n| h(alpha_n, t) log F_0^U + F_B(n; alpha_n) (a torus n has 6 |n| plaquettes).
+Subtract b^4 f_A |n| on the left and f_B(alpha_n) |n| on both sides. QED
+
+Consequences. (a) The left side is a difference of Casimir free energies; the right side is extensive. So a
+parameter alpha_inf common to tori n of unbounded volume with bounded Casimir free energies has G(alpha_inf) =
+b^4 f_A, and then Delta_A(b n) = Delta_B(n; alpha_inf) on all of them: **a common parameter is the statement that
+the fine model at the sizes b n and one coarse model at the sizes n have the same Casimir free energy.** (b) The
+same holds with Z^+, so the parameter common to Z and Z^+ on one torus is the statement that they have the same
+twisted quotient (this is Proposition BR (b) again). (c) This is Kanazawa's mismatch (row 800 (K2), (K7); row
+797 2.3) in the lane's variables: an error of order 1/|n| in alpha is an error of order one in Delta.
+
+What it says for Question 2. The quantities that (O-match) equates are of the kind that Omega records (Delta
+and the twisted quotients, Theorem CE (b), (e)). But they belong to **two** models: the trajectory, and an
+auxiliary strong-coupling model. Omega is built from the trajectory alone, and by row 1017 3.4 it forgets the
+action; the decimation map acts on the action and on nothing else. By Identity MIS it does not even induce a map
+on data, because alpha_n depends on the torus. So there is no map on Omega whose invariant set, fixed point or
+recurrent point (Proposition OM (c), (d)) could be a trapping domain. Mark: FAILS as a construction; I found no
+statement to write.
+
+One check that Omega does not determine (TB)_n (ARGUED): let M be Wilson SU(2) times an SU(2) factor at strong
+coupling, with the twist by (-1, -1). Its blow-down limits along a common sequence are those of the first factor
+(Lemma PT-inf (ii), with repair D12 of check 1019). Its bracket is rho_1 rho_2 >= rho_1' rho_2' (Lemma FAC), which
+holds or fails with the size of the second factor's margin. Two families with the same limits have different
+brackets.
+
+### 5.3 The one thing the bracket would give to Omega, and the test against Proposition SI (PROVED as a conditional)
+
+**Setting.** A trajectory (a_j, beta_j) with units u_j (multiples of 4), (BDD-Delta) with a bound D_0, and the
+set Omega = Omega(D_0) of row 1017 3.5 with repair D2. Let Omega^gr be the set of limits (Delta_*, zeta_*) of
+admissible sequences along which the twisted quotients converge as well (Theorem CE (e)); it is compact and
+invariant under the doubling, by the proof of Proposition OM (a) with countably many more coordinates in [0, 1].
+For E in Omega^gr and x in DD put u_E(x) = (1 - zeta_E^(12)(x, x, x, x))/2. It is the limit of
+u_(j_i)(2^(k_i) u_(j_i) x), the odd-flux weight of the plane (1,2) on the cube of that side. u_E(x) = 0 means that
+every level of the cube that is odd under the flip of that plane is at + infinity.
+
+**Hypothesis (DEC-traj).** b = 2. For all large j: (O-flow) holds at beta_j with a step number n_j = n_0(beta_j),
+(TB)_(n_j) holds at beta_j on every cube of side N with N/2^(n_j) an integer at least 3, and the coarse models obey
+u(N'^4; c^U(n_j; beta_j)) <= g(N') for N' >= 3, with one non-increasing g that tends to 0 (T (6.6)-(6.14) would
+give g(N') = C N'^2 exp(- kappa N'^2)).
+
+**Proposition RS (the rate decides).** Assume (DEC-traj). Let (j_i, k_i) be an admissible sequence with limit E, and
+put N'_i(x) = 2^(k_i - n_(j_i)) u_(j_i) x.
+- (i) If N'_i(1) tends to infinity, then u_E(x) = 0 for every x in DD: E is centre-even on cubes for the plane
+  (1,2), and by the symmetry of the sides for every plane.
+- (ii) If N'_i(1) tends to 0, the hypothesis gives no inequality for E at any scale.
+- (iii) If (RATE): sup over j of 2^(n_j)/u_j is finite, then (i) holds for every element of Omega^gr. If instead
+  2^(n_j)/u_j tends to infinity and Omega is not empty, then there are admissible sequences of kind (ii).
+
+Proof. (i) For fixed x and large i, N'_i(x) is an integer at least 3 (u_j is a multiple of 4 and k_i - n_(j_i) +
+log_2 x tends to infinity through integers when N'_i tends to infinity). Then (TB) and the coarse bound give
+u_(j_i)(2^(k_i) u_(j_i) x) <= g(N'_i(x)), which tends to 0. (ii) For each x, N'_i(x) < 3 for large i, so no cube of
+the sequence at the scale x admits n_(j_i) halvings, and (DEC-traj) says nothing about it. (iii) First part:
+N'_i(1) >= 2^(k_i)/sup(2^(n_j)/u_j), and k_i tends to infinity. Second part: in the construction of Theorem CE
+(i)(b) the index j_i is any large enough member of the subsequence J of Lemma UF; every condition on it holds
+for all large j in J. Add the condition 2^(n_j)/u_j > 2^(k_i + i). Then N'_i(x) < x 2^(-i). QED
+
+**The rate (ARGUED, from Estimate RATE and the lane's run).** n_0(beta) is (beta - const)/Delta_2 up to lower
+order, with Delta_2 = 1/4 (hand) or 0.2515 (run), so log 2^(n_j) = 2.77 beta_j or 2.756 beta_j. The trajectory has
+log u_j = c_AF beta_j + O(log beta_j) with c_AF = 2.692 (`gap-ladder-max.md` L65). So 2^(n_j)/u_j grows like
+exp(0.06 beta_j) to exp(0.08 beta_j): (RATE) fails, and the second case of (iii) is the actual one. For r < 1 or
+b >= 3 the map is slower still. This is not an accident of the scheme. (TB)_n with (O-flow) gives the bound
+sigma_true(beta) >= sigma_MK(beta) for the 't Hooft string tension in lattice units. If a bounding flow were
+faster than the true flow, that bound would exceed the true value at large beta (a BELIEF about the true
+scaling, not a theorem). So **a one-sided decimation bracket can be true only for a flow that is too slow to
+reach a physical size.**
+
+**Reading against Proposition SI.** A kept property holds at every scale of every element of Omega (SI, with
+repair D14: the statement is about conditions on a fixed range of scales). The decimation bound starts at the
+physical size L_MK(j) = 2^(n_j) a_j, which runs to infinity along the trajectory. In the limit it is a condition
+"from the scale X on" with X = lim 2^(n_(j_i))/(2^(k_i) u_(j_i)), and X can be + infinity. So it is not kept. It is
+kept exactly under (RATE), and then it is the sigma-invariant property "centre-even". **The property that the
+argument needs and the decimation flow does not keep is the unit of length:** the flow has its own scale
+2^(n_0(beta)), which is not the trajectory's.
+
+### 5.4 What the combination gives at one coupling (PROVED GIVEN H_DEC; it is the even half, found again)
+
+At one coupling the family is constant, n_0(beta) is fixed, and every admissible sequence has N'_i tending to
+infinity. So:
+
+**Corollary EVEN.** Let Wilson SU(2) at one beta have D(a) <= D_0 for a >= a_0, and let H_DEC hold at beta with
+b = 2. Then every element of Omega^gr of that coupling is centre-even on cubes. So, with Theorem CE (i)(a) and
+Proposition OM (b), (d): the seed at beta holds if and only if there is no centre-even uniformly recurrent
+critical element of that coupling.
+
+This is the statement that a flux bound leaves the even sector, in the limit language. The lane holds it as
+route RE (the even step, row 731; `parts/gap.md` L114, L159). It is not new, and it does not need the limit:
+u tends to 0 directly. It is recorded because it is the complete answer to "what does CR add to the decimation
+line": the form of the remaining half, and nothing in the flux half.
+
+### 5.5 Result of Question 2
+
+- The common interpolation parameter and the trapping domain are one end-point sign, (TB)_n (5.1). Compactness
+  does not supply a sign. FAILS.
+- Omega holds the O(1) data of the trajectory and no action; the decimation acts on actions and its exact
+  representation has a torus-dependent parameter (Identity MIS). No map on Omega comes from it. FAILS.
+- Given the bracket, its consequence is kept by the limit only under (RATE), and (RATE) fails at one-loop
+  order for every integer b (ARGUED). On the trajectory the combination gives nothing. At one coupling it gives
+  the even half (Corollary EVEN), which the lane already has as route RE.
+- 00:19Z Step 5 done. Step 6 (Question 3) next.

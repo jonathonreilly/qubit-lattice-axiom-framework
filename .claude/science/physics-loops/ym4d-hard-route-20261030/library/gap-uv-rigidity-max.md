@@ -34,7 +34,7 @@ skill's steps are now folded in; still eight steps).
 
 1. Sources and scope: **done** (Section 1).
 2. Inventory and reasoning up: **done** (Section 2). PROVED here: Lemma ALPHA, Corollary KEPT, Lemma REC (link (b)).
-3. Task (1): not started.
+3. Task (1): **done** (Section 3). Link (a) FAILS as a kept condition (counterexample TS, PROVED); for a value outside [d_min, D_0] it is equivalent to (W) given (BDD-Delta) (PROVED); CE cannot be strengthened to keep it (Proposition TWO, Lemma EXCL, PROVED).
 4. Task (3): not started.
 5. Task (4): not started.
 6. Routes and attempts: not started.
@@ -303,3 +303,207 @@ SI. (3) Link (b) is therefore right as the lead states it, and more is true: (ii
 
 Point where this step stops: the exact trajectory form of (a), its uniformity, the two-ended object and the
 counterexample are Step 3.
+
+## 3. Step 3 result (Task 1): link (a), stated exactly; the uniformity it needs; why no construction keeps it
+
+Everything in 3.1-3.6 is proved by hand here from Section 2, Theorem CE, Proposition OM and Theorem S. Nothing is
+checked by another model. No run was made.
+
+### 3.1 The exact statement of (a)
+
+Fix the family with units, a bound (L_0, D_0) of (BDD-Delta), and Omega = Omega(D_0). An **ultraviolet value** is a
+number c_UV computed from the trajectory at bounded physical sizes. Two forms occur in the row:
+
+- (fixed size) c_UV = D^+(L_1) for one size L_1 of P "just above first passage";
+- (limit) c_UV = the limit of D^+(L) as L -> 0, in [0, +infinity]. This needs sizes below l_1, so a finer grid:
+  **(S0-Z)** for every integer i <= 0, 2^i u_j/4 is an integer at least 3 for all large j (depending on i);
+  P_Z := {2^i l_1 : i in Z}. (The account's tori have side 2 L^m with L odd, PS L63, so (S0-Z) is not the
+  account's setting. It is used here only to give the limit form a meaning.)
+
+**Link (a), exact form.** (UV-KEPT; c_UV): for every E in Omega, D_E(2^m) -> c_UV as m -> -infinity. In the notation
+of 2.3 this is (ASY; Lambda_D, c_UV). For another continuous functional Lambda (a twist ratio, s_*(1), z_*(1), which
+are continuous on Omega by Lemma LV) the form is (ASY; Lambda, c_UV), and every statement below holds for it with
+Lambda(Omega) in place of [d_min, D_0].
+
+**Proposition A1 (what (a) is; PROVED, a restatement of Corollary KEPT).**
+
+- (1) (UV-KEPT; c) holds if and only if Lambda_D = c on the set A of 2.3.
+- (2) If Omega is not empty and (UV-KEPT; c) holds, then d_min <= c <= D_0, and a critical element E' of the
+  trajectory has D_E' = c at every scale. E' is a limit of an admissible sequence; so D_(j_i)(2^(k_i + m) u_(j_i)) -> c
+  for every integer m along that sequence (a plateau at the value c along one admissible sequence).
+- (3) If c lies outside [d_min, D_0], or the ultraviolet law is "D diverges", then (UV-KEPT) holds if and only if
+  Omega is empty. Given (BDD-Delta) with this bound, that is (W) (Theorem CR, (1) iff (3)).
+
+So link (a) has two cases. With a value outside the range that critical elements allow, it is the wall in other
+words. With a value inside the range, it asserts a plateau of D on the infrared limit objects, and the ultraviolet
+enters only through the claim that the plateau value equals c_UV.
+
+### 3.2 The uniformity in the trajectory that gives (a)
+
+**(PLATEAU; c).** For every eps > 0 there are L_eps in P, an integer R_eps >= 0 and j_eps such that: for every
+j >= j_eps and every L in P with L >= L_eps, if the lattice j has no seed at the size 2^(R_eps) L (that is,
+S_j(2^(R_eps) L/(2 a_j); (2^(R_eps) L/a_j)^3) >= 1/5041), then abs(D_j(L/a_j) - c) <= eps.
+
+**Proposition A2 (PROVED).** (i) (PLATEAU; c) implies D_E(b) = c for every E in Omega and every dyadic b, hence
+(UV-KEPT; c). (ii) (UV-KEPT; c) with Omega not empty implies the plateau along one admissible sequence (A1 (2)).
+
+Proof of (i). Let E be the limit of the admissible sequence (j_i, k_i), b = 2^m, eps > 0. For large i: j_i >= j_eps;
+the size L := 2^(k_i + m) l_1 is in P and at least L_eps (k_i -> infinity); and (H2) at the scale m + R_eps says that
+the lattice j_i has no seed at the size 2^(R_eps) L. So abs(D_(j_i)(2^(k_i + m) u_(j_i)) - c) <= eps for large i, and
+abs(D_E(2^m) - c) <= eps. QED
+
+In words: (a) needs that, far below the first seed size and far above the unit, the Casimir free energy of the
+trajectory sits at one value. This is a statement at physical sizes that tend to infinity. It is not a statement
+about the ultraviolet, and no ultraviolet statement gives it (3.4). I know no reason to expect it for SU(2). For a
+theory whose coupling runs it says that the running stops.
+
+### 3.3 The object that keeps the ultraviolet data, and why it cannot be recurrent
+
+Three kinds of sequences can be extracted from the family, by the behaviour of k_i:
+
+- k_i -> +infinity: the blow-down limits, Omega (Theorem CE). Every scale of the limit is infrared (Lemma ALPHA).
+- k_i bounded: the continuum datum at fixed physical sizes (below).
+- k_i -> -infinity: a zoom into the ultraviolet. If D diverges at small sizes there is no finite limit.
+
+**Proposition TWO (the two-ended object; PROVED given (S0-Z) and (TH-Z)).** Assume (S0-Z) and **(TH-Z)**: D^+(L) is
+finite for every L in P_Z. Then:
+
+- (i) Along a subsequence J' of the lattices, Delta_j(u_j x) converges for every x in DD^4, to an eternal datum E_c
+  with the spectral form of CE (b) in each direction.
+- (ii) liminf over j of D_j(L/a_j) <= D_(E_c)(L/l_1) <= D^+(L) for every L in P_Z. So the minus-infinity end of E_c
+  is the ultraviolet behaviour of the trajectory.
+- (iii) If (PHYS-SEED) fails, J' can be chosen so that s_(E_c)(b) >= 1/5041 at every dyadic b.
+- (iv) If (PHYS-SEED) fails and (BDD-Delta) holds with the bound (L_0, D_0), then the set omega(E_c) of limits of
+  sigma^(t_n) E_c, t_n -> +infinity, is not empty, closed, sigma-invariant, and contained in Omega(D_0).
+
+Proof. (i) Fix x with least entry mu. By A2 (R L80; valid for every datum, CO fact (F1)),
+Delta_j(u_j x) <= (x_1 x_2 x_3 x_4/mu^4) D_j(u_j mu) <= (x_1 x_2 x_3 x_4/mu^4)(D^+(mu l_1) + 1) for large j. The rest is
+Steps 1-4 of the proof of Theorem CE (ii) with these bounds: a diagonal subsequence on the countable set of
+quadruples and levels, and the tail bound at the time T/2. (ii) A limit along a subsequence lies between the lower
+and the upper limit. (iii) Take J' inside the subsequence of Lemma UF: for every l in P, S_j at the size l is at
+least 1/5041 for all large j in it. For a size 2^i l_1 with i < 0: a seed there gives a seed at each doubling
+(Theorem S; R L164), so a seed at l_1; so for large j in the subsequence there is none. The thermal sums converge
+(Step 4 of CE), and the closed inequality passes to the limit. (iv) For 2^t mu l_1 >= L_0 the values
+E_c(2^t x) <= (x_1 x_2 x_3 x_4/mu^4) D_0 are bounded, so limit points exist. Let sigma^(t_n) E_c -> E' pointwise,
+t_n -> +infinity; pass to a subsequence with 2^(t_n - n) l_1 >= L_0. Enumerate DD^4 as x_1, x_2, .... For each n choose
+j_n in J', j_n >= n, j_n > j_(n-1), so large that: abs(Delta_(j_n)(2^(t_n) u_(j_n) x_p) - E_c(2^(t_n) x_p)) <= 1/n for
+p <= n; D_(j_n)(2^(t_n + m) u_(j_n)) <= D_0 + 1/n for abs(m) <= n; and the lattice j_n has no seed at the sizes
+2^(t_n + m) l_1, abs(m) <= n. Each condition holds for all large j in J' (convergence at finitely many quadruples;
+the upper limit in (BDD-Delta) at finitely many sizes, all at least L_0; Lemma UF). Then (j_n, t_n) is an
+admissible sequence with the bound D_0, and its limit at x_p is the limit of E_c(2^(t_n) x_p), which is E'(x_p).
+Closed and invariant: as in Lemma ALPHA (i). QED
+
+**Lemma EXCL (the two properties exclude each other; PROVED).** Let E be an eternal datum.
+
+- (i) If E returns to each of its neighbourhoods at times that are unbounded below (in particular if E is
+  uniformly recurrent) and D_E(2^m) has a limit c as m -> -infinity, then D_E = c at every scale.
+- (ii) If D_E(2^m) -> +infinity as m -> -infinity, then E does not return to its neighbourhoods at times that are
+  unbounded below.
+
+Proof. (i) is the proof of Lemma REC (i) for the coordinate Lambda_D; it uses no property of Omega. (ii) A return
+at the time t to the neighbourhood {abs(E''(1, 1, 1, 1) - E(1, 1, 1, 1)) < 1} gives D_E(2^t) < D_E(1) + 1, which fails
+for all t below some bound. QED
+
+**Corollary A3 (the answer to "can CE be strengthened to keep it").** No. The object that keeps the ultraviolet
+data is E_c (k_i bounded). If the Casimir free energy of the trajectory is not the same at all sizes, E_c is not
+recurrent, so link (b) does not apply to it. The objects to which link (b) applies lie in Omega, and by Lemma ALPHA
+their minus-infinity end is infrared. The two ends are joined by E_c alone: its minus-infinity end is the
+ultraviolet, and its plus-infinity end omega(E_c) lies in Omega (TWO (iv)). No object has both properties, unless D
+is constant from the ultraviolet to the infrared.
+
+**Corollary CR-1 (the one-orbit form of Theorem CR; PROVED given Theorem CR; (S0-Z) is not needed).** Given (S0)
+and (BDD-Delta) with the bound (L_0, D_0), (PHYS-SEED) fails if and only if some subsequential continuum datum E_c on
+the sizes of P has no seed at any size of P. Then omega(E_c) is a non-empty closed invariant subset of Omega(D_0),
+and it contains a uniformly recurrent element (the proof of OM (d) applies to any non-empty compact invariant
+set).
+
+Proof. If (PHYS-SEED) fails: TWO (i), (iii), (iv) on the sizes of P, where (TH-Z) is (BDD-Delta) from L_0 on and
+finiteness of D^+ on the finitely many sizes below L_0; if D^+ is infinite at one of these, start the grid at L_0.
+If (PHYS-SEED) holds at l with the margin q' < 1, then S_j <= q'/5041 at l for all large j, and every subsequential
+limit has s(l) <= q'/5041 < 1/5041. QED
+
+This is the form (R2-two) of row 1017 (R L319), now with its limit set: the wall is the statement that the
+continuum datum of the trajectory, which is asymptotically free at one end, has a seed at the other.
+
+### 3.4 What joins the two ends: only the orbit E_c (Remark MON as a statement)
+
+**Proposition MON+ (PROVED given Proposition TWO).** Let Lambda be continuous on the closure of the forward orbit of
+E_c, with Lambda(sigma^(t+1) E_c) <= Lambda(sigma^t E_c) for t >= t_0. Then Lambda is constant on omega(E_c), with the value
+Lambda_IR := lim of Lambda(sigma^t E_c) = inf over t >= t_0. In particular: if D_(E_c)(2b) <= D_(E_c)(b) for b >= b_0,
+then every element of omega(E_c) has D = c_IR := the limit of D_(E_c)(b) as b -> infinity, at every scale.
+
+Proof. A non-increasing sequence that is bounded below converges. For E' in omega(E_c) and an integer s,
+sigma^s E' = lim of sigma^(t_n + s) E_c, so Lambda(sigma^s E') = Lambda_IR by continuity. QED
+
+So a constant D on the limit objects comes from **monotony** of D along the trajectory, and the constant is the
+**infrared** limit of D. The ultraviolet data enter as the inequality c_IR <= D_(E_c)(b) for each b, and in no other
+way. This is Remark MON of R L284 for the functional D, proved for omega(E_c). Monotony of D along the doubling is
+(MONO-Delta), held by earlier rows (`parts/gap.md` L75); I do not attack it.
+
+### 3.5 Counterexample in the class: the family TS (PROVED; an argued counterexample in the skill's words)
+
+Let m_0 >= 2, p >= 2, rho >= 1 be integers, u_j integers that satisfy (S0) and (S0-Z) (for example u_j = 12 x 2^j), and
+eps_j > 0 with eps_j -> 0. Put
+
+ Z_j(n) = (1 + (m_0 - 1) exp(- eps_j abs(n)/u_j^4)) (1 + (p - 1) exp(- abs(n)/(rho u_j)^4)).
+
+- **It is a family of data.** Each factor is a datum A_(m,eps) of R L253. A product of two data is a datum: the
+  transfer matrices multiply as a tensor product, the top eigenvalue 1 is simple, f = 0 (CO fact (F2)).
+- **Its continuum datum.** Delta_j(u_j x) = log(1 + (m_0 - 1) exp(- eps_j abs(x))) + log(1 + (p - 1) exp(- abs(x)/rho^4)),
+  with abs(x) = x_1 x_2 x_3 x_4. As j grows this tends to E_c(x) = log m_0 + log(1 + (p - 1) exp(- abs(x)/rho^4)). So, with
+  L in units of l_1: D^+(L) = log m_0 + log(1 + (p - 1) exp(- (L/rho)^4)).
+- **Its ultraviolet value** is log(m_0 p), and D^+(L) >= log(m_0 p) - (L/rho)^4 for every L (from 1 - e^(-y) <= y and
+  log(1 + (p - 1) e^(-y)) >= log p - (p - 1)(1 - e^(-y))/p). So D is within eps of log(m_0 p) on all sizes up to
+  rho eps^(1/4) l_1: on as many doublings above the unit as one likes, by the choice of rho.
+- **(BDD-Delta)** holds: D^+(L) <= D_0 := log m_0 + log(1 + (p - 1)/e) for L >= L_0 := rho l_1.
+- **(PHYS-SEED) fails.** For a product 1 + S = (1 + S_1)(1 + S_2), so S >= S_1 = (m_0 - 1) exp(- eps_j l^4/2), which
+  tends to m_0 - 1 >= 1 at every size l.
+- **Its limit set.** Omega(D_0) = {the constant log m_0}. Proof. Let (j_i, k_i) be admissible and
+  gamma_i := eps_(j_i) 16^(k_i). At the scale 2^m: s = (1 + (m_0 - 1) exp(- gamma_i 16^m/2))(1 + (p - 1) exp(- 16^(k_i + m)/(2 rho^4))) - 1.
+  The second bracket tends to 1. If gamma_i did not tend to 0, take gamma > 0 and a subsequence with
+  gamma_i >= gamma, and m so large that (m_0 - 1) exp(- gamma 16^m/2) < 1/10082; then s < 1/5041 for large i of the
+  subsequence, against (H2) at this m. So gamma_i -> 0, and Delta^(j_i,k_i)(x) = log(1 + (m_0 - 1) exp(- gamma_i abs(x))) +
+  log(1 + (p - 1) exp(- 16^(k_i) abs(x)/rho^4)) -> log m_0 for every x. The set is not empty: k_i = i and j_i increasing with
+  eps_(j_i) <= 16^(-3i) is admissible ((H1): D <= log m_0 + (p - 1) exp(- 16^(i + m)/rho^4) <= D_0 + 1/i for large i;
+  (H2): s >= (m_0 - 1) exp(- 16^(m - 2i)/2) -> m_0 - 1).
+- **Verdict on (a) for TS.** The only element of Omega is the fixed point log m_0. It is uniformly recurrent, and
+  its limit at minus infinity is log m_0. The ultraviolet value of the trajectory is log(m_0 p), and its value at
+  every size up to rho eps^(1/4) l_1 is within eps of that. So (UV-KEPT; c_UV) is false for TS in both forms of 3.1.
+
+Remarks. (1) TS has every property that Theorem CE keeps. So no proof of (a) can rest on those properties and on
+the existence of an ultraviolet value. (2) TS is Lemma PT-inf (ii) read at the ultraviolet end: a seeded factor
+adds to the ultraviolet value and adds nothing to the limit. Proposition NP's model (K copies of strong-coupling
+SU(2) times ordered Ising, `library/gap-crux-exercise4-max.md` L383) has the same shape; TS is its abstract form
+and is not a new idea. (3) In TS link (b) holds (the element is constant) and the conclusion of (c) is false in
+the sense that matters: the constant element with the limit value exists.
+
+### 3.6 The blockers named in the row
+
+- **Lemma PT-inf and the product with a massless factor.** "A product's limit also has a limit at minus infinity":
+  yes, and it shows where (a) breaks. Let X be the SU(2) trajectory and Y the family A_(m,eps_j) (or the photon at
+  one coupling, given its limit). If X has a seed, the limit set of X x Y is that of Y (PT-inf (ii)): its elements
+  have D = log m at every scale, while the ultraviolet value of X x Y is that of X plus log m. So for X x Y link (a)
+  is false exactly when X has a seed. If X has no seed, the limits are sums, and (a) for X x Y holds if and only if
+  it holds for X with the X-part of the value. So a proof of (a) that also runs for X x Y would decide whether X
+  has a seed. This is the lead rule W2 once more (`parts/gap.md` L93): the proof must read the whole state space.
+  Mark: PT-inf blocks (a) as a class-wide principle (TS); it does not refute (a) for SU(2) alone, where (a) with an
+  ultraviolet value outside [d_min, D_0] is true exactly when the wall holds (A1 (3)).
+- **Theorem D2** (`library/gap-tiltproof-max.md` L240: every covariance bound that is uniform over tilts obeys
+  kbar >= lam_* k00). (UV-KEPT) and (PLATEAU) speak of the periodic partition functions only; they hold no supremum
+  over tilts, pins or coupling fields. So Theorem D2 and Lemma SHEET do not bind them. They bind one way to prove
+  the uniformity: a bound for the block free energy that is uniform over boundary data.
+- **Proposition NP.** It binds any proof of (PLATEAU) or of monotony that reads finitely many values of D: its model
+  contracts on J doublings and then stalls at log 2.
+
+### 3.7 Result of Task 1
+
+| Statement | Mark |
+|---|---|
+| Link (a) as a principle for families of data with the kept properties of Theorem CE | FAILS (the family TS; PROVED counterexample) |
+| (UV-KEPT; c) with c outside [d_min, D_0], or with a divergent ultraviolet law, is equivalent to "Omega is empty", hence to (W) given (BDD-Delta) | PROVED (A1 (3), Theorem CR): target-equivalent |
+| (UV-KEPT; c) with c in [d_min, D_0]: equivalent to "D = c on A"; implied by (PLATEAU; c); implies a plateau along one admissible sequence | PROVED (A1, A2); the statement itself is OPEN for SU(2), and it is an infrared statement |
+| CE's construction strengthened to keep the ultraviolet data | FAILS: the object that keeps them (E_c, Proposition TWO) is not recurrent unless D is constant (Lemma EXCL); PROVED |
+| The ultraviolet data reach the limit objects only along the one orbit E_c: as an inequality through a monotone | PROVED for a monotone functional (MON+); the monotone itself is (MONO-Delta), OPEN, not attacked |
+| Blockers: PT-inf (class-wide), D2 and SHEET (do not bind (a); bind boundary-uniform proofs of it), NP | as stated in 3.6 |
+
+Point where this step stops: the value c_UV itself (finite or not, for SU(2), U(1), frozen groups) is Step 4.

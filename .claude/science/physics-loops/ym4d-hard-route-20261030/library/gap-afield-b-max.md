@@ -11,7 +11,7 @@ This file is written section by section. Each section states what was done, what
 
 ## 0. Status line (updated in place)
 
-- State: run 2 started 2026-11-16T12:18Z; steps 1-3 done (Sections 1-3); step 4 (ideas, fields C, D, E) in progress.
+- State: run 2 started 2026-11-16T12:18Z; steps 1-4 done (Sections 1-4; fifteen ideas B1-B6, B8-B16 stated); step 5 (kills) in progress.
 
 ## Plan (eight steps, one per response; each appends its result here before the next)
 
@@ -142,3 +142,65 @@ Format of each idea: source in its field; mechanism; the exact statement it need
 ### B7. The relativistic KMS condition as a second engine (kept as a remark, not counted)
 
 The engine of the lane (Theorem S) is a finite-size criterion of Knabe type that uses only (E1)-(E3). In the language of this field it is the relativistic KMS condition of Bros and Buchholz on the torus. I found no second engine in the operator-algebra literature that reads more than (E1)-(E3) without reading the dynamics. This is recorded so that the next row does not look for one there.
+
+## 4. Ideas from geometric analysis, harmonic analysis on SU(2) and topology (step 4)
+
+Notation for this section. A link variable is a unit quaternion U = a_0 + i a.sigma, (a_0, a) in R^4, a_0^2 + abs(a)^2 = 1. The class angle theta in [0, pi] of U is given by a_0 = cos(theta). Haar measure on class functions is (2/pi) sin^2(theta) d theta (Weyl).
+
+### B8. Convexity of the fundamental modular region and of the Faddeev-Popov weight
+
+- Source. Gribov (1978); Zwanziger (1982-1994), the fundamental modular region and the horizon; Semenov-Tyan-Shanskii and Franke (1982); Dell'Antonio and Zwanziger (1989, 1991): every gauge orbit meets the fundamental modular region, which is convex and bounded in every direction. Convex-measure tools: Brascamp and Lieb (1976); Payne and Weinberger (1960).
+- Mechanism. Minimal Landau gauge on the periodic lattice: maximise F_U(g) = sum over links of (1/2) tr(g_x U_xy g_y^(-1)) over gauge maps g. For fixed g the map U -> F_U(g) - F_U(1) is linear in the ambient coordinates (a_0, a) of the links. So (i) the fundamental modular region Lambda = {U : F_U(1) >= F_U(g) for all g} is the product of spheres cut by a convex cone of (R^4)^E; (ii) the gauge condition (lattice divergence of a = 0) is linear in a; (iii) the Faddeev-Popov operator M(U) (the Hessian of -F_U at g = 1) is linear in (a_0, a); in the chart a (upper hemispheres a_0 > 0) the map a -> M is operator concave, so log det M is concave on the Gribov region, and Lambda is convex there. A convex region with a log-concave weight is the setting of Brascamp and Lieb. A Poincare inequality in the chart passes to gauge-invariant functions, because the chart gradient of an invariant function is a projection of its full gradient.
+- Statement needed. (FMR-cvx): there are a chart of Lambda and kappa > 0, independent of the torus, such that the gauge-fixed four-dimensional measure (Haar times det M times the Wilson weight) has a density exp(-Phi) with Hess(Phi) at least kappa on the chart image of Lambda, at the couplings of the band.
+- Consumer. A Poincare inequality of the four-dimensional measure on gauge-invariant functions with a volume-free constant; this is a unit-level functional inequality of route RF ((U2) of row 982), which with (TH) gives (W).
+
+### B9. Operator Jensen for the Faddeev-Popov operator
+
+- Source. Zwanziger (2003), "no confinement without Coulomb confinement"; Gribov (1978); the operator Jensen inequality (Hansen and Pedersen) and the Kadison-Schwarz inequality.
+- Mechanism. On the Gribov region M(U) >= 0 and M is linear in (a_0, a). For a gauge-fixed measure that is invariant under global colour rotations and lattice symmetries, the mean of M is u_0 (-Laplace) with u_0 the mean of a_0 over a link. The inverse is operator convex, so mean(M^(-1)) >= (u_0 (-Laplace))^(-1) off the constants: the ghost propagator is enhanced at every coupling, an exact inequality. In the same way mean(M^(-1) (-Laplace) M^(-1)) >= mean(M^(-1)) (-Laplace) mean(M^(-1)): the colour-Coulomb kernel dominates.
+- Statement needed. An implication from an infrared enhancement of mean(M^(-1)) (the horizon condition) to the decay of gauge-invariant correlations. Zwanziger's inequality goes the other way (the Coulomb potential bounds the Wilson potential from above), so it gives a necessary condition for confinement only.
+- Consumer. None found.
+
+### B10. The Hamiltonian as the Witten Laplacian of the Chern-Simons functional; the stochastic anti-self-duality equation; an imaginary theta
+
+- Source. Chern and Simons (1974); Witten (1982), supersymmetry and Morse theory, and (1988), topological field theory; Floer (1988); Atiyah and Bott (1983); Nicolai (1980); Parisi and Sourlas (1979); Baulieu and Singer (1988); Vafa and Witten (1984). This frame has no hit in the lane (Section 2.2).
+- Mechanism (continuum, formal). In temporal gauge H = (g^2/2) E^2 + (1/(2 g^2)) B^2 and B = grad CS, CS the Chern-Simons functional of the spatial connection. Put Q = g d/dA + B/g. The trace of the Hessian of CS is zero, so H = (1/2) Q* Q: the Hamiltonian is the Witten Laplacian on functions of the "Morse function" CS. The formal zero mode exp(-CS/g^2) is not normalisable and not invariant under the gauge maps of winding number one, so E_0 > 0; the form d CS is closed on the orbit space and not exact (its period is 8 pi^2: pi_3(SU(2)) = Z). Consequences, all formal: (a) exp(-t H) = exp(-CS/g^2) P_t exp(CS/g^2), where P_t is the Markov semigroup of the stochastic equation dA/dt = -B(A) + g (white noise), the noisy anti-self-duality equation; (b) the Euclidean measure is the path measure of that equation times exp(-(8 pi^2/g^2) Q_top): Yang-Mills at the imaginary angle theta = i 8 pi^2/g^2 (= 2 pi^2 beta i for beta = 4/g^2) is a causal stochastic equation, and Z(theta) is the generating function of the winding of that diffusion at a complex argument; (c) E_0(theta) is the large-deviation function of the winding number.
+- Why it looked promising. The structure uses dimension four (self-duality of 2-forms), a Lie group with pi_3 = Z (not U(1), not a finite group), and it is exact. It is the only object I found that meets K5, K6 and K7 by its definition.
+- Statements needed. (CS-lat): a lattice form, that is a closed and not exact gauge-invariant 1-form omega on the space of spatial link configurations with (1/2) abs(omega)^2 - (1/2) div omega equal to the Wilson potential up to a constant. (CS-carry): a carrier from theta = 2 pi^2 beta i to theta = 0 for the gap.
+- Consumer. With both: the gap as the spectral gap of a non-reversible diffusion, a new object for (W). Without (CS-lat): none on the lattice.
+
+### B11. Monotonicity of the Yang-Mills heat flow in dimension four (on file; not counted)
+
+Hamilton (1993), Chen and Shen (1994), Struwe (1994) for the monotonicity formula; Uhlenbeck (1982) for epsilon-regularity; Luscher (2010) for the lattice flow. For a translation-invariant random field the formula reduces to "the mean flowed energy e(t) does not increase", which holds for every group. A one-sided bound on t^2 e(t) is the sign of the non-perturbative beta function in the flow scheme: (CAS) or (DRIFT) renamed. On file: `prior/gap-outside-read-opus.md` L479-531 (row 1005, topic F). Not redone.
+
+### B12. The class-angle density of states: SU(2) gauge theory as a positive model on a polytope of spherical polygon inequalities
+
+- Source. Weyl's integration formula; the product of two conjugacy classes of SU(2) (elementary); Witten (1991), volumes of moduli spaces of flat connections; Jeffrey and Weitsman (1992), bending flows and the toric structure; Kapovich and Millson (1996), polygon spaces; Agnihotri and Woodward (1998); Duistermaat and Heckman (1982); Prekopa (1973) and Brunn-Minkowski for marginals of log-concave measures. Row 1016 used Goldman and Jeffrey-Weitsman as a lens for twist flows (`gap-global-reform-max.md` L152); the measure statement below is not there.
+- Mechanism. The Wilson weight depends on the plaquette class angles only. So Z(n; beta) is the integral of rho_n(theta) exp(beta sum cos theta_p) over [0, pi]^P, with rho_n the push-forward of Haar measure to the plaquette class angles: a positive density that does not depend on beta, and the whole datum of the engine is a function of the family rho_n. For two independent Haar elements with class angles theta_1, theta_2, the class angle theta_12 of the product has cos(theta_12) uniform on [cos(theta_1 + theta_2), cos(theta_1 - theta_2)]. So the joint density of (theta_1, theta_2, theta_12) is (2/pi^2) sin theta_1 sin theta_2 sin theta_12 on the convex polytope of the spherical triangle inequalities. Iterating along a fan of triangles: for one cube with free boundary (which is two-dimensional Yang-Mills on a sphere of six plaquettes), the six plaquette angles and three diagonals have the density const times the product of sin theta_p exp(beta cos theta_p), on a convex polytope, uniform in the diagonals. Each factor sin(theta) exp(beta cos theta) is log-concave on [0, pi] if and only if beta <= 3 sqrt(3)/2 = 2.598...; the marginal on the six plaquette angles is then log-concave (Prekopa). For U(1) the class map is the identity and the constraint set is a union of affine lattices; for a finite group the classes are discrete. So the structure is selective in the group, and its range covers beta 2.3 to 2.598 for the sphere.
+- Statement needed. (LC-rho): for the four-dimensional torus, rho_n(theta) exp(beta sum cos theta_p) is log-concave on a convex support, with a strict constant kappa > 0 free of the volume, and -log rho_n is a sum of terms of bounded range up to exponentially small tails, at the couplings of the band.
+- Consumer. Brascamp-Lieb and Helffer-Sjostrand bounds for functions of the plaquette angles, volume-free: decay of plaquette-angle correlations and a unit-level functional inequality (route RF), then (W) with (TH).
+
+### B13. Clebsch-Gordan screening: no flux tower
+
+- Source. Clebsch-Gordan decomposition and Peter-Weyl; the massless floor of the lane (row 988, Lemma FLOOR) for the abelian flux tower.
+- Mechanism. For U(1) the electric flux through a cross-section of the 3-torus is an integer that commutes with the transfer operator; in the Coulomb phase its sectors have energies of order e^2 g^2/L and give a term of order one to the thermal sum at every size. For SU(2), chi_(1/2)^2 = 1 + chi_1: two fundamental fluxes fuse to the vacuum with weight 1/4, the flux is conserved modulo 2 only, and the transfer operator commutes with the eight centre fluxes only.
+- Statement needed. (FUSE): a lower bound, uniform along the trajectory, on the rate at which a state with a flux of spin one through a cross-section loses its overlap with every such state after a time of the order of the side, in terms of the fusion weight 1/4.
+- Consumer. The absence of a tower in the centre-even sector; at best one term of the even thermal sum.
+
+### B14. Theta as a Bloch parameter and as the only frame-free twist
+
+- Source. Vafa and Witten (1984), Z(theta) <= Z(0); Seiler and Stamatescu (the charge density is odd under reflection, so its two-point function is negative at separated points, by reflection positivity); Luscher (1982), the geometric charge on admissible lattice fields; Gaiotto, Kapustin, Komargodski and Seiberg (2017), the anomaly at theta = pi.
+- Mechanism. Route (ii) of the lane needs a colour frame because a non-abelian twist of the links is not gauge invariant (rows 1026-1046). Theta couples to a gauge-invariant local density, so its response needs no frame. It exists for no abelian and no finite group, and only in dimension four. In a small box the theta-stiffness K(L) = -log(Z_L(pi)/Z_L(0)) is of order exp(-2 pi^2 beta(L)); by asymptotic freedom it grows like (L Lambda)^(22/3) (dilute instantons, RECALLED), and then like L^4. A scale-invariant element has a constant K.
+- Statements needed. (TH-lat): a reflection-positive lattice form with exact charge sectors that is the Wilson measure, or agrees with it along the trajectory up to errors that vanish with the spacing. (TH-step): K(2L) >= min((1 + delta) K(L), K_0) on the band. (TH-all): large K at one size gives the seed.
+- Consumer. (W) through (TH-all).
+
+### B15. A barrier at the weak-coupling end for the Casimir free energy
+
+- Source. The Morse-Bott structure of the Wilson action on a torus: its minimum set is the set of flat connections (torons); Luscher (1983), van Baal (the small-volume expansion); Lemma FV of row 1028 (the free value of D is infinite, D >= (3/2) log beta - 59 n^4 - 11); Proposition MB of row 720 ((MONO-Delta) with (BASE-Phi) and (APR) gives (BDD-Delta)); the maximum principle as a pattern.
+- Mechanism. Every known way to an unbounded Casimir free energy is a flat compact direction whose effective coupling tends to zero with the size (torons of an infrared-free gauge theory; the order parameter of a broken continuous symmetry). In four dimensions the Gaussian point repels in the infrared: where the running coupling at the size L is small, it is larger at 2L, the toron valley is narrower, and D falls. So D cannot rise through a high level. Lemma BAR (Section 7): given D^+ finite at one size, (BDD-Delta) holds if and only if there are D_* and L_1 with: D^+(L) >= D_* implies D^+(2L) <= D^+(L), for all L >= L_1 in P. (Low levels are held by D(2a) <= 16 D(a).) This asks for monotony at high levels only, where (MONO-Delta) asks for it everywhere; (MONO-Delta) fails in the class at low levels (Ising, `gap-phys-seed.md` L361-373).
+- Statements needed. (INV): for each g_* > 0 there is D_* such that D_j(n) >= D_* forces the torus of side n at beta_j to be in the weak-coupling domain of the account at the scale n, with running coupling at most g_*. (UV-Cas): in that domain D_j(2n) <= D_j(n).
+- Consumer. (BDD-Delta), which no row attacks.
+
+### B16. A holomorphic vacuum (lens found empty; not counted)
+
+Hall (1994), the Segal-Bargmann transform for compact Lie groups; Kempf and Ness; Fricke and Vogt for trace coordinates. The Wilson kernel exp((beta/2) tr U) is entire on SL(2, C), so every eigenfunction of T_B with a non-zero eigenvalue, the vacuum included, extends to an entire function on SL(2, C)^E that is invariant under complex gauge maps: a function of the trace coordinates on the SL(2, C) character variety of the lattice. The same holds for U(1) with C^*. A gap statement would have to come from a zero-free complex neighbourhood of uniform width, which is a Lee-Yang statement; that route was tried in row 1004 (Lemmas LYP, LYP2: false for one plaquette). No statement of this lens passes K5. No hit in the lane for Segal-Bargmann or Hall.

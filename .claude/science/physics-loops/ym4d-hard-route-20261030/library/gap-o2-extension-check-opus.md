@@ -20,13 +20,13 @@ Started 2026-11-16T12:20Z (date -u) on Mac mini worker 3. Checker: Claude Opus 5
 
 (Steps are appended below as they finish.)
 
-### Step 1 (in progress, 2026-11-16T12:3xZ): reading
+### Step 1 (in progress, after 2026-11-16T12:20Z): reading
 
 - Read in full: `library/gap-o2-extension.md` L1-511 (the note under check); FINISH rows 1046-1048; FINISH sections How we work, Joining, Working efficiently, Rules.
 - Read: `library/gap-short-step-max.md` 4.1-4.2 (Lemma FLOW, Lemma PROJ). FLOW re-derived here: with g_s = A(tau_s) - A + log J_s, g' = Psi_V(tau_s), F_c(omega_eps) - F_c(omega) = - log E_omega[e^(g_eps)], so F_c' = - E[Psi_V] and H_c = - E[g''] - Var(g') = - E[V Psi_V] - Var(Psi_V). So Q_V := - E[V Psi_V] = H_c + Var(Psi_V) exactly. Holds for any smooth interior field b_l(U) (it may be frozen at the base pin). No defect.
 - Early note for Step 4 (kept here in case the session stops): the algebra of EXT re-derived. div(e^(-A) X) = e^(-A) sum R X - e^(-A) X . grad A, so W A + div W = e^(-A) sum R_(l,a) X_l^a; with X = grad v this is e^(-A) Delta v. With Delta v_n = g_n - gbar_n, g_n = - f E_n: Psi_(V_n) = c + e^(-A)[f (e^A - E_n) - gbar_n], and gbar_n = int f (e^A - E_n) dU because int f e^A dU = Z_c E_omega[f] = 0. The bound 4 e^(a_0) r_n sup abs(Psi_0) and Var <= 16 e^(2 a_0) r_n^2 (sup abs(Psi_0))^2 follow. One misstatement to report: POLY (a) says every component of every N_l is in PP_3; for a free link l, N_l = Im(U_l S_l) has degree 4 in the free coordinates. Only pinned-link forces are used in Psi_0, and they have degree at most 3. The degree is only used for finiteness, so nothing breaks.
 
-### Step 1 result (done 2026-11-16, about 12:50Z): sources read, claim list
+### Step 1 result (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): sources read, claim list
 
 Read (besides the note in full): `gap-boundary-q.md` (row 1036) Step 2 conventions, 4.1 Theorem GR, 4.2 CUBE-Z, 4.3 Lemma CUBE; `gap-coulomb-frame.md` (row 1042) Step 1, 2.1 CG, 2.2 COUL, Step 3 (3.1-3.5), Step 5 (5.1 LEAD-C, 5.3 HIER, 5.4 EXIST), Step 7 (7.1 SQ, 7.2 CURL-P, 7.3); check 1044 (`gap-coulomb-frame-check-opus.md`) L255-300 (the continuous covariant frame K1 and the graph proof); check 1041 (`gap-collapse-frame-check-astra.md`) section 4 (K7); row 1034 (`gap-sym-reg.md`) 7.1-7.4 (Proposition CURL, Statement O2); row 1011 (`gap-pinned-cell-gauge-max.md`) Section 2 (M1)-(M8), 7.1, 7.4 (N1)-(N3).
 
@@ -42,7 +42,7 @@ Claims to check, in the note's order (each with its stated mark):
 - 6.1 GR+, 6.2 LEAD-C on all heads and (CONN+), 6.3 O2-GR+, 6.4 CURL-Q (PROVED given the same inputs).
 Inputs taken as on record (checked elsewhere, not re-checked here): FLOW (re-derived above anyway), GR (a)-(e), CUBE-Z, CUBE-COUL (HOLDS in checks 1044, 1045), CG, LEAD-C, HIER, EXIST with K1, CURL-P (a), SQ, the graph proof of (CONN) in checks 1044/1045, K7.
 
-### Step 2 result (done 2026-11-16, about 13:05Z): the three hand tests of the row
+### Step 2 result (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): the three hand tests of the row
 
 Notation of the note 2.1-2.3 (cube, lower face pinned, Coulomb gauge H_a = H_1 = q, H_b = H_2 = q^(-1), q = e^((phi/4) u), a = cos(gamma) u + sin(gamma) e, s := sin(gamma), psi := phi/2, c = cos(psi), plane (e, f) as C with e -> 1, f -> i). Ad(e^(x u)) is the right-handed rotation about u by 2x (checked on u = i, v = j: e^(x i) j e^(-x i) = cos(2x) j + sin(2x) k), so Ad(q^(+-1)) multiplies the plane coordinate by e^(+- i psi). All by hand; no run.
 
@@ -66,7 +66,7 @@ Notation of the note 2.1-2.3 (cube, lower face pinned, Coulomb gauge H_a = H_1 =
 **Test 3: Lemma AVG on a two-point pin law. PASSES; AVG is sharp for the information it uses.**
 Law: pin omega_1 with probability p (in GG: H_c(omega_1; theta n) <= C S(theta), S := sum_p (d theta)_p^2) and omega_2 with probability 1 - p (only abs(H_c) <= A_0 abs(theta)^2). Then E[H_c] = p H_c(omega_1) + (1 - p) H_c(omega_2) <= p C S + (1 - p) A_0 abs(theta)^2, with equality when H_c(omega_1) = C S and H_c(omega_2) = A_0 abs(theta)^2. So no better bound follows from these two facts alone. On (ker d)-perp, abs(theta)^2 <= S/mu_1, so the bound is the curl bound with constant p C + (1 - p) A_0/mu_1; at the eigenvector of mu_1 this is attained, so "below c S only if (1 - p) A_0 <= c mu_1" (the note's 5.3) is right for this bound. On gradients (S = 0) the bound is a pure mass term (1 - p) A_0 abs(theta)^2 > 0. Example with the cube: omega_1 at the H* of COUL with b_0 + kappa > 0 (H_c < 0 on gradients) and omega_2 a point of the same torus orbit with H_c > 0 (exists by MEAN unless H_c vanishes on the orbit); the average has no sign without numbers for p.
 
-### Step 3 result (done 2026-11-16, about 13:15Z): line check of TAN (2.1), CUBE-EXT (2.2), the exact GR variance (2.3), the cube verdict (2.4)
+### Step 3 result (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): line check of TAN (2.1), CUBE-EXT (2.2), the exact GR variance (2.3), the cube verdict (2.4)
 
 **2.1 Lemma TAN: HOLDS.** Line by line:
 - V of class (E-FROZEN) as written is, at the base pin, the generator G of g_x = exp(eps psi_x) on pinned sites (g = 1 on free sites): on a pinned link G_l = psi_x - Ad(omega_l) psi_y = B_l; on a free link out of z, psi_z; into z, - Ad(U_l) psi_z; both ends pinned, psi_x - Ad(U_l) psi_y. So V A = G A = 0 at every U (gauge invariance of A, pinned links included). Correct.
@@ -89,7 +89,7 @@ Law: pin omega_1 with probability p (in GG: H_c(omega_1; theta n) <= C S(theta),
 Corrected text: "With b_0 = 0 it has Q_GR = 2 sin^2(gamma)(1 - c)[beta xbar - 2 kappa c (1 + c)] Lam >= 0 (the bracket is a variance divided by a positive number: take theta = 0 in 2.3), while H_c < 0." Nothing downstream reads the false equation.
 The other bullets of 2.4 hold: the extension of 2.2 has Var = 0 and Q = H_c for every b_0 >= 0, pin with h != +-1 and lambda; the cube is special because there "stationary along B" and "tangent to the orbit" coincide (one gauge-invariant coordinate t(h)).
 
-### Step 4 result (done 2026-11-16, about 13:30Z): line check of POLY (4.1), EXT (4.2), A-FLOW (4.3), EQ (5.2). The row's point of most care.
+### Step 4 result (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): line check of POLY (4.1), EXT (4.2), A-FLOW (4.3), EQ (5.2). The row's point of most care.
 
 **4.1 Lemma POLY: HOLDS AFTER CORRECTION of one side remark in (a).**
 - (a) R_(l,a) is the restriction of a linear vector field on R^(4 n_f) (left multiplication by e_a on the quaternion of link l) tangent to UU, so it maps PP_d into PP_d. A is in PP_4 (each plaquette is multilinear, degree 1 in each of its at most four free links). Correction: "every component of every N_l is in PP_3" is false for a free link l: N_l = Im(U_l S_l) then has degree up to 4 in the free coordinates. It is true for a pinned link (U_l = omega_l fixed, staple of three links). Only pinned-link forces enter the base scores Psi_0 of 4.2 (extension by zero: - sum B_l . N_l; GR: sum lambda_h(l) (D_l n) . N_l, by GR (c) after the free-link terms cancel), and the degree is used only to stay in a finite-dimensional space. Nothing downstream breaks.
@@ -111,7 +111,7 @@ The other bullets of 2.4 hold: the extension of 2.2 has Var = 0 and Q = H_c for 
 
 **5.2 Proposition EQ: HOLDS.** (i) is FLOW. (ii) EXT with the zero (or GR) base: Var(Psi_(V_n)) <= 16 e^(2 a_0) r_n^2 K^2 abs(lambda)^2 with K = 24 beta sqrt(N) (abs(d lambda) <= 4 abs(lambda): a boundary site has at most 8 boundary links), below delta abs(lambda)^2 for n large. (If Lam contains lambda with lambda_0 != 0 the hypothesis of (ii) cannot hold, since H_c does not read lambda_0; (ii) is then vacuous, not wrong.) (iii) as in the linearity bullet above; the rule can even be chosen independent of theta. The reading is right: in class (E-FLOW), (S) is equivalent to (S') up to a mass term delta abs(theta)^2 with delta arbitrary, and literal (O2) on a space of potentials is (O2-min) with a strict margin. For theta with interior components H_c reads theta only on the boundary, so (S') is H_c(omega; theta_bd n) <= C times the least curl energy over interior completions; the note's 5.1 restriction "closed fields have right side 0" needs theta = d Lambda on the whole cell (Lambda any interior completion of lambda), which "every link field theta of the cell" allows. Correct.
 
-### Step 5 result (done 2026-11-16, about 13:40Z): line check of HIER+ (4.4), O2-GR (4.5), and the author's flagged point (K7 in any gauge)
+### Step 5 result (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): line check of HIER+ (4.4), O2-GR (4.5), and the author's flagged point (K7 in any gauge)
 
 **The flagged point: K7 (check 1041 section 4) used in the coordinates H = e^eta of any gauge near 1. HOLDS, with one precision.**
 - K7's variance estimate is: abs(d^T CC(eta) d - (d^0)^T CC(0) d^0) <= (4 L_C + 8 B_C) Lambda^2 r^3, with d_l = lambda_l (a - Ad(e^(eta_l)) a), d^0_l = 2 lambda_l a x eta_l, r = abs(eta)_2. Its proof splits the difference as d^T (CC(eta) - CC(0)) d + (d - d^0)^T CC(0) (d + d^0) and uses abs(d), abs(d^0) <= 2 Lambda r, abs(d - d^0) <= 2 Lambda r^2 (the rotation Taylor formula: abs(Ad(e^eta) a - a - 2 eta x a) <= 2 abs(eta)^2, so the sum over links gives 2 Lambda r^2). Nothing in it uses the tree: CC(H) is the covariance matrix of the pinned forces N_l = Im(H_l S_l) under the cell law at the pin H; it is one smooth function on SU(2)^(pinned links), and a gauge choice only selects the point H at which it is read. Gauge covariance: with g extended by 1 at the free sites, N_l at the pin omega equals Ad(g_x)^(-1) of N_l at omega^g (H_l S_l^g = g_x omega_l S_l g_x^(-1)), and D_l n = Ad(g_x)^(-1)(a - Ad(H_l) a) (CG (a)); so Var_omega(Psi_GR) = Var_H(sum_l lambda_h(l) (a - Ad(H_l) a) . N_l), as the note says.
@@ -127,7 +127,7 @@ The other bullets of 2.4 hold: the extension of 2.2 has Var = 0 and Q = H_c for 
 - (5) K1 with B_2: pick H0 in int B_2 intersected with Omega_12 (open dense), g* := gamma(H0)^(-1), g(omega) := g* gamma(omega); then omega^(g(omega)) = (omega^)^(g*), P_2 := {omega in Omega_12 : (omega^)^(g*) in int B_2} is open, gauge invariant, contains H0, and lies near the pure-gauge orbit for small rho and B_2. H_c = Hess f_(omega^g)(0) (CG (c)), Var transfers as in the flagged point, Q_GR = QQ_(omega^g) (GR (e)). Correct.
 - Remarks: the mechanism (response at y_j of order r_j abs(g_j) with abs(g_j) >= r_m c_min/2 for an earlier m, variance of order r_j^2) matches the proof; P_2 is a new set, and the GR extension on P' stays OPEN, as the note says.
 
-### Step 6 result (done 2026-11-16, about 13:50Z): the consumer, line check of 5.1, AVG (5.3), MEAN (5.4), 5.5
+### Step 6 result (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): the consumer, line check of 5.1, AVG (5.3), MEAN (5.4), 5.5
 
 **5.1 The inequality (O2) feeds: HOLDS as a reading of the record.** (S) matches row 1011 (M2)-(M3) and 7.4 (N1)-(N3) and row 1034 7.1-7.4 as I read them: the start bound bounds the response by a classical curl energy, the cost Q_V is the "direct cost" through FLOW, and literal (O2) is (S) on gradients d Lambda of the cell (right side 0). The note states honestly that the gauge form of (M4) for field-dependent frames is not on record. Nothing new is claimed here.
 
@@ -144,7 +144,7 @@ The other bullets of 2.4 hold: the extension of 2.2 has Var = 0 and Q = H_c for 
 - (N2): on the pin sets the mass-like term is negative on gradients; elsewhere nothing. Correct.
 - (N3): a negative response is not a variance lower bound; MEAN shows the sign averages to 0 on torus orbits for a frozen frame. Correct.
 
-### Step 7 result (done 2026-11-16, about 14:00Z): line check of GR+ (6.1), 6.2, O2-GR+ (6.3), CURL-Q (6.4), and the U(1) control (note Step 3)
+### Step 7 result (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): line check of GR+ (6.1), 6.2, O2-GR+ (6.3), CURL-Q (6.4), and the U(1) control (note Step 3)
 
 **6.1 Lemma GR+: HOLDS.** G_l = lambda_x n_x - lambda_y Ad(U_l) n_y (lambda n := 0 at free sites) is the generator of g_x = exp(eps lambda_x n_x) on pinned sites; on a pinned link G_l = (d lambda)_l n_x + lambda_y D_l n. So V+ = G - (lambda_h(l) D_l n on pinned links). (b) V+ A = 0 - sum over pinned l of R_(l, lambda_y D_l n) A = sum lambda_y (D_l n) . N_l. (a) left rotation by a fixed vector on a free link out of z; on a free link into z the flow U_l -> exp(- eps lambda_z Ad(U_l) n_z) U_l = U_l exp(- eps lambda_z n_z) is a right translation; both keep Haar measure. (In the box with all S_mu >= 2 no free link has both ends pinned: a link (x, mu) with x on a face x_nu = const, nu != mu, lies in that face; if x is boundary only through x_mu = 0, then x + e_mu has x_mu = 1 < S_mu and is not a boundary site, and similarly at x_mu = S_mu - 1.) (c) (omega_eps)^g = exp(eps (d lambda)_l n_x) omega_l re-derived; Z_c(omega^g) = Z_c(omega) with g extended by 1 at free sites (Haar invariance of free links). (d) FLOW. The remarks hold: GR (e) needs only the gauge covariance of Z_c; lambda -> lambda + const on Y+ changes d lambda by - const . d(1_0), a gauge move at the corner, and T_(const 1_(Y+)) conjugates every pinned link by one element (every pinned link has its head in Y+), a constant gauge map.
 
@@ -155,3 +155,66 @@ The other bullets of 2.4 hold: the extension of 2.2 has Var = 0 and Q = H_c for 
 **6.4 Corollary CURL-Q: HOLDS given 6.3** (and, for the reading "all boundary fields", the cited fact that every closed boundary field is a gradient, H^1 of the boundary 3-sphere complex = 0; cited from check 1044, not re-proved, as the note says). Line check: the cost of the combined linear rule is a quadratic form with bilinear part H_c(x, y) + Cov(Psi_x, Psi_y). abs(H_c(x, y)) <= A_0 abs(x) abs(y) follows from abs(H_c(x)) <= A_0 abs(x)^2 for a symmetric form. sup abs(Psi_(theta_c)) <= 6 beta sqrt(N) abs(theta_c), sup abs(Psi+) <= 24 beta sqrt(N) abs(lambda), abs(d lambda) <= 4 abs(lambda) (at most 8 boundary links per site) give A_1 = A_0 + 36 beta^2 N and B_1 = 4 A_0 + 144 beta^2 N. The two normalisations are legitimate: subtracting a constant from lambda keeps theta; replacing lambda_0 by 0 changes theta by a multiple of d(1_0), which changes neither H_c, nor any mixed term, nor Psi, nor sum_p (d theta)_p^2 (d d = 0). Then SQ in (theta_c, lambda) and abs(theta_c)^2 <= sum_p (d theta)_p^2/mu_1 (d theta_c = d theta). C_Q as printed. FLOW gives H_c <= Q.
 
 **U(1) control (note Step 3): HOLDS.** D n = 0, so GR and GR+ give Psi = 0 and H_c = Q = 0 on every boundary gradient; psi = lambda solves TAN's equations and TAN's extension is GR's where no free link enters L; EXT holds word for word (coordinates (cos, sin) per link, linear rotation field, kernel of Delta = constants), and returns only H_c; HIER+, O2-GR, O2-GR+ have no transverse part (all b_j, c_ij, gamma_ij are 0), so their strict conclusions are false for U(1), as the note says; CURL-Q: the mixed terms with gradients vanish (d lambda is an exact gauge move of the pin for U(1)) and the classical bound beta sum w_p (d theta)_p^2 stands. Zero gain. Correct.
+
+### Step 8 (done before 2026-11-16T12:40Z by `date -u` at the end; the time of each step was not recorded): meaning, verdicts, corrected texts, limits
+
+Provenance: Claude Opus 5.5, max effort, Mac mini worker 3, commit 929e77235; same-provider check of row 1046 (Claude Fable 5.2 medium); one reading by one model, not an audit, not independent. Two items were re-derived by a different route than the note's: the cube value of CUBE-COUL/CUBE-EXT from TAN's force formula (the note cites row 1038's CUBE-H), and the leading small-beta value of the GR variance from the exact side-plaquette representation N_l(side) = beta Im(Y_l) (the note uses first moments only). No numeric run; the numeric lock was not taken. Written by hand.
+
+**Meaning (the row's last question). HOLDS, with two precisions.**
+- "Literal (O2) needs an extension" is closed positively. In class (E-FLOW) the closure carries no information of its own: EXT makes the extension never the obstruction, at every pin and for every group, so the open item becomes exactly (O2-min) with a strict margin (EQ). In the narrow class (E-GR) of row 1034 7.4, O2-GR is a genuine positive statement, but on a new open set P_2; on P' it stays OPEN.
+- The upper-face gap of CURL-P is closed on the new open set P_3 (O2-GR+, CURL-Q), not on P' or P_2.
+- All positive statements rest on EXIST's mechanism: H_c < 0 at pins near non-degenerate maxima of F_c on torus orbits, close to the pure-gauge orbit of one fixed cell at one beta, with m_0, m_2, m_3 unnamed and no measure estimate; MEAN shows the sign has mean 0 on each torus orbit for a frozen frame. They are descents of F_c at special pins, not a stiffness. So (W) does not move, and the first failing step on the boundary side is (N1).
+- Precision 1: (S) also needs the interior half, Lemma O1 (row 1034 7.4, OPEN, "not touched" in the note). (N1) and (O1) are independent open inputs; "first" is an order of reading.
+- Precision 2: EQ reduces the START bound (S) to H_c alone. It does not make the extension irrelevant to (N3): the gain of the 2D engine reads a variance of one fixed current ((M5)), and an E-FLOW extension tuned by EXT has that variance near 0. A gain step has to fix its extension (for example GR or V+) before it bounds a variance from below. The note does not claim otherwise ("(N3): not touched").
+
+**Verdicts, statement by statement.**
+
+| Statement | Verdict |
+|---|---|
+| TAN (2.1) | HOLDS |
+| CUBE-EXT (2.2) | HOLDS (value confirmed by a second derivation, Step 2) |
+| Exact GR variance on the cube (2.3) | HOLDS |
+| Cube verdict (2.4) | HOLDS AFTER CORRECTION (text 1 below) |
+| U(1) control (note Step 3) | HOLDS |
+| POLY (4.1) | HOLDS AFTER CORRECTION of a side remark in (a) (text 2 below) |
+| EXT (4.2) | HOLDS, for every pin and every boundary field; an infimum, no minimiser claimed |
+| A-FLOW (4.3) | HOLDS given EXIST with K1 |
+| HIER+ (4.4) | HOLDS |
+| O2-GR (4.5) | HOLDS given LEAD-C, K1 and K7 with full-ball constants |
+| Flagged point: K7 in any gauge near 1 | HOLDS with the precision of text 3 (constants over the ball in all pinned links) |
+| EQ (5.2) | HOLDS |
+| Consumer reading (5.1) | HOLDS as a reading of rows 1011 and 1034 |
+| AVG (5.3) | HOLDS (sharp for its two inputs); 5.3 first bullet HOLDS AFTER CORRECTION (text 4 below) |
+| MEAN (5.4) | HOLDS |
+| No item of (W) moves; first failing step (N1) (5.5) | HOLDS, with precision 1 above |
+| GR+ (6.1) | HOLDS |
+| LEAD-C on all heads, (CONN+) (6.2) | HOLDS given the graph proof of checks 1044, 1045 |
+| O2-GR+ (6.3) | HOLDS given the same inputs |
+| CURL-Q (6.4) | HOLDS given 6.3; "all boundary fields" needs the cited H^1 = 0 fact |
+| Meaning of the row | HOLDS, with precisions 1 and 2 above |
+
+No statement FAILS. No defect breaks a consumer statement.
+
+**Defects, ranked by what each breaks (none breaks a downstream statement).**
+1. 2.4, first bullet: the equation "Q_GR = Var(Psi_GR)" at b_0 = 0 is false (Q_GR = H_c + Var and H_c < 0 there). Its conclusion Q_GR >= 0 is true by another line. Nothing downstream reads the equation.
+2. Step 8 Limits, K7 bullet: the reading is right only with M_3, L_C, B_C taken over the full ball of all pinned links; check 1041 wrote them for the tree-gauge slice. Not stated in the note.
+3. 5.3, first bullet: on P_2 the constant of the curl bound is (A_0 + 16 A_0^2/m_2)/mu_1, not with m_0.
+4. 4.1 (a): free-link forces have degree 4, not 3.
+
+**Corrected texts for the lead (no other file was edited).**
+1. 2.4 first bullet: "The GR extension is not the best one on the cube. With b_0 = 0 it has Q_GR = 2 sin^2(gamma)(1 - c)[beta xbar - 2 kappa c (1 + c)] Lam >= 0 (exact, 2.3; the bracket is >= 0 because it is a variance divided by a positive number: take theta = 0), while H_c < 0."
+2. 4.1 (a), last clause: "A is in PP_4, and every component of N_l for a pinned link l is in PP_3 (for a free link, N_l is in PP_4)."
+3. Step 8 Limits, K7 bullet, append: "Checked in row 1047: the reading holds with M_3, L_C, B_C taken as suprema over the ball abs(eta)_2 <= r_0 in the coordinates of all pinned links, not over the tree-gauge slice; these constants are finite by the same argument and are fixed before z, r and rho."
+4. 5.3 first bullet: "with C = (A_0 + 16 A_0^2/m)/mu_1, where m = m_0 on P' and m = m_2 on P_2".
+The note's own proposed edits (to `parts/gap.md`, row 1042 7.3, row 1018 4.1) are accurate; after this check "unchecked" can read "checked same-provider in row 1047; cross-provider check row 1048 pending".
+
+**Limits of this check.**
+- Same provider; not independent in the sense of the working rules, except the two re-derivations named in the provenance line.
+- Inputs taken as on record and not re-checked here: FLOW (re-derived anyway), GR (a)-(e), CUBE-Z, CUBE-COUL, CG, LEAD-C, HIER, EXIST with K1, CURL-P (a), SQ, the graph proof of (CONN) in checks 1044 and 1045, K7's Taylor bounds, and the H^1 = 0 fact for the boundary of the box.
+- Not read: check 1044 outside L255-300; check 1045 (cross-provider check of row 1042) beyond what the note quotes; row 1038; `gap-short-step-max.md` outside 4.1-4.2. The GUIDE run of the note (2.5) was not re-run; nothing rests on it.
+- No new attack was made (the row says none). Nothing of the Sussman-Alpoge account is used.
+- OPEN, unchanged by this check: numbers for m_0, m_2, m_3; a named beta in [2.3, 2.6]; the GR extension on P'; the upper-face sign on P' and P_2; the measure of P', P_2, P_3 under the ring law; (N1), (N2), (N3), (O1), tilings, the classical constant; row 1048.
+
+Finished: 2026-11-16T12:39:52Z (`date -u`). Note: the step headings first carried guessed times (12:50Z to 14:10Z); they were wrong and are replaced above.
+
+RESULT: Row 1047 (Claude Opus 5.5 max, Mac mini worker 3, commit 929e77235; same-provider check of row 1046, by hand, no numeric run). Every statement of `library/gap-o2-extension.md` HOLDS or HOLDS AFTER CORRECTION; none FAILS and no defect breaks a downstream statement. TAN, CUBE-EXT (Psi = 0 and Q = H_c for the gauge extension; the value re-derived here from TAN's force formula, a second route to CUBE-COUL) and the exact GR variance HOLD; the cube verdict 2.4 HOLDS AFTER CORRECTION (at b_0 = 0, "Q_GR = Var" is false, Q_GR >= 0 is true by another line). POLY HOLDS AFTER CORRECTION (free-link forces have degree 4; harmless). EXT HOLDS for every pin and every boundary field (inf over FLOW extensions of Q = H_c, explicit field V_0 + e^(-A) grad v_n, Var <= 16 e^(2 a_0) r_n^2 (sup abs(Psi_0))^2; one rule serves all fields), so EQ HOLDS: in the FLOW class literal (O2) is (O2-min) with a strict margin. HIER+, O2-GR (literal (O2) with the site-frame extension on P_2), GR+, (CONN+), O2-GR+ and CURL-Q (upper faces on P_3) HOLD given LEAD-C, K1, (CONN+) and K7; the author's flagged point HOLDS once K7's constants are read over the full ball of all pinned links, not the tree-gauge slice. AVG (sharp on a two-point pin law) and MEAN HOLD; 5.3's constant on P_2 uses m_2. Meaning HOLDS: both closures are descents of F_c at special pins near pure gauge with no measure estimate, so (W) does not move and the first failing step on the boundary side is (N1), with (O1) an independent open input of (S). OPEN: numbers for m_0, m_2, m_3, a named beta, the GR extension on P', the upper-face sign on P' and P_2, the measure of the pin sets, (N1)-(N3), (O1), tilings, and the cross-provider check (row 1048).

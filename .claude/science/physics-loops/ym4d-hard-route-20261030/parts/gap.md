@@ -18,6 +18,9 @@ its check is row 999). "FINISH" = `FINISH.md` at f75650fe8.
 - The wall, verbatim (row 998 L129-131): "For Wilson SU(2) along the account's trajectory (first-passage data,
   dilated), prove: (W) There is a physical size L in P with z^-(L) > 256 D_0 + 30, where D_0 bounds D^+ on the sizes
   from L/4 on."
+- The wall, repaired (gpt-6-astra check of row 720, `library/gap-zd-astra.md` item 18, L403-418; the verbatim form above
+  omits the domain): (W) there are a bound (L_0, D_0) of (BDD-Delta) and L in P with L at least 4 L_0 and
+  z^-(L) > 256 D_0 + 30. It is still equivalent to (PHYS-SEED); the repair changes no conclusion.
 - Equivalent or sufficient forms on record (row 998 L133-136): (PHYS-SEED); the fixed-coupling seed (SEED) at each
   beta of the window 2.3 to 2.6 with a carry to finer cutoffs; (U1) or (U2) of row 982 together with the start value
   (TH) from the account.
@@ -115,7 +118,7 @@ obligation here carries `implication` or `discharged`; the lane's own check rows
 - cross-provider checked (gpt-6-astra, `library/gap-ladder-check-astra.md`: HOLDS AFTER CORRECTION): extensive base (TH) given the account and (DET) -> (CAS) route. Row 978 `gap-ladder-max.md` L150; row 998
   L885-886.
 - unchecked (lane-checked in rows 698, 699; no gate): seed engine, Theorem S -> Theorem ZD. Row 998 L117-118.
-- unchecked (lane: "PROVED GIVEN Theorem ZD", row 720; no gate): dichotomy Theorem ZD-c and Corollary Z4 -> the price
+- cross-provider checked (gpt-6-astra, `library/gap-zd-astra.md`: ZD and ZD-c HOLD conditionally with the strict-margin completion; Z4 and MB1 HOLD AFTER the domain and APR repairs; the partition of row 1024 HOLDS) (lane: "PROVED GIVEN Theorem ZD", row 720; no gate): dichotomy Theorem ZD-c and Corollary Z4 -> the price
   and route RD. Row 998 L120-127, L674.
 - unchecked: product with a massless factor, Lemma PT and Corollary PT1, given the U(1) theorem -> test table.
   Row 998 8.1 (L690); check = row 999.

@@ -3,11 +3,11 @@ lease_until: 2026-11-16T15:18Z
 
 # Check of row 1031 (`library/gap-afield-a-max.md`), work item W1
 
-Queue row 1033, `gap-afield-a-check-opus`. Checker: Claude Opus 5.5 at max effort, Mac mini worker 3, started 2026-11-16 03:18Z (date -u). Checked file: `library/gap-afield-a-max.md` at commit ee938bdf2 (written by Claude Fable 5.2, same provider, so this is a same-provider check, not an independent one in the sense of the working rules). No new attack. Verdicts: HOLDS, HOLDS AFTER CORRECTION, FAILS with the first failing line.
+Queue row 1033, `gap-afield-a-check-opus`. Checker: Claude Opus 5.5 at max effort, Mac mini worker 3, started 2026-11-16 03:18Z (date -u). Checked file: `library/gap-afield-a-max.md` at commit ee938bdf2 (written by Claude Fable 5.2, same provider, so this is a same-provider check, not an independent one in the sense of the working rules). One reading, not an audit. No new attack. Verdicts: HOLDS, HOLDS AFTER CORRECTION, FAILS with the first failing line.
 
 ## Plan (at most eight steps; each response does one step and appends its result)
 
-1. Read W1 (L988 and following) and the definitions it relies on (`parts/gap.md` sections for (W), (S0), (BDD-Delta), (FIN), Theorem CR; `library/gap-dichotomy.md`); record the exact scope of W1 here.
+1. Read W1 (L988 and following) and the definitions it relies on; record the exact scope of W1 here. (Done with W1's own input list; `parts/gap.md` was not needed and not read.)
 2. Check Theorem CR^c and its lemmas (Lemma EQC, Lemma FLOW, Proposition OM^c, Proposition T23) line by line.
 3. Check Proposition VIR (dD/d log b = 4 (D - H) on limit objects).
 4. Check Corollaries KB and ENT (and Lemma Z4 if W1 names it).
@@ -274,6 +274,91 @@ Taking the infimum over n and multiplying by N^4 gives the lemma; xbar_N <= 1 gi
 principle for periodic states, recalled from Georgii Chapter 15 and not rebuilt), then
 N^4 h = - D(N) + 6 beta (2N - 1) N^2 xbar_N. The algebra is right; the identification of h is the recalled part.
 
+## Step 7 result: the claims of row 1031's RESULT line and table 8.1, against the verdicts
+
+- "PROVED: Lemma EQC, Lemma FLOW, Proposition OM^c, Proposition T23" (the reduction of two scalings to one flow,
+  constants as fixed points, sums): confirmed; T23 (e) is PROVED on Omega^c(16 D_0), and its grid identification is
+  ARGUED, as the same RESULT line says further on. The heading of 7.2 ("PROVED by hand") should carry that
+  exception.
+- Theorem CR^c, Proposition VIR with Corollaries KB and ENT, (ENT-lat) gives (W), Lemma Z4 with Z4': confirmed as
+  stated, including the sign dD/d log b = - 4 tau = 4 (D - H) and the hypotheses (S0) and (BDD-Delta).
+- Theorem CE-II and NR-II: the equivalence given (FIN) and the profiles b^alpha, alpha in [0, 3], are confirmed.
+  "So no soft proof of (BDD-Delta) exists on torus data" is not proved (Step 5); table 8.1 row A3 ("the kept
+  properties exclude nothing") is wider than NR-II (1) in the same way.
+- Lemma SURF: confirmed, with the scope k_i >= 2 for the intermediate formula (Step 6).
+- Not checked here (outside W1): the kills of A6-A10, Section 5.1, the record claims ("(BDD-Delta) was the target
+  of no earlier row", "(ENT-lat) is (MONO-Delta) ... on file as blocked"), the remark on the z-bound of real
+  critical elements (L592-593, read by no statement in scope), and the inputs of Step 1.
+
+## Step 8: verdict table, defects, report
+
+**Provenance.** Claude Opus 5.5, max effort, Mac mini worker 3, at commit ee938bdf2; one line-by-line reading, not
+an audit. The author is Claude Fable 5.2: same provider, different model. No numeric run (no lock taken), no
+subagent, no download, nothing read outside this checkout.
+
+### 8.1 Verdicts
+
+| Statement (row 1031) | Verdict |
+|---|---|
+| (P1), (P2), (P3) | HOLDS |
+| (P4) | HOLDS AFTER CORRECTION (typographic: the leading minus at L493 renders as a list bullet) |
+| Lemma EQC | HOLDS |
+| Lemma ASC | HOLDS |
+| Lemma FLOW (a)-(e) with Lemma UNI | HOLDS |
+| Lemma E0 (both uses) | HOLDS |
+| Proposition OM^c | HOLDS |
+| Proposition T23 (a)-(d), (f) | HOLDS |
+| Proposition T23 (e) | HOLDS on Omega^c(16 D_0); the grid identification stays ARGUED, as labelled |
+| Theorem CR^c (all five equivalences, the last sentence) | HOLDS |
+| Proposition VIR (V1)-(V8) | HOLDS |
+| Corollary KB | HOLDS |
+| Corollary ENT | HOLDS |
+| (ENT-lat) gives (W), given (S0) and (BDD-Delta) | HOLDS |
+| Lemma Z4 (a), (b) | HOLDS |
+| Corollary Z4' | HOLDS |
+| Theorem CE-II | HOLDS AFTER CORRECTION (cosmetic: eta_i needs d(k_i) > 1/i; drop finitely many i) |
+| Proposition NR-II (1), (2) | HOLDS |
+| Proposition NR-II (3) | RECALLED in the file; not checked |
+| "no soft proof of (BDD-Delta) exists on torus data" (RESULT line), "the kept properties exclude nothing" (8.1, A3) | FAILS as a PROVED claim: it is ARGUED; the proved form is narrower (defect 1) |
+| Lemma SURF | HOLDS AFTER CORRECTION (scope of one intermediate line: k_i >= 2) |
+| Defect identity of Lemma SURF | ARGUED in the file; the algebra checks given the recalled variational principle |
+
+First failing line for the stop rule: none. No defect breaks Theorem CR^c, Corollary KB or Theorem CE-II.
+
+### 8.2 Defects, ranked by what each breaks
+
+1. **Overstated filter (breaks the wording W2 would record).** L1057 (RESULT line) "so no soft proof of
+   (BDD-Delta) exists on torus data", L857 (title of NR-II) and table 8.1 row A3 (L919). Failure: NR-II (2)'s families
+   violate (FIN) and are taken at the unit scale; the only family with (FIN) in branch (II) is RECALLED (NR-II (3));
+   "soft" is undefined. Also (c) of CE-II excludes growth above b^4, and alpha in (3, 4) is not covered.
+   Repair (wording): "A proof of (BDD-Delta) cannot read only the properties (a)-(c) of a normalised limit
+   (Theorem CE-II): these admit the constant and every profile b^alpha, alpha in [0, 3] (NR-II (1)). Whether the
+   datum axioms with (FIN) alone give (BDD-Delta) turns on a family with (FIN) in branch (II), which is recalled, not
+   rebuilt (NR-II (3))."
+2. **Label of Proposition T23 (breaks nothing).** The heading of 7.2 says PROVED; (e)'s grid identification is
+   ARGUED (the file says so inside (e) and in its RESULT line). Proved form: (RIG-23) read on Omega^c(16 D_0) is
+   (4^c) of CR^c. A repair sketch for the grid set is in Step 2b, unproved and not needed.
+3. **(P4) typography (breaks nothing in the source).** L493 begins "  - ((t' - t)/(t - s)) Delta(s, B) <= ...";
+   rendered, the minus is a bullet and the inequality reads false. Write
+   "Delta(t', B) - Delta(t, B) >= - ((t' - t)/(t - s)) Delta(s, B)".
+4. **Lemma SURF, scope of one line (breaks nothing).** The energy formula E_nu[A_M] = K [6 N^4 - 6 N^2 (N - 1)^2 xbar_N]
+   needs k_i >= 2 in every direction; with k_mu = 1 the plaquettes with x_mu = N - 1 do not cross cells. The proof
+   uses k_i = n_i >= 3. Write "multiples k_i N with k_i >= 2".
+5. **Theorem CE-II (i), first records (breaks nothing).** eta_i := (2/i)/(d(k_i) - 1/i) is defined and positive
+   only when d(k_i) > 1/i; true for all large i. Start the sequence there.
+
+### 8.3 For W2 (text the lead may use; the lead owns `parts/gap.md`)
+
+Row 1031, checked by row 1033 (Claude Opus 5.5 max; same provider; first failing step none): Theorem CR^c
+((W) iff Omega^c(16 D_0) is empty iff it has no minimal set iff it carries no invariant measure, given (S0) and
+(BDD-Delta)); Proposition VIR, Corollaries KB and ENT ((ENT+) on Omega^c(16 D_0) iff (W), given (S0) and
+(BDD-Delta)); Theorem CE-II (given (FIN): (BDD-Delta) iff (LIOU-II)) all HOLD. The filter from NR-II should be
+recorded in the narrow form of defect 1, not as "no soft proof on torus data". The divisibility note for
+`gap-dichotomy.md` 4.2 item 23 holds for upper bounds on D only; Theorem CR^c still reads (S0) (integer l u_j/2 in
+"(2) gives (3^c)", and Theorem CE (i)(b)).
+
 ## State
 
-Step 6 done. Next: step 7, the RESULT line of row 1031 against the verdicts; step 8, verdict table and RESULT.
+Done 2026-11-16 (all eight steps). No commit, no push; this file is the only file written.
+
+RESULT: Row 1033 check of row 1031 (W1), Claude Opus 5.5 max, same provider as the author, first failing step none: Theorem CR^c, Proposition VIR with Corollaries KB and ENT, the implication from (ENT-lat), Lemma Z4 with Z4', (P1)-(P3), Lemmas EQC, ASC, FLOW with UNI, E0, Propositions OM^c and T23 (a)-(d), (f) HOLD; (P4) (typographic minus), Theorem CE-II (eta_i for the first records) and Lemma SURF (k_i >= 2 in one intermediate line) HOLD AFTER CORRECTION; T23 (e) holds on Omega^c(16 D_0) with its grid identification still ARGUED; NR-II (1)-(2) HOLD, but the RESULT-line claim "no soft proof of (BDD-Delta) exists on torus data" FAILS as a PROVED claim (it is ARGUED and rests on the RECALLED NR-II (3); narrow repair given). No defect breaks CR^c, KB or CE-II. Open, not moved: (W), (BDD-Delta), (LIOU); unchecked here: the kills of A6-A10, NR-II (3), the recalled variational principle behind the SURF defect identity.

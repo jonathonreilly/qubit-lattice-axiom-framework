@@ -244,3 +244,141 @@ No idea survives the kill tests, so there is no ranking of survivors. The table 
 | - | B6, B8, B9 | - | - | retired | - | - | - | none |
 
 The row asks for the first lemma of the top one or two. Section 7 gives them for ranks 1 and 2, and the proved parts of the kills of B10, B8 and B12.
+
+## 7. First lemmas and proved kills (step 7)
+
+All statements of this section are proved by hand by Claude Fable 5.2 and are not checked by another model. None of them moves (W). Inputs from the lane are cited by file and line with their standing; they are used as stated there.
+
+**Standing inputs.** A datum is a positive function Z on quadruples of integers at least 3 with (E1) symmetry in the four sides, (E2) Z(k, B) = sum over r of lambda_r(B)^k with lambda_0 > lambda_1 >= ... >= 0, (E3) f = inf F(n)/abs(n) finite (`gap-dichotomy.md` 1.1). Lemma A (a): for a positive trace-class operator, k -> (Tr S^k)^(1/k) is non-increasing and tends to lambda_0 (`gap-crux-restate.md` L37; checked in rows 698, 699). Lemma K: the deficit of the ground level is non-negative, convex and non-increasing in one side (`gap-crux-restate.md` L178; same checks). Theorem D (a): Z((2n)^4) <= Z(n^4)^16 (same file L101). Theorems CE, CR and Proposition OM as written in `gap-dichotomy.md` 2.2 with the repairs of check 1019 (same-provider check only).
+
+Two facts used several times.
+
+- **(M1)** Put M(n) := Delta(n)/abs(n). Then M >= 0, M is symmetric, and M is non-increasing in each side. Proof. F(k, B)/k = log (Tr T_B^k)^(1/k) is non-increasing in k by Lemma A (a), so F(n)/abs(n) is non-increasing in the first side; by (E1) in each side; subtract f. M >= 0 by the definition of f. QED
+- **(M2)** For a box B put c(B) := log lambda_0(B) - f abs(B) and g(k; B) := log(1 + S(k; B)). Then Delta(k, B) = g(k; B) + k c(B), g >= 0, g(k; B) is non-increasing in k, and c(B) = lim over k of Delta(k, B)/k = inf over k of Delta(k, B)/k >= 0. Proof. F(k, B) = k log lambda_0(B) + log(1 + S(k; B)) by (E2); S(k; B) is a sum of k-th powers of numbers in [0, 1). QED
+
+I call c(B) the **deficit** of the box B (the Casimir energy with the sign reversed; it is kappa of Lemma K in two variables).
+
+### 7.1 Lemma BAR (idea B15): (BDD-Delta) is a barrier at high level
+
+Setting: a family with units under (S0), D^+ as in `gap-dichotomy.md` 1.2.
+
+**Lemma BAR (PROVED).** Let L_1 in P with D^+(L_1) finite. These are equivalent.
+
+1. (BDD-Delta).
+2. (BAR): there are a number D_* and L_2 in P such that for every L >= L_2 in P: if D^+(L) >= D_*, then D^+(2L) <= D^+(L).
+
+Also sufficient for (BDD-Delta), given D^+(L_2) finite: (BAR-lat): there are D_* and L_2 in P, and for each L >= L_2 in P an index j_0(L), such that for j >= j_0(L): if D_j(L/a_j) >= D_*, then D_j(2L/a_j) <= D_j(L/a_j).
+
+Proof. Step 0: D(2a) <= 16 D(a) for every datum and a >= 3. Theorem D (a) gives F((2a)^4) <= 16 F(a^4); subtract 16 f a^4. So D^+(2L) <= 16 D^+(L).
+(1) gives (2): let (L_0, D_0) be a bound, L_2 := L_0, D_* := D_0 + 1. The premise of (BAR) never holds.
+(2) gives (1): we may take L_2 >= L_1 (enlarging L_2 keeps (BAR)). By Step 0, D^+(L_2) <= 16^k D^+(L_1) is finite, where L_2 = 2^k L_1. Put M_0 := max(D^+(L_2), 16 D_*). Claim: D^+(2^i L_2) <= M_0 for all i >= 0. For i = 0 it is the definition. If it holds for L = 2^i L_2: when D^+(L) >= D_*, (BAR) gives D^+(2L) <= D^+(L) <= M_0; when D^+(L) < D_*, Step 0 gives D^+(2L) <= 16 D^+(L) < 16 D_* <= M_0. So (L_2, M_0) is a bound of (BDD-Delta).
+(BAR-lat): fix i >= 0 and let j >= max of j_0(2^i' L_2) over i' < i. The same induction, for the one datum Z_j, gives D_j(2^i L_2/a_j) <= max(D_j(L_2/a_j), 16 D_*). Take the upper limit over j. QED
+
+What it says. (BDD-Delta) needs no control of D at low levels: the doubling bound holds them. It needs: D does not rise through a high level. (MONO-Delta) of row 720 asks for monotony everywhere and fails in the class at low levels; (BAR) is true in every model with bounded D (it is then empty) and false in every model with unbounded D. So (BAR) alone is (BDD-Delta) in other words. Its use is to say where a proof has to work: only at sizes where D is above an arbitrarily high level D_*.
+
+What is missing for idea B15. (INV): D_j(n) >= D_* forces weak coupling at the scale n. (UV-Cas): at weak coupling D falls under doubling. Together they give (BAR-lat). I tried (INV) in three ways and each stops.
+
+- From the abstract class: false. D adds over products (Lemma PT), so a product with a factor of unbounded D has large D with any behaviour of the other factor. (ARGUED: the lane holds no written model of the class with unbounded D at one coupling; a broken continuous symmetry is recalled, `gap-dichotomy.md` L368.)
+- From Lemma CHAIN-4 below: D >= D_* gives one of four thermal terms above D_*/4. For the three bulk terms no statement ties a large value to weak coupling. For G_0 (the count of states of the cube below its inverse side) the only known source is the toron valley (Lemma FV), and no inverse of Lemma FV uniform in the lattice size is known.
+- From Lemma DIL (row 720): D(n; beta) is the integral over the coupling of 6 n^4 times the finite-size shift of the mean plaquette. A large D says that the shift was positive on a long stretch of couplings; it does not say that the lattice at the last coupling is weakly coupled at the scale n.
+
+So B15 stops at (INV): one precise lemma, with no route. It is not attacked further here.
+
+### 7.2 Lemma CHAIN-4 (idea B5): the Casimir free energy is a sum of four thermal terms
+
+For a >= 3 and i in {0, 1, 2, 3, 4} put
+
+- m_i(a) := inf of M(k_1, ..., k_i, a, ..., a) over integers k_1, ..., k_i >= 3 (i sides are free, 4 - i sides equal a);
+- Gamma_i(a) := a^4 m_i(a);
+- for i <= 3: G_i(a) := Gamma_i(a) - Gamma_(i+1)(a);
+- B_(i,k) := the box with i sides equal to k and 3 - i sides equal to a.
+
+**Lemma CHAIN-4 (PROVED from (M1), (M2)).** For every datum and every a >= 3:
+
+1. D(a) = Gamma_0(a) >= Gamma_1(a) >= Gamma_2(a) >= Gamma_3(a) >= Gamma_4(a) = 0.
+2. D(a) = G_0(a) + G_1(a) + G_2(a) + G_3(a), and each G_i(a) is non-negative.
+3. G_i(a) = a^i times the limit over k of k^(-i) g(a; B_(i,k)). In words: G_i is a^i times the logarithm of the thermal trace, per unit of i-volume and at the time a, of the system that is infinite in i directions and periodic with side a in the other 3 - i directions.
+4. Gamma_1(a) = a c(a^3): the deficit of the cube times its side. Gamma_3(a) = G_3(a) is the dimensionless pressure pi(a) (Q4 of `gap-phys-seed.md` L195). G_0(a) = log(1 + S(a; a^3)).
+
+Proof. By (M1) each infimum is a limit along k_1 = ... = k_i = k to infinity, and an infimum over more free sides is taken over a larger set that contains k_(i+1) = a. So m_0 >= m_1 >= ... >= m_4, and m_4 = inf of M = 0 by the definition of f. This is (1), and it gives G_i >= 0 and the telescoping sum (2). For (3): by (M2), g(a; B_(i,k)) = Delta(a, B_(i,k)) - a c(B_(i,k)). The torus (a, B_(i,k)) has i sides k and 4 - i sides a, so Delta(a, B_(i,k))/k^i = a^(4-i) M(k, ..., k, a, ..., a) tends to a^(4-i) m_i(a). Next c(B_(i,k))/k^i = inf over T of Delta(T, B_(i,k))/(T k^i) = a^(3-i) inf over T of M(T, k, ..., k, a, ..., a); it is non-increasing in k, and its limit is a^(3-i) times the infimum of M over i + 1 free sides (by (M1) the infimum over all tuples equals the infimum over tuples with equal entries). So k^(-i) g(a; B_(i,k)) tends to a^(4-i) (m_i(a) - m_(i+1)(a)), and a^i times this is G_i(a). (4): Gamma_1(a) = a^4 inf over T of M(T, a, a, a) = a inf over T of Delta(T, a^3)/T = a c(a^3) by (M2); the cases i = 0 and i = 3 of (3) give the other two. QED
+
+**Corollary NUC (PROVED).** For a family with units: (BDD-Delta) holds if and only if there are L_0 in P and a number D_0' such that for i = 0, 1, 2, 3 and every L >= L_0 in P the upper limit over j of G_(i,j)(L/a_j) is at most D_0'. (Each G_i is at most D; and the upper limit of the sum is at most the sum of the upper limits.) So (NUC) of idea B5 is (BDD-Delta) exactly.
+
+Reading (GUIDE, not used). In a box at weak coupling the logarithm of Lemma FV sits in G_0: it comes from constant modes, and a term that does not grow with the area does not enter a quantity per unit of length, area or volume. The three bulk terms tend to free-field values. So at the weak end (BDD-Delta) is a bound on the number of states of the cube below its inverse side.
+
+Not new: (M1) is Lemma A with (E1); the bound g(a; b^3) <= (b/a)^3 D(a) is Proposition Delta (row 708); the monotony of the deficit in one side is Lemma K. New in the scope searched (Section 2; "per unit length", "per unit area", "infinite tube", "Casimir energy" give no hit in `gap-phys-seed.md`, `gap-mid-max.md`, `gap-afield-a-max.md`, `gap-crux-restate.md`, `gap-seed-shape.md`): the chain to the three partial infinite-volume limits and the exact sum.
+
+### 7.2b Proposition CAS-0: a recurrent critical element with zero deficits is a constant; the ground-state form of the rigidity half
+
+Setting: Omega(D_0), sigma, critical elements and uniform recurrence as in `gap-dichotomy.md` 1.4. For E in Omega(D_0) the spectral form holds in each direction, exp E(T, B) = sum over r of exp(-T e_r(B)), with e_0(B) finite and at most 0 and non-negative integer multiplicities (`gap-compact-rigidity-max.md` L175); E is symmetric; and E(x)/(x_1 x_2 x_3 x_4) is non-increasing in each side (it is (M1), a non-strict inequality between two values, kept by pointwise limits of the rescaled data). From the spectral form, -e_0(B) = lim over T of E(T, B)/T.
+
+**Proposition CAS-0 (PROVED given Theorem CE (ii)).** Let E in Omega(D_0) be uniformly recurrent, and let e_0(b, b, b) = 0 for every b in DD. Then E is the constant log m for an integer m >= 2.
+
+Proof. Step 1: e_0(B) = 0 for every box B in DD^3. Let b be the least side of B. By (M1) for E, E(T, B)/(T abs(B)) <= E(T, b, b, b)/(T b^3) for every T. Let T grow: -e_0(B)/abs(B) <= -e_0(b^3)/b^3 = 0. With e_0(B) <= 0 this gives e_0(B) = 0.
+Step 2: E is non-increasing in each argument. In the first: E(T, B) = log of the sum over r of exp(-T e_r(B)) with all e_r(B) >= e_0(B) = 0. By symmetry in each.
+Step 3: E(2^t x) = E(x) for every x in DD^4 and t in Z. Put h(t) := E(2^t x); by Step 2 it is non-increasing in t. Let eps > 0. By uniform recurrence for the set {x}, the set R of t with abs(h(t) - h(0)) < eps has bounded gaps, so it is unbounded above and below. If t' is in R and t <= t', then h(t) >= h(t') > h(0) - eps; as R is unbounded above, h > h(0) - eps on Z. If t' is in R and t >= t', then h(t) <= h(t') < h(0) + eps; as R is unbounded below, h < h(0) + eps on Z. So h is constant.
+Step 4: E is constant. For s >= 0: E(x) >= E(2^s x_1, x_2, x_3, x_4) >= E(2^s x) = E(x), by Step 2 in the first side, Step 2 in the other three, and Step 3. So E does not change when x_1 is multiplied by a power of 2, and two elements of DD differ by such a factor. By symmetry the same holds for each side.
+Step 5: the constant is log m. If E = c, then exp(c) = sum over r of exp(-T e_r(B)) for all T, with e_r >= 0; let T grow: exp(c) is the multiplicity m of the level 0, an integer at least 1. The thermal sum of a critical element is exp(E(T, B) + T e_0(B)) - 1 = m - 1 >= 1/5041, so m >= 2. (This is also Proposition CONST of row 1028.) QED
+
+**Corollary GS (PROVED given Theorem CR; the ground-state form).** Let (BDD-Delta) hold with a bound (L_0, D_0). Then (W) fails if and only if Omega(D_0) contains (a) a constant log m with an integer m >= 2, or (b) a uniformly recurrent element E with e_0(b^3) < 0 for one b in DD. In lattice terms: E is the limit of the rescaled data of an admissible sequence (j_i, k_i), and by Step 4 of Theorem CE the rescaled ground levels converge, so e_0(b^3) = - lim over i of Gamma_(1, j_i)(2^(k_i) u_(j_i) b)/b, with Gamma_1(n) = n c(n^3) of Lemma CHAIN-4. Hence, given (BDD-Delta), (W) follows from the two statements
+
+- **(GS-CAS):** for every eps > 0 there are L_eps in P and j_eps such that (L/a_j) c_j((L/a_j)^3) <= eps for all L >= L_eps in P and all j >= j_eps. In words: the ground level of the periodic cube of side L differs from the bulk value by less than eps/L.
+- **(NO-CONST):** Omega(D_0) contains no constant.
+
+And (W) gives both: under (PHYS-SEED), Gamma_1 <= D <= 1024 q'^(2^k)/5041 at the sizes from 2^k l on (Lemma Z3), and Omega(D_0) is empty.
+
+Proof. Theorem CR: (W) fails iff Omega(D_0) has a uniformly recurrent element. By Proposition CAS-0 such an element is a constant or has a negative cube ground level. A constant in Omega(D_0) is a fixed point of sigma, hence uniformly recurrent. Under (GS-CAS) every element of Omega(D_0) has e_0(b^3) = 0 for all b (an admissible sequence has j_i and the physical sizes 2^(k_i) l_1 b tending to infinity), so only constants are left, and (NO-CONST) excludes them. QED
+
+Reading. Given a bounded Casimir free energy and no asymptotic degeneracy, the wall is one statement on ground-state energies: the vacuum energy of the periodic cube converges to the bulk value faster than 1/L. A model in branch (III) that is not a constant keeps a Casimir energy of order 1/L on a set of dyadic scales with bounded gaps. This is a form of (LIOU), not a mechanism. It is close to the even seed (ES) of `gap-means-max.md` L29 (the even thermal sum and the vacuum-energy defect below 10^(-7) at one size); here no number is needed and no thermal sum, at the price of (BDD-Delta), all large sizes, and (NO-CONST). (GS-CAS) is not easier than (Z-UNB): an upper bound on lambda_0 of a periodic box against the bulk is not variational.
+
+### 7.3 Lemma NOCS (kill of idea B10 on the lattice): no Chern-Simons factorisation and no period
+
+Setting. Gamma is a finite connected graph (for example the periodic three-dimensional lattice) with vertex set V and link set E. X := SU(2)^E with a bi-invariant metric, Haar measure and Laplace-Beltrami operator Lap. The gauge group G := SU(2)^V acts on X by isometries. V_pot is a smooth real G-invariant function on X (for example the sum of 1 - (1/2) tr U_p over the plaquettes), g > 0, and H := -(g^2/2) Lap + V_pot on L2(X). This is the Kogut-Susskind form of the Hamiltonian. For a smooth real 1-form omega put Q_omega u := du + u omega, a map from functions to 1-forms.
+
+**Lemma NOCS (PROVED).**
+
+1. Every smooth closed 1-form omega on X is exact. If omega is G-invariant, it has a G-invariant smooth potential W, omega = dW.
+2. Let omega be a smooth real closed 1-form and c a real number with H = c + (g^2/2) Q_omega^* Q_omega on smooth functions (Q^* the adjoint in L2). Then c is the lowest eigenvalue E_0 of H, and omega = -d log Omega for the positive ground state Omega of H.
+3. So there is no factorisation of the lattice Hamiltonian by a closed form that is not exact, and none with c below E_0: statement (CS-lat) of idea B10 has no solution.
+
+Proof. (1) X is a product of 3-spheres, so it is simply connected, and a closed 1-form on a simply connected manifold is exact: omega = dW_0. If omega is G-invariant, put W := the integral over G of W_0 composed with g, against Haar measure of the compact group G. For each g, d(W_0 composed with g) = g^* dW_0 = g^* omega = omega, so dW = omega; W is smooth and G-invariant. (2) With omega = dW: Q_omega u = exp(-W) d(exp(W) u). So phi := exp(-W) is smooth, strictly positive, and Q_omega phi = 0. Then H phi = c phi. The semigroup exp(-tH) on the compact connected manifold X has a strictly positive kernel, so the lowest eigenvalue E_0 is simple with a strictly positive eigenfunction Omega. Eigenfunctions of H to different eigenvalues are orthogonal, and two strictly positive functions are not orthogonal. So c = E_0 and phi is a multiple of Omega. (3) follows from (1) and (2). QED
+
+Remarks. (i) Expanding Q^* Q gives the Riccati form of the hypothesis of (2): V_pot = c + (g^2/2)(abs(omega)^2 - div omega). It is not needed in the proof. (ii) In the continuum the space of spatial connections is also simply connected, and the Chern-Simons functional is a potential of the form B; but it is invariant under the gauge maps of winding number zero only, and the average over the other components does not exist. On the lattice the gauge group SU(2)^V is connected. So the period of the Chern-Simons form, the angle theta and the positive vacuum energy "from a non-exact form" have no lattice counterpart: this is Lemma TWIST of row 1013 in Hamiltonian form. (iii) The same proof holds for the Wilson transfer operator in place of exp(-H): a strictly positive function phi with T_B phi = lambda phi is the vacuum, and lambda = lambda_0. (iv) The lemma kills the lattice form only. The continuum statements of B10 are formal and are not claimed.
+
+### 7.4 Lemma FP-U1 (the K5 part of the kill of idea B8): the Faddeev-Popov gain of compact U(1)
+
+Setting. The periodic lattice (Z/n)^d, n >= 3, with N = n^d sites and d N links. For a link l from x to y let D_l be the vector delta_y - delta_x of R^N. For angles theta_l in (-pi/2, pi/2) put M(theta) := sum over l of cos(theta_l) D_l D_l^T. It is the Hessian at omega = 0 of omega -> - sum over l of cos(theta_l + omega_x - omega_y), the Landau gauge functional of compact U(1): the Faddeev-Popov operator of the minimal Landau gauge. M(theta) kills the constants and is positive on their orthogonal complement; det' is the determinant there.
+
+**Lemma FP-U1 (PROVED).** (i) theta -> log det' M(theta) is concave on (-pi/2, pi/2)^(dN). (ii) log det' M(theta) = log det' M(0) - ((N - 1)/(2 d N)) sum over l of theta_l^2 + O(abs(theta)^4).
+
+Proof. For conductances c in (0, infinity)^(dN) put M_c := sum of c_l D_l D_l^T. The map c -> M_c is linear, log det is concave on positive operators, so c -> log det' M_c is concave; its partial derivative in c_l is R_l(c) := D_l^T M_c^(-1) D_l >= 0, so it is non-decreasing in each c_l. Each theta_l -> cos(theta_l) is concave on (-pi/2, pi/2). A concave function that is non-decreasing in each variable, composed with concave functions of single variables, is concave: (i). For (ii): at c = 1, M_1 is the lattice Laplacian, and the sum over l of R_l(1) is the trace of M_1^(-1) M_1 on the complement of the constants, which is N - 1. The translations and the hyperoctahedral group act transitively on the links and commute with M_1, and R_l does not depend on the orientation of l. So R_l(1) = (N - 1)/(d N) for every link. Taylor's formula gives log det' M_c = log det' M_1 + sum of R_l(1)(c_l - 1) + O(abs(c - 1)^2), and c_l - 1 = cos(theta_l) - 1 = -theta_l^2/2 + O(theta_l^4). QED
+
+Consequence for B8. In the minimal Landau gauge of compact U(1) the Faddeev-Popov weight is log-concave on the cube abs(theta_l) < pi/2, with the Hessian (N - 1)/(d N) per link at the origin (close to 1/4 in dimension four). So the convex gain of idea B8 is present for an abelian group at the same order: test K5 is not met by the mechanism, and the mechanism cannot be what separates SU(2) from U(1). For SU(2) the same computation gives a colour-diagonal part of the same form and a non-negative ghost-loop term (ARGUED, Section 5); both are of order one and do not grow with beta.
+
+### 7.5 Lemma TRI and Proposition SPH (idea B12): class angles on a sphere of plaquettes
+
+**Lemma TRI (PROVED).** Let g_1 in SU(2) have the class angle theta_1 in (0, pi), and let g_2 be uniformly distributed on the conjugacy class of angle theta_2 in (0, pi). Then cos of the class angle of g_1 g_2 is uniformly distributed on [cos(theta_1 + theta_2), cos(theta_1 - theta_2)]. So the class angle theta_12 of g_1 g_2 has the density sin(theta_12)/(2 sin(theta_1) sin(theta_2)) on the set where (theta_1, theta_2, theta_12) lies in
+
+T := {theta in [0, pi]^3 : theta_i <= theta_j + theta_k for the three choices of i, and theta_1 + theta_2 + theta_3 <= 2 pi},
+
+a convex polytope (the spherical triangle inequalities).
+
+Proof. Write g_i = cos(theta_i) + i sin(theta_i) n_i.sigma with unit vectors n_i. Since (n_1.sigma)(n_2.sigma) = n_1.n_2 + i (n_1 x n_2).sigma, (1/2) tr(g_1 g_2) = cos(theta_1) cos(theta_2) - sin(theta_1) sin(theta_2) (n_1.n_2). Conjugation by a Haar element rotates n_2 by a Haar rotation, so n_2 is uniform on the sphere, and t := n_1.n_2 is uniform on [-1, 1] (Archimedes). So cos(theta_12) is uniform on an interval of length 2 sin(theta_1) sin(theta_2) with the stated end points, and the density of theta_12 is sin(theta_12) divided by that length. The condition cos(theta_1 + theta_2) <= cos(theta_12) <= cos(theta_1 - theta_2) with theta_12 in [0, pi] is: abs(theta_1 - theta_2) <= theta_12, and theta_12 <= theta_1 + theta_2 when theta_1 + theta_2 <= pi, theta_12 <= 2 pi - theta_1 - theta_2 otherwise. In each case the missing one of the two upper inequalities follows from theta_12 <= pi. These are the inequalities of T. QED
+
+**Proposition SPH (PROVED).** Let n >= 3, let g_1, ..., g_(n-1) be independent Haar elements of SU(2), and g_n := (g_1 ... g_(n-1))^(-1). Put h_1 := g_1 g_2 and h_k := h_(k-1) g_(k+1) for 2 <= k <= n - 2. Let theta_i be the class angle of g_i (1 <= i <= n) and alpha_k that of h_k (1 <= k <= n - 3). Then the joint density of (theta_1, ..., theta_n, alpha_1, ..., alpha_(n-3)) on [0, pi]^(2n-3) is
+
+(2/pi)^(n-1) 2^(-(n-2)) times the product over i = 1, ..., n of sin(theta_i), on the convex polytope P_n,
+
+where P_n is cut out by: (theta_1, theta_2, alpha_1) in T; (alpha_(k-1), theta_(k+1), alpha_k) in T for 2 <= k <= n - 3; (alpha_(n-3), theta_(n-1), theta_n) in T. (For n = 3 there is no alpha and P_3 = T.) In particular the density is uniform in the diagonals alpha.
+
+Proof. The angles theta_1, ..., theta_(n-1) are independent with the density (2/pi) sin^2 (Weyl). The pair (g_1, g_2) is invariant in law under simultaneous conjugation, which fixes theta_1, theta_2 and alpha_1; so given these three angles h_1 is uniform on its class, and by Lemma TRI (applied with g_1 fixed and g_2 uniform on its class) alpha_1 has the conditional density sin(alpha_1)/(2 sin(theta_1) sin(theta_2)) on T. For k >= 2: g_(k+1) is Haar and independent of (g_1, ..., g_k), so given its class angle it is uniform on its class and independent of h_(k-1); Lemma TRI with h_(k-1) fixed gives the conditional density sin(alpha_k)/(2 sin(alpha_(k-1)) sin(theta_(k+1))) on T, given all earlier variables. The last step gives the class angle of h_(n-2), which is theta_n (an element and its inverse have the same class angle), with the density sin(theta_n)/(2 sin(alpha_(n-3)) sin(theta_(n-1))). Multiply: each sin(alpha_k) occurs once in a numerator and once in a denominator; each sin^2(theta_i), i <= n - 1, is divided once by sin(theta_i); sin(theta_n) occurs once; there are n - 2 factors 1/2. QED
+
+**Corollary SPH-LC (PROVED).** Weight the law of Proposition SPH by the product over i of exp(beta cos(theta_i)), beta >= 0. The weighted density on P_n is log-concave if and only if beta <= 3 sqrt(3)/2. Then the marginal law of (theta_1, ..., theta_n) is log-concave (Prekopa's theorem). For one free plaquette, with the density sin^2(theta) exp(beta cos theta), the bound is beta <= 3 sqrt(3).
+
+Proof. The density is the indicator of a convex set times a product of functions phi(theta_i), phi(theta) := sin(theta) exp(beta cos theta). (log phi)'' = -1/sin^2(theta) - beta cos(theta). It is at most 0 on (0, pi) if and only if beta u (1 - u^2) <= 1 for u = -cos(theta) in (0, 1); the maximum of u(1 - u^2) is 2/(3 sqrt 3), at u = 1/sqrt 3. So phi is log-concave if and only if beta <= 3 sqrt(3)/2 = 2.598.... If beta is larger, take theta_1 = arccos(-1/sqrt 3) = 2.186..., and all other theta_i and all alpha_k equal to 3/2. The triple that contains theta_1 is (2.186, 1.5, 1.5): its sum 5.186 is below 2 pi = 6.283, and 2.186 < 3, 1.5 < 3.686. Every other triple is (1.5, 1.5, 1.5). So all inequalities of T are strict, the point is interior to P_n (for every n >= 3), and along theta_1 the logarithm of the density is strictly convex there. For one plaquette the factor is sin^2, and the condition is beta u(1 - u^2) <= 2. QED
+
+What it means for B12. A closed surface of n plaquettes with free boundary (the surface of one cube has n = 6) is two-dimensional lattice gauge theory on a sphere; by the standard change of variables of that theory its plaquette holonomies have the law of (g_1, ..., g_n) above (ARGUED: the change of variables is not written out here; it is the fact behind the exact solution of the two-dimensional theory, on file in the lane as solvable). So on a sphere the Wilson measure in class angles and diagonals is a product of one-variable factors on a convex polytope, selective in the group (for U(1) the class map is the identity; for a finite group the angles are discrete), and log-concave up to beta = 2.598. This is the toric structure of Jeffrey and Weitsman in elementary form. It does not extend to the four-dimensional lattice: the fan argument needs every group element to enter one product relation, and there each plaquette lies in four cubes. For three free elements and their three pairwise products the density of the six class angles has, in the flat limit, the factor (det of the Gram matrix)^(-1/2) of a Wishart law with three degrees of freedom in dimension three, which is not log-concave (ARGUED). So B12 is the two-dimensional structure again, and (LC-rho) has no support in dimension four.
+
+### 7.6 What Section 7 leaves
+
+PROVED by hand here, unchecked: Lemma BAR; Lemma CHAIN-4 with Corollary NUC; Proposition CAS-0 with Corollary GS (given Theorems CE and CR of row 1017, same-provider check only); Lemma NOCS; Lemma FP-U1; Lemma TRI, Proposition SPH, Corollary SPH-LC. ARGUED: the reading that the weak-coupling logarithm sits in G_0; the SU(2) form of Lemma FP-U1; the identification of the cube surface with Proposition SPH; the Gram-determinant remark. All of it is off the direct path of (W): two exact forms of open items ((BDD-Delta) as a barrier and as four thermal bounds; (LIOU) as a statement on ground-state energies plus (NO-CONST)), and three proved kills. No statement is a mechanism for the selective step.

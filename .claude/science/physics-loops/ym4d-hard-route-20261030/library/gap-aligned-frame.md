@@ -102,3 +102,93 @@ What the cube does not show: its frame is of the kind "j = 0", which needs outgo
 In the bulk of a 4D lattice a site has 4 outgoing links with the single relation M_x = (incoming sum), and the four
 forces span R^3 for almost every U, so j = 0 is not available. (In two dimensions it is: n = N_1 x N_2 normalised.)
 With j = 0 the move theta n keeps the action to first order for every theta, and Psi = sum_l theta_l d_l is all Jacobian.
+
+### Step 5: the 3^4 torus (and L^4, L >= 3). Structure by hand; GUIDE run
+
+**Count.** V sites, 2V angles, V - 1 independent equations (the V equations sum to zero). Each site has 4 outgoing
+forces with the one relation M_x = incoming sum, so j = 0 is not available and the cube's frame has no analogue.
+Greedy solving fails for a reason worth recording: solving the equation at z for n_z needs
+|sum_(head z) n_tail . N_l| <= |M_z|, and summing "strict inequality at every site" over z contradicts
+sum_mu |m_x . N_(x,mu)| >= |M_x| (m_x = M_x/|M_x|). So no site-by-site scheme works; the system is global.
+No topological argument forces a solution either: the map n -> div j is odd, but the antipodal index of (S^2)^V
+is 2, and V - 1 > 2.
+
+**GUIDE run** (2026-11-16T00:04Z by the lock record; `python3 scripts/lab_ops.py numeric-lock acquire` succeeded;
+memory 66 percent free; script `/tmp/gap-aligned-frame-w2/af.py`, log `run1.log`, not committed; peak 40 MB).
+3^4 torus, forces checked against a finite difference (5.558283 against 5.558285) and the Gauss law (6e-15).
+Unit points of K(U) by Gauss-Newton from random starts: found on 3 of 3 Haar-random configurations and on 3 of 3
+Metropolis configurations at beta = 2.4 (plaquette mean 0.65), residual below 4e-14 in 6 to 9 iterations, rank of the
+system 80 = V - 1 each time, sum_l |D_l n|^2 between 577 and 670 (324 links: these frames are far from
+covariantly constant). The run did not refute existence; it suggests aligned frames exist at typical
+configurations, in a family of dimension V + 1. That is a guide, not a proof.
+
+### Step 6: Theorem E (aligned frames exist on an open set of the 4D torus). PROVED by hand
+
+**Lemma RANK.** On the torus Z_L^4, L >= 3, for a real link field f put (T_f h)(x) = sum_mu f_(x,mu) (h_(x+mu) - h_x).
+Define f* by: numbers c1(u) (u in Z_L^3), c2(v) (v in Z_L^2), c3(t), psi_t (t in Z_L), all non-zero, with
+sum_u c1 = sum_v c2 = sum_t c3 = 0 and S := sum_t c3(t)/(psi_t psi_(t-1)) not 0; and
+  f*_(x,1) = c1(x_2, x_3, x_4),
+  f*_(x,2) = [x_1 = 0] c2(x_3, x_4),
+  f*_(x,3) = [x_1 = 0][x_2 = 0] (c3(x_4) + (psi_(x_4) - psi_(x_4 - 1)) [x_3 = 0]),
+  f*_(x,4) = [x_1 = 0][x_2 = 0] psi_(x_4) ([x_3 = 1] - [x_3 = 0]).
+(For instance c1 = 1 except one value -(L^3 - 1); c2 = 1 except one value -(L^2 - 1); c3 = (1, ..., 1, -(L - 1));
+psi = (1, ..., 1, 2); then S = 1/2 + (L - 2) - (L - 1)/2 = (L - 2)/2.) Then
+(a) f* is conserved and f* = d* phi* for an explicit two-form phi*;
+(b) the kernel of T_(f*) is the constants, so T_(f*) has rank V - 1.
+
+Proof of (b). Sites with x_1 not 0 carry only f_1 = c1 not 0: h(x + e_1) = h(x) for x_1 = 1, ..., L - 1, so h is
+constant on every line in direction 1: h = eta(x_2, x_3, x_4). At a site with x_1 = 0 the direction-1 term is then
+zero. If x_2 is not 0 the equation is c2 (eta(u + e_2) - eta(u)) = 0, so eta = zeta(x_3, x_4). At x_1 = x_2 = 0 the
+equation is the two-dimensional one, G_3 (zeta(v + e_3) - zeta(v)) + G_4 (zeta(v + e_4) - zeta(v)) = 0 with
+G_3 = f*_3, G_4 = f*_4 as functions of v = (x_3, x_4) = (s, t). Columns s = 2, ..., L - 1: c3(t)(zeta(s + 1, t) -
+zeta(s, t)) = 0, so zeta(2, t) = ... = zeta(L, t) = zeta(0, t) =: a_t. Put b_t = zeta(1, t), e_t = b_t - a_t. Then
+  column 0:  (c3(t) + psi_t - psi_(t-1)) e_t = psi_t (a_(t+1) - a_t),
+  column 1:  c3(t) e_t = psi_t (b_(t+1) - b_t).
+Subtracting, psi_t e_(t+1) = psi_(t-1) e_t, so psi_(t-1) e_t = m does not depend on t. Summing column 1 divided by
+psi_t over t in Z_L: 0 = sum_t (b_(t+1) - b_t) = m S. So m = 0, e = 0, b is constant, a = b. QED (b).
+Proof of (a). Conservation: direction 1 and direction 2 contribute c - c = 0 at each site; in directions 3, 4 at
+(0, t): c3 + psi_t - psi_(t-1) - psi_t - c3 + psi_(t-1) = 0; at (1, t): c3 + psi_t - c3 - (psi_t - psi_(t-1)) -
+psi_(t-1) = 0; elsewhere c3 - c3. With (d* phi)_(x,mu) = sum_(nu not mu) (phi_(mu nu)(x) - phi_(mu nu)(x - e_nu)):
+a function g on the 3-torus transverse to direction mu with sum 0 is a sum of three backward differences
+(g minus its average in one direction, and so on), g = sum_nu (chi_nu - chi_nu(. - e_nu)); put phi_(mu nu) = chi_nu.
+This gives the first two lines. For the last two, phi_34(x) = [x_1 = 0][x_2 = 0] (Phi(x_4) + psi_(x_4) [x_3 = 0])
+with Phi(t) - Phi(t - 1) = c3(t). QED
+Control (GUIDE, script `fstar.py` in the same scratch folder): rank 80 of 81, 255 of 256, 624 of 625 for
+L = 3, 4, 5 with the example values; divergence 0, flux 0. A random abelian configuration also gave rank V - 1.
+
+Remark (why the construction has this shape). T_f h = 0 says h is constant along the flow of f. Straight lines
+alone leave one free constant per line, and the reduction from d to d - 1 dimensions (lines plus a current on one
+slice) is exact; it ends in one dimension, where a co-exact current is zero. So the last step must be truly
+two-dimensional. In the 2D continuum the kernel is all functions of the stream function; on the lattice the
+identity psi_(t-1) e_t = m with S not 0 removes it.
+
+**Theorem E.** Torus Z_L^4, L >= 3, any beta > 0. There is a non-empty open, gauge-invariant set GG of
+configurations and, near each of its points, a smooth map U -> n(U) in (S^2)^V with div j(U, n(U)) = 0. Almost every
+point of GG is non-reducible, and there D n is not 0. GG has positive Wilson measure.
+
+Proof. (1) Abelian point. For a real link field a put U_l = exp(a_l e), e a fixed unit vector. Then every
+plaquette is exp(F_p e), F = d a, A = beta sum_p cos F_p, and N_l = f_l e with f = (sign) beta d* sin(d a); the sign
+convention does not matter below. (2) Choice of a. By linear algebra im d* = d*(im d + ker d*) = im(d* d), so there
+is a_0 with d* d a_0 = f* (Lemma RANK (a)). Let mm be a (V - 1)-minor of T_f with mm(f*) not 0; it is a homogeneous
+polynomial of degree V - 1 in f. Since sin y = y + O(y^3), mm(f(eps a_0)) = (beta eps)^(V-1) mm(f*) + O(eps^V), not
+0 for small eps > 0. Fix such an eps: U_0 = exp(eps a_0 e), f_0 its force field, rank T_(f_0) = V - 1.
+(3) A solution at U_0. For |c| < 1 and unit m_x orthogonal to e, n_x = c e + sqrt(1 - c^2) m_x has j = c f_0,
+conserved. (4) Transversality. Phi(U, n) = div j is polynomial in (U, n) with values in R^V_0 (sum zero). Its
+derivative in n at (U_0, n) along delta n_x = g_x (e - c n_x)/(1 - c^2) (tangent, with delta n_x . e = g_x) is
+g -> div(g f_0), whose transpose is - T_(f_0). So it has rank V - 1 and is onto R^V_0. (5) Implicit function theorem:
+for U in a neighbourhood UU of U_0 there is a smooth n(U) with Phi(U, n(U)) = 0. (6) If n solves at U then Ad(g) n
+solves at U^g, so GG = the gauge orbit of UU is open and gauge invariant. Open and non-empty gives positive Wilson
+measure (the density e^A is positive). Reducible configurations lie in the zero set of the polynomial
+|s_p x s_q|^2 for two plaquettes at one site, which is not identically zero; so they are a null set, and on a
+non-reducible configuration every frame has D n not 0 (Lemma FR). QED
+
+Not proved: that GG has full measure (the GUIDE run found a frame on 6 of 6 typical configurations); a globally
+smooth gauge-covariant selection on GG (locally it exists by the theorem; ARGUED that it can be made covariant by
+choosing n on a local slice of the gauge action and extending by Ad(g)).
+
+**Consequence for D2.** The repair proposed in check 1022 ("elsewhere only if a frame with D n orthogonal to the
+forces in this summed sense exists (OPEN)") is settled: such frames exist, on an open set of positive measure
+(PROVED), on almost every configuration of one cube (PROVED), and at every typical configuration tried (GUIDE).
+Sentence L275 of row 1018, for the conserved-current half, is false. The first alternative of the row (no frame on
+an open set of positive measure) is not available as the general statement; whether some other open set has no
+frame is OPEN and was not found (0 failures in 6).

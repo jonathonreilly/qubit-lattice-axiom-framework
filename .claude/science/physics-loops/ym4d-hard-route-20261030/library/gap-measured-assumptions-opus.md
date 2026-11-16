@@ -57,9 +57,9 @@ PROVED, ARGUED, OPEN, FAILS. Measured data guide or refute; they never discharge
 | 1 measured record + wall twice | yes (16:05Z) | 33 measured items with sources; leading strong coupling off by 5x at beta 2.3 (L9) |
 | 2-3 inventory, reasoning up (row's steps 1-3) | yes (16:06Z) | C1-C10: gap = 0++ at 3.78 sqrt(sigma); generated in the crossover band beta 2.2-2.4 next to a mixed-action critical end point |
 | 4 assumptions table (>= 40, six groups, Elon pass) | yes (16:09Z) | 59 rows; top five: Wilson-axis band (c2+b3), strong coupling to the band (c4), no-transition premise (e4), small boxes (c6), gap via confinement (d2, e10) |
-| 5 comparison with lane files | no | |
-| 6 discard tests, set-aside methods | no | |
-| 7 routes, kills | no | |
+| 5 comparison with lane files | yes | band [2.3, 2.6] sits above the measured crossover (2.2), from N_t = 4 deconfinement to the onset of 3-loop running; mainly found again |
+| 6 discard tests, set-aside methods | yes | no verdict changes; K7 end point CONTESTED in the measured record (found again, row 995) |
+| 7 routes, kills | yes | M1-M9 all found again or dead; misframing pass finds none (band difficulty is intrinsic) |
 | 8 attempts | no | |
 | 9 report, RESULT | no | |
 
@@ -115,7 +115,7 @@ Marks: MEASURED (source, error) | DERIVED (computed here from MEASURED items; a 
 | L3 | Deconfinement: second order, 3D Ising class; beta_c(N_t = 4) = 2.2985(6); T_c/sqrt(sigma) = 0.69(2) (FHK), 0.7091(36) (LTW, recalled) | MEASURED | Engels-Fingberg-Weber NPB 332 (1990), Fingberg-Heller-Karsch NPB 392 (1993) hep-lat/9208012, abstracts; Lucini-Teper-Wenger hep-lat/0307017 |
 | L4 | Lambda_MSbar/sqrt(sigma) = 0.5806(21)[570] (3-loop fit); sqrt(sigma)/Lambda_MSbar = 1.79(12) (FHK) | MEASURED (scheme conversion is perturbative, DERIVED) | AT Table 15; FHK abstract |
 | L5 | Specific heat of the Wilson action has a sharp peak where the string tension crosses over from strong to weak coupling (near beta about 2.2), with rapid growth of correlation length and slowing down there | MEASURED (peak position near 2.2 recalled, not re-read) | Lautrup-Nauenberg PRL 45 (1980); Creutz PRD 21 (1980), abstracts |
-| L6 | The peak is the shadow of a nearby critical end point: in the fundamental-adjoint plane the SO(3) and Z2 first-order lines merge and end at a critical point; on the Wilson axis there is no bulk transition | MEASURED (Monte Carlo; end-point coordinates not re-read) | Bhanot-Creutz PRD 24 (1981), abstract |
+| L6 | The peak is the shadow of a nearby critical end point: in the fundamental-adjoint plane the SO(3) and Z2 first-order lines merge and end at a critical point; on the Wilson axis there is no bulk transition | MEASURED (Monte Carlo, small lattices) for the lines; **CONTESTED** for the end point (corrected in step 6: Mathur-Gavai NPB 448 (1995) find the claimed bulk line near beta 1.33 at beta_A 1.1 is the deconfinement transition of the small lattice; Datta-Gavai PLB 392 (1997): the end point's location depends strongly on higher strong-coupling orders) | Bhanot-Creutz PRD 24 (1981), abstract; Gavai-Grady-Mathur NPB 423 (1994), abstracts |
 | L7 | Creutz's string tension at fixed physics: bare coupling falls logarithmically with cutoff, consistent with the perturbative RG; "coexistence of confinement and asymptotic freedom" | MEASURED (1980 precision) | Creutz PRD 21 (1980), abstract |
 | L8 | Asymptotic scaling is violated in the measured window: a sqrt(sigma)/f_2loop(g^2) drifts 62.0 -> 45.2 over beta 2.30-2.70 (27 percent) with the bare coupling, 6.53 -> 5.39 with the boosted coupling g^2/<plaq>; the ratio m_G/sqrt(sigma) moves 3.33 -> 3.75 (scaling of ratios holds to about 3 percent from beta 2.5) | DERIVED (guide; `/tmp/ym4d-1063-meas/scaling.out`) from L2 | script `scripts/scaling.py` |
 | L9 | Leading strong coupling (u = I_2(beta)/I_1(beta), sigma a^2 = -ln u, m a = -4 ln u) at beta 2.30 gives sigma a^2 = 0.736 against 0.135 measured, m a = 2.94 against 1.22: the leading strong-coupling term is off by a factor 5 in sigma and 2.4 in m at the coarsest scaling point | DERIVED (guide) from L2 | same script |
@@ -265,6 +265,8 @@ Mark: reading (rests on BELIEF items L5, L6, L8, L9).
   DERIVED guide; BELIEF as a statement about proofs.
 - C4 The Wilson axis has no T = 0 transition, but the band is the shadow of a critical end point nearby in the
   fundamental-adjoint plane; the measured scalar dip (12 percent) is its imprint (3.1f; L2, L6). MEASURED + BELIEF.
+  **Corrected in step 6:** the end point itself is CONTESTED (L6 as corrected); the scalar dip (L2) is MEASURED, its
+  cause is not established.
 - C5 Continuum ratios are reached at correlation lengths of 1.5-3 lattice spacings (3.1e; L2). MEASURED.
 - C6 The firm mechanism is the confining flux tube with universal string behaviour (L11-L13, E3, T7). Centre vortices
   are favoured by projected and twisted-box data (L15-L17, T10) but CONTESTED as mechanism; monopoles (L18) and
@@ -402,3 +404,260 @@ Rows whose drop would change an owner decision: c2/b3 (the lane's choice of the 
 lattices), and a10 (theta stated explicitly in the target).
 
 - 16:09Z step 4 written (59 rows). Next: step 5, open the lane files.
+
+## Step 5: comparison with the lane (files opened only now)
+
+Read at this step: `GOAL.md` (in full); `parts/gap.md` L1-270 (state of attack, obligations, registry, test table,
+price); `library/gap-dichotomy.md` L60-137 (definitions of D, z^-, P, (W), (PHYS-SEED)); `library/gap-wall-assumptions-opus.md`
+(row 1052) L403-530 (its steps 5-6) and its RESULT line; `library/gap-direction3-max.md` (row 1051) L56-94 and its RESULT
+line; FINISH.md L1-84, L299-351; `library/prior/gap-seed-size.md` L1-80. Searches (grep over `library/`, `parts/`,
+`FINISH.md`; open PR branches **not** searched): "specific heat", Bhanot, crossover, torelon, "string tension", Teper,
+glueball, deconfin, Lautrup, roughening, "end point", theta = pi, Athenodorou, Kovacs, Tomboulis, Creutz, N_t = 4,
+"Luscher term", 5041, peak, 3-loop, "scaling window", "scalar dip".
+
+### 5.0 The lane's wall, quoted (corrects the provisional precise version of step 1b)
+
+Target T0 (GOAL.md): existence for SU(2) without the mass gap; "Later targets: ... and the mass gap". The gap lane's wall
+(`parts/gap.md` L18-23, `gap-dichotomy.md` L112-119): for Wilson SU(2) along the Sussman-Alpoge trajectory, on
+periodic tori of physical sizes P = {2^i l_1}, prove **(W)**: there are a bound (L_0, D_0) of (BDD-Delta) and L in P,
+L >= 4 L_0, with z^-(L) > 256 D_0 + 30, where z^-(L) = liminf_j (L/a_j) m_j((L/a_j)^3) is size times the transfer gap of
+the periodic cube and D is the Casimir free energy F - f|n| of the symmetric torus. (W) iff (PHYS-SEED) iff
+[(BDD-Delta) and (Z-UNB)]. Equivalent fixed-coupling form: the seed (SEED) "at each beta of the window 2.3 to 2.6 with a
+carry to finer cutoffs" (`parts/gap.md` L24-25). **So the lane's band is beta in [2.3, 2.6].** Step 1b's plain version
+("proofs work when the force is very strong or very weak ... the mass appears in between") matches the lane's blockage
+sentence (`parts/gap.md` L44-46: "every engine found is blind, so its seed sits in the band; ... asymptotic freedom at
+small coupling, has no engine that carries it across the band"). Its precise version was the Clay statement; the lane's
+wall is (W), which row 1052 (5.4, S1-S6) showed is stronger than the Clay gap in four ways (bare Wilson; every lattice of
+the sequence; periodic all-sector, hence the flux half; bounded Casimir free energy).
+
+### 5.1 Where the lane's band sits in the measured record (the row's specific question)
+
+From L2, L3, L5, L8, L9 and Athenodorou-Teper Table 15 (fit range of the SU(2) 3-loop Lambda fit: a sqrt(sigma) in
+[0.072, 0.133], that is beta >= 2.60):
+
+| beta | a sqrt(sigma) | a m_G | xi = 1/(a m_G) | m_G/sqrt(sigma) (continuum 3.781) | 1/(T_c a) (box side that is still confined) | what the data show there |
+|---|---|---|---|---|---|---|
+| about 2.2 | (not fetched) | | | | about 3 | specific-heat peak; strong-to-weak crossover of sigma (L5); shadow of the fundamental-adjoint end point (L6) |
+| 2.2986 | 0.368 | 1.224 | 0.82 | 3.33 (12 percent low: scalar dip) | 3.8 (N_t = 4 deconfinement point, L3) | band's lower edge; leading strong coupling off by 5.4x in sigma a^2 (L9) |
+| 2.427 | 0.240 | 0.847 | 1.18 | 3.53 (7 percent low) | 5.9 | |
+| 2.509 | 0.180 | 0.656 | 1.52 | 3.64 (4 percent low) | 7.8 | ratio scaling within errors from here (L8) |
+| 2.60 | 0.133 | 0.500 | 2.00 | 3.77 | 10.6 | band's upper edge = lower end of the range where 3-loop running fits (AT Table 15) |
+
+Reading (DERIVED from MEASURED items; a guide, decides nothing):
+
+1. **The band is not the crossover.** The measured crossover (specific-heat peak, strong-to-weak change of sigma) sits
+   at beta about 2.2, just *below* the band. The band [2.3, 2.6] runs from the N_t = 4 deconfinement coupling to the
+   onset of 3-loop perturbative running. Inside it nothing singular or peaked happens: the theory is already continuum
+   Yang-Mills on a coarse grid (ratios within 12 percent at 2.30, within errors from 2.5), and not yet perturbative.
+2. **What happens in the band:** the gap scale crosses the cutoff (xi from 0.8 to 2.0 lattice spacings, a m_G = 1 at
+   beta about 2.37); the end point's imprint (the scalar dip) fades from 12 percent to zero; the confined box side grows
+   from 4 to 11 lattice spacings; about 1.5 factor-2 blockings fit inside (a sqrt(sigma) falls by 2.77).
+3. **Agreement with the lane:** the lane's "every route ends at an inequality for the thermal sum of the cube at
+   order-one coupling" (`parts/gap.md` L41-43) is what the data predict: the gap scale meets the cutoff in the band, so a
+   fixed-coupling seed there is a statement about continuum physics in a box of a few fm, with no small parameter.
+   The lane's seed-size estimate (`library/prior/gap-seed-size.md`, row 706 lineage) already turns the same table into
+   box sizes.
+4. **Disagreement or caution:** none with the lane's mathematics. One with a phrase: "order-one bare coupling" suggests
+   the strong-to-weak crossover; the measured crossover is below the band, and the band's difficulty is the absence of
+   a small parameter in a regime that is *already* scaling, not proximity to a lattice artefact. Consequence for the
+   K7 end-point test (test table, BELIEF): its imprint on Wilson SU(2) is measurable at 2.30 and gone by 2.5, so a tool
+   whose seed sits at beta >= 2.5 is far (in the soft channel) from the end point; the test bites hardest at the lower
+   edge.
+
+### 5.2 Conclusions C1-C10 against the record
+
+| Item | Earlier work? | Where (credit) | Search scope for "new" |
+|---|---|---|---|
+| C1 gap = 0++, one scale with sigma, T_c | yes | `library/prior/gap-seed-size.md` (AT Table 1 quoted, row 706 lineage); `prior/gap-lit-grok-paths.md` L20 | grep Athenodorou, glueball |
+| C2 gap scale meets cutoff in the band | yes | `prior/gap-lit-grok-paths.md` L20 ("scaling window around beta 2.3-2.5 where the lattice correlation length is a few"); `parts/gap.md` L41-43 | grep "scaling window" |
+| C3 neither expansion valid in the band | yes (qualitative) | `prior/gap-lit-grok-paths.md` L69, L428 ("Strong coupling is solved; order-one beta is not"); ceilings 1/3 ... 1.0109 (test table) | the numbers 5.4x, 2.4x of L9: not found by grep "0.736", "5.4" (partly new, guide only) |
+| C4 end point nearby; scalar dip | yes | `prior/gap-sepinput-read-opus.md` 4.1 L184 (row 995: "the scalar glueball dips towards strong coupling, the tensor does not"); test table "K7 end point" | grep "scalar dip", Bhanot |
+| C5 continuum ratios at xi 1.5-3 | partly | scaling window stated (grok-paths L20); the 3-loop fit range as the band's upper edge: not found (grep "3-loop", "three-loop" gives no lattice-SU(2) hit) | partly new (guide) |
+| C6 mechanism: flux tube firm, vortices contested | yes | `prior/gap-twist-data.md` (de Forcrand-von Smekal, 't Hooft loops and electric flux sectors); Tomboulis line (row 1025, 76 files); Kovacs (19 files) | grep Tomboulis, Kovacs, torelon |
+| C7 SU(2) ~ SU(3) ~ large N | yes | row 838 (`gap-assume-opus.md`) as cited by row 1052 5.3 | - |
+| C8 small periodic boxes deconfined | yes | `gap-tiltproof-max.md` L100 (2.4 SMALL-BOX), `gap-cuttyp-max.md` L487, `gap-sep-opus.md` L556 | grep N_t = 4 |
+| C9 must fail for U(1); adjoint-sensitive near the end point | yes | test table (`parts/gap.md`: U(1), K7 end point, w_p / Proposition V) | - |
+| C10 uncovered region about 2-4 blockings | yes in form | (CAS) "with theta < 1 on a bounded range of sizes" (`parts/gap.md` L252-256, row 708) | - |
+
+### 5.3 Ranked assumptions (step 4) against the record
+
+| Assumption | Earlier work? | Where |
+|---|---|---|
+| c2 + b3 band in bare Wilson coupling; join at an RG effective action instead | yes | row 1052 5.3 b2 "(UNIV-FP) open, no route uses it" (`gap-next3-max.md` L282); row 838 item 23 ("the infrared engine acts on the fine lattice as it is", the opposite choice) |
+| c4 strong coupling reaches the band | yes | ceilings and proved bare ranges (beta < 2/9 etc., row 838 item 48) |
+| e4 no Wilson-axis transition (unproved) | partly | `gap-sepinput-max.md` L313-316, L396-398, L518 (row 996: "a bounded specific heat on the whole Wilson axis is the same as stability under a mean-field energy coupling"); `gap-thermpin-opus.md` L98 (no transition at 2.5) |
+| c6/c10/b6 small boxes | yes | as C8 |
+| d2/e10 gap through confinement | yes | row 1052 Lemma FLUX-W ((W) contains the flux half); row 838 item 15 |
+| a10 theta = 0 | yes | row 838 item 72 (Gaiotto-Kapustin-Komargodski-Seiberg) |
+| d7 adjoint-blind tools vs the end point | yes | test table, K7 end point and w_p rows; Proposition V is its theorem-grade form |
+
+### 5.4 What the fresh pass added, and what it only found again
+
+Found again: C1-C4, C6-C10, all five ranked assumptions, d7, a10. Credit: rows 706 (seed size), 838 (assumptions),
+995-996 (mixed action, specific heat), 998 (test table, price), 1052 (FLUX-W, JW comparison), and the literature notes
+named above.
+
+Added (each "not found in `library/`, `parts/`, FINISH.md by the greps named"; PR branches not searched):
+
+1. **The band placed against the measured record in one table (5.1):** lower edge = N_t = 4 deconfinement coupling and
+   just above the specific-heat peak; upper edge = onset of 3-loop running in the Athenodorou-Teper fit; inside, the
+   scalar dip fades 12 -> 0 percent and xi goes 0.8 -> 2.0. Reading, guide.
+2. **"The band is not the crossover"** (5.1 point 1): the order-one difficulty is the absence of a small parameter in a
+   regime that already scales, so a (K-one) property at beta in the band is a property of continuum Yang-Mills in a box
+   of 2-3 fm, not of a lattice artefact. Reading.
+3. The leading-strong-coupling miss factors at 2.30 (L9). Guide.
+
+Honest summary of steps 1-5: **the measured-physics pass mainly found again what the lane already holds**; its
+addition is the quantitative placement of the band (items 1-2), which is a reading and changes no verdict by itself.
+
+- 16:13Z step 5 written. 16:15Z L6 and C4 corrected in place (end point CONTESTED).
+
+## Step 6: discard tests and set-aside methods, re-judged against the measured record
+
+### 6a. The set-aside list
+
+Not copied again: rows 1-18 (`library/gap-crux-exercise2-max.md` L396-413, row 878), rows 19-33 (`parts/gap.md`
+L57-66, row 998), and the later blocks of rows 1004-1050 (`parts/gap.md` L136-150), as listed and re-judged against the
+Clay gap by row 1052 (`library/gap-wall-assumptions-opus.md` L487-528, read here). This step adds one question per
+test and verdict: **does it rest on a BELIEF that the measured record bears on?** Measured data cannot touch a verdict
+that rests on a theorem (they never refute a proof), so those verdicts are "valid as reported; not re-derived".
+
+### 6b. The blockage, from the measured record (one sentence)
+
+In the band the data show a regime that already scales and has no small parameter (5.1); the selective property a
+tool must use is, physically, the one the data show (the confining flux tube and the centre-flux free energy), and every
+gauge-invariant measured form of it is a confinement-type quantity, which is stronger than the gap (C6, row 1052
+FLUX-W).
+
+### 6c. The belief-grade tests against the measured record
+
+| Test (lane source) | Belief it rests on | What the measured record says | Change |
+|---|---|---|---|
+| Compact U(1) at beta of order 1 to a few (test table, `parts/gap.md` L205: "At beta of order 1 to a few it is a BELIEF") | U(1) is in the Coulomb phase there | MEASURED: a (weak first-order) transition near beta about 1.0 (Lautrup-Nauenberg PLB 95 (1980): e_c^2 = 0.995, abstract; about 1.011 in later work, recalled), Coulomb above. So the belief range starts at beta about 1.01 | none: the lane's T_W tests use couplings to infinity, where the THM binds |
+| K7 line (L211) | Bhanot-Creutz phase lines at beta_A about 1.3-1.5 | MEASURED lines on small lattices; Gavai-Grady-Mathur: the deconfinement line joins the bulk line at its end point | none |
+| K7 end point, "a massless scalar" (L212) | the 1981 end point exists and is critical | CONTESTED in the record: Mathur-Gavai (1995) re-identify part of the old bulk line as the small-lattice deconfinement transition; Datta-Gavai (1997) find the end point's location unstable under higher orders. Row 995 already doubts it (`prior/gap-sepinput-read-opus.md` L80-149, which read the same papers) | none to the lane (found again); it corrects this run's C4 and L6 |
+| Frozen Q_8, 2T at order one (L209) | transition couplings from numerics | MEASURED: first-order transitions for 2T, 2O, 2I, critical coupling falling with the group order (Petcher-Weingarten PRD 22 (1980), abstract) | none; row 1052 already restricts these to torus statements |
+| Five dimensions (row 838 item 92) | 5D weak coupling is Coulomb-like | recalled bulk first-order transition (Creutz 1979); not re-read | none |
+| Small-box GUIDE numerics at beta >= 2.3 | boxes of side 4 represent the confined theory | contradicted for side < 1/(T_c a) (C8); the lane knows (`gap-tiltproof-max.md` L100). New observation: the 1981 K7 diagram itself is a small-box measurement, which is the reason it is contested (row above) | none to verdicts; a caution for any guide |
+| Deconfined models as counterexamples to gap tools (step 4 d2) | deconfinement means no gap | contradicted (spatial screening masses persist; recalled) | not used by the lane as far as the greps show; no change |
+
+### 6d. Verdicts
+
+Every verdict on the lane's lists rests either on a theorem (valid as reported; not re-derived), on a test whose
+belief the measured record supports (U(1) above beta 1.01, Q_8 and 2T transitions), or on the K7 end point, whose
+verdicts row 998 already re-judged "too strong" (6a row 28) and which the measured record now marks CONTESTED.
+**Outcome: no verdict changes; no corrected filter.** One sharpening of a belief range (U(1) Coulomb from beta about
+1.01, MEASURED) that changes nothing on the target's path, because the T_W tests bind at couplings tending to infinity.
+
+- 16:15Z step 6 written.
+
+## Step 7: routes suggested by the measured mechanism; kill pass
+
+Before each route: grep of `library/open-core.md` and FINISH.md for its statement (16:16Z). open-core.md names none of
+(CAS), (LIOU), (T-vor), (TB)_n, UNIV-FP, (BDD-Delta), area law, string tension (0 hits each; "blocking" 1); FINISH.md
+rows name all of them (5 to 31 lines each). So every route below that lands on one of these statements is **stopped
+by rule** and its match is named; none is attacked here.
+
+| Route (measured source) | Family (object; mechanism; terminal obligation) | Assumption changed | Kill verdict | Match on file (stop) |
+|---|---|---|---|---|
+| M1 flux tube: electric-flux energy >= c sigma L in periodic cubes (L11-L13, E3) | flux sectors of the cube; string tension; the flux half of (Z-UNB) | e10 (gap via confinement) | dead as a gap route: proves the flux half, which the Clay gap does not need and (W) contains (row 1052 FLUX-W) | rows 1025 ((TB)_n, Tomboulis-Kanazawa decimation), 1052 (FLUX-W), 1055 (check) |
+| M2 centre-vortex free energy decays (T10, L15-L17) | twisted tori, vortex containers; Mack-Petkova inequality; (SER), (SPR) | e1 | wounded, open premises named on file | row 1018 (T-vor), `parts/gap.md` L141 |
+| M3 dimensional transmutation: a finite count of blockings at O(1) coupling (C10, 3.4) | D(L) along doublings; contraction theta < 1 on a bounded range | c4 | blocked-equivalent (RA) | row 708 (CAS), row 998 Proposition CT; physical-scale map already in `gap-phys-seed.md` L139-147 (row 720: seed at about 20 xi = 2.5 fm, two doublings above the Koller-van Baal region, five to six above alpha < 0.1) |
+| M4 join at an RG effective action away from the Wilson axis (b3, c2) | blocked action; universality; UNIV-FP | b3, c2 | blocked: (W) and T0's trajectory are bare Wilson; the freedom of the bare weight is open with no route | UNIV-FP (`gap-next3-max.md` L282; FINISH, 6 lines) |
+| M5 ratio scaling from xi = 1.5 (C5): prove the gap through the string tension (area law uniform in the cutoff) | Wilson loops; area law -> gap | a1, e10 | dead as stated: no theorem gives the gap from the area law; it targets the stronger property | area law, FINISH 31 lines |
+| M6 seed below the crossover (beta < 2.2), where high-order strong-coupling series are believed to converge, carried up through the peak | strong-coupling seed + carry across beta 2.0-2.3 | c4 | wounded: the carry must cross the specific-heat maximum, where the variance of block energies is largest (L5), the worst place for any variance- or convexity-based carry; the proved strong-coupling ranges stop near beta 1 (test table ceilings) | ceilings 1/3, 2/3, 0.775, 1.0109 (`parts/gap.md` L216) and RA |
+| M7 outside lens, effective string theory (T7) | long-string EFT; nonlinear Lorentz invariance | - | dead: an EFT statement, no Yang-Mills theorem, no consumer | - |
+| M8 outside lens, large N (S4) | master field / Eguchi-Kawai | b4 | off the path (the lane is SU(2)); no gap theorem at N = infinity either | - |
+| M9 misframing pass: "the band is a lattice artefact (the crossover), so move it" | - | c2 | **no misframing found**: the measured record puts the crossover below the band and shows the band already scaling (5.1), so the band's difficulty is the continuum problem in a box of 2-3 fm (one-scale number = route RC, target-equivalent), not an artefact a change of frame removes | RC (registry rank 6, blocked-equivalent; reopen on a hand bound in the band) |
+
+Lenses considered and found empty here (one line each): finite groups (the frozen tests, row 1052); operator algebras
+(no measured input); topology/index (theta, a10: off the theta = 0 target); spectral graph theory, number theory, logic:
+no measured input points to them.
+
+**Rank** (what it would change / cost): none of M1-M9 is new; the only cheap item with a first test is not a route but
+the reading 5.1 point 1 itself (the band is above the crossover), which the row asks about directly. Step 8 runs its
+test. No route is proposed for a proof attempt: every candidate lands on a statement held by another FINISH row.
+
+- 16:16Z step 7 written.
+
+## Step 8: attempts
+
+No proof attempt: every route of step 7 lands on a statement another FINISH row holds (rule: stop and name the match;
+done in the table). The one first test this run can run is the test of its own reading 5.1 point 1.
+
+### 8.1 Test T-BAND (pre-registered 16:16Z, before any code was written)
+
+**Statement tested (reading, not a lemma):** on the Wilson SU(2) axis, the specific heat C(beta) = d<P>/dbeta =
+N_p Var(P-bar) (P-bar the mean of (1/2) tr U_p over the N_p plaquettes) has its maximum below the lane's band, and
+decreases across the band.
+
+**Run:** plain-numpy SU(2) heat bath (Kennedy-Pendleton sampling, checkerboard by direction and parity) on the periodic
+8^4 lattice (confined for beta <= 2.45, since 1/(T_c a) < 8 there, L3), beta in {1.9, 2.0, 2.1, 2.2, 2.25, 2.3, 2.4},
+300 thermalisation sweeps and 1500 measured sweeps each, errors by binning (bins of 50). Script and output in
+`/tmp/ym4d-1063-meas/scripts/hb.py` and `/tmp/ym4d-1063-meas/hb.out`, under the numeric lock.
+
+**Control (code validity), fixed now:** <P>(2.3) within 0.003 of 0.6022 and <P>(2.4) within 0.003 of 0.6297 (both
+interpolated from Athenodorou-Teper Table 1); and C(2.3), C(2.4) within 30 percent of the finite-difference slopes of
+that table (0.287 at beta 2.335, 0.247 at 2.399). If the control fails the run is void.
+
+**Readings, fixed now:** PASS if the maximum of C over the grid is at beta <= 2.25 and C(argmax) - C(2.3) exceeds twice
+the combined error, and C(2.4) < C(2.3). FAIL if the maximum is at 2.3 or 2.4. Otherwise INCONCLUSIVE. A PASS supports
+the reading only (GUIDE); it proves nothing and moves no lane statement.
+
+- 16:17Z T-BAND launched under the numeric lock (holder row1063-opus), memory free 71 percent. Result in 8.2 when it
+  ends. If this file stops here, the run was not read: rerun `python3 -I /tmp/ym4d-1063-meas/scripts/hb.py 8
+  1.9,2.0,2.1,2.2,2.25,2.3,2.4 300 1500 1063` (script text above is the one launched).
+
+## Step 9: report (written while T-BAND runs; 9.2 and RESULT completed after it)
+
+### 9.1 The wall, in plain words (step 1's version, corrected by step 5)
+
+Physicists have a theory of the force between quarks; with the quarks removed it has only force-carriers. Experiments
+on real quarks and very large computer simulations of the quark-free theory agree that the lightest particle of the
+quark-free world has a definite non-zero mass, about 3.8 times a basic energy scale of the force. The project wants a
+proof. It defines the theory on a grid and must show that, on a grid fine enough that the lightest particle is a few
+grid steps across, the excitations of a box a few times that particle's size die out fast enough; finer grids are
+then handled by a known method. What keeps happening: every proof tool either works only when the force is very weak
+or very strong, and the simulations show that on such a grid the theory is in neither state. It already behaves like
+the final theory, with no small number to expand in. (Analogy, marked as such: the bridge must be built in the middle
+of the river, not from either bank.)
+
+### 9.3 Filters corrected
+
+None. Two sharpenings that change no verdict: the compact-U(1) test's belief range starts at beta about 1.01
+(MEASURED transition, Lautrup-Nauenberg 1980); the K7 end point is CONTESTED in the measured record (Mathur-Gavai 1995,
+Datta-Gavai 1997), as row 995 already said. This run's own inventory was corrected (C4, L6).
+
+### 9.4 Routes worth doing
+
+None proposed from this run. Every route the measured mechanism suggests (flux tube, centre-vortex free energy, a
+counted number of blockings, an action away from the Wilson axis, the area law, a seed below the crossover) is held by
+a FINISH row or registry entry (step 7 table), and the misframing pass found no misframing.
+
+### 9.5 What not to do next
+
+- Another first-principles or measured-physics exercise on this wall: two in a row (rows 1052, 1063) mainly found the
+  lane's map again.
+- Treating the band as a lattice artefact to be moved: the data put the crossover below it (5.1); changing the action
+  (UNIV-FP) has no route and would leave the same continuum problem in a 2-3 fm box.
+- Guides from periodic boxes of side below 1/(T_c a) at beta >= 2.3 (4 at 2.3, 8 at 2.5, 11 at 2.6): they show the
+  deconfined theory.
+- Using the K7 end point as more than a contested belief; Proposition V (w_p, van Enter-Shlosman) is the theorem-grade
+  form of that test.
+
+### 9.6 The exact price
+
+Not sharpened. The lane's price stands (`parts/gap.md` L250-257): (W) iff (BDD-Delta) and (Z-UNB); (W) follows from
+(CAS) with theta < 1 on a bounded range. The measured record adds only the physical size of that range (found again,
+`gap-phys-seed.md` L139-147) and that it lies in a regime that already scales.
+
+### 9.7 Work items
+
+- **W1 (first): check of this run** by a model that did not write it (cross-provider preferred). Statements: the 5.1
+  table and its four readings against Athenodorou-Teper 2106.00364 Tables 1, 15, 34 and the cited abstracts; the
+  correction of L6/C4 against Mathur-Gavai hep-lat/9410004 and Datta-Gavai hep-lat/9610022; the 6c table; the T-BAND
+  run (script `/tmp/ym4d-1063-meas/scripts/hb.py` is not in the repository: the checker reruns it from the text of 8.1
+  or rewrites it, and checks the control first). Stop rule: one verdict per statement (HOLDS, HOLDS AFTER CORRECTION,
+  FAILS). Output `library/gap-measured-assumptions-check-<model>.md`.
+- Not proposed: a proof row on any M1-M9 (each held elsewhere, step 7); a larger Monte Carlo (it can only guide); a
+  theta = pi study (off the target).

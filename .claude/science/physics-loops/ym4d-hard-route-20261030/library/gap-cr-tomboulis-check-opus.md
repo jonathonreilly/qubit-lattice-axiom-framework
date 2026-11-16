@@ -342,3 +342,137 @@ Verdicts, Step 5: **Identity MIS HOLDS. Proposition RS HOLDS (W1.7 passes). Coro
 SI reading HOLDS AFTER CORRECTION (wording "exactly"). FAILS on Question 2 HOLDS.**
 
 - 00:50Z Step 5 done. Next: Step 6, Lemma PAR-T (W1.2), Proposition KR, the arithmetic of 6.3.
+
+## 6. Step 6 result: Lemma PAR-T (W1.2), Proposition KR, the arithmetic of 6.3, and the FAILS on Question 3
+
+Inputs read for this step: `gap-short-step-max.md` (row 1018) L150-175 (Lemma PAR with (H1), (H2), Fact 0);
+`gap-kanazawa-astra.md` (row 800) L80-172 ((K1)-(K6)), L460-476 ((K21)), L655-690 ((K-RESP) and its consumer).
+
+**Fact 1 (L556-564).** Checked in Step 2 (it is also Lemma LT's step (3)). The plaquettes that contain a link over
+the common edge e are: the (1,2)-plaquettes over c and c' (one such link each; sides >= 3 give four distinct edges per
+cell) and the plaquettes of orientation (dir e, 3) or (dir e, 4) based on e (two such links each). HOLDS.
+
+**Fact 2 (L572-577) and W1.2.** (a): s_i >= 2 gives every cell of D_i a neighbour in D_i across an interior edge, and
+V_c contains the links over that edge. (b): a plaquette of P_i fixes cells that must lie in D_i: the cell under a
+(1,2)-plaquette; the two cells on the edge under a mixed plaquette (its link of direction 1 or 2 is over an interior
+edge, or its link of direction 3 or 4 is over an interior vertex, whose four cells are all in D_i); the four cells
+around the vertex under a (3,4)-plaquette. So P_i meet P_j forces a common cell. **W1.2:** for D_1 = [0,2) x [0,2)
+and D_2 = [2,4) x [0,2) sharing the edges at x_1 = 2: those edges are interior to neither (their two cells are in
+different rectangles), their end points are interior to neither, so the links over them and over the vertices
+(2, y) lie in eta; the (1,2)-plaquettes over (1, y) are in P_1 only (their edge at x_1 = 1 is interior to D_1, no
+edge is interior to D_2), those over (2, y) in P_2 only, and the mixed plaquettes over the shared edges lie in no
+P_i. Disjointness holds. Also checked: a plaquette of P_i has no link in Lam_j (j != i), else it would lie in P_j; so
+Z_i depends on eta only. **Passes.** HOLDS.
+
+**Statement (i)-(iii) (L588-605).** (i): the integral with Z_i^tw for i in S and Z_i otherwise is Z^C, C = {c_i : i in S},
+|C| = |S|; Fact 1 gives rho or 1. HOLDS. (ii): E[prod (1 + r_i)] = sum over S of E[prod_S r_i] = 2^(k-1) (1 + rho); for
+M non-empty the generating polynomial P_M(x) = (1 - x)^|M| (1 + x)^(k - |M|) has P_M(1) = 0 and P_M(-1) = 2^k or 0;
+so the sum is 2^(k-1) (1 - rho) for M = all and 0 otherwise; with 1 - r_i = a_i (1 + r_i) this is the claim. HOLDS.
+(iii): 1 + (1 - rho)/(1 + rho) = 1/Q, (1 - rho)/2 = Q (1 - rho)/(1 + rho), Hoelder with k factors, and the sup bound. The
+identities hold for every positive weight field. **The two sign claims, "0 <= E^+[a_1 ... a_k]" and "u <= E^+[...]",
+need rho <= 1.** The proof says so ("rho <= 1 when the lane's transfer argument applies (row 800 (K9))"), but the
+Statement (L594-595) and Remark (4) ("for every positive strength field", L613-614) do not. Counter-example to the
+unconditional form, inside the setting (w_p may depend on p): Z_2 with w_p = 1 + c s_p off the stack V and 1 - c s_p
+on V. Its "twisted" model is the ferromagnetic one and its "untwisted" model the frustrated one, so rho = 1/rho_ferro
+> 1 and E^+[a_1 ... a_k] = (1 - rho)/(1 + rho) < 0. The same happens for Wilson SU(2) backgrounds m that already carry
+odd flux in the plane of v (m = v gives rho = Z_0/Z_v > 1). For the required pairs of row 800 (m_2 = 0, v = v_13 or
+v_14) rho = R_m(v) is in (0, 1] by (K9), so every use in row 1025 (Proposition KR) is covered. **HOLDS AFTER
+CORRECTION:** add "if rho <= 1 (true for the required pairs of row 800, by (K9))" to the two sign claims of (iii) and
+to Remark (4).
+
+Remarks (1)-(3) (L607-612): (1) moving c_i inside D_i is the substitution tau_e over an interior edge, whose
+plaquettes all lie in P_i. (2)-(3): given eta, the 2^k flip patterns are independent with P(flip i) = r_i/(1 + r_i),
+so a_i is the conditional mean of the sign of container i and E^+[prod a_i] = P(even) - P(odd) = (1 - rho)/(1 + rho).
+Consistent with (ii). HOLD.
+
+Comparison with row 1018's Lemma PAR (L150-172 there): the same parity algebra with pins replaced by the cohomology
+argument of Fact 1; the statements (i)-(iii) have the same form. The torus version is a fair transcription.
+
+**Proposition KR (L616-629).** With (K2) D = log Q_c(alpha) - log Q_f and (K5) D = int_0^beta G_f - int_0^alpha G_c,
+G = -d log Q, both quotients 1 at zero coupling: D = H_f - H_c(alpha). [D]_+ <= e_a/8 iff H_f <= e_a/8 + H_c(alpha) iff (by
+PAR-T (iii)) E^+_m[a_1 ... a_k] <= exp(e_a/8 + H_c(alpha)) - 1. The background signs of m enter PAR-T as plaquette-
+dependent weights, which the setting allows; the twist v is put in the plane of TT by symmetry. The left side does
+not depend on the family (it equals (1 - rho)/(1 + rho)). Sufficient forms: exp(e_a/8 + H_c) - 1 >= e_a/8 since H_c >= 0,
+then Hoelder or sup. G_f = d/ds log(1 + E^+_s[prod a]) since H = log(1 + E^+[prod a]) at each s. HOLDS.
+
+**The arithmetic of 6.3 (L631-658).** Sizes: 1 - tanh(xi/2) = 2/(e^xi + 1) >= e^(-xi), and 1 - x <= e^(-x), so
+tanh(xi/2) <= exp(-e^(-xi)); the condition k e^(-xi) >= log(8/e_a) and xi <= 2 log(a/delta) - log(C a) follow. Against
+(SER), (SPR): K(2l) <= phi xi(Sigma_2l, D_l) <= kappa phi K(l); the sheet (Sigma_a, D_delta) needs log_2(a/delta) = i uses
+of (SER), so xi <= kappa^i (kappa phi)^(J-i) K(l_0); the text's kappa^(i+1) is a weaker valid bound when kappa >= 1 (the
+case meant: kappa = 4). Bounded cost with k = 4^(theta J) beating a = 2^J l_0 needs theta > 1/2 and kappa phi^(1-theta) <= 1;
+since phi < 1, phi^(1-theta) increases with theta, so some theta works iff kappa phi^(1/2) < 1, that is kappa^2 phi < 1.
+Checked also that letting the cost grow does not help: with i = theta J the log of k e^(-xi) is 2 theta J log 2 minus
+K(l_0) [kappa phi^(1-theta)]^J, which fails for large J when kappa phi^(1-theta) > 1. So within the sup-cost bound of
+PAR-T (iii), kappa^2 phi < 1 is necessary and sufficient, as stated; kappa phi < 1 with i = 1 gives u_f -> 0 at a power
+rate. HOLDS (as arithmetic for a cost obeying the three bounds, which is how 9.2 marks it). The remark on row 793's
+two consumer clauses (L655-656) was not re-checked against row 793.
+
+**FAILS on Question 3 (L536-541, L660-665).** Valid form: Lemma PAR-T and Corollary MP are identities that hold in
+frozen Z_2 (Remark (4); row 1018 3.3 (c)), where the flux sectors stay degenerate above beta = 2.191 (the lane's
+Peierls theorem, `parts/gap.md` L211 in the test table, cited by row 1025 as L206) and the analogue of (K-RESP)
+fails. So "PAR and MP give (K-RESP)" FAILS. HOLDS. "Reduces to (SER) and (SPR)": implied only under kappa^2 phi < 1
+within the sup-cost arithmetic above; the phrase "only under" (L664) is relative to that arithmetic, not a proof that
+kappa^2 phi >= 1 excludes (K-RESP). Wording only.
+
+Verdicts, Step 6: **Lemma PAR-T HOLDS AFTER CORRECTION (hypothesis rho <= 1 for the sign claims); Fact 1, Fact 2
+(W1.2) HOLD; Proposition KR HOLDS; arithmetic of 6.3 HOLDS; FAILS on Question 3 HOLDS.**
+
+- 00:52Z Step 6 done (counter-example of the rho <= 1 remark replaced at 00:53Z by a cleaner one). Next: Step 7, Proposition SIGN and Identity MOV in context (Ways 1-3, 4.4 point 3), then the verdict table.
+
+## 7. Step 7 result: the test table, 4.4 (W1 judgement), Ways 1-3, 7.3, 8.3 and the RESULT line
+
+**4.4 point 1 (L385-387).** Follows from Lemma FAC and Lemma PT as checked in 3.2 (given also Ito's flow for the U(1)
+factor and the U(1) theorem behind Corollary PT1). HOLDS.
+
+**4.4 point 2 (L388-389), with a check of its range in n.** Proposition SIGN is proved for n = 1 only, while the point
+says "(TB)_n ... fails for Z_2 at large beta (PROVED)". The extension to every n is one line, done here as a check
+(not an attack): by W1.5 iterated, delta^(n) = A_n delta^(q^n) (1 + o(1)) with A_n = q r A_(n-1)^q, A_0 = 1, so
+A_n = (q r)^((q^n - 1)/(q - 1)); Lemma LT on Lambda and on Lambda(n) (sides L^(n) = L/b^n >= 3) gives
+rho(Lambda(n); c^(n))/rho(Lambda; c) -> q^(-n) A_n^(L^(n)_3 L^(n)_4), which at r = 1 is at least q^(9 (q^n - 1)/(q - 1) - n) > 1.
+At strong coupling c^(n) = q^(q + q^2 + ... + q^n) c^(q^n) (1 + o(1)) at r = 1 and Lemma HT gives the quotient of odd-flux
+weights -> q^(-n) q^((q + ... + q^n) L_1 L_2/q^n) > 1. So for Z_2 at r = 1 both signs occur for every n. The point HOLDS
+with this one-line extension (row 1025 should cite it, or say "n = 1").
+
+**4.4 point 3 (L390-394), the W1 judgement "renames the flux half".** (TB)_n at n >= n_0(beta) implies the flux half
+at that coupling (with the cited coarse expansion: u(Lambda) <= C (L_3 L_4/b^(2n)) exp(-kappa L_1 L_2/b^(2n))), but the
+converse is not shown and is not expected: (TB)_n also asserts one numerical inequality at every admissible size,
+down to quotients 3, and an area law at the rate of the Migdal-Kadanoff model. Row 1025 itself says so in 8.6
+(L898-899: "It is not known to follow from that bound") and in 9.1 ("stronger or equivalent"). So "(TB)_n in the range
+where DEC needs it is the flux half itself" and "renames" overstate an equivalence. The FAIL as a step stands on the
+correct reading: the step replaces the flux half by a statement at least as strong, with no mechanism, so it moves
+nothing. **HOLDS AFTER CORRECTION:** read "is the flux half itself" as "implies the flux half and is not known to
+follow from it (T_flux with a rate, at every admissible size)"; the same for "renames" in the RESULT line.
+
+**Test table (L371-381), the cells not checked above.** D2, SHEET, NP: readings, consistent with the definitions.
+Compact U(1): FAILS GIVEN Ito's flow and Ito and Seiler's Theorem 2.2 (2), correctly marked as cited; the Villain
+remark (beta' = beta up to exp(-c beta) at r = 1) agrees with Estimate RATE's formula without the curvature term.
+Frozen groups: (O-flow) fails (for Z_2, delta' = q r delta^q flows to weak coupling); the inference "a proof of H_DEC
+must use connectedness twice" is the valid-form reading. Five dimensions: T restricts to d <= 4 (T p. 29, "provided
+d <= 4"). HOLD.
+
+**Ways 1-3 and the lemma left (L788-817).** Way 1: T's footnote 10 (p. 27) reads "For Abelian systems, comparison
+inequalities of the type (5.15) either follow from Griffith's inequalities ... All such known methods fail in the
+non-Abelian case"; it is about (5.15), and row 1025's paraphrase is fair. The stop is valid: Griffiths-Ginibre
+inequalities hold for the ferromagnetic Z_2 weights where (TB)_1 fails. Way 2: Y = sum delta_p log f(U_p) with
+delta_p = b^2 1_skeleton - 1 has mean-zero period-b coefficients, so only momenta (2 pi/b) k, k != 0, in the transverse
+directions enter, as said. Way 3: ARGUED and named-matched to row 1018 O2, as said. The 3 percent figure is
+(0.2575 - 0.25)/0.2575 = 2.9 percent. The lemma left (L806-807) is (TB)_n as in 2.4. HOLD (descriptions; no claim
+beyond the marks).
+
+**7.3 Frozen Q_8 and 2T (ARGUED).** The Q_8 count re-done: costs beta (1 - tr g/2) are 0 at 1, beta at the six
+elements of trace 0, 2 beta at -1. Ordered s-tuples with product -1 and least cost 2 beta: one factor -1 (s ways) or two
+factors g_a = g_b of trace 0 (g^2 = -1; 6 C(s, 2) = 3 s (s - 1) ways); three or more non-identity factors cost more.
+So s + 3 s (s - 1). The mark ARGUED is right (the fine minimisers are not classified).
+
+**8.3 Filters corrected (L863-874).** The valid-form reading is right: U(1) has H_DEC false (its (TB)_n fails, given the
+cited theorems), so it cannot refute "flow and (TB) give the flux bound"; the line is set aside for the reasons given
+(Lemma FAC with Lemma PT; Proposition RS with Estimate RATE). HOLDS.
+
+**RESULT line of row 1025 (L1006).** Three wordings need the corrections found above: (1) "the 2008 trapping domain
+and the endpoint bracket are one inequality (TB)_n": the trapping domain implies the bracket and is superfluous
+given it (Section 4); (2) "with r = 1 the flow is Ito's cited theorem": in coefficient form; the norm form is
+unverified (Section 4, caveat); (3) "it renames the flux half": it replaces it by a statement at least as strong
+(above). "On every torus" for SIGN is right with torus-dependent thresholds and, on the weak side, r above
+q^(-1 + 1/(L'_3 L'_4)) (Section 2). No mark changes.
+
+- 00:54Z Step 7 done. Next: Step 8, verdict table and RESULT.

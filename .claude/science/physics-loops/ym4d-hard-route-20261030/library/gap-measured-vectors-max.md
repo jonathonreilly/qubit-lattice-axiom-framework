@@ -184,3 +184,78 @@ Reading after 4a and 4b: the lane's map contains the measured mechanism, the lit
 | D8 smooth in N | W7 (a test note), no route |
 
 So task (1) gives seven objects, W1 to W7. None is a new route across the wall on its face. Step 5 states each exactly and runs the kill tests.
+
+## Step 5: tasks (2) and (3). Each object stated, then killed or kept
+
+Kill sheet used: K1 Lemma PT (product with a massless factor), K2 Proposition NP, K3 Theorem D2, K4 Lemma SHEET, K5 compact U(1), K6 frozen Q_8 and 2T, K7 five dimensions, Lemma CEN+, Lemma WN, and the spec check S0-S4 (S0: does it rename an open statement; S1 selective; S2 a rate; S3 reads the whole state space; S4 not uniform over fields), in the form of `library/gap-invent-selective-max.md` L52-63 as row 1053 quotes it. A pass is no support.
+
+Notation for W1. Periodic lattice with sides (n_1, n_2, n_3, n_4). C_mu is the centre flip of all mu-links that cross one hyperplane. T_4 is the transfer operator along direction 4 on the slice n_1 n_2 n_3; it commutes with C_1. Z_+ and Z_- are the traces of T_4^(n_4) over the sectors C_1 = +1 and C_1 = -1. Then Z_+ + Z_- = Z and Z_+ - Z_- = Z^tw, the partition function with a twist in the (1,4) plane. E(n_1) = log(lambda_0^+/lambda_0^-) is the flux energy of the slice.
+
+### W1. The flux ladder across widths (source: D3, the sign of the Luscher term; b6)
+
+- **Statement (SIG-MONO).** For Wilson SU(2) in dimension 4 and every width L in the confined range, E(2L) >= 2 E(L). Equivalent form (Lemma R1, step 7): the long flux tube has non-negative excess Renyi-2 entropy per unit length at inverse temperature L.
+- **Consumer.** With one width L_1 where E(L_1) > 0, it gives L E(L) >= (L^2/L_1) E(L_1) on the widths 2^k L_1: the flux half of (Z-UNB) for slices that are doubled in the flux direction only.
+- **What it changes.** The flux half would need one size, not a rate. It would not need the vortex containers of (T-vor) or the inequality (TB)_n.
+- **Source and measurements.** D3; the closed-string correction c_L = 0.98(4) of Lucini and Teper (row 1064) gives E(2L) - 2E(L) = pi/(2L) > 0 in the free-string form. Firm as a sign in the measured range (strings longer than 1 fm).
+- **Cheapest kill tests.** (a) Is the finite form true in a solvable Wilson model? (b) Does the consumer reach the cube? (c) K1.
+- **Kill pass.** (a) The finite form (FIN), Z_-/Z_+ at (2 n_1, n_4) at most the square of Z_-/Z_+ at (n_1, n_4), is FALSE for two-dimensional Wilson SU(2) at small beta and large area (Counterexample R3, step 7, PROVED by hand). So only the form with n_4 to infinity first can hold. (b) The consumer does not reach the cube: nothing controls the flux energy when the two transverse sides double. (c) K1: it reads the centre-odd factor only, so by Lemma FAC of row 1025 its conclusion is a flux statement, never the seed. K5: in two dimensions and for abelian groups at strong coupling the asymptotic form holds with equality or by positivity, so it is blind (S1 fails). S0: it is a part of the flux half of (Z-UNB) with a sign in place of a rate; the sign itself has no mechanism.
+- **Verdict.** FAILS as a vector to the gap (flux half only, blind, consumer incomplete). Kept: Lemma R1 and Lemma R2 (exact identities, PROVED in step 7) and Counterexample R3.
+
+### W2. What convexity alone gives for almost every coupling (source: e4)
+
+- **Statement.** The pressure f is convex in beta and -12 <= f' <= 0. So the second derivative of f is a positive measure of total mass at most 12 on (0, infinity). Its atoms are at most countably many (the first-order points). Its absolutely continuous density chi satisfies: the set of beta with chi(beta) > K has Lebesgue measure at most 12/K.
+- **Consumer.** None on the path of (W). Off the path: e4 ("no bulk transition") in the form "bounded specific heat" of row 996.
+- **What it changes.** Nothing for the gap. It says that a bulk critical point costs measure: a divergent specific heat is confined to a null set, with an explicit Chebyshev bound around it.
+- **Source.** e4; the measured peak of Engels and Scheideler (finite, row 1064).
+- **Cheapest kill test.** K5: does compact U(1) pass? Yes. The statement holds for every lattice model with a bounded action, so it cannot separate anything (S1 fails). A finite specific heat does not give a gap: the Coulomb phase has a finite one (plaquette correlations fall like distance^(-8), summable in four dimensions; recalled Gaussian value, ARGUED).
+- **Verdict.** PROVED (three lines: monotone f', total variation at most 12, Chebyshev) and FAILS as a vector (blind, no consumer). Not found on file (grep "Alexandrov", "almost every beta": 0 and 5 unrelated). It does not identify chi with the truncated correlation sum of an infinite-volume state; that step is not done.
+
+### W3. The hot phase as the target (source: d2, D6)
+
+- **Statement.** For fixed N_t and all beta above the deconfinement coupling of the slab, each pure phase of Wilson SU(2) on Z^3 x Z_(N_t) has exponential clustering of gauge-invariant local observables in the three long directions.
+- **Consumer.** None toward (W) or T_JW-lat: it is a theorem about thermal states above T_c.
+- **Cheapest kill test.** Is it easier? At fixed N_t and beta to infinity the three-dimensional gauge coupling is beta N_t to infinity, and the magnetic sector is three-dimensional Yang-Mills near its continuum limit. Its gap is as open as the four-dimensional one (ARGUED; standard dimensional reduction, recalled; the lane found no rigorous four-to-three reduction, `prior/gap-outside-read-opus.md` L51).
+- **A further block, from the measured record.** A route by continuity in the slab width from the hot side to zero temperature crosses the width 1/T_c, where SU(2) has a second-order point (L3). So the periodic slab family cannot carry a gap from hot to cold. This is test K6 of the lane read as a block on a path.
+- **Verdict.** FAILS (S0: it renames the three-dimensional wall; no consumer). The three-dimensional mechanism of Karabali, Kim and Nair is on file as a GUIDE only (`prior/gap-crux-lit-nonab.md` L197, Nair arXiv:2608.10133: "regularization issues prevent a general proof").
+
+### W4. Enclosure of the first excited level from a trial state (source: D2, b10)
+
+- **Statement.** Let psi be a smeared-plaquette trial vector orthogonal to the vacuum, eta its Rayleigh quotient for the transfer operator, eps^2 its variance, and nu a bound for the spectrum on the orthogonal complement of the vacuum and of psi, with nu < eta. Then lambda_1 <= eta + eps^2/(eta - nu) (Temple's inequality, recalled).
+- **Measured support.** Large overlaps of smeared operators with the lightest state (recalled lore; not in rows 1063, 1064).
+- **Cheapest kill test.** S0: the input nu is a bound on the spectrum of the transfer operator on a subspace of codimension two. That is a gap statement of the same kind as the target. Also, reflection positivity makes every measured effective mass an upper bound for the gap, so no measured correlator bounds the gap from below.
+- **Verdict.** FAILS (S0, a renaming). Grep "Temple", "Kato-Temple": 0 files, so this failure was not on file.
+
+### W5. The critical slab as an anchor (source: L3, D6)
+
+- **Statement.** In continuum SU(2) on R^3 x S^1 of circumference L slightly above L_c = 1/T_c, the lightest state is the torelon with E(L) to 0 as L falls to L_c, and by the two-torelon bound the centre-even gap is at most 2 E(L). So t = (L - L_c)/L_c is a small parameter inside the theory, with the three-dimensional Ising field theory as the effective description (BELIEF: Svetitsky and Yaffe universality; measured class, L3).
+- **Consumer.** None. A small parameter near L_c describes a regime with a small gap. It gives no bound at L = infinity, and the path to L = infinity is the confined phase itself.
+- **Kill.** S0 for the route. As a test it is K6 of the lane ("critical slab", `gap-crux-exercise2-max.md` L430).
+- **Verdict.** FAILS as a vector; found again as a test.
+
+### W6. A gap for almost every action of a family (source: b3, e6, K7)
+
+- **Statement.** In a finite-parameter family of reflection-positive plaquette weights that contains Wilson's, the set of parameters where the infinite-volume lattice theory has no gap is Lebesgue-null.
+- **Consumer.** The Clay target needs one regularisation, so a generic member would do, given a carry to the continuum for that member (the account treats Wilson only: (UNIV-FP)).
+- **Cheapest kill test.** Name the first lemma. The only soft tool that gives almost-everywhere statements in a coupling is convexity (W2), and W2 is blind. No analytic structure in the parameters is known beyond convexity of the pressure. The carry to the continuum is at couplings tending to infinity, where "almost every" gives no uniformity.
+- **Verdict.** FAILS (no mechanism; first lemma blind; the consumer needs (UNIV-FP)).
+
+### W7. A test note: the bulk transition of Wilson SU(N) at large N (source: e4, D8)
+
+- **Statement (BELIEF, measured, recalled and not re-read: Lucini and Teper 2001; Campostrini).** Wilson SU(N) in four dimensions has a first-order bulk transition on the Wilson axis for N at least 5. So a fixed-coupling tool (T_fix, or uniqueness of the infinite-volume state at one coupling) whose hypothesis reads only "compact simple group, Wilson weight, four dimensions" and is uniform in N is refuted at that coupling.
+- **What it adds.** K7 and w_p change the weight. This test keeps Wilson's weight and changes N. It does not bind T_W tools (their couplings tend to infinity, on the weak side). It is belief-grade.
+- **On file?** `gap-phys-seed.md` L378 uses "SU(N) for N >= 5" for (MONO-Delta). As a line of the test table it is not on file (grep "bulk transition": 17 files, none in the table of `parts/gap.md`).
+- **Verdict.** Not a vector. A GUIDE-grade line for the test table, at the lead's choice.
+
+### Summary of the kill pass
+
+| Object | Kind | First failing test | Mark |
+|---|---|---|---|
+| W1 flux ladder | flux-half inequality | finite form false (R3); blind; consumer stops at the cube | FAILS as a vector; identities PROVED |
+| W2 almost-every-beta specific heat | soft lemma | K5 (blind), no consumer | PROVED, FAILS as a vector |
+| W3 hot phase | changed target | S0 (three-dimensional wall); blocked at 1/T_c | FAILS |
+| W4 enclosure | (K-one) | S0 | FAILS |
+| W5 critical slab anchor | parametric regime | no consumer; is K6 | FAILS |
+| W6 generic action | changed target | no mechanism | FAILS |
+| W7 large-N bulk transition | test | - | GUIDE-grade test line |
+
+No object is marked CONTESTED-ONLY, because none rests on the vortex, monopole, Gribov or end-point readings. Those readings gave no vector here: their gauge-invariant forms, (T-vor) and (TB)_n, are on file.

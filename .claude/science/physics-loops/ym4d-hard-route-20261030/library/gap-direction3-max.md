@@ -454,8 +454,11 @@ the trivial pins of a slab. Verdict for line G: the pin-space form of C1 FAILS a
 
 ### 5.3 The blind half (the line this row ranks first): statement, what the attempts give, what is left
 
-**The statement in four forms.** Each says that the theory at scale L is not more ordered than a free massless
-theory with a coupling bounded below. None is selective inside the lane's class: each holds for compact U(1).
+**Four statements of one kind (not claimed to be equivalent).** Each says that the theory at scale L is not more
+ordered than a free massless theory with a coupling bounded below. Each holds for compact U(1). They differ in
+what they exclude (ARGUED): (BDD-Delta) excludes infrared freedom only (it holds for frozen Z_2, where D tends to a
+constant); (BL-c) also excludes the branch with degenerate flux sectors, the constants log m of rows 1017 and 1028;
+(BL) and (L1) need a continuous twist and have no form for a finite group.
 
 - (BDD-Delta), periodic: D^+ is bounded on the large sizes of P. Exact content: bounded counts (Corollary NUC).
 - (BL), slab: for the slab of Lemma SF-D with T = L, top pin exp(i t sigma_3/L) on the links of one direction and

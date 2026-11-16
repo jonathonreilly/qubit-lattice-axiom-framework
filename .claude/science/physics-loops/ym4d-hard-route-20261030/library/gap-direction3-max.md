@@ -186,3 +186,98 @@ whose commutators add coherently to the twist while their costs add incoherently
 first-passage data. Row 1007 B(5) judged the 4D analogue "NONE directly". Section 5 re-opens that judgement at one
 point: on the PIN SPACE of a gauge cell the boundary gauge group acts field-independently, and identity (a) holds
 there verbatim (it is Lemma TAN of row 1046 at second order).
+
+## 4. Tasks (1) and (2): the live lines, one paragraph each, with the worth-doing test and the ranking (step 4)
+
+Marks in this section: READ = taken from the row and its checks; ARGUED = my judgement with its reason. No statement
+here is a theorem of this row. "Renamed" means: the line restates (W), or one half of it, with no new input.
+
+### 4.1 The lines
+
+**Line A. (N1) at order-one coupling.** *Statement* (row 1011 7.4; row 1046 5.1): for the cells of a tiling and the
+pins that the ring law produces, with one gauge-covariant frame rule n and one linear extension rule,
+H_c(omega; theta n(omega)) <= C sum_p w_p (d theta)_p^2 with C the classical constant times a blind factor, the cells where it
+fails being controlled. On gradients this is the sign H_c(omega; (d lambda) n) <= 0. *Consumer:* the start bound (S) of
+the gauge form of OpenAI's pinned-cell iteration; then (N2), (N3), then a short step ((T-pin) of row 1018), then (CAS),
+then (W). *What a proof would change in (W):* nothing by itself. (N1) is a blind statement (true for U(1) with the
+constant frame); the selective step is (N3), and the last link, "small response gives decay of all observables"
+((L3) of row 1018 2.3), has no statement on record. *On file:* existential (O2) with a strict sign on small open pin
+sets near pure gauge (rows 1042, 1046; both checks HOLD); universal (Q-INV) and pin-uniform (O2) refuted (row 1036,
+both checks); Lemma MEAN and Lemma AVG (row 1046); Lemma FR (row 1011): every frame has defect at least NA(omega)/6;
+Corollary WN1 (row 1013; HOLDS after correction in the gpt-6-astra check): for the lab frame the score variance of
+every link translation is at least 3 beta xbar abs(f)^2. *Renamed?* No. It is not the crux. It is a prerequisite that
+sits before the crux, and at bare ring links of coupling 2.3 to 2.6 its sign form is false in the mean for every
+frame whose move keeps the Haar measure (Section 5.1 below proves this; it is two lines beyond Corollary WN1).
+*Kind:* with bare links, (K-one) and false in the sign form; with blocked frames it is the background field of
+Balaban's account, a (K-flow) statement that holds only above the band (row 1013 6.2, ARGUED there).
+
+**Line B. The barrier B15 with (INV) and (UV-Cas).** *Statement:* Section 3. *Consumer:* (BDD-Delta), the exclusion of
+branch (II). *What a proof would change in (W):* (W) iff (LIOU) would hold without a hypothesis; the wall would be
+the rigidity half alone. *On file:* Lemma BAR HOLDS (both checks): the barrier alone is (BDD-Delta) in other words.
+(INV) "one precise lemma, with no route" (row 1032 L300); in the abstract class it is false (ARGUED there). (UV-Cas)
+needs D to an error of order one on two tori at weak coupling, the grade of the open (E0-tor). *Renamed?* (BAR) alone:
+yes, it renames (BDD-Delta). (INV) with (UV-Cas): no, it is a mechanism with two open inputs, and it does not touch
+the selective half. *Kind:* (K-flow).
+
+**Line C. (GS-CAS) with (NO-CONST).** *Statement:* Section 3. *Consumer:* (W), given (BDD-Delta) (Corollary GS).
+*On file:* both checks: "a restatement of the rigidity requirement, not its solution" (check 1050 L483-484);
+"(GS-CAS) is not easier than (Z-UNB): an upper bound on lambda_0 of a periodic box against the bulk is not variational"
+(row 1032 L347). (GS-CAS) says that the Casimir energy of the periodic cube times its side tends to zero; for a
+massless model it is a positive constant. *Renamed?* Yes: it is (LIOU) in ground-state form. GS-eq likewise.
+
+**Line D. (TB)_n** (row 1025, Proposition BR; after Tomboulis, Kanazawa, Ito and Seiler). *Statement:* Section 3.
+*Consumer:* the flux half at one coupling (T_flux), through the decimation line; then route RE, which still needs
+the even step (EV-STEP). *What a proof would change in (W):* nothing directly (Lemma FAC with Lemma PT: the line reads
+one factor). It would prove the area law for the centre-odd sector of Wilson SU(2) at every coupling, which is a
+classical open problem in its own right. *On file:* (TB)_n is selective (fails for Z_2 at large beta, PROVED; for
+U(1) at large beta, GIVEN Ito and Seiler); it sees the dimension through the flow; Proposition SIGN, Lemma PAR-T,
+Identity MOV (row 1025; check 1029 no FAILS); three ways to prove it stop. Row 1025 4.4 point 3: "(TB)_n in the range
+where DEC needs it is the flux half itself", so the step from the flux half to (TB)_n renames. By Estimate RATE
+(row 1025 4.2, ARGUED) the decimation scale is not a fixed physical scale along the trajectory (the Migdal-Kadanoff
+drop per doubling is 1/4 against the true 0.2575), so even a proof would be a statement at one coupling.
+*Renamed?* Yes for the flux half at one coupling; it is not (W).
+
+**Line E. (BDD-Delta) and (LIOU).** *Statement:* `gap-dichotomy.md` 1.3, 2.2. (W) iff both. *On file:* (LIOU) is
+target-equivalent given (BDD-Delta) (Theorem CR; cross-provider HOLDS AFTER CORRECTION); every soft form of rigidity
+fails (constants log m, products, Proposition SI); kept ultraviolet data is the wall (row 1028). (BDD-Delta): no row has
+it as target; Lemma CHAIN-4 and Corollary NUC give its exact content (bounded counts of states of the periodic boxes
+below the inverse side); Theorem CE-II; and the gpt-6-astra check of row 1031: the claim "no soft proof of (BDD-Delta)
+on torus data" is NOT established. *Renamed?* (LIOU): it is the crux. (BDD-Delta): a genuine half, not renamed, open.
+
+**Lines that the checks leave open and the queue row does not list** (Section 3, items 1-8), in one line each:
+
+- **F. A soft proof of (BDD-Delta) on torus data.** Not excluded. No mechanism on file. Section 5.3 writes its exact
+  content in one more form and says why the positivity tools point the wrong way.
+- **G. C1 and C2 of row 1013.** The exclusions are not theorems (gpt-6-astra check, items 12-14). No mechanism for
+  either. For C1 the family inequality "was never written" (item 13). Section 5.2 writes the reason the port of
+  OpenAI's one-annulus engine fails in both of its exact gauge forms, and scopes it.
+- **H. Flow forms of row 970; geometry-varying routes (rows 960-965); the reformulation route (row 1016).** Each
+  "not refuted"; none has a supplier or a mechanism on record (`parts/gap.md` L97-98, L139).
+- **I. (T-pin) with (FL), (DEC); (T-vor) with (SER), (SPR).** The exact shapes of the missing step (row 1018 7.3).
+  (DEC) and the pair (SER), (SPR) are selective and have no mechanism; (L1) and (L3) of (T-pin) are open too.
+- **J. (O1), (E0-tor), (R-pt), (EV-STEP), (PLATEAU).** Named open inputs of other lines. (E0-tor) is the one that
+  two lines share (B through (UV-Cas); the (DET) and (HC-phys) reductions). It is a statement about the account.
+
+### 4.2 The worth-doing test and the hardest-first rule
+
+For each line: the critical-path item it moves, what changes if it succeeds, and where its proof could die.
+
+| Line | Critical-path item moved | If it succeeds | Where it could die; cost to find out | Verdict (ARGUED) |
+|---|---|---|---|---|
+| A (N1) | none; it feeds (S) of route (ii) | route (ii) has its start bound on typical pins; (N2), (N3), (L3), (O1), tilings remain | it dies before the crux: sign form false in the mean for Haar-preserving frames (5.1); with blocked frames it is the account's object above the band | **stop** as a proof target at bare coupling; keep 5.1 as the scope of the stop |
+| B (INV), (UV-Cas) | (BDD-Delta) | branch (II) excluded; wall = (LIOU) alone | (INV): no route; (UV-Cas) at the grade of (E0-tor) | not first; (E0-tor) is the cheap shared piece |
+| C (GS-CAS), (NO-CONST) | (W) given (BDD-Delta) | the gap | it is (LIOU) | **renamed**; no row |
+| D (TB)_n | flux half at one coupling | a classical theorem (area law of the odd sector at every coupling); not (W) | at the non-abelian sign of bond moving; no mechanism | off the path of (W); no row now |
+| E (LIOU) | (W) | the gap | it is the crux; no mechanism | no direct row |
+| F soft (BDD-Delta) | (BDD-Delta) | as B | 5.3: needs a lower bound on a glued partition function; reflection positivity gives only the upper bound | one short row could decide whether a soft form exists; see 7.2 |
+| G C1, C2 | none without a consumer | - | 5.2 | **stop**; one check row for 5.2 |
+| I (DEC); (SER), (SPR) | (CAS) through a short step | the gap, if (L1), (L3) also hold | at the blind half first (5.2, Lemma BL-need) | the blind half is the cheap decisive test: 7.1 |
+
+**Hardest-first.** The place where every stiffness-type line (A, G, I, and the 2D ports of rows 1009-1048) can die
+cheaply is not its selective half. It is its blind half: in 2D the bound "response at most the coupling times the
+classical cost, at every pin and every scale" is one line (drop the variance); in 4D it is not on record at any
+scale inside the band, for any pin class, and every positivity tool the lane has bounds the response from below,
+not from above (5.2). If the blind half has no proof, no selective gain can be iterated, and those lines stop
+together. So the first row should attack the blind half in its smallest exact form (7.1). The selective half and
+(LIOU) are harder, but no mechanism is on record for them, so a row there would restate the crux (the lead's own
+rule in `parts/gap.md` L87-89).

@@ -312,9 +312,10 @@ decreasing form; then V_m c_G(l) ~ l^4 l^(-5) -> 0, so the polynomial rate is en
 **Corollary SV1 (L211-219): HOLDS as an implication from the same inputs.** z_m <= E_+^sharp and z_m >= -C_low
 by (STAB), so z_inf >= -C_low and D~(m) <= B V_m; add RED; D >= 0 by (TL). The final form uses
 B <= C_B(1 + log g^(-2)) (140932-140933), delta(l) <= delta-bar_vac at the floor, c_G(l) <= c_G. Uniform in K
-and g_0. For SV1 alone the account's constant form of the determinant comparison would suffice (it only needs
-abs(G_m - g_inf V_m) <= c V_m), but the existence of g_inf still needs G_m/V_m to converge, which the constant
-form does not give. So SV1 also rests on (G-tor) in a form that makes G_m/V_m converge (or on (G')).
+and g_0. Row 1058 proves SV1 through RED, which needs G_m/V_m to converge. The bound itself needs less:
+with only the account's constant form abs(G_m/V_m - G_m'/V_m') <= c (remark 141531-141535),
+D(T_m) = lim_{m'} V_m[(E_m/V_m - E_m'/V_m') + (G_m/V_m - G_m'/V_m') + (z_m - z_m')] <= V_m(delta + c + B),
+using F_m'/V_m' -> f_K and z_m - z_m' <= E_+^sharp + C_low. So SV1 holds given the constant form too.
 Row 1058 states the inputs; its claim is correct as stated.
 
 **Corollary SV3-red (L221-226): HOLDS.** Apply RED at m and at m' and use V_m >= V_m', l >= l' and the
@@ -549,7 +550,7 @@ needed: every test was a hand computation); no subagent; nothing committed or po
 | C16 | (5.1) (184) | HOLDS | |
 | C17 | (TL) (195-199) | HOLDS as a recalled input | The account's sub-additivity covers even sides (any integer ratio); identification with inf over all tori is recalled, not proved |
 | C18 | Proposition RED (201-209) | HOLDS (implication) | (G-tor) is a real input; it cannot be removed through (G') |
-| C19 | Corollary SV1 (211-219) | HOLDS (implication) | Needs (G-tor) in a form that makes G_m/V_m converge, not only the account's constant |
+| C19 | Corollary SV1 (211-219) | HOLDS (implication) | Also follows from the account's constant form of the determinant comparison, by a direct limsup (Step 5) |
 | C20 | Corollary SV3-red (221-226) | HOLDS | |
 | C21 | (SV3) OPEN; horizon-lemma reading (228-256) | HOLDS | (eq-horizon-cases-c) is part (iii); wording only |
 | C22 | U(1) control (260-266) | (SV2) ARGUED, as stated; (SV3) HOLDS AFTER CORRECTION | "D^+(bL) = D^+(L) in [0, infinity]; the control gives 0 where D^+ is finite" |

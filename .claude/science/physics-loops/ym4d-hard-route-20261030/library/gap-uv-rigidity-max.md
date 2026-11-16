@@ -35,7 +35,7 @@ skill's steps are now folded in; still eight steps).
 1. Sources and scope: **done** (Section 1).
 2. Inventory and reasoning up: **done** (Section 2). PROVED here: Lemma ALPHA, Corollary KEPT, Lemma REC (link (b)).
 3. Task (1): **done** (Section 3). Link (a) FAILS as a kept condition (counterexample TS, PROVED); for a value outside [d_min, D_0] it is equivalent to (W) given (BDD-Delta) (PROVED); CE cannot be strengthened to keep it (Proposition TWO, Lemma EXCL, PROVED).
-4. Task (3): not started.
+4. Task (3): **done** (Section 4). PROVED: Lemma FV (on a fixed lattice torus D(n; beta) >= (3/2) log beta - 59 n^4 - 11 for SU(2), beta >= 16: the free value is infinite); Proposition FRZ (frozen values log 8, log 92, log 244); Proposition CONST (a constant c is a critical element iff c = log m).
 5. Task (4): not started.
 6. Routes and attempts: not started.
 7. Second pass: not started.
@@ -452,9 +452,11 @@ eps_j > 0 with eps_j -> 0. Put
 - **Its continuum datum.** Delta_j(u_j x) = log(1 + (m_0 - 1) exp(- eps_j abs(x))) + log(1 + (p - 1) exp(- abs(x)/rho^4)),
   with abs(x) = x_1 x_2 x_3 x_4. As j grows this tends to E_c(x) = log m_0 + log(1 + (p - 1) exp(- abs(x)/rho^4)). So, with
   L in units of l_1: D^+(L) = log m_0 + log(1 + (p - 1) exp(- (L/rho)^4)).
-- **Its ultraviolet value** is log(m_0 p), and D^+(L) >= log(m_0 p) - (L/rho)^4 for every L (from 1 - e^(-y) <= y and
-  log(1 + (p - 1) e^(-y)) >= log p - (p - 1)(1 - e^(-y))/p). So D is within eps of log(m_0 p) on all sizes up to
-  rho eps^(1/4) l_1: on as many doublings above the unit as one likes, by the choice of rho.
+- **Its ultraviolet value** is log(m_0 p), and log(m_0 p) - (p - 1)(L/rho)^4 <= D^+(L) <= log(m_0 p) for every L.
+  (With y = (L/rho)^4 and w = (p - 1)(1 - e^(-y))/p: log(1 + (p - 1) e^(-y)) = log p + log(1 - w), and
+  log(1 - w) >= - w/(1 - w) = - (p - 1)(1 - e^(-y))/(1 + (p - 1) e^(-y)) >= - (p - 1) y.) So D is within eps of
+  log(m_0 p) on all sizes up to rho (eps/(p - 1))^(1/4) l_1: on as many doublings above the unit as one likes, by
+  the choice of rho.
 - **(BDD-Delta)** holds: D^+(L) <= D_0 := log m_0 + log(1 + (p - 1)/e) for L >= L_0 := rho l_1.
 - **(PHYS-SEED) fails.** For a product 1 + S = (1 + S_1)(1 + S_2), so S >= S_1 = (m_0 - 1) exp(- eps_j l^4/2), which
   tends to m_0 - 1 >= 1 at every size l.
@@ -507,3 +509,228 @@ the sense that matters: the constant element with the limit value exists.
 | Blockers: PT-inf (class-wide), D2 and SHEET (do not bind (a); bind boundary-uniform proofs of it), NP | as stated in 3.6 |
 
 Point where this step stops: the value c_UV itself (finite or not, for SU(2), U(1), frozen groups) is Step 4.
+
+## 4. Step 4 result (Task 3): the free value c
+
+Everything marked PROVED in 4.1-4.4 is proved by hand here. A guard run (4.6) checked the counts and four elementary
+inequalities; it proves nothing. Nothing is checked by another model.
+
+### 4.1 Lemma FV (the free value of SU(2) on a fixed lattice torus is infinite; PROVED)
+
+Setting: Wilson SU(2) on the periodic torus with all four sides n >= 3, N = n^4 sites, 4N links, 6N plaquettes,
+Z(n; beta) = integral over Haar probability measures of exp(- beta A), A = sum over plaquettes of (1 - (1/2) tr U_p).
+F = log Z, f(beta) = inf over all tori of F/abs(n), D(n; beta) = F(n; beta) - f(beta) N.
+
+**Lemma FV.** For every n >= 3 and every beta >= 16: D(n; beta) >= (3/2) log beta - 59 n^4 - 11.
+
+So for each fixed number of sites, D(n; beta) tends to infinity as beta grows. Along any trajectory with
+beta_j -> infinity (the account's lattices are at weak bare coupling, I15), D_j(n) -> infinity for each fixed n.
+
+The proof has two parts: an upper bound for f (all scales, by a shelling of plaquettes) and a lower bound for Z on
+the fixed torus (a packing of small balls around the flat connections).
+
+**Notation.** Sites x in {0, ..., n-1}^4; the link (x, mu) joins x to x + e_mu (mod n). It is **interior** if
+x_mu <= n - 2 and **wrapping** if x_mu = n - 1. The **comb tree** T: the interior links (x, mu) with x_nu = 0 for all
+nu < mu. T has (n - 1)(n^3 + n^2 + n + 1) = n^4 - 1 links and joins every site to the origin (lower x_1 to 0 by links
+of direction 1; then x_2 by links of direction 2 at x_1 = 0; and so on). So T is a spanning tree. For U in SU(2),
+norm(U - V) is the operator norm. With eigenvalues e^(i phi), e^(-i phi) of U: norm(U - 1) = 2 abs(sin(phi/2)) and
+
+ 1 - (1/2) tr U = 1 - cos phi = (1/2) norm(U - 1)^2.   (4.1)
+
+The map U -> phi in [0, pi] carries Haar measure to (2/pi) sin^2 phi d phi. SU(2) is the unit sphere S^3 of the
+quaternions, Haar measure is the normalised surface measure (total surface 2 pi^2), and norm(U - V) is the Euclidean
+distance of the two unit quaternions (a quaternion q, as a 2 x 2 matrix, has q q* = abs(q)^2).
+
+**Part A (f from above).** Put I(beta) := integral over SU(2) of exp(- beta (1 - (1/2) tr U)) dU.
+
+(A1) I(beta) <= (pi/2)^(5/2) beta^(-3/2), and I(beta) <= 1. Proof: I = (2/pi) integral from 0 to pi of
+sin^2 phi exp(- beta (1 - cos phi)) d phi. On [0, pi]: sin^2 phi <= phi^2, and 1 - cos phi = 2 sin^2(phi/2) >= 2 phi^2/pi^2
+(sin is concave on [0, pi/2]). So I <= (2/pi) integral from 0 to infinity of phi^2 exp(- 2 beta phi^2/pi^2) d phi
+= (2/pi)(sqrt(pi)/4)(pi^2/(2 beta))^(3/2) = (pi/2)^(5/2) beta^(-3/2).
+
+(A2) **Shelling.** Let l = (x, mu) be an interior link that is not in T. Then mu >= 2 and some x_nu > 0 with nu < mu.
+Let nu be the least such index, and p(l) the plaquette with the corners x - e_nu, x, x + e_mu, x - e_nu + e_mu. Its
+links are (x - e_nu, nu), (x, mu), (x - e_nu + e_mu, nu), (x - e_nu, mu); all are interior. The two links of direction nu
+start at sites whose coordinates below nu are those of x, namely zero; so both lie in T. Hence p(l) holds at most
+two links outside T: l, and l' := (x - e_nu, mu). The map l -> p(l) is one-to-one: if p(l_2) = p(l_1) with l_2 not l_1,
+then l_2 = l_1' = (x - e_nu, mu), and p(l_2) has its lower corner at x - e_nu - e_nu' for some nu', which is not the
+lower corner x - e_nu of p(l_1). Put h(l) := x_1 + x_2 + x_3 + x_4; then h(l') = h(l) - 1. List the interior links
+outside T as l_1, ..., l_M with h non-decreasing. Their number is M = 4 n^3 (n - 1) - (n^4 - 1) = 3 n^4 - 4 n^3 + 1.
+For i < k the link l_k does not lie in p(l_i): otherwise l_k = l_i', so h(l_k) < h(l_i), against the order.
+
+(A3) Z(n; beta) <= I(beta)^M. Proof: each plaquette weight w(U_p) = exp(- beta (1 - (1/2) tr U_p)) is at most 1. Drop
+all weights except those of p(l_1), ..., p(l_M). Integrate over U_(l_M) first, the other links fixed. By (A2) it occurs
+in the weight of p(l_M) only, as tr(U_(l_M) W) or tr(U_(l_M)^(-1) W) with W a product of other links. Haar measure is
+invariant under translation and inversion, so this integral is I(beta), whatever the other links are. Repeat with
+l_(M-1), ..., l_1. The remaining links integrate to 1.
+
+(A4) f(beta) <= 3 log I(beta) <= 3.42 - (9/2) log beta. Proof: f <= F(n)/n^4 <= (3 - 4/n + n^(-4)) log I(beta) for every
+n, by (A3) and log I <= 0. The right side decreases to 3 log I(beta) as n grows... more exactly it is at least
+3 log I for each n and tends to 3 log I; f is at most each of its values, hence at most their limit. With (A1):
+3 log I <= (15/2) log(pi/2) - (9/2) log beta, and (pi/2)^(5/2) < 3.1 (as 1.5708^5 < 9.57 < 3.1^2), log 3.1 < 1.14.
+
+**Part B (Z on the fixed torus from below).**
+
+(B1) **Tree gauge.** Z(n; beta) = integral over the 3N + 1 links outside T of exp(- beta A(V)), with V_l = 1 on T.
+Proof: for a site x let g_x(U) be the product of the link variables along the path of T from the origin to x; it
+depends on the links of T only. Put V_l = g_x U_l g_y^(-1) for a link l from x to y. Then V_l = 1 on T, and A(V) =
+A(U) (A is gauge invariant). For fixed links of T, each V_l with l outside T is U_l multiplied on both sides by
+fixed elements, which preserves Haar measure. Integrate over the links outside T first, then over T (total mass 1).
+
+(B2) **Flat points of the slice.** Let H = (H_1, ..., H_4) be commuting elements of SU(2). Define U^H by: U^H_l = 1 on
+every interior link, U^H_l = H_mu on every wrapping link of direction mu. Every plaquette of U^H is 1: in a
+plaquette of the plane (mu, nu) the two links of direction mu are both interior or both wrapping, so both equal one
+element a_mu in {1, H_mu}; the same for nu; and a_mu a_nu a_mu^(-1) a_nu^(-1) = 1. U^H is 1 on T (interior links).
+
+(B3) **Balls.** For r > 0 let NN(H, r) be the set of slice configurations V with norm(V_l - U^H_l) < r on every link
+outside T. On NN(H, r): for each plaquette, norm(V_p - 1) <= sum over its four links of norm(V_l - U^H_l) < 4r
+(telescoping for products of unitaries; norm(A^(-1) - B^(-1)) = norm(A - B); the product of the U^H is 1). By (4.1),
+1 - (1/2) tr V_p < 8 r^2, and A(V) < 48 N r^2.
+
+(B4) **Volume of a ball.** NN(H, r) is a product over the 3N + 1 links of balls {U : norm(U - U_0) < r}, each of Haar
+measure v(r) := Haar{norm(U - 1) < r}. For r <= 1: v(r) >= (8/(3 pi^3)) r^3 > r^3/12. Proof: the ball is the cap of S^3
+of angular radius alpha, r = 2 sin(alpha/2), alpha <= pi/3. Its normalised measure is (2/pi) integral from 0 to alpha
+of sin^2 t dt >= (2/pi)(4/pi^2)(alpha^3/3), by sin t >= 2t/pi on [0, pi/2]; and alpha >= r. Last, 3 pi^3/8 < 12.
+
+(B5) **Packing.** Let 0 < r <= 1/4 and delta = 4r. For theta in Theta := {pi/4 + k delta : k = 0, ..., [pi/(2 delta)]} and
+a unit vector e in DD_delta := {(a, b, sqrt(1 - a^2 - b^2)) : a, b in {0, delta, 2 delta, ...}, a, b <= 1/2} put
+h(theta, e) := cos theta + sin theta (e_1 i + e_2 j + e_3 k). For one e these elements commute. Let HH_r be the set of
+tuples H = (h(theta_1, e), ..., h(theta_4, e)). Then:
+
+- its number is at least (pi/(2 delta))^4 (1/(2 delta))^2 = (pi^4/64) delta^(-6) >= delta^(-6) = (4r)^(-6);
+- for two different tuples H, H' there is mu with norm(H_mu - H'_mu) >= delta/2 = 2r. Proof: if e = e', some
+  theta_mu differs from theta'_mu by t in [delta, pi/2], and the distance is 2 sin(t/2) >= 2t/pi >= delta/2. If e is not
+  e', then abs(e - e') >= delta, and for every mu, with s = sin theta_mu, s' = sin theta'_mu in [1/sqrt 2, 1]:
+  distance^2 >= abs(s e - s' e')^2 = (s - s')^2 + s s' abs(e - e')^2 >= delta^2/2;
+- so the sets NN(H, r), H in HH_r, are pairwise disjoint: the wrapping link ((n - 1) e_mu, mu) is outside T, and
+  U^H has the value H_mu there; a common point V would give norm(H_mu - H'_mu) < 2r for every mu.
+
+(B6) By (B1), (B3)-(B5), for 0 < r <= 1/4: Z(n; beta) >= (4r)^(-6) (r^3/12)^(3N + 1) exp(- 48 N beta r^2). Take
+r = beta^(-1/2) (so beta >= 16): Z(n; beta) >= 4^(-6) 12^(-(3N + 1)) e^(-48N) beta^(-(9N - 3)/2). So
+
+ F(n; beta) >= - ((9N - 3)/2) log beta - 48 N - 6 log 4 - (3N + 1) log 12.
+
+**End of the proof.** D = F - f N >= - ((9N - 3)/2) log beta - 48N - 6 log 4 - (3N + 1) log 12 - 3.42 N + (9N/2) log beta
+= (3/2) log beta - (48 + 3 log 12 + 3.42) N - 6 log 4 - log 12. With log 12 < 2.5 (e^2.5 > 7.38 x 1.64 > 12) and
+log 4 < 1.39: the constant is at most 58.92 N + 10.84 < 59 N + 11. QED
+
+Remarks.
+
+1. **Where the 3/2 comes from.** The slice has dimension 3(3N + 1) = 9N + 3. Its flat points form a set of dimension
+   6 (four angles and an axis). So 9N - 3 directions are stiff, against 9N stiff directions in the bulk count of f.
+   The three directions that are missing are 4 flat moduli minus 1 for the stabiliser of an abelian flat point.
+2. **The count of PS L109 (kappa = 3 in log(1/g), that is, (3/2) log beta) is now a lower bound with a proof.** A
+   matching upper bound is not proved here. The count at the singular flat points (the twelve constant modes with a
+   quartic action) suggests D(n; beta) = (3/2) log beta + log log beta + O(1) for SU(2) in four dimensions: the
+   integral over the constant modes is at its threshold of convergence there (Krauth and Staudacher, recalled).
+   GUIDE only.
+3. **Other groups and dimensions (ARGUED: the same proof with other counts, not written out).** For a compact
+   connected group of dimension g and rank rho in d dimensions the slice has dimension g((d - 1) N + 1), the flat
+   set g + (d - 1) rho, and f is at most - (g (d - 1)/2) log beta + C. So D(n; beta) >= ((d - 1) rho/2) log beta - C(N).
+   For U(1) in four dimensions: (3/2) log beta again. For SU(2) in five dimensions: 2 log beta.
+4. The constant 59 n^4 + 11 is far from sharp. The lemma is a statement of divergence, not a usable number.
+
+### 4.2 What Lemma FV says about the trajectory, and what it does not
+
+- PROVED given beta_j -> infinity: at each fixed number of sites n, D_j(n) -> infinity. These tori have physical side
+  n a_j -> 0. So at the lattice end of the scale axis the Casimir free energy of the trajectory is unbounded: the
+  **free value is c = +infinity**, in the lattice sense.
+- Not proved: the behaviour of D^+(L) at a fixed small physical size L (the number of sites grows with j). There the
+  lane has I8 (GUIDE): D^+(L) grows like 3 log(1/g(L)). The account bounds D on its own tori above the floor ((TH), I6)
+  and gives no asymptotics.
+- By Corollary KEPT (4) and Proposition A1 (3): with a divergent ultraviolet law, link (a) is equivalent to (W),
+  given (BDD-Delta). With the value at one fixed size just above first passage, c = D^+(L_1), link (a) is the
+  plateau statement of 3.2 at that value; the same statement at the size 2 L_1 gives the value D^+(2 L_1), and Omega
+  is the same set for both. So (a) in that form forces D^+(L_1) = D^+(2 L_1) = ...: the Casimir free energy does not
+  run. This contradicts I8 at belief grade; no proof step uses it.
+
+### 4.3 Proposition FRZ (frozen values; PROVED)
+
+Let G be a finite subgroup of SU(2), with the Wilson action and normalised counting measure. Let c_k(G) be the
+number of k-tuples of pairwise commuting elements of G.
+
+- (i) For every torus n: Z(n; beta) -> c_4(G) abs(G)^(-3 abs(n) - 1) as beta -> infinity.
+- (ii) f(beta) -> - 3 log abs(G).
+- (iii) Delta(n; beta) -> log(c_4(G)/abs(G)) for every torus n: the same number at every size.
+- (iv) m(G) := c_4(G)/abs(G) is the number of orbits of G, acting by conjugation, on commuting triples. It is an
+  integer. m(Z_2) = 8, m(Q_8) = 92, m(2T) = 244.
+
+Proof. (i) By (4.1), 1 - (1/2) tr U > 0 unless U = 1. So exp(- beta A(U)) tends to 1 if every plaquette of U is 1 and
+to 0 otherwise, and the sum is finite. Count the flat configurations with the map of (B1): U -> (links of T, V) is
+a bijection onto G^(N-1) x (slice), and U is flat exactly when V is. A flat V in the slice is 1 on every interior
+link: by induction on h, the plaquette p(l) of (A2) has its other three links in T or of lower h. Then a plaquette
+with one wrapping link (x, mu) and interior links of direction nu gives V_(x,mu) = V_(x + e_nu, mu); the sites with
+x_mu = n - 1 are joined by such steps, so the wrapping links of direction mu carry one element H_mu. A plaquette with
+two wrapping directions gives H_mu H_nu = H_nu H_mu. With (B2): the flat points of the slice are the U^H, H a
+commuting 4-tuple. So there are abs(G)^(N-1) c_4(G) flat configurations among abs(G)^(4N). The same holds for a torus
+with unequal sides. (ii) exp(- beta A) is at least the indicator of the flat configurations, so F(n; beta) >=
+- (3 abs(n) + 1) log abs(G) + log c_4, and f(beta) >= - 3 log abs(G) (c_4 >= abs(G): the tuples (h, 1, 1, 1)). And
+f(beta) <= F(n; beta)/abs(n), whose limit is - 3 log abs(G) + log(c_4/abs(G))/abs(n), for every n. (iii) From (i), (ii).
+(iv) Burnside's lemma: the number of orbits is the mean number of fixed triples, and a triple fixed by g is a
+commuting triple in the centraliser of g; the pairs (g, triple) are the commuting 4-tuples. The counts use
+c_k(G) = sum over g of c_(k-1)(C_G(g)), c_k(A) = abs(A)^k for A abelian, c_0 = 1:
+
+- Z_2: c_4 = 16, m = 8.
+- Q_8: the centre {1, -1} has centraliser Q_8; the six elements of order 4 have a centraliser of order 4. So
+  c_k = 2 c_(k-1) + 6 x 4^(k-1): c_1 = 8, c_2 = 40, c_3 = 176, c_4 = 736. m = 92.
+- 2T (order 24): {1, -1} with centraliser 2T; six elements of order 4 with a centraliser of order 4; sixteen elements
+  (+-1 +- i +- j +- k)/2 with a cyclic centraliser of order 6 (the elements of 2T on their axis). So
+  c_k = 2 c_(k-1) + 6 x 4^(k-1) + 16 x 6^(k-1): c_1 = 24, c_2 = 168, c_3 = 1008, c_4 = 5856. m = 244. QED
+
+Remarks. (1) At beta = infinity the torus function is the constant log m(G). It is not a datum in the sense (E2) (the
+top eigenvalue is m-fold); at large finite beta it is one. (2) m(G) is the number of flat states of the periodic
+cube (flat connections of the three-torus up to gauge). The number log 8 for Z_2 is on record (R L255); 92 and 244
+were not found on record (search in Step 5). (3) That the blow-down limit at a large finite beta is the constant
+log m(G) is a Peierls statement: THM in the lane for Z_2 (I11), BELIEF here for Q_8 and 2T.
+
+### 4.4 Proposition CONST (is a constant D = c a critical element? PROVED)
+
+- (i) The constant function c on DD^4 is a critical element with the bound D_0 if and only if c = log m for an
+  integer m >= 2 with log m <= D_0.
+- (ii) No critical element with any bound has D = +infinity at a scale; so "the constant element with the SU(2) free
+  value" does not exist.
+- (iii) The engine's axioms, the centre grading and the spectral clause of the definition (repair D8) exclude a
+  constant c exactly when e^c is not an integer at least 2. They exclude no constant log m.
+
+Proof. (i) "If": the data A_(m,eps) of R L253 (CA item 21). "Only if": a critical element has the spectral form
+e^c = sum over r of exp(- T e_r(B)) for every dyadic T. If e_0 < 0 the right side is unbounded in T; if e_0 > 0 it tends
+to 0; so e_0 = 0. Then e^c minus the multiplicity of the level 0 equals the sum over the levels above 0, which tends
+to 0 as T grows and does not depend on T; so it is 0, there is no finite level above 0, and e^c is the multiplicity
+m. s_* = m - 1 >= 1/5041 gives m >= 2. (This is the remark of CO 6.4, L172, written out.) (ii) D_* <= D_0 in the
+definition. (iii) From (i); the centre grading asks only for sign triples on the m levels with the vacuum even and
+twisted sums in [0, m], which exist for every m (all levels even). QED
+
+Remark (D constant on the diagonal only). Link (b) gives D_E(b) = c at every b; it does not make the whole datum
+constant. The elements with D = c on the diagonal form a family: the constants log m; by Lemma PT-inf (i), sums of
+these with limits of constant D; the photon limit at one coupling (BELIEF as a limit, I10). So even with (a)
+granted, (c) is not "one element" for a finite c. For c = +infinity it is no element at all.
+
+### 4.5 Result of Task 3
+
+| Statement | Mark |
+|---|---|
+| SU(2), fixed lattice torus: D(n; beta) >= (3/2) log beta - 59 n^4 - 11 for beta >= 16; the free value is +infinity | PROVED (Lemma FV) |
+| The same at a fixed small physical size of the trajectory | OPEN (I8, GUIDE); not needed for any verdict here |
+| D(n; beta) = (3/2) log beta + log log beta + O(1) | GUIDE (count; no upper bound proved) |
+| U(1) and five dimensions: the same lower bound with (3/2) and 2 | ARGUED (same proof, not written out) |
+| Frozen values: log 8 (Z_2), log 92 (Q_8), log 244 (2T), the same at every size | PROVED (Proposition FRZ) |
+| A constant c is a critical element iff c = log m, m >= 2 an integer; the SU(2) free value gives no element | PROVED (Proposition CONST) |
+| For a finite c, link (c) names a family (D = c on the diagonal), not one element | PROVED for the constants and sums; the photon member is BELIEF |
+
+### 4.6 Guard run (guide only; pre-registered readings; under the numeric lock)
+
+Script `/tmp/ym4d-w3-uvrig/scripts/guard_step4.py`, output `guard_step4.out` beside it (scratch, not in the
+repository). Memory free before the run: 68 percent. Lock: `python3 scripts/lab_ops.py numeric-lock acquire`,
+status "acquired" at 2026-11-16T00:42:59Z, released after the run. Pure Python, one process, exact arithmetic for the
+counts. Readings written in the script before the first run; all PASS on the first run:
+
+- G1: by enumeration, c_1..c_4 = (2, 4, 8, 16), (8, 40, 176, 736), (24, 168, 1008, 5856) for Z_2, Q_8, 2T, and 8, 92, 244
+  conjugation orbits on commuting triples. Agrees with the hand count of 4.3.
+- G2: the shelling of (A2) on the open box for n = 3, 4, 5: tree connected with n^4 - 1 links; the two nu-links of
+  p(l) are tree links; l -> p(l) one-to-one; the order property; M = 136, 513, 1376 = 3 n^4 - 4 n^3 + 1.
+- G3: I(beta)/((pi/2)^(5/2) beta^(-3/2)) <= 0.26 on a grid of twelve beta in [0.5, 2000]. G4: v(r)/((8/(3 pi^3)) r^3) >=
+  2.27 on (0, 1]. G5: the packing set for delta = 1, 1/2, 1/4, 1/8: least distances at least delta/2, counts at least
+  delta^(-6).
+
+What the run can establish: that the hand counts and these inequalities are not false at the tested points. It
+does not prove Lemma FV, and a pass is no proof of any inequality on its whole range.

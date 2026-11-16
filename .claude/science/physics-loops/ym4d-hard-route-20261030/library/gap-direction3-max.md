@@ -505,3 +505,144 @@ it is a genuine half of the trichotomy, and the 2D analogy says it should be the
 
 No mechanism for the selective half was invented in this row. No mechanism for the blind half was found either;
 attempts 1 to 3 are the counterexamples to the three obvious ones.
+
+## 6. Task (4): the literature lens on the path chosen (step 6)
+
+The path chosen in 4.2 and 5.3 is the blind half. No paper was downloaded. One query was made (2026-11-16 14:29Z,
+`date -u`): three calls to the arXiv API (`export.arxiv.org/api/query`, generic client name, no personal data), sorted by
+submission date, saved as XML in the new directory `/tmp/r1051-lit.70700` (not committed), parsed with `python3 -I`.
+Titles and abstracts only were read. They are data from outside; nothing in this file rests on them.
+
+**From the query (titles and abstracts only).**
+- Piazza and Shen, arXiv:2610.35286 (2026-10-26), "Log-Sobolev inequality for 2D SU(N) lattice gauge theory at all
+  couplings": a volume-uniform log-Sobolev constant at every fixed beta in TWO dimensions, "a two-scale
+  disintegration argument". On file by identifier in 17 files of `library/`. It is a 2D statement; the lane's row 957
+  tested the disintegration method in 4D and it did not close.
+- Kanazawa, arXiv:0808.3442, "Generalizing the Tomboulis-Yaffe Inequality": "a system in a box that is sufficiently
+  insensitive to boundary conditions has a non-zero mass gap", by reflection positivity. On file in 19 files. It is a
+  consumer of the kind (L3) for twist ratios, in the family of the lane's own engine.
+- Not on file by identifier, and not bearing on the band by their abstracts: Tlas, arXiv:2603.25236 (the push-forward
+  of Haar measure by the action concentrates as a Gaussian; strong coupling); Nissim, arXiv:2605.16162 (SO(3) at
+  strong coupling does not satisfy Wilson's criterion: a centre-free group, relevant only as a test of tools that
+  read the centre).
+- No item of the three listings (54 records) claims a bound of any kind for four-dimensional SU(2) at couplings
+  between the strong-coupling range and the perturbative range. This is an absence in one search, not a survey.
+
+**Sources to read for the blind half (named; RECALLED unless a row is cited; none was opened in this row).**
+
+| Source | What a row would take from it | Standing here |
+|---|---|---|
+| Luscher, Narayanan, Weisz and Wolff, "The Schrodinger functional", Nucl. Phys. B 384 (1992) 168 | the response of a slab with abelian boundary fields as a definition of the running coupling; its one-loop value; the exact form of (BL) used in lattice practice | RECALLED; "Schrodinger functional" occurs in 12 files of `library/` (grep), row 1011 Seed 3 among them |
+| 't Hooft, Nucl. Phys. B 153 (1979) 141 | twisted boundary conditions, flux free energies, the duality relation between them; the statement that an orthogonal twist has zero classical action (twist eaters) | RECALLED; row 1013 C2 (c) uses the zero classical cost |
+| Tomboulis and Yaffe, Commun. Math. Phys. 100 (1985) 313 | the inequality between the vortex free energy and the Wilson loop: the consumer of (BL-c) in the odd sector | on file through rows 797-800, 1025 |
+| Luscher, Nucl. Phys. B 219 (1983) 233; van Baal's small-volume papers | the toron valley: why D and the vortex free energy are both of order log beta_eff in a small box (the source of Lemma FV of row 1028) | RECALLED |
+| Balaban, Commun. Math. Phys. 109 (1987) 249 | the blind half above the band: the effective action (1/g_k^2) A(U_k(V)) by a Ward identity on small fields | on file as a citation in row 1013 5.1 and row 1012; not rebuilt |
+| Brydges, Frohlich and Seiler, Ann. Phys. 121 (1979) 227 | the diamagnetic inequality: charged scalar matter screens; the opposite sign to the one the blind half needs | RECALLED; lane: the diamagnetic route of rows 834, 859, 1013 C5 |
+| Guth (1980); Frohlich and Spencer (1982) | compact U(1) at weak coupling: the one model where a blind bound of type (BDD-Delta) could be made a theorem and used as a control (`gap-dichotomy.md` L367-368: "for U(1) the bounded half is GUIDE only") | on file as the U(1) theorem for Villain at beta at least 2^14 (row 786) |
+| Sussman and Alpoge, complete account (CA-I, CA-II, CA-III at 31a47c543775), after Balaban | the start values at first passage; the vacuum counterterm E_0^(j) (CA-I 106147-106206 as cited by the gpt-6-astra check of row 993) | `library/sa-index/ca-full/`; not opened in this row |
+
+**What the lens says (ARGUED).** The physics literature treats the blind half as known (the running coupling of
+the Schrodinger functional and the vortex free energy are measured, and both fall with the size). No rigorous
+upper bound of a twist response or of a vortex free energy that is uniform in the size is known to me for a
+non-abelian group outside strong coupling. The rigorous tools on record bound such quantities from the other side
+(chessboard estimates, Gaussian domination, diamagnetic inequalities). So the blind half is not a literature
+port. It is a new statement, weaker than the wall.
+
+## 7. Task (5): the next rows, as complete briefs (step 7)
+
+No proof row is proposed on (LIOU), (GS-CAS), (TB)_n, (DEC), (SER) with (SPR), (N1)-(N3) or (INV): for none of them is
+a mechanism on record or found here, and a row would restate the crux or a prerequisite of it (the lead's rule,
+`parts/gap.md` L87-89). Three rows follow. The first is a check and should run first: this row recommends stopping
+two lines (A and G) and re-ranking the lane on the blind half, and the cross-provider checks have overturned
+broad verdicts of this kind before (`parts/gap.md` L97-98, L139, L146-147).
+
+### 7.1 Row `gap-direction3-check` (first; a check, one cross-provider run, one same-provider run)
+
+- **Statement to check**, in `library/gap-direction3-max.md`: (i) Lemma RM, the display (RM-fr), Corollary RM-TREE and
+  its one-cell form (5.1), with the four numbered readings; (ii) Proposition PIN with (P2), (P4), Lemma SF-D (a)-(c)
+  and the count (5.2); (iii) the two stop verdicts and the ranking of 4.2; (iv) the claim of 5.3 that all four blind
+  statements are open for SU(2) inside the band, and the taxonomy sentence (which statement excludes which branch).
+- **Reading list:** this file; row 1046 `gap-o2-extension.md` 2.1 (TAN), 6.1 (GR+); row 1016 `gap-global-reform-max.md`
+  7.1-7.2 (Identity AV, Theorem BH); row 1013 `gap-invent-selective-max.md` 4.1 (WN), 5.1 (JEN) with the gpt-6-astra
+  check items 12-17; row 1011 `gap-pinned-cell-gauge-max.md` 3.1-3.2 (Proposition A); row 1038 for the frame TREE.
+- **Tests first, by hand:** (a) RM on one link with weight exp(beta t) and S_eps a left translation: the identity
+  must read E[t] = (beta/3) E[1 - t^2]; (b) RM-TREE on one plaquette with one tree link; (c) (P2) at a pin of one
+  plaquette against Lemma TAN's force formula; (d) SF-D (b) on the slab with L = 2, T = 1 at first order in beta;
+  (e) the count at b = 2 against OpenAI's Lemma 3.2 (row 1007 L133).
+- **Controls:** compact U(1): RM, PIN (B_F = 0) and SF-D hold word for word and give no gain; the count must
+  return OpenAI's log N at b = 2. Frozen groups: RM and PIN have no content (no one-parameter subgroups).
+- **Kill tests on file to run against the verdicts:** Theorem D2 and Lemma SHEET do not bind an identity in the law
+  of one model (say so or refute); Lemma PT: every statement of Section 5 reads one factor; the four-test spec
+  check on the proposal "rank the blind half first".
+- **What the check must decide:** whether "(N1) in its sign form fails in the mean" is proved for frame TREE as
+  stated and for no other frame; whether the count in 5.2 is an argument about one form of inequality only.
+
+### 7.2 Row `gap-start-values` (a proof row on the supply side; second)
+
+- **Statement:** for the account's trajectory and the sizes L, 2L of P inside the account's weak-coupling domain:
+  (SV1) D^+(L) is finite, with a bound written in the account's constants (item A5 of row 1017, now conditional on
+  (UV-Z) and a density statement, `gap-dichotomy.md` L350); (SV2) = (E0-tor): the account's whole vacuum
+  counterterm E_0^(j) on the two tori agrees up to a wrapping tail that is summable over the scales
+  (`gap-idab-check-astra.md` L196-215: "matching nonwrapping coefficients and a summable wrapping tail"); (SV3) with
+  (SV2), the comparison D^+(2L) - D^+(L) to an error o(1) as the coupling at the scale L tends to 0, which is
+  (UV-Cas) of row 1032 in its domain.
+- **Consumer:** the extensive base (TH) of the (CAS) route (`parts/gap.md` L118, L254); (UV-Cas) of B15; the (DET) and
+  (HC-phys) reductions (`parts/gap.md` L137). It supplies no part of the band. It fixes what a band argument may
+  assume at its lower end, which no row has in checked form.
+- **Mechanism:** locality of the account's expansions: the counterterm is a sum of localized terms; the terms that
+  do not wrap the torus are the same on both tori; the wrapping terms carry the decay of the account's kernels
+  over a distance of the order of the side. This is a port in the sense of GOAL.md (their statement, rebuilt).
+- **Reading list:** CA-I 106147-106206 and CMP 119 pp. 273, 279 (as cited by the gpt-6-astra check of row 993);
+  `gap-idab-check-astra.md` L150-215; `gap-phys-seed.md` Proposition 1.1; `gap-ladder-max.md` L146-152;
+  `gap-det-check-astra.md` L406; `library/port-map.md`; `library/sa-index/ca-full/index.tsv` for the labels.
+- **Tests first:** the Gaussian model of the check of row 993 (T_n = m^2 I + 2 I - S - S^(-1): the determinant
+  densities at n = 1 and n = 2 differ), so exact torus independence is false and the statement must carry its
+  tail; the free value D >= (3/2) log beta - 59 n^4 - 11 of Lemma FV (row 1028) as the size of D^+ at small L.
+- **Controls:** compact U(1) with the same blocking: (SV2) must hold with no running; (SV3) must then give 0.
+- **Kill tests:** none of Lemma PT, Proposition NP, Theorem D2, Lemma SHEET binds a statement about the account's
+  counterterms at weak coupling; the row must say so line by line. Five dimensions: (SV3) must change sign.
+- **Stop condition:** if the account does not state the localisation of E_0^(j) (only of the explicit constants, as
+  Lemma C of row 993), the row ends with the exact missing statement, named by CA label.
+
+### 7.3 Row `gap-blind-half` (an attack with tests first; third, and only after 7.1)
+
+- **Statement, smallest exact form:** (BL-c) at one fixed coupling. For Wilson SU(2) at one beta of the window
+  2.3 to 2.6 (or every beta): there is c(beta) > 0 with Z_tw(L^4)/Z(L^4) >= c(beta) for every even L >= 4, Z_tw the
+  partition function with the plaquettes of one co-closed sheet of one plane taken with the opposite sign. A
+  second form if the first resists: (BDD-Delta) at one coupling, sup over a of D(a; beta) finite.
+- **Kind:** (K-one), uniform in the size, with no number required. Not the crux: it holds for compact U(1) (one
+  line, 5.3) and it does not give a seed. It is selective against frozen Z_2 (false there at large beta).
+- **Consumer:** for (BL-c): the exclusion of the branch with degenerate flux sectors, the constants log m of
+  Proposition CONST (row 1028) and (NO-CONST) of row 1032, at one coupling; for (BDD-Delta) at one coupling: branch (II)
+  of the trichotomy for a constant family. Neither reaches the trajectory without a carry; the row must say so.
+- **What a proof would change in (W):** nothing at once. It would be the first size-uniform bound from above on
+  a twist free energy for a non-abelian group outside strong coupling, and it would test whether ANY flow with a
+  classical cost exists at order-one coupling. If it fails with a written obstruction, every stiffness-type line
+  (A, G, I and the ports of rows 1009-1048) stops with it.
+- **Mechanisms to try, in this order, each with its first lemma:** (1) the Klein four-group form: the twisted
+  torus is the torus with periodicity up to the constant gauge rotations by i sigma_1 and i sigma_2 in the two
+  directions (twist eaters; RECALLED, to be written as a lemma), so Z_tw/Z is a ratio for a twist by exact
+  symmetries of the link measure that commute in SO(3); first lemma: write this identity on the lattice and
+  compute both sides on the 2^4 torus at first order in beta. (2) A flow built from the slice holonomies (Lemma
+  FLOW with Theorem EXT: the cost of the best flow is the response); first lemma: the cost of the holonomy-axis
+  flow of one direction on a torus of two slices. (3) Reflection positivity in the twist plane as a relation
+  between Z_tw at sizes L and 2L (it bounds from above; record the exact inequality and why it does not close).
+- **Reading list:** 5.2-5.3 here; row 1013 4.1-4.4, 5.1 with its gpt-6-astra check; row 1018 3.2 (Lemma PAR), 4.1
+  (Lemma FLOW), 7.4 (Corollary MP); row 1046 4.1-4.2 (POLY, EXT); row 1025 6.1 (Lemma PAR-T); `gap-flux-exercise.md`
+  3.0-3.1 (twists, sector sums); the sources of Section 6, rows 1-4.
+- **Tests first:** frozen Z_2 above 2.191: the statement is false, so the proof must use a one-parameter subgroup;
+  compact U(1): true by one line, so no gain may be claimed; five dimensions: the classical cost of a spread
+  twist grows with L, so a proof that does not read the dimension is wrong; Lemma SHEET and Theorem D2: the
+  statement is at homogeneous coupling with no pin, so a proof through a supremum over pins or coupling fields is
+  bound and must be avoided; Lemma PT: the statement reads the SU(2) factor only, which is allowed for a blind
+  half and forbidden for a seed.
+- **Controls:** the one-line U(1) proof must be recovered by the same construction when the group is abelian; on
+  the 2^4 torus at small beta both sides are computable by the character expansion (hand arithmetic).
+- **Numerics:** not needed; the truth of the statement at beta 2.3 to 2.6 is not in doubt (GUIDE: published vortex
+  free energies fall with the size). A run could only guide the choice of flow.
+- **Stop condition:** two mechanisms dead with written obstructions. Then record that the blind half has no route
+  below the account, and park lines A, G and I with it.
+
+**Which first, and why.** 7.1, because it gates the two stop verdicts and the new ranking. Then 7.2, because it is
+a port with a mechanism and two lines share its output. 7.3 is the only attack; it goes where a whole family of
+lines could die at low cost, which is the hardest-first rule applied to a statement that is weaker than the wall.

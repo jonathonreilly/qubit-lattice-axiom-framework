@@ -60,10 +60,10 @@ PROVED, ARGUED, OPEN, FAILS. Measured data guide or refute; they never discharge
 | 5 comparison with lane files | yes | band [2.3, 2.6] sits above the measured crossover (2.2), from N_t = 4 deconfinement to the onset of 3-loop running; mainly found again |
 | 6 discard tests, set-aside methods | yes | no verdict changes; K7 end point CONTESTED in the measured record (found again, row 995) |
 | 7 routes, kills | yes | M1-M9 all found again or dead; misframing pass finds none (band difficulty is intrinsic) |
-| 8 attempts | no | |
-| 9 report, RESULT | no | |
+| 8 attempts | yes | no proof attempt (all routes held elsewhere); T-BAND guide run PASS: specific-heat peak at beta 2.1-2.2, below the band |
+| 9 report, RESULT | yes | report 9.1-9.8 and RESULT below |
 
-Not covered so far: everything after step 0.
+Not covered: open PR branches were not searched in step 5; lane files read in part only (named in step 5); Athenodorou-Teper read in part (tables named in 1a); items marked recalled were not re-read; no blind check of the plain version (no subagents); T-BAND on one volume only.
 
 ## Step 0: where the record is; what stays closed
 
@@ -622,6 +622,48 @@ or very strong, and the simulations show that on such a grid the theory is in ne
 the final theory, with no small number to expand in. (Analogy, marked as such: the bridge must be built in the middle
 of the river, not from either bank.)
 
+### 8.2 Test T-BAND: result (run 16:17-16:22Z, lock released 16:22Z)
+
+Output (`/tmp/ym4d-1063-meas/hb.out`, verbatim, 8^4 periodic, 300 + 1500 sweeps, bins of 50):
+
+```text
+beta 1.900 <P> 0.47009 +- 0.00013  C 0.2788 +- 0.0133 (bin-mean C 0.2713)
+beta 2.000 <P> 0.50104 +- 0.00014  C 0.3116 +- 0.0139 (bin-mean C 0.3032)
+beta 2.100 <P> 0.53482 +- 0.00021  C 0.3534 +- 0.0127 (bin-mean C 0.3293)
+beta 2.200 <P> 0.56968 +- 0.00020  C 0.3620 +- 0.0249 (bin-mean C 0.3398)
+beta 2.250 <P> 0.58648 +- 0.00027  C 0.3178 +- 0.0153 (bin-mean C 0.2725)
+beta 2.300 <P> 0.60226 +- 0.00026  C 0.2945 +- 0.0152 (bin-mean C 0.2508)
+beta 2.400 <P> 0.63046 +- 0.00021  C 0.2418 +- 0.0079 (bin-mean C 0.2158)
+```
+
+**Control: passes.** <P>(2.3) = 0.60226 against 0.6022 (difference 0.0001 <= 0.003); <P>(2.4) = 0.63046 against
+0.6297 (0.0008); C(2.3) = 0.2945 against 0.287 (+3 percent), C(2.4) = 0.2418 against 0.247 (-2 percent), both within
+30 percent.
+
+**Reading: PASS.** The maximum of C on the grid is at beta 2.2 (0.362 +- 0.025; beta 2.1 is 0.353 +- 0.013, so the peak
+is broad over 2.1-2.2); C(2.2) - C(2.3) = 0.068 > 2 x 0.029 (twice the combined error); C(2.4) = 0.242 < C(2.3) = 0.295.
+Independent cross-check from the same run, finite differences of <P> (no fluctuation estimator): dP/dbeta = 0.338
+(beta 2.05), 0.349 (2.15), 0.336 (2.225), 0.316 (2.275), 0.282 (2.35), the same shape.
+
+**Limits, stated after the result (not a change of the reading):** the binned error of C ignores autocorrelation
+between bins and the bin-mean C is 7-15 percent below the full-sample C, so the errors are optimistic; one volume
+only (8^4), so the peak height is not extrapolated; the maximum is a broad crossover, not a transition. GUIDE only:
+it supports reading 5.1 point 1 ("the band is above the crossover") and proves nothing. It moves no lane statement.
+
+### 9.2 What the exercise found
+
+1. From the measured record alone (steps 1-3): the gap is the scalar glueball, 3.78 sqrt(sigma) in SU(2); it is one
+   scale with the string tension, T_c and Lambda; on the Wilson lattice the gap scale meets the cutoff at beta 2.2-2.4;
+   there neither strong nor bare weak coupling holds (MEASURED + DERIVED, guide).
+2. The lane's band [2.3, 2.6] sits just *above* the measured crossover: from the N_t = 4 deconfinement coupling to the
+   onset of 3-loop running, with ratios already scaling inside it. A heat-bath run made for this row put the
+   specific-heat peak at beta 2.1-2.2 on 8^4 (T-BAND, PASS, guide). So the band's difficulty is no small parameter in
+   a regime that already behaves like the continuum, not a lattice artefact. No change of frame or action removes it.
+3. Step 5 found nearly everything again: the seed size, the physical-scale map, small-box deconfinement, the scalar dip,
+   the contested K7 end point, theta and the flux half are all in rows 706, 720, 838, 995-996, 998 and 1052.
+4. No verdict on the lane's lists changes. Every route the measured mechanism suggests is held by another row.
+   This run produced mainly a map the lane already had, plus the placement of the band (5.1) and its check (8.2).
+
 ### 9.3 Filters corrected
 
 None. Two sharpenings that change no verdict: the compact-U(1) test's belief range starts at beta about 1.01
@@ -677,3 +719,18 @@ Also questioned, lower rank: theta = 0 left implicit in the target (a10; found a
 Assumptions most expensive to be wrong (none contradicted by the record): e4 (no Wilson-axis transition, unproved,
 needed by every Wilson-axis join), e5 (asymptotic freedom non-perturbatively), e6 (universality). Literature proofs
 worth translating: none new (Osterwalder-Seiler, Guth / Frohlich-Spencer, van Enter-Shlosman are already the lane's).
+
+- 16:23Z steps 8-9 written; lock released 16:22Z.
+
+RESULT: Row 1063 (Claude Opus 5.5 high, Mac mini worker 1, unchecked; one guide run, no proof). From the measured record:
+the gap is the 0++ glueball, 3.78 sqrt(sigma) in SU(2), one scale with sigma, T_c and Lambda (MEASURED). The lane's band
+beta [2.3, 2.6] sits just above the measured crossover, from the N_t = 4 deconfinement coupling to the onset of 3-loop
+running, where ratios already scale (DERIVED). The pre-registered heat-bath test T-BAND put the specific-heat peak at
+beta 2.1-2.2 on 8^4 (PASS, guide). The flux tube is the firm mechanism; vortex, monopole, Gribov and K7-end-point
+readings are CONTESTED. No proof; no filter corrected; no verdict changed; nearly all found again (rows 706, 720, 838,
+995, 998, 1052). The five assumptions the record most strongly questions, and what each opens: (1) strong coupling
+reaches the band (5.4x miss at beta 2.3), which opens a counted range of blockings, on file as RA/(CAS); (2) small
+periodic boxes stand for the confined theory at beta >= 2.3, which opens re-checking guides with side < 1/(T_c a); (3)
+the gap through confinement, which opens the target without the flux half (row 1052 T_JW-lat); (4) the band as a Wilson
+lattice artefact: refuted as a reading, which closes the action-change escape; (5) a critical end point near the
+Wilson axis, CONTESTED, which drops the K7 end-point test to a contested belief. Open: (W) itself, unchanged.

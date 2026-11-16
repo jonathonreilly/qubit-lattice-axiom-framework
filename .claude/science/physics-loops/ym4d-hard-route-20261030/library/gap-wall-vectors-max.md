@@ -124,7 +124,7 @@ G_p(u) the product of the four Phi around the transverse plaquette p at u. The g
 
 **Consumer chain to the gap.** (FACE-CH) and (FACE-SG) give a gap at (infinity, beta, beta). (BR-L) carries it to (beta, beta, beta), which is T_JW-lat of row 1052 at one coupling. The account then carries one reference coupling to finer cutoffs (the lane's carry, row 978; conditional).
 
-**What it changes.** The lane's route (ii) needs (N1) a frame on typical pins, (N2) the cancellation of the mass-like term, (N3) the gain, and (L3) decay of all observables from a small response (`gap-direction3-max.md` L104-111, L203-204). On the face (N1) and (N2) hold exactly (Lemma RIG), so (N3) and (L3) can be decided there without them. What is new to prove moves to (BR-L).
+**What it changes.** The lane's route (ii) needs (N1) a frame on typical pins, (N2) the cancellation of the mass-like term, (N3) the gain, and (L3) decay of all observables from a small response (`gap-direction3-max.md` L104-111, L203-204). On the face (N1) and (N2) hold exactly for twists in G (Lemma RIG), so (N3) can be decided there for those twists. **Corrected in step 4:** this covers the G-charged sector only. A twist of the transverse flux still needs a frame in the transverse planes, so (N1) stays for the singlet sector, and (L3) is not reached. What is new to prove moves to (FACE-SG) and (BR-L).
 
 **Cheapest kill tests.** (a) For the route: (BR-L) contains the target at one coupling, so the route is stronger than the target unless a mechanism for unfreezing is named. (b) For the testbed: a counter-model on the face with G-charged decay and no singlet gap (step 6 gives the scope of this). (c) Compact U(1) on the face must be massless at large beta (Gaussian computation, step 6).
 
@@ -145,3 +145,57 @@ G_p(u) the product of the four Phi around the transverse plaquette p at u. The g
 **Statement.** N(T) = Pin(2), the normaliser of the maximal torus of SU(2), is a non-commutative, infinite, compact subgroup with abelian Lie algebra. Its frozen lattice gauge theory is the model of a massless branch of pure SU(2) by abelian dominance. Claim to test: it has no gap on Z^4 at large coupling, so it binds tools for T_JW-lat. **Source:** e1, d2, row 1052 6c (which removed Q_8 and 2T as tests of T_JW-lat). **On file:** one mention, row 859 idea 12 ("U(1), Pin(2) and every finite group are amenable", `gap-brainstorm-max.md` L291); BD_n in Lemma F4 of row 838. Not on file as a test model for T_JW-lat. **Consumer:** the test table, not a proof.
 
 Next: step 4, the kill pass.
+
+### Step 4 result: the kill pass (task 3)
+
+Tests in the exact form of the lane's kill sheet, `library/gap-invent-selective-max.md` L52-63 (K1 Lemma PT, K2 Proposition NP, K3 Theorem D2, K3' slab device, K4 Lemma SHEET, K5 compact U(1), K6 frozen Q_8 and 2T, K7 five dimensions, K8 refilling, K9 the spec check S0-S4), with Lemma CEN+ and Lemma WN of rows 1016 and 1013. Valid form: a model refutes a claim only if the hypothesis holds there and the conclusion fails. A pass is no support.
+
+#### 4.1 V1, the flat-plane face
+
+| Test | Result for V1 |
+|---|---|
+| K5 compact U(1) | Lemma RIG holds for every compact group. The commutator gain behind (FACE-CH) vanishes for an abelian group, as K5 requires. (FACE-SG) is false for U(1) at large coupling at the Gaussian level (step 6, ARGUED). Pass, as a constraint. |
+| K6 frozen Q_8, 2T; and V5 Pin(2) | The twist uses infinitesimal rotations. For a finite group Lemma RIG is void. For Pin(2) the Lie algebra is abelian and the gain vanishes. Pass. |
+| K7 five dimensions | (FACE-CH) is a statement on two-dimensional planes. It holds verbatim in a 2+3 split. So it is blind to the dimension and cannot be the gap. The dimension must enter (FACE-SG): the stiffness of a block of b^(d_perp) sheets scales like b^(d_perp - 2), marginal only for d_perp = 2 (ARGUED). |
+| K3, K3' pinned sets | (FACE-CH) is uniform over pins on the boundary of a cell in u. Such pins cut out systems that are at most two-dimensional in u, so no ordered three-dimensional sheet arises. Pins on transverse link sets are not in the class. Pass in this restricted form. |
+| K4 SHEET, fixed-b form | (FACE-CH) may be uniform over transverse plaquette strengths in [0, b], because every cut-out system keeps the rigid group. (FACE-SG) must not be claimed uniformly over coupling fields; it is stated for constant beta_T only. |
+| K1 product | The product of the SU(2) face with a compact U(1) face has G-charged decay of the SU(2) factor and no singlet gap. So "(FACE-CH) gives (FACE-SG)" FAILS as a soft implication. (FACE-SG) must read the whole state space. |
+| K2 | No induction on D. Not engaged. |
+| K8 | Twists are rigid rotations, no refilling. Not engaged. |
+| Lemma CEN+, Lemma REM | No conflict. G is a group of gauge transformations, as CEN+ says every rigid map must be. The twist is honest because flatness pins every path in a plane (the exception in Lemma REM). |
+| Lemma WN | No conflict. The fixed cost per site of a lab-frame move comes from non-flat in-plane links. On the face there are none. |
+| S0 (renaming) | **FAIL for the route.** (BR-L) contains T_JW-lat at coupling beta. In the weaker form "(BR-L'): a gap on the face gives a gap at every beta_L >= beta" there is no mechanism and no refutation. |
+| S1-S4 | S1 yes (commutators). S2: a rate only for the charged sector. S3: only through (FACE-SG), open. S4: (FACE-SG) is not uniform over fields. |
+
+**Correction to step 3.2 (made in place there).** I wrote that on the face (N1) and (N2) hold exactly, so (N3) and (L3) could be decided there. That is true only for twists in G. The singlet sector is moved by flux twists. A flux twist with a slowly varying angle needs its colour axis to be covariantly constant on a three-dimensional set (the side of the Dirac volume): along the planes, which the face gives, and along a transverse path, which it does not (the mixed plaquettes on that side are not flat). So (N1) stays, in transverse form.
+
+**Why more freezing does not help (ARGUED, a dimension count).** Freeze the plaquettes inside a family of parallel k-dimensional flats and gauge the links inside to 1. A rigid SU(2) then acts on each flat, and a twist field lives on a k-dimensional set with a Dirichlet cost. The capacity gives disorder only for k <= 2. For k = 3 the links that leave the flats form three-dimensional O(4) layers, which order at large coupling (the slab device K3' of row 1013; Frohlich, Simon and Spencer 1976, recalled). A flux twist needs k = 3. So freezing flats gives honest twists exactly where they do not carry flux. Scope: this is an argument about this one device, not a theorem.
+
+**Verdict on V1.** As a route to the gap: FAILS (S0 at (BR-L); (FACE-SG) keeps the frame problem in transverse form). What survives: (i) Lemma ANCH and its corollary, a positive control with a posted theorem behind it; (ii) Lemma RIG and Lemma FACE-MW, proved by hand in step 6; (iii) the target (FACE-CH), a selective statement at weak coupling in a four-dimensional SU(2) model, which would decide (N3) for gauge-frame twists.
+
+#### 4.2 V2, the parametric seed near the anchor
+
+Kill test: a Lorentz-invariant anisotropic trajectory has couplings (xi^2 beta, beta, beta/xi^2) at leading order, xi = a_perp/a_long. The sheets then have two-dimensional coupling g(a_perp) at the scale a_perp, so xi_2 = xi exp(4 pi/g(a_perp)^2) in units of a_long (one loop; step 6.6). The transverse plaquette strength per site is (4/g^2) xi^(-2). So beta_T xi_2^2 = (4/g(a_perp)^2) exp(8 pi/g(a_perp)^2). This is small only if g(a_perp)^2 is large. Inside R the transverse spacing stays above the physical correlation length, and the limit keeps a transverse cutoff. To remove it the trajectory must leave R and cross the band in a_perp. **FAILS (S0: it renames the band).** ARGUED, one-loop numbers recalled. K7: the region R exists in a 2+3 split as well, which is consistent, since R is not near the isotropic continuum limit. What survives: the anchor region as a positive control (not proved here; it needs a convergent expansion about Lemma ANCH).
+
+#### 4.3 V3, frozen two-skeleton arrays
+
+(a) The charged decay along a frozen face is blind. A link that leaves a frozen face has its other end in the unfrozen bulk. Its correlation along the face is a Wilson loop of width 1 with one long side on the face, and that decays exponentially by the perimeter law for compact U(1) too (ARGUED; the standard weak-coupling perimeter law). (b) The bulk step, a clustering rate across a coarse cell of side s uniform in s, is the one-box estimate at scale s. The identification with the state without defects needs uniqueness of the Gibbs state, which is open. **FAILS (S0).**
+
+#### 4.4 V4, the infrared measure first
+
+The coarse measure is not a free choice. The fine members must be asymptotically free, and the irrelevant directions contract under blocking, so the projective family is one orbit of the scale group (ARGUED; it is the uniqueness of the account's limit along its trajectory). "mu_0 lies in the cluster-expansion domain" is then (EXIT) of row 838 items 21-26, or the absence of a critical element in Theorem CR (row 1017). **FAILS (S0).**
+
+#### 4.5 V5, the torus normaliser
+
+Not a route. As a test it is belief-grade: on Z^4 at large coupling the component field of Pin(2) is flat up to rare vortex sheets, and the rest is compact U(1) at the same coupling, read through even observables (Lemma EVEN, step 6.7). The Gaussian value of an even correlation is a power law. No theorem is cited for even observables. **Survives as a GUIDE-grade test**, with the consequence in step 6.7.
+
+#### 4.6 Ideas tried in this run and dropped before they became vectors (so they are not redone)
+
+- A Durhuus-Frohlich comparison with two-dimensional sheets as layers. FAILS: for beta_T > 0 the transverse plaquettes act on a sheet as an external field, so the conditional two-point function does not tend to zero; and the lane's warning G8 (`gap-brainstorm2-max.md` L263) applies.
+- Localising the space-time rotation group SO(4). FAILS: the cost of an elastic twist is extensive in lattice volume (it moves every ultraviolet mode); there is no dimensionless stiffness.
+- A chessboard estimate in the transverse directions to reduce to a two-dimensional model. FAILS: the chessboard norm of an observable is again a four-dimensional expectation.
+- A Hamiltonian with an exactly known ground state (the Fokker-Planck operator of a three-dimensional lattice measure). FAILS as a regularisation of the target: at weak coupling its long-distance theory is the Langevin dynamics of three-dimensional Yang-Mills (ARGUED by power counting: the extra two-plaquette term dominates for momenta above g^2/a).
+- Dielectric (linear quaternion) links after Mack. No selective statement: the radial mode is a mean of thin Wilson loops and is ultraviolet-dominated.
+- The thermal form of the gap (pressure below T^4 at low temperature). FOUND: the Casimir forms (BDD-Delta), (GS-CAS).
+
+Next: step 5 (ranking), then step 6 (hand proofs).

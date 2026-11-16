@@ -40,8 +40,8 @@ Provenance note. Before the row was read, the worker read `GOAL.md` in full (the
 2. done: target stated twice (plain 148 words; precise T.1-T.4 with forbidden weakenings), facts A0, A1 argued; inventory I1-I34, nearest models N1-N14, beliefs B1-B8.
 3. done: A2 argued (gap from uniform rate on a total set, F-dependent constants, passes to limits); conclusions C1-C11; Elon pass E1-E17 leaves (D); price = crossover-scale estimate or a transport mechanism (reading).
 4. done: 62 assumptions in six groups (a1-a8, b1-b13, c1-c12, d1-d9, e1-e12, f1-f8), each with if-wrong; ranked; owner-decision rows f1, f2, f4, a1, a2, a8, c1.
-5. not done.
-6. not done.
+5. done: lane read (parts/gap.md in full; dichotomy, exercise4, direction3 in part; row 838 assumptions exercise found and read in part). Almost every item found again; C8 corrected (2D O(N) gap now has posted proofs); added: the JW-versus-(W) list S1-S6 (W asks for more than the JW gap: bare Wilson, every lattice, periodic all-sector flux half, bounded Casimir free energy).
+6. done: every test re-judged against the JW target (T_JW, T_JW-lat); U(1), photon, products (incl. ordered Ising via uniqueness), D2, SUB, SHEET bind it; frozen Z_2, Q_8, 2T do not (flat fields on Z^4 are pure gauge: argued); no verdict changes (the methods those tests killed fed the flux half or torus steps).
 7. not done.
 8. not done.
 
@@ -393,4 +393,135 @@ One line each for the first five (what a lane would do differently):
 - c4: test, before investing in the crossover, whether large fields or effective-action non-locality are where every proof dies.
 
 Rows whose drop would change an owner decision: f1, f2, f4, a1, a2, a8, c1.
+
+### Plan step 5 = skill step 5: compare with the earlier work
+
+Opened now (first time in this run): `parts/gap.md` (L1-257, read in full), `library/gap-dichotomy.md` (L73-212, the setting and theorem statements; the rest not read), `library/gap-crux-exercise4-max.md` (row 1003; L195-330 read, the input and step tables; headings of the rest), `library/gap-direction3-max.md` (row 1051, still running at this pin; L1-40 and the tail read). Search scope for every "new"/"found" mark below: `grep -rE` over the whole target folder (`library/`, `parts/`, `FINISH.md`, `gates/`, `checks/`) by at least two wordings; open PR branches were **not** searched (scope limit, recorded). Also found by that search and then read in part: `library/gap-assume-opus.md` (row 838, Claude Opus 5.5 max, 2026-11-12: an earlier assumptions exercise on the whole gap skeleton, 116 assumptions with what-if-wrong; rows 1-116 and Part 2 (a) read), `library/gap-outside-box-max.md` (row 1004; L138-196 read), `library/gap-short-step-max.md` (row 1018; grep hits only).
+
+#### 5.0 The lane's wall as it stands (no new mathematics)
+
+- Wall (W), repaired (`parts/gap.md` L21-23, credit gpt-6-astra check of row 720, `library/gap-zd-astra.md` item 18): for Wilson SU(2) at the bare couplings beta_j of the Sussman-Alpoge trajectory, on periodic tori of the dyadic physical sizes P = {2^i l_1}, there are a bound (L_0, D_0) of (BDD-Delta) and L in P with L >= 4 L_0 and z^-(L) > 256 D_0 + 30, where z^-(L) = liminf_j (L/a_j) m_j((L/a_j)^3) is size times the gap of the periodic cube's transfer operator and D is the Casimir free energy F - f|n| (`library/gap-dichotomy.md` L77-118).
+- Equivalences on record: (W) iff (PHYS-SEED) iff [(BDD-Delta) and (Z-UNB)] (Theorem ZD-c, row 720; `gap-dichotomy.md` L142-162); (W) iff no uniformly recurrent critical element, given (BDD-Delta) (Theorem CR, row 1017; L164-194).
+- What (W) gives: the lattice gap uniformly in j (G1), clustering of every limit state at one cutoff (G2), and the continuum gap **given** a continuum datum with (H2) and (TOT) that "nobody supplies" (`gap-dichotomy.md` L196-211).
+- Blockage, the lane's own sentence (`parts/gap.md` L44-46): "every engine found is blind, so its seed sits in the band; the one selective fact that is provable today, asymptotic freedom at small coupling, has no engine that carries it across the band".
+
+#### 5.1 Inventory corrected in place
+
+- **N8 / C8 are out of date.** The 2D O(N >= 3) gap has two posted, unrefereed proofs: Ding, Huang and Yang, arXiv:2611.04908 (2026-11-03), and OpenAI, "The canonical massive continuum limit of the two-dimensional O(3) model" (2026-10-04) with "Sharp mass bounds for the two-dimensional O(4) model" (`parts/gap.md` L95-96, the lead's and rows 1006-1011's reading). So the 2D model is a source of mechanisms, not a cost calibration; C8's sentence "unproved after forty years" is wrong as of 2026-11. Credit: rows 1006, 1007 and the lead. Corrected reading of C8: a 4D method that uses no gauge-specific property would be a port of the 2D mechanism; the lane found that the direct port FAILS in the class of all pins and strengths (row 1011, Propositions B, B', Theorem BH) and that "no rigorous non-abelian gauge stiffness bound is published" (row 1012) (`parts/gap.md` L96).
+- **I16, N5 (finite groups) need a scope note.** On R^4 the weak-coupling finite-group theories are gapped (I16); on a **periodic torus** a frozen non-abelian finite group has several centre-even flat states at every box (cross-provider check of row 884, `library/gap-crux-exercise2-check-astra.md` L227-259, as cited at `parts/gap.md` L207). So they test torus-level even-sector statements and are positive controls for the R^4 gap. The lane has both halves: row 838 item 94 (`library/gap-assume-opus.md` L147) and the corrected test-table row (`parts/gap.md` L207).
+
+#### 5.2 Conclusions of step 3 against the record
+
+| Item | Earlier work? | Where | Search scope |
+|---|---|---|---|
+| A2 (rate on a total set, F-dependent constants, passes to limits) | yes | Proposition P' with (H2), (TOT): `gap-dichotomy.md` L204-211 (`gap-seed-limit.md` L200); row 838 items 11, 37 | folder, "TOT", "Proposition P'" |
+| C1 uniformity is all | yes | row 838 item 8 (`gap-assume-opus.md` L36) | folder |
+| C2 gap needs RP + time translations only; O(4) not used | yes | row 838 item 13 ("new; no gain" there) | folder, "O(4)", "Wightman" |
+| C3 must use what U(1) lacks | yes | test table L205 (`parts/gap.md`); row 838 items 82, 91 | folder |
+| C4 invisible at fixed order | yes | row 838 item 53 (rate filter) | folder |
+| C5 no tool spans the band | yes | `parts/gap.md` L41-46 (row 998) | - |
+| C6 no confinement needed | yes, with a twist | row 838 item 15; but the lane's (W) carries the flux half (periodic, all sectors), see 5.4 S3 | folder, "flux half" (60 files) |
+| C7 uniqueness must use theta = 0 | yes | row 838 item 72 (`gap-assume-opus.md` L120; GUIDE, Gaiotto-Kapustin-Komargodski-Seiberg) | folder, "Gaiotto", "theta = pi" |
+| C8 2D O(3) calibrates cost | **wrong as written**; corrected in 5.1 | `parts/gap.md` L95-96 | - |
+| C9 existence-then-gap duplicates infinite-volume work | partly | row 838 items 10, 14, 37 (the seed gives clustering in every limit state; the gap is conditional on T0's datum); T0 handles OS4 by ergodic decomposition (PH1, CL1; FINISH row 279) | folder, "CL1", "existence before" |
+| C10 finite-size criteria | yes | the engine is one: Theorem S (row 698), Corollary S3' (row 838 items 30-31); Knabe-type block criteria fail on gauge-invariant functions for 1/16 <= beta <= 64 (Wall C, `gap-brainstorm-max.md` L72, L253; rows 750, 758) | folder, "Knabe", "Dobrushin" (140 files) |
+| C11 deformations move the wall to continuity | yes | centre-stabilised and twisted thin tori: `gap-skeleton-max.md` L8, L371, L410 (Unsal-Yaffe read in abstract), `gap-brainstorm2-max.md` L175 (idea 25), `gap-outside-box-max.md` I5, I6 (FAILS, same crux); fundamental Higgs: the pinned model is the gauge-Higgs model (`gap-thermpin-opus.md` L48); adjoint Higgs: Lemma GG (row 1004) | folder, "Unsal", "adiabatic", "Higgs" |
+| M3 orbit-space curvature (O'Neill) | yes | exercise4 input 10 (`gap-crux-exercise4-max.md` L218); no consumer above beta about 1/8 | - |
+| M6 soft dichotomy (exclude IR scale-invariant limits) | yes | Theorem CR, (LIOU), critical elements (row 1017); "massless branch needs an emergent two-form current" (idea 29) | - |
+| Elon (D): the deleted requirement set | partly | row 838 (a) items 1-15 give the same deletions for the lane's (GAP); none states the comparison against JW's own list (unique vacuum, all local fields, non-triviality of the same limit) in one place | folder |
+| Price 3.6 (crossover estimate or a transport mechanism) | yes | `parts/gap.md` L246-257 (exact price, row 998) | - |
+
+#### 5.3 Ranked assumptions against the record
+
+| Assumption | Earlier work? | Where |
+|---|---|---|
+| e1 gap true | yes (belief) | row 838 item 79-80 (AF flow reaches disorder; confinement), test-table point 5: "No test on record is a model of the SU(2) class with first-passage data and no gap. None is believed to exist" (`parts/gap.md` L245) |
+| f1 no computer steps | yes | row 838 item 99; `parts/gap.md` L28 |
+| a2 R^4 vs compact direction | yes | see C11 row |
+| c3 seed plus transport | yes | the engine (Theorem S) and the price; alternatives RA-RG and LC in the registry (`parts/gap.md` L162-200) |
+| c4 order-one band is the hard part | yes, and confirmed by the lane's experience: "Each route ends at an inequality for the thermal sum of the cube at order-one coupling" (`parts/gap.md` L41-43) | - |
+| e4 AF non-perturbative | yes | row 838 item 79; Patrascioiu-Seiler (8 files) |
+| b2 Wilson action | partly | (W) is stated for Wilson only (`gap-dichotomy.md` L77); the freedom of the bare weight is an OPEN question (UNIV-FP), `gap-next3-max.md` L282, exercise4 input 17; no route uses it |
+| c1 existence before gap | yes | row 838 item 10 |
+| b3 Euclidean | yes | Hamiltonian ideas 32, 37, G15 of row 859; I14 of row 1004 ("strong coupling. Not order one") |
+| a3 gap on all of Omega-perp | yes | row 838 items 2, 12: the lane's (GAP) is the cyclic sector of tr F^2, one canonical component; "the infrared engine already gives a gap on the whole transfer space at each cutoff" (Part 2 (a) row 2) |
+| c7 near-Wilson effective actions | yes, the opposite choice | row 838 item 23: "The infrared engine acts on the fine lattice as it is; no effective-action interface is used by Theorem S" |
+| e9 IR easy once strong | yes | row 838 item 48 (proved bare ranges beta < 2/9 etc.), 49 |
+| b1 lattice at all | partly | stochastic quantisation and loop equations appear (loop equations set aside under the no-computer rule, `gap-form-exercise.md` L352) |
+| c2 RG frame at all scales | yes | row 838 items 21-26 (the account ends at the unit; EXIT is the crux) |
+| d2, d3, d9 | yes | test table L207 (Q_8, 2T as torus even-sector tests), row 838 item 92 (5D: GUIDE), row 1025 (Migdal-Kadanoff / Tomboulis line) |
+
+#### 5.4 What the lane's framing imposes, and what the JW target does not need
+
+The lane states almost all of its assumptions (row 838 lists 116). Measured against the JW target of step 1, the framing of (W) adds these requirements, each stated somewhere in the lane but nowhere collected against JW:
+
+- **S1 (bare Wilson, one trajectory).** (W) is about the bare Wilson measure at the account's couplings (`gap-dichotomy.md` L77, L106-111). JW needs some regularisation and some trajectory. The lane keeps the action fixed; changing it is an open question with no route (b2).
+- **S2 (uniform on every lattice of the sequence).** z^- is a liminf over j of lattice gaps (`gap-dichotomy.md` L103). JW needs the gap of the limit only. The converse "continuum gap gives (W)" is not proved (row 838 item 52: "a gap alone is not shown to give one [a seed]").
+- **S3 (periodic tori, every sector).** The seed is a trace over all states of the periodic cube, flux sectors included (row 838 item 33). So (W) contains the flux half, a confinement-type statement (electric flux energy times L unbounded), which JW does not ask for (C6). The lane knows: EV-L shows the limit needs only the even sector (row 838 item 38), and the even-sector engine is blocked at (EV-STEP) (registry RE).
+- **S4 (partition functions only).** The engine reads torus partition functions Z(n) (row 838 item 24; the "datum" class, `gap-dichotomy.md` L84-88). The product and no-seed tests (Lemma PT, Proposition NP) bind exactly the statements that read the datum through D.
+- **S5 (BDD-Delta).** A bounded Casimir free energy on physical sizes is one leg of the equivalence; JW does not mention it. It is not a target of any row (`gap-dichotomy.md` L362 as cited by row 1051).
+- **S6 (the gap leg waits for T0).** The continuum gap needs (H2) and (TOT) from the existence chain (`gap-dichotomy.md` L210-211).
+
+First-principles requirements that the lane's framing does not carry: unique vacuum (the lane allows canonical components, row 838 item 3; (W) gives uniqueness anyway, G2), all local gauge-invariant fields (the lane: the tr F^2 sector, item 2), non-triviality of the same limit (supplied by the trajectory and T0, not by the gap lane). None of these is a defect of (W): each is either implied by (W) or belongs to T0.
+
+#### 5.5 What the fresh pass added, and what it only found again
+
+Found again (credit in the tables): A2, C1-C7, C9-C11, M3, M6, the price, and every ranked assumption except as below. The earlier exercises that hold them: row 712 (`gap-crux-fp.md` Part 2), row 750 (`gap-crux-exercise-astra.md`), row 838 (`gap-assume-opus.md`), rows 878, 998, 1003 (exercises 2, 3, 4), row 1004 (`gap-outside-box-max.md`).
+
+Added (each "not found in the target folder by the searches named above"; open PR branches not searched):
+1. **The JW-versus-(W) comparison in one list** (5.4 S1-S6): (W) is stronger than the JW gap clause in four separate ways (bare Wilson; every lattice of the sequence; periodic all-sector, hence the flux half; a bounded Casimir free energy), and weaker only in waiting for T0. Reading.
+2. **C8 corrected** (5.1): the 2D calibration is obsolete; the lane already says so for its row 1002 filter (`parts/gap.md` L95), so this is a correction of my inventory, not of the lane.
+3. Nothing else. In particular the field-wide assumptions the row lists (lattice, Wilson, Euclidean, RG frame, gap after existence, seed and transport, order-one band, transfer-matrix methods, SU(2) before SU(N), d = 4, decay as the route, confinement, area law, Gribov) are all on file with what-if-wrong entries.
+
+Honest summary of steps 2-5: **the fresh pass mainly found again a map the lane already had.** The one structural difference it names is S2-S3: the lane's wall asks for more than the JW gap on R^4.
+
+### Plan step 6 = skill step 6: the discard tests and the set-aside methods
+
+The lane has audited its tests in the valid form already (row 998 6c, copied at `parts/gap.md` L203-245; row 838 Part 2 (f); rule W2 at `parts/gap.md` L93). This step does not redo that audit. It adds one column the lane's audit does not have: whether each test binds a tool aimed at **the JW target** rather than at (W). Two target forms:
+
+- **T_JW**: the R^4 continuum limit along the trajectory has spec H on Omega-perp in [Delta, inf) with Omega unique (step 1, T.4).
+- **T_JW-lat**: there are c > 0 and a physical length l such that for all large j, every infinite-volume limit state of the cutoff-j theory (torus limits or DLR states) clusters in the sense of A2 at rate c/l in physical units, for a total set of local observables, constants depending on the observable only. (T_JW-lat with T0's (H2), (TOT) gives T_JW by A2 (iii); this is the lane's (G2)-(G3) with (G2) taken as the hypothesis instead of (W).) Mark: DEF here; the implication is argued (A2) given T0.
+
+#### 6a. Methods set aside (rows 1-33 of the lane's lists)
+
+Rows 1-18: `library/gap-crux-exercise2-max.md` L396-413 (row 878), read first-hand here as a table only. Rows 19-33: `library/gap-crux-exercise3-max.md` L499-513 (row 998), read first-hand as a table; row 998 took them from RESULT lines (`parts/gap.md` L59). Later set-asides (rows 1004-1050: the ten frame changes of row 1004, the direct port of the 2D pinned-cell mechanism, the ten reformulations of row 1016, the thirteen far-afield ideas of rows 1031-1032, route (ii) forms) are recorded in `parts/gap.md` L136-150; I list them as one block each and did not open their files.
+
+#### 6c. The tests against T_JW and T_JW-lat
+
+| Test (source line) | Binds T_W tools? (lane) | T_JW false in M'? | Binds T_JW / T_JW-lat tools? | Why |
+|---|---|---|---|---|
+| Compact U(1), Coulomb phase (`parts/gap.md` L205) | yes; theorem-grade at very large beta | yes (massless photon; Guth, Frohlich-Spencer, THM recalled) | **yes**, same range | the R^4 photon is gapless |
+| Free photon (L206) | yes | yes | **yes** | Gaussian massless |
+| Product with a massless factor, Lemma PT / Corollary PT1 (L207; row 998 8.1, `gap-crux-exercise3-max.md` L690-724, read here in full) | yes | yes (m = min(m_1, m_2), Lemma PT (c), passes to the limit) | **yes** | the product's R^4 limit has the massless factor |
+| Proposition NP (row 1003 5.1, 6.1; `gap-crux-exercise4-max.md` L342-372, L579-596 read): products with an ordered Ising factor | yes (no seed: periodic tunnelling) | yes: the ordered Ising factor has two pure phases on R^4, so Omega is not unique and the JW clause fails | **yes** for T_JW (uniqueness); **no** for a tool whose conclusion is clustering of each pure phase only | the vacuum degeneracy is real on R^4, not a torus artefact |
+| Frozen Z_2 (L208) | T_per only | no: on Z^4 (simply connected) every flat Z_2 field is pure gauge, so the frozen model is the trivial theory; at large finite beta Z_2 is gapped on Z^4 (Chatterjee 2020, I16, recalled) | **no**; a positive control | the failure on the torus comes from flat non-trivial holonomies around the torus cycles, which R^4 does not have |
+| Frozen Q_8, 2T (L209; corrected by check 884) | T_per and torus T_ev | no, by the same argument (flat fields on Z^4 are pure gauge; weak coupling gapped by Adhikari-Cao, recalled) | **no**; positive controls | as above; the "two centre-even flat states at every box" are commuting non-central holonomy pairs around torus cycles |
+| w_p at its transition (Proposition V, L210) and the K7 line (L211-212) | T_fix at one coupling; class-wide soft statements | not applicable (no trajectory) | as for T_W: binds class-wide statements with no ultraviolet hypothesis, not tools that read first-passage data | lane point 1 (L553-555 of row 998) carries over |
+| Theorem D2, Lemma SUB, Lemma SHEET (L213-214) | forms of hypothesis are false | not models | **yes**, unchanged: a false hypothesis form is vacuous for every T | target-independent |
+| Lemmas CAP, COUNT; ceilings 1/3, 2/3, 0.775, 1.0109 (L215-216) | ranges of named families | - | unchanged (range statements) | - |
+| Conformal-window matter (L217) | outside K | - | outside K | - |
+| Five dimensions (row 838 item 92: GUIDE; row 1028: tests (BDD-Delta), not (LIOU)) | belief-level | belief: 5D weak coupling believed Coulomb-like (Creutz 1979) | belief-level; and a tool that reads asymptotic freedom has a false hypothesis in 5D (no running to strong coupling), so it constrains only dimension-blind tools | as the lane says |
+| Lemma CEN+, Lemma WN, Proposition B, B', Theorem BH (rows 1013-1016; `parts/gap.md` L96, L139) | no-go statements for porting the 2D pinned-cell iteration | not models | unchanged; they concern pinned-cell boxes, not tori | valid as reported; not re-derived here |
+
+**Result of 6c (argued; inputs: the cited lane statements, I14, I16 recalled, and the elementary fact that a flat lattice gauge field on a simply connected lattice region (all plaquettes equal to 1 on Z^4) is a pure gauge).** Proof of the elementary fact: fix a maximal tree of Z^4 rooted at the origin; gauge-fix every tree link to 1; flatness of each plaquette then forces every non-tree link to 1, because each non-tree link closes a cycle that is a product of plaquette boundaries on Z^4 (H_1 of the 2-skeleton of Z^4 vanishes). For an infinite tree this is done on increasing finite boxes with free boundary, which are simply connected. QED. So the frozen finite-group tests bind exactly the statements made on periodic tori with all (or all centre-even) sectors. Against T_JW and T_JW-lat they are positive controls. The other theorem-grade tests (U(1), free photon, products with massless or degenerate factors, D2, SUB, SHEET) bind T_JW tools too.
+
+**Is this a corrected filter?** Only in scope. Row 838 item 94 (`gap-assume-opus.md` L147) already says finite groups are positive controls for (GAP); the test table restricts Q_8, 2T to even-sector tools (L209). The correction is that the restriction is to **torus** even-sector tools, and the reason is topological (holonomy around torus cycles), which the table's wording ("the non-abelian flat states") does not say.
+
+#### 6d. Re-judging the verdicts against T_JW-lat
+
+A verdict changes only if its sole killing test is one that does not bind T_JW-lat. Going down 6a:
+
+- Rows 1-3, 9, 10, 12, 14, 16 (needs a small number / ceilings / gauge corner / circular): valid as reported; not re-derived; unchanged (their reason does not use a torus).
+- Row 2 (background-uniform twist bounds; "flat background is a ferromagnet"): valid as reported; the twist is a torus device, but the verdict's reason (a ferromagnetic flat background) is a local fact; unchanged.
+- Rows 4, 5 (one-way torus step; (MONO-Delta) false for ordered Ising): the ordered-Ising product binds T_JW through uniqueness (6c); unchanged.
+- Rows 6, 7, 8, 11, 13, 15, 17 (refuted or wrong quantity): unchanged.
+- Row 18 (hierarchical / Migdal-Kadanoff, group-blind, confines U(1)): U(1) binds T_JW; unchanged.
+- Rows 19-21, 24-26, 29-33: their reasons are D2, SHEET, ranges, "was tried", or open premises; unchanged.
+- Row 23 (carrier of a seed: false for U(1), frozen groups, K7): U(1) still binds; unchanged.
+- Row 27 (beta_t path): open premise; unchanged.
+- Row 28 (soft exclusion of branch G; "K7 refutes every soft form"): row 998 already re-judged it "too strong" (`parts/gap.md` L68-70); unchanged here.
+- Exercise 4 input 2 (Fact T, killed by FG at the flux half): the frozen-group test does not bind T_JW-lat, but Fact T's only consumer is the flux half, which T_JW does not need (C6). **Moot, not revived.**
+- Later blocks (rows 1004-1050): their kills are U(1), products, the direct-port no-gos and named open steps; none rests on the frozen-group test alone, as far as `parts/gap.md` L136-150 records them (I did not open their files). Unchanged as reported.
+
+**Outcome of step 6: no verdict changes.** The one scope correction (frozen finite groups bind torus statements only, for a topological reason) revives no method on the lane's lists, because every method those tests killed fed the flux half or a torus even-sector step. Statement of the blockage in one sentence (6b, my wording; it agrees with the lane's at `parts/gap.md` L44-46): at the one scale where no expansion parameter is small, a tool must give an inequality that fails for every model with SU(2)'s local kinematics plus a massless or degenerate sector (compact U(1), the photon, products with massless or ordered factors), and every inequality proved at that scale so far either holds in those models too or needs a small number.
 

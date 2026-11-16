@@ -33,7 +33,7 @@ FLUX-W (a)-(d), the definition of T_JW-lat (6b), sections 6c and 6d, and the Rea
 
 ## Status
 
-Steps 1-7 done (written below). Next: step 8, meaning, verdict table, RESULT.
+All eight steps done (written below). Final: verdict table and RESULT line at the end.
 
 ## Step 1. Sources read (all at b04caeebc)
 
@@ -424,3 +424,86 @@ against that target.
 **Verdict on the Reading: HOLDS AFTER CORRECTION.** One direction is proved, as the author marks it. The bold
 identity and "exactly" overstate it. The separating example is better supported than the file says (the torus
 half is lane THM), but it lives on the class of models, not on SU(2).
+
+## Step 8. Meaning: (W) or T_JW-lat as the lane's terminal target
+
+Here T_JW-lat means the corrected form of step 5 (limit states of admissible periodic cubic tori). Every item
+below is a consequence of steps 2-7 or a reading, as marked. No new attack.
+
+**What the swap keeps (proved above).** The gap leg reads only T_JW-lat. (G3) and Proposition P' consume (G2),
+and (G2) is T_JW-lat with c = 2 log(1/q') (step 5). So for the continuum gap nothing that (W) supplies is lost,
+and the conditions are the same for both: T0's datum, (H2), (TOT), and the compatibility of T0's tori with
+admissible cubic tori (`gap-seed-limit.md` L204 (4), (5)). (G_ev) of Theorem EV-L becomes unnecessary, because
+T_JW-lat speaks of the limit states directly.
+
+**What the swap gains (proved above).** (1) The flux bound (d) is no longer asked for (FLUX-W shows (W) asks for
+it). (2) The frozen finite-group tests (Z_2 above 2.191, Q_8, 2T) stop binding: Lemma FLAT makes them positive
+controls of T_JW-lat (step 6). (3) "Weaker" holds in the governance sense: (W) implies T_JW-lat (step 5), and on
+the class of lattice gauge models with (TM) the converse fails at Z_2 above 2.191 (step 7, R3, one half lane THM
+and one half recalled THM).
+
+**What the swap loses (reading; each item names its source).**
+
+1. The one-box reduction. (W) is equivalent to one seed at one physical size, (PHYS-SEED), which the engine
+   (Theorem S, Corollary S3') carries to every larger cube and to every limit state. T_JW-lat is a statement
+   about infinite-volume states at all large cutoffs, and the file has no finite-size criterion that gives it
+   except through (W). Row 1052's own C10 records finite-size criteria for gauge theories with boundary data
+   as open, and route (ii) (rows 1018-1053) is the lane's open attempt at one. So with T_JW-lat as the terminal
+   target, the lane's main structural result, "one box suffices", no longer reaches the target unless a new
+   criterion is proved.
+2. The structure of failure. Theorem ZD-c, the trichotomy, Theorem CR and the critical elements (rows 720,
+   1017) describe exactly what happens when (W) fails. Nothing on file describes a failure of T_JW-lat.
+3. The finite-volume outputs of (W): (G1) on every large periodic cube, and the decay of the Casimir free energy
+   (Lemma Z3, `gap-dichotomy.md` L200). I found no consumer of these outside the gap leg in `gap-dichotomy.md`
+   2.3 and 3.8; I did not search the T0 chain for one (scope).
+
+**Is T_JW-lat easier for SU(2)?** Open, and the file gives no reason to expect a large gain. (i) It is no harder,
+because (W) implies it (step 5). (ii) For Wilson SU(2) no separation is known or believed: the flux bound is
+believed to hold together with the area law (row 1052 B4). (iii) Every theorem-grade test except the frozen
+groups still binds a T_JW-lat tool (step 6): compact U(1), the free photon, the products with a massless factor,
+NP through clustering of the torus limit state, and D2, SUB, SHEET. So the blockage at the band (row 1052 6b; lane
+`parts/gap.md` L44-46) is unchanged, except that the frozen groups leave the list of models a step must fail in.
+(iv) The lane's only infrared engine works on periodic traces, which contain every flux sector, so any method
+built on it is held to (d) by FLUX-W anyway. The swap helps only a method that never reads a periodic trace,
+which is route (ii)/Q1 (rows 1051, 1053, held there; not attacked here, rule 0a).
+
+**Judgement.** The swap is a correct relabel with one real gain (the frozen-group tests leave) and one real cost
+(the one-box reduction no longer reaches the target until a finite-size criterion for T_JW-lat exists). Row 1052's
+own sentence "nothing in the lane's mathematics; it changes the label" (L565) holds, with "exactly the flux
+clause" replaced by "at least the flux clause", and with the cost item 1 added. Whether T_JW-lat is easier for
+SU(2) stays open.
+
+## Verdicts
+
+| Statement (row 1052 line) | Verdict | First failing line, or the correction |
+|---|---|---|
+| FLUX-W (a) (L556, L560) | HOLDS | plaquette count 0 or 2 checked on spatial and time-like plaquettes; commutation as Lemma 1.1 (iv) of `gap-seed-check.md` |
+| FLUX-W (b) (L557, L560) | HOLDS | - |
+| FLUX-W (c) (L558, L560) | HOLDS | elementary: flux levels are levels of the full periodic T |
+| FLUX-W (d) (L559, L560) | HOLDS AFTER CORRECTION | wording: add (S0), the repaired (W) of `gap-dichotomy.md` L119, and that l, q', j_0 come from (PHYS-SEED) through (G1); text in step 4 |
+| T_JW-lat, definition (L485) | HOLDS AFTER CORRECTION | L485 with L611: the class "(torus limits or DLR states)" is not reached by (W) on file (`gap-seed-limit.md` L92, L172, L288); fix it to limit states of admissible periodic cubic tori; text in step 5 |
+| T_JW-lat gives the JW gap (L485 parenthesis) | HOLDS AFTER CORRECTION | mechanism is A2 at each cutoff plus Proposition P', not A2 (iii) with cutoff-uniform constants; needs T0's datum, (H2), (TOT); gives the gap on T0's Hilbert space (tr F^2 sector), same as (W) |
+| 6c (L491-510) | HOLDS AFTER CORRECTION | L508: H_1 = 0 does not make a flat non-abelian field pure gauge; replaced by Lemma FLAT (step 6); "exactly" -> "only"; Q_8/2T witness is a triple; Z_2 test is at finite beta above 2.191 |
+| 6d (L512-528) | HOLDS | no verdict rests on a frozen-group test alone (bounded search); W2 should also cover `parts/gap.md` L30, L49 |
+| Reading (L563) | HOLDS AFTER CORRECTION | L563 bold sentence fails as an identity: only (W) => T_JW-lat and (d) is proved; the converse is open (finite-size step, (BDD-Delta)); "exactly" in L565 must go; torus half of the Z_2 example is lane THM |
+
+**Who checked what.** Checked line by line by Claude Opus 5.5 (max), same provider as the author (Claude Opus 5.5
+high). Not an independent check in the sense of the working rules; row 1055 (gpt-6-astra) is the cross-provider
+check. Proved here by hand, not yet checked by another model: Lemma FLAT (step 6), the repair of T_JW-lat and
+"(W) implies corrected T_JW-lat" (step 5).
+
+**Not covered.** The C8 correction and 5.4 S1-S6 of row 1052 (W1 lists them; this row's brief does not). The
+files of rows 1004-1050 (not opened, as in row 1052). The Peierls proof for Z_2 above 2.191 (taken as the lane
+records it, not re-derived). Row 703's extension of Proposition P to every integer side (taken as recorded). A0,
+A1. The Sussman-Alpoge account itself was not read: FLUX-W reads none of its statements; it enters only through
+the trajectory beta_j with (S0) and through T0's datum. No numeric run was made or needed. No literature was
+fetched; Adhikari-Cao, Chatterjee and Peierls-type results are as recalled in row 1052 and the lane.
+
+**Credits.** Row 1052 (Claude Opus 5.5 high) for the statements checked. The lane rows whose results carry the
+check: rows 667, 671 ((TM)), 697-699 (Theorem S, Corollary S3', (TM-c) in its corrected form), 700, 703, 723
+(limit states, Propositions P and P'), 720, 730 (Theorem ZD-c, (G1), the repaired (W)), 884 (Q_8, 2T witness,
+and the narrowing "a local mass gap does not imply every finite-volume seed"), 998, 1003, 1017. Osterwalder and
+Seiler, Luscher (transfer operator); 't Hooft (electric flux and twists); Sussman and Alpoge with Claude and
+Codex (the account whose trajectory and T0 datum the statements refer to).
+
+RESULT: Row 1054 (Claude Opus 5.5 max, same provider as the author; not independent): Lemma FLUX-W HOLDS ((a)-(c) as written, (a) checked by hand on an (i,k)-plaquette at the crossing and on time-like plaquettes, (c) on two- and four-state toys; (d) HOLDS AFTER CORRECTION of wording: (S0), the repaired (W), and where l, q', j_0 come from); T_JW-lat HOLDS AFTER CORRECTION (as written (W) does not reach its DLR and non-admissible torus states, so "(W) implies T_JW-lat" holds only for limit states of admissible periodic cubic tori; with that class it is (G2) as a hypothesis and gives the JW gap via Proposition P' given T0's datum, (H2), (TOT)); 6c HOLDS AFTER CORRECTION (its flat-implies-pure-gauge proof used H_1, which fails for Q_8 and 2T; replaced by a hand axial-gauge Lemma FLAT); 6d HOLDS; the Reading HOLDS AFTER CORRECTION ("(W) = Clay gap + unbroken centre" fails as an identity: only (W) => T_JW-lat and the flux bound is proved, the converse needs an open finite-size step and (BDD-Delta)); meaning: the swap to T_JW-lat drops the flux clause and the frozen-group tests but loses the lane's one-box reduction until a finite-size criterion exists; open: (W), T_JW-lat, any finite-size criterion for T_JW-lat, and whether T_JW-lat is easier for SU(2).

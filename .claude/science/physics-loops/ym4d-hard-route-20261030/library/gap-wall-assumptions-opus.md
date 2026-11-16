@@ -33,6 +33,8 @@ Provenance note. Before the row was read, the worker read `GOAL.md` in full (the
 - `assumption-import-audit.md`, `RULES.md`, `research.md`, `check.md`, `SKILL_FRESHNESS_CHECK.md`: fetched, not read in full (skill freshness: the row pins 8b11ae2bb9, so that revision is used for skill and references alike).
 - FINISH.md was read only in its row 1052/1053 lines and the procedural sections "Working efficiently" and "Rules" (lines 320-351) and the line 64 "Build on published work" item before step 5. GOAL.md was read in full before the row (see provenance note).
 - Literature in steps 2-4 is from statements of results only, mostly `recalled` (not re-read in this run) unless a page is named.
+- Step 5 searched only the target folder; open PR branches (#10114, #10133, #10134, #10141, #10144) were not searched, so "found again" and "not found" are scoped to the folder. `library/gap-dichotomy.md`, `gap-crux-exercise4-max.md`, `gap-direction3-max.md`, `gap-assume-opus.md`, `gap-outside-box-max.md` were read in part (line ranges in step 5); rows 1004-1050's own files were not opened (their verdicts taken from `parts/gap.md` L136-150).
+- No new literature search was run (the lane's record was reused); no numeric run was made.
 
 ### Status block (one line per plan step)
 
@@ -42,8 +44,8 @@ Provenance note. Before the row was read, the worker read `GOAL.md` in full (the
 4. done: 62 assumptions in six groups (a1-a8, b1-b13, c1-c12, d1-d9, e1-e12, f1-f8), each with if-wrong; ranked; owner-decision rows f1, f2, f4, a1, a2, a8, c1.
 5. done: lane read (parts/gap.md in full; dichotomy, exercise4, direction3 in part; row 838 assumptions exercise found and read in part). Almost every item found again; C8 corrected (2D O(N) gap now has posted proofs); added: the JW-versus-(W) list S1-S6 (W asks for more than the JW gap: bare Wilson, every lattice, periodic all-sector flux half, bounded Casimir free energy).
 6. done: every test re-judged against the JW target (T_JW, T_JW-lat); U(1), photon, products (incl. ordered Ising via uniqueness), D2, SUB, SHEET bind it; frozen Z_2, Q_8, 2T do not (flat fields on Z^4 are pure gauge: argued); no verdict changes (the methods those tests killed fed the flux half or torus steps).
-7. not done.
-8. not done.
+7. done: nine routes Q1-Q9; all but Q7 found again or held (Q1 by rows 1051, 1053); Lemma FLUX-W proved by hand (unchecked): (W) forces every electric flux energy of every large periodic cube above the gap, i.e. (W) = JW-type gap plus an unbroken-centre statement on tori (reading for strictness).
+8. done: report, work items W1 (check) and W2 (lead edit), RESULT line.
 
 ### Step 1 result: the exercise skill's procedure, as this run will follow it
 
@@ -525,3 +527,104 @@ A verdict changes only if its sole killing test is one that does not bind T_JW-l
 
 **Outcome of step 6: no verdict changes.** The one scope correction (frozen finite groups bind torus statements only, for a topological reason) revives no method on the lane's lists, because every method those tests killed fed the flux half or a torus even-sector step. Statement of the blockage in one sentence (6b, my wording; it agrees with the lane's at `parts/gap.md` L44-46): at the one scale where no expansion parameter is small, a tool must give an inequality that fails for every model with SU(2)'s local kinematics plus a massless or degenerate sector (compact U(1), the photon, products with massless or ordered factors), and every inequality proved at that scale so far either holds in those models too or needs a small number.
 
+### Plan step 7 = skill steps 7-8: routes, kill tests, real attempts
+
+Rule 0a before any attack: `library/open-core.md` (564 lines) has no line for the gap lane's statements (grep "gap", "BDD-Delta", "TOT", "free boundary", "simply connected": one unrelated hit at L524). FINISH rows were searched per route below. Literature: no new search was run in this step; every source named is recalled or read through the lane's files (named). Sources: Sussman and Alpoge (the account), Balaban, and the lane rows named.
+
+#### 7.1 Routes from the top-ranked dropped assumptions and from 5.4
+
+| Route | Family (object; mechanism; terminal obligation) | Assumption dropped | What one must believe | Kill pass: found again / held / fails | Verdict |
+|---|---|---|---|---|---|
+| Q1 | infinite-volume clustering on simply connected boxes (T_JW-lat); a finite-box criterion with pinned or free boundary; a one-box mixing bound at the band | S3, b6 (periodic all-sector seed) | a box criterion exists for gauge fields with boundary data | held: route (ii), pinned cells (rows 1018-1048), the live lines of row 1051 (`gap-direction3-max.md` L20-40, running at this pin) and row 1053; free-wall engine of row 910 FAILS as a both-halves periodic-seed form (`gap-direction-check-astra.md` L295) | not attacked (held) |
+| Q2 | the continuum limit's gap without lattice uniformity; effective actions at the account's unit scale | S2, c7 | a gap argument that needs only the limit, or effective actions past first passage | found again: row 838 items 21-26 (the account ends at the unit; carrying it past first passage (EXIT) "is the crux itself") | dead as a separate route: its terminal obligation is the band again (blocked-equivalent) |
+| Q3 | choose the bare action inside the universality class | b2 | a structural property (positive characters with extra structure, exact 2D block closure, no bulk transition) that makes a selective step provable | found again as an OPEN question with no route: (UNIV-FP), `gap-next3-max.md` L282, exercise 4 input 17; Tomboulis-Kanazawa decimation line (row 1025) uses positive characters and reads one factor (Lemma FAC) | wounded: no mechanism named by anyone, me included; U(1) and product tests bind any action-choice argument that reads one factor |
+| Q4 | merge existence and gap: uniform clustering as the T0 infinite-volume input | c1 | the seed is not harder than T0's infinite-volume step | found again: row 838 items 10, 14, 37; T0 uses ergodic decomposition (PH1, CL1) | no new mathematics; an ordering and owner question (a8) |
+| Q5 | deformation (centre-stabilised small circle; fundamental or adjoint Higgs; twisted thin torus) plus continuity | a2, b11 | a continuity step with no small parameter | found again: `gap-skeleton-max.md` L8, L371, L410; `gap-outside-box-max.md` I5, I6, I11; `gap-thermpin-opus.md` L48 | FAILS as a pass of the wall (same crux), as recorded there |
+| Q6 | soft dichotomy: exclude an infrared scale-invariant limit | c3 | (LIOU) | found again: Theorem CR, (LIOU) target-equivalent given (BDD-Delta) (row 1017, 1028) | blocked-equivalent (lane's verdict) |
+| Q7 (misframing pass) | the wall is (W); the target needs T_JW. Replace "prove (W)" by "prove T_JW-lat" | S2, S3 | the excess of (W) over T_JW is a real cost | partly found (row 899 SA4: "the torus and its conserved centre charge, forced by the consumer"; row 838 item 94; EV-L) | survives as a reading; first artifact = Lemma FLUX-W below |
+| Q8 (outside lens: operator algebras) | nuclearity / split property of the limit net | - | nuclearity gives spectral information | found again: Corollary NUC, "lattice nuclearity is (BDD-Delta)" (row 1032) | no consumer for the gap |
+| Q9 (what if the target is false, e1) | a gapless SU(2)-class model with first-passage data | e1 | such a model exists | lane test-table point 5: none on record, none believed (`parts/gap.md` L242-245); the adjoint-Higgs family is used as a test of (T-pin) (row 1018, `gap-short-step-max.md` L191, L340) and lies outside the pure-gauge datum class | no candidate; not attacked |
+
+Lenses considered and found empty here (one line each): number theory and lattices (nothing in the wall is arithmetic); logic and independence (no reason to expect independence; not pursued); categories (no universal property in sight); K-theory and index (instanton sectors on file as input 15 of exercise 4, belief-grade).
+
+Ranking (change divided by cost): Q7 first (cheap, and it changes what the lane calls its target), Q1 second (most change, held by live rows), Q3 third (unknown change, no mechanism). Q2, Q4-Q6, Q8-Q9 are found again with the lane's verdicts.
+
+#### 7.2 Attempt on Q7: what (W) adds to the JW gap
+
+**Lemma FLUX-W (PROVED by hand here, unchecked; found again in substance: the seed is a trace over all states, flux sectors included, row 838 item 33, and (G1) bounds the gap of every periodic cube, `gap-dichotomy.md` L198-201).**
+Setting: Wilson SU(2) on a periodic box, spatial torus (Z/n)^3, transfer operator T on gauge-invariant L^2 of a time slice, with (TM): T positive, trace class, positivity improving, simple top eigenvalue lambda_0 with a strictly positive eigenfunction psi_0 (row 838 item 56; checked rows 698, 699). For each spatial direction i let C_i be the centre flip: multiply by -1 every link in direction i that crosses one fixed plane x_i = c.
+(a) C_i preserves the Haar measure and every plaquette trace, and commutes with T.
+(b) psi_0 is invariant under every C_i.
+(c) Write H_e, e in Z_2^3, for the joint eigenspaces (C_i psi = (-1)^{e_i} psi), and E_e := log(lambda_0 / lambda_0^{(e)}), lambda_0^{(e)} the top eigenvalue of T on H_e. Then E_e >= m := log(lambda_0/lambda_1) for every e != 0.
+(d) Hence (W) implies, through (PHYS-SEED) and (G1): for all large j and every periodic cube of side L >= l, every electric flux energy satisfies E_e >= M_* = 2 log(1/q')/l in physical units.
+Proof. (a) A plaquette contains either no flipped link, or exactly two (a plaquette in an (i, k)-plane at the crossing has its two i-links between x_i = c and c + 1); (-1)^2 = 1, so tr U_p is unchanged; Haar measure is invariant under multiplication by the central element -1. C_i commutes with gauge transformations (the centre commutes with everything), so it acts on gauge-invariant functions, and it commutes with T because T's kernel is built from plaquette weights and Haar integrals over temporal links (this is (TM-c), row 838 item 57, checked rows 698, 699). (b) psi_0 o C_i is a strictly positive eigenfunction of T with eigenvalue lambda_0 and the same norm; by simplicity it equals psi_0. (c) By (b) psi_0 is in H_0, so H_e for e != 0 is orthogonal to psi_0, and every eigenvalue of T on H_e is at most lambda_1. (d) (G1) gives (l/(2 a_j)) m_j(L^3) >= log(1/q') for cubes of side L >= l/a_j in lattice units; apply (c). QED.
+Inputs and marks: (TM), (TM-c) (lane, checked rows 698, 699); Theorem ZD-c and (G1) (row 720, cross-provider check `gap-zd-astra.md`, HOLDS conditionally). So (d) is argued given those.
+
+**Reading (not proved).** (d) is a statement that the centre one-form symmetry stays unbroken on large spatial tori: the flux sectors stay a gap away from the vacuum. The JW target does not ask for it. A gapped phase with the centre symmetry broken (a Z_2 topologically ordered phase, as in Z_2 gauge theory at large beta, gapped on Z^4 by I16 while its torus flux sectors are believed to become degenerate) would satisfy T_JW and violate (d), hence (W). For pure SU(2) such a phase is believed absent (B4), and no theorem excludes it. **So, relative to what is proved, (W) is the JW gap plus an unbroken-centre (confinement-type) statement on tori**, and the lane's registry "strength against the target" column measures against (W), not against T_JW. Mark: argued for "(W) implies the flux bound"; reading for "strictly stronger than T_JW" (the separating example is recalled, not built).
+
+What this changes: nothing in the lane's mathematics; it changes the label. A route whose terminal obligation is T_JW-lat is weaker than (W) in the sense of the governance test, by exactly the flux clause, and the frozen-group tests do not bind it (6c). Whether T_JW-lat is easier for SU(2) is unknown: it keeps every theorem-grade test except the frozen groups.
+
+#### 7.3 Attempt on Q1 at its first test: not run (held)
+
+Q1's first test would be: on a simply connected spatial box with pinned (Dirichlet) or free boundary, does a one-box mixing bound at the band follow from any input that fails for compact U(1) and for products with a massless factor? This is exactly the open line of rows 1051 and 1053 (pinned-cell response, (N1), (O1), and the one-annulus twist estimate of OpenAI's O(n) paper as row 1051 reads it, `gap-direction3-max.md` L29-40). Stopped by rule 0a: held by row 1051 (running at this pin) and row 1053 (queued). No attack.
+
+#### 7.4 What was not attempted, and why
+
+- Q3 (action choice): no mechanism to try; the cheapest first test is to name one structural property of a positive-character SU(2) weight that (i) fails for compact U(1) with the same structure, (ii) survives no tensor product with a massless factor, (iii) has a consumer in the engine. Waiting on: an idea, not a computation.
+- Q9 (target false): no candidate model; the cheapest first test would be a theorem-grade gapless model in the pure SU(2) datum class with first-passage data; the lane records none (L242-245).
+- No numeric run was made in this row (none was needed to refute or guide any statement above; memory was 72 percent free at the start).
+
+### Plan step 8 = skill step 9: report
+
+#### 9.1 The wall, in plain words (step 1's version, corrected)
+
+We want a written proof that the simplest relative of the theory of gluons (SU(2), four dimensions) exists, obeys the rules of relativistic quantum theory, is genuinely interacting, and has a mass gap: every excitation costs at least a fixed energy. Proofs exist for coarse lattices at strong coupling and for short distances; nothing proved covers the distances in between, where no quantity is small. The lane has turned the gap into one statement, (W), about lattices on periodic boxes. This run found that (W) asks for a little more than the gap itself: it also asks that the "flux" states that exist only on a periodic box stay heavy, which is a confinement-type statement the Clay problem does not require. (No blind check of this paragraph was possible: no subagents.)
+
+#### 9.2 What the exercise found
+
+1. Steps 2-4 were written from the target alone: a 34-item marked inventory, 14 nearest models, 11 conclusions and 62 assumptions in six groups, each with what follows if it is wrong. Step 5 found that the lane's earlier exercises (rows 712, 750, 838, 878, 899, 998, 1003, 1004) already hold almost all of it, with what-if-wrong entries. **This run mainly found again a map that the lane already had.** (reading)
+2. One inventory item was wrong: the two-dimensional O(N) gap is no longer an open calibration; two posted, unrefereed proofs exist (lane, `parts/gap.md` L95-96). Corrected in place (5.1).
+3. Measured against the Clay target rather than against itself, the lane's wall (W) adds four requirements: the bare Wilson action, a gap on every lattice of the sequence, periodic boxes with all flux sectors, and a bounded Casimir free energy (5.4 S1-S6). (reading, each item cited)
+4. Lemma FLUX-W (proved by hand, unchecked): (W) forces every electric flux energy of every large periodic cube above the gap. So (W) is the gap plus an unbroken-centre statement on tori; the Clay target needs only the gap. (argued given the lane's (TM), (TM-c), Theorem ZD-c)
+5. Frozen finite gauge groups (Z_2, Q_8, 2T) obstruct only statements made on periodic boxes, because their extra flat states are holonomies around the box's cycles; on simply connected regions every flat field is a pure gauge (proved here in three lines). Against the R^4 gap they are positive controls. This narrows a filter's scope but revives no set-aside method (6d). (argued)
+6. No route was found that the lane does not already hold. The highest-value open line (a one-box estimate on simply connected pinned boxes) is held by rows 1051 and 1053.
+
+#### 9.3 Filters corrected
+
+- Frozen Q_8, 2T (and frozen Z_2): valid tests only of statements on periodic boxes (torus even-sector or all-sector); not tests of a tool whose conclusion is infinite-volume clustering or the R^4 gap. Reason: flat lattice fields on a simply connected region are pure gauge (6c). Range: all couplings. What comes back: nothing on the lane's lists (6d).
+- No other verdict changes.
+
+#### 9.4 Routes worth doing (at most three)
+
+1. **Relabel the lane's target column (Q7).** Believe: the excess of (W) over T_JW (the flux clause) is a real cost. Cost: a lead edit plus a short note. First test: state T_JW-lat in the registry with Lemma FLUX-W and the 6c scoping, and re-mark each family's "strength against the target" against T_JW-lat. Changes: which families are "stronger than the target"; no mathematics.
+2. **Q1, the simply connected one-box estimate.** Held by rows 1051 and 1053; nothing to add here except that its target should be T_JW-lat (no flux clause), so the frozen-group tests do not apply to it and only the U(1), photon and product tests do.
+3. **Q3, the choice of action (UNIV-FP).** Believe: a structural property of some positive-character SU(2) weight in the Wilson universality class has a consumer in an engine and fails for U(1). Cost: unknown; no mechanism exists. First test as in 7.4. Changes: possibly the whole band, if a property is found.
+
+#### 9.5 What not to do next
+
+- Another first-principles assumptions exercise on this wall: this one and row 838 cover the same ground; the yield of a further one is a map found again.
+- Re-deriving the field-wide assumptions (lattice, Wilson, Euclidean, RG frame, order of existence and gap): all are on file with what-if-wrong entries (5.3).
+- A deformation route (small circle, Higgs, twisted thin torus) as a pass of the wall: its continuity step is the same band (lane verdict FAILS, same crux; 7.1 Q5).
+
+#### 9.6 The exact price
+
+Not sharpened beyond the lane's (`parts/gap.md` L246-257). One addition, by Lemma FLUX-W and 6c: the Clay gap needs the lane's price **minus** the flux clause; i.e. the open input is a uniform-in-the-cutoff clustering rate for infinite-volume states at one physical scale (T_JW-lat), which the lane's (W) implies and which the frozen groups do not test. Whether T_JW-lat is easier than (W) for SU(2) is open.
+
+#### 9.7 Work items
+
+- **W1 (check request; first).** A model that did not write this file (another provider preferred) checks: Lemma FLUX-W (a)-(d) (7.2); the flat-implies-pure-gauge proof and the 6c table's T_JW column (6c); the correction of C8 (5.1); the claims of 5.4 S1-S6 against their cited lines. Files: this file, `library/gap-dichotomy.md` L73-212, `parts/gap.md` L1-257, `library/gap-assume-opus.md` items 2, 3, 23, 24, 33, 52, 94. Stop rule: a verdict per statement. Output: `library/gap-wall-assumptions-check.md`.
+- **W2 (lead edit, if W1 holds).** In `parts/gap.md`, add T_JW-lat beside (W) under Formulation and a note to the test-table row "Frozen Q_8, 2T" that the binding is torus-only, with the reason. Output: the lead's own edit.
+- Not proposed: a proof row on Q3 (no mechanism); a row on Q9 (no candidate); any deformation row (found again, same crux); a new exercise (9.5).
+
+#### 9.8 Appendix: short lists
+
+- **Assumptions most likely to be wrong (as necessities of a proof of the Clay gap):** (1) the gap must go through a periodic-box seed with all flux sectors (S3; Lemma FLUX-W); (2) the gap must hold uniformly on every lattice of the bare sequence, not only in the limit (S2); (3) the bare action is Wilson's (b2); (4) existence first, gap after (c1; and the gap leg waits for T0's (H2), (TOT)); (5) the band can only be crossed by a seed carried by a doubling engine (c3; the 2D O(N) proofs cross their band by one mixing bound at a fixed bare coupling, `parts/gap.md` L96).
+- **Most expensive if wrong:** e1 (the gap is true), e4 (asymptotic freedom holds non-perturbatively along the trajectory), e3 (no bulk transition on the Wilson axis).
+- **Literature proofs worth translating:** none new; the lane's list stands (OpenAI's O(n) one-annulus estimate, as row 1051 reads it).
+- **Who checked what:** nothing here is checked. Proved by Claude Opus 5.5 (high), not yet checked: Lemma FLUX-W, the flat-implies-pure-gauge step, facts A0, A1, A2.
+
+#### 9.9 Strong words, read against the run
+
+"found again" is backed by the greps and file lines named in 5.2-5.3 over the target folder only (open PR branches not searched). "No route the lane does not already hold" means none in 7.1's nine routes, not none at all. "Strictly stronger" is marked reading, because the separating example is recalled (Z_2 at large beta), not built. "Every electric flux energy" in Lemma FLUX-W means every e != 0 in Z_2^3 on periodic cubes of side at least l, for all large j.
+
+RESULT: Row 1052 (Claude Opus 5.5 high, unchecked): the first-principles exercise (inventory, 62 assumptions with what-if-wrong, Elon pass) mainly found again the lane's map (rows 712-1004, 838 above all); C8 corrected (2D O(N) gap now has posted proofs); PROVED by hand: Lemma FLUX-W ((W) forces every electric flux energy of large periodic cubes above the gap, so (W) = the Clay gap plus an unbroken-centre statement on tori) and that frozen Z_2, Q_8, 2T bind only periodic-box statements (flat fields on simply connected regions are pure gauge), which revives no set-aside method; no route outside the lane's held lines (Q1 is rows 1051, 1053). Five assumptions most likely wrong, and what each opens: (1) the periodic all-sector seed: dropping it gives T_JW-lat, weaker by the flux clause and free of the frozen-group tests; (2) uniformity on every bare lattice: the limit alone suffices, opening arguments after T0; (3) Wilson's action: the action is free in the universality class (UNIV-FP), opening a designed action, no mechanism yet; (4) existence before gap: uniform clustering would also give T0's infinite-volume uniqueness; (5) a seed carried by a doubling engine: the 2D O(N) proofs cross their band with one fixed-coupling mixing bound, the line rows 1051 and 1053 hold. Open: (W), T_JW-lat, whether T_JW-lat is easier than (W) for SU(2).

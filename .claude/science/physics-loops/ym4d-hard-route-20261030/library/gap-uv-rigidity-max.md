@@ -36,8 +36,8 @@ skill's steps are now folded in; still eight steps).
 2. Inventory and reasoning up: **done** (Section 2). PROVED here: Lemma ALPHA, Corollary KEPT, Lemma REC (link (b)).
 3. Task (1): **done** (Section 3). Link (a) FAILS as a kept condition (counterexample TS, PROVED); for a value outside [d_min, D_0] it is equivalent to (W) given (BDD-Delta) (PROVED); CE cannot be strengthened to keep it (Proposition TWO, Lemma EXCL, PROVED).
 4. Task (3): **done** (Section 4). PROVED: Lemma FV (on a fixed lattice torus D(n; beta) >= (3/2) log beta - 59 n^4 - 11 for SU(2), beta >= 16: the free value is infinite); Proposition FRZ (frozen values log 8, log 92, log 244); Proposition CONST (a constant c is a critical element iff c = log m).
-5. Task (4): not started.
-6. Routes and attempts: not started.
+5. Task (4): **done** (Section 5). The chain is a sound tool in the valid form and passes every control; it proves nothing for SU(2), because its hypothesis (a) is the wall there. U(1) with beta_j -> infinity and five dimensions sit in branch (II) (GUIDE), a correction to row 1017's table.
+6. Routes and attempts: **done** (Section 6). The surviving link is (b); its lemma is proved (REC, REC+). Five routes from the corrected picture; none survives as a route to (LIOU); the family is blocked-equivalent.
 7. Second pass: not started.
 8. Report: not started.
 
@@ -734,3 +734,173 @@ counts. Readings written in the script before the first run; all PASS on the fir
 
 What the run can establish: that the hand counts and these inequalities are not false at the tested points. It
 does not prove Lemma FV, and a pass is no proof of any inequality on its whole range.
+
+## 5. Step 5 result (Task 4): the controls; assumptions; the discard tests in their valid form; comparison
+
+### 5.1 The chain as a tool (skill step 6c)
+
+In the skill's words a tool is a hypothesis H with a written proof of "H(M) implies T(M)" on a class K. For the
+lead's chain: K = families of data with units and a bound D_0. H_a(M; c) = (UV-KEPT; c) of 3.1. T(M; c) = "every
+uniformly recurrent element of Omega(M) has D = c at every scale; so (LIOU) for M holds if and only if Omega(M) has
+no uniformly recurrent element with D = c". The proof of "H_a implies T" is Lemma REC with Corollary KEPT (PROVED).
+So the chain is a sound tool. A control refutes it only if H_a is true and T is false there. A control where
+(LIOU) is false and H_a is true tells what the last step (the exclusion of the D = c elements) must use.
+
+### 5.2 The controls
+
+| Control M' | Its ultraviolet (free) value | Its limit set | H_a(M'; c) | T(M'; c) | Verdict |
+|---|---|---|---|---|---|
+| **Compact U(1) at one coupling** (Villain, beta >= 2^14; the constant family) | finite: about (3/2) log beta + O(1) at every size (ARGUED: Lemma FV's count for U(1); the Gaussian part of the Villain model has exactly this power of beta; not written out) | the photon limit, D = c_inf(beta) := lim of D(n; beta), if D is bounded and converges (BELIEF, I10) | true with c = c_inf(beta), because the model is scale-invariant in the infrared; the lattice value D(3; beta) differs from c_inf by lattice terms | true: the uniformly recurrent element has D = c_inf; (LIOU) is false and the element with D = c exists | The chain does not fail and does not prove too much. It ends at an element that exists. For U(1) the last step is false. |
+| **Compact U(1) along beta_j -> infinity** (the T_W form of the test table) | +infinity (Lemma FV for U(1), ARGUED, at fixed n) | empty for every D_0, if D_j(L/a_j) is about (3/2) log beta_j at every size (GUIDE) | vacuous | vacuous | Not a test of the chain or of (LIOU). The family has no seed because (BDD-Delta) fails: branch (II) of Corollary TRI. |
+| **Frozen Q_8, 2T at large beta** (constant family) | log 92, log 244 at every size as beta -> infinity (PROVED, Proposition FRZ) | the constant log m(G) (BELIEF: a Peierls statement; THM in the lane for Z_2 with log 8) | true with c = log m(G): here the free value is literally kept | true: the constant log m(G) is the recurrent element; (LIOU) is false | The chain ends at the constant log m(G), which is a critical element (Proposition CONST). The engine, the centre grading and the spectral clause do not exclude it. |
+| **Product SU(2) x (massless factor)** (the family A_(m,eps), or the photon at one coupling) | that of SU(2) plus a constant; +infinity on a fixed lattice (Lemma FV) | not empty: the factor's limit if SU(2) has a seed; sums otherwise (Lemma PT-inf) | false with the ultraviolet value (Corollary KEPT (4)) | not tested | It binds every proof of (a): the product has the same ultraviolet law as SU(2) and (a) is false for it. So a proof of (a) must read the whole state space (rule W2). |
+| **The family TS** (3.5) | log(m_0 p), on any number of doublings above the unit | {log m_0} | false | not tested | (a) is not a consequence of the kept properties and an ultraviolet value. PROVED. |
+| **SU(2) in five dimensions, weak coupling** (`gap-crux-fp.md` F15, L50, L76: GUIDE; one coupling) | +infinity: D(n; beta) >= 2 log beta - C(N) (ARGUED, remark 3 of 4.1) | empty for every D_0, if D(n; beta) is about 2 log(beta n) (GUIDE: the coupling of the constant modes at the size n is 4/(beta n)) | vacuous | vacuous | Not a test of the chain or of (LIOU). It tests (BDD-Delta): the weak-coupling phase has an unbounded Casimir free energy, branch (II). A proof of (BDD-Delta) must use the dimension. |
+
+**What separates SU(2) inside the chain.** Only the free value: finite for U(1) at one coupling and for the frozen
+groups (and then realised by a critical element), infinite for SU(2) (Lemma FV). No proof can use this, because for
+an infinite value link (a) is the wall (A1 (3)).
+
+**Correction to row 1017's table (R L294, L300), at GUIDE grade.** R lists "Compact U(1), Villain, beta_j -> infinity"
+and "SU(2) Wilson in five dimensions, weak coupling" as families with a non-empty limit set "if D is bounded". By
+the count of Lemma FV, D is not bounded there: both sit in branch (II). The family with a photon limit is U(1) at
+one coupling. This changes no theorem of R. It changes what these two controls test: the hypothesis (BDD-Delta),
+not (LIOU). Both statements (R's and this one) rest on beliefs about the models; neither is proved.
+
+**A reading that the controls suggest (reading; on record as Observation SCH of row 1004,
+`library/gap-outside-box-max.md` L127).** At weak coupling D is (3/2) log of the inverse coupling of the constant
+modes at the size of the torus. In this reading the three branches of Corollary TRI are: (I) the coupling grows
+without bound and D falls to 0; (III) the coupling stalls and D stays in [d_min, D_0]; (II) the coupling returns to
+weak at large sizes. Five dimensions and U(1) with beta_j -> infinity are of kind (II), U(1) at one coupling of kind
+(III).
+
+### 5.3 Assumptions of the lead's reading (skill step 4)
+
+| ID | Assumption, in plain words | Where | Needed or habit | If it is wrong | Check |
+|---|---|---|---|---|---|
+| R1 | The small-scale end of a limit object shows the small-size behaviour of the theory | link (a) | needed by the chain | the chain has no ultraviolet input | **wrong**: Lemma ALPHA (PROVED) |
+| R2 | The free value c is a finite number | links (a), (c) | needed by (c) as "one element to exclude" | with c infinite, (a) is the wall and (c) is empty | **wrong for SU(2)** on a fixed lattice: Lemma FV (PROVED); I8 at fixed physical size (GUIDE) |
+| R3 | A recurrent element with a limit at one end is constant | link (b) | needed | - | right: Lemma REC (PROVED) |
+| R4 | After (b), one element is left to exclude | link (c) | needed by the plan | a family is left | wrong for finite c (4.4, remark); empty for infinite c |
+| R5 | The engine's axioms, the centre grading or the spectral clause might exclude a constant | link (c) | hope | nothing excludes it | they exclude a constant c iff e^c is not an integer >= 2: Proposition CONST (PROVED) |
+| F1 | "Ultraviolet normalisation" can be read off D on symmetric tori | 3.1 | a choice | another functional Lambda | Corollary KEPT holds for every continuous Lambda |
+| F2 | The trajectory's unit (first passage at one g) marks a size that is "ultraviolet" | row text | habit | by the dilation identity (PS L66) every admissible g' gives another unit; (a) with the value at L_1 and at 2 L_1 forces D^+(L_1) = D^+(2 L_1) | 4.2 |
+| F3 | Dyadic sizes are enough | R | needed by the method (Theorem S doubles) | a finer grid changes no statement here | none needed |
+| B1 | (BDD-Delta) holds for SU(2) | everywhere | belief; needed by Theorem CR | branch (II) | open (I7) |
+| B2 | Asymptotic freedom separates SU(2) from the photon | the lane | belief with a proved fragment (Lemma FV) | - | it separates them at the ultraviolet end only; ALPHA shows that end is not in Omega |
+| W1 | No computer-assisted step; rule 0a; rule W2 | GOAL.md, FINISH | owner rules | not questioned beyond paper | obeyed |
+
+**Ranking** (by how much the question changes if the assumption is dropped): R1, R2, R4, F2, B1. With R1 dropped the
+lane would stop looking for ultraviolet conditions on limit objects. With R2 dropped (a) is read as the wall. R4:
+the last step is a family, so "exclude one element" is not a plan. F2: no size is singled out. B1 is the other open
+half of the wall and is not touched by this row. None of these changes an owner decision.
+
+### 5.4 Set-aside statements that this question touches, re-judged (skill steps 6a, 6d)
+
+| # | Statement (author) | Reason given there | Where | Re-judged here |
+|---|---|---|---|---|
+| 1 | "No boundary condition at one end of the scale axis is a kept property" (row 1017) | Proposition SI and CE (d) | R L282 | **wrong as a blanket sentence** (CA item 20, CO D14). Corrected form, PROVED here: an asymptotic condition at minus infinity is kept if and only if it holds on the set A inside Omega (Corollary KEPT); for uniformly recurrent elements a condition at one end is a condition on the whole orbit (Lemma REC (iv)). The conclusion that the ultraviolet normalisation is not kept stands, by Lemma ALPHA, for every ultraviolet value that D does not take on Omega. |
+| 2 | (R2-blow) "no critical element is asymptotically free at small scales: PROVED, and useless" (row 1017) | SI and CE (d) | R L318 | valid in the corrected form: it is Corollary KEPT (4) with CE (d). |
+| 3 | (R2-two), first form: "this is (W) word for word" (row 1017) | reading | R L319 | valid; now a proved equivalence with its limit set (Corollary CR-1). |
+| 4 | (R2-two), third form: "an o(1) quantity must be carried across all scales ... by a monotone"; Remark MON, ARGUED (row 1017) | - | R L284, L319 | valid; PROVED for omega(E_c) and a monotone functional (Proposition MON+). The monotone itself stays open. |
+| 5 | Row 1017's test rows for U(1) with beta_j -> infinity and for five dimensions | "if D is bounded" | R L294, L300 | valid as conditionals; the condition is believed false (5.2). They test (BDD-Delta). |
+| 6 | Soft exclusion of branch G, "no contradiction follows from the two ends alone" (row 988 Route 3; re-judged "too strong" by row 998) | w_p, U(1) | `parts/gap.md` L64, L68 | valid as reported for class-wide statements; not re-derived. The family TS is one more example with both ends prescribed. |
+| 7 | The lead's reading (a)-(b)-(c) (row 1028) | to test | FINISH L1109 | (b) valid (PROVED); (a) target-equivalent for SU(2) and false in the class; (c) a family for finite c, empty for infinite c. |
+
+**The blockage in one sentence (6b).** A limit object of the trajectory is made of infrared scales only, and the one
+object that has both ends, the continuum datum itself, is not recurrent; so ultraviolet knowledge can reach the
+limit objects only by being carried along the trajectory across every scale, which is the selective step the lane
+does not have.
+
+### 5.5 Comparison with the earlier work (skill step 5)
+
+Search scope for every mark: `grep -l -i -E` over `library/gap-*.md`, `library/prior/gap-*.md`, `parts/gap.md` for the
+patterns "alpha-limit|omega-limit|heteroclinic|two-ended", "toron|constant mode|zero mode", "commuting
+(triple|4-tuple|tuple|quadruple)|Hom\(Z", "log 92|log 244| 736|5856", "(3/2) log beta|kappa = 3|3 log(1/g|log log
+beta", "plateau", "free value|ultraviolet value|UV value"; the hit lines of the files named below were read. Not
+searched: `origin/main` and the open PR branches (not refs of this checkout); files outside this folder.
+
+| Item of this run | In the earlier work? | Where | Note |
+|---|---|---|---|
+| Lemma ALPHA, Corollary KEPT | partly | CO D14 (L203): "the small scales of a blow-down limit are large physical sizes of the trajectory"; CA item 20 | The reason is CO's sentence. The statement with alpha(E), the equivalence (1), and (4) were not found. |
+| Lemma REC (link (b)) | new in the files searched | the row states it as a guess | - |
+| Proposition A1 (3): (a) with a value outside [d_min, D_0] is the wall | partly | CA L401-403: "If a specified UV law forces D to diverge at small scales, CE's uniform bound excludes that law" | CA has the exclusion; the equivalence with (W) is the addition. |
+| Proposition TWO, Lemma EXCL, Corollary CR-1 | partly | R L221 ("that object is the theory itself"), R L319 (R2-two) | Row 1017 named the object; the statements and proofs are here. |
+| Proposition MON+ | yes, as ARGUED | Remark MON, R L284 | found again; now with a proof for omega(E_c). |
+| The family TS | yes in substance | Lemma PT-inf (ii), R L260; Proposition NP (row 1003) | an abstract form of a known device; credit rows 1003, 1017. |
+| The count (3/2) log beta, kappa = 3 | yes, as GUIDE or ARGUED | PS L109, L192 (row 720); `gap-outside-box-max.md` L127, L408 (row 1004), its check L422, L447: "neither count is checked" | **Lemma FV is the proof of the lower half.** A proof was not found in the files searched. |
+| Proposition FRZ (i)-(iii), the formula log(abs(Hom(Z^4, G))/abs(G)) and Burnside | yes | gpt-6-astra, `gap-crux-skeleton-check-astra.md` L305 | found again; credit that check. |
+| The numbers 92 and 244 | not found in the files searched | - | new within the search scope; guard run G1 agrees. |
+| Proposition CONST | yes | CO 6.4 (L172) | found again, written out. |
+| "D is a coupling"; the three branches as three behaviours of it | yes | Observation SCH, row 1004 | found again. |
+| U(1) with beta_j -> infinity and five dimensions sit in branch (II) | not found | R L294, L300 say the opposite as conditionals | new reading, GUIDE grade. |
+
+**What the fresh pass added:** Lemma ALPHA and Corollary KEPT (the exact form of CA's item 20); Lemma REC;
+Proposition TWO with Lemma EXCL and Corollary CR-1; Lemma FV; the numbers 92 and 244; the place of two controls in
+branch (II). **What it only found again:** the count kappa = 3, the frozen formula, the constants log m, Remark MON,
+the device behind TS, the reading of D as a coupling.
+
+## 6. Step 6 result: routes and attempts (skill steps 7 and 8)
+
+### 6.1 Target contract (governance format)
+
+Target: (LIOU) (R L288), equivalent to (W) given (BDD-Delta). Quantifiers: one trajectory of the account; every
+uniformly recurrent element of Omega(D_0), D_0 a (BDD-Delta) bound. Allowed premises: the lane's checked statements,
+the account as cited, published theorems rebuilt or named. Forbidden weakenings: a statement for one factor of the
+state space; a hypothesis with a supremum over tilts or coupling fields; a computed number. Required cases: U(1),
+frozen Q_8 and 2T, products, five dimensions. Completion: a proof of (LIOU), or an exact equivalent of a link, or a
+counterexample to a link. Not closure: a renamed crux.
+
+### 6.2 The link that survives, and its lemma
+
+Link (b) survives. Its lemma is Lemma REC (2.4), proved by hand. One sharpening follows at once.
+
+**Lemma REC+ (PROVED).** Let E be a uniformly recurrent element of Omega and Lambda continuous on Omega. If
+Lambda(sigma^(t+1) E) <= Lambda(sigma^t E) for all t <= t_0, or for all t >= t_0, then Lambda(sigma^t E) is the same for
+every integer t.
+
+Proof. Lambda is bounded on Omega, so the monotone sequence has a limit at that end. Lemma REC (i) or (ii). QED
+
+This is Proposition OM (e) with a weaker hypothesis: monotony along one orbit near one end, in place of monotony on
+all of Omega. It is on the path only if a monotone is found; none is on record for the doubling of all sides.
+
+Links (a) and (c) do not survive: 3.7, 4.5. The counterexample to (a) is the family TS (3.5).
+
+### 6.3 Routes that the corrected picture suggests, each tried against the lane's tests
+
+Passes of this one session; they are not independent. One pass used a lens from outside the lane (topological
+dynamics: alpha and omega limit sets, Lyapunov functions); one pass argued that the question is misframed.
+
+| Route | Object and mechanism | What you would have to believe | Kill pass | Verdict |
+|---|---|---|---|---|
+| U1, a conserved functional | a continuous Lambda with Lambda(sigma E_c) = Lambda(E_c) along the continuum datum; then Lambda = Lambda_UV on omega(E_c) (MON+ with equality) | that the torus datum of SU(2) has an exactly scale-independent number whose ultraviolet value no critical element has | The known scale-independent data of a field theory are anomaly-type data; they add over decoupled factors, and they prove masslessness, not a gap. No candidate. The product with a massless factor has the same ultraviolet law and a non-empty limit set, so the functional must not be additive (rule W2). | dead: no candidate |
+| U2, a monotone | MON+ with a non-increasing Lambda; needs Lambda_UV below Lambda on every critical element | a monotone for the doubling of all four sides | For Lambda = D the ultraviolet value is +infinity (Lemma FV), so the inequality c_IR <= D_UV says nothing: in the functional D, asymptotic freedom gives the worst ultraviolet bound. For the a-function the photon lies below (row 1002). (MONO-Delta) is held by earlier rows. | blocked-equivalent; not attacked (rule 0a) |
+| U3, a law at every scale | a closed condition on the datum at one scale that every SU(2) lattice satisfies at every size (so it is kept, Proposition SI) and that critical elements violate | a selective inequality at order-one coupling | Tried one candidate: "the twisted torus has a Casimir free energy bounded below", log Z^(1 nu)(n) >= f abs(n) - C. By the counts of Lemma FV it separates SU(2) (twisted flat connections exist, the ratio falls like beta^(-3/2)) from U(1) (the Z_2 twist costs an action of order beta) at weak coupling: GUIDE. But it reads the SU(2) factor only: SU(2) x photon satisfies it whenever SU(2) does. By rule W2 it cannot give (LIOU). Not proved, not pursued. | dead by rule W2 (the candidate); the family is the wall ((K-one) or (K-flow) of `parts/gap.md` L47-50) |
+| U4, pin the limit by recurrence alone | Lemma REC (iv): the two ends of a recurrent orbit carry the same information as the whole orbit | that recurrence with the engine forces a contradiction | The constants log m are recurrent and satisfy everything (R, Proposition NR). | dead (found again) |
+| U5, misframing pass | "The ultraviolet end is not part of any limit object. The question that replaces (a): which statement at finite sizes above first passage forces a seed after boundedly many doublings?" | - | This is (CAS) of row 708 and the (K-flow) input of `parts/gap.md` L47-50. Proposition NP binds every form that reads finitely many values of D. | found again; nothing new |
+
+**Outside lens, one remark (recalled, not used in a proof).** For a homeomorphism of a compact metric space Conley's
+theorem gives a continuous function that falls strictly along every orbit outside the chain-recurrent set and is
+constant on each chain component. So on Omega a Lyapunov function always exists, and it is constant on every
+uniformly recurrent orbit. A monotone can order the critical elements; it cannot exclude one. This agrees with
+Theorem CR (5) and with Way 3 of row 1017.
+
+### 6.4 Attempts made in this run (skill step 8)
+
+| Attempt | Result | On the path of the target? |
+|---|---|---|
+| Prove link (b) | PROVED: Lemma REC, REC+ | on the path only with a monotone or a kept limit |
+| Prove or refute link (a) | refuted in the class (TS); for SU(2) reduced to an exact statement: equivalent to (W) for an ultraviolet value outside [d_min, D_0] (A1 (3)); an infrared plateau statement otherwise (A1, A2) | this prices the route: target-equivalent |
+| Strengthen CE to keep the ultraviolet data | impossible in the sense of Corollary A3: Proposition TWO, Lemma EXCL | - |
+| Compute the free value | Lemma FV (lower bound, PROVED); frozen values (PROVED) | off the path (the ultraviolet end is not in Omega) |
+| Decide whether the constant element is excluded | Proposition CONST: not excluded for c = log m; no element for c infinite | - |
+| One candidate kept law (U3) | not selective against products; dropped | - |
+
+No route was left untested for lack of budget. No numeric test bears on a verdict; the guard run of 4.6 is the only
+run.
+
+### 6.5 Registry entry for this family (governance words; for the lead; I do not edit `parts/gap.md`)
+
+| Route | Object | Mechanism | Terminal obligation | Strength | Status | Evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| RH-uv, a kept ultraviolet condition on blow-down limits (sub-family of RH of row 1017) | elements of Omega(D_0) and their minus-infinity end | asymptotic freedom as a boundary condition, then recurrence (Lemma REC) | (UV-KEPT; c) | target-equivalent for c outside [d_min, D_0] (Proposition A1 (3)); an infrared plateau statement for c inside | blocked-equivalent | Lemmas ALPHA, REC, EXCL; Corollary KEPT; Propositions A1, A2, TWO, MON+; the family TS; Lemma FV (this file, unchecked) | a functional of the torus datum that is conserved or monotone along the continuum datum of the trajectory, whose ultraviolet value lies outside its range on critical elements, and which is not additive over decoupled factors |

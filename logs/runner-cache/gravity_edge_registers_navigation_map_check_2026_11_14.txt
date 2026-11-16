@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/gravity_edge_registers_navigation_map_check_2026_11_14.py
+runner_sha256: 420351d9f1f347943195b145208bf59d7a620e87f8b2ac25126af8a96381ceea
+input_fingerprint_sha256: 81e0adb70c2ab09bf58f5b3d22afede6bb98880cedc5b752a4e8c992a79ce185
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+Navigation map check: gravity-edge-registers carried notes
+==============================================================================
+[PASS] the map is typed meta (a navigation map, no science of its own) -- meta
+[PASS] the map has 16 'Carried notes' sections, each naming one carried note -- 16
+[PASS] each carried note appears exactly once and no other note is named
+[PASS] each section quotes its carried note's current claim_scope verbatim -- 16 of 16 match
+[PASS] every repository link in the map resolves -- 34 links
+[PASS] the logged-notes table lists 26 source notes -- 26
+[PASS] control rejects mutant: a quotation with its last word dropped
+[PASS] control rejects mutant: one carried section duplicated
+[PASS] control rejects mutant: one repository link broken
+
+SUMMARY: PASS=9 FAIL=0
+Scope: the map's type, quotations, coverage, links and logged-table size. The carried notes' science is checked by their own runners.
+
+----- stderr -----
+

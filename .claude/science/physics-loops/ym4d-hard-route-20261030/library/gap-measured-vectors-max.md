@@ -145,3 +145,42 @@ These came from my own derivations, not from the literature list. Each was deriv
 | The two banks nearly meet in physical units: Schrodinger-functional perturbation theory is quantitatively valid up to box side about 0.6/T_c (recalled: Luscher, Sommer, Weisz and Wolff), and the Wilson lattice is inside the proved strong-coupling range (beta <= 1.0109) at spacing about 0.84/T_c | a sqrt(sigma) = 0.69 at beta 2.0 (row 1064); my extrapolation to beta 1.0 uses leading strong coupling (a guide of low quality) | In form: C10 of row 1063, (CAS) "on a bounded range", (UNIV-FP). The factor is not on file; it is a guide and moves nothing, because the blocked action at that spacing is not Wilson's |
 
 Reading after 4a and 4b: the lane's map contains the measured mechanism, the literature of the record, and the first consequences one can derive from the numbers. A new vector has to be a new mathematical object. Step 4c names the ones I could build, and says plainly where I could not.
+
+## Step 4c: task (1), item by item
+
+"Found" = on file with the place (steps 3, 4a, 4b). "New object" = not found by the greps named; it is written out in step 5. A blank vector column means no vector.
+
+### The fifteen assumptions (ranking of step 1.1)
+
+| Rank | ID | Does the measured verdict give a new vector? |
+|---|---|---|
+| 1 | c2 band in bare Wilson coupling | No. Join at an RG effective action: (UNIV-FP), V4 of row 1053 (OPEN proposal), no mechanism. Row 1063's own reading closes the hope that the band is an artefact |
+| 2 | b3 Wilson action | No. Action choice is (UNIV-FP); positive-plaquette and no-monopole weights are row 900 item 2. One new object tried: W6 (a gap for almost every action of a family) |
+| 3 | c4 strong coupling reaches the band | No. Counted blockings = (CAS), route RA; seed below the crossover = M6, ceilings |
+| 4 | e4 no bulk transition | No route. One new object: W2 (what convexity alone gives for almost every beta). One test note: W7 (the Wilson axis has a bulk transition for SU(N), N at least 5, recalled) |
+| 5 | c6 small-box criterion | No. Test K6 "critical slab"; SMALL-BOX; the seed needs about 40 correlation lengths (`gap-phys-seed.md` L432) |
+| 6 | c10 small-lattice numerics | No vector (a caution for guides, on file) |
+| 7 | b6 periodic torus | No. Free walls = Route W; twisted = Theorem TW-T. One new object: W1 (the flux ladder across widths) |
+| 8 | d2 deconfined models as tests | One vector, W3 (the hot phase as a target); it FAILS in step 5. Not used as a test by the lane |
+| 9 | e10 gap through confinement | No. T_JW-lat (row 1052); area law to gap is false in the class (step 4b) |
+| 10 | b2 lattice at the joining scale | No. V4 of row 1053; continuum-first in a small box is `gap-brainstorm-max.md` idea 36 |
+| 11 | c7 one inequality | No vector |
+| 12 | d6 "it was tried" | No vector |
+| 13 | a10 theta = 0 | No vector toward the theta = 0 gap (row 838 item 72) |
+| 14 | e5 asymptotic freedom beyond perturbation theory | No vector. Its use as a carrier is (SUM-RULE), (NOCRIT-HF), on file |
+| 15 | e6 universality | No vector beyond (UNIV-FP) |
+
+### The eight places where mechanism and route differ (step 1.2)
+
+| Place | New vector? |
+|---|---|
+| D1 (W) stronger than the Clay gap in four ways | No. T_JW-lat, FLUX-W, Route W |
+| D2 measured object is one 0++ correlator | One object tried, W4 (enclosure of the first excited level from a trial state); a renaming, FAILS |
+| D3 flux tube firm, the rest CONTESTED | W1 follows the firm mechanism (the sign of the Luscher term). Vortex, monopole and Gribov lines are CONTESTED-ONLY and get no vector here; (T-vor) and (TB)_n are on file |
+| D4 scaling from correlation length 1.5 | No. It supports (SUM-RULE) as a guide (step 4b) |
+| D5 two to four blockings | No. (CAS) |
+| D6 box side at least 1/(T_c a); hot boxes keep a spatial gap | W3 (FAILS); W5 (the critical slab as an anchor; no consumer) |
+| D7 nothing singular at the gap scale in the continuum | No vector |
+| D8 smooth in N | W7 (a test note), no route |
+
+So task (1) gives seven objects, W1 to W7. None is a new route across the wall on its face. Step 5 states each exactly and runs the kill tests.

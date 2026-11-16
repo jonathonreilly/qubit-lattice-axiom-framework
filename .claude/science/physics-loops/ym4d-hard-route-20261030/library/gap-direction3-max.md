@@ -31,6 +31,27 @@ Status log (times from `date -u` in the same call that writes them):
   this plan. Queue row 1051 = FINISH.md line 1132 (row n at line n + 81).
 - (between 13:51Z and 14:05Z; the time first typed here was a guess and is removed) step 1 read done: `parts/gap.md` (257 lines, in full) and `library/gap-dichotomy.md` (473 lines, in
   full). Section 1 written.
+- (between 13:51Z and 14:05Z; guessed time removed) step 2 in progress: read row 1046 (`library/gap-o2-extension.md`, in full) and the verdict parts of
+  its two checks (`gap-o2-extension-check-opus.md` L130-220, `gap-o2-extension-check-astra.md` L124-191).
+- (between 13:51Z and 14:05Z; guessed time removed) read row 1011 Section 2 and 7.1-7.5 ((M1)-(M8), Lemma FR, (N1)-(N3)); row 1032 L205-386 (B14, B15,
+  kill table, ranking, Lemma BAR, CHAIN-4, NUC, CAS-0, GS, RISE, AMP, GS-dir, GS-eq) and the meaning + verdict parts of
+  checks 1049 (`gap-afield-b-check-opus.md` L336-428) and 1050 (`gap-afield-b-check-astra.md` L442-514).
+- (between 13:51Z and 14:05Z; guessed time removed) read (TB)_n in context (`gap-cr-tomboulis-max.md` L196-295, L370-409), the contract and (T-pin) of row
+  1018 (`gap-short-step-max.md` L74-136), and the RESULT lines of checks 1033, 1037 and the astra checks of rows 1031, 1036.
+- 2026-11-16 14:05Z (`date -u`): Sections 2 and 3 written (digests). Process slip: four log lines above carried times
+  typed by hand; they were wrong and are replaced. From here every time is read from `date -u` in the same call.
+- 2026-11-16 14:20Z (`date -u`): Section 4 written (the live lines, the worth-doing test, the ranking).
+- 2026-11-16 14:20Z to 14:30Z: registry grep (5.0); one arXiv listing query at 14:29Z into `/tmp/r1051-lit.70700`.
+- 2026-11-16 14:34Z: Section 5 written (Lemma RM, Proposition PIN, Lemma SF-D, the blind half). 14:36Z to 14:38Z:
+  three scope patches (the example for cells of side 1; the U(1) and Z_2 lines; the four blind statements are not
+  claimed equivalent).
+- 2026-11-16 14:43Z: Sections 6 and 7 written. 14:48Z to 14:51Z: attempts 6 and 7 and Lemma K4 added to 5.3; a first
+  version of attempt 7 said that no conjugation map carries periodic fields to twisted ones; that was false on a
+  lattice and is replaced by the computed Jensen bound; 7.3 changed from an attack row to a parked entry.
+- 2026-11-16 14:51Z: re-read of Sections 4 to 7; stale cross-references in 4.2 fixed; RESULT lines of the checks of
+  rows 1038 and 1042 read (no conflict with Section 4).
+- 2026-11-16 14:53Z: one GUIDE run under the numeric lock (8.1). 14:54Z: Section 8 written; `FINISH.md` rule sections
+  read (late). 14:55Z to 14:56Z: cross-branch repo search (8.4). 2026-11-16 14:56Z: RESULT line. Status: DONE, all eight steps.
 
 ## 1. The wall as read at the pin (step 1; no new mathematics)
 
@@ -70,15 +91,6 @@ All line anchors in this section are of `parts/gap.md` at 14a12e900 unless anoth
   GR, TP, H4 (1036), LIP-TREE, NOLIP, WEAK, TUNE (1038), EXIST, CUBE-COUL, CURL-P (1042), EXT, MEAN, AVG, O2-GR, O2-GR+,
   CURL-Q (1046); afield set B, Lemma BAR, CHAIN-4, NUC, CAS-0, GS, RISE, AMP, GS-dir, GS-eq, NOCS, FP-U1, TRI, SPH with
   the named open (INV), (GS-CAS), (NO-CONST) (1032).
-- (between 13:51Z and 14:05Z; guessed time removed) step 2 in progress: read row 1046 (`library/gap-o2-extension.md`, in full) and the verdict parts of
-  its two checks (`gap-o2-extension-check-opus.md` L130-220, `gap-o2-extension-check-astra.md` L124-191).
-- (between 13:51Z and 14:05Z; guessed time removed) read row 1011 Section 2 and 7.1-7.5 ((M1)-(M8), Lemma FR, (N1)-(N3)); row 1032 L205-386 (B14, B15,
-  kill table, ranking, Lemma BAR, CHAIN-4, NUC, CAS-0, GS, RISE, AMP, GS-dir, GS-eq) and the meaning + verdict parts of
-  checks 1049 (`gap-afield-b-check-opus.md` L336-428) and 1050 (`gap-afield-b-check-astra.md` L442-514).
-- (between 13:51Z and 14:05Z; guessed time removed) read (TB)_n in context (`gap-cr-tomboulis-max.md` L196-295, L370-409), the contract and (T-pin) of row
-  1018 (`gap-short-step-max.md` L74-136), and the RESULT lines of checks 1033, 1037 and the astra checks of rows 1031, 1036.
-- 2026-11-16 14:05Z (`date -u`): Sections 2 and 3 written (digests). Process slip: four log lines above carried times
-  typed by hand; they were wrong and are replaced. From here every time is read from `date -u` in the same call.
 
 ## 2. Route (ii) at the pinned boundary after rows 1036-1048 (step 2; digest, no new mathematics)
 
@@ -208,8 +220,9 @@ Corollary WN1 (row 1013; HOLDS after correction in the gpt-6-astra check): for t
 every link translation is at least 3 beta xbar abs(f)^2. *Renamed?* No. It is not the crux. It is a prerequisite that
 sits before the crux, and its sign form fails in the mean for every frame whose move keeps the Haar measure,
 unless the ring action is invariant under the move (Section 5.1 below; it extends Identity AV of row 1016).
-*Kind:* with bare links, (K-one) and false in the sign form; with blocked frames it is the background field of
-Balaban's account, a (K-flow) statement that holds only above the band (row 1013 6.2, ARGUED there).
+*Kind:* with bare links, (K-one), and its sign form fails in the mean for frames with Haar-preserving moves; with
+blocked frames it is the background field of Balaban's account, a (K-flow) statement that holds only above the
+band (row 1013 6.2, ARGUED there).
 
 **Line B. The barrier B15 with (INV) and (UV-Cas).** *Statement:* Section 3. *Consumer:* (BDD-Delta), the exclusion of
 branch (II). *What a proof would change in (W):* (W) iff (LIOU) would hold without a hypothesis; the wall would be
@@ -602,6 +615,9 @@ broad verdicts of this kind before (`parts/gap.md` L97-98, L139, L146-147).
 
 ### 7.1 Row `gap-direction3-check` (first; a check, one cross-provider run, one same-provider run)
 
+- **Moves:** the gap lane's ranking (`parts/gap.md`, "Next action" and "Lead rules in force"): whether lines A and G
+  stop and whether the blind half is recorded as open. If the check finds a WRONG in 5.1 or 5.2, the stop verdicts
+  fall back to ARGUED and rows 1036-1048's line stays as it was.
 - **Statement to check**, in `library/gap-direction3-max.md`: (i) Lemma RM, the display (RM-fr), Corollary RM-TREE and
   its one-cell form (5.1), with the four numbered readings; (ii) Proposition PIN with (P2), (P4), Lemma SF-D (a)-(c)
   and the count (5.2); (iii) the two stop verdicts and the ranking of 4.2; (iv) the claim of 5.3 that all four blind
@@ -623,6 +639,9 @@ broad verdicts of this kind before (`parts/gap.md` L97-98, L139, L146-147).
 
 ### 7.2 Row `gap-start-values` (a proof row on the supply side; second)
 
+- **Moves:** the open obligation (E0-tor) of `parts/gap.md` L137, and with it the extensive base (TH) (L118) and
+  (UV-Cas) of row 1032. If it holds, the (CAS) route and B15 have a checked lower end; if the account does not
+  localise E_0^(j), the (DET) and (HC-phys) reductions lose their two-torus step and that is recorded.
 - **Statement:** for the account's trajectory and the sizes L, 2L of P inside the account's weak-coupling domain:
   (SV1) D^+(L) is finite, with a bound written in the account's constants (item A5 of row 1017, now conditional on
   (UV-Z) and a density statement, `gap-dichotomy.md` L350); (SV2) = (E0-tor): the account's whole vacuum
@@ -680,3 +699,121 @@ row) this row does not ask for an attack. The entry is written so that a later r
 row with a mechanism; two lines share its output. 7.3 is a parked statement: it is where a whole family of lines
 dies at low cost, and this row found no way in. So this row proposes one check row and one proof row, and no
 attack on the band.
+
+## 8. Step 8: GUIDE control, marks, scope, limits, texts for the lead, RESULT
+
+### 8.1 One GUIDE run (it proves nothing; it could only have exposed an algebra error)
+
+Numeric lock acquired 2026-11-16 14:53:21Z (holder `r1051-fable-direction3`, status "acquired", holder checked), job
+14:53:26Z to 14:53:42Z (`date -u`), lock released ("released"). Memory 72 percent free before the run
+(`memory_pressure`). Plain numpy, `python3 -I`, thread variables 1, `nice`, 15 s. Script and output:
+`/tmp/r1051-guide/guide1051.py`, `guide1051.out` (not committed). Output, in full:
+
+- G1 (Lemma K4): on a 3^4 torus with random links, max abs(A_Omega(U) - A_K(U~)) over four trials = 3.6 x 10^(-15)
+  (two trials with Omega = (i, j), K = -1; two with random Omega_1, Omega_2 and the computed K).
+- G3 (Lemma RM (iii) on one link, weight exp(beta t), left translation): E[t] against (beta/3) E[1 - t^2] by quadrature:
+  0.171533042 against 0.171533045 at beta 0.7; 0.493512778 against 0.493512790 at beta 2.4.
+- G2 (Lemma SF-D (b), slab L = 4, T = 1, where the time links are an O(4) model on 4^3; Metropolis, 60,000 sweeps
+  after 4,000; one random F): E[X(dF)^2] = 241.9 +- 1.6 against beta xbar_1 abs(dF)^2 = 240.8 at beta 0.8 (xbar_1 = 0.2806);
+  1463.9 +- 15.9 against 1469.7 at beta 1.6 (xbar_1 = 0.6707). Errors from 20 blocks.
+
+No statement of this file rests on the run. Not tested numerically: Lemma RM for a frame move, Corollary RM-TREE,
+(P4), the count of 5.2, attempts 2 and 6, the bound of attempt 7.
+
+### 8.2 Marks
+
+| Item | Statement | Mark |
+|---|---|---|
+| Sections 1-3 | digests of `parts/gap.md`, `gap-dichotomy.md`, rows 1011, 1018, 1025, 1032, 1046 and checks | READ; no new mathematics |
+| 4.1, 4.2 | the live lines A-J, which are renamed, the worth-doing test, the ranking | ARGUED |
+| Lemma RM (5.1) | E[Phi'] = E[l']; E[Phi''] = E[(Phi' - l')^2] + E[l'']; for J = 1, E[Phi''] = E[(Phi')^2] >= 0 | PROVED |
+| (RM-fr) | the mean over the ring law of the summed cell responses to an interior frame gradient equals E[(Phi' - l')^2] + E[l''] | PROVED given Lemma GR+ (row 1046) |
+| Corollary RM-TREE | for a frame transported from one base point the move keeps Haar measure; the mean is E[(Phi')^2] >= 0; one-cell form in the free ensemble | PROVED given Lemma GR+ |
+| Non-invariance, cells of side 1, pin 1 | the Wilson action is not invariant under the move when one plaquette has two non-tree links with different lambda at their heads | PROVED |
+| Non-invariance, larger cells | for beta outside a discrete set | ARGUED |
+| "(N1) in its sign form fails in the mean" | for frame TREE (and the lab frame, rows 1013, 1016), where the ring action is not invariant | PROVED in the scope of the two lines above; OPEN for every other frame (it is the Jacobian inequality of 5.1 item 3) |
+| Proposition PIN, (P2), (P4) (5.2) | Z_c(exp(d_omega F) omega) = Z_c(E_F omega); the second- and fourth-order identities | PROVED (PIN is the finite form of Lemma TAN, row 1046) |
+| Lemma SF-D (a)-(c) | slab with trivial pins: E[N_l] = 0; E[X(dF)^2] = beta xbar_1 abs(dF)^2; the blind bound beta xbar_1 abs(h)^2 with its exact remainder | PROVED |
+| The count of 5.2 | a family inequality of OpenAI's form on pin space gives at best K beta^2 L for the unit twist | ARGUED (the gauge form of the inequality is assumed, not proved) |
+| "Both exact gauge forms use gauge parameters" | the one-sentence reason | ARGUED |
+| Lemma K4 (5.3) | the action with seam conjugations by Omega_1, Omega_2 is the periodic action with the corner plaquettes twisted by K; K = -1 for (i, j); U = 1 has the largest weight | PROVED (the statement is 't Hooft's) |
+| Attempt 1 | lab frame: exactly beta xbar_1 L | PROVED |
+| Attempt 7 | Jensen with any conjugation by a site function: exponent at least (3/2) beta xbar L^2 | PROVED given the gauge average of Lemma JEN (ii) (row 1013) |
+| Attempts 2, 3, 5, 6 | beta^(2/3) L; no gain; needs blocked frames; no gain | ARGUED |
+| Attempt 4 | reflection positivity bounds twisted and glued partition functions from above only | a reading of the tools on file, not a theorem |
+| (BL), (BL-c), (BDD-Delta), (L1) for SU(2) inside the band | | OPEN; no mechanism found |
+| (BL), (BL-c) for compact U(1) | one line each | PROVED (5.3; standard) |
+| Taxonomy (which blind statement excludes which branch) | | ARGUED |
+| Section 6 | the lens; the sources are named, not opened | RECALLED unless a row is cited |
+| 7.1, 7.2 | briefs | proposals |
+| 7.3 | parked statement with reopen condition | registry entry |
+
+### 8.3 Scope of each negative or stopping statement
+
+- "(N1) fails in the mean": frames whose frozen move keeps Haar measure (lab frame, frame TREE), interior gradients,
+  the conditional ring law of a cell Q, and only where the ring action is not invariant (proved for cells of side 1
+  at the pin 1; argued otherwise). It is not a statement about frame COUL or any frame with a Jacobian, and not a
+  statement about co-closed fields. It does not say route (ii) is closed.
+- "Stop line A": a ranking, ARGUED. Reopen on a frame with a computed second-order log-Jacobian that satisfies
+  E[l''] <= - E[(Phi' - l')^2] in the ring law, or on a consumer (L3).
+- "The pin-space port fails": one slab, trivial pins, and inequalities of OpenAI's form with the Dirichlet form of
+  Lemma SF-D as cost. An inequality of another form is not excluded. C1 in corner form and C2 keep the standing
+  that the gpt-6-astra check of row 1013 gave them (not excluded as theorems).
+- "Seven mechanisms for the blind half stop": each is one construction. Attempt 7's bound covers every conjugation
+  by a site function and no other map. No theorem here says the blind half has no proof below the account.
+- "Renamed" (lines C, D and GS-eq): the verdicts of the two checks of row 1032 and of row 1025 4.4, repeated.
+- "No mechanism for the selective half": an absence in this row, after the lane's rows 988-1050.
+
+### 8.4 What was read, and limits
+
+- Read in full: `parts/gap.md`, `library/gap-dichotomy.md`, row 1046 `gap-o2-extension.md`, GOAL.md, the queue row.
+- Read in the parts named in Sections 2, 3 and 5.0: rows 1007, 1011, 1013 (with items 12-18 of its gpt-6-astra
+  check), 1016 (7.1-7.2), 1018 (2.1, 2.3), 1025, 1032; checks 1047, 1048, 1049, 1050.
+- Read by RESULT line only: both checks of rows 1031, 1036, 1038, 1042. Rows 1031, 1036, 1038, 1042 themselves were
+  read through their entries in `parts/gap.md` (L144-148) and through row 1046's Step 1, not line by line. The queue
+  row asks for these rows "with both checks of each"; this is a shortfall of the reading, stated here.
+- `FINISH.md`: the queue row at the start; the rule sections L1-90 and L320-351 only at 14:54Z, after the
+  mathematics was written (a process slip: they should have been read first). Rule 0a also names `library/l17c.md`;
+  a grep there for (BDD-Delta), a blind bound, (N1), a Schrodinger functional, a twist response or a vortex free
+  energy has no hit.
+- Not read: rows 1017, 1028 beyond their entries; the Sussman-Alpoge account (no statement of this file cites a
+  line of it that I read); Balaban's papers; OpenAI's texts (cited through rows 1007, 1009, 1013).
+- Repo search (rule "Repo first"; run at the report step, 2026-11-16 14:55Z to 14:56Z by `date -u`, which is late:
+  the rule asks for it before a lane derives anything). In this branch: the grep of 5.0 found Identity AV and Lemma
+  TAN as the nearest statements. Across branches: a bare blob-less depth-1 fetch of main and of PR 10114 into
+  `/tmp/r1051-xbranch`; `git grep -l -i` for "twist eater", "Klein four", "Schrodinger functional", "vortex free
+  energy", "blind half", "free ensemble", "bounded Casimir", "anti-screen", "paramagnetic" on the 67 text files of main
+  whose path contains ym4d, and on 21 files of PR 10114 picked by name (the mass-gap notes of `agents/ym4d-proof/`,
+  `PROOF.md`, `RTARGET.md`, `parts/physical-gap.md` and their checks): no hit in either. The other PR branches
+  (10133, 10134, 10141, 10144) were not searched. So the lemmas of Section 5 are "not found in the searched scope",
+  no more than that.
+- Nothing here is checked by another model. A check is proposed in 7.1.
+- Process slips of this run: four status lines first carried clock times typed by hand (replaced at 14:05Z); a first
+  version of attempt 7 claimed that no conjugation map between the two bundles exists (false on a lattice;
+  replaced by the computed bound before the report); Section 4.2 first pointed to a row brief that was later
+  parked (fixed at 14:51Z).
+
+### 8.5 Texts for the lead (proposals; no other file was edited)
+
+- `parts/gap.md`, new obligations entry: "unchecked (row 1051, Claude Fable 5.2 max): direction after rows 1032-1050.
+  Lines C (GS-CAS with NO-CONST), D ((TB)_n) and GS-eq are renames (as their checks say); (N1) is not the crux and
+  its sign form fails in the mean for frames with Haar-preserving moves (Lemma RM, Corollary RM-TREE, extending
+  Identity AV of row 1016); the pin-space port of OpenAI's one-annulus engine gives no L-uniform bound (Proposition
+  PIN, Lemma SF-D: the cost form of boundary gauge parameters is exactly beta xbar_1 times the Dirichlet form of the
+  3-dimensional boundary; the count ARGUED); the blind half (a size-uniform upper bound of a twist response or a
+  lower bound of Z_tw/Z; (BDD-Delta) in periodic form) is open inside the band in every form, seven mechanisms stop
+  (lab frame beta xbar_1 L exactly; temporal-gauge frames beta^(2/3) L; Jensen with any conjugation at least
+  (3/2) beta xbar L^2; Lemma K4); parked with a reopen condition. No mechanism for the selective half.
+  `library/gap-direction3-max.md`."
+- `parts/gap.md`, "Lead rules in force", proposed addition: "A row on a stiffness-type engine (routes of rows 1009-1048,
+  (T-pin), (T-vor)) names its blind half first: the size-uniform bound from above that the 2D proofs get by dropping
+  a variance. In 4D none is on record inside the band (row 1051 5.3). Tests of a blind half: compact U(1) (true by
+  one line), frozen Z_2 (false for the centre twist), five dimensions."
+- Queue row 1051 names "(TB)_n of row 1017"; the statement is Proposition BR of row 1025 (`gap-cr-tomboulis-max.md`
+  L241).
+- `gap-dichotomy.md` L367-368 already records that the bounded half is GUIDE only for compact U(1). So (BDD-Delta) has no
+  theorem-grade control in the lane; (BL) and (BL-c) do (5.3).
+
+Finished: 2026-11-16 14:56Z (`date -u`, read in the call that wrote this line).
+
+RESULT: Row 1051 (Claude Fable 5.2 max, Mac mini worker 1, commit 14a12e900; direction row; written by hand, checked by nobody; one 15-second GUIDE run under the numeric lock that proves nothing; one arXiv listing query; no subagents). (1)-(2) The live lines after rows 1032-1050, each with its exact statement, consumer and standing (Section 4): (GS-CAS) with (NO-CONST), GS-eq and (TB)_n are renames (the first two of (LIOU), the third of the flux half at one coupling, as their checks say); (LIOU) is the crux; B15 is a mechanism for (BDD-Delta) only, with (INV) without a route and (UV-Cas) at the grade of the open (E0-tor); (N1) is not the crux but a prerequisite before it. Ranking (ARGUED): every stiffness-type line (route (ii), C1, C2, (T-pin), (T-vor), the 2D ports of rows 1009-1048) lacks not only the selective half but also the blind half, the size-uniform bound from above that the 2D proofs get by dropping a variance; this row puts the blind half first and attacks it. (3) PROVED here, unchecked: Lemma RM (for any smooth family of maps S_eps of the ring configurations, E[Phi''] = E[(Phi' - l')^2] + E[l''] in the ring law, l the log-Jacobian; it extends Identity AV of row 1016) and Corollary RM-TREE (for a frame transported from one base point the move keeps Haar measure, so the mean over the ring law of the summed cell responses to an interior frame gradient equals E[(Phi')^2] >= 0): so (N1) in its sign form FAILS in the mean for that frame wherever the ring action is not invariant (proved for cells of side 1 at the trivial pin, argued otherwise), and for any other frame it is a Jacobian inequality that nobody has; Proposition PIN with (P2), (P4) (on pin space Z_c(exp(d_omega F) omega) = Z_c(E_F omega) exactly, the gauge form of OpenAI's commutator identity and the finite form of Lemma TAN of row 1046) and Lemma SF-D (on a slab with trivial pins the cost form of boundary gauge parameters is exactly beta xbar_1 times the Dirichlet form of the 3-dimensional boundary, and the blind bound of the unit abelian twist is exactly beta xbar_1 L against a classical action of order beta); the count that this port then gives at best K beta^2 L is ARGUED, so the pin-space form of C1 FAILS as a route to an L-uniform bound (ARGUED), with C1 in corner form and C2 left as the gpt-6-astra check of row 1013 left them; Lemma K4 (the 't Hooft-twisted torus is the torus with periodicity up to conjugation by i and j, U = 1 has the largest weight, so the classical cost of the centre twist is zero) and the bound that Jensen with any conjugation by a site function has exponent at least (3/2) beta xbar L^2. The blind half in the forms (BL) (bounded slab response), (BL-c) (Z_tw/Z bounded below), (BDD-Delta) and (L1): true for compact U(1) by one line in the first two forms, false for frozen Z_2 in the second; for SU(2) seven mechanisms stop (lab frame, temporal-gauge frames with beta^(2/3) L, commutator families, positivity which bounds from the wrong side, blocked frames which are the account's and hold above the band only, holonomy-axis frames, the Klein four-group form with Jensen). (4) Literature lens: titles and abstracts of one arXiv listing only; sources named, none opened; no size-uniform upper bound of a twist response for a non-abelian group outside strong coupling is known to me. (5) Briefs: first `gap-direction3-check` (a cross-provider check of Sections 4-5 and of the two stop verdicts), then `gap-start-values` (a proof row on the supply side: D^+ at first passage and (E0-tor), by locality of the account of Sussman and Alpoge, after Balaban); the blind half is parked as a registry entry with a reopen condition, not proposed as a proof row. Credit: Sussman and Alpoge (with Claude and Codex as authors of their text) and Balaban for the trajectory; OpenAI for the 2D engines; 't Hooft, Tomboulis and Yaffe, Mack and Petkova, Luscher, Kanazawa, Ito and Seiler, Brydges, Frohlich and Seiler by name; rows 1011, 1013, 1016, 1018, 1025, 1032, 1046 of the lane. OPEN, not moved: (W), (LIOU), (BDD-Delta), the blind half in every form inside the band, (INV), (E0-tor), (TB)_n, (DEC), (SER) with (SPR), (N1)-(N3) for frames with a Jacobian, (O1), every check of this file. No mechanism for the selective half was invented; no mass gap is claimed; the wall (W) does not move. Shortfalls: rows 1031, 1036, 1038, 1042 were read through their entries and check RESULT lines, not line by line; the FINISH rule sections and the cross-branch search came at the report step.

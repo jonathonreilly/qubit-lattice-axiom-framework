@@ -1,15 +1,17 @@
 lead: anthropic/claude-fable-5-2/max mac-mini-worker
-lease_until: 2026-11-16T13:36Z
+lease_until: 2026-11-17T00:18Z
 
 # gap-afield-b-max (queue row 1032): far-afield invention row B
 
 Started 2026-11-16T01:36Z (from `date -u`), pinned at commit 58baf6efc. Session model: claude-fable-5-2 at max effort. No subagents, no numeric job started so far.
 
+Run 2 (this run): started 2026-11-16T12:18Z (from `date -u`), pinned at commit 594d6491b. The first run (01:36Z) wrote only the plan below and then failed for lack of credits (lead note in FINISH.md row 1032); its plan is kept and followed. Session model: claude-fable-5-2 at max effort. No subagents.
+
 This file is written section by section. Each section states what was done, what failed, and what is left.
 
 ## 0. Status line (updated in place)
 
-- State: started; reading FINISH.md row 1032, GOAL.md and the sections the row names.
+- State: run 2 started 2026-11-16T12:18Z; step 1 (reading) in progress.
 
 ## Plan (eight steps, one per response; each appends its result here before the next)
 

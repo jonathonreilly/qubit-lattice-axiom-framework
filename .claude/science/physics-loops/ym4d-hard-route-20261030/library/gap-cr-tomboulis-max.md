@@ -497,3 +497,288 @@ line": the form of the remaining half, and nothing in the flux half.
   order for every integer b (ARGUED). On the trajectory the combination gives nothing. At one coupling it gives
   the even half (Corollary EVEN), which the lane already has as route RE.
 - 00:19Z Step 5 done. Step 6 (Question 3) next.
+
+## 6. Step 6 result (Question 3): (K-RESP) against Lemma PAR and Corollary MP
+
+**Answer: (K-RESP) does not follow from Lemma PAR and Corollary MP (FAILS; frozen Z_2). Through the torus form of
+Lemma PAR it is equal, with no loss, to a bound on one cumulant of container activities (PROVED). That is a
+rename. The open content is a container bound in moment form, which is the open half O2 of row 1018; (SER) and
+(SPR) with kappa phi < 1 do not reach (K-RESP) at its stated size, and kappa^2 phi < 1 would (arithmetic, PROVED).**
+
+Credit: the substitution and the Fourier step over the centre are Mack and Petkova's (Ann. Phys. 125 (1980)
+117), as rebuilt in row 1018 3.2 and 7.4 for pinned containers. What is written here is the same algebra on a
+torus with no pinned link, where the twist is a cohomology class and not a twist of a pin.
+
+### 6.1 Lemma PAR-T (the parallel law on a torus; PROVED by hand)
+
+**Setting.** A torus n with sides at least 3. G is a compact group with a central element -1 of order 2. Every
+plaquette p has a continuous positive class weight w_p on G (it may depend on p; for the lane's backgrounds m,
+w_p is the Wilson weight with the sign of m on the stacks of m). Z is the integral of the product of the
+w_p(U_p). TT is the two-dimensional torus Z_(n_1) x Z_(n_2) of the first two coordinates, with its vertices, edges
+and cells. For a cell c of TT, V_c is the stack of the n_3 n_4 plaquettes of orientation (1,2) over c. For a set C
+of cells, Z^C is Z with w_p(U_p) replaced by w_p(- U_p) on the stacks V_c, c in C.
+
+**Fact 1.** Z^C depends only on the parity of the number of cells of C. Write Z^tw for the odd value and
+rho = Z^tw/Z.
+Proof. Let c, c' be cells with a common edge e. Let tau_e be -1 on every link over e (links of the direction of
+e, one for each (x_3, x_4)) and +1 on all other links. A (1,2)-plaquette over c or c' contains one link over e
+(n_1, n_2 >= 3, so a cell has four different edges). A plaquette of a direction of e and of 3 or 4 over e
+contains two. Every other plaquette contains none. So the substitution U -> tau_e U changes the sign of U_p
+exactly on V_c and V_c'. Haar measure is invariant. So Z^C = Z^(C') when C' is the symmetric difference of C and
+{c, c'}. Any two cells are joined by a chain of neighbours; this moves one cell of C to any place and removes
+two cells of C at a time. QED
+
+**Sub-containers.** D_1, ..., D_k are rectangles of cells of TT, D_i = [a_i, a_i + s_i) x [b_i, b_i + t_i) with
+2 <= s_i <= n_1 - 1 and 2 <= t_i <= n_2 - 1, pairwise disjoint as sets of cells (they may share boundary edges). An
+edge is interior to D_i if both cells that contain it are in D_i; a vertex is interior if all four are. Lam_i
+is the set of links over interior edges and of links of direction 3 or 4 over interior vertices. P_i is the
+set of plaquettes with a link in Lam_i. eta denotes the links in no Lam_i.
+
+**Fact 2.** (a) V_c is contained in P_i for every cell c of D_i. (b) The sets P_i are pairwise disjoint.
+Proof. (a) s_i >= 2, so c has a neighbour in D_i and the common edge is interior. (b) Let p be in P_i. If p is
+a (1,2)-plaquette over a cell c, it has a link over an interior edge of c, so c is in D_i. If p lies over an
+edge e (one direction in {1, 2}, one in {3, 4}), then e is interior or has an interior end point, and in both
+cases the two cells that contain e are in D_i. If p is a (3,4)-plaquette over a vertex, the vertex is interior
+and its four cells are in D_i. A plaquette in P_i and P_j would put a cell in D_i and D_j. QED
+
+So the integrand is W_rest(eta) times the product over i of W_i, W_i the product of w_p over P_i, and the
+flipped weights of a stack over a cell of D_i sit in W_i. Fix a cell c_i in each D_i and put
+
+    Z_i(eta) = integral over Lam_i of W_i,   Z_i^tw(eta) = the same with the weights on V_(c_i) flipped,
+    r_i = Z_i^tw/Z_i > 0,   v_i = - log r_i,   a_i = (1 - r_i)/(1 + r_i) = tanh(v_i/2) in (-1, 1).
+
+E is the expectation of functions of eta in the torus measure (weight W_rest prod_i Z_i, divided by Z).
+E^+ is E with the extra weight prod_i (1 + r_i), normalised.
+
+**Statement.**
+- (i) For every subset S of {1, ..., k}: E[prod over i in S of r_i] = rho if |S| is odd, and 1 if |S| is even.
+- (ii) E[prod_i (1 + r_i)] = 2^(k-1) (1 + rho). For a non-empty subset M: E^+[prod over i in M of a_i] = 0 if M is not
+  all of {1, ..., k}, and E^+[a_1 a_2 ... a_k] = (1 - rho)/(1 + rho).
+- (iii) With Q = (1 + rho)/2, H = - log Q, u = (1 - rho)/2:
+
+      H = log(1 + E^+[a_1 ... a_k]),      u = Q E^+[a_1 ... a_k] <= E^+[a_1 ... a_k],
+      0 <= E^+[a_1 ... a_k] <= prod_i (E^+ |a_i|^k)^(1/k) <= prod_i sup |a_i|.
+
+Proof. (i) By Fact 2 the integral of W_rest times prod over S of Z_i^tw times prod over the others of Z_i is
+Z^C with C = {c_i : i in S}. Divide by Z and use Fact 1. (ii) For a subset M, expand: E[prod_M (1 - r_i)
+prod_(not M) (1 + r_i)] = sum over S of (-1)^|S meet M| E[prod_S r_i]. With the polynomial P_M(x) = (1 - x)^|M|
+(1 + x)^(k - |M|) = sum over S of (-1)^|S meet M| x^|S|, the even part at x = 1 is (P_M(1) + P_M(-1))/2 and the odd
+part is (P_M(1) - P_M(-1))/2. P_M(1) = 2^k if M is empty and 0 otherwise; P_M(-1) = 2^k if M is everything and 0
+otherwise. So the sum is 2^(k-1) (1 + rho) for M empty, 2^(k-1) (1 - rho) for M everything, and 0 for the others.
+Write 1 - r_i = a_i (1 + r_i) and divide. (iii) 1 + (1 - rho)/(1 + rho) = 2/(1 + rho) = 1/Q, and (1 - rho)/2 =
+Q (1 - rho)/(1 + rho). rho <= 1 when the lane's transfer argument applies (row 800 (K9)), which gives the lower
+bound 0; the upper bounds are Hoelder's inequality with k factors and the sup bound. QED
+
+Remarks. (1) r_i does not depend on the choice of c_i in D_i (Fact 1 inside the container: the links over an
+interior edge are integrated). (2) E^+ is the marginal of the average of the 2^k measures with flipped stacks,
+that is of the sector-summed measure that Tomboulis uses for reflection positivity (his Z^+). In it the flux
+sector is a random sign, a_i is the conditional mean of the sign of container i, and (ii) is the tower
+property: the mean of the product of k conditionally independent signs. (3) For k = 1 the statement is
+E^+[a_1] = tanh(V/2), which is empty. The content is in k >= 2: every proper sub-product has mean 0. (4) Blind:
+it holds for Z_2, Q_8, 2T, U(1) with its subgroup Z_2, in every dimension (with stacks over the cells of any
+coordinate two-torus), and for every positive strength field.
+
+### 6.2 Proposition KR: (K-RESP) in container variables (PROVED given row 800 (K2), (K21))
+
+For a required pair (m, m + v) of row 800 take the coordinates so that the plane of v is the plane of TT, and
+w_p the Wilson weight with the signs of m. Then Z = Z_m, Z^tw = Z_(m+v), rho = R_m(v), and by 2.5 and 6.1 (iii):
+
+    (K-RESP) holds  if and only if  E^+_m[a_1 ... a_k] <= exp(e_a/8 + H_c(alpha)) - 1  for every required a, c, d, beta, m, v,
+
+for one family of rectangles, and then for every family (the left side does not depend on the family). Here
+0 <= H_c(alpha) <= 2 N exp(- l^2) is row 800's coarse term. Sufficient: prod_i (E^+_m |a_i|^k)^(1/k) <= e_a/8 (a moment
+container bound, **(CB-mom)**), or prod_i tanh(xi_i/2) <= e_a/8 with xi_i = sup over eta of |v_i| (**(CB-sup)**).
+Also the integrand of (K-RESP), row 800 (K6), is G_(f,m)(s) = (d/ds) log(1 + E^+_(m,s)[a_1 ... a_k]).
+
+So Kanazawa's mismatch is D = log(1 + E^+_f[a_1 ... a_k]) - H_c(alpha): the logarithm of one plus a k-point
+cumulant of container activities of the fine model, minus an explicit small term.
+
+### 6.3 Why PAR and MP do not give (K-RESP), and what would
+
+- **Refutation of the tool (valid form).** In frozen Z_2 above beta = 2.191 Lemma PAR-T and Corollary MP hold
+  word for word, and the flux sectors stay degenerate on every box (the lane's Peierls theorem, `parts/gap.md`
+  L206), so rho stays away from 1 and the analogue of (K-RESP) fails. A proof of (K-RESP) from the two
+  statements alone would prove it there. FAILS.
+- **Corollary MP has no part in it.** MP bounds a loop observable that is odd under each container flip. The
+  left side of (K-RESP) is a quotient of partition functions, and PAR-T is its exact form. MP is the consumer
+  of a container bound for Wilson loops (route RE), not a supplier.
+- **The sup form is the wrong form at weak coupling** (row 1018 3.4 caution 2, ARGUED there; the test D2 of
+  4.3): a pin can force the vortex to be thin. So (CB-sup) with thin sheets is not expected, and (CB-mom) is the
+  form to ask for. In (CB-mom) the pins are distributed by E^+, the sector-summed law.
+- **Sizes (arithmetic, PROVED).** tanh(xi/2) <= exp(- e^(-xi)), because 1 - tanh(xi/2) = 2/(e^xi + 1) >= e^(-xi).
+  So (CB-sup) with k equal containers of cost xi holds if k e^(-xi) >= log(8/e_a). e_a is of the size eta_*^(a/2)
+  times a power of a, so log(8/e_a) is of order a. With squares of side delta in the plane of v, k is about
+  (a/delta)^2. So the requirement is xi <= 2 log(a/delta) - log(C a): the container (whole sheet, of area at
+  least a^2; disc of side delta) must cost at most a logarithm.
+- **Against (SER) and (SPR) (arithmetic for any container cost that obeys the sup bound of 6.1, (SER) with
+  kappa and (SPR) with phi on all dyadic scales from l_0 on; PROVED as arithmetic).** Put K(l) for the cubic
+  container. Then K(2^J l_0) <= (kappa phi)^J K(l_0). For a = 2^J l_0 and delta = a/2^i the sheet is reached from
+  the cubic one by at most i + 1 uses of (SER), so xi <= kappa^(i+1) (kappa phi)^(J-i) K(l_0), and k = 4^i. With
+  i = theta J the cost stays bounded if kappa^theta (kappa phi)^(1-theta) <= 1, and k beats the order a = 2^J l_0
+  if theta > 1/2. Both hold for some theta if and only if kappa^2 phi < 1. So: **kappa^2 phi < 1 gives (K-RESP)
+  for large dyadic a; kappa phi < 1 alone gives only u_f -> 0 at a power rate** (take i = 1), which meets the
+  clause Q_F < 1/192 of row 793's consumer and not the clause 8 Q_F <= K(a) S_ev^(1/2) at the witness size.
+  With the classical kappa = 4 the first needs phi < 1/16. Row 1018's own xi has outer pins at distance l; it is
+  the sup-pin cost of the container of side 3 l, so the same arithmetic applies with other constants (ARGUED).
+- (SER) and (SPR) are row 1018's open items O2. I do not attack them (rule 0a).
+
+### 6.4 Result of Question 3
+
+(K-RESP), the (FQ) bound, the smallness of the fine odd-flux weight u_f, and the cumulant bound of Proposition KR
+are four writings of one inequality. Lemma PAR-T is the dictionary between the last two. Mark for "PAR and MP
+give (K-RESP)": FAILS. Mark for "(K-RESP) reduces to (SER) and (SPR)": it is implied by them only under
+kappa^2 phi < 1 (PROVED as arithmetic, given a start K(l_0)); it does not imply them. The step is a rename.
+
+- 00:22Z Step 6 done. Step 7 (the surviving piece and the counterexample) next.
+
+## 7. Step 7 result: the pieces that survive are proved; the selective piece gets its counterexample; three ways at (TB)
+
+### 7.1 Which pieces survive, and in what sense
+
+The row asks: for the first piece that survives the tests, prove it or build the counterexample. By 4.4 no piece
+of the combination survives as a gain towards (W). Four pieces survive as exact statements and are proved
+above: Proposition BR (2.4), Identity MIS (5.2), Proposition RS with Corollary EVEN (5.3, 5.4), Lemma PAR-T with
+Proposition KR (6.1, 6.2). All four are blind. The first, and only, selective piece is (TB)_n. For it the
+counterexample in the class is built here (7.2), and the attack on the SU(2) case is recorded with the place
+where each of three ways stops (7.4).
+
+### 7.2 Proposition SIGN: bond moving has no sign on the twist quotient (PROVED by hand)
+
+**Setting.** G = Z_2, link variables sigma = +1 or -1, s_p the product around p, weight 1 + c s_p with 0 < c < 1
+(c = tanh beta). b >= 2 an integer, q = b^2, r in (0, 1]. For Z_2 the map of 2.1 is
+
+    chat = ((1 + c)^q - (1 - c)^q)/((1 + c)^q + (1 - c)^q),      c' = chat^(q r).
+
+Lambda has sides L_mu = b L'_mu with L'_mu >= 3; Lambda(1) has sides L'_mu. u is the odd-flux weight of the plane
+(1,2), rho = 1 - 2u. Put delta = (1 - c)/(1 + c) = exp(- 2 beta).
+
+**Statement.**
+- (a) Weak coupling. As c tends to 1: rho(Lambda(1); c')/rho(Lambda; c) tends to q^(-1) (q r)^(L'_3 L'_4). This
+  is above 1 if r > q^(-8/9) (because L'_3 L'_4 >= 9). So for c close to 1, rho(Lambda(1); c') > rho(Lambda; c):
+  the decimated model has the smaller odd-flux weight, and (TB)_1 fails.
+- (b) Strong coupling. As c tends to 0: u(Lambda(1); c')/u(Lambda; c) = q^(r L_1 L_2 - 1) c^(-(1-r) L_1 L_2) (1 + o(1)),
+  which is above 1 for small c. So (TB)_1 holds for all small c.
+
+**Lemma LT (low temperature).** For a torus M with sides at least 3: rho(M; c) = M_1 M_2 delta^(M_3 M_4) (1 + O(delta))
+as delta tends to 0.
+Proof. 1 + c s = (1 + c) delta^((1-s)/2). Let eta_p = -1 on the stack V = V_(c_0) and +1 elsewhere. Then
+rho = (sum over sigma of delta^(E_eta(sigma)))/(sum over sigma of delta^(E_1(sigma))), with E_eta(sigma) the number of
+plaquettes with eta_p s_p = -1. Both sums are polynomials in delta with non-negative integer coefficients. The
+denominator tends to g_0, the number of sigma with all s_p = 1; g_0 >= 1. For the numerator:
+(1) In the slice of the (1,2)-plaquettes at one height (x_3, x_4) every link lies in two plaquettes, so the
+product of s_p over the slice is 1, and the slice holds one plaquette of V. So every slice holds an odd number
+of plaquettes with eta_p s_p = -1. There are M_3 M_4 disjoint slices, so E_eta >= M_3 M_4.
+(2) Let E_eta(sigma) = M_3 M_4. Then the set F of plaquettes with eta_p s_p = -1 has one plaquette in each slice
+and none of another orientation. For a 3-cube with directions 1, 2, 3 the product of s_p over its six faces
+is 1 (each edge lies in two faces), and so is the product of eta_p (its two (1,2)-faces lie over one cell of
+TT). So the cube has an even number of faces in F. Four of its faces have another orientation. So its two
+(1,2)-faces are both in F or both not. The same holds with direction 4. So the cell of the F-plaquette is the
+same in all slices: F = V_y for one cell y.
+(3) F(sigma) = V_y means s(sigma) = eta eta^y, which by Fact 1 of 6.1 is d tau for a sign field tau. So sigma tau has
+all plaquettes +1, and there are g_0 such sigma for each of the M_1 M_2 cells y.
+So the numerator is M_1 M_2 g_0 delta^(M_3 M_4) (1 + O(delta)). QED
+
+**Lemma HT (high temperature).** For a torus M with sides at least 3: u(M; c) = M_3 M_4 c^(M_1 M_2) (1 + O(c)) as
+c tends to 0.
+Proof. Expand the product of the 1 + c s_p over sets S of plaquettes; the mean over sigma of the product of s_p
+over S is 1 if every link lies in an even number of plaquettes of S (S closed) and 0 otherwise. So Z = sum
+over closed S of c^|S|, Z^(12) = sum over closed S of (-1)^|S meet V| c^|S|, and u = (Z - Z^(12))/(2 Z) = (sum over
+closed S with |S meet V| odd of c^|S|)/Z, with Z = 1 + O(c). For a closed S and a cell y of TT let N_y be the
+number of plaquettes of S in V_y. Let y, y' have the common edge e. Sum, over the links over e, the number of
+plaquettes of S that contain the link: each term is even. A plaquette of V_y or V_y' contains one link over
+e, a plaquette of S over e contains two, the others none. So N_y + N_y' is even, and the parity of N_y is the
+same for all cells. If it is odd, |S| >= M_1 M_2. Equality: one (1,2)-plaquette over each cell, at a height
+h(y), and no other plaquette. The link over e at the height h(y) lies in the plaquette over y and must lie in
+a second plaquette of S, which can only be the one over y'. So h is constant, and S is one of the M_3 M_4
+planes; each plane is closed and meets V once. QED
+
+Proof of the statement. (a) chat = (1 - delta^q)/(1 + delta^q), so 1 - chat = 2 delta^q (1 + O(delta^q)), 1 - c' =
+2 q r delta^q (1 + o(1)), and delta' = (1 - c')/(1 + c') = q r delta^q (1 + o(1)), which tends to 0. By Lemma LT on
+both tori, rho(Lambda(1); c') = (L_1 L_2/q) (q r)^(L'_3 L'_4) delta^(q L'_3 L'_4) (1 + o(1)) and rho(Lambda; c) =
+L_1 L_2 delta^(L_3 L_4) (1 + o(1)), and q L'_3 L'_4 = L_3 L_4. (q r)^(L'_3 L'_4) > q if r > q^(-1 + 1/(L'_3 L'_4)).
+(b) chat = q c (1 + O(c^2)) and c' = (q c)^(q r) (1 + O(c^2)), which tends to 0. By Lemma HT on both tori,
+u(Lambda(1); c') = (L_3 L_4/q) (q c)^(r L_1 L_2) (1 + o(1)) and u(Lambda; c) = L_3 L_4 c^(L_1 L_2) (1 + o(1)). For
+r = 1 the quotient tends to q^(L_1 L_2 - 1) > 1; for r < 1 it tends to infinity. QED
+
+**What it shows.** (1) The need written in row 876 item 16, "a sign for the effect of bond moving on the ratio",
+has no class-wide answer: in one model both signs occur. In words: at strong coupling moving the plaquettes
+makes the sheets that carry the odd flux cheaper (the factor q^(L_1 L_2)); at weak coupling it gives the
+frustrated sheet an entropy of q r positions in every coarse slice (the factor (q r)^(L'_3 L'_4)), so the
+decimated model is the less ordered one. (2) No correlation inequality for ferromagnetic Z_2 weights gives
+(TB): it is false in that class. (3) It is not a counterexample to Tomboulis's statement, which is for SU(2),
+and for Z_2 the flow hypothesis fails as well.
+
+### 7.3 Frozen Q_8 and 2T (ARGUED, not proved)
+
+For a finite subgroup with the Wilson weight the same two facts are expected at large beta. The exponents of
+the fine and of the decimated twist quotient agree (the map is exact at zero coupling, T p. 10). The decimated
+weight at -1 has a prefactor that counts the ways to write -1 as an ordered product of b^2 r factors of least
+total cost (for Q_8: s + 3 s (s - 1) with s = b^2 r, from one factor -1 or two equal factors of trace 0), and
+this entropy is raised to the number of coarse slices. The fine minimisers are rigid sheets, so their number
+is polynomial in the sides. Not written: the classification of the fine minimisers for a non-abelian finite
+group. So for Q_8 and 2T the failure of (TB)_1 at large beta is ARGUED.
+
+### 7.4 The SU(2) case: an exact second-order form, and three ways that stop (rule 11)
+
+**Identity MOV (PROVED; any compact group, any positive class weight f, torus sides multiples of b, r = 1).**
+Call a plaquette a skeleton plaquette if its two transverse coordinates are multiples of b. Put delta_p = b^2 - 1
+on skeleton plaquettes and -1 on the others, and for lam in [0, 1] the weights w_p^lam = f^(1 + lam delta_p). At
+lam = 0 this is the model on Lambda; at lam = 1 only skeleton plaquettes carry a weight, f^(b^2), and integrating
+the links inside the coarse faces gives exactly the decimated model on Lambda(1) (T p. 7: "These integrations
+are exact"). Write Y = sum_p delta_p log f(U_p), and Y^tw for the same sum with eta_p U_p. Then:
+- (i) (d/d lam) log Z = E_lam[Y] and (d^2/d lam^2) log Z = Var_lam(Y) >= 0; the same for Z^(12) with Y^tw, and for
+  Z^+ with the variance Var^+ of the mixture.
+- (ii) At lam = 0 the three first derivatives vanish. (The mean of log f(eta_p U_p) is the same for all
+  plaquettes of one orientation: translations, and Fact 1 of 6.1 for the twisted measure. One plaquette in b^2
+  of each orientation is a skeleton plaquette, so the delta_p of one orientation add up to 0.)
+- (iii) So log Z(1) >= log Z(0), and the same for Z^(12) and Z^+: this is the upper bound (U) at r = 1, by
+  convexity and translation invariance alone (the classical bond-moving argument; T proves (U) by reflection
+  positivity).
+- (iv) With p_lam = Z/(Z + Z^(12)) at lam:
+
+      log Q(1) - log Q(0) = integral over [0, 1] of (1 - lam) (1 - p_lam) { Var^tw_lam(Y^tw) - Var_lam(Y)
+                             + p_lam (E^tw_lam[Y^tw] - E_lam[Y])^2 } d lam.
+
+  (TB)_1 at r = 1 is the statement that this integral is at most 0.
+Proof. (i) Differentiate the finite integral; the weights are positive, so log f is bounded. (ii) as said. (iii)
+A convex function with derivative 0 at 0 is at least its value at 0. (iv) Taylor's formula with integral
+remainder for log Z^+ - log Z, with (ii); the variance of a mixture of two laws with weights p and 1 - p is
+p Var_1 + (1 - p) Var_2 + p (1 - p) (difference of the means)^2. QED
+
+So the effect of one decimation on the twist quotient is of second order, and it has two parts: a difference of
+variances of the staggered plaquette sum Y between the twisted and the untwisted model, and a squared shift of
+its mean, which always works against (TB). (TB)_1 needs the twisted model to have the smaller variance, with a
+margin.
+
+**Way 1, a correlation inequality** (Tomboulis's footnote 10 says the abelian comparison inequalities fail in
+the non-abelian case). Stops earlier: (TB)_1 is false for Z_2 at weak coupling (Proposition SIGN), where every
+such inequality is available. So (TB) is not a monotony statement in couplings at all.
+
+**Way 2, the method that proves (U)** (convexity, or reflection positivity). It gives (i)-(iii) for each
+partition function. For the quotient it gives Identity MOV (iv) and no sign: the difference of the variances
+is a twist response of a short-distance structure factor of the plaquette energy (Y has momenta that are
+multiples of 2 pi/b), with all normalisers kept. This is the kind of quantity that row 800 isolates in (K6) and
+(K-RESP), on the path of plaquette moving in place of the path in beta. Named match: row 800. Not attacked.
+
+**Way 3, containers.** By Lemma PAR-T both sides of (TB)_n are Q times a k-point cumulant of container
+activities, for the fine and for the decimated model. A comparison container by container would need the
+first-order term of the moving to vanish in a pinned container. It does not (a pin breaks the translation
+symmetry used in (ii)), and its sign is free. A comparison in the supremum over pins is bound by the test D2.
+What is left is the moment bound (CB-mom) for each model: the open half O2 of row 1018. Named match. Not attacked.
+
+**The one lemma that is left.**
+
+> (TB)_n, r = 1, b = 2: for Wilson SU(2) at the coupling beta, every n >= n_0(beta) and every torus Lambda with
+> sides multiples of 2^n and quotients at least 3: u(Lambda) <= u(Lambda(n); c^U(n)).
+
+Why each way failed: Way 1 because the statement is false in the class where the tool lives; Way 2 because the
+tool is of first order in the moving and the statement is of second order; Way 3 because conditioning removes
+the symmetry that makes the first order vanish. What a proof must use, from the tests (4.3, 4.4): the group is
+connected and not abelian; the torus is beyond the size 2^(n_0(beta)), so the statement is in the infrared
+range; and at weak coupling the margin between the map and the true flow is 3 percent of the one-loop rate at
+b = 2 (Estimate RATE), so no argument with constants looser than that can work on intermediate scales.
+Strength against the lane's targets: (TB)_n with (O-flow) gives T_flux at one coupling and is not known to
+follow from it; it gives no part of the even half and no statement at a physical size (5.3). Governance
+status: blocked-equivalent for the flux half at one coupling; off the path of (W).
+
+- 00:24Z Step 7 done. Step 8 (re-read of the PROVED items, report, RESULT) next.

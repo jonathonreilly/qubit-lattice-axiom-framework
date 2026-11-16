@@ -206,8 +206,8 @@ sets near pure gauge (rows 1042, 1046; both checks HOLD); universal (Q-INV) and 
 both checks); Lemma MEAN and Lemma AVG (row 1046); Lemma FR (row 1011): every frame has defect at least NA(omega)/6;
 Corollary WN1 (row 1013; HOLDS after correction in the gpt-6-astra check): for the lab frame the score variance of
 every link translation is at least 3 beta xbar abs(f)^2. *Renamed?* No. It is not the crux. It is a prerequisite that
-sits before the crux, and at bare ring links of coupling 2.3 to 2.6 its sign form is false in the mean for every
-frame whose move keeps the Haar measure (Section 5.1 below proves this; it is two lines beyond Corollary WN1).
+sits before the crux, and its sign form fails in the mean for every frame whose move keeps the Haar measure,
+unless the ring action is invariant under the move (Section 5.1 below; it extends Identity AV of row 1016).
 *Kind:* with bare links, (K-one) and false in the sign form; with blocked frames it is the background field of
 Balaban's account, a (K-flow) statement that holds only above the band (row 1013 6.2, ARGUED there).
 
@@ -269,18 +269,19 @@ For each line: the critical-path item it moves, what changes if it succeeds, and
 | C (GS-CAS), (NO-CONST) | (W) given (BDD-Delta) | the gap | it is (LIOU) | **renamed**; no row |
 | D (TB)_n | flux half at one coupling | a classical theorem (area law of the odd sector at every coupling); not (W) | at the non-abelian sign of bond moving; no mechanism | off the path of (W); no row now |
 | E (LIOU) | (W) | the gap | it is the crux; no mechanism | no direct row |
-| F soft (BDD-Delta) | (BDD-Delta) | as B | 5.3: needs a lower bound on a glued partition function; reflection positivity gives only the upper bound | one short row could decide whether a soft form exists; see 7.2 |
+| F soft (BDD-Delta) | (BDD-Delta) | as B | 5.3: needs a lower bound on a glued or twisted partition function; reflection positivity gives only the upper bound | tried here in the forms (BL), (BL-c): seven mechanisms stop (5.3); parked with a reopen condition (7.3) |
 | G C1, C2 | none without a consumer | - | 5.2 | **stop**; one check row for 5.2 |
-| I (DEC); (SER), (SPR) | (CAS) through a short step | the gap, if (L1), (L3) also hold | at the blind half first (5.2, Lemma BL-need) | the blind half is the cheap decisive test: 7.1 |
+| I (DEC); (SER), (SPR) | (CAS) through a short step | the gap, if (L1), (L3) also hold | at the blind half (L1) first (5.3) | no row; it waits for the blind half |
 
 **Hardest-first.** The place where every stiffness-type line (A, G, I, and the 2D ports of rows 1009-1048) can die
 cheaply is not its selective half. It is its blind half: in 2D the bound "response at most the coupling times the
 classical cost, at every pin and every scale" is one line (drop the variance); in 4D it is not on record at any
 scale inside the band, for any pin class, and every positivity tool the lane has bounds the response from below,
-not from above (5.2). If the blind half has no proof, no selective gain can be iterated, and those lines stop
-together. So the first row should attack the blind half in its smallest exact form (7.1). The selective half and
-(LIOU) are harder, but no mechanism is on record for them, so a row there would restate the crux (the lead's own
-rule in `parts/gap.md` L87-89).
+not from above (5.3, attempt 4). If the blind half has no proof, no selective gain can be iterated, and those lines
+stop together. So this row attacks the blind half in its smallest exact forms (5.3). Seven mechanisms stop there,
+each with its value or its obstruction, and the statement is parked with a reopen condition (7.3). The selective
+half and (LIOU) are harder, but no mechanism is on record for them, so a row there would restate the crux (the
+lead's own rule in `parts/gap.md` L87-89).
 
 ## 5. Task (3): the top lines, tried by hand (step 5)
 
@@ -405,8 +406,9 @@ commutator field is a fourth-order response to additive covariant gradients, plu
 field along sigma_3 with coefficient Im(conj(phi_x) e^(2 i alpha_l) phi_y) up to the sign convention. So commutators of
 transverse gauge parameters generate abelian boundary fields, as in the spin model.
 
-**Lemma SF-D (the cost form is the Dirichlet form of the boundary; PROVED).** Slab (Z/L)^3 x {0, ..., T}, homogeneous
-beta, the spatial links of the slices 0 and T pinned to 1, everything else integrated; E the pinned expectation.
+**Lemma SF-D (the cost form is the Dirichlet form of the boundary; PROVED).** Slab (Z/L)^3 x {0, ..., T}, L >= 3, T >= 1,
+homogeneous beta, the spatial links of the slices 0 and T pinned to 1, everything else integrated; E the pinned
+expectation; F and B below live on the top slice (F = 0 on the bottom sites).
 For a top link l let p(l) be the one interior plaquette that contains l, and xbar_1 = E[t_(p(l))] (the same for all
 top links, by the symmetries of the slab). For a field B on the top links let X(B) = - sum_l B_l . N_l (row 1011,
 Proposition A (iii)). Then:
@@ -492,6 +494,48 @@ ceilings of `parts/gap.md` L227).
    (the count in attempt 2). Bare links are not that smooth at any coupling of the trajectory (Lemma FR). Blocked
    links are, where the account controls them. So the blind half is on record above the band only (ARGUED; it is
    Balaban's extraction of (1/g_k^2) A(U_k(V)), CMP 109, as row 1013 5.1 says).
+6. A frame from the slice itself: the axis of the holonomy of each line of one direction. It is exactly parallel
+   along its own line at every configuration. Neighbouring lines of length L have axes that are not close (their
+   holonomies differ by a product of L plaquette factors), so the plaquettes between two lines pay a mass-like
+   term: no gain over attempt 1. FAILS (ARGUED; not computed).
+7. The twisted torus as a torus twisted by exact symmetries (Lemma K4 below), then Jensen with a conjugation
+   U_l = c(x) V_l c(x)^(-1) (x the tail of l) by a site function c with c(x + L e_a) = +- Omega_a^(-1) c(x), a = 1, 2. Such a
+   c exists on the lattice (choose it on one period cell), the map keeps Haar measure and carries periodic fields
+   to twisted ones. Each plaquette then has the insertions c(x)^(-1) c(x + mu), c(x + mu)^(-1) c(x + nu), c(x + nu)^(-1) c(x)
+   at three of its corners, and by the gauge average at those three sites (the argument of Lemma JEN (ii) of row
+   1013, applied to each insertion k = cos(phi) + sin(phi) n: its Haar average over conjugations is cos(phi)) the
+   mean of the plaquette is multiplied by the product of the three cosines. Jensen gives
+   Z_tw/Z >= exp(- beta xbar sum_p (1 - product of the cosines)), xbar the mean plaquette of the periodic torus.
+   Lower bound for this exponent: let d(x) in [0, pi/2] be the distance from {0, pi} of the class angle of
+   c(x)^(-1) c(x + e_1). Each of the three plaquettes (x; 1, nu) has 1 - product >= 1 - cos d(x) >= 2 d(x)^2/pi^2. Along each
+   of the L^3 lines of direction 1 the rotation Ad(c) turns by Ad(Omega_1), a half-turn, so the d(x) add to at least
+   pi/2 and their squares to at least pi^2/(4 L). Hence the exponent is at least 3 (2/pi^2) L^3 pi^2/(4 L) beta xbar =
+   (3/2) beta xbar L^2: the order of the thin sheet (2 beta xbar L^2). FAILS (this lower bound is PROVED for every such c;
+   that no other Haar-preserving map does better is not claimed).
+
+**Lemma K4 (the twisted torus is a torus with boundary conditions twisted by constant gauge rotations; PROVED; the
+statement is 't Hooft's, RECALLED, the lattice proof is written here).** Torus (Z/L)^4, any plaquette weights that
+are class functions. Let Omega_1, Omega_2 in SU(2) and K = Omega_2 Omega_1 Omega_2^(-1) Omega_1^(-1). Let A_Omega(U) be the action in
+which a link is replaced by Omega_a^(-1) U Omega_a each time a plaquette reaches it across the seam x_a = L - 1 -> 0, a = 1, 2
+(the links of the plaquette (x; 1, nu) with x_1 = L - 1 at the sites with first coordinate 0, and the same for
+direction 2). Put U~_1(x) = U_1(x) Omega_1^(-1) for x_1 = L - 1, U~_2(x) = U_2(x) Omega_2^(-1) for x_2 = L - 1, U~ = U otherwise.
+Then every plaquette of A_Omega(U) is the ordinary plaquette of U~, except the L^2 plaquettes (x; 1, 2) with
+x_1 = x_2 = L - 1, which are Re(U~_1 U~_2 K U~_1^(-1) U~_2^(-1)) with K between the second and the third link. So for
+Omega_1 = i, Omega_2 = j (K = -1) the integral of exp(A_Omega) is Z_tw, the partition function with one co-closed sheet of
+sign-flipped plaquettes; and for general Omega it is the family Z(K) of C2 of row 1013.
+Proof. Right multiplication of a link by a fixed element keeps Haar measure. A seam plaquette (x; 1, nu), x_1 = L - 1,
+nu = 3, 4 or nu = 2 with x_2 < L - 1, is Re(U_1(x) Omega_1^(-1) U_nu(x') Omega_1 U_1(x + e_nu)^(-1) U_nu(x)^(-1)) with x' the site
+across the seam; with U_1 = U~_1 Omega_1 on both seam links it is Re(U~_1(x) U_nu(x') U~_1(x + e_nu)^(-1) U_nu(x)^(-1)). The
+same holds for direction 2. A corner plaquette is, with x' and x'' the sites across the two seams,
+Re( U_1(x) Omega_1^(-1) U_2(x') Omega_1 Omega_2^(-1) U_1(x'')^(-1) Omega_2 U_2(x)^(-1) ). Insert U_1(x) = U~_1(x) Omega_1,
+U_2(x') = U~_2(x') Omega_2, U_1(x'') = U~_1(x'') Omega_1, U_2(x) = U~_2(x) Omega_2. All constant elements cancel except
+Omega_2 Omega_1 Omega_2^(-1) Omega_1^(-1) = K between U~_2(x') and U~_1(x'')^(-1). For the quaternions i, j:
+j i j^(-1) i^(-1) = (j i)(j i) = (- k)(- k) = -1. QED
+Reading. For Omega_1 = i, Omega_2 = j the boundary condition flips two of the three imaginary components of every link
+quaternion across each seam. The configuration U = 1 is allowed and has the largest weight (PROVED: every plaquette
+of A_Omega is 1 there), so the classical cost of the centre twist is zero. So the vortex free energy - log(Z_tw/Z) is
+an entropy difference, not an energy of order beta (that no constant mode is left, and the size log beta in a small
+box at weak coupling, are RECALLED from Luscher and van Baal).
 
 **Reading (ARGUED).** (i) The lane has looked for the selective half since row 988. The blind half is as open as
 the selective half inside the band, and the 2D proofs get it for free. A 4D engine of the 2D kind therefore lacks
@@ -504,7 +548,7 @@ that enters the band from the weak side. That is the reason to rank it first: it
 it is a genuine half of the trichotomy, and the 2D analogy says it should be the easy part.
 
 No mechanism for the selective half was invented in this row. No mechanism for the blind half was found either;
-attempts 1 to 3 are the counterexamples to the three obvious ones.
+attempts 1 to 3, 6 and 7 are the counterexamples to the obvious ones, with a value or a bound for each.
 
 ## 6. Task (4): the literature lens on the path chosen (step 6)
 
@@ -552,7 +596,7 @@ port. It is a new statement, weaker than the wall.
 
 No proof row is proposed on (LIOU), (GS-CAS), (TB)_n, (DEC), (SER) with (SPR), (N1)-(N3) or (INV): for none of them is
 a mechanism on record or found here, and a row would restate the crux or a prerequisite of it (the lead's rule,
-`parts/gap.md` L87-89). Three rows follow. The first is a check and should run first: this row recommends stopping
+`parts/gap.md` L87-89). Two rows and one parked entry follow. The first is a check and should run first: this row recommends stopping
 two lines (A and G) and re-ranking the lane on the blind half, and the cross-provider checks have overturned
 broad verdicts of this kind before (`parts/gap.md` L97-98, L139, L146-147).
 
@@ -604,45 +648,35 @@ broad verdicts of this kind before (`parts/gap.md` L97-98, L139, L146-147).
 - **Stop condition:** if the account does not state the localisation of E_0^(j) (only of the explicit constants, as
   Lemma C of row 993), the row ends with the exact missing statement, named by CA label.
 
-### 7.3 Row `gap-blind-half` (an attack with tests first; third, and only after 7.1)
+### 7.3 `gap-blind-half`: NOT proposed as a proof row now; a registry entry with its reopen condition
 
-- **Statement, smallest exact form:** (BL-c) at one fixed coupling. For Wilson SU(2) at one beta of the window
-  2.3 to 2.6 (or every beta): there is c(beta) > 0 with Z_tw(L^4)/Z(L^4) >= c(beta) for every even L >= 4, Z_tw the
-  partition function with the plaquettes of one co-closed sheet of one plane taken with the opposite sign. A
-  second form if the first resists: (BDD-Delta) at one coupling, sup over a of D(a; beta) finite.
-- **Kind:** (K-one), uniform in the size, with no number required. Not the crux: it holds for compact U(1) (one
-  line, 5.3) and it does not give a seed. It is selective against frozen Z_2 (false there at large beta).
-- **Consumer:** for (BL-c): the exclusion of the branch with degenerate flux sectors, the constants log m of
-  Proposition CONST (row 1028) and (NO-CONST) of row 1032, at one coupling; for (BDD-Delta) at one coupling: branch (II)
-  of the trichotomy for a constant family. Neither reaches the trajectory without a carry; the row must say so.
-- **What a proof would change in (W):** nothing at once. It would be the first size-uniform bound from above on
-  a twist free energy for a non-abelian group outside strong coupling, and it would test whether ANY flow with a
-  classical cost exists at order-one coupling. If it fails with a written obstruction, every stiffness-type line
-  (A, G, I and the ports of rows 1009-1048) stops with it.
-- **Mechanisms to try, in this order, each with its first lemma:** (1) the Klein four-group form: the twisted
-  torus is the torus with periodicity up to the constant gauge rotations by i sigma_1 and i sigma_2 in the two
-  directions (twist eaters; RECALLED, to be written as a lemma), so Z_tw/Z is a ratio for a twist by exact
-  symmetries of the link measure that commute in SO(3); first lemma: write this identity on the lattice and
-  compute both sides on the 2^4 torus at first order in beta. (2) A flow built from the slice holonomies (Lemma
-  FLOW with Theorem EXT: the cost of the best flow is the response); first lemma: the cost of the holonomy-axis
-  flow of one direction on a torus of two slices. (3) Reflection positivity in the twist plane as a relation
-  between Z_tw at sizes L and 2L (it bounds from above; record the exact inequality and why it does not close).
-- **Reading list:** 5.2-5.3 here; row 1013 4.1-4.4, 5.1 with its gpt-6-astra check; row 1018 3.2 (Lemma PAR), 4.1
-  (Lemma FLOW), 7.4 (Corollary MP); row 1046 4.1-4.2 (POLY, EXT); row 1025 6.1 (Lemma PAR-T); `gap-flux-exercise.md`
-  3.0-3.1 (twists, sector sums); the sources of Section 6, rows 1-4.
-- **Tests first:** frozen Z_2 above 2.191: the statement is false, so the proof must use a one-parameter subgroup;
-  compact U(1): true by one line, so no gain may be claimed; five dimensions: the classical cost of a spread
-  twist grows with L, so a proof that does not read the dimension is wrong; Lemma SHEET and Theorem D2: the
-  statement is at homogeneous coupling with no pin, so a proof through a supremum over pins or coupling fields is
-  bound and must be avoided; Lemma PT: the statement reads the SU(2) factor only, which is allowed for a blind
-  half and forbidden for a seed.
-- **Controls:** the one-line U(1) proof must be recovered by the same construction when the group is abelian; on
-  the 2^4 torus at small beta both sides are computable by the character expansion (hand arithmetic).
-- **Numerics:** not needed; the truth of the statement at beta 2.3 to 2.6 is not in doubt (GUIDE: published vortex
-  free energies fall with the size). A run could only guide the choice of flow.
-- **Stop condition:** two mechanisms dead with written obstructions. Then record that the blind half has no route
-  below the account, and park lines A, G and I with it.
+Section 5.3 tried seven mechanisms for an L-uniform bound and each stops. By the lead's rule (no mechanism, no proof
+row) this row does not ask for an attack. The entry is written so that a later row can start from it.
 
-**Which first, and why.** 7.1, because it gates the two stop verdicts and the new ranking. Then 7.2, because it is
-a port with a mechanism and two lines share its output. 7.3 is the only attack; it goes where a whole family of
-lines could die at low cost, which is the hardest-first rule applied to a statement that is weaker than the wall.
+- **Statement, smallest exact form:** (BL-c) at one fixed coupling. For Wilson SU(2) at one beta: there is c(beta) > 0
+  with Z_tw(L^4)/Z(L^4) >= c(beta) for every L >= 3, Z_tw as in Lemma K4. Second form: (BL) of 5.3. Third form:
+  (BDD-Delta) at one coupling, sup over a of D(a; beta) finite.
+- **Kind:** (K-one), uniform in the size, no number required. Not the crux: (BL-c) and (BL) hold for compact U(1) by
+  one line (5.3). (BL-c) is selective against frozen Z_2 (false there at large beta), so a proof must use a
+  one-parameter subgroup. (BDD-Delta) has no theorem-grade control in the lane even for U(1) (`gap-dichotomy.md`
+  L367-368), so (BL-c) and (BL) are the forms to use.
+- **Consumer:** (BL-c): at one coupling, the exclusion of the branch with degenerate flux sectors (the constants
+  log m of Proposition CONST, row 1028; (NO-CONST), row 1032). (BL): the blind half (L1) of any short step with a
+  response (row 1018 2.1). Neither gives a seed. Neither reaches the trajectory without a carry.
+- **Dead mechanisms (5.3):** lab frame (exact value beta xbar_1 L); temporal-gauge frames (beta^(2/3) L); commutator
+  families on pin space (no gain); positivity (bounds from the wrong side); holonomy-axis frames; the Klein
+  four-group form with Jensen and a conjugation (exponent at least of order beta xbar L^2).
+- **Reopen condition:** a flow, in the sense of Lemma FLOW, whose cost on a cell of side L at order-one coupling is
+  bounded by the classical action; equivalently a gauge-covariant colour direction that is parallel to accuracy
+  1/L on the fluctuating links of the cell, built without the account's blocked fields; or an upper bound of a
+  twist response from an exact identity that is not Jensen's inequality.
+- **Tests for any future attempt:** frozen Z_2 above 2.191 (false); compact U(1) (true by one line; zero gain);
+  five dimensions (the classical cost of a spread twist grows with L); Theorem D2 and Lemma SHEET (the statement
+  has homogeneous coupling and no pin; a proof through a supremum over pins or coupling fields is bound); Lemma PT
+  (the statement reads one factor: allowed for a blind half, forbidden for a seed); Lemma CEN+ and Lemma WN (no
+  field-independent family of link moves with a curl cost).
+
+**Which first, and why.** 7.1, because it gates the two stop verdicts and the new ranking. Then 7.2, the one proof
+row with a mechanism; two lines share its output. 7.3 is a parked statement: it is where a whole family of lines
+dies at low cost, and this row found no way in. So this row proposes one check row and one proof row, and no
+attack on the band.

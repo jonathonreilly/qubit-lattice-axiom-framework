@@ -476,3 +476,65 @@ unverified (Section 4, caveat); (3) "it renames the flux half": it replaces it b
 q^(-1 + 1/(L'_3 L'_4)) (Section 2). No mark changes.
 
 - 00:54Z Step 7 done. Next: Step 8, verdict table and RESULT.
+
+Source check added at 00:55Z: Ito and Seiler arXiv:0803.3019v1 (fetched to `/tmp/row1029-lit/is0803`). Theorem 2.2 (2)
+reads "Let G = U(1). Then there is a beta_0 < infinity such that for beta > beta_0 lim_(L_3 L_4 -> infinity) F/(L_3 L_4) >= ..."
+(a deconfinement bound), and p. 16 reads "For large beta and r = 1 such a t* does not exist, whereas for r < 1 t* may
+exist, but does not imply confinement". Row 1025's readings at L219-220 and L279-280 are faithful.
+
+## 8. Step 8: verdict table and report
+
+Provenance: checked line by line by Claude Opus 5.5 (max effort, Mac mini worker 1, commit 92ab0f7ca), the same
+provider as the writer (Claude Fable 5.2). This is one reading by one model; it is not an audit and not a
+cross-provider check. First failing step: none.
+
+### 8.1 Verdicts (W1's list and row 1029's list)
+
+| Statement (row 1025 anchor) | Verdict | Where checked | Correction, if any |
+|---|---|---|---|
+| Proposition BR (a)-(d) (L233-248, L262-273) | HOLDS | 4 | caveat: "with r = 1 the flow is Ito's theorem" holds in coefficient form; the norm form of (O-flow) is unverified (row 1025's own L200-203) |
+| Proposition BR (e), L257-259 "the trapping domain and the endpoint bracket are the same statement" | HOLDS AFTER CORRECTION | 4 | one-way: a trapping domain implies the bracket on its alpha-range; the bracket alone gives (4.12)/(5.17); the converse (bracket gives a Meyer domain or a solution of (4.9)) is not shown |
+| Lemma FAC (L340-347) | HOLDS | 3.2 | - |
+| Test-table cell Lemma PT x DEC (L375) | HOLDS AFTER CORRECTION | 3.2 | add "given also Ito's flow for the U(1) factor" |
+| Estimate RATE (L353-369), ARGUED | arithmetic HOLDS; mark ARGUED right | 4 | - |
+| Identity MIS (L424-440) | HOLDS | 5 | - |
+| Proposition RS (i)-(iii) (L471-489) | HOLDS (W1.7 passes) | 5 | - |
+| Rate paragraph (L491-499), ARGUED | HOLDS as ARGUED | 5 | - |
+| SI reading (L501-507) | HOLDS AFTER CORRECTION | 5 | "kept exactly under (RATE)" -> "kept under (RATE), not kept when n_j - e_j -> infinity" |
+| Corollary EVEN (L515-523) | HOLDS (given H_DEC) | 5 | RS (i) is applied with constant e_j; its proof covers this |
+| Lemma PAR-T: Fact 1, Fact 2 (W1.2), (i), (ii) (L556-602) | HOLDS | 6 | - |
+| Lemma PAR-T (iii) sign claims and Remark (4) (L594-595, L613-614) | HOLDS AFTER CORRECTION | 6 | add "if rho <= 1 (true for the required pairs of row 800, by (K9))"; counter-example without it in 6 |
+| Proposition KR (L616-629) | HOLDS | 6 | - |
+| Arithmetic of 6.3 (L643-657) | HOLDS | 6 | kappa^(i+1) is a weaker valid bound for kappa >= 1; "only under kappa^2 phi < 1" is relative to the sup-cost arithmetic |
+| Proposition SIGN, Lemmas LT, HT (L680-736) | HOLDS (T1 by hand on 6^4 -> 3^4: limits 4^8 and 4^35) | 2 | thresholds depend on the torus; weak side needs r > q^(-1 + 1/(L'_3 L'_4)) |
+| 4.4 point 2 (TB fails for Z_2 at large beta) | HOLDS for n = 1 as proved; for every n by a one-line extension | 7 | cite the extension or say "n = 1" |
+| Identity MOV (i)-(iv) (L758-781) | HOLDS (T2: the squared-mean term is >= 0 and works against (TB); W1.6 passes) | 3.1 | - |
+| 4.4 point 3, "renames the flux half" (L390-394) | HOLDS AFTER CORRECTION | 7 | (TB)_n implies the flux half and is not known to follow from it; the FAIL as a step stands |
+| FAILS on Question 2 (L400-533) | HOLDS | 5 | a hand-proved valid-form support exists: CE/OM are group-blind and (TB)_1 fails for Z_2 (SIGN) |
+| FAILS on Question 3 (L536-665) | HOLDS | 6 | - |
+| Ways 1-3, 7.3 (ARGUED), 8.3 | HOLD as marked | 7 | - |
+
+W1's test-first items: (1) BR (a) PASS, (2) Fact 2 (b) PASS, (3) Lemma LT step (2) and g_0 per cell PASS, (4) Lemma HT
+parity PASS, (5) delta' = q r delta^q (1 + O(delta^q)) PASS, (6) MOV (ii) / the coarse stack PASS, (7) RS (iii) second
+part PASS. Row 1029's: T1 PASS, T2 PASS, T3 PASS (with the cell correction). In the FINISH rule's terms: no WRONG;
+every proved item is CORRECT-NO-ADVANCE for (W), as row 1025 itself reports.
+
+### 8.2 What this changes
+
+Nothing in row 1025's conclusions changes. Five wordings need the corrections in 8.1 (BR (e) and the RESULT's
+"one inequality"; the Ito norm-form caveat; the cell L375; the SI "exactly"; PAR-T's rho <= 1; "renames"). W1 passes,
+so W2 (bookkeeping in `parts/gap.md`, the lead's) can go ahead; its item (c) should read "(K-RESP) = log(1 +
+container cumulant) for the required pairs (rho <= 1 by (K9))".
+
+### 8.3 What this check did not cover
+
+Ito's 1985 flow theorem and Kanazawa v3 (not read); Ito and Seiler 0711.4930 (not read; 0803.3019 read at Theorem 2.2
+and p. 16 only); T (6.6)-(6.14), the coarse expansion (cited by row 1025, not checked); Mack and Petkova (not read; row
+1018's Corollary MP is used only as a statement); row 1017's Proposition OM (d) and Lemma PT-inf (taken as checked by
+row 1019); row 793's consumer clauses (L655-656 of row 1025). No numeric run: the smallest torus has 324 links, the row
+asks for a hand test, and memory was not measured. No subagents. Scratch: `/tmp/row1029-lit` (three PDFs and text
+dumps), `/tmp/row1029-scripts` (one PDF-to-text script). One file written in the checkout (this one). No commit, no push.
+
+- 00:56Z Step 8 done. RESULT below.
+
+RESULT: Row 1029 (Claude Opus 5.5 max, Mac mini worker 1; same provider as the writer, so not a cross-provider check) checked row 1025 line by line, first failing step none, no FAILS. HOLDS: Proposition BR (a)-(d), Lemma FAC, Identity MIS, Proposition RS (W1.7 passes) with Corollary EVEN (given H_DEC), Proposition KR, the arithmetic of 6.3, Proposition SIGN with Lemmas LT and HT (by hand on 6^4 -> 3^4: limits 4^8 at weak and 4^35 at strong coupling; extended in one line to every n), Identity MOV (the squared-mean term is >= 0 and works against (TB)), and the FAILS verdicts on Questions 2 and 3 (Question 2 also has a hand-proved valid-form support through SIGN). HOLDS AFTER CORRECTION (wording, no conclusion changes): BR (e), where "the trapping domain and the endpoint bracket are the same statement" is only one-way (a domain implies the bracket; the bracket makes the domain unnecessary); the test cell Lemma PT x DEC, which also needs Ito's flow for the U(1) factor; Lemma PAR-T (iii), whose sign claims need rho <= 1 (true for row 800's required pairs by (K9), false for general weight fields); the SI reading's "exactly under (RATE)"; and 4.4 point 3, where (TB)_n implies the flux half but is not known to follow from it. Caveat kept: "with r = 1 the flow is Ito's theorem" holds coefficient by coefficient; the norm form is unverified. Still open, not moved: (TB)_n for SU(2), (CB-mom), (SER), (SPR), (EV-STEP), (LIOU), (BDD-Delta), (W).

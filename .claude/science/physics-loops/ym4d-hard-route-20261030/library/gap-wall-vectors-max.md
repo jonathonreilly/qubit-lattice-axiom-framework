@@ -104,6 +104,11 @@ Marks: NEW = not found in `library/` and `parts/` of this folder by the greps na
 | e7 Gribov | convex region | FOUND: row 1032 B8 (not selective). |
 | e8 instantons | - | FOUND: exercise 4 input 15; K8. No mechanism. |
 | e10 only strong coupling gives non-abelian gaps | a third source | NEW: the posted two-dimensional theorems, imported at an exact point (V1, Lemma ANCH). |
+| c9 one tool for the whole gap | combine tools by scale band | FOUND: the two kinds of input and the engine, seed and carry are separate tools already (`parts/gap.md` L47-50). No vector. |
+| c10 clustering apart from the gap | one statement | FOUND: row 838 items 10, 14, 37; fact A2 of row 1052. No vector. |
+| e12 universality | the gap may depend on the action | FOUND as an open question with no route: (UNIV-FP). No vector. |
+| d4 "it needs a small number" | read it as a range | FOUND: the ceilings are recorded as ranges (`parts/gap.md` L227). No vector. |
+| d8 "it also holds for 2D O(3)" | - | FOUND, corrected by row 1052 5.1: the 2D model is a source of mechanisms (`parts/gap.md` L95-96). V1 uses the 2D theorems as an input, not as a test. |
 | S1-S6 of row 1052 | - | S1: V1, V3. S2: no mechanism found. S3: row 1052's T_JW-lat; V5 corrects its test list. S4: V1 reads pins, not partition functions. S5, S6: no vector. |
 
 #### 3.2 Vector V1 (NEW): the flat-plane face of the anisotropic Wilson family
@@ -156,7 +161,7 @@ Tests in the exact form of the lane's kill sheet, `library/gap-invent-selective-
 |---|---|
 | K5 compact U(1) | Lemma RIG holds for every compact group. The commutator gain behind (FACE-CH) vanishes for an abelian group, as K5 requires. (FACE-SG) is false for U(1) at large coupling at the Gaussian level (step 6, ARGUED). Pass, as a constraint. |
 | K6 frozen Q_8, 2T; and V5 Pin(2) | The twist uses infinitesimal rotations. For a finite group Lemma RIG is void. For Pin(2) the Lie algebra is abelian and the gain vanishes. Pass. |
-| K7 five dimensions | (FACE-CH) is a statement on two-dimensional planes. It holds verbatim in a 2+3 split. So it is blind to the dimension and cannot be the gap. The dimension must enter (FACE-SG): the stiffness of a block of b^(d_perp) sheets scales like b^(d_perp - 2), marginal only for d_perp = 2 (ARGUED). |
+| K7 five dimensions | (FACE-CH) is a statement on two-dimensional planes. Any proof of it would hold verbatim in a 2+3 split. So it is blind to the dimension and cannot be the gap. The dimension must enter (FACE-SG): the stiffness of a block of b^(d_perp) sheets scales like b^(d_perp - 2), marginal only for d_perp = 2 (ARGUED). |
 | K3, K3' pinned sets | (FACE-CH) is uniform over pins on the boundary of a cell in u. Such pins cut out systems that are at most two-dimensional in u, so no ordered three-dimensional sheet arises. Pins on transverse link sets are not in the class. Pass in this restricted form. |
 | K4 SHEET, fixed-b form | (FACE-CH) may be uniform over transverse plaquette strengths in [0, b], because every cut-out system keeps the rigid group. (FACE-SG) must not be claimed uniformly over coupling fields; it is stated for constant beta_T only. |
 | K1 product | The product of the SU(2) face with a compact U(1) face has G-charged decay of the SU(2) factor and no singlet gap. So "(FACE-CH) gives (FACE-SG)" FAILS as a soft implication. (FACE-SG) must read the whole state space. |
@@ -277,14 +282,14 @@ With eps_j = C/(j log 2 + log N_0) the product is exp(- (1 + o(1)) J log J): fas
 
 - **Compact U(1) on the face.** Angles theta_i(u, x), i = 2, 3. Quadratic action (beta_M/2) sum (d_u theta_i)^2 + (beta_T/2) sum (d_2 theta_3 - d_3 theta_2)^2. In Fourier variables (p for u, q for x) the form is beta_M p^2 on the gradient direction q and beta_M p^2 + beta_T q^2 on the curl direction. The curl field B is G-invariant and local, and its correlation at equal x has the transform integral d^2q q^2/(beta_M p^2 + beta_T q^2), which contains p^2 log p^2. So the correlation decays like abs(u)^(-4): no singlet gap. The charged correlation exp(i(theta_i(u) - theta_i(0))) has exponent 1/(4 pi beta_M) from the gradient modes: a power law.
 - **The estimate behind 4.2.** One loop, recalled: d(1/g^2)/d log mu is 11 N/(24 pi^2) in four dimensions and N/(8 pi) for the chiral field with action (1/g^2) tr abs(d Phi)^2; for N = 2 these are 0.0929 and 0.0796, ratio 3 pi/11. At equal lattice coupling the scales are exp(2.69 beta) (four dimensions) and exp(pi beta) (decoupled sheets). A sheet seen at the two-dimensional scale a_perp has coupling g(a_perp), hence xi_2 = (a_perp/a_long) exp(4 pi/g(a_perp)^2), which gives the formula of 4.2.
-- **The dimension count behind 4.1.** Under blocking of the transverse directions only, by b, the leading-order couplings go to (b^2 beta_L, beta_M b^(d_perp - 2), beta_T/b^2). For d_perp = 2 the mixed coupling is marginal and the flow goes toward the anchor corner; its last steps are at strong coupling at the transverse scale, which is the band again. For d_perp = 3 the mixed coupling grows.
+- **The dimension count behind 4.1.** With lattice spacings a_long and a_perp in dimension 2 + d_perp the classical couplings scale as beta_L ~ a_perp^(d_perp)/a_long^2, beta_M ~ a_perp^(d_perp - 2), beta_T ~ a_long^2 a_perp^(d_perp - 4). So blocking of the transverse directions only, by b, sends them to (b^(d_perp) beta_L, b^(d_perp - 2) beta_M, b^(d_perp - 4) beta_T). For d_perp = 2 this is (b^2 beta_L, beta_M, beta_T/b^2): the mixed coupling is marginal and the flow goes toward the anchor corner; its last steps are at strong coupling at the transverse scale, which is the band again. For d_perp = 3 the mixed coupling grows like b.
 
 #### 6.7 V5: Lemma EVEN and the Pin(2) test (PROVED for the lemma; the test is belief-grade)
 
 **Lemma EVEN (PROVED).** Let T be the diagonal torus of SU(2) and j = i sigma_2. Every gauge-invariant function, restricted to configurations with all links in T, is invariant under U_l to U_l^(-1) on all links at once.
 Proof. j t j^(-1) = t^(-1) for t in T. The constant gauge transformation by j maps a T-valued configuration to the configuration of the inverses. QED
 
-**Consequence (ARGUED).** If pure SU(2) had a massless branch carried by an abelian field in the sense of abelian dominance, no gauge-invariant local observable would be odd in that field; the branch would show only in even correlations (two-photon exchange, a power law with twice the exponent). The matching comparison model is the frozen Pin(2) theory, not compact U(1): its gauge-invariant functions on the identity component are exactly the even ones. On Z^4 at large coupling its component field is flat up to rare closed sheets, the rest is compact U(1), and the Gaussian value of an even correlation, for example of x_p = cos theta_p, is 2 (the photon propagator of the field strength)^2, a power abs(x)^(-8). So the frozen Pin(2) theory is expected to have no gap on Z^4. No theorem is cited for even observables of compact U(1); this is a belief.
+**Consequence (ARGUED).** If pure SU(2) had a massless branch carried by an abelian field in the sense of abelian dominance, no gauge-invariant local observable would be odd in that field; the branch would show only in even correlations (two-photon exchange, a power law with twice the exponent). The matching comparison model is the frozen Pin(2) theory, not compact U(1): its gauge-invariant functions, restricted to the identity component, are even. On Z^4 at large coupling its component field is flat up to rare closed sheets, the rest is compact U(1), and the Gaussian value of an even correlation, for example of x_p = cos theta_p, is at leading order proportional to the square of the field-strength propagator, a power abs(x)^(-8). So the frozen Pin(2) theory is expected to have no gap on Z^4. No theorem is cited for even observables of compact U(1); this is a belief.
 
 **What it changes.** Row 1052 6c found that frozen Q_8 and 2T do not test tools aimed at T_JW-lat. The requirement that those tests carried, K6 ("the selective identity must use the Lie algebra, not only that the group is non-commutative"), stays in force for T_JW-lat on the authority of Pin(2), in a sharper form: the identity must use non-commuting infinitesimal rotations. Pin(2) is non-commutative, infinite and has a Lie algebra; it fails only that. On file before: one line (row 859 idea 12 lists Pin(2) among amenable groups). Not on file: Pin(2) as a test model.
 
@@ -298,3 +303,85 @@ At beta_L = beta_T = infinity on a simply connected lattice the transverse links
 - Failed: a bridge from the face to the isotropic model. (BR-L) contains the target at one coupling; (BR-L') has no mechanism.
 - Left, as exact statements: (FACE-TW) (a port); (FACE-SG) (the wall, with the frame problem in transverse form); (BR-L').
 - Exact point where I stopped: after Proposition ITER. I did not read OpenAI's text, so (FACE-TW) is OPEN, not ARGUED.
+
+### Step 7 result: literature lens on the new path (task 6)
+
+Method. Metadata only, by the arXiv API and Crossref, each batch into its own new folder (`/tmp/row1053-lit-a` to `-d`), parsed by scripts kept apart in `/tmp/row1053-scripts` and run with `python3 -I`. No paper was downloaded. Nothing is committed. "Abstract read" means the arXiv abstract only. The lane was searched first: "Orland" 3 files (orbit-space metric and a Griffiths inequality, not the papers below), "Verlinde" 0, "longitudinal rescaling" 0, "deconstruct/quiver" 0.
+
+| Source | What it holds for this row | Read state |
+|---|---|---|
+| P. Orland, "Integrable models and confinement in (2+1)-dimensional weakly-coupled Yang-Mills theory", Phys. Rev. D 74, 085001 (2006), arXiv:hep-th/0607013 | **The anchor is his.** Anisotropic Yang-Mills with couplings e and e'; in an axial gauge H = H_0 + e'^2 H_1, "where H_0 is the Hamiltonian of a set of (1+1)-dimensional principal chiral nonlinear sigma models". String tension at small e' from form factors. "In the anisotropic regime, the dependence of the string tension on the coupling constant is not in accord with generally-accepted dimensional arguments." | abstract read |
+| P. Orland, "Glueball masses in (2+1)-dimensional anisotropic weakly-coupled Yang-Mills theory", Phys. Rev. D 75, 101702 (2007), arXiv:0704.0940 | "The lightest excitations are pairs of fundamental particles of the (1+1)-dimensional SU(2)XSU(2) principal chiral sigma model bound in a linear potential." This is the physics of unfreezing near the anchor: the G-charged particles are confined into singlets, and the singlet gap stays near twice the chiral mass. | abstract read |
+| P. Orland, "Near-integrability and confinement for high-energy hadron-hadron collisions", Phys. Rev. D 77, 056004 (2008), arXiv:0801.0389 | The 2+2 split in four dimensions: "In an axial gauge the effective field theory is a set of coupled (1+1)-dimensional principal-chiral models"; longitudinal and transverse string tensions. | abstract read |
+| W. Bardeen, R. Pearson, E. Rabinovici, "Hadron masses in quantum chromodynamics on the transverse lattice" (1979 report found by Crossref; journal version Phys. Rev. D 21 (1980) 1037, recalled) | Link fields as two-dimensional chiral fields. Already credited by row 1016. | recalled |
+| M. Burkardt, S. Dalley, Prog. Part. Nucl. Phys. 48 (2002) 317, arXiv:hep-ph/0112007 | On a coarse transverse lattice the parameters "are renormalised non-perturbatively by seeking regions in parameter space with enhanced Lorentz symmetry". So the Lorentz-invariant theory is approached by tuning at a coarse transverse spacing, not by a controlled limit. This agrees with the verdict of 4.2. | abstract read |
+| N. Arkani-Hamed, A. Cohen, H. Georgi, Phys. Rev. Lett. 86 (2001) 4757, arXiv:hep-th/0104005 | Latticised dimensions as a product gauge group with link fields. Not used. | abstract read |
+| C. Batista, Z. Nussinov, "Generalized Elitzur's theorem and dimensional reduction", Phys. Rev. B 72 (2005) 045137, arXiv:cond-mat/0410599 | "We extend Elitzur's theorem to systems with symmetries intermediate between global and local." The group G on the face is of this kind, with two-dimensional supports. Lemma FACE-MW is proved here directly; their theorem was not read. | abstract read |
+| N. Seiberg, S.-H. Shao, SciPost Phys. 10, 027 (2021), arXiv:2003.10466 | Subsystem symmetries. The doubly flat corner (6.8) has symmetries of this type. Not used. | abstract read |
+| A. S. Schwarz, Nucl. Phys. B 208 (1982) 141; M. Bucher, H.-K. Lo, J. Preskill, Nucl. Phys. B 386 (1992) 3, arXiv:hep-th/9112039 | Gauge theories with group O(2) or Pin(2) ("Alice electrodynamics"). The physics behind V5. No lattice theorem for the massless phase read through even observables was found (not searched beyond these two). | data confirmed; abstract read |
+| J. Ding, F. Huang, P. Yang, "Exponential decay for the two-dimensional Heisenberg model", arXiv:2611.04908 (2026-11-03) | "we prove exponential decay for the spin correlation of the spin O(N) model for N >= 3 at every inverse temperature". The spin correlation only. So at the anchor it gives the charged channel; clustering of every observable needs more (6.2). | abstract read |
+| C.-E. Pfister, Commun. Math. Phys. 79 (1981) 181; O. McBryan, T. Spencer, Commun. Math. Phys. 53 (1977) 299; R. Dobrushin, S. Shlosman, Commun. Math. Phys. 42 (1975) 31 (the last recalled) | The method of Lemma RIG and Lemma FACE-MW. | data confirmed; proofs rebuilt in 6.3, 6.4 |
+| J. Frohlich, T. Spencer, Commun. Math. Phys. 81 (1981) 527; J. Frohlich, B. Simon, T. Spencer, Commun. Math. Phys. 50 (1976) 79 | No exponential bound for the plane rotator at low temperature; order of three-dimensional O(n) layers. Used as cited facts in 6.2 and 4.1. | data confirmed; not rebuilt |
+
+**What the lens changes.**
+1. V1's anchor and V2's region are not new to physics. They are Orland's anisotropic weakly coupled Yang-Mills (2006 to 2008), obtained there with the exact S-matrix and form factors of the chiral model. New here: the Euclidean lattice form (Lemmas FACE-LIM, ANCH), the rigorous input (the posted 2D theorems in place of integrability), the selectivity statement, and Lemmas RIG, FACE-MW and Proposition ITER. "NEW" in step 3 means new to the lane, and for the anchor it now reads: found in the literature, not in the lane.
+2. Orland's own sentence on the coupling dependence, and Burkardt and Dalley's on tuning, both say that the anisotropic regime is not joined to the isotropic continuum limit by a controlled step. That is the verdict of 4.2 and of (BR-L).
+3. Orland's glueball picture gives the expected answer to (BR-L') near the anchor: unfreezing confines the charged particles and keeps a singlet gap. It is a physics computation at small e'. It says nothing at beta_T = beta.
+
+Not covered: the OpenAI texts were not fetched; they enter only through the lane's reads (rows 1007, 1009, 1010). No search was made for rigorous work on anisotropic lattice gauge theory near the chiral point.
+
+### Step 8 result: briefs, report and RESULT (task 7)
+
+Written at 2026-11-16T15:43Z (`date -u`). No numeric run was made in this row; none was needed (System-wide memory free percentage: 72%). No subagent was used. Nothing was committed or pushed. Only this file was written.
+
+#### 8.1 Plain report
+
+- **What was asked.** New attack vectors from the first-principles assumptions file of row 1052, killed fast where the tests on file apply, with hand work on the best one or two.
+- **What came out.** For 31 assumptions (the top fifteen and sixteen openers) and for S1 to S6, the lane already holds almost every drop or replacement (table 3.1, with the place for each). Five vectors were new to the lane: V1 (the flat-plane face of the anisotropic Wilson family), V2 (a parametric seed near its anchor), V3 (frozen two-skeleton arrays), V4 (the infrared measure first), V5 (the torus normaliser as a test model).
+- **Verdicts.** No vector passes the wall as a route. V2, V3 and V4 FAIL because each renames the band or the one-box estimate. V1 FAILS as a route: its bridge to the isotropic model contains the target, and its singlet step keeps the frame problem in transverse form. V5 is a test, not a route.
+- **What is proved by hand here (unchecked).** Lemma FACE-LIM, Lemma ANCH, Corollary ANCH-W, Lemma RIG, Lemma FACE-MW, Proposition ITER (an implication from the open (FACE-TW)), Lemma EVEN.
+- **The one structural finding.** If the in-plane plaquettes of one orientation are frozen, the residual gauge group is rigid along the planes, twists in it are honest, and the Mermin-Wagner estimate replaces Elitzur's theorem. This meets the reopen condition of row 1016 (line F3), but only for the charged sector. The singlet sector is moved by flux twists, which need frames on three-dimensional sets, and there the layers order. So the two-dimensional mechanism can act on colour frames and cannot, by this device, act on flux. (ARGUED; scope: this device.)
+- **The literature lens.** The anchor and its neighbourhood are Orland's anisotropic weakly coupled Yang-Mills (2006 to 2008). Credit goes there.
+- **A wording note.** (FACE-CH) in 3.2 asked for an exponential rate. After 6.5 the form that a port can reach is (FACE-TW), and Proposition ITER turns it into decay faster than every power. The exponential rate is not claimed to be reachable.
+
+#### 8.2 Brief B1 (check row; first): `gap-wall-vectors-check`
+
+- **Moves:** nothing counts from this file before it. It decides whether B2 and the lead edit B3 are worth doing.
+- **Who:** a model that did not write this file, another provider preferred.
+- **Check line by line:** 6.1 Lemma FACE-LIM (the comb tree, the weak limit); 6.2 Lemma ANCH and Corollary ANCH-W; 6.3 Lemma RIG (the identity for the two signs, the constant beta_M/2 times D, the Cauchy-Schwarz step); 6.4 Lemma FACE-MW (the capacity bound 24 t^2/log(R/r), the constants 12 pi^2 and 48 pi^2); 6.5 Proposition ITER (the decomposition K_j = (1 - eps_j) Kbar_j + eps_j R_j and the zero-average property); 6.7 Lemma EVEN.
+- **Judge, with a verdict per item:** the S0 verdicts of 4.1 to 4.4; the dimension count of 4.1 (ARGUED; is a flux twist with frames on a two-dimensional set excluded, or only not found?); the Gaussian checks of 6.6; the one-loop formula of 4.2; the claim of step 7 that Orland's papers hold the anchor (abstracts only were read here).
+- **Files:** this file; `library/gap-global-reform-max.md` L491-530, L1040 (Lemma REM, line F3); `library/gap-invent-selective-max.md` L52-63 (kill sheet); `library/prior/gap-2don-proofs-read-opus.md` L113-176.
+- **Stop rule:** a verdict HOLDS, HOLDS AFTER CORRECTION or FAILS for each item. No new attack.
+- **Output:** `library/gap-wall-vectors-check.md`.
+
+#### 8.3 Brief B2 (proof row; only if the lead wants (N3) decided apart from (N1), (N2)): `gap-face-twist`
+
+- **Moves:** route (ii), obligation (N3), in the model beta_L = infinity; registry line F3 of row 1016. It does not move (W) or T_JW-lat (step 4.1, step 5). Say so in the row.
+- **Statement to prove or refute:** (FACE-TW) of 6.5, exactly as written there: for every beta_M there are C and N_0 with W_N(eta, g eta') >= (1 - C/log N) W_N(eta, eta') for all N >= N_0, all beta_T >= 0 and all G-invariant on-site terms, all finite transverse boxes, all transverse sites x, all pins on the two layers of the annulus, all constant g in G_x.
+- **Weakest form the consumer accepts:** the same with constant pins replaced by arbitrary pins is needed for Proposition ITER. If only constant pins port, record that and stop.
+- **Inputs:** Lemma RIG (6.3) for the gradient estimates; the OpenAI text "Exponential decay in two-dimensional classical O(n) models" (2026-09-23), Lemma 2.1, identities (2.10)-(2.12), Proposition 2.2, Lemma 3.2, Proposition 3.1, to be fetched into a new folder and read in full (this row read only the digest of row 1007); row 1051, Section 5, once it is on the branch (it ports the same engine to the pin space of a cell of the isotropic model; compare before proving anything twice).
+- **Method named:** the port, with beta replaced by 4 beta_M and the rotation group acting at one transverse site. The mechanism is OpenAI's; nothing is invented.
+- **Fact tests to run on the result:** compact U(1) (the statement must fail: Gaussian power law, 6.6); Pin(2); the product with a U(1) face (the statement may hold; no claim on singlets may follow); the 2+3 split (it must hold there too, so it is not a gap statement).
+- **Stop rule:** a full proof, or the first line of the OpenAI argument that does not port, with the reason. Not in scope: (FACE-SG), (BR-L), an exponential rate.
+- **Kind (rule W2):** (K-one); it reads no first-passage data.
+- **Output:** `library/gap-face-twist.md`.
+
+#### 8.4 Brief B3 (lead edit, if B1 holds)
+
+- In `parts/gap.md`, test table: add "frozen Pin(2) (torus normaliser)" as a GUIDE-grade test for tools aimed at T_JW-lat, with the requirement "the selective identity must use non-commuting infinitesimal rotations" (6.7). It replaces, for T_JW-lat, the content that Q_8 and 2T carried before row 1052's scope correction.
+- In the same table: add the anchor (infinity, beta_M, 0) as a positive control with the three-way separation of 6.2. Credit Orland (anisotropic Yang-Mills as coupled chiral models), Bardeen, Pearson and Rabinovici (transverse lattice), OpenAI and Ding, Huang and Yang (the two-dimensional theorems), Frohlich and Spencer (the plane rotator).
+- In the registry note for line F3 of row 1016: the reopen condition is met in the limit model beta_L = infinity, for the charged sector only; flux twists need three-dimensional frames (4.1). Mark it ARGUED until B1.
+
+#### 8.5 Not proposed, and why
+
+- A proof row on (FACE-SG) or (BR-L): no mechanism; (BR-L) contains the target.
+- A row on the expansion about the anchor (region R of V2): no consumer in a chain to (W); the physics is in Orland's papers.
+- A row on V3 or V4: each renames an open statement.
+- A theorem on Pin(2): not on the path; the test is useful at GUIDE grade.
+- Another assumptions pass: table 3.1 found the lane's map again, as row 1052 did.
+
+#### 8.6 Strong words, read against the run
+
+"NEW" means: not found in `library/` and `parts/` of this folder by the greps named in steps 2 and 3; open PR branches were not searched; for the anchor, step 7 found it in the physics literature. "No vector passes" means: none of V1 to V5; it is not a claim about vectors nobody named. "FAILS" for V1 to V4 is at the kill test S0 with the argument written in step 4; each is ARGUED, not a theorem. "Proved by hand" means written in this file and checked by no one. Every literature item was read as an abstract or taken from a lane digest, as marked.
+
+RESULT: Row 1053 (Claude Fable 5.2 max, Mac mini worker 2; one session, checked by no one): 31 assumptions of row 1052 plus S1-S6 answered one by one; nearly every drop is already on file; five vectors new to the lane, none passes the wall. V1 (freeze the (0,1) plaquettes: the anisotropic face beta_L = infinity, where the residual gauge group is rigid along the planes; anchor at beta_T = 0 = Orland's coupled chiral models, gapped at every mixed coupling GIVEN the posted 2D O(4) theorems, and selective against U(1) and finite groups by theorems) FAILS as a route (its bridge (BR-L) contains the target; flux twists need three-dimensional frames, ARGUED) and leaves PROVED by hand Lemmas FACE-LIM, ANCH, RIG, FACE-MW (frame forgotten at rate 12 pi^2 beta_M/log(R/r), blind) and Proposition ITER ((FACE-TW) gives charged decay faster than every power); V2 (parametric seed near the anchor), V3 (frozen two-skeleton arrays), V4 (infrared measure first) FAIL as renamings (ARGUED); V5 (frozen Pin(2), Lemma EVEN PROVED) survives as a GUIDE-grade test that keeps K6 in force for T_JW-lat. Open: (FACE-TW) (a port of OpenAI's annulus estimate, brief B2), (FACE-SG), (BR-L'), and the wall (W) and T_JW-lat themselves; first work item is the check B1.

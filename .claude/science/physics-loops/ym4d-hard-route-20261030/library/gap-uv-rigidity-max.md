@@ -490,7 +490,7 @@ eps_j > 0 with eps_j -> 0. Put
   every size up to rho (eps/(p - 1))^(1/4) l_1 is within eps of that. So (UV-KEPT; c_UV) is false for TS in both forms
   of 3.1.
 
-Remarks. (1) TS has every property that Theorem CE keeps. So no proof of (a) can rest on those properties and on
+Remarks. (1) TS has every property that Theorem CE keeps (with the trivial centre grading: all levels even). So no proof of (a) can rest on those properties and on
 the existence of an ultraviolet value. (2) TS is Lemma PT-inf (ii) read at the ultraviolet end: a seeded factor
 adds to the ultraviolet value and adds nothing to the limit. Proposition NP's model (K copies of strong-coupling
 SU(2) times ordered Ising, `library/gap-crux-exercise4-max.md` L383) has the same shape; TS is its abstract form
@@ -650,6 +650,23 @@ Remarks.
    set g + (d - 1) rho, and f is at most - (g (d - 1)/2) log beta + C. So D(n; beta) >= ((d - 1) rho/2) log beta - C(N).
    For U(1) in four dimensions: (3/2) log beta again. For SU(2) in five dimensions: 2 log beta.
 4. The constant 59 n^4 + 11 is far from sharp. The lemma is a statement of divergence, not a usable number.
+5. **The dependence on the size, in the Gaussian abelian model (ARGUED; a count, one recalled fact).** Take the
+   lattice Gaussian U(1) model with compact constant modes (the spin-wave part of the Villain model) on the
+   symmetric torus with N = n^d sites. Split the link field into gauge directions, stiff directions and the d
+   constant modes. The gauge orbit has the volume (2 pi)^(N-1) N^(-1/2) (det' Lap)^(1/2), with Lap the lattice
+   Laplacian on functions and det' the product of its non-zero eigenvalues. The stiff directions are d - 1 copies
+   of the non-zero spectrum of Lap and give (2 pi/beta)^(((d-1)N - d + 1)/2) (det' Lap)^(-(d-1)/2). A constant mode with
+   holonomy angle theta has the normalised amplitude theta n^(d/2 - 1), so the d constant modes give
+   (2 pi)^d n^(d(d/2 - 1)). Recalled fact: log det' Lap = c N + 2 log n + O(1) (one eigenvalue of size n^(-2) is missing
+   from the bulk count). The powers of n add to - d/2 + 1 - (d - 1) + d(d/2 - 1) = (d - 1)(d - 4)/2. So
+
+    D(n; beta) = ((d - 1)/2) log(beta n^(d-4)) + O(1).
+
+   In four dimensions D does not depend on the size: the scale invariance of the photon. In five dimensions D grows
+   like 2 log n. In words: the coupling of the constant modes at the size n is 1/(beta n^(d-4)). For SU(2) in five
+   dimensions at weak coupling the same count gives 2 log(beta n) (GUIDE: the theory is free in the infrared, so
+   the count improves with the size). The same count for a scalar with a broken continuous symmetry gives
+   (1/2) log(beta n^(d-2)), the power of L that `gap-phys-seed.md` L336 recalls.
 
 ### 4.2 What Lemma FV says about the trajectory, and what it does not
 
@@ -787,7 +804,13 @@ an infinite value link (a) is the wall (A1 (3)).
 and "SU(2) Wilson in five dimensions, weak coupling" as families with a non-empty limit set "if D is bounded". By
 the count of Lemma FV, D is not bounded there: both sit in branch (II). The family with a photon limit is U(1) at
 one coupling. This changes no theorem of R. It changes what these two controls test: the hypothesis (BDD-Delta),
-not (LIOU). Both statements (R's and this one) rest on beliefs about the models; neither is proved.
+not (LIOU). The same correction applies to row 720: `gap-phys-seed.md` L336 says of the comparison models, five
+dimensions included, "in every comparison model the failing half is (Z-UNB), and (BDD-Delta) holds", and names a
+broken continuous symmetry as the one known kind of model where (BDD-Delta) fails; item A6 of R (L84) repeats it.
+By remark 5 of 4.1 the gauge models that are free in the infrared are of that kind too: five dimensions at weak
+coupling (D about 2 log(beta n)), and U(1) along beta_j -> infinity. So (BDD-Delta) is not automatic in the class, and
+a proof of it for SU(2) must use that the dimension is four. All of this is GUIDE or ARGUED on both sides; neither
+statement is proved.
 
 **A reading that the controls suggest (reading; on record as Observation SCH of row 1004,
 `library/gap-outside-box-max.md` L127).** At weak coupling D is (3/2) log of the inverse coupling of the constant
@@ -855,7 +878,7 @@ searched: `origin/main` and the open PR branches (not refs of this checkout); fi
 | The numbers 92 and 244 | not found in the files searched | - | new within the search scope; guard run G1 agrees. |
 | Proposition CONST | yes | CO 6.4 (L172) | found again, written out. |
 | "D is a coupling"; the three branches as three behaviours of it | yes | Observation SCH, row 1004 | found again. |
-| U(1) with beta_j -> infinity and five dimensions sit in branch (II) | not found | R L294, L300 say the opposite as conditionals | new reading, GUIDE grade. |
+| U(1) with beta_j -> infinity and five dimensions sit in branch (II) | not found; the record says the opposite | R L294, L300 (conditionals); `gap-phys-seed.md` L336 ("in every comparison model ... (BDD-Delta) holds", GUIDE) | new reading, GUIDE or ARGUED grade; the scalar case of the same count is recalled at L336. |
 
 **What the fresh pass added:** Lemma ALPHA and Corollary KEPT (the exact form of CA's item 20); Lemma REC;
 Proposition TWO with Lemma EXCL and Corollary CR-1; Lemma FV; the numbers 92 and 244; the place of two controls in
@@ -1001,8 +1024,11 @@ that the picture is pinned to one number and can be excluded?
   kept only if its value is taken by critical elements. What comes back: nothing for SU(2); for a model whose free
   value is finite and realised (frozen groups, U(1) at one coupling) the condition is kept and excludes nothing.
 - **Row 1017's test rows for U(1) with beta_j -> infinity and for five dimensions** ("limit set not empty, if D is
-  bounded"). By the count of Lemma FV, D is believed unbounded there. These families test (BDD-Delta), not (LIOU).
-  GUIDE grade on both sides.
+  bounded"), **and row 720's sentence "in every comparison model ... (BDD-Delta) holds"** (`gap-phys-seed.md` L336).
+  By the count of remark 5 in 4.1, D is believed unbounded in gauge models that are free in the infrared: five
+  dimensions at weak coupling, U(1) along beta_j -> infinity. These families test (BDD-Delta), not (LIOU), and
+  (BDD-Delta) is not automatic in the class. ARGUED for the Gaussian abelian model, GUIDE otherwise; the earlier
+  statements are GUIDE too.
 - No discard test of `parts/gap.md` changed. Rule W2 binds this route as written there (3.6).
 
 ### 8.4 Routes worth doing
@@ -1052,7 +1078,10 @@ ultraviolet normalisation is not kept unless critical elements take its value; w
 statement is (W)". (2) Test table: add the frozen values log 8, log 92, log 244 (Proposition FRZ) to the row
 "Frozen Q_8, 2T"; add to the U(1) row that the family with beta_j -> infinity sits in branch (II) (GUIDE); the same
 for five dimensions where it is used. (3) Route registry: add the row RH-uv of 6.5. (4) At `gap-phys-seed.md` L109
-and L192 the count kappa = 3 has a proved lower half on a fixed lattice: Lemma FV.
+and L192 the count kappa = 3 has a proved lower half on a fixed lattice: Lemma FV. (5) At `gap-phys-seed.md` L336 and
+at item A6 of row 1017, mark that five dimensions at weak coupling and U(1) along beta_j -> infinity are believed to
+violate (BDD-Delta) (remark 5 of 4.1, ARGUED); the sentence "in every comparison model (BDD-Delta) holds" then needs
+the words "at one coupling, in four dimensions".
 
 **Not proposed.** (1) A proof row on (UV-KEPT) or (PLATEAU): the first is the wall; the second has no mechanism and
 says that the running stops. (2) A row on the upper half of Lemma FV, or on D^+(L) at a fixed small physical size:
@@ -1078,6 +1107,7 @@ numeric study of D(n; beta) at weak coupling: it would decide nothing.
 | Lemma FV | 4.1 | PROVED by hand, unchecked; guard run agrees at the tested points | definitions only |
 | D(n; beta) = (3/2) log beta + log log beta + O(1); I8 at a fixed physical size | 4.1, 4.2 | GUIDE | counts; recalled literature |
 | Lemma FV for U(1) and in five dimensions | 4.1 remark 3 | ARGUED (same proof, not written out) | - |
+| The Gaussian count D = ((d - 1)/2) log(beta n^(d-4)) + O(1); five dimensions and U(1) with beta_j -> infinity violate (BDD-Delta) | 4.1 remark 5, 5.2 | ARGUED for the Gaussian abelian model (one recalled fact); GUIDE for SU(2) in five dimensions | - |
 | Proposition FRZ; the values log 8, log 92, log 244 | 4.3 | PROVED, unchecked; guard run agrees | Burnside; the shelling of 4.1 |
 | Proposition CONST | 4.4 | PROVED, unchecked (found again from CO 6.4) | Lemma LV's argument |
 | Controls of 5.2 | 5.2 | U(1) at one coupling, frozen Q_8 and 2T at large finite beta: BELIEF for their limit sets; TS: PROVED; five dimensions and U(1) with beta_j -> infinity in branch (II): GUIDE | - |
@@ -1126,9 +1156,10 @@ scope of 5.5. "Sound tool" (5.1): the implication is proved here and is unchecke
 none found in this run and none on record in the files read; not a proof that none exists. "Branch (II)" for U(1)
 with beta_j -> infinity and for five dimensions: GUIDE.
 
-**Run record.** Started 2026-11-16T00:21Z; report written 2026-11-16T00:56Z (both from `date -u`). One guard run under
+**Run record.** Started 2026-11-16T00:21Z; report written 2026-11-16T00:56Z; last edit (remark 5 of 4.1 and the pointers
+to row 720) 2026-11-16T00:59Z (all from `date -u`). One guard run under
 the numeric lock (4.6), memory free 68 percent before it; no other run. No subagents. Files written: this one only;
 scratch under `/tmp/ym4d-w3-uvrig/` (the skill text, two reference files, one script and its output). No commit, no
 push.
 
-RESULT: Row 1028 (Claude Fable 5.2 max, Mac mini worker 3; author, checked by no one; one guard run, no subagents). The lead's chain does not pass the wall: link (a) is false as a class-wide principle and, for SU(2), is the wall itself (target-equivalent given (BDD-Delta)); link (b) holds; link (c) is empty for the SU(2) value. PROVED by hand (unchecked): Lemma ALPHA and Corollary KEPT (every scale of a blow-down limit, its minus-infinity end included, is infrared: the alpha-limit set of an element of Omega lies in Omega; an asymptotic condition at minus infinity is kept exactly when it holds there, which is the valid form of the sentence struck by item 20 of the gpt-6-astra check); Lemma REC and REC+ (link (b): a uniformly recurrent element with a limit at one end has D constant, and with a pointwise limit it is a fixed point of the doubling); Proposition A1 (link (a) with an ultraviolet value outside [d_min, D_0], or a divergent law, is equivalent to (W) given (BDD-Delta); with a value inside it is an infrared plateau statement, (PLATEAU), OPEN with no mechanism); Proposition TWO, Lemma EXCL, Corollary CR-1 (the object that keeps the ultraviolet data is the continuum datum at fixed sizes; it is not recurrent; its forward limit set lies in Omega; so CE cannot be strengthened to keep (a)); Proposition MON+ (ultraviolet data reach the limit set only as an inequality through a monotone, which stays OPEN); the family TS (a counterexample to (a) in the class with every kept property: ultraviolet value log(m_0 p) on any number of doublings, limit log m_0); Lemma FV (task 3: on a fixed lattice torus D(n; beta) >= (3/2) log beta - 59 n^4 - 11 for SU(2), beta >= 16, so the free value is +infinity; the count kappa = 3 of row 720 now has a proved lower half); Proposition FRZ (frozen values log 8, log 92, log 244 for Z_2, Q_8, 2T, the same at every size); Proposition CONST (a constant c is a critical element iff c = log m, m >= 2 an integer: the engine, the centre grading and the spectral clause exclude no such constant; for the SU(2) value there is no element, and for a finite value link (c) names a family). Controls (task 4): the chain is a sound tool and passes them all (U(1) at one coupling and frozen Q_8, 2T end at elements that exist; products and TS make (a) false, so a proof of (a) must read the whole state space, rule W2; Theorem D2 and Lemma SHEET do not bind (a)); GUIDE-grade correction to row 1017: U(1) with beta_j -> infinity and five dimensions have unbounded D and sit in branch (II), so they test (BDD-Delta), not (LIOU). OPEN, not moved: (LIOU), (BDD-Delta), (W); the route "kept ultraviolet condition" is blocked-equivalent, with the reopen condition of 6.5.
+RESULT: Row 1028 (Claude Fable 5.2 max, Mac mini worker 3; author, checked by no one; one guard run, no subagents). The lead's chain does not pass the wall: link (a) is false as a class-wide principle and, for SU(2), is the wall itself (target-equivalent given (BDD-Delta)); link (b) holds; link (c) is empty for the SU(2) value. PROVED by hand (unchecked): Lemma ALPHA and Corollary KEPT (every scale of a blow-down limit, its minus-infinity end included, is infrared: the alpha-limit set of an element of Omega lies in Omega; an asymptotic condition at minus infinity is kept exactly when it holds there, which is the valid form of the sentence struck by item 20 of the gpt-6-astra check); Lemma REC and REC+ (link (b): a uniformly recurrent element with a limit at one end has D constant, and with a pointwise limit it is a fixed point of the doubling); Proposition A1 (link (a) with an ultraviolet value outside [d_min, D_0], or a divergent law, is equivalent to (W) given (BDD-Delta); with a value inside it is an infrared plateau statement, (PLATEAU), OPEN with no mechanism); Proposition TWO, Lemma EXCL, Corollary CR-1 (the object that keeps the ultraviolet data is the continuum datum at fixed sizes; it is not recurrent; its forward limit set lies in Omega; so CE cannot be strengthened to keep (a)); Proposition MON+ (ultraviolet data reach the limit set only as an inequality through a monotone, which stays OPEN); the family TS (a counterexample to (a) in the class with every kept property: ultraviolet value log(m_0 p) on any number of doublings, limit log m_0); Lemma FV (task 3: on a fixed lattice torus D(n; beta) >= (3/2) log beta - 59 n^4 - 11 for SU(2), beta >= 16, so the free value is +infinity; the count kappa = 3 of row 720 now has a proved lower half); Proposition FRZ (frozen values log 8, log 92, log 244 for Z_2, Q_8, 2T, the same at every size); Proposition CONST (a constant c is a critical element iff c = log m, m >= 2 an integer: the engine, the centre grading and the spectral clause exclude no such constant; for the SU(2) value there is no element, and for a finite value link (c) names a family). Controls (task 4): the chain is a sound tool and passes them all (U(1) at one coupling and frozen Q_8, 2T end at elements that exist; products and TS make (a) false, so a proof of (a) must read the whole state space, rule W2; Theorem D2 and Lemma SHEET do not bind (a)); GUIDE-grade correction to rows 1017 and 720 (`gap-phys-seed.md` L336): U(1) with beta_j -> infinity and five dimensions have unbounded D (Gaussian count D = ((d - 1)/2) log(beta n^(d-4)) + O(1), ARGUED) and sit in branch (II), so they test (BDD-Delta), not (LIOU), and (BDD-Delta) is not automatic in the class. OPEN, not moved: (LIOU), (BDD-Delta), (W); the route "kept ultraviolet condition" is blocked-equivalent, with the reopen condition of 6.5.

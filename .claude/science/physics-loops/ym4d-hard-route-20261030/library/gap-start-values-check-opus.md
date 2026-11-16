@@ -233,3 +233,126 @@ supplies them (with the two assumed clauses above); (a) is the open point, and i
 (G)/(G').
 
 Log: step 3 written at 2026-11-16T15:25:54Z (date -u).
+
+## Step 4: Lemma WT, Corollary WT1, the floor remark, and the Gaussian-model test (by hand)
+
+**Lemma WT (i)-(iv) (row 1058 L133-156): HOLDS as an implication from (a)-(c).**
+- (i) is CA-II (eq-6) (141504-141507) with D_(K-1-u) = l' L^u/(4M) - 2, l' = 2L^(min(m,m')) (from (eq-4),
+  141441-141443), and the finite sum over u <= K-1 extended to all u >= 0 (positive terms). Re-derived.
+- (ii): V_m abs(E_m/V_m - E_m'/V_m') = abs(E_m - (V_m/V_m') E_m') and V_m/V_m' = L^(4(m-m')). Correct for m >= m'.
+- (iii): with t = kappa l'/(8M), (kappa/2)(l' L^u/(4M) - 2) = t L^u - kappa, so term u = 2(E_0+1)K_* e^kappa
+  L^(4u) e^(-t L^u). Ratio of terms u+1 to u: L^4 e^(-t L^u (L-1)) <= L^4 e^(-2t) for L >= 3, and
+  2t >= 4 log L + 1 gives ratio <= e^(-1) < 1/2; the geometric sum is at most twice term 0, so
+  delta(l') <= 4 e^kappa (E_0+1) K_* e^(-t). Correct (uses L >= 3, which the account's odd large L meets).
+- (iv): delta is decreasing in l' and tends to 0 (dominated convergence over u against the floor value), so
+  E_m/V_m is Cauchy at fixed (g_0, g, K); letting m'' -> infinity in (i) for the pair (m'', m) gives
+  abs(E_m - e_inf V_m) <= V_m delta(2L^m). Correct; it needs Lemma 8.22 for every pair (m'', m) above the
+  floor at the same K, which the lemma gives (both exponents only need m'' >= m_T(g_-(g))).
+**Corollary WT1 (L158-161): HOLDS.** V_m delta(l') <= L^(4(m-m')) l'^4 * 4 e^kappa (E_0+1) K_* e^(-kappa l'/(8M))
+once t >= 2 log L + 1/2; constants depend on (L, p) only, so the bound is uniform in K, g_0, g.
+**Floor remark (C15, L173-175): HOLDS.** At l' >= 2L^11 M R: t >= kappa L^11 R/4 >= kappa L^11/4, so (iii)
+applies when kappa >= (8 log L + 2)/L^11 = 6.09e-5 at L = 3 (8 log 3 + 2 = 10.79; 3^11 = 177147).
+
+**Identity (T1) (L104-119): HOLDS.** With 2 cosh theta = mu^2 + 2 (I write mu for the model's mass, to keep
+m for the torus exponent): (e^theta - w)(e^theta - w^-1) e^-theta = 2 cosh theta - w - w^-1; the n-th roots
+are closed under inversion and prod_k (x - w_k) = x^n - 1, so det T_n = e^(-n theta)(e^(n theta) - 1)^2 and
+log det T_n = n theta + 2 log(1 - e^(-n theta)). n = 1 gives mu^2, n = 2 gives mu^2(mu^2 + 4). Readings (a)-(d)
+are correct: abs(log(1 - x)) <= x/(1 - x) gives (b); 1 - e^(-n theta) ~ n theta gives (c) and (d).
+
+**Test: the tail bound of Lemma 8.22's mechanism on the Gaussian model (by hand). PASSES.** Write
+T_n = 2cosh(theta)(1 - P/(2 cosh theta)), P = S + S^-1. Then (1/n) log det T_n = log(2 cosh theta)
+- sum_{r>=1} (1/r)(2 cosh theta)^(-r) N_n(r), with N_n(r) the number of sign strings in {+1,-1}^r whose sum
+lies in nZ. Split N_n(r) = C(r, r/2) + W_n(r): the first count (closed walks of Z, the "non-wrapping
+terms") is the same on every cycle, which is hypothesis (c) for this model; W_n(r) counts walks of
+displacement in nZ \ {0} (the "wrapping terms"), vanishes for r < n and is at most 2^r. Hence, with
+kappa_G := log cosh theta (the decay rate of the term of length r, (1/r)(cosh theta)^(-r)),
+abs((1/n) log det T_n - theta) <= sum_{r>=n} (1/r)(cosh theta)^(-r) <= e^(-kappa_G n) / (n (1 - e^(-kappa_G))),
+using that the n-independent part equals theta (the n -> infinity limit of (T1)/n). So two cycles n >= n'
+have densities within 2 e^(-kappa_G n')/(n'(1 - e^(-kappa_G))): the Lemma 8.22 form, a summable wrapping tail
+at the decay rate of the terms. Exact value from (T1): 2 abs(log(1 - e^(-n theta)))/n ~ 2 e^(-n theta)/n.
+Since kappa_G < theta, the bound is valid and loose in the rate, as a walk count must be. At theta = 1,
+n = 1: bound 1/(cosh 1 - 1) = 1.84 against exact 2 abs(log(1 - e^-1)) = 0.92. As theta -> 0 the bound
+degenerates (kappa_G ~ theta^2/2, prefactor ~ 2/theta^2), matching the exact w(n) -> -infinity of (T1)(c):
+the mechanism needs a decay rate fixed against the side, which in the account is the fixed kappa of each
+step (unit decay in that step's lattice) and the floor l' >= 2 L^11 M R. Consistent with row 1058 Step 3.
+What the test does not show: anything about the four-dimensional step normaliser; it only confirms the
+shape of (SV2) and that exact torus independence is false.
+
+Log: step 4 written at 2026-11-16T15:27:43Z (date -u).
+
+## Step 5: (5.1), (TL), Proposition RED, Corollaries SV1 and SV3-red, the (SV3) verdict, the controls
+
+**(5.1) F_m = E_m + G_m + log Z~_m(0) (row 1058 L184): HOLDS.** Definition 8.22 (eq-4) gives
+Z~_m(0) = e^(-E_m^Def) Z_m(0) with E_m^Def the full constant (140918-140922); hypothesis (a) of Lemma 8.22
+makes the lemma's E_m equal to E_m^Def less G_m (141286-141291). So F_m = E_m^Def + log Z~_m(0)
+= E_m + G_m + log Z~_m(0). The sign convention of G_m does not matter below (only abs values are used).
+
+**(TL) (L195-199): HOLDS as a recalled input, with one scope remark.** Along the account's family the
+monotone part is CA-II Lemma 8.22:lem-trace-subadditivity: "0 <= Z_{n^(mu,k)}(W) <= Z_n(W)^k" for tori with
+every n_mu even and *every integer k >= 1* (141024-141029; the inequality is 141028); at W = 0 and k = L^(m-m') (odd) in each
+direction it gives F_m/V_m <= F_m'/V_m', so f_K = lim_m F_m/V_m = inf_m F_m/V_m exists at fixed K
+(F_m/V_m is bounded below at fixed K). Identifying f_K L^(-4K) with the lane's f(beta) = inf over *all* tori
+uses the standard thermodynamic limit (Ruelle) and F(n)/n^4 >= f_infinity for every torus; row 1058 recalls
+this and does not prove it, and the account's lemma covers only even sides. It is an input of the lane's
+definition of D (row 1028), not a new claim of row 1058.
+
+**Proposition RED (L201-209): HOLDS as an implication from (WT), (G-tor), (STAB), (TL).** Dividing (5.1) by V_m:
+F_m/V_m -> f_K by (TL), E_m/V_m -> e_inf by WT (iv), G_m/V_m -> g_inf by (G-tor) (Cauchy, since c_G decreases
+to 0), so z_m -> z_inf = f_K - e_inf - g_inf. Then D(T_m) - D~(m) = (E_m - e_inf V_m) + (G_m - g_inf V_m), and
+the two brackets are at most V_m delta(l) and V_m c_G(l) (WT (iv); the limit m'' -> infinity in (G-tor)).
+Re-derived line by line; correct.
+Scope remark: (G-tor) is the *decreasing* form. The account's remark (CA-II 141531-141535) promises only a
+constant c(L, p) for the Gaussian-normaliser comparison (Step 2.4). Row 987's Corollary B (conditional on (ID)
+and its imports) gives c_det proportional to L^(-5 min(m,m')) (`gap-det-fable.md` RESULT, L556), which is the
+decreasing form; then V_m c_G(l) ~ l^4 l^(-5) -> 0, so the polynomial rate is enough for RED and SV3-red.
+
+**Corollary SV1 (L211-219): HOLDS as an implication from the same inputs.** z_m <= E_+^sharp and z_m >= -C_low
+by (STAB), so z_inf >= -C_low and D~(m) <= B V_m; add RED; D >= 0 by (TL). The final form uses
+B <= C_B(1 + log g^(-2)) (140932-140933), delta(l) <= delta-bar_vac at the floor, c_G(l) <= c_G. Uniform in K
+and g_0. For SV1 alone the account's constant form of the determinant comparison would suffice (it only needs
+abs(G_m - g_inf V_m) <= c V_m), but the existence of g_inf still needs G_m/V_m to converge, which the constant
+form does not give. So SV1 also rests on (G-tor) in a form that makes G_m/V_m converge (or on (G')).
+Row 1058 states the inputs; its claim is correct as stated.
+
+**Corollary SV3-red (L221-226): HOLDS.** Apply RED at m and at m' and use V_m >= V_m', l >= l' and the
+monotony of delta and c_G: the error is at most V_m(delta(l) + c_G(l)) + V_m'(delta(l') + c_G(l'))
+<= 2 V_m (delta(l') + c_G(l')).
+
+**(SV3) OPEN; the reasons given (L228-256): HOLD.** Quotes checked: CA-II 8.18:lem-horizon-cases (statement
+143297-143338): (i) "Suppose K+m <= K_*-1 ... N_T^dagger <= 2L^{c_gap}" with
+(N^dagger)^4 <= 16 L^(4c_gap) L^(4m_T(g^dagger)) = 16 L^(4c_gap+44) M^4 R(g^dagger)^4 (eq-horizon-cases-a);
+(ii) "m <= m_V(g) ==> K+m <= K_*-1" (eq-horizon-cases-b); (iii) beyond the horizon,
+B(g^dagger)(N^dagger)^4 <= V-bar(g,m) (eq-horizon-cases-c). Row 1058's reading is right: the prolonged run
+still ends on a residual torus of at least the floor size (2 L^(m_T(g^dagger)) per side, so at least
+16 L^44 M^4 sites), and the account bounds the residual integral only by B times that volume. Wording: the
+row writes "the error B(g^dagger)(N^dagger)^4 of its (8.18:eq-horizon-cases-c)"; (eq-c) is stated in part
+(iii), beyond the horizon; in the first volume range the same product is bounded through (eq-a). No effect.
+The grep claim (L246-251) HOLDS and extends: over the full text of CA-I/II/III (not only the index) every
+"Casimir" is a group Casimir (CA-I 3885, 164664; CA-II 26800, 27495, 27504, 60532; CA-III 76764, 76882,
+95233); "zero mode" occurs once, for the free massless scalar (CA-III 106149); "zero-mode factor" once
+(CA-II 141425); "finite-size"/"finite size" never. No statement of the account bounds the Casimir part of
+log Z~_m(0). The "exact missing statement" (log Z~_m(0) = z V_m + c_m with c_(m+1) - c_m -> 0 on the first
+volume range) is a correct name for what (SV3) needs, given RED.
+
+**U(1) control (L260-266).** (SV2) ARGUED: correct as stated (the proof of Lemma 8.22 reads only (a)-(c); the
+group enters through E_0, K_*, kappa). (SV3) "D^+(bL) = D^+(L)": HOLDS AFTER CORRECTION (scope). The shift
+D_j(bL/a_j) = D_(j+1)(L/a_(j+1)) is right, so the identity holds in [0, infinity]; "the control gives 0" needs
+D^+(L) < infinity, which row 1058 does not show for compact U(1). Plausibility (GUIDE, not proved): for a
+compact massless *scalar* in d = 4 the zero mode makes D(n; beta) grow like (d/2 - 1) log n = log n at fixed
+beta, so its D^+ would be infinite; for the Maxwell field on the 4-torus the zero-mode and determinant
+scalings cancel (ghost det' +2, gauge det' -4, flat connections +4, constant gauge volume -2, in units of
+log of the side), so D^+ finite is plausible for compact U(1) in the Coulomb phase. Corrected text: "for
+constant coupling and spacings a_0 b^(-j), D^+(bL) = D^+(L) in [0, infinity]; the control gives 0 where D^+
+is finite."
+
+**Kill tests (L268-281): HOLD as appraisals.** The four descriptions match `parts/gap.md` L123-135 (PT: product
+with a massless factor; D2/SUB: supremum over tilts; SHEET: uniform over coupling fields; NP: no-seed model,
+no induction on the history of D). None of SV1, SV2, SV3-red is a class statement, an induction on the
+history of D, a supremum over tilts, or a form uniform over coupling fields.
+**Five-dimensional count (L283-290): HOLDS as GUIDE.** Tree gauge: 3(d n^d - (n^d - 1)) = 3(d-1)n^d + 3
+coordinates; commuting d-tuples in SU(2) have dimension d + 2 (a maximal torus, 2 parameters, and d
+angles); so D = ((d-1)/2) log beta + O(1) at fixed n, (3/2) log beta at d = 4 (Lemma FV's coefficient).
+The d = 5 sign (+2 log 2) and the d = 4 sign (negative, tending to 0) follow from beta ~ L^(d-4)/g^2 and
+asymptotic freedom. Nothing is claimed for the trajectory; correct.
+
+Log: step 5 written at 2026-11-16T15:31:39Z (date -u).

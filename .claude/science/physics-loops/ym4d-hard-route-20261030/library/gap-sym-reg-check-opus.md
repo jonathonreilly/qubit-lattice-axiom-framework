@@ -393,3 +393,75 @@ does not contradict it; CURL returns the constant beta E[cos F_p]. Zero gain in 
 
 Verdicts of Step 7: SING HOLDS; odd-torus example in the singular set HOLDS; winding-loop frame HOLDS; cube count HOLDS;
 U(1) control HOLDS.
+
+### Step 8 (done 2026-11-16T06:05Z): verdicts, defects, corrected texts
+
+Provenance: Claude Opus 5.5, max effort, Mac mini worker 3, commit 9b65b9d6c, one session, no subagents. A check by
+hand of a text by Claude Fable 5.2 medium: a different model of the same provider, so not an independent check and
+not an audit. No numeric run, so the numeric lock was not taken and memory pressure was not read.
+
+**One more defect found while assembling the verdicts (L411-412). FAILS as written; HOLDS AFTER CORRECTION.**
+L411-412: "conservation fails for every frame that misses one forward parallel link in two directions, which removes
+every frame where (REG) is free". (REG) is free for every frame that does not read its own out links (d = 0; Step 3,
+class (a)). No link of any F_(mu nu) is an out link of the site (- e_mu + e_nu != 0, and e_kappa - e_mu + e_nu != 0). So a frame
+with d = 0 may read links of every F_(mu nu), and Corollary P does not cover it. For such a frame (J) is the alignment
+condition (AF-1) of row 1026 with a local frame, which is open (inside O1). L144-146 is accurate: past frames have
+d = 0 for a structural reason. The RESULT's "past-built frames (the ones with d = 0, where (REG) is free)" should read
+"past-built frames (a class with d = 0, where (REG) is free)".
+Correction for L411-412: "which removes every past frame (d = 0, (REG) free); frames with d = 0 that read forward links
+of F_(mu nu) keep (REG) free and are not covered".
+
+**Defects, ranked by what each breaks** (no lemma fails; each breaks a summary claim or a proposed repair text)
+1. L399 "PROVED (exact invariance)" with L150-153, L275-277, L411-414, RESULT clause (3), repair L420-421 (Step 5,
+   Consequence 3). BD proves that Psi_(d lambda) is not almost surely constant. It does not prove that Q changes under
+   boundary gradients: Q(d lambda) = H_c + Var(Psi) vanishes when H_c(omega; (d lambda) n) = - Var(Psi), a case inside
+   the text's own unrefuted O2. Breaks: the claim "not a curl form" and the repair texts for `parts/gap.md` L141 and
+   `library/gap-aligned-frame.md`. Proved form: the excess of FLOW's bound over H_c, Var(Psi_theta), is not invariant under
+   boundary gradients (theta = 0 versus d lambda), and the JAC route to invariance fails at a pinned lower face.
+2. L411-412 "removes every frame where (REG) is free" (above). Breaks: the answer-to-the-row clause (2).
+3. L332 "With POT, (J) + (LOC) + (REG) give the hypotheses of 7.1" and RESULT clause (4) "(REG)" (Step 6). POT gives (a)
+   and the range in (b), not phi_p in L^2 nor (c). Breaks: nothing proved; the chain from (SYM) to CURL has two more
+   conditions.
+Precisions (not defects): SPAN needs Q_1, Q_2, Q_3 free in a pinned box (Step 4). BD's class is the consumer of row
+1026 7.1, narrower than route (ii) as a strategy (Step 5).
+
+**Verdict table**
+
+| Item (row 1034) | Verdict | Where checked |
+|---|---|---|
+| LINK, STAR (4.0) | HOLDS | Step 2 |
+| U(1) control (4.1, and the U(1) line of each statement) | HOLDS | Step 7 |
+| Cube count (4.3) | HOLDS (the j = 0 frame's d_1 is cited from check 1027, not re-derived) | Steps 3, 7 |
+| SING (4.4); odd-torus example in every local frame's singular set | HOLDS | Step 7 |
+| Winding-loop frame on Z_3^4 (4.4) | HOLDS | Step 7 |
+| STAPLE (6.1) | HOLDS | Step 2 |
+| LF (6.2), link frames with j - d = 0 and (REG) | HOLDS | Step 2 |
+| LF consumer: zero gain | HOLDS (also via linearity of Psi, without a joint flow) | Step 2 |
+| SPAN (6.3) | HOLDS (scope: Q_mu free) | Step 4 |
+| PRIV (6.4), with the one-cube test | HOLDS | Step 3 |
+| Corollary P (6.5), classes (a)-(d) | HOLDS | Step 3 |
+| Range condition, six forward links (6.5) | HOLDS | Step 3 |
+| BD (6.6), statement | HOLDS | Step 5 |
+| BD, null set of pins; Q(d lambda) = H_c + Var with Var > 0; exact value of Q(d lambda) | HOLDS | Step 5 |
+| BD, "Q invariant only under interior gradients; not a curl form" (L275-277, L399) | FAILS at L399 as written; HOLDS AFTER CORRECTION (defect 1) | Step 5 |
+| BD's class against route (ii) | the consumer of row 1026 7.1; pin-measurability of B is forced, the pin vector on (z, 4) is not | Step 5 |
+| CURL (7.1): sign, count, constant 4 m^4 k_1 | HOLDS given (a)-(c) | Step 6 |
+| FLUX (7.2) | HOLDS | Step 6 |
+| POT (7.2) | ARGUED (agree); L332 HOLDS AFTER CORRECTION (defect 3) | Step 6 |
+| Answer to the row, clause (2) (L411-412) | HOLDS AFTER CORRECTION (defect 2) | Step 8 |
+| Answer to the row: (SYM) with (REG) not decided for site frames, and not sufficient for the site-frame consumer | HOLDS (with defect 1's wording: the consumer needs O2 as well) | Steps 2, 5 |
+
+**Corrected texts for the lead (no other file was edited)**
+- Row 1034's proposed repair of `parts/gap.md` L141 should read: "(SYM) with (REG) holds for link frames with zero gain
+  (row 1034 6.2, checked by row 1035); for site frames it is open in the bulk under a necessary range condition (6.5);
+  at a pinned lower face boundary gradients are not symmetries of the pinned law (6.6), so the consumer needs the
+  boundary statement O2 as well as Lemma O1."
+- Its repair of `library/gap-aligned-frame.md` 7.3 and Remark JAC should read: "Remark JAC shows that Q is a form in
+  d theta for theta zero on the pinned links only. At a pinned lower face, Psi_(d lambda) is not constant (row 1034 6.6), so
+  the argument does not extend to boundary gradients. Whether Q itself is invariant there is open."
+
+**Not done.** No new attack (row 1035). Not checked: the ARGUED sizes of 7.3 (f^2 S^5 against f^2 S^4), the attacks
+A1-A3 of 7.4, the sign remark on O2's corner term, check 1027's formula for the corner frame (cited). No numeric run.
+No cross-provider check; every HOLDS here is one reading by one model of the same provider.
+
+RESULT: Row 1035, check of row 1034 by Claude Opus 5.5 max (same provider as the writer, Claude Fable 5.2 medium, so not independent; by hand, no numeric run): no lemma FAILS. HOLDS: identities LINK and STAR; Lemma STAPLE and Proposition LF (link frames have j - d = 0 with (REG); a measure-preserving interior field leaves FLOW's bound unchanged, so their consumer is empty, zero gain); Lemma PRIV (one-cube test passed at z = 110, P = 101 -> 111); Corollary P with classes (a)-(d) and the six-forward-link range condition; Lemma SPAN (scope: the links Q_mu free); Theorem BD's statement (constancy of Psi at a pinned lower-face site forces D n = 0 on its face links), its null set of pins and its exact value of Q(d lambda); Proposition CURL given (a)-(c), with sign, Schur count and constant 4 m^4 k_1 re-derived (m >= 3); Lemma FLUX; Lemma SING and the odd-torus test; the U(1) control. HOLDS AFTER CORRECTION: (1) L399 "PROVED (exact invariance)" and the "not a curl form" clauses (L150-153, L275-277, L411-414, RESULT (3), repair L420-421): BD proves Psi_(d lambda) non-constant, so the JAC route fails at boundary gradients and FLOW's bound along d lambda is strict, but not that Q changes, since Q(d lambda) = H_c + Var(Psi) can vanish inside the text's own unrefuted O2; (2) L411-412 "removes every frame where (REG) is free": only past frames are removed, and d = 0 frames that read the forward links F_(mu nu) keep (REG) free and are not covered; (3) L332 and RESULT (4): POT with (J) + (LOC) + (REG) gives (a) and the range, not phi in L^2 or (c). Class test: BD's pin-measurable site frame is the class of row 1026 7.1's consumer; pin-measurability of the boundary rotation is forced, the pin vector on the interior link out of a boundary site is not (with a field-dependent vector there that does not read the private links, the same argument forces the three transports of the boundary frame into z to agree; one that reads them escapes, the boundary form of O1). OPEN: Lemma O1, statement O2, Lemma POT, whether Q itself is invariant under boundary gradients, and a cross-provider check.

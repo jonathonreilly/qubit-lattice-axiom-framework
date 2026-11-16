@@ -149,3 +149,87 @@ the theorem's exponent needs the Gaussian-normaliser comparison too, and its sta
 "further constant" of the remark at 141531-141534. Internal to their text; nothing to post (rule 6).
 
 Log: step 2 (CA-II part) written at 2026-11-16T15:21:57Z (date -u).
+
+**2.6 CA-I Theorem 4.38:thm-torus-independence (CA-I 58187-58411; proof from 58413).** Assumes the book's
+statements (1)-(7) (58188-58217) and the level hypothesis (H_j) (58219-58268): site-free numbers
+(g_i, Ř_i, beta_i) (a); steps 1..j-1 performed at every site (b); clauses (i), (ii)(a), (iii) at lower levels
+(c+); (d) "the whole-lattice step j converges ... This step is the last logarithm in [CMP 119 (3.28)], taken
+in the case in which the localization domains Omega_j and Lambda_j are both the whole lattice torus, pointed
+as in [(3.37)-(3.42)] and expanded as in [(3.44)-(3.47)]" (58242-58246), with
+abs(E^(j)(X;.,z)) <= E_0 e^(-kappa d_j(X)) on a polydisc (58262-58264). Clause (i) (58272-58285): for
+non-wrapping X, "it depends neither on s nor on the lift. No operator, minimiser, partition function or scalar
+of T_j(s) occurs in it" (58280-58281). Clause (ii)(a) ends "No rate of convergence is part of the statement"
+(58322-58323). Clause (ii)(b) (58336-58343): beta_j "is a function of (g_0,...,g_(j-1)) and of the fixed
+parameters ... alone. Hence x_j is site-free", and g_j, Ř_j, epsilon_j, delta_j, k_1(j) "are the same at
+every site, and free of m and K'". Clause (iii)(b) (58363-58391): the R-terms of [CMP 119 (2.30)] on
+non-wrapping X equal one family r^(j)(X^;.), independent of the site, the lift and the label.
+Definition 4.38:def-non-wrapping (CA-I 57291-57330): non-wrapping = in a closed cube of side at most s_j/4 of
+the torus's own side (a); "(f) Every wrapping X in D_j(s) satisfies d_j(X) > s_j/(4M) - 2" (eq-non-wrapping-a);
+(g) the lift bijection with D_j^infinity.
+Verdict on C2: HOLDS (quotes and anchors exact). Two remarks for later steps: (1) hypothesis (d) places in
+E^(j) exactly the terms that Balaban's (3.37)-(3.47) produce; this is the textual hook of reading (G')
+(Step 6). (2) Lemma 8.22's "non-wrapping (for the pair m,m')" uses the *smaller* torus's quarter side on
+both tori, and its last clause (every X ∋ z with d_(j+1)(X) < D_j is non-wrapping for the pair) is assumed in
+hypothesis (c), not quoted from 4.38 (f), which is stated for each torus's own side. The step from (f) to the
+pair form is short (a connected union of M-cubes with tree length d has sup-diameter at most M(d+1), so
+d < s'/(4M) - 2 puts it in a cube of side below s'/4), but the account does not write it; it is a hypothesis
+of the lemma, as row 1058 says.
+
+Log: step 2 (CA-I part) written at 2026-11-16T15:22:45Z (date -u).
+
+## Step 3: do hypotheses (a)-(c) of CA-II Lemma 8.22 hold along the lane's trajectory?
+
+The lane's trajectory is the account's (`gap-phys-seed.md` 1.1.1, L60-66; row 1058 Step 5): Wilson SU(2),
+N = 2, (H1)-(H7) of Theorem 3.1:thm-main, g <= gamma_J, 0 < g_0 <= g_-(g), K = K(g_0, g) the first-passage
+level, tori T_m of side 2L^m with m >= m_T(g_-(g)), g_0 -> 0 (so K -> infinity). For j < K the running
+inverse coupling is still above the window (x_j > g^(-2) + B_sharp), so every integrated step is at
+coupling g_j < g.
+
+**(c), torus-independence: HOLDS along the trajectory as an implication from the account's package, with
+one assumed clause.** CA-I Definition 4.38:def-admissible-sites (ii) (CA-I 57079-57083): "Let K=K(g_0,g) be
+the first-passage level ..., and let m >= m_T(g_-(g)). The sites (m,K) of Theorem~0 lie in
+\bigcap_{j\le K}\mathcal{S}_j." So both tori of every pair the lane uses are admissible at every level, and
+Theorem 4.38 (i), (iii)(b) (Step 2.6) apply to both, given its statements (1)-(7) and (H_j). The
+site-freeness of g_j is 4.38 (ii)(b) ("Hence x_j is site-free ... free of m and K'", CA-I 58339-58343).
+The second running constant z_j is *not* in the site-free list of 4.38 (ii)(b) (g_j, Ř_j, epsilon_j, delta_j,
+k_1(j)); Lemma 8.22 (c) assumes it ("It is assumed, as part of clause (0) and of its torus-independence
+lemma, that the running constants g_j and z_j ... do not depend on the torus", CA-II 141347-141349). The
+pair form of the wrapping bound (every X ∋ z with d_(j+1)(X) < D_j is non-wrapping for the *smaller*
+side) is assumed in (c); it follows from the argument behind CA-I 4.38 (f) (a connected union of M-cubes of
+tree length d has sup-diameter at most M(d+1) or so), which the account writes for each torus's own side
+only. Neither point is a failure; both are assumed clauses the account does not derive at this place.
+
+**(b), Balaban's format at zero source: HOLDS along the trajectory as a cited input.** The bounds
+abs(E^(j+1)(X,1,z)) <= E_0 e^(-kappa d), abs(R^(j+1)(X,1)) <= e^(-kappa d) and the count K_* at rate
+kappa/2 are Balaban's inductive bounds (CMP 119 (2.27), (2.29), (2.31)-(2.33); CMP 116 (1.26)), which the
+account carries as (H_j)(d) of Theorem 4.38 with "E_0^natural > 0, a^natural > 0 and kappa >= 2 kappa(d)
+independent of s, X and z" (CA-I 58262-58265). Every step j < K is at coupling below g <= gamma_J, inside
+the small-coupling regime of those bounds. Uniformity of E_0, K_*, kappa in j and K is part of the cited
+format. Status in the T0 chain: theirs-cited (Balaban), not rebuilt here.
+
+**(a), the itemisation: NOT established along the trajectory; it is an itemisation hypothesis whose
+content is exactly the (G)/(G') question.** The account calls it so: "Hypothesis (a) is a hypothesis on how
+E_m is itemised" (CA-II 141529-141530). Two findings from the cited source (CMP 109 OCR,
+`~/ym4d-papers/cmp109.txt` L630-670, journal pp. 260-261; page images read in Step 6):
+- The account cites "[B-CMP109 (1.7)]" for the *normalisation numbers built from log g_j, log z_j and
+  constants of SU(2)* of part (vac,1). In the OCR, (1.7) is the localized representation of the step-j
+  term, E^(j)(g_(j-1), U_j) = sum over X in D_j of E^(j)(X, U_j) (L659-668: "We assume that it has the
+  representation ... we can represent this term in the form (1.7)"). If the page image confirms this, the
+  citation of part (vac,1) points at the wrong equation, and the meaning of z_j is not fixed by the cited
+  source. The first part's argument (per-block numbers times lattice counts are exactly extensive) does not
+  depend on which numbers they are, so this is a citation defect, not a failure of the lemma.
+- CMP 109 p. 260 (OCR L652-668): "the factor Z^(j)(U_k) is given by the Gaussian integral normalizing the
+  Gaussian measure for a fluctuation field in j-th step integration (1.4)", and "the expansion of the
+  log Z^(j-1)(U_j) constructed in [16], implies, that we can represent this term in the form (1.7)". So in
+  Balaban's effective action the step's Gaussian normaliser is a configuration-dependent term with a
+  localized expansion of the same form as the E-terms. This is evidence for reading (G') of row 1058 and
+  against the account's description of the normaliser as "the one torus-wide number per level"
+  (CA-II 141428). Which of the two itemisations holds decides whether Lemma 8.22 covers the whole constant;
+  Step 6 reads Balaban's (1.3)-(1.4) of CMP 109 and (3.33)-(3.38), p. 276, p. 279 of CMP 119 on page images.
+
+Verdict for the row's claim "PROVED as an implication from (a)-(c), which were not checked here": the
+implication HOLDS (Step 2.3). Along the lane's trajectory (b) and (c) hold as the account's package
+supplies them (with the two assumed clauses above); (a) is the open point, and it is the same point as
+(G)/(G').
+
+Log: step 3 written at 2026-11-16T15:25:54Z (date -u).

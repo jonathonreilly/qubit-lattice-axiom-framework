@@ -199,6 +199,81 @@ side unbounded and e_0(B) > 0 makes it tend to 0 < 1 <= exp E; so e_0(B) = 0 and
 time T, exp E(T, B) = m_0(B), an integer >= 1. The argument in each direction (spectral form in each direction)
 makes E constant; a critical element has s = m - 1 >= 1/5041, so m >= 2.
 
+## Step 5 result: Theorem CE-II and Proposition NR-II (7.5, L822-901)
+
+| Statement | Verdict | Note |
+|---|---|---|
+| Theorem CE-II (i) | HOLDS AFTER CORRECTION (cosmetic) | eta_i = (2/i)/(d(k_i) - 1/i) needs d(k_i) > 1/i; true for large i since d(k_i) -> infinity; drop the finitely many first records |
+| Theorem CE-II (ii) (a)-(c) | HOLDS | (ii) reads only the properties listed in (i), so it applies to every sequence with (i), as the equivalence needs |
+| Theorem CE-II, converse and the equivalence with (LIOU-II) given (FIN) | HOLDS | |
+| Proposition NR-II (1) | HOLDS | |
+| Proposition NR-II (2), many vacua and lines | HOLDS | test (g) below; both families have D^+ = +infinity, as the file says |
+| Proposition NR-II (3) | RECALLED, not checked | labelled so in the file |
+| RESULT line: "so no soft proof of (BDD-Delta) exists on torus data" | OVERSTATED: ARGUED, not PROVED | see below |
+
+**Test (f), the record construction.** Given (FIN), failure of (BDD-Delta) is the same as d unbounded (finitely
+many finite values cannot bound it), so R(k) -> infinity and R changes only at records, which are therefore
+infinite. (beta) is finitely many limsup conditions, so it holds for all large j; (alpha) holds for infinitely many
+j because d(k_i) is a finite upper limit. For - k_i <= m <= 0 the size 2^m N_i is 2^(m + k_i) u_(j_i) with
+0 <= m + k_i <= k_i, so (beta) and the record property give D <= d(k_i) + 1/i, and
+(d(k_i) - 1/i)(1 + eta_i) = d(k_i) + 1/i. (ii): for a in [m_1 N_i, m_2 N_i] take m with a/2 < 2^m N_i <= a; if
+2^(-k_i) < m_1/4 then m > - k_i, so (P3) gives D(a) <= 16 D(2^m N_i) <= 16 max(1 + eta_i, 16^m) M_i. EQC and ASC are
+linear in M. Dt(1) = 1 since ceil(N_i) = N_i; for m <= 0 and k_i >= - m, ceil(2^m N_i) = 2^m N_i. The "hence" bounds
+follow from (b) in four sides. Converse: k_i -> infinity puts 2^(k_i) l_1 above L_0, so M_i <= D_0 + 1/i.
+
+**Test (g), NR-II (2).** Lines: with |n|/n_1 = |B| and |n|/n_i = k |B|/n_i for i >= 2,
+Z_q(k, B) = (1 + q^k)^(|B|) c_B^k = sum_(l = 0..|B|) binom(|B|, l) (c_B q^l)^k, with |B|/n_i an integer. So (E2) holds
+for every k, the top eigenvalue c_B is simple and c_B q < c_B. (E3): log Z_q(n)/|n| = sum_i log(1 + q^(n_i))/n_i > 0
+tends to 0, so f = 0 and Delta = log Z_q. With q = e^(-1/N), D(N) = 4 N^3 log(1 + 1/e), and the rescaled function
+is N^3 [sum_i (prod_(j != i) x_j) log(1 + e^(- x_i)) + o(1)] on compacts. log(1 + e^(-x)) has second derivative
+e^x/(1 + e^x)^2 > 0 and is decreasing, which gives (b). (c): the bracket 3 log(1 + e^(-b)) - b/(1 + e^b) is at least
+3 x 0.31326 - 1/2 = 0.4398 > 0.43 on (0, 1]. Many vacua: eps_i prod_k (N_i x_k + 1) -> 0 uniformly on compacts, so
+numerator and D(N_i) are both log m_i - o(1) = log m_i (1 + o(1)).
+
+**On "no soft proof of (BDD-Delta) on torus data".** NR-II (1) shows that the properties (a)-(c) kept by a
+normalised limit admit the constant and every profile b^alpha, alpha in [0, 3]. NR-II (2) realises two of these
+shapes as normalised limits of data, but of families that violate (FIN) and at the unit scale, not at record
+scales. A family of data with (FIN) in branch (II) is only RECALLED (NR-II (3)). So the claim that the datum axioms
+with (FIN) cannot give (BDD-Delta) rests on (3), and "soft proof" is not defined. What is PROVED: a proof of
+(BDD-Delta) that reads only (a)-(c) of a normalised limit cannot exist. The RESULT line of row 1031 lists the wider
+sentence under "PROVED by hand"; it should be marked ARGUED (or narrowed to the sentence above). The section title
+"the kept properties exclude no growth rate" is also wider than (1): (c) excludes growth above b^4, and
+alpha in (3, 4) is not covered (alpha = 4 is, by x_1 x_2 x_3 x_4). No consumer reads either sentence.
+
+## Step 6 result: Lemma SURF (5.2, L424-454)
+
+| Statement | Verdict | Note |
+|---|---|---|
+| Lemma SURF, D(N) <= 6 beta (2N - 1) N^2 xbar_N <= 12 beta N^3 | HOLDS AFTER CORRECTION (scope of an intermediate line) | the energy formula for E_nu[A_M] needs every k_i >= 2; the proof uses k_i = n_i >= 3, so the lemma stands |
+| The defect identity D(N) = 6 beta (2N - 1) N^2 xbar_N - N^4 h | ARGUED, as labelled; consistent | given the variational principle for N-periodic states, the algebra checks (below) |
+| The "dynamic form" Phi(N) <= 16 x 6 beta (2N - 1) N^2 xbar_N | HOLDS (stronger than its ARGUED label) | it is the proof of SURF with M = (2N)^4, K = 16, k_i = 2; no Boue-Dupuis form is needed |
+
+**Test (h), the mean-zero step.** Take a plaquette (x; mu, nu) of M with x in the cell C, cell coordinates
+x_mu, x_nu in {0, ..., N - 1}. Its link tails are x, x + mu, x + nu, x. If x_mu, x_nu <= N - 2 all four tails lie in
+C and the plaquette maps, with no wrap, to the plaquette (x mod N; mu, nu) of the torus of side N: mean xbar_N;
+6 N^2 (N - 1)^2 per cell. If x_mu = N - 1, the link U = (x + mu, nu) has its tail in C' = C + e_mu; the links (x, mu),
+(x, nu) lie in C, and (x + nu, mu) lies in C or in C + e_nu. C' differs from C and from C + e_nu when k_mu >= 2
+(and k_nu >= 2 for the second). If x_nu = N - 1 and x_mu <= N - 2, U = (x + nu, mu) has its tail in C + e_nu and the
+other three tails x, x + mu, x lie in C. So U is the only link of the plaquette in its cell. The copies are
+independent, so the mean of (1/2) tr U_p is (1/2) tr of a product in which U enters through its matrix mean
+E_(mu_N)[U]. The gauge transformation h at the tail y of U preserves mu_N and maps U to h U (the head y + nu or
+y + mu differs from y, so no right factor h^(-1) falls on U); so E[U] = h E[U] for all h, and averaging over Haar
+measure gives E[U] = 0. The other links of the cell C' that the transformation moves are not in the plaquette.
+**Correction of scope.** If some k_mu = 1, the cell wraps in direction mu, the plaquettes with x_mu = N - 1 are
+internal, and the displayed E_nu[A_M] is wrong. The lemma's proof only uses M = (N n_1, ..., N n_4) with n_i >= 3,
+so state "k_i >= 2" in the setup.
+
+**Rest of the proof.** Gibbs: log int e^(-beta A) >= int rho (- beta A) - int rho log rho (Jensen). Each cell holds
+4 N^4 links (tails in the cell), in bijection with the links of the torus of side N; -Ent(mu_N | Haar) =
+beta E[A_N] + F(N^4), E[A_N] = 6 N^4 (1 - xbar_N) (all plaquettes of the symmetric torus have the same mean). Then
+F(M) >= K F(N^4) - 6 beta K xbar_N N^2 (N^2 - (N - 1)^2), |M| = K N^4, and Lemma A gives F(N n)/|N n| <= F(n)/|n|.
+Taking the infimum over n and multiplying by N^4 gives the lemma; xbar_N <= 1 gives 12 beta N^3.
+
+**Defect identity (ARGUED in the file).** For the N-periodic tiling state: entropy per site
+(beta E[A_N] + F(N^4))/N^4, energy per site 6 - 6 (N - 1)^2 xbar_N/N^2. If h = f - (s - beta e) (the variational
+principle for periodic states, recalled from Georgii Chapter 15 and not rebuilt), then
+N^4 h = - D(N) + 6 beta (2N - 1) N^2 xbar_N. The algebra is right; the identification of h is the recalled part.
+
 ## State
 
-Step 4b done. Next: step 5, Theorem CE-II and Proposition NR-II (7.5), tests (f), (g).
+Step 6 done. Next: step 7, the RESULT line of row 1031 against the verdicts; step 8, verdict table and RESULT.

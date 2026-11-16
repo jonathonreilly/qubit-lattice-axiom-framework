@@ -281,3 +281,224 @@ not from above (5.2). If the blind half has no proof, no selective gain can be i
 together. So the first row should attack the blind half in its smallest exact form (7.1). The selective half and
 (LIOU) are harder, but no mechanism is on record for them, so a row there would restate the crux (the lead's own
 rule in `parts/gap.md` L87-89).
+
+## 5. Task (3): the top lines, tried by hand (step 5)
+
+Everything marked PROVED in this section is written by hand by Claude Fable 5.2 in this row and is checked by nobody.
+
+### 5.0 Registry grep before the attempts (rule 0a; done 2026-11-16 14:20Z to 14:30Z by `date -u`)
+
+- `library/open-core.md` (the T0 registry, last changed 2026-11-06): no entry for (N1), (N2), (N3), (O2), (BDD-Delta), a
+  blind bound, a Schrodinger-functional response, a score variance or a ring law (`grep -n -i` on those terms: two
+  unrelated hits, L227 and L526).
+- FINISH rows and `library/`: the mean identity of 5.1 is on file for a FIXED lab-frame boundary field as Identity AV
+  (row 1016, `gap-global-reform-max.md` L693-707; no WRONG in check 1020; Theorem BH HOLDS AFTER CORRECTION in the
+  gpt-6-astra check). Corollary AV2 and Theorem BH there give the lab-frame value. I do not attack those. What 5.1
+  adds is the form for frame moves (a field that depends on the pin) with the Jacobian term.
+- The corner form of the port of OpenAI's one-annulus engine is C1 of row 1013 (Lemma WN, Corollaries WN1-WN3). The
+  finite identity of 5.2 is Lemma TAN of row 1046 (stated there to second order). I do not attack C1. What 5.2 adds
+  is the pin-space form at all orders, the exact cost form on a slab, and the count.
+- (BDD-Delta): named open by rows 720, 982, 1017, 1024, 1031, 1032; no row has it as target. Lemma CHAIN-4, Corollary NUC,
+  Lemma RISE (row 1032) and Theorem CE-II (row 1031) are its exact forms on file. 5.3 states no new lemma on it.
+
+### 5.1 Line A: the mean of the response to a frame gradient (Lemma RM; PROVED)
+
+**Setting.** X = G^E for a finite set E of links, G = SU(2) (any compact Lie group serves), mu the Haar probability
+on X. Phi is a smooth real function on X, Z = int e^(-Phi) d mu, and rho = e^(-Phi) mu/Z. Let S_eps, abs(eps) < eps_0, be
+diffeomorphisms of X, smooth in (eps, omega), with S_0 the identity. J_eps > 0 is the Jacobian of S_eps for mu:
+int g d mu = int (g o S_eps) J_eps d mu for continuous g. Write Phi' and Phi'' for the first and second eps-derivative
+of Phi(S_eps omega) at 0, and l', l'' for those of log J_eps(omega).
+
+**Lemma RM.** (i) E_rho[Phi'] = E_rho[l']. (ii) E_rho[Phi''] = E_rho[(Phi' - l')^2] + E_rho[l''].
+(iii) If every S_eps keeps mu (J = 1), then E_rho[Phi''] = E_rho[(Phi')^2] >= 0, with equality only if Phi' = 0 at
+every point of X.
+
+Proof. Z = int exp(-Phi(S_eps omega) + log J_eps(omega)) d mu(omega) for every eps (change of variables). X is compact
+and the integrand is smooth, so the eps-derivatives pass under the integral. The first derivative at 0 is
+int (-Phi' + l') e^(-Phi) d mu = 0: (i). The second is int [(-Phi' + l')^2 - Phi'' + l''] e^(-Phi) d mu = 0: (ii). (iii) is
+(ii) with l = 0; Phi' is continuous and rho has full support. QED
+
+Not new in kind: for S_eps = left translation of the boundary links of one cell by a fixed field it is Identity AV
+of row 1016 (credited). In the words of Lemma FLOW (row 1018 4.1), Phi' - l' is minus the score Psi_V of the flow.
+
+**Use for route (ii).** A cell Q with pin Omega, tiled by cells c with the weights of row 1011 3.1. E = the ring links
+of the tiling that are not in the boundary of Q. Phi(omega) = sum over c of F_c(omega_c). By the Markov property (row
+1011 3.1) rho is the law of the inner ring links in the pinned law of Q. Let n_x(omega) be unit vectors on the ring
+sites, smooth in omega, and lambda a real function on the ring sites that vanishes on the boundary of Q. Put
+
+  S_eps(omega)_l = exp(- eps lambda_y n_x(omega)) omega_l exp(eps lambda_y n_y(omega))   for a ring link l = (x -> y)
+
+(the frame is frozen at omega along the curve; the links in the boundary of Q do not move). For small eps these
+are diffeomorphisms (a smooth family through the identity on a compact manifold). By Lemma GR+ (row 1046 6.1 (c),
+HOLDS in both checks), cell by cell, Phi''(omega) = sum over c of H_c(omega_c; (d lambda) n(omega)). So
+
+  (RM-fr)   E[ sum_c H_c(omega_c; (d lambda) n) ] = E[(Phi' - l')^2] + E[l''].
+
+**Corollary RM-TREE (PROVED).** Let n be a frame transported from one base point: fix a spanning tree of the ring
+graph and a root x_0, and let n_x = Ad(W_x) a, W_x the product of the link variables along the tree path from x to
+x_0 (so D_l n = 0 on tree links). Then every S_eps keeps mu, and for every lambda as above
+
+  E[ sum_c H_c(omega_c; (d lambda) n) ] = E[(Phi')^2] >= 0,
+
+with equality only if the ring action Phi is stationary along the frame move at every ring configuration.
+Proof. On a tree link l = (x -> y), n_x = Ad(omega_l) n_y gives exp(- eps lambda_y n_x) omega_l = omega_l exp(- eps lambda_y n_y),
+so S_eps fixes the tree links. Hence W_x and the frame do not change along the move. Given the tree links, S_eps acts
+on each other link by one left and one right translation with fixed elements. These keep Haar measure, and Fubini
+gives J = 1. Then RM (iii). QED
+The same proof gives the one-cell form: in the free ensemble of row 1016 7.1 (boundary links of c with density
+Z_c/Z_free), for a tree in the boundary and every lambda on the boundary sites,
+E_free[H_c(.; (d lambda) n)] = E_free[(F_c')^2] >= 0. This extends Identity AV from fixed lab fields to this frame.
+
+**What it says about (N1).**
+1. For the frame of row 1038 (transported from one base point; "the fixed colour in axial gauge") the response of
+   the cells to an interior gradient has non-negative mean in the law of the model. The consumer needs that mean
+   to be at most 0 (the right side of (S) vanishes on gradients). So for this frame (S) holds in the mean on a
+   gradient only if the ring action is exactly invariant under the move. For cells of side 1 the ring action is
+   minus the Wilson action (no interior links; the weights w_p of the cells that contain a plaquette add to 1 inside
+   Q). It is not invariant as soon as one plaquette has two non-tree links l_1, l_2 whose heads carry different values
+   of lambda (PROVED for the pin Omega = 1: take the configuration with all tree links and all other non-tree links
+   equal to 1; the move conjugates l_i by exp(eps lambda_i a) and fixes the links equal to 1; every plaquette but
+   the one through l_1 and l_2 is then a constant or a class function of one link, and that one has derivative
+   (lambda_1 - lambda_2) Re(U_1 [a, U_2]) up to orientation, which is not 0 for generic U_1, U_2). For
+   larger cells invariance fails for all beta outside a discrete set (ARGUED: Phi is analytic in beta and equals
+   minus the Wilson action of the ring plaquettes at first order in beta; the step is not written out).
+2. So "the sign at the pins that carry the measure" is not available for a frame whose move keeps Haar measure. The
+   negative signs of rows 1042 and 1046 at special pins are paid for elsewhere, now in the law of the model and not
+   only on a torus orbit (Lemma MEAN is the Haar form of this).
+3. For a general covariant frame the exact condition is (RM-fr): the mean is at most 0 only if E[l''] <= - E[(Phi' - l')^2].
+   The frame move must contract Haar volume at second order by at least the variance of its weighted score. No frame
+   on file has a computed l''. A row on (N1) would have to supply this inequality; nothing suggests it holds.
+4. Scope. RM is an identity. It refutes no frame other than those with J = 1, and for those only the mean-sign
+   form on gradients. It does not bound E[(Phi')^2] below by a number (for the lab frame Theorem BH of row 1016
+   does). It says nothing about co-closed fields.
+
+Mark: Lemma RM, (RM-fr), Corollary RM-TREE: PROVED (given Lemma GR+ for the identification of Phi''). Item 1's
+"outside a discrete set": ARGUED. Verdict for line A: (N1) in its sign form FAILS in the mean for frame TREE (and
+for the lab frame by rows 1013 and 1016); for other frames it is OPEN and equivalent to a Jacobian inequality.
+
+### 5.2 Line G: the port of OpenAI's one-annulus engine, in its pin-space form (identity PROVED; verdict ARGUED)
+
+Row 1013 ported the engine of OpenAI's "Exponential decay" text to link-end translations (C1) and found a
+site-local cost (Lemma WN). There is a second exact form, on the space of pins of one cell, where the group that
+acts without reference to the field is the gauge group of the boundary sites.
+
+**Proposition PIN (PROVED; the finite form of Lemma TAN of row 1046; the idea is OpenAI's (2.10)-(2.12)).** Any cell
+c, any pin omega, any function F from the boundary sites to su(2). For a boundary link l = (x -> y) put
+Y_l = Ad(omega_l) F_y, (d_omega F)_l = F_x - Y_l, and E_(F,l) = exp(- F_x) exp(F_x - Y_l) exp(Y_l) in SU(2). Then
+
+  Z_c( exp(d_omega F) omega ) = Z_c( E_F omega ),
+
+where exp(d_omega F) omega and E_F omega are the pins with links exp((d_omega F)_l) omega_l and E_(F,l) omega_l.
+Proof. Gauge covariance Z_c(omega^g) = Z_c(omega) (row 1011 3.1) with g = exp(F), applied to the pin E_F omega:
+g_x E_(F,l) omega_l g_y^(-1) = exp(F_x) E_(F,l) exp(- Y_l) omega_l = exp(F_x - Y_l) omega_l. QED
+
+Consequences. For small F write E_(F,l) = exp(B_(F,l)); by the Baker-Campbell-Hausdorff series B_(eps F) = eps^2 B_2 + eps^3 B_3
++ eps^4 B_4 + ..., with B_(2,l) = (1/2)[F_x, Y_l] = F_x x Ad(omega_l) F_y. With f(B) = Z_c(exp(B) omega), comparing Taylor
+coefficients of f(eps d_omega F) = f(B_(eps F)):
+
+  (P2)  (1/2) D^2 f(0)[d_omega F, d_omega F] = D f(0)[B_2],
+  (P4)  (1/24) D^4 f(0)[d_omega F, d_omega F, d_omega F, d_omega F] = D f(0)[B_4] + (1/2) D^2 f(0)[B_2, B_2].
+
+(P2) is Lemma TAN. (P4) is the gauge form of OpenAI's fourth-order identity: the second-order response to a
+commutator field is a fourth-order response to additive covariant gradients, plus a force term. At an abelian pin
+(all omega_l = exp(alpha_l sigma_3)) with F in the plane of sigma_1, sigma_2, written as a complex function phi, B_2 is the
+field along sigma_3 with coefficient Im(conj(phi_x) e^(2 i alpha_l) phi_y) up to the sign convention. So commutators of
+transverse gauge parameters generate abelian boundary fields, as in the spin model.
+
+**Lemma SF-D (the cost form is the Dirichlet form of the boundary; PROVED).** Slab (Z/L)^3 x {0, ..., T}, homogeneous
+beta, the spatial links of the slices 0 and T pinned to 1, everything else integrated; E the pinned expectation.
+For a top link l let p(l) be the one interior plaquette that contains l, and xbar_1 = E[t_(p(l))] (the same for all
+top links, by the symmetries of the slab). For a field B on the top links let X(B) = - sum_l B_l . N_l (row 1011,
+Proposition A (iii)). Then:
+ (a) E[N_l] = 0 for every top link;
+ (b) for every F on the top sites: E[X(dF)^2] = beta xbar_1 sum over top links of abs(F_x - F_y)^2;
+ (c) for a real field h on the top links with zero curl on the top plaquettes (for example the constant field on
+     the links of one direction): - D^2 f(0)[h sigma_3, h sigma_3]/f(0) = beta xbar_1 sum_l h_l^2 - E[X(h sigma_3)^2] <= beta xbar_1 abs(h)_2^2.
+Proof. (a) The pinned law is invariant under U -> k U k^(-1) for constant k (the pins are 1), and N_l -> Ad(k) N_l, so
+E[N_l] is fixed by every rotation. (b) D^2 f/f = E[X^2] + E[D^2 A]. By Proposition A (i) of row 1011 a top plaquette
+contributes - beta w abs(delta_p)^2, which is 0 for B = dF at the pin 1 (the four differences cancel), and the plaquette
+p(l) contributes - beta abs(B_l)^2 t_(p(l)); no other plaquette contains a top link. By (P2) and (a),
+D^2 f[dF, dF] = 2 D f[B_2] = 0. (c) The same count for B = h sigma_3: the top plaquettes contribute
+- beta w (dh)_p^2 = 0. QED
+
+So at the trivial pins the blind bound of the abelian boundary twist is exactly beta xbar_1 abs(h)_2^2. For the
+twist of unit holonomy (h = 1/L on the L^3 links of one direction) it is beta xbar_1 L. The classical action of the
+same twist in the slab with T = L is of order beta, with no factor L. This is Lemma JEN of row 1013 with its
+constant, for this pin (the gpt-6-astra check of row 1013, item 17, asked for a normalised profile; this is one).
+
+**The count (ARGUED).** Suppose a fourth-order inequality of OpenAI's type holds on pin space: the response to
+Q = sum_i S(phi_i, conj(phi_i)) is at most K times the sum of the squares of the pair energies
+E_i = beta xbar_1 abs(d phi_i)_2^2 (their Proposition 2.2 after Fourier orthogonality; I do not prove the gauge form).
+Boundary waves phi_i = eps exp(i k x) have S = eps^2 sin(k . e_l) on the links of direction e_l. A shell of M modes with
+abs(k) of order r/L on a boundary of dimension b has M of order r^b. To reach h = 1/L one needs M eps^2 r of order 1.
+The bound for the response to h is then of order
+
+  K M (beta eps^2 (r/L)^2 L^b)^2 / (M eps^2 r)^2 = K beta^2 r^(2-b) L^(2b-4).
+
+For b = 2 (the 2D spin model, where the "boundary" is the lattice itself) this is K beta^2 for every shell, and the
+log N independent shells give OpenAI's 1/log N. For b = 3 (a 4D gauge cell) it is K beta^2 L^2/r, at least K beta^2 L,
+which is above the blind bound beta xbar_1 L of Lemma SF-D. Combining shells does not help: the harmonic combination
+of the shell bounds is again of order K beta^2 L. So on pin space the family inequality gives nothing.
+
+**Why both exact forms fail, in one sentence (ARGUED).** In the corner form and in the pin-space form the moves whose
+action does not depend on the field are gauge parameters, that is functions on sites; their commutators make
+link fields at the cost of a Dirichlet form on the set where they live (one site for corners, the 3-dimensional
+boundary for pins). The 4D count that is scale invariant (row 1011 3.4: a harmonic sum of abs(k)^(-4)) needs moves
+that are link fields with a cost that is a curl form, and for those no family with a field-independent action is
+on record (Lemma WN; Lemma CEN+ of row 1016).
+
+Mark: Proposition PIN, (P2), (P4), Lemma SF-D: PROVED. The count and the sentence: ARGUED. Scope: the count
+assumes the form of the fourth-order inequality; it does not exclude an inequality of another form; it concerns
+the trivial pins of a slab. Verdict for line G: the pin-space form of C1 FAILS as a route to an L-uniform bound
+(ARGUED); C1 in corner form and C2 stay as the gpt-6-astra check of row 1013 left them.
+
+### 5.3 The blind half (the line this row ranks first): statement, what the attempts give, what is left
+
+**The statement in four forms.** Each says that the theory at scale L is not more ordered than a free massless
+theory with a coupling bounded below. None is selective inside the lane's class: each holds for compact U(1).
+
+- (BDD-Delta), periodic: D^+ is bounded on the large sizes of P. Exact content: bounded counts (Corollary NUC).
+- (BL), slab: for the slab of Lemma SF-D with T = L, top pin exp(i t sigma_3/L) on the links of one direction and
+  Z(t) its partition function: sup over t of - Z''(t)/Z(t) <= C(beta) for every L.
+- (BL-c), periodic and frame-free: the 't Hooft twisted partition function of the symmetric torus has
+  Z_tw(L^4)/Z(L^4) >= c(beta) > 0 for every L (a bounded vortex free energy).
+- (L1) of (T-pin): Rbar(L l) <= C Rbar(l) (row 1018 2.3, "OPEN").
+
+**What is proved, by model.** Compact U(1): (BL) with C of order beta, and the analogue of (BL-c) for the twist of a
+co-closed sheet by any angle alpha, hold by one line: shift the links so that the twist is spread evenly over the
+L^2 plaquettes of each plane, an exact change of variables, and use Jensen; the cost is at most beta alpha^2/2 (the
+abelian form of row 1011 3.2). Frozen Z_2 at large beta: (BL-c) is false; the twisted ratio tends to 0 (the lane's
+Peierls bound, `parts/gap.md` L219; the rate exp(- c beta L^2) is RECALLED). SU(2): Lemma SF-D gives beta xbar_1 L for
+(BL) at t = 0; Jensen on a thin sheet gives the lower bound exp(- 2 beta xbar L^2) for the ratio of (BL-c). In the files
+read for this row nothing L-uniform is on record for SU(2) outside the couplings where the lane has a seed (the
+ceilings of `parts/gap.md` L227).
+
+**The attempts of this row, and of the lane, at an L-uniform bound.**
+1. Lab frame, extension by zero: exactly beta xbar_1 L (Lemma SF-D (c)). FAILS (PROVED value).
+2. Temporal-gauge frames (the colour carried down the time links; a Haar-preserving flow by the argument of
+   RM-TREE). The time-like plaquettes then cost beta (theta_j - theta_(j+1))^2 per link, the classical form, and the
+   space-like plaquettes of the slice at depth j cost of order theta_j^2 min(j, beta) per plaquette, because the
+   links of that slice have drifted from the frame by j/beta. The twist then enters to a depth of order beta^(1/3) and
+   the bound is of order beta^(2/3) L. FAILS (ARGUED; the depth beta^(1/3) is row 1013's kill of C8).
+3. Commutator families on pin space: no gain (5.2). FAILS (ARGUED).
+4. Positivity. Reflection positivity bounds a twisted or glued partition function from above (chessboard,
+   Z((2a)^4) <= Z(a^4)^16; Gaussian domination, Theorem D2). All four forms need a bound from below. The only
+   exact tool for that on file is a flow: H_c = inf over flows of Q_V (Lemma FLOW; Theorem EXT of row 1046), and
+   Jensen. So the blind half asks for one flow whose cost is classical, at every scale of the band.
+5. Such a flow needs a colour direction that is parallel, to accuracy 1/L, for the fluctuating links of the cell
+   (the count in attempt 2). Bare links are not that smooth at any coupling of the trajectory (Lemma FR). Blocked
+   links are, where the account controls them. So the blind half is on record above the band only (ARGUED; it is
+   Balaban's extraction of (1/g_k^2) A(U_k(V)), CMP 109, as row 1013 5.1 says).
+
+**Reading (ARGUED).** (i) The lane has looked for the selective half since row 988. The blind half is as open as
+the selective half inside the band, and the 2D proofs get it for free. A 4D engine of the 2D kind therefore lacks
+both halves, not one. (ii) The blind half is where the SIGN of the response to gauge fluctuations sits (they do not
+screen), and (LIOU) is where its strictness sits. Scalar matter screens (the diamagnetic inequality of Brydges,
+Frohlich and Seiler gives the opposite sign for a charged scalar; RECALLED), so the blind half is not a soft
+property of gauge models with matter; inside the pure-gauge class no model on record violates it in four
+dimensions. (iii) By (i) a proof of (BDD-Delta) or of (BL) inside the band would be the first statement of any kind
+that enters the band from the weak side. That is the reason to rank it first: it is strictly easier than the wall,
+it is a genuine half of the trichotomy, and the 2D analogy says it should be the easy part.
+
+No mechanism for the selective half was invented in this row. No mechanism for the blind half was found either;
+attempts 1 to 3 are the counterexamples to the three obvious ones.

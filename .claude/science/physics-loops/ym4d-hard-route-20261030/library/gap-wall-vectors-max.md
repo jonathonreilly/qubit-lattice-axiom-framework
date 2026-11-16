@@ -69,3 +69,79 @@ Read in full: `parts/gap.md` (257 lines) and `library/gap-direction3-max.md` (28
 | **Inverse order: fix the infrared measure first and refine (projective family)** | to be searched in step 3 | - | pending |
 
 Next: step 3. For each top-fifteen assumption and each opener, a vector or "no vector", with the grep that backs each "found again".
+
+### Step 3 result: assumption by assumption, vector or no vector (tasks 1 and 2)
+
+Marks: NEW = not found in `library/` and `parts/` of this folder by the greps named (open PR branches not searched). FOUND = on file, with the place. A vector is written out only if it is NEW. Nothing in this step is a proof.
+
+#### 3.1 The table
+
+| Assumption (row 1052) | Drop or replace | Outcome |
+|---|---|---|
+| e1 gap true | drop | No vector toward the gap. It gives one new test model, V5. |
+| f1 no computer step | keep; replace "one number at order one" by a parametric regime | V2 (NEW, FAILS in step 4). |
+| a2 R^4 | compact direction, Higgs, sphere, hyperbolic space | FOUND: `gap-skeleton-max.md` L8, L371, L410; row 1004 I5, I6, I8; row 859 idea 42. No new vector. |
+| c3 seed plus transport | another reduction | FOUND: Theorem CR (row 1017), routes RA-RG, LC. NEW: the chain of V1. V4 (NEW framing, FAILS). |
+| c4 order one is the hard regime | split the hard regime | NEW reading through V1: the wall has a frame half and a singlet half; V1 names a model where the frame half is absent. |
+| e4 asymptotic freedom beyond perturbation theory | - | No vector. Patrascioiu-Seiler is on file (7 files). |
+| b2 Wilson action | choose the weight | FOUND: (UNIV-FP), heat kernel (row 876 idea 17), no Z_2 monopoles (row 900 item 2), mixed action (row 876 idea 31). NEW: V1 (a point on the boundary of the anisotropic Wilson family), V3. |
+| c1 existence before gap | merge | FOUND: row 838 items 10, 14, 37. No mechanism, no vector. |
+| b3 Euclidean | Hamiltonian | FOUND: row 859 ideas 32, 37; row 1004 I14; row 1016 4.5 (Identity HAM1). No new vector. |
+| a3 gap on all of Omega-perp | charged and singlet parts apart | NEW inside V1: the rigid group splits the state space; the charged part has a mechanism, the singlet part has none (step 6). |
+| c7 near-Wilson effective actions | - | FOUND: row 838 item 23. No vector. |
+| e9 infrared easy once strong | - | FOUND: row 838 items 48, 49. No vector. |
+| b1 lattice at all | loop equations, stochastic quantisation | FOUND: `gap-loop-eq-opus.md`, `gap-form-exercise.md` L352. No vector. |
+| c2 RG frame at all scales | another tool after first passage | NEW through V1: the two-dimensional mechanism in place of an RG step, at one reference coupling. |
+| d2, d3, d9 tests | which tests bind T_JW-lat | NEW: V5 (the torus normaliser binds T_JW-lat where Q_8 and 2T do not). |
+| b6 walls | free, twisted, pinned | FOUND: Route W (rows 858, 900, 910); Theorem TW-T (row 1004). |
+| b8 observables | smoothed total set | FOUND: gradient-flow transport (row 859). |
+| b10 isotropic spacing | anisotropy | 1+3 FOUND (rows 988, 992; row 859). **2+2 NEW: V1, V2.** |
+| b11 matter | Higgs | FOUND: row 1016 3.1, `gap-thermpin-opus.md` L48. |
+| b12 explicit Z_2, SO(3), pi_3 | - | FOUND: rows 859, 876, 900; K8. |
+| b13 trajectory | free irrelevant couplings | V2, V3 (NEW; both FAIL in step 4). |
+| c8 hard constraint | freeze one plaquette orientation | NEW: this is V1 (beta_L = infinity is a hard constraint on the (0,1) plaquettes). |
+| c11 seed by hand | parametric seed | V2. |
+| e7 Gribov | convex region | FOUND: row 1032 B8 (not selective). |
+| e8 instantons | - | FOUND: exercise 4 input 15; K8. No mechanism. |
+| e10 only strong coupling gives non-abelian gaps | a third source | NEW: the posted two-dimensional theorems, imported at an exact point (V1, Lemma ANCH). |
+| S1-S6 of row 1052 | - | S1: V1, V3. S2: no mechanism found. S3: row 1052's T_JW-lat; V5 corrects its test list. S4: V1 reads pins, not partition functions. S5, S6: no vector. |
+
+#### 3.2 Vector V1 (NEW): the flat-plane face of the anisotropic Wilson family
+
+**Source.** Assumptions b10, b2, c8, c2, a3. It answers a reopen condition that the lane wrote itself: row 1016, registry line F3, "a class of pins on which a rigid group acts and cannot be undone" (`gap-global-reform-max.md` L1040), and Lemma REM there (a colour twist of pinned data is removable unless a pinned path carries it). Nearest items on file, credited: the transverse-lattice gauge fixing of row 1016 4.4 (after Bardeen, Pearson and Rabinovici 1980), judged FAILS (Elitzur) at finite in-plane coupling; the pinned sheet of Theorem D2 (row 977) and the slab device K3' (row 1013), both used as negative devices. The difference: here the in-plane plaquettes are frozen by the coupling, the model stays in the anisotropic Wilson family, and the posted two-dimensional gap theorems are used as a positive input.
+
+**Setting.** Lattice Z^2 x Z^2 with points (u, x); u is longitudinal (directions 0, 1), x is transverse (directions 2, 3). Three plaquette types: L in the (0,1) planes, T in the (2,3) planes, M mixed. Anisotropic Wilson weight exp(sum_p beta_type(p) x_p), x_p = (1/2) tr U_p, couplings (beta_L, beta_M, beta_T). The isotropic model is (beta, beta, beta).
+
+**The face model M(beta_M, beta_T).** Variables Phi_l(u) in SU(2) for each transverse link l = (x, y) and each longitudinal site u. Weight
+  exp( beta_M sum_l sum_<u u'> (1/2) tr(Phi_l(u) Phi_l(u')^(-1)) + beta_T sum_u sum_p (1/2) tr G_p(u) ),
+G_p(u) the product of the four Phi around the transverse plaquette p at u. The group G = SU(2)^(transverse sites) acts by (g Phi)_l(u) = g_x Phi_l(u) g_y^(-1), with g independent of u.
+
+**Exact statements (proofs in step 6).**
+- Lemma FACE-LIM: on boxes with free boundary, the limit beta_L to infinity of the anisotropic Wilson measure, on gauge-invariant functions, is M(beta_M, beta_T) on G-invariant functions.
+- Lemma ANCH: M(beta_M, 0) is a product over transverse links of two-dimensional O(4) models with coupling beta_M.
+- Lemma RIG: in M, a twist by a field g_x(u) costs a Dirichlet form in u only, for every beta_T and every G-invariant on-site term.
+- Targets, OPEN: (FACE-CH) exponential decay of every G-charged correlation in M, uniform in beta_T and in the transverse size; (FACE-SG) exponential clustering of G-invariant local observables in M(beta, beta_T), 0 <= beta_T <= beta; (BR-L) a lower bound for the clustering rate of (beta_L, beta, beta), uniform in beta_L in [beta, infinity].
+
+**Consumer chain to the gap.** (FACE-CH) and (FACE-SG) give a gap at (infinity, beta, beta). (BR-L) carries it to (beta, beta, beta), which is T_JW-lat of row 1052 at one coupling. The account then carries one reference coupling to finer cutoffs (the lane's carry, row 978; conditional).
+
+**What it changes.** The lane's route (ii) needs (N1) a frame on typical pins, (N2) the cancellation of the mass-like term, (N3) the gain, and (L3) decay of all observables from a small response (`gap-direction3-max.md` L104-111, L203-204). On the face (N1) and (N2) hold exactly (Lemma RIG), so (N3) and (L3) can be decided there without them. What is new to prove moves to (BR-L).
+
+**Cheapest kill tests.** (a) For the route: (BR-L) contains the target at one coupling, so the route is stronger than the target unless a mechanism for unfreezing is named. (b) For the testbed: a counter-model on the face with G-charged decay and no singlet gap (step 6 gives the scope of this). (c) Compact U(1) on the face must be massless at large beta (Gaussian computation, step 6).
+
+#### 3.3 Vector V2 (NEW): a parametric seed near the anchor, and an anisotropic trajectory
+
+**Statement.** There is eps > 0 such that the anisotropic model has exponential clustering in the region R = { beta_T xi_2(beta_M)^2 <= eps, beta_L >= xi_2(beta_M)^2/eps }, xi_2 the correlation length of the two-dimensional O(4) model. **Consumer:** a continuum limit taken inside R. **Source:** f1, c11, b10, b13. **Change:** the seed is parametric (a convergent expansion about Lemma ANCH), with beta_M as large as wanted. **Kill test:** does a Lorentz-invariant trajectory stay in R? (Step 4: no.)
+
+#### 3.4 Vector V3 (NEW): frozen two-skeleton arrays
+
+**Statement.** Take isotropic Wilson and freeze to 1 every plaquette that lies in the two-skeleton of the coarse lattice s Z^4. The frozen skeleton is simply connected, so one rigid SU(2) acts on it and twists along it cost a gradient only. Target: a clustering rate for this model, uniform in s and in the cutoff; with uniqueness of the infinite-volume Gibbs state it gives T_JW-lat as s grows. **Source:** b2, b13, S1. **Change:** the regularisation carries rigid frames on a set of measure zero. **Kill test:** is the charged decay along one frozen plane selective, and does the bulk step need the one-box estimate? (Step 4.)
+
+#### 3.5 Vector V4 (NEW framing): fix the infrared measure first
+
+**Statement.** Choose a coarse measure mu_0 in the cluster-expansion domain and refine it to a projective family whose fine members are asymptotically free; the gap of blocked observables is then built in. **Source:** c1, c3, b13. **Kill test:** is mu_0 a free choice? (Step 4: no.) Grep: "renormalized trajectory", "perfect action", "inverse RG": 0 files.
+
+#### 3.6 Vector V5 (NEW as a test for T_JW-lat): the torus normaliser
+
+**Statement.** N(T) = Pin(2), the normaliser of the maximal torus of SU(2), is a non-commutative, infinite, compact subgroup with abelian Lie algebra. Its frozen lattice gauge theory is the model of a massless branch of pure SU(2) by abelian dominance. Claim to test: it has no gap on Z^4 at large coupling, so it binds tools for T_JW-lat. **Source:** e1, d2, row 1052 6c (which removed Q_8 and 2T as tests of T_JW-lat). **On file:** one mention, row 859 idea 12 ("U(1), Pin(2) and every finite group are amenable", `gap-brainstorm-max.md` L291); BD_n in Lemma F4 of row 838. Not on file as a test model for T_JW-lat. **Consumer:** the test table, not a proof.
+
+Next: step 4, the kill pass.

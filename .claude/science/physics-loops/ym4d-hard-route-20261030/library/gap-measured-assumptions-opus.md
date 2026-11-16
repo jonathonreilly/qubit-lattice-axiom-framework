@@ -661,3 +661,19 @@ Not sharpened. The lane's price stands (`parts/gap.md` L250-257): (W) iff (BDD-D
   FAILS). Output `library/gap-measured-assumptions-check-<model>.md`.
 - Not proposed: a proof row on any M1-M9 (each held elsewhere, step 7); a larger Monte Carlo (it can only guide); a
   theta = pi study (off the target).
+
+### 9.8 Appendix: the five assumptions the measured record most strongly questions, and what each would open
+
+| # | Assumption (step 4 ID) | What the record says | What dropping it opens | Already on file? |
+|---|---|---|---|---|
+| 1 | Strong-coupling tools reach the band (c4) | contradicted: leading strong coupling misses sigma a^2 by 5.4x and m a by 2.4x at beta 2.30 (L9); roughening inside the crossover (L10) | IR tools only after further blockings: a counted, bounded range of doublings (M3/M6) | yes: RA/(CAS), ceilings, `gap-phys-seed.md` L139-147 |
+| 2 | Small periodic boxes stand for the confined theory at beta >= 2.3 (c6, c10, b6) | contradicted: N_t = 4 deconfines at 2.2985 (L3), confined box side 4-11 across the band | re-check of any guide with side < 1/(T_c a); it also explains why the 1981 K7 end point is contested | yes: `gap-tiltproof-max.md` L100; row 995 |
+| 3 | The gap comes through confinement, and deconfined models are counterexamples to gap tools (e10, d2) | questioned: gap and confinement are one-scale but the gap is the weaker property; spatial masses persist when the flux tube melts (recalled) | the target without the flux half (T_JW-lat), free of the frozen-group tests | yes: row 1052 FLUX-W, T_JW-lat |
+| 4 | The band is the Wilson-action crossover at order-one bare coupling, an artefact of the frame (c2 + b3) | contradicted: the crossover (specific-heat peak) is below the band; inside, ratios already scale (5.1) | nothing escapes: no change of action or frame removes the continuum problem in a 2-3 fm box; it closes the hope M4/M9 | partly: "scaling window" stated (`prior/gap-lit-grok-paths.md` L20); the placement table 5.1 is this run's |
+| 5 | A critical end point next to the Wilson axis drives the band (e4/L6, the K7 end-point test) | contested: Mathur-Gavai (1995), Datta-Gavai (1997) | the K7 end-point test drops to a contested belief; Proposition V stays the theorem-grade form | yes: row 995 |
+
+Also questioned, lower rank: theta = 0 left implicit in the target (a10; found again, row 838 item 72).
+
+Assumptions most expensive to be wrong (none contradicted by the record): e4 (no Wilson-axis transition, unproved,
+needed by every Wilson-axis join), e5 (asymptotic freedom non-perturbatively), e6 (universality). Literature proofs
+worth translating: none new (Osterwalder-Seiler, Guth / Frohlich-Spencer, van Enter-Shlosman are already the lane's).

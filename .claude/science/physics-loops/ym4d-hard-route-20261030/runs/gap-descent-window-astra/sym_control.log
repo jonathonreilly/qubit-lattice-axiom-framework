@@ -1,0 +1,32 @@
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 0, "eigenvalues": [0.00010204617095717006, 1.0448027780329622e-05, 5.002447303146845e-06], "residual": 9.7411956241102e-16}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 0, "eigenvalues": [4.32102586793166e-05, 2.1187910371669294e-06, 1.153612791108918e-06], "residual": 7.870456567720837e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 0, "eigenvalues": [1.437441587084821e-05, 6.776075204098895e-07, 5.232209530665313e-07], "residual": 4.459162162779509e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 0, "eigenvalues": [3.669055921217011e-06, 1.028435503390107e-07, 7.424854989285973e-08], "residual": 5.917277490833624e-16}
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 1, "eigenvalues": [8.271037231742441e-06], "residual": 4.64723746815374e-16}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 1, "eigenvalues": [1.150226327600923e-06], "residual": 4.81443209234886e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 1, "eigenvalues": [5.779686664606032e-07], "residual": 4.430971165779799e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 1, "eigenvalues": [6.546334597906604e-08], "residual": 5.145643072060324e-16}
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 2, "eigenvalues": [8.197929662248708e-06], "residual": 3.634972521345486e-16}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 2, "eigenvalues": [1.131125693403452e-06], "residual": 1.9008529553486649e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 2, "eigenvalues": [5.46286889695181e-07], "residual": 5.275323883860683e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 2, "eigenvalues": [7.167533103712945e-08], "residual": 4.0921769060830143e-16}
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 3, "eigenvalues": [8.271037231742438e-06], "residual": 4.1200752412198294e-16}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 3, "eigenvalues": [1.1502263276009224e-06], "residual": 7.99905747836573e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 3, "eigenvalues": [5.779686664606032e-07], "residual": 5.05228222368881e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 3, "eigenvalues": [6.546334597906604e-08], "residual": 5.967455179797945e-16}
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 4, "eigenvalues": [2.647245876233236e-06], "residual": 1.5486062998193406e-15}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 4, "eigenvalues": [1.1066301211850138e-06], "residual": 4.012954559352973e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 4, "eigenvalues": [1.5181295096311118e-07], "residual": 5.113466583911049e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 4, "eigenvalues": [4.632967512688841e-08], "residual": 3.1172683367368936e-16}
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 5, "eigenvalues": [3.6926238100948594e-06], "residual": 6.447437172299856e-16}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 5, "eigenvalues": [5.740585228116253e-07], "residual": 7.507960018076431e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 5, "eigenvalues": [3.0657074603108434e-07], "residual": 4.156932397317114e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 5, "eigenvalues": [5.439998333433378e-08], "residual": 3.4938855976402923e-16}
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 6, "eigenvalues": [3.823640893956856e-06], "residual": 5.884245367950049e-16}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 6, "eigenvalues": [3.7643584944022465e-07], "residual": 2.7380242972621753e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 6, "eigenvalues": [3.188753809562051e-07], "residual": 4.555286291177606e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 6, "eigenvalues": [3.891131528573022e-08], "residual": 4.657319684495047e-16}
+VALUE {"beta": 2.4, "multiplier": 0.0, "beta_L": "infinity", "sector": 7, "eigenvalues": [3.6926238100948594e-06], "residual": 7.966488747040578e-16}
+VALUE {"beta": 2.4, "multiplier": 1.0, "beta_L": 2.4, "sector": 7, "eigenvalues": [5.740585228116249e-07], "residual": 6.306715938264175e-16}
+VALUE {"beta": 4.0, "multiplier": 0.0, "beta_L": "infinity", "sector": 7, "eigenvalues": [3.0657074603108434e-07], "residual": 4.348589002923425e-16}
+VALUE {"beta": 4.0, "multiplier": 1.0, "beta_L": 4.0, "sector": 7, "eigenvalues": [5.439998333433378e-08], "residual": 4.869623054344956e-16}

@@ -1,0 +1,42 @@
+{
+  "pinned_checkout": "05298f1c7fea4e205a9540d1af52956afcab04a0",
+  "rules_main": "8b11ae2bb95e641494fe75ed83d108ee712fa3a9",
+  "sa_commit": "31a47c543775",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/GOAL.md",
+      "sha256": "5950335a78d4fcf3af18bbc3c95f5357950bafbd955542245a9219019095f1c5",
+      "lines": 92
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-descent-sign-2.md",
+      "sha256": "30f9a6dbeb062565af705ce30e3d85a5ad03d3f5a29cb0210acb4c272aa344b7",
+      "lines": 197
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-descent-sign-2-recompute-astra.md",
+      "sha256": "e9f6e5cd07281eef809fdec0665697caa34ffa9575c6278d11d190854b4c128c",
+      "lines": 438
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-descent-sign-2-check-opus.md",
+      "sha256": "da724796f8bb9b17fd0d0abad9c0d13f13dc5a2757991ec066e19598c5d8a850",
+      "lines": 421
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-sign-2-astra/recompute.py",
+      "sha256": "2aa8708f1399355300a81666797e12d65cae01f47aa744cd6a290d7ef81d95d6",
+      "lines": 312
+    },
+    {
+      "path": "/tmp/sa-gap-descent-window-astra.PKRugA/sa_ym4.tex",
+      "sha256": "d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f",
+      "lines": 32992
+    },
+    {
+      "path": "/tmp/sa-gap-descent-window-astra.PKRugA/sa_ca_I.tex",
+      "sha256": "4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93",
+      "lines": 166711
+    }
+  ]
+}

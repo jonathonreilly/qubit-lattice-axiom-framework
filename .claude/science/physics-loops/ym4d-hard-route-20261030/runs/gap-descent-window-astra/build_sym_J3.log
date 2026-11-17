@@ -1,0 +1,10 @@
+FULL_BASIS 33342
+SECTOR_SIZES [5219, 4691, 4433, 4691, 3577, 3577, 3577, 3577]
+SECTOR {'sector': 0, 'N': 5219, 'nnz': 112108, 'asymmetry': 8.881784197001252e-16}
+SECTOR {'sector': 1, 'N': 4691, 'nnz': 101460, 'asymmetry': 7.771561172376096e-16}
+SECTOR {'sector': 2, 'N': 4433, 'nnz': 96252, 'asymmetry': 7.771561172376096e-16}
+SECTOR {'sector': 3, 'N': 4691, 'nnz': 101460, 'asymmetry': 7.771561172376096e-16}
+SECTOR {'sector': 4, 'N': 3577, 'nnz': 76858, 'asymmetry': 6.106226635438361e-16}
+SECTOR {'sector': 5, 'N': 3577, 'nnz': 76794, 'asymmetry': 7.771561172376096e-16}
+SECTOR {'sector': 6, 'N': 3577, 'nnz': 76842, 'asymmetry': 7.771561172376096e-16}
+SECTOR {'sector': 7, 'N': 3577, 'nnz': 76794, 'asymmetry': 6.661338147750939e-16}

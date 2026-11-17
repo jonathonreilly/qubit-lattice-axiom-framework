@@ -1,0 +1,9 @@
+origin/pr-10114:.claude/science/toe-ruleset-20261021/agents/ym4d-existence/REVIEW_X8.md
+origin/pr-10114:.claude/science/toe-ruleset-20261021/agents/ym4d-existence/REVIEW_X9.md
+origin/pr-10114:docs/C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPPORT_NOTE_2026-05-10_numconv.md
+origin/pr-10114:docs/EXACT_TIER_PATH_INTEGRAL_BOUNDED_NOTE_2026-05-07_exact.md
+origin/pr-10114:docs/HIGGS_MASS_WILSON_LOOP_SPECTROSCOPY_BOUNDED_NOTE_2026-05-10_higgsH3.md
+origin/pr-10114:docs/ai_methodology/raw/prompts_session_855ddec4.md
+origin/pr-10114:scripts/alpha_s_numba_wilson_loop_mc.py
+origin/pr-10114:scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py
+origin/pr-10114:scripts/cl3_exact_tier_path_integral_2026_05_07_exact.py

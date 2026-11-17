@@ -1,0 +1,96 @@
+[
+  {
+    "L": 8,
+    "beta": 2.3,
+    "mult": 1,
+    "n": 4096,
+    "minimum": null,
+    "accepted_channel_count": 0,
+    "tau_max": 0.888435536297272,
+    "hot_cold_z_max": 2.046667661242871
+  },
+  {
+    "L": 12,
+    "beta": 2.3,
+    "mult": 1,
+    "n": 4096,
+    "minimum": null,
+    "accepted_channel_count": 0,
+    "tau_max": 0.9090328420039989,
+    "hot_cold_z_max": 2.434602737915327
+  },
+  {
+    "L": 8,
+    "beta": 2.3,
+    "mult": 2,
+    "n": 4096,
+    "minimum": {
+      "channel": "a0_s2_13_R",
+      "m": 0.6805108198275185,
+      "A": 1.65856850189372e-05,
+      "chi2": 0.5732264639969229,
+      "dof": 1,
+      "p": 0.44897964654394273,
+      "error": 0.16352238268203692,
+      "boundary_fraction": 0.0,
+      "range": [
+        2,
+        4
+      ],
+      "min_snr": 3.028625967055124,
+      "shift": {
+        "m": 0.0010005803571770363,
+        "A": 1.2785554125685533e-06,
+        "chi2": 0.01642159203852326,
+        "dof": 0,
+        "p": null,
+        "error": 0.6572808724859465,
+        "boundary_fraction": 0.84375,
+        "range": [
+          3,
+          4
+        ]
+      },
+      "double_bin": {
+        "m": 0.7332109264054516,
+        "A": 1.8963288555087506e-05,
+        "chi2": 0.7222889696950548,
+        "dof": 1,
+        "p": 0.3953941104982043,
+        "error": 0.16901620631854364,
+        "boundary_fraction": 0.0,
+        "range": [
+          2,
+          4
+        ]
+      },
+      "accepted": true,
+      "reasons": [],
+      "mL": 5.444086558620148,
+      "thermal_warning": false
+    },
+    "accepted_channel_count": 1,
+    "tau_max": 0.7276536953258556,
+    "hot_cold_z_max": 2.249559948869633
+  },
+  {
+    "L": 12,
+    "beta": 2.3,
+    "mult": 2,
+    "n": 4096,
+    "minimum": null,
+    "accepted_channel_count": 0,
+    "tau_max": 0.9065008630217193,
+    "hot_cold_z_max": 2.641537541586816
+  },
+  {
+    "L": 8,
+    "beta": 2.3,
+    "mult": 4,
+    "n": 4096,
+    "minimum": null,
+    "accepted_channel_count": 0,
+    "tau_max": 0.6090854250785103,
+    "hot_cold_z_max": 2.025670135875278
+  }
+]

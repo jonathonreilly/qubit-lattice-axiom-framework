@@ -1,0 +1,15 @@
+{
+  "completed": "2026-11-17T11:04:39.750241+00:00",
+  "source_sha256": "f50c316e6280794b4d9512e77490bb381ab031f3a25730cdefc28772992cbc40",
+  "grid_manifest_sha256": "e4232781c436cb391d9ad1f046d085e532bd8211621377572d47296835ffa048",
+  "ensembles": 37,
+  "nice": 20,
+  "numpy": "2.4.1",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  }
+}

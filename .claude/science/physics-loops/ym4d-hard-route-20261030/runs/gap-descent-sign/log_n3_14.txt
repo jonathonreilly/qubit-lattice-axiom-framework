@@ -1,0 +1,17 @@
+# model n3 2Jmax 14 dim 932 interior |[X12,X23]| max 6.47e-15 asym 3.4e-15 spec(X12) [-0.9808,0.9808]
+W bM  0.50 m_inf 4.0374651967 m2_inf 4.211911 min_bL[m-m_inf] +4.629e-03 at bL 1000  last(bL=1000) +4.629e-03
+H bM  0.50 m(t=0) 4.0374651967 min step dm +4.627e-03 at t 0.0->0.002  min(n1-n0) +1.5005e+00 at t 3.0  n0(0) 0.0029 n1(0) 2.3196
+W bM  1.00 m_inf 2.6628343008 m2_inf 2.994348 min_bL[m-m_inf] +4.727e-03 at bL 1000  last(bL=1000) +4.727e-03
+H bM  1.00 m(t=0) 2.6628343008 min step dm +4.725e-03 at t 0.0->0.002  min(n1-n0) +1.5013e+00 at t 3.0  n0(0) 0.0469 n1(0) 2.4110
+W bM  2.00 m_inf 1.8044619699 m2_inf 2.313131 min_bL[m-m_inf] +4.495e-03 at bL 1000  last(bL=1000) +4.495e-03
+H bM  2.00 m(t=0) 1.8044619699 min step dm +4.493e-03 at t 0.0->0.002  min(n1-n0) +1.4996e+00 at t 3.0  n0(0) 0.5799 n1(0) 2.8278
+W bM  2.40 m_inf 1.7668107676 m2_inf 2.299887 min_bL[m-m_inf] +4.595e-03 at bL 1000  last(bL=1000) +4.595e-03
+H bM  2.40 m(t=0) 1.7668107676 min step dm +4.592e-03 at t 0.0->0.002  min(n1-n0) +1.4860e+00 at t 1.5  n0(0) 0.9521 n1(0) 3.2505
+W bM  3.00 m_inf 1.7851112874 m2_inf 2.338519 min_bL[m-m_inf] +5.302e-03 at bL 1000  last(bL=1000) +5.302e-03
+H bM  3.00 m(t=0) 1.7851112874 min step dm +5.299e-03 at t 0.0->0.002  min(n1-n0) +1.4371e+00 at t 1.0  n0(0) 1.5530 n1(0) 4.2069
+W bM  4.00 m_inf 1.8247837675 m2_inf 2.395619 min_bL[m-m_inf] +7.044e-03 at bL 1000  last(bL=1000) +7.044e-03
+H bM  4.00 m(t=0) 1.8247837675 min step dm +7.040e-03 at t 0.0->0.002  min(n1-n0) +1.3522e+00 at t 1.0  n0(0) 2.5640 n1(0) 6.0927
+W bM  6.00 m_inf 1.8619409595 m2_inf 2.446596 min_bL[m-m_inf] +1.063e-02 at bL 1000  last(bL=1000) +1.063e-02
+H bM  6.00 m(t=0) 1.8619409595 min step dm +1.062e-02 at t 0.0->0.002  min(n1-n0) +1.2923e+00 at t 1.5  n0(0) 4.5732 n1(0) 9.9049
+W bM  8.00 m_inf 1.8788395553 m2_inf 2.469263 min_bL[m-m_inf] +1.419e-02 at bL 1000  last(bL=1000) +1.419e-02
+H bM  8.00 m(t=0) 1.8788395553 min step dm +1.418e-02 at t 0.0->0.002  min(n1-n0) +1.2679e+00 at t 1.5  n0(0) 6.5754 n1(0) 13.7008

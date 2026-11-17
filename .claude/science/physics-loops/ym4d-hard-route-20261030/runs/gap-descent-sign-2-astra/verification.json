@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-11-17T03:52:13.778010+00:00",
+  "grade": "mechanical verification only; no proof discharge",
+  "checks": {
+    "frozen_numerical_artifacts_unchanged": true,
+    "repo_search_first": true,
+    "single_terminal_result": true,
+    "leakage_truncation_criterion": true,
+    "endpoint_truncation_criterion": true,
+    "all_eigen_residuals": true,
+    "requested_couplings": true
+  },
+  "note_sha256": "e9f6e5cd07281eef809fdec0665697caa34ffa9575c6278d11d190854b4c128c",
+  "files": {
+    "library/gap-descent-sign-2-recompute-astra.md": "e9f6e5cd07281eef809fdec0665697caa34ffa9575c6278d11d190854b4c128c",
+    "runs/gap-descent-sign-2-astra/recompute.py": "2aa8708f1399355300a81666797e12d65cae01f47aa744cd6a290d7ef81d95d6"
+  },
+  "max_rss_bytes": 81068032
+}

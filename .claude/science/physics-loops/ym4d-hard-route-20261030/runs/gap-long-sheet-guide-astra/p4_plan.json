@@ -1,0 +1,110 @@
+{
+  "phase": "p4",
+  "label": "GUIDE",
+  "chains": [
+    {
+      "tag": "p4_L128_T4_b2.4_k0.024_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.024,
+      "seed": 11210000,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.024_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.024,
+      "seed": 11211009,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.24_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11212018,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.24_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11213027,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k1.2_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11214036,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k1.2_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11215045,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k2.4_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11216054,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k2.4_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11217063,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1
+    }
+  ]
+}

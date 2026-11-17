@@ -1,0 +1,61 @@
+{
+  "ended": "2026-11-17T13:13:43.401064+00:00",
+  "path": "independent complex-matrix multiplication",
+  "records": [
+    {
+      "tag": "gh_L128_b2.3_k-1_c1",
+      "max_readout_error": 2.9477488561191478e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "617abd2ad39d524997c2def5b3ae15b5dbc2a84826012cd862b64abb8d35f500"
+    },
+    {
+      "tag": "gh_L128_b2.3_k1_c1",
+      "max_readout_error": 2.977642599155672e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "d84031587a607fa199a8f74253b2c1088ffd960c923fccb1b6340ff097871e6f"
+    },
+    {
+      "tag": "gh_L128_b2.3_k4_c1",
+      "max_readout_error": 2.9756177188922095e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "d0586093b884f8638029c7266f08fe4d227da678d09a4fd8438b3a296fe862f8"
+    },
+    {
+      "tag": "gh_L128_b2.4_k-1_c1",
+      "max_readout_error": 2.9499088616269376e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "7974d561d065ea6b33e0bbd106c9f21fd5eeb9aab5a813b3f129904a547fbe2a"
+    },
+    {
+      "tag": "gh_L128_b2.4_k1_c1",
+      "max_readout_error": 2.9793384093146358e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "939a8c69b6c2673a7311ee112f827dd13cabbe98e7df96363b0f217917e63bc4"
+    },
+    {
+      "tag": "gh_L128_b2.4_k4_c1",
+      "max_readout_error": 2.972674506551698e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "87206aa17f2419b2790f13e0f21608e47b2a6dd2cdabee68280cdeb0e413b456"
+    },
+    {
+      "tag": "gh_L128_b2.5_k-1_c1",
+      "max_readout_error": 2.963680423295756e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "03386efbd7225663320088e48a57ac758f671afdc3d53a1599056b78df91044d"
+    },
+    {
+      "tag": "gh_L128_b2.5_k1_c1",
+      "max_readout_error": 2.9783012278628007e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "2f53a294d790eff237ce2abb815d79a929eb979ef8344a93af059fcfddd3c6ff"
+    },
+    {
+      "tag": "gh_L128_b2.5_k4_c1",
+      "max_readout_error": 2.977712387775e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "83a3a598c69a4d2f2ab51f7cde77adda3b027a4dfd1e5e0234a81cbe610d6e2c"
+    }
+  ],
+  "scientific_status": "GUIDE only, no proof discharge"
+}

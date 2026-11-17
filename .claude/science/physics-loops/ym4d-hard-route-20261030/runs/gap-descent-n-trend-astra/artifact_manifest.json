@@ -1,0 +1,1538 @@
+{
+  "library/gap-descent-n-trend-astra.md": {
+    "bytes": 15398,
+    "sha256": "ae9a965ca3d59ac38b8dff5be9d6213f1e4595386623faefa8599f0f283b9d91"
+  },
+  "runs/gap-descent-n-trend-astra/control.json": {
+    "bytes": 2055,
+    "sha256": "ee578531bc635d701a42d6fb14f11fc9a6ff794b87c019fb4f72cf386a9d7cd6"
+  },
+  "runs/gap-descent-n-trend-astra/control.log": {
+    "bytes": 1178,
+    "sha256": "18d709503193b09956c1e697b31ba1e273d466cd3f2a22451df5a39eb31a8bf6"
+  },
+  "runs/gap-descent-n-trend-astra/control.py": {
+    "bytes": 1373,
+    "sha256": "059ed493f6501efcc52a78e2422cfc6a1eb093a98b28fbbd52f761d8e715becd"
+  },
+  "runs/gap-descent-n-trend-astra/control_final.log": {
+    "bytes": 1701,
+    "sha256": "1e2636cdd9dffeb4bf60ca7ccb15e079996e1aace9693580a88de1a4fd90fe6b"
+  },
+  "runs/gap-descent-n-trend-astra/control_initial.json": {
+    "bytes": 1366,
+    "sha256": "2938ffb272672a20d50239414600032291e628dd9285506bf7bd1117a2cc9c0d"
+  },
+  "runs/gap-descent-n-trend-astra/control_initial.log": {
+    "bytes": 1178,
+    "sha256": "18d709503193b09956c1e697b31ba1e273d466cd3f2a22451df5a39eb31a8bf6"
+  },
+  "runs/gap-descent-n-trend-astra/environment.json": {
+    "bytes": 574,
+    "sha256": "83dd4bf25b11e0286ce2bc4b0504b4bba4737004c85dc09ea9ee25a360325ac4"
+  },
+  "runs/gap-descent-n-trend-astra/failed_accumulating_wilson_J4E48_build.log": {
+    "bytes": 1196,
+    "sha256": "09526429bd3309426dda0991bd30d7e61b64a32141e8dce09b08e1761bf5381e"
+  },
+  "runs/gap-descent-n-trend-astra/failed_linear_seed_n6_b1.5_C2.log": {
+    "bytes": 749,
+    "sha256": "73fbef1d9232e5c7a18a556c24b72b1f69b4b6e355922ac6ad0953dabb2db4a9"
+  },
+  "runs/gap-descent-n-trend-astra/failed_ncv10_n6_b2.5_C2.log": {
+    "bytes": 747,
+    "sha256": "2532203f5eb9dcc144dfaf0d0f26477533b10da6aff9f860d38ab9d6596ee45f"
+  },
+  "runs/gap-descent-n-trend-astra/failed_reflection_retry_n6_b1_C2.log": {
+    "bytes": 1088,
+    "sha256": "b3b28bfbfcd7cf1a272f845248fbeb7af61e94160ba7fcd4b47314a477b0160e"
+  },
+  "runs/gap-descent-n-trend-astra/final_controls.log": {
+    "bytes": 544,
+    "sha256": "b8ed39a872d7c0c94469323430e5a444ce0b40775e8e5696fad4a51983a91458"
+  },
+  "runs/gap-descent-n-trend-astra/final_controls.py": {
+    "bytes": 2162,
+    "sha256": "c4e9082585bbab3f87de28a8ce9bb8a5d5f717eda8131e2c4be606d45e05b4d2"
+  },
+  "runs/gap-descent-n-trend-astra/final_window_control.json": {
+    "bytes": 2640,
+    "sha256": "b6ae446f3aa32a381e1c9fdd09b22c31b4e8034768061ac93eba36a3152f2be9"
+  },
+  "runs/gap-descent-n-trend-astra/finish_jobs.log": {
+    "bytes": 45,
+    "sha256": "8afbb8f178c0c6a5c6047b1e3014fb4a1f36319936ff644e1fa64d5a54609048"
+  },
+  "runs/gap-descent-n-trend-astra/finish_jobs.py": {
+    "bytes": 521,
+    "sha256": "0540184f18768cbef7b705e9f96d15d394880b6ecaaeea80c9da640bff335360"
+  },
+  "runs/gap-descent-n-trend-astra/leakage.py": {
+    "bytes": 7992,
+    "sha256": "f4e512bea83e6f25715ca8d9296fa9a4829ac63bf8cd39d03aac90be9095e06d"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b0.5_A10_D12_Q32.json": {
+    "bytes": 825,
+    "sha256": "b434af792b1de4900cfde9d44d2aa9fc3f9fedbea95ef37db4646627386886ff"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b0.5_A10_D12_Q32.log": {
+    "bytes": 717,
+    "sha256": "402154151f370eef7c10fb37926fba120fb09b3035f7269e97acafe7e32c06c8"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b0.5_A14_D18_Q44.json": {
+    "bytes": 821,
+    "sha256": "265a2f43a98f951c319b39ea1f2fe007c9303e8ddebfd64585aebdf73a9da9f5"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b0.5_A14_D18_Q44.log": {
+    "bytes": 713,
+    "sha256": "bad55e1817d368e168289f6924a96195d30acf326e793722ee3d268b92e7efa6"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1.5_A10_D12_Q32.json": {
+    "bytes": 811,
+    "sha256": "0cef34649d8a288ec8e1ee538122fb025f2c1e85b9845ee3d1a0e130164bff08"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1.5_A10_D12_Q32.log": {
+    "bytes": 703,
+    "sha256": "39d696e7b3d6a7424827ec3e9d456734aa5a8f1a5d833574cc37dc76a5e3c4b2"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1.5_A14_D18_Q44.json": {
+    "bytes": 810,
+    "sha256": "36d0c1c12e20ade4b956c6ad9aeef3b3a213c7f5df2a7ea3c61dfdc6ae0021d4"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1.5_A14_D18_Q44.log": {
+    "bytes": 702,
+    "sha256": "b96f52c38e9cefbf0fa89f046d8ab115ac697455475de111a6349c262a82bf8f"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1_A10_D12_Q32.json": {
+    "bytes": 814,
+    "sha256": "a2a2b7191a03a43665a3a3670b83ddeafad6021d23e54a0dab5732d0c652d65d"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1_A10_D12_Q32.log": {
+    "bytes": 706,
+    "sha256": "1c3935aa35bd64a46697cc83cede577552711e6315959d2a4c8568c52c10836c"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1_A14_D18_Q44.json": {
+    "bytes": 811,
+    "sha256": "8f76f9491988f24546e56f28e284539cb1248b7d0218c092d50c5811225bf3b7"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b1_A14_D18_Q44.log": {
+    "bytes": 703,
+    "sha256": "7454c04caae84174ca89d322a5e62fb6c610a5603afdb6257c3973eb5ecdf371"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.2999999999999998_A10_D12_Q32.json": {
+    "bytes": 812,
+    "sha256": "33a1e70d03cd1cef054e358255e836e9ed379974f20eb357709801475fceb940"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.2999999999999998_A10_D12_Q32.log": {
+    "bytes": 704,
+    "sha256": "3543a4a1d92c9f50bb5ab429bb341d60289d128b3a05b9e95137fc73d3e64d88"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.2999999999999998_A14_D18_Q44.json": {
+    "bytes": 805,
+    "sha256": "7f5e1c15a9e2fde1a3ed8e60cefd2d63dcc8e74d278619c5eb186acd50a68dea"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.2999999999999998_A14_D18_Q44.log": {
+    "bytes": 697,
+    "sha256": "a5a2b96f63670d29afe5274fe4d8b56c3d0974ed58e75c0b926c7cf39200f063"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.3999999999999999_A10_D12_Q32.json": {
+    "bytes": 808,
+    "sha256": "048b6a0036040063e72515487366e2e872736b17314aeebe4e871ab81e1150cc"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.3999999999999999_A10_D12_Q32.log": {
+    "bytes": 700,
+    "sha256": "7dbe56c6d97430b4cd5f999e08518460428cbbcda88bd7c6f530f864e4881d90"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.3999999999999999_A14_D18_Q44.json": {
+    "bytes": 809,
+    "sha256": "3131170fa5d138b76ce4497cd31f1d89bbf3395b4728e022153ad27da9d5667a"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.3999999999999999_A14_D18_Q44.log": {
+    "bytes": 701,
+    "sha256": "cd0105506194f6f539993728915b2b0ea4eeca39786f866283a06eb242fdbaf6"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.5_A10_D12_Q32.json": {
+    "bytes": 808,
+    "sha256": "13e6c7cade67e53b25e9016c0e2904c604efb5d224c2500983c7f3245d3b5ca1"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.5_A10_D12_Q32.log": {
+    "bytes": 700,
+    "sha256": "23d65ee3ce83a4501e2bd92f7b9593180c5afbf34f17d879ea134d3a7f61c203"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.5_A14_D18_Q44.json": {
+    "bytes": 804,
+    "sha256": "7ec1ea5bffbcdd58e68bcc0126e34c76d181e9f414099873fd77493bc31d3242"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.5_A14_D18_Q44.log": {
+    "bytes": 696,
+    "sha256": "ee56c785f3e321c8e7f38ec014136a2c8787a6e7da773eb89a73bb9bf610b4bf"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.6000000000000001_A10_D12_Q32.json": {
+    "bytes": 807,
+    "sha256": "1cc267009cf3c340454dbbc49d64f5c813d5be836eea1a4711296da9e999289e"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.6000000000000001_A10_D12_Q32.log": {
+    "bytes": 699,
+    "sha256": "51f0cbc858100a28485d4dca4b8206f801a91794da01b9c09fc9b3c4791dad87"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.6000000000000001_A14_D18_Q44.json": {
+    "bytes": 805,
+    "sha256": "9e36590ff2ceae04afe424186e68443b2a9d53ba9f0bf19818e18e919cad635b"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2.6000000000000001_A14_D18_Q44.log": {
+    "bytes": 697,
+    "sha256": "6e6ffa09afb15cebcc1e6be928131aaa78c36e48fbe3c2d0867dc23f48a19648"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2_A10_D12_Q32.json": {
+    "bytes": 804,
+    "sha256": "228e7f4177bfa2ca7b8e4d4fb39ceda57352e8331278fbc93006ee107e5ecec4"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2_A10_D12_Q32.log": {
+    "bytes": 696,
+    "sha256": "cff3256a81197c883621e84c2e9584ffd8898b68a0ff8e97fdb2e5fafd4f36e8"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2_A14_D18_Q44.json": {
+    "bytes": 807,
+    "sha256": "a1a76b96291fb036bf869c782d6d11032460b07ceb354c7d395327de27aedee7"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b2_A14_D18_Q44.log": {
+    "bytes": 699,
+    "sha256": "2c6975181b9fdb1d4293a7880471e189913533cdcce103aa624342400e3d6ff0"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.25_A10_D12_Q32.json": {
+    "bytes": 802,
+    "sha256": "35aed6913a1573677bdf02bb268efe54e7ab3db81af69b5abb53846734d04e7a"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.25_A10_D12_Q32.log": {
+    "bytes": 694,
+    "sha256": "91771e94d42323b35e8d96ad0c4336b7189b2af130d2b577526d43119a4f7a45"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.25_A14_D18_Q44.json": {
+    "bytes": 803,
+    "sha256": "ab64591c9a39a4d9e2318ddd337d0d08803fbe2096fe5940e48bf2e4e4542cd6"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.25_A14_D18_Q44.log": {
+    "bytes": 695,
+    "sha256": "375e8694bddac80b24f3e8d8211f855d6c44b346f178b53f48787a2d217f27a1"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.375_A10_D12_Q32.json": {
+    "bytes": 813,
+    "sha256": "c184376d731ad3afdf4b43dcb9319ac8fc13b52aaaf85d76d2d1430b7c125372"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.375_A10_D12_Q32.log": {
+    "bytes": 705,
+    "sha256": "34d6b971113f40c8b1edc6248426191c5341a226dcbae101a10ce24925ff924b"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.375_A14_D18_Q44.json": {
+    "bytes": 809,
+    "sha256": "9e94796885e94f630f9565a5be7fef7f73aa2f8a0fa5e3f61c824270a3ddae56"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.375_A14_D18_Q44.log": {
+    "bytes": 701,
+    "sha256": "a0c075d7e4c6d4b8df47f825e15404e53d7745c2159337cb70951c415e009db6"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4375_A10_D12_Q32.json": {
+    "bytes": 817,
+    "sha256": "7ff3077c86f03681cb13452de5ab4e4b1e0c664cfa74532d7bbcafe8c5efc779"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4375_A10_D12_Q32.log": {
+    "bytes": 709,
+    "sha256": "e5fa1c99995e4da09264d106f79ebcb38b1248c7d9d0267361e3031f23f29a72"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4375_A14_D18_Q44.json": {
+    "bytes": 817,
+    "sha256": "50e72ef2755bd26349126d27c004cb16c652fecebc003ddd8bee7f3a1b604a9d"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4375_A14_D18_Q44.log": {
+    "bytes": 709,
+    "sha256": "e2102ae2a2f0850d97a69a40b91c2a892de5cbe2f7bfa5087b55fda20122d996"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.46875_A10_D12_Q32.json": {
+    "bytes": 815,
+    "sha256": "18e5369cc0b0ed596f9e87c2e168691aa9a2eb973d0acf059213c961f0508cc2"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.46875_A10_D12_Q32.log": {
+    "bytes": 707,
+    "sha256": "5679e3e1300d4a89e8051134d5e017bc227d2a5d1fef9b0fd49b96804c1bf3f0"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.46875_A14_D18_Q44.json": {
+    "bytes": 821,
+    "sha256": "32d1d073dd60ae1800aa28f85b114fe003c132009b1fa6074de31d8e877ee23b"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.46875_A14_D18_Q44.log": {
+    "bytes": 713,
+    "sha256": "38ac5fb770033e1b33a15af1f6124bfb76e64f845ba894f8425a3ffcc39cef78"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470703125_A10_D12_Q32.json": {
+    "bytes": 829,
+    "sha256": "f387fda6cd521743af4ccaf839f8ef021c17173df23d22b2c507bc855fa14621"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470703125_A10_D12_Q32.log": {
+    "bytes": 721,
+    "sha256": "281795217c5e22ad22344407216cc29c629351c162871f93a06bf68ae0a02716"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470703125_A14_D18_Q44.json": {
+    "bytes": 832,
+    "sha256": "dcf9be86548807eb1f23db574d3bf5a7cbe90abe2a73ca7b2e6fa415030c038d"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470703125_A14_D18_Q44.log": {
+    "bytes": 724,
+    "sha256": "ef241c13f4593a6384891ad5a5e03afbbed9bb64b3069cd21174cc4f5c531b3e"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708251953125_A10_D12_Q32.json": {
+    "bytes": 834,
+    "sha256": "6f5256cc03b61238222c046d5012669313c67f446a7e794175d7f5a45a928fda"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708251953125_A10_D12_Q32.log": {
+    "bytes": 726,
+    "sha256": "fe8557d240d3ec4fab48884d098910b54b6bc1181c304399aebab82051c39992"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708251953125_A14_D18_Q44.json": {
+    "bytes": 833,
+    "sha256": "6e254e5696270e1cf3cd9dd80d77224ab7e081597b66938a663e28455e6ac0da"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708251953125_A14_D18_Q44.log": {
+    "bytes": 725,
+    "sha256": "a97005f29f7669ad2e2136566a29a4fdfd96aa0cbd412991cf138ad3135df94e"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708404541015625_A10_D12_Q32.json": {
+    "bytes": 843,
+    "sha256": "cedb3a2795b39b3f3291f215422d75ad636092731ab4d6092a86ebef9ee03c15"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708404541015625_A10_D12_Q32.log": {
+    "bytes": 735,
+    "sha256": "1f6995fa5b9ecfb12ed66f1afee58da273f1aa18b706097e921174f4e069d7e1"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708404541015625_A14_D18_Q44.json": {
+    "bytes": 844,
+    "sha256": "008ece94da06153e5587c375d0b358cb615deb774eb3215c153ec7621d71ef20"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708404541015625_A14_D18_Q44.log": {
+    "bytes": 736,
+    "sha256": "d58ca28119e45827424263e5be202f5677d6b7c941fa6bf65732ebc2ab23da00"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708480834960938_A10_D12_Q32.json": {
+    "bytes": 846,
+    "sha256": "08278407caa7facae33fa5b5d0e9a2e94f6b1d0642fded64dc4575b4e2bb6f58"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708480834960938_A10_D12_Q32.log": {
+    "bytes": 738,
+    "sha256": "a4f4aaf74451e8a0aa1bd95932dce1fe5994d58e5b87e85f2138624cd83e10dd"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708480834960938_A14_D18_Q44.json": {
+    "bytes": 842,
+    "sha256": "21a27e83572e382c53a7e610b39c426a1787d20fee63355111f0c5312aca07db"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4708480834960938_A14_D18_Q44.log": {
+    "bytes": 734,
+    "sha256": "02668a09dd05bed36ba613c71e28ae007b2e6236c71fb56dd9d33e62afa64873"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470855712890625_A10_D12_Q32.json": {
+    "bytes": 840,
+    "sha256": "d0f7d1e5b7a273ab8cf832de135453e7c2b2c1176088746d6fea89303aad7f79"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470855712890625_A10_D12_Q32.log": {
+    "bytes": 732,
+    "sha256": "957253063822b19ecabbb865ea1cd2f8bb4ad7567d239d1b865ba8b516c8ac0b"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470855712890625_A14_D18_Q44.json": {
+    "bytes": 844,
+    "sha256": "5883737efff7c2d97ecc215f450953d234c90d190f0b8180c68ff6989670fdc5"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470855712890625_A14_D18_Q44.log": {
+    "bytes": 736,
+    "sha256": "2ccf7897435306c51bac60584a0af3ee768070ad57f17cf27fc5ea42baf204f0"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47088623046875_A10_D12_Q32.json": {
+    "bytes": 840,
+    "sha256": "05f72862e287040ad47ec4eb4436be3e94373b816b253b328fa1593002936c86"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47088623046875_A10_D12_Q32.log": {
+    "bytes": 732,
+    "sha256": "79f22d3a0ad2de263b3ec790b5207952f87da26d3e67c1d1af2b0d3b3aef880b"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47088623046875_A14_D18_Q44.json": {
+    "bytes": 840,
+    "sha256": "e94b432d1009fb92dbaef750cff0620593aff2e75c04cd0e61097a8f9aee1858"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47088623046875_A14_D18_Q44.log": {
+    "bytes": 732,
+    "sha256": "bb829e067b10b532626828cbf77ccdc6ddf642c5bae7eefaf20f49e5b16337cd"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470947265625_A10_D12_Q32.json": {
+    "bytes": 834,
+    "sha256": "3be82640b106b0c7301f2f81bdb12cdafc05648c071ed44c360253a0e9a75136"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470947265625_A10_D12_Q32.log": {
+    "bytes": 726,
+    "sha256": "33c9e26cd4086f91a48bebb0da2e57f2efd4bcc68addadd6c4d4db0719a31bc7"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470947265625_A14_D18_Q44.json": {
+    "bytes": 836,
+    "sha256": "3f556159808353c75c2e9d6f45980b017bbe9ec6b12c31df683942de60f5a60b"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.470947265625_A14_D18_Q44.log": {
+    "bytes": 728,
+    "sha256": "5f64ccca00fb85a081ff9383dc29dd57efbc5e9420f2f39f1e16af259daf71fe"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47119140625_A10_D12_Q32.json": {
+    "bytes": 836,
+    "sha256": "2db9924e6fa8f72b25f9d547f4d047215970712285e51450a6e1cecc81faf9ba"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47119140625_A10_D12_Q32.log": {
+    "bytes": 728,
+    "sha256": "b5ec10b1fc078d444c25b040782e48363e6309ab26d74619df6af587e8ff3e79"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47119140625_A14_D18_Q44.json": {
+    "bytes": 832,
+    "sha256": "0a383eadd4c0a4d90b186802415e3559a3af99a5a81f1496ded205be1ac906aa"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47119140625_A14_D18_Q44.log": {
+    "bytes": 724,
+    "sha256": "2e1f31a98eac70cd903fe6ef133be4cc445c1f85fdfd519775d4bdf3772189a8"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4716796875_A10_D12_Q32.json": {
+    "bytes": 829,
+    "sha256": "4d68751c55c88f6f820bb3e4422d81c8a8b0c28bbb3eee3a853508109d8bcb30"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4716796875_A10_D12_Q32.log": {
+    "bytes": 721,
+    "sha256": "a26b355cad678045b136872e557fdc771ecc3019ad2ac9993401e59c23ff2de1"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4716796875_A14_D18_Q44.json": {
+    "bytes": 827,
+    "sha256": "f196363c15107be00fa310a20735b98b3a7c87a10b53a2da13843fd79f45347b"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4716796875_A14_D18_Q44.log": {
+    "bytes": 719,
+    "sha256": "add06c0f44007167300cbeca567044dfd534e6e33c14f29ff9ee4d12c67328fe"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47265625_A10_D12_Q32.json": {
+    "bytes": 826,
+    "sha256": "b59a19ca9d24e4e6f195d3760fa7c138c658770a6e49f7de2e2e6ffc83e8a823"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47265625_A10_D12_Q32.log": {
+    "bytes": 718,
+    "sha256": "fb8257ed546b68c77c101c1675596579740675a1dd7f2f20bf24dd9ea4e7bdc7"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47265625_A14_D18_Q44.json": {
+    "bytes": 827,
+    "sha256": "8c5e9fbbeab7d61d983bb644dafafcca619dad09de47d274c96d291c7cb6a8c4"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.47265625_A14_D18_Q44.log": {
+    "bytes": 719,
+    "sha256": "4107f976ca0cfdc3f3812e315bcc1da164d38aceb7423c53d614cbe3e60f3d6d"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4765625_A10_D12_Q32.json": {
+    "bytes": 819,
+    "sha256": "75a8dfe7dc6b5fa8b8f7aeda700dee07348e85184eff55a79313e4539b7b9481"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4765625_A10_D12_Q32.log": {
+    "bytes": 711,
+    "sha256": "16f04e1d5b217a424c4b7a07dbad2fda19d6bc9017bee3d74c96e5a0a8b8aa74"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4765625_A14_D18_Q44.json": {
+    "bytes": 821,
+    "sha256": "9d4392dab6f7d50985a27fc184bbe91ef47e3fd90bdfcaa9416d899a2a3ced2e"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.4765625_A14_D18_Q44.log": {
+    "bytes": 713,
+    "sha256": "97c88d31ffe1c35bb529dd23e4aa119f8ea3e8a155a02295ab2aeae3f9ae9157"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.484375_A10_D12_Q32.json": {
+    "bytes": 818,
+    "sha256": "6705327ba7763fee5c7480d4172f5f8991a32c539e1d47580671913d934b3231"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.484375_A10_D12_Q32.log": {
+    "bytes": 710,
+    "sha256": "146785eaf510f70d7415948c6e763e1ca8ea3826086faa231c318d07565a4bb0"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.484375_A14_D18_Q44.json": {
+    "bytes": 820,
+    "sha256": "8fc44daf8a37edeebfae452da049ff11933568f10c2ca818ce22155f7f88b60c"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.484375_A14_D18_Q44.log": {
+    "bytes": 712,
+    "sha256": "4576ec246383830444c0d7e1b5679dad163136002695252ff6a907f8d7d2a97a"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.5_A10_D12_Q32.json": {
+    "bytes": 809,
+    "sha256": "48f2946489efaf1cada0296cb1e36f0551f9ccb10c27d52b484c0f149ff067eb"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.5_A10_D12_Q32.log": {
+    "bytes": 701,
+    "sha256": "631b4bd14d41cac342fcc33623d11ab130ef59abe608c055b647d1ee5c774f2c"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.5_A14_D18_Q44.json": {
+    "bytes": 814,
+    "sha256": "a99151ce4edfa54ba1c25910f27041d7562a15d9741d708a655e7ee7f53a1a72"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3.5_A14_D18_Q44.log": {
+    "bytes": 706,
+    "sha256": "75615f7aecf1192af172a5c9a8ac340402abcf62a2fb1ceb21112083187f6412"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3_A10_D12_Q32.json": {
+    "bytes": 807,
+    "sha256": "eab7de33dbcd17937ebb6d75b3a8854301ad6e730b036ff93df24fd4c152efb5"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3_A10_D12_Q32.log": {
+    "bytes": 699,
+    "sha256": "ef245f6e27254fe45d7894c4b55bc23f8ad26b80bb26a6fdfe63c6c7bb199951"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3_A14_D18_Q44.json": {
+    "bytes": 805,
+    "sha256": "f896365133bc9c9acf31408aa6eb75a03b7866587fc617e2060f63823ca02fae"
+  },
+  "runs/gap-descent-n-trend-astra/n4_b3_A14_D18_Q44.log": {
+    "bytes": 697,
+    "sha256": "a76cd8bb7064b7bf82a06674a09484c6926121877cbd440a7a68b5485ee580d8"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b0.5_A10_D12_Q32.json": {
+    "bytes": 893,
+    "sha256": "3b81ad5a56687dd2587978d108e9a476a2ee4da86318a926ddd2018b429cc051"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b0.5_A10_D12_Q32.log": {
+    "bytes": 763,
+    "sha256": "0055f85696f1b9740c348ed3158f17f7f5c317bc0169897a72607abf942a08b0"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b0.5_A14_D18_Q44.json": {
+    "bytes": 894,
+    "sha256": "323e4772a02e40c2c81ba606c74675a6560ee644cbdf986b6813e7f571dd436f"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b0.5_A14_D18_Q44.log": {
+    "bytes": 764,
+    "sha256": "ddf862c5d6c370fea432a71b1614dd8287dca78f3f1ce6c1ac4d71ee1bd8936a"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1.5_A10_D12_Q32.json": {
+    "bytes": 878,
+    "sha256": "0fdc7dce1181a49a07c2bedfd165508b683e8655f961013bfb2f3ae64b6ad0fe"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1.5_A10_D12_Q32.log": {
+    "bytes": 748,
+    "sha256": "dbd686328c8250d39ee96f0768f67868080cb624d8549eca3ef9717c59a89174"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1.5_A14_D18_Q44.json": {
+    "bytes": 875,
+    "sha256": "38ae3d475fe5d3a7d3524d7d05ed2cc479939b388104e317e3822dc8cefe8dc1"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1.5_A14_D18_Q44.log": {
+    "bytes": 745,
+    "sha256": "3dfa3236c0a70473372a885d102618a07d8c8de3055efe694a10610250109b35"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1_A10_D12_Q32.json": {
+    "bytes": 884,
+    "sha256": "1f72e49782cb435132b9511d8f66c73392d86dc72dac0bb8f9a5cfe44cc733d9"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1_A10_D12_Q32.log": {
+    "bytes": 754,
+    "sha256": "763ac0ba9ff832e43bd3c56bed4031ccff84c4e990ff22bde9fcf766d4b6197c"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1_A14_D18_Q44.json": {
+    "bytes": 881,
+    "sha256": "4b2ea8686b171a6abec22100b700b3468efccbfa4cf9ecf073937a5798d7e44b"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b1_A14_D18_Q44.log": {
+    "bytes": 751,
+    "sha256": "18bdaef7e9755d9409a3bbb360fbd4882e057735b76d804111eb29b42a330703"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.2999999999999998_A10_D12_Q32.json": {
+    "bytes": 871,
+    "sha256": "7bd3762641502442e9131193b3c25ca46314e406e95b254f65cc3b02e215f5fc"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.2999999999999998_A10_D12_Q32.log": {
+    "bytes": 741,
+    "sha256": "68e5189719458cea92a7fdfdacc50ab65883c3729685c6621daa885b5c07a707"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.2999999999999998_A14_D18_Q44.json": {
+    "bytes": 865,
+    "sha256": "269fd6d8abae4326b6a02df324423e37d238d4e627d6526080c2b67305b4bdec"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.2999999999999998_A14_D18_Q44.log": {
+    "bytes": 735,
+    "sha256": "a8b4cb5ebac149bf6d0e51087351739481d3854eb36bac661f82bcd9137e9331"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.3999999999999999_A10_D12_Q32.json": {
+    "bytes": 871,
+    "sha256": "92683078db504ff0f08d2e98bd356abdf96574050d7c8a9a0dc1e427d1edc2de"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.3999999999999999_A10_D12_Q32.log": {
+    "bytes": 741,
+    "sha256": "c327e04b8abc05e693113620942ec1fe7f69fea3f0d34053d70cc7cb3c904bbb"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.3999999999999999_A14_D18_Q44.json": {
+    "bytes": 873,
+    "sha256": "a0ed1b97072fbee8703399a859ada2efbf71ef7116795fc750ef3b8be24f79a4"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.3999999999999999_A14_D18_Q44.log": {
+    "bytes": 743,
+    "sha256": "b7ccc0970ba633da9cbebf9785ff72847f65108d519c6a0539a587e60799b4a2"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.5_A10_D12_Q32.json": {
+    "bytes": 873,
+    "sha256": "7fbd58c76155b8eb7e1659370d4655c52ef65ac469f20cf1922080882532a0f6"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.5_A10_D12_Q32.log": {
+    "bytes": 743,
+    "sha256": "52e40ebe3dd6b1981b715dc2c117dfc080182805833f3dcff469b67646bfacfd"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.5_A14_D18_Q44.json": {
+    "bytes": 871,
+    "sha256": "ff7442711b13c857079c92df786541b1538a9a4c93a9f570d9f739902019857c"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.5_A14_D18_Q44.log": {
+    "bytes": 741,
+    "sha256": "1d8c419f6599ae8b01af5e4037c131057f9819fdcb2b7b7f727072d2c4d25a56"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.6000000000000001_A10_D12_Q32.json": {
+    "bytes": 872,
+    "sha256": "ba34fec0bd3803dcff5153c5e82db832293729d36a38529a150a11caf7ab5108"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.6000000000000001_A10_D12_Q32.log": {
+    "bytes": 742,
+    "sha256": "418f9dceae88a5c8739c26797aea70a38e94b75a90b0d6c56c9d7d0b5f253206"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.6000000000000001_A14_D18_Q44.json": {
+    "bytes": 870,
+    "sha256": "3d73a7e297287cf57c34de27d670fbbb67eebeb1789f1960eab0e7f603fc4779"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2.6000000000000001_A14_D18_Q44.log": {
+    "bytes": 740,
+    "sha256": "ce74056edbc529413a5e80155b3726ec6e8a3e47a2e3c1f22c7b62574004fa50"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2_A10_D12_Q32.json": {
+    "bytes": 876,
+    "sha256": "7dd3c5da51c53b564a4a9ea8892e04e42cc6b00013c227894b779e7d3a4caad7"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2_A10_D12_Q32.log": {
+    "bytes": 746,
+    "sha256": "f42ba14384d244ff8a2ae14ad466d0f062471aadb6d362e3c4baee80183c797e"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2_A14_D18_Q44.json": {
+    "bytes": 874,
+    "sha256": "4cf594aa91007b954bb3431d47a5fce60efaec92d466326ea49433f3da57c580"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b2_A14_D18_Q44.log": {
+    "bytes": 744,
+    "sha256": "2018e43094f1574679a7264ce08d8e50b22e1e41da82ae0a282ee91c38a3e96a"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.25_A10_D12_Q32.json": {
+    "bytes": 871,
+    "sha256": "f74597799bfcd42a4f59bfadedd580254708646c25134dbf7bae138394f758e7"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.25_A10_D12_Q32.log": {
+    "bytes": 741,
+    "sha256": "7bbb0a21e5a692a2a9c32ccfee14815972a01b0f68759a838c8278c0498620b4"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.25_A14_D18_Q44.json": {
+    "bytes": 870,
+    "sha256": "45d6402017ad37eccb3b5775bc5a66b9284c684349b4b49d1b2614a9edd20a61"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.25_A14_D18_Q44.log": {
+    "bytes": 740,
+    "sha256": "263c9f0b1d4a64b54a1a2b04703efec4201e588d903aeca0e09ee3fda5aea283"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.375_A10_D12_Q32.json": {
+    "bytes": 879,
+    "sha256": "c41d22ad609347a040e6e18a51f79c58b96be870cc27e2ea14f513739bd2c83d"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.375_A10_D12_Q32.log": {
+    "bytes": 749,
+    "sha256": "61d24a8497ab80df6d21f5fa5cb4aabacf94f9625c599c10fe14bf9a4dc3c685"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.375_A14_D18_Q44.json": {
+    "bytes": 875,
+    "sha256": "192150754ae73e8a61d71da0e27b5134d3f5b6fcb9a58395be85cfa7c4dcb958"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.375_A14_D18_Q44.log": {
+    "bytes": 745,
+    "sha256": "54b9f3207d3aaf3b1ab3ecb3f9f788d878ea6c6defbf87997ea955d9c4c4b568"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.40625_A10_D12_Q32.json": {
+    "bytes": 885,
+    "sha256": "a59035788113b3095df282780dfd25ffa37d17d7ce2d185690410dce27416088"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.40625_A10_D12_Q32.log": {
+    "bytes": 755,
+    "sha256": "0dab9b0998a45a9be5b8c0fab70ea22ae1a9154bdf6e17868a272b6c14e71945"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.40625_A14_D18_Q44.json": {
+    "bytes": 881,
+    "sha256": "6c8f57c6fb0e3c9eefc2f53942eb7ac5c654fac387ff21a2d08b44afa79a0d8c"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.40625_A14_D18_Q44.log": {
+    "bytes": 751,
+    "sha256": "d0a97dc34e78d1f1b30ed73560f0baa7a61feaea5b4abfac63a024f63f16756e"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.421875_A10_D12_Q32.json": {
+    "bytes": 889,
+    "sha256": "f396b0d833572d5517dd2eeae221804351ff4385b50ddb405438fe16923c90b1"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.421875_A10_D12_Q32.log": {
+    "bytes": 759,
+    "sha256": "4e2e69174ef26a8d0867866937f36ba9a91364abaa36be9c14e41587276d80a8"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.421875_A14_D18_Q44.json": {
+    "bytes": 884,
+    "sha256": "ed7105288b2339dac0dd3e4cae336f4a7f411374f6b310899eb645fbfa677a59"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.421875_A14_D18_Q44.log": {
+    "bytes": 754,
+    "sha256": "79045c7935e87f79914d315ee7c73bfd3afc38b03abddee8251a5d5f1fa9da97"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42578125_A10_D12_Q32.json": {
+    "bytes": 892,
+    "sha256": "b6ef39d776774d4d0cf4b1401c8df0b95b047c6bebd335ee420a180a0624d4f7"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42578125_A10_D12_Q32.log": {
+    "bytes": 762,
+    "sha256": "8250650cb29cebd6767247e19589c3e14a7fbaa9c824197985330d69aa7a3355"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42578125_A14_D18_Q44.json": {
+    "bytes": 887,
+    "sha256": "675228f044de1384db944f0d9fc58f4534dba487d10df1ba44b0b7cf95310969"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42578125_A14_D18_Q44.log": {
+    "bytes": 757,
+    "sha256": "1973f16da8d6b7c2186d28efbcfbe66d6b671f89474fef97b801b30ec6b82cc1"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.427734375_A10_D12_Q32.json": {
+    "bytes": 893,
+    "sha256": "1d71e0a2838db0156ae36a377d75d7dd1e58dbaea2ac336632bd9a010ddfd49a"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.427734375_A10_D12_Q32.log": {
+    "bytes": 763,
+    "sha256": "7870fa930d29d2e14150fb337c07ec563d9187be6194a780633c65fef80436b9"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.427734375_A14_D18_Q44.json": {
+    "bytes": 890,
+    "sha256": "034da3fc5a4115033374585eddae09749463fc3758940d4a3603941a870ede5e"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.427734375_A14_D18_Q44.log": {
+    "bytes": 760,
+    "sha256": "4bada53d51efa724241f1f69a6a331c6309746951bc837994bb3ce17e0ab6a14"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4287109375_A10_D12_Q32.json": {
+    "bytes": 884,
+    "sha256": "9d72f7d33cd3d6e0db61642d33136ee8a0e6238be1fa440f6f3dadcb486c20d2"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4287109375_A10_D12_Q32.log": {
+    "bytes": 754,
+    "sha256": "35e0d71107c989be1f54c31401177a600c79deba54107ff8974701d0f3f5062e"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4287109375_A14_D18_Q44.json": {
+    "bytes": 890,
+    "sha256": "81d315ccb49ecb232abe043099c87f2739a81d898d16452dd978921c93aca706"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4287109375_A14_D18_Q44.log": {
+    "bytes": 760,
+    "sha256": "768044df553e7de029d9d64909cf59b0e9deee54ba984d9833683d9d23a2ccd1"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.428955078125_A10_D12_Q32.json": {
+    "bytes": 894,
+    "sha256": "bedb14d85818a07df27c8ba670a9cdb73f3c10bcd83120019b35397ebe70fd88"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.428955078125_A10_D12_Q32.log": {
+    "bytes": 764,
+    "sha256": "689a5b4e660fd4b9459d2b3f9cdeba3ac054df0d079d65ef17e8e040377d5b25"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.428955078125_A14_D18_Q44.json": {
+    "bytes": 899,
+    "sha256": "0fc5e1b3911fb8648c1359b8394e4b9df8852e505947d432ca3086388045bfca"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.428955078125_A14_D18_Q44.log": {
+    "bytes": 769,
+    "sha256": "609d99434ed4310031c96b0ed207ed228af4ef245d3f7a862b25bf4c49ca9c05"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4290771484375_A10_D12_Q32.json": {
+    "bytes": 900,
+    "sha256": "b47ae238ec32fbbbda45777b5d9f7e5fa3066b52907ec198cf19672f654d61fd"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4290771484375_A10_D12_Q32.log": {
+    "bytes": 770,
+    "sha256": "f7036236210ff241cd5bad15d35948e3c2873cbecb79fec9c9ea26d5deb21f95"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4290771484375_A14_D18_Q44.json": {
+    "bytes": 898,
+    "sha256": "c15366ef20ad0f07a1f92ab056ae63aa790cb492693b3a8d066bee43b6b6e093"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4290771484375_A14_D18_Q44.log": {
+    "bytes": 768,
+    "sha256": "8397e4e959af3476f77d28f646f1d547479ebcc0f6c645e9652595067e8ba7e6"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42913818359375_A10_D12_Q32.json": {
+    "bytes": 904,
+    "sha256": "d835726c63b47b9bfb4eec039e6209e4f776aa52260aa2925d6d5bf4ec0cb20e"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42913818359375_A10_D12_Q32.log": {
+    "bytes": 774,
+    "sha256": "161a6dd77298bb5195bd5d5595f7eafb7a83905bc1719e3671094ba8557db80f"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42913818359375_A14_D18_Q44.json": {
+    "bytes": 900,
+    "sha256": "d171df6b09a5cebacbdb12aa94e99aa41d460f93ff848003970d9c865e393f2a"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42913818359375_A14_D18_Q44.log": {
+    "bytes": 770,
+    "sha256": "5cc6c03bdc048d99e0114666cda1f8d78539b2da879c31cd11d13f861a5d5bb2"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.429168701171875_A10_D12_Q32.json": {
+    "bytes": 902,
+    "sha256": "3413e90f578cec9bd3697a8f29fc2cec9cf1c38f93ab185025da499be5b21a96"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.429168701171875_A10_D12_Q32.log": {
+    "bytes": 772,
+    "sha256": "10b2328faf5a635d3a8898f96e360c8a28f4e14494756cf19ebd3245e19f94bf"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.429168701171875_A14_D18_Q44.json": {
+    "bytes": 905,
+    "sha256": "d0047e8b4caa00865d502d513985eb6af7df6da93dfbd72352f88f9bb89d00d9"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.429168701171875_A14_D18_Q44.log": {
+    "bytes": 775,
+    "sha256": "9d198338fe8b1ddf9884190ea80693c79188e9f199a9961cb4cc71c42b092882"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291839599609375_A10_D12_Q32.json": {
+    "bytes": 903,
+    "sha256": "a92e9b8de799969b3e17df565d95783ad770f2d45f5ff4d19f3dd069a4de45e9"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291839599609375_A10_D12_Q32.log": {
+    "bytes": 773,
+    "sha256": "ec587f48576b5bec4f26579b479bcc799aea2aac2a448446603a7757c6b40b20"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291839599609375_A14_D18_Q44.json": {
+    "bytes": 905,
+    "sha256": "4765b140c004231b9391bb0fd413b6a03f6e1cca19e55ff0c65f0d6e9d717b7a"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291839599609375_A14_D18_Q44.log": {
+    "bytes": 775,
+    "sha256": "d15ebdb61aa84d9b2bf165bb2ae1163ad5b895646d818d1ffb60cff36faaacaf"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291915893554688_A10_D12_Q32.json": {
+    "bytes": 904,
+    "sha256": "aa15cd77b239eb785e736e6001fab95cb0e663907b861e7e73a16d047f059495"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291915893554688_A10_D12_Q32.log": {
+    "bytes": 774,
+    "sha256": "3964ce682e5779b1070aba61db795181a336075c81a6cbda8132ab792e0e2c7c"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291915893554688_A14_D18_Q44.json": {
+    "bytes": 901,
+    "sha256": "8734c406f187262f067b1ab2bf33530e4c200c6f794f99d12b1bfaee919a4219"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4291915893554688_A14_D18_Q44.log": {
+    "bytes": 771,
+    "sha256": "92c8968587f271ee5dc6a9fb8da52b723473860ecf2e78545ebbe868b0db82f4"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42919921875_A10_D12_Q32.json": {
+    "bytes": 898,
+    "sha256": "1a7aa2c707261524d3f39d424f00263135203567cce07d78aa7c9b8f5da35b05"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42919921875_A10_D12_Q32.log": {
+    "bytes": 768,
+    "sha256": "3baba800189e868795e3a671f6cb153724730ab68a8a766cbe40cafc0f4c502e"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42919921875_A14_D18_Q44.json": {
+    "bytes": 896,
+    "sha256": "752de8d07db9fe07e20620dcffabc197caa20a679a9c7e27c0b4511822677f36"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.42919921875_A14_D18_Q44.log": {
+    "bytes": 766,
+    "sha256": "72a2604d99272d6ea534909fafd759b5de5a7a971cc87cff5b02a8490a695ee4"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4296875_A10_D12_Q32.json": {
+    "bytes": 885,
+    "sha256": "a1381174d5a7073f44df997d71fc22711544a70aace530ff3e29cab2156e8963"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4296875_A10_D12_Q32.log": {
+    "bytes": 755,
+    "sha256": "9be87d8de9e1e4c2ef45048b3d9e8dac5f01fec015641774cc3b2aeb9c8f39f0"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4296875_A14_D18_Q44.json": {
+    "bytes": 889,
+    "sha256": "91ae7736dff8e6035b39dab161907a69eeeee48622d52e75dece14f942d114ca"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4296875_A14_D18_Q44.log": {
+    "bytes": 759,
+    "sha256": "20463d2cb3e75899081a217e316e5354a5212849e4d53b1050a27bef5f51333c"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4375_A10_D12_Q32.json": {
+    "bytes": 880,
+    "sha256": "5f02c85a7aadf8aae9253eaa24d468ba8bab78a984e0cc8713ffaa7a23b6664e"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4375_A10_D12_Q32.log": {
+    "bytes": 750,
+    "sha256": "1ed8ed903e6799b21f567954cebfeb6ca7c9d4e88d3303dff08c2e01448aca90"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4375_A14_D18_Q44.json": {
+    "bytes": 879,
+    "sha256": "17375cfa5e4c86e52410809300af614c169c1e16ff9f3a9cd8fbe662a7a7bf19"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.4375_A14_D18_Q44.log": {
+    "bytes": 749,
+    "sha256": "0b171f754b137cd7f0d2034cbac045692d6bc9923e56d7515ca90fa28a575a17"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.5_A10_D12_Q32.json": {
+    "bytes": 875,
+    "sha256": "e61c374b24b44254cdb921adadb2560e2cf61df75b545ce00a188076d49fc516"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.5_A10_D12_Q32.log": {
+    "bytes": 745,
+    "sha256": "c347e7089cd41731fc5ca69c992f4195c3d4a31a874be58893a4da1372dca59c"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.5_A14_D18_Q44.json": {
+    "bytes": 874,
+    "sha256": "27037f35d2dc2bc0f68b87d1414187752cee42c7d669042770b6f4f646959750"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3.5_A14_D18_Q44.log": {
+    "bytes": 744,
+    "sha256": "0a0abc46eb35318f65f889f06c44dab8eb0fbba7a926f4b9ffeb31360acd6d45"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3_A10_D12_Q32.json": {
+    "bytes": 874,
+    "sha256": "423a6dc1499670bcfbb58f33ffea61e94db906e35665b1b76ab70ec68fd7c164"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3_A10_D12_Q32.log": {
+    "bytes": 744,
+    "sha256": "a46f3a6a68619ddac054efd78064368f68066bc0874318ba0a1807efda1753a2"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3_A14_D18_Q44.json": {
+    "bytes": 867,
+    "sha256": "10e56f620937568582b83cd772701487a8cca529631f5484c3b5824f3ba92d36"
+  },
+  "runs/gap-descent-n-trend-astra/n5_b3_A14_D18_Q44.log": {
+    "bytes": 737,
+    "sha256": "776b5a815bbb1b5e52f74523da45d15dab8596d47ca599e5ab3555538959d81a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b0.5_A10_D12_Q32.json": {
+    "bytes": 2586,
+    "sha256": "3fac654fb5a5cf1ac4cdb14380f7ff6610beac227a23e632403c0bb852f6ad37"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b0.5_A10_D12_Q32.log": {
+    "bytes": 1996,
+    "sha256": "2630369e048254c3776e6d6b24b4c4443ef27221967d9efaa4a203f17fc429a8"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b0.5_A10_D12_Q32.rejected.json": {
+    "bytes": 956,
+    "sha256": "6a7dbeb1cb1b9168bab23695582056137a05d67456bee2b6f3a4e07c3c318901"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b0.5_A10_D12_Q32.rejected.log": {
+    "bytes": 804,
+    "sha256": "45bbc3d1e8b9bee525d1fa7f21acf191498c1bb23187849eb68c6113d8da3898"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b0.5_A14_D18_Q44.json": {
+    "bytes": 964,
+    "sha256": "e5e19c4064b3a929ae8101960ce589fd1bc7a43a039470bac952cba515ec61e7"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b0.5_A14_D18_Q44.log": {
+    "bytes": 812,
+    "sha256": "9f5c28a98750a70c903bf0abae9ab9382d3ee5f3cd18d3dee95c234fdb592188"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1.5_A10_D12_Q32.json": {
+    "bytes": 943,
+    "sha256": "f15880b395ff1e3665ce11f2854589f25910286ceb9325b871c34e68af42a216"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1.5_A10_D12_Q32.log": {
+    "bytes": 791,
+    "sha256": "9dd16121872ebb4d7099b4573ed7199cab97c8464c5f6cda179a214cd07cb215"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1.5_A14_D18_Q44.json": {
+    "bytes": 940,
+    "sha256": "a28273a026eea9bb9a40c369c199d4456ca8161297e1ea8554dc9d4b5741c43f"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1.5_A14_D18_Q44.log": {
+    "bytes": 788,
+    "sha256": "ac25106bb8b7d12404675635169aae49c52c0261b62dc6857c791f91f1578fa5"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1_A10_D12_Q32.json": {
+    "bytes": 945,
+    "sha256": "c398eed8cdc378094d571d3ccb87e9f70eb36c3b29aede3ad07857b9d38b40b8"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1_A10_D12_Q32.log": {
+    "bytes": 793,
+    "sha256": "3ec49013649199cb22965887f67a7d7a82106b5369ea57d1ae3b90a0252fb106"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1_A14_D18_Q44.json": {
+    "bytes": 2691,
+    "sha256": "6b30f98b75442f32bcfb825051a7e4c82e6b590dea29cdb12d0f23d865602440"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1_A14_D18_Q44.log": {
+    "bytes": 1998,
+    "sha256": "7c3d9bc055fb908221296c39d6740b1c26df7f1fd3aeccff585fba254034967a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1_A14_D18_Q44.rejected.json": {
+    "bytes": 948,
+    "sha256": "4a7bc5f2c1e84009c4fd35f9938975b5ee21c1308f7ab8e41988bf8a0cecf3f0"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b1_A14_D18_Q44.rejected.log": {
+    "bytes": 796,
+    "sha256": "4e6c067831feea94bf972f846f3e89efebbf11a6060598737bdbcb8a95810da4"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.2999999999999998_A10_D12_Q32.json": {
+    "bytes": 930,
+    "sha256": "4895810d74d538c7c4c95bffa245e0a2bfa1dbda9f879f35b158d343eb6c7601"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.2999999999999998_A10_D12_Q32.log": {
+    "bytes": 778,
+    "sha256": "a5f23f242a8d7c66db1651fc4601f19a26e758792fcfe042be5dba0b2e3d8923"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.2999999999999998_A14_D18_Q44.json": {
+    "bytes": 933,
+    "sha256": "8ecbac13c5bd7b7de893d68a9bae3edddf47430e0051be63240ff08fdd7a9739"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.2999999999999998_A14_D18_Q44.log": {
+    "bytes": 781,
+    "sha256": "3152777b9ac0a6607925ca9b89e735865d069bef3167a7e44ca583d68edb1192"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.3999999999999999_A10_D12_Q32.json": {
+    "bytes": 935,
+    "sha256": "83d39c8a06a3ac9448b4c8a19851495f7c98ad3bb356346084cc4b43fc1283fa"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.3999999999999999_A10_D12_Q32.log": {
+    "bytes": 783,
+    "sha256": "7526a83332341b748444ed6530fe068892b236a056641059b87acb39bc36e777"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.3999999999999999_A14_D18_Q44.json": {
+    "bytes": 936,
+    "sha256": "0ff1216cb3677529daf11559dfaa2ce07bb44e037468f493e694f2703a8af9c3"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.3999999999999999_A14_D18_Q44.log": {
+    "bytes": 784,
+    "sha256": "483a7087421ff7c289922ccbc7c7c6b868e6d10f70b7fb5469513f1b1ca0784f"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.5_A10_D12_Q32.json": {
+    "bytes": 936,
+    "sha256": "fb6eccc861bf205ed015dcdc1403253eadc4bc8cf8091b35c98ba460a8de1c14"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.5_A10_D12_Q32.log": {
+    "bytes": 784,
+    "sha256": "70e785360fcd4525d9aaf337306c9a1f0ad78c83ca57e33d5eb07ecba924da71"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.5_A14_D18_Q44.json": {
+    "bytes": 1306,
+    "sha256": "ae518f393f046ed821fa30225bb3f4199e31a4a0ad0132037dab676832e81373"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.5_A14_D18_Q44.log": {
+    "bytes": 1044,
+    "sha256": "4da5e4913ae47e7fa56c822f5a386b1e5fa03b9a48e8444e72c51462c58b1073"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.6000000000000001_A10_D12_Q32.json": {
+    "bytes": 1302,
+    "sha256": "3dd271e899ccb1dd790ffe1e20931e386ffc70bf3c4dad772aee82d951390b65"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.6000000000000001_A10_D12_Q32.log": {
+    "bytes": 1040,
+    "sha256": "348063cab6e56f2e5ac7864699726cddcbaca3277d080368e7f9ea9dfc3e87b8"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.6000000000000001_A14_D18_Q44.json": {
+    "bytes": 1305,
+    "sha256": "0c00a70f7c26918ee1fcbd1003768cc50382512efa2a0a01a99c6215d4590291"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2.6000000000000001_A14_D18_Q44.log": {
+    "bytes": 1043,
+    "sha256": "32de009c4f85b4d0309e72393149473690791f3ae40937c6c11701fdc6f7fc98"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2_A10_D12_Q32.json": {
+    "bytes": 934,
+    "sha256": "56c71e714a86d2ee4dcbb3637e050dad91898ce0e6c8a6ef9542f109e9db9c02"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2_A10_D12_Q32.log": {
+    "bytes": 782,
+    "sha256": "69e1bbfc9ddd06755bfd09a29adccb750453c0739b5823ccab00f8c26ef5a866"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2_A14_D18_Q44.json": {
+    "bytes": 941,
+    "sha256": "c8483c9c1e36b183849c679539cbbf529a2c2b3b149ed371973e62eb71bc2d54"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b2_A14_D18_Q44.log": {
+    "bytes": 789,
+    "sha256": "92889a9207c0a431d6d1f9f7e5954a65c810757f431ab61011ea4d03039f5a20"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.25_A10_D12_Q32.json": {
+    "bytes": 1299,
+    "sha256": "0992e39bd5f41355567308be225ae24646b054256cdd0d1455cc8185648fa1bc"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.25_A10_D12_Q32.log": {
+    "bytes": 1037,
+    "sha256": "ff71ac928576c013ef17004f1401b4699f66e59eb540c046f4cc1c4f4740d722"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.25_A14_D18_Q44.json": {
+    "bytes": 1307,
+    "sha256": "43ba6761381c0b244b6846b143c73b7e7be2353046e3f6c5a93e08b1eded809b"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.25_A14_D18_Q44.log": {
+    "bytes": 1045,
+    "sha256": "5dc1f2834fe3ce1435b52ab30b1c3845550cb322c75b7e0ca3351f22d0118721"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.375_A10_D12_Q32.json": {
+    "bytes": 1305,
+    "sha256": "2852f52e69a4538f02e8353cec7c65dd0ee1a0afa80356e4577e4b0e4c5d273a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.375_A10_D12_Q32.log": {
+    "bytes": 1043,
+    "sha256": "59f877d5a8d8f50972095d4da84ec1f39411ee6f2e3560a1636bf071aa171e96"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.375_A14_D18_Q44.json": {
+    "bytes": 1310,
+    "sha256": "47b0adc6e2a1d4d82bac521eae04b7cd3df3d94635cd5aac38818ec6de0dbe3b"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.375_A14_D18_Q44.log": {
+    "bytes": 1048,
+    "sha256": "626933e72423a6df20cb97e1a4c157a4f543cf9bc93187fdd9a9cf4594e42f1c"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.40625_A10_D12_Q32.json": {
+    "bytes": 1306,
+    "sha256": "1ae8879168071822b29dc8d0a10f4c0d6927cd03e137aeefea916fd6ada89dcc"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.40625_A10_D12_Q32.log": {
+    "bytes": 1044,
+    "sha256": "3de338d7d663808d7ddee7819e2275608ba70a4423f98ac249c690eb88e3495c"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.40625_A14_D18_Q44.json": {
+    "bytes": 1316,
+    "sha256": "55e54e647dc9212c0ad07872b44a9c1f0793bd511ada407b5f4c2dc9f076c5c6"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.40625_A14_D18_Q44.log": {
+    "bytes": 1054,
+    "sha256": "4e045a7e8e972a7302be78fa96ccad1df9bfc0b6dba617fc5fecb3c735abf6be"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4140625_A10_D12_Q32.json": {
+    "bytes": 1318,
+    "sha256": "9c99d3fc6dea9bc52efca9de12a5dfd7bc7676320c2624322557f6a4ffaa6aeb"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4140625_A10_D12_Q32.log": {
+    "bytes": 1056,
+    "sha256": "2e21153c16db2224be0f23e988bcd6776d98ce0a9e68cfb8c3330b2d913c1942"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4140625_A14_D18_Q44.json": {
+    "bytes": 1318,
+    "sha256": "ab5922fd420c74f9b85fc1932b6f578c4509180707b1357e54736bb5386a1678"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4140625_A14_D18_Q44.log": {
+    "bytes": 1056,
+    "sha256": "179ec27fd74582fd2934a0663dd36ca549df92fdc4d8964cc03015d9ffde962e"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416015625_A10_D12_Q32.json": {
+    "bytes": 1315,
+    "sha256": "3d5428a950e2f3dc025a518504a88568f6aa05054522a5202bd3bd890dc12df7"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416015625_A10_D12_Q32.log": {
+    "bytes": 1053,
+    "sha256": "4b57b909999a5a1c2a095f9095a653d49948ac8b071917790eb8895a0b0b890e"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416015625_A14_D18_Q44.json": {
+    "bytes": 2671,
+    "sha256": "2dc2aaad8d5c558785845ebad29505bd6235b60f4c16217e8a5bc86be4102362"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416015625_A14_D18_Q44.rejected.json": {
+    "bytes": 1327,
+    "sha256": "d819a646f90e20b35f46101f41104ac287dab3859d4751a4650857ea47889baf"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416015625_A14_D18_Q44.rejected.log": {
+    "bytes": 1065,
+    "sha256": "e1f98bd65bcb64391fbdf0566de478eee198bb7f7594de7d1eb4294c99128277"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416259765625_A10_D12_Q32.json": {
+    "bytes": 1324,
+    "sha256": "c6153ce8ea58e075989c6163468f722c0b7fa8e057fc3260b63be4ae5ed9fe0a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416259765625_A10_D12_Q32.log": {
+    "bytes": 1062,
+    "sha256": "0f8d839a66241ee55902afd409db874069e025b3d2e3d3f495d38abdc4bf232e"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416259765625_A14_D18_Q44.json": {
+    "bytes": 1332,
+    "sha256": "36b9cb3d5759006f59a8281c478fc21802bcd6d3d54b962095079a3ac6e00b15"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416259765625_A14_D18_Q44.log": {
+    "bytes": 1070,
+    "sha256": "fdb05047f1e4335a82000c8a5a44d35f3444da5b3cac021172e7ce472234a890"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4163818359375_A10_D12_Q32.json": {
+    "bytes": 1325,
+    "sha256": "53ed7b0b392b2bf70188dd60faa080f2b318ee65640ab4c8a77d6afa8d4853e1"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4163818359375_A10_D12_Q32.log": {
+    "bytes": 1063,
+    "sha256": "5ca51197b0bde1223b845b46d32030bcfd45a9813e0de061a48040f55a7b9a62"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4163818359375_A14_D18_Q44.json": {
+    "bytes": 1328,
+    "sha256": "0e271f55c6e3ec66b37939bdc7915ed86585cd9301c72dacbd79e01a81984677"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4163818359375_A14_D18_Q44.log": {
+    "bytes": 1066,
+    "sha256": "f39b70b470e804799d2ad5fed5e9cb5ea5c94baf43592d895a4bedf336e31e16"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41644287109375_A10_D12_Q32.json": {
+    "bytes": 1370,
+    "sha256": "928403e46e33c10358efae1503c3620ce572fea98fbb0ac03e181b9429a9ebe6"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41644287109375_A10_D12_Q32.log": {
+    "bytes": 1106,
+    "sha256": "1b0dce0db67f17c00032a9dac237affc34574fa7f788b3ce89bcfc4cc757916d"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41644287109375_A14_D18_Q44.json": {
+    "bytes": 2629,
+    "sha256": "73a621f5fc061b164bd90a3a5afbf0705685f90b0c0b0e723b28b27d68c6bedd"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41644287109375_A14_D18_Q44.log": {
+    "bytes": 2037,
+    "sha256": "25439c7b6efba59b308154ed67a2ea544ee073096a71bb34879cf68e89f15b5a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164581298828125_A10_D12_Q32.json": {
+    "bytes": 2622,
+    "sha256": "526e73a90fb88c47280b6cd5dd3f2e4a22b3113da0374e845fd37cae7d267ce0"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164581298828125_A10_D12_Q32.log": {
+    "bytes": 2030,
+    "sha256": "3157fca827dec5955919a7779932214e6594beb90a4ef8bec83c0d0b5f5aca02"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164581298828125_A14_D18_Q44.json": {
+    "bytes": 2630,
+    "sha256": "4d72fb7d39175bdba5af719cc1527081192cd7a1da0640dcc43e0e46c9cce781"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164581298828125_A14_D18_Q44.log": {
+    "bytes": 2038,
+    "sha256": "17bf4e5e4728c03be33c2e39ab72586576d44b72a49ecea4e1e40b8c54e89d4e"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164657592773438_A10_D12_Q32.json": {
+    "bytes": 2634,
+    "sha256": "ed8f2ac820f61e87b1947073e8d3fa3b97abbc8f71f68ade6f9c942aa2105c8f"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164657592773438_A10_D12_Q32.log": {
+    "bytes": 2042,
+    "sha256": "06ac61fe60bbc975352f695bfa282ad0b2cb6aee288eeea6c8cabe7421515498"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164657592773438_A14_D18_Q44.json": {
+    "bytes": 2634,
+    "sha256": "b4bd2ba6e32c1c9236e78313573cd6bfac7d03da4421a3b2f6a2be984958f9c8"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4164657592773438_A14_D18_Q44.log": {
+    "bytes": 2042,
+    "sha256": "b9a328d8fac8e380d07c99ad2a8f828525f43ce3ddadd18790d29eb5120c3bdf"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416473388671875_A10_D12_Q32.json": {
+    "bytes": 2618,
+    "sha256": "9f58a1d86047acf78ef81a99f2e5f8d7eed1ecdc56ce9aea4946e7e983994ab8"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416473388671875_A10_D12_Q32.log": {
+    "bytes": 2026,
+    "sha256": "87771a7ac7021acbd456ec4446c55a11a9889a9c60a8429ff982a01e43b3fcc7"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416473388671875_A14_D18_Q44.json": {
+    "bytes": 2635,
+    "sha256": "c66e3e93a0b60c88be30a8b9f765065927087eccff0a72669b300047614a7468"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.416473388671875_A14_D18_Q44.log": {
+    "bytes": 2043,
+    "sha256": "8772ff1911e0663f8141f3b2120c9ddc3239b76643900f4bc9de507ac5d7083f"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41650390625_A10_D12_Q32.json": {
+    "bytes": 1325,
+    "sha256": "1086a9930bb7320292ff12f711cb6a17de85f63b33117deb1e6ceb67d6202b3a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41650390625_A10_D12_Q32.log": {
+    "bytes": 1063,
+    "sha256": "d3655f209c4014d1023237158f70c061d60053620149038c1c947bb84cd564a4"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41650390625_A14_D18_Q44.json": {
+    "bytes": 1327,
+    "sha256": "b67a3182b90efac84601149273f719973a9351a2b1f510020f5a329a3c882c9b"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41650390625_A14_D18_Q44.log": {
+    "bytes": 1065,
+    "sha256": "665430db07c4af440d8787da65ba8a1b5995c68e2461e9a119213c95ca133cf1"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4169921875_A10_D12_Q32.json": {
+    "bytes": 1322,
+    "sha256": "c99f638379ad0921ea7d0504185028199e8b5532fe14f90c507fd6ba5c01f501"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4169921875_A10_D12_Q32.log": {
+    "bytes": 1060,
+    "sha256": "a228302686dd0b0e85141120e81952e5866651dc8bb04e883344b9e66aed2eed"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4169921875_A14_D18_Q44.json": {
+    "bytes": 1325,
+    "sha256": "ebd3ae0d62bf758ecf3344edbb48592911c9924388d50d9afa9892c2810ecad3"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4169921875_A14_D18_Q44.log": {
+    "bytes": 1063,
+    "sha256": "f0df9c5a729c7e5e8a449cc2e6601ce94d6d345c86fe2471e898838fbc998e97"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41796875_A10_D12_Q32.json": {
+    "bytes": 1316,
+    "sha256": "ca6d644ab28ff5ef29833b0eae3cdb74fbe5322432624c6998150794b0681b76"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41796875_A10_D12_Q32.log": {
+    "bytes": 1054,
+    "sha256": "ab9d93cd4df34919aa3f4d5d091e13ff1411b2cbb39e5a35be31c95af0ff9141"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41796875_A14_D18_Q44.json": {
+    "bytes": 1315,
+    "sha256": "a06b9aa0de7027794415053cc8accfec48ff420926d9007e80903d57fc20e377"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.41796875_A14_D18_Q44.log": {
+    "bytes": 1053,
+    "sha256": "558cb93767a197011372feaead20c689a8746ce01135a4b124a74d23eea1e8fe"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.421875_A10_D12_Q32.json": {
+    "bytes": 1309,
+    "sha256": "cf30b252a82d804b228f3ed6f7673c174f0243e94f11b6dba7b9d2ac7039ed8e"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.421875_A10_D12_Q32.log": {
+    "bytes": 1047,
+    "sha256": "d052fabb33fb11a279f299397db8cdbcf4739ba533ab923f96a9e713c413cf35"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.421875_A14_D18_Q44.json": {
+    "bytes": 1315,
+    "sha256": "207db0fa6a327110eb8e7e4edb49703e06182024ee7e1df5cd6f91f5e05abc50"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.421875_A14_D18_Q44.log": {
+    "bytes": 1053,
+    "sha256": "07059c57eccb7452642617c3ac59a428fce91d56bdfa167d5d340cb40deae3d2"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4375_A10_D12_Q32.json": {
+    "bytes": 1312,
+    "sha256": "f89c675fd28e93699bf620a3e120340b2085d357d9627678caac6113ae349450"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4375_A10_D12_Q32.log": {
+    "bytes": 1050,
+    "sha256": "fd4ea815de71f61922c5d25da951401c6590c60f352187fe5dbce1f97d8c9b7c"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4375_A14_D18_Q44.json": {
+    "bytes": 1314,
+    "sha256": "2267a62d99a06c8de37513df3688a9e5f9437845332a103039b0f0d41ce61e05"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.4375_A14_D18_Q44.log": {
+    "bytes": 1052,
+    "sha256": "2f97e72fe48c4d501797b3367e528e7f4c058e9b709cc5e050be8f6f742b4dbe"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.5_A10_D12_Q32.json": {
+    "bytes": 1300,
+    "sha256": "3121ac4b7e39b7ec116a85b8b87dc223e4b6b8131316a982e8e29972433dbbcf"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.5_A10_D12_Q32.log": {
+    "bytes": 1038,
+    "sha256": "1eb86c25952502325e3e50d1709166b43a1a0af9f12fc812b2ad9593ee4af8fa"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.5_A14_D18_Q44.json": {
+    "bytes": 1645,
+    "sha256": "e3b7aeba5aa9b11623739d8dbc3fcb99d94c8f8cbf7533602f84a553ea521409"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3.5_A14_D18_Q44.log": {
+    "bytes": 1535,
+    "sha256": "28ed1be81f9aba7db88a36845bc2f4975cacc1c2ee326286a1bf9e584bf7e41a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3_A10_D12_Q32.json": {
+    "bytes": 1305,
+    "sha256": "eb73333238661901865f254ebe29b01d323d97560f2c2b2e2048967c339a3048"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3_A10_D12_Q32.log": {
+    "bytes": 1043,
+    "sha256": "ecff83e57ebf51cf46f01e194307b856a88f31841da81b7aa8952fc6f34cab05"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3_A14_D18_Q44.json": {
+    "bytes": 1638,
+    "sha256": "6ef6fb4b1754a46537941328214671bcd3b0833e77b80d28a358a9997c57797a"
+  },
+  "runs/gap-descent-n-trend-astra/n6_b3_A14_D18_Q44.log": {
+    "bytes": 1526,
+    "sha256": "1b7e76f8f44013a1ab7d84206ddcd81eeb9e0c3c1adb4944b53edb8271a3c5cd"
+  },
+  "runs/gap-descent-n-trend-astra/nested_control.json": {
+    "bytes": 121,
+    "sha256": "fbefaf3a52efc0e578f86e528a78d432a99e841cdfc4052e5a029f966f190c52"
+  },
+  "runs/gap-descent-n-trend-astra/nested_control.log": {
+    "bytes": 145,
+    "sha256": "ee45b4305df75c355b69e9f17eb09209da61f5e1c1b01cba80c2393c3803af6a"
+  },
+  "runs/gap-descent-n-trend-astra/nested_control.py": {
+    "bytes": 1218,
+    "sha256": "7eb214eea42216799e8a2fe4423eee59953703c0aa4a2f24113062e232c72a8d"
+  },
+  "runs/gap-descent-n-trend-astra/numeric_lock_before_release.json": {
+    "bytes": 330,
+    "sha256": "a0dc76e9d7ccbaefdbb6f3215edd6e20d9253a241a4a76de3182a596c536da98"
+  },
+  "runs/gap-descent-n-trend-astra/numeric_lock_release.json": {
+    "bytes": 43,
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9"
+  },
+  "runs/gap-descent-n-trend-astra/pilot_n4.json": {
+    "bytes": 806,
+    "sha256": "f599579ce20436981f99e4279718ed07390116c3ba6b9cb7d0e714d854081050"
+  },
+  "runs/gap-descent-n-trend-astra/pilot_n4.log": {
+    "bytes": 698,
+    "sha256": "79167952676ffacc0b093aa3a582f770ecb957c01eced00f86a7fd9138d7a637"
+  },
+  "runs/gap-descent-n-trend-astra/reflection_diagnostic.json": {
+    "bytes": 2530,
+    "sha256": "b65e4ab0f5cf401fdb3e04d2a2a076106f3cc86008a9fd9849c43ebba5e429f7"
+  },
+  "runs/gap-descent-n-trend-astra/reflection_diagnostic.log": {
+    "bytes": 1942,
+    "sha256": "e5765de890c10082392ec2e80fd46d0fadb7f090b25da6624962b920e629dbb7"
+  },
+  "runs/gap-descent-n-trend-astra/reflection_scan.json": {
+    "bytes": 454,
+    "sha256": "571165f3f6fe21df806f30ffa09fcd1d7c8dc697115e11c4847cef26e9c18d76"
+  },
+  "runs/gap-descent-n-trend-astra/source_receipt.json": {
+    "bytes": 1952,
+    "sha256": "a945587154f2fcd21048aaa77282e01d3d94d08c5005cd0b8b6267bee5fadd57"
+  },
+  "runs/gap-descent-n-trend-astra/summarize.py": {
+    "bytes": 3231,
+    "sha256": "dc91f06c5aa802a865a01cce0206f6f3610f5fd4791567e230598c2c2fdccf8a"
+  },
+  "runs/gap-descent-n-trend-astra/summary.json": {
+    "bytes": 57832,
+    "sha256": "fb85e766d390c9c77cb494f857fc457b1f131e19e42bfe63859cc96589be0640"
+  },
+  "runs/gap-descent-n-trend-astra/summary.log": {
+    "bytes": 2771,
+    "sha256": "fd564bec0c45aa1962b0b113f547df19c0e8667ad737deb864cb551884216e4b"
+  },
+  "runs/gap-descent-n-trend-astra/sweep.json": {
+    "bytes": 250064,
+    "sha256": "6166b2dc24547b961bc977b309327d2b99773d9366fd952ad696271ab8744561"
+  },
+  "runs/gap-descent-n-trend-astra/sweep.log": {
+    "bytes": 7281,
+    "sha256": "f7db13c52c35e3e118a82ada028964ffeec40fdeb998efef5b7af8e58bf77c08"
+  },
+  "runs/gap-descent-n-trend-astra/sweep.py": {
+    "bytes": 3211,
+    "sha256": "13e15da27656899c33df538ba47f67375ae5f967e864d760c34d4043b2710077"
+  },
+  "runs/gap-descent-n-trend-astra/sweep_final.log": {
+    "bytes": 842,
+    "sha256": "088e9f58026b2ef928d6ca135ae2f8438994cb3a39d70c5157144208cd571d3e"
+  },
+  "runs/gap-descent-n-trend-astra/sweep_resume_direct.log": {
+    "bytes": 1606,
+    "sha256": "c2c278ba8aaf0d201805e161c19460d64689c29287aa10caec1eb17bdcd8e27b"
+  },
+  "runs/gap-descent-n-trend-astra/sweep_resume_ncv12.log": {
+    "bytes": 3145,
+    "sha256": "89e2dee0c1b24102c0d01a8aa6c5844524c957f1da313a7351eaf15c2250c101"
+  },
+  "runs/gap-descent-n-trend-astra/sweep_resume_random.log": {
+    "bytes": 1879,
+    "sha256": "41314b29538c6168cca867b61547f794b89fa6971fda8b16be4c494df833f279"
+  },
+  "runs/gap-descent-n-trend-astra/synchronous_guard_diagnostic.json": {
+    "bytes": 2590,
+    "sha256": "deb90d8df18b555a437189142b00911e2983df2b7ef7b2b6e9bbf895d76108f2"
+  },
+  "runs/gap-descent-n-trend-astra/synchronous_guard_diagnostic.log": {
+    "bytes": 1998,
+    "sha256": "7c3d9bc055fb908221296c39d6740b1c26df7f1fd3aeccff585fba254034967a"
+  },
+  "runs/gap-descent-n-trend-astra/verify_records.py": {
+    "bytes": 3847,
+    "sha256": "c0cd368934cff5cf2301985593b1fa51fee1ce2ba913445fda5904c46fb46482"
+  },
+  "runs/gap-descent-n-trend-astra/wilson.py": {
+    "bytes": 14576,
+    "sha256": "5ba876277c6fb540687455fa8c35330193b703ab5e61e7580d577ed52d433079"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J1E36_build.log": {
+    "bytes": 1421,
+    "sha256": "622d66af0b3a915be6e458920ef70dd536eb16219c29e68e520dc35f9cae15aa"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J1E36_finalbuild.log": {
+    "bytes": 1467,
+    "sha256": "88fb842081ad7f0eb58c7c5d8a47ac957e7532b7df7f0c597290c5c5e301857c"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J3E40_build.log": {
+    "bytes": 1471,
+    "sha256": "8f93530ef0625b83bb9b5a3e2fdd7b17007e46d8878f5d44b9eac192a20316ca"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J4E44.json": {
+    "bytes": 7831,
+    "sha256": "5f27fc9b07bf98626cf0fd65c8957513752383bce2adf8dbda2f62e9181a2f98"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J4E44_build.log": {
+    "bytes": 1489,
+    "sha256": "5c7dfeae49862cfc094952b53b251b0b4b287242960fb7a495e063874e80fe1c"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J4E44_run.log": {
+    "bytes": 4592,
+    "sha256": "00610e372fe502449dfcff59e3e6bb1d235c524b57832c22dd31cff2f4306306"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J4E48.json": {
+    "bytes": 8906,
+    "sha256": "04612a2ca44e1a6ce18cfeb774bbf4ec6478af9cb42950cf506905bf4c83e006"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J4E48_build.log": {
+    "bytes": 1543,
+    "sha256": "aa4197dcdb77ff69519db526a228646287b40b8422c54cab787136aebff22690"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_J4E48_run.log": {
+    "bytes": 5386,
+    "sha256": "d560442038f193f826d5422f5ec436c6e593d87c00ad98ebc7c92b27383a0496"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_comparison.json": {
+    "bytes": 2400,
+    "sha256": "76ffab61c9fb54675bd987d99b449008a2aac70fefef1850161b03e66ff38f5a"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_control.json": {
+    "bytes": 170,
+    "sha256": "87a3374453479d5352ef19cdffd1b4f27fc15c3577f213184fbf9c945de0b8ab"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_control.log": {
+    "bytes": 451,
+    "sha256": "6e4f54e4551f77cac123fcc29aa6c9d78dd0cfa14a1853f90d2a295b33cdee94"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_control.py": {
+    "bytes": 2629,
+    "sha256": "e54ca87f711988536c23d274394e27b46ab353f94533ab0705d26328d2955bce"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_control_final.log": {
+    "bytes": 451,
+    "sha256": "eea6e3e3f7747d6641d60ab4666305476ba6637dcc98c9099bc847f7951dce3c"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_control_initial.json": {
+    "bytes": 170,
+    "sha256": "7002ca5ff6509b0132f0886c1a5151df1709ab8eb9d7ba4481faf4d5b3fd43f3"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_control_initial.log": {
+    "bytes": 451,
+    "sha256": "6e4f54e4551f77cac123fcc29aa6c9d78dd0cfa14a1853f90d2a295b33cdee94"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_inventory.json": {
+    "bytes": 2000,
+    "sha256": "6c4370f63e6ed5eaa1fcd7068c1c891e740036cdd05e41733c04be52c62d8c87"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_inventory.log": {
+    "bytes": 1291,
+    "sha256": "d48d82df8f1dc75c87baf1ecab62a95010c62d35e53c693d2f78f3414f13ebf4"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_inventory.py": {
+    "bytes": 2111,
+    "sha256": "23ac7c5cce0b98684984ae708f4a9e1c27eddc40a04d0da5933cf01bf84211bc"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_resource_inventory.json": {
+    "bytes": 5701,
+    "sha256": "ae79f76b3119e2e2d3855cba4e5c076fabec3be04161379a81e8723376d67205"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_sweep.log": {
+    "bytes": 1114,
+    "sha256": "7d5b01e3a9b70e70e31f0f11ecb41c16be06b73f4dfbbf76e080cefa155fad43"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_sweep.py": {
+    "bytes": 1713,
+    "sha256": "ad845450e16534197493235b24c51bc9e35b7817a92d4742a672a57beaa11435"
+  },
+  "runs/gap-descent-n-trend-astra/wilson_sweep_final.log": {
+    "bytes": 1884,
+    "sha256": "33b7496d72c8e5baa7944c8b0fbf49aba61e9fd99141c75c1bdf7aea870c417d"
+  },
+  "runs/gap-descent-n-trend-astra/write_report.py": {
+    "bytes": 15990,
+    "sha256": "2638e5b5dde286648e768ecb3d62a644480ce51ac8f215abf4f15c1517439331"
+  }
+}

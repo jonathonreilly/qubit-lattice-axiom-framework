@@ -1,0 +1,35 @@
+{
+  "pin": "bc343b5d672fd4f07c66ec39247981322f110f18",
+  "main": "8b11ae2bb95e641494fe75ed83d108ee712fa3a9",
+  "pr10114": "f76f6c649cff7dffbab664d8976e680e8f287fe9",
+  "source_commit": "31a47c543775",
+  "scratch": "/tmp/sa-gap-descent-n-trend-astra.VKVSv4",
+  "sources": {
+    "sa_ym4.tex": {
+      "sha256": "d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f",
+      "lines": 32992
+    },
+    "sa_ca_I.tex": {
+      "sha256": "4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93",
+      "lines": 166711
+    }
+  },
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "reused_scripts": {
+    "runs/gap-descent-window-astra/symmetry.py": "f71ab7cd5d0b865d9f72483abb6a6d32caad955ea3333b66345b7661934db1ee",
+    "runs/gap-descent-window-astra/collect.py": "dcb3163660ae55e05be2f4f05288e6db669be7e75caf966bf927b3e712386d96",
+    "runs/gap-descent-window-astra/sweep_leakage.py": "aa73e772596fbc34fcf61260d1a2150adcea91fae80fc9a24556917ccf756002",
+    "runs/gap-descent-window-astra/exponential.py": "5c037f1472ca0a6c379b5e6aca4575e1d916b598c61b132e2b67f5651180076e",
+    "runs/gap-descent-window-astra/leakage.py": "25aaab023227adf769bb0848580bf9949f4a864f5a7060d1fa42f13360ad47b3",
+    "runs/gap-descent-window-astra/summarize.py": "76526f9ff699d3457cb12e4b8b2dc1ecebbcf15d85af9881082280e70ea98b0f",
+    "runs/gap-descent-window-astra/cube.py": "5e89518dcc096b624cecf9e2bfc2925f4d8c81155e387af0c161200453e6870c",
+    "runs/gap-descent-window-astra/guard.py": "b791b22d9656b183ae91704f20db6367a635d338bcd52ec4a2ac6e52c67548cc",
+    "runs/gap-descent-window-astra/inventory.py": "692ec58507bfba53889fd476db9d332a7badf29e8ad827eea215f151e6ac8a1c"
+  },
+  "pr10114_recheck": {
+    "head": "f76f6c649cff7dffbab664d8976e680e8f287fe9",
+    "source_blob": "96fe6c68b918e6adbb1a92cd37169766a8de0f8f",
+    "matches_digest_blob": true
+  }
+}

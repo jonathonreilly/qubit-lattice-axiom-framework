@@ -1,0 +1,9 @@
+MEMORY_START_GATE 86 percent free
+REJECTED_REFLECTION {"n": 6, "beta": 1.0, "cutoff": [14, 18, 44], "per_gap": [[0.054173114824289645, 0.11727791996029073], [0.05417532609044396, 0.16510217342166209], [0.054175332566181074, 0.18530368676873313], [0.05417532609044389, 0.16510217342165956], [0.054173134027407054, 0.11727791996028888]], "error": 1.9203117408717052e-08}
+Traceback (most recent call last):
+  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/leakage.py", line 139, in <module>
+    a=p.parse_args();x=point(a.n,a.beta,a.beta,*a.cutoff,diagnose=a.diagnose);a.output.write_text(json.dumps(x,indent=2)+'\n');print(json.dumps(x),flush=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/leakage.py", line 129, in point
+    raise RuntimeError('charged-gap reflection diagnostic failed')
+RuntimeError: charged-gap reflection diagnostic failed

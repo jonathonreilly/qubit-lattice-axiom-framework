@@ -1,0 +1,9 @@
+MEMORY_START_GATE 86 percent free
+Traceback (most recent call last):
+  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/leakage.py", line 107, in <module>
+    a=p.parse_args();x=point(a.n,a.beta,a.beta,*a.cutoff);a.output.write_text(json.dumps(x,indent=2)+'\n');print(json.dumps(x),flush=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/leakage.py", line 83, in point
+    assert max(residual)<1e-10,residual
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: [4.2911509055683217e-16, 1.2428996372823787e-12, 4.209510313648188e-10]

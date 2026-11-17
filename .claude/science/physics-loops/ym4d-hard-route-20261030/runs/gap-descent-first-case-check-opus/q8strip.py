@@ -9,7 +9,7 @@ Output: gap m = log(lam0/lam1) in that sector, for each b and L.
 Usage: python3 -I q8strip.py   (adds the user site path for numpy; one BLAS thread set by caller)
 """
 import sys, math, itertools
-sys.path.append('/Users/jonreilly/Library/Python/3.9/lib/python/site-packages')
+import site; sys.path.append(site.getusersitepackages())
 import numpy as np
 
 # Q_8 as unit quaternions (w, x, y, z)

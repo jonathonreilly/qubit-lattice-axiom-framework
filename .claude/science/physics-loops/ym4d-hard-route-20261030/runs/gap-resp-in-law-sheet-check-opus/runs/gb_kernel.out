@@ -1,0 +1,8 @@
+check l=6 max|spectral-direct|=1.388e-17
+check l=8 max|spectral-direct|=1.301e-17
+l=   8  sum|K|/b=0.226621  R_c^2/b^2=0.083225  min_mid l*P(exit F_-)=0.255751  min entry=8.877e-04
+l=  16  sum|K|/b=0.222179  R_c^2/b^2=0.076653  min_mid l*P(exit F_-)=0.247971  min entry=5.686e-05
+l=  32  sum|K|/b=0.221024  R_c^2/b^2=0.075074  min_mid l*P(exit F_-)=0.246019  min entry=3.579e-06
+l=  64  sum|K|/b=0.220733  R_c^2/b^2=0.074683  min_mid l*P(exit F_-)=0.245531  min entry=2.241e-07
+l= 128  sum|K|/b=0.220660  R_c^2/b^2=0.074585  min_mid l*P(exit F_-)=0.245409  min entry=1.401e-08
+l= 256  sum|K|/b=0.220642  R_c^2/b^2=0.074561  min_mid l*P(exit F_-)=0.245378  min entry=8.758e-10

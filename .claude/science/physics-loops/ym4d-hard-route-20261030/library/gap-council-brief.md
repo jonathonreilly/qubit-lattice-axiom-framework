@@ -32,8 +32,10 @@ effective coupling becomes of order one ("first passage").
     included, is unbounded along the dyadic sizes.
 - Hence the wall (W): there are L_0, D_0 with D^+(L) at most D_0 for every dyadic L at least L_0, and one size
   L at least 4 L_0 with z^-(L) larger than 256 D_0 + 30. An equivalent one-size form is (Z-SEED):
-  L m(L^3) larger than 2 Phi_4(L/4) + 30, where Phi_4(n) = 16 F(n^4) - F((2n)^4) is the doubling defect and
-  F = log Z. GUIDE (numerics, not proof): (Z-SEED) holds from about 40 correlation lengths.
+  L m(L^3) larger than 2 Phi_4(L/4) + 30, where Phi_4(n) = 256 F(n^4) - F((4n)^4) is the quadrupling defect of
+  row 720 (Phi_rho(n) = rho^4 F(n) - F(rho n); the one-doubling defect is Phi_2(n) = 16 F(n^4) - F((2n)^4)) and
+  F = log Z. GUIDE (numerics, not proof): (Z-SEED) holds from about 40 correlation lengths. [Corrected by the lead
+  on 2026-11-18 after rows 1131 and 1133 flagged it. The first version wrote Phi_4 for the one-doubling defect.]
 - (W) also follows from (CAS): the doubling defect contracts by a factor theta below 1 per doubling over a bounded
   range of sizes, from an extensive base (row 708).
 - Everything downstream of a seed is done: the gap at all larger sizes, the carry to finer cutoffs, and the

@@ -54,7 +54,7 @@ What I take from it (each item is the record's statement, not mine):
 5. Three earlier Fable seats and row 1181, starting from their own fields, each found the
    lane's map again. So a fresh start from a standard field is expected to add nothing.
 
-- Step 2 (23:50Z): first pass at choosing an attack; eleven candidates checked against the
+- Step 2 (23:41Z): first pass at choosing an attack; eleven candidates checked against the
   record before any work (rule 0a). All eleven are on file. Table in Section 2.
 
 ## 2. First pass: candidates I generated, checked against the record (statements about the record)

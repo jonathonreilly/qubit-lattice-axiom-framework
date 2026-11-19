@@ -155,11 +155,15 @@ than (N-phys).
 **R3. Integration in the coupling at a fixed lattice shape.** d/d beta of log(1 + S_per(u; n)) is the sum over
 the plaquettes of n^3 x u of the plaquette mean at period u minus its mean in the vacuum. The bound is true at
 small beta. First failing step: a signed bound on this response at couplings of order one. On file: row 1145,
-inequality (24) ("the real form of (W)"), with its proved obstructions to continuation; rows 1147-1151.
+inequality (24) ("the real form of (W)", on the path in the spatial coupling), with its proved obstructions to
+continuation, and rows 1147-1151; for the path in the isotropic coupling, row 1161 L325-339 (the sets P, M, N
+and the fixed-coupling obstruction to a change of branch).
 
 **R4. Operator inequalities (Golden-Thompson, min-max against the electric operator).** First failing step
 (ARGUED): each compares Tr F^u with a trace that does not carry the vacuum energy of F, so the bound exceeds
-lambda_0^u by a factor exp(c u n^3). On file: method 35 (`parts/gap.md` L69); row 1145 (absolute summation).
+lambda_0^u by a factor exp(c u n^3). I did not prove the extensive loss for all beta: a Holder bound over 24
+classes of link-disjoint plaquettes is too weak at large beta. On file in kind, not in this form: method 35
+(`parts/gap.md` L69); row 1145 (absolute summation).
 
 **R5. Crossing at the symmetric torus without the premise.** A scale-invariant spectrum satisfies crossing and
 positivity in all four frames at every size. So crossing gives no upper bound on s without a seed. On file: the

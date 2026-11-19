@@ -1,9 +1,9 @@
 lead: anthropic/claude-fable-5-2/max mac-mini-worker
-lease_until: 2026-11-17T04:34Z
+lease_until: 2026-11-20T09:12Z
 
 # New attack vectors from the measured-physics assumptions file (FINISH row 1065)
 
-Provenance: Claude Fable 5.2, max effort, Mac mini worker 2, one session, pinned at commit 50e1952db. Research-stage working state. This file grants no status. No part of it is checked by another model.
+Provenance: Claude Fable 5.2, max effort, Mac mini worker 2. Two sessions. Session 1 was pinned at commit 50e1952db and wrote steps 1 to 7.8; a power cut stopped it (lead note in row 1065). Session 2 started 2026-11-19T21:12Z (date -u), pinned at commit 6a3a26b93, and continues from step 7.8; its text starts at the heading "Session 2". Research-stage working state. This file grants no status. No part of it is checked by another model.
 
 Item: queue row 1065, `gap-measured-vectors-max`. Inputs read first: `library/gap-measured-assumptions-opus.md` (row 1063), then `library/prior/gap-measured-read-luna.md` (row 1064). Read only to avoid redoing work: `parts/gap.md`, `library/gap-wall-vectors-max.md` (row 1053) and its two checks.
 
@@ -336,3 +336,12 @@ On the four points (s, y), s = +1 or -1, y = 1 or 2, let T have the kernel (1/2)
 f is convex in beta (Lemma DIL of row 720 quotes it; it is a limit along doublings of the convex functions F(n)/abs(n)). For every torus, F'(n)/abs(n) = -<A>/abs(n) lies in [-12, 0], because there are six plaquettes per site and 0 <= 1 - x_p <= 2. So f' is non-decreasing with values in [-12, 0] where it exists, and the Stieltjes measure df' has total mass at most 12. Its atoms are countable. Write df' = chi d beta + singular part; then the integral of chi is at most 12, and by Chebyshev's inequality the set where chi > K has measure at most 12/K. On an interval the mass is 6 (P(beta_2+) - P(beta_1-)), with P the infinite-volume mean plaquette. QED
 
 Not shown: that chi(beta) is the sum of truncated plaquette correlations of an infinite-volume state. Compact U(1) and every model with a bounded action satisfy the same statement.
+
+# Session 2 (continues from step 7.8; pinned at 6a3a26b93)
+
+Session 1 ended at step 7.8. Steps 1 to 7 above are kept as written. The lane moved by rows 1066 to 1181 between the two pins, so step 8 is split. Each part is appended when it is done.
+
+- 8a. What rows 1066 to 1181 changed for the objects W1 to W7 and for the wall. Grep first, read only the statements.
+- 8b. Task (1) again, only for the places where the measured mechanism disagrees with the lane's route as it stands now.
+- 8c. Hand work on any object that 8b adds, or the counterexample.
+- 8d. Task (6): the briefs, then the RESULT line.

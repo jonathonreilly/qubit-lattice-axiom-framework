@@ -30,7 +30,10 @@ home-directory path in this file.
 
 (steps are appended below, one per response)
 
-### Step 1 (21:12Z to 21:40Z). The statement, and the target seen from the Jaffe-Witten side
+Times (from `date -u`): the file was created at 2026-11-19T21:12Z; steps 1 to 4 were on disk
+by 22:03Z. Per-step times were not recorded, so none is given in the headings.
+
+### Step 1. The statement, and the target seen from the Jaffe-Witten side
 
 **Read so far (statements only).** `GOAL.md`; `FINISH.md` L1-84, L299-356, rows 720 and
 1174-1181; `parts/gap.md` L1-60 (the wording of (W)); `library/gap-phys-seed.md` L270-338
@@ -101,7 +104,7 @@ compare step).**
 
 Nothing is proved in this step.
 
-### Step 2 (21:40Z to 22:25Z). Compare: the three routes of step 1 are on the lane's map
+### Step 2. Compare: the three routes of step 1 are on the lane's map
 
 Read in this step: `library/gap-council-synthesis.md` (whole); `parts/gap.md` (whole: the
 formulation, methods 19-36, lead rules, obligations through row 1175, route registry, test
@@ -139,7 +142,7 @@ of OpenAI's pinned-cell step only as far as its mechanism, and then look for a r
 is not in the registry. Candidates will be grepped against `library/open-core.md` and the
 FINISH rows before any attack.
 
-### Step 3 (22:25Z to 23:20Z). What (W) adds to the Jaffe-Witten gap; second comparison
+### Step 3. What (W) adds to the Jaffe-Witten gap; second comparison
 
 Read in this step: `library/prior/gap-o4-pinned-cell-read-opus.md` L57-200 (OpenAI's
 pinned-cell step, as digested by row 1009); `library/gap-solve16-astra62.md` L1-70,
@@ -232,3 +235,99 @@ theorem claimed).**
   test table point 5 stands.
 
 Nothing is proved in this step.
+
+### Step 4. One proved obstruction for the simplest twist move; guide sizes
+
+**Addendum to 3.3.** The three axis-symmetric sector sums of 3.2 are row 731's "periodic,
+full, kappa" (`library/gap-flux-exercise.md` L626; Theorem S-w at L507; "tr(F^2) observables
+are centre-blind", C1 at L197). So 3.2 is found again in full.
+
+**4.1 Setting.** Torus (Z/N)^4, N >= 3. Links l = (x, mu) run from x to x + e_mu. For a
+plaquette p = (x; mu < nu) put U_p = U_(x,mu) U_(x+e_mu,nu) U_(x+e_nu,mu)^(-1) U_(x,nu)^(-1).
+S(U) = -(beta/2) sum_p tr U_p, and S_eta(U) = -(beta/2) sum_p eta_p tr U_p, where eta_p = -1
+on the stack (the N^2 plaquettes (x; 1,2) with x_1 = x_2 = N-1) and +1 elsewhere. Z and
+Z_eta are the Haar integrals of exp(-S) and exp(-S_eta); mu is the Wilson measure;
+u = E_mu[(1/2) tr U_p], which is the same for all p and is positive for beta > 0 (log Z is
+convex in beta, its derivative is 6 N^4 u, and that derivative vanishes at beta = 0).
+h(g) = (1/2) tr g for g in SU(2); h takes values in [-1, 1] and arccos h(g) is the round
+distance from 1 to g on the 3-sphere, which is bi-invariant.
+
+**4.2 Fact (PROVED; the Jensen bound through a fixed right translation).** For every field
+Gamma of group elements on the links, independent of U,
+
+  -log(Z_eta / Z) <= J(Gamma) := E_mu[ S_eta(U Gamma) - S(U) ],   (U Gamma)_l = U_l Gamma_l.
+
+Proof. Haar measure is invariant under U_l -> U_l Gamma_l, so Z_eta is the integral of
+exp(-S_eta(U Gamma)) and Z_eta / Z = E_mu[exp(-(S_eta(U Gamma) - S(U)))]. Apply Jensen. QED
+
+**4.3 Lemma GA (PROVED; gauge averaging).** For every plaquette p = (x; mu < nu) and every
+field Gamma,
+
+  E_mu[ tr (U Gamma)_p ] = c_p(Gamma) E_mu[ tr U_p ],
+  c_p(Gamma) = h(Gamma_(x,mu)) h(Gamma_(x+e_mu,nu) Gamma_(x+e_nu,mu)^(-1)) h(Gamma_(x,nu)).
+
+Proof. (U Gamma)_p = U_1 A U_2 B U_3^(-1) C U_4^(-1), where U_1, ..., U_4 are the four links
+of p in the order of 4.1, A = Gamma_(x,mu) sits at the vertex x + e_mu, B =
+Gamma_(x+e_mu,nu) Gamma_(x+e_nu,mu)^(-1) at x + e_mu + e_nu, and C = Gamma_(x,nu)^(-1) at
+x + e_nu. The measure mu is invariant under gauge transformations U_l -> g_x U_l g_y^(-1).
+Take g equal to k at the vertex x + e_mu and 1 elsewhere. Then U_1 -> U_1 k^(-1) and
+U_2 -> k U_2, so the expectation of tr(U_1 A U_2 B U_3^(-1) C U_4^(-1)) equals that of
+tr(U_1 k^(-1) A k U_2 B U_3^(-1) C U_4^(-1)) for every k. Average over Haar k: the average
+of k^(-1) A k is h(A) times the unit matrix (it commutes with SU(2) and has trace tr A).
+Repeat at the two other vertices; they are distinct from each other and from x because
+N >= 3. Last, h(C) = h(Gamma_(x,nu)). QED
+
+So J(Gamma) = beta u sum_p (1 - eta_p c_p(Gamma)), and every term is at least 0.
+
+**4.4 Proposition J (PROVED; area order for every fixed Gamma).** For every field Gamma,
+
+  sum_p (1 - eta_p c_p(Gamma)) >= (1 - 1/sqrt 2) N^2,  so  J(Gamma) >= (1 - 1/sqrt 2) beta u N^2.
+
+Gamma = 1 gives J = 2 beta u N^2 (the thin vortex). So no fixed right translation improves
+the order N^2 of the thin-vortex bound. The same holds for a mixture over Gamma that is
+independent of U, when Jensen is applied to the joint law of U and Gamma. A mixture kept
+inside the logarithm is not covered; see 4.5.
+
+Proof. Fix (x_3, x_4) and let Pi be the set of the N^2 plaquettes (x; 1,2) with these
+coordinates. Exactly one plaquette p_0 of Pi is in the stack. Put kappa = 1 - 1/sqrt 2.
+Suppose 1 - eta_p c_p < kappa for every p in Pi. Then c_p > 1/sqrt 2 for p != p_0 and
+c_(p_0) < -1/sqrt 2. Each of the three factors of c_p has modulus at most 1, so each has
+modulus above 1/sqrt 2. Every link of Pi is the first link (x,1) or the last link (x,2)
+of exactly one plaquette of Pi. Hence abs(h(Gamma_l)) > 1/sqrt 2 for every link l of Pi.
+Put s_l = sign h(Gamma_l) and g_l = s_l Gamma_l. Then h(g_l) > 1/sqrt 2, that is, g_l is
+at distance less than pi/4 from 1. For two links a, b of Pi the distance from 1 to
+g_a g_b^(-1) equals the distance from g_b to g_a, which is less than pi/2. So
+h(g_a g_b^(-1)) > 0 and sign h(Gamma_a Gamma_b^(-1)) = s_a s_b. Therefore, for every p in
+Pi, sign c_p is the product of s_l over the four links of p. Each link of Pi lies in
+exactly two plaquettes of Pi, so the product of sign c_p over Pi is +1. But it is -1,
+because c_p > 0 off p_0 and c_(p_0) < 0. This is a contradiction. So each of the N^2
+planes Pi holds a term that is at least kappa, and all other terms are at least 0. For a
+mixture over Gamma independent of U, apply Jensen to the joint law and average. QED
+
+**4.5 What 4.4 does and does not say.** It is the finite, global form of row 1013's Lemma
+WN for the centre twist, with a constant. It says that the zero classical cost of the
+twist (Lemma K4 of row 1051) is invisible to every move that does not read U: gauge
+averaging turns each inserted element into its half-trace. It does not cover maps
+Gamma(U) that read the field (rows 1026-1050, 1141), nor bounds that keep the variance
+term. With the frame averaged inside the logarithm, that is with
+-log(Z_eta/Z) <= -E_mu[log of the Haar average over g of exp(-(S_eta(U Gamma^g) - S(U)))],
+Gamma^g_l = g_y^(-1) Gamma_l g_y, the second-order terms cancel by the Ward identity
+(ARGUED), and the cost that remains sits where Gamma is not small. A centre twist needs
+such a place in every (1,2)-plane, for the reason used in the proof above. So this form is
+of area order too (ARGUED, not proved). A bound below area order must use the freedom of
+the core sheet to move, plane by plane; that is row 1179's open statement, and I do not
+attack it.
+
+**4.6 Guide sizes (GUIDE; hand estimates, one particle species of mass m, non-relativistic
+gas, no flux term).** At time u on a cube of side L the neutral excited trace is about
+L^3 (m/(2 pi u))^(3/2) exp(-m u). With u = L/K this is K^3 (x/(2 pi))^(3/2) exp(-x),
+x = m L/K.
+
+- Row 1161's neutral premise, K = 512, bound 1/2: x is about 21.3, so L is about
+  1.1 x 10^4 / m.
+- The kappa seed of rows 731 and 1161 at shape two, K = 2, bound 1/5041 (half of it for
+  the neutral part): x is about 12.3, so L is about 25/m. The seven sectors with electric
+  flux have weight below exp(-20) there if the string tension is m^2/14.3.
+
+So the premise in the form of row 1161 sits about 440 times farther out than the seed it
+feeds. This changes nothing in the logic. It may matter for any guide run on the premise.

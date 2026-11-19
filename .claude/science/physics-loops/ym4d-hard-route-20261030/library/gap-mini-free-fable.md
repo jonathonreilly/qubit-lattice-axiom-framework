@@ -364,3 +364,108 @@ lower order needs a map, reading the field, that carries the twisted measure to 
 that entropy of the Wilson measure on gauge-invariant sets. This is the frame with a
 compensating Jacobian that the lane names as open under row 1141; the identity adds only
 the exact size of what such a frame must achieve.
+
+### Step 5. Third pass: further routes checked against the record before any attack
+
+After step 4 I looked for a route that is not in the registry. Each candidate was grepped
+in `library/`, `library/prior/` and `parts/` before any work (rule 0a). Counts are files
+that name the key term.
+
+| Candidate | What it would give | On file | Verdict |
+|---|---|---|---|
+| Thin torus with a 't Hooft twist (R^2 x small twisted T^2): all modes heavy at tree level, a dilute gas of fractional instantons gives the area law (Tanizaki and Unsal; Gonzalez-Arroyo), then continuity in the size of the small torus | a gapped, confining start at weak coupling | 20 files (Tanizaki), 8 (adiabatic continuity); "Route T", row 842, row 862 Theorem A (`gap-mine858-opus.md` L59: "The passage from thin n to n = a is missing. No seed holds in the thin box.") | found again; the continuity step needs a thermal sum at a time shorter than the side being enlarged (Lemma E'), which is not small in the thin box |
+| Knabe-type local-gap criterion for heat-bath dynamics | a finite-size criterion with a threshold of order 1/n^2 | 23 files (Knabe), 25 (frustration-free) | found again; worst-pin hypothesis |
+| Cone contraction (Birkhoff, Hilbert metric) | a gap from positivity | 21 files | found again; diameter grows with the volume |
+| The neutral premise as an equation of state: neutral pressure at temperature T below 0.4 T^4 / K^3 in a box of side K/T | a thermodynamic form of row 1161's premise | route RB with row 934 ("THERMAL"); Proposition VIR | a restatement; covered by row 1180; not attacked |
+| Transfer of the Ding-Huang-Yang mechanism (an XY model with defects from an extra loop-soup copy, improved spin wave on a reduced volume) | a second two-dimensional mechanism, with no non-abelian symmetry in it | rows 1099, 1117 use their Theorem 5.2 and their pins only | not ported, and I do not port it: see 5.1 |
+
+**5.1 Why the Ding-Huang-Yang mechanism has no direct gauge form (ARGUED; reading of
+their pp. 1-9 only, unchecked).** Their step needs three exact facts. (a) Given the third
+coordinate, the first two form an XY model with couplings beta r_u r_v and nothing else,
+because sigma_u . sigma_v = r_u r_v cos(theta_u - theta_v) + z_u z_v. (b) The model is a
+conditioned Poisson soup of loops with non-negative weights, with the copies
+exchangeable (Lupu's isomorphism). (c) A spin wave of the two XY coordinates costs a
+gradient form, weighted by the couplings, so that a region with few XY loops is a region
+of low stiffness. For Wilson SU(2), write a link as (u, v) with abs(u)^2 + abs(v)^2 = 1.
+The map that shifts the phase of u and fixes v is U -> h U h, h = exp(i a sigma_3 / 2),
+which preserves Haar measure. But tr U_p is twice the real part of a sum of eight
+monomials, one for each choice of an even number of off-diagonal entries. One has the
+gauge-invariant phase theta_1 + theta_2 - theta_3 - theta_4. Six carry the phases of two
+links only, open strings that end on v-factors. One carries no theta. So (a) fails: given
+the v-data the theta-field is a U(1) gauge field with charged sources on every plaquette.
+And (c) fails with it: the cost of the shift is a mass form, not a curl form (Lemma 5.1a
+below gives its mean exactly). (b)
+fails because the action is quartic in the link quaternions; in the layer form of Durhuus
+and Froehlich the temporal links of one layer are an O(4) model in an SO(4) background,
+whose loop weights are traces of holonomies with both signs (Kassel and Levy), and
+method 36 already shows that background-uniform statements are false there. I state no
+theorem.
+
+**Lemma 5.1a (PROVED; the phase shift of the diagonal entries has a mass form).** Let
+a be a real field on the links and h_l = exp(i a_l sigma_3 / 2). The map U_l -> h_l U_l h_l
+preserves Haar measure, multiplies the diagonal entry u_l by exp(i a_l) and fixes v_l. For
+a plaquette p with links 1, 2, 3, 4 in the order of 4.1,
+
+  E_mu[ tr (hUh)_p ] = E_mu[ tr U_p ] cos((a_1 - a_4)/2) cos((a_1 + a_2)/2) cos((a_2 - a_3)/2) cos((a_3 + a_4)/2).
+
+So the mean action change is beta u sum_p (1 - product of the four cosines). It is zero for
+the staggered field a_(x,mu) = (-1)^(x_1+x_2+x_3+x_4) alpha on a torus of even side, which
+is the gauge transformation by g_x = exp(i (-1)^(|x|) alpha sigma_3 / 2). For a constant
+field a it is 6 N^4 beta u sin^2(a), of volume order.
+
+Proof. (hUh)_p = h_1 U_1 (h_1 h_2) U_2 (h_2 h_3^(-1)) U_3^(-1) (h_3^(-1) h_4^(-1)) U_4^(-1) h_4^(-1),
+and under the trace the last factor joins the first: the four vertices of p carry the
+insertions h_4^(-1) h_1, h_1 h_2, h_2 h_3^(-1), h_3^(-1) h_4^(-1). All are powers of
+exp(i sigma_3 / 2), with half-traces the four cosines. Average over the gauge group at each
+of the four vertices as in Lemma GA. For the staggered field every insertion angle
+vanishes: a_1 - a_4 = 0 (both links start at x), a_1 + a_2 = 0 (they start at x and at
+x + e_mu), a_2 - a_3 = 0 (they start at x + e_mu and x + e_nu, sites of equal parity),
+a_3 + a_4 = 0. For a constant field the product is cos^2(a), and there are 6 N^4
+plaquettes. QED
+
+Contrast. In the O(3) model the constant rotation of the two XY coordinates is an exact
+symmetry and a varying one changes the energy by a gradient form in every configuration.
+Here the constant phase shift already has a mean cost of volume order. This is the precise
+form of "(c) fails".
+
+**5.2 What I did not do.** I did not read rows 879-956, the six council member files, or
+any `gap-solve` file beyond the lines cited. I did not read the account of Sussman and
+Alpoge in this run; I used only what the lane files quote from it. No numeric job was run
+(none was needed; the numeric lock was not taken). I did not attack the Wilson branch
+selection (row 1179) or the one-cube neutral bound (row 1180).
+
+## Close
+
+**Proved in this file (by hand, unchecked by another model).**
+
+- Lemma GA (4.3): E_mu[tr (U Gamma)_p] = c_p(Gamma) E_mu[tr U_p], with c_p the product of
+  three half-traces of the inserted elements.
+- Proposition J (4.4): for every fixed link field Gamma on the N^4 torus, the Jensen
+  bound for the centre twist through U -> U Gamma is at least (1 - 1/sqrt 2) beta u N^2;
+  the thin vortex gives 2 beta u N^2.
+- 4.7: J(Gamma) = F_tw + H(mu | mu_Gamma), and the bound with colour frames averaged
+  inside the logarithm equals F_tw plus the same relative entropy on gauge-invariant sets.
+- Lemma 5.1a: the mean cost of the phase shift U -> hUh of the diagonal entries is a mass
+  form; it is of volume order for a constant shift.
+
+These are obstructions to one family of moves. They are not selective and they do not move
+(W). Lemma WN of row 1013 is the infinitesimal form of Proposition J; the constant, the
+global statement and 4.7 are, as far as my greps show, not written elsewhere in the lane.
+
+**Found again (no credit claimed).** F1 = method 31 and Proposition G1; F2 = method 36 and
+BR-2; F3 = rows 1009-1050 and 1141; the three axis-symmetric sector sums and "the gap
+does not need the flux sectors" = row 731; the neutral premise as the only open input of
+the gap on local observables = rows 1161 and 1175; the thin twisted torus = Route T, rows
+842 and 862; the zero classical cost of the twist = Lemma K4.
+
+**Reading offered to the lead (ARGUED).** Section 3.4: for the Jaffe-Witten clause the
+open input is the one-cube neutral premise alone; the branch selection serves the flux
+clause of (W). Section 4.6 (GUIDE): that premise, in the form with K = 512, sits near
+1.1 x 10^4 correlation lengths; the kappa seed it feeds sits near 25.
+
+**Open, unchanged.** (W); the one-cube physical neutral upper bound; the Wilson branch
+selection; a map reading the field that carries the twisted measure to within sub-area
+relative entropy of the Wilson measure (4.7); any selective inequality at order-one
+response. No route outside the lane's registry was found by this row.
+
+RESULT: Row 1181 (Claude Fable 5.2 max, Mac mini worker; checked by no one). No proof and no disproof of (W). Starting from the Jaffe-Witten target with the lane files closed, the three routes I chose (curvature, the conditional O(4) layer, non-abelian spin waves for the twist) and five later candidates are all on the lane's map, each already stopped at a stated obstruction there; the reading that the Jaffe-Witten gap needs only the one-cube neutral premise, with branch selection serving only the flux clause of (W), is also on file (rows 731, 1161). PROVED by hand, unchecked, not selective: Lemma GA, Proposition J (every fixed right translation gives a Jensen twist bound of area order, at least (1 - 1/sqrt 2) beta u N^2), the identities 4.7 (the Jensen gap equals a relative entropy, also after averaging colour frames) and Lemma 5.1a (the phase shift used by the Ding-Huang-Yang spin wave has a mass-form mean cost for Wilson SU(2)). GUIDE: the neutral premise at K = 512 sits near 1.1 x 10^4 correlation lengths. OPEN, unchanged: (W), the one-cube neutral bound (row 1180), the Wilson branch selection (row 1179), and any selective inequality at order-one response.

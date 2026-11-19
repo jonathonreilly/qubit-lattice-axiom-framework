@@ -188,8 +188,11 @@ rows 1161 and 1175 the two open statements have different consumers:
   the statement that the centre symmetry of the tori is unbroken.
 
 The queue rows 1179-1181 name (W) as the target. If the owner's target is the
-Jaffe-Witten gap, row 1179 is off its critical path. This is ARGUED from the two cited
-passages; I did not re-check Theorem S-w or its limit hypotheses.
+Jaffe-Witten gap, row 1179 is off its critical path. This is a reading of the record, not
+a new result: row 731's RESULT already says "(GAP) does not need the flux sectors in its
+limit half", and row 1161 supplies the kappa seed from the neutral premise in both
+alternatives. I did not re-check Theorem S-w, Theorem EV-L or their limit hypotheses
+(both are marked argued in row 731; row 1161 is checked by row 1162).
 
 **3.5 OpenAI's step, and why I do not try a fourth port.** Row 1009's digest shows the
 shape of the two-dimensional argument: stiffness = direct cost minus current variance
@@ -331,3 +334,33 @@ x = m L/K.
 
 So the premise in the form of row 1161 sits about 440 times farther out than the seed it
 feeds. This changes nothing in the logic. It may matter for any guide run on the premise.
+
+**4.7 The Jensen gap is a relative entropy (PROVED; two identities).** Write
+F_tw = -log(Z_eta/Z), mu_eta for the twisted measure, and mu_Gamma for the law of
+U Gamma^(-1) when U has law mu_eta. Then
+
+  J(Gamma) = F_tw + H(mu | mu_Gamma),
+
+and, with A(Gamma) := -E_mu[ log of the Haar average over g of exp(-(S_eta(U Gamma^g) - S(U))) ]
+(the bound of 4.5 with the frame averaged inside the logarithm),
+
+  F_tw <= A(Gamma) = F_tw + H(mu restricted to gauge-invariant sets | mu_Gamma restricted) <= J(Gamma).
+
+Proof. mu_Gamma has Haar density exp(-S_eta(U Gamma))/Z_eta, by right invariance. So
+log(d mu / d mu_Gamma) = S_eta(U Gamma) - S(U) + log(Z_eta/Z), and its mu-mean is
+J(Gamma) - F_tw. For the second line: S_eta(U Gamma^g) = S_eta(U^g Gamma) and
+S(U) = S(U^g), because (U Gamma^g)_l = g_x^(-1) (U^g Gamma)_l g_y and S_eta is gauge
+invariant. So the Haar average is R(U) := the average over g of rho(U^g), with
+rho(U) = exp(-(S_eta(U Gamma) - S(U))) = (Z_eta/Z) d mu_Gamma / d mu. For a bounded
+gauge-invariant f, E_mu[rho f] = E_mu[R f], since mu is gauge invariant. So R is the
+conditional expectation of rho given the gauge-invariant sets, that is, (Z_eta/Z) times the
+density of mu_Gamma with respect to mu on those sets. Take minus the mu-mean of log R.
+The last inequality is the monotony of relative entropy under restriction. QED
+
+Meaning. A bound on the twist cost through a change of variables is exact up to the
+relative entropy between the Wilson measure and the transported twisted measure. With 4.4:
+H(mu | mu_Gamma) >= (1 - 1/sqrt 2) beta u N^2 - F_tw for every fixed Gamma. A bound of
+lower order needs a map, reading the field, that carries the twisted measure to within
+that entropy of the Wilson measure on gauge-invariant sets. This is the frame with a
+compensating Jacobian that the lane names as open under row 1141; the identity adds only
+the exact size of what such a frame must achieve.

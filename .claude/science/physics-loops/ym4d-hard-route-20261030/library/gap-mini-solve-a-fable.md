@@ -17,6 +17,7 @@ gap), GUIDE (numeric or heuristic, never a proof step), OPEN.
 - 23:39Z (`date -u`) Section 2 written: the pinned-slice Ward route worked to its first failing step; Lemma PC proved (exact power count for every family). Anchors confirmed by grep: row 712 layer model `gap-crux-fp.md` L369-384; row 1011 Proposition W `gap-pinned-cell-gauge-max.md` L184; row 1016 `gap-global-reform-max.md` L441, L940.
 - 23:42Z (`date -u`) numeric sanity run done under the numeric lock (holder solve-a-fable-1188, acquired 23:41Z, released after about 2 s; memory free 50 percent at the start). Section 3 written. One slip corrected in 2.3 (the trivial bound is (beta/4) eta^2 N for one face).
 - 23:47Z (`date -u`) arXiv API probe done (five queries, newest first); every cited line anchor re-taken with `grep -n -F`; Sections 4 and 5 written.
+- 23:50Z (`date -u`) PROVED items re-read; five wording corrections (units of the holonomy angle in 2.1 and 2.4, the hypothesis of Lemma HF, the scope of 2.4, item 5 of 1.2, the lead paragraph). Finished.
 
 ## 1. How best to attack it (analysis before any attack)
 
@@ -148,9 +149,10 @@ two slice fields without their magnetic weights. Its one-step case is the layer 
 the slice, and maps M^+_l to g_y^(-1) M^+_l g_x; then tr(C^+_l g_y^(-1) M^+_l g_x) = tr((g.C^+)_l M^+_l). The lower
 face is the same with V^-_x -> V^-_x g'_x. T >= 2 makes V^+ and V^- distinct variables. QED.
 
-So the temporal twist through a slice direction is one argument moved: for a flat field C_eta with holonomy
-exp(eta c) around the 1-cycle, C_eta times the seam flip is C_(eta + pi), and Z_tw[slice = C_eta]/Z[slice = C_eta]
-= Z_2[C_(eta + pi), C_eta] / Z_2[C_eta, C_eta]. A response bound in the upper argument alone would bound it.
+So the temporal twist through a slice direction is one argument moved. Write C_eta for the flat field with
+holonomy exp(eta c) around the 1-cycle, in the units of P2 below (c = i c.sigma/2, so exp(2 pi c) = -1). The seam
+flip of C_eta is C_(eta + 2 pi), and Z_tw[slice = C_eta]/Z[slice = C_eta] = Z_2[C_(eta + 2 pi), C_eta] /
+Z_2[C_eta, C_eta]. A response bound in the upper argument alone would bound it.
 
 **P2 (PROVED; the Gauss contact identity; relative on file: Proposition W of row 1011).** Fix C^- and put C^+ = 1.
 Let <.> be the normalized measure of Z_2[1, C^-]. For a real site function f and a unit a in su(2) (a = i a.sigma/2
@@ -203,29 +205,32 @@ sin^2(k_1/2) cos^2(k_1/2) <= D(k). For d_s = 3: 4 sin^2(k/2) >= (4/pi^2) k^2 on 
 
 Reading. Any inequality of the form R(Q, Q-bar) <= K x cost, used with Q = lambda h, gives R(h, h) <= K cost /
 lambda^2, and by (PC3) this is at least K eta^2 N on a three-dimensional slice, whatever the family. The bound with
-no commutator is R(h, h) <= <Y> <= (beta/4) |h|_2^2 = (beta/4) eta^2 N (one face). So on the slice of a four-dimensional lattice
-the mechanism returns the order of the trivial bound and no logarithm. For d_s = 2 the same (PC2) allows cost of
+no commutator is R(h, h) <= <Y> <= (beta/4) |h|_2^2 = (beta/4) eta^2 N (one face). So on the slice of a
+four-dimensional lattice the mechanism returns the order of the trivial bound and no logarithm. For d_s = 2 the same (PC2) allows cost of
 order lambda^2 eta^2 / log N, which is what the 2D proof attains. This makes the lane's count a statement about
 all families, not about plane waves with one weight. It also covers the two-face kernel, since P1 and P2 are
 statements about one face.
 
 ### 2.4 Why the count is the truth for this route (ARGUED)
 
-The route reads only P1 and P2, so any bound it proves holds for every T >= 2 and every lower field, in particular
-for the kernel between two flat slices one step apart. By row 712 that kernel is the three-dimensional principal
-chiral (O(4)) model at coupling beta, with the holonomy as a twisted boundary condition. That model has long-range
+The route reads only P1 and P2 for one face. So any bound it proves holds whatever lies beyond that face: every
+T, every lower field, and also a single layer that ends on a second pinned flat slice. By row 712 the functional
+of that single layer is the three-dimensional principal chiral (O(4)) model at coupling beta, with the holonomy as
+a twisted boundary condition. That model has long-range
 order at large beta (Frohlich, Simon and Spencer, RECALLED), and the response of an ordered model to a twist is of
 order beta N (the helicity modulus; RECALLED, not proved here). So for one member of the class the order N is
 attained, and no argument that reads one slice can do better. In three dimensions the slice is two-dimensional and
-its one-step kernel is the 2D chiral model, which never orders: there the route would give Z_2[C_(eta + pi), C^-]
-/ Z_2[C_eta, C^-] >= 1 - C_beta/log N at a flat upper field for every lower field (ARGUED, given the port in 2.2).
+its one-step kernel is the 2D chiral model, which never orders: there the route would give
+Z_2[C_(eta + 2 pi), C^-] / Z_2[C_eta, C^-] >= 1 - C_beta/log N at a flat upper field for every lower field
+(ARGUED, given the port in 2.2).
 Row 1139 shows that with both faces rough the 2D statement fails at large b; one flat face is the case left.
 
 **What four dimensions needs, in this language.** Disorder of the holonomy appears only across about N time steps
 (springs in series: the stiffness beta N of one step becomes beta N / T). So the gain must come from composing
-kernels, and the middle slices of a composition are rough, not flat. Around a rough slice C the gauge directions are the covariant gradients d_C F (F_x - Ad(C_l) F_y on the link l),
-so a bound of the kind of P2 can only have |d_C F|_2^2 on its right side, and row 1141 (2) (`gap-crux2-astra62.md` L45-53) shows that d_C of every adjoint section has
-energy of order one per site. This is the same wall as rows 1011, 1013, 1016 and 1141, reached from the transfer
+kernels, and the middle slices of a composition are rough, not flat. Around a rough slice C the gauge directions
+are the covariant gradients d_C F (F_x - Ad(C_l) F_y on the link l), so a bound of the kind of P2 can only have
+|d_C F|_2^2 on its right side. Row 1141 (2) (`gap-crux2-astra62.md` L45-53) shows that d_C of every adjoint
+section has energy of order one per site. This is the same wall as rows 1011, 1013, 1016 and 1141, reached from the transfer
 kernel. First failing step of Attack 1: there is no family of slice gauge functions with scale-invariant cost in
 d_s = 3 (Lemma PC), and no flat middle slice.
 
@@ -254,8 +259,9 @@ lattice gauge; mass gap in math-ph, math.PR, hep-th). Newest record returned: 20
 
 - No posted proof or claim of a gap or of confinement for a 3D or 4D non-abelian lattice gauge theory at weak
   coupling was returned.
-- A. Mihajlovic, arXiv:2611.11534 (2026-11-08): on file (row 825, `gap-arealaw-opus.md` L540; check `gap-arealaw-check-astra.md` L407). Its abstract
-  says that a positive spectral bound along a four-dimensional construction is not established.
+- A. Mihajlovic, arXiv:2611.11534 (2026-11-08): on file (row 825, `gap-arealaw-opus.md` L540; check
+  `gap-arealaw-check-astra.md` L407). Its abstract says that a positive spectral bound along a four-dimensional
+  construction is not established.
 - C. Yin and V. Khemani, arXiv:2611.17433v2 (2026-11-12), not on file (grep of `library/` and FINISH). Abstract
   only: along a path of commuting local Hamiltonians that contains a product state, strong decay of correlations
   gives a size-independent gap of single-site Glauber dynamics; an example is the 3D Z_2 lattice gauge theory.
@@ -290,6 +296,13 @@ no disproof of the mass gap.
 two small lemmas. I found no route outside the registry. The reason the 2D mechanism does not transplant is now a
 proved inequality and not a count: its cost form is a Dirichlet form of site functions, and the only place where
 gauge theory has a frame for such functions is a flat pinned slice, which is three-dimensional in 4D and ordered
-in one step. What the glue half needs is a gap for local gauge-invariant excitations; every group-theoretic gain
-on file (bracket, commutator multiplier, centre) acts on frame or holonomy data. I see no hand proof of (N-phys)
-with the tools on file, and I do not recommend another plain-brief row by this model family.
+in one step. What the glue half needs is a gap for local gauge-invariant excitations. The group-theoretic gains on
+file that have a proof (the bracket at flat pins, the centre) act on frame or holonomy data; the one that would
+reach the glue, commutator extraction (A) of row 1132, is open in the window and asks for a joint weight (row
+1135). I see no hand proof of (N-phys) with the tools on file, and I do not recommend another plain-brief row by
+this model family.
+
+Finished 2026-11-19T23:50Z (`date -u`). Wall clock from 2026-11-19T22:59Z. One numeric run of about 2 s (GUIDE). No
+subagent. Files written: this file only (scratch under /tmp aside).
+
+RESULT: no proof and no disproof of the 4D SU(2) mass gap; (N-phys), the continuum datum, (BS), (W) and the Jaffe-Witten gap stay OPEN. Claude Fable 5.2 max, Mac mini worker 1; author only, checked by no one. PROVED by hand: Lemma HF (in maximal-torus coordinates the conditional abelian model given the link amplitudes is frustrated on one plaquette, so no Ginibre-type structure there); Lemma PC (for every family of slice gauge functions whose commutator profile is lambda times a holonomy twist, the cost form of the fourth-order commutator mechanism of the 2D O(N) proofs is at least lambda^2 eta^2 N on a three-dimensional slice, so at a pinned slice of a 4D lattice the mechanism cannot beat the order of the trivial bound, while on a two-dimensional slice the same inequality leaves room for the logarithm); P1 and P2 (two-face form of a pinned slice, Gauss contact identity) are standard. ARGUED: the port of the fourth-order inequality to a flat face; the class obstruction (the one-step kernel between flat slices is the 3D chiral model, which orders). Not new: the attack analysis of 1.2 is on file line by line (rows 712, 1011, 1013, 1016, 1141, 1161, 1179); Lemma PC is the theorem-grade form of a count those rows hold as ARGUED. arXiv probe to 2026-11-16: no posted weak-coupling gap or confinement result for a non-abelian lattice gauge theory. Output library/gap-mini-solve-a-fable.md.

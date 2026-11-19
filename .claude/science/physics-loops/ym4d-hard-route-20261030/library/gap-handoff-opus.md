@@ -1,5 +1,5 @@
 lead: anthropic/claude-opus-5-5 (max effort), FINISH row 846 (`gap-handoff-opus`), run 2026-11-13 on the lead's MacBook
-clone: /Users/jonreilly/ym4d-lead/clone at f1c86d81909cfef4bc95cfa244a7086b1f1599fb ("docs(ym4d): add rows 843-846, four more Opus max lanes"); `git pull --ff-only`: "Already up to date"
+clone: the lead clone at f1c86d81909cfef4bc95cfa244a7086b1f1599fb ("docs(ym4d): add rows 843-846, four more Opus max lanes"); `git pull --ff-only`: "Already up to date"
 
 # gap-handoff-opus: the hand-off (EXIT), and the openness of the block criterion and of the seed
 

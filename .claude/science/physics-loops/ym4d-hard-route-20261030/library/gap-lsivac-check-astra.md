@@ -1,6 +1,6 @@
 ## Repo search
 
-Search terms: `LSI-vac|HC-vac|SG-step|gap-lsivac|Fisher.information contraction`: **no hits** on all five requested refs in `/Users/jonreilly/Projects/Physics`. Method terms: `hypercontract|log.Sobolev|Bakry.Emery|Gaussian domination|Fisher.information`, narrowed to `hypercontract|log.Sobolev|Bakry.Emery|Bobkov|Hopf.Lax`. Broad line searches reached their character caps and are discovery only. The narrowed filename search completed with 33 entries, below its cap of 100. Bounded source reads followed. A further targeted search located the existing ground-state transform.
+Search terms: `LSI-vac|HC-vac|SG-step|gap-lsivac|Fisher.information contraction`: **no hits** on all five requested refs in `the main checkout`. Method terms: `hypercontract|log.Sobolev|Bakry.Emery|Gaussian domination|Fisher.information`, narrowed to `hypercontract|log.Sobolev|Bakry.Emery|Bobkov|Hopf.Lax`. Broad line searches reached their character caps and are discovery only. The narrowed filename search completed with 33 entries, below its cap of 100. Bounded source reads followed. A further targeted search located the existing ground-state transform.
 
 | Ref | Revision searched |
 |---|---|

@@ -349,7 +349,7 @@ Equation (6.4) gives (H-field) if the residuals are controlled in \(w=e^{\varthe
 
 ## 7. Literature coverage and recovery decision
 
-The requested primary-paper read could not be completed. The repository identifies the paper folder as /Users/jonreilly/ym4d-papers; the exact paths cmp99b.txt and cmp109.txt there were absent in this session. A request for the actual paper-folder path was made while the analytic work continued. No whole-home or whole-/tmp search was made, and no access to a paper that was not available is claimed.
+The requested primary-paper read could not be completed. The repository identifies the paper folder as LOCAL:ym4d-papers; the exact paths cmp99b.txt and cmp109.txt there were absent in this session. A request for the actual paper-folder path was made while the analytic work continued. No whole-home or whole-/tmp search was made, and no access to a paper that was not available is claimed.
 
 The bounded repository literature map in a3-balaban.md Section 2 distinguishes CMP 99b's local value/derivative estimates (3.42)–(3.47), random-walk Theorem 3.7/Corollary 3.8, and the later current-corrected objects. Section 10 distinguishes complex field continuation from independent decoupling. These are second-hand source pointers here, not imports of Balaban's theorems. The differentiated-source mechanism also appears in flat-port.md Section 4; Lemma 3.2 above rebuilds the portion actually used, including its limitation. The o1 and wf-room notes point to CMP 109's independent-current domains; the admissible-current counterexample here uses the outline's explicit class, not an unchecked transcription of that paper.
 

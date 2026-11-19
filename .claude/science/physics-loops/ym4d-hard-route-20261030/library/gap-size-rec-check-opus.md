@@ -1,6 +1,6 @@
 # Check of library/gap-size-rec-astra.md (FINISH row 803), by Claude Opus 5.5, line by line
 
-Clone: `/Users/jonreilly/ym4d-lead/clone` at commit `619472ccd0702b20c2b5a753d3bc56eb47cfec91`.
+Clone: `the lead clone` at commit `619472ccd0702b20c2b5a753d3bc56eb47cfec91`.
 Lane D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 Target: `D/library/gap-size-rec-astra.md` (504 lines, Codex gpt-6-astra max, FINISH row 802). Read in full.
 Context read: `gap-skeleton-max.md` 110-135 (B3) and 250-305 (Lemma 4, E.2-E.4);

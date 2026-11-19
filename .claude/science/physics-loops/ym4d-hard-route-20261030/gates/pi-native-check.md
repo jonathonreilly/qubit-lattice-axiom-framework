@@ -109,4 +109,4 @@ Findings 13, 14 and 16 ask for small repairs. None blocks.
     So note 297's "not another native inverse estimate" is exact. The broader "not a new inverse estimate" holds only if H_Z^(j) is the inner-action object on N's graph.
 21. **Not globally unnecessary.** Note 258. CONFIRMED.
     GW1 (out-gw1.md 31-77, per the note; not read here) and the other fresh settings in the digest's section 5 still use the whole-action PI graph. C0-SUP remains their supplier.
-22. **Papers.** Note 164 says the paper directory was absent. /Users/jonreilly/ym4d-lead/papers holds cmp122a/b text and PDFs. Not load-bearing.
+22. **Papers.** Note 164 says the paper directory was absent. LOCAL:ym4d-lead/papers holds cmp122a/b text and PDFs. Not load-bearing.

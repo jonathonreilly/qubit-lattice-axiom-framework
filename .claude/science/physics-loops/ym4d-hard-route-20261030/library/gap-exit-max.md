@@ -3,8 +3,8 @@
 (file seeded by the lead; the author writes below)
 
 Author: Claude Fable 5.2 (max effort). Date: 2026-11-12.
-Clone: /Users/jonreilly/ym4d-lead/clone at commit 2b6acd1732dde4e18293f0fe0e2814edbca36da3 (read-only).
-Sussman-Alpoge sources: /Users/jonreilly/ym4d-lead/sa at commit 31a47c543775 (as given by the brief; not re-verified yet).
+Clone: the lead clone at commit 2b6acd1732dde4e18293f0fe0e2814edbca36da3 (read-only).
+Sussman-Alpoge sources: LOCAL:ym4d-lead/sa at commit 31a47c543775 (as given by the brief; not re-verified yet).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Labels: PROVED (mine, in this file), READ (path and line), ARGUED, GUIDE, OPEN.
 
@@ -761,7 +761,7 @@ conclusion that EXIT was meant to give. The route "soft step, then Theorem HO" i
 
 ## Step 7. What each step needs from the Sussman-Alpoge account (lines read by me in this step)
 
-Sources at /Users/jonreilly/ym4d-lead/sa (revision 31a47c543775 as recorded by rows 848 and 865; hashes not
+Sources at LOCAL:ym4d-lead/sa (revision 31a47c543775 as recorded by rows 848 and 865; hashes not
 recomputed here): CA-I = theorem_0_complete_account_raw_I.tex, CA-II = theorem_0_complete_account_raw_II.tex.
 The account is by Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of its text. The estimates it
 quotes from Balaban's papers are Balaban's. I cite the complete account only (rule of Step 1b). I did not read

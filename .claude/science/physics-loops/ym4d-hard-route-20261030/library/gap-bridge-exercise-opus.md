@@ -19,7 +19,7 @@ row: 1072
 ### Header
 
 - Writer: Anthropic, Claude Opus 5.5, effort high, laptop subagent of the lead session. No subagents used (context-isolated passes by the one agent; they are not independent).
-- Checkout: /Users/jonreilly/ym4d-lead/clone, branch claude/ym4d-hard-route, HEAD 6a6f2701a. Date 2026-11-16 local (row queued 2026-11-17 00:47Z).
+- Checkout: the lead clone, branch claude/ym4d-hard-route, HEAD 6a6f2701a. Date 2026-11-16 local (row queued 2026-11-17 00:47Z).
 - Nothing in this file is checked by another model.
 - Skill: exercise SKILL.md at main commit 8b11ae2bb9, fetched by curl into /tmp/exskill.rTMCXP (35950 bytes, read in full). Reference files it names, fetched from the same commit into /tmp/exrefs.L2zEjo: physics-loop/references/proof-search-governance.md (read in full), physics-loop/references/assumption-import-audit.md (read in full), SKILL_FRESHNESS_CHECK.md (read in full). Freshness: the row pins 8b11ae2bb9; that pin is used, not current main.
 - Refresher replacement: this is a standalone proof target (lattice SU(2) Yang-Mills); it reads no framework axiom or primitive. The skill says such a target reads its GOAL.md contract instead of the framework refresher. Row 1072 closes GOAL.md until step 5, so the problem statement in row 1072 (FINISH.md L1153) serves as the contract until step 5. The framework refresher surfaces were not read.

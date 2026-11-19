@@ -1,6 +1,6 @@
 # Check of library/gap-tu-retry.md (FINISH row 794), by Claude Opus 5.5, line by line
 
-- Target: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-tu-retry.md`, 533 lines, read in full. Author: Codex gpt-6-astra max (FINISH row 786 in the note).
+- Target: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-tu-retry.md`, 533 lines, read in full. Author: Codex gpt-6-astra max (FINISH row 786 in the note).
 - Clone commit: `ba1c0f084`. Main commit: `bb4ec020d5` (equals `origin/main` at check time; PV unchanged between them).
 - PV: `docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md` at `bb4ec020d5`, sections 1-10 read in full. WV sections 5-7 read for item 6.
 - Context read: `gap-ac-lat.md` section 4; `gap-skeleton-max.md` 1.D; `gap-transport-check.md` section 2; `gap-u1-audit-opus.md` section 3 R2.

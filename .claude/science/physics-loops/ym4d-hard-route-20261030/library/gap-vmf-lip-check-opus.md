@@ -1,6 +1,6 @@
 # Check of library/gap-vmf-lip.md (FINISH row 790), by Claude Opus 5.5, line by line
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, commit read: `a9ac34ca1`.
+- Clone: `the lead clone`, commit read: `a9ac34ca1`.
 - Target: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-vmf-lip.md` (609 lines, Codex gpt-6-astra max, written as FINISH row 785). Read in full.
 - Context read: `gap-crux-fp.md` Sections 4.2 and 4.2b (Identity L, Proposition TW, (AS-bg), Lemma P, R-a, R-b); `gap-mid-max.md` Sections 6 (Identity FL), 8 (Lemma M, Proposition MIX) and 10 (Lemma DC, Lemma INF, Theorem DOB); `gap-mid-check.md` Sections 5 to 8; `gap-seed-shape.md` Sections 1.4, 1.5 and 2 (Theorem SH, the r = 2 and r = 4 lines, Theorem D-shape), with the row 707 lead note.
 - Method: every identity re-derived by hand. No numerical run was made (numpy is not installed on this machine; none was needed). No repository file was edited.

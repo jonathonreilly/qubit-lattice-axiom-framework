@@ -24,7 +24,7 @@ search or external post was used. Balaban below means quotations already in
 this checkout or the account, not an examination of his papers.
 
 I, II, III mean `theorem_0_complete_account_raw_{I,II,III}.tex` in
-`/Users/jonreilly/ym4d-lead/sa/`; SA means `YM4_sketch_500.tex` there. The
+`LOCAL:ym4d-lead/sa/`; SA means `YM4_sketch_500.tex` there. The
 supplied revision is `31a47c543775`. That directory is a source snapshot,
 not a Git checkout whose HEAD can be independently queried. Its SHA-256
 identities agree with the existing GW/M source records:

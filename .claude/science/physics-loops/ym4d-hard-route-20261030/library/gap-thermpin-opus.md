@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone commit: 1020c3efcfe45c942f5711c05eae8fa49e0ea698 (/Users/jonreilly/ym4d-lead/clone, pulled 2026-11-13, already up to date).
+Clone commit: 1020c3efcfe45c942f5711c05eae8fa49e0ea698 (the lead clone, pulled 2026-11-13, already up to date).
 Author: Claude Opus 5.5 (max effort), FINISH row 923. Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 
 ## Target (from the brief; to be restated exactly in step 2 with check 908's corrections)

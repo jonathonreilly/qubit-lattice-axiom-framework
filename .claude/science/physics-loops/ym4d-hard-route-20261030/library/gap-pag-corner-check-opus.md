@@ -2,7 +2,7 @@
 
 - Checker: Claude Opus 5.5. Date: 2026-11-12.
 - Author of the checked text: Codex gpt-6-astra. Every statement marked HOLDS is the author's result, and the credit is theirs.
-- Read in full: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-pag-corner-astra.md` lines 1-569. Sections 1, 2, 3.1-3.3 and 6 were checked line by line. Sections 4 and 5 were skimmed; I also checked the arithmetic of (7), the plaquette count in (8) and the derivative (9).
+- Read in full: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-pag-corner-astra.md` lines 1-569. Sections 1, 2, 3.1-3.3 and 6 were checked line by line. Sections 4 and 5 were skimmed; I also checked the arithmetic of (7), the plaquette count in (8) and the derivative (9).
 - Context read: `gap-crux-exercise-astra.md` lines 749-984 (8.1) and 1194-1389 (8.4, 8.5); `gap-gc-check-opus.md` (all).
 - Method: by hand. One guide only, in this folder: `face_guide.py` with log `face_guide.log` (pure Python, `python3 -I`, own code; sparse CG on C^T C + D D^T). It reproduces the author's Section 5 face-test values exactly (L=1: 0.215885; L=2: 0.212202). It also gives t = 0.374 and 0.391 (at most 1/2), s = 1.025 and 1.060 (at least 2/3), and a = b = 0.350 and 0.363 (in [1/6, 1/2]). The guide uses the same formula as the author, so it checks the arithmetic only and is not an independent derivation. It decides nothing.
 - Independence: one reader, the same source text. The derivations below are my own, done by hand.

@@ -38,7 +38,7 @@ No permitted source page establishing a rigorous mass gap on a small twisted tor
 
 ## E. Continuum constructions and infrared limits
 
-The allowed local Balaban paper set is listed in `/Users/jonBridger/ym4d-papers/README.txt`; its OCR texts concern propagator/renormalization-kernel exponential decay and cluster expansions in the renormalization group. Those are auxiliary/localized RG estimates. They do not state a physical mass-gap theorem in the inspected excerpts. Balaban’s continuum construction and its infinite-volume scope are **not summarized as a theorem here** because I did not fetch an allowed journal abstract page for the needed statements. The exact infrared conclusion of Magnen–Rivasseau–Sénéor and Dimock’s expositions is **from memory, not read**; no physical positive-gap conclusion is asserted.
+The allowed local Balaban paper set is listed in `LOCAL:ym4d-papers/README.txt`; its OCR texts concern propagator/renormalization-kernel exponential decay and cluster expansions in the renormalization group. Those are auxiliary/localized RG estimates. They do not state a physical mass-gap theorem in the inspected excerpts. Balaban’s continuum construction and its infinite-volume scope are **not summarized as a theorem here** because I did not fetch an allowed journal abstract page for the needed statements. The exact infrared conclusion of Magnen–Rivasseau–Sénéor and Dimock’s expositions is **from memory, not read**; no physical positive-gap conclusion is asserted.
 
 ## F. Conditional and lower-dimensional results
 

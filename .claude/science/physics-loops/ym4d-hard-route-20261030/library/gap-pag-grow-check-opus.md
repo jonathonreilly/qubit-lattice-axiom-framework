@@ -1,7 +1,7 @@
 # Check of gap-pag-grow-astra.md
 
 - Checker: Claude Opus 5.5. Date: 2026-11-12. Cross-provider check: the author is Codex gpt-6-astra.
-- Source: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-pag-grow-astra.md`, 887 lines, read in full.
+- Source: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-pag-grow-astra.md`, 887 lines, read in full.
 - Context read: `gap-pag-corner-astra.md` (all 569 lines), `gap-pag-corner-check-opus.md` (all 80 lines), `gap-crux-exercise-astra.md` lines 749-984 (8.1) and 1194-1354 (8.4).
 - Method: by hand only. No code was run. No numerical value decides anything below.
 - Not read: the PR sources and SA/CA-I lines cited in the "Repo search" and Section 1 source paragraphs. I did not read SA 2773-2883 (AM2, AM5). Instead I re-derived the diagonal reflection positivity used in Lemma R myself (Section 5 below). So my verdict on Lemma R rests on my derivation, not on the SA text.

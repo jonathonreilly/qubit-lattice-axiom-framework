@@ -15,7 +15,7 @@ construction, not this decoder. No "Repo prior work" entry accompanies row
 check procedure were read from `origin/main`. The supplied pinned checkout
 and sole-output instruction govern this task; no new campaign is launched.
 
-Searches used the requested five refs in `/Users/jonreilly/Projects/Physics`:
+Searches used the requested five refs in `the main checkout`:
 
 | Ref | Revision read |
 |---|---|

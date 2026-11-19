@@ -1,7 +1,7 @@
 # FINISH row 842: Theorem S1 (twisted thin torus weak-coupling gap), Opus author note
 
 Author: Claude Opus 5.5 (max effort), FINISH row 842.
-Clone: /Users/jonreilly/ym4d-lead/clone at commit d7a3a22a9e9a6d6485df28693d11e86d041535c6
+Clone: the lead clone at commit d7a3a22a9e9a6d6485df28693d11e86d041535c6
 (2026-11-12 20:09:26 -0500, "docs(ym4d): record row 843 (Q8/2T test, low-spin filter; HS open), add rows 854-855").
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Status tags: PROVED (mine), READ (path:line), ARGUED, GUIDE, OPEN.

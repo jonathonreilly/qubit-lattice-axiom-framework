@@ -8,7 +8,7 @@ Credit: Balaban supplied the chart and walk method. The definitions below
 come from the Sussman–Alpoge outline and accompanying account.
 The contraction argument below ports their method, with explicit margins.
 
-I, II, III and SA denote the four files in `/Users/jonreilly/ym4d-lead/sa`.
+I, II, III and SA denote the four files in `LOCAL:ym4d-lead/sa`.
 Their supplied revision is `31a47c543775`. That directory has no Git HEAD.
 Their SHA-256 identities are:
 

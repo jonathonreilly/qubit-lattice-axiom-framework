@@ -4,7 +4,7 @@ Provenance: Codex, 2026-11-06. Research text at checkout `6857c3015af80c5f0a066e
 
 `library/prior/ch-prior.md` is absent. CH is not recorded as closed: `open-registry.md:17,23,552` assigns CH to `ph` and its CH4-AUX child to `ch-bridge`; `t0-tree.md:190,347` keeps both OPEN. This is the requested digest, not another owner's proof lane. FINISH rows 314, 316, 322, 328, 331, 353, 411 and 412 are the rows naming `ph`, `cwch`, `ch-bridge` or CH (`FINISH.md:380,382,388,394,397,419,477–478`). Row 412 is future proof work, not evidence of closure.
 
-Source notation: SA = `YM4_sketch_500.tex`; I, II, III = `theorem_0_complete_account_raw_{I,II,III}.tex`, respectively, under `/Users/jonreilly/ym4d-lead/sa/`. All source line numbers below refer to the supplied revision `31a47c543775`. Their SHA-256 identities match those recorded in `ch-bridge.md:17–21` and `cwch.md:11`:
+Source notation: SA = `YM4_sketch_500.tex`; I, II, III = `theorem_0_complete_account_raw_{I,II,III}.tex`, respectively, under `LOCAL:ym4d-lead/sa/`. All source line numbers below refer to the supplied revision `31a47c543775`. Their SHA-256 identities match those recorded in `ch-bridge.md:17–21` and `cwch.md:11`:
 
 | File | SHA-256 |
 |---|---|

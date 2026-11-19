@@ -6,7 +6,7 @@ Status (2026-11-13): Repo search and the outline-index check are done. The prior
 
 **Terms:** `Shenfeld`, `Brownian transport`, `Lipschitz transport`, `Bauerschmidt/Bodineau/Dagallier`, `stochastic localisation`, `Polchinski`, `Lüscher/Luscher`, `trivializing maps`, `Wilson flow`, `Araki`, `Araki-Lieb-Thirring`, `VIR-log`, `SUPER-D`, `DEF_K`, `magnetic action`, and `thermal trace`.
 
-**Refs:** `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in `/Users/jonreilly/Projects/Physics`.
+**Refs:** `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in `the main checkout`.
 
 | Hit | Exact statement and closeness |
 |---|---|
@@ -23,7 +23,7 @@ The target is the row-913 crux stated locally in `library/gap-target-max.md:282�
 
 ## Outline/account index check
 
-Used `library/sa-index/README.md`, `obligations.md`, and the matching neighboring rows in `chunk-02.md` and `chunk-03.md`. Exact searches for `VIR-log`, `SUPER-D`, `DEF_K`, `magnetic action`, `thermal trace`, Brownian transport, and Araki found no matching outline/account lemma. The nearest outline hit is chunk 02's GL7–GL9 transfer construction: the periodic Wilson partition function is `Tr L^s` (SA outline lines 2330–2335), with the neighboring rows defining a positive trace-class gauge-averaged layer operator and admissible insertions. This gives trace-operator context, but no coupling derivative, transfer excitation estimate, or magnetic-minus-vacuum bound. The specified raw source `/Users/jonreilly/sa/YM4_sketch_500.tex` was absent in this environment when checked, so the indexed lines could not be re-read directly; the index locator is not treated as source verification. No CA-I/II/III lines are claimed for this separate spectral-gap target.
+Used `library/sa-index/README.md`, `obligations.md`, and the matching neighboring rows in `chunk-02.md` and `chunk-03.md`. Exact searches for `VIR-log`, `SUPER-D`, `DEF_K`, `magnetic action`, `thermal trace`, Brownian transport, and Araki found no matching outline/account lemma. The nearest outline hit is chunk 02's GL7–GL9 transfer construction: the periodic Wilson partition function is `Tr L^s` (SA outline lines 2330–2335), with the neighboring rows defining a positive trace-class gauge-averaged layer operator and admissible insertions. This gives trace-operator context, but no coupling derivative, transfer excitation estimate, or magnetic-minus-vacuum bound. The specified raw source `LOCAL:sa/YM4_sketch_500.tex` was absent in this environment when checked, so the indexed lines could not be re-read directly; the index locator is not treated as source verification. No CA-I/II/III lines are claimed for this separate spectral-gap target.
 
 The earlier row-792 review starts below and remains intact; its Münster, twist/vortex, and correlated-map findings are not repeated as row-915 work.
 
@@ -77,7 +77,7 @@ The lead's `library/prior/repo-search-2026-11-08.md` is a retroactive search for
 
 At this pin (`d751ae488e384e74233a46f3d9e6135269235aae`), I fetched and searched current `origin/main` (`bb4ec020d5`), `origin/pr/10114` (`f76f6c649c`), `origin/pr/10133` (`89faef229f`), `origin/pr/10134` (`1e70c7211a`) and `origin/pr/10141` (`fb99b4dddc`). Focused searches for `TR-F`, twist/vortex free energy and small commutators found no target supplier outside this lane. The matching main/PR files were generic heat-kernel notes or an unrelated soft-route commutator discussion. They are not a close result and supply neither (TR-F) nor (26). `library/open-registry.md` has no row for `gap-ext`, `gap-lit-transport`, twist free energy or vortex free energy. The active owner is therefore the already queued row 789, not another registry row.
 
-The paper folder named in the task, `/Users/jonBridger/ym4d-papers`, is absent here. I did not search outside the allowed locations. Downloaded PDFs are only in the new scratch directory `/tmp/gap-lit-transport.SP8hQ7/downloads/`; no paper was copied into the checkout.
+The paper folder named in the task, `LOCAL:ym4d-papers`, is absent here. I did not search outside the allowed locations. Downloaded PDFs are only in the new scratch directory `/tmp/gap-lit-transport.SP8hQ7/downloads/`; no paper was copied into the checkout.
 
 ## Literature search: twist free energy and correlated transport
 

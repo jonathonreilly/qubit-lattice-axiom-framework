@@ -1,6 +1,6 @@
 # Check of library/gap-shape-exercise-astra.md (FINISH row 824), by Claude Opus 5.5, line by line
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, commit `eb89fb1396d7ef44e6a02aee6cb3a387f719b4f3` (pull --ff-only: already up to date).
+- Clone: `the lead clone`, commit `eb89fb1396d7ef44e6a02aee6cb3a387f719b4f3` (pull --ff-only: already up to date).
 - Target: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-shape-exercise-astra.md`, 900 lines, by Codex gpt-6-astra max (FINISH row 814). Steps 2 to 9 (lines 141-900) read in full; lines 1-140 read for the contract.
 - Context: `library/gap-gamma2-astra.md` Sections 1-3 (lines 73-347) and its check `library/gap-gamma2-check-opus.md` (all).
 - Method: every identity re-derived by hand. No numerical run, not even a GUIDE run. No repository file edited.

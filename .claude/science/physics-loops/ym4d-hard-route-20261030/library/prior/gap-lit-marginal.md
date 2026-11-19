@@ -5,7 +5,7 @@ Terms searched with `git grep -n -i -E` over `*.md` and `*.tex`:
 `random current|switching lemma|switching principle|current representation`, and
 `marginal|logarithmic correction|logarithmic factor|four-dimensional Ising|four-dimensional phi.?4`.
 Refs: `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141` in
-`/Users/jonreilly/Projects/Physics`.
+`the main checkout`.
 
 The targeted searches for the marginal method and the strict `random current|switching lemma|switching principle` query returned no lines on any of the five refs. The broad `current representation` search did return terminology-only false positives. For example, `pr/10114:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/ALIGN2_55.md:115` says “Put `j := P^TD^⊥g` (a plain-current representation of the functional `g`).” This is a finite-dimensional linear representation, not a probabilistic random-current expansion or switching lemma, so it is not close to the Ising argument. Other `docs/` hits concern Fourier/current variables in unrelated models. No file hit supplied an application of the 4D Ising marginal method to lattice gauge theory.
 

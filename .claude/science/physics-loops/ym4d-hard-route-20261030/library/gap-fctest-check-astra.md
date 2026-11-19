@@ -4,7 +4,7 @@ Target-specific prior digest is absent. The November 8 repository digest
 concerns other targets; its transfer-operator pointer is reused below.
 
 Searched `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141` in
-`/Users/jonreilly/Projects/Physics`, using the requested bounded `git grep`
+`the main checkout`, using the requested bounded `git grep`
 over Markdown and TeX. Ref revisions were respectively
 `3e13676f02af206100abfb2875521904e8f53cda`,
 `f76f6c649cff7dffbab664d8976e680e8f287fe9`,

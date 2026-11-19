@@ -1,6 +1,6 @@
 # Check of library/gap-expose-astra.md (FINISH row 810), by Claude Opus 5.5, line by line
 
-Clone: `/Users/jonreilly/ym4d-lead/clone` at `07667f860941c5497a2c39cdedf018b2d9793edd`.
+Clone: `the lead clone` at `07667f860941c5497a2c39cdedf018b2d9793edd`.
 Lane D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 Target: `D/library/gap-expose-astra.md` (658 lines, Codex gpt-6-astra max, row 809), read in full.
 Context read: `gap-block-astra.md` sections 1, 4, 6, 7 (and 8); `gap-block-check-opus.md` section headers;

@@ -3,9 +3,9 @@
 (file seeded by the lead; the author writes below)
 
 Author: Claude Opus 5.5 (max effort). FINISH row 872. 4D SU(2) lattice Yang-Mills.
-Clone: /Users/jonreilly/ym4d-lead/clone at commit 6ed5bb723e1efd0d44ef0ce331b03d39a019ae1f (pull --ff-only: already up to date).
+Clone: the lead clone at commit 6ed5bb723e1efd0d44ef0ce331b03d39a019ae1f (pull --ff-only: already up to date).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
-SA sources: /Users/jonreilly/ym4d-lead/sa at commit 31a47c543775 (Ethan Sussman and Levent Alpoge; Claude and Codex authors of their text).
+SA sources: LOCAL:ym4d-lead/sa at commit 31a47c543775 (Ethan Sussman and Levent Alpoge; Claude and Codex authors of their text).
 Status labels: PROVED (mine), READ (path:line), ARGUED, GUIDE, OPEN.
 
 ## Target

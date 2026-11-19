@@ -5,7 +5,7 @@
 
 ## 0. Start record and plan
 
-- Clone: /Users/jonreilly/ym4d-lead/clone, branch claude/ym4d-hard-route, commit 6a2f410d92e1a50a8e1ae135227a22788784d261 (git pull --ff-only: already up to date, 2026-11-12).
+- Clone: the lead clone, branch claude/ym4d-hard-route, commit 6a2f410d92e1a50a8e1ae135227a22788784d261 (git pull --ff-only: already up to date, 2026-11-12).
 - Author: Claude Fable 5.2, max effort. Row 859. No subagents. No repository edits. This file is the working memory.
 - Marks: PROVED (mine, in this file), READ (path and line), ARGUED, GUIDE (numeric, guides only), OPEN.
 
@@ -376,7 +376,7 @@ For each idea: K = kernel of truth, N = what it would need, O = what it opens. A
 
 ## Resumed 2026-11-13 after the 03:06Z interrupt
 
-- Clone: /Users/jonreilly/ym4d-lead/clone, branch claude/ym4d-hard-route, commit 9f1e04272b03270994c98fb4b9716e071924bac4 (git pull --ff-only: already up to date, 2026-11-13). The first run started at commit 6a2f410d92.
+- Clone: the lead clone, branch claude/ym4d-hard-route, commit 9f1e04272b03270994c98fb4b9716e071924bac4 (git pull --ff-only: already up to date, 2026-11-13). The first run started at commit 6a2f410d92.
 - The first run finished Phase 1 (1a-1h), Phase 2 (ideas 1-52) and Phase 3.1 (kernel / needs / opens for ideas 1-26). I read all of it. I do not redo it.
 - Rows 860-875 have landed since. In Phase 4 I grep their RESULT lines in D/FINISH.md and score the ideas against them.
 
@@ -667,7 +667,7 @@ So if "unclean at level 0" is bounded by "a strand of half-integer edges of leng
 
 ## 5. PHASE 5: novelty (Opus 5.5)
 
-Searches (bounded, filenames and short contexts; I opened only the lines cited): `git -C /Users/jonreilly/ym4d-lead/clone grep` on the lane folder D at HEAD = claude/ym4d-hard-route db223519cd; `git -C /Users/jonreilly/Projects/Physics grep` on origin/main = 993f5e4f6d (2026-11-12T22:45-05:00, not fetched). Literature by recall (marked); nothing downloaded.
+Searches (bounded, filenames and short contexts; I opened only the lines cited): `git -C the lead clone grep` on the lane folder D at HEAD = claude/ym4d-hard-route db223519cd; `git -C the main checkout grep` on origin/main = 993f5e4f6d (2026-11-12T22:45-05:00, not fetched). Literature by recall (marked); nothing downloaded.
 
 **(1) Decoder + chessboard. NEW as a route, built from known parts.**
 - Lane: "decoder" occurs only for the surface ENCODING codes of the RTAIL notes (READ `D/library/gap-rtail-astra.md` L154, `D/library/gap-rtailsos-opus.md` L113-133, `D/library/gap-rtail-check-opus.md` L16-30): counting codes, not error correction. "toric code" occurs only as a literature theme for Theorem R (READ `D/FINISH.md` L822, row 745: Lagrangian subgroups, condensation). Homological percolation occurs only via Duncan-Schweinhart's Potts lattice gauge theory (READ `D/library/prior/gap-crux-lit-cross.md` L71-73; `D/library/prior/gap-lit-grok.md` L77). Toom-contour Peierls bounds appear for dynamics (READ `D/library/prior/gap-lit-annealed.md` L48-54). "loop condensate", "minimal filling", "relative filling": no hit.

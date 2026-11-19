@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone commit: de5181bd72f54e89fd7411085e39524f751c384c (read-only clone /Users/jonreilly/ym4d-lead/clone, pulled 2026-11-13, already up to date).
+Clone commit: de5181bd72f54e89fd7411085e39524f751c384c (read-only clone the lead clone, pulled 2026-11-13, already up to date).
 Author: Claude Fable 5.2, max effort. Row 895. Status of this file: UNCHECKED author text.
 Marks: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE (numeric, never a proof), OPEN.
 

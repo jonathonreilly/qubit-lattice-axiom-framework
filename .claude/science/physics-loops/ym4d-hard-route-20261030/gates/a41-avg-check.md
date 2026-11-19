@@ -15,7 +15,7 @@ Balaban's own method, and the note does not attempt it. The note should
 add that route before it may claim stop (c).
 
 Sources read: Y = `YM4_1400.tex` (scratchpad copy; line numbers match
-the note). SA and I = `/Users/jonreilly/ym4d-lead/sa/YM4_sketch_500.tex`
+the note). SA and I = `LOCAL:ym4d-lead/sa/YM4_sketch_500.tex`
 and `theorem_0_complete_account_raw_I.tex`. The note's `/tmp` copies are
 gone. I did not confirm the commit of the SA/I copies; every cited
 line range matched its content.

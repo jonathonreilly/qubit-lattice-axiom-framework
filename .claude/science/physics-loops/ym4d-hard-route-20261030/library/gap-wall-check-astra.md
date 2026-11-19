@@ -1,6 +1,6 @@
 # Repo search
 
-Terms: `WALL.?_?40|gap-wall|KURT|jump fraction|fusion of two flux|partial centre flips|partial center flips`; then `ground.state transform|flux ground|hidden.bit|sector.trace.domination`; scoped follow-up `ground.state transform|flux ground|hidden.bit|kurtosis|sector.trace|trace.domination` on the soft-route and research/ym4d paths. Commands used bounded `git grep -n -i -E ... -- '*.md' '*.tex' | head` in `/Users/jonreilly/Projects/Physics`. The broad trace/sector query hit its cap with unrelated material; it supplies no absence claim.
+Terms: `WALL.?_?40|gap-wall|KURT|jump fraction|fusion of two flux|partial centre flips|partial center flips`; then `ground.state transform|flux ground|hidden.bit|sector.trace.domination`; scoped follow-up `ground.state transform|flux ground|hidden.bit|kurtosis|sector.trace|trace.domination` on the soft-route and research/ym4d paths. Commands used bounded `git grep -n -i -E ... -- '*.md' '*.tex' | head` in `the main checkout`. The broad trace/sector query hit its cap with unrelated material; it supplies no absence claim.
 
 | Ref | Revision searched |
 |---|---|

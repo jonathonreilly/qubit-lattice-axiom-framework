@@ -1,9 +1,9 @@
 # Check of gap-sdcyl-ca-astra.md (FINISH row 868)
 
 - Checker: Claude Opus 5.5 (high effort), by hand, no subagents.
-- Clone commit: 69d39b9d9e35a4b442a34927aeaa4c5b9d62edd5 (/Users/jonreilly/ym4d-lead/clone, pulled 2026-11-12, already up to date).
+- Clone commit: 69d39b9d9e35a4b442a34927aeaa4c5b9d62edd5 (the lead clone, pulled 2026-11-12, already up to date).
 - Object checked: D/library/gap-sdcyl-ca-astra.md (row 865, written by OpenAI Codex gpt-6-astra).
-- Sources (row 844 section 5, the Lemma FL check, was read; it is not used by the target): CA-I Theorem 0 (iv), lines 2715-2826 of /Users/jonreilly/ym4d-lead/sa/theorem_0_complete_account_raw_I.tex (Sussman-Alpoge complete account at 31a47c543775; mathematics credited to Ethan Sussman and Levent Alpoge, text by Claude and Codex); D/library/gap-e17phys-opus.md sections 4-5 (row 844); D/library/gap-e17phys-check-astra.md section 13.
+- Sources (row 844 section 5, the Lemma FL check, was read; it is not used by the target): CA-I Theorem 0 (iv), lines 2715-2826 of LOCAL:ym4d-lead/sa/theorem_0_complete_account_raw_I.tex (Sussman-Alpoge complete account at 31a47c543775; mathematics credited to Ethan Sussman and Levent Alpoge, text by Claude and Codex); D/library/gap-e17phys-opus.md sections 4-5 (row 844); D/library/gap-e17phys-check-astra.md section 13.
 - D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 
 Source bytes: sha256 of CA-I starts 4cb5cb5e0af8dbdd and of CA-II starts 6a1f74b05f74ba44, the hashes the target records for revision 31a47c543775. Bounded extra reads (to check the target's locators that my six statements rest on): CA-II 142316-142372 (Corollary 8.22:cor-transfer-depth-floor, statement) and a keyword search in 142372-142546 (its reserve arithmetic); CA-I 101-102, 208, 218, 731 (trace normalization, observable, connected Schwinger function). Nothing else in CA-II was re-read. Marks: READ = I read the source text at the cited lines; checked = I re-did the step by hand.

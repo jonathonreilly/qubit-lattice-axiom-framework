@@ -5,13 +5,13 @@ VALUE {"beta": 2.6, "beta_T": 2.6, "beta_L": 5.2, "multiplier": 2.0, "gap": 2.55
 VALUE {"beta": 2.6, "beta_T": 2.6, "beta_L": 2.6, "multiplier": 1.0, "gap": 2.8693331429067372, "eigenvalues": [2.9593075247751345e-05, 1.6790148904889232e-06, 8.714765452744488e-07], "residuals": [5.44871929000038e-16, 4.2057933620781087e-16, 2.2584187715833546e-15]}
 VALUE {"beta": 2.3, "beta_T": 2.3, "beta_L": "infinity", "multiplier": 0.0, "gap": 2.1587404043353757, "eigenvalues": [0.0001253687279054185, 1.4476386634763378e-05, 1.126110372731618e-05], "residuals": [5.314554275009242e-15, 7.810330948000262e-16, 1.2244298108455685e-15]}
 Traceback (most recent call last):
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 206, in <module>
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 206, in <module>
     if __name__=='__main__':main()
                             ^^^^^^
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 205, in main
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 205, in main
     else:run(a.basis,a.betas,a.mults,a.output,a.transverse)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 190, in run
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 190, in run
     ev,U=eigsh(op,k=3,which='LA',tol=3e-11,ncv=16,v0=np.linspace(.9,1.1,len(rows)) if last is None else last)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1778, in eigsh
@@ -25,7 +25,7 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_interface.py", line 620, in _matvec
     return self.__matvec_impl(x)
            ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 188, in matvec
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 188, in matvec
     def matvec(x):return w*expm_multiply(V,w*x,traceA=-shift*len(rows))
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_expm_multiply.py", line 207, in expm_multiply

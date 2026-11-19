@@ -1,7 +1,7 @@
 # Audit of the uses of the U(1) test and the Z_2 test (row 784, `gap-u1-audit-opus`)
 
 Author: Claude Opus 5.5 (model id claude-opus-5-5), lead's MacBook, reading and logic only. No repository file edited.
-Folder read: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/`, at commit 168c0ba29 of `/Users/jonreilly/ym4d-lead/clone`.
+Folder read: `.claude/science/physics-loops/ym4d-hard-route-20261030/`, at commit 168c0ba29 of `the lead clone`.
 Status: complete.
 
 ## 0. The yardstick

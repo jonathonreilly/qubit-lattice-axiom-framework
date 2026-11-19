@@ -4,7 +4,7 @@ Provenance: Codex (gpt-6-astra); checkout `e23605e01474e766258f008c0d477b349fbfc
 
 ## 1. Scope and sources
 
-This is one check of all 271 lines of `library/b-in.md` (Claude, row 389). `I`, `II`, `III` and `SA` denote the supplied account and outline at upstream `31a47c543775`, under `/Users/jonreilly/ym4d-lead/sa`. Credit belongs to Sussman and Alpoge, with Claude and Codex as authors of their text, and to Balaban for the cited constructions.
+This is one check of all 271 lines of `library/b-in.md` (Claude, row 389). `I`, `II`, `III` and `SA` denote the supplied account and outline at upstream `31a47c543775`, under `LOCAL:ym4d-lead/sa`. Credit belongs to Sussman and Alpoge, with Claude and Codex as authors of their text, and to Balaban for the cited constructions.
 
 `library/prior/b-in-gate.md` is absent. The earlier digest `library/prior/b-in.md`, `gates/ca-gate.md` §§4–5, `library/ca-claude.md` and `library/ca-f.md` were read first. The registry assigns CA-BIN to `b-in`; this requested check does not open another proof lane. The pinned seed, conditional collar algebra and existing layer calculation are reused with their recorded premises.
 

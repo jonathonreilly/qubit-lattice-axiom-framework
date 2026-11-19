@@ -3,7 +3,7 @@
 (file seeded by the lead; the author writes below)
 
 Author: Claude Fable 5.2 (max effort). Date: 2026-11-13.
-Clone: /Users/jonreilly/ym4d-lead/clone at commit c71f9498b5e32bae683db3ca593d7786a623f9be (read-only).
+Clone: the lead clone at commit c71f9498b5e32bae683db3ca593d7786a623f9be (read-only).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Labels: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE, OPEN.
 

@@ -1,6 +1,6 @@
 # Check of library/gap-joint-astra.md (FINISH row 816), by Claude Opus 5.5, line by line
 
-Clone: `/Users/jonreilly/ym4d-lead/clone` at commit `e3e52f6bbcd39ff776c99a15f6b2daff38338f7b`.
+Clone: `the lead clone` at commit `e3e52f6bbcd39ff776c99a15f6b2daff38338f7b`.
 Lane D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 Target: `D/library/gap-joint-astra.md`, 723 lines, author Codex gpt-6-astra max (FINISH row 811).
 The note says its own checkout was `9bb28a2f`. I read every source at the clone commit above.
@@ -11,7 +11,7 @@ Sources read: the target in full; `gap-kappa-order.md` lines 1-120 (Proposition 
 `gap-tree-astra.md` lines 355-450 ((G14)-(G17a)) and `gap-tree-check-opus.md` lines 125-155 and its table;
 `gap-ext-astra.md` lines 100-128 and 474-573 ((FQ), (LC), (E18)-(E20)) and the verdict lines of `gap-ext-check-opus.md`.
 The SA outline `YM4_sketch_500.tex` at `31a47c543775` was downloaded once into
-`/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/sa-dl3/wrOM0F/`.
+`SCRATCH/sa-dl3/wrOM0F/`.
 I read its lines 1255-1360 only (the KP criterion and the rooted-tree theorem). It is not copied into any checkout.
 
 Method: every step was re-derived by hand. One small run (under 1 MB) is reported as GUIDE. No verdict rests on it.

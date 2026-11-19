@@ -7,7 +7,7 @@ FINISH row 837, `gap-finishline-opus`. Port item: the lane's rule is to port the
 
 **Pins.**
 
-- Lane clone `/Users/jonreilly/ym4d-lead/clone` at commit `83f6ffafe92a18e8d6d415b47453e830424e4160` (2026-11-12 18:27 -0500, "docs(ym4d): add row 837 ..."), after `git pull --ff-only` ("Already up to date"). Lane directory D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
+- Lane clone `the lead clone` at commit `83f6ffafe92a18e8d6d415b47453e830424e4160` (2026-11-12 18:27 -0500, "docs(ym4d): add row 837 ..."), after `git pull --ff-only` ("Already up to date"). Lane directory D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 - Outline of Sussman and Alpoge: `YM4_sketch_500.tex` at their commit `31a47c543775` (32,992 lines; sha256 d7f77d4d...537d4b6f), the version that `D/library/sa-index/` indexes. Downloaded once into the new empty directory `scratchpad/sa-finish/dl.63jqTR/`. Cited as SA L<line>. The skeleton's Section 1 names `YM4_1400.tex` at `2bc0658f91d2`; the index and row 720 (`gap-phys-seed.md`) use the sketch at `31a47c543775`, and so does this file. Where the two versions could differ, this file says which one it read.
 - Complete account, parts I and III: `theorem_0_complete_account_raw_I.tex` and `theorem_0_complete_account_raw_III.tex` at `31a47c543775`, fetched once each (Section 0). Cited as CA-I L<line>, CA-III L<line>. Part II was not fetched; its statements are cited only through lane files, and marked so.
 

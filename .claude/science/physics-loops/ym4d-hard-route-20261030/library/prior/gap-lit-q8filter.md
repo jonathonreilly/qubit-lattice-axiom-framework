@@ -1,6 +1,6 @@
 # Repo search
 
-**Search refs:** `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in `/Users/jonreilly/Projects/Physics`; `git grep -n -i -E`, restricted to `*.md` and `*.tex`. The required repo-search note `library/prior/repo-search-2026-11-08.md` was read; its target is unrelated and it supplies no finite-subgroup gauge-literature result. The broader finite-subgroup, freezing, Wilson, and named-author searches were capped locators. Targeted follow-ups found these relevant hits:
+**Search refs:** `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in `the main checkout`; `git grep -n -i -E`, restricted to `*.md` and `*.tex`. The required repo-search note `library/prior/repo-search-2026-11-08.md` was read; its target is unrelated and it supplies no finite-subgroup gauge-literature result. The broader finite-subgroup, freezing, Wilson, and named-author searches were capped locators. Targeted follow-ups found these relevant hits:
 
 | Ref and file | Exact statement | Closeness |
 |---|---|---|
@@ -33,7 +33,7 @@ The finite-subgroup/freezing question is already substantially covered in `libra
 
 ### What is explicit in the existing research text
 
-The SA outline is explicit for the **continuous SU(2) one-link convolution**, not for finite subgroups. In `/Users/jonreilly/sa/YM4_sketch_500.tex:2197–2239`, it defines the Wilson kernel and gives the spin-ℓ coefficient `c_l = 2 e^{-beta} I_{2l+1}(beta)/beta > 0`; its character coefficient is `d_l c_l = e^{-beta}(I_{2l}(beta)-I_{2l+2}(beta))`. The outline records a positive Bessel-series representation, factorial decay in the index, and the ratio bound `I_{n+1}/I_n <= beta/(2(n+1))`. This is an exact one-link spectral suppression statement in the SU(2) setting. The neighboring outline rows discuss positivity, trace class, and smooth half-kernel multipliers. They do not give finite-group coefficients or rarity for the interacting one-slice law.
+The SA outline is explicit for the **continuous SU(2) one-link convolution**, not for finite subgroups. In `LOCAL:sa/YM4_sketch_500.tex:2197–2239`, it defines the Wilson kernel and gives the spin-ℓ coefficient `c_l = 2 e^{-beta} I_{2l+1}(beta)/beta > 0`; its character coefficient is `d_l c_l = e^{-beta}(I_{2l}(beta)-I_{2l+2}(beta))`. The outline records a positive Bessel-series representation, factorial decay in the index, and the ratio bound `I_{n+1}/I_n <= beta/(2(n+1))`. This is an exact one-link spectral suppression statement in the SU(2) setting. The neighboring outline rows discuss positivity, trace class, and smooth half-kernel multipliers. They do not give finite-group coefficients or rarity for the interacting one-slice law.
 
 The lane's row-843 research note, `library/gap-q8test-opus.md` §§1, 3, works out the finite-group comparison at a **tilted one-plaquette/kinetic-factor** level. It gives
 

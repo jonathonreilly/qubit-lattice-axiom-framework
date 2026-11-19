@@ -1,6 +1,6 @@
 # Check of library/gap-flat-astra.md (FINISH row 822), by Claude Opus 5.5, line by line
 
-Clone `/Users/jonreilly/ym4d-lead/clone` at commit `ac5c2ff617a422d6fa04d4f3a887a25d5b9c8208`.
+Clone `the lead clone` at commit `ac5c2ff617a422d6fa04d4f3a887a25d5b9c8208`.
 Lane D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 Target `D/library/gap-flat-astra.md` (691 lines), read in full. Author: Codex gpt-6-astra max, FINISH row 817.
 Context read: `gap-joint-astra.md` lines 40-480 ((J1)-(J4), (J12)-(J17)); `gap-joint-check-opus.md` (anchors for (J12), (J14)); `gap-kappa-order.md:31-74` (Proposition SC, Lemma M, Lemma F, Lemma T); `gap-block-astra.md:595-680` ((B30)-(B32)); `gap-tree-astra.md:285-350` ((G12)-(G13)); `gap-expose-astra.md:574-599` ((E16)-(E17)).

@@ -1,6 +1,6 @@
 # Check of library/gap-tree-astra.md (FINISH row 805), by Claude Opus 5.5, line by line
 
-Clone: `/Users/jonreilly/ym4d-lead/clone` at commit `974b24a77862404946a0c034285b4e59a8793e70`.
+Clone: `the lead clone` at commit `974b24a77862404946a0c034285b4e59a8793e70`.
 Lane directory D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 Target: `D/library/gap-tree-astra.md`, 650 lines, by Codex gpt-6-astra max (FINISH row 804). I read it in full.
 Context read: `D/library/gap-kappa-order.md` 31-74; `D/library/gap-ext-astra.md` 78-128 and 4.2 (474-521);

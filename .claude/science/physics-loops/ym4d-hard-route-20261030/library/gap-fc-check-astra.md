@@ -1,7 +1,7 @@
 ## Repo search
 
 Searched `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141`
-in `/Users/jonreilly/Projects/Physics`, across Markdown and TeX, before deriving anything.
+in `the main checkout`, across Markdown and TeX, before deriving anything.
 Terms: Fisher-information contraction, `(FC)`, `(GC)`, `LSI-br`, `LSI-J-seed`,
 `HC-vac`, hypercontractivity, Brownian bridge, Polchinski, de Bruijn.
 Broad searches hit unrelated information-geometry notes and the older mass-gap

@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone commit: 94d014f2866275824b7d1c6aa9cb75cb060f4ae4 (/Users/jonreilly/ym4d-lead/clone, pulled, already up to date).
+Clone commit: 94d014f2866275824b7d1c6aa9cb75cb060f4ae4 (the lead clone, pulled, already up to date).
 Author: Claude Fable 5.2, max effort. FINISH row 907. Date 2026-11-13.
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Status marks: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE, OPEN.

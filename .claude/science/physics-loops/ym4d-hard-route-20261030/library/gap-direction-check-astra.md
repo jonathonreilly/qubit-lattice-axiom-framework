@@ -8,7 +8,7 @@ Source SHA-256: `dbf8d872f64475d3b3e81123a69465cde774f4d9b6c1e98d86f90f5473a9637
 `library/prior/gap-direction-check-astra.md` is absent.
 
 Searches ran on `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`,
-`pr/10141` in `/Users/jonreilly/Projects/Physics`, over `*.md`, `*.tex`.
+`pr/10141` in `the main checkout`, over `*.md`, `*.tex`.
 Initial `ANOM` and `SMALL-BOX` searches hit their caps with unrelated work;
 they support no absence claim. The completed narrower search used
 `HC-vac|LSI-vac|gap-direction|\(ANOM\)|hypercontract|vacuum.slice.chain|interaction measure|SPLIT.*S_ev`.

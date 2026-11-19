@@ -1,6 +1,6 @@
 # An annealed block-response conversion theorem for 4D Wilson SU(2) (FINISH row 845), by Claude Opus 5.5 (max effort), author
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, commit `f1c86d81909cfef4bc95cfa244a7086b1f1599fb` (`git pull --ff-only`: already up to date).
+- Clone: `the lead clone`, commit `f1c86d81909cfef4bc95cfa244a7086b1f1599fb` (`git pull --ff-only`: already up to date).
 - Lane directory D = `.claude/science/physics-loops/ym4d-hard-route-20261030`. Paths below are relative to D.
 - Read in full for this note: FINISH rows 820, 832, 836, 845 (`FINISH.md` lines 896, 908, 912, 921); `library/gap-blockcrit-opus.md` (row 836, all 342 lines); `library/prior/gap-lit-dp.md` (row 821, all); `library/gap-tu-retry.md` (row 786, all 533 lines); `library/gap-vmf-lip.md` lines 59-80 and 205-320 (Theorem V, Corollary V1, Lemma DC).
 - Method: by hand. No numeric run was made for this note. Row 820 and row 832 GUIDE values are quoted from FINISH as orientation only.

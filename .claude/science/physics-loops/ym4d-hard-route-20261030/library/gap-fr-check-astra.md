@@ -3,7 +3,7 @@
 Search terms: `force.response`, `VAR-SLAB`, `lambda_odd`,
 `ODD-0`, `twist.indicator`, `even.two.slice`, `odd.spectral.gap`,
 `electric.flux`, `twisted.partition`, and `ground.state.transform`.
-Refs searched in `/Users/jonreilly/Projects/Physics`: `origin/main`,
+Refs searched in `the main checkout`: `origin/main`,
 `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141`. Broad searches produced
 unrelated force-response and electric-flux hits; their bounded output is not
 an exhaustive negative search. The narrow search for the named constructions

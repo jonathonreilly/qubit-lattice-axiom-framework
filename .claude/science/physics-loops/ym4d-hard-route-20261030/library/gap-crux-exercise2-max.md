@@ -6,7 +6,7 @@
 ## Provenance and plan (written first, before any deep reading)
 
 - Author: Claude Fable 5.2, max effort. FINISH row 878. No subagents. No repository edits.
-- Clone: /Users/jonreilly/ym4d-lead/clone at commit cd67a48b3fa7e118dbc93ff0a4968e27e6489951 (pull --ff-only: already up to date, 2026-11-13).
+- Clone: the lead clone at commit cd67a48b3fa7e118dbc93ff0a4968e27e6489951 (pull --ff-only: already up to date, 2026-11-13).
 - Skill: docs/ai_methodology/skills/exercise/SKILL.md at 1eb15ac428 (to be read next; the plan below is provisional until then and is refined in place by a later append).
 
 Plan (one step per response, each appended here before the next):
@@ -57,7 +57,7 @@ The skill has steps 0 to 9. I follow its order. Each bullet is one or more respo
 
 **Refresher read, replaced.** This is a standalone proof target. Its contract is D/GOAL.md (READ in full, 92 lines). It reads no framework axiom or primitive. So the contract and its rules replace the framework refresher list. The rules that bind this run: no computer-assisted step (every proof step a written argument that could be formalized in Lean; a run may refute or guide only); the chain to T0 is the ported account of Sussman and Alpoge; the mass gap is a later target of GOAL.md and the present main work by the lead's decision.
 
-**Paths.** Clone C = /Users/jonreilly/ym4d-lead/clone. D = .claude/science/physics-loops/ym4d-hard-route-20261030. SK = D/library/gap-skeleton-final.md. FL = D/library/gap-finishline-opus.md. AS = D/library/gap-assume-opus.md. FIN = D/FINISH.md (row n at line n + 76).
+**Paths.** Clone C = the lead clone. D = .claude/science/physics-loops/ym4d-hard-route-20261030. SK = D/library/gap-skeleton-final.md. FL = D/library/gap-finishline-opus.md. AS = D/library/gap-assume-opus.md. FIN = D/FINISH.md (row n at line n + 76).
 
 ### 0.1 Open now (statements only)
 

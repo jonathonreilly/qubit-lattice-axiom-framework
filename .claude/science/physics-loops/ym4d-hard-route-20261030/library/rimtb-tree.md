@@ -4,7 +4,7 @@ FINISH row 547. Codex, 2026-11-08. Checkout pin supplied: `5e09ceb63`.
 Research sketches only. No proof, independent check, audit, or status is granted.
 
 Read `prior/repo-search-2026-11-08.md`, especially §8. `prior/rimtb-tree.md` was absent.
-Searched the on-disk refs `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in `/Users/jonreilly/Projects/Physics`.
+Searched the on-disk refs `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in `the main checkout`.
 The searches covered `*.md` and `*.tex`, including files outside this lane.
 No remote refresh was attempted.
 
@@ -40,8 +40,8 @@ Credit Tadeusz Balaban for the averaging, constrained variational, and localizat
 
 ## Sources and the consumer
 
-**SA** and **I** mean `YM4_sketch_500.tex` and `theorem_0_complete_account_raw_I.tex` in `/Users/jonreilly/ym4d-lead/sa/`, at `31a47c543775`.
-**Y** means the supplied `scratchpad/sa1400/YM4_1400.tex` under `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/`.
+**SA** and **I** mean `YM4_sketch_500.tex` and `theorem_0_complete_account_raw_I.tex` in `LOCAL:ym4d-lead/sa/`, at `31a47c543775`.
+**Y** means the supplied `scratchpad/sa1400/YM4_1400.tex` under `SCRATCH/`.
 Its source pin in the existing notes is `2bc0658f91d2d03ba44e20bf695067e0a56a2ed9`.
 Line numbers use those copies.
 

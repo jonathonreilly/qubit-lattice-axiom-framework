@@ -1,6 +1,6 @@
 #!/bin/zsh
-LAB=/Users/jonBridger/ym4d-worker/repo/scripts/lab_ops.py
-REPO=/Users/jonBridger/ym4d-worker/repo
+LAB=scripts/lab_ops.py
+REPO=the worker checkout
 cd $REPO
 got=0
 for i in {1..60}; do

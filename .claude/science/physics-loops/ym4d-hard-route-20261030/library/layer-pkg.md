@@ -23,7 +23,7 @@ cutoff proofs are reused with their check reports' repairs.
 ## 1. Sources, ownership and objects
 
 I, II, III and SA mean the three complete-account files and
-YM4_sketch_500.tex in /Users/jonreilly/ym4d-lead/sa, supplied revision
+YM4_sketch_500.tex in LOCAL:ym4d-lead/sa, supplied revision
 31a47c543775. Locators are physical lines. This directory is a source
 snapshot, not a separately verified Git HEAD.
 

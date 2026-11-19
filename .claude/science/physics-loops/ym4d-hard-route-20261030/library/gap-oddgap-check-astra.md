@@ -6,7 +6,7 @@ Terms: `odd[-_ ]gap`, `lambda_odd`, `VAR-SLAB`, `odd[- ]Poincar`,
 `force[- ]covariance`, `twist-eating`; then `toron`,
 `Fisher.{0,20}(flux|twist)`, `conditional cut gap`, `cut tensorization`,
 `commuting quadruples`. Refs: `origin/main`, `pr/10114`, `pr/10133`,
-`pr/10134`, `pr/10141` in `/Users/jonreilly/Projects/Physics`.
+`pr/10134`, `pr/10141` in `the main checkout`.
 Each search was one bounded `git grep`, piped to `head` (100 and 60 lines).
 The first completed across all refs; the second reached its output cap in
 pr/10114, so it proves no absence on the later refs.
@@ -476,7 +476,7 @@ of an order-one SU(2) odd gap, flux half or mass gap has been supplied.
 Only this report was added to the checkout. No source, registry, FINISH row,
 ledger or audit record was changed; no post, commit or push was made.
 The report remains uncommitted at the requested lane path. The source copy
-in `/Users/jonreilly/ym4d-lead/sa` has no Git metadata, so its revision is
+in `LOCAL:ym4d-lead/sa` has no Git metadata, so its revision is
 the user's supplied `31a47c543775`, not a locally verified HEAD. A lazy
 fetch for the absent pinned lab_ops blob failed because network resolution
 was unavailable; the existing origin/main tooling was copied to scratch
@@ -495,7 +495,7 @@ Codex's closing message:
 
 Repo search: searched the five requested refs and credited related prior work; no duplicate odd-gap result found.
 
-Wrote [gap-oddgap-check-astra.md](/Users/jonreilly/ym4d-lead/lane/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-oddgap-check-astra.md).
+Wrote [gap-oddgap-check-astra.md](LOCAL:ym4d-lead/lane/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-oddgap-check-astra.md).
 
 **HOLDS AFTER CORRECTION overall.** Gaussian and frozen-group calculations, R, CUT and RARE survive; GUIDE numbers reproduce. The unrestricted susceptibility-growth claim **FAILS**, with an explicit counterexample.
 

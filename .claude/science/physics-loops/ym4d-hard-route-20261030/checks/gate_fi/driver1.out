@@ -15,12 +15,12 @@ L=3 R1 halfcut2   seed 2 start Ratio_C 0.241 best Ratio_C 0.9378 Ratio_A 0.9258 
 L=3 R1 tri        seed 1 start Ratio_C 0.541 best Ratio_C 0.8940 Ratio_A 0.8939 w1 1.899 rhs_c 2.1239 min|m| 1.000 nrough 207 evals 599 38.5s
 L=3 R1 tri        seed 2 start Ratio_C 0.545 best Ratio_C 0.8941 Ratio_A 0.8936 w1 1.900 rhs_c 2.1253 min|m| 1.000 nrough 210 evals 601 38.6s
 Traceback (most recent call last):
-  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 174, in <module>
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 174, in <module>
     main()
-  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 160, in main
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 160, in main
     U0 = start(name, L, seed)
          ^^^^^^^^^^^^^^^^^^^^
-  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 60, in start
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 60, in start
     U[mu][sl] = h
     ~~~~~^^^^
 RuntimeError: The expanded size of the tensor (1) must match the existing size (2) at non-singleton dimension 2.  Target sizes: [2, 2, 1, 2, 4].  Tensor sizes: [2, 2, 2, 2, 4]

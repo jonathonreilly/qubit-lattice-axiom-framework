@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone commit: de5181bd72f54e89fd7411085e39524f751c384c (branch claude/ym4d-hard-route, /Users/jonreilly/ym4d-lead/clone, read-only).
+Clone commit: de5181bd72f54e89fd7411085e39524f751c384c (branch claude/ym4d-hard-route, the lead clone, read-only).
 Author: Claude Fable 5.2, max effort. FINISH row 894. Date 2026-11-13.
 Marks: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE (numeric, never discharges), OPEN.
 
@@ -208,7 +208,7 @@ Three readings. (i) Thickness in time alone (d = 1) leaves an area law; it only 
 
 ## Step 6b. GUIDE run: the smallest lattice with a toron valley and a wall (a run can refute or guide; it proves nothing)
 
-Script: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane894/scripts/toron_guide.py (numpy only, about 10 seconds, under 100 MB). Outputs: toron_guide_out16.txt and toron_guide_out_su2.txt in the lane894 directory. Criteria were written in the script header before the run.
+Script: SCRATCH/lane894/scripts/toron_guide.py (numpy only, about 10 seconds, under 100 MB). Outputs: toron_guide_out16.txt and toron_guide_out_su2.txt in the lane894 directory. Criteria were written in the script header before the run.
 Model. Wilson theory in 2+1 dimensions on a 1 x 1 spatial torus: two links U1, U2, one space-like plaquette x_P = (1/2) tr(U1 U2 U1^-1 U2^-1) = 1 - 2 sin^2(alpha_1) sin^2(alpha_2) sin^2(gamma), one time-like plaquette per link. T = K^(1/2) B K^(1/2) on conjugation-invariant functions. Flux sector: odd under U1 -> -U1. For SU(2) I use the orthonormal basis f_(j1,J)(alpha_1) f_(j2,J)(alpha_2) P_J(cos gamma) (K is diagonal there), truncated at jmax, with Gauss quadrature. For 2T and Q_8 the model is finite and exact. This is the lattice form of row 892's suggestion (L477): a model where both the wall (trace-zero holonomy) and the flip rate are computable.
 Criteria. C0 (norms of both ground vectors on the grid equal 1 to 1e-15): met. C1 (beta -> 0): SU(2) kappa 1.990, 2T 1.9994, Q_8 3.88 at beta 0.25, tending to 2, 2, 4: met. C2 (Lemma R, r_W <= 1): met in every row. C3 ((KE-ineq), i.e. lam_bar W <= 1): met in every row. C4 (jmax against jmax - 1): all digits shown agree.
 
@@ -260,7 +260,7 @@ Correction to Step 6c (labels). Corollary B6: only its first sentence is PROVED 
 
 ## Step 6d. GUIDE check of the identities on random chains
 
-Script: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane894/scripts/ident_guide.py (numpy, seconds). 600 random reversible chains with a positive, positive-definite kernel and an involution, 6 to 16 states, 286 of them near-bits (kappa < 1.2). Criteria written first. Result: Theorem A1 holds to 5e-15 for n = 1, 2, 3; no violation of Lemma R, Corollary A2 (a), (KE-ineq), Lemma B4 (a) and (b) (top level against the second and the third), Proposition B5 (no chain has two levels with x < 0.3048), Proposition D (random a, M). A run of this kind can only refute. It did not.
+Script: SCRATCH/lane894/scripts/ident_guide.py (numpy, seconds). 600 random reversible chains with a positive, positive-definite kernel and an involution, 6 to 16 states, 286 of them near-bits (kappa < 1.2). Criteria written first. Result: Theorem A1 holds to 5e-15 for n = 1, 2, 3; no violation of Lemma R, Corollary A2 (a), (KE-ineq), Lemma B4 (a) and (b) (top level against the second and the third), Proposition B5 (no chain has two levels with x < 0.3048), Proposition D (random a, M). A run of this kind can only refute. It did not.
 
 ## Step 7. Fact tests
 

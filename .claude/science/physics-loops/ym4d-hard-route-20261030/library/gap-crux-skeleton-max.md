@@ -6,7 +6,7 @@
 
 - Row: FINISH 863. Author: Claude Fable 5.2, max effort. Date: 2026-11-12.
 - Clone commit (read-only, branch claude/ym4d-hard-route): 2b6acd1732dde4e18293f0fe0e2814edbca36da3.
-- Sussman-Alpoge account: YM4_1400 at 2bc0658f91d2; sources on disk at /Users/jonreilly/ym4d-lead/sa (commit 31a47c543775). Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. Credit Balaban for his estimates.
+- Sussman-Alpoge account: YM4_1400 at 2bc0658f91d2; sources on disk at LOCAL:ym4d-lead/sa (commit 31a47c543775). Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. Credit Balaban for his estimates.
 - Marks used: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE (numeric, never discharges), OPEN.
 - Rule: one step per response; each step is appended here before the next starts.
 

@@ -15,7 +15,7 @@ it does not start that proof lane or the separately owned CO/OL, CM, or B99-W wo
 The referenced `docs/ai_methodology/SCIENCE_WORKFLOW.md` is absent in this checkout.
 Only this digest is edited. No editable prompt files change.
 
-Account files are in `/Users/jonreilly/ym4d-lead/sa/`. Their bytes match the source
+Account files are in `LOCAL:ym4d-lead/sa/`. Their bytes match the source
 identities recorded for `31a47c543775` in `library/lrb.md:16–21`:
 
 | Source | SHA-256 |
@@ -66,7 +66,7 @@ $G_0=(\Delta+D_URD_U^*+Q^*\ell^{-2}Q)^{-1}$.
 
 ### 1.2 OCR transcription and proof structure
 
-The task later explicitly names `/Users/jonreilly/ym4d-lead/papers/{cmp99b,cmp96,cmp99a,cmp102}.txt`.
+The task later explicitly names `LOCAL:ym4d-lead/papers/{cmp99b,cmp96,cmp99a,cmp102}.txt`.
 That specific source list was treated as a narrow exception to the preceding directory rule;
 only the named `cmp99b.txt`, `cmp96.txt`, and `cmp102.txt` were read. No surrounding
 papers directory was searched. `cmp99a.txt` was not needed. Bookkeeping hashes:

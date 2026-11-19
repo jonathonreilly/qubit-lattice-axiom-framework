@@ -1,7 +1,7 @@
 ## Repo search
 
 Searched `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141`
-in `/Users/jonreilly/Projects/Physics`, one bounded `git grep` at a time.
+in `the main checkout`, one bounded `git grep` at a time.
 Their respective revisions were `8920090caae2`, `f76f6c649cff`,
 `89faef229ff6`, `1e70c7211a2c`, `c73ad7b177d9`.
 The final exact-label/method query was

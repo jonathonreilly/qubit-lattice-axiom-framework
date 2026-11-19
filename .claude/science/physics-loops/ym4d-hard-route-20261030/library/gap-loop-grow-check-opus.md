@@ -1,7 +1,7 @@
 # Check of `library/gap-loop-grow-astra.md` (Codex gpt-6-astra max, FINISH row 767)
 
 - Checker: Claude Opus 5.5, one session, alone. Date: 2026-11-12.
-- Source: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-loop-grow-astra.md`, 672 lines, read in full.
+- Source: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-loop-grow-astra.md`, 672 lines, read in full.
 - Cross-provider for the note itself (Codex author, Claude checker). Not independent of the
   inputs `gap-seed-sc.md` (Claude Fable 5.2) and `gap-seed-sc-check.md`, `gap-loop-pos-check-opus.md`
   (Claude Opus 5.5): where this check leans on them it is same-provider.

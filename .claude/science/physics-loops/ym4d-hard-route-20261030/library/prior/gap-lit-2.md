@@ -64,7 +64,7 @@ Jacques Magnen, Vincent Rivasseau and Roland Sénéor (1993), “Construction of
 
 ## 9. Balaban: ultraviolet stability versus full-measure decay
 
-The local-paper set was read from `/Users/jonBridger/ym4d-papers/README.txt`. The formulas in the OCR of CMP 119 were checked against the corresponding PDF scan, rendered at `/tmp/gap-lit-2/pages/balaban119-p22.png`.
+The local-paper set was read from `LOCAL:ym4d-papers/README.txt`. The formulas in the OCR of CMP 119 were checked against the corresponding PDF scan, rendered at `/tmp/gap-lit-2/pages/balaban119-p22.png`.
 
 Balaban's CMP 119 (1988), “Convergent renormalization expansions for lattice gauge theories,” Corollary 3 (Ultraviolet Stability), p. 264, states under Theorem 1's assumptions that constants `E_-`,`E_+`, independent of the lattice mesh `η` and torus `T` but depending on the running coupling `g_k`, give
 

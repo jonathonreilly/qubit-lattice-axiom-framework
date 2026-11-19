@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone commit: bc7149dd9a822bc191600883b25a46c542b3b98b (branch claude/ym4d-hard-route, /Users/jonreilly/ym4d-lead/clone, read-only).
+Clone commit: bc7149dd9a822bc191600883b25a46c542b3b98b (branch claude/ym4d-hard-route, the lead clone, read-only).
 Author: Claude Fable 5.2, max effort. FINISH row 913. Date 2026-11-13.
 Marks: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE, OPEN.
 

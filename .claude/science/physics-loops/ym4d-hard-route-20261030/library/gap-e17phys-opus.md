@@ -1,6 +1,6 @@
 lead: anthropic/claude-opus-5-5/max laptop lane (FINISH row 844), AUTHOR
 written: 2026-11-13 UTC
-clone: /Users/jonreilly/ym4d-lead/clone at f1c86d81909cfef4bc95cfa244a7086b1f1599fb (2026-11-12 19:36 -0500), after `git pull --ff-only` ("Already up to date")
+clone: the lead clone at f1c86d81909cfef4bc95cfa244a7086b1f1599fb (2026-11-12 19:36 -0500), after `git pull --ff-only` ("Already up to date")
 
 # gap-e17phys-opus: (E17-phys), Lemma W, the implication to (FQ), and the port (SD-cyl)
 

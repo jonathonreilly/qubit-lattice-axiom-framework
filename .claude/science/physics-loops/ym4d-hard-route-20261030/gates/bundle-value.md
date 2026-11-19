@@ -6,7 +6,7 @@ Codex (gpt-6-astra); effort inherited from this session, not independently expos
 
 This checks the six candidates specified by the owner. It does not start a proof lane or repeat completed proof work. `library/prior/bundle-value.md` is absent at this revision. The registry assigns the six proofs and later-use work to their existing owners. This report reviews their value; it does not take over those obligations.
 
-`I`, `II`, and `III` mean `theorem_0_complete_account_raw_I.tex`, `_II.tex`, and `_III.tex`. `SA` means `YM4_sketch_500.tex`. These files are in `/Users/jonreilly/ym4d-lead/sa`, supplied as revision `31a47c543775`. That directory has no Git metadata, so the revision attribution is the owner's. All other citations are relative to this loop folder. Ranges refer to numbered source lines, not rendered pages.
+`I`, `II`, and `III` mean `theorem_0_complete_account_raw_I.tex`, `_II.tex`, and `_III.tex`. `SA` means `YM4_sketch_500.tex`. These files are in `LOCAL:ym4d-lead/sa`, supplied as revision `31a47c543775`. That directory has no Git metadata, so the revision attribution is the owner's. All other citations are relative to this loop folder. Ranges refer to numbered source lines, not rendered pages.
 
 The outline index guides the reads; its status labels are not evidence of a proof. The account's labels and the candidate check records are reported separately. A cited Balaban theorem is an imported result, even when the account relies on it. A proof of an implication does not supply its hypotheses at every later use.
 

@@ -1,5 +1,5 @@
 author: anthropic/claude-opus-5-5 (max effort), AUTHOR of FINISH row 843 (`gap-q8test-opus`), run 2026-11-13 on the lead's MacBook
-clone: /Users/jonreilly/ym4d-lead/clone at f1c86d81909cfef4bc95cfa244a7086b1f1599fb ("docs(ym4d): add rows 843-846, four more Opus max lanes"); pull --ff-only: already up to date
+clone: the lead clone at f1c86d81909cfef4bc95cfa244a7086b1f1599fb ("docs(ym4d): add rows 843-846, four more Opus max lanes"); pull --ff-only: already up to date
 
 # gap-q8test-opus: the SU(2)-specific inputs against Q_8 and 2T, and a low-spin charged filter
 

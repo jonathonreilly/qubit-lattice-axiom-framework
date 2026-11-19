@@ -10,7 +10,7 @@ This checks all 377 lines of `fc-r2.md`, after `fc-gate.md` §2 and `fc.md`. Ver
 
 `library/prior/fc-r2-gate.md` is absent. The registry assigns the parent problem to `AD-ST(2)`, owner `stage-claude`; this is its requested check, not a new attack on that owner's problem. The requested `docs/ai_methodology/SCIENCE_WORKFLOW.md` is absent from this checkout. No workflow, ledger, prompt, or source file is changed.
 
-The four files in `/Users/jonreilly/ym4d-lead/sa/` match the SHA-256 identities recorded in `library/arr.md:21–24` for `31a47c543775`. That directory has no Git metadata. Attribution: Sussman and Alpoge, with Claude and Codex as authors of the account; Balaban for the quoted results. Balaban's papers were not independently read. Citations below refer to the account's quotations and the repository's literature record.
+The four files in `LOCAL:ym4d-lead/sa/` match the SHA-256 identities recorded in `library/arr.md:21–24` for `31a47c543775`. That directory has no Git metadata. Attribution: Sussman and Alpoge, with Claude and Codex as authors of the account; Balaban for the quoted results. Balaban's papers were not independently read. Citations below refer to the account's quotations and the repository's literature record.
 
 The outline index was consulted before the corresponding bounded source excerpts. Source references below use `I`, `II`, and `SA` for CA-I, CA-II, and the outline. The absence of a supplier is not a counterexample to FC.
 

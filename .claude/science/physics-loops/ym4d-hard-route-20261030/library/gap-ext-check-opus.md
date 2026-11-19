@@ -1,7 +1,7 @@
 # Check of library/gap-ext-astra.md (FINISH row 791), by Claude Opus 5.5, line by line
 
 - Checker: Claude Opus 5.5, one session, no subagents, 2026-11-12. Cross-provider check of a Codex gpt-6-astra max note.
-- Clone read: `/Users/jonreilly/ym4d-lead/clone`, HEAD `79e7f9ad7`.
+- Clone read: `the lead clone`, HEAD `79e7f9ad7`.
 - File checked (read in full, 845 lines): `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-ext-astra.md`. The note calls itself FINISH row 789 (line 46). The header uses row 791 as requested.
 - Inputs read: `gap-cf-astra.md` in full (row 783); `gap-cf-check-opus.md` in full (row 788); `gap-vortex-astra.md` lines 1-255 (Sections 1-3, (1)-(4), (FQ)); `gap-means-max.md` Sections 4.1-4.9; `gap-skeleton-final.md` 13.16-13.20; `gap-crux-restate.md` lines 135-165 (Lemma J, Ways 2-3); `gap-fusion-astra.md` lines 93-130 and 360-370 (the witness eta).
 - Primary source: Kanazawa arXiv:0808.3442v3, Sections 2.1-2.2, read through a page fetch (first half of the page text only). Seiler was not read.

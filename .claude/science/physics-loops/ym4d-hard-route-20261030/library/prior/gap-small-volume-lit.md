@@ -24,15 +24,15 @@ The Sussman–Alpoge outline index has no entry for these finite-volume papers o
 
 ### Koller and van Baal, Nucl. Phys. B302 (1988) 1
 
-**Read status: NOT READ (pp. 1–64).** The author-hosted corrected PostScript copy and table supplement were downloaded to `/Users/jonBridger/ym4d-papers/dl-2026-11-11/koller-vanbaal-1988/`. This machine has no PostScript-to-PDF converter. `cupsfilter` has no PostScript filter, and Homebrew could not install Ghostscript because `/opt/homebrew` is not writable. I did not change system permissions. I rely only on van Baal's review when I describe this work.
+**Read status: NOT READ (pp. 1–64).** The author-hosted corrected PostScript copy and table supplement were downloaded to `LOCAL:ym4d-papers/dl-2026-11-11/koller-vanbaal-1988/`. This machine has no PostScript-to-PDF converter. `cupsfilter` has no PostScript filter, and Homebrew could not install Ghostscript because `/opt/homebrew` is not writable. I did not change system permissions. I rely only on van Baal's review when I describe this work.
 
 ### van Baal, hep-ph/0008206, §§2–4
 
-**Read status: READ IN FULL for the requested scope.** The complete §§2–4 (printed pp. 9–50) were read from the arXiv PDF in `/Users/jonBridger/ym4d-papers/dl-2026-11-11/van-baal-2000/`. Table 1 on p. 33 was checked against the rendered PDF page.
+**Read status: READ IN FULL for the requested scope.** The complete §§2–4 (printed pp. 9–50) were read from the arXiv PDF in `LOCAL:ym4d-papers/dl-2026-11-11/van-baal-2000/`. Table 1 on p. 33 was checked against the rendered PDF page.
 
 ### de Divitiis, Frezzotti, Guagnelli, and Petronzio, Nucl. Phys. B422 (1994) 382
 
-**Read status: READ IN FULL.** The entire article, pp. 1–17, was read from the arXiv PDF in `/Users/jonBridger/ym4d-papers/dl-2026-11-11/de-divitiis-et-al-1994/`. Pages 18–19 contain figures only. The article itself identifies its one-loop diagram and lattice-position sums as algebraic-program and numerical-program computations; I report those as the authors' calculations, not hand proofs.
+**Read status: READ IN FULL.** The entire article, pp. 1–17, was read from the arXiv PDF in `LOCAL:ym4d-papers/dl-2026-11-11/de-divitiis-et-al-1994/`. Pages 18–19 contain figures only. The article itself identifies its one-loop diagram and lattice-position sums as algebraic-program and numerical-program computations; I report those as the authors' calculations, not hand proofs.
 
 
 ## Periodic box: what is proved and what is computed

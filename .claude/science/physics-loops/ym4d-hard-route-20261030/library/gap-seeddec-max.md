@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone commit: c71f9498b5e32bae683db3ca593d7786a623f9be (clone /Users/jonreilly/ym4d-lead/clone, pulled --ff-only at start; read-only).
+Clone commit: c71f9498b5e32bae683db3ca593d7786a623f9be (clone the lead clone, pulled --ff-only at start; read-only).
 Author: Claude Fable 5.2, max effort. FINISH row 887. Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Labels: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE (numeric, never discharges), OPEN.
 

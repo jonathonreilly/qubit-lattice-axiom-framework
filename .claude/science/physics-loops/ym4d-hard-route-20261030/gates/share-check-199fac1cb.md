@@ -1,5 +1,5 @@
 # Row 75: share-check at 199fac1cb
-Provenance: OpenAI Codex; local configuration says model `gpt-6-astra`, effort `low` (read from `/Users/jonreilly/.codex/config.toml`; runtime overrides and backend identity are not exposed, so execution at row 75's requested `xhigh` is not certified); repository `199fac1cbf3a6a22aae818c020bede2e1a3c433a`; Sussman–Alpoge commit `31a47c543775`; research text, not an audit, granting no status. One Codex reader: (a) and (b) check Claude-authored notes; (d) checks Codex-authored examples and is not independent in model.
+Provenance: OpenAI Codex; local configuration says model `gpt-6-astra`, effort `low` (read from `LOCAL:.codex/config.toml`; runtime overrides and backend identity are not exposed, so execution at row 75's requested `xhigh` is not certified); repository `199fac1cbf3a6a22aae818c020bede2e1a3c433a`; Sussman–Alpoge commit `31a47c543775`; research text, not an audit, granting no status. One Codex reader: (a) and (b) check Claude-authored notes; (d) checks Codex-authored examples and is not independent in model.
 
 | Item | Research verdict | What can be shared |
 |---|---|---|

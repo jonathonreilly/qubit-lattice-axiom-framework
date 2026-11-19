@@ -1,6 +1,6 @@
 # Check of library/gap-rtail-astra.md (FINISH row 826), by Claude Opus 5.5, line by line
 
-Clone `/Users/jonreilly/ym4d-lead/clone` at commit `fa909a016a6e0414e4595f336cd64d6d8042f4b3` (pulled; already up to date).
+Clone `the lead clone` at commit `fa909a016a6e0414e4595f336cd64d6d8042f4b3` (pulled; already up to date).
 Lane D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 Target `D/library/gap-rtail-astra.md` (805 lines), read in full. Author: Codex gpt-6-astra max. The note names its own assignment FINISH row 823; this check is row 826.
 Context read: `D/library/gap-flat-astra.md` lines 60-459 and 590-649 ((F1)-(F23), (F27)-(F28), RTAIL); `D/library/gap-flat-check-opus.md` in full.

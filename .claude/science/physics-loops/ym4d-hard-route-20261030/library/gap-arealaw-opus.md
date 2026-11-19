@@ -1,6 +1,6 @@
 # Area law below beta_W = 2/3 from (AS-bg)? (FINISH row 825), by Claude Opus 5.5 (max effort), author
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, commit `da92c56e26bcd657a0fb53ae27ce7b782c74e7ba`
+- Clone: `the lead clone`, commit `da92c56e26bcd657a0fb53ae27ce7b782c74e7ba`
   (`git pull --ff-only` said "Already up to date"). During the run the clone advanced to
   `b9dabda264dd5a026c5c3b163fc69d7d30942a40` (rows 823-827, surface classes). `git diff --stat` shows the
   four library files read here unchanged between the two commits, and the new `gap-rtail-astra.md` has
@@ -17,7 +17,7 @@
     sha256 `b74d2ca0555260cf218fe15bb105f34faeaa6674fcbe87215d597a83c3a373f5`.
   - arXiv:2505.16585v3 (35 pages, dated 26 Sep 2025): `.../arealaw-dl/cns2505.3xhoOB/cns-2505.16585.pdf`,
     sha256 `d89d819ad27ccbdce3c92626a8ceb687b589d08ab3cf045871ce1dc21bc2177d`.
-  - Here `...` is `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad`.
+  - Here `...` is `SCRATCH`.
   - The Read tool could not render PDF pages (pdftoppm is not installed). I compiled a PDFKit text
     extractor in a separate directory (`.../scratchpad/arealaw-tools/`), passed each PDF path as an
     argument, and read the text: 2509.04688 all 8 pages, 2505.16585 pages 1-10.

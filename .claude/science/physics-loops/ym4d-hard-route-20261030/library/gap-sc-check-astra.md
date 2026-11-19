@@ -33,7 +33,7 @@ the requested full repository supplied the following refs:
 
 ### Search receipts and reuse
 
-The full-repository searches used `/Users/jonreilly/Projects/Physics` and
+The full-repository searches used `the main checkout` and
 `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141`, with `*.md`
 and `*.tex`. Each command was bounded with `head` and run separately.
 

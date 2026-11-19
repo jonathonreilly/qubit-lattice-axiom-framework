@@ -2,7 +2,7 @@
 
 Model: Codex, gpt-6-luna high, as assigned in FINISH row 711. Literature report only. It proves no mathematical statement and grants no proof, audit, or physics status.
 
-Coverage: the six requested topics; selected outline/account index entries; abstracts and public metadata pages read with `curl`. I did not read PDFs, pay for access, sign in, or use computed evidence. I did not read the Balaban PDFs in `/Users/jonBridger/ym4d-papers`. Any statement not visible on a fetched page is marked NOT READ. This search is not an exhaustive literature census.
+Coverage: the six requested topics; selected outline/account index entries; abstracts and public metadata pages read with `curl`. I did not read PDFs, pay for access, sign in, or use computed evidence. I did not read the Balaban PDFs in `LOCAL:ym4d-papers`. Any statement not visible on a fetched page is marked NOT READ. This search is not an exhaustive literature census.
 
 ## Repo search
 

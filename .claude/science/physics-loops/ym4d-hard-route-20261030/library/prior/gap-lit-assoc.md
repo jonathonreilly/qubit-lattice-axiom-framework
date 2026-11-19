@@ -77,7 +77,7 @@ CA-I index for items 4.12–4.19 was needed by this literature-only item.
 
 The repository’s adjacent prior literature notes were consulted before new
 searches. Previously read results cited below are reused as such. The local
-paper directory `/Users/jonBridger/ym4d-papers` was not present, so no contents
+paper directory `LOCAL:ym4d-papers` was not present, so no contents
 from it were available. One direct PDF fetch attempt stopped at a TLS
 certificate refusal; it was not bypassed. Primary pages and open HTML/PDF views
 were used where available.

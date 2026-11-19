@@ -4,7 +4,7 @@
 
 Provenance: FINISH row 464, GW1. Repository source revision
 `0ec6a547f9dc7701c1e275ca8fd4b7d5fab90c6b`. Account and outline source
-revision: `31a47c543775`, in `/Users/jonreilly/ym4d-lead/sa/`.
+revision: `31a47c543775`, in `LOCAL:ym4d-lead/sa/`.
 All source line numbers below refer to those revisions.
 This is a written port of the account's (J7), conditional on the named
 PI and GW imports. It is research text, not an audit or a status grant.

@@ -15,8 +15,8 @@ All arguments below are written mathematics. No numerical test discharges a step
 `CA-I` and `CA-II` denote `theorem_0_complete_account_raw_I.tex`
 and `theorem_0_complete_account_raw_II.tex` at that revision.
 `N` denotes `YM4_1400.tex`, supplied at `2bc0658f9`.
-The older files are in `/Users/jonreilly/ym4d-lead/sa/`.
-The new outline is [YM4_1400.tex](</private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/sa1400/YM4_1400.tex>).
+The older files are in `LOCAL:ym4d-lead/sa/`.
+The new outline is [YM4_1400.tex](<SCRATCH/sa1400/YM4_1400.tex>).
 References below are source line numbers.
 
 The prior digest was read first and in full. Its completed algebra is reused.

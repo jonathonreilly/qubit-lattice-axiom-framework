@@ -21,7 +21,7 @@ the prescribed-assignment transfer belongs to CO/`ol`. This digest does not atta
 The workflow file named by AGENTS.md is absent in this checkout. No editable prompt file changes.
 Only this digest is written. No proof lane, fetch, audit, status edit, commit, or outward post is started.
 
-The source directory `/Users/jonreilly/ym4d-lead/sa/` is a snapshot, not a Git checkout.
+The source directory `LOCAL:ym4d-lead/sa/` is a snapshot, not a Git checkout.
 SHA-256 matches the recorded identities of revision `31a47c543775`:
 
 | File | SHA-256 |

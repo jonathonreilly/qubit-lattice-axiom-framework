@@ -66,7 +66,7 @@ explicitly does not assert a mass gap. Berg and Billoire (1983), and
 Morningstar and Peardon (1999),
 are the task's spectroscopy precedents; no uninspected numerical or
 theorem claim from those papers is used. The permitted paper directory
-`/Users/jonBridger/ym4d-papers` was absent.
+`LOCAL:ym4d-papers` was absent.
 
 ### Checkpoint
 

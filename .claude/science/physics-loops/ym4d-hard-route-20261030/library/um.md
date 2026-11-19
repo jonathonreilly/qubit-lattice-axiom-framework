@@ -58,9 +58,9 @@ including rendered pages where OCR loses factors. CMP 109 (3.13)–(3.14),
 route. In particular, (4.4) includes **both** \(P_1A\) and
 \(\Delta A\). A potential-only bound does not suffice.
 The primary scans used are
-[CMP 109, 249–301](/Users/jonBridger/ym4d-papers/balaban_cmp109_249.pdf),
-[CMP 99, 389–434 (99b)](/Users/jonBridger/ym4d-papers/balaban_cmp99_389.pdf),
-and [CMP 119, 243–285](/Users/jonBridger/ym4d-papers/balaban_cmp119_243.pdf).
+[CMP 109, 249–301](LOCAL:ym4d-papers/balaban_cmp109_249.pdf),
+[CMP 99, 389–434 (99b)](LOCAL:ym4d-papers/balaban_cmp99_389.pdf),
+and [CMP 119, 243–285](LOCAL:ym4d-papers/balaban_cmp119_243.pdf).
 Page references mean printed page numbers.
 
 The pinned YM3 account, `YM3/YM3_I.tex` 38427–38508, proves a

@@ -3,7 +3,7 @@
 # Reading check: out-m3.md §6.3, the remaining rows
 
 Checker: Claude (Opus 5.5), one line-by-line reading of the authors' text.
-Source: CA-I, CA-II at `31a47c543775`, local copies in `/Users/jonreilly/ym4d-lead/sa/`.
+Source: CA-I, CA-II at `31a47c543775`, local copies in `LOCAL:ym4d-lead/sa/`.
 Note: `library/out-m3.md`, §6.3 table, lines 1179–1198.
 This is one reading check. It does not judge the layer premises or re-review the main proof.
 

@@ -1,11 +1,11 @@
 # FINISH row 916: links (c) and (e) of the chain (SEED-FP) to (GAP), and (ONE-K)
 
 Author: Claude Opus 5.5 (max effort), FINISH row 916. Work by hand, no subagents.
-Clone: /Users/jonreilly/ym4d-lead/clone at commit 32d4b2c3fdcd5d4d64cb641fca9629e067c611bd
+Clone: the lead clone at commit 32d4b2c3fdcd5d4d64cb641fca9629e067c611bd
 (2026-11-13 14:03:51 -0500, "docs(ym4d): record row 913 ...; add rows 914-916").
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
-Sources on disk: SA outline /Users/jonreilly/ym4d-lead/sa/YM4_sketch_500.tex ("SA Lnnn");
-account /Users/jonreilly/ym4d-lead/sa1400/YM4_1400.tex ("CA Lnnn").
+Sources on disk: SA outline LOCAL:ym4d-lead/sa/YM4_sketch_500.tex ("SA Lnnn");
+account LOCAL:ym4d-lead/sa1400/YM4_1400.tex ("CA Lnnn").
 The outline and the account are the work of Ethan Sussman and Levent Alpoge. Text here is by Claude and Codex lanes.
 Tags: PROVED (this file), READ (path:line), ARGUED, OPEN.
 
@@ -33,7 +33,7 @@ Tags: PROVED (this file), READ (path:line), ARGUED, OPEN.
   (e) (d) supplies (P1)-(P4), (H2), (TOT) of Proposition P' (ARGUED; cites gap-os-equiv.md L61);
   (f) -> (GAP) (ARGUED composition).
 - Row 837 cites "CA-I" = theorem_0_complete_account_raw_I.tex at 31a47c543775. This lane's brief names the account file
-  /Users/jonreilly/ym4d-lead/sa1400/YM4_1400.tex. So CA-I line numbers in row 837 need not match YM4_1400.tex.
+  LOCAL:ym4d-lead/sa1400/YM4_1400.tex. So CA-I line numbers in row 837 need not match YM4_1400.tex.
   This file cites "CA L" for YM4_1400.tex and re-locates each statement there (Step 3).
 - Three gaps in (c) as written, to be checked in Step 4:
   (c1) the limit of row 703 is a limit of the bare lattice state at FIXED spacing a_K as the torus grows; the account's

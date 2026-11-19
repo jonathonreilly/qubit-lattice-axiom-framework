@@ -1,6 +1,6 @@
 # Check of library/gap-kanazawa-astra.md (FINISH row 801), by Claude Opus 5.5, line by line
 
-Clone: `/Users/jonreilly/ym4d-lead/clone`. HEAD was `e9dd2626058e922b2ec1ac468317b1ca1e3f98c6`
+Clone: `the lead clone`. HEAD was `e9dd2626058e922b2ec1ac468317b1ca1e3f98c6`
 at the start and `33a4d3b457825282502b78bdf6746dffa94557ff` at the end. `git diff --stat`
 between them shows no change under the lane `library/`. Target last touched by
 `f91f31f354`; sha256 prefix `e26e1c16f9a22d3d`; 734 lines, read in full.

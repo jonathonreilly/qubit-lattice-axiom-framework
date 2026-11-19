@@ -1,7 +1,7 @@
 # Repo search
 
 Searched `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and
-`pr/10141` in `/Users/jonreilly/Projects/Physics`, using bounded
+`pr/10141` in `the main checkout`, using bounded
 `git grep -n -i -E ... -- '*.md' '*.tex' | head` calls. Terms:
 `gap-seed-shape`, `gap-finishline`, `gap-crux-core-max`, `SEED-FP`,
 `slab.to.cube`, and word-bounded `Theorem SH`. The first substring

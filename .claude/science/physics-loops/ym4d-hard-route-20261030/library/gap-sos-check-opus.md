@@ -1,6 +1,6 @@
 # Check of library/gap-sos-astra.md (FINISH row 830), by Claude Opus 5.5, line by line
 
-Clone `/Users/jonreilly/ym4d-lead/clone` at commit `18e8aa1c9bda55d00d769d159bd3c5a7164c6556` (pulled; already up to date). The note entered the clone in `2a10cd8ef`.
+Clone `the lead clone` at commit `18e8aa1c9bda55d00d769d159bd3c5a7164c6556` (pulled; already up to date). The note entered the clone in `2a10cd8ef`.
 Lane D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 Target `D/library/gap-sos-astra.md` (655 lines), read in full. Author: Codex gpt-6-astra max. The note names its own assignment FINISH row 827; this check is row 830.
 Context read: `D/library/gap-flat-astra.md` (F8)-(F11) at lines 175-240; `D/library/gap-flat-check-opus.md` in full; `D/library/gap-rtail-check-opus.md` in full; `D/library/gap-rtail-astra.md` (R25)-(R26) at lines 610-645 and the anchors of (R12), (R19).

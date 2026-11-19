@@ -4,7 +4,7 @@
 
 Clone commit: 689d3807cb7fb767cb6150af0185337209243eff (branch claude/ym4d-hard-route, pulled --ff-only 2026-11-13, already up to date).
 Author: Claude Fable 5.2, max effort. FINISH row 899. Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
-Sussman-Alpoge sources: /Users/jonreilly/ym4d-lead/sa (commit 31a47c543775). Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. Balaban for his estimates.
+Sussman-Alpoge sources: LOCAL:ym4d-lead/sa (commit 31a47c543775). Credit: Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text. Balaban for his estimates.
 
 ## Target statement
 
@@ -388,8 +388,8 @@ So the escape "thicken the slab" survives W1 exactly from the thickness at which
 ### 8.3 GUIDE run on the ladder (a run can refute or guide; it proves nothing)
 
 **What was run.** Two scripts, numpy 2.4.4, one thread, lowest priority, started only when the 1-minute load was below 8 (5.9 and 5.1 at start). Not in git.
-- `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane899/scripts/slab_ladder_guide.py` (sha256 d64561fa3681dcd7...), mode `quick`, output `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane899/out/slab_ladder_quick.out` (sha256 2e7b621ffdcbe41f...), 10 s.
-- `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane899/scripts/slab_ladder_run2.py` (sha256 f4e75dd668770050...), output `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane899/out/slab_ladder_run2.out` (sha256 aa0456c5f9d5bb18...), 471 s. That is longer than the few minutes I had planned (my estimate was 330 s). Memory was not measured; the lattice arrays are below 2 MB.
+- `SCRATCH/lane899/scripts/slab_ladder_guide.py` (sha256 d64561fa3681dcd7...), mode `quick`, output `SCRATCH/lane899/out/slab_ladder_quick.out` (sha256 2e7b621ffdcbe41f...), 10 s.
+- `SCRATCH/lane899/scripts/slab_ladder_run2.py` (sha256 f4e75dd668770050...), output `SCRATCH/lane899/out/slab_ladder_run2.out` (sha256 aa0456c5f9d5bb18...), 471 s. That is longer than the few minutes I had planned (my estimate was 330 s). Memory was not measured; the lattice arrays are below 2 MB.
 - A first launch failed before any sweep (python was started with -I, which hides the user's numpy). No result came from it.
 Model: Wilson SU(2), heat bath, the slab of 8.1 with T layers between two flat slices, space L^3 periodic. s(x) is the wall-to-wall line, G(r) = <s(x) . s(x + r e_i)> is the wall-to-wall rectangle T x r, m2 = <abs(sum s)^2>/L^6, chi = m2 L^3.
 

@@ -8,7 +8,7 @@ Codex; model variant and effort not independently exposed; checkout `3c3467adc33
 
 `library/prior/lsc-value.md` is absent. The registry's LSC row belongs to `lsc` and records the completed conditional proof. FINISH row 318 records the completed NRM correction; row 352 owns its proposed LSC write-up. This report does not restart either task or take over later-use repairs.
 
-`I`, `II`, `III` denote the three complete-account TeX files; `SA` denotes `YM4_sketch_500.tex`, in `/Users/jonreilly/ym4d-lead/sa`. Their SHA-256 hashes match all four pinned-source records in `library/mu.md:17–20`, attributed to `31a47c543775`. References below are source lines. Credit Sussman and Alpoge, with Claude and Codex as authors of their text, and Balaban for the imported construction.
+`I`, `II`, `III` denote the three complete-account TeX files; `SA` denotes `YM4_sketch_500.tex`, in `LOCAL:ym4d-lead/sa`. Their SHA-256 hashes match all four pinned-source records in `library/mu.md:17–20`, attributed to `31a47c543775`. References below are source lines. Credit Sussman and Alpoge, with Claude and Codex as authors of their text, and Balaban for the imported construction.
 
 The outline index, neighbouring rows and obligations guided bounded source reads. Its status words are not proof evidence. Balaban's papers were not independently inspected; only this checkout's literature record and the account's quotations were available. The checkout lacks `docs/ai_methodology/SCIENCE_WORKFLOW.md`. No numerical calculation or machine verification discharges any step here.
 

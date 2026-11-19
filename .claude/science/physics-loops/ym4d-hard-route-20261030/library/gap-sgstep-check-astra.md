@@ -10,7 +10,7 @@ The requested prior note `library/prior/gap-sgstep-check-astra.md` is absent.
 `hypercontract`, `HC-vac`, or `LSI-vac`. FINISH rows 944–945 assign this
 author/check pair. This is a check of row 944, not a second attack on row 941.
 
-Search in `/Users/jonreilly/Projects/Physics`: refs `origin/main`, `pr/10114`,
+Search in `the main checkout`: refs `origin/main`, `pr/10114`,
 `pr/10133`, `pr/10134`, `pr/10141`; terms `SG-step|SGC|HC2|sub.?Gaussian|
 hypercontractiv|gap-sgstep`. The first pass reached its 100-line cap, partly
 because `HC2` also matches unrelated HC20–HC29 labels. It is discovery only.

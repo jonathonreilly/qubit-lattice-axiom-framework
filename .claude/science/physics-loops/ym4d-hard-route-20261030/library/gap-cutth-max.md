@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone commit: f507af666db1226a845f5ef08583a75d7f984564 (/Users/jonreilly/ym4d-lead/clone, pulled 2026-11-13, already up to date).
+Clone commit: f507af666db1226a845f5ef08583a75d7f984564 (the lead clone, pulled 2026-11-13, already up to date).
 Author: Claude Fable 5.2, max effort. Row 910. Labels: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE, OPEN.
 
 ## Target

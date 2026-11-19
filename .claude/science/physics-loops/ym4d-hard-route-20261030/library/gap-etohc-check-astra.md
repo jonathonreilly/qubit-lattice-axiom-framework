@@ -2,7 +2,7 @@
 
 Check provenance: OpenAI / gpt-6-astra / xhigh; row 942; 2026-11-14; checkout `f529763f248c83b2bb3a7470790efa98628fd7d1`. Research text, not an audit; grants no status.
 
-Terms: `E-to-HC|HC-vac|LSI-vac|SG-step|Hopf.Lax|Bobkov|sub.Gaussian.*score`: no hits on the five refs below. Method search: `hypercontract|log.Sobolev|Harnack|Nelson.*exponent`. Both used `git grep` over Markdown and TeX in `/Users/jonreilly/Projects/Physics`, piped to `head`. The broad line search reached its cap; it is discovery only. A completed filename pass remained below its cap of 160. Bounded source reads followed.
+Terms: `E-to-HC|HC-vac|LSI-vac|SG-step|Hopf.Lax|Bobkov|sub.Gaussian.*score`: no hits on the five refs below. Method search: `hypercontract|log.Sobolev|Harnack|Nelson.*exponent`. Both used `git grep` over Markdown and TeX in `the main checkout`, piped to `head`. The broad line search reached its cap; it is discovery only. A completed filename pass remained below its cap of 160. Bounded source reads followed.
 
 | Ref | Revision |
 |---|---|

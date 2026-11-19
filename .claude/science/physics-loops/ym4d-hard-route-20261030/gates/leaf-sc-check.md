@@ -12,7 +12,7 @@ PI's whole-action convention. The note claims nothing beyond its
 restricted scope. Four small repairs are listed. None changes a result.
 
 Sources read: Y = scratchpad `sa1400/YM4_1400.tex`. SA =
-`/Users/jonreilly/ym4d-lead/sa/YM4_sketch_500.tex`. The note's `/tmp`
+`LOCAL:ym4d-lead/sa/YM4_sketch_500.tex`. The note's `/tmp`
 copies are gone. Every cited line range matched its content.
 Library files read at the cited lines: out-pi, b98p5, walks-gw, gw1,
 b99-w, print-inverse-r2, hstep-tree §4, a41-avg, gates/a41-avg-check.

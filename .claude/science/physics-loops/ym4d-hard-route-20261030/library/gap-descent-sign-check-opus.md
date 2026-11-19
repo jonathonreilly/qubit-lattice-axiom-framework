@@ -104,7 +104,7 @@ By hand, in the KIN-7 limit (beta_M -> infinity at fixed beta_L):
   (1 - 12 eta)(1 - 4 eta) = 1 - 16 eta <= 1 - 12 eta. Correct.
 
 GUIDE check at finite beta_M (my own 5 x 5 script, not the row's;
-`/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/gds-check/q8_dil.py`,
+`SCRATCH/gds-check/q8_dil.py`,
 one thread). It reproduces row 1076's dip: at beta_M = 2.4, beta_L = 3.5,
 m(infinity) = 1.955630 and m(beta_L) = 1.916303 (row 1076 L410: 1.9556 and
 1.9162). The DIL bound there is -0.1191, below the true -0.0393. At
@@ -478,7 +478,7 @@ scoped). No item of C7 claims a negative beyond its method.
 
 Read in full: `runs/gap-descent-sign/su2box.py` (124 lines),
 `n2_reduction.py` (31 lines), all ten logs. My scripts are in
-`/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/gds-check/`
+`SCRATCH/gds-check/`
 (`json_check.py`, `indep_checks.py`; copies of the row's scripts in
 `rerun/`). All runs: one thread, one job at a time, largest matrix 381 x 381
 for the reruns. Every result below is GUIDE grade.

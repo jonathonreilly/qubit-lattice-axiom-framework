@@ -4,7 +4,7 @@ Codex (gpt-6-astra), reasoning effort requested by FINISH row 396: xhigh; checko
 
 ## 1. Sources and scope
 
-This checks `library/cr-claude.md`, FINISH row 348, for row 396. References to “note” are its line numbers at this checkout. CA-I and SA mean the supplied raw account and outline at `31a47c543775`, in `/Users/jonreilly/ym4d-lead/sa`. That directory has no Git metadata; the upstream revision is the supplied attribution, not a locally verified HEAD. Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, and Tadeusz Balaban.
+This checks `library/cr-claude.md`, FINISH row 348, for row 396. References to “note” are its line numbers at this checkout. CA-I and SA mean the supplied raw account and outline at `31a47c543775`, in `LOCAL:ym4d-lead/sa`. That directory has no Git metadata; the upstream revision is the supplied attribution, not a locally verified HEAD. Credit Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, and Tadeusz Balaban.
 
 `library/prior/cr-gate.md` does not exist. I read `library/prior/cr-claude.md` first after that existence check, and used the full-read index for source navigation. Its completed inside, anchoring, response-identity and conditional-comparison work is not re-proved here. The registry's CR row is OPEN and owned by `cr-claude`; this is the requested check of that owner's note, not another proof lane. The checkout lacks the generic `docs/ai_methodology/SCIENCE_WORKFLOW.md`; the task's specific research instructions govern this check.
 

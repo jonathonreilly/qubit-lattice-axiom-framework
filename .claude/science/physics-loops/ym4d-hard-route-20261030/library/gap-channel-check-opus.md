@@ -1,7 +1,7 @@
 # Line-by-line check of `library/gap-channel-astra.md`
 
 Checker: Claude Opus 5.5 (cross-provider; the note's author is Codex gpt-6-astra max).
-Source: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-channel-astra.md`, 1010 lines, read in full.
+Source: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-channel-astra.md`, 1010 lines, read in full.
 Inputs read: `gap-transfer.md` N.1–N.8, Sections 8, 9, 10; `gap-flux-exercise.md` 3.0, 3.1, 8.2–8.4;
 `gap-es1-opus.md` Sections 1, 2, 3, 5, 6; `gap-es1-opus-check.md` verdicts and Section 1;
 `gap-crux-fp.md` 3b.3; `gap-means-max.md` line 150 ((TM-tw)) and Step 0 of Theorem R.

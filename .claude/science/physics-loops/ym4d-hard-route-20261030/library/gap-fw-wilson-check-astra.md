@@ -1,6 +1,6 @@
 ## Repo search
 
-Refs searched in `/Users/jonreilly/Projects/Physics`: `origin/main`,
+Refs searched in `the main checkout`: `origin/main`,
 `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141`.
 Initial terms: `CUT-TH`, `WALL-2`, `gap-fw-wilson`, `ring deficit`,
 `wall domination`, and `free.wall.{0,80}doubl`. The broad `WALL-2` term

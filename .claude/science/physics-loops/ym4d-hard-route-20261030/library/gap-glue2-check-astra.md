@@ -1,6 +1,6 @@
 ## Repo search
 
-Refs searched in `/Users/jonreilly/Projects/Physics`: `origin/main` = `4d88da5504d356762deb6b1a1c2695336af9fb81`; `pr/10114` = `f76f6c649cff7dffbab664d8976e680e8f287fe9`; `pr/10133` = `89faef229ff6e6bde42baad15ed8270c2f4087d8`; `pr/10134` = `1e70c7211a2cdbc39001e619f1dd89db45e25851`; `pr/10141` = `c73ad7b177d94f89ff37b77386936e3d52b48b05`.
+Refs searched in `the main checkout`: `origin/main` = `4d88da5504d356762deb6b1a1c2695336af9fb81`; `pr/10114` = `f76f6c649cff7dffbab664d8976e680e8f287fe9`; `pr/10133` = `89faef229ff6e6bde42baad15ed8270c2f4087d8`; `pr/10134` = `1e70c7211a2cdbc39001e619f1dd89db45e25851`; `pr/10141` = `c73ad7b177d94f89ff37b77386936e3d52b48b05`.
 
 The completed exact-target query was `gap-glue2|cut.and.reglue|Schroedinger.bridge|seam.{0,50}indistinguish|Proposition INS([^a-z]|$)`, using `git grep -n -i -E` on all five refs, `*.md`, `*.tex`, head 30: **no hits**. Earlier broad searches for thermal traces, vacuum projectors and `S_ev` hit their caps or unrelated substrings; they are locators only. A scoped follow-up for `vacuum.*projector|seam.*covariance|swap.*trace|thermal sum` found the following useful earlier method, outside this lane.
 

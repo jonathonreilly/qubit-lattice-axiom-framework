@@ -7,7 +7,7 @@ Provenance: Claude Opus 5.5 (claude-opus-5-5). One reading by one model. Not an 
 **Sources.**
 - `library/lrb.md` (862 lines, SHA-256 `23b7d710…2552969d`). The body is the 847-line text that the gate checked. Lines 849–862 are the change log with the eight one-sentence clarifications that answer gate findings 1–8.
 - `gates/lrb-gate.md`: first failing step none; findings 1–8, all repairable.
-- The account at `31a47c543775`: CA-I, CA-II and the outline `YM4_sketch_500.tex` in `/Users/jonreilly/ym4d-lead/sa/`.
+- The account at `31a47c543775`: CA-I, CA-II and the outline `YM4_sketch_500.tex` in `LOCAL:ym4d-lead/sa/`.
 
 Account ranges read for this check: CA-I 1490–1497, 4860–4885, 5125–5135, 5154–5194, 5948–5956, 6095–6154, 6380–6388, 6959–6984, 7303–7315, 7845–7846, 7990–8108, 8108–8395, 8555–8600, 8634–8640, 8646–8706, 8733–8740, 8761–8837 (search), 9200–9353 (search), and single lines 4636, 7474, 7491, 7530, 7540, 8653–8654, 8678–8681, 9665–9668, 9762–9767, 9774–9777. CA-II 3528–3570, 3596–3626, 3706–3724. Outline 14155–14218, 14251–14270. No Balaban page image was read: no step of the note rests on a page that this check could test against an image. CMP 116 is not in the local folder (gate, "Quotations").
 

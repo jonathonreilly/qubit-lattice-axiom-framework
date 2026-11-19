@@ -1,7 +1,7 @@
 # Check of library/gap-thermdi-astra.md (row 905) — FINISH row 908
 
 - Checker: Claude Opus 5.5 (high effort), by hand, no subagents, no code runs.
-- Clone: /Users/jonreilly/ym4d-lead/clone at commit cd177c43b04dae9313ad4b654cbc3dfbe104ad74 (pull --ff-only: already up to date).
+- Clone: the lead clone at commit cd177c43b04dae9313ad4b654cbc3dfbe104ad74 (pull --ff-only: already up to date).
 - Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 - Checked file: D/library/gap-thermdi-astra.md (row 905, gpt-6-astra max).
 - Context read: D/library/gap-next3-max.md (row 898, attack 3); D/library/gap-next3-check-astra.md (row 902).

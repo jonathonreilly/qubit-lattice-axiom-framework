@@ -1,7 +1,7 @@
 # Check of gap-exc-astra.md (FINISH row 881)
 
 - Checker: Claude Opus 5.5 (high effort), by hand, no subagents.
-- Clone: /Users/jonreilly/ym4d-lead/clone at ff7f7880547a6684c5c117c5a54fc88fe7a8b79a
+- Clone: the lead clone at ff7f7880547a6684c5c117c5a54fc88fe7a8b79a
 - Checked: D/library/gap-exc-astra.md (row 875, OpenAI Codex gpt-6-astra, max)
 - Against: D/library/gap-filter-ls-opus.md (row 872), D/library/gap-filter-ls-check-astra.md (row 873)
 - D = .claude/science/physics-loops/ym4d-hard-route-20261030

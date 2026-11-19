@@ -1,6 +1,6 @@
 ## Repo search
 
-Searched `/Users/jonreilly/Projects/Physics` with bounded `git grep -n -i -E`,
+Searched `the main checkout` with bounded `git grep -n -i -E`,
 over `*.md` and `*.tex`, on `origin/main`, `pr/10114`, `pr/10133`,
 `pr/10134`, and `pr/10141`. The specific label query
 `UNIV-K|ONE-K([^[:alpha:]]|$)|MAPCONV|DENS-K|VAC-ID|cutoff.universality`
@@ -57,7 +57,7 @@ two-torus reduction and corrections. The requested prior-check file is absent.
 
 Pinned target: `gap-univk-opus.md`, SHA-256
 `998c6331dce711738061d63d047dd2ab292d59fefbf352dccb9f6a1c8336d923`.
-YM4_1400 source: `/Users/jonreilly/ym4d-lead/sa1400/YM4_1400.tex`, SHA-256
+YM4_1400 source: `LOCAL:ym4d-lead/sa1400/YM4_1400.tex`, SHA-256
 `222ef1bd4b668f88fab33f6edd131b4308fc897eefb112ac5898b8730549f178`.
 Its line numbers below are literal file lines, not PDF page numbers.
 The outline source is the supplied 31a47c543775 copy under `sa/`.

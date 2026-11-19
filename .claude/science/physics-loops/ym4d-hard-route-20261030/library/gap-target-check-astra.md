@@ -5,7 +5,7 @@ Terms: `Ky Fan`, `L[oö]wner.Heinz`, `Loewner.Heinz`, `Cordes`,
 `Bessel.{0,60}monoton`, `I_n/I_1`, `log.majori[sz]`,
 `Schwinger.Dyson.{0,50}plaquette`, `plaquette.{0,50}loop.equation`,
 and `force[ -]form\b`. Both searches covered Markdown and TeX on all
-five requested refs in `/Users/jonreilly/Projects/Physics`, including
+five requested refs in `the main checkout`, including
 outside this lane. They returned 49 and 26 lines, below their caps of 100.
 
 | Ref | Commit read |

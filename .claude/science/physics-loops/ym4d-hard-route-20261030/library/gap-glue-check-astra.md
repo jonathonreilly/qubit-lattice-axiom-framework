@@ -18,7 +18,7 @@ assignment. Row 895 owns the author text; row 896 explicitly requests this
 check. No new proof lane or reassignment is made.
 
 The requested five refs were searched using bounded `git grep -n -i -E`
-commands over `*.md` and `*.tex` in `/Users/jonreilly/Projects/Physics`:
+commands over `*.md` and `*.tex` in `the main checkout`:
 
 | Ref | Revision read |
 |---|---|

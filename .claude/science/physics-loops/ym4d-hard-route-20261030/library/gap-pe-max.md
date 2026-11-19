@@ -3,7 +3,7 @@
 (file seeded by the lead; the author writes below)
 
 Row 862. Author: Claude Fable 5.2 (max effort). Date: 2026-11-12.
-Clone commit: 2b6acd1732dde4e18293f0fe0e2814edbca36da3 (/Users/jonreilly/ym4d-lead/clone, pulled --ff-only, already up to date).
+Clone commit: 2b6acd1732dde4e18293f0fe0e2814edbca36da3 (the lead clone, pulled --ff-only, already up to date).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Marks: PROVED (mine, by hand), READ (path and line), ARGUED, GUIDE, OPEN.
 
@@ -682,7 +682,7 @@ or work in the flip-even sector (then Theorem A serves it for M <= M_1, and (A1-
 
 ### Step 7b. GUIDE run (discharges nothing)
 
-Script and output: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane862/scripts/guide_h.py
+Script and output: SCRATCH/lane862/scripts/guide_h.py
 and guide_h.out in the same directory. Run on the MacBook, numpy, one BLAS thread, 5.5 s, peak 177 MB.
 It builds D_0^F, D_1^F and the stack form sum_p w_p |D_1 Z|^2 on fibre-transverse fields from the definitions of CH:35-47
 (signs of CH:35), for (n, M, time slices) = (2, 4, 3), (2, 6, 4), (3, 4, 3). Criteria were written before the run.

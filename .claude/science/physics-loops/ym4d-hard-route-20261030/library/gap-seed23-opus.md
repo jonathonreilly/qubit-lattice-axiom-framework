@@ -1,6 +1,6 @@
 # The glue half from slabs? Tree gauges give the seed below beta_W = 1/3 (FINISH row 835), by Claude Opus 5.5 (max effort), author
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, commit `83f6ffafe92a18e8d6d415b47453e830424e4160`
+- Clone: `the lead clone`, commit `83f6ffafe92a18e8d6d415b47453e830424e4160`
   (`git pull --ff-only`: "Already up to date").
 - Lane directory D = `.claude/science/physics-loops/ym4d-hard-route-20261030`. Line numbers below are at this commit.
 - Read in full: `D/library/gap-vmf-lip.md` (609 lines), `D/library/gap-vmf-lip-check-opus.md` (153),
@@ -456,7 +456,7 @@ one torus and free in the other); the distance count in Theorem F (midpoints, th
 the six inequalities in Lemma LF (c); Proposition NP step (iv). The inputs Corollary V1, Lemma DC,
 Lemma INF, Lemma M, D-shape, Identity FL, Identity L, (14), Theorem SH are READ and were checked in
 rows 707, 709 and 790. Two GUIDE runs (Sections 5.2, 5.3) found and spot-checked the construction; they
-are not part of any proof. Scripts: `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane835/guide/`
+are not part of any proof. Scripts: `SCRATCH/lane835/guide/`
 (`forest_search.py`, `forest_check.py`; a third search, `forest_descend.py`, was stopped unfinished
 and is superseded by Proposition NP).
 

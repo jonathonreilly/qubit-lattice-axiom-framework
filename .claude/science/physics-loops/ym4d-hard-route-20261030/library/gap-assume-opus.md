@@ -1,5 +1,5 @@
 lead: anthropic/claude-opus-5-5 (max effort), FINISH row 838, run 2026-11-12 on the lead's MacBook
-clone: /Users/jonreilly/ym4d-lead/clone at 676d510b879523452f4a08c5ba4071b0ef1353f6 ("docs(ym4d): add row 838, the assumptions exercise in depth")
+clone: the lead clone at 676d510b879523452f4a08c5ba4071b0ef1353f6 ("docs(ym4d): add row 838, the assumptions exercise in depth")
 skill: origin/main `docs/ai_methodology/skills/exercise/SKILL.md` (Step 2 method: every premise, hidden ones included, with "what if wrong", cheapest test, prior test)
 
 # gap-assume-opus: the assumptions exercise in depth, across the whole mass-gap skeleton

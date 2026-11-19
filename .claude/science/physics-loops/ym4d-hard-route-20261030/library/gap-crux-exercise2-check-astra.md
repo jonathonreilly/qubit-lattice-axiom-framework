@@ -8,7 +8,7 @@ Research text only; no scientific or audit status is conferred. Computation is n
 
 Checker: OpenAI Codex, dispatch `gpt-6-astra xhigh`, 2026-11-13. Checked text: Claude Fable 5.2's `gap-crux-exercise2-max.md` (637 lines), at `79017e5f46d2aa86d9f14d93df72c49c5b20bf8d`. This is the requested research check, not an audit or a status record. Only this output file is edited. The requested target-specific `prior/gap-crux-exercise2-check-astra.md` does not exist. `prior/repo-search-2026-11-08.md` was read; it supplies locators, not this check's conclusions.
 
-All five requested refs were searched in `/Users/jonreilly/Projects/Physics`, using bounded `git grep -n -i -E ... -- '*.md' '*.tex' | head ...` commands. Their hashes at this read were:
+All five requested refs were searched in `the main checkout`, using bounded `git grep -n -i -E ... -- '*.md' '*.tex' | head ...` commands. Their hashes at this read were:
 
 | Ref | Hash |
 |---|---|

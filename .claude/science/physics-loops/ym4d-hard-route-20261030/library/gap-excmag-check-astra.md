@@ -8,7 +8,7 @@ No item there covers this check. No matching owner row was found in
 `open-registry.md` for EXC-W, excmag, empty-line, flux tension, magnetic
 residual, or carrier switch. This checks row 888; it starts no proof lane.
 
-The five requested refs in `/Users/jonreilly/Projects/Physics` were searched:
+The five requested refs in `the main checkout` were searched:
 
 | Ref | Revision read |
 |---|---|

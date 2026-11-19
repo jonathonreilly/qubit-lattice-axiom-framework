@@ -3,7 +3,7 @@
 Target terms: `H-DBL`, `JOIN-TH`, `CUT-TH`,
 `gap-cutth`, `static.oscillator`, `wall.induced.phase`, and
 `free.wall.*(doubl|seed)`. Refs: `origin/main`, `pr/10114`, `pr/10133`,
-`pr/10134`, `pr/10141` in `/Users/jonreilly/Projects/Physics`.
+`pr/10134`, `pr/10141` in `the main checkout`.
 Methods: `joining free energy`, `thermal (log.sum|sum).{0,70}doubl`,
 `free.wall.{0,70}(transfer|phase)`, `wall.induced`. The bounded completed
 searches returned the relevant main-branch hits below and no target-label

@@ -1,6 +1,6 @@
 # Novelty of today's strong-coupling results (FINISH row 819), by Claude Opus 5.5 (max effort)
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, commit `0ed7f11bec5fb3f5cdda187f9d3bb63e4e427b76`.
+- Clone: `the lead clone`, commit `0ed7f11bec5fb3f5cdda187f9d3bb63e4e427b76`.
 - Main (for PV): `origin/main` = `bb4ec020d5ada57c630dd89acc98a68397ade423`.
 - Lane directory D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 - Read in full: `D/library/gap-vmf-lip.md`, `D/library/gap-vmf-lip-check-opus.md`,
@@ -303,7 +303,7 @@ closest public analogues are the unrefereed BB transfer-matrix remark and the BB
 ## 7. Primary sources read, with locations
 
 Downloads sit in fresh directories under
-`/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/novelty-dl/`.
+`SCRATCH/novelty-dl/`.
 Text was extracted with a PDFKit tool kept in a separate directory (`.../scratchpad/novelty-tools/`).
 
 - Shen-Zhu-Zhu, arXiv:2204.12737v1 (CMP 400, 2023): pp. 2, 4, 6, 7, 10, 17, 19.

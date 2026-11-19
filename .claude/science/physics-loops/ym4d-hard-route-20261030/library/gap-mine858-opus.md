@@ -1,7 +1,7 @@
 # FINISH row 900: mining the unfinished r858 crux exercise (Fable 5.2 max, partial)
 
 - Reader: Claude Opus 5.5 (high effort), no subagents.
-- Clone: /Users/jonreilly/ym4d-lead/clone at commit cf4cb171a8990941ac82f309cba9b88f1664f1be (pulled 2026-11-13, already up to date).
+- Clone: the lead clone at commit cf4cb171a8990941ac82f309cba9b88f1664f1be (pulled 2026-11-13, already up to date).
 - Source: .claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-crux-exercise-r858-max.md (404 lines), read whole.
 - Later coverage searched: FINISH.md rows 859-900 RESULT text, plus bounded reads of the library files they name.
 
@@ -10,7 +10,7 @@
 - r858 = `library/gap-crux-exercise-r858-max.md`, all 404 lines (Steps 0-3, 4.A-4.H). Its own marks (PROVED, ARGUED, READ) are the author's (Claude Fable 5.2 max); nothing in it was checked by another model.
 - FINISH.md rows 859-899, the whole row text, RESULT included (lines 936-976). Rows 897, 898 and 899 have no RESULT yet.
 - The 41 library files those rows name: grep with line output for about 60 wordings of r858's objects. Bounded reads: BR L278-345, L355-449, L472-502, L613-662; EX2 L255-275, L340-380; GLUE L153-172; HA L159-218; HAC L142-143; EXIT L710-723; CS L166-170. Before-858 context: SK L94-125 (Route Z, free walls) and the RESULT text of rows 677, 681.
-- Account check: `/Users/jonreilly/ym4d-lead/sa1400/YM4_1400.tex` L94031-94045, plus word counts.
+- Account check: `LOCAL:ym4d-lead/sa1400/YM4_1400.tex` L94031-94045, plus word counts.
 - Short names for files under D/library: BR = gap-brainstorm-max.md (row 859); BR2 = gap-brainstorm2-max.md (876); EX2 = gap-crux-exercise2-max.md (878); CS = gap-crux-skeleton-max.md (863); EXIT = gap-exit-max.md (861); PE = gap-pe-max.md (862); HS = gap-hs-max.md (860); HA = gap-ha-astra.md (871); HAC = gap-ha-check-opus.md (874); GLUE = gap-glue-max.md (895); SK = gap-skeleton-final.md.
 - No later lane read r858's Steps 2-4. Row 878's Step 5 opened `gap-crux-exercise-max.md`, the older 60-line file that stops at Step 1 (EX2 L345). No later file cites r858 (grep for "r858" and "row 858": no hit in the 41 files).
 

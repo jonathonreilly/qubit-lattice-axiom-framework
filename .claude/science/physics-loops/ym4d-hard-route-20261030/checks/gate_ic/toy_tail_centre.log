@@ -21,4 +21,4 @@ CONTOUR y 2.0  |I| = 0.986100  modulus bound 7.389e+00  shifted 0.986101
 CONTOUR y 3.0  |I| = 0.986100  modulus bound 9.002e+01  shifted 0.986101
 CONTOUR y 4.0  |I| = 0.990036  modulus bound 2.981e+03  shifted 0.990054
   PASS-CONTOUR
-wrote /Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ic/toy_tail_centre_results.json rss 293683200
+wrote .claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ic/toy_tail_centre_results.json rss 293683200

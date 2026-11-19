@@ -1,7 +1,7 @@
 # Row 904: does the account's fixed-horizon universality give (UNIV-FP)?
 
 Author: Claude Opus 5.5 (high effort), FINISH row 904. Reading and port item.
-Clone: /Users/jonreilly/ym4d-lead/clone at 4c53df409a5b061cd32f73708dcb489a5f1e66e4.
+Clone: the lead clone at 4c53df409a5b061cd32f73708dcb489a5f1e66e4.
 Source: Sussman-Alpoge account YM4_1400.tex, revision 2bc0658f91d2 (Ethan Sussman and
 Levent Alpoge; text authored with Claude and Codex). Quotes are short phrases; line
 numbers refer to that file.

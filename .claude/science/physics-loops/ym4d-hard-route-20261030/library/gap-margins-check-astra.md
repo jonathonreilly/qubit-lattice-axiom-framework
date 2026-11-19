@@ -1,7 +1,7 @@
 ## Repo search
 
 Searched `*.md` and `*.tex` on `origin/main`, `pr/10114`, `pr/10133`,
-`pr/10134`, `pr/10141` in `/Users/jonreilly/Projects/Physics`, with the
+`pr/10134`, `pr/10141` in `the main checkout`, with the
 requested bounded `git grep ... | head` commands. Terms: `gap-margins`,
 `Bennett acceptance`, `stack interpolation`, `cut.and.reglue`,
 `dilute.gas.*glueball`, `heat.bath.*SU.?2`, `SEED-FP`, `gap-transport`.
@@ -45,7 +45,7 @@ Index first: read `sa-index/README.md`, searched chunk files and
 No heat-bath/BAR/thermal-sum/torelon/glueball/free-wall entries matched.
 `chunk-02.md:95-106` locates the established positive trace-class transfer
 and trace identity at SA 2313-2336, read directly from
-`/Users/jonreilly/ym4d-lead/sa/YM4_sketch_500.tex` at the supplied
+`LOCAL:ym4d-lead/sa/YM4_sketch_500.tex` at the supplied
 `31a47c543775` revision. It says the operator "is positive and trace class"
 and gives `Z_s(0)=Tr L^s`, without an extra Haar volume factor. This is
 existing Sussman--Alpoge work, with Claude and Codex as authors of their

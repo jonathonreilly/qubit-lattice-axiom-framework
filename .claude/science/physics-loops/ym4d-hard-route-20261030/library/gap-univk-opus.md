@@ -2,8 +2,8 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone: /Users/jonreilly/ym4d-lead/clone at commit 1020c3efcfe45c942f5711c05eae8fa49e0ea698 (git pull --ff-only: already up to date, 2026-11-13).
-Sussman-Alpoge sources: /Users/jonreilly/ym4d-lead/sa (commit 31a47c543775) and /Users/jonreilly/ym4d-lead/sa1400/YM4_1400.tex.
+Clone: the lead clone at commit 1020c3efcfe45c942f5711c05eae8fa49e0ea698 (git pull --ff-only: already up to date, 2026-11-13).
+Sussman-Alpoge sources: LOCAL:ym4d-lead/sa (commit 31a47c543775) and LOCAL:ym4d-lead/sa1400/YM4_1400.tex.
 Credit: the account is by Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of its text. Balaban for his estimates.
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030 (in the clone).
 
@@ -116,7 +116,7 @@ operations (HRT opening). Step 3 re-reads these lines in the sa1400 copy and fix
 
 ## Step 3. The account's finite-horizon universality, re-read in the sa1400 copy (YM4_1400.tex, 136637 lines)
 
-All lines below are READ in /Users/jonreilly/ym4d-lead/sa1400/YM4_1400.tex (account of Ethan Sussman and Levent Alpoge,
+All lines below are READ in LOCAL:ym4d-lead/sa1400/YM4_1400.tex (account of Ethan Sussman and Levent Alpoge,
 text by Claude and Codex). The numbers agree with rows 916/917 to within one or two lines.
 
 - R1. Scope, L94034-94040: "one finite horizon, one family of regular maps and one frozen cutoff presentation"; the

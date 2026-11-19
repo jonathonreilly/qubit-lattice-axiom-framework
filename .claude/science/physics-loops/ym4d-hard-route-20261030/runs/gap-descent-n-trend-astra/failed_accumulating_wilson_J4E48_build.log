@@ -11,10 +11,10 @@ FACE 6 nnz 4534792 asym 4.440892098500626e-16
 FACE 7 nnz 4534792 asym 4.440892098500626e-16
 FACE 8 nnz 4534792 asym 4.440892098500626e-16
 Traceback (most recent call last):
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/wilson.py", line 261, in <module>
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/wilson.py", line 261, in <module>
     if a.action=='build':build(a.J,a.E,a.basis)
                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/wilson.py", line 203, in build
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/wilson.py", line 203, in build
     if cap*16+base.memory_check()>1_800_000_000:raise MemoryError('plaquette allocation gate')
                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 MemoryError: plaquette allocation gate

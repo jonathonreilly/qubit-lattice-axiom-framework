@@ -51,7 +51,7 @@ Source keys and line numbers:
 The three requested source copies already existed in `/tmp` and were reused.
 The outline README, neighbouring chunk rows and obligations preceded the SA excerpts.
 The CA 4.12–4.19 index supplied its stage and boundary locators.
-The relevant Balaban texts are now available in `/Users/jonBridger/ym4d-papers`.
+The relevant Balaban texts are now available in `LOCAL:ym4d-papers`.
 Their bounded passages were read directly.
 
 **Already proved?** The following distinguishes existing source arguments from the exact requested supplier.

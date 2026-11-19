@@ -9,7 +9,7 @@ Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their
 text, supply the complete account and outline used here.
 All proof arguments below are mathematical. File searches and hashes supply no proof.
 
-I, II, III denote the complete-account files under `/Users/jonreilly/ym4d-lead/sa`.
+I, II, III denote the complete-account files under `LOCAL:ym4d-lead/sa`.
 SA denotes `YM4_sketch_500.tex` there. Their supplied revision is `31a47c543775`.
 The source hashes match `layer-find.md`'s identity table.
 The directory's provenance is supplied, rather than verified through a local Git HEAD.

@@ -2,7 +2,7 @@
 
 Codex, row 956 (requested gpt-6-astra xhigh), 2026-11-14; checkout `d8db8ac22c0981baf7d10e71df03323fe6b930e7`. Research check, not an audit; grants no status.
 
-Searched `/Users/jonreilly/Projects/Physics` on `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141`, using bounded `git grep -n -i -E ... -- '*.md' '*.tex' | head` commands. The completed exact-target search, `LSI-J|BR-J|two.slice.*Poincar|gap-lsij-scale|bridge.marginal`, returned no hits. Broader searches used `finite-cylinder`, `hypercontract`, `log.Sobolev`, `Poincar.{0,50}(vacuum|two.slice|Wilson)`, and `ground.state.transform`. These reached their caps; they are locators, not absence evidence.
+Searched `the main checkout` on `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141`, using bounded `git grep -n -i -E ... -- '*.md' '*.tex' | head` commands. The completed exact-target search, `LSI-J|BR-J|two.slice.*Poincar|gap-lsij-scale|bridge.marginal`, returned no hits. Broader searches used `finite-cylinder`, `hypercontract`, `log.Sobolev`, `Poincar.{0,50}(vacuum|two.slice|Wilson)`, and `ground.state.transform`. These reached their caps; they are locators, not absence evidence.
 
 Relevant hits, read at source:
 

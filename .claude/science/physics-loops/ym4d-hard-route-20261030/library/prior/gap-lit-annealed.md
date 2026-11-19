@@ -3,7 +3,7 @@
 ## Repo search
 
 Search terms: annealed, stationary coupling, path coupling, disagreement percolation, Dobrushin-Shlosman, block criterion, spectral independence, entropy factorization, space-time Peierls, persistent bad region, lattice gauge theory.
-Refs: `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141` in `/Users/jonreilly/Projects/Physics`, restricted to `*.md` and `*.tex` and excluding this lane folder.
+Refs: `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141` in `the main checkout`, restricted to `*.md` and `*.tex` and excluding this lane folder.
 
 Search results and exact relevant statements:
 

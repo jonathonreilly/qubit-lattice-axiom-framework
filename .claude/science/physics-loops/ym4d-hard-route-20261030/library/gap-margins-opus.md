@@ -3,7 +3,7 @@
 Author: Claude Opus 5.5 (high effort). Status: GUIDE only. Every number below
 is a GUIDE measurement. It may refute or orient. It proves nothing.
 
-Clone: /Users/jonreilly/ym4d-lead/clone at commit
+Clone: the lead clone at commit
 8f6e7a3b7f80a47c49c0987fb329d838aff81ffc (pulled 2026-11-13, already up to date).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Scripts: lane918/scripts. Logs: lane918/out.

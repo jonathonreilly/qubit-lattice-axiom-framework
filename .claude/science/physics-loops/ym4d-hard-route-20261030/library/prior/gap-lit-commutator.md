@@ -256,7 +256,7 @@ The account was fetched once to /tmp/sa_ca_I.tex and never read wholesale.
 Credit **Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of
 their text**. This is not a claim about material outside the searched terms.
 
-The owner's papers directory /Users/jonBridger/ym4d-papers was absent in this
+The owner's papers directory LOCAL:ym4d-papers was absent in this
 environment. No paper or extracted paper text was downloaded into the
 checkout. Open web/arXiv copies were inspected in place; no refusal or bot
 check was encountered.

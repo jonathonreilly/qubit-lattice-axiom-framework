@@ -26,13 +26,13 @@ Source keys:
 
 - **Y:** `YM4_1400.tex`, the exact scratchpad file specified in the task.
   `geoh-o2.md:19` identifies its source revision as `2bc0658f91d2d03ba44e20bf695067e0a56a2ed9`.
-- **SA:** `YM4_sketch_500.tex`, supplied at `31a47c543775` under `/Users/jonreilly/ym4d-lead/sa`.
+- **SA:** `YM4_sketch_500.tex`, supplied at `31a47c543775` under `LOCAL:ym4d-lead/sa`.
 - **CA-I:** `theorem_0_complete_account_raw_I.tex`, at the same supplied revision.
 
 The Y file read was:
 
 ```text
-/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/sa1400/YM4_1400.tex
+SCRATCH/sa1400/YM4_1400.tex
 ```
 
 The outline index was consulted before its source ranges.

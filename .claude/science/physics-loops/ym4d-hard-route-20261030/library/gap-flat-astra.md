@@ -678,7 +678,7 @@ its outcome or on (J13)'s positive-transfer lower bound.
 
 **READ — instruction boundary.** Platform skill instructions caused
 one methodology read outside the requested source roots:
-`/Users/jonBridger/.codex/skills/physics-loop/SKILL.md`. Current
+`LOCAL:.codex/skills/physics-loop/SKILL.md`. Current
 methodology was then read from `origin/main` without checkout changes.
 Scientific-source searches stayed within the specified source scope.
 

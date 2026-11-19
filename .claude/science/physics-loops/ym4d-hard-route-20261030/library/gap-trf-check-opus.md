@@ -1,7 +1,7 @@
 # Check of library/gap-trf-astra.md (FINISH row 795), by Claude Opus 5.5, line by line
 
 - Checker: Claude Opus 5.5, one session, no subagents, 2026-11-12. Cross-provider check of a Codex gpt-6-astra max note.
-- Clone read: `/Users/jonreilly/ym4d-lead/clone`, HEAD `5bc6c1fed`.
+- Clone read: `the lead clone`, HEAD `5bc6c1fed`.
 - File checked (read in full, 633 lines): `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-trf-astra.md`. The note calls itself FINISH row 793 (line 47). The header uses row 795 as requested.
 - Context read: `gap-ext-astra.md` Sections 1, 4 and 5 (lines 78-128, 348-757: (LC), (E18)-(E25), (TR-F)); `gap-ext-check-opus.md` in full; `gap-cf-astra.md` Section 2 (lines 267-350); the Section 2 rows of `gap-cf-check-opus.md`.
 - Not checked: the repo search, the PR 10114/10133 citations, the SA outline reads and the source record (lines 1-73, 588-631). They are outside the brief and carry no proof weight.

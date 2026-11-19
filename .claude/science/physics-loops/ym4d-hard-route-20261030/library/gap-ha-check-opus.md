@@ -1,7 +1,7 @@
 # Check of library/gap-ha-astra.md (FINISH row 874)
 
 - Checker: Claude Opus 5.5 (high effort), by hand, no subagents, no computation.
-- Clone: /Users/jonreilly/ym4d-lead/clone at commit dd5c4ff8affc6901bc622f86c1d34d08dc74fafa.
+- Clone: the lead clone at commit dd5c4ff8affc6901bc622f86c1d34d08dc74fafa.
 - Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 - Checked file: D/library/gap-ha-astra.md (row 871, OpenAI Codex gpt-6-astra, max effort).
 - Background: D/library/gap-z2parity-astra.md (row 866), D/library/gap-z2parity-check-opus.md (row 870).

@@ -7,7 +7,7 @@
 - Row: FINISH 898. Author: Claude Fable 5.2, max effort. Date: 2026-11-13.
 - Clone commit read: 11bb5eccae93281d0312d9d4640889a752048fae (branch claude/ym4d-hard-route, pulled --ff-only, already up to date).
 - Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030 (read-only).
-- Sussman-Alpoge sources: /Users/jonreilly/ym4d-lead/sa (commit 31a47c543775), read in bounded ranges only.
+- Sussman-Alpoge sources: LOCAL:ym4d-lead/sa (commit 31a47c543775), read in bounded ranges only.
 - Marks used: PROVED (mine, in this file), READ (path and line), ARGUED, GUIDE, OPEN.
 
 ## Target statement
@@ -493,7 +493,7 @@ GUIDE for attack 1 (my hand estimate in the continuum free massive scalar; it de
 
 - What. Use a weight exp(beta_F x_p + (centre-blind part)) with beta_F small and fixed, and let only the centre-blind coupling run to the continuum. Then thin centre vortices are cheap at every cutoff and the flux half is a convergent Z_2 expansion.
 - Exact crux statements, in order.
-  (UNIV-FP) (a question to the account; READ only through row 900, the file YM4_1400.tex is not among the sources on disk at /Users/jonreilly/ym4d-lead/sa): the account's fixed-horizon universality holds at the first-passage horizon with constants uniform in K, covers a weight of this mixed type, and bounds the difference of the seed numbers of two weights below half the margin.
+  (UNIV-FP) (a question to the account; READ only through row 900, the file YM4_1400.tex is not among the sources on disk at LOCAL:ym4d-lead/sa): the account's fixed-horizon universality holds at the first-passage horizon with constants uniform in K, covers a weight of this mixed type, and bounds the difference of the seed numbers of two weights below half the margin.
   (FLUX-Z2) For beta_F with C tanh(beta_F) below 1 (C the surface-counting constant of the four-dimensional lattice), every torus, every centre-blind part and every twist v: Z^v/Z^0 is at least 1 - (C tanh beta_F)^(A_v), A_v the least area of a closed surface of odd class against v.
   Argument for (FLUX-Z2) (ARGUED here; it is the comparison of Mack and Petkova 1979 and Frohlich 1979 as recalled in row 876 idea 31, not read by me; to be rebuilt in the repo before any use). Write U = z U~, z in Z_2. Then x_p(U) = (dz)_p x~_p, so given U~ the centre is a Z_2 gauge theory with couplings K_p = beta_F x~_p, and |K_p| is at most beta_F for EVERY U~ (row 876 idea 2 proves the splitting). Its expansion in tanh K_p is a sum over closed surfaces; the twist changes the sign of the odd-class surfaces only; so the Z_2 ratio is at least 1 - (C tanh beta_F)^(A_v) for every U~. Both Z_2 partition functions are positive, so the bound survives the average over U~. On the torus (a, b, b, b) this gives Q_0 at most (1/2)(C tanh beta_F)^(ab): (CORE), uniformly in the volume and in the centre-blind coupling.
   (MULTIPLET) Theorems S and R for a transfer operator whose top of spectrum is a multiplet of eight states with splittings and mixings bounded by e^(-c x area) (row 876 G11: with cheap thin vortices the SO(3) bundle classes of a slice are nearly degenerate vacua of the periodic box, so (ES) fails as stated).

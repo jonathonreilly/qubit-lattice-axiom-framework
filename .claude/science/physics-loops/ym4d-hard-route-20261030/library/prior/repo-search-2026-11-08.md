@@ -16,7 +16,7 @@ The lane is pinned at `5b818235ddae07ec1f6249073df1d41e73ce30ff`.
 Neither `prior/repo-search.md` nor this date's digest existed initially.
 GOAL, the requested FINISH sections, and the actual source notes were read.
 The workflow is absent in this sparse checkout; its rule 2.9 was read from
-`origin/main` in `/Users/jonreilly/Projects/Physics`.
+`origin/main` in `the main checkout`.
 
 All five requested refs were searched in that repository:
 
@@ -41,7 +41,7 @@ Path abbreviations below:
 * **S/** = `.claude/science/toe-ruleset-20261021/agents/ym4d-proof/`.
 * **R/** = `research/ym4d/` on `pr/10141`.
 * **SA** = `YM4_sketch_500.tex`, supplied at `31a47c543775` in
-  `/Users/jonreilly/ym4d-lead/sa/`.
+  `LOCAL:ym4d-lead/sa/`.
 * **I** = `theorem_0_complete_account_raw_I.tex` at that same source revision.
 
 R/ is a snapshot of this hard-route project, not an independent proof.
@@ -108,7 +108,7 @@ the displayed commit hash, so a later ref movement does not change it.
 The command template is:
 
 ```sh
-git -C /Users/jonreilly/Projects/Physics grep -l -i -E '<expression>' \
+git -C the main checkout grep -l -i -E '<expression>' \
   origin/main pr/10114 pr/10133 pr/10134 pr/10141 \
   -- '*.md' '*.tex' \
   ':!.claude/science/physics-loops/ym4d-hard-route-20261030/**' | head -600

@@ -1,7 +1,7 @@
 # Check of library/gap-tomboulis-read.md (FINISH row 799), by Claude Opus 5.5
 
-- Target: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-tomboulis-read.md`, 879 lines, read in full.
-- Clone commit: `612d615f6` (`git -C /Users/jonreilly/ym4d-lead/clone rev-parse --short HEAD`).
+- Target: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-tomboulis-read.md`, 879 lines, read in full.
+- Clone commit: `612d615f6` (`git -C the lead clone rev-parse --short HEAD`).
 - PDFs: fetched once with `curl -sSfL` into the new empty directory
   `.../scratchpad/tomb-pdfs.clx4MX/`. Nothing in them was executed. A local PDFKit
   tool (written in a separate directory) extracted text and rendered pages to PNG;

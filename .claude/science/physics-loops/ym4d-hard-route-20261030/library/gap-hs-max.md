@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone: /Users/jonreilly/ym4d-lead/clone, branch claude/ym4d-hard-route, commit 2b6acd1732dde4e18293f0fe0e2814edbca36da3 (pulled 2026-11-12, already up to date).
+Clone: the lead clone, branch claude/ym4d-hard-route, commit 2b6acd1732dde4e18293f0fe0e2814edbca36da3 (pulled 2026-11-12, already up to date).
 Author: Claude Fable 5.2 (max effort), FINISH row 860. No subagents. No repository file edited.
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 
@@ -140,7 +140,7 @@ The right notion (my answer to the brief's question). High spin is rare in the o
 
 ### Step 5 (GUIDE; decides nothing). The measured one-edge law.
 
-Script: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane860/scripts/guide860.py (4D SU(2) heat bath, periodic, untwisted; numpy, one thread, under 100 MB). It measures rho_j by Lemma OS with one link integrated exactly: E[chi_j(U Sig) e^(-beta x(U Sig)) | rest] = z(b') r_j(b') chi_j(c)/z(b), b = beta|A|, b' = beta|A - Sig|, c = (A - Sig).Sig/|A - Sig|, A the staple sum, Sig the staple of p. (This identity is the computation in the proof of Lemma DS.)
+Script: SCRATCH/lane860/scripts/guide860.py (4D SU(2) heat bath, periodic, untwisted; numpy, one thread, under 100 MB). It measures rho_j by Lemma OS with one link integrated exactly: E[chi_j(U Sig) e^(-beta x(U Sig)) | rest] = z(b') r_j(b') chi_j(c)/z(b), b = beta|A|, b' = beta|A - Sig|, c = (A - Sig).Sig/|A - Sig|, A the staple sum, Sig the staple of p. (This identity is the computation in the proof of Lemma DS.)
 
 Smoke test, 4^4, beta = 2.3, 10 configurations: <x_p> = 0.602(3); rho_0 = 0.637(11), rho_(1/2) = 0.327(10), rho_1 = 0.035(1), rho_(3/2) = 0.0012(4), rho_2 and above are below the noise (1e-5 to 1e-4); half-integer density 0.328(10). The weights sum to 1.000000. The full 8^4 runs are appended below when they finish.
 
@@ -258,6 +258,6 @@ that is, E[Prod_e r_(j_e)^(-1)] <= e^(beta|E|(1 + o(1))) in the one-slice law. I
 
 **Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the Wilson convolution facts and the half-kernel transfer, as read through EX and Q; the first-passage frame of (SEED-FP). Balaban: the effective-action estimates behind that frame (not used in any proof here). Codex gpt-6-astra max: EX (E1)-(E18) and the route-A text TR. Claude Opus 5.5: Q (row 843), FLN (row 837). The Amos-type bound U_nu is used as proved in Q, Lemma 3.1.
 
-**Delivery.** Only this file was written, plus the GUIDE script and its output in /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane860/scripts/ (guide860.py, guide860.out; under 100 MB, about one minute per coupling). No repository file, registry, PR or post was touched. No subagent was used. No download was made.
+**Delivery.** Only this file was written, plus the GUIDE script and its output in SCRATCH/lane860/scripts/ (guide860.py, guide860.out; under 100 MB, about one minute per coupling). No repository file, registry, PR or post was touched. No subagent was used. No download was made.
 
 RESULT: PARTIAL, by Claude Fable 5.2 (max effort), not checked — (HS) is PROVED and is the wrong target. Theorem HS: for every twist, torus, t >= 2 and both parity sectors the one-slice weight of {at least eta|E| edges of spin >= j0} is at most [r_(j0)^eta e^beta (e^(2 beta)/z)^(1/(t-1))]^|E| Tr(P_+ L_m^t) (an electric-energy bound: K^(-1) through one transfer step, Jensen on the trial vector 1); on [2.15, 2.5] with t = a >= 9 this is row 843's (HS) with c = 3.895 eta - 3.125 > 0 for eta > 0.803, and it holds for spin 2 up to beta = 3. Lemma DS (double suppression, one link integrated exactly): spin densities obey rho_j <= rho_0 d_j^2 r_j(beta) r_j(5 beta), so spin >= 2 has density at most 0.275 and odd spin >= 5/2 at most 0.041 for beta <= 2.5, with a product bound on plaquette-separated sets and (HS) at every t >= 3. GUIDE (8^4 heat bath): the true densities at beta = 2.3 are 2e-5 and below 6e-7; the plaquette law w_j (6% and 1.3%) is the frozen-environment law, not the one-slice law; half-integer edges have density 0.33. Consequences: (LS) equals (E17) up to e^(-c|E|) (PROVED); the odd sector is exactly the event that the half-integer Z_2-cycle of a slice has odd omega-class (PROVED); Theorem HS and the filter's kind of input hold verbatim for U(1) in its Coulomb phase, so the filter plus (HS) cannot force (LS) (ARGUED), and in the SU(2) vacuum the filter is exposed at a measured density below 1e-6 (GUIDE). OPEN: (E17) itself; it needs an input using continuity and the absence of an integer flux together, which neither the filter nor (HS) supplies.

@@ -2,9 +2,9 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone: /Users/jonreilly/ym4d-lead/clone at commit 1f6e9018affb95f6576883dce4197190e600fa7f (pulled 2026-11-13, already up to date).
+Clone: the lead clone at commit 1f6e9018affb95f6576883dce4197190e600fa7f (pulled 2026-11-13, already up to date).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
-SA sources: /Users/jonreilly/ym4d-lead/sa at commit 31a47c543775 (bounded reads only).
+SA sources: LOCAL:ym4d-lead/sa at commit 31a47c543775 (bounded reads only).
 Author: Claude Opus 5.5, max effort. Status labels: PROVED (mine), READ (path:line), ARGUED, GUIDE, OPEN.
 
 ## Target (provisional; fixed in Step 2 after reading)
@@ -220,7 +220,7 @@ Every route reduces (SEAM), equivalently (I1)-(I3), to one quantitative clusteri
 
 ### 7.1 GUIDE run (decides nothing; checks the algebra of Steps 4-5)
 
-Script: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane920/guide/ins_check.py; log ins_check.log beside it. Model: two-dimensional Z_N lattice gauge theory on a spatial circle of b = 2 links (so x and x + e are distinct sites, as Lemma E needs), exact enumeration of every slice, temporal link and seam variable; theta-integral by 40-point Gauss-Legendre. 0.8 s, 85 MB. The construction is group-blind, so a finite abelian group checks the same algebra as SU(2).
+Script: SCRATCH/lane920/guide/ins_check.py; log ins_check.log beside it. Model: two-dimensional Z_N lattice gauge theory on a spatial circle of b = 2 links (so x and x + e are distinct sites, as Lemma E needs), exact enumeration of every slice, temporal link and seam variable; theta-integral by 40-point Gauss-Legendre. 0.8 s, 85 MB. The construction is group-blind, so a finite abelian group checks the same algebra as SU(2).
 | N, beta, a | log(1 + S_ev(a)) | (INS) integral | reference integral | Delta_0 vs u_(a,ev) - u_inf | Delta_1 | max_theta Delta / Delta_0 |
 |---|---|---|---|---|---|---|
 | 4, 0.7, 2 | 1.638927412218e-04 | 1.638927412237e-04 | -3e-17 | 4.3206652386e-04 vs ...82e-04 | -4e-14 | 0.998 |

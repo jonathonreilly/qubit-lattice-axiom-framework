@@ -236,7 +236,7 @@ Row format: ID | assumption | where used | needed or habit | if dropped or chang
 
 ### 4.A The action
 
-Read for this group: the account `YM4_1400.tex` (local copy /Users/jonreilly/ym4d-lead/sa1400/YM4_1400.tex, 136637 lines), lines 94031-94062 only (the opening of its subsection "Universality for bounded ultraviolet profiles at a fixed horizon"), plus counts of the words Villain (0), heat kernel (17), Symanzik (0), twisted (8), Wilson action (57).
+Read for this group: the account `YM4_1400.tex` (local copy LOCAL:ym4d-lead/sa1400/YM4_1400.tex, 136637 lines), lines 94031-94062 only (the opening of its subsection "Universality for bounded ultraviolet profiles at a fixed horizon"), plus counts of the words Villain (0), heat kernel (17), Symanzik (0), twisted (8), Wilson action (57).
 
 | ID | Assumption | Where | Needed or habit | If dropped or changed | Cost | Easier? |
 |---|---|---|---|---|---|---|

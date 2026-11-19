@@ -2,7 +2,7 @@
 
 - Checker: Claude Opus 5.5. Date: 2026-11-11.
 - Author of the checked text: Codex gpt-6-astra. Every statement marked HOLDS below is the author's result; credit is theirs.
-- Read in full: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-crux-exercise-astra.md` lines 749-984 (8.1), 1194-1390 (8.4, 8.5). Background: `gap-crux-restate.md` line 31 (action convention: A = sum_p (1 - (1/2) tr U_p), sides >= 3; GC2 uses the same convention).
+- Read in full: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-crux-exercise-astra.md` lines 749-984 (8.1), 1194-1390 (8.4, 8.5). Background: `gap-crux-restate.md` line 31 (action convention: A = sum_p (1 - (1/2) tr U_p), sides >= 3; GC2 uses the same convention).
 - Not read: `gap-seed-limit.md` (Lemma L / P'), `gap-skeleton-final.md` 13.18-13.19. The continuum passage in A4 is therefore not checked.
 - Method: by hand. Guides only (pure Python, `python3 -I`, in this folder): `chk.py` (Monte Carlo of the Haar identity; ball volume; GC2 thresholds) and `geo.py` (the 8.1 interval cover for ell = 12, 13, 17 and several N; overlap, separation, and which pair types have a mixed vertex). These runs decide nothing.
 - Not an independent check in the strict sense: same source text, one reader. My derivations are my own, done by hand.

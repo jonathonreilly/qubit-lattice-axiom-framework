@@ -1,7 +1,7 @@
 # FINISH row 834: area law for 4D SU(2) Wilson loops beyond beta_W = 2/3
 
 Author: Claude Opus 5.5 (max effort), row 834 author lane.
-Clone: /Users/jonreilly/ym4d-lead/clone at commit d7a3a22a9e9a6d6485df28693d11e86d041535c6 (2026-11-12).
+Clone: the lead clone at commit d7a3a22a9e9a6d6485df28693d11e86d041535c6 (2026-11-12).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 During the run the clone advanced to cc2a1c159dd468629ac4e0e9ee58ab8fe9588e9a; `git diff --stat` shows every
 library file read here unchanged. The one new file used is D/library/gap-compress-check-astra.md (the

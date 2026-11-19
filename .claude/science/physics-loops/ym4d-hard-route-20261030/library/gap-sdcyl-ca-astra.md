@@ -11,7 +11,7 @@ Search-hit path prefix: `.claude/science/toe-ruleset-20261021/agents/ym4d-proof/
 
 ## Step 1 — source and prior-work boundary
 
-READ: this checkout is `379e03fb58e78e198b007b6e4752d2e379b3e153`. GOAL.md and FINISH.md 52–74, 320–351 were read. The workflow is absent in this sparse checkout; its current map and RULES/SETTINGS/PROCEDURES were read through `origin/main` in the explicitly requested full repository. The supplied `/Users/jonreilly/ym4d-lead/sa` directory has no Git metadata; the requested revision `31a47c543775` is supplied provenance, to be checked against the existing source hashes.
+READ: this checkout is `379e03fb58e78e198b007b6e4752d2e379b3e153`. GOAL.md and FINISH.md 52–74, 320–351 were read. The workflow is absent in this sparse checkout; its current map and RULES/SETTINGS/PROCEDURES were read through `origin/main` in the explicitly requested full repository. The supplied `LOCAL:ym4d-lead/sa` directory has no Git metadata; the requested revision `31a47c543775` is supplied provenance, to be checked against the existing source hashes.
 
 Searches on `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, `pr/10141`, over `*.md` and `*.tex`, include `SD-cyl|E17-phys|sdcyl|Proposition W-phys|background.curvature kernel`. They returned no exact SD-cyl/E17-phys port. The background-kernel hits are the older soft-route `PROOF.md:7453` and its session21/22/23 snapshots on pr/10114 and pr/10133. READ: pr/10114 `PROOF.md:7444–7485` defines the linear response `K=(1-d C^0 d*) iota`, proves its algebraic response and operator upper bounds, and explicitly describes measured row norms. This is a one-level soft-constraint response operator, not the squared retained covariance kernel or a cylinder witness lower bound. No result from it is imported. An initial unqualified `W-phys` query and a broad kernel/normalizer query hit their output caps with unrelated results; neither supports an absence claim. More precise method searches are recorded below when complete.
 
@@ -298,7 +298,7 @@ Author: Codex, this session. Task: FINISH row 865, requested as an Astra/xhigh p
 
 The supplied source bytes match the hashes recorded in row 848 for revision `31a47c543775`:
 
-| Source under `/Users/jonreilly/ym4d-lead/sa/` | SHA-256 |
+| Source under `LOCAL:ym4d-lead/sa/` | SHA-256 |
 |---|---|
 | `YM4_sketch_500.tex` | `d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f` |
 | `theorem_0_complete_account_raw_I.tex` | `4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93` |

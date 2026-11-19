@@ -3,15 +3,15 @@ POINT 6 2.0 [1.3480977905105695, 1.3480977905106184] [6.515743666997878, 57.9513
 POINT 6 2.3 [1.1822629094736525, 1.182262909473632] [6.86630137499742, 60.48015695800132]
 POINT 6 2.4 [1.0795893074864837, 1.079589307486506] [6.643282083998201, 59.71167662500375]
 Traceback (most recent call last):
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 58, in <module>
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 58, in <module>
     if __name__=='__main__':main()
                             ^^^^^^
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 40, in main
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 40, in main
     if x is None:x=pair(n,b);record['grid'].append(x);save()
                    ^^^^^^^^^
-  File "/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 25, in pair
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 25, in pair
     with (HERE/(stem+'.log')).open('w') as log:subprocess.run(cmd,stdout=log,stderr=subprocess.STDOUT,check=True)
                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
     raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['/usr/local/bin/python3', '/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/leakage.py', '--n', '6', '--beta', '2.5', '--cutoff', '14', '18', '44', '--output', '/Users/jonBridger/codex-ym4d/repo2/.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/n6_b2.5_A14_D18_Q44.json']' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command '['/usr/local/bin/python3', '.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/leakage.py', '--n', '6', '--beta', '2.5', '--cutoff', '14', '18', '44', '--output', '.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/n6_b2.5_A14_D18_Q44.json']' returned non-zero exit status 1.

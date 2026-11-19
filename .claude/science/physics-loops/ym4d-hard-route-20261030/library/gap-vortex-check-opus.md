@@ -3,7 +3,7 @@
 - Checker: Claude Opus 5.5 (one session, no subagents). Date: 2026-11-12. Cross-provider check.
 - Author checked: Codex gpt-6-astra max, FINISH row 778, source pin `8adccdfdd331`.
 - File checked (read-only, read in full, 650 lines):
-  `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-vortex-astra.md`.
+  `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-vortex-astra.md`.
 - Inputs read (same folder): `gap-fusion-astra.md` Sections 1 to 6 (lines 41-573);
   `gap-fusion-check-opus.md` in full; `gap-means-max.md` 4.1-4.7 (Lemmas R1, R2, R3, Theorem R,
   Corollaries); `gap-flux-exercise.md` 3.0-3.1 ((TM-tw), (F1), (S1)-(S3)); `gap-channel-astra.md`

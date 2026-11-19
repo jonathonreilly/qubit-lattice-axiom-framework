@@ -1,7 +1,7 @@
 # Check of library/gap-seam-astra.md (FINISH row 798), by Claude Opus 5.5, line by line
 
 - Checker: Claude Opus 5.5, one session, no subagents, 2026-11-12. Cross-provider check of a Codex gpt-6-astra max note.
-- Clone read: `/Users/jonreilly/ym4d-lead/clone`, HEAD `8c4f5a61621350d8f2f6646578ab083de732fb77`.
+- Clone read: `the lead clone`, HEAD `8c4f5a61621350d8f2f6646578ab083de732fb77`.
 - File checked (read in full, 847 lines): `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-seam-astra.md`. The note calls itself FINISH row 796 (lines 22, 26). The header uses row 798 as requested.
 - Context read: `gap-ext-astra.md` Section 5.1 ((E21)-(E23), lines 574-673); `gap-ext-check-opus.md` in full; `gap-trf-astra.md` lines 95-210 ((T1)-(T5)); the (T3)-(T5) and (T7) items of `gap-trf-check-opus.md`.
 - Method: by hand. One GUIDE run (scalar sign check of Lemma 1 on a = 4, 8 and the failure of periodicity at a = 6; script `guide_lemma1.py` next to this report, under 1 MB). It agreed with the hand proof and decides nothing.

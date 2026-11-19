@@ -6,7 +6,7 @@ R2c f 0.0396: max row sum 0.0022, row sum/f 0.057 (6.9s)
 R2c f 0.0196: max row sum 0.0011, row sum/f 0.056 (7.0s)
 R2c PASS
 Traceback (most recent call last):
-  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_rg/r2_derivative.py", line 93, in <module>
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_rg/r2_derivative.py", line 93, in <module>
     print(f"R2d Np {Np} f {f:.4f}: largest sup distance with block norm above {thr:.0e}: {int(D[N > thr].max())}")
                                                                                               ^^^^^^^^^^^^^^^^
 RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify the reduction dim with the 'dim' argument.

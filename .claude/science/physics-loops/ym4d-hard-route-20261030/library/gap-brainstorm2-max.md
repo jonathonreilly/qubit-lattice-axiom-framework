@@ -5,7 +5,7 @@
 
 ## Step 0. Clone commit and plan
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, branch `claude/ym4d-hard-route`, commit `b821c76346294fea64f51581799f6aa74a896cad` (pull --ff-only: already up to date, 2026-11-13).
+- Clone: `the lead clone`, branch `claude/ym4d-hard-route`, commit `b821c76346294fea64f51581799f6aa74a896cad` (pull --ff-only: already up to date, 2026-11-13).
 - Lane directory D = `.claude/science/physics-loops/ym4d-hard-route-20261030`.
 - Author: Claude Fable 5.2 at max effort. Row: FINISH 876. No subagents. No repository edits.
 
@@ -455,7 +455,7 @@ So Top 2 stops at (HC): the flux ground state can be created inside half the box
 
 ### 5a. Repo and lane search (bounded greps; a search that finds nothing is not a proof of absence)
 
-- `git -C /Users/jonreilly/Projects/Physics grep` on origin/main (993f5e4f6d), patterns: "fusion by the product rule", "transverse reflection positivity", "kurtosis of the (flux|odd)", "Var_pi(f^2)", "two-torelon", "principal chiral", "Witten Laplacian", "O'Neill", "Mack-Petkova", "binary icosahedral": no file. ("paramagnetic" and "mixed action" hit unrelated notes.) The lane's gap library is not on origin/main.
+- `git -C the main checkout grep` on origin/main (993f5e4f6d), patterns: "fusion by the product rule", "transverse reflection positivity", "kurtosis of the (flux|odd)", "Var_pi(f^2)", "two-torelon", "principal chiral", "Witten Laplacian", "O'Neill", "Mack-Petkova", "binary icosahedral": no file. ("paramagnetic" and "mixed action" hit unrelated notes.) The lane's gap library is not on origin/main.
 - Lane branch (the clone at b821c76346, `library/`, `parts/`, `gates/`; `gap-brainstorm-max.md` excluded until 5c). Hits that matter:
   - **Top 1 is a sharpening of a lemma the lane already has.** READ `library/gap-loop-eq-opus.md` L196-212 (row 754, Claude Opus 5.5; checked by row 756, `gap-loop-eq-check.md` L425-512): Lemma 6.2, "fusion by the product rule": for every bounded f in an electric sector, 1 - r_1 <= 4 ||f||_inf^2 Dir(f)/Var_pi(f^2), with the same ground-state transform Ptilde. Corollary 6.3 turns it into p_chi <= Theta_chi max(S_ev^(1/(4c)), e^(-a/(4c))). Remark 6.1: any positive exponent suffices in (F-h). The note then says where it breaks (L211): for f the eigenfunction, the constant ||psi||_inf^2/(||psi||_4^4 - 1) "is of the order of the number of places the flux can sit ... The product rule loses exactly the locality of the flux", and it asks for a bounded localized trial function, (LOC), which is open (rows 754-757).
   - **Top 2**: no hit for a reflection in a direction transverse to the flux with local line operators. The lane's reflection attempt used global twists (`gap-es1-opus.md` L232).

@@ -9,7 +9,7 @@ its warnings about normalization and block-law identification remain relevant.
 No `gap-exit`, `PIN-MIX`, `Higgs`, `SEED-FP` or `EXIT(` owner was found in
 `open-registry.md`. This is the assigned check, not a new attack on PATH.
 
-Searched `/Users/jonreilly/Projects/Physics` with bounded `git grep -n -i -E`
+Searched `the main checkout` with bounded `git grep -n -i -E`
 on `*.md`, `*.tex`, across all five requested refs, outside this folder too:
 
 | Ref | Resolved commit |

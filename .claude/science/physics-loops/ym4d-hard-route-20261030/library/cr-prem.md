@@ -20,7 +20,7 @@ file are absent. The registry's CR row still names `cr-r2`; FINISH row 408
 expressly assigns this follow-up on that same result. No separate target is
 taken over. Source quotations below give the exact ranges actually read.
 
-`I` denotes `/Users/jonreilly/ym4d-lead/sa/theorem_0_complete_account_raw_I.tex`.
+`I` denotes `LOCAL:ym4d-lead/sa/theorem_0_complete_account_raw_I.tex`.
 `SA` denotes `YM4_sketch_500.tex` in that directory. Their supplied revision is
 `31a47c543775`. That directory has no Git repository, so this revision is
 provenance supplied by the owner. The files themselves are the evidence.

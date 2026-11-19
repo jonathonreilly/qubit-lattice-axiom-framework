@@ -2,7 +2,7 @@
 
 (file seeded by the lead; the author writes below)
 
-Clone: /Users/jonreilly/ym4d-lead/clone at commit d17e0d63fe6a748ae144149598592635cf2240a6 (pulled 2026-11-12, already up to date).
+Clone: the lead clone at commit d17e0d63fe6a748ae144149598592635cf2240a6 (pulled 2026-11-12, already up to date).
 Lane directory D = .claude/science/physics-loops/ym4d-hard-route-20261030.
 Author: Claude Opus 5.5, max effort. Unchecked.
 

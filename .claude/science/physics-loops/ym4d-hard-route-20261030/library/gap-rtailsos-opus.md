@@ -1,6 +1,6 @@
 # The general surface tail by a Kraft-weighted exploration code (FINISH row 833), by Claude Opus 5.5 (max effort), author
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`. `git pull --ff-only` at the start: "Already up to date" at
+- Clone: `the lead clone`. `git pull --ff-only` at the start: "Already up to date" at
   `83f6ffafe92a18e8d6d415b47453e830424e4160`. During the run the clone advanced to
   `7f5a581faaf2a0607c6f315da65fd326a677e0b7` (rows 831-839, other lanes). `git diff --stat` between the two
   commits is empty for every source read here.
@@ -16,7 +16,7 @@
 - Marks. PROVED: proved here by me, by hand. READ: read in the named source (path and line). ARGUED: an argument
   short of proof standard. GUIDE: a numeric run that guided a choice and decided nothing. OPEN: not settled.
 - GUIDE runs: small Python scripts (well under 1 MB, seconds each) in
-  `/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-peaceful-heisenberg-e2d2a0/b3f5c21a-8638-4944-b69d-c639619895d6/scratchpad/lane833/guide/`.
+  `SCRATCH/lane833/guide/`.
   They optimised the free parameters of the Kraft weights and searched for simple fractions. Every inequality
   used below is then checked by hand with exact fractions.
 - Credits. Codex gpt-6-astra: (F1)-(F28) of gap-flat-astra, (R1)-(R28) and the exploration code (R4) of

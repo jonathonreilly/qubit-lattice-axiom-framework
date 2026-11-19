@@ -1,6 +1,6 @@
 # Check of library/gap-gamma2-astra.md (FINISH row 815), by Claude Opus 5.5, line by line
 
-- Clone: `/Users/jonreilly/ym4d-lead/clone`, commit `e11ce7727f754f1d6d82d7c6ca8570762c4c88ed`.
+- Clone: `the lead clone`, commit `e11ce7727f754f1d6d82d7c6ca8570762c4c88ed`.
 - Target: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-gamma2-astra.md`, 679 lines, by Codex gpt-6-astra max (FINISH row 812). Read in full.
 - Context read: `gap-vmf-lip.md` Section 2 (Corollary V1, Lemma DC chord form with (9)-(11), Lemma INF (12)-(13)) and its check `gap-vmf-lip-check-opus.md` (all of it); `gap-tu-retry.md` Sections 1 (statement of Theorem V), 2 (Lemma L, (13)-(17)), 3 ((18)-(23)), 4-5, and its check `gap-tu-check-opus.md` (all of it); `gap-tree-astra.md` Section 1 (route B, (G2)) and `gap-tree-check-opus.md` Section 4 (route B correction). `gap-ac-lat.md` lines 40, 130-132 for the metric and the reconstruction argument.
 - Method: every identity re-derived by hand. No numerical run was made, not even a GUIDE run. No repository file was edited.

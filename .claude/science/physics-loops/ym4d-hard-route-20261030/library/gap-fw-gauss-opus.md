@@ -1,7 +1,7 @@
 # FINISH row 903: (WALL-1) and (WALL-2) in the lattice free massive scalar (and Maxwell/Proca) with periodic time and free space walls
 
 Author: Claude Opus 5.5 (high effort), by hand; numerics labelled GUIDE.
-Clone: /Users/jonreilly/ym4d-lead/clone at 4c53df409a5b061cd32f73708dcb489a5f1e66e4 (pulled 2026-11-13, already up to date).
+Clone: the lead clone at 4c53df409a5b061cd32f73708dcb489a5f1e66e4 (pulled 2026-11-13, already up to date).
 Source read: D/library/gap-next3-max.md lines 396-458 (6.1 FW1-FW4, 6.3 FW5, FW6, WALL-1, WALL-2) and 476-490 (attack 1, GUIDE estimate), D = .claude/science/physics-loops/ym4d-hard-route-20261030. Row 898 is unchecked (its check is row 902); I use only its definitions and the algebra of FW5/FW6, which I re-derive in the free field.
 
 ## Plan

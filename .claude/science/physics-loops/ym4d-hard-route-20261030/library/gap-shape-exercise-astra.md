@@ -44,7 +44,7 @@ were read without checking its files into this tree.
 
 The caller's source restriction narrows the skill's literature search to
 the repository and the permitted primary texts. The permitted paper
-directory `/Users/jonBridger/ym4d-papers` is absent on this machine.
+directory `LOCAL:ym4d-papers` is absent on this machine.
 No other home directory or shared temporary directory was searched.
 The outline and CA-I were each downloaded once, into
 `/tmp/sa-gap-shape-exercise-astra.kQaQHL/`. The skill was downloaded into

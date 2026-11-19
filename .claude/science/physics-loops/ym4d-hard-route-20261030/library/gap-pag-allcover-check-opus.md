@@ -1,7 +1,7 @@
 # Check of gap-pag-allcover-astra.md
 
 - Checker: Claude Opus 5.5. Date: 2026-11-12. Cross-provider check: the author is Codex gpt-6-astra.
-- Source: `/Users/jonreilly/ym4d-lead/clone/.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-pag-allcover-astra.md`, 540 lines, read in full.
+- Source: `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-pag-allcover-astra.md`, 540 lines, read in full.
 - Context read: `gap-crux-exercise-astra.md` 749-984 (8.1, cover and PA) and 1194-1354 (8.4, GC1-GC4, PA_g); `gap-pag-corner-astra.md` 54-128 (face corner); `gap-pag-grow-astra.md` 30-105 and 333-534 (scope, section 5, Lemma V, R1); `gap-pag-grow-check-opus.md` in full (190 lines).
 - Method: by hand. One short numerical root search was run as a guide only (the exact range where the bound exceeds 1/160). No verdict rests on it.
 - Not read: PR #10114, the SA outline and the CA-I lines cited in the "Repo search" and Section 1 paragraphs. Those reading records are not checked.

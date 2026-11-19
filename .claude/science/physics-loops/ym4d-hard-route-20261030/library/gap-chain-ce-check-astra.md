@@ -6,7 +6,7 @@ targets; it supplies no check of this bridge. No matching owner was found
 by `gap-chain-ce|gap-os-equiv|ONE-K|UNIV-K|SEED-FP` in `open-registry.md`.
 FINISH 916 is the author row; 917 explicitly owns this check.
 
-Searched `/Users/jonreilly/Projects/Physics`, outside this lane, on
+Searched `the main checkout`, outside this lane, on
 `origin/main` (`4d88da5504d356762deb6b1a1c2695336af9fb81`), `pr/10114`
 (`f76f6c649cff7dffbab664d8976e680e8f287fe9`), `pr/10133`
 (`89faef229ff6e6bde42baad15ed8270c2f4087d8`), `pr/10134`

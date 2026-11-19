@@ -1,7 +1,7 @@
 # Check of library/gap-cf-astra.md (FINISH row 788), by Claude Opus 5.5, line by line
 
 - Checker: Claude Opus 5.5, one session, no subagents, 2026-11-12. Cross-provider check of a Codex gpt-6-astra max note.
-- Clone read: `/Users/jonreilly/ym4d-lead/clone`, branch `claude/ym4d-hard-route`, HEAD `31f93f865`. The note entered at commit `8e2dbd4b3` ("docs(ym4d): Codex lane output, gap-cf-astra").
+- Clone read: `the lead clone`, branch `claude/ym4d-hard-route`, HEAD `31f93f865`. The note entered at commit `8e2dbd4b3` ("docs(ym4d): Codex lane output, gap-cf-astra").
 - File checked (read in full, 580 lines): `.claude/science/physics-loops/ym4d-hard-route-20261030/library/gap-cf-astra.md`.
 - Inputs read: `gap-vortex-astra.md` in full (row 778); `gap-vortex-check-opus.md` in full (row 780); `gap-kappa-order.md` lines 95-135 (Q_8 counts).
 - Row label: the note calls itself FINISH row 783 (line 49). The header uses row 788 as requested. Its source pin is `cbfbf26f0`; its last line says "local and uncommitted", but the file is now committed at `8e2dbd4b3`.

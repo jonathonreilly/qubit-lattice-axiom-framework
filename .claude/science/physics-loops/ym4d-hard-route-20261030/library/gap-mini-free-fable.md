@@ -138,3 +138,97 @@ microscopic transport" (lead reading under row 1141).
 of OpenAI's pinned-cell step only as far as its mechanism, and then look for a route that
 is not in the registry. Candidates will be grepped against `library/open-core.md` and the
 FINISH rows before any attack.
+
+### Step 3 (22:25Z to 23:20Z). What (W) adds to the Jaffe-Witten gap; second comparison
+
+Read in this step: `library/prior/gap-o4-pinned-cell-read-opus.md` L57-200 (OpenAI's
+pinned-cell step, as digested by row 1009); `library/gap-solve16-astra62.md` L1-70,
+L236-281 (row 1175); `library/gap-solve9-astra62.md` L42-110 (row 1161, checked by row
+1162); the Ding-Huang-Yang introduction (pp. 1-6).
+
+**3.1 The question, from the Jaffe-Witten side.** The Jaffe-Witten gap is a statement
+about local gauge-invariant fields. A local gauge-invariant observable commutes with the
+centre flips of a periodic cube. So it acts inside each electric character sector, and
+the vacuum lies in the neutral sector. (W) asks more: every electric flux energy of a
+large periodic cube must be large. So I asked whether the flux clause is needed at all.
+
+**3.2 My derivation (ARGUED here; then found on file, see 3.3).** Write Z[k, m] for the
+64 twisted torus integrals, k the three temporal and m the three spatial twists, and
+Z[k, m] = sum over e of (-1)^(k.e) Z_(e,m), with Z_(e,m) the trace of the transfer
+operator on the sector of magnetic flux m and electric character e. Three sums are
+symmetric under every exchange of axes and have a positive transfer operator in every
+direction: the periodic one (m = 0, all e), the all-twist one (sum over k and m; it keeps
+e = 0 and all m; this is the integral over SO(3) bundles), and the one with the sign
+(-1)^(k.m) (it keeps e = m). Each contains the neutral periodic sector (e = 0, m = 0).
+An engine of the type of Theorem S applied to any one of the three gives a gap on that
+sector at every larger size. In a confining phase the first and third have one vacuum; in
+a phase with a cheap electric flux and a costly centre vortex the second and third have
+one vacuum. The third has one vacuum in both. So a seed for the third sum would give the
+neutral gap with no choice of flux branch.
+
+**3.3 This is on file.** Row 1161 (`gap-solve9-astra62.md` L85-105; check row 1162:
+HOLDS) proves exactly this. Under a short-time neutral premise at one cube, one of two
+alternatives holds (all twist ratios near 1, or all near 0), and in both the weighted
+trace S_kappa = s + sum over m != 0 of X_(m,m) is at most 113 eta ("a flux-independent
+seed for the local sector"); Theorem S-w then "gives the gap on its centre-blind local
+observable space under the lane's limit hypotheses. This does not yet give the assigned
+periodic wall in the second alternative." Row 1175 L270 adds that in either seed the
+neutral gap is at least c_q/n_0 on all large cubes. Verdict: found again; not new.
+
+**3.4 Consequence for the order of work (a reading of the record, for the lead).** By
+rows 1161 and 1175 the two open statements have different consumers:
+
+- the one-cube neutral premise (row 1180) is the only open input of the gap on local
+  observables, which is what the Jaffe-Witten clause asks; it is also necessary for (W)
+  (row 1161 L150);
+- the branch selection (row 1179) is needed for the flux clause of (W) only, that is for
+  the statement that the centre symmetry of the tori is unbroken.
+
+The queue rows 1179-1181 name (W) as the target. If the owner's target is the
+Jaffe-Witten gap, row 1179 is off its critical path. This is ARGUED from the two cited
+passages; I did not re-check Theorem S-w or its limit hypotheses.
+
+**3.5 OpenAI's step, and why I do not try a fourth port.** Row 1009's digest shows the
+shape of the two-dimensional argument: stiffness = direct cost minus current variance
+(3.4); after conditioning on cell boundaries, H_Q = v - Var J (3.19); a lower bound on
+Var J from a Helffer-Sjostrand identity (3.21) and the Ward identity whose bracket term
+rotates the current (3.7), (3.8), (3.28); the gain is twice a reciprocal-square frequency
+sum, (log L)/pi (3.51). The step needs currents of a global non-abelian symmetry that
+are themselves rotated by cheap moves. In a gauge theory every colour rotation of
+integration variables is a gauge move (zero cost, and gauge-invariant currents do not
+rotate), and the centre is the only non-gauge symmetry. Rows 1011-1050 and 1141 state
+this in theorem form (Lemma CEN+, Lemma TWIST, Lemma WN, Lemma MASS, the adjoint
+Laplacian gap of order 1/(1+b)). My own estimates in steps 1-3 gave the same numbers: a
+lab-frame or microscopic covariant twist of total angle pi costs of order N^2, because
+the adjoint transport is rough at the lattice scale; the cancellation that would remove
+N^2 is the variance term, which no change of variables with unit Jacobian captures.
+I add no port.
+
+**3.6 Other routes considered in this step and not pursued (each ARGUED in two lines; no
+theorem claimed).**
+
+- Curvature of the orbit space as a mass term. The Ricci term of the product of
+  3-spheres would give a gap of order g^2 per lattice unit. It is cancelled at the same
+  order by the Hessian of the logarithm of the vacuum (the measure term against the
+  tadpole), as gauge invariance forces. What is left is the running of the coupling.
+  On file as method 31 and Proposition G1.
+- A cone-contraction (Birkhoff) bound for the transfer operator. The projective diameter
+  of the image of the positive cone grows like beta times the volume, so the bound is not
+  uniform in the volume.
+- Loop states with U-turn recombination. For n fundamental strands on one link the
+  Casimir operator is n(n+2)/4 minus the sum over pairs of the cup-cap operators, so the
+  electric heat kernel is a positive combination of U-turn diagrams. But Haar integrals
+  of loop products have both signs (the integral of tr(U^2) is -1), so the positive cone
+  of loop states has no positive pairing with the trace. This is the crosscap sign of
+  method 35 in another basis.
+- A Knabe-type criterion for the heat-bath dynamics (a sum of projections 1 - E_l with
+  common kernel the constants). Its hypothesis is a local gap of a finite patch that is
+  uniform over boundary pins and exceeds a threshold of order 1/n^2. It is a worst-pin
+  statement at one cutoff, of the kind of (DS-W) (route registry), with no carry.
+- A model of the class with first-passage data and no gap. A local action that is
+  within the account's bounds of the Wilson form at first passage stays near the
+  renormalized trajectory, so by universality (a belief) it has the Wilson infrared
+  behaviour. Light matter changes the first-passage data. I have no counter-model; the
+  test table point 5 stands.
+
+Nothing is proved in this step.

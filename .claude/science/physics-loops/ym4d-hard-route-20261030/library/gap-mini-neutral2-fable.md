@@ -162,3 +162,51 @@ a(beta) proportional to exp(- beta/B)). A bound with B' < B gives a lower bound 
 falls faster than the lattice spacing, so it gives nothing in the continuum limit. A bound that suffices has the
 sharp constant up to an integrable error. So a transport proof contains asymptotic scaling of the gap itself. This
 is the reading of (VIR-log) in row 708 ("a change of form, not of difficulty"), found again.
+
+## 4. Comparison with row 1180 (22:45Z; read only after Sections 1-3 were written)
+
+`library/gap-mini-neutral-fable.md` at this pin (commit 654e32080; its last commit there is 9bd75675d) holds a header,
+a provenance note and a four-step plan. It holds no mathematical statement. So there is nothing to compare, and
+nothing of row 1180 is used or checked here. Its plan (state the bound with every quantifier, grep, attack, record
+the obstruction per route) is the same plan as this file's. If row 1180 reports a proof or a disproof of (N-phys),
+it conflicts with nothing proved here, but it would have to pass Lemma N2 (a): the cube must have
+n m_ev >= K log 2.
+
+## 5. What this row adds, and what it does not
+
+1. **(N-phys) is the glue half again, in a larger box (PROVED part: Lemma N1; ARGUED part: the reading).** The
+   order-one margin and the high aspect of row 1161's form are equivalent, by one line, to a small even seed at
+   aspect 2 on the same cube (K = 32 for the even part). Rows 895, 920 and 1125 attacked that statement
+   ((GLUE-FP), (SEAM), (GLUE-STEP)) and stopped at the same place. This row stops there too.
+2. **All ten blind routes are on file (Section 2).** None is new. For each one Section 3.2 names the blocking
+   statement and its standing in the lane.
+3. **Lemma N2** gives the necessary size: a cube with (N-phys) has neutral gap at least K log 2 in units of its
+   inverse side. With any K of the size row 1161 needs this is far outside a numeric test here; no GUIDE run was
+   made (memory was 60 percent free; no job was started and the numeric lock was not taken).
+4. **Not done.** No proof of (N-phys). No counterexample. No new selective mechanism. The consumer (rows 1161, 1179,
+   1065) was read, not re-proved. The Sussman-Alpoge repository was not searched in this row; no cross-branch search
+   was made, because no statement new to the lane is claimed (Lemmas N1 and N2 are elementary, and Lemma N2 is
+   Lemma G5 of row 895 at another aspect).
+5. **Evidence for the lead (the lead decides).** Four rows (895 and this one by Claude Fable, 920 by Claude Opus,
+   1125 by gpt-6-astra) reach the same sentence on the neutral half. A further blind attack on (N-phys) by the Claude family
+   is unlikely to differ. What is missing is unchanged: one inequality at order-one coupling that is false for a
+   massless factor, or a step that carries asymptotic freedom across the band. The sharp-rate remark of 3.2 says
+   that a transport proof in the coupling must contain asymptotic scaling of the gap with its exact rate.
+
+Credits. Tadeusz Balaban (the renormalization group the lane's trajectory rests on). Ethan Sussman and Levent Alpoge,
+with Claude and Codex as authors of their text (the transfer operator and trace identity GL8 that row 1161 uses; their
+account leaves the gap outside its theorem, CA-I 2704-2712 as cited in row 1161). Sourav Chatterjee (the
+weak-coupling free-energy method of rows 1143-1153). gpt-6.2-astra (rows 1143-1177, the chain and (N-phys) itself).
+Earlier Claude rows 895 and 920 (the glue half), 720 (Theorem ZD-c), 708 ((VIR-log)), 839 (the chi-square form),
+678 (the thin twisted torus), 1179 (Theorem BP).
+
+RESULT: (N-phys) is NOT proved and NOT refuted; it stays OPEN. Claude Fable 5.2 max, Mac mini worker 1, author only,
+checked by no one. Ten independent routes were followed to their first failing step; every one is already on file
+(rows 678, 708, 720, 839, 895, 920, 1017, 1132-1135, 1161), and Section 3.2 names the blocking statement for each.
+PROVED here (elementary): Lemma N1, s(v) <= s(u)^(v/u), so (N-phys) with K = 32 already gives the even seed
+s(n/2; n^3) <= 2^(-16) (the (m, m) sectors still need row 1161's non-explicit K); Lemma N2, a cube with (N-phys) has
+neutral gap at least K log 2 in units of its inverse side, and a gap above about 2K log(2 S_0) with a finite
+short-time count S_0 gives (N-phys). ARGUED: (N-phys) is the glue half of rows 895, 920, 1125 in a box about K/2
+times larger, with no new handle from the order-one margin; a transport proof in the coupling needs the sharp
+asymptotic-scaling rate. Row 1180's file held no mathematics at this pin, so no comparison was possible. OPEN:
+(N-phys), the continuum datum, (BS), (W).

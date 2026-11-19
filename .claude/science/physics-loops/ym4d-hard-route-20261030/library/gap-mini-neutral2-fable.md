@@ -75,3 +75,27 @@ GUIDE run of (N-phys) itself is possible, and none is made in this file.
 (N-phys) is T_ev, uniformly in the cutoff, at one physical size (row 1179 Section 6 item 5). It is false for compact
 U(1) at weak coupling, for the free photon, and for every product with a massless factor. A proof has to use the
 non-abelian structure, a rate, the whole state space, and typical fields. Tools are of kind (K-one) or (K-flow).
+
+## 2. Blind derivations and where they land (22:32Z; no new claim in this section)
+
+Each line below was derived by hand in this session before the matching lane file was opened. The match was then
+found with `grep` and is named. None of these is claimed as new. Every one stops at the same place: an order-one
+statement about one physical scale beyond the last scale that perturbation theory controls ("the band").
+
+| # | Blind derivation about (N-phys) | First failing step | On file |
+|---|---|---|---|
+| 1 | Pressure form: (N-phys) is p_neutral/T^4 <= log(3/2)/K^3 at T = K/L; a massless gas has a constant p/T^4 | nothing bounds the pressure from above below the scale of the gap | row 895 ("its content is thermodynamic", faces G1-G4, `gap-glue-max.md`); the floor: rows 975, 988 |
+| 2 | Gap plus count: (E4) of 1.2 turns (N-phys) into "n m_ev >= c_K at one physical size" plus a cutoff-uniform short-time trace bound; (NC1) is the converse | the gap in units of 1/L has to pass a threshold above the massless value 2 pi | Lemma G5 of row 895 (`gap-glue-max.md` L188-196: (GAP_ev) and (COUNT)); Theorem ZD-c of row 720 (`gap-phys-seed.md` L311: (Z-UNB) and (BDD-Delta)) |
+| 3 | Coupling integration: log X_beta(u) is the integral over [0, beta] of the thermal plaquette excess, because X = 1 at beta = 0 | needs the excess on the whole path; that is "no transition on the path" | Theorem D (f) of row 697 (`gap-crux-restate.md` L99); route RB; Proposition TR and (BETA)_C of row 895; (M5), (NOCRIT) |
+| 4 | Rotated frame: log X(u; n^3) = n^3 u [F(n,n,u;inf) - F(n,n,n;inf)] + log(1 + s'(n; n^2 x u)), both terms >= 0 (F = free energy per site, decreasing in each side) | each term is again a neutral bound of the same strength; every exact inequality of the class points the same way | Lemma CS of row 895; shape comparison B3 (`gap-seed-shape.md`) |
+| 5 | Mixing form: s(u) is the chi-square distance of the two-slice law from the product law, at slice distance u/2 | a volume-uniform minorization, or two-replica overlap bounds | Identity I1 of row 839 (`gap-compress-opus.md` L36); statement (A) of row 1132 and rows 1135, 1138; swap forms, rows 1118-1121; row 1161 (1)-(2) |
+| 6 | Semi-classical window: on a thin torus with a centre twist the neutral gap is perturbative (of order pi/width) and vortices disorder the long plane; continue in the width | the continuation in the width crosses the band; the engine does not read a thin or twisted seed | Route T, (AC'-lat), rows 678-686 (`gap-ac-lat.md`); planar tension test of row 1177 |
+| 7 | A model with the same ultraviolet data and no unique gapped vacuum: SU(2) at theta = pi (anomaly argument). So a proof must use positivity of the measure | belief-grade; it is outside the positive class and binds nothing | item 72 of row 838; C7 and N11 of row 1052 (`gap-wall-assumptions-opus.md` L168, L212) |
+| 8 | Thermal count p/T^4 as a c-function; entropic monotones; the trace anomaly gives T d(p/T^4)/dT = (e - 3p)/T^4 | no monotone is proved, and a monotone alone gives no rate | F7 of row 1031 (`gap-afield-a-max.md` L342); rows 934, 1072 (MON statements, some FALSE) |
+| 9 | Rigidity: if no size has the neutral bound, a rescaled limit is a gapless scale-covariant theory; exclude it | no rigidity theorem excludes an infrared-free abelian limit | rows 1017-1019, 1024 (Theorems CE, OM, CR, TRI) |
+| 10 | Margin: X(u) < 2 at one time gives mu_1^u <= (1 + s_0)/2, so all later excited weights decay geometrically; this is all that row 1161's (4) uses of the premise. For the neutral part alone K = 80 is explicit: s(n/80) <= 1/2 gives s(n/2) <= (3/2)(3/4)^39 < 2.1e-5 | the seven (m, m) sectors need row 1161's compactness step, so K stays non-explicit for the Pfaffian seed | row 1161 (3)-(4), L48-63 |
+
+Reading (ARGUED). The order-one margin and the high aspect of row 1161's form do not make the statement easier to
+prove. By line 10 they trade the old threshold (1/5041 at aspect 2) for a box about K/2 times larger. In a theory
+with a particle gas the old seed needs m_phys L of about 25 and (N-phys) with K = 80 needs about 1200
+(GUIDE arithmetic with the gas formula of 1.3).

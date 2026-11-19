@@ -53,3 +53,33 @@ Facts used below, all elementary:
   conjugation). So (BS) alone holds for compact U(1): it is not the selective statement. The selective content of
   (W) then sits in the neutral premise (row 1180's item). This agrees with the row's remark that every positive
   result so far is non-selective.
+- 21:33Z read `gap-solve17-astra62.md` in full (planar tension test (7), bounds (14), (25), (26), obstruction (33), (35)). Section 2 written.
+
+## 2. Where blind derivations land (no new claim in this section)
+
+Before reading row 1177's spreading sections I derived the following by hand. Each one is on file, so none is
+claimed here.
+
+| Blind derivation | On file |
+|---|---|
+| Jensen with fixed (configuration-independent) insertions at half-links gives, after gauge averaging at each plaquette corner, the cost beta <w_p> sum_p [1 - eta_p prod_corners cos c], and a per-site parity constraint forces order one cost per transverse site: area law | thin-stack and Mack-Petkova stack bound, row 1175 (12), (14); row 1177 L32 |
+| A spread vortex with a field-built colour axis pays beta a^2 abs(D n)^2, and abs(D n)^2 is at least c/beta on typical fields: area law with a coefficient independent of beta | row 1141 (2); row 1177 (14), (26), obstruction (33)-(35) |
+| The exact sewing identity (1-z)/(1+z) = E_nu prod tanh(J_x) | row 1147 (16)-(19); row 1177 (24) |
+| Twist = ratio of the weights of the two SO(3) bundle classes; frozen Q_8 has twist eaters and ratio 96/736 | rows 737, 744, 878, 1130 (counts 736, 96) |
+| The 2D reading of the planar test: sigma_beta(w) is about 2 exp(-F_v(w)), F_v the free energy of one vortex spanning the transverse w x w torus | row 1177 (8), (13), the Z_2 plane model at L361 |
+| Renormalization-group spreading gives at best an area law with coefficient about xi(beta)^(-2), and the competing branch allows a vortex tension that small | consistent with row 1177 (25), (31); set-aside method 23 |
+
+Reading of the state (ARGUED): at fixed beta every first-moment or quadratic comparison is an area law in the
+width (row 1177 (33)). (BS) asks for less than area by more than a logarithm. In a hypothetical competing branch
+the vortex tension in physical units is at most of order (seed size)^(-2), far below what ultraviolet control can
+exclude. So no argument that reads only scales below the seed size can select the branch.
+
+## 3. Candidate: branch constancy along a path of couplings (to be checked against the lane before any claim)
+
+Idea. Both branches are certified by finite-volume strict inequalities (a seed with margin q at one size, improved
+by Theorem S at larger sizes), which are open conditions in the coupling. They exclude each other. Row 1161 says
+that the neutral premise forces one of them. So on any connected set of couplings where the neutral premise holds,
+the branch is constant; at strong coupling the branch is the periodic one. Then (BS) at beta_j would follow from the
+neutral premise at every beta in (0, beta_j], with no flux input at all. Next step: grep the lane for this argument
+(continuity method M5, (NOCRIT), carry rows 978, BR-3), then write it as a theorem with exact hypotheses, or name
+the match and drop it.

@@ -18,7 +18,7 @@ Status of this file: in progress. Sections are appended one step at a time.
 ## 0. Log of steps
 
 - Step 0 (22:59Z): file created; reading FINISH.md, GOAL.md, `parts/gap.md`, `library/open-core.md`.
-- Step 1 (23:25Z): orientation read finished (list below). Attack not yet chosen.
+- Step 1 (23:05Z): orientation read finished (list below). Attack not yet chosen.
 
 ## 1. Orientation: what the record holds (read in this run; statements about the record)
 

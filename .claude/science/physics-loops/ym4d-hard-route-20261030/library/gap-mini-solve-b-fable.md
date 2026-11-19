@@ -66,3 +66,85 @@ Verdict (GUIDE): this screening found no route off the lane's map. It agrees wit
 - Part B (Step 5): the descent. Decide by a hand estimate whether the symmetric twist of the corner survives when the in-plane curvature is unfrozen. This is the step that decides whether Part A is on the path of (N-phys).
 
 Stop rule: a proof, a counterexample, or the first failing step with its explicit failure, for each part.
+
+## Step 3. Part A: the doubly flat corner, exact structure
+
+Credit. The corner and the remark that its twists act transitively on pins are row 1053 6.8 (Claude Fable 5.2 max). The picture of anisotropic Yang-Mills as coupled two-dimensional chiral models is P. Orland's (cited by row 1053). Subsystem symmetries: N. Seiberg and S.-H. Shao (cited there). The twist inequality is C. Pfister's form of the Mermin-Wagner argument (also R. Dobrushin and S. Shlosman). The complex twist is O. McBryan and T. Spencer's. Everything below is elementary. The lane holds the corner only as that remark, so the lemmas are written out here.
+
+### 3.1 The model
+
+Sites x = (p, y), with p in a finite box F of Z^2 (directions 1, 2, "fibre") and y in a finite box B of Z^2 (directions 3, 4, "base"). Free boundary. One spin k(x) in SU(2) at each site. Write <a, b> = (1/2) tr(a b^(-1)) for a, b in SU(2); it is the Euclidean inner product of S^3 in R^4. The corner model at coupling beta > 0 is the probability measure
+
+  d mu(k) = Z^(-1) exp(E(k)) prod_x dk(x),   E(k) = beta sum (1/2) tr[ k(x)^(-1) k(x+mu) k(x+mu+nu)^(-1) k(x+nu) ],
+
+where the sum runs over all mixed plaquettes (x; mu in {1,2}, nu in {3,4}) inside F x B, and dk is Haar measure.
+
+**Lemma A0 (origin; ARGUED).** For Wilson SU(2) on F x B with free boundary and plane couplings beta_12 = beta_L, beta_34 = beta_T, mixed coupling beta, the limit beta_L, beta_T to infinity is mu in the variable k = g^(-1) h, where U_mu(x) = g(x) g(x+mu)^(-1) for mu = 1, 2 and U_nu(x) = h(x) h(x+nu)^(-1) for nu = 3, 4.
+Argument. On a two-dimensional box with free boundary, the links are in bijection with (plaquette variables, gauge function modulo a constant), and Haar measure goes to product Haar measure (axial gauge). So the limit of the frozen planes is the image of product Haar measure on g and on h. The mixed plaquette is tr[g(x) g(x+mu)^(-1) h(x+mu) h(x+mu+nu)^(-1) g(x+mu+nu) g(x+nu)^(-1) h(x+nu) h(x)^(-1)] = tr[k(x)^(-1) k(x+mu) k(x+mu+nu)^(-1) k(x+nu)]. If g and h are independent and Haar, so is k. The weak limit itself is not written out here; nothing below uses A0.
+
+### 3.2 Exact identities (all PROVED; each is a one-line computation)
+
+**Lemma A1 (sheet form).** For a fibre link e = <p, p'> put m_e(y) = k(p, y)^(-1) k(p', y). Then the mixed plaquette on e and the base link <y, y'> equals <m_e(y), m_e(y')>. So E = beta sum over fibre links e of the two-dimensional O(4) energy of the field y -> m_e(y). The fields m_e are tied by the fibre constraint: the ordered product of m_e around every fibre plaquette is 1.
+Proof. (1/2) tr[k(p,y)^(-1) k(p',y) k(p',y')^(-1) k(p,y')] = (1/2) tr[m_e(y) m_e(y')^(-1)]. QED.
+The same holds with fibre and base exchanged: for a base link f = <y, y'> put n_f(p) = k(p, y) k(p, y')^(-1); the plaquette is <n_f(p'), n_f(p)>.
+
+**Lemma A2 (symmetries).** mu is invariant under k(p, y) -> c(y) k(p, y) d(p) for every c: B -> SU(2) and d: F -> SU(2). It is invariant under the automorphisms of F and of B. If F = B, it is invariant under the exchange (p, y) -> (y, p) together with k -> k^(-1).
+Proof. m_e(y) -> d(p)^(-1) m_e(y) d(p'), and <.,.> is invariant under simultaneous left and right multiplication. For the exchange, tr A = tr A^(-1) in SU(2), and the inverse of the plaquette word with k -> k^(-1) is the plaquette word with mu and nu exchanged. QED.
+
+**Lemma A3 (only singlets survive).** For every nontrivial irreducible representation D and all sites x != x', the expectation of D(k(x)^(-1) k(x')) is 0.
+Proof. If the base points differ, average over c at one of them. If they agree, the fibre points differ; average over d at one of them. QED.
+
+**Lemma A4 (a two-dimensional model with a homogeneous spin space).** Put K(y) = (k(p, y))_{p in F}. Then mu is a nearest-neighbour model on B with single-site space T = SU(2) \ SU(2)^F (left diagonal quotient), pair energy E(K, K') = beta sum_e <m_e(K), m_e(K')>, and symmetry group SU(2)^F acting on T from the right. The action is transitive. So any two boundary conditions on a base region differ by a site-dependent symmetry.
+The fibre with two sites gives the standard two-dimensional O(4) model for m. A fibre that is a chain (or any tree) gives independent O(4) models, one per fibre link, because the fibre constraint is empty.
+
+**Lemma A5 (one plane, given the others).** Fix p_0 and all k(p, .) with p != p_0. Put s(y) = k(p_0, y). The conditional law of s has density proportional to exp(beta sum over base links <y, y'> of <Q_{yy'} s(y'), s(y)>), with Q_{yy'} = sum over the fibre neighbours n of p_0 of k(n, y) k(n, y')^(-1), a quaternion of norm at most 4, acting by left multiplication. It is invariant under s -> s d, d in SU(2).
+So one plane is a two-dimensional O(4) model with link strengths in [0, 4 beta] and a background connection in the left SU(2) only. The right SU(2) is an exact global symmetry for every background. (Method 36 of `parts/gap.md` is the two-sided case, where no symmetry is left.)
+Proof. <s(y)^(-1) k_n(y), s(y')^(-1) k_n(y')> = (1/2) tr[s(y') s(y)^(-1) k_n(y) k_n(y')^(-1)]; sum over n. QED.
+
+**Lemma A6 (the symmetric twist and its exact cost).** Fix a fibre site p_0, a unit vector n, and theta: B -> R. Let J = (i/2) n.sigma and T_theta: k(p_0, y) -> k(p_0, y) exp(theta(y) J), all other spins fixed. T_theta preserves product Haar measure. For a fibre link e from p_0 and a base link <y, y'>, with delta = theta(y') - theta(y) and q = m_e(y) m_e(y')^(-1) = q_0 + i q.sigma,
+
+  <m_e(y), m_e(y')> o T_theta = cos(delta/2) q_0 - sin(delta/2) n.q .
+
+No other term of E changes. Hence E o T_theta + E o T_(-theta) - 2E >= -2 C(theta), with C(theta) = beta N sum over base links of (1 - cos(delta/2)) and N at most 4 the number of fibre neighbours of p_0.
+Proof. m_e(y) -> exp(-theta(y) J) m_e(y); (1/2) tr[(cos(delta/2) + i sin(delta/2) n.sigma)(q_0 + i q.sigma)] = cos(delta/2) q_0 - sin(delta/2) n.q; and q_0 is at most 1 in absolute value. QED.
+
+### 3.3 Two consequences at every coupling (PROVED)
+
+**Proposition A7 (Mermin-Wagner step, uniform in the fibre and in the pins).** Let nu be mu, or mu conditioned on the values of any spins outside {p_0} x supp(theta). For every bounded f >= 0,
+
+  nu(f o T_theta) nu(f o T_(-theta)) >= exp(-2 C(theta)) nu(f)^2 .
+
+Proof. nu(f o T_theta) = nu(f rho_theta) with rho_theta = exp(E o T_(-theta) - E), by the change of variables k -> T_theta k (the conditioning is untouched). By A6, rho_theta rho_(-theta) >= exp(-2C). Cauchy-Schwarz: nu(f sqrt(rho_theta rho_(-theta)))^2 <= nu(f rho_theta) nu(f rho_(-theta)). QED.
+Size of C. Take theta = theta_0 phi / log r with phi the profile in the proof of A8 below (phi(y_0) = log r, phi = 0 beyond sup-norm radius r). Then delta is at most theta_0/(j log r) on the at most 8j + 4 links between shells j and j + 1, and 1 - cos(delta/2) <= delta^2/8, so C(theta) <= (beta theta_0^2/(2 log^2 r)) sum_{j=1}^{r-1} (8/j + 4/j^2) <= 4 beta theta_0^2 (log r + 2)/log^2 r. This tends to 0 as r grows, at a rate free of the fibre size, of the pins and of the other planes. So no boundary condition on the base fixes the right orientation of a spin. This is the first half of the two-dimensional engine. It is blind: it holds verbatim for the U(1) corner.
+
+**Theorem A8 (thin mixed loops decay at least like a power).** Let beta >= 1/32. Let p_0 != p_1 in F and y_0, y_1 in B with r = |y_0 - y_1|_infinity >= 2. Put
+
+  W = (1/2) tr[ k(p_0, y_0)^(-1) k(p_1, y_0) k(p_1, y_1)^(-1) k(p_0, y_1) ] .
+
+Then |mu(W)| <= exp(1/(64 beta)) r^(-1/(128 beta)), for every F and B. By A2 the same bound holds with the roles of fibre and base exchanged.
+In the gauge theory W is the Wilson loop of the rectangle with corners (p_0, y_0), (p_1, y_0), (p_1, y_1), (p_0, y_1), in the doubly flat sector. W is invariant under all symmetries of A2, so the bound is not a consequence of A3.
+
+Proof. Take n = e_3, so exp(theta J) = diag(e^(i theta/2), e^(-i theta/2)). Let M = k(p_0,y_0)^(-1) k(p_1,y_0) k(p_1,y_1)^(-1) k(p_0,y_1) and let a be its (1,1) entry; W = Re a and |a| <= 1. Under T_theta, M -> exp(-theta(y_0) J) M exp(theta(y_1) J), so a o T_theta = exp(-i (theta(y_0) - theta(y_1))/2) a. For real theta the change of variables gives
+
+  mu(a) = exp(-i (theta(y_0) - theta(y_1))/2) Z^(-1) int a exp(E o T_theta) dk .
+
+By A6, E o T_theta is a trigonometric polynomial in the numbers theta(y). So the right side is an entire function of theta in C^B. It is constant on R^B, hence constant. Put theta = i alpha with alpha real. By A6 with delta = i eta, eta = alpha(y') - alpha(y): Re(E o T_(i alpha) - E) = beta sum (cosh(eta/2) - 1) q_0 <= 4 beta sum over base links of (cosh(eta/2) - 1). So
+
+  |mu(a)| <= exp[ (alpha(y_0) - alpha(y_1))/2 + 4 beta sum (cosh(eta/2) - 1) ] .
+
+Take alpha(y) = -c phi(y), phi(y) = log(r / max(1, |y - y_0|_infinity)) for |y - y_0|_infinity <= r and 0 beyond, c = 1/(32 beta) <= 1. Then alpha(y_0) - alpha(y_1) = -c log r. The gradient of phi is 0 inside a shell {|y - y_0|_infinity = j} and on the links at y_0; it is at most 1/j on the at most 8j + 4 links between shell j and shell j + 1, 1 <= j <= r - 1. With cosh t - 1 <= (t^2/2) cosh t and cosh(1/2) < 2:
+
+  sum (cosh(eta/2) - 1) <= 2 sum_{j=1}^{r-1} (8j + 4) c^2/(8 j^2) <= 2 c^2 (log r + 2) .
+
+The exponent is at most -(c/2) log r + 8 beta c^2 (log r + 2) = -(log r)/(128 beta) + 1/(64 beta). QED.
+
+Remarks. (i) The bound is blind: the same proof gives it for the U(1) corner, where a Gaussian computation gives a power law, so a power is the best a blind argument can give. (ii) In the isotropic Wilson model a 1 x r loop decays exponentially in r at every coupling (one-link conditional expectation, B. Simon and L. Yaffe). In the corner this argument is not available: the conditional law of one plane has an exact continuous symmetry instead of a strictly positive density per link variable in the direction of the loop.
+
+### 3.4 The end-point of route S2 as one statement
+
+**(Sigma-unif) (OPEN).** For every beta there are C and m > 0 such that, for all boxes F, B, all base sets Y, Y' and all bounded f, g, with f a function of the spins over Y and g of the spins over Y' (any fibre positions): |mu(f; g)| <= C |Y| |Y'| sup|f| sup|g| exp(-m dist(Y, Y')). The constants do not depend on F.
+
+**Lemma A9 (assembly; PROVED GIVEN (Sigma-unif)).** (Sigma-unif) gives four-dimensional exponential clustering of the corner model for bounded local observables: if f and g depend on spins in sets of diameter at most D at sup-norm distance R, then |mu(f; g)| <= C' exp(-m (R - 2D)), with C' = C (D+1)^4.
+Proof. Either the base projections or the fibre projections of the two supports are at distance at least R - 2D. In the first case apply (Sigma-unif). In the second, apply it after the exchange of A2, which maps the class of all boxes to itself. QED.
+
+What (Sigma-unif) asks of the two-dimensional engine (rows 1007-1010): the pinned-cell stiffness iteration for the homogeneous space T of A4 with the right action of SU(2)^F, uniformly in F. By A5 the one-plane form is the O(4) class with one-sided backgrounds. Whether the posted proof covers one-sided backgrounds is not decided here: its text was not read in this session, and rows 1009 and 1077 read only its Section 3. The first half of the engine is A7. The second half (the bracket gain) is the open part. A plane-by-plane form does not suffice by itself: uniform conditional mixing of each plane given the others does not give joint mixing (two planes that determine each other are a counterexample to the bare implication), so the iteration has to run on T.

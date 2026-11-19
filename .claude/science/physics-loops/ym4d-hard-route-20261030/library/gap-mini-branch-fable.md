@@ -27,6 +27,10 @@ Steps, one per response, each appended here before the next:
 
 - 21:12Z file created; reading inputs.
 - 21:13Z read: FINISH rule sections, GOAL.md, `gap-council-synthesis.md`, `parts/gap.md` L1-160 (formulation, methods 19-36, lead rules, obligations to row 1072), FINISH RESULT lines of rows 1141-1178 and the sibling rows 1180 (neutral bound) and 1181 (free method). Row 1178 (gpt-6.2-astra, continue chain on (W)) runs in parallel. Next: the exact statements of rows 1175 and 1177.
+- 21:33Z read `gap-solve17-astra62.md` in full (planar tension test (7), bounds (14), (25), (26), obstruction (33), (35)). Section 2 written.
+- (entries between 21:13Z and 21:52Z are the dated notes inside Sections 1-7.) 21:52Z: Sections 5-7 written and
+  corrected once (frozen Z_2 wording, positivity of the plaquette mean, the mixture sentence). Next: re-read of every
+  PROVED item, then the RESULT line.
 - 21:18Z read `gap-solve16-astra62.md` L1-135 (statements (1)-(13)). Section 1 below written from it.
 
 ## 1. The statement (from row 1175, `gap-solve16-astra62.md` L59-64; unchecked there)
@@ -53,7 +57,6 @@ Facts used below, all elementary:
   conjugation). So (BS) alone holds for compact U(1): it is not the selective statement. The selective content of
   (W) then sits in the neutral premise (row 1180's item). This agrees with the row's remark that every positive
   result so far is non-selective.
-- 21:33Z read `gap-solve17-astra62.md` in full (planar tension test (7), bounds (14), (25), (26), obstruction (33), (35)). Section 2 written.
 
 ## 2. Where blind derivations land (no new claim in this section)
 
@@ -309,8 +312,8 @@ Also N a_j = L/2. (ii) Proposition P-ev with these data: log(1/(5041 x 8 eps)) /
    that the gap clause survives when the flux clause fails.
 3. What (BS) decides is the phase of the centre symmetry on tori. In alternative I the seven electric flux sectors
    of the periodic cube are heavy and every twist ratio tends to 1 (confinement on tori). In alternative II they
-   are light, every non-zero twist ratio tends to 0, and the periodic torus state is a mixture of eight flux
-   sectors that agree on A in the limit (Theorem EV-L (a), (d)). Both alternatives have the gap M_* on A.
+   are light and every non-zero twist ratio tends to 0 (row 1161 (9)). In both, the periodic torus state and the
+   centre-even state have the same limits on A (Theorem EV-L (d)), and the gap on A is at least M_*.
 4. Consequence for the queue (evidence for the lead; the lead decides): a row on (BS) moves (W) and the
    confinement statement, and it does not move the gap clause. The open lattice input of the gap clause is the
    item of row 1180, (N-phys). `parts/gap.md` L200 lists both as open without this distinction.
@@ -342,9 +345,9 @@ d_(x,p) = m_(h')^(-1) m_h and t_(x,p) = (1/2) tr d_(x,p) (the trace does not cha
 (b) For every site x and coordinate plane, the corner elements of the four plaquettes of that plane at x, taken in
 cyclic order as d_i = m_(h_i)^(-1) m_(h_(i+1)), satisfy d_1 d_2 d_3 d_4 = 1.
 (c) For every (1,4)-plane, the sum over its plaquettes of (1 - eta_p prod_x t_(x,p)) is at least 1 - 2^(-1/2).
-(d) So J(phi) >= (1 - 2^(-1/2)) beta < w >_beta N_2 N_3 for every fixed multiplier field, where N_2 N_3 is the
-number of (1,4)-planes; the thin stack (a_l = -1 on one layer of links) has J = 2 beta < w >_beta N_2 N_3. No
-choice of fixed multipliers gives less than an area law.
+(d) So J(phi) >= (1 - 2^(-1/2)) beta < w_14 > N_2 N_3 for every fixed multiplier field, where N_2 N_3 is the
+number of (1,4)-planes and < w_14 > >= 0 is the periodic expectation of one (1,4)-plaquette; the identity map
+(the thin stack) has J = 2 beta < w_14 > N_2 N_3. No choice of fixed multipliers gives less than an area law.
 
 Proof. (a) In the word of the plaquette p after phi, the two multipliers that meet at a corner x multiply to
 d_(x,p) or its inverse, so (phi U)_p is the plaquette word of U with one insertion at each corner. The measure <.>_0
@@ -361,9 +364,12 @@ angle theta_i = arccos abs(t_i) between r_i and the identity is below pi/4. By (
 1 = (prod sigma_i) r_1 r_2 r_3 r_4 = - r_1 r_2 r_3 r_4. The angle metric on SU(2) is invariant under left
 multiplication, so the angle between 1 and r_1 r_2 r_3 r_4 is at most theta_1 + ... + theta_4 < pi. But the angle
 between 1 and -1 is pi. Contradiction. So some plaquette of the plane has eta_p prod t <= 2^(-1/2). (d) < w_p >_0
-is the same for all plaquettes of a given orientation and is >= 0 (log Z is convex in beta and, on tori with even
-sides, even in beta, by the link signs (-1)^(x_1 + ... + x_(mu-1)) on direction mu). Drop the other planes and use
-(c) in each (1,4)-plane. QED
+is the same for all plaquettes of one orientation (translations), and it is >= 0 for every orientation: as a
+function of the coupling b of the plaquettes of one orientation alone, say (1,4), log Z is convex, and it is even,
+because the change of variables U_(x,4) -> (-1)^(x_1) U_(x,4) (N_1 even) reverses the sign of every (1,4)-plaquette
+and of no other; so its derivative at b = beta >= 0, which is the sum of the < w_p >_0 over the (1,4)-plaquettes,
+is >= 0. Drop the plaquettes of the other planes (their terms are >= 0 by (a) and abs(t) <= 1) and use (c) in each
+(1,4)-plane. QED
 
 Match. In spirit this is the thin-stack and stack-parity bound of row 1175 (12), (14) and the quadratic obstruction
 of row 1177 (33). Proposition J is exact for the first moment and covers multipliers on all links, including the
@@ -393,30 +399,135 @@ first-order line.
 Statement. Let a method give, at each fine cutoff, - log zeta_beta(N) <= A (N/l)^2 for all large N, with A and the
 length l fixed in lattice units (this is the form of 7.1, 7.2, and of a twist inserted in an effective action at a
 block scale l). In the competing branch row 1175 (4) reads - log zeta_beta(N) >= c_q (N/n_0)^2 / log(2 + N/n_0) -
-log 64. The two are compatible for all large N. So no bound of the form A (N/l)^2, with any A and l, contradicts the
-competing branch; the frozen Z_2 theory at large coupling has both (lane Peierls theorem; `gap-crux-exercise2-max.md`
-test table). The same holds in the planar form: row 1177 (3) allows sigma_beta(w) as large as
+log 64. The two are compatible for all large N whenever A/l^2 is at least the competing constant, and nothing known bounds that
+constant below. So a bound of the form A (N/l)^2 does not by itself contradict the competing branch. (Frozen Z_2 at
+large coupling shows an area-law twist cost inside the lane's class: its periodic seed fails by the lane's Peierls
+theorem, `gap-crux-exercise2-max.md` test table; the lane expects, and has not proved, the full seed there.) The
+same holds in the planar form: row 1177 (3) allows sigma_beta(w) as large as
 C n_0^(-2) x^(-4) exp(- c x^2/log(2 + x)), x = w/n_0, in the competing branch. (BS) needs a bound below every area law
 by more than a logarithm, and such a bound must read the measure at scales of the seed size and above.
 
-### 7.5 A finite form of the selection at the cube of the premise (PROVED GIVEN row 1161's finite-aspect statement)
+### 7.5 The forbidden band: a finite form of the selection at the cube of the premise (PROVED GIVEN row 1161's finite-aspect statement; rewritten 21:55Z)
 
-Let lambda_0 be the vacuum eigenvalue of the periodic cube n^3 and lambda_m the top eigenvalue of the transfer
-operator of the cube with the static magnetic twist m != 0; lambda_m <= lambda_0 and its eigenvector is even
-((S3) of `gap-flux-exercise.md` 3.1). Under (N-phys) with the constants of Section 6: in alternative II every
-sector other than the (0, q) has weight at most eps at the time n/2, so (lambda_m/lambda_0)^(n/2) <= eps for every
-m != 0. Hence: **if (lambda_m/lambda_0)^(n_j/2) > eps for one m != 0 at the cube of the premise, that is
-n_j log(lambda_0/lambda_m) < 2 log(1/eps), then alternative I holds at the cutoff j.** With eps just below
-1/40328 the threshold is about 21.2. In physical units: the energy of one unit of magnetic flux on the cube of
-side L must be below 21.2/L. In alternative I it tends to zero in these units; in alternative II it is at least
-21.2/L and grows with the size (row 1175 (4)). So (BS) is an order-one bound at one physical cube, not an
-asymptotic one. It is of the kind of row 1161 L107 (a transverse class probability above 1/10). OPEN for Wilson.
+Notation. On the periodic cube n^3: lambda_0 is the vacuum eigenvalue; for an electric character q != 0,
+lambda_q is the top eigenvalue of the periodic transfer operator on the sector (0, q), and E_q := log(lambda_0/lambda_q);
+for a static magnetic twist m != 0, lambda_m is the top eigenvalue of the transfer operator of the twisted cube,
+and D_m := log(lambda_0/lambda_m) >= 0. Its eigenvector is even, so it lies in the sector (m, 0) ((S3) of
+`gap-flux-exercise.md` 3.1). Put b_- := - log(1 - 2 eps) and b_+ := 2 log(1/eps). For eps just below 1/40328,
+b_- is about 5.0 x 10^(-5) and b_+ is about 21.2.
+
+**Corollary FB (PROVED GIVEN row 1161 L141, with the constants of Section 6).** Under (N-phys), at every cutoff
+j >= j_0 and with n = n_j, exactly one of the following holds.
+
+- Alternative I: n E_q >= b_+ for all seven q != 0, and n D_m <= b_- for all seven m != 0.
+- Alternative II: n D_m >= b_+ for all seven m != 0, and n E_q <= b_- for all seven q != 0.
+
+So each of the fourteen numbers n E_q, n D_m lies outside the open band (b_-, b_+). **One number in the band on the
+right side selects the branch: if n D_m < b_+ for one m != 0, or n E_q > b_- for one q != 0, then alternative I
+holds at that cutoff.** In physical units: the energy of one unit of magnetic flux on the cube of side L is below
+21.2/L, or the energy of one unit of electric flux is above 5.0 x 10^(-5)/L.
+
+Proof. By the finite-aspect statement one of the alternatives (9) of row 1161 approximates all 64 sector weights
+within eps at every integer v with v/n in [1/2, 1], and in each sector of limiting weight one the levels after
+the first carry at most eps. A sector of limiting weight zero has weight at most eps at v = n/2, and its top
+level is at most its weight; so (top eigenvalue/lambda_0)^(n/2) <= eps and n log(lambda_0/top) >= 2 log(1/eps).
+A sector of limiting weight one has weight at least 1 - eps at v = n, of which the first level carries at least
+1 - 2 eps; so n log(lambda_0/top) <= - log(1 - 2 eps). In alternative I the weight-one sectors are the (m, 0) and
+the sectors (0, q), q != 0, have limiting weight zero. In alternative II the roles are exchanged. The two lists
+exclude each other because b_- < b_+. QED
+
+Reading (ARGUED). (BS) is an order-one statement at one physical cube: a bound of one flux energy by a fixed
+multiple of 1/L, with a margin of five orders of magnitude between the two alternatives. Lower bounds on electric
+flux energies of this kind are on file as targets: row 1158 Lemma F with (TUN), and row 1161 (1)-(2) (linear in
+the overlap). (N-phys) gives exp(- m_+ u) <= s_+(u) <= 1/2 with u <= n/K, so n m_+ >= K log 2. Corollary F1 of row 1158
+(`gap-paths-fable.md` L210-215: z^- >= (tau_*^2/13) z_+, for m_+ <= 1) would then put n E_q above b_- as soon as
+tau_*^2 > 13 b_-/(K log 2): an overlap above about 1.4 x 10^(-3) for K = 512, and above 0.031 for every K >= 1
+(arithmetic from the stated constants; the lemma was not re-derived here). The upper bound n D_m < 21.2 is of the kind of row 1161 L107 (a transverse
+class probability above 1/10). Neither is proved for Wilson SU(2). OPEN.
 
 ### 7.6 Why no soft argument selects the branch (ARGUED)
 
-(a) The two alternatives agree on every centre-blind local observable in the limit (Theorem EV-L), so no bound on
-local gauge-invariant correlations, at any scale, selects. (b) Inside the lane's class the second alternative is
-realised (frozen Z_2 at large coupling), so reflection positivity, the transfer structure and the crossing
-symmetry of the sector weights do not select; this is the scope of Theorem R of row 737 and of row 1161 (9).
+(a) At one cutoff, the periodic state and the centre-even state have the same limits on A (Theorem EV-L (d)), and
+both alternatives have the same clustering rate on A (Theorem BP). So the gap, and every bound on correlations of
+centre-blind observables of bounded size that holds in both, does not select. This file does not claim that the two
+alternatives agree on all of A: the decay law of large fundamental Wilson loops is a centre-blind quantity that is
+expected to differ (area law against perimeter law); that equivalence is not shown here. (b) Inside the lane's class the periodic seed can fail
+(frozen Z_2 at large coupling, lane Peierls theorem; the lane expects the second alternative there), so reflection
+positivity, the transfer structure and the crossing symmetry of the sector weights do not select; this is the
+scope of Theorem R of row 737 and of row 1161 (9).
 (c) A selection must therefore read the group and the scales at and above the seed size, through a quantity that
 is not centre-blind: a twist ratio, a flux energy, or a winding observable. Row 1177 ends at the same sentence.
+
+## 8. Re-read of the PROVED items, and what is left (21:56Z)
+
+Re-read done on Lemma A-cl, Theorem L3-ev, Propositions P-ev and P'-ev, Theorem BP, Proposition J and Corollary FB.
+Corrections made during the re-read (all in place above):
+
+- 5.3: the remark on the sector form claimed more than is shown in the second alternative; it now says so.
+- 6, item 3: a sentence said that eight flux sectors agree on A; only "periodic state and centre-even state have
+  the same limits on A" is proved (Theorem EV-L (d)).
+- 7.1 (d): positivity of the plaquette mean is now derived for one orientation; "thin stack" is the identity map.
+- 7.4 and 7.6: frozen Z_2 at large coupling has a lane theorem only for the failure of the periodic seed; the
+  second alternative there is expected, not proved in the lane. 7.6 (a) no longer claims that the two alternatives
+  agree on all centre-blind observables (large Wilson loops are expected to differ).
+- 7.5: rewritten as Corollary FB; the neutral gap bound is n m_+ >= K log 2, not a fixed 512 log 2.
+
+Statements of this file and their labels:
+
+| Statement | Label | Kind (FINISH rule 9) |
+|---|---|---|
+| Lemma A-cl | PROVED | proof of a step the lane left unwritten |
+| Theorem L3-ev, Propositions P-ev, P'-ev | PROVED GIVEN the lane statements of 5.0 | same (rows 731, 837, 1024: "not rewritten") |
+| Theorem BP | PROVED GIVEN 5.0 (composition; row 1161 (7) states its first half) | same |
+| Reading 1-4 under Theorem BP | ARGUED | evidence for the lead |
+| Proposition J | PROVED | obstruction for one route; small |
+| Corollary FB | PROVED GIVEN row 1161 L141 | finite restatement of (BS) |
+| 7.2, 7.3 | on file (rows 1177, 1171, 1141; rows 1161, 737, 1072, 709) | named matches, not attacked |
+| 7.4, 7.6, the two paths of Section 3 | ARGUED | obstruction readings |
+| (BS), the competing branch, (N-phys), (W) | OPEN | - |
+
+Not done, and why. No numeric run (none was needed; no lock taken). No cross-branch search beyond the lane folder:
+the two solve files I build on carry their own repo-search sections (L1-5 of each), and the new text of this file
+is a consumer rewrite of rows 700 and 731, which are lane files. Row 1161's explicit two-shape test with K = 512
+and row 1175's (1)-(9) were used as stated and not re-derived. Row 1176 (check of row 1175) had no RESULT at this
+pin. The complete account of Sussman and Alpoge was not opened in this row: nothing here reads a statement of
+theirs beyond what the cited lane files already cite.
+
+Credits. Balaban (the renormalization group behind the ultraviolet premise of the trajectory). Sussman and Alpoge,
+with Claude and Codex as authors of their text (the account that supplies the trajectory and the continuum datum of
+Proposition P'). Chatterjee (the weak-coupling free-energy method credited in row 1143, an input of the chain this
+row builds on). 't Hooft (twisted boundary conditions and the flux sectors). Mack and Petkova (the stack-parity
+comparison). In the lane: rows 697, 700, 731, 737 (Theorem S, the limit consumer, Theorem EV-L and Corollary EV,
+Theorem R and Corollary R6), row 1052 (Lemma FLUX-W), row 1158 (Lemma F), rows 1161, 1175, 1177 (gpt-6.2-astra:
+the one-cube alternative with its flux-independent seed (7), the twist-cost form, the planar tension test and the
+quadratic obstruction).
+
+What stays open, in order of what it blocks:
+
+1. (N-phys), the one-cube physical neutral bound (row 1180's item). By Theorem BP it is the only open lattice input
+   of the gap clause, given the continuum datum.
+2. The continuum datum with (H2) and (TOT) (the T0 chain).
+3. (BS), in any of its forms (row 1175 (6), row 1177 (7), Corollary FB). It blocks (W) as worded and the
+   confinement statement on tori. It does not block the gap clause.
+
+Suggested edits for the lead (the lead decides; this file edits nothing else):
+
+- `parts/gap.md` L200 and the Formulation section: record that the gap clause needs (N-phys) and not the
+  flux-branch choice (row 1161 (7); Theorem BP here), and that the even-sector consumer is now written (Section 5),
+  pending a check by a model that did not write it.
+- A check row for Section 5 and Theorem BP: line by line against `gap-seed-limit.md` 4.3, 5,
+  `gap-flux-exercise.md` 8.2, 8.4, `gap-os-equiv.md` (3), (5), and `gap-solve9-astra62.md` L113-148.
+- If the target is the Jaffe-Witten gap clause, no further row on (BS) is needed for it.
+
+RESULT: Row 1179 (Claude Fable 5.2 max, Mac mini worker; author, checked by no one; no numeric run; no mass gap
+claimed). The branch selection (BS) is NOT proved and the competing branch is NOT proved; both stay OPEN. PROVED
+GIVEN the lane's checked statements (rows 697, 700, 731, 1161): the even-sector consumer that rows 731, 837 and 1024
+left unwritten (Theorem L3-ev, Propositions P-ev, P'-ev), and Theorem BP: the one-cube physical neutral bound alone
+gives a cutoff-uniform gap M_* = (2/L) log(1/(40328 eps)) on the centre-blind sector and, with the continuum datum,
+the Jaffe-Witten gap clause, in BOTH flux alternatives; so (BS) is on the path of (W) as worded (confinement on
+tori) and not on the path of the gap clause. PROVED GIVEN row 1161: Corollary FB, (BS) at the cube of the premise
+is the statement that one flux energy lies on the right side of a forbidden band (magnetic below 21.2/L, or electric
+above 5.0 x 10^(-5)/L). PROVED: Proposition J, no first-moment comparison with fixed multipliers beats the area law
+(at least (1 - 2^(-1/2)) beta <w> per plane). Named matches, not attacked: field-built frames (row 1177 (33)),
+constancy of the branch along a coupling path (row 1161 L335-339, Corollary R6 of row 737). OPEN: (N-phys), the
+continuum datum, (BS), (W).

@@ -138,7 +138,7 @@ Take alpha(y) = -c phi(y), phi(y) = log(r / max(1, |y - y_0|_infinity)) for |y -
 
 The exponent is at most -(c/2) log r + 8 beta c^2 (log r + 2) = -(log r)/(128 beta) + 1/(64 beta). QED.
 
-Remarks. (i) The bound is blind: the same proof gives it for the U(1) corner, where a Gaussian computation gives a power law, so a power is the best a blind argument can give. (ii) In the isotropic Wilson model a 1 x r loop decays exponentially in r at every coupling (one-link conditional expectation, B. Simon and L. Yaffe). In the corner this argument is not available: the conditional law of one plane has an exact continuous symmetry instead of a strictly positive density per link variable in the direction of the loop.
+Remarks. (i) The bound is blind: the same proof gives it for the U(1) corner, where a Gaussian computation gives a power law, so a power is the best a blind argument can give. (ii) In the isotropic Wilson model a 1 x r loop decays exponentially in r at every coupling (one-link conditional expectation, B. Simon and L. Yaffe; RECALLED, not rebuilt here). In the corner this argument is not available: the conditional law of one plane has an exact continuous symmetry instead of a strictly positive density per link variable in the direction of the loop.
 
 ### 3.4 The end-point of route S2 as one statement
 
@@ -148,3 +148,43 @@ Remarks. (i) The bound is blind: the same proof gives it for the U(1) corner, wh
 Proof. Either the base projections or the fibre projections of the two supports are at distance at least R - 2D. In the first case apply (Sigma-unif). In the second, apply it after the exchange of A2, which maps the class of all boxes to itself. QED.
 
 What (Sigma-unif) asks of the two-dimensional engine (rows 1007-1010): the pinned-cell stiffness iteration for the homogeneous space T of A4 with the right action of SU(2)^F, uniformly in F. By A5 the one-plane form is the O(4) class with one-sided backgrounds. Whether the posted proof covers one-sided backgrounds is not decided here: its text was not read in this session, and rows 1009 and 1077 read only its Section 3. The first half of the engine is A7. The second half (the bracket gain) is the open part. A plane-by-plane form does not suffice by itself: uniform conditional mixing of each plane given the others does not give joint mixing (two planes that determine each other are a counterexample to the bare implication), so the iteration has to run on T.
+
+## Step 4. Part A, the bracket half: structure, and where it stops
+
+The second half of the two-dimensional engine lowers the stiffness by a commutator term. Its text was not read in this session. What follows is my own computation of the second-order forms in the corner. It shows which twists can carry a gain. It does not prove a gain.
+
+**Lemma A10 (second-order forms; PROVED).** Let e = <p_0, p_1> be a fibre link, <y, y'> a base link, delta = theta(y') - theta(y), and write m = m_e(y) = m_0 + i m.sigma, m' = m_e(y').
+(a) Twist of the plane p_0 alone (or p_1 alone). The sheet moves by a one-sided multiplication. The symmetrized change of <m, m'> is -(1 - cos(delta/2)) <m, m'>. All four components of m enter. There is no axis-dependent part.
+(b) Common twist of p_0 and p_1, same theta and axis n. The sheet moves by conjugation, m -> exp(-theta J) m exp(theta J). The symmetrized change of <m, m'> is -(1 - cos delta) (m_perp . m'_perp), where m_perp is the part of the vector m orthogonal to n. The components m_0 and m.n do not enter.
+(c) In the state mu (free boundary), E[m_a m'_a] = E<m, m'>/4 for each of the four components a. So E[m_perp . m'_perp] = E<m, m'>/2.
+(d) For the U(1) corner, a common twist of p_0 and p_1 leaves m_e unchanged.
+Proof. (a) is A6. (b) Conjugation fixes m_0 and rotates the vector m about n; the angle between the two rotations is delta; m . R m' = (m.n)(m'.n) + cos(delta) m_perp . m'_perp + sin(delta) (odd term). (c) By A2 with d(p_0) and d(p_1) independent, the pair (m, m') -> (d_0^(-1) m d_1, d_0^(-1) m' d_1), and these maps act on R^4 as all of SO(4). (d) The group is abelian. QED.
+
+**Reading (ARGUED).**
+1. A gain at second order needs twists that act on a sheet as a rotation in a two-plane of R^4, as in (b). Then the stiffness reads only two of the four components of the sheet, and fluctuations forced into the other two (by A7 about a second axis) lower it. This is the O(N) mechanism. One-sided twists, as in (a), read all four components and gain nothing at this order.
+2. So the one-plane class of A5 (O(4) with a one-sided background) is too small for the iteration at second order: its only symmetries are of type (a). The iteration has to use twists of several planes at once, on the space T of A4. For a fibre block D twisted in common, the interior links are of type (b) and the boundary links of type (a).
+3. (d) shows that for U(1) the interior links cost nothing, so a block twist has boundary-order stiffness. For SU(2) the interior links cost (b). So the non-abelian corner is stiffer under common block twists, and softer only after the second axis has acted. A proof of (Sigma-unif) has to win this trade at every coupling.
+
+**Where Part A stops.** (Sigma-unif) is OPEN. First missing step: a lower bound, uniform over pins, over the fibre size and over the configuration of the other sheets, on the components of the sheet fields along the twist axis in a cell of side exp(c beta u), in the form that the two-dimensional engine has for one sheet (row 1009: OpenAI O(3) Lemma 2.3). I did not prove it and did not find a counterexample. Nothing in A1-A10 fails for the U(1) corner except A10 (b)-(c), so the selective content of Part A is confined to this missing step.
+
+## Step 5. Part B: the descent, and why route S2 does not reach (N-phys)
+
+Now the full Wilson model on F x B with plane couplings beta_L (plane 12), beta_T (plane 34), beta (mixed).
+
+**Definition.** For Omega: F x B -> SU(2), the partial gauge transformation T^B_Omega maps U_nu(x) -> Omega(x) U_nu(x) Omega(x+nu)^(-1) for nu = 3, 4 and fixes U_mu for mu = 1, 2. It preserves Haar measure. T^F_Omega is the same with the roles exchanged. T^B_Omega composed with T^F_Omega is a gauge transformation.
+
+**Lemma B1 (exact; PROVED).** Under T^B_Omega every 34-plaquette trace and every 12-plaquette trace is unchanged. The mixed plaquette at (x; mu, nu) becomes (1/2) tr[ V_mu(x) U_nu(x+mu) V_mu(x+nu)^(-1) U_nu(x)^(-1) ], with V_mu(x) = Omega(x)^(-1) U_mu(x) Omega(x+mu).
+Proof. The 34-plaquette is conjugated by Omega(x). The 12-plaquette has no changed link. For the mixed one, insert Omega(x) Omega(x)^(-1) and use cyclicity. QED.
+
+**Lemma B2 (one plane; PROVED).** Let Omega = omega(y) on the plane p_0 and 1 elsewhere. Then a mixed plaquette P at (p_0, y) on the base link (y, nu) becomes (1/2) tr[P D_nu(y)], with D_nu(y) = U_nu(p_0, y) omega(y+nu) U_nu(p_0, y)^(-1) omega(y)^(-1). So the cost is a function of the covariant difference of omega with respect to the base links of the plane p_0 itself. The other planes do not enter D.
+
+**Lemma B3 (the corner symmetries are partial gauge transformations; PROVED).** In the corner variables (A0), T^B_Omega is k(x) -> [g(x)^(-1) Omega(x) g(x)] k(x). The left symmetry c(y) of A2 is T^B_Omega with Omega covariantly constant along the fibre links. The right symmetry d(p) is T^B_Omega with Omega = h d(p) h^(-1), covariantly constant along the base links. The twist of A6 is T^B_Omega with Omega(p_0, y) = h exp(theta(y) J) h^(-1).
+
+**Lemma B4 (one frozen orientation; PROVED, on file in substance).** Let beta_T = infinity and beta_L arbitrary. In the gauge U_nu = 1, the map T^F_Omega with Omega = exp(theta(y) J) on the plane p_0 keeps every 12-plaquette trace and has the gradient cost of A6. It moves no function of the 12-plaquette traces at a fixed base point.
+So on this face the twist survives for every beta_L, and it is a twist by the residual gauge group. This is the Ward step of row 1077. The observables that it does not move are exactly the ones created by unfreezing: the fibre plaquette traces. Their mixing along the base is the lane's (SING) (row 1053 6.9: "singlets are moved by flux twists").
+
+**Lemma B5 (both orientations unfrozen; PROVED inequality).** Let J be a field of unit vectors of su(2) on the four corners of a plaquette with holonomy u, (1/2) tr u = x. The sum over its four links of |J - (transported neighbour)|^2 is at least (1 - x^2) sin^2(angle between J at the base corner and the axis of u).
+Proof. Transport to one corner; the adjoint action is an isometry; the four defects add up to at least |J - Ad(u) J| = 2 |sin(phi/2)| sin(angle), with cos(phi/2) = x; then Cauchy-Schwarz. QED.
+By B2 a twist exp(theta J) of one plane with constant theta has D = 1 only if J is covariantly constant along that plane. B5 bounds the defect below by the non-commuting part of the plane's own curvature. Row 1018's Lemma NAB bounds E(1 - x^2) below by xbar/(2 beta), so the defect energy beta (1 - x^2) is of order one per plaquette at every coupling. This is Lemma FR of row 1011 and Lemma 5.1a of row 1181 in the present variables. It is not new.
+
+**Verdict on route S2 (ARGUED from A4, B3, B4, B5).** The corner has a full set of symmetric twists because it has no singlet at all: its base-site space T is one orbit. The first unfreezing (B4) keeps every twist and creates singlets that no twist moves. The second unfreezing (B5) removes the twists. So the two descents of S2 do not carry the corner's mechanism to the isotropic point. The first failing step of S2 as a route to (N-phys) is the first unfreezing: mixing of the fibre plaquette traces along the base at beta_T = infinity, beta_L finite. Explicit failure: the function x_12(p, y) is invariant under every T^F_Omega of B4, so A7 and A8 bound none of its correlations. This is the neutral half again, in the form that rows 1053 and 1076 already hold as (SING).

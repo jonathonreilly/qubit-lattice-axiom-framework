@@ -16,6 +16,7 @@ gap), GUIDE (numeric or heuristic, never a proof step), OPEN.
 - 23:28Z (`date -u`) read: RESULT lines of rows 1135-1177; `prior/gap-2don-proofs-read-opus.md` L44-170 (the two posted 2D proofs); `gap-crux-restate.md` L20-60; `gap-solve9-astra62.md` L95-150 (the neutral bound and its consumer). Section 1 written below. No attack chosen yet.
 - 23:39Z (`date -u`) Section 2 written: the pinned-slice Ward route worked to its first failing step; Lemma PC proved (exact power count for every family). Anchors confirmed by grep: row 712 layer model `gap-crux-fp.md` L369-384; row 1011 Proposition W `gap-pinned-cell-gauge-max.md` L184; row 1016 `gap-global-reform-max.md` L441, L940.
 - 23:42Z (`date -u`) numeric sanity run done under the numeric lock (holder solve-a-fable-1188, acquired 23:41Z, released after about 2 s; memory free 50 percent at the start). Section 3 written. One slip corrected in 2.3 (the trivial bound is (beta/4) eta^2 N for one face).
+- 23:47Z (`date -u`) arXiv API probe done (five queries, newest first); every cited line anchor re-taken with `grep -n -F`; Sections 4 and 5 written.
 
 ## 1. How best to attack it (analysis before any attack)
 
@@ -33,8 +34,8 @@ gap), GUIDE (numeric or heuristic, never a proof step), OPEN.
 - (N-phys) is the glue half (GLUE-FP) of rows 895 and 920 with other constants (row 1184). In one sentence: a gap
   and a level count for centre-neutral states at one physical box, at arbitrarily weak bare coupling.
 - The fixed-coupling form: the seed Phi(n) = 16 F(n^4) - F((2n)^4) <= 1.9e-4 at some n (`gap-crux-restate.md`
-  L57-60, Theorems D and S). GUIDE (my arithmetic from Teper's table quoted in my memory of row 974: a m = 1.216,
-  a^2 sigma = 0.136 at beta 2.3): the flux term 6 n^2 exp(-sigma n^2) passes 1e-5 at n = 12 and the glue term
+  L57-60, Theorems D and S). GUIDE (my arithmetic from Teper's published values as quoted in row 974,
+  `gap-trajtest-opus.md` L157: a m = 1.216 and a sqrt(sigma) = 0.3687, so a^2 sigma = 0.136, at beta 2.3): the flux term 6 n^2 exp(-sigma n^2) passes 1e-5 at n = 12 and the glue term
   n^3 exp(-m n) at n about 18. So the seed at beta 2.3 is a statement about log Z on 18^4 and 36^4 to an absolute
   accuracy of 1e-4. No convergent expansion with absolute weights reaches beta 2.3 (method 35).
 
@@ -57,7 +58,7 @@ ARGUED (nothing here is new; each line names its place on file).
 4. In 4D gauge theory (a) exists and (b) fails. The exact analogue of W is the Schrodinger functional as a function
    of a pinned boundary field C. It is invariant under the gauge group of the boundary slice, by Haar invariance of
    the time-like links that leave the slice. Its Ward bound is the exact contact identity for smeared Gauss-law
-   generators, <X(df a)^2> = <Y> <= beta |df|_2^2. But the gauge functions live on a 3D slice and their Dirichlet
+   generators, <X(df a)^2> = <Y> <= (beta/4) |df|_2^2 (P2 below). But the gauge functions live on a 3D slice and their Dirichlet
    energy is not scale invariant. Count for a holonomy twist h of size 1/N per link: with plane waves of weight c_p,
    lambda/N = sum c_p^2 k_p and cost = sum c_p^4 k_p^4 N^6, so by Cauchy-Schwarz lambda^2/cost <= N^(-4) sum_k
    k^(-2), which is about 1/N. The fourth-order inequality then gives a bound of order K N, the order of the bound
@@ -67,8 +68,9 @@ ARGUED (nothing here is new; each line names its place on file).
 5. The scale-invariant cost form in 4D is the covariant curl form of a one-form. For a move in a fixed colour
    direction it turns into a mass form, because every adjoint direction is rough at the lattice scale (row 1141 (2);
    row 1181 Lemma 5.1a; Proposition J). The exact stiffness is R = <Hess S(a,a)> - Var X(a) for any extension a of
-   the boundary twist. Both terms are of order N^2 in lattice units and their difference is of order beta_eff. A
-   Jensen bound drops the variance, so it can never see the cancellation (rows 1011, 1016).
+   the boundary twist. Each term exceeds their difference by a power of N, because the mean Hessian contains a mass
+   form; the difference is of order beta_eff. A Jensen bound drops the variance, so it can never see the
+   cancellation (rows 1011, 1016).
 6. The other continuous twists in reach are spacetime twists (shifted or rotated identifications). Their Ward
    bounds are stress-tensor contact terms with power divergences. Discrete twists (shifts, the cubic group, the
    centre) isolate every sector except the vacuum sector, and (N-phys) is the statement about the vacuum sector.
@@ -89,18 +91,21 @@ with c_i = cos(phi_i), s_i = sin(phi_i) and the angle forms m_0 = alpha_1 + alph
 m_12 = gamma_1 - gamma_2 - alpha_3 - alpha_4, m_13 = gamma_1 - alpha_2 - gamma_3 - alpha_4,
 m_14 = gamma_1 - alpha_2 + alpha_3 - gamma_4, m_23 = alpha_1 + gamma_2 - gamma_3 - alpha_4,
 m_24 = alpha_1 + gamma_2 + alpha_3 - gamma_4, m_34 = alpha_1 + alpha_2 + gamma_3 - gamma_4,
-m_1234 = gamma_1 - gamma_2 + gamma_3 - gamma_4. Since m_12 = m_0 + m_13 - m_23 as linear forms, and the
-coefficients of cos(m_0), cos(m_13), cos(m_23) are non-negative while that of cos(m_12) is non-positive, no shift
-of the angles (alpha_l -> alpha_l + eta_l, gamma_l -> gamma_l + delta_l) makes all eight coefficients non-negative
-on one plaquette. So, given the amplitudes phi, the abelian model in the angles is not of Ginibre type in any
-shifted angle variables, already on a single plaquette.
+m_1234 = gamma_1 - gamma_2 + gamma_3 - gamma_4. Call a function of angles of Ginibre type if it is a sum of
+cosines of integer linear forms with non-negative coefficients. Let all four amplitudes be in the open interval
+(0, pi/2). Since m_12 = m_0 + m_13 - m_23 as linear forms, and the coefficients of cos(m_0), cos(m_13), cos(m_23)
+are positive while that of cos(m_12) is negative, no shift of the angles (alpha_l -> alpha_l + eta_l,
+gamma_l -> gamma_l + delta_l) makes the plaquette term of Ginibre type. So, given the amplitudes phi, the abelian
+model in the angles is not of Ginibre type in any shifted angle variables, already on a single plaquette.
 
 Proof. The eight terms are the eight even flip patterns of the index path 1 -> . -> . -> . -> 1 through the four
 matrices, with entries (U)_11 = a, (U)_12 = b, (U)_21 = -b*, (U)_22 = a* and (U^*)_11 = a*, (U^*)_12 = -b,
 (U^*)_21 = b*, (U^*)_22 = a; the path that starts at index 2 gives the complex conjugate. The two minus signs come
-from b_1 (-b_2^*) and (-b_3) b_4^*. A shift changes the argument of each cosine by a constant; all coefficients
-become non-negative only if the shift is 0 mod 2 pi on m_0, m_13, m_23 and pi on m_12, which contradicts
-m_12 = m_0 + m_13 - m_23. QED.
+from b_1 (-b_2^*) and (-b_3) b_4^*. The sixteen forms +-m_0, ..., +-m_1234 are pairwise different, so the
+Fourier expansion on the torus of angles has exactly these terms and no two of them combine. A shift turns the
+term e w cos(m), e = +-1, w > 0, into e w cos(m - m(shift)). This is a non-negative multiple of cos(m) only if
+m(shift) = 0 mod 2 pi for e = +1 and m(shift) = pi mod 2 pi for e = -1. So the shift must be 0 on m_0, m_13,
+m_23 and pi on m_12, which contradicts m_12 = m_0 + m_13 - m_23. QED.
 
 Use: it closes the "amplitude decomposition with abelian conditional systems and association" cell of the reading
 table (`prior/gap-2don-proofs-read-opus.md` B(5), marked NONE there) for the Hopf coordinates. It does not exclude
@@ -219,7 +224,7 @@ Row 1139 shows that with both faces rough the 2D statement fails at large b; one
 **What four dimensions needs, in this language.** Disorder of the holonomy appears only across about N time steps
 (springs in series: the stiffness beta N of one step becomes beta N / T). So the gain must come from composing
 kernels, and the middle slices of a composition are rough, not flat. Around a rough slice C the gauge directions are the covariant gradients d_C F (F_x - Ad(C_l) F_y on the link l),
-so a bound of the kind of P2 can only have |d_C F|_2^2 on its right side, and row 1141 (2) shows that d_C of every adjoint section has
+so a bound of the kind of P2 can only have |d_C F|_2^2 on its right side, and row 1141 (2) (`gap-crux2-astra62.md` L45-53) shows that d_C of every adjoint section has
 energy of order one per site. This is the same wall as rows 1011, 1013, 1016 and 1141, reached from the transfer
 kernel. First failing step of Attack 1: there is no family of slice gauge functions with scale-invariant cost in
 d_s = 3 (Lemma PC), and no flat middle slice.
@@ -240,3 +245,51 @@ numpy, 34 MB, about 2 s. A run can only refute a formula; it proves nothing.
 The first family is the extremal one for families of plane waves with positive weights. Its value 52.2 equals
 2 N^3/G(N). So the true constant in (PC3) is near 50, not 1: positivity of rho costs the factor 2 that
 Cauchy-Schwarz does not see, and G/N^3 is about 0.04.
+
+## 4. Literature probe (reading only; nothing used in a proof)
+
+arXiv API, five queries sorted by submission date (Yang-Mills with mass gap, confinement or area law; lattice gauge
+with decay or area law; O(N), sigma or chiral models with gap or decay; math-ph and math.PR with Yang-Mills or
+lattice gauge; mass gap in math-ph, math.PR, hep-th). Newest record returned: 2026-11-16.
+
+- No posted proof or claim of a gap or of confinement for a 3D or 4D non-abelian lattice gauge theory at weak
+  coupling was returned.
+- A. Mihajlovic, arXiv:2611.11534 (2026-11-08): on file (row 825, `gap-arealaw-opus.md` L540; check `gap-arealaw-check-astra.md` L407). Its abstract
+  says that a positive spectral bound along a four-dimensional construction is not established.
+- C. Yin and V. Khemani, arXiv:2611.17433v2 (2026-11-12), not on file (grep of `library/` and FINISH). Abstract
+  only: along a path of commuting local Hamiltonians that contains a product state, strong decay of correlations
+  gives a size-independent gap of single-site Glauber dynamics; an example is the 3D Z_2 lattice gauge theory.
+  Direction: decay implies fast mixing. The lane needs the decay, so it is not a supplier. Not read past the
+  abstract.
+
+## 5. State at the end of this row
+
+**PROVED here (by hand, checked by no one).**
+- Lemma HF (1.2): in the maximal-torus (Hopf) coordinates of the links, the conditional abelian model given the
+  amplitudes is not of Ginibre type in any shifted angle variables, already on one plaquette.
+- P1, P2 (2.1): the two-face form of a pinned slice and the Gauss contact identity. Both are standard; they are
+  written only to state Lemma PC.
+- Lemma PC (2.3): for every family of slice gauge functions whose commutator profile is lambda times the holonomy
+  twist, the cost form of the fourth-order mechanism is at least lambda^2 eta^2 N on a three-dimensional slice, so
+  the mechanism cannot beat the order of the trivial bound there; on a two-dimensional slice the same inequality
+  leaves room for the logarithm.
+
+**ARGUED here.** The port of the fourth-order inequality to a flat face (2.2); the class obstruction (2.4): the
+one-step kernel between flat slices is the 3D chiral model, which orders, so no argument that reads one slice
+crosses; the reading of the 2D mechanism in 1.2.
+
+**GUIDE.** Section 3; the seed sizes of 1.1.
+
+**Not new, by my own grep.** Everything in 1.2 except Lemma HF. Lemma PC is the theorem-grade form of a count that
+rows 1013 and 1016 hold as ARGUED.
+
+**OPEN, unchanged.** (N-phys); the continuum datum; (BS); (W); the Jaffe-Witten gap. This row gives no proof and
+no disproof of the mass gap.
+
+**For the lead (ARGUED; one paragraph).** The plain brief produced the lane's map again in about 45 minutes, plus
+two small lemmas. I found no route outside the registry. The reason the 2D mechanism does not transplant is now a
+proved inequality and not a count: its cost form is a Dirichlet form of site functions, and the only place where
+gauge theory has a frame for such functions is a flat pinned slice, which is three-dimensional in 4D and ordered
+in one step. What the glue half needs is a gap for local gauge-invariant excitations; every group-theoretic gain
+on file (bracket, commutator multiplier, centre) acts on frame or holonomy data. I see no hand proof of (N-phys)
+with the tools on file, and I do not recommend another plain-brief row by this model family.

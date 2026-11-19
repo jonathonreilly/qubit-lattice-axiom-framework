@@ -83,3 +83,28 @@ the branch is constant; at strong coupling the branch is the periodic one. Then 
 neutral premise at every beta in (0, beta_j], with no flux input at all. Next step: grep the lane for this argument
 (continuity method M5, (NOCRIT), carry rows 978, BR-3), then write it as a theorem with exact hypotheses, or name
 the match and drop it.
+
+Status of Section 3 (21:41Z): **the candidate is on file. Match: Corollary R6 of row 737 (`gap-means-max.md` 4.7,
+"the flux phase cannot change while an even seed exists; argued, the continuity step is not written with
+constants"), with the continuity method (M5) of the same file (2.5), Lemma CONT of row 1072
+(`gap-bridge-exercise-opus.md` 3.2) and (NOCRIT) of row 709.** Not attacked as new. What R6 gives in the present
+notation: (BS) at beta_j follows from the fixed-coupling neutral premise at every beta in (0, beta_j]. The closed
+half of the method (the premise on the whole interval) is the lane's "no transition on the path", which is the
+target again ((M5): absent, counterexample in the class).
+
+Two paths other than the Wilson axis, checked by hand here (ARGUED, belief-grade inputs on the phase diagram):
+- the mixed fundamental-adjoint line of constant beta_F + (8/3) beta_A from the pure adjoint axis (where zeta = 1
+  identically) crosses the Z_2 first-order line near beta_F = 0.44 at large beta_A, so the neutral premise fails on it;
+- the one-plaquette weight 2 cosh(beta w_p + gamma), gamma from 0 (twists free, zeta = 1) to infinity (Wilson):
+  in the monopole-free approximation its twisted partition functions are the convolution over H^2(T^4; Z_2) of
+  the Wilson twist sectors with those of the Z_2 gauge theory at coupling gamma, so it carries the Z_2
+  transition at gamma near 0.44. Both paths are worse than the Wilson axis.
+
+## 4. Is the branch selection on the path to the Jaffe-Witten gap? (question raised 21:41Z; reading next)
+
+Observation to test against the lane's files: in BOTH branches the selected seed (Z or V) contains the periodic
+centre-neutral sector. So the neutral premise alone should give the gap of the centre-blind sector at every larger
+size (Corollary R4 of row 737 says this for the even seed (ES)). The Jaffe-Witten gap concerns local gauge-invariant
+observables, which are centre-blind. If the consumer (Propositions P, P' of `gap-seed-limit.md`) reads only that
+sector, then (BS) is needed for (W) as worded (flux sectors included) and for confinement, but not for the
+Jaffe-Witten gap. Row 1052 (Lemma FLUX-W, target T_JW-lat) and its checks 1054, 1055 are the place to compare.

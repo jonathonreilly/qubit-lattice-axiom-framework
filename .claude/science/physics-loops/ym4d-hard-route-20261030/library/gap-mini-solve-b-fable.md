@@ -101,7 +101,7 @@ The fibre with two sites gives the standard two-dimensional O(4) model for m. A 
 So one plane is a two-dimensional O(4) model with link strengths in [0, 4 beta] and a background connection in the left SU(2) only. The right SU(2) is an exact global symmetry for every background. (Method 36 of `parts/gap.md` is the two-sided case, where no symmetry is left.)
 Proof. <s(y)^(-1) k_n(y), s(y')^(-1) k_n(y')> = (1/2) tr[s(y') s(y)^(-1) k_n(y) k_n(y')^(-1)]; sum over n. QED.
 
-**Lemma A6 (the symmetric twist and its exact cost).** Fix a fibre site p_0, a unit vector n, and theta: B -> R. Let J = (i/2) n.sigma and T_theta: k(p_0, y) -> k(p_0, y) exp(theta(y) J), all other spins fixed. T_theta preserves product Haar measure. For a fibre link e from p_0 and a base link <y, y'>, with delta = theta(y') - theta(y) and q = m_e(y) m_e(y')^(-1) = q_0 + i q.sigma,
+**Lemma A6 (the symmetric twist and its exact cost).** Fix a fibre site p_0, a unit vector n, and theta: B -> R. Let J = (i/2) n.sigma and T_theta: k(p_0, y) -> k(p_0, y) exp(theta(y) J), all other spins fixed. T_theta preserves product Haar measure. Orient every fibre link at p_0 away from p_0 (the plaquette value <m_e(y), m_e(y')> does not depend on the orientation of e). For such a link e and a base link <y, y'>, with delta = theta(y') - theta(y) and q = m_e(y) m_e(y')^(-1) = q_0 + i q.sigma,
 
   <m_e(y), m_e(y')> o T_theta = cos(delta/2) q_0 - sin(delta/2) n.q .
 
@@ -176,7 +176,7 @@ Now the full Wilson model on F x B with plane couplings beta_L (plane 12), beta_
 **Lemma B1 (exact; PROVED).** Under T^B_Omega every 34-plaquette trace and every 12-plaquette trace is unchanged. The mixed plaquette at (x; mu, nu) becomes (1/2) tr[ V_mu(x) U_nu(x+mu) V_mu(x+nu)^(-1) U_nu(x)^(-1) ], with V_mu(x) = Omega(x)^(-1) U_mu(x) Omega(x+mu).
 Proof. The 34-plaquette is conjugated by Omega(x). The 12-plaquette has no changed link. For the mixed one, insert Omega(x) Omega(x)^(-1) and use cyclicity. QED.
 
-**Lemma B2 (one plane; PROVED).** Let Omega = omega(y) on the plane p_0 and 1 elsewhere. Then a mixed plaquette P at (p_0, y) on the base link (y, nu) becomes (1/2) tr[P D_nu(y)], with D_nu(y) = U_nu(p_0, y) omega(y+nu) U_nu(p_0, y)^(-1) omega(y)^(-1). So the cost is a function of the covariant difference of omega with respect to the base links of the plane p_0 itself. The other planes do not enter D.
+**Lemma B2 (one plane; PROVED).** Let Omega = omega(y) on the plane p_0 and 1 elsewhere. Then a mixed plaquette with word P based at (p_0, y), on the base link (y, nu) and a fibre link leaving p_0, becomes (1/2) tr[P D_nu(y)], with D_nu(y) = U_nu(p_0, y) omega(y+nu) U_nu(p_0, y)^(-1) omega(y)^(-1). For a fibre link arriving at p_0 it becomes (1/2) tr[R D_nu(y)^(-1)], with R a cyclic rotation of the plaquette word. So the cost is a function of the covariant difference of omega with respect to the base links of the plane p_0 itself. The other planes do not enter D.
 
 **Lemma B3 (the corner symmetries are partial gauge transformations; PROVED).** In the corner variables (A0), T^B_Omega is k(x) -> [g(x)^(-1) Omega(x) g(x)] k(x). The left symmetry c(y) of A2 is T^B_Omega with Omega covariantly constant along the fibre links. The right symmetry d(p) is T^B_Omega with Omega = h d(p) h^(-1), covariantly constant along the base links. The twist of A6 is T^B_Omega with Omega(p_0, y) = h exp(theta(y) J) h^(-1).
 
@@ -188,3 +188,36 @@ Proof. Transport to one corner; the adjoint action is an isometry; the four defe
 By B2 a twist exp(theta J) of one plane with constant theta has D = 1 only if J is covariantly constant along that plane. B5 bounds the defect below by the non-commuting part of the plane's own curvature. Row 1018's Lemma NAB bounds E(1 - x^2) below by xbar/(2 beta), so the defect energy beta (1 - x^2) is of order one per plaquette at every coupling. This is Lemma FR of row 1011 and Lemma 5.1a of row 1181 in the present variables. It is not new.
 
 **Verdict on route S2 (ARGUED from A4, B3, B4, B5).** The corner has a full set of symmetric twists because it has no singlet at all: its base-site space T is one orbit. The first unfreezing (B4) keeps every twist and creates singlets that no twist moves. The second unfreezing (B5) removes the twists. So the two descents of S2 do not carry the corner's mechanism to the isotropic point. The first failing step of S2 as a route to (N-phys) is the first unfreezing: mixing of the fibre plaquette traces along the base at beta_T = infinity, beta_L finite. Explicit failure: the function x_12(p, y) is invariant under every T^F_Omega of B4, so A7 and A8 bound none of its correlations. This is the neutral half again, in the form that rows 1053 and 1076 already hold as (SING).
+
+## Step 6. State at the end (2026-11-19T23:54Z, date -u)
+
+Provenance: Claude Fable 5.2 max, Mac mini worker 2, one session, no subagents. Author only. Checked by no one. No literature was fetched; papers are named for credit from the lane's own records and from recall. No numeric run: free memory was 43% and then 46% (memory_pressure), below the 50% rule, so the identities of Steps 3-5 were re-derived by hand a second time instead.
+
+| Statement | Label |
+|---|---|
+| Four-dimensional SU(2) Yang-Mills has a mass gap (Jaffe and Witten) | OPEN. Not proved here |
+| (N-phys), the one open lattice input of the gap clause (rows 1161, 1179) | OPEN. Not attacked directly; Step 2.1 found no route to it that is off the lane's map |
+| Step 2.1, the screening table | GUIDE |
+| A0, the corner model as a limit of Wilson plane couplings | ARGUED |
+| A1-A6, A10, B1-B5: exact identities of the corner model and of partial gauge transformations | PROVED (elementary; proved by Claude Fable 5.2, not yet checked by the other model) |
+| A7: Mermin-Wagner step in the corner, uniform in fibre size, pins and the other planes | PROVED (same standing). Blind |
+| A8: every mixed rectangle of base extent r has expectation at most exp(1/(64 beta)) r^(-1/(128 beta)), beta >= 1/32, every box | PROVED (same standing). Blind |
+| A9: (Sigma-unif) gives four-dimensional clustering of the corner model | PROVED GIVEN (Sigma-unif) |
+| (Sigma-unif): base mixing of the corner model, uniform in the fibre | OPEN. First missing step named in Step 4 |
+| Reading of Step 4 (which twists can carry a second-order gain) | ARGUED |
+| Verdict on route S2: its first failing step toward (N-phys) is the first unfreezing, the singlet mixing (SING) | ARGUED from A4, B3, B4, B5 |
+
+What is new against the lane's record, as far as the searches of Step 2 and the reads of rows 1053 and 1103 show:
+- The corner model of row 1053 6.8 was a remark. It now has its exact structure written (A1-A6), two proved all-coupling statements (A7, A8), and its gap reduced to one statement (A9, (Sigma-unif)).
+- B3: the two subsystem symmetries of the corner are the partial gauge transformations that are covariantly constant along the fibre and along the base. B1, B2 give their exact cost in the full model.
+- The reason why route S2 cannot carry its mechanism to the isotropic point (Step 5 verdict), and the observation that the one-plane class is too small at second order (Step 4, reading 2).
+None of these moves (N-phys), (BS) or (W).
+
+What stays open, in order of the path:
+1. (N-phys), and the continuum datum of the T0 chain. Unchanged.
+2. The selective gain at order-one response for the neutral sector. Unchanged. In the present variables it is the mixing of the fibre plaquette traces along the base on the face with one frozen orientation (the lane's (SING)).
+3. (Sigma-unif) for the corner. A port of the two-dimensional engine to the space T of A4 would decide it. It is off the path of item 1 by the verdict of Step 5, so I do not recommend a row for it unless a consumer appears.
+
+Check request for the lead: one cross-provider read of A6-A8 and B1-B5 is enough; they are short. A8's constants are not optimized.
+
+RESULT: Row 1189 (Claude Fable 5.2 max, Mac mini worker 2, 22:59Z-23:54Z; author only, checked by no one; no numeric run, free memory 43-46%): the mass gap is NOT proved and (N-phys) is NOT proved or refuted; both OPEN. A first-principles screening of twelve route families found every one on the lane's map (GUIDE). The one unattempted item, route S2 (the doubly flat corner of row 1053 6.8), was worked to its first failing step. PROVED by hand, unchecked, not selective: the exact structure of the corner model (Lemmas A1-A6, A10), a Mermin-Wagner step uniform in fibre size and pins (A7), and a power-law bound exp(1/(64 beta)) r^(-1/(128 beta)) on every mixed rectangle of extent r at every beta >= 1/32 (A8); the identification of the corner's symmetries with partial gauge transformations and their exact cost in the full Wilson model (B1-B5). PROVED GIVEN (Sigma-unif): four-dimensional clustering of the corner (A9). ARGUED: route S2 does not reach (N-phys); its first failing step is the first unfreezing, where the fibre plaquette traces are invariant under every surviving twist, which is the lane's (SING). OPEN: (Sigma-unif) (first missing step: a pin-uniform lower bound on sheet components along the twist axis), (SING), (N-phys), the continuum datum, (BS), (W), the mass gap. Output library/gap-mini-solve-b-fable.md.

@@ -7,6 +7,33 @@ Research-stage working state. Nothing here grants status. Pinned commit 6a3a26b9
 Every statement below carries one label: PROVED (written proof in this file, not yet checked by
 another model), ARGUED, GUIDE (numeric or heuristic, never a proof step) or OPEN.
 
+## Result in short (written last; details and labels in Sections 5-8)
+
+- The branch selection (BS) is not proved. The competing branch is not proved. Both stay OPEN.
+- (BS) is not on the path of the Jaffe-Witten gap clause. Row 1161 (7) gives a flux-independent seed in both
+  alternatives. Section 5 writes the even-sector consumer that rows 731, 837 and 1024 left unwritten. Theorem BP
+  (Section 6): the one-cube physical neutral bound alone gives a cutoff-uniform gap on the centre-blind sector and,
+  with the continuum datum, the gap clause. (BS) is needed only for (W) as worded, that is for confinement on tori.
+- Corollary FB (7.5): at the cube of the premise, (BS) is an order-one bound on one flux energy.
+- Proposition J (7.1): no first-moment comparison with fixed multipliers beats the area law.
+- Routes already on file are named, not attacked again (7.2, 7.3).
+
+## Repo search (run 22:00Z, after the lane-folder search; rule "Repo first")
+
+- Lane folder (this branch at 6a3a26b93): `library/open-core.md`, `library/open-registry.md`, the FINISH rows and
+  the `gap-*` files were searched with `grep -n` for each candidate before it was written (matches in Sections 2, 3,
+  4, 7). The even-sector consumer of Section 5 has no owner there: the only hits are the three "not rewritten" notes
+  (`gap-flux-exercise.md` L18 and L465, `gap-finishline-opus.md` 2.6, `gap-dichotomy.md` L298).
+- Other branches: bare, blob-less, depth-1 fetch into a scratch folder of origin/main (8b11ae2) and the heads of pull
+  requests 10114 (f76f6c6), 10133 (89faef2), 10134 (1e70c72), 10141 (a2f6a43), 10144 (1f20846), 10149 (7fc6b1a).
+  Scope: the 248 files whose path holds "mass-gap", "MASS_GAP" or a name `gap-*.md`. Pattern: "EV-L", "centre-blind",
+  "center-blind", "even-sector consumer", "T_JW-lat", "flux-independent seed", "Pfaffian seed". Hits: six files, all
+  under `research/mass-gap/` on main (README.md L17, ROWS.md rows 731, 732, 735, and the landed copies of
+  `gap-flux-exercise.md`, its check, `gap-form-exercise.md`, `gap-skeleton-final.md`). They are the lane's own rows
+  731-735; none writes the consumer for the centre-blind class. No hit on any pull-request head.
+- What the search does not show: files outside those 248 paths were not searched. The repository of Sussman and
+  Alpoge was not searched in this row.
+
 ## 0. Plan (written first, 2026-11-19 21:12Z by `date -u`)
 
 Moves: the wall (W) of row 720, in the exact forms of rows 1175 and 1177
@@ -26,12 +53,17 @@ Steps, one per response, each appended here before the next:
 ## Status log
 
 - 21:12Z file created; reading inputs.
-- 21:13Z read: FINISH rule sections, GOAL.md, `gap-council-synthesis.md`, `parts/gap.md` L1-160 (formulation, methods 19-36, lead rules, obligations to row 1072), FINISH RESULT lines of rows 1141-1178 and the sibling rows 1180 (neutral bound) and 1181 (free method). Row 1178 (gpt-6.2-astra, continue chain on (W)) runs in parallel. Next: the exact statements of rows 1175 and 1177.
+- 21:13Z read: FINISH rule sections, GOAL.md, `gap-council-synthesis.md`, `parts/gap.md` L1-160 (formulation, methods 19-36, lead rules, obligations to row 1072; the obligations of rows 1076-1115 were read next, those of rows 1116-1140 only through their FINISH lines; L223-322, the route registry, test table and price, were read at 21:58Z, after the RESULT line was first written; they changed no statement and added item 5 of Section 6), FINISH RESULT lines of rows 1141-1178 and the sibling rows 1180 (neutral bound) and 1181 (free method). Row 1178 (gpt-6.2-astra, continue chain on (W)) runs in parallel. Next: the exact statements of rows 1175 and 1177.
+- 21:18Z read `gap-solve16-astra62.md` L1-135 (statements (1)-(13)). Section 1 below written from it.
 - 21:33Z read `gap-solve17-astra62.md` in full (planar tension test (7), bounds (14), (25), (26), obstruction (33), (35)). Section 2 written.
 - (entries between 21:13Z and 21:52Z are the dated notes inside Sections 1-7.) 21:52Z: Sections 5-7 written and
   corrected once (frozen Z_2 wording, positivity of the plaquette mean, the mixture sentence). Next: re-read of every
   PROVED item, then the RESULT line.
-- 21:18Z read `gap-solve16-astra62.md` L1-135 (statements (1)-(13)). Section 1 below written from it.
+- 21:57Z: re-read done; Corollary FB added; every cited line anchor re-taken with `grep -n -F` (two corrected: the
+  finite-aspect statement of row 1161 is L146, Corollary F1 of row 1158 is L212). Section 8 and the RESULT line written.
+- 22:00Z: cross-branch search done (main and six pull-request heads; no earlier text of the even-sector consumer);
+  "Repo search" section added at the top. Check 1162's verdict table read: (7) is S6, the one-cube statement S8, the
+  finite-aspect statement S9, the consumer with the bound 8 eps S10, all HOLD.
 
 ## 1. The statement (from row 1175, `gap-solve16-astra62.md` L59-64; unchecked there)
 
@@ -269,9 +301,9 @@ gets it from (G1), which is the periodic seed). So the proof above restricts the
 
 ## 6. Theorem BP: the gap clause does not read the branch (21:47Z)
 
-**(N-phys), the neutral premise in the form of row 1161 (`gap-solve9-astra62.md` L141-148).** Fix s_0 = 1/2, the
+**(N-phys), the neutral premise in the form of row 1161 (`gap-solve9-astra62.md` L146-148).** Fix s_0 = 1/2, the
 interval J = [1/2, 1] and a tolerance eps < 1/(8 x 5041). Let K = K(s_0, eps, J) be the integer of row 1161's
-finite-aspect statement (L141; an existence statement, independent of the cube, the coupling and the cutoff).
+finite-aspect statement (L146; an existence statement, independent of the cube, the coupling and the cutoff).
 (N-phys) says: at one admissible physical side L, for every cutoff index j >= j_0, with n_j = L/a_j and 4 | n_j,
 there is an integer u_j with 3 <= u_j <= n_j/K and s_+(u_j; n_j^3) <= 1/2. Here s_+ is the periodic centre-neutral
 excited trace of the cube n_j^3 in units of its vacuum.
@@ -317,6 +349,11 @@ Also N a_j = L/2. (ii) Proposition P-ev with these data: log(1/(5041 x 8 eps)) /
 4. Consequence for the queue (evidence for the lead; the lead decides): a row on (BS) moves (W) and the
    confinement statement, and it does not move the gap clause. The open lattice input of the gap clause is the
    item of row 1180, (N-phys). `parts/gap.md` L200 lists both as open without this distinction.
+
+5. In the route registry of `parts/gap.md` (L223-267, read 21:58Z) this is route RE, the sector engines: "blocked-local,
+   reopen on an even step". Rows 737 (Theorem R: the even seed (ES)) and 1161 (the short-time neutral trace) each
+   supply an even step, and Theorem BP carries the route to the gap clause. In the words of the test table (L268),
+   (N-phys) gives T_ev uniformly in the cutoff, and T_per is what (BS) adds.
 
 Scope. Theorem BP is an implication. (N-phys) is open. The continuum datum, (H2) and (TOT) are open (the T0 chain).
 The constant K of (N-phys) is not explicit in the form used here; row 1161 also has an explicit test with K = 512
@@ -416,7 +453,7 @@ and D_m := log(lambda_0/lambda_m) >= 0. Its eigenvector is even, so it lies in t
 `gap-flux-exercise.md` 3.1). Put b_- := - log(1 - 2 eps) and b_+ := 2 log(1/eps). For eps just below 1/40328,
 b_- is about 5.0 x 10^(-5) and b_+ is about 21.2.
 
-**Corollary FB (PROVED GIVEN row 1161 L141, with the constants of Section 6).** Under (N-phys), at every cutoff
+**Corollary FB (PROVED GIVEN row 1161 L146, with the constants of Section 6).** Under (N-phys), at every cutoff
 j >= j_0 and with n = n_j, exactly one of the following holds.
 
 - Alternative I: n E_q >= b_+ for all seven q != 0, and n D_m <= b_- for all seven m != 0.
@@ -440,7 +477,7 @@ Reading (ARGUED). (BS) is an order-one statement at one physical cube: a bound o
 multiple of 1/L, with a margin of five orders of magnitude between the two alternatives. Lower bounds on electric
 flux energies of this kind are on file as targets: row 1158 Lemma F with (TUN), and row 1161 (1)-(2) (linear in
 the overlap). (N-phys) gives exp(- m_+ u) <= s_+(u) <= 1/2 with u <= n/K, so n m_+ >= K log 2. Corollary F1 of row 1158
-(`gap-paths-fable.md` L210-215: z^- >= (tau_*^2/13) z_+, for m_+ <= 1) would then put n E_q above b_- as soon as
+(`gap-paths-fable.md` L212-215: z^- >= (tau_*^2/13) z_+, for m_+ <= 1) would then put n E_q above b_- as soon as
 tau_*^2 > 13 b_-/(K log 2): an overlap above about 1.4 x 10^(-3) for K = 512, and above 0.031 for every K >= 1
 (arithmetic from the stated constants; the lemma was not re-derived here). The upper bound n D_m < 21.2 is of the kind of row 1161 L107 (a transverse
 class probability above 1/10). Neither is proved for Wilson SU(2). OPEN.
@@ -481,14 +518,13 @@ Statements of this file and their labels:
 | Theorem BP | PROVED GIVEN 5.0 (composition; row 1161 (7) states its first half) | same |
 | Reading 1-4 under Theorem BP | ARGUED | evidence for the lead |
 | Proposition J | PROVED | obstruction for one route; small |
-| Corollary FB | PROVED GIVEN row 1161 L141 | finite restatement of (BS) |
+| Corollary FB | PROVED GIVEN row 1161 L146 | finite restatement of (BS) |
 | 7.2, 7.3 | on file (rows 1177, 1171, 1141; rows 1161, 737, 1072, 709) | named matches, not attacked |
 | 7.4, 7.6, the two paths of Section 3 | ARGUED | obstruction readings |
 | (BS), the competing branch, (N-phys), (W) | OPEN | - |
 
-Not done, and why. No numeric run (none was needed; no lock taken). No cross-branch search beyond the lane folder:
-the two solve files I build on carry their own repo-search sections (L1-5 of each), and the new text of this file
-is a consumer rewrite of rows 700 and 731, which are lane files. Row 1161's explicit two-shape test with K = 512
+Not done, and why. No numeric run (none was needed; no lock taken). The cross-branch search was run only at the
+end (see "Repo search" at the top); it found no earlier text of the consumer. Row 1161's explicit two-shape test with K = 512
 and row 1175's (1)-(9) were used as stated and not re-derived. Row 1176 (check of row 1175) had no RESULT at this
 pin. The complete account of Sussman and Alpoge was not opened in this row: nothing here reads a statement of
 theirs beyond what the cited lane files already cite.
@@ -521,7 +557,7 @@ Suggested edits for the lead (the lead decides; this file edits nothing else):
 
 RESULT: Row 1179 (Claude Fable 5.2 max, Mac mini worker; author, checked by no one; no numeric run; no mass gap
 claimed). The branch selection (BS) is NOT proved and the competing branch is NOT proved; both stay OPEN. PROVED
-GIVEN the lane's checked statements (rows 697, 700, 731, 1161): the even-sector consumer that rows 731, 837 and 1024
+GIVEN the lane's checked statements (rows 668, 697, 700, 731, 1004, 1161): the even-sector consumer that rows 731, 837 and 1024
 left unwritten (Theorem L3-ev, Propositions P-ev, P'-ev), and Theorem BP: the one-cube physical neutral bound alone
 gives a cutoff-uniform gap M_* = (2/L) log(1/(40328 eps)) on the centre-blind sector and, with the continuum datum,
 the Jaffe-Witten gap clause, in BOTH flux alternatives; so (BS) is on the path of (W) as worded (confinement on

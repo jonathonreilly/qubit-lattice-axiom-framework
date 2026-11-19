@@ -1,0 +1,23 @@
+== A. the edge-register window l = L(1 + n/2S), n = 0..2S
+[PASS] A1 THEOREM: rms edge 2L only when every register is full (n = 2S); the split halves each edge to exactly L (n = 0): it maps the window top onto its bottom, so only its inverse (a merge, absent from CL-1) could carry an edge below n = 0  | 91 of 20000 near-top 12-edge cubes have rms 2L, all with every n = 2S
+[PASS] A2 THEOREM: a Lorentzian slab has |dl| < sqrt2 sig lbar per tick, so a register moves at most floor(sqrt2 sig lbar 2S) quanta per tick and not at all unless 2S >~ 1.22/sin eps0 per end; a rishon-sized register (2S = 3) is frozen  | 2S_min {0.0075: 163, 0.0375: 33}; quanta per tick at 2S = 400, lbar = 1.5: 18
+[PASS] A3 THEOREM (flow index): on a finite register Tr(U P_c U^dag) = Tr P_c for every cut P_c = [n >= c], while the definite collapse has index = quanta per tick > 0: a collapsing branch is completed only by an equal re-expanding flux through the same lengths, and with the band (A2) << 2S it turns at the floor  | index at cuts 5, 50, 200, 395: 6e-14; definite collapse at the floor: ~11 quanta/tick down
+[PASS] A4 THEOREM: <l>_k is almost periodic on a finite register, so it cannot settle at the floor; toy (lambda 10) returns within 0.05  | start 1.900, closest return after tick 40: 1.896 at tick 60
+== B. toy: one isotropic cell, dust M = 12 (Hubble radius ~2L), sin eps0 0.0375; lambda = 1/hbar_eff per rung^2
+[PASS] B1 THEOREM: per tick the phase is sig[12 l^2 (g - 2u atanh u) - M l], dl/dtick = 2 sig l u; p = 6 l pi(u) is monotone and H = sig (M l - 12 l^2 A(u)) exactly: H = 0 is the expansion law, and H is even in p  | identity u g' - g - 2u^2/(1-u^2) + A = 4e-09; pi(u) ~ -2u
+[PASS] B2 DIAGNOSTIC (Ehrenfest): before the floor <l> follows the definite H = 0 flow  | max |<l> - l_cl| l1 0.033, l4 0.018, l10 0.022, l1saw 0.033, l1S800 0.033, e0075L4 0.052, M24 0.017
+[PASS] B3 DIAGNOSTIC (floor bounce): <l> turns within a packet width of L at the tick the definite flow exits, p reverses, and <l>(k_b + j) = <l>(k_b - j), more so as lambda grows  | l1: k_b 25/27, min 1.093, asym 0.072; l4: k_b 27/27, min 1.041, asym 0.045; l10: k_b 28/27, min 1.025, asym 0.016; l1saw: k_b 25/27, min 1.094, asym 0.062; l1S800: k_b 25/27, min 1.094, asym 0.065; e0075L4: k_b 133/135, min 1.088, asym 0.011; M24: k_b 24/24, min 1.062, asym 0.010
+[PASS] B4 DIAGNOSTIC: coherent: spread at the turn / 25 ticks on is O(width), falling with lambda; robust to grid and ordering  | l1: w 0.107 0.121/0.227; l4: w 0.053 0.048/0.155; l10: w 0.034 0.021/0.081; l1saw: w 0.107 0.120/0.224; l1S800: w 0.107 0.119/0.222; e0075L4: w 0.024 0.115/0.108; M24: w 0.072 0.093/0.153
+[PASS] B5 DIAGNOSTIC: with no split the packet reflects again at the top (a box); the split at n = 2S is then controlled on a register value  | lambda 10: floor at tick 28, top at tick 55, then floor again at <l> 1.061
+[PASS] B6 THEOREM: read with definite lengths, the stationary next length at the floor is below L, so CL-3 has no allowed stationary point and CL-1's freeze sentence acts; with registers the odds turn instead (B3)  | l_k-1 1.0306, l_k 1.0048 -> next 0.9795 < 1
+== C. merge: the inverse of the split
+[PASS] C1 THEOREM: per parent site the split is an isometry 2 -> 2^8; its inverse V^dag keeps a generic child state's weight 2/2^8: no unitary merge exists on the site modes  | mean kept weight 0.0079 vs 2/256 = 0.0078
+[PASS] C2 THEOREM: a merge removing 7 of 8 sites removes CL-2's permanent records (Record axiom); the edge part (n = 0 -> 2S) alone is a unitary relabelling. No merge consistent with CL-1 and CL-2 exists  | record sites removed per merge: 7 of 8
+== D. ESTIMATES (rung L = sqrt(8 pi) l_P from G = L^2/8pi; measured numbers)
+[PASS] D1 top to floor at the speed limit: ln2/ln(1/r_b) = 0.85/sin eps0 ticks, proper time L/(sqrt2 c)  | ticks 113 (0.0075), 23 (0.0375); L/(sqrt2 c) = 1.9e-43 s
+[PASS] D2 a grid comoving with homogeneous dust meets the floor once a halves (density x8): an OS ball from rest at R0 > 2 r_s would turn outside r_s, a visible bounce that black-hole observations exclude  | R0 = 3 r_s: a = 1/2 at R = 1.5 r_s > r_s
+[PASS] D3 a prompt re-emergence ((r_s/c) ln(r_s/L)) is excluded for Cyg X-1; a hidden bounce with a stationary exterior changes it at (L/r_s)^2 per crossing, tau ~ M^3; Planck-star M^2 t_P is allowed too  | Cyg X-1: prompt 1.3e-02 s, M^2 1e+35 s, M^3 (Hawking) 2e+78 s, seen 1.9e9 s; M^2-time = age at 6e+22 kg
+supplied: cubic isotropic frustum, continuum-tick Hamiltonian (O(sig^2) dark-constant drift dropped), Weyl/polymer
+  ordering, symmetric register multiplet, dust -M T, lambda = 1 per cell (collective modes: lambda = N), no split in B.
+elapsed 2.1 s
+TOTAL: PASS=15 FAIL=0

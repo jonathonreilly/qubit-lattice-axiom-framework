@@ -1,0 +1,34 @@
+d4-order96-dirac-overlap: pre-registered criteria (written 2026-10-26 before any code was run)
+
+Question. Keep the Qubit axiom (one complex fermion mode per D4 event). The parent probe (d4-chiral-rotations-only, C7) found
+that order-96 protected rotations-only subgroups G of W(F4), realised nonsymmorphically (x -> A x + tau_A, no fixed event class)
+with U(1) phases putting the 16-event module in the spinor class, can contain S+ alpha and S- alpha together: a Dirac block at
+P = 0 is rep-allowed. Is it buildable, chiral via the overlap, and protected at loop level?
+
+Plan (labels [T] exact, [F] finite diagnostic):
+Q1 [T] Explicit realisation: pick an order-96 protected G, a nonsymmorphic cocycle with no fixed class, stabiliser characters
+   lambda (lambda(z) = -1); build the 16x16 monomial matrices U(g) of the double cover Ghat (order 192) and check they form a
+   representation with U(z) = -1. Locate S+ alpha and S- alpha (isotypic projectors from characters). Need: each with
+   multiplicity exactly 1, S+ and S- irreducible and inequivalent on Ghat.
+Q2 [T] Light-block counts: Hom_G(Sym^k V x S_D, S_D) (S_D = S+ alpha + S- alpha) for k = 0..6 vs SO(4) (= 2 for every k).
+   Pass if equal for k <= 4 (then the light Dirac branch has an isotropic velocity, isotropic p^2 and p^3 terms: dim 6 = 0,
+   and the quartic is exactly (p^2)^2 per chirality block). Report the first k with excess (first LIV order).
+Q3 [F] Kernel: G-invariant one-mode-per-event kernel D_W = A + W on the fine lattice (group-averaged random seeded hops),
+   A anti-Hermitian and Gamma-odd, W Hermitian, Gamma-even, positive semidefinite (W = sum R^dag R), with R tuned linearly so
+   that W(0) vanishes on the Dirac block. Gamma = an involution commuting with G with Gamma = +1 on S+ alpha, -1 on S- alpha,
+   trace 0 (preferably site-diagonal: a sign per event orbit). Pass if: (a) D_W(0) has exactly 4 null vectors spanning the
+   Dirac block; (b) min sv of D_W(P) over a coarse-zone grid away from P = 0 is > 0.1 (relative to |D_W|); (c) light singular
+   values at small |p| are isotropic: anisotropy of sv/|p| over directions scales like eps^4 (dim 6 = 0) not eps^2.
+Q4 [F] Overlap D_ov = m0 (1 + Gamma sign(Gamma (D_W - m0))): GW exact, Gamma-hermitian, exactly 4 zero modes at P = 0 with
+   NO tuning (W's tuning is not needed by the overlap: any light-block mass below m0 works), no other zero modes on the grid,
+   G-invariance of D_ov (checked in real space on a G-invariant torus), light-mode isotropy as in Q3(c).
+Q5 [F] Smooth U(1) backgrounds, constant fluxes (n12, n34) on a Z^4 box compatible with 2D4 (side 8): index
+   -(1/2) Tr sign(H) = +-Q (one sign convention, same for all Q) for Q = 0, +-1, 2; Luscher P_hat = (1 - Gamma_hat)/2 a
+   projector, Tr Gamma_hat = 2 index, Gamma_hat exponentially local.
+Q6 [T] Invariant tensor counts of G (full tensors V^{x k}): ranks 2, 4, 6 vs O(4) (1, 3, 15) and SO(4) (1, 4, 25; the
+   Levi-Civita tensor is SO(4)-invariant). Symmetric counts (Sym^k V) ranks 2, 4, 6 vs SO(4) (1, 1, 1).
+   Prediction: G rotations-only cannot match O(4) at rank 4 (epsilon is invariant); the right comparator is SO(4).
+Verdict rule: WORKS if Q1-Q5 pass and Q2/Q6 show no LIV below dimension 8 (symmetric rank 6 / k = 5); PARTIAL if the kernel
+or overlap is built but a protection count fails or the index fails; NO-GO if no explicit realisation admits a gapped kernel
+with only the Dirac block light.
+Runner limits: < 60 s, < 1.5 GB, seeded, output < 6000 chars, AUDIT_TIMEOUT_SEC = 120, ends TOTAL: PASS=N FAIL=0.

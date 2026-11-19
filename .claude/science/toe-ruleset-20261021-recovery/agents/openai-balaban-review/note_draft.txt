@@ -1,0 +1,91 @@
+D4 block step: Balaban's one-step fluctuation covariance decays exponentially, at a rate bounded below uniformly in small U(1) backgrounds, as for the hypercubic block
+
+Date: 2026-10-26
+Claim type: bounded_theorem (exact identities plus finite diagnostics for a supplied abelian scalar model)
+Status authority: independent audit lane only. This draft sets no audit outcome.
+Runner: runner.py (this folder). AUDIT_TIMEOUT_SEC = 120. Runtime 20 s, ~0.76 GB peak, seeded, 10/10, output 1.4 k
+  characters. A re-run under a unique filename (scratchpad copy) gave identical output apart from the runtime line.
+Pre-registration: criteria_pre_run.txt, written before any computation.
+Labels: [T] exact; [F] finite diagnostic; [A] supplied literature input; [S] reading.
+Axioms unchanged. No CL edit. Nothing adopted.
+
+Question
+Balaban's renormalization group for lattice gauge theory [A] needs, at every step, a fluctuation covariance
+C_A = (-Lap_A + a Q_A^dag Q_A)^-1 that decays exponentially, with constants uniform in the small-field background A.
+Here Q_A is the gauge-covariant block average. Does the forced D4 factor-2 kernel (weights 1, 1/2, 1/8; #10098) meet
+this first input, and does it differ from hypercubic factor-2 blocks?
+
+Model (supplied)
+- Scalar field. Real U(1) link angles on a fine torus of side 12 (D4: 10368 sites; Z^4: 20736 sites).
+- -Lap_A is normalised to p^2 on both lattices: (1/6) sum over the 24 roots for D4, the 8 neighbours for Z^4. a = 1.
+- Q_A Phi(X) = (1/16) sum_e w(e) T(2X -> 2X+e) Phi(2X+e). T = exp(i x the mean angle over all shortest lattice paths),
+  which is Balaban's abelian averaging of angles.
+- Kernels:
+  - D4: 1, 1/2, 1/8 on 0, the roots and the norm-4 vectors.
+  - Z4-sym: prod_mu (1 if e_mu = 0, 1/2 if e_mu = +-1), the closed-cell analogue.
+  - Z4-cube: uniform weights on the corner block {0,1}^4, the Balaban L = 2 analogue.
+- Backgrounds:
+  - free;
+  - iid link noise tuned to eps = max_p |1 - U_p| = 1/30, 0.3, 1.0 (D4 triangles, Z^4 squares);
+  - constant flux Q = 1 with twisted transition functions;
+  - Q = 1 plus noise at eps = 1.
+  - Exploratory large field: uniform random angles (eps = 2).
+
+Results
+- [T+F] 0. On every kernel Q_A 1 = 1 at A = 0 (exactly: each kernel is a partition of unity). Gauge covariance
+  C_{A + d lambda} = L C_A L^dag holds to 1e-16, and Hermiticity to 3e-16.
+- [T+F] Free gap. The lowest eigenvalue of -Lap + a Q^dag Q is a/16 = 0.0625000 for all three kernels. This is the
+  constant mode: Lap kills it, and Q^dag Q 1 = (1/16) 1 because the 16 cosets of the coarse lattice share each fine site
+  with total weight 1.
+- [F] 1-3. Envelope decay rate of |C_A(x, 0)| (fitted for 1.5 < |x| < 6, in common coordinate units), and the gap:
+
+  | background | D4 rate / gap | Z4-sym rate / gap | Z4-cube rate / gap |
+  |---|---|---|---|
+  | free | 0.474 / 0.0625 | 0.494 / 0.0625 | 0.494 / 0.0625 |
+  | eps 1/30 | 0.474 / 0.0625 | 0.494 / 0.0625 | 0.494 / 0.0625 |
+  | eps 0.3 | 0.482 / 0.0647 | 0.507 / 0.0664 | 0.507 / 0.0663 |
+  | eps 1 | 0.554 / 0.0888 | 0.617 / 0.1100 | 0.615 / 0.1087 |
+  | Q = 1 | 0.579 / 0.1453 | 0.588 / 0.1453 | 0.593 / 0.1479 |
+  | Q = 1 + eps 1 | 0.624 / 0.1700 | 0.669 / 0.1939 | 0.669 / 0.1923 |
+  | large field (eps 2) | 2.153 / 2.401 | 1.858 / 2.695 | 1.901 / 2.693 |
+
+  In every small-field background the minimum rate and the minimum gap are the free values (ratio 1.000). Pre-registered
+  bars: rate >= 0.8 x free, gap >= 0.5 x free. PASS on all three kernels.
+- [S] Two readings.
+  - Background roughness and flux only raise the gap and the rate. The operator is not an M-matrix (Q^dag Q has positive
+    off-diagonal entries), so this is not the scalar diamagnetic inequality. It is a measured monotonicity on these
+    backgrounds, not a proof.
+  - D4 and both hypercubic blocks are indistinguishable at this level: the same exact free gap, and rates within 4% in
+    common units. The D4 site density is half, and per volume-matched spacing (x 2^(1/4)) D4's rate is 0.56 against 0.49.
+
+Verdict (pre-registered rule)
+The D4 block meets Balaban's uniform one-step fluctuation-covariance decay in the tested abelian scalar setting, as the
+hypercubic blocks do. Nothing in this first analytic input needs a hypercubic lattice.
+
+Limits (walls move)
+- The fitted window is pre-asymptotic. The rates (about 0.47-0.49) exceed sqrt(free gap) = 0.25, so the true asymptotic
+  mass on a large torus may be smaller. Uniformity, not the value, is the claim.
+- The model is an abelian scalar with one block step. Untested: non-abelian SU(N) links; the Balaban background-field
+  minimiser in place of random/flux links; axial gauge fixing inside blocks; the fermion fluctuation operator; many steps.
+- A Combes-Thomas bound, with the rate set by the gap and the kernel range, would make the uniformity a theorem for
+  small fields. It is not proven here.
+
+Smuggling gate
+- (1) No fitted number. a = 1, the torus and the eps grid are stress inputs. PASS.
+- (2) No observed structure named. PASS.
+- (3) Untested prediction: uniform small-field decay persists for SU(N) and for the D4 fermion block. UNTESTED.
+- (4) No new bend; no rule proposed.
+
+Sources used
+- d4-zoom-fixed-point-fermion (#10098): the forced kernel.
+- d4-gauged-fixed-point-locality: the companion fermion test in U(1) backgrounds; its flux transporters are reused.
+- [A] Balaban, CMP 109 (1987) 249; CMP 116 (1988) 1; CMP 119 (1988) 243 (renormalization group approach to lattice
+  gauge theories I-II and convergent expansions). Dimock, arXiv:1108.1335 and arXiv:1212.5562 (exposition).
+- main: HIERARCHY_BBS_STAGGERED_TASTE_BLOCKING_BRIDGE_SCAFFOLD_AVAILABILITY_BOUNDED_NOTE_2026-05-11 and
+  SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09 name Balaban/Dimock as the constructive route.
+  Not contradicted.
+
+Deviations from pre-registration
+- Noise realisations differ between kernels (shared seed, different draw order). The bars are per-kernel, so this does
+  not affect the verdict.
+- The large-field row is exploratory, as pre-registered.

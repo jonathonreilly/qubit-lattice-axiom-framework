@@ -1,0 +1,115 @@
+---
+claim_id: slab_reflection_parity_restates_the_face_swap_its_internal_twists_leave_the_mirror_vertex_phase_unforced_and_the_antiunitary_swap_allows_theta_bounded_theorem_note_2026-10-26
+claim_type: bounded_theorem
+claim_scope: "Decides the w2-algebra runner-up (slab reflection composed with D-parity as a parity solution of strong CP). Exact: |kappa| = N_f = 3 from one 16 (sum 2T(colour) = 4, vertex charge 4), Z4 anomaly-free so theta_bar is not quantised to pi/2 (rederives PR #10079 D1-D2). Exact on a two-wall toy (2 x 4 complex modes, Fock dim 256): for every internal twist X in {1, on-site u(4) (D-like), C, K}, S = wall swap o X maps the far-wall charge-4 vertex onto a near-wall degree-4 operator with zero overlap on every bilinear, ties lambda_far only to lambda_near (phase phi, -phi, or phi -/+ arg det u), and S-exactness gaps the light wall (ground degeneracy 16 -> 1). Exact sign table for sum E.B: odd under P_slab, P_slab o D, P_slab o C; even under P_slab o K and under the Floquet 0 <-> pi exchange. D-parity does not preserve the SM register's Cartan span. Estimate with supplied measured inputs: in the BCS shape of #10079 (not w2's route) the lowest CP-odd renormalisable flavour invariant is Im tr(H_u H_d H_u^2 H_d^2) = 1.5e-24, sign-flipped in the mirror, so the radiative theta_bar ceiling is 3e-24. Not covered: interacting SMG dynamics, a dynamical (charge-4 condensate) lambda_4, the CL-1 cell slab, loop coefficients themselves."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - face_swap_parity_gives_a_tree_level_zero_theta_only_with_wall_local_electroweak_registers_and_shared_colour_bounded_theorem_note_2026-10-24
+  - a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_bounded_theorem_note_2026-10-23
+  - the_lattice_theta_density_is_odd_under_the_kept_antiunitary_and_zoom_three_characters_give_theta_bar_zero_at_renormalisable_order_bounded_theorem_note_2026-10-22
+runner: scripts/slab_reflection_parity_restates_the_face_swap_its_internal_twists_leave_the_mirror_vertex_phase_unforced_and_the_antiunitary_swap_allows_theta_2026_10_26.py
+---
+
+# Slab-reflection parity restates the face swap: its internal twists leave the mirror-vertex phase unforced, and the antiunitary swap allows theta
+
+Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [E] estimate with supplied numbers, [S] reading.
+Runner: runner.py, TOTAL: PASS=16 FAIL=0, 0.3 s, ~200 MB peak RSS, 2.7 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
+Tested under a unique filename (scratchpad slab_parity_strong_cp_test_run.py, removed after the run). Axioms unchanged.
+No rule adopted. Criteria were written before any code ran (criteria_pre_run.txt). One first-run FAIL (2e) was a coding
+bug in the check (it summed the Omega and Omega^dag overlaps of a Hermitian image, giving 2, not 1); the physics printed
+was as pre-set and the check was corrected to test |coefficient| = 1 and the phase. Nothing else changed.
+
+Repo first. origin/main has no Barr-Chang / Babu-Mohapatra / mirror-parity note. Open PR #10079 (face-swap-parity) is
+the direct predecessor; #9925 (Z4 of B - L) is adjacent. This note cites and narrows #10079 and floquet-pi-slab, and
+uses strong-cp-revisit's sign of the theta density under the kept antiunitary.
+
+## The proposal as stated (w2, approach 2)
+
+- Rule: S_w2 = (slab reflection z -> L - z) o (D-parity in Spin(10)) is exact, broken only by the far wall's gapping.
+- Claim: theta is P-odd so bare theta = 0; S_w2 relates near-wall Yukawa phases to far-wall coupling phases, so
+  theta_bar = theta - arg det(Y_u Y_d) - kappa arg lambda_4 cancels pairwise and the CKM phase sits freely in Y.
+- Kappa check: compute kappa; does S force arg lambda_4 = -(1/kappa) arg det(Y_u Y_d), exactly or mod pi/2?
+
+## Is it a restatement of #10079?
+
+The only element #10079 lacked is the internal twist X = D. The runner tests X = D and the two other twists the brief
+named (C, and the antiunitary K the FREEZE slab would need), plus the Floquet 0 <-> pi exchange.
+
+1 [T] kappa. One 16 holds 16 Weyls; its colour content is 4 triplets/antitriplets (one per SU(4) quartet), so
+  sum 2T = 4. A common mirror phase alpha shifts theta by 4 N_f alpha and the charge-4 vertex by 4 alpha, so
+  |kappa| = N_f = 3. The Z4 generator (alpha = pi/2) shifts theta by 2 pi N_f: anomaly-free, so theta_bar is continuous
+  in arg lambda_4 (no pi/2 quantisation). Same as #10079 D1-D2. (w2's literal formula "anomaly of the Z4 / 4" gives
+  0 mod 2 pi; the continuous mirror U(1) is the right object.)
+
+2 [T] Any wall swap, any twist. For X in {1, D-like on-site u(4), C, K} the image of H_far = e^{i phi} Omega_far + h.c.
+  commutes with every far mode (near-local), has zero overlap with every bilinear (degree 4 is kept), and differs from
+  H_far (S explicitly broken). Its coefficient is the near-wall vertex with phase phi (X = 1), -phi (C, K) or
+  phi -/+ arg det u (D). This is the general reason: a wall swap keeps locality and fermion degree, so it can never map
+  the quartic lambda_4 onto a bilinear Yukawa. w2's "P relates near-wall Yukawa phases to far-wall coupling phases"
+  is false for every twist. (w2's kill condition is met in substance: nothing cancels the vertex phase.)
+
+3 [F] Making S exact (adding the image) gaps the light wall: ground degeneracy 16 -> 1. So exactness and a light 16
+  are incompatible; the vertex must be an explicit breaker, as in #10079 A7/D3.
+
+5 [E] With one gauge field, Y' = Y^dag does cancel the Yukawa phases (arg det Y det Y' = 1e-16), so
+  theta_bar = -N_f arg lambda_4 exactly, and arg lambda_4 is unconstrained. Fraction of phases with
+  |theta_bar| < 1e-10: 1e-10/pi. FAILS by ten orders without a tuning.
+
+4 [T] Theta-density signs (8^3 spectral grid; su(3) algebra for C and D):
+  - P_slab: odd. P_slab o D: odd (tr E.B is invariant under any automorphism). P_slab o C: odd (C: B -> -B^T).
+  - P_slab o K: EVEN. K (A even, E odd in the A basis) is T-like, so the composite is PT-like and allows theta.
+    The FREEZE slab (light in copy q = 2, mirror in q = 1) can only have the antiunitary swap (#10079 A, [S]), so on
+    that slab the swap does not even remove the bare theta. If K alone were exact, K o (P_slab o K) = P_slab would be
+    exact too, which the copy mismatch forbids; so nothing protects theta there.
+  - Floquet 0 <-> pi exchange: even. floquet-pi-slab C3 puts the light q 2 at 0 AND pi on the SAME near wall with the
+    SAME hand; the exchange preserves wall, hand and the link register, so it is no parity at all.
+
+6 [T] D vs the register. D maps the 16's charge set to itself, but D(T3L) = T3R and D(Y) lie outside span{T3L, Y}
+  (residual 0.80). With an SM-only register S_w2 does not exist; with Spin(10) gauged D is inner and S_w2 is
+  gauge-equivalent to P_slab; with a left-right register it is new, but item 2 still applies (locality, not group).
+
+Conclusion: DUPLICATE. S_w2 is #10079's P_slab up to an internal twist, and no twist changes what decides the question
+(locality and fermion degree of the mirror vertex). Within the adopted rules (one gauge field, SMG mirror): FAILS.
+
+## Leading radiative theta_bar where the tree-level zero does hold (#10079's BCS shape, X1)
+
+This re-qualifies #10079's route, not w2's: wall-local electroweak registers, shared colour, mirror heavy through its own
+Higgs (no lambda_4, so kappa does not enter).
+- 7a [T] Every word of length <= 5 in H_u = Y_u Y_u^dag, H_d = Y_d Y_d^dag has a real trace; length 6 is the first
+  CP-odd invariant.
+- 7b [T] Covariance forces delta Y_u = P(H_u, H_d) Y_u, so delta theta = Im tr P: no 1/y enhancement from renormalisable
+  spurions (checked: arg det((1 + eps W) Y) = eps Im tr W + O(eps^2)). Mirror spurions are complex conjugates, so mirror
+  words carry the opposite sign; they cancel up to the scale dependence of the coefficients.
+- 7c [E] Supplied inputs (running masses at mu = m_t, PDG Wolfenstein; J = 3.12e-5): Im tr(H_u H_d H_u^2 H_d^2) =
+  1.53e-24, det[H_u, H_d] = 3.1e-24. With any loop factor <= 1, theta_bar_rad <= 3e-24, below 1e-10 by 14 orders.
+  The binding leak in that shape is therefore #10079 E1-E2 (P-even cutoff operators, v' < ~1e11 GeV), not loops.
+
+## Verdict
+
+DUPLICATE of #10079 section D, and FAILS within the adopted rules for every twist tested (D, C, K, Floquet 0/pi).
+- |kappa| = 3, not quantised; arg lambda_4 is unforced, theta_bar = -3 arg lambda_4 generically O(1).
+- The antiunitary variant is worse: it does not forbid the bare theta.
+- The only working shape stays #10079's X1 (wall-local electroweak registers), whose radiative leak is 3e-24.
+No CL text is proposed: no new rule works.
+
+[S] One door seen, not tested: if lambda_4 were the expectation value of a charge-4 condensate of a mirror U(1) that is
+otherwise exact, its phase would be a QCD-anomalous Goldstone, i.e. an axion with f ~ the mirror gap, and theta_bar
+would relax dynamically. That is a Peccei-Quinn route, not parity. It needs (i) the light-mirror bilinears of #10079 B
+to be absent (they break the separate mirror U(1)), (ii) the condensate to coexist with SMG's no-bilinear gap, and
+(iii) an axion-quality bound. It is a candidate next probe.
+
+## Gate
+
+No rule is proposed, so there is nothing to gate. For the record, S_w2 itself would fail item 2: "D-parity in Spin(10)"
+names a group.
+
+## Smuggling review
+
+- Supplied: the 16 content and N_f = 3 (as in #10079); the two-wall 4-mode toy; the charge-4 Omega vertex; random
+  fields/Yukawas; running quark masses at m_t, PDG Wolfenstein parameters, v = 246 GeV; the 1e-10 bound; the
+  literature mechanisms (BCS, Babu-Mohapatra), cited as supplied.
+- Forced: |kappa| = N_f and the anomaly-free Z4; locality and degree preservation for every twist; the light wall gapped
+  by S-exactness; the theta-density sign table; D's non-closure on the SM Cartan; length 6 as the first CP-odd word and
+  delta theta = Im tr P.
+- No measured number was chosen to pass anything.

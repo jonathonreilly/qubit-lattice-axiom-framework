@@ -1,0 +1,43 @@
+== A. body-diagonal turns of the d-cube (proper elements of the stabilizer of the diagonal / of its axis)
+   d=2: axis d-cycle order 2 det -1; proper orders fixing the diagonal [1], reversing it [2]
+   d=3: axis d-cycle order 3 det +1; proper orders fixing the diagonal [1, 3], reversing it [2]
+   d=4: axis d-cycle order 4 det -1; proper orders fixing the diagonal [1, 2, 3], reversing it [2, 6]
+   d=5: axis d-cycle order 5 det +1; proper orders fixing the diagonal [1, 2, 3, 5], reversing it [2, 4, 6]
+[PASS] A1 theorem: the axis d-cycle maps the body diagonal to itself with order d and det (-1)^(d-1), so it is a proper turn only for odd d
+[PASS] A2 d = 2: no proper turn other than 1 fixes the diagonal; the natural analogue is the pi turn -1 (proper, order 2 = d, reverses the diagonal) or the diagonal reflection (the 2-cycle, improper)
+[PASS] A3 d = 4: the proper turns that keep the diagonal axis have orders {1,2,3} (fixing) and {2,6} (reversing): no proper order-4 turn exists; the order-4 body-diagonal turn is a rotoreflection
+== B. charges of each turn on the 2^d corner modes, fixed windows, spin lift
+   d2 pi-turn -1          n=2 corner charges {0: 2, 1: 2} fixed windows 4 lift T^n=-1 -> Z4^F
+   d2 swap (improper)     n=2 corner charges {0: 3, 1: 1} fixed windows 2 lift T^n=n/a -> Z2 (antiunitary class)
+   d3 C3                  n=3 corner charges {0: 4, 1: 2, 2: 2} fixed windows 2 lift T^n=-1 -> Z3
+   d4 4-cycle (improper)  n=4 corner charges {0: 6, 1: 3, 2: 4, 3: 3} fixed windows 2 lift T^n=n/a -> Z4 (antiunitary class)
+   d4 C3 (3 axes)         n=3 corner charges {0: 8, 1: 4, 2: 4} fixed windows 4 lift T^n=-1 -> Z3
+   d4 -C3                 n=6 corner charges {0: 4, 1: 2, 2: 2, 3: 4, 4: 2, 5: 2} fixed windows 4 lift T^n=+1 -> Z6
+   d5 C5                  n=5 corner charges {0: 8, 1: 6, 2: 6, 3: 6, 4: 6} fixed windows 2 lift T^n=-1 -> Z5
+   d5 C3                  n=3 corner charges {0: 16, 1: 8, 2: 8} fixed windows 8 lift T^n=-1 -> Z3
+[PASS] B1 d = 3 reproduction: the C3 corner charges are {0^4, 1^2, 2^2} (families-mod-3 A4) and the turn fixes exactly the two windows Gamma and R
+[PASS] B2 theorem: every axis-permuting turn fixes Gamma and R (all-0 and all-1 corners) in every d, so the two-window S of the lemma exists in each d; the pi turn fixes all 2^d windows
+[PASS] B3 spin lift: odd-order turns can be made order n on fermions (T^n = (-1)^F is removed by (-1)^F T); the d = 2 pi turn has T^2 = (-1)^F and cannot (group Z4^F, fermion charges odd); the d = 4 -C3 lifts with T^6 = +1
+== C. allowed family numbers N = 1..8 (obstruction = no kept twist k makes the S index vanish)
+[PASS] C1 d = 3 reproduction of families-mod-3 C2 (n = 3, m = M = 4, q_l = 2, q_m = 1): k = 0, 2 -> {3,6}, k = 1 -> all; the mirror top form keeps only k = 2, so N = 0 mod 3 | {0: [3, 6], 1: [1, 2, 3, 4, 5, 6, 7, 8], 2: [3, 6]}
+   d2 pi-turn Z4^F, cell m=M=2    strongest over all charge pairs: allowed N = [1, 2, 3, 4, 5, 6, 7, 8]
+   d2 swap Z2, cell m=M=2         strongest over all charge pairs: allowed N = [1, 2, 3, 4, 5, 6, 7, 8]
+   d3 C3 Z3, cell m=M=4           strongest over all charge pairs: allowed N = [3, 6]
+   d4 4-cycle as Z4, cell m=M=8   strongest over all charge pairs: allowed N = [1, 2, 3, 4, 5, 6, 7, 8]
+   d4 4-cycle as Z8^F, cell m=M=8 strongest over all charge pairs: allowed N = [1, 2, 3, 4, 5, 6, 7, 8]
+   d4 C3 Z3, cell m=M=8           strongest over all charge pairs: allowed N = [3, 6]
+   d4 -C3 Z6, cell m=M=8          strongest over all charge pairs: allowed N = [3, 6]
+   d5 C5 Z5, cell m=M=16          strongest over all charge pairs: allowed N = [5]
+   d5 C3 Z3, cell m=M=16          strongest over all charge pairs: allowed N = [3, 6]
+[PASS] C2 theorem (cell content): d = 2 and the order-4 turn of d = 4 obstruct NO N for any charge pair (unitary or spin-lifted group), because M = m = 2^(d-1) absorbs the 2-part of n: the twist is not selected and the index vanishes
+[PASS] C3 theorem: the proper turns of the 4-cube that keep the diagonal (C3, order 3; -C3, order 6) give N = 0 mod 3; d = 3 gives N = 0 mod 3; so with the turn read off the cube the obstruction is mod (odd part of the turn order), never mod 4 or mod 2
+[PASS] C4 sensitivity (d = 4 order-4 turn as a unitary Z4, best case): N = 0 mod 4 needs an ODD per-family multiplicity m and M != 0 mod 4; the toy multiplicity 2 gives at most mod 2; the cell (2^d modes) never supplies odd m | mod 4 at (m,M) [(1, 1), (1, 2)]; mod 2 at [(2, 1), (2, 2)]
+[PASS] C5 extrapolation (toy algebra only; the 5+1D anomaly is a different invariant): d = 5 gives N = 0 mod 5 from the 5-cycle and N = 0 mod 3 from its 3-cycles: "mod d" appears only for odd prime d, where the d-cycle is proper and m = 2^(d-1) is a unit
+[PASS] C6 RESULT: the PASS criterion ('allowed N = multiples of d in each d') FAILS (d = 2: none, d = 4: none or mod 3); the 3 of the lemma is the order of the proper body-diagonal turn, which coincides with d only at d = 3 (and odd prime d) | mod-d per d: {2: False, 3: True, 4: False}
+== D. Dobrescu-Poppitz 2001 (6D: space x 2 extra; SU(2) global anomaly needs n(2_+) - n(2_-) = 0 mod 6)
+[PASS] D1 agree on the conclusion: DP per-generation doublet excess 2 (a unit times 2 in Z6) gives N = 0 mod 3, the same allowed set {3,6} as our d = 3 per-family index 4(q_l - q_m) = 1 mod 3; origin differs (pi_6(SU(2)) = Z12 and the colour count vs the turn order and the cell content) | DP [3, 6], ours [3, 6]
+[PASS] D2 zoom as DP's extra dimensions: space + zoom is d = 4 (4+1D, odd: no Weyl fermions; pi_5(SU(2)) = Z2 has no 3-part); our d = 4 class gives mod 3 only via the 3-axis turn, not the zoom; DP needs TWO extra directions with 6D chirality
+elapsed_seconds 0.1
+theorems: A1-A3, B2, B3, C1-C3; finite/sensitivity: B1, C4; extrapolation: C5; comparison (supplied DP): D1, D2.
+
+TOTAL: PASS=14 FAIL=0

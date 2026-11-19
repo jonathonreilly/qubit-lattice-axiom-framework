@@ -1,0 +1,25 @@
+== A. box-frustum carrier: edges l_x,l_y,l_z per slice, tick T = sin(eps0)/sqrt(sum 1/m_i^2) (CL-1, mid read)
+[PASS] A1 THEOREM: equal edges give exactly the cubic-frustum carrier (trapezoid deficit 4 asin(u_j u_k/sqrt((1-u_j^2)(1-u_k^2)))) | max action difference 9e-16
+[PASS] A2 THEOREM: Schlaefli holds on anisotropic slabs: the deficits are the true dihedral angles | relative 4e-10
+[PASS] A3 THEOREM: small face speeds give the Bianchi I Einstein-Hilbert action -T sum adot_i adot_j a_k | Regge/continuum action 1.0000 (off-shell path) at u ~ 0.002
+[PASS] A4 THEOREM: degree-2 homogeneity: the face-speed map is scale-free, so CL-1 splits leave the vacuum orbit unchanged | u at scale 1 vs 1e-20: 1e-14, dust 9e-15
+[PASS] A5 THEOREM (leading asymptotics): at the null face u_j^2+u_k^2 -> 1 the edge equation diverges as pi m_i sign(u_j u_k) n/h_i: outward when both faces move alike, INWARD when one grows and one shrinks, so the isotropic existence proof does not carry over | R.n/|R| at gap 1e-6: +1:+0.9999, +1:+1.0000, -1:-0.9999, -1:-0.9999, +1:+0.9999, +1:+1.0000
+== B. existence, multiplicity, folds of the edge equation (one tick, any data)
+[PASS] B1 DIAGNOSTIC: the edge equation diverges on the whole null boundary, so roots cannot leave the window: one degree for all data | |R|(gap 1e-10)/|R|(gap 1e-2) on 12 rays: min 6043, median 11160
+[PASS] B2 DIAGNOSTIC: degree +1 at every sampled tick (a root always exists), but fast data have 3 roots: CL-3 does not fix the next slice | 18 samples: roots {1: 14, 3: 4}, degree {1: 18}; e.g. u_prev [-0.36 -0.9  -0.22] -> roots [array([-0.86,  0.49, -0.46]), array([-0.39, -0.88, -0.28]), array([-0.25, -0.95, -0.07])]
+[PASS] B3 DIAGNOSTIC: the Legendre-map Jacobian changes sign near some null faces (folds), never on isotropic or one-axis rays | iso: ++++++; (1,-1,-1): ++++++; (1,0,0): ++++++; (1,1,0): +++---; Kasner -2:3:6: ++++-- at s = .05,.4,.8,.95,.99,.999 of the null ray
+== C. vacuum Kasner collapse (fixed-step tick; zero dark constant on the first slab)
+[PASS] C1 DIAGNOSTIC: sub-Hubble cells follow Kasner (speed ratios p_i/p_j); the continuum slicing crushes in finitely many ticks | max ratio error 4e-04; continuum ticks to the crush: 1064 and 719
+[PASS] C2 DIAGNOSTIC pancake p=(-2,3,6)/7: every tick has its root; l_z falls by (1+s u_z)/(1-s u_z), s = sin eps0, far from the speed limit; l_x, l_y freeze; proper time converges (the tick, read from the smallest edge, freezes the cell) | 1501 ticks {'ok': 1500}; ratio meas/pred - 1 = 1e-09; edges [4.44317e+00 8.33300e-02 5.00000e-05]; min null gap 0.33; tau 50.4166 -> 50.4167 vs Kasner 50 (lattice ticks: unbounded vs 1064)
+[PASS] C3 DIAGNOSTIC cigar p=(-1,2,2)/3 (Schwarzschild interior): l_y=l_z fall by (1+s u/sqrt2)/(1-s u/sqrt2); the growing edge alone runs into the speed limit (u_x -> sqrt(1-u_y^2), null gap ~ l_y) and freezes | 1101 ticks {'ok': 1100}; u = [ 0.99396 -0.01911 -0.01911]; gap/l_y 11.40, 16.73, 17.02; l_x 6.0225; tau 50.939
+== D. a lattice wall: reflection off a mixed-sign null face (vacuum Bianchi I, mpmath 40 digits)
+[PASS] D1 DIAGNOSTIC: a vacuum cell slides along the mixed-sign null face of its z-edge (gap ~ 1e-7) and is reflected: u_y turns from shrinking to growing, a lattice BKL-type wall absent from GR Bianchi I; every tick has its root, no fold met | ticks 201-242 {'ok': 40, 'homotopy': 2}; u at 201 [ 0.837 -0.547 -0.247], gap 3.0e-07; leaves the face at tick ~224; u_y > 0 from tick 237; u at 242 [ 0.929  0.256 -0.244]
+== E. dust-filled Bianchi I (Heckmann-Schucking class), mpmath
+[PASS] E1 DIAGNOSTIC: dust collapse: all edges shrink, one re-expands (as in GR), then one edge falls geometrically and the others freeze | M 0.0188; {'ok': 520}; tick 100 u [-0.068 -0.031 -0.054]; 500: l [3.4000e-04 9.7122e-01 1.0272e-01], u [-0.094  0.744 -0.219], D 1.5e-08; l_y,l_z change 450->500 4e-03, -1e-02
+== F. ESTIMATES (cube 2 sqrt(8 pi) l_P; Schwarzschild interior ~ Kantowski-Sachs ~ Kasner (-1,2,2)/3 near r = 0)
+[PASS] F1 Kantowski-Sachs (10 M_sun): radial edges stretch as r^-1/2; lattice regime at r ~ sqrt(l r_s) without splits, ~ (l^2 r_s)^(1/3) with CL-1 splits; then C3: radial edge frozen at the speed limit, r = 0 at no finite tick | r_s 2.95e+04 m; sqrt(l r_s) 2.2e-15 m; (l^2 r_s)^(1/3) 9.2e-22 m; Planck-curvature r 2.0e-22 m
+[PASS] F2 exteriors GR to (l/r_s)^2; no bounce or white hole; homogeneous collapse makes no crushed cube (B2) | (l/r_s)^2 3e-77
+supplied: box-frustum carrier (diagonal metric, no shift, homogeneous cells), mid-slab tick read, dust -M T, zero
+  initial dark constant, Lambda = 0, continuation as the choice among multiple roots, KS = Kasner limit, unit map.
+elapsed 42.6 s
+TOTAL: PASS=15 FAIL=0

@@ -1,0 +1,39 @@
+slab-parity-strong-cp: pre-run criteria (written 2026-10-26 before any code ran)
+
+PROPOSAL UNDER TEST (w2-algebra approach 2, verbatim content):
+  Rule: S_w2 = (slab reflection z -> L - z) o (D-parity in Spin(10)) is an exact rule symmetry,
+  broken only by the far wall's different gapping (the charge-4 SMG vertex lambda_4).
+  Claim: theta is P-odd so bare theta = 0; S_w2 relates near-wall Yukawa phases to far-wall
+  coupling phases, so theta_bar cancels pairwise while the CKM phase sits freely in Y.
+  Invariant: theta_bar = theta - arg det(Y_u Y_d) - kappa arg lambda_4,
+  kappa = (QCD anomaly of the mirror Z4 rotation)/4.
+  w2 test: compute kappa; does S_w2 force arg lambda_4 = -(1/kappa) arg det(Y_u Y_d), or only mod pi/2?
+  w2 kill: S maps lambda_4 to itself (or nothing cancels the near-wall phase).
+
+PRIOR (PR #10079, face-swap-parity): P_slab (no D twist) already gave |kappa| = N_f = 3, Z4
+anomaly-free, lambda_4 mapped to a near-wall vertex, FAILS under one gauge field; works only in BCS shape.
+
+DUPLICATE TEST: the only new element vs #10079 is the internal twist X (D-parity). Also test the
+two other twists named in the brief: X = C (charge conjugation) and X = K (antiunitary, the swap the
+FREEZE slab would need), plus the Floquet 0 <-> pi sector exchange.
+
+PRE-SET CRITERIA (PASS = the stated outcome is what the runner finds):
+ P1 [T] kappa rederived from the 16 content: sum 2T(colour) = 4 per 16, vertex charge 4, |kappa| = N_f = 3;
+     Z4 shift of theta = 2 pi N_f (anomaly-free) => no pi/2 quantisation.  Expect agreement with #10079 D1/D2.
+ P2 [T] For every twist X in {1, D-like on-site unitary, C, K}: S = (wall swap) o X maps the far-wall
+     quartic onto a near-wall operator, keeps fermion degree 4 (zero overlap with every bilinear), and is
+     not equal to the far term (S explicitly broken).  So S can never relate lambda_4 to a Yukawa.
+ P3 [F] Making S exact (add the image) gaps the near (light) modes: unique ground state, light zero modes gone.
+ P4 [T] theta-density sign: odd under P_slab, P_slab o D, P_slab o C; EVEN under P_slab o K (PT-like) and
+     under any map that does not act on the gauge register (0 <-> pi exchange).
+ P5 [E] With one gauge field and lambda_4 phase unconstrained, fraction of uniform arg lambda_4 giving
+     |theta_bar| < 1e-10 is ~1e-10 (no forcing). Expect FAIL of the proposal.
+ P6 [T] D does not normalise G_SM's Cartan span (T3R not in span{T3L, Y}); with an SM-only register
+     P_slab o D is not available; with Spin(10) gauged D is inner (gauge-equivalent to P_slab).
+ P7 [T/E] In the BCS shape (#10079 X1), the lowest CP-odd flavour invariant Im tr W(H_u,H_d) vanishes for
+     all words of length <= 5 and first appears at length 6; with supplied measured masses/CKM its size
+     times any loop factor <= 1 is < 1e-10 (radiative theta_bar from renormalisable spurions).
+     Mirror words (complex conjugate spurions) give the opposite sign.
+
+DECISION RULE: if P1-P6 hold, w2's approach 2 is a DUPLICATE of #10079 D (twists change nothing
+that matters) and FAILS within adopted rules; P7 only re-qualifies #10079's BCS route, not w2's.

@@ -1,0 +1,49 @@
+cube-three-families: criteria written BEFORE any run (2026-10-24)
+Runner PASS/FAIL lines certify exact computed facts; the hypothesis verdicts below are
+reported separately as VERDICT lines (a hypothesis failure is a result, not a runner FAIL).
+
+(i) w1 regular-representation split. Pairs: G in {O_h, O, 2O}, H in {T, T_h, 2T}.
+  Compute: whether H embeds in G; irrep dimensions of H (from class count + abelianisation);
+  Res_H L^2(G) multiplicities (= [G:H] dim rho, checked by explicit characters of the regular rep);
+  per-family content under w1's family rule (family f = the omega^f part, omega^f = value of the
+  order-3 turn c: 1-dim labels chi with chi(c)=omega^f, the omega^f-eigenline of c in every
+  higher irrep).
+  H1 PASS requires ALL of:
+   R1 H < G, |G| = 48 (the 48 must be L^2(G) itself);
+   R2 three families of equal dimension 16, permuted by an element available in G
+      (identical families);
+   R3 per family a colour-structure split 4 (colourless) + 12 (= 3 x 4) arising from the
+      H-isotypic blocks without a chosen tensor factorisation;
+   R4 SM hypercharge (values 1/6 x6, -2/3 x3, 1/3 x3, -1/2 x2, 1, 0 per 16) given by a charge that
+      is a function of the H-labels only (constant on each H-isotypic block of a family);
+   R5 exactly ONE (G,H) pair satisfies R1-R4.
+  H1 FAIL if no pair or more than one pair satisfies R1-R3 (numerology), or if R4 fails for all.
+
+(ii) w3 Delta(27) slab. Wilson-type domain-wall slab of agents/chiral-tick-form (Gamma basis,
+  m = 0.6 in the one-copy window 0 < m < 2, Ls = 12 layers), spatial hops restricted to the
+  class-preserving set {e_i - e_j, +-(1,1,1)} (x+y+z mod 3 fixed), periodic torus side N.
+  H2 PASS requires: N = 6 (3 | N): exactly 3 light Weyl copies per wall (count of |E| < 1e-3
+  states = 3 x 2 per wall, same chirality on all three), no other light states, the three copies
+  carrying the 3-dim irrep of the group <T = translation e1, Omega = omega^(x+y+z)> with
+  T Omega T^-1 Omega^-1 = omega^(+-1) 1 (Delta(27)), det T = det Omega = 1 on it;
+  control N = 5 (3 not | N): exactly 1 light copy per wall (prediction of w3).
+  Also report: the index of the hop sublattice (= number of copies), whether ANY O_h-invariant
+  sublattice of Z^3 has index 3 (if none, the mod-3 class rule breaks the cube group and is a
+  chosen direction), and how an added class-changing e_i hop acts on the 3 copies.
+  H2 FAIL if extra light copies, unequal chiralities, or the control does not differ.
+
+(iii) w4 [[8,3,3]] codes. Random-isotropic search for [[8,3,3]] stabiliser codes (seeded, fixed
+  sample budget), exact distance check over the 2^11 normalizer, exact LC x permutation
+  equivalence test (meet-in-the-middle over 6^8 local Cliffords x 8! permutations).
+  Report: number of inequivalent classes found (completeness NOT claimed unless proven),
+  Gottesman's code d = 3, number of qubit permutations tau of cube-3-fold-turn cycle type
+  (1^2 3^2) that with the frame cycle X->Y->Z on every qubit preserve the code, number of vertex
+  labellings (= 36 x that), same for 4-fold (4^2, with X<->Y frame and plain), and whether the
+  induced logical map cyclically permutes 3 logical qubits in some symplectic logical basis.
+  H3 PASS requires: every class found has d = 3, admits the 3-fold turn + frame cycle acting as
+  a logical 3-cycle, and none admits a 4-fold turn.
+  H3 FAIL otherwise.
+
+Overall: a mechanism counts as FORCED only if its 3 follows with no chosen object (group, subgroup,
+hop set, record unit, distance); otherwise CHOSEN. Per wall (count 3 vs 6, labels, CP/theta) report
+whether it helps.

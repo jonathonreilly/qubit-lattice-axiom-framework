@@ -1,0 +1,37 @@
+d4-chiral-rotations-only: pre-registered criteria (written 2026-10-26 before any code was run)
+
+Question. One complex fermion mode per D4 event (Qubit axiom kept). Symmetry: the coarse translations 2D4 plus a
+rotations-only (det = +1) protected subgroup G of W(F4) (single quartic invariant), acting by any affine realisation
+x -> A x + tau_A (tau in D4) with any U(1) phases on the modes, and with psi and psibar allowed to carry DIFFERENT
+monomial actions. Can a single Weyl node (2-dim light psi space W, 2-dim light psibar space W', linear term L(p) with
+L^dag L = p^2 1) sit at a momentum whose little group is protected?
+
+Plan of exact checks (labels [T] exact, [F] finite):
+P1 [T] Build W(F4), W(F4)+ (576) and the Spin(4) lift A x = l x rbar (quaternions). Recover the rotations-only protected
+   subgroups with the parent seeded sampler (orders expected 96, 192, 288, 576).
+P2 [T] For every such G: H^1(G, D4/2D4). If 0, every affine realisation fixes an event class, so the Bloch module at any
+   G-fixed momentum is a genuine (cocycle-trivial) G-module for ANY phases.
+P3 [T] For every such G: is the spinor class trivial, i.e. does the lift Ghat (order 2|G|) have a character lambda with
+   lambda(z) = -1, z = (-1,-1)? Equivalent test: z not in [Ghat, Ghat].
+   Lemma (to be stated and checked in the runner on the control): an isotropic equivariant L: V x W -> W' with W, W'
+   2-dim genuine modules forces W = (right spinor) x (phase), i.e. a trivial spinor class.
+   PREDICTION: H^1 = 0 and the spinor class is nontrivial for every protected rotations-only G -> exact no-go for a
+   single protected Weyl node on the 16-event cell, any range, any phases, any psi/psibar twists.
+P4 [T] Momenta: enumerate P in (1/k)(2D4)* mod (2D4)*, k = 1..6, for G = W(F4)+; list stabilisers G_P that are protected;
+   each must be covered by P2-P3.
+P5 [F] Most general W(F4)+-invariant one-mode kernel on the 16-event cell, shells |d|^2 <= 6 (orbit basis of
+   (class, hop) pairs). At every G-fixed momentum: equivariant mass space End_G(M) and equivariant linear-term space;
+   every light block of dim <= 4 obtained by tuning masses has a linear term that is either zero or not isotropic
+   (min over directions of the smallest light singular value / |p| < 1e-8 or anisotropy > 1e-3).
+P6 [T] Nielsen-Ninomiya bookkeeping: local chirality = degree in pi_3(GL); rotations (and the antilinear OS reflection
+   Theta = reflection x (psi <-> psibar) x conjugation) PRESERVE it, a plain improper element FLIPS it. Check on the
+   2-component control D = sum sigma_mu sin p_mu (16 nodes, sum of chiralities 0).
+P7 [T] Real time: stabiliser of a root in W(F4)+ (expect order 24, the proper cube group O); count its quartic invariants
+   on the transverse R^3 (expect 2: no dim-6 protection for a real-time step on a root slice).
+P8 [T] Overlap/zoom: whether one-mode-per-event admits a Dirac light block at a protected momentum (needed for GW).
+
+Verdict rule.
+- ONE-MODE WEYL WITH PROTECTION: an explicit kernel with an isotropic Weyl node at a protected momentum, dim-6 = 0.
+- NO-GO (exact scope): P2 and P3 hold for every protected rotations-only G found (sample-limited for orders < 576).
+- PARTIAL: obstruction for some groups, open for others, or only a multi-taste chiral structure survives.
+Runner: seeded, < 60 s, < 6000 chars, AUDIT_TIMEOUT_SEC = 120, ends TOTAL: PASS=N FAIL=0.

@@ -1,0 +1,34 @@
+PRE-REGISTERED CRITERIA (written 2026-10-26 before any computation in this folder)
+Supplied models (as in d4-time-blind-events / d4-interacting-check): events D4 = {x in Z^4: sum x even}, 24 roots r,
+time along r_t = (1,1,0,0), slice index n = x.r_t. Wilson-type D4 fermion D = 2w + m + sum_r e^{i r.p}(g.r - w)/12
+(w = sqrt2: projector hops), naive w = 0, overlap on the w = 1 kernel (m0 = 1). Euclidean Hermitian gammas.
+Fibre method: p = k + phi r_t/2 ... (exact transverse momentum k, z = e^{i phi} per slice).
+
+ROUTE A (twisted RP). Enumerate every isometry x -> A x + c of D4 (A in W(F4), A^2 = 1, A r_t = -r_t) mapping slice n
+to K - n. Report how many are site-type (K even) / link-type (K odd), and how many are pure reflections (A = s).
+ A1 (exact): PASS-as-theorem if every pure reflection is site-type (link-type needs a twist).
+ A2: for each twisted map and Gamma ranging over all 16 Clifford basis elements (and with charge conjugation C), build the
+     OS two-point Gram form on the half with transverse momenta {k, A_perp k}. Twisted RP for a case = Hermitian and
+     min eig >= -1e-10 max|eig| for 6 random k. Controls: Z^4 Wilson r=1 link RP must PASS (else INCONCLUSIVE); the D4
+     scalar under the same twisted maps is reported (expected to fail if the k <-> A k pairing argument is right; if the
+     scalar passes, the pairing argument is wrong and I say so).
+ Route A WORKS if some twisted map + Gamma gives RP for the D4 Wilson (some w in [0, 4]) or overlap fermion.
+ROUTE A' (Theta-independent necessary condition). For each transverse k, the slice propagator G(n) is a finite sum of
+ z_j^n over the roots z_j of z^8 det D(z; k) inside |z| < 1. Any Hilbert-space transfer with Hermitian T (or T^2 >= 0)
+ needs every such root real (z_j^2 > 0). Report max |Im z_j| / |z_j| over sampled k. Calibrations: Z^4 Wilson r=1 and
+ naive must give real roots (< 1e-8); D4 scalar real. If D4 fermion roots are complex (> 1e-6) for all w scanned, then
+ NO reflection of any kind (twisted or not) can make that weight RP.
+ROUTE B (modified W(F4) fermion). Family: nearest shell (w1, b1 = 1) + second shell (24 norm-4 vectors, weights w2, b2),
+ all W(F4)-covariant. Search a grid for parameter points where A' holds (all roots real, 12 random k), then for such a
+ point: site-reflection open-half Gram positivity (previous runner method), doublers (|D| > 0.1 away from p = 0 on a grid),
+ dim-6 on-shell v - 1 coefficient (< 1e-6), GW for its overlap. Route B WORKS only if all of these pass.
+ Also reported: the time-projector variant (crossing hops (1 - g_t)/2-type, breaks W(F4) to the root stabiliser): its
+ dim-6 coefficient (expected nonzero; it is the price).
+ROUTE C (unitary real-time). Symmetry: stabiliser of r_t in W(F4) acting on the slice; quartic invariant count
+ (Molien/character average, exact). Walk: palindromic split-step Dirac walk on the root-sliced events (8 crossing corners,
+ two half-ticks per step, even/odd slices = CL-1's two tilings), unitary (check ||U^dag U - 1|| < 1e-12), step angle theta
+ scanned; massless dispersion omega(k) = v|k|(1 + c(n) k^2 + ...): fit c along axis/face/body and generic directions.
+ Route C 'protects' only if c(n) = 0 (< 1e-6) in all directions. Compare form with CL-1's quoted c_q = -S/6 + 1/24.
+VERDICT RULE: first of A, B, C that WORKS (C works as a real-time definition if unitary and local; it SURVIVES the D4 law's
+ purpose only if dim-6 = 0). If none keeps both a positive/unitary fermion and dim-6 = 0: NONE.
+Runner: < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded, each run < 60 s, < 1 GB. Deviations from this text will be stated.

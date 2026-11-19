@@ -1,0 +1,166 @@
+---
+claim_id: copy_sign_odd_vacua_give_a_tree_level_nelson_barr_block_only_if_the_light_doublet_mirror_pairing_is_absent_which_the_copy_sign_does_not_forbid_bounded_theorem_note_2026-10-24
+claim_type: bounded_theorem
+claim_scope: "Supplied models. (1) FREEZE's 8-mode cell rebuilt as in family-labels, CL-1 copy mass M = 0.2, K = 0 cell operators: s^2 = 1, [s, turn] = 0, s = -tau3 on Pi+ (light q 2 at s = +1, mirror-copy q 1 at s = -1); s commutes with the tick at K = 0 only, broken at O(K^2); the s-odd Hermitian operators on Pi+ form an 8-dim space, all turn-charged; a generic one (or a purely T x C2'-odd one) keeps none of the 24 T x R. (2) Free 3-family Nelson-Barr toy (real light Yukawas, vector-like mirror mass M as stand-in, F = u a^T + v b^T with real directions and spontaneous phases): with the light_L x mirror_R entry G = 0, arg det in {0, pi} to 8e-14 and median |J| 3e-4 to 2e-3 for |a|/M in [0.3, 3], J ~ (|a|/M)^2, J = 0 for one s-odd field; with the Spin(10)-singlet pairing (G = F^T) theta_tree is O(1) and light doublets get mass. (3) Loop proxy: aligned (Hermitian) dressings keep arg det real; flavour-generic real loop coefficients give theta ~ 0.25 eps, so lam <~ 6e-8. (4) Grassmann zero-mode toy: with G = 0 and an SMG-only mirror (quartic vertex g e^{i phi}) the amplitude is det(m) g, F-independent; phi enters theta-bar one-for-one. Not covered: the far-wall SMG itself, a vacuum potential derived from the rules, gauge fields, 3+1D interacting numerics, loops beyond the proxy."
+upstream_dependencies:
+  - far_termination_winding_keeps_a_pi_free_screening_near_wall_but_the_end_is_a_chosen_boundary_bit_and_the_far_wall_must_gap_all_three_families_together_bounded_theorem_note_2026-10-24
+  - no_vacuum_of_family_blind_rules_tested_gives_three_hierarchical_families_with_a_t_odd_phase_adjoint_vacua_cannot_enter_masses_and_quartic_alignment_is_t_even_bounded_theorem_note_2026-10-24
+  - a_turn_kept_by_the_update_and_broken_by_the_vacuum_gives_cp_and_theta_bar_together_unless_a_nelson_barr_block_is_supplied_bounded_theorem_note_2026-10-22 (open PR #10047)
+  - the_family_class_tick_keeps_a_time_reversing_antiunitary_that_fixes_every_family_so_it_supplies_no_quark_cp_phase_and_keeps_theta_bar_at_zero_or_pi_bounded_theorem_note_2026-10-24
+  - the_family_class_tick_gives_no_family_label_from_the_copy_mass_slab_depth_zoom_rung_or_record_cadence_and_its_copy_mass_keeps_the_family_fixing_antiunitary_bounded_theorem_note_2026-10-24
+runner: see stems.txt
+---
+
+# CL-1's copy sign gives a tree-level Nelson-Barr block only if the light-doublet x mirror pairing is absent, and the copy sign does not forbid that pairing
+
+Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [S] estimate or reading.
+Runner: runner.py, TOTAL: PASS=14 FAIL=0, 3.9 s, 73 MB peak, 4.2 k characters, seeded, AUDIT_TIMEOUT_SEC = 120.
+Tested under a unique filename (scratchpad copy_sign_nelson_barr_test_run.py, deleted). Axioms and CL text unchanged.
+No rule adopted. Criteria: criteria_pre_run.txt, written before code.
+Deviations from the pre-run criteria (results, not hidden):
+- (1) The criterion "odd under all 12 kept antiunitaries" was ill-posed. The product of two kept antiunitaries is a
+  unitary rotation, and the turn is among them. So an operator odd under all 12 is turn-neutral, and on Pi+ every
+  s-odd operator is turn-charged. The strict count is 0. The operative test is breaking: the perturbed tick keeps
+  none of the 24 T x R. That test is what B2 records.
+- (1) Unplanned finding: s is NOT an exact symmetry of the tick. It commutes with U(K) only at K = 0 (A1).
+- (3) The pre-run "portal" class (ii) was refined while coding. Multiplicative Hermitian dressings, including a
+  real-symmetric portal matrix, give exactly zero theta (D1). Only flavour-generic real coefficient matrices give theta
+  (D2).
+
+Repo first: git grep of origin/main docs for "Nelson-Barr" finds only older strong-CP notes
+(STRONG_CP_PARITY_MEASURE_CORRECTION_ORIENTATION_GATE_NO_GO_NOTE_2026-06-08, the historic theta-bar intake notes, and
+FLAVOR_SPLIT_THE_BRICK_DOUBLET_COMPLEX_STRUCTURE_2026-06-04). None of them uses a copy sign or a mirror partner. Built on:
+- spontaneous-turn-cp (#10047): CP and theta are tied unless an NB block is supplied, and its NB block needed a hand-added Z2;
+- spontaneous-family-breaking A0 and A1;
+- far-termination-winding (light on the near wall, mirror on the far wall, leak 0.168 per layer);
+- cp-source-new-tick and family-labels (12 kept T x R, generalized-CP lemma).
+Contradicts none.
+
+## Question
+Does s act as the NB Z2, with the s = -1 copy (the mirror) as the heavy vector-like partner? Then a spontaneous
+T-odd, turn-breaking, s-odd vacuum would give J != 0 with theta-bar = 0 at tree level.
+
+## 1. Cell operators at K = 0 [T]/[F]
+- A1 [T]/[F]. Properties of s:
+  - s^2 = 1, and s commutes with the turn tt;
+  - on Pi+, s = -tau3: the light q 2 pair has s = +1 and the mirror-copy q 1 pair has s = -1;
+  - s commutes with U(0) (1e-15), but [s, U(K)] grows as K^2 (1.7e-5 at |K| ~ 1e-2, 1.7e-7 at 1e-3) and is O(1) at
+    generic K.
+  So s is a label of the node, broken by the update at second order in K (dim-5 class). It is not an exact Z2.
+- B1 [T]. The s-odd Hermitian operators on Pi+ form an 8-dim space (32 on the whole cell). They connect light q 2 to
+  mirror q 1, so EVERY one carries turn charge (turn-neutral part 0). This is A0's requirement met automatically: a
+  light-mirror s-odd vacuum carries family triality. Each family-fixing T x C2' splits the space 4 odd + 4 even.
+- B2 [F]. Breaking. A generic s-odd Pi+ term, added symmetrically to the copy-mass tick, keeps NONE of the 24 T x R
+  (lam 0.1 and 0.3). A purely T x C2'(1,-1,0)-odd term also keeps none. Control: a T x C2'(1,-1,0)-even s-odd term keeps
+  exactly that element.
+- So (1a) holds. s-odd, turn-charged cell operators exist that break every family-fixing antiunitary. The generalized-CP
+  lemma (cp-source-new-tick) then no longer forces J = 0.
+- Answer to P3's original "turn-neutral" request: on Pi+ there are none. s-odd implies turn-charged here, so the
+  menu's falsifier wording ("no turn-neutral s-odd operator") would have killed M2 wrongly. Its update to
+  "turn-charged" (A0) is the right one.
+
+## 2. Free 3-family NB toy [T]/[F]
+Supplied:
+- light d (s = +1) and mirror D (s = -1, three copies, mass M x 1, locked as in spontaneous-family-breaking C);
+- real light Yukawas m_u, m_d ~ 1e-2 M (seeded);
+- F = (u a^T + v b^T)/sqrt2 in the D_L d_R slot, with real directions and spontaneous phases alpha, beta.
+
+Results:
+- C1 [T]. With the light_L x mirror_R slot G = 0, det M_full = det(m_d) M^3, so arg det lies in {0, pi} (max distance
+  8e-14 over 300 seeds x 5 ratios). theta-bar_tree is 0 or pi. Which one is the sign of det m, a discrete choice
+  (spontaneous-turn-cp B found pi in 17/40).
+- C2 [F]. Integrating out the mirror gives m_eff m_eff^+ = m (1 + F^+F/M^2)^-1 m^T, which is complex. Median |J| is
+  3.1e-4, 6.8e-4, 1.5e-3, 2.3e-3, 2.2e-3 at |a|/M = 0.3, 0.5, 1, 2, 3, so the criterion J > 1e-5 passes everywhere.
+  These are O(1)-random textures; they are not compared with 3.08e-5.
+- C3 [F]. J goes as (|a|/M)^2: 3.5e-7, 3.4e-5, 1.3e-3 at 0.01, 0.1, 1. This is NB's coincidence: |a| ~ M is needed.
+- C4 [T]. One s-odd vector (b = 0) or equal phases gives |J| = 2e-17, because mirror rephasing removes the phase. Two
+  s-odd fields with a relative spontaneous phase are needed.
+  [T, analytic] With the turn and s, the relative-phase potential at renormalizable order is
+  2 mu cos D + 2 lam cos 2D, plus D-independent terms (phi1* phi2 is turn-neutral and s-even). For lam > 0 and
+  |mu| < 4 lam r1 r2 its minimum cos D = -mu/(4 lam r1 r2) is generic, so the CP breaking is genuine, not Z2-equivalent.
+  The common phase is an accidental U(1) at this order (phi^3 is s-odd), so a pseudo-Goldstone appears. Not quantified.
+- C5 [T]/[F]. THE STRUCTURAL GAP. The light x mirror singlet is unique (16 x 16bar has one singlet, A1). Its Spin(10)
+  form pairs Q with Q' AND d^c with d'^c with one coefficient matrix, so G = F^T. Then:
+  - theta_tree is O(1) (median 0.75 rad), so NB is lost;
+  - at m = 0 only 1 of 3 light families stays massless (vs 3 with G = 0): the vacuum gives light doublets mass ~|a|.
+  s does not forbid G. Both slots are s-odd, carry the same turn charge (2 - 1) and the same hand pairing. The NB zero
+  therefore needs the s-odd vacuum to sit in a gauge-non-singlet direction of 16 x 16bar (a 45/210 piece that weights Q
+  by zero and d^c by nonzero). That is a chosen gauge-structure direction, the analogue of spontaneous-turn-cp's
+  hand-added Z2.
+
+## 3. One-loop theta-bar [T]/[F]/[S]
+The proxy is dM = eps x (s- and gauge-allowed products of tree matrices: m C2 F^+F in the light slot, m C1 F^+ in the
+G slot, F C3 F^+ on the mirror), with real coefficient matrices C and eps = lam/16pi^2.
+- D1 [T]. Aligned C = 1 keeps arg det real (2e-14). A generated G = m F^+ gives det = det m det(M - F F^+), which is real.
+- D2 [F]. Flavour-generic real C gives theta linear in eps (ratio 10.0 per decade), with median slope 0.25 at
+  |a| = M. theta < 1e-10 then needs lam <~ 6e-8. This is the standard NB quality problem (Dine-Draper, Vecchi; cited,
+  not rederived). s does not solve it: its O(K^2) breaking (A1) adds a further, cutoff-suppressed source, which is
+  not computed.
+
+## 4. The 't Hooft vertex of the SMG-gapped mirror [T] + argument
+Toy: Grassmann zero modes d_L, d_R, D_L, D_R (2 each), with the mirror gapped ONLY by a quartic vertex g e^{i phi_g}
+(no bilinear).
+- E1 [T]. With G = 0 the instanton amplitude is exactly det(m) x g, independent of F to all orders (|A(F) - A(0)| = 0).
+  The d_L zero modes can only be soaked by m, which uses every d_R. So NB's F-independence SURVIVES an SMG-only mirror
+  at tree level.
+- E2 [T]. The vertex phase enters one-for-one: a phase shift of 0.700 for phi_g = 0.700. So theta-bar =
+  theta - arg det m - phi_g x (number of vertices per instanton). With G != 0 a g-independent det F det G term appears
+  (|dA| = 2.4), and F leaks.
+- Argument [S]. The mirror is coloured, so the rotation that removes the vertex phase (far-wall-smg A4's "phases
+  rotate away", shown in a colourless 1+1D proxy) is QCD-anomalous in 3+1D. It moves phi_g into theta instead of
+  removing it.
+  - phi_g is in {0, pi} iff the far-wall dynamics keeps an antiunitary that is odd on E.B. The W = 0 bulk keeps T
+    (far-termination C1), and FREEZE-class layers keep T x C2'. Both are E.B-odd, so the tree vertex is real, up to a
+    discrete pi.
+  - The spontaneous s-odd vacuum breaks all such antiunitaries. It reaches the mirror amplitude only through loops
+    (class 3, mirror self-energy F C3 F^+), so the vertex risk is a loop-level risk of the same lam <~ 1e-7 size, not
+    a tree-level one.
+  The question stays OPEN until the far-wall SMG is built.
+
+## 5. Estimates [S]
+- F1. Far-termination geometry. Light lives on the near wall and the mirror on the far wall, with overlap weight ~0.168
+  per layer (far-termination N4, toy m0 = 0.6). At |a| = M, median |J| is 3e-6 at Ls = 4 and 1e-11 at Ls = 11, the depth
+  that its Crab bound needs if the far layer carries a T-odd term. The overlap that suppresses the dispersion leak also
+  suppresses F. NB needs the s-odd vacuum to live where both copies have weight, which is the cell picture (CL-1's copy
+  mass, both copies on one cell) rather than the slab picture.
+- Count tension (spontaneous-turn-cp result 1). The NB vacuum breaks the turn (B1) at |a| ~ M, the mirror-gap scale.
+  But the N_f = 0 mod 3 anomaly argument needs the turn unbroken at the mirror-gap scale, i.e. v << Lambda_mirror.
+  C3 says J falls as (|a|/M)^2, so a factor-10 hierarchy costs 1e-2 in J. Unresolved.
+- Domain walls. Spontaneous Z3 (turn), Z2 (s) and T walls form, so the breaking must precede inflation (as in #10047).
+
+## Answer
+PARTIAL, and CONDITIONAL.
+- What works:
+  - s-odd, turn-charged vacua that break every family-fixing antiunitary exist on the cell (1a). They automatically
+    carry the family triality A0 demands.
+  - With the NB slot G = 0, the mirror acts as the heavy vector-like partner. theta-bar_tree is in {0, pi} exactly and
+    J is unsuppressed for |a| ~ M.
+  - The F-independence survives an SMG-only mirror (E1).
+- What fails:
+  - (i) s is not an exact Z2 of the update; it is broken at O(K^2), so the NB protection is approximate.
+  - (ii) s does NOT forbid G. The unique 16 x 16bar singlet fills both slots (G = F^T), which gives O(1) theta and
+    massive light doublets. The NB zero needs a chosen gauge-structure direction of the vacuum.
+  - (iii) The one-loop quality bound is lam <~ 6e-8, the same as standard NB.
+  - (iv) The SMG vertex phase enters theta-bar one-for-one. It is real at tree level only through the kept E.B-odd
+    antiunitary of the far-wall dynamics, and is loop-exposed.
+- So CL-1's copy sign supplies the heavy partner and the Z2 labels at the node, but not the forbidden slot. M2 does
+  NOT yet remove the hand input that spontaneous-turn-cp needed. It replaces "hand-added Z2 + vector-like D" by "s at
+  the node + a vacuum direction that skips Q x Q'".
+
+## Route (not a wall)
+Find a rule that puts the s-odd vacuum in the SU(2)-singlet slot only. Candidates, untested:
+- a chirality-graded or polar-split reason that the doublet pairing needs a second hop while d^c x d'^c needs none;
+- the far wall's extra (q2, +) 16, whose pairing with one (q1, -) could absorb Q';
+- an s-odd vacuum built as a composite of right-handed components only.
+Also compute the s-breaking O(K^2) term's contribution to theta-bar.
+
+## Gate and smuggling review
+No rule is proposed, so the gate is not applied. The candidate "s is the NB Z2" would fail gate item 2 as it stands,
+because the vacuum direction that zeroes G is chosen by gauge representation.
+- Supplied: FREEZE rebuild (family-labels draw order); copy mass value 0.2; the vector-like mirror mass M as SMG stand-in;
+  real light Yukawas, mirror directions u, v, phases, loop coefficient matrices C (all seeded, FITTED class); the
+  Spin(10) component bookkeeping for G = F^T; the 0.168 overlap and the Ls = 11 depth (far-termination toy); Dine-Draper
+  and Vecchi as literature; the Grassmann toy size (2 families, one quartic vertex).
+- Forced: s^2 = 1, [s, tt] = 0, s = -tau3 on Pi+, [s, U(0)] = 0 with O(K^2) breaking; the s-odd space and its turn
+  charge; the breaking of all 24 T x R; det = det(m) M^n for block-triangular matrices; Woodbury m_eff; the phase removal
+  for one field; the aligned-loop cancellation; the zero-mode F-independence and the one-for-one vertex phase.

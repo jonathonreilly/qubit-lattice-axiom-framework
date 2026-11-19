@@ -1,0 +1,32 @@
+A. plane waves (exact per-tick chain on the 8 corner parities) and the cause of the streams
+[PASS] A1 mu = b = 0: (-1)^(x+y+z) anticommutes with W, so every support transport keeps two classes, each at v_g exactly (harmless)  |eps W eps + W| 0e+00; 2 classes at v_g in 54/54 (polarisation x rule)
+[PASS] A2 FINDING: under CL-5 (f5) many plane waves split into closed streams of different speed; staggered b does not cure it  split of 10: mu0.3 b0.0 K~100:9, mu0.3 b0.0 K~110:2, mu0.3 b0.0 K~111:0, mu0.3 b0.0 K~210:1, mu1.0 b0.0 K~100:6, mu1.0 b0.0 K~110:2, mu1.0 b0.0 K~111:0, mu1.0 b0.0 K~210:0, mu0.3 b0.2 K~100:8, mu0.3 b0.2 K~110:5, mu0.3 b0.2 K~111:0, mu0.3 b0.2 K~210:0, mu0.0 b0.15 K~100:7, mu0.0 b0.15 K~110:4, mu0.0 b0.15 K~111:0, mu0.0 b0.15 K~210:0
+      e.g. mu 0.3, K~[1 0 0]: 2 parities w 0.45 v_x 1.463, 2 parities w 0.30 v_x 0.067, 2 parities w 0.14 v_x 0.999, 2 parities w 0.11 v_x 0.145; v_g 0.839; fastest stream 1.463 > largest group speed 1.142 site/tick (mu 0.3)
+[FAIL] A3 THEOREM + check: the streams are the classes of the least-change face itself, so no tie-break inside it can join them  classes: face support 0, f5 4, LP vertex 4; two-half-tick window optimum 0.419397 = sum of half-tick optima 0.838793
+      (window entropy: the window optimum is the sum of the half-tick optima, so every window-optimal path uses each half-tick face;
+       odds-weighted entropy sum J log(p_s/J) = H(J) - H(p) on fixed marginals: same maximiser; displacement cost: one hop = one bond, = modes/2)
+      [3 s]
+B. band-projected wave packets on Lx x 4 x 4 tori (K0 = pi/2 along x, mu = 0.3, polarisation with four f5 streams), f5
+      plane-wave streams (y,z parity): w 0.27 v_x 1.151, w 0.02 v_x 0.697, w 0.40 v_x 0.247, w 0.30 v_x 1.362; v_g 0.8388
+[PASS] B1 FINDING: in packets the f5 streams persist and mix only at the packet edges: label half-life grows with the packet width  half-life (ticks): sigma 4 blocks: 13.7 (3.44 sigma), sigma 8 blocks: 26.7 (3.34 sigma), sigma 12 blocks: 38.7 (3.23 sigma); Born max err 3e-16
+      sigma 8, T=5: track v_x mean 0.840 std 0.578; by stream label 1.117 0.644 0.309 1.322
+      sigma 8, T=20: track v_x mean 0.833 std 0.472; by stream label 1.049 0.710 0.422 1.203
+      sigma 8, T=44: track v_x mean 0.828 std 0.401; by stream label 0.955 0.774 0.581 1.053
+      [27 s]
+C. the uni transport (closest to the half-tick's own squared elements)
+[PASS] C1 every tested plane wave with mu or b nonzero gives one class (irreducible per-tick chain) at v_g  80/80 single; max |v - v_g| 7e-10
+[PASS] C2 packets: the stream label mixes within about one tick, and the track-velocity variance falls as (exact plane-wave diffusion)/T  label half-life 0.61 ticks (f5: 26.7); exact growth 1.221 site^2/tick; var*T/exact at T=5,11,22,44: 0.93 1.00 0.97 0.98
+      jumps per half-tick: uni 0.980, f5 0.421; packet group-velocity spread 0.0177 site/tick; track spread std 0.477 0.333 0.232 0.165; the two are equal at T* = 3886 ticks
+      if a tick is a Planck time: uni track-speed jitter over 1 ps = 2.2e-16 c
+      if a tick is a Planck time: uni track-speed jitter over 1 ns = 7.0e-18 c
+      [34 s]
+D. properties of uni
+[FAIL] D1 uni is one plan, relabelling-equivariant and continuous, also in the update: its jump rate is continuous at mu -> 0, f5 and maxent jump  relabel 1e-16; |dJ|/|dpsi| 0.37; jump rate at mu = 0, 1e-4, 1e-2: f5 1.000 0.409 0.408; maxent 1.000 0.763 0.763; uni 1.000 1.000 0.999
+[PASS] D2 THEOREM + check: product prior and product odds give the product plan (unentangled relays move independently); a step on A alone never moves B  A-plan shift by unentangled B 3.9e-16; B mass moved by an A-only step on an entangled state 0.0
+[PASS] D3 two entangled fermion relays on 4^3 (2016 pair configurations, prior |det|^2): joint odds kept, samples match  max TV 3e-16, chi2/dof 1.07
+[PASS] D4 two readers of one system agree and read Born odds; a later system-only step never moves the pointers  disagreements 0, P(read 1) 0.2983 vs 0.3, pointer moves 0
+[PASS] D5 FINDING (knock-on): a stationary state is frozen under f5 but not under uni  jump rate on a half-tick eigenstate: f5 -4e-16, uni 0.962
+      [36 s]
+supplied: configuration space; the half-tick as the step; the uni prior |<t|U|s>|^2 (the power 2 is chosen, not forced); states, packets, pointer gates.
+
+TOTAL: PASS=9 FAIL=2

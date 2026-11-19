@@ -1,0 +1,27 @@
+== A. the rung map
+[PASS] A1 vectorised Bloch tick = block-built CL-2 tick; every band obeys cos w = A S(K) - B  4e-16, 2e-15
+[PASS] A2 rungs 1, 2: U_cell(Q) E_n = E_n U(K_n), K_n = (Q+2pi n)/2^r, {E_n} unitary: the rung-r tick (2^r ticks) is the direct sum of U(K_n)^(2^r); light alias n=0 gives w_r(Q) = 2^r w(Q/2^r) and C_r(Q) = C(Q/2^r) exactly  6e-16, 8e-16
+[PASS] A3 band spectrum: mass^2 x4, c^2 x1, cubic quartic x1/4 per rung (eigenvalues 4^(1-p), scaling dims 1-p, integers)  ratios 4.0000 1.0000 0.2502
+== B. fixed points on quasi-free odds (C(2K)=C(K): degree 0 in K) and their exact density index
+[PASS] B0 Wick formula S(q) = rho - <tr[D C(K) D^+ C(K-2q)]>/8 equals the real-space S(q) of the 512-site sea, which commutes with the block-built real-space tick  3e-15, [U,C] 1e-15
+[PASS] B1 the massless half-filled sea (mu = 0 fixed point, smooth C(K^)) and the massive sea: index 2 (analytic q^2)  n -> 1.9952, 2.0000
+[PASS] B2 pure fixed points with direction jumps (Fermi cones through Gamma, cube-symmetric, half filling): index 1 in all 3 directions, not 0.965  n -> 0.998 1.002 1.002 1.002 1.001 1.006
+[PASS] B3 S/|q| at q->0 along 100,110,111 (precision ~3%): face cones anisotropic by 14%, diagonal cones 2% (exact isotropy is impossible for finitely many smooth jump curves; near-isotropy is not)  faces: 0.381 0.338 0.335; diags: 0.262 0.257 0.258
+[PASS] B4 mixed fixed points (Gibbs, white) have S(0) = <tr C(1-C)>/8 > 0: index 0; T, Fermi level, mass double per rung (relevant, eigenvalue 2); band-diagonal fixed points commute with the tick, so CL-4 freezes them (stay mass 1)  S(0) Gibbs T=0.5: 0.0528; white 1/4; [U,C] 2e-15
+== C. the tilt against measurement
+[PASS] C1 n_s - 1 = -(scaling dim) needs y = 0.0351 +- 0.0042 (per-rung power ratio 2^(n_s-1) = 0.9760); free-tick dims are integers, nearest (0, exactly marginal c) is 8.4 sigma off; irrelevant terms from the cell scale reach the pivot as 4^-192 = 1e-116
+[PASS] C2 a positive mixture of integer-index parts has running = Var(index) >= {n}(1-{n}) = 0.0339 at n = 0.9649 (400 random mixtures: min 0.0339, bound never violated); measured -0.0045 +- 0.0067 excludes it at 5.7 sigma
+[PASS] C2b an integer index a with one correction, S = q^a(1 + c q^p): running = p^2 f(1-f), n - a = p f; closest to data is (a,p) = (1,1) with running -0.0363, 4.8 sigma; lattice corrections at the pivot are (qa)^p ~ 1e-58p
+   rungs: a c/H0 200.1, a 1/k* 192.3, lP c/H0 202.4, lP 1/k* 194.6; N = 57 e-folds = 82.2 rungs
+[PASS] C3 slow-roll analogue -2/N with the ladder: N = 138.7 e-folds gives n_s = 0.9856 (4.9 sigma), N = rungs gives 0.9900 (6.0 sigma); N = 57 is a fit
+[PASS] C4 historic graph-growth note: N_e = (1/3) ln N_cells with its own 1e183 Planck volumes gives N_e = 140.5, n_s = 0.9858 (5.0 sigma); its 0.9667 used N_obs = 1e78
+[PASS] C5 simple ruleset numbers r*c1^e*c2 within 1 sigma of 1-n_s: 16 hits vs 15 expected by chance, so a match is not evidence; e.g. 1/8pi = 0.0398 (1.1 sigma) is G per cell, irrelevant (x1/4 per rung)  hits e.g. 0.75*(1/rt3)^2*1/8, 0.333*(1/pi)^1*1/pi, 0.5*(1/rt3)^1*1/8
+== D. the amplitude A_s
+[PASS] D1 with M_P = 1/a (CL-5: G = a^2/8pi), Delta_t^2 = 2(aH)^2/pi^2 and r < 0.036 force aH < 1.93e-05: formation horizon > 5.18e+04 cells (15.7 rungs), energy density < 1.1e-09 per cell^4 (V^1/4 < 1.4e+16 GeV); the tick's own scale (aH ~ 1) gives r ~ 1e8
+[PASS] D2 supplied single-clock bookkeeping at that H (instant thermalisation, T = 5.8e+15 GeV): N* = 55.9 e-folds = 80.7 rungs, -2/N* gives n_s = 0.9643; rung budget 80.7 + 15.7 + 95.9 = 192.3 = pivot ladder (an identity: the split is not a ruleset number)
+[PASS] D3 A_s = 2.10e-9 from ruleset ratios r*c^e: 0 hits within 1 sigma (1.4%) vs 2.3 expected by chance; nearest 0.75*(1/6)^11 = 2.067e-09 (1.1 sigma)
+supplied: CL-2 tick at (mu,b) in {(0,.3),(.4,.3)}; Wilsonian light projection as the rung map on odds; the band choice of the
+  cone states; P_delta ~ k^n_s at fixed time; a = sqrt(8pi) l_P; tensor amplitude 2H^2/(pi^2 M_P^2), -2/N, thermal history (D2,
+  C3 comparators only); Planck 2018 n_s, running, A_s; BICEP/Keck r < 0.036; H0 = 67.4.
+elapsed_seconds 5.9
+TOTAL: PASS=17 FAIL=0

@@ -1,0 +1,37 @@
+PRE-REGISTERED CRITERIA (written 2026-10-26 before any computation in this folder)
+Candidate P1 (not adopted): events = D4 = {(t,x,y,z) in Z^4 : t+x+y+z even}; each event's odds factor is the
+same for all 24 nearest D4 directions (roots); time = direction of record growth.
+
+Units: Z^4 spacing a = 1 (so c dt = a for the axis slicing). Roots r = (+-1,+-1,0,0) and permutations.
+
+C1 scalar (exact, sympy). PASS if sum_r (r.p)^4 == 12 (p^2)^2 identically and sum_r (r.p)^2 == 12 p^2.
+   Report the first non-O(4) order of K(p) = sum_r (1 - cos r.p) and its coefficient (expected degree 6).
+C2 fermion.
+   (a) naive s_mu = sum_r r_mu sin(r.p): PASS if its cubic Taylor term is exactly c p^2 p_mu (sympy).
+   (b) count zeros of s(p) in the D4 Brillouin zone (mod 2 pi D4*), report count, Jacobian nondegeneracy, chirality sum.
+   (c) Wilson D_W = (i gamma.s + w K)/12, w = 1: PASS if s = 0 and K = 0 only at p = 0 among the zeros; report the
+       smallest doubler Wilson mass (the overlap window).
+   (d) overlap D = 1 + A (A^dag A)^(-1/2), A = D_W - m0, m0 = 1: PASS if GW residual |g5 D + D g5 - D g5 D| < 1e-12
+       at 20 random momenta, D(0) = 0, D = 2 at every doubler.
+   (e) Euclidean on-shell dispersion (p0 = iE) of scalar and fermion: PASS "no dim-6" if the fitted k^2 coefficient of
+       v - 1 is < 1e-6 in magnitude on axis, face, body; report the k^4 (dim-8) coefficients and signs.
+C3 gauge (triangle plaquettes, the smallest D4 loops). Hypothesis H3: the quartic (dim-6) term of the effective photon
+   kernel is O(4)-invariant. Test by (i) a representation-theory count (W(F4)-invariant, gauge-invariant bidegree (4,2)
+   kernels; H3-by-symmetry holds iff the count equals the O(4) count, 1) and (ii) the triangle-action photon on-shell
+   dispersion: H3 holds if the k^2 coefficient of v - 1 is < 1e-6 for both polarizations on axis/face/body.
+   Either outcome is recorded; a non-isotropic outcome REFUTES the menu's "no dim-6 LIV in any sector".
+   Graviton: report the W(F4) vs O(4) count of invariant quadratic forms on the linearised Riemann tensor (diagnostic).
+C4 real time. Slicings: AXIS (time along (1,0,0,0); slices FCC, step 1) and ROOT (time along (1,1,0,0)/sqrt2).
+   (a) RP: site-reflection Hankel test (1D chain at fixed transverse momentum, N_t = 24, mass 0.3) PASS if min eig >= -1e-12.
+       Link reflection: report.
+   (b) real-time lowest band E(k): report v - 1 coefficients (dim-6 must vanish; dim-8 and sign).
+   (c) locality: report the analyticity strip (imaginary-momentum distance to the nearest singularity of E(k), mass 0.3).
+       "Exponentially local" iff strip > 0.
+C5 consequences (estimate). With E* = 1.217e18 GeV (= hbar c / 2L, L = sqrt(8 pi) l_P, menu's a), compute dim-8 thresholds
+   p_th = (m^2 E*^4 / (4 eta))^(1/6), eta = 2 b, for e -> e gamma (m_e), p -> p gamma (m_p), gamma -> e+e- (2 m_e).
+   PASS-consistent if thresholds exceed observed: electrons ~ 1e13-1e15 eV, photons 1.4e15 eV, UHECR 3e20 eV.
+VERDICT RULE: WORKS if C1, C2, C3 (H3 true), C4 (RP + dim-6 zero + exp-local in at least one slicing that keeps the
+   Z^3 slice axiom) and C5 all pass; PARTIAL if C1/C2/C5 pass and any of C3/C4 fails in a repairable way; FAILS if C1 or C2 fails
+   or C5 is violated.
+Runner: < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded, ends TOTAL: PASS=N FAIL=0 (checks encode the computed facts, the
+   hypothesis outcomes are reported as facts, not forced).

@@ -1,0 +1,38 @@
+zoom-fixed-point-tick: criteria fixed BEFORE any run (2026-10-26)
+
+Inputs (upstream, unchanged): rules-as-written dispersion E = p + c p^3/E*^2 with c_g = -S/24 (link band),
+c_q = -S/6 + 1/24 (fermion), S = sum n_i^4; E* = 1.217e18 GeV; nucleus walls of nuclear-vacuum-breakup
+(d 2.5-4.3, 4He 4.1-7.0, 14N 8.6-14.9, 56Fe 17.9-31.0 EeV) with P_open proportional to |c|^(-1/4) (exact
+scaling of that note) and its dimension-eight instability formula P = A (M^2 E*^4/20|c8|)^(1/6).
+Candidate: tick = fixed point of the zoom (block averaging over 2x2x2 cubes, factor 2 iterated; Gaussian
+blocking term alpha), i.e. the classically perfect action (Hasenfratz-Niedermayer; Bietenholz-Wiese).
+
+Pre-registered checks (PASS conditions):
+ P1 [T] Perfect free scalar and free fermion in d = 3+1, momentum space, exact (proper-time factorised image
+    sums, closed-form 1D Poisson/erfc sums). Lowest-band energy read from the lattice time correlator at
+    |p| in {0.3, pi/4, pi/2} (axis, face, body): |E_eff - sqrt(p^2+m^2)| < 1e-9 (massless and m = 0.3);
+    independent of alpha. Also in a constant anisotropic metric: E_eff = sqrt(gamma^ii p_i^2) < 1e-9.
+ P2 [T] Iterated factor-2 blocking of the naive scalar lattice propagator converges to the perfect one;
+    the dimensionless p^4 coefficient after B = 2^n blocking is c0/B^2 (irrelevant), and the physical pole
+    is unchanged by blocking (T2: zooming cannot remove the finest rung's physical LIV).
+ P3 [F] Locality: couplings of the 4D perfect GW fermion decay exponentially; report kappa (fit, lattice units)
+    for alpha in {0.5, 1}; PASS if kappa > 0.5 and log-linear fit residual small.
+ P4 [T] GW relation gamma5 D + D gamma5 = 2 alpha D gamma5 D to < 1e-12 on the grid; gamma5-hermiticity;
+    overlap of the perfect kernel with m0 = 1/(2 alpha) returns the kernel (< 1e-12); no doublers (15 corners
+    at D = 1/alpha, no light mode except p = 0).
+ P5 [T] (theorem, stated and its lemma checked) No finite-band tick with real-analytic Bloch unitary has an
+    exactly relativistic lowest band on any open momentum set. Illustration: truncations of the perfect GW
+    kernel to range R (hypercube R = 1, then 2) used as overlap kernels have NONZERO but reduced p^4
+    coefficient vs the Wilson-kernel overlap (whose c = -(S+1)/6 is derived by sympy).
+ P6 [F] Chiral content: 2D U(1) background flux Q = 1, 2 on 8x8 (+ seeded noise): overlap built on the
+    gauged truncated perfect kernel has |index| = |Q| and GW to < 1e-10.
+ P7 [T] sympy: range-2 improved bands (link band 4s^2 + (4/3)s^4; fermion sin p + sin^3 p / 6) have zero p^4
+    coefficient; give c8 per ray.
+ P8 [E] UHECR: walls for residual dimension-six kappa*c (kappa = 1e-2, 1e-3, 1e-4) and for dimension-eight;
+    photon-decay threshold; time of flight.
+Verdict rule:
+  RESCUE WORKS if an exactly perfect tick is realisable within the axioms AND radiative LIV is shown protected;
+  PARTIAL if perfection is realisable only at history level / to finite order, or protection is a condition;
+  FAILS if no p^4-free rule exists for every species without a fitted number.
+Smuggling gate applied to the final CL text: no fitted number, no observed structure named, one untested
+prediction, the bent clause named.

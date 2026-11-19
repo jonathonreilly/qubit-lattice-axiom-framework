@@ -1,0 +1,119 @@
+---
+claim_id: the_spin_three_halves_cell_monopole_has_chern_three_but_its_block_boundary_dirac_operator_carries_two_triplets_with_distinct_turn_charges_and_cl1_own_boundary_carries_none_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "On the boundary of [0,N]^3 (6N^2+2 sites, N = 1..8) with link phases arg <n_i|n_j> of spin-S coherent states at the radial directions: (A) exact: every overlap loop phase is S x the geodesic area, each face carries 2 pi S/3, and C = 2S for N >= 2 (S = 1/2, 1, 3/2, 2); at N = 1, S = 3/2 gives exactly pi per face (CL-1's -1 face phase), and the cube-symmetric lifts are C = 3(1+2m), so |C| = 3 is the minimal symmetric lift and the cell fixes neither its sign nor m. (B) finite: the surface staggered Dirac operator (CL-1's -1 unit-face phases restricted to the boundary, times the overlap phases) has exactly 2|C| = 4S near-zero levels for every N = 2..8, isolated by a gap ~ 1/N (gap x N -> 4.9 for S = 3/2), stable under 10% hop disorder; exact sublattice kernel (C+1, C-1) for even N and eps-index n_e - n_o in {0, 2} flux-independently. (C) finite: CL-1's own boundary field (S = 0) gives 0 (odd N) or 2 (even N, graph imbalance) near-zero levels; the overlap phases without the -1 faces give no isolated band. (E) finite: under the 24 gauge-compensated rotations the S = 3/2 near-zero space is T1 + T2 = E x T1 for odd N (two triplets; each has three-fold turn eigenvalues {1, w, w^2}) and the spinorial G' + E1/2' (4 + 2) for even N. Not covered: any coupling to the 16 on the slab wall, a single-taste surface operator, interactions, a derivation of the smooth boundary field from CL-1."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/the_spin_three_halves_cell_monopole_has_chern_three_but_its_block_boundary_dirac_operator_carries_two_triplets_with_distinct_turn_charges_and_cl1_own_boundary_carries_none_2026_10_23.py
+---
+
+# The spin-3/2 cell monopole has Chern number three, but its block-boundary Dirac operator carries two triplets with distinct turn charges, and CL-1's own boundary carries none
+
+Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [E] estimate against measurement.
+Runner: runner.py, TOTAL: PASS=13 FAIL=0, 0.6 s, ~70 MB peak, 5.2 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
+It was run under unique filenames (scratch/monopole_families_test_u1.py, _u2.py). Axioms unchanged. No rule adopted.
+Repo check: no prior note on main builds a block-boundary monopole family count; the Koide Berry-monopole bridge note
+(docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md) is a different object (Koide phase), not used.
+
+## Question
+
+The families brainstorm (R1) proposed: the light field on a coarse block sees the block boundary as an internal
+2-sphere whose connection is the overlap phase of the forced spin-3/2 rotation character; the number of light copies
+is the Dirac index 2S = 3. Pass criteria were written before any run (criteria_pre_run.txt).
+
+## A. Berry flux (exact)
+
+A1. A spin-S coherent state is the symmetric 2S-fold product of a spin-1/2 one, so <a|b>_S = <a|b>_1/2^(2S) up to
+phase convention; every overlap loop phase is 2S times the spin-1/2 Pancharatnam phase, i.e. S x geodesic area. Grid
+lines on a cube face project to great circles, so each face's plaquettes tile its spherical image exactly.
+A2. Each face carries exactly 2 pi S/3, no plaquette exceeds 1.05 rad for N >= 2, and C = 2S for N = 2..8 and all S.
+A3. At N = 1 (CL-1's bare cell), S = 3/2 gives exactly pi per face, which is CL-1's -1 face phase. The principal
+branch sums to -1 (a non-symmetric lift). A rotation-symmetric lift must assign the same 2 pi m to all six faces:
+C = 3(1 + 2m). So "3" is the smallest |C| among symmetric lifts; the cell does not fix its sign or exclude 9, 15, ....
+Equivalently, S is fixed by the cell only mod 3 (S = 3/2, 9/2, ... give the same cell field).
+
+## B. The block-boundary Dirac operator (finite)
+
+H1 = (CL-1's -1 around every unit face, i.e. Z^3 staggered phases restricted to the boundary) x (overlap phases).
+Per plaquette the flux is pi + (monopole part): the pi makes it a staggered Dirac operator, the remainder is the monopole.
+B1. Near-zero levels (below half the S = 0 first level): N_0 = 4S = 2|C| for every S >= 1/2 and N = 2..8.
+    S = 3/2 gives SIX, not three: the two 2D staggered tastes each see the monopole.
+B2. Exact sublattice kernel: n_even - n_odd = 2 for even N (all eight corners even), 0 for odd N, independent of flux.
+    Even N: kernel (C+1, C-1) = (4, 2) for S = 3/2, i.e. the two tastes see C + 1 and C - 1 (the corners act as a
+    taste-odd unit of curvature flux). Odd N: no exact protection; the six levels sit at 0.098 (N=3) -> ~2e-3 (N=7).
+B3. Gap x N = 3.81, 3.93, 4.58, 4.61, 4.80, 4.84, 4.88 (N = 2..8): gap ~ 1/size as expected for a Dirac operator on a
+    sphere; odd-N gap/width = 13, 200, 363 (N = 3, 5, 7).
+
+## C. Controls (finite)
+
+C1. S = 0 (CL-1's own boundary field, pi per unit face, nothing added): N_0 = 0 (odd N), 2 (even N, the graph
+    imbalance only). CL-1's own block boundary carries no 3.
+C2. Overlap phases without the -1 faces (H0): no Dirac structure; the seventh level x N = 0.405, 0.097, 0.026
+    (N = 4, 6, 8) closes, a square-lattice Fermi line. No isolated index band.
+
+## D. Disorder (finite)
+
+D1. 10% random real hop magnitudes, 3 seeds per N = 2..8, S = 3/2: N_0 = 6 always; exact zeros >= the graph imbalance;
+    max zero-band width x N = 0.45 against min gap x N = 3.64.
+
+## E. Rotation content (finite, exact characters)
+
+The 24 rotations act as site permutation x site gauge (solved on a spanning tree; |[O,H1]| ~ 4e-15). The action is
+projective, so only |chi|, sum |chi|^2/24 and the commutation sign of two compensated half-turns are invariant.
+E2. Odd-N controls: S = 1/2 gives the irreducible E of O, S = 1 the irreducible spinor G' = E x E1/2'. The two tastes
+    form the doublet E (90-degree turns exchange the sublattices when N is odd).
+E3. Odd N, S = 3/2: T1 + T2 = E x T1 (|chi| = 6, 0, 0, 2, 0 on E, C3, C4, C2, C2'; sum = 2; ordinary rep). Two
+    triplets, each the continuum j = 1 of the Dirac operator in a charge-3 monopole (j = (C-1)/2), the tastes differing
+    by A2. In each triplet the three-fold turn has eigenvalues {c, c w, c w^2}.
+E4. Even N, S = 3/2: spinorial (half-turns anticommute), sum = 2, |chi(C4)| = sqrt2: G' + E1/2' (4 + 2) = j = 3/2 +
+    j = 1/2, matching tastes at C +- 1. No triplet.
+Pre-run expectation mismatch: the criteria predicted one irreducible triplet; the result is two triplets (odd N) or
+no triplet (even N). The odd/even dependence is itself a result: the content depends on the block's corner parity.
+
+## Verdict against the pre-set criteria
+
+(i) PASS: C = 2S exact for N >= 2; N = 1 aliases to -1 (principal branch), symmetric lifts 3(1+2m).
+(ii) PASS only in the taste-doubled form: N_0 = 2 x 2S = 6, gap ~ 1/N. The strict count 2S = 3 is NOT realised by any
+     isolated band of the CL-1-native surface operator.
+(iii) PASS: N_0 unchanged under 10% disorder.
+(iv) Odd N: two triplets T1 + T2 whose members carry three DISTINCT three-fold turn eigenvalues. By the turn-CP lemma
+     (J != 0 requires all families to share one turn eigenvalue), turn-invariant masses on a triplet are degenerate and
+     give J = 0. Even N: no triplet.
+
+## Interpretation
+
+(a) Is 2S = 3 forced? CL-1 states that a cube-covariant one-mode-per-site hop requires a spin-3/2-type character, and
+the face-clause unification identifies that field with the -1 face phases up to a site gauge; the same text says the -1
+is still SUPPLIED (reasons given, not derived). A3 sharpens this: the cell fixes only S mod 3 and the lift
+C = 3(1+2m); taking C = +3 is a minimal-lift choice. More importantly, the smooth charge-3 field on the refined boundary
+is NOT CL-1's own fine-rung field: CL-1 puts pi on every unit face, and on a block boundary that is the S = 0 case (C1),
+which carries no 3. The monopole used here is the cell's field re-read one rung up and smeared over the finer boundary
+sites, a supplied field. The same pi cannot serve both as the Dirac-making background at the fine rung and as the
+monopole at the coarse rung.
+(b) To become three copies of the 16 on the slab wall one would need, none of which exists: (1) a rule that puts the
+smooth spin-3/2 field on block boundaries (derived from CL-1, not supplied); (2) a single-taste surface operator (a
+Wilson/overlap-type taste split on a surface with corners), or a reason one taste decouples; (3) a coupling of the
+boundary zero modes to the near-wall Weyl field such that each 16 inherits a 3-fold multiplicity while the block
+interior and the far wall do not add copies; (4) a turn-breaking term so the triplet is not mass-degenerate and J can
+be non-zero. Without (1)-(4) this is a count of surface modes, not of families.
+(c) Falsifiers. The Z width gives N_nu = 2.984 +- 0.008 light neutrinos (supplied measurement): a count of 3 per
+taste is consistent, the taste-doubled 6 or the even-N 4 + 2 is not, unless one taste and one parity are selected by
+a rule. A degenerate triplet contradicts the measured hierarchical masses (m_t/m_u ~ 1e5) unless the turn is broken;
+the turn-CP lemma then also forbids J = 3e-5 for turn-invariant couplings.
+
+Gate (for the R1 rule "families = boundary monopole index"):
+(1) No measured number chosen, but the minimal lift C = 3 and the block parity (odd N) are choices: FAIL-AT-RISK.
+(2) It inserts a boundary field not produced by CL-1 (C1): smuggling risk; the 3 enters through that field.
+(3) Prediction not built for: two triplets with distinct turn charges (odd N), i.e. degenerate turn-invariant
+    masses and J = 0. That is against measurement, so as stated the rule is falsified unless (b)(4) is supplied.
+(4) Bends Lattice through the role reading of block boundaries (as the brainstorm said).
+Result: R1 is NOT adopted. The positive kernel: the cell's pi-per-face field does carry a hidden |C| = 3 (mod 6), and
+an odd block boundary with a smooth version of it carries exactly two j = 1 triplets of surface Dirac modes.
+
+## Smuggling review
+
+Supplied: the smooth spin-S field on the block boundary (radial coherent-state map), the minimal lift S = 3/2, the
+staggered (taste-doubled) surface operator, the threshold defining "near-zero" (half the S = 0 first level), the Z-width
+number for (c). Forced (given those): C = 2S, N_0 = 2|C|, the kernel split, the rotation content, the distinct turn
+charges within each triplet.

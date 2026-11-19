@@ -1,0 +1,39 @@
+misfold-generations: pass criteria written BEFORE any run (2026-10-23).
+Question (three-generations reset, steps 2-5): in the fold model of fold-selection-3d, are there exactly THREE locally
+stable, bounded, odd-parity misfold classes distinguished by the dimension d_m = 1, 2, 3 of the misfolded region, each
+binding the same mode content, with neutral transitions between classes forbidden?
+
+Model (taken unchanged from fold-selection-3d): one fermion mode per site; cube hop R (spin-3/2 overlap phases, R^2 = 1,
+face phases -1); two-tiling tick U = U_O U_E, even step a = eps - mu/2, odd step b = eps + mu/2, eps = 0.3.
+Energy function: the tick's own quasi-energy, many-body E = tr(G H_eff), H_eff = i log U (exact for this quadratic
+model). Fold limit mu = -2 eps: U = U_E, H_eff = a R_E with a = 2 eps = 0.6, decoupled even cubes; vacuum = each even cube
+filled at R = -1 (4 units). Point misfold = one cube with 5 (3) units, cost a = |mu|.
+Minimal extension (stated, not a new rule): a "misfolded region" X holds the OTHER tiling's fold: the odd-cube hop
+R_O restricted to X, half filled at its negative levels; each even cube's remaining sites hold the lowest levels of
+R_E restricted to them; exact zero modes of those fragments are filled freely and set the charge q = units - N/2.
+Odd parity <=> q odd. Elementary classes: d_m = 1 an odd-tiling bond, d_m = 2 an odd-tiling plaquette, d_m = 3 an odd
+cube; plus larger odd-cube domains (line 2,3 cubes; sheet 2x2; block 2x2x2) on 8^3. Tori 4^3, 6^3 (elementary), 8^3.
+Elementary move = any number-conserving one-body unitary on ONE cube's 8 modes (the class the cube tick generates);
+"locally stable" = no such move on any cube lowers E, AND E is not above the charge-q sector minimum reached by
+separated point misfolds.
+
+Expected outcomes (each check passes when the computation returns the stated value; the hypothesis outcome is
+reported as a RESULT either way):
+(1) Interlacing [T]: a 7-site cube fragment of R has levels -1,-1,-1,0,+1,+1,+1, so removing one site from an even
+    cube costs exactly a. Prediction then: E(d_m) = 2^d_m * a for the elementary classes (ratio 1:2:4 for d_m=1,2,3),
+    independent of q, zero modes Z = 2^d_m. (If not exact, report numbers.)
+(2) Stability: hypothesis predicts 3 stable classes. My expectation before running: FAIL. The model is quadratic
+    (no interaction), so the charge-q sector minimum is |q| a, reached by separated point misfolds; every extended
+    misfold with E > |q| a can split, and single-cube moves lower E on every touched cube. Expected stable bounded
+    odd-parity classes = 1 (the point misfold, q = +-1); the one-cube q = 3 state is marginal (binding exactly 0).
+(3) Off the fold limit (mu = -eps): the same misfold states lie above the q-sector minimum of H_eff (free-fermion
+    sumset spectrum: no bound states).
+(4) Content: point = 4-state level split 2+2 by the copy sign; elementary misfolds carry Z = 2, 4, 8 zero modes:
+    contents DIFFER (hypothesis fails at step 4 if so).
+(5) Selection rule: one-body neutral operators (site density, nearest-neighbour hop/link current) between the q = +1
+    point state and q = +1 class states: compute max |<P|O|X>| exactly (Loewdin cofactor formula). Expected: nonzero,
+    order 0.1-1, for d_m = 1 (states differ in few orbitals); possibly exactly zero for larger classes by Slater-Condon
+    (nullity >= 2), which is orthogonality, not a symmetry or topology. fold-defect-dm (A) found no topological fold
+    defect, so no topological selection rule is expected.
+Clock-locking alternative: skipped unless cheap (not cheap here).
+Runner targets: stdout < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded, < 60 s, < 300 MB, ends TOTAL: PASS=N FAIL=0.

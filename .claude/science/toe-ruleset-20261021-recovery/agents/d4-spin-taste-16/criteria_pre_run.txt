@@ -1,0 +1,42 @@
+d4-spin-taste-16: pre-registered criteria (written 2026-10-26 before any runner code was written or run)
+
+Question. With ONE fermion mode per D4 event (Qubit axiom unchanged), can the 16-event cell (D4/2D4) carry
+spin (x) taste = 4 x 4 at low energy, with gamma matrices on spin, under a symmetry group that forbids dim-6 LIV?
+Kernel range is free (exponentially local allowed); phases arbitrary U(1); internal (shift / KS-type) symmetries allowed.
+
+Prior facts used (from d4-spin-cell #10104, d4-sixteen-content #10103; rechecked where cheap): D4/2D4 = F2^4 with W(F4)
+orbits 1 + 3 + 12; no D4 eta phases; 4-event cell cannot hold a spinor; untasted spinor impossible on 16 cell.
+Repo check: git grep origin/main finds no D4 / W(F4) staggered, spin-taste or Adams-term note (staggered work on main is Z^3).
+
+Set-up (stated in advance).
+ - Folded (corner) basis: every 2D4-periodic kernel is a 16x16 matrix function D(P) of the coarse momentum. Fine
+   translations, rotations and phase multiplications act P-independently (up to a scalar e^{iP.a}).
+ - "Spin x taste with gamma on spin" means: at a node P0, D(P0+p) = (gamma.p) (x) 1_T + O(p^2) on all 16 modes.
+   Then every symmetry acts as U(g) = S(A) (x) T(g), S = Pin lift (gamma.p invariant).
+ - Protection (fixed now): dim-6 LIV forbidden iff (Sym^4 V)^H is 1-dim AND Hom_H(Sym^3 V, End S) equals its O(4) /
+   SO(4) value (1 / 2); taste-dependent terms must also be forbidden.
+
+Pre-registered checks.
+ Q1 (forms) The W(F4)-invariant subspaces of D4/2D4 and of its character group, and the W(F4)-invariant alternating forms
+    on D4/2D4. Expect: only 0, R (3 frame classes + 0), all; forms only 0 and b = x.y mod 2 (rank 2). Consequence to state:
+    no internal Pauli (KS-shift) group acts irreducibly on a 4-dim taste space with W(F4) normalising it.
+ Q2 (Frobenius on the stabiliser) If G maps onto W(F4) and some event class x has a stabiliser G_x mapping onto W(F4)
+    (checked via H^1(W(F4), F2^4) = 0 and H^1(W(F4), F2^4/R) = 0), then C^16|G_x = lambda + M3 + M12 must equal
+    End(S) (x) lambda; test the dimension partition. Expect: FAILS (End(S) under W(F4) = 1 + 4 + 6 + 4 + 1, no way to make 3).
+ Q3 (control) KS on Z^4: B4 orbits on Z^4/2Z^4 = 1 + 4 + 6 + 4 + 1 match End(S): partition test PASSES, quartic count 2:
+    spin x taste exists but is not protected. Free KS dim-6 anisotropy nonzero (axis 1/3 vs body 1/12).
+ Q4 (subgroups) For subgroups H of W(F4) (all index-2 ones exactly, plus a seeded sample of 2-generated subgroups), compute
+    quartic count, fermion cubic count, S-irreducibility, orbit sizes and the partition test. Record any H that is
+    protected AND passes the partition test (these would be open routes, not results).
+ Q5 (taste lifting, control) Adams-type term r(1 - gamma5 (x) xi5 prod cos) on the KS spin-taste form: count light tastes
+    (expect 2) and its light-mode dim-6 anisotropy (expect nonzero). Hoelbling-type one-taste term: argued via
+    T|G_x = S* (a rank-1 taste projector fixes a spinor line), not built.
+ Q6 (count) Taste as an internal label: state T|G_x = S* lambda (lattice rotations act on taste as a spinor), so taste is not
+    internal; SU(4) Pati-Salam reading FLAGGED only.
+
+Verdict rule (fixed now):
+ PROTECTED SPIN FROM ONE MODE PER EVENT = a symmetry group with quartic count 1 and correct cubic count passes Q2 and an
+   explicit kernel realises spin x taste with it.
+ NO-GO (exact scope) = Q1 and Q2 hold for W(F4) (and for every protected subgroup tested).
+ PARTIAL = W(F4) excluded but some protected subgroup passes the partition test (open, no kernel built).
+Machine: runs < 60 s, BLAS 1 thread, nice 10, < 1.5 GB, abort if load > 8.

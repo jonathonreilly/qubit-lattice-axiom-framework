@@ -1,0 +1,12 @@
+== checks
+dense L=8 m=0.0: max|P_fft-P_dense|=6.7e-16 filled 256/512
+dense L=8 m=0.3: max|P_fft-P_dense|=7.8e-16 filled 256/512
+gaussian rho reproduces C: 2.2e-16, trace err 4.4e-16, min eig 1.6e-03
+E_N direct 0.333692302501 gauss 0.333692302501
+s1 r=1: Horodecki 1.0899157811 seesaw 2.0000000000 (spread 4.6e-01)
+s1 r=2: Horodecki 0.1429015819 seesaw 2.0000000000 (spread 4.4e-16)
+s1 r=3: Horodecki 0.1546209436 seesaw 2.0000000000 (spread 4.4e-16)
+self-test dual-rail state: SSR 2.828427125 noSSR 2.828427125 (target 2.828427125)
+m=0 s4 r=1: max|C_64-C_96|=2.5e-08
+m=0 s4 r=5: max|C_64-C_96|=1.4e-07
+m=0 s4 r=11: max|C_64-C_96|=4.9e-07

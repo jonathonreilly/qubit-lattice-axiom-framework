@@ -1,0 +1,41 @@
+copy-sign-nelson-barr (P3 / M2), criteria written BEFORE any code (2026-10-24).
+Question: does CL-1's copy sign s act as the Nelson-Barr Z2, with the s = -1 copy (mirror) as the heavy vector-like
+partner, so that a spontaneous T-odd, turn-breaking, s-odd vacuum gives J != 0 with theta-bar = 0 at tree level?
+
+(1) Cell operators at K = 0 (FREEZE 8x8 cell rebuilt as in family-labels, copy mass on, M = 0.2).
+  Space O = Hermitian 8x8 with {O, s} = 0 and odd under every kept time-reversing antiunitary T x R (12 of them,
+  including the 3 family-fixing T x C2'), split by turn charge (C3 tt-conjugation).
+  PASS(1a): dim of s-odd, all-12-odd, turn-charged space >= 1; direct check that U(K) exp(i lam O) keeps NONE of the
+           24 T x R (O breaks every kept antiunitary).
+  Prediction: exists; s-odd operators inside Pi+ connect q 2 (s = +1) to q 1 (s = -1) and are all turn-charged.
+  Also report: does s commute with U(K) at all K (then s.(T x R) is a further family-fixing antiunitary, and a purely
+  T-odd s-odd vacuum KEEPS it -> J = 0; a vacuum must mix T-even and T-odd s-odd parts, i.e. a generic phase).
+  FAIL(1): no such operator.
+(2) Free 3-family NB model: light d (s = +1), mirror D (s = -1), supplied vector-like M (stand-in), real light Yukawas
+  m_u, m_d (seeded), F = u a^T + v b^T with real directions u, v and spontaneous phases alpha, beta (a, b s-odd).
+  Case A (NB block: light_L x mirror_R entry G = 0):
+  PASS(2a): max distance of arg det(M_full_d) and arg det(M_u) from {0, pi} < 1e-12 over 300 seeds and all ratios.
+  PASS(2b): median |J| > 1e-5 at every |a|/M in {0.3, 0.5, 1, 2, 3}.
+  PASS(2c): J -> 0 as |a|/M -> 0 (J(0.01)/J(1) < 1e-2, expected ~ x^2 scaling).
+  PASS(2d) controls: alpha = beta, or b = 0 (single s-odd field): |J| < 1e-14 (phase removable).
+  Case B (Spin(10) singlet pairing: the unique 16 x 16bar singlet fills both light-mirror blocks, G = F^T):
+  prediction: arg det generic O(1) (NB FAILS) and light doublets lifted; recorded as a result, not a failure.
+(3) One-loop theta-bar. Two loop-proxy classes:
+  (i) Hermitian dressing dm = kappa m X, X = F^+(FF^+ + M^2)^-1 F (heavy-mirror loop on the light block):
+      PASS if arg det stays in {0, pi} to 1e-12 (structural zero).
+  (ii) portal-type dm = eps Lambda-weighted F^+ C F with generic complex C (scalar-portal couplings):
+      theta linear in eps; report slope; bound: theta < 1e-10 needs eps = lambda/(16 pi^2) < 1e-10/slope.
+      PASS = the computation runs and the bound is recorded (prediction: lambda_portal <~ 1e-8, the known NB quality
+      problem; it is a result whichever way).
+(4) 't Hooft vertex. Grassmann zero-mode toy (2 light families d_L, d_R; 2 mirror D_L, D_R; mirror gapped ONLY by a
+  quartic vertex g e^{i phi_g}, no bilinear):
+  PASS(4a): with G = 0 the instanton amplitude is det(m) x g e^{i phi_g} exactly, independent of F (NB survives SMG at
+            tree level);
+  PASS(4b): its phase moves by phi_g (theta-bar gets the vertex phase: the vertex must be real); with G != 0 the
+            amplitude depends on F (leak).
+  Argument part: the vertex phase is real iff the far-wall dynamics keeps an antiunitary that is odd on E.B; the
+  spontaneous s-odd vacuum enters the mirror amplitude only via loops (class 3).
+Overall verdict rule: NB-structure CONDITIONAL PASS if (1a), (2a-d), (3i), (4a,b) pass; the G = 0 zero being
+forced or not is reported separately (if not forced by s alone: "s is NOT by itself the NB Z2").
+Runner: < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded, ends 'TOTAL: PASS=N FAIL=0' (predicted failures are recorded as
+PASS lines stating the computed fact, with the deviation logged in the note).

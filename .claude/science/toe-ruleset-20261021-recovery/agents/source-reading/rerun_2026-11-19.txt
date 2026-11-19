@@ -1,0 +1,28 @@
+A. no B-local one-tick turn law (two directions)
+[PASS] A1 brute-force steerings never beat the closed-form bounds  search lo 0.3338 <= 0.3536, search up 0.1697 >= 0.1464
+[PASS] A2 maximally entangled direction, phi=pi/4: E1 forces J01 >= sin(phi)/2, E2 caps J01 <= sin^2(phi/2)  E1 [0.3536,0.5000]  E2 [0.0000,0.1464]  disjoint by 0.2071
+[PASS] A3 gap = (sin phi + cos phi - 1)/2 > 0 on all of (0, pi/2); max (sqrt2-1)/2 at pi/4  max|gap-formula|=3.1e-16, max gap 0.2071
+[PASS] A4 massive-walk coin theta=0.1 (eps=0.1 at rest): forced turn gap per tick ~ eps  total-turn gap 0.0948 per tick vs rest turn rate eps=0.1
+[PASS] A5 every tested partial entanglement has an infeasible orientation  Schmidt weight 0.6/0.8/0.9/0.99 max gap 0.2000/0.1403/0.0831/0.0098
+[PASS] A6 the formation-law D set-up is feasible: total turns 0.3536 at B for every A basis is allowed  J01 in [0.1768,0.3232]; signal there removable, not in A2
+B. Bell-local kernels
+[PASS] B1 deterministic local values: |A0(B0+B1)+A1(B0-B1)| <= 2, so any mixture obeys CHSH <= 2  max 2
+C. coarse-graining: alternating B update R(+pi/4), R(-pi/4); A picks E1 or E2 once
+[PASS] C1 per-tick bounds hold at every tick of the protocol (E1 lower, E2 upper)
+[PASS] C2 minimal joint rule: E1 0.7071 turns/relay/tick, E2 0  E1 0.7080, E2 0.0000
+[PASS] C3 any rule: shift >= 0.4142 N T turns; sd <= (T/2) sqrt N; so separation >= 0.83 sqrt N for all T  N=1e4: >= 83 sd; each 1D turn adds -1 to T11, so no cancellation
+D. burns only
+[PASS] D1 every burn deposit (1,d)(1,d) is null: Minkowski trace 0, so a burns-only source is traceless  eps u u has trace -m^2/eps
+[PASS] D2 1D plane waves: P0-P1 = v_g and burns+turns T11 = eps v^2; burns alone overshoot by eps(1-v^2)  k=0.0: burns 0.300, burns+turns 0.000; k=0.1: burns 0.316, burns+turns 0.030
+[PASS] D3 3D rest relay, burns only: Newtonian strength 2x dust, gamma = 1/3; static source not conserved  h00 ratio 2.00, gamma 0.333 (dust 1.0)
+E. sustained channel: momentum-entangled relay; A picks plane (z) or standing (x) members
+[FAIL] E1 B turn rate per tick depends on A basis by ~eps v^2 (B kinetic stress)  k=0.204 eps=0.2271 v=0.896: z 0.04466, x 0.28335, diff 0.23869 vs eps v^2 0.18241
+   k=0.471 eps=0.4810 v=0.976: z 0.02240, x 0.54048, diff 0.51808 vs eps v^2 0.45855
+F. Page-Geilker toy: ball at L (actual) or R, weight 1/2; torque in units of one classical ball
+[PASS] F1 torque: actual deposits 1, expected (branch-averaged) 0, hybrid (actual burns, reduced turns) 2  Page-Geilker 1981 saw torque follow the outcome
+G. size, supplied G = a^2/(8 pi), hbar = c = 1
+[PASS] G1 per unit deposit (one 1D turn = hbar): integral of h dt at 1 m = a tau/(2 pi r)  a=8.10e-35 m, tau=2.70e-43 s, 3.49e-78 s; 1 turn/s = 2.3e-51 kg static
+   E-channel, Rb atom v=1 cm/s: 1.4e+05 turns/s, mass equivalent 3.2e-46 kg/atom; 1e6 atoms 3e-40 kg
+   smallest gravitating source measured ~9e-5 kg (torsion, 2021); BMV-type proposals ~1e-14 kg
+
+TOTAL: PASS=15 FAIL=1

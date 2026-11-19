@@ -1,0 +1,77 @@
+luscher-m0-1: criteria written BEFORE any computation of this probe (2026-10-25 01:35 EDT)
+
+Purpose: PRE-REGISTERED rerun of luscher-L8's momentum-space Luscher locality test at Wilson mass m0 = 1.0 (L8 ran
+m0 = 1.6; its m0 = 1.0 numbers were a POST-HOC control), plus a control at m0 = 0.6 that tests the slow-scale
+reading "the slow scale is the smallest free Wilson gap g = min(m0, 2 - m0)" (0.4 at 1.6, 1.0 at 1.0, 0.6 at 0.6).
+
+Prior knowledge DISCLOSED (seen before writing this file, from luscher-L8's embedded data): at m0 = 1.0, R16 =
+-9.0e-7 (16,1,1), -4.5e-5 (16,2,2), -9.5e-6 (12,1,1), -8.7e-5 (12,2,2), -1.4e-4 (16,4,4); doublet ratios 0.919, 0.724;
+per-charge dS = -1.83% (L8), -0.10% (L12). The m0 = 1.6 L8 rates are used below as fixed reference values.
+No m0 = 0.6 number of any kind has been seen.
+
+Machinery (copied unchanged from luscher-L8/runner.py except M0): Wilson kernel r = 1, X = D_W - m0, H = g5 X,
+q_Y(x) = tr sign H_Y(x,x) by exact per-(p2,p4)-block dense eigh; axis-restricted backgrounds U2 = exp(i th2(x1)),
+U4 = exp(i th4(x3)); 16 = Q(6,1/6) L(2,-1/2) u^c(3,-2/3) d^c(3,1/3) e^c(1,1); lone doublet = L.
+M1: order-2 per-charge kernel (random-phase fields, seed 1000+L, eps 0.02/0.04 Richardson, 4-sign combination).
+M2: single mode F = eps cos(p x1), G = eps cos(k x3), eps = 0.3, R_c = 4 * Fourier coefficient / eps^2 (half-site
+phase removed). gamma = 2/(4 pi^2) per charge-1 Weyl; gamma_L = -0.5/(4 pi^2).
+Lattices L x T x L x T, tested extent L along x1, x3; T = 24 along x2, x4 (L8's Polyakov-loop fix).
+
+Run list, m0 = 1.0 (fixed now):
+- M1: L = 6, 8, 10, 12, 16 (T = 24).
+- M2 (T = 24): diagonal n = m = 1..L/2-1 for L = 8, 10, 12, 16; full grid n, m = 1..5 on L = 12; row (n,1),
+  n = 2..7 on L = 16; diagonal n = 1, 2, 3 on L = 24 with T = 24 if one 2304-dim complex block eigh benchmarks
+  (a timing-only test, no observable) under 6 s single-thread on the mini, else T = 16 (L8's choice), decided before
+  any L = 24 observable is computed.
+- eps check eps = 0.15 at (12,1,1), (16,1,1), (16,2,2). T check: (16,1,1) at T = 16 and T = 32.
+  Holonomy check: (16,1,1) with th -> th + pi/16 at T = 24.
+Run list, m0 = 0.6: M1 at L = 6, 8, 10, 12, 16 (T = 24); M2 diagonal (16, n, n), n = 1, 2, 3 (reported only).
+
+Fit-range rule (the one adjustment for m0, stated now): the m0 = 1.0 kernel decays faster, so decay lengths are fitted
+over d = 2..d_max, d_max = the largest d <= L/2 - 1 with envelope(d) >= 30 x floor, floor = max |Pi| on the lines
+a in {0, L/2} or b in {0, L/2} (exact zeros by oddness; numerical floor). For K3, d_max is further capped at L/2 - 2
+(L8 found its d = L/2 - 1 point forced ~0 by the periodic construction; declared now, not after the fact).
+
+PASS criteria at m0 = 1.0 (L8's P1-P5 copied, plus the task-stated thresholds as primed variants; all pre-set;
+a failure is reported as FAIL / NOT MET and is not relaxed):
+- P0: block density = full dense 4D density on 4^4 within 1e-12; GW and sign(H)^2 = 1 per block within 1e-12.
+- P1 (copied): Pi envelope decays exponentially; xi_L at L = 10, 12, 16 agree within 10% (spread = (max-min)/mean);
+  |Q~_12 - Q~_16| at (pi/2, pi/2) <= 1e-3 gamma.
+- P1' (task): the Luscher-split current kernel K1 decays exponentially with decay lengths at L = 12 and L = 16
+  agreeing within 20%.
+- P2 (copied): sum_ab Q / gamma - 1 within 1% for every L >= 10.
+- P3 (copied): on L = 16, tails of K1, K3 at distance >= 7 below 1e-3 gamma; xi(K1), xi(K3) within 15% of xi_16(Pi).
+- P4 (copied): the doublet's would-be gauge-invariant current (no T term) has a non-decaying tail with
+  |K3'(L/2)| = |gamma_L| within 2% on every L = 6..16.
+- P4' (task): the same within 10% on every L = 6..16.
+- P4b (copied): pooled symmetric cubic fit in s = sin^2(p/2), t = sin^2(k/2) of R_L over the L = 12 grid and L = 16
+  points (excluding p or k = pi): intercept within 3% of gamma_L.
+- P5 (copied): pooled cubic fit intercept of R16 (same points): |c0| <= 0.01 |gamma_L| and <= 0.05 max|R16|;
+  |p|-exponent of R16 on the L = 16 diagonal (n = 1, 2) in [1.6, 2.4].
+- P5' (task): on the largest lattice (L = 24) the diagonal R16 at n = 1, 2, 3 has one sign and a least-squares
+  log|R16| vs log|p| exponent >= 1.8.
+- P5b (copied): eps-scaling exponent log2(R(0.3)/R(0.15)) + 2 within 0.3 of 4 at (12,1,1), (16,1,1), (16,2,2).
+- P6 (copied, finite size): |R16(12,3,3) - R16(16,4,4)| <= 1e-2 max|R16|.
+- V (volume checks): (16,1,1): |R16(T=16) - R16(T=32)| and the holonomy shift each <= max(10% |R16|, 1e-5 |gamma_L|).
+
+Control at m0 = 0.6 (slow-scale reading), pre-set:
+- mu(m0) = -ln(dS_12 / dS_8) / 4 with dS_L = sum_ab Q / gamma - 1 (dS_8, dS_12 same sign required).
+  Reference values from L8 data: mu(1.6) = 0.298 (g = 0.4, mu/g = 0.745); mu(1.0) = 0.727 (g = 1.0, mu/g = 0.727).
+- C1: mu(0.6)/0.6 within 20% of 0.736 (i.e. mu(0.6) in [0.353, 0.530]); ordering mu(1.6) < mu(0.6) < mu(1.0).
+  The rival reading "slow scale = 2 - m0 only" predicts mu(0.6) > mu(1.0) and fails C1's ordering.
+- C2: xi_16(Pi) ordering xi(1.0) < xi(0.6) < xi(1.6) (xi(1.6) = 0.914 from L8).
+- R16 at m0 = 0.6 (16,n,n) reported, no criterion.
+
+Caveats fixed in advance: finite-lattice diagnostic of the U(1) case only (Luscher's U(1) theorem supplied, not
+re-proved); axis-restricted background class; eps = 0.3 above Luscher's admissibility bound; not the non-abelian
+measure; not the gauge-field integral; m0 is a kernel parameter, not a measured number (choosing m0 = 1.0 changes no
+physics claim; it is the optimal-locality point of the free kernel).
+
+ADDENDUM (2026-10-25 03:20 EDT, cost-driven, written while NO result file of this probe existed yet; the PASS
+thresholds are NOT changed): under the current mini load (nice 10 lands on efficiency cores) one 1024-dim block eigh
+takes 1.8 s instead of the benchmarked 0.52 s, so the run list is cut to fit:
+- L = 16, m0 = 1.0 single-mode points dropped: diagonal n = 5, 6, 7 and row (n,1) n = 4..7. The pooled fits (P4b, P5)
+  use the L = 12 grid plus L = 16 points (1,1), (2,1), (3,1), (2,2), (3,3), (4,4) (a superset of L8's L = 16 set).
+- m0 = 0.6 single-mode (16,3,3) dropped (reported-only item).
+Everything else (all criteria inputs: M1 L = 6..16 at both m0, L = 24 diagonal n = 1..3, eps / T / holonomy checks,
+P6's (12,3,3) and (16,4,4)) is unchanged.

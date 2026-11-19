@@ -1,0 +1,20 @@
+Pre-run criteria (written 2026-10-26 before runner.py was written or run)
+
+Quantity: R = |delta_pred| / |delta_bound|, where delta_pred is the rule-fixed proton coefficient
+converted to the Auger convention E^2 - p^2 = m^2 + delta_{had,2} E^4 (eV^-2), and delta_bound = 1e-57 eV^-2
+(Auger 2022, arXiv:2112.06773, 5 sigma). R is evaluated for (a) the sky average over directions and
+(b) the least-constrained direction (smallest |c_p|), with the parton weighting at both a low scale
+(2 GeV) and the cell scale (LO evolution).
+
+Decision rule, fixed in advance:
+- The bound applies only if the predicted sign lies in the sign range the bound was derived for, and
+  under the composition model it assumed. If the sign is outside that range, the comparison is "not covered",
+  and the verdict is taken from the bound with the matching sign if one exists (else CONSISTENT, no bound).
+- EXCLUDED: sign covered, and R >= 10 for the sky average AND R >= 10 in the least-constrained
+  direction, at both weighting scales. The Auger n = 2 number is an order-of-magnitude rescaling
+  (their Eq. 6.4), so a factor-10 margin is required.
+- IN TENSION: sign covered and 1 < R < 10, OR R >= 10 only for some directions or one weighting scale,
+  OR exclusion only under an assumption the data disfavour (e.g. pure-proton composition).
+- CONSISTENT: R < 1 everywhere, or no bound applies to the predicted sign/order.
+Any new kinematic consequence found on the way (e.g. composite vacuum emission) is reported
+separately as [E], with its own verdict against the data, never folded silently into R.

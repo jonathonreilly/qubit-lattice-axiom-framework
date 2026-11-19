@@ -1,0 +1,20 @@
+== A. turn charges on CL-1's cell
+PASS: A1 [T] families-mod-3 A4 reproduced: the spin-3/2 turn on the 8 cell corners has charges {0^4, 1^2, 2^2}  [[0, 0, 0, 0, 1, 1, 2, 2]]
+PASS: A2 [T]/[F] adopted slab on CL-1's cell, one-copy window (m, Mc) = (0.5, 1), Ls = 24: near and far wall each hold one 2-dim Weyl space, BOTH in the s = +1 copy, opposite hands; the turn (site-phase lift) acts on each as copy phase x spin-1/2 turn with the SAME copy charge: q_mirror = q_light  [lift defect 0e+00, |UT^3 - 1| 0e+00; q near 2, far 2; det ratio 6e-15; hands +1/-1]
+PASS: A3 [F] calibration (two-copy window (1.5, 1)): the s = -1 copy carries a DIFFERENT copy charge (wall-families C5), so the equality in A2 is a property of the window, not of the lift convention  [q(s+) = 2, q(s-) = 1]
+== B. the turn on the 32 far-wall modes (two spin components x 16)
+PASS: B1 [T] for every twist (per-mode charge t = q + k = 0, 1, 2) and every Spin(10)-compatible action on the 16 (identity, a Z3 element with charges w^(+-1), a random element), u = w^t S_spin x g leaves the quartic tensor of sum B^+ B (with J, number and spin invariant) exactly fixed: [T_k, H_sym] = 0  [max defect 4e-15; det S_spin = 1]
+PASS: B2 [T] contrast: Z3 phases on 5 of the 16 weights (not a Spin(10) element) break H_sym at every t: the turn must act on the 16 as a phase x Spin(10) element (Schur), so the only turn data on the far wall are the copy charge and the spin lift  [min defect 3.46]
+PASS: B3 [T] Omega = sum B_a B_a + h.c. (charge 4, U(1)_N -> Z4) picks up w^(4t) = w^t: it is kept only at t = 0, i.e. twist k = -q_mirror, exactly as the families-mod-3 top form O_A  [kept t = [0]]
+== C. ground-state turn charge (GS: N = 16 per copy, flavour singlet, Spin(10) singlet; spin10-two-flavour C3-C4)
+PASS: C1 [T] T_k = w^(16 t) e^(i 4 pi t J / 3) x S_flavour x g (J in so(12), flavour commuting with so(12)); on the unique GS (J = 0, S = 0, Spin(10) singlet) T_k = w^(16 N_f t): charge N_f t mod 3; consistency on |0> (1) and |F> (det u) exact  [GS charge by t = 0,1,2: N_f=1 [0, 1, 2], 2 [0, 2, 1], 3 [0, 0, 0]]
+   C2 [S] at the Omega twist (t = 0) the GS is turn-neutral for every N_f. A nonzero charge at t != 0 is a charge per cell on the turn axis (an atomic, Wyckoff label of a product state), not an anomaly: a unique symmetric product state is never anomalous
+== D. which N_f can be gapped symmetrically
+PASS: D1 [T] H_sym keeps U(1)_N: the far wall's U(1)_N^3 and U(1)_N-gravity coefficients are -16 N_f != 0, so no N_f is symmetrically gappable with H_sym (register: no mode-number-conserving term gaps the mirror alone); the site gap is a trivial product state and the wall mode relocates (spin10-two-flavour E2, now forced)  [gappable N in 1..9: []]
+PASS: D2 [T] Omega on the adopted slab (q_mirror = q_light, A2): the twist k = -q_mirror also neutralises the light copy, every Z3 coefficient of the far wall vanishes and the light index N m (q_l + k) = 0: EVERY N_f passes (the families-mod-3 'k = -q_light' loophole is forced)  [allowed N: [1, 2, 3, 4, 5, 6, 7, 8, 9]]
+PASS: D3 [T] contrast, families-mod-3 tastes (chiral generator H', mirror on the OTHER copy, q_l = 2, q_m = 1, 4 doublets): N(q_l - q_m) = 0 mod 3, allowed N = 3, 6, 9; the mod 3 needs q_mirror != q_light  [allowed N: [3, 6, 9]]
+PASS: D4 [T] stacked families on one cell copy share one turn charge (family-blind), so the turn-CP lemma does not force J = 0 from the turn; but no N_f is preferred either: minimality (3 over 6) is supplied by nothing in the rules
+   synthesis (criteria_pre_run): S1 turn kept True, S2 neutral GS at the Omega twist True, S3 obstruction exactly N != 0 mod 3 False -> FAIL at S3: on the adopted slab the mirror sits on the light copy
+Supplied: 16 with one orbital per weight, spin as flavour, cell-slab kernel and (m, Mc, Ls), free fields; cited: 't Hooft matching, crystalline equivalence, SMG (sufficiency).
+elapsed 0.4s, peak RSS 135 MB
+TOTAL: PASS=11 FAIL=0

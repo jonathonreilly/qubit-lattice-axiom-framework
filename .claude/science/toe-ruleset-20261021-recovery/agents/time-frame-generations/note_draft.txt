@@ -1,0 +1,100 @@
+---
+claim_id: time_locking_and_frame_drag_winding_do_not_force_three_families_the_tick_has_no_temporal_z3_and_shift_windings_split_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "Free fields only. (T) For the update law's one-mode cube tick, (eps, mu, MN) = (0.3, 0.05, 0.2) with a massless control, on a 4^3 torus: the exact time group is Z (whole ticks) with continuous quasi-energy characters. No half-tick screw exists up to any site gauge, so there is no Z6 = turn x half-tick. The quasi-energy spectrum has no 2 pi/3 or pi periodicity. The only exact Z3 is the spatial body-diagonal turn. Its sectors' lightest levels are 0.05, 0.05, 0.212 (2 + 1, the third a cell-scale partner). The stationary Floquet sea carries no locking character, so locking sectors cannot mix. (F) For the linearised stationary shift law curl curl beta = -16 pi G j of tick-fraction-frame-dragging, the on-shell energy is positive-definite and quadratic in the record current, so E(n) = n^2 E(1) and coincident windings are the energy maximum (they split). Circulation is unquantised. A supplied Z3 offset gives one nontrivial mass, since E(-n) = E(n). Neither route forces three families."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/time_locking_and_frame_drag_winding_do_not_force_three_families_the_tick_has_no_temporal_z3_and_shift_windings_split_2026_10_23.py
+---
+
+# Time locking and frame-drag winding do not force three families: the tick has no temporal Z3, and shift windings split
+
+Claim type: bounded_theorem. Runner: 14 PASS, 0 FAIL, under 1 s. Pass criteria were fixed before the run, in criteria_pre_run.txt.
+
+## Question
+
+Two owner instincts for the three generations (2026-10-23):
+- TIME: a composite whose internal phase locks to the tick (menu M5).
+- FRAMES: a composite carrying circulation n of the adopted tick-offset / shift field (menu M9).
+
+A route PASSes only if it gives all four of:
+- (P1) a count of 3 forced by the rules;
+- (P2) distinct masses;
+- (P3) identical charges;
+- (P4) allowed mixing with J != 0 possible.
+
+## Rules used (rederived where used)
+
+- CL-1 cube tick: two tilings offset by (1,1,1), U = U_odd U_even, the even cube with the copy-mass factor. Inlined from zoom3-fixed-families.
+- tick-fraction-frame-dragging: the per-pair tick offset (shift) is a response variable, with stationary law curl curl beta = -16 pi G j.
+  - On-shell energy of a stationary configuration: E = -L = (1/32 pi G) sum |curl beta|^2 = 8 pi G <j, (-lap)^-1 j>.
+  - Rederived: L = (1/32 pi G)|curl beta|^2 + j.beta; on shell, j.beta = -(1/16 pi G)|curl beta|^2.
+
+## Results
+
+### Theorems (exact)
+
+- T1a. The tick is one fixed unitary per tick, so exact time translations form Z. Their characters are a continuous quasi-energy mod 2 pi. A period-p locking sector theta = 2 pi k/p exists for every p equally, so three would be a chosen p, not a forced one.
+- T5. The stationary Floquet sea C commutes with U. Hence <O_k> = 0 for the locking-character-k part of any operator (k != 0). No vacuum of the free tick connects locking sectors, so mixing is permutation-only and J = 0.
+  - A vacuum carrying the character would be a period-3 discrete time crystal. That needs interactions and a chosen period (UNTESTED).
+- F1. E is quadratic in the record current, so E(n) = n^2 E(1), and the n-winding composite stores n(n-1) E(1) more than n separated windings.
+- F2 (Cauchy-Schwarz). |E_12(d)| < E(1) for d > 0, so coincidence is the maximum over two-winding configurations. Windings n = 2 and 3 split into n unit windings, i.e. heavy goes to several light, failing F6's one-lighter-family pattern.
+- F3. The circulation (slip flux = 16 pi G x linked current) is a real number.
+  - A compact offset (a whole-tick offset is invisible in a stationary state) gives winding group Z, with no 3.
+  - E(-n) = E(n) exactly, so a supplied Z3 offset gives classes {0, +1, -1} with ONE nontrivial mass.
+
+### Finite diagnostics (4^3; 24^3 FFT)
+
+- T1b. No half-tick screw exists: the odd half-tick is not a (1,1,1)-translate of the even one, or of its inverse, conjugate or transpose, under any site gauge. Best residual 1.00 massive, 0.96 massless. Reason: the steps carry opposite signs, and the copy mass sits on even cubes only.
+  - So the menu's Z6 (turn x two-tiling period) is NOT exact; the time group is Z.
+- T1c. The body-diagonal turn is exact up to a site gauge (2e-14), with T^3 = 1. It is the only exact Z3, and it is spatial.
+- T2. The spectrum mismatch under theta -> theta + 2 pi/3 is 2.09 rad, and under + pi it is 2.49 rad: no locking periodicity.
+- T3. The turn sectors have dimensions 24, 20, 20. The two-body quasi-energies form one cluster, not three classes.
+- T4. Lightest |theta| per turn sector: 0.05, 0.05, 0.212. Two sectors share the Dirac level; the third is a cell-scale partner. That is 2 + 1, not three light distinct masses. The particle-hole thresholds are all 0.1 = 2|mu|.
+- F0. div j = 0, and the direct sum |curl beta|^2/(32 pi G) matches the FFT form (E(1) = 52.25 lattice units).
+- F2 (pair interaction E_12/E(1) at d = 0, 1, 2, 3, 5, 8):
+  - coaxial: 1, 0.28, 0.09, 0.04, 0.009, 0.002 (repulsive, the gravitomagnetic sign);
+  - coplanar: 1, 0.40, -0.13, -0.04, -0.007, -0.002 (weak far attraction, never a winding-2 bound state).
+
+### Estimates against measurement
+
+- T6. A locking offset of 2 pi k/3 per tick is a cell-scale mass. That fails F1 and F3 (1 : 207 : 3477).
+- F4. The gravitomagnetic self-energy of a muon-mass composite of Compton size is about 8e-42 GeV, about 1e-40 of its mass, against m_mu - m_e = 0.105 GeV. Only a Planck-heavy composite gets an O(1) splitting.
+
+## Verdicts
+
+- (T) TIME / clock-locking: FAIL.
+  - P1: time has no Z3, and 3 enters only through the spatial turn.
+  - P2: the turn sectors split 2 + 1.
+  - P4: the locking character is conserved by the stationary vacuum.
+  - P3 holds trivially.
+- (F) FRAMES / winding: FAIL.
+  - P1: n is unquantised, or Z if compact, and never stops at 3; a Z3 gives one class.
+  - P2: E(n) = n^2 E(1), unstable to splitting and about 1e-40 relative.
+  - F6: heavy windings decay to several light windings.
+  - P3 holds: the shift couples only to the record current.
+
+## Smuggling review
+
+- Supplied:
+  - free fields;
+  - the parameters (0.3, 0.05, 0.2);
+  - the 4^3 and 24^3 tori;
+  - side-2 loops and G = 1;
+  - the linearised Coulomb-gauge shift law and its sheared-prism Regge limit (inherited);
+  - E = -L for stationary configurations;
+  - PDG G_N (estimate only).
+- Forced: everything listed under Theorems.
+- No rule is proposed, so the anti-smuggling gate is not engaged.
+
+## Boundary and what would move the wall
+
+- Interacting ticks: a spontaneous period-3 time crystal would be a new rule-level state. It needs a reason for the period 3, and its offsets sit at the cell scale.
+- Nonlinear shift (strong-field cores, horizons) could change the sign of the winding interaction. That is not tested here.
+- The owner's lifetime clue is better carried by tunnelling actions (M16) than by locking or winding energies.
+
+## Uses / narrows
+
+- Uses zoom3-fixed-families (tick construction), tick-fraction-frame-dragging (the shift law), spontaneous-turn-cp (turn-charged vacua give aligned minima, J = 0) and generations-menu M5 and M9.
+- Narrows M5's "Z6": with the copy-massed tick, and even massless, no half-tick screw exists.

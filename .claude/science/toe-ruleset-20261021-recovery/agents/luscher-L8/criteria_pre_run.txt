@@ -1,0 +1,60 @@
+luscher-L8: criteria written BEFORE any code or run (2026-10-24)
+
+Question: is the U(1)_Y covariant anomaly density of the one-family 16 the lattice divergence d*j of a LOCAL,
+gauge-invariant current j (Luscher's locality condition, tested in momentum space), while a lone L doublet's is
+not? Follow-up to luscher-local-current (4^4: finite-range fits inconclusive).
+
+Set-up (fixed before running):
+- Kernel copied from overlap-nonabelian / luscher-local-current: Wilson kernel r = 1, m0 = 1.6, H = g5 X,
+  D = 1 + g5 sign H, q_Y(x) = tr sign H_Y(x,x); A = sum m Y q_Y; 16 = Q (6, 1/6), L (2, -1/2), u^c (3, -2/3),
+  d^c (3, 1/3), e^c (1, 1); lone doublet = L alone.
+- Background class: AXIS-RESTRICTED factorised U(1) fields, U1 = U3 = 1, U2 = exp(i th2(x1)), U4 = exp(i th4(x3)).
+  Field strengths F12 = F(x1) = th2(x1+1) - th2(x1), F34 = G(x3). H commutes with translations in x2, x4, so it is
+  EXACTLY block diagonal in (p2, p4): L^2 blocks of dimension 4 L^2. sign H is computed EXACTLY per block (dense
+  eigh), which replaces the sparse/Zolotarev approximation proposed in the earlier note (no rational error).
+  Validation control: block method = full dense 4D method on 4^4 to 1e-12.
+- Lattices: L = 6, 8, 10, 12, 16 (20 if time allows) on the Mac mini; L = 6 re-verified in the laptop runner.
+
+Measurements:
+- M1 (order-2 kernel, one charge Y = 1): q2 = sum Pi(x1-y, x3-z) th2(y) th4(z) from random-phase th2, th4
+  (all momenta incl. zero modes), 4-sign combination + Richardson in eps (eps = 0.02, 0.04). F-kernel
+  Q~(P1,P3) = Pi~ / ((e^{iP1}-1)(e^{iP3}-1)); position kernel Q(a,b) by exact partial sums of Pi;
+  gamma_meas = sum_ab Q (zero-momentum value). Luscher-split current kernels of Q - gamma delta:
+  K1(a,b) = sum_{a'<=a} [Q(a',b) - delta_{a'0} R(b)], K3(a,b) = delta_{a0} sum_{b'<=b} [R(b') - gamma delta_{b'0}],
+  R(b) = sum_a Q(a,b) (so d*K = Q - gamma delta exactly).
+- M2 (finite field, the 16 and the doublet): single-mode backgrounds F = eps cos(p x1), G = eps cos(k x3),
+  eps = 0.3; R_c(p,k) = 4 * (Fourier coefficient of A_c at (p,k)) / eps^2 for c = 16, L. Diagonal p = k = 2 pi n/L
+  on all L, plus row k = 2 pi/L on L = 16 (and full grids on L <= 12). eps-scaling check (0.3 vs 0.15).
+- M3 (zero momentum exactly): unit flux in the 12- and 34-planes (charge unit 1/6) on 6^4, full dense; indices
+  for 6Y = 1..6.
+
+PASS criteria (pre-set; a failure is reported as FAIL, not relaxed):
+- P0 (exactness/validation): GW and projector per block <= 1e-12; block = full-4D density on 4^4 <= 1e-12.
+- P1 (per-charge kernel local, L-independent): the envelope max|Pi(a,b)| over max(|a|,|b|) = d decays
+  exponentially; fitted decay length xi_L (L = 10, 12, 16) agree within 10%; |Q~_L - Q~_16| at common momenta
+  <= 1e-3 * gamma for L = 12 (and decreasing with L).
+- P2 (zero-momentum value): gamma_meas = 2/(4 pi^2) = 0.050661 within 1% for L >= 10.
+- P3 (Luscher current of each charge local): tails of K1, K3 at distance >= L/2 - 1 below 1e-3 * gamma on L = 16,
+  decay lengths within 15% of P1's xi.
+- P4 (lone doublet fails): the doublet's would-be gauge-invariant current (no T term) has a NON-decaying tail,
+  |K3'| at distance ~L/2 = |gamma_L| = 0.5/(4 pi^2) = 0.012665 within 2% on every L; momentum space:
+  R_L(p,k) -> gamma_L (fitted intercept within 3%), so R_L/|p_hat| diverges like 1/|p_hat|.
+- P5 (16 vanishes like p_mu j_mu with j analytic): fitted intercept of R16 at (p,k) -> 0 satisfies
+  |c0| <= 0.01 |gamma_L| and <= 0.05 max|R16|; small-momentum exponent of R16 on the diagonal (L = 16, n = 1, 2)
+  between 1.6 and 2.4 (analytic, quadratic: j ~ p, not constant), so R16/|p_hat| -> 0 smoothly.
+- P6 (16 finite-size): |R16_L - R16_16| at common momenta <= 1e-2 max|R16| for L = 12 (and shrinking with L).
+- P7 (flux sector, 6^4): indices -(6Y)^2 for 6Y = 1..6 if resolved; the 16's flux integral 0 from MEASURED
+  integers; doublet integral -18. Unresolved charges reported, not counted.
+Caveats fixed in advance: finite-lattice diagnostic of the U(1) case only (Luscher 1998/99 proved U(1) exactly;
+supplied); axis-restricted background class; not the non-abelian measure; not the gauge-field integral.
+
+ADDENDUM (2026-10-24 20:20, written after the first isotropic runs and BEFORE any transverse-extended run;
+the PASS criteria above are NOT changed):
+- Finding that forced it: on isotropic L^4 lattices the single-mode backgrounds carry large x2/x4 Polyakov
+  phases (L * Y * th2 ~ eps L^2 Y/(2 pi)); a pure holonomy shift th2 -> th2 + pi/L (no field-strength change)
+  moves R16 on 8^4 from -1.12e-3 to +3.03e-3. The isotropic 16 data are finite-volume dominated.
+- Set-up change: the x2 and x4 extents (the directions the backgrounds do not depend on) are taken T = 24 for
+  every L (lattice L x 24 x L x 24); the tested extent L is the one along x1, x3. On L = 8: T = 16, 24, 32 give
+  R16(1,1) = 6.292e-4, 6.261e-4, 6.248e-4 and the holonomy shift changes it by 1.6e-6 at T = 24.
+- All criteria P1-P6 are evaluated on the T = 24 data; the isotropic data (T = L) are reported as the
+  finite-volume control. M3 (flux, 6^4 isotropic) is unchanged.

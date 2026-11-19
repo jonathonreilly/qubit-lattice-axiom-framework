@@ -1,0 +1,43 @@
+zoom3-fixed-families (menu M13 / brief P1): pass criteria written BEFORE any run (2026-10-23).
+Question: at zoom 3, with CL-1's free tick (eps = 0.3, mu = 0.05, copy mass M N = 0.2 on even cubes) and every
+turn-invariant block-internal term at g = 0.5 (and g x 0.7, 1.3), are the three turn-fixed block positions
+{x - d, x, x + d} three LIGHT families, split 1+1+1 by the copy mass, sharing one turn charge, and can they MIX?
+
+Geometry corrections to the brief (stated before running, not a change of the test):
+- 9^3 cannot carry the two tilings (period 2 needs an even side). The smallest torus carrying both tilings and the
+  3^3 blocks is 6^3 (8 blocks); 18^3 = 6^3 supercell sampled at the 3^3 grid of Bloch momenta K. Used: 6^3 at K = 0
+  and twisted K (the 18^3 content), dense 216 x 216.
+- 6^3 is a multiple of 3, so it is not a falsifier geometry. Controls used instead: zoom 1 (no blocks), zoom-2 block
+  (the 2^3 cube) and a zoom-5 block on 10^3; predicted register count F3 = zoom factor (1 per site per unit of zoom
+  along d), so "3" tracks the chosen zoom.
+- Model: one mode per site, single-particle sector, tick U = U_odd U_even exactly as in family-flux's runner.
+  Block term H_B = sum over blocks of h, h a Hermitian 27 x 27 matrix commuting with the turn about the block's
+  own body diagonal d(x) (d_i = +1 if x_i even else -1, so x + d is the even-cube far corner). Two families of h:
+  (i) h = P24 (projector on the 24 cycled positions, fixed positions untouched: the M13 reading);
+  (ii) generic turn-invariant h (seeded random in the commutant, all 11 invariant combinations allowed): "every
+  turn-invariant term". U_g = exp(-i g H_B) U.
+
+PASS (all must hold for an M13 PASS; each is reported as a RESULT either way, the runner line passes when the
+computation returns what it reports):
+ (a) at K = 0 exactly 24 levels per 6^3 supercell (3 per block) with |w| below the light scale, all others above
+     5x that scale, and the light levels' weight on the fixed positions > 0.5; stable over the g scan.
+ (b) the turn about d is an exact symmetry of U_g (up to a site-diagonal gauge) and all three light family states per
+     block carry the same turn eigenvalue.
+ (c) 1+1+1: the three family levels per block are pairwise distinct, smallest relative split > 1e-3, stable over g.
+ (d) F5 mixing (family-flux criterion): the position families must not carry distinct characters of a residual
+     translation. Expected: the block term has period 3, the tick period 2, residual 6Z^3; all three positions of a
+     block carry the SAME 6Z^3 character, so family-flux's gcd(2,3) obstruction does not apply; the term carrying
+     T(2e_i) character is the block term itself (its fine Fourier components sit at 2 pi m/3). Test: the effective
+     3 x 3 family matrix has off-diagonal entries > 1e-3 of the diagonal splitting, and two species with different
+     supplied (M N, g) give |V| not a permutation, with J != 0 only if a complex phase survives.
+FAIL: a count != 3 per block (or no light band at all); a persistent 1+2 degeneracy; distinct turn charges; or
+"count 3 and split 1+1+1 but zero mixing" (F5 FAIL, reported as such).
+
+Prediction before running: (a) FAILS. In the one-mode tick the fixed positions are not protected: the tick hops at
+eps = 0.3 connect each fixed position to its cycled neighbours, and a generic turn-invariant h includes on-site and
+fixed-to-cycle terms (the 11-dim invariant commutant), so nothing pins three light states per block; the light band
+stays the fine-Gamma mode (about mu, M), one per supercell. Family-register's protection lives on the cube's 8-mode
+content with turn charges w, w^2 on its Dirac masses, which a one-mode site register does not carry. (c) and (d) are
+then measured on the projected fixed-position block anyway, and reported as conditional on the supplied register.
+Runner targets: stdout < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded 20261023, < 60 s, < 200 MB,
+ends TOTAL: PASS=N FAIL=0.

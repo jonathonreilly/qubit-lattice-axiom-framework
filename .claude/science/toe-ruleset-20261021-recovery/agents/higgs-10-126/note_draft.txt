@@ -1,0 +1,176 @@
+---
+claim_id: the_spin10_gapping_term_leaves_the_126_channel_free_so_ten_plus_126_yukawas_are_unfixed_and_give_no_non_fitted_mass_relation_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "On one site with two 16s of Spin(10) (32 modes; flavour SU(2) = the two spin components): (A) exact: Lambda^2(16 x 2) = (10,S=0) + (126,S=0) + (120,S=1), multiplicity-free, so there are exactly three independent number-conserving Spin(10) x SU(2) invariant quartics, the three pair counts Q_10, Q_126, Q_120, and each is a Casimir function of (C2_10, S(S+1), N) (496 x 496 operator identities); 32 Q_10 - 20 J reproduces the spin10-two-flavour identity. The forced term -(g/2) sum_a {B_a, B_a^+} has zero 126 coefficient in the pair basis and at fixed N equals +16 g (Q_126 + Q_120) + f(N): the 126 enters only repulsively and with the same weight as the 120. The 126-120 splitting is one free invariant that no rule sets. Delta N = +-2 terms are forbidden by the Z4 centre; Delta N = 4 has one invariant (the 10-channel Omega): (psi Gamma psi)^2 = 0 for commuting psi, the 126 square vanishes, the 120 square is proportional to the 10 one. (B) exact: the 126 and 120 pair composites both sit at 26 g (10 at 10 g); ground-state pair counts 9 : 27 : 84. (C) exact: the 126 has one colour-singlet neutral doublet direction per hypercharge, with lepton:quark Clebsch -3 relative to the 10. (D) Babu-Mohapatra form (supplied): family-local 10 + 126 still gives |V_CKM| = permutation (exact); generic complex 10 + 126 has 18 real parameters and Jacobian rank 13 on the 13 charged observables, so there is no charged-sector relation (finite); with real couplings, rank 11 gives two relations, but the rules force neither reality nor any value of Y10, Y126 or the VEV ratios (<B> = 0). Estimates: GUT-scale m_e/m_d, m_mu/m_s, m_tau/m_b = 0.41, 4.57, 1.69, so no family is single-channel. Not covered: family structure (families wall), the source of any doublet VEV, neutrino-sector counting beyond citation, the interacting slab."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - the_spin10_pair_square_on_two_sixteens_is_a_spin12_casimir_with_a_unique_singlet_ground_state_and_gap_four_g_but_a_frozen_far_region_still_moves_the_mirror_bounded_theorem_note_2026-10-23
+  - the_spin10_gapping_channel_carries_the_higgs_doublets_but_as_the_electroweak_higgs_it_forces_zero_quark_mixing_and_an_unsplit_heavy_ten_bounded_theorem_note_2026-10-23
+runner: scripts/the_spin10_gapping_term_leaves_the_126_channel_free_so_ten_plus_126_yukawas_are_unfixed_and_give_no_non_fitted_mass_relation_2026_10_23.py
+---
+
+# The Spin(10) gapping term leaves the 126 channel free, so 10 + 126 Yukawas are unfixed and give no non-fitted mass relation
+
+Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [E] estimate against measurement.
+Runner: runner.py, TOTAL: PASS=11 FAIL=0, 3 s, 290 MB peak, 4.1 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
+It was run under a unique filename (scratch/higgs_10_126_test_run.py). Axioms unchanged. No rule adopted.
+
+## Question
+
+higgs-gapping-channel showed that if the Yukawa source is only the forced 10 channel, then |V_CKM| = 1, which is
+falsified. In the minimal SO(10) escape, 16 x 16 = 10 + 126 (+ 120) with both 10 and 126bar Yukawas. This note asks:
+- Is the 126 channel present in the rules, or forced by them, with a fixed ratio to the 10?
+- If it is, does that fixed ratio give a mass relation that was not fitted?
+- What can be tested without family structure?
+
+Repo first. I searched origin/main for prior 10 + 126 or Georgi-Jarlskog work and found none. This note builds on:
+- spin10-two-flavour: the so(12) identity, F = 144 - 2S(S+1) - C2_10 - J^2, and the unique ground state;
+- higgs-gapping-channel: the oscillator 16, the SM reading of weights, and the single-10 exclusion;
+- spin10-breaking: the 16 x 16 Casimirs 9, 21, 25;
+- composite-sixteen: exchange K^2 = 64, 16, 0 on 10, 120, 126, so the 126 is also inert there, which is consistent with
+  the result here.
+
+## Pass criteria
+
+The criteria were written before any run, in criteria_pre_run.txt, and every outcome matched them. The only post-run
+changes were implementation changes, with no criterion changed:
+- the pair space was moved from 1024 to 496 dimensions to stay under the memory budget;
+- intermediate tensors are freed;
+- the invariance check uses 3 random generator combinations.
+
+## A. Invariant four-fermion terms on two 16s (exact)
+
+- A1 [T]. The matrices C Gamma^(1), C Gamma^(3) and C Gamma^(5) restricted to the 16 span the 10, the 120 and the 126.
+  - Their ranks are 10, 120 and 126.
+  - The (1) and (5) forms are symmetric and the (3) form is antisymmetric.
+  - So Sym^2 16 = 10 + 126 and Lambda^2 16 = 120.
+- A2 [T]. Pauli statistics ties flavour symmetry to the Spin(10) channel. The decomposition is
+  Lambda^2(32) = (10, S=0) + (126, S=0) + (120, S=1), with dimensions 10 + 126 + 360 = 496 and C2_10 = 9, 25, 21.
+  - Every summand appears once, so there are exactly THREE independent number-conserving invariant quartics.
+  - In terms of the pair-count operators Q_r = sum_{i<j} Pi_r(ij), these are g_10 Q_10 + g_126 Q_126 + g_120 Q_120.
+- A3 [T]. Each of the three is a Casimir function. These were checked as operator identities on the 496 pair states:
+  - Q_10 = -(C2_10 - 45N/4)/16 - (S^2 - 3N/4)/8 - N(N-1)/64;
+  - Q_126 = (C2_10 - 45N/4)/16 - 3(S^2 - 3N/4)/8 + 9N(N-1)/64;
+  - Q_120 = N(N-1)/2 - Q_10 - Q_126.
+  With Tr M_a M_b^+ = 16 delta_ab, the combination 32 Q_10 - 20 J equals 2[144 - 2S(S+1) - C2_10 - J^2]. That is the
+  spin10-two-flavour identity, rederived here.
+- A4 [T]. ANSWER TO (1): the forced term -(g/2) sum {B_a, B_a^+} = -16 g Q_10 + (one-body terms) has coefficients
+  (-16 g, 0, 0) on (Q_10, Q_126, Q_120).
+  - At fixed N, Q_10 = N(N-1)/2 - Q_126 - Q_120, so the forced term equals +16 g (Q_126 + Q_120) + f(N).
+  - So the 126 is "present" only in this Fierz-trivial sense. It is repulsive, and its weight is exactly equal to the
+    120's.
+  - At fixed N the physical couplings are the two differences. The forced term fixes g_10 - g_120 = g and
+    g_126 - g_120 = 0.
+  - Any attractive 126 channel needs the 126-120 splitting to be nonzero. That splitting is a free invariant which no
+    rule sets, and the forced term sets it to zero.
+  - On the "fewest change" ordering: the 10 is also the lowest-Casimir channel (9 < 21 < 25), and the 126 is the
+    highest. Nothing in the rules prefers it.
+- A5 [T]. Charge-changing terms.
+  - The Z4 centre acts as 16 -> i 16, so it forbids Delta N = +-2 (the same reason 16 x 16 has no singlet).
+  - Delta N = 4 has exactly one invariant, the 10-channel Omega. The reasons:
+    - (psi Gamma psi)^2 = 0 for commuting psi (the pure-spinor identity, error 4e-16), so Sym^4 16 has no singlet;
+    - the antisymmetrised 126 square vanishes identically;
+    - the 120 square is proportional to the 10 one (rank 1, invariance error 1e-15).
+  - So even the non-conserving next term carries no independent 126.
+- Next order (six-fermion and higher) is not computed. Every quartic is already a Casimir function, so higher terms that
+  are polynomials in the Casimirs add couplings without fixing a 126/10 ratio.
+
+## B. Levels (exact)
+
+- B1 [T]. B_r^+|GS> carries good S, C2_10 and J quantum numbers, so it is an exact eigenstate of H = -g F whenever it is
+  nonzero. The levels above the ground state are:
+  - the 10 at 10 g;
+  - the 126 and the 120 at 26 g each, degenerate (the A4 statement seen in the spectrum).
+- They are nonzero for two reasons:
+  - the ground-state pair counts are Q_10 : Q_126 : Q_120 = 9 : 27 : 84 (sum 120);
+  - sum [B_r, B_r^+] is proportional to J, which is 0 at the ground state (Schur on the irreducible 32).
+- So the 126 composite exists, but it is heavier than the 10 and not bound by any attractive channel. The forced term
+  gives it no Yukawa, Hubbard-Stratonovich boson or condensate.
+
+## C. The Clebsch -3 (exact)
+
+- C1 [T]. At the neutral-doublet weight, the 126 has weight multiplicity 3, of which exactly one direction is a colour
+  singlet, for each hypercharge.
+  - Relative to the 10, its (e,e^c):(d,d^c) and (nu,nu^c):(u,u^c) entries carry the factor -3, with the ratio of ratios
+    equal to -3.000 for both H_d and H_u, and equal over the three colours.
+  - This is the Georgi-Jarlskog / Babu-Mohapatra Clebsch, derived from the explicit oscillator 16 rather than quoted.
+
+## D. Mass sum rules and counting
+
+The mass sum rules use the supplied Babu-Mohapatra form: M_d = H + F, M_e = H - 3F, M_u = r(H + sF), M_nuD = r(H - 3sF).
+- D1 [T]. Suppose each family's mirror carries its own 10 and 126 channels, with any couplings and VEVs. Then M_u and M_d
+  are both diagonal and |V_CKM| is a permutation. ADDING THE 126 DOES NOT REPAIR MIXING UNLESS THE CHANNELS ARE
+  FAMILY-OFF-DIAGONAL, and family structure is the families wall.
+- D2 [F]. Generic complex case.
+  - Parameters: H real diagonal (3), F complex symmetric (12), r (1) and s (2), so 18 real.
+  - The Jacobian of the 13 charged observables (9 masses, 3 CKM moduli, J_CP) has rank 13 at 5 seeded points.
+  - So there is no local relation among charged-fermion observables: the fit has no charged-sector prediction.
+  - The neutrino sector (126 VEVs giving type I/II seesaw) adds 2 to 4 parameters against 5 measured leptonic numbers.
+    The literature's predictions there (for example theta_13 and delta from b-tau convergence, Bajc-Senjanovic-Vissani)
+    are fits with supplied textures. They are cited, not computed.
+- D3 [F]. With real (CP-conserving) couplings there are 11 parameters and rank 11 < 13, so two relations exist
+  (J_CP = 0 is one of them). The rules force neither real couplings nor any value of Y10, Y126, r or s.
+  - The forced term has <B> = 0 exactly, so the rules supply no VEV of either channel.
+  - Every VEV ratio is a free supplied number.
+- D4 [E]. ANSWER TO (3), testable without families. The only family-blind content is the Clebsch. A family whose masses
+  come from a single channel must have m_e/m_d = 1 (pure 10) or 3 (pure 126).
+  - Supplied SM running values at 2e16 GeV (Xing-Zhang-Zhou 2008) give m_e/m_d = 0.41, m_mu/m_s = 4.57, m_tau/m_b = 1.69.
+    Each is more than 25% from both 1 and 3, so NO family is single-channel.
+  - The Georgi-Jarlskog texture (1/3, 3, 1) is a supplied family texture, not derived. It deviates by 24%, 52% and 69%
+    under SM running. Supersymmetric running brings it closer, per the literature; this is not computed here.
+  - With two channels per family (h_i, f_i), any pair (m_d, m_e) fits, so per-family ratios test nothing.
+
+## Verdict
+
+1. The 126 is not forced. The general invariant has a free 126 coefficient (the 126-120 splitting). The forced term sets
+   that splitting to zero, which leaves the 126 repulsive and degenerate with the 120 (26 g). There is no fixed Y126/Y10.
+2. The 10 + 126 sum rules make CKM != 0 possible only with family-off-diagonal channels, and the rules have no family
+   structure (D1). Even then, 18 parameters cover the 13 charged observables at full rank (D2). The rules fix none of
+   Y10, Y126 or the VEV ratios.
+3. No falsifiable non-fitted mass relation exists. The rule "Yukawas = 10 + 126 of the forced term" reduces to the
+   single-10 rule (falsified upstream) unless a free 126 coupling is added. With that coupling added it is UNTESTED: the
+   Clebsch -3 is forced, but every observable use of it needs a family texture.
+
+Rule wording (tested, NOT adopted): "Yukawas are the 10 and 126 channels of the forced far-wall term."
+Gate:
+1. No measured number is chosen: PASS.
+2. No structure is inserted beyond the 16 / Spin(10). The 126 coupling, if added, is a free choice and not forced:
+   conditional.
+3. Predictions it was not built for: the forced term gives only Y126 = 0, which reduces to the falsified single 10. With
+   Y126 free, the only forced number is the Clebsch -3, and its tests need family structure: UNTESTED.
+4. Axiom bent: none beyond those of the gapping term.
+Not adopted.
+
+Next-wall pointer (proposal only): a 126 Yukawa needs both a rule that splits the 126 from the 120 attractively and a
+family-off-diagonal channel. Both route back to the families wall. The cleanest family-blind test left is the forced
+Clebsch -3 in any family-local rule. It already fails for every family (D4), so a family-local rule of either channel
+type is excluded by the GUT-scale ratios as well as by CKM.
+
+## Smuggling review
+
+Supplied:
+- the 16 with one orbital per weight;
+- the two-valued flavour (spin);
+- the SM embedding, used only to read weights;
+- the Babu-Mohapatra matrix form;
+- GUT-scale running masses (SM);
+- the Georgi-Jarlskog texture, used for comparison only.
+
+Forced:
+- three invariants, all Casimir functions;
+- zero 126 coefficient, and the 126 = 120 repulsive equality at fixed N;
+- one charge-4 invariant;
+- levels of 26 g (126 and 120) and 10 g (10);
+- the Clebsch -3;
+- the family-local permutation CKM;
+- the rank counts.
+
+Not shown:
+- a family-off-diagonal channel;
+- a VEV source;
+- the neutrino-sector fit;
+- the interacting slab.
+
+Literature (cited, not computed): Babu-Mohapatra 1993; Georgi-Jarlskog 1979; Bajc-Senjanovic-Vissani 2003;
+Xing-Zhang-Zhou 2008; You-He-Xu-Vishwanath 2018.

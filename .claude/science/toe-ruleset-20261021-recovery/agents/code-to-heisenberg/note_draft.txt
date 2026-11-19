@@ -1,0 +1,78 @@
+Cube-cell [[8,3,3]] code tiling versus the Delta(27) class rule
+Bounded theorem note, 2026-10-24 (draft; probe agent, TOE-ruleset campaign; follow-up to cube-three-families (ii)+(iii))
+Runner: code_to_heisenberg_cube_cell_code_tiling_versus_delta27_2026_10_24 (14 PASS, 0 FAIL, about 4 s, < 200 MB).
+Criteria fixed before the run: criteria_pre_run.txt. Two pre-run expectations failed (C1 axis uniqueness; G^3 = 1); both are reported as results.
+
+Question
+Does tiling the unique [[8,3,3]] cube-cell code FORCE the x+y+z mod 3 structure, i.e. does the code's turn axis pick a body
+diagonal, and do code-preserving cell-to-cell maps realise the Delta(27) pair (shift, clock omega^(x+y+z)) on the logical
+qubits, so that families = logical qubits = Delta(27) 3-irrep without choosing the hop set?
+
+Adopted (supplied, not derived): natural frame (a cube rotation acts on Pauli labels by the axis permutation it applies to
+x,y,z); Gottesman's generators; uniqueness of the code class and |Aut| = 168 (cube-three-families iii3); uniform labelling in
+every cell (translation invariance).
+
+Results
+C1 Axis selection [T].
+- Natural-frame automorphisms (qubit perm x axis-permutation frame): 56 plain + 56 (X->Y->Z) + 56 (Z->Y->X) = 168, i.e. the
+  whole Aut is realised with uniform frames.
+- Over all 8! labellings, the subgroup of the cube rotation group O that is a code symmetry has order
+  1 (31584), 2 (4032), 3 (3360), 4 = V4 (1176), 12 = A4 (168). Never a 4-fold turn.
+- PRE-RUN EXPECTATION FAILED: the code does not always pick one diagonal. The 168 maximally symmetric labellings keep the full
+  tetrahedral rotation group: all four 3-fold axes are symmetries.
+- Each diagonal is selected by exactly 1008 labellings. The code has no preferred diagonal; the axis is a labelling choice.
+- For an A4 labelling, none of the 13 index-3 sublattices is invariant under the code's symmetry: the most symmetric tiling
+  is incompatible with any mod-3 class rule.
+- Translation invariance makes the axis (or axis set) the same in every cell, by construction only.
+C2 Code-preserving translations [T].
+- Cell stabiliser weights are {0, 6, 8}. A weight-6 stabiliser shifted by any step with an odd component splits k + (6-k),
+  0 < k < 6, across two cells, so no such translation preserves the tiled code under any local Clifford. Direct 16-qubit check
+  (two cells, period 4): 2e_1 preserves, e_1 and 3e_1 fail for all six uniform frames.
+- So the code-preserving translations are exactly the cell lattice 2Z^3. Their class change 2(n1+n2+n3) mod 3 takes all values:
+  the nearest-cell hops 2e_i are code-preserving and change x+y+z mod 3. The code permits, and does not select against,
+  class-changing hops.
+C3 Heisenberg pair [T, one F].
+- The family-cycling turn C commutes with Omega = omega^(x+y+z) (it preserves x+y+z). Cell translation T gives
+  T Omega T^-1 = omega^(-2) Omega but is family-blind.
+- No element of O_h fixing a cell has g Omega g^-1 = omega^k Omega with omega^k != 1 (the phase at the fixed cell is 1):
+  a point-group family shift can never be the Delta(27) shift.
+- The code-preserving screw G = T C does cycle the slots AND gives G Omega G^-1 = omega^(-2) Omega. G^3 is the class-neutral
+  cell translation (1,1,1) (pre-run guess G^3 = 1 was wrong). This is a genuine Heisenberg pair, but Omega is a symmetry only
+  if the dynamics is class-preserving: a family-blind code-preserving hop sum t_i (T_i + h.c.) has ||[H, Omega]|| = 26 [F].
+  The clock must be ADDED; the screw then follows.
+- No on-site clock: of the 3^8 on-site phase patterns diag(1, omega^f_j) (uniform axis Z, X or Y), only f = 0 preserves the code.
+  (Supplied, consistent: transversal logicals of qubit stabiliser codes lie in the Clifford hierarchy, and omega is not in it.
+  Mixed-axis patterns not enumerated.)
+- In all 108 bases where the turn is a literal 3-cycle of the logical qubits, the three families have identical class content.
+  No family sits in its own x+y+z class, so "slot = Omega-eigenspace" is impossible. The Delta(27) families of
+  cube-three-families (ii) (momentum copies k = 0, q, 2q, i.e. sublattice classes) and the code's logical slots are different
+  3-sets. They are isomorphic as C3-sets, not identified.
+C4 Remaining choices [T].
+- The index-3 sublattice invariant under the (111) turn is unique (x+y+z = 0 mod 3, 1 of 13). But p = 2 and p = 5 are also
+  unique (x+y+z = 0 mod p), and p = 7 has three. The turn fixes WHICH sublattice once the index is given, not the index 3.
+
+Verdict
+PARTIALLY by the pre-set rule (C2 and C3 NO; C4 unique). Effectively NO for the forcing claim.
+What the code gives:
+- a C3 (never C4);
+- with a C3-only labelling AND an assumed index-3 class rule, the lattice x+y+z mod 3;
+- a code-preserving screw that becomes the Delta(27) shift once the clock is imposed.
+What the code does not give:
+- the axis (a labelling choice, and A4 labellings keep all four);
+- class-preserving hops (2e_i are code-preserving);
+- a clock on the logical slots;
+- families = slots.
+
+Remaining choices (must be supplied to recover (ii)):
+1. a labelling with exactly C3 (not A4);
+2. the class-preserving hop rule (index 3);
+3. the identification of the family label with the class (Omega-eigenspace) instead of the logical slot.
+
+Smuggling review: no measured number, no SM structure. Supplied: the natural frame, Gottesman generators, uniform labelling.
+Theorems: C1, C2, C3 (except C3d), C4. Finite diagnostic: C3d (random hop amplitudes, seeded). No physical identification is
+claimed; no CL or axiom text is proposed.
+
+Follow-up worth one probe: under an A4 labelling, the code's symmetry is the tetrahedral group. Compute its action on the 6-dim
+logical symplectic space: do the three logical qubits carry A4's 3-dim irrep (V4 acting as slot-wise logical Paulis)?
+That would be an A4 flavour structure (a well-studied lepton family group) that is FORCED by maximal labelling symmetry,
+rather than the chosen Delta(27).

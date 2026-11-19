@@ -1,0 +1,30 @@
+== A. the cell of 2^3 one-mode sites
+[PASS] A1 plain cell = A1+A2+T1+T2; one invariant halving (tetrahedra) and one invariant pairing (body diagonals) give the only product structure C^8 = C^2 x C^4, R = X^[R odd] x P_diag(R), C^2 = A1+A2, C^4 = A1+T2  halvings 1, pairings 1
+[PASS] A2 invariant cell operators = span{1,X} x span{1,J4}; the traceless invariant of each factor is unique: T3 = X/2, B-L = (1 - 4 J4)/3 (1/3 x3, -1; scale a convention)
+[PASS] A3 su(4)+su(2) is irreducible on the cell: one (4,2) = (3, 1/3, +-1/2) + (1, -1, +-1/2) in (colour, B-L, T3); rotations carry su(4) = A1+E+T1+3T2, su(2) = A1+2A2, so only B-L and T3 are rotation-blind
+[PASS] A4 E1/2 x (E1/2+E5/2) also has the corner character: the SU(2) x SU(4) split is fixed by corner geometry, not by rotations alone
+== B. exact internal symmetry of the rung-1 tick (cell index carried in parallel)
+[PASS] B1 internal commutant of the rung-1 tick (steps .04, .3, pi/2): 20 = U(1)_nu U(1)_e U(3)_u U(3)_d for distinct masses; 32 = U(4)^2 if nu=u, e=d; 40 = U(2) U(6) if nu=e, u=d; 64 if equal  [20, 32, 40, 64]
+[PASS] B2 su(4) commutes only if m_nu = m_u, m_e = m_d; su(2) only if m_nu = m_e, m_u = m_d; (4,2) is irreducible, so no mass pattern keeps exactly SU(4) x SU(2)  (su4,su2) distinct 0.54,0.27, nu=u,e=d 0.00,0.14, nu=e,u=d 0.27,0.00
+== C. spin: the twist and the rotation-blind symmetry
+[PASS] C1 8^3 fine sites: all 48 rotations factorise, G = G_c x P_int (the cell index turns with space); G' = G_c x 1 moves cells rigidly and is not a fine-lattice isometry  residual 0e+00; a C4 of G' breaks 512/1536 bonds
+[PASS] C2 twist = colour x sign: P_int(R) = O(R)_colour exp(-i pi [R odd](T3 + 3(B-L)/4 + N/4)), O(R) in SO(3), the same on up and down, conjugate to R  residual 6e-15
+[PASS] C3 distinct masses, steps .04 and .3: the tick commutes with G and with G' (48 rotations), G'(C4)^4 = -1: the cell index can be made rotation-blind  1e-15, 1e-15
+[PASS] C4 the tick's long-wavelength algebra (steps .04, .3, pi/2): alpha_a = Gamma_(a+3) e^(-i eps W), beta = W are Dirac; each rotation = e^(-i theta n.S) x a copy matrix in the E irrep. Every cell state is a spin-1/2 Dirac fermion  max residual 2e-09
+[PASS] C5 converse: a hop turning the cell index with its direction (e^(i lam d.J) on T1) commutes with G, not G'; the 24 down-type K=0 states split into 8 with j = 1/2 and 16 with j = 3/2: colour degeneracy and spin 1/2 lost  G 2e-15, G' 2.4e-02; 6 levels, j(j+1) off by < 0.005
+== D. even/odd cells and copies against chirality
+[PASS] D1 zero mass: U - sUs = i sin(2 eps)(W_odd(K) - W) exactly (s = sublattice sign): separate even/odd cell unitaries commute with the tick only at step pi/2 and zero mass  ||[U,s]|| 0.04/0: 0.067, 0.30/0: 0.472, 1.57/0: 0.000, 1.57/0.2: 0.361
+[PASS] D2 the tick's chirality g5(eps) = cos(eps) g5_0 + sin(eps) g5_pi/2, {s,g5_0} = 0 = [s,g5_pi/2]; ||{s,g5}|| = 2 sin eps, ||[s,g5]|| = 2 cos eps, tr(P_even g5) = 0: even cells never carry net chirality
+[PASS] D3 step pi/2: s = g5 sigma3, sigma3 in the copy algebra; even cells = (L,+)+(R,-), odd = (R,+)+(L,-), 2 states each; odd rotations flip s and sigma3: copy + is a family (4,2,1)+(4b,1,2) of SU(4) x SU(2)_even x SU(2)_odd, copy - its mirror
+[PASS] D4 a block-local inversion (corner complement with phases, unique) maps U(K) to U(-K) at every step and mass, flips g5 and s, keeps beta: the tick is parity-even, so no rule breaks parity
+== E. anomalies and the CL-5 link rule
+[PASS] E1 the Pati-Salam family is anomaly-free: SU(4)^3 = 0, 4 doublets per SU(2), all 10 anomalies of Y = T3R + (B-L)/2 and B-L vanish; the lattice content is vector-like, so its anomalies vanish identically and select nothing  doublets 4, 4
+[PASS] E2 CL-5 with distinct masses allows at most the 20-dim group of B1 < 21 = dim su(4)+2 su(2): no Pati-Salam links; uud colour singlets: 0 under separate up/down SU(3), 1 under a shared one (the proton), allowed but not forced  singlets 0, 1
+== F. generations: what rotations allow inside 2^n cells
+[PASS] F1 2^n cells: (A1,A2,E,T1,T2) multiplicities ((8^n+8 2^n)/24 x2, (2 8^n-8 2^n)/24, 8^(n-1) x2), direct for n = 1..3; triplets come 8^(n-1) times, never a multiple of 3: no rung has three rotation-blind families  [(1, 1, 0, 1, 1), (4, 4, 4, 8, 8), (24, 24, 40, 64, 64)]
+[PASS] F2 a random covariant one-body term on the 4^3 cell has 16 threefold, 4 twofold, 8 single levels: every triplet stays degenerate, so a rotation triplet can be colour, not a family
+== measured (comparisons only): quark spin 1/2 (Callan-Gross); exact colour; proton = uud; m_mu/m_e = 206.77; N_nu = 2.984 +- 0.008; W_R > ~5 TeV vs W_L 80.4 GeV
+supplied: the rung-1 rule (cell modes carried in parallel), step and four masses, labels (lepton = A1 of C^4, T3 sign, B-L scale), the C5 hop (counterexample only); cited: none
+elapsed_seconds 2.4
+
+TOTAL: PASS=19 FAIL=0

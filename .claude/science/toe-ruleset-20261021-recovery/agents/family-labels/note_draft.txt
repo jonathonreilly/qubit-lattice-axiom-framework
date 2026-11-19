@@ -1,0 +1,130 @@
+---
+claim_id: the_family_class_tick_gives_no_family_label_from_the_copy_mass_slab_depth_zoom_rung_or_record_cadence_and_its_copy_mass_keeps_the_family_fixing_antiunitary_bounded_theorem_note_2026-10-24
+claim_type: bounded_theorem
+claim_scope: "Supplied model: FREEZE (W_F = (-2,1,1)) as the family-class tick, rebuilt as in t-breaking-tick-lowenergy; CL-1's even-cube copy mass exp(i (M/4)(1 - s) R_e) applied before and after the tick (M = 0.05, 0.2); the coupled-layer slab of floquet-pi-slab (F, F^+ alternating, label gates, g = 0.5, Ls = 7); N_f = 3 stacked copies or zoom-3 labels (2pi/3) j (1,1,1); seeded 3x3 mass matrices. (a) Exact: the copy mass is (cell op) x 1_F, commuting with U(3); finite: with it on, the kept time-reversing antiunitaries are exactly T x R for the 12 non-tetrahedral R, as without it; T x C2'(1,-1,0) intertwines fresh momenta and keeps tau3; the 3 axis-reversing T x C2' fix every zoom-3 label, the other 9 move labels off the family set, and on copies all act with X = 1, so the generalized-CP lemma forces J = 0. (b) Exact: the slab is family-blind; finite: its near-wall light Weyl at the node is exactly single-layer, and its layer-n weight grows as |K|^(4n) off the node; exact: a one-layer channel gives a rank-1 mass matrix. (c) Exact: nested block readings overlap by 2^(-3|a-b|/2); real overlaps give J = 0. (d) Exact: a family-dependent dephasing on m 1 gives no oscillation frequency. Not covered: interactions, gauge and Higgs fields, loops, spontaneous breaking, the full 3D slab with the copy mass, non-free record dynamics."
+upstream_dependencies:
+  - the_family_class_tick_keeps_a_time_reversing_antiunitary_that_fixes_every_family_so_it_supplies_no_quark_cp_phase_and_keeps_theta_bar_at_zero_or_pi_bounded_theorem_note_2026-10-24
+  - a_family_class_tick_keeps_a_96_element_magnetic_group_that_forbids_every_low_energy_rotation_or_lorentz_violating_dispersion_term_below_dimension_six_and_leaves_its_time_reversal_breaking_in_one_chirality_flip_term_bounded_theorem_note_2026-10-24
+  - a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_bounded_theorem_note_2026-10-23
+  - zoom-three turn-fixed positions (zoom3-fixed-families, campaign files)
+  - flavour-rule (campaign files; nested overlap theorem, failed fitted ladder)
+runner: see stems.txt
+---
+
+# The family-class tick gives no family label from the copy mass, slab depth, zoom rung or record cadence, and its copy mass keeps the family-fixing antiunitary
+
+Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic, [S] estimate.
+Runner: runner.py, TOTAL: PASS=13 FAIL=0, about 4 s, 74 MB, 4.4 k characters, seeded, AUDIT_TIMEOUT_SEC = 120.
+It was tested under a unique filename (scratch/family_labels_test_run.py). Axioms and CL text are unchanged, and no rule is adopted.
+Criteria: criteria_pre_run.txt was written before any code ran. Every prediction held. The one open prediction (whether
+the copy mass's survivor fixes the zoom-3 labels) came out YES: it does fix them.
+
+## Question
+On the adopted family-class tick the three families are N_f = 3 identical copies, so there is a U(3) family symmetry,
+and the kept T x C2' forces J = 0 (cp-source-new-tick). What in the ADOPTED rules can label the families and give
+(i) a mass hierarchy and (ii) mixing with a T x C2'-breaking phase? For each candidate the note asks four things:
+- Is the label forced or chosen?
+- What form does the hierarchy take?
+- Is J allowed?
+- What is the gate status?
+
+Repo first: the register (CL-1 text, the family-class clause, and the 'Masses and mixing' negatives), cp-source-new-tick,
+t-breaking-tick-lowenergy, floquet-pi-slab, slab-parity, zoom3-fixed-families, flavour-rule and generation-rungs were read.
+The note builds on them and does not contradict them. It closes cp-source-new-tick's 'not checked' item.
+
+## (a) Copy mass on N_f = 3 copies
+- [T] A1. The copy sign s = i W1 W2 W3 R_e (even-cube unit hops) satisfies s^2 = 1 and commutes with R_e and tau3.
+  - On the light Pi+ the q 1 pair has s = -1 and the q 2 pair has s = +1.
+  - The copy mass moves only the q 1 (mirror-copy) pair off quasi-energy 0, by -0.02 at M = 0.2.
+  - So on FREEZE it does its CL-1 job: it gives the s = -1 copy a mass.
+- [T] A2. The copy mass is read from one cube's hops. On stacked copies it is (cell op) x 1_F and commutes with every U(3)
+  family rotation, to 0 exactly.
+  - Every copy gets the same M. The copy mass DOES NOT distinguish the copies.
+  - Its "copy" is CL-1's two-fold copy factor inside one cube, not the family index.
+- [F] A3. With the copy mass on (M = 0.05 and 0.2), the kept time-reversing antiunitaries T x R are exactly the 12
+  non-tetrahedral R (6 C4 and 6 C2'). That is the same set as without it, and T alone stays broken.
+  - Control: a random cell gate breaks all 24, so the search can come out negative.
+- [F] A4. T x C2'(1,-1,0) survives the copy mass: a unitary V intertwines 20 fresh momenta to 6e-15 and keeps tau3.
+  - So the register's phrase "keeps T composed with a fourfold turn" is incomplete on this tick. The surviving set also
+    contains the three axis-reversing T x C2'.
+- [T] A5. On families:
+  - the 3 axis-reversing T x C2' fix every zoom-3 label (X diagonal);
+  - the 9 others (T x C4, and T x C2' of (110) type) move the labels off the family set;
+  - on stacked copies all 12 act with X = 1.
+- [T] A6. By the generalized-CP lemma, any mass sector that respects a family-fixing kept element has J = 0 (max |J|
+  9e-16 over 300).
+- Verdict (a): no label (FAIL on L1 and L2), J = 0 forced (FAIL on L4). This closes the 'not checked' item NEGATIVE.
+
+## (b) Depth along the slab's layer direction (split-fermion reading; Arkani-Hamed and Schmaltz, cited as supplied)
+- [T] B1. The adopted slab is family-blind (slab x 1_F commutes with U(3)), so every copy has the same layer profile.
+  - A depth that depends on the family needs a family-dependent termination or label-gate pattern. That is CHOSEN, and so
+    FITTED class.
+- [F] B2. The near-wall light Weyl at the node is EXACTLY single-layer: weight 1 on layer 0, with 4e-30 elsewhere. The labels
+  are exact at the node, as in floquet-pi-slab C3.
+  - Off the node, its weight on layer n grows as |K|^(4n) (fitted exponents 4.001 and 8.002). The amplitude is about
+    (0.23 K^2)^n.
+  - So a copy displaced by d layers has ZERO overlap with a wall-localised channel at K = 0. Depth gives no exponential
+    hierarchy, only couplings suppressed by powers of momentum (higher-dimension operators).
+- [T] B3. A channel on one layer gives Y_ij = phi_i(z_H) chi_j(z_H), which has rank 1 (one massive family). A channel over n
+  layers gives rank <= n, so three masses need a channel spread over >= 3 layers, and then there is no suppression.
+- [S] B4. Even if the off-node tail is read at K a = m_t a / hbar c as a mass factor, it gives ~5e-35 per layer at a = l_P.
+  The measured ratios are m_e/m_t = 3e-6 and m_u/m_t = 1.3e-5. Depth hierarchies on the adopted slab are all-or-nothing
+  (excluded).
+- Verdict (b):
+  - the label is chosen;
+  - the hierarchy is absent at the node, because AHS needs a nonzero wall width and this slab's width is zero;
+  - J is not addressed (real profiles plus the kept antiunitary give J = 0);
+  - FAIL on L1, L3 and L4.
+  - An AHS reading would need a finite-width wall (a slab whose labels are inexact at the node) and supplied depths.
+
+## (c) Zoom ladder (copies on different rungs)
+- [T] C1. Nested block-uniform readings overlap by exactly 2^(-3|a-b|/2) (error 6e-17), as flavour-rule found.
+  - The base 2^(-3/2) is fixed, but the exponents are rung numbers.
+  - CL-1 puts matter on the finest role block, so rung assignments are CHOSEN.
+  - Real overlaps with real O(1) coefficients give J = 0. A phase needs >= 2 ranges with range-non-linear supplied phases
+    (flavour-rule).
+  - The register adds that the next zoom-3 rung acts trivially on all families.
+- Verdict (c): FAIL on L1 and L4, and L3 holds only in form (a fixed base with chosen integers; flavour-rule's fitted ladder
+  failed the gate).
+
+## (d) Records (family-dependent record cadence)
+- [T] D1. Records read as a dephasing with family-dependent rates (0.1, 0.37 and 1.3, in a random family basis) act on the
+  family-blind generator m 1. Every Liouvillian eigenvalue is real (|Im| 9e-17), so there is no frequency, no splitting and
+  no phase.
+  - Records only remove coherence. Under CL-2 they never condition the odds, so in the adopted reading even this does not
+    occur.
+  - A per-family cadence would also be a family-dependent rule, so it is chosen.
+- Verdict (d): FAIL on L2, L3 and L4.
+
+## Answer
+No adopted rule labels the three families.
+- The tick, the copy mass, the slab, the links and edges (which reach matter only through Gauss's law and the metric), and
+  the records are all family-blind. Their combined symmetry contains U(3), so rule-generated masses are proportional to 1.
+- The copy mass does not lift the T x C2' obstruction. All 12 T x (non-tetrahedral) survive it, and the three
+  axis-reversing ones fix copies (X = 1) and zoom-3 labels (X diagonal). So J = 0 for any mass sector that respects the
+  adopted rules.
+- Depth on the adopted slab cannot give AHS-type hierarchies, because the node Weyl has zero width.
+- Rungs give a fixed base 2^(-3/2) but chosen exponents.
+- Requirement for a family law, sharpened: it must be a NON-family-blind structure that
+  - (1) breaks U(3) to nothing;
+  - (2) breaks every family-fixing kept antiunitary (the three axis-reversing T x C2' and every T x R acting with X = 1 on
+    copies);
+  - (3) produces at least three distinct suppression exponents from the rules rather than from chosen integers.
+  - A finite-width slab (labels inexact at the node) with a rule-fixed family displacement is the one structure here whose
+    hierarchy would be exponential. It is untested, and its displacement rule does not exist yet.
+
+## Smuggling review and gate
+- Supplied:
+  - FREEZE as the representative of the family class;
+  - the slab construction, g and Ls;
+  - M;
+  - the zoom-3 labels;
+  - the seeded masses;
+  - m_t and l_P for the estimate;
+  - the split-fermion reading (literature).
+- Forced: the U(3) commutation, the kept set of 12, the family action, the J = 0 lemma, the single-layer node profile and
+  its |K|^(4n) tail, the rank lemma, the 2^(-3r/2) overlap, and the reality of the dephasing spectrum.
+- Gate: no rule is proposed, so the gate does not apply. Every candidate label would fail gate item (1) (a chosen per-family
+  number), except the copy mass, which gives no label at all.
+- Process note: the final out.txt run was launched at a 1-minute load of 8.7, above the brief's wait threshold, and took
+  ~4 s. All earlier runs were at load < 5.

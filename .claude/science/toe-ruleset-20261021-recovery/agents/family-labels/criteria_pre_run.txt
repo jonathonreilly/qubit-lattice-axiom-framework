@@ -1,0 +1,36 @@
+family-labels: pre-run criteria (written 2026-10-24 before any code ran)
+
+QUESTION. On the adopted family-class tick (U(3) family symmetry, kept T x C2'), what in the ADOPTED rules can
+label the three families and give (i) a mass hierarchy, (ii) mixing with a phase that breaks T x C2'?
+
+Per candidate the verdict records: label FORCED or CHOSEN; hierarchy form; J allowed?; gate status.
+A candidate PASSES only if all of: L1 its label is fixed by an adopted rule (no per-family number or placement
+chosen); L2 it splits all three masses (no residual degeneracy); L3 it gives a hierarchy whose form is fixed by
+the rules (only O(1) coefficients supplied); L4 the kept antiunitaries of the full rule set do NOT map every
+family to itself (else the generalized-CP lemma forces J = 0), or an adopted rule breaks them.
+Failures are results; they are reported as FAIL of the candidate, recorded as PASS lines of the runner when
+the computation confirms the predicted failure.
+
+(a) copy mass (CL-1's even-cube copy factor exp(i(MN/4)(1-s)R)) on N_f = 3 copies, built on FREEZE:
+  A1 [T] copy mass acts as (cell operator) x 1_F: commutes with every U(3) family rotation (residual < 1e-12).
+  A2 [F] kept time-reversing antiunitaries of FREEZE + copy mass over the 24 rotations, M in {0.05, 0.2}: list.
+  A3 [F] for each kept element: zoom-3 family image; copies X = 1.
+  Predicted: label NOT given (FAIL L1, L2); some time-reversing antiunitary (T x C4z or T x C2') survives; on
+  copies X = 1 so J = 0 forced. Open prediction (could go either way): whether the survivor fixes zoom-3 labels.
+(b) depths along the slab's layer direction (split-fermion reading, Arkani-Hamed-Schmaltz, cited as supplied):
+  B1 [T] family-blind slab: every copy has the identical layer profile.
+  B2 [F] on the rebuilt FREEZE/F^+ slab (Ls 7, g 0.5) the near-wall light state at K = 0 is single-layer
+       (weight on layer 0 > 1 - 1e-10); at small K its layer-n weight scales as a power of |K| growing with n.
+  B3 [T] a channel on one layer gives a rank-1 family mass matrix; on n layers rank <= n.
+  B4 [T] real layer profiles + family-fixing antiunitary: J = 0.
+  Predicted: depth CHOSEN (FAIL L1); hierarchy at the node is all-or-nothing, a power of momentum off it (FAIL L3).
+(c) zoom ladder (copies on different rungs):
+  C1 [T] nested block-uniform readings overlap 2^(-3r/2) (error < 1e-12); real positive overlaps give J = 0.
+  Predicted: CL-1 puts matter on the finest role block, so rung labels are CHOSEN (FAIL L1); hierarchy base
+  2^(-3/2) fixed, exponents chosen; J = 0 from overlaps alone (FAIL L4).
+(d) records (record cadence):
+  D1 [T] a family-dependent record (dephasing) cadence leaves the Hermitian family generator unchanged: the
+       Liouvillian's oscillation frequencies equal those of H (zero splitting when H = m 1, < 1e-12).
+  Predicted: no mass splitting, no phase (FAIL L2, L3, L4); CL-2 records never condition the odds anyway.
+Overall prediction: NO adopted rule labels the families; every candidate FAILS L1. Runner: all PASS lines record
+the computations as predicted; TOTAL FAIL=0 means the computations ran as specified, not that a label exists.

@@ -1,0 +1,31 @@
+== A. what the fixed-step tick reads from the edges; the de Sitter cycle
+[PASS] A1 THEOREM (CL-1 text): with eps = eps0 fixed and N = l sin(eps0)/sqrt3, a massless species without copy mass has the same half-ticks at every edge length, so expansion creates nothing in it at any H N (lattice conformal invariance); the only edge dependence is the mass angle m N and the copy angle M N, both proportional to l  |dU| 0e+00; flips per mode per cycle 5e-31
+[PASS] A2 THEOREM: in de Sitter with N proportional to l, d ln l/d tick = h l/l_c (h = H N at birth), so l/l_c = 1/(1 - h j): a cycle l_c -> 2 l_c lasts 1/(2h) ticks, the conformal time per tick is fixed, and without splits the whole future is 1/h ticks  h = 0.01: l/l_c at tick 50 = 2.000
+== B. Bogoliubov occupation vs h = H N (copy-mass ramp x = M N from x0 to 2 x0 per cycle)
+   eps0 0.3 x0/eps0 0.3: flips/mode 2.3e-07 1.8e-06 2.2e-05 1.5e-04 1.6e-03 2.8e-03 | slope 1.90 2.06 1.77 1.98 0.50
+   eps0 0.3 x0/eps0 0.6: flips/mode 1.6e-06 1.3e-05 1.4e-04 1.2e-03 9.0e-03 1.5e-02 | slope 1.92 1.99 1.92 1.69 0.46
+   eps0 0.3 x0/eps0 0.93: flips/mode 6.3e-06 5.9e-05 6.7e-04 4.6e-03 3.0e-02 4.3e-02 | slope 2.03 2.03 1.75 1.55 0.35
+   eps0 0.04 x0/eps0 0.3: flips/mode 1.1e-05 9.9e-05 1.0e-03 2.8e-03 3.2e-03 3.2e-03 | slope 1.97 1.96 0.89 0.11 0.01
+   eps0 0.04 x0/eps0 0.6: flips/mode 9.9e-05 6.8e-04 5.9e-03 1.5e-02 1.7e-02 1.7e-02 | slope 1.75 1.79 0.84 0.09 0.01
+   eps0 0.04 x0/eps0 0.93: flips/mode 3.7e-04 3.1e-03 2.2e-02 4.3e-02 4.7e-02 4.7e-02 | slope 1.95 1.61 0.62 0.07 0.01
+[PASS] B1 finite diagnostic (6^3 cube torus): the occupation per cycle grows as h^2 (slope 1.7-2.1) while h << the partner gap per tick, and saturates at the sudden limit (slope -> 0) once a cycle lasts a few ticks; no slope above 2 while the split constraint holds  h = 0.001..0.3
+[PASS] B2 THEOREM + diagnostic: the injected energy per split over rho_crit is kappa(h) = E sqrt3 sin(eps0)/(144 h^2), a function of h and x0/eps0 alone, flat for small h (Delta rho ~ H^2: exactly the marginal p = 2 of the steady-state map) and falling as 1/h^2 past saturation: amplitude never grows faster than (H N)^2  kappa(h -> 0) per species: 0.3: 3.3e-03, 0.6: 2.0e-02, 0.93: 6.3e-02
+[PASS] B3 finite diagnostic (12^3): kappa per species rises toward the split-constraint edge x0 -> eps0 and stays bounded (about 0.09); with N_s = 12 species N_s kappa reaches 15/16 only within about 10% of the edge  x0/eps0 0.6: 0.021, x0/eps0 0.9: 0.070, x0/eps0 0.99: 0.087; N_s kappa_max 1.05 vs 15/16, 7/8
+[PASS] B4 finite diagnostic: a mass ramp m N gives flips ~ C mu0^2 h^2 with C = O(10-100), so a measured fermion (mu0 = m N < 1e-17 at the cell) is created at < 1e-30 per mode per cycle  mu0 .01 .02 .04: 3.9e-08 1.7e-07 5.3e-07; C 44 48 37
+[PASS] B5 THEOREM (steady-state map of one-cell-start C2 with the kappa shape of B2): with kappa flat then falling, N_s kappa(0) > 15/16 drives H to a stable fixed point at saturation (h ~ 0.1 eps0) that never ends, and N_s kappa(0) < 15/16 decays to nothing: the ramp has no exit and gives the same split at every level (lambda = 1, n_s = 1)  H/H_sat: N_s kappa 1.05 -> 1.057; 0.5 -> 1e-75
+== C. the split constraint violated (copy angle x0 > eps0 at birth: partner band inverted during the cycle)
+[PASS] C1 finite diagnostic (current CL-1, eps fixed): violating the constraint makes the sign blocks singular exactly at K = pi(1,1,1), which only odd tori hold (the one-cube start, never the 2^n cascade after it); every other momentum carries the vacuum exactly, so the heat is one momentum's worth, not extensive: no built-in reheating  flips at K = pi on L = 1, 3, 5: 0.207, 0.207, 0.207; elsewhere 0
+[PASS] C2 finite diagnostic: near K = pi the smallest singular value falls linearly, so the inverted split's V* is discontinuous there and its kernel has a power-law tail (the finite-range heating of the sea-split note then applies)  sv at d = .1, .03, .01: 2.40e-01, 9.80e-02, 3.45e-02
+[PASS] C3 finite diagnostic: with the band inverted, avoided crossings near K = pi are passed adiabatically at small h and diabatically above the torus gap (Landau-Zener), giving a slope above 2 in a window set by the torus' nearest momentum to pi, i.e. by the level: a size effect of the first few splits, not a clock of later ones  flips 0.001, 0.003, 0.01: 7.7e-05 7.0e-04 2.8e-02 | slopes 2.00 3.06
+== D. the lag threshold (split at the middle of the next even half-tick after l >= 2 l_c)
+[PASS] D1 finite diagnostic: below h_c the splits keep the edge within [l_c, 4 l_c]; above it each split lands later, the edge (and every mass and copy angle) diverges in finitely many ticks and the split constraint is broken for good  h_c = 0.2224; H l_c at h_c = 0.385/sin(eps0)
+== E. symmetry of what the ramp creates
+[PASS] E1 THEOREM (one-body, translation- and tetrahedrally covariant ramp): particles equal holes at every momentum (no number, hence no B or L, is created), n(K) = n(-K), and the mean stress is isotropic (no rank-2 invariant of the 12 kept rotations): eta = 0 and the mean anisotropy is 0; tensor modes come only from shot noise  |n_p - n_h| 7e-14; |n(K) - n(-K)| 6e-15; anisotropy 1e-14
+== F. ESTIMATES vs measurement (l_c = 4 sqrt(8 pi) l_P; eps0 0.0075-0.0375; not theorems)
+   observable inflation: h <= 2.1e-06; the ramp injects a fixed N_s kappa <= 1.05 rho_c per split there (no H-growth)
+   self-sustained branch: H/M_P ~ 8.6e-03 at saturation, r ~ 2e+05 vs < 0.036; lambda = 1 vs 0.976-0.982; eta = 0 vs 6.1e-10
+   lag branch: H l_c > 10, super-Planckian; massless species never created (A1)
+[PASS] F1 arithmetic: every branch of the ramp misses a measured fact (r, lambda, eta, or no exit)
+supplied: tick, copy-mass placement, vacuum branch, split, de Sitter background, tori, 8 pi G = l_c^2, N_s, measured numbers.
+elapsed 3 s
+TOTAL: PASS=13 FAIL=0

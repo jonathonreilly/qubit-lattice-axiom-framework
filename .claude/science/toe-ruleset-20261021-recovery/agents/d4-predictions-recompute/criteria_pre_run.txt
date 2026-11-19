@@ -1,0 +1,29 @@
+d4-predictions-recompute: pre-registered criteria (written 2026-10-26 BEFORE any computation in this folder)
+
+Rules recomputed: D4 events, root slicing (#10094); matter = factor-2 D4 zoom of the nearest-neighbour (NN) start,
+FINITE rungs n (rule 3, #10098 2d), slab = Borici (#10099); links = NN triangle plaquettes (not zoomed, rule 7);
+graviton = d4-gravity hinge sum with metric-only reading (#10100-#10102). E* = hbar c / a, a = site spacing = 2L,
+L = sqrt(8 pi) l_P. Phase-velocity convention E = k (1 + beta (k a)^4), beta < 0 subluminal.
+
+Pre-registered expectations (H) and pass bars:
+C1 [T] on-shell p^2 = kappa J6 for every species; kappa_scalar = 1/540 and kappa_fermion = 1/90 exact (sympy);
+   kappa_photon = 1/1440 from the triangle kernel to rel 1e-3. beta(n) = -2 kappa J6(i t + n) in (ka)^4 reproduces
+   a direct root-slicing scalar solve to rel 1e-3.
+C2 [T+F] H: blocking keeps poles, so the rung-n light band is E_n(k) = 2^n E_0(k/2^n) and beta_n = beta_0 / 16^n.
+   Bar: identity to rel 1e-9 at sampled k for n = 1, 2, 3; fitted beta_n / beta_0 within 1 % of 16^-n (n = 1, 2).
+C3 [F] H: the exact fixed point has the continuum lowest band at all orders (residue formula, #10098 2a), so beta_inf = 0.
+   Bar: |E/k - 1| < 1e-7 on body and face rays, i.e. |beta_inf| bounded far below beta_3.
+C4 [F] H: the Borici residual mass adds no LIV. Bar: E^2 - k^2 of (D* + mu)^-1 constant over k and rays to 1e-6.
+C5 [E] thresholds per rung n = 0, 1, 2, 3, inf: n = 0 must reproduce gamma -> e+e- 1.9e20 eV (5 %) and the
+   nuclear wall 9.9e20 A eV (5 %). H: n = 1 gives b_e = b_gamma (both collinear processes closed); n >= 2 makes the
+   electron faster than the photon, so e -> e gamma opens (H: above 1e20 eV).
+C6 [E] graviton dim-6 splitting at 100 Hz = 2A (E/E*)^2; H: ~1e-80 class is right, 1e-62 is not reproducible
+   without a unit slip.
+C7 [E] cubic photon decay: exact two-body formula with the photon's own term must give 80 PeV (axis), 122 PeV (face),
+   closed on body diagonals, to 2 %.
+C8 [E] nucleon lifetime: reproduce proton-theta's 5.3e42 yr (worst case) and 1.1e46 yr (p -> nubar K+ central) to 5 %,
+   then recompute on the D4 unit map.
+
+Verdict rule per prediction: CHANGED if the rules-as-proposed value differs from the quoted one by > 10 % (or the
+qualitative channel changes); UNCHANGED if within 10 %; RETRACTED if the mechanism is absent under the rules.
+A failed bar is reported as FAIL, not rewritten.

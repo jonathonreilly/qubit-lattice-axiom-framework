@@ -1,0 +1,40 @@
+copy-flip-slab: pass criteria written BEFORE the runner (2026-10-23). Honest provenance: three short scratch explorations
+(scratch/ex1.py-ex3.py: copy-operator commutators on the cell, uniform and step layer-mass profiles, one random
+turn-commuting copy-mixing hop) were run before these criteria were fixed; the criteria and predictions below are fixed
+before runner.py was written or run, and the D-block (axis eigenvalue flow) was derived analytically, not seen in scratch.
+
+Question. Is there a slab on CL-1's 2x2x2 cell with the adopted layer hop (B/2 + i eps)/2 and copy mass (1 - s) R_e whose
+near wall holds the s = +1 copy (q = 2, hand +1) and whose far wall holds the s = -1 copy (q = 1) as the MIRROR (hand -1),
+with a gapped bulk and no fitted choice, so that the families-mod-3 obstruction binds and N_f = 0 mod 3 follows?
+
+Synthesis PASS requires ALL of:
+ (P1) near wall s = +1, q = 2, hand +1 AND far wall s = -1, q = 1, hand -1 (opposite hands: the far wall is the mirror);
+ (P2) no gapless state anywhere in the interior (bulk gapped throughout, no interior interface modes);
+ (P3) the construction is forced by a rule (not a chosen profile / chosen hop);
+ (P4) the bookkeeping then gives allowed N_f = {3, 6, 9} in 1..9.
+FAIL otherwise, naming the failing fact. A FAIL is a result; every runner line passes when it returns what it states.
+
+Candidates and predictions:
+ (a) layer-dependent mass m(l): m1 = 0.5 in (0, Mc) on the near side, m2 = 2.5 in (2, 2 + Mc) on the far side, Mc = 1
+     (sharp step and a smooth tanh profile). Prediction: uniform (0, Mc) holds s+ (q 2) on both walls, uniform (2, 2 + Mc)
+     holds s- (q 1) on both walls with near hand -1. Step: near s+ (+1, q 2); far s- (+1, q 1) -- SAME hand as the light, not
+     a mirror; the interior interface carries both mirrors s+ (-1, q 2) and s- (-1, q 1). Exact reason: at K = 0 the copy
+     sign s commutes with every cell-built layer term, each copy is its own Shamir chain with ratio r_+ = 1 - m,
+     r_- = 1 + Mc - m, and each copy's opposite-hand pair sits at the max / min of its cumulative log|r|, so the far
+     boundary can only carry copy s with hand -h_s. The profile is chosen (two masses), and m crosses the gapless points
+     m = Mc and m = 2. Predict FAIL at P1 (hands), P2 (interface), P3 (chosen).
+ (b1) layer hop carrying the copy sign, A -> s A. Prediction: at K = 0 this is the gauge (-1)^l on the s- copy, so the wall
+     content is unchanged (same copy on both walls).
+ (b2) a layer hop that FLIPS the copy (anticommutes with s). Prediction: no turn-covariant copy flip exists; the turn
+     spectra on s+ and s- are {1,1,w,w} and {1,1,w^2,w^2}, so a turn-commuting s-odd operator has rank <= 4 < 8 and the w
+     sector is s+ only.
+ (D) general theorem (any static turn-symmetric slab, any kernel / profile / hop): along the turn axis K = kappa (1,1,1) the
+     number of negative-energy states in each turn sector is constant away from crossings; a K = 0 Weyl pair of copy charge
+     q and hand h shifts it by h (w^(q+2) - w^(q+1)) (up to one global sign). With no other axis crossing the K = 0 total
+     must vanish; for N_f (q_l, +1) and N_f (q_m, -1) this holds iff q_m = q_l (Z[Z3] is torsion-free; the three flows sum
+     to 0). So a static copy-flip slab with only the wall Weyls is impossible for EVERY N_f; it needs extra axis crossings
+     (or a second quasi-energy gap, as in the Floquet FREEZE walk).
+ (E) bookkeeping: uniform slab all N_f; step slab (lights {2,1}, mirrors {2,1}, cross-copy Omega twist k = 0) all N_f;
+     the hypothetical copy-flip pair (2, 1) gives {3,6,9} but is not realised.
+ Predicted synthesis verdict: FAIL (P1, P2, P3; P4 not reached on any realised slab).
+Machine: < 200 MB, < 60 s, BLAS threads 1, nice 10; largest matrix 8 x 40 = 320.

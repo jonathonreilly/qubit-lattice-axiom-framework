@@ -1,0 +1,31 @@
+d4-lattice-triality-families: pre-registered criteria (written 2026-10-26 BEFORE any computation)
+
+Question: on the D4 event lattice, is the family "3" geometric (the three nonzero classes of D4*/D4 = hole
+types, permuted by triality; or the three root 4-frames), giving three light copies of one 16 with identical
+charges, a neutral-current selection rule, and surviving charged-current mixing?
+
+Fixed points that must come out (WALLS_BRIEF): exactly 3 light copies (not 1, 2, 4, 6); identical charges;
+distinct masses (1+1+1); no neutral family change; charged-current mixing with all |V_ij| != 0 and J != 0;
+nu oscillation allowed.
+
+Pre-registered checks (exact unless marked [F]):
+ C1 D4*/D4 = Z2 x Z2; its 3 nonzero classes are all deep holes (distance = covering radius 1); Aut(D4) = W(F4)
+    (order 1152) acts on them through S3 = W(F4)/W(D4), kernel order 192. -> "3" forced by the lattice?
+ C2 Root slicing: image of Stab(time root) in the hole-class S3 and in the frame S3; joint image.
+    If the hole S3 survives, time gives no family splitting on hole labels.
+ C3 [F] Light-species count of a family-blind nearest-neighbour fermion on the fine lattice D4* (= events +
+    holes): orbits of naive zeros, Wilson masses, chirality signs; light count as a function of the m0 window.
+    Success for (1) needs a window with EXACTLY 3 light same-chirality modes without dropping k = 0.
+ C4 Holes-only field (3 classes, nearest-neighbour inter-class links kept): class-space mass matrix at k = 0.
+    Success needs 3 degenerate light modes with no chosen m0 window and no dropped links.
+ C5 Zoom fixed point: species count under blocking (analytic + D4 torus check).
+ C6 Mixing under the surviving symmetry (Schur): exact S3 -> masses 1+2 and V trivial? frame S2 -> one family
+    unmixed and J = 0? Success needs all |V_ij| != 0 and J != 0 from a symmetry-allowed generic choice.
+ C7 3 not 6: count is lattice-forced with no freedom?
+
+Verdict rule:
+ FAMILIES FROM GEOMETRY: C1, C7 pass AND (C3 or C4 or C5 gives exactly 3 with no choice) AND C6 passes.
+ PARTIAL: C1/C7 pass (the 3 is forced) but light count or mixing needs a chosen ingredient.
+ FAILS: the count is not 3 without a choice AND mixing/masses fail; name the missed fixed point.
+Runner prints PASS for checks that compute what they claim (a negative physics outcome is a PASS of the
+check that establishes it); verdict is decided by the rule above, not by PASS counts.

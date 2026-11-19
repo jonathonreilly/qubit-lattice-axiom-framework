@@ -1,0 +1,58 @@
+---
+claim_id: body_diagonal_turn_anomaly_fixes_the_family_count_mod_the_odd_turn_order_not_mod_the_dimension_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "Conditional: carrying the families-mod-3 lemma (supplied chiral generator, mirror top-form rule, two-window gapped set) to the d-cube with the hand-set Z3 replaced by the d-cube's body-diagonal turn and cell-supplied content of 2^(d-1) doublets per family, the obstruction is N = 0 mod the odd part of the proper turn's order: none in d = 2, none (order-4 turn) or mod 3 (proper three-axis turns) in d = 4, mod 3 in d = 3; so the lemma's 3 is the turn order, not the dimension. The family count, the generator, the mirror rule and the d != 3 anomaly invariants are not established."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - three_fold_turn_anomaly_gives_family_count_zero_mod_three_under_a_supplied_mirror_term_bounded_theorem_note_2026-10-21
+runner: scripts/body_diagonal_turn_anomaly_fixes_the_family_count_mod_the_odd_turn_order_not_mod_the_dimension_2026_10_23.py
+---
+
+# The body-diagonal turn anomaly fixes the family count mod the odd turn order, not mod the dimension
+
+Claim type: bounded_theorem.
+Primary runner: `scripts/body_diagonal_turn_anomaly_fixes_the_family_count_mod_the_odd_turn_order_not_mod_the_dimension_2026_10_23.py`.
+
+The three-fold-turn lemma (families-mod-3) gives N = 0 mod 3 for the family number under a supplied mirror term. Its Z3 is the turn of the cube about a body diagonal, and on the cube that order equals the dimension. This note asks which of the two the 3 tracks: it replaces the Z3 by the actual body-diagonal turn of the d-cube for d = 2, 3, 4 and recomputes the obstruction. The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight; the [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) are unchanged and fix no d other than 3.
+
+## Statement
+
+Carry the lemma over unchanged: the twisted turn group Z_n; light copy charge q_l, mirror copy charge q_m; the mirror's single-copy top form on M modes keeps the twist k only if M(q_m + k) = 0 mod n; the gapped set S = {Gamma-b, R-a, R-b} carries the per-family index m(q_l + k) mod n, with m doublets per family; N is obstructed if no kept k cancels N m (q_l + k). Take the cell-supplied content m = M = 2^(d-1), half the 2^d corner modes. Then, over every charge pair q_l != q_m:
+
+- d = 2: no proper turn other than 1 fixes the diagonal. The natural analogues, both of order 2 = d, are the pi turn -1 (proper; it reverses the diagonal; on fermions T^2 = (-1)^F, group Z4^F) and the diagonal reflection (improper). No N is obstructed.
+- d = 3: the C3 turn (order 3, proper). N = 0 mod 3, reproducing families-mod-3.
+- d = 4: the order-4 body-diagonal turn (the axis 4-cycle) has det -1, so it is a rotoreflection; no proper order-4 turn keeps the diagonal axis. As Z4 or Z8^F (best case, treated as unitary) it obstructs no N. The proper turns that keep the axis, C3 on three axes (order 3) and -C3 (order 6), give N = 0 mod 3.
+
+So the allowed N are not the multiples of d in d = 2 or d = 4. The obstruction is N = 0 mod the odd part of the proper turn's order: the lemma's 3 is the cube's turn, which equals d only at d = 3.
+
+## Derivation
+
+Turns. The stabilizer of the body diagonal in the signed-permutation group is the axis permutation group S_d, and the axis d-cycle has order d and det (-1)^(d-1). It is a proper turn only for odd d. The runner lists the proper orders: d = 2 fixing {1}, reversing {2}; d = 4 fixing {1, 2, 3}, reversing {2, 6}.
+
+Charges. The turn permutes the 2^d corner modes. Its charge counts are {0^4, 1^2, 2^2} at d = 3 (the families-mod-3 A4 value), {0^6, 1^3, 2^4, 3^3} for the 4-cycle and {0^8, 1^4, 2^4} for C3 in d = 4. Every axis permutation fixes the windows Gamma and R, so the two-window gapped set exists in every d. The spin lift removes T^n = (-1)^F for odd n only.
+
+Mechanism. When n is a power of 2 and M = m = 2^(d-1) >= n, the top-form condition keeps every k and the index m(q_l + k) vanishes mod n. The twist is not selected and nothing is obstructed. For odd n, 2^(d-1) is a unit mod n, so k = -q_m is fixed and N(q_l - q_m) = 0 mod n follows. The sensitivity scan at n = 4 needs an odd per-family multiplicity m (and M != 0 mod 4) to get mod 4. The toy's multiplicity 2 gives at most mod 2. The cell never supplies an odd m.
+
+## Comparison with Dobrescu-Poppitz (2001, supplied)
+
+In 6D the SU(2) global anomaly (pi_6(SU(2)) = Z12) needs the excess of doublets of one 6D chirality over the other to be 0 mod 6. Their anomaly-free assignment gives 3 - 1 = 2 per generation (Q in three colours against L), so N = 0 mod 3. AGREE on the conclusion and on the allowed set {3, 6} in 1..8: both have a per-family coefficient that is a unit in Z3. They DISAGREE on the origin. DP's 3 is the 3-part of pi_6(SU(2)) together with the colour count. Ours is the turn order with power-of-two cell content.
+
+Zoom in DP's role: space plus one zoom direction is d = 4, an odd spacetime (4+1D) with no Weyl fermions, and pi_5(SU(2)) = Z2 has no 3-part. DP needs two extra directions with 6D chirality. Zoom is a coarse-graining index with no turn relating it to space, so it cannot play that role as is. A second direction (the layer) plus 6D chiral content would have to be supplied. In our class, five spatial directions would give mod 5 from the 5-cycle and mod 3 only from its 3-cycles (toy-algebra extrapolation only).
+
+## Checks
+
+The runner gives `TOTAL: PASS=14 FAIL=0` in 0.1 s.
+
+- A1 to A3: the turn orders and dets; the d = 2 and d = 4 stabilizer orders.
+- B1 to B3: the corner charges, the fixed windows and the spin lifts, with the d = 3 values reproduced.
+- C1: families-mod-3 C2 reproduced (k = 0, 2 -> {3, 6}; k = 1 -> all; the mirror keeps k = 2).
+- C2, C3: no obstruction in d = 2 or for the d = 4 order-4 turn; mod 3 for the proper d = 3 and d = 4 turns.
+- C4: the multiplicity sensitivity at n = 4.
+- C5: the d = 5 extrapolation (mod 5 and mod 3).
+- C6: the PASS criterion fails.
+- D1, D2: the DP comparison and the zoom count.
+
+## Boundary
+
+Supplied: the lemma's structure (generator, two-window S, mirror top-form rule) carried to d != 3 without a d-dimensional generator; the content m = M = 2^(d-1); the d = 3 charges (q_l, q_m) = (2, 1), cited from families-mod-3. The d = 2 and d = 4 analogues live in odd spacetime (2+1D, 4+1D), where there is no chiral light taste and the 3+1D mixed index is not the anomaly invariant. Read the d != 3 rows as the lemma's integer algebra (the solvable analogue), not as bordism computations. The improper 4-cycle is treated as unitary as a best case for PASS; it is antiunitary by crystalline equivalence. Cited: 't Hooft matching, crystalline equivalence, Dobrescu-Poppitz. No family count is derived, and the 3 = d reading is not supported in this class.

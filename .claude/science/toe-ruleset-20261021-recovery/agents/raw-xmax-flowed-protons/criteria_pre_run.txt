@@ -1,0 +1,36 @@
+criteria_pre_run.txt -- raw-xmax-flowed-protons, written 2026-10-26 BEFORE any data fetch or runner run.
+
+Question: under the rules as written (dim-6 LIV, nuclei broken up below <= 46 EeV, protons above ~5 EeV in
+the flowed state with one constituent at x_lead -> 1), do the RAW air-shower observables of a pure
+flowed-proton beam above 46 EeV fit Auger's (and TA's) raw <Xmax> and sigma(Xmax)?
+
+Method fixed in advance:
+M1. Raw data: FD/hybrid <Xmax>, sigma(Xmax) (stat + sys) in the bins at/above lg(E/eV) = 19.5, and the
+    proton / iron predictions of EPOS-LHC, Sibyll 2.3(c/d), QGSJet-II-04 at the same energies, quoted from
+    published tables/figures (values marked "read from figure" where not tabulated). SD-DNN Xmax moments
+    (arXiv:2406.06315) used as the higher-statistics cross-check. Muon number (Rmu) reported only where
+    published at these energies.
+M2. Toy model: a seeded Monte Carlo generalized Heitler-Matthews cascade (leading particle with elasticity
+    kappa, interaction length lambda_I(E), multiplicity N(E), 1/3 of non-leading energy to EM subshowers with
+    Xmax_EM = X_inj + X0 ln(E_g/xi_c)), calibrated ONLY on the standard proton and iron predictions (the toy
+    reproduces model-predicted p/Fe <Xmax> difference and sigma pattern; the absolute scale is anchored to the
+    hadronic-model proton prediction). Flowed proton = toy proton with first interaction modified by
+    x_lead taken from the composite-dispersion / liv-surviving-observables results (no new fit).
+M3. Bracket of the flowed first interaction (supplied, not derived): cross-section factor f_sigma in
+    [1/3, 2], elasticity kappa_1 in [kappa_p, 1 - (1 - x_lead)/2] (lower bound = standard), multiplicity
+    factor f_N in [0.3, 1.5]. Every corner is reported; the most favourable corner (shallowest, narrowest)
+    is the one that decides.
+M4. Model systematics: hadronic-model spread of the proton prediction (max - min over the three models)
+    plus Auger's quoted Xmax systematic, added linearly (conservative for the rules).
+
+Decision rule (pre-registered), at the bin(s) above ~46 EeV:
+- EXCLUDED: the most favourable corner predicts sigma(Xmax) above the measured value by > 3 combined sigma
+  (stat + sys + model spread in quadrature) AND/OR <Xmax> above by > 3 combined sigma.
+- TENSION: the most favourable corner misses one moment by 2-3 combined sigma, or misses by > 3 only in a
+  corner-independent way that depends on the toy calibration.
+- CONSISTENT: both moments within 2 combined sigma in at least one corner of the bracket.
+- sigma(Xmax) is expected to be the more model-robust moment; if the verdict differs between <Xmax> and
+  sigma(Xmax), sigma decides and that is stated.
+Physics prior stated in advance (to be tested, not assumed): a leading-parton projectile is a
+single-particle (no superposition) shower; it should be at least as deep and at least as fluctuating as a
+proton unless f_sigma is large AND kappa_1 small AND f_N large.

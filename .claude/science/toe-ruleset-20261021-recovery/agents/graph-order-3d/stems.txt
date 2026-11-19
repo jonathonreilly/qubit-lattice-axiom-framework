@@ -1,0 +1,2 @@
+EDGE_AND_SQUARE_GRAPH_WEIGHT_HAS_NO_CUBIC_ORDERED_PHASE_BOUNDED_NO_GO_NOTE_2026-10-22
+edge_and_square_graph_weight_has_no_cubic_ordered_phase_2026_10_22

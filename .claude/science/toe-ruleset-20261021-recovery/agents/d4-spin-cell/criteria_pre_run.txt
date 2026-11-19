@@ -1,0 +1,34 @@
+d4-spin-cell: pre-registered criteria (written 2026-10-26 before any runner was written or executed)
+
+Question. Can spin-1/2 EMERGE from one fermion mode per D4 event on a superlattice cell (staggered-style phases on the
+24 root hops), while keeping the W(F4) protection (only (p^2)^2 at quartic order, so no dim-6 LIV)?
+
+Prior facts (read, not rederived here except where checked): -1 in W(F4) makes every INVARIANT one-component kernel even
+(d4-sixteen-content C2); KS lives on Z^4 = D4 + a hole class and keeps 384 of 1152; D4/2D4 orbits 1+12+3, D4/2D4* = 4.
+Repo check: git grep origin/main and open PRs: no D4/W(F4) staggered or spin-cell note.
+
+Scope of the search (stated in advance): one complex Grassmann pair per D4 event; bilinear nearest-neighbour kernel D with
+|D_{x,x+r}| = 1 on all 24 roots (all directions alike in magnitude); Z2 phases (real D), both the antisymmetric (KS class,
+D^T = -D) and symmetric (D^T = D) classes; phases periodic modulo a W(F4)-invariant cell L in {2D4* (index 4), 2D4 (16),
+4D4* (64)}; symmetry realised projectively: each g of a group G acts as a signed permutation with D -> chi_g D,
+chi a linear character (W(F4) has 4). Gauge-invariant data = oriented-triangle holonomies.
+
+Pre-registered checks (PASS = statement verified exactly or as stated):
+ P1 (cells) W(F4)-invariant sublattices L with 4D4 <= L <= D4: list them with indices (expect 1, 4 (2D4*), 16 (2D4), ...).
+ P2 (eta phases) No phase assignment (any U(1) phases) makes all root hops pairwise anticommute (KS eta property):
+    exact argument + F2 inconsistency on the 2D4 cell. Also the naive D4 spinor kernel sum_r (r.gamma) T_r cannot be
+    spin-diagonalised (triangle product of r.gamma/sqrt2 is not a multiple of 1).
+ P3 (chirality) No onsite sign eps(x) anticommutes with any kernel whose hop set contains a triangle (D4 root graph is
+    not bipartite): no remnant U(1)_eps at nearest neighbour.
+ P4 (search, full W(F4)) For each cell, class and character: is the F2 covariance system consistent? For every
+    consistent flux pattern: nodes of D(k) and whether any node is a 4D Dirac node (linear, D^dag D = v^2 p^2 on the node
+    space). Outcome recorded either way.
+ P5 (subgroups) Repeat P4 for W(B4) (384, one triality frame), W(D4) (192). If a Dirac pattern is found, count tastes
+    and the quartic invariants of the realised point group (protected iff 1).
+ P6 (supply) Minimal supply comparison: 4 components = 2 fermion modes = M_2(C)^{(x)2}? state dims exactly.
+
+Verdict rule (fixed now):
+ SPIN EMERGES = some pattern with full W(F4) (or any group with 1 quartic invariant) has a Dirac node.
+ NO-GO (exact scope) = no W(F4)-covariant pattern in scope has a Dirac node AND the theorems P2/P3 hold.
+ PARTIAL = Dirac nodes exist only for groups with >= 2 quartic invariants (spin emerges, protection lost).
+Machine: each run < 60 s, BLAS 1 thread, nice 10, < 1 GB; abort if load > 8.

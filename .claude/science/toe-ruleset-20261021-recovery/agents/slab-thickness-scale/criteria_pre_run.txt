@@ -1,0 +1,35 @@
+slab-thickness-scale (R2) -- criteria fixed BEFORE the runner was written or run (2026-10-24)
+
+Supplied inputs (not rule outputs): M_P = 1.22e19 GeV (cutoff a = l_P), v = 246 GeV, the face-swap window
+v' in [1e8, 1e11] GeV, KATRIN direct bound m_nu < 0.45 eV, running masses at M_Z (Xing-Zhang-Zhou 2011).
+Slab: Wilson domain-wall slab of chiral-tick-form, wall zero mode psi_s = (1-m)^s chi, overlap |1-m|^Ls.
+
+Q1 (electroweak/Planck). Solve |1-m|^Ls = v/M_P.
+  PREDICTION only if a rule fixes m (hence xi) with no continuous freedom and an integer Ls then lands within a
+  factor |1-m|^(+-1/2) of v/M_P. If m is free in (0,2): FIT (one number fitted by one effective real).
+  Consistency check (pre-set): the same overlap sets the light-mirror residual mass m_res = M_P |1-m|^Ls.
+  The identification v = M_P x overlap FAILS if m_res(v) exceeds the m_nu bound (0.45 eV).
+
+Q2 (mirror scale). Write v'/M_P = (v/M_P)^r. A relation counts as a PREDICTION only if
+  (a) r is forced by a stated rule (not chosen from a menu), AND
+  (b) the chance that a log-uniform v' on [v, M_P] lands in the window is < 0.05, AND
+  (c) the fraction of simple rationals r = p/q (q <= 6, 0 < r < 1) landing in the window is < 0.05.
+  Otherwise: COINCIDENCE LEVEL / two parameters.
+
+Q3 (fermion hierarchy). Model Y_k ~ b^(d_k), integer d_k, one base b = |1-m|^c shared by e, u, d sectors.
+  Six targets x = ln(m3/m1), ln(m3/m2) per sector. Statistic S(L) = mean over the six of the distance of x/L
+  to the nearest integer, L = ln(1/b). Scan L in [x_max/42, 3.0] (depths <= 42 layers, b >= 0.05), take min S.
+  Null (primary): each x_i jittered uniformly in [0.5 x_i, 1.5 x_i], same scan, N = 4000, seed 20261024.
+  Null (secondary): x_i uniform on [0.5, 12], same scan.
+  COMPRESSES if p(primary) < 0.01. FIT ONLY if p >= 0.01. Same threshold for the fixed base b = 0.4 (m = 0.6,
+  c = 1) and for the integer-c family b = 0.4^c, c = 1..4 (min over c, null takes the same min).
+  Parameter count reported: 1 real (b) + 6 integers + 3 normalisations vs 9 masses.
+
+Q4 (forced depths). Test the one forced-depth rule available: equal integer spacing d_k = k*Delta with one base
+  for all sectors. It predicts m2^2 = m1 m3 in each sector and equal ln(m3/m1) across sectors.
+  PASSES only if every sector's m2^2/(m1 m3) is within a factor 2 of 1. Otherwise FALSIFIED.
+
+Overall verdict: COMPRESSES (any of Q1-Q3 prediction-grade with forced inputs) / FIT ONLY / FAILS
+(a forced version falsified, or an identification inconsistent).
+Runner PASS lines record that a check was computed and the verdict logic was applied; a physics FAIL is reported
+as a verdict string, not as a runner FAIL.

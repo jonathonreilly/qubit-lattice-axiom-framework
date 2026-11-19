@@ -1,0 +1,34 @@
+luscher-local-current: criteria written BEFORE any code (2026-10-24)
+
+Question: is the U(1)_Y covariant anomaly density A(x) = sum_species m Y q_Y(x), q_Y(x) = tr sign H_Y(x,x)
+(= tr g5 D(x,x)), of the one-family 16 a lattice divergence d*k of a LOCAL gauge-invariant current k
+(Luscher 1998 cohomology, supplied), while a lone doublet's is not?
+
+Set-up (fixed before running):
+- Overlap of the Wilson kernel copied from overlap-nonabelian (r = 1, m0 = 1.6), 4^4, U(1)_Y only.
+- Backgrounds: FACTORISED U(1) fields, (A1, A2) depending on (x1, x2) only and (A3, A4) on (x3, x4) only, so the
+  only field strengths are F12(x1,x2) and F34(x3,x4). Reason: it keeps eps-F-F nonzero and 4D-dependent while
+  making a quartic local basis small enough to fit. Seeded random smooth modes, amplitude eps.
+- Contents: (b) the 16 (Q x6 Y=1/6, L x2 -1/2, u x3 -2/3, d x3 1/3, e x1 1, nu 0); (a) lone L doublet (x2, -1/2).
+- Basis at range r: d*_mu of monomials F12^n1 F34^n2, (n1,n2) in {(1,1),(3,1),(1,3),(2,2)}, each F12 factor at an
+  L1-offset <= r from x in the 12-plane, each F34 factor at an L1-offset <= r in the 34-plane; mu = 1..4. Gauge
+  invariant by construction (plaquette angles only, no Polyakov loops). Optional extra column: Luscher's
+  topological density T(x) (not a divergence).
+- Fit: linear least squares on train configs; residual = ||A - fit|| / ||A|| on HELD-OUT configs.
+
+Controls:
+- C0 exact: GW and projector identities on the kernel; sum_x A = 0 to 1e-10 for BOTH contents in every trivial-sector
+  background (index 0 per charge) -- so in small smooth backgrounds the integral alone does not separate them.
+- C1 flux sector: unit flux in the 12- and 34-planes (charge unit 1/6): measured indices for resolved charges equal
+  -(6Y)^2; lone L integrated anomaly nonzero (expected -18 in units where sum_x q = -2 index); the 16's integral is
+  0 from the integers (charges whose flux is not resolved on 4^4 are reported, not counted).
+- C2 scaling: lone L density ~ eps^2, the 16 ~ eps^4.
+
+PASS criteria (pre-set):
+- P1 (16 local): held-out residual of the 16 falls from r = 0 to r = 1 by a factor >= 3, without T.
+- P2 (lone doublet stalls): lone L held-out residual WITHOUT T at r = 1 stays >= 0.3 (no local divergence fit),
+  while WITH T it falls like the 16 (factor >= 3 from r = 0 to 1).
+- P3 (coefficient): fitted T coefficient = 2 sum m Y^3 within 10% for L (= -1/2) and |coef| < 0.05 for the 16.
+- Range limit stated in advance: on 4^4 an L1 range r = 2 reaches the torus period, so every zero-sum function is a
+  divergence of a range-2 field; r >= 2 is a finite-size saturation CONTROL, not evidence. r = 3 not attempted.
+If a criterion fails it is reported as FAIL in the note, not relaxed.

@@ -1,0 +1,39 @@
+Pre-registered criteria (written 2026-10-26 before any computation in this folder)
+
+Goal: a fermion construction that inherits the D4 / W(F4) dimension-six protection AND has a positive slice transfer
+(reflection positivity, RP) along some time direction.
+
+Necessary RP test (reused from d4-fermion-positivity, reflection-independent): at fixed transverse momentum k the slice
+propagator G(n) = sum_j lam_j^n P_j (n >= 1). Site RP on the open half requires every lam_j real and every P_j Gamma(k)
+Hermitian and of one sign for some Hermitian pairing Gamma(k); link RP requires lam_j P_j Gamma of one sign.
+Calibrations must pass first: Z^4 Wilson r=1 positive; Z^4 naive fails T >= 0.
+
+(1) Why D4 fails / no-go scope.
+ 1a. Direction classes of D4 under W(F4): root (norm 2, done in parent), second shell (norm 4: e_i, (1,1,1,1)/... ; this
+     is the D4* = F4 lattice's axis/root swap, so "D4* with time along an axis" = D4 root time, already failed, and
+     "D4* along a root" = D4 along e_1), third shell (2,1,1,0)-type (norm 6). Test the W(F4) nearest-neighbour Wilson family
+     D = 2w + m + sum_r e^{ir.p}(g.r - w)/12 along e_1 and along (2,1,1,0), w in a grid, m = 0.3.
+     PASS(found) if some w gives real poles and definite P_j Gamma at all sampled k, AND the light branch keeps
+     v - 1 = O(k^4) (no k^2 term, < 1e-5) AND H is finite on all real k (no T(k) = 0 surface).
+ 1b. Existence question: does ANY W(F4)-invariant, exponentially local, RP lattice fermion exist on D4? Test the
+     construction "24-cell (Voronoi) block average of a free continuum Dirac field" (perfect-action type): it is RP by
+     continuum RP if cells of slices n >= 1 lie in the closed half; check numerically (Gram/Hankel form over slices,
+     truncated image sum) and its light dispersion. If RP holds, the no-go is NARROWED to finite-range kernels;
+     record that it imports the continuum (smuggling gate FAIL as a rule; counts only as an existence proof).
+ 1c. Finite-range statement: if 1a fails, state the no-go only with its tested scope (NN + second shell, sampled points).
+(2) Bosonized fermions.
+ 2a. Analytic: exact bosonization is a unitary rewriting in a fixed flux sector, so spectra (and any complex slice
+     energies or negative norms) are preserved. Check exactly on a small chain/ring: bosonized hop spectrum = fermion
+     hop spectrum, including a non-Hermitian-transfer example.
+ 2b. Analytic: a composite fermion of a W(F4)-invariant RP bosonic weight inherits RP and W(F4); its dim-6 term is
+     then zero by the invariant count. Test the invariant-count part exactly (quartic covariants of the spinor/vector rep).
+ 2c. A small exact diagnostic of a string-end (two-boson / boson-bound) composite: the light composite dispersion of a
+     W(F4)-invariant RP two-body problem on D4 has no k^2 term in v - 1 (direction spread < 1e-5).
+(3) H4 quasicrystal: feasibility statement only.
+
+Verdict rule:
+ PROTECTED FERMION FOUND if 1a passes (finite-range, local, RP, dim-6 = 0) or a local composite in 2 passes with no
+ import. OPEN-WITH-EXISTENCE if only 1b / 2b pass (protection + RP exist but need an import or an unbuilt bosonic phase).
+ NO-GO only if a proof covers the stated class.
+Runner: < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded, ends TOTAL: PASS=N FAIL=0 (a failed physics hypothesis is
+reported as a PASS of the check that it fails, with the expected outcome stated in the check name).

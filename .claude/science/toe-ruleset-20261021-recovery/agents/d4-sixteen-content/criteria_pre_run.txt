@@ -1,0 +1,39 @@
+d4-sixteen-content: pre-registered criteria (written 2026-10-26 before any runner was executed)
+
+Question. On the cubic tick, what did the per-site mode plus the cube's corners / copy sign carry, and does any of it
+survive on the D4 event set under the doubler-free zoom-fixed-point kernel? Is a 16 of internal content carried?
+
+Facts read before running (register CANDIDATE_LAWS_v3.md; d4-zoom-* runners; main #9821 note):
+ - Cube: "the cube's eight corners form one spin-1/2 doublet times a two-dimensional copy factor"; the copy mass keeps
+   one light copy. Register lists "Handedness bit and 16 supplied" and "(g) no clause maps species, colours or
+   families to role-assigned matter sites". A zoom-1 register reading (2x2x2 cell = one (4,2) of SU(4)xSU(2)) is
+   conditional and "every internal generator is rotation-blind: one reading does not yet give both".
+ - D4 zoom kernel runners carry FOUR supplied spinor components per event (gamma matrices), not one mode per event.
+ - #9821: Dirac-Kahler on the D4 cell complex, soft counts 1,4,6,4,1 = 16 components over ALL simplex degrees.
+
+Pre-registered checks and pass conditions:
+ C1 cube baseline (exact): on one 2x2x2 cube with anticommuting face-phase hops W_i, the 8 one-body modes decompose
+    as (R = +-1) x (spin doublet) x (copy s = +-1), 2x2x2; the one-body commutant of {W_i} is 2-dimensional-matrix
+    (copy) only, i.e. the cube carries at most a U(2) copy label, no 16-fold internal label. PASS if exact (<1e-12).
+ C2 one mode per D4 event, translation invariant, W(F4)-invariant kernel: the first-order (odd) part of the symbol
+    vanishes identically (roots come in +- pairs and -1 is in W(F4)), so no spin-1/2 light mode without either
+    staggering (enlarged cell) or supplied components. PASS if the odd symbol is 0 to 1e-12 on random momenta.
+ C3 counts: Z^4 hypercube 16 corners -> 8 in D4; |D4/2D4| = 16 with W(F4) orbits 1 + 12 + 3 (3 = triality frames)
+    and mod-2 form radical of dimension 2; the 16 classes are Fourier dual to the 16 half-period momenta (the
+    doubler classes the chirality runner tested). PASS if exact.
+ C4 staggered route (finite diagnostic): a one-mode-per-event nearest-neighbour root hop with Z2 phases on a small
+    periodic cell; record whether a phase pattern with pi flux in every triangle exists and how many zero modes
+    (components) the band has at p = 0 over the magnetic cell. Report the count; a light count of 16 = 4 spin x 4
+    taste would be the D4 Dirac-Kahler content. Outcome recorded either way (diagnostic, PASS = computed consistently).
+ C5 internal-label test: rotations permute block labels; PASS(theorem) if the W(F4) image on the 16 labels is
+    non-abelian while the commutant of the SM 16 on 16 states is abelian (U(1)^6), proving no W(F4)-covariant
+    identification of coset labels with the SM 16 where rotations act by permutation.
+ C6 triality-family test: S3-symmetric 3x3 mass matrices have a degenerate pair; restricting to W(D4) (where the
+    three classes are fixed) admits extra quartic invariants (dim-6 LIV returns). PASS if exact.
+ C7 anomalies: the one-family 16 (Y^3, grav-Y, SU3^2 Y, SU2^2 Y, SU3^3, even doublets, Weyl count 0 mod 16) cancels;
+    the Dirac-Kahler 4-taste content after chiral projection as one 4 of SU(4) does NOT (SU(4)^3 = 1); 15 (no nu^c)
+    fails mod 16.
+
+Verdict rule: 16 CARRIED if C4 gives a light multiplicity >= 16 Weyl with internal (rotation-blind) generators
+containing the SM group; PARTIAL if a multiplicity survives but carries spacetime (taste) quantum numbers or fewer
+than 16 Weyl; LOST if the zoom kernel leaves one light chiral mode per supplied field.

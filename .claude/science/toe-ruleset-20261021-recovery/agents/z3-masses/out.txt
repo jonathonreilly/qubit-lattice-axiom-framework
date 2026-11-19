@@ -1,0 +1,34 @@
+== A. targets
+[PASS] A1 [M] r = 1/2 gives delta = 0.2222220471(4e-10); delta = 2/9 gives r = 0.4999997868; m_mu/m_e 206.7683, m_tau/m_mu 16.8177
+== B. twisted charges (cube objects)
+[PASS] B1 [T] plain-turn charges of the top forms: O_A (mirror) 1, O_B (copy a, light and R doubler) 2; at k = 2 O_A 0, O_B 1: one family's doubler top form is forbidden, a product of three allowed
+== C. three-family gap term in 3D (exact integer arithmetic)
+[PASS] C1 [T] copy-a doubler fields are SU(4) 4s of mode number +1: SU(4) needs dN = 0 mod 4, the twisted turn dN = 0 mod 3, so number-breaking terms on them have dN in 12Z and >= 12 fields; Z12 x SU(2)_e^2 (-4 per family) vanishes iff N = 0 mod 3 | fewest 12 fields; N [3, 6, 9]
+[PASS] C2 [T] of 91 family splittings of 12 annihilators (55 touch all families) only (4,4,4) = T3 = O_0 O_1 O_2 keeps every relative family number; 28 keep every family parity; 42 ordered ones come in reflection pairs
+[PASS] C3 [T] H' acts inside a family, O_A and T3 change N_f by 4: each family keeps N_f mod 4 (anomaly -4 = 0 mod 4), so inter-family bilinears (charges +1, -1) are never induced; SU(2)_e x SU(2)_o forbids light masses; a family-blind bidoublet gives m x 1
+== D. 1+1D toy (3 families of the R-a taste, each a 3-4-5-0 multiplet, z = q_a + k = 1)
+[PASS] D1 [T] the families-mod-3 toy Lagrangian D8 has even family numbers: it keeps each family's parity | [[2,-2,0],[0,2,-2],[2,-2,0],[0,2,-2],[2,2,2],[2,2,2]]
+[PASS] D2 [T] a Lagrangian gapping the three R-a tastes and keeping both relative family U(1)s exists (null; U(1)_e, Z3_k, translation neutral; Smith 1): the anomaly forces coupling, not mixing | [[0,0,0],[0,0,0],[0,0,0],[-2,-2,-2],[-2,-2,-2],[0,0,0]]
+== E. finite cluster (supplied): 3 families x 4 doubler modes, T3 = g(O0 O1 O2 + h.c.), bidoublet b, L/R probes v
+[PASS] E1 [F] exact Lehmann sums on 2^12 states (ground state (|0> - |F>)/sqrt2): b = 0 gives M = 0; b = 0.1 g gives M = b/(g^2-b^2) x 1: no mixing, three equal masses | dev 3e-17
+[PASS] E2 [F] exact diagonalisation with the probes (reduced model): light addition energies = v^2 eig Sigma(0) + O(v^4) | residual 1.6e-07 at v = 0.01, x16.1 at 2v
+[PASS] E3 [T/F] a supplied family hop t e^(i phi): Hermitian circulant, m_k = (b/2) sum_+- 1/((g +- e_k)^2 - b^2), e_k = 2t cos(phi + 2pi k/3); phi = 0, pi/6, pi/3 give a degenerate pair; the twist 2pi/3 per link is a gauge (flux 2pi) | phi = 0.3: [0.101163 0.102695 0.103887]
+[PASS] E4 [F/E] the dial (r, delta) follows the supplied (t/g, phi, b/g), e.g. (4e-07, 0.600), (1e-05, 0.598), (2e-04, 0.590) at t/g = 0.02, 0.05, 0.1; while T3's cat stays the ground state the spread is m3/m1 <= 1.207 (grid), vs 3477 for leptons: the poles that would make a hierarchy lie past a level crossing
+== F. spine {x-d, x, x+d} of a zoom-3 block (family-register A2)
+[PASS] F1 [T] site stabiliser (3 turns about d, 3 tiling-swapping half-turns): spine fixed or ends swapped, no 3-cycle, so no circulant; commutant 5 (Z2) allows any three masses | [(0,1,2),(2,1,0)]
+[PASS] F2 [T] moduli readings: sign-blind (family-register) commutant 9; a one-cube translation along d 3-cycles the spine (circulant, commutant 3, phase free); inversion or any k -> -k map adds the swap: S3, commutant 2, degenerate doublet | (9, 3, 2)
+[PASS] F3 [T/F] geometric couplings: one cube's tick never joins x to x+d (W^2 = 1): equal |m|; spin-3/2 site-state Gram, eigenvalues (2,1,0): m_e = 0, Q = 5/9; nearest-neighbour spine coupling, equal on-site: delta = pi/6 for every coupling | r = 2u^2/3
+[PASS] F4 [F/E] distance laws u^(r/sqrt3), u^((r/sqrt3)^2) reach r = 1/2 at u = 0.7623, 0.8105 with delta = 0.1001, 0.2135 vs 0.2222: m_mu/m_e 5.8, 132.3 vs 206.8
+== G. dynamical delta and look-elsewhere
+[PASS] G1 [F] two-channel Clifford Gram (mass-law states; intermediate spin along +-d weighted 1, t): circulant; r = 1/2 only at t = 1, 7 + 4sqrt3, both delta = pi/12; delta = 0.2222 needs t = 0.8614, r = 0.5429 (Q = 0.6953); t = Delta/Delta_f, Delta_f/Delta: (0.656, 0.142), (0.347, 0.491)
+[PASS] G2 [T] the smg levels are roots of integer polynomials and the kinematic phases lie in (pi/12)Z: every candidate c1 is algebraic, so none gives delta = 2/9 exactly (Lindemann-Weierstrass, cited) | E0 268.7546, D 19.0715, Df 33.5804, D54 42.3302
+[PASS] G3 [E] look-elsewhere over 2772 candidate deltas (smg levels, (pi/12)Z phases, Gram, spine laws): closest 1(D54/D)/10 = 0.2219554032, off by 2.7e-04 = 7e+05 sigma; random targets do as well with p = 0.38
+== H. quarks and mixing
+[PASS] H1 [T/E] gap term and dressing keep SU(4) x SU(2)^2: one family matrix, one r for all species (Schur); measured r = 0.500, 0.597, 0.773 (lepton, down, up), Q_up - Q_down >= 0.112 over the PDG box: excluded
+[PASS] H2 [T/E] circulants share the Fourier basis: CKM a permutation, |V_us| = 0 vs 0.22501(68), 331 sigma; T3 alone keeps each N_f mod 4: CKM = PMNS = 1 at all orders, vs measured oscillations
+[PASS] H3 [T] colour splits r only via a second supplied matrix: a (15,2,2) gives M_d = Y1 + Y15, M_e = Y1 - 3 Y15, which fit any d and e spectra (6 for 6)
+elapsed_seconds 2.6
+theorems: B1, C1-C3, D1-D2, F1-F2, G2, H3; finite: E1-E4, F3, G1; estimates vs measurement: A1, E4, F4, G3, H1-H2.
+supplied: H', O_A, k = 2, the (4,2) content, 3 stacked families, g, b, v, the hop (t, phi), Gram weights, spine laws; PDG/CODATA.
+
+TOTAL: PASS=21 FAIL=0

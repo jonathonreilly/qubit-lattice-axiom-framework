@@ -1,0 +1,23 @@
+== A. exact algebra of the 3450 gapping data
+[PASS] A1 3450 anomaly-free: A^2, B^2, AB = 0; 3451 has A^2 = 9+16-25-1 = -1 | (A2,B2,AB) = (0, 0, 0)
+[PASS] A2 Tong vectors l1 = (1,-2,1,2), l2 = (2,1,-2,1): null, mutually null, neutral; the preserved charges are exactly K span(l1,l2) = span(q_A, q_B); minors gcd 1 (no leftover discrete breaking) | q_A = [-1.  2.] , q_B = [0. 1.] in (Kl1,Kl2); gcd 1
+[PASS] A3 THEOREM a charge kept by a Lagrangian gapping set has q^T K q = 0, so 3451's U(1) (anomaly -1) can never be kept; brute force |l_i| <= 4: no independent mutually-null neutral pair | 8 single neutral null vectors, 0 Lagrangian pairs
+[PASS] A4 THEOREM (Pauli) every nonzero 3450 gapping vector a l1 + b l2 has an entry |l_i| >= 2 (entries a+2b and a-2b differ by 4b): no 3450 gapping term exists on a cell with one mode per flavour; the terms are multi-site (point-split)
+== B. free ladder: chirality on the legs and anomaly inflow
+[PASS] B1 per flavour h(k) = s sin k sz + (1-cos k) sx: gapless only at k = 0 where leg A moves with velocity s and leg B with -s; at the corner k = pi both legs mix fully, gap 2 | min |E| off k=0 window 0.050; leg-A weight at k=0+ 1.000000
+[PASS] B2 flux 2 pi of U(1)_A pumps s_f q_A,f particles of flavour f onto the light leg (integers to 1/L^2); net light-leg charge pumped = sum s q_X q_Y = 0 for all X,Y in {A,B}: no inflow, the far end can be gapped | per flavour [-2.999 -3.998  4.996  0.   ]; inflow [('AA', np.float64(-0.008)), ('BA', np.float64(-0.004)), ('AB', np.float64(-0.0)), ('BB', np.float64(-0.0))]
+[PASS] B3 3451: flux of its U(1) pumps net charge sum s q^2 = +1 onto the light leg per flux quantum; a gapped symmetric far end has no low states to supply it, so no symmetric interaction gaps the 3451 far end (anomaly matching) | pumped 0.992
+== C. zeros of the far leg and the zone corner (exact, 1D index)
+[PASS] C1 THEOREM a local far-leg zero (Sigma_BB = V^2/w at every k) leaves zero-energy poles at k = 0 (light) and k = pi (the doubler, light-leg chirality reversed): the 1D form of the seven top-rung doublers | crossings at [-1.00e-03  3.14e+00]
+[PASS] C2 THEOREM any local quadratic completion (far leg plus any local hidden band, i.e. a zero with a local dispersion) obeys Nielsen-Ninomiya: signed crossings sum to 0, so once the mirror at k = 0 is gapped another gapless point exists | 40 random completions; min extra crossings 1
+[PASS] C3 filtering the residue (Sigma_BB = |f(k)|^2 V^2/w, f = (1+e^ik)/2, zero residue at pi) does NOT help: a soft branch E ~ (k-pi)^3 with physical weight ~ (k-pi)^2 still reaches zero at the corner | energy slope 3.00, weight slope 2.00
+== D. filtered far-end operators
+[PASS] D1 THEOREM the cube-average slot mode b~_x = (1/8) sum over the 2^3 cube at x anticommutes with b(Q) for every Q with a component pi (all seven corners and the three faces): any interaction built from b~ leaves those slot modes exactly free | max |{b(Q), b~_x^+}| = 2.8e-17 on 4^3
+== E. interacting ED, L = 3 antiperiodic, sector (Q_A,Q_B,K) = (36,12,0)
+[PASS] E1 both point-split Tong terms are neutral under U(1)_A x U(1)_B (exact symmetry of H); with 3451 charges both are charged | terms (local, filtered) 972, 88
+[PASS] E2 THEOREM check [b(pi), H_filtered] = 0 exactly on the sector; the local Tong terms do not commute with b(pi) | |[b,H_F]| 0.0e+00, |[b,H_L]| 0.33; dim 64444
+[PASS] E3 corner channel a(pi), filtered: lowest excitation exactly 2 with weight 1/2 at g = 0, 8, 32 (the free corner pair)
+[PASS] E4 corner channel a(pi), local Tong terms: at g = 32 a low (|E| < 0.3) weight >= 0.2 line appears in the light leg at the corner (doubler softening; a negative value means the half-filled sector is no longer the ground sector) | g=8 [(np.float64(-0.12), np.float64(0.237)), (np.float64(-0.12), np.float64(0.237))]; g=32 [(np.float64(-0.08), np.float64(0.25)), (np.float64(-0.08), np.float64(0.25))]
+[PASS] E5 FINITE DIAGNOSTIC at L = 3 neither interaction gives a unique gapped symmetric ground state at strong coupling (first gap in the sector collapses): no SMG claim at this size; the BKT-type SMG of the literature needs L >> 3 | first sector gap {('loc', 0.0): 2.0, ('loc', 8.0): 0.207, ('loc', 32.0): 0.003, ('fil', 0.0): 2.0, ('fil', 8.0): 1.961, ('fil', 32.0): 0.092}
+time 20.9 s
+TOTAL: PASS=16 FAIL=0

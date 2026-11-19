@@ -1,0 +1,36 @@
+== A. targets [M]: running quark masses at M_Z, PDG 2024 CKM, NuFIT 6.0 normal ordering
+[PASS] [M] m2/m3, m1/m2: up 3.6e-3, 2.0e-3; down 1.9e-2, 5.0e-2; |V_us|,|V_cb|,|V_ub| = 0.225, 0.042, 0.0037; J = 3.1e-5; PMNS sin^2 = 0.307, 0.561, 0.022; dm21/dm31 = 0.030
+== B. character texture at renormalisable order
+[PASS] [T] for every doublet character c_H in L and 1-3 heavy copies: the light Yukawa block is a monomial (one entry per row and column, translation-invariant: no light-light mixing); every light-heavy singlet entry l_j X_a is filled by exactly one vacuum, sigma_{a-j}; heavy-light needs H x vacuum (dimension five, the Nelson-Barr zero); heavy-heavy is diagonal and bare. All mixing therefore runs through the heavy copies
+[PASS] [T] no tower: a light-light entry between families j != k needs character L_k - L_j in {L_1, L_2}; sigma alone carries only the heavy coset, so the minimal insertion is sigma_t sigma_t'^* (degree 2) for BOTH nonzero differences. Z_3 has one nonzero character up to conjugation, so all three family pairs (12, 23, 13) open at the same order | minimal degrees {1: 2, 2: 2}
+== C. integrating out the heavy copies
+[PASS] [T, checked] integrating out: the light antiquarks are the complement of the heavy combinations, so the light m^dag m = y^T P y with P = 1 - B (B^dag B + M_h^2)^-1 B^dag (B_ja = c_ja sigma_{a-j}); y real, so arg det = 0 exactly while P is complex: the mixing and the CP phase both come from P alone | 300 samples, max rel err 3e-06 (O(v^2/M^2)), max |sin arg det| 1e-16
+== D. scaling with r = sigma/M (fixed couplings, 300 samples, medians)
+[PASS] [T, checked] r << 1: masses are the monomial y values (order one, no hierarchy) and the CKM is a permutation plus O(r^2) in all six off-permutation entries: one common power, no epsilon-tower (|V_us|:|V_cb|:|V_ub| ~ 1:1:1) | slopes of the six sorted off-permutation moduli 1.99 2.00 2.00 2.00 2.00 2.00
+[PASS] [T, checked] r >> 1: P tends to the projector on ker B^dag, so N_h light masses fall as M/sigma and 3 - N_h stay at y v: N_h = 1 gives one light + two heavy, N_h = 2 gives m1 ~ m2 ~ (M/sigma) m3, N_h = 3 gives all three ~ M_a/sigma (ratios set by the bare copy masses). One step of hierarchy per regime, never two | slopes (m1/m3, m2/m3): Nh=1: -1.00,-0.00; Nh=2: -1.00,-0.98; Nh=3: -0.05,-0.06
+== E. fit-free ensembles: shared sigma_t, order-one real couplings, r the only parameter (500 per cell)
+[PASS] [T, checked] theta_bar: arg det(M_u M_d) = 0 in every sample of every cell (shared vacua, both sectors) | 108 cells x 500, max |sin theta_bar| 2e-16
+[PASS] [F] no hierarchy among the angles at any r: median |V_cb/V_us| and |V_ub/V_cb| stay order one (measured 0.19, 0.088) | min medians over cells 0.93, 0.36
+   N_h=1 r=  0.01: median |V_us| 1.55e-04 |V_cb| 3.06e-04 |V_ub| 1.52e-04; m2/m3 6.13e-01 m1/m2 4.41e-01
+   N_h=1 r=100.00: median |V_us| 4.75e-01 |V_cb| 5.17e-01 |V_ub| 4.25e-01; m2/m3 4.80e-01 m1/m2 6.61e-03
+   N_h=2 r=  0.01: median |V_us| 4.07e-04 |V_cb| 5.52e-04 |V_ub| 3.30e-04; m2/m3 6.26e-01 m1/m2 4.39e-01
+   N_h=2 r=100.00: median |V_us| 4.90e-01 |V_cb| 4.89e-01 |V_ub| 4.59e-01; m2/m3 1.18e-02 m1/m2 2.02e-01
+   N_h=3 r=  0.01: median |V_us| 6.27e-04 |V_cb| 8.02e-04 |V_ub| 5.65e-04; m2/m3 5.92e-01 m1/m2 4.67e-01
+   N_h=3 r=100.00: median |V_us| 4.79e-01 |V_cb| 4.70e-01 |V_ub| 5.26e-01; m2/m3 2.30e-01 m1/m2 2.71e-01
+   best per-observable hit fraction over cells (factor 2): u32 0.402, u21 0.358, d32 0.576, d21 0.534, Vus 0.426, Vcb 0.268, Vub 0.256, J 0.172
+   best over cells: all 4 mass ratios 0.0000, all 4 CKM 0.0020, joint hits 0 / 500; anarchy null: masses 0.0000, CKM 0.0000
+   totals over all cells: CKM 4-hits 7 / 54000 = 1.3e-04, mass 4-hits 0
+   CKM-hit cells (N_h, law, blind, r, hits): [(2, 'l', 0, 0.1, 1), (2, 'l', 0, 0.32, 1), (2, 'l', 1, 100.0, 1), (3, 'n', 0, 0.32, 1), (3, 'l', 0, 0.03, 1), (3, 'l', 0, 0.1, 1), (3, 'l', 1, 0.32, 1)]; null exp(i e A) over the same r grid: 2 / 54000
+[PASS] [E] fit-free verdict over 108 cells x 500 (N_h 1-3, two coupling laws, species-blind or not, r = 0.01-100): no sample hits all eight quark observables within x2 and no sample hits the four mass ratios; the CKM-only 4-hit rate (about 1e-4, scattered over 7 cells) is within a factor ~4 of a structureless one-parameter small-angle null: no predictive edge | CKM rate 1.3e-04 vs null 3.7e-05
+== F. leptons: same structure, Dirac neutrinos (nu^c rows, H~), shared sigma_t
+   anarchy null: PMNS-like 0.0060
+   r =  0.01: PMNS-like angles (s12 0.2-0.45, s23 0.35-0.65, s13 0.01-0.05) 0.0000, three angles within x2 0.0000, all six 0.0000
+   r =  0.10: PMNS-like angles (s12 0.2-0.45, s23 0.35-0.65, s13 0.01-0.05) 0.0000, three angles within x2 0.0010, all six 0.0000
+   r =  1.00: PMNS-like angles (s12 0.2-0.45, s23 0.35-0.65, s13 0.01-0.05) 0.0020, three angles within x2 0.0170, all six 0.0000
+   r = 10.00: PMNS-like angles (s12 0.2-0.45, s23 0.35-0.65, s13 0.01-0.05) 0.0020, three angles within x2 0.0170, all six 0.0000
+[PASS] [F] PMNS needs r_lepton >~ 1 (large theta_12, theta_23 appear only when sigma ~ M), the CKM's small angles need r_quark << 1: one set of vacua serves both only if the lepton copies are lighter than the quark copies by about r_q/r_l (supplied); at r >~ 1 the lepton sector is anarchic, with no structure beyond anarchy | PMNS-like fraction 0.0000 (r 0.01) -> 0.0020 (r 1) -> 0.0020 (r 10)
+   Dirac nu: order-one y needs M/sigma ~ m_nu/v = 2e-13; the dimension-five qc x L entry v sigma/Lambda caps sigma < 5e+05 GeV,
+   so the 'heavy' neutrino copies would sit near M ~ 1e-07 GeV: not heavy, the suppression is not available
+[PASS] [E] Dirac neutrino masses are not explained: with sigma below the dimension-five cap the copies would sit near 100 eV | M ~ 1e-07 GeV
+runtime 1.1 s
+TOTAL: PASS=11 FAIL=0

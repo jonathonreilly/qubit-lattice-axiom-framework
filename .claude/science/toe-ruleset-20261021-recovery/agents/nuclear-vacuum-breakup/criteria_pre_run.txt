@@ -1,0 +1,38 @@
+nuclear-vacuum-breakup: criteria fixed BEFORE any run (2026-10-26)
+
+Inputs (inherited [F] upstream, unchanged): constituent E = p + m^2/2p + c p^3/E*^2; c_q = -S/6 + 1/24,
+c_g = -S/24; rays axis S=1 (c_q=-1/8), sky S=3/5 (c_q=-0.0583), body S=1/3 (c_q=-1/72); E* = 1.217e18 GeV.
+Nucleon dispersion: taken UNIVERSAL, c_N = c_q at every momentum (the task's hypothesis); bracket with
+c_N = 0.214 c_q (the upstream low-P additive value) as the weak-driver end.
+
+(1) Adversarial recheck of "nuclei cannot follow the flow"
+ T1 [exact, sympy] At matched velocities (x_i = 1/A) the LIV of A free universal nucleons equals that of the
+    additive bound nucleus (both c P^3/A^2): is the driver zero there? Is the matched point stationary,
+    and what is the sign of the LIV Hessian in the sharing direction? Driver = convexity of x^3 (if
+    negative-definite curvature) or = sum x^3 < 1 (if a first-order term exists). Decide which.
+ F1 Exact light-front 2-body diagonalisation at fixed P (rank-one separable kernel, Yamaguchi-type form
+    factor in the invariant relative momentum, beta supplied; strength fixed by the measured deuteron
+    binding 2.2246 MeV at lambda=0; LIV lambda sum c x^3, lambda = 2P^4/E*^2; full 3D: x and k_perp).
+    Checks: closed-form inner integral vs direct 2D quadrature (rel < 1e-6); binding reproduced (< 1e-9).
+    Report: bound-state c_eff = dM_B^2/dlambda (Hellmann-Feynman) vs additive c/4 and universal c;
+    P_open where the bound pole meets the global continuum minimum (kinematic breakup), P_gone where no
+    bound pole remains anywhere. Decision rule:
+      NO BREAKUP  if a bound pole stays below the global continuum minimum to P = 1e21 eV on all rays;
+      BREAKUP REAL if it does not (give P_open per ray), whether by the pole dissolving or by the
+      frozen pole becoming a resonance embedded in the far continuum.
+ F2 Cluster model N + (A-1) for A = 3 (t, 3He), 4He, 14N, 56Fe: same separable kernel in the invariant
+    mass, strength fixed by the lowest single-nucleon separation energy (supplied measured), core at its
+    additive coefficient c/(A-1)^2; P_open per ray for c_N = c_q and 0.214 c_q; beta scan {0.2,0.286,0.4} GeV.
+(2) Rate: width from the complex pole of the exact separable amplitude, Gamma_M2 = 2 Im I/Re I',
+    lab rate Gamma = Gamma_M2/(2P), decay length L = hbar c/Gamma, at P = 1.1, 1.5, 2 x P_open.
+    HARD WALL if L < 1 kpc within 2 x P_open; SOFT if L > 1 Mpc there.
+(3) Confrontation (values web-verified, cited in note): Amaterasu 2.44e20 eV (TA), Fly's Eye 3.2e20 eV,
+    Auger composition (heavy <lnA> at 50-100 EeV). Verdict:
+      EXCLUDED  if the computed hard wall for every nucleus heavier than He lies below an energy at which
+                the measured composition requires nuclei heavier than He (on all rays);
+      TENSION   if exclusion holds only on some rays / within the beta, c_N bracket, or relies on a
+                composition reading with stated systematics;
+      CONSISTENT otherwise.
+    If EXCLUDED: name the minimal rescue in rule terms, no fitted numbers.
+Runner: seeded, AUDIT_TIMEOUT_SEC = 120, < 6000 chars, ends TOTAL: PASS=N FAIL=0. PASS lines test the
+computation's correctness/checks; the physics verdict is reported, not forced.

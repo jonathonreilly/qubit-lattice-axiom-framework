@@ -1,0 +1,126 @@
+---
+claim_id: zooming_the_cube_cell_gives_no_coarse_zone_corner_nodes_and_its_fine_corner_triplet_is_isolated_only_in_a_mass_wide_copy_mass_interval_outside_the_gapped_regime_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "CL-1's cube tick on flat edges (one mode per site, face phase -1, both tilings, copy factor exp(i(Mc/4)(1-s)R_e) before and after the even half-tick), Bloch over 2Z^3, read one rung up by zoom b = 2 (a 2x2x2 block of cells = 64 sites as one coarse site, Bloch over 4Z^3). (A) Exact: the coarse Floquet fibre at Q is the union of the fine fibres at K = (Q + 2 pi n)/2; the cell kinetic D = R_e - R_o obeys |D|^2 = (2/3) sum(1 - cos K_i), so for every b the zoomed kinetic vanishes only at Q = 0 and the coarse X, M, R carry floors sqrt(2/3), sqrt(4/3), sqrt(2), never a zero; the wall-families cell slab rebuilt on the block has no coarse-corner wall node for any layer mass, at most the two fine copies at Q = 0 with opposite hands; the Floquet coarse corners are step-heavy (gap > 0.5 eps). (B) The fine zone corners, all folded into the coarse site: near the copy-mass closure Mc -> 2 eps the four lowest states at a corner with n pi-components form an isotropic Dirac at the light speed with mass mu + n (2 eps - Mc - mu)/3 (a Wilson-type ladder, r = (2 eps - Mc - mu)/6); exactly |w_R| = |2 eps - Mc|; inside the coarse site the X and M quartets are turn triplets; the ladder is affine in n, so the lightest corner multiplet is always a singlet; the masses change sign at Mc near 2 eps + mu (3/n - 1), all outside CL-1's gapped regime Mc < 2 eps; a copy-mass interval of width about mu beyond 2 eps + mu/2 is the only range in which the X triplet alone inverts. No forced family window. Not covered: interactions, gauge fields, a Floquet slab, wall binding across a copy-mass wall, curved edges."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - the_cube_cell_slab_wall_holds_at_most_two_opposite_handed_copies_so_families_are_not_wall_nodes_while_the_supplied_wilson_kernel_gives_a_turn_triplet_only_in_an_unforced_window_bounded_theorem_note_2026-10-23
+runner: scripts/zooming_the_cube_cell_gives_no_coarse_zone_corner_nodes_and_its_fine_corner_triplet_is_isolated_only_in_a_mass_wide_copy_mass_interval_outside_the_gapped_regime_2026_10_23.py
+---
+
+# Zooming the cube cell gives no coarse zone-corner nodes, and its fine-corner triplet is isolated only in a mass-wide copy-mass interval outside the gapped regime
+
+Claim type: bounded_theorem (exact blocking and kinetic identity; labelled finite diagnostics of the supplied free tick).
+Runner: runner.py, TOTAL: PASS=11 FAIL=0, 17 s, 141 MB peak, 4.3 k characters; run under a unique filename.
+Axioms unchanged. No rule adopted.
+
+## Question
+
+Zoom first: read a 2x2x2 block of CL-1 cells as one coarse site. Does the coarse slab kernel get coarse zone corners
+with Wilson-type structure, and does the coarse 'Wilson mass', fixed by the fine eps and copy mass Mc rather than chosen,
+fall in a window with a three-node turn triplet? If so, is that window forced?
+
+Repo first. Builds on wall-families (cell slab: D, B, eps algebra, at most two opposite-handed copies; the Wilson triplet
+window (2,4) is unforced), generation-rungs (fine corners fold into a coarse cell in orbits 1, 3, 3, 1 with triplets
+exactly degenerate; one zoom step leaves the light mass unchanged), families-from-tastes (tastes E + E, never 1 + 3),
+two-tiling-family-space (turn-CP lemma: a turn triplet with turn-invariant masses gives J = 0), six-cube-families (6^3
+zoom-3 shells). CL-1 flat-edge band text (partner at R gapped while MN < 2 eps) is rederived here as B2.
+
+PRE-SET PASS CRITERIA (written before the first runner run, 2026-10-23; exploration scripts explore1-4.py only located the corners)
+
+Model: CL-1's cube tick on flat edges (one mode per site, face phase -1, both tilings,
+U = exp(i(eps+mu/2)R_o) C exp(-i(eps-mu/2)R_e) C, C = exp(i(Mc/4)(1-s)R_e)), Bloch over 2Z^3 (cell) and over 4Z^3
+(zoom b = 2: a 2x2x2 block of cells = 64 one-mode sites as one coarse site). Coarse slab = wall-families' cell slab
+(D = R_e - R_o, B = R_e + R_o, eps-chirality, (1 - s)R_e copy term) rebuilt on the 64-site block.
+
+A1 [T] coarse Floquet fibre at random Q equals the union of the eight fine fibres K = (Q + 2 pi n)/2: eigenphase defect < 1e-12.
+A2 [T] |D(K)|^2 = (2/3) sum_i (1 - cos K_i) on all 8 modes (defect < 1e-12, random K); on the b = 2 coarse kernel the
+       kinetic floor at coarse X, M, R is sqrt(2/3), sqrt(4/3), sqrt(2) (to 1e-12): never zero, ratio 1 : sqrt2 : sqrt3
+       (Wilson corners need a zero and 1 : 2 : 3).
+A3 [F] coarse slab (Ls = 12, Mc = 1): over m in {0.5, 1.5, 2.5, 3, 3.5, 5, 7} no wall zero mode at any coarse corner
+       X, M, R (tol 1e-3); at coarse Q = 0 the copy counts equal the fine counts (1,0), (1,1), (0,1), (0,0)...: never > 2.
+A3b [F] chirality of the lone coarse-wall copy at (m, Mc) = (0.5, 1) and (2.5, 1): opposite signs, far wall opposite.
+A4 [F] Floquet coarse-corner gap (min |w| over the fine preimages of coarse X, M, R) > 0.05 eps for eps in {0.3, 0.9},
+       mu = 0.05, Mc in {0, 0.5 eps, eps, 1.5 eps}.
+B1 [F] near the copy-mass closure (delta = 2 eps - Mc = 0.01; eps 0.3, 0.9; mu 0, 0.05) the four lowest states at each
+       fine corner with n pi-components form an isotropic Dirac with speed = the light speed (rel. 1e-3) and mass
+       |m_n| = |mu + n (delta - mu)/3| (abs. tol 2e-3): a Wilson ladder, 2r = (delta - mu)/3.
+B2 [T]/[F] |w_R| = |2 eps - Mc| exactly at the R corner for mu in {0, 0.05}, Mc scan (tol 1e-10).
+B3 [F] the corner masses vanish at Mc_n* = 2 eps + mu (3/n - 1): X at 2 eps + 2 mu, M at 2 eps + mu/2, R at 2 eps
+       (located by minimising |w|; location within 0.1 mu, |w| < 1e-5 there); Gamma never (stays mu).
+B4 [T] zoom b = 2: a turn lift on the 4^3 block commutes with the coarse Floquet operator at Q = 0 (< 1e-12); the
+       low spaces of the three X (and three M) corners inside the coarse site are each closed under it with eigenvalue
+       multiset invariant under multiplication by w = e^(2 pi i/3) (turn triplet); Gamma and R each closed.
+B5 [F] ordering: delta = 3 mu gives Gamma < X < M < R, delta = mu/3 gives R < M < X < Gamma (corner masses).
+B6 [F] a copy-mass interval isolating the triplet: at Mc = 2 eps + mu and 2 eps + 3 mu (eps 0.3, mu 0.05) the bulk is
+       gapped (zone min |w| on 10^3 > 1e-3) and, between them, only the X mass crosses zero (B3 positions).
+Result framing is fixed in advance: A = whether zoom creates coarse corner nodes; B = whether a triplet window exists,
+for what fine range, and whether that range is forced.
+
+## Results
+
+A. Exact zoom.
+- A1 the coarse Floquet fibre equals the union of the eight fine fibres (2e-15). Zoom is a relabelling: it cannot create
+  a kinetic zero, a node or a light state that the fine walk lacks.
+- A2 |D(K)|^2 = (2/3) sum(1 - cos K_i) on all eight cell modes (1e-15). The cell kinetic is already doubler-free: it
+  vanishes only at K = 0. Under zoom by any b, D_c(Q) vanishes only at Q = 0, since fine K = 0 has only that image. The
+  coarse X, M, R floors are 0.8165, 1.1547, 1.4142, in the ratio 1 : sqrt2 : sqrt3, and never zero. A Wilson corner has
+  a kinetic zero with a mass ladder 1 : 2 : 3. The coarse corners have neither.
+- A3 the cell slab rebuilt on the 64-site block (Ls = 12, Mc = 1) has no zero mode at any coarse X, M or R for m in
+  {0.5, 1.5, 2.5, 3, 3.5, 5, 7}. At Q = 0 the (s+, s-) counts are (1,0), (1,1), (0,1), then 0, exactly the fine windows.
+  There is no triplet window at any layer mass. A3b: the lone copies are s+ +1 and s- -1, with the far wall opposite.
+- A4 the Floquet gap at the coarse corners is 0.53 to 0.82 eps over the scan. The coarse corners are step-heavy.
+
+B. The fine zone corners, which zoom folds into one coarse site.
+- B1 near the closure (delta = 2 eps - Mc = 0.01) every fine corner carries an isotropic 4-component Dirac at exactly
+  the light speed (rel 1e-3; v = 0.1706 = sin eps/sqrt3 at mu = 0), with
+  |m_n| = |mu + n (delta - mu)/3|. For example, eps 0.3, mu 0.05 gives 0.0500 / 0.0372 / 0.0239 / 0.0100.
+  This is a Wilson-type ladder with r = (2 eps - Mc - mu)/6 per tick (r/v = 0.53 at that point), and the form is
+  forced by the tick. At delta = mu all eight corners are degenerate: the naive-fermion point.
+- B2 exact: |2 eps - Mc| is a quasi-energy at R for every Mc (6e-16). This rederives CL-1's 'partner gapped while
+  MN < 2 eps'.
+- B3 the pre-set positions failed for X at (0.3, 0.05): the crossing is at 0.7285, not 0.70. Recorded as a result: every
+  non-Gamma corner mass does cross zero, R exactly at 2 eps, M at 0.6281 (linear 0.6250), X at 0.7285 (linear 0.7000).
+  The deviation is of order mu^2/eps: 0.57 mu at (0.3, 0.05), and 0.10 mu and 0.12 mu at (0.3, 0.01) and (0.9, 0.05).
+  Gamma never crosses; it stays at mu.
+- B4 the turn lift commutes with the coarse Floquet operator (1e-16). Inside the coarse site the X quartets (12-dim)
+  and the M quartets are turn-closed, with spectra invariant under multiplication by w: turn TRIPLETS. Gamma and R are
+  singlets.
+- B5 the ladder is affine in n. At delta = 3 mu the order is Gamma < X < M < R; at delta = mu/3 it is
+  R < M < X < Gamma. The lightest corner multiplet is always a singlet, and a triplet is never the lightest set.
+- B6 at Mc = 2 eps + mu and 2 eps + 3 mu the bulk is gapped (0.013 and 0.005), and only the X mass changes sign
+  between them. Both ends lie outside CL-1's regime Mc < 2 eps.
+
+## Answer
+
+Zoom forces no family window. (1) Coarse zone corners: exact blocking cannot make a kinetic zero, and the cell kinetic
+has none off K = 0. So the coarse X, M, R have no Wilson structure, and the coarse slab holds at most the two fine copies
+at any m. (2) The Wilson-type structure is real but sits one rung down, at the fine zone corners, which zoom folds into
+the coarse site as 1 + 3 + 3 + 1 internal Dirac multiplets. The tick fixes their masses as an affine ladder in n, with
+the R mass exactly |2 eps - Mc|. (3) A triplet alone changes its mass sign only for a copy mass in an interval of width
+about mu: here (2 eps + mu, 2 eps + 3 mu), bounded below by the M crossing near 2 eps + mu/2 and containing the X
+crossing near 2 eps + 2 mu. That interval is outside CL-1's gapped regime (Mc < 2 eps, B2), its width is set by the
+species mass angle (relative width ~ mu/eps, about 1e-20 or less for physical species, an estimate), and Mc is supplied. Inside
+CL-1's regime no corner inverts, and the X triplet sits between the light copy and the M triplet, at mass
+mu + (delta - mu)/3. Its splitting from the light copy is of order the step unless Mc is tuned to 2 eps. Not forced.
+
+Cleanest remaining family source: the fine-corner 1 + 3 + 3 + 1 ladder inside one coarse site. It is forced in form,
+equal in speed and turn-labelled, so a RULE that fixes Mc relative to 2 eps (for example, a copy mass set by the step
+itself) would turn it into a framework-native family candidate. But the affine ladder always gives 1 + 3 (Gamma + X)
+as the lightest four, not 3, and the turn-CP lemma still gives J = 0 for turn-invariant masses. The other open routes
+are unchanged: the two-tiling parent-cube triplet (two-tiling-family-space B) and stacked copies (families-mod-3).
+
+## Gate (anti-smuggling)
+
+No rule proposed. Choosing Mc in (2 eps + mu/2, 2 eps + 2 mu) to isolate the triplet would be a fitted choice and
+FAILS the gate. Prediction not built for (UNTESTED): a copy-mass domain wall that crosses Mc = 2 eps binds the R corner
+first, so any wall content from the copy mass begins as a singlet, never a triplet.
+
+## Smuggling review
+
+Forced: the blocking identity, the kinetic identity and the coarse floors, the absence of coarse-corner wall nodes,
+the ladder's form and its equal speeds, the exact R relation, the ordering and turn-triplet structure, and the crossing
+positions as functions of (eps, mu). Supplied: the values of eps, mu and Mc; the slab kernel (Shamir layer hop, layer
+mass m, Ls); free fields; the Hamiltonian (not circuit) slab. Not shown: a Floquet slab, wall binding across a
+copy-mass wall, curved edges, interactions or gauge fields.

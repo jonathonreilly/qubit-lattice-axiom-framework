@@ -1,0 +1,70 @@
+---
+claim_id: d4_lattice_cp_is_exact_and_wall_preserving_but_the_register_channel_cp_parities_are_uniform_so_hermitian_masses_need_a_supplied_120_only_cp_odd_vacuum_bounded_theorem_note_2026-10-26
+claim_type: bounded_theorem
+claim_scope: "(1) Exact: lattice CP_g = (improper W(F4) spinor lift S_g) x (charge conjugation C = g0 g2), psi -> C S_g^-T psibar^T with no fifth-direction reflection, is a symmetry of the D4 fixed-point domain-wall slab for all 576 improper g (Shamir form exactly; Borici form up to the s-independent local similarity X = cA - 1), and of the wall-fermion operator D_eff (3e-15). C alone needs the wall reflection; CP does not, so it is not the face swap. It also leaves invariant the far-wall Spin(12) term sum_a {B_a, B_a^+} (occupation-basis conjugation on the 16 is Spin(10)-covariant, with an outer automorphism) and the Cayley 4-form on the 4 spinor modes (det C S^-T = 1). It maps the D4 root plaquettes to themselves, and the theta carrier is CP-odd, so theta_gauge is 0 or pi. Luscher's projector split is not CP-symmetric (as in the literature); the slab is. (2) Exact: the matrix-level parity of the pre-registered definition is (+,-,+) for (10, 120, 126), but this is the transpose sign (-1)^(k(k-1)/2) of C Gamma^(k). The Grassmann-correct parity of the full bilinear, family index included, is uniform (+,+,+), also after W_int is multiplied by a random Spin(10) element: every Yukawa obeys Y -> Y^*. (3) Finite, 200 seeded samples, register Clebsches on SU(3)_c x U(1)_em-invariant vev tensors: with all vevs CP-even, J = 0 (max 9e-30). With CP broken only by the 120 vev, M_u and M_d are Hermitian (8e-29), arg det is 0 or pi, and median |J| is 8e-3. A CP-odd 10 or 126 vev gives a generic theta_tree (median 0.5 rad). The arg-det bit is unfixed: pi in 33% of samples. Estimate: the one-loop theta-bar after spontaneous breaking, ~6e-3 x lambda_mix, needs lambda_mix < ~1e-8."
+upstream_dependencies:
+  - d4-zoom-chirality (PR #10099; D* kernel, Borici/Shamir slab, W(F4) lifts)
+  - d4-far-wall-gapping (Spin(12) pair B_a, Cayley 4-form, spinor lifts in SU(4))
+  - face-swap-parity (#10079), slab-parity-strong-cp (wall-swap twists), strong-cp-revisit (theta carrier odd under K/inversion)
+  - cp-source-new-tick (#10068: kept antiunitary forces J = 0)
+runner: scripts/d4_lattice_cp_is_exact_and_wall_preserving_but_the_register_channel_cp_parities_are_uniform_so_hermitian_masses_need_a_supplied_120_only_cp_odd_vacuum_2026_10_26.py
+---
+
+# D4 lattice CP is exact and wall-preserving, but the register's channel CP parities are uniform, so Hermitian masses need a supplied 120-only CP-odd vacuum
+
+Runner: runner.py, TOTAL: PASS=11 FAIL=0, 13 s, ~0.6 GB peak, 4.8 k characters, seeded, AUDIT_TIMEOUT_SEC = 120.
+- Tested under a unique filename (scratch/d4_lattice_cp_parities_test_run.py, removed afterwards).
+- Laptop only, one BLAS thread, nice 10.
+- Criteria were fixed in criteria_pre_run.txt before any code ran. Axioms are unchanged, the CL is not edited, and no rule is adopted.
+- Labels: [T] exact, [F] finite/seeded diagnostic, [E] estimate with supplied literature numbers.
+
+Mismatches with the pre-registration (recorded, not tuned):
+- (a) 1a said "to 1e-10 with no similarity". The Borici slab is CP-covariant only up to the s-independent local similarity X = cA - 1, which is a field redefinition with a constant Jacobian. Shamir needs none, and D_eff is exact.
+- (b) The pre-registered parity definition, W^T K^A W = eta r_A (K^A)^+, is flawed. It compares a Grassmann form with its matrix adjoint and drops the family index. It returns (+,-,+), which literally is the PASS pattern. Its sign, however, is only the s/a/s symmetry of C Gamma^(k). The correct statement is 2b, which gives (+,+,+). The verdict follows 2b.
+- (c) A first coding bug in the Cayley check (a scalar added to a matrix) was fixed. The physics was unchanged.
+
+## 1. Exactness [T]
+- C = g0 g2 satisfies C g^T C^-1 = -g and C g5^T C^-1 = g5. The fixed-point symbol satisfies C D*(p)^T C^-1 = D*(-p) (2e-15).
+- Slab (Ls = 8, mf = 0.1). C alone needs the reflection s -> Ls+1-s, and so does P (d4-zoom-chirality 2c). Their composite CP_g needs none:
+  M D5(p)^T M^-1 = X^-1 D5(-g p) X with M = C S_g^-T, for all 576 improper g (3e-15). The J version is off by >= 0.51.
+  The wall-fermion operator obeys M D_eff(p)^T M^-1 = D_eff(-g p).
+  So CP maps the near wall to itself: it is a new symmetry, not the failed face swap. (This is the standard domain-wall fact that P and C each reflect s and CP does not.)
+- Far wall. psi -> W psi^+ with W_int = 1 (occupation-basis conjugation) is Spin(10)-covariant: -t^T = s_a s_b t, an outer automorphism with R = diag(+,-,...,+,-), as 16 -> 16bar requires.
+  It maps B_a -> sum_b U_ab B_b^+ with U unitary for any unitary Weyl block, so the Spin(12) Casimir is CP-invariant.
+- Cayley 4-form. It is invariant under the Fock particle-hole with W4 = C S^-T, and det W4 = 1 for all 576 lifts (4e-14).
+- Links. The improper g permute the 24 D4 roots, so the plaquette action is invariant. eps F F is P-odd and C-even, so CP forbids theta_gauge except 0 or pi.
+- Informational. The Luscher split (P_hat on psi, P on psibar) is not CP-symmetric: the image projector differs from P_+ by 0.85, cf. Fujikawa-Ishibashi-Suzuki. The D4 route uses the slab, which is exact.
+
+## 2. Channel parities [T]
+- With the family index Y (symmetric for 10 and 126, antisymmetric for 120), the CP image of channel k is channel k with Y -> Y^*. It carries one common factor (phase x wedge^k R) that is the same for k = 1, 3, 5.
+- The pattern is (+,+,+), and it is unchanged when W_int is multiplied by a random Spin(10) element.
+- The (-1)^(k(k-1)/2) of the menu's (+,-,+) is cancelled by the antisymmetry of Y120.
+- So "mass-feeding channels enter with intrinsic CP parity (+,-,+)" is FALSE on the register: all Yukawas are real in the CP basis.
+
+## 3. Mass matrices [F] (200 seeded samples, register Clebsches, real Yukawas)
+| vacuum | median |J| | Hermitian | arg det | frac pi |
+|---|---|---|---|---|
+| all CP-even | 5e-32 (max 9e-30) | no (real) | {0, pi} | 0.37 |
+| 120 CP-odd only | 8.4e-3 | yes (8e-29) | {0, pi} | 0.33 |
+| 10 CP-odd only | 1.2e-2 | no | generic, median 0.50 | 0 |
+| 126 CP-odd only | 8.3e-3 | no | generic, median 0.57 | 0 |
+- The Grimus-Kuhbock Hermitian shape does appear. It comes from WHERE the CP-odd vacuum sits (only in the antisymmetric channel), not from the parities.
+- Nothing on the register forces that vacuum alignment. It is supplied. A CP-odd 10 or 126 component returns theta of order one.
+- The bit: theta_tree = 0 or pi is not fixed (pi in 33%).
+
+## 4. Loop quality [E]
+- Hermiticity is unprotected after spontaneous breaking. The one-loop estimate is theta_bar ~ (1/16 pi^2) lambda_mix y^2 sin phi ~ 6e-3 lambda_mix (supplied scale from parity/Hermitian-mass literature: Babu-Mohapatra, Barr-Chang-Senjanovic, Hall-Harigaya).
+- So theta_bar < 1e-10 needs lambda_mix < ~1e-8, or a protection. This is order of magnitude only.
+
+## Verdict (pre-set criteria, corrected definition): FAIL
+- Lattice CP IS exact and wall-preserving. This is new on D4 and worth keeping. It gives theta_gauge in {0, pi}, and with CP-even vacua it gives J = 0 (the record-arrow death, as in #10068).
+- The channel parities are uniform (+,+,+), so P1's law does not hold as stated.
+- What survives is a conditional: if CP breaks only in the 120 vacuum, then the masses are Hermitian, J is nonzero, and theta_tree is 0 or pi with one unfixed bit, plus a loop-quality problem.
+- No CL text is proposed. A candidate for later is a vacuum-alignment rule that keeps the CP-odd vacuum in antisymmetric channels; it is unforced and UNTESTED.
+
+## Smuggling gate
+- (1) No fitted numbers.
+- (2) Supplied: the 16 with its occupation basis, the 10/120/126 channel content, the Q_em assignment, random Yukawas and vev directions, the 120-only alignment in 3b, and the loop scale.
+- (3) The exact CP gives an untested prediction: theta_gauge in {0, pi} on any D4 slab.
+- (4) Bent: nothing beyond the 4-mode register (working candidate).
+- Follow-up not done: CP x D-parity (generalized CP with L<->R). The first trial element G5 G9 broke colour, so a colour-preserving D-parity is needed. It could give Hermitian masses as an unbroken generalized-CP statement rather than through vacuum alignment.

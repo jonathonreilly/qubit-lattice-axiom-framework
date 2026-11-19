@@ -1,0 +1,25 @@
+== A. 1+1D staggered chain h = (i/2) sum (c_j^+ c_j+1 - h.c.): the template
+[PASS] A1 [T] Kitaev-pairing axial charge Q_A (BdG [[cos k, i sin k], [-i sin k, -cos k]]): conserved, Q_A^2 = 1 (integer spectrum), sum of commuting Majorana pairs (a_j, b_j+1); Q_A = +1 on the k = 0 node, -1 on the k = pi node (opposite movers) | velocities -1, +1
+[PASS] A2 [T] [Q_V, Q_A] != 0 and the Lie algebra they generate grows linearly with L (Onsager): each charge alone is a U(1), the pair is not U(1) x U(1) | dim at L = 4..12: [5, 8, 11, 14, 17]
+[PASS] A3 [T] the single-chirality charge (Q_V - Q_A)/2 is not quantised: its BdG levels |sin(k/2)| run from 0 to 1, so by T1' no split into commuting local parts exists (the natural split fails) and it can carry no link | |[q_R(0), q_R(1)]| = 0.50
+[PASS] A4 [T] T1 in 1+1D (#R(+-q) = #L(+-q) for every |q|): the template (R: -1, L: +1) passes; the anomaly-free 3450 set (R: 5, 0; L: 3, 4; 25 + 0 = 9 + 16) fails, so no free chain carries it as an exact quantised one-body charge
+== B. CL-1 cube tick (equal edges): staggered particle-hole map and exact quantised non-on-site charges
+[PASS] B1 [T] every face carries pi flux, so a site gauge makes both tilings' hops real; then the staggered particle-hole map S conj(u) S = u holds for every step, mass and real hop weights (curved edges); the copy mass and link phases break it | copy mass 0.093, links 0.353
+[PASS] B2 [T] three exact quantised non-on-site charges from conserved unitaries Y (translation by one block, the tick itself, the glide G = U_o S V): Q^2 = 1, particle-hole consistent, conserved; each has pairing and fails to commute with fermion number | max err 6.0e-15; pairing 0.50 0.25 0.25
+[PASS] B3 [T] the translation charge is a perfect Majorana matching (commuting local parts, so individually gaugeable) and with fermion number generates an algebra growing with length (Onsager type) | dims at Lx = 4..12: [2, 4, 5, 7, 8]
+[PASS] B4 [T] backgrounds: curved edges break the translation charge but not the tick charge; the mass and the copy mass break the glide charge; link phases break every pairing charge (B1: S o conj is charge conjugation) | curved 0.044, mass 0.043, copy mass 0.070
+[PASS] B5 [T] on the 8 light states at Gamma (two Dirac copies, speed 1 site/tick): the translation and tick charges act as fermion number (+1, no pairing); the glide charge is pure pairing (a Pauli-Gursey flavour turn); the glide itself is -g5 (discrete) | tr(G g5)/8 = -1.000
+== C. every range-1 conserved one-body operator (Bloch, exact on the 5^3 grid)
+[PASS] C1 [T] without the copy mass the light image of the range-1 conserved one-body operators is all of {1, g5} x M2(copies): chiral conserved operators exist; [F] the minimal one equal to g5 at Gamma is dispersive, with levels falling from 1 to near 0 | dim 260; levels |.| in [0.0001, 0.862]
+[PASS] C2 [T] with the copy mass (M = 0.3) the light image of the number-conserving ones is fermion number alone and the pairing ones vanish on the light copy: no range-1 conserved one-body operator acts on it chirally, on-site or not | dims 44 + 3 pairing; g5 residual 0.064
+== D. T1: a one-body charge with K-independent spectrum is vector-like on the massless content
+[PASS] D1 [T] H': purely imaginary in the real gauge (so c -> c^+ is a symmetry and Kitaev-type pairing charges are exact); its on-site sublattice charge S is quantised and chiral node by node, with axial charges summing to zero over the four massless Dirac points (light, mirror at Gamma; light, mirror at R), as T1 requires | S axial: -1 +1 +1 -1
+[PASS] D2 [T] exact fractions: the 16 hypercharges (left-handed, with nu_R) are anomaly-free (sum y = sum y^3 = 0) but not symmetric under y -> -y for any family number (+1/6: 6N, -1/6: 0); 16 + 16bar is; the axial charge of one Dirac (-1, -1) is not | so no free update with this light content conserves a quantised one-body hypercharge, on-site or not
+== E. measured checks
+[PASS] E1 [T] the charges leave the update unchanged: strict cone of 2 sites per tick, light speed sin(eps)/sqrt3 = 1/2 block per tick, partner at R gapped at exactly +-2 eps (no doubler is released; the translation charge gives it -1) | reach [2, 4, 6]
+   [M] V - A: by T1 and C2 every link CL-3 can attach couples vector-like; parity-violating weak observables then vanish,
+       against measured mu-decay P_mu xi = 1.0008 (TWIST) and the neutron beta asymmetry A = -0.1196: the route fails as a free update
+elapsed_seconds 5.6
+theorems/exact: A1-A4, B1-B5, C1-C2 (C1 last clause finite), D1-D2, E1. Supplied: the CL-1 tick and H', eps = pi/3, M = 0.3, mu = 0.1,
+  random edge weights and link phases, the SM 16 (for D2). Cited: Nielsen-Ninomiya, Chatterjee-Pace-Shao, Gioia-Thorngren, TWIST, PDG.
+TOTAL: PASS=14 FAIL=0

@@ -1,0 +1,114 @@
+---
+claim_id: slab_thickness_one_integer_does_not_set_the_hierarchies_fit_only_and_forced_versions_fail_bounded_theorem_note_2026-10-24
+claim_type: bounded_theorem
+claim_scope: "Counting and null test of R2 ('slab thickness Ls as the single scale') on the Wilson domain-wall slab of chiral-tick-form (overlap |1-m|^Ls, rederived at k = 0: ratio 0.4000 per layer at m = 0.6, exactly 0 at m = 1). (1) v/M_P = 2.0e-17 needs Ls/xi = 38.4 (Ls = 42 at m = 0.6), but m is free in (0,2), so every integer Ls has an exact m (Ls = 10, 20, 42, 80 -> m = 0.979, 0.854, 0.600, 0.382): one number fitted by one effective real. The identification v = M_P |1-m|^Ls is excluded: the same overlap sets the light-mirror residual mass m_res = v, while m_nu < 0.45 eV needs Ls/xi >= 65.5; any v/M_P = overlap^p needs a CHOSEN p <= 0.587. (2) v' = M_P (v/M_P)^(1/2) = 5.5e10 GeV lies in the face-swap window [1e8, 1e11] GeV, but the window is r in [0.484, 0.664], a log-uniform v' lands there with chance 0.18, 2 of 11 rationals with q <= 6 land there, and no rule forces r = 1/2: coincidence level. (3) Integer depths with one base b for e, u, d (six log ratios): scanned min mean fractional residual 0.118 (b = 0.756) vs null median 0.092, p = 0.94 (jitter null) and 0.91 (uniform null), N = 4000; fixed b = 0.4: p = 0.19; b = 0.4^c, c = 1..4: p = 0.58. No compression. A one-layer Higgs channel gives a rank-1 Yukawa (exact). (4) Forced equal depth spacing predicts m2^2 = m1 m3 per sector and equal ln(m3/m1) across sectors; measured m2^2/(m1 m3) = 12.4 (e), 1.71 (u), 0.40 (d) and ln(m3/m1) = 8.2, 11.7, 6.9: falsified. Supplied masses (Xing-Zhang-Zhou 2011, M_Z), M_P = 1.22e19 GeV as cutoff, v, the v' window and the KATRIN bound. Not covered: a finite-width (Gaussian) wall, interactions, a rule that fixes m, family-dependent terminations, CKM."
+upstream_dependencies:
+  - a_domain_wall_tick_with_the_layer_direction_as_space_puts_one_weyl_cone_on_each_wall_but_the_circuit_forces_the_mirror_onto_the_far_wall_bounded_theorem_note_2026-10-23 (chiral-tick-form draft)
+  - the_family_class_tick_gives_no_family_label_from_the_copy_mass_slab_depth_zoom_rung_or_record_cadence_and_its_copy_mass_keeps_the_family_fixing_antiunitary_bounded_theorem_note_2026-10-24 (family-labels draft)
+  - copy-sign-nelson-barr draft (J ~ 1e-11 at Ls = 11 from the same overlap)
+  - face-swap-parity draft (v' window [1e8, 1e11] GeV, v' SUPPLIED)
+  - wizards/w1-shortest-program (integer-power flavour codes: no compression)
+runner: scripts/slab_thickness_one_integer_does_not_set_the_hierarchies_2026_10_24.py
+---
+
+# One slab thickness does not set the hierarchies: the free versions are fits and the forced versions fail
+
+Claim type: bounded_theorem. Labels: [T] exact, [F] finite diagnostic or count, [S] estimate or reading.
+Runner: runner.py, TOTAL: PASS=11 FAIL=0, 1.1 s, 133 MB peak, 2.2 k characters; tested under a unique filename
+(scratchpad slab_thickness_scale_test_run.py, deleted). Criteria fixed first in criteria_pre_run.txt.
+Axioms and CL text unchanged. No rule adopted.
+
+## Question (R2)
+
+Can one integer, the slab thickness Ls, together with quantities the rules already fix (m, xi), set
+(1) v/M_P, (2) the mirror electroweak scale v', and (3) the charged-fermion hierarchies through integer family
+depths? And (4) what would make the depths forced?
+
+Repo first: git grep of origin/main docs for "slab thickness", "split fermion", "Arkani-Hamed Schmaltz" and
+"residual mass" finds no prior hierarchy-from-slab note (three unrelated hits). No open PR matches. This builds on
+the campaign drafts listed above.
+
+## 0. The overlap (rederived)
+
+[T]/[F] At k = 0 the Wilson slab is H = (m-1) G5 on each layer plus the layer hop A = (G5 + i G4)/2. The zero-mode
+splitting falls by 0.4000 per layer at m = 0.6 (xi = 1.091 layers) and is exactly 0 (2e-16) at m = 1. This is the
+same |1-m|^Ls that chiral-tick-form A-T1 derives. The only rule-distinguished value in the window 0 < m < 2 is its
+centre m = 1, and there xi = 0: the overlap is EXACTLY zero and gives no hierarchy at all. This matches
+family-labels B2 (the node Weyl is single-layer; all-or-nothing).
+
+## 1. Electroweak / Planck: FIT, and the plain identification is excluded
+
+- [F] v/M_P = 2.02e-17 needs Ls/xi = 38.44, so Ls = 41.95 at m = 0.6.
+- [T] m-Ls degeneracy: |1-m| = (v/M_P)^(1/Ls) lies in (0,1) for every Ls >= 1. So every integer Ls has an exact m.
+  chiral-tick-form states that m is free in the gapped window, so this is one measured number fitted by one
+  effective real (Ls ln(1/|1-m|)). The integer does no work.
+- [T]/[S] Consistency failure. The same overlap is the light-mirror leak (chiral-tick-form, gate item 3): every
+  light species gets a vector-like residual mass m_res ~ M_P |1-m|^Ls with its far-wall mirror. Setting the overlap
+  equal to v/M_P gives m_res = v = 246 GeV for neutrinos, which is EXCLUDED. The KATRIN bound needs
+  Ls/xi >= 65.5. So v cannot be the overlap itself. It could only be overlap^p with p <= 0.587, and p is CHOSEN.
+  (If the far wall is gapped by its own dynamics the leak is replaced by light-heavy mixing of the same order. That
+  is not computed here.)
+
+## 2. Mirror scale v': coincidence level
+
+- [F] r = 1/2 (a mid-slab channel, v' = sqrt(v M_P)) gives v' = 5.5e10 GeV, which is inside [1e8, 1e11] GeV.
+- [F] Chance counts. The window maps to r in [0.484, 0.664]. A log-uniform v' on [v, M_P] lands there with
+  probability 0.18. Two of the 11 reduced rationals with q <= 6 (1/2 and 3/5) land there (0.18). Both counts are
+  above the pre-set 0.05.
+- [S] No rule forces r = 1/2. A Higgs-like channel at the slab midpoint is a placement choice. Also, the r = 1/2
+  reading inherits the base v = M_P x overlap, which section 1 excludes. With p free, v' is a second free power.
+  Verdict: two parameters (or one real plus a chosen power) for two numbers, one of which is only a window.
+
+## 3. Fermion hierarchy with integer depths: FIT ONLY, no compression
+
+Model (supplied, Arkani-Hamed-Schmaltz class): Y_k ~ b^(d_k) with integer d_k and one base b = |1-m|^c shared by the
+e, u and d sectors. Targets are the six logs ln(m3/m1) and ln(m3/m2) = 8.19, 2.83 (e); 11.73, 5.60 (u); 6.92, 3.92 (d).
+- [F] Scanned b (depths <= 42 layers): the min mean fractional residual is 0.118 at b = 0.756, with depth
+  differences 29, 10, 42, 20, 25, 14. Jittered targets give a median of 0.092 under the same scan, so the measured
+  masses fit WORSE than typical random ones: p = 0.936 (jitter null), 0.911 (uniform null), N = 4000, seed 20261024.
+- [F] Fixed b = 0.4 (m = 0.6, c = 1): residual 0.197, depths 9, 3, 13, 6, 8, 4, p = 0.192. With b = 0.4^c, c = 1..4,
+  p = 0.581. All are above the pre-set 0.01.
+- [F] Count: 1 real + 6 integers (about 33 bits of depth code) + 3 normalisations against 9 masses. The fit always
+  closes to within half a step because the step is free; that is not compression. This agrees with w1 (integer
+  power codes, p ~ 0.46).
+- [T] Rank lemma (family-labels B3 on the Wilson slab): a Higgs channel on one layer gives
+  Y_ij = phi_i(z) chi_j(z), which has rank 1 (sv ratio 1e-17), so only one family is massive. Three masses need a
+  spread channel AND family-displaced profiles. Both are chosen. For one chosen placement, (0,2,5)/(11,8,6) with a
+  flat channel, the singular values come out 1, 1e-2, 3e-18. The third vanishes for that placement; not analysed
+  further.
+
+## 4. What would force the depths: the one forced version is falsified
+
+- [T] The only depth rule found that involves no per-family choice is equal integer spacing, d_k = k Delta, with one
+  base for all sectors (for example, families on successive layers or rungs). It predicts m2^2 = m1 m3 in every
+  sector and the same ln(m3/m1) across sectors.
+- [F] Measured: m2^2/(m1 m3) = 12.4 (e), 1.71 (u), 0.40 (d), and ln(m3/m1) = 8.2, 11.7, 6.9. This misses the pre-set
+  factor-2 band for the leptons and down quarks: FALSIFIED.
+- [S] A forced version would therefore need a rule that fixes m (none does; m = 1 kills the overlap) and a rule that
+  fixes sector-dependent depth patterns. Such a rule would have to distinguish e, u and d by something the rules
+  already carry (hypercharge or turn copy) without naming them, and it would then need to beat the null at
+  p < 0.01. The gaps in family-labels (family-blind slab, J = 0 for real profiles) still apply.
+
+## Verdict
+
+FIT ONLY where the parameters are free (Q1, Q3); COINCIDENCE LEVEL for v' (Q2); FAILS where forced (the plain
+v = overlap identification conflicts with the residual-mass bound; equal depth spacing is falsified). One integer Ls
+does not set the hierarchies under the current slab. Each hierarchy costs at least one free real (m) plus chosen
+powers or depths, and the measured fermion ratios carry no integer-depth structure beyond chance.
+
+## Gate (anti-smuggling) for the R2 rule "Ls is the single scale"
+
+(1) It chooses measured numbers: Ls/xi = 38.4 is fitted to v/M_P, and the depths are fitted to the masses (FITTED
+class). (2) It inserts no observed structure by name. (3) Its prediction not built for, v' = sqrt(v M_P), lands in
+the window at chance level (0.18), and its consistency prediction (m_res) is violated. (4) Axiom bent: the same as
+the slab (a layer axis bends Z^3 unless it is a role-block coordinate). Gate result: FAIL as a scale-setting rule.
+
+## Smuggling review
+
+Supplied: M_P = 1.22e19 GeV as the cutoff, v = 246 GeV, the face-swap v' window, the KATRIN 0.45 eV bound, the M_Z
+running masses (Xing-Zhang-Zhou 2011), the Wilson slab and its window, the AHS-type exponential Yukawa model, the
+null families (jitter x [0.5, 1.5], uniform [0.5, 12]), the depth cap of 42 layers, b >= 0.05, and q <= 6.
+Forced: the |1-m|^Ls overlap, the m-Ls degeneracy, m_res = v under the plain identification, the rank-1 lemma, the
+geometric-mean prediction of equal spacing, and the window-to-r map. Not shown: a finite-width wall (Gaussian
+profiles change the exponent law to quadratic in depth: OPEN), a rule fixing m, interacting or far-wall-gapped
+leaks, and CKM or J from the same depths.

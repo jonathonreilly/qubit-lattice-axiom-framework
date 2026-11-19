@@ -1,0 +1,41 @@
+tick-winding-origin: pass criteria written BEFORE any scratch run or runner (2026-10-24). Provenance: inputs read were
+synthesis-8/morning-1024, slab-parity (note, criteria), floquet-pi-slab (note, runner), twist-local-single (note),
+two-cell-light-label (note head), anomaly-family-count (scope + index lines), the register CL-1 paragraph (24-rotation covariance).
+Repo check: git grep origin/main (docs, scripts) for "turn-graded winding", "anomalous floquet", "tick winding": nothing;
+open PR #9863 (3D winding W3 of supplied walks fixes net cone chirality at 0 and pi) is a different invariant (W3, not the
+turn-graded axis winding W), cited not used.
+
+Question. slab-parity: families mod 3 <=> the update tick has nonzero turn-graded winding W (FREEZE W_F = (-2, 1, 1)); CL-1's
+adopted tick has W = 0. Is there an adopted or independently motivated principle that FORCES W != 0, without choosing it to
+get families?
+
+Facts to rederive first (exact): W in Z[Z3] with augmentation 0; a copy-flipped wall pair (light q_l hand +, mirror q_m hand -,
+q_m != q_l) needs W = f(q_l,+) + f(q_m,-); W = 0 <=> q_m = q_l.
+
+Candidates and predicted outcomes.
+ (a) Chirality. Checks: (a1) a W = 0 slab (even-Ls F/F^+ slab, rebuilt) already has a one-handed light q 2 on the near wall
+     (near-wall flow f(2,+)) with its mirror separated on the far wall: the light wall's anomaly is inflowed by the slab, and W is
+     the SUM of both walls' flows, not the single-wall inflow; (a2) gappable-mirror consistency (anomaly-family-count index
+     N (q_l - q_m) = 0 mod 3 with Omega twist k = -q_m) holds for every N_f when q_m = q_l, i.e. at W = 0. Prediction: FAIL
+     (chirality + gappability are satisfied at W = 0; W != 0 only restricts N_f).
+ (b) Time reversal / record arrow. Checks: (b1) exact lemma: any Floquet antiunitary T (U(k) -> U(-k)^+) or unitary chiral
+     symmetry (U -> U^+) or axis-reversing rotation (kappa -> -kappa) that normalises the turn group forces W_a = -W_sigma(a)
+     with sigma an involution or shift of Z3, hence a zero component; every copy-flip W has ALL components nonzero, so each such
+     symmetry FORBIDS the family class. (b2) CL-1's tick has T (Theta = K up to a half-tick conjugation), FREEZE has none.
+     (b3) Control: T-closure of FREEZE (FREEZE + its T partner) has W = 0. (b4) Breaking T does not force W != 0: a random
+     turn-commuting circuit with no T has W = 0. Prediction: FAIL as forcing; T breaking is NECESSARY for the family class, not
+     sufficient. Possible side result: CL-1's 24-rotation covariance (contains axis-reversing C2') also forbids it.
+ (c) FREEZE from CL-2 fewest changes / least information. Checks: (c1) where W comes from: W(CTWIST) = W(U_A) = 2 W_F
+     predicted (freezing halves a winding already present); freeze / run / reverse the disagreeing half give W_F, 2 W_F, 0;
+     (c2) a change cost (per-tick probability that a mode leaves its site, and its cell) for identity, CL-1 tick, CTWIST, FREEZE,
+     reverse: the global minimum is the identity (W = 0); within the supplied Pi+/- split freezing is cheapest. Prediction: FAIL
+     (fewest changes selects FREEZE only inside the supplied CTWIST + Pi split, whose W is already nonzero; globally it
+     selects W = 0).
+ (d) Minimal information among tick classes. Check: W = 0 contains the identity and every turn-commuting circuit (rederived:
+     random depth-6 covariant circuit W = 0); nonzero classes need non-turn-commuting gates. Prediction: FAIL, and it selects
+     W = 0 (wrong direction).
+
+PASS (synthesis) = a principle that forces W != 0 and is not a disguised choice. Also report the minimal |W| it forces if any
+(predicted: none forced; if the copy-flip class were forced, the minimal element is +-W_F, n = +-1).
+Every runner line reports a result (PASS = the computed fact holds); the synthesis verdict follows this file.
+Machine: < 150 MB, < 60 s, BLAS 1, nice 10; largest matrix 48 x 48 (Ls = 6 slab).

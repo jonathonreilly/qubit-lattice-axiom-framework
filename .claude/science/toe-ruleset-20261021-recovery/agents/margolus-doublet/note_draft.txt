@@ -1,0 +1,71 @@
+---
+claim_id: spin_three_halves_margolus_tick_has_no_exact_copy_su2_bounded_theorem_note_2026-10-21
+claim_type: bounded_theorem
+claim_scope: "For the supplied spin-3/2 Margolus Dirac tick with one fermion mode per site, six anticommuting Hermitian generators on C^8 are read from the tick; its block-local internal symmetry is U(1) for mu != 0 and U(1) x U(1)_eps for mu = 0, with eps the sublattice parity; the continuum algebra splits C^8 = Dirac(4) x copy(2) with an emergent copy U(2) (or U(2)_L x U(2)_R when massless) that the lattice breaks at O(k^2) for every block-local generator; the only exact remnant eps = gamma5 sigma3 is an axial copy charge; a block-local inversion makes the content vector-like; the copy doublet carries the E irrep of the cube group. Finite diagnostics of a supplied model. Whether a K-dependent or multi-block dressing makes the copy symmetry exact is not settled; no gauge group, chirality, weak interaction or generation structure is established."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/spin_three_halves_margolus_tick_has_no_exact_copy_su2_2026_10_21.py
+---
+
+# The spin-3/2 Margolus tick has no exact SU(2) on its two copies
+
+Claim type: bounded_theorem.
+Primary runner: `scripts/spin_three_halves_margolus_tick_has_no_exact_copy_su2_2026_10_21.py`.
+
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. This note asks what internal symmetry acts on the two Dirac copies of the supplied spin-3/2 Margolus tick. That tick has one fermion mode per site and block unitary W(mu) = cos(mu/2) W + i sin(mu/2), applied on even and then odd 2^3 blocks. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) do not choose this tick. The answer is that the tick carries no SU(2) on its copies. Its only block-local internal symmetry is U(1) when mu is nonzero, and U(1) x U(1) when mu = 0. An SU(2) appears only at long wavelength, and the lattice breaks it at O(k^2).
+
+## Statement
+
+1. Hidden Clifford algebra. Set Gamma_a = sqrt 3 W_a and Gamma_(a+3) = i Gamma_a tau_a, with tau_a = diag(2c_a - 1). These are six anticommuting Hermitian involutions on C^8. The odd-block hop is D^dag Gamma_a D = cos K_a Gamma_a + sin K_a Gamma_(a+3), so the massless tick is a product of two unit 6-vectors. The product Gamma_1 ... Gamma_6 equals -i eps, where eps = (-1)^(x+y+z) is the sublattice parity.
+2. Internal symmetry. The six generators generate all 8x8 matrices. Hence for mu nonzero only scalars commute with every U(K), and the block-local symmetry is U(1)_V. At mu = 0 the tick generates only the even half of the algebra, so the commutant is span{1, eps}, which is U(1)_V x U(1)_eps. At a single K the commutant is U(4) x U(4), but that restates the band degeneracy and changes with K.
+3. Copies at long wavelength. The tick fixes beta = W, alpha_a = i Gamma_(a+3) beta and gamma5 = i alpha_1 alpha_2 alpha_3. These give C^8 = Dirac(4) x copy(2), with Pauli matrices sigma_i on the copies and sigma_3 = eps gamma5. The emergent copy symmetry is U(2) with mass and U(2)_L x U(2)_R without. The lattice breaks every block-local sigma_i and P_L sigma_i at O(k^2).
+4. Chirality. The only exact lattice remnant is eps = gamma5 sigma_3, an axial charge with opposite sign on the two copies. A block-local inversion P with P gamma5 P^-1 = -gamma5 exists, so the content is left-right symmetric (vector-like). Nothing in the tick selects one chirality.
+5. Mass. The commutator norm of P_L sigma_1 with U(0) is exactly sin mu. The mass keeps the vector copy SU(2) at k = 0, breaks the chiral one and breaks U(1)_eps. This is the ordinary breaking caused by a Dirac mass.
+6. Discrete structure. Each rotation factorises as L(R) = S_(1/2)(R) rho(R) with rho(R) in the copy U(2). The copy doublet carries |chi| = (2, 2, 0, 1, 0) on the classes (E, C2face, C4, C3, C2edge). This is the two-dimensional irrep E of the cube group, which factors through S3, the permutations of the three axes. Since rho is irreducible, no copy generator commutes with all 24 rotations. Bands are exactly fourfold, with no threefold degeneracy. A block-local particle-hole map exists. The species are two Dirac copies gapped by mu at quasi-energy 0, plus two massless ones at quasi-energy pi and K = pi(1,1,1), with speed cos(mu/2)/sqrt 3.
+
+## Derivation
+
+Six anticommuting involutions on C^8 generate the full matrix algebra Cl_6 = M_8, and their even part is the commutant of their product, which is proportional to eps. The massless tick is a product of two elements of the span of the Gamma's, hence even, so its block-local commutant contains eps; a mass term adds the identity component and an odd part, which removes eps. The continuum algebra (beta, alpha_a) generates Cl_4 = M_4, so its commutant in M_8 is M_2, the copy algebra. Removing beta leaves the commutant of the alpha's, which is M_2 + M_2 on the two chiralities. Block-local generators of the copy algebra commute with U(K) only at k = 0, and the leading commutator is quadratic in k.
+
+## Checks
+
+The runner prints 32 PASS lines, and its output ends `TOTAL: PASS=32 FAIL=0`. Unless stated otherwise, the errors are at the level of 1e-14 or below.
+
+- Supplied tick: the Bloch form U(K) = D^dag W D W reproduces the 6^3 lattice spectrum at mu = 0.3 (8.9e-16).
+- Clifford structure (section 1):
+  - the six generators anticommute (7.3e-15);
+  - the hop is the two-unit-vector form (8.5e-16);
+  - their product is i s eps with s = -1;
+  - the K-independent commutant has dimension 2 at mu = 0 and dimension 1 at mu = 0.05, 0.3 and 1.0;
+  - eps W(mu) eps = -W(-mu);
+  - eps is even under E, C2face and C3 and odd under C4 and C2edge, so the commutant with rotations is scalars only;
+  - the pointwise commutant at one generic K has dimension 32;
+  - the range-1 bilinear X_Y = sin^2(w) Y - (U - U^dag) Y (U - U^dag)/4 commutes for any block-local Y (1.3e-14). These conserved bilinears form no group and are not counted as a symmetry.
+- Continuum algebra (section 2):
+  - U(0) = exp(i mu beta) with beta = W;
+  - alpha_a = sqrt 3 dH/dK_a = i Gamma_(a+3) beta, with speed 1/sqrt 3 (8.3e-11, a finite-difference derivative);
+  - the Dirac Clifford relations hold, and gamma5 has its stated properties;
+  - the copy algebra has dimension 4, and sigma_3 = eps gamma5 lies in it;
+  - the Pauli algebra holds (2.2e-15);
+  - the massless commutant of the alpha's has dimension 8;
+  - the sign pattern of eps = gamma5 sigma_3 holds.
+- Lattice breaking (section 3):
+  - sigma_1, sigma_2 and sigma_3 at mu = 0.3, sigma_3 at mu = 0, and P_L sigma_1 and P_L sigma_3 at mu = 0 each have commutator with U(k) of fitted slope 2.00 in log|k|, so they are broken at O(k^2);
+  - P_L sigma_1 at mu = 0.3 stays finite as k goes to 0 (0.213);
+  - the commutator norm of P_L sigma_1 with U(0) is sin(0.3) = 0.296, and eps does not commute with the massive U(0).
+- Rotations and discrete maps (section 4):
+  - L(R) U(K) L(R)^dag = U(RK) for the 24 corner actions (3.6e-15);
+  - each rotation factorises into a spin-1/2 part and a copy part rho;
+  - the copy characters by class are as stated;
+  - rho is irreducible (commutant dimension 1);
+  - the inversion solution space has dimension 1 and is the corner inversion s -> 1-s, which flips gamma5 and eps;
+  - the particle-hole solution spaces have dimensions 2 at mu = 0 and 1 at mu = 0.3;
+  - on 3000 random momenta the quasi-energy-0 sector has gap at least mu and the quasi-energy-pi sector has speed 0.5709 = cos(0.15)/sqrt 3;
+  - every sampled band is exactly fourfold.
+
+## What is supplied and the boundary
+
+Supplied: the tick, its spin-3/2 rotation action (the S3 copy representation depends on it), the sign convention for left and right, and the choice to count only block-local matrices as internal symmetries. The operators beta and alpha are read off the tick rather than supplied, and the copy algebra is their canonical commutant.
+
+Not established: an exact copy SU(2) under a K-dependent or multi-block dressing (this is not settled), any gauge group, any chirality, and any weak-interaction or generation structure. The copies behave like staggered-fermion tastes permuted by the axes, but there are only two of them. Measurement shows a parity-violating weak interaction and three light neutrino species (LEP gives 2.984 +- 0.008). A vector-like doublet with no exact chiral SU(2) does not reproduce either on its own. The two massless species at quasi-energy pi would be an observable mismatch unless something removes them; that issue belongs to the tick itself.

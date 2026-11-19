@@ -1,0 +1,32 @@
+face-swap-parity (R1) -- criteria written BEFORE any code ran (2026-10-24)
+
+Question: is an exact face swap P_slab (walls exchanged, chirality flipped) a rule symmetry, and does it give
+theta_bar = 0 at tree level with J != 0 (Barr-Chang-Senjanovic shape) after spontaneous breaking only?
+
+Predictions / pass criteria (each is a runner line; a mismatch is a RESULT, recorded, not tuned away):
+P1  On the working Wilson domain-wall slab (m = 0.6, Ls = 16), P_slab = (layer reversal) x (3D inversion k -> -k)
+    x (spinor matrix S) is an exact symmetry for S = beta (commutes with beta, anticommutes alpha_1..4).
+    Residual ||P H(-k) P^-1 - H(k)|| < 1e-12 at random k. It maps near-wall Weyl to far-wall Weyl, flipping Gamma.
+P2  With a constant link background A, P_slab is a symmetry only if A_i -> -A_i: on gauge fields P_slab acts as
+    ordinary parity on the single flat register (Links clause), so the theta carrier sum E.B is P-odd (exact).
+P3  Overlap / history weighting: D is P-covariant, but Luscher's projector is mapped to the OPPOSITE chirality
+    projector (gamma5_hat -> -gamma5_hat). Expect: the history-level chiral selection breaks P_slab explicitly.
+P4  The far-wall-only gapping term breaks P_slab explicitly (nonzero commutator). Expected.
+P5  Toy with ONE gauge field (adopted Links clause): P-symmetric mass matrices M(h,h') = sigma M(h',h)^dag sigma with
+    H, H' same charges, cross Yukawas and Hermitian vector-like masses: expect arg det(M_u M_d) generically O(1) when
+    h != h'. With a supplied Z2 removing cross terms and mixing, arg det = 0 exactly, but mirror masses = light masses
+    x v'/v with v^2 + v'^2 = v_EW^2 (bounded), giving N_nu = 6 vs 2.984: expect EXCLUDED.
+    Heavy Hermitian vector-like masses pair light with mirror: expect NO light chiral states survive.
+P6  BCS shape (supplied: separate electroweak registers per wall, shared colour): M = diag(Y h*, Y^dag h') per type;
+    expect |arg det(M_u M_d) mod pi| < 1e-10 for all random Y, v'/v in [1e2, 1e10], relative phase; light J != 0
+    (median |J| > 1e-4 for O(1) random Yukawas).
+P7  P-covariant real-coefficient dressings (Y -> (1 + real poly in Y Y^dag products) Y, mirror its P image, at
+    different scales) keep theta_bar = 0 to rounding.
+P8  SMG mirror (one gauge field): theta_bar = theta - arg det(Y_u Y_d) - kappa arg(lambda_4); predict
+    |kappa| = N_f (4 colour (anti)triplet Weyls per 16, charge-4 vertex) and the Z4 is QCD-anomaly-free mod 2 pi,
+    so theta_bar is continuous in arg(lambda_4) and P_slab does not tie it to arg det Y: no cancellation.
+P9  Quality estimate: P-even dim-6 (H'^dag H' - H^dag H) G Gdual / Lambda^2 gives theta ~ v'^2/Lambda^2 -> v' < ~1e-5
+    Lambda; a misaligned dim-6 Yukawa gives a 1/y_u-enhanced bound, expect v' <~ 1e11 GeV at Lambda = 2.4e18 GeV.
+Verdict pre-set: if P5 fails as predicted and P6 passes, the verdict is NEEDS X (X = wall-local electroweak
+registers with shared colour, a supplied P-breaking scale v', removal of the explicit breakers in P3/P4), and
+FAILS within the adopted rules. SOLVES only if P6's structure is reachable under the adopted Links clause.

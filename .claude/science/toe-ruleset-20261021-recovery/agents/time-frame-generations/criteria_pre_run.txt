@@ -1,0 +1,36 @@
+time-frame-generations (menu M5 Floquet clock-locking, M9 frame-drag winding): pass criteria written BEFORE any run (2026-10-23).
+
+Route PASS (each route separately) requires ALL FOUR:
+ (P1) forced count 3: the rules (not a choice of period, zoom, modulus or cutoff) yield exactly three sectors/classes;
+ (P2) distinct masses: the three sectors are pairwise non-degenerate (smallest relative split > 1e-3), no symmetry
+      forcing a 1+2 pattern;
+ (P3) same charges: the sector label commutes with every gauge/link charge (identical content);
+ (P4) mixing allowed with J != 0 possible: some term permitted by the rules connects all three sectors pairwise
+      (no decoupled sector, no permutation-only mixing), so a 3x3 misalignment with a CP phase can exist.
+Route FAIL otherwise, with the exact failing fact named. Every runner line reports a RESULT and passes when the
+computation returns what the line states (FAILs of a route are results, not runner failures).
+
+(T) TIME / clock-locking. Model: CL-1 one-mode cube tick (spin-3/2 edge hop, two tilings offset (1,1,1), even cubes
+exp(-i(eps-mu/2)R) wrapped by the copy-mass factor, odd cubes exp(+i(eps+mu/2)R)), free fields, single-particle and
+two-body (particle-hole) sectors on 4^3 (64 modes, two-body 2016 / 4096 states). Parameters (eps, mu, MN) =
+(0.3, 0.05, 0.2) and the massless control (0.3, 0, 0). Steps:
+ T1 determine the exact finite symmetry structure: time group of the tick (Z of whole ticks; is there a half-tick
+    screw V with V^2 = U x translation, i.e. a Z2 refinement?), the turn (Z3, up to site gauge), lattice translations.
+ T2 is the quasi-energy spectrum invariant under theta -> theta + 2pi/3 (period-3 locking forced) or + pi?
+ T3 two-body quasi-energies: do they fall into exactly three classes by any exact label? Count of classes per label.
+ T4 thresholds per turn sector k = 0,1,2: distinct or 1+2 (is there an antiunitary k -> -k)?
+ T5 mixing: a Floquet-stationary vacuum carries time character 0, so <O_k> = 0 for every operator of locking
+    character k != 0: no vacuum can connect sectors of different locking character under the free tick.
+ Prediction: FAIL. Time translation is Z with continuous characters (U(1) quasi-energy); no Z3 in time; 3 only via
+ the spatial turn, whose charges are conserved and give J = 0 without a turn-charged vacuum.
+
+(F) FRAMES / winding. Model: linearised shift field of tick-fraction-frame-dragging, curl curl beta = -16 pi G rho v,
+on an L^3 periodic lattice (FFT), with on-shell energy of a stationary current E[j] = (1/32 pi G) int |curl beta|^2
+(= -L on shell). A composite of circulation n = n units of the same internal current loop.
+ F1 E(n) vs n E(1) at coincidence and the pair interaction E_12(d) of two unit loops vs separation d;
+ F2 n = 2, 3 stable against splitting? (needs E(n) < n E(1) + interactions, i.e. attraction);
+ F3 is circulation quantised (compact offset) at all; if compact mod a period P, what winding group, and does
+    E(n) = E(-n) collapse classes?
+ F4 anything stopping the series at 3?
+ Prediction: FAIL. Positive-definite quadratic energy gives E(n) = n^2 E(1) and like-loop repulsion, so n >= 2
+ splits; the series never stops at 3.

@@ -1,0 +1,36 @@
+mirror-quark-portal -- criteria written BEFORE any code ran (2026-10-24)
+
+Question: can a P_slab-symmetric light-mirror quark mixing exist in the BCS shape (wall-local electroweak, shared
+colour), so mirror quarks decay (no stable fractional charges) while theta_tree = 0 and light J stays free?
+
+Predictions / pass criteria (each a runner line; a mismatch is a RESULT, recorded, not tuned away):
+P1  [T] With SEPARATE U(1)_Y x U(1)'_Y every LR light-mirror quark bilinear (qL-bar q'R, u'L-bar uR, d'L-bar dR,
+    u'L-bar dR, d'L-bar uR) carries Y not in Z/2, so no product H^a H'^b (any dimension) neutralises it. Expect: no
+    portal from H, H' alone (reproduces wall-local D3).
+P2  [T] Exact-charge stability: the invariant I = (Q + triality/3) mod 1 is additive and conserved; it is 0 on all
+    light fields and mirror leptons and 1/3 on mirror quarks when Q, Q' are separately exact. Expect: ANY portal
+    field content leaves the lightest I != 0 state stable unless the exact charge is P-symmetric (Q + Q'), i.e.
+    unless Y - Y' is broken. So the portal must break Y - Y' (a singlet with charge (q,-q)) or share Y outright.
+P3  [T] With Y shared (or Y - Y' broken by a singlet vev), uR and u'L (also dR/d'L, eR/e'L) have identical gauge
+    charges: a renormalizable bare mass C (u'L-bar uR) is allowed; qL-bar q'R needs a (2,2) and starts at dim-5
+    (H H'^dag); u'L-bar dR and d'L-bar uR carry Y = -1/+1 and no SU(2) x SU(2)' singlet of H, H' carries Y != 0, so
+    they are forbidden to all orders in H, H'. Expect the mass matrix is block lower-triangular at renormalizable level.
+P4  [T] Block-triangular M = [[A,0],[C,D]] with P-related A = Y h*, D = Y^dag h': det(M_u M_d) > 0 for every Y,
+    every C (Hermitian OR not), every VEV phase. Expect |arg det| < 1e-12 over samples.
+P5  [F] Light J free: median light |J| >= 1e-2 for O(1) random Yukawas, in the regime C << y v'. Light masses equal
+    |y| v to relative (C / y v')^2.
+P6  [F] Dim-5 B = c v v'/Lambda (complex c) leaks theta ~ |c| C / (y_u^2 Lambda). Expect theta < 1e-10 needs
+    C <~ 40 GeV for |c| = 1, Lambda = 2.4e18 (supplied), within a factor 3 of the estimate.
+P7  [E] Mirror-quark lifetime Gamma ~ (C/v')^2 m_u' / (16 pi): tau < 1 s needs C >~ 1e-5 to 1e-3 GeV over
+    v' in [1e8, 1e11]. Expect a non-empty window [C_min, C_max] at every v' in the face-swap window.
+P8  [T] No bi-doublet VEV: W_L - W' mass matrix diagonal, M_W^2 = g^2 v^2/4 exactly; rho - 1 ~ (v/v')^2. With a
+    bi-doublet VEV u (ordered SU(2) inter-wall link) W_L - W' mixing is nonzero: the EW-breaking problem returns.
+P9  [T] Tree FCNC: uR and u'L share all gauge charges, so the RR singlet block of every neutral current is the
+    identity; flavour violation arises only through mixing with doublets (theta_L, theta_R suppressed). Expect the
+    light-light off-diagonal Z coupling < 1e-10 at v'/v = 1e4 toy.
+P10 [E] Slab reading: the portal is the domain-wall overlap (near/far zero modes of the same 5D field) dressed by the
+    inter-wall link chain; C = m_res <Phi_Y^k>, B = m_res <Phi_2 Phi_Y>. Expect: X1 as stated (all EW links
+    disordered) gives C = B = 0 (stable fractional charges, consistent with wall-local D3); ordered U(1) link +
+    disordered SU(2) link gives C != 0, B = 0. Expect a tension: m_res ~ (1-m)^Ls x cutoff with 1-m = 0.4 needs
+    Ls ~ 40-60 to put C in the window, against wall-local D2's Ls <~ 5 for flat colour.
+Verdict rule: FIXES-with-X if P2-P4 and P7 hold with a named supplied X; FAILS if P4 fails or the window is empty.

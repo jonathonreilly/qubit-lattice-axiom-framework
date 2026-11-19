@@ -1,0 +1,164 @@
+---
+claim_id: the_slab_mirror_sits_on_the_light_copy_so_the_turn_anomaly_allows_every_family_count_and_the_number_conserving_spin12_term_cannot_gap_the_mirror_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "On the adopted tick-form slab read on CL-1's 2x2x2 cell in its one-copy window ((m, Mc) = (0.5, 1), Ls = 24, free fields), the near- and far-wall Weyl spaces lie in the same copy (s = +1) with opposite hands, and the three-fold turn's site-phase lift gives both the same copy charge (q = 2 in the families-mod-3 convention; the s = -1 copy has q = 1). On the 32 far-wall modes (two spin components x the 16) every Spin(10)-compatible turn u = w^(q+k) S_spin x g commutes exactly with the Spin(12)-Casimir term H_sym of spin10-two-flavour, for every twist k; its unique ground state has turn charge N_f (q + k) mod 3, neutral at k = -q. H_sym conserves mode number, whose far-wall cubic and gravitational coefficients are -16 N_f, so it gaps the far wall symmetrically for no N_f. The charge-4 term Omega keeps only k = -q_mirror; because q_mirror = q_light this also neutralises the light copy, every Z3 coefficient vanishes and every N_f passes. The families-mod-3 mod 3 (allowed 3, 6, 9) needs q_mirror != q_light, as with the not-adopted chiral generator. Not covered: interacting slab, gauge fields, SMG sufficiency, any other window or mirror placement."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - three_fold_turn_anomaly_gives_family_count_zero_mod_three_under_a_supplied_mirror_term_bounded_theorem_note_2026-10-21
+  - the_spin10_pair_square_on_two_sixteens_is_a_spin12_casimir_with_a_unique_singlet_ground_state_and_gap_four_g_but_a_frozen_far_region_still_moves_the_mirror_bounded_theorem_note_2026-10-23
+  - the_cube_cell_slab_wall_holds_at_most_two_opposite_handed_copies_so_families_are_not_wall_nodes_while_the_supplied_wilson_kernel_gives_a_turn_triplet_only_in_an_unforced_window_bounded_theorem_note_2026-10-23
+  - body_diagonal_turn_anomaly_fixes_the_family_count_mod_the_odd_turn_order_not_mod_the_dimension_bounded_theorem_note_2026-10-23
+runner: scripts/the_slab_mirror_sits_on_the_light_copy_so_the_turn_anomaly_allows_every_family_count_and_the_number_conserving_spin12_term_cannot_gap_the_mirror_2026_10_23.py
+---
+
+# The slab mirror sits on the light copy, so the turn anomaly allows every family count, and the number-conserving Spin(12) term cannot gap the mirror
+
+Claim type: bounded_theorem. Exact statements are labelled [T], finite diagnostics [F] and readings [S].
+Runner: runner.py, TOTAL: PASS=11 FAIL=0, 0.4 s, 135 MB peak, 3.9 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
+It was tested under a unique filename (scratch/anomaly_family_count_test_run.py). Axioms unchanged. No rule adopted.
+
+## Question
+
+The one robust 3 among the generation probes is the cube's body-diagonal three-fold turn. In families-mod-3 it gives
+N_f = 0 mod 3, conditional on gapping the mirror with a single-copy four-mode term that selects the turn's twist.
+spin10-two-flavour supplies an exact symmetric site gapping of the mirror 16: the Spin(12)-Casimir pair square on its two
+spin components. Does this gapping keep the turn, with a turn-neutral ground state, so that the mod-3 condition is met
+by an adopted rule? Is N_f = 3 then the smallest anomaly-free count?
+
+Repo first. This builds on, and narrows:
+- families-mod-3 (the condition N(q_l + k) = 0 mod 3; twist selection by the mirror's top form; the k = -q_light loophole);
+- mod-d-lemma (the obstruction is N(q_l - q_m) = 0 mod the odd part of the turn order);
+- spin10-two-flavour (so(12) closure, the Casimir identity, the unique ground state, relocation at strong coupling);
+- wall-families C (the cell slab, its windows, the copy charges {q, q + 2});
+- the register's chiral-tick-form clause (adopted: the mirror is forced onto the far wall) and the line
+  "no mode-number-conserving interaction gaps the mirror alone; Z4 is the most that survives".
+
+## Pass criteria
+
+The criteria were written before any run (criteria_pre_run.txt). The synthesis PASS needed three things:
+- S1: the turn is kept;
+- S2: the ground state is neutral;
+- S3: the obstruction holds exactly for N != 0 mod 3.
+The predicted verdict was FAIL at S3. It failed at S3, as predicted. Every computed line matched its pre-set prediction.
+
+## A. Turn charges on CL-1's cell
+
+- A1 [T]. The spin-3/2 turn on the 8 corners has charges {0^4, 1^2, 2^2}, which is families-mod-3 A4.
+- A2 [T]/[F]. Adopted slab, one-copy window (0, Mc), at (m, Mc) = (0.5, 1) with Ls = 24:
+  - the near wall and the far wall each hold one 2-dim Weyl space;
+  - both lie in the s = +1 copy, with opposite hands (+1, -1);
+  - the turn's site-phase lift keeps both tilings, s and eps exactly, and UT^3 = 1;
+  - on each wall it acts as a copy phase times the spin-1/2 turn, with the same copy charge, q = 2 (the det ratio is 1
+    to 6e-15).
+  - So q_mirror = q_light. This is forced: the bulk slab has W3 = 0, so the far wall carries the mirror of the near-wall
+    content, which is the same copy.
+- A3 [F]. Calibration: in the two-copy window the s = -1 copy has q = 1. The equality in A2 is therefore a property of the
+  one-copy window and not of the lift convention. The values match families-mod-3: light q_a = 2, other copy q_b = 1.
+
+## B. The turn on the 32 far-wall modes
+
+- B1 [T]. Take u = w^t S_spin x g, with t = q + k, S_spin the spin-1/2 turn about (111) (det 1), and g any Spin(10) element:
+  the identity, a Z3 element with charges w^(+-1) on the 16, or a random element.
+  - u leaves the quartic tensor of sum B^+ B exactly fixed (defect 4e-15) for t = 0, 1, 2.
+  - J, N and spin are invariant too, so [T_k, H_sym] = 0 for every twist.
+  - Reason: B_a is a spin singlet (the epsilon pair), Spin(10)-covariant, and number-conserving, so {B_a, B_a^+} is blind
+    to phases.
+- B2 [T]. Contrast: Z3 phases on 5 of the 16 weights (not a Spin(10) element) break H_sym (defect 3.46). By Schur, a turn
+  compatible with the gauge group acts on the 16 as a phase times a Spin(10) element. So the only turn data on the far wall
+  are the copy charge and the spin lift: the 16's components carry no extra turn charge.
+- B3 [T]. Omega = sum B_a B_a + h.c. (charge 4, U(1)_N -> Z4) picks up w^(4t) = w^t, so it is kept only at t = 0, that is
+  k = -q_mirror. This is the same selection as families-mod-3's O_A.
+
+## C. Ground-state turn charge
+
+- C1 [T]. T_k = w^(16t) e^(i 4 pi t J/3) x S_flavour x g, where J = (N - 16)/2 lies in so(12) and the flavour SU(2) commutes
+  with so(12). On the unique ground state (J = 0, S = 0, Spin(10) singlet; spin10-two-flavour C3, C4), with N_f copies in a
+  product: T_k = w^(16 N_f t), a charge of N_f t mod 3. The consistency checks on |0> and |F> are exact.
+  - N_f = 1: charges (0, 1, 2) for t = 0, 1, 2.
+  - N_f = 2: charges (0, 2, 1).
+  - N_f = 3: charges (0, 0, 0).
+  - No 2^(32 N_f) diagonalisation was done. The N_f = 1 ground-state quantum numbers are cited from spin10-two-flavour.
+- C2 [S]. At the Omega twist (t = 0) the ground state is neutral for every N_f. A nonzero charge at t != 0 is a charge per
+  cell on the turn axis, which labels a product state (a Wyckoff label). It is not an anomaly: a unique symmetric product
+  state is never anomalous. So the brief's "charged ground state means a turn-anomalous wall" does not hold as stated.
+
+## D. Bookkeeping: which N_f gap symmetrically
+
+- D1 [T]. H_sym conserves U(1)_N.
+  - The far wall's U(1)_N^3 and U(1)_N-gravity coefficients are -16 N_f, nonzero for every N_f >= 1.
+  - So H_sym gaps the far wall symmetrically for NO N_f.
+  - Its unique site gap is a trivial product state, so the wall mode must relocate. This turns spin10-two-flavour E2
+    (shown there with a free stand-in) into a consequence of anomaly matching for this term.
+  - Since mode number is a symmetry, every twist is too, so H_sym selects no k.
+- D2 [T]. With Omega (U(1)_N -> Z4, which is the Spin(10) centre on the 16, so anomaly-free), k = -q_mirror is forced.
+  - Because q_mirror = q_light (A2), the light copy is turn-neutral as well.
+  - Every Z3 coefficient of the far wall (Z3 Spin(10)^2, Z3-gravity, Z3^3) vanishes.
+  - The light index N m (q_l + k) is 0.
+  - So EVERY N_f in 1..9 passes. The families-mod-3 loophole "k = -q_light removes the constraint" is not a loophole on the
+    slab; it is forced.
+- D3 [T]. Contrast, families-mod-3 tastes: the chiral generator H' (not adopted) puts the mirror on the other copy
+  (q_l = 2, q_m = 1, 4 doublets). Then N(q_l - q_m) = 0 mod 3, and the allowed N are 3, 6, 9. The mod 3 needs
+  q_mirror != q_light.
+- D4 [T]. Stacked families on one cell copy all carry the same turn charge. The turn-CP lemma therefore does not force J = 0
+  through the turn. But no N_f is preferred.
+
+## Answer
+
+1. [T] Yes, the Spin(12)-Casimir gapping preserves the three-fold turn exactly, for every twist. The turn charges are the
+   copy charge q = 2 and the spin-1/2 lift; the 16's components carry none.
+2. The ground state is turn-neutral at k = -q. Elsewhere it carries N_f (q + k) mod 3. That charge is a Wyckoff label, not
+   an anomaly.
+3. The mod-3 lemma does not bind with either interaction.
+   - H_sym cannot gap the far wall symmetrically at any N_f: mode-number anomaly -16 N_f.
+   - Omega, the Z4 form needed to evade that anomaly, selects k = -q_mirror. On the adopted slab the mirror is the light
+     copy's own opposite-hand partner, so that twist neutralises the light fields, and every N_f is anomaly-free.
+4. Verdict:
+   - "N_f = 3 = smallest anomaly-free count" is NOT a consequence of the adopted rules. The synthesis fails at S3.
+   - The mod 3 survives only where the mirror sits on the other copy (q_m != q_l), which is the not-adopted chiral
+     generator H' and the not-adopted unification law ("pair square on the copy the turns rotate by e^(4 pi i/3)").
+   - Even there, minimality (3 rather than 6) is supplied: nothing in the rules prefers the smallest count. Only the
+     measured N_nu = 2.984 +- 0.008 does, and only given light neutrinos in every family.
+   - Turn charges are shared by all families. That is necessary for J != 0 under the turn-CP lemma, but it does not supply
+     J != 0.
+
+## What would restore the mod 3 (proposal space, untested)
+
+A far-wall Z4 term that pairs the mirror with the OTHER cell copy (q_m = q_l + 2). On the cell slab that is the two-copy
+window (Mc, 2), where the near wall is vector-like (wall-families C4b). So the copy assignment of light and mirror would
+have to be split between the walls by a rule. No such rule exists. Writing one in to obtain 3 would fail anti-smuggling
+gate item 1 unless it predicts something else.
+
+## Gate (anti-smuggling)
+
+No rule is proposed. The question tested whether adopted rules already force the count, and they do not.
+
+## Smuggling review
+
+Supplied:
+- the 16 with one orbital per weight;
+- spin as the two-valued flavour;
+- the cell-slab layer kernel (B/2 + i eps)/2 and copy operator (1 - s) R_e;
+- (m, Mc, Ls);
+- free fields;
+- the Dynkin index normalisation T(16) = 2.
+
+Cited:
+- 't Hooft matching;
+- crystalline equivalence (turn as internal Z3);
+- SMG sufficiency;
+- the families-mod-3 index formula.
+
+Forced:
+- q_mirror = q_light in the one-copy window;
+- the turn's commutation with H_sym for every twist;
+- Omega's twist selection;
+- the ground-state charge formula;
+- the mode-number obstruction;
+- the all-N result on the slab.
+
+Not shown:
+- the interacting slab at g ~ t;
+- gauge fields;
+- the Z3 bordism invariants beyond the listed coefficients, which all vanish identically at t = 0, so they are not needed
+  for the all-N conclusion.

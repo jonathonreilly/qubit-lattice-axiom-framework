@@ -1,0 +1,42 @@
+Pass criteria for spin10-two-flavour, written 2026-10-23 BEFORE any runner or scratch run.
+All target values below are analytic predictions derived on paper (Casimir algebra), not seen numerically.
+
+Setup: 16 of Spin(10) from five oscillators (even states), t_ab (45), C = Y X Y X Y, M_a = (C gamma_a)|_+ ;
+modes c_{i alpha}, i = 1,2 (flavour = the two spin components), alpha in 16; B_a = sum M_a[al,be] c_{1 al} c_{2 be};
+J = (N - 16)/2; S = flavour SU(2) (S+ = sum c1^+ c2); C2_10 = sum T_ab^2 (16 -> 45/4); H_sym = -(g/2) sum_a {B_a, B_a^+}.
+
+A1 [T] 45 Hermitian t_ab with Casimir 45/4 on the 16; M_a symmetric and unitary (16x16); span{M_a} invariant under
+   t -> t^T M + M t with an induced 10x10 rep of Casimir 9 (the vector).
+A2 [T] Pauli: c_1^T M_a c_1 = 0 (M symmetric), so B_a is the flavour-antisymmetric (epsilon) pair; the three flavour generators
+   commute with every B_a, T_ab, J (Nambu matrices, < 1e-12).
+A3 [T] closure: the 66 Nambu matrices {T_ab, B_a + B_a^+, i(B_a - B_a^+), J} are linearly independent and their commutators lie
+   in their span (residual < 1e-10): a 66-dim compact algebra containing so(10)+u(1) with the 10 at charge +-1 = so(12);
+   explicit so(12) relations hold with one normalisation of the off-diagonal generators.
+B1 [T] (complete for number-conserving degree-4 operators) on the N <= 2 Fock sectors (529 states):
+   sum_a {B_a, B_a^+} = 2 [144 - 2 S(S+1) - C2_10 - J^2]   (max error < 1e-10).
+   Equivalent reading: C2(so12) := C2_10 + J^2 + (1/2) sum {B,B^+} = 144 - 2 S(S+1).
+B2 [T] sum_a [B_a, B_a^+] = -20 J on N <= 2, so -g sum_a B_a B_a^+ = -g (F - 10 J), F = 144 - 2S(S+1) - C2_10 - J^2.
+B3 [F] redundancy: B1 holds on 3 random vectors of the N = 3 sector (error < 1e-9).
+C1 [T] Weyl-formula Casimirs <lam, lam + 2 rho>, rho = (5,4,3,2,1,0): (8,0^5) -> 144; (1/2)^6 -> 33/2 (= 144 - 2(15/2)(17/2));
+   (1,1,1,1,0,0) -> 32 (= 144 - 2*7*8); (15/2,(1/2)^5) -> 285/2 (= 144 - 3/2).
+C2 [T] spherical irreps (a,b,0^4), a>=b>=0, a = b mod 2, with C2 = 144: exactly (8,0) and (6,4). Fock weights obey
+   mu_1 <= sum_w max(0,w_1) = 8 and mu_1 + mu_2 <= 8 (sum over the 32 spinor weights), so (6,4) is absent; the weight (8,0^5)
+   has multiplicity exactly 1 in the Fock space (one subset), at S_z = 0. Hence a unique state with F = 144.
+C3 [T] Spin(10) singlet counts n_S(N) (Weyl formula on Lambda^k(16), |W(D5)| = 1920): nonzero only for N = 0 mod 4;
+   n_0(16) = 1 (unique ground state, flavour singlet); n_0(12) = n_0(20) >= 1 (F = 140 level exists).
+C4 [T] spectrum of H_sym: E0 = -144 g unique; first excitation -140 g (gap 4 g, Spin(10)-singlet flavour-singlet states at
+   N = 16 +- 4 and any N = 16 flavour-triplet singlets); pair excitation B^+|GS> at -134 g (10 g); fermion excitation
+   c^+|GS> at -131 g (13 g). Lower bound: every excited state has Delta F >= 4 (centre Z4 + Casimir minima 9, 45/4, 16).
+C5 [T] naive ordering -g sum B B^+ (no completion): ground state at -168 g, two-fold (N = 4 and N = 8), charged (N != 16):
+   the particle-hole symmetric completion -(g/2) sum {B, B^+} = -g sum B B^+ - 5 g (N - 16) is needed.
+C6 [T] contrasts: (i) 16 x 16bar contains no 10 (Weyl formula) and contains one singlet: the 10 channel vanishes, a quadratic
+   Dirac pairing is allowed (vector-like, no SMG content). (ii) 15 + 15 (no nu^c): a unique eigenstate of N and N1 - N2 that is
+   particle-hole symmetric needs N = 15 and N1 = N2: impossible, so every C-symmetric level is >= 2-fold.
+D1 [F] reduced analogue n = 3 (Spin(6) 4 x 2 flavours, 2^8, full ED): M antisymmetric (O_11 != 0, flavour only U(1));
+   sum {B, B^+} = 2 [16 - 4 S_z^2 - C2_6 - J^2] on the whole Fock space (< 1e-10); H_sym spectrum: unique GS at -16 g,
+   gap 4 g, fermion gap 5 g; eigenvalues equal the Casimir formula state by state.
+D2 [F] reduced 15+15 analogue: n = 3 with one weight dropped per flavour (3 + 3 modes, 2^6): H_sym ground state degenerate.
+E1 [F] free slab (smg-strong-coupling model, Ls = 12, k = pi/8): far-wall branch at E = sin k; weight on the far two layers
+   > 0.9 (a two-layer region captures the wall mode).
+E2 [F] the far TWO layers gapped (m sz, m = 20): the branch keeps E = sin k (< 1e-6), weight on the two gapped layers < 0.01,
+   on layer Ls - 2 (third from the far end) > 0.9: relocation by two layers. Same for r = 1..4 frozen layers.

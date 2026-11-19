@@ -1,0 +1,39 @@
+wall-local-electroweak (R1b + R4): pre-run criteria, written 2026-10-24 BEFORE any code ran.
+Question: can the rules realise X1 ('chiral (electroweak) factors get wall-local link registers, colour is shared'
++ a Gauss-law repair) consistently? Failures are results; predictions below are recorded, not tuned.
+
+(1) Dvali-Shifman / confining-bulk route
+ P1 [T] Strong-coupling strip: integrating the interior links of a strip of L mixed plaquettes gives exactly
+    sum_n u_n^L e^{i n theta} (U(1), u_n = I_n/I_0); numeric strip integral agrees to < 1e-12.
+ P2 [T/E] Effective inter-wall link Phi (product of layer links) has XY/O(4) stiffness K_eff ~ 2 u^(Ls-1) (U(1)),
+    ~ 4 u_(1/2)^(Ls-1) (SU(2), u_(1/2) = I2/I1). Predict: for bulk beta_b <= 0.5 (U(1)) / <= 1.0 (SU(2)) and Ls >= 3,
+    K_eff is below the mean-field ordering value (0.25 / 0.5): Phi disordered, no Higgs mass for A_near - A_far.
+ P3 [T] Layer mass operator with ordered bonds (Coulomb bulk) has 1 flat zero mode; with disordered (confining) bulk
+    bonds it has exactly 2 zero modes, each supported on one wall only (cross weight < 1e-12).
+ P4 [E] Leading inter-wall kinetic mixing eps ~ u^(4(Ls-1)): exponential in Ls with slope 4 ln u.
+ P5 [F] Transverse flux-gap ED (unit flux through a bulk bond layer on a ring of A sites): at strong coupling the gap
+    is ~ g^2/2 and A-independent (within 5% between A = 4 and 10); at weak coupling it falls with A
+    (Delta(10)/Delta(4) < 0.7). Strong coupling = flux quantised = per-wall charges protected by a gap.
+(2) Gauss-law repair
+ P6 [T] Gauge-dressed layer chain: the near-wall charge Q_n = rho(left) - (bond flux) commutes with H exactly
+    (norm < 1e-12); an undressed far-only register gives ||[H, Q_far]|| = t (nonzero) - reproduces mirror-world A2g.
+ P7 [F] With string tension sigma > 0 the near-wall bound state's far-tail amplitude decays faster than 0.4^Ls
+    (super-exponentially; local log-slope grows in magnitude with Ls). Charge seen by the far photon: 0 exactly.
+ P8 [T] Per-wall anomalies of one 16 under its own SU(2) x U(1) with shared SU(3): Y^3, Y-grav, SU(2)^2 Y,
+    SU(3)^2 Y, SU(3)^3 all zero, Witten doublet count even. (If any fails: X1 NOT realisable.)
+(3) What fixes which factors are wall-local
+ P9 [T] Enumerate subsets of {SU3, SU2, U1} under which one 16 is vector-like (content = its conjugate).
+    Prediction: {SU3} and {SU2} both qualify, neither contains the other -> no unique maximal shared set -> CHOSEN.
+ P10 [E] With uniform (wall = bulk) couplings, the 4D beta signs and Casimirs order confining tendency
+    SU3 > SU2 > U1 -> colour would confine first: the needed pattern is NOT forced by couplings/Casimirs.
+(4) Consequences
+ P11 [T] QCD with 6 light + 6 mirror coloured flavours: b0 = 11 - 2/3 * 12 = 3 > 0, asymptotically free.
+ P12 [T] Mirror quarks carry no OUR electroweak charge; no light-mirror quark bilinear is gauge invariant with any
+    H^a H'^b insertions (|a|,|b| <= 6); colour triality then makes the lightest mirror-quark hadron carry
+    fractional OUR electric charge and be absolutely stable.
+ P13 [E] If the mirror sector is ever thermal (T_RH > m'_q), the fractional-charge relic abundance exceeds
+    terrestrial bounds by many orders; avoiding it needs a supplied T_RH, which also removes the Delta N_eff signal.
+
+Verdict rule: REALISABLE if P1-P8 hold (exact Gauss law, two massless wall sectors, anomaly-free). FORCED only if
+P9 gives a unique maximal shared set AND P10 natural ordering supports colour-shared/EW-confined; otherwise CHOSEN.
+NOT realisable if a low-energy Gauss leak survives or a per-wall anomaly is nonzero.

@@ -1,0 +1,39 @@
+A. group selection on 16 Weyl (mass | Tr X^3 | Tr X | Witten)
+  SU(16) on 16                             dim=255 mass=0 A3=6.5e-02 A1=1.1e-16 W=[] -> x
+  SO(16) on 16 (vector)                    dim=120 mass=1 A3=1.9e-18 A1=0.0e+00 W=[] -> x
+  Sp(16) on 16                             dim=136 mass=0 A3=2.0e-17 A1=4.7e-17 W=[1] -> x
+  U(1)xSpin(10) on 16                      dim= 46 mass=0 A3=3.5e-01 A1=2.5e+00 W=[] -> x
+  Spin(10) on 16                           dim= 45 mass=0 A3=1.6e-17 A1=3.5e-17 W=[] -> ok
+  Spin(9) on 16                            dim= 36 mass=1 A3=1.3e-17 A1=1.9e-17 W=[] -> x
+  SU(2)xSU(8) on (2,8)                     dim= 66 mass=0 A3=7.6e-02 A1=1.0e-16 W=[0] -> x
+  SU(4)xSU(4) on (4,4)                     dim= 30 mass=0 A3=8.8e-02 A1=1.6e-16 W=[] -> x
+  SU(8)xU(1) on 8(+1)+8bar(-1)             dim= 64 mass=1 A3=6.2e-18 A1=2.0e-17 W=[] -> x
+  Sp(8)xU(1) on 8(+1)+8(-1)                dim= 37 mass=1 A3=1.1e-17 A1=5.8e-18 W=[0] -> x
+  Sp(14)xSU(2) on 14+2                     dim=108 mass=0 A3=7.9e-18 A1=4.6e-17 W=[1, 1] -> x
+  Sp(8)xSp(8) on 8+8                       dim= 72 mass=0 A3=5.6e-18 A1=0.0e+00 W=[1, 1] -> x
+  SU(2)xSO(8) on (2,8v)                    dim= 31 mass=0 A3=5.6e-18 A1=0.0e+00 W=[0] -> ok
+  SU(2)xSpin(7) on (2,8s)                  dim= 24 mass=0 A3=2.9e-17 A1=8.9e-17 W=[0] -> ok
+  SU(2)xSp(8) on (2,8)                     dim= 39 mass=1 A3=1.3e-17 A1=3.4e-17 W=[0, 0] -> x
+  SU(4)xSU(2)xSU(2) on (4,2,1)+(4b,1,2)    dim= 21 mass=0 A3=2.1e-17 A1=8.8e-17 W=[0, 0] -> ok
+  SU(5)xU(1) on 10(-1)+5b(3)+1(-5)         dim= 25 mass=0 A3=5.6e-17 A1=1.2e-16 W=[] -> ok
+  SU(3)xSU(2)xU(1) on one family+nu^c      dim= 12 mass=1 A3=4.4e-17 A1=8.9e-17 W=[0] -> x
+  Sp(4) on 16 (irrep)                      dim= 10 mass=0 A3=1.7e-16 A1=4.3e-16 W=[0] -> ok
+  SU(2) spin-15/2 on 16                    dim=  3 mass=0 A3=2.2e-17 A1=3.3e-17 W=[0] -> ok
+PASS A1 Spin(10) passes all four tests
+PASS A2 Spin(10) is the largest passing group in the catalog | largest=Spin(10) on 16 dim=45; next=SU(2)xSO(8) on (2,8v) dim=31
+PASS A3 Sp(16) (dim 136) excluded only by the Witten anomaly
+PASS A4 nothing between Spin(10) and U(16) passes (U(1)xSpin(10), SU(16) fail)
+PASS A5 observed one-family group leaves exactly one allowed mass (the singlet nu^c Majorana term) | so the observed group alone does not protect the 16; the Z4 centre of Spin(10) does
+PASS B1 centre element acts as a single phase on 16, of order 4 (i or -i) | phase=1j
+PASS B2 Z16 count: 16 Weyl per family with Z4 charge 1 -> nu = 16 = 0 mod 16; 15 (no nu^c) is not
+C. Spin(10) 16x16 channels (Delta C = 2C(16)-C(R) >0 attractive; one-family scalar needs Sym2 = 10+126)
+  R dim  10: C(R)/C(16) = 0.800  DeltaC/C(16) = 1.200
+  R dim 120: C(R)/C(16) = 1.867  DeltaC/C(16) = 0.133
+  R dim 126: C(R)/C(16) = 2.222  DeltaC/C(16) = -0.222
+PASS C1 16x16 = 10 + 120 + 126
+PASS C2 most attractive channel is the 10 (breaks Spin(10) -> Spin(9), not the observed group)
+PASS D1 cubic 3D: rank-2 forced isotropic; rank-4 not (axis vs diagonal differ) | group order 48, f(axis)=-0.565, f(diag)=-0.366
+PASS D2 hyperoctahedral 4D: rank-2 forced isotropic; rank-4 not (axis vs diagonal differ) | group order 384, f(axis)=-0.388, f(diag)=-0.538
+PASS E1 pi flux per plaquette lowers the half-filled energy (2D, L=8) | E0=-0.7911 Epi=-0.9464
+PASS E2 pi flux per plaquette lowers the half-filled energy (3D, L=6) | E0=-1.0000 Epi=-1.1984
+TOTAL: PASS=13 FAIL=0

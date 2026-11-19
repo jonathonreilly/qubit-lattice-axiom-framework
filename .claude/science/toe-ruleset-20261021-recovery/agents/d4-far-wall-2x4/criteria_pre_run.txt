@@ -1,0 +1,37 @@
+d4-far-wall-2x4: pre-registered criteria (written 2026-10-26 before any 2x4 eigenvalue was computed)
+
+Model: unchanged from d4-far-wall-2plus1 (scratch/core.py): 4-mode register, wall hop i psi^+ Gamma_k psi' on the (n1, n2)
+square slice, t = 1, on-site Cayley term g [8 (Omega + Omega^+) - sum_{a<b} s_a s_b], Z4 twist psi -> i psi on every wrap
+(vec twist), periodic. Only the patch size changes: Lx x Ly = 2 x 4.
+
+Parent values (d4-far-wall-2plus1 note, Cayley, vec twist):  g      gap 2x2   gap 2x3
+                                                           0.25    0.886     0.290
+                                                           0.35    2.557     3.182
+                                                           0.5     5.639     5.599
+
+Symmetry reduction (needed: the (Q=0, nA even) sector is 3.0e8 states = 4.8 GB per complex vector, over the 6 GB cap for any
+Lanczos). Added exactly: the two magnetic translations T_x, T_y (Z4 twist makes them act as c_r -> c_{r+e} times i on a
+wrap; they act as T_A x T_B on the Kronecker register), giving 8 total-momentum sectors per (Q, nA mod 2): 3.76e7 states,
+0.56 GB per complex vector. Exact A <-> B exchange (h_A = h_B, Cayley term symmetric) maps Q -> -Q, so Q = -1 is not run.
+Memory estimate: plain three-term Lanczos (3 vectors) + one stored ground vector for deflation + block temporaries
+(largest block 12870^2/8 = 2.1e7 entries, 0.33 GB) -> ~3.5 GB peak. Self-monitored: the worker exits cleanly if its peak
+RSS exceeds 6 GB.
+
+Validation before any 2x4 run (must PASS, else VOID): the momentum-sector code reproduces the parent's full-sector e0 (and
+GS-sector e1) at 2x2 and 2x3 to 1e-6 (min over momentum sectors), and its matvec equals the parent matvec mapped through the
+momentum basis to 1e-10 at 2x2.
+
+Sectors at 2x4: (Q, nA mod 2) in {(0,0), (0,1), (1,0), (1,1)}, all 8 momenta each (|Q| <= 1; the parent's full 2x2 scan
+found the lowest excitation always at |Q| <= 1). (2,0), (2,1) are run afterwards only if time allows and are reported
+but do not change the definition below unless they lie lower (then they are included). Gap Delta = (lowest level above the
+global ground state over all run sectors) - E0, with e1 of the GS momentum sector from a deflated Lanczos.
+Order: g = 0.25, then 0.35, then 0.5.
+
+Classification at each fixed g (as set by the caller):
+  CLOSING:      Delta(2x4) < 0.5 Delta(2x3)
+  SURVIVING:    Delta(2x4) >= 0.9 Delta(2x3) AND the ground state is unique (no other level within 1e-6 of E0)
+  INCONCLUSIVE: otherwise.
+Also reported (not used in the class): Delta(2x4)/Delta_free(2x4) with Delta_free(2x4) = min 2 sqrt(sin^2 k1 + sin^2 k2),
+E0 per site, the GS quantum numbers, wall time and peak RSS.
+The verdict is a finite-size trend over three width-2 patches (quasi-ladders), not a thermodynamic statement.
+No CL text, no PRs, no pushes, no CL/axiom edits.

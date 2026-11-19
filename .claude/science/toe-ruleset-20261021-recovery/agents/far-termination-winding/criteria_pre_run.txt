@@ -1,0 +1,27 @@
+far-termination-winding: criteria written BEFORE any code ran (2026-10-24).
+Candidate clause: "CL-1's bulk tick has W = 0 (T-symmetric, static-type domain-wall circuit); the slab's FAR termination
+layer carries a family-class turn-graded winding (all three components nonzero)."
+
+G1 (gate / forcing). PASS-as-result if: both end placements (W layer at near or at far termination) are valid unitary slabs
+   with the SAME bulk and the same total winding, the near placement restoring the near-wall pi copy; reversing the record
+   arrow (U -> U^+) does not move the W layer between ends; the minimal family-class W compatible with a single far mirror
+   Weyl is not unique (count the options). Predicted: the termination is a CHOICE (not forced), of about 2-3 bits.
+   Gate prediction: clauses 1, 2, 4 pass; clause 3 UNTESTED (predictions exist, none measured).
+N1 (near wall flows). PASS if near wall (F_0, F_pi) = (f(2,+), 0) for every g in {0.2, 0.3, 0.5} and Lx in {6, 8, 10}.
+N2 (no doubler map). PASS if the repaired slab's spectrum is NOT invariant under eps -> eps + pi with k -> k + pi
+   (necessary for a layer-preserving S with S U S^-1 = -U(k+pi)); exact lemma: such an S forces F_0 = F_pi per wall.
+N3 (vacuum polarization). PASS if the near-wall induced charge of the repaired slab under near-wall kicks is > 0.05
+   (screens), while the exactly S-doubled control (U plus its inverted pi image) gives < 1e-9.
+N4 (T-odd leak). In a T-symmetric 3D Wilson domain-wall slab with a T-odd far-layer term, PASS if the near-wall
+   Kramers splitting (the only T-odd K^0 structure on one Weyl) decays exponentially in Ls with rate near (1-m)^2 per
+   layer, and is exactly 0 (< 1e-12) with no far T-odd term.
+C1 (CP). PASS if T with X = 1 forces J = 0 (< 1e-13) and a family-universal leak term leaves J = 0. Predicted: J = 0 at
+   the near wall, so CP still needs a non-family-blind ingredient (same status as cp-source-new-tick, not worse).
+F1 (far wall anomaly). Compute per family, for content (q1,-), (q2,+), (q1,-) x 16, the turn Z3 anomalies (supplied form:
+   Z3-Spin10^2 = 2 sum h t mod 3, Z3-grav = 16 sum h t mod 3, Z3^3 = 16 sum h t^3 mod 9) for twists k = 0, 1, 2, plus gauge
+   anomalies (zero for any number of 16s) and Weyl count mod 16. Predicted: gauge and mod-16 vanish per family; the turn
+   cubic does NOT vanish per family for any twist, but vanishes at N_f = 3 -> SMG must be family-collective.
+Verdict rule: ADOPT if gate passes (clause 3 at least UNTESTED-clean), all N/C/F computed, no measurable cost, AND the
+termination is forced. CANDIDATE if no measurable cost but termination chosen or far-wall SMG unshown. REJECT if a
+measurable failure appears at the near wall. Predicted verdict: CANDIDATE.
+Failures are results; every check line reports the computed outcome.

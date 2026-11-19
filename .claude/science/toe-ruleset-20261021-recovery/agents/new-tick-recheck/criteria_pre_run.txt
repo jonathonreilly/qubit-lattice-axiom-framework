@@ -1,0 +1,32 @@
+new-tick-recheck: pass criteria written BEFORE any scratch run or runner (2026-10-24).
+Inputs read: register CL-1 'Family-class tick' clause (adopted 2026-10-24), t-breaking-tick-lowenergy (note, runner: FREEZE
+rebuild), skip-rule (lapse in the step: sin eps_cube = N sin eps0; low quasi-energies scale by N), tick-fraction-waves
+(speed tie tau = sin(eps)/sqrt3), overlap-from-walk (A1 kernel-independent GW; Wilson-type kernel supplied; window
+0 < m0 < 2; U(1) 4^4 index), overlap-colour (index = flux prediction; anomaly sums), floquet-pi-slab (alternating F/F^+
+slab, odd Ls, near wall light q 2, far wall mirror q 1, bulk gap at 0 and pi).
+
+Tick under test: FREEZE (W_F = (-2,1,1)) rebuilt with the t-breaking-tick-lowenergy code (same seed and draw order).
+
+Verdict scale per item: SURVIVES (result holds on the new tick as stated), NEEDS REPAIR (holds only after a named change
+to how the result is read or built; the change must not alter W or the 96-element group), FAILS (no repair found).
+
+(1) Lapse in the step. SURVIVES iff FREEZE has a step angle eps such that a one-parameter family U_F(eps) stays
+    family-class (W = W_F) and its low quasi-energies scale as sin(eps) (by N). Prediction: NEEDS REPAIR. FREEZE's light
+    dispersion cos theta = mean cos K has no free step (it is the maximal step), and W is a homotopy invariant, so no
+    family-class path reaches small eps continuously. Candidate repair to test: a W = 0 lapse layer composed with the
+    tick, exp(i (N-1) h) with h the tick's own linear term; PASS of the repair = W unchanged, turn kept on the axis,
+    low quasi-energies scale by N to <= 1e-3 relative at |K| = 0.01, per-axis speeds N sqrt(gamma^ii)/sqrt3.
+(2) Speed tie. SURVIVES iff light speed and graviton speed are still one tick/edge ratio. Prediction: SURVIVES, with
+    tau fixed at the eps0 = pi/2 value (1/sqrt3), so the free sin(eps0) disappears; check that CL-1's tick at eps = pi/2
+    has exactly FREEZE's light dispersion (same units), and that the graviton stays non-superluminal at tau^2 = 1/3.
+(3) Overlap. GW is kernel-independent for any g5-hermitian kernel (A1, exact). Check: (a) whether a direct 4-spinor
+    transcription of FREEZE's light Hamiltonian (with its T-odd L-R term) is g5-hermitian; (b) a g5-hermitian kernel
+    built from the new tick's own pieces: GW to 1e-12, free zeros only at k = 0 in a stated m0 window; (c) one small
+    U(1) background on 4^4 (Q = 1; charge 2 gives Q = 4): index = flux prediction, equal to the old kernel's.
+    Prediction: (a) fails (the L-R term carries a K-dependent phase 1 : w : w^2), so NEEDS REPAIR (kernel from the
+    T-even part, or the Clifford embedding), and (b), (c) pass once repaired.
+(4) Slab. SURVIVES iff the floquet-pi-slab alternating slab built from the ADOPTED tick (including the lapse layer at
+    N != 1 from (1)) keeps: bulk gapped at 0 and pi (> 0.3 at g = 0.5), odd Ls near wall = light q 2 (hand +1), far wall
+    = mirror q 1, W = W_F. Prediction: SURVIVES at N = 1 (it was built on FREEZE) and at N = 0.9 with the repair.
+Runner style: < 6000 chars stdout, AUDIT_TIMEOUT_SEC = 120, seeded, ends TOTAL: PASS=N FAIL=0; FAIL facts are results.
+No PRs, no CL edits, no pushes.

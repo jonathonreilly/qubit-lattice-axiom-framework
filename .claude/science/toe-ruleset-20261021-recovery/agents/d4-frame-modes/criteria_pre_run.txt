@@ -1,0 +1,41 @@
+d4-frame-modes: pre-registered criteria (written 2026-10-26 BEFORE any computation in this folder)
+
+Object: the frame doublet of d4-gravity (PR #10100 draft, G4/R2/R4/M1): rescaling of the three
+orthogonal root 4-frames by (a1,a2,a3), a1+a2+a3 = 0, spokes fixed.
+
+(1) Identification (group theory, exact on the 1152 elements of W(F4))
+ C1a  W(F4) permutes the 3 frames through a quotient S3 whose kernel has order 192 and contains
+      every short-root reflection and no long-root reflection.            PASS if exactly so.
+ C1b  The doublet character chi = (#fixed frames) - 1 has norm 1 (irreducible).
+ C1c  Multiplicity of the doublet in Sym^2(V) is 0 (group-theoretically non-metric) and in
+      Sym^4(V) is >= 1 (matter quartic can see it).
+ C1d  Frames = the 3 nonzero classes of D4/2D4*; hole types = the 3 nonzero classes of D4*/D4,
+      permuted through the OTHER S3 (kernel = W(D4) of the long roots); the joint image has order 36.
+      Family link: FLAG ONLY, no claim.
+
+(2) Gapping. A mode is GAPPED if its k -> 0 quadratic coefficient is nonzero (relative to the
+    graviton's kinetic scale) after the item is included.
+ C2a  Four-derivative hinge terms: GAPPED iff the doublet Q eigenvalue at k = 0 is > 1e-8 |Q|.
+      Prediction: not gapped (k = 0 zero is exact; four-derivative terms only add k^4).
+ C2b  Nonlinear hinge sum at k = 0: report S(eps) = c2 eps^2 + c3 eps^3 + c4 eps^4 along the doublet.
+      Cannot gap (mass is quadratic); c3 != 0 is reported as a nonlinear-instability flag.
+      Also: doublet zero must survive a finite uniform metric strain (zero count unchanged).
+ C2c  Matter loop (one-loop vacuum energy with W(F4) scalar and Wilson-type fermion kernels, per-edge
+      length -> weight readings fixed by metric covariance at two-derivative order): report the
+      induced M (per unit 4-volume) and m^2 = M/Z. GAPPED by (c) only if M > 0 for every species AND
+      the register's vacuum standard (CL-3: respond only to departures from the vacuum of the same
+      edges) does not subtract it. Control: the same loop on uniform traceless metric strain; an
+      anisotropic (W(F4)-only) part means the vacuum standard is load-bearing for the metric too.
+ C2d  Records/metric reading: if matter AND the hinge sum read edges only through a cell metric,
+      the doublet is not a variable. Viable iff the raw (not integrated-out) metric block equals
+      c x linearised sqrt(g) R with one c to < 2% at small k.
+
+(3) If not gapped: couplings + observables (estimates against measurement)
+ C3   Fifth force strength alpha (relative to gravity) < 1e-3 at 50 microns (Eot-Wash class),
+      EP eta < 1e-15 (MICROSCOPE); extra GW polarisation power < 1e-2 of tensor (LIGO/Virgo);
+      Delta N_eff < 0.17 (Planck+ACT class, ~95%); PPN shifts < 1e-5.
+(4) beta: numeric if feasible within the run budget (pre-register beta = 1 within 1e-3); otherwise
+    argued and labelled ARGUED/INHERITED, not computed.
+
+Verdict rule: GAPPED (by what) if any of C2a-C2d gaps/removes it with the register as written;
+HARMLESS if none does and all C3 bounds pass; EXCLUDED if any C3 bound fails.

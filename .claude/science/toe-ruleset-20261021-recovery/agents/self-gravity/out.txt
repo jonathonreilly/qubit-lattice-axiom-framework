@@ -1,0 +1,29 @@
+== A. Page-Geilker
+[PASS] [T] actual-configuration source: full torque following each outcome (corr 1); mean field: 0. Page-Geilker 1981 saw the outcome-following deflection: actual sourcing PASSES | corr 1.000
+== B. self-term and the vacuum standard (open chain L=8, N=4)
+[PASS] [T] local reading: one particle's source sits on its actual site (within one bond); with the vacuum standard an eigenstate's subtracted total is E1-E0 at every configuration (no noise in the total) but its distribution still varies with the configuration (dipole noise) | 1-particle |centre - X| <= 0.52; total 0.7052 = 0.7052; Born var of source centre 5.04 sites^2
+[PASS] [T] the edges set by that source are read by CL-1 at every site, so the odds of the body that sourced them evolve in them: the self-term is not removable by any per-configuration subtraction (it is the same field that acts on everything else); an added particle has no vacuum amplitude in its number sector, so the standard is undefined there
+== C. CL-2 transport and hop rates
+[PASS] [D] on a chain the fewest-change transport is unique and moves exactly the net flow across each bond | LP moved 0.105993, sum|F| 0.105993
+[PASS] [D] a moving packet's actual position hops one site at a rate v/a (no counterflow) | hops per time 1.1354, v/a 1.1293
+[PASS] [D] CL-1 two-tiling walk (b=0.3, mu=0.2): a positive-energy packet AT REST with zero drift still moves mass every half-tick (the tilings' halves alternate); the moved fraction falls as a power of width | sigma, moved/half-tick (even, odd): 8: 0.0094,0.0297, 16: 0.0023,0.0072, 32: 0.0004,0.0013; f = 2.4 (a/s)^2.28
+== D. odds feeling a spring centred on their own actual position (HO, Omega = 1)
+[PASS] [D] Born distribution: without self-term kept (sampling); with a spring centred on the actual X the odds follow X and X sits too close to its odds' centre, an O(w^2) violation; centring on the mean (Schrodinger-Newton) keeps it | Q(0) +0.003; dQ(0.25) -0.101, dQ(0.5) -0.262, power 1.37; SN dQ -0.049
+[PASS] [D] energy of the odds: excess bounded at O(w^4) (no secular heating from the self-term itself) | excess E(0.25) 2.66e-03, E(0.5) 4.10e-02, power 3.95, late slope 3.9e-04; SN excess 6.61e-03
+== E. lattice jitter of the actual position about the smooth flow (coherent state)
+[PASS] [D] the actual position random-walks about the smooth (Bohm-like) flow with variance = c a x path length; it vanishes as a -> 0 (continuum limit deterministic) | a=0.2: var 0.046, a=0.1: var 0.024, a=0.05: var 0.012; c = 0.97
+== F. definite field sourced by a hopping point (3D lattice, a = c = 1)
+[PASS] [D] each hop radiates a fixed energy kappa q^2/a, independent of the hop rate; the same source moved smoothly at the same speed radiates far less | per hop: v=1/4 0.1701, v=1/8 0.1809; smooth v=1/4 5.8e-03; static self-energy -0.122 (q=1)
+[PASS] [D] a source spread over width s (e.g. conditional odds) radiates much less per hop of a | per hop: point 0.1701, s=1 2.35e-03, s=2 4.99e-05
+== G. two masses, no mediated entanglement
+[PASS] [T] definite edges from the actual configuration: every history's odds a product (concurrence 0); quantum mediator entangles; single-mass visibility identical in both | concurrence q 0.389, definite 3e-17; |rho2_LR| 0.4605 vs 0.4605
+== H. estimates against measurement (SI)
+[PASS] [E] self-term phases and Born shifts: molecules (2.5e4 amu, Fein 2019), Rb 54 cm (Kovachy 2015), levitated nanosphere: all far below resolution; measured interference PASSES | phi_self mol 1e-14, Rb self 3e-20, Rb mutual 5e-26 rad; (w_SN/Omega)^2 2e-16 (w_SN 0.025/s)
+   prediction: BMV (1e-14 kg, 200 um, 2.5 s) mutual phase 0.79 rad, entanglement witness 0; SN-type collapse needs m > 3e+09 amu at 1 um
+[PASS] [E] low-frequency field noise from hop jitter on a LISA-Pathfinder test mass: >10 orders below | S_F^1/2 1e-32 vs measured 1e-14 N/rtHz
+[PASS] [E] X-ray-band acceleration noise of a proton from neighbours' jitter vs Diosi-Penrose at the underground Ge bound (Donadi 2021): negligible; cold-atom heating likewise | S_a 2e-51 vs 1e-14 m^2/s^3
+[PASS] [E] cutoff radiation: definite edges answering each hop of a thermal (300 K) nucleon's quarks radiate far beyond any cosmic energy budget (bound: 1e-3 m_p c^2 per Hubble time) | E_hop 6e-31 J, P(300 K) 6e+07 W vs bound 3e-31 W; at rest (1 fm packets, walk power law) 5e-31 W
+   smoothing the source over s >> a removes it (F2: x72 at s=1, x3408 at s=2); a quantised edge would need hbar/tau = 4e+08 J per graviton >> E_hop
+theorems: A, B1-B2, G; diagnostics: C1-C3, D1-D2, E, F1-F2; estimates: H1-H4
+elapsed_seconds 4.8
+TOTAL: PASS=16 FAIL=0

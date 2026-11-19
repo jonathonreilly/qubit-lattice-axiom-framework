@@ -1,0 +1,132 @@
+---
+claim_id: no_adopted_rule_prefers_the_smallest_anomaly_free_family_count_because_fewest_changes_is_blind_to_content_the_minimal_freeze_winding_carries_one_copy_and_the_vacuum_energy_falls_with_each_family_bounded_theorem_note_2026-10-24
+claim_type: bounded_theorem
+claim_scope: "Given the FREEZE-class Floquet slab of floquet-pi-slab (odd Ls, allowed N_f = 0 mod 3 under the 16-pair Omega twist), three candidate selectors of the smallest anomaly-free count. (A) CL-2's fewest-changes transport: for independent families (product odds and support) its cost is additive, c(N) = N c(1) (exact; LP checked N = 1..3); in a stationary vacuum it is 0 for every N_f; its text prices transport at fixed content and counts no new modes, so N_f is not a CL-2 output. Extended to content selection (not adopted) its minimiser over the anomaly-free set is N_f = 0; 3 needs a supplied N_f >= 1, and only on the 16-pair route (FREEZE's bare-label charge-4 term needs N_f >= 4 and 2 N_f = 0 mod 16, smallest 8). (B) Per-family node pairs (light +, mirror -) have winding 0 or one of the six +-(3 e_a - (1,1,1)) (L1 norm 4); W_F = (-2,1,1) is minimal in its class; the near wall of the odd Ls = 7 slab holds one Weyl doublet at (K = 0, 0) and one at (R, pi), sectors (1, w): one light copy; N_f stacked families give W_tot = N_f W_F, and the D1 anomaly-free set equals W_tot = 0 mod 3 in Z[Z3]. (C) A family-diagonal mirror term has E0(N) = N E0(1), strictly decreasing, gap N-independent (exact; reduced SU(4) charge-4 analogue on 8 modes and its 2-family Kronecker sum); CL-3 gives the vacuum no weight. Not covered: interacting slab, the real 16 Omega spectrum (2^32), family-coupled mirror terms, gauge fields."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_bounded_theorem_note_2026-10-23
+  - no_adopted_rule_fixes_the_floquet_slab_layer_parity_because_the_zoom_ladder_keeps_one_orientation_the_vacuum_fold_is_blind_to_inversion_and_adopted_half_ticks_carry_no_turn_winding_bounded_theorem_note_2026-10-24
+  - the_slab_mirror_sits_on_the_light_copy_so_the_turn_anomaly_allows_every_family_count_and_the_number_conserving_spin12_term_cannot_gap_the_mirror_bounded_theorem_note_2026-10-23
+  - the_label_selective_charge_four_mirror_term_on_the_freeze_walk_first_exists_at_four_families_and_frees_the_light_partners_bounded_theorem_note_2026-10-23
+runner: scripts/no_adopted_rule_prefers_the_smallest_anomaly_free_family_count_because_fewest_changes_is_blind_to_content_the_minimal_freeze_winding_carries_one_copy_and_the_vacuum_energy_falls_with_each_family_2026_10_24.py
+---
+
+# No adopted rule prefers the smallest anomaly-free family count: fewest changes is blind to content, the minimal FREEZE winding carries one copy, and the vacuum energy falls with each family
+
+Claim type: bounded_theorem. Exact statements are labelled [T], finite diagnostics [F] and readings [S].
+Runner: runner.py, TOTAL: PASS=8 FAIL=0, 0.3 s, 131 MB peak, 4.3 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
+It was tested under a unique filename (scratch/family_minimality_test_run.py). Axioms unchanged. No rule adopted.
+
+## Question
+
+With a FREEZE-class tick (nonzero turn-graded winding) the far-wall bookkeeping of floquet-pi-slab allows N_f in
+{3, 6, 9, ...}. slab-parity showed that the odd layer count is not forced. Even granting it, does any ADOPTED principle prefer
+the smallest anomaly-free count, with no 3 put in? Three candidates were tested:
+- (a) CL-2's fewest changes / least information (the info-min-law paragraph);
+- (b) the FREEZE-class winding itself: does the winding of one tick fix how many copies its wall carries?
+- (c) the vacuum energy of the mirror-gapped far wall: is it monotone in N_f, and does a stability criterion bound N_f?
+
+Repo first. A git grep of origin/main (docs, scripts) for "smallest anomaly-free", "minimal family count", "family-count
+minimality" and "minimal number of families" found nothing, and no open PR covers it. This note builds on floquet-pi-slab
+(D1 index), slab-parity (C1: the adopted tick has W = 0), anomaly-family-count (Omega as a per-family 16 pairing),
+freeze-mirror-smg (A, C1: bare-label term thresholds) and the register's CL-2 and CL-3 texts.
+
+## Pass criteria
+
+The criteria were written before any code ran (criteria_pre_run.txt). PASS = an adopted rule selects N_f = 3 with no 3
+inserted. Predicted: FAIL for (a), (b) and (c). Every line matched its prediction.
+
+## A. CL-2 fewest changes
+
+- A1 [T]/[F]. For independent families (product odds and product support) the fewest-changes transport cost is additive:
+  c(N) = N c(1). The product of optimal couplings attains N c(1), and any coupling's expected changes are at least the sum of
+  its marginal couplings'. Checked by LP on a seeded two-mode family: c(N)/N = 0.4240 for N = 1, 2, 3.
+- A2 [T]. In a stationary vacuum (odds unchanged by the half-tick) staying has zero changes, so CL-2's cost is 0 for every
+  N_f. The vacuum cannot rank family counts.
+- A3 [S]. CL-2's text prices the transport of a given content under a given half-tick. Through a passing it "does not count
+  new modes". The axioms put one qubit per site, so families are composite cell copies (composite before atomic). No clause
+  of CL-2, or of CL-1, which supplies the cell content, prices their number. N_f is a supplied multiplicity.
+- A4 [T]. Extended reading, not adopted: "the content minimises expected changes".
+  - Over the anomaly-free set its minimiser is N_f = 0 (no matter).
+  - 3 appears only with a supplied "N_f >= 1", and only on the 16-pair Omega route.
+  - With FREEZE's bare-label charge-4 term (freeze-mirror-smg: it exists only for N_f >= 4, and Spin-Z4 needs
+    2 N_f = 0 mod 16) the smallest count is 8, and 24 if the turn mod 3 also applied.
+  - So even the extended minimality is route-dependent.
+
+## B. FREEZE-class winding
+
+- B1 [T]. A per-family node pair (light with hand +, mirror with hand -) has winding f(q,+) + f(q',-).
+  - For q = q' this is 0.
+  - For q != q' it is exactly one of the six vectors +-(3 e_a - (1,1,1)), all of L1 norm 4.
+  - W_F = (-2, 1, 1) is one of them. So FREEZE already has the minimal nonzero per-family winding of its class, and no
+    smaller FREEZE-class tick exists.
+- B2 [F]. Take the odd (Ls = 7) slab with this minimal-winding tick.
+  - The near wall holds exactly one Weyl doublet at (K = 0, 0) and one at (R, pi), each 2 states in turn sectors (1, w),
+    i.e. q 2. The far wall holds the q 1 doublet, in sectors (1, w^2).
+  - So the near wall carries ONE light copy in total across sectors. The pi state is FREEZE's own pinned partner.
+  - The three turn sectors are turn charges, not copies.
+- B3 [T]. N_f stacked identical families give W_tot = N_f W_F, checked at N_f = 2 and 3.
+  - W_F = (1, 1, 1) mod 3, so the anomaly-free set of floquet-pi-slab D1 is exactly "W_tot = 0 mod 3 in Z[Z3]"
+    (both are {3, 6, 9, 12} on 1..12).
+  - A "minimal nonzero winding" rule therefore picks N_f = 1, which is anomalous.
+  - "Minimal anomaly-free winding" (W_tot = 3 W_F) is the supplied minimality restated in winding language.
+  - CL-1's adopted tick has W = 0 (slab-parity C1), so no adopted tick carries any of this.
+
+## C. Vacuum energy of the gapped far wall
+
+- C1 [T]/[F]. Reduced analogue: Omega' = sum eps_ijkl B_ij B_kl, with B_ij the antisymmetric pair of two 4s. It has charge 4
+  and is SU(4)-invariant (both exact).
+  - H = -(Omega' + h.c.) on 8 modes has a unique ground state at E0 = -3.4641 and a gap of 1.4641.
+  - Two decoupled families (Kronecker sum, 2^16 sparse) give E0(2) = -6.9282 = 2 E0(1), with the same gap.
+  - This is an analogue only. The real 16 Omega (2^32 per family) is not diagonalised.
+- C2 [T]. With a family-diagonal mirror term, E0(N) = N E0(1) is strictly DECREASING in N_f and the gap is independent of
+  N_f. anomaly-family-count's Omega is a per-family pairing inside a 16, so it is family-diagonal.
+  - Energy minimisation would therefore prefer MORE families, without bound, and no stability bound arises.
+  - CL-3 weighs only departures from the vacuum, and its Hamiltonian constraint subtracts the vacuum phase. So the far
+    wall's vacuum energy carries no weight in the adopted rules at all.
+
+## Answer
+
+FAIL, as predicted. No adopted rule selects N_f = 3.
+- (a) CL-2 prices transport, not content. It is exactly zero in the vacuum for every N_f and additive off it. Extended to
+  content selection it would pick N_f = 0, and the smallest nonzero count it gives depends on the supplied gapping route
+  (3 or 8).
+- (b) The minimal FREEZE-class winding puts one copy on each wall. The winding does not fix N_f. Anomaly freedom is the
+  divisibility W_tot = 0 mod 3, and "smallest" is not in any clause.
+- (c) The vacuum energy falls linearly with each family and the gap does not depend on N_f. The direction is wrong, there
+  is no bound, and CL-3 gives the vacuum no weight.
+
+What would select 3 (proposal space, untested): a rule that minimises total turn winding subject to anomaly freedom and
+nonzero matter. Its only content is "smallest", and it fails gate item 1 in spirit unless it predicts something else. The
+measured N_nu = 2.984 +- 0.008 (given light neutrinos in every family) remains the only selector of 3 over 6.
+
+## Gate (anti-smuggling)
+
+No rule is proposed. All three candidates were tested as adopted (or as explicitly flagged extensions of adopted) rules, and
+none inserts a 3.
+
+## Smuggling review
+
+Supplied:
+- FREEZE;
+- the F/F^+ alternation and Ls parity (slab-parity);
+- the label bond pattern and g;
+- the family multiplicity N_f itself;
+- the Omega route versus the bare-label route;
+- the reduced SU(4) analogue in C1;
+- free fields.
+
+Forced:
+- additivity of fewest changes over independent families;
+- zero CL-2 cost in a stationary vacuum;
+- the norm-4 winding class with W_F minimal in it;
+- one light copy per wall node;
+- W_tot = N_f W_F, with anomaly freedom equivalent to W_tot = 0 mod 3;
+- additivity and monotone decrease of the family-diagonal vacuum energy.
+
+Not shown:
+- family-coupled mirror terms (for example SU(N_f)-symmetric ones), whose energy is not computed;
+- the interacting slab;
+- the real 16 Omega spectrum;
+- gauge fields.

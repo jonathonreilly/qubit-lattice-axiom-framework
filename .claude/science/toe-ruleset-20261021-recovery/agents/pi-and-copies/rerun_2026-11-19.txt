@@ -1,0 +1,34 @@
+== 1. the auditor formula at K = R = pi(1,1,1)
+[PASS] U(R) = -cos(a-b) + i sin(b-a) W exactly (even mass a, odd mass b): R sits at pi +- (a-b)  6.1e-16
+[PASS] U(0) = cos(a+b) + i sin(a+b) W: K=0 mass a+b (both identities: D(R) = Gamma, Gamma W Gamma = -W)  5.0e-16
+== 2. covariant block algebra
+[PASS] commutant of the 24 spin-3/2 corner actions has dim 4 = span{1, W, F, B}, a Pauli algebra (F,B,W) = (tau1,tau2,tau3)  hop shells W [1], F [2], B [3]
+[PASS] corner parity Gamma = D(R) acts on it as Ad F: W -> -W, B -> -B, F -> F
+[PASS] massless node: alpha_a Clifford (speed 1/sqrt3); W and B anticommute with all alpha_a (Dirac masses), F commutes (not a mass)  Clifford err 2e-13
+== 3. partition exchangers (6^3 lattice)
+[PASS] each of the 8 exchangers maps even-block covariant unitaries onto odd-block covariant unitaries
+[PASS] site inversion maps the 24 even-centre rotations onto the odd-centre ones; gauged (1,1,1) translation does so up to the sign (-1)^(2j)
+   induced signs on (W,F,B), antiunitary flag: {'T': ((1, -1, -1), False), 'TG': ((-1, -1, 1), False), 'T*': ((1, 1, -1), True), 'T*G': ((-1, 1, 1), True), 'I': ((1, 1, 1), False), 'IG': ((-1, 1, -1), False), 'I*': ((1, -1, 1), True), 'I*G': ((-1, -1, -1), True)}
+[PASS] on q = cos th + i sin th m.tau every exchanger acts as Ad of 1, F, B or W (antiunitary ones too)  {'T': 'AdW', 'TG': 'AdB', 'T*': 'AdB', 'T*G': 'AdW', 'I': 'id', 'IG': 'AdF', 'I*': 'AdF', 'I*G': 'id'}
+== 4. theorem A: single ticks (v, phase x alpha(v))
+[PASS] generic single ticks: U(R) is not scalar (the statement below is not vacuous)  200/200 non-scalar
+[PASS] every partition-neutral single tick whose K=0 term is a nonzero pure Dirac mass (no F part) has U(R) = lambda*1, lambda^2 = product of the two K=0 levels: R sits exactly at the light centre or at its pi-point  44 root-found samples over the 8 exchangers
+[FAIL] translation class (v, W v W), base branch: pi-gap <= K=0 half-splitting mu for every sample (exact: cos aR >= cos mu)  43 light samples, max(gap - mu) -1.4e-02, max gap/mu 0.888646
+[PASS] F-rotated involution (v,v), v = cos h W + sin h F (site-inversion neutral): pi-gap 2h but first-order cone anisotropy ~ 1.42 h  gap 0.0200, anisotropy/h 2.777
+== 5. theorem B: W-mass schedules
+[PASS] any schedule of V(m_t): U(0) = exp(i W sum m_t), U(R) = (-1)^(n/2) exp(i W sum (-1)^t m_t)  1.8e-15
+[PASS] mass sign alternating every tick (m,m,-m,-m) or (m,-m,-m,m): two-tick U(0) = U(R) = 1, i.e. massless AND ungapped
+== 6. Wilson-type staggered tick: half-tick masses (mu/2 + b, mu/2 - b)
+[PASS] (b,-b) is invariant under exchangers (gauged translation x Gamma, site inversion x Gamma, ...); (a,a) under others; (mu/2+b, mu/2-b) under none  (b,-b): ['TG', 'T*', 'IG', 'I*']; (a,a): ['T', 'T*G', 'I', 'I*G']; both: []
+[PASS] the site-inversion image of (mu/2+b, mu/2-b) is (mu/2-b, mu/2+b), Gamma-equivalent to mu -> -mu, with identical spectrum
+[PASS] bands: cos w = (cos2b + cos mu)/2 S - (cos2b - cos mu)/2, S = mean cos K_a; all eight |w| equal (copies fourfold)  8.3e-16
+[PASS] quasi-energy band is [mu, pi - 2b]: light gap mu at K=0 only, pi-gap 2b at R only (mu=0.05, b=0.6)  sampled range 0.1082..1.9355; pi-2b = 1.9416
+[PASS] |k|=0.1: light band = sqrt(mu^2 + c^2 k^2), c^2 = (cos2b + cos mu)/6, within 0.6%; direction spread < 0.6%  dev 2.4e-05, spread 1.2e-04
+[PASS] |k|=0.3: light band = sqrt(mu^2 + c^2 k^2), c^2 = (cos2b + cos mu)/6, within 0.6%; direction spread < 0.6%  dev 1.1e-03, spread 2.1e-03
+[PASS] lattice tick (6^3) commutes with all 24 rotations about even and odd block centres  4.5e-16
+[PASS] b = (pi - 1/2)/2 puts every mode within the CL-6 domain |w| <= 1/2 rad per tick (speed c = 0.142)  max |w| 0.4989
+== 7. the two copies
+[PASS] K=0 Bloch space under the 24 rotations = 2 x G3/2: character 8, -+2 (120 deg), 0 (90, 180 deg); mean |chi|^2 = 4 = 2^2; commutant 1_4 x M_2  {0: [np.float64(8.0)], 180: [np.float64(0.0)], 90: [np.float64(0.0)], 120: [np.float64(-2.0)]}
+[PASS] every covariant multi-step tick (30 random, 2-8 half-steps): K=0 and R levels have multiplicity 4k, so the two copies have equal rest mass
+[PASS] Dirac masses ({M, alpha_a} = 0) form an 8-dim space = 2 A1 + 2 A2 + 2 E; the invariant pair is span{W, B}  {'A1': np.float64(2.0), 'A2': np.float64(2.0), 'E': np.float64(2.0), 'T1': np.float64(0.0), 'T2': np.float64(0.0)}
+TOTAL: PASS=24 FAIL=1

@@ -1,0 +1,33 @@
+== A. link registers
+[PASS] A1 [T] on a finite register every U with [E,U] = U is nilpotent (U^(2S+1) = 0), so no U(1) raiser is unitary; a unitary shift exists only with E defined mod N (Z_N clock) | max|U^(2S+1)| = 0e+00, S = 1/2..3
+[PASS] A2 [T] the domain-normalised raiser V = S^+ / |S^+| is a partial isometry: V^+V = 1 - P(m=S), VV^+ = 1 - P(m=-S), [E,V] = V; and no X with [E,X] = X/2 exists (no half-power of a register) | 0e+00; half-step solution dims [0, 0, 0, 0]
+[PASS] A3 [T] three one-rishon flavour pairs per bond (a register whose ends are the three face sites of a C3 orbit): the flavour-blind raiser S^+ = sum_f b_f^+ a_f keeps the C3-invariant subspace, which is exactly spin 3/2 | dim 4, Casimir 15/4 err 4e-15
+== B. edge layout: registers on the cube edges, S = 1/2 (8 matter + 24 rishon modes)
+[PASS] B0 [T] free cube hop: R^2 = 1, R_i^2 = 1, {R_i,R_j} = 0 (every face phase -1)
+[PASS] B1 [T] the rishon-dressed edge hop commutes with all 8 vertex-cluster numbers (Gauss law) | 7640 one-particle Gauss sectors
+[PASS] B2 [T] edge layout: in NO one-particle Gauss sector with a mobile particle is the dressed hop a reflection: the two ways round a face raise different registers, so the -1 face phase cannot cancel them | mobile sectors 4328, reflections 0, with face terms 2984
+[PASS] B3 [T] c-number edge links: R^2 = 1 iff every face holonomy is trivial, i.e. iff the dressing is one phase per site (flat cube); a generic field breaks it | flat 2e-15, generic 0.67
+== C. site layout: one register per site (even end b_x, odd end a_x), one odd cube
+[PASS] C1 [T] the dressed odd-cube hop sum R_yx chi_y^+ chi_x conserves the 8 even-cluster numbers q_x = n_psi + n_b and the odd-cluster number; exp(-i eps H) is unitary and gauge invariant | basis sizes [2048, 7168, 14336]
+[PASS] C2 [T] in every Gauss sector the dressed tick IS the free tick of the canonical modes chi on the live sites (q_x = 1): spectrum = sums of free one-body levels of R restricted to the live set, for 1, 2, 3 particles | max level deviation 3e-15 over 9069 sectors
+[PASS] C3 [T] S = 1/2: the dressed hop is a reflection exactly in the sector with every corner live; any dead corner (register at its extreme) breaks R^2 = 1 | all-live sectors reflecting 1, others 0
+[PASS] C4 [T] S = 3/2: with the plain raiser S^+ each hop carries |S^+| of its registers, so R_d = D R D with D set by the local Gauss values: a reflection after rescaling only if every q_x is equal; the domain-normalised V gives R_d^2 = 1 in every all-live sector (1 <= q_x <= 2S) | plain nonuniform eig(R^2) max/min 1.71; dead corner 0.33
+== D. two-tiling torus 4^3
+[PASS] D1 [T] site-phase links (unitary registers, any field): the dressed odd hop stays a reflection and cos w = cos t1 cos t2 + sin t1 sin t2 sigma (sigma: spectrum of {R_even, R_odd}/2) holds exactly; the flat field (one phase per cube of each tiling) has exactly the free spectrum | band dev 1e-15; flat-free 1e-15; generic shift 0.47
+[PASS] D2 [T] edge layout with a generic c-number field: the odd hop is no reflection and the band identity fails | band dev 0.13
+[PASS] D3 [T] quantum registers, one particle, two tilings: unitary (norm kept) and every cube Gauss number kept; the first odd half-tick that meets a dead corner is never earlier than the distance d of the start from the register extremes | S=1/2: first dead tick 1, states 16; S=3/2: first dead tick 3, states 11068; S=5/2: first dead tick None, states 12580
+   dead-corner weight per odd half-tick: S=1/2 0.273,0.713,0.709,0.266; S=3/2 0.000,0.000,0.000,0.006; S=5/2 0.000,0.000,0.000,0.000
+== E. copy sign and copy mass
+[PASS] E1 [T] undressed even cube: s Hermitian, s^2 = 1, [s,R] = 0; all 24 rotations keep R and exactly 12 keep s; the copy-mass generator (MN/4)(1-s)R is Hermitian and acts inside one cluster, so it is gauge invariant | rotations keeping s: 12/24
+[PASS] E2 [T] the same s read on a dressed cube (S = 3/2, normalised V): equal to s in an all-live sector, but with a dead corner it is no involution on the live space: the copy sign needs the undressed (matter-frame) tiling | dead: |s^2 - 1| = 1.00
+== F. placement
+[PASS] F1 [T] a site keeps C3 (axis: its bond from even centre to odd centre) of the 12 copy-mass rotations; in its b = 3 block the nearest neighbours form exactly two 3-orbits (the faces toward each centre); the only fixed sites besides the site are on the diagonal, not nearest neighbours: a covariant nearest-neighbour register has 3 rishons per end, S = 3/2 | orbit sizes [1, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3]
+[PASS] F2 [T] the bonds between neighbouring even and odd cube centres are in bijection with the sites (each site is the midpoint of its own bond); one register per site, two cube-gauge phases per 8 sites: 6 register modes per cell beyond gauge, of which 2 are photons (CL-3 must gap 4) | 64 bonds -> 64 sites; cycle rank 64 - 16 + 1 = 49
+   role sites per site, per U(1) factor: 1 matter + 3 + 3 rishons = 7 of 27 (b = 3), the same 7 sites as link-zoom F3, regrouped as ONE S = 3/2 register on the site's own bond instead of six S = 1/2 edge registers; 56 per 2^3 cell
+== G. estimates
+   alpha_Y(M_Pl): harmonic register vacuum sigma_E = sqrt(0.796/g^2) = 1.88; Gaussian weight beyond |E| = 3/2: 0.42, beyond 7/2: 0.062
+   alpha_em: harmonic register vacuum sigma_E = sqrt(0.796/g^2) = 2.95; Gaussian weight beyond |E| = 3/2: 0.61, beyond 7/2: 0.235
+[PASS] G1 [E] on the truncated flat register state (uniform over levels) <V> = 2S/(2S+1) exactly, so the bare cone is slower than the edge cone by about (2S/(2S+1))^2 per odd hop (1/4 at S = 1/2, 0.56 at S = 3/2) | S=1/2: 0.25, S=3/2: 0.56, S=5/2: 0.69, S=9/2: 0.81
+supplied: matter frame = copy-mass tiling, S, flavour-blind C3-singlet register, domain-normalised V, start sectors, eps, mu.
+elapsed_seconds 1.4
+TOTAL: PASS=19 FAIL=0

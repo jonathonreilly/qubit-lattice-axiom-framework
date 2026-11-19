@@ -1,0 +1,39 @@
+d4-far-wall-2plus1: pre-registered criteria (written 2026-10-26 before any run of this probe)
+
+Question: the 1+1D root-line reduction of the D4 far wall (4 spinor modes per event, Dirac hop i psi^+ Gamma psi',
+Gamma = i g(u_t) g(n), on-site Cayley 4-form g Phi) is the Cayley chain with gap 2.719/2.702/2.702 at L = 4/6/8, g = 0.25.
+Does the gap survive when the wall has two transverse (spatial) directions?
+
+Geometry (fixed in advance). Time root u_t = (1,1,0,0)/sqrt2. The D4 points with u_t.x = 0 form a cubic lattice spanned by
+the three mutually orthogonal roots n1 = (0,0,1,1)/sqrt2, n2 = (0,0,1,-1)/sqrt2, n3 = (1,-1,0,0)/sqrt2. The 2D slice is
+the (n1, n2) square lattice, hop along n_k: i t psi_x^+ Gamma_k psi_{x+n_k} + h.c., Gamma_k = i g(u_t) g(n_k), t = 1.
+On-site: the same Cayley term as d4-far-wall-gapping (g [8 (Omega + Omega^+) - sum_{a<b} s_a s_b]) and the Re Omega form.
+Boundary: periodic with a Z4 twist psi -> i psi on every wrap (det = 1, so Omega is invariant; commutes with Gamma_1, Gamma_2).
+
+Exact structure checks (PASS-0, must hold to 1e-12): Gamma_1, Gamma_2 (and Gamma_3) Hermitian, square 1, mutually
+anticommuting; a unitary U exists with U^+ Gamma_1 U = sz x 1, U^+ Gamma_2 U = sx x 1 and U^+ g5 U = 1 x tz; then the hop
+conserves the two multiplicity numbers n_A, n_B separately and Omega changes both by 2, so (Q = n_A - n_B, n_A mod 2) label
+sectors and H factorises as h_A x 1 + 1 x h_B + on-site couplings (Kronecker matvec, no dense Fock space).
+
+Sizes (decided from the memory estimate BEFORE running; sector (Q=0, n_A even) dimension = sum_k even C(2Ns,k)^2):
+  2x2: 6,470 states (live, all g, all sectors Q = -8..8).
+  1x4, 1x6 chain gate and 2x3: 1,352,540 states at Ns = 6 (21.6 MB per complex vector; eigsh ncv <= 12 -> < 400 MB). Run.
+  2x4: 3.0e8 states (4.8 GB per vector): NOT run on the laptop. 3x3: 4.5e9 (73 GB per vector): beyond ED.
+Couplings: g = 0 (free), 0.125, 0.25, 0.5, 1.0 at 2x2; g = 0, 0.25, 0.5 (and 0.125 if time) at 2x3. Sectors |Q| <= 2 at
+2x3 (justified only if the 2x2 full scan finds the lowest excitation within |Q| <= 2).
+
+Gate (PASS-G): the same code on the 1x4 and 1x6 chain with the earlier chain twist reproduces 2.719 and 2.702 (Cayley,
+g = 0.25) to 2e-3. If it fails the probe is VOID.
+
+Free baseline (PASS-F): at g = 0 the patch gap equals the free single-particle value min|eps|, eps = 2 sqrt(sin^2 k1 +
+sin^2 k2), k = (2 pi m + pi/2)/L, to 1e-8, and the dispersion has nodes at k = 0, pi (gapless as L -> inf).
+
+Classification at g = 0.25 (and each g), Delta = many-body gap (min over sectors of lowest level above the global ground state):
+  OPEN-LIKE:   ground state unique, Delta(2x3) >= 0.9 Delta(2x2) AND Delta(2x3) >= 1.2 Delta_free(2x3)
+  CLOSING:     Delta(2x3)/Delta(2x2) within 5% of the free ratio Delta_free(2x3)/Delta_free(2x2), or Delta(2x3) < Delta_free(2x3)
+  INCONCLUSIVE otherwise.
+Also report the 2D/1D comparison Delta(2x3)/Delta(1x6) at the same g, and ground-state energy per site.
+Overall verdict: SURVIVES (at these sizes) if g = 0.25 is OPEN-LIKE; CLOSES if CLOSING; else INCONCLUSIVE. In every case
+the verdict is a finite-size trend at two widths-2 patches (quasi-ladders), not a thermodynamic statement; the size that
+would decide (2x4 with translations; 3x3 beyond ED) is estimated, not run.
+No CL text unless decisive. No PRs, no pushes, no CL/axiom edits.

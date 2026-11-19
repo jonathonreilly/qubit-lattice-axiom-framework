@@ -1,0 +1,31 @@
+t-breaking-tick-lowenergy: pass criteria written BEFORE any scratch run or runner (2026-10-24).
+Inputs read: tick-winding-origin (note, criteria, stems, runner structure), twist-local-single (note, runner: CTWIST,
+Y relabelling, Pi+ = (1 + chi tau3)/2, FREEZE U_F = Pi+ U_A + Pi- i tau3), floquet-pi-slab (note), register CL-1 text
+(24-rotation covariance; copy-mass paragraph: "keeping the 12 tetrahedral rotations ... isotropic below dimension six";
+"A copy mass on every cube and half-tick splits light helicities at order K^2, outside the Crab bound"; campaign's
+dimension-5 map E = v|k| +- c k^2 -> eta = 2 (c/v)(a/l_P), Crab electrons |eta| < ~1e-7).
+
+Decision under test: "the update tick is a family-class (T-breaking) tick", represented by FREEZE (W_F = (-2,1,1)).
+
+Questions and checks.
+ (0) Exact symmetry group of FREEZE inside CL-1's 24 rotations (signed site permutations with CL-1's cube geometry):
+     prediction: exactly the 12 tetrahedral rotations T (index 2 in O); none of the 12 others (C4, C2' about face
+     diagonals, which conjugate the turn T3 to T3^-1). No on-cell Floquet antiunitary (cited from tick-winding-origin b2,
+     re-checked).
+ (1) Light Weyl dispersion near K = 0 and K = R: leading-order cone isotropy (speed per direction, spread over directions);
+     order at which anisotropy appears (fit exponent p of the direction spread vs |K|); presence of a dimension-3 term
+     (constant b.sigma or node offset between species), dimension-4 c-type term (anisotropic or species-dependent speed,
+     c_0i = K.1 term), dimension-5 CPT-odd term (helicity / species split at O(K^2), the k_x k_y k_z or (k_y k_z, ...)
+     .sigma patterns that T allows and O forbids). Symmetry side: count the T-allowed linear (dimension-4) node couplings
+     on the 4-state node space (L + R) and test whether the generic T-allowed one keeps an isotropic cone.
+ (2) Compare against SME-type bounds with a Planck-scale step (a ~ l_P..10 l_P): c-type ~1e-21, b ~1e-31 GeV,
+     dimension 5 via Crab eta < ~1e-7 (campaign map), dimension 6 (UHECR-type, ~O(1e-6)-weak).
+ (3) Whether the light L remains one protected 2-fold node with q = 2 at each node; where T-breaking shows at low energy
+     (eigenvectors / L-R mixing / turn charges vs dispersion).
+
+PASS (pre-set) = no dimension <= 4 rotation- or Lorentz-violating term in FREEZE's light bands, and leading anisotropy
+suppressed by at least one power of K a. FAIL facts are results and are reported as such.
+Predictions: (0) exactly T; (1) O(K) cone isotropic by Schur (vector rep of T absolutely irreducible); dimension-5 terms
+symmetry-ALLOWED by T without time reversal, present-or-absent to be computed; (2) a nonzero dim-5 helicity split would
+FAIL Crab by many orders; (3) one L (q = 2) per node, protected by Schur.
+Runner style: < 6000 chars stdout, AUDIT_TIMEOUT_SEC = 120, seeded, ends TOTAL: PASS=N FAIL=0. No PRs, no CL edits.

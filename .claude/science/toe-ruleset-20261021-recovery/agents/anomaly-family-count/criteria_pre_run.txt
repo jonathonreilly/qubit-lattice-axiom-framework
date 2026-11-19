@@ -1,0 +1,36 @@
+anomaly-family-count: pass criteria written BEFORE any run (2026-10-23).
+
+Question. Does the Spin(12)-Casimir far-wall term H_sym = -(g/2) sum_a {B_a, B_a^+} of spin10-two-flavour (two spin
+components of the mirror 16, 32 modes) preserve the cube's three-fold body-diagonal turn, with turn-neutral ground state,
+such that the families-mod-3 obstruction binds and N_f = 0 mod 3 follows on the ADOPTED slab (chiral-tick-form, read on
+CL-1's cell in its one-copy window, wall-families)?
+
+Synthesis PASS (the YES answer) requires ALL of:
+ (S1) some twisted turn T_k commutes with the far-wall gapping term exactly;
+ (S2) the unique gapped ground state has T_k eigenvalue 1 (neutral) for that k;
+ (S3) the preserved symmetry set obstructs symmetric gapping exactly for N_f != 0 mod 3 (allowed N = 3, 6, 9 in 1..9).
+Synthesis FAIL otherwise, naming the failing fact. A FAIL is a result, not a runner failure; every runner line reports a
+RESULT and passes when the computation returns what the line states.
+
+Pre-registered computations and predictions (analytic, before running):
+ A  cell copy phases. On the cell slab of wall-families (8-mode cell, layer hop (B/2 + i eps)/2, copy operator (1-s)R_e),
+    in the one-copy window (m, Mc) = (0.5, 1.0) the near and far wall Weyl spaces both lie in s = +1 and the turn's
+    site-phase lift acts on them with the SAME copy phase (det ratio 1): q_mirror = q_light. Calibration: the s = -1
+    copy differs (dq != 0, wall-families C5). Families-mod-3 corner charges {0^4, 1^2, 2^2} reproduced.
+ B  one-body turn on the 32 far-wall modes: u_k = w^(q+k) S_spin (x) g_16, S_spin in SU(2) (spin-1/2 turn about (111)),
+    g_16 in Spin(10) (Schur: any turn commuting with the gauge group acts on the irreducible 16 as Spin(10) element x phase).
+    Predict: u^T P_a u = w^(2(q+k)) P_a' with P_a' a rotation of the 10 (pair matrices), hence [T_k, H_sym] = 0 for every
+    k = 0, 1, 2 exactly (number-conserving, spin-singlet, Spin(10)-invariant). Contrast: a Z3 charge assignment on the 16
+    that is not a Spin(10) element breaks H_sym. The charge-4 term Omega = sum_a B_a B_a + h.c. picks up w^(4(q+k)):
+    kept only at k = -q (mod 3).
+ C  ground state: T_k|GS> = w^(16 N_f (q+k))|GS> (N = 16 per copy, flavour singlet, Spin(10) singlet); neutral iff
+    k = -q or N_f = 0 mod 3. Checked numerically only through the Fock-lift identity on the N <= 2 sectors for N_f = 1
+    (no diagonalisation of 2^32). Predict: a nonzero per-cell charge is an atomic (Wyckoff) label, not an anomaly.
+ D  bookkeeping. H_sym conserves U(1)_N; the far wall's U(1)_N^3 and U(1)_N-gravity coefficients are -16 N_f != 0, so
+    H_sym cannot gap the far wall symmetrically for ANY N_f (register: 'no mode-number-conserving interaction gaps the
+    mirror alone'); with Omega (U(1)_N -> Z4), k = -q_m is forced, every Z3 coefficient of the far wall vanishes, and the
+    light index N (q_l + k) = N (q_l - q_m) = 0 for q_l = q_m: every N_f passes. Contrast (families-mod-3, H' tastes,
+    q_m != q_l): allowed N = 3, 6, 9.
+ Predicted synthesis verdict: FAIL at S3 (the adopted slab puts the mirror on the light copy, so the mod-3 lemma does not
+ bind); S1 holds (always, by the twist), S2 holds at the Omega-selected twist.
+Machine: < 200 MB, < 60 s, BLAS threads 1, nice 10; no dense Fock beyond 2^10 (largest object: N <= 2 sector, 529 states).

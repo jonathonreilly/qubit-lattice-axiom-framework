@@ -117,3 +117,74 @@ not pass to the next without a worst case over boundary data, and for Wilson SU(
 case over pins is false at large coupling (Theorem BH, method 36, Theorem D2). I state no
 theorem. The remark only says why I do not attack candidate 11.
 
+- Step 3 (23:52Z): second pass, six more candidates; all on file or stopped at a stated reason.
+  Two small exact statements written (3.1, 3.2). No attack opened on a statement already on file.
+
+## 3. Second pass: six more candidates (statements about the record, then two exact statements)
+
+| # | Candidate (my wording) | On file as | Verdict |
+|---|---|---|---|
+| 12 | A zero-free strip of Z in complex beta, then analytic continuation of exponential decay from small beta by a harmonic-measure bound | Route Z: rows 669-696, 988, 991 (Theorem Z of `gap-skeleton-max-b.md` L423, Theorem A, Proposition B, Lemma BC, the Schwarz form, the strip half-width 11/(6 pi) of `gap-skeleton-max.md` L116) | found again |
+| 13 | A structural reason for a zero-free region: a Lee-Yang theorem with the plaquette couplings as the fields (3.1) | row 975, `gap-ymcons-opus.md` L359 (one recalled line: not of Lieb-Sokal type); items 7 and 40 of row 876, `gap-brainstorm2-max.md` L151 and L193 (Asano, for other polynomials) | not attacked on file as stated; fails in half-plane form (3.1) |
+| 14 | A regularization chosen so that the gap is provable (fundamental or adjoint frozen Higgs at small hopping; a stochastic-matrix-form Hamiltonian with ground state the 3D Wilson measure; a five-dimensional construction) | Higgs bridge rows 905-923; Lemma AUX, Lemma HW of row 1016; Langevin and frustration-free files | found again in part; each stops outside the range of a convergent expansion or leaves the Yang-Mills class |
+| 15 | Heat-kernel action as independent group Brownian motions on plaquettes, conditioned on the Bianchi identity; a linear flow in the coupling | Identity MIX and Remark POL of row 996 (heat flow in the coupling field); the intrinsic Brownian motion on connections with the curvature metric has a non-local density, so no reflection positivity (my reason, ARGUED) | no consumer |
+| 16 | The time-independent gauge group as a rigid group: the Polyakov-loop effective weight is a positive-definite class function on SU(2)^(sites) | Identity HAM1 of row 1016; Borgs and Seiler (recalled). The response is a function of class angles only, so the twist is abelian | found again |
+| 17 | Neutral gap from confinement (a bound of the neutral sum by flux-sector sums) | false in the class at a critical end point of a mixed action (the K7 row of the test table); Lemma FAC, council synthesis 2c | found again |
+
+### 3.1 The couplings as fields for the plaquette traces (reading; one PROVED identity, one ARGUED remark)
+
+Reading. With x_p = (1/2) tr U_p and nu the joint law of (x_p) under product Haar measure,
+Z(b) = integral of exp(sum_p b_p x_p) d nu(x). So the coupling field b is the external field of a
+"spin" system (x_p) whose whole interaction sits in the fixed measure nu (the Bianchi identity).
+beta = 0 is the trivially mixing point. This is the frame of the Lee-Yang theorem and of the
+Lebowitz-Penrose theorem that a ferromagnet in a non-zero field clusters exponentially (recalled,
+not rebuilt). The question it suggests: is there a domain Omega containing the positive axis with
+Z(b) non-zero whenever every b_p lies in Omega, by a structural (contraction-type) argument
+instead of an expansion?
+
+Identity (PROVED; the Laplace form of Identity CUBE of row 1016). For the six faces of one cube,
+
+    Z_cube(b_1, ..., b_6) = prod_i (2 / b_i) * sum over d >= 1 of d^2 prod_(i=1..6) I_d(b_i).
+
+Proof. exp(b x) = sum_j c_j(b) chi_j with c_j(b) = 2 d_j I_(d_j)(b) / b, d_j = 2j + 1 (the
+character expansion of the Wilson weight). The six faces form a sphere with V = 8, E = 12. Each
+link integral of two characters of the same spin gives 1/d_j and forces equal spins; the count
+of powers is d_j^(V - E) = d_j^(-4). So Z_cube = sum_d d^(-4) prod_i (2 d I_d(b_i) / b_i). Check:
+as b -> 0, I_d(b) ~ (b/2)^d / d!, the term d = 1 gives 1. QED
+
+Remark (ARGUED; GIVEN Theorem Z of Route Z as on file, which I did not re-read line by line,
+and the account's law a(beta) = exp(-c_a beta (1 + o(1))), `gap-skeleton-max-b.md` L313). The
+half-plane form, Z(b) non-zero whenever Re b_p > 0 for all p, cannot hold uniformly in the
+volume for the lane's box families. Theorem Z turns a volume-uniform zero-free domain D into a
+mass of at least kappa_0 omega(beta), omega the harmonic measure in D of the strong-coupling
+anchor. For a half-plane (cut to a bounded domain) omega(beta) is of order 1/beta, since the
+Green function of a half-plane at two points a << beta on the axis is about 2a/beta. A
+polynomial lower bound on the mass contradicts the exponential law. The lane's strip result
+(half-width at most 11/(6 pi)) says the same for strips; the half-plane case follows from it,
+since a half-plane holds strips of every width. Published numerics agree (Denbleyker, Du, Liu, Meurice and Zou report
+Fisher zeros of SU(2) near beta = 2.2 at a distance of order 0.1 to 0.2 from the real axis;
+recalled, not read in this run). So a structural zero-free domain can at most be a strip of
+bounded width, and its width is set near beta = 2.2 by the distance of the Wilson axis from the
+end point of the mixed-action transition line, a number and not a structure. I found no
+contraction-type argument that yields a strip. Not attacked further.
+
+### 3.2 The neutral premise as mixing from a typical start (PROVED; a restatement, no new handle)
+
+Let F be the positive transfer operator on centre-flip invariant, gauge-invariant functions of the
+spatial links of the cube, with simple top eigenvalue lambda_0 and eigenfunction Omega > 0. Let
+P(A, dB) = Omega(B) F(A, B) dB / (lambda_0 Omega(A)), a Markov kernel reversible for
+pi = Omega^2. Its u-step density against pi is k_u(A, B) = F^u(A, B) / (lambda_0^u Omega(A) Omega(B)).
+Then, for even u,
+
+    1 + s(u) = integral of k_u(A, A) pi(dA),     k_u(A, A) = 1 + chi^2( P^(u/2)(A, .) || pi ).
+
+Proof. The first is Tr F^u / lambda_0^u. The second is k_u(A, A) = integral of k_(u/2)(A, B)^2 pi(dB),
+by reversibility and the semigroup law. QED
+
+So (N-phys) says: the mean over a vacuum-typical start A of the chi-square distance to the vacuum
+after n/1024 steps is at most 1/2. It is an average over starts, not a supremum. The same number
+is the sum of the squared canonical correlations between two time slices at distance u in the
+infinite-time measure. I record it because the worst-case forms are false (item 3 of Section 1)
+and this form is exact; I found no tool that uses the average. Row 970 already works with typical
+starts for flows (`gap-direction2-max.md` L266, L438).
+

@@ -20,6 +20,36 @@ ARGUED, GUIDE, OPEN. Nothing here is computer-assisted.
   route registry, test table, price), RESULT lines of rows 1143-1183 (1143-1175 through `parts/gap.md`, 1176-1183 from
   FINISH), `gap-solve9-astra62.md` L1-160 (row 1161), `gap-mini-branch-fable.md` L1-400 (row 1179),
   `gap-phys-seed.md` L60-68 and L309-324 (trajectory, the set P, Theorem ZD-c). Not read: row 1180's file.
+- 22:32Z Section 2 written: ten routes derived blind, each then found on file by `grep` (matches named there).
+- 22:41Z Section 3 written (obstruction per route; Lemmas N1, N2; Remark N3).
+- 22:45Z row 1180's file read for the first time: a header and a plan, no mathematics. Sections 4, 5 and a first
+  RESULT line written.
+- between 22:45Z and 22:48Z (not timed by `date -u`): correction after reading `gap-glue-max.md` L106, L312 and `gap-glue2-opus.md` L79: (N-phys) has the form of
+  (GLUE-FP) of rows 895 and 920 (order-one margin, aspect 24); my first reading called that form new. Fixed in the
+  reading of Section 2, in Section 5 item 1 and in the RESULT line.
+- 22:48Z re-read of every PROVED item ((E1)-(E5), Lemmas N1, N2) and of every line anchor (each taken from `grep -n` or
+  from a numbered print). One wording change: the gloss on Corollary Z4 in 3.2 is marked ARGUED.
+
+## Repo search (lane folder, then other branches; lane part last run 22:51Z)
+
+- `library/open-core.md` and `library/open-registry.md`: no entry for (N-phys), (GLUE-FP) or a neutral bound
+  (`grep -n -i -E "N-phys|GLUE|neutral"`; the hits are items of the ultraviolet chain).
+- FINISH rows that name (N-phys), (GLUE-FP) or (GLUE-STEP): 895, 896, 912, 913, 920, 1124, 1125, 1179, 1183 and this
+  row; row 1180 names the same bound in words. By the queue row, the overlap stop does not apply to (N-phys) itself.
+  It does apply to the open lemmas each route ends at ((SEAM), (VIR-log), (NOCRIT), (A), (AC'-lat), (BETA)_C, the
+  trichotomy branch): each has an owner row, so none is attacked again here; Section 3.2 names them.
+- Lane files: every route of Section 2 was searched with `grep` in `library/gap-*.md`, `library/prior/gap-*.md` and
+  `parts/gap.md` after it was derived; the matches are in the last column of that table.
+- Other branches (run 22:52Z, after the result was written): bare, blob-less, depth-1 fetch into a scratch folder of
+  origin/main (8b11ae2) and the heads of pull requests 10114 (f76f6c6), 10133 (89faef2), 10134 (1e70c72), 10141
+  (a2f6a43), 10144 (1f20846), 10149 (7fc6b1a). Scope: the 137 files whose path holds "mass-gap", "MASS_GAP" or a name
+  `gap-*.md`. Patterns: "GLUE-FP", "N-phys", "one-cube", "neutral upper bound", "neutral excited", "even seed",
+  "glue half". Hits: six files, all on main under `research/mass-gap/library/` (landed copies of lane files:
+  `gap-crux-fp.md`, `gap-flux-exercise.md`, `gap-phys-seed.md`, `gap-skeleton-max-b.md`, two `prior/` notes), for
+  "one-cube", "even seed" and "glue half" only. No hit for "GLUE-FP" or "N-phys" outside this branch, and no hit on
+  any pull-request head. So no other branch holds a proof or an attack of the neutral bound.
+- Not searched: files outside those 137 paths, and the Sussman-Alpoge repository (row 1161 cites their text: the
+  account leaves the gap outside its theorem).
 
 ## 1. The statement, and what it says (written before any attack)
 
@@ -95,9 +125,14 @@ statement about one physical scale beyond the last scale that perturbation theor
 | 9 | Rigidity: if no size has the neutral bound, a rescaled limit is a gapless scale-covariant theory; exclude it | no rigidity theorem excludes an infrared-free abelian limit | rows 1017-1019, 1024 (Theorems CE, OM, CR, TRI) |
 | 10 | Margin: X(u) < 2 at one time gives mu_1^u <= (1 + s_0)/2, so all later excited weights decay geometrically; this is all that row 1161's (4) uses of the premise. For the neutral part alone K = 80 is explicit: s(n/80) <= 1/2 gives s(n/2) <= (3/2)(3/4)^39 < 2.1e-5 | the seven (m, m) sectors need row 1161's compactness step, so K stays non-explicit for the Pfaffian seed | row 1161 (3)-(4), L48-63 |
 
-Reading (ARGUED). The order-one margin and the high aspect of row 1161's form do not make the statement easier to
-prove. By line 10 they trade the old threshold (1/5041 at aspect 2) for a box about K/2 times larger. In a theory
-with a particle gas the old seed needs m_phys L of about 25 and (N-phys) with K = 80 needs about 1200
+Reading (corrected between 22:45Z and 22:48Z, after `grep -n -F "(GLUE-FP)"`). The order-one margin and the high aspect are not new with
+row 1161. (GLUE-FP)_sigma of rows 895 and 920 (`gap-glue-max.md` L106, L312; `gap-glue2-opus.md` L79) reads: at one
+physical pair of sizes with b >= 24 a, for every first-passage datum from some index on, S_ev(a; b^3) <= sigma, with
+sigma = 1/10. That is (N-phys) with aspect 24 and margin 1/10 in place of aspect K and margin 1/2. The two are
+members of one family, S_ev(n/K; n^3) <= sigma, and by Lemma N1 below the member (K, sigma) gives the member
+(K', sigma^(K/K')) for every K' <= K on the same cube. What row 1161 added is the consumer: the neutral bound alone
+gives the Pfaffian seed, where rows 895 and 920 had no consumer for an even seed ((EV-STEP) was open). In a theory
+with a particle gas the seed at aspect 2 needs m_phys L of about 25, and (N-phys) with K = 80 needs about 1200
 (GUIDE arithmetic with the gas formula of 1.3).
 
 ## 3. The routes, each with its obstruction (22:41Z)
@@ -144,7 +179,7 @@ along that subsequence. It does not change the difficulty.
 | Route (Section 2) | Where it stops | The blocking statement | Standing |
 |---|---|---|---|
 | 1 pressure form | an upper bound on p_neutral/T^4 below the scale of the gap | every inequality that holds in the whole class (F1) is satisfied by Villain U(1) at beta >= 2^14, which has no neutral seed at any size; the free photon has s = exp(c K^3) - 1 at aspect K | test table, `parts/gap.md` L281-282 (THM given the published U(1) theorem; lane rows 786, 975, 988) |
-| 2 gap plus count | n m_ev above a threshold at one physical size | Corollary Z4 of row 720 (`gap-phys-seed.md` L322): the gap in units of 1/L either stays below 256 D_0 + 29.64 at every size or grows for ever; no statement at smaller sizes separates the two | PROVED GIVEN Theorem ZD there; Lemma N2 here |
+| 2 gap plus count | n m_ev above a threshold at one physical size | Corollary Z4 of row 720 (`gap-phys-seed.md` L322): the gap in units of 1/L either stays below 256 D_0 + 29.64 at every size or grows for ever. ARGUED gloss: the lane has no statement at sizes below the seed size that separates the two branches (row 998 6b, `parts/gap.md` L44-46) | PROVED GIVEN Theorem ZD there; Lemma N2 here |
 | 3 coupling integration | the thermal plaquette excess on the whole path [0, beta_j] | the path statement is false for positive-character weights with a first-order point: Proposition V (`gap-crux-fp.md` L356); for Wilson it is (NOCRIT), (VIR-log) of row 708 (`gap-mid-max.md` L172, L207), OPEN; and it needs the sharp rate (below) | on file |
 | 4 rotated frame | a Casimir bound for the thin box and a rotated neutral trace | Lemma CS of row 895: the Casimir term is >= 0 and every exact inequality of the class points the same way | PROVED there; the row's check 896 keeps the elementary identities |
 | 5 mixing | a minorization, or a two-replica overlap, uniform in the volume | (A) is strictly stronger than a uniform gap (link-refresh model, row 1135, checked by row 1138); independent-replica swaps pay a junction cost (Proposition J of check 1121). My own blind objection to (A) (a slice with ordered plaquettes cannot carry unit commutator noise) does not apply: row 1132 states (A) in Moser coordinates, where the slice law is Haar | on file |
@@ -174,19 +209,21 @@ n m_ev >= K log 2.
 
 ## 5. What this row adds, and what it does not
 
-1. **(N-phys) is the glue half again, in a larger box (PROVED part: Lemma N1; ARGUED part: the reading).** The
-   order-one margin and the high aspect of row 1161's form are equivalent, by one line, to a small even seed at
-   aspect 2 on the same cube (K = 32 for the even part). Rows 895, 920 and 1125 attacked that statement
-   ((GLUE-FP), (SEAM), (GLUE-STEP)) and stopped at the same place. This row stops there too.
+1. **(N-phys) is the crux lemma (GLUE-FP) of rows 895 and 920 with other constants (read from the files, lines
+   in Section 2).** (GLUE-FP)_sigma is S_ev(a; b^3) <= 1/10 at b >= 24 a, at one physical size, for every late
+   cutoff. (N-phys) is the same with aspect K and margin 1/2. By Lemma N1, (N-phys) with K >= 80 gives (GLUE-FP)
+   with sigma = 1/10 on the same cube ((1/2)^(80/24) < 1/10), and (GLUE-FP) gives (N-phys) for every K <= 24. Rows
+   895, 920 and 1125 attacked that statement ((GLUE-FP), (SEAM), (GLUE-STEP)) and stopped at an order-one bound on
+   one physical scale. This row stops there too. The new fact of row 1161 is the consumer, not the statement.
 2. **All ten blind routes are on file (Section 2).** None is new. For each one Section 3.2 names the blocking
    statement and its standing in the lane.
 3. **Lemma N2** gives the necessary size: a cube with (N-phys) has neutral gap at least K log 2 in units of its
    inverse side. With any K of the size row 1161 needs this is far outside a numeric test here; no GUIDE run was
    made (memory was 60 percent free; no job was started and the numeric lock was not taken).
 4. **Not done.** No proof of (N-phys). No counterexample. No new selective mechanism. The consumer (rows 1161, 1179,
-   1065) was read, not re-proved. The Sussman-Alpoge repository was not searched in this row; no cross-branch search
-   was made, because no statement new to the lane is claimed (Lemmas N1 and N2 are elementary, and Lemma N2 is
-   Lemma G5 of row 895 at another aspect).
+   1065) was read, not re-proved. The Sussman-Alpoge repository was not searched in this row. The cross-branch search
+   (section "Repo search") found no other attack of the neutral bound. No statement new to the lane is claimed
+   beyond Lemmas N1 and N2, which are elementary (Lemma N2 is Lemma G5 of row 895 at another aspect).
 5. **Evidence for the lead (the lead decides).** Four rows (895 and this one by Claude Fable, 920 by Claude Opus,
    1125 by gpt-6-astra) reach the same sentence on the neutral half. A further blind attack on (N-phys) by the Claude family
    is unlikely to differ. What is missing is unchanged: one inequality at order-one coupling that is false for a
@@ -200,13 +237,4 @@ weak-coupling free-energy method of rows 1143-1153). gpt-6.2-astra (rows 1143-11
 Earlier Claude rows 895 and 920 (the glue half), 720 (Theorem ZD-c), 708 ((VIR-log)), 839 (the chi-square form),
 678 (the thin twisted torus), 1179 (Theorem BP).
 
-RESULT: (N-phys) is NOT proved and NOT refuted; it stays OPEN. Claude Fable 5.2 max, Mac mini worker 1, author only,
-checked by no one. Ten independent routes were followed to their first failing step; every one is already on file
-(rows 678, 708, 720, 839, 895, 920, 1017, 1132-1135, 1161), and Section 3.2 names the blocking statement for each.
-PROVED here (elementary): Lemma N1, s(v) <= s(u)^(v/u), so (N-phys) with K = 32 already gives the even seed
-s(n/2; n^3) <= 2^(-16) (the (m, m) sectors still need row 1161's non-explicit K); Lemma N2, a cube with (N-phys) has
-neutral gap at least K log 2 in units of its inverse side, and a gap above about 2K log(2 S_0) with a finite
-short-time count S_0 gives (N-phys). ARGUED: (N-phys) is the glue half of rows 895, 920, 1125 in a box about K/2
-times larger, with no new handle from the order-one margin; a transport proof in the coupling needs the sharp
-asymptotic-scaling rate. Row 1180's file held no mathematics at this pin, so no comparison was possible. OPEN:
-(N-phys), the continuum datum, (BS), (W).
+RESULT: (N-phys) is NOT proved and NOT refuted; it stays OPEN. Claude Fable 5.2 max, Mac mini worker 1, author only, checked by no one. Ten independent routes were followed to their first failing step; every one is already on file (rows 678, 708, 720, 839, 895, 920, 1017, 1132-1135, 1161), and Section 3.2 names the blocking statement for each. PROVED here (elementary): Lemma N1, s(v) <= s(u)^(v/u), so (N-phys) with K = 32 already gives the even seed s(n/2; n^3) <= 2^(-16) (the (m, m) sectors still need row 1161's non-explicit K); Lemma N2, a cube with (N-phys) has neutral gap at least K log 2 in units of its inverse side, and a gap above about 2K log(2 S_0) with a finite short-time count S_0 gives (N-phys). Read from the files: (N-phys) is the crux lemma (GLUE-FP) of rows 895 and 920 (S_ev(a; b^3) <= 1/10 at b >= 24 a) with aspect K and margin 1/2; row 1161 added its consumer, not a new statement. ARGUED: a transport proof in the coupling needs the sharp asymptotic-scaling rate. Row 1180's file held no mathematics at this pin, so no comparison was possible. OPEN: (N-phys), the continuum datum, (BS), (W).

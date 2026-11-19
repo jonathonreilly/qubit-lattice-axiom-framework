@@ -345,3 +345,23 @@ Session 1 ended at step 7.8. Steps 1 to 7 above are kept as written. The lane mo
 - 8b. Task (1) again, only for the places where the measured mechanism disagrees with the lane's route as it stands now.
 - 8c. Hand work on any object that 8b adds, or the counterexample.
 - 8d. Task (6): the briefs, then the RESULT line.
+
+## Step 8a: what rows 1066 to 1181 changed (read at 6a3a26b93)
+
+Read: the 61 lines added to `parts/gap.md` between the two pins (lead records of rows 1066 to 1175); FINISH rows 1177 to 1181 in full; `library/gap-solve16-astra62.md` (row 1175) L17-65, L233-255, L302-340; `library/gap-solve9-astra62.md` (row 1161) L83-193; `library/gap-flux-exercise.md` (row 731) L500-520, L620-634, L690; `library/gap-crux-restate.md` (row 697) L15-22, L234-250; `library/gap-skeleton-max.md` (run 1) L258-278.
+
+**8a.1 The wall as it stands now.** The gpt-6.2-astra chain (rows 1143 to 1177; checked line by line by Claude Opus 5.5 through row 1173) reduced (W) to two open inputs. Credit: that chain, and the rows it builds on (697, 720, 731).
+
+- (N) The one-cube physical neutral upper bound: on one admissible physical cube, for all fine cutoffs, the excited trace of the centre-invariant periodic states at period floor(n/K) is at most 1/2 (row 1161, "One periodic cube suffices"; K = 512 in row 1175). Held by row 1180.
+- (B) The Wilson branch selection: given (N), (W) holds if and only if, at each fine fixed bare coupling, the elementary twist cost -log(Z_14/Z_0) on the symmetric torus N^4 is o(N^2/log N) along a sequence (row 1175 (6); row 1161 (13) had o(N)). Row 1177 gives a planar tension form. Held by row 1179. Row 1181 holds (W) by any method; row 1178 continues the chain.
+- Every positive result of the chain is non-selective (lead's words in rows 1179 to 1181).
+
+**8a.2 Correction to session 1, step 7 (Lemmas R1 and R2 are prior work of this branch).** Session 1 wrote that "Renyi" occurs on file only for information between slices. That is wrong. `library/gap-skeleton-max.md` E.1 (run 1; quoted by row 697, `gap-crux-restate.md` L17) has Lemma 4, "doubling identities": (D-plane) r(2 l_3) = r(l_3)^2 exp(R(T_even, l_3) - R(T_odd, l_3)), with R the Renyi entropy of order two, and r = tanh(f_m/2). That is Lemma R1 (b) and Lemma R2 of step 7. Lemma R1 (a) is Theorem F (a), (b) of row 697. E.3 of the same file already names the open object: "an upper bound for R(T_m, l) - R(T, l)", and says that proving it "is the gap again". So W1 named nothing new in its identities. Credit for them: run 1 (`gap-skeleton-max.md`, Claude Fable 5.2 max) and row 697.
+
+What stays from step 7 as not found on file (grep "I_3/I_1", "c_1/c_0", "v > w" near "twist": the hits are other objects): Counterexample R3 (the squaring form fails for two-dimensional Wilson SU(2) at small beta and large area, because the even sector has the lighter first excitation), Remark R4 (decoupled sheets: the factor 1/N from the position of the sheet) and the four-point toy 7.6. They say that the sign of R(T_even) - R(T_odd) is not given by positivity and axis exchange. They move no status.
+
+**8a.3 W1's consumer after the chain.** Row 1175 (6) needs far less than (SIG-MONO): a twist cost that is not of area order with a logarithm to spare. (SIG-MONO) is a statement on slices doubled in the flux direction only, so it still does not reach the symmetric torus. No change of verdict: W1 FAILS as a vector.
+
+**8a.4 Uses of session 1 by later rows.** Three files cite this file: check 1144 (`gap-solve-check-opus.md` L24, a provenance spot-check of L131), row 1103 (`gap-face-exercise-fable.md` L858, the (SUM-RULE) slopes of step 6) and row 1143 (`gap-solve-astra62.md` L119, provenance). None uses a statement of this file as a proof step.
+
+**8a.5 W7 and W2.** The test table of `parts/gap.md` has no line for the bulk transition of Wilson SU(N) at large N (grep "bulk transition", "N >= 5" in `parts/gap.md`: no hit). W2 is cited nowhere. No change.

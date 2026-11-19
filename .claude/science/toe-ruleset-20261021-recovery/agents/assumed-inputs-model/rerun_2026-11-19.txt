@@ -1,0 +1,21 @@
+[PASS] A0 tick sanity: R^2 = 1 and M = 0 light band equals the link band | exact to 1e-12
+   eps 0.3    M 0.5    c6 axis -0.08333 face -0.02083 body -8.9e-09
+   eps 0.1    M 0.1    c6 axis -0.08333 face -0.02083 body -2.6e-08
+   eps 0.03   M 0.05   c6 axis -0.08333 face -0.02083 body -1.0e-07
+   eps 0.03   M 0.01   c6 axis -0.08333 face -0.02083 body -9.7e-08
+   eps 0.01   M 0.015  c6 axis -0.08333 face -0.02083 body -1.6e-07
+   eps 0.005  M 0.002  c6 axis -0.08333 face -0.02083 body +4.2e-07
+[PASS] A1 copy-mass c6 is -1/12 (axis), -1/48 (face), 0 (body) at every eps and M tested: no dependence on the supplied step or copy mass | max deviation 4.7e-07 over 6 (eps, M) points
+[PASS] A2 angular form: c6(n) = -(1/8)(sum n_i^4 - 1/3), zero only on the four body diagonals | 12 random rays, max |c6 - form| = 2.3e-07
+[PASS] B link band: w = c|K|(1 - (sum K_i^4/K^2)/24) at small eps (photon, gluon, and fermions before the copy term) | max |c_link + sum n^4/24| = 1.3e-07; axis -1/24, body -1/72
+   E* = hbar c/(2L) = 1.218e+18 GeV; eta (in M_P units) = -2 c (M_P/E*)^2 = -2c x 100.5
+[PASS] C1 photon decay threshold, exact kinematics with the photon own dim-6 term: symmetric splits are CLOSED (|c6| < 3|c_g| on every ray); decay runs through x = b/6(a+b) splits at k_th = (6(a+b)/b^2)^(1/4) sqrt(m_e E*) | axis 80 PeV (register form 78), face 122 PeV (register 110); body diagonal: never; LHAASO reach ~1.4 PeV
+   sky fraction where photons survive: 0.1 EeV 65.2%, 0.2 EeV 7.07%, 1 EeV 0.21%, 10 EeV 0.002%
+[PASS] C2 above ~0.2 EeV photons survive only in eight small spots around the body diagonals; open fraction falls as E^-2 | 0.2 EeV 7.07%, 1 EeV 0.210%, 10 EeV 0.0020%
+   photopion window (GeV): eta 0: 3.0e+10-eta 1e-06: 3.0e+10-2.4e+11 | eta 1e-05: 3.1e+10-7.3e+10 | eta 0.0001: none | eta 0.03: none | eta 0.3: none | eta 3: none
+[PASS] D photopion off CMB is kinematically CLOSED at every energy for subluminal eta_p >~ 1e-5; rule estimate eta_p ~ 0.03-3 (parton-weighted, supplied) | standard threshold 3.0e+10 GeV; closed for eta_p in [0.0001, 0.03, 0.3, 3.0]
+[PASS] E1 three nu^c decoupled with SM content at decoupling: Delta N_eff = 3 (10.75/106.75)^(4/3) | 0.141; SO sigma 0.05 -> 2.8 sigma, CMB-S4 sigma 0.03 -> 4.7 sigma (needs a hot start, supplied)
+[PASS] E2 parity variant: m_f' = m_f v'/v; LHC bound m_u' > 1.5 TeV (supplied) sets v' >= ~1.7e8 GeV and the whole mirror ladder | v' = 1.71e+08 GeV: u' 1.50 TeV, d' 3.24 TeV, e' 0.35 TeV, mu' 73.38 TeV; nu' ~ m_nu v'/v = 35 keV (m_nu 0.05 eV supplied)
+[PASS] E3 axion: m_a = 5.69 ueV (1e12 GeV/f_a); far-wall-vertex reading f_a ~ (0.01-1) E*/N_DW with N_DW = N_f = 3 | f_a = E*/3: 1.4e-11 eV; f_a = 0.01 E*/3: 1.4e-09 eV (stellar-BH superradiance probes ~1e-13 to 2e-11 eV, supplied)
+   runtime 0.2 s
+TOTAL: PASS=10 FAIL=0

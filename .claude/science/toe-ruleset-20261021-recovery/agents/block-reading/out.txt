@@ -1,0 +1,31 @@
+== A. exact symmetry on block positions => rigid block moves (A x 1)
+[PASS] A1 [T] SU(4)xSU(2) on the cell corners as (body diagonal, tetrahedron parity) = (4,2) has commutant 1 (it generates M_8, as U(216) does on a 6^3 block), and the operators commuting with 1 x M_n are B(coarse) x 1 | commutant 1; 3 sites x 8: 9 = 3^2
+[PASS] A2 [T] so every hop is a rigid move by b{-1,0,1}^3: fine range b per coarse half-tick, and no single nearest-neighbour step carries the labels; block-position projectors (the register reading) conserve x mod b likewise | range [2, 3] (b = 2, 3)
+[PASS] A3 [T] tastes: the zoom-b band at fine momentum K is the coarse band at bK, so all b^3 folded copies are exactly degenerate and light; on the fine CL-1 tick they are not (hidden-sector A2) | err 2e-15; 27 tastes at |w| 0.05; fine tick there 0.38, 0.31
+== B. A x 1 as a circuit of nearest-neighbour cube gates on one-mode sites
+[PASS] B1 [T] the interleave b g + r -> 2r + g of each 2b-block is an exchange network of b-1 rounds alternating tilings, each round one layer of cube permutations | rounds 1..7 (b = 2..8)
+[PASS] B2 [T] one isolated coarse half-tick = interleave, CL-1 cube gates, de-interleave: depth 2b-1 (3, 5, 7, 11 at b = 2, 3, 4, 6), chiral-wall A3 in 3D | err 0e+00
+[PASS] B3 [T] lower bound: transfer rank 4b^3 across the mid-plane, at most 4b^2 per crossing layer, crossing layers alternate: depth >= 2b-1, so B2 is optimal for isolated carriage | ranks [32, 108]
+[PASS] B4 [T] moving frame: de- then re-interleave moves every mode b-1 sites along a body diagonal (b-1 corner-exchange layers); tick = P^-1 (G_e X^(b-1) G_o X^(b-1)) P exactly: b layers per coarse half-tick, the light-cone minimum | 3 ticks err 0e+00; no-shuttle control 2.3
+[PASS] B5 [T] covariant shuttle X = -iR1R2R3: a reflection, |X| = corner exchange, D X D^+ = +-X under the 24 rotations; every gate layer is then CL-1's own cube unitary in CL-1's labels, and the circuit is B4's up to a site-phase gauge | 9e-15, spec 2e-15, gauge 4e-15
+[PASS] B6 [D] light cone (b = 3, point source, 12 layers): inside the fine cone at every layer; read back, displacements are multiples of b and reach exactly the coarse strict cone, zero beyond | reach 4 = 2T coarse sites
+== C. covariance, records, exact U(b^3), shared readings, light content
+[PASS] C1 [T] covariance: the zoom-b tick commutes with the 24 rotations (12 with copy mass) about both coarse block centres (coarse-corner spin-3/2 phase x plain label permutation); CL-1's own site action induces exactly that and commutes with the shuttle form; plain swaps are not covariant | err 3e-14; plain swap 7.6
+[PASS] C2 [T] records: a shuttle layer has one unit-modulus entry per column, so CL-2's transport through it is a fixed permutation of configurations: records formed inside a coarse half-tick add no readable information
+[PASS] C3 [T] U(b^3) is exact; one link phase per coarse site keeps it, independent fine-site phases break it at O(1): edges and links must be read per coarse cube, alike for every label | 4e-16, 4e-16; fine 1.28
+[PASS] C4 [T] light content: one light Dirac copy per label (4 states at |w| = mu, partner at mu + M), b^3 in all; generic covariant label masses leave exact groups of dim 20, 67, 572 (b = 2, 3, 6), which CL-3 would all link | |w| 0.05, 0.35
+== D. the 6^3 block
+[PASS] D1 [T] r = 2s + t (27 sub-cubes x 8 corners) and r = 3t + s (8 octants x 27) both intertwine the 24 rotations with R_s x R_t, so U(216) holds U(27) x U(8) both ways; the three-fold turn fixes 6 = 3 x 2 positions | fixed 6, register 3
+== E. the link rotor from fermion-mode sites
+[PASS] E1 [T] k fermion modes: a parity-even Z_N clock pair acts within parity sectors of dim 2^(k-1), so N | 2^(k-1) (N <= 2^(k-1) with a constraint): three sites give at most Z_4 < 5, and the 3-site binary clock mixes parity; four sites carry Z_8 exactly | binary-clock defect 2
+[PASS] E2 [T] Z_8 Gauss law: matter a, b and a 4-mode link; a^+ U b + h.c. commutes with both Gauss operators w^(n_a) V, w^(n_b) V^+ (order 8, commuting)
+[PASS] E3 [T] covariant placement: rotation orbits in a block have sizes 1, 6, 8, 12, 24 (b = 2..7), so no 4-site rotor set is invariant; rotation-invariant even states: 6-orbit 2, 8-orbit 8 (one Z_8), 12-orbit 88 = 8 x 11
+[PASS] E4 [T] budget: the 6^3 block read as 27 x 8 has no spare site; a 7^3 block holds the 216 labels on {+-1,+-2,+-3}^3 (8 octants x 27 magnitudes, 3 turn-fixed) plus a covariant Z_8 rotor on a 12-site central-plane orbit (constraint to its 88 invariant states), 115 sites inert
+== F. estimates against measurement
+   216 light Dirac copies at b = 6 before label terms vs N_nu = 2.9963 +- 0.0074 (LEP): label terms, supplied, must
+   lift all but the observed labels; speed, strict cone and G per coarse cell unchanged; no chirality (finite circuit).
+theorems A1-A3, B1-B5, C1-C4, D1, E1-E4; diagnostic B6. supplied: zoom b, 2b-block grid, per-coarse-cube edge/link
+  reading, the shuttle (= the parallel-carriage choice), CL-1 st, mu, Mc, the rotor's role-assigned sites + constraint.
+  cited: Z_N (N >= 5) Coulomb phase; chiral-wall A3; hidden-sector A2.
+elapsed_seconds 0.9
+TOTAL: PASS=18 FAIL=0

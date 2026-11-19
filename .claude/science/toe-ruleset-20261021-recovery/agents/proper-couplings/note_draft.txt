@@ -1,0 +1,53 @@
+---
+claim_id: sea_dressed_link_coupling_tracks_the_potential_under_fixed_record_four_volume_bounded_theorem_note_2026-10-21
+claim_type: bounded_theorem
+claim_scope: "For the cube tick of the candidate laws register with its cone reading and fixed record 4-volume, a static potential changes a cell's proper size by d ln L/dPhi = -1/3; a plaquette counted in proper area is cell-blind, but in a supplied free-sea, site-phase-link, second-order model the sea's link coupling has the proper spatial cell as cutoff, so the dressed abelian coupling tracks Phi (dA/dPhi = kappa/3) and no edge reading removes it; a supplied renormalization clause (the sea-dressed coupling of a uniform field takes one value in every cell) makes the subtracted running cell-blind and keeps one-loop running; the clause is adopted to meet measurement, not derived, and no physical value of alpha is established."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/sea_dressed_link_coupling_tracks_the_potential_under_fixed_record_four_volume_2026_10_21.py
+---
+
+# The sea-dressed link coupling tracks the potential under fixed record 4-volume
+
+Claim type: bounded_theorem.
+Primary runner: `scripts/sea_dressed_link_coupling_tracks_the_potential_under_fixed_record_four_volume_2026_10_21.py`.
+
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. It reads a cell's step from its edges and fixes each record's 4-volume. This note asks whether a link coupling dressed by the filled sea then depends on the gravitational potential, and what rule would hold it fixed. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) fix no coupling.
+
+## Statement
+
+With the cone reading sin eps = sqrt3 tau/L and fixed record 4-volume tau L^3 = v, a static field N = 1 + Phi gives d ln L/dPhi = -1/3 and d ln sin eps/dPhi = +4/3. A plaquette phase counted in proper area gives the same bare coupling in every cell. In the supplied sea model the dressed coupling A = 1/e^2 depends on ln(mL), so A tracks Phi with dA/dPhi = kappa/3. No edge reading removes this. A supplied clause, under which the bare coefficient is whatever makes the sea-dressed coupling of a uniform field take one value in every cell, removes it to the precision of the model and keeps the one-loop running.
+
+## Derivation
+
+The cell (A1). The cone reading and tau L^3 = v give L = v^(1/4) (sqrt3/sin eps)^(1/4), so the proper size is set by the step. In a static field this gives the two slopes above (isotropic gauge would give -1).
+
+The bare plaquette (A2). With spatial weight tau/L and temporal weight L/tau, 1/e_E^2 = 1/e_B^2 = 1/e0^2 in every cell, because 4D Maxwell is blind to scale and shape. With fixed weights, sqrt(1/(e_E^2 e_B^2)) is unchanged but the photon speed squared becomes (beta_s/beta_t)(L/tau)^2, which would track Phi.
+
+No edge reading fixes it. Any proper reading of the plaquette gives a coefficient independent of cell scale, while the sea contributes kappa ln(mL), the trace anomaly. Only a coefficient depending on ln(cell size) can cancel it, and no edge reading supplies one.
+
+The sea (B1 to B3). The sea's link response has the proper spatial cell as cutoff, with slope -dA/d ln(mL) extrapolating to kappa, the one-loop beta coefficient. Its shape dependence at fixed mL is -r kappa sin^2 eps with r between 0.56 and 0.67, not the -kappa/4 a 4-volume cutoff would give. On the register's cell family, d ln alpha/dPhi = -(b/3A)(1 - 4r sin^2 eps + O(m^2 L^2)).
+
+The clause (C1 to C3). If the bare term absorbs A(0) in every cell, the remaining running R = A(q) - A(0) at the same proper q/m is cell-blind up to a gap that shrinks as (mL)^1.44, and R approaches one-loop running as mL -> 0. The clause is a renormalization condition, one dressed coupling per link group, with no new constant. It also needs the copy mass to be a constant times the proper tick and hinge areas to be counted in a fixed proper unit.
+
+## Checks
+
+The runner gives `TOTAL: PASS=10 FAIL=0` in 51 s.
+
+- A1: d ln L/dPhi = -1/3 and d ln sin eps/dPhi = 4/3.
+- A2: proper-area plaquette gives e0^-2 for both; fixed weights give c^2 = L^2 beta_s/(beta_t tau^2).
+- A3: all 8 bands obey the register's band law (2.7e-15); a pure-gauge link field gives zero response (5.2e-14 against 4.2e-1).
+- B1: -dA/d ln(mL) = 0.9794, 0.9867 kappa at mL = 0.358, 0.286, extrapolating to 0.9996.
+- B2: dA/d ln sin eps = -0.00139 and -0.05811 kappa at eps = 0.05, 0.3 (r = 0.56, 0.67).
+- B3: dA/dPhi on the cell family is 0.9780 (units kappa/3) directly and 0.9780 from the slopes.
+- C1: unfixed, two cells 25% apart differ in A(0) by 0.00738, 0.00744 (kappa ln 1.25 = 0.00754); under the clause the running differs by at most 2.5e-4, 1.8e-4, ratios 0.034, 0.025 of that.
+- C2: changing eps from 0.05 to 0.3 moves the subtracted running by 1.4e-5 (mL = 0.4) and 5.0e-6 (mL = 0.256).
+- C3: R/R_QED = 1.1380, 1.0975, 1.0681, extrapolating to 0.9908 (power 1.44).
+- D1: the arithmetic of the estimates below.
+
+Estimates (not checks). With the SM fermions in one light copy, b = 8/(6 pi^2) and A = 10.905, the unfixed model gives d ln alpha/dPhi = -4.13e-3 (x 0.996 at eps = 0.04). The Sun's annual modulation then gives delta alpha/alpha of amplitude 6.8e-13, about 4e5 sigma from the Yb+ clock value k_alpha = 14(11)e-9 of Lange et al. The Coulomb fractions of Pt and Ti would give eta(Ti, Pt) = 8.4e-6 against MICROSCOPE's (-1.5 +- 2.7)e-15. Colour links with a fixed bare plaquette would make baryons fall with 4/3 of the lapse (gamma_eff - 1 = -1/2), a larger failure, conditional on colour links. A fully induced alpha, with no bare term, is excluded because nothing absorbs A(mL). Under the clause the electron's mL = 4.2e-22 leaves a residual near 1e-34.
+
+## Boundary
+
+Forced: the -Phi/3 cell change, the kappa/3 coefficient, and that no geometric reading removes it. Supplied: the tick, the sea branch with no copy mass, site-phase links, a free sea on static cells at second order, mL values far above physical (extrapolated), continuum one-loop QED as comparator, SM charges and measured numbers. The negative result stands: under fixed record 4-volume with any bare plaquette, the dressed coupling tracks the potential. The dressed-coupling clause is adopted to meet measurement, not derived. Holding spatial cell volume fixed instead removes most of the effect but reinstates gravitating vacuum energy. That the renormalized Maxwell stress keeps the source side universal is not run. No value of alpha is established.

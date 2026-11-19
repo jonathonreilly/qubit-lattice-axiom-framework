@@ -1,0 +1,117 @@
+---
+claim_id: the_repaired_time_even_overlap_kernel_keeps_the_family_anomaly_cancellation_in_su2_x_u1_and_su3_x_su2_x_u1_backgrounds_but_needs_a_finer_lattice_for_flux_three_bounded_theorem_note_2026-10-24
+claim_type: bounded_theorem
+claim_scope: "Rerun of the overlap-nonabelian (SU(2) x U(1)_Y) and overlap-colour (SU(3) x SU(2) x U(1)_Y) checks with the repaired overlap kernel of the family-class tick (T-even pieces: spatial hop sin K/sqrt3, spatial Wilson term the tick's scalar 1 - f, r_s = 1/3; time v = r = 1), m0 = 0.5 inside the one-species window 0 < m0 < 2/3, with the old backgrounds (same seeds and draw order). Exact to rounding: GW, g5-hermiticity, the P_hat split, lattice pseudo-reality and lattice charge conjugation, the fixed-basis Weyl-phase lemma. Integers: every index equals -sum f^2 in the SU(2) flux nW = 2 (4^4), the simply-connected SU(3) Cartan flux and the Z6-twisted flux (3^4); family sum Y index = 0 in each; contrasts match their charge predictions. Resolution: at every m0 in the window a component flux f = 3 on 4^4 is NOT resolved (index -3, not -9; plaquette angle 3 pi/8), so the (SU(2) x U(1))/Z2 half-flux family sum on 4^4 is not a test; on 5^4 the singlets give -4, -1, -9, 0 and the cross-lattice family sum (doublets on 4^4) is 0. Finite diagnostics: family anomaly density ~ eps^4 (3.94/3.96 SU(2) x U(1); 3.88/3.97/4.08 colour), lone multiplets ~ eps^2; 15/15 colour contrast cells as predicted. Not covered: doublets on 5^4 (dim 5000 > cap), the 4^3 x 3 density runs (dropped for time), a non-perturbative existence proof, pi_4, gravitational Tr Y, continuum limits."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - the_family_class_tick_has_no_step_angle_so_the_lapse_rides_a_winding_free_layer_while_the_speed_tie_and_slab_survive_and_the_overlap_takes_its_time_even_kernel_bounded_theorem_note_2026-10-24
+  - the_overlap_chiral_determinant_in_su2_x_u1_backgrounds_cancels_the_family_gauge_anomaly_through_cubic_order_and_in_every_measured_index_but_a_single_doublet_does_not_bounded_theorem_note_2026-10-23
+  - the_overlap_chiral_determinant_in_su3_x_su2_x_u1_backgrounds_cancels_the_one_generation_gauge_anomaly_locally_and_in_every_measured_index_including_a_z6_twisted_flux_but_anomalous_subsets_do_not_bounded_theorem_note_2026-10-23
+runner: scripts/the_repaired_time_even_overlap_kernel_keeps_the_family_anomaly_cancellation_in_su2_x_u1_and_su3_x_su2_x_u1_backgrounds_but_needs_a_finer_lattice_for_flux_three_2026_10_24.py
+---
+
+# The repaired time-even overlap kernel keeps the family anomaly cancellation in SU(2) x U(1) and SU(3) x SU(2) x U(1) backgrounds, but needs a finer lattice for flux three
+
+Claim type: bounded_theorem (exact lattice identities plus labelled finite diagnostics). Labels: [T] exact, [F] finite
+diagnostic, [S] reading. Runner: runner.py, TOTAL: PASS=21 FAIL=0, 38 s, peak RSS 276 MB, 4.4 k characters of stdout,
+seeded, AUDIT_TIMEOUT_SEC = 120. Tested under a unique filename (scratch/repaired_kernel_anomaly_test_run.py, exit 0).
+Criteria written before any code (criteria_pre_run.txt); used unchanged except the reported resolution outcome below.
+Axioms unchanged. No rule proposed, no CL edit.
+
+## Question
+
+new-tick-recheck repaired the overlap kernel for the adopted family-class tick: X is built from the tick's T-even pieces,
+which is the Wilson form with v_s = 1/sqrt3 and r_s = 1/3. The U(1) indices 0, 1, 4 on 4^4 were unchanged, but the
+non-abelian and colour backgrounds were not rerun. Do the anomaly checks of overlap-nonabelian and overlap-colour survive
+on the repaired kernel?
+
+## Set-up (only the kernel changes)
+
+- X = sum_mu [(v_mu g_mu - r_mu) T_mu U / 2 - (v_mu g_mu + r_mu) T_mu^+ U^+ / 2] + (sum r - m0), with
+  v = (1/sqrt3, 1/sqrt3, 1/sqrt3, 1) and r = (1/3, 1/3, 1/3, 1). H = g5 X, D = 1 + g5 sign H, P_hat_- = (1 + sign H)/2.
+- m0 = 0.5. It was chosen by a U(1)-only pre-scan over m0 in {0.2, ..., 0.6} (scratch/m0scan.py, scan5.py). At m0 = 0.5
+  every |f| <= 2 on 4^4 and f = 1 on 3^4 is resolved, with the largest minimum gap (0.167). It is a resolution choice;
+  no anomaly quantity entered it. K0: free D has exactly one zero on 8^4, and GW holds to 3e-15.
+- Backgrounds: the same seeds and draw order as the two probes, so the link fields are the old ones. The content, Y values,
+  contrast sets, fluxes, Z2/Z6 global forms and thresholds are copied.
+
+## Results
+
+Resolution (K1) [F]: a component flux f = 3 in both planes on 4^4 is NOT resolved at any m0 in the window. The pre-scan
+gave index 0 at m0 = 0.2-0.4 and -3 at m0 = 0.5-0.6; the old kernel at m0 = 1.6 gave -9. The plaquette angle is 3 pi/8.
+The weaker spatial Wilson term (r_s = 1/3) means the kernel needs smoother fields. On 5^4 (angle 0.75) f = 3 gives -9 at
+m0 = 0.4, 0.5 and 0.6.
+
+SU(2) x U(1)_Y:
+- NA1 [F] 4^4, nW = 2: Q = L = -2, singlets 0 (all equal -sum f^2). The family sum Y index is 0; L alone gives 1.
+- NA2a [F] 4^4, (SU(2) x U(1))/Z2 half flux:
+  - Q, L, u, d, nu = -1, -5, -4, -1, 0, correct.
+  - e^c (f = 3) gives -1, not -9 (gap 0.006). The 4^4 sum is 8.
+  - So the copied criterion NA2 is NOT met on 4^4. The cause is resolution, not anomaly.
+- NA2b [F] 5^4 singlets in the same flux class: u, d, e, nu = -4, -1, -9, 0. The doublets stay on 4^4, because dim 5000
+  exceeds the 3072 cap. The cross-lattice family sum Y index is 0, and L alone gives 5/2.
+  - [S] This combines integers of one flux class measured on two lattices. It is weaker than the old same-lattice test.
+- NA3: Q has an odd index (-1); 3 Q + L = -8, even.
+- NB3 [F] 3^4 scan. The lone doublet scales as eps^2.01 (Y) and eps^2.01 (SU(2)); the family as eps^3.94 and eps^3.96.
+  - For comparison, the old kernel gave 1.97/2.01 and 4.02/4.03.
+  - The family/lone ratio at eps = 0.05 is 1.1e-2 (Y) and 1.7e-3 (SU(2)); the old values were 1.6e-2 and 2.1e-3.
+- NB4 [T]: the charge sums are unchanged.
+- NC1, NC2, ND1 [T]: GW 5e-14 and the split 3e-14. Pseudo-reality and the Y parities hold to 5e-14. The Weyl-phase lemma
+  holds to 4 digits.
+
+SU(3) x SU(2) x U(1)_Y (3^4):
+- CA1 [F] Cartan flux: indices Q, u, d, L, e, nu, X = -4, -2, -2, 0, 0, 0, -2, identical to the old values. The family
+  sum Y index is 0. The contrasts give lone Q -2/3, no u^c -4/3, quarks 0 and +X 2/3, as charge-predicted.
+- CA2 [F] Z6-twisted flux: indices -3, -2, -1, -1, -1, 0, -1, identical to the old values. The family sum is 0. The
+  contrasts give -1/2, -4/3, 1/2 and 1/3. Gap 0.163 (old 0.508).
+- CA3 and CA4: the colour- and T3-weighted integrated anomalies are 0 for the family and nonzero for no-u^c, +X and
+  quarks. The admissibility arithmetic is unchanged.
+- CB1 and CB2 [T]: lattice C holds to 1e-14. The family's SU(3) and Y densities vanish at every site (1e-14). no-u^c and
+  +X fail (1.7e-3).
+- CB3 [F] pure U(1)_Y exponents: family 3.81, lone Q 2.00, quarks 2.01.
+- CC1 and CC2 [F] generic background:
+  - family: o 3.88, 3.97, 4.08 (Y, SU(3), SU(2));
+  - lone Q: x 2.01, 2.01, 2.03;
+  - no u^c: x 1.98, x 1.97, o 4.08;
+  - quarks: x 2.00, o 3.97, x 2.03;
+  - +X: x 2.00, x 2.03, o 4.08.
+  All 15 cells match the prediction. The family/lone Q ratio at eps = 0.05 is 4.0e-2, 1.1e-2 and 5.4e-3 (old 1.2e-2,
+  3.5e-3, 4.4e-3): the residual is larger in Y and SU(3) but still an eps^4 term.
+- CD1 [T]: GW, hermiticity and the projector hold to 1e-14.
+
+## Answer
+
+| question | answer |
+|----------|--------|
+| every index = flux prediction? | Yes, wherever the flux is resolved. At m0 in (0, 2/3), f = 3 is not resolved on 4^4 (e^c in the Z2 half flux); it is resolved on 5^4. |
+| family anomaly cancels locally? | Yes: family ~ eps^4 (3.81-4.08), lone ~ eps^2 (1.97-2.03), in all directions. |
+| contrasts fail as predicted? | Yes, 15/15 colour cells, plus L alone (1, 5/2) and the subsets' Y index sums. |
+| Z6 twist? | Same indices as on the old kernel; family sum 0; the contrasts as predicted. |
+| net change from the kernel | the resolution requirement is tighter (r_s = 1/3); the Z6 gap is smaller (0.16 vs 0.51); the order-4 residual is up to 3x larger. No qualitative change. |
+
+## Smuggling review
+
+- Supplied:
+  - the groups, the 16's content and hypercharges, the Z2 and Z6 global forms, and the contrast field X (test inputs; as
+    rule content they would fail gate criterion 2);
+  - m0 = 0.5 (resolution);
+  - the backgrounds;
+  - the lattices 3^4, 4^4 and 5^4 (singlets only);
+  - the cross-lattice combination in NA2b [S].
+- Forced:
+  - the GW, C, pseudo-reality and phase-lemma identities on the new kernel;
+  - the integer indices;
+  - the order-2/3 cancellation, given the content.
+- Gate: N/A (no rule). The open item of CL-1's history-level weighting narrows for the repaired kernel; it does not close.
+
+## Boundary
+
+- Not rerun: the 4^3 x 3 density runs NB1/NB2 (dropped for time; NB3 tests the same law). Doublets on 5^4 (beyond the
+  memory cap). The NA2 family sum on a single lattice that resolves f = 3.
+- Not covered: a non-perturbative existence proof, pi_4/Witten, gravitational Tr Y, rough fields, continuum limits, and
+  the T-odd term (absent from this kernel by construction).
+
+Uses: new-tick-recheck (3b/3c kernel), overlap-nonabelian (A1-A3, B3, B4, C1, C2, D1), overlap-colour (A1-A4, B1-B3,
+C1, C2, D1). Narrows: new-tick-recheck's sentence that the index-based checks "carry over" (they do, but flux 3 needs
+5^4 at the repaired kernel).

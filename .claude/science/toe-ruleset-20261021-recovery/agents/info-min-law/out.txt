@@ -1,0 +1,22 @@
+A. IM-1: least-information transport = eps->0 Schrodinger bridge = CL-2 (fewest changes, then greatest entropy)
+[PASS] A1 entropic-OT plan (min KL to lazy reference, eps=0.003) -> lexicographic CL-2 plan, 6 random tick supports | fewest changes exact, entropy >= independent max-entropy solve; max |plan diff| 1.1e-04 (solver tol)
+[PASS] A2 identity: greatest plan entropy at fixed odds == least mutual information between before and after | H(pi)=H(X)+H(Y)-I(X;Y)
+B. Born = the unique odds weighting for which a finite-information (on-support) transport exists
+[PASS] B1 off-support (nonlocal) mass forced per tick vanishes only at p=2 (KL to the tick reference infinite otherwise) | p=1:8.2e-02 p=1.5:4.1e-02 p=2:1.3e-16 p=2.5:4.1e-02 p=3:8.4e-02 p=4:1.7e-01
+[PASS] B2 Jensen step: G(S)+G(2s-S)=2G(s) on [0,2s] fails for G(u)=u^(p/2), p!=2 (affine G <=> Born) | rederives born-reading Step 2
+C. Born = least, state-uniform record information about a rotation (Fisher / Wootters)
+[PASS] C1 Fisher information of record odds is angle-independent only for p=2 (value 4) | p=1:[1.00,18.21] p=2:[4.00,4.00] p=3:[0.45,9.00] p=4:[0.04,16.00]
+[PASS] C2 constant-Fisher family cos^2(c th), c odd: F=4c^2, least at c=1; c>=3 has interior zero odds (support clause violated) | F: c=1:4, c=3:36, c=5:100
+[PASS] C3 3 outcomes: Fisher metric of Born odds = 4 x round metric on amplitudes (Wootters isometry) | ratio 4.000014; q=3 ratio 4.9409
+D. Why a complex qubit: 1 bit + continuous reversibility + local tomography
+[PASS] D1 anticommuting traceless Hermitian generators are trace-orthogonal => at most 3 in M_2(C) (Bloch dim 3) | Cl(3,0) = M_2(C) saturates at 3
+[PASS] D2 parameter count K(N1N2)=K(N1)K(N2) (local tomography) holds for complex, fails real/quaternionic | K(4) vs K(2)^2: C 16/16, R 10/9, H 28/36
+E. Z^3 with 6 neighbours = least neighbour information among translation-transitive 3D graphs
+[PASS] E1 no symmetric neighbour set of size < 6 spans 3D; size-6 sets generate Z^3 iff a basis (|det|=1) -> graph = simple cubic | size-4 spanning sets 0; size-6 sets 37820, generating 2821 (all Cayley-isomorphic to 6-NN Z^3)
+[PASS] E2 minimal degree 2d grows with d: neighbour information alone prefers d=1 (does NOT select d=3) | log2(2d) = 1, 2, 2.58 bits per neighbour address
+F. lower side of d=3 (supplied criteria, not information minimisation)
+[PASS] F1 Polya: 6-NN classical walk transient first at d=3 (return prob 1-1/u) | d=3 return 0.340537; d=2 partial integral grows 3.04->4.51 (log-divergent)
+[PASS] F2 free graviton polarisations (d+1)(d-2)/2: 0 at d=2, 2 at d=3 (register's 2 tensor modes need d>=3) | {2: 0, 3: 2, 4: 5}
+G. estimate: Lambda as count-noise of records in one Hubble 4-volume (Sorkin form; Planck cell ASSUMED)
+[PASS] G1 1/sqrt(N_4cells) within 1.5 decades of Lambda*l_p^2 (order only; prefactor and cell size not derived) | est 1.4e-122 vs obs 2.9e-122
+TOTAL: PASS=14 FAIL=0

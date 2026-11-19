@@ -1,0 +1,29 @@
+== A. rung-link zero modes (uniform Wilson lines between the end groups) and their quantum numbers
+[PASS] A1 THEOREM count = dim (h_UV + h_IR)^perp = N dim g - rank(gauge map): register PS bulk (UV SM, IR PS) 0; PS (SM, SM) 9; SU(3)_W (SU(2)xU(1) ends) 4; SU(4)xSO(5) (UV SM, IR PS) 4 | (dim, chain) 0,0 9,9 4,4 4,4
+[PASS] A2 THEOREM SU(2)_L Casimir on adj(PS) is {0, 2}: no doublet with any end groups; PS (SM, SM) modes: T3 = 0, Y = +-2/3 (x3), +-1, 0 | Casimir [0.0, 2.0]
+[PASS] A3 THEOREM on one family's 16 (either exchange orientation) the only colourless |Y| = 1/2 doublet generators join L to nu^c; with the SM they generate SU(3) on (L, nu^c) alone, whose cubic anomaly is nonzero, so CL-3's anomaly-free rule links no doublet direction | 4 generators; algebra dim 20; Tr Z^3 -0.144
+[PASS] A4 THEOREM SU(3)_W: one doublet, (T3, Y) = (+-1/2, +-1/2), Q = (2/3, -1/3, -1/3) on the 3; sin^2 thW = Tr T3^2/Tr Q^2 = 3/4 (measured 0.2312) | sin^2 0.7500
+[PASS] A5 THEOREM SU(4)xSO(5) bulk, UV SM, IR PS: the modes are SO(5)/SO(4) = (1,2,2), one colourless doublet with Y = T3R = +-1/2
+[PASS] A6 THEOREM so(5) commutant on the spinor 4 is 1-dim, so an SO(5)-symmetric gapped bulk gives (2,1) and (1,2) one index: zero modes (4,4)_L, SU(4)^3 anomaly 4 (the 16: 0); the register's chirality-graded exchange keeps so(4) but not the doublet generator | anomaly (4,4) 4, 16 0; |[T45, X_reg]| 1.414
+== B. one-loop Wilson-line potential on a rung chain (supplied bulk SU(4)xSO(5); exact CW sums; IR units, last link 1)
+[PASS] B1 THEOREM sum m^2, sum m^4 (vectors, fermions) are theta-independent for N >= 2 links, so V is finite; for N = 1 sum m^4 is not | rel spread N=2,4: 1e-15; N=1 m^4: 0.12, 0.38
+[PASS] B2 THEOREM Hellmann-Feynman dV/dth equals the finite difference of the direct CW sum; merging the UV links into one node converges as 4^-(kept links) | HF/FD-1 1e-09; N=14 kept 10, 6: 2e-05, 4e-03
+[PASS] B3 THEOREM the rules' content (gauge + 1 or 3 families as bulk (4,4)s): the gauge part is least at th in {0, pi}, the family part at th = pi, so th_min = pi for N = 2, 3, 4, 6, 8, 12 (flat, warped) and 52 (warped): SU(2)xU(1) unbroken, family gapped, no EW breaking | (V(0)-V(pi))/m_KK^4: N=2,q=1.0: 8.8e-02, N=4,q=1.0: 5.8e-02, N=4,q=0.5: 2.8e-02, N=52,q=0.5: 2.2e-03
+[PASS] B4 THEOREM Yukawa from the gauge link: the 8 Dirac masses of a family are equal at every th (custodial, SU(4)-blind), and m_f/m_W >= 1/sqrt2 with equality as th -> 0: y_f = g/2 for every member (N = 4 flat, 8 and 52 warped) | split 3e-12; min m_f/m_W 0.70713
+[PASS] B5 THEOREM normalisation: m_W -> g F_h th/sqrt2 (h = sqrt2 F_h th is the canonical A_5 mode, F_h^-2 = sum_j f_j^-2) and m_Z/m_W -> sqrt(8/5): sin^2 thW = 3/8 at tree level | 1.000000, 1.264911, 1.000000, 1.264911
+[PASS] B6 DIAGNOSTIC supplied extras (0-12 vector 5s, 0-24 dark spinors, c = 0, 0.5, 1 or 3 families; 968 per chain): flat (fine rate) m_H/m_W stays far below 1.558; warped, the band rises with N and at N = 52 contains 1.558; the family stays at m_f >= m_W/sqrt2 | flat N=12: 95% 0.71, max 1.09; warped medians N=8, 24, 52: 0.88, 1.44, 2.06 (fit 0.286 sqrt(N+1)); N=52 5-95% 1.18-2.45; min m_f/m_W 0.708
+[PASS] B7 DIAGNOSTIC look-elsewhere: at N = 52 hits within 5% of 1.558 come at about the log-uniform chance rate; v/m_KK < 0.05 needs th < 0.2; two supplied multiplicities fit two observables, so a match is a fit; the median content gives 1.558 only at a depth where v would be far larger | hits 20/286 = 0.070 vs 0.137; v/m_KK min 0.025, 1 below 0.05; median reaches 1.558 at N = 28.7 (v up by 2^23)
+== C. the warped ladder and the hierarchy
+   CL-1: the lapse is L sin(eps0)/sqrt3 for a cube of edge L, so a rung-j cube (edge 2^j a) ticks 2^-j as often: every scale at rung j carries 2^-j (zoom rate,
+   warp 1/2 per rung; its k = 0 sector is the warped chain, s(0) = 1); the fine rate of the octree probes violates that clause and is the flat chain.
+[PASS] C1 THEOREM warped chain: m_KK = c 2^-(N-1) M_UV (M_UV = rung-0 hop) with one c for N = 12..53, approached as 4^-N: every IR scale is 2^-N exactly; flat chain: (N+1) m_KK/M_UV -> 1.6, a power law with no hierarchy | c = 0.832528 (spread 4e-08; N=8 off 1e-05); flat 1.661, 1.618, 1.595 (N = 8, 16, 32)
+[PASS] C2 THEOREM m_W/m_KK falls as (N+1)^-1/2 at fixed th (the zero mode spreads over all rungs, as the RS volume factor) | sqrt(N+1) m_W/m_KK at th = 1.7, N = 8, 16, 32, 53: 0.760, 0.746, 0.738, 0.735
+[PASS] C3 ESTIMATE v = 246.22 GeV with M_UV = 1/a = 2.435e18 GeV needs N = log2(2c (v/m_KK) M_UV/v), which no rule fixes: any target lies within 2^(+-1/2) of some N; rule-fixed rung counts are 0, 5-7 (step bound), >= 15.7, 192-200 (CMB, Hubble); a running coupling ending the ladder at N needs b0 alpha = 2 pi/(N ln 2) | N for v/m_KK min, median, max of the N=52 scan: 48.6, 52.0, 52.2; b0 alpha at N = 52: 0.1743
+== D. against measurement (estimates; PDG masses)
+[PASS] D1 ESTIMATE family masses from the gauge link: m_f >= m_W/sqrt2 = 56.8 GeV for e, nu, u, d alike (measured 0.511 MeV, < 1 eV, 2.16, 4.70 MeV) and t = b = tau: excluded by > 1e5
+[PASS] D2 ESTIMATE tree m_Z/m_W = sqrt(8/5) = 1.265 vs measured 1.1346 (sin^2 thW 3/8 before running); m_KK = v/(v/m_KK) lies below the ~5 TeV that LHC resonance searches exclude for KK-type Z' (approximate) except in the tuned corner v/m_KK < 0.05 | m_KK at the N=52 scan median 0.89 TeV, at its minimum v/m_KK 9.8 TeV
+supplied: coarse sites (octree), links on exchange bonds, bulk SU(4)xSO(5) (the register ladder gives PS), lattice-orbifold ends (UV SM, IR PS),
+  an IR end at rung N, 4D continuum per rung, equal node couplings with g = 0.6517, g_X = sqrt(3/2) g, fermion hop = gauge hop,
+  the extra 5s and dark spinors with their BCs and bulk masses, M_UV = 1/a; measured masses, couplings, LHC bound (approx.).
+elapsed_seconds 8.3
+TOTAL: PASS=18 FAIL=0

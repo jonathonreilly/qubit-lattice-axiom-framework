@@ -1,0 +1,31 @@
+mirror-world probe, criteria written 2026-10-24 BEFORE any code ran.
+
+Owner question: why must the far-wall mirror be removed (gapped) rather than kept as a mirror world
+with its OWN gauge fields, coupled to us by gravity (Foot; Berezhiani; Kobzarev-Okun-Pomeranchuk; as supplied)?
+
+Q1 (rules). MIRROR-WORLD-CONSISTENT = YES requires ALL of:
+ R1  the adopted Links clause (registers valued in the update's symmetries; one register per factor on each
+     face of its role blocks; Gauss's law in every B_f-block) allows a gauge factor acting on far-wall modes
+     only, i.e. the slab update commutes with some layer-local phase other than the uniform one;
+ R2  in a toy U(1) on a layered slab (Gaussian, Coulomb phase), a massless mode exists localised on ONE wall
+     with the other wall's coupling suppressed (ratio < 1e-3), without a bulk gauge mass that also gaps it;
+ R3  no Gauss's-law violation: the far-half charge commutes with the slab update.
+ If any of R1-R3 fails, the verdict is: the adopted rules force ONE gauge field on both walls (vector-like),
+ so the mirror must be gapped; a mirror world needs a NEW link rule, which then must pass the gate.
+ Predicted before running: R1 FAIL, R2 FAIL (zero mode flat, or bulk mass gaps it), R3 FAIL (middle bond).
+
+Q2 (measurement; supplied standard numbers). VIABLE-AS-ALL-DM requires ALL of:
+ M1  Delta N_eff = 6.14 (T'/T)^4 (BBN, full SM mirror content g* = 10.75) below 0.3 at the T'/T the rules give;
+ M2  mirror baryon density = 5.36 x ordinary from a rule, not supplied;
+ M3  mirror-atom self-interaction sigma/m below the cluster bound ~1 cm^2/g, or a rule making halos
+     non-dissipative;
+ M4  kinetic mixing below the supplied ~1e-9.
+ Allowed-as-fraction requires M1 and M4 with fraction <~5% (dissipative-DM limits, supplied).
+ Predicted: rules give T'/T = 1 (wall-symmetric excitation, gk-smoothed-layers) -> M1 FAIL; M2 FAIL (supplied
+ asymmetry); M3 FAIL for collisionless reading; M4 PASS (tails tiny) conditional on a hypothetical rule.
+
+Q3 (gate). A mirror-world rule passes the anti-smuggling gate only if it supplies no gauge group, no T'/T
+and no Ls fitted to a measured number, and makes a prediction not built in. Predicted: FAIL or UNTESTED.
+
+Failures are results. The runner lines are checks that the stated facts hold (PASS = the fact as stated
+holds), so the verdict is carried by which facts hold, not by the PASS count.

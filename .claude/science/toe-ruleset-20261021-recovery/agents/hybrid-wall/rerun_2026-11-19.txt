@@ -1,0 +1,28 @@
+== A. zoom-rate ladder (3D tick st = 0.04, copy mass M = st, kap = 0.5, X = W(1-g5)/2; the 16 in parallel)
+[PASS] A1 THEOREM chiral inversion: G0 = -i(-1)^cz x (cube inversion) has G0 W G0^+ = -W, G0 Dg(K) G0^+ = e^{iK.1} Dg(-K); g5 = e^{i st W} G0 then gives g5 U(K) g5 = U(-K)^+ (copy mass included): g5 H(K) g5 = -H(-K) | errors 2e-15, 2e-11; vs light-algebra g5 4e-10
+[PASS] A2 THEOREM H_zoom = S H_fine S (S = 2^(-j/2), geometric-mean exchange): Sylvester keeps the inertia at every Q, so nodes and chiralities are the fine-rate ones; Q = 0 kernel = rung-0 P- copy 2 (light) + top P+ copy 2 (mirror), exactly | R=1,2,3 (dim, |Hv|): [(4, 1e-10), (4, 1e-10), (4, 1e-10)]; inertia equal at 3 random Q
+[PASS] A3 DIAGNOSTIC R = 3, |q| = 0.02: light speed v; mirror (top) speed v at the zoom rate, 2^R v at the fine rate; rung-j bulk gap 0.354 x 2^-j (zoom) vs ~0.4 (fine): coarse seas slower and lighter, never faster | zoom: 1.0000, 0.998, gaps 0.1769, 0.0885; fine: 7.98, 0.413, 0.378; light top weight 2e-19
+== B. Spin(10) pair square on the top rung's mirror slots only (P+ copy 2: 32 modes per cell)
+[PASS] B1 THEOREM (smg-verify D0-D4, rechecked) one cell: M_a Spin(10)-covariant; |Om^+|0>|^2 = 7680, |Om^+2|0>|^2 = 113541120 (so(12) chain); unique singlet E0 = -2g sqrt(11088+48 sqrt21081), gaps 19.0715 g, 33.5804 g | 0e+00; 7680, 113541120; -268.754630; 19.0715, 33.5804
+   B2 THEOREM the Q = 0 light modes live on rung 0 only (A2): [H, a_l] = 0, G_l(z, 0) = 1/z at any top-rung coupling, R >= 1
+   B3 THEOREM the singlet has <c> = <cc> = 0 (Z4), <c+_a c_b> = d_ab/2 (irreducible 32, <N> = 16): P f P = 0, so g -> inf is the deleted-slot ladder (projection; Feshbach error <= |V|^2/(U-2|V|) at fixed volume)
+[PASS] B4 THEOREM TRIM index: at the 8 TRIM points of the top zone the deleted-slot Bloch H anticommutes with the involution G' = D_phi (g5 x node inversion), phi = -sum_t 2^t q.1; Tr G' = -2, so >= 2 zero modes at every TRIM | error 1e-09; zero modes per TRIM [2] (R = 1, 2, both rates); Tr [-2.0]
+[PASS] B5 DIAGNOSTIC nodes: Gamma = light Weyl (+1, on rung 0); X (x3) -1, M (x3) +1, R -1 on the TOP rung: no light-end doublers, 7 far-end doublers, net 0 (Nielsen-Ninomiya); speed v | R=2 top weights X, M, R 0.879, 0.847, 0.937; X on rung 0 0.016; speeds/v 1.000, 0.989, 0.994, 1.023
+[PASS] B6 DIAGNOSTIC freezing the whole top rung (index 0) moves the partner to Gamma one rung down; at R = 1 onto the light rung (a light-end doubler: the thin-strip endpoint) | Gamma zero modes (count, by rung): R=1 (4, [4.0]), R=2 (4, [2.0, 2.0])
+   B7 ESTIMATE for t << g the 7 cones get t^4/g^3 four-fermion terms (dimension 6: irrelevant): massless wherever the pair square gaps the cell (t < 3.65 g); g ~ t is uncontrolled
+== C. 1+1D analogue (2-site cells, same tick, binary tree, zoom rate)
+[PASS] C1 THEOREM 1D: g5 = a, {g5, W} = 0, g5 U(K) g5 = U(-K)^+; one cone per rung (|E| = 2 at the zone edge); real space = tree | 7e-11; 8e-15; 2.0000
+[PASS] C2 THEOREM 1D endpoint (top slot deleted), R = 1..4: zero modes at Q = 0 (light mover, on rung 0) and Q = pi (compensator, opposite velocity, on the top rung) | velocities/v -1.000, +1.066; top weight 0.936
+[PASS] C3 EXACT ED (8+4-site ring, interacting atom on the two top slots): all 512 levels stay doubly degenerate at every g (the chiral inversion anticommutes with h, trace odd on the 9 coupled modes); the zero-energy weight leaves the slot (zero) for elementary top partners | Tr +1; slot/partner/rung 0: g=0 1.000/0.000/0.000; g=4 0.059/0.885/0.055; g=256 0.000/0.941/0.059
+[PASS] C4 EXACT ED, atoms on whole top cells: the zero-energy fermion moves onto the light rung (light-end doubler) | rung 0: 0.000, 0.708, 0.992, 1.000, 1.000 (g = 0..256)
+[PASS] C5 THEOREM 0D end (one top cell, Fidkowski-Kitaev setting): only the light zero mode remains, no partner is needed; a wall with a zone has TRIM partners (B4, C2) that one-cell uniqueness cannot see | zero modes 1
+== D. measured constraints at the zoom rate (a = sqrt(8 pi) l_P; energy unit E_a/(2v) = 2.1e18 GeV)
+[PASS] D1 THEOREM power counting (energy 2^-j, flux 4^j, cell 8^j): B^2 and E^2 per volume x 1 per rung (fine: 2^j, 2^-j); B^4 x 16^j | exact for j = 0..5
+[PASS] D2 DIAGNOSTIC flux on 8x16x8 vs 4x8x4 tori: E_R(L) = r E_(R-1)(L/2) + A with rung-local A (r = 1/2 zoom, 1 fine): B^2 coefficient c_0 + R a (zoom) vs 2^R (c_0 + a) - a (fine) | A(2)/A(1) zoom 0.9976, fine 0.9949; gap >= 0.21
+   stiffness d(1/mu) ~ (R+1) x 0.018 (octree-field K per rung, O(1) factor), flat for wavelengths > a_R (fine rate: 1.7e20 at 1/m_e); R = 12: 0.23, absorbed in 1/e^2; photon/matter speed: one counterterm
+   light cone: top-rung terms give photon dv/v ~ (alpha 16/9pi)(E/E_R)^2, E_R = 0.354 x 2^-R x 2.1e18 GeV: R <= 12 (1.4 PeV photons, if superluminal), <= 23 (GRB 221009A, if subluminal); B^4 ~ (m_e/E_R)^4 = 6e-71 of QED
+   endpoint: 7 massless far-end 16s per family: N_nu = 8 per family (24 for three) vs 2.984 +- 0.008, d(1/alpha)/dln(mu) + 4.0 per family: excluded
+[PASS] D3 ESTIMATES the zoom rate passes what killed the fine rate (flat stiffness, no superluminal sea) for R <= 12-23; the strong-coupling endpoint is excluded | 7.4 s
+supplied: octree sites, zoom rate with geometric-mean exchange, a top rung R, X, kap, M = st = 0.04, the 16, the pair square on top slots only, g, slot choice; 1D tick and atoms; species mass, tori; K (octree-field)
+cited: smg-verify, SPIN10 mirror-boundary note (projection, Feshbach), Golterman-Shamir 2505.20436/2603.15985, Zeng et al. 2202.12355, Nielsen-Ninomiya, measured values
+TOTAL: PASS=15 FAIL=0

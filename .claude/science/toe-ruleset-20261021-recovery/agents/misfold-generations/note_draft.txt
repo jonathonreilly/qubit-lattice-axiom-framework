@@ -1,0 +1,124 @@
+---
+claim_id: misfolds_of_the_cube_fold_do_not_form_three_generations_because_the_quadratic_tick_binds_nothing_and_only_the_point_misfold_is_stable_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "The single-particle two-tiling tick of fold-selection-3d (cube hop R with spin-3/2 overlap phases, R^2 = 1, face phases -1; even step eps - mu/2, odd step eps + mu/2, eps = 0.3), its many-body energy E = tr(G H_eff), H_eff = i log U, at the fold limit mu = -2 eps (H = a R_E, a = 0.6) and at mu = -eps, on the 4^3, 6^3 and 8^3 tori. Stated extension: a misfolded region holds the other tiling's fold, half filled; the remaining sites of each even cube hold the lowest levels of R_E restricted to them; fragment zero modes fix the charge q. Classes: d_m = 1 bond, 2 plaquette, 3 cube of the odd tiling, and odd-cube domains (lines of 1-3 cubes, a 2x2 sheet, a 2x2x2 block). Results: a one-site-removed cube keeps levels -1,-1,-1,0,+1,+1,+1 (interlacing), so the elementary misfolds cost exactly 2a, 4a, 8a for every q, with 2, 4, 8 zero modes; every touched cube admits a one-cube one-body move lowering E by a/2; every odd-q class lies 1a, 3a, 7a above the q = 1 minimum a reached by one point misfold; domains cost 8a to 43a; at mu = -eps all lie above the band edge |mu|; the only stable bounded odd-parity class is the point misfold (q = +-1), the q = 3 cube being marginal (binding 0). Contents differ (2, 4, 8 zero modes against the point's 4-state level). One-body neutral operators connect the classes at 0.017-0.38. Not covered: any interacting extension, the clock-locking alternative, a CKM overlap."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/misfolds_of_the_cube_fold_do_not_form_three_generations_because_the_quadratic_tick_binds_nothing_and_only_the_point_misfold_is_stable_2026_10_23.py
+---
+
+# Misfolds of the cube fold do not form three generations: the quadratic tick binds nothing, and only the point misfold is stable
+
+Claim type: bounded_theorem. Labels: [T] exact, [D] finite diagnostic.
+Runner: runner.py, TOTAL: PASS=13 FAIL=0, 2.4 s, ~125 MB peak, 4.5 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
+It was run under unique filenames (scratch/misfold_generations_test_u1.py, _u2.py). Pass criteria were written before
+any run (criteria_pre_run.txt). Run u1 failed one check (E2: I had expected exact Slater-Condon zeros for the larger
+classes; the computed elements are nonzero), and the check was rewritten to state the computed result.
+Axioms unchanged. No rule is proposed.
+Repo check: no note on main uses "misfold". Builds on fold-selection-3d (open PR #9978) and fold-defect-dm (A: the fold
+parameter space is contractible, so no fold defect is topological).
+
+## Question
+
+The three-generations reset (2026-10-23) proposed that the families are three stable misfold classes of the one cube
+fold, distinguished by the dimension d_m = 1, 2, 3 of the misfolded region, each carrying the same content, with
+neutral transitions between them forbidden. Pre-set prediction: three classes. A different count is a result.
+
+## Model and extension
+
+The model is fold-selection-3d's, unchanged. The energy is the tick's own quasi-energy, which is exact for a quadratic
+model. At the fold limit, mu = -2 eps, the even cubes decouple: H = a R_E. The vacuum fills R = -1 in each even cube,
+and the point misfold (a cube with 5 units) costs a = |mu|.
+
+The question needs a "misfolded region", which the model does not define. Extension used: the region X holds the
+odd tiling's fold, meaning R_O restricted to X, half filled at its negative levels. The remaining sites of each even
+cube hold the lowest levels of R_E restricted to them, and their exact zero modes are filled freely. Each filling
+gives a charge q = units - N/2; odd q is odd parity.
+
+Elementary move: any number-conserving one-body unitary on one cube's 8 modes. This is the class the cube tick
+generates. "Locally stable" means two things: no such move on any cube lowers E, and E is not above the q-sector
+minimum.
+
+## Results
+
+A1 [T]. Interlacing. A 7-site cube fragment keeps the levels -1, -1, -1 (these are exact R eigenvectors), one zero
+mode, and +1, +1, +1. So removing one site from an even cube costs exactly a.
+
+A2 [T]. The point misfold costs a and sits in the 4-state level, split 2 + 2 by the copy sign. It is passive under
+every one-cube move, and it is the q = 1 sector minimum.
+
+A3 [T]. A cube holding 7 units (q = 3) costs 3a, the same as three separated points. Its binding is 0, so it is
+marginal.
+
+B1 [T+D]. The elementary misfolds take their sites from 2^d_m distinct even cubes. So E = 2^d_m a exactly, for every
+q: 2a, 4a and 8a, ratios 1 : 2 : 4. The zero modes number Z = 2, 4, 8. These values hold on 4^3 and on 6^3.
+
+B2 [D]. On every touched cube a one-cube move lowers E by a/2. The region orbital leaves the cube mixed and not
+passive. No elementary misfold is locally stable.
+
+B3 [T]. The q-sector minimum of a quadratic tick is |q| a, reached by separated point misfolds. The q = 1 classes sit
+1a, 3a and 7a above it.
+
+B4 [D]. The odd-cube domains on 8^3 (lines of 1, 2, 3 cubes, a 2x2 sheet, a 2x2x2 block) cost 8.0a, 13.7a, 19.4a,
+24.1a and 43.3a. Each has a lowering move.
+
+B5 [T]. RESULT: there is one stable class, against a prediction of 3.
+
+C1 [T+D]. At mu = -eps the q = 1 minimum is the band edge |mu|, an extended state. All the classes lie above it, in the
+order point < bond < plaquette < cube. A free tick's many-body spectrum is the sumset of its one-body levels, so
+nothing binds at any mu.
+
+D1 [T+D]. The contents differ between classes:
+- The point has one 4-state level (2 + 2).
+- The bond has 2 zero modes plus region levels at +-0.577a.
+- The plaquette has 4 zero modes plus region levels at +-0.816a.
+- The cube has 8 zero modes.
+
+E1 [T]. The Loewdin cofactor formula agrees with Fock space.
+
+E2 [T+D]. RESULT: the largest one-body element (site density, nearest-neighbour hop or link current) between q = +1
+states is:
+
+| Pair | max \|<P\|O\|X>\| |
+|---|---|
+| point-bond | 0.38 |
+| point-plaquette | 0.14 |
+| point-cube | 0.017 |
+| bond-plaquette | 0.30 |
+| bond-cube | 0.035 |
+| plaquette-cube | 0.10 |
+
+None vanishes by symmetry or topology.
+
+E3 [T]. No neutral selection rule protects the classes. Together with fold-defect-dm (A), this means fold defects
+carry no topological label.
+
+## Reading
+
+The hypothesis fails at steps 2, 4 and 5 (F1, F2, F4) inside this model, for three reasons:
+- The fold model is quadratic, so energies add and nothing binds.
+- Extended misfolds are excited, decaying configurations that cost 2^d_m a.
+- Their contents differ, and they mix with the point misfold through neutral one-body operators.
+
+Step 3 gives an ordering E(1) < E(2) < E(3) with ratios 1 : 2 : 4, but it is the ordering of unstable states.
+
+What would be needed: an interaction that binds (none exists in CL-1's tick), plus a reason why exactly three bound
+classes exist. Any supplied binding term (a cube charging U(n_c - 4)^2, cube-cube V) sets the count through its sign and
+size, so the count would be chosen, not forced. That fails the anti-smuggling gate unless the term is derived.
+
+## Smuggling review
+
+**Supplied:**
+- eps = 0.3, and mu = -2 eps and -eps;
+- the tori;
+- the region-fold extension (how a misfolded region is filled);
+- the one-cube move class;
+- the choice of q = +1 zero-mode fillings (the first 12 per class in E);
+- the seed.
+
+**From fold-selection-3d, unchanged:** R, the copy sign, the two-tiling tick, the vacuum.
+
+**Not derived:** an interacting fold, a CKM overlap. The clock-locking alternative was skipped (not cheap).
+
+**Lopsidedness:** none added. The fold limit is the mu < 0 one; mu > 0 is its (1,1,1) image.

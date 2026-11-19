@@ -1,0 +1,119 @@
+---
+claim_id: the_u1_hypercharge_anomaly_of_the_one_family_overlap_passes_luschers_zero_momentum_condition_but_finite_range_current_fits_on_4_to_the_4_cannot_test_locality_bounded_theorem_note_2026-10-24
+claim_type: bounded_theorem
+claim_scope: "U(1)_Y covariant anomaly density A(x) = sum m Y tr g5 D_Y(x,x) of the Wilson-kernel overlap (r = 1, m0 = 1.6, the overlap-nonabelian kernel) on 4^4 in factorised U(1) backgrounds (F12 depends on x1,x2; F34 on x3,x4), for the one-family 16 and a lone L doublet. Exact to rounding: GW, g5-hermiticity, P_hat projector; sum_x tr g5 D = -2 index. Integers: in unit flux (charge unit 1/6) the indices of 6Y = 1, 2, 3, 4 are -1, -4, -9, -16; e^c (6Y = 6) is not resolved on 4^4 (nor on 5^4: -35, gap 0.009). Lone L integrated anomaly -18 (no periodic current exists); the 16's flux integral is 0 from four measured integers plus the predicted e^c one. Trivial sector: both integrals vanish (3e-13). Finite diagnostics: 16 ~ eps^4 (4.13, 3.99), L ~ eps^2 (2.00). Negative on method: finite-range (L1 range r <= 2) gauge-invariant current fits on 4^4 do NOT separate the contents; the pre-set criteria P1 and P3 are NOT met and P2 only partly. Not covered: the measure construction, non-abelian SU(2) x U(1) locality, the gauge-field integral, larger lattices, the repaired kernel."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - the_overlap_chiral_determinant_in_su2_x_u1_backgrounds_cancels_the_family_gauge_anomaly_through_cubic_order_and_in_every_measured_index_but_a_single_doublet_does_not_bounded_theorem_note_2026-10-23
+  - the_overlap_of_the_cube_walk_euclidean_kernel_gives_exact_ginsparg_wilson_chirality_without_doublers_but_its_chiral_projector_is_not_a_walk_sector_bounded_theorem_note_2026-10-23
+  - the_repaired_time_even_overlap_kernel_keeps_the_family_anomaly_cancellation_in_su2_x_u1_and_su3_x_su2_x_u1_backgrounds_but_needs_a_finer_lattice_for_flux_three_bounded_theorem_note_2026-10-24
+runner: scripts/the_u1_hypercharge_anomaly_of_the_one_family_overlap_passes_luschers_zero_momentum_condition_but_finite_range_current_fits_on_4_to_the_4_cannot_test_locality_2026_10_24.py
+---
+
+# The U(1)_Y anomaly of the one-family overlap passes Luscher's zero-momentum condition, but finite-range current fits on 4^4 cannot test locality
+
+Claim type: bounded_theorem (exact lattice identities, integer indices, labelled finite diagnostics, and a
+method negative). Labels: [T] exact, [F] finite diagnostic, [S] reading. Runner: runner.py, TOTAL: PASS=9 FAIL=0,
+64 s, peak RSS 229 MB, 3.2 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120. Tested under a unique filename
+(scratch luscher_local_current_test_run.py, exit 0). Criteria written before any code (criteria_pre_run.txt); the
+outcomes below are reported against them unchanged. Axioms unchanged; no rule proposed; no CL edit.
+
+## Question
+
+Wizard synthesis route A (w5): the chiral overlap theory with the field-dependent projector P_hat exists with a
+gauge-invariant measure if the anomaly density of the anomaly-free content is q = d*k with k a LOCAL
+gauge-invariant current (Luscher 1998/99 cohomology, supplied). overlap-nonabelian found the 16's density cancels
+through cubic order but not at order 4 (sum Y^5 = 5/9, sum_doublets Y^3 = -1/9). Is that order-4 residual a local
+divergence, while a lone doublet's density is not?
+
+## Repo check
+
+- No main note constructs Luscher's local current or measure term (git grep "cohomolog"/"Luscher" on origin/main:
+  the hits are the WZ/Fujikawa staggered notes and ABJ index notes, which do not touch it).
+- Open PRs used: #10049 (overlap-from-walk: Luscher P_hat, free-kernel locality exp(-0.72 d)), #10051
+  (overlap-nonabelian: order-4 residual, kernel copied here), #10052 (overlap-colour). Narrows overlap-from-walk's
+  sentence that the 1e-3 zero-sum remainder "is the divergence term": it is consistent with that, but this probe
+  could not certify locality on 4^4.
+
+## Set-up
+
+- Kernel and conventions copied from overlap-nonabelian: X = D_W - m0, m0 = 1.6, H = g5 X, D = 1 + g5 sign H,
+  q_Y(x) = tr g5 D(x,x) = tr sign H(x,x). A = sum m Y q_Y; the 16 has (m, Y) = Q (6, 1/6), L (2, -1/2), u^c (3, -2/3),
+  d^c (3, 1/3), e^c (1, 1); the lone doublet is L alone.
+- Factorised backgrounds: (A1, A2) depend on (x1, x2) and (A3, A4) on (x3, x4). Then F12 and F34 are the only field
+  strengths, Luscher's density is T = F12 F34 / (4 pi^2), and a quartic local basis is small enough to write down.
+- Fit: k = combination of gauge-invariant plaquette monomials F12^n1 F34^n2 with factors at L1 offset <= r;
+  basis columns are d*_mu of each monomial; optional extra column T. 12 backgrounds at eps = 0.2 (8 train,
+  4 held-out); ridge 1e-8 on scaled columns (1e-6 for the quartic basis).
+
+## Results
+
+Exact and integer:
+- K1 [T]: GW 1e-14, g5-hermiticity 8e-16, P_hat projector 3e-15, tr g5 D(x,x) = tr sign H(x,x).
+- C0 [T]: in all 12 trivial-sector backgrounds sum_x A = 0 for BOTH the 16 (3e-13) and L (2e-13). In small smooth
+  backgrounds the integral cannot separate them (each index is 0).
+- C1 [F, integers]: unit flux in both planes for charge 1/6 plus a perturbation; sum_x T = 36 (charge 1). Indices of
+  6Y = 1, 2, 3, 4 are -1, -4, -9, -16 = -(6Y)^2, and sum_x q = -2 index exactly. Lone L: integrated anomaly -18, so no
+  periodic current k exists at all (local or not).
+- C1b [F]: e^c (6Y = 6, plaquette angle 3 pi/4) is NOT resolved on 4^4 (index 0, gap 0.014) nor on 5^4 (-35, gap
+  0.009; scratch check, not in the runner). With the predicted e^c integer, the 16's flux integral is 0 (1e-13); with
+  all-measured values it is -72 (the missing e^c term). The single-lattice family zero in a U(1)_Y flux is NOT
+  measured here; overlap-nonabelian's (SU(2) x U(1))/Z2 half flux (fluxes <= 3) measured it.
+- C2 [F]: eps 0.2 -> 0.1 exponents: 16 4.13, 3.99; L 2.00, 2.00; |A16|/|AL| = 0.045 at eps = 0.2. The 16's
+  density is the order-4 term.
+
+Finite-range fits (held-out relative residual, r = 0, 1, 2; bilinear F12 F34 basis):
+
+| content | no T | with T (fitted coefficient) |
+|---------|------|------------------------------|
+| 16 | 1.02, 0.62, 0.50 | 1.11 (-0.02), 0.62 (0.00), 0.50 (0.00) |
+| L  | 1.11, 0.57, 0.23 | 0.76 (-0.32), 0.53 (-0.06), 0.23 (-0.01) |
+
+- E1: at r = 2 (offsets reach the 4^4 period; 484 columns on 2048 samples) the L fit overfits (train 0.002,
+  held-out 0.23).
+- E3: quartic basis F12^3 F34 + F12 F34^3 at r = 1 (1400 columns): train 0.08, held-out 4.5 (overfit).
+
+Against the pre-set criteria:
+- P1 (16 residual falls >= 3x from r = 0 to 1): NOT MET (1.02 -> 0.62). The bilinear basis is the wrong order for
+  an eps^4 density, and the quartic basis overfits.
+- P2 (L stalls without T, falls with T): PARTIAL. L without T at r = 1 is 0.57 (>= 0.3), but adding T does not
+  make it fall like a local divergence (0.53).
+- P3 (T coefficient = 2 sum m Y^3 = -1/2 for L, 0 for the 16): NOT MET for L (-0.32 at r = 0, -0.06 at r = 1). It IS
+  near 0 for the 16 (|c| <= 0.02).
+
+## Answer
+
+| question | answer |
+|----------|--------|
+| does the 16 integrate to zero? | trivial sector: yes, exactly, but so does L; flux sector: yes from the integers (e^c predicted, not resolved) |
+| does the lone doublet's integral fail? | yes in flux: -18 (no current of any kind) |
+| is the 16's order-4 residual a local divergence? | NOT decided by this probe: on 4^4 (smallest momentum pi/2, period 4) finite-range fits are size- and sample-limited and do not separate local from nonlocal currents |
+| what decides it, then? | [S] Luscher's U(1) theorem (supplied): a local, gauge-invariant, topological density q (sum_x dq = 0 under all variations) is alpha + beta F + gamma eps F F + d*k with k local; for the overlap with admissible fields alpha = beta = 0, and gamma is the zero-momentum (flux-sector) integral. Each charge gives q_Y = 2 Y^2 T + d*k_Y, so A = 2 sum m Y^3 T + d*(sum m Y k_Y). For the 16, sum m Y^3 = 0, so the order-4 residual is part of d*(sum m Y k_Y): local by the theorem, not a new obstruction. The finite content checked here is that premise: the trivial-sector zeros and the flux integers. |
+
+## What this establishes, and what remains
+
+- Establishes [T/F]: the lattice identities; the index integers 6Y = 1-4; the lone doublet's nonzero flux integral;
+  the 16's eps^4 law; that 4^4 finite-range fits cannot carry Luscher's locality test (a method negative: do not
+  re-run it at 4^4).
+- Does NOT establish: locality of k numerically; the measure term itself; admissibility (max |F| = 0.79 here, well
+  above Luscher's proof bound); the gauge-field integral; any non-abelian statement. For SU(2) x U(1) the
+  construction is known only to all orders of perturbation theory (Luscher 2000, Kikukawa et al., supplied); the
+  non-perturbative non-abelian measure is open in the literature.
+- Next test that could decide numerically: the momentum-space form of the same question. For one charge, measure the
+  order-e^2 kernel G(p_a, p_b) on L >= 8 (factorised backgrounds keep it a 2D x 2D problem) and check
+  G(p) - 2 Y^2/(4 pi^2) = p_hat . K(p) with K bounded as p -> 0; the lone doublet keeps a 1/p term. That needs sparse
+  sign(H) (Zolotarev) rather than dense eigh.
+
+## Smuggling review
+
+- Supplied: U(1)_Y and the 16's hypercharges (test inputs; as rule content they would fail gate criterion 2); the
+  kernel and m0 = 1.6; the factorised background class; the basis family, ranges, ridge and train/held-out split;
+  Luscher's theorem and its normalisation of T.
+- Forced: GW and the index theorem identities; the integers; sum m Y^3 = 0 and the eps^4 law, given the content.
+- Gate: N/A (no rule). Route A stays open: its U(1) part rests on a supplied theorem whose finite premise passes;
+  its non-abelian part is untested here.
+
+Uses: overlap-nonabelian (kernel, content, order-4 sums), overlap-from-walk (P_hat, kernel locality),
+repaired-kernel-anomaly (resolution limits, the kernel not used here), wizards SYNTHESIS A / w5 approach 3.
+Narrows: overlap-from-walk's reading of its 1e-3 remainder (consistent, not certified).

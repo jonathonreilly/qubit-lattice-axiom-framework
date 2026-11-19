@@ -1,0 +1,27 @@
+== A. exact chemistry (content supplied; sphalerons and Yukawas in equilibrium, carrier out of equilibrium)
+[PASS] A1 [T] symmetric-phase decoupling: B = (8Nf+4NH)/(22Nf+13NH)(B-L)_SM; total B - L = 0 is kept by uddn, so the sequestered nu_R holds L = (B-L)_SM = X and n_D/n_B = 79/28 = 2.8214; then L_SM = -51/79 X and L_total = B
+[PASS] A2 [T] broken-phase decoupling (Harvey-Turner): B = (8Nf+4(NH+2))/(24Nf+13(NH+2))(B-L)_SM = 12/37, n_D/n_B = 37/12 = 3.0833; the crossover freeze-out (131 GeV) lies between the two
+[PASS] A3 [T/E] carrier of B - L charge q: n_D/n_B = (1/q) x (79/28 or 37/12); the measured 5.364 +- 0.065 needs m_D = 1.784 (sym) / 1.632 (brk) GeV x q (q = 1; per-baryon mass m_p; 1.782 with the H+He mean mass): a target, set by chemistry
+== B. which object carries the sequestered B - L
+[PASS] B1 [T] of the 16 (SM links) exactly one Weyl state is link-free: ['nu^c']; under the Pati-Salam reading it sits in (4bar,1,2) and is not link-free: the cell holds no other carrier
+[PASS] B2 [E/M] the rules' nu^c is the Dirac partner of nu_L (Majorana mass Z4-forbidden), m <= 0.12 eV: Omega_D/Omega_b = (79/28) m/m_b <= 3.6e-10 (>= 1.5e-10 for the heaviest alone) vs 5.36, short by 1e+10, and hot: excluded as dark matter
+[PASS] B3 [D/E] a link-free bound state or condensate of mass m_D from a cell-scale contact term: I(0) = 0.759 finite, I(0) - I(M) = M^2 ln(1/M)/(4 pi^2 v^3) (slope check 1.000); 1.78 GeV = 8.5e-19 rad/tick needs 1 - g_c/g = 6e-36: no GeV scale without tuning
+[PASS] B4 [E] a confining copy is not in the rules (a non-abelian link needs exactly degenerate supplied copies; the heavy copy has no exact number); supplied: pure glue from alpha_s(cell) = 1/50.5 confines at 6e+05 GeV; identical light content gives Lambda' = Lambda_QCD, m_D/m_n = 1.90 needs 1/alpha'(cell) shifted by -0.71 (1.4%); an exact twin gives Omega'/Omega_b = 1.00 (68 sigma), Delta N_eff = 7.4 at equal T, mirror-atom sigma/m ~ 5e+07 cm^2/g
+[PASS] B5 [E] the cell-scale mirror family (Spin(10) pair square): lowest charged excitation 33.58 g = 7.1e+19 GeV at g = 1, so n_D/n_B would have to be 7e-20; no chemistry rational is that small, and its ground state is a full singlet (no charge to carry)
+== C. symmetric component (carrier made only by the transfer term, Gamma/H < 1, no link)
+[PASS] C1 [T] each transfer event makes one carrier or anticarrier, so n_net/n_tot = eps (event-averaged CP asymmetry) and with no annihilation Omega_D/Omega_b = (m_D/m_b)(79/28)/eps; eps <= 1 gives the bound m_D <= 1.78 GeV (sym), 1.63 (brk), with equality only if the symmetric part is removed; at eps = 1e-02-2e-01, m_D = 18-357 MeV
+[PASS] C2 [T/E] removal needs <sigma v> >~ 5e-26 cm^3/s and thermal contact: CL-3 links none (B - L survives only as Z4: no massless link), the cell-scale contact gives 1e-91 cm^3/s (short by 3e+65), and a freeze-in carrier never thermalises; Z4 forbids the Majorana mass (i^2 = -1), so no oscillation erases the asymmetry either
+== D. measured constraints for a link-free carrier at 1.6-1.8 GeV (eps-scaled masses alike)
+[PASS] D1 [E/M] direct detection: no link, so nucleon scattering is second order in the cell-scale uddD contact: sigma ~ 7e-183 cm^2 vs DarkSide-50 (2023) ~1e-41 and CRESST-III ~1e-39 near 2 GeV, and below the neutrino fog by > 80 orders: passes, and is never detectable
+[PASS] D2 [E/M] self-scattering through a cell-scale D^4 term: sigma/m = 2e-78 cm^2/g vs Bullet Cluster < ~1: passes; non-dissipative, unlike a mirror sector
+[PASS] D3 [E/M] BBN: produced near the cell scale and never thermalised, the carrier is non-relativistic and cold by BBN (warm-DM bound ~19 keV for this spectrum); rho_D/rho_rad at 1 MeV = 7e-07, Delta N_eff ~ 5e-06; the nu_R degeneracy xi ~ 79/28 eta ~ 2e-9 vs |xi_e| < 0.03
+[PASS] D4 [E/M] decays: Z4 and B - L leave D -> nbar pi0 (m_D > m_n + m_pi) through uddD, tau ~ 7e+52 s vs gamma/antiproton limits ~1e26-1e28 s; nucleon decay p -> pi+ nubar_R through the same term ~1e52 s vs > 1e41 s; induced nucleon decay needs the same contact squared: all pass
+== E. look-elsewhere
+[PASS] E1 [E] 80 chemistry rationals x 13 natural hadron masses: 1 products lie within 1 sigma of 5.364, and a random target in 2-20 gets one with P = 0.91: any such match is not evidence (the hit: 3 x m_Omega, from Nf = 1, NH = 2); the textbook 79/28 with 2m_p, m_d, a 1.88 GeV sexaquark misses by 4.4, 4.4, 4.6 sigma
+[PASS] E2 [T/E] with the symmetric part kept (C1) the ratio is (m_D/m_b)(79/28)/eps with eps free in (0, 1]: every target is reachable, so the only rule-level output is the bound m_D <= 1.78 GeV, not a value
+theorems: A1, A2, B1, C1 (exact rationals); finite: B3; estimates: A3, B2, B4, B5, C2, D1-D4, E
+supplied: one-family content x 3, NH = 1, full sphaleron/Yukawa equilibrium, the uddn-type transfer (and for D a new
+  link-free Dirac species, its mass and no nu_L mixing), eps, the cell-scale contact scale, hadron matrix element
+  beta = 0.0144 GeV^3 (lattice), the unit map; cited: Planck 2018, PDG, DarkSide-50 2023, CRESST-III, Bullet Cluster.
+elapsed_seconds 0.1
+TOTAL: PASS=16 FAIL=0

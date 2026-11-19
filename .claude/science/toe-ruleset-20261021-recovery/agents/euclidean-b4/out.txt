@@ -1,0 +1,33 @@
+== A. symmetry (exact)
+[PASS] A1 THEOREM dim-4 invariants [n_S, n_A, n_F photon]: spatial O [2, 0, 3], B4+ [1, 0, 2], B4 [1, 0, 1]; the spin lift exists and the Dirac form is quarter-turn invariant only at c_t = c_s | 3e-15 vs 0.14 at c_t/c_s = 1.2
+[PASS] A2 THEOREM of 266 two-generated subgroups of B4+ only B4+ fixes one dim-4 form for matter and light, and its binary lift has -1 in its commutator subgroup (no 1-dim spinorial rep); every subgroup with one allows photon anisotropy: one mode per 4D site plus a protected cone leaves >= 2 light tastes | 210 subgroups with one, min n_F 3
+== B. transfer matrix of the free B4 Wilson r=1 fermion (a_t = a_s = 1)
+[PASS] B1 THEOREM r=1 recursion R = [[(1+s^2)/B, -s.sig],[-s.sig, B]] = L L^dag (adjoint half-steps): Hermitian, det 1, eigenvalues e^{-+E}, E = 4D pole, positive for m > -1: T >= 0, H = -ln T Hermitian, U = T^{it} unitary with the Euclidean dispersion | residual 3e-15; min eig 0.146, 0.140 (m = 0, .3)
+[PASS] B2 THEOREM H has an inverse-square-root branch point (eigenvalue collision at -1) at cosh eta = ((3+m)^2+1)/(2(3+m)), eta = ln 3 at m = 0: quasi-local at the massless point, not finite range (the arcsinh(m) rate on main is the staggered number-operator form) | fit 1.109 vs 1.0986, 1.201 vs 1.1939; |h(25)| 2e-13
+[PASS] B3 FINITE Lieb-Robinson: max group velocity < 1 edge/tick; a point source at t = 10 leaks past |x| = t + d with weight falling exponentially in d | v_max 0.988, 0.749; leak d=0,2,4,8: 2e-03 2e-04 2e-05 5e-08
+[PASS] B4 THEOREM T as the odds step projects onto the vacuum and rescales the norm, so it cannot carry CL-2; U = T^i is unitary and commutes with T (1+1D Fock, 8 modes) | 1-F after 10, 30 steps 6e-02, 2e-06; norm x34.0 per step
+   [1 s]
+== C. one loop, Euclidean dressing: Wilson fermion + plaquette photon, Feynman gauge, xi = a_s/a_t, units e^2/16pi^2
+[PASS] C1 engine: Sigma(0) 16pi^2/e^2 = 51.43 (lit. 51.4347), I_G = Z0 .154933, Ward Pi(0) = 0, fermion IR log 2 (alpha/2pi per ln 1/m); vacuum polarisation: continuum integrand 4/3 per ln 1/m^2, Wilson offset converging | 51.431, 0.154926, 3e-12, 1.997; 1.3329; steps 0.49 0.39 0.27 0.17
+[PASS] C2 THEOREM at the B4 point xi = 1 the electron and photon one-loop speed shifts vanish identically | max 9e-13 at m = .4, .1
+[PASS] C3 FINITE off B4, kappa = d(c_e - c_gamma)/alpha is O(1) and negative, m-independent as m -> 0, and tends to -1.8 at continuous time (fermion-cones C3: -0.17..-1.0); the photon part is small | xi 1.25:-0.41 1.5:-0.68 2:-1.01 4:-1.47 8:-1.66 16:-1.74 32:-1.77 -> -1.80; m .4/.1/.05: -1.011/-1.008/-1.002; slope at 1: -1.90
+   [7 s]
+== D. chirality on the B4 lattice
+[PASS] D1 THEOREM 4D overlap (M = 1): GW exact, one light species (15 corners at D = 2), |D| along t = along x (B4), nonzero at every time separation: no nearest-slice transfer matrix of its own | GW 9e-16; |D(t=1,4,7)| 2e-01 2e-03 5e-05; rate 1.22
+[PASS] D2 THEOREM 4^4 with electric (z,t) and magnetic flux: overlap index = -Q; GW holds with random temporal links: exact chirality in electric backgrounds, unlike the 3D overlap (s-tick-dressing T5) | Q:index 1:-1 -1:+1 0:+0 2:-2; GW 7e-15
+[PASS] D3 FINITE free 2-point transfer positivity (Hankel of g4 G(tau >= 2), necessary): pass Wilson r=1, overlap M = .5, 1, DWF M5 = .5, .9; fail below; link RP (tau >= 1) passes all | fails: r=.5 -2e-01, naive -1e+00, ov M=1.5 -4e-03, DWF M5=1.5 -5e-03
+[PASS] D4 THEOREM Shamir DWF have the r=1 slice form (B Herm., C anti-Herm.); for any B > 0 the recursion is similar to L L^dag, so M5 < 1 gives positive physical-time transfer at every L_s; M5 > 1 gives negative modes; free m_res = (1 - M5)^L_s exactly; B >= 1 - M5 holds with any spatial links | M5 .5/.9/1.4: min B 0.56/0.16/-0.34, min R 0.22/0.15/-11.6; random U(1) links, M5 .9: min B 1.17; m_res(10) 9.77e-04, 1e-10
+[PASS] D5 FINITE 2D 3-4-5 (non-uniform flux, 16^2): indices -e exactly; anomaly densities cancel pointwise to a lattice artifact | residual/|5 q5| 2e-04
+   [8 s]
+== E. ESTIMATES (measured numbers supplied; not theorems)
+   no B4 (continuous time): |dc| 1.3e-02, photon decay above 6 MeV; x4e+16 LHAASO 3e-19
+   B4: dim-4 shift 0 at all orders; dim-6 (E a)^2 at 1.4 PeV (a = 5 l_P) 3e-25
+   cells 2|Phi| anisotropic (Earth surface 7e-10): |dc| 2e-11, decay above 164 GeV, x6e+07
+   cells 2|Phi| anisotropic (Sun at 1 AU 1e-08): |dc| 3e-10, decay above 43 GeV, x9e+08
+   cells 2|Phi| anisotropic (Galaxy 1e-06): |dc| 3e-08, decay above 4 GeV, x9e+10
+   DWF: m_res < m_e a = 2.1e-22 needs L_s >= 22 (M5 .9) or 73 (M5 .5): 88-292 modes per site
+[PASS] E1 arithmetic: non-B4 shift excluded by > 1e15; Earth-surface cell anisotropy by > 1e6
+supplied: 4D action (B4, r, M, M5, L_s), plaquette photon, Feynman gauge, one loop, e^2 = 4 pi alpha, cell anisotropy 2|Phi|,
+  a = 5 l_P, bounds. forced: T >= 0, quasi-local H (ln 3), B4 zero shifts, kappa != 0 off B4, >= 2 tastes, GW index, m_res.
+elapsed 8 s
+TOTAL: PASS=15 FAIL=0

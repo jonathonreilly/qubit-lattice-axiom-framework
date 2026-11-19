@@ -1,0 +1,34 @@
+== A. Berry flux of the spin-S coherent-overlap field on the refined cube surface (6N^2+2 sites)
+PASS: A1 [T] |<a|b>_S| = |<a|b>_1/2|^(2S) (spin-S coherent state = symmetric 2S-fold product), so every overlap loop phase is 2S x the spin-1/2 Pancharatnam phase = S x geodesic area; grid lines on a face project to great circles  [max dev 1.0e-15]
+PASS: A2 [T] for every N = 2..8 and S = 1/2, 1, 3/2, 2: each face carries exactly 2 pi S/3, no plaquette exceeds pi, and the Chern number C = 2S  [face dev 3.6e-15; max |plaquette| 1.05 rad; C(S=3/2) = -1,+3,+3,+3,+3,+3,+3,+3]
+PASS: A3 [T] N = 1 (CL-1's bare cell), S = 3/2: every face flux is exactly pi (= CL-1's -1 face phase); the principal branch sums to C = -1 (a non-symmetric lift); rotation-symmetric lifts give one m for all six faces, C = 3(1+2m): |C| = 3 is the minimal symmetric lift, the sign and m are not fixed by the cell  [face |flux|/pi = [1. 1. 1. 1. 1. 1.]; C = -1.000]
+== B. surface staggered Dirac H1 = (-1 faces) x (overlap phases); N_0 = levels below half the S=0 first level
+  S=0: N_0 by N=1..8: 0 2 0 2 0 2 0 2 | kernel (even,odd) 0,0 2,0 0,0 2,0 0,0 2,0 0,0 2,0
+  S=0.5: N_0 by N=1..8: 2 2 2 2 2 2 2 2 | kernel (even,odd) 1,1 2,0 1,1 2,0 1,1 2,0 1,1 2,0
+  S=1: N_0 by N=1..8: 4 4 4 4 4 4 4 4 | kernel (even,odd) 2,2 3,1 2,2 3,1 2,2 3,1 2,2 3,1
+  S=1.5: N_0 by N=1..8: 0 6 6 6 6 6 6 6 | kernel (even,odd) 0,0 4,2 0,0 4,2 0,0 4,2 0,0 4,2
+  S=2: N_0 by N=1..8: 4 8 8 8 8 8 8 8 | kernel (even,odd) 2,2 5,3 2,2 5,3 2,2 5,3 2,2 5,3
+PASS: B1 [F] near-zero count N_0 = 2|C| = 4S for every S >= 1/2 and N = 2..8 (two staggered tastes, each seeing the monopole): S = 3/2 gives SIX, not three  [S=3/2: 0,6,6,6,6,6,6,6]
+PASS: B2 [T] exact sublattice kernel: n_even - n_odd = 2 (N even: all 8 corners even) or 0 (N odd), flux-independent; for even N the kernel is (C+1, C-1): the eps-index is 2, the taste-summed count 2C; one sublattice never holds 2S  [imbalance 0,2,0,2,0,2,0,2; S=3/2 even N: (4, 2) (4, 2) (4, 2) (4, 2)]
+PASS: B3 [F] S = 3/2 gap to the next level ~ 1/N (gap x N -> const, monotone for N >= 4); odd-N zero-band width falls faster than the gap (gap/width grows)  [gap x N (N=2..8): 3.81,3.93,4.58,4.61,4.80,4.84,4.88; odd gap/width 13,200,363]
+PASS: C1 [F] control S = 0 (CL-1's own surface field, pi per unit face, no extra monopole): N_0 = 0 (odd N) or 2 = the graph imbalance (even N): CL-1's own block boundary carries no 3  [N_0 = 0,2,0,2,0,2,0,2]
+PASS: C2 [F] control H0 (overlap phases without the -1 faces): no Dirac structure; the level after the six lowest closes faster than 1/N (square-lattice Fermi line at E = 0), so no isolated index band  [level-7 x N at N=4,6,8: 0.405,0.097,0.026]
+== D. 10% random real hop disorder (|hop| x (1 + 0.1 u)), 3 seeds per N
+PASS: D1 [F] S = 3/2: N_0 = 6 for every N = 2..8 and seed; exact zeros >= graph imbalance (protected), the rest split but stay far below the gap  [max width x N 0.45, min gap x N 3.64]
+== E. the 24 cube rotations on the near-zero space (gauge-compensated, projective)
+  S=0.5 N=3: |chi| E:2,C3:1,C4:0,C2:2,C2':0  sum|chi|^2/24=1.00  half-turns commute
+  S=0.5 N=4: |chi| E:2,C3:1,C4:1.41,C2:0,C2':0  sum|chi|^2/24=1.00  half-turns anticommute
+  S=1 N=3: |chi| E:4,C3:1,C4:0,C2:0,C2':0  sum|chi|^2/24=1.00  half-turns anticommute
+  S=1 N=4: |chi| E:4,C3:1,C4:2,C2:0,C2':0  sum|chi|^2/24=2.00  half-turns commute
+PASS: E1 [T] every rotation is a site permutation times a site gauge commuting with H1 (sphere: fluxes fix the gauge class) and leaves the near-zero space invariant  [max |[O,H]| 4.0e-15]
+  S=3/2 N=3: |chi| E:6,C3:0,C4:0,C2:2,C2':0  sum|chi|^2/24=2.00  half-turns commute  C3 eigen-ratios (units w): [0. 0. 1. 1. 2. 2.]
+  S=3/2 N=5: |chi| E:6,C3:0,C4:0,C2:2,C2':0  sum|chi|^2/24=2.00  half-turns commute  C3 eigen-ratios (units w): [0. 0. 1. 1. 2. 2.]
+  S=3/2 N=4: |chi| E:6,C3:0,C4:1.41,C2:0,C2':0  sum|chi|^2/24=2.00  half-turns anticommute  C3 eigen-ratios (units w): [0. 0. 1. 1. 2. 2.]
+  S=3/2 N=6: |chi| E:6,C3:0,C4:1.41,C2:0,C2':0  sum|chi|^2/24=2.00  half-turns anticommute  C3 eigen-ratios (units w): [0. 0. 1. 1. 2. 2.]
+PASS: E2 [F] odd-N controls: the two tastes form the doublet E of O (90-degree turns swap the sublattices): S = 1/2 gives E (irreducible, ordinary), S = 1 gives E x E1/2' = G' (irreducible, half-turns anticommute)
+PASS: E3 [F] odd N, S = 3/2: the six modes are T1 + T2 = E x T1 (|chi| = 6,0,0,2,0 on E,C3,C4,C2,C2'; sum|chi|^2/24 = 2; ordinary): two triplets (continuum j = 1 per taste, the tastes differing by A2); in each the three-fold turn has eigenvalues {1, w, w^2}: the copies do NOT share one turn eigenvalue
+PASS: E4 [F] even N, S = 3/2: spinorial (half-turns anticommute), sum|chi|^2/24 = 2, |chi(C4)| = sqrt2: G' + E1/2' (dims 4 + 2) = continuum j = 3/2 + j = 1/2 (tastes see C +- 1): no triplet
+   verdict: C = 2S = 3 is exact for the smoothly refined cell field, but the surface Dirac count is 2C = 6 (tastes);
+   odd N gives T1 + T2 (each triplet has distinct turn charges -> turn-invariant masses degenerate, J = 0); even N
+   gives 4 + 2 spinor modes. CL-1's own boundary field (S = 0) carries no 3. The 3 needs a supplied boundary field: UNTESTED
+TOTAL: PASS=13 FAIL=0   (0.6 s)

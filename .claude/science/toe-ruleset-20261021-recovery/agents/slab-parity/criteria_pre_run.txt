@@ -1,0 +1,38 @@
+slab-parity: pass criteria written BEFORE any scratch run or runner (2026-10-24). Provenance: inputs read were floquet-pi-slab
+(note, runner, out), fold-selection-3d (note), twist-local-single (scope), the register's CL-1 Split paragraph and polar-split-reason,
+zoom-families (scope), and synthesis-8/morning-1024. Repo check: git grep origin/main (docs, scripts) for "odd layer count",
+"slab parity", "layer count parity" found nothing; no open PR on it.
+
+Question. In floquet-pi-slab the far wall's copy is set by the slab's net orientation n = (#F layers) - (#F^+ layers): the slab's
+turn-graded winding is W = n W_F, the bulk gap forces alternation so n = Ls mod 2 (in {0, +-1}), and n odd puts the q 1 mirror in the
+other copy. Does any ADOPTED rule force n odd (or fix the bond pattern)?
+
+Fact to rederive first (exact): W(stack) = sum_l sigma_l W_F for sigma_l = +-1 (F or F^+) with W(F^+) = -W_F, and for alternating
+stacks W = (Ls mod 2) W_F. So the question is exactly: what fixes the net orientation n?
+
+Candidates and predicted outcomes.
+ (a) Zoom ladder as the layer direction (one layer per rung, b = 2 splits, split belongs to the even tiling, polar).
+     Checks: (a1) the split's parent-site -> child-least-corner map sends parent sites of BOTH parent tilings onto child even-cube
+     least corners (2Z^3), so the parent's tiling bit is erased; (a2) the split passes the tick forward (half a half-tick before, half
+     after, no inversion), and the polar direction is the same at every generation, so the rung-to-rung map keeps sigma constant: the
+     ladder reading gives an all-F stack, W = N_rungs W_F, which is gapless (rederived); (a3) the rung count between the finest
+     (matter) and coarsest (edge) rung is log2 of supplied block sizes. Prediction: FAIL (orientation constant, count supplied).
+ (b) Termination on the selected cube fold. Check: (b1) exact theorem: for any unitary with no eigenphase at 0 or pi, the vacuum of
+     U^+ is the complement of the vacuum of U, so every cube total n -> |c| - n with identical variance: the fold read from the vacuum
+     is orientation-blind; numerically on CL-1's two-tiling tick (4^3 torus, eps = 0.3) for mu = +-0.2 and the fold limit mu = 2 eps;
+     (b2) control with power: mu -> -mu flips the fold while inversion does not (so the naive "sign of the mass angle" of U^+, which is
+     -mu, must be read as sign(mu/eps)); (b3) the tiling swap is a conjugation (same spectrum, same W), not an inversion, so a
+     fold-matched termination fixes a tiling bit that W does not see. Prediction: FAIL (both walls are on the same fold for every Ls).
+ (c) Layer = half-tick of one tiling. Checks: (c1) CL-1's half-ticks each commute with the (111) turn on the axis, so each has
+     W = 0 and the adopted tick has W = 0: a stack of adopted half-ticks has W = 0 for ANY count (q_mirror = q_light);
+     (c2) FREEZE (W_F != 0) has no turn-commuting layering (floquet-pi-slab B2), so its half-ticks carry no sector winding and the unit
+     of W is the whole tick; its period fixes half-ticks per tick (5), not the tick count. Prediction: FAIL.
+ (d) Consistency reading (not an adopted rule): "the slab's net tick (layers compactified) has the winding of the update's own 3D
+     tick". Prediction: with the adopted CL-1 tick (W = 0) it selects EVEN n (the wrong parity); with FREEZE as the update it would
+     select n = 1 (odd). Also exact: F^+ is no T3-commuting, K-continuous regauging of F (W differs), so the inverse layer is a
+     supplied orientation field, not in CL-1 (one universal step eps).
+
+PASS (synthesis) = some adopted rule forces n odd, stated with why it is not a choice in disguise. Predicted: FAIL for (a), (b),
+(c); (d) conditional only. Minimality 3 over 6: predicted NO (no candidate touches the family count).
+Every line of the runner reports a result (PASS = the computed fact holds); the synthesis verdict follows this file.
+Machine: < 150 MB, < 60 s, BLAS 1, nice 10; largest matrix 8 Ls (Ls <= 9) and 64 x 64 real-space tick.

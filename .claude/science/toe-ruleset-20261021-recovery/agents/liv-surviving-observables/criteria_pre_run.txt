@@ -1,0 +1,38 @@
+liv-surviving-observables: criteria fixed BEFORE any run (2026-10-26)
+
+Inputs (inherited, [F] upstream): E = p + m^2/2p + c p^3/E*^2, link band c_g = -S/24, light fermion
+(quark AND lepton, incl. neutrino) c_q = -S/6 + 1/24, S = sum n_i^4 in [1/3,1], <S>_sky = 3/5,
+E* = hbar c/2L = 1.217e18 GeV, L = sqrt(8 pi) l_P (kappa = 1).
+
+(A) Robustness of composite universality (agents/composite-dispersion B extended)
+ A1 3-body light-front longitudinal model (simplex grid x1+x2+x3=1, supplied pairwise Li-Maris-Vary-type
+    confinement -kap^4/(m_i+m_j)^2 d_ij(x_i x_j d_ij) + sum m_i^2/x_i), LIV lam sum c_i x_i^3.
+    Checks: Hellmann-Feynman first-order slope = <sum c x^3>_0 (rel err < 1e-3); c_B -> c_q at large lam
+    (within 5% at lam|c_q| = 1e3 M0^2); residual c_B(P)/c_q at 1e18, 1e19, 1e20 eV reported.
+ A2 Gluon-dressed: two Fock sectors |qqq> + |qqqg> (gluon c_g, supplied mass-like cost and contact
+    coupling g), same checks; plus grid convergence (two grid sizes, < 2% in c_B at 1e19 eV).
+ A3 Emission with the full eigenstate dispersion E(P) = P + M^2(lam(P))/2P:
+    p -> p gamma (photon c_g), p -> p pi0 (pion = 2-body q qbar ground state with its own flow),
+    deuteron-like nucleus (2 nucleons each carrying the computed nucleon dispersion) -> nucleus + gamma.
+    Rays axis / sky / body, P from 1e17 to 1e21 eV. Report open/closed.
+ A4 Leptons/photons, exact kinematics:
+    e -> e gamma (vacuum Cherenkov), gamma -> gamma gamma / 3 gamma (splitting), gamma -> e+e- (decay),
+    with thresholds per ray; who is faster (photon vs electron). gamma gamma_bg -> e+e- threshold shift
+    fraction at 1.4 PeV (LHAASO). Electron LIV/mass ratio in 1-v at 2 PeV (Crab IC electrons).
+(B) Surviving observables: E_QG,2 (convention v = 1 - (3/2)(E/E_QG,2)^2) per species/ray;
+    time-of-flight delays for GRB 090510 (31 GeV, z=0.903), GRB 221009A (13 TeV, z=0.151),
+    TXS 0506+056 neutrino (290 TeV, z=0.3365) with the Jacob-Piran n=2 integral (supplied LCDM
+    H0 = 67.4, Om = 0.315); margin (orders of magnitude) to quoted bounds (web-cited in note);
+    direction pattern; required energy/distance for a 1 s delay.
+
+Verdict rules (pre-registered)
+ EXCLUDED     : any computed rule-fixed effect exceeds a published bound that applies to its sign
+                and power, or an emission channel opens below an energy where the particle is observed
+                (p/nuclei to 1e20 eV, photons to 1.4 PeV, electrons to ~PeV).
+ TESTABLE SOON: the smallest margin to a current bound is < 2 orders of magnitude in the bounded
+                quantity (E_QG,2 or delay), or a sharp feature lies within reach of a running
+                instrument (<= 1e17 eV photons, <= 1e20 eV hadrons).
+ SURVIVES     : neither; report the margin and the most promising future test.
+ Any FAIL of an exactness/convergence check => no verdict on that sub-question.
+ Universality ROBUST if c_B(1e20 eV)/c_q >= 0.9 in A1 and A2 and all A3 hadron channels stay closed
+ on all rays to 1e20 eV; MODEL-DEPENDENT if it changes under the (m, kap, g) scan.

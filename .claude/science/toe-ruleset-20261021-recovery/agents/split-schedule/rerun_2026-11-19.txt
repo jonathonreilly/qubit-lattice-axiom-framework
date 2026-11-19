@@ -1,0 +1,32 @@
+== A. tick pattern and junction under the rules
+[PASS] THEOREM: fixed 4-volume V0 per record and the edge reading give T = V0/l^3, sin eps = sqrt3 V0/l^4; a split (2a -> a) multiplies the tick by 8 and sin eps by 16; a real step needs V0 <= a^4/sqrt3, the stability bound  x8, x16; V0/a^4 <= 0.0046..0.0231 (eps_max 0.008..0.04), eps_min = eps_max/16
+[PASS] THEOREM (continuum): slab action/T -> -12 l u^2 - 8 l u^4 = -3 l ldot^2; per slab at fixed V0 it is -(3/V0) l^4 l'^2, whose conserved energy is -3 V0 H^2 (H = l' l^2/V0): de Sitter, Lambda the integration constant  E = -3*l**4*lp**2/V
+[PASS] THEOREM: momentum per unit edge -D2 s / l -> F(u) = 12(atanh u + u A(u)) as T -> 0 (no tick in it)  F = 132*u**5/5 + 16*u**3 + 12*u; rel 6e-08
+[PASS] THEOREM: junction 2F(u_f) = F(u_c): u_f = u_c/2 + u_c^3/2 + ..., so H jumps by (Ha)^2, and x = Lambda a^2/3 maps to x + x^2/2: kick Lambda^2/rho*, rho* = 6/a^2, independent of the tick on either side  c3 = 1/2, c5 = 17/32; G = x**2/2 + x + O(x^3)
+== B. discrete Regge FRW at universal V0, pure Lambda, 4 splits (relative step ~ 1/1500)
+[PASS] rule U at universal V0: the constant is conserved inside every cycle (no drift; deviation O(c^2), c = H V0)  max |Lambda_n/Lambda_cyc - 1|/c^2 = 0.147
+[PASS] self-similar cycles: ticks per split N_k = N(Lambda_k) = (1/V0) int_a^2a l^3/(2u) dl with A(u) = Lambda l^2/12, so N depends on k only through the constant; N V0 is V0-independent  max rel 2e-07; V0/2: 3e-08
+[PASS] every split kicks the constant up by the cycle map G (sim vs leading order), -> Lambda^2/rho* as Ha -> 0  kick/(L/rho*) 0.9117, 0.9761, 0.9941, 0.9984 (Ha .4,.2,.1,.05)
+[PASS] THEOREM check: the kick is the same whatever the junction does to the tick (x8, x1, x1/2: T x8 vs lambda-split)  0.019492, 0.019493, 0.019493
+[PASS] the exact cycle map has G(x) > x for every x: no fixed point; G(x)/x -> 1 + x/2 at low and -> 2 at high density  G/x at 1e-6: 1+5.000e-07; at 1e3: 1.9975
+== C. drift of the schedule and the tilt
+[PASS] H is constant up to O((Ha)^2): a sawtooth falling (3/4)(Ha)^2 inside a cycle and jumping (Ha)^2 at the split, net +(Ha)^2/4 per split (Ha = 0.1)  jump +0.00989 vs 0.00979; inside -0.00733 vs -0.00750
+[PASS] ticks per split DEcrease: N_{k+1}/N_k - 1 = -(Ha)^2/4 (1 + O(Ha^2)): larger zooms are longer-lived (opposite to the owner intuition)  0.4: -0.02861 (0.715), 0.2: -0.00913 (0.913), 0.1: -0.00244 (0.976), 0.05: -0.00062 (0.993)
+[PASS] tilt n_s - 1 = -q log2(N_{k+1}/N_k) (q = 2: -2 eps) = +q (Ha)^2/(4 ln2) > 0 for every H: blue; at the tensor bound Ha < 1.93e-05 it is 2.7e-10 (q=2): n_s = 1, 8.4 sigma from 0.9649  eps -1.34e-10/split; measured magnitude would need Ha = 0.234 (q=2), 0.160 (q=4), wrong sign
+[PASS] running: the kick schedule gives alpha_s = (n_s-1)(Ha)^2/(2 ln2) ~ 1e-19 (0.7 sigma from -0.0045 +- 0.0067, no tilt); a diluting component gives a red drift but alpha_s = 3(1+w)(1-n_s)  7e-20; radiation +0.140 (21.6 sigma), dust +0.105 (16.4 sigma); 2 sigma needs w < -0.915
+== D. consistency
+[PASS] exit: none. The rules' only per-split change is the upward kick, so Lambda_k = Lambda_0/(1 - k Lambda_0/rho*) runs to the expansion limit; no radiation era  runaway after 2/(Ha)^2 = 5.4e+09 splits at the tensor bound
+[PASS] e-folds: unbounded (ln2 per split); 60 e-folds = 86.6 splits; ticks per split at the tensor bound  N = 7 sqrt3/(3 Ha sin eps_max) = 5.2e+06 (eps_max .04) .. 2.1e+05 (sin 1)
+[PASS] Lambda bookkeeping: 87 splits add 87 x 1.9e-10 of Lambda_inf; rule U keeps Lambda_inf itself, so ending needs matter creation that cancels it to 1e-111 (the empty vacuum creates none)  rho_inf 1.8e-12, rho_L 1.13e-123 rho_P: ratio 1.6e+111
+[PASS] A_s: no source. The empty vacuum is invariant under every half-tick and the split, so CL-2 records nothing new; the geometry is homogeneous; a split fires on its edge, and a one-slab delay moves N_e by <= (Ha)^2 H T_s/8  2e-17 e-folds vs 3.81e-05 per level for A_s = 2.1e-9
+[PASS] the x16 step jump at a universal-V0 split flips ~0.2 eps_f^2 of every relativistic light mode into the other band (0.06 for the fixed-tick split, O(K^2) for a kept step); a filled sea would be heated at the cell scale every split  eps 0.3: 0.219, 0.064, eps 0.1: 0.221, 0.063
+[PASS] ESTIMATE: with the empty vacuum a flipped fermion loses 2E, which rule U books into Lambda; a hot era from T_max >= 5 MeV then needs  eps_max < 2e-19 for the measured Lambda (K there 6e-21 << eps)
+[PASS] ESTIMATE: edges grow at H0 between splits today; with the cell coupling fixed, the charged content's induced running moves alpha by alpha (2/3pi) sum Q^2 per e-fold of edge  alpha-dot/alpha = 8.5e-13/yr (SM charges) vs clock bounds ~1e-18/yr, unless every coupling is held at a proper reference
+== E. what a red tilt needs (supplied transfer laws)
+[PASS] THEOREM: with N_k = N(Lambda_k), "larger zooms are shorter-lived" <=> the constant FALLS at each split; the measured tilt needs it to fall per split by  q=2: 2.40%, q=4: 1.21%; the rules give a rise of Lambda/rho*
+[PASS] constant transfer Q per split (supplied): Lambda_k = Q(k_end - k) gives eps = 1/(2 N_e) exactly in the continuum, exit when used up, n_s = 1 - q/(2N_e), alpha_s = -q/(2N_e^2)  N_e 57: q=4 0.9646 (alpha_s -6.2e-04), q=2 0.9823 (4.1 sigma); N_e not derived
+[PASS] with the single-clock amplitude H^2/(8 pi^2 eps) the drift is eps itself and r = 16 eps: the converged drift (N up 0.6-1.2% per split) gives r = 0.14-0.28 > 0.036; a red tilt with r < 0.036 needs eps < 0.0023 and a changing drift  r = 0.14 (q=4), 0.28 (q=2); proportional transfer: constant tilt, no exit
+supplied: frustum carrier and junction hinges, the trigger, universal V0, initial Lambda_0, kappa = 1, the unit map,
+  the CL-1 block for flips, SM charges, transfer families, q, measured numbers.
+elapsed_seconds 0.8
+TOTAL: PASS=23 FAIL=0

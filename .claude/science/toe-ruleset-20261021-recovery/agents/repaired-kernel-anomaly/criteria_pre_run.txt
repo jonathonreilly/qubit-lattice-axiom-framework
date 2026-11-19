@@ -1,0 +1,39 @@
+repaired-kernel-anomaly: pre-set criteria (written 2026-10-24 BEFORE any code or run in this folder)
+
+Kernel (the only change). Replace the old cube-walk Wilson kernel (v = r = 1 in all four directions, m0 = 1.6) by the
+repaired T-even kernel of new-tick-recheck 3b/3c: spatial hop sin K / sqrt3 (v_s = 1/sqrt3), spatial Wilson term the
+tick's scalar 1 - f (r_s = 1/3), time v_t = r_t = 1; X = sum_mu [ (v_mu g_mu - r_mu) T_mu U / 2 - (v_mu g_mu + r_mu) T_mu^+ U^+ / 2 ]
++ (sum_mu r_mu - m0); H = g5 X; D = 1 + g5 sign H; P_hat_- = (1 + sign H)/2. Everything else (backgrounds, seeds, content,
+fluxes, global forms, contrast sets, thresholds) copied from overlap-nonabelian and overlap-colour.
+
+m0 choice (resolution, not a fit). m0 must lie in the one-species window 0 < m0 < 2/3 (check K0: exactly one zero of the
+free D on 8^4). It is chosen ONCE by a U(1)-only pre-scan, m0 in {0.2, 0.3, 0.4, 0.5, 0.6}: the value for which a single
+charge-one component in unit-flux backgrounds f in the (12) and (34) planes gives index -f^2 for f = 0..3 on 4^4 and
+f = 0..1 on 3^4, preferring the largest minimum |H| eigenvalue. No anomaly quantity enters the choice. If no m0 in the
+window resolves f = 3 on 4^4, say so; then (memory: doublet dim <= 3072) the SU(2) A-section stays on 4^4 with only the
+fluxes that ARE resolved reported, and any unresolved flux is reported as a resolution failure, not hidden.
+
+Criteria copied (kernel-adjusted only where noted):
+SU(2) x U(1) (overlap-nonabelian):
+ NA1 4^4, SU(2) flux nW = 2 x random SU(2)xU(1) (pert 0.15): every index = -sum f^2; family sum mult Y idx = 0; L alone != 0.
+ NA2 4^4, (SU(2)xU(1))/Z2 half-flux nW = mY = 1: indices Q,L,u,d,e,nu = -1,-5,-4,-1,-9,0 (= -sum f^2); family sum = 0; L != 0.
+ NA3 one Q doublet index odd in NA2; 3 Q + L even.
+ NB3 3^4 scan eps = 0.2, 0.1, 0.05: lone doublet (a) exponent within 0.3 of 2, family (b) within 0.4 of 4, in Y and SU(2).
+ NB4 exact charge sums (unchanged arithmetic).
+ NC1 3^4 Q doublet, eps 0.3: GW, g5-hermiticity, P_hat projector, D P_hat_- = P_+ D, all < 1e-12.
+ NC2 pseudo-reality: Y = 0 doublet SU(2) density < 1e-12 at every site; Y-odd / Y-even parities < 1e-12.
+ ND1 fixed-basis Weyl phase finite difference = -(1/2) sum omega tr(T g5 D) to 1e-6 relative.
+ Dropped for the time budget (stated, not hidden): NB1/NB2 on 4^3 x 3 (the eps-scan NB3 tests the same eps^2-vs-eps^4 law).
+SU(3) x SU(2) x U(1) (overlap-colour), all on 3^4:
+ CA1 Cartan flux diag(1,-1,0) x random pert 0.15: every index = -sum f^2; family sum Y idx = 0; contrasts = charge prediction.
+ CA2 Z6-twisted flux (1/3,1/3,-2/3), (1/2,-1/2), 1/6 per 6Y: same criteria.
+ CA3 component indices idx(f) = -f^2 for f = -1, 0, 1; colour- and T3-weighted integrated anomalies vanish for family,
+     not for no-u^c / +X (colour) or quarks (weak, CA2).
+ CA4 global-form arithmetic (kernel-independent).
+ CB1 pure SU(3) eps 0.3: lattice C (antitriplet = -triplet) < 1e-12; family C and Y densities < 1e-12; no-u^c, +X > 1e-5.
+ CB2 pure SU(2): family Y density < 1e-12; quarks > 1e-5.
+ CB3 pure U(1)_Y scan: family |s - 4| < 0.4; lone Q, quarks |s - 2| < 0.3.
+ CC1/CC2 generic background scan: predicted-anomalous direction |s - 2| < 0.3, predicted-cancelled s >= 2.7, all 15 cells.
+ CD1 u^c antitriplet: GW, hermiticity, projector < 1e-12.
+Kernel checks: K0 free kernel at the chosen m0: GW < 1e-12 and exactly one zero on 8^4.
+Reporting: old-kernel (m0 = 1.6) values are quoted from the old out.txt files for comparison only (no criterion).

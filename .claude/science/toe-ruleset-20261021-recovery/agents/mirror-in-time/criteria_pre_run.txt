@@ -1,0 +1,34 @@
+mirror-in-time: pre-set criteria (written 2026-10-24 BEFORE any code ran). Failures are results.
+
+Construction under test: FREEZE (twist-local-single, family-class tick, W_F = (-2,1,1)) rebuilt inline exactly as in
+floquet-pi-slab; CL-1's plain cube tick U1 (eps 0.3) as control; CPT-type map = (unitary, K -> -K, U -> U^dagger),
+the element kept by the 96-element group (t-breaking-tick-lowenergy).
+
+Q1 (pi partners = CPT images? time doublers? gauge coupling?)
+ Q1a PASS ("pi partners ARE the CPT images") iff the CPT-type intertwiner X maps the K = 0 node space into the
+     R node space. Predicted: FAIL (X fixes K = 0 and R and quasi-energies 0 and pi, so it maps each node to itself).
+ Q1b PASS ("time doublers") iff an on-cell K-independent S exists with S U_F(K) S^-1 = -U_F(K + R) for all K
+     (residual < 1e-9 at 12 random K). Predicted: PASS.
+ Q1c "vector-like pairing with the light Weyl" PASS iff the pi partner of the light Weyl has the OPPOSITE hand or
+     opposite turn charge. Predicted: FAIL (same hand, same turn charge, same charges under the full on-cell
+     commutant): a copy, not a mirror.
+Q2 (mirror at pi on the same wall; decoupling; anomaly)
+ Q2a Hand sum rule: net hand at quasi-energy 0 = net hand at pi = nu3 (3D winding). PASS iff nu3(FREEZE) = 0 (|.| < 0.05
+     of an integer, numerically) with node hands summing to 0 at both 0 and pi, AND nu3 = +-1 for the SU(2) degree-1
+     test map with net hand +-1 at BOTH 0 and pi (same sign). Predicted: PASS. Consequence: a mirror at pi alone is
+     impossible for any charges; allowed content = each gap separately obeys sum h = nu3 and sum f = W.
+ Q2b "pi modes decoupled at low energy" PASS iff the half-filled interval vacuum can have its filling boundaries
+     away from the pi node without a Fermi surface. Predicted: FAIL (the light band covers all quasi-energies, so a
+     nodal half-filled vacuum has boundaries at 0 and pi; one of the two sectors is inverted).
+ Q2c "0 and pi sectors cancel each other's anomaly" PASS iff the pi node content has opposite hand-weighted charges.
+     Predicted: FAIL (they are equal: they double).
+Q3 (CPT-mirror universe)
+ Q3a PASS iff on the one-cube start tick (CL-1 U1 at the all-antiperiodic twist, 8 modes, Fock 256) a many-body
+     map Theta with Theta G Theta^-1 = G^-1 fixes the half-filled vacuum and maps occupation configurations to
+     configurations, so Born record statistics at -t and +t coincide. Predicted: PASS.
+ Q3b "less information than a one-sided past hypothesis" PASS iff the two-sided reading removes a supplied datum.
+     Predicted: FAIL (same boundary datum; one clause reworded).
+ Q3c BFT predictions: report per prediction CONTRADICTED / CONSISTENT / NEEDS SUPPLIED STRUCTURE by register text.
+     Predicted: heavy Majorana nu^c DM contradicted by the Z4 of B - L (Dirac only) and needs a hand-added parity;
+     lightest neutrino massless consistent; r ~ 0 consistent.
+Overall synthesis verdict: "mirror in time carries the mirror" = FAIL expected.

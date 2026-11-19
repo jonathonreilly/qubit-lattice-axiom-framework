@@ -1,0 +1,55 @@
+d4-frame-stability: pre-registered criteria (written 2026-10-26 BEFORE any computation in this folder)
+
+Object: the frame doublet of d4-frame-modes / d4-gravity: rescale the three orthogonal root 4-frames
+(a1,a2,a3), a1+a2+a3 = 0, spokes fixed, on the D4 cone (Delaunay 16-cells coned from centres),
+time t = (1,1,0,0)/sqrt2 along a root.
+
+Two Lorentzian readings are distinguished and both reported:
+ (R-a) lattice-QFT reading: Euclidean hinge sum on the W(F4) lattice, real time by continuing the
+       momentum (k_t -> i E). This is the reading of d4-gravity R3-R5 and frame-modes B3.
+ (R-b) Lorentzian Regge reading (the task): the lattice itself is Lorentzian. Background constant
+       metric g_L(lam) = P_perp - lam t t^T (tick root timelike, s_tick = -2 lam). Squared lengths
+       s_e = d^T g_L d. Regge action = analytic continuation of the Euclidean hinge sum along
+       g(phi) = P_perp + lam e^{i phi} t t^T, phi: 0 -> pi (supplied: Sorkin / Barrett-style
+       Lorentzian Regge; every squared volume along the path is A + e^{i phi} B with A,B >= 0, so the
+       branch rule is sqrt(z + i0)). Second/third order via Schlaefli: d2S = Sum_h dA_h d eps_h,
+       d3S along a line = Sum_h (eps'' A' + 2 eps' A''). No angle values (no branch of arccos) needed.
+       Primary lam = 1 ("all 24 roots alike" in |s|, d4-gravity M2 carried over). If any triangle or
+       tetrahedron is null at lam = 1, primary = both sides lam = 1 +- 0.1 and the verdict must agree.
+       Robustness scan lam in {0.5, 0.8, 1.25, 2, 2.5}.
+
+Validation gates (must PASS before any verdict is read)
+ V1 my squared-length Schlaefli Hessian at g = delta equals the existing length Hessian Q(K)
+    (converted by diag(2l)) to rel 1e-5 at K = 0 and a generic K.
+ V2 continued Hessian at g_L is i x (real symmetric) to rel 1e-8; sin^2 + cos^2 = 1 for all
+    continued dihedrals.
+ V3 exact zeros at K = 0 >= 22 (12 vertex gauge + 10 constant metric) in both backgrounds.
+
+(1) Stability verdict (R-b, primary lam). Doublet k = 0 mass matrix M_y = Schur complement of the
+    continued frame rescaling (delta s_r = u_g s_r on roots of frame g, spokes fixed) over the
+    non-zero complement; static gradient coefficient Z_s from the K-dependence at omega = 0; tensor
+    static coefficient Z_T from the TT block. m2 = M_y / Z_s, in the tensor sign convention
+    (healthy: Z_s same sign as Z_T).
+    STABLE     if both m2 eigenvalues > +1e-3 (lattice units) and Z_s has the tensor sign;
+    MARGINAL   if any |m2| < 1e-3 (then the cubic decides: nonzero cubic = inflection = marginal);
+    TACHYONIC  if any m2 < -1e-3;  GHOST flagged if Z_s has the opposite sign to Z_T.
+    Cross-check: real-time census of the Lorentzian Hessian (roots in z = e^{i omega/sqrt2}, real
+    spatial k): stable iff the doublet-dominated roots lie on |z| = 1.
+    Also report (R-a): the B3 strain result read with the same relative-sign rule (expected tachyonic
+    under strain, massless at the W(F4) point).
+(2) If TACHYONIC: endpoint = stationary point of the relaxed nonlinear static energy along the unstable
+    direction (cubic + quartic from d3S, d4S); report scale (m2 in lattice units, y*), whether W(F4)
+    is lost (stabiliser order of the strained root-length set), and the residual dim-6 coefficient of
+    a W(F4) scalar kernel Sum_r w_r (1 - cos r.p) at the endpoint (anisotropy of the p^4 term, zero on
+    unstrained D4 per #10094). If STABLE: report the barrier (cubic) and that W(F4)-breaking is only by
+    the slicing itself.
+(3) Metric-only amendment: (a) nonlinear removal: for frame-rescaled lengths with spokes fixed, the
+    least-squares distance to the metric-read image is > 0 for all u != 0 and the only metric fitting
+    the spokes is g = delta (exact). (b) birefringence: real-time light roots of the RAW metric block
+    Mread^T Q Mread (no gapped modes, no doublet), method validated by reproducing d4-gravity's
+    A = 1/6 (axis), 0 (body diagonal) on the full model. SURVIVES if |A_axis| > 1e-3 with zero
+    polarisation average and A(body diagonal) ~ 0, for the line-integrated reading and for the
+    midpoint reading (control; the O(k^2) coefficient is reading-dependent and both values reported).
+
+Verdict labels: STABLE / UNSTABLE (endpoint) / REMOVED-BY-AMENDMENT (the latter if (3a)+(3b) PASS,
+reported in addition to the (1) label). Smuggling gate reported explicitly.

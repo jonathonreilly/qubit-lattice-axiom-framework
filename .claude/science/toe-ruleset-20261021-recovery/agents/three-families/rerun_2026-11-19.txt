@@ -1,0 +1,29 @@
+== A. every 3 the CL-1 symmetry permutes is the axis set
+[PASS] A1 6^3 torus: tiling-pair group 1296, update group 648, both transitive; site stabiliser D3 (6) and C3 (3); the 4 cosets of the translation lattice T are the 4 body diagonals, permuted as all of S4
+[PASS] A2 the 8 aligned 2^3 tilings form site-C3 orbits 1+1+3+3: only CL-1's two are C3-fixed (no third tiling); the other six are 3 Margolus pairs permuted exactly as the 3 axes (all of S3)
+[PASS] A3 no covariant 3-colouring: no block system with 3 blocks (either group); exactly, no nonzero F3 functional on T transforms by a character, so every 3-element orbit is the axes (O -> S3); colourings x+-y+-z mod 3 form one 4-orbit  block counts [1, 2, 4, 8, 12, 24, 27, 36, 54, 72, 108]
+[PASS] A4 Schur on any axis triplet: the four phased orbits Ind(D4 -> O) are T2 (1), T1 (1), A2+E (2), A1+E (2) (commutant dims): 2-transitive, so at most 2 levels; e, mu, tau need 3. On 4^3 both groups have 4 one-dim characters (Gamma or R, times A1 or A2): three of them would be a non-degenerate 3, but no rule picks 3 of 4  (6^3: 4, 2; the update group's R needs 4 | L)
+[PASS] A5 colour is that 3: functions on Z^3/T = V4 are A1 + T2 (lepton + colour of the rung-1 cell), T2 = its 3 nontrivial characters (momenta pi(1,1,0), ...); nothing geometric is left for families
+== B. the site C3 and its labels
+[PASS] B1 spin 3/2 along the site diagonal, order-3 lift of its C3: 1, 1, w, w^2 (pair m = +-3/2, w: m = 1/2, w^2: m = -1/2)
+[PASS] B2 even and odd cube see a site along opposite diagonals (m -> -m): the C3 phase agrees only for m = +-3/2; the pair group's site half-turn inverts the C3, so the label is real: one site label, not three
+[PASS] B3 corner-state hops: (3/2,3/2) faces -1, W^2 = 1; (3/2,1/2) zero edge overlaps (cos b = 1/3 is a node of d^3/2), no hop; (1/2,+-1/2) faces e^(-+i pi/3), ||W^2-1|| = 1  ||W^2-1|| 3e-15, min overlap (3/2,1/2) 3e-16
+[PASS] B4 m = +-3/2 corners give 2G3/2 = E1/2 x 2E, m = +-1/2 corners E1/2+E5/2+G3/2; a C3 acts on the CL-2 copies as w x4, w^2 x4: the copies are the complex labels, label 1 is absent; odd rotations swap w, w^2, only A4 (12 even ones) separates them  labels {1: 4, -1: 4}
+== C. partition schemes, cells and zoom by 3
+[PASS] C1 uniform cubic partition schemes on aligned 2^3 cubes have 2, 4, 6 or 8 tilings, never 3 (no 3-half-tick tick); 3^3 tilings offset along a diagonal keep 6 of 24 rotations, and 3^3 cubes are site-centred  sizes [2, 4, 4, 6, 8]
+[PASS] C2 a (2m)^3 cell has m C3-shells, each exactly 1:1:3:3, and m(m^2-1)/3 free orbits (m = 1..4): 3 shells need m = 3 (zoom 3), 2^n cells have 2^(n-1); free orbits carry the same irreps  6^3 cell (11, 11, 16, 27, 27)
+[PASS] C3 the site-centred 3^3 cell is (A1,A2,E,T1,T2) = (4,1,2,3,3): 3 triplets of each kind but 4 + 1 singlets, not 3 generations
+[PASS] C4 zoom 3: (2pi/3)Z^3 folds in O-orbits 1, 6, 8, 12, corners obey 3K = K, only fine Gamma stays light: no new copy  next |3w| 0.123, 1.032
+== D. rungs: the three-zoom hypothesis
+[PASS] D1 cell-pattern levels cos w_n = ((3-n) cos mu + n cos 2eps)/3 (n pi components); two ticks double the per-tick mass, keep c^2: rung readings of one field have one physical mass (ratio 1)  residual 1e-14, c^2 0.02596 -> 0.02596
+[PASS] D2 species written at rung n with one per-tick mass weigh mu/(2^n tau): finer is heavier, tau finest; consecutive rungs give 2, 2; measured log2 ratios 7.6919, 4.0719 (sqrt-mass 3.846, 2.036) are not integers; the best gaps 8, 4 give 256 (+23.8%, 1.1e+07 sigma) and 16 (-4.86%, 960 sigma); no integer zoom works (neither ratio is an integer)
+[PASS] D3 a rung factor per family gives one step in every sector; measured: up 589, 136, down 19.9, 44.7, leptons 206.8, 16.82 (s/d against mu/e: x10.4), not a rung property
+[PASS] D4 dressing in the rules: link self-energy splits generations by (3 alpha/2pi) ln ratio = 0.019, 0.010, gravity by <= m/M_P = 1.5e-19; consecutive rungs need x103, x8.4
+[PASS] D5 windows: a cell is exactly one generation only at rung 1 (rung 2: 4 patterns + 4 E + 8 T); a rung-N cell is the N-fold product of the 2^3 pattern (rung 3 (24, 24, 40, 64, 64) vs 3 generations (3,3,0,3,3)); Compton rungs 72.0, 64.3, 60.2; pattern levels (top 2eps) resolve for n <= log2(theta/2eps): eps = 0.04 gives 2, 3, 4, 5 for theta = 1/2, 1, pi/2, pi; 3 needs eps in (theta/32, theta/16], a supplied threshold, and it counts readings of the same states; a species written at its own rung keeps its levels at 2eps per own tick, so it has no window
+[PASS] D6 each species number commutes with its tick (multiplet leak 0) and CL-5 couples to conserved currents: no rung-to-rung decay, heavier rungs stable; the imported law G_F^2 m^5/192pi^3 gives 2.187 us and 290 fs (measured 2.197 us, 290.3 fs)  leak 1e-16
+[PASS] D7 a 4th rung: finer gives tau' 3.55, b' 8.4, t' 345 GeV, coarser e' 0.255 MeV; its neutrino keeps the family ratio and stays light: N_nu = 4 (124 sigma from 2.984 +- 0.008); escaping needs >= 11.3 rungs; short life hides nothing (tau' 9.1 fs; Gamma = m at 1746 GeV); the one exact edge: no rung finer than 1
+== measured (comparisons only): CODATA m_mu/m_e; PDG 2024 m_tau, quark masses (MSbar), G_F, lifetimes; LEP N_nu
+supplied: CL-2 (eps, mu), rung readings, species per rung (D2), theta (D5), a = sqrt(8 pi) l_P, weak-decay law (D6-7)
+elapsed_seconds 2.4
+
+TOTAL: PASS=20 FAIL=0

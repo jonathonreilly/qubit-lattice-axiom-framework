@@ -1,0 +1,29 @@
+== 1. hole types and frames (exact)
+PASS C1a D4*/D4 = Z2xZ2; its 3 nonzero classes are deep holes (distance 1, 8 nearest events each) | |W(F4)|=1152, preserves D4: True
+PASS C1b W(F4) -> S3 on hole types (triality), kernel W(D4); -> S3 on the 3 root frames; joint S3 x S3 | hole image 6, kernel 192; frames 3, image 6, kernel 192; joint 36
+PASS C7a among D_n (n=3..12) the three nonzero D_n*/D_n classes have equal norm (triality-equivalent) only at n=4 | min norms (v,s,c) = (1, n/4, n/4); D4 has exactly 3 nonzero classes, Out(D4)=S3 (not 6)
+== 2. time along a root (exact)
+PASS C2 Stab(time root): hole-type S3 survives WHOLE; frame S3 -> S2 (tick frame fixed) | |Stab|=48 (+-t: 96); image on holes 6, on frames 2, joint 12 (+-t: 12)
+   reason: W(D4) (acts trivially on holes) is already transitive on the 24 roots, so 48/8 = 6
+== 3. light species of free overlap fermions (finite tori, exact zeros)
+   D4* nearest vectors: 24 (8 per nonzero class: [8, 8, 8]; none in class 0)
+   fine D4* (events + holes), W level: species  N=4 [0:1, 24:12, 28:24, 32:3]  N=6 [0:1, 24:12, 27:32, 32:3]
+PASS C3a the 3 hole characters k = 2pi g are naive zeros of equal Wilson mass and k=0 chirality, but they are the TOP level | W = 32 on both tori, chirality [1, 1, 1]; below them sit 36+ doublers
+PASS C3b [F] fine D4* overlap light species across every m0 window: never exactly 3 (the triplet only joins last) | N=4: m0 [12.0, 26.0, 30.0, 34.0] -> species [1, 13, 37, 40]
+   holes-only, nearest (inter-class) links only: k=0 class Wilson eig [0.0, 12.0, 12.0]; W level: species N=4 [0:1, 8:33, 10:12, 12:2] N=6 [0:1, 8:57, 10:12, 12:2]
+PASS C4a holes-only, nearest links: 1 + 2 at k=0 (doublet W=12) but doublers sit BELOW it -> no window with exactly 3 | lowest nonzero levels 8, 10 < 12
+   holes-only, both shells (nearest + D4 roots): k=0 class Wilson eig [0.0, 12.0, 12.0]; W level: species N=4 [0:1, 12:2, 22:36, 24:9] N=6 [0:1, 12:2, 22:12, 24:9]
+PASS C4b [F] holes-only, both shells: window W in (12, 22) gives EXACTLY 3 light species, all at k=0, = the triality permutation rep 1+2 | m0 = 17: species 3; off-k=0 min|lambda(D_ov)| = 0.303 (1500 random k)
+PASS C4c same chirality and isotropic for all three (class kinetic matrix (J - 1) + 6: eig 5, 5, 8 > 0, times 1_4) | chosen: matter off the event class, the second link shell, and the m0 window (m0 < 12 gives 1)
+== 4. zoom fixed point (analytic, from the #10098 form)
+   G*(p) = sum_{l in 2pi D4*} Pi(p+l)^2 (-i g.q + m)/(q^2+m^2): a light pole only at q = p + l = 0, i.e. one per
+   continuum field placed. Blocking cannot multiply species; the count is an input of the field content.
+PASS C5 zoom fixed point: light-species count = number of continuum fields (RG invariant), no geometric multiplicity | analytic (image sum); #10098: no doublers on D4
+== 5. mixing under the surviving symmetry (exact, Schur)
+PASS C6a exact triality S3 on hole labels: commutant {I, J} -> masses 1 + 2 (doublet exactly degenerate), no observable mixing | commutant dim 2; up masses [2.756 0.366 0.366]; degenerate pair splitting 0.0e+00
+PASS C6b frame S2 (time-broken frames): masses 1+1+1 but the S2-odd family is unmixed; Jarlskog J = 0 | up masses [2.438 0.661 0.518]; zero |V_ij| entries 4/9; J = 1.5e-34
+   neutral current: gauge acts internally, so its family matrix is the identity in every basis (no FCNC);
+   that is automatic and is not a selection rule of the label. Charged mixing needs the label symmetry broken
+   differently in the up and down mass terms; the root slicing does not break triality at all (C2).
+   runtime 4.5 s
+TOTAL: PASS=12 FAIL=0

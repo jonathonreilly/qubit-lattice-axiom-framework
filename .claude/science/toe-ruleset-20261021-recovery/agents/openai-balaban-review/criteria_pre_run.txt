@@ -1,0 +1,29 @@
+Pre-registration (written 2026-10-26 before any computation), openai-balaban-review check (3).
+
+Question: Balaban's first analytic input is that the fluctuation covariance after one gauge-covariant block step,
+C_A = (-Delta_A + a Q_A^dag Q_A)^-1, decays exponentially with a rate bounded below uniformly in small-field backgrounds A.
+Does the same hold for the D4 factor-2 block (weights 1, 1/2, 1/8; closed coarse Voronoi cell), and how does it compare
+with the hypercubic factor-2 blocks?
+
+Model (supplied): scalar field, U(1) link angles on the fine torus (real angles, gauge transform adds lambda(y)-lambda(x)).
+-Delta_A ~ p^2 on both lattices (D4: (1/6) sum over 24 roots; Z^4: 8 neighbours). a = 1. Q_A: coarse value at X =
+(1/16) sum_e w(e) T(2X -> 2X+e) phi(2X+e), with T = exp(i * mean angle over all shortest lattice paths) (Balaban's abelian
+averaging of angles). Kernels: D4 (1, 1/2, 1/8 on 0 / roots / norm-4); Z^4-sym (prod_mu {1 if e_mu = 0, 1/2 if +-1}, the
+closed-cell analogue); Z^4-cube (uniform 1/16 on {0,1}^4, the corner block, Balaban L = 2 analogue).
+Backgrounds: free; iid Gaussian link noise tuned so that eps = max_p |1 - U_p| = 1/30, 0.3, 1.0 (fine plaquettes: D4
+triangles, Z^4 squares); constant flux Q = 1 (twisted); Q = 1 + noise at eps = 1.0. Exploratory large field: uniform
+random link angles (eps ~ 2).
+
+Criteria:
+C0 code: Q_A 1 = 1 at A = 0 (partition of unity) on each kernel; gauge covariance C_{A+d lambda} = L C_A L^dag to 1e-8
+   (CG tolerance); C_A Hermitian.
+C1 D4 uniformity: decay rate of the envelope of |C_A(x, x0)| >= 0.8 x free rate in every small-field background (eps <= 1,
+   Q = 0, 1).
+C2 Z^4 uniformity: same for both hypercubic kernels.
+C3 gap: lowest eigenvalue of -Delta_A + a Q^dag Q >= 0.5 x free lowest in every small-field background, each kernel.
+C4 comparison (measurement, not a pass/fail on the sign): rates in common coordinate units reported for D4 vs Z^4; the check
+   passes if all are finite and positive.
+Exploratory (not a check): large-field rates and gaps reported; a failure there is Balaban's large-field region, not a
+   failure of C1-C3.
+Verdict rule: C0-C3 all pass -> "D4 block satisfies Balaban's uniform fluctuation-covariance decay at one step, in the
+tested abelian scalar setting". Any failure of C1 -> report as a D4 obstruction to a Balaban-type route.

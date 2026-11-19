@@ -1,0 +1,102 @@
+---
+claim_id: zoom_three_turn_fixed_positions_are_not_protected_light_families_and_under_the_even_cube_copy_mass_mix_only_one_plus_two_with_no_cp_phase_bounded_theorem_note_2026-10-23
+claim_type: bounded_theorem
+claim_scope: "For the update law's one-mode cube tick (eps, mu, M N) = (0.3, 0.05, 0.2) on a 6^3 torus with zoom-3 blocks centred on the sites 3n, the three turn-fixed block positions x - d, x, x + d share one turn charge but are not a protected light count: at block strength 0.5 +- 30% there is no gap at 3 per block, with every turn-invariant block term there is no count, and only a supplied projector on the 24 cycled positions at strength >= 2 isolates 3 per block, whose low end is one species, not three; the class energies split 1+1+1 once mu or the copy mass is on; family-flux's translation-character obstruction does not apply to position families, but the even-cube copy mass couples only x <-> x + d, so the family mixing is 1 + 2 and the Jarlskog invariant is zero. Conditional on the supplied zoom-3 register; no mass or mixing law is derived."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/zoom_three_turn_fixed_positions_are_not_protected_light_families_and_under_the_even_cube_copy_mass_mix_only_one_plus_two_with_no_cp_phase_2026_10_23.py
+---
+
+# Zoom-three turn-fixed positions are not protected light families, and under the even-cube copy mass they mix only 1 + 2 with no CP phase
+
+Claim type: bounded_theorem.
+Primary runner: `scripts/zoom_three_turn_fixed_positions_are_not_protected_light_families_and_under_the_even_cube_copy_mass_mix_only_one_plus_two_with_no_cp_phase_2026_10_23.py`.
+
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. A family reading proposed for it takes the three positions of a site's 3^3 block that the three-fold turn about the site's body diagonal d fixes, namely the site x, the far corner x + d of its even cube and the far corner x - d of its odd cube, as the three families. The copy mass of the update law (CL-1 in the three-law numbering), which sits on even cubes only, is proposed to make x + d and x - d inequivalent. This note tests that reading in the update law's own tick. It also confronts two earlier results:
+- the register result, in which one three-fold turn fixes three register copies that become protected families when the register is supplied;
+- the family-flux result, in which the turn-fixed momentum sectors carry distinct characters of T(2e_i), so every translation-invariant term is family-diagonal.
+
+The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose neither the zoom nor the block term.
+
+## Statement
+
+Supplied model:
+- The update law's cube tick, one mode per site, single-particle sector, (eps, mu, M N) = (0.3, 0.05, 0.2).
+- Zoom-3 blocks centred on the sites 3n of a 6^3 torus. A 9^3 torus cannot carry the period-2 tilings; 6^3 is the smallest torus carrying both the tilings and the blocks, and 18^3 is 6^3 at Bloch momenta.
+- A block term H_B, with U_g = exp(-i g H_B) U.
+
+1. An m^3 block centred on a site has m turn-fixed positions x + k d. Every odd zoom keeps both tilings, so the count 3 is the choice of zoom 3 and is not forced.
+2. The turn about d through each block centre is an exact symmetry of the copy-massed tick and of U_g, up to a site gauge with T^3 = 1. The three fixed positions carry one turn charge.
+3. Light count. With the 24 cycled positions given strength g = 0.5 +- 30%, there is no gap at 3 per block. With a generic turn-invariant block term, which includes on-site and fixed-to-cycle terms, there is no count at any strength. Only when the cycled positions alone are pushed to the cell scale (g >= 2) does a band of exactly 3 per block separate. Its count is the number of positions left untouched, and its low end holds one four-component species, not three. Zoom 5 gives 5 per block in the same way.
+4. The class energies E(x - d), E(x), E(x + d) are 1 + 2 at mu = M N = 0 and 1 + 1 + 1 once either the step asymmetry mu or the copy mass is on.
+5. The block term has period 3 and the tick has period 2, so the residual translations are 6Z^3. All three positions of a block carry the same 6Z^3 character, so family-flux's gcd(2, 3) obstruction does not apply. The block term is itself the term that carries the translation character: it breaks T(2e_i) and links the momentum sectors (j, j, j).
+6. The even-cube copy mass couples x <-> x + d, at 0.094. The class x - d couples to the other two only below 1e-4. A mixing matrix of the form 1 + 2 has J = 0 for every phase, so two species with different supplied (M N, g) give one angle and no CP phase. This is F5 failing under the update law as written.
+
+## Derivation
+
+Item 1:
+- The fixed points of the cyclic permutation in the frame S = diag(d) are the offsets (k, k, k).
+- Scaling by an odd factor maps 2Z^3 into itself and 2Z^3 + (1, 1, 1) into itself, so every odd zoom keeps both tilings.
+
+Item 2: under the turn about x, the parity rule d(y)_i = (-1)^(y_i) is carried to the parity rule of the image block. So the set of fixed positions over all blocks is mapped to itself, and a site-diagonal block term commutes with the turn.
+
+Item 5: a period-3 operator has Fourier weight at fine momenta 2 pi m / 3. Under T(2e_i) these components carry the characters w^(2 m_i), which are not trivial. Positions within one block are separated by d, which is not a residual translation, so no character labels them.
+
+Item 6: the copy-mass factor exp(i (M N / 4)(1 - s) R) acts inside the even cube, and its (1 - s) R part reaches the far corner. The odd cube carries no such factor, so x - d meets x only through nearest-neighbour hops into cycled positions, and the heavy block term suppresses those hops. The J = 0 statement is exact: if a row and a column hold a single nonzero entry, every rephasing-invariant quartet either contains a zero or can be rephased real.
+
+## Checks
+
+The runner ends with `TOTAL: PASS=12 FAIL=0` in about 2 s, with a peak of 180 MB.
+
+Finite diagnostics:
+- Turn symmetry: residual 2e-14; fixed-position charges (1, 1, 1).
+- Gap ratio at 24 levels, i.e. 3 per block: 1.61, 1.00 and 1.09 at g = 0.35, 0.5 and 0.65.
+- With a generic turn-invariant term, the maximum gap ratio is below 1.5.
+- At g = 2 and 4, a band of 24 levels separates with ratio 4.0 to 4.9 and fixed-position weight 0.95. Only 4 to 10 of its levels lie within 5x of its lowest level, against the 12 needed for three quartets. Momenta checked: K = 0, (1, 0, 0) and (1, 1, 1) in units of 2 pi / 18.
+- Zoom 5 on 10^3 gives 40 = 5 per block.
+- Smallest relative split of the class energies: 0.126 with mu only, 0.168 with the copy mass only, 0.112 with both.
+- [T(2e_1), H_B] = 1; sector leak 0.11.
+- Class couplings: x - d <-> x at 1.5e-5, x - d <-> x + d at 3.4e-6, x <-> x + d at 0.094.
+- Two species give sorted |V| = (1, 0.9998, 0.9998, 0.021, 0.021) and J = 1e-12.
+
+Exact check: over 300 random 1 + 2 unitaries, |J| < 1e-16.
+
+## Estimates against measurement
+
+Every off-diagonal CKM modulus is nonzero, the smallest being |V_ub|, at 41 sigma, and J = 3.12e-5. A decoupled family is therefore excluded at 41 sigma or more.
+
+Candidate rule, untested and not adopted: put the copy-mass factor on both tilings instead of on even cubes only. This replaces a lopsided choice with its symmetric form, chooses no number, inserts no named structure and bends no axiom. Under it:
+- x - d couples through the odd cube and all three classes mix;
+- the family triangle carries a phase of 1.581 rad from the spin-3/2 overlaps;
+- two species give J = -1.9e-6.
+
+The species values (M N, g) are supplied, so the size of J is not a prediction. The candidate does not repair item 3, the missing light count.
+
+## Boundary
+
+Supplied: the zoom factor 3, the block term (its form and its strength), the block centres, the species values and the seed.
+
+Forced, given the update law's tick and that register:
+- one shared turn charge;
+- no protected light count in a one-mode-per-site tick;
+- the 1 + 2 class structure of the even-cube copy mass, and with it J = 0.
+
+Relation to the register result: its protection runs through turn charges w and w^2 on Dirac masses of the cube's 8-mode content. A one-mode site register does not carry those charges, so this note does not contradict that result. It shows that the protection is not present in the fine tick and has to be supplied.
+
+Relation to family-flux: that obstruction is evaded here, not confirmed, because the families are positions rather than momentum sectors. Mixing is then blocked instead by the lopsided copy mass.
+
+Not claimed: a mass law, a mixing law, a hierarchy, or a physical identification of the block term.
+
+## Dependencies
+
+- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md): unchanged.
+- [Candidate-law register](CANDIDATE_LAWS.md): the update law's tick, copy mass and two tilings. Zero premise weight; the results are conditional on them.
+
+## How to run
+
+```
+python3 scripts/zoom_three_turn_fixed_positions_are_not_protected_light_families_and_under_the_even_cube_copy_mass_mix_only_one_plus_two_with_no_cp_phase_2026_10_23.py
+```
+
+It needs numpy and scipy, is self-contained, declares `AUDIT_TIMEOUT_SEC = 120` and prints about 4.9 kB.

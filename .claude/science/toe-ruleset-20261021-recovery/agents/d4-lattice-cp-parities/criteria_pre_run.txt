@@ -1,0 +1,30 @@
+d4-lattice-cp-parities: pre-registered criteria (written 2026-10-26 before any code of this probe ran)
+Menu: d4-families-menu P1 (Hermitian channel law). Pass/fail taken from the menu; made operational below.
+
+Definition. Lattice CP_g (g an improper W(F4) element, S_g its spinor lift, C the Euclidean charge-conjugation matrix,
+C g_mu^T C^-1 = -g_mu): psi(x,s) -> M psibar^T(g' x, s), psibar -> -psi^T M^-1, M = C S_g^-T, with NO fifth-direction
+reflection; on Fock registers psi -> W psi^+ (particle-hole) with W = phase x (Lorentz block) x W_int,
+W_int = 1 in the occupation basis of the 16 (occupation-basis conjugation), overall phase free (fixed below).
+
+(1) Exactness.
+ a) C relation on the D4 fixed-point slab (Borici and Shamir forms, mf = 0.1, Ls = 8): C D5(p)^T C^-1 = J D5(-p) J
+    (J = s -> Ls+1-s), and hence CP: M D5(p)^T M^-1 = D5(p') with NO J, for all 576 improper g, to 1e-10.
+    If CP holds only WITH J (wall swap): it is the failed face swap -> say so, STOP, verdict DUPLICATE.
+ b) Far-wall Spin(12) term: B_a -> sum_b U_ab B_b^+ with U unitary (to 1e-12), so sum_a {B_a, B_a^+} is invariant;
+    W_int = 1 is Spin(10)-covariant (-t^T in span of the 45 t, with an outer automorphism R on the vector index).
+ c) Cayley 4-form on the 4 spinor modes: invariant under the Fock particle-hole with W4 = e^{i alpha} C S^-T for some
+    alpha (alpha fixed mod pi/2 by det W4 = 1), to 1e-12, for all 576 improper g.
+ d) Links: improper g maps the D4 root-plaquette set to itself; the theta carrier eps F F is CP-odd (C even, P odd) for all
+    576 improper g, so an exact CP gives theta_gauge in {0, pi}.
+ Informational (not pass/fail): whether Luscher's chiral projectors are CP-symmetric (literature: they are not, FIS 2002).
+(2) Parities. eta_k from W^T K^A W = eta_k r_A (K^A)^+ for every nonzero component A of channel k (K^A = eps x C Gamma^A
+ on the 16, k = 1, 3, 5), r_A the automorphism sign; eta_k must be constant over A (to 1e-12) and its ratios unchanged
+ under W_int -> W_int x (random Spin(10) element). Normalise eta_10 = +1.
+ PASS iff (eta_10, eta_120, eta_126) = (+, -, +). FAIL iff (+, +, +) or any (1) check fails. Other pattern: report as is.
+(3) If PASS. SM-component mass matrices from register Clebsches (vev tensors real in the occupation frame, invariant under
+ SU(3)_c x U(1)_em; Yukawas obeying the CP condition), 200 seeded samples:
+  - all vevs CP-even: J = 0 (|J| < 1e-14);
+  - 10 and 126 vevs CP-even, 120 vev CP-odd: M_u, M_d Hermitian (rel. 1e-12, fixed basis phases), arg det in {0, pi},
+    median |J| > 1e-6;
+  - arg-det bit: fraction of samples with det(M_u M_d) < 0; FIXED iff 0 or 1, else UNFIXED (one free bit).
+  - leading loop theta-bar after spontaneous CP breaking: literature order-of-magnitude (supplied) vs 1e-10.

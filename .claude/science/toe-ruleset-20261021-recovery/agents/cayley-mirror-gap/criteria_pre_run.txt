@@ -1,0 +1,52 @@
+cayley-mirror-gap: pre-run criteria (written 2026-10-24 AFTER the on-site check and BEFORE any chain computation)
+
+On-site check (done first, reproduces w2): 4-forms on R^8 = 4 complex modes (x_j, y_j), Majoranas g_{2j} = c_j + c_j^+,
+g_{2j+1} = -i(c_j - c_j^+), operator Phi^ = sum Phi_abcd g_a g_b g_c g_d.
+  Re Omega: so(8) stabiliser 15, spectrum -8 (1), 0 (14), +8 (1).
+  (1/2) omega^omega: stabiliser 16, spectrum -6 (2), 0 (8), +2 (6)   [w2 listed the multiplicities incompletely].
+  Cayley Re Omega + (1/2) omega^omega: stabiliser 21, spectrum -14 (1), 0 (8), +2 (7).
+The Cayley ground state is the Re Omega ground state (-8 - 6 = -14), so the comparison below is
+H_ReO = H_hop + g ReOmega^ versus H_Cay = H_ReO + g (1/2)omega^omega^, same g, one added term.
+
+Proxy chain (supplied; the 1+1D 8-Majorana SO(7)/Spin(7) SMG chain class, Fidkowski-Kitaev / You-BenTov-Xu / BenTov 2015):
+  L sites, 8 Majoranas = 4 complex modes c_{x,j} per site.
+  H_hop = sum_{x,j} (i t c^+_{x,j} c_{x+1,j} + h.c.), t = 1 = (i t/2) sum_a g^a_x g^a_{x+1}: SO(8)-invariant Majorana hopping,
+  low-energy content 8 left + 8 right Majoranas (k = 0 and k = pi), vector-like, no light partner: it plays the far wall
+  (mirror) sector alone. On-site H_int(x) = g Phi^(x).
+  Boundary: primary = flavour twist theta = (pi/2, pi/2, -pi/2, -pi/2) (an SU(4) element, inside Spin(7); no zero modes for
+  any L); check = antiperiodic (theta = pi, the fermion-parity element, exact Spin(7)) at even L.
+  Conserved: N_j - N_k (SU(4) Cartan), total N mod 4, lattice momentum. Sectors: relative charge d in
+  {0000, 1000, 0010, 1100, 0011, 1010, 1-100, 10-10, 001-1} (amended before any chain physics run, after the L = 2, 3 engine
+  tests: the three adjoint-type classes were added), plus -1000, 00-10 at L <= 6 as particle-hole checks; other classes are
+  equivalent by flavour swap 1<->2, 3<->4 and particle-hole (or higher in charge). All momenta.
+  Sizes L = 4, 5, 6, 7 (full), L = 8 (Mac mini; as many sectors as fit; any omitted sector is reported).
+  Couplings g in {0.125, 0.25, 0.5, 1.0} for both models. (Free bandwidth 2t per mode; on-site gaps 8g vs 14g.)
+
+Observables per (model, g, L): E0 and its sector; ground-state splitting; Delta = lowest excitation over all computed
+sectors and momenta; Delta_1 = lowest charged (d = 1000 / 0010) excitation; free reference 2 sin(pi/2L) (single particle)
+and 4 sin(pi/2L) (neutral) for the twisted chain.
+
+Reproduction gates (run void if they fail): on-site numbers above; g = 0 gives the free spectrum (Delta_1 = 2 sin(pi/2L));
+momentum-sector engine agrees with a direct full-Fock diagonalisation at L = 3 (2^12) and with a no-momentum sector
+diagonalisation at L = 4.
+
+Classification per (model, g), over L = 4..8 (or 4..7 if L = 8 incomplete for that model/g):
+  OPEN: unique ground state at every L (splitting > 0.5 Delta), Delta(L_max)/Delta(4) >= 0.75 and Delta(L)*L increasing
+        across the run (no faster-than-1/L fall; a 1/L-gapless chain gives Delta(8)/Delta(4) ~ 0.51).
+  CLOSING: Delta(L_max)/Delta(4) <= 0.6, or Delta*L constant to 20% over the run, or a (quasi-)degenerate ground state.
+  INCONCLUSIVE: anything else.
+
+Task outcome:
+  PASS (Cayley advantage): at some g in the grid, Cayley is OPEN while Re Omega alone is not OPEN (CLOSING/INCONCLUSIVE),
+        AND at no g is Re Omega OPEN while Cayley is not.
+  BOTH-PERSIST: at every g where Cayley is OPEN, Re Omega is OPEN too (report; w2's kill condition "persistence no better
+        than Re Omega alone" is then met at chain level for persistence, and the comparison falls back to gap size).
+  FAIL: Re Omega OPEN at some g where Cayley is not, or Cayley OPEN at no g.
+  Secondary (reported, not classifying): persistence ratio rho = Delta(L_max)/Delta(4) for each model at equal g and at
+  equal on-site gap (Re Omega at 1.75 g ~ Cayley at g; nearest grid pairs (0.25 vs 0.125 ... ) and the critical-coupling
+  estimate g_c where Delta(L_max)/Delta(4) crosses 0.75.
+
+Caveats carried regardless: proxy (1+1D 8-Majorana chain) vs the real 3+1D 16 of Spin(10); the full lattice chain is not
+the slab (no bulk, no light wall); strong-coupling gaps exceeding the bandwidth make the chain a cutoff theory; finite
+sizes L <= 8 cannot see exponentially small (marginal, BKT-like) 1+1D gaps at weak coupling; the boundary twist breaks
+Spin(7) to its centraliser at O(1/L).

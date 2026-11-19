@@ -1,0 +1,29 @@
+== 1. the mass term is the block hop itself
+[PASS] W Hermitian, W^2 = 1, commutes with the 24 spin-3/2 corner actions
+[PASS] W(mu) = W exp(i mu/2 W) = e^{i mu/2} exp(i (pi - mu) P_-): mass = hop angle short of pi
+== 2. staggered sign eps = (-1)^(x+y+z)
+[PASS] eps W eps = -W; eps commutes with D(K); eps W_odd(K) eps = -W_odd(K)
+[PASS] eps U(mu) eps = U(-mu) at 50 random K (mu = 0 is an eps-symmetric point; mu is eps-odd)
+[PASS] every rotation maps eps to +-eps (90-degree turns swap the sublattices), and B = psi^dag W psi is invariant
+== 3. filled-sea value of the block hop (Floquet Hellmann-Feynman)
+[PASS] per K: Tr(P_sea W) = 2 sin(mu)(1+S)/sin|w| = 4 s sqrt((1+S)/(1-S+s^2(1+S))), 3 mu x 400 K  max 1.8e-15
+[PASS] odd blocks (state after the even half-tick) carry the same value  max 1.8e-15
+[PASS] 6^3 real-space lattice, filled sea (108 of 216 modes): per-block <B> on even and odd blocks = Bloch value  0.8647725228 0.8647725228 vs 0.8647725228
+[PASS] real space: eps anticommutes with both half-tick hops (any edge hop on the bipartite lattice)
+== 4. supplied NJL block rule exp(i pi N_-) exp(i g B^2/2), Hartree mean field
+   I0 = 1.1567154153  (160^3 midpoint grid: 1.156698);  g_c = 1/(4 I0) = 0.2161292196
+[PASS] I0 by pyramid quadrature agrees with an independent midpoint grid to 2e-4  diff 1.7e-05
+[PASS] gap function F(theta) = (sin theta/theta) I(sin theta) strictly decreases on (0, pi/2): one root for each g in (g_c, g_max)  F(0+) = 1.156708, F(pi/2) = 0.439064; g_max = 0.569393
+   g/g_c -> mu: 1.0001: 0.008831; 1.001: 0.03175; 1.01: 0.1199; 1.1: 0.4932; 1.5: 1.423
+[PASS] mean-field iteration theta -> g <B>(theta) from eigenvectors (14^3 K, g = 1.5 g_c) converges from theta = 0.02 to the nonzero root  theta_40 = 0.71151509, root 0.71151509
+[PASS] theta = 0 is a repeller there (slope 4 g I0 > 1) and the root an attractor
+[PASS] self-consistent band is the CL-2 band: isotropic within 1e-4 at |k| = 0.05 and gap = mu  mu = 1.423030, spread 2.3e-08
+== 5. small-mass law: power law, no exponential hierarchy
+   (I0 - I)/mu^2 at mu = 1e-2..1e-5: 1.402148 2.008265 2.614398 3.220531
+[PASS] I0 - I(sin(mu/2)) = a mu^2 ln(1/mu) + b mu^2 with a = 3 sqrt3/(2 pi^2) (rederived from the K=0 cone)  fit a = 0.263238, theory 0.263240, b = 0.1899
+   electron-scale mu ~ 2.423e-22 (supplied units: a = sqrt(8 pi) l_P, c = 1/sqrt3 block/tick) needs g/g_c - 1 = 6.77e-43
+[PASS] a mass of order 1e-22 needs g tuned to g_c to about 1e-42 (no natural hierarchy from the contact rule)
+supplied: the B^2 block rule and its coupling g, the Hartree (large-N) decoupling, the negative-quasi-energy sea.
+not established: any species mass value or ratio; Fock/fluctuation corrections; physical identification.
+elapsed_seconds 2.8
+TOTAL: PASS=16 FAIL=0

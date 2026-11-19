@@ -1,0 +1,44 @@
+d4-zoom-chirality: pre-registered criteria (written 2026-10-26 BEFORE any computation in this folder)
+
+Object: the D4 zoom fixed-point free Dirac kernel D* = G*^-1 (d4-zoom-fixed-point-fermion, PR #10098), GW parameter
+alpha = 1/2 (m0 = 1/(2 alpha) = 1), position-space coefficients from the L = 12 D4 torus, truncated to the shells
+|d|^2 <= 4 (origin + 24 roots + 24 norm-4 vectors) for gauging. Gauge: U(1), straight-line transporters of a constant
+continuum field on a rectangular L' = 6 torus of D4 sites (648 sites), fluxes (n12, n34), Q = n12 n34 (unit charge).
+
+Test 1 (overlap / Luscher on the D4 kernel)
+ 1a free: the truncated kernel's symbol agrees with D*(p) to <= 5e-2 relative at random momenta, and
+    A = D_R - m0 has min singular value >= 0.3 m0 on the free torus (overlap well defined).
+ 1b gauged overlap D_ov = m0 (1 + g5 sign(g5 A)): GW defect <= 1e-10, g5-hermiticity <= 1e-10.
+ 1c index = Q (one global sign convention) EXACTLY (integer) for (n12,n34) = (0,0), (1,1), (2,1), (1,-1):
+    Q = 0, 1, 2, -1.  Charge-q field (q = 2, 3) in the (1,1) background: index = q^2 Q.
+    Admissibility: min |eig H| / m0 >= 0.05 in every background used (else report, not count).
+ 1d Luscher P_hat = (1 -+ gamma_hat_5)/2, gamma_hat_5 = g5 (1 - 2 alpha D_ov): projector to <= 1e-10;
+    locality: max |gamma_hat_5(x,y)| decays exponentially with |x - y| (fitted rate >= 0.5 per unit length) in the Q = 1 background.
+ PASS of Test 1 = all of 1a-1d.
+
+Test 2 (domain-wall slab with the D4 kernel along a fifth (internal) direction)
+ Two slab forms: (B) Borici/Moebius b5 = c5 (H_T = a5 g5 (D* - m0)), (S) Shamir (H_T = g5 A (2 + A)^-1), A = D* - M, M = m0.
+ 2a exactly one light 4D Weyl per wall: at p = 0 the 5D operator (Ls = 8) has exactly 2 singular values below 1e-2
+    (one 2-component Weyl on each wall; L on one wall, R on the other: |<g5>| >= 0.99, wall weight >= 0.99);
+    at the 15 classes of pi D4* (doubler momenta of naive kernels) the smallest singular value >= 0.1: no extra walls modes.
+ 2b Borici theorem: H_T^2 = (a5 m0)^2 exactly (GW circle), so D_eff(Ls) = (1-t)/2 + t alpha D* exactly at every Ls
+    (t = ((1+h)^Ls - (1-h)^Ls)/((1+h)^Ls + (1-h)^Ls)); numerical check vs the explicit 5D Schur complement <= 1e-8.
+ 2c W(F4): the 5D operator is covariant under all 576 proper elements (S(A) acting on spinors only) to <= 1e-10;
+    improper elements map it to the wall-swapped slab (s -> Ls+1-s).
+ 2d dim 6 of the light chiral mode: direction anisotropy of the light-mode kernel at |p| = eps scales as eps^4 (no
+    eps^2 term): fitted exponent >= 3.5 for both slab forms (Ls = 8 and the Ls -> infinity Shamir limit);
+    control: Shamir slab with the Z^4 Wilson kernel gives exponent <= 2.5 (dim-6 present).
+    Group check: W(F4)+ has exactly 1 quartic scalar invariant and 1 cubic vector covariant (dim count).
+ PASS of Test 2 = 2a-2d.
+
+Test 3 (anomaly content and the mirror)
+ 3a one-family 16 (L-handed): sum (6Y)^3 = 0, sum 6Y = 0, SU(3)^2 Y = 0, SU(2)^2 Y = 0, SU(3)^3 = 0, even doublet count;
+    lattice version: sum over the family of (6Y) x index on the D4 overlap = sum (6Y)^3 Q = 0 using measured indices.
+ 3b mirror: far-wall Weyl has the same gauge/internal charges (5D operator diagonal in them) and the same spatial
+    three-fold-turn spectrum as the light Weyl: q_mirror = q_light (structure unchanged); the slab is vector-like.
+ PASS of Test 3 = 3a-3b.
+
+Verdict rule: CHIRALITY CARRIES OVER = Tests 1-3 all PASS; PARTIAL = Test 1 or 2 passes with a named defect;
+FAILS = index != Q in a smooth background, or a light-mode dim-6 term, or extra/missing wall modes.
+Not tested here (stated in advance): non-abelian indices on D4, the far-wall gapping, families, gravity, tick (transfer)
+form of the slab positivity, the measure term.

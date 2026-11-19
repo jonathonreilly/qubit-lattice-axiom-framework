@@ -1,0 +1,39 @@
+code-to-heisenberg: pre-run criteria (fixed 2026-10-24 before any computation)
+
+Question: does tiling the unique [[8,3,3]] cube-cell code FORCE the x+y+z mod 3 (Delta(27)) structure?
+
+Natural frame (adopted, not derived): a cube rotation R acts on the Pauli labels by the same axis
+permutation it applies to the spatial axes (X,Y,Z <-> x,y,z, signs dropped).
+
+C1 (axis selection per cell). Over all 8! vertex labellings, compute the subgroup of the cube
+rotation group O (24) that acts as a code symmetry in the natural frame.
+  - "code picks ONE diagonal": every labelling with a 3-fold symmetry has its 3-fold turns about one
+    body diagonal only (stabiliser C3 or D3, never A4 or larger).
+  - "code picks the diagonal by labelling choice": the 4 diagonals each occur for the same number of
+    labellings (cube rotations permute them). Otherwise the code itself prefers a diagonal (would be
+    surprising: the code carries no geometry).
+  - Translation invariance (same labelling in every cell) gives the same axis in every cell (by construction).
+C2 (code-preserving cell-to-cell maps). On a 2-cell periodic tiling (16 qubits), test whether the
+translation by one site e_1 (with any uniform frame) maps the tiled stabiliser group to itself.
+  - If NO for all frames: code-preserving translations are exactly the cell lattice 2Z^3, which
+    contains class-changing vectors 2e_i (x+y+z changes by 2 mod 3). Then the code does NOT force
+    the class-preserving hop rule. FORCES requires the code-preserving translations to lie in the
+    x+y+z = 0 mod 3 sublattice; that would be a YES on C2.
+C3 (Heisenberg pair). On the single-particle space (family slot) x (cell position, 3^3 torus), with
+C = the global (111) turn (cycling the 3 logical slots), T = cell translation, Omega = omega^(x+y+z):
+  - FORCES needs some code-preserving operation that cycles the family slots AND satisfies
+    g Omega g^-1 = omega^(+-1) Omega with Omega commuting with the code-preserving dynamics.
+  - Pre-registered expectation tested, not assumed: the turn commutes with Omega (it preserves x+y+z),
+    so the family shift and the clock commute; the Heisenberg pair (T, Omega) is family-blind.
+  - Also: every point-group element g fails g Omega g^-1 = omega Omega (exact, checked on the torus).
+  - Clock on logicals: test all 3^8 on-site diagonal phases diag(1, omega^f_j) (uniform axis X, Y or Z)
+    for code preservation; FORCES would need one acting as a nontrivial logical omega-clock.
+C4 (residual). Count index-3 sublattices invariant under the code's C3 (expect exactly one:
+x+y+z = 0 mod 3), and C3-invariant index-p sublattices for p = 2, 5, 7 (to test whether "3" is singled out).
+
+Verdict rule:
+  FORCES   = C2 YES and C3 YES.
+  PARTIALLY = C2/C3 NO, but the code's C3 plus "an index-3 class sublattice exists" forces the
+              (111) mod-3 rule uniquely (C4 unique), i.e. the code fixes WHICH lattice once 3 is assumed.
+  NO       = otherwise.
+Failures are results; a FAIL of any expectation is reported as such, not tuned.

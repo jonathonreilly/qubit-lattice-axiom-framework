@@ -1,0 +1,31 @@
+---
+claim_id: the_copy_mass_dimension_six_coefficient_is_independent_of_step_and_copy_mass_so_photon_decay_and_proton_photopion_closure_are_fixed_at_the_cell_scale_bounded_theorem_note_2026-10-26
+claim_type: bounded_theorem
+claim_scope: "Finite diagnostics on CL-1's cube tick (8-mode cube, face-phase -1 reflection, copy mass on even cubes; plane-wave symbol, Richardson in K): the light fermion band minus the link band is c6(n) K^2 with c6(n) = -(1/8)(sum n_i^4 - 1/3) (axis -1/12, face -1/48, body 0) to 5e-7 for eps in [0.005, 0.3] and M in [0.002, 0.5], and the link band's own term is -(sum n_i^4)/24 at small eps. Exact two-body kinematics with both terms: symmetric gamma -> e+e- splits are closed on every ray; decay opens through x = b/6(a+b) at 80 PeV (axis) and 122 PeV (face), never on body diagonals (register: 78/110 from a form that omits the photon term); the open photon sky falls to 7%, 0.2%, 0.002% at 0.2, 1, 10 EeV. With E = p + m^2/2p - eta p^3/2M_P^2, CMB photopion is closed at every energy for eta_p >~ 1e-4. Estimates with supplied numbers: eta_p ~ 0.1-1 from parton fractions; Delta N_eff = 0.141; variant-B mirror ladder; axion mass reading. Unit map E* = hbar c/2L, L = sqrt(8 pi) l_P supplied via G. Not covered: nuclei, the composite-hadron dispersion beyond parton additivity, the published UHECR LIV fits, mass-dependent (flavour) dim-6 terms, split-window variation of the cell (factor <= 2)."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/the_copy_mass_dimension_six_coefficient_is_independent_of_step_and_copy_mass_so_photon_decay_and_proton_photopion_closure_are_fixed_at_the_cell_scale_2026_10_26.py
+---
+
+# The copy-mass dimension-six coefficient is independent of step and copy mass, so photon decay and proton photopion closure are fixed at the cell scale
+
+Runner: runner.py, TOTAL: PASS=10 FAIL=0, 0.4 s, 79 MB, ~2.9 k characters, seeded, AUDIT_TIMEOUT_SEC = 120.
+Axioms unchanged; no CL edit; no rule adopted. Context: the assumed-inputs model (model.md in this folder).
+
+## Results
+- [F] c6(n) = -(1/8)(sum n_i^4 - 1/3) per K^2 (K per cube), independent of eps and M over the tested ranges: the
+  register's "seen at one point only" caveat is lifted for (eps, M). Link band: -(sum n^4)/24 (photon, gluon).
+- [F] gamma -> e+e-: with the photon's own dim-6 term, symmetric splits are closed (|c6| < 3|c_g| everywhere);
+  thresholds k_th = (6(a+b)/b^2)^(1/4) sqrt(m_e E*) = 80 PeV axis, 122 PeV face, none on body diagonals. This corrects
+  the register's 78/110 PeV and its threshold form.
+- [F] Open sky for photons: 65% (0.1 EeV), 7% (0.2), 0.2% (1), 0.002% (10 EeV), eight spots shrinking as E^-2.
+- [F] Proton photopion off the CMB (up to 10 kT) is kinematically closed at every energy for subluminal
+  eta_p >~ 1e-4 (M_P units). [E] The rules give eta_parton = 2.8-25 and eta_p ~ 0.1-1 with supplied parton <x^3>:
+  no GZK attenuation of protons and no proton-photopion cosmogenic neutrinos. To be checked against published UHECR
+  LIV analyses before use; proton-dominated GZK, if established, falsifies the rules as written.
+- [E] Delta N_eff = 3 (10.75/106.75)^(4/3) = 0.141 for three nu^c thermalised early (hot start supplied).
+
+## Smuggling review
+Supplied: unit map (G), parton fractions, CMB temperature, particle masses, literature bounds. Forced: c6 and its
+angular form, the link-band term, both kinematic statements. Not a rule; nothing adopted.

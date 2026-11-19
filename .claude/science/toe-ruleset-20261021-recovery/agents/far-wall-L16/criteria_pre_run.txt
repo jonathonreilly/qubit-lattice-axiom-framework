@@ -1,0 +1,33 @@
+far-wall-L16: pre-run criteria (written 2026-10-24 BEFORE any L > 12 computation in this probe)
+
+Model: exactly the far-wall-smg wall-mode chain (agents/far-wall-smg/runner.py, section C): far-wall modes
+|k| < pi/2, antiperiodic k = pi t / L (t odd, |t| < L/2), E_f = s_f sin k, far-layer amplitude a(k), the two
+forced 6-fermion bond terms l1 = (1,-2,1,2), l2 = (2,1,-2,1), one coupling g, sectors (Q_A, Q_B, P).
+Mode count per flavour n: L = 8,10 -> 4; L = 12,14 -> 6; L = 16,18 -> 8; L = 20 -> 10 (expected beyond budget).
+Couplings: g = 5 (near the hopping/bandwidth scale), 40 (previous crossing), 200 (previous strong).
+
+Observables per (L, g): neutral gap Delta_0 (lowest excitation in the neutral sector over all P),
+single-particle gap Delta_1 = (E(3,2) + E(-3,-2))/2 - E0, ground-state P and degeneracy, E(P=2)/E(P=1)-type
+branch flatness (lowest energies in the two smallest nonzero momentum sectors, ratio).
+
+Reproduction gate (must hold or the run is void): L = 12, g = 200 reproduces Delta_0 = 4.031, Delta_1 = 4.838
+to 1e-3, unique ground state at P = 0; g = 0 gives Delta_0 = 2 sin(pi/L), Delta_1 = sin(pi/L).
+
+PASS (persistence) at g = 200: at every computed L in {12, 14, 16, 18}: unique neutral ground state (gap to the
+next state > 0.5) in a definite (0,0,P0) sector, Delta_0 > 1 and Delta_1 > 1 (well above the free values
+2 sin(pi/L) <= 0.52, sin(pi/L) <= 0.26), and Delta_0(L_max) / Delta_0(12) >= 0.5 with no monotone collapse
+faster than 1/L (i.e. Delta_0 * L not decreasing across the n = 8 pair 16 -> 18 by more than 25%).
+FAIL (closing): at L = 16 or 18, Delta_0 < 0.3 or a (quasi-)degenerate ground state (splitting < 0.1),
+or Delta_0 consistent with c/L (Delta_0 * L constant to 15% over 12..18).
+INCONCLUSIVE: anything in between, or L = 16 not completed.
+Same classification, reported separately, at g = 40 and g = 5 (no PASS expected there; g = 5 is a weak-coupling
+control: free-like gaps ~ 2 sin(pi/L) would be the expected reading).
+
+Extrapolation: fits Delta(L) = Delta_inf + c / L (and Delta_inf + c/L^2 as a check) on the available sizes at
+fixed g. With 2-4 sizes and two different n, this is a TREND, not a limit; the n-step (window filling) is
+reported as a separate confound.
+
+Known caveats to be carried into the note regardless of outcome: strong-coupling gaps exceed the bulk gap 1
+(the chain is then a cutoff wall theory, not the slab); a frozen far layer only moves the mirror inward
+(smg-strong-coupling); the real far-wall term must break mode number (charge-4 Omega) -- this chain is a proxy;
+the chain is a non-local momentum-window regulator and also gaps 3451 (far-wall-smg E2).

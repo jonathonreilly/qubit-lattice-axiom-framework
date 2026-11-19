@@ -1,0 +1,91 @@
+---
+claim_id: rung_one_cell_is_one_pati_salam_block_with_rotation_blind_labels_and_no_left_right_halves_bounded_theorem_note_2026-10-21
+claim_type: bounded_theorem
+claim_scope: "For the supplied CL-2 tick run at rung 1 with each 2x2x2 cell's eight one-mode sites carried in parallel: the cell
+  is C^2 x C^4 by the unique rotation-invariant corner product, SU(4) x SU(2) acts on it as one (4,2) with T3 and B-L the only
+  rotation-blind generators, and the tick's exact internal symmetry is U(1)^2 x U(3)^2 for distinct covariant masses (SU(4) and
+  SU(2) need equal-mass patterns); every rotation factorises as G_c x P_int with P_int a colour turn times exp(-i pi [R odd]
+  (T3 + 3(B-L)/4 + N/4)), so G_c x 1 is also an exact symmetry and every cell state is a spin-1/2 Dirac fermion of the tick's
+  own Dirac algebra, while a hop that turns the cell index breaks this; the chirality read from the tick is
+  cos(eps) g5_0 + sin(eps) g5_pi/2, so even cells never carry net chirality, separate even/odd symmetries exist only at step
+  pi/2 with zero mass, and there the two copies are one left-right family and its mirror; an exact inversion exists at every
+  step; 2^n cells hold colour-type triplets 8^(n-1) times. Supplied model; finite diagnostic; no physical identification; no
+  chirality, gauge group, generation number or adopted rung rule is established."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/rung_one_cell_is_one_pati_salam_block_with_rotation_blind_labels_and_no_left_right_halves_2026_10_21.py
+---
+
+# The rung-1 cell is one Pati-Salam block with rotation-blind labels, and no left-right halves
+
+Claim type: bounded_theorem. Runner: runner.py (19 checks, PASS=19 FAIL=0).
+
+## Question
+
+At rung 1 a cell of eight one-mode sites, carried in parallel by the CL-2 tick, gives light levels 1:1:3:3 and the generators
+T3 and B-L. Is this a Pati-Salam structure, SU(4) colour with the lepton as a fourth colour times SU(2)? Do the rotations,
+which turn the cell index with space, make colour triplets carry spin 3/2? Can the two copies or the even and odd cells be
+the left and right halves of a left-right model?
+
+## Setting (supplied)
+
+Sites of Z^3 with one fermion mode each; cells are 2x2x2 blocks; the CL-2 tick acts on cells with the spin-3/2 edge hop W,
+the cell's eight modes carried in parallel, step eps and a rotation-covariant mass per cell irrep. Rotations about coarse
+block centres act as the fine-lattice isometry with spin-3/2 phases on the coarse corner label.
+
+## Results
+
+1. The cell (A1-A4). The plain cell is A1+A2+T1+T2. Exactly one invariant halving (the two tetrahedra) and one invariant
+   pairing (the four body diagonals) exist, so C^8 = C^2 x C^4 is the only corner product, with R = X^[R odd] x P_diag(R),
+   C^2 = A1+A2 and C^4 = A1+T2. The traceless invariant of each factor is unique: T3 = X/2 and B-L = (1 - 4 J4)/3. SU(4) x SU(2)
+   acts on the cell as one irreducible (4,2) = (3, 1/3, +-1/2) + (1, -1, +-1/2) in (colour, B-L, T3); rotations carry
+   su(4) = A1+E+T1+3T2 and su(2) = A1+2A2. E1/2 x (E1/2+E5/2) has the same character, so the split is fixed by the corner
+   geometry, not by rotations alone.
+2. Exact internal symmetry (B1-B2). The tick is sum_k U_0(m_k) x P_k. Its internal commutant is 20 = U(1)_nu x U(1)_e x
+   U(3)_u x U(3)_d for distinct masses, 32 = U(4)^2 if m_nu = m_u and m_e = m_d, 40 = U(2) x U(6) if m_nu = m_e and m_u = m_d,
+   and 64 if all are equal (steps 0.04, 0.3, pi/2). SU(4) commutes with the tick only in the second pattern and SU(2) only in
+   the third; since (4,2) is irreducible, no mass pattern leaves exactly SU(4) x SU(2).
+3. Rotations and spin (C1-C5). On 8^3 sites every rotation about both coarse centres is exactly G_c x P_int. The twist is
+   P_int(R) = O(R) exp(-i pi [R odd](T3 + 3(B-L)/4 + N/4)) with O(R) in SO(3), the same on up and down triplets and conjugate
+   to R. With covariant masses the tick commutes with G and with G' = G_c x 1 for all 48 rotations (steps 0.04, 0.3); G' is not
+   a fine-lattice isometry (a quarter turn breaks 512 of 1536 bonds) and keeps G'(C4)^4 = -1. The tick's long-wavelength
+   algebra at steps 0.04, 0.3 and pi/2 is alpha_a = Gamma_(a+3) e^(-i eps W), beta = W, and each rotation is e^(-i theta n.S)
+   times a copy matrix in the E irrep. So every cell state is a spin-1/2 Dirac fermion; the cube-group content of a cell
+   state is a copy and cell tag. Converse: a covariant hop e^(i lam d.J) that turns the down-type triplet with the hop
+   direction commutes with G but not G', and splits the 24 down-type K = 0 states into 8 with total j = 1/2 and 16 with
+   j = 3/2.
+4. Even and odd cells (D1-D4). At zero mass U - sUs = i sin(2 eps)(W_odd(K) - W) exactly, with s the sublattice sign, so
+   unitaries acting separately on even and odd cells commute with the tick only at step pi/2 and zero mass. The chirality
+   read from the tick is g5(eps) = cos(eps) g5_0 + sin(eps) g5_pi/2 with {s, g5_0} = 0 = [s, g5_pi/2], ||{s, g5}|| = 2 sin eps,
+   ||[s, g5]|| = 2 cos eps, and tr(P_even g5) = 0 at every step. At step pi/2, s = g5 sigma3 with sigma3 in the copy algebra;
+   even cells hold (L, copy +) + (R, copy -), odd cells (R, copy +) + (L, copy -), and the odd rotations flip s and sigma3. Under
+   SU(4) x SU(2)_even x SU(2)_odd copy + is one family (4,2,1) + (4b,1,2) and copy - its mirror. A block-local inversion
+   (corner complement with phases, unique) maps U(K) to U(-K) at every step and mass and flips g5.
+5. Anomalies and CL-5 (E1-E2). The family (4,2,1) + (4b,1,2) is anomaly-free (SU(4)^3, four doublets per SU(2), and ten
+   anomalies of Y = T3R + (B-L)/2 and B-L). The lattice content is vector-like, so its anomalies vanish identically. With
+   distinct masses CL-5 allows links on at most the 20-dimensional group of result 2, below dim su(4) + 2 su(2) = 21. uud has no
+   colour singlet under separate up and down SU(3) links and one under a shared SU(3).
+6. Generations (F1-F2). A 2^n cell has multiplicities ((8^n + 8 2^n)/24 twice, (2 8^n - 8 2^n)/24, 8^(n-1) twice) for
+   (A1, A2, E, T1, T2) (direct for n = 1, 2, 3); 8^(n-1) is never a multiple of 3. A covariant one-body term keeps every
+   triplet degenerate (16 threefold levels on the 4^3 cell).
+
+## Against measurement (estimates)
+
+- Measured masses (m_nu << m_e < m_u < m_d, all distinct) leave U(3)_u x U(3)_d x U(1)^2: no SU(4) leptoquark or SU(2) links.
+  The proton (uud) needs one colour group shared by up and down; CL-5 allows it but does not choose it.
+- On vector-like content CL-5 does not remove T3, B-L or species-number links; a massless B-L link must couple below about
+  1e-25 (MICROSCOPE, as estimated in the anomaly-free-currents note), so CL-5 needs a further selection rule here.
+- Quarks are measured spin 1/2 (Callan-Gross) with exact colour: consistent with result 3, inconsistent with any hop that turns
+  the cell index.
+- The content is left-right symmetric (result 4). In the cell reading at step pi/2 the odd rotations exchange the two SU(2)s,
+  which would give W_R = W_L against the measured W_R above about 5 TeV (W_L = 80.4 GeV). The mirror copy carries
+  right-handed SU(2)_even doublets and would add to N_nu = 2.984 +- 0.008 if light.
+- Measured family masses are non-degenerate (m_mu/m_e = 206.77), so a family cannot be a rotation triplet, and no 2^n cell
+  holds three rotation-blind families.
+
+## Not claimed
+
+Supplied: the rung-1 rule, the step and the four masses, the labels (lepton = A1 of C^4, the T3 sign, the B-L scale), and the
+turning hop of result 3 (a counterexample only). No chirality, mirror gapping, gauge group, link rule, generation number or
+mass ratio is established.

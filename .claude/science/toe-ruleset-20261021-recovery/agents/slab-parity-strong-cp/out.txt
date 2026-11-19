@@ -1,0 +1,22 @@
+1. kappa: mirror U(1) rotation, charge-4 vertex, QCD anomaly of one 16 per family
+PASS 1a [T] one 16 has 16 Weyls and sum 2T(colour) = 4 (4 SU(4) quartets, one triplet each) | ncomp=16, sum2T=4
+PASS 1b [T] |kappa| = 4 N_f / 4 = N_f = 3 (agrees with #10079 D1) | kappa=3.0
+PASS 1c [T] Z4 generator shifts theta by 2 pi N_f: anomaly-free, so theta_bar is NOT quantised to pi/2 | shift/2pi=3
+2. Two walls x 4 complex modes (Fock dim 256): S = swap o X on H_far = e^{i phi} c4c5c6c7 + h.c.
+PASS 21 [T] P_slab: image near-local, degree 4 (bilinear overlap 0), != H_far (explicitly broken) | [img,c_far]=0e+00 bil=0e+00 |img-H|=1.0
+PASS 2D [T] P_slab o D-like u(4): image near-local, degree 4 (bilinear overlap 0), != H_far (explicitly broken) | [img,c_far]=1e-15 bil=0e+00 |img-H|=1.0
+PASS 2C [T] P_slab o C: image near-local, degree 4 (bilinear overlap 0), != H_far (explicitly broken) | [img,c_far]=0e+00 bil=0e+00 |img-H|=1.0
+PASS 2K [T] P_slab o K: image near-local, degree 4 (bilinear overlap 0), != H_far (explicitly broken) | [img,c_far]=0e+00 bil=0e+00 |img-H|=1.0
+PASS 2e [T] image coefficient ties lambda_far only to lambda_near (phase phi; -phi for C, K; phi + arg det u for D) | 1:-1.339 D:-1.778 C:+1.339 K:+1.339 phi=4.944 arg det u=+0.439
+PASS 3 [F] S-exact completion gaps the near (light) wall: ground degeneracy 16 (near free) -> 1 | deg far-only=16, deg S-symmetric=1, gap=1.0
+4. theta density q = sum E.B on an 8^3 periodic grid (spectral curl), and tr(E B) under C/D
+PASS 4a [T] q odd under P_slab and P_slab o C; EVEN under P_slab o K (PT-like) and the 0<->pi exchange | P_slab:-1 P_slab o C:-1 P_slab o K:+1 0<->pi (no link action):+1
+PASS 4b [T] su(3): C maps B -> -B^T, tr(E B) invariant under C and inner D, so P_slab o D/C stay theta-odd
+PASS 5 [E] Yukawa phases cancel pairwise (Y' = Y^dag) but theta_bar = -N_f arg lambda_4 is unforced: P(|theta_bar|<1e-10) = 1e-10/pi | arg detY detY'=-9.1e-17, P=3.2e-11  -> proposal FAILS
+PASS 6 [T] D maps the 16's charges to themselves but D(T3L)=T3R, D(Y) not in span{T3L,Y}: no SM-only register | residuals 0.80, 0.80
+7. BCS shape (#10079 X1): lowest CP-odd flavour invariant, supplied masses at mu = m_t and PDG Wolfenstein
+PASS 7a [T] all words of length <= 5 have real trace; length 6 is the first CP-odd invariant | max rel Im tr len<=5 1e-21, len6 1.5e-13, J=3.12e-05
+PASS 7b [T] delta Y_u = P(H_u,H_d) Y_u gives delta theta = Im tr P (no 1/y enhancement); mirror words flip sign | Im tr(udu^2d^2)=1.53e-24, mirror=-1.53e-24, det[Hu,Hd]=3.1e-24
+PASS 7c [E] radiative theta_bar ceiling (light + mirror, any loop factor <= 1) < 1e-10 | ceiling 3.1e-24 (cutoff-level P-even G Gdual of #10079 E1 dominates instead)
+runtime 0.3 s
+TOTAL: PASS=16 FAIL=0

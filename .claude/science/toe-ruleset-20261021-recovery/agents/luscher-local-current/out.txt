@@ -1,0 +1,18 @@
+PASS: K1 Q-component (Y=1/6) factorised background, 4^4 (dim 1024): GW exact, g5-hermitian, P_hat_- = (1+sign H)/2 a projector, tr g5 D(x,x) = tr sign H(x,x)  [GW 1e-14, herm 8e-16, proj 3e-15, gap 0.399]
+PASS: C0 trivial sector (12 small smooth factorised backgrounds, eps=0.2): sum_x A = 0 for BOTH the 16 and the lone L doublet (index 0 per charge), so the integral alone does not separate them here  [max|sum A| 16 3e-13, L 2e-13; max|F| 0.79, min gap 0.365, 44s]
+PASS: C1 unit flux in the 12- and 34-planes (charge unit 1/6) + perturbation: sum_x T = 36 (charge 1); indices of 6Y = 1, 2, 3 equal -(6Y)^2; sum_x q = -2 index exactly; lone L integrated anomaly = -18 (nonzero: no periodic k exists at all); the 16's integral = 72 sum m Y^3 = 0 from the predicted integers  [sum T 36.000000; idx q=1,2,3,4,6: [-1, -4, -9, -16, 0]; L -18.0000; 16 pred 0e+00]
+PASS: C1b resolution: 6Y = 4 (u^c) IS resolved (-16) but 6Y = 6 (e^c, plaquette angle 3pi/4) is NOT on 4^4 at m0 = 1.6; measured integers for Q, L, u^c, d^c plus the predicted e^c value (-36) give the 16's flux integral 0  [u^c -16 (gap 0.142), e^c 0 (gap 0.014); all-measured sum -72.0; with predicted e^c -1.1e-13]
+PASS: C2 strength scan eps 0.2 -> 0.1 (2 backgrounds): lone L ~ eps^2 (within 0.2), the 16 ~ eps^4 (exponent > 3.6): the 16's residual is the order-4 term (sum Y^5 = 5/9, doublet Y^3 = -1/9)  [exponents (16, L): (4.13, 2.00), (3.99, 2.00); |A16|/|AL| at eps=0.2 0.045; 15s]
+held-out residual, bilinear F12 F34 basis, r = 0, 1, 2 (T = with Luscher's density as an extra column):
+  16 -: 1.022  0.621  0.504   ncol [4, 100, 484]
+  16 T: 1.110(T -0.02)  0.620(T -0.00)  0.504(T -0.00)   ncol [5, 101, 485]
+  L  -: 1.106  0.567  0.233   ncol [4, 100, 484]
+  L  T: 0.759(T -0.32)  0.528(T -0.06)  0.231(T -0.01)   ncol [5, 101, 485]
+PASS: E1 sample limit: at L1 range 2 (offsets reach the 4^4 period, 484 columns on 2048 samples) the bilinear fit overfits for the anomalous L doublet (held-out > 10 x train): finite-range fits on 4^4 cannot certify (non)locality; the obstruction is a zero-momentum quantity (flux sectors, C1)  [L train 0.002 held-out 0.233; 16 train 0.273 held-out 0.504]
+PASS: E2 pre-set P3 NOT MET: the fitted T coefficient for lone L is not 2 sum m Y^3 = -1/2 within 10% at r <= 1 (T and range-1 divergences are not separable on 4^4, smallest momentum pi/2)  [T coef r=0 -0.323, r=1 -0.060]
+PASS: E3 pre-set P1 NOT MET: the 16's order-4 density is not fitted by range <= 1 currents (bilinear: held-out r=1/r=0 ratio > 1/3; quartic F12^3 F34 + F12 F34^3 basis, 1400 columns on 2048 samples: overfits, held-out residual > 1)  [bilinear r=0 1.022, r=1 0.621; quartic r=1 train 0.081, held-out 4.52; 0s]
+PASS: E4 pre-set P2 (partial): lone L WITHOUT T at r = 1 keeps held-out residual >= 0.3 (stalls below the torus saturation range); adding T does not reproduce the 16-like fall either (not decisive)  [L r=1 -: 0.567, T: 0.528]
+Reading: on 4^4 the U(1)_Y premise of Luscher's theorem is the zero-momentum (flux-sector) integral, which the
+index integers fix (C1); finite-range fits on 4^4 are sample- and size-limited and do not test locality.
+elapsed 63.8s
+TOTAL: PASS=9 FAIL=0

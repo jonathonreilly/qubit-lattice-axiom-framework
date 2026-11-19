@@ -1,0 +1,11 @@
+# Byte-identical copies of the workspace files (see README.md). Some lines end in
+# spaces, as the runners printed or wrote them. Git must not report that as a
+# whitespace error.
+agents/collective-spin10/runner.py whitespace=-trailing-space
+agents/edge-block/out.txt whitespace=-trailing-space
+agents/edge-block/rerun_2026-11-19.txt whitespace=-trailing-space
+agents/lambda-quantum/out.txt whitespace=-trailing-space
+agents/lambda-quantum/rerun_2026-11-19.txt whitespace=-trailing-space
+agents/misfold-generations/out.txt whitespace=-trailing-space
+agents/misfold-generations/rerun_2026-11-19.txt whitespace=-trailing-space
+agents/zoom-tilt/runner.py whitespace=-trailing-space

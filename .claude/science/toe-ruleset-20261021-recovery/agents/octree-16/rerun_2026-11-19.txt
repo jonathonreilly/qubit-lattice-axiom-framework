@@ -1,0 +1,28 @@
+== A. tick (st = 0.04), the two exchange orientations, gauged real-space ladder
+[PASS] A1 THEOREM X = W(1-g5)/2 (octree-unify) and X' = W(1+g5)/2: partial isometries P- -> P+, P+ -> P- (X^2 = 0) | error 2e-09
+[PASS] A2 THEOREM gauged real-space ladder = momentum tree at zero field (R = 1, 2, copy mass on); with flux it is unitary and exactly covariant (coarse links and rung exchange by fine-path transport) | spectra 2e-12, covariance 3e-15
+[PASS] A3 handedness (momentum +K checked in real space): the light rung-0 particle has helicity +1/2 with X, -1/2 with X'; Berry flux (rung 0, top) flips | X: h +0.500, flux (1.0, -1.0); X': h -0.500, flux (-1.0, 1.0)
+== B. internal 16 carried in parallel (left-handed orientation X')
+[PASS] B1 THEOREM ladder blocks: trivial commutant, no intertwiner between orientations; so the 16 in parallel with one orientation has exact internal symmetry U(16), with orientation tied to Xi (doublets +1, singlets -1) U(8) x U(8) | commutant 1, intertwiner 0
+[PASS] B2 THEOREM SU(3)xSU(2)xU(1) links in the (3,2)1/6 rep attach: exactly covariant under local transformations; trivial links give A (x) 1_6 | covariance 3e-15, trivial 1e-15
+[PASS] B3 light content: one left-handed Weyl per internal state = one family with nu^c; SM and Pati-Salam anomalies vanish; so(10) on the Fock 16: zero cubic anomaly, contains Y and B-L, not N | SU3^3 0, SU2^2Y 0, SU3^2Y 0, Y^3 0, Y-grav 0; doublets 4; SU4^3 0; so10 cubic 3e-14
+[PASS] B4 mode number N (N^3, N-grav, N-SU3^2, N-SU2^2, N-Y^2): one orientation N = 1 (axial type), Xi orientation N = Xi (3B+L type); anomalous in both, QCD breaks only the first | P 16,16,2,2,10/3; Xi 0,0,0,2,-2
+== C. background U(1) on the fine lattice (flux F through xy, holonomy th along z), R = 1, 16x16x4
+[PASS] C1 flux F: the light window holds exactly |F| rung-0 states (lowest Landau level) at th = +-0.5, crossing zero: J = +F; compensating crossings (mirror, rung 1) = -F | J(F) +1:+1/-1 +2:+2/-2 +3:+3/-3 +4:+4/-4 +6:+6/-6 -1:-1/+1 -2:-2/+2 -3:-3/+3 -4:-4/+4 -6:-6/+6; window margin >= 1.0e-3
+[PASS] C2 per holonomy cycle the light sector exchanges (charge, mode number) = (sum x^3, sum x^2) with the mirror (measured J): zero charge for the SM 16 under Y, B-L, QED, colour; nonzero for N, one species, T8 on Q alone, e^c alone | SM 6Y +0,+120; B-L x3 +0,+48; QED 6Q +0,+192; colour 2sqrt3 T8 +0,+24; T8 on Q only -12,+12; N +16,+16; one species +1,+1; e^c alone (6Y) +216,+36
+[PASS] C3 holonomy cycle sampled at th = 0, +-0.5, +-1, +-2, pi (F = 1): negative count constant; no level in the light window for |th| >= 1; one avoided crossing of rung-0 state and mirror at th = 0 | gap at th=0 4.0e-04, rung-0 weights [0.5 0.5]; min |w| at |th| >= 1: 1.1e-02 (inf = none below 0.016)
+[PASS] C4 DIAGNOSTIC R = 2, levels tracked: one rung-0 and one compensating crossing; the latter sits on the coarsest rung that resolves the flux (top-rung plaquette flux pi/2: middle rung; pi/4: top rung) | (8, 8, 8): rung-0 1, compensating rung weights [[0.07, 0.75, 0.17]]; (16, 8, 8): rung-0 1, compensating rung weights [[0.04, 0.41, 0.56]]
+[PASS] C5 Xi orientation: singlets u_R, d_R, e_R (6Y = 4, -2, -6) carried with X flow oppositely; doublets (X') + singlets (X): zero Y inflow, N_Xi inflow = 36 N_Xi-Y^2 | J_X {4: -4, -2: 2, -6: 6}; Y 0, N_Xi -72
+== D. which charges can carry a link
+[PASS] D1 THEOREM U(1)s on the 16 free of SU3^2, SU2^2, grav and cubic anomalies: three planes (cubic 18a(2a-b-f)(4a+b-f)); Y in one, B-L in two; with Y linked the extra links allowed are exactly span{Y, B-L} | (Y^2X, YX^2) on the planes: [(2*(a + b), 12*a*(a + b)), (0, 0), (b - f, -(b - f)*(b + f))]; plane 3 with Y: T3R = Y - (B-L)/2
+[PASS] D2 so(10) Casimir on su(16): two values on 45 and 210 states (cited maximal embedding); N^3 = 16, tr X^3 = -6 in su(16): of the subalgebras of u(16) containing so(10) only so(10) is anomaly-free | Casimir {16.0: 45, 24.0: 210}
+[PASS] D3 THEOREM Q = T3 + aY + b(B-L) + cN_Xi with charge-conserving Dirac masses: a = 1, q_p + q_e = q_n + q_nu = 4c; N_Xi anomalous so c = 0: q_p + q_e = 0 identically, q_n = b (not fixed by anomalies) | q_p = beta + 3*c + 1, q_n = beta + 3*c
+== E. against measurement (estimates)
+   V-A: every light state is left-handed (X'): pure V-A, Michel rho = 3/4 vs 0.74977(26); nu helicity -1/2 vs negative (Goldhaber 1958); X gives V+A, excluded
+   pi0 -> gg from the light anomaly N_c(q_u^2 - q_d^2) = 1: 7.76 eV vs 7.80(12) eV (PrimEx-II); q_p + q_e = 0 exactly vs < 1e-21 e; q_n = b vs (-0.2 +- 0.8)e-21 e
+   light cone: every internal state has the single-species band, E_QG,2 = 3.4e+18 GeV (octree-unify F2) vs > 7.3e11; 3 thermal nu^c: dN_eff = 0.14 vs 2.99 +- 0.17
+   proton: B commutes with the full ladder; only inflow (SU(2) instantons) breaks it on the light sector, as in the SM
+[PASS] E1 estimates consistent: pi0 width within 1 sigma, dN_eff < 0.17, Lorentz scale above bound | 18.1 s
+supplied: octree sites, split, fine rate, kap = 0.5, M = st, st = 0.04; the 16 and its labels; the orientation bit (X'); transport paths; backgrounds.
+cited: Callan-Harvey inflow, maximality of SO(10) in SU(16) (16 x 16b = 1 + 45 + 210), Witten SU(2) anomaly, measured values.
+TOTAL: PASS=16 FAIL=0

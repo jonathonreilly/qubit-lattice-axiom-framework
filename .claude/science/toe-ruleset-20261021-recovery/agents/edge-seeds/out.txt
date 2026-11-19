@@ -1,0 +1,28 @@
+== A. tensor seeds from the edge registers
+[PASS] A1 THEOREM (CL-3 text) + diagnostic: the vacuum standard subtracts the matter vacuum phase at the same edge value, a function of the edge alone, so it cancels the matter zero-point force but cannot touch the edge kinetic (hinge) term: the edge keeps its own zero-point spread 1/(2 M Om)  shift raw -0.316, standard 1.1e-13; Var standard 0.5000 vs 0.5000
+[PASS] A2 finite diagnostic (discrete ticks, conformal time per tick fixed by the lapse, 1D axis modes born at the cell scale): with vacuum-carrying splits the frozen tensor spectrum is 2H^2/(pi^2 M_P^2) up to a lattice correction falling as a power of H l_c  max|ratio-1| at H l_c .05/.02/.01: 4.3e-02 1.5e-02 7.9e-03 (power 1.05); splits 18
+[PASS] A3 THEOREM (discrete self-similarity a -> 2a, ell -> ell/2, k -> 2k) + check: every octave repeats exactly, so n_t = 0 with a log-periodic ripple of period ln 2 in k  octave 1 vs 0 max diff 4.0e-14; ripple (max-min) at H l_c .01: 1.5e-02
+[PASS] A4 diagnostic: a frozen mode is a departure from the edges' instantaneous vacuum, occupation (aH/2k)^2, so even an edge-own vacuum subtraction keeps it  n/(aH/2k)^2 at k/aH <= 0.1, 0.01: 0.996, 0.996; n up to 9205
+[PASS] A5 diagnostic: if splits only relabel the edges (keep h, p), every split squeezes the cell-scale modes and the frozen spectrum carries an O(1) log-periodic ripple  ratio range field-preserving 0.73..1.46 vs vacuum-carrying 0.9921..1.0070
+[PASS] A6 ESTIMATE: a relabelling split creates 1.0e-02 gravitons per cell-scale mode, energy 4.1e-03 per cell^4 against rho_Lambda = 3H^2 = 1.1e-09 at H l_c = 2e-05: excluded by 4e+06, so the split must carry the edges' vacuum onto the children's (law text)
+[PASS] A7 THEOREM (1D transport) + LP check: the fewest-change transport of a collective edge amplitude is the quantile map, so the actual amplitude scales with the spread and freezes when the mode freezes: CL-2 gives one definite classical seed, Born-distributed, without records  LP 1.196980 = monotone 1.196980; spread^2 at k/aH .1/.01/.001: 1.0062 0.9992 0.9991
+[PASS] A8 ESTIMATE: standard seeds P_t = 2(H l_c)^2/pi^2 meet r < 0.036 iff H l_c <= 1.9e-05; with CL-3's ONE constant per proper 4-volume the only de Sitter phase is today's, H/M_P = 4.9e-61, P_t = 5e-122: an early large Lambda is not in the rules
+== B. scalar seeds
+[PASS] B1 THEOREM: CL-1 reads the edges through rms sqrt(gamma^ii) = sqrt(tr gamma^-1 / 3) = 1 + tr(h^2)/6 + O(h^3): a traceless (tensor) edge mode moves the lapse and the split trigger only at second order, so zeta from tensors ~ P_t^2 ~ 1e-20 against A_s = 2.1e-9  linear 2e-08, quadratic/(tr h^2/6) 1.0000
+[PASS] B2 THEOREM (cites one-cell-start B2): the exact-split cascade keeps every Born mean homogeneous, so the constraint equations of the scalar metric have zero source: no linear scalar seed; a massless sea mode never sees the expansion (odds-ramp A1), so nothing is amplified at horizon crossing
+[PASS] B3 ESTIMATE: the fixed-lapse dark constant (w = 1/3, kicked by (HL)^2/8 per split) is the only rule component with rho + p > 0 in de Sitter: eps = 1.07 (H l_c)^2; it has no gradient or kinetic term, so no zero-point fluctuation freezes; even read as a clock with H/2pi noise it would give A_s = 0.0119 for every H and n_s = 1 (excluded either way); its real noise is cell-scale white, n_s - 1 = +3, below (H l_c)^3/16 = 5e-16 then weighted by eps
+[PASS] B4 THEOREM (conditional on the volume-mode probe): if the volume mode propagates with kinetic weight kappa relative to the tensors, P_zeta = H^2/(8 pi^2 kappa M_P^2) and r = 16 kappa; a GR-sized weight (kappa ~ 1) gives r ~ 16, so r < 0.036 needs kappa <= 2.25e-03, an epsilon no rule supplies
+== C. supplied de Sitter with quantum edges: scorecard
+   tensors: P_t = 2H^2/(pi^2 M_P^2)(1 + O(H l_c)), n_t = 0 + ln2-periodic ripple; scalars: none at linear order (A_s ~ 0, n_s undefined, r formally infinite)
+   exit: none (constant Lambda; one-cell-start C2/C4); one-cube start alone: exact vacuum, H = sqrt(Lambda/3) = today's
+   with a supplied H-clocked spectator (inflaton-design D): r = 2(H l_c)^2/(pi^2 A_s) and n_t = 0, breaking r = -8 n_t
+[PASS] C1 arithmetic: with quantum edges the tensor seed is forced given H, the scalar seed and the exit are not; meeting A_s, n_s and an exit needs a supplied clock
+== D. curvature squared with quantum edges
+[PASS] D1 check: my potential slow-roll (second order) reproduces PR #9918's 0.9649 at N* = 55; at its colour-anomaly N* = 50.3 and instant N* = 55.7 the ACT+DESI pulls are -3.7 and -2.6 sigma (#9918, exact background and end at eps_H = 1: -4.1, -2.9)  n_s(55) 0.9658; n_s, r: 0.9628 0.0041; 0.9662 0.0034
+[PASS] D2 ESTIMATE: quantum edges do not supply the term: matter- and link-induced curvature-squared terms are removed by the vacuum standard (same-edge subtraction), and edge loops, which it does not subtract, give at most ~ 10 ln(1/(H l_c))/(16 pi^2) = 0.69 against the needed 5.1e+08
+[PASS] D3 THEOREM (component list): every rule component after inflation has w <= 1/3 (sea and gravitons radiation, dark constant 1/3, links radiation below the cell), so instant reheating is the rules' ceiling on N*: the ACT miss is >= 2.6 sigma (2.9 in #9918) for every rule history, 3.7 (4.1) with the rules' own reheating; quantum edges lift only the register's caveat
+supplied: Lambda (or H) of the de Sitter phase; edge split carries vacuum (A6 forces it); M_P = 1/l_c; 1D-axis modes (A2-A5);
+  sigma = 0.3/sqrt3; volume-mode weight kappa (B4); R^2 coefficient (D); measured A_s, r, n_s; N* from PR #9918.
+  cited: inflaton-design D4/F1, one-cell-start B2/C2-C4, odds-ramp A1-A2, edge-source B3/B5, PR #9918.
+elapsed_seconds 0.2
+TOTAL: PASS=16 FAIL=0

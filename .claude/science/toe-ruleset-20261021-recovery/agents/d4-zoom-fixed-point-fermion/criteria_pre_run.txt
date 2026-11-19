@@ -1,0 +1,49 @@
+d4-zoom-fixed-point-fermion: pre-registered criteria (written 2026-10-26 BEFORE any computation)
+
+SYNTHESIS UNDER TEST
+"Matter's history weight on the D4 event set is the fixed point of the D4 zoom (block averaging over D4 cells,
+factor 2), sliced along a root."
+Expectation stated by the dispatcher: W(F4) gives all-orders protection of dim-6 (no imposed radiative condition),
+and the zoom removes the nearest-neighbour fermion's Lee-Wick pair, giving full reflection positivity.
+
+PLANNED CONSTRUCTION (fixed before the run)
+- Blocking kernel (factor 2, D4 -> 2 D4): coarse field = (1/16) sum_x w(x - 2X) phi_x, with w = 1 at 0, 1/2 on the
+  24 roots (facets of the coarse Voronoi cell, shared by 2 cells), 1/8 on the 24 norm-4 vectors (vertices of the
+  coarse Voronoi cell, shared by 8 cells). Fourier f(q) = w~(q)/16. This is the Voronoi-cell average with boundary
+  sharing. Required: W(F4)-invariant (all 1152 elements), each of the 16 cosets D4/2D4 has total weight 1,
+  f = 0 on pi D4* \ 2 pi D4*.
+- Fixed point: G*(p) = sum_{l in 2 pi D4*} Pi(p+l)^2 (-i g.(p+l) + m)/((p+l)^2+m^2) + alpha, Pi(q) = prod_{j>=1} f(q/2^j).
+  D* = G*^{-1}. alpha = 1/2 and 1 (inert for the spectrum).
+- Prior expectation (support argument, stated before running): the limit smearing has support 2V (V = Voronoi cell),
+  time half-width sqrt2 = 2 slice spacings, so the slice correlator is a pure positive exponential sum only for
+  n >= 4; site RP on all n, m >= 1 is NOT guaranteed by the support argument. Expected: "buffered" exact positivity.
+
+TEST 1 (fixed point) PASS criteria
+ 1a kernel W(F4)-invariant, partition of unity, zeros on pi D4* \ 2 pi D4* : exact (integer/rational check).
+ 1b RG identity R(G*) = G* (explicit factor-2 map) to < 1e-8 relative at random P.
+ 1c W(F4) covariance rho(Ap) = A rho(p), sigma(Ap) = sigma(p) to < 1e-10 at random non-grid p.
+ 1d exponential locality of D*: fitted decay kappa > 0.5 per unit length along root and short directions.
+ 1e GW relation and gamma5-hermiticity to < 1e-12; overlap of D* with m0 = 1/(2 alpha) returns D* (< 1e-12).
+ 1f no doublers: G* finite and D* != 0 everywhere except p = 0 (min |D*| over grid minus origin > 0.1/alpha... reported).
+ 1g lowest band from the root-slice correlator equals sqrt(k^2+m^2) to < 1e-6 (axis, face, body, generic k; m = 0, 0.3).
+ 1h dim-6: k^2 coefficient of v - 1 < 1e-5 in all directions (consequence of 1g).
+
+TEST 2 (reflection positivity along a root) quantities and verdict rule
+ - Exact fixed point at fixed transverse k: G(n;k) for n = 1..13 via theta-FFT. Hankel form H_ij = G(i+j) g_t, i,j = 1..6.
+   Full RP if wrong-sign fraction < 1e-8 (numerical floor); buffered RP if PSD only for i,j >= 2.
+ - Truncations R = 1..4 (D4 shells |x|^2 <= 2R) of D*: Laurent pole test (parents' machinery): number of complex
+   poles, real ghost fraction, Hankel wrong-sign fraction ("indefinite weight") vs R.
+ - Zoom rungs from the NN start (w = 1): exact statement that blocking keeps poles, so the pair persists at every
+   finite rung; its indefinite weight vs rung n = 0, 1, 2 reported.
+ Verdict for (2): WORKS if exact fixed point is full-RP AND some finite R has no complex pair and no ghost on all
+ sampled k; PARTIAL if exact (or buffered) RP holds only at the fixed point and every finite truncation/rung keeps
+ a complex pair or ghost; FAILS if the exact fixed point has a negative-norm or complex branch.
+
+TEST 3 (interacting protection) PASS criteria
+ 3a truncated fixed-point kernel is exactly W(F4)-invariant (coefficients constant on W(F4) orbits, < 1e-12).
+ 3b one-loop Yukawa and fermion self-energies with the new kernel: dim-6 O(4)-breaking residual <= 1e-12 (reuse of
+    d4-interacting-check moment method), Z^4 control nonzero.
+
+OVERALL VERDICT RULE
+ WORKS = tests 1, 3 pass and test 2 WORKS. PARTIAL = 1 and 3 pass and test 2 PARTIAL. FAILS otherwise.
+Smuggling gate reported separately. Deviations from this file will be stated in the note.

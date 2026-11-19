@@ -1,0 +1,38 @@
+d4-gravity: PRE-REGISTERED CRITERIA (written 2026-10-26 before any run)
+
+Question: does the adopted gravity sector (CL-3 hinge sum, tick fraction and pair tick
+offsets as hinge-sum response variables, lapse in the step) carry over to the D4 event set
+sliced along a root?
+
+Carrier (fixed before running): D4 events, Delaunay 16-cell tiling, each 16-cell coned from its
+centre (the deep holes = the Voronoi 24-cell vertices; same W(F4)-symmetric "D4 cone" as main's
+#9714/#9772/#9774, up to rotation and scale). Flat edges: event-event roots |r| = sqrt2,
+hole-event 1. Time = root t = (1,1,0,0)/sqrt2. Linearised Euclidean Regge hinge sum
+S = sum_tri A (2 pi - sum theta); metric reading = line-integrated h_ab d^a d^b/(2l);
+non-metric edge modes integrated out (Schur complement) -> Q_eff(K).
+
+PASS criteria (each a runner check):
+ G1 geometry: 24 roots; along the root time they split 2/16/6 (tick / pair-offset / slice);
+    slices are cubic lattices alternating by the body centre (the two tilings).
+ G2 Regge flatness: every triangle deficit of the flat complex = 0 to 1e-12.
+ G3 null space of Q(k) at generic k = vertex displacements only: nullity exactly 16
+    (4 vertex classes x 4); no extra zero-action branch.
+ G4 gap: the non-gauge, non-metric modes have |eig| >= 0.05 (lattice units) as k -> 0
+    (cell-gapped), the 6 metric non-gauge modes scale as k^2 (ratio 4 +- 0.2 on halving k).
+ R1 Q_eff(K) = c F_EH(K) + O(K^4): relative residual <= 2e-2 at |K| = 0.05 and falling by
+    >= 3x on halving, over >= 6 directions incl. root, axis, generic; single c for all.
+ R2 TT sector: Lorentzian speed from the TT root of e.Q_eff(k n + i w t).e = 0 is 1 to
+    |c - 1| <= 1e-3 at ka = 0.05, both polarisations, >= 3 spatial directions; |c-1| ~ (ka)^2.
+ R3 quartic anisotropy: report the (ka)^2 coefficient A(n, pol); the polarisation splitting
+    and direction spread are reported (no pass threshold on their size; PASS if extracted
+    with two-scale stability <= 20%). Map to GW170817 (|dc| < 1e-15) at 100 Hz with the cell
+    rung L = 8.1e-35 m: PASS if predicted |dc| < 1e-15.
+ N1 static weak field: static conserved source T = rho t t at k_t = 0: Newtonian h_tt ~ 1/k^2
+    and PPN gamma (gauge-invariant transverse spatial trace / h_tt) = 1 within 2e-2.
+ N2 one G: G_N (static) / G_T (TT coefficient) = 1 within 2e-2.
+ N3 gravitomagnetic (Lense-Thirring) response to a transverse current equals the continuum
+    EH value within 2e-2.
+ beta = 1 is nonlinear: NOT tested here (inherited from the Regge limit -> EH, as on cubic).
+Verdict rules: CARRIES OVER if G1-G4, R1, R2, N1-N3 pass; PARTIAL if R1/R2 pass but a
+static/gap item fails; FAILS if an extra zero-action branch (G3) or R1 fails.
+Tolerances are numerical (finite differences 1e-4 + Richardson); no certified roots.

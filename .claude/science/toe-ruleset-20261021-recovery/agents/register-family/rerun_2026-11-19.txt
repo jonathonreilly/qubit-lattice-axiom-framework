@@ -1,0 +1,23 @@
+== A. registers on small Fock models (dense <= 2^8)
+[PASS] A1 [T, checked] rishon flavour is an exact per-bond U(F): every generator sum_ends c_a^dag c_b commutes with the polar raiser and with the dressed hop, and flavour swaps leave the hop unchanged, so every ratio of rishon hop amplitudes is exactly 1 (no flavour order, no eps); matter modes carry no U(F) index | F=3: max|[H,G]| 1e-15, max|[V,G]| 2e-15, swap dev 2e-15
+[PASS] A2 [T, checked] Gauss's law is the total cluster number only: n_x + N_x-end and n_y + N_y-end are conserved, but n_x + n_(x-end, f) is conserved for no single flavour, so no matter mode is tied to a flavour; one-rishon hop amplitudes are equal for every flavour and background | |[H,n_x+n_Lf]| 1.00..1.00; amps alone 1.000, with background 0.707
+[PASS] A3 [T, checked] with the rule's flavour-blind dressing the update commutes with U(2) rotations of the family label, and an on-site family-changing bilinear commutes with every register operator (raiser, U(F)) and with Gauss's law: the link register gives no selection rule and no weight among families | |[H,T_ab]| 0e+00, |[Y,reg]| 0e+00
+[PASS] A4 [T, checked] family-selective dressing (family a hops on flavour a): each family's cluster number becomes its own exact Gauss law, i.e. one linked U(1) per family (family photons), and the on-site family-changing bilinear violates it, so every family-changing mass entry is forbidden at all orders: masses diagonal, mixing a permutation | |[Hs,G_a]| 0e+00, |[Y,G_1]| 1.0
+[PASS] A5 [T, checked] soft selectivity (flavour weights w_af with off-diagonal ratio r) keeps only the total Gauss law and breaks U(F); the ratio r is a new supplied coefficient, and the hop it weights never enters an on-site mass entry | r = 0.3: |[Hw,G_1]| 1.00, |[Hw,G_tot]| 0e+00
+   edge registers (cited, #9946 and CL-1 text): the edge hop conserves no edge number or parity; each cube's unitary reads its edges through gamma^ij and N alone, the same for every species, so an edge integer is neither conserved nor carried by a fermion; a family-dependent edge reading is an equivalence-principle violation
+== B. an exact family charge is linked: zeros, not powers
+[PASS] B1 [T, checked] an exactly conserved charge Q_F with distinct doublet values (one Higgs, of any charge h): (M^dag M)_jk needs Q_j = Q_k, so both sectors are diagonal in the doublet basis and the quark mixing is a permutation for every singlet assignment; measured |V_us| = 0.2243(8) is 264 sigma from 0 | 3000 draws, 2144 with six massive quarks, all 2144 permutation mixing
+[PASS] B2 [T] an exact charge is linked (CL-1 link clause), so it must also be anomaly-free and long-range; the working FN control charge has SU(3)^2 U(1)_F anomaly sum(2Q + u + d) != 0, so a tower charge is an APPROXIMATE charge, which the link clause does not link and whose breaking size eps the rules must then fix | anomaly 16
+== C. eps from the registers, fit-free ensembles [M targets as zoom-tower: m_t:m_c:m_u 1:7e-3:1e-5, m_b:m_s:m_d 1:2e-2:1e-3, |V| .225/.042/.0037; hit = within x3 of all seven; |c| log-uniform [1/3,3], random phase]
+[PASS] C1 [E] the registers' only amplitude ratios are U(F)-invariant, so eps = 1: every charge assignment collapses to anarchy, which never hits, while the supplied U(1) FN control (Q=(3,2,0), u=(4,1,0), d=(1,0,0), eps 0.22) does | joint hit: eps=1 0.0000, FN control 0.059 (4000 samples each)
+   look-elsewhere, supplied integer charges in a +-1 box (729 cells x 100) around each eps's ideal exponents:
+     eps 0.125 [1/8]: best 0.13, cells >= half control 0.08, max charge 3
+     eps 0.250 [1/(2S+1),S=3/2]: best 0.16, cells >= half control 0.12, max charge 5
+     eps 0.333 [1/3 (b=3)]: best 0.17, cells >= half control 0.27, max charge 6
+     eps 0.354 [2^-3/2 rung]: best 0.18, cells >= half control 0.25, max charge 7
+     eps 0.500 [1/2]: best 0.21, cells >= half control 0.69, max charge 10
+     eps 0.562 [(2S/(2S+1))^2]: best 0.18, cells >= half control 0.67, max charge 12
+     eps 0.750 [2S/(2S+1)]: best 0.18, cells >= half control 0.91, max charge 24
+[PASS] C2 [E] once integer charges are supplied, every register-shaped eps from 1/8 to 3/4 reaches the control's rate in some cell of its box: masses and mixing do not select eps, so a rule ratio landing near 0.2-0.4 is no evidence; the charges, not eps, carry the fit | 7/7 eps values reach half the control
+runtime 4.1 s
+TOTAL: PASS=9 FAIL=0

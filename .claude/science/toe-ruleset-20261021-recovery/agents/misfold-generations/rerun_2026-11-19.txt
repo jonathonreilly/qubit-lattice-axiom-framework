@@ -1,0 +1,24 @@
+== A. the model and the point misfold
+[PASS] A1 [T] interlacing: R has levels -1 (x4), +1 (x4); a 7-site cube fragment keeps -1,-1,-1 (exact R eigenvectors), one zero mode and +1,+1,+1, so removing one site from an even cube costs exactly a (= |mu| at the fold limit)  fragment levels [-1.0, -1.0, -1.0, -0.0, 1.0, 1.0, 1.0]
+[PASS] A2 [T] point misfold (cube with 5 units) costs a, sits in the 4-state level split 2+2 by the copy sign, and no one-cube move lowers it: stable, the q = 1 sector minimum  cost 0.600000, copy signs [-1.0, -1.0, 1.0, 1.0], local drop 6.7e-16
+[PASS] A3 [T] one cube holding 7 units (q = 3, odd): cost 3a = three separated point misfolds exactly; binding 0 (quadratic model: energies add), so it is marginal, not a distinct bound class  cost 1.800000 = 3a
+   (t = 0.0 s)
+== B. misfold classes (region holds the other fold), fold limit H = a R_E, a = 0.6
+[PASS] B1 [T+D] elementary misfolds on 4^3 and 6^3: the region's sites lie in 2^d_m distinct even cubes, so E = 2^d_m a exactly for EVERY charge q (zero modes at 0); energies 2a : 4a : 8a, ratios 1 : 2 : 4 (not fitted)  bond d1: |X| 2, Z 2, q -1..1, E/a 2.000, drop/a 0.50; plaq d2: |X| 4, Z 4, q -2..2, E/a 4.000, drop/a 0.50; cube d3: |X| 8, Z 8, q -4..4, E/a 8.000, drop/a 0.50
+[PASS] B2 [T+D] local stability: on every touched cube a one-cube one-body move lowers E (the region orbital leaves each touched cube mixed and non-passive): no elementary misfold is locally stable  min over fillings of the best one-cube drop/a: bond d1@4^3 0.50, plaq d2@4^3 0.50, cube d3@4^3 0.50, bond d1@6^3 0.50, plaq d2@6^3 0.50, cube d3@6^3 0.50
+[PASS] B3 [T] splitting: the q-sector minimum of a quadratic tick is |q| a (energies add), reached by |q| separated point misfolds; every odd-q elementary misfold (q = +-1) lies >= a above it and can decay to one point misfold  excess over the q=1 minimum, units of a: bond d1 1, plaq d2 3, cube d3 7
+[PASS] B4 [D] odd-cube domains (lines, sheet, block) on 8^3: cost grows with the domain, every one exceeds its q-sector minimum and admits a lowering one-cube move: none is stable  line1: Z 8, q 1, E/a 8.0, drop/a 0.50; line2: Z 8, q 1, E/a 13.7, drop/a 0.50; line3: Z 8, q 1, E/a 19.4, drop/a 0.50; sheet2x2: Z 8, q 1, E/a 24.1, drop/a 0.50; block2^3: Z 8, q 1, E/a 43.3, drop/a 0.50
+[PASS] B5 [T] RESULT: stable bounded odd-parity misfold classes = 1 (the point misfold, q = +-1); the q = 3 cube is marginal (binding 0). Pre-set hypothesis (3, by d_m) FAILS: in a quadratic tick nothing binds  count 1 (hypothesis 3)
+   (t = 0.6 s)
+== C. off the fold limit, mu = -eps (both tilings act)
+[PASS] C1 [T+D] the q = 1 sector minimum of H_eff is the band edge |mu| (extended states); the fold-built point and all elementary misfolds lie above it: a quadratic tick has a sumset spectrum, so no misfold binds at any mu  edge 0.3000; fold-built vacuum 2.365 above the true one; E - E(fold-built vacuum): point 0.447, bond 0.976, plaq 2.019, cube 4.142
+   (t = 0.7 s)
+== D. mode content per class (in-gap levels of the defect's own hop a(R_E frag + R_O region))
+[PASS] D1 [T+D] content differs by class: zero modes 2, 4, 8 (= 2^d_m, one per cut cube) plus region levels, against the point's single 4-state level (2+2): the classes do NOT bind the same content  d1: zero modes 2, other in-gap |E|/a [0.5774]; d2: zero modes 4, other in-gap |E|/a [0.8165]; d3: zero modes 8, other in-gap |E|/a []; point: 4 at E = a
+== E. neutral one-body selection rule, q = +1 states
+[PASS] E1 [T] Loewdin cofactor formula <A|c_i^+ c_j|B> agrees with the Fock-space value  max err 4.6e-16
+[PASS] E2 [T+D] RESULT: one-body neutral operators (site density, nearest-neighbour hop, link current) connect the q = +1 point state to every class and the classes to each other at order 1e-2..0.4: no zero by symmetry or topology; the size falls with d_m (smaller overlap), it is a suppression, not a rule  max |<P|O|X>|: d1 3.84e-01, d2 1.36e-01, d3 1.70e-02; X<->X': d1-d2 3.0e-01, d1-d3 3.5e-02, d2-d3 1.0e-01
+[PASS] E3 [T] verdict F4: no neutral selection rule protects the classes (a mu -> e gamma analogue is allowed at one-body order); fold-defect-dm (A): the fold parameter space is contractible, so no topological class label exists  
+skipped: clock-locking alternative (not cheap). supplied: eps 0.3, mu = -2eps, -eps, tori 4^3/6^3/8^3, region-fold extension, one-cube one-body move class, seed 20261023
+runtime 2.0 s; peak memory 125 MB
+TOTAL: PASS=13 FAIL=0

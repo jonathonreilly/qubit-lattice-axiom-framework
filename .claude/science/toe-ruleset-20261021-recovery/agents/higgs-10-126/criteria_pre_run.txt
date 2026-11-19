@@ -1,0 +1,37 @@
+higgs-10-126: pass criteria written BEFORE any run (2026-10-23).
+Question: is the 126 channel of 16 x 16 = 10 + 126 (+ 120) present or forced, with a fixed ratio to the forced 10 pair
+square (spin10-two-flavour), and does 10 + 126 give a falsifiable non-fitted mass relation?
+Each line is the expected (analytic) outcome; a check PASSES when the computation returns it. Outcomes against the
+hypothesis "126 forced with a fixed ratio" are RESULTS.
+
+A. Channel algebra on two 16s (exact)
+ A1 pair matrices C Gamma^(1), C Gamma^(3), C Gamma^(5) restricted to the 16 span 10, 120, 126 (ranks 10, 120, 126);
+    Gamma^(1), Gamma^(5) symmetric, Gamma^(3) antisymmetric; Sym^2 16 = 10 + 126 and Lambda^2 16 = 120 exactly.
+ A2 on Lambda^2(16 x 2) (496 states): channels (10,S=0), (126,S=0), (120,S=1), dims 10, 126, 360, multiplicity-free;
+    Casimirs C2_10 = 9, 25, 21. Hence exactly 3 independent number-conserving Spin(10) x SU(2) invariant quartics.
+ A3 every invariant quartic is a Casimir function: Q_10 = -(1/16)(C2_10 - 45N/4) - (1/8)(S^2 - 3N/4) - (1/32) N(N-1)/2,
+    Q_126 = (1/16)(C2_10 - 45N/4) - (3/8)(S^2 - 3N/4) + (9/32) N(N-1)/2, Q_120 = N(N-1)/2 - Q_10 - Q_126 (pair counts),
+    checked as 496 x 496 operator identities. 16 Q_10 reproduces the spin10-two-flavour identity
+    sum {B,B^+} = 2[144 - 2S(S+1) - C2_10 - J^2].
+ A4 the forced term has ZERO 126-channel coefficient in the pair basis; at fixed N it equals +g(Q_126 + Q_120) + f(N),
+    so the 126 and 120 enter with EQUAL, repulsive weight: no free 126/10 ratio is fixed beyond g_126 = g_120 (one
+    invariant, the 126-120 splitting, is free and the rules do not set it).
+ A5 charge-changing invariants: Spin(10) centre Z4 forbids Delta N = +-2; Delta N = 4 has exactly one invariant
+    (Sym^4 16 has no singlet: (psi Gamma psi)^2 = 0 for commuting psi; Sym^2 120 has one), the 10-channel Omega.
+    The 120 x 120 charge-4 tensor is proportional to the 10 one or zero.
+B. Levels (exact, from F = 144 - 2S(S+1) - C2_10 - J^2)
+ B1 126 and 120 pair composites both at 26 g above the ground state (10 at 10 g); B_126 |GS> != 0 (ground-state pair
+    count Q_126 = 27 > 0); ground-state pair fractions 10 : 126 : 120 = 9 : 27 : 84 of 120 pairs.
+C. Clebsch (exact)
+ C1 the 126 contains exactly one colour-singlet neutral doublet direction of each hypercharge; relative to the 10, its
+    (e,e^c) : (d,d^c) and (nu,nu^c) : (u,u^c) entries carry the factor -3 (ratio of ratios = -3).
+D. Mass sum rules (Babu-Mohapatra 1993, supplied form) and counting
+ D1 family-local 10 + 126 (each family's mirror its own channels, any VEVs): M_u, M_d diagonal, |V_CKM| a permutation.
+ D2 generic complex 10 + 126 (H real diagonal, F complex symmetric, r, s): 18 real parameters; Jacobian of the 13
+    charged observables (9 masses, 3 angles, J_CP) has rank 13: no charged-sector prediction.
+ D3 real (CP) case: 11 parameters, rank 11 < 13: two relations exist only if couplings are real (not forced by the rules).
+ D4 [E] pure-channel per-family relations m_e/m_d in {1 (10), 3 (126)}: measured GUT-scale (SM running, supplied)
+    1/2.43, 4.57, 1.69: no family is single-channel; Georgi-Jarlskog texture is supplied, not derived.
+Verdict expected: 126 NOT forced (free, or repulsive-equal-to-120 in the forced term); Y126/Y10 and VEV ratios not fixed;
+no non-fitted mass relation: UNTESTED / no prediction.
+Runner targets: stdout < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded, < 60 s, ends TOTAL: PASS=N FAIL=0.

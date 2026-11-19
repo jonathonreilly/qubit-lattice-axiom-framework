@@ -1,0 +1,26 @@
+== G. sites, partition links and mixed plaquettes in one complex
+[PASS] G1 every site is the midpoint of the bond from its even to its odd block centre (offset in {+-1}^3); each even centre has 8 distinct odd neighbours
+[PASS] G2 each mixed plaquette spans 2 even + 2 odd blocks and is a tetrahedron whose free edges are one even link (axis a) and one odd link (axis b != a); 12 per cell  12 per cell; per cell V,E,F,T = 2, 8+3+3, 24, 12 -> Euler 0
+== P. exact relation chi -> partition-lattice connection
+[PASS] P1 Pi is gauge covariant: odd-block phases drop out, even-block phases enter as the even-lattice gradient
+[FAIL] P2 per cell: chi has 8 - 2 = 6 gauge-invariant values, Pi(chi) has 3 - 1 = 2; the magnetic form (12 rhombi) reproduces what-is-a-link: 2 gauge zeros, k=0 spectrum 0,0,0,0,8,8,8,24  rank[gauge | Pi^dag] = 5 (2 gauge + 3 Pi rows share the 1 even-gradient direction)
+[PASS] P3 at k = 0 ker Pi = exactly the four gapped branches; the zero modes are uniform A (3) + gauge (1)
+[PASS] P4 the massless pair is Pi-visible (|Pi v|/|v| ~ 0.7) and transverse; omega^2/k^2 -> 1/2 (unit couplings)  |Pi v|/|v| in [0.707,0.707], longitudinal <= 2.0e-03
+== N1/N2. what a Margolus link update can be
+[PASS] N1 inside one block the 8 sites lie in 8 different opposite-partition blocks, so block phases shift each chi independently; the commutant of independent shifts (Z_5, 2 registers) is N^2 = 25-dim = functions of e only. Mixed plaquettes are never block-local (G2)
+[PASS] N2 rotations about cube centres act on CL-2-hopped registers with class invariant l_a^3 l_b^4 / l_ab^6 = -1 (double-valued); control flux-0 hop gives +1. A W-hopped quantum has half-integer helicity: a fermion cannot emit one singly  CL-2 -1.000000, control +1.000000
+== S. what fixes the link speed
+[PASS] S1 symmetric stress in g = diag(-alpha,1,1,1) needs alpha = (energy flux)/(momentum) = v_g v_p; fermion alpha = 1/3, so a link source in the same flat metric needs c_link^2 = 1/3: g_E g_B tau^2 = 2/3 (chi law), C = 1/sqrt3 (Yee)  alpha_f = 0.33333330
+[PASS] S2 Yee at C = 1/sqrt3: cos w = 1 - 3C^2 + C^2 sum cos K equals the fermion band at every K (500 K)  5.3e-15
+   axis: c = 0.577350 0.577343 0.577343; w/K = c(1 - b w^2): b_fermion +0.08333, b_chi(cont) -0.07939, b_chi(leapfrog) -0.12105
+   face: c = 0.577350 0.577342 0.577342; w/K = c(1 - b w^2): b_fermion +0.02083, b_chi(cont) -0.07115, b_chi(leapfrog) -0.11281
+   body: c = 0.577350 0.577346 0.577346; w/K = c(1 - b w^2): b_fermion +0.00000, b_chi(cont) -0.03105, b_chi(leapfrog) -0.07272
+[FAIL] S3 with the stress-fixed product the chi law has the fermion speed at leading order in every direction
+[FAIL] S4 the chi law is slower than the fermion at O(K^2) along body (-0.0311 w^2): at 1e20 eV the fermion leads by -7.0e-17 > 4.4e-23, so proton vacuum Cherenkov (if protons carry the fermion O(K^2)) excludes it; Yee at C = 1/sqrt3 has no offset
+== Z. can coarse cells of one-mode sites carry the connection?
+[PASS] Z1 site subsets with conserved number under the tick: massless 2 (the two sublattice sectors, swapped by 90-degree rotations); massive 1 (none proper). A carrier subset with its own number constraint is not supplied by CL-3  massless 2, massive 1
+[PASS] Z2 collective (pair) modes of the free tick at fixed total K form a continuum, not a two-helicity pole: lowest pair energy >= w(K) (edge reached as one partner -> 0), spread of order 1  w(K) = 0.2639, pair energies in [0.2893, 5.8564]
+   quantum-link budget (N = 5 levels per link = 2 x 4 fermion rishon modes; 8 links per coarse cell): rung 1: 8 modes vs 64 for links, rung 2: 64 modes vs 64 for links, rung 3: 216 modes vs 64 for links
+[PASS] Z3 counting alone allows one-mode carriers from rung 3 (216 modes vs 64 for N = 5 links + matter); rung 1 cannot (8 vs 64)
+supplied: CL-2 coin; partitions; minimal coupling as site phases; quadratic chi/Yee laws; CL-6 stress clause; Planck block 2a; proton O(K^2) = fermion O(K^2). Literature, not rederived: Coulomb phase of Z_N (N >= 5) and U(1) lattice gauge theory.
+TOTAL: PASS=12 FAIL=3

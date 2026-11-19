@@ -1,0 +1,69 @@
+---
+claim_id: a_copy_blind_vacuum_condensate_fixes_no_koide_phase_bounded_theorem_note_2026-10-21
+claim_type: bounded_theorem
+claim_scope: "For three supplied identical copies of the light band of the register's tick with copy group S3 and a Hermitian copy-space condensate in Hartree mean field, a C3-symmetric, reflection-breaking vacuum is a circulant whose masses are distinct iff sin 3 delta != 0, adds no anisotropy, and enters copy-blind potentials only through e3; the sea term, scanned at three mass scales and three r values in both readings, has stationary delta only at sin 3 delta = 0 (a degenerate pair); copy-blind contact terms leave delta free, a cubic determinant term frees it only in a tuned window, and copy-blind contact vacua give at most two distinct positive eigenvalues and a heaviest/middle ratio of at most 2.54 (6.4 in the square-root reading) against a measured 16.82. Fits to measured lepton masses are estimates. The colour, mixing and breaking-limit sections of the runner did not execute. No derived r, delta, copy count or mixing is established."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/a_copy_blind_vacuum_condensate_fixes_no_koide_phase_2026_10_21.py
+---
+
+# A copy-blind vacuum condensate fixes no Koide phase
+
+Claim type: bounded_theorem.
+Primary runner: `scripts/a_copy_blind_vacuum_condensate_fixes_no_koide_phase_2026_10_21.py`.
+
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its supplied tick gives two copies with degenerate masses. Schur's lemma forbids a symmetric rule from splitting them, so this note tests the alternative of breaking a copy symmetry by the vacuum state rather than by the rule. The model supplies a third identical copy, the copy group S3 and a Hermitian condensate phi. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose none of these.
+
+The vacuum is a stationary point of the sea phase plus a Hartree contact term. State-level breaking does avoid the Schur degeneracy and keeps isotropy. But no vacuum built this way lands on a derived r or delta, and every value it produces contradicts the measured lepton masses. Several PASS lines in the runner record such failures.
+
+## Statement
+
+1. Measured targets (estimates). A three-mass fit of sqrt(m_k) = a(1 + 2 sqrt r cos(delta + 2 pi k/3)) to pole masses gives r = 0.4999967(76) and delta = 0.2222248(63), each within 1 sigma of 1/2 and 2/9. The two values cannot both be exact: together they predict m_mu/m_e = 206.770316 against 206.7682830(45), about 452 sigma off. With r = 1/2 exact, delta = 0.2222220471 = 2/9 - 1.75e-7; with delta = 2/9 exact, r = 0.4999997868. No angle of the form p pi/q, arccos(p/q) or arctan(p/q) with q <= 30 lies within 2 sigma.
+2. State-level breaking. An S3-invariant vacuum has commutant span{1, J} and masses {a+2d, a-d, a-d}, so it keeps a degenerate pair. A vacuum that keeps C3 is a circulant a + bP + b*P^2. The reflection maps delta to -delta, so an S3-invariant potential has the pair of vacua +delta and -delta, and the masses are distinct exactly when sin 3 delta is nonzero. The symmetric functions e1 = 3A and e2 = 3A^2(1-r) do not depend on delta, while e3 = A^3(1 - 3r + 2r^1.5 cos 3 delta). A copy-blind potential therefore sees delta only through e3. With a circulant copy mass, the 24 levels at any K are the single-copy levels at the eigen-masses, so the condensate adds no anisotropy.
+3. The sea locks delta at degenerate points. dG/d delta = -6 A^3 r^1.5 sin(3 delta) f'[mu1, mu2, mu3], where f'[...] is a second divided difference of the derivative of the sea phase. That divided difference keeps one sign over the scan, so every stationary delta has sin 3 delta = 0. At r = 1/2 the minima have masses in the proportion (1.707, 1.707, 0.414) in the linear reading, or (5.83, 0.086, 0.086) in the square-root reading, against a measured m_mu/m_e = 206.77. A copy-blind (U(3)-invariant) Hartree term depends only on Tr phi and Tr phi^2, so it does not change the delta landscape. A cubic det(phi) term gives an interior stationary delta only within a 1.40 percent window of coefficients, and hitting delta = 0.2222220 then fixes that coefficient. It is tuned, not derived.
+4. Copy-blind contact vacua cannot carry the lepton spectrum. With v = Omega + theta^2/(2 gamma) and Omega''' > 0, v' is unimodal on theta > 0. Hence at most two distinct positive eigenvalues occur, and three positive square roots of mass with the Koide signs are impossible. Three distinct masses put one copy on each root of v' = c, which bounds the heaviest/middle ratio by at most 2.54 in the linear reading, or 6.4 in the square-root reading, across the light band. The measured m_tau/m_mu is 16.82.
+
+## Derivation
+
+Item 2 is the commutant of S3 and C3 on three copies together with Vieta's formulas for the circulant eigenvalues. Item 3 differentiates the sea free energy G = sum_k f(mu_k) along delta at fixed (A, r): since only e3 depends on delta, dG/d delta factors through d e3 / d delta, which is proportional to sin 3 delta, times a divided difference of f'. Item 4 follows from Omega''' > 0: then v'' changes sign at most once, so v' = c has at most two positive roots.
+
+## Checks
+
+The runner prints 16 PASS lines and then stops with an error at the start of its colour section. A brentq root search there raises `ValueError: f(a) and f(b) must have different signs`. No TOTAL line is printed, so the runner does not exit cleanly.
+
+- Section A:
+  - the three-mass fit;
+  - the 452 sigma exclusion of the exact pair, with both one-exact variants giving m_tau = 1776.97 against 1776.93(0.09);
+  - the nearest lattice angles: p pi/q = 0.224399 at 347 sigma, arccos(p/q) = 0.258922 at 5861 sigma and arctan(p/q) = 0.223477 at 200 sigma;
+  - for quarks delta is not Q/3 in either sector, at either scale.
+- Section B:
+  - the S3 commutant;
+  - the C3 circulant and the delta -> -delta map;
+  - the dependence on e3 only;
+  - the band of the register's tick (2.9e-15);
+  - isotropy with a circulant copy mass (1.2e-15);
+  - convergence of the sea quadrature (4e-15), with Omega''' > 0 on (0, 1.9 eps].
+- Section C:
+  - the dG/d delta identity (relative deviation 2.3e-9);
+  - the scan over mu/eps in {0.001, 0.03, 0.2}, r in {0.5, 0.75, 1} and both readings, where the divided difference varies by at most 6 percent and keeps its sign;
+  - the copy-blind Hartree term leaves delta free;
+  - the 1.40 percent window for the cubic term.
+- Section D:
+  - at most two distinct positive eigenvalues. This PASS records a failed mechanism;
+  - the ratio bound, with R = 2.058, 2.123, 2.259 and 2.539 at mu*/eps = 0.01, 0.11, 0.47 and 1.23, against 16.82. This PASS also records a failed mechanism.
+- Not executed: sections E to G. These are the colour rescaling (N_c = 3 at coupling beta behaves as N_c = 1 at beta/3), the gap between the up and down Koide Q, the mixing values |V_us| = 0 and 1/sqrt 3 against 0.225, and the domain-wall and familon limits. The probe report derives them, but this runner output does not verify them, and they are not claimed here.
+
+## What is supplied and the boundary
+
+Supplied:
+- three identical copies (the rules give two) and the copy group S3;
+- a Hermitian condensate, read either as the masses or as their square roots;
+- the contact rule and its couplings, which are scanned rather than fixed;
+- the step eps = 0.04;
+- the Hartree treatment only, with no fluctuations and no conditioning on the actual configuration;
+- the measured inputs, PDG and CODATA values.
+
+The physical mass scale, mu/eps of about 1e-22, is not scanned. A theorem of Lindemann-Weierstrass type is cited, not rederived: phases built from algebraic matrix entries cannot equal 2/9 rad exactly.
+
+Not established: any derived r, delta, copy count or mixing. The class "two copies of the register's tick, a copy-blind contact rule and spontaneous breaking" fails against m_tau/m_mu and the degenerate lock on delta. A copy-structured law would need at least two conditions on the copy potential, no fewer inputs than two supplied constants.

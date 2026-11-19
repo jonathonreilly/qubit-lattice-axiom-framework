@@ -1,0 +1,145 @@
+---
+claim_id: no_adopted_rule_fixes_the_floquet_slab_layer_parity_because_the_zoom_ladder_keeps_one_orientation_the_vacuum_fold_is_blind_to_inversion_and_adopted_half_ticks_carry_no_turn_winding_bounded_theorem_note_2026-10-24
+claim_type: bounded_theorem
+claim_scope: "Free-field Floquet slabs of floquet-pi-slab (layers F = FREEZE or F^+, turn-commuting label gates, g = 0.5) on CL-1's 2x2x2 cell along the turn axis, plus CL-1's two-tiling tick on a 4^3 torus (eps = 0.3, single particle). (T0) The slab's turn-graded winding is W = n W_F with n = #F - #F^+, for every layer pattern checked; the bulk gap forces alternation, so n = Ls mod 2. (A) Zoom ladder as layer direction: the split's site map sends parent cubes of both tilings onto child even-cube corners (no tiling bit passes rung to rung), the split passes the tick forward with a generation-independent polar direction, so a rung-indexed stack is all-F, W = N W_F, gapless bulk; the rung count is log2 of supplied block sizes. (B) The vacuum of U^+ is the particle-hole complement of that of U, so every cube's number variance and the selected fold are identical for F and F^+ (checked); mu -> -mu (the tiling swap, an exact translation-plus-half-tick conjugation) flips the fold. A both-ends-on-the-selected-fold termination therefore holds for every Ls. (C) Each half-tick of CL-1's tick commutes with the site-gauged (111) turn on the axis, so every stack of adopted half-ticks has W = 0 for any count. (D) F^+ is no turn-commuting regauging of F; the only parity-fixing condition found (slab winding = update-tick winding) gives n = 0 with the adopted tick. Not covered: interactions, gauge fields, the copy-mass factor (not built), a rule that would make the update tick FREEZE-class."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+  - a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_bounded_theorem_note_2026-10-23
+  - the_sign_of_the_mass_angle_picks_one_cube_fold_of_the_two_tiling_tick_and_its_misfolds_are_the_matter_fermions_while_dimer_resonance_and_symmetric_window_rules_leave_the_3d_fold_unselected_bounded_theorem_note_2026-10-22
+runner: scripts/no_adopted_rule_fixes_the_floquet_slab_layer_parity_because_the_zoom_ladder_keeps_one_orientation_the_vacuum_fold_is_blind_to_inversion_and_adopted_half_ticks_carry_no_turn_winding_2026_10_24.py
+---
+
+# No adopted rule fixes the Floquet slab's layer parity: the zoom ladder keeps one orientation, the vacuum fold is blind to inversion, and adopted half-ticks carry no turn winding
+
+Claim type: bounded_theorem. Exact statements are labelled [T], finite diagnostics [F] and readings [S].
+Runner: runner.py, TOTAL: PASS=7 FAIL=0, 3.7 s, 63 MB peak, 4.8 k characters of stdout, seeded, AUDIT_TIMEOUT_SEC = 120.
+It was tested under a unique filename (scratch/slab_parity_test_run.py). Axioms unchanged. No rule adopted.
+
+## Question
+
+floquet-pi-slab found that a slab alternating FREEZE (F) and its inverse (F^+), with label gates, puts the q 1 mirror in the
+other copy only for an odd layer count, which restores N_f in {3, 6, 9}. The parity and the label bond pattern were chosen.
+Does anything in the adopted rules force them? Three candidates were tested:
+- (a) the layer direction is the zoom ladder (CL-1 split, b = 2, belonging to the even tiling, polar);
+- (b) both slab ends terminate on the same selected cube fold (fold-selection-3d);
+- (c) a layer is a half-tick of one tiling, so the count is fixed by the tick's own period.
+
+Repo first. A git grep of origin/main (docs, scripts) for "odd layer count", "slab parity" and "layer count parity" found
+nothing, and no open PR covers it. This note builds on floquet-pi-slab, fold-selection-3d, twist-local-single,
+polar-split-reason and the register's CL-1 Split paragraph.
+
+## Pass criteria
+
+The criteria were written before any code ran (criteria_pre_run.txt). PASS = an adopted rule forces odd parity, together
+with the reason it is not a choice in disguise. Predicted: FAIL for (a), (b) and (c), and (d) conditional only. Every line
+matched its prediction except one runner check (B2), whose spectrum comparison was wrong. The spectrum of CL-1's real tick
+is closed under conjugation, so it cannot tell inversion apart from a swap. The check was replaced by the exact
+translation identity before the final run.
+
+## 0. What the parity is
+
+- 0 [T]/[F]. W(F^+) = -W_F. For any layer pattern, W = n W_F with n = #F - #F^+. The label gates commute with the turn, so
+  they add nothing.
+  - Checked for patterns with n = 1 and n = -3.
+  - Checked for alternating stacks with Ls = 2..9, which give W = (Ls mod 2) W_F.
+- The bulk gap forces alternation (floquet-pi-slab C2), so n is in {0, +-1}, and "odd Ls" means "n = +-1".
+- The question is therefore: what fixes the net orientation n?
+
+## A. Zoom ladder
+
+- A1 [T]. The split's site map y = 2x sends the 8 sites of every parent cube of either tiling to least corners of child EVEN
+  cubes. The child tiling is fixed by the split itself ("a split belongs to the even tiling"), whatever the parent's tiling
+  was, so no tiling bit passes from rung to rung.
+- A2 [T]/[F]. The split passes the tick forward: half of a half-tick before the passing and the other half after, with no
+  inversion. polar-split-reason shows the polar direction is the same at every generation. So a rung-indexed stack has
+  constant orientation, i.e. it is all F.
+  - Then W = N W_F: (-4, 2, 2), (-6, 3, 3) and (-8, 4, 4) at N = 2, 3, 4.
+  - The bulk has a nonzero two-layer winding (-4, 2, 2) at every k_l, so it is gapless at 0 and pi.
+  - The ladder cannot supply the alternation at all, let alone its parity.
+- A3 [S]. The rung count from the finest (matter) role block to the coarsest (edge register) block is log2 of block sizes
+  that CL-1 supplies (B_f, b_e). Splits are triggered by edge lengths, so the count is dynamical, and no clause fixes its
+  parity.
+
+## B. Termination on the cube fold
+
+- B1 [T]/[F]. Theorem. If U has no eigenphase at 0 or pi, the vacuum of U^+ is the particle-hole complement of the vacuum of
+  U (C -> 1 - C). Each cube's total goes n -> 8 - n, and its variance is unchanged.
+  - So the fold (which tiling's cubes hold definite totals) is the same for F and F^+.
+  - On CL-1's two-tiling tick (4^3 torus, eps = 0.3, R^2 = 1 on both tilings), (Var N_even, Var N_odd) = (1.822, 0.310) for
+    both U and U^+ at mu = 0.2.
+  - At the fold limit mu = 2 eps it is (2.0, 0.0).
+- B2 [T]/[F]. Control with power.
+  - mu -> -mu is the tiling swap: translation by (1,1,1) maps R_e to R_o exactly, and U(-mu) is the translated tick
+    conjugated by one half-tick (identity to 1e-15). The swap flips the fold, to (0.310, 1.822).
+  - Inversion does not flip it.
+  - The inverse tick's steps are -(eps -+ mu/2), so its naive "mass angle" is -mu, yet its fold is unchanged. The "sign of
+    mu" in fold-selection-3d must therefore be read as sign(mu/eps). This sharpens that note.
+- B3 [T]. Every layer of the F/F^+ slab has the same fold, so the termination "both walls end on the selected fold" holds for
+  every Ls and fixes nothing about n.
+  - A tiling (fold) bit is a conjugation, and a determinant winding is conjugation-invariant, so W never sees it.
+  - Odd parity would follow only if F and F^+ layers sat on opposite folds, and B1 shows they do not.
+
+## C. Layer = half-tick
+
+- C1 [T]. Each of CL-1's half-ticks (the even step on R_e and the odd step on R_o(K)) commutes with the site-gauged (111) turn
+  on the axis (commutator 0).
+  - By floquet-pi-slab B1, each half-tick has W = 0, and so does the whole tick, with or without the mass angle. All four
+    windings come out (0, 0, 0).
+  - So any stack of adopted half-ticks has W = 0 for every count and parity, which gives q_mirror = q_light.
+- C2 [T]. FREEZE is a five-layer e.o.e.o.e circuit (twist-local-single) with no turn-commuting layering at any depth
+  (floquet-pi-slab B2).
+  - So its half-ticks carry no sector winding of their own, and the unit of W is the whole FREEZE tick.
+  - The period fixes the number of half-ticks per tick (5). It does not fix the number of FREEZE ticks in the stack.
+
+## D. Consistency reading (not an adopted rule)
+
+- D1 [T]. F^+ is no regauging of F by any K-continuous, turn-commuting unitary, since that would keep W, and
+  W(F^+) = -W_F.
+  - So the inverse layers form a supplied orientation field. CL-1 has one universal step eps and no inverse tick, and n is
+    the net charge of that field.
+  - The only parity-fixing condition found is "the slab's compactified tick has the winding of the update's own tick".
+  - With the adopted CL-1 tick (W = 0) this forces n = 0, which is EVEN (q_mirror = q_light), the wrong parity.
+  - With FREEZE as the update it would force n = 1.
+  - So odd parity is equivalent to adopting a W != 0 (FREEZE-class) update tick. That is a CL-1-level choice, not a
+    consequence of any adopted clause.
+
+## Answer
+
+FAIL, as predicted. No adopted rule forces odd n or the label bond pattern.
+- (a) The zoom ladder keeps one orientation, which gives an all-F stack with a gapless bulk.
+- (b) The vacuum fold is exactly blind to inversion, so same-fold termination holds for every Ls.
+- (c) The adopted half-ticks carry W = 0, so half-tick bookkeeping gives q_mirror = q_light at any count.
+- The one natural consistency condition, applied to the adopted tick, selects EVEN.
+
+Minimality, 3 over 6: NO. None of the candidates touches the family count.
+
+## Gate (anti-smuggling)
+
+No rule is proposed. "The slab's net orientation is +1" or "the update tick is FREEZE-class" would each produce odd n. The
+first is a choice whose only motive is the count. The second is the real open decision: adopting FREEZE as CL-1's tick.
+It would have to pass the gate on predictions of its own, such as FREEZE's pinned pi node and the pi partners on both walls,
+which are UNTESTED.
+
+## Smuggling review
+
+Supplied:
+- FREEZE;
+- the F^+ layers (an orientation field outside CL-1);
+- the label bond pattern;
+- g, eps, the mu values and Ls;
+- free fields.
+
+Forced:
+- W = n W_F;
+- the split's erasure of the tiling bit;
+- the forward split passing, which keeps orientation constant;
+- the inversion blindness of the vacuum fold (exact);
+- the tiling swap as a conjugation;
+- W = 0 for the adopted half-ticks;
+- the even parity selected by the consistency reading with the adopted tick.
+
+Not shown:
+- the copy-mass factor's winding (expected 0 by the B1 lemma if it commutes with the turn; not built here);
+- interactions;
+- any rule that would make the update tick FREEZE-class.

@@ -1,0 +1,74 @@
+---
+claim_id: partition_neutral_margolus_ticks_cannot_both_gap_the_pi_cone_and_carry_a_mass_bounded_theorem_note_2026-10-21
+claim_type: bounded_theorem
+claim_scope: "For the supplied spin-3/2 Margolus tick with half-tick block unitaries V(a) = cos a W + i sin a, U(R) at R = pi(1,1,1) and U(0) are given exactly by the two half-tick masses; the covariant block algebra is span{1, W, F, B}; each of eight partition exchangers acts on it as conjugation by 1, F, B or W; for root-found single ticks that are partition-neutral with a nonzero pure Dirac mass at K = 0, U(R) is scalar, and for any schedule of edge-hop masses partition neutrality forces mass times pi-gap = 0; the staggered tick (mu/2 + b, mu/2 - b) gaps the pi-cone by 2b and carries mass mu but is invariant under none of the exchangers; the two copies have equal rest mass for every covariant tick sampled. Finite diagnostics of a supplied model. Longer general schedules, non-site-local exchangers and the bound pi-gap <= mu for the translation class are not established; no adopted tick or physical reading of the pi-cone is established."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/partition_neutral_margolus_ticks_cannot_both_gap_the_pi_cone_and_carry_a_mass_2026_10_21.py
+---
+
+# Partition-neutral Margolus ticks cannot both gap the pi-cone and carry a mass
+
+Claim type: bounded_theorem.
+Primary runner: `scripts/partition_neutral_margolus_ticks_cannot_both_gap_the_pi_cone_and_carry_a_mass_2026_10_21.py`.
+
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. This note concerns the supplied spin-3/2 Margolus tick, which has one fermion mode per site and applies a block unitary on even 2^3 blocks and then on odd blocks shifted by (1,1,1). It has a massless species at R = pi(1,1,1) and two equal-mass Dirac copies at K = 0. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose neither the tick nor the readings. Convention: the half-tick block unitary is V(a) = cos a W + i sin a = W e^{iaW}. "Privileges no partition" is read as invariance under one of eight partition exchangers. Under that reading, no covariant term found here gives a mass and also gaps the pi-cone, and no covariant term splits the two copies.
+
+## Statement
+
+1. Formula at R. With even mass a and odd mass b, U(R) = -cos(a-b) + i sin(b-a) W and U(0) = cos(a+b) + i sin(a+b) W. The K = 0 mass is a+b, and R sits at pi +- (a-b).
+2. Covariant block algebra. The commutant of the 24 spin-3/2 corner actions is span{1, W, F, B}: the identity, the edge hop, the face-diagonal hop and the body-diagonal hop. (F, B, W) act as Pauli matrices on a two-state index. W and B anticommute with the cone's velocity matrices, so they are Dirac masses; F commutes with them, so it is not a mass. The corner parity Gamma = D(R) acts on this algebra as conjugation by F.
+3. Exchangers. Translation by (1,1,1) with the gauge (-1)^x, and inversion through a site, each optionally combined with Gamma or with complex conjugation, give eight operations. Each maps even-block covariant unitaries onto odd-block ones and acts on the block unitary as conjugation by 1, F, B or W.
+4. Single ticks. Take a partition-neutral single tick whose K = 0 term is a nonzero pure Dirac mass (no F part). Then U(R) = lambda 1, with lambda^2 equal to the product of the two K = 0 levels. So R sits either at the light centre (an extra light species) or exactly at its pi-point (gapless).
+5. Edge-hop mass schedules. For any schedule V(m_t), U(0) = exp(i W sum m_t) and U(R) = (-1)^(n/2) exp(i W sum (-1)^t m_t). Every exchanger symmetry therefore forces mass times pi-gap = 0. A mass sign alternating every tick gives U(0) = U(R) = 1, which is massless and ungapped.
+6. Staggered tick. The half-tick masses (b, -b) are invariant under four exchangers and gap R by 2b. Adding the mass, (mu/2 + b, mu/2 - b), breaks all eight. Its bands are cos w = ((cos 2b + cos mu)/2) S - (cos 2b - cos mu)/2, with S the mean of cos K_a, and fill [mu, pi - 2b]. The light band is sqrt(mu^2 + c^2 k^2) with c^2 = (cos 2b + cos mu)/6, and the tick keeps 24/24 rotation covariance. Its site-inversion image is the same rule with mu -> -mu. The only thing that names a partition is the sign of mu relative to b. With b = (pi - 1/2)/2 every mode lies within the switching-law domain |w| <= 1/2 rad per tick, at speed c = 0.142.
+7. Rejected route. Rotating the involution toward F, cos h W + sin h F, is neutral under site inversion and gaps R by 2h, but it makes the cone speed direction-dependent at first order, with anisotropy about 2.8 h.
+8. Copies. Under the 24 rotations the K = 0 Bloch space is two copies of G3/2, with commutant 1_4 x M_2. Every covariant tick sampled has rest levels in groups of four, so the two copies have equal rest mass. The Dirac masses form an 8-dimensional space 2 A1 + 2 A2 + 2 E whose rotation-invariant part is span{W, B}. Both of these give the two copies equal mass, and every copy-splitting mass breaks the rotations.
+
+## Derivation
+
+Item 1 follows from D(R) = Gamma and Gamma W Gamma = -W, so the odd half-tick at R is V(b) with W replaced by -W. Item 5 follows from V(m) = W e^{imW} and W^2 = 1: products of edge-hop masses collapse to a single exponential in W, with the signs at R alternating. For item 4 the runner works through an explicit decomposition: a partition-neutral tick is (v, alpha(v)) with alpha conjugation by 1, F, B or W. Item 4 is verified on root-found samples rather than proved in closed form. Item 8 follows from Schur's lemma: since the K = 0 space is 2 x G3/2, any rotation-invariant operator acts as the same 4x4 block on both copies.
+
+## Checks
+
+The runner prints 25 lines. Its output ends `TOTAL: PASS=24 FAIL=1`.
+
+- Section 1: the formula for U(R) (6.1e-16) and for U(0) (5.0e-16).
+- Section 2: the commutant span{1, W, F, B} as a Pauli algebra, with W, F and B on hop shells 1, 2 and 3; Gamma acting as conjugation by F; and the massless-node Clifford set (2e-13), with W and B anticommuting with the velocities and F commuting.
+- Section 3, on a 6^3 lattice:
+  - each exchanger maps even-block covariant unitaries onto odd-block ones;
+  - site inversion maps the even-centre rotations onto the odd-centre ones, while gauged translation does so up to the sign (-1)^(2j);
+  - each exchanger acts as conjugation by 1, F, B or W, with the table printed.
+- Section 4:
+  - 200 of 200 generic single ticks have non-scalar U(R), so the statement is not vacuous;
+  - all 44 root-found partition-neutral samples with a pure Dirac mass have scalar U(R).
+- Section 4, FAIL. The line "translation class (v, W v W), base branch: pi-gap <= K=0 half-splitting mu" fails. Only 43 samples met the light condition, against the 500 the check requires. On those 43 the gap stayed below mu (largest gap minus mu was -1.4e-2, largest ratio 0.888646), but the runner does not establish the bound. It is not claimed here.
+- Section 4: the F-rotated involution gives a pi-gap of 0.0200 at h = 0.01 and anisotropy/h = 2.777.
+- Section 5: the schedule formula (1.8e-15), and U(0) = U(R) = 1 for alternating mass sign.
+- Section 6:
+  - the exchanger invariance lists: (b, -b) under four, (a, a) under the other four, (mu/2 + b, mu/2 - b) under none;
+  - the site-inversion image is equivalent to mu -> -mu;
+  - the band formula (8.3e-16);
+  - the band range at mu = 0.05 and b = 0.6, sampled as 0.1082 to 1.9355 against pi - 2b = 1.9416;
+  - the light-band dispersion at |k| = 0.1 and 0.3 (deviations 2.4e-5 and 1.1e-3, direction spread 1.2e-4 and 2.1e-3);
+  - 24/24 covariance of the lattice tick (4.5e-16);
+  - max |w| = 0.4989 at b = (pi - 1/2)/2.
+- Section 7:
+  - the K = 0 characters 8, -2, 0, 0, with mean |chi|^2 = 4;
+  - multiplicity 4k for 30 random covariant ticks of 2 to 8 half-steps;
+  - the Dirac-mass decomposition 2 A1 + 2 A2 + 2 E with no T1 or T2.
+
+## What is supplied and the boundary
+
+Supplied: the tick, its spin-3/2 rotation action, the reading of "privileges no partition" as invariance under one of the eight site-local exchangers, and the continuum criterion for a Dirac mass (anticommuting with the cone's velocity matrices). The claim that the pi-point acts as a light species in loops is an external input and is not computed.
+
+Not established:
+- a classification of multi-step schedules beyond the edge-hop mass family;
+- exchangers built from non-site-local unitaries;
+- the bound pi-gap <= mu for the translation class (its check fails);
+- whether naming a partition through sign(mu b) is acceptable.
+
+In the continuum the swap mu -> -mu is an axial rotation by pi of the two equal-charge copies. This shifts the vacuum angle by 2 pi, which suggests no experiment detects it. That argument is supplied, not computed. The lattice-scale trace is an even/odd difference in reversal odds of sin mu sin 2b, also not computed here.
+
+For the F-rotated route, electron isotropy bounds of about 1e-18 would cap the gap near 1e-18 in tick units. That bound is quoted as an estimate and was not checked. Whether a spin-1/2 site action would avoid the two-copy obstruction is not checked by this runner.

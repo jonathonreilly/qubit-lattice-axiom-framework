@@ -1,0 +1,31 @@
+== A. one cube: the 2^3 torus
+[PASS] A1 THEOREM: on one cube the odd cube is the even cube (same sites, labels, overlap states), so the tick is exp(i mu W) (periodic: no hop) or exp(-2i eps W) (antiperiodic, mass-blind); spin structures = K in {0,pi}^3, on the band law  1e-15
+[PASS] A2 THEOREM: massless, only the periodic structure is gapless (its "negative modes filled" vacuum is empty, charge -4); the 7 twisted ones are unique, half filled; of the 2 rotation-invariant ones only (-,-,-). Copy mass: s^2 = 1, [s,W] = 0, gap 2 eps - M (open iff M < 2 eps)  zero modes 8 (periodic), 0 (rest); gap M .2, .4: 0.400, 0.200
+[PASS] A3 the (-,-,-) one-cube vacuum is the W = -1 eigenspace at every step, mass and copy mass M < 2 eps; its 70 configurations hold all the initial randomness  |P - P(W=-1)| 3e-15; S0 = 3.915 nats of ln 70 = 4.248
+== B. the exact split cascade from one (-,-,-) cube (1 to 4096 parent cubes)
+[PASS] B1 at every level the sign blocks are nonsingular, so the nearest unitary V* exists and carries the vacuum onto the children's vacuum (no heating); the plain passing alone heats every level  min sv 0.52; |V*P1V*+ - Pf| 8e-12; heat 3e-14; plain, levels 0 and 4: 0.237, 0.127 (mu 0), 0.383, 0.200 (mu .2)
+[PASS] B1b with the copy mass the split exists iff the parent partner gap at K = pi(1,1,1) is open (M_c < 2 eps_c); the one-cube split sits on that momentum and fails first (tick law: M < ~eps at birth)  2 eps_c = 0.148; M_c .14: sv 0.50, 0.67, 0.47; M_c .16: sv 1e-15, 6e-01, 4e-01 (levels 0-2)
+[PASS] B2 THEOREM (symmetry): each level is invariant under its cube translations with every site half filled, so every Born mean is homogeneous above one cube and CL-3 sees no departure (empty de Sitter, H = sqrt(Lambda/3)); a seed must be a departure's actual configuration  max |<n> - 1/2| 5e-15
+[PASS] B3 definite newborn modes instead of the zone-point sea: sign blocks singular in about half the draws (V* undefined), nearly singular otherwise; where V* exists it heats nothing: the newborn state conditions the split, never sources  singular 4/8; else min sv <= 0.07, |V*-1| 1.40 (sea newborns: 0.74, 0.72)
+[PASS] B4 a range-r split on the cascade is exact while the universe is at most 2r+1 parent cubes across (the first log2(2r) splits), and heats every split after that  8^3, r = 0..3: heat 6.4e-02, 1.3e-04, 7.0e-06, 8.9e-07; energy/parent 9.4e+00, 1.2e-02, 5.3e-04, 7.2e-05
+[PASS] B5 exact Dirac series: the O(k) mismatch is removable by a range-1 unitary, the O(k^2) one is not (non-analytic), so the best finite-range split leaves F k^4 flips per momentum  O(k) residual 2e-15; irreducible share 0.986; F = 3.594e-05
+== C. the split history with a finite range r (k per parent cell)
+[PASS] C1 THEOREM (cascade sum): a comoving mode's lattice momentum halves each split, so its occupation is the sum of f(k 2^j) over past splits: constant on average, log-periodic ripple of period ln 2; energy per log k ~ p^4 n sits at the cutoff (blue)  mean n = 1.30e-05 r^-4; ripple sharp 0.88, smooth 0.11; energy within 2x of cutoff 0.996
+[PASS] C2 THEOREM (steady state): Delta rho per split, radiation diluting 16x: rho -> (16/15) Delta rho, H a 4x sawtooth. For Delta rho ~ H^p: a stable, unending fixed point iff p < 2, injecting (15/16)(H*/H0)^(2-p) rho_c per split today; p > 2 cannot sustain itself  H/H*, 400 splits: p=0: 1, p=1: 1, p=1.9: 1, p=2.5: 1.57e+06
+[PASS] C3 THEOREM (reset): a triggered split injects the same energy at the same local edge length, so a density excess at fixed local e-fold number falls by rho-/rho+ = 1/16 per split: super-Hubble zeta is erased unless another clock ends the phase  excess: 6.25e-05, 3.91e-06, 2.44e-07, 1.53e-08
+[PASS] C4 THEOREM (cascade): per-level variance lambda^l inherited by finer levels gives n_s - 1 = log2 lambda; a fixed-range split is self-similar (lambda = 1, n_s = 1); with the reset of C3 the frozen spectrum is white  index of Delta^2: lam 1 +0.0001, Planck -0.0350, ACT -0.0259, reset +3.0000 (log2 lambda -0.0351, -0.0260)
+[PASS] C5 ESTIMATE (shot-noise seed): free-streaming quanta carry TT stress at 1/15 of their energy variance per polarisation; on the sawtooth h_+ = 1.69 pi, zeta = 0.37 delta (proper-time exit clock): r = O(1)  h/pi cycle 1 1.159 (exact 1.159), total 1.694; zeta/delta 0.370; r ~ 2.8
+== D. the weak tick-fixing: sin(eps) ~ l^-2 over a cycle of N ticks (mu ~ 1/l)
+[PASS] D1 finite diagnostic (8^3 grid): a smooth tick ramp flips c/N^2 of the sea per cycle; c = O(1) with the step read per half-tick (oscillating in N: the two kinks interfere), far less if it changes mid even half-tick; long modes untouched  c = 0.69, 0.72, 0.74, 0.63, 0.61, 0.86 (eps .3, .04; N 100-1000); midpoint 0.012, 2e-04; k <= .1: 1e-06
+[PASS] D2 ESTIMATE: N = sqrt3/(H a sin eps0) ticks per cycle, so the ramp injects a fixed fraction of rho_crit per split (p = 2 in C2), zone-scale, far below the 15x a self-sustained phase needs  per split: eps0 0.3: 3.6e-04 rho_crit, eps0 0.04: 6.1e-06 rho_crit
+== E. ESTIMATES vs measurement (l_f = 2 sqrt(8 pi) l_P, l_c = 2 l_f; N_s = 12; not theorems)
+   exact cascade: 0 departures vs 3.4e80 occupied modes (F1); Lambda only: one split per 12.1 Gyr
+   steady H = 1e13 GeV needs r = 2.1 (best map, F k^4) to 32 (truncated V*, r^-5 from B4); today rho_c needs r >= 1.1e+14 to 3e+23
+   so a range allowed today injects <= rho_c0 per split at every epoch: H_ss <= 1.03 H0 (inflation needs (H/H0)^2 = 5e+109 more)
+   lambda = 2^(n_s-1): Planck 0.97596, ACT 0.98214, DR2 0.98296; n_s = 1 is 8.4, 8.7, 8.3 sigma; n_s = 4: 723
+   shot-noise r ~ 3 vs < 0.036; Q = B = L = 0 at half filling: eta = 0 vs 6.1e-10; Omega_k = 0 vs 0.0007 +- 0.0019
+[PASS] E1 arithmetic: every channel misses a measured fact (matter, n_s, r or today's injection bound)
+supplied: tick (copy mass only in A, B1b), vacuum branch, CL-1 split, (-,-,-) start, tick law, ranges r, ramp,
+  separate-universe/GR response (C3-C5), unit map, N_s, measured numbers.
+elapsed 23 s
+TOTAL: PASS=17 FAIL=0

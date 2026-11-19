@@ -1,0 +1,36 @@
+composite-dispersion: criteria fixed BEFORE any run (2026-10-26)
+
+Question: does a bound state of constituents that obey the rule-fixed dimension-six lattice
+dispersion (E = p + c p^3/E*^2, c_g = -S/24 link band, c_q = -S/6 + 1/24 light fermion)
+carry (a) the parton-additive coefficient c_B = sum_i c_i <x_i^3>, (b) the constituent /
+universal coefficient c_B = c, or (c) something else?
+
+Computations planned
+ A  Lattice-frame exact two-body problems (instantaneous on-site attraction, supplied):
+    A1 Z^1 cos-band pair, closed form E(P) = -sqrt(U^2 + 16 t^2 cos^2(P/2)); ratio of P^4 to P^2
+       coefficient vs constituent ratio. Check closed form numerically (< 1e-8).
+    A2 Z^3 cos-band pair (exact Lippmann-Schwinger via Laplace/Bessel reduction), P along axis
+       and face diagonal; same ratio; weak and deep binding.
+ B  Boost-covariant light-front two-body composite (supplied longitudinal confinement,
+    Li-Maris-Vary form), LIV entering the mass operator as lambda(P) sum_i c_i x_i^3,
+    lambda = 2 P^4/E*^2. Ground state at each P. Effective c_B(P) = (M^2(P)-M^2(0))/lambda.
+    B1 Hellmann-Feynman: dM^2/dlambda at 0 equals <sum c_i x_i^3>_0 (rel. err < 1e-4).
+    B2 lambda -> large: c_B -> most-subluminal constituent coefficient (within 2%).
+    B3 Crossover momentum P_x where c_B is half-way; compare with the additive-model
+       emission threshold (3.2-4.4 EeV).
+    B4 Vacuum emission p -> p gamma (collinear, ground state -> ground state + photon,
+       photon c_g) on axis / sky-average / body rays, P up to 1e11 GeV:
+       frozen-wavefunction (additive) model vs full eigenstate model.
+
+Verdict rules (pre-registered)
+ ADDITIVE  : full-eigenstate model opens p -> p gamma on some ray below 1e20 eV for the
+             hadron-like parameter set (M0 ~ 1 GeV) AND c_B at threshold within 20% of
+             sum c_i <x_i^3>_0.
+ UNIVERSAL : full-eigenstate model keeps p -> p gamma CLOSED on every ray up to 1e20 eV,
+             and c_B(P) -> constituent coefficient at P >> P_x.
+ OTHER     : anything else; state the law (e.g. P-dependent interpolation).
+ The lattice-frame A checks decide only the NONrelativistic statement (binding vs bandwidth),
+ not the UHECR verdict; they PASS if both limits (additive weak, universal deep) are reproduced.
+ Any FAIL of an exactness check (closed form, HF, limits) => no verdict, report failure.
+ The binding model is SUPPLIED; a verdict that changes under the parameter scan
+ (m 0.1-0.4 GeV, kappa 0.4-0.8 GeV) is reported as model-dependent.

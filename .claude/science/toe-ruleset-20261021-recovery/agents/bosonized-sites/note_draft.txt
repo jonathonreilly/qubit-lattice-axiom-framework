@@ -1,0 +1,75 @@
+Bosonized qubit sites: Z2 string-end fermions reproduce the CL-1 cube hop exactly (bounded theorem draft, 2026-10-26)
+
+Status: bounded theorem (exact finite algebra on the single-cube complex and the periodic 4^3 torus) plus finite
+diagnostics. Conditional on CL-1. Zero premise weight. No CL or axiom edited.
+Runner: bosonized_qubit_sites_z2_string_end_cube_hop_2026_10_26 (29 PASS, 0 FAIL, < 1 s).
+
+Supplied (not derived here): the bosonization map itself (Bravyi-Kitaev-superfast type with site qubits;
+cf. Chen-Kapustin-Radicevic 2018 / Chen-Kapustin 2019 for exact lattice bosonization, as supplied); one fixed
+ordering of the six bond directions at every vertex; Lieb's flux argument as motivation only.
+Builds on: BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17
+(no ordering is invariant under the cubic rotation group; minimal orbit four), CL-1 register text (face-clause-unification).
+Tests r3 proposal P1 (rethink/r3-one-wrong-choice) and SYNTHESIS T-B.
+
+Construction. Site qubit v: B_v -> Z_v (occupation record unchanged). One link qubit per bond e=(a,b):
+A_ab = -i g_a g_b -> X_a X_b L_e, L_e = X_e * prod Z(bonds before e at a) * prod Z(bonds before e at b).
+Gauss constraint G_v = Z_v * prod_{bonds at v} Z_e. Bond hop c^dag_a c_b + h.c. = (i/2) A_ab (B_a - B_b); longer
+bilinears (the copy sign) are path words of A's.
+
+1. Theorem (exact, GF(2) with phases).
+ (a) Every bosonized A_e, B_v commutes with every G_v (cube: 12+8 vs 8; 4^3: 192+64 vs 64).
+ (b) The full (anti)commutation table of bosonized generators equals that of the Majorana bilinears
+     (190 pairs on the cube, 32640 on 4^3; 0 mismatches).
+ (c) Fermion face loops are scalars (+1); bosonized face loops Phi_p commute with every generator, so each Phi_p is a
+     conserved Z2 register value; the bosonized algebra in sector {phi_p} is the fermion algebra with hop signs
+     whose face products are phi_p. Face phase -1 <=> sector phi_p = -1 with uniform positive hops: no phase written.
+ (d) The copy sign s = i R1R2R3R (R_i the unit axis hops) bosonizes to G-commuting path words; it is
+     path independent within a fixed flux sector.
+ (e) Commutant of the hop algebra in the Pauli group = the constraint group (G_v, face loops, 3 Wilson loops):
+     cube 13 = 13, 4^3 193 = 193.
+
+2. Finite diagnostics (cube complex, 20 qubits; G-sector 4096 of 2^20; flux sector 128 = even Fock).
+ Many-body spectra of bosonized R, s, R+0.37s and the tick exp(-i eps R) equal the fermionic ones with face phase -1
+ (max diff 7e-15); the zero-flux sector differs (1.155) and its hop is no reflection (|R0^2-1| = 0.667).
+ Periodic band (via 1(c)): Dirac point at K=0 (8 zero modes, two copies), speed sin(eps)/sqrt3 to 5 digits on three
+ directions (eps = 0.3, 0.8); the copy mass leaves exactly one light copy (8 -> 4 zero modes). So the bosonized cube
+ tick reproduces the CL-1 light band. (The 4^3 qubit space, 256 qubits, is out of reach for a direct many-body
+ comparison; the periodic statement rests on the exact algebra of 1, not on a periodic many-body spectrum.)
+
+3. Flux selection (4^3, half-filled nearest-neighbour sea = sum of R over both tilings times sqrt3, minimum over 8
+ boundary twists; free-fermion exact in each sector by 1(c)). E/site: pi -1.2247, zero -1.0607, 300 random
+ sectors min -1.0817 (median -1.0562); single-link flip +0.427 on each axis; total gap to best random 9.16.
+ r3's numbers reproduced. Caveat (load-bearing): every flux commutes with the tick and CL-2's transport does not cool,
+ so "selected by the sea" needs a least-energy state or a stationarity rule for the flux: SUPPLIED, not derived.
+ The face phase is relocated (to a state-selection clause), not deleted.
+
+4. Record-frame families (r2). On a bosonized site only Z_v (= (-1)^n) is gauge invariant; X_v, Y_v anticommute with
+ G_v (they are string ends). Global site Paulis: only prod Z survives, and it equals 1 on the physical sector.
+ Pauli symmetries of the hop terms modulo the constraint group: exactly one Z2 (cube and 4^3), a particle-hole/
+ sublattice map (B -> -B, A -> -A), broken by the copy mass (48 of 96 copy-sign terms flip). No Z2 x Z2 with three
+ nontrivial sectors commuting with the hop exists among Pauli operators. Bosonization BREAKS r2's site Klein group;
+ families on bosonized sites must come from elsewhere (clusters/framings, P3 untested).
+
+5. Records. Site Z records are gauge- and flux-invariant (CL-2 readable). A Z record of a link qubit anticommutes with
+ the two face fluxes through it and would scramble the face-phase sector: CL-2 needs a link-qubit record exclusion.
+
+Rule count. Bosonized CL-1 opening clause (draft): "Sites are the points of Z^3 ... ; besides the matter sites, a
+ qubit sits on every nearest-neighbour bond (link role, bond midpoints of the finer rung). Only odds with
+ Z_v prod_{bonds at v} Z_e = 1 at every matter site occur. W_i passes each site's odds to its axis-i neighbour by the
+ bond string X_a X_b X_e prod Z (earlier bonds at both ends, one fixed order of the six directions) with the factor
+ (i/2)(Z_a - Z_b); the face strings are conserved registers in their least-energy value; link qubits are not recorded."
+ Deleted: the nonlocal "qubit = fermion mode, modes anticommute" clause (a real locality gain: the Lattice/
+ neighbourhood bend goes away). Relocated, not deleted: the face phase -1 (now a least-energy sector, supplied);
+ copy sign keeps its form. Not deleted: rishon carriers (U(1)/SU(3) Gauss laws are a different constraint; untested),
+ spinor-index field (P2 untested). Added: 3 link qubits per site (role layout), the Gauss clause, the direction
+ ordering (no rotation-invariant choice exists, main BKSF note), the flux-selection clause, the link-record exclusion.
+ Net: -1 clause, +4 clauses/choices.
+
+Gate. (1) no measured number chosen; (2) no observed structure inserted (the Z2 is fermion parity); (3) predictions not
+ built in: pi flux is the least-energy sector and the link-record exclusion is forced; families not predicted;
+ (4) bends: Lattice (bond qubits as role-assigned sites; less than the JW bend it removes); state selection supplied.
+ Gate PASS for the hop; the selection clause is SUPPLIED.
+
+Verdict: WORKS BUT NO SIMPLIFICATION. The bosonized cube hop is exact and local and reproduces the CL-1 band; the face
+ phase becomes a sector choice that still has to be supplied; the clause count rises; r2's site Klein families do not
+ survive bosonization.

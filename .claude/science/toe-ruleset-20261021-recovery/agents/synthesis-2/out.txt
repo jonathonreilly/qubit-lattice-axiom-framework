@@ -1,0 +1,10 @@
+[PASS] A1 T has 12 rotations and g -> (axis 3-cycle) is a homomorphism onto Z3 (the E' character) | |T| = 12, hom error 6e-16
+[PASS] A2 one three-fold turn (family-register A1/B2 rederived): protected light copies = m for a (2m)^3 register | m=1:1 m=2:2 m=3:3 m=4:4 m=5:5 m=6:6
+[PASS] A3 full 12-element T: generic invariant light-partner mass still leaves exactly m protected copies (= n_A - n_E' = fixed points of a three-fold turn) | m=1:1 m=2:2 m=3:3 m=4:4 m=5:5 m=6:6
+[PASS] A4 3^3 register = 5A + 2E' + 2E'' + 6T, so n_A - n_E' = 3 | A 5, E' 2, E'' 2, T 6
+[PASS] A5 control: if light-light (same-character) masses are allowed, as on vector-like content, no copy is protected | m=1:0 m=2:0 m=3:0 m=4:0
+[PASS] A6 factor-2 blocks (m = 2^n) never have 3 | F3; m = 3 (6^3 cell) is the smallest with 3 | F3 | F3 on 2^n blocks [1, 2, 4, 8, 16, 32, 64, 128]
+[PASS] A7 arithmetic: a 6^3 block has 216 one-mode sites = 27 register sub-cubes x 8 corners ((4,2) cell labels) | 216 = 27 x 8
+supplied: the register reading (sub-cube positions rotated about the cell centre), the light/partner
+  characters E'/E'' (the two copies of the three-fold turn), bilinear masses only; no dynamics, no anomaly input.
+TOTAL: PASS=7 FAIL=0

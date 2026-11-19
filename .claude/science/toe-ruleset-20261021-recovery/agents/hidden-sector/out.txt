@@ -1,0 +1,30 @@
+== A. exact continuous symmetries CL-3 could link (copy-massed CL-1 tick)
+[PASS] A1 [T] copy-massed tick: commutant over 6 random K is 1 at steps .3 and .04; at K = 0 it is 16 and holds the copy projector, but band states leak copy weight as K^2 (7.8e-06, 3.1e-05, 1.3e-04 at K = .01, .02, .04): the heavy copy has no exact number, hence no link
+[PASS] A2 [T] 6^3 cell (27 cubes, 216 modes): the site rotations have multiplicities (11, 11, 16, 27, 27) (commutant 1956), but the tick's cell-local commutant over 4 random Q is 1 (spectral gap 9e-04, connectivity 0.12): the 11 pattern copies are folded momenta of one field with no symmetry among them
+[PASS] A3 [T] octree: each rung runs the same tick (commutant 1) and X = W(1-g5)/2 (norm 1.000, X^2 = 0) ties neighbouring rungs, so a rung-wise symmetry is one phase (commutant 1): the coarse-rung mirror carries N only
+[PASS] A4 [T/D] species in parallel: commutant 9, 5, 3 for masses (m,m,m), (m,m,m'), (m,m',m''): a non-abelian group needs exactly degenerate copies, supplied as for colour; R1's M = tA + V P_free splits the free block by 9.47 t, largest multiplicity 6 < 8: no U(8) on the 8 free copies
+== B. supplied SU(N) on N copies of the generation pattern (one technifamily: Nf = 8 Dirac, N_D = 4 doublets)
+[PASS] B1 [T] b0, b1 at Nf = 8: SU(2) 2, -20 (fixed point 1.257 < alpha_c 1.396: conformal, no breaking); SU(3) 17/3, 2/3 (BZ edge 8.05, ladder edge 11.9: chirally broken, near-conformal on the lattice); SU(4) 28/3, 134/3; SU(8) (the 8 free copies) 24, 449, Nf/edge 0.25: QCD-like
+[PASS] B2 [T] a technifamily is a complete family: b3 = 7 - 4N/3, b2 = 10/3 - 4N/3, one shift for all three couplings (the unequal cell couplings stay unequal); QCD loses asymptotic freedom for N >= 6, and SU(8) puts its pole at 2e+11 GeV, below the cell scale
+== C. weak-symmetry breaking
+[PASS] C1 [T] chiral technidoublets (left doublets, right singlets): N_D bidoublet condensates give one massless photon, M_W^2 x 4 for N_D = 4 vs 1 and rho = 1.000000000000; vector-like doublets (CL-1 Dirac species): 4 massless (Vafa-Witten vacuum); SU(2)_R linked: 3 massless. So the hidden sector needs the chirality wall closed first
+[PASS] C2 [E/M] S = N N_D/(6 pi) for degenerate heavy doublets: technifamily SU(3) 0.64 (9.8 sigma), SU(4) 0.85, SU(8) 1.70 (25 sigma); within 2 sigma needs S/S_pert < 0.14 for SU(3); a one-doublet SU(3) is Witten-anomalous (3 doublets), so its minimum is N_D = 2: 0.32 (5.3 sigma)
+[PASS] C3 [E/M] SU(3) Nf = 8 lattice (LatKMI, cited): chiral-limit M_sigma^2 = -0.0028(98) against 0.00022 for 125 GeV, so 0 to 687 GeV at 1 sigma: allowed, not predicted; M_rho = 10.1(+5.0/-1.9) F/sqrt2 = 1.24 TeV vs ATLAS HVT-B > 4.4 TeV; v from the cell needs 1/alpha = 34.1, while counted 8 pi, 16 pi give 5e+06, 4e-06 GeV
+== D. dark matter: the lightest technibaryon
+[PASS] D1 [T] X = TB - (4/3)B is anomaly-free (0,0,0,0,0,0), TB is not (SU(2)^2 2): sphalerons move (B, L, TB) by (3, 3, 4), so exact combinations number 2, 1 with the rules' uddn, 0 with (nu^c)^4 as well: CL-3 links none, and the technibaryon is protected accidentally, like the proton; a Z4-allowed cell-scale TTTl term gives tau ~ 2e+35 s
+[PASS] D2 [E] m_TB = (m_N/f_pi)_QCD sqrt(N/3) F, F = v/2: SU(3) 1.26, SU(4) 1.45, SU(8) 2.05 TeV; lowest multiplets 336, 336, 13860 states (of 816, 3876, 490314); freeze-out T* = 159, 146, 114 GeV
+[PASS] D3 [T/E] sharing by chemical equilibrium (checked: SM B/(B-L) = 0.354430 = 28/79, 0.363636 = 4/11 without a Higgs): an X = 0 start gives TB/B = 4/3 exactly, ratio 1784; the rules' uddn start at T* gives 525-1027 (SU(3)), 122-1036 (SU(4)), 5.0-172 (SU(8)), first-order (deconfined) SU(3) 965, vs 5.36 +- 0.06
+[PASS] D4 [T/E/M] Z-neutral technibaryons (Q = 0, sum T3 = 0) exist for N = 4,8 only (SU(4): UDDN, UUDE): SU(3)'s neutral ones (UDD, NNN) scatter by Z at >= 5.8e-40 cm^2 vs LZ 9e-47-4e-46 (x2e+06); a Z-neutral one still couples to a Higgs-like dilaton as m/v: 1.5e-41 cm^2 (x4e+04)
+[PASS] D5 [E/M] self-interaction: geometric 4 pi/M_rho^2 gives sigma/m = 1e-12 cm^2/g vs < ~1: passes; no massless TB link exists (D1)
+[PASS] D6 [E, conditional] an EW-singlet partner kept out of sphalerons by a uddn-type term, as nu^c is, holds |D| = B - L_SM, so n_D/n_B = 1/(B/(B-L)) and the measured ratio needs m_D = 1.78 GeV (1.83 without a Higgs): a definite target, not a match
+== E. look-elsewhere
+[PASS] E1 [E] 2 x 8/3 = 16/3 = 5.333 lies 0.5 sigma from 5.364; it is the only one of 149 ratios a/b, ab/c of 11 rule counts within 1 sigma, and random targets get one with P = 0.55: not evidence
+[PASS] E2 [E] SU(3) sharing over a prior (T* x 0.75-1.25, multiplet 336-816, m/F x 2/3-3/2, Higgs-like doublet, top): 24-1829 (5-95%), P(1 sigma of 5.36) = 0.000, P(below) = 0.011: a miss, not a match; a free start X/(B-L) reaches 5.36 only at -0.4890, tuned to 1e-04
+[PASS] E3 [E] SU(8) (the 8 free copies) lands at 5.0; central values for N = 3-11 run 525, 122, 223, 31.3, 47.4, 5.02, 6.61, 0.588, 0.696: a random target lies that close to one of them with P = 0.15, and T* x 0.9, 1.1 moves SU(8) to 0.79, 23: a coincidence, and SU(8) is excluded by B2, C2
+[PASS] E4 [E] the 125 GeV scalar: the 1 sigma lattice window 0-687 GeV holds a random target in 0-1 TeV with P = 0.69, and only SU(3) gives a light scalar at all: not evidence
+theorems: A1-A4, B1, B2, C1, D1 (exact rationals or exact finite checks); finite: A2 connectivity, A4 R1; estimates: C2, C3, D2-D6, E
+supplied: copy-massed CL-1 tick (st, mu, M), the 6^3 grouping and R1, the octree X; the hidden group, its content, chiral
+  charges and Y; ladder alpha_c, F = 0.30 mu_c, QCD scaling of m_N, T_c; mean-field v(T); full equilibrium; uddn start;
+  cited: LatKMI (2017), ATLAS HVT (2024), LZ (2023/2024); PDG: v, g, g', S (U = 0), G_F, sin^2, masses; Planck 2018 Omegas.
+elapsed_seconds 0.7
+TOTAL: PASS=19 FAIL=0

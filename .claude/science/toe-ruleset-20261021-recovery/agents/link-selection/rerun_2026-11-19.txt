@@ -1,0 +1,36 @@
+== A. MICROSCOPE (Ti vs Pt) on a massless link of coupling g to charge X
+   g_max: B=A 6.2e-25, L=Z 1.1e-25, B-L 1.0e-25, N_u=A+Z 6.0e-26, N_d=2A-Z 6.1e-26
+[PASS] [E] every species number, B, L and B-L needs g < 1e-23 as a massless link (e = 0.30) | B-L 1.0e-25
+== B. vector-like species in parallel (CL-1 as written)
+[PASS] [T] any quadratic species-parallel tick: on-site commutant = commutant of the mass matrix; dims = sum of multiplicities^2, so >= one exact U(1) per distinct mass, whatever mixing the mass matrix holds | {'4 distinct': np.int64(4), '4 mixed': np.int64(4), '(3,3,1,1)': np.int64(20)}
+   one family u(3)+u(3)+u(1)+u(1) = 20 generators, 4 abelian; three families 60, 12 abelian, no su(2)
+[PASS] [T] (a) is void on vector-like content: every on-site U(1) has anomaly weight sum chi X q^2 = 0
+[PASS] [T] (b, "acts on >1 species") is not a selection: its charges span all n species numbers (n = 4), and links must be valued in a Lie algebra
+[PASS] [T] (b, non-abelian only) on (3,3,1,1): derived algebra su(3)+su(3) = 16, centre 4: no abelian link, so no photon
+== C. chiral SM 16 x 3, SU(3) x SU(2) linked; exact U(1)s after each term set
+   T0 links only: exact U(1)s 18 (u(3)^6 flavour, 54 generators)
+   T1 +Yukawa-type, generic: exact U(1)s 3; with (a) 2
+   T2 T1 + uddn class: exact U(1)s 2; with (a) 2
+   T3 T2 + (nu^c)^4: exact U(1)s 1; with (a) 1
+   T3' T1 + (nu^c)^4: exact U(1)s 2; with (a) 1
+   T3'' T1 + nu^c nu^c: exact U(1)s 2; with (a) 1
+   T4 no Yukawa, uddn + (nu^c)^4: exact U(1)s 10; linear anomalies leave 7, cubics not identically 0
+[PASS] [T] T1: exact = span{Y, B, L} (3); with (a) span{Y, B-L} (2), all mixed cubics 0: (a) leaves B-L
+[PASS] [T] T2: the register's uddn-class terms conserve B-L: span{Y, B-L} survives even under (c)
+[PASS] [T] T3: one added nu^c-number term leaves exactly span{Y} (1), ratios Q:u:d:L:e:n = 1:-4:2:-3:6:0; same with (nu^c)^4 or nu^c nu^c and no uddn once (a) removes B | ['1', '-4', '2', '-3', '6', '0']
+[PASS] [T] T4 (masses only from the vacuum): 10 exact U(1)s; X = Q1 - Q2 + L1 - L2 is anomaly-free with Y, so flavour links survive (a)+(c) and are Higgsed only by the mass condensates
+== D. su(4)+su(2)L+su(2)R (the mirror-term group) on one 16; stabiliser of (nu^c)^k
+[PASS] [T] dim su(4)+su(2)+su(2) = 21; stabiliser of nu^c, nu^c nu^c and (nu^c)^4 (point-split) = 12 each | 12, 12, 12; closed-form Gram vs explicit k<=3: 4e-15
+[PASS] [T] that stabiliser = su(3)+su(2)L+u(1)_Y exactly: derived algebra 11, centre 1, centre = Y = T3R + (B-L)/2 | derived 11, centre 1
+   so the term that removes the B-L link also breaks the mirror-term group to exactly SU(3) x SU(2) x U(1)_Y
+== E. estimates
+   (d) per-mode equal unit, explicit breaking at the cell: sin^2 thW(MZ) = 0.161 vs 0.2312 (one loop, SM)
+   (d) universal unit on a species link (N_e, 1/alpha_cell ~ 50): alpha_IR = 0.017 vs < 9e-52
+[PASS] [E] (d) neither selects nor meets measurement: a universal unit gives alpha ~ 1e-2 on species links, per-link constants need tuning to < 1e-48
+[PASS] [T] with B-L unlinked, Q = T3 + Y: q_n = 0 exactly (measured (-0.2 +- 0.8)e-21); a linked B-L admixture leaves q_n free
+   (nu^c)^4 keeps Z4 of B-L: no Majorana mass, Dirac neutrinos, no 0nubb (KamLAND-Zen T1/2 > 3.8e26 yr; LEGEND-1000 tests)
+   nu^c nu^c instead: seesaw, needs M < 6e14 GeV (nuc-dark-matter D4), a scale no law supplies
+theorems: B1-B4, C1-C4, D1-D2, E2.  estimates: A1, E1.
+supplied: chiral content and SM/PS links (chirality wall open); Yukawa-type flavour-generic terms; the nu^c term;
+  vacuum-field charge h; toy reflection R(K); MICROSCOPE 2022, composition, SM one-loop b, alpha(MZ).
+TOTAL: PASS=13 FAIL=0

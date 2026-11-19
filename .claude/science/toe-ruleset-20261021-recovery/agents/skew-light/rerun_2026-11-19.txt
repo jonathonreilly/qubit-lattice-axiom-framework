@@ -1,0 +1,27 @@
+== A. per-element (literal) proper-area reading: representable tensors (exact)
+[PASS] A1 [T] every per-bond electric weighting gives eps = sum_s u_s s s^T with EQUAL diagonal entries (the four bonds are body diagonals): no choice of electric coefficients represents a metric with unequal g^ii | eps_xx = eps_yy = eps_zz = u0 + u1 + u2 + u3; off-diagonals free (u0+u1-u2-u3 etc.)
+[PASS] A2 [T] every per-loop magnetic weighting gives a DIAGONAL nu (each skew loop measures exactly A_p.B with A_p = +-2 e_c): no choice of magnetic coefficients reads shear g_ij (i != j) | nu = diag(4*w2 + 4*w4, 4*w0 + 4*w5, 4*w1 + 4*w3)
+[PASS] A3 [T] (standard optics) a Maxwell medium is birefringence-free in all directions iff eps is proportional to nu^-1; with A1 and A2 the literal reading is on the null cone in every direction iff the cell metric is CONFORMALLY FLAT (g = a^2 1), any N, any shift | eps ~ nu^-1: split < 1e-9 (100 random); perturbed nu: split up to 0.19
+[PASS] A4 [T] in a conformal cell the literal weights equal the covariant 3+1 tensors exactly (Wilson V4/area^2 = Hodge) | |eps-eps_t| 0e+00, |nu-nu_t| 0e+00
+== B. lattice photon cone vs the cell null cone; rel. error at |q| = 1e-3 (lattice O(q^2) ~ 1e-7)
+[PASS] B1 [T/D] literal reading, conformal cells (strong lapse, shift .15 c): both photon polarisations on the null cone (w + beta.k)^2 = N^2 k g^-1 k, error O(q^2) only; the shift drags light by exactly -beta (frame dragging at the GR value) | flat: 8.4e-08 (x4.0 at 2q); conformal+lapse (N 1.3, a .85): 8.4e-08 (x4.0 at 2q); conformal+shift (.15c): 1.0e-07 (x4.0 at 2q)
+[PASS] B2 [T/D] literal reading, non-conformal cells: the photon leaves the null cone at FIRST order in the anisotropy and is birefringent (A1-A3), on the lattice as in the medium limit | diag aniso (1.1,.95,1): err 3.71e-02, pol split 6.31e-02; shear g_xy .1: err 5.02e-02, pol split 5.85e-02; generic g+N+shift: err 1.97e-01, pol split 2.79e-01
+[PASS] B3 [T/D] site-Hodge reading: every cell (anisotropic, sheared, strong lapse, shift .15 c) puts both polarisations on the null cone to lattice O(q^2), degenerate, all frequencies real (stable) | max err 1.3e-07, split 1.3e-07, Im w 7e-13
+[PASS] B4 [D] site-Hodge reading keeps the extra (copy-sign) branch gapped at q -> 0 and every Bloch frequency real over the zone | min extra frequency at q -> 0 over cells 3.45; max |Im w| over 150 zone points 4e-15
+[PASS] B5 [D] the lattice cones equal the continuum medium (eps, nu of A1-A2) to O(q^2), so C and D may use the medium | max |w_lattice - w_medium|/q = 6.8e-08
+== C. weak fields (medium limit, linear in the field)
+[PASS] C1 [T/D] isotropic gauge, literal reading: light bends by 1 + gamma = 2 for both polarisations; Shapiro coefficient (1 + gamma)/2 = 1 (local speed N/a = 1 + 2U: same integrand) | bending/(2m/b) y-pol 2.0000, xz-pol 2.0000
+[PASS] C2 [T/D] the SAME field in the radial gauge: literal reading gives gauge-dependent, polarisation-split bending; site-Hodge gives 2 for both in both gauges | radial literal y/xz 1.6664/1.6665; site y/xz 1.9999/1.9999
+[PASS] C3 [T/D] in a TT gravitational wave the literal reading makes light birefringent at first order in h (dv/c per unit h shown); site-Hodge: zero | h+ k||z: -0.50,+0.50; h+ k||x: +0.00,+0.50; hx k||z: -0.33,+0.33; hx k||x: -0.00,+0.00; site 2e-10
+== D. Coulomb strength in a cell (proper energy x proper distance), Gauss law, least electric energy
+[PASS] D1 [T] tree level: in every conformal cell (any lapse, any scale) the literal reading gives the flat Coulomb strength in proper units exactly, in every direction (no per-cell tuning needed); in an anisotropic cell (sigma = 1e-4) it varies with direction at O(sigma), site-Hodge does not | conformal dev 4e-16; aniso literal spread/sigma 1.00, site 1e-16
+   sea running: proper cell size ~ (1 - U), so a FIXED bare coupling per cell gives d ln alpha/dU = (2 alpha/3 pi) sum Q^2 Nc = 1.2e-02 (charged fermions, sum = 8) vs clock bound 1.4e-8: the clause is needed and sets it to 0 (residual (E l)^2)
+== E. ESTIMATES (not theorems); site spacing l = sqrt(8 pi) l_P = 8.1e-35 m (x2 for a cube)
+[PASS] E1 [D] flat skew loops: dimension-six birefringence on face diagonals dv/c = b (q l)^2 (zero on axes/body diagonals) | b = 0.0833; dv/c = 1.4e-38 (E/GeV)^2 vs quoted bound ~1e-16 (E/GeV)^2; 100 keV GRB at 1 Gpc: rotation 2e-09 rad (polarisation kept)
+   literal reading in the measured nHz GW background (h ~ 2e-15): dv/c ~ h/2 per coherence length 3e+16 m -> 100 keV GRB rotation ~2e+17 rad (random walk), 1 GHz radio ~1e+07 rad: polarised GRBs/quasars exclude it; any tensor residual c_b h needs c_b < 3e-18
+   static field, conformal cells: 1 + gamma = 2, Shapiro 1, GP-B drag = GR at tree level; lattice part (k l)^2 = 2e-64 at 8.4 GHz vs Cassini 2.3e-5; non-conformal part of the edges must be < ~1e-18 (cavity) for the literal reading
+   GW170817: photon (100 keV) dim-6 1e-46, GW (100 Hz) 3e-80; |c_g - c_gamma| << 1e-15 IF the edge waves sit on the edge null cone (edge-modes probe: no result yet)
+supplied: Gaussian registers, Wilson V4/area^2 meaning of "proper area", site B from its loops, temporal gauge, metrics/gauges,
+  site-Hodge companion pairing (proposal), measured numbers. Not computed: sea (dressed) tensor response in non-conformal cells.
+elapsed 2 s
+TOTAL: PASS=14 FAIL=0

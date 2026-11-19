@@ -1,0 +1,25 @@
+Pre-run criteria (written 2026-10-26 before runner.py was written or run)
+
+Inputs inherited unchanged from agents/liv-auger-confrontation (rule-fixed c_g = -S/24, c_q = -S/6 + 1/24,
+E* = hbar c/2L, L = sqrt(8 pi) l_P; supplied parton weights W at 2 GeV and at E*; hadron-level additivity).
+
+Quantities:
+ l_loss(E) = c / Gamma_E, Gamma_E = energy-weighted emission rate (Gamma_E = int dy y dGamma/dy).
+ E_cut(L_prop) = lowest energy at which l_loss < L_prop for L_prop in {1 kpc, 1 Mpc, 100 Mpc}.
+Channels: (a) p -> p gamma (elastic, dipole Sachs form factor bracket G_D .. mu_p G_D);
+ (b) p -> p pi0 (pseudoscalar g^2/4pi = 13.7, dipole axial form factor M_A = 1.03 GeV);
+ (c) nuclei: coherent (Z^2, Gaussian charge form factor, r_rms supplied) and incoherent (Z x proton
+     rate at nucleon momentum alpha P/A, Fermi-gas core + supplied exponential high-momentum tail);
+ (d) rays: axis (S = 1), sky average (S = 3/5), body diagonal (S = 1/3).
+
+Decision rule (fixed in advance):
+ "Hard wall": E_cut(1 kpc) within 5% of the kinematic threshold for a species => species cannot arrive above it.
+ EXCLUDED: on every ray and both weighting scales, the hard-wall maximum over all species with
+   A <= 56 lies below an energy where a nonzero flux is observed with energy scale systematics included
+   (Amaterasu lower 1-sigma-syst edge 1.68e20 eV; or the >1e20 eV flux), robust to the supplied
+   nuclear model choices; OR protons are forbidden above E_cut while a nonzero proton fraction
+   above that energy is established by measurement (not by one hadronic-model fit).
+ TENSION: exclusion holds only for some rays, some nuclear-tail choices, the central (not lower-syst)
+   event energies, or hinges on composition claims that are hadronic-model dependent.
+ CONSISTENT: every species' E_cut lies above the observed energies of its inferred composition.
+New sharp predictions found on the way are reported separately as [E]/[S].

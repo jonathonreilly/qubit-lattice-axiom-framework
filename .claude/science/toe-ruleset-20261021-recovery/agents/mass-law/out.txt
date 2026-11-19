@@ -1,0 +1,37 @@
+== A. measured targets
+[PASS] targets: r = 1/2 => delta = 0.2222220471(4); delta = 2/9 => r = 0.4999997868; m_tau/m_mu = 16.8177(9)
+   quarks (Q, r, delta): up 0.849,0.773,0.0744; down 0.731,0.597,0.1102; upMZ 0.889,0.833,0.0512; downMZ 0.746,0.618,0.1002
+== B. the CL-2 hop is a Clifford algebra on the three axes
+[PASS] W^2 = 1; Gamma_a = sqrt3 W_a obey {Gamma_a, Gamma_b} = 2 delta_ab, so the 3 edge neighbours are the 3 axes and W = (Gx + Gy + Gz)/sqrt3  7e-15
+[PASS] CL-2 W is gauge-equivalent to the real Kogut-Susskind hop (same pi flux on every face)
+[PASS] exact: Clifford relations, W^2 = 1, P = GxGyGz (the body-diagonal hop) has P^2 = -1, tr P = 0 (P = +-i, 4 + 4)
+== C. the site stabiliser and its oriented body diagonal
+[PASS] site 0 is fixed by exactly 6 symmetries (D3): C3 about (1,1,1) keeps the tilings, 3 half-turns swap them; each site has the oriented axis d(s) = c_even - c_odd = ((-1)^s_i), and its spin-3/2 state points along -d(s)
+[PASS] T1 triplet of a cell (plain action): O-covariant mass is one value (Schur); under the site C3 it is 1 + w + w-bar (free circulant, commutant 3); adding the tiling-swapping half-turn gives A2 + E (commutant 2, degenerate pair)
+== D. the tick is pi-flux real: time reversal pairs omega with omega-bar
+[PASS] L = 4 torus: all 192 plaquettes of Z^3 carry -1 (pi flux), so one gauge makes both half-tick hops real; the site C3 commutes with them, cubes to -1, and is a real signed permutation there
+[PASS] symmetric-frame tick U_s is complex symmetric (U_s^T = U_s: time reversal is complex conjugation); its blocks on the three C3 orbits around a site (U_s, U_s^2, log U_s) always have a degenerate pair  min level split 6e-16
+[PASS] at rest each 4-fold level carries site-C3 characters exp(-i pi/3), exp(+i pi/3), -1, -1 (spin projections 1/2, -1/2, +-3/2 of one multiplet, Kramers paired), so C3 labels spin states, not species
+[PASS] hop-built orbit circulants (exact, from W): W^2 -> 1 (r = 0); paths via the site -> spectrum (0, 0, 1) (r = 1); via the far corners -> (0, 1, 1) (r = 1/4): every one has a degenerate pair
+== E. the Clifford Gram point
+[PASS] exact: on W = 1, P = +i (dim 2) the axis projections (1 + Gamma_a)psi/2 have |G_ab|^2 = 1/2 (r = 1/2) and Bargmann (1 + i)/4 = e^(i pi/4)/(2 sqrt2) (singlet weight 3a^2 = doublet weight 6|b|^2); P = -i gives (1 - i)/4: |delta| = pi/12
+[PASS] exact: Gram spectrum = roots of lam (lam^2 - 3 lam + 3/2) = (3 +- sqrt3)/2, 0, the levels of the frame operator sum_a (1 + Gamma_a)/2 = (3 + sqrt3 W)/2 plus a kernel: rank 2
+[PASS] exact: the time-reversal-even corner reference gives G_ab = 1/2 (r = 1/4, delta = 0, degenerate pair)
+[PASS] every C3-symmetric reference: G = (1 + 2D + iS)/(2(1 + D)), D = <W>/sqrt3, S = <-iPW>/sqrt3 (time-reversal odd) on the square |D|,|S| <= 1/sqrt3; r <= 1/2 iff 2D^2 + S^2 <= 1, equal only at the corners, where tan delta = 2 - sqrt3 (pi/12); at delta = 0.2222 (or 2/9) the best is r = 0.4905 (Q = 0.6603)  2e-15
+[PASS] Gram point vs measurement: Q = 2/3 but m_e = 0, m_tau/m_mu = 7 + 4 sqrt3 = 13.928 vs 16.8177 (3392 sigma), delta = pi/12 vs 0.2222220471 (1.0e+08 sigma): excluded
+[PASS] the sign of delta is the chirality P: P is kept by the 12 rotations of T and reversed by the 12 that permute the axes oddly (90-degree turns, face-diagonal half-turns, incl. the tiling swaps), and by time reversal
+== F. the spin-j coherent Gram class
+[PASS] spin-j coherent triples at mutual cos c: r = ((1 + c)/2)^(2j), Bargmann phase = j Omega(c) (solid angle), verified for j = 1/2..2  3e-15
+[PASS] CL-2 site states (spin 3/2 along body diagonals): every C3 orbit of sites has Omega = pi, so r = 1/27, 3 delta = pi/2, sqrt-masses (4/3, 1, 2/3), Q = 29/81
+[PASS] on r = 1/2 the class gives delta in (sqrt3 ln2/6, pi/12] = (0.20009, 0.26180]; integer directions reach r = 1/2 only at j = 1/2, c = 0 (delta = pi/12); j = 1, 3/2 give 0.2263, 0.2168; the target needs 2j = 2.327: no member
+[PASS] spin-1/2 triple law delta = Omega/6 at each measured r overshoots every sector: lep 0.2618 vs 0.2222, up 0.0811 vs 0.0744, down 0.1801 vs 0.1102
+== G. phase arithmetic
+[PASS] W holonomies are +-1 and the site and Clifford Bargmann phases lie in (pi/4)Z, so delta lies in (pi/12)Z; 2/9 is not of that form (pi irrational); nearest to the r = 1/2 target: pi/12, 0.0396 rad = 1e+08 sigma away
+[PASS] non-site triples give args of algebraic numbers (Lindemann-Weierstrass, cited: never exactly 2/9): face-diag j=3/2 0.2756, face-diag j=1/2 0.0919, axes j=3/2 0.7854 vs 0.2222
+== H. quark sectors
+[PASS] species-blind CL-2 geometry gives one (r, delta) for all sectors; measured Q_up - Q_down > 0.112 over the PDG box, and quark r > 1/2 lies outside the Clifford family (r <= 1/2)
+[PASS] nearest lattice coherent triple for up quarks (face diagonals, 60 deg, j = 1/2): Q = 5/6 lies outside the PDG box [0.847, 0.850]
+supplied: the copy index, the Gram (sqrt-mass) reading, the reference state and its P sector; PDG/CODATA inputs.
+not established: any derived delta, copy count, quark Koide value or mixing; r = 1/2 only at the m_e = 0 edge.
+elapsed_seconds 1.4
+TOTAL: PASS=24 FAIL=0

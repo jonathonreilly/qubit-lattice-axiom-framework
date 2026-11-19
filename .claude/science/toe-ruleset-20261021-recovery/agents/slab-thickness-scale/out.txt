@@ -1,0 +1,33 @@
+== 0. slab overlap (Wilson slab, k = 0) ==
+PASS m=0.6 splitting ratio per layer = |1-m| = 0.4 | ratio 0.4000
+PASS m=1 compact wall: zero-mode splitting exactly 0 | max 2.3e-16
+  xi(m=0.6) = 1.091 layers; only rule-distinguished point m = 1 (window centre) gives xi = 0
+== Q1. v/M_P from the overlap ==
+  v/M_P = 2.02e-17, Ls/xi needed = 38.44, Ls at m=0.6 = 41.95
+PASS m-Ls degeneracy: each Ls in {10,20,42,80} has an exact m in (0,2) | m = 0.979, 0.854, 0.600, 0.382
+PASS residual mass if overlap = v/M_P equals v (computed) | m_res = 246 GeV
+  m_nu bound needs Ls/xi >= 65.5; v needs Ls/xi = 38.4 -> identification INCONSISTENT (light-mirror Dirac mass ~ v)
+  any v/M_P = overlap^p must have p <= 0.587 (power chosen, not forced)
+PASS Q1 verdict logic applied | FIT (m free; one number, one effective real); overlap = v/M_P EXCLUDED
+== Q2. v' = M_P (v/M_P)^r ==
+  window -> r in [0.484, 0.664]; r = 1/2 gives v' = 5.48e+10 GeV
+  log-uniform chance 0.180; rationals q<=6 in window: 1/2,3/5 (2/11 = 0.182)
+PASS r=1/2 lands in the window (computed)
+PASS Q2 verdict logic applied | COINCIDENCE LEVEL (two parameters)
+== Q3. integer depths, one base b ==
+  targets ln(m3/m1), ln(m3/m2): 8.19 2.83 11.73 5.60 6.92 3.92
+  scanned: min S = 0.118 at b = 0.756 (depth diffs [29, 10, 42, 20, 25, 14]); null median S 0.092
+  p(jitter null) = 0.936, p(uniform null) = 0.911
+PASS scan null computed (N=4000, seeded)
+  fixed b=0.4: S = 0.197, depths [9, 3, 13, 6, 8, 4], p = 0.192
+  b=0.4^c, c=1..4: S = 0.197, p = 0.581
+PASS Q3 verdict logic applied | FIT ONLY (1 real + 6 integers + 3 norms vs 9 masses)
+  depth codes cost ~33 bits; mean |ln| residual 0.033 vs 0.070 expected for random targets at that b
+PASS one-layer Higgs channel gives rank 1 | sv ratio 1.4e-17
+  flat channel, CHOSEN positions (0,2,5)/(11,8,6): sv 1.0e+00 1.0e-02 3.4e-18
+== Q4. forced equal spacing ==
+  m2^2/(m1 m3): e 12.42, u 1.71, d 0.40
+  ln(m3/m1) per sector (must be equal): 8.19 11.73 6.92
+PASS Q4 verdict logic applied | equal spacing FALSIFIED
+VERDICT: Q1 FIT | Q2 COINC | Q3 FIT ONLY | Q4 FALSIFIED -> FIT ONLY / FAILS-when-forced (forced versions fail; free versions are fits)
+TOTAL: PASS=11 FAIL=0

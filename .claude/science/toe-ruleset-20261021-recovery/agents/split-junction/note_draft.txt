@@ -1,0 +1,61 @@
+---
+claim_id: geometry_triggered_cube_split_with_a_stationary_partition_keeps_lambda_exactly_bounded_theorem_note_2026-10-21
+claim_type: bounded_theorem
+claim_scope: "In a supplied rule-U cubic-frustum Regge FRW carrier, Lambda is the 4-volume-translation charge; a split pinned to a tick count kicks it by 12[k^2 A(u_f) - A(u_c)]/L^2, while a split triggered at a threshold edge with its tick's 4-volume shared at the stationary point (a supplied partition clause) keeps it continuous; on the supplied cube tick no split keeps both the record 4-volume and the step, no split keeps every excitation's band and energy, a split at the midpoint of an even half-tick flips only about 0.04 K^2 of light modes, and every local split map heats about 20% of a half-filled sea; the partition clause, the split rule, the size of Lambda and any cosmology are not established."
+upstream_dependencies:
+  - minimal_axioms
+  - candidate_laws
+runner: scripts/geometry_triggered_cube_split_with_a_stationary_partition_keeps_lambda_exactly_2026_10_21.py
+---
+
+# A geometry-triggered cube split with a stationary partition keeps Lambda exactly
+
+Claim type: bounded_theorem.
+Primary runner: `scripts/geometry_triggered_cube_split_with_a_stationary_partition_keeps_lambda_exactly_2026_10_21.py`.
+
+The [candidate-law register](CANDIDATE_LAWS.md) has zero premise weight. Its cube split had a kick of rho^2/rho* in Lambda at every split, which needed splits adiabatic to about 1e-123. This note asks which split rule keeps Lambda and what a split does to the matter on the cube tick. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) choose neither the carrier nor the split rule.
+
+## Statement
+
+In the supplied carrier, Lambda = 12A/l^2 - rho is a conserved charge. A split pinned to a tick count changes it; a split triggered when a cube's edge reaches the threshold, with the 4-volume of the split tick shared between parent and children at the stationary value, keeps it, and the expansion rate steps by (3/16)(HL)^2 instead. On the cube tick, the light modes cannot all keep band and energy through a split, a midpoint split keeps flips at about 0.04 K^2, and a half-filled sea is heated by about 20% per split by every local map tried.
+
+## Derivation
+
+T1, Lambda as a charge. The per-cell Lagrangian l f(u) - E, with f = -24u artanh u + 12 sqrt(1-2u^2) asin(u^2/(1-u^2)), has energy function u f' - f = -12 A(u). So Lambda = 12A/l^2 - rho is the charge of translations in 4-volume.
+
+T2, pinned split. Momentum is continuous across it, f'(u_c) = k f'(u_f), so Lambda changes by 12[k^2 A(u_f) - A(u_c)]/L^2, at leading order (rho^2/3)[1/rho*(L) - 1/rho*(L/k)]. The kick is a difference of a function of cell size, so staged refinements telescope and no schedule avoids it. Matter lost at the split goes into Lambda one-for-one.
+
+T3, triggered split. When the step sits in configuration space rather than at a fixed time, the refraction (Weierstrass-Erdmann) corner condition makes the conserved charge continuous. Matter lost at the split then changes H, not Lambda. A jump in vacuum density at the split still enters one-for-one; the register's clause that measures the matter phase from the vacuum phase on the same edges sets that jump to zero. Gating the split on the matter state brings the pinned kick back.
+
+T4, record 4-volume against step. Splitting by k in space and 1/j in tick keeps the record 4-volume iff k^3 j = 1 and the step iff j = k, so both hold only at k = 1. At a fixed record 4-volume a 2^3 split lengthens the tick 8-fold and multiplies sin eps by 16. This rules out the register's earlier "halve the ticks to keep the step".
+
+T5, energy no-go. The massless light band obeys cos w = cos^2 eps + sin^2 eps <cos K_i> exactly. A band-following split at fixed step raises each light mode's energy by (3/4)[sum K_i^4/(24K^2) - sin^2 eps K^2/72], positive in every direction. Compensating it needs opposite-sign components, that is partners, so no covariant split keeps both band and energy of every excitation.
+
+T6, heat-free split. An isometric split mapping the half-filled sea to itself must map positive bands to positive and negative to negative. The polar part of the corner map's sign blocks does so, but its range grows as 1/gap, the Compton length of the lightest sea species.
+
+Midpoint split. The parent applies half its even half-tick read from its own edges, each corner mode passes, shared evenly, to that corner of the 8 children, and the children apply the other half. At the midpoint the light-band projector does not depend on the step, which is why flips stay small for any step change.
+
+## Checks
+
+The runner gives `TOTAL: PASS=15 FAIL=0` in 7.7 s.
+
+- A1: u f' - f = -12 A(u) to 8e-11.
+- A2: pinned-split kick, discrete over continuum 1.00001, 0.99988, 0.99983 for k = 2, 3, 4.
+- A3: triggered split, Lambda shift over kick between 9e-7 and 2e-4, falling with the step; dS/d(partition) at most 4e-7.
+- A4: with matter lost at the split, pinned gives 1.00000 x (kick + lost) and triggered -3e-12.
+- A5: a common vacuum density is invisible to both; a jump of 1e-3 enters the triggered junction as 1.00000e-3.
+- A6: over 4 Lambda-dominated splits, pinned raises Lambda by 8.34e-4 of Lambda0 per split and drifts ln H by +4.1e-4 per split; triggered gives -3e-7 and -3e-6; the triggered ln H step is 0.748 u^2 (predicted 3/4).
+- B1: energy rise per K^2 of 0.02992 (axis), 0.00905 (diagonal) and 0.01426 (1,2,3) at eps = 0.371.
+- B2: the plain corner map flips 0.040 K^2 at a kept step, but 0.614 K^2 at K = 0.1 when the step doubles and 2.007 K^2 at x16.
+- B3: the midpoint split flips 0.040, 0.041, 0.041 and 0.049 K^2 for step x1, x2, x16 and x16 with mass, with photon energy ratio 1.00000 (0.99994 with mass); the light-band projector differs by 5e-5 between eps = 0.15 and 0.3 in the midpoint frame, against 0.21 at a tick boundary.
+- B4: local maps heat 0.190 and 0.200 of the sea per split; the sign-projected map heats 2e-31 (smallest singular value 0.85, 0.79).
+- B5: tails of the heat-free map at 8.5 fine cubes are 2e-6, 3e-4 and 5e-4 for mu = 0.6, 0.15 and 0.
+- B6: the only solution of k^3 j = 1 and j = k is (1, 1).
+- C1: with edges growing at fixed record 4-volume, the photon-to-atom phase ratio falls as 1/l (spread 6e-8 over l from 1 to 2) though eps falls 16-fold, and is continuous across the midpoint split (1.000039 from the band, 0.999999 at map level), so 1 + z is the edge ratio.
+- D1, D2: the two estimates below.
+
+Estimates (not checks). At H = 1e13 GeV the triggered split steps ln H by about 5e-11 per split, a log-periodic feature near 1e-10, against the 1.2% decline per split that n_s needs (eps_H = 0.0176). The split neither supplies nor spoils that drift, and no law in the register gives the decaying component it needs. If zone-edge partners were stable Planck-mass relics, 0.04 K^2 creation per split would bound the hottest splitting epoch near 5e3 GeV.
+
+## Boundary
+
+Forced: T1 to T6 and the midpoint mechanism. Supplied: the frustum carrier, kappa = 1 per rung cell, dust, the reference slicing, the threshold of 2 rung units, the k^3 junction hinge, the cube tick without copy mass at the listed steps and masses, the corner-map family, the half-tick midpoint (selected by test among three frames), sign projection by polar decomposition, the unit map, H_inf, relic stability and measured numbers. The partition clause is the key supplied piece: with every record's 4-volume fixed, as the register is written, even a triggered split gives the kick. Negative results: no split keeps both record 4-volume and step; no split keeps every excitation's band and energy; every local map tried heats a half-filled sea by about 20% per split. Not shown: asynchronous or inhomogeneous splits, the copy mass, links and photons through a split, gravitational waves. The size of Lambda is not predicted.

@@ -1,0 +1,27 @@
+== A. exact: F-flavour rishon links (F modes per colour per bond end, N fermions per flavour per link)
+[PASS] A1 [T] the link sector reached from the filled x end is the U(2N) irrep with N rows of length F (U(1), N=1: spin F/2); its Casimir is NF^2 + N^2 F, and sum_ab U_ab U_ab^+ = (C - C_x - C_y - N(n_x - n_y))/2 exactly | dims [((1, 1), 2), ((1, 2), 3), ((1, 3), 4), ((1, 4), 5), ((1, 5), 6), ((2, 1), 6), ((2, 2), 20), ((2, 3), 50), ((2, 4), 105), ((3, 1), 20), ((3, 2), 175)], max dev 4.3e-14
+[PASS] A2 [T] the SU(N) electric Casimirs at the two ends are equal on the whole link sector (the link is a rotor: E_R = -u^+ E_L u classically) | max |C2_x - C2_y| 7.1e-15
+   so at n_x = n_y: Tr UU^+ = N F(F+2N)/4 - 2 C2: the link field shrinks with its electric Casimir; F_eff = sqrt(F(F+2N))
+[PASS] B1 [E] large-F ring exchange -J sum Tr(U_p + U_p^+): J cancels; SU(N) g^2 = 8/F_eff, alpha_N = 2/(pi sqrt(F(F+2N))) for every N; U(1) g^2 = 4/F_eff, alpha_link = 1/(pi sqrt(F(F+2))) = 1/(2 pi sqrt(S(S+1))), S = F/2 (the register's value) | g^2 SU(N) = 8/Feff, U(1) = 4/Feff
+   strong/weak map: F=1..4 tree alpha SU(3): 0.241, 0.159, 0.101, 0.019 (F=30); box/tree kappa for U(1) (qlm-coulomb): 2.13 (F=1), 1.43 (F=2) ~ 1 + 1.1/F: tolerance band below
+== C. exact: 24-rotation orbits of a b^3 block; an orbit hosts bond ends covariantly iff its stabiliser fixes an axis
+[PASS] C1 [T] hostable orbits are exactly the axis 6-orbits (1 site per end) and the 24-orbits (4 per end, one C4 cycle); centre, 8- and 12-orbits cannot host an end; maximal rishon fill gives K_b = (b^3-10b+9)/6 per end and 10b-9 other sites (odd b), K_b = (b^3-4b)/6 and 4b other sites on the 8-orbits (even b) | K: 3:1 5:14 7:47 9:108 11:205 13:346 15:539 17:792 19:1113 21:1510
+[PASS] C2 [T] parity: in an odd block every covariant rishon set is 6 x (per-end count), so the non-rishon sites number b^3 - 6k = b (mod 6), always odd: an exhausted odd block cannot hold 16n matter modes (one per role) and nothing else; it needs an odd extra role (the centre)
+[PASS] C3 [T] maximal fill: odd b gives 16n + centre only at b = 9 (n=5), 17 (n=10); even b gives 4b = 16n on the body-diagonal 8-orbits at b = 4n (b = 12: exactly three families of 16) | odd [(9, 5), (17, 10)], even [(4, 1), (8, 2), (12, 3), (16, 4), (20, 5)]
+== D. estimates (tree alpha(F), SM one-loop, measured MZ inputs; cell scale mu = 1/(b a), a = sqrt(8pi) l_P)
+   needed 1/alpha (Y unit 1/6 -> link alpha_Y/36) at 1/a: Y 57.2 2 48.6 3 50.6 -> F_Y 655 F_2 29.0 F_3 29.4; at 1/(17a): 60.3 47.2 47.5 -> 690 28.1 27.4
+[PASS] D1 [E] any match needs F_Y/F_2 ~ F_Y/F_3 ~ 20 (the 1/6 Gauss unit costs 36, SU(N) links are twice as strong as U(1) at equal F): the hypercharge register is ~80% of all rishon sites, so no rule that treats the six (factor, colour) classes alike can fit | F_Y/F_2 24.5, F_Y/F_3 25.2, rishon share of Y 0.83
+   b=17 S1 equal F per class: F=(132, 132, 132) -> 1/alpha(0) 251.6, sin2 0.795, alpha_s 0.006
+   b=17 S2 equal modes per end per factor: F=(264, 132, 88) -> 1/alpha(0) 263.1, sin2 0.759, alpha_s 0.010
+   b=17 S3 modes per end ~ generators 1:3:8: F=(66, 99, 176) -> 1/alpha(0) 194.0, sin2 0.763, alpha_s 0.004
+[PASS] D2 [E] forced splits (S1 democratic, S2 equal modes, S3 ~ generator count) on the maximal fill, b = 3..21, two cell scales: 114 trials, 0 matches; the measured couplings are not reached by any class-symmetric rule | hits []
+   free split: 1/(b a) b15: F_Y 402 / needed 689 = 0.584; 1/(b a) b17: F_Y 655 / needed 690 = 0.949; 1/(b a) b19: F_Y 976 / needed 692 = 1.411; 1/a b15: F_Y 394 / needed 655 = 0.602; 1/a b17: F_Y 647 / needed 655 = 0.988; 1/a b19: F_Y 968 / needed 655 = 1.478
+   b=17 at 1/(b a): F=(655, 28, 27) (S_Y = 327.5) -> 1/alpha(0) 133.8 (137.04), sin2 0.2357 (0.2312), alpha_s 0.1265 (0.1180, fitted)
+   b=17 at 1/a: F=(647, 29, 29) (S_Y = 323.5) -> 1/alpha(0) 136.3 (137.04), sin2 0.2321 (0.2312), alpha_s 0.1265 (0.1180, fitted)
+[PASS] D3 [E] with F_2, F_3 fitted (two parameters for two couplings) only the total budget tests anything: it fixes alpha_Y and 1/alpha(0). Among odd b = 3..21 only b = 17 (K = 792 per end) lands within 6%, at either cell scale; a log-uniform rescaling of the needed F_Y lands within 6% on some odd b with probability p, so this is chance level, not evidence | within 6%: {'1/(b a)': [17], '1/a': [17]}, p = 0.22, 0.22; realisable splits on odd b: 256784
+[PASS] D4 [E] the three-family even block b = 12 (C3) has K = 280 per end, ~3x short: with the smallest colour sets (F = 4, multiples of 4 on 24-orbits) SU(2) and SU(3) are strong above MZ (or 1/alpha(0) far below 137) | r12 strong
+   integer F quantises the colour couplings: 1/alpha_{2,3}(cell) moves by ~pi/2 per flavour, so alpha_s(MZ) takes only the values 0.158, 0.126, 0.105 near F_3 = 27 (measured 0.1180 lies between)
+   b=17 maximal fill leaves 161 non-rishon sites = 10 x 16 + centre (C3): read as light families this contradicts the measured 3 (and nf = 20 kills asymptotic freedom); with 3 families, 113 sites need another role
+supplied: pure ring-exchange plaquette (CL-3 read as -J Tr(U_p+U_p^+)), N fermions per flavour per link, maximal fill, split rules, cell scale 1/(b a), SM one-loop betas with 3 families, kappa band 1+1.13/F, measured MZ couplings and Delta(1/alpha).
+elapsed_seconds 0.8
+TOTAL: PASS=10 FAIL=0

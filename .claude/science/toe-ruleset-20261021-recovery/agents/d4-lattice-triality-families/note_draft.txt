@@ -1,0 +1,67 @@
+D4 hole-type families: triality of the event lattice gives a forced, gauge-blind "3" and, on a holes-only field,
+exactly three light same-chirality copies; but triality is exact after the root slicing, so masses come out 1+2
+and charged-current mixing is trivial
+
+Claim type: bounded_theorem (exact group theory and Schur arguments; finite free-fermion numerics on tori).
+Runner: d4_lattice_triality_hole_type_families_light_species_and_mixing_2026_10_26 (12/12, ~4.5 s, seeded;
+re-run identical). Pre-registration: criteria_pre_run.txt (written before any computation).
+Builds on: d4-frame-modes (#10101, A3: holes vs frames, S3 x S3), time-blind D4 events (#10094), D4 zoom
+fixed point (#10098), family-blind lemma (#10071), spontaneous family breaking (#10075), record-frame families
+(rejected; V_cb = V_ub = 0). Does not repeat the internal Spin(8) triality route (w2 section 4): the label here
+is WHERE matter sits, so it commutes with any internal gauge group by construction.
+
+VERDICT (pre-registered rule): FAILS. It misses the mass-hierarchy and mixing fixed points; the count is 3
+only with chosen ingredients. Positive pieces are kept below.
+
+1. The geometric 3 [T, exact on all 1152 elements]
+- C1a. D4*/D4 = Z2 x Z2. Its three nonzero classes (v, s, c) are all deep holes: distance 1 = covering radius,
+  8 nearest events each.
+- C1b. Aut(D4) = W(F4) acts on the hole types through the full S3, with kernel W(D4) (order 192). The same
+  holds for the three root 4-frames; the joint image is S3 x S3 (order 36). Triality is an exact symmetry of
+  the event lattice and of a weight that treats all 24 directions alike.
+- C7a. Among the D_n, the three nonzero classes are equivalent only at n = 4 (norms 1, n/4, n/4), and
+  Out(D4) = S3 has no room for 6. So "3, not 6" is forced by the 4D event lattice. Nobody put the 3 in.
+- C2. Time along a root: |Stab| = 48. Its image on the hole types is the WHOLE S3, because W(D4) is already
+  transitive on the 24 roots (48/8 = 6). Its image on the frames is S2 (the tick frame is fixed); the joint
+  image has order 12. So the time choice gives NO family splitting on hole labels. It splits only the frames,
+  as 1+2.
+
+2. Light species [F, free overlap fermions, exact zeros on N = 4 and N = 6 tori]
+- C3. Fine lattice D4* (events + holes, nearest links). The three hole characters k = 2 pi g are naive zeros
+  with equal Wilson mass and the chirality of k = 0, but they are the TOP level (W = 32), above 36+ doublers.
+  Across every m0 window the overlap gives species 1, 13, 37, 40, never 3.
+- C4a. Holes only, nearest links (all inter-class). At k = 0 the class Wilson matrix is the permutation rep,
+  1 + 2 with eigenvalues 0 and 12, 12. Doublers at W = 8 and 10 lie below the doublet, so no window gives 3.
+- C4b/c. Holes only, both shells (nearest + D4-root intra-class links). In the window 12 < m0 < 22 there are
+  EXACTLY 3 light species, all at k = 0, forming the triality permutation rep 1 + 2. Away from k = 0,
+  min |lambda(D_ov)| = 0.30 over 1500 random k. All three have the same chirality, with isotropic kinetic
+  matrix (J - 1) + 6 (eigenvalues 5, 5, 8). Charges are identical automatically. m0 < 12 gives 1 species.
+  Chosen: matter off the event class, the second link shell, and the m0 window.
+- C5 (analytic). At the D4 zoom fixed point, G* = sum over images of Pi^2 x (continuum propagator), so a light
+  pole appears only at q = 0: one per continuum field. Blocking cannot multiply species. Under the zoom law,
+  frame- or hole-graded pieces of the kernel are not species.
+
+3. Masses and mixing [T, Schur]
+- C6a. Exact triality makes the commutant on the permutation rep {1, J}. Masses come out singlet + exactly
+  degenerate doublet, and V is trivial: no CKM and no oscillation. This is the record-frame Klein death again.
+- C6b. If the time-broken frame S2 were the label: masses 1+1+1, but the S2-odd family is unmixed (4/9 of the
+  |V_ij| vanish) and J = 0. That contradicts the measured V_ub, V_td != 0 and J = 3.1e-5.
+- The neutral current is family-diagonal automatically (gauge acts internally; GIM). That is not a selection
+  rule of the label.
+- Mixing needs triality broken differently in the up and down mass terms. Nothing in the D4 event rules,
+  records, or time choice breaks it (C2), so this returns to #10075 (a triality-breaking vacuum, with CP tied
+  to theta).
+
+Proposed working clause (candidate; FAILS against measurement as is)
+"Matter sits on the deep holes of the event lattice, hopping along both link shells; events carry records."
+- Gives: exactly 3 gauge-identical light copies (in a window), with 3 forced by D4 and no room for 6.
+- Smuggling gate:
+  - (1) No measured number is used, but the m0 window is a choice.
+  - (2) No observed structure is named, and the 3 is not inserted (it is |D4*/D4| - 1).
+  - (3) Prediction it was not built for: a 1+2 mass pattern with zero mixing. That is CONTRADICTED by
+    measurement.
+  - (4) Bent clause: the zoom fixed-point matter law's "matter's history weight on the D4 event set"
+    (events -> holes).
+  - Gate result: passes (1), (2) and (4); fails (3) on measurement.
+- Open: a dynamical triality breaking (vacuum) that keeps the forced 3; whether the hole-type triplet survives
+  the zoom law (C5 says the count must then be an input).

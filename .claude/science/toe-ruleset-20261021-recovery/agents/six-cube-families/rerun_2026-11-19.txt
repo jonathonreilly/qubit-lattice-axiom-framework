@@ -1,0 +1,33 @@
+== A. (2m)^3 cells, factorisation, zoom by 3
+[PASS] A1 [T] (2m)^3 cell: m diagonal shells, each A1+A2+T1+T2, and m(m^2-1)/3 free 24-orbits (m=1..5); 6^3 content (11, 11, 16, 27, 27)
+[PASS] A2 [T] cell = C^8 (signs) x C^27 (moduli), R = pi_8 x pi_S3 exactly; shells = C^8 x C^3 (isotropic moduli), R = pi_8 x 1: family index rotation-blind; moduli 10A1+A2+8E of S3: 11 pattern copies, 3 point-localised (C(m+2,3)+C(m,3) = [1, 4, 11, 24, 45])
+[PASS] A3 [T] shell projector: covariant, not central (rank 3 of 11/11/27/27 in A1/A2/T1/T2, none in E): no function of the rotations selects shells; free: four 3x3 family matrices, shell-orbit 3x8,3x8,3x24,3x24
+[PASS] A4 [T] even cubes tile even 6^3 blocks, odd cubes odd blocks; 27 of 729 groupings covariant, all offset (3,3,3); CL-1 maps sites, even, odd centres to themselves exactly for q = [1, 3, 5, 7]: smallest q = 3, coarse sites = shell 2
+[PASS] A5 [T] zoomed group, 12^3 torus: (shell, |stab|) {(0, 1): 1536, (1, 3): 64, (2, 3): 64, (3, 3): 64}: C3 exactly on shells; update orbits [64, 64, 64], pair orbits [64, 128] ((3,3,3) swaps shells 1, 3)
+[PASS] A6 [T] NN graph of the shells: components {8: 16, 1: 64} (central cubes, lone shell-2 sites); paths between components cross >= 2 free sites
+== B. fine reading: candidate rules on the fine lattice
+[PASS] B1 [T] spin-3/2 overlaps edge 0.5443, face 0.1925, body 6e-17: no CL-2 phase on diagonals; cube commutant dim 4 has 1 diagonal hop A (phases +-i, A^2=1, AW=-WA): cos(phi)W + sin(phi)A covariant reflections
+[PASS] B2 [T] spin-3/2 sites: each shell (0, 0, 2) in (E1/2,E5/2,G3/2), no E1/2; each free orbit (2, 2, 4): one-copy room is off-shell
+[PASS] B3 [D] CL-2 on the 6^3 torus (= Bloch form to 5e-15; eps 0.3, mu 0.05): 8 light at |w| = mu, weight 0.0370 = 8/216 per shell, speed^2 0.1156: no shell preference
+[PASS] B4 [D] phase pi on free sites: 8 light, 0.956 on shell 2, speed^2 x5e-04 (flat); shells 1, 3 at |w| 0.263, 0.314: the half-ticks act on disjoint shell parts, so no CL-2 mass
+[PASS] B5 [D] hop A + free-site phase: only shells light (8, orbit weight 3e-31), but 1D: along (1,1,0) 4/8 have speed 0, along (1,1,1) speed^2 1.041 (2) and 0.116 (6): four diagonal chains
+== C. internal reading R1: the 6^3 cell as an internal index of a coarse CL-2 tick
+[PASS] C1 [T] R1 rule (free internal modes heavy, 3x3 family matrices on shells): covariant, light space = shell space (24, weight 24.0000), levels = family eigenvalues; per shell the rung-1 action (A2)
+[PASS] C2 [D] generic covariant mixing d: 24 light, orbit admixture/(d/mu_H)^2 = 0.90, 0.86, 0.83 (d .05,.2,.5): only the gap protects the shells
+[PASS] C3 [T] coarse tick = direct sum over mass eigenmodes: each family is a CL-2 species (two copies, no chirality); dv^2/v^2 1.6e-06, 1.6e-04 at mass 1e-4, 1e-3 (eps 0.04)
+[PASS] C4 [T] derived model M = t A_nn + V P_free = 8 character blocks on 27 moduli (1e-14); t/V 0.005: shells 3, 2 at 3, 6 t^2/V, shell 1 at |3-2|n|| t; lighter masses = V x orbit weight (0.997-1.002)
+== D. hierarchy and mixing against measurement
+[PASS] D1 [M] ln(m2/m1)/ln(m3/m2): leptons 1.889, up 1.299, down 0.787; a sector-blind law c f(k) gives one value: exp 1.00, Gauss 2.00/0.50, power 2.151/0.465: none fits two sectors
+[PASS] D2 [M] derived model, t/V 0.01-0.2: lighter-pair ratio 1.02-2.50 in every sector vs 206.8 (mu/e), 589 (c/u), 19.9 (s/d); larger only at tuned zero crossings
+[PASS] D3 [T/M] T+ x 1 maps d->u, e->nu per shell: CKM = U_u^+ U_d free in R1 (0.225 allowed, not predicted); one shell operator for both: |V_us| 1e-17; derived model 0.0030, 0.0088 (t/V .05, .1)
+== E. owner idea: shell-orbit mixing as the decay of heavier families
+[PASS] E1 [T] [Q,M] = 0 (CL-5): each mass eigenmode number kept under random time-dependent links (leak 2e-16; control 5e-01): mixing relabels stable species, link vertices flavour-diagonal, width 0 at all orders
+[PASS] E2 [T/M] mu -> nu_mu e nubar_e keeps every family number (LFV < 4e-13, 1e-12, 1.2e-2): needed is T+ x 1, family-blind; [T+ x 1, M] = 0e+00 iff M_nu = M_e, M_u = M_d (else 7.8e-02): measured masses leave no charged current to link
+[PASS] E3 [T/D] |chi(s)|^2 = 1/8: one shell's nu, e, u, d share site densities; contact U n_x n_y on free bonds couples mu->e to ee, dd, uu as 1.012, 1.003, 1.008 x nu nu: BR(mu->3e), mu-e conversion O(1) vs < 1e-12, 7e-13
+[PASS] E4 [M] (tau_mu/tau_tau) B_e (m_mu/m_tau)^5 = 1.0024: m^5 with one coupling (tree 2.187 us, imported G_F); m^3 misses by 283; derived orbit weights e, mu, tau 0.0074, 0.0163, 0.0069: (G_tau/G_mu)^2 = 0.42
+[PASS] F1 [T] CL-1 compatibility: the 6^3 rule keeps translations T_6 of index 27 in CL-1's T (27 groupings, A4); R1 moves modes 6 sites per coarse half-tick, so the fine strict cone needs >= 6 fine layers per coarse half-tick; per family two copies and no net chirality remain (C3)
+== measured (comparisons only): CODATA m_mu/m_e; PDG 2024 masses, lifetimes, B(tau->e nu nu), G_F; MEG, SINDRUM, PDG LFV bounds
+supplied: CL-2 tick (eps, mu), the rung reading, the 6^3 grouping, orbit gap, family matrices, intra-cell t, V, contact U
+elapsed_seconds 1.9
+
+TOTAL: PASS=23 FAIL=0

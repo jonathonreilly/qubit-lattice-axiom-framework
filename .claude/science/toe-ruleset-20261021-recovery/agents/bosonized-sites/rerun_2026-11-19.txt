@@ -1,0 +1,44 @@
+== (1) exact algebra ==
+PASS cube complex 2x2x2: all 12 bosonized A_e and 8 B_v commute with all 8 G_v
+PASS cube complex 2x2x2: (anti)commutation table equals Majorana bilinears' (190 pairs): mismatches=0
+PASS cube complex 2x2x2: 6 fermion face loops are scalars (c_p = [0] as i^k) and bosonized face loops commute with every generator
+PASS periodic 4^3: all 192 bosonized A_e and 64 B_v commute with all 64 G_v
+PASS periodic 4^3: (anti)commutation table equals Majorana bilinears' (32640 pairs): mismatches=0
+PASS periodic 4^3: 192 fermion face loops are scalars (c_p = [0] as i^k) and bosonized face loops commute with every generator
+== (2) cube tick and band ==
+PASS face phase -1 <=> W_i anticommute, R^2 = 1 (fermionic reference): max|{Wi,Wj}|=0.0e+00
+PASS zero-flux (uniform) cube hop is NOT a reflection: max|R0^2-1|=0.667
+PASS copy sign s = i R1R2R3R: Hermitian, s^2 = 1, [s,R] = 0 (fermionic reference)
+PASS bosonized copy sign (path words) commutes with every G_v (constraint-even)
+PASS flux sector chosen by the face-phase rule has the even-Fock dimension 128: dim=128, G-sector=4096 of 2^20
+PASS many-body spectrum of bosonized R (no face phase written) = fermionic: maxdiff=5.3e-15
+PASS many-body spectrum of bosonized s (no face phase written) = fermionic: maxdiff=3.1e-15
+PASS many-body spectrum of bosonized R+0.37s (no face phase written) = fermionic: maxdiff=7.1e-15
+PASS cube tick exp(-i eps R) eigenphases agree: eps=0.3, maxdiff=6.7e-16
+PASS zero-flux sector gives a different (non-reflection) spectrum: maxdiff=1.155
+PASS band eps=0.3: K=0 Dirac point, speed = sin(eps)/sqrt3 isotropic (3 dirs): zero modes=8, v=[0.17062 0.17062 0.17062], th=0.17062
+PASS band eps=0.3: copy mass M=0.5 leaves exactly one light copy (4 zero modes): zero modes 8->4
+PASS band eps=0.8: K=0 Dirac point, speed = sin(eps)/sqrt3 isotropic (3 dirs): zero modes=8, v=[0.41417 0.41417 0.41417], th=0.41417
+PASS band eps=0.8: copy mass M=0.5 leaves exactly one light copy (4 zero modes): zero modes 8->4
+periodic band uses the exact sector map of (1): bosonized sector phi_p = -c_p == pi-flux fermion
+== (3) flux sector energies, half-filled NN sea, 4^3 ==
+E/site: pi=-1.2247 zero=-1.0607 random min=-1.0817 median=-1.0562
+single-link flip cost (total) by axis: [0.427 0.427 0.427]; min gap to random (total) 9.16
+PASS pi-flux sector lowest among zero, 300 random and all single-link defects
+NOTE: every flux commutes with the tick; selection needs a least-energy initial sea (supplied).
+== (4) Pauli-frame (Klein) symmetries ==
+cube: stabilizer rank 13; Pauli commutant of hop algebra 13; of hop TERMS+G 14; gauge-invariant on-site Paulis ['Z']; gauge-invariant global site Paulis ['Z']
+PASS cube: commutant of the full hop algebra = constraint group (no extra Pauli label)
+PASS cube: only Z (fermion parity) survives on a site; X, Y are string ends (gauge-charged)
+  extra Z2 vs bosonized copy-sign terms: anticommutes with 48/96 (copy mass breaks it)
+  extra Z2 on cube: site part XYXYYXYX; anticommutes with 8/8 B_v and 12/12 A_e  (=> B->-B, A->-A: particle-hole/sublattice type)
+PASS cube: Pauli symmetries of the hop modulo constraints form at most one Z2 (no Klein, three-sector group): extra generators=1
+4^3: stabilizer rank 193; Pauli commutant of hop algebra 193; of hop TERMS+G 194; gauge-invariant on-site Paulis ['Z']; gauge-invariant global site Paulis ['Z']
+PASS 4^3: commutant of the full hop algebra = constraint group (no extra Pauli label)
+PASS 4^3: only Z (fermion parity) survives on a site; X, Y are string ends (gauge-charged)
+PASS 4^3: Pauli symmetries of the hop modulo constraints form at most one Z2 (no Klein, three-sector group): extra generators=1
+== records (CL-2 reading) ==
+PASS site Z records (= occupation) are gauge- and flux-invariant
+PASS a Z record of any link qubit anticommutes with the face fluxes through it (would scramble the face-phase sector): link qubits must be excluded from records: faces hit per link=[2]
+== (5) rule count: see note ==
+TOTAL: PASS=29 FAIL=0

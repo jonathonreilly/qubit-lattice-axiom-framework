@@ -1,0 +1,38 @@
+family-minimality: pass criteria written BEFORE any scratch run or runner (2026-10-24). Provenance: inputs read were BRIEF.md,
+synthesis-8/morning-1024, floquet-pi-slab (note, runner), slab-parity (note, criteria), anomaly-family-count (note), freeze-mirror-smg
+(note sections A-C), spin10-two-flavour (scope), and the register's CL-2 text plus its info-min-law paragraph and the CL-3 text.
+Repo check: git grep origin/main (docs, scripts) for "smallest anomaly-free", "minimal family count", "family-count minimality",
+"minimal number of families" found nothing; gh pr list "family count minimal" found no covering PR.
+
+Question. With a FREEZE-class tick (nonzero turn-graded winding) the far-wall bookkeeping allows N_f in {3, 6, 9, ...}. Does an
+ADOPTED principle prefer the smallest anomaly-free count, with no 3 put in?
+
+Candidates, checks and predicted outcomes.
+ (a) CL-2 fewest changes / least information (info-min-law).
+     (a1) exact: for independent families (product odds, product support) the fewest-changes transport cost is additive,
+          c(N) = N c(1) (LP optimum, checked N = 1, 2, 3 on a seeded two-mode family). (a2) exact: in a stationary vacuum (odds
+          unchanged by the half-tick) the identity transport has zero changes, so the CL-2 cost is 0 for EVERY N_f. (a3) text: CL-2
+          prices transport at fixed content; it counts no new modes through a passing, and the axioms put one qubit per site, so
+          family copies are composite cell copies whose number no clause of CL-2 prices. (a4) if CL-2 were EXTENDED to content
+          selection ("the content minimises the expected changes"), its minimiser over the anomaly-free set including 0 is N_f = 0;
+          3 needs a supplied "N_f >= 1"; and the minimal count is route-dependent (16-pair Omega: 3; FREEZE's bare-label charge-4
+          term: its own existence N >= 4 and Spin-Z4 N = 0 mod 8 already exclude 3). Prediction: FAIL.
+ (b) FREEZE-class winding.
+     (b1) exact enumeration: a per-family node pair (light hand +, mirror hand -) has winding f(q,+) + f(q',-); q = q' gives 0, q != q'
+          gives the six vectors +-(3 e_a - (1,1,1)), all of L1 norm 4; W_F = (-2,1,1) is one of them, so FREEZE already has the
+          minimal nonzero per-family winding of its class. (b2) finite: the near wall of the odd (Ls = 7) minimal-winding slab carries
+          exactly one Weyl doublet at (K = 0, 0) and one at (R, pi): 2 states per node in turn sectors (1, w), one turn charge, so ONE
+          light copy in total across sectors (the three sectors are turn charges, not copies). (b3) exact: N_f stacked identical
+          families give W = N_f W_F, and W_F = (1,1,1) mod 3, so the anomaly-free condition is exactly "W_tot = 0 mod 3 in Z[Z3]".
+          A "minimal nonzero winding" rule picks N_f = 1 (anomalous); "minimal anomaly-free winding" is the supplied minimality
+          restated. Prediction: FAIL (the winding does not fix N_f).
+ (c) Vacuum energy of the mirror-gapped far wall.
+     (c1) finite + exact: reduced Spin(6) = SU(4) analogue of the Omega pair term (two 4s, 8 modes, 256 states): unique or not,
+          E0 < 0, gap > 0; two decoupled families (Kronecker sum, 2^16 sparse): E0(2) = 2 E0(1), gap(2) = gap(1). (c2) exact: with a
+          family-diagonal Omega, E0(N) = N E0(1) is strictly DECREASING in N and the gap is N-independent, so energy minimisation
+          prefers MORE families and no stability bound on N_f arises; CL-3 weighs only departures from the vacuum, so the vacuum
+          energy carries no weight at all. Prediction: FAIL (wrong direction, no bound).
+
+PASS (synthesis) = an adopted rule selects N_f = 3 with no 3 inserted. Predicted: FAIL for (a), (b) and (c).
+Every line of the runner reports a result (PASS = the computed fact holds); the synthesis verdict follows this file.
+Machine: < 150 MB, < 60 s, BLAS 1, nice 10; largest objects a 56 x 56 slab tick and a 2^16 sparse Kronecker sum.

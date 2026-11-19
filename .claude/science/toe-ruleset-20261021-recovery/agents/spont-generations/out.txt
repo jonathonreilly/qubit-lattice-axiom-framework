@@ -1,0 +1,30 @@
+== A. measured targets (pole masses)
+[PASS] 3-mass fit sqrt(m_k) = a(1 + 2 sqrt(r) cos(delta + 2 pi k/3)): r = 1/2 and delta = 2/9 each within 1 sigma  r = 0.4999967(76), delta = 0.2222248(63)
+[PASS] the pair (r, delta) = (1/2, 2/9) is excluded by m_mu/m_e: at most one of the two can be exact  predicts 206.770316 vs 206.7682830(45): 452 sigma
+   r = 1/2 exact => delta = 0.2222220471(4e-10) = 2/9 -1.751e-07; delta = 2/9 exact => r = 0.4999997868;  m_tau 1776.97 / 1776.97 vs 1776.93(0.09)
+[PASS] no lattice-type angle p pi/q, arccos(p/q) or arctan(p/q) with q <= 30 lies within 2 sigma(3-mass fit) of delta  p pi/q: 0.224399 (347 sig); arccos(p/q): 0.258922 (5861 sig); arctan(p/q): 0.223477 (200 sig)
+[PASS] quarks: delta is not Q/3 (the lepton relation 3 delta = Q) in either sector at either scale  up r=0.773 d=0.074, down r=0.597 d=0.110, up@MZ r=0.833 d=0.051, down@MZ r=0.618 d=0.100
+== B. breaking by the state
+[PASS] S3-invariant vacuum: commutant span{1, J}, masses {a+2d, a-d, a-d} (a symmetric vacuum keeps a degenerate pair)
+[PASS] C3 vacuum = circulant a + bP + b*P^2; the reflection maps delta -> -delta, so an S3-invariant potential has the pair of vacua +-delta; the masses are distinct iff sin(3 delta) != 0
+[PASS] e1 = 3A, e2 = 3A^2(1-r) are delta-blind and e3 = A^3(1-3r+2r^1.5 cos 3delta): any copy-blind (U(3)) potential sees delta only through e3
+[PASS] CL-2 band cos w = cos(mu)(1+S)/2 + cos(2eps)(1-S)/2 from the tick exp(-i(eps-mu/2)W), exp(+i(eps+mu/2)W)  dev 2.9e-15
+[PASS] isotropy: with a circulant copy mass the 24 levels at any K are the single-copy levels at the eigen-masses mu_k, so every generation has exactly the single-copy band (the condensate adds no anisotropy)  dev 1.2e-15
+[PASS] sea quadrature converged (56 vs 80 nodes), Omega' matches a finite difference, Omega''' > 0 on (0, 1.9 eps]  conv 4e-15
+== C. the CL-2 sea fixes delta only where sin(3 delta) = 0
+[PASS] identity dG/d(delta) = -6 A^3 r^1.5 sin(3 delta) f'[mu1,mu2,mu3] (second divided difference of f')  rel dev 2.3e-09
+[PASS] three-copy CL-2 sea, mu/eps in {.001,.03,.2}, r in {.5,.75,1}, both readings: f'[...] keeps one sign, so every stationary delta has sin(3 delta) = 0 and a degenerate pair  divided difference varies by <= 6% over delta
+   minima at r = 1/2: lin delta = pi/3, |mu| ~ (1.707, 1.707, 0.414); sq delta = 0, m ~ (5.83, 0.086, 0.086); measured m_mu/m_e = 206.77, m_tau/m_mu = 16.82 (no degenerate pair)
+[PASS] a U(3)-invariant Hartree term (any copy-blind contact rule, any colour factor) is a function of Tr phi and Tr phi^2, both delta-blind at fixed (A, r), so it leaves the delta landscape unchanged
+[PASS] a cubic det(phi) term kappa e3 gives an interior stationary delta only for kappa inside a window of relative width ~1e-2 around minus the sea coefficient; delta = 0.2222220 then fixes kappa (supplied, tuned)  window 1.40%, target at 0.099 of it
+== D. copy-blind contact vacua cannot carry the lepton spectrum
+[PASS] V = sum v(theta_k) + h(sum theta), v = Omega + theta^2/(2 gamma): Omega''' > 0 makes v' unimodal on theta > 0, so at most two distinct positive eigenvalues: three positive sqrt-masses (the Koide signs) are impossible
+[PASS] three distinct masses need one copy on each root of v'(theta) = c: heaviest/middle <= theta_+(c_sp)/theta_m, at most 2.54 (lin) or 6.4 (sq) over the light band, vs measured m_tau/m_mu = 16.82  R = 2.058@0.01, 2.123@0.11, 2.259@0.47, 2.539@1.23 (mu*/eps)
+== E. colour
+Traceback (most recent call last):
+  File "<workspace temp copy>/runner.py", line 201, in <module>
+    bq = 0.5 / (1.1 * gc); t1 = brentq(lambda t: 3 * sea.Om1(t) + 2 * bq * t, 1e-9, 1.95 * EPS); t3 = brentq(lambda t: sea.Om1(t) + 2 * (bq / 3) * t, 1e-9, 1.95 * EPS)
+                                ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<user site-packages>/scipy/optimize/_zeros_py.py", line 846, in brentq
+    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)
+ValueError: f(a) and f(b) must have different signs

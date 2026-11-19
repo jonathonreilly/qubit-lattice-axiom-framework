@@ -1,0 +1,27 @@
+PASS S1 so(10) spanned by 45 bilinears
+PASS S2 stabiliser of N in so(10) has dim 25 = u(5) (complex structure) | dim=25
+PASS S3 stabiliser of (N, N_L) has dim 13 = u(2)+u(3) (level/link split) | dim=13
+PASS S4 plain N not in so(10); N - 5/2 is (spinor twist forced)
+PASS S5 hypercharge Y = -1/3 N_L + 1/2 N_Q lies in so(10) (standard SU(5) embedding)
+PASS X1 U(1)_X charges on even half: N=0:-5, N=2:-1, N=4:+3 (U(1)_chi of 10,5b,1) | [(0, Fraction(-5, 1)), (2, Fraction(-1, 1)), (4, Fraction(3, 1))]
+PASS X2 all U(1)_X anomalies vanish on the 16 (grav, cubic, mixed with Y, SU3, SU2) | {'X': '0', 'X^3': '0', 'X^2Y': '0', 'XY^2': '0', 'SU3^2X': '0', 'SU2^2X': '0'}
+PASS X3 untwisted N is anomalous on the 16 (Tr N, Tr N^3 nonzero) | TrN=40 TrN3=400
+PASS X4 exp(i pi/2 X) acts as one phase on the 16: Z4 centre of Spin(10) sits in U(1)_X | {-1j}
+PASS X5 nu^c nu^c has X = -10: condensate breaks Z4 -> Z2 (fermion parity)
+PASS W1 Tr T3^2 = 2, Tr(T_colour^2) = 2, Tr Y^2 = 10/3 on the 16 | 2,2,10/3
+PASS W2 induced couplings from complete content: sin^2 theta_W(cell) = 3/8, alpha_3 = alpha_2 | 3/8
+W: SM one-loop: alpha1=alpha2 at mu=1.03e+13 GeV, 1/alpha=42.4; 1/alpha3=36.8
+PASS W3 (tension) SM-only running cannot meet the 1:1:1 cell prediction (mismatch > 3 in 1/alpha) | mismatch=5.6
+PASS F1 the three record-axis readings span 32 states, not 96 (one family's worth) | rank=32
+PASS F2 the axis change is an SU(2) frame element: commutes with N, N_L (frame-dependent label)
+PASS F3 Holevo: three MUB readings of one unit carry <= 1 bit in total (log2 dim C^2)
+PASS Z1 smallest odd d with half-Fock dim 2^(d+1) = 0 mod 16 is d = 3 (A's minimal 16 = B's site) | allowed d=[3, 5, 7]
+PASS S6 a generic 45-adjoint orientation aX+bY has stabiliser dim 13: the 2+3 split = a vacuum choice | dim=13
+C: 16x16bar channels DeltaC = 2C16 - C(R): {'1': '45/4', '45': '13/4', '210': '-3/4'}
+PASS C1 16x16bar: singlet most attractive (gaps 16 with its mirror), 45 next, 210 repulsive
+PASS T0 binary octahedral group generated (order 48) | order=48
+PASS T1 qubit not locked: flavour 8 = 4 x (spinor doublet); no singlet, no triplet (sum m^2 = 16) | inv=0 comm=16
+PASS T2 qubit locked: flavour 8 = 2 x (1 + 3): two singlets + two triplets (sum m^2 = 8) | inv=2 comm=8
+PASS T3 locked invariant sigma(taste).sigma(qubit): eigen -3 (singlet) x1, +1 (triplet) x3 | [-3.0, 1.0, 1.0, 1.0]
+PASS T4 3 = d: the triplet is the vector of the d=3 rotation group (2x2 = 1+3 only for SU(2))
+TOTAL: PASS=24 FAIL=0

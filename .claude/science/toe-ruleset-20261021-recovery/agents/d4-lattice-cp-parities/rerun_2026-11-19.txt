@@ -1,0 +1,31 @@
+== 1. exactness of lattice CP_g = (improper lift S_g) x C, psi -> M psibar^T, M = C S_g^-T, no s-reflection
+PASS 1a [T] C = g0 g2 obeys C g^T C^-1 = -g, C g5^T C^-1 = g5; the D4 fixed-point symbol obeys C D*(p)^T C^-1 = D*(-p) | 0e+00, D* 2e-15
+PASS 1b [T] slab (Ls = 8, mf = 0.1): C alone needs the wall reflection J (C D5(p)^T C^-1 = X^-1 J D5(-p) J X); CP_g for all 576 improper g is WALL-PRESERVING: M D5(p)^T M^-1 = X^-1 D5(-g p) X with NO J (X = c A - 1, s-independent and local; X = -1 for Shamir), and the wall-fermion operator obeys M D_eff(p)^T M^-1 = D_eff(-g p): not the face swap | Borici: C+J 8e-16, CP no-J 3e-15, CP with-J >= 0.51, D_eff 3e-15; Shamir: C+J 2e-15, CP no-J 6e-15, CP with-J >= 1.00, D_eff 2e-15
+  [info] Luscher split (P_hat_- on psi, P_+ on psibar) is not CP-symmetric: the CP image of psi's P_hat_- is a D-dependent projector on psibar, |image - P_+| = 0.85 (cf. Fujikawa-Ishibashi-Suzuki 2002); the slab is exact
+PASS 1c [T] Cayley 4-form on the 4 spinor modes is invariant under the Fock particle-hole psi -> W4 psi^+, W4 = C S_g^-T, for all 576 improper g (det W4 = 1, so the free phase alpha = 0 mod pi/2) | 4e-14
+PASS 1d [T] far-wall Spin(12) pair: W_int = 1 (occupation-basis conjugation) is Spin(10)-covariant (-t^T = s_a s_b t: outer automorphism R = diag(s), s = (+,-,...)), and B_a -> sum_b U_ab B_b^+ with U unitary for any unitary Weyl block (incl. the lift's): sum_a {B_a, B_a^+} is CP-invariant | span 1e-15, U 7e-16
+PASS 1e [T] links: every improper g maps the 24 D4 roots (hence every root plaquette) to themselves; the theta carrier eps F F = 8 Pf(F) is C-even (F -> -F^T) and P-odd (Pf(g F g^T) = det g Pf F): CP-odd, so theta_gauge in {0, pi} | 8e-15
+  [t = 8 s]
+== 2. channel CP parities on the register (16 x 16 = 10_s + 120_a + 126_s, Weyl form eps)
+PASS 2a [T] PRE-REGISTERED definition W^T K^A W = eta_k r_A (K^A)^+ (K^A = eps x C Gamma^A, W = 1): eta_k constant over all components; pattern (eta_10, eta_120, eta_126) = | (1, -1, 1) (literal pre-reg PASS pattern)
+  -> but (K^A)^+ = (-1)^(k(k-1)/2) r_A K^A x (eps sign): this 'eta' is the transpose sign of C Gamma^(k), i.e. the s/a/s labels
+     themselves. A Grassmann bilinear also carries the family index (Y120 antisymmetric), which cancels that sign:
+PASS 2b [T] Grassmann-correct parity: the CP image of channel k with Yukawa Y is channel k with Yukawa Y^* times ONE common factor (phase x wedge^k R) for all k (first 14 components per channel); same with W_int x random Spin(10) element: pattern (eta_10, eta_120, eta_126) = | W_int = 1: (1, 1, 1); W_int = random Spin(10) g: (1, 1, 1) -> UNIFORM (+,+,+)
+  [t = 9 s]
+== 3. SM-component mass matrices from register Clebsches (vev tensors real, SU(3)_c x U(1)_em invariant; Yukawas real)
+  invariant vev dimensions (CP-even, CP-odd): {1: (1, 1), 3: (2, 2), 5: (4, 4)}
+  all CP-even                 median|J| 4.9e-32 max 9.5e-30 | non-Herm 2e+00 | Im/|M| 2e-29 | arg det in {0,pi}: True (frac pi 0.37; median dist 6.4e-31) | colour-blind 5e-15
+  120 CP-odd only             median|J| 8.4e-03 max 8.5e-02 | non-Herm 8e-29 | Im/|M| 1e+00 | arg det in {0,pi}: True (frac pi 0.33; median dist 1.9e-16) | colour-blind 5e-15
+  10 CP-odd only (control)    median|J| 1.2e-02 max 8.8e-02 | non-Herm 2e+00 | Im/|M| 1e+00 | arg det in {0,pi}: False (frac pi 0.00; median dist 5.0e-01) | colour-blind 5e-15
+  126 CP-odd only (control)   median|J| 8.3e-03 max 9.1e-02 | non-Herm 2e+00 | Im/|M| 1e+00 | arg det in {0,pi}: False (frac pi 0.00; median dist 5.7e-01) | colour-blind 9e-15
+PASS 3a [F] all vevs CP-even: M_u, M_d real, J = 0 (200 seeded samples): the exact lattice CP alone forbids the CKM phase | max|J| 9e-30
+PASS 3b [F] CP broken only by the 120 vev: M_u, M_d Hermitian, arg det(M_u M_d) in {0, pi}, J != 0 -- the Grimus-Kuhbock shape follows from WHERE the CP-odd vev sits, not from channel parities | median|J| 8.4e-03
+PASS 3c [F] controls: a CP-odd 10 or 126 vev gives non-Hermitian masses and generic theta_tree (~9 orders above 1e-10) | median |theta_tree| 5.0e-01, 5.7e-01
+PASS 3d [F] arg-det bit with the 120-only breaking: det(M_u M_d) < 0 in a fraction strictly between 0 and 1: theta_tree = 0 or pi is NOT fixed by the symmetry (one unfixed bit) | fraction pi = 0.33
+== 4. loop estimate [E] (supplied literature scale, order of magnitude only)
+  After spontaneous CP breaking the Hermitian form is unprotected: one-loop dressing by the CP-odd 120 vev in heavy-scalar
+  loops gives theta_bar ~ (1/16 pi^2) x lambda_mix x y^2 x sin(phi) (generic parity/Hermitian-mass solutions; e.g.
+  Babu-Mohapatra 1990, Barr-Chang-Senjanovic 1991, Hall-Harigaya 2018). With y ~ 1, sin phi ~ 1: 6.3e-03 x lambda_mix,
+  so theta_bar < 1e-10 needs lambda_mix <~ 1e-8 (or a loop-level protection): a quality problem, as the menu flagged.
+runtime 13 s
+TOTAL: PASS=11 FAIL=0

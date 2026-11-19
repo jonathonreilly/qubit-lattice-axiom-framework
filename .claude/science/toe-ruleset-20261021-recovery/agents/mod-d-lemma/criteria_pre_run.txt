@@ -1,0 +1,26 @@
+mod-d-lemma (P4, mechanisms M17/M14): pass criteria written BEFORE any run (2026-10-23).
+Question: replace the hand-set Z3 of the families-mod-3 lemma by the actual body-diagonal turn of the d-cube, d = 2, 3, 4.
+Is the obstruction "N = 0 mod d" in each d (PASS: '3 = d' is a theorem in this class) or "mod 3 in every d / no pattern"
+(FAIL: the 3 is the cube turn, not the dimension)?
+
+Lemma structure carried over unchanged from families-mod-3 (C1/C2): twisted turn group Z_n (n = order of the turn on fermions);
+light copy charge q_l, mirror copy charge q_m; mirror single-copy top form of M modes keeps twist k iff M(q_m + k) = 0 mod n;
+per-family mixed anomaly of the gapped set = m (q_l + k) mod n (m = doublets per family per sublattice SU(2));
+N obstructed iff no kept k has N m (q_l + k) = 0 mod n.
+d-generic inputs: one mode per corner of the d-cube (2^d modes); cell-supplied content m = M = 2^(d-1) (half the cell);
+d = 3 literal content m = M = 4; toy (3-4-5-0) multiplicity 2. Turn charges from the turn's permutation of the 2^d corners.
+
+Expected outcomes (each check passes when the computation returns the stated value):
+(1) Group theory [T]: the axis d-cycle maps the body diagonal to itself, has order d and det (-1)^(d-1): proper only for odd d.
+    d = 2: the only proper elements of the diagonal's stabilizer (with reversal) are 1 and -1 (pi turn, order 2, reverses the
+    diagonal); d = 4: no PROPER order-4 element maps the diagonal axis to itself; proper ones have orders {1,2,3,6}.
+(2) Reproduction [T]: at d = 3 (n = 3, m = M = 4, q_l = 2, q_m = 1, cited) the allowed-N table equals families-mod-3 C2:
+    k = 0,2 -> {3,6,9}, k = 1 -> all. Corner charges of the C3 turn {0^4,1^2,2^2} (families-mod-3 A4).
+(3) Prediction before running: FAIL of '3 = d'. With power-of-two content (m, M = 2^(d-1)) the 2-part of n is absorbed, so
+    d = 2 (n = 2 or Z4^F) and d = 4 (n = 4 or 8, improper anyway) give NO obstruction for any charge pair; the proper
+    order-3 (3-cycle) and order-6 (-C3) turns of the 4-cube give N = 0 mod 3. Pattern = N = 0 mod odd part of the turn order.
+    An odd per-family multiplicity would be needed for mod 4, and the cell never supplies it.
+(4) Dobrescu-Poppitz (6D, SU(2) global anomaly pi_6 = Z12, doublet count (+) - (-) = 0 mod 6, 2 per generation, cited as supplied):
+    expected AGREE on the conclusion (per-family unit coefficient mod 3 -> N = 0 mod 3) but DIFFERENT origin (homotopy of SU(2)
+    in 6D vs turn order). Zoom alone gives a 5th dimension (odd, no chirality): cannot play DP's two extra dimensions' role as is.
+Runner targets: stdout < 6000 chars, AUDIT_TIMEOUT_SEC = 120, seeded, < 10 s, < 100 MB, ends TOTAL: PASS=N FAIL=0.

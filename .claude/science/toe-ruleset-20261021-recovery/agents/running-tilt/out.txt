@@ -1,0 +1,24 @@
+== A. content and the link group
+[PASS] A1 W^2 = 1; every band obeys cos w = A S(K) + (cos 2eps + cos mu)/2; at K = 0 the phases are +-mu, four each: two light Dirac copies (Nf = 2)  2e-15, 1e-15
+[PASS] A2 block-local, translation-invariant one-body operators commuting with U(K) for all K: dimension [1, 1, 1, 1] (massless and massive): only the number, so CL-5 links on this content are U(1); no self-coupling, no gauge loop (the eight momenta {0,pi}^3 of a 4^3 torus alone allow 8)
+== B. per-rung running of 1/e^2 from the sea (Floquet static density response)
+[PASS] B1 eigenphases of U e^{-i lam V}: w + lam V_nn + (lam^2/2) sum |V_mn|^2 cot((w_n - w_m)/2) + O(lam^3)  err 6.5e-09 -> 8.1e-10
+[PASS] B2 eps = 0.3, mK = 0.029..0.0037 per block: slope of the mu-even induced 1/e^2 per e-fold, in units 1/(6 pi^2): 2.00063 2.00017 2.00004 -> Nf = 2; deviation ratios 0.28 0.25 per rung (x1/4: irrelevant)
+[PASS] B3 universal log, lattice matching: slope 2.00007 (eps 0.7), 2.00143 (eps 0.04); constants C = 5.007, 4.891, 4.227 (eps 0.04, 0.3, 0.7) in 1/e^2 = (2 ln(1/mK) + C)/(6 pi^2)
+[PASS] B4 the single species (+mu) slope 1.841 1.908 1.948 approaches 2 like the odd part (ratios 0.57 0.56 0.55 ~ 1/2 per rung): an O(mu a) artifact
+[PASS] B5 so Delta(1/e^2) = 2 ln2/(6 pi^2) = 0.023410 and Delta(1/alpha) = 4 ln2/(3 pi) = 0.294181 per rung toward the IR; b0 = -8/3: e^2 shrinks toward the IR and grows toward a UV pole (screening)
+== C. tilt of a frozen power of the running coupling (theorem)
+[PASS] C1 P = A alpha^gamma, ln mu_k = s ln k, d(1/alpha)/dln mu = -b: n_s-1 = gamma s b alpha = gamma/N, alpha_s = (n_s-1)^2/gamma, dN/dln k = -1 (sympy); b>0 (UV pole) and gamma = -2 give n_s-1 = -2/N, alpha_s = -2/N^2
+[PASS] C2 |gamma| = 2: N = 57.0 +- 6.8 e-folds to the pole; alpha_s = -6.2e-04 (UV pole, 0.58 sigma) or +6.2e-04 (IR pole, 0.76 sigma); separating the signs at 3 sigma needs sigma(alpha_s) = 4e-04
+[PASS] C3 examples: link-angle fluctuation <theta^2> ~ e^2 (gamma = +1) tilts blue for U(1), n_s-1 = +b alpha; vacuum link stress is e-independent (gamma = 0); red needs gamma < 0; gamma = -2, s = 1 on two unit copies needs alpha(mu*) = 1/(24.2 +- 2.9)
+== D. what sets N
+[PASS] D1 ladder: the pivot is L* = 133.28 e-folds (192.3 rungs) below the cell; a UV pole gives N = L* + L_cell >= L*; induced reading L_cell = C/2 = 2.45: N = 135.7, n_s = 0.9853 (4.8 sigma); 1/alpha_cell = 24..42 on two copies: n_s = 0.9895..0.9914; the data need |gamma| >= 4.68 +- 0.56
+[PASS] D2 running stops below the lightest charged mass: the electron sits 49.9 e-folds below the cell, 83.4 above the static pivot, so b(k*) = 0 there
+[PASS] D3 asymptotically free (supplied group; gauge bosons keep it running): N = 2 pi/(b0 alpha_cell) - L*; gamma = +1 (link angle) needs 1/alpha_cell = (25.75 +- 0.54) b0, gamma = +2 needs (30.28 +- 1.09) b0; GUT-like 24..42 needs b0 = 0.79..1.39 (gamma 2, near-conformal); b0 = 7 or 19/6 needs 212 or 96 (at 42, b0 = 7 confines 96 e-folds above the pivot); alpha_s > 0
+[PASS] D4 measured hypercharge, SM one loop (supplied): 1/alpha_Y(1/a) = 57.23, pole 52.6 e-folds above the cell; pivot formed at the cell: n_s = 0.9620 (-0.7 sigma), alpha_s = -7.2e-04; gamma = -2 needs formation at 3e+16 GeV
+[PASS] D5 common-epoch reading, all modes set at T = 1/a, radiation growth 72.5 e-folds: the pivot then spans 60.8 e-folds (super-horizon), N = 60.8 + L_cell: n_s = 0.9684 (induced two copies), 0.9824 (hypercharge)
+[PASS] D6 look-elsewhere: |gamma| b alpha(mu)/2pi over 3 SM couplings x 8 scales x |gamma| 1..4: 15 within 1 sigma vs 8.6 for a log-flat prior (e.g. Y@9e+01/g3, Y@2e+02/g3, Y@1e+03/g3): matches of N to a pole are cheap
+supplied: CL-2 tick (eps, mu); site-phase scalar potential once per tick; quasi-free sea; P ~ alpha^gamma frozen at mu_k ~ k^s;
+  a = sqrt(8pi) l_P; Planck 2018 n_s, running; PDG alpha(MZ), sin^2 thetaW, alpha_s(MZ); SM one-loop b_i (desert); T0, g*s.
+elapsed_seconds 4.4
+TOTAL: PASS=16 FAIL=0

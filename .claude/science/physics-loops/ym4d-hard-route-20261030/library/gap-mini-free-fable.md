@@ -31,7 +31,8 @@ home-directory path in this file.
 (steps are appended below, one per response)
 
 Times (from `date -u`): the file was created at 2026-11-19T21:12Z; steps 1 to 4 were on disk
-by 22:03Z. Per-step times were not recorded, so none is given in the headings.
+by 22:03Z, and steps 5 and 6 by 22:27Z. Per-step times were not recorded, so none is given in
+the headings.
 
 ### Step 1. The statement, and the target seen from the Jaffe-Witten side
 
@@ -446,11 +447,50 @@ which row 1081's check already records as the failure of squared-6j positivity. 
 cone has no Perron-Frobenius or Brascamp-Lieb structure to use. The other eight give no
 inequality at order-one coupling that I know.
 
+**5.4 One literature check (public abstract only).** I looked for a published rigorous
+upper bound on the centre-vortex free energy of SU(2) by spreading, since it would bear
+on row 1179. L. G. Yaffe, "Confinement in SU(N) lattice gauge theories", Phys. Rev. D 21
+(1980) 1574: the abstract says that control of these fluctuations sufficient to prove
+confinement "is still lacking", and that preventing the spreading of the Z(N) flux gives
+non-confining behaviour. So it holds no such bound. The lane has this reading already
+(`library/prior/gap-lit-commutator.md` L172). I found no other source.
+
 **5.2 What I did not do.** I did not read rows 879-956, the six council member files, or
 any `gap-solve` file beyond the lines cited. I did not read the account of Sussman and
-Alpoge in this run; I used only what the lane files quote from it. No numeric job was run
-(none was needed; the numeric lock was not taken). I did not attack the Wilson branch
-selection (row 1179) or the one-cube neutral bound (row 1180).
+Alpoge in this run; I used only what the lane files quote from it. One small numeric run
+was made, as a guide only (step 6). I did not attack the Wilson branch selection (row 1179)
+or the one-cube neutral bound (row 1180).
+
+### Step 6. One guide run on step 4 (GUIDE; a run can refute, not prove)
+
+Criteria were written in the scripts before the run. Memory free was 56 percent; the
+numeric lock was taken (holder gap-mini-free-fable-1181) and released; one serial process,
+BLAS threads 1, peak memory 79 MB, a few minutes. The three scripts are in the session
+scratch folder and are not kept in the repository.
+
+- T1 (Lemma GA). For 20 random choices of the four links and of Gamma, the exact average
+  over gauge transformations with values in the quaternion group Q_8 at the three vertices
+  equals c_p(Gamma) tr U_p; largest error 3 x 10^(-16). PASS. (Q_8 acts irreducibly on C^2,
+  so its conjugation average is the half-trace, as for Haar measure.)
+- T2 (Lemma 5.1a). The same at four vertices for U -> hUh; largest error 1 x 10^(-14). PASS.
+- T3 (Proposition J, the in-plane sum only). Minimisation over all link elements of one
+  n x n torus plane, n = 3, 4, 5, many starts: every start ends at 1.500000. The bound of
+  Proposition J is 0.2929; no refutation. The minimiser has three plaquettes with
+  abs(c_p) = 1/2. One such field is explicit: with omega = exp(i pi sigma_3 / 3) put
+  omega^(-1) on the link (x_0 + e_2, 1), omega on the link (x_0 + e_1, 2), where x_0 is the
+  base of the stack plaquette, and 1 elsewhere in the plane. Then c = -1/2 at x_0 and
+  c = 1/2 at x_0 + e_1 and x_0 + e_2 (a hand evaluation with h(omega) = 1/2,
+  h(omega^2) = -1/2). So the in-plane sum alone can go below the thin-vortex value 2, and
+  the constant of Proposition J is not sharp for that sum. Its sharp value looks like 3/2.
+- T4 (all six orientations). For fields Gamma invariant under translations in directions
+  3 and 4, the full sum per unit area of the (3,4)-torus was minimised for n = 3, 4. The
+  lowest value found is 2.000000, at Gamma = 1, the thin vortex; 62 of 90 starts end
+  there and the others end higher. The explicit field of T3 costs 3/2 + 3 there, because
+  each changed link also sits in four plaquettes of mixed orientation with c = 1/4.
+
+Reading (GUIDE): in four dimensions no fixed right translation was found that beats the
+thin vortex, so the true constant in Proposition J may be 2. This is not proved, and
+fields that are not invariant in directions 3 and 4 were not searched.
 
 ## Close
 
@@ -479,7 +519,10 @@ the gap on local observables = rows 1161 and 1175; the thin twisted torus = Rout
 **Reading offered to the lead (ARGUED).** Section 3.4: for the Jaffe-Witten clause the
 open input is the one-cube neutral premise alone; the branch selection serves the flux
 clause of (W). Section 4.6 (GUIDE): that premise, in the form with K = 512, sits near
-1.1 x 10^4 correlation lengths; the kappa seed it feeds sits near 25.
+1.1 x 10^4 correlation lengths; the kappa seed it feeds sits near 25. Step 6 (GUIDE): the
+identities of Lemma GA and Lemma 5.1a pass an exact finite check; the in-plane sum of
+Proposition J has numerical minimum 3/2; with all orientations the thin vortex, 2, was not
+beaten.
 
 **Open, unchanged.** (W); the one-cube physical neutral upper bound; the Wilson branch
 selection; a map reading the field that carries the twisted measure to within sub-area

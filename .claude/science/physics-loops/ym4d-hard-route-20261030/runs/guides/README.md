@@ -1,0 +1,3 @@
+# Numeric guide scripts (rows 1106-1159 and earlier lead checks)
+
+These are the small numeric guide runs used by checkers and authors in this lane, copied from session scratch folders on 2026-11-19 (owner: "In the PR"). Each folder is named after its row or check (for example `check1146` is check row 1146, `geom` is council row 1129, `rgfable` is council row 1128). They are guides only: no proof step in the lane rests on them. Paper downloads, page images, extracted paper text and raw agent transcripts were left out. Local path prefixes were replaced by `SCRATCH` or `LOCAL:`, so some scripts need their input paths edited before they run.

@@ -100,3 +100,41 @@ compare step).**
   rotations, with the cost governed by a stiffness that non-commutativity reduces.
 
 Nothing is proved in this step.
+
+### Step 2 (21:40Z to 22:25Z). Compare: the three routes of step 1 are on the lane's map
+
+Read in this step: `library/gap-council-synthesis.md` (whole); `parts/gap.md` (whole: the
+formulation, methods 19-36, lead rules, obligations through row 1175, route registry, test
+table, exact price); FINISH RESULT lines of rows 1174-1178 (rows 1143-1173 through their
+digests at `parts/gap.md` L191-207).
+
+**Verdict on my own list (statements about the record, checked against the lines named).**
+
+| My route | On file as | Status there | Verdict |
+|---|---|---|---|
+| F1 curvature, Bakry-Emery | method 31 (rows 957, 968: averaged curvature, Polchinski flow, Piazza-Shen); Proposition G1 of row 1128 (one-link gain = Ricci/12 plus a group-blind part); method 24 | set aside | found again |
+| F2 conditional O(4) layer | method 36 (row 1139, check 1140): background-uniform mixing fails at large b; normalized diamagnetic domination fails on 8 sites; BR-2 face rows 1077-1115 | blocked at (SING); "has to average over the actual Wilson backgrounds" | found again |
+| F3 non-abelian spin waves for the twist | rows 1009-1050 (port of OpenAI's pinned-cell step; frames; route (ii)); row 1141 (field-built frames); C1, C2 of row 1013 | open with no mechanism | found again |
+
+Two remarks I had written before the comparison are also on file: Remark 1.1 (a mechanism
+at one cutoff plus a carry; `parts/gap.md` L24-26, method 23, row 1010), and the zero
+classical cost of the centre twist (Lemma K4 of row 1051). The power beta^(-9/4) I had for
+the one-plane twist ratio at fixed side is wrong against row 1143's checked
+(3/2) log beta + log log beta; I had counted the toron integral naively and withdraw it.
+
+So the independent start reproduced the map, as the three Fable seats of the council did
+(synthesis 2a). This is the same model family; it is not an independent confirmation.
+
+**What the record says a new route must be (from `parts/gap.md` L100, L190, L238-242 and
+the synthesis).** (a) It must read the group at order-one response; (b) it must cancel
+between supports before any bound (method 35); (c) it must read the whole state space, not
+one factor (Lemma FAC, Lemma PT); (d) a worst case over pins, tilts, coupling fields or
+backgrounds is false (Theorem D2, Lemma SHEET, method 36), so it must average over the
+actual Wilson law; (e) the frame for the band "must come from blocked variables, not
+microscopic transport" (lead reading under row 1141).
+
+**Choice for the next steps.** I do not attack the two statements given to rows 1179 and
+1180 (the Wilson branch selection; the one-cube neutral bound). I read the lane's digest
+of OpenAI's pinned-cell step only as far as its mechanism, and then look for a route that
+is not in the registry. Candidates will be grepped against `library/open-core.md` and the
+FINISH rows before any attack.

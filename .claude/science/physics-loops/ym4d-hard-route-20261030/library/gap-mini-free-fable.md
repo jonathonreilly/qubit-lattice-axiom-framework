@@ -428,6 +428,24 @@ symmetry and a varying one changes the energy by a gradient form in every config
 Here the constant phase shift already has a mean cost of volume order. This is the precise
 form of "(c) fails".
 
+**5.3 A scan for method families with no file (GUIDE; a grep of key terms, counts of
+files in `library/`, `library/prior/` and `parts/gap.md`).** Of 67 terms, 58 have at least
+one file (for example bootstrap 98, Langevin 101, replica 49, Brascamp 33, Helffer 28,
+Uhlenbeck 41, Gribov 21, Fradkin 23, Lee-Yang 18, loop equation 42; a count is a count of
+a word, and some words also have other uses). Nine have none: Ricci
+flow, Haagensen, holography, wavelet, Wetterich, Kugo, Haag-Ruelle, superselection,
+Pirogov. A missing word does not show a missing idea (the curvature flow is method 31
+under other words). Of the nine, one names an exact structure that is special to SU(2) in
+three space dimensions: the gauge-invariant "metric" g_ij = E^a_i E^a_j of the electric
+field (Lunev; Freedman, Haagensen, Johnson and Latorre; Bauer, Freedman and Haagensen;
+recalled, not read in this run). It gives local gauge-invariant variables on a convex cone
+with the linear potential (g^2/2) tr g. I did not attack it, for a stated reason (ARGUED):
+in the electric representation the magnetic term is not a positivity-preserving
+semigroup. On the lattice this is the sign of the 6j symbols in the spin-network basis,
+which row 1081's check already records as the failure of squared-6j positivity. So the
+cone has no Perron-Frobenius or Brascamp-Lieb structure to use. The other eight give no
+inequality at order-one coupling that I know.
+
 **5.2 What I did not do.** I did not read rows 879-956, the six council member files, or
 any `gap-solve` file beyond the lines cited. I did not read the account of Sussman and
 Alpoge in this run; I used only what the lane files quote from it. No numeric job was run
@@ -468,4 +486,4 @@ selection; a map reading the field that carries the twisted measure to within su
 relative entropy of the Wilson measure (4.7); any selective inequality at order-one
 response. No route outside the lane's registry was found by this row.
 
-RESULT: Row 1181 (Claude Fable 5.2 max, Mac mini worker; checked by no one). No proof and no disproof of (W). Starting from the Jaffe-Witten target with the lane files closed, the three routes I chose (curvature, the conditional O(4) layer, non-abelian spin waves for the twist) and five later candidates are all on the lane's map, each already stopped at a stated obstruction there; the reading that the Jaffe-Witten gap needs only the one-cube neutral premise, with branch selection serving only the flux clause of (W), is also on file (rows 731, 1161). PROVED by hand, unchecked, not selective: Lemma GA, Proposition J (every fixed right translation gives a Jensen twist bound of area order, at least (1 - 1/sqrt 2) beta u N^2), the identities 4.7 (the Jensen gap equals a relative entropy, also after averaging colour frames) and Lemma 5.1a (the phase shift used by the Ding-Huang-Yang spin wave has a mass-form mean cost for Wilson SU(2)). GUIDE: the neutral premise at K = 512 sits near 1.1 x 10^4 correlation lengths. OPEN, unchanged: (W), the one-cube neutral bound (row 1180), the Wilson branch selection (row 1179), and any selective inequality at order-one response.
+RESULT: Row 1181 (Claude Fable 5.2 max, Mac mini worker; checked by no one). No proof and no disproof of (W). Starting from the Jaffe-Witten target with the lane files closed, the three routes I chose (curvature, the conditional O(4) layer, non-abelian spin waves for the twist) and the later candidates of step 5 are on the lane's map or stop at a stated reason, each already stopped at a stated obstruction there; the reading that the Jaffe-Witten gap needs only the one-cube neutral premise, with branch selection serving only the flux clause of (W), is also on file (rows 731, 1161). PROVED by hand, unchecked, not selective: Lemma GA, Proposition J (every fixed right translation gives a Jensen twist bound of area order, at least (1 - 1/sqrt 2) beta u N^2), the identities 4.7 (the Jensen gap equals a relative entropy, also after averaging colour frames) and Lemma 5.1a (the phase shift used by the Ding-Huang-Yang spin wave has a mass-form mean cost for Wilson SU(2)). GUIDE: the neutral premise at K = 512 sits near 1.1 x 10^4 correlation lengths. OPEN, unchanged: (W), the one-cube neutral bound (row 1180), the Wilson branch selection (row 1179), and any selective inequality at order-one response.

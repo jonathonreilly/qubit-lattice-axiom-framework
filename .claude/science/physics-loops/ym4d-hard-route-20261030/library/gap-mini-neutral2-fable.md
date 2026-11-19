@@ -99,3 +99,66 @@ Reading (ARGUED). The order-one margin and the high aspect of row 1161's form do
 prove. By line 10 they trade the old threshold (1/5041 at aspect 2) for a box about K/2 times larger. In a theory
 with a particle gas the old seed needs m_phys L of about 25 and (N-phys) with K = 80 needs about 1200
 (GUIDE arithmetic with the gas formula of 1.3).
+
+## 3. The routes, each with its obstruction (22:41Z)
+
+(N-phys) is not proved here and no counterexample is built. Each route of Section 2 was followed to its first
+failing step. This section gives, for each one, the exact statement where it stops and the statement that blocks it.
+Statements proved in this file are marked PROVED; statements of other rows are cited with their standing there.
+
+### 3.1 Two small statements about the form of (N-phys) (PROVED here)
+
+**Lemma N1 (explicit aspect for the neutral part).** For integers 1 <= u <= v and every cube and coupling,
+s(v) <= s(u)^(v/u). So s(u) <= 1/2 at some u <= n/32 gives s(n/2; n^3) <= 2^(-16) < 1/(8 x 5041).
+
+Proof. s(v) = sum over i >= 1 of (mu_i^u)^(v/u), and sum a_i^p <= (sum a_i)^p for a_i >= 0 and p >= 1. With
+u <= n/32 and v = n/2 the exponent is at least 16, and s(u) <= 1/2. 2^(-16) = 1.53e-5 and 1/(8 x 5041) = 2.48e-5. QED
+
+Remark. Row 1161's bound (4) gives the same with the base (1 + s_0)/2. Lemma N1 is sharper in the sector (0, 0) only,
+because there the top level is exactly 1 and is not in the sum. The seven sectors (m, m), m != 0, are not covered:
+their top levels are not known a priori, and row 1161 handles them by its rank-and-slope argument and a compactness
+step. So the integer K of (N-phys) stays non-explicit for the Pfaffian seed. For the even seed alone K = 32 is enough.
+
+**Lemma N2 (two-sided size condition).** Let m_ev be the neutral gap of the cube n^3 in lattice units.
+(a) (N-phys) at the cube forces n m_ev >= K log 2.
+(b) Put u = floor(n/K). If s(t_0) <= S_0 at an integer t_0 < u, and m_ev (u - t_0) >= log(2 S_0), then s(u) <= 1/2.
+
+Proof. (a) is (E2). (b) is (E4): mu_i^u <= mu_i^(t_0) mu_1^(u - t_0) for every i >= 1, so
+s(u) <= s(t_0) exp(- m_ev (u - t_0)) <= S_0/(2 S_0). QED
+
+Reading. (b) is Lemma G5 of row 895 at another aspect: a gap in units of the inverse side above a threshold, and a
+count S_0 that may be any finite number uniform in the cutoff. (a) says that the first of the two is necessary.
+So (N-phys) is the statement "the neutral gap of one physical cube, in units of its inverse side, passes a
+threshold". With t_0 = u/2 the threshold lies between K log 2 and about 2K log(2 S_0). A free massless field has the
+value 2 pi at every size (ARGUED: the lowest momentum).
+
+**Remark N3 (quantifiers; ARGUED from the statements as written).** (i) A proof of (N-phys) would give it for every
+K (take L larger). So the non-explicit K does no harm to a proof, and the natural target is: for every K there is L in
+P with limsup over j of s(floor(n_j/K); n_j^3) <= 1/2. (ii) Proposition P'-ev of row 1179 is stated for "cutoffs for
+which (SEED-any-phys) holds". So the gap clause needs (N-phys) only along the subsequence of cutoffs on which the
+continuum datum is taken. This weakens "every j >= j_0" to "infinitely many j", if the T0 chain supplies the datum
+along that subsequence. It does not change the difficulty.
+
+### 3.2 Obstruction per route
+
+| Route (Section 2) | Where it stops | The blocking statement | Standing |
+|---|---|---|---|
+| 1 pressure form | an upper bound on p_neutral/T^4 below the scale of the gap | every inequality that holds in the whole class (F1) is satisfied by Villain U(1) at beta >= 2^14, which has no neutral seed at any size; the free photon has s = exp(c K^3) - 1 at aspect K | test table, `parts/gap.md` L281-282 (THM given the published U(1) theorem; lane rows 786, 975, 988) |
+| 2 gap plus count | n m_ev above a threshold at one physical size | Corollary Z4 of row 720 (`gap-phys-seed.md` L322): the gap in units of 1/L either stays below 256 D_0 + 29.64 at every size or grows for ever; no statement at smaller sizes separates the two | PROVED GIVEN Theorem ZD there; Lemma N2 here |
+| 3 coupling integration | the thermal plaquette excess on the whole path [0, beta_j] | the path statement is false for positive-character weights with a first-order point: Proposition V (`gap-crux-fp.md` L356); for Wilson it is (NOCRIT), (VIR-log) of row 708 (`gap-mid-max.md` L172, L207), OPEN; and it needs the sharp rate (below) | on file |
+| 4 rotated frame | a Casimir bound for the thin box and a rotated neutral trace | Lemma CS of row 895: the Casimir term is >= 0 and every exact inequality of the class points the same way | PROVED there; the row's check 896 keeps the elementary identities |
+| 5 mixing | a minorization, or a two-replica overlap, uniform in the volume | (A) is strictly stronger than a uniform gap (link-refresh model, row 1135, checked by row 1138); independent-replica swaps pay a junction cost (Proposition J of check 1121). My own blind objection to (A) (a slice with ordered plaquettes cannot carry unit commutator noise) does not apply: row 1132 states (A) in Moser coordinates, where the slice law is Haar | on file |
+| 6 thin twisted torus | the continuation in the width | Lemma G of row 678 (`gap-ac-lat.md` L51): the Gaussian model of the twist has decay rate at most 2 arcsinh(sin(pi/2n)), so the perturbative gap gives no rate uniform in the width; the engine reads no thin seed | proved by one author there |
+| 7 theta = pi | - | a constraint, not a route: a proof must use positivity of the measure (C7 of row 1052) | BELIEF |
+| 8 monotones | a sign for a scale derivative | (MONO-Delta) (`gap-phys-seed.md` L351) is false for the ordered Ising model (same file L371, a GUIDE run with the leading term by hand); MON-L-cov of row 1072 is false (check 1074); a sign alone gives no rate | on file |
+| 9 rigidity | exclusion of a gapless scale-covariant limit | the third branch of the trichotomy of rows 1017, 1024 is not excluded by any statement on file | on file |
+| 10 margin | - | not a route: Lemma N1 | PROVED here |
+
+**The sharp-rate remark (ARGUED; it explains why route 3 cannot be closed by a crude bound).** Transport from strong
+coupling at a fixed lattice box needs an upper bound on the rate at which a level falls: - d(log E_i)/d(beta) <= 1/B'.
+By the Feynman-Hellmann identity of row 895 this is a bound on the plaquette excess of the state i over the vacuum,
+in units of its energy. In the scaling region the true rate is 1/B with B = 11/(3 pi^2) (the one-loop coefficient,
+a(beta) proportional to exp(- beta/B)). A bound with B' < B gives a lower bound on the mass in lattice units that
+falls faster than the lattice spacing, so it gives nothing in the continuum limit. A bound that suffices has the
+sharp constant up to an integrable error. So a transport proof contains asymptotic scaling of the gap itself. This
+is the reading of (VIR-log) in row 708 ("a change of form, not of difficulty"), found again.

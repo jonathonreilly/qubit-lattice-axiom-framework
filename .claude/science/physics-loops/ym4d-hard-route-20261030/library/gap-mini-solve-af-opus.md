@@ -6,7 +6,7 @@ lease_until: 2026-11-20T22:42Z
 Started 2026-11-20T10:42Z (date -u), at commit 905d9a273 on branch claude/ym4d-hard-route.
 Queue row 1256 of FINISH.md. Labels: PROVED, ARGUED, GUIDE, OPEN.
 
-Status: in progress. Sections are appended step by step.
+Status: complete (Steps 1-4 and RESULT). Sections were appended step by step.
 
 ## Step 1. How best to attack it (judgement, ARGUED; written 2026-11-20T11:02Z by date -u)
 
@@ -290,3 +290,66 @@ Remarks (PROVED unless marked).
   and (MON) for first-passage tops (Proposition EDGE' with WI), or (FI) at pins only (Proposition PIN with Lemma OFF).
 - OPEN: (FI) (in either form) and (MON); the 9.1 hypothesis (e); the base inequality (the infrared seed).
 
+## Step 4. Why (FI) stays open, and the state after this row (written 2026-11-20T11:12Z by date -u)
+
+**4.1 (FI) is a two-frame identity, not a definition (READ; ARGUED where marked).**
+- Clause (0)'s increment is Balaban's coupling renormalization: x_(k+1) := x_k - beta_(k+1), with beta_(k+1) "defined in
+  [B-CMP109, (1.22)]" and identified with [B-CMP119, (3.61)]; "its construction within Balaban's step, its independence of
+  the torus and of K ... belong to Chapter 4" (CA-I 606-628, `1.2:def-couplings`). The cutoff exponent is the first
+  passage of this flow (CA-I `1.2:def-flow-constants`; III:68763-68767).
+- The tuned runs use "the step function of the running-shift statement of the correlation theorem, read on the scaffold
+  at depth r of a run of length n; it is a function of the bare shift" (III:67150-67155, `9.12:def-runs-coupling-map` (b)),
+  on the scaffold theta_r = X + c_0 r.
+- The account states the frame independence it needs as a hypothesis: "x_k is the effective inverse coupling after k
+  renormalisation steps from the cutoff, a function of (Lambda_n, x_0) and of k only, and it does not depend on which step
+  is declared to be the reference length" (III:68713-68716, hypothesis (b) of `9.13:cor-coupling-shift`).
+- ARGUED: the frozen whole-lattice objects of a run (reference sequence, families, K) enter Balaban's step, so the two
+  frames are two constructions of the same bare datum; their running couplings agree up to a defect, and part (a) of
+  `9.8:cor-subsequential-limits` names that defect varpi(r_J, g) (Remark 2 of 3.4). Bounding it is a two-frame comparison
+  of Balaban's step. That is a construction-level estimate in chapters 4-9 of the account, not a session item. I do not
+  attack it.
+
+**4.2 The one-cutoff carry before and after this row.**
+
+| Input of the carry (row 1233 Proposition 3.7, check 1242 L72-76, row 1255) | Before | After this row |
+|---|---|---|
+| (EDGE): every datum above the base has a real predecessor that is a first-passage datum | open; check 1242: matching does not only restrict the base set; window inclusion outstanding in the account | **pin route:** not needed (Proposition PIN (a)-(c)); **first-passage tops:** replaced by Proposition EDGE' (predecessors are tuned data, drift bounded by Lemma DRIFT) with (WI-theta) from Proposition WI |
+| Window inclusion of first-passage data (`9.8:cor-subsequential-limits` (a), OUTSTANDING; printed hypotheses undefined) | open | PROVED GIVEN (FI-W), (MON), (R2): first-passage data at K lie in (a_K, a_K + (3/2) B_sharp] (Proposition WI); varpi read as the (FI) defect (Remark 2) |
+| Link from pins to the first-passage consumer | not posed | PROVED GIVEN (FI) at pins: offsets 1 <= delta_n <= D_* = ceil((B_sharp + c_5)/lambda_sharp) (Lemma OFF, Remark 1 of 3.4); one physical torus pair along a subsequence (Corollary OFF-1) |
+| Base set of the infrared seed | every first-passage datum of cutoff K_0, plus every datum with no predecessor (check 1242) | **pin route:** one datum p_(K_0) = (K_0, a_(K_0)) per torus pair; **first-passage tops:** the real window a_(K_0) - [-varrho_2/2, varrho_2/2] at cutoff K_0 |
+| (V9) of row 1255 | on every chain datum | pin route: at pins only; first-passage tops: on the window |
+| 9.1 hypotheses (a)-(e), (e) = `9.1:prop-blind-site-expansions` OUTSTANDING | open | unchanged; pin route needs them at u = 0 only |
+| (DET)'s inputs, 8.22's standing hypotheses, clause (0)'s torus independence | open as recorded | unchanged |
+| (FI), (MON) | not named | OPEN, named here; the account assumes (FI)'s kind of statement for its own clause (v) (III:54429-54434, III:54832-54835, III:68713-68716) |
+
+**4.3 What this row does not do.** It does not prove the seed at any coupling, (N-phys), (W) or the mass gap. It does
+not touch the T0 chain. The pin route uses the account's clause (v) machinery, which is off T0's chain (`port-map.md`
+F3, row 1233 item 3); the one-cutoff route paid that cost already, so the pin route adds no new off-chain cost beyond
+(FI) at pins. The consumer remark after Corollary OFF-1 rests on row 1180's liminf remark and is ARGUED here.
+
+**4.4 Labels.**
+
+| Statement | Label |
+|---|---|
+| Four-dimensional SU(2) Yang-Mills has a mass gap (Jaffe and Witten) | OPEN. Not proved here, nothing disproved |
+| Step 1.2, my screen of eight further infrared ideas | GUIDE (each grepped; each on file or dead at once) |
+| Proposition PIN (a)-(c): exact predecessor of each pin; each edge a 9.1 pair at u = 0; consistent representatives | PROVED GIVEN the uniqueness theorem's hypotheses (i)-(iv); the pin pair itself is the account's (Step 2 Remark 4) |
+| Proposition PIN (d): the carry along pins with a single base datum | PROVED GIVEN in addition the 9.1 hypotheses (a)-(e), row 1233 Lemma 3.5 and row 1255 Corollary D1 with (V9) at pins |
+| Lemma OFF, Corollary OFF-1 (pins are first-passage data with offset in [1, D_*]; one torus pair along a subsequence) | PROVED GIVEN (FI) at pins and clause (0)'s flow bound |
+| Consumer remark after Corollary OFF-1 | ARGUED (row 1180) |
+| Lemma DRIFT (backward iterates of the matching map stay in the window, drift at most Psi(n_*)) | PROVED GIVEN (b) of the uniqueness theorem |
+| Proposition EDGE' (first-passage tops; tuned predecessors; window base at one cutoff) | PROVED GIVEN (WI-theta) and the window form of PIN (d)'s hypotheses |
+| Proposition WI (precise form of part (a) of the outstanding `9.8:cor-subsequential-limits`, with varpi = 0) | PROVED GIVEN (FI-W), (MON), (R2) and clause (0)'s flow bound |
+| Remark 2 of 3.4 (varpi as the (FI) defect; bound (3/2)(B_sharp + varpi)) | PROVED for the stated defect; ARGUED as the account's intended reading |
+| The printed corollary `9.8:cor-subsequential-limits` has no checkable hypotheses (varpi defined by the bound it states; "supplementary run hypothesis" occurs once) | READ (III:54156-54164, grep) |
+| 4.1: (FI) is a two-frame identity of Balaban's step that the account assumes | READ (cited lines); the conclusion that it is not a session item is ARGUED |
+| (FI), (MON), the 9.1 hypothesis (e), the infrared seed | OPEN |
+
+No numeric run. No subagent. Credit: Ethan Sussman and Levent Alpoge's complete account at 31a47c543775 (with Claude
+and Codex as authors of its text), whose uniqueness theorem, matching proposition, bi-Lipschitz hypotheses, tuned runs
+and pin pair at v = 0 carry every step here; Balaban's coupling flow (CMP 109 (1.22), CMP 119 (3.61)) as the account
+cites it; the lane's rows 916, 917, 924, 1233, 1255 and check 1242 for the carry, its corrections and (EDGE). Checked by
+no one; a cross-provider check of Proposition PIN, Lemma DRIFT, Proposition EDGE' and Proposition WI is the natural
+next step.
+
+RESULT: Row 1256 (Claude Opus 5.5 max, Mac mini worker 2, 10:42Z-11:12Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed, (N-phys), stays OPEN with no engine found (eight further ideas screened, all on file or dead at once). Worked item: (EDGE), the predecessor condition of the one-cutoff carry (row 1233 Proposition 3.7 with check 1242 and row 1255), attacked by no earlier row. PROVED GIVEN statements of Sussman and Alpoge's complete account: along the exact pins beta = a_K the matching map fixes 0, so every pin has the previous pin as exact predecessor, each edge is the account's 9.1 pair at u = 0, representatives are consistent, and the carry needs no (EDGE) and only one base datum (Proposition PIN; the pin pair is the account's own, III:56740-56745, III:69358-69362); for first-passage tops, predecessors may be tuned data and their backward drift stays in the window (Lemma DRIFT, Proposition EDGE'); and a precise form of part (a) of the account's outstanding corollary 9.8:cor-subsequential-limits, whose printed hypotheses are undefined: under (FI-W) (clause (0)'s Balaban flow equals the tuned runs near a_K) and (MON) (monotone flow), every first-passage datum at K lies in (a_K, a_K + (3/2) B_sharp] (Proposition WI). PROVED GIVEN (FI) at pins: pins are first-passage data with depth offset between 1 and ceil((B_sharp + c_5)/lambda_sharp) (Lemma OFF). So (EDGE) leaves the input list; in its place stand (FI) (at pins only, on the pin route) and (MON), which the account itself assumes in stronger form for its clause (v) (III:54429-54434, III:54832-54835, III:68713-68716). OPEN: (N-phys) and the seed at the base datum; (FI), (MON); 9.1:prop-blind-site-expansions; (DET)'s inputs; (V9) at pins; the account's premises. Output library/gap-mini-solve-af-opus.md.

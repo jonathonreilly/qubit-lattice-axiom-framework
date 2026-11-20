@@ -180,3 +180,110 @@ T[1 + A_0/(1 - 2^-delta)]. Example: (1 - eta^2) e^-T + eta^2 e^(-eps T) <= e^-T 
 1 - eta^2 + eta^2/eps.
 
 No defect found in Step 2. Inputs not yet checked: (10) (row 1155 (9)), (11)-(13) (row 1141), and the row 1254 citations.
+
+## Step 3. Slow sheets (20), (25) and their full-law variance loss (31)-(32) (done 2026-11-20T12:21Z)
+
+Input read first: row 1155 (9) = `gap-solve7-astra62.md` L130-134, E exp(c beta sum_(p in S)(1 - w_p)) <= C^|S| for any set
+S of distinct plaquettes, c = 1/8; checked HOLDS in `gap-solve7-check-opus.md` L349-351 (row 1156). Its proof (transfer
+matrix in a direction shared by the marks, one-link multiplier ordering, Schatten Hoelder with exponent the period, Hoelder
+over four direction classes) uses no property of the torus size. Row 1262 applies it on a periodic s^4 box, on the
+periodic d^4 lattice and on "an even torus"; row 1155 states it "on either periodic torus" of its own setting. I take the
+extension to any periodic torus as valid (the proof does not read the side lengths). Not a defect.
+
+**(10), L107-L113: HOLDS.** Identify the 4 s^4 cube variables with the periodic s^4 links; internal faces agree; the other
+terms (crossing in one, wrapping in the other) number <= C_1 s^3, each 2q_p in [0,2], so the normalized densities differ
+by a factor <= exp(4 C_1 beta s^3) uniformly in the exterior. Moment comparison plus Jensen:
+2c beta |J| P_y Y <= C beta s^3 + |J| log C_0, and |J| >= s^4/16 gives C(1/s + 1/beta). The restriction to even s is
+not needed by the proof but is harmless.
+
+**(11), L115-L120: HOLDS.** Same split as (7): int 1_B |g|^2 <= 2 int (P 1_B)|P g|^2 + 2 norm(D g)^2 <= 2u norm(g)^2 +
+2 norm(D g)^2; first term gives 2u_i E, second gives 2592 (s/R)^4 E per event via (8). Union by 1_(union) <= sum 1.
+
+**Setup (21), L229-L237: HOLDS.** The tx and ty plaquettes through q_x give Re(q_x V q_y^-1 U^-1) =
+1 - |q_x - U q_y V^-1|^2/2, so the conditional density is exactly (21). The two tz plaquettes through q_x give
+Re q_x - Re q_x = 0 with the pins +1 (z = -1) and -1 (z = +1). Prescribed-plaquette bounds: tangential plaquettes are
+products of <= 4 factors of angle <= theta (1 - w <= 8K/beta); mixed plaquettes at t = 0, z != 0 are
+g V g^-1 U^-1 with angle <= 2 theta; the t = d-1 plaquettes are U V^-1 with angle <= eta theta; arc plaquettes have angle
+pi/(d-2) <= pi/sqrt(beta).
+
+**Linear stiffness, L239: HOLDS.** On C_i + C_i j the marked map v -> e^(theta i) v e^(-(1-eta) theta i) is
+a -> a e^(eta theta i), b j -> b e^((2-eta) theta i) j, so the displacement is >= 2 sin(eta theta / 2)|v|. The ten unmarked
+template bonds connect the nine sites. Individual adjoint forms: rotations about i and j by 2(1-eta) theta and 2 theta give
+>= 4 sin^2((1-eta) theta)|v|^2. All constants depend on the fixed eta, K.
+
+**Bad-tile energy and (22), L241-L249: HOLDS.** Bad tile at eta = 0: 4 sin^2(theta)|u|^2 <= C E^0, distance to the nearer
+sign <= sqrt(2)|u|, so E^0 >= c_0 theta^2. Only the marked i-bond differs at eta > 0, by at most eta theta, so
+E^eta >= E^0/2 - eta^2 theta^2. Entropy: half the exponent pays (beta/2) M c_0 theta^2/4 = c_0 K M/8; a spanning tree gives
+exactly z(beta/2)^(n-1); z(b) <= C b^(-3/2); the lower bound uses the beta^(-1/2) cap, mass >= (c beta^(-3/2))^n, bond
+displacement <= 2 beta^(-1/2) + eta theta, 2n bonds. The exponents combine to (22), including the (3/2) log beta / M term.
+
+**Chessboard, L251: HOLDS.** Every line of sites with even coordinate is a reflection line of the reflected template (the
+pattern has period 4 and m is even), each line has an antipodal partner at distance d/2, the bond weight is invariant
+under the reflection (|q_y - U^-1 q_x V|^2 = |q_x - U q_y V^-1|^2), and given the two line spins the halves are independent
+with reflected laws. The maximizer argument (phi(S) = log Pr(S) - (|S|/M) log Pr(all), doubling a marked interval, m dyadic)
+is the standard one and is correctly applied: intermediate maximizers may carry extra marks, which does not matter because
+they contain the doubled interval.
+
+**F and its centring, L253: HOLDS.** Caps are disjoint; a (1,0) and a (0,1) cycle on the coarse torus share a vertex, so
+opposite signs cannot both qualify. Cap membership is Re q >= 1 - 1/32 (or <= -(1 - 1/32)), a function of one plaquette
+trace. The global flip q -> -q preserves (21) and Haar measure and maps F to -F.
+
+**Band bound and (20), L255-L257: HOLDS.** Duality on the cylinder: no open winding cycle gives a closed-edge dual crossing;
+every face it enters is adjacent to a closed edge, so it is bad; >= h - 1 distinct faces; at most 4^l simple dual paths of
+length l per start; chessboard p^l. Two horizontal and two vertical bands at offset m/2: a side-s update with s <= d/16
+(= m/16 coarse rows) touches at most one band per direction, and the surviving horizontal and vertical cycles force the
+same sign, so F is unchanged when the old configuration is good; if the new one is good the same holds by exchangeability;
+so (1/2)E(F - F')^2 <= 2 Pr(exceptional). Origins hitting the sheet: s^2 normal times d^2 tangential, weight s^-4.
+Var F >= 1 - C m^2 e^(-cm). Quotient C (d/s)^2 m^2 e^(-cm), which is (20).
+
+**Open neighbourhood, L259: HOLDS** (qualitative; ties have zero Haar probability, dominated convergence).
+
+**(23), L263-L272: HOLDS.** min over q' of -(q - 1).q' is -|q - 1|, and Re q = 1 - |q-1|^2/2 gives
+3/2 + (|q-1| - 1)^2/2. Caps: |q - 1| <= 1/4 or >= 7/4 give excess >= 9/32. The comparison configuration
+(e^(pi i/3), e^(2 pi i/3)) has vertical energy exactly 1/2 + 1/2 + 1/2. Each column marks at most 4 tiles, so >= M/4
+columns pay. The M-th root bound exp[-9 beta/128 + C beta/d + C(1 + K + log beta)] is e^(-c' beta) once d >= sqrt(beta).
+
+**(24) and the fixed-thickness sheet, L274-L300: HOLDS.** Antiperiodic extension to Z_(2L): odd modes only, least
+eigenvalue 2(1 - cos(pi/L)), equality on modes 1, 2L-1; q_0 = 1 fixes a = 1; unit length at k = 1, L-1 gives Re v = 0,
+|v| = 1 when L >= 3. The compactness argument for a_w is valid (bad set closed, excess continuous and nonnegative, zero
+excess with the marked bond forces v = +-i). Perturbation by xi, eta: edge by edge |a + w|^2 >= |a|^2/2 - |w|^2. Symmetry
+q_(k,x) -> -q_(L-k,x) fixes the pins (q_0 = -q_L = 1), the vertical and horizontal energies (identical backgrounds at all
+heights) and negates the reading. Loop realization: (cos theta Re q - Re(e^(theta i) q))/sin theta = Im_i q. Origins meeting
+a free link: s(s + w - 1). Reading magnitude on a good tile >= sqrt(3)/2 - 1/8 > 1/2.
+
+**(25)-(26), L304-L337: HOLDS.** (26): the cross term after summation by parts is 2(1 - cos alpha) sum b.y and
+2 b.y = -|y|^2. Mode split: the first Dirichlet mode cancels exactly; ratio of first to second eigenvalue
+1/(4 cos^2(alpha/2)) <= 1/3 gives sum |Delta e|^2 <= 3 D_v; |e_k| <= sqrt(3 L D_v). At L/2 and L/4: ||v| - 1| <= eps,
+||1+v|/sqrt 2 - 1| <= eps, so |Re v| <= C eps. Bad-tile bound: D_v <= 4D (weight >= 1/4), eps <= sqrt(12 u) L theta <= C sqrt u;
+the first-sine-coefficient functional has norm sqrt(2/L), so |v_x - T v_y| <= C sqrt(D/L) <= C sqrt(u) theta; the marked
+bond gives |v_perp| <= C sqrt u. Lower partition: |y_k| <= beta^(-1/2) gives D_v <= 2(w+1)/beta. The per-tile exponent
+-cKw + Cw + C(eta^2 + xi^2)Kw + (3w/2M) log beta is right, and p = e^(-c'Kw) gives e^(-cwd) in the band bound.
+Completion: L = 4 floor(sqrt(beta/K)/4) has L theta <= 1; inner tz plaquettes cost 1 - cos(pi/L) <= C K/beta; mixed
+plaquettes C(eta^2 + xi^2) K/beta because the unperturbed maps fix C_i; arc steps pi/(d - L) <= pi/sqrt(beta).
+
+**(27)-(28), L341-L350: HOLDS.** |1 - U_C| <= sum_p |1 - U_p| by bi-invariance, q_C = |1 - U_C|^2/4, Cauchy-Schwarz gives
+J sum q_p. Markov with (9) on <= J M_0 distinct plaquettes gives (28). The d^2 rectangles 1 x L in tz have holonomy
+1 . (-1)^-1 = -1 whatever the free links, q_C = 1; with J = L <= sqrt(beta/K) the exponent is
+-d^2 (beta/L)(c - log C_0 / K), which is -c_1 beta d^2 / L for large K.
+
+**(29) and the filling test, L352-L359: HOLDS.** (27) turns the indicator into J/(h M_0) times at most J M_0 plaquette
+terms, each bounded by (7)-(8); only the event needs to be exterior-measurable. The filling test: a failing exterior makes
+every filling, in particular the actual one, violate some list, so 1_fail <= sum of the k means / h.
+
+**(31), L398-L402: HOLDS.** Outside the positive cap means q_p > 1/64 for that tz plaquette; distinct coarse vertices use
+distinct plaquettes; (9) and Markov give (C_0 e^(-c beta/32))^j for j specified vertices. A closed edge (for positive-cap
+openness) has an endpoint outside the cap; choosing one per crossed edge is at most 4-to-1 (a coarse vertex has degree 4),
+so a dual path of n steps needs >= n/4 distinct bad vertices; at most 2^n choices and 4^n paths; n >= m/8 - 2. F != +1
+needs a band without a positive winding cycle (two bands suffice). Var F <= E(F - 1)^2 <= 4 Pr(F != 1).
+
+**(32), L404-L412: HOLDS.** |cos theta Re B - Re(AB)| <= (1 - cos theta) + |1 - A|; magnitude > 1/2 at one of the two
+heights forces |1 - A| >= sin(theta)/2 - (1 - cos theta) >= 0.37 theta >= theta/4 for theta <= 1/4 (A is the same marked
+loop for both heights). A is a conjugate of one elementary plaquette, distinct per coarse vertex, 2q_p = |1 - A|^2/2 >=
+theta^2/32, so (9) gives (C_0 e^(-cK/32))^j with theta^2 = K/beta. F != 0 needs an open winding cycle, which has >= m
+distinct vertices; m^2 4^l cycle count. Increasing K is compatible with (25), whose K only needs to be large.
+
+**Correlations, L414: HOLDS** (Cauchy-Schwarz with the variances of (31)-(32)).
+
+What (31)-(32) show and do not show: the two readings are nearly constant in the full periodic Wilson law, so the conditional
+slow modes (20), (25) are not slow modes of the full law at these normalizations. As row 1262 says (L414), this gives
+nothing about other interior observables. No defect found in Step 3.

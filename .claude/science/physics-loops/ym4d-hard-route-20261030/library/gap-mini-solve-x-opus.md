@@ -120,13 +120,66 @@ whose depth dependence enters through the fine lattice of each depth (L56017: "C
 compatibly at the two depths"). This is a programme across the formation chapter, not a session item, and I stop it
 here. Row 1229 Step 3 ("not a session item") is confirmed with the exact list.
 
-**2.5 Whether (UNIV-K) needs a geometric rate.** No. (UNIV-K) asks for summable increments eps_K of a scalar on two
-fixed tori (row 924 Lemma 1.1). Row 924's Proposition 4.3 turns step sources decaying like lambda_0^j into responses
-O(q_3^j); a source decaying like j^(-3/2)(log j)^c is enough for summability if the response map is a contraction
-uniformly in the horizon (sum over j of j^(-3/2)(log j)^c < infinity). The complete account's chapter 9 compares runs of
-lengths n and n+1 with transition defects Upsilon_n <= C n^(-3/2)(log n)^(p_0+1) (row 1233 R-c, R-d, III:67255-67293).
-So the polynomial rate of chapter 9, if its hypotheses are supplied, is the better route to (UNIV-K) than (MAPCONV-F),
-and row 1233 is on it. ARGUED: the rate sufficiency needs the response map of row 924 Proposition 4.3 to be a
-contraction for polynomially decaying sources, which I did not check line by line.
+**2.5 Whether (UNIV-K) needs a geometric rate (corrected at 08:29Z by date -u; the first version of this paragraph overstated).**
+(UNIV-K) asks only for summable increments eps_K of a scalar on two fixed tori (row 924 Lemma 1.1), so a geometric
+rate in (MAPCONV-F) is more than the conclusion needs. But a polynomial rate does not pass through row 924's linear
+system as easily as I first wrote. With sources |sigma_j|, ||tau_j|| <= C (1+j)^(-alpha), the coupling component
+u_i is of order sum over l >= i of (1+l)^(-alpha), that is (1+i)^(1-alpha); the loop u -> v -> u through
+(Ku)_j = sum_(i<j) U_(ji) F_i u_i and (Bv)_i = sum_(l>=i) P_(il) R_l v_l loses one power of (1+j) per pass under the
+crude bounds e_l <= e_*/c, k_l <= k-bar of R14, and only the dependence of e_l on N - l (e_l of order
+(log(X_0 + N - l))^m/(X_0 + N - l)) can restore it, with logarithmic losses. So the claim "a source decaying like
+j^(-3/2)(log j)^c is enough" is NOT established; I expect a threshold alpha > 2 plus a margin, and I did not prove it.
+The comparison with chapter 9's transition defects (row 1233) was also loose: those bound coupling-transition maps
+between horizons, not the step-map differences of (MAPCONV-F). Withdrawn as a claim; kept as a remark.
 
 Status: (MAPCONV-F) OPEN, now stated as (M1)-(M3); not attacked further. Next: Step 3.
+
+**2.6 Which text the gap chain reads (READ; written 08:24Z by date -u).** I fetched the complete account
+(theorem_0_complete_account_raw_I, II, III at 31a47c543775; 166711, 145624, 111583 lines) into the same scratch
+folder. A count of the regular-trajectory vocabulary ("regular trajectory", "homogeneous regular", "profile ceiling",
+"irrelevant profile", "Gaussian pointing", "formation map") gives 0, 1 and 0 lines in CA-I, CA-II, CA-III, against 27 in
+YM4_1400.tex; the one-loop constant 11/(3 pi^2) and the adapted norm do not occur in CA at all. So the construction that
+rows 924 and 1237 read, and that (MAPCONV-F) is about, is YM4_1400's, not the complete account's.
+
+The gap chain itself reads YM4_1400 too: row 916 (`library/gap-chain-ce-opus.md` L8, L35-37) cites "CA Lnnn" for
+the lead's sa1400 copy of YM4_1400.tex and says CA-I line numbers "need not match"; row 1225's Theorem E-N inherits
+those citations. GOAL.md pins the T0 chain to the complete account (CA-I, II, III). So, at this pin:
+
+- the continuum datum of the gap chain (rows 916, 1225) and the regular part of (UNIV-K) (rows 924, 1237) rest on
+  YM4_1400's statements and premises (its L1748-1751 hypotheses);
+- the T0 chain, and row 1233's chapter-9 route to (UNIV-K), rest on the complete account.
+
+Correction (08:29Z by date -u): the lead already tracks this. Row 605 (FINISH L682, lead, 2026-11-09) records that their
+repository moved the Theorem 0 sources to YM4/Old/ and added component manuscripts; row 608 (FINISH L685) sets the T0
+approach "against the CURRENT frontier of Sussman and Alpoge's YM4_1400, not against CA-I certificates". So the gap
+chain (rows 916, 1225), the regular part of (UNIV-K) (rows 924, 1237) and the T0 approach all read YM4_1400; only
+GOAL.md's method section still names CA-I, II, III. Two consequences: (MAPCONV-F) is about the current text; and row
+1233's chapter-9 reading is of CA-III, now under YM4/Old, so its conclusions need re-location in YM4_1400 or its
+submanuscripts before the gap chain can use them (2.7 shows the newest form of that comparison is a hypothesis).
+
+**2.7 The account's newest texts (READ; written 08:26Z by date -u).** The Sussman-Alpoge repository's HEAD is c7fef8b21b58 (2026-11-10, GitHub API).
+Its commit ed82e1fea012 (2026-11-09) "Move Theorem 0 sources into YM4/Old": the complete account CA-I, II, III now sits
+under YM4/Old, and YM4/YM4_1400.tex (same size, 6318570 bytes, as the 2bc0658f91d2 copy read above) stays current.
+Nine YM4 submanuscripts were added on 2026-11-09 and 2026-11-10: BA (block averaging), CL (a scalar continuum theory
+from lattice correlations), EM (iteration of regular interactions on prescribed coupling prefixes), FP (short-distance
+asymptotics of the action density), GI (Gaussian block integration), LP (periodic Wilson states and reflection
+positivity), MB (linear lattice PDE with block constraints), RT (coupling trajectories and partition stability), SI
+(scalar sources and uniform insertions). Fetched at c7fef8b21b58 into the scratch folder. Of these only EM and GI are
+cited in a gap file (row 986, `library/gap-detlemma-read-opus.md` L91); CL and RT are not cited anywhere in the gap
+lane (grep of `library/gap-*.md` and `library/prior/gap-*.md`).
+
+What they say on the cutoff comparison (READ):
+- YM4_SI Proposition si:prop-cutoff-comparison (YM4_SI L1899-1960) is a SUFFICIENT condition, with its comparison as
+  hypotheses: paired local energies at cutoffs K and K+1 differ by C(1+s) eps_K e^(-kappa m(X)), the normalised
+  residuals h_K = Gamma_K e^(-E_K) satisfy |h_(K+1) - h_K| <= eps_K, and sum eps_K < infinity; then the separated
+  cumulants (n >= 2) converge. It is about Gamma_K(z) = Z_K(sum z_i f_i)/Z_K(0), normalised at zero source, so it
+  reads nothing of the zero-source free energy that (UNIV-K) is about (same point as row 1233 Lemma 3.1 (1), (3)).
+  Its last sentence: "Individual bounds at the two cutoffs supply neither comparison."
+- YM4_RT's abstract (L112-124): "The local analytic constructions, the one-loop coefficient and the quantitative
+  history estimates are explicit inputs. No complex-source stability or continuum limit is asserted here."
+- A grep of all nine for "consecutive cutoff", "two cutoffs", "different horizons", "universality" finds only SI's
+  proposition above and horizon-uniform constants in EM (L1738, L1864).
+
+So no text of the account, old or new, states (MAPCONV-F) or the zero-source comparison that (UNIV-K) needs; the
+newest texts make the two-cutoff comparison an explicit hypothesis. Credit: Ethan Sussman and Levent Alpoge, with
+Claude and Codex as authors of their text.

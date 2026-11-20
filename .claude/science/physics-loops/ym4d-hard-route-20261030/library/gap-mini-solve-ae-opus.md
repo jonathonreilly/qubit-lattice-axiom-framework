@@ -186,3 +186,35 @@ the account's text, plus Lemma 3.6, which HOLDS. The other open inputs of the on
 1242 L72-76): the 9.1 hypotheses (a)-(e), with (e) the outstanding Proposition 9.1:prop-blind-site-expansions;
 (EDGE) on every predecessor edge; 8.22's standing hypotheses and torus independence; (DET)'s (S1)-(S3); the infrared
 seed at every base datum. The seed stays OPEN.
+
+## Step 4. State after this row, and a note for the lead (written 10:36Z by date -u)
+
+| Item | Before this row | After this row |
+|---|---|---|
+| Jaffe-Witten gap for 4D SU(2) | not proved | not proved; nothing disproved |
+| (N-phys) / the seed at one coupling in the window | OPEN, no engine on file | OPEN; seven more ideas screened in Step 1.2, each on file or dead for a stated reason; no attack started |
+| D(d) of check 1242 (relative normalisation of the chapter 8 and chapter 9 masses) | open input of the corrected Proposition 3.7 | D = Delta(E9 - E_m) exactly (Lemma D0); not needed at all if the telescope uses the representatives' own constant (Corollary D1), which needs only (V9); D = 0 and sigma = 0 under reading (R) (Proposition D2(b)); D constant on chains if the two constants differ by a torus-only amount (Proposition D2(a)) |
+| Remaining open inputs of the one-cutoff carry | check 1242 L72-76 | unchanged, plus reading (R) or (V9) in place of D |
+
+Labels used in this file. PROVED: Lemma D0, Step 2.3. PROVED GIVEN named inputs: Corollary D1 (the 9.1 zero-source
+comparison for consistent representatives, Lemma 3.5 of row 1233), Proposition D2 (Lemma 3.6 of row 1233, as checked in
+1242). READ (quoted or paraphrased with lines): 2.1, 2.2, 2.4. ARGUED: Step 1, reading (R), "What this changes". GUIDE:
+none. No numeric run was made; no subagent was used. The account copies stay in a scratch folder outside the
+repository. Checked by no one; a cross-provider check of Lemma D0, Corollary D1 and reading (R) is the natural next step.
+
+Credit: Ethan Sussman and Levent Alpoge's complete account (with Claude and Codex as authors of its text; construction
+after Balaban, CMP 119 and 122) for every quoted statement; row 1233 (Lemmas 3.5, 3.6, Proposition 3.7) and check 1242
+(the decomposition Phi = P_9 + Delta H + D, the counterexample to the scalar inference, and the suggestion that the
+difference may be the same omitted levels on both tori) for the setting this row works in.
+
+**Note for the lead (process; not a proof claim).**
+1. Check 1242's sentence "They supply no equation setting that scalar to e^(-H_T) for the representatives compared in
+   9.1" is right about the lines it read. The lines that bear on it are II:140916-140922 together with III:18286-18290
+   (for (R)) and III:18249-18250, 18301-18302 with II:730-741 (against). A one-question Codex reading ("for which
+   additive bare constant is 9.1:thm-last-lattice-comparison proved: the energy constant of Lemma 4.36(a) of each run,
+   or another?") would settle (R).
+2. If (R) is read as the account's convention, row 1233's Proposition 3.7 needs no D term: it holds with sigma = 0 and
+   eta_H from Lemma 3.6, modulo the inputs check 1242 lists.
+3. This is again a plain-brief row that found no attack on the infrared seed; its new content is on the carry.
+
+RESULT: Row 1255 (Claude Opus 5.5 max, Mac mini worker 2, 10:11Z-10:36Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed (N-phys) (a finite neutral seed at one coupling in the window, with the carry) stays OPEN with no engine found (Step 1.2: seven ideas screened, each on file or dead for a stated reason, among them strong spatial mixing, which Proposition CA-FAIL already refutes as an input). Worked instead: the open term D(d) of check 1242 in the one-cutoff carry (row 1233 Proposition 3.7). PROVED (Lemma D0, from the account's exactness Lemma 4.34): D(d) = Delta(E9(d) - E_m(d)) is exactly the two-torus defect of the difference of the two additive bare constants, and Phi(d) = Delta log S_9(d) + Delta E9(d). PROVED GIVEN the chapter 9 zero-source comparison for consistent representatives (Corollary D1): Phi(d) <= Phi(d_0) + sum b_n + 2 sup|Delta E9|, so the telescope needs no D, only a uniform two-torus bound (V9) on the representatives' own constant; PROVED GIVEN row 1233 Lemma 3.6 (Proposition D2): D is the same number for every datum when the two constants differ by a torus-only amount, and D = 0 with (V9) <= eta_vac(m) + eta_det(m) when the chapter 9 runs carry the energy constant of Lemma 4.36(a) (8.22's E_m). ARGUED (reading (R), lines cited for and against): the account normalises its 9.1 runs that way (II:140916-140922 with III:18286-18290, 21091-21094) while stating that one free positive constant remains (III:18249-18250, 18301-18302). Credit: Sussman and Alpoge's complete account at 31a47c543775 (with Claude and Codex as authors of its text; after Balaban), row 1233 and check 1242. OPEN: (N-phys); reading (R) or (V9); the other inputs of the one-cutoff carry (the 9.1 hypotheses with the outstanding Proposition 9.1:prop-blind-site-expansions, (EDGE) on every predecessor edge, 8.22's standing hypotheses, (DET)'s (S1)-(S3)); the account's premises. Output library/gap-mini-solve-ae-opus.md.

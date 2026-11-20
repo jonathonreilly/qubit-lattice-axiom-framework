@@ -67,3 +67,54 @@ Cited earlier rows the steps depend on (file, check on file):
 - Sussman-Alpoge outline lines 3205-3254, (PL1)-(PL3): used as a named input for (25).
 
 Not used as a step: rows 1143, 1179, 1183, 1211, 1218, 1222 (context or pointers only).
+
+### Step 2. The fixed-cube localization (9) and the tunnelling bounds (10)-(13), (15)
+
+All constants below depend on the fixed n >= 3, as the source says (line 99). d_beta = beta^(-1/4)(1+log beta), ell = 1+log beta, r = beta^(-3/8).
+
+**Input from row 1215, read for this step.** Row 1215 lines 28-40 (Gaussian norm L(D) = exp[-(1/2) sum omega(sigma_j^2)]), 50-61 (lower test, localization, patch upper bound), 67-88 (flat formula (4), singular values ell(q), ell(q), 0 per colour character, strict inequality S_n(theta) > S_n(0)). The colour characters at a periodic flat are 0, theta, -theta, and S_n is even, so L(D_A) = exp[-S_n(0) - 2 S_n(theta)] and Lambda_n = exp[-3 S_n(0)] (target line 115-118) follow from row 1215 (2) and the character count. Row 1215 is checked HOLDS in row 1221.
+
+**(9), the drop on a flat (lines 113-120): HOLDS.** Near theta = 0 the k = 0 term is omega(ell(theta/n)) = |theta|/n + O(|theta|^3), since omega(s) = sqrt(s) - s^(3/2)/24 + ... and ell(theta/n) = |theta|^2/n^2 (1 + O(|theta|^2)). The k != 0 sum is smooth and even (k -> -k mod n), so S_n(theta) - S_n(0) >= |theta|/(2n) near 0. Away from 0, compactness of the phase torus and the strict inequality give a positive minimum. R(A) = max_i |sin a_i| = max_i |sin(theta_i/2)| is a function on the phase torus (a_i -> a_i + pi is the centre) and is at most |theta|/2. Hence L(D_A) <= Lambda_n - c_n R(A).
+
+**(9), localization (lines 122-126): HOLDS.** I checked each error against d_beta:
+- discard beta V > ell^2: norm error 2 exp(-ell^2/2), since F - PFP = (1-P)MCM + PMCM(1-P) and ||1_{beta V > ell^2} M|| <= exp(-ell^2/2);
+- IMS error: kernel F(X,Y) (1/2) sum |chi(X) - chi(Y)|^2 <= C(X,Y) C_n d(X,Y)^2 / r^2; Schur row integral C_n/(beta r^2) = C_n beta^(-1/4);
+- Taylor error e(xi): C_n sqrt(beta) r^2 = C_n beta^(-1/4); with both endpoints retained, |b + D xi| = O(ell), so the exponent changes by C_n ell beta^(-1/4) = C_n d_beta;
+- cosine against half-square: beta sum x_p^4 <= (max x_p^2) beta sum x_p^2 = O(ell^4/beta);
+- electric metric and Jacobians: relative 1 + O(r^2 + 1/beta); at fixed n the dimension 9n^3 is fixed, so the rescaling costs 1 + O_n(r^2).
+- distance to an exact flat: u = C_n ell/sqrt(beta); the commutator formula q_1 q_2 - q_2 q_1 = 2 v_1 x v_2 gives |(v_2)_perp| <= C u/|v_1| <= C sqrt(u) when |v_1| >= sqrt(u). So the flat is within C_n (ell/sqrt(beta))^(1/2) = C_n ell^(1/2) beta^(-1/4) <= C_n d_beta. Weyl's inequality and the 1-Lipschitz map sigma -> omega(sigma^2) = 2 arsinh(sigma/2) give |log L(D_*) - log L(D_A)| <= C_n ||D_* - D_A||.
+- extension across the discarded set uses c_n <= Lambda_n/2 and R <= 1, so the added integrand is nonnegative.
+
+**(9), lower test (line 128): HOLDS.** Packet radius in the link metric is C beta^(1/8)/sqrt(beta) = C r. The kernel-direction loss is (1/2) E|Z|^2 ||grad phi||^2 = C W^(-2) = C beta^(-1/4). For the electric lower bound, exp at the identity of SU(2) = S^3 is 1-Lipschitz on the ball of radius pi (nonnegative curvature, Rauch), and left translation is an isometry, so d <= |xi - zeta|/sqrt(beta); with 1 - cos u <= u^2/2 the electric factor dominates the Euclidean Gaussian up to the normalization 1 + O(1/beta). So lambda_0 >= Lambda_n - C_n d_beta.
+
+**(10) (lines 132-138): HOLDS.** I redid the weighted vacuum equation. With W = exp(alpha sqrt(beta) rho), rho = d(., D^c), W = 1 on D^c:
+lambda_0 P_D W psi = P_D F P_D W psi + P_D F P_{D^c} psi + P_D (W F W^(-1) - F) W psi,
+so kappa_n ||P_D W psi|| <= lambda_0 + C_n alpha (||P_D W psi|| + 1), which gives the stated 2(lambda_0 + C_n alpha)/kappa_n when C_n alpha < kappa_n/2. kappa_n = c_n/4 works, from (9), P_D F P_D >= 0 and R > 1/2 on D. The Schur bound uses |W(X)/W(Y) - 1| <= exp(alpha sqrt(beta) d(X,Y)) - 1, F <= C pointwise, and E[e^{alpha Z} - 1] <= alpha E[Z e^Z] for alpha <= 1, with Z = sqrt(beta) d bounded in law by a sum of 3n^3 one-link variables with Gaussian tails. For the trial: flip i (edges in direction i crossing one cut) sends H_i -> -H_i and fixes H_j, j != i, so sigma_e psi lies in sector e; the ground-state identity <f psi, (1 - F/lambda_0) f psi> = (1/2) E|f(X) - f(Y)|^2 is standard for real f. R < 3/4 gives |Re H_i| > sqrt(7)/4, a sign change needs |Re H_i(X) - Re H_i(Y)| >= sqrt(7)/2, hence d(X,Y) >= c_n. The form is <= C e^{-2c sqrt(beta)} + C e^{-c beta}/lambda_0, and -log(1-y) <= 2y.
+
+**(11)-(13) (lines 140-170): HOLDS.** Checked points:
+- (12): from (9), lambda = <phi, F phi> <= Lambda_n + C_n d_beta - c_n int R|phi|^2, and lambda >= lambda_0 - d_beta >= Lambda_n - (C_n + 1) d_beta, so int R |phi|^2 <= C_n d_beta; ||1_{beta V > K} phi|| <= e^{-K/2}/lambda from phi = MCM phi/lambda.
+- the path stays at beta V <= C_n: the double-wrap commutator chord 2 sin(s a_i) sin(s a_j)|u_i x u_j| is increasing in s on [0,1], and at s = 1 it is the commutator of the root windings, which is within n^2 sqrt(2K_n/beta) of 1 because it is a conjugated product of the n^2 plaquettes of an (i,j) torus at an endpoint with beta V <= K_n. (The bound a_i <= C_n d_beta alone would give only beta V <= C ell^4; the monotone decrease from the endpoint value is what keeps beta V bounded. The source states "which only decreases", which is this argument.)
+- (13): with m steps of length <= 1/sqrt(beta) and caps of radius c_n/sqrt(beta), F^m >= c_n^(2m-1) beta^(9n^3/2); I_beta^(-1) ~ c beta^(3/2) per link, 3n^3 links; the gauge caps give measure >= c beta^(-3n^3/2); so the averaged kernel is >= beta^(-C_n) e^{-C_n m}.
+- sup bound: ||C(X,.)||_2^2 = prod_l I_{2 beta}/I_beta^2 ~ (c beta^(3/2))^(3n^3), so ||psi||_inf <= C_n beta^(9n^3/4); lambda_0 <= 1 since ||C|| = 1, M <= 1.
+- Dirichlet bound: on B x B, (1/2) int int |f(X) - f(Y)|^2 dpi dpi = pi(B)||1_B phi||^2 - (int_B psi phi)^2 >= (7/8)^2 - (1/8)^2 = 3/4, using int_B psi phi = -int_{B^c} psi phi and Cauchy-Schwarz on B^c.
+- 1 - x^m <= m log(1/x) gives E >= c beta^(-C) e^{-C m}/m: m = C(1 + sqrt(beta)) gives e^{-C sqrt(beta)}; m = C(1 + d_beta sqrt(beta)) gives e^{-C beta^(1/4)(1 + log beta)}.
+- upper bound E_{1,+} <= C_n d_beta: the two saturations are separated by c_n r because the winding angle modulo the centre is Lipschitz and the packets have radius C r while the centres differ by K r; the cross kernel has Schur norm <= P(d >= c r) <= C e^{-c beta r^2} = C e^{-c beta^(1/4)}; min-max on the two invariant top functions and lambda_0 <= Lambda_n + C_n d_beta.
+
+**(15) (lines 184-190): HOLDS.** Lower bounds: one excited term e^{-u E} with E <= C_n d_beta (neutral) or E_e <= C_n e^{-c sqrt(beta)} (all). Upper bounds: sum_{k>=1} e^{-u E_k} <= Tr(U) e^{-(u-1) E_1}, Tr U <= C_n beta^(9n^3/2), with E_1 from (11) (neutral) or from the remark at line 146 that e^{-C_n sqrt(beta)} bounds every nonvacuum physical energy (all sectors). log log beta terms are absorbed. Physical reading checked: at fixed n the neutral time is at most exp(C beta^(1/4) log beta), the full time at least exp(c sqrt(beta)).
+
+Plausibility guide (not a step): the one-loop holonomy potential is linear, 2|theta|/n, with collective mass about beta n, so the lowest neutral energies scale like beta^(-1/3) at fixed n, inside the bound C_n d_beta; the centre tunnelling scale e^{-c sqrt(beta)} matches the e^{-c/g} of Lüscher and van Baal. No contradiction.
+
+### Step 3. The eight-state thermal limit (14) (lines 174-182)
+
+**(14): HOLDS.** Line by line:
+- the eight sigma_e psi are orthonormal: distinct characters of the flip group (Z_2)^3, and |sigma_e| = 1 a.e.;
+- B is flip-invariant and R <= A_n d_beta < 1 on B, so Re H_i != 0 there and the eight B_z partition B exactly; flips permute them and fix psi, so pi(B_z) = pi(B)/8;
+- if the ninth level (index 8) has lambda >= lambda_0 - d_beta, every unit vector of the nine-dimensional span satisfies (12): (9) gives the R-moment, and phi = F (F|span)^(-1) phi gives ||1_{beta V > K} phi|| <= e^{-K/2}/(lambda_0 - d_beta);
+- a unit vector orthogonal to the eight psi 1_{B_z} exists (nine dimensions, eight constraints); then sum_z [pi(B_z)||1_{B_z} phi||^2 - 0] = (pi(B)/8)||1_B phi||^2 >= (7/64)(7/8);
+- the short path suffices on each B_z x B_z (same centre signs, no flip), so the gauge-averaged kernel bound (13) holds with m' = ceil(C_n(1 + d_beta sqrt(beta)));
+- the form of 1 - U^{m'} on the span is <= 1 - e^{-m' E_8}, so E_8 >= e^{-C_n beta^(1/4)(1 + log beta)}; if the hypothesis fails, E_8 >= d_beta, which is larger;
+- (10) gives one level per sector below Ce^{-c sqrt(beta)} < E_8, so exactly eight levels lie below the edge, one in each sector;
+- at m = floor(exp(beta^gamma)): the tail is <= Tr(U) e^{-(m-1)E_8} -> 0 because gamma > 1/4 beats beta^(1/4) log beta + O(log beta); 1 - e^{-m E_e} <= m E_e -> 0 because gamma < 1/2; ||(1 - P_{phi_e}) sigma_e psi||^2 <= C e^{-c sqrt(beta)}/(1 - e^{-E_8}) -> 0; for unit vectors ||P_u - P_v||_1 = 2 sqrt(1 - |<u,v>|^2).
+So Tr_all U^m -> 8 and Tr_+ U^m -> 1 at fixed n. No defect found.
+
+Verdicts so far: (9) HOLDS; (10) HOLDS; (11) HOLDS; (12) HOLDS; (13) HOLDS; (14) HOLDS; (15) HOLDS. All at fixed n with n-dependent constants, as stated.

@@ -27,6 +27,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T05:20Z 7.4 opened: batch 2 criteria fixed (d-dependence at beta 4.0 and 6.0) after seeing only the d = 3 rows of batch 1.
 - 2026-11-20T05:21Z 7.4 amended before reading any d = 4 value: beta 2.6 d-scan made primary.
 - 2026-11-20T05:27Z 7.5 written: batch 1 results (run 05:19:02Z-05:25:42Z by the log's date -u stamps, under the lock); batch 2 started 05:26Z.
+- 2026-11-20T05:31Z 7.6 written: Lemma NC (classical symmetry breaking at the pi-flux face), PROVED by hand.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -467,3 +468,44 @@ Against the criteria of 7.2 (bold = r >= 1/2 + 3 SE):
 What this shows and does not show. At beta 3.0-4.0 a box with d = 3, 4 is far below the bulk correlation length, so
 these are small physical boxes; there the failure of (M) is a fact about the pinned face, not about confinement. The
 regime of A's tuning (boxes of several correlation lengths) is tested only by the beta 2.6 scan of batch 2.
+
+### 7.6 Lemma NC: the classical ground states of the pi-flux box break the global SU(2) (PROVED by hand)
+
+Setting of 7.2: Q = [1, 3d - 1] x [1, w]^3, w = 2d - 1, face Phi = {x in Q : x_3 = 1}, exterior omega_pi (all exterior
+links 1 except U_2(y) = (-1)^(y_1) for y_3 = 0). S(U) = sum over plaquettes p meeting V(Q) of (1 - Re tr U_p / 2).
+Call U "central on the face" if U_mu(x) is +1 or -1 for every x in Phi and mu in {1, 2}.
+
+**Lemma NC.** If d >= 314, every minimiser of S over G^{V(Q)} has a face link U_mu(x), x in Phi, mu in {1, 2}, that is
+not central. So the global conjugation U -> gUg^(-1) (which fixes omega_pi) moves every classical ground state, and
+no element of G_Q can undo it, since face links have no interior end point.
+
+*Proof.* (a) Lower bound for central faces. For x in Phi and mu in {1, 2} the plaquette pi_mu(x) in the plane
+(mu, 3) based at x - e_3 meets V(Q) and has holonomy u_mu(x) U_mu(x)^(-1) (its other three links are exterior:
+u_mu(x) = U_mu(x - e_3) with u_1 = 1, u_2 = (-1)^(x_1), and two normal links equal to 1). For central U its cost is
+2 if U_mu(x) != u_mu(x) and 0 otherwise. Let D be the set of face links with U_mu(x) != u_mu(x), and F the set of
+(1, 2)-plaquettes based at x in Phi with x_1, x_2 <= w - 1 (all four links based in Phi), |F| = (3d - 1)(w - 1)^2.
+The holonomy of u on every p in F is u_2(x + e_1) u_2(x) = -1, so for central U the holonomy of p is
+-(-1)^{|D cap p|} and its cost is 2 [|D cap p| even]. The plaquettes pi_mu(x) and those of F are distinct, and each
+face link lies in at most two plaquettes of F, so #{p in F : |D cap p| odd} <= 2|D|. Hence
+S(U) >= 2|D| + 2 max(0, |F| - 2|D|) >= |F|.
+(b) A competitor. Let J be a unit imaginary quaternion, theta = pi/4, s(x) = (-1)^(x_1 + x_2), and on the face
+lattice {x_3 = 1} put w_0 = 1, w_1(x) = exp(theta s(x) J), w_2(x) = u_2(x) exp(-theta s(x) J). All factors lie in
+the abelian group {+-1} x exp(RJ); every (0, mu)-plaquette is 1 (w does not depend on x_0 and w_0 = 1), and every
+(1, 2)-plaquette is u_2(x + e_1) u_2(x) exp(4 theta s(x) J) = -exp(+-pi J) = 1. So w is flat on the (simply connected)
+face lattice and w_mu(x) = g(x) g(x + e_mu)^(-1) for some g. Let h = g on the face lattice and h = 1 elsewhere,
+V~ = the gauge transform of the all-1 configuration by h (every plaquette of V~ is 1), and let V = V~ on V(Q). The
+cost of V comes only from plaquettes meeting V(Q) that contain an exterior link on which omega_pi differs from V~.
+These are (i) the pinning plaquettes pi_mu(x), x in Phi: cost 1 - cos theta for mu = 1, 2 and 0 for mu = 0, so in total
+(1 - cos theta) 2 (3d - 1) w^2; and (ii) plaquettes containing an exterior link with an end point on the face lattice
+outside Q at l_inf-distance 1 from Phi: at most 32 d^2 + 2 such points (the difference (3d + 1)(w + 2)^2 -
+(3d - 1) w^2), 4 links each (three face directions and the normal one), 6 plaquettes per link, cost at most 2 each:
+at most 1536 d^2 + 96. So S(V) <= 2 (1 - 1/sqrt 2)(3d - 1)(2d - 1)^2 + 1536 d^2 + 96.
+(c) For d >= 314 the bound in (b) is below |F| = (3d - 1)(2d - 2)^2 (both sides are polynomials in d; at d = 314:
+368,755,316 against 368,146,100, and the difference grows like 4.97 d^3 - 1536 d^2). A minimiser exists (compact
+configuration space, continuous S), its action is at most S(V) < |F|, so by (a) it is not central on the face. QED
+
+What Lemma NC does and does not give. It is the classical root of the ordering: the ground states form non-trivial
+orbits of the global SU(2), as in row 950's one-step estimate (5.1). It does not show that, inside one ground state,
+the readings M(R-) and M(R+) point the same way, and the constant d >= 314 is crude (the edge count is generous);
+the GUIDE runs of 7.5 suggest alignment and symmetry breaking at d = 3, 4 already. It says nothing about the
+tuning regime, where d grows at fixed physical size and the bulk is not classical.

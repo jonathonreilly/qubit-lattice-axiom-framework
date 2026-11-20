@@ -32,6 +32,9 @@ different provider (astra62), so this check is cross-provider; it is still one c
 - 09:16Z (date -u) step 2 done: (25) HOLDS, with (20), (23), (24), (26), L312, L328, L344.
 - 09:18Z step 3 done: (27) HOLDS, with (28), (21), (22).
 - 09:20Z step 4 done: (33) HOLDS, with (29)-(32); (34), (35) HOLD.
+- 09:25Z step 5 done: every other statement HOLDS; three precision notes, no FAILS.
+- 09:27Z step 6 done: the main comparison is not a restatement (searches below).
+- 09:28Z step 7 done: numeric guide (about 10 s under the numeric lock, 09:27-09:28Z, memory 54 percent free) agrees.
 
 ## Step 1. Inventory and dependency map
 
@@ -252,3 +255,181 @@ least c - o(1), so beta(1 - <f, Uf>) -> 0.
 What (33) does not say: it controls only the dependence of the effective neutral operator on the spectral
 parameter across a physical window. It gives no bound on the spectrum of H(r) itself; (34) compares rI - H(r)
 with I - U only to o(1/beta), not to o(a). The checked file states this (L458, L473).
+
+## Step 5. Everything else, in file order
+
+**L19-L24 (setup): HOLDS.** The MCM kernel M(X) prod_e rho(X_e Y_e^(-1)) M(Y) is smooth and strictly positive; the
+Perron eigenvector is unique and positive, hence invariant under vertex gauges and centre flips, which
+commute with the kernel. The centre-neutral vacuum lies in the singlet space.
+
+**L26 (||F_x|| <= q): HOLDS.** For equivariant v, F_x v(X) = int k_0(X,Y) E_{g|X,Y}[Ad(g_x)] v(Y) dY. Given X, Y
+and the other temporal links, g_x has the translated density of row 1145 L16 with tilt s <= 6 beta (six edges
+at x), and its adjoint mean is the multiplier I_3(s)/I_1(s) times a rotation, so its norm is at most
+exp(-2/b_beta) = q by row 1145 (1). Hence |F_x v| <= q F|v| pointwise, and iteration holds by positivity.
+
+**(1) L28-L38: HOLDS.** C commutes with left translation on link e because rho is central:
+C_e(u o L_a) = (C_e u) o L_a. D_e M = -(1/2) J_e M and multiplication operators
+commute, so D_e(F phi) = F_x D_e phi - (1/2){J_e F phi + F_x(J_e phi)}; with F phi = r phi this is
+(r - F_x) D_e phi = -(1/2)(r + F_x) J_e phi. (1/2)(r+F)(r-F)^(-1) = 1/2 + F(r-F)^(-1) = 1/2 + sum_{s>=1} r^(-s) F^s.
+D_e phi is an adjoint vector at the base x (derivative at gX in direction a is the derivative at X in
+direction Ad(g_x^(-1)) a).
+
+**(2) L40-L46: HOLDS.** Haar integration by parts of D^a[(D^a S) conj(phi_i) phi_j] and (1) give (2).
+sum_a (D^a)^2 w(X_p) = w(sum_a a^2 X_p) = -3 w(X_p), four spatial plaquettes per link in 3D, |B_e| <= 12 beta;
+F_x >= 0 gives K_r >= I/2 and ||J_e phi||^2 <= <phi, B_e phi> <= 12 beta.
+
+**(3) L50-L62: HOLDS.** (D_e + J_e/2)F = M (D_e C) M / lambda_0; the kernel derivative has length
+beta|Im(X_e Y_e^(-1))| = beta sqrt(1-w^2) <= beta sqrt(2A); beta sqrt(2A) e^{-beta A} <= C sqrt(beta) e^{-beta A/2};
+the halved-coupling factor is (z_{beta/2}/z_beta) times a normalized convolution below C_beta in operator
+order (row 1149 (16) proof, L222). The identity ||J_e u||^2 = <u, B_e u> + 2 Re<(D_e + J_e/2)u, J_e u> follows
+from <u, B_e u> = -2 Re<J_e u, D_e u> (integration by parts of (D^a S)|u|^2). The quadratic inequality and
+f = F(F^(-1) f) on the band give the rest.
+
+**(4) L64-L69: HOLDS.** (D_e + J_e/2) phi = -F_x (r - F_x)^(-1) J_e phi from (1); on [r-d, r] with d <= r/2,
+lambda/(r - lambda) >= (r-d)/d >= r/(2d); (3) applied to phi = F phi / r gives ||(D_e + J_e/2) phi|| <= C sqrt(beta)/r.
+
+**(5) L73-L87: HOLDS.** I redid the induction: D_e U^{m+1} = F_x D_e U^m - (1/2) J_e U^{m+1} - (1/2) F_x J_e U^m
+turns the formula for m into the formula for m+1. Integration by parts of v^a conj(U^m h) U^m k gives
+U^m G U^m = -(D_e U^m)^* V U^m - (V U^m)^* D_e U^m; the two half terms give U^m (v.J_e) U^m and the endpoint
+term is E_{e,R} with m - 1 = R. For v = J_e the bound C' beta q^R is right because ||J_e U^m|| <= ||J_e F|| <= C sqrt(beta)
+by (3) (not only |J_e| <= 4 beta).
+
+**L89: HOLDS.** sum_a (D^a)^2 w = -3w gives G = f for v = -D_e f/3, |D_e w(X_p)| = |Im X_p| <= 1. With
+a = i sigma_a, sum_a a (x) a = -sum sigma (x) sigma = I - 2 Swap, which is -I on symmetric tensors, so the Casimir
+on spin l (d = 2l factors) is -3d - d(d-1) = -4l(l+1). The density argument holds.
+
+**L91: HOLDS** (GUIDE-level for the cited account lines RF24-RF25, which I did not re-read; the claim
+beta = O(log(1/a)) is the usual asymptotic-freedom growth). q^R = e^{-2R/b} <= n^(-2(k+c)) for
+R = ceil((k+c) b log n), and a(R+1) = O(L (log n)^2 / n) -> 0.
+
+**(6) L99-L104: HOLDS.** W_e^* F_xy W_e inserts w(X_e^(-1) g_x Y_e g_y^(-1)), the temporal plaquette half-trace,
+into the electric factor of e. Since d/d beta of z_beta^(-1) e^{-beta(1-w)} is (w - p_beta) times itself,
+w rho_beta = p_beta rho_beta + d rho_beta/d beta, whose multiplier is c_d (p_beta + H_beta(d)) with
+c'_d >= 0; min-max through the isometry W_e gives the eigenvalue comparison.
+
+**(7) L106-L111: HOLDS.** U = Y^* Y and the modified product is Y^*(p_beta + H_beta(d_e)) Y; F~ Y = Y U.
+
+**(8) L113-L124: HOLDS** as an implication from the method of row 1151 (23) and the half-coupling moment of
+row 1155 (both checked). Truncated kernel sum_{d<=D} d c_d chi_d has modulus at most sum d^2 = (z_beta sum d^2) x
+z_beta^(-1) e^{-beta a_p} x e^{beta a_p}; positivity of Tr(P_D F~^2 P_D)^j justifies the bound by the absolute
+integrand; j-th roots and F~^2 >= h^2 1_{[h,1]}(F~) give (8). Precision note (P1): the marks here are temporal
+plaquettes over one link on alternate cuts, with exponent beta, not the spatial classes with exponent
+(1+delta_0) beta of row 1151 (23). The adaptation works: after dissemination the marked faces have coupling 0,
+each has the five-face cube detour into the next layer of the perpendicular coordinate, whose five other faces
+are unmarked, so the disseminated action is at least 1/21 (hence at least 1/42) of the original. The file
+states this adaptation in words at L124; it is not a restatement of (23).
+
+**(9)-(10) L126-L136: HOLDS.** z_beta of order beta^(-3/2) and sum_{d<=D} d^2 ~ k_0^3 beta^{3/2}/3 make (8) at
+h = 1/2 at most 1/2 for small k_0. H_beta(d+1) - H_beta(d) = d/d beta log(I_{d+1}/I_d) > 0 (row 1149 L222).
+Limits (10), redone: E[sin(k|Z|)/(k|Z|)] = E e^{ik Z_1} = e^{-k^2/2}; beta(w - p_beta) -> (3 - |Z|^2)/2 and
+E[(3 - |Z|^2)/2 e^{ikZ_1}] = (k^2/2) e^{-k^2/2}, using E[|Z|^2 e^{ikZ_1}] = (3 - k^2) e^{-k^2/2}. So beta H_beta(D+1)
+-> k_0^2/2 and epsilon = k_0^2/8 works.
+
+**L138: HOLDS** (min-max; the last two sentences are conditional on row 1163 (13), as labelled).
+
+**(11) L142-L158 and L160: HOLDS.** The endpoint q^{m-1} h^(-m) -> 0 because h >= (1+q)/2 > q. The instantaneous
+force cancels: -(1/2) J_e f + (1/2) rho J_e psi = 0. ||U^(-s) f - f||^2 <= h^(-2s) s^2 delta D(f) by r^(-s) - 1 <= h^(-s) s(1-r)
+and (1-r)^2 <= delta(1-r). The colour kernel of F_x^s has norm at most q^s k_s pointwise; the Doob kernel
+P_s = k_s psi(Y)/psi(X) is nu-stationary and int int |rho(Y) - rho(X)|^2 nu P_s = 2<f,(I-U^s)f> <= 2s D(f). Both sums
+are O((1-q)^(-3/2)). L160: 1 - q ~ 2/(1+6 beta), so beta^2(1-q)^(-3) <= C(1+beta)^5, and D(f) <= aE.
+
+**(12)-(14) L166-L187: HOLDS.** The insertion L_{tau,e} turns C_beta into C_{beta'} on the link, and
+z_{beta'}^(-1) e^{-beta'(1-w)} = (z_beta/z_{beta'}) rho_beta e^{u R^2/2} with beta - beta' = beta u. The Gaussian
+moment is det(I - Gamma diag(u))^(-3/2); times prod (1+tau_i)^(-3/2) it equals det[I + (I - Gamma) diag(tau)]^(-3/2)
+because u_i(1+tau_i) = tau_i. L_{tau,e}(d) -> e^{-tau k^2/2} from (10) at beta and beta'. Tightness, analytic
+continuation of the Laplace transform and Stone-Weierstrass hold. The one-link density with covariance I/2
+is 4k^2 e^{-k^2}/sqrt(pi).
+
+**(15) L189-L193: HOLDS.** P_ex F = t ^ (iota_{conj t} F)/|t|^2 gives the (0i),(0j) block
+(|t_0|^2 I + t t^*)/(|t_0|^2 + s); the k_0 integral of 1/(s + 2 - 2cos k_0) is 1/(2 sinh omega) with
+sinh(omega/2) = sqrt(s)/2; t^*(sI - t t^*) = 0.
+
+**(16) L195-L204: HOLDS.** Two cuts: det [[1+tau/2, tau b],[tau b, 1+tau/2]] minus the product of single values.
+b(s) is the (23)-(23) free covariance at time distance s (Hodge complement), b(s) ~ 1/(pi^2 s^4) (row 1231 (5),
+redone: (1/(2 pi^2))(1/3)(6/s^4)). C_tau(s) ~ (3/2) tau^2 b^2 (1+tau/2)^(-5). The weight statement follows from
+r^s >= e^{-s/u_j} on the band and positivity of the spectral measure.
+
+**(17) L210-L224: HOLDS** (redone in Step 2 with (20)): with t = c epsilon and C beta^(-eta) <= epsilon/4, both tails are
+at most h^(-1/2) exp(-c' N epsilon^2).
+
+**(18)-(19) L228-L239: HOLDS**, (19) conditional on row 1163 (13)-(14) as labelled. Temporal insertions are exact
+(U - W_e^* F_xy W_e); spatial ones carry (5) with error 2C sqrt(beta) q^R ||V U^m||, ||v||_inf <= 1/3. In (19),
+||v_R - U^m v|| <= 2||A_R - U^m A U^m||, H commutes with the transfer, U >= e^{-a E_*} on ran Q, and
+||QHv||^2 >= int_{E<=E_*} e^{-u_2 a E} d mu >= 15 G/16.
+
+**L241 (ARGUED): consistent** with (18)-(19); it is labelled ARGUED and claims no estimate.
+
+**L258: HOLDS.** Restatement of (20) in Rayleigh-quotient words; the remark on time order n is correct
+(n beta^(-1)(sqrt(delta) + beta^(-eta)) does not tend to 0).
+
+**L346-L350 (cost of projecting after every step): HOLDS.** Vacuum trial and (20) at delta = 0 give the lower
+bound; for the optimizer, <f,Uf> >= 1 - O(1/beta) because ||T_X|| <= C (T_X need not be positive, but its norm
+is bounded), the band split and (20) give <f, T_X f> = 3/4 + o(1). Against (25) at a nearest neighbour (1/2),
+the projected chain loses (1/4 + o(1))/beta per step.
+
+**GUIDE and OPEN paragraphs (L3-L15, L93, L97, L164, L208, L288, L473):** context and credits; I did not re-read
+the external links (Sussman-Alpoge lines, row 1218 papers). L15 and L473 agree with row 1231 L14 (OPEN).
+
+Precision notes (none breaks a statement):
+- (P1) L124: adaptation of row 1151 (23) to temporal alternate-cut marks at exponent beta (above).
+- (P2) L99, L104, L117: "row 1149, (16)" points to the statement (16); the Bessel-ratio monotonicity it uses is
+  in the proof paragraph of (16) (row 1149 L222), not in the display.
+- (P3) L278: the factor e^{Cb^3} checks (normalizer ratio between precisions 1 -+ C/b over rank O(b^4)); any
+  further e^{O(b^3 log beta)} from fixed boundary variables would still be o(1) per site. No consequence.
+
+## Step 6. Is the main comparison a restatement of an earlier row?
+
+The main comparison of row 1236 is the neutral sector against the sector of two fundamental static charges:
+the operator inequality (6)/(9) through the open-line isometry, the sharp threshold (25), the multiplicity
+transfer (27), and the Schur (Feshbach) reduction (30)-(34). **Answer: it is not a restatement.** It extends
+earlier rows, which it cites and uses:
+
+- Row 1143 (8) (L128-L139 there): the open-line formula, with Jensen W(k) >= W(1)^k and W(N) <= 4<P_x P_y>. Rows
+  1147 (`gap-solve6-astra62.md` L35) and 1171 (`gap-solve14-astra62.md` L64-L68) use the same moment formula to bound
+  Wilson-loop deficits 1 - Ew <= Chk/beta. None states an operator inequality or an eigenvalue comparison between
+  the two sectors; (6) is new, and the upper half of (25) uses (8) in the other direction (W <= r_xy^s).
+- Row 1145 (16)-(18): every local gauge charge costs at least w/(7 b_beta) per step. For a fundamental pair
+  (w = 2) this is -beta log r_xy >= about 1/21 at large beta. (24) sharpens the constant to the exact limit
+  (3/2)R(z) (1/2 at a nearest neighbour), for this pair only; (25) adds the matching upper bound.
+- Row 1151 (21)-(22a): the mean plaquette 3/4 in the vacuum by dissemination and the pressure slope. (20) is its
+  extension from the vacuum to every vector of the slow band; (28) is the ribbon version.
+- Row 1231 (2), (9): the fixed-window transported-curvature comparison. (26) is its version for a ribbon of
+  temporal faces.
+
+Searches (grep counts at `3a45c201f`): `library/open-core.md` has 0 hits for "static potential", "static pair",
+"static-pair", "Coulomb", "resistance", "Feshbach", "Schur", "open-line", "triplet", "self-energy",
+"Wilson ribbon", "charged threshold". In FINISH.md, "static-pair" hits only rows 1236 and 1245; "Coulomb" (42
+hits) is the U(1) Coulomb-phase binding test of rows 708-931, not a static potential; "Feshbach" has 0 hits.
+In `library/`, "static potential" appears only as a literature pointer (Bachas, Borgs-Seiler concavity:
+`gap-measured-vectors-max.md` L131, `gap-solve-astra62.md` L119); "Wilson ribbon" in row 1211
+(`gap-solve22-astra62.md` L13) is a different object (a connected ribbon of spatial links with the exterior
+fixed); no `gap-solve*-astra62.md` file has a Schur or Feshbach reduction of a charged transfer (its "Schur"
+hits are Schur tests and Gaussian Schur complements). The Sussman-Alpoge index (`library/sa-index/`) has no hit
+for "static potential", "static charge", "Polyakov" or "heavy quark"; its "Coulomb" lines (chunk-10 L65, L118)
+are Green-kernel bounds. So there is nothing to port from the outline here.
+
+The constants are the textbook leading-order ones (Coulomb static energy g^2 C_F [G(0) - G(z)] with self-energy,
+adjoint-channel excess g^2 G(z), mean plaquette 3/(4 beta) for SU(2)); what is new in the lane is the proof on
+growing tori at beta <= B log n, uniform over the slow band.
+
+## Step 7. Numeric guide (GUIDE only; no statement of the chain rests on it)
+
+Run 09:27-09:28Z under `lab_ops.py numeric-lock` (holder gap-solve27-check-opus, acquired and released;
+memory 54 percent free by `memory_pressure`; BLAS threads 1, `nice`, `python3 -I`, peak RSS 522 MB). Script and
+output in the scratch folder /tmp/gs27chk (`guide.py`, `guide.out`), not committed.
+
+| Quantity | Claimed | Computed |
+|---|---|---|
+| c_d(beta) = I_d/I_1 at d = k sqrt(beta), (10) | e^{-k^2/2} | k = 0.5, 1, 2 at beta = 25600: 0.882512, 0.606538, 0.135336 against 0.882497, 0.606531, 0.135335 |
+| beta H_beta(d), (10) | k^2/2 | 0.124985, 0.499995, 1.999980 against 0.125, 0.5, 2 |
+| beta(1 - p_beta), L136 | 3/2 | 1.4962, 1.4996, 1.49996 at beta = 100, 1000, 10000 |
+| H_beta(d) nondecreasing in d, L131 | yes | yes at beta = 400, d = 1..79 |
+| b(0) = diagonal of I - P_ex on a temporal face | 1/2 | 0.500000 |
+| sum_{t>=1} b(t); 3 x sum = c_1 - c (L425) | 1/12; 1/4 | 0.083333; 0.250000 |
+| R(e_1), (25) | 1/3 | 0.333333 |
+| pi^2 s^4 b(s), (16) | -> 1 | 0.68, 1.76, 1.53, 1.09, 1.02, 1.006 at s = 1, 2, 4, 8, 16, 32 |
+| c_1, c_s/s, d_l >= 0 (nearest-neighbour column) | 3/4, -> 1/2, yes | 0.750000, c_40/40 = 0.5077, min d_l = 1.5e-7 > 0 |
+| 4G(e_1) in (29) | > 0 | 0.341 on a 160^3 midpoint grid (G(0) = 0.2519 there; the exact Watson value is 0.2527, so 4G(e_1) = 4(G(0) - 1/6) = 0.344) |
+
+So at a nearest neighbour: c = 1/2 (true static pair), c_1 = 3/4 (projected one step), triplet threshold at
+least c + 4G(e_1) = 0.844 in units 1/beta.

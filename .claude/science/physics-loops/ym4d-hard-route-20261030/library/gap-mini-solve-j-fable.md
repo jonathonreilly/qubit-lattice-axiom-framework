@@ -185,3 +185,42 @@ The commutator step in (c) is the standard lattice form of "the product of the p
 3. Threshold. If some field of sector (1,1), not near the family of Lemma V, had A below (12/11) pi^2 = 10.77..., then at the scaling point (L/a)^(11/3) e^(-pi^2 beta) of order 1 its weight would be larger than that of the fractional instanton by e^(beta ((12/11) pi^2 - A)), and the twist ratio R(L) of Step 3.3 would read a lattice artifact, not the running coupling. The arithmetic: lump weight e^(-beta A) (L/a)^4, physical weight e^(-pi^2 beta) (L/a)^(11/3), and (L/a) = e^((3/11) pi^2 beta) there. The same number (12/11) pi^2 is the known dislocation threshold of the charge-1 sector (6/11 of 2 pi^2; Luscher; Pugh and Teper, RECALLED). So any proof of (X) must exclude such fields, and (a) shows they exist at L <= 2.
 
 Consumer: none on the gap path. This step only repairs the reading of Step 3.
+
+## Step 7. Attack on the neutral half: the flow of each neutral level along the trajectory (ARGUED; first failing step named)
+
+Why this attack. After Step 5 the neutral half has no index engine. The one kind of (K-flow) left for it moves each neutral level by a relative amount of order g^2 per doubling at weak coupling. Its exact form is the Feynman-Hellmann identity in the coupling at a fixed lattice, read along the trajectory (in the continuum, the trace anomaly). On file: attack 3 of row 1128 (`gap-council-rg-fable.md` L202-232: (MONO), (VIR), ranked last because "(VIR) only bounds gaps at strong coupling below by gaps at weak coupling, which are small"); Proposition VIR of `gap-afield-a` (a virial identity in log b for D, checked HOLDS in `gap-afield-a-check-opus.md` L141-143). What this step adds is the size of the constant that crossing the band needs.
+
+### 7.1 Identity (PROVED, standard)
+
+For the Hamiltonian form H_beta = (2/beta) K + (beta/2) V on one spatial lattice (row 1128 L205-208), with E_i(beta) a simple level, Feynman-Hellmann gives beta d(E_i - E_0)/d beta = [(beta/2) <V>_i - (2/beta) <K>_i] - [(beta/2) <V>_0 - (2/beta) <K>_0]. Put kappa_i(beta; n) = - beta d log(E_i - E_0)/d beta. Then for beta_1 < beta_2,
+
+  (E_i - E_0)(beta_1) = (E_i - E_0)(beta_2) exp( integral from beta_1 to beta_2 of kappa_i d beta/beta ).
+
+### 7.2 The value of kappa in three regimes (RECALLED or from files; GUIDE)
+
+- Small periodic box (Luscher; van Baal; row 998 I33): E_1 - E_0 is proportional to g^(2/3)/n, so kappa_1 tends to 1/3.
+- Small twisted box: E_1 tends to the free value 4 arsinh sin(pi/(2n)) (row 1215, unchecked), which does not depend on beta, so kappa_1 tends to 0 as beta grows at fixed n.
+- A level of mass m in a box much larger than 1/m, in the scaling regime: E_1 - E_0 = m a(beta), so kappa_1 = beta |d log a/d beta| = (3 pi^2/11) beta (1 + O(1/beta)) for SU(2) with the Wilson action (one loop: a Lambda proportional to exp(- beta/(8 b_0)), b_0 = 11/(24 pi^2)). At beta = 2.5 this is about 6.7.
+
+### 7.3 What crossing the band needs (ARGUED)
+
+(N-phys) forces n m_ev >= K log 2, about 355 for K = 512 (Lemma N2 (a) of row 1184). At the small-box end of the flow n m_ev is at most about 2 pi (twisted box; the free massless value of row 1184's reading) or 4.12 g^(2/3) (periodic box). So the flow at fixed n must multiply n m_ev by at least 355/(2 pi), about 56. Let the box grow by a factor 100 in physical units between the two ends. At fixed n the bare coupling then changes by (11/(3 pi^2)) log 100, about 1.71, so beta_entry/beta_exit is about 1.74 for beta_exit = 2.3. By 7.1 the mean of kappa_1 against d beta/beta on that range must be at least log 56/log 1.74, about 7.3.
+
+That is the value of a massive level in a large box (7.2, third case), not the small-box values 1/3 and 0. A uniform (VIR) with kappa = 1/3 gives the factor 1.74^(1/3), about 1.2.
+
+**First failing step.** A lower bound on kappa_1(beta; n) of about 7 (in the mean against d beta/beta) on the band, at fixed large n. By 7.2 it holds when level 1 is massive on the scale of the box. So the bound restates the gap; I found no other way to supply it.
+
+Two side facts (ARGUED). (i) (VIR) for every box and every beta >= beta_0 with one kappa > 0 is false at weak coupling in the twisted box, where kappa_1 tends to 0 (7.2, second case); so the council's restriction to the band is needed. (ii) The controls behave as the council's file says: kappa = 0 for the free photon and on the levels of a massless factor, kappa tends to 0 at the critical point K7, and for frozen groups the vortex levels have E proportional to beta (kappa = -1) while their gap is true. So (VIR) is selective, but it is not necessary for a gap.
+
+### 7.4 Check of Step 3's Lemma V (Claude Opus 5.5, line by line; a model other than its author)
+
+(a) The (1, 2)-plaquette angle is phi for x_2 < L - 1 (the a_2 terms vanish, a_1 changes by phi), phi for x_2 = L - 1 and x_1 < L - 1 (- phi (L - 1) + phi L (x_1 + 1) - phi L x_1), and phi - pi at x_1 = x_2 = L - 1 (- phi (L - 1) - phi L (L - 1) = phi - phi L^2), whose flipped weight is 1 + cos(phi - pi) = 1 - cos phi. The (3, 4) case is the same. Mixed angles vanish because a_1 depends on x_2 only, a_2 on x_1, x_2, a_3 on x_4, a_4 on x_3, x_4. The bounds follow from 2u^2/pi^2 <= 1 - cos u <= u^2/2 on [0, pi]. (b) The Polyakov line of direction 1 at height x_2 is the product of L factors exp(a (c_1 - phi x_2)), with trace 2 cos(L c_1 - pi x_2/L). (c) is (a) with one plane. Verdict: HOLDS. Lemma M (a) above corrects only the Reading under it (the minimum set at L <= 2), not Lemma V.
+
+### 7.5 What Steps 5-7 say together (ARGUED)
+
+Any proof of (N-phys) contains one of two inputs.
+
+1. A one-scale input at order-one coupling that separates the Wilson trajectory from K7. This is (K-one) at the exit of the band (row 998 6b; `parts/gap.md` L41-50).
+2. A neutral level flow whose rate on the band has the size that a massive level has (7.3). This restates the gap.
+
+The index engines of Step 5 do not supply either. They carry the twist ratio (the flux half) and the theta channel (one neutral channel, bound by products). So the reason a (K-flow) for the neutral half has no margin is now explicit: the asymptotic-freedom sign is a zero-mode count only on self-dual sector weights, and every other neutral quantity is slaved to the running coupling at order g^2 per doubling.

@@ -83,3 +83,31 @@ number (K7, Proposition V); the gap is a property of the unique continuum object
 (K-flow) tool (`parts/gap.md` test table, point 5); the neutral half is not implied by the charged half.
 
 Verdict (GUIDE): a seventh plain-brief screening, about thirteen more candidates, no route off the lane's map.
+
+## Step 2. Choice of attack
+
+### 2.1 What is left to attack (ARGUED; the lane's reading, confirmed)
+
+1. The only statement with a consumer on the path is (N-phys). Its engine (Theorem S, rows 697-699) carries a
+   small neutral trace from one size to larger sizes. No engine creates the small trace: in a small box the
+   neutral trace is large (a hot gluon gas), and it has to become small at about K correlation lengths.
+2. The posted two-dimensional proofs create it in two halves. The charged half is the bracket gain. The neutral
+   half is association of the untwisted linear-weight ferromagnet. The gauge theory has neither a rigid frame
+   nor association. Rows 1011-1018, 1115-1123, 1188-1195 hold this with proofs of each obstruction.
+3. So a row can do three things: a new mechanism for one half (none found here, Step 1.2), a bound with no
+   association for a neutral response in a member of (SING) (the reopen condition of BR-2), or a decision on a
+   side statement that an earlier row left open.
+
+### 2.2 The item
+
+I found no new mechanism. By rule 0a I do not attack the items of Step 1.2 again. I take the third kind, and
+only one bounded item: the diamagnetic comparison for S^3 sheets with one-sided twists. Row 1194 5.1 records it
+as "neither proved nor on file"; method 36 (rows 1139, 1140) settles the two-sided form by a counterexample.
+What it can give: the answer to that recorded question, in three parts (unnormalized; normalized for charged
+two-point functions; neutral covariances). What it cannot give: any step toward (N-phys). It is off the path,
+and I say so before starting.
+
+Pass and fail criteria of the guide run, written before the run: on four small graphs (triangle, square with
+a diagonal, K_4, a five-site bridge graph), at four couplings, compare abs(E_g[n_x conj(n_y)]) under one-sided
+twists g (a centre twist, two anticommuting twists, two Haar-random fields) with the untwisted E_1[<n_x, n_y>].
+A violation is a difference above 6 standard errors and above 0.004. A run without a violation is no proof.

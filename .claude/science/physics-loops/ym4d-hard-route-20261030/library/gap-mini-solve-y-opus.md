@@ -73,3 +73,59 @@ proof of (K_3-N) is a mechanism, not a step of the chain; I accept that and say 
 What would change on success: the lane would have its first neutral conversion with no association, which is the
 missing kind of step in 1.2. On failure: the first failing step of a fourth way, so the next row does not repeat it.
 
+## Step 2. A fourth way on (K_3-N), and where it stops (written 09:24Z by date -u)
+
+Setting and statement as in row 1194 (`library/gap-mini-solve-e-fable.md` 3.1, 5.2): planes k_0, k_1, k_2 in
+SU(2)^B on a rectangle B, sheets m_p = k_p^(-1) k_(p+1), density proportional to prod_p exp(beta E(m_p)),
+E(m) = sum over bonds f = <y, y'> of <m(y), m(y')>, <a, b> = (1/2) tr(a b^(-1)). (K_3-N): exponential decay of
+Cov(F, G) for F, G functions of m_0 on two bonds, invariant under m_0 -> a m_0 b, uniformly in B.
+
+**2.1 The gauge-fixed form (PROVED, elementary; a renaming of row 1194 Lemma D1, so not new).** The density depends
+on the planes only through the m_p, which are invariant under k_p(y) -> g(y) k_p(y) for one g(y) per site. Fix
+k_0 = 1 and write A = k_1, B = k_2, and for a bond f put a_f = A(y) A(y')^(-1), b_f = B(y) B(y')^(-1). Then
+m_0 = A, m_1 = A^(-1) B, m_2 = B^(-1), and
+
+  <m_0(y), m_0(y')> = Re a_f,   <m_2(y), m_2(y')> = Re b_f,   <m_1(y), m_1(y')> = (1/2) tr(A^(-1) B B'^(-1) A') = <b_f, a_f>.
+
+So the bond weight is exp(beta [<1, a_f> + <1, b_f> + <a_f, b_f>]) = exp((beta/2) |1 + a_f + b_f|^2 - 3 beta/2), where
+1, a_f, b_f are read as unit vectors of R^4. The fields a, b are flat SU(2) connections on B (products of their
+values around each plaquette of B are 1), and every pair of flat connections on the rectangle arises this way.
+This is the bilinear form exp((beta/2)|Psi(y) Psi(y')^*|^2) of D1 with Psi = (1, A, B). The neutral observable of
+(K_3-N) is a function of Re a_f. The residual rigid group is (a_0, a_1, a_2) acting by A -> a_0 A a_1^(-1),
+B -> a_0 B a_2^(-1).
+
+Every manipulation I tried from this form lands on a way of row 1194: integrating out B given A gives the twisted
+sheet of C4 (e) (Way 2); the Gaussian identity for exp((beta/2)|.|^2) gives D1 (the fourth form there); the
+character expansion of the three-vector weight gives the flux gas of C2 (Way 3); and Re a_f + Re b_f + <a_f, b_f> is
+not of Ginibre type (D2; Way 1). So this is not a fourth way. It is recorded only because the flat-connection
+reading makes the next check short.
+
+**2.2 What the conditional frustration does at Gaussian order (GUIDE; a perturbative reading, not a bound).**
+Row 1194 Way 2 stops because the twist field of the conditional sheet is frustrated by commutators of order 1/beta per
+plaquette, of order one on blocks of side about beta, far below the mixing length s(beta). One might hope that this
+frustration itself kills neutral correlations at scale beta. It does not, at least not at Gaussian order. Write
+A = exp(X), B = exp(Y) with X, Y small in su(2) = R^3 and d the lattice gradient. To second order,
+Re a_f = 1 - |dX_f|^2/2, Re b_f = 1 - |dY_f|^2/2, <a_f, b_f> = 1 - |dX_f - dY_f|^2/2, so the weight is
+exp(-(beta/2) sum_f Q(dX_f, dY_f)) with Q(u, v) = |u|^2 + |v|^2 + |u - v|^2. Q has matrix [[2, -1], [-1, 2]] (times
+the identity on R^3), eigenvalues 1 and 3: six massless Gaussian modes, with no frustration term at this order
+(the commutators enter at third order). The neutral observable Re a_f = 1 - |dX_f|^2/2 then has covariance of order
+1/(beta^2 r^4) at distance r: a power law on every scale where the expansion is valid. So the neutral sector of K_3
+is massless to all orders of the spin-wave expansion, and (K_3-N) is a statement at the non-perturbative scale
+s(beta), like the singlet gap of the O(4) model itself. The commutator frustration of Way 2 is a cubic effect
+in this expansion. It is not a mechanism for decay at scale beta.
+
+**2.3 How the posted 2D proofs reach the neutral sector, and why neither route exists here (ARGUED; cited).**
+- OpenAI's O(3) continuum paper reaches the full transfer gap through a ferromagnetic correlation inequality: "the
+  spin two-point function detects the full transfer gap (covariance of even monomials bounded by the square of the
+  largest spin correlation, on any finite ferromagnetic graph)" (row 1010, `library/prior/gap-o3-continuum-rg-read-opus.md`
+  L210). The O(4) paper reaches singlets by association (row 1009; row 1194 2.2).
+- K_3 has neither: its energy is not of Ginibre type in sheet or plane coordinates (D2, Lemma HF of row 1188). For
+  4D Wilson SU(2), association of link coordinates is empty by Elitzur's theorem (row 1194 2.2), and positive
+  surface expansions grow with the volume (method 35). In 4D the charged objects are Wilson lines, not local
+  fields, so even the form of the 2D inequality has no direct analogue.
+
+**2.4 Stop.** By the stop rule of row 1194 2.3 (three ways failed at one statement), and since the attempted fourth
+way is a renaming, I stop on (K_3-N). The statement where it stops is (N-tw) of row 1194 5.4, unchanged. What 2.2
+adds: (N-tw) cannot be reached by a perturbative frustration argument; it needs the same non-perturbative input at
+scale s(beta) as the O(4) singlet gap, with no ferromagnetic inequality to carry it.
+

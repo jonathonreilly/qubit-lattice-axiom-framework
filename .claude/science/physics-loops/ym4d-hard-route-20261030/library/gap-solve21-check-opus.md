@@ -245,3 +245,66 @@ Fourier inversion on Z/n gives n int 2 sinh(2E) dmu_eta = a + 2b cos eta. e^{2E}
 ||T^{-1} u_0|| = ||A_f psi|| < infinity. d_{beta,n} > 0 since psi > 0 a.e. makes f psi != 0 and the vacuum is simple.
 Since 2 sinh E cosh E = sinh 2E and n int 2 sinh E dmu_eta = d_{beta,n} by (22), the mean of cosh E under the stated
 probability measure is (a + 2b cos eta)/(2 d_{beta,n}). Correct.
+
+## Step 5. The infrared estimates (30)-(35) (done 2026-11-20T01:47Z, date -u)
+
+Inputs: (21) and its per-eigenvector form (Step 4); row 1161's band proof of (20) and its positive-kernel estimate
+(`gap-solve9-astra62.md` L283-304, checked HOLDS as S24 of row 1162); PL5 with all three tangential directions
+(outline L3311-3318, "E >= kappa |eta|_infinity").
+
+**S46, L330-340, (30) definitions and detailed balance: HOLDS.** Total mass (1/Z) sum_a lambda_a^L ||f e_a||^2 <= 4.
+Moments: on the n^3 x L torus, Z = Tr(P_gauge F^L) and nu_{L,n}(f tau_{t e_0 + x} f) = (1/Z) sum_{a,c} lambda_a^{L-t}
+lambda_c^t |f_{ca}|^2 e^{i (P_c - P_a).x}, which is int e^{-tE + iP.x} drho with E = log(lambda_a/lambda_c). Swapping
+a, c sends the atom (E, P) to (-E, -P) and multiplies its weight by (lambda_c/lambda_a)^L = e^{-LE}. Complex
+conjugation commutes with F (real kernel), with real f and with translations, and reverses momenta; rho is basis
+independent, so rho(dE, -dP) = rho(dE, dP).
+
+**S47-S48, L342-348, first bound of (30): HOLDS.** int e^E drho = (1/Z) sum_a lambda_a^{L+1} <f psi_a, F^{-1} f psi_a>
+(any eigenbasis of F), and D^{-1} psi_a = C v_a/lambda_a gives <f psi_a, F^{-1} f psi_a> = lambda_a^{-2}
+||C^{-1/2} f C v_a||^2, hence the displayed Z^{-1} sum_a lambda_a^{L-1} ||B_f v_a||^2. Row 1161's band estimate is an
+operator inequality B_f^* B_f <= C_A^b C prod_e exp(C_A l_e/sqrt beta) <= (4 C_A)^b C prod_e m_{l_e}(y) =: K (both are
+functions of the commuting degree operators and C; m_l(y) >= e^{ly/2}/4). The kernel of K is a product of Haar-averaged
+complex-shifted Wilson kernels; I re-derived Re tr(g V H_y V^{-1})/2 = cosh(y) tr(g)/2 for g in SU(2) (the sinh-part
+is i a.n), so |K(u,v)| <= (4 C_A e^{beta(cosh y - 1)})^b C(u,v) =: K_A^b C(u,v), with beta(cosh y - 1) bounded for
+y = 2 C_A/sqrt beta, beta >= 1. Then sum_a lambda_a^{L-1} <v_a, K v_a> = Tr(K M), M = D F^{L-1} P_gauge D with a
+nonnegative continuous kernel (L - 1 >= 1); Tr(K M) <= int int |K(u,v)| M(v,u) <= K_A^b Tr(C D F^{L-1} P_gauge D)
+= K_A^b Tr(F^L P_gauge) = K_A^b Z. Correct; no sign of an excited eigenfunction is used.
+
+**S49, L350-358, (31): HOLDS.** On E < 0, rho(-E', P) = rho(-E', -P) = e^{-LE'} rho(E', P) (both symmetries of (30)),
+so the signed integral of 2 sinh E at momentum P is W_{L,n}({P}); total mass <= int e^E drho <= K_A^b. The Fourier
+coefficient at displacement x is (1/Z) sum_a lambda_a^L [<f psi_a, (F/lambda_a)^{-1} f_x psi_a>
+- <f psi_a, (F/lambda_a) f_x psi_a>] for a real eigenbasis of F; each bracket vanishes by the proof of (21) with psi_a,
+lambda_a in place of psi, lambda (it uses only reality and D^{-1} psi_a = C v_a/lambda_a), when f and f_x have disjoint
+links. Absolute convergence: Cauchy-Schwarz with the first bound of (30), and Young for the forward sum. At most b^2
+displacements share a link; inversion on (Z/n)^3 gives (31).
+
+**S50, L362-366, (32): HOLDS.** Tails: rho_n(E > R) <= K_A^b e^{-R}; int_{E<-eps} e^{-tE} drho_n
+= int_{E>eps} e^{-(L-t)E} drho_n <= 4 e^{-(L-t) eps}. So weak limits (in s = e^{-E}) live on E >= 0, their moments
+e^{-tE + iP.x} are the limits of the torus correlations, i.e. the infinite-volume correlations nu(f tau f) =
+<[f]_0, T^t U^x [f]_0> (theta_0 f = f for a time-zero f), and Stone-Weierstrass on [0,1] x T^3 identifies the limit
+with mu_f. For continuous phi(P) >= 0 and an energy cutoff chi in C_c((0, infinity)), 0 <= chi <= 1, the bounded
+continuous integrand passes to the limit, 1 - e^{-LE} -> 1 uniformly on supp chi, (31) and Riemann sums give
+int chi 2 sinh E phi dmu_f <= b^2 K_A^b int phi dP; monotone convergence in chi gives (32).
+
+**S51, L368-376, (33): HOLDS.** On s < E <= 2s the PL5 carrier puts P in {max_i |P_i| <= 2s/kappa}, of Haar probability
+<= C s^3, and 2 sinh E >= 2s; (32) gives mu_f(s < E <= 2s) <= C b^2 K_A^b s^2; dyadic summation gives the first line.
+E = 0 forces P = 0 by PL5. Layer cake: int_{E>0} e^{-tE} dmu_f = int_0^infinity t e^{-ts} mu_f((0, s]) ds
+<= C b^2 K_A^b t^{-2} + 4 e^{-t} for t >= 1, and the total mass 4 at t = 0. This is (33) (with K_A >= 1).
+
+**S52, L378-384, (34): HOLDS.** sum_{t in Z} e^{i t p_0} e^{-|t|E} = sinh E/(cosh E - cos p_0); the series converges in
+total variation by (33) at x = 0; PL5 gives cosh E - 1 >= max_i (1 - cos P_i) >= (1/3) sum_i (1 - cos P_i), so the
+kernel is <= 3 sinh E/[(1 - cos p_0) + sum_i (1 - cos P_i)], and (32) bounds int_{E>0} sinh E dmu_f by
+(1/2) b^2 K_A^b dP. (32) also shows the E > 0 part has no atom at P = 0. Correct as a measure statement.
+
+**S53-S55, L390-399, (35) and the exact contact in the limit state: HOLD.** Kernel: (A_f F)(u,v)/F(u,v)
+= D^{-2}(u) [f-hat(D^2 C(., v))](u)/C(u,v) = (f-hat r)(u_S)/r(u_S), where r is the product of the plaquette factors
+of D^2 meeting S and the link kernels on S, with spectators and v_S as parameters; this is a compact family in C^infinity
+with positive infimum at fixed beta, and GL5 continuity bounds f-hat r uniformly; only local factors enter, so the
+constant is volume-free (for supports that do not wrap). Second moment: F A_f = f F on smooth functions gives
+A_f psi_a = lambda_a F^{-1} f psi_a, so int e^{2E} drho = Z^{-1} sum_a lambda_a^L ||A_f psi_a||^2
+= Z^{-1} Tr((A_f F) F^{L-2} P_gauge (A_f F)^*), and the absolute kernel bound with a nonnegative middle kernel gives
+<= C(beta,f)^2 Tr(F^L P_gauge)/Z = C(beta,f)^2. With this, int_{E>R} e^E drho_n <= C^2 e^{-R} and
+int_{E<-R} e^{-E} drho_n <= 4 e^{-(L-1)R}, so 2 sinh E e^{iP.x} is uniformly integrable and the signed Fourier
+coefficients pass to the limit; mu_f has no atom at E = infinity. The coefficients vanish off the finite overlap set,
+so int_{E>0} 2 sinh E dmu_f(E, dP) has a trigonometric-polynomial density; for a 23-plaquette the overlapping translates
+are 0, +-e_2, +-e_3 (shared 3-links and 2-links), and the coefficients are real and even. Correct.

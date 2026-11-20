@@ -11,7 +11,9 @@ GUIDE (numeric or heuristic evidence, never a proof step), OPEN.
 
 - 2026-11-20T02:01Z start. Pinned commit 35f40c473. Read GOAL.md, FINISH.md L1-84 and row 1197 (L1278). File created.
 - 2026-11-20T02:28Z Section 1 written (record and first screening). Attack not yet chosen; Section 2 will state it.
-- 2026-11-20T02:48Z arXiv probe done (four abstract queries, newest first; newest relevant record 2026-11-15): no posted weak-coupling gap or confinement result for a non-abelian lattice gauge theory in four dimensions. Attack chosen: port of the Ding-Huang-Yang mechanism (Section 2).
+- 2026-11-20T02:48Z arXiv probe done (four abstract queries, newest first; newest record returned 2026-11-15): no posted weak-coupling gap or confinement result for a non-abelian lattice gauge theory in four dimensions. Attack chosen: port of the Ding-Huang-Yang mechanism (Section 2).
+- 2026-11-20T02:51Z Lemma G2 and the phase table of 2.3 checked numerically (GUIDE; 200 random plaquettes, five identities, largest error 4.4e-16; pure Python under the numeric lock, memory 60 percent free). Sections 2.5 and 3 written.
+- 2026-11-20T02:52Z Section 2.6 added: the first failing step as one statement (GC), three ways, each with its failing clause. RESULT line updated. File complete.
 
 ## 1. Repo search and where the record stands (GUIDE: statements about the record, not evidence)
 
@@ -102,9 +104,10 @@ The three structural inputs of their proof, in this language:
   fixed point, no mechanism. This is the one place where N > 2 enters (digest L71-74).
 - (S2) **A free collective coordinate.** Below the correlation length a block has an orientation n in S^2. By
   the global symmetry its law is uniform, at every scale and under free or symmetric boundary conditions. So
-  with a probability fixed by a solid angle (a power of 1/beta, not exp(-c beta)) the block points so close
-  to a pole that the conditional XY couplings across it are of order one instead of order beta. That is a
-  "good box" (their Definition 5.4), and its probability does not depend on the scale.
+  with a probability fixed by a solid angle the block points so close to a pole that the conditional XY
+  couplings across it are of order one instead of order beta. That is my reading of a "good box" (their
+  Definition 5.4). Its probability does not depend on the scale. Heuristically it is a power of 1/beta;
+  their proved constant c_5 is not explicit (digest L63).
 - (S3) **A conditional abelian model with positive couplings**, so that spin-wave bounds (McBryan and Spencer)
   and positive association hold for it under every boundary condition.
 
@@ -151,15 +154,20 @@ block at the pole. So input (S1) has a gauge form. It fails as a mechanism for t
 ### 2.3 Gauge translation 2: the one-form twist has no fixed point structure and no rigid form
 
 The twist whose cost is scale invariant in four dimensions is a one-form twist: shift the diagonal phase,
-(z_l, w_l) -> (e^(i alpha_l) z_l, w_l). By Lemma G2 (c) its cost is beta prod cos(a_l) [1 - cos(d alpha)_p] from
-the first monomial, plus six terms in which alpha enters through sums over two links, not through d alpha.
-Those terms are a mass form with coefficient of order beta |w|^2, which is of order one in a smooth gauge
+(z_l, w_l) -> (e^(i alpha_l) z_l, w_l). By the expansion in Lemma G2 (c) its cost is
+beta |z_1 z_2 z_3 z_4| [cos(Phi_p) - cos(Phi_p + (d alpha)_p)] from the first monomial, with Phi_p the phase of
+z_1 z_2 conj(z_3 z_4), plus six terms in which alpha enters through sums over two links, not through d alpha
+(phases alpha_1 + alpha_2, - alpha_3 - alpha_4, alpha_1 - alpha_4, alpha_1 + alpha_3, - alpha_2 - alpha_4,
+- alpha_2 + alpha_3, in the order of the display; the fourth monomial does not change).
+Those six terms are a mass form with coefficient of order beta |w|^2, which is of order one in a smooth gauge
 at every beta (ARGUED: |w|^2 is of order 1/beta per link). This is the frame defect of row 1011 (Lemma FR)
 and the covariant-Laplacian gap of row 1141. The mass form is removed only when the off-diagonal field
 re-adjusts at all finer scales, which is a renormalization statement and not a map. A rigid form (a twist
-that is a symmetry of the cell) exists for the centre only: Lemma CEN+ of row 1016. So (S1) holds for Z_2 and
-for nothing continuous. The conditional Z_2 model given the SO(3) data has couplings (beta/2) |tr U_p| of order
-beta, so it is rigid at weak coupling, and thick vortices live in the SO(3) data (rows 1155-1175).
+that is a symmetry of the cell) exists for the centre only, in the class of link-wise maps that keep every
+plaquette trace: Lemma CEN+ of row 1016, with the scope set by check 1020. So (S1) holds for Z_2 and, in that
+class, for nothing continuous. ARGUED: the conditional Z_2 model given the SO(3) data has couplings
+(beta/2) |tr U_p| of order beta, so it is rigid at weak coupling, and thick vortices live in the SO(3) data
+(the adjoint-only forms of rows 1155-1175).
 
 ### 2.4 Gauge translation 3: the free collective coordinate is missing, and this is the first failing step
 
@@ -180,13 +188,13 @@ Two remarks that qualify the statement.
   beta, not exponentials (row 1143: D_beta(n) = (3/2) log beta + log log beta + constant; the doubling defect
   (45/2) log beta). A twisted sector is the gauge form of a good box: with twist eaters every gluon mode has
   energy at least pi/L, so the sector is massive at its own scale. But a twist sector is a boundary condition
-  of the whole torus, not a local event of a cell, and reflection positivity relates cells to tori of the same
-  size only. At the lane's aspect ratio (time n, space 2n) the twisted free gluons alone give an excited sum
+  of the whole torus, not a local event of a cell, and the chessboard estimate relates a cell only to the
+  torus built from its own reflections. At the lane's aspect ratio (time n, space 2n) the twisted free gluons alone give an excited sum
   of about 8 e^(-pi/2) = 1.66, far above every blind threshold. So this gives no seed (GUIDE: one-line
   arithmetic, two colours with momentum pi/L in one direction, two polarizations, two signs).
 - Even a lower bound exp(-c/g^2(L)) on the probability of a smooth deformation at scale L is not on record:
-  superposing a smooth field on a rough one costs the frame defect of 2.3 at every link of the core (row 1177
-  (33)-(35), the obstruction to spreading a twist). Only defects whose far field is a gauge function are
+  superposing a smooth field on a rough one costs the frame defect of 2.3 at every link of the core (the
+  obstruction to spreading a twist, row 1177 (33)-(35) as cited in the repo search of row 1179; not re-read here). Only defects whose far field is a gauge function are
   cheap, and then the cost sits on the singular set of that function: points for pi_3 (lattice-scale lumps,
   cost of order beta), sheets for the centre (thin vortices, cost of order beta per plaquette).
 
@@ -195,3 +203,92 @@ with (i) probability bounded below uniformly in L between first passage and xi, 
 arbitrary outside data or in the chessboard sense, and (ii) a neutral consequence: given G_L, the influence of
 the outside on the inside of the cell is reduced by a fixed factor. For O(3), (i) is the solid angle and (ii)
 is Lemma G1. For the gauge theory I found no candidate for (i) that is not exponentially small in 1/g^2(L).
+
+### 2.5 What the port would give if (i) were supplied: the charged half only (ARGUED)
+
+Ding, Huang and Yang prove decay of spin correlations, which are charged under the global group. The digest
+records that the step to all local observables is not in their paper (bridge B3,
+`prior/gap-2don-proofs-read-opus.md` L115-121), and row 1193 records the same for OpenAI: the neutral half
+of the O(4) proof comes from a positivity structure, not from the twist. In the gauge theory the charged
+objects of the only rigid symmetry are Wilson loops, so a complete port would give an area law. The lattice
+statement that the Jaffe-Witten gap clause needs is (N-phys), which is neutral (row 1179). So this attack,
+carried through, would still stop at the charged-to-neutral step that failed three ways in row 1084.
+
+A side remark on transitivity (ARGUED; "transitive" occurs in 48 lane files, so this is a reading, not a new
+statement). In the spin models every change of a boundary pin is a site-dependent rotation, because the
+group acts transitively on the fibre. That does not make the neutral influence of a pin a twist response:
+for a neutral f at the centre, the derivative of its pinned mean along a path of pins is a covariance of f
+with boundary spins, and conditioning on a middle shell returns the neutral dependence of E[f | shell] on
+the shell. So charged decay uniform over pins does not give neutral mixing by this route. In the gauge
+theory the link-wise left multiplications act transitively on the boundary data, and the same circle
+appears one step earlier, because only the gauge directions are free.
+
+### 2.6 The first failing step as one statement, attacked three ways (all ARGUED)
+
+**(GC), the good-cell statement the port needs (OPEN).** There are c_0 > 0 and theta < 1 such that for every dyadic
+scale L between the first-passage scale and the correlation length xi there is an event G_L of the links of a
+cell of side L with (i) P(G_L | outside data) at least c_0 for every outside data (or the same in the
+chessboard sense), and (ii) on G_L the dependence of the conditional law of a concentric cell of side L/4 on
+the data outside the cell contracts by the factor theta, for local gauge-invariant observables.
+
+For O(3), with "local gauge-invariant" replaced by "charged under U(1)_z", (i) is the solid angle and (ii) is
+Lemma G1. Three ways to supply (GC) for the gauge theory, and where each stops:
+
+1. **Deformation events** (a thick vortex through the cell, a lump, a large-field cell). (ii) is plausible. (i)
+   fails: the classical action is of order 1/g^2(L), so the probability is at most of order exp(-c/g^2(L)),
+   and row 1177 shows that even this lower bound is not available by superposition. First failing step: (i).
+2. **Small-field events** (the cell is flatter than typical by a fixed factor at scale L). (i) holds with a
+   probability that is a power of the factor, uniformly in L, at Gaussian order. (ii) fails: at Gaussian order
+   the response of the inner cell to outside data is linear with a kernel that does not depend on the
+   configuration, so no event changes it; a flat cell transmits. A good-cell effect is therefore at least first
+   order in g(L). First failing step: (ii).
+3. **Orientation events between scales** (the colour direction of the dominant field at scale L/2 relative to
+   the one at scale L; gauge invariant, and uniformly distributed at leading order because the two scales are
+   independent at Gaussian order). (i) holds by a solid angle. (ii) holds only with theta_L = 1 - O(g^2(L)):
+   the interaction of the two scales changes the response at relative order g^2(L), which is the one-loop
+   shift of the stiffness (the paramagnetic and diamagnetic terms of Nielsen and Hughes) and not a cut. The
+   product over the scales j = 1, ..., J of 1 - c g^2(L_j), with g^2(L_j) of order 1/(2 b_0 j log 2), is a
+   power of J, the logarithm of the scale ratio. So this gives a power of a logarithm, not a decay.
+   First failing step: theta is not uniform.
+
+**Why O(3) differs (the content of the comparison).** There the conditional abelian couplings beta rho_u rho_v
+are exactly zero at the fixed points of the twist group. This is a kinematic fact at every scale, not an
+effect of the interaction strength. Lemma G2 gives the same kinematic fact for the link-wise colour rotation,
+but its charged observables are gauge-variant. For gauge-invariant observables the only kinematic twist is
+the centre, and its couplings (beta/2) |tr U_p| are far from zero at weak coupling. So in the gauge theory a
+cut can come only from the interaction, at relative order g^2(L) per scale: (GC) holds, if at all, with cells
+of the size of the correlation length. That is the wall in the form (K-one).
+
+## 3. Outcome of this row
+
+**Numeric check (GUIDE only).** `g2check.py` in a scratch folder, pure Python, one second, under the numeric lock
+(holder row1197-g, memory 60 percent free). It tests Lemma G2 (a), (b), (c) and the phase table of 2.3 on 200
+random plaquettes: largest error 4.4e-16; the diagonal case changes by 5.6e-17. It proves nothing.
+
+**What this row established.**
+
+- PROVED (elementary, checked by no one): Lemma G1 and Lemma G2. Lemma G2 is the corner structure of row 1013
+  in Hopf coordinates; its only added content is the reading as the exact analogue of the O(3) twist.
+- ARGUED: the Ding-Huang-Yang mechanism rests on (S1) a rigid twist with fixed points, (S2) a free collective
+  coordinate with a scale-independent law, (S3) a conditional abelian model with positive couplings. In the
+  pure SU(2) gauge theory (S1) has a zero-form analogue with the wrong dimension count and a rigid one-form
+  analogue for the centre only; (S3) fails (frustration); (S2) is the first failing step: a cell that is a
+  ball has no free coordinate, so every decoupling event at scale L costs of order 1/g^2(L). The step is
+  stated as (GC) in 2.6 and attacked three ways (deformation events, small-field events, orientation events
+  between scales); each stops at a named clause.
+- ARGUED: a complete port would give the charged half (an area law), not (N-phys).
+- GUIDE: fifteen routes derived blind are on the map (Section 1). The operator Jensen bound for the
+  Faddeev-Popov operator, which I derived as a candidate "exact inequality that fails for U(1)", is idea B9 of
+  row 1032 (`gap-afield-b-max.md` L172-175, L236), with the same U(1) remark and no consumer.
+- GUIDE: arXiv to 2026-11-15 shows no posted weak-coupling gap or confinement result for a non-abelian lattice
+  gauge theory in four dimensions.
+
+**What stays open.** (N-phys); the continuum datum of the T0 chain; (BS) and (W); the mass gap. No proof and no
+disproof. No statement of the lane was refuted.
+
+**For the lead (one requirement, not a new route).** The port of either posted 2D proof needs a family of cell
+events with a scale-uniform lower bound on their probability between first passage and the correlation
+length, each with a neutral consequence (2.4, last paragraph). The registry holds no candidate. A row that
+proposes one should state its probability at first passage first: if it is exp(-c/g^2(L)), it is the wall.
+
+RESULT: Claude Fable 5.2 max, Mac mini worker, row 1197, 2026-11-20 02:01Z-02:53Z, plain brief; author only, checked by no one. The mass gap is NOT proved and nothing is disproved; (N-phys), the continuum datum, (BS), (W) stay OPEN. A seventh screening found fifteen blind routes on the lane's map (among them the operator Jensen bound for the Faddeev-Popov operator, which is B9 of row 1032). Attack chosen: a port of the Ding-Huang-Yang mechanism, which the lane had tabulated but not ported. PROVED by hand, elementary: Lemma G1 (exact cost of the O(N) twist, carried by bonds with non-zero planar radius) and Lemma G2 (the link-wise colour rotation is its exact gauge analogue: fixed points at diagonal links, cost through differences of the angle around each plaquette, eight-monomial phase table; the corner structure of row 1013 in Hopf coordinates). ARGUED: the port fails first at the free collective coordinate: an O(3) block has an orientation with a scale-independent law, a gauge cell that is a ball has none, so every decoupling event at scale L has probability of order exp(-c/g^2(L)) and the multi-scale step has no input (stated as (GC) and attacked three ways in 2.6: deformation events fail the probability clause, small-field events fail the contraction clause, orientation events between scales give a contraction 1 - O(g^2(L)) and so only a power of a logarithm); the zero-form twist has the wrong dimension count (Lemma PC), the one-form twist carries the frame defect (rows 1011, 1141), the rigid twist is the centre only (Lemma CEN+), and a complete port would give an area law, not the neutral bound. GUIDE: a one-second identity check passed; arXiv to 2026-11-15 has no supplier. Output library/gap-mini-solve-g-fable.md.

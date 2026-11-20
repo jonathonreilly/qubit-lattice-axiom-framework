@@ -208,3 +208,79 @@ is the near-Haar property of long straight transports (B's own Section Q; the la
 the massless Villain U(1) theory on bounded tori (Proposition U), and by Lemma NULL the content of B's route must enter
 its split inequality at the scale where the straight transports stop carrying the smooth field, which shrinks to zero
 in physical units. The row's attack therefore goes back to the lane's own open statement (Section 3).
+
+Registry note for Section 2 (grep of library/open-core.md and the FINISH rows before calling anything new): no hit
+for "near-Haar", "straight holonom", "Corollary 166", "BP(n" in open-core.md. The near-Haar mechanism itself is on
+file (row 1145 (1)-(4), checked HOLDS by row 1146; row 1215 L468-474, check row 1221 pending) and is B's own
+(Section Q). The Holley-Stroock comparison is on file as a method (row 713 literature list; row 818 used it for a
+(Z/2)^4 factor). B's Remark 155 already states the non-selectivity of (H1). What this row adds: the density-comparison
+route to a Corollary-166-type bound (Corollary H1), the Villain U(1) version on bounded tori (Proposition U), and
+Lemma NULL (the split inequality at a near-Haar step contains the finer-level Poincare inequality on functions of W).
+
+## 3. The attack after Section 2
+
+### 3.1 GUIDE check of Section 2 (numeric; not a proof step)
+
+- 2026-11-20T04:31Z (date -u), under the numeric lock (holder pfable-opus, memory 59 percent free, seconds of run time; script in a
+  scratch folder, not committed). Proposition U (a), tested: for 200 random shift sets (phi_1, ..., phi_6) at each of
+  beta = 0.3, 1, 3, 10, 40, the normalised density prod_i V_beta(theta + phi_i) on 8192 points, Fourier modes m = 1..5.
+  Pass criterion set before the run: max over trials and m of |c_m| exp(m^2/(12 beta)) - 1 <= 1e-9. Result:
+  -9.2e-2, -6.9e-6, -5.0e-15, +4.4e-16, +6.7e-16 (the last two are rounding). PASS. The bound is attained at large
+  beta (the mixture of Proposition U (a) concentrates on one wrapped normal), so the constant 1/(12 beta) is sharp.
+- SU(2) single-link ratio I_2(B)/I_1(B) at B = 0.1, 1, 6, 30, 120: 0.0250, 0.2402, 0.7627, 0.9504, 0.9875, below
+  B's 2B/(2B + 3) (Lemma 158) and below row 1145's exp(-1/(1 + B)) at every point. Consistent.
+
+### 3.2 Which open statement is attacked, and where this row stops
+
+The row's plan (Section 1, question 2) was to attack one open statement with a consumer after Section 2. Two
+reductions were made in Section 2, and neither closed:
+
+1. B's weak-coupling route reduces to its ascent (H2): (H1) is free near Haar and non-selective (B's Remark 155;
+   Corollary H1; Proposition U).
+2. (H2) at the first near-Haar step reduces to the finer-level Poincare inequality itself on functions of W (Lemma
+   NULL), that is to BP at the physical scale, which B lists as not proved and which needs the gap (B, p. 4: for a
+   Gaussian field it holds at a fixed physical scale exactly when the field has a mass, Proposition 186).
+
+After two reductions with no closure the rule is to stop and report (FINISH.md, How we work, item 4). The statement
+both reductions end at is the same physical-scale estimate that every route needs:
+
+| Route | The open estimate at the physical scale | Where it is stated |
+|---|---|---|
+| this lane | (N-phys): exists L, j_0, and for all j >= j_0 some u_j in [3, n_j/K] with s_(+,j)(u_j; n_j^3) <= 1/2 | row 1161, `gap-solve9-astra62.md` L146-148; equivalents (26), (28), Q, wall test: rows 1186, 1192, 1204, 1211 |
+| A | A-B* along beta_(N,p) -> infinity with T_0/N bounded, plus the construction input (W) | row 1218 L81-91, L118 |
+| B | (H2)/(S) with constants bounded in product, or BP(n_k, w) with n_k a_k <= ell directly; by Lemma NULL the content sits at and below the near-Haar step | B Corollary 102, Theorems 66, 84; this file 2.4 |
+| C | COH, TUN, SPEC with volume-uniform controls (SPEC only as a weak-coupling hypothesis, 2.5) | row 1218 L226-242 |
+
+I did not run a fresh list of blind candidates. Rows 1188-1219 (fifteen plain-brief rows of this model family) each
+did so and found every candidate on the lane's map; the lesson is recorded in Section 1 (Fable's text) and in the
+RESULT lines of rows 1197-1202. What would reopen an attack in this row's direction: a mechanism that (i) fails for
+Villain U(1) (B's Remark 155, lead rule W2 in `parts/gap.md`), (ii) acts at physical lengths well above the
+near-Haar length beta log(L/a) a, and (iii) reads smooth (block-average) variables, not long straight transports,
+whose positive-time readings carry no weight on bounded energy (row 1145 (4); row 1215 (29); Lemma NULL here).
+
+## 4. Summary
+
+- PROVED in this row (by Claude Opus 5.5, not yet checked by another model): Proposition H (near-Haar laws satisfy
+  BP(n, ((1 - delta)/(1 + delta))^2)), with B's Proposition 67(ii) re-proved by the Hoeffding decomposition; Corollary H1
+  (a Corollary-166-type bound on tori of side up to c_0 (1 + 6 beta_W)^(-1/2) exp((2^k - 4)/(16k + 36)), given B's Theorem
+  160 or row 1145 (3)); Proposition U (the Villain one-link law is a mixture of wrapped normals of variance 1/(6 beta);
+  the Villain U(1) block law satisfies BP(n, 1/2) on tori with 16 L^4 exp(-(b - 2)/(12 beta)) <= 0.154); Lemma NULL
+  (Var E[f | c] <= (delta/(1 - delta))^2 Var f on functions of W, so (S) at a near-Haar step contains the finer-level
+  Poincare inequality there); the remark that SPEC fails as an identity at beta = 0.
+- ARGUED: the near-Haar length tends to zero in physical units along the tuning, so the content of B's route sits at
+  and below it (2.4, last paragraph).
+- GUIDE: 3.1.
+- Cited, not re-derived: B's Theorem 160, display (19), Theorem 164, Corollary 166, Remark 155 (Bhattacharjee,
+  Bhattacharya, Lockwood, Romanov); row 1145 (1)-(4) with check 1146; Guth (1980) and Frohlich-Spencer (1982) for the
+  massless Villain U(1) phase (RECALLED); A and C only through row 1218.
+- OPEN: (N-phys) and its equivalents; A-B* along the tuning; B's (H1) on tori of every size and (H2); the matched
+  continuum construction; the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills.
+
+RESULT: Mass gap NOT proved, nothing disproved; (N-phys), the continuum datum and the gap stay OPEN. Row 1218's three
+published sources do not shorten the path: B's weak-coupling theorem (Corollary 166) is the near-Haar property of long
+straight transports, and its coarsest-scale input carries no gap information (B's own Remark 155). PROVED here by hand,
+unchecked: Proposition H and Corollary H1 (a Corollary-166-type BP bound by density comparison), Proposition U (the same
+bound for the massless Villain U(1) theory on bounded tori; one-link law = mixture of wrapped normals, sharp, GUIDE-tested),
+Lemma NULL (at a near-Haar step B's split inequality contains the finer-level Poincare inequality, so B's route needs BP
+at the physical scale). A's seed is the lane's full periodic seed type; Zeng's SPEC fails as an identity at beta = 0.
+Stopped after two reductions with no closure. Output library/gap-mini-solve-p-fable.md.

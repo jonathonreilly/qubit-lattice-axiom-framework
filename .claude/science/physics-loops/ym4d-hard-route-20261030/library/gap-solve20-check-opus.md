@@ -134,3 +134,119 @@ spectral subspace of U = F/lambda on [r,1], phi = U psi, ||psi|| <= ||phi||/r, a
 (multiplicative) approximation of every seam integral, of the neutral trace at time <= cn, and of every normalized
 level, by a strictly positive finite-alphabet model with degree O(log n); it moves no physical input: (4) is exactly
 as hard as the seed.
+
+## Step 3. Block B: rare-event criterion (37), its length and resolution bounds (L424-541), with dependencies
+
+Read in full: checked file L107-566. Dependencies of (37) checked here first (they are also block D items):
+
+**B0a. (9), L152-163. HOLDS.** z_beta <= C(1+beta)^{-3/2} from density (2/pi) sin^2 theta and 1 - cos theta >= 2 theta^2/pi^2
+(sin y >= 2y/pi). Column argument: a direction mu with <= |A|/4 links of A is held fixed; in each nu-column (a cycle
+of length >= ell along mu) each non-root A-link is assigned the mu-nu face to its predecessor; assigned faces are
+distinct; discarded weights are <= 1 (normalized action); integrating from the far end, each link meets only its own
+retained face, giving exactly z_beta (Haar absorbs translation, inversion, sign). At most one link per all-A column is
+lost, so the exponent is >= (3/4)(1 - 1/ell)|A|, and z_beta <= 1. All exterior links fixed throughout.
+
+**B0b. (10), L165-170. HOLDS.** Upper: average (9) over labels and signs. Lower: all +I gives (s/2)^E; all Haar with
+a spanning tree gauged to I and the 3V+1 chords in the (1+beta)^{-1/2} cap gives (3/2)(3V+1) log(1+beta) + CE with
+bounded face action (angle <= 4(1+beta)^{-1/2}). Label concentration: the k-term bound
+binom(E,k) s^{E-k} z^{(3/4)(1-1/ell)k} against the matching lower bound gives a cost c E log beta away from the minimizing
+endpoint; binom <= 2^E is o(E log beta).
+
+**B0c. (12), L182-191. HOLDS.** D = supp(d sigma + t_g) is closed in the seam class; |Z^1(T^4; F_2)| = 2^{V-1} 2^4;
+H^2 = F_2^6 detected by the six coordinate 2-tori; a temporal seam for g pairs only with the tori T_{0i}, so the
+average over the 8 seams keeps exactly the D with zero pairing on the three spatial tori T_{ij}. Prefactor:
+s^E 2^{-E} 2^{V+3} (1/8) = s^{4V} 2^{-3V}. Faces off St(A) have weight 1 or e^{-2 beta}. Transfer positivity for mu_s:
+mu_s = nu * nu^{-1} with nu = (1 - sqrt s) sigma + sqrt s (delta_I + delta_{-I})/2 (checked: (1-sqrt s)^2 + 2(1-sqrt s) sqrt s = 1 - s).
+
+**B0d. Local expansion and (11), L175-180, L193-209. HOLDS.** Faces of one 3-cube have base vertices at sup distance
+<= 1, so cube equations hold per component; a face of St(A_1) cannot meet D_2 or St(A_2) at separation > 2; so the
+gas factorizes, positive and hard-core. j <= 7k + r (6 faces per Haar link). Activity <= (kappa z^{(3/4)(1-1/ell_0)})^k e^{-2 beta r}
+with kappa <= beta^alpha, base <= C beta^{alpha - (9/8)(1-1/ell_0)}, so <= beta^{-c(7k+r)} <= e^{-c j log beta} for beta >= beta_0.
+J = 10 x 5^4, J^{2(j-1)} connected sets, KP sum <= |gamma|, rooted-tree recursion T^{(k)} <= e^{|gamma|} correct. Short
+clusters (j < v/16) lift uniquely; a component with nonzero spatial pairing has the same pairing on every time slice,
+so >= v faces; P(polymer) <= activity. Then D_{0,s}(v) = Xi^restr_v / e^{v p_n} <= Xi_v / e^{v p_n} <= exp(C n^3 v e^{-mu v/16})
+for all n, v >= ell_0, and D >= 1 since the top eigenvalue is neutral. Energy bound by v-th roots. (KP itself is
+cited to the Sussman-Alpoge outline 1223-1356; I did not re-read it; the two-line recursion given is correct.)
+
+**B0e. (17), L283-294. HOLDS.** Z_s/Z_0 = E_T[Z(T)/Z_0]; forest pins have ratio exactly 1 (transitive site rotations);
+each further pin multiplies by a conditional one-link density <= C(1+6 beta)^{3/2} <= K, also after mixing over unfixed
+links and for any pin law; lower bound via FKG on <= V 8^l simple cycles of length l >= 4; upper bound
+E K^{b(T)} = sum over Z/K currents of s^{|supp|}, leafless connected supports have b <= l - 3, and
+K^{l-3} s^l = K s^4 (Ks)^{l-4}. The neutral seam average only takes a ratio of positive averages.
+
+**B0f. Smooth (11), L317-331. HOLDS** at the precision (37) needs. All-cap positive faces: |r_p| <= beta (4 eps)^2/2;
+negative: <= e^{-2 beta + C beta eps^2}; components of A, D, P (joining distance 4) read disjoint cap noises; signed
+activities obey the stated absolute bound; at s_hi the base is <= C - sqrt(log beta) + (9/8) log beta/ell <= -c sqrt(log beta)
+for ell >= 5 sqrt(log beta). The spatial restriction as 2^{-3} sum_chi chi([D]_spatial): small polymers have chi = 1, each
+Xi_chi = exp(convergent series) > 0, so the average keeps two-sided bounds.
+
+**B0g. (26), L401-411. HOLDS.** Upper: conditional face density e^{w y.U}/Z(w), w <= 6 beta. Lower: log Z(beta/2) - log Z(beta)
+<= C V + C(1 + V/ell) log(2+beta) <= C'V for ell >= log(2+beta); convexity of log Z (also for the seam-averaged sum,
+a single log-Laplace transform) gives E S <= 2C'V/beta; 1 - |x| is seam-invariant and translation invariant, so <= 2C'/beta
+per face; Markov puts the centre caps of radius M/sqrt(beta) at probability >= 7/8; on a 3/4 exterior set the caps have
+conditional probability >= 1/2, forcing 1 + w >= c_M beta; the two events intersect, so a central element lies within
+M/sqrt(beta) + D/sqrt(1+w) of y, where the conditional density is >= c_M (1+w)^{3/2}.
+
+Block B proper:
+
+**B1. (28), L426-430. HOLDS.** For a forest T the pinned seam integral equals Z^g_0 for every seam (root each tree,
+solve child frames); summing iid weights over forests gives Z_{neut,s} P_s = Z_{neut,0} B_s. The same transitivity, with a
+bounded gauge-invariant insertion, gives the product law of (T, orbit) on F.
+
+**B2. (29), L432-437. HOLDS.** A Haar-labelled link has a conditional density, so a cycle through it is central with
+probability 0; finitely many simple cycles; F = {no simple cycle has central holonomy} a.s., gauge- and flip-invariant,
+probability one under Haar Wilson. P_s^orb = P_s(F) P_0^orb + (1 - P_s(F)) Q gives <=, the event gives =.
+
+**B3. (30), L439-444. HOLDS.** Forest plus an isolated square with all 28 incident edges unmarked (the text's 32 is a
+harmless overcount); injective; weight ratio (s/(1-s))^4; pinned ratio (rho_p(I) + rho_p(-I))/2 = a_p + 1 (three pins
+plus the forest form a forest, the fourth pin reads the face density, pins' product is +-I with probability 1/2);
+FKG gives (1-s)^{32} given F; (26) gives a_p + 1 >= c beta^{3/2}. So P_s <= 1/(1 + c V beta^{3/2} s^4). Reverse: (17) and
+B_s >= e^{-C V s^4}. The V >> beta^{9/2} clause makes Ks -> 0 when V beta^{3/2} s^4 -> 0.
+
+**B4. (31), L446-456. HOLDS.** log Z_{neut,0} = log Z_{neut,s} + log P_s - log B_s; (11) at s = beta^{-alpha}; forest gas
+(vertex-disjoint trees, activity (s/(1-s))^j <= (2s)^j, decay alpha log beta) gives log B_s(v) = v b_s(n) + O(n^3 v e^{-c v log beta});
+D_{0,0}(w)^{1/w} -> 1 since D_{0,0} is nonincreasing and >= 1, so gamma_s = log lambda_0 - log lambda_s + b_s exists, and both
+identities follow. Purity inequalities (L392: (max p_i)^2 <= e^{-J} <= max p_i, vacuum p_0 = 1/D_0) give
+log D_0 <= J_0 <= 2 log D_0, hence the sufficiency and the converse via row 1161.
+
+**B5. (32), L458-463. HOLDS.** -log P_s = -log Z_{neut,0} - log B_s + log Z_{neut,s}; neutral (10) at s = 0 and at
+s = beta^{-alpha} (upper bound per seam from (9), lower bound Z_neut >= Z_ord/8); 0 <= -log B_s <= 4V s.
+
+**B6. (33), L468-480. HOLDS.** b(S) <= |S|/k for girth > R >= (2k)^4: a uniformly translated partition into boxes of
+side in [k, 2k] cuts each edge with probability <= 1/k and leaves an acyclic remainder. FKG gives P(S occupied | F_R) <= s^{|S|}
+and P(no long cycle | F_R) >= P(no long cycle). Every component of a current support inside a girth > R graph has
+>= R+1 edges. P^R/P = E[Z(T)/Z_0; F_R]/P(F) <= E[K^{b(T)} | F_R]/P(F | F_R). The exact TV identity follows from (29).
+
+**B7. (34), L482-489. HOLDS.** Perimeter 2(floor(R/2) + 1) > R, width < ell. Sign: site reflection through the middle
+time slice, conditioning on the two mirror slices (v even); ordinary: sum of |half-integral|^2; neutral: seam on the
+far mirror slice gives <h, P_0 h> = ||P_0 h||^2 >= 0 (flips preserve the slice reference); integer spin ignores seams.
+Then (1+x)^m + (1-x)^m has nonnegative integer-spin coefficients, trivial coefficient 1 after normalization, so
+(rho_C(I) + rho_C(-I))/2 >= 1 by continuity of rho_C. Injective forest-plus-rectangle markings with <= 8q empty edges.
+
+**B8. Sharp length, L491-496. HOLDS.** k = floor(R^{1/4}/2) gives log(C s K^{1/k}) = -(alpha - o(1)) log beta since
+log K = O(log beta) and k -> infinity; with log V = alpha H log beta the bound (33) is exp(-(zeta alpha - o(1)) H log beta) -> 0.
+Below: (34) gives V[s(1-s)^7]^q >= exp((zeta alpha - o(1)) H log beta - O(log beta)) -> infinity, so the conditional TV -> 1.
+
+**B9. Criterion at physical size, L498-503. HOLDS (conditional exactly as labelled).** (33) at V = n^3 u and 2 n^3 u
+with the stated R; H ~ 4 log n/(alpha log beta) = o(u) on the logarithmic trajectory.
+
+**B10. (35), L508-521. HOLDS.** Union bound with sup density C(1+beta)^{3/2}. Pivots on faces at sup distance >= 4
+are conditionally independent tilts; 6 - w_i/beta <= sum_{p ni e_i}(1 - eps_p x(U_p)) since U.(RY) <= R; Markov on the
+total deficit (26) and on sum Delta(y_i)^2; density >= c(1+beta)^{3/2} e^{-C M^2} within (M+1)/sqrt(beta) of y_i;
+M^2 = (2C)^{-1} log Lambda.
+
+**B11. (36)-(37), L523-539. HOLDS.** Cap links are within eps of +-I, so a label cycle of length <= R has
+Delta <= R eps <= r/4: readout G subset F_R. On F the orbit law is exactly Haar Wilson, so
+P(F \ G) <= P(F) C V_* 8^{R+1} (1+beta)^{3/2} r^3 = P(F) C 8^{R+1} V_*^{-3 eta} = o(P(F)) (8^R = V_*^{O(1/log beta)});
+P(G \ F) <= P(F_R) - P(F) = o(P(F)) by (33) (pins at arbitrary cap values keep the bound K). Conditioning on G
+instead of F moves every event by <= 2 delta/(1 - delta). log p(u)^2/p(2u) = J_0(u) - J_{s,eps}(u) + O(n^3 u e^{-c u log beta}),
+and 0 <= J_{s,eps}(u) <= 2 log D_{0,s,eps}(u) <= C n^3 u e^{-c u log log(2+beta)} by B0f, valid for every eps <= (1+beta)^{-1/2}/b.
+
+**B12. Resolution, L541. HOLDS.** Link errors <= r/(4R) give cycle errors <= r/4 (bi-invariant metric); the read event
+lies between the exact events at 5r/4 and 3r/4, both of which obey B11's two bounds (3r/4 > r/4 for the inclusion
+in F_R; (5r/4)^3 only changes C). Necessity: any law supported on {min_p Delta(U_p) > r'} has TV >= P_0(min Delta <= r') -> 1
+by (35) and monotonicity.
+
+**Step 3 verdict.** Block B: 12 statements and 7 dependencies, all HOLD; no correction needed. The criterion is an
+exact reformulation: (37) moves the seed to the order-one ratio p(u)^2/p(2u) of an exponentially rare event (32) in the
+gapped comparison model; nothing in block B bounds that ratio.

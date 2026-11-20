@@ -34,7 +34,6 @@ GUIDE (numeric or heuristic evidence, never a proof step), OPEN.
 - 00:48Z. Repo search for the one new statement done (Section 0).
 - 00:53Z. The numeric sanity run ran at 00:51:54Z, when memory first read 50 percent free (3.7): no violation. Section 0
   corrected after a second grep (rows 1016, 1031, 1056, 1068, 846 also name the corner terms; none holds the count).
-  Finished.
 - 00:54Z. A last grep, file by file, found the d = 4 spectrum of the corner Laplacian in the check of row 1013 by Opus
   (row 1015, `gap-invent-selective-check.md` L157-161). Credited in Section 0, in step 1 of the proof, in Section 4 and
   in the RESULT line. The count (PCc2) and Corollary PC-c2 are not in that file.

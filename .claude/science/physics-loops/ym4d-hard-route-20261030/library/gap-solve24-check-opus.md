@@ -26,6 +26,12 @@ CORRECTION, FAILS, with the line. Numerics guide only.
 ## Status log
 
 - 2026-11-20T07:44Z: file created with the plan.
+- 2026-11-20T07:53Z: Section 1 written.
+- 2026-11-20T07:54Z: Sections 2-3 written ((17), (21), (22), S34, S42 HOLD).
+- 2026-11-20T08:01Z: Sections 4-5 written ((19), (20), (23), (24), (25), S31, S36, S45, S47 HOLD; plaqvar re-proved by hand).
+- 2026-11-20T08:03Z: Section 6 written (S1-S30, S35, S37 HOLD; plaqvar citation not verified, step re-proved).
+- 2026-11-20T08:06Z: Section 7 written (restatement: unpinned parts = rows 895, 738, 1211, 747; pinned layer not on file; citation fix).
+- 2026-11-20T08:08Z: Section 8 written (verdict table, RESULT). Check complete; no commit (no push rights).
 
 ## 1. Inventory of row 1222 (`library/gap-solve24-astra62.md`, 438 lines, read in full)
 
@@ -100,7 +106,6 @@ Sussman-Alpoge outline GL3 (2197-2231), GL8 (2315-2335); four-author v7 prop:pla
 Revised step plan (same eight steps): 2 = S32-S33 (17) with inputs; 3 = S41-S43 (21)-(22) and S34; 4 = S38-S40 (19)-(20);
 5 = S44 (23), S45-S48 (24)-(25); 6 = the rest, S1-S31, S35-S37; 7 = restatement question; 8 = verdict table, RESULT.
 
-- 2026-11-20T07:53Z: Section 1 written.
 
 ## 2. Comparison (17) and its inputs (S32, S33)
 
@@ -181,7 +186,6 @@ nu|g_0^2 - g_1^2| <= ||g_0 + g_1|| ||g_0 - g_1|| <= 2||g|| (nu|g_0 - g_1|^2)^{1/
 For reals (a - b)^2 >= (a^+ - b^+)^2 + (a^- - b^-)^2 (the cross term -2(a^+ - b^+)(a^- - b^-) = 2(a^+ b^- + b^+ a^-) >= 0),
 and Var f <= nu(f - m)^2, so the quotient is at least Phi_nu^2/2. The pinned comparison R^{-2} Phi_nu <= Phi_pi <=
 R^2 Phi_nu follows termwise (numerator: joint slice event; each of pi(A_0), 1 - pi(A_0) within R). Correct.
-- 2026-11-20T07:54Z: Sections 2-3 written ((17), (21), (22), S34, S42 HOLD).
 
 ## 4. Estimates (19)-(20) and the column bounds they reuse (S31, S36, S38, S39, S40)
 
@@ -285,7 +289,6 @@ from (24), as the file says ("at any selected coupling"). Correct.
 **S48, (25) (L426-430). HOLDS.** At a selected coupling int d xi/(1 - lambda) <= C N^3, and 1/(1 - lambda) >= 1/(1 - e^{-aE}) on
 [e^{-aE}, 1], so N^{-3} xi([e^{-aE}, 1]) <= C(1 - e^{-aE}) <= C a E. The energy reading lambda = e^{-a E_phys} is right. O6 (L432:
 (1 - lambda) d lambda has finite int d xi/(1 - lambda) and weight near 1) is a correct counterexample to over-reading (25).
-- 2026-11-20T08:01Z: Sections 4-5 written ((19), (20), (23), (24), (25), S31, S36, S45, S47 HOLD; plaqvar re-proved by hand).
 
 ## 6. The remaining statements (S1-S30, S35, S37) and the cited sources
 
@@ -317,15 +320,15 @@ outside them and I did not fetch the source: NOT VERIFIED as a citation, but the
 | S17 | 104-110 | HOLDS | (6) is (5) with R(x+mu) = R(x+nu) = 1 |
 | S18 | 112-114 | HOLDS | colours of y - mu run over Z/4, so each middle site has one chosen predecessor; stars disjoint; each segment meets A only in its terminal link; tree gauge integration; one quarter of the layer |
 | S19 | 116-122 | HOLDS | forest edge count: sum_x (k_x - 1)_+ = (incident middle vertices) - (components) <= P - 1; binom(k,2) <= 2(k-1)_+ for k <= 4; 6P - 2(P-1) = 4P + 2 |
-| S20 | 124-130 | HOLDS | the six steps return to the start, alternate levels, visit six distinct vertices, and all six links are lower-layer outgoing bonds; abs(E[(1/2) tr U_gamma or rest]) <= I_2/I_1 <= e^{-1/(1+6 beta)}; beta(1 - e^{-1/(1+6 beta)}) -> 1/6 |
-| S21 | 141-157 | HOLDS (conditional, as labelled) | abs<u,v> <= abs<u,v>/2 bound gives P + Q <= 3/2 and d_G + d_{W_4} >= norm^2/2; d_{W_i}(f) <= (sum_{p<=i} norm r_p)^2 and Cauchy-Schwarz (1+2+3+4 = 10) give norm(Kf) <= q norm f; support growth 8k(b+2) per k sweeps; <f,g> = <P_i f, g> for conditionally independent supports; log-convexity of C_j(n) and a_j t_j/k_j -> 4 l give C(s) <= C(s_0) q^{(s-s_0)/(4 l)} |
+| S20 | 124-130 | HOLDS | the six steps return to the start, alternate levels, visit six distinct vertices, and all six links are lower-layer outgoing bonds; abs(E[(1/2) tr U_gamma given the rest]) <= I_2/I_1 <= e^{-1/(1+6 beta)}; beta(1 - e^{-1/(1+6 beta)}) -> 1/6 |
+| S21 | 141-157 | HOLDS (conditional, as labelled) | abs<u,v> <= norm(u) norm(v)/2 on the centred ranges gives norm(P + Q) <= 3/2 and d_G + d_{W_4} >= norm^2/2; d_{W_i}(f) <= (sum_{p<=i} norm r_p)^2 and Cauchy-Schwarz (1+2+3+4 = 10) give norm(Kf) <= q norm f; support growth 8k(b+2) per k sweeps; <f,g> = <P_i f, g> for conditionally independent supports; log-convexity of C_j(n) and a_j t_j/k_j -> 4 l give C(s) <= C(s_0) q^{(s-s_0)/(4 l)} |
 | S22 | 161-170 | HOLDS | E_{pi_0} L^p = (Z_0/Z_1)^p Z_0^{-1} int e^{p S_1 + (1-p) S_0} dQ; for abs(S'') <= A, p S_1 + (1-p) S_0 <= S_p + A p(p-1)/2 (extrapolation form of the two-sided convexity bound, checked); raw graph density = product density in [1 - delta, 1 + delta] at every t; abs(S'') <= beta pi^2/h^2 * 4 * 6 * (Mh) = A |
 | S23 | 172-176 | HOLDS | p = log2/(2A) >= 2; A p(p-1)/2 + 4p delta <= p log2/2; Markov gives 2^{-p/2} and 2 * 2^{-p/2} on the two sides; total <= 4 exp(-(log 2)^2/(4A)); in the boxes A ~ C beta k^4/h -> 0 polynomially in a, so epsilon is below e^{-ck} |
 | S24 | 178-191 | HOLDS (conditional) | (12) by splitting at the exceptional set; the fibre bound integrates over G_D to (8) because G_D is contained in W_i (i <= 3); the additive term after k sweeps is <= c_0 epsilon norm_inf^2/(1 - q^2), negligible against q^{2k}; the file correctly imposes (13) on all bounded off-graph functions |
 | S25 | 195-199 | HOLDS (conditional) | in pi_0 the cell integrals are the Wilson ones at the fixed graph values; three projections, telescoping constant 6, q_3 = (1 - 1/(6 C_0))^{1/2} |
 | S26 | 201 | HOLDS | density in [e^{-2 beta m_B}, e^{2 beta m_B}]; Haar projections onto W_i cap B commute with empty intersection; variational formulas give C_0 = e^{4 beta m_B} |
 | S27 | 203 | HOLDS | a vertex in all three wall complexes has residues 0, h, 2h in three coordinates, and the link in the fourth direction is an S_3 link; otherwise some W_i has no incident edge, its range is invariant under that vertex gauge, and charged isotypic components are annihilated by P_i |
-| S28 | 205-214 | HOLDS | Var L >= <1,phi>^2/E(phi) with a tent zeroed on CR^4/b^3 graph sites; cell Poincare constant b^2; Var(L^2) = 2v^2 and E Var(L^2 or W_i) = 4 v v_i - 2 v_i^2, ratio <= 6 v_i/v = O(k^{-2} + b^{-1}) |
+| S28 | 205-214 | HOLDS | Var L >= <1,phi>^2/E(phi) with a tent zeroed on CR^4/b^3 graph sites; cell Poincare constant b^2; Var(L^2) = 2v^2 and E Var(L^2 given W_i) = 4 v v_i - 2 v_i^2, ratio <= 6 v_i/v = O(k^{-2} + b^{-1}) |
 | S29 | 218-222 | HOLDS | tile sides at offset s_i lie on W_i; Stokes on each b-square; projection covariance gives E abs(L - L_i)^2 <= norm(omega_i - omega)^2 = O(R^4 (b/R)^2); trial potential bounds Var L >= c R^4 |
 | S30 | 224-231 | HOLDS | (4) applies to any subcollection of the h-tiling of coordinate lines; tile corners sit at multiples of h because the offsets do |
 | S35 | 283 | HOLDS (conditional) | delta -> 0 under the stated scaling, so rho_pi - e^{-2b m_lat} -> 0 and e^{-2b m_lat} = e^{-2 (ab)(m_lat/a)}; the continuum step is stated as a matching hypothesis |
@@ -334,4 +337,80 @@ outside them and I did not fetch the source: NOT VERIFIED as a citation, but the
 GUIDE statements L3-L11 and L51 (search and approach) make no mathematical claim; their repository citations are
 treated in Section 7. OPEN statements O1-O7 are correctly labelled: none of them is proved in the file or, as far as
 Section 7 found, elsewhere.
-- 2026-11-20T08:03Z: Section 6 written (S1-S30, S35, S37 HOLD; plaqvar citation not verified, step re-proved).
+
+## 7. Is the main comparison a restatement of an earlier row?
+
+Registry grep (library/gap-*.md, library/prior/gap-*.md, parts/gap.md; excluding this file): "maximal correlation" 21 files,
+"Cheeger" 7, "conductance" 11, "Lawler" 2, "slice event" 3, "diagonal quotient" 2, "common graph" 1 (row 1222 only),
+"identity fibre" 1 (row 1222 only). library/open-core.md: no hit for any of these terms. FINISH rows: "M5-G" at lines
+815, 824, 940 (rows 738, 747, 863); "Lemma MC" at lines 972-973, 1097, 1101, 1203; "Cheeger" at lines 824, 834.
+
+**Answer: in its unpinned parts, yes, and the composed statement is an equivalent form of the open gap.**
+
+1. (17), unpinned half rho_nu = e^{-2b m_lat}: Lemma MC of row 895 (`gap-glue-max.md` L222: "the maximal correlation
+   coefficient between the sigma-algebras of the slices at times at most 0 and at times at least w is exactly r_1^w";
+   check row 896), also `gap-compress-opus.md` L120. Restatement (and standard).
+2. (21), unpinned half "the infimum of the diagonal quotient is 1 - e^{-2b m_lat}": the Poincare form (M5-G) of the
+   physical-time Doob kernel P = psi^{-1} R^k psi, reversible for pi = psi^2 dU, in row 738 (`gap-means-astra.md` L623-646,
+   which itself calls (M5-G) "a variational restatement of the missing gap"); the same kernel and the identity
+   E|f(X_0) - f(X_r)|^2 = 2<f, (1 - P^r) f>_pi are in row 1211 (9) (`gap-solve22-astra62.md` L139-148). Restatement.
+3. (22) in the vacuum: the Lawler-Sokal form of Cheeger's inequality for a reversible kernel with nonnegative spectrum.
+   Row 747's literature reading names exactly this as route (i) to (M5-G) ("prove a conductance bound for that exact
+   kernel", `prior/gap-lit-geom.md` L55, L69, L73). Restatement of a recorded route (the proof in row 1222 is a correct
+   self-contained rebuild).
+4. The pinned layer is not on file before row 1222 by this grep: fix the common graph S_3 of the four-offset cell
+   construction on a time slab, observe two whole slices at time residue 3h (so neither meets S_3), and get a two-sided
+   likelihood bound R = (1 + delta)/(1 - delta) on the entire two-slice algebra. Its ingredients are row 1145 (3)-(4)
+   and row 1161 (23) (straight-segment densities), which row 1222 credits. The 21 "pinned law" files concern other
+   pinnings (hard-pinned slices, sign pins, ring links, one-column chains); none pins a graph under a whole-slice
+   comparison.
+5. What the composition buys. Along the stated scaling R -> 1, so rho_pi, g_pi and Phi_pi are equivalent to the unpinned
+   quantities: the pinning neither eases nor hardens the gap. It changes the sufficient criterion: in pi the common
+   contractible loop of S5 (which defeats three wall updates in the unpinned law) is frozen, so (18) for three walls
+   gives rho_pi <= 1 - c/3 (S34). The final OPEN item O4/O7 (a relative disagreement bound for every gauge-invariant slice
+   event) is the conductance form of row 738's (M5-G), i.e. the open finite-cube gap itself, now in the pinned law.
+   Row 1222 states this honestly (L379, L436).
+
+**Citation fix (no change to any verdict).** Row 1222 credits rows 1145, 1161, 1211 and the four authors, but not row 895
+(Lemma MC) for rho_nu = e^{-2b m_lat}, row 738 ((M5-G)) for the diagonal quotient, or row 747 (Lawler-Sokal route) for (22).
+Add those credits at L273, L349 and L377.
+
+## 8. GUIDE run, verdict table, result
+
+**GUIDE run (guides only; no verdict rests on it).** One run under the numeric lock (memory 55 percent free), plain
+numpy, about a minute, script in a scratch folder outside the checkout. Criteria fixed before the run, all met:
+- C1, (20): on 60 random entrywise-positive PSD transfer matrices (dimension 4-8, r = 2-4, n = 3-8, 1-3 readings, both
+  s = 0 multiplication readings and s = 1 symmetric slab readings with their true same-slab product insertions), the
+  largest generalised eigenvalue of the difference form against the block-diagonal K_0 was 4.00 (bound claimed: 20).
+- C2, one-link variance: min over kappa in [0, 2000] of (1 + kappa)^2 min(Var(x.mu), E(x.e)^2) = 0.25 (my hand bound
+  0.0045, cited bound 2^{-19}); min over kappa >= 2 of kappa^2 Var(x.mu) = 0.65 (hand bound 0.006).
+- C3, (22): on 300 random reversible Doob kernels with nonnegative spectrum (3-10 states, all cuts enumerated),
+  gap - Phi^2/2 >= 0.15 and 2 Phi - gap >= 0.014.
+
+**Coverage.** The file has 76 PROVED paragraphs, 7 OPEN and 5 GUIDE; every PROVED paragraph belongs to one of S1-S48
+(statement plus its proof paragraphs), mapped by line in Section 1.
+
+| ID | L | statement | verdict |
+|---|---|---|---|
+| S33 | 268-273 | (17) pinned two-slice correlation vs e^{-2b m_lat} | HOLDS (Section 2) |
+| S41 | 338-349 | (21) diagonal quotient within R^{+-2} | HOLDS (Section 3) |
+| S43 | 364-377 | (22) conductance bounds, pinned and vacuum | HOLDS (Section 3) |
+| S38, S40 | 309-316, 332 | (19) and (18) on (19) | HOLDS (Section 4) |
+| S39 | 318-330 | (20) constant 20 | HOLDS (Section 4) |
+| S44 | 383-395 | (23) capped readings and events | HOLDS (Section 5) |
+| S45, S46 | 401-422 | coupling-averaged specific heat; (24) | HOLDS (Section 5) |
+| S47, S48 | 424-430 | slab variance loss; (25) | HOLDS (Section 5) |
+| S32, S34, S42 | 266, 275-281, 351-362 | slices miss G; (18) => rho_pi <= 1 - c/3; decomposition, distance bound | HOLDS (Sections 2-3) |
+| S31, S36 | 235-262, 285 | (16), spatial-axis version | HOLDS (Section 4) |
+| S1-S20, S22, S23, S26-S30, S37 | see Section 6 | cell comparison (1)-(4), spin formulation, flat slice, counting, (7), (10)-(11), (14)-(15), finite bounds | HOLDS (Section 6) |
+| S21, S24, S25, S35 | 141-157, 178-199, 283 | conditional implications from (8) or (13), continuum implication | HOLDS as conditional implications, as labelled (Section 6) |
+| O1-O7 | 134, 305, 334, 379, 397, 432, 436 | OPEN items | correctly labelled; none closed |
+| cite | 247 | v7 prop:plaqvar, lines 18943-18969 | NOT VERIFIED against the source; input re-proved by hand (Section 4), so no step depends on it |
+| cite | 273, 349, 377 | credits for the unpinned halves of (17), (21), (22) | citation fix: add row 895 (Lemma MC), row 738 ((M5-G)), row 747 (Lawler-Sokal route) (Section 7) |
+
+No statement FAILS; no statement needed a mathematical correction. Restatement question (Section 7): the unpinned
+halves of the main comparison restate rows 895, 738, 1211 and the Lawler-Sokal route recorded by row 747; the pinned
+layer (S_3 fixed on a slab, both slices missing it, likelihood ratio R on the whole two-slice algebra) is not on file
+before row 1222, but since R -> 1 it is an equivalent form of the open finite-cube gap, not a reduction of it.
+
+RESULT: HOLDS. Check of row 1222 (`library/gap-solve24-astra62.md`) by Claude Opus 5.5 max: all 48 statement groups (76 PROVED paragraphs) HOLD, the four conditional ones as labelled, and none FAILS. That includes (17), (21)-(22), (19)-(20), (23) and (24)-(25), checked by hand. The one-link variance input from the four-author paper was re-proved with constant 0.0045 in place of 2^{-19}. One citation fix: credit rows 895, 738 and 747 for the unpinned halves of (17), (21) and (22). The v7 prop:plaqvar line citation was not verified. The main comparison restates those rows plus a new pinning layer that is equivalent to, not a reduction of, the gap. OPEN as row 1222 says: a uniform relative-disagreement bound for all slice events (the conductance form of (M5-G)), the matched continuum construction, and the mass gap.

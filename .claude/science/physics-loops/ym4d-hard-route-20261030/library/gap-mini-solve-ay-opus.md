@@ -58,3 +58,67 @@ of the site expansion whose proof reads the full tree length in a way the island
 - Step 4: prove the (T) part: each place in the list, with d replaced by d°, from the geometry lemmas.
 - Step 5: the (L) and (P) parts the same way, or the exact clause that fails.
 - Step 6: labels, what a checker should redo, RESULT.
+
+## Step 2. The proposition, its format and its geometry, as the account states them (READ; written 17:13Z by date -u)
+
+All line numbers are CA-III at 31a47c543775 (Sussman and Alpoge, with Claude and Codex as authors of their text).
+
+**2.1 Statement (L16559-16632).** At each of three sites of the correlation theorem, (T) (the expansion at a
+T-step), (L) (the expansion that bounds bracket and volume terms) and (P) (the preliminary integrations giving the chain
+terms C^(i)), the site's expansion statement "holds also when some of its input terms are island-blind stored terms".
+Outputs: (a) an output that reads no island-blind input is unchanged; (b) an output that reads one is filed under
+fil(X) in D^I of its level and obeys the site's bound with every tree length d_j replaced by d°_j: at (T) the factor
+e^(-kappa_out d_(k+1)(X)) becomes e^(-kappa_out d°_(k+1)(X)) (cluster expansion lemma, marked sub-sum corollary, clauses
+(ii), (vi) of the T-step expansion lemma); at (L) ||v^br||°_a <= eps_br; at (P) ||C^(n)||^(A,°) <= C_0^#; constants and
+rates are the site's, floors the site's plus the per-cell domination (9.1:eq-blind-domination-a); (c) the E-, D-, R''-
+families, the Gaussian part of the second expectation and the second-group R'-terms are never island-blind. Last
+clause: for an island-blind potential the activity hypothesis at (T) is its anchored relative activity, at most
+K°(4) times its sup-norm by 9.1:lem-blind-counts (ii).
+
+**2.2 The format (L15889-15936).** D^I_l = domains Y in D_l with Y cap W_l a union of islands (W_l = closure of the
+live strips with four layers, L15440-15445; islands = touch-components of W_l, pairwise non-touching, no size bound).
+Relative length d°_l(Y) = d_(l,W_l)(Y), where (L15237-15252, also L3518-3524) d_W(Y) = least length of a tree graph
+tau contained in Y that meets every cube of Y not contained in W; "The length of the tree is counted wherever the
+tree runs, inside W included; only the requirement that the tree visit the cubes of W is removed." Filing
+fil_l(X) = X together with the islands that X meets. Read at level m >= l through cl_m and
+d°_m(Y) = d_(m,W_m)(fil_m(cl_m Y)). Norms: N°_l[F] = sup_Y e^(r_F d°_l(Y)) sup|F(Y)|, r_F = 9/8 kappa (R-born),
+kappa_out (T-site), a_k or a_m (collar site); two-run seminorm S° with weight e^(kappa d°).
+
+**2.3 Geometry, PROVED in the account (read, not re-checked here).** 9.1:lem-island-geometry (L15478): (a) moat:
+dist_m(I, Omega_(m+1)) >= 3 R_m - 4 >= 23 for every island I of level m; no island meets Lambda_(m+1), the decoupling
+region Y_0, or the support of the step-(m+1) fluctuation field; (d1) every decoupling cube, fluctuation cube and
+random-walk origin at T_(m+1) lies in Omega_(m+1), hence at least 3 R_m - 4 cubes from W_m; (e) cl_m(Y cap W_l) is in
+W_m. 9.1:lem-blind-counts (L15938): (i) sum over Y in D^I containing a cube Delta not in W of e^(-lambda_0 d°(Y)) <=
+C_fib for lambda_0 >= k_d + 1; (ii) the same over blind Y whose closure at m contains a site cell at distance >= 1 from
+W_m: <= K°(d) for lambda >= k_d + 2; (iii) an island's own cells; (iv) crossing: a blind store born at a T-step has
+d° >= 3 R_l - 8; (v) levels: d°_m(Y) <= L^-(m-l) d°_l(Y), and a general tree form.
+
+**2.4 The route (L16634-16781), five points the account says a proof must establish**, by repeating Balaban's
+CMP 116 Section 2 expansion (and its analogues at (P), (L)) for one run with island-blind inputs:
+(i) volume factors (CMP 116 (2.25)-(2.26), (2.31)-(2.34), (2.37)) count fluctuation volume only, which lies off W, and
+the island-blind volume bound M^-d |Z minus W| <= c_d (d°(Z) + 1) replaces (2.30); 2 d_k >= L d_(k+1) holds for
+relative lengths (lem-blind-counts (v));
+(ii) domain sums ((2.29), the sums after (2.36), the weighted sums of the (L) lemma) anchored off W are bounded by
+lem-blind-counts (i), (ii), replacing e^(c_d (n+1)) of CMP 116 (1.26); a polymer cube inside an island occurs only as a
+walk cube that crossed the moat, counted from the walk's last off-island cube plus 3^d per walk step;
+(iii) tree composition sum_D (d(Y) + 5) >= d(Y_0) + 5 (CMP 116 (2.27)) holds in relative form when Mayer and
+decoupling links sit off W; a junction inside an island, reached by a walk, is re-routed to the nearest off-island
+cube of the term's support, at most j_m = d (101 R_m + 8) + 1 cubes away, paid by the walk's moat factor
+e^(-(kappa_1 - 1)(3 R_m - 4)) given L >= 18 (d + 1); a Mayer link between terms that overlap only inside an island is
+declared a non-link (device of CMP 122b);
+(iv) (P) and (L): the same points with the preparatory covariances; collar cells and (L)'s decoupling cubes lie off
+the islands (lem-island-geometry (c1), (d));
+(v) hull, fat core and collar: one layer each, inside the four spare layers; hull inequality in relative form.
+The route also explains why outputs must be island-blind: an output that contains a young birth strip would need a
+full-length tree through the strip, about (R_i/L)^d / c_d, against factors only linear in R in the exponent.
+
+**2.5 Consumers.** 9.1:lem-blind-domination (L16801) assumes the (T) part; 9.1:thm-blind-fluctuation-bound (L16981)
+reads the (T) part, clause (vi) of the T-step bound lemma for island-blind inputs (L17048-17060); Theorem 9.1
+(L17912) lists the proposition as hypothesis (e).
+
+**2.6 First observation (ARGUED, to be made precise in Step 4).** Read with the definition in 2.2, the relative length
+charges a tree's run inside an island. So d° is not "d with W contracted"; it is d with the visiting requirement
+dropped on W. Consequently the three combinatorial facts a cluster expansion reads (domain counts, volume bound, tree
+composition) each need their own proof for d°, and the composition fact needs the links off W, as the route says.
+Where a link or junction falls inside an island, the route's re-routing argument (iii) is the only device; I check it
+in Step 4.

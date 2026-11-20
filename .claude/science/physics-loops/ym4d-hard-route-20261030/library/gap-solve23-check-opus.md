@@ -190,3 +190,42 @@ Searched: `library/open-core.md` (564 lines; it lists hard-core RG statements, a
 - **(6) twisted neutral gap. Not a restatement; it builds on row 678.** The one-quantum rate \(\mu_n=2\operatorname{arcsinh}\sin(\pi/(2n))\) is row 678's Lemma G (`gap-ac-lat.md` line 51), for a Gaussian model of the twist. The source credits it. New in row 1215: the convergence of the interacting Wilson neutral spectrum in the twisted sector to the Gaussian on \(L^2(N)^{H_A}\) (lines 100-106), and the \(Q_8\) selection rule that removes one-quantum states, giving \(2\mu_n\). The physics (zero-electric-flux states in a twisted box need two gluons) is in van Baal's review, which the source cites.
 - **(14)-(15) gapless comparison trajectory. Not a restatement.** Related but different: row 678 Lemma G (the Gaussian twist model tends to the massless free field), row 988 ("massless floor"), row 1219 ("a blind engine's seed fails for every gapless model of its class"). None constructs a Wilson SU(2) sequence whose smeared plaquette correlation has a free, gapless limit.
 - **(26)-(29) signs and monopoles. Not a restatement; they sharpen row 1149.** Row 1149 (`gap-solve4-astra62.md` line 336) proved a one-link negative-sign probability \(p_*=c(1+\beta)^{-3}e^{-6\beta}\). (26) gives a two-sided parity bound at rate \(E_*\approx2.52<6\), for any subset of incident faces. (27)-(29), the \(\mathbb Z_2\) monopole count and line 472 are new. Row 946 measured the monopole indicator's ratio numerically (GUIDE, \(\beta=2.3\)-\(2.6\)); that is a different statement. The straight-transport half of lines 468-470, including its vanishing spectral overlap, is row 1145 §1 (3)-(4) (`gap-solve2-astra62.md` lines 34-51). The new part is the joint law with the sign readings.
+
+Line 282 cites row 1143 §1 (`gap-solve-astra62.md` line 39: the boundary transport of the \(ij\) rectangle is a product of conjugated face words). Row 1144 checked it HOLDS (`gap-solve-check-opus.md` line 195, all 24 statements HOLD, including row 1143 (11), which row 1145 (11) and hence (20) read). The chord form \(|h_ih_j-\eta_{ij}h_jh_i|=|[h_i,h_j]-\eta_{ij}|\le n^2u\) follows by bi-invariance.
+
+### Step 8. Verdicts
+
+Provenance: Claude Opus 5.5, max effort, Mac mini Claude worker 2, commit 9be3e60ef, source `library/gap-solve23-astra62.md` (author gpt-6.2-astra, cross-provider). One reading by hand; not an audit. No numeric run was used.
+
+| Statement (source lines) | Verdict |
+|---|---|
+| (5) periodic neutral levels coalesce at fixed \(n\) (90-96), with (1)-(4) (17-88) | HOLDS |
+| (6) twisted neutral gap \(\to4\operatorname{arsinh}\sin(\pi/(2n))\) (100-114) | HOLDS |
+| (14)-(15) gapless comparison trajectory (235-265), with (9)-(13) (165-231) | HOLDS |
+| (26) two-parity bound, \(E_*=1+20(1-\cos(\pi/8))\) (423-435) | HOLDS |
+| (27) sign Fourier bound (437-443) | HOLDS |
+| \(\mathbb Z_2\) monopole count; one-loop slope \(b_*E_*<1\) (445-451) | HOLDS (identification with a continuum trajectory conditional, as labelled) |
+| (28) joint sign law; (29) vanishing low-energy weight (453-466) | HOLDS |
+| joint straight transports and signs (468-470) | HOLDS, given row 1145 (1)-(3) (checked in row 1146) |
+| current size (472); reflection test (474) | HOLDS, given row 1155 (9) (checked in row 1156) |
+| (7), (8), multiplicity 20, \(t=\lfloor sn\rfloor\) limit (118-159) | HOLDS |
+| (16)-(19) joint range \(\beta\ge n^{32}\) (269-315) | HOLDS |
+| (20) level-count limit (317-329) | HOLDS, given row 1145 (5), (11) and the neutral fraction (checked in rows 1144, 1146) |
+| (21), line 352 (333-352) | HOLDS |
+| line 354; (22) (354, 358-371) | HOLDS, given row 1211 (6) (checked in row 1214) |
+| (23), line 388, line 390 (375-390) | HOLDS |
+| (24), (25), line 417 (392-417) | HOLDS |
+| (30) (478-485) | HOLDS under its stated assumptions |
+| line 356 (ARGUED), 487 (OPEN), 489 (RESULT) | correctly labelled |
+
+No statement FAILS and none needs a correction. Precisions, none of which changes a verdict:
+1. Line 431: "the two temporal terms of each link have the same linear form". They are two linear forms (with \(X_e\) and \(Y_e\)). The proof uses only that each of the five terms is a unit-norm linear form in that link, so \(|h_i|\le5\).
+2. Lines 100-106: \(O=KA\) has two connected components (\(h_3=\pm1\), exchanged by the third flip). The proof's "exponentially suppressed off a chart" step covers the second component, but the text does not say so.
+3. Line 157: "average ... over the four sign characters of the stabilizer" means the four elements of \(H_A/\{\pm1\}\), acting by sign patterns with \(\epsilon_1\epsilon_2\epsilon_3=1\). The formula is right.
+4. (5) is not new in its trace form: row 1145 (11) with its neutral fraction already implies divergence of the neutral excited trace at fixed \(n\), and with a few more lines (Step 7), (5) itself. The source's proof is independent of that input.
+
+Restatements (Step 7): none of the four positive claims restates an earlier row. (6) builds on row 678 Lemma G (\(\mu_n\) for the Gaussian twist model). (26)-(29) sharpen row 1149's one-link bound (\(e^{-6\beta}\)). The straight-transport half of lines 468-470 is row 1145 §1 (3)-(4).
+
+What this row moves, read plainly: every positive result is in a regime the source names. Fixed \(n\) with \(\beta\to\infty\) gives (5), (6), (13). A chosen diagonal sequence gives (14). \(\beta\ge n^{32}\) gives (16)-(19). At the one-loop slope, (26)-(29) concern readings that become trivial in the limit. None gives a positive lower spectral bound on an asymptotically free trajectory. The source says the same at lines 485-487.
+
+RESULT: check of row 1215 (`library/gap-solve23-astra62.md`), by hand by Claude Opus 5.5 max (cross-provider), commit 9be3e60ef: every statement HOLDS, none FAILS, none needs correction; the four positive claims hold: (5) coalescence of the periodic neutral levels at fixed n, (6) the twisted neutral gap tending to 4 arsinh sin(pi/(2n)), (14)-(15) the gapless comparison trajectory, and (26)-(29) the monopole and low-energy weight bounds; also (1)-(4), (7)-(13), (16)-(25) and (30); the inputs from rows 1143, 1145, 1155 and 1211 were read and are checked HOLDS in rows 1144, 1146, 1156 and 1214; four wording precisions; none restates an earlier row, but (5) also follows from row 1145 (11), (6) builds on row 678 Lemma G and (26) sharpens row 1149; OPEN, as the source says: the matched continuum construction and any positive mass gap for 4D SU(2) Yang-Mills.

@@ -184,3 +184,109 @@ lemmas already assume in a stronger form.
   "n_n(0) = 0" finds only `t0-tree.md` L84 (node name "exact pin" for clause (v-a)) and unrelated uses; no row uses the
   pins as the chain of the one-cutoff carry. The pin pair itself is the account's (Remark 4 above).
 
+## Step 3. First-passage tops: the backward drift, a corrected (EDGE'), and the window inclusion (written 2026-11-20T11:10Z by date -u)
+
+**3.1 More account statements used (READ).**
+- `9.6:prop-depth-zero-match` (III:52290-52330; index PROVED): with h_n(v) := zeta^n_(0)(zeta_*^n + v) on D(0, R),
+  R = 4 r_J, for |w| <= r_J there is exactly one n_n(w) in D(0, 8 r_J/3) with h_(n+1)(n_n(w)) = h_n(w), and
+  |n_n(w)| <= 2|w|, |n_n(w) - w| <= Upsilon_n |w|.
+- `9.12:lem-bi-lipschitz` (III:67295-67330), hypothesis (A), "the running-shift statement of the correlation theorem
+  ... read on the scaffold Theta_X about the tuned centre with radius r_J": with beta^(n)_r(eta) := b^(n)_(r)(zeta_*^n + eta),
+  (R1) beta^(n)_r is holomorphic on D(0, 2 r_J) and real on the reals; (R2) for rho in [r_J, 2 r_J],
+  |beta^(n)_r(eta) - beta^(n)_r(0)| <= d^(n)_r(rho) |eta| on D(0, rho) with sum_(r<n) d^(n)_r(rho) <= 1/3. This is the
+  same budget as (J2)'s sum_u a_u <= 1/3 (III:1319-1328).
+- The account's outstanding corollary `9.8:cor-subsequential-limits` (III:54156-54198): under "the supplementary run
+  hypothesis" and r_J >= 6(B_sharp + 1), varpi(r_J, g) <= 1, every bare x with first passage at K has
+  |x - a_K| <= (3/2)(B_sharp + varpi(r_J, g)) <= (1/2) varrho_2. As printed, varpi is defined only as "the correction
+  term ... that enters the first-passage offset bound" (III:54160-54161), the bound it is used to state, and the phrase
+  "supplementary run hypothesis" occurs nowhere else in CA-III (grep: one hit, III:54159). So the printed statement has
+  no checkable hypotheses; 3.4 below gives a precise form.
+
+**3.2 Lemma DRIFT (PROVED GIVEN (b) of the uniqueness theorem).** Let n_* >= n_U, so that Upsilon_j <= 1/4 for
+j >= n_*, and put Psi(n_*) := prod_(j >= n_*) (1 - Upsilon_j)^(-1). Then Psi(n_*) is finite and
+log Psi(n_*) <= (4/3) sum_(j >= n_*) Upsilon_j, which tends to 0 as n_* grows. Let K > K_0 >= n_* and let w_K be real
+with |w_K| <= r_J/(4 Psi(n_*)). For j = K-1, ..., K_0 let w_j be the solution in D(0, r_J/2) of n_j(w_j) = w_(j+1).
+Then each w_j exists, is unique in that disc, is real, and
+    |w_j| <= |w_K| prod_(i=j)^(K-1) (1 - Upsilon_i)^(-1) <= r_J/4 = varrho_2/2.
+*Proof.* Finiteness: sum_j Upsilon_j < infinity (Upsilon_j <= C j^(-3/2) (log j)^(p_0+1)) and -log(1 - y) <= (4/3) y for
+0 <= y <= 1/4. Induction downward on j, with the claim |w_(j+1)| <= r_J/4 (true at j+1 = K because Psi >= 1). On the
+circle |z| = r_J/2: |n_j(z) - z| <= Upsilon_j r_J/2 <= r_J/8 < r_J/4 <= |z - w_(j+1)|. By Rouche's theorem
+n_j(z) - w_(j+1) has exactly one zero w_j in |z| < r_J/2. Since n_j is real on the reals, n_j(conj z) = conj n_j(z)
+(Schwarz reflection), so conj w_j is also a zero in the disc; uniqueness gives w_j real. Next
+|w_(j+1)| = |n_j(w_j)| >= (1 - Upsilon_j)|w_j|, so |w_j| <= |w_(j+1)|/(1 - Upsilon_j); iterating from K gives the display,
+and the product is at most Psi(n_*), so |w_j| <= r_J/4, which closes the induction. QED
+
+**3.3 Proposition EDGE' (PROVED GIVEN (WI-theta), Lemma DRIFT's hypotheses and those of Proposition PIN (d) on the
+window).** Fix theta in (0, 1) and n_* >= n_U with Psi(n_*) <= 1/theta. Assume
+(WI-theta) every first-passage datum (K, beta) with K >= K_1 has beta = a_K - w with w real and |w| <= theta r_J/4.
+Let K_0 >= n_*. For every first-passage datum d = (K, beta) with K >= max(K_0 + 1, K_1), put w_K := a_K - beta and let
+w_(K-1), ..., w_(K_0) be the points of Lemma DRIFT. Then:
+(a) every chain datum d_j := (j, a_j - w_j), K_0 <= j <= K, is a tuned datum in the comparison window |w_j| <= varrho_2/2,
+    and d_K = d;
+(b) each edge (d_j, d_(j+1)) is the pair of `9.1:not-centre-normalisation` at the zero residual source with u = w_j
+    (run A of length j and centre zeta_*^j + w_j, run B of length j+1 and centre zeta_*^(j+1) + n_j(w_j)
+    = zeta_*^(j+1) + w_(j+1));
+(c) representatives are consistent: d_j is the B-run of (d_(j-1), d_j) and the A-run of (d_j, d_(j+1)), both with
+    centre zeta_*^j + w_j;
+(d) Phi(d) <= sup_(|w| <= varrho_2/2) Phi(K_0, a_(K_0) - w) + sum_(j >= K_0) b_j + 2 eta_9^W, where eta_9^W is the sup
+    of |Delta E9| over tuned data in the window (row 1255's (V9) on the window), and b_j is row 1233's edge bound,
+    uniform over u in the window because `9.1:cor-sourced-integrals` holds at every w in N'_w (III:18136-18157).
+No intermediate or base datum needs to be a first-passage datum.
+*Proof.* (a) (WI-theta) and Psi(n_*) <= 1/theta give |w_K| <= r_J/(4 Psi(n_*)), so Lemma DRIFT applies. (b) The
+centre of the A-run at u = w_j is zeta_*^j + w_j, the run started from a_j - w_j (Step 2.1); the B-run has centre
+zeta_*^(j+1) + n_j(w_j) = zeta_*^(j+1) + w_(j+1), the run of d_(j+1). (c) By (b) at j-1 and at j. (d) Row 1255
+Corollary D1 along the chain, with row 1233 Lemma 3.5 on each edge at u = w_j. QED
+
+What changes against check 1242 (L68-70) (PROVED by the proposition): the predecessor of a first-passage datum need not
+be a first-passage datum; the inverse of the matching map is needed only on |w| <= r_J/4, where Rouche gives it; the
+outward drift is bounded by Psi(n_*), which tends to 1. The base requirement becomes the window at one cutoff,
+Phi(K_0, a_(K_0) - w) <= phi_* - sum_(j >= K_0) b_j - 2 eta_9^W for every real |w| <= varrho_2/2. By (WI-theta) this
+window contains every first-passage datum of cutoff K_0 (when K_0 >= K_1), so the base set grows from those data to the
+whole window at the same cutoff.
+
+**3.4 Proposition WI: a precise form of part (a) of `9.8:cor-subsequential-limits` (PROVED GIVEN (FI-W), (MON) and
+(R2)).** Let K >= 1 and assume r_J >= 6(B_sharp + 1). Write x_K(y) for the clause-(0) coupling after K steps of the bare
+datum y (on the given torus), and assume:
+(FI-W) for every real w with |w| < 2 r_J, x_K(a_K - w) equals the depth-zero coupling of the tuned run of length K
+    started from a_K - w, that is x_K(a_K - w) = X - h_K(w);
+(MON) y -> x_K(y) is non-decreasing on the bare data to which clause (0) applies;
+(R2) as in 3.1, at rho = 2 r_J.
+Then every first-passage datum y at K satisfies a_K < y <= a_K + (3/2) B_sharp. In particular
+|y - a_K| <= (3/2) B_sharp <= (B_sharp/(B_sharp + 1)) varrho_2/2, so (WI-theta) holds with theta = B_sharp/(B_sharp + 1) < 1.
+*Proof.* Step (i), the passage window. If y has first passage at K >= 1, then x_K(y) <= X + B_sharp < x_(K-1)(y), and
+the upper flow bound x_(K-1) - x_K <= B_sharp (III:68709-68712 with j - i = 1) gives x_K(y) > X. So
+X < x_K(y) <= X + B_sharp.
+Step (ii), inside the disc. For real w with |w| < 2 r_J, h_K(0) = 0 (the pin, (J3)) and the recursion of
+`9.1:def-tuned-family` give h_K(w) = w + sum_(r<K) (beta^(K)_r(w) - beta^(K)_r(0)), so by (R2)
+|h_K(w) - w| <= |w|/3 and h_K(w)/w lies in [2/3, 4/3] for w != 0. By (FI-W), x_K(a_K - w) - X = -h_K(w). If y = a_K - w
+with |w| < 2 r_J is a first-passage datum at K, step (i) gives 0 < -h_K(w) <= B_sharp; so w < 0 and (2/3)|w| <= B_sharp,
+that is a_K < y <= a_K + (3/2) B_sharp.
+Step (iii), outside the disc. Let y >= a_K + 2 r_J. For real w in (-2 r_J, -3 r_J/2], (FI-W) and (ii) give
+x_K(a_K - w) >= X + (2/3)|w| >= X + r_J > X + B_sharp, and (MON) gives x_K(y) >= x_K(a_K - w) > X + B_sharp, so y is not
+a first-passage datum at K. Let y <= a_K - 2 r_J. For w in [3 r_J/2, 2 r_J), x_K(a_K - w) <= X - (2/3) w < X, and (MON)
+gives x_K(y) < X, which step (i) excludes.
+Step (iv), arithmetic. varrho_2/2 = r_J/4 >= (3/2)(B_sharp + 1) by the floor on r_J, so
+(3/2) B_sharp <= (B_sharp/(B_sharp + 1)) varrho_2/2. QED
+
+Remarks (PROVED unless marked).
+1. Under (FI-W) the pin a_K is not itself a first-passage datum at K: x_K(a_K) = X and the upper flow bound give
+   x_(K-1)(a_K) <= X + B_sharp, so a_K passes at a depth at most K - 1. This matches the account's own form of the
+   offset hypothesis, which places x_(K_0) in (X, X + B_sharp] (III:54832-54835), and sharpens Lemma OFF to
+   1 <= delta_n <= D_*.
+2. The account's varpi(r_J, g) can be read as the defect of (FI-W): if |x_K(a_K - w) - (X - h_K(w))| <= varpi for those
+   w, the same proof gives |y - a_K| <= (3/2)(B_sharp + varpi) when varpi < r_J/3 (step (iii) then needs
+   X + (2/3)|w| - varpi > X + B_sharp at |w| close to 2 r_J). So (FI-W) with defect varpi <= 1 and (MON) are a
+   checkable version of the "supplementary run hypothesis". ARGUED: this is the reading the corollary's route intends
+   (III:54190-54198: "a_n is the reference inverse coupling X plus the accumulated step shifts ... to be compared with the
+   first-passage condition on x at K").
+3. Part (b) of the corollary (identification of subsequential limits) is not attempted here.
+
+**3.5 Status after Step 3.**
+- PROVED GIVEN (b) of the uniqueness theorem: Lemma DRIFT.
+- PROVED GIVEN (WI-theta) and the window form of Proposition PIN (d)'s hypotheses: Proposition EDGE'.
+- PROVED GIVEN (FI-W), (MON), (R2) and the clause-(0) flow bound: Proposition WI, hence (WI-theta) with
+  theta = B_sharp/(B_sharp + 1).
+- So (EDGE) of row 1233, in check 1242's corrected reading, leaves the input list. In its place: (FI-W) on the window
+  and (MON) for first-passage tops (Proposition EDGE' with WI), or (FI) at pins only (Proposition PIN with Lemma OFF).
+- OPEN: (FI) (in either form) and (MON); the 9.1 hypothesis (e); the base inequality (the infrared seed).
+

@@ -166,3 +166,95 @@ Verdicts so far: (16) HOLDS; (17) HOLDS; D-bound HOLDS; (18) HOLDS; (19) HOLDS; 
 **Counting statement (line 283): HOLDS as a statement about the named scheme.** Two fresh links per recorded product and 3n^3 links give <= 3n^3/2 products of 3 real dimensions each, total <= 4.5 n^3 < 6 n^3 = 9n^3 - 3n^3. On the open set of maximal rank the fibres have dimension >= 9n^3 - 4.5 n^3 > 3n^3 >= dimension of a gauge orbit, and finitely many centre translates cannot fill a positive-measure part of a fibre (Fubini in constant-rank coordinates, positive densities). The source states the scope correctly ("concerns exact reconstruction by these smooth observations").
 
 Verdicts so far: (23) HOLDS (precision: Lusin separation line); (24) HOLDS; iteration statement HOLDS given row 1155 (9) (Step 6); counting statement HOLDS.
+
+### Step 6. Everything else: (1)-(8), the homogeneous restriction, (25)-(27), GUIDE and OPEN paragraphs
+
+**(1) (lines 23-28): HOLDS.** |w - 1|^2 = 2 - 2 Re w for a unit quaternion w, and |q_i q_j q_i^(-1) q_j^(-1) - 1| = |q_i q_j - q_j q_i| = |v_i v_j - v_j v_i| = 2|v_i x v_j|, so each commutator plaquette contributes 2|v_i x v_j|^2. Positivity: e^{beta Re z} expands in powers of chi_{1/2}/2, whose powers have nonnegative multiplicities, so each class-function convolution acts by a nonnegative scalar on each isotypic block; this agrees with Sussman-Alpoge GL3 (outline 2197-2214, c_l = 2 e^{-beta} I_{2l+1}(beta)/beta > 0), which I read at the pin.
+
+**(2) (lines 30-34): HOLDS.** 2D_j(g) = E_mu ||L_z g - g||^2 uses ||L_z g|| = ||g|| and the symmetry mu(z) = mu(z^(-1)). The density lower bound c beta^(3/2) on d(1,z) <= 2/sqrt(beta) follows from I_beta <= (2/pi) int r^2 e^{-2 beta r^2/pi^2} dr <= C beta^(-3/2) and e^{-beta(1 - cos d)} >= e^{-2}. Averaging ||L_s g - g||^2 <= 2||L_{t^(-1)s} g - g||^2 + 2||L_t g - g||^2 over the ball |B(1, 1/sqrt(beta))| >= c beta^(-3/2) gives ||L_s g - g||^2 <= C D_j(g); geodesic subdivision and unitarity give (2).
+
+**(3) (lines 36-45): HOLDS.** C_1C_2C_3 <= C_j for commuting positive contractions. Fibre energy e = int (1 - M^2)|f|^2 + D_j(Mf) is exact. Distance from q_j to the centralizer circle of q_i is arcsin |(v_j)_perp|; outside the w-tube, beta V >= 2 beta r^2 sin^2 w >= c_0 r for w = (beta r)^(-1/2). Mass of g = Mf outside the tube <= eps r e^{-c_0 r}/(1 - e^{-c_0 r}) <= C_0 eps. d(H, sH) = d(s, H) = 4w by bi-invariance and H = H^(-1), so the translated tube is disjoint. Reverse triangle inequality on the tube against (2) with sqrt(beta) d(1,s) = 4/sqrt(r): C(1 + 4/sqrt(r)) sqrt(eps r) <= 5C sqrt(eps). Fibrewise e >= eps r - 400 eps/beta, integrate, use 1 - T >= 1 - M C_j M for each j != i, average over i: c = eps/3, C = 400 eps.
+
+**(4)-(5) (lines 49-65, 71-78): HOLDS.** Scaling: v_i = h x_i, beta h^3 = 1; beta V/2 = h sum |x_i x x_j|^2 + O(h^3), so the two half magnetic factors give -2h sum_{i<j} |x_i x x_j|^2, the coefficient in (4); the electric increment in x has covariance h I, so 1 - C_j ~ -(h/2) Delta_j. L >= 2|x_i|: the two transverse coordinates of x_j give oscillators -(1/2)d^2/dy^2 + 2|x_i|^2 y^2 >= |x_i| each (||(d/dy + 2|x_i| y)u||^2 >= 0). Hence compact resolvent. Simplicity: the spherical-mean argument for u >= 0 with Delta u <= C u gives sup_[0,r] b <= (C r^2/(2d)) sup_[0,r] b, so a nonnegative ground state vanishing at a point vanishes nearby; connectedness then excludes zeros. The min-max upper and lower limits and log(1 - h y) = -h y + O(h^2) give (5).
+
+**Compactness and (6) (lines 67-76): HOLDS.** J_h density h^9 prod (sin(h|x_i|)/(h|x_i|))^2 is Haar in exponential coordinates. From (3) and sin u >= 2u/pi: int sum |x_i| |f|^2 <= C(A + h^2), so the tail outside max |x_i| <= R is <= C(A+1)/R. ||g - f||^2 = int (1-M)^2 |f|^2 <= int (1 - M^2)|f|^2 <= A h. Smoothing error: C(1 + sqrt(beta) h delta) sqrt(A h) = C sqrt(A)(sqrt(h) + delta), since sqrt(beta) h = h^(-1/2). The gradient bound is an L^2 bound (||grad(rho * g)||_2 <= ||grad rho||_1 ||g||_2, then d/dx = h d/dv), which is what local Rellich needs. In (6) the BCH expansion log(e^{-h^(3/2) Z} e^{h x})/h = x - sqrt(h) Z + O(h^(3/2)|Z| + h^2 |Z|^2) is right.
+
+**(7)-(8) (lines 82-93): HOLDS.** (8): for an orthonormal family in the band, the map K = (restrict to max |x_i| <= R) o (smooth at h delta) o M has ||K f - f|| <= 1/2, so N/4 <= sum ||K f_k||^2 <= ||K||_HS^2 <= vol(R-set) ||rho_delta||_2^2 <= C (hR)^9 (h delta)^(-9) = C (R/delta)^9 = C (1+A)^(9 + 9/2). (7): the band part is controlled by (8) and e^{-tA/2}; the rest by (1 - b)^(m-1) Tr T with Tr T <= prod_j I_beta^(-1) = C h^(-27/2). Note: finiteness of sum_k e^{-t eps_k} is not automatic here, since the potential 2 sum |x_i x x_j|^2 vanishes on the set of parallel triples (classical phase space volume infinite, a Simon-type operator); it follows from (8) in the limit (polynomial counting for L), which the proof supplies. The thermal-time statement h m_* -> t_* follows from monotonicity in m.
+
+**Homogeneous restriction (line 95): HOLDS.** Constant links per direction give each commutator and each electric term n^3 times per slab, so the model is (1) at B = beta n^3 and h_B = beta^(-1/3)/n; m log(lambda_0/lambda_k) <= (n/K) h_B (eps_k - eps_0)(1 + o(1)) -> 0 as beta -> infinity. The remark that q_i -> -q_i flips every winding by (-1)^n = +1 on even n, so it is not a seam flip, is right.
+
+**Row 1155 (9), used at line 281: read; HOLDS for the use made.** Row 1155 lines 130-134: E exp{c beta sum_{p in S}(1 - w_p)} <= C^|S| on periodic tori, with the one-mark proof by halving the marked electric coupling and Schatten Hölder; checked in row 1156. For |S| = 1 Jensen gives E(1 - w_p) <= (log C)/(c beta); uniformity in the time period and positivity/simplicity of the transfer top pass it to the vacuum slice law at fixed spatial cube, as line 281 says.
+
+**(25) (lines 287-302): HOLDS GIVEN (PL3), as labelled.** Source read at the pin: outline 3195-3254, (PL1)-(PL3), Theorem "Uniform plateau bound", hypotheses translation invariance and reflection positivity at the sixteen mirror families; the outline index (`sa-index/chunk-03.md` lines 65-68) classes it "proved conditionally" on those hypotheses and PL4-PL16. Checked:
+- single-link density sup e^{|h|}/I(h) <= C(1 + |h|)^(3/2) (cap of radius (1+|h|)^(-1/2), exponent >= |h| - 1/2), |h| <= 6 beta in four dimensions; chain rule and averaging give K = [C(1+beta)^(3/2)]^p for the joint conditional density;
+- (PL1) for A = 1_B(Z): the reflected copy is supported in the open cube and the translated copy in the open translated cube, so the two are disjoint; P(reflected copy in B) = nu_Z(B) by reflection invariance; the conditional probability of the translated copy is <= K H_Z(B) (inversion preserves Haar);
+- positivity: RP at the mirror x_0 = -s/2 (site or bond mirror, both in the hypothesis set) with F = alpha f(Z_0) + beta' f(Z_1) gives the PSD Hankel matrix [[c_s, c_{s+1}], [c_{s+1}, c_{s+2}]]; log-convexity plus c_s <= ||f||^2 forbids an increase, so c_s is nonincreasing and c_t >= lim c_s = Pl(f, f) by (PL3);
+- trace: sum over bins of [(PL3) bound]/nu_Z(B) <= C[(r/n)^2 + (r/n)^3] K sum_B H_Z(B), with n = t - 2r, and monotone increase of the partition compression trace of the positive difference.
+
+**(26) (lines 304-309): HOLDS GIVEN the reconstruction, as labelled.** C_t - C_inf = J^* e^{-tH} 1_{(0,inf)}(H) J >= e^{-t a E} J^* 1_{(0, aE]}(H) J. With t = floor(1/(aE)), e^{taE} <= e and (r/(t - 2r))^2 ~ (a r E)^2, so the right side is O_E(a^2 r^2 K) -> 0 when K = [C(1 + O(log(1/a)))^(3/2)]^p is polylogarithmic (fixed p) or a^2 r^2 K -> 0; t > 2r needs a r < 1/(2E), implied by a r -> 0. The interpretation is limited to equal-time microscopic readings, as the source says.
+
+**(27) (lines 315-321): HOLDS.** On the neutral space, Tr U^u = Tr(P_Y U^u P_Y) + Tr((P_+ - P_Y) U^u (P_+ - P_Y)) and the second term is ||(P_+ - P_Y) U^(u/2)||_HS^2 for U >= 0 (any integer u). The first term minus one tends to zero by (22) because beta_j = O(log n_j) (line 15). The excited sum is nonincreasing in u.
+
+**GUIDE paragraphs (lines 3-21, 99, 258, 287, 325).** Spot-checked against the outline at the pin: lines 6844-6861 and 20781-20801 contain the first-passage data (RF24)-(RF25) with x_i - x_j <= B_sharp (j - i) and h < x_K <= h + B_sharp, so beta_j <= g^(-2) + B_sharp (1 + K_j) = O(log n_j), conditional on the outline's flow statement 3.1, as line 15 implies by calling it conditional; lines 2197-2214 (GL3) and 2315-2335 (GL8, L = P C^(1/2) e^{-V} C^(1/2) P) are the transfer conventions cited; lines 31860-31882 contain the E e^{-E} dE example credited at line 311. No GUIDE paragraph carries a proof step. Credit is given to Sussman and Alpoge (with Claude and Codex), Lüscher, Münster, Koller, van Baal, 't Hooft (through row 1215), and the authors of row 1218's papers.
+
+**OPEN paragraphs (lines 17, 311, 323) and the RESULT line (327): correctly labelled.** Nothing in the file proves the upper bound in (27), the continuum theory or a mass gap, and the file does not claim to. The RESULT line's positive part ("(10)-(15) bound the tunnelling energies and give an eight-state thermal limit"; "(22) bounds the summed excitation weight of all straight winding readings"; "(23) exhibits the missing joint information") matches what Steps 2-5 verified.
+
+Verdicts so far: (1)-(8) HOLD; homogeneous restriction HOLDS; iteration statement HOLDS (row 1155 (9) read); (25) HOLDS GIVEN (PL3); (26) HOLDS GIVEN reconstruction; (27) HOLDS; labels honest.
+
+### Step 7. Is the main comparison a restatement of an earlier row?
+
+**No.** Searched: `library/open-core.md` (no gap-lane entry; no match for tunnelling, electric flux, eight states, observation trace), the FINISH rows (only this row and row 1218's reading of Zeng's conditional tunnelling route in the literature), and the earlier gap rows by grep ("eight states", "tunnel", "Agmon", "observation trace", "PL3", "Hilbert-Schmidt"). The nearest earlier statements, and what row 1227 adds:
+
+- Row 1143 (7) and (10) (`gap-solve-astra62.md` lines 112-170): charged bottom energies <= 2K n/beta and <= 2 4^k k^2 K n/beta, polynomial in 1/beta, all n >= 3. Row 1227 (10) sharpens this at fixed n to C_n e^{-c_n sqrt(beta)}, and (11) adds the matching lower bound e^{-C_n sqrt(beta)}, new.
+- Row 1215 (5) (qualitative coalescence lambda_{j,+}/lambda_0 -> 1 at fixed n) and (20) (fixed-period level count with neutral fraction 1/8). Row 1227 (11) quantifies the first neutral level, e^{-C beta^(1/4)(1 + log beta)} <= E_{1,+} <= C_n d_beta, and (14) is a different time scale m = exp(beta^gamma), where the full trace tends to 8 and the neutral to 1. Consistency checked: (20)'s count of order beta^(3/2) log beta neutral levels below x/n lies above the cluster, and E_{1,+} ~ beta^(-1/3) (heuristic) is inside (11).
+- `gap-next3-max.md` line 499, item (MULTIPLET): an eight-state top multiplet proposed as a hypothesis on growing boxes. (14) proves the fixed-n version; it does not prove the multiplet hypothesis.
+- `gap-brainstorm-max.md` item 37: Agmon estimates for tunnelling, proposed. Row 1227 executes it at fixed n and credits it (line 99).
+- Row 1161 (24): one charged eigenfunction's overlap with the straight-winding sigma-field. Row 1227 (22) is the trace version over all neutral levels, through the new comparison lemma (20), using row 1161's density bound (23); row 1227 says so at line 254.
+- Row 1211 (18): the neutral trace against a chi-square of the joint wall law; a different trace, as line 254 says.
+- (PL3) was used before in `cluster-port.md` and `ph1.md` (clustering, Hilbert space), not for a trace over all functions of a link array; (25) is new as a statement here and is a corollary of Sussman-Alpoge's (PL3), credited.
+
+So the main comparison (fixed cube: neutral time <= exp(C beta^(1/4) log beta) against full time >= exp(c sqrt(beta)); physical scale: each array's excess trace small, (22)-(23), while the joint arrays carry the whole neutral trace) is new relative to these rows. It builds on rows 1143, 1161, 1171 and 1215 and cites each.
+
+### Step 8. Verdict table and result
+
+Provenance: Claude Opus 5.5, max effort, Mac mini worker 2, checkout at commit 49128e805 (author pin `bb8b3eeb2`), by hand, one reading by one other-provider model; not an audit, no status change. No numeric run was made. Finished 2026-11-20T06:16Z (date -u).
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| (1) one-vertex transfer, positivity | 23-28 | HOLDS |
+| (2) translation bound | 30-34 | HOLDS |
+| (3) confinement along commuting directions | 36-45 | HOLDS |
+| (4)-(5) Friedrichs limit, spacing limit, simplicity | 49-65, 78 | HOLDS |
+| compactness after rescaling, (6) generator limit | 67-76 | HOLDS |
+| (7)-(8) heat-trace limit, polynomial count | 82-93 | HOLDS (remark: finiteness of the limit sum comes from (8), as the proof supplies) |
+| homogeneous restriction | 95 | HOLDS |
+| (9) fixed-cube localization | 101-128 | HOLDS |
+| (10) charged energies <= C_n e^{-c_n sqrt(beta)} | 132-138 | HOLDS |
+| (11) lower bounds; E_{1,+} <= C_n d_beta | 140-146, 170 | HOLDS |
+| (12)-(13) band set, averaged kernel bound | 148-168 | HOLDS |
+| (14) eight-state thermal limit | 174-182 | HOLDS |
+| (15) thermal times | 184-190 | HOLDS |
+| (16) collective winding estimate, beta >= n^32 | 194-203 | HOLDS |
+| (17) bridge bound | 205-210 | HOLDS |
+| D-bound | 212 | HOLDS |
+| (18) restricted neutral trace | 214-221 | HOLDS |
+| (19) observation trace | 225-234 | HOLDS |
+| (20) comparison lemma | 236-241 | HOLDS (precision: two-sided stationary chain, as line 249 uses) |
+| (21) eigen-expansion | 243-247 | HOLDS |
+| (22) winding-array weight bound | 249-254 | HOLDS |
+| (23) joint determination with small individual traces | 260-272 | HOLDS (precision: one Lusin-separation line identifies the trace sigma-field with the invariant one modulo null sets) |
+| (24) paired readings | 274-279 | HOLDS |
+| iteration statement l <= C/beta, v >= c beta^(3/2) | 281 | HOLDS |
+| counting obstruction | 283 | HOLDS |
+| (25) inverse-square trace bound | 289-302 | HOLDS GIVEN (PL3), as labelled |
+| (26) spectral-weight corollary | 304-309 | HOLDS GIVEN the reconstruction, as labelled |
+| (27) exact split | 315-321 | HOLDS |
+| OPEN paragraphs and RESULT line | 17, 311, 323, 327 | labels correct; RESULT holds as a summary |
+
+Counts: 28 labelled statements or groups checked; 26 HOLD, 2 HOLD GIVEN their labelled inputs; none HOLDS AFTER CORRECTION; none FAILS. The two precisions change no mathematics.
+
+**Inputs and independence.** Inputs read for the steps that use them: row 1215 lines 28-40, 50-61, 67-88, 269-299 (checked HOLDS in row 1221); row 1161 lines 343-358 (row 1162, S39-S40, HOLDS); row 1171 lines 17-30 (row 1172, HOLDS); row 1155 lines 130-134 (row 1156, HOLDS); Sussman-Alpoge outline 3195-3254 at `31a47c543775` (their (PL3), a theorem under translation invariance and sixteen-family reflection positivity, "proved conditionally" in our index). Rows 1156, 1162, 1172 and 1221 were also written by Claude Opus 5.5, so for those inputs this check is the same model again and is not an independent check of them. Lines 11 and 325 of the source call row 1215 "pending checks at the pin"; row 1221 has since checked it (HOLDS). The lead may update that wording.
+
+**What stays open (as the source says).** An upper bound strictly below 1/2 on the last term of (27) at one physical side, hence the physical thermal test; the matched continuum construction; the four-dimensional SU(2) mass gap. The fixed-cube results (9)-(15) carry n-dependent constants and do not reach the physical scaling n = L/a; (22)-(24) show why per-array estimates cannot close (27).
+
+RESULT: check of row 1227 (`library/gap-solve25-astra62.md`) by hand by Claude Opus 5.5 max (cross-provider), row 1230: every statement HOLDS, none FAILS, none needs correction. The positive claims hold: the fixed-cube tunnelling bounds (10)-(13) and (15) (charged energies between e^{-C_n sqrt(beta)} and C_n e^{-c_n sqrt(beta)}, first neutral level between e^{-C_n beta^(1/4)(1+log beta)} and C_n beta^(-1/4)(1+log beta)), the eight-state thermal limit (14) (full trace to 8, neutral trace to 1 at m = exp(beta^gamma), 1/4 < gamma < 1/2), the winding-weight bound (22) via the new trace-comparison lemma (20), and the joint-information example (23) with the paired readings (24). (25)-(26) hold given Sussman-Alpoge's (PL3) and the reconstruction, as labelled. There are two wording precisions: the two-sided chain in (20), and a Lusin-separation line in (23). The main comparison is not a restatement: it sharpens row 1143 (7), (10) and quantifies row 1215 (5), and (22) is the trace version of row 1161 (24). OPEN, as the source says: the upper bound in (27), the matched continuum theory and the SU(2) mass gap.

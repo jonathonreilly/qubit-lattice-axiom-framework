@@ -7,6 +7,7 @@ Started 2026-11-20T15:42Z (date -u). Claude Opus 5.5 max, Mac mini worker 2. Res
 
 ## Status (updated in place)
 
+- Step 8 (labels, state, checks, credits, RESULT) written 2026-11-20T16:27Z. Item finished.
 - Step 7 (kappa_0 > 6 removed: Corollary U') written 2026-11-20T16:26Z.
 - Step 6 ((H-an'), (H-tail) from the account's apparatus: Proposition HAN) written 2026-11-20T16:23Z.
 - Step 5 (state of the carry after this row) written 2026-11-20T16:18Z.
@@ -29,9 +30,10 @@ Read at pin 59f4e99fc: `GOAL.md` in full; `FINISH.md` L1-90 and L299-357, this r
 rows 1255-1298 and 985-995; `parts/gap.md` L1-104 and the obligation headers; `library/prior/gap-onebound-read-sol.md`
 (row 1218) in full; Steps 0-3 of `library/gap-mini-solve-aq-opus.md` (row 1284, running on another worker); Step 6 of
 `library/gap-mini-solve-as-opus.md` (row 1293); `library/gap-mini-solve-ao-opus.md` L75-151 (row 1278). Sources fetched
-by URL into a scratch folder outside the repository: Sussman and Alpoge's CA-III at 31a47c543775
-(`theorem_0_complete_account_raw_III.tex`) and `YM4/EM/YM4_EM.tex` at c7fef8b21b58 (with Claude and Codex as authors
-of their text; after Balaban).
+by URL into a scratch folder outside the repository: Sussman and Alpoge's CA-I, CA-II, CA-III at 31a47c543775
+(`theorem_0_complete_account_raw_I.tex`, `_II.tex`, `_III.tex`) and `YM4/EM/YM4_EM.tex`, `YM4/GI/YM4_GI.tex`,
+`YM4/SI/YM4_SI.tex` at c7fef8b21b58 (with Claude and Codex as authors of their text; after Balaban). Later steps cite
+these by line.
 
 What the record fixes (pointers only):
 1. Modulo the ultraviolet carry, the gap clause reads one lattice input at one physical size: (N-phys) (row 1161), or
@@ -46,7 +48,8 @@ What the record fixes (pointers only):
    account; the cut part of (FC-1) ((E0)-(E6), (TH)); (H2)-(H3) (row 1278; row 1284 item B left the core-path clause
    OPEN); `9.1:prop-blind-site-expansions` (Proof outstanding in the account, CA-III L16558-16560); (V9) (reading N2
    FAILS in check 1288); (DET)'s remaining normalisation (rows 993-994); the account's premises.
-4. Balaban's CMP 116 is not in the paper folder and Project Euclid answers with a bot check (rows 1264, 1060-era notes);
+4. Balaban's CMP 116 is not in the paper folder and Project Euclid answers with a bot check (row 1264's RESULT; several
+   library notes record the same bot check);
    so every input that must be read against CMP 116 is blocked on this machine, not refuted.
 5. Row 1284 (another worker, running) attacks the parity envelope (PE) without the localised expansion (log-concavity
    and Helffer-Sjostrand on the global step integral, its Step 3). Rule 0a: I do not attack (PE), (H-an), (H-flip).
@@ -73,7 +76,8 @@ Plan, one item per step, each appended before the next:
   psi-formed member needs connectedness of the data domain at all, read against EM's own covariance argument.
 - Step 4: chosen after Step 3 from (V9), (DET)'s normalisation, kappa_0, by what the sources decide.
 (Plan as executed: Step 3 became Lemma SYM on (H-flip), found while reading row 1293's Theorem PE; the H2' clause
-moved to Step 4; Step 5 records the carry's state; Step 6 attempts the cut half of (FC-1).)
+moved to Step 4; Step 5 records the carry's state; Step 6 derives (H-an'), (H-tail) from the account's own cluster
+expansion apparatus; Step 7 removes kappa_0 > 6; Step 8 gives labels, checks and the RESULT.)
 Moves: the one-cutoff carry on the pin route (rows 1233, 1256-1293). Success removes named inputs from row 1293's list;
 failure names the first step that does not close. Neither changes the seed.
 
@@ -320,9 +324,13 @@ values for Corollary FC-s). In the frame's scaled chart (Lemma SC, Step 2) keep 
 mu_W^(tau_0) with precision tau_0 H_A + H_G (theta-free, h-free; it is the actual step's Gaussian at that weight, EM
 L563-578), and the cut |B| <= rho (h-free, tau-free). Put every remaining factor into elements, localized by the account's localization of the action and of the inherited list (the same pieces as in
 the actual step):
- (i)   -tau h^(-2) [A_e(hB) - A_e^(2)(hB)]   (non-quadratic part of an action piece A_e of the physical field hB);
+ (i)   -tau h^(-2) R_(3,e)(hB)              (R_(3,e): the part of order >= 3 of an action piece A_e of the physical
+                                              field phi = hB; constants are field-independent and go to the scalar, and
+                                              the linear parts sum to zero over e because the background is critical
+                                              along the fibre, (S)(d) of row 1293, so both are dropped);
  (ii)  -(tau - tau_0) A_e^(2)(B)             (the weight shift, h-free since h^(-2) A_e^(2)(hB) = A_e^(2)(B));
- (iii) -h^(-2) [Gs_e(hB) - Gs_e^(2)(hB)]     (non-quadratic part of the gauge weight);
+ (iii) -h^(-2) R^G_(3,e)(hB)                 (the same for the gauge weight: Gs(W, 0) = 0 and its first variation
+                                              vanishes at the gauge condition, (S)(d));
  (iv)  log J_e(hB) - log J_e(0)              (fibre density and pivot pieces);
  (v)   S_(f,e)(U_k(Phi(W, hB))) - S_(f,e)(U_(k+1)(W))   (inherited list).
 At h = g and tau = x/theta this is the actual integrand (EM em:eq-actual-step) written with the tau_0 Gaussian, so the
@@ -333,16 +341,16 @@ expansion of 6.1 applied to it is a localization of the actual total; it is not 
 piece of the integrand is holomorphic in the physical field phi on the polydisc |phi| <= a (a fixed, from Balaban's
 analyticity domain) with |A_e|, |A_e^(2)|, |Gs_e|, |log J_e|, |S_(f,e)| <= M e^(-kappa d(e)) there, and let the
 expansion read B on a complex collar polydisc |B| <= c_B rho. Let |h| <= c_* rho^(-3) and |tau - tau_0| <= c_tau rho^(-2),
-and let theta be above a floor such that c_B c_* rho^(-2) <= a/2. Then on that domain
+and let theta be above a floor such that c_B c_* rho^(-2) <= a/2. Then on that domain (with C_M bounding each kind)
     |v_e| <= C_M (c_* + c_tau) e^(-kappa d(e)),   C_M := 8 M (c_B/a)^3 + M c_B^2/a^2.
 *Proof.* |hB| <= c_B c_* rho^(-2) <= a/2. For (i) and (iii) the Cauchy remainder of order three of a function bounded
-by M e^(-kappa d) on |phi| <= a gives |A_e(phi) - A_e^(2)(phi)| <= 2 M e^(-kappa d) (|phi|/a)^3 for |phi| <= a/2, so
+by M e^(-kappa d) on |phi| <= a gives |R_(3,e)(phi)| <= 2 M e^(-kappa d) (|phi|/a)^3 for |phi| <= a/2, so
 |h^(-2) [...]| <= 2 M e^(-kappa d) |h| (c_B rho/a)^3 <= 2 M (c_B/a)^3 c_* e^(-kappa d); |tau| <= 2. For (ii),
 |A_e^(2)(B)| = |h|^(-2) |A_e^(2)(hB)| is a quadratic form bounded by M e^(-kappa d) (|B|/a)^2 (Cauchy) on the collar
 polydisc, so |(tau - tau_0) A_e^(2)(B)| <= c_tau rho^(-2) M (c_B rho/a)^2 e^(-kappa d). For (iv), (v) the first-order
 Cauchy bound gives at most 2 M e^(-kappa d) |hB|/a <= M c_B c_* rho^(-2) a^(-1) e^(-kappa d), which is smaller. QED
-(The linear term of (v) is not zero, but it carries |hB|; the linear terms of (i), (iii) vanish because the background
-is critical and meets the gauge condition, (S)(d) of row 1293.)
+(The linear term of (v) is not zero, but it carries |hB|. The pieces A_e, Gs_e, J_e, S_(f,e) and their analyticity
+domain are the integrand's localisation as the account's regular step uses it, so this reading is part of (CE).)
 
 **6.5 Proposition HAN ((H-an') and (H-tail) with no new supplier input; PROVED GIVEN (CE) below, (S), Lemma SC).**
 (CE): the account's regular-step expansion (6.1) has the form of Lemma PH, with the reference Gaussian, its decoupling,
@@ -368,19 +376,21 @@ a checker should look for that first.
 
 **6.6 Consequences (PROVED GIVEN (CE), (S), Lemma SC).**
 - Theorem PE of row 1293 (via Corollary PE' of Step 3) holds with r = c_* rho^(-3): f_(k+1) - b(F(0)) is at most
-  C a^(-2) K (g/r)^2/(1 - (g/r)^2) = O(theta^(-1) rho^6); with (b) the h = 0 value is a tail. No input of Theorem PE is
+  C a^(-2) 2K (g/r)^2/(1 - (g/r)^2) = O(theta^(-1) rho^6) (EM's extraction bound |b_j(E)| <= C a^(-2) times the norm,
+  EM L1201); by (b) and (T), b(F(0)) is the coefficient of a tail-sized total, at most C a^(-2) K_t e^(-c rho^2). No input of Theorem PE is
   open beyond (S), (H-tail)'s reading (now (b)) and (CE).
 - Corollary FC-s of row 1293 holds with sigma = c_tau rho^(-2) in place of sigma_*, centred at tau_0 := tau (above a
   floor |tau - tau'| <= 2|zeta|/theta <= sigma/2, since |zeta| <= C theta^(1/2) polylog): with |zeta| = |theta - theta'|,
       |||T(h, tau) - T(h', tau')||| <= 2 K_t e^(-c rho^2)
-          + K [ rho^6 |zeta|/(c_*^2 theta theta') + 2 rho^8 |zeta|/(c_*^2 c_tau theta^2) + 2 rho^12/(c_*^4 theta^2) ](1 + o(1)),
+          + C K [ rho^6 |zeta|/theta^2 + rho^8 |zeta|/theta^2 + rho^12/theta^2 ],   C = C(c_*, c_tau),
   using |h^2 - h'^2| = |zeta|/(theta theta'), |tau - tau'| <= 2|zeta|/theta (x/theta' <= 2), the even Cauchy estimate
   in h and the Cauchy estimate in tau on the disc of radius sigma. With the account's drift |zeta| <= C theta^(1/2)
   (log theta)^(p_0) this is O(theta^(-3/2) polylog), summable along a pin run (theta_k growing linearly). The smaller
   tau-disc costs one factor rho^2, a polylog; nothing else changes.
-- So the smooth half of the one-cutoff carry (Theorem PE, 5.1-5.2 given kappa_0 > 6, Corollary FC-s) rests on the
-  account's own regular-step apparatus (CE), the readings (S), Lemma SC, and for 5.1-5.2 the supplier premise kappa_0 > 6.
-  (H-flip), (S-chart), (H-an), (H-an') and (H-tail) are no longer separate inputs.
+- So the smooth half of the one-cutoff carry (Theorem PE, Corollary FC-s, and (U) by Step 7) rests on the account's
+  own regular-step apparatus (CE), the readings (S) and Lemma SC. (H-flip), (S-chart), (H-an), (H-an') and (H-tail) are
+  no longer separate inputs. Only row 1293 5.1 (the polylog drift, which Step 7 shows no consumer needs) still uses the
+  supplier premise kappa_0 > 6.
 
 **6.7 What a checker should redo first.** (1) That the account's regular-step expansion is of the form of Lemma PH with a
 fixed Gaussian (at tau_0), decoupling, cut, partitions and contours, when the weight shift (ii) is moved into
@@ -418,3 +428,54 @@ here). So kappa_0 > 6 leaves the input list. EM's own standing hypothesis kappa_
 EM's full chain, as before.
 
 (Rows (H-an), (H-an'), (H-tail) and kappa_0 > 6 of the Step 5 table are superseded by Steps 6 and 7.)
+
+## Step 8. Labels, state, checks, credits (written 2026-11-20T16:27Z by date -u)
+
+**8.1 Labels.** Author only (Claude Opus 5.5 max, Mac mini worker 2); checked by no one; no numeric run; no subagent.
+
+| Statement | Label | Rests on |
+|---|---|---|
+| Lemma SC (Step 2): the frame-theta step integrand in B = A/h is the h-family at h = theta^(-1/2), theta-free reference, cut |B| <= rho | PROVED, elementary | substitution |
+| (S-chart) for the account's coordinates | READ | CA-I L149155-149171; EM L502-505, L333-345, L563-578 |
+| (T): every consumer of Theorem PE and Corollary FC-s reads only physical totals | READ | EM L1202-1204, L1218-1219, L215-218, L251-273; row 1267 3.1; row 1293 5.1-5.3 |
+| Lemma SYM (Step 3): the even part in h of any localisation family has the same total (even cut) or differs by the one-scale cut comparison D/2 | PROVED, elementary | (T), Lemma 3.3 of row 1293, B -> -B |
+| Corollary PE' : Theorem PE without (H-flip) | PROVED GIVEN (S), (H-an) for some localisation, (H-tail) | Lemma SYM, row 1293 Lemma 3.4 |
+| Proposition H2-cov (Step 4): covariance clause of cross-admission with no connectedness | PROVED GIVEN the margin reading (M) | EM L742-748, L643-653, L333-345 |
+| (M): the supplier's covariance requirement holds with a fixed relative margin | ARGUED (a reading of EM's margin conventions, L507-509, L656) | - |
+| Remark 4.3: the small-curvature core is disconnected on large tori | ARGUED; Luscher's charge recalled, not read | - |
+| Lemma PH (Step 6): parameter holomorphy of an expansion with a parameter-free majorant | PROVED, elementary | Weierstrass; the account's Lemma 4.22:lem-cluster-manifold in the form used |
+| Lemma EB (Step 6): element bounds C_M (c_* + c_tau) e^(-kappa d) at complex (h, tau) | PROVED GIVEN the analyticity-domain reading | Cauchy estimates; CA-I L4085-4089 |
+| Proposition HAN (Step 6): (H-an') on |h| < c_* rho^(-3), |tau - tau_0| < c_tau rho^(-2), and (H-tail) in total form | PROVED GIVEN (CE), (S), Lemma SC | Lemmas PH, EB, SYM |
+| (CE): the account's regular-step expansion has the form of Lemma PH and converges for elements below a fixed threshold | READ as the account's own premise (it quotes CMP 116 Lemma 3 and (2.41)) | CA-I L4073-4196, L8778-8781, L58700-58760, L80178-80239 |
+| 6.6: Theorem PE and Corollary FC-s (with sigma = c_tau rho^(-2), one extra factor rho^2) | PROVED GIVEN (CE), (S), Lemma SC | Proposition HAN, (T) |
+| Corollary U' (Step 7): (U) given (PE) with the account's own drift | PROVED, arithmetic | row 1280 Lemma W, Proposition W2; drift READ at III:69015-69017; 2 p_0 > 1 (EM L873-876) |
+| kappa_0 > 6 is not an input of the carry | consequence of Corollary U' and row 1293 5.3 | - |
+
+**8.2 The one-cutoff carry on the pin route after this row.** Leave the list: (S-chart), (H-flip), (H-an), (H-an'),
+(H-tail) as separate inputs, kappa_0 > 6, and the connectedness clause of (H2). Smooth half of the one-step frame
+comparison and (U): PROVED GIVEN (CE), (S) and the margin reading (M). Cut half: row 1268's (E0)-(E5), which are the same
+apparatus as (CE) together with Balaban's cut decomposition (CMP 116 (2.3), whose signs the account lists among its
+regular-step ingredients, CA-I L58748) and the one-term bounds; I did not check that the account's regular step gives
+(E3) in row 1268's exact form, so the cut half is unchanged in label. Still open on the carry:
+`9.1:prop-blind-site-expansions` (the account's own "Proof outstanding"), (V9) (check 1288), (DET)'s normalisation
+(rows 993-994), the account's premises including (CE). The infrared seed ((N-phys), (SL)/(RR), the seed at the pin
+route's base datum) was not attacked (Step 1): every route I could name is on file with its first failing step.
+
+**8.3 What a checker should redo first (cross-provider, one reading).** (1) (T) and Lemma SYM: that row 1293's 5.1-5.3
+and row 1260's Lemma GR read only coefficients and |||.|||, never the prescribed family's own norm. (2) Proposition
+HAN: the re-split of 6.3 with the tau_0-Gaussian, Lemma EB's constants, and above all (CE): whether the account's
+regular-step expansion tolerates elements of a fixed small size eps_0 (and not only of the step's own small size,
+which tends to 0); the robustness paragraph of 6.5 says what a power-law threshold would break. (3) Corollary U' and
+its use of the account's drift D(y) of order y^(1/2) polylog. (4) Proposition H2-cov and the reading (M). (5) Lemma SC.
+
+**8.4 Credits.** Ethan Sussman and Levent Alpoge, the complete account CA-I, CA-II, CA-III at 31a47c543775 and YM4_EM,
+YM4_GI at c7fef8b21b58, with Claude and Codex as authors of their text, in particular CA-I Lemma 4.22:lem-cluster-manifold
+(the parameter principle of Step 6) and EM's covariance argument (Step 4). T. Balaban, CMP 116 and CMP 119, through the
+account's citations; the construction is Balaban's throughout. M. Luscher, CMP 85 (1982), recalled for Remark 4.3. Rows
+1256, 1260, 1267, 1268, 1278, 1280, 1293 of this lane (Claude Opus 5.5, Mac mini workers 2 and 3) for the carry these
+steps extend, row 1284 (running) for the item-B analysis, and checks 1263, 1266, 1288 (gpt-6.2-astra).
+
+**8.5 Time.** 15:42Z-16:29Z by date -u (the last edits after 16:27Z corrected Step 6: the linear Taylor terms, the
+reference weight tau_0, the FC-s constants).
+
+RESULT: Row 1294 (Claude Opus 5.5 max, Mac mini worker 2, 15:42Z-16:29Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed was not attacked (no route off the record). Worked item: the one-cutoff carry on the pin route (rows 1256-1293). PROVED: Lemma SC (the frame-theta step integrand is exactly the chart-scale family at h = theta^(-1/2) with a theta-free reference; with CA-I L149163-149171 and EM L502-505 this settles (S-chart)); Lemma SYM (every consumer reads only physical totals, the total is exactly even in h, so the even part of ANY localisation family serves, and (H-flip) leaves the list); Lemma PH and Lemma EB, and from them, GIVEN (CE) (the account's own regular-step expansion, quoted from CMP 116, in the form of its Lemma 4.22:lem-cluster-manifold), Proposition HAN: (H-an'), (H-tail) and so Theorem PE and Corollary FC-s of row 1293 hold with no further supplier input (the weight disc shrinks to c_tau rho^(-2), costing one factor rho^2); Corollary U' ((U) follows from (PE) with the account's own drift by row 1280's Proposition W2, so kappa_0 > 6 leaves the list); PROVED GIVEN the margin reading (M), Proposition H2-cov (cross-admission needs no connectedness of the core; ARGUED remark: by Luscher's charge the small-curvature core is disconnected on large tori anyway). OPEN: (CE) and (M) as readings, the cut half (E0)-(E5) of (FC-1), 9.1:prop-blind-site-expansions, (V9), (DET)'s normalisation, the account's premises, the infrared seed and the mass gap. Output library/gap-mini-solve-at-opus.md.

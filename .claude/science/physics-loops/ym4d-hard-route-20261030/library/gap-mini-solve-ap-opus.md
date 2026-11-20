@@ -9,7 +9,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN. Numerics guide only.
 
 ## Status
 
-Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): done 2026-11-20T14:01Z. Step 3 (statements and proofs): done 14:06Z. Step 3b ((U-dom) from Balaban's decay estimate): done 2026-11-20T14:08Z, stays ARGUED. Step 4 ((H2)-(H3) of row 1267 from EM's definitions): in progress.
+Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): done 2026-11-20T14:01Z. Step 3 (statements and proofs): done 14:06Z. Step 3b ((U-dom) from Balaban's decay estimate): done 2026-11-20T14:08Z, stays ARGUED. Step 4: (H2)-(H3) set aside (EM states admission informally; only an ARGUED reading is possible). Step 4 became the parity envelope (PE): written 2026-11-20T14:16Z. Step 5 (state, labels, RESULT): in progress.
 
 ## Step 0. Record read (statements about the record, not evidence; written 2026-11-20T13:48Z by date -u)
 
@@ -193,32 +193,41 @@ the data region; the derivative bound CMP 102 (190) (p. 308: the derivative of t
 decays like exp(-delta_0 d(y, y')/8)) is the tool for that boundary effect. (U-dom) with Delta of order eps_k, from
 (3.13) alone, would NOT suffice: the shifted thresholds T - Delta would be negative.
 
-**3.4 Lemma SW (sandwich comparison of two cuts; PROVED, given its hypotheses).** Setting of row 1268 3.1 and 7.4, with
-one base expansion: frame psi's kernel in its own presentation, family a, base cut chi_+ := prod_v 1[N_v < T_v + Delta]
-(Delta := Delta_k). Let chi^1, chi^2 be Borel functions with
+**3.4 Lemma SW (sandwich comparison of two cuts; PROVED, given its hypotheses; restated 14:25Z after a self-check
+found that the first version's proof did not treat elements whose selected unit is already a complement unit of the
+base datum).** Setting of row 1268 3.1 and 7.4, with one base expansion: frame psi's kernel in its own presentation,
+family a, base cut chi_+ := prod_v 1[N_v < T_v + Delta] (Delta := Delta_k), polymer gas with data t, activities
+F^+(X) = sum_(t in Data(X)) Lambda_t[G_t]. Let chi^1, chi^2 be Borel functions with
     chi^i = chi_+ prod_(e in E_i) (1 + m^i_e)   on the integration domain   (i = 1, 2),                    (3.1)
 where each m^i_e is Borel, depends only on the field in a region covered by a set sigma(e) of at most m_sig units of a,
 each unit of a lies in at most m'_sig of the sets sigma(e), e in E_i, and
     |m^i_e| <= sum_(v in sigma(e)) 1[N_v >= T_v - Delta].                                                   (3.2)
-Put T_- := min_v (T_v - Delta) and tau := m_sig e^(c_A) exp(-(1/2) gamma_2 T_-^2 / m'_sig). Hypothesis (E+): the
-supplier's expansion of the base integral int K chi_+ e^Phi satisfies (E1)-(E4) of row 1268 (with (E2') on the base
-domain and the one-term bound (E3) with Gaussian absorption at the units of a), and stays convergent with margin eps,
-majorant Bbar and pointed norm Nbar when one more type of Mayer element is added, each element of activity at most tau,
-supported on the units sigma(e) (the form of row 1268's (E6)). Then for every Y
+Expanding prod_e (1 + m^i_e) = sum over subsets E of E_i of prod_(e in E) m^i_e and inserting it into the base
+expansion gives data (t, E), with integrand G_t prod_(e in E) m^i_e, attached to polymers that contain the regions of
+the elements. Hypothesis **(E+)**: there are tau in (0, 1] and weights omega(t, E) >= 0, the same for i = 1, 2, with
+|Lambda_t[G_t]| <= omega(t, empty) and |Lambda_t[G_t prod_(e in E) m^i_e]| <= tau omega(t, E) for E nonempty, such that
+Fbar(X) := sum over data (t, E) of X of omega(t, E) satisfies the convergence criterion (E4) of row 1268 with margin
+eps, majorant Bbar and pointed norm Nbar. Then for every Y
     |Phi^1(Y) - Phi^2(Y)| <= (2 tau/eps) Bbar(Y),
 and the pointed difference of the two localized logarithms has EM norm at most (2 tau/eps) Nbar.
-*Proof.* Expand prod_e (1 + m^i_e) = sum over subsets E of E_i of prod_(e in E) m^i_e, and insert it in the base
-expansion as new Mayer elements; a datum t of the base expansion with element set E has integrand G_t prod_(e in E)
-m^i_e. By (3.2) and idempotence of indicators,
-    |prod_(e in E) m^i_e| <= sum_s prod_(v in s(E)) 1[N_v >= T_v - Delta],
-the sum over selections s with s(e) in sigma(e), at most m_sig^|E| of them, and |s(E)| >= |E|/m'_sig. For each
-selection, prod_(v in s(E)) 1[N_v >= T_v - Delta] <= exp(-(1/2) gamma_2 T_-^2 |s(E)|) prod_(v in s(E))
-e^((1/2) gamma_2 N_v^2). The one-term bound (E3) absorbs the Gaussian factors at cost e^(c_A |s(E)|) <= e^(c_A |E|).
-So the datum is bounded by tau^|E| times the bound of the same datum without the elements. Hence
-|F^i(X) - F^+(X)| <= tau Fbar(X) and |F^i(X)|, |F^+(X)| <= Fbar(X), where F^+ is the base activity and Fbar counts
-data with element sets E with the weight tau^(max(|E| - 1, 0)). Lemma TL* of row 1268 (7.4) with lambda = tau gives
+*Proof.* The data with E empty give exactly F^+(X), for i = 1 and i = 2. So |F^i(X) - F^+(X)| <= tau Fbar(X) and
+|F^i(X)|, |F^+(X)| <= Fbar(X), using tau <= 1. Lemma TL* of row 1268 (7.4) with lambda = tau gives
 |Phi^i - Phi^+| <= (tau/eps) Bbar for i = 1, 2, and the triangle inequality gives the claim; the same for the pointed
-norms. QED
+norms, EM's norm being monotone. QED
+**Where (E+) comes from (ARGUED).** Take a datum (t, E) and a selection s with s(e) in sigma(e). By (3.2) and
+idempotence of indicators, |prod_(e in E) m^i_e| <= sum_s prod_(v in s(E)) 1[N_v >= T_v - Delta], at most m_sig^|E|
+selections. The base datum carries the complements 1[N_u >= T_u + Delta], u in P(t), which imply the indicators of
+the selected units in s(E) n P(t). For the selected units outside P(t), 1[N_v >= T_v - Delta] <=
+exp(-(1/2) gamma_2 T_-^2) e^((1/2) gamma_2 N_v^2) with T_- := min_v (T_v - Delta), and the one-term bound (E3) absorbs
+the Gaussian factors at cost e^(c_A) each. So each element whose selected unit is new to the datum earns a factor of
+at most e^(c_A) exp(-(1/2) gamma_2 T_-^2) (shared among at most m'_sig elements selecting the same unit), and the
+elements whose selected unit is a complement of the datum earn nothing but are at most m'_sig |P(t)| in number. If E is
+nonempty, either some selected unit is new, which gives the factor tau, or all lie in P(t), which is then nonempty and
+whose complements give the factor exp(-(1/2) gamma_2 T_-^2) as in row 1268's proof of Lemma TL ((|P| - 1)_+ in Fbar).
+So (E+) holds with tau := m_sig e^(c_A) exp(-(1/2) gamma_2 T_-^2 / m'_sig) and omega(t, E) := the base majorant of t
+times (m_sig e^(c_A) e^(-(1/2) gamma_2 T_-^2 / m'_sig))^(|E| - 1) for the new-unit elements and (m_sig e^(c_A))^(number
+of the others), provided the base majorant's complement tails absorb the last factor and the sum satisfies (E4):
+that is the supplier-structure part of the hypothesis, of the same kind as row 1268's (E4) and (E6).
 
 **3.5 Corollary U (the two frames' cuts in sandwich form; PROVED GIVEN (U-dom)).** At a window level, with chi^2 :=
 frame psi's cut prod_v 1[N_v < T_v] and chi^1 := frame phi's cut prod_w 1[N'_w < T'_w] (in frame psi's presentation),
@@ -266,3 +275,73 @@ interpolation; that needs the minimal configuration of CMP 119 (1.2), (3.4) to e
 interpolating family of determining sets, which is part of Balaban's variational theory (CMP 95, 96, 99, 102) and is
 not rebuilt here. (U-dom) stays ARGUED. It is a statement of the same kind as Balaban's own (3.6)-(3.9) and as the
 readings (E0)-(E6) of row 1268, and the account would have to state it.
+
+## Step 4. A second route to (U), and a sharper envelope: parity of the fluctuation integral (written 2026-11-20T14:16Z by date -u)
+
+(H2)-(H3) of row 1267 were looked at first: EM defines admission descriptively (EM:525-536, EM:612-716; no definition
+environment), so only an ARGUED reading of them is possible here; they are left as they stand. Instead, the reading of
+EM's coefficient theorem for Step 3 showed where the windows of Lemma W come from, and suggests a structural fix.
+
+**4.1 READ.** EM Theorem `em:thm-coefficient-envelope` (EM:1355-1376) gives |f_(k+1)| <= C theta_k^(-1/2)
+(log theta_k)^(p_0); its proof (EM:1378-1384) takes f_(k+1) = b_(k+1)(F^u_(k+1)) and bounds it by the norm
+||F^u|| <= K delta(theta_k) of the one-step output (EM:679-684) times a fixed extraction constant. The coefficient is
+the second moment of the companion kernel, the Hessian of the pair totals at the trivial datum P_o (EM:1186-1204).
+This envelope is the source of the theta^(1/2) polylog drift of the account's runs (row 1260 2.1, III:69015-69017),
+hence of the width of the windows (Lemma W) and of the divergence in row 1267 3.3.
+
+**4.2 Lemma P (exact cancellation of the odd part; PROVED, elementary).** Let mu be a Borel probability measure on R^N
+with mu(-S) = mu(S) for Borel S, chi a Borel indicator with chi(-B) = chi(B), and Q = Q_e + Q_o real and Borel with
+Q_e even and Q_o odd, such that the integrals below are finite and int mu chi > 0. Then
+    int mu chi e^Q = int mu chi e^(Q_e) cosh(Q_o),
+and with <.>_e the probability measure proportional to mu chi e^(Q_e),
+    0 <= log int mu chi e^Q - log int mu chi e^(Q_e) = log <cosh Q_o>_e <= (1/2) <Q_o^2 cosh Q_o>_e.
+*Proof.* B -> -B preserves mu and chi, sends Q_e to Q_e and Q_o to -Q_o, so int mu chi e^(Q_e + Q_o) =
+int mu chi e^(Q_e - Q_o); average the two. Then cosh >= 1, log y <= y - 1, and cosh x - 1 <= (x^2/2) cosh x. QED
+So a term of first order in the odd part never reaches the logarithm: the odd part enters at second order only.
+
+**4.3 Why this applies to the step at the trivial datum (ARGUED).** In the fluctuation integral of the step
+(EM:544-575; CMP 119 (3.15)-(1.14) form), write the fluctuation in normalized variables b with a centred Gaussian
+reference (the background is Balaban's minimal configuration on the fibre, CMP 119 (3.10), so the action has no
+linear term in b; EM:550-556 identifies the chart's origin with it). Every
+non-Gaussian factor is a function of g b and of the background, with the action carrying the prefactor g^(-2): the
+action vertices contribute g^(n-2) times a form of degree n in b (n >= 3), the chart density, Haar density, soft gauge
+weight and the inherited list contribute g^m times forms of degree m (m >= 1). So in every term the power of g has the
+parity of the degree in b. Differentiating twice in the background at P_o does not change this. With a centred
+symmetric Gaussian and a cut symmetric under b -> -b, every term of odd degree in b integrates to zero (Lemma P is the
+global form of this), so the first non-Gaussian contribution to the Hessian at P_o is of order g^2 = 1/theta_k, times
+powers of the cut radius (log theta_k)^(p_0). The cut: at the trivial datum Balaban's cube references are trivial, so
+his tests read |V_k(b) - 1| up to the chart's nonlinearity; that nonlinearity and the background derivatives of the
+cut move only the edge of the cut domain, where |g b| is of the order of the threshold, so they cost Gaussian-tail
+terms exp(-c (log theta_k)^(2 p_0)), as in row 1268's Lemma TL. Inherited list members are counterterm-subtracted
+(EM:538-541), so they enter through their fluctuation response, which starts at second order by the same parity.
+
+**4.4 Proposition PE (the parity envelope; ARGUED, with the inputs a proof needs).** Under
+- (P1) the step's fluctuation integral at data near P_o has a centred Gaussian reference symmetric under b -> -b;
+- (P2) every non-Gaussian factor obeys the parity rule of 4.3 (power of g of the parity of the degree in b), with
+  Taylor remainders bounded on the cut domain by the cut radius;
+- (P3) the cut at P_o is symmetric up to a set on which some unit's normalized test value is within a fixed fraction of
+  its threshold, and its background derivatives at P_o are carried by such sets;
+- (P4) the supplier's localized expansion of the Hessian at P_o is covariant under b -> -b (symmetric decoupled
+  Gaussians; Mayer elements split into even and odd parts; operations of even order in b),
+the unmarked coefficient satisfies
+    |f_(k+1)| <= C theta_k^(-1) (log theta_k)^(q) + K exp(-c (log theta_k)^(2 p_0))
+for fixed C, K, c, q, in place of EM's C theta_k^(-1/2) (log theta_k)^(p_0). In a localized expansion with these
+properties, every connected term with an odd number of odd elements vanishes exactly (odd integrand, symmetric measure
+and domain), so each surviving term carries either two odd elements (each of size g polylog) or one even element (size
+g^2 polylog); a convergence margin then bounds the sum by g^2 polylog, as in the proof of Lemma SW.
+This is the statement that a one-step Balaban flow has no half-loop term. It is not in EM or CA-I to III as far as
+read here (EM states the theta^(-1/2) envelope only), and the lane's record names a two-loop FORM (2L) as open
+(`library/gap-skeleton-final.md` L350; row 680) but not this envelope (grep of `library/` for "odd cumulant",
+"odd moments", "parity" in this sense: no match on the coefficient envelope).
+
+**4.5 Consequences (PROVED GIVEN (PE) and the drift recursion of row 1260 2.1).**
+(a) If in addition sum_u |b^0_u - c_0| is bounded (the account's constant c_2 covers this term), the drift of the
+frozen and own runs from the scaffold is at most C'(log theta)^(q+1): the sum of the improved envelope.
+(b) With drift D'(y) = C'(log y)^(q+1), Lemma W (b) gives windows of at most 2 D'(2 Y_b)/c_0 + 1 levels, and the
+envelope (PE) bounds eta_k at a window level by 2 C theta_k^(-1) (log theta_k)^q + 2K exp(-c (log theta_k)^(2 p_0)).
+The window total is then at most C'' sum_b (log Y_b)^(2q+1)/Y_b plus a tail sum, finite, independent of n, and tending
+to 0 as X grows (Proposition W2's criterion with kappa(y) = y^(-1) polylog). So (PE) closes (U) by itself, without
+(U-dom): a second, independent route.
+(c) Row 1268's numbers improve: the frame entries differ by polylog, so Lemma RS's vertex is of order
+theta^(-2) polylog instead of theta^(-3/2) polylog; the sizes of row 1260 (Lambda, the tube (G4)) improve likewise.
+(d) (PE) does not give (2L): it bounds f, it does not identify a second coefficient with a summable remainder.

@@ -21,6 +21,8 @@ reasoning (cross-provider check of an OpenAI-lane row). No numeric run is used a
 ## Status log
 
 - 01:01Z: file created; step 1 starting.
+- Steps appended at (date -u after each write): 1 at 01:02Z, 2 at 01:06Z, 3 at 01:14Z, 4 at 01:19Z, 5 at 01:22Z, 6 at 01:28Z,
+  7 at 01:29Z (numeric lock acquired and released), 8 at 01:30Z. Item finished; RESULT line at the end of the file.
 
 ## Step 1. Scope, rules and inventory (done 01:02Z, date -u)
 
@@ -487,3 +489,55 @@ python3 -I, scratch scripts and log in a /tmp scratch folder (not committed). Re
 What this establishes: nothing beyond guidance. It is consistent with A1, D1 (the Bessel lower bound), A4-A5 and B7, by a
 different data path (floating-point evaluation instead of the hand arguments). It does not touch any statement whose
 proof is asymptotic (blocks B, C, most of D).
+
+## Step 8. Verdicts
+
+Checked line by line, by hand, by Claude Opus 5.5 (max reasoning, Mac mini worker, checkout `f59595fbf`) on a gpt-6-astra
+file (row 1192). Different provider; not an audit. Every PROVED paragraph of the file (L17-L743) is covered below; GUIDE
+paragraphs carry no verdict (the transfer positivity claimed in the GUIDE at L150 is checked in B0c).
+
+| Item | Statement (lines) | Verdict |
+|---|---|---|
+| A1-A3 | (1), (2), degree choice (L17-39) | HOLDS |
+| A4-A6 | eta_d, nu_d, positive finite transfer (L44-58) | HOLDS |
+| A7-A8 | equal polynomial spectra; (3) (L60-66) | HOLDS |
+| A9 | (4), equivalence with the seed (L68-72) | HOLDS AFTER CORRECTION (citation only: the step to time floor(n/512) is row 1161 L150 (B3 enlargement and monotonicity); "after (26)", L400, states it at time n/2) |
+| A10-A14 | smaller alphabet, resampling channel, (5), (6), (7) (L77-102) | HOLDS |
+| B0a-B0g | (9), (10), (12), local expansion and (11), (17), smooth (11), (26) (L152-209, L283-294, L317-331, L401-411) | HOLDS |
+| B0e' | vacuum and neutral trace at positive s from (17) (L296) | HOLDS (same trapping as (3)) |
+| B1-B5 | (28), (29), (30), (31), (32) (L426-463) | HOLDS |
+| B6-B9 | (33), (34), sharp length, criterion at physical size (L468-503) | HOLDS |
+| B10-B12 | (35), (36)-(37), resolution (L508-541) | HOLDS |
+| C0a-C0b | spectral step after (16); (40) with slab and boundary estimates (L272-278, L569-592) | HOLDS |
+| C1-C2 | (44)-(45), (46), location of y_* (L663-694) | HOLDS (face-label chessboard used as cited AM6) |
+| C3-C7 | (47), (48), (49), (50), physical time and relative entropies (L699-743) | HOLDS |
+| D1-D4 | (8), physical exterior, alphabet lower bound, L211 (L109-141, L211) | HOLDS |
+| D5-D9 | (13), (14), (15)-(16), L298, (18) (L218-315) | HOLDS |
+| D10-D15 | (20)-(23), (24), (25), (27) (L338-421) | HOLDS |
+| D16-D20 | (38), (39), (41) and DLR, (42), (43) and the reflection failure (L546-656) | HOLDS |
+| D21 | OPEN paragraphs and RESULT line (L748-754) | HOLD as scope statements |
+
+Totals: 64 items, 63 HOLD, 1 HOLDS AFTER CORRECTION (citation only), none FAILS. No defect breaks a statement or a consumer.
+
+Precision notes (no mathematics changes; none breaks anything): (i) L444 counts 32 empty edges at a square where 28 are
+distinct; (1-s)^{32} is still a valid lower bound. (ii) L552: for bounded Lambda >= 1 the exceptional term is absorbed by
+the same 1 - c bound used for Lambda <= 1; "reducing c''' if necessary" covers it. (iii) L541 "spatial resolution" means
+the angular resolution of link readings. (iv) Outline citations used as cited and not re-read here: GL3 eigenvalue formula
+(standard), the KP criterion (L1223-1356; the two-line rooted-tree recursion in the file is itself correct), the AM6-AM7
+chessboard (L2885-2942). (v) The registry grep found no uncredited prior version of the positive quadrature rule, the
+forest/girth conditioning or the two-stiffness weight (hits for "quadrature" are numeric guide runs).
+
+What the checked file does and does not do (agreeing with its own OPEN lines): it proves exact reformulations of the
+missing seed, a strictly positive finite-alphabet model with relative error O(n^{-p-1}) at degree O(log n) (A), the
+rare-event criterion log p(u)^2/p(2u) = J_0(u) + o(1) in a gapped comparison model (B), and an obstruction showing that
+local, one-link, pressure and per-plaquette entropy closeness to Wilson do not transfer a neutral gap between actions (C,
+(43)). It does not bound p(2u)/p(u)^2 or D_0(floor(n/512)) for the Wilson action; the seed, the continuum construction and
+the four-dimensional SU(2) mass gap stay open.
+
+RESULT: Check of row 1192 (`library/gap-solve20-astra62.md`), by hand, Claude Opus 5.5 max as row 1203: 64 items covering
+every PROVED paragraph; 63 HOLD, 1 HOLDS AFTER CORRECTION (A9, citation only: add row 1161 L150 for the propagation to
+time floor(n/512)), none FAILS; the positive finite-link heat-trace approximation (1)-(7), the rare-event criterion (37)
+with its length (33)-(34) and resolution bounds, and the obstruction (44)-(50) all hold; a numeric guide (Poisson tail,
+Bessel ratio, Gauss-product rule, character signs) passed and guides only. OPEN: the Wilson bound
+liminf p(2u)/p(u)^2 > 2/3 (equivalently the neutral seed D_0(floor(n/512)) <= 3/2), the matched continuum construction, and
+the 4D SU(2) mass gap.

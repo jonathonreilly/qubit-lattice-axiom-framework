@@ -377,3 +377,200 @@ The fork, for the next row:
   phi in psi's presentation is pi_(w_phi)[chi^phi], a [0, 1]-valued gauge average, not an indicator product; (E1) fails
   as written and (FC-G) of 5.3 is needed.
 The texts read here do not decide between (G-a) and (G-b); Balaban's CMP 119 Section 3 and CMP 109 Section 2 would.
+
+## Step 6. (G) read at the source: it fails for the account's representation (written 2026-11-20T13:23Z by date -u)
+
+**6.1 READ (Balaban, CMP 119, owner's copy outside git; OCR text checked against the page image in 6.2).** Section 1,
+display (1.5) and the remark after (1.7), p. 247: the "axial gauge fixing" is a soft, truncated weight on the contour
+variables U(y, x) from each block centre y to the points x of its block, inserted as an identity
+1 = prod_y prod_(x in B(y), x != y) int du(x) z^(-1) chi(|U^u(y,x) - 1| < eps_0) exp(-g_0^(-2) [1 - Re tr U^u(y,x)])
+(corrected from the page image at the time stamp of Step 7: the truncation is at eps_0, not at a fixed constant),
+followed by the Faddeev-Popov procedure, which leaves the weight exp(-g_0^(-2) G(P_1, U)) with
+G(P_1, U) = sum_y sum_(x != y) [1 - Re tr U(y, x)] (1.6)-(1.7). Balaban: "The main point in introducing it in the form
+(1.5) is to preserve the Euclidean invariance, but this can be done also with the gauge fixing defined by the delta-functions
+of the contour variables ... and we average over the Euclidean transformations of the lattice ... so it can be an
+alternative to the above definition." The restrictions on the approximate fluctuation field are introduced after this,
+on the configuration itself ("UU_(box)^(-1), where U_(box) is taken in the axial gauge"). At step k (Section 3, p. 265)
+"we introduce the axial gauge fixing as in (1.5), with V_k, eps_k, g_k instead of U, eps_0, g_0", then the
+decomposition (3.3) restricting approximate fluctuation fields, then the fluctuation field and the decomposition (3.16).
+
+**6.2 Consequence (PROVED from 6.1 and row 1267 Lemma AX).** In the account's representation (CA-I 4.35 (C)(b) cites
+exactly [B-CMP119 (1.5)]; RT's truncated Haar normalizer z(x) = int chi(U) exp(-x(1 - tr U/2)) dU is the same device) the
+gauge weight has precision g_k^(-2), the frame's own, and the cuts are functions of the softly gauge-fixed configuration,
+not of its orbit. So (G) fails as a reading of the account: case (G-b) of 5.6. Theorem FCT covers the threshold part
+only; the frame comparison also moves the gauge precision by the relative amount |phi_k/psi_k - 1|, which is of order
+theta_k^(-1/2) polylog (row 1267 3.3), not a tail. Under Balaban's stated alternative (delta-function axial gauge on the
+contour variables, averaged over the block's lattice symmetries) (G) holds, with each block's cut an average of indicator
+products, and Theorem FCT applies after the evident change in (E1) (an average over a finite group of indicator products
+obeys (F1)-(F2) termwise).
+
+
+**6.3 Page check (READ, written 2026-11-20T13:25Z by date -u).** CMP 119 p. 247 read as a page image (rendered from the owner's copy into
+the scratch folder): (1.5) is as corrected in 6.1, with truncation chi(|U^u(y,x) - 1| < eps_0) and precision g_0^(-2);
+the decomposition (1.8) restricts sup_b |U(b) U_(1,box')^(-1)(b) - 1| < 2 delta_0, with U the integrated (softly gauge
+fixed) configuration and U_(1,box') a minimizer "taken in the axial gauge". So the cut compares a softly gauge-fixed
+configuration with an exactly axial one: not an orbit function. 6.2 stands.
+
+## Step 7. The soft gauge precision: rescaling the gauge parameters (written 2026-11-20T13:25Z by date -u)
+
+**7.1 Setting.** One block fibre at step k (outer datum W fixed). G_res := gauge transformations equal to 1 at the block
+centres; it preserves the fibre and the fibre measure mu_W, and F := e^Phi is G_res-invariant (row 1267 4.3). For a
+non-central site x of the block of centre y, U(y,x) is the parallel transport along Balaban's fixed contour from y to x;
+under u in G_res, U^u(y,x) = U(y,x) u_x^(-1). For a frame entry theta the soft axial weight per contour is
+    omega_theta(U) := z_theta^(-1) 1[|U - 1| < eps(theta)] exp(-theta [1 - Re tr U]),   z_theta := int 1[|U - 1| < eps(theta)] e^(-theta[1 - Re tr U]) dU,
+(CMP 119 (1.5) at step k, with tr normalized so that 1 - Re tr U = 1 - cos alpha for eigen-angles +-alpha), and frame
+theta's integral is I_theta = int mu_W(dV) F(V) prod_x omega_theta(U_V(y,x)) chi^theta(V), with chi^theta the frame's other
+cuts (1.8)/(3.3) and (3.16), each a product of unit indicators at thresholds of the form const * theta^(-1/2) (log theta)^(p_0).
+
+**Lemma AXR (axial disintegration; PROVED, elementary).** For V in the fibre let u^0(V) in G_res be u^0_x := U_V(y,x),
+and ax(V) := V^(u^0(V)) (all contour variables equal to 1). Then for every mu_W-integrable Psi,
+    int mu_W(dV) Psi(V) = int mu_W(dV) int dv Psi(ax(V)^v),
+with dv the normalized Haar measure of G_res, and U_(ax(V)^v)(y,x) = v_x^(-1).
+*Proof.* With (V^u)_(x,y) = u_x V_(x,y) u_y^(-1) (row 1267 Lemma AX), (V^a)^b = V^(ba), and U^u(y,x) = u_y U(y,x) u_x^(-1)
+= U(y,x) u_x^(-1) since u_y = 1. So U^(u^0)(y,x) = U(y,x) U(y,x)^(-1) = 1: ax(V) is in the exact axial slice, and
+V = ax(V)^((u^0)^(-1)). By G_res-invariance of mu_W and Fubini, int mu_W Psi = int mu_W(dV) int du Psi(V^u). For fixed V,
+V^u = (ax(V)^((u^0)^(-1)))^u = ax(V)^(u (u^0)^(-1)); as u runs over G_res with normalized Haar measure, so does
+v := u (u^0)^(-1) (right translation preserves Haar measure). So int du Psi(V^u) = int dv Psi(ax(V)^v). Finally
+U_(A^v)(y,x) = U_A(y,x) v_x^(-1) = v_x^(-1) for A = ax(V). QED
+
+Hence, with F(ax(V)^v) = F(V),
+    I_theta = int mu_W(dV) F(V) int prod_x [dv_x omega_theta(v_x^(-1))] chi^theta(ax(V)^v),          (7.1)
+and by the normalization of z_theta each factor dv_x omega_theta(v_x^(-1)) is a probability measure: the gauge parameters
+v_x are independent given V.
+
+**7.2 Exponential coordinates.** Write v_x^(-1) = exp(X_x), X_x in su(2) with |X_x| the eigen-angle alpha, on |X| < pi.
+Normalized Haar measure is dv = J(X) dX with J(X) = c_J (sin|X| / |X|)^2 (the SU(2) density in exponential coordinates;
+c_J a constant), and 1 - Re tr exp(X) = 1 - cos|X|, |exp(X) - 1| = 2 sin(|X|/2). So the density of X_x in frame theta is
+    rho_theta(X) = z_theta^(-1) 1[2 sin(|X|/2) < eps(theta)] e^(-theta(1 - cos|X|)) J(X).
+
+**Lemma RS (rescaling; PROVED, elementary).** Let phi, psi > 0, c := (psi/phi)^(1/2), s := |X'|. Then
+    rho_phi(c X') c^3 = kappa_1 (1 + r(X')) e^(-psi(1 - cos s)) J(X') z_psi^(-1) 1[2 sin(c s/2) < eps(phi)],
+with kappa_1 := c^3 z_psi/z_phi (a constant) and 1 + r(X') := [J(cX')/J(X')] exp(-R(s)),
+R(s) := phi(1 - cos(cs)) - psi(1 - cos s). If |c^2 - 1| <= 1/2 and s <= 1/2, then
+    |R(s)| <= psi |c^2 - 1| s^4/12,   |J(cX')/J(X') - 1| <= |c^2 - 1| s^2.
+*Proof.* The identity is the definition of r. For R: phi(1 - cos(cs)) = psi h(c^2), psi(1 - cos s) = psi h(1), with
+h(t) := (1 - cos(t^(1/2) s))/t = sum_(m>=1) (-1)^(m+1) t^(m-1) s^(2m)/(2m)!. For t in [1/2, 3/2] and s <= 1/2,
+|h'(t)| <= sum_(m>=2) (m-1) t^(m-2) s^(2m)/(2m)! <= s^4/24 + s^6 (2 * 1.5)/720 + ... <= s^4/12, so by the mean value theorem
+|R(s)| = psi |h(c^2) - h(1)| <= psi |c^2 - 1| s^4/12. For J: J(cX')/J(X') = (sin(cs)/(cs))^2 / (sin s/s)^2 and
+log(sin y/y) = -y^2/6 - y^4/180 - ..., so |log(J(cX')/J(X'))| = 2 |log(sin(cs)/(cs)) - log(sin s/s)| <= 2 |c^2 - 1| s^2 (1/6 + s^2/90 * 3 + ...) <= |c^2 - 1| s^2 / 2
+for s <= 1/2, and |e^y - 1| <= 2|y| for |y| <= 1/2. QED
+
+**7.3 What Lemma RS does to the frame comparison (PROVED given (7.1) and Lemma RS).** In (7.1) for theta = phi substitute
+X_x = c X'_x at every non-central site (dX = c^3 dX'). Then
+    I_phi = kappa_1^(N_s) int mu_W(dV) F(V) int prod_x [rho^0_psi(X'_x) dX'_x (1 + r(X'_x))] chihat^phi(V, X'),
+    I_psi = int mu_W(dV) F(V) int prod_x [rho^0_psi(X'_x) dX'_x] chihat^psi(V, X'),
+with rho^0_psi the frame-psi density without its truncation, N_s the number of non-central sites (a constant), and
+    chihat^phi(V, X') := prod_x 1[2 sin(c|X'_x|/2) < eps(phi)] * chi^phi(ax(V)^(v(cX'))),
+    chihat^psi(V, X') := prod_x 1[2 sin(|X'_x|/2) < eps(psi)] * chi^psi(ax(V)^(v(X'))),
+where v(X)_x := exp(X_x)^(-1). Reading (7.1) backwards with Lemma AXR, both are integrals over the fibre against frame
+psi's soft weight: frame phi's integrand is frame psi's integrand times the local vertex prod_x (1 + r(X'_x(U))), with
+its cut replaced by chi^phi o Psi_c, where Psi_c(U) := ax(U)^(v(c X'(U))) dilates each configuration's deviation from the
+exact axial gauge by the factor c, and X'(U)_x := log U(y,x). So, at the same weights and list, the two frames differ by:
+- (i) a W-independent constant (kappa_1^(N_s); invisible to |||.|||);
+- (ii) a local vertex of size rho_k := sup |r| on the domain of the cuts;
+- (iii) two cuts that are products of unit indicators, with unit functions N_u o Psi_c, N_u and thresholds T^phi_u, T^psi_u;
+  no longer nested, but |N_u o Psi_c - N_u| <= Lip_u |c - 1| (local size of the gauge deviation) on the domain.
+**Sizes.** By row 1267 3.3 (from CA-III 69015-69017), |c^2 - 1| = |psi_k/phi_k - 1| <= C_zeta theta_k^(-1/2) (log theta_k)^(p_0).
+On the cut domain s = |X'_x| <= 2 arcsin(eps(theta)/2) <= 2 eps(theta), with eps(theta) = A_0 theta^(-1/2) (log theta)^(p_0).
+So by Lemma RS, for theta_k large enough that the conditions hold,
+    rho_k <= 2 [ |c^2 - 1| s^2 + psi |c^2 - 1| s^4/12 ] <= C_r theta_k^(-3/2) (log theta_k)^(5 p_0),          (7.2)
+not a tail, but a power theta_k^(-3/2) up to logarithms; and the cut functions move by a relative amount
+|c - 1| <= C_zeta theta_k^(-1/2) (log theta_k)^(p_0), so (iii) is again a tail comparison.
+
+**7.4 Lemma TL* (Lipschitz bound for two polymer gases; PROVED, the argument of Lemma TL (b)-(c)).** Let two polymer
+gases share the polymer set and the incompatibility relation, with activities F^1, F^2, and let Fbar >= 0 satisfy
+|F^i(X)| <= Fbar(X) and |F^1(X) - F^2(X)| <= lambda Fbar(X) for all X. If e^eps Fbar satisfies (E4) with Bbar and Nbar,
+then |Phi^1(Y) - Phi^2(Y)| <= (lambda/eps) Bbar(Y) and the pointed difference has EM norm at most (lambda/eps) Nbar.
+*Proof.* Lemma TL (b)-(c) with 2 eta replaced by lambda. QED
+
+**7.5 The three comparisons.** Write E^psi for frame psi's output, E^(phi,rs) for frame phi's output written after the
+rescaling of 7.3 (same total up to the constant (i)), and E^(mix) for the run in frame psi's presentation with the vertex
+of (ii) and frame psi's cut. Then T(E^phi) - T(E^psi) = [T(E^(phi,rs)) - T(E^(mix))] + [T(E^(mix)) - T(E^psi)] + const.
+- *Cut part.* E^(phi,rs) and E^(mix) differ only in the cut: chi^phi o Psi_c with truncation at eps(phi), against
+  chi^psi with truncation at eps(psi). Hypotheses (E1)-(E4) are read with a non-nested pair of unit families
+  (N^1_u, T^1_u) = (N_u o Psi_c, T^phi_u) and (N^2_u, T^2_u) = (N_u, T^psi_u), and with:
+  (E2') the Mayer bound on the union domain {for every u: N^1_u < T^1_u or N^2_u < T^2_u};
+  (E3') the one-term bound with Gaussian factors e^((1/2) gamma_2 (N^i_u)^2) for either i.
+  Then the proof of Lemma TL goes through with one change in the P-empty case: for a_u := 1[N^1_u < T^1_u],
+  b_u := 1[N^2_u < T^2_u], prod a - prod b = sum_j (prod_(l<j) a_l)(a_j - b_j)(prod_(l>j) b_l) (telescoping), each summand
+  supported in the union domain, and |a_j - b_j| <= (1 - a_j) + (1 - b_j) <= eta' (e^((1/2) gamma_2 (N^1_(u_j))^2) +
+  e^((1/2) gamma_2 (N^2_(u_j))^2)) by (F1), with eta' := exp(-(1/2) gamma_2 T'_lo^2), T'_lo := min over u, i of T^i_u. The
+  majorant Fbar takes the factor (1 + 2|Y_0|) in place of (1 + |Y_0|). So the cut part is at most
+  (2/eps) C_post Nbar' exp(-(1/2) gamma_2 T'_lo^2).
+- *Vertex part.* E^(mix) and E^psi differ by the local vertex prod_x (1 + r(X'_x)) = prod_x (1 + q_x), |q_x| <= rho_k on
+  the cut domain (and on the complex domains of the expansion, with the same bound up to a constant). Add the q_x as new
+  single-site Mayer elements (prod_x (1 + q_x) is already in Mayer form). The data without new elements carry exactly the
+  terms of E^psi; a datum with m >= 1 new elements has integrand bounded by rho_k^m times the bound of the same datum
+  without them. So |F^(mix)(X) - F^psi(X)| <= rho_k Fbar_v(X), where Fbar_v counts data with new elements with weight
+  rho_k^(m-1). Hypothesis (E6): e^eps Fbar_v satisfies (E4) with a norm bound Nbar_v (one more element type in the
+  supplier's convergence, with activity at most rho_k <= 1). Then Lemma TL* gives the vertex part at most
+  (rho_k/eps) C_post Nbar_v.
+
+**Theorem FCT' (PROVED GIVEN (E0), (E1), (E2'), (E3'), (E4)-(E6) at every step with uniform constants, (TH), and row
+1267's (H1)-(H3), (H5); hypothesis (G) is no longer used).** Along the pin runs, (FC-1) of row 1267 holds with
+    nu_k <= K_1 exp(-(1/2) gamma_2 a'^2 (log theta_k)^(2 p_0)) + K_2 theta_k^(-3/2) (log theta_k)^(5 p_0),
+K_1 := (2/eps) C_post Nbar', K_2 := (C_r/eps) C_post Nbar_v, a' := a/2 (T'_lo >= T_lo (1 - C |c - 1|) >= T_lo/2 for theta_k
+large), and
+    sum_(k<n) nu_k <= K_1 S'(X) + K_2 S''(X),   S''(X) := sum_(r>=1) Y(r)^(-3/2) (log Y(r))^(5 p_0),  Y(r) = (X + c_0 r)/3,
+with S' the S of Lemma S at a' in place of a; both are finite and independent of n, and tend to 0 as X tends to infinity.
+So sum_k eta_k <= 2 C_x (K_1 S'(X) + K_2 S''(X)) (Proposition FC-chain of row 1267).
+*Proof.* (TH) and Lemma RS's sizes (7.2) hold once theta_k exceeds a fixed floor, which holds along the pin runs for X
+large (theta_k >= X/3). The cut part and the vertex part (7.5) bound the two brackets; the constant (i) is invisible to
+|||.|||; the triangle inequality for |||.||| (row 1267 3.1) adds them. Summation: Lemma S for the first term. For the
+second, q := 5 p_0 and f(y) := y^(-3/2) (log y)^q, which decreases for y >= e^(2q/3). If X/3 >= e^(4q), then
+sum_(r>=1) f(Y(r)) <= int_0^infinity f((X + c_0 s)/3) ds = (3/c_0) int_(X/3)^infinity f(y) dy, and integrating by parts,
+int_(Y_0)^infinity f = 2 Y_0^(-1/2) (log Y_0)^q + 2q int_(Y_0)^infinity y^(-3/2) (log y)^(q-1) dy
+<= 2 Y_0^(-1/2) (log Y_0)^q + (2q/log Y_0) int_(Y_0)^infinity f, and 2q/log Y_0 <= 1/2, so int_(Y_0)^infinity f <= 4 Y_0^(-1/2) (log Y_0)^q.
+Hence S''(X) <= (12/c_0) (X/3)^(-1/2) (log(X/3))^(5 p_0) -> 0. For smaller X the finitely many terms with
+Y(r) < e^(4q) are each at most a constant and the rest are bounded as above. QED
+
+**7.6 Remark (PROVED arithmetic): why the power term is summable but would not be at the order of the frame drift.** A
+frame change moves the gauge precision by the relative amount |c^2 - 1| ~ theta^(-1/2) polylog. Its first-order effect
+on the Gaussian part is exactly removed by Lemma AXR and the rescaling (it is a change of variables), so only the
+quartic and Jacobian remainders survive, of order |c^2 - 1| (theta s^4 + s^2) ~ theta^(-3/2) polylog per site. Without
+the rescaling, the vertex would be (phi - psi)(1 - cos s) ~ theta^(1/2) polylog * theta^(-1) = theta^(-1/2) polylog per
+site, whose sum over a pin run diverges like n^(1/2): this is row 1267 3.3's obstruction, met here at the gauge weight.
+
+**7.7 One more frame dependence: the test-cube size (READ and OPEN, written 2026-11-20T13:28Z by date -u).** In the account R_k is the
+least admitted power of L with R_k >= (log g_k^(-2))^r (CA-I I:45900-45905; the cell-size multiplier R-check_k "is a function
+of its argument", I:56729-56731). So the two frames use the same test cubes except at the steps where (log theta)^r
+crosses a power of L between psi_k and phi_k; around each crossing point theta_a = exp(L^(a/r)) this is a window of about
+theta_a^(1/2) polylog / c_0 consecutive steps. Theorem FCT' assumes (U): at every step both frames use one family of test
+units, up to the dilation Psi_c. At the window steps the unit functions differ (reference minimizers computed on cubes of
+different sizes, CMP 119 (1.8)); the union-domain bound of 7.5 extends to two different unit families if both families'
+complements enter one expansion, which is a further reading of the supplier, ARGUED here and not proved. If the account's
+R-check is frozen on the scaffold (EM's age gate uses R(min theta_i), EM:364-380), (U) may hold by construction; not
+read here.
+
+## Step 8. Labels and state after this row (written 2026-11-20T13:28Z by date -u)
+
+**8.1 Labels added by Steps 6-7** (the table of 5.2 stands, except that (G) is now known to fail for the account's
+representation and is no longer needed):
+
+| Statement | Label | Rests on |
+|---|---|---|
+| 6.1-6.3: in Balaban's representation (CMP 119 (1.5)-(1.8), p. 247; Section 3, p. 265) the axial gauge fixing is a soft truncated weight with precision g_k^(-2) and truncation at eps_k, and the cuts are imposed on the softly gauge-fixed configuration; so the cuts are not orbit functions, and (G) fails for the account's representation (CA-I 4.35 (C)(b) cites this (1.5)) | READ (page image) and PROVED (elementary) | CMP 119 pp. 247, 265; row 1267 Lemma AX |
+| Lemma AXR: axial disintegration int mu_W Psi = int mu_W(dV) int dv Psi(ax(V)^v) | PROVED, elementary | invariance, Haar translation invariance |
+| Lemma RS: rescaling the gauge parameters by c = (psi/phi)^(1/2) turns frame phi's soft weight into frame psi's times a vertex 1 + r with |r| <= 2(|c^2 - 1| s^2 + psi |c^2 - 1| s^4/12) | PROVED, elementary | 7.2 |
+| (7.2): along the pin runs rho_k <= C_r theta_k^(-3/2) (log theta_k)^(5 p_0) | PROVED given row 1267 3.3's drift bound (from CA-III 69015-69017) | 7.3 |
+| Lemma TL*: Lipschitz bound for two polymer gases | PROVED | 7.4 |
+| Theorem FCT': (FC-1) along the pin runs with nu_k <= K_1 exp(-(1/2) gamma_2 a'^2 (log theta_k)^(2 p_0)) + K_2 theta_k^(-3/2) (log theta_k)^(5 p_0), sum_k nu_k <= K_1 S'(X) + K_2 S''(X) uniformly in n, -> 0 as X -> infinity | PROVED GIVEN (E0), (E1), (E2'), (E3'), (E4)-(E6), (TH), (U), and row 1267's (H1)-(H3), (H5) | 7.5 |
+| 7.6: without the rescaling the gauge-precision change is a vertex of order theta^(-1/2) polylog per site, whose sum diverges like n^(1/2) | PROVED, arithmetic | 7.3 |
+| (U): both frames use one family of test units at every step | OPEN (fails in windows around the jumps of R_k unless R is frozen on the scaffold; 7.7) | I:45900-45905, I:56729-56731 |
+
+**8.2 The one-cutoff carry on the pin route after this row.** (FI) at pins reduces (row 1260, Lemma GR) to (FC); (FC)
+reduces (row 1267, Proposition FC-chain) to the one-step (FC-1); this row proves (FC-1) along the pin runs, with a sum
+that tends to 0 as the scaffold floor X grows, given: the supplier's one-step expansion in the form (E0), (E1), (E2'),
+(E3'), (E4)-(E6) (Balaban CMP 116 as the account reads it; written out by the account for a large-field stage at
+I:108483-108600; CMP 116 itself not read, bot check); (TH) (a reading of the threshold units); (U) (test cubes; 7.7);
+and row 1267's bookkeeping (H1)-(H3), (H5). The frame's gauge device, which row 1267 removed only for orbit-invariant
+cuts, is handled for Balaban's actual soft gauge by Lemmas AXR and RS at the price of a summable power term. The
+carry's other inputs are unchanged: the base seed (OPEN; the infrared crux, not attacked), the 9.1 hypothesis (e) and
+9.1:prop-blind-site-expansions, (DET)'s inputs, (V9) (row 1275), the account's premises.
+
+**8.3 What a checker should redo first.** Lemma TL (4.1) and its non-nested form (7.5); Lemma AXR and Lemma RS with the
+constants of 7.2; the size (7.2) against row 1267 3.3 and CA-III 69015-69017; the summations (Lemma S, S''); the
+readings (E1)-(E3) against I:108483-108600 and I:58716-58717, (TH) against I:4172-4175 and I:29060-29120, and 6.1-6.3
+against CMP 119 pp. 247 and 265.
+
+RESULT: Row 1268 (Claude Opus 5.5 max, Mac mini worker 2, 12:59Z-13:28Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys), (SL)/(RR) of row 1258) stays OPEN and was not attacked (no engine off the record). Worked item: (FC-T)/(FC-1) of row 1267, the one-step frame comparison of the pin-route carry, left to this row by row 1275. READ in Sussman and Alpoge's CA-I (31a47c543775) and YM4_EM (c7fef8b21b58), with Claude and Codex as authors of their text, and in Balaban's CMP 119 (owner's copy, page image): the cited one-step theorem (CA-I 4.3) bounds each frame separately and EM states no two-cut comparison; in the expansion the account reads in CMP 116 the threshold enters only through kept cuts and signed complements, one complement costing exp(-(1/2) gamma_2 T^2) (written out at I:108483-108600); and Balaban's axial gauge (CMP 119 (1.5)) is a soft truncated weight at precision g_k^(-2) with cuts on the gauge-fixed configuration, so row 1267's orbit-invariance route does not apply. PROVED: Lemma TL/TL* (two polymer gases with activities within lambda of a common convergent majorant have localized logarithms within lambda/eps); Lemma S (summability of exp(-c (log theta_k)^(2 p_0)) along pin runs, S(X) <= 9/(c_0 X)); Lemma AXR (axial disintegration); Lemma RS (rescaling the gauge parameters turns a frame's soft gauge precision into the other's times a vertex of size O(theta^(-3/2) polylog), where the unrescaled change is O(theta^(-1/2)) per site and not summable). PROVED GIVEN the supplier's expansion in the form (E0), (E1), (E2'), (E3'), (E4)-(E6), the threshold reading (TH), the test-cube hypothesis (U) and row 1267's (H1)-(H3), (H5): Theorem FCT', (FC-1) along the pin runs with nu_k <= K_1 exp(-c (log theta_k)^(2 p_0)) + K_2 theta_k^(-3/2) (log theta_k)^(5 p_0), sum bounded uniformly in n and tending to 0 as the scaffold floor X grows, hence (FC) and, with row 1260, the scaffold comparison at pins. OPEN: (U) at the jumps of R_k, the readings (E0)-(E6) against Balaban's CMP 116 text, row 1267's (H2)-(H3), the infrared seed, the 9.1 hypothesis (e), (DET)'s inputs, (V9), the account's premises, the mass gap. Output library/gap-mini-solve-al-opus.md.

@@ -132,7 +132,16 @@ j^(-3/2)(log j)^c is enough" is NOT established; I expect a threshold alpha > 2 
 The comparison with chapter 9's transition defects (row 1233) was also loose: those bound coupling-transition maps
 between horizons, not the step-map differences of (MAPCONV-F). Withdrawn as a claim; kept as a remark.
 
-Status: (MAPCONV-F) OPEN, now stated as (M1)-(M3); not attacked further. Next: Step 3.
+**2.8 Why (M1) is not in the account (READ YM4_1400 L92944-93003; written 08:30Z by date -u).** The proof of
+Proposition ach-Taylor-convergence first proves a real, per-volume mesh comparison of the whole classical action,
+(ach:real-mesh-comparison): |S_(j+1)(B) - S_j(B)|/V <= C_beta h_j^beta for real B in a fixed ball, h_j = L^(-j). It then
+reads each Taylor order m separately: a Chebyshev real-to-jet step gives the mixed derivative bound
+C h_j^beta (1+j)^(2(m+1)), and an iterated strip interpolation gives the kernel norm with the power
+theta = (1 - s/s_0)^(4(m-1)) of the real bound. The exponent theta degrades with m, and the text says the exponential
+moments "require no all-arity claim". So the account's method gives every fixed order at its own rate, and no
+common rate for all orders in a local (rooted kernel) norm. (M1) needs exactly such an all-arity local estimate; the
+per-volume bound alone does not localise (it is proportional to the total volume V, not to the support of B).
+
 
 **2.6 Which text the gap chain reads (READ; written 08:24Z by date -u).** I fetched the complete account
 (theorem_0_complete_account_raw_I, II, III at 31a47c543775; 166711, 145624, 111583 lines) into the same scratch
@@ -183,3 +192,6 @@ What they say on the cutoff comparison (READ):
 So no text of the account, old or new, states (MAPCONV-F) or the zero-source comparison that (UNIV-K) needs; the
 newest texts make the two-cutoff comparison an explicit hypothesis. Credit: Ethan Sussman and Levent Alpoge, with
 Claude and Codex as authors of their text.
+
+Status of Step 2: (MAPCONV-F) OPEN, stated as (M1)-(M3); not in any account text, old or new; not attacked
+further. Next: Step 3.

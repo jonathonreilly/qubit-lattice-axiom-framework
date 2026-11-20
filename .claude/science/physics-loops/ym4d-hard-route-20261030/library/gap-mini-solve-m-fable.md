@@ -10,7 +10,7 @@ this item was on file at the pinned commit.
 
 Labels: PROVED, ARGUED, GUIDE, OPEN, as the row asks.
 
-## Step 0. Reading (written 2026-11-20T05:37Z, `date -u`)
+## Step 0. Reading (written after 2026-11-20T05:36Z, the last `date -u` reading before it)
 
 Read for this row (bounded reads; no whole part file): GOAL.md in full; FINISH.md L1-85 and L299-352 (rules,
 efficiency, joining); the RESULT text of rows 916, 917 and 1179-1227; `parts/gap.md` L1-104 (state of attack, routes
@@ -42,7 +42,7 @@ Gopfert-Mack, Debye, Witten index, Kogut-Susskind, spin network): every name exc
    coupling is of order one, uniform in the cutoff, that fails for massless comparison models. Rows 1219 and 1224
    recommend that a new row take one precise question with a consumer instead of another blind search.
 
-## Step 1. How to attack it (written 2026-11-20T05:58Z, `date -u`)
+## Step 1. How to attack it (written between the `date -u` readings 2026-11-20T05:36Z and 05:47Z)
 
 **Judgement (ARGUED; a judgement, not a theorem).** No attack available to this session can close (N-phys). The
 reasons, each with its place on file:
@@ -52,10 +52,11 @@ reasons, each with its place on file:
    coupling with the asymptotic-freedom scale. The fixed-coupling lattice gap is itself open for every beta above
    the strong-coupling range (about 0.35-0.36 for 4D SU(2) Wilson by hand: row 1218 reading of A Theorem 9.5 and B
    Theorem 3; row 1219 Section 3 (c)).
-2. A proof must contain an estimate at the scale where the running coupling is of order one. Perturbative running
-   gives an integrated change of order one only when the coupling itself has become of order one (the integral of
-   g^2(L) d log L diverges like log log as L Lambda tends to 1), so no perturbative step can carry the bound across
-   (row 998 6b; row 1200 Steps 5-7: every neutral quantity moves by order g^2 per doubling).
+2. A proof must contain an estimate at the scale where the running coupling is of order one. In perturbation theory a
+   dimensionless thermal ratio such as p/p_SB differs from its free value by a fixed multiple of g^2 at leading order
+   (recalled, not proved here), so its change between two scales is of the size of the change of g^2, and that is of
+   order one only once g^2 is. No perturbative step carries the bound across (row 998 6b; row 1200 Steps 5-7: every
+   neutral quantity moves by order g^2 per doubling).
 3. At that scale there is no small parameter and no exact structure on record. Positivity in plaquette variables
    fails (EP-NO, row 744; FKG-NO, row 1213); the bracket gain of the 2D O(N) proofs needs a continuous global
    symmetry, and pure SU(2) has only the centre (Lemma CEN+, row 1016; Lemma PC, row 1188; row 1197); the
@@ -76,7 +77,7 @@ things and stops.
   Proposition P'-ev of row 1179 consume. If not, the gap clause has a further open input.
 - Step 3. One structural fact, stated and proved in the form the lane can use, if it is not on file.
 
-## Step 2. The continuum datum under (N-phys): does rows 916-917 give what Theorem BP consumes? (written 2026-11-20T05:49Z, `date -u`)
+## Step 2. The continuum datum under (N-phys): does rows 916-917 give what Theorem BP consumes? (written after 2026-11-20T05:47Z, `date -u`)
 
 **Why this needs saying.** Row 916 Theorem E (`gap-chain-ce-opus.md` L172-251) built the continuum datum under
 (SEED-FP), the periodic seed. Its members D_j are the data of Theorem L3 (e) of row 700, on ALL local functions,
@@ -121,6 +122,12 @@ Proof, as a list of the places where Theorem E reads its member data, with the s
 7. Conclusion. Proposition P'-ev (row 1179 Section 5.3, which applies `gap-os-equiv.md` Statement (5a)-(5c)) with
    items 1-6 gives ker H = C Omega and, with (P4), spec(H) in {0} union [M_*, infinity). QED (as an implication).
 
+**Relation to check 1183.** The cross-provider check of Theorem BP (row 1183) lists "the continuum datum, (H2), (TOT)"
+as OPEN and asks for "a matched continuum RP datum with (P1)-(P4), (H2) and (TOT) on the intended physical Hilbert
+space". Proposition D supplies that datum given the T0 chain, matched to the account's defining sequence, on the
+tr F^2 sector's space H(S). Check 1183's correction of L3-ev (e) ("a one-dimensional invariant subspace" in place
+of "a unique vector") does not change items 4-6.
+
 **Verdict.** Row 1219's reading holds after one precision: rows 916-917 supply the datum for (SEED-FP) members, and
 the transfer to the centre-blind members of (N-phys) is items 1-6 above. Nothing in Theorem E reads a flux sector,
 so no new open input appears. The gap clause therefore stands as: (N-phys) along the account's trajectory, plus the
@@ -139,3 +146,47 @@ account's hypotheses and READ statements (the T0 chain), gives the gap on H(S).
 
 What Step 2 does not do: it does not check the account's statements, and it is not a line-by-line check of row 916
 or of check 917. It moves nothing on (N-phys).
+
+## Step 3. A structural fact not on file? (written after 2026-11-20T05:48Z, `date -u`)
+
+None found; no new statement is claimed. The candidates this row formed while choosing the attack, each with its
+match on file:
+
+| Candidate formed here | Match on file |
+|---|---|
+| (N-phys) is a lattice gap with the asymptotic-freedom scale, open at fixed coupling above about 0.36 | row 1180 corollary (check 1187); row 1219 Section 3 (c) |
+| Selective quantities (twist ratios, theta sectors) are ratios in which an independent free photon cancels, so they cannot see every neutral level | Lemma PT and Proposition NP (row 1003, lead rule W2 in `parts/gap.md` L97); row 1200 Steps 5-7 |
+| Perturbative running changes a quantity by order one only once the coupling is of order one | row 998 6b; row 1200 ("order g^2 per doubling") |
+| (N-phys) as a pressure bound at temperature 1/u, by the integral method over the coupling | row 931 (ANOM), `gap-direction-max.md` L186-232; row 1198 Remark TH |
+| A neutral gap dominated by charged decay, as in the 2D O(N) singlet half | (SING), (K4-N) (rows 1115, 1194); Theorem BP shows the flux half is not needed; rows 1193, 1213 |
+| Positivity in temporal gauge (row 1213, fourth way) | a Haar moment of gauge-invariant functions does not depend on the gauge, so EP-NO (row 744) stands in every gauge for fundamental plaquette monomials; the centre-blind form is row 1213's way 3, OPEN with no consumer |
+| A refutation device for (K-flow) inside class K | `parts/gap.md` L97 (none exists in a single model); conformal-window and Georgi-Glashow families are outside class K (L293; `gap-outside-box-max.md` I11) |
+| The gap only on the tr F^2 sector | `gap-assume-opus.md` L40; check 917 L188 |
+
+The temporal-gauge remark in the table is one line and elementary (PROVED): Haar measure on the links left after an
+axial gauge fixing is the product Haar measure, and a gauge-invariant function has the same Haar integral in any
+gauge, so the negative moment of EP-NO (given NS0, row 744) is the same number in temporal gauge. It does not decide
+row 1213's centre-blind fourth way.
+
+## For the lead (evidence only; this row edits no other file)
+
+1. Rows 1219, 1224 and this row, all Claude Opus 5.5 max on plain briefs today, reach the same judgement: no attack
+   available to a session closes (N-phys), and a further screening has no item it closes or kills. These are three
+   runs of one model family, not independent evidence.
+2. Step 2 confirms row 1219's reading of the continuum datum, with the precision that the member data change from
+   Theorem L3 (e) to Theorem L3-ev under (N-phys) (items 1-6). The gap clause's open inputs are (N-phys) and the T0
+   chain (through the account's READ statements and hypotheses); there is no third.
+3. Since the gap clause needs the T0 chain anyway, bandwidth not spent on a new (N-phys) mechanism goes to the gap
+   clause's other input only through T0's open statements (`library/open-core.md`). The lead decides.
+
+## Summary
+
+- PROVED here: one line in Step 2 item 2 (plaquette-holonomy functions are centre-blind) and one line in Step 3
+  (Haar moments of gauge-invariant functions are gauge-fixing independent). Both are elementary and not selective.
+- ARGUED (a reading check, each step cited): Proposition D, the continuum datum of row 916 Theorem E transfers to the
+  centre-blind members that (N-phys) provides, so the gap clause has exactly two open inputs, (N-phys) and the T0
+  chain.
+- OPEN: (N-phys); the T0 chain; the mass gap. Nothing disproved.
+- No numeric run was made. No home-directory path is written in this file.
+
+RESULT: Mass gap NOT proved, nothing disproved; (N-phys) and the T0 chain stay OPEN. Judgement (ARGUED): no attack available to a session closes (N-phys), which is a lattice gap with the asymptotic-freedom scale at order-one coupling where no small parameter, positivity or bracket gain is on record. ARGUED (reading check): Proposition D, row 916 Theorem E with check 917's corrections transfers to the centre-blind members of (N-phys) (Theorem L3-ev, P-ev, P'-ev of row 1179), so the gap clause on the tr F^2 sector has exactly two open inputs, (N-phys) and the T0 chain; row 1219's reading of the continuum datum holds with that precision. PROVED (elementary, not selective): plaquette-holonomy functions are centre-blind; EP-NO's negative Haar moment is independent of gauge fixing. Claude Opus 5.5 max, Mac mini worker 2; author only, checked by no one. Output library/gap-mini-solve-m-fable.md.

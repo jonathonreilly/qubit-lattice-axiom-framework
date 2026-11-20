@@ -287,3 +287,150 @@ distinct vertices; m^2 4^l cycle count. Increasing K is compatible with (25), wh
 What (31)-(32) show and do not show: the two readings are nearly constant in the full periodic Wilson law, so the conditional
 slow modes (20), (25) are not slow modes of the full law at these normalizations. As row 1262 says (L414), this gives
 nothing about other interior observables. No defect found in Step 3.
+
+## Step 4. Remaining statements, and the cited rows they read (done 2026-11-20T12:26Z)
+
+**Parameter choice, L103: HOLDS.** With m_s from (5), h = beta^(-1/3), s = ceil(beta^2), R >= beta^4:
+rho = k beta^(1/3)[C(beta^-2 + (1 + log beta)/beta) + C beta^-8] -> 0. Centre flux has q_p = (1 - (-1))/2 = 1 on its
+plaquettes, so the face test rejects it.
+
+**Last sentences of L113: HOLDS.** With h = K/beta and m_s = C(1/s + 1/beta), rho = (k/K)[2C(beta/s + 1)(1 + o(1)) +
+2592 beta (s/R)^4], small for large K when s >= beta and beta (s/R)^4 is small.
+
+**(12)-(13), L122-L142: HOLDS**, using row 1141 (3), (4), (6), (7) (`gap-crux2-astra62.md` L55-L101; checked HOLDS by row
+1142, `gap-crux2-check-opus.md` S6-S12, Claude; I re-read the statements and proofs). Checked here: the face cells are
+exterior to the patch but inside one translated side-s update, so (4) (acceptance >= 1/2 given everything outside the
+cell, also given fewer links) gives P_y 1_B <= u uniformly in the update's exterior, as (11) needs; the iteration
+E 3^(-sum G) <= (2/3)^N and Markov give e^(-gamma N), gamma = log(27/16)/4, N >= r^3/216; union over (s/r)^3 small
+rectangles and C(R/s)^3 first rectangles gives (12) through (11). (13): on an accepted root |v|^2 <= C(1+beta) times the
+eight bond terms (telescoping around the two squares; (5) is not even needed, D >= delta_b gives the factor 4/delta_b);
+Neumann Poincare for |v| (Ad is an isometry); mean squared controlled through the root density rho; sum over rectangles.
+r = ceil((D log(2+R))^(1/3)) gives C(R/r)^3 e^(-c r^3) <= C R^3 (2+R)^(-cD) -> 0, and r^2 + 1 + beta = O(beta) when
+log R = O(beta). The ARGUED paragraph L144 is correctly labelled.
+
+**Collar tests, L162-L166: HOLDS.** Moment comparison on an l^4 four-box with l >= beta: Markov gives
+exp(-(l-1)^4 (2cK - log C_0) + C_3 beta l^3) <= e^(-c_1 l^4) for large K, since beta l^3 <= l^4 and (l-1)^4 >= l^4/16.
+The four-box lies inside a side-s update (l = s/4), so the bound holds given that update's exterior (nested
+conditioning). C(R/s)^3 four-boxes per face give C(R/s)^3 e^(-c_1 l^4) + C s/R by (11).
+
+**(18), L198-L204: HOLDS, conditional on row 1231 (35).** rho_* -> 0: s^(1/3)(1/s + log beta/beta) -> 0 and
+s^(1/3)(s/R)^4 -> 0 for s ~ R^(1/2) ~ beta^(delta/2); r ~ (log R)^(1/3) <= s/32 eventually. Inputs: (a) row 1231 (35)
+(`gap-solve26-astra62.md` L357-L365, proof L376-L387): A = H_m, any lower bound varpi on gauge-invariant mean-zero
+functions has varpi r/m -> 0 when m <= C_0 r, on beta -> infinity, beta <= B log N, r = floor(beta^delta). I read the proof:
+finite-speed bound (36) for the Poisson-clock cube dynamics against the packet covariance K_mag(s) ~ s^-8 from its (9)-(11).
+Checked HOLDS by row 1235 (`gap-solve26-check-opus.md` L268, L401, Claude Opus 5.5). I did not redo (9)-(11) of row 1231.
+(b) row 1254 (37) (`gap-solve29-astra62.md` L468-L473), which I re-derived (below). The logic of L204 is right: a
+subsequence with v_s (R/s)^2 >= c gives v_R >= 2^-20 min(1, c) by (37), against (35) at m = R; and (15) with
+(R/R')^4 >= 1/16, b_R >= 1/16, rho_* -> 0 gives v_s >= min{1, c gamma - 40 pi^2 (s/R)^2}, so gamma/(s/R)^2 -> infinity
+would force v_s (R/s)^2 -> infinity.
+
+**Row 1254 (17)-(19) and (37), re-derived here (they are inputs of (18)).** (18): A norm(f)^2 = sum_z <(1 - P_t(z)) f, L_z>
+since sum_z L_z = A H_s g = A f and L_z lives inside V_t(z); Cauchy-Schwarz. (19): far pairs have nonnegative cross terms;
+close pairs cost s^-8 eps B (2s+1)^4 sum_x norm(D_x g)^2 = eps B (2+1/s)^4 <g, H_s g>. Trapezoid weight: sum of squared
+increments 2/w, sum u^2 >= k - 2w >= k/2, so a unit shift costs norm^2 <= 4B/(kw), at most 4s unit shifts give
+eps = 32 s^2/(kw); A^2/B >= (k - 2w)^4. (37): t < 8s by nesting, (s/t)^4 >= 8^-6 (t/s)^2; t >= 8s with w = floor(k/4):
+(k - 2w)/t >= 7/16, (7/16)^4 > 1/64, denominator <= 1 + 1280 * 512/(49 x) <= 1 + 14000/x with x = (t/s)^2 v_s, and
+x/(x + 14000) >= min(x,1)/14001, 64 * 14001 < 2^20. All HOLD. Row 1261 (`gap-solve29-check-opus.md`, Claude Opus 5.5,
+same model as this checker) also found them HOLDS; mine is not an independent derivation path, but it was redone by hand.
+Process note on that file: its step stamps run to 13:55Z, yet its last commit (07796730c) is 11:36Z, so those stamps are
+not `date -u` values.
+
+**Collar cost, L206: HOLDS**, using row 1155 (20) (`gap-solve7-astra62.md` L294-L318, checked HOLDS in row 1156). Temporal
+gauge along normal lines; chord^2 between levels = 2 x normal plaquette deficit; Cauchy-Schwarz over w levels gives
+beta d_G(X,Y)^2/(2w). The small-ball bound needs only marked plaquettes with disjoint edge sets and selected links whose
+conditional law is a tilt with |k| <= 6 beta, so it holds on a box face with fixed exterior (stride-four subgrid). With
+w = O(d), beta >= 1: beta c d^3/((1+beta) 2w) >= c''' d^2. The closing caveat (a difference of actions could cancel) is right.
+
+**(19), L210-L217: HOLDS**, using row 1155's angle lemma (L301-L305). |v - H_U v H_V^-1| = |H_V - v^-1 H_U v| >= chord of
+|alpha - alpha'| >= (2/pi)|alpha - alpha'| (class angle = distance to 1, conjugation invariant). Angle density
+<= C sqrt(1 + 6 beta) with the reference angle alpha' fixed (the V face lies outside the update that holds the U cell),
+so acceptance >= 1/2 for small c. Telescoping around the accepted plaquette with the linear isometries v -> U v V^-1,
+then the scalar Neumann step for |v|.
+
+**(33), L418-L423: HOLDS.** Conditioning on more (S_z) can only shrink the update residual, so each summand is
+<= norm(D_x f)^2; cubes avoiding S_z give exactly D_x, so L-hat >= L-circ and the budget (R')^4 E is unchanged.
+
+**(17) for (33), L425: HOLDS.** The bisection deletes the same <= 48 l^3 terms (an empty child is allowed); a terminal tile
+updates its free subset, which every containing cube also resamples.
+
+**(34), L427-L432: HOLDS.** Cubes avoiding pins have x_1 mod h in {1, ..., h-s}; a progression with step v_1 in [s/2, s]
+cannot jump s consecutive zero layers and meets them within J = ceil(2h/s) + 2 steps; telescoping gives
+norm(p_0)^2 <= J^2 norm(tau_v p_0 - p_0)^2; at least (s/2)(2s+1)^3 such v. The reading (a lower bound on the error term
+of the method, not on the gap) is the one the file states.
+
+**Dense pinned grid, L434-L436: HOLDS.** Free base points of different open cells differ by >= 2 in some coordinate, so no
+plaquette couples two cells; the Efron-Stein components f_J over the cells; resampling the cells inside a cube counts each
+f_J meeting it; each cell of side h - 1 lies in >= (s - h + 2)^4 cubes with origins in I_z^out (b >= s); h <= s/2 gives
+((s-h+1)/s)^4 >= 1/16. The file correctly says this regime has no uncut origins for (3).
+
+**GUIDE/OPEN statements.** L192 (sewing obstruction from row 1155 (20)) and L219 (Durhuus-Froehlich layer form; it is the
+same identity as (21)) are fair GUIDE readings. L194 and L450 are true: 2^-8 e^(-440 beta t^3) at t ~ 1/a is far below
+(s/R)^2. L452 is right that the continuum step is not done here.
+
+No defect found in Step 4.
+
+## Step 5. Cited rows, and the citations of the GUIDE paragraphs (done 2026-11-20T12:29Z)
+
+Each cited statement that a step depends on, with what I read:
+
+| Cited statement | Used at | Read | Standing |
+|---|---|---|---|
+| row 1155 (9), marked-plaquette moment, `gap-solve7-astra62.md` L130-L134 | (10), (28), (31), (32), collar tests L162 | statement and proof | checked HOLDS by row 1156 (`gap-solve7-check-opus.md` L349-L351, L464); proof reads no torus size, so its use on the s^4 box and the d^4 lattice is valid |
+| row 1155 (20) and angle lemma, L294-L318 | (19), L192, L206 | statement and proof | checked HOLDS by row 1156; the disjoint-plaquette argument transfers to a box face with fixed exterior |
+| row 1141 (3), (4), (6), (7), `gap-crux2-astra62.md` L55-L101 | (12)-(13) | statement and proof | checked HOLDS by row 1142 (S6-S12) |
+| row 1254 (17)-(19), (37), `gap-solve29-astra62.md` L226-L251, L468-L473 | (18); method of (3)-(4) | statement and proof, re-derived by hand (Step 4) | HOLDS here; row 1261 (same model) also HOLDS. Row 1262 L452 calls row 1254 unchecked; at this pin it has that check |
+| row 1231 (35)-(36), `gap-solve26-astra62.md` L357-L387 | (18) | statement and proof of (35)-(36); its packet input (9)-(11) not redone | checked HOLDS by row 1235 (`gap-solve26-check-opus.md` L268, L401) |
+| row 1139 folded chessboard | (20)-(25) | not reopened: I checked the reflection structure directly (Step 3) | not needed |
+| row 1254 (17), (1)-(4) continuum chain | (16) last sentences L174 | statement of (17), (20) only | a stated premise list, not a step of (5)-(15); (16) itself HOLDS without it |
+| row 1222 (1)-(2), row 1177 (22), row 1224 7.6 | L434, L219, L55 | not needed | comparisons only, no step depends on them |
+
+Citation checks of the GUIDE paragraphs (sources fetched into a scratch folder, not committed):
+
+- **L5, Sussman-Alpoge: HOLDS.** At `31a47c543775`, outline L581-L599 (cyclic sector of the action density; polynomial
+  clustering with spectral measure E e^-E dE gives no gap), L773-L780 ("This proves a scalar block-constrained gap"),
+  L31860-L31882 (same two points in the conclusion); CA-I L2704-L2712 ("Not asserted: ... a mass gap") and L3213-L3222
+  ("Clustering and uniqueness of the vacuum (OS4). Not asserted."). All five ranges say what row 1262 says.
+- **L3, other branches: HOLDS where checked.** main is `8b11ae2` as cited; its `research/mass-gap/library/gap-phys-seed.md`
+  L305-L312 is Corollary Z2 (uniform cube gap plus a state count D gives a seed). PR 10114
+  `MASS_GAP_LOCAL_BLOCK_ASTRA.md` L4-L14: one-step plaquette witness, contraction only at 0 < beta <= 1/32. PR 10133
+  `MASS_GAP_CROSSOVER_REDUCTION.md` L77-L86: MG2 (source transport) and CW open. PR 10141 `fp1.md` L299-L315: single-scale
+  Landau-lift minimizer (classical). PR 10134 I1-I5 not checked. "The row-specific prior file is absent at the pin": no
+  prior digest named for row 1262 exists; row 1218's digest `prior/gap-onebound-read-sol.md` was present at `ad8d21df2`
+  (added in `c3b9f704d`). Wording only; nothing rests on it.
+
+## Step 6. Is the main comparison a restatement of an earlier row? (done 2026-11-20T12:29Z)
+
+The main comparison is (1) => (2): a local patch Poincare constant gamma for the side-t box with fixed exterior gives a
+global gap of the side-s block heat bath of at least b_R gamma - e_(s,R), with e_(s,R) of order (s/R)^2. Its variants are
+(9), (15), (30), with (33) and (35) as reformulations of the local input. Searched: `library/open-core.md` (no match for
+finite-size, Knabe, inverse-square), the FINISH rows (perl context search for inverse square, Knabe, Gosset, finite-size
+criterion: rows at FINISH lines 746, 763, 779, 790, 796, 812, 827, 836, 847, 1071, 1094, 1113, 1135), `library/` for
+Knabe, Gosset, Mozgunov, Anshu, Lemm.
+
+**Answer: not a restatement. It is the first proof on file of this inverse-square criterion for the Wilson block heat bath.
+Its method is not new on file.** Details:
+
+1. **Method = row 1254 (17)-(19).** The patch Cauchy-Schwarz with a projection that kills the weighted patch sum, far cubes
+   with commuting projections and nonnegative cross terms, and the absolute close-pair bound are row 1254's (18)-(19).
+   Row 1262's (4) is row 1254's (19) with the sine weight instead of the trapezoid, and with the explicit constant
+   e_(s,R); row 1262 says so (L11, L38). The statements differ: row 1254 (17) goes from the global small-cube gap v_s to
+   the global large-cube gap v_t (dual vector g = H_s^-1 f); row 1262 (2) goes from a local fixed-exterior constant to v_s.
+2. **Statement proposed, not proved, in `gap-skeleton-max.md` B7** (L159-L165): the Knabe-type threshold of order n^-2 for
+   the frustration-free heat-bath generator, recalled "from memory", with the crux (K) killed at perturbative n by the
+   gap bound A.1, and the rule that a criterion can only work where it is not met at a perturbative scale. Row 1262 keeps
+   that rule: (16) puts R at physical size (a R -> L > 0), and (18) is a proof, through rows 1231 and 1254, of B7's kill
+   at R = beta^delta.
+3. **Sharpens the six authors' Lemma G.2 / Theorem G.4** (A's Appendix G, read and checked in row 1224,
+   `gap-mini-solve-q-fable.md` L179-L192): there a patch gap gamma gives a global gap only above a threshold of order 1/p
+   (gamma p >= 148). Row 1262 moves the threshold to order (s/R)^2. Row 1262 L7 cites this reading correctly.
+4. **Different from row 746's pair criterion PA / PA_g** (`gap-crux-exercise-astra.md` L768-L790, L1328-L1343): that one
+   is an alternating-projection overlap bound for a coloured block cover, A^2 >= (1 - d eta) A, not a patch Poincare
+   constant.
+5. **Literature.** The weighted-patch inverse-square threshold for frustration-free quantum sums is Gosset and Mozgunov
+   (arXiv:1512.00088; 1D, and 2D with 8/n^2), cited by row 1262. For general lattice dimension, Anurag Anshu,
+   "Improved local spectral gap thresholds for lattices of finite dimension", arXiv:1909.01516 (2019), states a
+   threshold optimal up to a dimension-dependent constant, by the detectability lemma and a coarse-grained Hamiltonian
+   (abstract read; body not read). Row 1262 does not cite Anshu, and the lane's block-criteria digest
+   `prior/gap-lit-block.md` does not list it. Row 1262's proof is its own (sine weights, conditional expectations, no
+   detectability lemma), and FINISH row 755 (line 836) found no such criterion established for a continuous-group lattice
+   gauge theory. Repair: add the Anshu citation as prior work on the quantum side.

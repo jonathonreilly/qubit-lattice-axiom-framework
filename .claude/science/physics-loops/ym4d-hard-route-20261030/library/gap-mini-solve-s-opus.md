@@ -10,7 +10,8 @@ Labels: PROVED (written argument, checkable by hand), ARGUED (argument with a na
 
 ## Status
 
-Step 0: file created. Reading the brief, FINISH.md rules, `parts/gap.md`, the RESULT lines of the earlier gap rows and `library/prior/gap-onebound-read-sol.md`.
+Steps 0-5 written (06:20Z-07:14Z, date -u). The mass gap is not proved. One precise question, (Q-SF) of Step 1,
+is answered with proofs (Steps 2-4). Summary and RESULT line at the end (Step 5).
 
 ## Step 0. Where the lane stands (record, not evidence; written 06:24Z)
 
@@ -231,3 +232,46 @@ Correction to Step 2. The remark there on the dimension count of form symmetries
 symmetries. It does not single out d = 4 for the plate class: the plate class fails in every dimension, by the
 squeezing above, and in 4D by P5.
 
+## Step 5. Summary, consumers and what is left (07:14Z)
+
+**The problem.** Prove the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills. NOT proved, NOT disproved.
+By Theorem BP (row 1179, check 1183) its open lattice input is (N-phys), and this row did not move (N-phys).
+
+**What this row did.** It asked one precise question (Step 1, (Q-SF)): does the one family of K-flow on record
+that crosses a band at order-one coupling, the pinned-cell stiffness flow of OpenAI's 2D O(4) paper, have a 4D
+gauge form once the twist is put on a trivially pinned plate instead of on rough pins? Answer: no, with the
+failure located and, in the comparison model, proved.
+
+- PROVED by hand (Claude Opus 5.5, unchecked): Lemma P1 (a trivially pinned plate has the full rigid SU(2),
+  acting on its normal links); Lemma P2 (the plate twist's exact Hessian, its dependence on the junction only, and
+  the free start bound H <= b D_3, uniform over all other pins and all strengths up to b); Lemma P3 (closure of the
+  plate class under conditioning for the cells that carry the twist, with the exact Hessian identity of the 2D
+  engine); Proposition P5 (Gaussian U(1): the whole cell responds with at most C b theta^2 (1 + log R), while the
+  plate cells of a tiling into L^4 cells carry at least (L - 1) b theta^2, so the conditional-current variance must
+  cancel all but a fraction of order (log R)/L of the cell sum).
+- ARGUED: an induction of the 2D form cannot resolve that cancellation (Step 3); the squeezing count, the same
+  factor L in every dimension (Step 4); the dichotomy that a plate twist is either squeezed or a twist of rough
+  pins (Proposition B of row 1011); the reading that the 2D engine needs a rigid group acting on all integrated
+  variables, which lattice gauge theory lacks in every dimension (Lemma CEN+ of row 1016).
+- The one-scale (K-one) form of the 2D twist mechanism (the annular twist of OpenAI's O(n) paper, Proposition 3.1
+  there) needs no tiling, so P5 does not bind it. On a plate it is bound instead by Lemma PC of row 1188: the plate of
+  a 4D cell is a 3-dimensional slice, where the fourth-order commutator mechanism costs at least the order of the
+  trivial bound. In a 3D gauge theory the plate is 2-dimensional; conditional on all other links its normal links
+  are exactly the O(4) paper's class with fixed right twists (Lemma P2's formula; Lemma EMB of row 1011), so that
+  paper's charged decay applies to them there. That is a 3D statement with no consumer here (READING, not checked).
+- Record corrections (evidence for the lead, who owns those files): the plate class meets (R-a), (R-b), (R-c) of
+  row 1016 6.2, so it is a candidate that row 1016 8.2 and 8.7 did not list; row 1202's table line 41 holds only if
+  every cell of a tiling must lie in the class.
+- Not done: no numeric run (memory free 57 percent at 06:50Z; no run was needed); no literature search beyond the
+  lane's own readings (rows 1007, 1009, 1218); no check by another model.
+
+**Consumers.** `parts/gap.md` route registry, the 2D-engine family (rows 1009-1016): add the plate class with its
+failure (squeezing, P5) to the reasons that family is closed. Lead rule for future rows: a 4D port of a 2D twist
+engine must name a rigid group that acts on all integrated variables, or a decomposition that does not squeeze a
+boundary twist; Lemmas CEN+, REM (row 1016) and P5 (here) bind both.
+
+**What stays OPEN.** (N-phys); the continuum datum of the T0 chain; (BS); (W); the Jaffe-Witten mass gap of
+four-dimensional SU(2) Yang-Mills. Within this row: whether any inequality other than a Brascamp-Lieb variance bound
+could resolve the cancellation of P5 (c) (no candidate known to me).
+
+RESULT: Row 1228 (Claude Opus 5.5 max, Mac mini worker 2, 06:20Z-07:15Z by date -u; author only, checked by no one; no numeric run, no subagent). The mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; (N-phys), the continuum datum, (BS) and (W) stay OPEN. One precise question was answered: the 2D pinned-cell stiffness engine of OpenAI's O(4) paper has no 4D gauge form even when the twist sits on a trivially pinned plate, which avoids Proposition B of row 1011. PROVED by hand, unchecked: Lemma P1 (a trivially pinned plate has the full rigid SU(2) on its normal links); Lemma P2 (exact Hessian of a plate twist, dependence on the junction only, free start bound H <= b D_3 uniform over all other pins and strengths); Lemma P3 (closure under conditioning for the cells that carry the twist, with the 2D engine's exact Hessian identity); Proposition P5 (Gaussian U(1): the whole cell responds with at most C b theta^2 (1 + log R), while the plate cells of a tiling into L^4 cells carry at least (L - 1) b theta^2, so the conditional-current variance must cancel all but a fraction of order (log R)/L). So the plate class meets (R-a), (R-b), (R-c) of row 1016 6.2, a candidate row 1016 did not list, but its twist is a boundary twist that squeezes under tiling. ARGUED: the squeezing factor L holds in every dimension; a plate twist is either squeezed or a twist of rough pins; the 2D engine needs a rigid group acting on all integrated variables, which lattice gauge theory lacks (Lemma CEN+); the one-scale annular form is bound on a 4D plate by Lemma PC of row 1188. Output library/gap-mini-solve-s-opus.md.

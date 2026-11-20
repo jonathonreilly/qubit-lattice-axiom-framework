@@ -35,6 +35,7 @@ different provider (astra62), so this check is cross-provider; it is still one c
 - 09:25Z step 5 done: every other statement HOLDS; three precision notes, no FAILS.
 - 09:27Z step 6 done: the main comparison is not a restatement (searches below).
 - 09:28Z step 7 done: numeric guide (about 10 s under the numeric lock, 09:27-09:28Z, memory 54 percent free) agrees.
+- 09:29Z step 8 done: verdict table and RESULT.
 
 ## Step 1. Inventory and dependency map
 
@@ -86,11 +87,11 @@ M-th power over Tr U^M is the Wilson log moment of t sum beta(1-w) over the mark
 all M times. Row 1151 (21) (the trace-Holder dissemination, also valid for t < 0 because all couplings
 stay positive) and (22a) give log||T_{exp(tX)}|| <= 3t/4 + C(t^2 + |t| beta^(-eta)) after M -> infinity on
 even M >= n (the (22b) error C[(log beta)/b + (b/n) log beta] does not depend on M). The Taylor bound
-|e^{tX} - 1 - tX| <= C t^2 e^{X/2} for |t| <= 1/4, X >= 0, holds, and ||T_{e^{X/2}}|| <= z_{beta/2}/z_beta <= C
+for e^{tX}, namely |e^{tX} - 1 - tX| <= C t^2 e^{X/2} for |t| <= 1/4, X >= 0, holds, and ||T_{e^{X/2}}|| <= z_{beta/2}/z_beta <= C
 because c_d(beta/2) <= c_d(beta) (row 1149 (16)) gives the operator order on the full slice, and kernel
 domination passes to the projected space. For unit f in Q_h: 1 - delta + t<f,T_X f> - Ct^2 <= <f,T_{exp(tX)}f>
-<= exp(3t/4 + C(t^2+|t|beta^(-eta))), and both signs of t with |t| ~ sqrt(delta) give
-|<f,T_X f> - 3/4| <= C(sqrt(delta) + beta^(-eta)). The identity T_X = beta(U - W_e^* F_xy W_e) is the
+<= exp(3t/4 + C(t^2+|t|beta^(-eta))), and both signs of t with |t| ~ sqrt(delta) give the bound
+abs(<f,T_X f> - 3/4) <= C(sqrt(delta) + beta^(-eta)). The identity T_X = beta(U - W_e^* F_xy W_e) is the
 compression formula of (6). Spatial case: U >= h|f><f| for unit f in Q_h holds because U >= 0 (expand f in
 eigenvectors with eigenvalues >= h and use Cauchy-Schwarz); then ||U_t|| >= h<f, e^{tX} f> >= h exp(t<f,Xf>)
 by Jensen. The compression is self-adjoint, so the uniform Rayleigh bound is the norm bound.
@@ -208,7 +209,7 @@ beta^(-1)[3R||m||^2 + 8 G_xy ||m_1||^2] <= 1 - ||m||^2 (diagonal 3(G_xx+G_yy)||m
 -6G_xy||m_0||^2 + 2G_xy||m_1||^2). With r_A = int Re<a,m> d omega and 2(1 - Re<a,m>) = ||a-m||^2 + 1 - ||m||^2,
 beta(1 - r_A) = beta(1 - omega(all)) + (1/2) int beta||a-m||^2 d omega + (1/2) int beta(1-||m||^2) d omega, all three
 terms nonnegative. The middle term and int(1-||m||^2) d omega = O(1/beta) let ||m_1|| be replaced by ||Pi_1 a(X)||;
-||(I-U)f||^2 <= <f,(I-U)f> = O(1/beta) replaces the X-marginal f(Uf) by f^2. ||m_1|| = ||Pi_1(X) m|| is frame
+also ||(I-U)f||^2 <= <f,(I-U)f> = O(1/beta) replaces the X-marginal f(Uf) by f^2. ||m_1|| = ||Pi_1(X) m|| is frame
 invariant. For the passage from G_B to G(z): use -4G||Pi_1 A||^2 >= -4G_B||Pi_1 A||^2 - 4(G - G_B), then B up.
 The triplet excess 4G(z)/beta is the free value: the one-gluon coefficient of G(z) is -C_F = -3/4 in the
 singlet channel and C_A/2 - C_F = +1/4 in the adjoint (triplet) channel, a difference of 1, so
@@ -237,7 +238,7 @@ sum_{t>=1} b(t) = 1/12, so sum d_l = 1/4 = c_1 - c = 3/4 - 1/2.
 terms of the Neumann series, by (31) and r -> 1. Tail: the positive remainder after K terms is at most
 sum_{l>=K} d_l + o(1) in norm. The scalar inequality 1/(r-x) <= K/r + (x/r)^K/(r - ||D||) for 0 <= x <= ||D|| < r
 (split the geometric series at K) gives (r-x)^(-2) <= (K/r)(r-x)^(-1) + (r-||D||)^(-1)(x/r)^K (r-x)^(-1), hence
-||(r-D)^(-1) B_1 Q||^2 <= O(K/beta) + (beta/c_z)(sum_{l>=K} d_l + o(1))/beta -> 0 after K -> infinity.
+so ||(r-D)^(-1) B_1 Q||^2 <= O(K/beta) + (beta/c_z)(sum_{l>=K} d_l + o(1))/beta -> 0 after K -> infinity.
 
 **(33) L448-L452: HOLDS.** r - ||D|| >= c_z/beta and a_j E_0 = o(1/beta) keep r - aE in the resolvent set; the
 resolvent identity gives Q[H(r - aE) - H(r)]Q = aE [(r-aE-D)^(-1) B_1 Q]^* [(r-D)^(-1) B_1 Q], and functional
@@ -298,8 +299,10 @@ by (3) (not only |J_e| <= 4 beta).
 a = i sigma_a, sum_a a (x) a = -sum sigma (x) sigma = I - 2 Swap, which is -I on symmetric tensors, so the Casimir
 on spin l (d = 2l factors) is -3d - d(d-1) = -4l(l+1). The density argument holds.
 
-**L91: HOLDS** (GUIDE-level for the cited account lines RF24-RF25, which I did not re-read; the claim
-beta = O(log(1/a)) is the usual asymptotic-freedom growth). q^R = e^{-2R/b} <= n^(-2(k+c)) for
+**L91: HOLDS.** The account lines were read at `31a47c543775` (outline L20778-L20803, fetched into a /tmp
+scratch folder): (RF25) gives lambda_sharp(j-i) - c_5 <= x_i - x_j <= B_sharp(j-i) and h < x_K <= h + B_sharp,
+so x_0 - x_K <= B_sharp K with x_K bounded; with a = b_0^(-K) this is beta = O(log(1/a)). The account labels this
+the conditional flow statement 3.1, so the growth is that of the account's conditional trajectory. q^R = e^{-2R/b} <= n^(-2(k+c)) for
 R = ceil((k+c) b log n), and a(R+1) = O(L (log n)^2 / n) -> 0.
 
 **(6) L99-L104: HOLDS.** W_e^* F_xy W_e inserts w(X_e^(-1) g_x Y_e g_y^(-1)), the temporal plaquette half-trace,
@@ -354,8 +357,8 @@ at most h^(-1/2) exp(-c' N epsilon^2).
 
 **(18)-(19) L228-L239: HOLDS**, (19) conditional on row 1163 (13)-(14) as labelled. Temporal insertions are exact
 (U - W_e^* F_xy W_e); spatial ones carry (5) with error 2C sqrt(beta) q^R ||V U^m||, ||v||_inf <= 1/3. In (19),
-||v_R - U^m v|| <= 2||A_R - U^m A U^m||, H commutes with the transfer, U >= e^{-a E_*} on ran Q, and
-||QHv||^2 >= int_{E<=E_*} e^{-u_2 a E} d mu >= 15 G/16.
+also ||v_R - U^m v|| <= 2||A_R - U^m A U^m||, H commutes with the transfer, U >= e^{-a E_*} on ran Q, and
+and ||QHv||^2 >= int_{E<=E_*} e^{-u_2 a E} d mu >= 15 G/16.
 
 **L241 (ARGUED): consistent** with (18)-(19); it is labelled ARGUED and claims no estimate.
 
@@ -433,3 +436,77 @@ output in the scratch folder /tmp/gs27chk (`guide.py`, `guide.out`), not committ
 
 So at a nearest neighbour: c = 1/2 (true static pair), c_1 = 3/4 (projected one step), triplet threshold at
 least c + 4G(e_1) = 0.844 in units 1/beta.
+
+## Step 8. Verdicts
+
+Provenance: checked line by line by hand by Claude Opus 5.5 (max), Mac mini worker 1, at commit `3a45c201f`,
+cross-provider on a gpt-6.2-astra text; one reading by one model, not an audit. The numeric run of Step 7 guides
+only.
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| norm of F_x at most q (single charge) | L26 | HOLDS |
+| (1) force identity | L28-L38 | HOLDS |
+| (2) sesquilinear identity, norm of J_e phi squared at most 12 beta | L40-L46 | HOLDS |
+| (3) operator bounds | L50-L62 | HOLDS |
+| (4) near-resonance suppression | L64-L69 | HOLDS |
+| (5) time-dependent integration by parts | L73-L87 | HOLDS |
+| polynomial coverage; Casimir -4l(l+1) | L89 | HOLDS |
+| Euclidean reading; R choice; beta = O(log n) on the account's flow | L91 | HOLDS (account's flow is conditional, 3.1) |
+| (6) open-line comparison | L99-L104 | HOLDS |
+| (7) exact excess | L106-L111 | HOLDS |
+| (8) electric spin in every high state | L113-L124 | HOLDS (P1) |
+| (9)-(10) strict excess; Bessel limits | L126-L136 | HOLDS |
+| min-max consequence | L138 | HOLDS (witness part conditional on row 1163 (13), as labelled) |
+| (11) and L160 ratio gradient | L142-L160 | HOLDS |
+| (12)-(14) joint electric spin law | L166-L187 | HOLDS |
+| (15) Gauss-law symbol | L189-L193 | HOLDS |
+| (16) electric return | L195-L204 | HOLDS |
+| (17) magnetic concentration on the band | L210-L224 | HOLDS (W1) |
+| (18) replacement of the action insertion | L228-L232 | HOLDS |
+| (19) conditional physical overlap | L234-L239 | HOLDS given row 1163 (13)-(14), as labelled |
+| ARGUED paragraph | L241 | consistent (no estimate claimed) |
+| (20) one-step static-pair cost on the band | L245-L256 | HOLDS |
+| Rayleigh reading of (20) | L258 | HOLDS |
+| (21) one-link distributions in slow vectors | L260-L270, L282-L284 | HOLDS |
+| (22) pressure for the radial probe | L272-L280 | HOLDS (P3) |
+| (23) finite-patch score inequality | L290-L303 | HOLDS |
+| (24) lower bound on the static energy | L305-L328 | HOLDS |
+| **(25) static-pair threshold**, with (26) | L330-L344 | **HOLDS** |
+| cost of projecting after every step | L346-L350 | HOLDS |
+| **(27) multiplicity comparison** | L354-L359, L377 | **HOLDS** |
+| (28) ribbon estimate in every slow state | L361-L375 | HOLDS |
+| (29) triplet separation | L381-L398 | HOLDS |
+| (30) Schur reduction, norm of B_1 at most C/sqrt(beta) | L400-L409 | HOLDS |
+| (31) return-time coefficients | L411-L425 | HOLDS |
+| (32) self-energy exhaustion | L427-L444 | HOLDS |
+| **(33) physical-energy estimate** | L448-L452 | **HOLDS** |
+| (34) central-parameter comparison | L454-L458 | HOLDS |
+| (35) exact charged-ground-state form | L460-L471 | HOLDS |
+| OPEN paragraphs, RESULT | L15, L473, L475 | consistent with what is proved |
+
+Totals: 35 numbered displays and 8 unnumbered PROVED or ARGUED paragraphs; all HOLD (two as the labelled
+implications from row 1163's rectangular source hypothesis); 0 HOLDS AFTER CORRECTION; 0 FAILS.
+
+Notes that break nothing:
+- (P1) L124: (8) adapts row 1151 (23) to temporal marks on alternate cuts at exponent beta; the adaptation
+  works (Step 5).
+- (P2) L99, L104, L117: "row 1149, (16)" means the proof paragraph of (16) (row 1149 L222) for the Bessel-ratio
+  monotonicity.
+- (P3) L278: the e^{Cb^3} density factor checks; any e^{O(b^3 log beta)} would also be o(1) per site.
+- (W1) L224, wording: "the stronger prefactor h^(-1)" should read "the prefactor h^(-1) (larger than h^(-1/2)
+  for small h) with a smaller quadratic term". The proof of (17) then uses the h^(-1/2) route, which is right.
+
+Restatement: the main comparison (neutral sector against two fundamental static charges: (6), (9), (25), (27),
+(30)-(34)) is not a restatement of an earlier row. It sharpens row 1145 (18) for a fundamental pair (constant
+about 1/21 to the exact (3/2)R(z), 1/2 at a nearest neighbour), extends row 1151 (21)-(22a) from the vacuum to
+the slow band and row 1231 (2)/(9) to temporal ribbons, and uses row 1143 (8) in the reverse direction.
+Searches are in Step 6.
+
+What the checked results do not give: all three positive claims resolve energies at the scale 1/beta (lattice
+units), while physical energies are of order a = o(1/beta). (33) controls only the spectral-parameter dependence
+of the effective neutral operator H(r); (34) compares rI - H(r) with I - U only to o(1/beta). The bound on the
+neutral excited trace at time floor(n/K) (L473), the continuum mass bound, and the Jaffe-Witten mass gap stay
+OPEN.
+
+RESULT: Row 1245 check of row 1236 (Claude Opus 5.5 max, by hand, cross-provider, first failing step none): the static-pair threshold (25) (lim -beta log r_xy = (3/2)R(z), 1/2 at a nearest neighbour), the multiplicity comparison (27) and the physical-energy estimate (33) all HOLD, as do every other numbered statement (1)-(35) and paragraph (two as labelled implications from row 1163's hypothesis); 0 corrections, 0 FAILS, 3 precision notes and 1 wording note (L224); the main comparison is not a restatement (it sharpens row 1145 (18) for a fundamental pair and extends rows 1151 and 1231); a numeric guide agrees (Bessel limits, sum b = 1/12, R(e_1) = 1/3); OPEN: the neutral excited trace at a fixed physical side, the continuum mass bound and the mass gap.

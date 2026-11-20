@@ -19,7 +19,7 @@ dislocations, comparisons with moved or random lattices. The record has only lat
 translations as a symmetry group (row 1201, no stiffness).
 
 
-## 1. Repo search (12:34Z-13:05Z)
+## 1. Repo search (12:34Z-12:46Z, date -u)
 
 Read: `GOAL.md`; `FINISH.md` L1-84, L299-356 and rows 1201, 1218, 1258-1260, 1264-1275 (RESULT lines);
 `parts/gap.md` L1-105; `library/gap-crux-restate.md` Sections 1-3.4 (setting, C1-C5, Theorem D, Theorem S);
@@ -74,7 +74,7 @@ A moving form can matter in two ways only: as a selective input that reaches the
 that lowers the seed threshold to a size where a provable input (asymptotic freedom at small coupling) holds.
 Sections 2-5 test each new form against both.
 
-## 2. Sliding blocks and dislocations (13:05Z-13:40Z)
+## 2. Sliding blocks and dislocations (12:46Z-13:00Z)
 
 Setting. Q = Z^4/Gamma, Gamma = diag(n_1, ..., n_4) Z^4, all n_mu >= 4. Wilson SU(2) action with class-function
 plaquette weights; any compact group G is allowed in 2.1-2.3, because nothing there reads G. "Regluing a cut by a
@@ -130,13 +130,14 @@ holonomy gives a positive measure invariant under gauge transformations. (3) Eve
 still a symmetry: each closed cycle of the dislocated lattice crosses the hypersurface x_nu = c + 1/2 an even number
 of times (checked for the core cycle of 2.2 below). So a dislocation is centre-neutral.
 
-### 2.2 Lemma DIP: a dislocation dipole is a localized shear, and its tension is the shear deficit (PROVED given (TM) and RP for the slice lattices; ARGUED for the core overlap)
+### 2.2 Lemma DIP: a dislocation dipole is a localized shear, and its tension is the shear deficit (PROVED given (TM) for the two slice lattices)
 
 Take one cut piece: the bonds of direction 1 from (0, x_2, z) to (1, x_2, z), z = (x_3, x_4), with 0 <= x_2 < m,
 reglued by a shift b in span(e_3, e_4), b != 0. By 2.1 (c) this is a dislocation dipole: cores at x_2 = -1/2 and
 x_2 = m - 1/2 (2-planes in the directions 3 and 4) with Burgers vectors b and -b. For b = e_3 the core cycle is the
-pentagon (0, -1, z) -> (1, -1, z) -> (1, 0, z) -> (0, 0, z - e_3)... closed by one step in direction 3; it crosses
-x_1 = 1/2 twice. Write Z_dip(m) for its partition function with a fixed core action.
+pentagon (0, -1, z) -> (1, -1, z) -> (1, 0, z) -> (0, 0, z - e_3) -> (0, 0, z) -> (0, -1, z) (the third step runs
+backward along the moved bond from (0, 0, z - e_3)); it crosses x_1 = 1/2 twice. Its mirror image under
+x_2 -> m - 1 - x_2 is the core cycle at x_2 = m - 1/2. Write Z_dip(m) for its partition function with a fixed core action.
 
 (a) Z_dip(0) = Z(Q) and Z_dip(n_2) = Z(Q with the period (n_1, 0, -b)) = Tr(T_1^(n_1) tau_b) (part (a) of 2.1, no core).
 So the dipole interpolates between the periodic torus and the sheared torus, as a 't Hooft loop interpolates between
@@ -165,17 +166,21 @@ with S_0 the excited thermal sum of T_0. The dipole pays at least the shear defi
 swaps the cores; then K_+ = K_-^* by the Osterwalder-Seiler argument, which reads only the bonds and plaquettes next
 to the reflection plane, and those are standard squares): every term of the spectral sum
 Z_dip(m) = sum over i, j of lambda_i(T_0)^(n_2-m-1) lambda_j(T_b)^(m-1) |<psi_i, K_- phi_j>|^2 is >= 0, so
-Z_dip(m) >= lambda_0(T_0)^(n_2-m-1) lambda_0(T_b)^(m-1) |<psi_0, K_- phi_0>|^2. The overlap is > 0 if K_- has a
-positive kernel and the top eigenvectors are positive (Perron-Frobenius, (TM)). ARGUED, not written out: that the
-core kernel K_- is positive for the Wilson weight of the core cycle (it is a product of positive functions of the
-link variables, so I expect the standard proof to apply).
+Z_dip(m) >= lambda_0(T_0)^(n_2-m-1) lambda_0(T_b)^(m-1) |<psi_0, K_- phi_0>|^2. The overlap is > 0: the kernel
+of K_- is a product of the strictly positive weights exp(beta (1/2) tr U) of its plaquettes and core cycles,
+integrated over the bonds between the two slices, so it is a strictly positive function; psi_0 and phi_0 are
+strictly positive by (TM). K_+ = K_-^* holds because the dipole lattice is mapped onto itself by the reflection
+x_2 -> m - 1 - x_2 (the strip [0, m) goes to itself, b is unchanged, the two core cycles are exchanged, see the
+pentagon above) and the kernels are real.
 
-Reading (PROVED from (d) and (e) up to the core overlap): for widths m with m and n_2 - m both large,
--log(Z_dip(m)/Z(Q)) = m Delta_b + O(1), the O(1) set by the cores and the thermal sums. So **the tension of a
+Reading (PROVED from (d) and (e)): for all widths 1 <= m <= n_2 - 1,
+-log(Z_dip(m)/Z(Q)) = (m - 1) Delta_b + R(m), with R(m) between -log(||K_-|| ||K_+|| / lambda_0(T_0)^2) -
+log(1 + S_0(n_2 - m - 1)) and -log(|<psi_0, K_- phi_0>|^2 / lambda_0(T_0)^2) + log(1 + S_0(n_2)): bounded by
+core and thermal terms, uniformly in m. So **the tension of a
 dislocation strip is exactly the shear deficit of the slice**, the object of row 962's crossing identity and of
 route RA. The cores add a local core free energy and a core-core interaction. The interaction is a correlation of
-two centre-neutral defect operators across the strip: in channel 2 it decays at the rate of the neutral gap of T_0
-(and of T_b), and not faster.
+two centre-neutral defect operators across the strip; in channel 2 its m-dependence is set by the neutral
+excited spectra of T_0 and T_b (ARGUED: K_- commutes with the centre flips, Remark (3)).
 
 ### 2.3 Verdict on dislocations (ARGUED; the identities are PROVED above)
 
@@ -193,3 +198,110 @@ two centre-neutral defect operators across the strip: in channel 2 it decays at 
 
 What is new here: dislocations as localized shears with an exact tension (Lemma DIP), and the sliding-block
 reduction (Lemma SLIDE). Neither has a consumer in the chain.
+
+## 3. Moved and random lattices (12:53Z-12:54Z)
+
+### 3.1 Lemma GRAPH (PROVED, elementary)
+
+The Wilson partition function, and the law of every gauge-invariant lattice observable, depend on the lattice
+only through its cell complex (sites, oriented bonds, the cycles that carry a weight) and the weights. They do not
+depend on where the sites sit in R^4.
+
+Proof. The measure is the product of Haar measures over bonds times the product of the cycle weights, and each
+weight is a class function of the holonomy of its cycle. Neither reads a coordinate. QED
+
+So a move of sites changes something at a fixed cutoff in one of two ways only:
+
+- (i) it changes the complex: Section 2 (a dislocation or another defect), or a different lattice model;
+- (ii) it changes the weights with the geometry, as in the random-lattice actions of Christ, Friedberg and Lee
+  (RECALLED: weights that depend on the volumes of dual cells). That is an inhomogeneous coupling field.
+
+Positions enter only when lattice observables are matched with continuum test functions, that is, in the
+continuum datum of the T0 chain and its Euclidean clauses.
+
+### 3.2 Verdicts (ARGUED)
+
+- A moved lattice a Z^4 + v is the same model as a Z^4 at each cutoff (Lemma GRAPH). As a -> 0 the comparison of
+  offsets is the translation clause of the continuum limit. That is a T0 clause, not the gap. Rotated lattices
+  are row 963.
+- A random lattice is a different model. Its gap is as open as the hypercubic one, and a comparison with Z^4 needs
+  a universality theorem that I do not know for four-dimensional gauge theories (RECALLED; no source opened). If
+  its weights follow the geometry, they are a coupling field, and a hypothesis uniform over coupling fields is
+  false (Lemma SHEET, row 996, cited in `parts/gap.md` L29). Averaging over random lattices gives exact
+  statistical Euclidean invariance of the random-lattice model; that is a tool for the O(4) clause (RO1), not for
+  the gap (GUIDE).
+- Annealed dilution of sites or bonds (vacancies that hop between nodes) changes the plaquette weight by a
+  mixture: Identity MIX of row 996 (K7 as Wilson with annealed Gaussian couplings). Quenched dilution is a coupling
+  field (Lemma SHEET). Both on file.
+- (SEL): none of these reads the group; the free Maxwell field does not see the lattice at all, so it passes
+  every comparison between lattices.
+
+## 4. Does any moving form read SU(2)? (12:54Z-13:05Z)
+
+### 4.1 The only place where a translation meets the group (PROVED on file; my reading of it)
+
+A lattice translation reads the gauge group in one way only: through the centre, when a twist is present. Row 1161
+(`gap-solve9-astra62.md` L42-64, credit 't Hooft): in a magnetic sector m != 0 the translation has to be
+compensated by centre flips to move the twist stack back, and the compensated translation D_i satisfies
+D_i^(n_i) = product of C_j^(m_ij). In the sectors with Mq != 0 this is -I, so every eigenvalue has even
+multiplicity. In the periodic neutral sector (m, q) = (0, 0) no compensation is needed: D_i is the plain
+translation tau_i, tau_i^(n_i) = 1, the momentum is an integer multiple of 2 pi / n_i, and the zero-momentum
+scalars are fixed by every symmetry move (row 1201 Lemma G1). So the one group-reading combination of moving sites
+and gauge structure acts on the flux half, which row 1161 has already used, and does nothing in the sector that
+(N-phys) is about.
+
+Statement (PROVED, elementary): in the periodic neutral sector, every symmetry move of Sections 1.1 and 2.1 (a
+translation, a signed permutation, a sheared or reglued torus without core) acts on H_(0,0) by a unitary of the box
+symmetry group, and the trivial-representation part of T, which contains every zero-momentum scalar, enters each
+twisted trace Tr(T^t U_g) with the coefficient chi_triv(g) = 1. Proof: row 1201 Lemma G1 (c) with the decomposition
+restricted to H_(0,0). Every U_g preserves H_(0,0): a translation or reflection maps the flip C_nu at the plane
+x_nu = c + 1/2 to the flip at another plane x_nu = c' + 1/2, which acts in the same way on gauge-invariant
+functions (the two differ by the gauge transformation -1 on the slab between the planes); a permutation sigma of the
+axes maps C_nu to C_sigma(nu). So U_g permutes the centre flips and keeps their joint +1 eigenspace. QED. So no family of symmetry moves separates the zero-momentum
+scalar part from the vacuum: every such trace contains it with weight one.
+
+### 4.2 Non-symmetry moves (dislocations, junctions of sliding blocks): what they add (ARGUED, from 2.2)
+
+A move that is not a symmetry is a defect. By Lemmas SLIDE and DIP its far field is a symmetry move (invisible, or
+a shear when it wraps the torus), and what is left is a core: a centre-neutral local modification of the complex.
+Its free energy is a local quantity at the cutoff scale, and its interaction with a second core is a neutral
+correlation. Both are read off the same measure as a plaquette correlation; neither brings a new inequality.
+
+### 4.3 Moving forms as engines (on file; GIVEN the free-photon facts)
+
+A moving form could still matter as an engine that lowers the seed threshold to a size where asymptotic freedom
+gives a provable input (Section 1.2). It cannot, for the reason the record already states for every blind engine:
+Lemma FLOOR (row 988, `library/gap-unit-max.md` L174, check 991: HOLDS) says a seed forces side times gap above
+17.04 at threshold 1/5041, and row 998 lists "a seed below the massless floor (twisted or small boxes)" as set aside
+(`gap-crux-exercise3-max.md` L506). The free photon has side times neutral gap 2 pi at every size, and (N-phys) is
+selective only because K is large (row 1219, `gap-mini-solve-o-fable.md` L47). At small physical size the periodic
+neutral sector of SU(2) has a lowest level of order g(L)^(2/3)/L (Luscher, RECALLED, rows 1143, 1008), below the
+photon's 2 pi/L. On a twisted torus the single gluons have half-integer momenta and so sit in electric sectors
+q != 0 (fractional momentum, row 1161); the neutral twisted levels start at about two gluons, about 2 pi/L (GUIDE,
+tree level), no better than the photon. A moving form changes the geometry, not these numbers. So no moving form
+gives an engine that small-volume information can seed. That is the first failing step on this side.
+
+### 4.4 Answer to the owner's question (ARGUED; the lemmas it rests on are PROVED above or on file)
+
+"Anything to the sites themselves moving between lattice nodes?" Not for the gap, in any of the forms named in
+row 1274. The reasons, form by form:
+
+| Form | What it is on the lattice | First failing step |
+|---|---|---|
+| Sheared or shifted blocks, translation-twisted periodic conditions | a sheared torus, Tr(T^t tau_v) (Lemma SLIDE (a), (b); row 962 Lemma SHIFT) | blind identity; its cost is the shear deficit, route RA; row 962 7.4: the deficit is small for all shears only if the full thermal sum is small |
+| Sliding blocks with a mismatch, lattice dislocations | a sheared torus plus cores with total Burgers vector 0 (Lemma SLIDE (c)); a dipole has tension exactly the shear deficit (Lemma DIP) | strip invisible (translation is a symmetry); core is a local neutral observable; (SEL) fails |
+| Moved lattices | the same model at each cutoff (Lemma GRAPH) | T0's translation clause, not the gap |
+| Random lattices, diluted lattices | a different model, or a coupling field, or an annealed mixture | universality open; Lemma SHEET (row 996) and Identity MIX (row 996) |
+| Rotated or diagonal lattices, rotation about an axis | rows 963 and 962 A7 | on file: blind, or the entanglement spectrum, not the mass |
+| Translations compensated by centre flips | row 1161 | reads the group, but only on the flux half; in (m, q) = (0, 0) it is the plain translation (4.1) |
+
+The common reason: a lattice moves sites only by its own symmetries, and a symmetry move cannot tell SU(2) from
+U(1). Away from symmetry moves a move is a defect, and a defect is a local neutral observable. The free Maxwell
+field (and compact U(1) at weak coupling) passes every moving-site identity, so none of them can be the selective
+step; and the zero-momentum scalars, which (N-phys) has to bound, are fixed by every symmetry move.
+
+What would reopen the question (a reopen condition, not a claim): a move of sites whose cost cannot be removed by a
+lattice symmetry and whose cost differs between SU(2) and U(1) at order-one coupling. The only candidates I can
+see move colour together with the sites (a translation composed with a non-central colour rotation that varies
+across the box). That is the non-abelian block idea of the parallel row 1273 (`gap-owner-threeaxis-opus`), so I do
+not attack it here (rule 0a).

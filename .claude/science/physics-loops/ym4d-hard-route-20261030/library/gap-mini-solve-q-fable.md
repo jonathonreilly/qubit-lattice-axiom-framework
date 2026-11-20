@@ -30,6 +30,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T05:31Z 7.6 written: Lemma NC (classical symmetry breaking at the pi-flux face), PROVED by hand.
 - 2026-11-20T06:06Z 7.7 written: batch 2 results (run 05:26:00Z-06:05:27Z by the log's date -u stamps, under the lock) and verdicts.
 - 2026-11-20T06:07Z 7.8 criteria fixed for batch 3 (replicas at beta 2.6 and 2.8, d = 8) before it runs.
+- 2026-11-20T06:08Z Section 8 written (consequences; revises Sections 4 and 6); batch 3 running (started 06:07:14Z by its log stamp), verdict pending in 7.9.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -237,6 +238,8 @@ limits built along them. This changes no conclusion.
 
 ## 4. What the check gives the lane (ARGUED unless marked)
 
+*Revised by Section 8: Section 7 found that A's hypothesis (M) fails at GUIDE level under a centre-valued exterior. Read Section 8 before using items 1-2 below.*
+
 1. **A second checked consumer, of a different kind.** The lane's consumer of row 1161 takes the periodic neutral
    trace (N-phys) to the gap. A's chain (Section 3, PROVED as a check, one reading) takes the finite-box slab bound
    (M_{d_k, m}(c)), c < 1/2, uniform along the tuning, to the gap of every volume-first continuum limit.
@@ -276,6 +279,8 @@ beat the massless value 1/2 by a margin 1 - 2c with m - 1 >= 148/(1 - 2c)^4 (so 
 of compact U(1) violates it (A Section 12; A Proposition H.4 for the Gaussian chain).
 
 ## 6. Recommendation to the lead (process; not a proof claim)
+
+*Superseded in part by Section 8.4.*
 
 - A cross-provider check of Section 3 is cheap: A pp. 8-9 (Proposition 2.1), 15-17 (Definition 6.1, Lemma 6.2,
   Theorem 6.3, Corollary 6.4, Theorem B), 87-92 (Section 11), 124-127 (Appendix G). It would make A's chain the
@@ -554,3 +559,59 @@ Combined: r_bar = mean over the three replicas, err = (replica standard deviatio
 Criteria, for each beta: (a) r_bar - 3 err > 1/2: (M_{8,m}(c)) FAILS at that beta for every c < 1/2 (GUIDE), at a box of
 2-4 bulk correlation lengths; (b) r_bar + 3 err < 1/2: this reading does not refute (M) there; (c) otherwise
 inconclusive. The batch-2 point (beta 2.6, d = 8: 0.776) is reported beside the new replicas but not pooled.
+
+## 8. Consequences of Sections 3 and 7 (revises Sections 4 and 6)
+
+### 8.1 What is established, by kind
+
+- PROVED as a check of A's text (one reading, no failing step): A's chain (M_{d_k, m}(c)) along the tuning, c < 1/2,
+  m - 1 >= 148/(1 - 2c)^4, gives BP(2 d_k - 1, (1 - 2c)^4/32) on every even torus with d_k | L, L >= 2 m d_k, and then
+  the continuum gap (1 - 2c)^4/(1250 e^2 l) for every volume-first continuum limit (Section 3).
+- PROVED by hand: Lemma NC (7.6). With the pi-flux exterior, every classical ground state of a box with d >= 314 is
+  moved by the global SU(2), which no interior gauge transformation undoes.
+- GUIDE, against criteria fixed before each run: under the pi-flux exterior, (M_{d,m}(c)) fails for every c < 1/2 at
+  beta 3.0 (d = 4), beta 4.0 (d = 3..6) and beta 6.0 (d = 3, 4); the face correlation does not fall with d there
+  (7.5, 7.7). These boxes are small in physical units. In the physical regime (beta 2.6, d = 5..8) batch 2 was
+  inconclusive; batch 3 (7.8, 7.9) decides it or not.
+- ARGUED: the failure persists along the tuning. The face links have no interior end point, so G_Q cannot gauge a twist
+  of the face order away; the face's own plaquettes give it a stiffness of order beta per bond, which diverges along the
+  tuning, while its noise stays of order one; the bulk is integrated (annealed), so it renormalises the face couplings
+  and does not act as a random field (7.3). Not proved: control of the bulk-induced face couplings.
+- ARGUED (A's own continuity lemma, pp. 96-97): rho^omega is continuous in omega, so a failure at omega_pi is a failure
+  on an open set of exteriors, which has positive probability under the torus measure. Exteriors near omega_pi have a
+  trivial stabiliser, so restricting the observables to stabiliser-invariant ones (as in A's Proposition G.5 (c))
+  does not rescue (M) there.
+- ARGUED (heuristic dynamics): along the tuning A's uniform patch gap gamma_{d,m} of Appendix G also fails, since near
+  omega_pi the patch dynamics must rotate an ordered face by single-block moves against a stiffness of order beta d
+  (relaxation time of order m^2 beta d). This would close A's finite-size route to (D) as well; it does not refute (D)
+  (BP on the torus) itself, which has no exterior.
+
+### 8.2 What it means for the lane
+
+1. A's slab route is a valid implication whose hypothesis fails at weak coupling in four dimensions at GUIDE level
+   (small boxes, pre-registered) and, by the argument above, along the tuning. So it cannot be the lane's second
+   consumer in its stated form. This answers, at GUIDE level, the question A leaves open on p. 105 ("We know no
+   boundary condition that refutes (M_{d,m}(c)) along the four-dimensional tuning"): the layered pi-flux exterior of
+   rows 950/952 is a candidate. A expected the opposite ("the twisted sectors [to] be disordered at the scale l/2").
+2. The lane's crux (N-phys) is a periodic statement with no exterior; this mechanism does not touch it. The lane's
+   general lesson gains a third instance: statements uniform over boundary data fail at weak coupling through
+   boundary-layer order (rows 950/952 for (SC) and (SG2); method 36, row 1139, for thin layers; A's (M) here, for fat
+   boxes, because the face of a fat four-dimensional box is three-dimensional).
+3. Nothing here proves or disproves the mass gap, (N-phys), (W), (BS) or A's (D).
+
+### 8.3 What stays open
+
+(N-phys) and the continuum datum (unchanged). A's (D) itself. Whether some repaired slab hypothesis (exteriors
+restricted in a way that the induction of Theorem 11.8 preserves) holds and still implies (D): OPEN, and the
+continuity remark above says a restriction to typical exteriors cannot work. The physical-regime verdict of batch 3:
+pending in 7.9.
+
+### 8.4 Recommendation (replaces the first item of Section 6)
+
+- Do not port A's slab chain as a lane consumer in its stated form. The check of Section 3 stays useful as a record that
+  the implication is sound, if the lead wants a cross-provider check of it; low priority now.
+- The Section 7 finding is about an outside authors' stated open question. Under FINISH rules 0g-0i and 6 any message to
+  them is the lead's and the owner's decision, after a check by the other provider. I only flag it.
+- The second item of Section 6 (replace plain-brief "solve" rows by rows with one precise question) stands; this row
+  is an example: the precise question "does a centre-valued exterior refute (M)?" produced a definite GUIDE answer
+  within the row.

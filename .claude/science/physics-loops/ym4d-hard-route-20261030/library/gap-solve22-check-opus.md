@@ -72,3 +72,38 @@ The note has 341 lines and one RESULT line (L341). Line numbers below are those 
 Precision (no correction needed): (10) is a finite-volume, fixed-cutoff comparison for each large n. It says nothing about a limit of the z_j, as L228 itself says.
 
 Step 2 result: (6), (7), (8), (9), (10) HOLD. Row 1155 (9) and (3) and row 1149 (16) HOLD as used.
+
+## Step 3. The heat-trace recovery (18)-(20)
+
+Notation as in the note: t = d + r, T = 2(d + r), C = C_{E,t}, Pi = average of the eight spatial center flips, D_+(v) = Tr(Pi P^v). Row 1161 defines X_{0,0}(v) = Tr_{q=0}(F_0/lambda_0)^v and s(v) = X_{0,0}(v) - 1 (L46-53 of `gap-solve9-astra62.md`). The sector q = 0 is the range of Pi on gauge-invariant functions, and P vanishes off gauge-invariant functions because C contains the gauge projection. So D_+(v) = 1 + s(v) of row 1161.
+
+**Upper half of (18), L292. HOLDS.**
+- The density is the kernel. For wall tests, E[phi(E) (Pi chi)(E')] = <phi, C Pi chi>. Joint flip invariance lets Pi act on phi too, so the bilinear form of nu_+ is <phi, Pi C Pi chi> on L^2(mu). Hence dnu_+/d(mu x mu) is the kernel of Pi C Pi.
+- Absolute continuity. C is Hilbert-Schmidt because P^d is (F is trace class). An HS kernel that the product tests identify with nu_+ gives nu_+ << mu x mu with an L^2 density. So H_d = ||Pi C Pi||_HS^2.
+- Bound. Flips commute with Q and intertwine with J_i, so Pi C Pi = Q J_r (Pi_s P^d) J_0^* Q. HS is an ideal, and Q, J_r, J_0^* are contractions. So H_d <= ||Pi_s P^d||_HS^2 = Tr(Pi_s P^{2d}) = D_+(2d).
+
+**Lower half of (18), L294-300. HOLDS.**
+- Bad collars are rare in the periodic law. The deficit sums of row 1155 (9) work on a time circle of any length. Markov's inequality and the union over at most n^3 boxes give P_T(collar bad) <= n^3 exp[-alpha beta eta k/2 + C_{b,s} k log C] <= epsilon. The bound is uniform in T.
+- One seam. Tr(A^* A) = integral of A(X,Y)^2. This is the time-T circle made of the half circle and its time reversal, which is a valid path of the same weight since the kernel of F is symmetric. It carries the bad collar, so Tr(A^* A) <= epsilon Tr F^T. Next, ||B||_HS^2 = Tr F^T, and ||B'||_HS <= ||F^{T/2}||_HS whenever 0 <= B' <= F^{T/2} pointwise. So each of the two collar defects costs at most sqrt(epsilon) Tr F^T, by |Tr(A B U_g)| <= ||A||_HS ||B U_g||_HS.
+- Eight seams. Center flips preserve every plaquette trace (0 or 2 flipped links per face, on spatial and temporal faces alike), so U_g commutes with F. Then Tr(F^T U_g) = integral of F^T(X, g^{-1} X) dX >= 0, so Tr P^T <= 8 D_+(T). Averaging over g gives good-good >= lambda_0^T (D_+(T) - 2 sqrt(epsilon) Tr P^T) >= lambda_0^T (1 - 16 sqrt(epsilon)) D_+(T).
+- Kernel domination. The true good-collar transition J_0^* 1_G J_r integrates the joint conditional law of the ends over good walls. A_G = J_0^* Q 1_G Q J_r integrates the product of the conditional marginals. On G, step 2 gives p <= e^epsilon p_1 p_2. So J_0^* 1_G J_r <= e^epsilon A_G pointwise as kernels, with the observed end coordinates taken from the same E. The circle trace is monotone in each nonnegative kernel (P^d, U_g, the two collar kernels). So good-good <= e^{2 epsilon} lambda_0^T Tr(Pi A_G P^d A_G P^d).
+- Cyclicity. Tr(Pi A_G P^d A_G P^d) = Tr(1_G C 1_G Pi C), using Q 1_G = 1_G Q and the flip invariance of G (deficits are flip invariant). This equals Tr[(Pi 1_G C 1_G Pi)^2]. Then |Tr K^2| <= ||K||_HS^2 and ||1_G K 1_G||_HS <= ||K||_HS give at most H_d.
+- Conclusion. Combining, (1 - 16 sqrt(epsilon)) e^{-2 epsilon} D_+(2d + 2r) <= H_d, uniformly in d >= 1.
+
+**(19), L306-318. HOLDS.**
+- Circle density. Product of two stationary collar laws, times k_d(x', y), times (1/8) sum_g k_d(y', g x). The psi_0 factors cancel because psi_0 is flip invariant (it is the unique Perron vector of a kernel that commutes with the flips). The total mass is lambda_0^{-T} (1/8) sum_g Tr(F^T U_g) = D_+(T).
+- Product replacement. On G^2, replacing each collar's joint conditional end law by the product of its marginals costs e^{+-epsilon} per collar.
+- Factorization. After the replacement, the first factor integrates only x' and y. This is exactly the stationary pair density p(U,V): given the two collar paths, the pair has density k_d(X_r, X_{r+d}) relative to the product of the stationary collar laws. The second factor is (1/8) sum_g p(V, gU) = p_+(V,U), by the change of variables x -> g^{-1} x and equivariance of the conditional end laws.
+- Final flip. p_+ is invariant under flipping either argument, because p is invariant under joint flips. So the final flip turns p(U, h^{-1} V) into p_+(U,V). G is flip invariant, so G^2 is kept.
+
+**(20), L320-326. HOLDS.**
+- k_d > 0 at fixed cutoff, so p_+ > 0. Divide (19) by p_+(U,V) and integrate over G^2 against mu x mu. The right side is the mass on G^2 of the transposed law, whose marginals are both mu. That mass lies in [1 - 2 epsilon, 1], since mu(G^c) = <psi_0, lambda_0^{-r} F_{[0,r]}(1_{G^c}) psi_0> <= epsilon.
+- The truncated test follows from the upper inequality, because min(M, 1/p_+) <= 1/p_+.
+
+**One-cube sufficient bound, L302. HOLDS.**
+- Take d = floor(n/1024) - r, which is >= 1 for large n. If limsup chi^2 < 1/2, then eventually H_d <= 3/2 - delta. The lower half of (18) gives D_+(2 floor(n/1024)) < 3/2.
+- Row 1161 needs s(u) <= 1/2 at an integer 3 <= u <= n/512 (L215 there). Here u = 2 floor(n/1024) is such an integer, so monotonicity in time is not even needed.
+- The grid hypotheses of row 1161 (4 | n, n >= 2^70, permitted cubes) and its continuum conditions are carried as stated hypotheses, and the note says so.
+- Precision. The criterion uses the joint wall law nu_+ at time separation of order n/1024 lattice steps. Nothing in the note bounds it, as L302 and L339 state.
+
+Step 3 result: (18), (19), (20) and the L302 consequence HOLD. No correction.

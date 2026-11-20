@@ -214,3 +214,127 @@ spatial observables to evaluate") is a correct description: the truncations boun
 $\omega$; the Poincare inequality that would turn it into a gap is the OPEN item at L52. (22) and (24) are statements
 about the exactly deleted tilt $Q$; they control truncation errors in the thermal ratio, not the ratio itself. None of
 them is a step of a mass-gap proof by itself, and the source does not claim it is.
+
+## Step 5 (written 2026-11-20T16:15Z): everything else, part A, L54-L131
+
+**L63-L67, $\|P_{\exp(\beta A_e/2)}\|\le C_0$.** The insertion halves the coupling on $e$; the mass-one convolution at
+$\beta/2$ is below the one at $\beta$ (character multipliers $I_d(\kappa)/I_1(\kappa)$ increase with $\kappa$), times
+$z_{\beta/2}/z_\beta\le C$. So $0\le T'\le CT$ on $L^2(\text{Haar})$, and $P'=\lambda^{-1}M_\psi^{-1}T'M_\psi$ is unitarily
+$\lambda^{-1}T'$; $\lambda=\|T\|$ on the unprojected space because the Perron-Frobenius vector is unique, positive and
+hence invariant. **HOLDS.**
+
+**L69, (5).** $\beta A^2\le C\beta^{-1}e^{\beta A/2}$ on $[0,2]$ ($x^2e^{-x/2}\le16/e^2$); pointwise domination of nonnegative
+kernels gives $\|P_B\|\le Ck/(\beta u)=b_0$. $p=\mathbb E[\bar f(X)(f(X)-f(Y)){\bf1}_B]+\langle f,P_Bf\rangle\le\sqrt{2\delta p}+b_0$
+with $\mathbb E|f(X)-f(Y)|^2=2\langle f,(I-P)f\rangle\le2\delta$; solving the quadratic gives $\sqrt p\le\sqrt{b_0}+\sqrt{2\delta}$.
+**HOLDS.**
+
+**L56-L61 and L75, (4).** $|W_e|^2=(1+X_e\cdot Y_e)/2=1-A_e/2$; $1-s_e=A_e/(2(1+s_e))\le A_e/2$, so
+$\sum(1-s_e)^2\le u/(4\beta)$ on $B^c$ and $|s-t|^2/\sigma^2\le(u/\beta)\cdot4\beta=4u$; the Gaussian $\chi^2$ is
+$e^{|s-t|^2/\sigma^2}-1$, data processing to radii, joint convexity of $\chi^2$ for the mixture $\bar Q$;
+$J(B^c)\ge1-b_0\ge1/2$ gives $\|b\|_{L^2(\bar Q)}\le\sqrt2$; good part $\le\sqrt2\sqrt{e^{4u}-1}\le C\sqrt u$, bad part
+$\le(1+\sqrt2)\sqrt p$; $u=\sqrt{k/\beta}$ makes both $C(k/\beta)^{1/4}$. The $K$-band version: $g=RP^{-1/2}f$ with
+$RP^{-1/2}$ unitary between the bands, so $\langle g,b\rangle_\eta=\mathbb E[(P^{-1/2}f)(X)b(R_I)]$ with
+$\|P^{-1/2}f\|\le(1-\delta)^{-1/2}$. **HOLDS.**
+
+**L77, forest extension.** Haar vertex averaging fixes the triple law and $f(X)$; on a tree, exposing a root frame and
+then each child frame makes the edge directions independent uniform given the radii; conditional expectation does not
+raise the $L^2$ norm. **HOLDS.**
+
+**L81-L104, single-probe cyclicity.** (6): $\mathbb E\,e^{-t|W+\sigma G|^2}=(1+2t\sigma^2)^{-2}e^{-t|W|^2/(1+2t\sigma^2)}$ in
+$\mathbb R^4$ with $2t\sigma^2=t/(2\beta)$ and $|W|^2=(1+X\cdot Y)/2$; the new coefficient of $X\cdot Y$ is
+$\beta-t\beta/(2\beta+t)=\beta/(1+t/(2\beta))$; the insertion sits between $R^*$ and $R$, and
+$R^*M_bRf(x)=\mathbb E[f(Y)\mathbb E[b(Z)|X,Y]\,|\,X=x]$ by conditional independence. **HOLDS.** $l_d$ (L90): the
+$SU(2)$ multiplier of $e^{\kappa\mathrm{Re}u}/\int e^{\kappa\mathrm{Re}u}$ on dimension $d$ is $I_d(\kappa)/I_1(\kappa)$
+($\int e^{\kappa\cos\theta}\chi_d\,d\mu=(2d/\kappa)I_d(\kappa)$); $l_{d+1}/l_d<1$ because $I_{d+1}/I_d$ increases strictly and
+$\beta'<\beta$. **HOLDS.** L94: $B$ and $B^*$ injective, polar part unitary;
+$U(B^*L_eB)U^*=(BB^*)^{1/2}L_e(BB^*)^{1/2}$; $K_\epsilon=F^{1/2}(F+\epsilon)^{-1/2}\to I$ strongly and
+$K_\epsilon L_eK_\epsilon\to L_e$ strongly; the same with $C^{1/2}(C+\epsilon)^{-1/2}$ recovers $M_v^2$, and $\log$ gives $V$.
+**HOLDS.** (7), L96-L102: $-1$ acts as $(-1)^{d-1}$; $S_\xi VS_\xi^*$ multiplies $w_{p'}$ by $\prod_{\partial p'}\xi$; the
+weighted average kills the constant and every $p'\ne p$ (distinct edge sets for $n\ge4$). **HOLDS.** L104: $B\psi=U\psi$
+since $|B|\psi=\psi$; $C^{1/2}B\psi=CM_v\psi/\sqrt\lambda=\sqrt\lambda M_v^{-1}\psi$ from $M_vCM_v\psi=\lambda\psi$. The algebra
+contains $C$, $M_v$ (so $T$), every $M_{w_p}$ and every single-link spin projection, i.e. all generators of row 1246
+(4) (`gap-solve28-astra62.md` L84-L90), whose "in fact" clause gives every bounded invariant multiplication; that
+statement was checked as S9 HOLDS in `gap-solve28-check-opus.md` L48, L134 (same provider as this check). Cyclicity
+follows. **HOLDS.** L106 OPEN: the stated implication (a common decay rate for all centered words bounds the neutral
+spectral edge, by cyclicity) is correct at fixed cutoff; the bound itself is OPEN.
+
+**L110-L120, the noise threshold $\tau\ge1/(4\beta)$.** (8): $|z-(x+y)/2|^2=|z|^2-z\cdot x-z\cdot y+(1+x\cdot y)/2$ for unit
+$x,y$, so the marked factor is $e^{z\cdot x/(2\tau)}e^{(\beta-1/(4\tau))x\cdot y}e^{z\cdot y/(2\tau)}$ times a scalar in $z$.
+At or above threshold: positive-definite middle convolution (GL3), identical real end multipliers, nonnegative
+reading: positive semidefinite. Below: at $z=0$ the convolution is $e^{|\gamma|(-x)\cdot y}$, multiplier
+$(-1)^{d-1}I_d(|\gamma|)/I_1(|\gamma|)$, negative at $d=2$; $w_p$ has pure spin 1/2 on its four edges, so
+$\langle v^{-1}w_p,\cdot\,v^{-1}w_p\rangle<0$; continuity in $z$ and a small ball finish. Positivity is a congruence
+property, so it is the same on $L^2(\nu)$. **HOLDS** (both directions).
+
+**L122, exact rank-one cut.** Pins at threshold delete electric factors (factor 1 at $z=0$). On invariant functions
+$\Pi_S\otimes C_{S^c}$ has range in invariant functions of $S^c$ links: constants if $S^c$ is a forest (transitive
+gauge action), and the operator is then $|1\rangle\langle1|$ since $C1=1$; a cycle in $S^c$ gives the adjoint loop
+character, centre blind, eigenvalue $\prod c_3>0$, so rank $\ge2$. $|S|\ge3n^3-(n^3-1)=2n^3+1$. **HOLDS.**
+
+**L124-L129, (9).** The pinned step is $c|v\rangle\langle v|$; one pin in period $j$:
+$c\langle v,T^{j-1}v\rangle/\mathrm{Tr}T^j$; two pins at separation $j$ in period $2j$: $c^2\langle v,T^{j-1}v\rangle^2/\mathrm{Tr}T^{2j}$;
+the ratio is $(\mathrm{Tr}T^j)^2/\mathrm{Tr}T^{2j}$. **HOLDS.** L131 OPEN is a fair statement of what (4)-(5) do not give.
+
+Step 5 verdicts: L56-L61 (4) HOLDS; L63-L67 HOLDS; (5) L69 HOLDS; L75 HOLDS; L77 HOLDS; L81 HOLDS (given row 1246 (4),
+checked); (6) L83-L92 HOLDS; L94 HOLDS; (7) L96-L102 HOLDS; L104 HOLDS; L110 HOLDS; (8) L112-L118 HOLDS; L120 HOLDS;
+L122 HOLDS; (9) L124-L129 HOLDS. OPEN items L106, L131 correctly labelled.
+
+## Step 6 (written 2026-11-20T16:19Z): everything else, part B, L133-L231
+
+**(10), L135-L143, a fixed patch has vanishing overlap with the slow band; proof L145-L180.**
+- L145-L154: gauge averaging keeps the pairing with invariant $f(X)$ and lowers the norm; in temporal gauge with the
+  lower tree gauge, $(gZ)_e=1+(D_e+(gG)_e/2)/\sqrt\beta$ since $\sigma=1/(2\sqrt\beta)$, and $gG$ has the law of $G$. **HOLDS.**
+- (11), L156-L163: $|D_e|\le\sqrt\beta[\sum_{p}|U_p-1|+\sqrt{A_e/2}]$ over a fixed word of lower-box plaquettes, so
+  $|D|>H$ forces $\beta(1-w_p)>c_IH^2$ on one of finitely many plaquettes. Electric ones: $1_E\le e^{\beta A_e/2-c_IH^2/2}$
+  and the argument of (5). Spatial ones: $\mathrm{Tr}(({\bf1}_EU^2{\bf1}_E)^l)/\mathrm{Tr}U^{2l}$ is the probability of $E$ on
+  $l$ alternate slices, $\le C^le^{-cul}$ by row 1155 (9); $\|A\|^l\le\mathrm{Tr}A^l$ for $A\ge0$ and
+  $\mathrm{Tr}U^{2l}\to1$ give $\|{\bf1}_EU^2{\bf1}_E\|\le Ce^{-cu}$; for $\varphi$ in the band,
+  $\|{\bf1}_E\varphi\|^2=\|{\bf1}_EU\varphi'\|^2\le\|{\bf1}_EU^2{\bf1}_E\|(1-\delta)^{-2}$ with $\varphi'=U^{-1}\varphi$. **HOLDS.**
+- L165: the law of $D+G/2$ has density $\ge c_Ie^{-2(|u|+H_0)^2}$; Cauchy-Schwarz against it bounds $a_\beta$ and
+  $\nabla a_\beta$ on $|d|\le H+1$ (integrand $\sim e^{-4|u-d|^2+2(|u|+H_0)^2}$, integrable); Arzela-Ascoli gives $a_H$;
+  the clipping error is $|\mathbb E[\bar f(1-\chi_H(D))b]|\le$ (11). **HOLDS.**
+- L167-L171, Gaussian limit of the readings: the double telescoping bound
+  $|\prod U_k-1-\sum(U_k-1)|\le\sum_{l<k}|U_l-1||U_k-1|$ is right, and $\sqrt\beta\,\mathbb E|U_l-1||U_k-1|\le C\beta^{-1/2}$. The
+  comparison rests on row 1151 (24) and the density bound in its proof (`gap-solve5-astra62.md` L300-L318: the true
+  density relative to product open-box Wilson measures is $\le\exp(CV\Delta_b)$, chart exit $\le e^{-c\beta/b^8}$ by row
+  1143's shelling, Gaussian Lipschitz concentration), and on row 1231 (1), (8), (9) (`gap-solve26-astra62.md` L24, L91,
+  L99). Row 1151 states (24) for plaquette **radii**; row 1290 uses four-component based loops in box frames. The
+  extension is argued in two sentences (L169, L171). I re-traced it: the density bound is on the full tree-gauge
+  coordinates, the readings $a_H$ are invariant under the common root conjugation, so each can be computed in the
+  frame of the tiling box that contains its window, and a product of two clipped readings is again bounded Lipschitz in
+  the linear curls. $h=\lceil\beta^{1/16}\rceil$ satisfies row 1151's constraint $\gamma<1/12$, and $\beta_j\le B\log n_j$ gives
+  $\Delta_h=(\log\beta)(1/h+h/n)\to0$. **HOLDS**, as an implication from rows 1151 and 1231 (both checked: row 1151 (4),
+  (6) HOLD in `gap-solve5-check-opus.md` L558, L562).
+- L173: window covariances are Fourier coefficients of a bounded symbol, so they vanish at large time separation
+  (Riemann-Lebesgue); Gaussian characteristic functions factor; Cesaro variance $\to0$. **HOLDS.**
+- L175-L180: stationarity, $\mathbb E|f(X_s)-f(X_0)|^2=2\langle f,(I-P^s)f\rangle\le2s\delta_j$, Cauchy-Schwarz against the
+  variance of the $m_0$-average, then $m_0\to\infty$, then $H\to\infty$. The order of quantifiers is right: the subsequence
+  and $a_H$ may depend on $H$, the bound $C_Ie^{-c_IH^2}$ does not. **HOLDS.**
+- (10) as a whole: **HOLDS** (implication from the cited rows' weak-coupling comparison). L182 OPEN is correct: (10) is
+  about one fixed patch; a physical cube has a growing number of patches.
+
+**(12), L188-L200, coupling change by a radial mark, and its impossibility at large variance.**
+$\mathbb E e^{-t|W+\sqrt\tau G|^2}=(1+2t\tau)^{-2}e^{-t|W|^2/(1+2t\tau)}$ and $t/(2(1+2t\tau))=\kappa$ give $t=2\kappa/(1-4\kappa\tau)$;
+$e^{-\kappa(1+X\cdot Y)}$ lowers the coupling by $\kappa$. At $\tau=1/(4\kappa)$ the density at zero is $\propto e^{-2\kappa|W|^2}$. The
+converse: $h(se_1)$ is entire (the marginal density $\ge(2\pi\tau)^{-2}e^{-(|z|+1)^2/(2\tau)}$ makes $b\phi_\tau(\cdot-se_1)$
+integrable locally uniformly in $s$); on the neutral space, plaquette characters of every spin on $e$ fix the central
+one-link kernel, so $h=ce^{-2\kappa|w|^2}$ on $0<|w|<1$ and by analyticity everywhere; then
+$e^{-y^2/(2\tau)}h(iye_1)=\int b\phi_\tau e^{iyz_1/\tau}\to0$ (Riemann-Lebesgue, $b\phi_\tau\in L^1$) contradicts
+$ce^{(2\kappa-1/(2\tau))y^2}$ for $\tau\ge1/(4\kappa)$. **HOLDS.**
+
+**L202-L217, (13).** $s=t_x(-1)^{y+z}$: every transverse bond and the two longitudinal cross sections at $x=0|1$ and
+$x=n-1|0$ have unequal signs, $k=2n^3+2n^2$, complement = paths $x=1..n-1$ plus the isolated vertices at $x=0$. Multiplying
+the cut's temporal links by the central signs $s$ maps $w_e\to s_us_vw_e$, reversing exactly the $S$ terms, so
+$\mathbb E[L^2|\text{spatial}]=1$. $L\ge e^{-\beta k}$ pointwise; deletion in mass-one convention gives $\le e^{-\beta k}z_\beta^{-k}$;
+$\log(\mathbb EL^2/(\mathbb EL)^2)=-2\log\mathbb EL\in[2\beta k+2k\log z_\beta,2\beta k]$. Conditional Jensen for noisy estimators.
+**HOLDS.**
+
+**L219-L228, (14).** Numerator: leaves of the retained forest integrate to $e^\beta z_\beta$ each, isolated vertices to 1;
+denominator $e^{\beta m}I_\beta$; so $H=e^{-\beta k}z_\beta^r/I_\beta$. $H\le(\mathbb E[L^2|X,Y])^{1/2}=1$. **HOLDS.** With (14), the
+ratio (9) is $\mathbb E_{2j}[B_0B_j]/(\mathbb E_jB_0)^2$ up to the cancelling deterministic factors, so the clipping remark
+under (24) (step 4) applies to (9) as stated. L230 OPEN is correctly labelled.
+
+**L186 (GUIDE).** Attribution of the empty-diagram identity to row 1151 (26); not load-bearing; not checked further.
+
+Step 6 verdicts: (10) L135-L143 HOLDS (with L145-L180 each HOLDS); (11) HOLDS; (12) L188-L200 HOLDS; L202-L208 HOLD;
+(13) HOLDS; (14) HOLDS.

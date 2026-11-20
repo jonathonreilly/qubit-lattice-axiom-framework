@@ -89,3 +89,84 @@ Neither item changes the seed; this is said plainly so that nobody counts it as 
 
 **Plan.** Step 2: item B (short). Step 3: item A, reading CMP 102 Theorem 1, (190) and CMP 119 (3.6)-(3.9).
 Step 4: labels, state, RESULT.
+
+## Step 2. Items B and A examined (written 2026-11-20T16:55Z by date -u)
+
+Sources read for this step: YM4_EM at c7fef8b21b58 L185-275 (cores, norm, block map, covariance), L495-520 (frames
+and radii), L600-720 (the one-step inputs); Balaban CMP 119 OCR pp. 264-267 ((3.1)-(3.14)); CMP 102 OCR pp. 278-279
+(Theorem 1) and pp. 305-308 (Section G, analyticity and the derivative bound). Credit: Sussman and Alpoge with Claude
+and Codex as authors of EM; Balaban for CMP 102 and 119.
+
+**2.1 Item B, the geometric clause of Lemma H2' (row 1278 2.3).**
+
+*Lemma CC (covariance continues along paths; PROVED, elementary).* Let O be an open subset of a finite-dimensional
+real space of data, D: O -> C real-analytic, and gamma: [0, 1] -> O continuous with D = 0 on a neighbourhood of
+gamma(0). Then D = 0 on a neighbourhood of gamma(1).
+*Proof.* Let T be the set of t in [0, 1] such that D vanishes on a neighbourhood of gamma(t). T is open by definition
+and contains 0. If t_n in T increase to t*, every derivative of D vanishes at gamma(t_n), hence by continuity of the
+derivatives at gamma(t*); D is real-analytic at gamma(t*), so its Taylor series there is 0 and D = 0 near gamma(t*).
+So T is closed, T = [0, 1]. QED
+Applied with D(W) = P_(rz)(G; rW) - P_z(G; W) (EM L258-262) on the real slice of the member's core (each torus is
+finite-dimensional; D is real-analytic there because G is holomorphic on the core and the sum over X converges in the
+norm of EM (2.x) by the stated entropy bound): covariance at a datum W of the phi-class follows once W is joined to
+the psi-creation class by a path of real data inside the member's core. Row 1278 asked for connectedness of the whole
+complex core; Lemma CC needs only such a path, so the clause is weaker than stated there.
+
+*The path (OPEN here, with the reason).* On a box with l^2-small curvature, Lemma U (`library/lattice-uhlenbeck.md`,
+checked 2026-11-02) gives a gauge with sup |a| <= C_U ||theta||, and the path t -> e^(i t a) keeps every plaquette
+defect below C ||theta|| (first order t (da) plus O(t^2 |a|^2)). The covariance classes of EM are max-norm classes on
+whole tori of side up to the compatible volumes. There the only gauge with |a| small that I can build has |a| of
+order r N (r the max curvature, N the side), and the commutator term of the straight path is then of order (r N)^2,
+which is not below the core radius once N exceeds r^(-1/2). I did not find a global path argument, so the clause is
+reduced (to "every datum of the phi-class is joined to the psi-class by real data inside the core") and not closed.
+Remark (ARGUED): the cleaner repair is in the account's own terms: covariance of a member is derived by the change of
+variables of EM input 2 (orthogonal O_(r,W), transported cut and response) wherever the member's construction is
+defined, so the creation radius can be stated as the member's whole real domain; that is a statement for the account
+to make, not a lemma.
+
+**2.2 Item A, (U-dom) of row 1280 (3.3).** CMP 119's cube reference is a minimal configuration on a finite data region
+(U_(k+1, box') = U(B(box'~4), M(Q^(s*) V)), (1.2), (3.4)). (U-dom) compares the references of two nested cubes built
+from one block field. That is a comparison of two minimisers with the SAME data on different DOMAINS (free boundary at
+the smaller domain's edge). What CMP 102 supplies is a comparison in the DATA at a fixed domain: Section G proves that
+U_k(V) is analytic in V and that dU_k/dB decays like the propagator (the derivative bound (190), p. 308, read by row
+1280), and CMP 119 (3.6)-(3.7) uses exactly that form: the old and new cube references are written as one minimiser at
+two data that differ by at most 4 delta_k in the bulk and O(eps_k) on a boundary layer. For two domains I found no way
+to write the larger domain's minimiser as the smaller domain's minimiser at modified data: the larger problem has
+action on plaquettes outside the smaller domain, so its restriction is not a minimiser of the smaller problem for any
+data. A proof needs the linearised problem on the smaller domain with natural boundary conditions and an inverse with
+exponential decay (Balaban's propagator theory with boundaries, CMP 99b), plus existence along an interpolation.
+That is the same stop as row 1280 3.8. NOT closed here; (U-dom) stays ARGUED.
+
+**2.3 What this step changes.** Item B: the clause of Lemma H2' is weakened from connectedness of the complex core
+to the existence of real paths (Lemma CC, PROVED); the path on large tori is OPEN. Item A: no change. Both items are
+inputs of the one-cutoff carry, not of the seed. Next (Step 3): a route to row 1280's parity envelope (Proposition
+PE) that does not read the supplier's localised expansion, by applying row 1280's Lemma P to the global step integral
+at the trivial datum, if EM's coefficient can be read from the global total.
+
+## Step 3 (plan, written 2026-11-20T17:20Z by date -u): the parity envelope without the localised expansion
+
+**What EM fixes (READ, EM L1170-1260, `em:prop-companion-coefficient`).** The coefficient b_j(E) is the second spatial
+moment of the companion kernel, which the proof identifies with "the limit of the physical torus Hessian kernels" at
+P_o, and b_j "is unchanged ... by changing coherent localizations of the same physical total". So the coefficient
+f_(k+1) = b_(k+1)(F^u_(k+1)) is a function of the physical total of the unmarked interacting part alone, and the
+unmarked total is formed from the all-small-field kernel (EM L544-547, read by row 1280 2.2).
+
+**Idea (ARGUED; to be proved in Step 3).** Row 1280's Proposition PE needs (P4), the parity covariance of the
+supplier's localised expansion (CMP 116, not on this machine). The Hessian kernel of the GLOBAL total at P_o can be
+bounded without any localisation:
+1. At data V near P_o the all-small-field step integral is I(V) = int dB rho(g B) chi_V(B) exp(Q(B; V)), and every
+   factor depends on (g, B) only through g B, except the prefactor g^(-2) of the Wilson action. So the degree-n part
+   of Q in B carries g^(n-2) (action) or g^n (Haar density, chart, inherited members): odd degree goes with odd power.
+   The linear term of the action vanishes at the constrained minimiser for every V.
+2. At V = 1 the Gaussian reference and the cut are symmetric under B -> -B (row 1280 4.3, from CMP 119 p. 249).
+3. On the cut the measure nu_t proportional to rho chi exp(Q_2 + Q_even + t Q_odd) is log-concave for t in [0, 1]
+   (Hessian at least the coercive constrained Hessian minus C delta, delta the cut radius in g B), so by the
+   Helffer-Sjostrand representation with a Combes-Thomas bound (the tool of row 1237 Proposition UNI and row 1249
+   Lemma CT) covariances of local functions decay exponentially, uniformly in the torus.
+4. Then <O>_(nu_1) = int_0^1 Cov_(nu_t)(O, Q_odd) dt = O(g) for every local odd O, so each odd contribution to the
+   Hessian kernel enters at order g^2; the even ones beyond the Gaussian are O(g^2) directly; the V-derivatives of the
+   cut sit at the threshold and cost Gaussian tails. Hence the kernel's deviation from the one-loop kernel is
+   O(g^2 polylog) with exponential decay, and its second moment gives |f_(k+1)| <= C theta_k^(-1) polylog + tails.
+To be checked before it counts: whether every fluctuation variable is bounded by the cut (bonds b_0(c) excluded from
+the tests, CMP 119 (1.9)), so that log-concavity holds on the whole fibre; the exact form of the chart and fibre
+density at V near 1; and that the unmarked total is exactly log I(V) minus the Gaussian normaliser and the scalar.

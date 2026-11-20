@@ -98,12 +98,12 @@ is minimized by functions of s alone"; (iii) the one-dimensional two-well Mucken
 stated, a Laplace computation). I find two steps that the hypotheses do not carry.
 - Step (ii) tensorizes one-bond Poincare constants over blocks that interact. Tensorization holds for product
   measures; for an interacting Gibbs measure the joint constant can be smaller than every conditional one by a
-  factor of the system size (a standard example, sketched, not used as a proof step: a ferromagnetic ring of n SU(2) spins at coupling kappa
-  much larger than n; each
-  one-site conditional law is a von Mises-Fisher law on S^3, whose Poincare constant is at least some c_0 > 0 for every
-  concentration; the global rotation is an exact symmetry, so f = n^(-1) sum_i g(u_i) has variance close to Var_Haar(g),
-  of order one, while its Dirichlet form is at most sup|grad g|^2/n; so the joint constant is O(1/n)). (TUN) bounds Psi_p and its
-  y-derivatives, not the Poincare constants of the fibre measures dnu_s, so nothing in (TUN) or (COH) supplies step (ii).
+  factor of the system size. A standard example, sketched and not used as a proof step: a ferromagnetic ring of n
+  SU(2) spins at coupling kappa much larger than n. Each one-site conditional law is a von Mises-Fisher law on S^3,
+  whose Poincare constant is at least some c_0 > 0 for every concentration. The global rotation is an exact symmetry,
+  so f = n^(-1) sum_i g(u_i) has variance close to Var_Haar(g), of order one, while its Dirichlet form is at most
+  sup|grad g|^2/n; so the joint constant is O(1/n). (TUN) bounds Psi_p and its y-derivatives, not the Poincare
+  constants of the fibre measures dnu_s, so nothing in (TUN) or (COH) supplies step (ii).
 - (TUN) describes a tube around one loop. The lower half of (13.4) is a statement about all of the configuration
   space Omega_p. A lower bound on a Poincare constant needs every bottleneck of mu_p, not one: a tube statement gives
   an upper bound (a test function in the tube), never a lower one. No hypothesis says that mu_p is carried by the tube.
@@ -130,7 +130,7 @@ Wilson measure is constructed here; the two defects of 2.2 are gaps in its writt
 (L218-242) and row 1220 read the package and its SPEC remark; no file on record reads Proposition 13.4's proof or
 Lemma B.1 (grep `Lemma B.1`, `13.4`, `tensor` in files naming Zeng returns none of these points).
 
-**2.5 Three lemmas that make 2.2 and 2.3 exact (PROVED by hand; written 10:08Z by date -u).**
+**2.5 Lemmas Z1-Z4 and Corollary Z2', which make 2.2 and 2.3 exact (PROVED by hand; written 10:08Z-10:14Z by date -u).**
 
 **Lemma Z2 (Wilson Gibbs measures put almost no mass where the action is sub-extensive).** Let Lambda be a finite
 lattice with link set E in which every link lies in at least 4 plaquettes, each plaquette containing it once (a
@@ -165,7 +165,8 @@ and Markov's inequality gives mu_kappa(S_kappa <= t) <= exp(t) Z(2 kappa)/Z(kapp
 Wilson action of the time slice, S = kappa_N c sum_p (1 - (1/2) tr U_p) (the reading of Zeng's Section 12, whose bond cost
 kappa_N(1 - Re(Q_b u*)) is the one-link conditional weight of this S; c is Zeng's normalization). Assume, as Proposition
 13.4's uniform constants need (Lemma 13.1's O(1) depends on the C^4 norm), sup |Phi_p| <= M and sup |Psi_p| <= C_0 on the
-tube N_p. On N_p, S = kappa_N Phi_p + Psi_p <= kappa_N M + C_0, so by Lemma Z2
+tube N_p. On N_p, S = kappa_N Phi_p + Psi_p <= kappa_N M + C_0, so by Lemma Z2 (applicable once kappa_N c >= 3/16, that is
+for all fine p)
 
     mu_p(N_p) <= exp(kappa_N M + C_0 - |E_p|/16).
 
@@ -184,7 +185,7 @@ minima and two nondegenerate maxima, lower barriers Delta for Phi and Delta' > D
 integral of (f_s^2 + f_t^2). The tube {abs(t - t_0) < kappa^(-1/2)} around a minimum t_0 of chi, with coordinates (s, t),
 satisfies the separation S = kappa Phi(s) + Psi with Psi = kappa chi(t) <= sup |chi''|/2 bounded there. The measure is a
 product, so its Poincare constant is the smaller of the two one-dimensional ones, and by Lemma 13.1 for chi it is at
-most C kappa exp(-kappa Delta') = o(kappa exp(-kappa Delta)). So an analysis on one tube can give an upper bound but not
+most C kappa exp(-kappa Delta') = o(kappa exp(-kappa Delta)) (Lemma 13.1 with Muckenhoupt's two-sided criterion). So an analysis on one tube can give an upper bound but not
 the lower half of (13.4); a second bottleneck off the tube decides. (Correction, 10:09Z by date -u: in this toy (TUN)'s bounded
 y-derivatives of Psi hold in the rescaled coordinate y = kappa^(1/2)(t - t_0), whose chart is not uniformly
 bi-Lipschitz, and fail in the unscaled chart, where the second y-derivative of Psi is kappa chi''. The same tension sits
@@ -219,7 +220,7 @@ Cauchy-Schwarz, and G(2V) <= G(V) because exp(-2V lambda) <= exp(-V lambda); so 
 eps_0 = log 2 / V_0 would then be a gap for every model and every V_0 > 0. Concretely, rho_p = delta_(1/p) (the
 zero-momentum mode of a free field of mass 1/p on a fixed torus, a Gaussian model) has alpha_V^(p) = 0 for all V and p,
 while no eps_0 > 0 has rho_p((0, eps_0)) = 0 for all p. The direction "<=" of Remark B.15 is false as printed; the
-direction "=>" is true (alpha_V <= exp(-2 V eps_0)/(1 - exp(-2 V eps_0)) under a gap eps_0, plus the atom at 0). The
+direction "=>" holds, but trivially, by (a). The
 quantity alpha_V measures the departure of G from one exponential (it vanishes for a Markov semigroup with one rate),
 not the size of the rate. Contrast: the lane's two-time form (Q) of row 1204 (as restated in row 1218 L59-72) reads the
 mass through the relativistic dispersion (a spatial shift and a time step together), which is why it is a valid gap

@@ -14,7 +14,7 @@ Labels used below: PROVED (every step written here or in a cited checked note), 
 2. Choose one route that the earlier runs did not take, or the first unproved step of the best earlier route.
 3. Attack it, one step per response, and append each step here.
 
-## 1. Repo search (done 2026-11-20T02:10Z)
+## 1. Repo search (done between 01:41Z and 02:18Z, `date -u`; the step itself was not timed)
 
 Read in full: `FINISH.md` L1-84 and L299-356 (rules), row 1201 (this item), rows 1188-1211 (the plain-brief rows a-f, their checks, the gpt-6.2-astra chain rows 1192, 1204, the two Argon rows and checks); `GOAL.md`; `parts/gap.md` L1-322 (state of attack, obligations, route registry, test table, price); `library/gap-crux-restate.md` Sections 1, 2 and 3.4 (DEF, candidates C1-C5, Theorem S). `library/open-core.md` holds the existence chain only; it has no entry for the gap lane (headings read, grep for N-phys empty).
 
@@ -27,7 +27,7 @@ Where the lane stands, in my words (GUIDE, a reading; every item is cited to its
 
 Consequence for this run: a seventh screening has no value. This run picks one mechanism and works on it.
 
-## 2. Choice of attack (written 2026-11-20T02:20Z)
+## 2. Choice of attack (written about 02:19Z)
 
 ### 2.1 What a proof must contain (reading of the record; ARGUED there, cited)
 
@@ -55,7 +55,7 @@ Candidate 11 is the only one with an unanswered question. Section 3 answers it.
 
 A failed step of my own, kept as a negative result (ARGUED): I tried to get (MONO-Delta) for compact U(1) from Ginibre's inequality by "identifying periodic images". This is wrong. Identifying the sites of the kn-torus modulo n gives the n-torus at coupling k^4 beta, not at beta. So Ginibre compares different couplings and gives no sign for the finite-size plaquette shift. The record already holds that (MONO-Delta) fails for the ordered Ising model, which has Griffiths' inequalities (`gap-phys-seed.md` L367-373).
 
-## 3. Candidate 11: the symmetry group of the box as the rigid group (written 2026-11-20T02:35Z)
+## 3. Candidate 11: the symmetry group of the box as the rigid group (written between 02:19Z and 02:29Z)
 
 **The idea.** In the 2D O(4) proof a rigid non-abelian group acts on the spins, the stiffness is a second-order twist response of the form "direct cost minus current covariance", and the bracket of the group lowers the stiffness at every scale (OpenAI (3.4)-(3.8), (3.50)-(3.54), as read in `library/prior/gap-o4-pinned-cell-read-opus.md`). Pure gauge theory has no rigid colour group on gauge-invariant data (Lemma CEN+ of row 1016). It does have one rigid non-abelian group that moves gauge-invariant data: the symmetry group of the lattice. Every glueball state except a scalar at rest is charged under it. Question: does a stiffness with a bracket gain exist for this group?
 
@@ -90,4 +90,33 @@ The free Maxwell field on the same tori has every identity of 3.1 and, in the co
 
 **Verdict on candidate 11 (ARGUED).** Found again, with the reason now written: it is route RA in its identities and route RB in its only selective input. It gives no mechanism for the neutral half. Lemma G1 has no consumer.
 
-Status of this file: step 4 in progress.
+## 4. Second pass: the neutral half itself (written about 02:40Z; ARGUED throughout; nothing here is new to the record)
+
+After Section 3, I spent the rest of the run on the one object Section 2.1 names, a mechanism for neutral mixing, in the two-dimensional homogeneous case first (target a group G, rigid group acting transitively, charged decay uniform in pins GIVEN OpenAI (3.61)). Four ways, each to its first failing step.
+
+1. **Interpolate the pins by rotation fields.** Every change of a pin is a rotation of that pin. So the neutral response to a pin is Cov(O, j_y) with j_y a boundary current. Put a ring between y and O. The charged part of the conditional current dies by (3.61). The invariant part is the covariance of two neutral functions of the ring's shape. First failing step: that covariance is the statement to prove. On file: Lemmas CH, CH2, CH3, DEEP and the named step (N-CH) of row 1119.
+2. **Recursion over half rings.** A neutral function of a ring is a sum over representations rho of a rho-charged function of one half times a conjugate-charged function of the other half; the trivial term is a product of neutral functions of the halves. So the neutral gap at one scale would follow from the neutral gap at half the scale and the charged gap, if the ring law factorised over the two halves up to a small error. First failing step: that factorisation is one-scale mixing across the cut. On file: Lemma TS3 of check 1120 and the (L3) verdict of rows 1122-1123.
+3. **The flux representation.** For a sigma model on a group the Haar integral of a product of characters of q_x^(-1) q_y over the bonds of any graph is a squared norm, so the bond labels carry a positive measure and neutral observables are local functions of the labels. Two failing steps. The weight is a squared spin-network amplitude and is not local. And the natural order gives no association: for three parallel bonds the weight is the indicator of the triangle rule, and the labels (1, 0, 1) and (0, 1, 1) are allowed while their meet (0, 0, 1) is not. For gauge theory the same integral is signed (method 35; Theorem EP-NO of row 754).
+4. **Bound neutral correlations by charged ones.** In two dimensions the charged two-point function decays at the physical rate, so such a bound has content there. In gauge theory the only charged objects are attached to lines. Collinear links share no plaquette, so given the other links they are independent, and any observable that contains a straight line of r links in a non-trivial representation j has mean at most the product of the end norms times (I_(2j+1)(6 beta)/I_1(6 beta))^r. That rate is of order 1/beta per lattice unit. A bound of the plaquette covariance by such objects would cap the correlation length at order beta lattice units. So no such bound holds along a trajectory with a continuum limit. On file as the trivial perimeter bound (row 1190 item 6; Lemma EMB of row 1011).
+
+What the second pass says about the class (ARGUED; on file in other words, rows 1115 2.3 and 1122): charged decay uniform in pins does not give neutral mixing for a homogeneous target with a general invariant interaction (the peaked weights of van Enter and Shlosman keep the symmetry and have two energies). A proof of the neutral half must read the bilinear form of the weight. The 2D proof reads it through association. The Wilson weight is four-linear in the link quaternions, Re(q_1 q_2 conj(q_3) conj(q_4)), and no positivity structure for that form is known.
+
+## 5. Status
+
+| Statement | Label |
+|---|---|
+| Four-dimensional SU(2) Yang-Mills has a mass gap in the sense of Jaffe and Witten | OPEN. Not proved, not disproved |
+| (N-phys), the continuum datum of the T0 chain, (BS), (W) | OPEN, unchanged |
+| Candidates 1-10 of Section 2.2 are on the record with a first failing step | GUIDE (my reading of the cited rows; I did not re-derive them) |
+| Lemma G1, sector identity for the full symmetry group of the box | PROVED here, elementary, no consumer; for translations it is row 962's Lemma SHIFT |
+| Candidate 11 gives no stiffness and no gain: the direct term cancels in the bulk; what is left is route RA or route RB | ARGUED (3.3), with the free Maxwell field as comparison case (3.4, GIVEN the on-file free-photon facts) |
+| Ginibre's inequality gives (MONO-Delta) for compact U(1) | my draft step; FAILS (Section 2.2, last paragraph) |
+| Second pass on the neutral half: four ways, four first failing steps | ARGUED; each is on file (Section 4) |
+
+Conditions of the run. One session, Claude Fable 5.2, max effort, Mac mini worker 3, pinned at 20239923e, 01:41Z to about 02:45Z. No subagent. No numeric run (none was needed; free memory read 55 percent at 02:18Z and 02:29Z). No outside search; no source outside this checkout was opened. Statements about the posted 2D proofs, Luscher's small-volume result and the papers of van Enter and Shlosman are taken from the record or recalled, as marked. Checked by no one.
+
+Credit. Balaban; Sussman and Alpoge with Claude and Codex (the account the lane builds on); OpenAI (the 2D O(4) and O(3) proofs, as read in rows 1007-1010); Ding, Huang and Yang; Durhuus and Frohlich; Luscher; van Enter and Shlosman; Ginibre; Gopfert and Mack. The engine and the map are the lane's own rows, cited where used.
+
+What I would not queue from this row: a check of Lemma G1 (no consumer), or another plain-brief screening. This is the seventh; each found the same map.
+
+RESULT: Row 1201 (Claude Fable 5.2 max, Mac mini worker 3, 01:41Z to about 02:45Z, plain brief; author only, checked by no one; no numeric run, no outside search). The mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved. Eleven candidate attacks were checked against the record before any work; ten are on file with a first failing step. The eleventh, the symmetry group of the box as the rigid non-abelian group under which glueball states are charged, was worked: PROVED, elementary and with no consumer, Lemma G1 (the invariant and charged excited sums as group averages of twisted traces; the translation part is row 962's Lemma SHIFT); ARGUED, it has no stiffness, because the direct term cancels the current covariance in the bulk, and it reduces to route RA in its identities and route RB in its one selective input; the free Maxwell field passes every step. A second pass on the neutral half itself (pin interpolation, recursion over half rings, the flux representation, bounds by line-attached charged objects) stops four times at statements already on file (rows 1119, 1120, 754, 1011). One draft step of mine FAILS and is kept as such (Ginibre does not give (MONO-Delta) for U(1)). OPEN, unchanged: (N-phys), the continuum datum, (BS), (W), a positivity structure for the four-linear Wilson weight, the mass gap. Output library/gap-mini-solve-k-fable.md.

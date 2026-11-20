@@ -109,3 +109,21 @@ What (25) is: an implication. A lower bound on the Poincare constant vhat_4(1) o
 **Reflected forms, lines 402-407. HOLDS.** w(Q(X) Q(Y)^{-1}) = w(p_v X Y^{-1} p_v^{-1}) = c_p. For F supported in the negative half (hence off I), |E(conj(F) Delta_p)| <= eps_b E(|F| D_p) by (28)'s conditional bound. Summing with 0 <= D_p <= 2, 0 <= Z_p <= 8 gives the centred reflected form of O' - O at most C eps_b (sum |t|)^2 -> 0; binning at d = o(a^{2K}) adds o(1). The contrast with the single readings follows from (20).
 
 What (26)-(29) show: two fundamental loops that share one long tree return, read jointly by the quadratic Z_p = 2(A - B)^2, carry the elementary plaquette energy D_p = 1 - c_p up to a relative error eps_b, conditionally on everything off the selected links. This is an elementary consequence of the uniform density of a long Haar-mixed transport. It is an obstruction (the reduced wall labels in (25) retain local action-density correlations); it is not a step toward (33).
+
+### Step 4 (done 14:45Z): cited rows, and whether the main comparison restates an earlier row
+
+**Cited statements read, with proofs, where a checked step depends on them.**
+
+- Row 1254 (`gap-solve29-astra62.md`), (5)-(10), lines 59-117: read in full; (6), (7), (9) re-derived in step 2 (HOLD); (8) re-derived here: the vertex projections G_y commute with every exterior projection, the exterior is fixed by rotations at the (s-1)^4-cube interior vertices, and the expansion in G_y, 1 - G_y gives the factor (1 - 1/s)^4. HOLDS. Row 1254 was checked as HOLDS in row 1261.
+- Row 1254 (1)-(4), lines 18-50 (used by (34) of row 1272): read. The reflection-positivity interpolation (4) and the use of B's finite-torus covariance theorem are as row 1261 checked them; (3) rests on that cited theorem.
+- Row 1145 (1)-(2): read and re-derived in step 3. HOLDS (row 1146 checked it).
+- Row 1222 (`gap-solve24-astra62.md`) (1), lines 15-23: read. Its cell factorization (each plaquette reads private links of at most one cell; given the walls the private fields are independent) is what (16) uses. Row 1222 was checked as HOLDS in row 1226.
+
+**Is the main comparison a restatement?** No, but most of its frame is earlier work, which the author credits.
+
+- The inequality (16) is the cell-interior form of row 1254 (7) (there for straight-path interiors), built on row 1222 (1). Row 1222 (1) bounds only the averaged private term b^{-4} sum_s d_{W_s}(f) by E_b(f). (16) adds, on one fixed grid, the heat-bath term of the wall marginal. The author says so at line 197.
+- The transfer from the pinned fibre to the ordinary law in (25) is row 1254 (9) applied verbatim with c = 1, and theta_b is row 1254's theta.
+- New in row 1272: the fixed-label Dobrushin comparison (1)-(13) (a Poincare constant of the continuous law, uniform in the volume, from the Poincare constant of the finite label law at a slightly smaller side), its coarse-group version (17), the tree reduction (19), and the combination (25).
+- Search record. `library/open-core.md` (564 lines) has no statement on cube Poincare constants, angular labels or wall labels (grep for Dobrushin, angular, label, wall link, pinned, heat bath). In FINISH.md, "finite label" and "gauge-reduced" occur only in rows 1272 and 1282. "Dobrushin" occurs in many earlier rows (661-1138, 1258). The closest are row 1135 (a Dobrushin cross-ratio bound at beta <= 1/48 on the raw links) and row 1258 (the Dobrushin-Shlosman hypothesis (W)). Neither uses label bins of size c/sqrt(1 + beta), where the fixed-label law satisfies Dobrushin's condition at every beta.
+
+**Credit notes (literature recalled from memory, not re-read in this check).** (2) is the Dobrushin comparison theorem in coupling form. Föllmer (J. Funct. Anal. 1982) gives the matrix form B = sum_k C^k. (3) is the classical argument (Aizenman-Holley, 1987) that Dobrushin's condition gives a heat-bath gap. The split Var f = E Var(f | eta) + Var E(f | eta) into a fibre gap and a projected gap, as in (10), follows the decomposition theorems for Markov chains of Madras and Randall (Ann. Appl. Probab. 2002) and of Jerrum, Son, Tetali and Vigoda (Ann. Appl. Probab. 2004). The row credits Dobrushin for (1) only. These are credit additions; no step depends on them.

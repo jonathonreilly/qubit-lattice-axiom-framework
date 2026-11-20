@@ -175,3 +175,80 @@ sigma_0 + Theta/L and R_s >= 1 + e^Theta. In the account's order (CA-I (H3), L11
 the perturbation eps belong to the local Gaussian comparison of the actual step. So (P4) is consistent only if Theta
 can be made bounded independently of M (and of L), which needs W_0 L^4, gamma (LM)^4 and eps (LM)^4 bounded by
 constants chosen before kappa. W_0 and gamma are SA's free choices; eps is a property of the step's actual covariance.
+
+**4.3 The order of choice is on file (READ; written 2026-11-20T17:46Z by date -u).** Rule 0a search, done late (should have been
+first): `library/in1.md` Lemma 3 (L336-372, "conditional UM budget and simultaneous choice") already carries out the
+order of choice of SA's UM constants, with the circularity of 4.2 broken as follows (quoted in short):
+- (22): W_0 = min{[3 P L^4 (1 + A c_m)]^(-1), rho_0/(2P)}, eps_* = min{eps_0, (3 D_0 M^4)^(-1)},
+  gamma_tilt = min{2/(3 D_0 M^4), rho_0}, D_0 = A c_m L^4; "Only the first choice precedes M";
+- (23): H_0 e^(b kappa-bar - dM) <= eps_*/2 (an M-floor) and a later radius/tube ceiling; hence (UM14) and
+  C_0^UM <= 1, so Theta is bounded independently of M;
+- (24): Theta = C_h^UM {3 + c_l [(1 + 4 beta_s) kappa + g_*]}, rate window lambda_0 + sigma_0 + Theta/L <= lambda <
+  kappa/(2 C_h^WF) - eps_rate, "nonempty for large kappa" given a floor on L; then kappa-bar with
+  log(e^(kappa-bar) - 1) >= Theta (this is (UM19)'s R_s-condition with R_s = e^(kappa-bar)), then M;
+- the failed-bond floor b^2 >= (2/gamma_tilt){Theta + log(4 c_b (LM)^4)} ("the scaled box b grows proportionally to
+  (log theta)^(p_0)"), which is (UM23)'s p_* part, and the insertion allowance a_* = min{W_0/2, (4 e^Theta A_a)^(-1)},
+  (UM23)'s a part.
+The gate `gates/in1-gate.md` (Claude, fresh session, first failing step none) records "Lemma 3. Holds" (L63-66) and
+the verdict that the c4-order budget cycle is broken, conditionally on H-M (L161-164).
+
+**4.4 Verdict on (P4) (PROVED, by citation plus two lines).**
+(i) (UM14), (UM19), (UM23) in one order: in1 Lemma 3, checked (4.3), conditional on its hypothesis H-M (`in1.md` L99-108,
+the actual matrix envelope on the discs |s| < e^(kappa-bar)), which is row 1299's premise (P2), not (P4).
+(ii) (UM26'), row 1299's strengthening e c_adj B_* <= 1 of SA's (UM26): since B_* = C_D e^(2C_v) e^(-5 g_*) S(g_*) with
+S(g_*) = sum_m e^(-(g_* - kappa_D - C_v) m) decreasing in g_*, (UM26') holds whenever SA's (UM26) holds with g_*
+replaced by g_* - 1/5 and g_* - 1/5 > kappa_D + C_v: indeed e^(-5 g_*) = e^(-1) e^(-5(g_* - 1/5)) and S(g_*) <=
+S(g_* - 1/5). So it is one more floor on g_*, which in1's order fixes before Theta (g_* enters (24) only through
+Theta). No new cycle.
+(iii) q > p_0 for (E0): holds in the account (q >= 3 p_0 + 3r + 1, CA-I L1364-1366) and in the ci-form (q > p_0 + 2r,
+`ci-form.md` L12); the box is the q-box, by 3.3-3.4. The cut threshold is a threshold on g chosen last.
+So (P4) is closed as a premise of row 1299 4.8, given H-M; row 1299's open list loses (P4). What it does not do:
+supply H-M ((P2)), (UM1) ((P1)) or the structural identities ((P3)).
+
+**4.5 Prior record of the exponent order (rule 0a, READ; written 2026-11-20T17:48Z by date -u).** The order p_1 < p_0 < q is already
+on file: `library/b-in-r2.md` L251 ("Here p_1 < p_0 < q (I:1351-1364)"), `library/in1.md` L227 (IN1 order row 1:
+"(p_0 + Cr)/2 < p_1 < p_0 - Cr, q > max(p_0 + 2r, C p_0)"), `library/lfi-ho.md` L261 (p_1 < p_0 - (5/2) r),
+`library/ci.md` L335, and row 1268's file `gap-mini-solve-aj-opus.md` L470 (quoting CMP 122a "p_1 < p_0"). So 3.1 is a
+re-reading, not new. What is new here is only the correction of row 1299 4.7's parenthesis and the identification of
+(E0)'s box with the q-box (3.4), which in1's row-1 exponent order already makes consistent.
+
+## 5. (P3): the structural identities (READ; written 2026-11-20T17:48Z by date -u)
+
+SA states, as hypotheses of its chapter: "The remaining structural hypotheses are the actual heredity,
+normalized-functional and wall-factorization identities. They identify (UM3) with the finite expansion on complete
+physical pairs and define coherent local terms on every local complex core. These hypotheses concern the assigned
+operators and supports. They are not consequences of a numerical Gaussian bound." (SA L14406-14412.) Its Gaussian
+comparison chapter adds: "Completeness is separate. Equality of this local functional with a marginal of one
+whole-torus Gaussian requires the actual completeness identity for its effective covariance. In the source
+construction that identity is supplied on complete physical pairs and their physical-data continuation." (SA
+L14262-14268.)
+
+What the repository supplies:
+- For the lane's adopted Y family D4, frozen `hma.md` Theorem 2 (L97-104) states that the local functional "is
+  normalized, hereditary for these full reads, wall-factorizing, holomorphic at fixed real U, real at real parameters,
+  pair-dependent and real-gauge covariant", via descent Theorem B. So the three identities hold for the D4 functional
+  itself, conditional on hma's premises (library M = frozen hm and descent, FG, PIV).
+- The link to the actual step is NOT supplied. Frozen hma's referee verdict (L598): "Not supplied: UM1 for the other
+  potential types; SA's structural identities linking UM3 to the actual step's expansion", with the open list "carrier
+  identification (D4 adopts hm's carriers rather than identifying them), stored-test/gauge-factor formation match,
+  whole-domain admission, PH1-PH4 per step, the full vacuum interface, PIV" (L600). IN1's H-M carries the same clause
+  ("agrees at physical parameters with the actual fluctuation law", `in1.md` L106) under "Outstanding - actual matrix
+  envelope" (L108).
+
+**Verdict on (P3) (READ).** (P3) is not a separate premise: its D4 half is hma Theorem 2, and its link half (that the
+actual regular step's fluctuation integral equals the D4 gas (UM3) at complete physical pairs) is the carrier
+identification that frozen hma lists as open, the same matching that row 1299 4.8 calls (P2) ("the carry's
+presentation must be matched to D4 or supplied separately"). It is listed with an owner (the hard-core lanes of hm,
+descent, hma), so by rule 0a I do not attack it. Row 1299's open list for the cut half shrinks from (P1)-(P5) to
+(P1), (P2) (which now contains (P3)'s link half) and (P5).
+
+## 6. State of this row after the first item (written 2026-11-20T17:48Z by date -u)
+
+| Item | Before (row 1299 4.8) | After | Label | Where |
+|---|---|---|---|---|
+| (E0) both thresholds admissible | ARGUED, "provided q > p_0 (equivalently p_1 > p_0)" | holds on the q-box; the parenthesis is false (p_1 < p_0 in the account, CMP 122a); the p_1-domain of CMP 119 (3.43) is the boundary-term space, not the box | PROVED given the box hypothesis (the H-D/H-M domain clause) | 3.3-3.4 |
+| (UM14), (UM19), (UM23) in one order | open premise (P4) | on file: in1 Lemma 3 (checked, gate in1 pass 3) | PROVED by citation, given H-M | 4.3-4.4 |
+| (UM26') | open premise (P4) | one more floor on g_* (shift 1/5) | PROVED (two lines) | 4.4 (ii) |
+| structural identities | open premise (P3) | D4 half: hma Theorem 2; link half: the open carrier identification (hma L598, L600) | READ | 5 |
+| CA-I 4.3's variant (p_1 domain with p_0 cut) | not noted | inconsistent on one variable at small coupling in the account's own order | ARGUED (CMP 116 (I.6.34) unread) | 3.4 (d) |
+| the seed (N-phys) | OPEN | OPEN, not attacked in this item | OPEN | 2 |

@@ -15,6 +15,8 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T04:41Z Section 1 written (sources read: FINISH rule sections L52-73, L299-350; GOAL.md; parts/gap.md L1-104;
   library/prior/gap-onebound-read-sol.md in full; RESULT lines of rows 1204, 1211, 1215, 1218, 1220).
 - 2026-11-20T04:56Z Section 2 written: attack judgement after a registry grep of about 90 candidate terms; choice made.
+- 2026-11-20T04:58Z Section 2a written: the computation chosen in Section 2 is A's own Proposition H.4; choice void.
+- 2026-11-20T05:01Z Section 3 opened: check of A's Theorem D chain; Lemmas 11.4-11.6 and Proposition 11.7 HOLD.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -88,3 +90,72 @@ criterion (A-M) this is a sharp computation: I show below that the massless Gaus
 threshold 1/2 in the flat-box limit. That locates the whole selective content of (A-M) in its aspect clause, and it
 gives the exact margin that any proof of (A-M) must supply at the physical scale. The work is short, exact and
 checkable. It does not move (N-phys); I say so in the RESULT line.
+
+### 2a. The chosen computation is already in A (found before writing it)
+
+Before writing the computation I fetched A's archive copy (Zenodo record 24147967, release v5.0.0, file
+\`papers/4Y-MPaper.pdf\`, 157 pages; the same copy row 1218 read) into my own scratch folder and read Section 11.1
+(pp. 87-89) and Appendix H.1 (pp. 129-131). A already proves exactly what I planned:
+
+- A, p. 87: "The value 1/2 is the exact limit of the method (Proposition H.4 in Appendix H)".
+- A, Proposition H.4 (p. 130), the Gaussian chain with mass mu, 2 cosh kappa = 2 + mu^2: the slab constant is
+  sinh(kappa s)/sinh(kappa (w+1)); for w = 2s - 1 it is 1/(2 cosh(kappa s)), and 1/2 for mu = 0; for mu = 0 it is at
+  least 1/2 in every admissible geometry. Part (ii): the massless chain has no slab-dynamics gap (gamma_M <= 16/(3M)).
+  A's comment after the proof (p. 131): "In the chain the hypothesis is exactly a mass at the scale l/2."
+- A, Appendix H.4-H.6 (announced p. 129): four other routes (curvature of the Wilson measure, entropy
+  factorisation, tensorisation over blocks of fixed lattice size, the transfer matrix alone) "cannot give (D) without
+  an input of the same strength".
+
+So the massless borderline of (A-M) is A's result (credit: Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford,
+Singha Roy). I do not restate it as mine. Two facts from the same pages that the lane's files do not record (grep of
+"Proposition H.4", "fat box" and "M_{d,m}" over \`library/\` found only row 1218's summary):
+
+- A's exact hypothesis (Definition 11.3 (i), p. 88), written (M_{d,m}(c)): rho^omega(Q-, Q+) <= c for every box Q
+  all of whose widths lie in [2d - 1, md - 1], every coordinate i in which Q has width 3d - 1, the splitting into
+  widths d, d - 1, d, and every exterior configuration omega. The observables are A^omega_Q, the functions invariant
+  under the gauge group G_Q of the vertices INTERIOR to Q ("the boundary condition having fixed the gauge on the
+  boundary", p. 87). The boxes are fat; A notes (p. 88, Theorem H.8, Proposition H.17) that the same condition for
+  boxes one link wide FAILS in two dimensions along the weak-coupling tuning (a pinned strip breaks a global
+  symmetry), while the fat form HOLDS there. This is the lane's method-36 lesson (worst case over a thin layer's
+  background is false at weak coupling; \`parts/gap.md\` method 36) found independently by A, with the repair "fat
+  boxes only".
+- A, p. 87: in four dimensions (M_{d,m}(c)) "is a form of mass generation at the physical scale and it is not
+  proved here".
+
+## 3. New choice: a line-by-line check of A's route from slab decorrelation to the cube condition
+
+**Why this, after 2a (ARGUED).** A's Section 11 is a published implication from a one-scale slab hypothesis
+(M_{d,m}(c)), c < 1/2, to the cube condition (D), and A's Theorem B (B's Theorem 66 in A's form) takes (D) uniform
+along the tuning to the continuum gap. If the chain holds, the lane has a second, published consumer, for an input of
+a different kind than (N-phys): a finite-box statement with a boundary condition, no torus, no flux sectors. If it
+fails, that is a correction of A's text. Lane rule 9 ("check their proof first") applies. This is a check of THEIR
+proof; it is not progress on the crux, and I say so.
+
+Source: A, archive copy as in 2a, pages 87-92. Credit for every statement in this section: Bhattacharjee,
+Bhattacharya, Lockwood, Romanov, Sessford, Singha Roy. My part is the check only.
+
+### 3.1 Setting (A 11.1, p. 87)
+
+G compact in U(N), phi a positive continuous class function (the plaquette weight; Wilson and Villain weights
+qualify). A box Q has links V(Q) = links with base point in Q. nu^omega_Q is the law of sigma_{V(Q)} with density
+proportional to the product of phi over plaquettes meeting V(Q), given the exterior omega; it is the DLR conditional
+law. A vertex is interior to Q if all 8 incident links lie in V(Q). G_Q = gauge transformations equal to 1 off the
+interior vertices. A^omega_Q = G_Q-invariant elements of L^2(nu^omega_Q). Lemma 11.1 (G_Q-invariance of nu, of the
+sigma-algebras sigma(sigma_S) and of conditional expectations; A^omega_Q closed, preserved by every E_A, with
+everywhere-invariant versions): **HOLDS** (read; the argument is the standard one: h multiplies each link by fixed
+elements, so it preserves Haar measure, plaquette holonomies are conjugated, phi is a class function; the version
+F~(sigma) = int F_0(h sigma) dh is everywhere invariant by right invariance of Haar measure on the compact group G_Q).
+
+### 3.2 Verdicts so far
+
+| A's statement | Verdict | Note |
+|---|---|---|
+| Lemma 11.4 (two projections; Friedrichs angle) | HOLDS | On N^perp: P_k g is orthogonal to N; s = p^2 + q^2; norm of (P_1 + P_2) g squared at most (1 + c) s; s at most (1 + c) norm(g)^2; so X >= 1 - c on N^perp, X = 0 on N, and X^2 - X = Q_1 Q_2 + Q_2 Q_1. Every line checked. |
+| Lemma 11.5 (chain of projections) | HOLDS | Non-adjacent products of commuting projections are projections, so nonnegative; each Q_t occurs at most twice in the adjacent sum, so the adjacent sum is at least -2cH; spectrum of H in {0} union [1 - 2c, infinity). |
+| Lemma 11.6 (only constants are measurable off every R_t) | HOLDS | The density is bounded above and below because phi is positive and continuous on a compact group and the product is finite; then L^2(nu) = L^2(Haar) with the same null sets, and the product of the Haar integrations over R_0, ..., R_M integrates out the union V(Q). |
+| (11.1) (geometry of R_t, Q_t, Q_t^+-) | HOLDS | R_t = [dt, dt + 2d - 1), R_{t+1} = [dt + d, dt + 3d - 1) in coordinate i (relative to alpha); union = Q_t, differences = Q_t^-, Q_t^+, intersection = Q_t^0 of width d - 1; the R_t cover [0, (M + 2)d - 1) since 2d - 1 >= d. |
+| Proposition 11.7 (one direction) | HOLDS | Non-adjacent moves: base points of V(R_t) have i-th coordinate at most dt + 2d - 2, those of V(R_{t'}) (t' >= t + 2) at least dt + 2d, so no plaquette meets both and the conditional laws factor. Adjacent moves: E_e = E_{V(Q_t)} preserves K, so E_e x = E_e y = 0 for x, y orthogonal to N; a link of e has no end point interior to Q_t (an interior end point would put the link in V(Q_t)), so G_{Q_t} fixes sigma_e and the slices X_eta, Y_eta are G_{Q_t}-invariant everywhere; the conditional law given sigma_e = eta is nu^{(eta, omega)}_{Q_t}; the hypothesis with omega' = (eta, omega) and Cauchy-Schwarz in eta give the angle bound; Lemma 11.4 then 11.5; ker H = constants by Lemma 11.6. |
+
+Use of the hypothesis: Proposition 11.7 needs the slab bound for the boxes Q_t, whose widths other than i are those
+of R. So (M_{d,m}(c)) covers it only when every other width of R lies in [2d - 1, md - 1]. Theorem 11.8 below must
+keep R inside that window in every direction it applies 11.7 to; I check this next.

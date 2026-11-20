@@ -203,12 +203,8 @@ covariance of matched observables stays above delta > 0 at physical distance r, 
 - Not killed: dynamics whose blocks grow like 1/a_j (B's Theorems 45, 66, 84 with n_k a_k <= ell). For those,
   (a) gives a lattice rate of order gamma/(e^2 Delta rho) with Delta of order n^4 and rho of order n, which is the
   scale of B's own m_* = 16 varpi/(625 e^2 ell). They are the crux in another form (row 1218, row 1220 Lemma NULL).
-- Curvature (Langevin) forms, row 1229 Claim A's first case: ARGUED, not proved here. The same proof works once the
-  Langevin semigroup on SU(2)^E has a finite-speed bound sup over U of abs(grad_e P_t g) <= ||grad g|| abs(S_g)
-  (C beta t)^D/D! for links e at distance D from S_g (a Lieb-Robinson bound with speed proportional to the
-  plaquette coupling). With it the lattice rate is of order kappa_curv/(C beta_j), the physical mass at least
-  c kappa_curv/(beta_j a_j), which still diverges since beta_j a_j -> 0. The missing piece is that bound; I did not
-  write it.
+- Curvature (Langevin) forms, row 1229 Claim A's first case: PROVED in Proposition UNI (c) below (added at 07:49Z),
+  by the Helffer-Sjostrand formula and a Combes-Thomas conjugation; no finite-speed bound is needed.
 
 **Rule 0a.** The covariance bound is a standard theorem for spin systems (sources above). In the lane, the same
 conclusion is row 1229 Claim A (ARGUED, RECALLED inputs) and B's Theorem 66 with fixed n (row 1218, unchecked). I
@@ -216,6 +212,41 @@ found no file in `library/` that writes the proof (grep for "finite speed", "Lie
 "prove too much" in `library/gap-*.md`: hits are row 1032 B2, which is the exact Lieb-Robinson cone of the transfer
 step, not of a heat bath; row 1229 Claim A; and row 1224's Lemma 6.2, a finite-speed estimate for B's chain at one
 cube size used in another argument). So the proof is new to the lane; the statement is not new in the literature.
+
+**Proposition UNI (c), curvature form. PROVED (written 07:49Z).** Give SU(2) a bi-invariant metric and SU(2)^E the
+product metric; write V := -beta sum_p (1/2) tr U_p, so mu = exp(-V) dHaar/Z, and L := Delta - grad V . grad (the
+Langevin generator, symmetric in L^2(mu)). Let M := Ric + Hess V, a field of symmetric endomorphisms of the cotangent
+bundle; its blocks M_(e e') act from the e'-th to the e-th factor. Assume the Bakry-Emery bound M >= kappa > 0 at every
+point. Put D := max over e of sum over e' != e of sup over U of ||M_(e e')|| (only Hess V has off-diagonal blocks; two
+links share at most one plaquette, so D <= 18 c_H beta with c_H an absolute constant fixed by the metric). Then for
+smooth f, g supported in S_f, S_g with d := dist(S_f, S_g):
+
+    abs(Cov_mu(f, g)) <= (2/kappa) exp(-lambda d) ||grad f||_(L^2(mu)) ||grad g||_(L^2(mu)),
+    lambda := log(1 + kappa/(2 D)).
+
+*Proof.* (1) Bochner: for smooth u, grad(L u) = Lhat grad u - M grad u, where Lhat := Delta_rough - nabla_(grad V)
+acts on 1-forms; on the product manifold the Levi-Civita connection splits, so Lhat maps the e-th component of a
+1-form to the e-th component, and -Lhat >= 0 in L^2(mu) (it is nabla* nabla with the mu-weighted adjoint). Put
+A := -Lhat + M >= kappa. (2) Spectral gap: if -L u = nu u with u not constant, then grad u != 0 and
+A grad u = nu grad u, so nu ||grad u||^2 = <grad u, A grad u> >= kappa ||grad u||^2 and nu >= kappa. SU(2)^E is
+compact and V smooth, so -L has discrete spectrum and is invertible on mean-zero functions. (3) Helffer-Sjostrand:
+let u solve -L u = g - mu(g). Then Cov(f, g) = mu(f (-L u)) = mu(<grad f, grad u>), and grad g = A grad u, so
+Cov(f, g) = mu(<grad f, A^(-1) grad g>). (4) Combes-Thomas: let phi(e) := dist(e, S_g), which changes by at most 1
+between links of a common plaquette. Multiplication by exp(lambda phi(e)) on the e-th component commutes with Lhat
+(step 1). So A_lambda := exp(lambda phi) A exp(-lambda phi) = -Lhat + M_lambda, where M_lambda has blocks
+M_(e e') exp(lambda (phi(e) - phi(e'))). Hence ||M_lambda - M|| <= (e^lambda - 1) D = kappa/2 pointwise, and
+Re <omega, A_lambda omega> >= (kappa/2) ||omega||^2, so ||A_lambda^(-1)|| <= 2/kappa on L^2(mu; T*). Finally
+Cov(f, g) = mu(<exp(-lambda phi) grad f, A_lambda^(-1) exp(lambda phi) grad g>), with exp(lambda phi) = 1 on S_g
+and exp(-lambda phi) <= exp(-lambda d) on S_f. QED
+
+**Corollary UNI-2. PROVED GIVEN (c) and the OS reconstruction on file.** If along a trajectory M_j >= kappa_0 > 0 for
+all j and all tori, then the lattice decay rate is at least lambda_j = log(1 + kappa_0/(36 c_H beta_j)), so the
+physical rate lambda_j/a_j is at least of order kappa_0/(beta_j a_j), which tends to infinity because beta_j grows
+like log(1/a_j). Every separated covariance of polynomially normalised matched observables tends to 0, and NT1 fails
+as in Corollary UNI-1. So the curvature row (method 31) is closed in every form that is uniform in volume and coupling;
+this is row 1229 Claim A, now proved. It remains open, and is not touched here, only in forms whose constant degrades
+along the trajectory (multiscale forms, rows 957, 968) or that hold at one coupling (which needs a certificate,
+row 1229 Step 2).
 
 Step 2 done.
 

@@ -244,8 +244,8 @@ Var F >= 1 - C m^2 e^(-cm). Quotient C (d/s)^2 m^2 e^(-cm), which is (20).
 columns pay. The M-th root bound exp[-9 beta/128 + C beta/d + C(1 + K + log beta)] is e^(-c' beta) once d >= sqrt(beta).
 
 **(24) and the fixed-thickness sheet, L274-L300: HOLDS.** Antiperiodic extension to Z_(2L): odd modes only, least
-eigenvalue 2(1 - cos(pi/L)), equality on modes 1, 2L-1; q_0 = 1 fixes a = 1; unit length at k = 1, L-1 gives Re v = 0,
-|v| = 1 when L >= 3. The compactness argument for a_w is valid (bad set closed, excess continuous and nonnegative, zero
+eigenvalue 2(1 - cos(pi/L)), equality on modes 1, 2L-1; q_0 = 1 fixes a = 1; unit length at k = 1, L-1 gives Re v = 0, |v|
+= 1 when L >= 3. The compactness argument for a_w is valid (bad set closed, excess continuous and nonnegative, zero
 excess with the marked bond forces v = +-i). Perturbation by xi, eta: edge by edge |a + w|^2 >= |a|^2/2 - |w|^2. Symmetry
 q_(k,x) -> -q_(L-k,x) fixes the pins (q_0 = -q_L = 1), the vertical and horizontal energies (identical backgrounds at all
 heights) and negates the reading. Loop realization: (cos theta Re q - Re(e^(theta i) q))/sin theta = Im_i q. Origins meeting
@@ -253,8 +253,8 @@ a free link: s(s + w - 1). Reading magnitude on a good tile >= sqrt(3)/2 - 1/8 >
 
 **(25)-(26), L304-L337: HOLDS.** (26): the cross term after summation by parts is 2(1 - cos alpha) sum b.y and
 2 b.y = -|y|^2. Mode split: the first Dirichlet mode cancels exactly; ratio of first to second eigenvalue
-1/(4 cos^2(alpha/2)) <= 1/3 gives sum |Delta e|^2 <= 3 D_v; |e_k| <= sqrt(3 L D_v). At L/2 and L/4: ||v| - 1| <= eps,
-||1+v|/sqrt 2 - 1| <= eps, so |Re v| <= C eps. Bad-tile bound: D_v <= 4D (weight >= 1/4), eps <= sqrt(12 u) L theta <= C sqrt u;
+1/(4 cos^2(alpha/2)) <= 1/3 gives sum |Delta e|^2 <= 3 D_v; |e_k| <= sqrt(3 L D_v). At L/2 and L/4: ||v| - 1| <= eps, ||1+v|/sqrt
+2 - 1| <= eps, so |Re v| <= C eps. Bad-tile bound: D_v <= 4D (weight >= 1/4), eps <= sqrt(12 u) L theta <= C sqrt u;
 the first-sine-coefficient functional has norm sqrt(2/L), so |v_x - T v_y| <= C sqrt(D/L) <= C sqrt(u) theta; the marked
 bond gives |v_perp| <= C sqrt u. Lower partition: |y_k| <= beta^(-1/2) gives D_v <= 2(w+1)/beta. The per-tile exponent
 -cKw + Cw + C(eta^2 + xi^2)Kw + (3w/2M) log beta is right, and p = e^(-c'Kw) gives e^(-cwd) in the band bound.
@@ -434,3 +434,90 @@ Its method is not new on file.** Details:
    `prior/gap-lit-block.md` does not list it. Row 1262's proof is its own (sine weights, conditional expectations, no
    detectability lemma), and FINISH row 755 (line 836) found no such criterion established for a continuous-group lattice
    gauge theory. Repair: add the Anshu citation as prior work on the quantum side.
+
+## Step 7. Guide-only numeric run (status 2026-11-20T12:32Z)
+
+Not started so far: `memory_pressure` reported 47, 48 and 40 percent free at 12:30Z-12:31Z, below the 50 percent
+floor for this machine. Every statement above was checked by hand, so the verdicts do not wait on a run. Two guide
+scripts are written in a scratch folder (not committed): (T1-T6) the constants b_R >= 1/16 and e_(s,R) <= 40 pi^2
+(s/(R+1))^2, the 1D overlap bound, the lattice sum 4(2s+1)^4 s(s+1)/3, the closed form (23), the identity (26), and
+the two forms of C_loc in (35); (T7) a d = 1 analog of (1) => (2) on an Ising ring of 14-16 spins with block heat bath,
+pass criterion written first: v_s >= b gamma - e with b = (sum sin)^2/(R sum sin^2), e = (1 - cos theta)(s+1)(2s+1)/3.
+If memory recovers before the end, the run goes under the numeric lock and its output is appended here.
+
+Row 1262's own wording at L452 ("row 1254 ... is unchecked at this pin") was right for its pin `ad8d21df2`: the check
+of row 1254 (`07796730c`) is not an ancestor of that commit.
+
+## Step 8. Verdicts (done 2026-11-20T12:33Z)
+
+Provenance: checked line by line by Claude Opus 5.5 (max), Mac mini worker 1, at commit `536662306`, by hand; a check,
+not an audit. Author of row 1262: gpt-6.2-astra max (cross-provider). Verdict per statement, with the line in
+`library/gap-solve30-astra62.md`.
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| **(15) conditional Wilson estimate with a collar**, with (14) | L148-L158 | **HOLDS** |
+| **(30) with a revealed codimension-two sheet** | L363-L392 | **HOLDS** |
+| **(35) integrated-correlation form of the local constant** | L440-L446 | **HOLDS** |
+| **(17) finite-volume bound gamma = 2^-8 exp(-440 beta t^3)** | L178-L188 | **HOLDS** |
+| (1) => (2), with (3), (4), kernel, b_R >= 1/16, e <= 40 pi^2 (s/(R+1))^2 | L13-L51 | HOLDS |
+| (5) | L57-L73 | HOLDS |
+| (6)-(8) | L75-L95 | HOLDS |
+| (9) | L97-L101 | HOLDS |
+| parameter choice, centre-flux exclusion | L103 | HOLDS |
+| (10), on row 1155 (9) | L107-L113 | HOLDS |
+| (11) | L115-L120 | HOLDS |
+| (12)-(13), on row 1141 (3)-(7) | L122-L142 | HOLDS |
+| ARGUED paragraph | L144 | correctly labelled |
+| face readings have Q_z f = 0 | L160 | HOLDS |
+| mesoscopic collar tests | L162-L166 | HOLDS |
+| (16) sufficient physical-scale condition | L168-L174 | HOLDS (the last sentences cite row 1254's premises; they are listed, not proved, as the text says) |
+| oscillation of the first bisection | L190 | HOLDS |
+| GUIDE L192, OPEN L194 | L192-L194 | fair / true |
+| (18), on row 1231 (35) and row 1254 (37) | L198-L204 | HOLDS (given row 1231 (35), checked HOLDS by row 1235) |
+| collar electric cost, on row 1155 (20) | L206 | HOLDS |
+| (19) | L210-L217 | HOLDS |
+| GUIDE (Durhuus-Froehlich layer form) | L219 | fair |
+| **(20)-(22) slow conditional sheet** | L223-L259 | **HOLDS** |
+| (23) one released plane | L263-L272 | HOLDS |
+| (24) and the fixed-thickness sheet | L274-L300 | HOLDS |
+| **(25)-(26) thickness of order sqrt(beta)** | L304-L337 | **HOLDS** |
+| (27)-(28) | L341-L350 | HOLDS |
+| (29), common-filling test | L352-L359 | HOLDS |
+| consequences for tubes | L394 | HOLDS |
+| **(31) variance loss of the reading of (20) in the full law** | L398-L402 | **HOLDS** |
+| **(32) variance loss of the reading of (25) in the full law** | L404-L412 | **HOLDS** |
+| vanishing correlations | L414 | HOLDS |
+| (33) and (17) for (33) | L418-L425 | HOLDS |
+| (34) | L427-L432 | HOLDS |
+| dense pinned grid | L434-L436 | HOLDS |
+| power tail and two-dimensional example | L448 | HOLDS |
+| OPEN | L450, L452 | true as stated |
+| Repo search and Sussman-Alpoge citations (GUIDE) | L3-L11 | HOLDS where checked (Step 5); PR 10134 not checked |
+| RESULT line | L454 | HOLDS |
+
+FAILS: none. HOLDS AFTER CORRECTION: none needed for any proof step.
+
+Defects, ranked (none breaks a statement):
+
+1. Credit (L11). The inverse-square local-gap threshold in any lattice dimension has a prior quantum form: A. Anshu,
+   arXiv:1909.01516, for frustration-free Hamiltonians, optimal up to a dimension constant (abstract read only).
+   Row 1262 cites Knabe and Gosset-Mozgunov but not Anshu. Repair: cite it as the quantum analogue. Row 1262's proof
+   (sine weights with conditional expectations) is its own.
+2. Wording (L3). "The row-specific prior file is absent at the pin": true only if it means a digest named for
+   row 1262. The row 1218 digest named in the brief was present at `ad8d21df2`, and L7 uses it.
+3. Scope note (L111). Row 1155 states (9) "on either periodic torus" of its own setting; row 1262 uses it on the
+   s^4 box and on d^4 lattices. The proof of (9) reads no side length, so this is valid. The restriction to even s in
+   (10) and L162 is not needed.
+
+Restatement (Step 6): the main comparison (1) => (2) and its variants (9), (15), (30) are not a restatement of an earlier
+row. The method is row 1254's (18)-(19) (row 1262's (4) is row 1254's (19) with a sine weight). The statement was
+proposed without proof in `gap-skeleton-max.md` B7. It sharpens A's Lemma G.2 (read in row 1224), whose threshold is of
+order 1/p, to order (s/R)^2. It differs from row 746's pair criterion PA_g.
+
+What the check does not show: nothing here proves the local input (14) or (35) at the scale (16) for the Wilson law.
+The only bound on file is (17), which is exponentially small in beta t^3. (18) shows that at R = beta^delta the
+constant cannot exceed (s/R)^2 in order. (31)-(32) remove only the two exhibited readings. The continuum chain behind
+(16) (row 1254 (17), (20) and its premises) is outside this check. The mass gap stays open.
+
+RESULT: Row 1271 check of row 1262 (Claude Opus 5.5 max, by hand, cross-provider): every statement HOLDS, no FAILS, no correction needed in a proof step. HOLDS: the conditional Wilson estimate (15), (30), (35) with the finite-volume bound (17); the full-law variance loss (31)-(32) of the slow sheets (20), (25); everything else. The main comparison (1) => (2) is not a restatement: it uses row 1254's (18)-(19) method and proves the inverse-square criterion that `gap-skeleton-max.md` B7 proposed. One citation to add (Anshu, arXiv:1909.01516). OPEN: the local input (14)/(35) at order (s/R)^2 for the Wilson law, the continuum premises of (16), and the mass gap. The guide run was not started (memory 40-48 percent free).

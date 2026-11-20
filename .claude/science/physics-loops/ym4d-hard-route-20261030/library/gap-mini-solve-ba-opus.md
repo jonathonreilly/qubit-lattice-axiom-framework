@@ -136,7 +136,7 @@ says. This is a threshold on g chosen last, not a cap (CA-I L1247-1250 forbids c
 (c) What (b) needs that is not proved here: the box hypothesis itself, that every potential type that enters the
 regular step (free, intrinsic, older formed, inserted) is holomorphic on c_R l^q. For the older formed terms it is
 CMP 119 (2.28) as the inductive property; for the intrinsic terms (change of variables, gauge fixing, Jacobian) it
-follows from analyticity on an unscaled radius alpha (CMP 109 L955-966: analytic for |H_k| < alpha_1, absolute),
+follows from analyticity on an unscaled radius alpha (CMP 109 OCR L913-914: analytic in H_k "satisfying a boundedness condition of the form |H_k| < alpha_1, with an absolute, positive constant"),
 i.e. rescaled alpha/g, which exceeds c_R l^q for small g; for inserted vertices it is row 1299 Lemma V-SA's (UM1)
 input. This is premise (P1)/(P2) of row 1299 4.8 (the ci-form's H-D), not new.
 (d) A remark on the account (ARGUED; CMP 116's space (I.6.34) not read): CA-I 4.3's variant (L4167-4178) states the
@@ -152,7 +152,7 @@ box from CMP 119 (2.28) (radii ~ l^q) or from (I.6.34), not from (3.43). Evidenc
 **4.1 Inventory (READ, SA L14276-14720).** Notation as in SA's chapter "The unmarked majorant for the actual regular
 polymer gas" (L14276). Fine cubes of side M, coarse cubes of side LM.
 - Geometric constants, fixed by d and the cube adjacency, independent of L >= 2, M, the torus and the cutoff:
-  C_h (UM7)-(UM8) ("independent of L >= 2", L14432); kappa_f and S_xi for xi > kappa_f (UM9); c_f (UM10); c_m (UM5)
+  C_h (UM7)-(UM8) ("independent of L >= 2", L14431); kappa_f and S_xi for xi > kappa_f (UM9); c_f (UM10); c_m (UM5)
   and c_b (UM11) are pure numbers once the factor (LM)^4 is taken out; C_p (UM13) ("includes the finite tags and their
   rooted sums"); c_l (UM17); C_v, C_D, kappa_D, c_adj (L14668-14675, "bounded-degree cube covering walks").
 - Gaussian comparison inputs (UM4)-(UM6): coarse disc radius R_s > 2; matrix perturbation at most eps on |s| < R_s; gap
@@ -252,3 +252,139 @@ descent, hma), so by rule 0a I do not attack it. Row 1299's open list for the cu
 | structural identities | open premise (P3) | D4 half: hma Theorem 2; link half: the open carrier identification (hma L598, L600) | READ | 5 |
 | CA-I 4.3's variant (p_1 domain with p_0 cut) | not noted | inconsistent on one variable at small coupling in the account's own order | ARGUED (CMP 116 (I.6.34) unread) | 3.4 (d) |
 | the seed (N-phys) | OPEN | OPEN, not attacked in this item | OPEN | 2 |
+
+## 7. Second step: the margin reading (M) of rows 1294 and 1299 (written 2026-11-20T17:53Z by date -u)
+
+**7.0 The statement.** Row 1294 4.2 (`gap-mini-solve-at-opus.md` L218-233) proves Proposition H2-cov (cross-admission
+without connectedness of the core) GIVEN (M): "the supplier's requirement of EM L652-653 holds with a fixed relative
+margin mu_m > 0, that is, for every frame and step, the earlier backgrounds produced by the real cut enlarged by the
+factor 1 + mu_m still lie in the inherited members' covariance classes"; it calls (M) "ARGUED as a reading, not found
+stated with that wording". Row 1299 5.1 keeps it open: "c_e is fixed by the domain margin, a supplier choice; not
+decidable from EM". Rule 0a: `(M)` occurs in FINISH.md only in rows 1294 and 1299 as open; no row holds it.
+
+**7.1 What the sources fix (READ).** Sussman and Alpoge's EM manuscript (`YM4/EM/YM4_EM.tex` at c7fef8b21b58, fetched
+by URL; 2,001 lines):
+- the profiles (EM L333-345): alpha_iota(y) = C_iota y^(-1/2) (log y)^q, delta(y) = A_1 y^(-1/2) (log y)^(p_0) with
+  q > p_0 (so the box is the q-box, as in 3.4); EM L471-483: with eps(y) = A_0 y^(-1/2) (log y)^(p_0),
+  R_m^2 eps(theta_m)/alpha_0(theta_m) <= (L^2 A_0/C_0) (log theta_m)^(p_0 + 2r - q), "the stronger choice q > p_0 + 2r
+  makes this ratio uniformly small above a fixed floor";
+- the requirement (EM L647-656): "There is an open real fluctuation ball on which all inherited backgrounds have their
+  required covariance. The covariance radii e_j obey e_j' <= L^(2(j'-j)) e_j for j <= j'. ... The earlier backgrounds
+  used by the actual step also have to lie in their own covariance classes throughout the retained real cut. The
+  creation radius is c_e eps(theta_k) at step k -> k+1, where eps is the supplied real curvature threshold and c_e is
+  fixed by the domain margin."
+The outline defines the class (SA L5904-5911, (R15)): "The covariance class consists of the W for which these
+backgrounds exist, every restriction lies in the required core, and L^(2j) max_p |d U_j(W)(p) - 1| < c min{eps(theta_(j-1)),
+eps(theta_j)}", and the terminal covariance radius e_(k+1) = c eps(theta_k) (SA L20724). So the class is a condition
+on W alone: it reads the background maps W -> U_j(W), the cores, the constant c and the threshold eps (that is, A_0); it
+does not read the cut constant A_1 or the members formed in the run.
+The account's order (CA-I Stage 7, L1590-1606; restated L2106-2136): "A_1 > 0, then A_0 upward, with A_0/A_1 >= max{c(d)(1+beta_0) B_3
+L^(d+2), c'(d,L) M^2}" ("we assume that the constant A_0 is much larger than A_1", CMP 119), then C_0 upward with floors
+by multiples of A_0 and A_1, then C_1 > 2 B_3^2 O(1) M C_0. Write F for that floor ratio; F is fixed before A_1 (it
+reads d, beta_0, B_3, L, M only).
+
+**7.2 Lemma MARGIN (PROVED, given the supplier hypothesis (S-unif) below).**
+(S-unif): the supplier's requirement of EM L652-653 holds for every admissible choice of the account's letters, that
+is, for every A_1 > 0 and A_0 with A_0/A_1 >= F, with the later letters (C_0, C_1, the radii, the floors on theta)
+chosen admissibly for that pair. Claim: fix mu_m > 0 and choose A_0/A_1 >= (1 + mu_m) F, and each later letter inside its floors and
+ceilings for both pairs (A_1, A_0) and ((1 + mu_m) A_1, A_0) (the maximum of the floors, the minimum of the ceilings). Then (M) holds with relative margin mu_m.
+*Proof.* (1) The pair (A_1', A_0) with A_1' = (1 + mu_m) A_1 is admissible: A_0/A_1' >= F, and the later letters were
+chosen inside the floors and ceilings of both pairs (finitely many, each a positive function of earlier letters; the
+Stage-7 list CA-I L2106-2136 has only floors on C_0, C_1, ceilings on the radii and downward choices of eps^I_0,
+eps^I_1, and Stage 8 only ceilings on gamma, L2139-2140; CA-I (H3) L1143-1160 allows this). (2) The cut radius is linear in A_1: delta'(y) = A_1' y^(-1/2) (log y)^(p_0) =
+(1 + mu_m) delta(y) (EM L333-345). So the real cut of the A_1'-run is the actual cut enlarged by 1 + mu_m, at every
+level. (3) Every history admissible for the actual run is admissible for the A_1'-run with the same A_0: its
+fluctuations lie in the smaller cuts, and the curvature threshold eps (which reads A_0 only) is unchanged. (4) By
+(S-unif) for the A_1'-run, the earlier backgrounds of every field of the enlarged cut, with that history, lie in the
+covariance classes (R15). The class is the same set in both runs, since (R15) reads W, the cores, c and eps only
+(7.1). That is (M). QED
+(5) No cycle: the only new condition is the floor A_0/A_1 >= (1 + mu_m) F, attached to A_0, which the account's order
+treats as free upward (CA-I L1592: "then A_0 upward"); the later letters take finitely many more floors. The domain
+margin of EM L471-483 stays uniformly small above a theta-floor for any fixed A_0, since its exponent p_0 + 2r - q is
+negative, and that floor is chosen last.
+
+**7.2a Where the requirement itself lives (READ; written 2026-11-20T17:56Z by date -u).** `grep -i` of CA-I for "common covariance",
+"covariance radi", "covariance ball", "Euclidean list" and "inherited backgrounds" returns nothing. The requirement is a
+hypothesis of EM (EM L647-656, "They do not construct those inputs", abstract L120-122) and of the outline's statement
+3.1 ("The substantive construction input says that, for an admitted box and frame prefix through k, E^(k+1) and its
+coefficient are formed ...", SA L20718-20724, with the class at SA L20637-20646). So (S-unif) is a property of an input
+that the carry already assumes (the supplier of statement 3.1), stated for every admitted box and frame prefix; it is
+not proved in the repository or in CA-I.
+
+**7.3 What this does and does not show.** It turns (M) from an ARGUED reading into a consequence of the uniformity
+(S-unif) of the supplier's own requirement over the account's admissible letters, with one explicit floor
+A_0/A_1 >= (1 + mu_m) F. Row 1294's Proposition H2-cov and row 1278's (H2) are then PROVED GIVEN the readings they
+already list (row 1278 (R3)-(R5), row 1267's READ list) and (S-unif); mu_m = 1 is a valid choice. It does not prove the
+supplier's requirement itself (that is the account's construction, a premise of the carry like (P1)-(P2)). A checker
+should verify (a) that (R15) is the class EM L652-653 reads (EM cites the outline's class; the wording matches SA
+L20637-20646, "The backgrounds of fluctuating fields must first lie in a common covariance class on an open real
+fluctuation ball"), and (b) that no admissibility condition of the account caps A_1 from below in a way that excludes
+A_1' = (1 + mu_m) A_1 (CA-I 4.3 has a floor on the cutoff radius (A_1/A_0) p_0(g), "exceeds the constant of CMP 116
+(2.31)", which A_1' meets a fortiori, since the cut grows).
+
+## 8. State of this row after the second step (written 2026-11-20T17:53Z by date -u)
+
+| Item | Before | After | Label | Where |
+|---|---|---|---|---|
+| (M) margin reading (row 1294 4.2, row 1299 5.1) | ARGUED reading, "not decidable from EM" | follows from the uniformity (S-unif) of the supplier's own requirement over the account's admissible letters, with the one floor A_0/A_1 >= (1 + mu_m) F | PROVED given (S-unif) (Lemma MARGIN) | 7.2 |
+| row 1294 Proposition H2-cov, row 1278 (H2) | PROVED GIVEN (M) and readings | PROVED GIVEN the same readings and (S-unif) | PROVED (by 7.2) | 7.3 |
+| (E0), (P4), (P3) | see Section 6 | unchanged | | 3-5 |
+
+**Carry inputs still open after this row (pointers):** (P1) (UM1) for the non-gauge potential types (frozen hma L598;
+FINISH row 284); (P2) H-M and the carrier identification, which now also holds (P3)'s link half (hma L598-600, in1
+L99-108); the supplier's requirement itself (EM L647-656, (S-unif)); row 1268's other hypotheses (P5); the blind-site
+expansion (sibling row 1309); the seed.
+
+## 9. A third small step: the unit caveat of (TH) (row 1268 3.5) (READ; written 2026-11-20T17:55Z by date -u)
+
+Row 1268 3.5 (`gap-mini-solve-al-opus.md` L209-214) states (TH) (every threshold in the common chart is at least
+a (log theta_k)^(p_0), a = A_1/3^(1/2)) and labels it ARGUED: "a = A_1/3^(1/2) works if the cut units are the
+normalized field variables" (row 1268 L325: "the unit conversion between the two frames' normalized fields is my
+reading"). The units are fixed by three texts read here:
+- CA-I 4.3 L4172-4175: "the cutoff radius (A_1/A_0) p_0(g) ... When g = g_k, this radius is the quantity delta_k/g_k
+  of [CMP 119]";
+- CMP 119 (OCR L1167): "delta_k = g_k (A_1/A_0) p_0(g_k)", the bound on the approximate fluctuation field
+  |V_k(b) (V_k^(0)(b))^(-1) - 1| in unscaled (group) units (OCR L1150-1166);
+- the lane's frozen `hma.md` L112: "Fix b = sqrt(theta_j) u as the real integration coordinate ... The box is the
+  product of bond balls |b(beta)| < b_j := sqrt(theta_j) delta_j", with g_j = theta_j^(-1/2).
+So the cut radius A_1 (log theta)^(p_0) is delta/g, the cut in the field divided by the coupling, that is in the
+normalized variables, in both the account's statement and the lane's chart. The caveat of (TH) is met; with row 1268's
+own frame comparison ((psi_k/phi_k)^(1/2) >= 3^(-1/2) on |x_k/theta - 1| < 1/4) and the scalar-coordinate factor of
+3.4 (b), (TH) moves from ARGUED to READ. Nothing else in row 1268 3.5 changes.
+
+## 10. Labels, what a checker should redo, credits (written 2026-11-20T17:55Z by date -u)
+
+**10.1 Labels.**
+
+| Statement | Label | Where |
+|---|---|---|
+| The seed (N-phys) and its fixed-coupling forms: no route off the record | ARGUED (judgement), not attacked | 2 |
+| Exponents in the account: p_1 = p_0 - 4r - 1 < p_0 (CMP 122a), q >= 3p_0 + 3r + 1 | READ (already on file: b-in-r2 L251, in1 L227) | 3.1, 4.5 |
+| Balaban's two cuts and two domains (p_0 cut with the q-radii of CMP 119 (2.28) in the interior; p_1 cut of CMP 122a (1.27) with the domain (3.43) near large fields) | READ | 3.3 |
+| Row 1299 4.7's "(equivalently p_1 > p_0)" is false; (E0) holds on the q-box above a threshold on g chosen last | PROVED given the box hypothesis (H-D / H-M domain clause) | 3.4 (a)-(c) |
+| CA-I 4.3's variant pairs the p_1 domain (3.43) with the p_0 cut; inconsistent on one variable at small coupling | ARGUED (CMP 116 (I.6.34) not read) | 3.4 (d) |
+| (UM14), (UM19), (UM23) in one order | PROVED by citation: in1 Lemma 3 (gate in1 pass 3: "Lemma 3. Holds"), given H-M | 4.3-4.4 |
+| (UM26') is one more floor on g_* (shift 1/5) | PROVED | 4.4 (ii) |
+| (P3): D4 half = hma Theorem 2; link half = the open carrier identification (hma L598-600) | READ | 5 |
+| Lemma MARGIN: (M) with relative margin mu_m from the floor A_0/A_1 >= (1 + mu_m) F | PROVED given (S-unif) | 7.2 |
+| Row 1294 Proposition H2-cov and row 1278 (H2) no longer read (M) | PROVED (by 7.2), given their other readings and (S-unif) | 7.3 |
+| (TH)'s unit caveat | READ | 9 |
+
+Every PROVED item is by Claude Opus 5.5 and is not yet checked by another model. No numeric run; no subagent.
+
+**10.2 What a checker should redo first.** (1) 3.3: that CMP 119 (2.28)'s q_0, q_1 radii (OCR L832-838) are the radii
+on which the regular step's integrand is analytic in the normalized fluctuation, and that (3.43) (page image, journal
+p. 276) concerns only the terms with localization domain not inside Lambda_(k+1). (2) 3.4 (b): the factor 2 that
+covers |c - 1| between the two frames (row 1268 7.3). (3) 4.4 (ii): monotonicity of S(g_*). (4) Lemma MARGIN 7.2: that
+(R15) (SA L5904-5911) is the class EM L647-656 reads; that no condition of the account bounds A_1 from above or reads
+A_1 in a way that the enlarged pair violates (I found only the ratio floor CA-I L1594, L2111, L142618 and the
+cutoff-radius floor CA-I L4172-4174, which the enlarged cut meets); and step (3), that an all-small history of the
+actual run is an admissible history of the enlarged run. (5) 3.4 (d), against CMP 116 (I.6.34) when a copy is available.
+
+**10.3 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the complete account
+CA-I (`theorem_0_complete_account_raw_I.tex`) and the outline `YM4_sketch_500.tex` at 31a47c543775 (the order of
+choice, the regular step, the regular-gas chapter (UM1)-(UM30), the covariance class (R15), (RF18)), and the EM
+manuscript `YM4/EM/YM4_EM.tex` at c7fef8b21b58 (the running radii, the domain margin, the covariance requirement).
+Tadeusz Balaban: CMP 109, 119, 122 (the cuts delta_k and delta'_j, the radii (2.28), the space (3.43), p_1 < p_0). The
+lane's IN1 (Codex distillation of a Claude draft; gate by Claude), hma and ci-form notes; rows 1267, 1268, 1278, 1294,
+1299 (Claude Opus 5.5, Mac mini workers 2 and 3) for the carry this row edits by evidence only.

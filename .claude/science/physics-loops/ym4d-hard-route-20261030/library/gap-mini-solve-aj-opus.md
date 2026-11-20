@@ -137,3 +137,63 @@ Step 3). After the preparation, a first-class component Z carries at the top lev
   background fields agree there.
 Whether such cubes exist in a healed island, and which step function the term X' carries on them, is a question of
 the geometry of the island representation. That is Step 3.
+
+## Step 3. The island representation in Balaban's text, and the step (*) (written 2026-11-20T13:25Z by date -u)
+
+**3.1 READ: what a healed island carries (CMP 122b pp. 377-379, page images).** Before the last decomposition the R
+operation has the form (1.70): (1.1) = chi_k chi_(k,Lambda) delta_(G_0)(V'_k) chi exp A'_k(...) chi_(h,1/2) int dB ...
+Then (p. 378): "Now we try to remove the characteristic functions chi_(k,Lambda) chi. We introduce the decompositions
+of unity 1 = chi_k((Omega_k^(~4))^c) + chi_k^c((Omega_k^(~4))^c) in components of Z. ... For the components with the
+first, small field function we can remove the characteristic functions chi_(k,Lambda) chi, because they are equal to 1
+... Thus, the components of Z are divided into two classes. For components of the first class, denoted by
+{X_1, ..., X_n}, there are only the characteristic functions chi_k(X_i^(~-6)), which are combined with the function
+chi_k(Omega_k^(~4)), here Omega_k is the old k-th domain." The R operation is then (1.72):
+    (R rho_k)(V_k) = sum over Z_k, {Y_1..Y_m} of chi_k((Omega_k cap (Y_1^c)^(~2) cap ... cap (Y_m^c)^(~2))^(~4)) (sum T''_k(Z_k)) exp A'_k
+                     prod_i chi_k^c(Y_i^(~-6)) chi_(k,Lambda_i) chi_i delta_(G_i)(V'_k) T'_k(Y_i)
+                     { sum over n >= 0 and {X_1..X_n} of prod_j T'_k(X_j) exp sum_Y V(Y, U_k) },
+"where Omega_k is the new k-th domain defined by the determining set of the configuration U_k". The operation T'_k(X)
+of (1.71) carries the island's own functions (chi'(X), chi_(h,1/2)(...), T_h(Z_h cap X)) inside it, on the island's
+internal variables.
+
+**3.2 Proposition TI (top-level threshold identity). PROVED (reading of two displays).** Let Q be a cube of side
+L M_2 R_k of the partition of T_eta = T_(L^-k). The function of CMP 122a (1.4) at j = k - 1 on Q is
+chi( sup over p in Q^~ of |U_(k,Q)(V_k, dp) - 1| < eps_k (L^0 eta)^2 ), which is the factor of CMP 119 (2.17) on Q: the
+same field U_(k,Q)(V_k) of (2.16), the same plaquettes, the same threshold eps_k eta^2. So the threshold comparison
+that CA-II:102814-102816 leaves open is an identity on every cube where both are defined, not an inequality.
+Proof: (1.4) with j + 1 = k has eps_(j+1) (L^(k-j-1) eta)^2 = eps_k eta^2, and its cubes are "the L M_2 R_(j+1)-cubes of
+the partition of the lattice T_(L^-(j+1))" (CMP 122a p. 178), i.e. the L M_2 R_k cubes of T_eta, which are the cubes
+of (2.17) (CMP 119 p. 257). QED
+
+**3.3 Remark P (the reading under which (*) fails). PROVED (threshold arithmetic), with its scope.** If "the
+preparation's characteristic function" on X_a is read as the preparation's own final function chi_k^((N)) of CMP 122a
+(1.24) on its top shell, then (*) is false as a threshold statement. The top line of (1.24) at j = k is
+|U_(k,Z)^((N))(dp) - 1| < 3 (1 - beta/2) eps_k eta^2 on Omega_(k-1) minus Omega_(k+1) ("c = 3 for j = k"), and with
+Balaban's beta = 1/2 this is (9/4) eps_k eta^2 > eps_k eta^2. A block field whose two background fields agree on one
+cube Q and have one plaquette with eps_k eta^2 <= |U(dp) - 1| < (9/4) eps_k eta^2 passes chi_k^((N)) on Q and fails the
+(2.17) factor on Q. This is exactly why Balaban does not leave chi_k^((N)) alone at the top level: he keeps
+chi_k(Omega_k^(~4)) (CMP 122a p. 184) and adds chi_k((Omega_k^(~4))^c) on the components of Z (CMP 122b p. 378).
+Scope: this remark shows that the account's (*) cannot be proved by comparing (1.24) with (2.17); it does not show
+that the lemma is false, because the healed term carries more than chi_k^((N)) (3.1).
+
+**3.4 Corollary H (the step (*) of 8.6:lem-prefactor-monotone). PROVED GIVEN 3.1 and premise (BG) below.**
+In the term (O, X) the top-level small-field function on the cubes of an island X_a is the product of
+chi_k(X_a^(~-6)) (a product of (2.17) factors over the cubes of X_a^(~-6), which contains X_a) with the old
+chi_k(Omega_k^(~4)) on the cubes where that is present. In the term (O, X') the step's own function on the cubes of X_a
+is the (2.17) factor on each cube. Under (BG) each (2.17) factor is the same function of V_k in both terms, so
+    chi_a^prep = chi_a^step * (other characteristic functions) <= chi_a^step      pointwise,
+which is (*). The rest of the account's proof (CA-II:102818-102830: products over islands, positivity of the other
+three factors) then gives (8.6:eq-prefactor-monotone-a).
+Premise (BG), OPEN here: on every cube Q of X_a^(~-6), the field U_(k,Q)(V_k) of (2.16) in the term (O, X) (built on
+Balaban's new determining set after R, CMP 122b p. 377: "the new determining set B_k") equals the field of the term
+(O, X') (built on the determining set of a region with no island at X_a). The account assumes the same thing off X_a
+("the characteristic functions they carry coincide off the regions X_a", CA-II:102795-102797) and its companion lemma
+8.6:lem-healed-islands-unread (registry H-C6b, its own step (*) open) is a statement of the same kind.
+
+**3.5 What changes in the account's proof (ARGUED).** The account's reason "the preparation's characteristic function
+of CMP 122a (1.3)-(1.4)" names the wrong object for the healed term: on a first-class component the functions of the
+preparation are removed (122a p. 184 for (1.3), (1.4) below the top; 122b p. 378 for chi_(k,Lambda) and chi), and the
+function that stands in the prefactor is chi_k(X_a^(~-6)), introduced by the last decomposition of unity of the R
+operation. With that object the "threshold comparison" is Proposition TI (an identity), and what remains is (BG), a
+statement about determining sets, not about thresholds. In Balaban's own (1.72) the prefactor does not depend on the
+island family at all, so there (8.6:eq-prefactor-monotone-a) holds with equality, given that his regrouping is valid
+(this is the account's representation lemma, cited in its Definition 8.6:def-island-representation).

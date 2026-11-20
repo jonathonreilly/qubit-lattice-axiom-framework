@@ -17,6 +17,8 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T04:56Z Section 2 written: attack judgement after a registry grep of about 90 candidate terms; choice made.
 - 2026-11-20T04:58Z Section 2a written: the computation chosen in Section 2 is A's own Proposition H.4; choice void.
 - 2026-11-20T05:01Z Section 3 opened: check of A's Theorem D chain; Lemmas 11.4-11.6 and Proposition 11.7 HOLD.
+- 2026-11-20T05:03Z 3.3 written: Theorem 11.8, Lemmas G.1-G.2, Theorem G.4 and the finite-volume half of Theorem D HOLD.
+- 2026-11-20T05:06Z 3.4 written: Lemma 6.2, Theorem 6.3, Corollary 6.4, Proposition 2.1, Theorem B HOLD; A's (M) to gap chain checked end to end.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -159,3 +161,57 @@ F~(sigma) = int F_0(h sigma) dh is everywhere invariant by right invariance of H
 Use of the hypothesis: Proposition 11.7 needs the slab bound for the boxes Q_t, whose widths other than i are those
 of R. So (M_{d,m}(c)) covers it only when every other width of R lies in [2d - 1, md - 1]. Theorem 11.8 below must
 keep R inside that window in every direction it applies 11.7 to; I check this next.
+
+### 3.3 From the slab bound to BP on every large torus (A 11.4 and Appendix G, pp. 90-92, 124-127)
+
+| A's statement | Verdict | Note |
+|---|---|---|
+| Theorem 11.8 (patch gap (1 - 2c)^4 from (M_{d,m}(c))) | HOLDS | Induction over the four directions. Step k to k + 1: fibre over omega' = links of the patch outside V(R^(k)_tau); G_R is inside G_Pi and fixes omega'; the fibre law is nu^{(omega', omega)}_R; Proposition 11.7 with i = k + 1, M = m - 2, applied to boxes of widths 2d - 1 (directions <= k), 3d - 1 (direction k + 1), md - 1 (directions > k + 1), all in [2d - 1, md - 1] since m >= 4; the conditional laws of a block given the rest agree under nu and nu'. Base k = 0 is equality; at k = 4, V(R^(4)_tau) = B_tau. |
+| Lemma G.1 (i)-(iv) (commuting resampling of non-interacting blocks; blocks at coarse distance >= 2 do not interact when K >= 4; cover; only constants are fixed by every P_j) | HOLDS | (ii): in a coordinate with v_i >= 2 the base-point ranges are at cyclic distance at least min{(v_i - 2)d + 2, (K - v_i - 2)d + 2} >= 2; a plaquette's base points differ by at most one per coordinate. |
+| Lemma G.2 (Knabe-type step: H_s^2 >= gamma H_s for every patch gives H^2 >= eps H) | HOLDS | I re-derived c_v = prod_i (p - abs(v_i)) (patch count, exact because K >= 2m), the bound -2H <= A_v + A_{-v} <= 2H, the 8/24/32/16 split of the 80 unit displacements, c_v - c_* = p^3, p^2, -p(p^2 - 3p + 1), -2p(p - 1)(p - 2) + 1 with c_* = p^3 (p - 2), Sigma = 72p^3 - 168p^2 + 96p - 16, and eps >= (gamma p - 74)/(p - 2) >= gamma/2 when gamma p >= 148. All algebra checked by hand. |
+| Theorem G.4 (finite-size criterion: patch gap gamma gives BP(2d - 1, eps/16) on every even torus with d dividing L, L >= 2md) | HOLDS | Fibrewise: G_Q fixes the exterior, so each fibre of a gauge-invariant F lies in A^omega_Q, where Definition G.3 gives spectrum {0} union [gamma, infinity); integrate in omega; Lemma G.2 on A; kernel = constants by G.1(iv); average over the d^4 shifts; d^4 >= n^4/16 with n = 2d - 1. |
+| Theorem D, finite-volume half: (M_{d,m}(c)), c < 1/2, m - 1 >= 148/(1 - 2c)^4 give BP(2d - 1, (1 - 2c)^4/32) on every even torus with d dividing L, L >= 2md | HOLDS | Theorem 11.8 gives gamma_{d,m} >= (1 - 2c)^4 (Definition G.3 has exactly the quantifiers of 11.8: every patch box, every omega, every F in A^omega); Theorem G.4 with gamma = (1 - 2c)^4. |
+| Theorem D, continuum half ((D) along the tuning gives the gap (1 - 2c)^4/(1250 e^2 l)) | NOT CHECKED here | It is A's Theorem B applied with varpi = (1 - 2c)^4/32 (16 varpi/(625 e^2 l) = (1 - 2c)^4/(1250 e^2 l), arithmetic checked). Theorem B is A's main continuum theorem; see 3.4. |
+
+**What this gives the lane (PROVED, as a check of A's text; label: checked by Claude Opus 5.5, same session, not an
+independent second check).** At every fixed lattice coupling and on every even torus with d | L and L >= 2md:
+
+(M_{d,m}(c)) with c < 1/2 and m - 1 >= 148/(1 - 2c)^4  ==>  BP(2d - 1, (1 - 2c)^4/32).
+
+This step is pure Hilbert-space geometry (alternating projections and a Knabe-type count); it uses no property of
+SU(2) and no asymptotic freedom. All of the selective content of A's route sits in (M_{d,m}(c)) itself, and A
+says so (p. 87). A's own Proposition H.4 shows the step loses nothing at the massless point (2a).
+
+### 3.4 From BP along the tuning to the continuum gap (A Section 6, pp. 8-9, 15-17; A's Theorem B)
+
+Definitions used (A Definition 6.1, p. 15): BP(n, varpi): varpi Var_mu(f) <= n^(-4) sum_x mu((f - P_x f)^2) for every
+real gauge-invariant f, P_x = conditional expectation given the links outside the cube V_x of side n; K = |Lambda|^(-1)
+sum_x P_x; q_n = (2 + 1/n)^4; y ~> z iff the boundary links of V_z meet V_y (so |z - y|_inf <= n and at most q_n n^4
+cubes y feed one z); Y_1(S) = cubes meeting S, Y_{j+1}(S) = Y_j(S) plus the cubes feeding Y_j(S).
+
+| A's statement | Verdict | Note |
+|---|---|---|
+| Lemma 6.2 (finite speed: the chain with moves outside Y = Y_{m_0}(S) suppressed differs from K^t on f by at most (2 abs(S)/q_n) norm(f) sum_{m > m_0} (q_n tau)^m/m!, tau = t n^4/abs(Lambda)) | HOLDS | Coupling with common cube choices; a difference reaching S needs a chain x_{s_1} ~> ... ~> x_{s_m} started outside Y_{m_0}(S) and ending in Y_1(S), so m > m_0; union bound with t^m/m! time choices, n^4 abs(S) last cubes, q_n n^4 per earlier step, probability abs(Lambda)^(-m) each. |
+| Theorem 6.3 (decay from one cube) | HOLDS | varpi <= 4 from one plaquette trace (at most 4 n^4 cubes see it). Spectral part: on centred elements of A, 0 <= K <= 1 - eps with eps = varpi n^4/abs(Lambda), so norm(K^T) <= e^(-eps T). (The text writes norm(K^T h)^2 <= e^(-eps T) norm(h)^2, which is weaker than what it then uses; the bound it uses, first term <= e^(-eps T) norm(f) norm(g), is right by the spectral bound. Wording only.) Local part: I re-derived the distance bookkeeping: base points of S_f and S_g joined through V_x and a boundary link of a cube in Y_{m_0}(S_f) are at most n(m_0 + 1) - 1 < d apart in each coordinate, so K_Y^t f does not see V_x, x in Z_g. Choice T = floor(k abs(Lambda)/(e^2 q_n n^4)); the tail bound (ez/k)^k e^z <= e^(-k(1 - e^(-2))); tau/q_n <= k/(256 e^2) since q_n > 16; varpi/(e^2 q_n) < 1 - e^(-2). All checked. |
+| Proposition 2.1 (covariance decay at rate m on a dense class gives a transfer gap m) | HOLDS | Spectral measure of T at the centred vector; a positive mass on (e^(-m + delta), 1] would beat C_F e^(-mt); the centred vectors are dense in Omega-perp. |
+| Corollary 6.4 (lattice gap m_n = varpi/(e^2 q_n n) >= 16 varpi/(625 e^2 n) for every torus limit along tori with BP) | HOLDS | Theorem 6.3 is uniform in L; q_n <= (5/2)^4 for n >= 2. |
+| Theorem B (BP(n_k, varpi) on infinitely many large tori at each beta_k, n_k a_k <= l, gives sigma(H) in {0} union [16 varpi/(625 e^2 l), infinity) with 0 simple, for every continuum limit in the sense of A's Definition 6.5) | HOLDS | The lattice gap in physical units is at least 16 varpi/(625 e^2 n_k a_k) >= Delta; <phi_k, T_k^t phi_k> <= e^(-Delta tau) norm(phi_k)^2 passes to the limit (Definition 6.5 at tau and at 0); density in Omega-perp and continuity in tau; the Laplace-transform argument excludes spectrum in [0, Delta - eta] for every eta > 0. The constants do not depend on the size of the observable's support, because the bound is used only through the transfer-matrix gap at each fixed k. |
+
+**Result of Section 3 (PROVED as a check of A's text; one reading by Claude Opus 5.5 max in this row, no failing
+step; A's authors keep the credit; a check by another provider is still owed under lane rule 7).** A's conditional
+theorem holds as stated:
+
+> If along a tuning (beta_k, a_k), a_k -> 0, with integers d_k >= 2, (2 d_k - 1) a_k <= l, the slab bound
+> (M_{d_k, m}(c)) holds for every k with one c < 1/2 and one m >= 4 with m - 1 >= 148/(1 - 2c)^4, then every
+> continuum limit (A's Definition 6.5, built from torus limits along tori with d_k | L) has
+> sigma(H) in {0} union [(1 - 2c)^4/(1250 e^2 l), infinity), and 0 is a simple eigenvalue.
+
+Every step is elementary Hilbert-space geometry (alternating projections, a Knabe-type count, a finite-speed coupling,
+a Laplace-transform argument). Nothing in it is specific to SU(2), and no step is computer-assisted. It is a clean
+candidate for a port, and A's archive already formalises some of its arithmetic in Lean (for example
+\`YangMills/GapFree.lean\`, \`YangMills/AveragedCondition.lean\`; I did not check the Lean files).
+
+**What it does NOT give.** It does not prove (M_{d_k, m}(c)) in four dimensions along the tuning; A says this is
+"a form of mass generation at the physical scale and it is not proved here" (p. 87). Theorem B's continuum limit is
+taken infinite volume first at each cutoff; a construction that takes the cutoff first on a torus of fixed physical
+side needs A's Section 7 hypotheses (W), (U) (not checked here).

@@ -122,3 +122,43 @@ dropped on W. Consequently the three combinatorial facts a cluster expansion rea
 composition) each need their own proof for d°, and the composition fact needs the links off W, as the route says.
 Where a link or junction falls inside an island, the route's re-routing argument (iii) is the only device; I check it
 in Step 4.
+
+## Step 3. What the plain site (T) statement is, and a reduction that avoids rerunning CMP 116 (written 17:20Z by date -u)
+
+**3.1 The plain site (T) statement is Balaban's, taken by statement (READ).** CA-II 5.2:prop-three-sites (L5336-5480):
+"The expansion is that of [CMP109 (3.4), (3.7), (3.25)] and [CMP116 (1.9)-(1.22)] on the multiscale cover of
+[CMP119 Section 3]". CA-II 5.2:lem-second-stage-activities (L6902-7040) names "the cluster-expansion lemma at site
+(T), with its clauses (B1)-(B4)" and says at L7000-7001 that at site (T) the assertion is "that lemma's clauses
+(B1)-(B4), taken by statement". The same lemma records three facts about how the second stage reads its potentials:
+- F1 (L6977-6987): "In [CMP116 (2.1)] the potentials V(Y) enter only as Mayer factors of the polymers Y. ... After
+  [CMP116 (2.20)] no potential occurs. ... The estimates [CMP116 (2.27)-(2.41)] depend on the potentials only through
+  eps_2 = 2 eps'/alpha_4, and monotonically so."
+- F2 (L6964, L6995-6997): "An output with domain X reads only the V(Y) with Y contained in X."
+- F3 (L6919-6925): hypotheses on the potentials: analytic on Balaban's spaces and gauge invariant; of the form
+  [CMP116 (1.42)] with [(1.43), (1.36)]; activity constant with 2 eps'/alpha_4 <= nu_0.
+CA-II 5.2:lem-complex-fluctuation (L3521-3730) transcribes CMP 116 (2.1)-(2.20): Mayer expansion of
+exp sum_Y V(Y,B), inclusion-exclusion of the cut, resummation into F(Z_0,B); conditioning; random-walk expansions,
+decoupling in s(Delta), Cauchy representations; the term (2.14) with factor exp[sum over Y in D of tau(Y) V(Y,B)];
+the radii 1/|tau(Y)| = E_0 eps_1 C_1 alpha_4^-1 M^q e^(C_2 kappa_1) e^(-(1-3 delta) kappa d_k(Y)) (L3712-3714). So the
+format (1.42)/(1.36) is a bound per domain, |V(Y)| <= const e^(-kappa d_k(Y)), in the plain length.
+
+**3.2 Idea (to be proved in Step 4): re-localisation.** For an island-blind input F(Y) choose an optimal relative
+tree tau_Y of Y and put A(Y) := the union of the cubes of Y that meet tau_Y (the "active domain"). Then (Step 4):
+A(Y) is a connected union of cubes inside Y, it contains every cube of Y off W, and d(A(Y)) <= |tau_Y| = d°(Y).
+Since no integration variable of the T-step lies in W (lem-island-geometry (a), (d1)), F(Y) depends on the integrated
+fields only through A(Y). Re-index: V'(A) := V(A) + sum of F(Y) over blind Y with A(Y) = A. This is an exact
+regrouping of the exponent, sum_A V'(A) = sum_A V(A) + sum_Y F(Y), so the integrand is unchanged. The re-indexed
+family is a family in the plain length: |V'(A)| <= |V(A)| + mult(A) N°[F] e^(-r d(A)), with mult(A) the number of
+blind Y with A(Y) = A. Run the plain site statement on it, taken by statement as the account does. Its outputs
+carry e^(-kappa_out d_(k+1)(X^a)) on plain output domains X^a. File each at X := X^a together with every island that
+meets or touches X^a. Then X is in D^I, X minus W = X^a minus W, and a tree of X^a that meets all cubes of X^a meets
+all cubes of X off W, so d°(X) <= d(X^a) and the plain bound gives the blind bound of clause (b).
+
+Why this would matter: the account's route (Step 2.4) reruns CMP 116 Section 2 with relative lengths at five points,
+which needs Balaban's text (not readable here) and is not session-sized. The re-localisation reads the plain site
+statement only by its statement, as the account itself does for every plain input.
+
+What must be checked (Step 4): (R1) the geometry of A(Y) and of the filing; (R2) mult(A) and the activity constant;
+(R3) that the plain statement may be applied to inputs that depend on non-integrated fields outside their index
+domain (island fields), i.e. which property of localisation the plain expansion reads; (R4) clause (a) and (c);
+(R5) the levels (output read at k+1 with W_(k+1)); (R6) the corollary on the marked sub-sum and the tolerance lemma.

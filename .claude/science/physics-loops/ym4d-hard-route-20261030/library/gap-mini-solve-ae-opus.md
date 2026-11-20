@@ -87,4 +87,102 @@ authors of their text; their construction uses Balaban's). Line numbers below ar
 - Corollary 9.1:cor-sourced-integrals (III:18136-18157): |Z~^B - Z~^A| <= eps*_n A at every source of P_IR and at the
   zero residual source, eps*_n <= C*_TC(N_w; g) e_w, with C*_TC independent of n.
 
-(continuing: the step constants of the run between the bare level and the stop, and chapter 8's H_T.)
+**2.2 The bare constant and exactness (READ; written 10:32Z by date -u).**
+- Definition 1.1:def-wilson-action (I:447-490): the bare density is rho_0(U) = exp[-g_0^(-2) A(U)], with no constant;
+  dU is the product of normalised Haar measures.
+- Setting of the correlation theorem, 5.1:eq-torus-floor-b (II:730-741): rho_0^w := exp[-A(x_0 - w, U) - E], where E is
+  "a constant, independent of U and of z, entering the exponent of the bare density additively"; Z(z) := int rho_0^w dU.
+- Lemma 4.34:lem-sourced-exactness (I:157268-157290): at every level k where the induction holds,
+  int rho_k^w dV_k = int rho_0^w dU, with "E the additive constant of the bare density". The correlation theorem
+  5.1:thm-correlation-theorem (iii) (II:2949-2953) states the same identity.
+- Lemma 4.36:lem-label-energy (a) (I:159123-159150): the energy constant is E := sum_(j=0)^(K-1) E^(j)(T, T), and a label
+  carries E_k[S] := E - sum_(j<k) E^(j)(Omega_(j+1), Lambda_(j+1)) at step k; for the never-large label the remainder at
+  an intermediate stop k is sum_(j=k)^(K-1) E^(j)(T, T) (I:159423-159426). Here E^(j)(Omega, Lambda) = N^(j)(Omega, Lambda)
+  + E^(j+1)(Lambda, 1) + R^(j+1)(Lambda, 1) (I:159110-159113) are Balaban's one-step numbers (CMP 119 (3.15), (3.33)).
+- Chapter 8, 8.22:not-partition-sources-cells (II:140876-140926): Z_m(v) = int exp[-x_0 A(U) + O(v)] dU with no
+  normalising constant, and "the normalised partition function of the correlation theorem" is
+  Z~_m(v) = e^(-E_m - Ecal_m(v)) Z_m(v), E_m = sum_(j<K) E^(j)_vac(T_m, T_m), "Balaban's normalisation constant of the
+  bare density rho_0 = exp[-x_0 A(U) - E_m] on T_m"; with |Z~_m(v)| <= e^(E_+^sharp (2L^m)^4) and
+  Z~_m(0) >= e^(-C_low (2L^m)^4).
+- The last paragraph of the correlation theorem (II:2971-2978): the frozen whole-lattice objects (b_j, zeta_j, the
+  families P, E, P^flat, Q, R, the reference sequence x_j and K) "do not depend on the torus"; for levels K' < k <= K+1
+  they are built on auxiliary tori whose side is a power of L.
+- Chapter 9 (III:21091-21094): "At the depths r < w only numbers attached to the whole lattice, frozen at the stop, are
+  carried, in the form in which the correlation theorem states them."
+- Chapter 9 (III:18286-18290): "each Z~^c is the correlation theorem's representation at c^c"; and (III:18249-18250,
+  18301-18302) "The normalisation admits exactly one free positive constant for each run and each centre."
+
+**2.3 Consequence of the reading (PROVED from the cited identities; one line).** For any run c on a torus T with bare
+inverse coupling x_0^c and additive bare constant E^c, Lemma 4.34 at zero source gives
+S_9^c := Z^c(c^c; 0) = int rho_k^c dV_k = e^(-E^c) Z^bare_T(x_0^c), where Z^bare_T(x) = int exp[-x A(U)] dU. Chapter 8 has
+S_8(d) = e^(-E_m(d)) Z^bare_T(x_0(d)). So whenever the run c represents the datum d (same torus, same bare coupling),
+log(S_8(d)/S_9^c) = E^c - E_m(d): **D is exactly the two-torus defect of the difference of the two additive bare
+constants.** The free positive constant of III:18249 is e^(-E^c). Check 1242's counterexample (L58) is this freedom.
+
+**2.4 How chapter 9 itself uses the masses (READ III:53470-53560, Lemma 9.8 on derivative closeness).** Chapter 9's
+consumer compares h^c(z) = Z~^c(z)/Z~^c(0) for c = A, B (Step 2 of that proof: h^B - h^A = P/P_0 - Q/Q_0), using the
+closeness (c) at z and at the zero source and the bounds (b) 1/P_0 <= B, |Q| <= A. A constant common to the two runs
+cancels in h^c, and (c) at the zero source fixes only the relative normalisation of A and B. So within the account the
+overall constant is a convention, which is why III:18301-18302 can say one free positive constant remains. This is
+where check 1242's D comes from.
+
+## Step 3. Removing D from the one-cutoff carry (written 10:35Z by date -u)
+
+Notation as in check 1242 (L22-24, L52-64): physical tori T_m and T_(m+1), r = L^4, Delta f := r f(T_m) - f(T_(m+1)),
+Phi(d) := Delta log Z^bare(d) for a first-passage datum d, Z^bare_T(x) := int exp[-x A(U)] dU (normalised Haar, no
+constant). A **representative** of d on T is a chapter 9 run of length K(d) at the bare coupling of d, normalised by an
+additive bare constant E9(d; T); its zero-source mass is S_9(d; T). It is **consistent** if the same run and the same
+E9(d; T) are used on both chain edges at d (as the B-run of (d, pi d) and as the A-run of the edge into d), as check
+1242 L60 requires.
+
+**Lemma D0 (PROVED; from Lemma 4.34 at zero source).** For every representative, log S_9(d; T) = log Z^bare_T(d) - E9(d; T).
+Hence Phi(d) = Delta log S_9(d) + Delta E9(d) exactly, and, with chapter 8's S_8 = e^(-E_m) Z^bare,
+D(d) = Delta log(S_8(d)/S_9(d)) = Delta(E9(d) - E_m(d)).
+
+Proof. Lemma 4.34 (I:157268-157290; also clause (iii) of 5.1:thm-correlation-theorem, II:2949-2953) at w = 0 gives
+int rho_k dV_k = int rho_0 dU = e^(-E9) int exp[-x_0 A(U)] dU at the stop level k, and III:11849-11860 with
+E^c(0) = 0 identifies the left side with S_9. Take logarithms and apply Delta. QED
+
+**Corollary D1 (PROVED GIVEN the chapter 9 comparison for consistent representatives).** Let d -> pi d -> ... -> d_0 be
+a chain satisfying (EDGE) (check 1242 L68), with consistent representatives on both tori, and suppose the zero-source
+comparison of 9.1:cor-sourced-integrals holds on each edge with these representatives, so that Lemma 3.5 of row 1233
+(HOLDS in check 1242 L28-32) gives |Delta log S_9^B - Delta log S_9^A| <= b_n on the edge of shorter length n. Then
+
+    Phi(d) <= Phi(d_0) + sum_(n=K_0)^(K-1) b_n + Delta E9(d) - Delta E9(d_0)
+           <= Phi(d_0) + sum_(n>=K_0) b_n + 2 sup_(d') |Delta E9(d')|.
+
+Proof. By Lemma D0 on each edge, Phi(d) - Phi(pi d) = [Delta log S_9(d) - Delta log S_9(pi d)] + [Delta E9(d) - Delta E9(pi d)].
+Consistency makes S_9(pi d) the same number on the edge (d, pi d) and on the edge (pi d, pi^2 d), and likewise for E9, so
+the second brackets telescope. The first bracket is at most b on each edge. Sum over the chain. QED
+
+So check 1242's pair (S_8, D) is not needed: the one-cutoff telescope needs only **(V9)**, a uniform bound
+sup_d |Delta E9(d)| <= eta_9 on the two-torus defect of the representatives' own bare constants, with
+eta_9 <= (phi_* - Phi(d_0) - sum b_n)/2 at the base. Check 1242's form is the case E9 = E_m + c_T.
+
+**Proposition D2 (PROVED GIVEN Lemma 3.6 of row 1233, which HOLDS in check 1242 L34-46 for its stipulated families).**
+(a) If E9(d; T) - E_m(d; T) = c_T depends on the torus only, then D(d) = r c_(T_m) - c_(T_(m+1)) is the same number for
+every datum, so D(d) - D(d_0) = 0 on every chain: check 1242's sigma is 0.
+(b) If E9 = E_m, the energy constant of Lemma 4.36(a) of the run (I:159130-159135) that 8.22 calls Balaban's
+normalisation constant of the bare density (II:140916-140922), then D = 0, (V9) is the bound on Delta H, and
+eta_9 <= eta_vac(m) + eta_det(m), which tends to 0 faster than every power of L^(-m) (row 1233 Lemma 3.6 sharpened;
+check 1242 L34-46).
+Proof. (a) Lemma D0. (b) Lemma D0 and Lemma 3.6. QED
+
+**Reading (R): the 9.1 representatives carry the energy constant of their own run (ARGUED; not proved).**
+For: II:140916-140922 calls e^(-E_m - Ecal_m) Z_m "the normalised partition function of the correlation theorem";
+III:18286-18290 says each chapter 9 Z~^c "is the correlation theorem's representation at c^c"; III:21091-21094 says the
+levels below the stop carry "numbers attached to the whole lattice, frozen at the stop, in the form in which the
+correlation theorem states them", which is how the never-large label's remainder sum_(j>=k) E^(j)(T, T) of Lemma 4.36
+appears (I:159423-159426); III:11973-11975 and III:18295-18296 file the run's vacuum constants as stored slots of the run,
+compared slot by slot between A and B. Against: II:730-741 leaves E free in the correlation theorem's setting, and
+III:18249-18250, 18301-18302 state that one free positive constant remains per run and centre. No line I read states
+(R) for the 9.1 comparison in so many words. Under (R), D = 0 and the corrected Proposition 3.7 holds with sigma = 0.
+Without (R), Corollary D1 still holds for whatever normalisation 9.1 is proved for, and the open item is (V9) for that
+normalisation; by Proposition D2(a), any choice that differs from E_m by a torus-only constant is enough.
+
+**What this changes (ARGUED).** Check 1242's open item "identifying the chapter 9 representatives with the physical
+normalisation (or bounding their relative two-torus defect along the chain)" becomes the reading (R), a question about
+the account's text, plus Lemma 3.6, which HOLDS. The other open inputs of the one-cutoff carry are unchanged (check
+1242 L72-76): the 9.1 hypotheses (a)-(e), with (e) the outstanding Proposition 9.1:prop-blind-site-expansions;
+(EDGE) on every predecessor edge; 8.22's standing hypotheses and torus independence; (DET)'s (S1)-(S3); the infrared
+seed at every base datum. The seed stays OPEN.

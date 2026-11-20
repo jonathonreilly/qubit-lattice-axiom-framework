@@ -173,6 +173,16 @@ So A's route and the boundary obstruction meet exactly at (FO), the orientation 
 read at a central exterior. Row 1224's GUIDE (r up to 0.91 at beta 3-6, d 3-6; r_bar 0.69 at beta 2.8, d 8) measured
 the corresponding face quantity (staggered face magnetizations); the hinge version is the one the consumer sees.
 
+**Credit and prior work (found after 2.1-2.3 were written; grep of "frame order").** The mechanism is on file:
+row 950 (`gap-sc-max.md` 5.7-5.8, 7.3; Claude, GUIDE) found that under the layered pi-flux slice u_xy the boundary
+layer orders as a gauge FRAME (first-step electric susceptibility grows like the volume at beta 2.5 for L = 4 to 20 and
+at beta 2.6 for L = 4 to 12; saturates at 2.3 and 2.4), and drew the lesson "frames drop out ... when f is gauge
+invariant", so its chain's input was restated in gauge-invariant form (SG-step); rows 952 (`gap-sg2test-opus.md`) and
+976 (`gap-escape-opus.md`) continued it. Row 1224 used the same exterior for A's box. What Section 2 adds: the
+consumer-level analysis of A's Theorem D (Lemma 2.1: at exactly central fibres A's own test class is frame-blind;
+Proposition 2.2 and Corollary 2.2': at near-central fibres the frames come back through normalization, so the angle of
+A's Proposition 11.7 itself, not only its hypothesis, is at least the hinge frame correlation).
+
 **2.4 What is open, and why (ARGUED).** (FO) uniformly in d at large beta is a statement of continuous-symmetry
 breaking in a three-dimensional boundary layer: by 2.1 the only terms that see the frames are the pinning plaquettes
 (strength beta, frustrated by the pi-flux pattern), and the bulk sees the layer only through face holonomies. The
@@ -185,3 +195,93 @@ check 1239 explains why that does not touch the tuning.
 
 Status: Lemma 2.1 and Proposition 2.2 PROVED (elementary; checked by no one). Corollary 2.3 PROVED given A's
 definitions as read in rows 1224 and 1239. (FO) OPEN.
+
+- 14:01Z Section 3 written (frame test; Lemma 3.1, Propositions 3.2-3.3, classification table).
+
+## 3. The frame test on the lane's own one-scale forms (written 14:01Z by date -u)
+
+Name clash: in `parts/gap.md` "(W)" is the wall of row 998. Below, **(W_DS)** is the Dobrushin-Shlosman hypothesis
+"(W) at (R, delta)" of Theorem W, row 691 (`gap-ds-gauge.md` 3.1), which `gap-crux-restate.md` lists as C3: "the only
+form in this lane in which one scale is enough, and the reason is that it quantifies over all boundary values".
+
+**Frame test (a filter, in the style of Lemma PT and Proposition NP; the lesson is row 950's, 7.3).** A statement that
+is uniform over boundary values is *exposed* if the quantity it bounds can read the frame of a boundary layer: a
+function of links at non-interior vertices that is not invariant under the global conjugation which a central-valued
+boundary value leaves as a symmetry (or a normalized limit of such functions at near-central values, as in
+Proposition 2.2). It is *immune* if it reads only functions invariant under the gauge group of a region all of whose
+vertices are interior. An exposed statement fails as soon as the layer orders as a frame under the layered pi-flux
+boundary value (rows 950, 1224: GUIDE evidence of such order at beta 2.5-6). Periodic statements have no boundary value
+and are not touched.
+
+**Lemma 3.1 ((SL) of row 1258 is immune; PROVED, elementary).** In the slab Lambda_a of row 1258 (spatial box B
+periodic; boundary = the slices at times 0 and a), every vertex at a time t in {1, ..., a-1} is interior: its eight
+links are the spatial links at time t and the temporal links with lower end t - 1 and t, all in Lambda_a. Let G_L be
+the gauge group of the vertices of the middle slice L (acting on the links of L and on the temporal links at those
+vertices). Then for all slice values D, E the law of L under gamma_a(. | D, E) is G_L-invariant, and
+TV(law of L | D, E ; law of L | D', E) equals the total variation of the two image laws on the orbit space G^L / G_L.
+
+Proof. G_L lies in the interior gauge group of Lambda_a, which preserves gamma_a(. | D, E) (Haar measure is preserved,
+plaquette holonomies are conjugated, the weight is a class function); so the marginal on L is G_L-invariant. For
+G_L-invariant probability laws mu, mu' on the compact space G^L, TV(mu, mu') = sup over measurable 0 <= f <= 1 of
+|mu(f) - mu'(f)|, and replacing f by its Haar average over G_L changes neither mu(f) nor mu'(f) and keeps 0 <= f <= 1;
+so the supremum may be taken over G_L-invariant f, which are the functions on the orbit space. QED
+
+So (SL) reads only gauge-invariant data of L (Wilson loops of the slice). The frame J of an ordered bottom layer (a
+global conjugation, which fixes a central D) changes the slab law only by that conjugation, and every G_L-invariant
+function of L is invariant under it; at near-central D the J-dependence of L's invariant data enters only through
+gauge-invariant channels that pass the bulk. (SL) is therefore not killed by frame order. Whether (SL) holds at weak
+coupling is the crux itself and is untouched here.
+
+**Proposition 3.2 (a lower bound on the numbers k_z of (W_DS); PROVED, elementary).** For boundary values tau, tau' of
+V = V_R and every coupling P of gamma_V(. | tau) and gamma_V(. | tau'),
+  E_P rho_V >= sum over l in V of TV( law of eta_l under gamma_V(. | tau), law of eta_l under gamma_V(. | tau') ).
+Hence any admissible k_z satisfies k_z >= sup over pairs (tau, tau') that differ only at z of that sum.
+Proof. rho_V = sum over l of 1{eta_l != eta'_l}, and P(eta_l != eta'_l) >= TV of the two marginals of eta_l for every
+coupling. QED
+
+**Proposition 3.3 ((W_DS) fails under a frame response of one face; PROVED given row 691's definitions).** Let Z_2 be
+the R (R+1)^2 boundary links of V_R in direction 2 just below the face x_3 = 0 (base point at x_3 = -1, x_0, x_1 in
+{0, ..., R}, x_2 in {0, ..., R-1}; each lies in the (2,3)-plaquette whose top link is in V_R). Suppose that for at least
+half of the z in Z_2 there are boundary values tau and tau^z, equal except at z, with
+  sum over l in V_R of TV( law of eta_l | tau ; law of eta_l | tau^z ) >= kappa.                         (FO-W)(R, kappa)
+Then the direction-2 sum of the k_z is at least kappa R (R+1)^2 / 2, and (W_DS) at (R, delta) fails for every delta
+with 2 delta (R + 1) < kappa. Proof. Proposition 3.2 and N_R = R (R+1)^3. QED
+
+**What (FO-W) needs, and why it is expected at weak coupling (ARGUED; GUIDE support only).** Take tau central and
+frustrated on the face x_3 = 0 (the layered pi-flux pattern of rows 950 and 1224), central elsewhere, and tau^z equal
+to tau except a non-central value at z. Under tau the law of V_R is invariant under global conjugation (Lemma 2.1's
+argument), so every link marginal is conjugation-invariant. If the face layer orders as a frame (orientation J uniform
+under tau), one plaquette of energy of order beta at z acts on the collective variable J at no entropy cost and fixes
+it; then every face link's marginal under tau^z is concentrated near one frame, at total variation of order one from
+the invariant marginal, and kappa is of the order of the number of face links, about 3 (R+1)^3, far above 2 delta
+(R+1). So under frame order (W_DS) fails at EVERY R. With only a finite frame correlation length xi_f of the layer,
+kappa is of order xi_f^3 and (W_DS) needs R >~ xi_f^3 / (2 delta): far above the bulk correlation length. Row 950 saw the
+frame susceptibility of such a layer grow like the volume up to L = 20 at beta 2.5 (GUIDE), so at beta >= 2.5 either
+there is order or xi_f >= 20, R >~ 4000/delta. This adds to row 1258 4.2, which already moved the chain's one-coupling
+datum from (W_DS) to (SL) for another reason (a massless Hamming count, R >~ beta^(1/2) xi^2 / delta).
+
+Note the contrast inside Theorem W itself: its conclusion (A) bounds the total variation of the laws of a set S of
+links deep inside Lambda (S in Lambda°), whose vertices are interior, so by the argument of Lemma 3.1 (A) is frame-blind
+and immune; only the hypothesis (W_DS) is exposed. The hypothesis is much stronger than what is used downstream.
+
+**3.4 Classification of the one-scale forms on file (READ the forms; verdicts PROVED where a lemma is cited, ARGUED
+otherwise).**
+
+| Form | Uniform over boundary values? | Reads frames? | Verdict under the frame test |
+|---|---|---|---|
+| C1 (SEED), (N-phys), A's (A-B*) | no: periodic tori | no | immune |
+| C2 (FLUX-4) | no: periodic tori | no | immune |
+| C3 = (W_DS) of row 691 | yes: every cube, every boundary value | yes: Hamming count over every link, collar included | exposed: fails at every R under frame order (Proposition 3.3) |
+| C4 (DOM_B) | no: transfer operator of a box with free walls, no exterior | no | immune |
+| C5 (AC'-lat) | no: twisted periodic tori | no | immune |
+| (SL) of row 1258 | yes: every pair of slice values | no (Lemma 3.1) | immune |
+| Theorem W (A) (conclusion) | yes | no: S deep inside | immune |
+| A's slab hypothesis (M_(d,m)(c)) | yes: every box, every exterior | yes, at near-central fibres (Proposition 2.2), and the angle of A's Proposition 11.7 itself (Corollary 2.2') | exposed |
+| Row 1272's (33) | no: one pinned fibre of a periodic torus, a Poincare constant | not decided here | not a supremum over boundary values; the test does not bind it as stated |
+
+**Consequence for the lane (ARGUED; for the lead).** Among the lane's forms in which ONE scale suffices, C3 is
+exposed and should not be a target at weak coupling; (SL) of row 1258 is the immune uniform form and is already the
+chain's datum. Any future one-scale form that is uniform over boundary values should pass the frame test first: state
+it on gauge-invariant data of a region whose vertices are interior (as (SL) and Theorem W (A) do), never on raw links
+near the boundary. This is the same lesson row 950 drew for its (SC) and (SG-step) (`gap-sc-max.md` 7.3); here it is
+applied to C3 and to A's published hypothesis.

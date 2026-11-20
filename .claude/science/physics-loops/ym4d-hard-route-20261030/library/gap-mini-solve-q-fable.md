@@ -22,6 +22,10 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T05:08Z Sections 4-6 written (consequences, crux outcome, recommendation).
 - 2026-11-20T05:13Z Section 7 opened: kill test of A's (M) in four dimensions through ordered boundary layers (rows 950, 952).
 - 2026-11-20T05:15Z 7.1 written: row 950 evidence read and mapped to A's box (GUIDE + ARGUED).
+- 2026-11-20T05:17Z 7.2 written: direct GUIDE test in A's box geometry designed; criteria fixed before any run.
+- 2026-11-20T05:20Z 7.3 written: A's own statement of this open point (pp. 96-99, 105) recorded; batch 1 running under the lock (started 05:19Z).
+- 2026-11-20T05:20Z 7.4 opened: batch 2 criteria fixed (d-dependence at beta 4.0 and 6.0) after seeing only the d = 3 rows of batch 1.
+- 2026-11-20T05:21Z 7.4 amended before reading any d = 4 value: beta 2.6 d-scan made primary.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -344,3 +348,88 @@ with pinned edges (row 950 is periodic), and the readings are region averages ac
 The strengthening of the order with beta (m2 = 0.024 at 2.6, lambda/L^3 = 0.19 at 6.0) is what would carry the
 failure along the weak-coupling tuning (ARGUED: the frustration geometry does not depend on beta, and the layer's
 classical stiffness, about 0.3 beta per bond against the 3D Heisenberg critical 0.69 (row 950 5.1), grows with beta).
+
+### 7.2 Direct GUIDE test in A's geometry (design and criteria fixed before any run)
+
+Model. SU(2) Wilson, S = beta sum_p (1 - Re tr U_p / 2), standard beta (the lane's normalisation; A's beta_W is the
+same up to A's stated factor). Box Q = [1, 3d - 1] x [1, w]^3 (axis 0 is the split direction i; axes 1-3 transverse),
+w = 2d - 1 (the fattest-allowed minimum), plus one exterior shell. Free links: base point in Q (A's V(Q)). Exterior
+omega (all links +-1): on the slice x_3 = 0 below the lower face x_3 = 1, u_2(x) = (-1)^(x_1), all other exterior links
+1 ("pi-flux"); control omega = all exterior links 1 ("trivial"). Heat bath (Creutz/Kennedy-Pendleton for SU(2);
+credit Creutz, Kennedy and Pendleton), checkerboard by direction and parity, own code written in this row, run under
+the numeric lock.
+
+Readings. Face links: base on the face x_3 = 1, directions 1 and 2, both end points on the face (all such vertices are
+non-interior, so these links are in A^omega_Q). b_l = imaginary (vector) part of U_l u_l^(-1), u_l the pinning value
+from the slice below. Primary staggered pattern P1 (row 950 5.1 with x -> axis 1, y -> axis 2): sigma = (-1)^(x_1+x_2)
+on axis-1 links, -(-1)^(x_1+x_2) on axis-2 links. M(R) = sum over face links in R of sigma_l b_l in R^3, R- = base
+x_0 in [1, d] (inside Q-), R+ = base x_0 in [2d, 3d - 1] (inside Q+). By the exact global SU(2) symmetry,
+corr(M(R-)_z, M(R+)_z) = <M- . M+>/sqrt(<|M-|^2><|M+|^2>) =: r. Error by jackknife over 20 bins.
+Secondary (reported, not used for the verdict): pattern P2 (same sign on both axes) and the unstaggered sum.
+
+Criteria (fixed now). For each (beta, d):
+- r >= 1/2 + 3 SE: (M_{d,m}(c)) FAILS at this beta and d for every c < 1/2 (GUIDE: rho^omega >= r for this omega).
+- r <= 1/2 - 3 SE at every point: no refutation at these sizes; the boundary-order route to refuting (M) is not
+  supported (inconclusive for the tuning).
+- Trend check: if the mechanism is right, r at pi-flux increases with beta at fixed d, and the trivial-omega control
+  stays well below 1/2. A pi-flux r above 1/2 with a control also above 1/2 would mean the reading is not the
+  ordering mechanism (then report, no verdict on the mechanism).
+Points: beta in {2.6, 3.0, 4.0} x d in {3, 4} at pi-flux; controls at beta 3.0, d in {3, 4} with trivial omega;
+hot-start repeat at beta 3.0, d = 4. Sweeps: 500 thermalisation (cold start: interior links 1) + 2000 measured.
+What a pass cannot show: anything at the tuning's d_k (thousands of lattice units at beta 4) or at beta -> infinity;
+it shows failure of (M) at the tested beta and d only. The extrapolation stays ARGUED (7.1).
+
+### 7.3 A already names this question and leaves it open (read before the results)
+
+A pp. 96-99 (after Lemma 11.15, and Lemma 11.16 "pinned two-state chain"): "A boundary condition can, however, push
+the slab correlation above 1/2 at a fixed physical scale while the transfer matrix has a gap at that scale"; A's exact
+model is a spin chain, "not a gauge theory, so it decides only the abstract implication: no statement about the
+transfer matrix or about the vacuum alone can supply the slab hypothesis". A also proves (same pages) that
+sup_omega rho^omega is the essential supremum over omega under the torus measure (rho^omega is continuous in omega),
+so the slab hypothesis "is a statement about the torus measure alone ... and not about exceptional boundary data of
+measure zero".
+
+A p. 105 (Section 11.8, "Two dimensions"): "In four dimensions the seam carries a three-dimensional layer of links ...
+Boundary conditions with values in the centre, 't Hooft's twisted ones [57], leave a global conjugation symmetry of
+the box, and in the two-dimensional strip such a symmetry is broken at weak coupling (Proposition H.17); in four
+dimensions the hypothesis asks that the twisted sectors be disordered at the scale l/2, which is the form that
+confinement takes here. We know no boundary condition that refutes (M_{d,m}(c)) along the four-dimensional tuning, and
+no proof of it."
+
+So the mechanism class (centre-valued omega, global conjugation symmetry) is A's; A's expectation is that confinement
+disorders it at the scale l/2. The test of 7.2 asks whether one explicit centre-valued omega, the layered pi-flux
+slice of rows 950/952, orders the face layer instead. The lane's contribution is the specific omega and the evidence
+of rows 950/952 and of 7.4; the question is A's. Credit accordingly.
+
+Why confinement need not disorder this face (ARGUED, to be weighed against the run). The face links have both end
+points non-interior, so no gauge transformation of G_Q acts on them. The cost of a slow twist of the colour direction
+n along the face comes from the face's own plaquettes (all four links on the face), about 0.3 beta per bond in row
+950's classical estimate; the bulk cannot gauge it away. That stiffness grows with beta, while the layer's thermal
+noise stays of order one. So along the tuning the face is a three-dimensional system with an exact global SU(2)
+symmetry and a stiffness that diverges; a 3D system of that kind orders. The bulk is integrated, not quenched, so it
+renormalises the face couplings; it does not act as a random field. This argument is heuristic. It does not control
+the bulk-induced couplings, which are also of order beta.
+
+### 7.4 Batch 2 criteria (fixed after seeing only the d = 3 rows of batch 1, before any d = 4 row)
+
+Reason: a value above 1/2 at one d refutes (M) at that d only. Along the tuning d grows without bound, so what matters
+is whether r stays above 1/2 as d grows (long-range order of the face) or falls (finite correlation length).
+Points: pi-flux, P1, beta in {4.0, 6.0}, d in {5, 6} (w = 2d - 1), cold start, 500 + 2000 sweeps; plus beta 6.0,
+d in {3, 4}. Criteria: (a) persistence: at beta 4.0 and at 6.0, r(d) >= 1/2 + 3 SE for every d tested and no
+decrease of r from d = 3 to d = 6 beyond 3 combined SE: GUIDE evidence that the face order is long-range on the
+sizes tested. (b) decay: r falls below 1/2 + 3 SE at d = 6 at both betas: the order is short-range on these sizes;
+then (M) is refuted only at small d, and the route to refuting it along the tuning is not supported.
+
+**Amendment (fixed at the time in the status log, before reading any d = 4 value of batch 1).** At beta 4.0 the
+boxes d <= 6 are far smaller than the bulk correlation length (two-loop scaling puts a m_0++ near 0.01 there), so beta
+4.0 probes only small physical volume, where (M) is expected to fail anyway (A: l must be chosen large). The physical
+regime is reachable only near beta 2.6, where a m_0++ = 0.51(3) (Teper, hep-th/9812187, as recorded in
+\`gap-trajtest-opus.md\` L158), so a correlation length of about 2 lattice units: a box with d = 5..8 spans 2.5 to
+4 correlation lengths between Q- and Q+. Primary scan: beta 2.6, pi-flux, P1, d = 5, 6, 7, 8 (w = 2d - 1; 500 + 2000
+sweeps, 500 + 1500 for d = 7, 8), trivial-omega control at d = 6. Criteria:
+(a) order survives confinement: r >= 1/2 + 3 SE at d = 6, 7, 8 and no fall beyond 3 combined SE from d = 5 to d = 8:
+GUIDE evidence that (M_{d,m}(c)) fails at beta 2.6 on boxes of 3-4 correlation lengths, against A's expectation that
+confinement disorders the centre-twisted face at the physical scale;
+(b) confinement disorders: r falls with d to below 1/2 - 3 SE at d = 8: the face order is cut off near the physical
+scale, as A expects; the refutation then holds only for small physical boxes;
+(c) otherwise inconclusive. The beta 4.0 (d = 5, 6) and beta 6.0 (d = 3, 4) points stay as fixed in 7.4.

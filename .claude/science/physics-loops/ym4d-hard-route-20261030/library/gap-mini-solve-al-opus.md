@@ -89,5 +89,36 @@ not summable in k. (FC-T) therefore needs a statement that is not in the cited t
 localized output on the threshold. Where the account or Balaban's CMP 116 treats the cut inside the fluctuation integral
 decides whether such a bound is available (2.4 below).
 
-(Stopped here at 2026-11-20T13:06Z: next, read how the account treats the small-field cut inside the fluctuation integral, I:60052 ff.,
-I:62551-62571, I:88656, and the 4.15 decompositions of unity, to find whether the cut enters through correction terms.)
+**2.4 How the cut enters the fluctuation integral (READ, written 2026-11-20T13:09Z by date -u).**
+- *The regular step.* The account's proof of torus independence (Lemma 4.38:prf-proof-non-wrapping, "the ingredients of
+  the localized series", I:58640-58730) lists every object of a localized term Psi_X of Balaban's one-step expansion. One
+  item (I:58716-58717): "The factors chi^(k), the signs of [B-CMP116 (2.3)], and d mu_0. They are products over bonds; off
+  Z the Gaussian integrates to 1." The cutoff chi^(k) is that of [B-CMP119 (3.16)], at the threshold delta_k (I:148959,
+  I:149138-149142); the second cutoff chi'_k "restricts the approximate fluctuation fields" (I:149163; [B-CMP119 (3.3)]).
+- *The same expansion written out by the account.* In a large-field stage (Section 4.24) the account carries out "the
+  first step of the cluster expansion" of CMP 116 itself (Lemma 4.24:prf-counted-once, I:108483-108507): the Mayer
+  expansion [B-CMP116 (2.1)], e^V - 1 = int_0^1 dt V e^(tV) (also I:20620-20626); then "the decomposition [B-CMP116 (2.3)]"
+      chi^s = chi_(Y_0) sum_(P subset s) (-1)^|P| chi^c_P,                                              (2.2)
+  with Y_0 the bonds of the supports of the Mayer elements and chi^c_P the product over b in P of the characteristic
+  functions complementary to the condition |phi(b)| < T_j (I:108531-108533); then conditioning, whitening and decoupling
+  ([B-CMP116 (2.5)-(2.8)]), "algebra and Fubini's theorem". One term T(D, P, Z) has integrand
+  G_T = (-1)^|P| chi_(Y_0) chi^c_P prod_(e in D) (e^(v_e) - 1) (I:108534-108536) and obeys (Lemma 4.24:prf-single-term,
+  I:108508-108519)
+      |T(D,P,Z)| <= prod_(e in D) 2 nu(e) * exp(-(1/2) gamma_2 T_j^2 |P|) * exp(-(kappa_1 - 1)|Z \ Z_0|) * exp(c_F |Z|).   (2.3)
+  The factor exp(-(1/2) gamma_2 T_j^2 |P|) comes from chi^c_P <= prod_(b in P) exp(-(1/2) gamma_2 T_j^2 + (1/2) gamma_2 |phi(b)|^2),
+  the Gaussian factor being absorbed into the Gaussian measure (I:108574-108584); chi_(Y_0) and the signs enter only through
+  modulus at most 1 (I:108584-108585); the Mayer factors are bounded by 2 nu(e) on the real support of the cut
+  (I:108547-108570).
+- *The logarithm.* The account's abstract polymer system (Definition 4.6:def-abstract-polymers, I:21900-21946: finite
+  polymer set, reflexive symmetric incompatibility, Ursell coefficients rho^T, partition function Xi, logarithm series Phi)
+  and Lemma 4.6:lem-exponential-formula (exp Phi = Xi under absolute convergence), with the convergence theorem "proved
+  below in this section" (I:21942-21944); the formula is [B-CMP116 (2.11)-(2.13)].
+
+**2.5 What 2.4 gives (READ, my reading of the account's text).** In the expansion that the account reads in Balaban's CMP
+116, the small-field threshold enters a term only through two kinds of factor: the kept cut chi_(Y_0) on the bonds where
+Mayer elements sit, and the complementary indicators chi^c_P with sign (-1)^|P|. Everything else in a term (the Mayer
+factors at fixed weights and list, the Gaussian measure, its conditioning, whitening and decoupling, the propagators) is
+the same at any threshold. This is the structure row 1267 4.5 asked for ("cut integral = cut-free part + cut corrections").
+Caveat: for the regular step this is the account's listing of ingredients (I:58716), not a printed term-by-term proof;
+the written-out form (2.2)-(2.3) is the account's large-field stage of Section 4.24. Balaban's CMP 116 is not read here
+(Project Euclid bot check, row 1264).

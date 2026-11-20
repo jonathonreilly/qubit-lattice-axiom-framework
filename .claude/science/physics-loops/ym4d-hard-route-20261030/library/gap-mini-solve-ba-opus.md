@@ -95,3 +95,83 @@ as g -> 0 than the fluctuation-domain radius C_1 p_1(g): their ratio is (A_1/(A_
 Which inequality (E0) needs depends on what "the box" of SA's condition (C2) is: if it is the ci-form box R = l^q, (E0)
 holds; if the high threshold must lie inside the fluctuation domain of radius C_1 p_1(g), the reading of 4.7 fails as
 written. Next: read `library/ci-form.md` and SA L14276-14340 to decide.
+
+**3.3 What the box is: Balaban's own radii (READ; written 2026-11-20T17:43Z by date -u).** Balaban's papers are in the owner's paper
+folder (OCR text plus PDF; formula (3.43) read from the page image, CMP 119 journal p. 276).
+- CMP 119 (2.28) (OCR L832-838): the effective-action terms E^(j)(X, (U, J), z) are analytic on U_j(X, alpha_0j,
+  alpha_1j) with **alpha_0j = g_j C_0 (log g_j^(-2))^(q_0), alpha_1j = g_j C_1 (log g_j^(-2))^(q_1)**, "where q_0, q_1 are
+  integers greater than 1, C_0, C_1 are sufficiently large positive numbers". In units of the rescaled fluctuation
+  (field / g) these radii are C_0 l^(q_0), C_1 l^(q_1), l = log g^(-2). The account takes q = q_0 = q_1 >= 3p_0 + 3r + 1.
+- CMP 119 (3.3)-(3.4) (OCR L1150-1167): the small-field cut on approximate fluctuation fields is
+  **delta_k = g_k (A_1/A_0) p_0(g_k)** = g_k A_1 l^(p_0); rescaled radius A_1 l^(p_0). This is CA-I 4.3's "cutoff radius
+  (A_1/A_0) p_0(g) ... the quantity delta_k/g_k of CMP 119".
+- CMP 119 (3.43) (page image): the space Ũ^c_(k+1)(Y, (1+beta) alpha~_0, (1+beta) alpha~_1) x {A : supp A in
+  Y ∩ Λ^(k)*_(k+1), |A| < C_1 p_1(g_k)} is the analyticity space of the **remaining terms only**, those whose
+  localization domain is not contained in the small-field region Λ_(k+1) ("These remaining terms will contribute to the
+  boundary terms B^(k+1)"). The terms with Y inside Λ_(k+1) "satisfy exactly all the conditions" of Lemmas 5, 6 of
+  CMP 116 with the analyticity space (I.6.34) of CMP 116 (not readable on this machine).
+- CMP 122a (1.27) (OCR L404-410): near large-field regions the approximate fluctuation field is cut at
+  **delta'_j = g_j A_1 p_1(g_j), p_1(g) = (log g^(-2))^(p_1), "and p_1 < p_0"**. CMP 122b (OCR L1431-1438) uses the same
+  p_1 for its largest large-field factor and assumes 2p_1 - (d+5) r_0 > p_0.
+So Balaban has two cuts and two domains: the p_0 cut with the q-radii in the small-field interior, and the tighter p_1
+cut with the p_1 domain (3.43) for terms touching large-field regions. Each cut lies inside its own domain
+(A_1 l^(p_0) < C l^q since q > p_0; A_1 l^(p_1) < C_1 l^(p_1) since C_1 > A_1 is among "C_1 sufficiently large").
+
+**3.4 Verdict on (E0) of row 1299 4.7 (PROVED given the box hypothesis named below; correction of a reading).**
+(a) The parenthesis "(equivalently p_1 > p_0)" of row 1299 L352 is FALSE in the account: p_1 < p_0 (CA-I L1356, from
+CMP 122a). Row 1299 4.7 took "the fluctuation domain on which the step's potentials live has radius C_1 p_1(g)" from
+CA-I 4.3 L4167-4178, i.e. the domain (3.43); with p_1 < p_0 that domain is NOT a box that contains the p_0 cut at small
+coupling: (A_1 C_win l^(p_0)) / (C_1 l^(p_1)) = (A_1 C_win / C_1) l^(4r+1) -> infinity as g -> 0, and C_1, A_1 are
+chosen before gamma (CA-I (H3) L1143-1149).
+(b) (E0) itself HOLDS on the right box. Claim: if every potential type of the regular step is holomorphic on the
+rescaled polydisc of radius R = c_R l^q with q > p_0 and c_R > 0 fixed before gamma (the ci-form box (1),
+`library/ci-form.md` L12, which takes c_R = 1 and q > p_0 + 2r; the account's q >= 3p_0 + 3r + 1 meets it), then for
+every pair of thresholds b_lo <= b_hi <= 2 C_win A_1 l^(p_0) the real cut ball of radius b_hi lies in the box once
+l^(q - p_0) > 2 C_win A_1 / c_R, i.e. for g below a threshold fixed after A_1, C_win, c_R, q, p_0. Proof: the real ball
+{|B(b)| < b_hi} lies in the scalar-coordinate polydisc of radius b_hi (`ci-form.md` L14: "A real bond ball of radius b
+lies in its corresponding coordinate box"), and b_hi <= 2 C_win A_1 l^(p_0) < c_R l^q under the stated threshold. The
+factor 2 covers row 1268 7.3's relative difference |c - 1| = O(theta^(-1/2) polylog) <= 1 between the two frames for
+small g. The low threshold b_lo >= (1/2) C_win A_1 l^(p_0) -> infinity gives (UM23) above a floor, as row 1299 4.7
+says. This is a threshold on g chosen last, not a cap (CA-I L1247-1250 forbids caps on p_0, q, not thresholds on g).
+(c) What (b) needs that is not proved here: the box hypothesis itself, that every potential type that enters the
+regular step (free, intrinsic, older formed, inserted) is holomorphic on c_R l^q. For the older formed terms it is
+CMP 119 (2.28) as the inductive property; for the intrinsic terms (change of variables, gauge fixing, Jacobian) it
+follows from analyticity on an unscaled radius alpha (CMP 109 L955-966: analytic for |H_k| < alpha_1, absolute),
+i.e. rescaled alpha/g, which exceeds c_R l^q for small g; for inserted vertices it is row 1299 Lemma V-SA's (UM1)
+input. This is premise (P1)/(P2) of row 1299 4.8 (the ci-form's H-D), not new.
+(d) A remark on the account (ARGUED; CMP 116's space (I.6.34) not read): CA-I 4.3's variant (L4167-4178) states the
+regular step with "the fluctuation domain of CMP 119 (3.43) ... strictly less than C_1 p_1(g)" together with "the
+cutoff radius (A_1/A_0) p_0(g)". Read on one fluctuation variable this pairing is inconsistent at small coupling in the
+account's own order (p_1 < p_0), by (a). In CMP 119 the p_1 domain belongs to the terms touching large-field regions
+and the p_0 cut to the interior; the interior terms use (I.6.34). A consumer that reads the variant should take the
+box from CMP 119 (2.28) (radii ~ l^q) or from (I.6.34), not from (3.43). Evidence for the owner of the account port
+(T0 tree), no edit made.
+
+## 4. (P4): SA's constant conditions and an order of choice (written 2026-11-20T17:45Z by date -u)
+
+**4.1 Inventory (READ, SA L14276-14720).** Notation as in SA's chapter "The unmarked majorant for the actual regular
+polymer gas" (L14276). Fine cubes of side M, coarse cubes of side LM.
+- Geometric constants, fixed by d and the cube adjacency, independent of L >= 2, M, the torus and the cutoff:
+  C_h (UM7)-(UM8) ("independent of L >= 2", L14432); kappa_f and S_xi for xi > kappa_f (UM9); c_f (UM10); c_m (UM5)
+  and c_b (UM11) are pure numbers once the factor (LM)^4 is taken out; C_p (UM13) ("includes the finite tags and their
+  rooted sums"); c_l (UM17); C_v, C_D, kappa_D, c_adj (L14668-14675, "bounded-degree cube covering walks").
+- Gaussian comparison inputs (UM4)-(UM6): coarse disc radius R_s > 2; matrix perturbation at most eps on |s| < R_s; gap
+  constant K; constants eps_0(K), rho_0(K), A_K of the proved comparison (UM6), valid when eps <= eps_0(K) and
+  rho + gamma/2 <= rho_0(K).
+- Potential inputs (UM1): amplitude a = sum over types of the type norms, decay rate lambda_V (fine-cube tree length).
+- SA's free choices, in SA's own order: W_0 > 0 and lambda_0 > kappa_f (L14484-14488); W_0, gamma with
+  **(UM14) C_p W_0 M^(-4) + gamma/2 <= rho_0(K)**; then
+  C_0 = C_p W_0 L^4 + A_K c_m (LM)^4 (eps + C_p W_0 M^(-4) + gamma/2) (UM15), p = exp(-gamma b^2/2);
+  Lambda > 0; K_* = 2 + c_l Lambda, Theta = C_h (C_0 + K_*) (UM18); sigma_0 > kappa_f and
+  **(UM19) lambda_V - lambda_0 >= Theta/L + sigma_0, log(R_s - 1) >= Theta**;
+  u_Y, q = p e^Theta, p_* = n_b p, tau = e^Theta [2 c_f L^4 S_(sigma_0) a / W_0 + p_*] (UM22);
+  **(UM23) a <= W_0/2, tau <= 1**; mu > 0, g_* = Lambda - mu, B_* = C_D e^(2 C_v) e^(-5 g_*) sum_m e^(-(g_* - kappa_D - C_v) m)
+  (UM25); **(UM26) g_* > kappa_D + C_v, c_adj B_* <= 1**, and row 1299's (UM26'): e c_adj B_* <= 1.
+
+**4.2 Where a circularity could hide (ARGUED, to be decided in 4.3).** Theta contains C_0, and C_0 contains the two
+volume factors C_p W_0 L^4 and A_K c_m (LM)^4 (eps + gamma/2 + C_p W_0 M^(-4)). (UM19) then asks lambda_V >= lambda_0 +
+sigma_0 + Theta/L and R_s >= 1 + e^Theta. In the account's order (CA-I (H3), L1143-1149) Balaban's decay exponent kappa
+(the source of lambda_V) is chosen FIRST, before M_1, M_2 = L^2 M_1 and M = L^(m'), and the coarse disc radius R_s and
+the perturbation eps belong to the local Gaussian comparison of the actual step. So (P4) is consistent only if Theta
+can be made bounded independently of M (and of L), which needs W_0 L^4, gamma (LM)^4 and eps (LM)^4 bounded by
+constants chosen before kappa. W_0 and gamma are SA's free choices; eps is a property of the step's actual covariance.

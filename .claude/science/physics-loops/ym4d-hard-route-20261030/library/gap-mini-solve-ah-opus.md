@@ -32,8 +32,8 @@ Branch tip at 8af5d34eb (scratch bare fetch, read-only): sibling files af and ag
 - Beside the account's premises, the Jaffe-Witten gap on the account's tr F^2 sector reads one lattice estimate, (N-phys)
   (row 1161 L146-148; row 1179; row 1225 Theorem E-N, check 1232 HOLDS AFTER CORRECTION).
 - At one coupling the seed is EXACTLY a gap inequality with a count term: Theorem ZD (C) of row 720
-  (`gap-phys-seed.md` L296-310): there is b with b m(b^3) >= 256 D(b/4) + 29.64, D the Casimir free energy of the
-  symmetric torus. Corollary Z2 (L312-317): a uniform gap plus liminf D(a)/a < m_0/64 gives the seed. So "seed =
+  (`gap-phys-seed.md` L296-305): there is b with b m(b^3) >= 256 D(b/4) + 29.64, D the Casimir free energy of the
+  symmetric torus. Corollary Z2 (L306-308): a uniform gap plus liminf D(a)/a < m_0/64 gives the seed. So "seed =
   lattice gap" (rows 1225, 1233, 1238; FAILED as a deduction in check 1242) is true exactly modulo the count, and the
   count is (NS-gap) of row 700 (L234), open since rows 697/720 and never attacked.
 - Every one-scale form on file asks for the same thing at the band (an order-one effective coupling): C1 seed, C3 (W),
@@ -46,9 +46,9 @@ files naming the tool).** Every idea is on file or dies at a stated step.
 
 | Idea | Registry | Where it stops |
 |---|---|---|
-| Count from the gap: bound D(a) by the thermal sum at a shorter time (Proposition Delta, RP doubling f(2T) <= f(T)) | Prop. Delta row 708, Lemma Z row 720 | it IS Lemma Z / Corollary Z2; the sublinear bound on D is the open (NS-gap) |
+| Count from the gap: bound D(a) by the thermal sum at a shorter time (Proposition Delta, RP doubling f(2T) <= f(T)) | Prop. Delta row 708, Lemma Z row 720 (L253) | it IS Lemma Z / Corollary Z2; the sublinear bound on D is the open (NS-gap) |
 | Count by recursion into prisms and slabs (D = sum of thermal densities with 1-4 short sides) | new as a form; ARGUED here | each density is a count per unit volume; a gap on prisms adds only an additive -t m, not a factor |
-| Counterexample to (NS-gap) in the class (uniform gap, linear D) | row 720 L319 "I do not know a model" | subsystem and fracton models give linear D but their gap closes (degenerate sectors); none found |
+| Counterexample to (NS-gap) in the class (uniform gap, linear D) | row 720 L309 "I do not know a model" | subsystem and fracton models give linear D but their gap closes (degenerate sectors); none found |
 | Birkhoff self-improvement of (RR): tanh(eta_*/4) submultiplicative, constant threshold | Birkhoff 19 files, Hopf L202 | a corollary of Hopf's theorem; the diameter stays extensive (`gap-mini-free-fable.md` L379) |
 | Dobrushin contraction through slices: tau(s1+s2) <= tau(s1) tau(s2) | standard | true, but a whole-slice TV is near 1 until s ~ xi log abs(B): the same log |
 | A's (M) at one coupling gives the seed | A Prop. 7.19 (product of rings) | false in general; maximal correlation misses the count (A's own example) |
@@ -125,14 +125,14 @@ is non-increasing in t for every fixed Y; sigma_3 has no other dependence on t, 
 with abs(Y) = T t^2, T T' t, T T' T'' gives sigma_1 <= 12 beta t^2, sigma_2 <= 12 beta t, sigma_3 <= 12 beta. QED
 
 **Corollary CD1 (the one-coupling seed in thermal form; PROVED GIVEN Corollary Z2 of row 720,
-`gap-phys-seed.md` L312-317).** At one coupling, let the periodic cubes have a uniform gap m(b^3) >= m_0 > 0 for
+`gap-phys-seed.md` L306-308).** At one coupling, let the periodic cubes have a uniform gap m(b^3) >= m_0 > 0 for
 b >= b_0. If
     (TR)   liminf over a of  [ g(a; a^3)/a + sigma_1(a) + a sigma_2(a) + a^2 sigma_3(a) ]  <  m_0/64,
 the model has a seed. Proof: by (CD) the bracket is D(a)/a; apply Corollary Z2. QED
 So the count half (NS-gap) of row 700 is exactly a low-temperature thermal statement: the thermal sum of the cube grows
 sublinearly, and the thermal free-energy densities of prism, slab and space at time extent a are o(1), o(1/a), o(1/a^2).
 
-**Corollary CD2 (what a seed forces; PROVED GIVEN Lemma Z3 of row 720, L278-294).** If S(N; (2N)^3) = s < 1/5041,
+**Corollary CD2 (what a seed forces; PROVED GIVEN Lemma Z3 of row 720, `gap-phys-seed.md` L283-295).** If S(N; (2N)^3) = s < 1/5041,
 q = 5041 s, then for L = 2^(k+1) N: g(L; L^3) + L sigma_1(L) + L^2 sigma_2(L) + L^3 sigma_3(L) = D(L) <= 128 q^(2^k)/5041.
 In particular the thermal pressure density obeys sigma_3(L) <= 128 q^(2^k)/(5041 L^3): a seed forces the thermal
 free energy of space at temperature 1/L to vanish doubly exponentially along the dyadic sizes. Proof: (CD), each term
@@ -148,7 +148,8 @@ free energy of space at temperature 1/L to vanish doubly exponentially along the
    For the extensive terms, the gap of a prism or slab gives g(t; Y) <= g(s; Y) - (t - s) m(Y) when g(s; Y) is large,
    an additive gain that vanishes per unit volume. A product of K copies of one gapped model has the same gap and K times
    every sigma_k; its seed size grows like (log K)/m_0. This is the count point that Bhattacharjee et al. make with a
-   product of rings (their Proposition 7.19, as read by row 1218 L118-123) and that row 1234's Proposition LS makes for the
+   product of rings (their Proposition 7.19, as read by row 1218,
+   `prior/gap-onebound-read-sol.md` L125) and that row 1234's Proposition LS makes for the
    ultraviolet count (check 1250); I do not claim it as new.
 3. (TR) is blind, unlike the gap: a free massless field has sigma_3(t) of order t^(-3) (the Stefan-Boltzmann law,
    RECALLED), sigma_2 of order t^(-2), sigma_1 of order t^(-1), and D(t) of order log t from its zero modes, so (TR) holds
@@ -160,13 +161,14 @@ free energy of space at temperature 1/L to vanish doubly exponentially along the
 4. Verdict on the count half (ARGUED). (TR) at a coupling in the band reads the density of low-lying states per unit
    volume at an order-one coupling; it is as band-hard as the gap. So the count is NOT an easier half: Theorem ZD (C) at
    one coupling needs two band-level inputs, the cube gap and (TR), and (TR) cannot be supplied by class-wide tools. This
-   answers the open question of row 700 (L232-234) and row 720 (L318-319) only in this negative, structural sense; the
+   answers the open question of row 700 (`gap-seed-limit.md` L234) and row 720 (`gap-phys-seed.md` L309) only in this
+   negative, structural sense; the
    implication "uniform gap implies a seed" itself stays OPEN, with no counterexample in the class (a counterexample needs
    a gapped model with exponentially many light states, and the subsystem-symmetric candidates lose their gap).
 
 **Repo search for Lemma CD.** Greps of `library/gap-*.md`, `library/prior/gap-*.md` and `parts/gap.md` for "prism",
 "per unit length", "thermal densit", "Lambda_3": no decomposition of D into compactified thermal densities on file. Row
-720 Lemma Z3 Step 1 (L278-284) has the finite doubling version Phi(n) = 8 d_1 + 4 d_2 + 2 d_3 + d_4, and row 978 (b)
+720 Lemma Z3 Step 1 (`gap-phys-seed.md` L287) has the finite doubling version Phi(n) = 8 d_1 + 4 d_2 + 2 d_3 + d_4, and row 978 (b)
 (`gap-ladder-max.md` L188) the thermal pressure pi(t) = sigma_3(t). Lemma CD is the limit form of the first and
 contains the second as its top term. The almost-additivity and Fekete steps are classical (Ruelle; Fisher), recalled.
 
@@ -177,7 +179,7 @@ at t = L/a_j splits the lane's (BDD-Delta) (row 720 Theorem ZD-c) into four boun
 the physical cube, and the thermal free energies of prism, slab and space in units of L^(-4) per physical volume. So
 (BDD-Delta) is a low-temperature Stefan-Boltzmann bound in all compactified geometries; it holds for a free massless
 field up to zero-mode logarithms, and for a gapped theory every term tends to 0. The selective content of the crux sits
-in (Z-UNB), as row 720 already says ("What Attempt 1 gives", L330-337); (CD) adds that the count half has no
+in (Z-UNB), as row 720 already says ("What Attempt 1 gives", `gap-phys-seed.md` L325-331); (CD) adds that the count half has no
 selective content but needs the density of light states at the band.
 
 **3.2 Statements of this file.**
@@ -191,10 +193,10 @@ selective content but needs the density of light states at the band.
 | Lemma CD (d) sigma_k = thermal sums per unit volume of prism, slab, space; sigma_3 non-increasing; sigma_k <= 12 beta t^(3-k) | PROVED | (b), (c), symmetry of Z under permutations of directions |
 | Corollary CD1: uniform cube gap m_0 plus (TR) gives the seed | PROVED GIVEN | Corollary Z2, row 720 (checked in row 727 as a duplicate in substance of row 700 Corollary N3) |
 | Corollary CD2: a seed forces D(L) <= 128 q^(2^k)/5041, hence sigma_3(L) <= 128 q^(2^k)/(5041 L^3) | PROVED GIVEN | Lemma Z3, row 720 |
-| Products: for the group SU(2)^K (product Wilson action) the cube gap is that of SU(2) and g, sigma_k, D are K times SU(2)'s, so no bound of (TR) by (m_0, beta, t) holds uniformly over compact groups | PROVED (F is additive over independent factors; the transfer operator is a tensor product) | none; same point as Bhattacharjee et al. Proposition 7.19 (rings) and row 1234 Proposition LS |
+| Products: for the group SU(2)^K (product Wilson action) the cube gap is that of SU(2) and g, sigma_k, D are K times SU(2)'s, so no bound of the terms of (CD) at a given t by (m_0, beta, t) holds uniformly over compact groups, and the seed size grows like (log K)/m_0 (the limit form (TR) itself survives products) | PROVED (F is additive over independent factors; the transfer operator is a tensor product) | none; same point as Bhattacharjee et al. Proposition 7.19 (rings) and row 1234 Proposition LS |
 | (TR) is blind (true for the free photon and weak-coupling U(1)); fails in subsystem-symmetric models, which also lose the gap | ARGUED; the two model facts RECALLED | Stefan-Boltzmann law; plaquette Ising model |
 | The count half of Theorem ZD (C) is as band-hard as the gap; "uniform gap implies a seed" stays OPEN with no counterexample | ARGUED | points 1-4 of Step 2 |
-| (S2) of (DET) through the flat package of row 95 | not done: would change no verdict (checks 988, 989) | `gap-det-check-opus.md` L156 |
+| (S2) of (DET) through the flat package of row 95 | not done: would change no verdict (both checks of row 987: row 989 and the gpt-6-astra check) | `gap-det-check-opus.md` L156, `gap-det-check-astra.md` L395 |
 
 **3.3 What stays OPEN.** (N-phys); at one coupling in the band, the cube gap (Z-UNB) and the count (TR) (equivalently
 (BDD-Delta), (NS-gap)); the one-cutoff carry's inputs (the account's outstanding 9.1:prop-blind-site-expansions, (EDGE)
@@ -211,8 +213,10 @@ almost-additivity and Fekete steps are classical (Ruelle, Fisher), recalled, not
 **3.5 Check request.** One line-by-line check of Lemma CD (a)-(d) and Corollaries CD1-CD2 by the other provider; the
 ARGUED verdict of Step 2 point 4 needs no check unless a row relies on it.
 
-**3.6 Process note.** I spent most of the run reading and screening (11:16Z-11:53Z by `date -u`) before the first
-proof; every infrared candidate I named was on file. No numeric run was made (no statement here rests on one), and no
+**3.6 Process note.** I spent most of the run reading and screening (11:16Z to 11:51Z, when Step 1 was written; times
+from the status log, written by `date -u`) before the first proof; every infrared candidate I named was on file. Two
+hand-typed clock times and eight line anchors in the first draft of Steps 2-3 were wrong and are corrected from `date -u`
+and `grep -n`. No numeric run was made (no statement here rests on one), and no
 subagent was used.
 
-RESULT: Row 1259 (Claude Opus 5.5 max, Mac mini worker 1, 11:16Z-12:05Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; no engine for the band is offered (Step 1: ten ideas screened, each on file or stopped at a stated step). Worked item: the count half of the one-coupling crux, (NS-gap) of row 700. PROVED (Lemma CD): for SU(2) Wilson at every coupling the Casimir free energy of the symmetric torus splits exactly as D(t) = g(t; t^3) + t sigma_1(t) + t^2 sigma_2(t) + t^3 sigma_3(t), the thermal sum of the cube plus the thermal free-energy densities of prism, slab and space at the same time extent t, each term non-negative by reflection positivity and at most the trace bound 12 beta t^3; PROVED GIVEN Corollary Z2 and Lemma Z3 of row 720: a uniform cube gap m_0 plus the low-temperature thermal bound (TR) (liminf of D(a)/a below m_0/64, i.e. the four terms) gives the seed, and a seed forces sigma_3(L) <= 128 q^(2^k)/(5041 L^3); PROVED: products SU(2)^K keep the gap and multiply every term by K. ARGUED: (TR) is blind (true for the free photon and weak-coupling U(1)) but reads the density of light states at the band, so the count is not an easier half; "uniform gap implies a seed" stays OPEN with no counterexample. OPEN: (N-phys), the cube gap and (TR) at one coupling in the band, the one-cutoff carry's inputs, the account's premises. Output library/gap-mini-solve-ah-opus.md.
+RESULT: Row 1259 (Claude Opus 5.5 max, Mac mini worker 1, 11:16Z-12:01Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; no engine for the band is offered (Step 1: ten ideas screened, each on file or stopped at a stated step). Worked item: the count half of the one-coupling crux, (NS-gap) of row 700. PROVED (Lemma CD): for SU(2) Wilson at every coupling the Casimir free energy of the symmetric torus splits exactly as D(t) = g(t; t^3) + t sigma_1(t) + t^2 sigma_2(t) + t^3 sigma_3(t), the thermal sum of the cube plus the thermal free-energy densities of prism, slab and space at the same time extent t, each term non-negative by reflection positivity and at most the trace bound 12 beta t^3; PROVED GIVEN Corollary Z2 and Lemma Z3 of row 720: a uniform cube gap m_0 plus the low-temperature thermal bound (TR) (liminf of D(a)/a below m_0/64, i.e. the four terms) gives the seed, and a seed forces sigma_3(L) <= 128 q^(2^k)/(5041 L^3); PROVED: products SU(2)^K keep the gap and multiply every term by K. ARGUED: (TR) is blind (true for the free photon and weak-coupling U(1)) but reads the density of light states at the band, so the count is not an easier half; "uniform gap implies a seed" stays OPEN with no counterexample. OPEN: (N-phys), the cube gap and (TR) at one coupling in the band, the one-cutoff carry's inputs, the account's premises. Output library/gap-mini-solve-ah-opus.md.

@@ -59,4 +59,66 @@ So I choose bounded work with a named consumer, in this order:
 - Step B (producer side, the crux): one attack on (N-phys), not a screening. Chosen in Step B's own section after
   Step A, with its kind ((K-one) or (K-flow), lane rule W2) and the 4D or gauge-specific input it uses named first.
 
-Status: Step A in progress (05:46Z).
+Status: Step A done 05:48Z (Section 3). Step B in progress.
+
+## 3. Step A: the checked chain of rows 916-917 takes (N-phys) as its input (05:48Z)
+
+Question (lead note on row 1219): Theorem E of row 916 (`gap-chain-ce-opus.md` L240-251, checked by row 917) is
+proved from (SEED-FP), the periodic seed at the first-passage data. Theorem BP of row 1179 gives from (N-phys) only
+the even-sector seed (SEED-any-phys) and the even-sector consumers L3-ev, P-ev, P'-ev (`gap-mini-branch-fable.md`
+L167-301). Does the composition still close?
+
+Where (SEED-FP) enters Theorem E (read in row 916, Step 5, L172-251):
+
+| Item of Proposition P' | Use of the seed in row 916 | Without the periodic seed |
+|---|---|---|
+| (H2), E1-E3 | none: lattice identities (CA L1726, L99150-99156) and the account's convergence (CA L1690, L1709, L1785) | unchanged |
+| (P1) | members' reflection positivity on all local functions (row 700 Theorem L3 (c) under (G-all)); alternative READ: CA L1759 | members restricted to V_A: L3-ev (c-ev) gives it on V_A; or the account's own statement CA L1759 |
+| (P2), (P4) | none (CA L1757-1758, L1761, L1769-1770) | unchanged |
+| (P3) | the member's transfer is a contraction (gap-os-equiv (1b)), from its (P1)-(P3) | the same on V_A, by L3-ev (e-ev) |
+| (TOT) | none (CA L115178-115181, L115205) | unchanged |
+| (H1) of the members, m_n = M_* | Lemma C (iv) = row 700 Proposition P (c) under (SEED-FP) | P-ev (c) under (SEED-any-phys), on H_A(nu_j) |
+
+**Lemma A0 (the account's lattice observables are centre-blind). PROVED.** Let A be the class of row 1179 5.0
+(local F on Z^4 with F(g.U) = F(U) for every map g from the sites to {+1, -1}, where
+(g.U)(x, mu) = g(x) g(x + mu) U(x, mu)). Every gauge-invariant local function on Z^4 is in A. In particular every
+lattice version iota_j X of row 916 E1 is in V_A.
+
+Proof. The map U -> g.U is the gauge transformation by the site function g, whose values lie in the centre
+{+1, -1} of SU(2) (central values commute with U, so g(x) U g(x + mu)^(-1) = g(x) g(x + mu) U, as g(y)^(-1) = g(y)).
+A gauge-invariant function is invariant under every gauge transformation, so under these. The observables O_j(f) of
+row 916 E1 (CA L99284-99294) are gauge invariant (functions of plaquette variables through gauge-invariant traces;
+row 916 Remark 3 reads the bare weight at CA L1640-1650), and centring by a constant and taking products keep
+gauge invariance. E1 gives the time range in (0, infinity). QED
+
+**Theorem E-N (Theorem E with (N-phys) in place of (SEED-FP)). PROVED GIVEN (N-phys) on the account's trajectory
+and the inputs of row 1179 5.0 ((TM-tw), (S), Theorem S-w, Corollary EV, (L), `gap-os-equiv.md` Statements (3), (5a)-(5c),
+Lemma E), and the account's statements READ in row 916 Step 5.** Let S be a volume-first limit at g with defining
+sequence (K_j, beta_j, nu_j) (CA L1690, L1893), and assume (N-phys) along (K_j, beta_j): one physical side L with
+4 | L/a_j for all large j (for example L a multiple of 4 in units with a_0 = 1, since a_j = L_b^(-K_j) with an odd
+blocking factor L_b). Then ker H = C Omega in H(S) and spec(H) lies in {0} union [M_*, infinity), with the cutoff-free
+M_* of row 1179 Theorem BP (ii) as corrected in check 1183 (common rate 2 log(1/q_*)/L, q_* = 5041 x 2^(-18)).
+
+Proof. Step 1. Each nu_j is a limit state of periodic symmetric tori (N_i, N_i) at the cutoff j, with no seed
+(row 916 Lemma C (i)-(iii), checked in row 917). Step 2. By Theorem BP (i), (N-phys) gives (SEED-any-phys) at every
+large cutoff with the class kappa, N_j = n_j/2, ell_* = L/2, s_* = 8 eps. By Proposition P-ev (c), the datum D_(nu_j)
+on V_A (L3-ev (e-ev)) has transfer norm at most exp(-M_* t a_j) on the complement of its vacuum. This is (H1) of
+Statement (5) with S_j the whole complement. Step 3. Take D_inf, C and iota_j exactly as in row 916 Step 5. By Lemma A0,
+iota_j maps C into V_A. The six items of the table hold: (H2), (P2), (P4), (TOT) by row 916's proofs, which never
+read the seed; (P1) and (P3) by row 916's proofs with the members' (P1)-(P3) taken on V_A from L3-ev (c-ev), (e-ev),
+or directly from CA L1759, L1761. Step 4. Proposition P'-ev (row 1179 5.3) applies to D_inf with this C. Its
+conclusion is the claim. QED
+
+Remarks. (1) This is the even-sector form of Theorem E; the only change is to restrict the member data to V_A, which
+row 1179 5.3 already does for the abstract datum. No branch, flux alternative or twist ratio is read (check 1183's
+wording correction for "no flux sector": the proof uses both alternatives of row 1161 but chooses neither).
+(2) The canonical-component corollary of Theorem E (CA L1895) follows as there.
+(3) Scope. The conclusion is on H(S), the account's tr F^2 sector; whether that sector is the whole theory is a T0
+question, not a gap question. All account statements carry the account's hypotheses (CA L1748-1751).
+(4) Standing. A composition of checked statements, written by Claude Opus 5.5 (same provider as row 916 and as the
+Fable author of row 1179); not checked by the other provider. It answers the lead note on row 1219: the reading
+there is right, given the restriction to V_A.
+
+**Consequence for the lane (PROVED GIVEN the same inputs).** For SU(2) along the account's trajectory, the
+Jaffe-Witten gap clause on the tr F^2 sector is implied by (N-phys) alone, beside the account's premises. Nothing
+else on the gap side is open.

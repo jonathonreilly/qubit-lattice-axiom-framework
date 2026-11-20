@@ -38,3 +38,38 @@ Where the problem stands on file (cited, not re-derived):
 Rows running now on the same plain brief: 1234 (v-opus), 1243 (z-opus), 1244 (aa-opus), 1246 (solve28-astra62).
 This row will name its item in Step 1 and keep it distinct from theirs as they stood when read.
 
+## Step 1. How best to attack it (judgement, ARGUED; written 09:15Z by date -u)
+
+**1.1 What a proof has to supply (cited).** For SU(2) along the account's trajectory, the gap clause needs exactly
+one lattice input beside the T0 chain: (N-phys) (Step 0, items 1-3). On R^4 the vacuum sector carries no centre
+charge: electric flux sectors exist only on tori. So the Jaffe-Witten gap is the **neutral** half. Every flux-half
+tool (twist ratios, (X), the theta channel, Route T) is an instrument for the neutral half, not a proof of it. This
+matches row 1161 ("the gap target needs no flux clause") and row 1200 Step 5.4; it is not new.
+
+**1.2 Why no tool on file crosses the band (ARGUED; each clause cited).**
+- A seed has to sit where the running coupling is of order one (rows 998 6b, 1219, 1225). With no computed
+  certificate (GOAL.md), it must come from a structure that holds at every coupling.
+- Structures that hold at every coupling and are on file: reflection positivity, gauge invariance, the Z_2 one-form
+  symmetry, positive character coefficients, the loop (Schwinger-Dyson) equations with their bracket term (row 1011
+  Proposition W), and convexity in beta. Each tool built from them has a named failing step in the tables of rows
+  1189, 1194, 1199, 1229 and 1237, and methods 1-36 of `parts/gap.md`.
+- The two posted 2D proofs (OpenAI; Ding, Huang and Yang; read in row 1007) cross their band with a continuous
+  global non-abelian symmetry acting on all integration variables, or with an N-copy loop soup. Pure 4D SU(2) has
+  neither on gauge-invariant data (row 1011 Lemma CEN; row 1016 CEN+). Both 2D proofs control the **charged**
+  (spin) sector; their neutral sector comes from association of the O(4) ferromagnet (OpenAI Section 3.11, read in
+  row 1009). In 4D association of link coordinates is empty by Elitzur's theorem (row 1194 2.2).
+- So in 4D the crux has two layers. The flux half would need a band-crossing engine; the twist-index engine has a
+  one-loop margin but no proof through the band (row 1200, (X)). The neutral half has no engine with a margin at
+  all (row 1200 Step 5.4), and no conversion from charged to neutral decay without association is known in any
+  non-abelian model (the lane's (SING); smallest open member K_3 of row 1194).
+
+**1.3 Choice for this row.** Re-screening routes would repeat rows 1189-1238. I take the deepest layer, the neutral
+half without association, in a model where the charged half is supplied: the cycle models K_N of row 1194 (N O(4)
+sheets on a 2D base with product one; K_2 is the O(4) model at 2 beta; K_3 is the smallest open member). Row 1194
+tried three ways (association, conditional sheets, dual gas); each stopped at the neutral response of one twisted
+sheet. This row tries a fourth way, stated in Step 2, and records where it stops. Row 1194 (L226) notes that even a
+proof of (K_3-N) is a mechanism, not a step of the chain; I accept that and say so in the result.
+
+What would change on success: the lane would have its first neutral conversion with no association, which is the
+missing kind of step in 1.2. On failure: the first failing step of a fourth way, so the next row does not repeat it.
+

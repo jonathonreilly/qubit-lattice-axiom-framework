@@ -89,7 +89,7 @@ copies in the papers folder (the OCR layer is garbled in formulas). Credit: Tade
 L M_2 R_k. For each cube Q put U_(k,Q)(V_k) = U(B_k(Q^(~4)), M(Q_k^(s*) V_k)) (2.16), and
     chi_k(Omega_k) = prod over Q in Omega_k of chi( sup over p in Q^~ of |U_(k,Q)(V_k, dp) - 1| < eps_k eta^2 ).   (2.17)
 
-**2.2 The functions CMP 122a writes out (p. 178, (1.2)-(1.9)).** On a first-class component Z (conditions (i), (ii) of
+**2.2 The functions CMP 122a writes out (p. 178, (1.2)-(1.9)).** On a class component Z (conditions (i), (ii) of
 CMP 122a Section 1: inside a cube of side 100 M R_k, no new large field in the last N steps), Balaban writes
 T_k(Z) exp A_k = chi_k(Omega_k^(~4)) prod over j = k-1, ..., h of T^(j)(Z_(j+1)) chi_h(Omega minus Omega_(h+1)^~) T_h(Z_h) exp A_k,
 h = k - N, and lists the seven groups of characteristic functions of the one-step operations. The first two are
@@ -107,10 +107,10 @@ that the old functions (1.3) (at j = h) and (1.4) (at j = h) equal 1, so these o
 integrations "the only characteristic functions which remain ... are chi_k^((n)) chi_h(Z_h cap Omega_h)"; the definition
 of chi_k^((n)) changes for j = h + n > k_0 = k - N_0, where "we change the regularity conditions by a factor".
 
-So the preparation's function on a healed island is not literally (1.3)-(1.4): it is the final chi_k^((N)) restricted to
-the island, written in the new background fields, with thresholds changed by a factor near the top levels. The
-comparison (*) is therefore a statement about chi_k^((N)) versus (2.17) at level k. Step 3 reads the definition of
-chi_k^((n)) for n near N and its thresholds.
+So the preparation's function on a healed island is not literally (1.3)-(1.4): it includes the final chi_k^((N))
+restricted to the island, written in the new background fields, with thresholds changed by a factor near the top levels.
+(This first reading is superseded by 2.4 and Step 3: Balaban also keeps chi_k(Omega_k^(~4)) and, in CMP 122b, adds a
+decomposition that puts the (2.17) factor on the rest of the component.)
 
 **2.4 The preparation's final function and what it keeps (CMP 122a pp. 181-184, read on the page images).** After
 n = j - h integrations the function is chi_k^((n)) of (1.24): conditions |U_(k,Z)^((n))(dp) - 1| < (threshold) on the
@@ -128,13 +128,13 @@ of (1.29)" (p. 184); and (1.29) is stated "for j + 1 < k, and for j + 1 = k the 
 chi_k(Omega_k^(~4))" (p. 183).
 
 Consequence for (*) (ARGUED from these two passages; the island representation of CMP 122b (1.70)-(1.72) is read in
-Step 3). After the preparation, a first-class component Z carries at the top level BOTH the preparation's chi_k^((N))
+Step 3). After the preparation, a class component Z carries at the top level BOTH the preparation's chi_k^((N))
 (threshold 3 (1 - beta/2) eps_k eta^2 on its top shell, field U_(k,Z)^((N))) AND the step's own chi_k(Omega_k^(~4)) of
 (2.17), kept on purpose. So:
 - On the cubes of Omega_k^(~4) cap Z the prepared term carries the step's function itself, and the domination
   "prep = 1 implies step = 1" holds there trivially, as a product containing the step's factor.
-- On a cube of Z that lies in the four-layer collar Omega_k minus Omega_k^(~4), or outside Omega_k, the prepared term
-  carries only chi_k^((N)), whose top threshold is weaker than eps_k eta^2. There the literal statement "wherever the
+- On a cube of Z outside Omega_k^(~4) (Balaban's ~n means n layers out, 3.10), the preparation alone leaves only
+  chi_k^((N)), whose top threshold is weaker than eps_k eta^2. There the literal statement "wherever the
   preparation's function equals 1, so does the step's" cannot follow from the thresholds: a field with
   eps_k eta^2 <= |U(dp) - 1| < (9/4) eps_k eta^2 on one plaquette passes the first and fails the second, if the two
   background fields agree there.
@@ -188,7 +188,7 @@ is the (2.17) factor on each cube. Under (BG) each (2.17) factor is the same fun
     chi_a^prep = chi_a^step * (other characteristic functions) <= chi_a^step      pointwise,
 which is (*). The rest of the account's proof (CA-II:102818-102830: products over islands, positivity of the other
 three factors) then gives (8.6:eq-prefactor-monotone-a).
-Premise (BG), OPEN here: on every cube Q of the region of X_a, the field U_(k,Q)(V_k) of (2.16) in the term (O, X) (built on
+Premise (BG), proved in 3.6: on every cube Q of the region of X_a, the field U_(k,Q)(V_k) of (2.16) in the term (O, X) (built on
 Balaban's new determining set after R, CMP 122b p. 377: "the new determining set B_k") equals the field of the term
 (O, X') (built on the determining set of a region with no island at X_a). The account assumes the same thing off X_a
 ("the characteristic functions they carry coincide off the regions X_a", CA-II:102795-102797) and its companion lemma
@@ -211,7 +211,7 @@ with new variables V = V'' on Z^c and V = V'_k V_Lambda = V_k on Z (1.34), "and 
 and U_k = U_(B_k)(V) (1.35). So on the class region Z, which contains every island X_a, the determining set has only its
 level-k piece: the history of the island is gone from it. In the term (O, X') the region of X_a lies in the small-field
 region Lambda_k of a history with no large field there, where the determining set is also level k (Gamma_k = (Omega_k)^((k))
-on Omega_k, CMP 122a (1.13)); and off X_a^(~-6) the two terms have the same outer datum O, hence the same live
+on Omega_k, CMP 119 (2.2)); and away from X_a the two terms have the same outer datum O, hence the same live
 components with the same admissible subsequences (Definition 8.6:def-island-representation, outer data). The field
 U_(k,Q)(V_k) = U(B_k(Q^(~4)), M(Q_k^(s*) V_k)) of (2.16) depends only on B_k near Q and on V_k. Hence on every cube Q of
 the region of X_a it is the same function of V_k in the two terms. QED
@@ -249,9 +249,14 @@ cited displays.** The lemma says that for X the top-level functions on X_a "are 
 (1.3)-(1.4)]", taken "on the same cubes" as the step's. Read literally this is false on part of X_a:
 - (1.3) is a level-j function for each j; at the top level only (1.4) with j = k - 1 is present, and it is defined for
   cubes Q' in (Omega_k^(~4) minus Omega_(k+1)^~) cap Z (CMP 122a p. 178).
-- X_a contains points of Omega_k^c. Reason: by condition (ii) of CMP 122a Section 1 the large fields of the component
-  were created at levels at most h < k, so X_a meets Omega_j^c for some j <= h, and Omega_j^c is contained in Omega_k^c by
-  (2.1). So X_a has cubes outside Omega_k^(~4) (its core and the four-layer collar).
+- X_a has cubes outside Omega_k^(~4). Balaban's layer index means "n layers out" (CMP 122b p. 384 defines
+  S(Z) = Z'^(~10) as the cover Z' "and we add ten layers of such cubes"), so Omega_k^(~4) is Omega_k with four layers
+  added. Its complement in the component is the set on which Balaban places the decomposition of 3.1 and which he writes
+  X_i^(~-6), the component with six layers removed; it lies in the large-field core Omega_k^c cap X_a (not empty: by
+  condition (ii) of CMP 122a Section 1 the component's large fields were created at levels at most h < k, so X_a meets
+  Omega_j^c, contained in Omega_k^c by (2.1)). X_i^(~-6) is not empty because a class component spans about 42 cells or
+  more (CMP 122a p. 177: "the minimal size is approximately equal to 42(L/(L-1)) M R_k"), more than the twelve layers
+  removed.
 - On such a cube Q the functions (1.3)-(1.4) carry no level-k factor, while the term X' (no large field at X_a) carries
   the (2.17) factor on Q. For a block field V_k with one plaquette of Q^~ where |U_(k,Q)(V_k, dp) - 1| >= eps_k eta^2,
   the first is 1 and the second is 0. So the sentence "wherever the preparation's characteristic function on such a
@@ -271,7 +276,7 @@ times further characteristic functions."
 | TI: (1.4) at j = k - 1 is the (2.17) factor (same field, cubes, threshold) | PROVED | CMP 122a p. 178, CMP 119 p. 257 |
 | P: the preparation's own top function chi_k^((N)) has threshold 3(1 - beta/2) eps_k eta^2 > eps_k eta^2, so (*) cannot be proved from it | PROVED | CMP 122a (1.24) |
 | 3.10: the account's named objects (1.3)-(1.4) leave the core cubes of X_a without a level-k factor, so its domination sentence fails as written | PROVED | CMP 122a p. 178, condition (ii); CMP 119 (2.1) |
-| BG: the (2.16) field on the cubes of X_a^(~-6) is the same function of V_k in the terms X and X' | PROVED GIVEN | CMP 122b (1.33)-(1.35), CMP 119 (2.1)-(2.2), (2.16) |
+| BG: the (2.16) field on the cubes near X_a is the same function of V_k in the terms X and X' | PROVED GIVEN | CMP 122b (1.33)-(1.35), CMP 119 (2.1)-(2.2), (2.16) |
 | G: cube inclusion near X_a | PROVED GIVEN | 3.1 (the decomposition is placed on the complement of Omega_k^(~4)) |
 | (*) in corrected form, hence (8.6:eq-prefactor-monotone-a) | PROVED GIVEN | 3.1 (CMP 122b p. 378, (1.72)), BG, G, the account's other proof steps |
 
@@ -301,7 +306,10 @@ claim is not proved there. The proof below does not use it; it uses only sizes.
 
 **4.2 Hypotheses (readings of Balaban's definitions and the account's, stated so that a checker can test each).**
 - (H1) S. For a level-m domain A, S(A) is the cover of A by level-(m+1) cells with ten layers of level-(m+1) cells
-  added (account CA-II:111912-111913; CMP 122a p. 177 "Each renormalization step adds at least ten layers"). So
+  added (account CA-II:111912-111913; READ in CMP 122b p. 384 (OCR): "If Z is a union of MR_j-cubes of the lattice
+  T_xi, xi = L^(-j), then we take the cover Z' of Z by a smallest union of LMR_(j+1)-cubes, and we add ten layers of such
+  cubes. We denote the obtained domain by S(Z), i.e. S(Z) = Z'^(~10)"; an LMR_(j+1)-cube of T_(L^-j) is a level-(j+1)
+  cell). So
   S(A) contains A (as a point set), S(A cup B) = S(A) cup S(B), and S(A), S(B) meet when A and B touch.
 - (H2) Size. Let s_m(A) be the side, in level-m cells (cubes of side M R_m), of the smallest cube containing A. Then
   s_(m+1)(S(A)) <= rho_m s_m(A) + 22, with rho_m = 1/L at a scaling step and rho_m = 1 at a step where Balaban's number
@@ -336,8 +344,8 @@ Proof. (1) Pieces. For an old piece, its image at level n + 1 + iota_i satisfies
 quiet continuation, in particular at level n + 1 + T (T >= iota_i). The same holds for S^T(X_l) since T >= K_init(X_l).
 (2) The union. By (H1), S^T(W') is the union of the images S^(T+1)(W_i) and S^T(X_l), and it is connected because W' is
 and S preserves touching. A connected union of m sets, each inside a cube of side 56, lies in a cube of side at most
-57 m - 1 (chain the sets along a spanning tree). (3) Shrinking. Between two consecutive levels at least one of any two
-steps is a scaling step (H2). Two steps map a size s to at most s/9 + 44 (scaling then drop) or s/9 + 24.5 (drop then
+57 m - 1 (chain the sets along a spanning tree). (3) Shrinking. Of any two consecutive steps at least one is a scaling
+step (H2). Two steps map a size s to at most s/9 + 44 (scaling then drop) or s/9 + 24.5 (drop then
 scaling). After 2u steps the size is at most (57 m)/9^u + 49.5. With u = u_m, 57 m / 9^u <= 36.4, so the size before
 the next scaling step is at most 36.4 + 49.5 + 22 = 107.9, and after that scaling step at most 107.9/9 + 22 <= 34. So
 within t <= 2 u_m + 2 steps after level n + 1 + T the union reaches size at most 34 just after a scaling step, and by
@@ -358,12 +366,12 @@ supplies (*), and the age lemma becomes an implication of the clock rules the ac
 quiet (8.9:eq-age-lemma-2), preparatory (8.9:eq-age-lemma-3), healing) and of (H1)-(H5). Balaban's containment claim
 ("S^(K_1+n_1)(Y) containing S^(K_1+n_1)(X)") is not needed. Not done here: a check of the account's remaining proof
 lines after (*) (CA-II:112100 on), and of the birth rule (8.9:eq-age-lemma-1), which the account takes from CMP 122b
-(1.81) and its discussion; isolation in (H2) is ARGUED, not read from a definition.
+(1.81) and its discussion. Isolation in (H2) is Lemma ISO (4.6).
 
 **4.6 Lemma ISO (drop steps are isolated). PROVED GIVEN CMP 119 (2.5)-(2.6) (read on the page image, p. 255) and the
 account's Ř_k = R(min over i <= k of x_i) (CA-II:109689).** CMP 119 (2.5): "R_j is the smallest number of the form L^r
-such that R_j >= (log g_j^(-2))^r" (r a fixed exponent). CMP 119 (2.6), first inequality with n = m + 1:
-g_(m+1) <= (1 + g_m^2 beta')^(1/2) g_m, so x_(m+1) >= x_m / (1 + beta'/x_m) >= x_m - beta' for x = g^(-2). Hence the
+such that R_j >= (log g_j^(-2))^r" (r a fixed exponent). CMP 119 (2.6), first inequality: g_n <= (1 + g_n^2 beta'(n - m))^(1/2) g_m for n > m. With n = m + 1, squaring
+and dividing by g_m^2 g_(m+1)^2 gives x_m <= x_(m+1) + beta' for x = g^(-2), that is x_(m+1) >= x_m - beta'. Hence the
 running minimum X_m = min over i <= m of x_i obeys X_(m+2) >= X_m - 2 beta'. Two drops in a row would need
 Ř_(m+2) = Ř_m / L^2, i.e. (log X_(m+2))^r <= L^(a-2) < L^(a-1) < (log X_m)^r for Ř_m = L^a, so
 (log X_m / log X_(m+2))^r > L. But if X_m >= max(4 beta', 2e), then 2 beta'/X_m <= 1/2, so log(X_m/(X_m - 2 beta')) = -log(1 - 2 beta'/X_m) <= 4 beta'/X_m,
@@ -371,6 +379,26 @@ and log(X_m - 2 beta') >= log(X_m/2) >= 1; hence
     (log X_m / log(X_m - 2 beta'))^r <= (1 + 4 beta'/X_m)^r <= exp(4 r beta'/X_m),
 which is below L when X_m > 4 r beta' / log L. So no two consecutive steps are drop steps as long as
 X_m >= max(4 beta', 2e, 4 r beta'/log L + 1) along the run; the run has X_m >= g_U^(-2) with g_U small. QED
+
+**4.7 Two robustness remarks on Theorem J (PROVED, same argument).** (a) If the join adds layers beyond the pieces
+(Balaban: the pieces are "joined together into the one component ... in particular by adding layers"), and each piece
+is enlarged by at most ten layers of level-(n+1) cells, then each enlarged piece lies in a cube of side 56 + 20 = 76
+at level n + 1 + T, the union in a cube of side 76 m, and the proof runs with 57 replaced by 77: u_m = ceil(log_9(2.12 m)),
+u_2 = 1, and the comparison in (5) is unchanged. (b) The index iota_i of an old piece is used only through "its image at
+level n + 1 + iota_i satisfies (i) and (ii) with some N >= 9"; so the theorem covers both readings in the account
+(quiet index Phi_n(W_i) - 1, or the piece's own event value).
+
+**4.8 Readings re-checked on the page images (12:26Z by date -u).** CMP 122a p. 177: "(i) it is contained in a cube of
+the size 100 M R_k, (ii) in the preceding N renormalization steps no new large field regions were created inside this
+component, and the previous regions contained in it satisfy the condition (i) on the corresponding scales", and
+"Passing to the next step it is usually rescaled by L^(-1), but in some steps the number R_k decreases by the factor
+L^(-1), and adding ten new layers of M R_k-cubes we get a region with a size greater than 40 M R_k" (this is (H2)'s drop
+step). CMP 122b p. 387: the two-domain step as quoted in 4.1, with "d'_n(S^(n-j-1)(Z)) <= d'_n(S^(n-j-1)(X)) +
+d'_n(S^(n-j-1)(Y))" (the chain bound of step (2)) and "K <= K_2 + n_1 + R_(j+1)" (the join's parameter, (H5)). Support
+for (H4)'s "last N levels" reading: Balaban's single-domain bound (CMP 122b p. 385) waits "at most R_j further steps"
+after the domain first fits a cube of side 64 M R, which is the reading "(i) on each of the last N levels"; under a
+reading in which every earlier region of the history must have fitted, a region created large would never heal,
+against his finite K.
 
 ## Step 5. Third item: the step (*) of 8.8:lem-target-independence (written 2026-11-20, 12:21Z by date -u)
 
@@ -405,3 +433,41 @@ in the lemma's list is a function of (x_0, the bare count) and k, which is what 
 I checked only the objects the lemma lists and the proof uses. The condition a_1 <= k - 1 in (b) holds at every level
 where Balaban's preparation is used (it needs N > N_0, CMP 122a p. 179); at earlier levels N_0 is not read. Standing:
 proved by Claude, unchecked.
+
+## Step 6. Summary, credits, check request (written 2026-11-20, 12:25Z by date -u)
+
+**6.1 Verdict on the brief.** The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved here, and
+nothing on the chain is disproved. Its open core, the infrared base datum ((N-phys) at every cutoff, or (SL) of row 1258
+at one coupling), was not attacked head-on: every idea I had was on the record with a first failing step (Step 1.1,
+ARGUED). The one unowned item of the ultraviolet carry, `9.1:prop-blind-site-expansions`, needs Balaban CMP 116, which
+is not in the papers folder and which Project Euclid refused behind a bot check; it was set aside (Step 1.2).
+
+**6.2 What was closed (three steps marked (*) in Sussman and Alpoge's account, all owner none in the registry).**
+
+| Registry row, label | Result | Label | Rests on |
+|---|---|---|---|
+| H-C6a, `8.6:lem-prefactor-monotone` (CA-II:102730) | (*) holds in corrected form: on a healed island Balaban's prefactor carries a (2.17) factor on every cube (CMP 122b p. 378 decomposition, CMP 122a p. 184), and on the island the determining set is level k (CMP 122b (1.33)); so (8.6:eq-prefactor-monotone-a) follows | PROVED GIVEN | Balaban's displays read on page images; the account's other proof steps |
+| H-C6a, same | Correction: the account names the wrong object ("CMP 122a (1.3)-(1.4)"); with that object the domination sentence fails on the island's core cubes (3.10); the preparation's own top function has the weaker threshold 3(1 - beta/2) eps_k eta^2 (Remark P); the threshold comparison it asks for is an identity (Proposition TI) | PROVED | CMP 122a pp. 178-184, CMP 119 p. 257 |
+| H-C7c, `8.9:lem-age-lemma` (CA-II:112000) | (*) = the join bound (8.9:eq-age-lemma-4) holds for every n_1 >= 2, by a size argument (Theorem J with Lemmas ST, ISO), without Balaban's unproved containment claim | PROVED GIVEN | (H1)-(H5): S, sizes, conditions (i)-(ii), the clock, read from CMP 122a p. 177, CMP 122b pp. 384-387, CMP 119 (2.5)-(2.6), and the account's definitions |
+| H-C7b, `8.8:lem-target-independence` (CA-II:109661) | (*) for the objects the proof reads: delta'_k and N_0 are functions of (x_i)_(i<=k), L, M and fixed constants (Lemma TI8) | PROVED GIVEN | CMP 122a pp. 179, 183; CMP 119 (2.5); the account's Ř |
+
+The age lemma is also a standing hypothesis (a) of `9.1:thm-last-lattice-comparison`, which the gap lane's one-cutoff
+carry reads (row 1233 Lemma 3.5). Its other hypotheses stay as recorded there, so the carry's input list loses one
+"incomplete" item only.
+
+**6.3 Not done, and why.** No cross-provider check. The account's proof lines outside the (*) steps were not
+re-checked (they were read). For H-C6a the account's representation lemma and Balaban's regrouping in (1.72) ("equivalent,
+but not equal" after the reversed Faddeev-Popov step) are inputs, not checked. For H-C7c the birth rule (8.9:eq-age-lemma-1)
+is used as the account states it. The broad sentence of the 8.8 (*) ("each object read by the k-th step") was checked
+only for the objects listed. H-C6b (`8.6:lem-healed-islands-unread`) and H-C7a (`8.7:lem-translation-covariance`) were
+read, not closed: their (*) steps are reviews of every rule of a step and of the account's history framework.
+
+**6.4 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (complete account
+CA-II, CA-III at 31a47c543775): the lemmas, their proofs outside (*), the island representation, the clock and its
+rules, and the routes they print. Tadeusz Balaban: CMP 119, CMP 122 (175-202 and 355-392), the objects and displays read
+here. The lane's earlier rows cited in Step 0. The bot-check stop on CMP 116 follows FINISH Rules (Literature).
+
+**6.5 Check request (for the lead).** One line-by-line check by gpt-6-astra of Steps 3, 4 and 5, re-reading on the page
+images CMP 122a pp. 177-184, CMP 122b pp. 365, 377-379, 384-387, 390, and CMP 119 pp. 254-257. Points most likely to
+fail: (BG) and (G) in Step 3 (determining set and cube coverage near the island); (H4)-(H5) in Step 4 (the reading of
+condition (ii) as "the last N levels" and the join's parameter N = R_(n+1)); Lemma ISO's use of CMP 119 (2.6).

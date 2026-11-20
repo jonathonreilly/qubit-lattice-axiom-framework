@@ -8,7 +8,7 @@ Labels: PROVED (written argument complete here), ARGUED (argument given, a step 
 
 ## 0. Status of this file
 
-All steps written (Step 0 09:25Z, Step 1 09:27Z, Step 2 09:41Z, Step 3 and Result 09:43Z by date -u). Run complete.
+All steps written (Step 0 09:25Z, Step 1 09:27Z, Step 2 09:41Z, Step 3 and Result 09:43Z, GUIDE run 2.5 at 09:44Z by date -u). Run complete.
 
 ## Step 0. Reading log (reading only; no new claim; written 2026-11-20 about 09:25Z by date -u)
 
@@ -228,6 +228,17 @@ and of Lemma CEN+.
 Note added to Proposition 2.3 (ii): if eps_k <= mu^2 the right side is negative and the bound is empty; Lemma 2.2 (a)
 is used only for eps_k > mu^2.
 
+**2.5 GUIDE control run (a run can refute or guide; it proves nothing).** Run 09:44Z under `numeric-lock` (54 percent
+memory free, BLAS threads 1, nice, peak RSS 72 MB), script in a scratch folder outside the repository. Criteria fixed
+before the run: (a) Lemma 2.1 on random 12 x 12 matrices: F'' by a finite difference of (1/2) log det M_theta equals
+tr(G M_2) - (1/2) tr((G M_1)^2) to 1e-4; the simplified D_K equals the raw trace of d^2 g; D_K - V_K equals F''; N at
+K_* vanishes. (b) Proposition 2.3 (i) on the torus L = 4, n = 2, mu^2 = 1/16, a random translation-invariant K with four
+offsets: V_K from dense matrices equals the Fourier formula. (c) Lemma 2.2 (a)-(c) at L = 8, 16, 32, mu = 1/L,
+eps = 1 and 1/4. Outcome: all pass (F'' = -0.338909 both ways; V_K = 583.2084628 both ways; every lattice-sum bound
+holds). What it cannot show: anything beyond these instances. One observation: with mu = 1/L the zero mode alone gives
+mu^(-4) = V to S_2, and at L <= 32 the logarithmic part of S_2 is only a few percent of V (about 0.025 V at L = 32), so
+the constants of Lemma 2.2 (a) are far from sharp and the logarithm of Proposition 2.3 is an asymptotic statement.
+
 ## Step 3. What Step 2 means for the crux, the tests, and what stays open (ARGUED; written 09:43Z by date -u)
 
 **3.1 Consequence for the (K-flow) template (ARGUED).** Row 1243 reduced a (K-flow) seed to (DEC) and then to (S-V):
@@ -292,11 +303,11 @@ unlikely to move (N-phys) unless it starts from a named new mechanism.
 | In one-loop SU(2) Yang-Mills a Jensen bound with a bounded flow sees screening; the 2D running is a tadpole, the 4D running a bubble; a 4D Jensen step must carry an RG step's fluctuation response | ARGUED (identification with the Wilson cells and the coefficients 4, -1/3 RECALLED) | 2.3-2.4, 3.1 |
 | (S-V), (DEC), the covariant Green's-function flow of 3.1 item 4 | OPEN | 3.1 |
 
-Checked by no one. No numeric run (memory was at 53 percent free; none was needed). No subagent. No outside source was
+Checked by no one. One GUIDE control run of the algebra and lattice sums (2.5); no proof step rests on it. No subagent. No outside source was
 fetched. Credits: OpenAI (the 2D O(3) and O(4) papers, through the lane's readings in rows 1009-1010); Bhattacharjee,
 Bhattacharya, Lockwood, Romanov, Sessford and Singha Roy, and Zeng Chunping (through row 1218); Sussman and Alpoge with
 Claude and Codex as authors of their text (the account, through rows 1179, 1225, 1233, 1237, 1238); Nielsen and Hughes
 (the spin and orbital split of the one-loop coefficient, RECALLED); Singer and Feynman (orbit-space curvature, as on
 file); Gopfert and Mack (3D U(1), as on file); Kato and Simon (diamagnetic inequality, RECALLED).
 
-RESULT: Row 1244 (Claude Opus 5.5 max, Mac mini worker 3, 09:01Z-09:43Z by date -u; author only, checked by no one; no numeric run, no subagent): the mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; (N-phys) stays OPEN, and a screen of six idea families found no engine off the record (ARGUED). PROVED by hand, unchecked, in a one-loop Gaussian model: Lemma 2.1 (the exact split F'' = D_K - V_K of the twist stiffness for every linear fluctuation flow K, with the explicit minimiser K_* = -(1/2) G M_1, the derivative of the Gaussian transport) and Proposition 2.3 with Lemma 2.2 (on the 4D torus with a constant zero-derivative spin coupling m_0, every flow of strength at most k loses at least (V ||m_0||^2/(2048 pi^2))(log(eps_k L^2) - 1), eps_k = min(1, ||m_0||/(4 sqrt(n) k)), of the spin bubble in the Jensen bound). ARGUED: in one-loop SU(2) Yang-Mills a Jensen bound with any bounded flow sees screening, because the 4D running is a two-propagator bubble while the 2D O(N) running is a tadpole that the rigid rotation keeps; so the 2D short step has no 4D copy even at weak coupling, and a 4D step of the Jensen kind must carry the fluctuation response of an RG step. OPEN: (N-phys), (S-V), (DEC), the ultraviolet carry and the account's premises. Output library/gap-mini-solve-aa-opus.md.
+RESULT: Row 1244 (Claude Opus 5.5 max, Mac mini worker 3, 09:01Z-09:46Z by date -u; author only, checked by no one; one GUIDE control run of the algebra, no subagent): the mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; (N-phys) stays OPEN, and a screen of six idea families found no engine off the record (ARGUED). PROVED by hand, unchecked, in a one-loop Gaussian model: Lemma 2.1 (the exact split F'' = D_K - V_K of the twist stiffness for every linear fluctuation flow K, with the explicit minimiser K_* = -(1/2) G M_1, the derivative of the Gaussian transport) and Proposition 2.3 with Lemma 2.2 (on the 4D torus with a constant zero-derivative spin coupling m_0, every flow of strength at most k loses at least (V ||m_0||^2/(2048 pi^2))(log(eps_k L^2) - 1), eps_k = min(1, ||m_0||/(4 sqrt(n) k)), of the spin bubble in the Jensen bound). ARGUED: in one-loop SU(2) Yang-Mills a Jensen bound with any bounded flow sees screening, because the 4D running is a two-propagator bubble while the 2D O(N) running is a tadpole that the rigid rotation keeps; so the 2D short step has no 4D copy even at weak coupling, and a 4D step of the Jensen kind must carry the fluctuation response of an RG step. OPEN: (N-phys), (S-V), (DEC), the ultraviolet carry and the account's premises. Output library/gap-mini-solve-aa-opus.md.

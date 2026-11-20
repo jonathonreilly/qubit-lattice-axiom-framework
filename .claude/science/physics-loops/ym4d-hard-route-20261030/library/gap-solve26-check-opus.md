@@ -275,3 +275,56 @@ Scope of claim D: it constrains only cube sides m <= C_0 beta^delta, a slowly gr
 units. B-BP allows cube sides up to a fixed physical length l/a_k, and (35) says nothing there; the file
 says this at L387. It is a necessary condition on the auxiliary dynamics, not a statement about the
 physical transfer. First failing step: none.
+
+### Step 6: everything else, in file order
+
+Outline lines read for this step (fetched by URL at 31a47c543775 into a scratch folder; not committed):
+1733-1762 (projection symbol P_a = B_a B_a*/omega_a; its 12,12 numerator is |t_1|^2 + |t_2|^2), 3205-3254 (PL1-PL3:
+for A, B in the algebra of Q_r and n = |y|_inf - 2r >= 1, |nu(A~ tau_y B) - Pl(A,B)| <= C[(r/n)^2 + (r/n)^3]
+N(A)^{1/2} N(B)^{1/2}, for translation-invariant laws with sixteen-family mirror positivity), 3305-3318 (PL5:
+cosh E + cos eta_lambda >= 2). The index `sa-index/chunk-03.md` L67-L68, L76 records PL3 and PL5 as proved
+conditionally in their account.
+
+- **L212 (variance growth, small balls at r >> beta). HOLDS.** (18)-(19) give P(|A_r| <= R) <= eps_r -> 0;
+  integrating (17) on good exteriors gives E|A_r|^2 >= c r/beta. No conflict with (9): at r = beta^delta,
+  c r/beta -> 0.
+- **(27) L278-L282. HOLDS.** Collinear 3-links share no face, 12-faces contain no 3-link; one adjoint
+  multiplier e^{-2/(1+6 beta)} per link occurring once. Different columns or disjoint intervals: <= C r^8 pairs
+  times r^{-4} e^{-2d/(1+6 beta)} <= C r^4 r^{-A/3}; overlapping intervals: sum over the endpoints of J of
+  e^{-2(|i_1-j_1| + |i_2-j_2|)/(1+6 beta)} <= C(1+beta)^2, times r^{-4} C r^4.
+- **(28) L284-L293. HOLDS given (PL3).** With l > 4(d+2), n = l - 2(d+2) >= l/2, PL3 gives C(d+2)^2/l^2 times
+  reflected sizes, which are <= ||H_k||_2^2 = O(1) by Cauchy-Schwarz and reflection invariance of the Wilson
+  limit. The shell count gives r^{-4} r^3 (d+1)^2 [(d+2)^3 + (d+2)^2 r] <= C (d+2)^4. The label states the
+  infinite-lattice premise of the source theorem.
+- **L295 (ergodic standardization). HOLDS given (PL3) and ergodicity.** s_r >= c r/beta from (23) passed to
+  infinite volume; ||S_r/s_r - 1||_2 <= C beta (d^2+1+beta)/r -> 0 at beta = O(log r); conditional
+  independence of stems on distinct slices plus the total-variation form of (24) gives the joint normal limit.
+- **(31)-(32) L322-L336. HOLD.** ||U(P_*-P_0)||_HS^2 = T(2) - 1 exactly (P_0 <= P_*, U P_0 = P_0); weight in
+  (0,E_0] <= e^{2E_0}(T(2)-1). B_k = M U^k with 0 <= M = sin^2(k p_1/2) <= 1 commuting with U, so
+  ||B_k P_*|| = ||M U^{k-1} U(P_*-P_0)|| <= ||U(P_*-P_0)||, and the three off-diagonal blocks are o(1) uniformly
+  in k >= 1.
+- **(33) L338-L342. HOLDS.** B_k >= 0, so ||B_k|| >= (<x, B_k^j x>/||x||^2)^{1/j}; the j-th moment limit is
+  Int (e^{-E} sin^2(p_1/2))^j dmu; E >= |p_1| and max_{x>=0} e^{-x} sin^2(x/2) = e^{-pi/2}/2 at x = pi/2
+  (f' = (e^{-x}/2)(sin x + cos x - 1)); the l = 1 term has mass near k = k' = (pi/4,0,0) since
+  (k_1^2+k_2^2)|phi^|^2 > 0 a.e. there.
+- **L344 (||B_k|| -> q_0). HOLDS given (PL5).** cosh E + cos eta >= 2 is sinh(E/2) >= |sin(eta/2)|, i.e.
+  E >= 2 arsinh|sin(eta/2)|; k g(x/k) -> x uniformly on [0,pi].
+- **(34) L346-L351. HOLDS.** The symbol difference BB* mu^2/(omega_0(omega_0+mu^2)) is positive semidefinite.
+  The k_0 integral actually gives <= C mu^2/|q^| per frequency; the file's C mu^2 |q^|^{-2} is weaker and
+  still true (|q^| <= 2 sqrt3), and its shell sum gives C' mu^2. mu = mL/n is o(sqrt(Delta_b)). The reading
+  is right: (9) cannot tell a massless from a massive free comparison, so it carries no gap information.
+- **(41) L446-L455. HOLDS.** Per colour [[B(0), B(u)],[B(u), B(0)]] with 0 < B(u) < B(0); root averaging
+  leaves radial functions; the radial Mehler operator has eigenvalue rho^{2j} on degree-2j radial
+  polynomials, which are complete (exponential transform argument); trace 1/(1-rho_u^2). B_inf(0) = 3/6 by
+  rank 3 of 6 and axis permutation symmetry; rho_u^2 ~ (1/(pi^2 u^4))^2/(1/4) = 4/(pi^4 u^8).
+- **L459 (Gaussian cylinder test). HOLDS.** The v = (1,0,0) term alone gives c_K n^{-4} (all terms are
+  positive at x = 0); the cosine mode has exact cross-time covariance e^{-|t| omega(q)} I_3, its singlet
+  return e^{-2 t omega}, a point spectral mass at 2 omega(q), physical energy -> 4 pi/L. This concerns the
+  free comparison field only, as the file says.
+- **(42) L463-L470.** The identity HOLDS (row 1227 (27) with a larger projection; the vacuum is in P_n).
+  The OPEN label on the bound is correct.
+- **GUIDE and OPEN statements (L3-L15, L76, L171, L230, L355, L391, L461, L470).** Labels are honest: no
+  GUIDE statement is used as a proof step. Outline citations spot-checked above match. Not checked: the
+  repo-search hits of L3, the CA-I lines cited at L5, row 1141 (2) cited at L461, row 1171 cited at L468.
+
+First failing step in Step 6: none.

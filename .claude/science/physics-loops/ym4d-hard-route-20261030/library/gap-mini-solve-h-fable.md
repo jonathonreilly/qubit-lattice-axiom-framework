@@ -14,6 +14,7 @@ with a named gap), GUIDE (numeric or heuristic, never a proof step), OPEN.
 - 2026-11-20T03:32Z: record read; blind pass done (Section 1). Every candidate named blind was grepped at once; all with a mechanism are on file.
 - 2026-11-20T03:42Z: Section 2 written (two remarks; one first draft claim was wrong and is corrected there). Section 3 next.
 - 2026-11-20T03:44Z: Section 3 (outcome) and the RESULT line written; anchors printed and checked; PROVED items re-read.
+- 2026-11-20T03:49Z: two row citations in the table of 1.2 corrected from FINISH.md (row 1155 for `gap-solve7-astra62`; row 842 is `gap-s1-opus`); row 931 L183-232 read: the thermal flow attack of 3.1 is its Step 4 with (RATE) and Lemma GAPRATE, in full. End of row.
 
 ## 1. Repo search and where the record stands (GUIDE: statements about the record, not evidence)
 
@@ -48,10 +49,10 @@ Counts are files among `library/gap-*.md`, `library/prior/gap-*.md`, `parts/gap.
 | Thermal form: (N-phys) is p(T)/T^4 at most log(3/2)/K^3 = 3.0e-9 at T = K/L; flow form "interaction measure Theta = eps - 3p at least gamma p" (then p/T^4 falls like T^gamma) | yes: Theta = 0 for a free photon, Theta has the sign of the beta function at weak coupling | route RB (row 934); (ANOM) `gap-direction-max.md` L189 (row 931: log pi(t_1) = log pi(t_0) minus the integral of (eps/p - 3) dt/t), read against published SU(2) data in row 983; (MONO-Delta), Proposition MB, Proposition NM `gap-phys-seed.md` L351, L353, L375; (NOCRIT) `gap-mid-max.md` L207; (CAS) row 708 | on file in this exact form; "restates the seed in steps" |
 | Spectral form of the same: every neutral level of the box, in units of 1/L, grows with L; lattice form: at fixed n the neutral gaps of the transfer operator fall when beta rises | same | same family; (VAC-SUB) `gap-vacsub-max.md` L681 (row 934: prefix sums of the response excess of the levels, with Ky Fan concavity in the magnetic coupling) | on file; needs a Griffiths-type inequality that SU(2) does not have |
 | Concavity of log(p/T^4) in log T as the carrier of the first-passage slope | yes | not found by name | FAILS as a belief: at a continuous deconfinement point with a positive specific-heat exponent the second derivative is plus infinity; for p/T^4 itself the inflection sits where p/T^4 is of order 0.01 to 0.1, not 3e-9 |
-| Integrate all links through positive auxiliary fields (Budczies-Zirnbauer weight; for the Wilson weight the two-stage quaternion Gaussian); the dual model couples site-local quaternion Gram entries by O(4) inner products | no (the U(1) form is an XY ferromagnet of relative phases, the SU(2) form has the Hopf signs again) | idea 28 `gap-brainstorm2-max.md` L178, L233; C4 `gap-invent-selective-max.md` L113, L194; Identity HS1 `gap-global-reform-max.md` L382; row 1157; row 1199 table | on file |
+| Integrate all links through positive auxiliary fields (Budczies-Zirnbauer weight; for the Wilson weight the two-stage quaternion Gaussian); the dual model couples site-local quaternion Gram entries by O(4) inner products | no (the U(1) form is an XY ferromagnet of relative phases, the SU(2) form has the Hopf signs again) | idea 28 `gap-brainstorm2-max.md` L178, L233; C4 `gap-invent-selective-max.md` L113, L194; Identity HS1 `gap-global-reform-max.md` L382 (row 1016); its use in row 1155 (`gap-solve7-astra62.md` L78); row 1199 table | on file |
 | Hopf split with Ginibre and FKG (the neutral step of the posted 2D O(4) proof); SU(2) matrix entries carry the sign of U_21 = - conj(w), K_4 is not bipartite | - | row 1084, Lemma HF (row 1188), row 1190 | on file. My first remark here ("the sign is exactly compactness") was WRONG as a lattice statement and is corrected in 2.2 |
 | Durhuus-Frohlich with the posted 2D O(4) theorems (3D area law at every coupling) | flux half, 3D | method 36 `parts/gap.md` L70 (row 1139, check 1140): no background-uniform rate at large b; rows 825-834; row 1199 | on file, dead in uniform form |
-| Reduction on a 1 x 1 or 2 x 2 twisted two-torus (a 2D model that is semiclassical at weak coupling) | no engine from a small box: a seed needs n m at least K log 2 (row 1184, Lemma N2) | Route T, (AC'), row 842, `gap-ac-lat.md` | on file |
+| Reduction on a 1 x 1 or 2 x 2 twisted two-torus (a 2D model that is semiclassical at weak coupling) | no engine from a small box: a seed needs n m at least K log 2 (row 1184, Lemma N2) | Route T, (AC'): row 842 (`gap-s1-opus`), `gap-ac-lat.md` | on file |
 | Spacetime symmetries as the rigid non-abelian group (shifted and rotated periods, stress-tensor response) | no: the free photon passes | row 1201 (`gap-mini-solve-k-fable.md` L84), rows 960-965 | on file |
 | Projective (Birkhoff) contraction: cross-ratios of the one-step kernel do not see the spatial weight | no | statement (A), row 1132; 22 files name Birkhoff | on file; the diameter is extensive |
 | Born-Oppenheimer lower bound over a block map; Kirsch-Simon comparison | no | not by name; in substance rows 957, 968 (two-level Poincare; Holley-Stroock loss is extensive) | on file in substance |
@@ -138,7 +139,7 @@ The best attack I could name blind was the flow form of the thermal reading: car
 relative interaction measure, gamma_1 = eps/p - 3 > 0 at a temperature where the coupling is small, down to low
 temperature, and get p/T^4 <= C T^(gamma_1), which reaches the 3e-9 of (N-phys) at one physical size. Its steps:
 
-1. (N-phys) as a pressure bound. On file: row 931 (ANOM), rows 934, 983.
+1. (N-phys) as a pressure bound. On file: row 931 ((ANOM), (RATE), Lemma GAPRATE, `gap-direction-max.md` L186-217), rows 934, 983.
 2. gamma_1 > 0 from first-passage data. Not checked here; it needs the pressure to two-loop accuracy.
 3. **First failing step:** eps/p - 3 >= gamma_1 at every lower temperature. This is a lower bound at order-one
    coupling. It is false as a monotony statement (Remark TH) and, as a bare lower bound, it is the integrand

@@ -1,9 +1,12 @@
-lead: anthropic/claude-fable-5-2/max mac-mini-worker
-lease_until: 2026-11-20T15:52Z
+lead: anthropic/claude-opus-5-5/max mac-mini-worker
+lease_until: 2026-11-20T16:12Z
 
 # gap-mini-solve-p-fable: the mass gap of four-dimensional SU(2) Yang-Mills (row 1220)
 
 Provenance: Claude Fable 5.2, max effort, Mac mini worker, pinned at commit 7ec64b498. One session, no subagents.
+Continued from 2026-11-20T04:12Z (date -u) by Claude Opus 5.5, max effort, same Mac mini worker, pinned at commit 3065cacc7
+(the Mini account reached its Fable weekly limit; the lead note of row 1220 moves the row to Opus 5.5). Sections 0-1 up to
+the line marked below are Fable's text, kept unchanged; everything after it is Opus 5.5's.
 This is research-stage working state. It grants no status. Nothing here is a public claim.
 
 Labels: PROVED (argument written in full here), ARGUED (argument with a named gap), GUIDE (numeric or heuristic,

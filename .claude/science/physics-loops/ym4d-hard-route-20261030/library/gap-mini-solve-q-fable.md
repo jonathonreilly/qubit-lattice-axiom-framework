@@ -20,6 +20,8 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T05:03Z 3.3 written: Theorem 11.8, Lemmas G.1-G.2, Theorem G.4 and the finite-volume half of Theorem D HOLD.
 - 2026-11-20T05:06Z 3.4 written: Lemma 6.2, Theorem 6.3, Corollary 6.4, Proposition 2.1, Theorem B HOLD; A's (M) to gap chain checked end to end.
 - 2026-11-20T05:08Z Sections 4-6 written (consequences, crux outcome, recommendation).
+- 2026-11-20T05:13Z Section 7 opened: kill test of A's (M) in four dimensions through ordered boundary layers (rows 950, 952).
+- 2026-11-20T05:15Z 7.1 written: row 950 evidence read and mapped to A's box (GUIDE + ARGUED).
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -276,3 +278,69 @@ of compact U(1) violates it (A Section 12; A Proposition H.4 for the Gaussian ch
   of A's fat-box worst case in four dimensions (can an exterior configuration create a boundary soft mode that
   correlates Q- and Q+ through a face?), (b) a check of A's Section 7 hypotheses (W), (U) against the account's
   construction order, (c) a check of A's full-thermal ascent (Theorem 7.56 and Theorem F).
+
+## 7. Kill test of A's hypothesis (M) in four dimensions: ordered boundary layers (opened)
+
+**Question.** Does (M_{d,m}(c)), c < 1/2, fail for four-dimensional SU(2) Wilson at weak coupling because some
+exterior configuration omega makes the 3D face layer of a fat box order? A excludes thin boxes for exactly this reason
+in two dimensions (a pinned strip breaks a global symmetry, A Proposition H.17), and proves the fat form there
+(Theorem H.8). In two dimensions the face of a fat box is one-dimensional, where a continuous symmetry cannot break; in
+four dimensions the face is three-dimensional, where it can. So A's fat-box restriction need not protect (M) in four
+dimensions.
+
+**Mechanism on file (GUIDE, lane rows 950 and 952).** \`gap-sc-max.md\` (row 950) and \`gap-sg2test-opus.md\`
+(row 952) found that next to a frozen layered pi-flux slice (u_y = (-1)^x, other links 1) the colour direction of the
+first free slice orders for SU(2) between beta 2.4 and 2.5, and (SG2) is refuted at GUIDE level at beta 2.6
+(\`gap-sg2test-opus.md\` 4.3: "(SG2) at beta needs that no Dirichlet boundary layer orders"). I read the setting and
+evidence next, then map it to A's box.
+
+**Map to A's box (ARGUED, to be checked against rows 950/952 below).** Take the exterior omega center-valued (every
+exterior link +1 or -1), with the slice just outside one transverse face of Q set to the layered pi-flux pattern and
+the exterior normal links into that face set to 1. Then: (i) the constant gauge transformation h_v = g at every
+vertex fixes omega (center elements commute with g), so nu^omega_Q has an exact global SU(2) symmetry that is NOT in
+G_Q; (ii) the face vertices are not interior, so the face links are themselves G_Q-invariant observables (A's
+A^omega_Q), and the face slice is exactly the "first free slice in temporal gauge" of rows 950/952; (iii) the face
+spans the split direction, so it meets Q-, Q0 and Q+. If the face layer orders, a colour-direction reading X from
+the face links in Q- and the same reading Y in Q+ have correlation near the squared order parameter over its
+variance, close to 1 at weak coupling; then rho^omega(Q-, Q+) >= corr(X, Y) > 1/2 and (M_{d,m}(c)) fails for every
+c < 1/2.
+
+### 7.1 What rows 950 and 952 measured, and why it is A's face layer (read; mapping ARGUED)
+
+Row 950 (\`gap-sc-max.md\` 5.1, 5.7; GUIDE, Claude Fable 5.2 max, unchecked as a run) took a half-space slab in
+temporal gauge, slices t = 0..T (T = 6, control T = 10), spatially periodic L^3, slice 0 frozen to the layered pi-flux
+slice u_xy (u_y = (-1)^x, u_x = u_z = 1), heat bath on the free slices, and measured the first-step field (the
+log of w_l u_l^(-1), w = slice 1). The classical first step is a staggered pattern w_l = exp(sigma_l theta n) u_l with
+theta near 0.70 and a free colour direction n in S^2 (5.1); the global SU(2) moves n because every u_l is +-1. Result
+(5.7, its table): the top eigenvalue lambda of the first-step covariance at k = (pi, pi, 0) grows like L^3 from
+beta 2.5 up: at beta 2.6, lambda/L^3 = 0.0655, 0.0525, 0.0442, 0.0416, 0.0375 for L = 4..12, fit m2 + c/L with
+m2 = 0.024; at beta 6.0, lambda/L^3 = 0.19; at beta 2.3 and 2.4 it saturates. Controls passed (hot/cold start 1
+percent, T = 10 against 6: 3 percent). Its caveat: boxes of side 8-12 are near the bulk deconfinement extent at beta
+2.5-2.6, so the order might stop at a finite length (batch 4 went to L = 20 at beta 2.5; growth reported there in
+row 950's later batch and in the lane's notes). Row 952 (\`gap-sg2test-opus.md\` 4.3) states the general form: a
+statement uniform over Dirichlet slices needs that "no Dirichlet boundary layer orders".
+
+Why this is A's setting (ARGUED). In A's box Q pick a transverse face, say x_4 = alpha_4, and the split direction
+i = 1. Let omega be: the exterior slice x_4 = alpha_4 - 1 carries u_3 = (-1)^(x_2), u_1 = u_2 = 1 (pi-flux in the
+(2, 3) planes, uniform along the split direction); the exterior normal links into the face are 1; every other exterior
+link is 1. Then:
+
+1. Every plaquette meeting V(Q) at the face is u_mu 1 U_mu^(-1) 1 with U_mu a face link: the face links are pinned
+   toward u_mu with strength beta, exactly the temporal-gauge first step of row 950 (exterior normal links = 1 play
+   the temporal links; A's face vertices are not interior, so no gauge freedom remains there, as in temporal gauge).
+2. G_Q acts only at interior vertices, so it can put the interior normal links in temporal gauge; the face layer then
+   couples to a free interior of depth w >= 2d - 1, row 950's slab with T = w (row 950: T does not matter at 3
+   percent).
+3. All exterior links are +-1, so the constant gauge transformation h = g fixes omega: nu^omega_Q has an exact global
+   SU(2) symmetry outside G_Q. The face links are G_Q-invariant (both end points non-interior), so the staggered
+   readings M(R) = sum over face links l in R of sigma_l Im(U_l u_l^(-1)) (a vector in R^3) lie in A^omega_Q for every
+   region R of the face.
+4. The face spans the split direction. With R- = face links based in Q- and R+ = those based in Q+,
+   X = M(R-)_z and Y = M(R+)_z are centred (global symmetry) and G_Q-invariant, so rho^omega(Q-, Q+) >= corr(X, Y).
+
+If the face layer has long-range colour order, corr(X, Y) tends to m2/(m2 + O(1/d)) as the regions grow, close to 1,
+so (M_{d,m}(c)) FAILS for every c < 1/2. Differences from row 950 that a direct test must cover: A's face is finite
+with pinned edges (row 950 is periodic), and the readings are region averages across the split, not a Fourier mode.
+The strengthening of the order with beta (m2 = 0.024 at 2.6, lambda/L^3 = 0.19 at 6.0) is what would carry the
+failure along the weak-coupling tuning (ARGUED: the frustration geometry does not depend on beta, and the layer's
+classical stiffness, about 0.3 beta per bond against the 3D Heisenberg critical 0.69 (row 950 5.1), grows with beta).

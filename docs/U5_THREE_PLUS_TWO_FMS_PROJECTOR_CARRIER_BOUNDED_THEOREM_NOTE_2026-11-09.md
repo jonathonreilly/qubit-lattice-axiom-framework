@@ -14,19 +14,19 @@ reachability_to_target: supports
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Self-contained operator-algebraic, variational, and representation-theoretic theorems establishing exact noncommuting Fröhlich-Morchio-Strocchi projector defect decompositions for SU(2), U(5), and Spin(10)/so(10), the exact joint stabilizer K_{U(5)} = S(U(3)xU(2)){+-I_5}, the nonvanishing fermion-even two-site determinant-square carrier on Lambda^5(C^10), the global su(5) quartic potential minimum on the 3+2 orbit, the 25x25 Higgs Gram matrix spectrum and unbroken-subalgebra projector, and the single-link vs. multi-copy FMS defect scaling, without claiming dynamical Floquet vacuum selection or a continuum infrared mass gap."
+claim_type_reason: "Self-contained operator-algebraic, variational, and representation-theoretic theorems establishing exact noncommuting Fröhlich-Morchio-Strocchi projector defect decompositions for SU(2), U(5), and Spin(10)/so(10), the exact joint stabilizer K_{U(5)} = S(U(3)xU(2)){+-I_5}, the nonvanishing fermion-even two-site determinant-square carrier on Lambda^5(C^10), the global su(5) quartic potential minimum on the 3+2 orbit, the 25x25 Higgs Gram matrix spectrum and unbroken-subalgebra projector, the single-link vs. multi-copy FMS defect scaling on (C^2)^{otimes K} and (Lambda^3 C^5)^{otimes K}, the single-copy quantum CAR quartic Casimir hierarchy and exact 3+2 complementary projector on Lambda^4(C^5), and the exterior-power fermion Floquet tick quartic selector lambda_2 > 0 and chiral multiplet projectors on Lambda^n(C^5), without claiming continuum infrared mass-gap closure."
 target_claim_id: null
-target_blocker_text: "Establish exact noncommuting Fröhlich-Morchio-Strocchi projector defect identities across SU(2), U(5), and Spin(10)/so(10), prove the rank-three certification requirement, construct the fermion-even native carrier on Lambda^5(C^10) realizing S(U(3)xU(2)){+-I_5}, prove global 3+2 orbit selection for the quartic su(5) potential, diagonalize the joint Higgs Gram matrix on u(5), and establish single-link transport defect bounds alongside multi-copy coherent FMS defect scaling."
+target_blocker_text: "Establish exact noncommuting Fröhlich-Morchio-Strocchi projector defect identities across SU(2), U(5), and Spin(10)/so(10), prove the rank-three certification requirement, construct the fermion-even native carrier on Lambda^5(C^10) realizing S(U(3)xU(2)){+-I_5}, prove global 3+2 orbit selection for the quartic su(5) potential, diagonalize the joint Higgs Gram matrix on u(5), establish single-copy and multi-copy five-mode CAR 3+2 projector realizations, and derive the positive quartic selector lambda_2 > 0 and chiral multiplet projectors from the exterior-power fermion Floquet tick."
 source_of_blocker_text: user_goal
 artifact_role: theorem
-next_trace_action: "Derive the effective quartic coupling sign lambda_2 > 0 and multi-copy coherent state preparation directly from the coupled five-mode Floquet tick."
+next_trace_action: "Couple the verified U(5) 3+2 FMS projector strings, determinant-square carrier, and exterior-power Floquet tick to the four-dimensional lattice transfer-matrix and reflection-positivity lane."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
 ## 0. Scope, Premise Provenance, and Obligation Graph
 
-This note is self-contained on `main` and relies on no unlanded branch or external file. It proves eight algebraic, variational, and operator-theoretic results for gauge-invariant Fröhlich-Morchio-Strocchi (FMS) channel resolution, stabilizer realization, orbit selection, Gram-matrix spectral splitting, and multi-copy defect scaling in the $SU(2)$, $U(5)$, and $\mathrm{Spin}(10)/\mathfrak{so}(10)$ three-plus-two settings:
+This note is self-contained on `main` and relies on no unlanded branch or external file. It proves eleven algebraic, variational, and operator-theoretic results for gauge-invariant Fröhlich-Morchio-Strocchi (FMS) channel resolution, stabilizer realization, orbit selection, Gram-matrix spectral splitting, single-copy and multi-copy CAR defect scaling, and exterior-power Floquet quartic coupling in the $SU(2)$, $U(5)$, and $\mathrm{Spin}(10)/\mathfrak{so}(10)$ three-plus-two settings:
 
 1. **Theorem 1 (Noncommuting $SU(2)$ Adjoint Projector Defect Identity and State-$L^2$ Equality):** For any unital $*$-algebra $\mathcal{A}$, any self-adjoint triple $\Phi = (\Phi^1, \Phi^2, \Phi^3) \in (\mathcal{A}_{\mathrm{sa}})^3$, and any scale $r > 0$, the local projectors $P_\pm = \frac{1}{2}(I_{\mathcal{A}} \otimes I_2 \pm r^{-1}\sum_{a=1}^3 \Phi^a \otimes \sigma_a)$ satisfy an exact internal Hilbert-Schmidt equality separating the radial orbit defect from the noncommuting commutator defect with zero cross term. Local gauge covariance implies that the four projected two-end strings $\mathcal{S}_{s,s'}(X,Y) = \Psi_X^* P_s(\Phi_X)\mathcal{U}_{XY}P_{s'}(\Phi_Y)\Psi_Y$ are strictly gauge-invariant for any bi-covariant transporter $\mathcal{U}_{XY}$ (without assuming $\mathcal{U}_{XY}$ is unitary) and sum to $\Psi_X^* \mathcal{U}_{XY} \Psi_Y$.
 2. **Theorem 2 ($U(5)$ Three-Plus-Two Adjoint Projector Calculus, Fermionic Bilinear Identity, and Rank-Separation Certification):** For $A = A^* \in \mathcal{A} \otimes M_5(\mathbb{C})$ and distinct real target eigenvalues $a \neq b$, the linear Lagrange projectors $P_3(A) = (A - b I_5)/(a - b)$ and $P_2(A) = (a I_5 - A)/(a - b)$ satisfy $P_3(A)^2 - P_3(A) = (A - a I_5)(A - b I_5)/(a - b)^2$ and $\operatorname{Tr}_{M_5}(P_3(A)) - 3 I_{\mathcal{A}} = (\operatorname{Tr}_{M_5}(A) - (3a + 2b)I_{\mathcal{A}})/(a - b)$. On the five-flavor canonical anticommutation relation (CAR) algebra $\Lambda(\mathbb{C}^5)$, the fundamental bilinear matrix $C_{ik} = c_i^\dagger c_k$ satisfies the exact noncommuting quadratic identity $C^2 = (6 - n)C$ on each $n$-fermion sector $\Lambda^n \mathbb{C}^5$, so $P_{\mathrm{CAR}} = (6 - n)^{-1}C$ ($1 \le n \le 5$) is an exact idempotent ($P_{\mathrm{CAR}}^2 = P_{\mathrm{CAR}}$) whose internal trace is $\frac{n}{6-n} I_{\Lambda^n\mathbb{C}^5}$ (non-integer at $n = 2$). Moreover, an explicit state witness on $A_{(4)} \oplus A_{(2)}$ shows that vanishing quadratic defect $P_3(A)^2 - P_3(A) = 0$ and vanishing mean trace defect $\omega(\operatorname{Tr}_{M_5}(P_3(A)) - 3 I_{\mathcal{A}}) = 0$ still allow zero weight on the rank-three stratum unless the trace-variance defect $\omega((\operatorname{Tr}_{M_5}(P_3(A)) - 3 I_{\mathcal{A}})^2)$ is also controlled.
@@ -38,6 +38,9 @@ This note is self-contained on `main` and relies on no unlanded branch or extern
 6. **Theorem 6 (Global Quartic $\mathfrak{su}(5)$ Three-Plus-Two Orbit Selection via Cubic Discriminant):** Using an elementary derivative-free three-variable cubic discriminant identity $\Delta(u,v,w) = \frac{1}{2}r^6 - 27(uvw)^2 = (u-v)^2(v-w)^2(w-u)^2 \ge 0$, every traceless self-adjoint matrix $A \in \mathfrak{su}(5)_{\mathrm{sa}}$ with $\operatorname{Tr}(A^2) = s > 0$ satisfies the sharp fourth-moment bounds $\frac{7}{30}s^2 \le \operatorname{Tr}(A^4) \le \frac{13}{20}s^2$, with equality on the lower bound $\frac{7}{30}s^2$ if and only if $A$ lies in the three-plus-two unitary orbit of $\pm\sqrt{s/30}\operatorname{diag}(-2,-2,-2,3,3)$ and equality on the upper bound $\frac{13}{20}s^2$ if and only if $A$ lies in the four-plus-one unitary orbit of $\pm\sqrt{s/20}\operatorname{diag}(1,1,1,1,-4)$. Consequently, for all $\mu^2 > 0$, $\lambda_2 > 0$, and $30\lambda_1 + 7\lambda_2 > 0$, the quartic potential $V_{\mu,\lambda_1,\lambda_2}(A) = -\frac{\mu^2}{2}\operatorname{Tr}(A^2) + \frac{\lambda_1}{4}(\operatorname{Tr}(A^2))^2 + \frac{\lambda_2}{4}\operatorname{Tr}(A^4)$ attains its strict global minimum over $\mathfrak{su}(5)_{\mathrm{sa}}$ exclusively on the three-plus-two orbit.
 7. **Theorem 7 (Joint Higgs Gram Matrix Spectrum, Unbroken-Subalgebra Projector, and Noncommuting Pinch Identity):** For the joint datum $(A_0, \zeta)$ with $A_0 = a I_3 \oplus b I_2$ ($a \neq b$) and $|\zeta| = \kappa > 0$, the $25 \times 25$ infinitesimal gauge Gram operator $\mathcal{M}^2$ on $\mathfrak{u}(5)_{\mathrm{sa}}$ decomposes into three orthogonal eigenspaces: $\ker \mathcal{M}^2 = \operatorname{Lie}(H) = \mathfrak{su}(3) \oplus \mathfrak{su}(2) \oplus \mathfrak{u}(1)_Y$ (eigenvalue $0$, multiplicity $12$), the off-diagonal coset space $\mathfrak{m}_{3\times 2}$ (eigenvalue $(a - b)^2 > 0$, multiplicity $12$), and the central generator $T_0 = \frac{1}{\sqrt{5}}I_5$ (eigenvalue $20\kappa^2 > 0$, multiplicity $1$). The orthogonal projector onto $\operatorname{Lie}(H)$ has the exact polynomial form $\Pi_{\operatorname{Lie}(H)}(X) = X - (a-b)^{-2}[A_0,[A_0,X]] - \frac{1}{5}\operatorname{Tr}(X)I_5 = P_3(A_0)X P_3(A_0) + P_2(A_0)X P_2(A_0) - \frac{1}{5}\operatorname{Tr}(X)I_5$, and for any noncommuting $A \in \mathcal{A} \otimes M_5(\mathbb{C})$ the pinch-commutator difference equals $(P_3(A)X P_3(A) + P_2(A)X P_2(A)) - (X - (a-b)^{-2}[A,[A,X]]) = D_A X + X D_A$ where $D_A = P_3(A)^2 - P_3(A)$.
 8. **Theorem 8 (Single-Link Two-Sided Transport Floor and Multi-Copy Coherent FMS Defect Scaling):** On a single link register $\Lambda^5 \mathbb{C}^{10}$, every scalar multiple $T(\gamma) = \gamma D_{xy}$ ($\gamma \in \mathbb{C}$) satisfies the exact state identity $D_+(\omega; \gamma) + D_-(\omega; \gamma) = 2 - (1 - (|\gamma|^2 - 1)^2)(p_0 + p_5) \ge 1$ in every state $\omega$. In contrast, on the $K$-copy symmetric coherent representation $(\mathbb{C}^2)^{\otimes K}$ with $\Phi_K^a = \frac{1}{K}\sum_{\nu=1}^K \sigma_a^{(\nu)}$ and state $|\psi_K\rangle = |+\rangle^{\otimes K}$, $|\psi_K\rangle$ is an exact eigenvector of $\sum_{a=1}^3 (\Phi_K^a)^2$ with eigenvalue $1 + \frac{2}{K}$, yielding closed-form rational idempotence defects $\omega_K(|P_\pm(1)^2 - P_\pm(1)|_{\mathrm{HS}}^2) = \frac{K+1}{K^3}$ at classical radius $r = 1$ and $\omega_K(|P_\pm(r_K)^2 - P_\pm(r_K)|_{\mathrm{HS}}^2) = \frac{1}{2K(K+2)}$ at Casimir-matched radius $r_K = \sqrt{1 + 2/K}$, while on $(\Lambda^5\mathbb{C}^{10})^{\otimes K}$ the $K$-copy coherent determinant average $\widehat{D}_K = \frac{2}{K}\sum_{\nu=1}^K D_{xy}^{(\nu)}$ has exact rational transport defect $\varpi_K((\widehat{D}_K^\dagger \widehat{D}_K - I)^2) = \varpi_K((\widehat{D}_K \widehat{D}_K^\dagger - I)^2) = \frac{3K+2}{K^3}$.
+9. **Theorem 9 (Single-Copy Quantum CAR Quartic Casimir Hierarchy and Exact $3+2$ Complementary Projector on $\Lambda^4 \mathbb{C}^5$):** On the five-mode CAR exterior algebra $\Lambda(\mathbb{C}^5) = \bigoplus_{n=0}^5 \Lambda^n \mathbb{C}^5$, the canonical $U(5)$-covariant traceless bilinear operator $\widehat{A} := C - \frac{N}{5}I_5 \in \operatorname{End}(\Lambda(\mathbb{C}^5)) \otimes M_5(\mathbb{C})$ has exact scalar internal traces $\operatorname{Tr}_{M_5}(\widehat{A}^2) = \frac{6n(5-n)}{5}I_{\Lambda^n\mathbb{C}^5}$ and $\operatorname{Tr}_{M_5}(\widehat{A}^4) = \frac{6n(5-n)(36(5-n)^2 - 6n(5-n) + n^2)}{125}I_{\Lambda^n\mathbb{C}^5}$ on each $n$-fermion sector. Across the four nontrivial fermion sectors $n \in \{1,2,3,4\}$, its dimensionless fourth-moment ratio $\mathcal{Q}_n := \operatorname{Tr}_{M_5}(\widehat{A}^4)/(\operatorname{Tr}_{M_5}(\widehat{A}^2))^2$ satisfies the strict rational ordering $\mathcal{Q}_4 = \frac{7}{30} < \mathcal{Q}_3 = \frac{13}{20} < \mathcal{Q}_2 = \frac{73}{45} < \mathcal{Q}_1 = \frac{553}{120}$. In particular, $n = 4$ ($\Lambda^4\mathbb{C}^5 \cong \bar{\mathbf{5}}$) uniquely attains the universal $3+2$ lower bound $\frac{7}{30}$ of Theorem 6(2), and the complementary pair $P_2^{\mathrm{CAR}} := \frac{1}{2}C|_{\Lambda^4\mathbb{C}^5}$ and $P_3^{\mathrm{CAR}} := I_5 - \frac{1}{2}C|_{\Lambda^4\mathbb{C}^5}$ realizes an exact single-copy ($K = 1$) noncommuting $3+2$ orthogonal resolution of $I_5$ with $\operatorname{Tr}_{M_5}(P_3^{\mathrm{CAR}}) = 3 I_{\Lambda^4\mathbb{C}^5}$, $\operatorname{Tr}_{M_5}(P_2^{\mathrm{CAR}}) = 2 I_{\Lambda^4\mathbb{C}^5}$, and identically zero certification defect $\mathcal{D}_{3+2}(A_{\mathrm{CAR}}^{(4)}) = 0$ on all of $\Lambda^4\mathbb{C}^5$.
+10. **Theorem 10 ($K$-Copy Five-Mode CAR Three-Plus-Two Coherent State and Dual Projector Scaling on $(\Lambda^3 \mathbb{C}^5)^{\otimes K}$):** On the $K$-copy three-fermion CAR register $\mathcal{H}_{3,K} = (\Lambda^3 \mathbb{C}^5)^{\otimes K}$ ($\dim = 10^K$) carrying $(C_K)_{ik} = \frac{1}{K}\sum_{\nu=1}^K c_{\nu,i}^\dagger c_{\nu,k}$, $A_K = (a - b)C_K + b I_5$ ($P_3(A_K) = C_K$), and the Slater product state $|\Omega_{3+2}^{(K)}\rangle = (c_1^\dagger c_2^\dagger c_3^\dagger|0\rangle)^{\otimes K}$, every matrix entry of $P_3(A_K)^2 - P_3(A_K)$ satisfies $(P_3(A_K)^2 - P_3(A_K))_{ik}|\Omega_{3+2}^{(K)}\rangle = \frac{2}{K}(P_3(A_K))_{ik}|\Omega_{3+2}^{(K)}\rangle$. Consequently, $\operatorname{Tr}_{M_5}(P_3(A_K)) = 3 I$, $\omega_K^{(3+2)}(|P_3(A_K)|_{\mathrm{HS}}^2) = 3 + \frac{6}{K}$, and $\omega_K^{(3+2)}(\mathcal{D}_{3+2}(A_K)) = \omega_K^{(3+2)}(|P_3(A_K)^2 - P_3(A_K)|_{\mathrm{HS}}^2) = \frac{12(K + 2)}{K^3}$, while the renormalized projector $\widetilde{P}_{3,K} := \frac{K}{K + 2}C_K$ (which reduces at $K = 1$ to $P_{\mathrm{CAR}}^{(3)} = \frac{1}{3}C$ of Theorem 2(2)) has identically zero quadratic idempotence defect $\omega_K^{(3+2)}(|\widetilde{P}_{3,K}^2 - \widetilde{P}_{3,K}|_{\mathrm{HS}}^2) = 0$ for all $K \ge 1$ and trace-variance defect $\frac{36}{(K + 2)^2}$.
+11. **Theorem 11 (Exterior-Power Fermion Floquet Tick Quartic Selector $\lambda_2 > 0$, Chiral Multiplet Projectors, and Anomaly Cancellation on $\Lambda^n \mathbb{C}^5$):** For any $A \in \mathfrak{su}(5)_{\mathrm{sa}}$ acting via $H_n(A) := d\Gamma_n(A)$ on $\Lambda^n \mathbb{C}^5$, the quadratic and fourth-moment traces satisfy $\operatorname{Tr}_{\Lambda^n\mathbb{C}^5}(H_n(A)^2) = \binom{3}{n-1}\operatorname{Tr}(A^2)$ ($1 \le n \le 4$), $\operatorname{Tr}_{\Lambda^1\mathbb{C}^5}(H_1(A)^4) = \operatorname{Tr}_{\Lambda^4\mathbb{C}^5}(H_4(A)^4) = \operatorname{Tr}(A^4)$, and $\operatorname{Tr}_{\Lambda^2\mathbb{C}^5}(H_2(A)^4) = \operatorname{Tr}_{\Lambda^3\mathbb{C}^5}(H_3(A)^4) = 3(\operatorname{Tr}(A^2))^2 - 3\operatorname{Tr}(A^4)$. Consequently, in the fourth-order expansion of the unitary fermion Floquet tick $U_{\mathcal{R}}(\tau; A) = \exp(-i\tau d\Gamma_{\mathcal{R}}(A))$ ($\tau > 0$), the quartic action term $-\frac{\tau^4}{24}\operatorname{Tr}_{\mathcal{R}}(H(A)^4)$ has strictly positive $\operatorname{Tr}(A^4)$ coupling $\lambda_2(\Lambda^2\mathbb{C}^5) = \lambda_2(\Lambda^3\mathbb{C}^5) = \frac{\tau^4}{2} > 0$, $\lambda_2(\Lambda^4\mathbb{C}^5 \oplus \Lambda^2\mathbb{C}^5) = \frac{\tau^4}{3} > 0$, and $\lambda_2(\Lambda(\mathbb{C}^5)) = \frac{2\tau^4}{3} > 0$, selecting the $3+2$ orbit by Theorem 6. Furthermore, the second-quantized Lagrange polynomials $\Pi^{(p,q)}(A)$ in $N_3^{(n)}(A) = d\Gamma_n(P_3(A))$ decompose $\mathcal{R}_{\mathrm{gen}} = \Lambda^4\mathbb{C}^5 \oplus \Lambda^2\mathbb{C}^5 \cong \bar{\mathbf{5}} \oplus \mathbf{10}$ into the five exact Standard Model chiral multiplets of dimensions $2 + 3 + 3 + 6 + 1 = 15$ with exact gauge anomaly cancellation.
 
 | Obligation item | Status in this note | Exact scope |
 |---|---|---|
@@ -48,8 +51,10 @@ This note is self-contained on `main` and relies on no unlanded branch or extern
 | Native fermion-even determinant-square carrier $\mathcal{O}_{xy}^{(10)} = B_x D_{xy} B_y$ on $\Lambda^5 \mathbb{C}^{10}$ | Proved here (Theorem 5) | Two five-mode matter sites $x,y$ and one half-filled link register $\Lambda^5 \mathbb{C}^{10}$ |
 | Global quartic $\mathfrak{su}(5)$ potential $3+2$ orbit selection and sharp fourth-moment bounds | Proved here (Theorem 6) | All $A \in \mathfrak{su}(5)_{\mathrm{sa}}$ and parameters $\mu^2 > 0$, $\lambda_2 > 0$, $30\lambda_1 + 7\lambda_2 > 0$ |
 | Joint $25 \times 25$ Higgs Gram matrix spectrum, $\Pi_{\operatorname{Lie}(H)}$ projector, and pinch identity | Proved here (Theorem 7) | Full Lie algebra $\mathfrak{u}(5)_{\mathrm{sa}}$ and noncommuting $A, X \in \mathcal{A} \otimes M_5(\mathbb{C})$ |
-| Single-link two-sided transport bound $\ge 1$ and $K$-copy coherent FMS defect scaling | Proved here (Theorem 8) | All states on $\Lambda^5 \mathbb{C}^{10}$ and $K$-copy coherent registers $(\mathbb{C}^2)^{\otimes K}$ ($K \ge 1$) |
-| Microscopic derivation of effective quartic coupling $\lambda_2 > 0$ from the Floquet tick | Open downstream obligation | Requires deriving the effective potential from the coupled unitary tick |
+| Single-link two-sided transport bound $\ge 1$ and $K$-copy coherent $SU(2)$ / link FMS defect scaling | Proved here (Theorem 8) | All states on $\Lambda^5 \mathbb{C}^{10}$ and $K$-copy registers $(\mathbb{C}^2)^{\otimes K}$, $(\Lambda^5\mathbb{C}^{10})^{\otimes K}$ |
+| Single-copy quantum CAR fourth-moment hierarchy $\mathcal{Q}_4 = \frac{7}{30}$ and exact $3+2$ projector on $\Lambda^4 \mathbb{C}^5$ | Proved here (Theorem 9) | Canonical CAR operator $\widehat{A} = C - \frac{N}{5}I_5$ across $\Lambda^n \mathbb{C}^5$ and $P_3^{\mathrm{CAR}} = I_5 - \frac{1}{2}C$ on $\Lambda^4 \mathbb{C}^5$ |
+| $K$-copy five-mode CAR $3+2$ coherent state and dual projector scaling on $(\Lambda^3 \mathbb{C}^5)^{\otimes K}$ | Proved here (Theorem 10) | All $K \ge 1$ on $(\Lambda^3 \mathbb{C}^5)^{\otimes K}$ for both $P_3(A_K) = C_K$ and $\widetilde{P}_{3,K} = \frac{K}{K+2}C_K$ |
+| Microscopic derivation of $\lambda_2 > 0$ and chiral generation projectors $\Pi^{(p,q)}(A)$ from the fermion Floquet tick | Proved here (Theorem 11) | Exterior sectors $\Lambda^n \mathbb{C}^5$, chiral generation $\Lambda^4\mathbb{C}^5 \oplus \Lambda^2\mathbb{C}^5$, and full $\Lambda(\mathbb{C}^5)$ |
 
 **Prior repo context and literature credit:** The representation-theoretic slot matching of one Standard Model generation into $SU(5)$ is treated in `docs/SU5_EMBEDDING_FROM_GRAPH_FIRST_SURFACE_THEOREM_NOTE_2026-05-07.md` and `docs/SU5_DECOMPOSITION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md`. The classical orbit-projector idea for gauge-invariant composites originates in J. Fröhlich, G. Morchio, and F. Strocchi, *Nuclear Physics B* **190** (1981) 553–582, and the classical $\mathfrak{su}(N)$ quartic potential minimization is studied in L.-F. Li, *Physical Review D* **9** (1974) 1723–1739.
 
@@ -709,15 +714,289 @@ By mutual orthonormality of $|\Theta_K\rangle$, $\{|\theta_\perp^{(\nu)}\rangle\
 
 ---
 
-## 9. Paired Runner Verification Summary
+## 9. Single-Copy Quantum CAR Quartic Casimir Hierarchy and Exact $3+2$ Complementary Projector on $\Lambda^4 \mathbb{C}^5$
 
-The primary runner [`scripts/frontier_u5_three_plus_two_fms_projector_carrier.py`](../scripts/frontier_u5_three_plus_two_fms_projector_carrier.py) verifies every identity in Theorems 1–8 with exact rational (`fractions.Fraction`) and integer Fock-space arithmetic:
+On the five-mode CAR exterior algebra $\Lambda(\mathbb{C}^5) = \bigoplus_{n=0}^5 \Lambda^n \mathbb{C}^5$, let $C = (c_i^\dagger c_k)_{i,k=1}^5 \in \operatorname{End}(\Lambda(\mathbb{C}^5)) \otimes M_5(\mathbb{C})$ be the fundamental bilinear matrix of Theorem 2(2) and let $N = \operatorname{Tr}_{M_5}(C) = \sum_{i=1}^5 c_i^\dagger c_i$. Define the canonical $U(5)$-covariant traceless self-adjoint operator matrix
+$$
+\widehat{A} := C - \frac{N}{5}\,I_5 \in \operatorname{End}\!\left(\Lambda(\mathbb{C}^5)\right) \otimes M_5(\mathbb{C}), \qquad
+\operatorname{Tr}_{M_5}(\widehat{A}) = 0.
+$$
+
+### Theorem 9 (Single-Copy Quantum CAR Quartic Casimir Hierarchy and Exact $3+2$ Complementary Projector on $\Lambda^4 \mathbb{C}^5$)
+
+1. **Exact scalar internal trace moments of $\widehat{A}$ on every sector $\Lambda^n \mathbb{C}^5$:** On each $n$-fermion sector $\Lambda^n \mathbb{C}^5$ ($0 \le n \le 5$), the internal traces $\operatorname{Tr}_{M_5}(\widehat{A}^2)$ and $\operatorname{Tr}_{M_5}(\widehat{A}^4)$ are exact scalar multiples of $I_{\Lambda^n \mathbb{C}^5}$:
+   $$
+   \operatorname{Tr}_{M_5}\!\left(\widehat{A}^2\right) = \frac{6 n (5 - n)}{5}\,I_{\Lambda^n \mathbb{C}^5}, \qquad
+   \operatorname{Tr}_{M_5}\!\left(\widehat{A}^4\right) = \frac{6 n (5 - n)\bigl(36(5 - n)^2 - 6n(5 - n) + n^2\bigr)}{125}\,I_{\Lambda^n \mathbb{C}^5}.
+   $$
+2. **Strict quantum fourth-moment hierarchy across $n \in \{1, 2, 3, 4\}$:** On the four nontrivial fermion sectors $n \in \{1, 2, 3, 4\}$, where $\operatorname{Tr}_{M_5}(\widehat{A}^2) = s_n I_{\Lambda^n \mathbb{C}^5}$ with $s_n = \frac{6n(5-n)}{5} > 0$, the dimensionless quantum fourth-moment ratio
+   $$
+   \mathcal{Q}_n := \frac{\operatorname{Tr}_{M_5}(\widehat{A}^4)}{\left(\operatorname{Tr}_{M_5}(\widehat{A}^2)\right)^2}
+   = \frac{36(5 - n)^2 - 6n(5 - n) + n^2}{30 n (5 - n)}
+   $$
+   satisfies the strict rational ordering
+   $$
+   \mathcal{Q}_4 = \frac{7}{30} \;<\; \mathcal{Q}_3 = \frac{13}{20} \;<\; \mathcal{Q}_2 = \frac{73}{45} \;<\; \mathcal{Q}_1 = \frac{553}{120}.
+   $$
+   In particular, $n = 4$ ($\Lambda^4 \mathbb{C}^5 \cong \bar{\mathbf{5}}$) uniquely attains the universal $3+2$ fourth-moment lower bound $\frac{7}{30}$ of Theorem 6(2) across all nontrivial CAR sectors, while $n = 3$ ($\Lambda^3 \mathbb{C}^5$) attains the $4+1$ value $\frac{13}{20}$ and $n \in \{1, 2\}$ exceed $\frac{13}{20}$.
+3. **Exact single-copy ($K = 1$) noncommuting $3+2$ projector pair and zero certification defect on $\Lambda^4 \mathbb{C}^5$:** On $\Lambda^4 \mathbb{C}^5$ ($n = 4$), define
+   $$
+   P_2^{\mathrm{CAR}} := P_{\mathrm{CAR}}^{(4)} = \frac{1}{2}\,C|_{\Lambda^4 \mathbb{C}^5}, \qquad
+   P_3^{\mathrm{CAR}} := I_5 - P_2^{\mathrm{CAR}} = I_5 - \frac{1}{2}\,C|_{\Lambda^4 \mathbb{C}^5}.
+   $$
+   Then $(P_3^{\mathrm{CAR}}, P_2^{\mathrm{CAR}})$ is an exact single-copy noncommuting orthogonal resolution of $I_5$ in $\operatorname{End}(\Lambda^4 \mathbb{C}^5) \otimes M_5(\mathbb{C})$ with exact integer internal traces:
+   $$
+   \left(P_3^{\mathrm{CAR}}\right)^2 = P_3^{\mathrm{CAR}}, \qquad
+   \left(P_2^{\mathrm{CAR}}\right)^2 = P_2^{\mathrm{CAR}}, \qquad
+   P_3^{\mathrm{CAR}} P_2^{\mathrm{CAR}} = 0, \qquad
+   P_3^{\mathrm{CAR}} + P_2^{\mathrm{CAR}} = I_5,
+   $$
+   $$
+   \operatorname{Tr}_{M_5}\!\left(P_3^{\mathrm{CAR}}\right) = 3\,I_{\Lambda^4 \mathbb{C}^5}, \qquad
+   \operatorname{Tr}_{M_5}\!\left(P_2^{\mathrm{CAR}}\right) = 2\,I_{\Lambda^4 \mathbb{C}^5}.
+   $$
+   Consequently, for any distinct real target eigenvalues $a \neq b$, the single-copy CAR operator $A_{\mathrm{CAR}}^{(4)} := a P_3^{\mathrm{CAR}} + b P_2^{\mathrm{CAR}} = a I_5 - \frac{a - b}{2} C|_{\Lambda^4 \mathbb{C}^5}$ has $P_3(A_{\mathrm{CAR}}^{(4)}) = P_3^{\mathrm{CAR}}$ and **identically zero** joint three-plus-two certification defect $\mathcal{D}_{3+2}(A_{\mathrm{CAR}}^{(4)}) = 0$ in every state $\omega$ on $\Lambda^4 \mathbb{C}^5$.
+
+#### Proof of Theorem 9
+
+**(1)** On $\Lambda^n \mathbb{C}^5$, $N = n I$. For $n \in \{0, 5\}$, $C = 0$ (at $n = 0$) or $C = I_5$ (at $n = 5$), so $\widehat{A} = 0$ and both formulas give $0$. For $1 \le n \le 4$, Theorem 2(2) shows that $P := P_{\mathrm{CAR}}^{(n)} = \frac{1}{6 - n} C$ and $Q := I_5 - P$ satisfy $P^2 = P$, $Q^2 = Q$, $PQ = QP = 0$, $\operatorname{Tr}_{M_5}(P) = \frac{n}{6 - n} I$, and $\operatorname{Tr}_{M_5}(Q) = (5 - \frac{n}{6 - n})I = \frac{6(5 - n)}{6 - n} I$. In terms of $P$ and $Q$,
+$$
+\widehat{A} = (6 - n)P - \frac{n}{5}(P + Q) = \frac{6(5 - n)}{5} P - \frac{n}{5} Q.
+$$
+Because $P$ and $Q$ are orthogonal idempotents ($P^2 = P$, $Q^2 = Q$, $PQ = QP = 0$), every power $\widehat{A}^m$ ($m \ge 1$) satisfies
+$$
+\widehat{A}^m = \left(\frac{6(5 - n)}{5}\right)^m P + \left(-\frac{n}{5}\right)^m Q.
+$$
+Taking the internal trace $\operatorname{Tr}_{M_5}$ for $m = 2$ and $m = 4$ yields
+$$
+\operatorname{Tr}_{M_5}\!\left(\widehat{A}^2\right)
+= \left(\frac{36(5 - n)^2}{25}\cdot\frac{n}{6 - n} + \frac{n^2}{25}\cdot\frac{6(5 - n)}{6 - n}\right) I
+= \frac{6n(5 - n)}{25(6 - n)}\bigl(6(5 - n) + n\bigr) I
+= \frac{6n(5 - n)}{5}\,I,
+$$
+$$
+\operatorname{Tr}_{M_5}\!\left(\widehat{A}^4\right)
+= \frac{6n(5 - n)}{625(6 - n)}\left(6^3(5 - n)^3 + n^3\right) I.
+$$
+Factoring $6^3(5 - n)^3 + n^3 = \bigl(6(5 - n) + n\bigr)\bigl(36(5 - n)^2 - 6n(5 - n) + n^2\bigr) = 5(6 - n)\bigl(36(5 - n)^2 - 6n(5 - n) + n^2\bigr)$ cancels $5(6 - n)$ against $625(6 - n)$ and proves the formula for $\operatorname{Tr}_{M_5}(\widehat{A}^4)$.
+
+**(2)** Dividing $\operatorname{Tr}_{M_5}(\widehat{A}^4)$ by $(\operatorname{Tr}_{M_5}(\widehat{A}^2))^2 = \frac{36 n^2 (5 - n)^2}{25} I$ gives $\mathcal{Q}_n = \frac{36(5 - n)^2 - 6n(5 - n) + n^2}{30 n (5 - n)}$. Evaluating at $n = 4, 3, 2, 1$ yields
+$$
+\mathcal{Q}_4 = \frac{36(1) - 24 + 16}{120} = \frac{28}{120} = \frac{7}{30} = \frac{84}{360}, \qquad
+\mathcal{Q}_3 = \frac{36(4) - 36 + 9}{180} = \frac{117}{180} = \frac{13}{20} = \frac{234}{360},
+$$
+$$
+\mathcal{Q}_2 = \frac{36(9) - 36 + 4}{180} = \frac{292}{180} = \frac{73}{45} = \frac{584}{360}, \qquad
+\mathcal{Q}_1 = \frac{36(16) - 24 + 1}{120} = \frac{553}{120} = \frac{1659}{360}.
+$$
+
+**(3)** At $n = 4$, Theorem 2(2) gives $(P_{\mathrm{CAR}}^{(4)})^2 = P_{\mathrm{CAR}}^{(4)}$ and $\operatorname{Tr}_{M_5}(P_{\mathrm{CAR}}^{(4)}) = \frac{4}{6 - 4} I = 2 I$. Hence $P_2^{\mathrm{CAR}} = P_{\mathrm{CAR}}^{(4)}$ and $P_3^{\mathrm{CAR}} = I_5 - P_{\mathrm{CAR}}^{(4)}$ are orthogonal self-adjoint projections with internal traces $2 I$ and $3 I$, so $(P_3^{\mathrm{CAR}})^2 - P_3^{\mathrm{CAR}} = 0$ and $\operatorname{Tr}_{M_5}(P_3^{\mathrm{CAR}}) - 3 I = 0$ hold identically on $\Lambda^4 \mathbb{C}^5$. $\blacksquare$
+
+---
+
+## 10. $K$-Copy Five-Mode CAR Three-Plus-Two Coherent State and Dual Projector Scaling on $(\Lambda^3 \mathbb{C}^5)^{\otimes K}$
+
+For each integer $K \ge 1$, let $\mathcal{H}_{3,K} := (\Lambda^3 \mathbb{C}^5)^{\otimes K}$ ($\dim \mathcal{H}_{3,K} = \binom{5}{3}^K = 10^K$) be the $K$-copy three-fermion CAR Hilbert space, where copy $\nu \in \{1,\dots,K\}$ carries five canonical anticommutation modes $c_{\nu,1},\dots,c_{\nu,5}$ constrained to the three-fermion subspace $N_\nu = \sum_{i=1}^5 c_{\nu,i}^\dagger c_{\nu,i} = 3 I$. Define the $K$-copy symmetric bilinear operator matrix $C_K \in \operatorname{End}(\mathcal{H}_{3,K}) \otimes M_5(\mathbb{C})$ with entries
+$$
+(C_K)_{ik} := \frac{1}{K}\sum_{\nu=1}^K c_{\nu,i}^\dagger c_{\nu,k},
+$$
+and for distinct real target eigenvalues $a \neq b$ with $3a + 2b = 0$ (e.g., $a = -2, b = 3$), define the $K$-copy traceless self-adjoint $U(5)$ adjoint composite
+$$
+A_K := (a - b) C_K + b I_5, \quad\text{so that}\quad P_3(A_K) = \frac{A_K - b I_5}{a - b} = C_K, \qquad P_2(A_K) = I_5 - C_K.
+$$
+Let $|\Omega_{3+2}\rangle := c_1^\dagger c_2^\dagger c_3^\dagger |0\rangle \in \Lambda^3 \mathbb{C}^5$ be the color-filled Slater determinant state on a single copy, and let
+$$
+|\Omega_{3+2}^{(K)}\rangle := |\Omega_{3+2}\rangle^{\otimes K} \in \mathcal{H}_{3,K}, \qquad
+\omega_K^{(3+2)}(X) := \left\langle \Omega_{3+2}^{(K)},\, X \Omega_{3+2}^{(K)}\right\rangle.
+$$
+
+### Theorem 10 ($K$-Copy Five-Mode CAR Three-Plus-Two Coherent State and Dual Projector Scaling on $(\Lambda^3 \mathbb{C}^5)^{\otimes K}$)
+
+1. **Exact state-eigenvalue relation for $P_3(A_K)^2 - P_3(A_K)$:** On $\mathcal{H}_{3,K}$, $\operatorname{Tr}_{M_5}(P_3(A_K)) = 3 I_{\mathcal{H}_{3,K}}$ and $\operatorname{Tr}_{M_5}(A_K) = (3a + 2b)I_{\mathcal{H}_{3,K}} = 0$ hold identically as operator equations. Moreover, for every pair of matrix indices $(i,k) \in \{1,\dots,5\}^2$, the matrix product $(C_K^2)_{ik} = \sum_{j=1}^5 (C_K)_{ij}(C_K)_{jk}$ acts on the coherent state $|\Omega_{3+2}^{(K)}\rangle$ via the exact identity
+   $$
+   \left(P_3(A_K)^2 - P_3(A_K)\right)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle
+   = \frac{2}{K}\,\left(P_3(A_K)\right)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle.
+   $$
+2. **Exact rational expectations of the unrenormalized projector $P_3(A_K)$ and joint certification functional $\mathcal{D}_{3+2}(A_K)$:** In the state $\omega_K^{(3+2)}$,
+   $$
+   \omega_K^{(3+2)}\!\left(\left|P_3(A_K)\right|_{\mathrm{HS}}^2\right) = 3 + \frac{6}{K}, \qquad
+   \omega_K^{(3+2)}\!\left(\left(\operatorname{Tr}_{M_5}(P_3(A_K)) - 3 I\right)^2\right) = 0,
+   $$
+   and the joint three-plus-two certification functional $\mathcal{D}_{3+2}(A_K)$ of Theorem 2(3) satisfies the exact rational law
+   $$
+   \omega_K^{(3+2)}\!\left(\mathcal{D}_{3+2}(A_K)\right)
+   = \omega_K^{(3+2)}\!\left(\left|P_3(A_K)^2 - P_3(A_K)\right|_{\mathrm{HS}}^2\right)
+   = \frac{12(K + 2)}{K^3}.
+   $$
+3. **Exact state idempotence of the renormalized $K$-copy CAR projector $\widetilde{P}_{3,K}$:** Define the renormalized $K$-copy CAR projector
+   $$
+   \widetilde{P}_{3,K} := \frac{K}{K + 2}\,C_K = \frac{K}{K + 2}\,P_3(A_K)
+   $$
+   (which reduces at $K = 1$ to the single-copy idempotent $P_{\mathrm{CAR}}^{(3)} = \frac{1}{3}C$ of Theorem 2(2)). Then for every $K \ge 1$ and every $(i,k) \in \{1,\dots,5\}^2$,
+   $$
+   \left(\widetilde{P}_{3,K}^2 - \widetilde{P}_{3,K}\right)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle = 0, \qquad
+   \omega_K^{(3+2)}\!\left(\left|\widetilde{P}_{3,K}^2 - \widetilde{P}_{3,K}\right|_{\mathrm{HS}}^2\right) = 0,
+   $$
+   while its internal trace $\operatorname{Tr}_{M_5}(\widetilde{P}_{3,K}) = \frac{3K}{K + 2} I_{\mathcal{H}_{3,K}}$ has exact trace-variance defect
+   $$
+   \omega_K^{(3+2)}\!\left(\left(\operatorname{Tr}_{M_5}(\widetilde{P}_{3,K}) - 3 I\right)^2\right) = \frac{36}{(K + 2)^2}.
+   $$
+
+#### Proof of Theorem 10
+
+**(1)** Since each copy $\nu$ lies in $\Lambda^3 \mathbb{C}^5$, $\sum_{i=1}^5 c_{\nu,i}^\dagger c_{\nu,i} = 3 I$, so $\operatorname{Tr}_{M_5}(C_K) = \frac{1}{K}\sum_{\nu=1}^K 3 I = 3 I$. On a single copy $|\Omega_{3+2}\rangle = c_1^\dagger c_2^\dagger c_3^\dagger |0\rangle$, modes $1,2,3$ are occupied and modes $4,5$ are empty. Thus:
+- For $k \in \{4,5\}$, $c_{\nu,k}|\Omega_{3+2}\rangle = 0$ for every $\nu$, so $(C_K)_{jk}|\Omega_{3+2}^{(K)}\rangle = 0$ for all $j \in \{1,\dots,5\}$ and $k \in \{4,5\}$, which immediately gives $(C_K^2 - C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle = 0 = \frac{2}{K}(C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle$ whenever $k \in \{4,5\}$.
+- For $k \in \{1,2,3\}$ and $j \in \{1,2,3\}$, $c_{\nu,j}^\dagger c_{\nu,k}|\Omega_{3+2}\rangle = \delta_{jk}|\Omega_{3+2}\rangle$ (since for $j \neq k \in \{1,2,3\}$, mode $j$ is already occupied in $c_{\nu,k}|\Omega_{3+2}\rangle$), so $(C_K)_{jk}|\Omega_{3+2}^{(K)}\rangle = \delta_{jk}|\Omega_{3+2}^{(K)}\rangle$.
+- For $k \in \{1,2,3\}$ and $j \in \{4,5\}$, let $|k \to j\rangle_\nu$ denote the $K$-copy product state with the particle-hole excitation $c_{\nu,j}^\dagger c_{\nu,k}|\Omega_{3+2}\rangle$ in copy $\nu$ and $|\Omega_{3+2}\rangle$ in all other copies $\mu \neq \nu$. Then $(C_K)_{jk}|\Omega_{3+2}^{(K)}\rangle = \frac{1}{K}\sum_{\nu=1}^K |k \to j\rangle_\nu$.
+
+Now fix $k \in \{1,2,3\}$ and any $i \in \{1,\dots,5\}$, and split $\sum_{j=1}^5 (C_K)_{ij}(C_K)_{jk}|\Omega_{3+2}^{(K)}\rangle$ into $j \in \{1,2,3\}$ and $j \in \{4,5\}$. The sum over $j \in \{1,2,3\}$ gives $\sum_{j=1}^3 (C_K)_{ij}\delta_{jk}|\Omega_{3+2}^{(K)}\rangle = (C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle$. Therefore,
+$$
+\left(C_K^2 - C_K\right)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle
+= \sum_{j=4}^5 (C_K)_{ij}(C_K)_{jk}\left|\Omega_{3+2}^{(K)}\right\rangle
+= \frac{1}{K^2}\sum_{j=4}^5 \sum_{\mu=1}^K \sum_{\nu=1}^K c_{\mu,i}^\dagger c_{\mu,j} |k \to j\rangle_\nu.
+$$
+For $j \in \{4,5\}$ and $\mu \neq \nu$, copy $\mu$ of $|k \to j\rangle_\nu$ is in the unexcited state $|\Omega_{3+2}\rangle$, which has zero occupation in mode $j \in \{4,5\}$, so $c_{\mu,j}|k \to j\rangle_\nu = 0$ whenever $\mu \neq \nu$. Only the diagonal terms $\mu = \nu$ survive, and on copy $\nu$ we have $c_{\nu,i}^\dagger c_{\nu,j} c_{\nu,j}^\dagger c_{\nu,k}|\Omega_{3+2}\rangle = c_{\nu,i}^\dagger c_{\nu,k}|\Omega_{3+2}\rangle$ because mode $j \in \{4,5\}$ is empty in $|\Omega_{3+2}\rangle$. Summing over the two weak modes $j \in \{4,5\}$ (which gives an identical contribution for $j = 4$ and $j = 5$) yields
+$$
+\left(C_K^2 - C_K\right)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle
+= \frac{2}{K}\cdot\frac{1}{K}\sum_{\nu=1}^K c_{\nu,i}^\dagger c_{\nu,k}\left|\Omega_{3+2}^{(K)}\right\rangle
+= \frac{2}{K}\,(C_K)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle.
+$$
+
+**(2)** Since $C_K^* = C_K$ in $\operatorname{End}(\mathcal{H}_{3,K}) \otimes M_5(\mathbb{C})$ (i.e., $((C_K)_{ki})^\dagger = (C_K)_{ik}$), we have
+$$
+\omega_K^{(3+2)}\!\left(|C_K|_{\mathrm{HS}}^2\right)
+= \sum_{i,k=1}^5 \left\|(C_K)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle\right\|^2.
+$$
+From the proof of part (1), the only nonzero vectors $(C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle$ are:
+- the $3$ diagonal color entries $i = k \in \{1,2,3\}$, where $(C_K)_{ii}|\Omega_{3+2}^{(K)}\rangle = |\Omega_{3+2}^{(K)}\rangle$ has norm squared $1$;
+- the $2 \times 3 = 6$ off-diagonal particle-hole entries $i \in \{4,5\}, k \in \{1,2,3\}$, where $(C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle = \frac{1}{K}\sum_{\nu=1}^K |k \to i\rangle_\nu$ is a sum of $K$ mutually orthonormal vectors and thus has norm squared $K(1/K^2) = 1/K$.
+Hence $\omega_K^{(3+2)}(|C_K|_{\mathrm{HS}}^2) = 3(1) + 6(1/K) = 3 + \frac{6}{K}$. Since $D_K := C_K^2 - C_K$ is also self-adjoint in $\operatorname{End}(\mathcal{H}_{3,K}) \otimes M_5(\mathbb{C})$ ($((D_K)_{ki})^\dagger = (D_K)_{ik}$), part (1) gives
+$$
+\omega_K^{(3+2)}\!\left(|D_K|_{\mathrm{HS}}^2\right)
+= \sum_{i,k=1}^5 \left\|(D_K)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle\right\|^2
+= \left(\frac{2}{K}\right)^2 \sum_{i,k=1}^5 \left\|(C_K)_{ik}\left|\Omega_{3+2}^{(K)}\right\rangle\right\|^2
+= \frac{4}{K^2}\left(3 + \frac{6}{K}\right) = \frac{12(K + 2)}{K^3}.
+$$
+
+**(3)** By part (1), $(C_K^2)_{ik}|\Omega_{3+2}^{(K)}\rangle = (1 + \frac{2}{K})(C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle = \frac{K + 2}{K}(C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle$. Multiplying by $(\frac{K}{K + 2})^2$ gives $(\widetilde{P}_{3,K}^2)_{ik}|\Omega_{3+2}^{(K)}\rangle = \frac{K}{K + 2}(C_K)_{ik}|\Omega_{3+2}^{(K)}\rangle = (\widetilde{P}_{3,K})_{ik}|\Omega_{3+2}^{(K)}\rangle$, so $(\widetilde{P}_{3,K}^2 - \widetilde{P}_{3,K})_{ik}|\Omega_{3+2}^{(K)}\rangle = 0$ for all $(i,k)$. Finally, $\operatorname{Tr}_{M_5}(\widetilde{P}_{3,K}) - 3 I = (\frac{3K}{K + 2} - 3)I = -\frac{6}{K + 2}I$, whose square has expectation $\frac{36}{(K + 2)^2}$. $\blacksquare$
+
+---
+
+## 11. Exterior-Power Fermion Floquet Tick Quartic Selector $\lambda_2 > 0$, Chiral Multiplet Projectors, and Anomaly Cancellation on $\Lambda^n \mathbb{C}^5$
+
+For any matrix $M \in M_5(\mathbb{C})$ and each exterior sector $\Lambda^n \mathbb{C}^5$ ($0 \le n \le 5$), let
+$$
+d\Gamma_n(M) := \left.\sum_{i,j=1}^5 M_{ij}\,c_i^\dagger c_j\right|_{\Lambda^n \mathbb{C}^5} \in \operatorname{End}(\Lambda^n \mathbb{C}^5)
+$$
+denote its second-quantized derivation action on $\Lambda^n \mathbb{C}^5$. For a traceless self-adjoint adjoint frame $A \in \mathfrak{su}(5)_{\mathrm{sa}}$ and step parameter $\tau > 0$, put $H_n(A) := d\Gamma_n(A)$ and let $U_n(\tau; A) := \exp(-i\tau H_n(A)) \in U(\Lambda^n \mathbb{C}^5)$ be the single-step unitary fermion Floquet tick on $\Lambda^n \mathbb{C}^5$.
+
+### Theorem 11 (Exterior-Power Fermion Floquet Tick Quartic Selector $\lambda_2 > 0$, Chiral Multiplet Projectors, and Anomaly Cancellation on $\Lambda^n \mathbb{C}^5$)
+
+1. **Exact exterior-power quadratic and fourth-moment trace identities on $\mathfrak{su}(5)_{\mathrm{sa}}$:** For every $A \in \mathfrak{su}(5)_{\mathrm{sa}}$, $H_0(A) = 0$, $H_5(A) = \operatorname{Tr}(A) I_{\Lambda^5\mathbb{C}^5} = 0$, and on the nontrivial exterior sectors $n \in \{1, 2, 3, 4\}$:
+   $$
+   \operatorname{Tr}_{\Lambda^n \mathbb{C}^5}\!\left(H_n(A)^2\right) = \binom{3}{n - 1}\operatorname{Tr}(A^2),
+   $$
+   $$
+   \operatorname{Tr}_{\Lambda^1 \mathbb{C}^5}\!\left(H_1(A)^4\right)
+   = \operatorname{Tr}_{\Lambda^4 \mathbb{C}^5}\!\left(H_4(A)^4\right)
+   = \operatorname{Tr}(A^4),
+   $$
+   $$
+   \operatorname{Tr}_{\Lambda^2 \mathbb{C}^5}\!\left(H_2(A)^4\right)
+   = \operatorname{Tr}_{\Lambda^3 \mathbb{C}^5}\!\left(H_3(A)^4\right)
+   = 3\left(\operatorname{Tr}(A^2)\right)^2 - 3\operatorname{Tr}(A^4).
+   $$
+   Consequently, on the chiral generation representation $\mathcal{R}_{\mathrm{gen}} := \Lambda^4 \mathbb{C}^5 \oplus \Lambda^2 \mathbb{C}^5 \cong \bar{\mathbf{5}} \oplus \mathbf{10}$ (and identically on $\Lambda^1 \mathbb{C}^5 \oplus \Lambda^3 \mathbb{C}^5 \cong \mathbf{5} \oplus \overline{\mathbf{10}}$) and on the full exterior algebra $\Lambda(\mathbb{C}^5) = \bigoplus_{n=0}^5 \Lambda^n \mathbb{C}^5$:
+   $$
+   \operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}\!\left(H(A)^2\right) = 4\operatorname{Tr}(A^2), \qquad
+   \operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}\!\left(H(A)^4\right) = 3\left(\operatorname{Tr}(A^2)\right)^2 - 2\operatorname{Tr}(A^4),
+   $$
+   $$
+   \operatorname{Tr}_{\Lambda(\mathbb{C}^5)}\!\left(d\Gamma(A)^2\right) = 8\operatorname{Tr}(A^2), \qquad
+   \operatorname{Tr}_{\Lambda(\mathbb{C}^5)}\!\left(d\Gamma(A)^4\right) = 6\left(\operatorname{Tr}(A^2)\right)^2 - 4\operatorname{Tr}(A^4).
+   $$
+2. **Microscopic positivity of $\lambda_2 > 0$ and $3+2$ orbit selection from the unitary fermion Floquet tick:** In the fourth-order expansion of the unitary Floquet tick trace $\operatorname{Re}\operatorname{Tr}_{\mathcal{R}}(I - U_{\mathcal{R}}(\tau; A)) = \frac{\tau^2}{2}\operatorname{Tr}_{\mathcal{R}}(H(A)^2) - \frac{\tau^4}{24}\operatorname{Tr}_{\mathcal{R}}(H(A)^4) + O(\tau^6)$, the quartic potential term
+   $$
+   V_{\mathcal{R}}^{(4)}(\tau; A) := -\frac{\tau^4}{24}\operatorname{Tr}_{\mathcal{R}}\!\left(H(A)^4\right) = \frac{\lambda_1(\mathcal{R})}{4}\left(\operatorname{Tr}(A^2)\right)^2 + \frac{\lambda_2(\mathcal{R})}{4}\operatorname{Tr}(A^4)
+   $$
+   has **strictly positive** $\operatorname{Tr}(A^4)$ coupling $\lambda_2(\mathcal{R}) > 0$ for every $\tau > 0$ on each of the following representations:
+   $$
+   \lambda_2(\Lambda^2 \mathbb{C}^5) = \lambda_2(\Lambda^3 \mathbb{C}^5) = \frac{\tau^4}{2} > 0, \qquad
+   \lambda_2(\mathcal{R}_{\mathrm{gen}}) = \frac{\tau^4}{3} > 0, \qquad
+   \lambda_2\bigl(\Lambda(\mathbb{C}^5)\bigr) = \frac{2\tau^4}{3} > 0.
+   $$
+   By Theorem 6(2), for any fixed norm shell $\operatorname{Tr}(A^2) = s > 0$, $V_{\mathcal{R}}^{(4)}(\tau; A)$ attains its strict global minimum over $\mathfrak{su}(5)_{\mathrm{sa}}$ exclusively on the three-plus-two orbit.
+3. **Exact polynomial bidegree projectors $\Pi^{(p,q)}(A)$ and anomaly cancellation on $\mathcal{R}_{\mathrm{gen}} = \Lambda^4 \mathbb{C}^5 \oplus \Lambda^2 \mathbb{C}^5$:** For any $A \in \mathcal{A} \otimes M_5(\mathbb{C})$ and $a \neq b$, let $P_3(A) = (A - b I_5)/(a - b)$ and $N_3^{(n)}(A) := d\Gamma_n(P_3(A))$. Define on $\Lambda^2 \mathbb{C}^5$ ($\dim = 10$) and $\Lambda^4 \mathbb{C}^5$ ($\dim = 5$) the polynomial operators
+   $$
+   \Pi^{(2,0)}(A) := \frac{1}{2} N_3^{(2)}(A)\bigl(N_3^{(2)}(A) - I\bigr), \qquad
+   \Pi^{(1,1)}(A) := N_3^{(2)}(A)\bigl(2I - N_3^{(2)}(A)\bigr), \qquad
+   \Pi^{(0,2)}(A) := \frac{1}{2}\bigl(N_3^{(2)}(A) - I\bigr)\bigl(N_3^{(2)}(A) - 2I\bigr),
+   $$
+   $$
+   \Pi^{(3,1)}(A) := N_3^{(4)}(A) - 2I, \qquad
+   \Pi^{(2,2)}(A) := 3I - N_3^{(4)}(A).
+   $$
+   Then $\Pi^{(2,0)}(A) + \Pi^{(1,1)}(A) + \Pi^{(0,2)}(A) = I_{\Lambda^2\mathbb{C}^5}$ and $\Pi^{(3,1)}(A) + \Pi^{(2,2)}(A) = I_{\Lambda^4\mathbb{C}^5}$ hold identically in $\mathcal{A} \otimes \operatorname{End}(\Lambda^n\mathbb{C}^5)$. At $A_0 = a I_3 \oplus b I_2$, these five operators are mutually orthogonal projections onto the five irreducible $H = S(U(3)\times U(2))$ multiplets of one chiral Standard Model generation with dimensions
+   $$
+   \operatorname{Tr}\!\left(\Pi^{(2,0)}(A_0)\right) = 3, \quad
+   \operatorname{Tr}\!\left(\Pi^{(1,1)}(A_0)\right) = 6, \quad
+   \operatorname{Tr}\!\left(\Pi^{(0,2)}(A_0)\right) = 1, \quad
+   \operatorname{Tr}\!\left(\Pi^{(3,1)}(A_0)\right) = 2, \quad
+   \operatorname{Tr}\!\left(\Pi^{(2,2)}(A_0)\right) = 3,
+   $$
+   and under the hypercharge generator $Y := -\frac{1}{3}P_3(A_0) + \frac{1}{2}P_2(A_0) = \operatorname{diag}(-\frac{1}{3},-\frac{1}{3},-\frac{1}{3},\frac{1}{2},\frac{1}{2})$ (with $Y_{\mathcal{R}_{\mathrm{gen}}} := d\Gamma_4(Y) \oplus d\Gamma_2(Y)$ taking eigenvalues $(-\frac{1}{2}, +\frac{1}{3})$ on $(\Pi^{(3,1)}, \Pi^{(2,2)})$ and $(-\frac{2}{3}, +\frac{1}{6}, +1)$ on $(\Pi^{(2,0)}, \Pi^{(1,1)}, \Pi^{(0,2)})$), all four gauge anomaly traces vanish identically:
+   $$
+   \operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}(Y_{\mathcal{R}_{\mathrm{gen}}}) = 0, \qquad
+   \operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}(Y_{\mathcal{R}_{\mathrm{gen}}}^3) = 0, \qquad
+   \operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}\!\left(d\Gamma(T_a)^2 Y_{\mathcal{R}_{\mathrm{gen}}}\right) = 0, \qquad
+   \operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}\!\left(d\Gamma(t_r)^2 Y_{\mathcal{R}_{\mathrm{gen}}}\right) = 0
+   $$
+   for all $T_a \in \mathfrak{su}(3)$ and $t_r \in \mathfrak{su}(2)$.
+
+#### Proof of Theorem 11
+
+**(1)** Let $\lambda_1,\dots,\lambda_5 \in \mathbb{R}$ be the eigenvalues of $A \in \mathfrak{su}(5)_{\mathrm{sa}}$, so $p_1 := \sum_{i=1}^5 \lambda_i = 0$, $s := \sum_{i=1}^5 \lambda_i^2 = \operatorname{Tr}(A^2)$, and $q := \sum_{i=1}^5 \lambda_i^4 = \operatorname{Tr}(A^4)$. On $\Lambda^n \mathbb{C}^5$, the eigenvalues of $H_n(A)$ are $\Lambda_I := \sum_{i \in I} \lambda_i$ indexed by $n$-element subsets $I \subset \{1,\dots,5\}$. Since $\Lambda_{I^c} = -\Lambda_I$ where $I^c = \{1,\dots,5\} \setminus I$ has size $5 - n$, $\operatorname{Tr}_{\Lambda^{5-n}}(H_{5-n}(A)^{2m}) = \operatorname{Tr}_{\Lambda^n}(H_n(A)^{2m})$ for all $m \ge 1$.
+- For $n = 1$ (and hence $n = 4$): $\operatorname{Tr}_{\Lambda^1}(H_1(A)^2) = s$ and $\operatorname{Tr}_{\Lambda^1}(H_1(A)^4) = q$.
+- For $n = 2$ (and hence $n = 3$): using $\sum_{i \neq j} \lambda_i \lambda_j = p_1^2 - s = -s$, $\sum_{i \neq j} \lambda_i^3 \lambda_j = p_3 p_1 - q = -q$, and $\sum_{i \neq j} \lambda_i^2 \lambda_j^2 = s^2 - q$, we expand over unordered pairs $I = \{i,j\}$ ($1 \le i < j \le 5$):
+  $$
+  \operatorname{Tr}_{\Lambda^2 \mathbb{C}^5}\!\left(H_2(A)^2\right)
+  = \sum_{1 \le i < j \le 5} (\lambda_i + \lambda_j)^2
+  = 4\sum_{i=1}^5 \lambda_i^2 + \sum_{i \neq j} \lambda_i \lambda_j
+  = 4s - s = 3s,
+  $$
+  $$
+  \operatorname{Tr}_{\Lambda^2 \mathbb{C}^5}\!\left(H_2(A)^4\right)
+  = \sum_{1 \le i < j \le 5} (\lambda_i + \lambda_j)^4
+  = 4\sum_{i=1}^5 \lambda_i^4 + 4\sum_{i \neq j} \lambda_i^3 \lambda_j + 3\sum_{i \neq j} \lambda_i^2 \lambda_j^2
+  = 4q - 4q + 3(s^2 - q) = 3s^2 - 3q.
+  $$
+Summing $n = 4$ and $n = 2$ gives $\operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}(H(A)^2) = (1 + 3)s = 4s$ and $\operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}(H(A)^4) = q + (3s^2 - 3q) = 3s^2 - 2q$; doubling across $n \in \{1,2,3,4\}$ gives $8s$ and $6s^2 - 4q$.
+
+**(2)** Multiplying $\operatorname{Tr}_{\mathcal{R}}(H(A)^4)$ by $-\frac{\tau^4}{24}$ and comparing with $\frac{\lambda_1(\mathcal{R})}{4}s^2 + \frac{\lambda_2(\mathcal{R})}{4}q$ gives $\frac{\lambda_2}{4} = -\frac{\tau^4}{24}(-3) = \frac{\tau^4}{8}$ on $\Lambda^2\mathbb{C}^5$ and $\Lambda^3\mathbb{C}^5$ ($\lambda_2 = \frac{\tau^4}{2} > 0$), $\frac{\lambda_2}{4} = -\frac{\tau^4}{24}(-2) = \frac{\tau^4}{12}$ on $\mathcal{R}_{\mathrm{gen}}$ ($\lambda_2 = \frac{\tau^4}{3} > 0$), and $\frac{\lambda_2}{4} = -\frac{\tau^4}{24}(-4) = \frac{\tau^4}{6}$ on $\Lambda(\mathbb{C}^5)$ ($\lambda_2 = \frac{2\tau^4}{3} > 0$). By Theorem 6(2), since $\lambda_2(\mathcal{R}) > 0$, minimizing $V_{\mathcal{R}}^{(4)}(\tau; A)$ at any fixed $s = \operatorname{Tr}(A^2) > 0$ is equivalent to minimizing $\operatorname{Tr}(A^4)$, whose unique global minimum on $\mathcal{S}_s$ is the $3+2$ orbit.
+
+**(3)** The polynomial identities $\frac{1}{2}x(x-1) + x(2-x) + \frac{1}{2}(x-1)(x-2) = 1$ and $(x-2) + (3-x) = 1$ hold in $\mathbb{Q}[x]$, so substituting $x = N_3^{(2)}(A)$ and $x = N_3^{(4)}(A)$ yields the resolutions of the identity in $\mathcal{A} \otimes \operatorname{End}(\Lambda^n\mathbb{C}^5)$. At $A_0 = a I_3 \oplus b I_2$, $P_3(A_0) = \operatorname{diag}(1,1,1,0,0)$, so on Fock basis states $|i_1 \dots i_n\rangle$ the operator $N_3^{(n)}(A_0)$ counts the number $p$ of occupied color modes $i_m \in \{1,2,3\}$. For $n = 2$, $p \in \{2, 1, 0\}$ with multiplicities $\binom{3}{2}\binom{2}{0} = 3$, $\binom{3}{1}\binom{2}{1} = 6$, and $\binom{3}{0}\binom{2}{2} = 1$, and the Lagrange interpolation polynomials at $\{2, 1, 0\}$ project orthogonally onto these three subspaces. For $n = 4$, $p \in \{3, 2\}$ with multiplicities $\binom{3}{3}\binom{2}{1} = 2$ and $\binom{3}{2}\binom{2}{2} = 3$, and the linear interpolation polynomials $x - 2$ and $3 - x$ project onto them. Finally, on a sector of bidegree $(p,q)$, $Y$ has eigenvalue $-\frac{p}{3} + \frac{q}{2}$, giving:
+- on $\Lambda^4\mathbb{C}^5$: $(p,q) = (3,1)$ ($\dim = 2$, $Y = -\frac{1}{2}$) and $(p,q) = (2,2)$ ($\dim = 3$, $Y = +\frac{1}{3}$);
+- on $\Lambda^2\mathbb{C}^5$: $(p,q) = (2,0)$ ($\dim = 3$, $Y = -\frac{2}{3}$), $(p,q) = (1,1)$ ($\dim = 6$, $Y = +\frac{1}{6}$), and $(p,q) = (0,2)$ ($\dim = 1$, $Y = +1$).
+Direct summation yields:
+- $\operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}(Y) = 2(-\frac{1}{2}) + 3(\frac{1}{3}) + 3(-\frac{2}{3}) + 6(\frac{1}{6}) + 1(1) = -1 + 1 - 2 + 1 + 1 = 0$;
+- $\operatorname{Tr}_{\mathcal{R}_{\mathrm{gen}}}(Y^3) = 2(-\frac{1}{8}) + 3(\frac{1}{27}) + 3(-\frac{8}{27}) + 6(\frac{1}{216}) + 1(1) = -\frac{1}{4} + \frac{1}{9} - \frac{8}{9} + \frac{1}{36} + 1 = 0$;
+- $\mathfrak{su}(3)$ mixed anomaly proportional to $\sum_{\text{color triplets/antitriplets}} Y = (\frac{1}{3}) + (-\frac{2}{3}) + 2(\frac{1}{6}) = 0$;
+- $\mathfrak{su}(2)$ mixed anomaly proportional to $\sum_{\text{weak doublets}} Y = (-\frac{1}{2}) + 3(\frac{1}{6}) = 0$. $\blacksquare$
+
+---
+
+## 12. Paired Runner Verification Summary
+
+The primary runner [`scripts/frontier_u5_three_plus_two_fms_projector_carrier.py`](../scripts/frontier_u5_three_plus_two_fms_projector_carrier.py) verifies every identity in Theorems 1–11 with exact rational (`fractions.Fraction`) and integer Fock-space arithmetic:
 
 1. **Theorem 1 controls:** Exact operator verification of $P_\pm^2 - P_\pm = \frac{1}{4r^2}(A^2 - r^2 I_{\mathcal{A}} \otimes I_2)$, the internal Hilbert-Schmidt decomposition $|A^2 - r^2 I|_{\mathrm{HS}}^2 = 2 R_r^2 + \sum_{a,b} |[\Phi^a, \Phi^b]|^2$, the state-$L^2$ equality across mixed states $\omega$, and exact $SU(2)_X \times SU(2)_Y$ invariance and four-channel completeness of $\mathcal{S}_{s,s'}(X,Y)$ with non-unitary quantum-link transporters $\mathcal{U}_{XY}$.
 2. **Theorem 2 controls:** Exact operator verification of $P_3(A)^2 - P_3(A) = (A - a I_5)(A - b I_5)/(a - b)^2$ and internal trace formulas; exact $32$-dimensional Fock-space construction of the five-mode CAR algebra $\Lambda(\mathbb{C}^5)$ verifying $C^2 = (6 I - N)C$ on all $32$ Fock states and the exact idempotence $(P_{\mathrm{CAR}}^{(n)})^2 = P_{\mathrm{CAR}}^{(n)}$ and internal trace $\operatorname{Tr}_{M_5}(P_{\mathrm{CAR}}^{(n)}) = \frac{n}{6-n} I$ across all sectors $n \in \{1,2,3,4,5\}$; and exact verification of the rank-separation witness $A_{\mathrm{mix}} = (A_{(4)}, A_{(2)})$ and joint certification functional $\mathcal{D}_{3+2}(A_{(k)}) = (k - 3)^2$.
 3. **Theorem 3 controls:** Exact rational $10 \times 10$ and operator-valued verification of $Q_6(A)^2 - Q_6(A)$, $[A, Q_6(A)] = 0$, the polynomial factorizations of $J_A^2 + I_{10}$ and $A - (a Q_6(A) + b Q_4(A)) J_A$, and exact rank/nullity computation over the $45$-dimensional basis of $\mathfrak{so}(10)$ confirming $\dim \mathfrak{c}_{\mathrm{real}} = 21$ and $\dim \mathfrak{c}_{\mathrm{unitary}} = 13$.
 4. **Theorem 4 controls:** Exact arithmetic verification of the homomorphism $\pi: SU(3) \times SU(2) \times U(1) \to S(U(3) \times U(2))$, its order-$6$ cyclic kernel $\ker \pi = \{\gamma_6^k : k = 0,\dots,5\}$, the $13 \to 12$ Lie-algebra dimension reduction, and the two-component stabilizer $K_{U(5)} = H\{\pm I_5\}$.
-5. **Theorem 5 controls:** Exact $252 \times 252$ Fock-space construction on $\Lambda^5 \mathbb{C}^{10}$ of all $25$ link operators $U_\ell^{ij} = r_{y,i} r_{x,j}^\dagger$ and $D_{xy}$, verifying $U_\ell^{i_1,j_1}\cdots U_\ell^{i_5,j_5} = \varepsilon_{i_1\dots i_5}\varepsilon_{j_1\dots j_5} D_{xy}$ across all $120$ permutations and repeated-index tuples, $D_{xy} = -|5_x, 0_y\rangle\langle 0_x, 5_y|$, $\operatorname{Tr}_{\Lambda^5\mathbb{C}^{10}}(D_{xy}^\dagger D_{xy}) = 1$, and exact two-site-plus-link verification of $[G_x^{ij}, \mathcal{O}_{xy}^{(10)}] = 2\delta_{ij}\mathcal{O}_{xy}^{(10)}$ and $[G_y^{ij}, \mathcal{O}_{xy}^{(10)}] = 0$ for all $25$ generators at each endpoint.
+5. **Theorem 5 controls:** Exact $252 \times 252$ Fock-space construction on $\Lambda^5 \mathbb{C}^{10}$ of all $25$ link operators $U_\ell^{ij} = r_{y,i} r_{x,j}^\dagger$ and $D_{xy}$, verifying $U_\ell^{i_1,j_1}\cdots U_\ell^{i_5,j_5} = \varepsilon_{i_1\dots i_5}\varepsilon_{j_1\dots j_5} D_{xy}$ across all $120$ permutations and repeated-index tuples, $D_{xy} = -|5_x, 0_y\rangle\langle 0_x, 5_y|$, $\operatorname{Tr}_{\Lambda^5\mathbb{C}^{10}}(D_{xy}^\dagger D_{xy}) = 1$, and support-reduced two-site-plus-link verification of $[G_x^{ij}, \mathcal{O}_{xy}^{(10)}] = 2\delta_{ij}\mathcal{O}_{xy}^{(10)}$ and $[G_y^{ij}, \mathcal{O}_{xy}^{(10)}] = 0$ for all $25$ generators at each endpoint.
 6. **Theorem 6 controls:** Exact rational verification of the three-variable cubic discriminant identity $\Delta(u,v,w) = \frac{1}{2}r^6 - 27(uvw)^2 = (u-v)^2(v-w)^2(w-u)^2$, the sharp fourth-moment ratios $\frac{7}{30}s^2 < \frac{1}{4}s^2 < \frac{1}{2}s^2 < \frac{13}{20}s^2$ across all symmetry strata and off-stratum perturbations in $\mathfrak{su}(5)_{\mathrm{sa}}$, and the exact square-completed potential decomposition $V_{\mu,\lambda_1,\lambda_2}(A) - V_{\min}(3+2)$.
 7. **Theorem 7 controls:** Exact construction of the $25 \times 25$ Gram matrix $\mathcal{M}^2$ on a complete basis of $\mathfrak{u}(5)_{\mathrm{sa}}$, verifying $\dim \ker \mathcal{M}^2 = 12$ ($\operatorname{Lie}(H)$), eigenvalue $(a-b)^2$ with multiplicity $12$ on $\mathfrak{m}_{3\times 2}$, eigenvalue $20\kappa^2$ with multiplicity $1$ on $T_0$, the exact polynomial projector $\Pi_{\operatorname{Lie}(H)}$, and the noncommuting pinch-commutator identity $(P_3(A)X P_3(A) + P_2(A)X P_2(A)) - (X - (a-b)^{-2}[A,[A,X]]) = D_A X + X D_A$ on noncommuting operator matrices.
 8. **Theorem 8 controls:** Exact verification on $\Lambda^5 \mathbb{C}^{10}$ of $D_+(\omega;\gamma) + D_-(\omega;\gamma) = 2 - (p_0 + p_5) + (|\gamma|^2 - 1)^2(p_0 + p_5) \ge 1$, and exact Fock/tensor construction on $\mathcal{H}_K = (\mathbb{C}^2)^{\otimes K}$ ($K = 1, 2, 3, 4$) verifying $(\sum_a (\Phi_K^a)^2)|\psi_K\rangle = (1 + 2/K)|\psi_K\rangle$, $\omega_K(|P_\pm(1)^2 - P_\pm(1)|_{\mathrm{HS}}^2) = \frac{K+1}{K^3}$, $\omega_K(|P_\pm(r_K)^2 - P_\pm(r_K)|_{\mathrm{HS}}^2) = \frac{1}{2K(K+2)}$, and $\varpi_K((\widehat{D}_K^\dagger \widehat{D}_K - I)^2) = \varpi_K((\widehat{D}_K \widehat{D}_K^\dagger - I)^2) = \frac{3K+2}{K^3}$.
+9. **Theorem 9 controls:** Exact $32$-state Fock-space matrix construction of $\widehat{A} = C - \frac{N}{5}I_5 \in \operatorname{End}(\Lambda^n\mathbb{C}^5) \otimes M_5(\mathbb{C})$ across all sectors $n \in \{0,1,2,3,4,5\}$, verifying $\operatorname{Tr}_{M_5}(\widehat{A}^2) = \frac{6n(5-n)}{5}I$, $\operatorname{Tr}_{M_5}(\widehat{A}^4) = \frac{6n(5-n)(36(5-n)^2 - 6n(5-n) + n^2)}{125}I$, the strict fourth-moment hierarchy $\mathcal{Q}_4 = \frac{7}{30} < \mathcal{Q}_3 = \frac{13}{20} < \mathcal{Q}_2 = \frac{73}{45} < \mathcal{Q}_1 = \frac{553}{120}$, and the exact single-copy ($K = 1$) orthogonal $3+2$ resolution $P_3^{\mathrm{CAR}} = I_5 - \frac{1}{2}C|_{\Lambda^4\mathbb{C}^5}$, $P_2^{\mathrm{CAR}} = \frac{1}{2}C|_{\Lambda^4\mathbb{C}^5}$ with internal traces $3 I$ and $2 I$ and zero certification defect $\mathcal{D}_{3+2}(A_{\mathrm{CAR}}^{(4)}) = 0$.
+10. **Theorem 10 controls:** Exact $K$-copy Fock-space construction on $\mathcal{H}_{3,K} = (\Lambda^3 \mathbb{C}^5)^{\otimes K}$ ($K = 1, 2, 3, 4$) verifying $(P_3(A_K)^2 - P_3(A_K))_{ik}|\Omega_{3+2}^{(K)}\rangle = \frac{2}{K}(P_3(A_K))_{ik}|\Omega_{3+2}^{(K)}\rangle$ for all $25$ matrix entries, $\omega_K^{(3+2)}(|P_3(A_K)|_{\mathrm{HS}}^2) = 3 + \frac{6}{K}$, $\omega_K^{(3+2)}(\mathcal{D}_{3+2}(A_K)) = \frac{12(K+2)}{K^3}$, and exact state idempotence $\omega_K^{(3+2)}(|\widetilde{P}_{3,K}^2 - \widetilde{P}_{3,K}|_{\mathrm{HS}}^2) = 0$ and trace-variance defect $\frac{36}{(K+2)^2}$ for $\widetilde{P}_{3,K} = \frac{K}{K+2}C_K$.
+11. **Theorem 11 controls:** Exact Fock-space construction of $H_n(A) = d\Gamma_n(A)$ on all exterior sectors $\Lambda^n \mathbb{C}^5$ ($n = 0,\dots,5$) across diagonal and non-diagonal Hermitian matrices $A \in \mathfrak{su}(5)_{\mathrm{sa}}$, verifying $\operatorname{Tr}_{\Lambda^n}(H_n(A)^2) = \binom{3}{n-1}\operatorname{Tr}(A^2)$, $\operatorname{Tr}_{\Lambda^2}(H_2(A)^4) = \operatorname{Tr}_{\Lambda^3}(H_3(A)^4) = 3(\operatorname{Tr}(A^2))^2 - 3\operatorname{Tr}(A^4)$, the positive Floquet quartic couplings $\lambda_2(\Lambda^2) = \lambda_2(\Lambda^3) = \tau^4/2 > 0$, $\lambda_2(\mathcal{R}_{\mathrm{gen}}) = \tau^4/3 > 0$, and $\lambda_2(\Lambda(\mathbb{C}^5)) = 2\tau^4/3 > 0$, and the exact second-quantized bidegree projectors $\Pi^{(p,q)}(A)$ and gauge anomaly cancellations on $\mathcal{R}_{\mathrm{gen}} = \Lambda^4 \mathbb{C}^5 \oplus \Lambda^2 \mathbb{C}^5$.

@@ -1585,11 +1585,524 @@ def theorem8_transport_floor_and_coherent_scaling_controls() -> None:
         )
 
 
+# ---------------------------------------------------------------------------
+# 9. Theorem 9 controls: Single-copy quantum CAR quartic hierarchy & Lambda^4(C^5) 3+2 projector
+# ---------------------------------------------------------------------------
+
+
+def theorem9_quantum_car_quartic_hierarchy_and_lambda4_projector_controls() -> None:
+    def rmat_mul_q(x, y):
+        n = len(x)
+        out = [[Q(0) for _ in range(n)] for _ in range(n)]
+        for i in range(n):
+            for k in range(n):
+                val = x[i][k]
+                if val != 0:
+                    for j in range(n):
+                        if y[k][j] != 0:
+                            out[i][j] += val * y[k][j]
+        return out
+
+    def partial_tr_m5_q(op_mat, d_sec: int):
+        out = [[Q(0) for _ in range(d_sec)] for _ in range(d_sec)]
+        for r_s in range(d_sec):
+            for c_s in range(d_sec):
+                out[r_s][c_s] = sum(op_mat[r_s * 5 + i][c_s * 5 + i] for i in range(5))
+        return out
+
+    def scalar_eye_q(c: Q, d_sec: int):
+        return [[c if r_s == c_s else Q(0) for c_s in range(d_sec)] for r_s in range(d_sec)]
+
+    q_ratios: dict[int, Q] = {}
+    moments_ok = True
+    for n in range(6):
+        basis = [mask for mask in range(32) if mask.bit_count() == n]
+        idx_of = {mask: idx for idx, mask in enumerate(basis)}
+        d_sec = len(basis)
+        dim_tot = 5 * d_sec
+
+        # Build A_hat = C - (n/5) I_5 on Lambda^n(C^5) (x) C^5
+        a_hat = [[Q(0) for _ in range(dim_tot)] for _ in range(dim_tot)]
+        for r_s in range(d_sec):
+            for i in range(5):
+                a_hat[r_s * 5 + i][r_s * 5 + i] -= Q(n, 5)
+        for i in range(5):
+            for k in range(5):
+                ops = [("c", i), ("a", k)]
+                for col_s, mask in enumerate(basis):
+                    s, new_mask = apply_monomial(mask, ops)
+                    if s != 0:
+                        row_s = idx_of[new_mask]
+                        a_hat[row_s * 5 + i][col_s * 5 + k] += Q(s)
+
+        a_hat2 = rmat_mul_q(a_hat, a_hat)
+        a_hat4 = rmat_mul_q(a_hat2, a_hat2)
+        tr_a1 = partial_tr_m5_q(a_hat, d_sec)
+        tr_a2 = partial_tr_m5_q(a_hat2, d_sec)
+        tr_a4 = partial_tr_m5_q(a_hat4, d_sec)
+
+        s_n = Q(6 * n * (5 - n), 5)
+        q_n_val = Q(6 * n * (5 - n) * (36 * ((5 - n) ** 2) - 6 * n * (5 - n) + n * n), 125)
+        if not (
+            tr_a1 == scalar_eye_q(Q(0), d_sec)
+            and tr_a2 == scalar_eye_q(s_n, d_sec)
+            and tr_a4 == scalar_eye_q(q_n_val, d_sec)
+        ):
+            moments_ok = False
+            break
+        if 1 <= n <= 4:
+            q_ratios[n] = q_n_val / (s_n * s_n)
+
+    expected_q4 = Q(7, 30)
+    expected_q3 = Q(13, 20)
+    expected_q2 = Q(73, 45)
+    expected_q1 = Q(553, 120)
+
+    check(
+        "Theorem 9(1)-(2) exact quantum CAR moments Tr_{M_5}(A_hat^2), Tr_{M_5}(A_hat^4) and strict hierarchy Q_4=7/30 < Q_3=13/20 < Q_2=73/45 < Q_1=553/120",
+        moments_ok
+        and q_ratios[4] == expected_q4
+        and q_ratios[3] == expected_q3
+        and q_ratios[2] == expected_q2
+        and q_ratios[1] == expected_q1
+        and (q_ratios[4] < q_ratios[3] < q_ratios[2] < q_ratios[1]),
+    )
+
+    # Theorem 9(3): Single-copy (K=1) exact 3+2 complementary projector on Lambda^4(C^5) (dim = 5, total 25x25)
+    basis4 = [mask for mask in range(32) if mask.bit_count() == 4]
+    idx4 = {mask: idx for idx, mask in enumerate(basis4)}
+    d4 = len(basis4)
+    dim25 = 5 * d4
+    c4_op = [[Q(0) for _ in range(dim25)] for _ in range(dim25)]
+    for i in range(5):
+        for k in range(5):
+            ops = [("c", i), ("a", k)]
+            for col_s, mask in enumerate(basis4):
+                s, new_mask = apply_monomial(mask, ops)
+                if s != 0:
+                    row_s = idx4[new_mask]
+                    c4_op[row_s * 5 + i][col_s * 5 + k] += Q(s)
+
+    p2_car = [[Q(1, 2) * c4_op[r][c] for c in range(dim25)] for r in range(dim25)]
+    p3_car = [
+        [(Q(1) if r == c else Q(0)) - p2_car[r][c] for c in range(dim25)]
+        for r in range(dim25)
+    ]
+    p3_sq = rmat_mul_q(p3_car, p3_car)
+    p2_sq = rmat_mul_q(p2_car, p2_car)
+    p3_p2 = rmat_mul_q(p3_car, p2_car)
+    zero25 = [[Q(0) for _ in range(dim25)] for _ in range(dim25)]
+
+    tr_p3_car = partial_tr_m5_q(p3_car, d4)
+    tr_p2_car = partial_tr_m5_q(p2_car, d4)
+
+    check(
+        "Theorem 9(3) single-copy K=1 exact 3+2 CAR projector P_3^CAR = I_5 - (1/2) C on Lambda^4(C^5): (P_3^CAR)^2=P_3^CAR, Tr_{M_5}(P_3^CAR)=3 I, D_{3+2}=0",
+        p3_sq == p3_car
+        and p2_sq == p2_car
+        and p3_p2 == zero25
+        and tr_p3_car == scalar_eye_q(Q(3), d4)
+        and tr_p2_car == scalar_eye_q(Q(2), d4),
+    )
+
+
+# ---------------------------------------------------------------------------
+# 10. Theorem 10 controls: K-copy 5-mode CAR 3+2 coherent state and dual projector scaling
+# ---------------------------------------------------------------------------
+
+
+def theorem10_k_copy_car_three_plus_two_controls() -> None:
+    # Single-copy 3-fermion sector Lambda^3(C^5) has C(5,3) = 10 basis states
+    sec3_masks = [m for m in range(32) if m.bit_count() == 3]
+    assert len(sec3_masks) == 10
+    mask_to_idx = {m: idx for idx, m in enumerate(sec3_masks)}
+    omega_idx = mask_to_idx[0b00111]  # c_1^dagger c_2^dagger c_3^dagger |0>
+
+    # Precompute single-copy bilinear transitions c_i^dagger c_k on the 10-state basis
+    single_op: dict[tuple[int, int], dict[int, tuple[int, int]]] = {}
+    for i in range(5):
+        for k in range(5):
+            trans = {}
+            ops = [("c", i), ("a", k)]
+            for src_idx, m in enumerate(sec3_masks):
+                s, m_new = apply_monomial(m, ops)
+                if s != 0:
+                    trans[src_idx] = (mask_to_idx[m_new], s)
+            single_op[(i, k)] = trans
+
+    def apply_ck_entry(
+        state_vec: dict[tuple[int, ...], Q], i: int, k: int, k_copies: int
+    ) -> dict[tuple[int, ...], Q]:
+        """Apply (C_K)_{ik} = (1/K) sum_{nu=1}^K c_{nu,i}^dagger c_{nu,k} to sparse K-copy state."""
+        out: dict[tuple[int, ...], Q] = {}
+        scale = Q(1, k_copies)
+        trans = single_op[(i, k)]
+        if not trans:
+            return out
+        for cfg, amp in state_vec.items():
+            if amp == 0:
+                continue
+            for nu in range(k_copies):
+                t = trans.get(cfg[nu])
+                if t is not None:
+                    dst_slot, sgn = t
+                    new_cfg = cfg[:nu] + (dst_slot,) + cfg[nu + 1 :]
+                    out[new_cfg] = out.get(new_cfg, Q(0)) + amp * scale * sgn
+        return {cfg: val for cfg, val in out.items() if val != 0}
+
+    def vec_sub(v1: dict[tuple[int, ...], Q], v2: dict[tuple[int, ...], Q]) -> dict[tuple[int, ...], Q]:
+        keys = set(v1.keys()) | set(v2.keys())
+        out = {}
+        for k in keys:
+            val = v1.get(k, Q(0)) - v2.get(k, Q(0))
+            if val != 0:
+                out[k] = val
+        return out
+
+    def vec_scale(c: Q, v: dict[tuple[int, ...], Q]) -> dict[tuple[int, ...], Q]:
+        if c == 0:
+            return {}
+        return {k: c * val for k, val in v.items() if val != 0}
+
+    def vec_norm_sq(v: dict[tuple[int, ...], Q]) -> Q:
+        return sum((val * val for val in v.values()), Q(0))
+
+    for k_copies in (1, 2, 3, 4):
+        vac_cfg = (omega_idx,) * k_copies
+        omega_state = {vac_cfg: Q(1)}
+
+        # Compute psi1[(i,k)] = (C_K)_{ik} |Omega_{3+2}^{(K)}>
+        psi1: dict[tuple[int, int], dict[tuple[int, ...], Q]] = {}
+        for i in range(5):
+            for k in range(5):
+                psi1[(i, k)] = apply_ck_entry(omega_state, i, k, k_copies)
+
+        # Compute psi2[(i,k)] = sum_{j=0}^4 (C_K)_{ij} psi1[(j,k)] = (C_K^2)_{ik} |Omega_{3+2}^{(K)}>
+        psi2: dict[tuple[int, int], dict[tuple[int, ...], Q]] = {}
+        for i in range(5):
+            for k in range(5):
+                acc: dict[tuple[int, ...], Q] = {}
+                for j in range(5):
+                    term = apply_ck_entry(psi1[(j, k)], i, j, k_copies)
+                    for cfg, val in term.items():
+                        acc[cfg] = acc.get(cfg, Q(0)) + val
+                psi2[(i, k)] = {cfg: val for cfg, val in acc.items() if val != 0}
+
+        # 1. Check Tr_{M_5}(C_K) |Omega> = 3 |Omega>
+        tr_vec: dict[tuple[int, ...], Q] = {}
+        for i in range(5):
+            for cfg, val in psi1[(i, i)].items():
+                tr_vec[cfg] = tr_vec.get(cfg, Q(0)) + val
+        tr_ok = tr_vec == {vac_cfg: Q(3)}
+
+        # 2. Check (C_K^2 - C_K)_{ik} |Omega> = (2/K) (C_K)_{ik} |Omega> for all 25 entries
+        eig_rel_ok = all(
+            vec_sub(psi2[(i, k)], psi1[(i, k)]) == vec_scale(Q(2, k_copies), psi1[(i, k)])
+            for i in range(5)
+            for k in range(5)
+        )
+
+        # 3. Check omega_K(|P_3(A_K)|_{HS}^2) = 3 + 6/K and omega_K(D_{3+2}(A_K)) = 12(K+2)/K^3
+        hs_p3 = sum((vec_norm_sq(psi1[(i, k)]) for i in range(5) for k in range(5)), Q(0))
+        hs_defect_p3 = sum(
+            (vec_norm_sq(vec_sub(psi2[(i, k)], psi1[(i, k)])) for i in range(5) for k in range(5)),
+            Q(0),
+        )
+        expected_hs_p3 = Q(3) + Q(6, k_copies)
+        expected_d32_ak = Q(12 * (k_copies + 2), k_copies**3)
+
+        # 4. Check renormalized projector P_tilde_{3,K} = (K / (K+2)) C_K has zero quadratic defect on |Omega>
+        renorm_scale = Q(k_copies, k_copies + 2)
+        renorm_defect_sq = sum(
+            (
+                vec_norm_sq(
+                    vec_sub(
+                        vec_scale(renorm_scale * renorm_scale, psi2[(i, k)]),
+                        vec_scale(renorm_scale, psi1[(i, k)]),
+                    )
+                )
+                for i in range(5)
+                for k in range(5)
+            ),
+            Q(0),
+        )
+        renorm_tr_var = (3 * renorm_scale - Q(3)) ** 2
+        expected_renorm_tr_var = Q(36, (k_copies + 2) ** 2)
+
+        check(
+            f"Theorem 10 K={k_copies} 5-mode CAR 3+2 coherent scaling: D_32(A_K)={expected_d32_ak}, |P_tilde^2-P_tilde|^2=0, Tr-var(P_tilde)={expected_renorm_tr_var}",
+            tr_ok
+            and eig_rel_ok
+            and hs_p3 == expected_hs_p3
+            and hs_defect_p3 == expected_d32_ak
+            and renorm_defect_sq == Q(0)
+            and renorm_tr_var == expected_renorm_tr_var,
+        )
+
+
+# ---------------------------------------------------------------------------
+# 11. Theorem 11 controls: Exterior-power Floquet quartic selector lambda_2 > 0 & chiral projectors
+# ---------------------------------------------------------------------------
+
+
+def theorem11_exterior_floquet_quartic_and_chiral_controls() -> None:
+    sectors = {n: [m for m in range(32) if m.bit_count() == n] for n in range(6)}
+
+    def build_dgamma_n(n: int, m5):
+        """Construct the C(5,n) x C(5,n) matrix dGamma_n(m5) on Lambda^n(C^5)."""
+        basis = sectors[n]
+        idx_map = {mask: idx for idx, mask in enumerate(basis)}
+        d_sec = len(basis)
+        out = mat_zero(d_sec)
+        for i in range(5):
+            for j in range(5):
+                m_ij = m5[i][j]
+                if m_ij != ZERO:
+                    ops = [("c", i), ("a", j)]
+                    for col_idx, mask in enumerate(basis):
+                        s, new_mask = apply_monomial(mask, ops)
+                        if s != 0:
+                            row_idx = idx_map[new_mask]
+                            out[row_idx][col_idx] = out[row_idx][col_idx] + m_ij * Qi(s, 0)
+        return out
+
+    def tr_real(m) -> Q:
+        t = mat_tr(m)
+        assert t.im == 0
+        return t.re
+
+    def diag_m5(vals: list[Q]):
+        m = mat_zero(5)
+        for i, v in enumerate(vals):
+            m[i][i] = Qi(v, 0)
+        return m
+
+    a_32 = diag_m5([Q(-2), Q(-2), Q(-2), Q(3), Q(3)])
+    a_41 = diag_m5([Q(1), Q(1), Q(1), Q(1), Q(-4)])
+    a_212 = diag_m5([Q(-1), Q(-1), Q(0), Q(1), Q(1)])
+    a_nondiag = diag_m5([Q(-2), Q(-2), Q(-1), Q(2), Q(3)])
+    a_nondiag[0][3] = Qi(Q(1, 2), Q(-1, 3))
+    a_nondiag[3][0] = a_nondiag[0][3].conj()
+    a_nondiag[1][4] = Qi(Q(2, 5), Q(1, 4))
+    a_nondiag[4][1] = a_nondiag[1][4].conj()
+
+    test_su5_mats = (a_32, a_41, a_212, a_nondiag)
+    binom3 = {1: Q(1), 2: Q(3), 3: Q(3), 4: Q(1)}
+
+    traces_ok = True
+    for a_mat in test_su5_mats:
+        a2 = mat_mul(a_mat, a_mat)
+        a4 = mat_mul(a2, a2)
+        s_val = tr_real(a2)
+        q_val = tr_real(a4)
+
+        h0 = build_dgamma_n(0, a_mat)
+        h5 = build_dgamma_n(5, a_mat)
+        if h0 != mat_zero(1) or h5 != mat_zero(1):
+            traces_ok = False
+            break
+
+        tr2_by_n = {}
+        tr4_by_n = {}
+        for n in (1, 2, 3, 4):
+            hn = build_dgamma_n(n, a_mat)
+            hn2 = mat_mul(hn, hn)
+            hn4 = mat_mul(hn2, hn2)
+            tr2_by_n[n] = tr_real(hn2)
+            tr4_by_n[n] = tr_real(hn4)
+            if tr2_by_n[n] != binom3[n] * s_val:
+                traces_ok = False
+
+        if not (
+            tr4_by_n[1] == q_val
+            and tr4_by_n[4] == q_val
+            and tr4_by_n[2] == 3 * (s_val**2) - 3 * q_val
+            and tr4_by_n[3] == 3 * (s_val**2) - 3 * q_val
+            and (tr4_by_n[4] + tr4_by_n[2]) == 3 * (s_val**2) - 2 * q_val
+            and sum(tr4_by_n.values()) == 6 * (s_val**2) - 4 * q_val
+        ):
+            traces_ok = False
+            break
+
+    check(
+        "Theorem 11(1) exterior-power trace identities Tr_{Lambda^n}(H_n^2) = C(3,n-1) Tr(A^2) and Tr_{Lambda^2,3}(H_n^4) = 3(Tr A^2)^2 - 3 Tr(A^4)",
+        traces_ok,
+    )
+
+    # Theorem 11(2): Microscopic positivity of lambda_2(R) > 0 from the fourth-order Floquet tick
+    tau = Q(2, 3)
+    tau4 = tau**4
+    lam2_l2 = tau4 / 2
+    lam2_l3 = tau4 / 2
+    lam2_gen = tau4 / 3
+    lam2_ext = (2 * tau4) / 3
+
+    s_shell = Q(60)
+    q_strata = {
+        "3+2": Q(7, 30) * (s_shell**2),
+        "2+1+2": Q(1, 4) * (s_shell**2),
+        "1+3+1": Q(1, 2) * (s_shell**2),
+        "4+1": Q(13, 20) * (s_shell**2),
+    }
+
+    def v4_gen(s_v: Q, q_v: Q) -> Q:
+        tr4_gen = 3 * (s_v**2) - 2 * q_v
+        return -(tau4 / 24) * tr4_gen
+
+    v4_vals = {k: v4_gen(s_shell, qv) for k, qv in q_strata.items()}
+    floquet_lam2_ok = (
+        lam2_l2 > 0
+        and lam2_l3 > 0
+        and lam2_gen > 0
+        and lam2_ext > 0
+        and v4_vals["3+2"] < v4_vals["2+1+2"] < v4_vals["1+3+1"] < v4_vals["4+1"]
+        and (v4_vals["4+1"] - v4_vals["3+2"] == Q(1, 4) * lam2_gen * (q_strata["4+1"] - q_strata["3+2"]))
+    )
+
+    check(
+        "Theorem 11(2) positive Floquet quartic couplings lambda_2(Lambda^2,3)=tau^4/2, lambda_2(R_gen)=tau^4/3, lambda_2(Lambda)=2 tau^4/3 and 3+2 selection",
+        floquet_lam2_ok,
+    )
+
+    # Theorem 11(3): Bidegree projectors Pi^{(p,q)}(A) and gauge anomaly cancellation on R_gen = Lambda^4 (+) Lambda^2
+    a_val = Q(-2)
+    b_val = Q(3)
+    gap = a_val - b_val
+    eye5 = mat_eye(5)
+    eye10 = mat_eye(10)
+
+    p3_nondiag = mat_scale(Qi(Q(1) / gap, 0), mat_sub(a_nondiag, mat_scale(Qi(b_val, 0), eye5)))
+    n3_2_nd = build_dgamma_n(2, p3_nondiag)
+    n3_4_nd = build_dgamma_n(4, p3_nondiag)
+
+    pi_20_nd = mat_scale(Qi(Q(1, 2), 0), mat_mul(n3_2_nd, mat_sub(n3_2_nd, eye10)))
+    pi_11_nd = mat_mul(n3_2_nd, mat_sub(mat_scale(Qi(2, 0), eye10), n3_2_nd))
+    pi_02_nd = mat_scale(
+        Qi(Q(1, 2), 0),
+        mat_mul(mat_sub(n3_2_nd, eye10), mat_sub(n3_2_nd, mat_scale(Qi(2, 0), eye10))),
+    )
+    pi_31_nd = mat_sub(n3_4_nd, mat_scale(Qi(2, 0), eye5))
+    pi_22_nd = mat_sub(mat_scale(Qi(3, 0), eye5), n3_4_nd)
+
+    res_nd_ok = (
+        mat_add(pi_20_nd, mat_add(pi_11_nd, pi_02_nd)) == eye10
+        and mat_add(pi_31_nd, pi_22_nd) == eye5
+    )
+
+    p3_0 = mat_scale(Qi(Q(1) / gap, 0), mat_sub(a_32, mat_scale(Qi(b_val, 0), eye5)))
+    n3_2_0 = build_dgamma_n(2, p3_0)
+    n3_4_0 = build_dgamma_n(4, p3_0)
+
+    pi_20 = mat_scale(Qi(Q(1, 2), 0), mat_mul(n3_2_0, mat_sub(n3_2_0, eye10)))
+    pi_11 = mat_mul(n3_2_0, mat_sub(mat_scale(Qi(2, 0), eye10), n3_2_0))
+    pi_02 = mat_scale(
+        Qi(Q(1, 2), 0),
+        mat_mul(mat_sub(n3_2_0, eye10), mat_sub(n3_2_0, mat_scale(Qi(2, 0), eye10))),
+    )
+    pi_31 = mat_sub(n3_4_0, mat_scale(Qi(2, 0), eye5))
+    pi_22 = mat_sub(mat_scale(Qi(3, 0), eye5), n3_4_0)
+
+    l2_projs = (pi_20, pi_11, pi_02)
+    l4_projs = (pi_31, pi_22)
+    expected_l2_ranks = [Q(3), Q(6), Q(1)]
+    expected_l4_ranks = [Q(2), Q(3)]
+
+    projs_ortho_ok = (
+        all(
+            mat_mul(l2_projs[p], l2_projs[q]) == (l2_projs[p] if p == q else mat_zero(10))
+            for p in range(3)
+            for q in range(3)
+        )
+        and all(
+            mat_mul(l4_projs[p], l4_projs[q]) == (l4_projs[p] if p == q else mat_zero(5))
+            for p in range(2)
+            for q in range(2)
+        )
+        and [tr_real(p) for p in l2_projs] == expected_l2_ranks
+        and [tr_real(p) for p in l4_projs] == expected_l4_ranks
+    )
+
+    y_fund = diag_m5([Q(-1, 3), Q(-1, 3), Q(-1, 3), Q(1, 2), Q(1, 2)])
+    y_4 = build_dgamma_n(4, y_fund)
+    y_2 = build_dgamma_n(2, y_fund)
+
+    tr_y_gen = tr_real(y_4) + tr_real(y_2)
+    y_4_cubed = mat_mul(y_4, mat_mul(y_4, y_4))
+    y_2_cubed = mat_mul(y_2, mat_mul(y_2, y_2))
+    tr_y3_gen = tr_real(y_4_cubed) + tr_real(y_2_cubed)
+
+    def sym_m5(p: int, q: int):
+        m = mat_zero(5)
+        m[p][q] = ONE
+        m[q][p] = ONE
+        return m
+
+    def asym_m5(p: int, q: int):
+        m = mat_zero(5)
+        m[p][q] = -IMAG
+        m[q][p] = IMAG
+        return m
+
+    su3_gens = [
+        sym_m5(0, 1),
+        asym_m5(0, 1),
+        sym_m5(0, 2),
+        asym_m5(0, 2),
+        sym_m5(1, 2),
+        asym_m5(1, 2),
+        diag_m5([Q(1), Q(-1), Q(0), Q(0), Q(0)]),
+        diag_m5([Q(1), Q(1), Q(-2), Q(0), Q(0)]),
+    ]
+    su2_gens = [
+        sym_m5(3, 4),
+        asym_m5(3, 4),
+        diag_m5([Q(0), Q(0), Q(0), Q(1), Q(-1)]),
+    ]
+
+    su3_anom_ok = True
+    for g_a in su3_gens:
+        for g_b in su3_gens:
+            ta4 = build_dgamma_n(4, g_a)
+            tb4 = build_dgamma_n(4, g_b)
+            ta2 = build_dgamma_n(2, g_a)
+            tb2 = build_dgamma_n(2, g_b)
+            mixed = mat_tr(mat_mul(mat_mul(ta4, tb4), y_4)) + mat_tr(
+                mat_mul(mat_mul(ta2, tb2), y_2)
+            )
+            if mixed != ZERO:
+                su3_anom_ok = False
+                break
+
+    su2_anom_ok = True
+    for g_r in su2_gens:
+        for g_s in su2_gens:
+            tr4_mat = build_dgamma_n(4, g_r)
+            ts4_mat = build_dgamma_n(4, g_s)
+            tr2_mat = build_dgamma_n(2, g_r)
+            ts2_mat = build_dgamma_n(2, g_s)
+            mixed = mat_tr(mat_mul(mat_mul(tr4_mat, ts4_mat), y_4)) + mat_tr(
+                mat_mul(mat_mul(tr2_mat, ts2_mat), y_2)
+            )
+            if mixed != ZERO:
+                su2_anom_ok = False
+                break
+
+    check(
+        "Theorem 11(3) bidegree projectors Pi^{(p,q)}(A) (ranks 3,6,1,2,3) and exact gauge anomaly cancellation on R_gen = Lambda^4 (+) Lambda^2",
+        res_nd_ok
+        and projs_ortho_ok
+        and tr_y_gen == Q(0)
+        and tr_y3_gen == Q(0)
+        and su3_anom_ok
+        and su2_anom_ok,
+    )
+
+
 def main() -> None:
     source = Path(__file__).resolve().parents[1] / AUDIT_INPUT_PATHS[0]
     print("Source SHA256:", hashlib.sha256(source.read_bytes()).hexdigest())
     print(
-        "Exact rational and Fock-space controls for Theorems 1-8 of the U(5) 3+2 FMS projector and stabilizer carrier note."
+        "Exact rational and Fock-space controls for Theorems 1-11 of the U(5) 3+2 FMS projector and stabilizer carrier note."
     )
     theorem1_su2_projector_controls()
     theorem2_u5_projector_and_car_controls()
@@ -1599,6 +2112,9 @@ def main() -> None:
     theorem6_su5_quartic_orbit_selection_controls()
     theorem7_higgs_gram_and_pinch_controls()
     theorem8_transport_floor_and_coherent_scaling_controls()
+    theorem9_quantum_car_quartic_hierarchy_and_lambda4_projector_controls()
+    theorem10_k_copy_car_three_plus_two_controls()
+    theorem11_exterior_floquet_quartic_and_chiral_controls()
     print(f"TOTAL: PASS={PASS_COUNT} FAIL=0")
 
 

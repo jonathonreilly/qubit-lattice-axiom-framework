@@ -44,3 +44,42 @@ rows 1179, 1180, 1184, 1187, 1188-1190, 1193-1195; `parts/gap.md` L1-104 and L21
    result at this pin.
 5. **Consequence for this row.** I do not screen route families again. Step 1 below records only the candidates
    that are not in those three tables, each with its grep. Then one item is attacked.
+
+## Step 1. Literature probe, and what this session derived again (GUIDE; no statement here is a proof step)
+
+### 1.1 Literature probe (arXiv API, two queries, sorted by date)
+
+Queries: lattice gauge AND (mass gap OR confinement OR exponential decay) in math.PR and math-ph; and
+(Yang-Mills OR gauge theory OR sigma model OR O(N)) AND (mass gap OR exponential decay OR confinement) in
+math.PR, math-ph, hep-lat, hep-th. Newest entry seen: 2026-11-15. Result: no posted proof of a gap or of
+confinement for a non-abelian lattice gauge theory beyond strong coupling. The entries that bear on the lane
+are all on file already (file counts by `grep -l` over `library/gap-*.md`, `library/prior/*.md`, `FINISH.md`):
+A. Mihajlovic, arXiv:2611.11534 (7 files); Yan Ru Pei, arXiv:2611.01532 (14); V. P. Nair, arXiv:2608.10133 (6);
+S. Chatterjee, arXiv:2602.00436, confinement in three dimensions with a central U(1) (8). One sentence of Pei's
+abstract states the lane's (SING) in two dimensions: "only odd observables transfer".
+
+### 1.2 Candidates derived from the target in this session, each grepped before any work
+
+Only candidates that are not in the tables of rows 1189, 1190 and 1194 are listed. Every one has a match.
+
+| Candidate | Where it ends | Match on file |
+|---|---|---|
+| Fundamental Higgs with custodial SU(2), then hopping to zero (Fradkin and Shenker; Osterwalder and Seiler) | the rigid group acts trivially at zero hopping | Fradkin 18 files; row 1016 family 1 |
+| Sharpness-type differential inequalities (Aizenman and Barsky; Duminil-Copin and Tassion) | need a monotone structure; none for SU(2) | sharpness 48 files, Aizenman 23 |
+| Corner Hubbard-Stratonovich form: the links as an O(4) model in an annealed quaternion plaquette field, then loop soups | signs of the holonomy weights | Identity HS1, row 1016 3.3; `gap-mini-free-fable.md` 5.1 |
+| Random surfaces from the multilinear action | crosscap signs (Frobenius-Schur indicator -1) | method 35; rows 737, 744, 878, 1127 |
+| One-link noise acting on products of Wilson loops as a positive cone | the same sign: a reconnection inside one loop has coefficient -(1 - a_1)/2 | method 35 in other words; Mandelstam 3 files |
+| Centre twist as a commutator of two removable colour twists; twist eaters | zero classical cost, so the twist cost is a logarithm of the coupling, not a stiffness | Fact T, `gap-crux-restate.md` Section 2; rows 731, 1181 |
+| Spread vortex with a field-built colour axis | pays beta a^2 abs(D n)^2 with abs(D n)^2 at least c/beta on typical fields | row 1141 (2); row 1177 (14), (26), (33)-(35) |
+| Thermal form: a lower bound of asymptotic-scaling type on the deconfinement coupling at temporal extent n/K | it is (N-phys) | rows 1180, 1184; "THERMAL", row 934 |
+| Replica swap as a continuous family of field-dependent diagonal rotations (two replicas, sum and difference variables) | the collar cost is of mass form, proportional to sin^2 of the angle, so the sharp junction is optimal | Proposition J, checks 1121, 1123 (independent swaps); lead rule CL leaves coupled interpolations unbound |
+| Durhuus-Frohlich layers with the posted two-dimensional O(4) theorem, for three dimensions first | two-sided backgrounds; worst case orders the layer | method 36, rows 1139, 1140 |
+| Charged decay with a transitive rigid group gives neutral decay (a soft conversion) | false: van Enter and Shlosman weights; product examples | Proposition V; Example PROD; row 1115 2.3 |
+| Stability of mixing of all observables under small perturbations (Dobrushin and Shlosman block criterion) | needs the unperturbed neutral mixing | `gap-face-stability.md` (FST-BD) |
+| Mass inequalities from positivity of the measure (Weingarten; Vafa and Witten; West) | they bound the lightest mass from above only | Vafa 2 files; no consumer |
+
+Three structural constraints that I derived again are on file: a proof at one coupling in the band reads a
+number (K7, Proposition V); the gap is a property of the unique continuum object, so no model can refute a
+(K-flow) tool (`parts/gap.md` test table, point 5); the neutral half is not implied by the charged half.
+
+Verdict (GUIDE): a seventh plain-brief screening, about thirteen more candidates, no route off the lane's map.

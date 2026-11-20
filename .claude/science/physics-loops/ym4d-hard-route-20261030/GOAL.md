@@ -7,15 +7,17 @@ Started 2026-10-30 at the owner's direction, on Claude. This is research-stage w
 
 **Relation to the other target.** `.claude/science/toe-ruleset-20261021/agents/ym4d-proof/` on branch `claude/ym4d-proof-draft` (PR #10114) runs the soft-kernel route under its own lead. Read it freely with `git show`. Do not edit it.
 
-## No computer-assisted steps
+## Computation only as a formal proof
 
-Owner, 2026-11-01: "we dont want compute assisted proofs, these all need to be able to be lean formalized." This binds every part of the chain, on every side.
+Owner, 2026-11-20: "ok lets lift the no compute rule so long as any compute is acceptable as a formalized proof (exact) not a monte carlo aprox etc" and "I just want rock solid proofs, so the by hand was a constraint that was intended to keep them clean." This replaces the rule of 2026-11-01 ("we dont want compute assisted proofs, these all need to be able to be lean formalized"). The aim is unchanged: every step rock solid and formalizable in Lean. It binds every part of the chain, on every side.
 
-- Every step of the proof is a written mathematical argument that a person can check and that could be formalized in Lean. Writing the Lean itself is not part of this target now.
-- No statement of the chain may rest on numerics, floating-point evaluation, interval enclosures, machine search or machine enumeration. A label of implication or discharged cannot rest on a run, whatever its precision or error control.
-- Finite arithmetic is fine when it is small enough to display and check by hand. Choose scales and offsets large, so that an explicit estimate replaces a computed value.
+- Every step of the proof is either a written mathematical argument that a person can check and that could be formalized in Lean, or a computation that is itself a formal proof.
+- A computation counts as a proof step only when it is exact and checked by the Lean kernel: exact integer or rational arithmetic, or interval arithmetic with every rounding bounded and checked. A fast external program may produce a certificate if Lean checks the certificate. State what the trusted base is (for example, whether `native_decide` or a compiled evaluator is used).
+- Monte Carlo, floating-point evaluation without checked error bounds, fits and extrapolations are never proof steps, whatever their precision.
+- Until the Lean check exists, a step that rests on a computation is labelled gap (computation specified, not yet formally checked). The specification gives the exact statement, the method and the cost.
+- Prefer a hand argument when one exists. A computation is for a statement with no known hand proof, such as a finite bound at order-one coupling.
 - Constants are defined explicitly or by a stated existence argument, in a written order of choice. Quantifiers and limits are written out, and "standard" or "similar" is not a step. Any literature lemma the chain needs is rebuilt in `library/`.
-- Numerics remain a way to try to kill a statement or guide a guess. A run can show a statement false. If the chain consumes a counterexample, it has to be written so that it can be checked by hand.
+- Approximate numerics remain a way to try to kill a statement or guide a guess. A run can show a statement false. If the chain consumes a counterexample, it has to be checkable by hand or by a formal computation as above.
 
 ## Target contract
 

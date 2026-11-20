@@ -110,3 +110,41 @@ row 1032 B8; method 31). Success would give a uniform Poincare constant for some
 pins the obstruction to a named estimate.
 
 Step 1 done 07:05Z.
+
+## Step 2. The curvature row at the spin term: dropped at the first test (07:12Z-07:35Z)
+
+The plan of 1.3 was to ask whether the negative part of the Hessian at typical fields (the gluon-spin term
+F_(mu nu)[dA_mu, dA_nu], the same term that drives asymptotic freedom) is a coherent obstruction or an artefact of the
+worst-direction form. The answer does not need a computation.
+
+**Claim A (ARGUED; inputs RECALLED or unchecked, named).** No bound of the form Ric + Hess S >= kappa on SU(2)^E,
+with kappa > 0 independent of volume AND of the coupling along the trajectory, can hold. Reason: Bakry-Emery
+(RECALLED) would give a volume-uniform gap kappa for the single-link Langevin dynamics. A reversible local dynamics
+with a volume-uniform gap has equilibrium correlations that decay at a rate bounded below in lattice units
+(RECALLED, for finite-range Gibbs measures on a compact product space; I did not write the proof). Then the
+correlation length stays bounded in lattice units as beta -> infinity, so the physical mass is at least c/a_j ->
+infinity, and the continuum limit is trivial on the complement of the vacuum, against NT1 (GOAL.md). The same holds
+for any bounded-block dynamics: B's Theorem 66 (row 1218, unchecked) with n_k fixed and ell = n_k a_k -> 0 gives the
+continuum gap at least 16 varpi/(625 e^2 n_k a_k) -> infinity. So the pointwise failure at weak coupling (row 957
+GUIDE) is forced, not an artefact. A curvature bound can only work at one coupling where the correlation length is
+of order one, or in a multiscale form.
+
+**At one coupling (the window).** Row 957's GUIDE measured the Hessian term at 8-11 against Ric = 2 at beta 2.3-2.6.
+A block form at the window needs bounds on conditional laws of blocks where the strong-coupling parameter is far
+from small. Hand arithmetic (displayed series, GUIDE orientation only): with S = beta sum_p (1 - (1/2) tr U_p), the
+fundamental character ratio is u(beta) = I_2(beta)/I_1(beta).
+- beta = 2.3: I_1 = 1.15 + 0.760438 + 0.167613 + 0.018472 + 0.001221 + 0.000054 = 2.097798;
+  I_2 = 0.66125 + 0.291501 + 0.048189 + 0.004249 + 0.000234 + 0.000009 = 1.005432; u = 0.4793.
+- beta = 2.6: I_1 = 1.3 + 1.0985 + 0.3094 + 0.04358 + 0.003682 + 0.000207 = 2.7554;
+  I_2 = 0.845 + 0.4760 + 0.10056 + 0.01133 + 0.000798 = 1.4337; u = 0.520.
+The hand-proved fixed-spacing SU(2) gap reaches beta_W <= 9/25 (row 1218, A's Theorem 9.5), that is beta <= 0.18 in
+this normalisation, where u is about beta/4 = 0.045. The window needs u near 0.5, an order of magnitude further, past
+any convergent expansion I know. Under GOAL.md's rule (no computed certificate) a block bound there has no hand route.
+
+**Multiscale forms.** On file and closed: row 968 (Polchinski flow; the obstruction (LOC-COV) is itself a gap
+statement; (TILT-COV-sup) is a supremum over tilts, false by Theorem D2, `parts/gap.md` L29) and row 957 (Piazza-Shen;
+Proposition EQ moves the problem to the skeleton law).
+
+So the curvature row of row 1225's table is closed as an attack route in every form I can state: uniform forms prove
+too much (Claim A), the window form needs a computed certificate, and the multiscale forms end at a gap statement or
+a false supremum. No attack started. Step 2 done 07:35Z.

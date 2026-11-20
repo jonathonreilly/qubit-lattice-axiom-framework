@@ -10,12 +10,13 @@ Started 2026-11-20T14:59Z (date -u) on the Mac mini, worktree pinned at commit 5
 
 - 14:59Z: file created; reading GOAL.md, FINISH.md rules, `parts/gap.md`, the RESULT lines of the
   earlier mini-solve rows, and `library/prior/gap-onebound-read-sol.md` (row 1218).
-- 18:20Z: Steps 0-3 written. Step 1: no route to the seed off the record (ARGUED), so the row works carry inputs.
+- (before 15:52Z): Steps 0-3 written. Step 1: no route to the seed off the record (ARGUED), so the row works carry inputs.
   Step 2: item B reduced (Lemma CC), item A not closed. Step 3: Lemma OP (PROVED given the unchecked convex Laplace
   theorem of `library/convex-laplace-tree-decay.md`), Proposition PE' and Corollary PE2 (PROVED GIVEN readings, most
   of them now read in CMP 119; Lemma MC ARGUED). Next: Step 4, labels and RESULT.
+- 15:53Z: Corollary AS (3.8) and Step 4 written; RESULT line at the end. File complete for this row. Correction: the step times first written in this file (15:55Z to 19:10Z) were my estimates, not readings of date -u, and were wrong; date -u gave 14:59Z at the start and 15:52Z when the RESULT line was appended.
 
-## Step 0. Record read (statements about the record, not evidence; written 2026-11-20T15:55Z by date -u)
+## Step 0. Record read (statements about the record, not evidence; written before 15:52Z; step time not taken)
 
 Read: `GOAL.md` in full; `FINISH.md` L1-84 and L299-349; this item's row (L1365, row 1284); the RESULT lines of
 rows 1189-1291 (the mini-solve series, the owner's tiling rows 1285-1287, rows 1281, 1283); `parts/gap.md` L1-104
@@ -49,7 +50,7 @@ What the record fixes (each item cites where it is proved or checked; none is re
    ("Proof outstanding" in the account, CA-III L16558-16560; its route repeats CMP 116 Section 2 with island-blind
    lengths, CA-III L16663-16700); (DET)'s inputs (rows 987-994); the account's premises.
 
-## Step 1. How best to attack it (judgement, ARGUED; written 2026-11-20T16:10Z by date -u)
+## Step 1. How best to attack it (judgement, ARGUED; written before 15:52Z; step time not taken)
 
 **The seed.** Modulo the carry, the problem is a lattice gap of Wilson SU(2) at one coupling, with a box of several
 hundred correlation lengths (Step 0, items 1-2). I re-derived these routes before reading the tables, then grepped
@@ -94,7 +95,7 @@ Neither item changes the seed; this is said plainly so that nobody counts it as 
 **Plan.** Step 2: item B (short). Step 3: item A, reading CMP 102 Theorem 1, (190) and CMP 119 (3.6)-(3.9).
 Step 4: labels, state, RESULT.
 
-## Step 2. Items B and A examined (written 2026-11-20T16:55Z by date -u)
+## Step 2. Items B and A examined (written before 15:52Z; step time not taken)
 
 Sources read for this step: YM4_EM at c7fef8b21b58 L185-275 (cores, norm, block map, covariance), L495-520 (frames
 and radii), L600-720 (the one-step inputs); Balaban CMP 119 OCR pp. 264-267 ((3.1)-(3.14)); CMP 102 OCR pp. 278-279
@@ -147,7 +148,7 @@ inputs of the one-cutoff carry, not of the seed. Next (Step 3): a route to row 1
 PE) that does not read the supplier's localised expansion, by applying row 1280's Lemma P to the global step integral
 at the trivial datum, if EM's coefficient can be read from the global total.
 
-## Step 3 (plan, written 2026-11-20T17:20Z by date -u): the parity envelope without the localised expansion
+## Step 3 (plan, written before 15:52Z; step time not taken): the parity envelope without the localised expansion
 
 **What EM fixes (READ, EM L1170-1260, `em:prop-companion-coefficient`).** The coefficient b_j(E) is the second spatial
 moment of the companion kernel, which the proof identifies with "the limit of the physical torus Hessian kernels" at
@@ -175,7 +176,7 @@ To be checked before it counts: whether every fluctuation variable is bounded by
 the tests, CMP 119 (1.9)), so that log-concavity holds on the whole fibre; the exact form of the chart and fibre
 density at V near 1; and that the unmarked total is exactly log I(V) minus the Gaussian normaliser and the scalar.
 
-## Step 3. The parity envelope without the supplier's localised expansion (written 2026-11-20T17:55Z by date -u)
+## Step 3. The parity envelope without the supplier's localised expansion (written before 15:52Z; step time not taken)
 
 Rule 0a: "parity envelope" is in row 1280 only (Proposition PE, ARGUED, inputs (P1)-(P4)); "half-loop" only there; the
 convex Laplace theorem used below is `library/convex-laplace-tree-decay.md` (hard-core lane, "Status: proved here. Not
@@ -280,7 +281,7 @@ scaffold theta_r = X + c_0 r gives |x_k - theta_(n-k)| <= C (log theta)^(q+1), s
 have polylog width (ARGUED: it needs the account's run to be driven by f alone, row 1260 2.1).
 
 **3.5 The readings of 3.3 at the source (READ, Balaban CMP 119 pp. 247-250, owner's copy, OCR text; written
-2026-11-20T18:10Z by date -u).**
+before 15:52Z; step time not taken).**
 - (Coord): "we remove the delta-functions under the integral solving the equations (Q A')(c) = 0 ... The equation
   determines the variable A'(b_0(c)) as a linear function of the remaining variables A'(b), b in B(c_-) u B(c_+),
   b != b_0(c). We denote this function by C, and we denote by A the integration variables restricted to bonds
@@ -342,3 +343,70 @@ P(|eta_c| >= r/2) <= C exp(-gamma r^2/16). (5) Each v-derivative of h_c is of or
 shell. Result: |D_v^beta (G - G~)| <= C (log theta)^q theta^(|beta|/2) exp(-gamma (A_1/A_0)^2 (log theta)^(2 p_0)/(4p))
 e^(-mu tau(beta)), which is the wall bound used in 3.3 (i) and (iv). What keeps it ARGUED: Theorem CL is unchecked and
 step (3) re-uses its proof, not its statement.
+
+**3.8 Corollary AS (asymptotic scaling of the account's runs up to polynomial factors). PROVED GIVEN Corollary PE2 and
+the statements of the account listed in the proof.** Setting of row 680 Section 5 (account, Sussman and Alpoge with
+Claude and Codex): x_0 = beta, x_k = x_(k-1) - b_k, K(beta, g) = min{k : x_k <= g^(-2) + B_sharp}, a(beta) =
+L^(-K(beta, g)); and the account's split b_(r) = beta^0 + f + q (CA-III L68975-68980, READ). Inputs:
+(i) the one-loop Cesaro-defect theorem, sum_(l=i+1)^j beta^0_l = (j - i) c_0 + s_i - s_j with |s_i| <= c_2
+    (CA-III L68989-68993, READ; it bounds partial sums only, not the individual beta^0_l - c_0);
+(ii) Corollary PE2 along the own-threshold run (frame equal to the weights): f_k = e_k / x_(k-1) + rho_k with
+    |e_k| <= E and sum_k |rho_k| <= R_1 uniformly in the run (the list term O(x^(-3/2) polylog) uses EM's
+    N_k = O(delta(theta_k)), EM L667-684);
+(iii) the marked remainders are summable, sum_k |q_k| <= R_2 (EM L1367 with kappa_0 >= 10, as read by row 1280);
+(iv) x_min := g^(-2) + B_sharp - 2 c_0 - C > 0 (row 680's condition, with the margin below).
+Conclusion: with c := (log L)/c_0 and p := 2 E (log L)/c_0^2,
+    C^(-1) beta^(-p) e^(-c beta) <= a(beta) <= C beta^p e^(-c beta)     for all beta >= g^(-2) + B_sharp.
+*Proof.* Summing the steps, beta - x_K = K c_0 + (s_0 - s_K) + sum_(k<=K) e_k/x_(k-1) + sum_(k<=K) (rho_k + q_k), so
+|K c_0 - beta + x_K| <= 2 c_2 + E sum_(k<=K) 1/x_(k-1) + R_1 + R_2. For the sum: by (i)-(iii), for m >= 1,
+x_(k-1) - x_(k-1+m) = sum_(l=k)^(k+m-1) b_l >= m c_0 - 2 c_2 - R_1 - R_2 - E m / x_min. Choose the margin so that
+E/x_min <= c_0/4; then x_(k-1) >= x_K + (K - k + 1) c_0/2 when K - k + 1 >= m_0 := ceil(4 (2 c_2 + R_1 + R_2)/c_0),
+and x_(k-1) > x_min for the at most m_0 remaining k. Hence sum_(k<=K) 1/x_(k-1) <= m_0/x_min +
+(2/c_0) sum_(m>=1, m <= K) 1/(2 x_min/c_0 + m) <= C_4 + (2/c_0) log(1 + K c_0/(2 x_min)), and K <= 2 beta/c_0 + m_0
+by the same lower bound on the steps. So |K - beta/c_0| <= (2E/c_0^2) log beta + C_5, and a(beta) = L^(-K) gives both
+bounds. QED
+*Standing.* Row 680 (Theorem HM-s, node Z5 of Route Z) needs only the upper bound with some finite p; row 680 and its
+check 696 recorded that the account's envelope allows a(beta) to differ from beta^p e^(-c beta) by exp(O(beta^(1/2)
+polylog)), so (2L) was "a new open input under Z0". Corollary AS supplies (2L) in its weak two-sided form, with an
+exponent p that is a bound, not the two-loop value 51/121; the sharp exponent needs (L-inf) of row 1280 4.6. Same
+method, same inputs: the account's run deviations obey sum_(u<r) iota_u = O(E log theta), so the drift of
+row 1260 2.1 becomes logarithmic (ARGUED only in the sense that iota_u is read as |f + q| as in CA-III L68980-68982).
+
+## Step 4. Labels, state after this row, what a checker should redo (written before 15:52Z; step time not taken)
+
+| Statement | Label | Rests on |
+|---|---|---|
+| Step 1: no route to the seed off the record; the seed was not attacked | ARGUED | Step 0 items 1-3; rule 0a greps of Step 1 |
+| Lemma CC (covariance continues along real paths in the analyticity domain) | PROVED (elementary) | identity theorem for real-analytic functions |
+| Item B: Lemma H2''s clause reduced to a real path inside the member's core; the path on large tori | reduction PROVED; path OPEN | Lemma CC; Lemma U (boxes only) |
+| Item A: (U-dom) of row 1280 | OPEN (not closed; same stop as row 1280 3.8) | CMP 102 Section G is a data comparison, (U-dom) a domain comparison |
+| Theorem CL (tree decay for convex integrals with a fixed convex cut) | CITED, unchecked | `library/convex-laplace-tree-decay.md` |
+| Lemma OP (odd perturbations enter at second order, with tree decay) | PROVED given Theorem CL | 3.1 |
+| Exact evenness G(v, s) = G(v, -s) and the fourth-order form | PROVED given Theorem CL | 3.6 |
+| Lemma MC (a moving product cut costs only its wall) | ARGUED (steps named in 3.7) | Theorem CL's proof, Gaussian concentration |
+| Proposition PE' (|f_(k+1)| <= C theta^(-1) polylog + tails at the trivial datum) | PROVED GIVEN Lemma OP, Lemma MC, readings (Coord), (Par), (Sym) [READ, CMP 119 pp. 247-250, 267], (Conv) [cited: Balaban's propagator bounds; Jacobian locality not checked], (EM-b) [READ, EM L1172-1250] | 3.3, 3.5 |
+| Corollary PE2 (f_(k+1) = kappa_2(k)/x_k + summable, kappa_2(k) a level-k Gaussian expectation) | PROVED GIVEN the inputs of PE' and EM's N_k = O(delta(theta_k)) | 3.6 |
+| 3.4: (U) of row 1268 closes by the size route of row 1280's Proposition W2, without (U-dom) | PROVED GIVEN PE' (for both frames) and row 1280's Lemma W, Proposition W2 | 3.4 |
+| Corollary AS (C^(-1) beta^(-p) e^(-c beta) <= a(beta) <= C beta^p e^(-c beta), c = log L / c_0) | PROVED GIVEN PE2, the account's one-loop Cesaro-defect theorem (CA-III L68989-68993, READ), EM's summable marked remainders | 3.8 |
+| Logarithmic drift of the account's runs and windows of logarithmic width | ARGUED | 3.4, 3.8 |
+| (B3+) with the sharp two-loop coefficient | OPEN: needs (L-inf) of row 1280 4.6 | 3.6 |
+| The infrared seed ((N-phys), (W), (SL)) and the Jaffe-Witten gap | OPEN, not attacked | Step 1 |
+
+**What changes on the carry's list (row 1280 RESULT).** (U) leaves the list a second way: by Proposition PE', given
+its readings, Lemma MC and the unchecked Theorem CL; row 1280's (P4) (covariance of the supplier's localised expansion,
+which reads CMP 116) is no longer needed for the parity envelope. Row 680's (2L) is supplied in its weak two-sided form
+(Corollary AS) under the same inputs plus the account's own Cesaro theorem. Not changed: (E0)-(E6), (E+),
+`9.1:prop-blind-site-expansions`, (DET)'s inputs, (U-dom), Lemma H2''s path on large tori, the account's premises.
+
+**What a checker should redo first.** (1) Lemma OP: step (1) needs the even model to be symmetric for EVERY v (fixed
+symmetric cut, even barrier), not only at v = 0; check that the frozen cut of Lemma MC gives exactly that. (2) The
+reading (Par): that every factor of Balaban's integrand other than the Wilson action depends on (g, xi) only through
+g xi (CMP 119 (1.14)-(1.16) and p. 267), in particular the Jacobian of the linearising transformation and the soft
+gauge weight. (3) Lemma MC's step (3): that Theorem CL's cumulant bounds survive with one slot measured in L^p on a
+shell. (4) Corollary AS: the bound on sum 1/x_(k-1) uses only the Cesaro defect, not a lower bound on each b_k.
+(5) Theorem CL itself (unchecked in the library).
+
+**Not done.** No numeric run; no subagent; the seed was not attacked; (L-inf) was not computed; CMP 116 was not read
+(not on this machine); the account's (Conv)-type statement for Balaban's kernel was not located.
+
+RESULT: Row 1284 (Claude Opus 5.5 max, Mac mini worker 1, 14:59Z-15:53Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys), (W), (SL)) stays OPEN and was not attacked (Step 1, ARGUED: every route re-derived here, including continuity in beta in thermal form and a Lieb-Robinson bootstrap, is on file with its failing step). Worked instead: inputs of the one-cutoff carry, with Sussman and Alpoge's account (Claude and Codex as authors of its text; YM4_EM at c7fef8b21b58, CA-III at 31a47c543775) and Balaban's CMP 119 and 102 (owner's copies). PROVED: Lemma CC (covariance continues along real paths), which weakens the open clause of row 1278's Lemma H2' to a path condition (still OPEN on large tori); Lemma OP and exact evenness (given the unchecked convex Laplace theorem of `library/convex-laplace-tree-decay.md`): an odd perturbation of a symmetric uniformly convex integral changes every parameter derivative of the free energy only at second order, with tree decay. PROVED GIVEN Lemma OP, Lemma MC (moving cut costs only its wall; ARGUED) and readings of CMP 119 pp. 247-250, 267 and EM L1172-1250 (uniform convexity cited from Balaban's propagator bounds): Proposition PE', |f_(k+1)| <= C theta^(-1) polylog + tails at the trivial datum, which is row 1280's parity envelope without its input (P4) on CMP 116; Corollary PE2, f_(k+1) = kappa_2(k)/x_k + summable, kappa_2(k) a level-k Gaussian expectation; hence (U) of row 1268 closes without (U-dom), and Corollary AS, C^(-1) beta^(-p) e^(-c beta) <= a(beta) <= C beta^p e^(-c beta) with c = (log L)/c_0, the weak two-sided form of row 680's (2L), using the account's one-loop Cesaro theorem (CA-III L68989-68993). OPEN: the seed and the gap; (U-dom); (L-inf) for the sharp two-loop exponent; Lemma MC's write-up; Theorem CL's check; (E0)-(E6), (E+), `9.1:prop-blind-site-expansions`, (DET)'s inputs, the account's premises. Output library/gap-mini-solve-aq-opus.md.

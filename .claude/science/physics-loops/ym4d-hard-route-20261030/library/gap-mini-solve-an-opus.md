@@ -169,9 +169,9 @@ central-valued exterior and some pair of direction-2 links f_+- on the hinge H, 
   fails").
 - If (FO) fails at all large d along the tuning, Proposition 2.2 says nothing; (M) can still fail for other reasons.
 
-So A's route and the boundary obstruction meet exactly at (FO), the orientation order of the frames of an edge, read at
-a central exterior. Row 1224's GUIDE (r up to 0.91 at beta 3-6, d 3-6; r_bar 0.69 at beta 2.8, d 8) measured the
-corresponding face quantity; the edge version is the one the consumer sees.
+So A's route and the boundary obstruction meet exactly at (FO), the orientation order of the frames of hinge links,
+read at a central exterior. Row 1224's GUIDE (r up to 0.91 at beta 3-6, d 3-6; r_bar 0.69 at beta 2.8, d 8) measured
+the corresponding face quantity (staggered face magnetizations); the hinge version is the one the consumer sees.
 
 **2.4 What is open, and why (ARGUED).** (FO) uniformly in d at large beta is a statement of continuous-symmetry
 breaking in a three-dimensional boundary layer: by 2.1 the only terms that see the frames are the pinning plaquettes

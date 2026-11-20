@@ -68,3 +68,49 @@ not cover the regular step. Neither changes the seed.
 - Step 4: (E0), (E4), (E5) of row 1268 against the same text; then (CE) as row 1294 6.5 states it, including the
   threshold eps_0 and its dependence on the floor (row 1294 6.5 "Robustness").
 - Step 5: labels, state of the carry, what a checker should redo, RESULT.
+
+## Step 2. What the account prints for the regular step's expansion (READ; written 2026-11-20T16:43Z by date -u)
+
+Sources: Sussman and Alpoge, CA-I at 31a47c543775 (`theorem_0_complete_account_raw_I.tex`, 166711 lines), and the
+component manuscripts YM4_EM, YM4_FP, YM4_LP, YM4_MB at c7fef8b21b58, fetched by URL into a scratch folder outside the
+repository; Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, after Balaban. Statuses are
+those of `library/sa-index/ca-full/index.tsv`.
+
+**2.1 The regular step is cited, not printed.** 4.3:thm-small-field-step (CA-I L4136, status CITED) is "Balaban's
+one-step small-field renormalization theorem, cited by statement": its first part is CMP 109 Theorem 3; "Its second
+part is the argument of [CMP 116], including its bound [CMP 116 (2.41)], read with the fluctuation domain of [CMP 119
+(3.43)] ... For the proofs we refer to [CMP 109 2-5] and [CMP 116]" (L4196-4201). The lemma before it,
+4.2:lem-unmarked (L4031, INCOMPLETE), quotes "the argument ... Balaban's for [CMP 116 Lemma 3], carried out with the
+small-field cutoff of [CMP 119]" at its marked step (L4078-4081).
+
+**2.2 The printed large-field machine is stated only for a non-empty arrested set and rests on the full-stage
+expansion.** 4.24:thm-survivor-block-expansion (L104684, PROVED) works "at a fixed term of the expansion [CMP 122a
+(1.55)] whose set W of arrested components is non-empty" (L104687-104688). Its hypotheses include (h3) "The
+normalisation lemma at the full stage and the fluctuation cluster expansion at the full stage, together with the three
+statements of the full stage on which these two rest" (L104740-104743), (h4) "the analysis of the Gaussian integrals in
+[CMP 119 (3.33)-(3.37)] ... used as stated there", and (h6) "The abstract cluster-expansion proposition". Its lemmas
+4.24:prf-counted-once (L108354) and 4.24:prf-single-term (L108507), which row 1268 read as the written-out form of the
+cut expansion, apply "the first step of the cluster expansion for the survivors ... with no change" (L108484) and "the
+general one-term bound ... used here as stated in this chapter" (L108536-108538).
+
+**2.3 The cited-by-description statements have no defining text in CA-I.** Grep of CA-I for "fluctuation cluster
+expansion at the full stage", "normalisation lemma at the full stage", "abstract cluster-expansion proposition",
+"general one-term bound", "the one-term lemma", "cluster expansion with parameters" and "parameter-free majorants" finds
+only the citing sentences (L80181-80210, L80619-80638, L104730-104852, L108536-108599); no statement carries those
+names, and the index has no label with "one-term" other than 4.22:lem-one-term-bound (whose own hypothesis is "the
+hypotheses of the one-term lemma, including its floors (F1)-(F3)", L80619). Row 1294 6.1 found the same for the two
+statements assumed by 4.22:lem-cluster-manifold. The component manuscripts do not supply them: FP (action-density
+asymptotics), LP (periodic Wilson states and reflection positivity), MB (linear lattice PDE with block constraints) and
+EM (the one-step comparison, which takes the step's expansion as supplier inputs 1-4) prove no fluctuation cluster
+expansion.
+
+**2.4 Consequence (PROVED as a reading, from 2.1-2.3).** The regular step is not a case of the printed machine: the
+machine takes the full-stage expansion as an input (h3) and states itself only for W non-empty. So the route of row
+1294 Step 5 ("applying the printed machine to the regular step") cannot supply (CE) or (E1)-(E3) from the account's
+proved statements. Within the account, (CE) and (E0)-(E5) rest on Balaban's text: CMP 116 for the cut and (2.41), CMP
+109 for the inductive bounds, CMP 119 (3.33)-(3.37) and (3.43) for the Gaussian analysis and the fluctuation domain.
+What fails: Step 3 of the plan as written. What is left: whether CMP 119, which is on hand, already carries the cut
+expansion (Mayer expansion, the decomposition chi = chi_(Y_0) sum_P (-1)^|P| chi^c_P, conditioning, whitening,
+decoupling, and a one-term bound with the factor exp(-(1/2) gamma_2 T^2 |P|)) for a term whose large-field set is
+empty. If it does, (E1)-(E3) become readings of an available Balaban paper; if not, they need a rebuild. Step 3 decides
+this from the owner's copy of CMP 119.

@@ -15,7 +15,7 @@ Work in progress. Sections are appended one step at a time.
 
 ## 1. What was read, and where the problem stands (reading only; no new claim)
 
-Written 2026-11-20 by about 05:35Z (`date -u` at start 04:47Z). Sources read at pin 03ccdf668: `GOAL.md`; `FINISH.md` L1-90 and row 1213; the RESULT lines of rows 1188-1202 and 1220 (gap-mini-solve a-l, p); `parts/gap.md` L1-126 and its headings; `library/gap-mini-neutral-fable.md` L1-120 (the exact statement of (N-phys)); `library/gap-mini-solve-o-fable.md` Sections 2-5; `library/gap-mini-solve-j-fable.md` Step 7; `library/gap-mini-solve-q-fable.md` Section 1; `library/prior/gap-o4-pinned-cell-read-opus.md` Step 3 (the OpenAI O(4) mechanism); `library/gap-pinned-cell-gauge-max.md` (row 1011) Sections 3 and 7.
+Written 2026-11-20 between 04:47Z and 05:20Z (`date -u`). Sources read at pin 03ccdf668: `GOAL.md`; `FINISH.md` L1-90 and row 1213; the RESULT lines of rows 1188-1202 and 1220 (gap-mini-solve a-l, p); `parts/gap.md` L1-126 and its headings; `library/gap-mini-neutral-fable.md` L1-120 (the exact statement of (N-phys)); `library/gap-mini-solve-o-fable.md` Sections 2-5; `library/gap-mini-solve-j-fable.md` Step 7; `library/gap-mini-solve-q-fable.md` Section 1; `library/prior/gap-o4-pinned-cell-read-opus.md` Step 3 (the OpenAI O(4) mechanism); `library/gap-pinned-cell-gauge-max.md` (row 1011) Sections 3 and 7.
 
 **The target and its reduction (cited, not re-derived).** In this lane the Jaffe-Witten gap clause for SU(2) needs two things: the account's continuum datum, which is PROVED given the account's premises (rows 916-917), and one lattice statement, (N-phys). Row 1179 Theorem BP (check 1183) shows (N-phys) alone gives the gap clause. (N-phys) (row 1161 L146-148, L215, in the wording of `gap-mini-neutral-fable.md` Step 1) reads: there are a physical side L and an index j_0 such that for every j >= j_0, with n_j = L/a_j and 4 | n_j, some integer u_j with 3 <= u_j <= n_j/K satisfies s_j(u_j; n_j) <= 1/2. Here s is the centre-neutral excited trace of the vacuum-normalised periodic transfer operator on the spatial cube n^3, and K = 512, n_j >= 2^70. The existence part (T0) belongs to the hard-core lane and is not touched here.
 
@@ -27,7 +27,7 @@ Written 2026-11-20 by about 05:35Z (`date -u` at start 04:47Z). Sources read at 
 
 ## 2. How best to attack it, and the choice made here
 
-Written 2026-11-20, about 06:10Z.
+Written 2026-11-20 before 05:20Z (`date -u`).
 
 **2.1 The analysis (ARGUED; it restates the record's conclusions in one chain).**
 (a) The only solved analogue of the crux is the 2D O(N) model, N >= 3, with two posted, unrefereed proofs (DHY; OpenAI). Both cross the 2D band in two halves. The charged half is a stiffness iteration whose gain is the non-abelian bracket, run over a class defined by bounds. The neutral (rotation-invariant) half is a positivity structure: conditional abelian ferromagnets, association, Ginibre (row 1009 Step 3, 3.11; row 1007; row 1193). OpenAI's O(3) paper disclaims the neutral half outright (row 1007 L124).
@@ -53,17 +53,42 @@ So the law of (x_p) is not associated (the FKG inequality fails for a pair of in
 
 **What it kills.** Any neutral-half argument that uses FKG association, Holley comparison or monotone coupling for the plaquette-trace field of SU(2) in the natural order. The obstruction is the one of EP-NO: pseudoreality of spin 1/2 on a non-orientable closed plaquette surface. It says nothing about variables that are blind to the centre. Step 4 tests those.
 
-## 4. Sign test for centre-blind plaquette variables (in progress; stopping point recorded 2026-11-20 about 06:40Z)
+## 4. Sign test for centre-blind plaquette variables (written by 05:22Z, `date -u`)
 
 Question. For integer spins the Frobenius-Schur indicator is +1, so EP-NO's obstruction is absent. Is I(P) := E_Haar[prod over p in P of chi_1(U_p)] >= 0 for every finite plaquette set P of Z^4, where chi_1(U) = (tr U)^2 - 1 is the adjoint character? Equivalently, under Haar measure on SO(3) links, is every product of traces of plaquette rotations non-negative in mean?
 
 Tools (standard SO(3) Haar integrals, RECALLED and used by hand): for the defining representation D of SO(3), int D_ab D_cd dR = delta_ac delta_bd/3, and int D_ab D_cd D_ef dR = eps_ace eps_bdf/6. Gluing: int chi_j(A R) chi_k(R^(-1) B) dR = delta_jk chi_j(AB)/d_j. Disc rule: for a plaquette disc D with V_int interior sites and E_int interior links, the integral over its interior links of prod over p in D of chi_j(U_p) is d_j^(V_int - E_int) chi_j(U_(boundary of D)). Closed manifold surface S: I = nu_j^(non-orientable) d_j^(chi(S) - |S|), and nu_1 = +1.
 
-Hand results so far (PROVED, elementary; each is a short exact computation written in the working above this line in the session, to be written out in 4.1):
-- Every closed plaquette surface, orientable or not: I > 0 (spin 1 is real).
-- Two closed surfaces glued along a tree of links: I is the product (gauge invariance makes the integrand constant on the shared tree).
-- The 2 x 1 x 1 box with its internal wall (11 plaquettes; four links in three plaquettes): I = 3^(-8) E[chi_1^3] = 3^(-8) > 0.
-- The 2 x 2 x 1 box with both internal walls (20 plaquettes; the central link in four plaquettes): after the disc rule and a tree gauge, I = 3^(-12) J with J = E[prod_i chi_1(b_i) prod_i chi_1(b_i b_(i+1)^(-1))] over four Haar rotations; integrating b_1 and b_3 by the eps rule gives J = (1/36) E[chi(b_2) chi(b_4) f^2], f = chi(b_2) chi(b_4) - chi(b_2 b_4); and E[chi chi f^2] = 1 - 2/3 + 1/3 = 2/3. So J = 1/54 > 0.
-- Graph analogue (site variables, K_4): E[prod over the six edges of chi_1(g_x g_y^(-1))] = (1/6)(1/3 - 1/6) = 1/36 > 0.
+### 4.1 Hand results (PROVED, elementary; one author, unchecked)
 
-Where it stands. No negative value found. Negative values can only come from recoupling at singular sites (6j symbols with intermediate spins 0, 1, 2, some of them negative, e.g. {1 1 0; 1 1 1} = -1/3) or from the negative off-diagonal O(3) Weingarten weight at four-valent links (-1/30 against 2/15). Next: decide whether to finish this test or stop it. It has no consumer by itself (see 4.2, to be written), so it may be stopped.
+Notation: D is the 3-dimensional real representation of SO(3) = SU(2)/{+-1}; chi = chi_1 = tr D is real and invariant under inversion and conjugation, so plaquette orientation does not matter. Two facts are used. (F1) int D_ij D_kl D_mn dR = eps_ikm eps_jln / 6, because the SO(3)-invariants of (R^3)^(tensor 3) are spanned by eps and |eps|^2 = 6 (check: contracting with delta_ij delta_kl delta_mn gives E[chi^3] = 1, the multiplicity of spin 0 in 1 x 1 x 1). (F2) int chi_k(g) chi_j(h g) dg = delta_jk chi_j(h)/d_j, and chi_1^2 = chi_0 + chi_1 + chi_2.
+
+(a) Closed plaquette surfaces (every link in two plaquettes, one plaquette cycle at every site): I = d_1^(chi(S) - |S|) > 0, orientable or not. RECALLED (Migdal's gluing; Witten 1991 for non-orientable surfaces, sign nu_j^(non-orientable) with nu_1 = +1). For spin 1/2 the same formula with nu = -1 is EP-NO's input NS0.
+
+(b) Disc rule (the same gluing): for a plaquette disc D with V_int interior sites and E_int interior links, the integral over its interior links of prod over p in D of chi(U_p) is 3^(V_int - E_int) chi(U along the boundary of D).
+
+(c) The 2 x 1 x 1 box with its internal wall W (11 plaquettes; the four links of the boundary of W lie in three plaquettes each). The five outer faces of each unit cube form a disc with boundary that of W, with 8 interior links and 4 interior sites. By (b), each disc gives 3^(-4) chi(R), with R the holonomy around the boundary of W, and W gives chi(R). R is Haar distributed, so I = 3^(-8) E[chi^3] = 3^(-8) > 0.
+
+(d) The 2 x 2 x 1 box with both internal walls (20 plaquettes; the central link L lies in four plaquettes). Each unit cube has four outer faces and two walls. Its outer faces form a disc whose boundary is the 6-link boundary of its two walls (5 interior links, 2 interior sites), so (b) gives 3^(-3) chi(R_c). The four discs have disjoint interiors that do not meet the walls. On the wall complex (13 links, 10 sites), fix the gauge on the spanning tree made of L and the eight spokes (the links from the two ends of L to the outer wall sites). What is left are the four outer vertical wall links b_1, ..., b_4, in cyclic order around L, Haar and independent. Then wall i has holonomy b_i, and cube c between walls i and i+1 has R_c = b_i b_(i+1)^(-1). So I = 3^(-12) J with J = E[prod_i chi(b_i) prod_i chi(b_i b_(i+1)^(-1))]. By (F1), int chi(b) chi(b x^(-1)) chi(b y^(-1)) db = (1/6)[chi(x) chi(y) - chi(xy)]: contract eps_ace eps_adf = delta_cd delta_ef - delta_cf delta_de with D(x)_cd D(y)_ef. Apply this to b_1 (x = b_2, y = b_4) and to b_3 (the same x, y): J = (1/36) E[chi(b_2) chi(b_4) f^2] with f = chi(b_2) chi(b_4) - chi(b_2 b_4). Expand: E[chi^3(b_2) chi^3(b_4)] = 1; by (F2), E_(b_4)[chi(b_4)^2 chi(b_2 b_4)] = chi(b_2)/3 and E_(b_4)[chi(b_4) chi(b_2 b_4)^2] = chi(b_2)/3, so the cross term is 1/3 and the last term is 1/3. So E[chi chi f^2] = 1 - 2/3 + 1/3 = 2/3, J = 1/54 and I = 3^(-15)/2 > 0.
+
+(e) Pinching: if two plaquette sets share only a tree of links, the integrand is constant on that tree by gauge invariance, so I is the product.
+
+Where negative values could come from: only recoupling at singular sites (some 6j symbols with intermediate spins 0, 1, 2 are negative, for example {1 1 0; 1 1 1} = -1/3), or the negative off-diagonal O(3) Weingarten weight at four-valent links (-1/30 against 2/15). (c) and (d) contain three- and four-valent links and are still positive. No negative I(P) was found. The general sign is OPEN.
+
+### 4.2 Why this test stops here (ARGUED)
+
+(i) The test asks about Haar measure. The Wilson SU(2) weight prod_p exp(2 beta x_p) is not a function of centre-blind variables. Its character expansion has positive coefficients on every spin, half-integer ones included. In the mean of a product of adjoint characters, half-integer spins must close into surfaces, and a closed non-orientable half-integer surface carries the sign -1 of NS0. So the adjoint marginal of the Wilson measure has no expansion with positive terms, even if every Haar moment I(P) is positive. For the products F, G that I could build from S_0, the beta = 0 term is +3^(-91), which dominates at small beta, so I found no kill either.
+(ii) Even a Griffiths inequality for adjoint plaquette variables would give monotonicity in the couplings, not decay. The neutral half of the O(4) proof also needs a decomposition into conditionally abelian ferromagnets that carry charged decay (OpenAI 3.11). For Wilson SU(2) that decomposition is frustrated (row 1188 Lemma HF; row 1190; row 1198 Remark OR). So a positive answer to the Haar test has no consumer on the path to (N-phys), and I stop it.
+
+## 5. Where the attack stops: one precise lemma, three ways (rule 11)
+
+**(POS-N), OPEN.** There is a family of local, centre-blind variables of 4D Wilson SU(2) that generates the centre-neutral local algebra, whose law satisfies an FKG or Griffiths-Ginibre inequality at every beta >= 0, and through which the neutral half of OpenAI's Section 3.11 can run: a decomposition into conditionally abelian ferromagnets whose charged correlations a stiffness argument can bound.
+
+By Section 2.1, a proof of (POS-N), together with a charged input at every coupling, is the only kind of neutral mechanism on record anywhere. That is why this row chose it. Its three ways:
+
+1. **Fundamental plaquette traces x_p.** Griffiths over monomials FAILS (EP-NO, given NS0, checked row 744). FKG for increasing functions FAILS (Lemma FKG-NO, Section 3, given NS0). Both fail at 0 <= beta_p <= 2^(-291) and in the centre-even state. Cause: pseudoreality of spin 1/2 on the non-orientable 92-plaquette surface S_0.
+2. **Link Hopf or maximal-torus coordinates** (the gauge form of q = (cos alpha z, sin alpha w)). FAILS: the conditional abelian model is frustrated on one plaquette (row 1188 Lemma HF), and the sign pattern of the eight plaquette monomials cannot be removed by phase shifts (row 1190; row 1198 Remark OR). On file; not redone here.
+3. **Adjoint plaquette characters chi_1(U_p).** Haar moments are positive on every closed surface and on the branched complexes (c), (d) computed here. But the Wilson weight brings in closed non-orientable half-integer surfaces with sign -1 (4.2 (i)), and way 2 blocks the decomposition (4.2 (ii)). OPEN, with no consumer.
+
+What a fourth way would need: variables that are blind to the centre (so that spin 1/2 never enters a sign) and that also turn the four-linear plaquette weight into a sum of bilinear ferromagnetic terms. In temporal gauge the temporal plaquettes are bilinear O(4) bonds, <U_i(x, t), U_i(x, t + 1)>, and unfrustrated in Hopf coordinates. The frustration sits only in the spatial plaquettes. I did not find a way to use this (GUIDE, no attempt written).
+

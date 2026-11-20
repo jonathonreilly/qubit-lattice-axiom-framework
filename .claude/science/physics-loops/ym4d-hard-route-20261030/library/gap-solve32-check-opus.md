@@ -32,7 +32,7 @@ says it uses a different route.
 
 (Each step appends below as it finishes.)
 
-### Step 1 (done 14:35Z): inventory and cited rows
+### Step 1 (done): inventory and cited rows
 
 Read in full: `library/gap-solve32-astra62.md` (541 lines, at 1ce538a51), the
 row 1283 text, GOAL.md, FINISH.md (opening sections, How we work, Working
@@ -66,7 +66,7 @@ correction); row 1262 (`gap-solve30`, check 1271 HOLDS); row 1272
 those checks are not evidence here. I read the cited statements and proofs
 where a step below depends on them.
 
-### Step 2 (done 14:58Z): the short-time slice information bounds (29)-(32)
+### Step 2 (done): the short-time slice information bounds (29)-(32)
 
 Inputs read for this step: row 1231 (`gap-solve26-astra62.md` L17-135:
 (1), (2), (4), (7)-(11)); row 1151 (`gap-solve5-astra62.md` L302-317: (24)
@@ -150,7 +150,7 @@ row 1153's N counts sites is right. Lower bound from (29) for large N/k.
 Notes (no correction needed): the limit used in (29) at L362 is uniform in
 s in [1,2] because row 1231's majorant in (10) does not depend on s >= 1.
 
-### Step 3 (done 15:20Z): recovery (35) of flux sector ratios, with (33)-(34) and their inputs
+### Step 3 (done): recovery (35) of flux sector ratios, with (33)-(34) and their inputs
 
 (35) rests on (34), which rests on (33), which rests on (28), the k-strip
 bound (L341), the estimator (16) at time k, (17), d_N(k) >= c/u^4, the
@@ -243,7 +243,7 @@ like a power of N and L_{beta,k} grows like a power of beta. The file
 correctly leaves open the separate decoded-class probabilities and the
 absolute neutral trace.
 
-### Step 4 (done 15:42Z): the endpoint removal (36)-(40)
+### Step 4 (done): the endpoint removal (36)-(40)
 
 **(36), L456-479: HOLDS.**
 - w >= 1: |F_z| <= max(m_*, 1-m_*) < 1, so ||F||^2 <= M and
@@ -318,7 +318,7 @@ The OPEN paragraphs L521, L537 and L539 are accurate: (38) leaves an O(N^3)
 remainder per step; (40) leaves the rank-one error at a fixed physical side
 unbounded; no energy threshold is proved.
 
-### Step 5 (done 16:10Z): everything else, (1)-(28) and the labelled remarks
+### Step 5 (done): everything else, (1)-(28) and the labelled remarks
 
 All checked by hand; each HOLDS. Key verifications, so a reader can redo them:
 
@@ -428,3 +428,163 @@ chord <= C k^2 l^2/beta. HOLDS.
 
 No statement in Steps 2-5 FAILS and none needs a correction to a proof
 step. Precision notes are collected in Step 8.
+
+### Step 6 (done): is the main comparison a restatement of an earlier row?
+
+Searched: `library/open-core.md` (no entry on two-slice information,
+flux sectors, twist decoding or the neutral trace), the FINISH rows (no row
+claims these statements), and the files the checked text cites, plus rows
+1147, 1165, 1186 and 839 found by grepping `library/gap-*.md` for "mutual
+information", "rank", "prism", "convex" and "Gram".
+
+Answer: **the main comparison, (29) with (32), is not a restatement.** Its
+lower half is new: the extensive bound c(N/k)^3 on the information of two
+neutral slices comes from a large-deviation form of row 1231's (9)-(11)
+Gaussian comparison, made possible by the closed-curl prism identity (30)
+(no earlier `prism` use in `library/gap-*.md` is this identity) and the
+chessboard estimate. Row 1231 gave only expectations of paired readings.
+
+Partial overlaps, each a credit precision, not a defect:
+
+1. **(31), first inequality.** At the antipodal time k = N/2 it is exactly
+   the upper inequality of row 1165 (`gap-solve11-astra62.md` L42-47, (3)):
+   I_{2t} <= 2 log X_t - log X_{2t} = J(t), proved there from the diagonal
+   law at the shorter period. (31) extends it to every k < N/2 by the same
+   argument. Row 1165 (check 1166, HOLDS AFTER CORRECTION of constants only)
+   is not cited in the checked file and should be. Row 839's identity I1
+   (`gap-compress-opus.md` L36-46), cited at L348, is the vacuum-chain
+   version: I(X_0; X_n) <= g_{2n}, which is sharper than the N -> infinity
+   limit g_k of (31) because g decreases.
+2. **(33)-(35).** Row 1155 (`gap-solve7-astra62.md` (29), (34)) already
+   decodes the twist class in the centre-summed ensemble, by a
+   minimum-face estimator, from short adjoint collars, and expresses the
+   strict test through class frequencies u_p. (33)-(35) do the same from
+   neutral spatial slices at spacing k only, with the twisted-ensemble
+   transfer by the Hilbert-Schmidt Cauchy-Schwarz bound of (34). That is a
+   real strengthening of the observation set. The file credits row 1155 at
+   L406.
+3. **(40).** The quantity Tr(P_triv U^T) - 1 as a squared Hilbert-Schmidt
+   distance to the vacuum part is the trace split used in row 1231 (42) and
+   row 1227 (27). New in (40) is only the exponentially small removal of the
+   excluded pairs from (37). Citing row 1231 (42) at L526 would help the
+   reader.
+4. **(36).** The propagation by the PSD Gram matrix and the convexity of
+   t -> Tr(U^{N-t} M U^t M) is a standard transfer fact (row 1153 uses the
+   same convexity for J_s); its use to carry a large-deviation bound to all
+   separations B r <= t <= N - B r is new as far as this search shows.
+5. **(8) vs rows 1244 and the `ac` row.** The file says so itself at L89:
+   those rows prove a deterministic Combes-Thomas bound given a spectral
+   gap; (8) is an annealed bound in the Wilson law with no gap hypothesis.
+   Not a restatement.
+
+Timing note: Steps 1-6 were written between 14:21Z and 14:41Z (date -u). An
+earlier draft of their headers carried guessed clock times; those were wrong
+and have been removed.
+
+### Step 7 (done 14:41Z): numeric guide (guide only; no verdict rests on it)
+
+Memory 64 percent free; run under `lab_ops.py numeric-lock` (acquired and
+released), one thread, nice, RSS self-check at 2 GB. A scratch script outside
+the repository tested, with random unit quaternions, rotations, contractions
+and positive kernels on a six-point space (worst value over all draws):
+
+| Statement tested | Worst value |
+|---|---|
+| (1/4) tr(rho(a,b)^T rho(c,d)) = (a.c)(b.d), L275 | 2e-16 error |
+| ||Ad g - Ad g'||_F^2 = 8(1 - (g.g')^2), L220 | 6e-15 error |
+| tr Ad q = 4 (Re q)^2 - 1 | 8e-16 error |
+| (2) Gram step: 2|u_2 x u-hat_1|^2 - D <= 0 | -7e-5 |
+| ||I + A_1 + A_2|| - sqrt(9 - D) <= 0, L100 | -1e-4 |
+| min_q |q - X q Y^{-1}|^2 = 2 - 2cos(theta_X - theta_Y), L143 | 4e-15 error |
+| (25) contraction deficit inequality <= 0 | -0.54 |
+| (30) telescoping identity | 3e-16 error |
+| (29) Gaussian determinant formula | 1e-16 error |
+| (31) I_k - (g_k + g_{N-k} - g_N) <= 0, finite chain | -5e-7 |
+| (31) second inequality <= 0 | -1e-6 |
+| (36) |E_t <F,DF>^j| - E_s <F,F>^j <= 0, j <= 4, s <= t <= N-s | -3e-3 |
+
+The guide agrees with every hand verdict. It is not evidence for any
+verdict; each verdict rests on the hand checks of Steps 2-5.
+
+### Step 8: verdicts per statement
+
+Provenance: Claude Opus 5.5, max effort, Mac mini worker 3, at commit
+1ce538a51; one cross-provider reading of a gpt-6.2-astra row, by hand. Not an
+audit; it grants no status. Every verdict below is an implication from the
+cited checked rows (1141, 1145, 1149, 1151, 1153, 1155, 1169, 1231), whose
+statements and proofs I read where a step depends on them.
+
+Positive claims named in row 1289, first:
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| (29) separating neutral event, P_k(A^c) + Q_k(A) <= C e^{-c(N/k)^3} | L350-386 | HOLDS |
+| (30) closed-curl prism identity and bounded weight | L364-374 | HOLDS |
+| (31) I_k <= g_k + g_{N-k} - g_N <= (1 + k/(N-2k)) g_k | L391-396 | HOLDS (credit row 1165 (3), see Step 6) |
+| (32) c(N/k)^3 <= -2 log affinity <= I_k <= (pi^2/15 + o(1))(N/k)^3 | L389, L397-401 | HOLDS |
+| (35) flux sector ratios from neutral slice histories | L444-451 | HOLDS |
+| (36) singlet large-deviation bound at all B_w r <= t <= N - B_w r | L456-479 | HOLDS |
+| (37) restricted kernel on a physical energy band | L481-487 | HOLDS |
+| (38) orbit-volume estimate | L494-503 | HOLDS |
+| (39) layer information (3/2) v_3 log(1+beta) + O(v_3 + log(1+beta)) | L513-519 | HOLDS |
+| (40) rank-one distance form of the neutral trace | L526-535 | HOLDS (precision note 3) |
+
+Everything else:
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| (1) adjoint-mode count, both sides | L25-31, L45-49 | HOLDS |
+| (2) two-plaquette defect | L33-37 | HOLDS |
+| (3) block Poincare | L39-43 | HOLDS |
+| (4) and the positive-fraction remark | L51-56 | HOLDS |
+| (5), (6) and the n_Y(u) variant | L61-71 | HOLDS |
+| (7) and the neutral-sector version; L82 | L73-82 | HOLDS |
+| (8) annealed Green bound | L91-96, L122-124 | HOLDS |
+| (9) kernel domination | L98-110 | HOLDS |
+| (10) walk bounds; walk lemma L120; crossing L122 | L112-122 | HOLDS |
+| L126 summed and source-pairing bounds | L126 | HOLDS |
+| (11) conditional temporal law | L133-139 | HOLDS |
+| L141-146 (8) for L_{X,Y} by a one-loop test | L141-146 | HOLDS |
+| (12) covariance lower bound; L156 comparison | L148-156 | HOLDS |
+| (13), (14); L170 relaxation bounds | L158-170 | HOLDS |
+| (15)-(18), L186 equivariance, L211 projection | L175-211 | HOLDS |
+| (19) replica overlap | L213-220 | HOLDS |
+| (20) inaccurate roots; L234 chessboard; L236 action cutoff | L225-244 | HOLDS |
+| (21) strip marks | L246-251 | HOLDS |
+| (22) defective bonds; L259 sign rule; L261 contours | L253-261 | HOLDS |
+| (23) global replica sign | L263-268 | HOLDS |
+| L273-278 trace identity for rho | L273-278 | HOLDS |
+| (24) one-step contraction | L280-286 | HOLDS |
+| (25) layer product and its lower bound | L288-298 | HOLDS |
+| (26) conditional overlaps | L300-308 | HOLDS |
+| (27) endpoint recovery with hidden slices | L313-329, L341 | HOLDS |
+| (28) multiple inaccurate roots at time k | L331-339 | HOLDS |
+| (33) candidate classes, covariance and error | L408-428 | HOLDS |
+| (34) twist decoding in the twisted mixture | L430-442 | HOLDS |
+| L505-511 typical-set form of (38) | L505-511 | HOLDS |
+| ARGUED L343; OPEN L13, L84, L521, L537, L539 | | accurate as labelled |
+| GUIDE paragraphs (repo search L3-9, L89, L131, L348, L406, L492) | | not verdicts; cited rows read where used |
+
+FAILS: none. HOLDS AFTER CORRECTION: none; no proof step needs a change.
+
+Precision and credit notes (none breaks a statement):
+
+1. (31): its first inequality at k = N/2 is the upper inequality of row 1165
+   (3) (`gap-solve11-astra62.md` L42-47), extended to all k by the same
+   argument; cite row 1165.
+2. (35) extends row 1155's twist-class recovery ((29), (34) there) from
+   adjoint collars to neutral spatial slices; already credited at L406.
+3. L535 (T = N/2): row 1231 (1)-(2) were stated for time period M >= n; at
+   M = n/2 only the boundary fraction O(b/M) changes, which stays o(1). One
+   line saying so would close the reading.
+4. (40) uses the trace split of row 1231 (42); citing it at L526 would help.
+5. L120 is the Caro-Wei bound and L533 the Eckart-Young theorem; naming them
+   would help a Lean formalization. L362's limit is uniform in s in [1,2]
+   because row 1231 (10) has an s-independent majorant.
+
+What stays open (as the checked file says): the absolute neutral trace at a
+fixed physical side (the rank-one error in (40)), hence the thermal
+criterion; the separate decoded-class probabilities in (35); the
+nontrivial continuum construction; the four-dimensional SU(2) mass gap.
+
+RESULT: row 1283 HOLDS, checked line by line by hand by Claude Opus 5.5 max (Mac mini worker 3; cross-provider check of a gpt-6.2-astra row; grants no status): every numbered statement (1)-(40) and every PROVED paragraph HOLDS, 0 FAILS, 0 corrections. Positive claims: (29)-(32) short-time neutral-slice information bounds, (35) flux sector ratios from neutral histories with (33)-(34), (36)-(40) endpoint removal. The main comparison (29)/(32) is not a restatement; (31) restates row 1165 (3) at k = N/2 and should cite it. OPEN: the absolute neutral trace at a fixed physical side, the nontrivial continuum construction, the mass gap. Output library/gap-solve32-check-opus.md.

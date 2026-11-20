@@ -76,3 +76,64 @@ Moves: H-C6a (T0 tree, R9 witness analytic inputs). Success: (*) proved from the
 is an implication of its cited inputs. Failure: an explicit configuration on one cube where the preparation's
 characteristic function is 1 and the step's is 0; then (8.6:eq-prefactor-monotone-a) fails as stated and the lemma
 needs a different comparison. Either outcome changes the registry row.
+
+## Step 2. The two characteristic functions, read (written 2026-11-20T12:55Z by date -u; READ unless marked)
+
+Sources: Balaban CMP 119 (1988) 243-285 and CMP 122 (1989) 175-202 ("122a"), read from the page images of the legal
+copies in the papers folder (the OCR layer is garbled in formulas). Credit: Tadeusz Balaban.
+
+**2.1 The step's own function (CMP 119 p. 257, (2.16)-(2.17)).** Partition the lattice T_eta into cubes of side
+L M_2 R_k. For each cube Q put U_(k,Q)(V_k) = U(B_k(Q^(~4)), M(Q_k^(s*) V_k)) (2.16), and
+    chi_k(Omega_k) = prod over Q in Omega_k of chi( sup over p in Q^~ of |U_(k,Q)(V_k, dp) - 1| < eps_k eta^2 ).   (2.17)
+
+**2.2 The functions CMP 122a writes out (p. 178, (1.2)-(1.9)).** On a first-class component Z (conditions (i), (ii) of
+CMP 122a Section 1: inside a cube of side 100 M R_k, no new large field in the last N steps), Balaban writes
+T_k(Z) exp A_k = chi_k(Omega_k^(~4)) prod over j = k-1, ..., h of T^(j)(Z_(j+1)) chi_h(Omega minus Omega_(h+1)^~) T_h(Z_h) exp A_k,
+h = k - N, and lists the seven groups of characteristic functions of the one-step operations. The first two are
+    (1.3) chi( sup over p in Q^~ of |U_(j,Q)(V_j, dp) - 1| < eps_j (L^(k-j) eta)^2 ),  Q in (Omega_j^(~4) minus Omega_(j+1)^~) cap Z,
+    (1.4) chi( sup over p in Q'^~ of |U_(j+1,Q')(V_(j+1), dp) - 1| < eps_(j+1) (L^(k-j-1) eta)^2 ),  Q' in (Omega_(j+1)^(~4) minus Omega_(j+2)^~) cap Z,
+with Q the L M_2 R_j cubes of T_(L^-j) and Q' the L M_2 R_(j+1) cubes of T_(L^-(j+1)). At j = k - 1, (1.4) is the factor
+of (2.17) at level k on its own domain: the same function of V_k with the same threshold eps_k eta^2.
+
+**2.3 What the preparation does (CMP 122a pp. 179-181, read in the OCR and to be checked on the images).** The
+preparation integrates, for j = h, ..., k - 1, the variables localised in Z_(j+1) minus Z'_(j+1), with new background
+fields U_k^((n)) built on new determining sets B_k^((n)) (1.14)-(1.21). Before each integration it inserts a decomposition
+of unity 1 = chi_k^((n)) + (1 - chi_k^((n))) in each component of Z ((1.22), (1.23) for n = 0, 1). Components that take
+1 - chi_k^((n)) get new large fields and leave Z. On the components that stay, the restrictions in chi_k^((n)) "imply"
+that the old functions (1.3) (at j = h) and (1.4) (at j = h) equal 1, so these old functions are removed. After n
+integrations "the only characteristic functions which remain ... are chi_k^((n)) chi_h(Z_h cap Omega_h)"; the definition
+of chi_k^((n)) changes for j = h + n > k_0 = k - N_0, where "we change the regularity conditions by a factor".
+
+So the preparation's function on a healed island is not literally (1.3)-(1.4): it is the final chi_k^((N)) restricted to
+the island, written in the new background fields, with thresholds changed by a factor near the top levels. The
+comparison (*) is therefore a statement about chi_k^((N)) versus (2.17) at level k. Step 3 reads the definition of
+chi_k^((n)) for n near N and its thresholds.
+
+**2.4 The preparation's final function and what it keeps (CMP 122a pp. 181-184, read on the page images).** After
+n = j - h integrations the function is chi_k^((n)) of (1.24): conditions |U_(k,Z)^((n))(dp) - 1| < (threshold) on the
+plaquettes p of each shell, in the new background field U_(k,Z)^((n)) (1.18)-(1.21). The last line of (1.24) reads
+    |U_(k,Z)^((n))(dp) - 1| < c (1 - beta/2) eps_j (L^(k-j) eta)^2  for p in Omega_(j-1) minus Omega_(j+1),
+"where c = 1 for j < k, and c = 3 for j = k", with 0 < beta <= 1/2 "not too small, e.g. beta = 1/2", and 2 <= L_0 < L/2.
+So at the top level (n = N, j = k) the preparation's own threshold on the shell Omega_(k-1) minus Omega_(k+1) is
+3 (1 - beta/2) eps_k eta^2, which is LARGER than the step's eps_k eta^2 of (2.17) (9/4 times larger at beta = 1/2).
+Balaban's domination argument (1.29)-(1.31) shows that chi_k^((n+1)) and the other restrictions force the old
+functions (1.3) and (1.4) to equal 1, using c = 1 in (1.24) and the bound (1.31)
+|U_(j,Q)(dp) - 1| < (1 - beta/2 + 2 beta L^(-2)/10 + 4 beta/10) eps_j xi^2 < eps_j (L^(k-j) eta)^2. At the top level he
+does not do this: "The same holds for the functions (1.4), because the argument above applies to an arbitrary j, hence
+for j + 1, except when j + 1 = k. In this case we leave the functions (1.4) as chi_k(Omega_k^(~4)) on the right-hand side
+of (1.29)" (p. 184); and (1.29) is stated "for j + 1 < k, and for j + 1 = k the right-hand side above is multiplied by
+chi_k(Omega_k^(~4))" (p. 183).
+
+Consequence for (*) (ARGUED from these two passages; the island representation of CMP 122b (1.70)-(1.72) is read in
+Step 3). After the preparation, a first-class component Z carries at the top level BOTH the preparation's chi_k^((N))
+(threshold 3 (1 - beta/2) eps_k eta^2 on its top shell, field U_(k,Z)^((N))) AND the step's own chi_k(Omega_k^(~4)) of
+(2.17), kept on purpose. So:
+- On the cubes of Omega_k^(~4) cap Z the prepared term carries the step's function itself, and the domination
+  "prep = 1 implies step = 1" holds there trivially, as a product containing the step's factor.
+- On a cube of Z that lies in the four-layer collar Omega_k minus Omega_k^(~4), or outside Omega_k, the prepared term
+  carries only chi_k^((N)), whose top threshold is weaker than eps_k eta^2. There the literal statement "wherever the
+  preparation's function equals 1, so does the step's" cannot follow from the thresholds: a field with
+  eps_k eta^2 <= |U(dp) - 1| < (9/4) eps_k eta^2 on one plaquette passes the first and fails the second, if the two
+  background fields agree there.
+Whether such cubes exist in a healed island, and which step function the term X' carries on them, is a question of
+the geometry of the island representation. That is Step 3.

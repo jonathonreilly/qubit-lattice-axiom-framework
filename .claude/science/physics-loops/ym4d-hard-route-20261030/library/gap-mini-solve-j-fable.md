@@ -139,7 +139,7 @@ A weight has an index engine when it is the weight of a topological sector whose
 
 (a) The 't Hooft twist sectors Z^(n). The twist fixes Q modulo 1; the crossed twist (1,1) gives Q in Z + 1/2 and the margin of Step 3.3. Each twist ratio is a signed sum of electric flux traces (Step 3.3, row 859). This is the flux half.
 
-(b) The integer-charge sectors of the periodic torus, Z_Q/Z_0, or the theta function Z(theta)/Z(0) = sum over Q of e^(i theta Q) Z_Q/Z_0. The topological density q(x) is a gauge-invariant local function of the plaquettes near x. A centre transformation of the links that cross a hyperplane leaves every plaquette unchanged, so Q is centre-neutral. So family (b) is a centre-neutral weight with an index engine. On the symmetric torus the first self-dual sector is Q = 2 (Braam and van Baal, 1989: no charge-one instanton on T^4); its moduli have dimension 16 and its weight runs like exp(-16 pi^2/g^2(L)), a factor 2^(44/3) per doubling at one loop. Step 3.5 said "I found no neutral analogue". That is corrected here: (b) is one.
+(b) The integer-charge sectors of the periodic torus, Z_Q/Z_0, or the theta function Z(theta)/Z(0) = sum over Q of e^(i theta Q) Z_Q/Z_0. A lattice topological density q(x) (a clover form, or Luscher's geometric density on admissible fields) is gauge invariant and built from the link field near x. A centre transformation of the links that cross a hyperplane leaves every plaquette matrix unchanged, so a clover density, and with it Q, is centre-neutral; for the geometric charge the same invariance is RECALLED, not re-proved. So family (b) is a centre-neutral weight with an index engine. On the periodic torus the charge-one sector has no self-dual connection (Braam and van Baal, 1989, RECALLED), so the first self-dual sector is Q = 2 (existence RECALLED, not re-read); its moduli have dimension 16 and its weight runs like exp(-16 pi^2/g^2(L)), a factor 2^(44/3) per doubling at one loop. On T^3 x R a charge-one instanton would give 2^(22/3) (its existence there is RECALLED with low confidence and not used). Step 3.5 said "I found no neutral analogue". That is corrected here: (b) is one.
 
 Lattice caveat. For the Wilson action Q is not defined on every configuration. Luscher's geometric charge (1982) is an integer on admissible fields (every plaquette near 1). Exact sectors need an action that excludes the other fields. So (b) is a statement about such an action, or about a non-canonical lattice charge.
 
@@ -181,7 +181,7 @@ The commutator step in (c) is the standard lattice form of "the product of the p
 **What Lemma M changes in Step 3 (ARGUED).**
 
 1. The semiclassical reading of Step 3.2 needs L >= 3 at least. For L >= 3, whether min A = A_perp(L) over all fields is OPEN; (a) gives 2 L^2 > pi^2 > A_perp(L) there and settles nothing.
-2. By (c) a field of sector (1,1) with small action cannot put its defect in a small box: the defect has to meet a 2-torus through every point. So lattice lumps of the kind that spoil the charge-1 sector of the Wilson action (the dislocations) have no localized analogue here. This is a qualitative statement only; (c) bounds the support of the defect, not its action.
+2. By (c) a field of sector (1,1) with small action cannot put its defect in a small box: the defect has to meet a 2-torus through every point. So lattice lumps of the kind discussed for the charge-1 sector of the Wilson action (the dislocations) have no exactly localized analogue here. This is a qualitative statement only; (c) bounds the support of the defect, not its action.
 3. Threshold. If some field of sector (1,1), not near the family of Lemma V, had A below (12/11) pi^2 = 10.77..., then at the scaling point (L/a)^(11/3) e^(-pi^2 beta) of order 1 its weight would be larger than that of the fractional instanton by e^(beta ((12/11) pi^2 - A)), and the twist ratio R(L) of Step 3.3 would read a lattice artifact, not the running coupling. The arithmetic: lump weight e^(-beta A) (L/a)^4, physical weight e^(-pi^2 beta) (L/a)^(11/3), and (L/a) = e^((3/11) pi^2 beta) there. The same number (12/11) pi^2 is the known dislocation threshold of the charge-1 sector (6/11 of 2 pi^2; Luscher; Pugh and Teper, RECALLED). So any proof of (X) must exclude such fields, and (a) shows they exist at L <= 2.
 
 Consumer: none on the gap path. This step only repairs the reading of Step 3.
@@ -210,7 +210,7 @@ That is the value of a massive level in a large box (7.2, third case), not the s
 
 **First failing step.** A lower bound on kappa_1(beta; n) of about 7 (in the mean against d beta/beta) on the band, at fixed large n. By 7.2 it holds when level 1 is massive on the scale of the box. So the bound restates the gap; I found no other way to supply it.
 
-Two side facts (ARGUED). (i) (VIR) for every box and every beta >= beta_0 with one kappa > 0 is false at weak coupling in the twisted box, where kappa_1 tends to 0 (7.2, second case); so the council's restriction to the band is needed. (ii) The controls behave as the council's file says: kappa = 0 for the free photon and on the levels of a massless factor, kappa tends to 0 at the critical point K7, and for frozen groups the vortex levels have E proportional to beta (kappa = -1) while their gap is true. So (VIR) is selective, but it is not necessary for a gap.
+Two side facts (ARGUED). (i) (VIR) for every box and every beta >= beta_0 with one kappa > 0 is false at weak coupling in the twisted box, where kappa_1 tends to 0 (7.2, second case); so the council's restriction to the band is needed. (ii) The controls: kappa = 0 for the free photon and on the levels of a massless factor, and for frozen groups the vortex levels have E proportional to beta (kappa = -1) while their gap is true (both as the council's file says); at the critical point K7, kappa vanishes where the level has its finite-volume minimum (added here). So (VIR) is selective, but it is not necessary for a gap.
 
 ### 7.4 Check of Step 3's Lemma V (Claude Opus 5.5, line by line; a model other than its author)
 
@@ -224,3 +224,42 @@ Any proof of (N-phys) contains one of two inputs.
 2. A neutral level flow whose rate on the band has the size that a massive level has (7.3). This restates the gap.
 
 The index engines of Step 5 do not supply either. They carry the twist ratio (the flux half) and the theta channel (one neutral channel, bound by products). So the reason a (K-flow) for the neutral half has no margin is now explicit: the asymptotic-freedom sign is a zero-mode count only on self-dual sector weights, and every other neutral quantity is slaved to the running coupling at order g^2 per doubling.
+
+## Step 8. Results, the blocking statement, and what stays open (written 2026-11-20T04:47Z, date -u)
+
+No numeric run was made in either part of this row (so the memory gate did not apply). No subagent. No outside source was fetched; the recalled literature is marked RECALLED where used. Matches on file for Step 7's identity, found after it was written: the virial identity of row 895 (`gap-glue-max.md`, survives in check row 896) and Lemma VIR of row 934 ("closes only for Gaussian weights"). `library/open-core.md` has no entry on the gap lane, on topological sectors or on twisted-sector minima (grep of "theta", "topolog", "instanton", "dislocation", "12/11", "crossed", "zero mode", "neutral", "N-phys").
+
+### 8.1 Table
+
+| Item | Label | Where | New? |
+|---|---|---|---|
+| Lemma V (crossed-twist abelian family, four flat directions) | PROVED by the earlier run; checked line by line here by Claude Opus 5.5: HOLDS | 3.2, 7.4 | Step 3's |
+| (X) and its one-loop margin 2^(11/3) = 16 x 2^(-1/3) | OPEN; the arithmetic re-checked | 3.3 | form of (MON') of row 859 |
+| Index weights are exactly the self-dual topological sector weights; two families on the lattice torus | ARGUED (RECALLED one-loop facts) | 5.1, 5.2 | the classification is not on file |
+| The integer-charge sectors (theta channel) are a centre-neutral index engine | ARGUED; corrects 3.5 | 5.2 (b) | not on file (grep, Step 5) |
+| The theta channel does not reach (N-phys): one channel, bound by a product with a free photon, needs a (K-one) exit | ARGUED | 5.3 | uses Lemma PT, Proposition NP, row 929 |
+| Neutral quantities move by order g^2 per doubling; a neutral (K-flow) has no margin | ARGUED | 5.4 | the rule (RGI) of `gap-skeleton-max.md` L165 is on file; the reason is added |
+| Lemma M (a): for L <= 2 a non-abelian field (twist eaters plus one unsatisfied sheet) has action 2 L^2 < A_perp(L) | PROVED by hand, unchecked | 6 | not on file |
+| Lemma M (b): over fields in one maximal torus the crossed-twist minimum is A_perp(L), every L | PROVED by hand, unchecked | 6 | not on file |
+| Lemma M (c): the defect of a crossed-twist field meets a 2-torus through every point; it cannot lie in a box of side L - 1 | PROVED by hand, unchecked | 6 | not on file |
+| Threshold (12/11) pi^2: a crossed-twist field below it, not near the smooth family, would dominate R(L) at the scaling point | ARGUED (arithmetic of RECALLED weights) | 6 | not on file |
+| Feynman-Hellmann flow of each level; the band needs a mean kappa of about 7 against d beta/beta | 7.1 PROVED (standard); 7.3 ARGUED | 7 | identity on file (rows 895, 934, 1128); the size is added |
+| (N-phys), the continuum datum, (BS), (W), the Jaffe-Witten gap | OPEN | - | - |
+
+### 8.2 The blocking statement and the three ways tried in this row
+
+Blocking statement: (N-phys) of row 1161 in the form of Lemma N2 of row 1184. At one physical cube, for every cutoff, the centre-neutral gap in units of the inverse side passes K log 2, with a short-time count that is uniform in the cutoff.
+
+1. Twist-index engine (Steps 3, 5, 6). (X) has a robust margin, but it reads the twist ratios, which are the flux half. To reach the neutral half it needs a one-scale input at the exit of the band that fails at K7. The earlier run's three attempts on (X) stop at the purity order, at reflection positivity across the twisted column, and at a block step whose sign is asymptotic freedom again (3.3). Lemma M adds that any proof of (X) must exclude crossed-twist fields below (12/11) pi^2.
+2. Theta-index engine (Step 5). Centre-neutral and with a margin of 2^(44/3) per doubling at one loop, but one channel: a product with a free photon has the same weights and an unbounded neutral trace. It also needs the same one-scale exit.
+3. Level flow (Step 7). Selective and neutral, but its constant on the band must be about 7, the value of a massive level in a box larger than its Compton length. That restates the gap.
+
+### 8.3 For the lead (evidence only; the lead decides)
+
+- A numeric test of (X) or (MON') with the Wilson action should use L >= 3. At L <= 2 the crossed-twist sector is dominated by the non-abelian field of Lemma M (a).
+- Any twisted-sector route needs, besides (X), the check of the threshold (12/11) pi^2 of Step 6 (item 3 under Lemma M): no crossed-twist field away from the smooth family may have Wilson action below it at large L. Lemma M (c) is the first step: such a field has an extended defect.
+- The neutral half has no engine with a margin (5.4, 7.5). A row aimed at the neutral half should say which of 7.5's two inputs it supplies.
+
+Credits. Jaffe and Witten (the problem). 't Hooft (the twist sectors, the one-instanton determinant, constant field strength solutions); Brown, Carlitz and Lee; Nielsen; Hughes; Atiyah, Hitchin and Singer; Braam and van Baal; Luscher (small volume, geometric charge); van Baal; Gonzalez-Arroyo and Montero; Pugh and Teper (dislocations); all RECALLED, not re-read in this run. Balaban; Sussman and Alpoge, with Claude and Codex as authors of their text (their index was searched for gap and clustering statements; none is a producer; nothing of theirs is used in a step). The lane's rows cited above, and the earlier run of this row by Claude Fable 5.2 max.
+
+RESULT: Row 1200 (Claude Fable 5.2 max to about 04:05Z, then Claude Opus 5.5 max 04:12Z-04:47Z, Mac mini worker 2; author only, checked by no one; no numeric run, no subagent): the mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; (N-phys), the continuum datum, (BS), (W) stay OPEN. PROVED by hand, unchecked, not selective toward the gap: Lemma M on the crossed-twist sector ((a) for L <= 2 a non-abelian field has action 2 L^2 below the abelian family's A_perp(L), so that family is not the minimum set there; (b) over fields in one maximal torus the minimum is A_perp(L) = 2 L^4 (1 - cos(pi/L^2)) for every L; (c) the defect of any crossed-twist field meets a 2-torus through every point), and the earlier run's Lemma V re-checked line by line (HOLDS). ARGUED: the weights whose asymptotic-freedom sign is a zero-mode count are exactly the self-dual topological sector weights, the twist sectors (flux half) and the integer-charge sectors; the latter are a centre-neutral index engine (not on file; corrects Step 3.5) but read one channel and are bound by a product with a free photon; every other neutral quantity moves by order g^2 per doubling, so a neutral (K-flow) has no margin, and the Feynman-Hellmann level flow would need a constant of about 7 on the band, the value of a massive level, which restates the gap; a crossed-twist field below (12/11) pi^2 away from the smooth family would dominate the twist ratio, so any proof of (X) must exclude it. OPEN: (N-phys) (attacked here three ways: twist-index engine, theta-index engine, level flow), (X), the continuum datum, (BS), (W), the Jaffe-Witten gap. Output library/gap-mini-solve-j-fable.md.

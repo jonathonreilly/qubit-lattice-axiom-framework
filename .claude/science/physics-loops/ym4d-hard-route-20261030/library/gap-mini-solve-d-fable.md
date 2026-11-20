@@ -25,6 +25,9 @@ GUIDE (numeric or heuristic evidence, never a proof step), OPEN.
   (`gap-invent-selective-max.md` L136-168), Theorem D (f) (`gap-crux-restate.md` L99), the RESULT of row 1084. Section 2
   written. The gauge form of every step is on file with a first failing step. Next: Section 3, the one count that
   the record still holds as ARGUED and open (the corner form C1).
+- 00:37Z. Section 3 written: Lemma PC-c (corner power count), proved by hand, with a hand check in d = 2. The numeric
+  sanity script is ready in a scratch folder under /tmp; memory free was 47, 47, 48, 45 percent at four readings
+  between 00:31Z and 00:37Z, below the 50 percent rule, so it has not run yet.
 
 ## 1. How best to attack it
 
@@ -126,7 +129,110 @@ abelian coordinate system tried, and non-orientable surfaces carry the sign of t
 proof of (N-phys) with this architecture needs a positivity structure of Wilson SU(2) that I do not have and that the
 record does not have. The supplier for step (iv) is therefore open, with no mechanism:
 
-**(FS) (OPEN; the crux in the form of Theorem D (f)).** For one n and all s in [0, beta]:
-96 n^4 times the integral over [0, beta] of (abar_2n(s) - abar_n(s)) ds is at most 1.9e-4.
+**(FS) (OPEN; the crux in the form of Theorem D (f)).** There is one n with
+96 n^4 times the integral over s in [0, beta] of (abar_2n(s) - abar_n(s)) at most 1.9e-4.
 
 I state it only to fix what Section 4 reports as open. It is (SEED) of row 697.
+
+## 3. The corner form of the family inequality: the power count as a proved inequality
+
+Why this item. The one mechanism known to cross a band is the family inequality of the 2D proof (its Proposition 2.2,
+as restated in `library/prior/gap-2don-proofs-read-opus.md` B(2) item 4: the stiffness on Q = sum_i S(f_i, f_i-bar) is at
+most K ||T||_HS^2 plus a second term, T the Gram matrix of the gradients). Its ports to pins, to a pinned slice and to
+the corner model are settled. Its port to link-end translations, C1 of row 1013 (`gap-invent-selective-max.md` L101),
+has the verdict "the family inequality is a one-site statement" as ARGUED (L191), and two cross-provider checks keep
+it open because the count was never written (`gap-invent-selective-check-astra.md` item 13;
+`gap-direction3-check-astra.md` L433). I write the count. It is the corner analogue of Lemma PC of row 1188. Credit:
+the corner graph and Lemma WN are row 1013's (Claude Fable 5.2 max); the family inequality is OpenAI's.
+
+### 3.1 Setting (row 1013, Lemma WN; restated)
+
+Lattice Z^d or a torus with all sides at least 3, d >= 2. A **link-end** is a pair (l, x) with x an end of the link l;
+a site has 2d link-ends, two on each axis. Each plaquette p, with its fixed orientation, and each site x of p give a
+**corner**: p arrives at x along one link and leaves along another. I write the corner as a -> b, with a the link-end
+of arrival and b the link-end of departure. The two link-ends of a corner lie on different axes. Conversely two
+link-ends at x on different axes lie on exactly one plaquette. So the corners at x are the edges of the complete
+multipartite graph K_(d x 2) on the 2d link-ends (d parts of size 2), each edge with one orientation; a site has
+2 d (d - 1) corners (24 for d = 4, the graph K_(2,2,2,2) of row 1013).
+
+For a real or complex link-end field f put (delta f)(a -> b) = f(b) - f(a). For corner fields,
+<theta, theta'> = sum over corners of theta theta'-bar and |theta|^2 = <theta, theta>. A real corner field theta is
+**co-closed** if <theta, delta phi> = 0 for every real link-end field phi. Every real corner field is uniquely
+theta = theta_perp + delta psi with theta_perp co-closed. For a complex link-end field f put
+
+  S(f)(a -> b) = (1/2) Im( f(a) f(b)-bar ).
+
+This is the one-axis part of the pure-gauge corner field at second order: for F = u a' + v b' with [a', b'] = c and
+f = u + i v, e^(-F(a)) e^(F(b)) = exp( (delta F) - (1/2)[F(a), F(b)] + O(F^3) ) and -(1/2)[F(a), F(b)] =
+S(f)(a -> b) c. (C1 (c) writes it as (1/2)[F_(l,x), F_(l',x)]. A change of the sign convention, or of f to f-bar,
+changes nothing below.)
+
+### 3.2 Lemma PC-c (PROVED by hand; checked by no one)
+
+Let theta be a real co-closed corner field, lambda real, phi a real link-end field, and (f_i) a finite family of
+complex link-end fields with
+
+  sum_i S(f_i) = lambda theta + delta phi on every corner.   (PCc1)
+
+Let T_ij = <delta f_i, delta f_j> and ||T||_HS^2 = sum_(i,j) |T_ij|^2. Then
+
+  ||T||_HS^2 >= 8 (2d - 2)^2 lambda^2 |theta|^2,  which is 288 lambda^2 |theta|^2 for d = 4.   (PCc2)
+
+If theta is not co-closed, (PCc1) holds with theta_perp in place of theta (move delta psi into delta phi), so (PCc2)
+holds with |theta_perp|^2.
+
+Proof. Work on the space V of complex link-end fields with (f, g) = sum_a f(a) g(a)-bar.
+
+1. The Laplacian. (f, Lap g) = <delta f, delta g> defines Lap, and (Lap g)(a) = sum over the corner-neighbours b of a of
+   (g(a) - g(b)). Lap is a direct sum over sites of the Laplacian of K_(d x 2). On one site, with J the all-ones matrix
+   and M the matching that exchanges the two link-ends of each axis, the adjacency matrix is J - 1 - M and the degree is
+   2d - 2, so Lap = (2d - 1) + M - J. Constants: eigenvalue 0. Fields with M v = -v (then J v = 0): eigenvalue 2d - 2,
+   multiplicity d. Fields with M v = v and J v = 0: eigenvalue 2d, multiplicity d - 1. That is all 2d dimensions. Let P
+   be the projection on the fields with sum zero at every site. On the range of P, Lap >= 2d - 2.
+2. The pairing. Let rho = sum_i f_i f_i^*, a non-negative matrix with entries rho_ab = sum_i f_i(a) f_i(b)-bar. Define
+   the matrix H by H_ba = theta(a -> b)/(2i) and H_ab = -theta(a -> b)/(2i) for each corner a -> b, and 0 otherwise. H is
+   Hermitian. tr(rho H) = sum over corners of (theta/(2i)) (rho_ab - rho_ba) = sum over corners of theta Im(rho_ab) =
+   2 <theta, sum_i S(f_i)> = 2 lambda |theta|^2. The last step uses (PCc1) and that theta is co-closed.
+3. H kills the site constants. For the indicator 1_x of the link-ends at x, (H 1_x)(b) = (1/(2i)) [ sum over corners
+   a -> b of theta - sum over corners b -> a of theta ] = (1/(2i)) (delta^* theta)(b) = 0, since <theta, delta phi> =
+   sum_b phi(b) (delta^* theta)(b) for all phi. H is Hermitian and couples link-ends of one site only, so H = P H P.
+4. Cauchy-Schwarz. Write Lap^(-1/2) for the inverse square root on the range of P. Then tr(rho H) = tr(P rho P H) =
+   tr( Lap^(1/2) rho Lap^(1/2) . Lap^(-1/2) H Lap^(-1/2) ), so
+   |tr(rho H)|^2 <= || Lap^(1/2) rho Lap^(1/2) ||_HS^2 || Lap^(-1/2) H Lap^(-1/2) ||_HS^2.
+   The first factor is tr(rho Lap rho Lap) = sum_(i,j) |(f_i, Lap f_j)|^2 = ||T||_HS^2. The second is at most
+   (2d - 2)^(-2) tr(H^2), by step 1, and tr(H^2) = sum_(a,b) |H_ab|^2 = (1/2) |theta|^2.
+5. So 4 lambda^2 |theta|^4 <= ||T||_HS^2 |theta|^2 / (2 (2d - 2)^2). If theta = 0 there is nothing to prove. QED
+
+### 3.3 What it settles, and what it does not
+
+- **The count C1 (d) asked for.** For every family, (signal)^2 / (cost) = lambda^2 |theta|^4 / ||T||_HS^2 is at most
+  |theta|^2 / (8 (2d - 2)^2). There is no sum over modes and no dependence on the size of the support, in any
+  dimension. So an inequality of OpenAI's form R(lambda theta, lambda theta) <= K ||T||_HS^2 (plus non-negative terms),
+  used with any family that satisfies (PCc1), returns at best R(theta, theta) <= 8 (2d - 2)^2 K |theta_perp|^2. This is
+  a multiple of the corner-square norm, the form of the exact second-order response at zero twist (Corollary WN2 of
+  row 1013: -W''(0) = beta rho(beta) |theta|^2 for corners at distinct free sites).
+- **The sheet of C2.** Let theta = t on one corner at each of A distinct sites and 0 elsewhere. The exact part of one
+  edge indicator of K_(d x 2) has squared norm equal to the effective resistance of the edge, which is
+  1/(2d - 2) + 1/(2d) = (2d - 1)/(2 d (d - 1)), that is 7/24 for d = 4 (split e_a - e_b into its part with M v = -v and
+  its part with M v = v; each has squared norm 1). So |theta_perp|^2 = (17/24) t^2 A and the family inequality
+  returns at best 204 K t^2 A for d = 4: the order of the area, at every t. It cannot give the bound
+  Z'' >= -delta_A Z with delta_A = o(A) that the integration along the non-central path needs.
+- **Scope.** This is PROVED for inequalities whose cost side is K ||T||_HS^2 with T the corner Gram matrix, plus
+  non-negative terms. That the corner form of Proposition 2.2 holds, and in which class of twisted measures, is not
+  written here or anywhere on file (ARGUED in row 1013). The lemma does not exclude a fourth-order identity of another
+  form (item 13 of the check of row 1013 stands for those). It concerns the flux half only: one-axis corner twists
+  contain the centre twist, and no corner twist changes the neutral trace of (N-phys).
+- **Verdict on C1 as a band crossing.** FAILS in the form in which it was proposed, by Lemma PC-c: the cost form has
+  a spectral gap 2d - 2 above the gauge directions, so every family pays for its bracket at the site where it makes it.
+  In the spin model the same graph is the lattice and the gap is 0; that is where the logarithm comes from.
+
+### 3.4 Hand check in d = 2 (not a proof step)
+
+For d = 2 a site has four link-ends, a_1, a_2, a_1', a_2' (a_k' opposite to a_k), and four corners. Take them oriented
+around the 4-cycle: a_1 -> a_2 -> a_1' -> a_2' -> a_1. The Laplacian of the 4-cycle has eigenvalues 0, 2, 2, 4, as step
+1 says (2d - 2 = 2 twice, 2d = 4 once). The co-closed fields are the multiples of theta = 1 on the four corners, and
+|theta|^2 = 4. Take one field, f = (1, i, -1, -i) on (a_1, a_2, a_1', a_2'). Then S(f) = (1/2) Im(f(a) f(b)-bar) = -1/2 on
+each corner, so (PCc1) holds with lambda = -1/2 and phi = 0. The cost is T = sum over corners of |f(b) - f(a)|^2 =
+4 x 2 = 8, so ||T||_HS^2 = 64. The bound (PCc2) is 8 x 4 x (1/4) x 4 = 32. So the lemma holds here with a factor 2 to
+spare. The factor is the one that row 1188 found for Lemma PC: H has the eigenvalues 0, 1, 0, -1 on this cycle and
+rho >= 0 can use only one sign, which Cauchy-Schwarz does not see.

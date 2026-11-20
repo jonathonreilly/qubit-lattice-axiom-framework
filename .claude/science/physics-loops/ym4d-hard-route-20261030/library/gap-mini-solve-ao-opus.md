@@ -71,3 +71,95 @@ other frame's list violates; then the frame comparison needs a different splitti
 
 Rule 0a: grep of FINISH.md and `library/open-core.md` for "(H2)", "(H3)", "cross-admission": hits only in rows 1267,
 1268, 1275 (as OPEN inputs); no queued row names them.
+
+## Step 2. (H3) and (H2) of row 1267 (written 2026-11-20T14:40Z by date -u)
+
+Source: Sussman and Alpoge, `YM4/EM/YM4_EM.tex` at c7fef8b21b58 (2001 lines; with Claude and Codex as authors of their
+text; after Balaban), fetched by raw URL into a scratch folder outside the repository. "EM:n" is a line of that file.
+Row 1267 = `library/gap-mini-solve-ak-opus.md` (its 3.1-3.2, Proposition FC-chain).
+
+**2.1 What EM supplies (READ, with lines).**
+- (R1) The step reads a list only through the totals of its subtracted members. EM:532-561: S_f is "the sum of its
+  vacuum-subtracted regular families, their own Wilson counterterms and its vacuum-subtracted remainders", and the
+  physical output is (em:eq-actual-step), log of the integral of K_(k,theta_k)(W, dV) exp[-x_k A(U_k(V)) + S_f(U_k(V))]
+  plus x_k A(U_(k+1)(W)) - S_f(U_(k+1)(W)). Adding a constant to S_f changes nothing.
+- (R2) The coefficient readout b_j is linear, real on real data, and "unchanged ... by changing coherent localizations
+  of the same physical total" (EM:1202-1204; proof EM:1218-1219: "two coherent localizations of the same total give the
+  same kernel"). A constant total has zero Hessian, so b_j vanishes on it.
+- (R3) One-step input (3) (EM:667-706): for a list of regular entries of norm at most E_0 with s(1 + N_k) <=
+  eps_step, the step forms E_(k+1) = N_(k+1) + G_(k+1,tau_k) + F_(k+1)[f]; N_k is the age-weighted sum of the ORIGINAL
+  regular-family norms "before vacuum and quadratic subtraction", and "the fixed subtraction-operator bounds are
+  included in K". One-step input (4) (EM:707-716): for two admitted lists on the common smaller cores, ||F_(k+1)[f] -
+  F_(k+1)[f']|| <= K s times the weighted load of the differences of their inputs, same age weights, through "the
+  prescribed interpolation and contour domains" of the marked slot. N and G do not depend on the list.
+- (R4) Formation (EM:855-870): above the floor every creation has norm at most B_N + (E_0 - B_N)/4 + (E_0 - B_N)/2 =
+  (3 E_0 + B_N)/4, a margin (E_0 - B_N)/4 below the cap, and every list with entries of norm at most E_0 meets
+  s(1 + N_k) <= eps_step (D_* = Omega E_0).
+- (R5) Regular families: covariance under the partition isometries, a companion, the scalar coefficient (EM:251-273);
+  the pointed norm (em:eq-pointed-norm, EM:225-238) takes the supremum over the admissible tori and the companion; the
+  absolute cores a_* are fixed for the whole chain (EM:504-508). Row 1267 READ that regular families form a linear space
+  (EM:215-218) and defined |||T|||_j as the infimum of ||H||_(j,kappa;a_*) over regular pointed families H whose total
+  is T + const (row 1267 3.1).
+
+**2.2 Proposition H3' (PROVED GIVEN (R1)-(R5); author only, unchecked).** Fix a frame phi, a weight x_k and a step k.
+Let f, f' be two unmarked lists admitted at that step, with original regular families O_i, O'_i (i = 1..k) and
+subtracted members f_i = Sub_i(O_i), f'_i = Sub_i(O'_i), where Sub_i(H) := H - vac(H) - b_i(H) (tent-pointed A_i)
+(EM:266-283). Put d_i := |||T(O_i) - T(O'_i)|||_i (original totals). Let mu_slot > 0 be the radius of the admitted
+marked slot of input (4) in member norm (the size of list differences for which the interpolation of (R3) stays
+admitted). If max_i d_i < min(mu_slot, (E_0 - B_N)/4), then
+    |||T(E^phi_(k+1)[f]) - T(E^phi_(k+1)[f'])|||_(k+1) <= K s_k sum_(i<=k) omega_(k+1-i) d_i.          (H3')
+
+Proof. Let eta > 0 be small. For each i choose a regular pointed family h_i with total T(O_i) - T(O'_i) + c_i and
+||h_i|| <= d_i + eta (definition of |||.|||_i). Put O''_i := O_i - h_i (regular, by linearity) and f''_i := Sub_i(O''_i).
+(a) Totals. T(O''_i) = T(O'_i) - c_i. By (R2), b_i(h_i) = b_i(O_i - O'_i) = b_i(O_i) - b_i(O'_i) (h_i and O_i - O'_i are
+coherent localizations of totals that differ by a constant; linearity), so b_i(O''_i) = b_i(O'_i), and T(f''_i) =
+T(f'_i) + const. By (R1) the integrands of the step on f'' and on f' are equal on every admissible torus, so the
+physical totals of E^phi_(k+1)[f''] and E^phi_(k+1)[f'] agree on every torus up to a constant; since N, G do not depend
+on the list (R3), T(E[f]) - T(E[f']) = T(F[f] - F[f'']) + const on every torus.
+(b) Admission of f''. ||O''_i|| <= (3 E_0 + B_N)/4 + d_i + eta <= E_0 for eta small (R4); so f'' is a list of regular
+entries of norm at most E_0 on the same absolute core, and s(1 + N_k(f'')) <= eps_step (R4). The list difference
+f - f'' has members of original norm ||h_i|| <= d_i + eta < mu_slot, inside the marked slot.
+(c) Bound. F[f] - F[f''] is a regular pointed family at level k+1 (both outputs are regular; linearity) whose total is
+T(E[f]) - T(E[f']) + const by (a). So the left side of (H3') is at most ||F[f] - F[f'']|| <= K s_k sum_i
+omega_(k+1-i) ||h_i|| <= K s_k sum_i omega_(k+1-i) (d_i + eta) by input (4) in original-family norms (R3). Let eta -> 0. QED
+
+Differences from row 1267's (H3). (i) The right side reads the ORIGINAL totals, so the factor (1 + C_x C_A) of row
+1267's (3.2) is not needed: with O^theta_i = E^theta_i, d_i is exactly row 1267's u_i. (ii) The open condition of row
+1267 ("This needs f'' to be admitted") is met in the regime max d_i < min(mu_slot, (E_0 - B_N)/4); it is not met for
+large differences, so (H3') is a small-difference statement and the chain needs a bootstrap (2.4).
+
+**2.3 Lemma H2' (cross-admission; PROVED GIVEN (R3)-(R5) and row 1267's READ list of where the frame enters).** Row 1267
+2.4 READ that the unmarked chain reads the frame only inside the actual kernel K_(k,theta_k) (cut, gauge weight, real
+fluctuation coordinates); localisation cubes have the fixed side M (EM:176-178), the absolute radii a_* are fixed
+(EM:506-510), backgrounds come from the frame-free block map (EM:240-249), and the unmarked list has no aged remainders
+(EM:535-536). Given that, a member formed on the frame psi is a regular family on the same absolute core with norm at
+most (3 E_0 + B_N)/4 (R4); the step on the frame phi reads it only through its total, its own coefficient and its own
+companion (R1, R2, R5). The one frame-dependent number attached to a member, its creation covariance radius c_e
+eps(theta_j) (EM:653-656), does not restrict its use on phi: covariance is an identity of holomorphic functions on the
+absolute core, and it continues from any open real slice on which it holds to the whole connected domain (EM:812-816).
+So f^psi_k satisfies the conditions of (R3) on the frame phi: (H2) holds.
+
+What is not shown: that EM's "admitted" in input (4) contains nothing beyond (R3)'s conditions and the marked slot
+(EM states admission in prose across EM:500-716; I found no further condition on lists there); and the reading of
+row 1267 2.4 itself. Both are readings, so Lemma H2' is PROVED GIVEN readings.
+
+**2.4 Corollary FC-chain' (PROVED GIVEN Proposition H3', Lemma H2', (H1), (H4) = (FC-1) with loads nu_k, and
+(H5') K s_* Omega <= 1/2).** Let mu := min(mu_slot, (E_0 - B_N)/4)/2 and suppose nu_k <= mu/2 for every k < n (true
+above a high floor by Theorem FCT' of row 1268, whose nu_k tends to 0). Then for 0 <= k < n
+    u_(k+1) <= nu_k + K s_k sum_(i=1)^k omega_(k+1-i) u_i,   u_(k+1) <= mu,                                  (2.1)
+and sum_(i<=n) u_i <= 2 sum_(k<n) nu_k, eta_k <= C_x u_(k+1), sum_k eta_k <= 2 C_x sum_k nu_k.
+Proof. Induction on k. u_1 <= nu_0 <= mu (empty lists, EM:536). If u_i <= mu < min(mu_slot, (E_0 - B_N)/4) for i <= k,
+split as in row 1267: T(E^phi[f^phi]) - T(E^psi[f^psi]) = [T(E^phi[f^phi]) - T(E^phi[f^psi])] + [T(E^phi[f^psi]) -
+T(E^psi[f^psi])]. The second bracket is at most nu_k by (H4) on the list f^psi_k, admitted on phi by Lemma H2'. The
+first is at most K s_k sum omega u_i by (H3') with d_i = u_i. This is (2.1)'s first inequality; then u_(k+1) <= mu/2 +
+K s_* Omega mu <= mu by (H5'). Summation as in row 1267 (3.3), with Omega and (H5'). The coefficient bound is row 1267's
+(3.4) unchanged. QED
+
+**2.5 Effect on the input list of Theorem FCT' (row 1268).** (H2) and (H3) leave the list, replaced by the readings
+(R1)-(R5) and row 1267's READ list of 2.4; (H5) is weakened to (H5'). Still open on the pin route: (U) (row 1280 is on
+it), (E0)-(E6) against Balaban CMP 116 (not on this machine), (TH), and everything outside the carry (the seed, the 9.1
+hypothesis (e), (DET)'s inputs, the account's premises). The mass gap is not touched by this step.
+
+Check request (cross-provider, one reading): Proposition H3' (a)-(c), in particular the use of (R2) for h_i and the
+claim that input (4) is a bound in original-family norms; Lemma H2', in particular the covariance-continuation sentence
+against EM:812-816 and the creation radius at EM:653-656.

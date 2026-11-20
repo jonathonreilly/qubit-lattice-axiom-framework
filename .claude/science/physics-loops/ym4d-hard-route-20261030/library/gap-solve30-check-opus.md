@@ -81,3 +81,102 @@ Earlier rows and sources it cites (each to be read where a step depends on it):
 - Literature named: Knabe; Gosset-Mozgunov; Froehlich-Israel-Lieb-Simon (chessboard); Durhuus-Froehlich (layer representation); Bhattacharjee, Bhattacharya, Lockwood, Romanov (finite-speed bound); Sussman-Alpoge (transfer and insertion method).
 
 Order of the check (row 1271): (15), (30), (35), (17) first; then (31)-(32) with (20), (25); then the rest.
+
+## Step 2. The conditional Wilson estimate: (1)-(9), (14)-(17), (30), (35) (done 2026-11-20T12:13Z)
+
+All checked by hand. Notation as in row 1262 L13: P_x = E[ . | links outside V_s(x)], D_x = 1 - P_x, H_s = s^-4 sum_x D_x,
+E = <f, H_s f>, Pi_z = 1 - Q_z = E[ . | V_t(z)^c].
+
+**(1) => (2), L15-L49: HOLDS.**
+- Q_z W_z = W_z (L31): p(x-z) > 0 forces x in I_z, so V_s(x) is inside V_t(z); the tower property gives Pi_z P_x = Pi_z,
+  so Pi_z D_x = 0. Sum_z W_z = A H_s and sum_z L_z = R^4 H_s: each x is counted with total weight A (resp. R^4); this needs
+  R < N only.
+- (3): A E = sum_z <f, W_z f> = sum_z <Q_z f, W_z f>; Cauchy-Schwarz and (1) summed over z give (3). Only the sum over z of
+  (1) is used, as L29 says.
+- (4): sum_z norm(W_z f)^2 = s^-8 sum_(x,y) B_(y-x) <D_x f, D_y f> with B_v = sum_i p(i) p(i+v). So the excess over
+  B norm(H_s f)^2 is -s^-8 sum (B - B_(y-x)) Re<D_x f, D_y f>. Far pairs (periodic sup distance > s): the link base points of
+  the two cubes differ by at least 2 in some coordinate, a plaquette's base points differ by at most 1, so no plaquette
+  reads both cubes; the fillings are conditionally independent given the joint exterior, P_x P_y = P_y P_x, and
+  <D_x f, D_y f> = norm(D_x D_y f)^2 >= 0. These terms are <= 0. Close pairs: |Re<.,.>| <= (norm^2 + norm^2)/2 and
+  sum_x norm(D_x f)^2 = s^4 E give excess <= s^-4 E sum_(sup-norm v <= s) (B - B_v).
+- The constant: u_k = sin(k theta), k = 1..R, zero at k = 0, R+1; u_(i-1) + u_(i+1) = 2 cos(theta) u_i holds at every
+  support site including both ends, so norm(tau_1 u - u)^2 = 2(1 - cos theta) norm(u)^2; telescoping gives shift k at most
+  k^2 times this; 1D overlaps c_k lie in [0,1]; 1 - prod c <= sum(1 - c). So 1 - B_v/B <= (1 - cos theta) |v|^2.
+  Sum over v in [-s,s]^4 of |v|^2 = 4 (2s+1)^3 s(s+1)(2s+1)/3 = 4(2s+1)^4 s(s+1)/3. This gives e_(s,R) exactly as in L23.
+- (2): (3)-(4) give norm(H_s f)^2 >= (b_R gamma - e) E with b_R = A^2/(R^4 B), which matches L21. Kernel: H_s f = 0 gives
+  D_x f = 0 for all x; mutual absolute continuity with product Haar and composition of the commuting Haar integrations over
+  the cubes (which cover all links) give f constant. Gauge covariance: the gauge action preserves each sigma-field
+  sigma(V_s(x)^c) and the measure, so it commutes with P_x. The spectral step (no spectrum in (0, lambda)) is correct.
+- b_R >= 1/16 and e <= 40 pi^2 (s/(R+1))^2 (L51): the mean of u is >= 1/2 (sum of 2 min(k/n, 1-k/n) is n/2 or
+  (n^2-1)/(2n) for n = R+1, so the mean is n/(2(n-1)) or (n+1)/(2n)); u^2 <= u. The constant is
+  (4/3)(5/2)^4 (3/2)(1/2) pi^2 = 39.06 pi^2 <= 40 pi^2. The threshold gamma >= 1280 pi^2 (s/(R+1))^2 gives gap >= gamma/32.
+
+**(5), L61-L73: HOLDS.** Conditional law of the cube is proportional to exp(-beta S_y) times Haar (2 q_p = 1 - tr/2). Counts:
+4s^4 updated links, each in 6 plaquettes (<= 24 s^4); a crossing plaquette has an updated base point in the inner boundary
+layer (s^4 - (s-2)^4 <= 8 s^3 sites), 24 per site, so <= 192 s^3. On the cap (geodesic distance <= delta = beta^-1/2 for
+every updated link) an internal plaquette has angle <= 4 delta and 2q_p = 1 - cos <= 8 delta^2; Haar cap mass
+>= (8/(3 pi^3)) delta^3 from the density (2/pi) sin^2. Entropy: beta P_y S_y <= -log Z_y. Internal faces of Y_y are summed
+in S_y, |J| = (s-1)^4 >= s^4/16. Result 8[192/beta + 384/s + 4(log(1/c) + 1.5 log beta)/beta], of the form (5).
+
+**(6)-(8), L75-L95: HOLDS.**
+- Nonnegativity: B_z is measurable outside V_t(z), hence outside every V_s(x) with p(x-z) > 0, so 1_B commutes with D_x and
+  <1_B f, D_x f> = integral of 1_B |D_x f|^2.
+- (7): with y = z + d - j the right side equals |J|^-1 sum_j sum_z p^+(x-z+j) int q_(z+d,nu) |g|^2, and
+  p^+(x-z+j) >= p(x-z) (take j' = j). Sum of p^+ = (sum of 1D u^+)^4 because max over a product set of a product of
+  nonnegative factors factorizes; the layer-cake argument gives sum u^+ <= sum u + s - 2 <= (1 + 2s/R) sum u.
+- Split g = P_y g + D_y g: int Y |P_y g|^2 = int (P_y Y)|P_y g|^2 <= m_s norm(g)^2, and Y <= 1.
+- (8): far pairs give norm(D_y D_x f)^2 = <D_x f, D_y f>; close pairs use norm(D_y D_x f)^2 <= norm(D_x f)^2 plus the
+  absolute cross term; total s^8 norm(H_s f)^2 + 2(2s+1)^4 s^4 E.
+- Constant: (2 s^4/A)[1 + 2(2+1/s)^4] E with A >= R^4/16 and (2+1/s)^4 <= 39.07 < 40 gives 32 * 81 = 2592 (s/R)^4. The
+  first part gives 2(1+2s/R)^4 m_s per plaquette, times k/h after the Markov bound 1_B <= mean/h, summed over lists.
+
+**(9), L97-L101: HOLDS.** Good part (1 - rho) A E on 1_[0,1](H_s); 1_G commutes with Q_z because G_z is exterior-measurable,
+so <1_G f, W_z f> = <1_G Q_z f, W_z f>; integrating the conditional (1) over G_z gives
+sum_z norm(1_G Q_z f)^2 <= R^4 E / gamma. The spectral argument on the reducing subspace 1_[0,1](H_s) gives the min with 1.
+
+**(14)-(15), L148-L158: HOLDS.** Every outer cube V_s(x), x in I_z^out, lies inside V_(t+2b)(z - b1) (since
+R' + s - 1 = t + 2b), so the outer cube updates and Q_z restrict to the conditional law mu_omega by the tower property.
+Outer tests are exterior to V_t(z), so (6) and (11) apply unchanged. With sum_z L_z^out = (R')^4 H_s the Cauchy-Schwarz step
+gives the coefficient b_R (R/R')^4 (1 - rho_*)^2. Correct as stated.
+
+**Face readings, L160: HOLDS.** A function of links outside V_t(z) has Q_z f = 0 by definition (b >= 2 keeps the artificial
+outer face outside V_t(z)).
+
+**(16), L168-L174: HOLDS as a sufficient condition.** With R'/R <= 2 (b = floor(R/2)), b_R >= 1/16, rho_* <= 1/2, the
+coefficient of gamma in (15) is >= 1/1024 and e <= 40 pi^2 (s/R)^2, so gamma >= C_*(s/R)^2 with C_* > 1024 * 40 pi^2 gives
+v_s >= c (s/R)^2. The loss bookkeeping is right: with h = K/beta and m_s from (10),
+rho = (k/K)[2C(beta/s + 1)(1 + o(1)) + 2592 beta (s/R)^4] = O(k/K) when s ~ beta^2 and beta (s/R)^4 -> 0; the (12) loss
+tends to 0 with r ~ (D log R)^(1/3) and cD > 3; the collar loss C(R/s)^3 e^(-c l^4) with l = s/4 ~ beta^2/4 and
+log R = O(beta) tends to 0. The sentences on row 1254 (17) and its continuum premises (L174) are a citation of an
+unchecked row; see Step 5.
+
+**(17), L178-L188: HOLDS.** Checked steps: (i) a cut of a rectangle with longest side l deletes at most 2 l^3 sites x 24
+incidences = 48 l^3 plaquettes, each half-trace in [-1, 1], so the normalized density against the product law has
+sup/inf <= e^(96 beta l^3); (ii) l <= dmu/dnu <= u compares variances and integrated conditional variances (both are
+infima of squared error over constants or G-measurable functions); (iii) Efron-Stein on the two-factor product;
+(iv) recursion with the sibling fixed, then integrate; (v) cuts in round j all have longest side t 2^-j, four cuts per
+round: 384 beta t^3 (8/7) = 438.9 beta t^3 < 440 beta t^3; (vi) a tile of side s/2 at origin o lies in V_s(x) for
+x in o - {0..s/2}^4, and these x lie in I_z^out because b >= s/2; a side-s cube holds at most 2^4 aligned tiles; nested
+projections let the cube variance dominate the tile variance after integrating the collar. Constant 2^-4 * 2^-4 = 2^-8.
+
+**Oscillation remark, L190: HOLDS.** The changed link U_2(m, x') turns the crossing 12-plaquette at (m-1, x') from +1 to -1;
+its other plaquettes have all base points at x_1 = m and are not crossing; (t-4)^3 >= t^3/8 for t >= 8.
+
+**(30), L363-L392: HOLDS.** Checked: retained origins (r > u = w_0 + 2s + 2) give cubes whose normal base coordinates stay
+more than w_0 from the sheet centre, so no cube meets S_z, and Q_z^o W'_z = W'_z; A - A', B - B' <= C R^2 H^2 <= C u R^3 and
+A, B >= R^4/16; the log cutoff energy: crossing edges at radius j number <= Cj, difference <= 1/(j log(H/u)), sum
+<= C(1 + log(H/u))/log^2(H/u); the decomposition tau_v p' - p' = (tau_v chi)(tau_v p - p) + p(tau_v chi - chi), the pointwise
+bound |tau_v p - p| <= C|v|/R, the support count C R^2 (H+s)^2 for the cross term, and the relative loss
+(H+s)/(R sqrt(log)) <= C/log(R/u) (since (log x)^(3/2) <= C x^(1/2)). Tests on revealed links commute with the retained D_x
+because no retained cube meets S_z. (A')^2/B' >= (1 - Cu/R)^2 A^2/B. The several-sheet extension (L392) is a sketch but is
+routine.
+
+**(35), L440-L446: HOLDS.** sup over f of |<g,f>|^2/<f,(L+eps)f> = <g,(L+eps)^-1 g>; monotone limit in eps (the ratio for
+each f increases as eps decreases, so the two suprema and the limit interchange); Tonelli on the spectral measure gives
+int_0^infty norm(exp(-uL/2) g)^2 du = <g, L^-1 g>, both infinite if g has mass at 0.
+
+**Power tail and example, L448: HOLDS.** The semigroup norm is nonincreasing; the dyadic integral gives
+T[1 + A_0/(1 - 2^-delta)]. Example: (1 - eta^2) e^-T + eta^2 e^(-eps T) <= e^-T + eta^2 and integral
+1 - eta^2 + eta^2/eps.
+
+No defect found in Step 2. Inputs not yet checked: (10) (row 1155 (9)), (11)-(13) (row 1141), and the row 1254 citations.

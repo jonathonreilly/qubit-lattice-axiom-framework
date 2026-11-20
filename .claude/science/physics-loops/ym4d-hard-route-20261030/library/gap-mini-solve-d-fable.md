@@ -20,6 +20,11 @@ GUIDE (numeric or heuristic evidence, never a proof step), OPEN.
   proofs (`library/prior/gap-2don-proofs-read-opus.md` L44-126), statement (A) (`gap-council-op-astra.md` L14-52), the
   corner-twist candidates C1-C8 and their kill table (`gap-invent-selective-max.md` L96-200) with the cross-provider check
   items 11-18 (`gap-invent-selective-check-astra.md` L50-72). Section 1 written.
+- 00:33Z. Read the lane's digest of OpenAI's pinned-cell proof for the step from the twist bound to all observables
+  (`library/prior/gap-o4-pinned-cell-read-opus.md` L57-80, L181-223), Lemma WN and its corollaries
+  (`gap-invent-selective-max.md` L136-168), Theorem D (f) (`gap-crux-restate.md` L99), the RESULT of row 1084. Section 2
+  written. The gauge form of every step is on file with a first failing step. Next: Section 3, the one count that
+  the record still holds as ARGUED and open (the corner form C1).
 
 ## 1. How best to attack it
 
@@ -76,3 +81,52 @@ Item 3 decides my choice. (N-phys) is a statement about the neutral half. The 2D
 record, also deliver mixing for all observables and a doubling criterion for partition functions. So the step to read
 is not their twist bound (ported four times, each port dead) but **how they pass from the twist bound to the
 rotation-invariant observables**. Section 2 reads that step in the lane's digest and asks for its gauge analogue.
+
+## 2. The step that reaches rotation-invariant observables in two dimensions, and its gauge form
+
+Reading only. Every statement about the 2D proof is OpenAI's, taken from the lane's digest of row 1009
+(`library/prior/gap-o4-pinned-cell-read-opus.md`); I did not read the paper and I check none of its proofs.
+
+### 2.1 The 2D chain after the twist bound
+
+- (i) Small stiffness on a pinned square. This part "allows arbitrary signed couplings and fixed right twists"
+  (digest L78-79, quoting p. 13). The gain is the bracket term.
+- (ii) Small stiffness, then coarse orientations, then a disagreement coupling, then decay of charged observables
+  (digest L72, L78-80).
+- (iii) The decomposition q = (cos(alpha) z, sin(alpha) w) with z, w on the circle. Given alpha, the two circle sectors
+  are independent XY models with couplings b_e cos(alpha_x) cos(alpha_y) and b_e sin(alpha_x) sin(alpha_y), and the law of
+  alpha is associated. With charged decay this gives (3.67): covariance decay for all local Lipschitz observables,
+  uniform on unpinned tori and free subgraphs, for every set of couplings 0 <= b_e <= b (digest L183-186). "Only this
+  last part requires nonnegative untwisted couplings" (digest L80).
+- (iv) (3.69): the mean bond energies of the tori n and 2n are compared by cutting the bonds of a free square; no pins
+  occur. (3.70): d/dt Delta_t(n) = 8 n^2 [e_t(n) - e_t(2n)] and Delta_0(n) = 0; integrate over t in [0, b]. The mixing
+  length must be the same for every t <= b (digest L187-197).
+
+So the twist bound gives the charged half only. The rotation-invariant half comes from positivity: the model is a
+mixture of abelian ferromagnets with an associated mixing law. OpenAI's first O(n) paper says the same from the other
+side: "A full transfer gap would additionally control covariances of all local observables, including
+rotation-invariant bond energies, and requires a separate argument" (`library/prior/gap-2don-proofs-read-opus.md`,
+B(1)).
+
+### 2.2 The gauge form of each step, and where the record holds it
+
+| 2D step | Gauge form | State on file |
+|---|---|---|
+| (iv) torus comparison and coupling integral | Phi(n; beta) = 96 n^4 times the integral over s in [0, beta] of (abar_2n(s) - abar_n(s)) | PROVED: Theorem D (f), `gap-crux-restate.md` L99; "(SEED) is a bound on the finite-size shift of one number", L61. The consumer exists. |
+| (iii) abelian conditional ferromagnets, association | a conditional abelian structure of the links with positive couplings, or association of plaquette functions | FAILS three ways: row 1084, `gap-checkerboard-singlet-astra.md` L763 (P4-SING-PORT; check row 1086). The Hopf form of one plaquette has a sign pattern that no shift removes: Lemma HF of row 1188, 2.1 of row 1190. Griffiths II for plaquettes is false: Theorem EP-NO, row 754, check 756. |
+| (ii) charged decay from small stiffness | the only charged objects of a gauge theory are centre-charged (flux); everything else charged has mean zero | flux half only: council synthesis 2c; rows 731, 1018 |
+| (i) small stiffness from the bracket | four ports | class of all pins: FAILS, rows 1011, 1016 (Propositions B, B', Theorem BH). Pinned slice: Lemma PC of row 1188. Corner model: row 1189. Corner graph: C1 of row 1013, verdict ARGUED and reopened by the checks of rows 1013 and 1051; Section 3 below. |
+
+### 2.3 Reading (ARGUED)
+
+(N-phys) is a statement about the rotation-invariant half. In two dimensions that half is not reached by a twist. It
+is reached by step (iii), and the gauge form of step (iii) fails at its first line, for the exact reason that
+distinguishes the plaquette from the bond: the trace of a product of four elements has terms of both signs in every
+abelian coordinate system tried, and non-orientable surfaces carry the sign of the half-integer representations. A
+proof of (N-phys) with this architecture needs a positivity structure of Wilson SU(2) that I do not have and that the
+record does not have. The supplier for step (iv) is therefore open, with no mechanism:
+
+**(FS) (OPEN; the crux in the form of Theorem D (f)).** For one n and all s in [0, beta]:
+96 n^4 times the integral over [0, beta] of (abar_2n(s) - abar_n(s)) ds is at most 1.9e-4.
+
+I state it only to fix what Section 4 reports as open. It is (SEED) of row 697.

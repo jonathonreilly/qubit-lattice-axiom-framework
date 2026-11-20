@@ -86,3 +86,87 @@ the one-step inputs for one frame and does not say how K_(k,theta) depends on th
 cut, the gauge weight, the fibre density and the normalizer Z_k; Step 2 reads them in the companion manuscripts GI
 (Gaussian block integration) and RT (trajectories and partition stability).
 
+## Step 2. The Gaussian part of (FC) vanishes exactly (written 2026-11-20T12:01Z by date -u)
+
+Sources (READ; credit Sussman and Alpoge, with Claude and Codex as authors of their text): `YM4/GI/YM4_GI.tex` ("Gaussian
+block integration and free action-density correlations") at c7fef8b21b58, L606-1170, and `YM4/RT/YM4_RT.tex` L491-760,
+L1809-2024, same commit. GI:n, RT:n are TeX lines.
+
+**2.1 READ.** GI Theorem `gi:thm-relative-gauge` (GI:661-679): the relative normalizer
+J(B, Q, R, G) = sqrt(det R R^*) |det(G D_0)| I(B + G^* G, Q), with I(T, Q) = int delta_F(Q x) exp(-<x, T x>/2) dx (GI:627-630),
+does not depend on the residual gauge coordinate G. GI (gi:eq-axial-constant, GI:898-909): for the actual axial coordinate,
+sqrt(det R_0 R_0^*) |det(G_ax D|ker R_0)| = c_(eta,j) does not depend on the background. GI Proposition
+`gi:prop-physical-normalizer` (GI:968-1006): the background dependence of the plain-fibre Gaussian normalizer is the
+difference of two saddle log-determinants built from B_fib, Q, R, D. GI Proposition `gi:prop-action-gauge-powers`
+(GI:1062-1078) is the convention "scaling the action while keeping the gauge weight": K_tau = tau K_A + K_G. EM uses it as
+"[GI, Proposition 4.3]" for the Gaussian mismatch family G_(k+1,tau), whose total is "a background-free number" (EM:1326-1335).
+RT input (2) (RT:713-732) requires "The actual one-loop data are independent of the initial weight, admissible torus and
+unused finer horizon", and RT:570-579 says that in the self-calibrated convention the free-link coordinates are scaled by
+x_(j-1)^(-1/2) and that the cut and every gauge-compensation factor stay inside the integral.
+
+**2.2 Hypothesis (A1)** (the reading of EM's "Gaussian references" that EM:694-700 and GI:968-1033 describe). At step
+k -> k+1 and frame entry theta = theta_k, the reference Gaussian normalizer Z^theta_k(W) of EM:694-700 is the plain-fibre
+normalizer c_Haar c_soft I(theta B + G^* G_theta, Q_0) (no cut), where B = B_fib(W) - Q^* H_c Q is the fibre Hessian of the
+unit-weight Wilson action at the constrained background U_k(W) (as in GI (gi:eq-given-complete-hessian)), Q_0, D, R are the
+constraint and gauge maps at that background, and the gauge coordinate G_theta is either theta^(1/2) G (gauge weight scaled
+with the frame, GI Proposition 4.3's convention in frame-normalized coordinates) or G (fixed in field units); B, Q_0, D, R,
+G do not depend on theta, and c_Haar, c_soft do not depend on W. (The background U_k(W) is the constrained minimizer of the
+Wilson action, which is the same for every positive weight; the Lagrange multiplier scales with the weight, so
+B_fib for weight theta is theta B_fib.)
+
+**Lemma A (PROVED given (A1) and GI's standing hypotheses of Theorem `gi:thm-relative-gauge`).** For any two frame
+entries theta, theta' > 0 there is a constant c(theta, theta') with Z^theta_k(W) = c(theta, theta') Z^(theta')_k(W) for
+every admitted physical datum W. Hence the normalized Gaussian families of EM (eq-rs-formation) formed on two frames have
+the same total on physical data,
+    sum_(X,z) N^phi_(k+1)(X, P_(k+1)(W), z) = log Z^phi_k(W) - log Z^phi_k(1) = sum_(X,z) N^psi_(k+1)(X, P_(k+1)(W), z),
+and the Gaussian number b^0_(k+1) = b_(k+1)(N_(k+1)) of EM Theorem `em:thm-coefficient-envelope` does not depend on the
+frame: b^0_(k+1)[phi] = b^0_(k+1)[psi] for every two frames phi, psi.
+*Proof.* Case G_theta = theta^(1/2) G. The precision is theta (B + G^* G). Substitute x = theta^(-1/2) y in
+I(theta T, Q) = int delta_F(Q x) exp(-theta <x, T x>/2) dx. Then dx = theta^(-dim E/2) dy and
+delta_F(Q theta^(-1/2) y) = theta^(dim F/2) delta_F(Q y), since delta_F is homogeneous of degree -dim F on F. So
+I(theta T, Q) = theta^(-(dim E - dim F)/2) I(T, Q), with an exponent that does not depend on W.
+Case G_theta = G. By Theorem `gi:thm-relative-gauge` the relative normalizer does not change if G is replaced by
+theta^(1/2) G. Writing r = dim ker R, so that |det(theta^(1/2) G D_0)| = theta^(r/2) |det(G D_0)|,
+    sqrt(det R R^*) |det(G D_0)| I(theta B + G^* G, Q) = J(theta B, Q, R, G) = J(theta B, Q, R, theta^(1/2) G)
+        = sqrt(det R R^*) theta^(r/2) |det(G D_0)| theta^(-(dim E - dim F)/2) I(B + G^* G, Q),
+by the first case applied to T = B + G^* G. The factors sqrt(det R R^*) |det(G D_0)| are the same on both sides and
+nonzero, so I(theta B + G^* G, Q) = theta^((r - dim E + dim F)/2) I(B + G^* G, Q). (By (gi:eq-axial-constant) the factor
+|det(G_ax D_0)| does not depend on W either, but the cancellation does not need this.)
+In both cases log Z^theta_k(W) - log Z^theta_k(1) does not depend on theta. The normalization of N_(k+1) (EM:694-697) is
+exactly this difference, so the totals agree. The coefficient b_(k+1) depends only on the total (EM Proposition
+`em:prop-companion-coefficient`, EM:1202-1204: "unchanged ... by changing coherent localizations of the same physical
+total"), so b^0_(k+1) agrees. QED
+
+**Lemma Z (PROVED, from EM:1326-1335 and Lemma A).** Let phi, psi be two frames, admitted with the same weight prefix
+x_(<= k). Then on physical data, including the complex continuation along physical backgrounds on a connected domain that
+meets the real slice:
+(a) the vacuum-subtracted total of each Gaussian mismatch family G_(j,tau) is zero, in either frame;
+(b) N^phi_j - N^psi_j has vacuum-subtracted total zero;
+(c) the Wilson counterterm coefficients of the level-j regular members in the two frames differ by
+    b_j(F^phi_j) - b_j(F^psi_j) only.
+*Proof.* (a) EM:1330-1333: the total of G_(j,tau) "is a background-free number" throughout the admitted physical chart; its
+vacuum-subtracted total is therefore zero on real physical data; the composed total is holomorphic and vanishes on an
+open real set, so it vanishes on the connected complex domain (identity theorem; EM uses the same continuation at
+EM:748-753 and RT at RT:1915-1919). (b) Lemma A and the same continuation. (c) b_j is linear (EM:1202), b_j(G_(j,tau)) = 0
+(EM:1333), and b_j(N^phi_j) = b_j(N^psi_j) by Lemma A. QED
+
+**2.3 What Lemma Z does to (FC).** The integrand of step k+1 reads the list f only through its total S_f(U) on physical
+backgrounds (EM:538-561). By Lemma Z, for the unmarked lists f^phi, f^psi of the two frames,
+    S_(f^phi)(U) - S_(f^psi)(U) = sum_(j <= k) [ Tbar(F^phi_j) - Tbar(F^psi_j) ](U) - sum_(j <= k) [ b_j(F^phi_j) - b_j(F^psi_j) ] A_j(U),
+where Tbar is the vacuum-subtracted total and A_j(U) the level-j Wilson action pointed by the tents (EM:276-283). The
+Gaussian families N and G drop out exactly. This matters for summability: G_(j,tau) has pointed norm up to B_G |1 - tau_j|
+(EM:690), and between the frozen frame and the run's own frame |1 - tau_j| can be of order theta_j^(-1/2) polylog (row 1260
+2.1); charged through a one-step comparison with factor s_k of order theta_k^(-1/2) polylog, it would give a per-step load
+of order theta_k^(-1) polylog, whose sum over a pin run diverges. By Lemma Z this load is absent: it is an artefact of
+measuring a list difference in pointed norm when the total is zero.
+
+**2.4 Which frame-dependent choices the unmarked chain reads (READ).** The unmarked list "uses only its own regular
+outputs, from levels 1, ..., k. Both lists begin with no entries" (EM:535-536); its localization cubes have the fixed side M
+(EM:176-178); the age gate with R-check_j = R(min theta_i) (EM:364-380) selects remainders, which enter only the full
+chain (EM:524-528); the absolute chain has fixed radii a_* (EM:506-510); the creation radius c_e epsilon(theta_k)
+(EM:653-656) fixes where covariance is read, not the function. So, beside the Gaussian reference (Lemma A), the unmarked
+chain reads the frame only inside the actual kernel K_(k,theta_k): its fluctuation cut, its gauge weight and its real
+fluctuation coordinates (EM:544-547, 619-621; RT:708-712). The fibre density does not depend on the frame (GI:926-966:
+central Haar factors depend on the meshes only). **So the partition matching of row 1260 5.2 (iii) is not needed for the
+unmarked total**; what is left of (FC) is a comparison of two kernels at the same weights and list.
+

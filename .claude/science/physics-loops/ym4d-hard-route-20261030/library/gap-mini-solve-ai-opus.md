@@ -87,3 +87,55 @@ PROVED), `9.9:thm-nondegenerate-calibration` ("Non-degenerate calibration by the
 PROVED), `9.9:thm-differentiated-witness` (III:57753); and `9.9:prop-remainder-derivative` (III:56333) is OUTSTANDING.
 Step 2 reads them and decides whether they apply to both frames.
 
+## Step 2. (FI) in the account: what it is, where the account uses it, one route that fails (written 2026-11-20T11:31Z by date -u)
+
+**2.1 The two frames, exactly (READ).** `9.13:not-scaffold-runs` (III:70175-70230) names them. The *own-threshold run*
+of clause (0) from a bare coupling has the increments b_j of `1.2:def-couplings`; its first-passage level is
+K(g_0, g) = min(k : x_k <= X + B^sharp). The *frozen scaffold* Theta_X "is the assignment ... of every coupling-dependent
+choice of Balaban's step at depth r to its value at the coupling g_(r) := theta_r^(-1/2)", theta_r = X + c_0 r, "the same
+for all run lengths n"; the action entering the scaffold's choices at depth r "is the pure Wilson action with coefficient
+theta_r(X)" (III:70559-70562). The pins a_n = theta_n - zeta_*^n(0) are defined on the frozen scaffold; Theorem 3.1
+(v-a) says so in its own words: "the n-step recursion from x_0 = a_n (with infinite-lattice coefficients and the
+coupling-dependent choices fixed in terms of X) ... ends at x_n = X exactly" (I:2836-2838). The frozen run's coupling at
+depth r differs from theta_r by the shift zeta_(r), and along a tuned run |zeta_(r)| <= |w| + 2c_2 + sum_(u<r) iota_u,
+with the drift sum of order theta_r^(1/2) (log theta_r)^(p_0) (III:69020-69030, (c) and (9.13:eq-canonical-scaffold-2)).
+So at depth r the two frames evaluate the coupling-dependent choices at couplings whose inverse squares differ by up to
+order theta_r^(1/2) polylog. (FI) at pins says these two runs from the same bare datum a_K reach the same coupling at
+depth 0.
+
+**2.2 The account's own name for (FI): "the scaffold comparison" (READ).** The account invokes, by name only, "the
+scaffold comparison, which compares, at one cutoff, the run carrying its own threshold with the run on a frozen scaffold"
+(III:71033-71034), with "the bound |x^own - x^Theta| <= varpi(g) of the scaffold comparison, where that comparison
+applies" (III:70519-70521), "at every level" (III:70586-70590), and "varpi(g) <= 1 ... the cross-scaffold modulus of the
+scaffold comparison" (III:70723, III:71047). It enters: `9.8:cor-subsequential-limits` (a) (III:54156-54198, OUTSTANDING,
+with varpi(r_J, g) undefined there, as row 1256 3.1 found); `9.8:rem-increment-bound`, whose step (*) states "the
+scaffold comparison has to apply to the depth-(n+1) scaffold at the bare data a_n - w ... Its hypothesis is stated for
+data in the window of a_(n+1), so a continuity or bootstrap argument along w is needed" (III:55650-55654; "Stated; proof
+incomplete"); the first half of the uniqueness corollary as used in `9.13:prop-limit-member` (III:70718-70723,
+III:71075-71081). A grep of CA-I, CA-II and CA-III at 31a47c543775 for "scaffold comparison", "cross-scaffold" and
+"varpi(g)" finds no labelled statement of it and no proof; every hit is a use. (CA-I's "scaffold" in chapter 4.21 and
+CA-II's `5.1:def-source-free-scaffold`, `5.5:not-one-scaffold` are the machine's geometric scaffold, a different object.)
+Theorem 3.1 clause (0) lists among "Not asserted": "a sign of x_k - x_(k+1) at a single step ... monotonicity of a tuned
+bare coupling ... regularity of beta_j in the couplings" (I:2552-2556).
+So: **(FI) at pins with a bounded defect is the account's unstated "scaffold comparison" at the pins**, and row 1256's
+(FI-W) is the same comparison on the window. The account's Theorem 3.1 (v-c)(2) (I:2865-2868), the window inclusion and
+the identification of first-passage limits, rests on it through `9.8:cor-subsequential-limits`.
+
+**2.3 What the carry needs from it (PROVED from row 1256).** Lemma OFF and Proposition PIN need only
+(SC-pin) |x^own_K(a_K) - X| <= varpi for every K >= K_0, with varpi bounded uniformly in K;
+then by row 1256 3.4 Remark 2 and Lemma OFF the pin a_K first-passes at a depth K + delta with
+1 <= delta <= ceil((B^sharp + c_5 + varpi)/lambda^sharp). (The proof of Lemma OFF uses x_K(a_K) only through the window
+X - varpi <= x_K <= X + varpi and clause (0)'s two-sided flow bound.) The account's own bound varpi <= 1 would do.
+
+**2.4 A route that fails: calibration by the two-point witness (PROVED, elementary).** Idea of Step 1.4: both runs from
+a_K carry the same bare datum, so the same Schwinger functions; a theorem expressing a reference-scale correlation as an
+explicit function of the run's coupling would bound the defect. The account's `8.1:thm-two-point-witness` (II:71279-71372,
+index PROVED) gives, for first-passage data, S^T_(2;K,m)(f_1, f_2) = N_(K-s)^2 b_0 g_(K-s)^4 K_(K,s)(f_1, f_2)(1 + R_K)
+with |R_K| <= 1/4 and N_(K-s) in [2/3, 4/3]. If two runs carried this formula with couplings x^A, x^B at the witness level
+(same kernel), then (x^B/x^A)^2 = (g^A/g^B)^4 lies in [(3/4)(2/3)^2/((5/4)(4/3)^2), its inverse] = [3/20, 20/3], so
+x^B/x^A lies in [0.387, 2.59]. That bounds the ratio, not the difference: at x of order X the defect can be of order X.
+So calibration by any statement with a relative error of fixed size cannot give (SC-pin); it needs a relative error
+O(1/X) in g^4, i.e. the two-point function to next-to-leading order with an explicit constant, plus the witness theorem
+on the frozen frame (which the account takes as the fourth hypothesis of `9.9:def-tuned-hypotheses`, not as a theorem),
+plus a comparison of the s levels between the witness level and the reference level. The route stops at its first step.
+

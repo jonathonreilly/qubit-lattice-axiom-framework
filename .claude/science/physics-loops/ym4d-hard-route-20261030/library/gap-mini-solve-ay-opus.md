@@ -392,3 +392,121 @@ Omega_(k+1), or only decays outside it, I did not establish. If it only decays, 
 decay that the plain site already uses for the parts of plain stores outside Omega_(k+1), which I also did not read. (b) The wall-connectedness of filed domains (Remark after
 Lemma A2) is the account's own convention issue, not created here. (c) Clause (c) of the proposition is read, not
 proved, in its alternative "off (Z union Y_iota)^boxplus".
+
+## Step 6. Labels, consumers, what a checker should redo (written 17:34Z by date -u)
+
+**6.1 One more piece of evidence for (U-loc) (READ).** At (T) the amplitude multiplies "the shift piece, which is the
+product of chi-hat_square with the response" (CA-II L5330-5331), so the configuration is shifted only where
+chi-hat_square is non-zero, on the block of the localisation datum. The response H itself is not compactly supported:
+the decay factor eta_p between the block and the read set "is read from the decay of delta H_j in [CMP109 (3.9)]"
+(5.2:lem-response-containment, CA-II L10625-10627). So (U-loc) holds if the Landau-to-axial map u is built from the
+shifted configuration (which differs from the unshifted one only on the block), and needs the decay reading otherwise.
+I leave (U-loc) as a reading.
+
+**6.2 Labels.**
+
+| Statement | Label | Where |
+|---|---|---|
+| The plain site (T) is Balaban's CMP 109/116/119 expansion taken by statement; potentials enter only as Mayer factors and through their activity constant; an output reads only potentials whose domains it contains | READ | 3.1 |
+| The format, geometry lemmas and the account's five-point route for 9.1:prop-blind-site-expansions | READ | 2.1-2.4 |
+| Lemma A1 (active domain A(Y) = cl(tau_Y) is a wall-connected domain, d(A(Y)) <= d°(Y), contains Y off W) | PROVED | Step 4 |
+| Lemma A2 (filing: d°(fil(X^a union P)) <= d(X^a)) | PROVED | Step 4 |
+| Remark: the account's fil_l(X) may fail wall-connectedness (islands are touch-components) | PROVED (by example of corner contact), consequence for consumers not checked | Step 4 |
+| Lemma A3 (activity of the re-indexed family: per-domain constant c_d C_fib N°, anchored constant 3^d C_fib N° <= K°(d) N°, given r_F >= kappa + k_d + 2) | PROVED GIVEN 9.1:lem-blind-counts (i) | Step 4 |
+| Theorem RL-T: the (T) part of 9.1:prop-blind-site-expansions, clauses (a), (b) with the site's constants and rates, the activity clause, (c) in its Lambda_(k+1) alternative | PROVED GIVEN (H-fmt), (H-par) with (U-loc), (TH), (F_RL) kappa >= 8(k_d+2), and the plain (T) statements as the account takes them; also GIVEN (H-fmt), (H-par') in place of (H-par), (U-loc) (Step 7.2) | Steps 4, 7 |
+| (H-fmt), (H-par) at (T) | ARGUED (readings of the account's transcriptions CA-II L3521-3730, L5265-5332, L6902-7040; Balaban's text not read) | Step 4 |
+| (U-loc) | OPEN reading; may be false (account rotates at law sites inside old large-field regions); not needed under (H-par') | 5.4, 6.1, 7.2 |
+| (H-par') (island slots kept in the read set, active domain as localisation domain) | ARGUED; first half modelled on the account's PROVED 4.24:prf-exterior-independence | 7.1-7.2 |
+| Lemmas A1'-A3' (relative to Z union W') | PROVED by the proofs of A1-A3, with the strip format's relative count | 5.1 |
+| Theorem RL-L: the (L) part | PROVED GIVEN (H-fmt)_L, (H-par)_L, (TH)_L, (F_RL) and the plain (L) statements | 5.2 |
+| Theorem RL-P: the (P) part for blind stores of level at most the shell's scale | PROVED GIVEN (H-fmt)_P, (H-par)_P, (TH)_P, (F_RL) and the plain (P) statements | 5.3 |
+| The (P) part for blind stores younger than the shell | OPEN (the account's (d3) excludes them; its "class assignment" not read) | 5.3 |
+| Clause (c) in its alternative "off (Z union Y_iota)^boxplus" | READ, not proved | Theorem RL-T (T5) |
+| The infrared seed; the Jaffe-Witten mass gap | OPEN; not attacked | Step 1 |
+
+Everything PROVED above is by Claude Opus 5.5 (this row) and is not checked by another model.
+
+**6.3 What the result changes, if a check holds it.**
+- 9.1:prop-blind-site-expansions (CA-III L16559, OUTSTANDING; T0 node F56 of `library/chain-ca.md` L208) becomes, at (T)
+  and (L), an implication from the account's own plain site statements plus the readings (H-fmt) and (H-par') (or (H-par) with (U-loc)),
+  with one floor (F_RL) on kappa that reads d only. The account's route needed a rerun of CMP 116 Section 2 at five
+  points; the re-indexing needs none of them.
+- Its consumers: 9.1:lem-blind-domination (assumes the (T) part, CA-III L16804), 9.1:thm-blind-fluctuation-bound
+  (reads the (T) part and clause (vi) of the T-step bound lemma, L17043-17062), 9.1:lem-blind-resummation (iii)
+  (reads the (L) bracket bound and the (P) chain units, L16086-16092), and so hypothesis (e) of
+  9.1:thm-last-lattice-comparison (L17912), which the one-cutoff carry of the gap lane reads (rows 1233, 1255, 1296).
+- What it does not change: the (P) case of young stores; the readings; the other hypotheses of Theorem 9.1; the seed.
+
+**6.4 What a checker should redo (most valuable first).**
+1. Lemma A1 (ii): the wall-connectedness of cl(tau) through the stars S(p), and d(A) <= |tau|.
+2. Theorem RL-T (T1), (T3), (T4): that the regrouping is exact, that the outputs reading blind stores are exactly the
+   marked sub-sum t_1 - t_0, and that every output reading a blind store can be filed with d°(fil) <= d(X^a), using
+   lem-island-geometry (e) for the level change.
+3. Whether (H-par) and (H-fmt) are faithful to the account's transcriptions at the cited lines, in particular whether the
+   plain site reads any property of an input's domain other than its length, its containment in the output domain and
+   its fluctuation variables; and (U-loc).
+4. Lemma A3's constants against 9.1:lem-blind-counts (i) and the floor (F_RL) against the account's floors on kappa
+   (CA-III L608-624).
+
+**6.5 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the complete account
+CA-I to CA-III at 31a47c543775 (the island-blind format, 9.1:lem-island-geometry, 9.1:lem-blind-counts, the
+proposition and its route, the transcriptions of Balaban's expansions in CA-II 5.2). Tadeusz Balaban: the
+renormalisation-group expansions the plain sites take by statement (CMP 99, 102, 109, 116, 119, 122a, 122b). Rows
+1233, 1234, 1255, 1296 and 1299 of this lane, which named the proposition as open on the carry.
+
+
+## Step 7. (H-par) against the account's own parameter lemma; (U-loc) may fail as stated (written 17:36Z by date -u)
+
+**7.1 The account proves the parameter principle in another machine (READ).** CA-I 4.24:prf-exterior-independence
+(L109371-109460, index status PROVED), for the survivors' block expansion: if (1) the Gaussian objects, the
+characteristic function, the sets P and Z_0, the decoupled cubes, the partitions and the contours do not depend on a
+parameter lambda, and (2) each member's value is continuous on its parameter domain, holomorphic in the polydisc
+coordinates, with a lambda-free majorant, then "the expansion identity holds at every lambda ...; the bounds on the
+terms and their totals hold with majorants independent of lambda; and every term, as well as the sum, is continuous
+... and holomorphic". Its proof: "the members enter only through their values v_e(lambda). At fixed lambda these are
+bounded functions inserted into an identity, and an identity that holds for arbitrary bounded inserted functions holds
+in particular for these"; the bounds are built from majorants and lambda-free data; regularity by Weierstrass. The
+parameter there includes "the exterior slots of the function c(e) of the stored term" (CA-I L104327-104330).
+This is the shape of (H-par) at (T), with lambda = the island configuration of the re-indexed blind stores. What
+(H-par) adds at (T) is condition (1) for that lambda: the T-site's Gaussian objects, cuts, decoupled cubes and contours
+are those of the plain site at the given configuration, and none of them is built from the island part of a blind
+store's domain once that store is indexed at its active domain. The island configuration still enters the Gaussian
+objects through the background (the full configuration), but that dependence is the plain site's own and is covered by
+its uniformity in the configuration; what must not happen is an integration, decoupling or cut at an island cube,
+which lem-island-geometry (a), (d1) excludes.
+
+**7.2 (U-loc) may fail as stated (ARGUED).** The three-sites proposition reads "the summed-margin bound
+sum_(k') eta_(k')(s) <= 1/4 e(s), eta_(k')(s) the rotation allowance of step k' at s" at law sites s of frames W inside
+the large-field region (CA-II L5340-5345, L5404-5412: a live law site is "of the inner class if s in Z_(k-N_k)"). So
+the machine rotates, by small allowances, at law sites that lie inside old large-field regions, and islands are inside
+such regions (lem-island-geometry (b)). If a law site of a blind store lies in an island, the map u is not the identity
+there, and (U-loc) as written in 5.4 fails.
+Repaired reading (H-par'): keep the island part of a blind store in its read set S_v (where the rotation arguments of
+the orbit datum act, CA-II L5525-5530), and use the active domain A(Y) only as the localisation domain of the cluster
+expansion (the set that enters P, Z_0, the decoupled cubes and the Mayer links). Then the unit is rotated jointly on all
+its slots, as in the plain machine, and 7.1's condition (1) is what remains. (H-par') needs the plain T-site to allow a
+fourth-class unit whose read set is larger than its localisation domain. The account's wording supports this but does
+not state it: fourth-class units are invariant "jointly with [their] live exterior slots ... and not ... as a function
+of [their] own configuration alone" (CA-II L5295-5298), and the response decay eta_p is measured "between square and
+S_v" (CA-II L10625-10627), that is, on the read set, separately from the localisation datum p = (square, Y_0).
+At (T) and (P) the account's convention is read set = domain for the near constituents: "S_v = X is the read set of
+[the first-stage bound] at sites (T) and (P)" (CA-II L7848); at (L) pointed pieces have read sets fixed separately,
+the star of the anchor cell or "the set of cells meeting X_v" (CA-II L7851-7856). So (H-par') extends the (T)
+convention; it is not already in the text. In the first-stage bound the read set enters through the decay factor
+eta_p "between square and S_v"; with S_v = Y and localisation domain A(Y), eta_p is the plain machine's factor for the
+original store, so the bound is the one the plain site would give the store indexed at Y.
+Theorem RL-T holds with (H-par') in place of (H-par) and (U-loc) by the same proof: (T1)-(T6) use the localisation
+domain only.
+
+**7.2a The (P) case of young stores stays OPEN.** The account's (d3) leaves "a stored term younger than the shell at
+which it is evaluated" to "the class assignment of stored terms in the relative expansion at the preparatory
+integrations" (CA-III L15576-15579). A grep for "class assignment" in CA-I to CA-III finds only CA-III L15578 (this
+sentence), L41884 (the class of the classical part of a use in the two-run comparison, a different object) and CA-II
+L36628 (cores at small nu, also different). So the statement (d3) points to is not located by name, and I leave the
+case open.
+
+**7.3 Updated status of the readings.** (H-fmt): ARGUED (Step 4). (H-par'): ARGUED, with the account's own parameter
+lemma 4.24:prf-exterior-independence as the proved model of its first half and the fourth-class read-set convention as
+the open part. (U-loc): not needed under (H-par'); as stated it may be false (7.2).
+
+RESULT: Row 1309 (Claude Opus 5.5 max, Mac mini worker 2, 17:09Z-17:38Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed was not attacked (no route off the record). Worked item: Sussman and Alpoge's OUTSTANDING Proposition 9.1:prop-blind-site-expansions (CA-III L16559, T0 node F56, hypothesis (e) of Theorem 9.1 on the gap carry), whose route in the account reruns Balaban's CMP 116 Section 2 with island-blind lengths. PROVED (unchecked): Lemma A1 (the active domain cl(tau_Y) of an optimal relative tree is a wall-connected domain of plain length at most d°(Y) containing every cube of Y off the islands), Lemma A2 (re-filing gives d°(fil) <= d(X^a)), Lemma A3 (the re-indexed blind family has per-domain constant c_d C_fib N° and anchored constant 3^d C_fib N° <= K°(d) N°), and their relative versions. PROVED GIVEN the readings (H-fmt), (H-par') of the account's transcriptions (the account's own 4.24:prf-exterior-independence proves the parameter principle in its survivors' machine), the threshold (TH) and a floor kappa >= 8(k_d+2): Theorem RL-T, the (T) part (clauses (a), (b) with the site's constants and rates, the activity clause, (c) in its Lambda alternative), by re-indexing each blind store at its active domain and applying the plain site expansion by statement, with no rerun of CMP 116; Theorem RL-L, the (L) part; Theorem RL-P, the (P) part for stores no younger than the shell. OPEN: the reading (H-par') (a fourth-class unit may keep its island slots in its read set while its localisation domain is its active domain; Step 7, which also shows that the stronger reading (U-loc) may fail because the account rotates at law sites inside old large-field regions), the (P) part for stores younger than the shell, clause (c)'s second alternative, a remark that the account's filing may break wall-connectedness, Theorem 9.1's other hypotheses, the infrared seed, the mass gap. Output library/gap-mini-solve-ay-opus.md.

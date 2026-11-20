@@ -59,3 +59,46 @@ FINISH rows name (V9) only in rows 1255 (author), 1263 and 1266 (checks); no que
 **Plan.** Section 2: fetch the account (CA-I, CA-III at 31a47c543775) into a scratch folder and quote the 9.1 comparison,
 the representatives' definition and the free constant. Section 3: the lemma (constant invariance, or the precise failure).
 Section 4: state of the carry after this row and the RESULT line.
+
+## 2. What the account says about the chapter 9 normalisation (READ; written 2026-11-20T13:01Z by date -u)
+
+Source: Sussman and Alpoge's complete account at 31a47c543775 (CA-I, CA-II, CA-III; with Claude and Codex as authors
+of its text; after Balaban), fetched by raw URL into a scratch folder outside the repository. Line numbers below are
+`grep -n` anchors in those files.
+
+**2.1 The bare constant is free in three places, fixed in a fourth.**
+- CA-I 1.1:def-wilson-action (I:447-480): rho_0(U) = exp[-g_0^(-2) A(U)], no constant (I:479).
+- CA-II correlation-theorem setting (II:730-741): rho_0^w = exp[-A(x_0 - w, U) - E], "E a constant, independent of U and
+  of z, entering the exponent of the bare density additively"; clause (iii) (II:2930-2935): int rho_k^w dV_k =
+  int rho_0^w dU at every level.
+- CA-II 8.22 (II:140873-140934): Z~_m(v) = e^(-E_m - Ecal_m(v)) Z_m(v), E_m = sum_(j<K) E^(j)_vac(T_m, T_m) is "Balaban's
+  normalisation constant of the bare density rho_0 = exp[-x_0 A(U) - E_m]", and clause (b) gives
+  e^(-C_low (2L^m)^4) <= Z~_m(0), |Z~_m(v)| <= e^(E_+^# (2L^m)^4).
+- CA-III 9.1 (Notation 9.1:not-centre-normalisation, III:11804-11870; Remark 9.1:rem-centre-normalisation-b,
+  III:18244-18302): Z^c(c^c; v) = e^(Ecal^c(v)) Z~^c(v) with Ecal^c(0) = 0, "each Z~^c is the representation given by the
+  correlation theorem at the run's own real centre", and "The normalisation admits exactly one free positive constant
+  for each run and each centre" (III:18249-18250; again III:18301-18302).
+- CA-III 9.8 Definition 9.8:def-partition-closeness (III:53385-53442): "The normalisation fixed for each run and each
+  centre is the one in which the value of Z~^c at the zero source is Z~^c(0) = 1/B", and h^c := Z~^c / Z~^c(0) = B Z~^c.
+
+**2.2 What the comparison bounds.** Theorem 9.1:thm-last-lattice-comparison (III:17913-17990) bounds, in "the
+normalisation (9.1:eq-centre-normalisation-a)", sum_(h aligned) ||tau_h^B - tau_h^A|| + (unpaired terms) <= eps_n A^#,
+eps_n <= C_TC(g, N_w) e_w, e_w = rho^(n-w) + Pi_n; Corollary 9.1:cor-sourced-integrals (III:18136-18221) sums the terms:
+|Z~^B(W^B(z)) - Z~^A(W^A(z))| <= eps*_n A, "and the same bound holds at the zero residual source".
+
+**2.3 Check 1263's point, re-read.** Under the 9.8 choice Z~^c(0) = 1/B the zero-source comparison is 0 <= eps*_n A,
+true and empty, and Lemma D0 of row 1255 gives E9(d; T) = log Z_T(d) + log B, so Delta E9(d) = Phi(d) + Delta log B:
+(V9) is then the seed itself (`library/gap-opus-batch5-check-astra.md` L107). So the carry has physical content only
+if the 9.1 comparison holds in a normalisation whose constant has a small two-torus defect, for example Balaban's E_m
+(Proposition D2(b) of row 1255, HOLDS in check 1263).
+
+**2.4 Two structural facts of the 9.1 proof (READ).**
+(i) The loads that control the comparison (9.1:eq-centre-normalisation-d, III:12063-12075) are built from the
+seminorms S^+_i[F] = sup_X e^(kappa_F d(X)) sup |F^B - F^A| over localisation domains X of each level (III:12025-12030),
+plus boundary, coupling and shift differences. There is no load term for a run-dependent number that is not a sum of
+domain-local slot values.
+(ii) The stored array x^c, on which one run-independent assembly formula P_h acts (tau_h^c = P_h[x^c], III:11960-11975),
+contains "the pieces that do not depend on z but depend on the run, namely the vacuum constants" (III:11973; also
+III:59802 and III:18295-18296), and these are "counted in the total load" (III:18247-18249).
+
+Next step (Section 3): decide what (i)-(ii) imply for the free constant, as a statement with proof.

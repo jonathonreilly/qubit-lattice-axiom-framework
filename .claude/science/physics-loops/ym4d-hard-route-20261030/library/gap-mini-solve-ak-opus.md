@@ -170,3 +170,82 @@ fluctuation coordinates (EM:544-547, 619-621; RT:708-712). The fibre density doe
 central Haar factors depend on the meshes only). **So the partition matching of row 1260 5.2 (iii) is not needed for the
 unmarked total**; what is left of (FC) is a comparison of two kernels at the same weights and list.
 
+## Step 3. From one-step kernel comparisons to (FC): the chain (written 2026-11-20T12:06Z by date -u)
+
+**3.1 A seminorm on totals.** For a level-j physical total T (a function of the physical datum near the trivial datum
+P_o on each compatible torus and on the companion), put
+    |||T|||_j := inf { ||H||_(j,kappa;a_*) : H a regular pointed family at level j on the absolute core whose total is T + const },
+where "regular" means the companion, covariance and response hypotheses of EM Propositions `em:prop-physical-polarization`
+and `em:prop-companion-coefficient` (inf of the empty set = infinity). Regular families form linear spaces (EM:215-218), so
+|||.|||_j is a seminorm that ignores additive constants. The coefficient depends only on the total (EM:1202-1204) and
+|b_j(H)| <= C a_*^(-2) ||H|| (EM:1201), so
+    |b_j(T)| <= C_x |||T|||_j,   C_x := C a_*^(-2), a fixed constant on the absolute core.                 (3.1)
+
+**3.2 Setting.** Fix n and two frames phi = (phi_0, ..., phi_n), psi = (psi_0, ..., psi_n) above the floor, and one real
+weight prefix x = (x_0, ..., x_n) with |x_j/phi_j - 1| and |x_j/psi_j - 1| below sigma_*/2. For theta in {phi, psi} let
+E^theta_(k+1) := E^(u,theta)_(k+1)[f^theta_k] be the unmarked output of EM Proposition `em:prop-prefix-formation` on the
+frame theta at the weights x, with f^theta_k its unmarked list (the regular outputs of levels 1, ..., k, vacuum
+subtracted, each with its own counterterm; f^theta_0 empty). Write T(.) for the total and Tbar_i(f) for the total of the
+i-th member of a list (vacuum and counterterm subtracted). By EM Theorem `em:thm-coefficient-envelope` the unmarked total
+coefficient of row 1260 is U_(k+1)(theta; x) = b^0_(k+1) + f_(k+1) = b_(k+1)(T(E^theta_(k+1))).
+
+**Hypotheses.**
+- (H1) EM's one-step inputs (EM:611-716) and the conclusions of EM Proposition `em:prop-prefix-formation` hold on both
+  frames at the weights x, on the absolute cores, with the same constants.
+- (H2) Cross-admission: each unmarked list f^psi_k is an admitted list for the step k of the frame phi (cores, companions,
+  covariance balls, norm cap E_0).
+- (H3) The one-step list comparison in total form, on the frame phi: for lists f, f' admitted in its step k,
+      |||T(E^phi_(k+1)[f]) - T(E^phi_(k+1)[f'])|||_(k+1) <= K s_k sum_(i <= k) omega_(k+1-i) |||Tbar_i(f) - Tbar_i(f')|||_i.
+  (ARGUED from EM input (4), EM:707-716. Given localizations h_i of Tbar_i(f) - Tbar_i(f'), the list f'' with members
+  f_i - h_i has the totals of f', hence the same integrand (the step reads a list only through its total on physical
+  data, EM:538-561, continued to the decoupling contours by the identity theorem as in EM:800-808), hence the same total
+  output; input (4) bounds ||F[f] - F[f'']|| by K s_k sum omega ||h_i||; take the infimum over h_i. This needs f'' to be
+  admitted.)
+- (H4) **= (FC-1), the one-step frame comparison**: for each k < n and each list f admitted in both frames' step k,
+      |||T(E^phi_(k+1)[f]) - T(E^psi_(k+1)[f])|||_(k+1) <= nu_k.
+- (H5) K s_* (1 + C_x C_A) Omega <= 1/2, with s_* := sup_k s_k (absolute chain, s_k = delta(phi_k)/a_(*,0), EM:686-688),
+  Omega = sum_n omega_n (EM Lemma `em:lem-age-kernel`), and C_A the pointed norm of the tent Wilson insertion
+  (EM:1302-1311).
+
+**Proposition FC-chain (PROVED, an implication from (H1)-(H5)).** Put u_i := |||T(E^phi_i) - T(E^psi_i)|||_i. Then
+    u_(k+1) <= nu_k + K s_k (1 + C_x C_A) sum_(i=1)^k omega_(k+1-i) u_i   for 0 <= k < n,                (3.2)
+    sum_(i=1)^n u_i <= 2 sum_(k=0)^(n-1) nu_k,                                                             (3.3)
+and the unmarked coefficients of the two frames at the same weights satisfy
+    eta_k := |U_(k+1)(phi; x) - U_(k+1)(psi; x)| <= C_x u_(k+1),   sum_(k<n) eta_k <= 2 C_x sum_(k<n) nu_k.   (3.4)
+*Proof.* Split
+T(E^phi_(k+1)[f^phi_k]) - T(E^psi_(k+1)[f^psi_k]) = [T(E^phi_(k+1)[f^phi_k]) - T(E^phi_(k+1)[f^psi_k])] + [T(E^phi_(k+1)[f^psi_k]) - T(E^psi_(k+1)[f^psi_k])].
+The second bracket is at most nu_k by (H4) at the list f^psi_k, admitted in both frames by (H2). For the first, (H3) on the
+frame phi applies to the lists f^phi_k, f^psi_k. Their i-th members differ in total by
+T(E^phi_i) - T(E^psi_i) - [b_i(E^phi_i) - b_i(E^psi_i)] A_i up to a constant, so by (3.1)
+|||Tbar_i(f^phi) - Tbar_i(f^psi)|||_i <= u_i + C_A C_x u_i. The triangle inequality for |||.||| gives (3.2). For k = 0 both lists
+are empty (EM:536), so u_1 <= nu_0. Sum (3.2) over k = 0, ..., n-1 and exchange the order of summation:
+sum_(k<n) sum_(i<=k) omega_(k+1-i) u_i = sum_(i<n) u_i sum_(k=i)^(n-1) omega_(k+1-i) <= Omega sum_(i<=n) u_i.
+So S := sum_(i<=n) u_i <= sum_k nu_k + (1/2) S by (H5), which is (3.3) since S is finite. Finally
+eta_k = |b_(k+1)(T(E^phi_(k+1)) - T(E^psi_(k+1)))| <= C_x u_(k+1) by linearity and (3.1); sum with (3.3). QED
+
+**Remarks (PROVED from Step 2 and 3.2).**
+- By Lemma A and Lemma Z, u_i = |||T(F^phi_i) - T(F^psi_i)|||_i: the Gaussian families do not enter u_i, and in (H4) the
+  difference of totals at one list is the difference of the two interacting logarithms only. Precisely, by EM:556-570 and
+  Lemma A, for one list f and one weight x_k,
+      T(E^phi_(k+1)[f]) - T(E^psi_(k+1)[f]) = log int K_(k,phi_k)(W, dV) e^(Phi(V)) - log int K_(k,psi_k)(W, dV) e^(Phi(V)) + const,   (3.5)
+  with Phi(V) := -x_k A(U_k(V)) + S_f(U_k(V)) the same in both frames. So (FC-1) is a statement about the two kernels alone.
+- The recurrence (3.2) is causal: u_(k+1) reads nu_k and u_1, ..., u_k only. So in Lemma GR of row 1260, whose induction
+  places the prefix of the own-threshold run in the half tube of the frozen frame before reading (G3) at step k, (3.2)-(3.4)
+  can be invoked at each k with phi = phi^A (the canonical scaffold prefix), psi = (w^B_0, ..., w^B_k) and x = psi.
+
+**Corollary FC (PROVED GIVEN (H1)-(H5) along the pin runs, with sum_k nu_k <= V uniformly in n).** Row 1260's (G3) holds
+with sum_k eta_k <= 2 C_x V. With Lemma GR, Corollary SC-pin holds with varpi_n <= e^Lambda (2 C_x V + 2 sum_k eps'_k),
+bounded uniformly in n, and Lemma OFF' of row 1260 puts the first-passage depth of every pin a_n within a bounded distance
+of n.
+
+**3.3 Size bookkeeping: why soft bounds do not close (FC-1) (PROVED, elementary arithmetic on the account's envelopes).**
+Along a pin run the frozen frame theta_r = X + c_0 r and the run's weights differ by |zeta_(r)|, which the account bounds by
+order theta_r^(1/2) (log theta_r)^(p_0) (row 1260 2.1, III:69015-69017). Suppose (FC-1) were bounded only through the
+account's envelopes: the residual has norm at most C theta_k^(-1/2) (log theta_k)^(p_0) (EM:1365), and a frame change of
+relative size |zeta_k|/theta_k moves it, at best, by that norm times the relative size. Then
+nu_k ~ theta_k^(-1/2) (log theta_k)^(p_0) * theta_k^(-1/2) (log theta_k)^(p_0) = theta_k^(-1) (log theta_k)^(2 p_0), and with
+theta_k about X + c_0 (n - k), sum_(k<n) nu_k grows like (log n)^(1 + 2 p_0): not bounded in n. So (FC-1) needs structure:
+either the frame enters the interacting integral only through events of Gaussian-tail weight, or two-loop-accurate
+envelopes (a residual of size theta^(-1) and a drift of size log theta would give theta^(-2) log theta, summable; GUIDE:
+these are the perturbative sizes, not proved). Step 4 shows the first alternative for the gauge weight, exactly.
+

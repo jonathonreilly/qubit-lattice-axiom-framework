@@ -10,8 +10,9 @@ Labels used: PROVED (a complete written argument, checkable by hand), ARGUED (an
 ## Status log
 
 - 17:30Z: file created (save protocol). Reading FINISH.md, the earlier RESULT lines, `parts/gap.md`, and `library/prior/gap-onebound-read-sol.md`.
+- 18:12Z: done (Steps 0-9); RESULT at the end of the file.
 
-## Step 0. Record read (statements about the record, not evidence; 17:40Z by date -u)
+## Step 0. Record read (statements about the record, not evidence; written 17:30Z-18:10Z)
 
 Read: GOAL.md (all), FINISH.md L1-85 and L299-352 (rules, joining, efficiency), the RESULT lines of rows 1290-1313,
 `parts/gap.md` L1-104 (state of attack) and L223-268 (route registry), `library/prior/gap-onebound-read-sol.md` (all;
@@ -29,7 +30,7 @@ Where the lane stands, as the record says it (not re-proved here):
 - The seed itself is the infrared problem: every route on file stops at an order-one-coupling estimate (row 998 6b;
   rows 1225, 1229, 1291, 1300). Row 998 9.5 lists what not to repeat.
 
-## Step 1. How best to attack it (judgement, ARGUED; 18:05Z by date -u)
+## Step 1. How best to attack it (judgement, ARGUED; written 17:30Z-18:10Z)
 
 **The seed.** The Jaffe-Witten gap needs, beside the account's existence chain, one infrared statement: (N-phys), or
 (A-B*), at one physical size. Along the trajectory this is the lattice gap of Wilson SU(2) on a box a few tens of
@@ -61,7 +62,7 @@ proof incomplete at the step marked (*)"; open registry L38, owner none; chain-c
 - Step 3: prove the marked step from statements the account proves, or isolate the precise missing lemma.
 - Step 4: consumers (9.1 hypothesis (iv)) and labels; RESULT.
 
-## Step 2. Correction to Step 1: the 9.10 statement is not on the gap carry (READ; 18:20Z by date -u)
+## Step 2. Correction to Step 1: the 9.10 statement is not on the gap carry (READ; written 17:30Z-18:10Z)
 
 Source: CA-III = `theorem_0_complete_account_raw_III.tex` of Sussman and Alpoge's complete account at 31a47c543775
 (Claude and Codex as authors of its text; after Balaban), fetched by URL into a scratch folder outside the repository
@@ -84,7 +85,7 @@ So (READ): `9.10:thm-last-lattice-comparison` and its incomplete inputs (`9.10:l
 "hypothesis (iv) ... supplied by 9.10" (its 3b-3c) should be read with this in mind; its 3d already uses 9.1. Step 1's
 item is withdrawn. The carry's only chapter-9 outstanding input stays (e), which row 1309 works on.
 
-## Step 3. New item: premise (P4) and (E0) of row 1299 (plan; 18:30Z by date -u)
+## Step 3. New item: premise (P4) and (E0) of row 1299 (plan; written 17:30Z-18:10Z)
 
 After Step 2 the carry's open inputs are (row 1299 5.1, 4.7-4.8): the blind-site expansion (row 1309, concurrent),
 (V9)/(DET)'s normalisation (row 1296), (M) (a supplier choice, row 1299 5.1), and the premises (P1)-(P5) of row 1299
@@ -99,7 +100,7 @@ conditions that cannot hold together, which would break row 1299's Lemma TL-SA a
 Sources to read: the outline `YM4_sketch_500.tex` at 31a47c543775, L14276-14811 (the regular-gas chapter) and
 L13893-14272 (the Gaussian comparison theorem, FG1-FG12); CA-I L4150-4190 (cut radius and fluctuation domain).
 
-## Step 4. The exponents p_0, p_1, q in the account, against row 1299's (E0) (READ; 18:50Z by date -u)
+## Step 4. The exponents p_0, p_1, q in the account, against row 1299's (E0) (READ; written 17:30Z-18:10Z)
 
 Sources: CA-I (`theorem_0_complete_account_raw_I.tex` at 31a47c543775, 166,711 lines), fetched by URL into a scratch
 folder; Balaban, CMP 119 (1988), the owner's copy (outside git), pp. 268 and 276 read as page images in a scratch
@@ -139,7 +140,7 @@ step's potentials on the whole cut region. Next (Step 5): read how Balaban and t
 C_1 p_1(g_k) <= |A| < delta_k/g_k inside the cut, and what box SA's (UM1) "declared complex fluctuation boxes" are
 in the carry's presentation.
 
-## Step 5. Which box holds the cut: the two p_1's (READ; 19:10Z by date -u)
+## Step 5. Which box holds the cut: the two p_1's (READ; written 17:30Z-18:10Z)
 
 **5.1 READ (Balaban; owner's copies, page images and text extractions in a scratch folder).**
 - CMP 119 p. 250, (1.18): the first cut is chi({sup_b |A(b)| < g_0^(-1) delta_0}) on the scaled fluctuation A
@@ -183,7 +184,7 @@ Either way row 1299 4.7's sentence "provided q > p_0 (equivalently p_1 > p_0)" i
 account q > p_0 holds and p_1 > p_0 fails. Which reading is right needs CMP 116 (paper II, where Balaban's p_1(.) for
 the fluctuation box is presumably introduced), which is not on this machine (row 1264: Project Euclid bot check).
 
-## Step 6. What the two p_1's do to the carry's cut half (19:35Z by date -u)
+## Step 6. What the two p_1's do to the carry's cut half (written 17:30Z-18:10Z)
 
 Context (READ, row 1299 4.4): Lemma A and Lemma TL-SA apply to "admissible cuts", whose clause (C2) asks that every
 potential of the step that reads a bond b obey (UM1) and be holomorphic on a declared complex box containing the real
@@ -261,7 +262,7 @@ summability of the cut half survives the repair.
 | Repair at the p_1 scale (internal cut plus extra indicators) | ARGUED; its summability part, Lemma S1, PROVED |
 | The account's own 4.3 second part takes the (3.43) box with the p_0-scale cutoff radius together (CA-I L4176-4178) | READ; whether this is consistent is the same OPEN question (a statement about their text, not a claimed error) |
 
-## Step 7. Resolution: the carry's box is CMP 116 (1.34), so (E0) holds; the p_1 box is for straddling domains (20:00Z by date -u)
+## Step 7. Resolution: the carry's box is CMP 116 (1.34), so (E0) holds; the p_1 box is for straddling domains (written 17:30Z-18:10Z)
 
 **7.1 READ (CA-I, 4.4, the remark after the post-step space).**
 - Item (b), "Interior domains Y in Lambda_(k+1)" (L10031-10038): "Here the space of [B-CMP116 (1.34)] is
@@ -313,3 +314,104 @@ vertex is holomorphic on the (1.34) box (ARGUED: it is a polynomial vertex in th
   (UM23), (UM26') in one order) are SA's constant conditions; (UM23) at b_lo holds above a floor because b_lo grows
   like (log theta)^(p_0) while n_b, Theta and SA's Gaussian rate are fixed first. Not checked here: (UM14), (UM19),
   (UM26') themselves.
+
+## Step 8. (P4): one order of choice for SA's constant conditions (ARGUED, with READ inputs; written by 18:10Z)
+
+Sources: SA = `YM4_sketch_500.tex` at 31a47c543775 (Sussman and Alpoge, Claude and Codex as authors of their text,
+after Balaban), L14404-14720; CA-I Stages 3-6 (L1468-1550, L2070-2085).
+
+**8.1 The conditions (READ).** Geometric constants fixed independently of L: C_h (UM7)-(UM8), kappa_f and S_xi (UM9),
+c_f (UM10), c_b in n_b <= c_b (LM)^4 (UM11), c_l (UM17), C_v, C_D, kappa_D, c_adj (UM25)-(UM26); C_p "includes the
+finite tags and their rooted sums, but no number of selected domains or global volume" (L14512-14514). Gaussian
+package: K, rho_0(K), A_K, c_m, the matrix closeness eps (FG1), the coarse disc radius R_s (UM4)-(UM6). Choices:
+- W_0 small, lambda_0 > kappa_f (L14482-14486); (UM14) C_p W_0 M^(-4) + gamma/2 <= rho_0(K);
+- (UM15) C_0 = C_p W_0 L^4 + A_K c_m (LM)^4 (eps + C_p W_0 M^(-4) + gamma/2);
+- (UM18) K_* = 2 + c_l Lambda, Theta = C_h (C_0 + K_*);
+- (UM19) sigma_0 > kappa_f, lambda_V - lambda_0 >= Theta/L + sigma_0, log(R_s - 1) >= Theta;
+- (UM23) a <= W_0/2, tau = e^Theta [2 c_f L^4 S_(sigma_0) a / W_0 + n_b e^(-gamma b^2/2)] <= 1;
+- (UM26') g_* = Lambda - mu > kappa_D + C_v, e c_adj B_* <= 1, B_* = C_D e^(2 C_v) e^(-5 g_*) sum_m
+  e^(-(g_* - kappa_D - C_v) m).
+Here lambda_V is the decay rate of the actual potentials in fine-cube units (UM1), mu the output rate the consumer
+reads, a the potentials' total norm, b the cut threshold (here b_lo of the frame cuts).
+
+**8.2 An order (ARGUED; each step is an elementary inequality once the three readings (Q1)-(Q3) below hold).**
+1. Geometric constants; then L >= max(L_0, 2 C_h c_l).
+2. g_* := kappa_D + C_v + 1 + (1/5) log(e c_adj C_D e^(2 C_v) / (1 - e^(-1))). Then B_* <= C_D e^(2C_v) e^(-5 g_*)
+   / (1 - e^(-1)) and e c_adj B_* <= 1: (UM26') holds, with geometric constants only.
+3. lambda_0 := sigma_0 := kappa_f + 1.
+4. Balaban's kappa (account Stage 3), with the extra floor kappa >= 2(lambda_0 + sigma_0) + 2 C_h (3 + c_l g_*)/L.
+   With mu := kappa and Lambda := mu + g_*, and C_0 <= 1 (step 6), (UM19)(i) reads kappa >= lambda_0 + sigma_0 +
+   C_h (3 + c_l (kappa + g_*))/L, which holds because C_h c_l / L <= 1/2. This uses (Q1): lambda_V >= kappa.
+5. M (account Stage 6, free upward), with the extra floor log(R_s(M) - 1) >= C_h (3 + c_l (kappa + g_*)). This is a
+   floor on M if (Q2): R_s(M) -> infinity as M -> infinity with the other letters fixed; it is of the same form as the
+   account's own Stage-6 floors delta_0 M >= kappa, M >= M(kappa) (L2075-2084).
+6. W_0 := min{1/(3 C_p L^4), rho_0(K) M^4/(2 C_p)}, SA's gamma := min{rho_0(K), 2/(3 A_K c_m (LM)^4)}. Then (UM14)
+   holds, and C_0 <= 1/3 + 1/3 + A_K c_m (LM)^4 eps <= 1 once eps <= 1/(3 A_K c_m (LM)^4). Theta <= C_h (3 + c_l
+   (kappa + g_*)) is now fixed.
+7. Coupling floor (gamma of the account, equivalently X of the pin runs), using (Q3): eps -> 0 and a -> 0 as theta ->
+   infinity, uniformly in the step: eps <= 1/(3 A_K c_m (LM)^4); a <= W_0 e^(-Theta) / (4 c_f L^4 S_(sigma_0)); and
+   b_lo^2 >= (2/gamma)(Theta + log(4 n_b)), which holds above a floor since b_lo = A_1 (log theta)^(p_0)(1 - o(1));
+   then tau <= 1/4 + 1/4 <= 1 and a <= W_0/2: (UM23) holds. Add Lemma C1's floor (7.1) for (E0).
+No condition in 1-7 bounds a letter from above except the ceilings on W_0 and SA's gamma, which are SA's own free
+choices made after L, M, kappa, and the coupling ceiling, which (H3) allows.
+
+**8.3 The readings this rests on (OPEN; not checked here).**
+- (Q1) In the carry's presentation the step's potentials decay at least like e^(-kappa d_f(Y)) with d_f in fine-cube
+  units (Balaban's decay rate kappa per M-cube), so lambda_V >= kappa.
+- (Q2) SA's matrix package (UM4)-(UM6) holds on coarse discs of a radius R_s that can be made as large as needed by
+  raising M (for Balaban's decoupled covariances one expects log R_s of order (decay rate) x M; not read).
+- (Q3) The step's matrix closeness eps (FG1) and the potentials' total norm a tend to 0 as the coupling does, at a
+  rate uniform in the step (part of premises (P1)-(P2) of row 1299 4.8).
+If (Q2) failed, so that R_s were bounded independently of M, then (UM19)(ii) would bound kappa from above, against the
+account's statement (H3) that no condition bounds kappa from above (CA-I L1159-1161); that is the one place where SA's
+chapter could conflict with the account's order of choice.
+
+**Time note (18:12Z by date -u).** The per-step clock times first written in Steps 0-8 were estimates and were wrong
+(they ran ahead of the clock). They are replaced above by the true window: Steps 0-8 were written between 17:30Z and
+18:10Z by date -u.
+
+## Step 9. Labels, what a checker should redo, credits, note for the lead (written 18:12Z by date -u)
+
+**9.1 Mass gap.** NOT proved; nothing disproved. The infrared seed ((N-phys), equivalently a uniform cube gap with
+the count at one coupling in the band, or the One-Bound paper's (B*)) was not attacked (Step 1: every angle I could
+name is on file at its failing step; row 998 9.5).
+
+**9.2 Labels.**
+| Statement | Label | Where |
+|---|---|---|
+| `9.10:thm-last-lattice-comparison` and its incomplete inputs serve only `9.10:thm-exponential-rate`; the gap carry reads `9.1:cor-sourced-integrals`, whose floor Pi_n it already sums; Step 1's item withdrawn | READ (CA-III grep; agrees with `library/chain-ca.md` D10; CA-II not fetched, CA-I and the outline do not cite it) | Step 2 |
+| The account takes p_1 = p_0-4r-1 < p_0 < q, q >= 3p_0+3r+1 | READ | Step 4 |
+| Row 1299 4.7's "q > p_0 (equivalently p_1 > p_0)" is false as an equivalence | PROVED | Step 4 |
+| CMP 119's fluctuation cuts (3.3), (3.16) are at the p_0 scale; its (3.43) box (p_1 scale) is for "remaining" (straddling) terms only | READ (page images pp. 250, 259, 265, 268, 276) | Steps 5, 7 |
+| CMP 116 (1.34) for interior domains has the box {|B| < eps_1 g_k^(-1)} (the account's transcription) | READ (CA-I L10031-10038; CMP 116 itself not on this machine) | Step 7 |
+| Lemma NC1 (the delta-scale cut box is not inside the p_1 box above the floor (6.1)) | PROVED | Step 6 |
+| Lemma S1 (summability at the p_1 scale along pin runs) | PROVED | Step 6 |
+| Lemma C1 (the delta-scale cut box lies inside {|B| < eps_1 g^(-1)} above the floor (7.1)) | PROVED | Step 7 |
+| Corollary E0: (E0) and (C2) hold for row 1268's frame cuts on the pin route (all-small-field step, interior domains only) | PROVED GIVEN the READ items of 7.1 and the ARGUED identification of SA's potential types with the older terms, the (1.41) terms and the inserted vertex | Step 7 |
+| Row 1268's wording of (E0) ("inside [B-CMP119 (3.43)]") must read "inside [B-CMP116 (1.34)]"; read literally with the account's p_1 it fails | PROVED (from NC1 and READ) | Step 7.4 |
+| Repair at the p_1 scale if a p_1 box ever binds | ARGUED | Step 6.3 |
+| (P4): one order of choice for (UM14), (UM19), (UM23), (UM26') | ARGUED, given readings (Q1)-(Q3) | Step 8 |
+| (Q1) lambda_V >= kappa; (Q2) R_s can be raised with M; (Q3) eps, a -> 0 with the coupling | OPEN (readings) | Step 8.3 |
+
+Every PROVED item is by Claude Opus 5.5 (this row) and is not checked by another model. The lemmas are elementary;
+the weight sits on the READ items.
+
+**9.3 What a checker should redo.** (1) Read CMP 119 pp. 250, 265, 268, 276 and confirm the scales of (1.18), (3.3),
+(3.16), (3.43). (2) Read CA-I L10031-10050 and confirm that the carry's all-small-field step has interior domains only.
+(3) If CMP 116 can be read, confirm (1.34) and the meaning of B and eps_1 there (chart units), which decides Corollary
+E0 directly. (4) Redo Lemmas NC1, S1, C1. (5) Check the order of 8.2 against SA L14404-14720 and decide (Q1)-(Q3).
+
+**9.4 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the complete account
+CA-I, CA-III at 31a47c543775 (Stage 0-6, 4.3, 4.4, 4.17, 4.23, 4.29, chapter 9) and the outline `YM4_sketch_500.tex`
+(the regular-gas chapter, (UM1)-(UM27)). Tadeusz Balaban: CMP 109, CMP 116 (through the account's transcription),
+CMP 119, CMP 122a/b. Rows 1233, 1268, 1293, 1294, 1299 (Claude Opus 5.5) for the carry this note corrects and feeds;
+`library/chain-ca.md` (Codex) for D10.
+
+**9.5 Note for the lead (evidence only, no edit made).** (1) Row 1268's (E0) and row 1299's 4.7 should be re-read with
+Step 7: the conclusion stands, the stated reason does not. (2) The open registry lists the 9.10/9.11 statements with
+owner none; by Step 2 they are off the gap carry (they serve the account's geometric rate). (3) If a future carry row
+uses the account's fluctuation polydisc D of 4.4 (radius C_1^fl p_1(g_k)) as the box of a cut comparison, Lemma NC1
+says it fails above a floor; use CMP 116 (1.34)'s box for interior domains. (4) Concurrent row 1309 works on the
+carry's other chapter-9 input, `9.1:prop-blind-site-expansions`; nothing here overlaps it.
+
+RESULT: Row 1314 (Claude Opus 5.5 max, Mac mini worker 3, 17:30Z-18:12Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed was not attacked (no route off the record). Worked items, on the one-cutoff carry: READ in Sussman and Alpoge's complete account (CA-I, CA-III at 31a47c543775) and Balaban's CMP 119 (page images) that `9.10:thm-last-lattice-comparison` is off the gap carry (it serves only the geometric rate), and that the account takes p_1 = p_0-4r-1 < p_0 < q, so row 1299 4.7's "q > p_0 (equivalently p_1 > p_0)" is false as an equivalence; PROVED Lemma NC1 (under the account's p_1 the delta-scale cut is not inside CMP 119's p_1-scale box (3.43)), Lemma C1 and, given the account's transcription of CMP 116 (1.34) for interior domains (box |B| < eps_1/g_k), Corollary E0: (E0) of row 1268 holds on the pin route with the box of CMP 116 (1.34), the (3.43) box belonging to straddling domains only, so row 1268's wording of (E0) is corrected; Lemma S1 (summability if a p_1-scale cut is ever needed); ARGUED: one order of choice for the outline's constant conditions (UM14), (UM19), (UM23), (UM26') (premise (P4) of row 1299), given readings (Q1)-(Q3). OPEN: (Q1)-(Q3), CMP 116 (1.34) itself, premises (P1)-(P3), (P5), the blind-site expansion (row 1309), the account's premises, the infrared seed. Output library/gap-mini-solve-bb-opus.md.

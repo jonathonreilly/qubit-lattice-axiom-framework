@@ -239,3 +239,157 @@ deterministic sweep with a global contraction q, not a spectral band. So
 (32)-(33) are not a restatement of either row. Chebyshev filtering of an
 operator with finite propagation is a classical device. The checked file
 does not claim it as new, and this check does not either.
+
+### Step 4. The remaining PROVED statements, in file order (done 2026-11-20T13:05Z)
+
+Cited inputs read for this step: row 1145 (`gap-solve2-astra62.md` L18-L36,
+(1)-(3)); row 1231 (`gap-solve26-astra62.md` L355-L387, (35)-(36) and the
+torus correlation) with its check, row 1235 (`gap-solve26-check-opus.md`
+L248-L275, L355-L432); row 1224 (`gap-mini-solve-q-fable.md` L190-L210, the
+check of A's Lemma 6.2, Theorem 6.3, Corollary 6.4, Theorem B); row 1218
+(`prior/gap-onebound-read-sol.md` L127-L195).
+
+- **(1)-(3), L21-L33, with L35-L50: HOLDS given the cited covariance
+  theorem.** (4): the Hankel kernel C_j(r+t) is positive semidefinite on the
+  stated range, so c_r = C_j(2r) >= 0 and c_r^2 <= c_{r-1}c_{r+1}. That is
+  log-convexity, and (4) follows. The zero case is also right as written:
+  adding eps to every entry adds eps times the all-ones matrix, which keeps
+  the kernel positive and Hankel. L42-L48: the argument uses only that the
+  bound has the form (prefactor polynomial in k, |S_j|, ||F_j||_inf) times
+  exp(-v k/(e^2 q_n)), with k >= T_j/n_j - O(1). B's exact prefactor (TeX
+  L5850-L6077) was not re-read here; B is not in the papers folder. A's
+  Theorem 6.3 has the same structure and the same constant
+  16v/(625e^2 l) (Corollary 6.4); it was checked line by line, HOLDS, in
+  row 1224; row 1218 L145-L148 records the same constant for B's Theorem 66.
+  The arithmetic at L48 and the limit at L50 are right: alpha_j -> 0,
+  alpha_j a_j T_j -> t - eps, and the spectral step is the closed range of
+  1_{[m_0,infinity)}(H). The qualitative implication does not need B. L416-L422
+  re-derive it from (32) with a smaller constant (see below). (3) is a
+  joint-diagonal form of B's Theorem 66 and of A's Theorem B (torus limit
+  first there). The file says so at L19.
+- **L52 (example): HOLDS** (a_j n_j = a_0 n_0; N_j/n_j = L_j/n_0 ~ j^2/n_0;
+  the logarithmic prices are O(j)). The claim that these tori lie in B's
+  Corollary 166 range is B's statement, as quoted in row 1218 L182-L187.
+- **(5)-(6), L58-L72: HOLDS; (5) re-derived independently on the range the
+  file uses.** Given W, the interior links share no plaquette with each other
+  or with other paths (b >= 4). So they are independent, with densities that
+  are translates of p_s, 0 <= s <= 6 beta. Row 1145 (1) proves
+  R_k = I_{k+1}/I_k <= u_k = sqrt(x^2+1) - x, x = (k+1/2)/s. Here
+  u_1 = s/(sqrt(s^2+9/4)+3/2) <= s/(s+3/2), and for s <= 6 beta this is
+  <= 4beta/(1+4beta) =: q. Also u_k <= u_1, so each link multiplies the
+  dimension-d coefficient by at most q^{d-1}. Row 1145 (2) then gives
+  ||p_e - 1||_inf <= sum_{d>=2} d^2 q^{(d-1)(b-2)} <= 6 q^{b-2} when
+  q^{b-2} <= 1/8. On the used range eta < 1 one has q^{b-4} < 1/48, so the
+  condition holds and 6q^{b-2} <= eta. This proves (5) without B. The rate q
+  matters: row 1145's cruder per-link rate e^{-1/(1+6beta)} would not give
+  M eta -> 0 on the window of L113, since 1/(6j+13) < 4/(17j). (6) is Bayes'
+  formula for the law of W given C = c.
+- **(7), L74-L89: HOLDS.** D contains the fine exterior. f - E[f|D] and h are
+  orthogonal, both lie in the kernel of E[.|X], and <f,v> = ||v||^2 for both.
+  Hence ||f-E[f|X]||^2 >= ||f-E[f|D]||^2 + ||h||^2. The group counts are
+  m^4 (link) and m^3(m-b+3) >= m^3(m-b) (path). The conditional independence
+  of W inside B and the outside groups given W outside B follows because
+  every needed staple or endpoint link lies within base-point distance r of a
+  private link outside V_m(z).
+- **(8), L91-L95: HOLDS.** Ran P_x is contained in Ran prod_{interior y} G_y,
+  and each nonempty vertex set meets the interior of (s-1)^4 cubes.
+- **(9)-(10), L97-L111: HOLD.** Marginal passage (W-exterior inside fine
+  exterior); two-sided density transfer with loss l/u >= theta (both forms
+  are infima of mean square errors over the same classes); E[.|W] commutes
+  with gauge transformations, so g is invariant in (9); (8) then (7) at
+  r = b+2 in (10). Constants as displayed.
+- **L113-L118 (window): HOLDS.** log(4beta/(1+4beta)) <= -1/(4j+9);
+  1/(4j+9) - 4/(17j) = (j-36)/(17j(4j+9)) >= 1/(170j) for j >= 62. So
+  log(M eta) <= -2^j/(170j) + O(log j) and |log theta| <= 4M eta eventually.
+- **(11)-(13), L122-L149: HOLD given row 1145 (1)-(2).** (12) is row 1145 (2)
+  with h = d-1; (h+1)^2 <= 4^h. The coupling: the r-step density and the
+  d'-step density lie in [1-delta,1+delta], so the two tail laws overlap in
+  mass >= (1-delta)/(1+delta) >= 1 - 4delta/(1-delta). Expected new
+  differences <= (r-1) + (4delta/(1-delta))(d'-r). Count of starts: m-1
+  erase, 2 endpoint starts, the rest keep distance 1, which gives (13). Then
+  2r <= m/4-2 and 8delta/(1-delta) < 8/127 < 1/8. Path coupling, the
+  oscillation bound and t-th roots give the one-path gap 1/2. The tensor step
+  uses prod_i P_{i,z} <= P_{e,z} (x) 1 and the m^3 transverse starts per line.
+- **(14)-(15), L153-L181: HOLD.** The density of the required product given
+  the visible increments, and its unconditional density, both read at least
+  h-3 invisible increments. Conjugation invariance moves the fixed
+  translations out, so both lie in [1-d_h, 1+d_h]. Bayes and Cauchy-Schwarz
+  give |E[u|Y,V]| <= e_h (E[|u|^2|Y])^{1/2}; X lies in sigma(Y,V). In (14):
+  ||u_z|| <= ||k_z|| + e_h||f||, the sum over z of ||u_z||^2 is
+  s^4 E_s(g), Minkowski, then the Euclidean triangle inequality in R^2.
+- **L183 (example): HOLDS** (d_{h_j} <= C e^{-cj^2}, 8M d_h N^2 -> 0).
+- **L185-L196 (width of order beta is necessary): HOLDS.** I_2/I_1 is the
+  fundamental multiplier; normalizer >= cB^{-3/2}, numerator <= C'B^{-5/2};
+  the bridge-to-stationary density in [1/2,2]; Var >= cJ beta from
+  covariances lambda^k/4 >= 1/8 for k <= c'beta; prediction error
+  m sum_{k<m}(1-lambda^k) <= Cm^3/beta; O(J) starts; ratio C(m/beta)^2.
+- **(16), L202-L216, and L218: HOLD.** iji^{-1} = -j and iki^{-1} = -k, so the
+  coarse 12 and 13 holonomies are -j and -k; their adjoints are half-turns.
+  |v-R_j v|^2 + |v-R_k v|^2 = 4(2|v|^2 - v_j^2 - v_k^2) >= 4|v|^2. Each fine
+  edge lies in at most four loops. Each cube edge serves at most b^4 targets
+  x on coordinate-ordered paths, so the total is 2b^4(4bE) + 8b^5 E =
+  16 b^5 E. The optimality example has quotient <= 4bL^4(pi/b)^2/(bL)^4.
+- **L220: HOLDS.** At a link at distance >= 3 from the paths, the marginal
+  density reads only its six plaquettes; second derivative -6 beta.
+- **(22)-(24), L272-L299: HOLD.** (D_e^a)^* = -D_e^a + (D_e^a V); the
+  commutator computation gives (24) exactly. J_ef <= beta (two links share at
+  most one plaquette; a unit quaternion has |Re| <= 1), and
+  sum_{f != e} J_ef <= 18 beta. Near pairs have l1 displacement <= 4, so
+  eps = 32/(tw) is a safe upper bound. <g,Lg> <= ||Lg||^2/rho. Density of
+  the range: ground-state transform, Peter-Weyl core, bounded potential,
+  gauge averaging. The constants at L276 check
+  ((1-1/1024)^4/(1+576/2048) > 0.77).
+- **(25), L303-L308: HOLDS given row 1231 (35)** (checked HOLDS as claim D in
+  row 1235). If v_s(R/s)^2 >= alpha then u = O(R), t = 4096u = O(R) and
+  v_t >= 1/2, contrary to v_t R/t -> 0. The second part uses (22) the same
+  way.
+- **(26), L310-L315: HOLDS** given (3)'s hypotheses. t_j/u -> infinity in
+  both cases of the minimum.
+- **L317: HOLDS.** The checkerboard plaquette is
+  U_{x,mu}(-U_{x,nu})U_{x,mu}^{-1}U_{x,nu}^{-1} = -1.
+- **(27), L319-L330: HOLDS.** The gradient lies only on the four edges of p
+  (Im U_p = 0 at the field); every affected face is -1 with one common axis;
+  sum dX(p')^2 = 16 + 4*5 = 36, so the Hessian is -36 beta <= -16 beta;
+  Ric = 2g on the unit sphere S^3. The private-link densities do not read
+  these links.
+- **(30) example L368, (31) L371-L375, L377: HOLD.** (31) uses row 1231's
+  packet (bounded, centered, one time slice) and its torus correlation
+  K_mag(u) ~ u^{-8}, checked HOLDS in row 1235. Then
+  2h sqrt(sigma) >= 2u sqrt(lambda) - 6. L377: <F,(I-K)g> = 0 exactly, by
+  the moment identity at r = 1.
+- **(34), L406-L414: HOLDS given row 1231.** M_s <= C(1+b')^3; the bound
+  sqrt(1-e^{-lambda}) >= sqrt(lambda/2) holds on lambda <= log 2. With
+  u = A eta^{-1/2}(1+log(1/eta)) and c_1 A > 6, both errors are o(eta^4/log^8).
+- **L416-L422 (second proof of the (20) implication): HOLDS.** We have
+  lambda_j <= (4c/9) a_j^2 (3s_j/2)^2 = c(a_j s_j)^2 <= v_{s_j}, so J kills
+  invariant centered sources. Also lambda_j <= (9/16) log 2, and
+  M_s(S) <= |S|. Both liminf bounds at L420 check.
+- **(35), L425-L435: HOLDS.** Z_j U_j = Z_j; (I-U^m)Z = 0; the closure of the
+  range of I - e^{-tau H} is (ker H)^perp. The file states correctly that
+  without vacuum uniqueness only the bound above the zero eigenspace follows.
+- **L440-L447: HOLDS given row 1231.** 2K(u) - K(eps u) - K((2-eps)u)
+  <= 2Cu^{-8} - c eps^{-8} u^{-8} < -2Cu^{-8}; the separation is
+  n - m >= eps uR - 1. The phase split with q = sqrt(c') u^{-5}/4 leaves
+  mass >= (15/64) c' u^{-8}.
+- **(36), L452-L459: HOLDS.** |psi - 1| <= theta^{-1} - 1 for the density
+  ratio of C given W; H_s >= I - P_W from the private-link expansion (each
+  private link lies in s^4 cubes); split at P_W.
+- **L461: HOLDS AFTER CORRECTION (wording).** The example needs the window
+  coupling beta_{W,j} <= j+2 of L113 for theta^{-1} - 1 = o(2^{-j}). The
+  example does not restate it. With it, (33) applies for every c, so the
+  vector is zero.
+- **L463: HOLDS.** F is W-measurable, so <F,A> = <F,P_W A>.
+- **(38), L476-L492: HOLDS.** The 12 trace is 1-2sin^4 r. The deficit
+  2(sin^2 r - sin^2 t phi)^2 has second derivative -8 phi^2 sin^2 r at 0.
+  The side faces give 4(1-cos(pi/(R+1))) after division by 2N^2 sum phi^2.
+  Lines through D carry no path link. The gradient of cos(2N r + 2t) is
+  -2 sin(2Nr) along the line's axis only.
+- **(39), L495-L500: HOLDS.** 1_{[0,lambda)}(x) <= e^{t lambda} e^{-tx}
+  with t lambda = B_j; e^{-tH} = (e^{-tH/2})^2 gives the two-history formula.
+
+No PROVED statement fails. One wording correction (L461). One credit note:
+the chain count in (32) is, through row 1231 (36), the finite-speed Lemma
+6.2 of A (Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford and
+Singha Roy, "One Bound at One Scale"). Row 1235 asked for this credit at
+row 1231 (36). The checked file credits the companion paper's finite-speed
+argument at L19 and L224, but not at L393.

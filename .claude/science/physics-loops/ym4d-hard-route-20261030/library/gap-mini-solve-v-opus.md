@@ -50,3 +50,44 @@ Frohlich-Spencer 24, Edwards-Sokal 4, vortex free energy 40, Ginibre 78, Griffit
 analyticity 25, Dobrushin-Shlosman 43; only "randomized algorithm" had 0 hits (the same tool is on file as OSSS).
 Every band-crossing tool I could name is on file with a named failing step.
 
+- 2026-11-20T08:50Z (date -u) Section 2 (judgement and choice of work) written.
+
+## 2. How best to attack it (judgement, ARGUED; written 2026-11-20T08:50Z by date -u)
+
+**2.1 What a proof must contain (cited).** Modulo the account's premises and the ultraviolet carry, a proof needs
+ONE infrared estimate for Wilson SU(2) at one coupling in the account's window: the one-cube neutral seed, i.e. a
+uniform lattice gap on periodic cubes plus a thermal count (rows 1180 Step 2.1, 1225 Section 4, 1233 Section 4).
+That is the classical open problem of exponential clustering of 4D lattice SU(2) at weak coupling, with explicit
+finite-volume control. The published proofs of a 4D SU(2) gap stop at strong coupling (row 1218: A's Theorem 9.5,
+beta_W <= 9/25; B's Corollary 74, beta_W < 2/9). No computed certificate may be used (GOAL.md).
+
+**2.2 Engines.** I listed every band-crossing technique I know (Section 1 grep, plus semiclassical tunnelling as in
+Zeng's TUN, anomaly constraints, sharpness by decision trees, loop soups and random surfaces, automorphic
+equivalence of gapped phases). Each is on file with a failing step, or (anomalies, tunnelling) cannot produce a gap
+by its nature: an anomaly forbids a trivially gapped phase but never forces one, and Zeng's two-well picture has no
+two isolated non-degenerate minima for the Wilson action (its minima are the flat connections, a continuum of
+torons). I found no engine of a new kind, which matches rows 1225, 1229, 1237 and 1238.
+
+**2.3 What the sibling rows now cover (read at the branch tip 86fcc62, not at my pin).** Row 1238 (x) works on
+(MAPCONV-F) of (UNIV-K) in YM4_1400 and records that the gap chain reads YM4_1400 while row 1233 read the complete
+account's chapter 9; row 1233's remaining inputs are (EDGE), (DET)'s (ID-a), (ID-b), (I-loc) and the account's
+OUTSTANDING `9.1:prop-blind-site-expansions`. I read that proposition's statement and route (CA-III 16560-16680,
+fetched into a scratch folder at commit 31a47c543775): it is a repeat of Balaban's CMP 116 Section 2 expansion with
+island-blind inputs at three sites, a multi-row project, not a session item. (EDGE) depends on which text defines the
+first-passage data, which row 1238 has raised for the lead; I do not take it.
+
+**2.4 Decision.** No session-scale attack on the seed exists on file or in my list. So this row works on the one
+part of the infrared input that the newest rows state loosely and that no row has separated: the COUNT. Rows 1225
+and 1233 write "the seed at one coupling, equivalently the lattice gap of Wilson SU(2) there". Row 720 (L309) and row
+700 ((NS-gap)) leave open whether a uniform gap forces a seed; row 1135 (iv) shows that a uniform physical gap does
+not bound the torus excess ALONG the cutoff. The work items:
+
+1. Decide what the line-spin model of row 1135 does at ONE fixed coupling, and what it says about the two routes
+   (one-cutoff seed plus carry, against the all-cutoff (N-phys)).
+2. State exactly what the count adds to the gap at one coupling, with the strongest bound I can prove from the gap
+   and reflection positivity alone, and name the residual statement.
+
+Moves: the wording of the crux in rows 1225, 1233 and 1238 (ARGUED "equivalently the lattice gap"), and the lead's
+choice between the one-cutoff route (row 1233) and the all-cutoff (N-phys). Success: a proved separation or a proved
+implication. Failure: the exact residual statement. This does not supply the seed, and the RESULT will say so.
+

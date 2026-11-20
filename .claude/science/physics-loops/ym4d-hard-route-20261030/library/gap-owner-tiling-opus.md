@@ -5,7 +5,8 @@ lease_until: 2026-11-21T02:14Z
 
 Row: 1285 of FINISH.md, branch claude/ym4d-hard-route pinned at ff38f286f. Worker: Claude Opus 5.5 (max), Mac mini
 Claude worker 1. Labels: PROVED, ARGUED, GUIDE, OPEN as the row asks. Sibling row 1286 (gpt-6.2-astra, same question)
-is `library/gap-owner-tiling-astra62.md`; it is read only after my own Section 3 is written, and cited where used.
+is `library/gap-owner-tiling-astra62.md`; only its outline and RESULT line were read (before Section 2, see Section 1),
+its proofs were neither read nor checked, and it is cited where used.
 
 ## Status log
 
@@ -15,6 +16,8 @@ is `library/gap-owner-tiling-astra62.md`; it is read only after my own Section 3
 - 2026-11-20T14:41Z (date -u): Section 3 written (axis versus angle; Proposition AX in the Gaussian model).
 - 2026-11-20T14:44Z (date -u): numeric lock acquired 14:43:59Z (holder gap-owner-tiling-opus, memory 51 percent free); Section 4 criteria written before the Wilson runs.
 - 2026-11-20T14:48Z (date -u): Section 5 written (attacks 2 and 3); Part 3 waiting for memory (41 percent free at 14:47Z).
+- 2026-11-20T14:52Z (date -u): Section 6 (verdict) written; Part 3 still waiting for memory.
+- 2026-11-20T14:53Z (date -u): Part 3 recorded (model G confirmed at beta = 128); lock released 14:52:28Z; RESULT line written.
 
 ## 1. Inputs, repo search, plan
 
@@ -117,6 +120,16 @@ theorem on file reads no such statistic. So the part of the tiling question that
 **is "neighbouring blocks turn about different axes" a selective property at all, and at which couplings does it
 hold?** Section 3 answers this in the weak-coupling (Gaussian) model by an exact computation.
 
+**2.6 A tiling that does carry a gap, in the published outline (read at L766-779 of `YM4_sketch_500.tex` at
+31a47c543775, fetched by its raw URL into a scratch folder).** Ethan Sussman and Levent Alpoge (with Claude and
+Codex as authors of their text) prove that the block-constrained operator A = L_eta + Q^*Q (fine Laplacian plus
+the block-average constraint) satisfies <f, A f> >= norm(f)^2, so the norm of A^(-1) is at most 1 "independently of the mesh and
+number of blocks. This proves a scalar block-constrained gap. It supplies neither a vector-field coercivity theorem
+nor a mass gap for a physical Hamiltonian; those are different assertions." This is exactly the kind of gap a
+tiling carries uniformly in the number of blocks: a gap of the fluctuation field once the block data are fixed
+(the ultraviolet half of a renormalization step). The physical neutral gap is a statement about the block data
+themselves. Credit: the distinction was also cited by the sibling row 1286 (its repo-search line, outline 772-779).
+
 ## 3. Axis versus angle: "neighbouring blocks turn about different axes" already holds in the free limit
 
 Written 2026-11-20T14:41Z (date -u). Hand computation; no numeric run in this section.
@@ -159,9 +172,9 @@ rho = c_BC / (s_B s_C)^(1/2). Colour components are independent: Cov(Phi_B^c, Ph
 
     E |Phi_B x Phi_C|^2 = 6 s_B s_C (1 - rho^2).
 
-(c) If the two axes were independent uniform directions, independent of the angles (same marginal laws of
-Phi_B, Phi_C), E |Phi_B x Phi_C|^2 would be (2/3)(3 s_B)(3 s_C) = 6 s_B s_C. So in model G the axis alignment of B
-and C is exactly rho^2: E|Phi_B x Phi_C|^2 = (1 - rho^2) times its value for independent axes. Equivalently the
+(c) If Phi_B and Phi_C were independent (each with its own law unchanged), E |Phi_B x Phi_C|^2 would be
+(2/3)(3 s_B)(3 s_C) = 6 s_B s_C. So in model G the alignment of B and C is exactly rho^2:
+E|Phi_B x Phi_C|^2 = (1 - rho^2) times its value for independent blocks. Equivalently the
 weight-|Phi_B|^2|Phi_C|^2 mean of sin^2(phi) is (2/3)(1 - rho^2)/(1 + (2/3) rho^2), against 2/3 for independent
 axes and 0 for aligned ones.
 (d) It is positive unless Phi_B and Phi_C are almost surely proportional (|rho| = 1, Cauchy-Schwarz).
@@ -197,9 +210,10 @@ sin^2(phi) is about 0.60 against 2/3 (GUIDE: the perimeter law is the leading te
    dimensions and the scale dependence is the running coupling g(l)^2 (ARGUED, standard one-loop reading). So the
    only selective, scale-dependent part of "blocks turning" is that the turns become of order one when g(l) does,
    which is the band.
-4. Adjoint-Higgs test (row 669 third test; row 1004 Lemma GG). In the Coulomb phase the block fluxes lie along the
-   transported Higgs direction, so axes ARE aligned there (Q small through sin^2(phi)), while in pure SU(2) model G
-   never aligns them. Axis alignment is thus a symptom of the massless Coulomb phase, but axis disorder is generic
+4. Adjoint-Higgs test (row 669 third test; row 1004 Lemma GG). At infinite hopping every link lies in the
+   stabiliser U(1) of the Higgs direction (unitary gauge), so all holonomies based at one point commute and Q = 0
+   exactly (PROVED from Lemma GG); at large finite hopping, in the Coulomb phase, the block fluxes lie near the
+   transported Higgs direction, so the axes are aligned (ARGUED). In pure SU(2) model G never aligns them. Axis alignment is thus a symptom of the massless Coulomb phase, but axis disorder is generic
    in pure SU(2) at every coupling: using it costs nothing and gives nothing selective against the free gluon.
    (This narrows check 1279's ruling on L506, which holds: the absence of axis order is not a usable premise.)
 
@@ -287,6 +301,22 @@ do not separate that noise from confinement and are not meant to.
 Part 3 (model G on 8^4; beta = 32 and 128, where model G should hold for b = 1, 2) waits for 50 percent free
 memory: at 14:46Z `memory_pressure` read 40 percent free.
 
+**Part 3 results** (memory rose to 61 percent free at 14:52:03Z; run 14:52:03Z-14:52:28Z under the same lock,
+which the batch's exit trap released; appended 2026-11-20T14:53Z). Model G on the same 8^4 lattice, then Wilson at beta = 32
+and 128 (300 thermalisation, 400 measurement sweeps, every 4), where the angles are small:
+
+| | b = 1: A / rho | b = 2: A / rho | b = 3: A / rho | angle factor b = 1 / 2 / 3 |
+|---|---|---|---|---|
+| model G, 8^4 | 0.6458 / -0.1381 | 0.6294 / -0.1853 | 0.6149 / -0.2193 | - |
+| Wilson beta = 128 | 0.6460 / -0.1372 | 0.6314 / -0.1813 | 0.6232 / -0.2039 | 0.012 / 0.032 / 0.052 |
+| Wilson beta = 32 | 0.6472 / -0.1350 | 0.6359 / -0.1757 | 0.6311 / -0.1938 | 0.046 / 0.120 / 0.191 |
+
+At beta = 128 the Wilson measure agrees with model G on the same lattice within 0.008 in A and 0.015 in rho, and
+the agreement improves from beta = 8 through 32 to 128 as the angles shrink. So model G is the weak-coupling limit
+of the axis statistics (GUIDE), and the partial K2 failure at beta = 8 is the finite-angle effect named above.
+Across beta = 2.3 to 128 the axis factor never leaves [0.62, 0.67]: neighbouring blocks turn about nearly
+independent axes at every coupling tried; only the angles change (0.012 to 0.75).
+
 ## 5. Two further attacks on the tiling question
 
 Written 2026-11-20T14:48Z (date -u).
@@ -324,13 +354,14 @@ three spatial directions).** Write Z(u, n_1, n_2, n_3) for the periodic Wilson t
 -log lambda_0(n) for the periodic cube n^3, and X_full(u; n) = Z(u, n, n, n)/lambda_0(n)^u = sum over electric
 sectors q of X_(0,q)(u; n). Then for integers N >= 1:
 (i) Z(u, N l, N l, N l) <= Z(u, l, l, l)^(N^3);
-(ii) E_0(N l) >= N^3 E_0(l), so e(n) := E_0(n)/n^3 increases along multiples and e(l) <= e_inf := lim e(n);
+(ii) E_0(N l) >= N^3 E_0(l), so e(n) := E_0(n)/n^3 increases along multiples; put e_inf := sup over n of e(n)
+     (finite, since E_0(n) is at most a constant times n^3), so that e(n) <= e_inf for every n;
 (iii) X_(0,0)(u; N l) <= X_full(u; l)^(N^3) exp(u [E_0(N l) - N^3 E_0(l)]) <= X_full(u; l)^(N^3) exp(u N^3 D_l / l),
      with the zero-temperature Casimir defect D_l := l (l^3 e_inf - E_0(l)) >= 0.
 *Proof.* (i) Z(u, Nl, n_2, n_3) = Tr T_1^(Nl) <= (Tr T_1^l)^N = Z(u, l, n_2, n_3)^N (Lemma A (a), `gap-crux-restate.md`
 L37, with the positive trace-class spatial transfer operator of (TM), L33), then directions 2 and 3. (ii) (i) at
 u = U, take U-th roots and U to infinity (Lemma A (a): (Tr F^U)^(1/U) tends to lambda_0). (iii) X_(0,0) <= X_full
-(all sector traces are non-negative); divide (i) by lambda_0(N l)^u; then (ii). QED
+(all sector traces are non-negative); divide (i) by lambda_0(N l)^u; then E_0(N l) <= (N l)^3 e_inf. QED
 
 **Consequence (PROVED from RT and Perron-Frobenius).** Fix a block (l, beta). The full gauge-invariant transfer
 operator of the block has a strictly positive kernel, so its top eigenvalue is simple and its full gap
@@ -338,8 +369,13 @@ Delta_full(l) > 0 (all electric sectors included). Hence at u = N l/K, N^3 log X
 N^3 exp(-(u - 3) Delta_full) (X_full(3; l) - 1) tends to 0 as N grows: in a long-time tiling every block's gap,
 however small (a photon block's too), is carried for free. The binding factor is exp((N^4/K) D_l): a long-time
 tiling needs a block whose zero-temperature vacuum energy is within about K log(3/2)/(N^4 l) of the bulk value,
-that is D_l of order 10^(-13) at the size (N-phys) asks for (N l m about 10^4 with l m about 30). For a massive
+that is D_l at most about 200/N^4: about 2 x 10^(-8) when N l m = 10^4 and l m = 30 (N about 330). For a massive
 theory D_l is exponentially small in l m (GUIDE); for any theory with a massless particle D_l stays of order one.
+**On file:** the doubling case N = 2 of this defect, E_0(2L) - 2^d E_0(L), is the lane's (ES-1) quantity (rows 748,
+751, 753; literature digest `prior/gap-lit-casimir.md`); row 751 proved that it is NOT bounded linearly by the
+even thermal sums (Wilson SU(2) at side 3: delta = 216 (beta/4)^9 + O(beta^10) while the even sums are
+O(beta^12), `gap-es1-astra.md` L518, checked in `gap-es1-opus-check.md` L488: an area-type winding term against
+local excitations). So the factor that binds a tiling is a quantity the lane already knows the gap does not control.
 
 **Lemma E0 (PROVED in the reduced model of row 1273).** For n >= 2 colour vectors, the ground energy of
 K_n = -(1/2) Delta + (1/2) sum over i < j of abs(y_i x y_j)^2 on L^2(R^(3n)) satisfies
@@ -367,9 +403,87 @@ coefficient in [2.95, 4.25]) and 0 for U(1)^3 (free rotors). So, at tree level,
 
 The directional zero-point energy is the selective term of the quantity a long-time tiling needs, and it has the
 helpful sign: it pulls the block's vacuum energy toward the bulk value. Since D_l >= 0 is exact (RT (ii)), the
-expansion must fail before g(l)^(2/3) reaches 5.025/eps_0, between 1.18 and 1.70 (g(l)^2 between 1.3 and 2.2).
+expansion must fail before g(l)^(2/3) reaches 5.025/eps_0, between 1.18 and 1.71 (g(l)^2 between 1.65 and 4.96).
 This is where the owner's idea really meets a tiling: through the block's ground-state energy, at intermediate
-block size. It is a pointer, not a route: RT needs D_l near 10^(-13), which no small-volume cancellation can give;
+block size. It is a pointer, not a route: RT needs D_l of order 10^(-8), which no small-volume cancellation can give;
 only the exponential decay of D_l in a massive phase reaches it. The Euclidean seed of the engine (symmetric
 torus, temperature 1/l) sees the opposite sign: there the many low zero-mode levels make Delta grow like
 log(1/g) (Section 2.3, row 720). Both statements are consistent; they are different quantities.
+
+## 6. Verdict
+
+Written 2026-11-20T14:52Z (date -u).
+
+**The owner's tiling question, answered.** Does a tiling or other combination of multi-direction blocks carry the
+single-block neutral gap to the physical box, at the couplings the lane needs?
+
+1. **A tiling carries free energies, not gaps (the named theorems are PROVED on file and here; that they are
+   all the tiling theorems here is a reading of the record).** In every form in which a tiling is a
+   theorem here (reflection positivity and Lemma A: Theorem D, Proposition R, Theorem S of row 697; Remark RT of
+   5.2), the block enters through its free energy. In a long-time tiling every block's gap, however small (a photon
+   block's too), is carried for free (Remark RT and its Perron-Frobenius consequence); the binding factor is the
+   block's zero-temperature vacuum-energy (Casimir) defect, whose doubling case the lane proved is not controlled
+   by thermal sums ((ES-1), rows 748, 751, 753). In the Euclidean engine the binding input is the seed (Delta, Phi).
+   The published outline has the same split (2.6): a block-constrained gap uniform in the number of blocks, which
+   "supplies neither ... nor a mass gap for a physical Hamiltonian". So "carry the gap" is answered yes in a
+   trivial sense, and it is not the missing piece; the missing piece is a small seed or defect at one block.
+2. **Below the band, multi-direction blocks fail every tiling theorem on file (ARGUED from row 720's count; on file).**
+   Their Euclidean seed grows without bound as g(l) falls (2.3). Their zero-temperature Casimir defect is of order
+   one; the directional zero-point energy lowers it selectively and with the helpful sign (Lemma E0, PROVED in the
+   reduced model; tree level 5.025 - eps_0 g(l)^(2/3) with eps_0 in [2.95, 4.25], GUIDE), but nowhere near the
+   size 10^(-8) a long-time tiling needs. The value of Lemma S's gap is below the photon's (2.4, on file).
+3. **Between blocks, "different axes" is generic; only the angles are selective (PROVED in model G; GUIDE in the
+   Wilson measure).** Identity Q splits the gauge-invariant statistic of check 1279 into two angle factors and one
+   axis factor. In the free limit the axes of neighbouring blocks are nearly independent (Proposition AX: alignment
+   exactly rho^2, 0.02 to 0.06 for the adjacent squares of Part 1), and in the Wilson measure the axis factor stays in [0.62, 0.67]
+   from beta = 128 down to 2.3 for b = 1, 2, 3, matching model G at beta = 128 (Section 4). This kills row 1273's role inversion at
+   GUIDE level (K1) and turns check 1279's deterministic refutation into a statistical one. The selective part is
+   the size of the turns, which grows only with the running coupling (raw loops also by perimeter noise), and its
+   one rigorous link on file (Tomboulis and Yaffe) goes to the flux half, not the neutral half.
+4. **No tiling theorem stated for a class of models closed under products with a free photon can take
+   block-holonomy statistics as its only input (PROVED fact test, 5.1; row 998 Lemma PT in this form).** The product with a free photon keeps every such statistic and violates (N-phys) at every size
+   (s >= 12 exp(-2 pi/512) > 11).
+5. **At the couplings the lane needs, the tiling question is the seed at one block in the band:** (PHYS-SEED),
+   (W), (N-phys). OPEN. The multi-direction mechanism, as proved (Lemmas S, S_n, E0; Proposition AX), supplies none
+   of it.
+
+**Mass gap: NOT proved. Nothing disproved.** (N-phys), (W) and the seed at the band stay OPEN; no statement of the
+T0 chain or of the gap chain changes status. The tiling form of the owner's idea is closed as a route, with the
+reason: what a tiling needs from a block (a free-energy seed) is not what the multi-direction mechanism supplies (a
+gap of size kappa g(l)^(2/3)/l, and an axis disorder that every coupling has). The one place where the mechanism
+meets a tiling's binding quantity with the right sign is the vacuum energy at intermediate block size (5.2), a
+pointer quantified at tree level, not a route.
+
+**New against the record (greps of Sections 1, 2, 5 and before this verdict):** Identity Q in axis-angle form (a
+rewriting of row 1273's Lemma CC); Proposition AX and Corollary AX1; the GUIDE measurement of axis and angle
+factors (free field exactly, Wilson measure at four couplings); Remark RT in long-time form with its consequence
+(the doubling case is (ES-1), Theorem D and Proposition R); Lemma E0 (two-sided bound on the zero-mode vacuum
+energy); the tree-level balance of the directional zero-point energy against the gluon Casimir energy (GUIDE).
+**Not new:** the tiling theorems (row 697); the small-volume seed count (row 720); the value test (rows 669, 988,
+1274); the product test (row 998 Lemma PT, row 1003 Proposition NP); (ES-1) and its failure (rows 748-753); the
+Krauth-Staudacher threshold (rows 1188 and later files); the block-constrained gap (Sussman and Alpoge, outline
+L766-779); the reduced arrays of the sibling row 1286.
+
+**Relation to the sibling row 1286 (gpt-6.2-astra, same question).** Its reduced arrays (stiff and tree sewing give
+a singlet gap asymptotic to kappa_r g^(2/3)/(N l); cyclic sewing gives soft modes) and this file agree in
+direction: a tiling of small multi-direction blocks does not carry. Its Wilson trace estimate (its (7), a
+conditional trace over unselected links) and Remark RT (reflection positivity in the spatial directions) are
+different devices. I did not check its proofs.
+
+**Suggested check (one reader of the other provider):** Identity Q and Proposition AX (b)-(c); Remark RT (i)-(iii)
+with the Perron-Frobenius consequence; Lemma E0 (both bounds); the product test of 5.1. Moves: (N-phys) only as a
+closed route; no consumer reads these statements.
+
+**Credits.** The owner's multi-direction idea is the starting point of every section. Row 1273 (Claude Opus 5.5)
+for Lemmas CC, S, S_n and the setting; check 1279 (gpt-6.2-astra) for the gauge-invariant statistic and the
+corrections; row 697 (Claude Fable 5.2, runs 1 and 2) for Lemma A, Theorem D, Proposition R; row 720 for the
+small-volume count; rows 748, 751, 753 for (ES-1); rows 998 and 1003 for the product test; rows 669, 988, 1274 for
+the value test; the sibling row 1286 for its reduced arrays. Ethan Sussman and Levent Alpoge, with Claude and Codex
+as authors of their text, for the block-constrained gap and its scope (outline L766-779). B. Simon (method of
+Lemma S, through row 1273); M. Luscher, P. van Baal and J. Koller (small-volume Hamiltonian, RECALLED through rows
+720 and 1273); W. Krauth and M. Staudacher (threshold of the SU(2) matrix integral, RECALLED through the lane);
+E. Tomboulis and L. Yaffe (vortex free energies and Wilson loops, through rows 1025 and 1029); A. D. Kennedy and
+B. J. Pendleton (heat-bath sampler); M. Luscher, K. Osterwalder and E. Seiler (transfer operator, through row 667).
+The Airy zero and the Epstein lattice sum are classical constants, RECALLED.
+
+RESULT: Row 1285 gap-owner-tiling-opus (Claude Opus 5.5 max, Mac mini Claude worker 1, 14:14Z-14:53Z by date -u; author only, checked by no one; one GUIDE run of about 2 minutes under the numeric lock). Mass gap NOT proved, nothing disproved; (N-phys), (W) and the seed at the band stay OPEN. The owner's tiling question answered: (1) tilings carry free energies, not gaps: in a long-time reflection-positivity tiling (Remark RT, PROVED, the long-time form of row 697's Theorem D and Proposition R) every block's gap, even a photon block's, is carried for free, and the binding factor is the block's zero-temperature Casimir defect, whose doubling case is the lane's (ES-1), already proved not to be controlled by thermal sums (rows 748-753); the published outline makes the same split (Sussman and Alpoge, block-constrained gap uniform in the number of blocks, "neither ... nor a mass gap", L766-779); (2) below the band multi-direction blocks fail every tiling theorem on file (row 720's seed count; value test rows 669, 988, 1274); the directional zero-point energy lowers the block's Casimir defect selectively and with the helpful sign (Lemma E0, PROVED in the reduced model: 2.946 <= E_0(K_3) <= 4.252 in units g^(2/3)/l; tree-level balance against the gluon Casimir 5.025, GUIDE), but not to the size a tiling needs; (3) between blocks "different axes" is generic: Identity Q splits check 1279's gauge-invariant statistic into two angle factors and one axis factor, Proposition AX (PROVED in the Gaussian limit) gives axis alignment exactly rho^2 (0.02-0.06 for adjacent squares), and the Wilson measure keeps the axis factor in [0.62, 0.67] from beta = 128 to 2.3 (GUIDE; matches the Gaussian limit at beta = 128; kills row 1273's role inversion at GUIDE level); only the turn angles are selective, through the running coupling, that is the band, and their one rigorous link on file (Tomboulis-Yaffe) is to the flux half; (4) the product with a free photon keeps every block-holonomy statistic and violates (N-phys) at every size (PROVED). At the couplings the lane needs, the tiling question is the seed at one block in the band (the wall). Output library/gap-owner-tiling-opus.md.

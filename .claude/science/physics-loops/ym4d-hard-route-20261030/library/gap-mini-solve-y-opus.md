@@ -56,8 +56,10 @@ matches row 1161 ("the gap target needs no flux clause") and row 1200 Step 5.4; 
 - The two posted 2D proofs (OpenAI; Ding, Huang and Yang; read in row 1007) cross their band with a continuous
   global non-abelian symmetry acting on all integration variables, or with an N-copy loop soup. Pure 4D SU(2) has
   neither on gauge-invariant data (row 1011 Lemma CEN; row 1016 CEN+). Both 2D proofs control the **charged**
-  (spin) sector; their neutral sector comes from association of the O(4) ferromagnet (OpenAI Section 3.11, read in
-  row 1009). In 4D association of link coordinates is empty by Elitzur's theorem (row 1194 2.2).
+  (spin) sector. Ding, Huang and Yang and OpenAI's O(n) paper do not claim the neutral sector (row 1007: "A full
+  transfer gap ... requires a separate argument"). Where OpenAI reaches it, in the O(4) paper (Section 3.11, row
+  1009) and the O(3) continuum paper (row 1010 L210), it uses association or a ferromagnetic correlation
+  inequality. In 4D association of link coordinates is empty by Elitzur's theorem (row 1194 2.2).
 - So in 4D the crux has two layers. The flux half would need a band-crossing engine; the twist-index engine has a
   one-loop margin but no proof through the band (row 1200, (X)). The neutral half has no engine with a margin at
   all (row 1200 Step 5.4), and no conversion from charged to neutral decay without association is known in any
@@ -110,15 +112,24 @@ exp(-(beta/2) sum_f Q(dX_f, dY_f)) with Q(u, v) = |u|^2 + |v|^2 + |u - v|^2. Q h
 the identity on R^3), eigenvalues 1 and 3: six massless Gaussian modes, with no frustration term at this order
 (the commutators enter at third order). The neutral observable Re a_f = 1 - |dX_f|^2/2 then has covariance of order
 1/(beta^2 r^4) at distance r: a power law on every scale where the expansion is valid. So the neutral sector of K_3
-is massless to all orders of the spin-wave expansion, and (K_3-N) is a statement at the non-perturbative scale
-s(beta), like the singlet gap of the O(4) model itself. The commutator frustration of Way 2 is a cubic effect
+is massless at Gaussian order (and, by the usual reading of 2D asymptotically free sigma models, at every finite
+order; RECALLED, not checked here), and (K_3-N) is a statement at the non-perturbative scale s(beta), like the
+singlet gap of the O(4) model itself. The commutator frustration of Way 2 is a cubic effect
 in this expansion. It is not a mechanism for decay at scale beta.
 
 **2.3 How the posted 2D proofs reach the neutral sector, and why neither route exists here (ARGUED; cited).**
 - OpenAI's O(3) continuum paper reaches the full transfer gap through a ferromagnetic correlation inequality: "the
   spin two-point function detects the full transfer gap (covariance of even monomials bounded by the square of the
   largest spin correlation, on any finite ferromagnetic graph)" (row 1010, `library/prior/gap-o3-continuum-rg-read-opus.md`
-  L210). The O(4) paper reaches singlets by association (row 1009; row 1194 2.2).
+  L210). The O(4) paper reaches singlets by association (row 1009; row 1194 2.2). Its exact form, as read in row
+  1009 (`library/prior/gap-o4-pinned-cell-read-opus.md` L175-187): write q = (cos alpha z, sin alpha w) with z, w on
+  the circle; given alpha the two circle sectors are independent XY models with non-negative couplings, the alpha law
+  is associated, and Ginibre and random-cluster FKG finish the covariance bound (3.67); "the untwisted zero-field
+  ferromagnet ... This restriction is essential". In the gauge-fixed form of 2.1 the K_3 bond energy
+  Re a_f + Re b_f + <a_f, b_f> has its third term (1/2) tr(A A'^(-1) B' B^(-1)) quartic in the site quaternions, and in
+  the same Hopf coordinates its phase expansion has signs that no constant shift makes non-negative (row 1194 D2).
+  Choosing the middle sheet m_1 = A^(-1) B as a coordinate instead of B gives E(m_0) + E(m_1) + E(m_0 m_1), the form
+  D2 treats, and conditioning on m_0 gives the twisted sheet of Way 2. I found no third coordinate system.
 - K_3 has neither: its energy is not of Ginibre type in sheet or plane coordinates (D2, Lemma HF of row 1188). For
   4D Wilson SU(2), association of link coordinates is empty by Elitzur's theorem (row 1194 2.2), and positive
   surface expansions grow with the volume (method 35). In 4D the charged objects are Wilson lines, not local
@@ -129,3 +140,74 @@ way is a renaming, I stop on (K_3-N). The statement where it stops is (N-tw) of 
 adds: (N-tw) cannot be reached by a perturbative frustration argument; it needs the same non-perturbative input at
 scale s(beta) as the O(4) singlet gap, with no ferromagnetic inequality to carry it.
 
+## Step 3. A bookkeeping finding for the lead and for check row 1242 (READ; written 09:25Z by date -u)
+
+Row 1233 (`library/gap-mini-solve-u-opus.md` L140 and RESULT) lists "(DET)'s (ID-a), (ID-b), (I-loc)" among the
+remaining inputs of its one-cutoff carry. It cites none of rows 990, 993, 994 (grep of that file for 990, 993, 994,
+idab, iloc: no match). Those rows already treat the three items. Their standing on file, from their RESULT lines:
+
+- (I-loc): row 990 (`library/gap-iloc-opus.md`) PROVED it for the repository's step form at U = 1 and ARGUED it for
+  the account's block map; row 993 item (2) (`library/gap-idab-opus.md`) PROVED the block-map identity (CMP 109
+  (0.3), (0.10)-(0.12) are SA's QC1-QC3), closing that case by Lemma LR; the cross-provider check of row 987
+  (`library/gap-det-check-astra.md` L282, L393) gives (I-loc) HOLDS AFTER CORRECTION as a supplied reading.
+- (ID-a), (ID-b): row 993 PROVED (ID-a) with one identification ARGUED (that the unprinted z^(k)(c) of CMP 119 (3.33)
+  is the pivot factor computed there, which is L^9 at U = 1) and (ID-b) up to one ARGUED normalization (r4); the gpt-6-astra check (`library/gap-idab-check-astra.md`, RESULT) gives HOLDS AFTER
+  CORRECTION for both, conditional on the named background and inverse-existence inputs; row 994 (same provider)
+  finds no FAILS and reduces (r4) to one positive scalar that cancels in (DET), given that SA's display is in one set
+  of coordinates.
+- Still open there, as those rows record: pr-lay W; the full-E_0 torus comparison (the identification "the
+  account's E_0 is reading (i)" FAILS as justified, `library/gap-idab-check-astra.md` L196-201; row 993 notes that
+  (DET) needs only a bound); and the background and inverse-existence inputs named in that check.
+
+So the accurate list of (DET)-side inputs for row 1233's Proposition 3.7 is: pr-lay W, the E_0 torus bound, and the
+named background and inverse-existence inputs, not (ID-a), (ID-b), (I-loc) as open items. This is a citation
+correction, not a new result. I make no claim on (EDGE) or on the 9.1 hypotheses; check row 1242 is reading them.
+
+## Step 4. Results, what stays open, and a note for the lead (written 2026-11-20T09:27Z by date -u)
+
+No numeric run was made (free memory was 56 percent at 09:06Z; no job was needed). No subagent. No outside source
+was fetched. Rule 0a: `library/open-core.md` has no line on (K_3-N) or (N-tw) (grep at the time of this step);
+the FINISH rows that treat them are 1110, 1115, 1194 (cited in Steps 1-2).
+
+### 4.1 Table
+
+| Item | Label | Where | New? |
+|---|---|---|---|
+| The Jaffe-Witten gap is the neutral half on R^4; flux-half engines are instruments only | ARGUED | 1.1 | no: row 1161, row 1200 5.4 |
+| Where the posted 2D work reaches the neutral sector (OpenAI's O(4) and O(3) papers), it uses association or a ferromagnetic inequality; neither exists for K_3 or 4D Wilson SU(2) | ARGUED (cited) | 1.2, 2.3 | the pairing of the two facts is this row's; each fact is on file (rows 1009, 1010 L210, 1194 2.2, 1188 HF) |
+| Gauge-fixed form of K_3: two flat SU(2) connections a, b on B with bond weight exp((beta/2)abs(1 + a_f + b_f)^2) | PROVED (elementary) | 2.1 | no: a renaming of row 1194 Lemma D1 |
+| At Gaussian order K_3 has six massless modes, quadratic form Q(u, v) = abs(u)^2 + abs(v)^2 + abs(u - v)^2 with eigenvalues 1, 3, and neutral covariance of order 1/(beta^2 r^4); the commutator frustration of Way 2 is cubic | GUIDE (perturbative) | 2.2 | not on file in this form; it adds to row 1194 Way 2 that the frustration is not a decay mechanism at scale beta |
+| (K_3-N), (N-tw) | OPEN | 2.4 | stop rule of row 1194 2.3 applies; the fourth way tried here is a renaming |
+| Row 1233's list of remaining inputs omits rows 990, 993, 994 (and the astra checks of 987 and 993) on (I-loc), (ID-a), (ID-b) | READ (citation correction) | 3 | yes, as bookkeeping |
+| (N-phys), the one-cutoff seed, the Jaffe-Witten gap | OPEN | - | - |
+
+### 4.2 What stays open
+
+- (N-phys), equivalently (modulo the ultraviolet carry) a finite seed for Wilson SU(2) at one coupling in the
+  account's window. No route found here; Step 1 gives the reasons, which agree with rows 1219, 1225, 1229, 1233, 1237.
+- The neutral half without association, in its smallest instance (K_3-N), stopping at (N-tw) of row 1194.
+- The account's premises (T0 chain), and for the one-cutoff route the inputs of row 1233 as corrected in Step 3.
+
+### 4.3 For the lead (evidence only; this row edits no other file)
+
+1. Rows 1188-1238 and this one all stop at the same place. The neutral half has no engine with a margin (row 1200
+   5.4), and Step 2.2 adds that in the smallest sheet model the obstruction is non-perturbative at the mixing
+   length, not a small-scale frustration effect. A further plain-brief row is likely to rebuild this map again.
+2. If crux budget continues, the cleanest open problem I can name is 2D: a singlet (neutral) gap for a 2D
+   asymptotically free sigma model with a transitive non-abelian rigid group and no ferromagnetic inequality, with
+   K_3 of row 1194 as the smallest case. Its charged half is supplied (row 1194 E1, given OpenAI's estimate (3.61)).
+   A mechanism there would be the kind of step 4D needs; a failure there is cheaper to diagnose than in 4D. This is a
+   suggestion, not a claim that the problem is easier than it looks.
+3. Check row 1242 may use Step 3 when it reaches row 1233's list of remaining inputs.
+
+### 4.4 Credits
+
+Jaffe and Witten (the problem). Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (the
+account whose premises the gap chain reads; nothing of theirs is used in a step here). Balaban (CMP papers, through
+rows 990-994). OpenAI (the posted 2D O(3), O(4) and O(n) proofs, as read in rows 1007, 1009, 1010); Ding, Huang and
+Yang (the second posted 2D proof, read in row 1007). Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford and
+Singha Roy, and Zeng Chunping (the published sources of row 1218, used only through that reading). The lane rows
+cited above, in particular row 1194 (Claude Fable 5.2: the cycle models K_N, Lemmas C0-C4, D1, D2, E1, (N-tw)),
+rows 1011 and 1016 (Lemma CEN, CEN+), row 1132 and 1135 (route (A)), rows 990, 993, 994 and their gpt-6-astra checks.
+
+RESULT: Row 1241 (Claude Opus 5.5 max, Mac mini worker 2, 08:41Z-09:28Z by date -u; author only, checked by no one; no numeric run, no subagent): the mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; (N-phys) stays OPEN with no route beyond the record (Step 1, ARGUED: on R^4 the gap is the neutral half; where the posted 2D work reaches the neutral sector (OpenAI's O(4) and O(3) papers) it uses association or a ferromagnetic inequality, and neither exists for 4D Wilson SU(2) or for the sheet models). Worked item: the smallest neutral lemma without association, (K_3-N) of row 1194; the attempted fourth way (a gauge-fixed form with two flat SU(2) connections and bond weight exp((beta/2)abs(1 + a + b)^2), PROVED, elementary) is a renaming of row 1194 Lemma D1, so the stop rule applies at (N-tw); GUIDE (spin-wave order): K_3 has six massless modes with an unfrustrated quadratic form and neutral covariance of order 1/(beta^2 r^4), so the commutator frustration of row 1194 Way 2 is a cubic effect and not a decay mechanism at scale beta. READ (citation correction for the lead and check 1242): row 1233's remaining inputs (I-loc), (ID-a), (ID-b) are treated by rows 990, 993, 994 and the gpt-6-astra checks of rows 987 and 993; the open (DET)-side items are pr-lay W, the E_0 torus bound and the named background and inverse-existence inputs. OPEN: (N-phys), (K_3-N), (N-tw), the account's premises, the Jaffe-Witten gap. Output library/gap-mini-solve-y-opus.md.

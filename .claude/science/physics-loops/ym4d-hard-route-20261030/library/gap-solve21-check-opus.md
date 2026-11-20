@@ -25,6 +25,7 @@ HOLDS, HOLDS AFTER CORRECTION, FAILS, with the line. Numerics guide only.
 ## Status log
 
 - 2026-11-20T01:37Z: file created; step 1 next.
+- 2026-11-20T01:56Z: steps 1-8 done; RESULT line written at the end of the file.
 
 ## Step 1. Inventory of the checked file (done 2026-11-20T01:38Z, date -u)
 
@@ -332,3 +333,202 @@ are 0, +-e_2, +-e_3 (shared 3-links and 2-links), and the coefficients are real 
 **S58, L422: HOLDS.** With a_j k_j -> h > 0 and k_j -> infinity, (36) tends to 0 < q_0 for the oscillatory span at any
 beta_j >= 1, and for the fundamental span when (1 + beta_j)^2 = o(k_j). The statement is limited to one fixed transverse
 plaquette at one time, as the file says; it does not touch vectors prepared with transverse smearing or positive times.
+
+## Step 7. Everything else, and the citations (done 2026-11-20T01:55Z, date -u)
+
+**S8, L113: HOLDS.** W_p = d.z with |d| = 1 for the selected edge; row 1173 (8) (`gap-solve15-astra62.md` L108-114,
+checked HOLDS as C33 in `gap-solve15-check-opus.md` L194) gives Var >= c(1 + 6 beta)^{-2}. The strip sigma-field is
+inside the sigma-field of all other links, so E|W_p - E[W_p | strip]|^2 >= E Var(W_p | all other links) > 0.
+
+**S9, L115-126, (9): HOLDS.** Plaquettes 3 apart in direction 2 share no action face; total variance gives
+nu(|G_m|^2) >= c(1+beta)^{-2} sum_l 4^{-m} binom(m,l)^2 >= c(1+beta)^{-2}/(m+1) (Cauchy-Schwarz with
+sum 2^{-m} binom(m,l) = 1). With p in the mirror x_1 = 0, theta_1 fixes F and theta_0 F, so at D = 0 both transverse
+norms equal nu(|F|^2).
+
+**S10, L128-138, (10), (11): HOLDS.** [F_{b,m}]_0 = T^b ((1 - U_2^3)/2)^m [W_p]_0, multiplier modulus
+e^{-bE} |sin(3 eta_2/2)|^m <= e^{-bE} (3E/(2 kappa))^m by PL5 in direction 2; max of e^{-bE} E^m is (m/(eb))^m, giving
+(10); m = floor(kappa b/6) gives 3m/(2 e kappa b) <= 1/(4e). nu(G_m) = 0, so adding eps_b adds exactly eps_b^2 to all
+three squared norms; (11) follows.
+
+**S11, L144-154, (12): HOLDS (conditional on the stated matching).** <Phi, B^(k) Phi> = (c(0) - Re c(k))/2 with
+c(w) = <Phi, T^k U^w Phi>, c(-k) = conj c(k), and ||Phi||^2 = C(0,0); PL4 identifies the lattice entries. A bound q on
+the supremum over the dense subspace {v_A} bounds ||B_h|| by q, which gives (2).
+
+**S12-S13, L156-158: HOLD (standard argument, under the Wightman hypotheses).** Spectral support of
+<psi, phi(x_1)...phi(x_r) Omega> in the forward cone in each increment variable, holomorphy in the product forward tube,
+vanishing on an open subset of the maximal totally real set {(i tau, x)}, boundary values, and cyclicity: this is the
+usual proof that Euclidean vectors from an open region are total. I found no gap in the version written.
+
+**S14, L160: HOLDS.** For abelian M with cyclic Omega, ||A^* Omega|| = ||A Omega||, so J is a well-defined antiunitary;
+it commutes with e^{itH} (time translations preserve M and Omega), so J H J^{-1} = -H, impossible for H >= 0, H != 0.
+An abelian algebra with a cyclic vector is maximal abelian, so its commutant is abelian, contradicting the translated
+noncommuting pair spacelike to the strip.
+
+**S15, L162: HOLDS.** DLR gives E[F | exterior of I] = f; the negative-time insertion and the reflected or displaced
+copies are exterior and their interiors share no plaquette at fine spacing, so the three numbers in (12) are unchanged.
+
+**S16-S17, L166-172: HOLD.** Re-derived: the time-zero F_12 density is (p_1^2 + p_2^2)/(2|p|) (transverse projector);
+the Wick square sum_a F^a(f_A)^2 (bilinear, so SO(3)-invariant with a complex test) is a two-particle vector whose two
+momenta are independent with the one-field law weighted by |f-hat_A|^2; at p = p' = p_c = (pi/4, 0, 0) the multiplier
+e^{-|p|-|p'|} sin^2((p_1 + p_1')/2) is q_0 and all six first derivatives vanish (-p_1/|p| + cot(pi/4) = 0); second
+moments are O(A^-2). Deficit O(A^-2) follows. This is a free continuum example, not a Wilson statement; it shows the
+(1 + A)^{-2} in (8) cannot be improved in general.
+
+**S18, L174-179, (13): HOLDS.** int_0^infinity s^2 e^{-su} ds = 2/u^3; with z = |x|^2/(4u),
+int s^2 G_s ds = (2/(16 pi^2)) (4/|x|^2)^4 Gamma(4) = 192/(pi^2 |x|^8). A_0 = 3 d_G g^4/pi^4 matches outline L1617-1620.
+G_s is the 4D propagator (-Delta + s)^{-1}, spatial transform e^{-tE}/(2E). Correct.
+
+**S19, L181-186, (14): HOLDS.** Measure ~ s^2 |f_L|^2 ds d^3p/(2E); two nondegenerate maxima of b at s = 0,
+p = +-p_* e_1 with log(q_0/b) comparable to s + |p -+ p_* e_1|^2 (E - |p_1| = (s + |p_perp|^2)/(E + |p_1|));
+s^2 e^{-cls} gives l^{-3} and three momentum Gaussians l^{-3/2}; the lower bound from s < 1/l,
+|p -+ p_* e_1| < l^{-1/2}; the remainder is <= (q_0(1-c))^l times a finite mass (f supported at times >= t_0 > 0). The
+semicircle remark: phases p_* x_1 in an interval of length < pi when the bump has x_1-width < 2h. Correct.
+
+**S20-S21, L190-197, (15): HOLD.** For a unit time-zero strip vector, C(w) = int s^{w-D} dsigma with
+||sigma||_TV <= ||[L_F]_1|| ||[F]_1|| <= 1 (w >= D); the tail sum is (z e^{-i eta})^{D'} s^{D'-D}/(1 - z s e^{-i eta}),
+and |1 - e^{-i eta}| <= |1 - z s e^{-i eta}| + (1 - zs) <= 2 |1 - z s e^{-i eta}|; on the two intervals
+|sin(eta/2)| >= c/k, so the Poisson density is <= C(D' + k) and the mass of length 4 eps/k is <= C(1 + D/k) eps; weak
+limits z -> 1 and density of local strip functions finish it.
+
+**S22, L199-205, (16): HOLDS.** (5) and Chebyshev give ||(1 - Pi) v||^2 <= C gamma/eps^2; ||P_S v|| <=
+||Pi P_S|| + ||(1 - Pi) v||; eps = (gamma/(1 + D/k))^{1/3} makes both terms (1 + D/k)^{1/3} gamma^{1/6}. The conditional
+expectation represents P_S [F]_0 because theta_0 fixes strip functions. Correct.
+
+**S23, L209-214, (17): HOLDS.** For a general source the tail measure has TV <= R(F) ||Phi||^2, so the density in
+x = k|eta| near pi/2 is <= C(1 + D/k + R(F)); g''(t) = -sin(t/2)/(1 + sin^2(t/2))^{3/2} (re-derived; it is <= 0 and
+O(t)), so the log-multiplier has second derivative <= -1/2 + C/k^2 <= -1/4, giving the Gaussian envelope around
+x_k = pi/2 + O(k^-2); x > pi loses a fixed factor. Integration gives C(1 + D/k + R)/sqrt(l).
+
+**S24-S25, L216-223, (18): HOLD.** Upper bound by sum w_i ||v_i||^2 <= 1; lower bound by a fixed v_i with nonzero
+spectral projection on (r, ||B_h||]. The expansion (2 - U - U^{-1})^l = sum_d (-1)^d binom(2l, l+d) U^d is correct, its
+coefficients have absolute sum 4^l, and for even k the combination is ||2^{-l} T^{lk/2} (1 - U^k)^l Phi||^2.
+
+**S32-S34, L264-277, (24) and the lower edge: HOLD.** The lattice propagator inverse
+(2 cosh omega - 2 cos p_0)^{-1} -> e^{-|t| omega}/(2 sinh omega); 2 sinh(omega_p + omega_q)/(4 sinh omega_p sinh omega_q)
+= (coth omega_p + coth omega_q)/2; in the first term nothing depends on q_1, so the weighted axial density is constant;
+cosh omega >= 1 + 2 sin^2(p_1/2) gives omega >= g(|p_1|); g is concave (g'' above), so subadditive on u + v <= pi and
+above its chord beyond; support reaches the edge with q -> 0, p -> (eta, 0, 0), transverse curls nonzero.
+
+**S35, L281: HOLDS.** G_m sits at (x_0, x_1) = (0, 0) and is invariant under the 0 <-> 1 swap; the swap is a symmetry of
+the axis-symmetric periodic limit (W_4 invariance in LG1). With the source at x_1 = b and D = 2b, all three squared norms
+equal nu(G_m tau_{2b e} G_m) for one axis e, and adding eps adds eps^2 to each; so R = 1. This correctly limits (11) to
+the mirror through the source.
+
+**S36-S37, L283-289, (25): HOLD (under the stated matching and totality).** Every nonzero orbit has a point with
+h p_1 = pi/2, where (25) equals 1 (e^{2 pi i L} = 1, (1 - e^{i pi})/2 = 1); continuity, a contraction error of at most
+twice the distance, and (6) at w_0 = 4 L k_j >= A k_j >= D_j give liminf R(F_j) >= 2^{m-1}.
+
+**S41, L308: HOLDS.** 2 sinh(2(omega_p + omega_q))/(4 sinh omega_p sinh omega_q) splits into
+cosh omega_p (2 cosh^2 omega_q - 1)/sinh omega_q plus its interchange; cosh omega_p = c(p_perp) - cos p_1 at m >= 0; with
+p_1 = eta - q_1 the sin(eta) sin(q_1) part integrates to zero (the rest is even in q_1), leaving const + const cos eta.
+
+**S42-S45, L312-326, (28), (29): HOLD.** Re-derived the edge count: edge (x,2) lies in h_y for
+y in {x, x - e_3, x - s, x - e_3 - s}, edge (x+s, 3) for y in {x + s, x + s - e_2, x, x - e_2}; the intersection is
+{x} for n >= 16. Greedy colouring with 17^3 colours; selected edges of one class and the two edges of one pair share no
+action face; the Hoeffding projections Q_x are mutually orthogonal, kill every h_y, y != x, and send h_x to a product of
+two independent centred readings with squared norm >= c_0^2; hence (29). At most 64 overlapping displacements, each
+coefficient <= <u_0, T^{-1} u_0> <= C_A^8 by (20) with b = 8 (|h - <h>| <= 2), so int 2 sinh E dmu_P <= 64 C_A^8/n^3 and
+(28) follows with the stated E_*, c_*.
+
+**S59, L426: HOLDS.** Same-time requirement for reading a selected spatial edge; spacetime sup distance > 8 keeps
+selected links of one class out of common (also temporal) plaquettes; the Gram bound passes to the limit and, by
+approximating square roots of nonnegative continuous tests by trigonometric polynomials, gives the four-dimensional
+Fourier measure >= c_0^2 17^{-4} Haar. With (34) (b = 8) the density is between two constants times 1 and the massless
+symbol.
+
+**S60, L428-433: HOLDS.** At m = 0, b(p) <= 2(cosh omega - 1), so b/sinh omega <= 2 tanh(omega/2) <= omega; with
+coth((u+v)/2) <= 1 + 2/(u+v) the integrand is <= C uv(1 + (u+v)^{-1}), bounded; the good transverse sets have measure
+> 3/4 each, so their intersection has measure >= 1/2; energies there are in a compact subset of (0, infinity).
+
+**GUIDE and citation spot checks.** Outline L581-599: the polynomial-cluster example (spectral measure E e^{-E} dE,
+correlation (1 + t)^{-2}) is there, as L7 says. Outline L1601-1624: C_2 = 3 d_G g^4/(pi^4 |x - y|^8). Outline
+L4289-4314 (F2, relative error |r| <= 1/2 on prescribed test classes) and L4360-4374 (F3, g^{-2} = c_* log(1/d)(1 + o(1)))
+match L229. GL3-GL7 and PL4-PL7 as in Steps 3-4. A0 (`gap-wall-assumptions-opus.md` L102) is the rest-energy /
+invariant-mass equivalence credited at L13. `open-registry.md` has no entry for "mass gap", "neutral trace" or "N-phys"
+(grep count 0), as L5 says. Every linked repository file exists at the pinned commit. I did not re-open the external PR
+files of L3 (GUIDE only). No home-directory path appears in the checked file.
+
+**Novelty note (for credit only).** The detector B_h of (1) and the value q_0 = e^{-pi/2}/2 occur in no other file of
+`library/`, `library/prior/` or `parts/gap.md` (grep for "e^{-\pi/2}"); the underlying equivalence of a rest-energy
+gap and an invariant-mass gap is A0 of row 1052 (`gap-wall-assumptions-opus.md` L102), credited at L13. I make no claim that (1) is new to
+the literature.
+
+## Step 8. Verdict table and result (done 2026-11-20T01:56Z, date -u)
+
+| S | lines | statement | verdict |
+|---|---|---|---|
+| S1 | L15-30 | (1) norm of B_h = Q(hM) | HOLDS |
+| S2 | L32-40 | q_0, strict threshold, (2) | HOLDS |
+| S3 | L48-61 | (3), (4) from PL5 | HOLDS (PL5 via PH1 Lemma 2 under the frozen import LG1) |
+| S4 | L63-71 | (5) | HOLDS |
+| S5 | L75-92 | (6) | HOLDS |
+| S6 | L94-99 | (7) | HOLDS |
+| S7 | L101-107 | (8) strict strip bound | HOLDS |
+| S8 | L113 | strip functions are a proper subspace | HOLDS |
+| S9 | L115-126 | (9) | HOLDS |
+| S10 | L128-138 | (10), (11) | HOLDS |
+| S11 | L144-154 | (12) | HOLDS (under the stated matching) |
+| S12 | L156 | spectral support for totality | HOLDS (under the Wightman hypotheses) |
+| S13 | L158 | totality by analytic continuation | HOLDS (under the Wightman hypotheses) |
+| S14 | L160 | abelian strip algebras are not cyclic | HOLDS |
+| S15 | L162 | shell representation | HOLDS |
+| S16 | L166 | free Maxwell singlet set-up | HOLDS |
+| S17 | L168-172 | deficit O(A^-2) | HOLDS |
+| S18 | L174-179 | (13) | HOLDS |
+| S19 | L181-186 | (14) | HOLDS |
+| S20 | L190-195 | (15) statement | HOLDS |
+| S21 | L197 | (15) proof | HOLDS |
+| S22 | L199-205 | (16) | HOLDS |
+| S23 | L209-214 | (17) | HOLDS |
+| S24 | L216-221 | (18) | HOLDS (under matching and totality) |
+| S25 | L223 | finite Wilson form of (18) | HOLDS |
+| S26 | L225-229 | (19) | HOLDS |
+| S27 | L231-235 | (20) | HOLDS |
+| S28 | L239-244 | (21) statement | HOLDS |
+| S29 | L246 | (21) proof | HOLDS |
+| S30 | L248-253 | (22) | HOLDS |
+| S31 | L255-260 | (23) | HOLDS |
+| S32 | L264-268 | free lattice covariance | HOLDS |
+| S33 | L270-275 | (24) | HOLDS |
+| S34 | L277 | lower edge g(abs eta) at m = 0 | HOLDS |
+| S35 | L281 | padding gives R = 1 | HOLDS |
+| S36 | L283-287 | (25) | HOLDS (under matching and totality) |
+| S37 | L289 | no common reflection-norm bound | HOLDS (same hypotheses) |
+| S38 | L293-298 | (26) statement | HOLDS |
+| S39 | L300 | (26) commutation | HOLDS |
+| S40 | L302-306 | (27) | HOLDS |
+| S41 | L308 | (27) compatible with (24) | HOLDS |
+| S42 | L312-316 | (28) statement | HOLDS |
+| S43 | L318 | only h_x reads both selected edges | HOLDS |
+| S44 | L320-324 | (29) | HOLDS |
+| S45 | L326 | (28) proof | HOLDS |
+| S46 | L330-340 | (30) set-up, detailed balance | HOLDS |
+| S47 | L342-346 | first bound of (30) | HOLDS |
+| S48 | L348 | positive-kernel trace bound | HOLDS |
+| S49 | L350-358 | (31) | HOLDS |
+| S50 | L362-366 | (32) | HOLDS |
+| S51 | L368-376 | (33) | HOLDS |
+| S52 | L378-384 | (34) | HOLDS |
+| S53 | L390-395 | (35) kernel bound | HOLDS |
+| S54 | L397 | (35) second moment | HOLDS |
+| S55 | L399 | exact contact in the limit state | HOLDS |
+| S56 | L403-413 | (36) statement | HOLDS |
+| S57 | L415-420 | (36) proof | HOLDS |
+| S58 | L422 | (36) in the physical limit | HOLDS |
+| S59 | L426 | four-direction Gram bound | HOLDS |
+| S60 | L428-433 | bounded density of the massless singlet | HOLDS |
+
+Count: 60 statements (61 PROVED paragraphs): 60 HOLD, none HOLDS AFTER CORRECTION, none FAILS. GUIDE and OPEN
+paragraphs: the spot-checked citations are accurate (Step 7); the OPEN paragraphs L9, L42, L140, L386, L435 are honest.
+
+**What the row establishes and what it leaves (checker's reading, no new claim).** In a relativistic vacuum
+representation, the one number sup ||B_h|| decides a mass gap (S1-S2). In the Wilson state, (8) and (36) put a strict
+deficit below q_0 on two classes of local vectors: same-time strip sources of bounded physical width, and same-time
+axial packets of one plaquette. The row also proves that neither class can be total: abelian time-zero strip algebras
+are not cyclic (S14), and the bounded-R classes miss the near-threshold vectors (S22, S36-S37). The infrared estimates
+(32)-(34) are uniform in beta and in the volume, but they allow spectral weight in every interval (0, eps) (L386; the
+same remark is the outline's example at L588-596). So the gap question stays exactly at the row's OPEN line L435: a
+common q < q_0 for the ratios (12) on a total matched family, together with the construction and matching themselves.
+No numeric run was made or needed.
+
+RESULT: HOLDS - check of row 1204 (`library/gap-solve21-astra62.md`), line by line by hand, by Claude Opus 5.5 (max) on the Mac mini Claude worker as FINISH row 1210, cross-provider; positive claims first: (1) and (2), (8) with (3)-(7), (21) and (26) with (22), (23), (27), (32)-(35) with (30), (31), and (36) all HOLD; then everything else: 60 statements in 61 PROVED paragraphs, 60 HOLD, none needs correction, none FAILS; conditional as the file states: (12), (18), (25) and totality under the Wightman and matching hypotheses, and (3)-(8) through PL5 (PH1 Lemma 2 under the frozen LG1); the cited row 1161 (18)-(20) and c_0 (row 1162) and row 1173 (8) (C33) were already checked HOLDS; OPEN as the row says: a common q < e^{-pi/2}/2 for the ratios (12) on a total family of matched local states, the 4D SU(2) construction with full matching, and the Jaffe-Witten gap.

@@ -197,3 +197,75 @@ operation. With that object the "threshold comparison" is Proposition TI (an ide
 statement about determining sets, not about thresholds. In Balaban's own (1.72) the prefactor does not depend on the
 island family at all, so there (8.6:eq-prefactor-monotone-a) holds with equality, given that his regrouping is valid
 (this is the account's representation lemma, cited in its Definition 8.6:def-island-representation).
+
+**3.6 Premise (BG) is supplied by Balaban's new determining set. PROVED GIVEN CMP 122b (1.33)-(1.35) (read on the page
+image, p. 365) and CMP 119 (2.16).** Balaban: "Now we introduce a new determining set B_k, and a new background field
+U_k. We define B_k as equal to B''_k on Z^c, and to {Z^((k))} on Z. More precisely
+    B_k = {Gamma_j}, where Gamma_j = Gamma''_j cap Z^c for j < k, Gamma_k = Gamma''_k cup Z^((k)).    (1.33)"
+with new variables V = V'' on Z^c and V = V'_k V_Lambda = V_k on Z (1.34), "and V_Lambda ... equal to V_k outside Lambda",
+and U_k = U_(B_k)(V) (1.35). So on the class region Z, which contains every island X_a, the determining set has only its
+level-k piece: the history of the island is gone from it. In the term (O, X') the region of X_a lies in the small-field
+region Lambda_k of a history with no large field there, where the determining set is also level k (Gamma_k = (Omega_k)^((k))
+on Omega_k, CMP 122a (1.13)); and off X_a^(~-6) the two terms have the same outer datum O, hence the same live
+components with the same admissible subsequences (Definition 8.6:def-island-representation, outer data). The field
+U_(k,Q)(V_k) = U(B_k(Q^(~4)), M(Q_k^(s*) V_k)) of (2.16) depends only on B_k near Q and on V_k. Hence on every cube Q of
+X_a^(~-6) it is the same function of V_k in the two terms. QED
+
+**3.7 The cube inclusion (G). PROVED (geometry), with Balaban's layer convention.** Write H_X for a history whose
+class component at X_a is healed (term X) and H_X' for one with no large field at X_a (term X'), with the same outer
+datum and the same other islands. Near X_a, Omega_k^c is contained in X_a in H_X (X_a is a connected component of
+Lambda_k^c and Omega_k^c is contained in Lambda_k^c because Lambda_k is contained in Omega_k). Let Q be a cube of
+Omega'_k^(~4) (history H_X') near X_a that is not a cube of X_a^(~-6). Then Q is more than six layers from X_a and at
+least four layers from every other part of Omega_k^c, so Q is a cube of Omega_k^(~4) in H_X. So every cube on which the
+term X' carries a (2.17) factor near X_a carries the same factor in the term X (by 3.6), either from chi_k(X_a^(~-6)) or
+from the old chi_k(Omega_k^(~4)). Layers are counted in the same cubes for the shrinking ~4 and the enlargement ~-6;
+this is Balaban's convention as I read it, not checked against a definition in CMP 119.
+
+**3.8 Result for H-C6a. PROVED GIVEN the cited Balaban displays (TI, 3.1, 3.6, 3.7).** For two admissible families
+X containing X', the top-level small-field function of O_(O,X) on the cubes near the islands of X minus X' is the product
+of the term X' function with further characteristic functions. So (*) holds, in the corrected form
+    chi_a^prep (the product of all top-level functions of O_(O,X) on the cubes of X_a^(~-6)) <= chi_a^step,
+and with it the account's (8.6:eq-prefactor-monotone-a), since its other steps (CA-II:102758-102800 and 102818-102830)
+compare factors that are equal. Not checked here: those other steps of the account's proof (the completed action, the
+coupling profile reset, the members that read an island); the account's representation lemma that puts the prepared
+density in the form of Definition 8.6:def-island-representation; and Balaban's regrouping in (1.72), which holds up to
+his "equivalence" after the reversed Faddeev-Popov step (CMP 122b p. 378: "equivalent, but not equal").
+Standing: proved by Claude from Balaban's printed displays, read once on page images; not checked by another model.
+
+**3.9 Two facts used above, now read (CMP 119 pp. 254-255, page images).** (2.1): Omega_1 contains Lambda_1 contains
+Omega_2 contains ... contains Omega_k contains Lambda_k, so Lambda_k is contained in Omega_k and Omega_k^c in Lambda_k^c.
+(2.2): Gamma_0 = Omega_1^c, Gamma_j = Omega_j^((j)) minus Omega_(j+1)^((j)) for j = 1, ..., k - 1, Gamma_k = Omega_k^((k)),
+B = union of the Gamma_j; so on Omega_k the determining set is the level-k piece. Both are used in 3.6 and 3.7.
+
+**3.10 Correction of the account's identification (a correction of their text, with the failing case). PROVED from the
+cited displays.** The lemma says that for X the top-level functions on X_a "are those of the preparation, [CMP 122a,
+(1.3)-(1.4)]", taken "on the same cubes" as the step's. Read literally this is false on part of X_a:
+- (1.3) is a level-j function for each j; at the top level only (1.4) with j = k - 1 is present, and it is defined for
+  cubes Q' in (Omega_k^(~4) minus Omega_(k+1)^~) cap Z (CMP 122a p. 178).
+- X_a contains points of Omega_k^c. Reason: by condition (ii) of CMP 122a Section 1 the large fields of the component
+  were created at levels at most h < k, so X_a meets Omega_j^c for some j <= h, and Omega_j^c is contained in Omega_k^c by
+  (2.1). So X_a has cubes outside Omega_k^(~4) (its core and the four-layer collar).
+- On such a cube Q the functions (1.3)-(1.4) carry no level-k factor, while the term X' (no large field at X_a) carries
+  the (2.17) factor on Q. For a block field V_k with one plaquette of Q^~ where |U_(k,Q)(V_k, dp) - 1| >= eps_k eta^2,
+  the first is 1 and the second is 0. So the sentence "wherever the preparation's characteristic function on such a
+  cube equals 1, so does the step's" fails for the objects it names.
+The displayed inequality (8.6:eq-prefactor-monotone-a) is not affected: Balaban's prefactor on a healed island also
+carries chi_k(X_a^(~-6)) (3.1), which covers every cube of X_a, and with it 3.8 holds. Suggested replacement for the
+sentence (unproved wording, for the lead): "For X these characteristic functions are chi_k(X_a^(~-6)) of [CMP 122b,
+p. 378], combined with chi_k(Omega_k^(~4)) [CMP 122a, p. 184]; on X_a the determining set is level k by [CMP 122b,
+(1.33)]; they are the factors of [CMP 119, (2.17)] on a set of cubes containing those of X_a, possibly times further
+characteristic functions."
+
+**3.11 Status of H-C6a after this row.**
+
+| Statement | Label | Rests on |
+|---|---|---|
+| TI: (1.4) at j = k - 1 is the (2.17) factor (same field, cubes, threshold) | PROVED | CMP 122a p. 178, CMP 119 p. 257 |
+| P: the preparation's own top function chi_k^((N)) has threshold 3(1 - beta/2) eps_k eta^2 > eps_k eta^2, so (*) cannot be proved from it | PROVED | CMP 122a (1.24) |
+| 3.10: the account's named objects (1.3)-(1.4) leave the core cubes of X_a without a level-k factor, so its domination sentence fails as written | PROVED | CMP 122a p. 178, condition (ii); CMP 119 (2.1) |
+| BG: the (2.16) field on the cubes of X_a^(~-6) is the same function of V_k in the terms X and X' | PROVED GIVEN | CMP 122b (1.33)-(1.35), CMP 119 (2.1)-(2.2), (2.16) |
+| G: cube inclusion near X_a | PROVED GIVEN | Balaban's layer convention (read, not checked against a definition) |
+| (*) in corrected form, hence (8.6:eq-prefactor-monotone-a) | PROVED GIVEN | 3.1 (CMP 122b p. 378, (1.72)), BG, G, the account's other proof steps |
+
+All of it: Claude Opus 5.5 from Balaban's printed pages, read once; checked by no other model. A check should re-read
+CMP 122b pp. 365, 377-379 and CMP 122a pp. 178-184 on the page images.

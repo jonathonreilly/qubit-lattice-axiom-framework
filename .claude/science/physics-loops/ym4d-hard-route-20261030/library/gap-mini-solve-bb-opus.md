@@ -182,3 +182,134 @@ them.
 Either way row 1299 4.7's sentence "provided q > p_0 (equivalently p_1 > p_0)" is wrong as an equivalence: in the
 account q > p_0 holds and p_1 > p_0 fails. Which reading is right needs CMP 116 (paper II, where Balaban's p_1(.) for
 the fluctuation box is presumably introduced), which is not on this machine (row 1264: Project Euclid bot check).
+
+## Step 6. What the two p_1's do to the carry's cut half (19:35Z by date -u)
+
+Context (READ, row 1299 4.4): Lemma A and Lemma TL-SA apply to "admissible cuts", whose clause (C2) asks that every
+potential of the step that reads a bond b obey (UM1) and be holomorphic on a declared complex box containing the real
+box |B(b)| < b_hi. For row 1268's frame comparison (its 7.5) the two cuts are f^psi_b = 1{N_b < T^psi} and
+f^phi_b = 1{N_b o Psi_c < T^phi}, with thresholds T a fixed multiple of the frame's delta (row 1268 2.1), so in chart
+units b_hi = A_1 (log theta)^(p_0) (1 + O(theta^(-1/2) polylog)), theta = g^(-2).
+
+**6.1 Lemma NC1 (non-containment under the account's p_1; PROVED, elementary).** Let C_1 > 0 and A_1 > 0 be fixed
+before gamma, as in the account's order of choice (H3) (CA-I L1143-1165: A_1, A_0, C_0, C_1, ... are chosen before
+gamma), and let p_1 = p_0 - 4r - 1 (CA-I L1359-1363). Then for every g in (0, gamma] with
+    log g^(-2) > (C_1/A_1)^(1/(4r+1))                                                              (6.1)
+the real box {|B| < A_1 (log g^(-2))^(p_0)} is not contained in {|B| < C_1 (log g^(-2))^(p_1)}.
+*Proof.* The ratio of the radii is (A_1/C_1)(log g^(-2))^(p_0-p_1) = (A_1/C_1)(log g^(-2))^(4r+1), which exceeds 1
+exactly when (6.1) holds. QED. Along the pin runs theta_k >= X + c_0 k (row 1268 Lemma S), so (6.1) holds at every
+level once log X > (C_1/A_1)^(1/(4r+1)).
+
+*Consequence (PROVED from NC1 and READ).* If some potential of the carry's step that reads a free bond carries only the
+box {|A| < C_1 p_1(g_k)} of CMP 119 (3.43) (equivalently the account's polydisc D of 4.4, CA-I L9965-9972), then (C2)
+fails for row 1268's delta-scale frame cuts at every level above the floor of NC1, and Lemma A and Lemma TL-SA (row
+1299 4.4) do not apply to those cuts as stated. If instead every potential of the step reads the free bonds only
+through configurations in Balaban's spaces U^c(Y, alpha_0, alpha_1) of CMP 119 (2.28) (radii g C_i (log
+g^(-2))^(q_i), q_i = q >= 3p_0+3r+1 in the account), then in chart units their boxes have radius of order
+(log g^(-2))^q and (C2) holds above a floor, which is row 1299 4.7's argument with its "equivalently p_1 > p_0"
+deleted.
+
+**6.2 Which case the carry is in (READ, partly OPEN).**
+- CMP 119 p. 276 attaches the (3.43) box only to "the remaining terms", those of the expansion (I.6.41) whose
+  localization domains are not contained in Lambda_(k+1); terms with Y in Lambda_(k+1) "satisfy exactly all the
+  conditions of those lemmas" with the analyticity space (I.6.34) (the account's 4.17, CA-I L53400-53430 and
+  L53526-53545, reads (I.6.34), (I.6.41) as CMP 116 (1.34), (1.41) in the continuous numbering of CMP 109 and 116).
+- The carry runs the all-small-field step on the pin route (row 1293, READ of CMP 119 (3.15)-(3.16)). If in that
+  step Lambda_(k+1) is the whole torus, no remaining term occurs, and the (3.43) box is not read.
+- OPEN: whether CMP 116 (1.34), the analyticity space of the terms inside Lambda_(k+1), carries a fluctuation factor
+  {|A| < C_1 p_1(g)} as (3.43) does, or only configuration radii. CMP 116 is not on this machine (row 1264: Project
+  Euclid bot check, not bypassed). The account's polydisc D (4.4) carries the p_1 factor for both A and A_k.
+- In the large-field papers the p_1 scale is a cut, not only a box: CMP 122a (1.27) cuts the approximate fluctuation
+  at 2 delta'_j = 2 g_j A_1 p_1(g_j), and the account's 4.23 (CA-I L93565-93568) lets its real variables range over
+  |B| < b'_k = A_1 p_1(g_k). CMP 119's own fluctuation cuts are at the p_0 scale: (3.3) at 2 delta_k (page image
+  p. 265) and (3.16) at delta_k.
+
+**6.3 Repair if the p_1 box is read (ARGUED, with one PROVED lemma).** If the step's potentials carry the p_1 box
+with margin, i.e. are holomorphic and obey (UM1) on {|B(b)| < 2 A_1 p_1(g_k)} (a reading of (I.6.34)/(3.43) with
+C_1 >= 2 A_1(1 + o(1)), OPEN), then insert in both frames the internal cut 1{N_b < A_1 p_1(g_k^frame)} by the
+decomposition of unity prod_b [f_b + (1 - f_b)], and keep the delta-scale cut of CMP 119 (3.3), (3.16) as an extra
+indicator. The internal cuts are admissible ((C1)-(C2) with b_lo, b_hi = A_1 (log theta)^(p_1) (1 + O(theta^(-1/2)
+polylog))), so Lemma TL-SA applies to them with eta = exp(-gamma b_lo^2/2). The extra indicators differ between the
+frames only where some bond has |B(b)| >= A_1 (log theta)^(p_0)(1 - o(1)), a failed bond of the internal cut; SA's
+failed-test bound (FG12) ("Multiplication by additional indicators only improves the bound") then bounds that part by
+the same scheme with exp(-gamma A_1^2 (log theta)^(2 p_0)/4), smaller still. What stays to be checked in this repair:
+that a potential reading a failed bond is never selected (SA's convention L14321-14323, "If a potential is defined
+only on a box, the corresponding sharp cutoff is kept wherever that potential occurs"), so that no potential is
+evaluated between the two radii.
+
+**Lemma S1 (summability at the p_1 scale; PROVED, elementary).** Let gamma, A_1 > 0, p_1 >= 1, c_0 > 0, and let
+theta_k >= X + c_0 k for k >= 0 with X >= e. Put eta_k := exp(-(gamma/2) b_k^2) with b_k >= (A_1/2)(log
+theta_k)^(p_1). If log X >= l_0 := (16/(gamma A_1^2))^(1/(2 p_1 - 1)), then
+    sum_(k >= 0) eta_k <= X^(-2) + 1/(c_0 X),
+which tends to 0 as X -> infinity.
+*Proof.* (gamma/2) b_k^2 >= (gamma A_1^2/8)(log theta_k)^(2 p_1) = (gamma A_1^2/8)(log theta_k)^(2 p_1 - 1) log
+theta_k >= 2 log theta_k, since log theta_k >= log X >= l_0 gives (log theta_k)^(2 p_1 - 1) >= 16/(gamma A_1^2).
+So eta_k <= theta_k^(-2) <= (X + c_0 k)^(-2), and sum_(k>=0) (X + c_0 k)^(-2) <= X^(-2) + int_0^infinity
+(X + c_0 t)^(-2) dt = X^(-2) + 1/(c_0 X). QED.
+In the account p_1 > (p_0 + (d+5) r_0)/2 >= 5r/2 + 9r/2 > 1 (CA-I L1353-1363 with d = 4, r_0 >= r >= 2), so Lemma
+S1 applies, and row 1268's sum of nu_k stays bounded and tends to 0 with the cut part read at the p_1 scale: the
+summability of the cut half survives the repair.
+
+**6.4 Status after this step.**
+| Statement | Label |
+|---|---|
+| In the account p_1 = p_0-4r-1 < p_0 < q (q >= 3p_0+3r+1) | READ (CA-I L1353-1366, L29124-29126) |
+| Row 1299 4.7's "q > p_0 (equivalently p_1 > p_0)" is false as an equivalence | PROVED (from READ) |
+| CMP 119's fluctuation cuts (3.3), (3.16) are at the p_0 scale; its (3.43) box is at the p_1 scale | READ (page images pp. 265, 268, 276) |
+| Lemma NC1: under the account's p_1 the delta-scale cut box is not inside the p_1 box above the floor (6.1) | PROVED |
+| (E0) / (C2) for the delta-scale frame cuts: holds if the carry's potentials carry only configuration radii (2.28); fails if any carries only the p_1 box | PROVED as a dichotomy; which case: OPEN (needs CMP 116 (1.34)) |
+| Repair at the p_1 scale (internal cut plus extra indicators) | ARGUED; its summability part, Lemma S1, PROVED |
+| The account's own 4.3 second part takes the (3.43) box with the p_0-scale cutoff radius together (CA-I L4176-4178) | READ; whether this is consistent is the same OPEN question (a statement about their text, not a claimed error) |
+
+## Step 7. Resolution: the carry's box is CMP 116 (1.34), so (E0) holds; the p_1 box is for straddling domains (20:00Z by date -u)
+
+**7.1 READ (CA-I, 4.4, the remark after the post-step space).**
+- Item (b), "Interior domains Y in Lambda_(k+1)" (L10031-10038): "Here the space of [B-CMP116 (1.34)] is
+  U^c_(k+1)(Y, (1+beta) alpha_0, (1+beta) alpha_1, alpha_0) x {B : |B| < eps_1 g_k^(-1) on Y}, where B and eps_1 are
+  the field variable and the constant so denoted in [B-CMP116 (1.34)]."
+- Item (c), "Straddling domains, those Y that are not interior in the sense of item (b), treated in [B-CMP119]"
+  (L10044-10050): this is where CMP 119's (3.43) applies (the "remaining terms", CMP 119 p. 276).
+- B is in chart units: its physical size is g_k |B| < eps_1, a fixed small-field radius (a box |B| < eps_1/g_k in
+  physical units would leave the small-field region, so the chart reading is the only consistent one; the same scaling
+  as CMP 119 (1.18), where the cut on the scaled A is g_0^(-1) delta_0).
+
+**7.2 Lemma C1 (containment; PROVED, elementary).** Let theta = g^(-2), A_1, eps_1 > 0, p_0 >= 1. If
+    theta^(1/2) (log theta)^(-p_0) > 2 A_1 / eps_1,                                                    (7.1)
+then the real box {|B| < 2 A_1 (log theta)^(p_0)} lies inside the polydisc {|B| < eps_1 g^(-1)} = {|B| < eps_1
+theta^(1/2)}. *Proof.* 2 A_1 (log theta)^(p_0) < eps_1 theta^(1/2) is (7.1) rearranged. QED. Since theta^(1/2) (log
+theta)^(-p_0) -> infinity, (7.1) holds for theta >= theta_1(A_1, eps_1, p_0); along the pin runs theta_k >= X, so it
+holds at every level once X >= theta_1. In the account's order of choice A_1, p_0 and eps^I_1 are fixed before gamma
+(CA-I L1143-1165), so the floor is a constraint on gamma (equivalently on X), which (H3) allows: no condition bounds a
+coupling from below.
+
+**7.3 Corollary E0 (PROVED GIVEN the READ items 7.1 and row 1268/1299's frame data).** On the pin route the carry runs
+the all-small-field step (row 1293's reading of CMP 119 (3.15)-(3.16)), so every localization domain is interior and
+no straddling domain, hence no (3.43) box, occurs. The step's potentials then carry:
+- older terms: Balaban's configuration spaces of CMP 119 (2.28), radii g C_i (log g^(-2))^(q) in the configuration,
+  with q >= 3p_0 + 3r + 1 > p_0 (CA-I L1365-1366), so in chart units their fluctuation radius exceeds A_1 (log
+  theta)^(p_0) by a factor of order (log theta)^(q - p_0) above a floor;
+- the step's own terms (the expansion (1.41) of CMP 116): the space (1.34) with the box {|B| < eps_1 g_k^(-1)}.
+The two frame thresholds of row 1268 7.5 satisfy b_hi = A_1 (log theta)^(p_0) (1 + O(theta^(-1/2) polylog)) <= 2 A_1
+(log theta)^(p_0) above a floor, so by Lemma C1 both lie inside every declared box above the floor max(theta_1, the
+floor of the configuration radii). Hence (C2) of row 1299 4.4 holds for the frame cuts, (C1) holds with b_lo = A_1
+(log theta)^(p_0)(1 - O(theta^(-1/2) polylog)), and (E0) holds: both thresholds lie "in the range where the
+construction holds", above the CMP 116 (2.31) floor (the account's 4.3 condition, already assumed by row 1268) and
+inside the declared boxes. What this uses beyond READ: that SA's (UM1) potential types in the carry's presentation are
+exactly the older terms, the step's (1.41) terms and the inserted vertex of row 1299 Lemma V-SA, and that the inserted
+vertex is holomorphic on the (1.34) box (ARGUED: it is a polynomial vertex in the fluctuation, row 1268 Lemma RS).
+
+**7.4 What changes in the record.**
+- Row 1299 4.7: its conclusion "(E0) above a floor" stands; its reason does not. The box is not the ci-form's R = l^q
+  for the step's own terms, and "equivalently p_1 > p_0" is false in the account (Step 4). The right box for the
+  step's own terms is CMP 116 (1.34) as transcribed at CA-I L10031-10038, and the right condition is Lemma C1's (7.1),
+  which needs no relation between p_1 and p_0.
+- Row 1268's wording of (E0), "inside the fluctuation domain [B-CMP119 (3.43)]", should read "inside the domain of
+  [B-CMP116 (1.34)] (interior domains)". Read literally with the (3.43) box and the account's p_1 < p_0, (E0) would
+  fail (Lemma NC1); that box belongs to straddling domains, which the carry does not meet.
+- Caution for later rows: the account's fluctuation polydisc D of 4.4 (CA-I L9965-9972, radius C_1^fl p_1(g_k) for A
+  and A_k) is a p_1-scale box. A carry step that took D as the box of its cut comparison would fail (C2) by Lemma NC1.
+  Lemma S1 (Step 6) is the summability needed if a p_1-scale internal cut is ever required.
+- (P4) of row 1299 4.8: its clause "q > p_0" is READ (q >= 3p_0+3r+1); the remaining clauses ((UM14), (UM19),
+  (UM23), (UM26') in one order) are SA's constant conditions; (UM23) at b_lo holds above a floor because b_lo grows
+  like (log theta)^(p_0) while n_b, Theta and SA's Gaussian rate are fixed first. Not checked here: (UM14), (UM19),
+  (UM26') themselves.

@@ -8,8 +8,7 @@ Research-stage working state. Labels: PROVED, ARGUED, GUIDE, OPEN, as the row as
 
 ## Status
 
-Step 0 (reading) and Step 1 (choice of attack) done, written 2026-11-20T15:10Z (date -u). Next: Step 2, reading the account's
-one-step kernel and coefficient theorem (YM4_EM) for the statement of the item.
+Steps 0-1 done; Step 2 (reading the step) done, written 2026-11-20T15:18Z (date -u); Step 1 written 2026-11-20T15:10Z (date -u). Next: Step 3, Theorem PE and its proof.
 
 ## Repo search (rule "Repo first")
 
@@ -66,4 +65,61 @@ the cut, and what EM assumes of the localization and of complex data). Step 3: s
 those definitions allow (Lemmas: flip invariance, even Cauchy estimate, near-evenness from Lemma SW, assembly). Step 4:
 check the flip invariance against each factor of the step (action, Haar and chart densities, soft axial weight, cut,
 inherited list) in Balaban's CMP 119 as read in rows 1268 and 1280. Step 5: consequences, labels, RESULT.
+
+## Step 2. What the step is, in the account and in Balaban (READ; written 2026-11-20T15:18Z by date -u)
+
+Sources: Sussman and Alpoge, `YM4/EM/YM4_EM.tex` at c7fef8b21b58 (2001 lines; credit Ethan Sussman and Levent Alpoge,
+with Claude and Codex as authors of their text), fetched by URL into a scratch folder outside the repository, cited
+EM:n; Balaban, CMP 119 (1988) 243-285, the owner's copy, pp. 247, 267, 268 read as page images.
+
+**2.1 The step (EM:544-578).** At real admitted data the step is the actual finite integral
+    E_(k+1)[x_k, f](W) = log int K_(k,theta_k)(W, dV) exp(-x_k A(U_k(V)) + S_f(U_k(V))) + x_k A(U_(k+1)(W)) - S_f(U_(k+1)(W)),
+where K is "the fixed all-small-field kernel on M(V) = W. It uses the given fibre density, gauge weight and
+fluctuation cut. In the resolved fibre chart its real free array is B and its field is V'(W, B)". The frame theta_k fixes
+"the lattice partitions, Gaussian references, real fluctuation coordinates and tests"; the Wilson weight x_k does not
+(EM:502-506), tau_k = x_k/theta_k. The background identities V'(W, 0) = M^k U_(k+1)(W), U_k(V'(W, 0)) = U_(k+1)(W) are
+required of the supplied backgrounds (EM:550-555). The inherited list S_f is a sum of fixed functions of the
+configuration (EM:538-543).
+
+**2.2 The cut and the Gaussian (EM:580-606, EM:619-624).** "In the analytic integral presentation the sharp test is a
+fixed Borel restriction in the real free variables." The Gaussian reference is exp(-<B, Delta B>/2), Delta = Delta_A +
+Delta_G (action and gauge precisions), with the weight shift (tau_k - 1)<B, Delta_A B>/2 as in (em:eq-frozen-gaussian-rewrite).
+
+**2.3 The localization (EM:629-647).** "One prescribed convergent localization gives the pointed output E_(k+1) after
+the specified scalar has been separated". It is required to be covariant under the orthogonal maps O_(r,W) of the real
+free coordinates that admitted isometries r induce: "This change transports the cut, completed response, measure factors
+and point z to rz". Nothing is said about the map B -> -B.
+
+**2.4 The output and the coefficient (EM:678-706, EM:840-843, EM:1173-1205, EM:1338-1384).** E_(k+1) = N_(k+1) +
+G_(k+1,tau_k) + F_(k+1); the unmarked residual obeys ||E^u_(k+1) - N_(k+1) - G_(k+1,tau_k)|| <= C delta(theta_k) on the
+absolute core (Proposition em:prop-prefix-formation), delta(y) = A_1 y^(-1/2) (log y)^(p_0) (EM:345), 2 p_0 > 1
+(EM:874-875). Sum_X N_(k+1) = log Z_k(W) - log Z_k(1), Z_k the "constrained reference Gaussian normalizer without a
+fluctuation cut"; the total of G is background-free. The coefficient map b_j (Proposition em:prop-companion-coefficient)
+is the second moment of the companion kernel, the limit of the torus Hessians at the trivial datum P_o; it is linear,
+real on real data, |b_j(E)| <= C a^(-2) cal(A) for a family of norm cal(A) on a core of physical radius a, and it does not
+depend on the coherent localization of a physical total. Theorem em:thm-coefficient-envelope: b_(k+1) = b^0 + f_(k+1) +
+q_(k+1) with f_(k+1) = b_(k+1)(F^u_(k+1)); its bound |f| <= C theta_k^(-1/2) (log theta_k)^(p_0) is exactly the norm bound
+on F^u times the fixed extraction cost of the absolute core (EM:1379-1384). So EM's envelope is a size bound; nothing in
+EM uses the structure of F^u.
+
+**2.5 Balaban's all-small-field step (CMP 119 pp. 267-268, (3.15)-(3.16)).** After the scaling A'_k = g_k A_k the step
+is an integral over the free variables A_k of
+    exp[-(1/2) <A_k, C* Delta^(k) C A_k> + P^(k)(g_k, U_(k+1), A_k)]
+times characteristic functions; the configuration inside P^(k) is U_k(exp i[g_k C A_k - h D~(g_k C A_k)] V^(k)), so it
+depends on g_k and A_k only through g_k A_k, and the inherited terms enter as (E_k + R_k + B_k)(that configuration) minus
+their value at U_(k+1). The scalars in front (log g_k d(g)|B(Gamma)*|, log sigma_0 |B(Gamma)*|, -log z (L^4 - 1)|Gamma|)
+depend on counts only, not on the field. The small-field cut is introduced on the normalized fluctuation itself, (3.16):
+chi(sup over b in (box'~2)^(k)* of |A_k(b)| < delta_k) on each cube, and the earlier small-field characteristic function
+"is equal to 1, because of the bound on A_k introduced by the second" (p. 268). So the all-small-field cut is a product
+of tests |A_k(b)| < delta_k on the free variables: it is even under A_k -> -A_k. The soft axial gauge (1.5) (p. 247) is
+an inserted average over gauge transformations with weight exp(-g_0^(-2) [1 - Re tr U^u(y, x)]) and a truncation of the
+contour variables U(y, x); it is a function of the configuration, and its truncation sits among the earlier
+characteristic functions. Balaban also states that a delta-function axial gauge averaged over lattice symmetries is an
+equivalent alternative (p. 247).
+
+**2.6 What this gives (READ).** In the step every factor except the Gaussian reference and the cut is a function of the
+configuration, and the configuration is a function of the background and of (scale) x (free variable); the
+Gaussian reference is a fixed quadratic form, and the cut is a fixed set that is even in the free variable (Balaban
+(3.16); EM's "fixed Borel restriction"). Neither EM nor CMP 119 uses this for the coefficient; EM bounds f by the norm of
+F^u. Step 3 uses it.
 

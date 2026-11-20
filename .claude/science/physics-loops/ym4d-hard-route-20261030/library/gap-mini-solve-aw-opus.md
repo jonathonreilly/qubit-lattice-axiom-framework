@@ -199,7 +199,7 @@ after Balaban. SA L-numbers are TeX lines.
   (UM17)-(UM24): |H(Z)| <= tau e^(-(K_*-2)N) <= C_tau (a + p_star) e^(-Lambda l(Z)), p_star = n_b e^(-gamma b^2/2),
   tau = e^Theta [A_a a + p_star] (L14560-14656). Union filing and local logarithm (UM25)-(UM30):
   e^(mu l(X)) |E(X)| <= tau B_* <= C (a + p_star) (L14658-14757). Holomorphy and uniform convergence on smaller
-  domains (L14762-14766). Insertion budget (L14793-14808): with a_* = min{W_0/2, 1/(4 e^Theta A_a)} and
+  domains (L14763-14767). Insertion budget (L14793-14811): with a_* = min{W_0/2, 1/(4 e^Theta A_a)} and
   p_star <= 1/(4 e^Theta), every total norm a <= a_* has tau <= 1/2; "reserve one additional potential slot of norm
   w_star <= a_*/2. The entire slot stays within (UM23) and hence within (UM24)-(UM30) ... The constants may depend on
   the fixed localization parameters and rate choices, but not on cutoff, torus size, old-level count or the auxiliary
@@ -228,9 +228,9 @@ conditions (UM19), (UM23), and (UM26) strengthened by a factor e (4.4).
 | (E3), (E3') one-term bound with tail set | (FG12); for an admissible product cut (4.4 (C1)) the same with the low threshold | READ; PROVED for admissible cuts in 4.4 |
 | (E4) convergence with margin | (UM24)-(UM30), with (UM26) strengthened by the factor e | READ; margin in 4.4 |
 | (E5) common post-processing | EM L563-581, L665-700 (as row 1268 read them); SA's union filing (UM29) is threshold-free | READ |
-| (E6) vertex as one more element type | SA's insertion slot (L14793-14808) | READ; used in 4.5 |
+| (E6) vertex as one more element type | SA's insertion slot (L14793-14811) | READ; used in 4.5 |
 | (E0) both thresholds admissible | (UM23) at the low threshold and the box condition (L14333-14336) at the high one | ARGUED in 4.7 |
-| (CE) Lemma PH form, fixed eps_0 | fixed J and cut sets, fixed Cauchy circles (L14552-14556), holomorphy principle (L14236-14242, L14762-14766), threshold a_* fixed (L14793-14808) | READ; 4.6 |
+| (CE) Lemma PH form, fixed eps_0 | fixed J and cut sets, fixed Cauchy circles (L14544-14546), holomorphy principle (L14236-14242, L14763-14767), threshold a_* fixed (L14793-14811) | READ; 4.6 |
 
 Next: Lemma TL-SA (two cuts), Lemma V-SA (vertex), then (CE) and the consequences (4.4-4.8).
 
@@ -244,7 +244,7 @@ Borel {0,1}-valued function of the real free variables, is an *admissible cut wi
   (C3) f_b reads only the free variables of a fixed neighbourhood of b (a fixed number of fine-cube layers around its
        incident cubes), and that width is included in the collar of every structural identity, as SA permits:
        "A fixed number of additional neighboring cube layers is permitted only if it is part of the assigned collar
-       in every structural identity; its fixed width is then included in the constants" (L14346-14349).
+       in every structural identity; its fixed width is then included in the constants" (L14344-14347).
 SA's own cut chi_b = 1{|B(b)| < b} is admissible with b_lo = b_hi = b. In the frame comparison of row 1268 7.5 the two
 cuts are f^psi_b = 1{N_b < T^psi} and f^phi_b = 1{N_b o Psi_c < T^phi} with |N_b o Psi_c - N_b| <= Lip |c - 1| and
 N_b = |B(b)| in the common chart (row 1268 7.3 (iii)); both are admissible with
@@ -319,8 +319,8 @@ and let a_w be the (UM1) norm of the inserted type w := sum_x log(1 + q_x), so a
 the fixed geometry (|log(1 + q)| <= 2 |q| for |q| <= 1/2, and each w_x has a domain of bounded size). Then for every X,
     e^(mu l(X)) |E^1(X) - E^0(X)| <= (4 c_1 B_*/a_*) rho,   once R := a_*/(2 a_w) >= 2.
 *Proof.* Put the coupling zeta on the inserted type: the integrand carries e^(zeta w) = prod_x (1 + q_x)^zeta. For
-|zeta| < R the total norm is at most a + |zeta| a_w <= a_*, so SA's insertion budget (L14793-14808) gives tau <= 1/2
-and (UM24)-(UM30); the local logarithm E(zeta; X) exists, is holomorphic in zeta (SA L14236-14242, L14762-14766), and
+|zeta| < R the total norm is at most a + |zeta| a_w <= a_*, so SA's insertion budget (L14793-14811) gives tau <= 1/2
+and (UM24)-(UM30); the local logarithm E(zeta; X) exists, is holomorphic in zeta (SA L14236-14242, L14763-14767), and
 e^(mu l(X)) |E(zeta; X)| <= B_*/2. E(0; X) = E^0(X) and E(1; X) = E^1(X). Cauchy's estimate on circles inside |zeta| < R
 gives |dE/dzeta (t)| <= sup|E|/(R - t) for 0 <= t <= 1, so |E(1; X) - E(0; X)| <= sup|E| log(R/(R - 1)) <= 2 sup|E|/R
 for R >= 2. Hence e^(mu l(X)) |E^1(X) - E^0(X)| <= B_*/R = 2 a_w B_*/a_* <= (4 c_1 B_*/a_*) rho, using a_w <= c_1 rho and
@@ -332,11 +332,11 @@ that the regular-step expansion have the form of its Lemma PH (fixed reference G
 and contours; holomorphic elements), and converge with majorant bounds when every element obeys
 |v_e| <= eps_0 e^(-kappa d(e)) with a FIXED eps_0. SA's chapter has this form: the terms (UM3) are finite sums of
 products of J-integrals against one normalized Gaussian with fixed cut sets, with the s-derivatives taken by Cauchy
-integrals on fixed circles (L14552-14556); holomorphy in parameters with fixed cut sets is SA L14236-14242; the series
-is dominated by majorants built from the norms only (L14762-14766); the weight tau sits in the matrix perturbation
+integrals on fixed circles (L14544-14546); holomorphy in parameters with fixed cut sets is SA L14236-14242; the series
+is dominated by majorants built from the norms only (L14763-14767); the weight tau sits in the matrix perturbation
 (L14244-14249). The convergence threshold is the (UM1) total norm a_* = min{W_0/2, 1/(4 e^Theta A_a)}, whose constants
 "may depend on the fixed localization parameters and rate choices, but not on cutoff, torus size, old-level count or
-the auxiliary Gaussian dimension" (L14806-14808). Row 1294's elements (i)-(v) obey the uniform bound of its Lemma EB
+the auxiliary Gaussian dimension" (L14807-14811). Row 1294's elements (i)-(v) obey the uniform bound of its Lemma EB
 on the collar polydisc, which is stronger than (UM1) (UM1 allows growth (1 + M^(-4) sum |B|^2)); the quadratic weight
 shift (ii) fits (UM1) as written, or can be moved into the matrices by L14244-14249. So (CE) holds with
 eps_0 := a_*/2 (keeping the insertion slot free), and the threshold does not shrink with the floor: row 1294 6.5's
@@ -363,7 +363,7 @@ constant, provided q > p_0 (equivalently p_1 > p_0; not checked against the acco
       K_1' := 2 e n_b (1 + e^Theta) B_* C_post,   K_2' := (4 c_1 B_*/a_*) C_post,
   the form row 1268 summed (its Lemma S and S''), with SA's constants (gamma, Theta, n_b, B_*, a_*) in place of the
   unread CMP 116 ones. The constants are uniform in the step, because SA's are independent of cutoff, torus size and
-  old-level count (L14806-14808), given that the premises hold uniformly along the run.
+  old-level count (L14807-14811), given that the premises hold uniformly along the run.
 - *Smooth half.* Row 1294's Proposition HAN is PROVED GIVEN (CE), (S) and Lemma SC; (CE) is now READ in SA (4.6). So
   Proposition HAN, row 1293's Theorem PE and Corollary FC-s, and row 1294's Corollary U' rest on SA's chapter and its
   premises, not on CMP 116.
@@ -393,3 +393,59 @@ factor n <= e^n absorbed into the weights e w_hat, and (UM26'). (4) Lemma V-SA: 
 a_w <= c_1 rho and the Cauchy step. (5) 4.6: that row 1294's elements fit (UM1) with the needed decay rate
 (kappa >= lambda_V) and that SA's tau-handling L14244-14249 covers the weight shift. (6) 4.7: the account's p_1
 versus p_0.
+
+## Step 5. State of the carry after this row, labels, credits (written 2026-11-20T17:04Z by date -u)
+
+**5.1 The one-cutoff carry on the pin route (rows 1256-1294) after this row.**
+
+| Input | Before this row (row 1294 Step 5) | After this row |
+|---|---|---|
+| cut half of (FC-1): (E0)-(E6) | readings of Balaban's CMP 116, not readable on this machine | supplied by SA's regular-gas chapter (L14276-14811) through Lemma A, Lemma TL-SA, Lemma V-SA (4.4-4.5), (E5) as row 1268 read EM, (E0) ARGUED (4.7); rests on premises (P1)-(P5) of 4.8 |
+| (CE) (input of Proposition HAN) | the account's regular-step expansion "quoted from CMP 116" | READ in SA's chapter (4.6), with a fixed threshold eps_0 = a_*/2 (no floor dependence); premises (P1)-(P4) |
+| route via the account's printed large-field machine | suggested by row 1294 Step 5 | fails: the machine is stated for a non-empty arrested set and takes the full-stage expansion as an input (Step 2) |
+| route via CMP 119 | not tried | fails: CMP 119 cites the cluster expansion of its paper II (CMP 116) and prints only changes (3.1) |
+| (M) margin reading | ARGUED as a reading | unchanged: EM states the covariance requirement without a quantified margin (EM L647-656); c_e "is fixed by the domain margin", a supplier choice; not decidable from EM |
+| 9.1:prop-blind-site-expansions | OUTSTANDING; route needs CMP 116 Section 2 | still OUTSTANDING; its route (CA-III L16634-16782, the sentence at L16663-16665: "would repeat the expansion of [CMP 116 Section 2] ... with island-blind inputs" and five points) can now start from SA's chapter at site (T); not attempted (it needs the account's site statements at (T), (L), (P), which CA-III cites by description) |
+| (V9), (DET)'s normalisation | OPEN | unchanged; held by row 1296 |
+| the account's premises; the infrared seed | OPEN | unchanged; the seed was not attacked |
+
+**5.2 Labels.**
+
+| Statement | Label | Where |
+|---|---|---|
+| The regular step is CITED in CA-I (4.3:thm-small-field-step); the large-field machine (4.24:thm-survivor-block-expansion) is stated for non-empty arrested sets and assumes the full-stage expansion; the cited-by-description statements have no defining text in CA-I | READ | 2.1-2.3 |
+| The regular step is not a case of the printed machine, so row 1294 Step 5's route fails | READ (deduced from 2.1-2.3) | 2.4 |
+| CMP 119 cites the cluster expansion and prints only changes; CMP 109's contents end at Section 5 | READ | 3.1 |
+| The CMP 116 refinement is part of T0-tree node R1 (owner b109) | READ | 3.2 |
+| Threshold-free totals cannot give the one-step cut comparison at a common input list | ARGUED | 3.3 |
+| Ultralocal two-cut bound; fails at the presentation | ARGUED, sketch | 3.4 |
+| SA prints the regular-gas expansion with the cut ((UM1)-(UM30)) and the Gaussian comparison theorem with proof ((FG1)-(FG12)); CA-I's activity bound is "not written out" | READ | 4.1 |
+| Premise status in the repository (hma Theorem 4, ci-form) | READ | 4.2 |
+| Lemma A (SA's chapter for every admissible product cut (C1)-(C3)) | PROVED (a statement about SA's derivation, checked line by line by me only) | 4.4 |
+| Lemma TL-SA (two admissible cuts: activities within 2 n_b (1 + e^Theta) eta, local logarithms within 2 e n_b (1 + e^Theta) B_* eta, eta = exp(-gamma b_lo^2/2)) | PROVED given SA's hypotheses and (UM26') | 4.4 |
+| Lemma V-SA (a local vertex of size rho changes the local logarithms by at most (4 c_1 B_*/a_*) rho) | PROVED given SA's chapter | 4.5 |
+| (CE) holds with eps_0 = a_*/2, not shrinking with the floor | READ (in SA) | 4.6 |
+| (E0) above a floor | ARGUED (needs p_1 > p_0, or q > p_0, not checked in the account) | 4.7 |
+| Theorem FCT' (row 1268) and Proposition HAN (row 1294) without CMP 116 | PROVED GIVEN (P1)-(P5) | 4.8 |
+| Mass gap; infrared seed | OPEN; not attacked | Step 1 |
+
+Every PROVED item above is by Claude Opus 5.5 and is not yet checked by another model. Rows 1268, 1293 and 1294,
+whose statements 4.8 feeds, are also unchecked by another model, except where check 1288 says otherwise.
+
+**5.3 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the outline
+`YM4_sketch_500.tex` (the regular-gas chapter, the local Gaussian comparison theorem, the insertion slot, the
+parameter-holomorphy principle) and the complete account CA-I/CA-III at 31a47c543775, and YM4_EM and the component
+manuscripts at c7fef8b21b58. Tadeusz Balaban: the renormalization-group construction, the cut decomposition and the
+cluster expansion that SA's chapter carries out (CMP 109, 116, 119). J. Dimock, for the ultralocal form recorded in
+`library/ultralocal_cluster_expansion.md` (cited in 3.4). The lane's frozen `hma`/`hm` notes (Claude drafts,
+Codex distillations, Claude checks) for UM4-UM6, UM14. Rows 1267, 1268, 1293, 1294 for the carry this row feeds.
+
+**5.4 Note for the lead (evidence only, no edit made).** (1) The carry's CMP 116 dependence was an access block, not a
+proof block: the outline prints the needed expansion. Any other lane that reads "CMP 116 Section 2 as the account
+reads it" (`library/lrb.md` change log item 8, `library/b109.md` L138-140, R1 in `library/t0-tree.md`) can check
+whether SA L13893-14811 serves it. (2) A precise next row on the carry: 9.1:prop-blind-site-expansions at site (T),
+starting from SA's chapter with the account's relative lengths (CA-III L16634-16782, the sentence at L16663-16665, Lemma 9.1:lem-blind-counts at
+CA-III L15938, Lemma 9.1:lem-island-geometry at L15478). (3) A cross-provider check of 4.4-4.5 is the cheapest way to
+make 4.8 count.
+
+RESULT: Row 1299 (Claude Opus 5.5 max, Mac mini worker 2, 16:33Z-17:05Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed was not attacked (no route off the record). Worked item: the one-cutoff carry's inputs that were blocked on Balaban's CMP 116, the cut half (E0)-(E6) of (FC-1) (row 1268) and (CE) (row 1294). READ: the complete account prints no regular-step expansion (4.3:thm-small-field-step is CITED; the large-field machine 4.24:thm-survivor-block-expansion is stated only for a non-empty arrested set and assumes the full-stage expansion; 4.6:prop-activity-bound is "not written out"), and CMP 119 only cites CMP 116's cluster expansion, so row 1294's suggested route fails; but Sussman and Alpoge's outline YM4_sketch_500 (with Claude and Codex as authors of their text, after Balaban) prints the regular gas with the cut in full (L13893-14811: the local Gaussian comparison theorem with proof, (UM1)-(UM30), and an insertion slot whose constants do not depend on cutoff, torus size or old-level count). PROVED, unchecked: Lemma A (the chapter holds for every admissible product cut), Lemma TL-SA (two admissible cuts give local logarithms within 2e n_b (1 + e^Theta) B_* exp(-gamma b_lo^2/2)), Lemma V-SA (a local vertex of size rho moves them by O(rho)); READ: (CE) with the fixed threshold a_*/2; PROVED GIVEN the outline's premises (UM1, UM4-UM6, UM14, its structural identities and constant conditions) and row 1268's other hypotheses: Theorem FCT' and Proposition HAN with no reading of CMP 116. OPEN: those premises (frozen hma Theorem 4 supplies UM4-UM6 and UM14 only for the Y family D4 on R4), p_1 > p_0 for (E0), (M), 9.1:prop-blind-site-expansions (its route can now start from the outline's chapter), (V9), (DET), the infrared seed, the mass gap. Output library/gap-mini-solve-aw-opus.md.

@@ -7,7 +7,10 @@ Queue row 1243 of `FINISH.md`, pinned at commit 5fe43dc83 on branch `claude/ym4d
 Started 2026-11-20T08:16Z (date -u). Worker: Claude Opus 5.5, max effort, Mac mini worker 3.
 No subagents. Labels: PROVED, ARGUED, GUIDE, OPEN. No numeric run is a proof step.
 
-## Step 0. Reading log (reading only; no new claim; written 08:55Z by date -u)
+Times: `date -u` read 08:16Z when this file was created and 08:56Z near the end. Per-step times written earlier in
+this file were estimates and were wrong (they ran up to 10:31Z); they are removed. The run ended about 08:58Z.
+
+## Step 0. Reading log (reading only; no new claim)
 
 Read at this pin: GOAL.md; FINISH.md sections Where it stands, How we work, Joining, Working efficiently, Rules,
 and the RESULT cells of rows 924-925, 1007, 1009-1010, 1216-1220, 1225, 1228-1229, 1233-1238, 1241-1246;
@@ -42,7 +45,7 @@ the RESULT lines of rows 1192, 1201-1202, 1204, 1211-1215, 1222, 1224, 1227, 123
 on the same brief now: 1241 (`gap-mini-solve-y-opus`), 1244 (`gap-mini-solve-aa-opus`), 1246 (`gap-solve28-astra62`);
 checks 1242 (of row 1233) and 1245 (of row 1236) are running. This row does not repeat their items.
 
-## Step 1. How best to attack it (judgement; ARGUED; written 09:25Z by date -u)
+## Step 1. How best to attack it (judgement; ARGUED)
 
 **1.1 What a proof must contain (cited, not new).** Beside the T0 chain, the gap clause reads (N-phys) only
 (Step 0). Modulo the ultraviolet carry (UNIV-K), (N-phys) is a lattice gap of Wilson SU(2) at one fixed weak
@@ -78,19 +81,19 @@ the band by an identity that fails for U(1), for frozen groups and for products 
 
 **1.3 Decision.** I found no engine of a new kind, and I do not claim an attack on the seed itself.
 
-Correction, written 09:52Z by date -u, before any Step 2 work. The first version of this section (09:25Z) said that
+Correction, written before any Step 2 work. The first version of this section said that
 the size of NA on typical fields was ARGUED only, and chose to prove it. That was wrong: row 1141 proved it and row
-1142 checked it (see the bullet above, now corrected). My rule-0a grep at 09:24Z covered `open-core.md` and the
+1142 checked it (see the bullet above, now corrected). My first rule-0a grep covered `open-core.md` and the
 FINISH rows that name "NA(omega)" or "Lemma FR"; it did not open rows 1018, 1022 and 1141, which state the bound in
 other words ("E lambda_x", "bare estimate"). The planned Step 2 is withdrawn, so this row does not repeat row 1141.
 
 New plan. The sharpest open form on file is (DEC) of row 1018 5.5, with its tests (row 1018 5.5 table) and the
 sign structure of the frame-twist Hessian (row 1011 7.3, row 1018 4.1-4.2: H = direct term - Var(current)). Step 2
-asks one precise question about it that I did not find on file: can an exact identity of the Wilson measure, with no
+asks one precise question about it, in a form I did not find on file: can an exact identity of the Wilson measure, with no
 frame and no symmetry, fix the SIGN of the non-abelian part of the net response at order-one coupling? I test the
 question against the comparison models already on file before claiming anything.
 
-## Step 2. The sign question (ARGUED; written 10:12Z by date -u)
+## Step 2. The sign question (ARGUED)
 
 **2.1 The question, made exact from statements on file.** For a pinned cell with boundary data omega and a
 boundary move B extended to the interior by a flow V, row 1018 Lemma FLOW (PROVED; Proposition A (ii) of row 1011)
@@ -106,11 +109,13 @@ stiffness. Known signs:
 - U(1), Gaussian (non-compact) form, any pin: delta H = 0 exactly, since the pinned free energy is quadratic in the
   boundary data with the classical Dirichlet-to-Neumann coefficient (PROVED, elementary; this is the "zero gain"
   of the abelian model, row 1011 tests).
-- SU(2), supremum over pins: delta H is mass-like and positive, the best uniform constant grows like b S
-  (row 1011 Proposition B', PROVED for all strength profiles; ARGUED for homogeneous strengths, check 1014).
-- SU(2), frame moves V = theta n on typical fields: the direct term carries a mass-like part >= (b/6) theta^2 NA
-  with NA of order 1/b per site (Lemma FR, FR+; row 1141 (8), checked by row 1142). So frame moves give a LARGER
-  upper bound on non-abelian fields than on abelian ones: the wrong sign for (DEC).
+- SU(2), supremum over pins: no pin-uniform bound by the classical action holds, so the supremum of delta H is
+  positive (row 1011 Proposition B', PROVED for the class with all strength profiles; the growth like b S and the
+  homogeneous-strength case are ARGUED, check 1014).
+- SU(2), frame moves V = theta n on typical fields: the direct term carries a mass-like part of order
+  b theta^2 sum |D n|^2 (row 1011 7.3, "Use"), and sum |D n|^2 >= NA/6 (Lemma FR, FR+) with NA of order 1/b per
+  site (row 1141 (8), checked by row 1142). So frame moves give a LARGER upper bound on non-abelian fields than on
+  abelian ones: the wrong sign for (DEC) (ARGUED from these PROVED pieces; the constants are not compared).
 - SU(2), typical pins at small coupling: delta H < 0 by the one-loop law (paramagnetic part 4 against diamagnetic
   part 1/3 of the coefficient 11/3; RECALLED, row 1011 7.4 (N3)). The account controls this regime g_k <= gamma
   (row 1018 L353), above the band.
@@ -128,8 +133,8 @@ measure on file and its reach (each line cites the row that tested it).
 - Integration by parts on the interior (Schwinger-Dyson, master loop equations): exact at every coupling and they
   carry the non-abelian splitting terms, but they fix no sign without a small parameter; their published uses are
   strong coupling and large N (row 1238 Step 1.2 table; row 1199 table).
-- Reflection positivity: Schwarz and convexity inequalities in the twist and time directions; every inequality of
-  that family holds for the free photon (row 1217, Lemma E), so it is blind.
+- Reflection positivity: Schwarz and convexity inequalities in the twist and time directions (row 1217 Lemma E,
+  PROVED); row 1217 ARGUED that every inequality of that family holds for the free photon, so it is blind.
 
 **2.3 Verdict (ARGUED).** No identity on file fixes the sign of delta H for typical pins at order-one coupling.
 Frame moves give the wrong sign (2.1, third item), and the identities of 2.2 either do not move gauge-invariant
@@ -142,4 +147,61 @@ the only open candidate of the second kind on file; its frames found so far cost
 ARGUED). I did not find a candidate of the first kind.
 
 **What this step does not show.** It is not a theorem that no such identity exists. It is a reading of the identities
-on file. No new PROVED statement is in this step except the elementary Gaussian line of 2.1.
+on file. Its pieces are all on file (rows 1011, 1013, 1018, 1026, 1141); putting them into one sign question is
+this row's framing, not new mathematics. No new PROVED statement is in this step except the elementary Gaussian
+line of 2.1.
+
+## Step 3. The smaller statement, and why the session stops (ARGUED)
+
+**3.1 The reduction chain of this row.** (N-phys) (the item) reduces, modulo (UNIV-K), to a seed at one weak
+coupling (rows 1180, 1225). A (K-flow) seed reduces to (DEC) of row 1018 5.5 (Step 2). By Lemma FLOW, (DEC) at
+scale 2l follows from any extension V whose direct term -E[V Psi_V] is below the scale-l response by a margin of
+order NA, for typical pins. Conversely, a V with Psi_V constant attains H_c, so (DEC) gives such a V if that V
+exists (its existence is ARGUED in row 1018 L231, not proved). So the smaller statement is:
+
+    (S-V) construct an explicit V for SU(2) at order-one coupling whose direct term is provably below the abelian
+    (classical) value on typical fields, by a margin of order NA.
+
+**3.2 Why (S-V) is not reached (ARGUED; every piece is on file).** In 2D the rigid rotation of an inner region makes
+Psi_V vanish in the bulk, so dropping the variance (Jensen) loses nothing in the bulk ([B] (3.3)-(3.4) and [28]
+(3.5) of OpenAI, as read in row 1013 5.1). In 4D every explicit V of the known kinds has a bulk Psi_V:
+
+- field-independent lab-frame moves: the cost form is site-local on the corner graph, so a profile cannot spread
+  and the Jensen bound is blocked in the bulk (row 1013 Lemmas WN and JEN, checked by row 1015);
+- moves that are gauge maps in the bulk act trivially on gauge-invariant data, and a twist of pinned data that is a
+  gauge map is removable (Lemma TWIST, row 1013);
+- frame moves pay the frame defect, of order b theta^2 NA in the bulk (Step 2, first SU(2) item);
+- aligned frames exist on an open set of positive Wilson measure, but the frames found cost order one per site
+  (row 1026, Theorem E PROVED, the size ARGUED).
+
+So the bulk cost must be recovered from Var(Psi_V), which an explicit V does not control, and controlling it needs
+the dynamics of the Wilson measure at the band. That is the original problem again.
+
+**3.3 Stop rule.** FINISH How we work, item 4: "A smaller statement is attacked in the same session; after two
+reductions with no closure, stop and report to the lead." This row made two reductions ((N-phys) to the sign of
+delta H, then to (S-V)) with no closure. It stops here.
+
+**3.4 Note for the lead (a count, not a ruling).** A script over FINISH.md at this pin found 59 solve-type rows
+between 1141 and 1246 (names containing "solve" or "crux2", checks excluded); 53 have a recorded RESULT, and all 53
+record the mass gap as open. The open lattice input has been the same statement, (N-phys), since row 1161, and the
+missing (K-flow) identity has been the same object since row 1013 ("a 4D analogue of the 2D short step, a selective
+gain at order-one response"). This row adds no movement on either.
+
+## Result
+
+| Statement | Label | Where |
+|---|---|---|
+| Mass gap of 4D SU(2) Yang-Mills (Jaffe-Witten) | OPEN, not proved, nothing disproved | Steps 1-3 |
+| (N-phys), the one open lattice input of the gap clause | OPEN | Step 0 (rows 1161, 1179, 1225) |
+| Gaussian U(1): the correction delta H to the classical stiffness is 0 at every pin | PROVED (elementary) | Step 2.1 |
+| No exact identity on file fixes the sign of delta H for typical SU(2) pins at order-one coupling; frame moves give the wrong sign | ARGUED (reading of rows 1011, 1013, 1016, 1018, 1026, 1141, 1201, 1217, 1238) | Step 2.2-2.3 |
+| (S-V): an explicit extension V with direct term below the abelian value on typical SU(2) fields | OPEN | Step 3 |
+| Size of the frame cost NA on typical fields | already PROVED by row 1141, checked by row 1142; this row's plan to prove it was withdrawn | Step 1.3 correction |
+
+Checked by no one. No numeric run. No subagent. Sources credited: OpenAI (2D O(3) and O(4) papers, through the lane's
+readings), Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford and Singha Roy, and Zeng Chunping (through row
+1218), Mack and Petkova (through row 1018), Gaiotto, Kapustin, Seiberg and Willett (the abelian character of
+higher-form symmetries, RECALLED only), Sussman and Alpoge with Claude and Codex as authors of their text (the account,
+through rows 1225, 1233, 1237).
+
+RESULT: Row 1243 (Claude Opus 5.5 max, Mac mini worker 3, 08:16Z-08:58Z by date -u; author only, checked by no one; no numeric run, no subagent): the mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; (N-phys) stays OPEN. ARGUED from statements on file: a (K-flow) proof needs an identity that fixes the sign of the non-abelian correction delta H to the cell stiffness at order-one coupling, and none of the identities on file does (gauge Ward identities move no gauge-invariant data; link symmetries are central, CEN; lattice symmetries are finite; Schwinger-Dyson equations need a small parameter; reflection positivity is blind), while frame moves give the wrong sign by the frame cost NA of order 1/b per site (row 1141, checked 1142); so the row reduces the crux to (S-V), an explicit extension V whose Jensen direct term is provably below the abelian value on typical SU(2) fields, and stops by the two-reduction rule. PROVED only an elementary line (Gaussian U(1) has delta H = 0 at every pin). Correction recorded in the file: the planned proof of the size of NA duplicated row 1141 and was withdrawn before any work. OPEN: (N-phys), (DEC) of row 1018, (S-V), the T0 chain. Output library/gap-mini-solve-z-opus.md.

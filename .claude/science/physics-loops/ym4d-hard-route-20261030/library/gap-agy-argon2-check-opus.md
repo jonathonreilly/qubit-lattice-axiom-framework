@@ -19,7 +19,7 @@ Queue row: FINISH.md row 1208.
 
 ## Step log
 
-### Step 1 (done 2026-11-20 ~01:30Z). Inventory and sources
+### Step 1 (done). Inventory and sources
 
 Provenance: Claude Opus 5.5 (max effort), Mac mini worker 3, commit `beea72f25`. This is one cross-provider check by one model of a gemini-4-argon-high text (row 1207). It is not an audit.
 
@@ -45,7 +45,7 @@ The row asks for 2.1-2.4 and 3.1-3.3 first. Theorems 4.1, 4.2 and the Table 5.1 
 
 First reading, to be verified in Steps 2-4: all of Section 2 is the ground-state (Doob) transform of F = M C_E M, written out. Every identity there is exact and elementary. No estimate of any eigenvalue ratio is derived. Both inequalities, (2.13) and (2.19), still contain lambda_0, and (2.19) is an expectation under a law built from psi_0.
 
-### Step 2 (done 2026-11-20 ~01:50Z). Theorem 2.1 and the volume-penalty question
+### Step 2 (done). Theorem 2.1 and the volume-penalty question
 
 **Verdict T2.1: HOLDS. Already on file and trivial. Its headline claim, that it removes the volume penalty of row 1180 Lemma R4, FAILS as a claim of substance (no bound is produced, and the penalty factor sits inside the Doob kernel, see (P) below).**
 
@@ -85,7 +85,7 @@ What would count as removing the penalty: a bound on s_+(u; n), or on a neutral 
 
 So the row's question was answered on 2026-11-13, by rows 863 and 895: the Doob form is the exact vacuum subtraction, and every known comparison through it has an extensive exponent. Row 1207 neither cites nor improves on this. Final verdict for T2.1: HOLDS. Already on file (row 863 I1; also rows 1161 L17 and L248, 807, 738, 1205). Trivial. Its claim to remove the Lemma R4 penalty FAILS: the penalty sits inside the kernel (row 895 Stop 2; (P) above).
 
-### Step 3 (done 2026-11-20 ~02:15Z). Theorems 2.2, 2.3, 2.4
+### Step 3 (done). Theorems 2.2, 2.3, 2.4
 
 **T2.2: HOLDS. Already on file in substance, and trivial.**
 
@@ -116,7 +116,7 @@ So the row's question was answered on 2026-11-13, by rows 863 and 895: the Doob 
 
 Section 2 overall: every identity and inequality holds. Each is the ground-state (Doob) calculus of rows 863, 895, 1161 and 1205, or one line beyond it. None estimates s_+ or any neutral eigenvalue ratio. None touches (N-phys).
 
-### Step 4 (done 2026-11-20 ~02:50Z). Theorems 3.1, 3.2, 3.3
+### Step 4 (done). Theorems 3.1, 3.2, 3.3
 
 Conventions are those of row 1034 (`library/gap-sym-reg.md` L35-44). SU(2) is the unit quaternions. U_p = U_(x,mu) U_(x+e_mu,nu) U_(x+e_nu,mu)^(-1) U_(x,nu)^(-1). R_(l,a) is the derivative along U_l -> e^(eps e_a) U_l. R_(l,a) A = -N_l^a. D_l n = n_tail - Ad(U_l) n_head. Re(e_a q) = -e_a . Im(q).
 
@@ -148,4 +148,68 @@ Conventions are those of row 1034 (`library/gap-sym-reg.md` L35-44). SU(2) is th
 - L45 says "the finite-dimensional kernel of L_mu on SU(2)". FAILS. L_mu W = 0 means the field Y = e^(Re(U S)) W satisfies sum_a R_a Y^a = 0. Counterexample family: for any F in C^inf(S^2), put f(U) = F(Ad(U^(-1)) e_1). Then R_1 f = 0, because Ad(e^(-eps e_1)) fixes e_1. So W = e^(-Re(U_(l_mu) S^+_mu)) (f, 0, 0) lies in ker L_mu. The kernel is infinite-dimensional.
 
 Section 3 overall: no statement moves Lemma O1. Rows 1034 and 1205 already hold its two working tools, the gauge generator identity and extreme-variable elimination.
+
+### Step 5 (done by 2026-11-20T01:33Z, date -u; Steps 1-5 ran from 01:11Z). Theorems 4.1 and 4.2, the Table 5.1 label, Section 1.1, and the novelty search
+
+**T4.1: HOLDS AFTER CORRECTION (one sign). A trivial extension of row 1205 Theorem 3.3. Its last clause is conditional, not proved.**
+
+- (4.2), L251, L258. Row 1207 (3.1) and row 1205 (3.10), (3.15) give div j(z) = -sum_in (D_l n) . N_l and rho_z = div(d - j)(z). Hence div d(z) = -sum_in sum_a R_(l,a) (D_l n)^a. This is also row 1034's STAR, with div d = sum_out d_l - sum_in d_l (L223). For w = Ad(P^(T_k)) v_k: D_l w = 0 on tree edges. On an incoming chord l, P_tail and P_z do not depend on U_l, and sum_a (R_(l,a) Ad(U_l) u)^a = sum_a (2 e_a x Ad(U_l) u) . e_a = 0. So div d^w(z) = **minus** sum_k sum over chords sum_a ((Ad(P_tail) - Ad(U_l P_z)) R_(l,a) v_k)^a. (4.2) has a plus sign. It inherits the sign of row 1205 (3.11), which contradicts row 1205's own (3.10) and (3.15). The sign is harmless for (4.3) and (4.4), which use squares.
+- (4.3), (4.4), L253-255, L259. ||Ad - Ad|| <= 2, so |sum_a (M R_a v)^a| <= 2 sqrt(3) |R v|. There are at most 4 chords per site, and the chord sets in(z) \ T are disjoint over z. So the bound is 48 per tree. Cauchy-Schwarz over the m trees, or convexity when v_k = alpha_k v, gives the rest. Correct.
+- Last clause, L256. Given (1/V) sum |div j^w|^2 >= c_w b^2 and (1/V) sum |div(j^w - d^w)|^2 <= (c_w/4) b^2, the triangle inequality gives sum |div d^w|^2 >= (c_w/4) b^2 V. With (4.4) this gives c_w/192, so the stated c_w/384 follows. But the lower bound on div j^w is an extra hypothesis with an unnamed constant. Row 1141's event bounds min over T and unit v_0 for one tree. A superposition sum_k alpha_k div j^(T_k, v) can cancel across trees. Correction: label the clause PROVED GIVEN that hypothesis. Scope: w_x is not a unit vector, so it is not a frame in row 1034's sense. Normalizing it destroys the linearity the proof uses.
+- New only as an instance. On file: row 1205 Theorem 3.3 and row 1141's question. Trivial: linearity plus Cauchy-Schwarz.
+
+**T4.2: (4.6), (4.7) and (4.9) HOLD. (4.8) FAILS (sign). The display at L279 FAILS for every beta > 0. (4.10) FAILS as derived.**
+
+- (4.6), L271, L283. w_q = Re U_q is linear, as a quaternion, in each of its four links. For f(U) = Re(q U), R_a^2 f = Re(q e_a^2 U) = -f, so -Delta_e w_q = 3 w_q for e in q and 0 otherwise. Total 12. Correct. That 12 is the minimum on H_00 minus constants is row 1205 Theorem 2.2. That is row 1206's to check, not mine.
+- (4.7), L273, L284. By the Leibniz rule, [-Delta, S] psi = (-Delta S) psi - 2 sum (R S)(R psi) = 12 S psi + 2 sum_e N_e . R_e psi. Correct.
+- **(4.8), L275, L284. FAILS.** [[-Delta, S], S] psi = [-Delta, S](S psi) - S [-Delta, S] psi = 2 sum_e N_e . (R_e S) psi = -2 sum_e |N_e|^2 psi. So (1/2)[[-Delta_E, S], S] = **-** sum_e |N^sp_e|^2, a non-positive multiplication operator. The correct positive form is (1/2)[S, [-Delta_E, S]] = sum_e |N^sp_e|^2. Check on the circle: [[-d^2/dx^2, x], x] = -2. Counterexample on X: rotate one link to U_e = cos(phi) + i sin(phi) and set every other link to 1. The four plaquettes through e then have U_(q,e) = U_e, so N^sp_e = 4 sin(phi) i. Applied to psi = 1 at that point, the left side of (4.8) is -sum_(e') |N^sp_(e')|^2 <= -|N^sp_e|^2 = -16 sin^2(phi) < 0 for phi not in pi Z. (4.8) claims the value +sum_(e') |N^sp_(e')|^2 >= 16 sin^2(phi) > 0.
+- (4.9), L277, L285-287. Expand |R(S psi)|^2, then subtract <S^2 psi, -Delta psi> = sum \int [2 S (R S) psi R psi + S^2 (R psi)^2]. Correct. It is the standard identity <psi, (1/2)[S, [L, S]] psi> = \int |grad S|^2 psi^2.
+- Exact identity (proved here, for every smooth real psi): <S psi, (-Delta)(S psi)> = 12 \int S^2 psi^2 dH + sum \int S^2 |R psi|^2 dH. Proof: the first two terms of the expansion of |R(S psi)|^2 sum to sum_a \int (R_a S) R_a(S psi^2) = \int (-Delta S) S psi^2 = 12 \int S^2 psi^2.
+- **L279 FAILS for every beta > 0.** Cancel E_pi[sum |N|^2] from both sides and use the exact identity. L279 then becomes 2 sum \int S^2 |R psi_0|^2 dH = 0. But psi_0 is smooth and not constant for beta > 0. Row 1180 L234-239: psi(0)/psi(pi) >= e^(2 beta) along a one-link geodesic, so R psi_0 is nonzero on an open set. S is a nonzero trigonometric polynomial, so S^2 > 0 on an open dense set. The integral is positive.
+- **(4.10), L281, L287. FAILS as derived.** The proof's step "integrating the first two terms ... by parts ... yields (4.10)" yields 12 E_pi[S^2] with **no** middle term (exact identity above). (4.10) adds the term sum_e \int N_e . R_e(psi_0^2) S dH. By parts, that term equals E_pi[sum |N_e|^2] - 12 E_pi[S^2]. So (4.10) holds iff E_pi[sum_e |N^sp_e|^2] = 12 E_pi[S^2]. The file does not prove this. It holds at beta = 0, where pi is Haar and psi_0 = 1. GUIDE: at the flat configuration N = 0 while 12 S^2 = 108 n^6, so the equality is not expected once the vacuum concentrates near flat fields. Correction: drop the middle term.
+- New in this form. My grep found no earlier copy, and "Casimir", "commutator" and "carre du champ" have no match in `library/open-core.md`. They are standard Leibniz-rule identities. Nothing downstream uses them.
+
+**Table 5.1 (L295-302), labelled "PROVED (Exact Verification Against Comparison Models)": the label FAILS. Reclassify it as GUIDE.** Its entries are unproved assertions about other models. Examples: the cross-ratio "fails to concentrate ... because the massless photon mode persists"; "the chi-square variance in (2.19) is bounded below by the spectator variance chi^2_spec > 1/2"; "lowest non-zero eigenvalue of -Delta_E is O(1/n^2)" for a non-compact Gaussian field, where -Delta on R^E has spectrum from 0 and no gap. No entry has a proof in the file. Some may be true. None is PROVED.
+
+**Section 1.1 (L19-25), PROVED GIVEN: HOLDS as a citation, already on file.** It matches the RESULT lines of rows 1161 (check 1162: HOLDS AFTER CORRECTION, credit only), 1179 (Theorem BP) and 1183 (main chain HOLDS AFTER CORRECTION). One correction from row 1183 is missing: the continuum datum needs (P1)-(P4), (H2) and (TOT) on the intended physical Hilbert space, not only (P4), (H2), (TOT) (L20). New: none.
+
+**Novelty search (rule 0a).** I grepped `library/open-core.md` for Doob, cross-ratio, Lemma O1, backward, Casimir, commutator, spanning tree, chord, carre du champ, N-phys and chi-square: zero matches. That file is from 2026-11-06 and predates the gap lane, so it settles nothing. I grepped the FINISH rows and `library/` for Doob, cross-ratio, replica, chi-square, Dirichlet form, backward, carre du champ and double commutator, and read the hits named in Steps 2-4. Classification:
+
+| Statement | Classification |
+|---|---|
+| T2.1 | on file: row 863 I1 (L108-110), also rows 1161 L17 and L248, 807 (B6), 738, 1205 Thm 2.1(2); trivial |
+| T2.2 | on file in substance: rows 863 B3, 738 (M5-G), 1205 Thm 2.1(2); law of total variance; trivial |
+| T2.3 | first equality = definition of s_+(2; n) (row 863 I2 form); inequality = restriction of a trace; trivial |
+| T2.4 | (2.15)-(2.17) on file: row 863 I1, B2 (cross-ratio free of V); (2.18)-(2.19) new in form, elementary |
+| T3.1 | wrong as written; after correction the n_z cancellation is gauge invariance at z (row 1034 STAR proof, L77-80); (3.4) and (3.6) new in form |
+| T3.2 | new instance of row 1034's method (A2) and Lemma PRIV; elementary; constraint only |
+| T3.3 | new in form, empty (follows from row 1205 (3.7)) |
+| T4.1 | new instance of row 1205 Thm 3.3; trivial |
+| T4.2 | new in form; standard; two of five displays wrong |
+
+### Step 6 (done 2026-11-20T01:33Z, date -u). Numeric guide (GUIDE only; no verdict rests on it)
+
+Memory free was 63 percent (memory_pressure). The run held `scripts/lab_ops.py numeric-lock` (acquire confirmed; released after). It used nice, BLAS threads 1, a 2 GB RSS guard and python3 -I, and took seconds. The script and log are scratch files on the worker, `/tmp/ym4d-w3-argon2check/`, and are not committed. Pass criteria were written before the run: each hand counterexample must reproduce, and each corrected formula must match to finite-difference accuracy. Results:
+
+- 200 random configurations. |A_true - A_(L169)| reaches 1.58, while |A_true - beta Re Z| <= 7e-16. Forces by central differences: the corrected (3.2) matches to 2e-10, and the file's (3.2) is off by up to 1.79. The corrected (3.3) matches to 3e-10, and the file's (3.3) is off by up to 2.90.
+- The L169 example gives true -1 and file +1. The (3.2)/(3.3) example gives N_(l_mu) = (0, 0, 1) = beta k, left side of (3.3) = 1, and the file's right side = -1.
+- (4.8) sign, one-link test with S = Re(q U): [[L, S], S] 1 = -0.977 = -2 |grad S|^2, and L S / S = 3.
+- Two-state chain: chi^2 = 2.222222 = 20/9 at mu = 1/2, where s = 1/4. chi^2/s = 4.001, 4.030, 4.122 at mu = 0.01, 0.05, 0.1.
+
+The run is a second derivation path for the algebra: finite differences of the plaquette action as defined, not my formulas. It agrees with Steps 3-5 at every point.
+
+### Step 7 (done). Rating against the plain-brief rows 1188-1190 (as checked in row 1196)
+
+Sources: the RESULT lines of rows 1188, 1189, 1190 and 1196, and the verdict headings of `library/gap-solve-abc-check-astra.md`. The "proved statements" sections (L22-134) have 23 verdicts: 18 HOLD, 5 HOLD AFTER CORRECTION, 0 FAIL. Every FAIL of row 1196 is in the "route verdicts" sections (L135-208), that is, on ARGUED deductions.
+
+| Measure | Rows 1188-1190 (Fable 5.2 max, 51-59 min each) | Row 1207 (Argon high, 18 min) |
+|---|---|---|
+| Crux moved ((N-phys), Lemma O1, (BS), (W)) | none | none |
+| PROVED statements that fail as written | 0 of 23 | 3 of 11 items: T3.1 (plaquette formula, (3.2), (3.3)); T4.2 ((4.8), L279, (4.10)); Table 5.1's PROVED label. T4.1 needs a sign fix |
+| False headline claims | none in the RESULT lines that row 1196 refuted as PROVED | five: penalty of Lemma R4 removed; "without volume loss"; psi_0, lambda_0, M cancel from the bound; chi-square bound "equivalent" to (N-phys); ker L_mu "finite-dimensional" |
+| Record check before claiming new | yes; each lists its on-file matches (row 1190: 17 attacks screened, "the chi-square form" flagged as a restatement with no consumer) | no; Section 2 is row 863 I1, B2, I2 and row 895 Stop 2, none cited; Theorem 2.4's chi-square form is the restatement row 1190 flagged |
+| New, correct, non-trivial content | Lemma PC (theorem-grade form of an ARGUED count), A7, A8 (pin-uniform Mermin-Wagner step, power-law bound), the Z_cube sum | (2.18)-(2.19) and T3.2: correct and new in form, but elementary, and neither has a consumer |
+| Label discipline | PROVED / ARGUED / OPEN used as defined | a heuristic table labelled PROVED; a conditional clause (T4.1) inside a PROVED theorem |
+
+Rating: row 1207 is below each of rows 1188-1190 on correctness, calibration and value, and ahead only on speed and length. Its correct material is the ground-state calculus already on file, restated with confident claims of novelty. One clear strength: the Section 2 algebra is clean and every identity in it is right. As a second data point after row 1205: no check of row 1205 (row 1206) exists at this commit, so I cannot say whether the error rate is stable across the two Argon sessions.
 

@@ -393,3 +393,187 @@ the chain count in (32) is, through row 1231 (36), the finite-speed Lemma
 Singha Roy, "One Bound at One Scale"). Row 1235 asked for this credit at
 row 1231 (36). The checked file credits the companion paper's finite-speed
 argument at L19 and L224, but not at L393.
+
+### Step 5. GUIDE, OPEN and RESULT statements (done 2026-11-20T13:25Z)
+
+No GUIDE statement is used as a proof step. Spot checks of the GUIDE
+references that lie in this checkout:
+
+- L5, row 1246 (27): `gap-solve28-astra62.md` L378-L386 states (27) as OPEN,
+  a sufficient uniform bound on the neutral transfer ratio. This matches the
+  GUIDE wording. The main-branch file at 8b11ae2bb9 is not in this checkout,
+  so L305-L329 of `gap-phys-seed.md` were not read. Not verified.
+- L200, row 1141 (4)-(8): `gap-crux2-astra62.md` L76 and L130 are
+  probabilistic lower bounds in the ordinary measure, as the GUIDE says.
+- L270 and L319, `gap-gamma2-astra.md`: the Bochner identity is in its Section
+  1 (L75, L106); Section 5.1 (L469-L480) is the checkerboard example with
+  Hessian -beta sum |dX_p|^2. Both match.
+- L7 (CA-I L2704-L2712 exclude a mass-gap assertion): consistent with
+  `GOAL.md`, which reads CA-I 2706-2710 the same way. The SA files themselves
+  were not re-read.
+- L3 (PRs 10114, 10133, 10134, 10141) and the B line numbers (L19, L56, L224,
+  L335): not in this checkout; not verified. They carry no proof weight.
+- L17, L19 credit Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford
+  and Singha Roy (A) and the first four authors (B) by name. That is correct.
+
+OPEN statements: **L13, L437 and L502 are honest.** They agree with what the
+PROVED steps give. (20) and (23) are sufficient conditions that the file
+does not prove. (36) controls the straight-path algebra, which (L461-L463)
+yields only zero continuum vectors. (34) and L440-L447 show that the known
+Wilson slow modes carry weight in the ultraviolet band. Whether any of them
+enter the narrower band of (33) is open.
+
+**RESULT line L504: HOLDS.** (37) and the criterion (32)-(33) are proved, as
+checked in Steps 2-3. The weak-coupling estimate for surviving observables,
+the continuum construction and the mass gap stay open. The line does not
+overstate (33): it is a conditional criterion, and the line calls it one.
+
+No home-directory path appears in the checked file.
+
+### Step 6. Is (37) a restatement of an earlier row? (done 2026-11-20T13:35Z)
+
+**No.** Searches run, with the hits read:
+
+- `library/open-core.md`: no match for cube comparison, same-torus, upward
+  or BP(n.
+- FINISH rows: the only matches are rows 1218, 1254 and 1261.
+- The library `gap-*.md` and `prior/*.md` files, searched for Knabe,
+  upward transfer, side ratio, 6520, H_s^{-1}, dual estimate, inverse of the
+  smaller, ascent, Corollary 102, cube side, larger cubes. The hits that
+  concern cube dynamics are these:
+  1. Row 1224 (`gap-mini-solve-q-fable.md` L180-L189) checked A's Lemma G.2
+     and Theorem G.4. That is a Knabe-type step: a patch gap on every fibre
+     (every exterior) gives BP(2d-1, eps/16). It goes from a conditional
+     local gap to a global cube constant. It does not compare two global
+     cube constants of one law.
+  2. Row 1218 (L182-L195) and row 1220 (`gap-mini-solve-p-fable.md`
+     L160-L172, Lemma NULL) concern B's ascent (H2)/(S). That compares the
+     fine law with a different, blocked law of straight-path variables.
+  3. Row 1231 (35), checked in row 1235, is a necessary bound on v_m for
+     m <= C_0 beta^delta. It is not a comparison of sides.
+  4. Rows 1238 and 1246 use "cube" for spatial cubes of the transfer matrix.
+     They contain no cube-dynamics comparison.
+- The case t < 8s of (37) is the trivial nesting bound v_t >= (s/t)^4 v_s.
+  The file attributes this bound to B's comparison at TeX L6520-L6574
+  (L224, L473). The new part is the case t >= 8s, with exponent +2 in place
+  of -4. It comes from the dual estimate (18)-(19) with g = H_s^{-1} f.
+
+Lineage of the method (checker's note, recalled from memory and not
+re-verified here, no proof weight): the smoothed patch weight with ramps of
+width w, the error eps ~ s^2/(kw), and the use of commuting separated terms
+are the device of Knabe-type finite-size criteria as improved by Gosset and
+Mozgunov (2016) and by Anshu (2020) for frustration-free Hamiltonians. The
+file names Knabe's method and A's Appendix G at L224. As far as the
+repository shows, the form of (37) is new here: two global heat-bath block
+constants of one finite-range Gibbs law, compared through H_s^{-1}.
+
+Two smaller restatement notes, outside (37):
+
+- (36), first half (||P_W A(C)|| <= (theta^{-1}-1)||A(C)||), is the dual
+  form of row 1220's Lemma NULL. Both state the near-independence of
+  sigma(W) and sigma(C), and maximal correlation is symmetric. Row 1145 (4)
+  and row 1222 (4) use the same Bayes estimate; the file credits row 1222
+  and B at L463, not row 1220. The second half (H_s >= I - P_W, which
+  controls the band J_lambda) is new.
+- The chain count inside (32) is A's finite-speed Lemma 6.2 in continuous
+  time (see Step 4). Row 1235 already recorded this for row 1231 (36).
+
+### Step 7. Cited statements a step depends on (done 2026-11-20T13:45Z)
+
+| Cited | Where read | Used by | State |
+|---|---|---|---|
+| Row 1145 (1)-(2) (Bessel ratio; product density) | `gap-solve2-astra62.md` L18-L30 | (5) re-derivation, (12), (11), (14), L185-L196 | re-derived here: Riccati comparison R_k' = 1-(2k+1)R_k/s-R_k^2 and its root u_k; Fourier bound sum d^2 prod p-hat. HOLDS |
+| Row 1231 (35), torus correlation K_mag ~ u^{-8}, packet f_R | `gap-solve26-astra62.md` L357-L387 | (25), (31), (34), L440-L447 | checked HOLDS in row 1235 (`gap-solve26-check-opus.md` L248-L275), claim D and the torus correlation. Read; consistent with the uses here (f_R in [-1,1] centered, one slice, m <= C_0 r) |
+| Row 1231 (36), Poisson clocks | same, L375-L385 | (32) | checked HOLDS in row 1235; restates A's Lemma 6.2 (row 1235 defect 1) |
+| A's Theorem 6.3, Corollary 6.4, Theorem B | row 1224 `gap-mini-solve-q-fable.md` L203-L210 | (3) (B's analogue cited) | checked HOLDS in row 1224 (same constant 16v/(625e^2 l)) |
+| B's covariance theorem, B's path-interior lemma, B's Corollary 166 range | B v7 TeX, not in this checkout | (3) L42-L48; (5); L52 | B not re-read. (5) re-derived here on the used range; (3)'s use needs only the form; L52's range as quoted in row 1218 L182-L187 |
+| Bochner identity, checkerboard example | `gap-gamma2-astra.md` L75-L106, L469-L480 | (27) | standard Bakry-Emery identity; HOLDS |
+| Row 1222 (4), (8)-(9) | `gap-solve24-astra62.md` L63-L73, L137-L151 | credit only (L56, L335, L463) | not a proof dependency |
+| Row 1220 Lemma NULL | `gap-mini-solve-p-fable.md` L160-L172 | not cited; dual of (36) first half | credit note (Step 6) |
+
+### Step 8. Verdicts and report (done 2026-11-20T13:55Z)
+
+Provenance: Claude Opus 5.5, max effort, Mac mini Claude worker 3, commit
+f2d7eba78, check of row 1254 (author gpt-6.2-astra max). Cross-provider.
+One reading by hand. This is not an audit. No numeric run was made.
+
+**Positive claims first.**
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| **(37) same-torus Wilson cube comparison** | L468-L473 (summary L11) | **HOLDS** |
+| (17)-(19) upward comparison | L226-L251 | HOLDS |
+| (21) form version | L261-L266 | HOLDS |
+| physical scale, v_t >= 1/2 | L253 | HOLDS |
+| **(32) Poisson-clock band filter** | L380-L397 | **HOLDS** |
+| **(33) local-source criterion** | L399-L403 | **HOLDS** |
+| (28)-(29) layered K, Chebyshev filter | L337-L355 | HOLD |
+| (30) and example | L357-L368 | HOLD |
+
+**Everything else.**
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| (1)-(4), (3) | L21-L50 | HOLDS given B's finite-volume covariance theorem (only its form is used; A's Theorem 6.3 with the same constant is checked in row 1224). The qualitative implication also follows from (32), by L416-L422. |
+| example diagonal | L52 | HOLDS |
+| (5)-(6) | L58-L72 | HOLDS ((5) re-derived from row 1145 on the range eta < 1) |
+| (7), (8), (9)-(10) | L74-L111 | HOLD |
+| window, theta -> 1 | L113-L118 | HOLDS |
+| (11)-(13) | L122-L149 | HOLD |
+| (14)-(15), example | L153-L183 | HOLD |
+| width of order beta is necessary | L185-L196 | HOLDS |
+| (16), example; L220 | L202-L220 | HOLD |
+| (20) | L255-L259 | HOLDS given (3) |
+| (22)-(24) | L272-L299 | HOLD |
+| (25) | L303-L308 | HOLDS given row 1231 (35) (checked HOLDS, row 1235) |
+| (26) | L310-L315 | HOLDS given (3)'s hypotheses |
+| Haar comparison | L317 | HOLDS |
+| (27) | L319-L330 | HOLDS |
+| (31); L377 | L371-L377 | HOLD (31 given row 1231) |
+| (34) | L406-L414 | HOLDS given row 1231 |
+| (20) through (32) | L416-L422 | HOLDS |
+| (35) | L425-L435 | HOLDS |
+| nonzero temporal momentum | L440-L447 | HOLDS given row 1231 |
+| (36) | L452-L459 | HOLDS |
+| what (36) can construct | L461 | **HOLDS AFTER CORRECTION**: add the window coupling beta_{W,j} <= j+2 of L113; without it (5)-(6) do not give theta^{-1}-1 = o(2^{-j}) |
+| direct test | L463 | HOLDS (same window as L461) |
+| (38) | L476-L492 | HOLDS |
+| (39) | L495-L500 | HOLDS |
+| GUIDE | L3-L7, L17-L19, L56, L200, L224, L270, L335 | labels honest; not proof steps; spot-checked in Step 5 |
+| OPEN | L13, L437, L502 | honest |
+| RESULT | L504 | HOLDS |
+
+First failing step: none. FAILS: none.
+
+**Defects, ranked by what each breaks.** None breaks a consumer.
+
+1. L461 (and L463 through it): the example omits beta_{W,j} <= j+2.
+   Wording repair as in the table.
+2. L393: the chain count is A's finite-speed Lemma 6.2 (Bhattacharjee,
+   Bhattacharya, Lockwood, Romanov, Sessford, Singha Roy, "One Bound at One
+   Scale") in continuous time. Row 1235 already asked for this credit at row
+   1231 (36). Add it at L393.
+3. L459: the first half of (36) is the dual of row 1220's Lemma NULL
+   (near-independence of sigma(W) and sigma(C)). Add the credit.
+4. L42-L48: B's exact prefactor was not re-read, because B is not in the
+   checkout or the papers folder. The step is robust to the prefactor,
+   and L416-L422 give the implication without B.
+
+**Restatement.** (37) is not a restatement of an earlier row (Step 6). Its
+case t < 8s is the trivial nesting bound. The case t >= 8s, exponent +2
+against -4, is new in this repository. The method is Knabe/Gosset-Mozgunov
+smoothed patches applied through H_s^{-1} (lineage recalled from memory, see
+Step 6). (32) combines row 1231 (36), which is A's Lemma 6.2, with a
+Chebyshev filter. Its band version is not in earlier rows.
+
+**What the checked results do and do not show.** (37) reduces the Wilson
+input to a microscopic cube bound (20), v_{s_j} >= c(a_j s_j)^2, at any
+microscopic side. (26) shows that the same scale is necessary up to the
+constant for a nontrivial matched theory. So (20) is the sharp form of the
+remaining estimate on this route. Nothing in the file proves (20), (23),
+(30) or (39) for a family that creates nonzero continuum vectors.
+(36) controls only the straight-path algebra, and L461-L463 show that this
+algebra gives only zero vectors. (34) and L440-L447 show actual Wilson slow
+weight in the ultraviolet band. The checked file says all of this itself.
+
+RESULT: Row 1261 check of row 1254 (Claude Opus 5.5 max, by hand, cross-provider, first failing step none): the same-torus Wilson cube comparison (37) HOLDS, with (17)-(19) and (21); the local-source criterion (32)-(33) HOLDS, with (28)-(30); every other PROVED statement HOLDS, (3) given the form of B's covariance theorem (A's version checked in row 1224) and (25), (31), (34) given row 1231 (checked in row 1235); one HOLDS AFTER CORRECTION (L461, add beta_{W,j} <= j+2); no FAILS; two credit notes (L393 A's Lemma 6.2, L459 row 1220 Lemma NULL); (37) is not a restatement of an earlier row; OPEN: the microscopic Wilson bound (20) (or (23), (30), (39)) on observables that survive the limit, the nontrivial continuum construction, and the Jaffe-Witten mass gap.

@@ -31,6 +31,8 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T06:06Z 7.7 written: batch 2 results (run 05:26:00Z-06:05:27Z by the log's date -u stamps, under the lock) and verdicts.
 - 2026-11-20T06:07Z 7.8 criteria fixed for batch 3 (replicas at beta 2.6 and 2.8, d = 8) before it runs.
 - 2026-11-20T06:08Z Section 8 written (consequences; revises Sections 4 and 6); batch 3 running (started 06:07:14Z by its log stamp), verdict pending in 7.9.
+- 2026-11-20T07:41Z 7.9 written: batch 3 results (run 06:07:14Z-07:40:50Z by the log's date -u stamps, under the lock); Section 8 completed.
+- 2026-11-20T07:42Z finished: credits and RESULT written. Numeric runs: three batches under the lock (05:19:02Z-05:25:42Z, 05:26:00Z-06:05:27Z, 06:07:14Z-07:40:50Z by their log stamps), own code in a scratch folder, not committed. No other file edited.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -571,8 +573,9 @@ inconclusive. The batch-2 point (beta 2.6, d = 8: 0.776) is reported beside the 
   moved by the global SU(2), which no interior gauge transformation undoes.
 - GUIDE, against criteria fixed before each run: under the pi-flux exterior, (M_{d,m}(c)) fails for every c < 1/2 at
   beta 3.0 (d = 4), beta 4.0 (d = 3..6) and beta 6.0 (d = 3, 4); the face correlation does not fall with d there
-  (7.5, 7.7). These boxes are small in physical units. In the physical regime (beta 2.6, d = 5..8) batch 2 was
-  inconclusive; batch 3 (7.8, 7.9) decides it or not.
+  (7.5, 7.7). These boxes are small in physical units. In the physical regime: at beta 2.8, d = 8 (a box with about two
+  bulk correlation lengths across Q0) (M) FAILS by the replica criterion of 7.8 (r_bar = 0.690 +- 0.050); at beta 2.6,
+  d = 8 the replicas give r_bar = 0.685 +- 0.086, inconclusive by the same criterion (7.9).
 - ARGUED: the failure persists along the tuning. The face links have no interior end point, so G_Q cannot gauge a twist
   of the face order away; the face's own plaquettes give it a stiffness of order beta per bond, which diverges along the
   tuning, while its noise stays of order one; the bulk is integrated (annealed), so it renormalises the face couplings
@@ -603,8 +606,7 @@ inconclusive. The batch-2 point (beta 2.6, d = 8: 0.776) is reported beside the 
 
 (N-phys) and the continuum datum (unchanged). A's (D) itself. Whether some repaired slab hypothesis (exteriors
 restricted in a way that the induction of Theorem 11.8 preserves) holds and still implies (D): OPEN, and the
-continuity remark above says a restriction to typical exteriors cannot work. The physical-regime verdict of batch 3:
-pending in 7.9.
+continuity remark above says a restriction to typical exteriors cannot work. The physical regime at beta 2.6 (inconclusive in 7.9), and every size beyond d = 8.
 
 ### 8.4 Recommendation (replaces the first item of Section 6)
 
@@ -615,3 +617,52 @@ pending in 7.9.
 - The second item of Section 6 (replace plain-brief "solve" rows by rows with one precise question) stands; this row
   is an example: the precise question "does a centre-valued exterior refute (M)?" produced a definite GUIDE answer
   within the row.
+
+### 7.9 Batch 3 results and verdicts (GUIDE; run 06:07:14Z-07:40:50Z by the log's date -u stamps, under the lock)
+
+Pi-flux, P1, d = 8 (box 23 x 15^3), 500 + 2000 sweeps per replica, about 935 s each (375 ms per sweep).
+
+| beta | seed | r | tau_int of M- . M+ (sweeps) | <abs(M-)^2>/N^2, <abs(M+)^2>/N^2 | r, first / second half |
+|---|---|---|---|---|---|
+| 2.6 | 801 | 0.576 | 99 | 0.0220, 0.0283 | 0.584 / 0.569 |
+| 2.6 | 802 | 0.626 | 50 | 0.0237, 0.0261 | 0.509 / 0.763 |
+| 2.6 | 803 | 0.854 | 66 | 0.0210, 0.0269 | 0.853 / 0.857 |
+| 2.8 | 811 | 0.683 | 152 | 0.0351, 0.0393 | 0.853 / 0.535 |
+| 2.8 | 812 | 0.780 | 162 | 0.0377, 0.0380 | 0.682 / 0.860 |
+| 2.8 | 813 | 0.607 | 140 | 0.0361, 0.0499 | 0.766 / 0.451 |
+
+Combined (criteria of 7.8): beta 2.6: r_bar = 0.685, err = 0.086, r_bar - 3 err = 0.429: INCONCLUSIVE (neither (a) nor
+(b)); the batch-2 value 0.776 (not pooled) agrees. beta 2.8: r_bar = 0.690, err = 0.050, r_bar - 3 err = 0.539 > 1/2:
+criterion (a) holds, so (M_{8,m}(c)) FAILS at beta 2.8 for every c < 1/2 (GUIDE).
+
+Caveats. (i) Three replicas give a poor estimate of the spread: with two degrees of freedom, r_bar - 3 err > 1/2 is
+about a 95 percent one-sided statement, not 99.7 percent. (ii) The integrated autocorrelation times (50-165 sweeps)
+leave only about 6-20 independent samples of the relative orientation per replica; this is why the jackknife errors
+of 7.5 and 7.7 were too small, and why halves of one run differ by up to 0.3. (iii) The bulk correlation length at
+beta 2.8 is an estimate (two-loop scaling from Teper's beta 2.6 value gives a m_0++ near 0.30; I did not measure it),
+so "about two correlation lengths across Q0" is approximate. (iv) Sizes beyond d = 8 are untested; along the tuning
+d grows without bound.
+
+Reading. The face order parameter grows with beta (<abs(M)^2>/N^2 about 0.022-0.028 at beta 2.6, 0.035-0.050 at 2.8,
+against 0.0001 for the trivial exterior). At beta 2.8 a box several bulk correlation lengths wide already violates
+(M), and every r measured at d = 8 (seven runs, beta 2.6 and 2.8) lies between 0.58 and 0.85. So, on the evidence of
+this row, confinement does not disorder the centre-twisted face at the scale of a few correlation lengths. That is
+the opposite of A's stated expectation (p. 105), at GUIDE level only.
+
+## 9. Credits
+
+Jaffe and Witten (the problem). Deep Bhattacharjee, Ushashi Bhattacharya, James Montgomery Lockwood, Tristan Romanov,
+Ikailo John Sessford and Sanjeevan Singha Roy (A, "The Yang-Mills Mass Gap from One Bound at One Scale", authors'
+archive release v5.0.0, Zenodo record 24147967): every statement checked in Section 3, the slab hypothesis, the
+Gaussian-chain threshold (Proposition H.4), the pinned-chain example and the open question of p. 105. B (the same group,
+"One Cube Estimate Implies the Yang-Mills Mass Gap") and Zeng Chunping (C) through row 1218's reading (gpt-6.1-sol).
+Row 950 (Claude Fable 5.2 max: the layered pi-flux slice and the boundary-ordering runs) and row 952 (Claude Opus 5.5
+max: the general form "no Dirichlet boundary layer orders"); row 1139 (gpt-6.2-astra, method 36) and row 1220 (Claude
+Opus 5.5). M. Teper (hep-th/9812187) for a m_0++ at beta 2.6, through \`gap-trajtest-opus.md\` L158. M. Creutz, and
+A. D. Kennedy and B. J. Pendleton (SU(2) heat bath). Knabe, and Gosset and Mozgunov (finite-size criteria, through A's
+Appendix G); Hirschfeld and Gebelein (maximal correlation, through A).
+
+Who checked what: Section 3 is one line-by-line reading of A's proofs by Claude Opus 5.5 max in this row, not an
+independent check. Lemma NC and every GUIDE run are by the same author, checked by no one.
+
+RESULT: Row 1224 (Claude Opus 5.5 max, Mac mini worker 1, 04:39Z-07:42Z by date -u): mass gap NOT proved, nothing disproved about the gap; (N-phys), (W), the continuum datum and the Jaffe-Witten gap stay OPEN. PROVED as a check of their text (one reading, no failing step): A's chain from the slab hypothesis (M_{d,m}(c)), c < 1/2, through BP to the continuum gap (Lemmas 11.4-11.6, Proposition 11.7, Theorem 11.8, Appendix G, Lemma 6.2-Theorem B). PROVED by hand: Lemma NC (with a layered pi-flux, centre-valued exterior, every classical ground state of a fat box with d >= 314 breaks the global SU(2) on its face). GUIDE, criteria fixed before each run: that exterior violates (M) for every c < 1/2 at beta 3.0-6.0 (d = 3-6, r up to 0.91) and at beta 2.8, d = 8 (three replicas, r_bar = 0.69 +- 0.05, about two bulk correlation lengths across the middle slab); beta 2.6 inconclusive. ARGUED: the violation persists along the tuning, which answers A's open question (p. 105) against A's expectation and blocks A's slab route in four dimensions; the lane's periodic crux (N-phys) is not touched.

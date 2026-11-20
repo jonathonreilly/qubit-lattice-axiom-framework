@@ -17,7 +17,8 @@ heuristic; never a proof step), OPEN.
   1241-1275, branch tip 4a5d911 (siblings in flight: rows 1278 ao, 1280 ap, 1281 laptop-solve3, 1283 solve32, 1284 aq).
   Candidate under reading: the open question left UNDECIDED by check 1239 of row 1224 (does the slab hypothesis (M) of
   Bhattacharjee et al. fail along the 4D Wilson tuning?).
-- 13:42Z selection finished (about 60 minutes of reading; recorded in Section 1). Blind-site expansions (the carry's one
+- 13:42Z selection finished (about 25 minutes of reading after the file was created, 13:18Z-13:42Z by the stamps;
+  corrected from "60 minutes", an estimate; recorded in Section 1). Blind-site expansions (the carry's one
   unowned item) is blocked: Balaban CMP 116 is not in the papers folder, Project Euclid and Deep Blue both answer with a
   bot check (stopped there, per the rules).
 
@@ -34,6 +35,12 @@ check row 1265), and the one-cutoff carry transports it (rows 1233-1275; open th
 > (SL-1) at one fine coupling beta_0 in the carry's range, the four-dimensional SU(2) Wilson measure has weak mixing
 > (exponential decay of the boundary influence on gauge-invariant interior observables) at SOME finite scale R, with
 > explicit constants.
+
+[Correction, 14:02Z same session, after Section 3: the form of (SL-1) that the chain can use is row 1258's slab
+statement (SL) (Lemma WS', the middle slice of a periodic slab forgets one boundary slice in total variation, uniformly
+over slice values), which is frame-blind (Lemma 3.1 below). Theorem W's hypothesis (W) at (R, delta) (C3), which Lemma WS
+also accepts, is exposed to boundary frame order and is expected to fail at every R at weak coupling (Proposition 3.3).
+"Weak mixing" above means (SL), not C3.]
 
 No size condition on R is needed. (SL-1) is the infinite-volume lattice mass gap at one weak coupling. No rigorous
 method reaches it today: strong-coupling expansions and Bakry-Emery curvature stop near beta_W = 0.36 (Bhattacharjee et
@@ -121,7 +128,7 @@ links carry the face orientation J of Lemma NC's ground states.] For A, B in su(
      >= rho_fr := sup_(A,B) corr_(nu_0)( q_(A,B)(f_-), q_(A,B)(f_+) ),
 
 where nu_0 is the conditional law at the central fibre. Hence, if rho_fr > c for one admissible box, one central
-exterior and one pair of edge links, then (M_(d,m)(c)) fails already in the consumer's own class S, and Theorem 11.8
+exterior and one pair of hinge links, then (M_(d,m)(c)) fails already in the consumer's own class S, and Theorem 11.8
 cannot be applied with that c.
 
 Proof. Let v' = v + e_2. Both v and v' lie on H, so each has the two incoming exterior links in directions 1 and 3;
@@ -133,12 +140,14 @@ at f_+ with exterior plaquettes D, D'. Change one exterior link in each of C, C'
 Hol(C) = z e^(eps A), Hol(C') = z' e^(eps B), and the same with A, B at D, D' (z, z' central). Call this fibre
 eta_eps; eta_eps -> eta_0 as eps -> 0. Then
 
-  x(., eta_eps) = z z' Re tr( e^(eps Ad_f B) e^(eps A) ) = z z' [ 2 - (eps^2/2) |Ad_f B + A|^2 ] + O(eps^3)
+  x(., eta_eps) = z z' Re tr( e^(eps Ad_f B) e^(eps A) ) = z z' [ 2 - eps^2 |Ad_f B + A|^2 ] + O(eps^4).
 
-with the normalization Re tr e^X = 2 - |X|^2/2 + O(|X|^4) for X in su(2), |X|^2 = -(1/2)... (any fixed positive
-multiple of the Killing form; only the f-dependent cross term matters). The f-dependent part at order eps^2 is
--z z' eps^2 <A, Ad_(f_-) B> (cross term of the square), and the remainder is O(eps^3) uniformly in f because SU(2)
-is compact. The conditional density depends continuously on the exterior and is bounded above and below at fixed
+Here |.| is the Ad-invariant norm on su(2) for which Re tr e^X = 2 cos|X| (|X| is the half rotation angle), so
+Re tr e^X = 2 - |X|^2 + O(|X|^4), and <.,.> is its inner product. Indeed e^(eps X) e^(eps Y) = e^(Z) with
+Z = eps (X + Y) + (eps^2/2) [X, Y] + O(eps^3), and |Z|^2 = eps^2 |X + Y|^2 + O(eps^4) because <X + Y, [X, Y]> = 0 by
+Ad-invariance. [Corrected in the same session: the first text had a garbled normalization and O(eps^3); the
+conclusion is unchanged.] The f-dependent part at order eps^2 is -2 z z' eps^2 <A, Ad_(f_-) B> (cross term of the
+square), and the remainder is O(eps^4) uniformly in f because SU(2) is compact. The conditional density depends continuously on the exterior and is bounded above and below at fixed
 box (row 1224 3.2, Lemma 11.6), so nu_(eta_eps) -> nu_0 in total variation. Since nu_0 has full support,
 Var_(nu_0) q_(A,B)(f_-) > 0 for A, B nonzero. Centre and normalize the two slices; the order eps^2 factors and the sign
 z z' cancel in the correlation, and
@@ -228,8 +237,8 @@ so the supremum may be taken over G_L-invariant f, which are the functions on th
 
 So (SL) reads only gauge-invariant data of L (Wilson loops of the slice). The frame J of an ordered bottom layer (a
 global conjugation, which fixes a central D) changes the slab law only by that conjugation, and every G_L-invariant
-function of L is invariant under it; at near-central D the J-dependence of L's invariant data enters only through
-gauge-invariant channels that pass the bulk. (SL) is therefore not killed by frame order. Whether (SL) holds at weak
+function of L is invariant under it (PROVED, as above); at near-central D the J-dependence of L's invariant data
+enters only through gauge-invariant channels that pass the bulk (ARGUED). (SL) is therefore not killed by frame order. Whether (SL) holds at weak
 coupling is the crux itself and is untouched here.
 
 **Proposition 3.2 (a lower bound on the numbers k_z of (W_DS); PROVED, elementary).** For boundary values tau, tau' of
@@ -285,3 +294,59 @@ chain's datum. Any future one-scale form that is uniform over boundary values sh
 it on gauge-invariant data of a region whose vertices are interior (as (SL) and Theorem W (A) do), never on raw links
 near the boundary. This is the same lesson row 950 drew for its (SC) and (SG-step) (`gap-sc-max.md` 7.3); here it is
 applied to C3 and to A's published hypothesis.
+
+- 14:05Z Section 4 (summary, credits, check request) and RESULT written.
+
+## 4. Summary, credits, check request (written 14:05Z by date -u)
+
+**4.1 Verdict on the brief.** The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved here, and
+nothing on the lane's chain is disproved. The infrared core (the slab statement (SL) of row 1258 at one weak coupling,
+equivalently (N-phys)) is untouched: I found no mechanism for it that is not on file (Section 1.2).
+
+**4.2 Statements of this file.**
+
+| Statement | Label | Rests on |
+|---|---|---|
+| Lemma 2.1: at a central-valued fibre every slice of a gauge-invariant function is invariant under global conjugation, so A's consumer class is frame-blind there | PROVED (elementary) | definitions |
+| Proposition 2.2: at near-central fibres, normalized slices of hinge Wilson loops tend to the frame observable q_(A,B)(f) = <A, Ad_f B> of hinge links; so A's consumer class sees the hinge frame correlation rho_fr | PROVED (elementary) | A's Section 11 as read in rows 1224, 1239; compactness of SU(2); continuity of the fibre law |
+| Corollary 2.2': the Friedrichs angle of A's Proposition 11.7 itself has cosine at least rho_fr; under (FO) the alternating-projection step of A's Theorem 11.8 fails as a method | PROVED (elementary) | Proposition 2.2; A's Lemma 11.1 |
+| Corollary 2.3: (FO) along a tuning for every allowed d excludes every choice in A's Theorem D | PROVED given A's definitions | Proposition 2.2; check 1239's quantifier analysis |
+| Lemma 3.1: (SL) of row 1258 reads only gauge-invariant data of the middle slice; it is immune to boundary frame order | PROVED (elementary) | row 1258's definitions |
+| Proposition 3.2: k_z of Theorem W's (W_DS) is at least the sum of single-link marginal total variations | PROVED (elementary) | row 691's definitions |
+| Proposition 3.3: (FO-W)(R, kappa) with kappa > 2 delta (R + 1) refutes (W_DS) at (R, delta) | PROVED given row 691's definitions | Proposition 3.2 |
+| (FO) for A's boxes and (FO-W) for cubes, uniformly in the size at weak coupling (boundary frame order under the layered pi-flux value) | OPEN; ARGUED (3D continuous-symmetry breaking of a frustrated layer with stiffness of order beta; the bulk sees the layer only through holonomies); GUIDE support from rows 950 and 1224 | - |
+| Classification 3.4: C1, C2, C4, C5, (N-phys), (SL), Theorem W (A) immune; C3 = (W_DS) and A's (M) exposed | PROVED where Lemma 3.1 / Propositions 2.2, 3.3 apply; the verdicts "exposed" are conditional on (FO), (FO-W) | Sections 2-3 |
+
+**4.3 What changes for the lane (ARGUED; for the lead).**
+- C3 (`gap-crux-restate.md` L74-75) should carry the note "exposed to boundary frame order; expected false at every R at
+  weak coupling (Proposition 3.3 of row 1277, conditional on (FO-W))"; the chain's one-coupling datum stays (SL)
+  (row 1258), which passes the frame test (Lemma 3.1).
+- A's slab route (Theorem D) cannot be rescued by restricting to the tests its proof uses: under (FO) the angle in its
+  own Proposition 11.7 exceeds 1/2 (Corollary 2.2'). Its fate is (FO) along the tuning, which is A's open question of
+  p. 105 in a sharper form (hinge frames at a central exterior).
+- A filter for future rows: a one-scale statement that is uniform over boundary values must be stated on gauge-invariant
+  data of a region whose vertices are all interior (row 950's lesson, 7.3; here made a test and applied to C3 and A).
+
+**4.4 Not done, and why.** No numeric run: the direct guide of (FO-W) (Hamming lower bound in a cube under the layered
+pi-flux value, with a trivial-boundary control) was designed in my notes but not run, because rows 950 and 1224 already
+show the layer order at beta >= 2.5 and the lane already uses (SL), so a run would not change a decision. The account's
+unowned `9.1:prop-blind-site-expansions` stays blocked (Balaban CMP 116 behind bot checks at Project Euclid and Deep
+Blue; not bypassed). No statement was rebuilt from memory.
+
+**4.5 Credits.** Deep Bhattacharjee, Ushashi Bhattacharya, James Montgomery Lockwood, Tristan Romanov, Ikailo John
+Sessford and Sanjeevan Singha Roy (the slab hypothesis, Theorem D, Section 11 and Appendix G of "The Yang-Mills Mass Gap
+from One Bound at One Scale", as read in rows 1218, 1224, 1239); Dobrushin and Shlosman (the block-coupling criterion
+behind Theorem W); Osterwalder and Seiler (gauge invariance of the conditional laws, reflection positivity); Frohlich,
+Simon and Spencer (infrared bounds, named as the missing tool); 't Hooft (central twists); Balaban and Sussman-Alpoge,
+with Claude and Codex as authors of their text (the account whose carry the lane uses); the lane's rows 691, 950, 952,
+976, 1013, 1016, 1224, 1239, 1258 for the statements cited.
+
+**4.6 Check request.** One cross-provider check of Lemma 2.1, Proposition 2.2 (with the hinge geometry and the eps^2
+expansion), Corollary 2.2' (localization on a gauge-invariant neighbourhood of fibres), Lemma 3.1 (interior vertices of
+the slab; TV of invariant laws) and Propositions 3.2-3.3 (the count R (R+1)^2 against N_R = R (R+1)^3). Each is short.
+
+**4.7 Process.** Row ran 13:18Z-14:05Z by date -u; about 25 minutes of reading before the first statement (the
+productive step was rereading the consumer of a hypothesis, not generating candidates); two in-place corrections
+(hinge geometry in Proposition 2.2; the form of (SL-1) in Section 1), both marked.
+
+RESULT: Row 1277 (Claude Opus 5.5 max, Mac mini worker 1, 13:18Z-14:05Z; author only, checked by no one; no numeric run): the Jaffe-Witten mass gap of 4D SU(2) Yang-Mills is NOT proved and nothing on the chain is disproved; the infrared core ((SL) of row 1258 at one weak coupling, equivalently (N-phys)) stays OPEN. PROVED (elementary): a frame test for one-scale statements that are uniform over boundary values (row 950's lesson made a filter): Lemma 3.1, the chain's datum (SL) reads only gauge-invariant data of an interior slice and is immune to boundary frame order; Propositions 3.2-3.3, Theorem W's hypothesis (W) at (R, delta) (C3) is refuted at any R once one changed boundary link moves single-link marginals by total variation more than 2 delta (R+1), which frame order of a pi-flux face gives, so C3 is exposed and expected false at every R at weak coupling (conditional on (FO-W), OPEN); for Bhattacharjee et al.'s slab route, Lemma 2.1 (central fibres are frame-blind), Proposition 2.2 and Corollary 2.2' (near-central fibres bring the hinge frames back through normalization, so the angle of their Proposition 11.7 itself, not only their hypothesis, is at least the hinge frame correlation), so their Theorem D lives or dies with boundary frame order (FO), a sharper form of their open question (p. 105). OPEN: (FO), (FO-W), (SL) at weak coupling, the mass gap. Output library/gap-mini-solve-an-opus.md.

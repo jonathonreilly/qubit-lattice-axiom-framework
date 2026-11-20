@@ -245,26 +245,36 @@ text, which is not readable on this machine).**
   provided the site integrates, decouples and shifts no variable in P(A) and the gauge invariance of V(A) is joint with
   the configuration on P(A); each output then depends in addition only on the configuration in the P(A) of the
   potentials it reads. Support: CA-II L3546-3548 (5.2:lem-complex-fluctuation: the outputs are analytic "in every
-  parameter on which the V depend analytically with the bounds above"); CA-II L5285-5299 (5.2:def-sites-units (b):
+  parameter on which the V depend analytically with the bounds above"); CA-II L5295-5298 (5.2:def-sites-units (b):
   fourth-class units, which are the stored B, B' and chain terms, are invariant "jointly with its live exterior
-  slots, ... and not ... as a function of its own configuration alone", after CMP119 (2.41)(iii)); CA-II L6995-6997
+  slots, ... and not ... as a function of its own configuration alone", after CMP119 (2.41)(iii)); CA-II L6965, L6995-6996
   (F2: an output reads only the potentials whose domains it contains); CA-III 9.1:lem-island-geometry (a), (d1)
-  (L15489-15500, L15535-15540: no island meets Lambda_(m+1), the decoupling region Y_0 or the fluctuation support, and
+  (L15482-15499, L15538-15542: no island meets Lambda_(m+1), the decoupling region Y_0 or the fluctuation support, and
   every decoupling cube, fluctuation cube and walk origin is at least 3 R_m - 4 cubes from W_m); the shift pieces are
-  products with chi-hat_square, supported on blocks of the site (CA-II L5323-5326). The account's own route uses the
-  same principle (CA-III L16752-16755: "a Mayer link between two terms that overlap only inside an island is declared a
+  products with chi-hat_square, supported on blocks of the site (CA-II L5330-5332). The account's own route uses the
+  same principle (CA-III L16749-16751: "a Mayer link between two terms that overlap only inside an island is declared a
   non-link, since the two terms share no integration variable there. This is the device of [CMP122b]").
 
 **Theorem RL-T (the (T) part of 9.1:prop-blind-site-expansions). PROVED GIVEN (H-fmt), (H-par), the plain site
-statements at (T) as the account takes them, and the floor (F_RL): kappa >= 8 (k_d + 2).** Consider the T-step from
+statements at (T) as the account takes them, the threshold (TH) below, and the floor (F_RL): kappa >= 8 (k_d + 2).** Consider the T-step from
 level k to k+1. Let the inputs be the plain inputs of the site together with island-blind stores of levels l <= k, read
 at level k (W = W_k), each blind store F of rate r_F in {9/8 kappa, kappa_out}. Then:
-(T1) Re-index: for each blind store read at level k, take Y_k := fil_k(cl_k Y), tau := tau_(Y_k) and A := A(Y_k). Let
-     V^m(A) be the sum of all blind stores with active domain A, and V^u the plain input family. Blind stores with
-     Y_k in W contain no variable of the site and are carried unchanged (they are read by no output).
-(T2) V = V^u + V^m is an input family of the plain site: V^m satisfies the plain per-domain bound at rate kappa with
-     activity constant c_d C_fib N°[F] (Lemma A3 (a)), and its anchored activity at every cell of the site is at most
-     3^d C_fib N°[F] <= K°(d) N°[F] (Lemma A3 (b)), which is the account's last clause of the proposition.
+(T1) Re-index each blind store at its own level: for a blind store F of level l and kind q (B or B', with its member
+     index), with domain Y in D^I_l, take tau := tau_Y relative to W_l and A := A(Y) in D_l (Definition RL at level l).
+     For each level l and kind q let V^m_(l,q)(A) be the sum of the blind stores of that level and kind with active
+     domain A. This is a plain level-l family of kind q, which the plain site reads through cl_k exactly as it reads
+     the plain stores of level l (9.1 format: "read at a level m >= l through cl_m"). V^u is the plain input family.
+     Blind stores with Y contained in W_l contain no variable of the site and are carried unchanged (read by no
+     output). Integration variables of the step that lie in Y lie in cubes of Y off W_l: by lem-island-geometry (e),
+     cl_k(Y cap W_l) lies in W_k, and W_k does not meet Omega_(k+1) (part (a)). By Lemma A1 (iii) they lie in A(Y).
+     The parameter set of the re-indexed store is P(Y) := Y minus A(Y), contained in Y cap W_l.
+(T2) V = V^u + V^m is an input family of the plain site: each V^m_(l,q) satisfies the plain per-domain bound of level-l
+     stores at rate kappa with constant c_d C_fib N°[F] (Lemma A3 (a)); this is the form in which the plain site reads
+     level-l stores, through cl_k, by statement. Its anchored activity at every level-l cube Delta with
+     dist_l(Delta, W_l) >= 1 is at most 3^d C_fib N°[F] <= K°(d) N°[F] (Lemma A3 (b)); the account's last clause of the
+     proposition states the same kind of bound at the cells of the site, through 9.1:lem-blind-counts (ii).
+     Threshold: (TH) the activity constant of V^u plus c_d C_fib N°[F] lies within the site's threshold
+     (2 eps'/alpha_4 <= nu_0); the account's version needs the same with K°(d) in place of c_d C_fib.
 (T3) Outputs. Let t_lambda be the outputs of the plain site at the potential V^u + lambda V^m. The outputs that read no
      island-blind input are t_0, the outputs of the site without blind inputs: clause (a). The outputs that read an
      island-blind input are t_1 - t_0, the marked sub-sum of the corollary on the marked sub-sum with V^m as the marked
@@ -272,24 +282,24 @@ at level k (W = W_k), each blind store F of rate r_F in {9/8 kappa, kappa_out}. 
      lemma's bound with the plain output factor e^(-rho d_(k+1)(X^a)), rho the site's rate (kappa_out at the T-site,
      9.1:lem-fresh-rate (ii), (vi)).
 (T4) Filing. An output at X^a depends, besides the configuration on X^a, only on the configuration in the union P of
-     the islands of the blind stores it reads (H-par). Each such island touches or meets A(Y_k), and A(Y_k) lies in X^a
-     (F2), so cl_(k+1)(P) touches or meets X^a; by 9.1:lem-island-geometry (e), cl_(k+1)(P) lies in W_(k+1) (W^-_(k+1)
-     at the T-step). File the output at X := fil_(k+1)(X^a union cl_(k+1)(P)). Lemma A2 at level k+1 gives
+     the sets P(Y) of the blind stores it reads (H-par). Each P(Y) lies in the islands of Y, each of which touches or
+     meets A(Y) (Y is connected and islands do not touch each other), and A(Y) lies in X^a (F2), so cl_(k+1)(P)
+     touches or meets X^a; by 9.1:lem-island-geometry (e), cl_(k+1)(P) lies in W_(k+1) (W^-_(k+1) at the T-step). File the output at X := fil_(k+1)(X^a union cl_(k+1)(P)). Lemma A2 at level k+1 gives
      d°_(k+1)(X) <= d_(k+1)(X^a), so e^(-rho d_(k+1)(X^a)) <= e^(-rho d°_(k+1)(X)): clause (b) at (T), with the
      site's constants and rates, in the cluster-expansion lemma, the marked sub-sum and clauses (ii), (vi) of
      9.1:lem-fresh-rate.
-(T5) Clause (c). An output that reads a blind store has X^a containing A(Y_k), which contains a cube of Y_k off W
-     touching an island (Y_k is connected, and islands do not touch each other); that cube is at least 3 R_k - 5 >= 22
-     cubes from Omega_(k+1) by lem-island-geometry (a), so X^a is not contained in Lambda_(k+1). Hence no such output is
+(T5) Clause (c). An output that reads a blind store has X^a containing A(Y), which contains a cube of Y off W_l
+     touching an island of Y (Y is connected, and islands do not touch each other). Its level-k closure touches W_k
+     (part (e)), so it is at least 3 R_k - 5 >= 22 level-k cubes from Omega_(k+1) by lem-island-geometry (a), and X^a
+     is not contained in Lambda_(k+1). Hence no such output is
      a member of a family whose domains lie in Lambda_(k+1). (The other alternative of (c), domains "off
      (Z union Y_iota)^boxplus", is the account's definition of those families; I read it, not proved it.)
 (T6) The tolerance lemma concerns the operators of the site, not its potentials, and is unchanged.
-Proof. (T1)-(T2): Lemma A1 at level k applied to Y_k; Lemma A3 with kappa the plain input rate and r = r_F; the margin
+Proof. (T1)-(T2): Lemma A1 at level l applied to Y; Lemma A3 at level l with kappa the plain input rate and r = r_F; the margin
 r_F - kappa >= k_d + 2 holds for r_F = kappa_out >= 2 (c + 1) kappa (9.1:lem-fresh-rate (3)) once kappa >= k_d + 2,
-and for r_F = 9/8 kappa by (F_RL). Reading at level k only improves the weight (9.1:lem-blind-counts (v):
-d°_k(Y) <= d°_l(Y)). The integrand is unchanged, since sum_A V^m(A) = sum of the blind stores. The integration
-variables of the site that lie in Y_k lie in cubes of Y_k off W (lem-island-geometry (a), (d1)), hence in A(Y_k)
-(Lemma A1 (iii)); the rest of Y_k is island configuration, a parameter in the sense of (H-par). The conditions of
+and for r_F = 9/8 kappa by (F_RL). The integrand is unchanged, since sum_A V^m_(l,q)(A) = sum of the blind stores of
+level l and kind q. The integration variables of the site that lie in Y lie in A(Y) (T1); the rest of Y is island
+configuration, a parameter in the sense of (H-par). The conditions of
 (H-fmt) that are linear pass to the sum V^m(A); the modulus bound is Lemma A3 (a). (T3): the marked sub-sum corollary
 and the cluster-expansion lemma, taken by statement under (H-par). (T4): Lemma A2. (T5), (T6): as stated. QED.
 
@@ -305,3 +315,80 @@ volume out of the length by choosing where each blind term is indexed. The route
 domain sums, (iii) tree composition and the junction re-routing become unnecessary at (T): every polymer, walk and
 junction of the plain expansion lives on plain domains and is paid in the plain length, which dominates the blind
 length after filing (Lemma A2). The cost is the two readings (H-fmt), (H-par) and the floor (F_RL).
+
+## Step 5. The sites (L) and (P), and the novelty check (written 17:32Z by date -u)
+
+**5.0 Novelty check (rule 0a and the row's rule).** `grep -i` for "re-locali", "relocali", "active domain",
+"re-index", "regroup" in `library/open-core.md`: no hit. In FINISH.md: one hit for "regroup", unrelated. In `library/`
+and `parts/`: "active domain" occurs in `library/wf7-bf.md` L15 (a read-set remark on a box map, different object);
+"re-localization" in `library/gap-mini-solve-al-opus.md` L183 (a list item about the absolute core). The account has
+10.3:lem-relocalisation (CA-III L81363), "Re-localisation of a frozen vector family": currents of pointed E-families
+in chapter 10, a different statement. The account's own route for this proposition (CA-III L16634-16781) does not
+re-index; it reruns CMP 116 Section 2. So the re-indexing of blind stores at active domains is not on file as far as
+these greps show.
+
+**5.1 Relative versions of Lemmas A1-A3 (PROVED by the same proofs).** At (L) the plain lengths are relative to the
+large-field region Z (norm ||.||_a with d_(k,Z); CA-III L16141-16143 for the blind form), and the blind form is
+relative to Z union W' (9.1:lem-blind-resummation, eq. (9.1:eq-blind-resummation-1)). Let E := Z union W', whose
+pieces (components of Z, islands of W') are pairwise non-touching (the account says so at L16135-16137, from (S1) and
+lem-island-geometry (c1)).
+- A1'. For Y not contained in E, with Y cap Z a non-empty union of components of Z and Y cap W' a union of islands,
+  let tau be optimal for d_E(Y), A := cl(tau), and A'' := A together with Y cap Z and with the components of Z that
+  meet A. Then d_(k,Z)(A'') <= d_E(Y), A'' cap Z is a non-empty union of components of Z, A'' contains every cube of
+  Y off E, and Y minus A'' lies in W'. Proof: tau is contained in A, which is contained in A'', and tau meets every cube
+  of A, which contains every cube of A'' off Z (A'' adds only cubes of Z); the rest is Lemma A1 and the definitions.
+  Connectedness: each component of Z in Y touches a cube of Y off E, because islands of W' are at distance at least
+  5 from the strips of Z (lem-island-geometry (c1), L15520-15526) and components of Z are at distance at least R from
+  each other; that cube is in A.
+- A2'. For X^a in the plain (L) class and P a union of islands of W' touching or meeting X^a:
+  d_E(X^a union P) <= d_(k,Z)(X^a). Same proof as Lemma A2.
+- A3'. Per-domain and anchored bounds as in Lemma A3, with lem-blind-counts (i) replaced by the relative domain count
+  of the strip format (parts (b), (c)), which the account applies with any excused set made of pairwise non-touching
+  unions of cubes ("its proof uses only one property of the islands: they are pairwise non-touching unions of cubes",
+  CA-III L15979-15982). The margin needed is r_F >= a + k_d + 2 with a the (L) rate; a <= kappa (a_flat =
+  (1 - beta_pr) kappa / c# < kappa), so (F_RL) suffices.
+
+**5.2 Theorem RL-L (the (L) part). PROVED GIVEN (H-fmt)_L, (H-par)_L, the plain (L) statements as the account takes
+them (the expansion lemma of the site (L), the summation of boundary terms at finer zones, the boundary lemma, the
+bracket lemma), a threshold (TH)_L as in Theorem RL-T, and (F_RL).** Re-index each blind input at A''(Y) (A1'),
+apply the plain (L) statements by statement, file each output reading a blind input at X^a together with the islands
+of the inputs it reads (A2'). Then ||v^br||°_a <= eps_br with the site's constants. Here (H-par)_L is (H-par) at
+(L): "At this site there is no integral. The exterior fluctuation fields enter as parameters" (5.2:def-sites-units
+(L), CA-II L5277-5279), and its decoupling cubes lie in the collars of Z(m)# and at near points, off W' by
+lem-island-geometry (c1) (CA-III L16759-16763); inside a first-class component nothing is excused (c2). The parameter
+set Y minus A''(Y) lies in W' (A1'), so the site decouples no variable in it.
+
+**5.3 Theorem RL-P (the (P) part), for stores of level at most the shell's scale. PROVED GIVEN (H-fmt)_P,
+(H-par)_P, the plain (P) statements as the account takes them, (TH)_P and (F_RL).** At the preparatory stage of
+scale j+1 the integrated variables are localised in the shell Z_(j+1) minus Z''_(j+1); by lem-island-geometry (d3)
+(L15559-15579) a cell of the preparatory integrations at scale j+1 is off every island of I_(j+1) (j+1 < m) and of
+I^-_m (j+1 = m). A blind store of level l <= j+1 has its blind set's closure in W_(j+1) (part (e)), so its parameter
+set Y minus A(Y) contains no integrated variable. Re-index, apply the plain (P) statements, file: the chain terms that
+read a blind store obey ||C^(n)||^(A,°) <= C_0# with d_m replaced by d°_m in the weight (Lemma A2 at the output
+level).
+OPEN: blind stores younger than the shell (l > j+1). The account's (d3) excludes them: "The treatment by the
+preparatory integrations of a stored term younger than the shell at which it is evaluated (of level l > j+1) is not
+part of this statement; it is governed by the class assignment of stored terms in the relative expansion at the
+preparatory integrations" (L15576-15579). I did not read that class assignment, so for such stores I cannot say that
+the parameter set contains no integrated variable.
+
+**5.4 What each reduction does not cover.** (a) The readings (H-fmt), (H-par) at each site are statements about how
+Balaban's expansions read their inputs (CMP 109, 116, 119, 122a, 122b), made from the account's transcriptions; I
+checked them against those transcriptions only, not against Balaban's text. The one place I could not settle from the
+transcriptions is the rotation of type-four units: at (T) a fourth-class unit is read "rotated by the G-valued map
+u = u(b, U) from the Landau to the axial gauge of the response" (CA-II L5454-5460), with rotation arguments on its read
+set S_v (CA-II L5525-5530). (H-par) needs u to act trivially on the parameter set (islands). The shift pieces are
+supported on blocks of the site (L5330-5332), and islands are at least 3 R_m - 4 cubes from Omega_(m+1); I did not find
+the support of u stated. If u is not trivial on islands, joint invariance (5.2:def-sites-units (b)) still makes the
+unit's value independent of a simultaneous rotation, but then the re-indexed unit, rotated on A only, is a different
+function, and the reduction needs u restricted to A instead. Name this residual reading (U-loc): at (T) the
+Landau-to-axial map u is the identity on the islands. Evidence (READ, not decisive): the map from the Landau to the
+axial gauge "is normalised by the averaging conditions of [CMP99a (1.29)]" and "On the block Delta(y_x), g(B_t) is an
+explicit local function of H(B_t) there", built from nested transports of the averages of e^(i eta H) (CA-I
+L16588-16600). With H = 0 on a block these averages are 1 and the map is the identity there. So (U-loc) follows if the
+response H vanishes on every block inside an island. Islands of births i <= k lie in Omega_(k+1)^c at the step
+k -> k+1 (lem-island-geometry (b) at m = k+1, L15499-15503); whether the response of that step is supported in
+Omega_(k+1), or only decays outside it, I did not establish. If it only decays, the reduction needs the same
+decay that the plain site already uses for the parts of plain stores outside Omega_(k+1), which I also did not read. (b) The wall-connectedness of filed domains (Remark after
+Lemma A2) is the account's own convention issue, not created here. (c) Clause (c) of the proposition is read, not
+proved, in its alternative "off (Z union Y_iota)^boxplus".

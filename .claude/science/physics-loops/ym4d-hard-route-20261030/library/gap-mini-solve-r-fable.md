@@ -13,7 +13,7 @@ with a named gap), GUIDE (heuristic or numeric orientation, never a proof step),
 
 ## 0. Status of this file
 
-Step 0 (orientation): done 05:46Z, Section 1. Plan: Section 2. Steps follow below as they finish.
+Step 0 (orientation): done 05:46Z, Section 1. Plan: Section 2. Step A: Section 3. Step B: Section 4. Section 5: what is left. Finished 05:58Z; RESULT line at the end.
 
 ## 1. Orientation (read, not re-derived; 05:29Z-05:46Z)
 
@@ -41,8 +41,8 @@ What the record says the gap needs (each item cited, none re-proved here):
 - Published work of the same group (row 1218): A's (A-B*) is stronger than (N-phys); B's BP is different in kind;
   B's weak-coupling Corollary 166 is not selective (row 1220 Proposition U); C's rate is row 1204's Q. Row 1224
   (worker 1, now running) checks A's slab route (A-M) and runs a kill test of A's hypothesis in 4D. I do not repeat it.
-- Seventeen plain-brief rows (1188-1224) screened candidate mechanisms against the record; every candidate was on file
-  with a first failing step. Row 998 9.5 lists "another fresh-framing exercise by this model family" under
+- About seventeen plain-brief rows (row 1224's count, rows 1188-1223) screened candidate mechanisms against the
+  record; by their RESULT lines every candidate was on file with a first failing step. Row 998 9.5 lists "another fresh-framing exercise by this model family" under
   "What not to do next". So this row does not screen again.
 
 ## 2. How to attack it (judgement, ARGUED)
@@ -58,6 +58,7 @@ So I choose bounded work with a named consumer, in this order:
   of what is open for the gap clause. If it fails, the lead learns that the crux is (N-phys) plus a named bridge.
 - Step B (producer side, the crux): one attack on (N-phys), not a screening. Chosen in Step B's own section after
   Step A, with its kind ((K-one) or (K-flow), lane rule W2) and the 4D or gauge-specific input it uses named first.
+  (Outcome: Section 4 found no structure off the record to attack, so no attack was started; see the Status line.)
 
 Status: Step A done 05:48Z (Section 3). Step B done 05:55Z (Section 4): no attack started, reasons given. Section 5 (what is left, and a process note) written 05:56Z. RESULT line at the end.
 
@@ -86,10 +87,11 @@ lattice version iota_j X of row 916 E1 is in V_A.
 
 Proof. The map U -> g.U is the gauge transformation by the site function g, whose values lie in the centre
 {+1, -1} of SU(2) (central values commute with U, so g(x) U g(x + mu)^(-1) = g(x) g(x + mu) U, as g(y)^(-1) = g(y)).
-A gauge-invariant function is invariant under every gauge transformation, so under these. The observables O_j(f) of
-row 916 E1 (CA L99284-99294) are gauge invariant (functions of plaquette variables through gauge-invariant traces;
-row 916 Remark 3 reads the bare weight at CA L1640-1650), and centring by a constant and taking products keep
-gauge invariance. E1 gives the time range in (0, infinity). QED
+A gauge-invariant function is invariant under every gauge transformation, so under these. The account's observables
+are sums of plaquette traces: O(f) = sum_p f(x(p)) a_p(U) with a_p = 1 - (1/2) Re tr U_p (CA L1640-1658, L1651) and
+O_j(f) = sum_p f(x_p) A_p (CA L99284-99294), both as READ in row 916 Step 3, items (O1) and (O5); I did not re-read
+the account. A plaquette trace is gauge invariant, and centring by a constant and taking products keep gauge
+invariance. E1 gives the time range in (0, infinity). QED
 
 **Theorem E-N (Theorem E with (N-phys) in place of (SEED-FP)). PROVED GIVEN (N-phys) on the account's trajectory
 and the inputs of row 1179 5.0 ((TM-tw), (S), Theorem S-w, Corollary EV, (L), `gap-os-equiv.md` Statements (3), (5a)-(5c),
@@ -128,15 +130,16 @@ there is right, given the restriction to V_A.
 Jaffe-Witten gap clause on the tr F^2 sector is implied by (N-phys) alone, beside the account's premises. Nothing
 else on the gap side is open.
 
-## 4. Step B, part 1: what any proof of (N-phys) must contain (ARGUED from checked statements; 05:54Z)
+## 4. Step B: what any proof of (N-phys) must contain (ARGUED from checked statements; 05:54Z)
 
 **Self-similarity of the band (ARGUED; each link is a checked statement).**
 
 1. (N-phys) along the trajectory implies, at every large cutoff j, a centre-neutral lattice gap of the bare Wilson
    theory at the FIXED coupling beta_j on every periodic cube of side at least n_j (row 1179 P-ev (a)).
 2. Conversely, a seed at one cutoff's window implies (N-phys) given (UNIV-K) (row 916 (ONE-K), checked row 917).
-   (UNIV-K) is a statement about the ultraviolet (the account's finite-horizon universality at n = 0); it is OPEN but
-   needs no infrared input (rows 924-925 reduce it to (MAPCONV), (VAC-ID), (DENS-K) B1-B2, (CLASS)).
+   (UNIV-K) is a statement about the ultraviolet (the account's finite-horizon universality at n = 0); it is OPEN
+   (rows 924-925 reduce it to (MAPCONV), (VAC-ID), (DENS-K) B1-B2, (CLASS)); ARGUED: it needs no estimate in the band,
+   since it compares two cutoffs on one fixed torus through the account's ultraviolet steps.
 3. The seed at a fixed coupling beta_0 cannot sit at a side where the running coupling is small (first passage;
    row 1180 seed-size form; row 1215 (5), levels coalesce at fixed spatial size; A's Theorem 7.59, row 1218).
    So its cube has side of order exp(c beta_0) lattice units at least, and the estimate is an infinite-volume
@@ -194,3 +197,5 @@ only if the lane wants the one-cutoff form (ONE-K).
    `library/t0-tree.md` at this pin (grep, 05:56Z), and no row has worked on it since row 925 (2026-11-14). It would
    turn the crux into one statement at one coupling window; it would not supply that statement.
 3. This row spent no tokens on a screening. It ran 05:29Z-05:58Z (date -u).
+
+RESULT: Row 1225 (Claude Opus 5.5 max, Mac mini worker 3, 05:29Z-05:58Z; the Fable 5.2 row ran on Opus by the lead note; author only, checked by no one; no numeric run). The mass gap is NOT proved and nothing is disproved. PROVED GIVEN checked statements (a composition, same provider as rows 916 and 1179, needs a cross-provider check): Lemma A0 (every gauge-invariant local function, so every account observable built from plaquette traces, is centre-blind) and Theorem E-N (Theorem E of row 916, checked in row 917, holds with (N-phys) in place of (SEED-FP) once the member data are restricted to V_A, using row 1179's L3-ev, P-ev, P'-ev): for SU(2) along the account's trajectory the Jaffe-Witten gap on the account's tr F^2 sector follows from (N-phys) alone beside the account's premises, with rate M_* = (2/L) log(2^18/5041) > 7.9/L in check 1183's form; this confirms the reading the lead asked to check in row 1219. ARGUED: modulo the ultraviolet hypothesis (UNIV-K), the crux is the lattice gap of SU(2) Wilson at one fixed coupling with a seed side of order exp(c beta_0); with no computed certificate allowed it must come from a structure valid at every coupling, and every such structure on file (positivity and association, positive duals, coupling integrals, loop and sector identities, curvature and Gribov geometry, the bracket stiffness step) stops at a cited failure, so no attack was started and no screening was run. OPEN: (N-phys), the account's premises (T0 chain), (UNIV-K) (unowned since row 925). Output library/gap-mini-solve-r-fable.md.

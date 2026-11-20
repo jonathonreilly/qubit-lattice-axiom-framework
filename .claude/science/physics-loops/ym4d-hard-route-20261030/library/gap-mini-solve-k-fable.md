@@ -27,4 +27,32 @@ Where the lane stands, in my words (GUIDE, a reading; every item is cited to its
 
 Consequence for this run: a seventh screening has no value. This run picks one mechanism and works on it.
 
-Status of this file: step 2 (choice of attack) in progress. Nothing below this line is proved yet.
+## 2. Choice of attack (written 2026-11-20T02:20Z)
+
+### 2.1 What a proof must contain (reading of the record; ARGUED there, cited)
+
+1. The Jaffe-Witten gap clause reads one lattice premise, the neutral one-cube bound (N-phys), plus the continuum datum (row 1179 Theorem BP; row 1161; check 1183). The flux half (BS) is on the path of (W) only.
+2. In pure gauge theory every stiffness, twist or frame mechanism on file acts on the flux half: the bracket of the posted 2D O(4) proof gives the charged half, and the neutral half there comes from association (row 1193, citing rows 1009, 1076-1086). The gauge port of association failed three ways (row 1084); the eight plaquette monomials have a sign pattern that no phase shift removes (row 1190 2.1).
+3. So the missing object is a mechanism for neutral mixing at order-one coupling that reads the group. The record names it (SING) in two dimensions and (N-phys) in four.
+
+### 2.2 Candidates generated in this run, each grepped before any work (rule 0a)
+
+| # | Candidate | On file as | Verdict |
+|---|---|---|---|
+| 1 | Port of the 2D stiffness iteration with a colour frame | rows 1007-1050, 1188, 1193 (Propositions B, B', Theorem BH, Lemma PC, route (ii)) | found again |
+| 2 | The time-independent gauge group as rigid group in temporal gauge | row 1016 QL1, HAM1; row 1190 item 2 | found again: its response is the static-charge (Polyakov) family, blind |
+| 3 | Durhuus-Frohlich layers with the posted O(4) theorem | rows 712, 819, 825; method 36 (two-sided backgrounds order the layer at large b) | found again |
+| 4 | Small-volume (toron) gap carried by a monotone step-scaling function | row 859 items 8, 36; rows 1143, 1008; route RA | found again: no step that excludes a zero of the step-scaling function |
+| 5 | Hellmann-Feynman in beta with a bound on the action excess of the lightest state | row 859 item 46 and G8, (NOCRIT-HF); route RB | found again |
+| 6 | Trace anomaly: scale derivative of D equals the finite-size plaquette shift | (MONO-Delta), `gap-phys-seed.md` L351; Proposition VIR; route RB | found again |
+| 7 | Bakry-Emery on the orbit space (Singer's curvature) | method 31; rows 957, 968; Proposition G1 of row 1128 | found again |
+| 8 | Three-dimensional compact U(1) (Gopfert and Mack) as a template or test | row 859 item 34; exercise 2 I20, (m2) | found again |
+| 9 | Griffiths-type positivity for products of characters | (EP) false, Theorem EP-NO of row 754; method 35 | found again |
+| 10 | A neutral soft mode needs a first-order-like structure; the Wilson axis is near a first-order end point | Proposition V, K7, (NO-1ST) of row 1109 | found again |
+| 11 | The spacetime symmetry group of the box as the rigid non-abelian group: every glueball state except a scalar at rest is charged under it | sheared tori and Lemma SHIFT (row 962 A4, 7.4); rotated tori (row 963); "shape twists" in row 1190 item 3 (one line, "found again") | in part: the identities are on file; the question "does the bracket of this group give a gain" is not answered on file |
+
+Candidate 11 is the only one with an unanswered question. Section 3 answers it.
+
+A failed step of my own, kept as a negative result (ARGUED): I tried to get (MONO-Delta) for compact U(1) from Ginibre's inequality by "identifying periodic images". This is wrong. Identifying the sites of the kn-torus modulo n gives the n-torus at coupling k^4 beta, not at beta. So Ginibre compares different couplings and gives no sign for the finite-size plaquette shift. The record already holds that (MONO-Delta) fails for the ordered Ising model, which has Griffiths' inequalities (`gap-phys-seed.md` L367-373).
+
+Status of this file: step 3 in progress.

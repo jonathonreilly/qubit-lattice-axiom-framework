@@ -134,7 +134,7 @@ Remark (the size of the frustration; ARGUED, second order of the Baker-Campbell-
 
 Let Kc_N be the model of N planes k_1, ..., k_N in K with all pairs coupled: density proportional to prod over bonds f of exp(beta sum_(p<p') <n_p(f), n_p'(f)>), with n_p(f) = k_p(y) k_p(y')^(-1). (Every relative sheet k_p^(-1) k_p' carries one O(4) energy, because <n_p, n_p'> = <k_p'^(-1) k_p (y), k_p'^(-1) k_p (y')>.) For N = 3 the cycle is the complete graph, so Kc_3 = K_3.
 
-Let gamma be the standard Gaussian law on R^4, read as quaternions, and put one variable zeta_f on each oriented bond. Consider the joint density, with respect to prod gamma(d zeta_f) prod dk_p,
+Let gamma be the standard Gaussian law on R^4, read as quaternions. Fix one orientation y -> y' of every bond f and put one variable zeta_f on it. Consider the joint density, with respect to prod gamma(d zeta_f) prod dk_p,
 
   prod_p w_zeta(k_p),   w_zeta(k) = prod_f exp( sqrt(beta) < zeta_f k(y'), k(y) > ).
 
@@ -154,14 +154,50 @@ where each T is a product of four moduli times the cosine of: T1: alpha_a + alph
 
 Proof. (ab)_11 = z_a z_b - w_a conj w_b, (ab)_12 = z_a w_b + w_a conj z_b, and <g, h> = Re(g_11 conj h_11 + g_12 conj h_12). Expand. The forms T2 - T1 and T6 - T5 are the same linear form, alpha_a' + alpha_b' - gamma_a' + gamma_b'. A shift that makes T1, T5, T6 non-negative and turns the sign of T2 would need this form to be 0 and pi at the same shift. QED.
 
-So the energy E(a) + E(b) + E(ab) of K_3 is not of Ginibre type in the Hopf coordinates of the sheets. In the coordinates of the planes the same holds by Lemma HF of row 1188 (the word k_0(y) k_0(y')^(-1) k_1(y') k_1(y)^(-1) is its plaquette word with two letters inverted; inversion reflects one angle and shifts the other, and the property is invariant under reflections and shifts). The entry point of OpenAI's Section 3.11 is closed in both coordinate systems.
+So the energy E(a) + E(b) + E(ab) of K_3 is not of Ginibre type in the Hopf coordinates of the sheets. In the coordinates of the planes the same holds by Lemma HF of row 1188, which I use as stated and did not check again (the word k_0(y) k_0(y')^(-1) k_1(y') k_1(y)^(-1) is its plaquette word with two letters inverted; inversion reflects one angle and shifts the other, and the property is invariant under reflections and shifts). The entry point of OpenAI's Section 3.11 is closed in both coordinate systems.
 
 ### 4.3 Test models inside the family (one PROVED identity, two RECALLED theorems)
 
 Replace SU(2) by another compact group G in the definition of K_N, with the bond function (1/2)(chi + conj chi) of a faithful character where needed.
 
-- **G = Z_2, N = 3 (PROVED): K_3 is the four-state Potts model with coupling 4 beta.** With sigma = k_0 k_1, tau = k_1 k_2 the bond energy is beta (sigma sigma' + tau tau' + sigma sigma' tau tau'). It equals 3 beta when (sigma, tau) = (sigma', tau') and -beta in the three other cases, so it is -beta + 4 beta delta. RECALLED, not rebuilt: on Z^2 this model has its transition at exp(4 beta) = 1 + sqrt 4 = 3, that is beta = (log 3)/4, and the transition is continuous (Baxter; Beffara and Duminil-Copin; Duminil-Copin, Sidoravicius and Tassion). At that coupling no exponential bound holds for the energy covariance. Above it the symmetric state is a mixture.
+- **G = Z_2, N = 3 (PROVED): K_3 is the four-state Potts model with coupling 4 beta.** With sigma = k_0 k_1, tau = k_1 k_2 the bond energy is beta (sigma sigma' + tau tau' + sigma sigma' tau tau'). It equals 3 beta when (sigma, tau) = (sigma', tau') and -beta in the three other cases, so it is -beta + 4 beta delta. RECALLED, not rebuilt: on Z^2 this model has its transition at exp(4 beta) = 1 + sqrt 4 = 3, that is beta = (log 3)/4, and the transition is continuous (Baxter; Beffara and Duminil-Copin; Duminil-Copin, Sidoravicius and Tassion). At that coupling the charged (spin) two-point function has no exponential bound. Above it the symmetric state is a mixture of four ordered states. For the energy covariance at the transition I recall no theorem and I claim none.
 - **G = Z_2, N = 4 (PROVED):** with x = (sigma, tau, upsilon) the bond energy is 4 beta [delta(x = x') - delta(x = -x')]. This is an Ising sign carried by a four-state colour, coupled only at equal colours (a cubic model with four colours).
 - **G = U(1) (GUIDE):** 3.7, the Coulomb gas at inverse temperature N/beta.
 
-Use. A proof of (K_N-N) at every beta must fail for Z_2 at one explicit coupling and for U(1) at large coupling. So it must read that the group is connected and that it is not abelian, both at order one. This is the lane's test table (compact U(1), frozen groups) inside this one family, with a theorem-grade discrete member.
+Use. A proof of exponential clustering of all local observables of K_N at every beta must fail for Z_2 at beta at least (log 3)/4 (theorem grade, RECALLED) and for U(1) at large coupling (GUIDE). So it must read that the group is connected and that it is not abelian, both at order one. This is the lane's test table (compact U(1), frozen groups) inside this one family, with a discrete member whose transition coupling is explicit. It does not bind a statement about neutral observables alone.
+
+## Step 5. The neutral lemma (K_N-N): what is supplied, three ways in, and the one statement where each stops
+
+### 5.1 Proposition E1 (the charged half for every fibre; PROVED GIVEN one posted estimate)
+
+GIVEN. Estimate (3.61) of OpenAI's O(4) paper in the form that row 1009 reports, used on a finite rectangle with free boundary, with one pinned site, bond strengths anywhere in [0, b] and fixed one-sided twists: an observable O of one unpinned site with zero average under the rotation of that site has |E O| <= C |O| exp(-c d_pin/s(b)). I did not read the primary text. Row 1076's check item (5) asks whether its pin class allows a pin on an arbitrary finite set; I use the answer "yes" as a hypothesis.
+
+Statement. In the corner model of row 1189 on F x B, with F any finite graph of degree at most Delta_F: for planes p_0 != p_1 and base sites y_0, y_1 at distance r, the mixed rectangle W = (1/2) tr[k(p_0, y_0)^(-1) k(p_1, y_0) k(p_1, y_1)^(-1) k(p_0, y_1)] has |mu(W)| <= 2 C exp(-c r/s(Delta_F beta)). If F is a rectangle too, the same holds with the fibre distance R of p_0 and p_1 in place of r. So |mu(W)| <= 2 C exp(-c max(R, r)/s(4 beta)).
+
+Proof. By Lemma A5 of row 1189, given the other planes the plane p_0 is one O(4) sheet with bond strengths beta |Q| <= Delta_F beta, a one-sided twist, and an exact rigid group on the other side. Condition also on the spin of that plane at y_1. The entries of the spin at y_0 have zero average under the rotation of that site, and the only pin is at distance r. W is linear in that spin with coefficients of norm at most 1. The second claim is the first after the exchange of Lemma A2 of row 1189. QED.
+
+This is (O5) of row 1110 for every fibre, with the same input. It is a bound of perimeter type. For a fibre that is a chain the sheets are independent and mu(W) = c(r)^R exactly, an area law; for a two-dimensional fibre I have no area law (two attempts in my notes stop at a diamagnetic comparison for one-sided twists, which I can neither prove nor find on file; method 36 refutes the two-sided form).
+
+### 5.2 The lemma
+
+**(K_N-N), N = 3 or 4, beta > 0 (OPEN).** There are C and c > 0 such that for every rectangle B, all bonds f, f' of B and all functions F, G with values in [-1, 1], F of m_0 on f and G of m_0 on f', both invariant under m_0 -> a m_0 b: |Cov_(K_N)(F, G)| <= C exp(-c dist(f, f')).
+
+N = 4 is (K4-N) of row 1115 3.2 with its (K9). N = 3 is smaller and has the same features: no one-site singlet, a rigid group SU(2)^3 that is transitive on the one-site space, no association (D2). N = 2 is the posted O(4) theorem at coupling 2 beta (C4 (c)). So N = 3 is the first open member. I recommend it as the form of the lemma.
+
+### 5.3 Three ways, each to its first failing step
+
+**Way 1: association (the posted route to singlets).** Fails at its entry. D2 and Lemma HF: the energy is not of Ginibre type in the Hopf coordinates of the sheets or of the planes. I know no third coordinate system. The Z_2 member is a ferromagnet (the four-state Potts model) and the U(1) member has Ginibre's inequalities; the obstruction is the sign pattern of the SU(2) product.
+
+**Way 2: one sheet given the others, then the posted theorem.** By C4 (e) and row 1115 3.2, a sheet given the others is one O(4) sheet with strengths 2 beta cos(theta_f/4) and twists that are the geodesic midpoints of the increments of the other sheets. The posted charged estimates hold for it (E1). The posted singlet step does not: it needs untwisted non-negative couplings, and the midpoint field is frustrated by the commutators of the increments (remark after C4). For U(1) the same conditional sheet is frustration-free away from vortices, and the substitution phi -> phi - alpha/2 removes the twist. So the first failing step is exactly the non-abelian part. Its size per plaquette is of order 1/beta in angle, but the commutator sum over a block of side l has size of order l/beta (ARGUED: sum of l^2 terms of size 1/beta with no fixed sign), so the frustration is of order one at side beta, far below the mixing length. It is not a small perturbation at the scale that matters.
+
+**Way 3: the dual gas (C2).** (K_N-N) for one-sheet observables is a statement about the positive weights d_j tr[Pi_(FG)(j) Pi(j)^(N-1)]. GIVEN (3.62) the charges are confined linearly, and that is where SU(2) differs from U(1) (3.7). First failing step: a bound that factorizes tr[Pi(j)^N] over separated neutral clusters of a dense flux configuration with a relative error that can be summed. The posted covariance bound (3.67) is additive. The cluster weights are exponentially small in N and in the cluster size, so an additive error does not control the ratio. At N = 2 the sum is known in closed form (the sheet at 2 beta); I found no interpolation from N = 2 to N = 3 that keeps a bound.
+
+**A fourth form with the same stop (D1).** For complete-graph fibres the planes are independent given the annealed quaternion bond field zeta, and for a two-plane singlet Q_f = <n_1(f), n_2(f)> one has E[Q_f | zeta] = |nu_f(zeta)|^2 with nu_f the mean current of one twisted sheet. So the covariance of Q_f and Q_f' is controlled by the dependence of nu_f(zeta) on zeta at f', and by the current covariance of one twisted sheet. Both are neutral responses of a twisted sheet. ARGUED reading at large N with beta = lambda/N: the saddle is an untwisted sheet at the coupling b that solves b = lambda e(b), e the mean bond energy, non-zero only for lambda > 4; the phase of zeta is a two-dimensional SU(2) gauge field with an induced action of order N. So in this family the neutral sector is a two-dimensional gauge theory with N flavours of S^3-valued scalars at infinite gauge coupling. That is a picture, not a bound.
+
+### 5.4 The statement where all ways stop
+
+**(N-tw) (OPEN; on file in other words: (S-a) and NR of rows 1109, 1110, 1115).** For one O(4) sheet on a rectangle with strengths in [0, 2 beta] and one-sided twists drawn from the law that K_N induces: the covariance of two singlet bond observables at distance d, and the response of a singlet bond expectation to a change of the twist field at distance d, are at most C exp(-c d), in mean over the twist field.
+
+What this session adds to it: (1) the twist field is explicit, the midpoint field of C4 (e); (2) its frustration is the commutator sum, which vanishes identically for an abelian group away from vortices; (3) an equivalent positive form with no twist at all, the flux gas of C2, in which the group enters through the confinement of the dual charges; (4) the smallest member, N = 3, and its two test models (4.3). None of these proves (N-tw).
+
+Three ways failed at one statement, so the stop rule of 2.3 applies. I did not find a fourth way that is not a renaming.

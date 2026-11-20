@@ -8,7 +8,8 @@ Started 2026-11-20T16:37Z. Labels: PROVED, ARGUED, GUIDE, OPEN, as the row asks.
 
 ## 0. Status of this file
 
-Step 0 (record read) done 16:55Z. Step 1 (how to attack) done 17:18Z. Work continues below; nothing proved yet.
+Done 2026-11-20T17:24Z by date -u. Steps 0-3 written. Mass gap NOT proved; nothing disproved; one elementary inequality
+proved and found again on file. Author only, checked by no one; no numeric run; no subagent.
 
 ## Step 0: record read (2026-11-20, 16:37Z-16:55Z by date -u)
 
@@ -45,10 +46,13 @@ row 1218 or the cube inequality of B) needs explicit information about the Wilso
 hand calculation supplies. (ii) A soft mechanism valid uniformly in beta, as in the two posted 2D proofs (OpenAI;
 Ding, Huang and Yang; rows 1007-1010). So the best attack is a 4D soft mechanism. Its missing parts are on file:
 the 2D gain needs a global non-abelian symmetry, and pure 4D SU(2) has only central link symmetries (Lemma CEN+,
-row 1016, checked by row 1020); the 2D templates, read in 4D, act on centre-charged observables, that is on the flux
-half, and the crux is in the neutral half (rows 1193, 1213, 1241, 1258; the 2D singlet gap follows from the charged
-gap, which has no 4D analogue); and in 4D even the "base" bound of such a proof (McBryan-Spencer or spin-wave level
-decay of neutral correlations at every beta) is not available (`gap-crux-*`, `gap-arealaw-*` files).
+row 1016, checked by row 1020); and the crux is in the neutral half, where the 2D proofs use a positivity structure
+that 4D Wilson SU(2) lacks (rows 1193, 1213, 1241, 1258, as the brief of row 1303 summarises them). Two remarks of
+mine (ARGUED, not checked against those rows): in 2D the vector particle is the lightest state and the singlet gap
+follows from the charged gap, while in 4D the charged (flux) channel is the one that confines and the neutral
+glueball gap is a separate statement; and I know no 4D analogue of the "base" step of the 2D proofs
+(McBryan-Spencer or spin-wave level decay at every beta) for neutral observables. Related material is on file in the
+`gap-crux-*` and `gap-arealaw-*` notes, which I did not re-read.
 
 **Screen (rule 0a), short.** Each idea I formed before reading the tables has a match on file with its first failing
 step; I do not repeat them: 2D pinned-cell stiffness and DHY loop soups (rows 1007-1018); orbit-space curvature and
@@ -59,7 +63,8 @@ density-of-states links (`gap-arealaw-opus.md`, `gap-arealaw2-opus.md`); Gribov 
 line-spin model satisfies (NS-gap) at every fixed coupling, row 1234 3 (c)).
 
 **Two probes of my own, this session (GUIDE; no claim recorded as PROVED).**
-1. *A kill test of row 1298's open estimate (37)* (gpt-6.2-astra, committed after this row's pin, at e44ecf93c):
+1. *A kill test of row 1298's open estimate (37)* (gpt-6.2-astra, `library/gap-solve34-astra62.md`, added after this
+   row's pin in f47be8724; read at branch head e44ecf93c):
    "gamma_d >= c a uniformly", the gap of the flagged-cap resampling chain restricted to G_d. Local heat-bath dynamics
    usually relax physical-scale modes at rate of order a^2 (critical slowing down), which would kill (37). It does not
    here: the resampling of (29)-(31) conditions on the two neighbouring time slices, so for a free massive field the
@@ -71,7 +76,8 @@ line-spin model satisfies (NS-gap) at every fixed coupling, row 1234 3 (c)).
    per step, and a smeared toron coordinate has variance of order n^(-2) in a confining state. No kill.
 2. *Is CMP 116 reachable?* The carry inputs (CE), (E0)-(E5) and `9.1:prop-blind-site-expansions` (CA-III L16559,
    "Proof outstanding"; its printed route repeats Balaban CMP 116 Section 2 with island-blind inputs) need Balaban's
-   CMP 116. It is not in `~/ym4d-papers`, and Project Euclid answered with a bot check (stopped there, FINISH Rules).
+   CMP 116. It is not in the owner's local folder of Balaban papers on this machine, and Project Euclid answered with
+   a bot check (stopped there, FINISH Rules).
    Row 1299 works (CE) and (E0)-(E5) through the account's own printed machine.
 
 **Decision.** No route to the seed off the record, in agreement with rows 998, 1219, 1278, 1284, 1291, 1296. I take
@@ -131,3 +137,44 @@ excitations of a gapped transfer operator that no tool in the lane (or known to 
 needs gapped zero-tension extended excitations, which I could not build. OPEN, unchanged; no new statement is claimed.
 By FINISH rule "How we work" item 4 (two reductions, gap to seed to the count half, with no closure), I stop here and
 report.
+
+## Step 3: labels, state, check request, credits (written 2026-11-20T17:24Z by date -u)
+
+| Statement | Label | Where |
+|---|---|---|
+| The Jaffe-Witten mass gap for four-dimensional SU(2) Yang-Mills | OPEN, not proved, not disproved | Steps 1-2 |
+| The infrared seed: (N-phys), equivalently a uniform cube gap plus the count (TR) at one window coupling | OPEN, no route off the record | Step 1 |
+| Judgement: under `GOAL.md`'s rule the seed needs a beta-uniform (soft) 4D mechanism; none is known | ARGUED | Step 1 |
+| Row 1298's open estimate (37) is consistent with a free massive field (Dirichlet ratio about 2 delta m a) and fails for the massless one; winding traces do not kill it | GUIDE (no kill) | Step 1, probe 1 |
+| (A1): sigma_3(t) <= g(t; b^3)/b^3 + t eps(b) | PROVED (elementary); found again: row 1291 Lemma CR | Step 2, Attack A |
+| Spatial doubling: 1 + S(t; (2b, b, b)) <= (1 + S(t; b^3))^2 e^(t kappa(b)), kappa(b) >= 0 | PROVED (one line from reflection positivity); found again: rows 700, 1291 | Step 2, Attack B |
+| (NS-gap): a uniform cube gap at one coupling forces a seed | OPEN; each of three attacks fails at a named step | Step 2 |
+| No counterexample to (NS-gap): zero-tension extended excitations either degenerate the vacuum or carry a tension that caps their entropy | GUIDE (heuristic, no model built) | Step 2, Attack C |
+
+**State after this row.** Nothing on the gap path changed. The seed and its two halves stay OPEN. The one statement I
+could attack without band input, (NS-gap), is equivalent (Corollary Z2 of row 720 with Lemma CD of row 1259) to a
+sub-exponential bound on the number of levels of the periodic cube below a fixed energy, and that needs a structure
+theorem for the excitations of a gapped transfer operator; no tool in the lane supplies it. The one-cutoff carry's
+remaining CMP 116 readings stay blocked on this machine (bot check at Project Euclid).
+
+**What is waste here (FINISH How we work item 0).** Step 1's screen and Step 2's Attacks A and B re-derived statements
+on file (rows 700, 703, 1259, 1291); they moved nothing. The probe of (37) moved nothing either, but it records that
+(37) is the gap in Dirichlet form, so a later row should not try to kill it by a critical-slowing-down argument.
+
+**For the lead.** No check is needed for the PROVED items (both are found again on file). If a checker reads this row,
+the only claim worth a second look is the GUIDE calculation of probe 1 (the Dirichlet ratio of the zero-momentum mode
+under the flagged-cap resampling of row 1298 (29)-(31), and the winding-trace remark), because a later row may cite it
+when it weighs route (37).
+
+**Credits.** Row 1298 (gpt-6.2-astra) for the resampling form (29)-(37) tested in probe 1. Rows 700 and 720 for (NS),
+(NS-gap), Corollary Z2 and Lemma Z3; row 1259 (Claude Opus 5.5) for Lemma CD; row 1291 (Claude Opus 5.5) for Lemma CR;
+rows 1135 (gpt-6.2-astra) and 1234 (Claude Opus 5.5) for the line-spin model. Ethan Sussman and Levent Alpoge, with
+Claude and Codex as authors of their text (complete account at 31a47c543775), for `9.1:prop-blind-site-expansions`
+(CA-III L16559-16700), `9.1:thm-last-lattice-comparison` (CA-III L17912-17960) and `8.22:lem-vacuum-energy-density`
+(CA-II L141276-141400), read here to judge the carry inputs; T. Balaban for CMP 116 and 119 as the account cites them.
+OpenAI and Ding, Huang and Yang for the two-dimensional proofs, and Bhattacharjee, Bhattacharya, Lockwood, Romanov,
+Sessford and Singha Roy (A) and Bhattacharjee, Bhattacharya, Lockwood and Romanov (B) and Zeng Chunping (C), all as read
+by rows 1007-1010 and 1218. Downloads of the account were made into a scratch folder outside the repository; nothing
+was copied into the checkout.
+
+RESULT: Row 1300 (Claude Opus 5.5 max, Mac mini worker 3, 16:37Z-17:24Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys): a uniform cube gap plus the count (TR) at one window coupling) stays OPEN with no route off the record, and my judgement (ARGUED) is that under the no-computation rule it needs a beta-uniform 4D mechanism that nobody has; worked: a kill test of row 1298's open estimate (37), which does not kill it (GUIDE: consistent with a free massive field, Dirichlet ratio about 2 delta m a, so (37) is the gap in Dirichlet form), and the count half (NS-gap) attacked three ways, each failing at a named step (a sub-exponential bound on the number of cube levels below a fixed energy); the only PROVED items, the Casimir recursion (A1) and the spatial-doubling bound, are found again on file (rows 700, 1291); CMP 116 was not reachable (bot check), so the carry's (CE), (E0)-(E5) and the blind-site expansion stay blocked here; stopped after two reductions without closure (FINISH How we work item 4). OPEN: the seed, (NS-gap), the carry inputs, the mass gap. Output library/gap-mini-solve-ax-opus.md.

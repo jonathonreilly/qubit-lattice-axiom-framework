@@ -9,7 +9,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN. Numerics guide only.
 
 ## Status
 
-Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): done 2026-11-20T14:01Z. Step 3 (statements and proofs): in progress.
+Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): done 2026-11-20T14:01Z. Step 3 (statements and proofs): done 14:06Z. Step 3b ((U-dom) from Balaban's decay estimate): done 2026-11-20T14:08Z, stays ARGUED. Step 4 ((H2)-(H3) of row 1267 from EM's definitions): in progress.
 
 ## Step 0. Record read (statements about the record, not evidence; written 2026-11-20T13:48Z by date -u)
 
@@ -127,3 +127,142 @@ p. 267: every cube reference is within (4dL)^2 (1 + beta_0) B_3 eps_k of the glo
 R(x-check_k) differs from R(theta_(n-k)) the two frames' all-small-field cuts are products over different partitions,
 with different reference configurations. Outside the windows the two frames use one partition and one family of
 references, and (U) holds.
+
+## Step 3. The windows, and a sandwich comparison that removes (U) (written 2026-11-20T14:05Z by date -u)
+
+Notation as in rows 1260, 1267, 1268. Pin run of length n; level k; frozen entry phi_k := theta_(n-k) = X + c_0 (n - k);
+own entry y_k := x-check_k. Drift hypothesis (DR), from row 1260 2.1 (III:69015-69017): |y_k - phi_k| <= D(phi_k) with
+D(y) := C_D y^(1/2) (log y)^(p_0), for every level k up to first passage. R(y) := least L^b (b >= 0) with
+L^b >= (log y)^r; jump points Y_b := exp(L^(b/r)), so R(y) = L^b exactly on (Y_(b-1), Y_b].
+
+**3.1 Lemma W (the windows; PROVED, elementary).** Let X be so large that D(y) <= y/2 for y >= X/2, and
+D(2 Y_b) < min(Y_b - Y_(b-1), Y_(b+1) - Y_b) for every b with Y_b >= X/2. (D is increasing on y > 1.) Let W be the set
+of levels k with R(phi_k) != R(y_k). Then:
+(a) at each k in W exactly one jump point Y_b lies in the closed interval between phi_k and y_k, and
+R(phi_k)/R(y_k) is L or 1/L;
+(b) for each b, the number of k in W whose jump point is Y_b is at most 2 D(2 Y_b)/c_0 + 1;
+(c) outside W the two frames read the same cube size, so (U) of row 1268 holds there.
+*Proof.* Both entries are at least X/2 (phi_k >= X and y_k >= phi_k - D(phi_k) >= phi_k/2). R(phi_k) != R(y_k) means
+that some Y_b lies in [min(phi_k, y_k), max(phi_k, y_k)), so Y_b >= X/2. If phi_k >= Y_b then
+phi_k - Y_b <= D(phi_k) <= phi_k/2, so phi_k <= 2 Y_b; if phi_k < Y_b this is clear. Hence the interval has length at
+most D(phi_k) <= D(2 Y_b) < min(Y_b - Y_(b-1), Y_(b+1) - Y_b), so it contains no other jump point, and R changes by
+one factor L across it: (a).
+For (b), phi_k lies in [Y_b - D(2 Y_b), Y_b + D(2 Y_b)], and the values phi_k = X + c_0 (n - k) are distinct and spaced
+by c_0. (c) is the definition of W with 2.2: the cube size is the only frame dependence of the unmarked total that
+Theorem FCT' does not already treat. QED
+The condition on X holds for X large because Y_(b+1) - Y_b >= Y_b (exp((L^(1/r) - 1) L^(b/r)) - 1) grows faster than
+any power of Y_b, while D(2 Y_b) is of order Y_b^(1/2) polylog.
+
+**3.2 Proposition W2 (the envelope route fails in the windows; PROVED, arithmetic).** At a window level the only
+frame-by-frame bound on record is the envelope |f_(k+1)| <= C theta_k^(-1/2) (log theta_k)^(p_0) (EM:1365, row 1267 1.2),
+which gives eta_k <= 2 C theta_k^(-1/2) (log theta_k)^(p_0). By Lemma W (b) the windows can hold up to about
+2 D(2 Y_b)/c_0 levels each, so this bound sums to order sum_b (log Y_b)^(2 p_0) = sum_b L^(2 p_0 b / r) over the jump
+points between X and theta_n, which grows like (log theta_n)^(2 p_0), that is like (log n)^(2 p_0): not bounded in n.
+By contrast any window bound eta_k <= kappa(theta_k) with sum_b D(2 Y_b) kappa(Y_b/2) finite (for example
+kappa(y) <= y^(-1/2 - delta) for some delta > 0) gives a window total that is bounded uniformly in n and tends to 0 as X
+grows, since Y_b grows doubly exponentially in b. So the windows need a structural comparison of the two cube
+families, not a size bound. *Proof.* Sum the two displayed bounds over b with Lemma W (b). QED
+
+**3.3 The comparison hypothesis (U-dom) (ARGUED; a statement about Balaban's cube references, stated here).** Fix a
+level k in W. Let the frame-psi family a be its cube tests (2.3) on the partition of side L^2 M_2 R(y_k) (units v,
+Borel test values N_v >= 0, thresholds T_v), and the frame-phi family c be its cube tests on the partition of side
+L^2 M_2 R(phi_k), composed with the dilation Psi_c of row 1268 7.3 and read in frame psi's presentation (units w, test
+values N'_w, thresholds T'_w); both include the bond tests of the soft axial truncation (row 1268 6.1-6.3). The two
+partitions are aligned (CA-I I:56744-56746; CMP 119 p. 265, "the partition is compatible with all the other
+partitions"), so each cube of one is a union of L^4 cubes of the other. For a unit w of c let its shadow sigma(w) be the
+set of units of a that meet w enlarged by four layers of L M R_max-cubes, R_max := max(R(phi_k), R(y_k)) (the
+operation ~ of CMP 119 is formed with L M R-cubes; test regions are box'~ and box'~2, data regions box'~4). **(U-dom):** there is Delta_k >= 0 with
+Delta_k <= T_v/4 and Delta_k <= T'_w/4 for all v, w, such that on the integration domain of frame psi's kernel
+- (D1) N'_w >= T'_w implies N_v >= T_v - Delta_k for some v in sigma(w);
+- (D2) N_v >= T_v + Delta_k implies N'_w >= T'_w for some w with v in sigma(w).
+Why it should hold (ARGUED, not proved): at the same step the two cube references are built from the same block field
+V_(k+1) on two nested data regions (CMP 119 (1.2), (3.4)); on the test region of the smaller cube both lie two layers of
+cubes inside their data regions, so by the exponential decay property that Balaban uses for exactly this kind of
+comparison (CMP 119 (3.7), citing CMP 102 (190); and (3.13)) they differ there by at most
+C exp(-c L M R_min) eps_k, R_min = min(R(phi_k), R(y_k)) >= (log theta_k)^r / L, which is below any fixed fraction of
+delta_k = (A_1/A_0) eps_k once theta_k exceeds a floor. The threshold change T'/T = 1 + O(theta_k^(-1/2) polylog) and
+the dilation Psi_c (it moves the axial-gauge deviation by the factor c = 1 + O(theta_k^(-1/2) polylog), hence a test
+value by O(theta_k^(-1/2) polylog) eps_k) add terms of the same small size. So Delta_k = o(T) as theta_k grows. What a
+proof needs: the precise decay estimate for the minimal configurations of CMP 119 (1.2), (3.4) on two nested regions
+with one block field, in the axial gauge of (3.10), on the all-small-field domain; Balaban's (3.6)-(3.9) is the
+same argument for two consecutive scales. A point a checker should keep apart: Balaban's (3.13) compares a cube
+reference with the global minimizer V^(k), which carries the constraints of all earlier scales on the domains Gamma_j
+(CMP 119 (3.10)); that difference is O(eps_k) for an intrinsic reason and is much larger than delta_k when A_0 >> A_1.
+(U-dom) compares two cube references built by one rule from one block field, which differ only through the size of
+the data region; the derivative bound CMP 102 (190) (p. 308: the derivative of the background map in the datum at y'
+decays like exp(-delta_0 d(y, y')/8)) is the tool for that boundary effect. (U-dom) with Delta of order eps_k, from
+(3.13) alone, would NOT suffice: the shifted thresholds T - Delta would be negative.
+
+**3.4 Lemma SW (sandwich comparison of two cuts; PROVED, given its hypotheses).** Setting of row 1268 3.1 and 7.4, with
+one base expansion: frame psi's kernel in its own presentation, family a, base cut chi_+ := prod_v 1[N_v < T_v + Delta]
+(Delta := Delta_k). Let chi^1, chi^2 be Borel functions with
+    chi^i = chi_+ prod_(e in E_i) (1 + m^i_e)   on the integration domain   (i = 1, 2),                    (3.1)
+where each m^i_e is Borel, depends only on the field in a region covered by a set sigma(e) of at most m_sig units of a,
+each unit of a lies in at most m'_sig of the sets sigma(e), e in E_i, and
+    |m^i_e| <= sum_(v in sigma(e)) 1[N_v >= T_v - Delta].                                                   (3.2)
+Put T_- := min_v (T_v - Delta) and tau := m_sig e^(c_A) exp(-(1/2) gamma_2 T_-^2 / m'_sig). Hypothesis (E+): the
+supplier's expansion of the base integral int K chi_+ e^Phi satisfies (E1)-(E4) of row 1268 (with (E2') on the base
+domain and the one-term bound (E3) with Gaussian absorption at the units of a), and stays convergent with margin eps,
+majorant Bbar and pointed norm Nbar when one more type of Mayer element is added, each element of activity at most tau,
+supported on the units sigma(e) (the form of row 1268's (E6)). Then for every Y
+    |Phi^1(Y) - Phi^2(Y)| <= (2 tau/eps) Bbar(Y),
+and the pointed difference of the two localized logarithms has EM norm at most (2 tau/eps) Nbar.
+*Proof.* Expand prod_e (1 + m^i_e) = sum over subsets E of E_i of prod_(e in E) m^i_e, and insert it in the base
+expansion as new Mayer elements; a datum t of the base expansion with element set E has integrand G_t prod_(e in E)
+m^i_e. By (3.2) and idempotence of indicators,
+    |prod_(e in E) m^i_e| <= sum_s prod_(v in s(E)) 1[N_v >= T_v - Delta],
+the sum over selections s with s(e) in sigma(e), at most m_sig^|E| of them, and |s(E)| >= |E|/m'_sig. For each
+selection, prod_(v in s(E)) 1[N_v >= T_v - Delta] <= exp(-(1/2) gamma_2 T_-^2 |s(E)|) prod_(v in s(E))
+e^((1/2) gamma_2 N_v^2). The one-term bound (E3) absorbs the Gaussian factors at cost e^(c_A |s(E)|) <= e^(c_A |E|).
+So the datum is bounded by tau^|E| times the bound of the same datum without the elements. Hence
+|F^i(X) - F^+(X)| <= tau Fbar(X) and |F^i(X)|, |F^+(X)| <= Fbar(X), where F^+ is the base activity and Fbar counts
+data with element sets E with the weight tau^(max(|E| - 1, 0)). Lemma TL* of row 1268 (7.4) with lambda = tau gives
+|Phi^i - Phi^+| <= (tau/eps) Bbar for i = 1, 2, and the triangle inequality gives the claim; the same for the pointed
+norms. QED
+
+**3.5 Corollary U (the two frames' cuts in sandwich form; PROVED GIVEN (U-dom)).** At a window level, with chi^2 :=
+frame psi's cut prod_v 1[N_v < T_v] and chi^1 := frame phi's cut prod_w 1[N'_w < T'_w] (in frame psi's presentation),
+(3.1)-(3.2) hold with E_2 = units of a, m^2_v := -1[T_v <= N_v < T_v + Delta], sigma(v) = {v}; and E_1 = units of c,
+m^1_w := -1[N'_w >= T'_w], sigma(w) as in 3.3. m_sig and m'_sig are at most m_U := (L + 2 + 8 M/M_2)^4, a constant
+fixed with d, L, M_1, M (Definition 4.14:def-block-size-conditions).
+*Proof.* chi^2 = chi_+ prod_v (1 - 1[T_v <= N_v < T_v + Delta]) is an identity of indicators, and |m^2_v| <=
+1[N_v >= T_v - Delta]. For chi^1: by (D2), if all N'_w < T'_w then all N_v < T_v + Delta, so chi^1 <= chi_+ and
+chi^1 = chi_+ chi^1 = chi_+ prod_w (1 - 1[N'_w >= T'_w]); by (D1), 1[N'_w >= T'_w] <= sum_(v in sigma(w))
+1[N_v >= T_v - Delta]. The counts: the region of a shadow has side at most L^2 M_2 R_max + 8 L M R_max, and the
+units counted have side at least L^2 M_2 R_min with R_max = L R_min (Lemma W (a)); so it meets at most
+((L^2 M_2 R_max + 8 L M R_max)/(L^2 M_2 R_min) + 2)^4 = m_U of them. Each unit lies in at most m_U shadows by the same
+count. QED
+
+**3.6 Theorem U (PROVED GIVEN (U-dom) at the window levels, (E+), and the hypotheses of row 1268's Theorem FCT' other
+than (U)).** Along the pin runs, (FC-1) of row 1267 holds at every level, with
+    nu_k <= K_1 exp(-(1/2) gamma_2 a'^2 (log theta_k)^(2 p_0)) + K_2 theta_k^(-3/2) (log theta_k)^(5 p_0)    (k not in W),
+    nu_k <= K_3 exp(-(1/8) gamma_2 a^2 m_U^(-1) (log theta_k)^(2 p_0)) + K_2 theta_k^(-3/2) (log theta_k)^(5 p_0)   (k in W),
+with K_3 := (2/eps) C_post Nbar_+ m_U e^(c_A); so
+    sum_(k<n) nu_k <= K_1 S'(X) + K_3 S_U(X) + K_2 S''(X),
+where S_U is the S of row 1268's Lemma S with alpha = gamma_2 a^2 / (8 m_U); all three sums are finite,
+independent of n, and tend to 0 as X tends to infinity. Hence (U) is not needed for (FC), and with rows 1260 and 1267
+the scaffold comparison at the pins holds with a bounded modulus, given the remaining inputs.
+*Proof.* Outside W, Theorem FCT' applies as stated (Lemma W (c)). At k in W, write the difference of the two unmarked
+totals as row 1268 7.5 does, cut part plus vertex part. The vertex part does not read the cube size (the soft gauge
+weight lives on the L-blocks, CMP 119 (1.5), p. 247), so its bound K_2 theta^(-3/2) polylog stands. For the cut part
+(E^(phi,rs) against E^(mix) in row 1268 7.5; the base expansion of Lemma SW is that of E^(mix), its vertex elements of
+(E6) included), Corollary U puts the two cuts in the form of Lemma SW, with T_- >= (3/4) T_lo >= (3/4) a (log theta_k)^(p_0) by
+Delta <= T/4 and (TH) of row 1268; so tau <= m_U e^(c_A) exp(-(9/32) gamma_2 a^2 (log theta_k)^(2 p_0)/m_U),
+which is below the displayed exponential (9/32 > 1/8). The post-processing (E5) adds the factor C_post. Summation: the
+window terms are a subfamily of the levels, and row 1268's Lemma S bounds the sum over all levels of
+exp(-alpha (log theta_k)^(2 p_0)) for any alpha > 0 (with its floor y_* depending on alpha). QED
+
+**3.7 What changed (PROVED from 3.1-3.6).** Row 1268's open input (U) ("fails in windows around the jumps of R_k") is
+replaced by (U-dom) at the window levels and (E+), the same kind of supplier reading as (E0)-(E6). The windows are real
+(Lemma W and 2.1-2.3: the account's own run reads its running minimum, the scaffold reads theta_r) and a size bound does
+not close them (Proposition W2). The extra cost is only a smaller constant in the Gaussian exponent.
+
+**3.8 Step 3b: can (U-dom) be proved here? (READ and ARGUED; written 2026-11-20T14:08Z by date -u).** CMP 102 (190), p. 308
+(page image), is a pointwise derivative bound for Balaban's background map: the derivative of the background at x in
+Delta(y) with respect to the datum B at y' is at most O(1) (L^j eta)^(-1-d) exp(-delta_0 d(y, y')/8), with the same
+form for its covariant derivatives, for y in Lambda_j, y' in Lambda_(j'). A proof of (U-dom) would interpolate the
+data region of the smaller cube's reference out to that of the larger one and integrate this derivative along the
+interpolation; that needs the minimal configuration of CMP 119 (1.2), (3.4) to exist with uniform constants along the
+interpolating family of determining sets, which is part of Balaban's variational theory (CMP 95, 96, 99, 102) and is
+not rebuilt here. (U-dom) stays ARGUED. It is a statement of the same kind as Balaban's own (3.6)-(3.9) and as the
+readings (E0)-(E6) of row 1268, and the account would have to state it.

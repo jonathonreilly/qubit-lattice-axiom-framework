@@ -45,7 +45,8 @@ spacings (GUIDE, recalled Monte Carlo lore, not used as a step). So the seed is 
 tens of spacings per side at a coupling where:
 - every published rigorous method stops far below: cluster and character expansions, Dobrushin and Bakry-Emery bounds
   reach beta of order 0.1 to 0.2 in this normalisation (row 1218: A's single-link and star ranges, B's Corollary 74,
-  the curvature range of A and B Theorem 5);
+  the curvature range of A and B Theorem 5; the conversion beta_W = N_c^2 beta = 2 beta_std is mine and assumes A's
+  action is beta times the sum of Re tr U_p, which I did not read in A);
 - the uniform-boundary finite-size criteria are false (Proposition CA-FAIL, row 1072/1073, holds after correction in
   check 1074: two pinned adjacent slices make the temporal links a 3D O(4) magnet that orders above about beta 1.01);
 - a finite computation would be a computer-assisted step, which GOAL.md forbids.
@@ -72,7 +73,7 @@ other frame's list violates; then the frame comparison needs a different splitti
 Rule 0a: grep of FINISH.md and `library/open-core.md` for "(H2)", "(H3)", "cross-admission": hits only in rows 1267,
 1268, 1275 (as OPEN inputs); no queued row names them.
 
-## Step 2. (H3) and (H2) of row 1267 (written 2026-11-20T14:40Z by date -u)
+## Step 2. (H3) and (H2) of row 1267 (written 2026-11-20T14:09Z by date -u)
 
 Source: Sussman and Alpoge, `YM4/EM/YM4_EM.tex` at c7fef8b21b58 (2001 lines; with Claude and Codex as authors of their
 text; after Balaban), fetched by raw URL into a scratch folder outside the repository. "EM:n" is a line of that file.
@@ -109,7 +110,9 @@ marked slot of input (4) in member norm (the size of list differences for which 
 admitted). If max_i d_i < min(mu_slot, (E_0 - B_N)/4), then
     |||T(E^phi_(k+1)[f]) - T(E^phi_(k+1)[f'])|||_(k+1) <= K s_k sum_(i<=k) omega_(k+1-i) d_i.          (H3')
 
-Proof. Let eta > 0 be small. For each i choose a regular pointed family h_i with total T(O_i) - T(O'_i) + c_i and
+Proof. Here, as in row 1267 3.1, the total of a family is its sum over domains on each admissible torus, up to an additive
+constant; the companion enters only through regularity (R5) and through b_j, which by (R2) depends on these totals
+alone. Let eta > 0 be small. For each i choose a regular pointed family h_i with total T(O_i) - T(O'_i) + c_i and
 ||h_i|| <= d_i + eta (definition of |||.|||_i). Put O''_i := O_i - h_i (regular, by linearity) and f''_i := Sub_i(O''_i).
 (a) Totals. T(O''_i) = T(O'_i) - c_i. By (R2), b_i(h_i) = b_i(O_i - O'_i) = b_i(O_i) - b_i(O'_i) (h_i and O_i - O'_i are
 coherent localizations of totals that differ by a constant; linearity), so b_i(O''_i) = b_i(O'_i), and T(f''_i) =
@@ -128,15 +131,18 @@ Differences from row 1267's (H3). (i) The right side reads the ORIGINAL totals, 
 1267 ("This needs f'' to be admitted") is met in the regime max d_i < min(mu_slot, (E_0 - B_N)/4); it is not met for
 large differences, so (H3') is a small-difference statement and the chain needs a bootstrap (2.4).
 
-**2.3 Lemma H2' (cross-admission; PROVED GIVEN (R3)-(R5) and row 1267's READ list of where the frame enters).** Row 1267
+**2.3 Lemma H2' (cross-admission; ARGUED: PROVED GIVEN (R3)-(R5), row 1267's READ list of where the frame enters, and
+connectedness of the core).** Row 1267
 2.4 READ that the unmarked chain reads the frame only inside the actual kernel K_(k,theta_k) (cut, gauge weight, real
 fluctuation coordinates); localisation cubes have the fixed side M (EM:176-178), the absolute radii a_* are fixed
 (EM:506-510), backgrounds come from the frame-free block map (EM:240-249), and the unmarked list has no aged remainders
 (EM:535-536). Given that, a member formed on the frame psi is a regular family on the same absolute core with norm at
 most (3 E_0 + B_N)/4 (R4); the step on the frame phi reads it only through its total, its own coefficient and its own
 companion (R1, R2, R5). The one frame-dependent number attached to a member, its creation covariance radius c_e
-eps(theta_j) (EM:653-656), does not restrict its use on phi: covariance is an identity of holomorphic functions on the
-absolute core, and it continues from any open real slice on which it holds to the whole connected domain (EM:812-816).
+eps(theta_j) (EM:653-656), does not restrict its use on phi: covariance, P_(rz)(G; rW) = P_z(G; W) (EM:258-262), is an identity between
+holomorphic functions of W on the absolute core, so it continues from any open real set on which it holds to the
+connected domain of both sides (identity theorem; EM uses the same device for parameters at EM:812-816). This needs the
+core to be connected and isometry-invariant, which I did not find stated (ARGUED).
 So f^psi_k satisfies the conditions of (R3) on the frame phi: (H2) holds.
 
 What is not shown: that EM's "admitted" in input (4) contains nothing beyond (R3)'s conditions and the marked slot
@@ -163,3 +169,34 @@ hypothesis (e), (DET)'s inputs, the account's premises). The mass gap is not tou
 Check request (cross-provider, one reading): Proposition H3' (a)-(c), in particular the use of (R2) for h_i and the
 claim that input (4) is a bound in original-family norms; Lemma H2', in particular the covariance-continuation sentence
 against EM:812-816 and the creation radius at EM:653-656.
+
+## Step 3. (TH) of row 1268, read at the source (written 2026-11-20T14:14Z by date -u)
+
+(TH) is row 1268's threshold identification: in the common chart every small-field threshold is at least
+a (log theta_k)^(p_0) with a > 0 fixed. Row 1268 marked it ARGUED ("the unit conversion between the two frames'
+normalized fields is my reading"). Read in CA-I at 31a47c543775 (Sussman and Alpoge, with Claude and Codex as authors
+of their text; after Balaban CMP 119):
+- the degree function is p_0(g) := A_0 (log g^(-2))^(p_0) (I:1012-1014; glossary I:345-347), with p_0 a natural number,
+  p_0 >= 5r, r >= 2 (I:1346-1349);
+- the cutoff radius of the one-step theorem is (A_1/A_0) p_0(g) = A_1 (log g^(-2))^(p_0), and "When g = g_k, this radius
+  is the quantity delta_k/g_k of [B-CMP119]" (I:4172-4175);
+- the raw threshold is delta_m = (A_1/A_0) g_m p_0(g_m) = A_1 (log g_m^(-2))^(p_0) g_m, "the threshold of [B-CMP119,
+  (3.16)]" (I:29104-29110);
+- EM's frame entry is the Wilson weight x = g^(-2) (the bare density is exp[-g_0^(-2) A(U)], CA-I def-wilson-action;
+  EM:500-503 writes x_k for the weight and tau_k = x_k/theta_k); EM leaves delta(theta) supplied and gives
+  delta(theta) = c_delta theta^(-1/2) (log theta)^(p_0) as its example (EM:872-875); CA-I's delta_m is that function
+  of theta = g^(-2) with c_delta = A_1.
+
+**Lemma TH (PROVED from the lines above; elementary).** Let theta, theta' be the entries of two frames at one step, with
+|x_k/theta - 1| < 1/4 and |x_k/theta' - 1| < 1/4. In the field normalised by theta'^(1/2) (frame theta''s chart), frame
+theta's cut radius is A_1 (log theta)^(p_0) (theta'/theta)^(1/2) >= 3^(-1/2) A_1 (log theta)^(p_0), and if theta >= 9
+it is also >= 3^(-1/2) 2^(-p_0) A_1 (log theta')^(p_0).
+Proof. The raw cut of frame theta is |V| < delta(theta) = A_1 (log theta)^(p_0) theta^(-1/2). Multiplying by
+theta'^(1/2) gives the first expression. Both entries lie in (4 x_k/5, 4 x_k/3), so theta'/theta > (4/5)/(4/3) = 3/5 > 1/3.
+For the second form, theta' < (5/3) theta < 3 theta, so log theta' < log theta + log 3 <= 2 log theta when theta >= 3,
+and (log theta)^(p_0) >= 2^(-p_0) (log theta')^(p_0). QED
+
+So (TH) holds with a = 3^(-1/2) A_1, as row 1268 wrote, when each frame's threshold is measured against its own log
+theta; against the other frame's log theta' the constant is a = 3^(-1/2) 2^(-p_0) A_1. Either is a fixed positive
+number. (TH) leaves the input list of Theorem FCT' as READ plus Lemma TH. The identification of EM's frame entry with
+g^(-2) is the one reading left; EM's delta(theta) and CA-I's delta_m are the same function of it.

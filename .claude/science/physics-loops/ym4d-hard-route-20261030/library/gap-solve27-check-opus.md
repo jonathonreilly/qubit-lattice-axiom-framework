@@ -31,6 +31,7 @@ different provider (astra62), so this check is cross-provider; it is still one c
 - about 09:10Z step 1 done: rules, GOAL.md and the checked file read in full (475 lines); inventory below.
 - 09:16Z (date -u) step 2 done: (25) HOLDS, with (20), (23), (24), (26), L312, L328, L344.
 - 09:18Z step 3 done: (27) HOLDS, with (28), (21), (22).
+- 09:20Z step 4 done: (33) HOLDS, with (29)-(32); (34), (35) HOLD.
 
 ## Step 1. Inventory and dependency map
 
@@ -194,3 +195,60 @@ beta <= B log n; no bound on the number of indices is used, since (28) is unifor
 
 What (27) does not say: it fixes the k-th charged level only at resolution o(1/beta) in lattice energy; it
 gives no information at the physical resolution a = o(1/beta).
+
+## Step 4. The physical-energy estimate (33) (L448-L452), with (29)-(32), and (34)-(35)
+
+**(29) L381-L398: HOLDS.** With a basis i, j, k: -a q a = q for a parallel to the vector part, -q_vec for a
+perpendicular, and q_0 for the scalar part, so sum_a (-a) m a = 3 m_0 - m_1 on the complexified quaternions.
+Then sum_a <am, ma> = 3||m_0||^2 - ||m_1||^2, and the Bessel bound of (23) becomes
+beta^(-1)[3R||m||^2 + 8 G_xy ||m_1||^2] <= 1 - ||m||^2 (diagonal 3(G_xx+G_yy)||m||^2, cross term
+-6G_xy||m_0||^2 + 2G_xy||m_1||^2). With r_A = int Re<a,m> d omega and 2(1 - Re<a,m>) = ||a-m||^2 + 1 - ||m||^2,
+beta(1 - r_A) = beta(1 - omega(all)) + (1/2) int beta||a-m||^2 d omega + (1/2) int beta(1-||m||^2) d omega, all three
+terms nonnegative. The middle term and int(1-||m||^2) d omega = O(1/beta) let ||m_1|| be replaced by ||Pi_1 a(X)||;
+||(I-U)f||^2 <= <f,(I-U)f> = O(1/beta) replaces the X-marginal f(Uf) by f^2. ||m_1|| = ||Pi_1(X) m|| is frame
+invariant. For the passage from G_B to G(z): use -4G||Pi_1 A||^2 >= -4G_B||Pi_1 A||^2 - 4(G - G_B), then B up.
+The triplet excess 4G(z)/beta is the free value: the one-gluon coefficient of G(z) is -C_F = -3/4 in the
+singlet channel and C_A/2 - C_F = +1/4 in the adjoint (triplet) channel, a difference of 1, so
+beta(V_triplet - V_singlet) = beta g^2 G(z) = 4G(z). (29) is a lower bound only, as stated.
+
+**(30) L400-L409: HOLDS.** For r > ||D||, F_xy - r is congruent (block LDL^T with bounded invertible factors) to
+diag(H(r) - r, D - r); D - r < 0, so Sylvester's inertia law gives the count identity; letting r' decrease to
+r_xy in #{lambda(H(r')) > r'} = 0 gives H(r_xy) <= r_xy, once r_xy > ||D||, which (25) and (29) give since
+beta(r_xy - ||D||) >= 4G(z) - o(1). ||B_1|| <= C_gamma/sqrt(beta): the fibre component perpendicular to X(gamma) of
+g_x Y(gamma) g_y^(-1) has norm at most |1 - U_dD1| (one-step ribbon chord) <= sum_{p in D_1} sqrt(2 a_p), and
+sqrt(2X_p) <= C e^{X_p/2}, ||T_{e^{X_p/2}}|| <= C.
+
+**(31) L411-L425: HOLDS.** I redid the expansion: Q W^*F^s W Q = Q A^s Q + sum over one-excursion words
++ O_s(beta^(-2)) (two excursions carry four factors B_1 or B_1^*); Q A^s Q = Q U^s Q - (s/beta) Q S_1 Q + o(1/beta);
+each one-excursion word is Q B_1^* D^l B_1 Q + o(1/beta), with s-1-l positions; (28) at times 1 and s gives
+beta sum_{l<=s-2} (s-1-l) Q B_1^* D^l B_1 Q = (s c_1 - c_s) Q + o(1). With T_s the left side, T_{l+2} - 2T_{l+1} + T_l
+is the l-th term, so the second difference gives (31) with c_0 = 0. d_l >= 0 makes c_s concave; with c_s/s -> c
+the increments decrease to c, and sum_{l<=N} d_l = c_1 - (c_{N+2} - c_{N+1}) -> c_1 - c. Nearest neighbour,
+checked independently from the free field: c_s = (3/2)[s/2 - sum_{u != u'} b(|u-u'|)] because the temporal
+plaquette column has <p_0, P_ex p_t> = -b(t) for t >= 1 (Hodge complement: (I - P_ex) on (01) has the symbol of
+P_ex on (23)), so d_l = 3 b(l+1) > 0; sum_{t in Z} b(t) = 2/3 (symbol at k_0 = 0) and b(0) = 1/2 give
+sum_{t>=1} b(t) = 1/12, so sum d_l = 1/4 = c_1 - c = 3/4 - 1/2.
+
+**(32) L427-L444: HOLDS.** Upper: H(r) <= r gives Q B_1^*(r-D)^(-1) B_1 Q <= Q(r - A)Q =
+[(c_1 - c)Q + o(1)]/beta (A = U - S_1(X_D)/beta, (25), (28) at s = 1, beta(1 - h_j) -> 0). Lower: the first K
+terms of the Neumann series, by (31) and r -> 1. Tail: the positive remainder after K terms is at most
+sum_{l>=K} d_l + o(1) in norm. The scalar inequality 1/(r-x) <= K/r + (x/r)^K/(r - ||D||) for 0 <= x <= ||D|| < r
+(split the geometric series at K) gives (r-x)^(-2) <= (K/r)(r-x)^(-1) + (r-||D||)^(-1)(x/r)^K (r-x)^(-1), hence
+||(r-D)^(-1) B_1 Q||^2 <= O(K/beta) + (beta/c_z)(sum_{l>=K} d_l + o(1))/beta -> 0 after K -> infinity.
+
+**(33) L448-L452: HOLDS.** r - ||D|| >= c_z/beta and a_j E_0 = o(1/beta) keep r - aE in the resolvent set; the
+resolvent identity gives Q[H(r - aE) - H(r)]Q = aE [(r-aE-D)^(-1) B_1 Q]^* [(r-D)^(-1) B_1 Q], and functional
+calculus gives ||(r-aE-D)^(-1) B_1 Q|| <= (1 - a E_0 beta/c_z)^(-1) ||(r-D)^(-1) B_1 Q||. Divided by a, the norm is
+at most E_0 (1 + o(1)) ||(r-D)^(-1) B_1 Q||^2 -> 0 by (32).
+
+**(34) L454-L458: HOLDS.** (r - 1) + Q S_1 Q/beta - Q B_1^*(r-D)^(-1) B_1 Q = (-c + c_1 - (c_1 - c) + o(1))/beta.
+
+**(35) L460-L471: HOLDS.** M_2(C) is the complexified quaternions and the SU(2) colour actions preserve the
+real form, so the top eigenspace contains a real A_*; zeta_* is real and symmetric (self-adjoint F_xy, real
+values); its marginal is r||A_*||^2 by the eigenvalue equation; expanding the square gives (35). The last
+claim follows from the three-term decomposition in (29) at A = A_*: beta(1 - r) -> c and the third term is at
+least c - o(1), so beta(1 - <f, Uf>) -> 0.
+
+What (33) does not say: it controls only the dependence of the effective neutral operator on the spectral
+parameter across a physical window. It gives no bound on the spectrum of H(r) itself; (34) compares rI - H(r)
+with I - U only to o(1/beta), not to o(a). The checked file states this (L458, L473).

@@ -39,7 +39,7 @@ rows 1179, 1180, 1184, 1187, 1188-1190, 1193-1195; `parts/gap.md` L1-104 and L21
    coupling, the free photon, a product with a massless factor, Theorem D2, Lemma SHEET, Proposition V (the K7
    line in theorem form).
 4. **Siblings.** Rows 1188-1190 and 1193-1195 (mini-solve a to f) each screened routes from first principles
-   and found every one on the lane's map (about 65 route families in all, tables in rows 1189, 1190, 1194).
+   and found every one on the lane's map (about fifty candidates in all, by the counts in their RESULT lines).
    Each then worked one item to a first failing step. Rows 1197, 1198, 1200-1202 (g, h, j, k, l) have no
    result at this pin.
 5. **Consequence for this row.** I do not screen route families again. Step 1 below records only the candidates
@@ -119,7 +119,8 @@ the path of (N-phys).
 
 ### 3.1 Setting
 
-A finite multigraph with sites V and oriented bonds b = (x -> y). Spins n_x are unit quaternions, with the
+A finite multigraph with sites V and oriented bonds b = (x -> y), x not equal to y. Spins n_x are unit
+quaternions, with the
 uniform probability measure on S^3. <p, q> = Re(conj(p) q) is the inner product of R^4. A one-sided twist is a
 unit quaternion g_b on each bond, acting on the left. For couplings J_b >= 0:
 
@@ -207,7 +208,8 @@ normalized ratios. Lemma U bounds numerator and denominator separately; Ginibre'
 
 ### 3.6 Remark C (neutral covariances are not dominated; PROVED; elementary)
 
-For the neutral half the analogue of (M) is false in the smallest example. Two sites, two bonds, J_1 = J_2 = 2.
+For the neutral half the analogue of (M), abs(Cov_g(E_b, E_b')) <= Cov_1(E_b, E_b') for bond energies, is false
+in the smallest example. Two sites, two bonds, J_1 = J_2 = 2.
 With psi(s) = log Phi(sqrt(s)) = s/8 - s^2/384 + ..., log Z_h = psi(J_1^2 + J_2^2 + 2 J_1 J_2 Re h), and the
 covariance of the two bond energies is its mixed derivative. For h = -1 it is -2 psi'(0) = -1/4 exactly. For
 h = 1 it is phi''(4) with phi = log Phi and phi'' = 1 - A^2 - 3A/R, A = I_2/I_1. From the series, I_2(4) >=
@@ -216,7 +218,7 @@ absolute value, and has the other sign. A frustrated loop shares its frustration
 couples their energies. So (N-tw) of row 1194 cannot be reached by a domination principle. The neutral
 response of a twisted sheet is carried by the frustration itself. This agrees with row 1194 5.3, way 2.
 
-### 3.7 Exact quadrature on a cycle, and Remark S: the comparison reads the shape of the weight (GUIDE; ARGUED)
+### 3.7 Exact quadrature on a cycle; the comparison reads the shape of the weight (GUIDE; one statement PROVED)
 
 On a cycle the twist is one holonomy h, at angle theta from 1. Put w = n_x conj(n_y) for the chord (x, y). The
 rest of the cycle gives w a zonal density P(<w, 1>), and the chord has the weight exp(J_c <w, h>). Then (M) for
@@ -242,9 +244,9 @@ such that m(theta) > m(0) for every J >= J_0. So the analogue of (M) fails for t
 Proof. Put s = 1 - <w, h>, on [0, 2]. Under the uniform measure s has the density rho(s) = (2/pi) sqrt(s (2 - s)),
 and given s the point w is uniform on a two-sphere of angular radius r = arccos(1 - s) about h. Let q_theta(s) be
 the fraction of that sphere inside the cap, s_1 = 1 - cos(alpha - theta) and s_0 = 1 - a, so s_1 < s_0. Then
-q_theta = 1 on [0, s_1], because the sphere stays inside the cap. For s in (s_1, s_0] the sphere contains points at
-angular distance theta + r > alpha from 1, so q_theta(s) < 1; by continuity 1 - q_theta >= eta > 0 on a closed
-interval [s', s''] inside (s_1, s_0). For theta = 0 the fraction is q_0 = 1 on [0, s_0] and 0 above. Let E be the
+q_theta = 1 on [0, s_1], because the sphere stays inside the cap. For s a little above s_1 the sphere contains
+points at angular distance theta + r from 1, with alpha < theta + r < pi, so q_theta(s) < 1 there; q_theta is
+continuous, so 1 - q_theta >= eta > 0 on some closed interval [s', s''] inside (s_1, s_0). For theta = 0 the fraction is q_0 = 1 on [0, s_0] and 0 above. Let E be the
 mean for the density rho e^(-J s)/Z on [0, 2], and mu = E[s]. For a weight q with values in [0, 1], the mean of
 s under q rho e^(-J s) is E[s q]/E[q], and mu - E[s q]/E[q] = E[(s - mu)(1 - q)]/E[q]. Take J so large that
 mu < s_1 and E[q_0] >= 1/2 (mu tends to 0 and E[q_0] to 1 as J grows). Then (s - mu)(1 - q_theta) >= 0 on [0, 2],
@@ -263,6 +265,53 @@ the kind of constraint that Proposition V puts on the neutral half; here it appe
 The flat-topped weights of items 2 to 4 are not known to have non-negative character coefficients, so they do
 not test the reflection-positive class.
 
-Not on file under the words I searched (`grep` over `library/gap-*.md`: "one-sided" with "diamagnetic", "flat-
-topped", "cap weight"): Lemma E, the guide runs for the one-sided form, Remark S. The two-sided normalized form
-is refuted on file (method 36, rows 1139, 1140), and the unnormalized form is on file (3.2).
+Not on file under the words I searched (`grep` over `library/gap-*.md`, run after the work): "one-sided twist"
+with "diamagnetic" (only row 1194 5.1, the open question itself); "flat-topped" (one hit on another subject,
+`gap-brainstorm2-max.md` L280); "cap weight", "hard cap" (none); "monotonicity of D" (two hits on other
+subjects). So Lemma E, the guide runs for the one-sided form, Proposition S and Remark S are new to the
+record as far as these greps show. The two-sided normalized form is refuted on file (method 36, rows 1139,
+1140), and the unnormalized form is on file (3.2).
+
+## Step 4. State at the end (written 2026-11-20T02:41Z, last correction 02:42Z, both `date -u`)
+
+Provenance: Claude Fable 5.2, max effort, Mac mini worker 2, one session from 2026-11-20T01:36Z, no subagents.
+Author only. Checked by no one. Four guide runs under the numeric lock (two heat-bath sampling runs, two
+quadrature runs), free memory 56 to 57 percent; the scripts are in a scratch folder and are not committed. Literature:
+two arXiv API queries, nothing fetched beyond titles and abstracts. I did not read the primary text of the
+posted two-dimensional proofs or the Sussman-Alpoge repository in this session: their account lists the mass
+gap as its own open requirement (`library/sa-index/chunk-01.md` L70, L86, as read in row 1194), so no step of
+the gap can be ported from it. The search of `origin/main` and of the open PR branches is not possible from
+this checkout.
+
+| Statement | Label |
+|---|---|
+| Four-dimensional SU(2) Yang-Mills has a mass gap (Jaffe and Witten) | OPEN. Not proved here, nothing disproved |
+| (N-phys), the continuum datum, (BS), (W), (SING) | OPEN. Not attacked: no route off the lane's map was found |
+| Step 1: literature probe to 2026-11-15; thirteen more candidates, each with its match | GUIDE |
+| Step 2.1: the engine carries a small neutral trace upward and nothing on file creates it | ARGUED (the lane's reading) |
+| Lemma U: Z_R <= Z_1 and the unnormalized two-point bound, one-sided and two-sided | PROVED; found again (Proposition LG, row 1016) |
+| Lemma E: the normalized one-sided comparison (N1) holds iff D_g = log(Z_1/Z_g) is non-decreasing in every coupling | PROVED (elementary; not yet checked by the other model) |
+| Lemma A: the normalized comparison for plane rotators with arbitrary phases | PROVED (Ginibre's argument with shifted phases; same standing) |
+| (N1) for S^3 sheets with linear weights and one-sided twists | OPEN. GUIDE: no violation in 400 sampled comparisons on four graphs and 3200 quadrature comparisons on the triangle |
+| Proposition S: the comparison fails for a hard cap weight at large chord coupling | PROVED as an asymptotic statement (same standing) |
+| Remark S: it fails for soft flat-topped weights and holds once the linear part is strong | GUIDE; ARGUED |
+| Remark C: bond-energy covariances of a twisted cell are not dominated by the untwisted ones (-1/4 against at most 0.09 at J_1 = J_2 = 2) | PROVED (elementary) |
+
+What none of it does. It bounds no neutral covariance and no twist cost in four dimensions. It does not move
+(N-phys), (SING), (BS) or (W). The item is off the path; Step 2.2 says so.
+
+What it settles. Row 1194 5.1 left "a diamagnetic comparison for one-sided twists" undecided. In three parts:
+the unnormalized form holds and was on file; the normalized form for charged two-point functions is equivalent
+to monotonicity of D_g, has no counterexample in the linear class, and is false for flat-topped weights; the
+neutral form is false.
+
+For the lead (ARGUED, short).
+1. This is the seventh plain-brief screening (rows 1188-1190, 1193-1195, this row). Together they hold more
+   than sixty candidates with their matches (rows 1189, 1190, 1193, 1194, 1195 and Step 1.2 here). None found a
+   route off the map. I expect no information from another screening row.
+2. I recommend no row on (N1). It has no consumer. If one appears, the first lemma is the cycle case: for the
+   convolution F of linear weights exp(J_i <., 1>), the ratio F(theta)/F(0) is non-increasing in every J_i.
+3. No statement of this file is used by any other file. A check of Lemma E and Proposition S is short, and
+   nothing waits for it.
+
+RESULT: Row 1199 (Claude Fable 5.2 max, Mac mini worker 2, 2026-11-20 01:36Z-02:42Z; author only, checked by no one; four guide runs under the numeric lock): the mass gap is NOT proved and nothing is disproved; (N-phys), the continuum datum, (BS), (W), (SING) stay OPEN. A seventh plain-brief screening (a literature probe to 2026-11-15 and thirteen further candidates, each grepped) found no route off the lane's map (GUIDE). One bounded item was worked, off the path and said so: the diamagnetic comparison for S^3 sheets with one-sided twists that row 1194 5.1 left undecided. PROVED by hand, small, not selective: Lemma E (the normalized comparison (N1) for charged two-point functions holds iff D_g = log(Z_1/Z_g) is non-decreasing in every coupling); Lemma A (the comparison for plane rotators with arbitrary phases, by Ginibre's argument); Proposition S (the comparison fails for a hard cap weight at large chord coupling, so a proof in the linear class must read the shape of the weight); Remark C (neutral bond-energy covariances of a twisted cell are not dominated by the untwisted ones: -1/4 against at most 0.09). Found again, not new: Lemma U, the unnormalized comparison (Proposition LG of row 1016). GUIDE: (N1) for linear weights has no violation in 400 sampled comparisons on four graphs and 3200 quadrature comparisons on the triangle; soft flat-topped weights violate it. OPEN: (N1) in the linear class (no consumer), and everything on the path.

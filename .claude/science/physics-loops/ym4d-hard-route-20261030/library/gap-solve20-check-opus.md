@@ -327,3 +327,57 @@ so D(P_W || P_b)/(6V) = (1/2) log y_* + O(1). d_x log W_y = b + (B-b) g verified
 relative-entropy distances to Wilson at coupling b all vanish (47)-(50), while its detector is rejected by Wilson (49).
 It refutes transferring a spectral bound between actions by those closeness measures; it says nothing about Wilson's
 own neutral levels.
+
+## Step 5. Block D, first half (L107-315; items not already checked in Steps 3-4)
+
+**D1. (8), L109-133. HOLDS.** e^{b y.x} = e^{b chi_{1/2}(y x^{-1})/2} is a class kernel; r_l = I_{l+1}/I_1 (GL3, standard). Poisson
+integral for I_j; d/du[e^{bu}(1-u^2)^{j+1/2}] integrates to 0 and gives I_{j+1}/I_j = mean of u < 1; with
+I_j - I_{j+2} = 2(j+1) I_{j+1}/b and I_{j+2} <= I_{j+1}: I_{j+1}/I_j >= (1 + 2(j+1)/b)^{-1}; product over j = 1..l gives
+r_l >= e^{-(l^2+3l)/b}. dim V_k = D_k (Peter-Weyl), V_k V_k-bar in V_{2k} (Clebsch-Gordan), constant diagonal kernel D_k gives
+||f||_inf <= sqrt(D_k). With f in V_k vanishing on the N < D_k nodes, h = T_b^{-1}|f|^2 in V_{2k}: ||h||_2 <= e^{(4k^2+6k)/b} sqrt(D_k);
+int h G dsigma = int T_b h dQ = int |f|^2 dQ = 0 and int h dsigma = int |f|^2 dsigma = 1 (T_b symmetric, mass-preserving).
+
+**D2. Physical exterior, L135-139. HOLDS.** A gauge rotation at the initial endpoint applied to the exterior only preserves
+the exterior marginal (Haar invariance of U_e) and right-translates Y, so Y | R is Haar on R > 0. Small-ball bound
+Z >= (c(1+beta)^{-3/2})^{4V} e^{-48V}; convexity with Z(0) = 1 gives E S <= -log Z/beta; 6 - R <= sum_{p ni e}(1 - x_p).
+
+**D3. Alphabet lower bound, L141. HOLDS.** On R >= 3, Y is Haar given R, so (8) at b = beta R >= 3 beta applies;
+k = floor(c log n) gives exponent (4c^2/(3c_1)) log n + O(1) and D_k^{-1/2} = n^{-o(1)}; so N >= D_k >= (k+1)^3/3. The
+matching order for eta_d (one-link normalizer error <= 12 delta) is correct. The outline line reference 19957-19996 for the
+logarithmic coupling is a citation I did not re-read; nothing here depends on it.
+
+**D4. Why the limit cannot transfer, L211. HOLDS.** ||mu_s - sigma||_TV = s (c singular to sigma). P(face central) -> 1 from (10)
+by translation invariance and four links. f_beta > 0 only on caps of radius ~1/beta (volume O(beta^{-3})), conditional density
+<= C(1+beta)^{3/2}, so E_0 f_beta = O(beta^{-3/2}) while E_s f_beta -> 1.
+
+**D5. (13), L218-226. HOLDS.** Unequal directional Haar fractions (multiples of 4^{-4}): the least is <= mean - 4^{-4}/4, so
+(9) gains V/(4 x 4^4). Equal: a Haar mu-edge meets a centre nu-edge at a vertex (else the pattern is constant by
+connectivity); translating along +mu reaches the next centre nu-edge within h <= 4 steps; with the column order in that
+sign the last strip face f_{h-1} is unassigned in (9) (its forward link is centre); after all other column eliminations
+(which give z_beta whatever the side links), integrating the Haar mu-edge in f_0 and the h-1 Haar nu-edges in f_1..f_{h-1}
+gives z_beta^h, one extra factor per strip; >= gV separated strips; root loss <= 3V/ell.
+
+**D6. (14), L228-239. HOLDS.** Disseminated numerator s^{E-k}(1-s)^k z^{3k/4+eta V}; denominator >= geometric mean of
+(s/2)^E and (1-s)^E e^{-CE}(1+beta)^{-(3/2)(3V+1)}; label factors cancel; (1+beta) exponent -(3/2) eta V + (3/2) k/E;
+so (C beta^{-c})^V uniformly in s. Chessboard with link labels as shared mirror variables (cited AM6-AM7 argument, not
+re-read); 216 links in a closed side-two tile, V/16 tiles, power 16/V. Neutral: Cauchy-Schwarz on K_+(x,y)K_-(y,gx), the
+flip preserves the slice reference, then Z_neut >= Z_ord/8.
+
+**D7. (15)-(16), L244-278. HOLDS.** s_* by continuity and endpoint swap; P(H), P(C) = 1/2 + O(q) by (14); tile-independence
+via seam moves by flips; Haar fraction 1/2 + O(q); exponential-family monotonicity in log((1-s)/s) and neutral (10) at
+beta^{-(9/8 +- eps)} locate s_*. Contours: opposite pure tiles cannot touch; boundary edges of a good component face bad
+tiles; curves shorter than M/2 are contractible and some curve separates the two points; >= l/4 bad tiles per contour,
+probability <= 8 q^{l/4}; long contours cost C M T (4q^{1/4})^{M/2} -> 0 since c_1 < c_0/100 and -log(4q^{1/4}) >= (c_0/5) log beta.
+f_beta is flip-invariant and L^1-close to the pure-centre indicator (error O(q + beta^{-3/2})), so Cov -> 1/2 - 1/4. Spectral
+step as in C0a; m_+ <= (36 beta n^3 + log 20)/(t-3).
+
+**D8. Typical conditional accuracy, L298. HOLDS.** Centre normalizer cosh(b Re y); ||G_b||_p^p ~ e^{pb} b^{-3/2}/(e^{pb} b^{-3p/2});
+R in [3,6] with probability -> 1 and monotonicity in b for R < 3; s_* beta^{(3/2)(1-1/p)} -> 0 iff p < 4.
+
+**D9. (18) and the smooth slow mode, L303-315. HOLDS.** nu * nu-check = mu-type mixture with Q_eps (centre commutes);
+faces with four cap links lie within 4 eps of +-I, so all-positive caps cost <= 8 beta eps^2 <= 8/b^2 per face and
+1 - f_beta <= 16/b on all-cap faces; Haar faces give f_beta > 0 with probability <= C b^{-3/2}; ||q_eps - 1||_p <=
+C eps^{-3(1-1/p)} + 1 with eps^{-3} = beta^{3/2 + o(1)}; exponent -9/8 + (3/2)(1-1/p) < 0 iff p < 4.
+
+**Step 5 verdict.** 9 statements, all HOLD; no correction needed. (Statements (9)-(12), (17), smooth (11), (26), (40) and
+the spectral step were checked in Steps 3-4.)

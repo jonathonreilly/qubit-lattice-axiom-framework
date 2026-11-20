@@ -66,24 +66,80 @@ the band by an identity that fails for U(1), for frozen groups and for products 
   neutral half that (N-phys) needs.
 - The non-abelian bracket of 4D Yang-Mills does enter one identity: the Ward identity of background gauge
   invariance. That identity needs a colour frame. A frame costs at least the non-abelian part NA of the pin
-  (Lemma FR, row 1011 7.3, PROVED). The size of NA on typical fields is ARGUED there, not proved (row 1011 7.3:
-  "NA is of order (number of sites)/b"). If that size is right, the frame's cost is mass-like at link level at every
+  (Lemma FR, row 1011 7.3, PROVED). On typical Wilson fields NA is of order 1/b per site: E lambda_x >= 1/(64(1+6b))
+  on every four-torus with periods at least 3, and a spatially simultaneous form except with probability
+  e^(-c R^d) (row 1141, `gap-crux2-astra62.md` (8) and Phase 1; all 34 statements HOLD in check row 1142; earlier
+  form 1/(3924 b^2) by row 1018 Lemma NAB, check 1022). So the frame's cost is mass-like at link level at every
   coupling, and a frame exists only at block scales where the non-abelian part of the block field is small, above
-  the band ((N1)-(N3) of row 1011 7.4). Then this repair does not cross the band.
+  the band ((N1)-(N3) of row 1011 7.4). In the form of row 1018 5.5 the open selective half is (DEC): non-abelian
+  content at scale l must lower the cross-cell response at scale 2l; "no exact identity is found" (row 1018 L352).
 - Every other engine kind on file (positivity, curvature, dilute defect gas, large N or exact recursion,
   compactness, Hellmann-Feynman level derivatives) has a named failing step (row 1237 Step 1.2; row 1238 Step 1.2).
 
-**1.3 Decision.** I found no engine of a new kind, and I do not claim an attack on the seed itself. The step of
-1.2 that is still ARGUED on file, and on which the verdict "the typical-field repair stops above the band" rests,
-is the size of the frame cost NA on typical Wilson fields. The session proves it (Step 2).
+**1.3 Decision.** I found no engine of a new kind, and I do not claim an attack on the seed itself.
 
-Moves: the kill of route G2 of row 1011's registry (typical pins with a colour frame, "blocked-local") at link
-level becomes PROVED instead of ARGUED. If the lower bound holds with explicit constants at every beta, no
-link-level frame removes the mass-like term anywhere on the trajectory, so a frame must live at a block scale; any
-future (K-flow) row has to supply a block frame with its own defect bound. If the bound failed (typical fields
-with small NA at large beta), the typical-field repair would reopen at link level, which changes the lane's map.
+Correction, written 09:52Z by date -u, before any Step 2 work. The first version of this section (09:25Z) said that
+the size of NA on typical fields was ARGUED only, and chose to prove it. That was wrong: row 1141 proved it and row
+1142 checked it (see the bullet above, now corrected). My rule-0a grep at 09:24Z covered `open-core.md` and the
+FINISH rows that name "NA(omega)" or "Lemma FR"; it did not open rows 1018, 1022 and 1141, which state the bound in
+other words ("E lambda_x", "bare estimate"). The planned Step 2 is withdrawn, so this row does not repeat row 1141.
 
-Rule 0a for this statement: grep for "NA(omega)", "non-abelian part", "Lemma FR", "frame defect" in
-`library/open-core.md` and the FINISH rows (09:24Z): open-core.md has no match; FINISH matches are rows 1011 and
-1014-1016 (the source and its checks; row 1014: "FR's gloss of NA = 0" is a minor defect, not a proof of the size).
-No row attacks the size of NA.
+New plan. The sharpest open form on file is (DEC) of row 1018 5.5, with its tests (row 1018 5.5 table) and the
+sign structure of the frame-twist Hessian (row 1011 7.3, row 1018 4.1-4.2: H = direct term - Var(current)). Step 2
+asks one precise question about it that I did not find on file: can an exact identity of the Wilson measure, with no
+frame and no symmetry, fix the SIGN of the non-abelian part of the net response at order-one coupling? I test the
+question against the comparison models already on file before claiming anything.
+
+## Step 2. The sign question (ARGUED; written 10:12Z by date -u)
+
+**2.1 The question, made exact from statements on file.** For a pinned cell with boundary data omega and a
+boundary move B extended to the interior by a flow V, row 1018 Lemma FLOW (PROVED; Proposition A (ii) of row 1011)
+gives the exact split
+
+    H_c(omega; B) = - E_omega[V Psi_V] - Var_omega(Psi_V) <= - E_omega[V Psi_V],    Psi_V = V A + div V,
+
+for EVERY extension V, with equality iff Psi_V is constant. So every V gives an upper bound on the stiffness, and a
+(K-flow) step of the 2D kind ((DEC) of row 1018 5.5) needs a V whose direct term -E[V Psi_V] at scale 2l is below
+the response at scale l by a margin of order NA. Write delta H := H_c - H_cl for the correction to the classical
+stiffness. Known signs:
+
+- U(1), Gaussian (non-compact) form, any pin: delta H = 0 exactly, since the pinned free energy is quadratic in the
+  boundary data with the classical Dirichlet-to-Neumann coefficient (PROVED, elementary; this is the "zero gain"
+  of the abelian model, row 1011 tests).
+- SU(2), supremum over pins: delta H is mass-like and positive, the best uniform constant grows like b S
+  (row 1011 Proposition B', PROVED for all strength profiles; ARGUED for homogeneous strengths, check 1014).
+- SU(2), frame moves V = theta n on typical fields: the direct term carries a mass-like part >= (b/6) theta^2 NA
+  with NA of order 1/b per site (Lemma FR, FR+; row 1141 (8), checked by row 1142). So frame moves give a LARGER
+  upper bound on non-abelian fields than on abelian ones: the wrong sign for (DEC).
+- SU(2), typical pins at small coupling: delta H < 0 by the one-loop law (paramagnetic part 4 against diamagnetic
+  part 1/3 of the coefficient 11/3; RECALLED, row 1011 7.4 (N3)). The account controls this regime g_k <= gamma
+  (row 1018 L353), above the band.
+
+**2.2 Which exact identities could fix the sign at order-one coupling.** I list every exact identity of the Wilson
+measure on file and its reach (each line cites the row that tested it).
+
+- Gauge Ward identities: X(G) = 0 for every gauge generator G (row 1018 Lemma PROJ (ii)-(iii)). They move no
+  gauge-invariant observable. With a frame they give PROJ (iii), whose defect term is the frame cost above.
+- Link symmetries: only central ones (row 1011 Lemma CEN, Corollary CEN2, for every gauge group; CEN+ row 1016).
+  Their identities are those of Z_2 and read the flux half (row 1018 Lemma PAR, Corollary MP = Mack and Petkova's
+  criterion); Lemma PT binds them for the neutral half.
+- Lattice symmetries: the hypercubic group is non-abelian but finite; it has no continuous twist and no stiffness
+  (row 1201, ARGUED).
+- Integration by parts on the interior (Schwinger-Dyson, master loop equations): exact at every coupling and they
+  carry the non-abelian splitting terms, but they fix no sign without a small parameter; their published uses are
+  strong coupling and large N (row 1238 Step 1.2 table; row 1199 table).
+- Reflection positivity: Schwarz and convexity inequalities in the twist and time directions; every inequality of
+  that family holds for the free photon (row 1217, Lemma E), so it is blind.
+
+**2.3 Verdict (ARGUED).** No identity on file fixes the sign of delta H for typical pins at order-one coupling.
+Frame moves give the wrong sign (2.1, third item), and the identities of 2.2 either do not move gauge-invariant
+observables, read only the centre, are finite, or need a small parameter. The negative sign at the band is the
+continuation of one-loop asymptotic freedom into the region where the account's control ends. So the sign is a
+dynamical fact of the Wilson measure there, not a consequence of a known identity. A proof of (N-phys) by a (K-flow)
+step therefore needs a NEW exact identity, or a new non-frame extension V whose direct term is provably below the
+abelian value on typical SU(2) fields. Route (ii) of row 1018 (field-dependent moves, aligned frames of row 1026) is
+the only open candidate of the second kind on file; its frames found so far cost order one per site (row 1026,
+ARGUED). I did not find a candidate of the first kind.
+
+**What this step does not show.** It is not a theorem that no such identity exists. It is a reading of the identities
+on file. No new PROVED statement is in this step except the elementary Gaussian line of 2.1.

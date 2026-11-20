@@ -8,7 +8,7 @@ Started 2026-11-20T15:47Z (date -u).
 
 Labels: PROVED (written argument checkable by hand), ARGUED (argument with a named gap), GUIDE (heuristic or numeric, never a proof step), OPEN.
 
-## Step 0: record read (2026-11-20T16:05Z by date -u)
+## Step 0: record read (2026-11-20, 15:47Z-16:11Z by date -u)
 
 Read: `GOAL.md` in full; `FINISH.md` L1-84, L299-349 and row 1296 (this item); the RESULT lines of rows 1244-1293
 (the Opus mini-solve series aa-as); rows 1284-1295 (in-flight items); `parts/gap.md` L1-104 and L223-330 (state,
@@ -33,7 +33,7 @@ What the record fixes (statements about the record, not evidence; each is cited 
 4. In-flight at this pin: aq (row 1284: (U-dom), H2' connectedness), as (row 1293, done: (PE)), at (row 1294, just
    started), au (row 1295, queued), owner tiling rows 1285-1287, Codex rows 1288, 1290.
 
-## Step 1: how best to attack it (written 2026-11-20T16:35Z by date -u; judgement, ARGUED)
+## Step 1: how best to attack it (written 2026-11-20, after 16:11Z by date -u; judgement, ARGUED)
 
 **The crux.** Modulo the ultraviolet carry, the Jaffe-Witten gap reads one lattice input, (N-phys), equivalently a
 seed at one coupling in the window (a uniform cube gap plus the count (TR) of row 1259). Every proof of it must
@@ -78,9 +78,9 @@ CA-III L11832-12058, L17396-17447, L18136-18302) and rows 1255, 1275 (Propositio
 that attaches Section 9.1's arrays to the physical bare densities, or find where it fails. Step 4: labels, RESULT.
 If row 1294 or 1295 claims the same item first, I switch to the check of A's thermal ascent (Theorem F).
 
-Duplicate check at 16:45Z: rows 1294 (`gap-mini-solve-at-opus.md`, Step 0 only) and 1295 (no file) name no item yet.
+Duplicate check at 16:11Z (date -u): rows 1294 (`gap-mini-solve-at-opus.md`, Step 0 only) and 1295 (no file) name no item yet.
 
-## Step 2: what the account fixes about the chapter-9 normalisation (READ; written 2026-11-20T17:20Z by date -u)
+## Step 2: what the account fixes about the chapter-9 normalisation (READ; written 2026-11-20T16:31Z by date -u)
 
 Source: Sussman and Alpoge's complete account at 31a47c543775 (CA-I, CA-II, CA-III; with Claude and Codex as
 authors of its text; after Balaban), fetched by raw URL into a scratch folder outside the repository. Line numbers
@@ -136,7 +136,7 @@ agree across the pair, for instance both zero, and needs one more input otherwis
 (1+d)^(-1) chosen before assembly): those scalars are leftovers whose difference log(1+d) is exactly such an
 unloaded mark.
 
-## Step 3: a consistent physical normalisation at the stop (written 2026-11-20T17:30Z by date -u)
+## Step 3: a consistent physical normalisation at the stop (written 2026-11-20T16:31Z by date -u)
 
 **Setting.** The pin route of the one-cutoff carry (row 1233 Proposition 3.7 as corrected by checks 1242, 1263,
 1266 and 1288; rows 1255, 1256, 1275). Two tori T_s, T_b with side ratio L, r := L^4, Delta f := r f(T_s) - f(T_b).
@@ -221,3 +221,87 @@ choice, and in it the zero-source comparison compares e^(-E_(<k)) Z_bare of the 
 is deep enough that the tail sum_(n >= n(d_0)) eps*_n A'B' is small; eps*_n decays like rho^(n-w) + Pi_n (row 1233
 Lemma 3.5). This depth condition is the carry's existing base-placement condition (check 1288 Section 7 item 2); it
 is not new.
+
+## Step 4: second pass, a tighter reading, state (written 2026-11-20T16:33Z by date -u)
+
+**Second pass (same session, so not a check).** Each PROVED item of Step 3 was re-derived once.
+- CONS: one precision. The run's bare density is Wilson's at the run's own bare coupling, the pin datum's
+  beta(d) = x_0 - zeta_*^n (R3: the real centre of run A is zeta_*^n + u, and u = 0 at an exact pin). So
+  Z_bare(d; T) means int exp[-beta(d) A(U)] dU on T, with no constant; Phi(d) is the two-torus defect of its logarithm.
+  No other change.
+- TB': holds as written if the A, B of (J4) belong to Balaban's full normalisation. If the account's chapter-9
+  representation is already the partial one (see the next paragraph), TB' is not needed and A' = A, B' = B.
+- PV: the identity Delta E = nu_k(T_b)[E(T_s)/nu_k(T_s) - E(T_b)/nu_k(T_b)] uses r = nu_k(T_b)/nu_k(T_s) = L^4,
+  which needs the same stop level on both tori (same datum, same step data by (J1), same stop depth w(g)). Checked.
+  The monotonicity remark needs N >= 32M/kappa, which N >= 2L^11 M gives once L^11 >= 16/kappa; stated as a
+  condition on L, not proved here.
+- PN (iv): from CONS, log Z_bare = log S_9 + E_9 on each torus; the telescope and the two end terms give the bound.
+  Checked.
+
+**A tighter reading (ARGUED; about the text).** Two printed statements fix the normalisation of the 9.1 terms. (1)
+tau_h^c = P_h[x^c] with "one assembly formula P_h, carrying no run index, applied to the array x^c of the run's
+stored numbers" (III:11961-11966). (2) The stored source-free pieces are the run's vacuum constants, filed as uses
+(j, k', .) with k' <= k, that is, constants of the levels the run performs (III:11967-11977, III:59795-59803). If the
+bare constant left a leftover L^c != 0 at the stop, the terms would be e^(-L^c) P_h[x^c-bar], with L^c a number
+outside the array; (1) would then fail unless L^A = L^B. So (1) and (2) hold together exactly for the partial
+normalisation of Definition PN, or for a leftover common to the pair. The correlation theorem's own description of
+Z~ supports this: "the integral over the last lattice of the density that remains when the normalization constant E
+of Balaban's bare density ... [has] been removed" (II:65229-65233); for a run stopped at depth w the last lattice is
+T_w. Evidence for the full constant through first passage (check 1288: II:140873-140926, I:159429-159433) concerns
+chapter 8's runs, whose last lattice is the first-passage lattice. So the account's chapter-9 terms are most likely
+already in the partial normalisation, and Definition PN only writes down what (1) and (2) imply. Still a reading,
+not a theorem.
+
+**State of check 1288 item 3 after this row.** Reduced to: (DET) for the torus-wide Gaussian normalisers of the
+steps below the stop, needed only in the split convention; hypotheses (a)-(c) of 8.22:lem-vacuum-energy-density at
+those levels; Theorem 9.1 with its hypotheses (a)-(e), part (e) being the account's outstanding blind-site
+expansion; and the reading above. Check 1288's N2 counterexample cannot occur in Definition PN, because CONS fixes
+each representative by conservation alone. The other items of check 1288 Section 7 (the seed and count; the 9.1
+inputs; the across-frame comparison; scope) are untouched.
+
+**What this row does not do.** It does not prove the mass gap, and it offers no engine for the band (Step 1). The
+seed (N-phys), equivalently a uniform cube gap plus the count (TR) at one coupling in the window, stays OPEN. The
+result above is an input of the ultraviolet carry, which is worth nothing for the gap until a seed exists.
+
+**For the lead (check request).** One cross-provider check of Step 3: Lemma PV (the adaptation of the proof of
+8.22:lem-vacuum-energy-density to the levels below the stop, with N in place of 2L^min(m,m')); Lemma TB' (the factor
+e^(Efrak_k) and the use of 4.36:eq-never-large-exponent-b); Lemma CONS; Proposition PN (ii)-(iv); and a verdict on
+the Reading of Step 2 and on the tighter reading of Step 4 (III:11905-11977, III:12005-12058, III:17396-17480,
+II:65222-65240).
+
+**Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text (complete account at
+31a47c543775), for every statement R1-R9, for the proof of 8.22:lem-vacuum-energy-density that Lemma PV adapts and for
+Theorem 4.36:thm-never-large-exponent that TB' uses; T. Balaban for the construction (CMP 109, 116, 119, 122) as the
+account reads it. Rows 1233, 1255, 1256 and 1275 (Claude Opus 5.5) and check 1288 (gpt-6.2-astra) for the carry, the
+pin route and the counterexample that Definition PN answers. Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford
+and Singha Roy (A), and Bhattacharjee, Bhattacharya, Lockwood and Romanov (B), as read by row 1218, for the published
+thermal and cube criteria weighed in Step 1.
+
+## Step 5: the Gaussian normalisers below the stop (written 2026-11-20T16:35Z by date -u)
+
+Source: row 987 (`gap-det-fable.md`, Claude Fable 5.2; Lemma A' and Corollary B at L249-345), checked by row 989
+(same provider, Lemma A' HOLDS, Corollary B HOLDS AFTER CORRECTION of its m-free constant); its inputs (S1)-(S3) are
+ported in rows 990 and 993 (check 994, same provider). Corollary B is a sum over steps, each step bounded by Lemma A'
+on the step's own lattice; nothing in it needs the last step to be the first-passage step.
+
+**Lemma DET-k (PROVED GIVEN Lemma A' of row 987 and (S1), (S2) of its Corollary B for the steps j < k of the two
+runs).** Replace (S3) by (S3-k): the coordinates of step j on T are indexed by X_n with n = n_j(T) := N(T) L^(k-j),
+N(T_s) = N, N(T_b) = LN, so n_j(T_b) = L n_j(T_s). Let G_(<k)(T) := sum_(j<k) G^(j)(T). Then, uniformly in the cutoff,
+    |Delta G_(<k)| <= eta_det(N) := (LN)^4 (d/2) log(2B/gamma) sum_(u=1)^(k) L^(4u) eps(N L^u)
+                                   <= (d/2) log(2B/gamma) c_eps (120/nu^5) L^4/(N (L - 1)),
+with eps, c_eps, nu, gamma, B as in Lemma A'.
+*Proof.* As in Corollary B: by (S1), G^(j)(T)/nu_k(T) = L^(4(k-j)) [c_j - (d/2)(d n^4)^(-1) log det A_(j,T)], where
+L^(4(k-j)) counts the level-j sites per level-k site; c_j cancels between the two tori; Lemma A' with l = L,
+n = n_j(T_s), n' = n_j(T_b) bounds the rest by (d/2) L^(4(k-j)) log(2B/gamma) eps(N L^(k-j)). Sum over u = k - j and
+multiply by nu_k(T_b) = (LN)^4, as in Lemma PV. For the last bound use e^(-t) <= 120/t^5 (t > 0):
+(LN)^4 L^(4u) c_eps e^(-nu N L^u) <= 120 c_eps L^4 L^(-u)/(nu^5 N), and sum_(u>=1) L^(-u) = 1/(L-1). QED
+So eta_det(N) = O(L^3/N), and PN (iii) holds with eta_9 = eta_vac(N) + eta_det(N), both uniform in the cutoff and
+both small once the stop lattice side N is large. In R8's convention, where no torus-wide Gaussian normaliser is
+split off, eta_det is not needed.
+
+**State after Step 5.** Check 1288 item 3 is reduced to: hypotheses (a)-(c) of 8.22:lem-vacuum-energy-density and
+(S1), (S2) of row 987 at the steps below the stop (ports, with checks 989 and 994 by the same provider); Theorem 9.1
+with its hypotheses (a)-(e), part (e) being the account's outstanding blind-site expansion; and the reading of Steps 2
+and 4 (ARGUED). Nothing on the seed changed.
+
+RESULT: Row 1296 (Claude Opus 5.5 max, Mac mini worker 3, 15:47Z-16:35Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed (N-phys) (a uniform cube gap plus the count (TR) at one coupling in the window) stays OPEN with no route off the record (Step 1: nine routes re-derived, each matched on file at its first failing step). Worked item instead: check 1288's item 3, the physical normalisation of the one-cutoff carry, after reading N2 of row 1275 FAILED there. PROVED from the conservation law of Sussman and Alpoge's complete account (with Claude and Codex as authors of its text; after Balaban): Lemma CONS, if each chapter-9 run carries its own partial Balaban constant E_(<k) through its stop (Definition PN), its representative is exactly S_9 = e^(-E_(<k)) Z_bare, one number per datum and torus, so check 1288's counterexample cannot occur. PROVED GIVEN the account's and row 987's statements: Lemma PV (two-torus defect of the partial vacuum constant <= (LN)^4 2(E_0+1)K_* sum_u L^(4u) e^(-(kappa/2)(N L^u/(4M)-2)), the proof of 8.22:lem-vacuum-energy-density run to the stop), Lemma DET-k (Gaussian normalisers below the stop, <= C L^3/N, Corollary B of row 987 run to the stop), Lemma TB' (torus bound in the partial normalisation, from 4.36:eq-never-large-exponent-b), and Proposition PN (consistent representatives, edge bounds, Phi(d) <= Phi(d_0) + sum b'_n + 2 eta_9 with eta_9 uniform in the cutoff). ARGUED from the text: tau_h = P_h[x^c] with run-own stored constants forces this partial normalisation (a leftover from levels beyond the stop would be an unloaded mark), so Remark 9.1 (1)'s "one free positive constant for each run" holds only as one constant common to the pair. OPEN: the seed and count; 8.22's and row 987's structural inputs at the steps below the stop; Theorem 9.1's hypotheses, including the account's outstanding blind-site expansion; the across-frame comparison; the mass gap. Output library/gap-mini-solve-av-opus.md.

@@ -338,3 +338,91 @@ under (24) (step 4) applies to (9) as stated. L230 OPEN is correctly labelled.
 
 Step 6 verdicts: (10) L135-L143 HOLDS (with L145-L180 each HOLDS); (11) HOLDS; (12) L188-L200 HOLDS; L202-L208 HOLD;
 (13) HOLDS; (14) HOLDS.
+
+## Step 7a (written 2026-11-20T16:21Z): everything else, part C, L378-L427
+
+**L380-L386 (GUIDE), (25) endpoints.** $I_\beta(X,Y)=I_\beta(Y,X)$ ($g\to g^{-1}$, $a(u)=a(u^{-1})$). With the closing kernel
+$v\,z_\beta^{-m}I_\beta\,v$: $\mathrm{Tr}T^j=Z_{\rm slab}z_\beta^{-m}\mathbb E_\mu K$ and
+$\mathrm{Tr}T^{2j}=Z_{\rm slab}^2z_\beta^{-2m}\mathbb E_{\mu\otimes\mu}[K(X_1,Y_2)K(X_2,Y_1)]$, so the slab and $z_\beta$ factors cancel
+and $J(1)=\log[(\mathrm{Tr}T^j)^2/\mathrm{Tr}T^{2j}]$, $J(0)=0$. **HOLDS.**
+
+**L388, $|J(u)|\le Cuv_3[\beta^{1/3}+\log(1+\beta)]$.** $K\le1$ gives $\log\mathbb E K^u\le0$; Jensen gives
+$\log\mathbb EK^u\ge u\,\mathbb E\log K=-u\,\mathbb E\log B$; so $J(u)\in[-2u\,\mathbb E_\mu\log B,\ u\,\mathbb E_{\mu\otimes\mu}(\log B_{12}+\log B_{21})]$.
+$\mathbb E_\mu\log B=\mathbb E_Q\log B$ is (23); the crossed pairs need (23) for ends of independent slabs, which its
+proof covers (one-end marginals only, L366). Neutral kernel: concavity of $\log$ over the eight twists. **HOLDS.**
+
+**L390-L412, loss of positivity of $K^u$.**
+- (26), L392-L398: $I_\beta=e^{-\beta m}\int_\Gamma e^{\beta x\cdot\gamma y}d\gamma$ since $\mathrm{Re}(X_eg_yY_e^{-1}g_x^{-1})=X_e\cdot(g_xY_eg_y^{-1})$;
+  $x(\bar t)=\overline{x(t)}$ (real Taylor coefficients) and $\int\gamma^{\otimes\ell}=\mathrm{Proj}_\Gamma$ real symmetric give
+  $K(t,\bar t)=e^{-\beta m}\sum\beta^\ell\|\mathrm{Proj}_\Gamma x(t)^{\otimes\ell}\|^2/\ell!\ge e^{-\beta m}$. **HOLDS.**
+- L400-L404, $F$ entire with $|F(c)|\le C_{n,\beta}e^{C_\beta\sqrt{1+|c|}}$: global conjugation by $a_2$ is in $\Gamma$, fixes the
+  identity configuration and sends $l\to-l$; an even entire function of $l$ is entire in $l^2$; $F(c)=G(c,1-c^2)$. The
+  spherical average of $e^{\beta q\cdot w}$ is $\sum_r\beta^{2r}\mathbb Eq_1^{2r}(w\cdot w)^r/(2r)!$, of modulus
+  $\le e^{\beta\sqrt{|w\cdot w|}}$; with $B_1=g_{z'}$, $B_2=a_1g_{z'}$ orthonormal and $c^2+l^2=1$,
+  $w\cdot w=|A|^2+1+2cA\cdot B_1+2lA\cdot B_2$, $|l|\le C(1+|c|)$. **HOLDS.**
+- L406, nonconstancy: $\int q_1e^{\beta q\cdot v}dq=(1\cdot v)\int q_1e^{\beta q_1}$ for unit $v$; the power expansion has
+  nonnegative coefficients and nonnegative sphere moments; the plaquette term with one common coordinate at four
+  vertices is strictly positive; flat twists have sign one around a plaquette. So $\int F(\mathrm{Re}U)\mathrm{Re}U\,dU>0$,
+  impossible for constant $F$. **HOLDS.**
+- L408: no zero $\Rightarrow F=e^G$, $|G'(c_1)|\le2[\sup_{|c-c_1|=R}\mathrm{Re}G-\mathrm{Re}G(c_1)]/R\to0$, contradiction; $F>0$ on
+  $[-1,1]$ puts $c_*$ off $[-1,1]$, so $\sin t_*\ne0$ and the order is kept. **HOLDS.**
+- L410-L412: PSD of $K^u$ on invariant $L^2$ gives PSD real-point Gram matrices (invariant bump approximations, continuity);
+  Taylor coefficient matrices at real points are PSD; Cauchy bounds give a holomorphic Gram map; (26) gives a positive
+  conjugate diagonal, hence branches with a common radius along a compact path; $f(t)=\langle v(t),v(0)\rangle$ obeys
+  $K(t,0)f'=u\,\partial_tK(t,0)f$ by continuation; at a zero of order $k$ the leading terms give $\mathrm{ord}f=uk$, not an
+  integer for irrational $u$ or $0<u<1/k$. If the path meets an earlier zero of $K(\cdot,0)$, the same contradiction
+  arises there. **HOLDS.**
+
+**(27), L416-L423.** $\frac{d}{du}\log\mathbb EK^u=\mathbb E[K^u\log K]/\mathbb EK^u$, with $\log K$ bounded at fixed cutoff. **HOLDS.**
+The attribution to row 1151 (28) is GUIDE.
+
+**L425 (OPEN) and L427 (RESULT).** Correctly labelled: (22) and (24) bound truncation costs, (27) is unestimated, (3)
+needs the OPEN Poincare bound of L52. The cited threshold $J(1)\le y_0V(s)/(2(96T_0)^3)$ is read in step 7b.
+
+Step 7a verdicts: L386 HOLDS; L388 HOLDS; L390 HOLDS (proof L392-L412, each HOLDS); (26) HOLDS; (27) HOLDS.
+
+## Step 7b (written 2026-11-20T16:24Z): cited thresholds and scope, and the restatement question
+
+**L425, the required threshold.** Row 1218's reading (`prior/gap-onebound-read-sol.md` L84-L101) states A-B** as
+$Z(s,T_0)^2\le e^{\gamma V(s)}Z(s,2T_0)$ for $2T_0\le s_i<48T_0$, $\gamma=y_0/(2(96T_0)^3)$, on the full gauge-invariant slice
+space. With $j=T_0$ and $J(1)=\log[(\mathrm{Tr}T^j)^2/\mathrm{Tr}T^{2j}]$ this is exactly $J(1)\le y_0V(s)/(2(96T_0)^3)$, and for
+these shapes $\gamma V(s)\in[8y_0/(2\cdot96^3),\,48^3y_0/(2\cdot96^3))$, of order one. **HOLDS** (citation and arithmetic).
+
+**GUIDE citations of the Sussman-Alpoge texts, fetched at `31a47c543775` into a scratch folder.** Outline L31858-L31882:
+the reconstructed scalar sector does not identify a full Yang-Mills algebra, and "Nor does polynomial clustering
+establish a mass gap" with the $Ee^{-E}dE$ example. Complete account I L2704-L2712: "Not asserted: ... a mass gap".
+Outline L2195-L2213 is GL3 ($c_l=(2e^{-\beta}/\beta)I_{2l+1}(\beta)>0$), L2313-L2335 the positive trace-class transfer, L1733-L1762
+the exact projection symbol. Each GUIDE statement of row 1290 that cites them (L7, L17, L171) is accurate, and the
+credit to Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, is given. The repo-search
+paragraphs L3-L5 about PR branches and main were not re-checked (GUIDE, not load-bearing).
+
+**Is the main comparison a restatement of an earlier row?** The note's main comparison is the one-period against the
+two-period deletion first moment, i.e. the thermal ratio $J(1)=\log[(\mathrm{Tr}T^j)^2/\mathrm{Tr}T^{2j}]$ in its three forms: pin
+densities (9), scalar orbit integrals (14) with (25), and the signed interpolation (27). **Yes, in substance it is a
+restatement, and row 1290 discloses it.**
+- (9) is row 1151's empty-diagram identity (26), $e^{-J}=p(0)^2/\Pi(0,0)$ (`gap-solve5-astra62.md` L338-L342): the empty
+  diagram is complete deletion of the seam, which is rank one. Row 1290 rewrites it with Gaussian pin densities and
+  needs only a spanning-tree complement. L129 and L186 credit row 1151 (26), Theorem ZD-c and row 1218.
+- The ratio itself is the thermal-doubling quantity of Theorem ZD-c and of A-B** (Bhattacharjee, Bhattacharya,
+  Lockwood, Romanov, Sessford and Singha Roy, as read in row 1218).
+- (27) is the analogue of row 1151's signed coupling interpolation (28) (L411-L416), along the power $u$ of the orbit
+  kernel instead of the plaquette couplings. L423 credits it.
+- The deletion tilt $Q$ is row 1151 §3's open cylinder ("the actual Wilson cylinder with the temporal seam open, with both
+  spatial boundary weights included", L41). Row 1151 also already noted that the ratio of the two very small deletion
+  probabilities needs relative control (L344-L346) and that clipping complete-deletion moments needs a large cap
+  (L354-L356).
+
+**What is not a restatement** (grep of `library/`, `library/open-core.md` and the FINISH rows; only rows 1290 and
+1297 match): the quantitative control of the gauge-integrated deleted cut, i.e. (15) with the $(p-1)^3$ rate, (21),
+(22), (23), (24); the noise threshold with the minimum pin count $2n^3+1$ (L110-L122); (12) and its converse; the loss
+of positivity of $K^u$ (L390-L412); the total-gradient route (1)-(3) with the reduction at L52. Row 1151's (23) is an
+exponential moment past complete deletion for **sparse** one-class face sets with an $e^{C_0|S|}$ bound; row 1290's
+(15) is about the complete cut after integrating the temporal gauge, where the higher moments grow like
+$e^{c(p-1)^3\beta n^3}$. The two statements are consistent and different.
+
+**Earlier rows the steps depend on** (statement and proof read, re-derived where used): row 941 (A7); row 947 (B3); row
+1149 (16) (Bessel-ratio ordering, used through rows 1151 and 1155); row 1151 (4), (6) and (24); row 1155 (9); row 1231
+(1), (8), (9) (statements only, used inside the weak-coupling comparison of (10)); row 1246 (4); row 1283 (38). The Opus
+checks of rows 1151, 1155, 1246 and 1283 record these as HOLDS (`gap-solve5-check-opus.md` L558, L562;
+`gap-solve7-check-opus.md` L464; `gap-solve28-check-opus.md` L48; `gap-solve32-check-opus.md` L528). Those checks are by
+the same provider as this one, so they are not an independent confirmation.

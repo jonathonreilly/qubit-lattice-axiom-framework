@@ -27,7 +27,7 @@ This check is by hand; no numeric run is a step of any verdict.
 
 ## Status
 
-Step 1 in progress.
+All eight steps done by 2026-11-20T10:12Z (date -u). Started 09:50Z.
 
 ## Step 1. Inventory of the file under check (done 2026-11-20T10:02Z)
 
@@ -412,3 +412,84 @@ the Wilson law with the free Gaussian, (12)-(15), as in row 1235's use of the ph
   finite-cutoff cyclic space is all of H_+. This does not contradict them: at a fixed
   smooth source the single-face isolation of S13 is lost, and (4) carries no uniformity
   (L123, L191).
+
+## Step 6. Published-work credits; guide run (done 10:12Z)
+
+**Credits present and accurate.**
+- Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text, are
+  credited at L5, L17, L123 and L207. I read the cited lines at 31a47c543775: outline
+  L326-337, L581-599, L1688-1693 and L31858-31882; CA-I L423-431 and L448-466. They say
+  what the file says.
+- Osterwalder-Seiler and Luscher for the transfer (L17). Sourav Chatterjee through row
+  1231 (L207). Gemini Argon (row 1207). The row 1218 authors (L7, GUIDE).
+
+**Credit corrections (no mathematics changes).**
+1. L15: row 1207 Theorem 4.2's double-commutator display (4.8) FAILS by a sign in check
+   row 1208. The citation should say so. Row 1246's own sign (S5) is right.
+2. L34: row 1236 (6)-(10) does not contain the order v_{d+1} > v_d. It has
+   c'_d >= 0, an order in beta. The file proves the order in d itself on the same line.
+3. L276: the volume growth of the Birkhoff/Hopf projective diameter is already on file:
+   `gap-crux-skeleton-max.md` Lemma B2; `gap-fr-opus.md` L99; `gap-mini-free-fable.md`
+   L222 and L379. Cite it. The new content is the lower bounds (16) and (22).
+4. Suggested, recalled and not opened in this run, so not a verdict: the idea that Wilson
+   loop traces fix the gauge orbit is classical (R. Giles, Phys. Rev. D 24 (1981) 2160).
+   So are trace coordinates for SU(2)-characters of a free group (Fricke-Vogt; Procesi).
+   The file proves what it uses, so these are credits only.
+
+**Guide run (no step rests on it).** Pure Python, under the numeric lock, memory free 57%,
+in a scratch folder. Over 200 random configurations, finite differences agree with
+(2), (3), the triple-trace formula and the equal (AB, C) contributions on x and z, to
+2e-10. v_d increases in d at beta = 0.3, 1, 4, 20. 2 beta (1-c_d)/(d^2-1) is
+0.995, 0.970, 0.937 at beta = 50 and 0.999, 0.993, 0.984 at beta = 200 for d = 2, 3, 4,
+consistent with (5). The radial constant equals 1/pi^2.
+
+## Step 7. Verdicts
+
+| Statement | Lines | Verdict |
+|---|---|---|
+| S1 transfer, positive simple top vector | L21 | HOLDS |
+| S2 algebra and cyclic space | L23 | HOLDS |
+| S3 joint eigenvalues (1), v_d increasing | L25-34 | HOLDS (credit correction 2) |
+| S4 projections, S_{e,h} | L36 | HOLDS |
+| S5 double commutator -> 2 Gamma_e | L38 | HOLDS |
+| S6 identity (2), corner orbit | L42-56 | HOLDS |
+| S7 extension (3), open box | L58-72 | HOLDS |
+| S8 seams | L76-82 | HOLDS |
+| S9 (4) with marked generators | L84-90 | HOLDS |
+| S10 (5), countable exceptional set | L96-101 | HOLDS |
+| S11 global temporal-sum reading | L103 | HOLDS |
+| S12 octant reconstruction; (4) spatial-only off E | L105-117 | HOLDS |
+| S13 barycentre isolation | L123 | HOLDS |
+| S14 (6)-(7) statistic and exact rate | L125-146 | HOLDS |
+| S15 (8)-(11); (4) spatial-only at every beta | L152-191 | HOLDS (wording at L175: continuous cutoff) |
+| S16 (12)-(14) | L197-229 | HOLDS given row 1231 (2)-(5) (checked HOLDS, row 1235) |
+| S17 (15) | L231-237 | HOLDS given the same |
+| S18 (16)-(17) | L243-274 | HOLDS |
+| S19 endpoint-comparison obstruction | L276 | HOLDS (credit correction 3) |
+| S20 fixed depth m_* (18)-(19) | L280-304 | HOLDS |
+| S21 D_* exact rate | L306-311 | HOLDS |
+| S22 reweighting cost | L313 | HOLDS |
+| S23 (20)-(22) | L319-336 | HOLDS given row 1161 (19) (checked HOLDS, row 1162) |
+| S24 (23) | L340-344 | HOLDS (typo L344: "(21)" means (23)) |
+| S25 (24) | L348-354 | HOLDS (one line supplied: C_J and C_Jbar commute) |
+| S26 (25) | L356-362 | HOLDS |
+| S27 (26), scaling | L364-373 | HOLDS |
+| S28 all bounded operators at depth 2m_*+1 | L377 | HOLDS |
+| S29 (27), matching, the gap | L379-386, L402 | OPEN, as labelled |
+| S30 (27) plus matching gives a gap | L388-400 | HOLDS as an implication |
+| GUIDE citation of row 1207 | L15 | HOLDS AFTER CORRECTION (credit only, correction 1) |
+
+Totals: 29 numbered statements HOLD (three given checked earlier rows, one as an
+implication). S29 is OPEN as labelled. 0 FAILS. The corrections are credit only
+(L15, L34, L276), plus one wording repair (L175), one typo (L344) and one supplied line
+(L354).
+
+**Scope.** Claims A and B hold at each fixed n >= 4 and beta > 0. Neither is uniform. The
+depth m_* is uniform, but the norms of the preparations are not (S22, and D^{-1} up to
+e^{3 beta n^3/2}). The detector's physical slab width m_* a tends to 0. (27) and the
+continuum matching stay open. So does the Jaffe-Witten gap. This check grants no status.
+It is one cross-provider reading, not an audit.
+
+## Step 8. Result (done 10:12Z)
+
+RESULT: row 1246 HOLDS AFTER CORRECTION (credit only). Claude Opus 5.5 max (Mac mini worker 3, 09:50Z-10:12Z) checked it line by line by hand. This is a cross-provider check of gpt-6.2-astra and grants no status. 29 numbered statements HOLD and 0 FAIL; S29 is OPEN as labelled. Claim A HOLDS: at every n >= 4 and beta > 0, words in T and the spatial plaquette multipliers are cyclic for the centre-neutral space H_+ (one wording repair, L175). Claim B HOLDS: one slab of fixed depth m_* <= 1.84e8, independent of n and beta, with a temporal mean on each cut, prepares a dense subspace, and D_* has exact rate r_+. The norms are not uniform. Credit corrections: L15 (row 1207 (4.8) failed by a sign in row 1208), L34 (row 1236 lacks the order in d), L276 (the Birkhoff/Hopf obstruction is on file). The main comparison (12)-(15) restates in substance row 1231 (3)-(6), through a kernel statistic. (16) and (22) extend rows 1151 and 1161, and (4) is new. A guide run agrees. OPEN: (27), continuum matching, the Jaffe-Witten mass gap.

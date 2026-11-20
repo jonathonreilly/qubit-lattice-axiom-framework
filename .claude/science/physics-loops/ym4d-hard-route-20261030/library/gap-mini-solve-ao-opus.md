@@ -10,7 +10,7 @@ Labels: PROVED (a complete written argument here or in a cited, checked source),
 
 ## File status
 
-Written section by section. Sections below are appended as each step finishes.
+Written section by section; complete at 14:17Z by date -u. The RESULT line is the last line.
 
 ## Step 0. Reading record (13:45Z-14:00Z by date -u)
 
@@ -161,14 +161,15 @@ first is at most K s_k sum omega u_i by (H3') with d_i = u_i. This is (2.1)'s fi
 K s_* Omega mu <= mu by (H5'). Summation as in row 1267 (3.3), with Omega and (H5'). The coefficient bound is row 1267's
 (3.4) unchanged. QED
 
-**2.5 Effect on the input list of Theorem FCT' (row 1268).** (H2) and (H3) leave the list, replaced by the readings
-(R1)-(R5) and row 1267's READ list of 2.4; (H5) is weakened to (H5'). Still open on the pin route: (U) (row 1280 is on
-it), (E0)-(E6) against Balaban CMP 116 (not on this machine), (TH), and everything outside the carry (the seed, the 9.1
+**2.5 Effect on the input list of Theorem FCT' (row 1268).** (H3) leaves the list, replaced by the readings (R1)-(R5);
+(H2) is replaced by Lemma H2' (ARGUED: the same readings, row 1267 2.4's READ list, and connectedness of the core);
+(H5) is weakened to (H5'). Still open on the pin route: (U) (row 1280 is on it), (E0)-(E6) against Balaban CMP 116
+(not on this machine), (TH) (taken up in Step 3), and everything outside the carry (the seed, the 9.1
 hypothesis (e), (DET)'s inputs, the account's premises). The mass gap is not touched by this step.
 
 Check request (cross-provider, one reading): Proposition H3' (a)-(c), in particular the use of (R2) for h_i and the
 claim that input (4) is a bound in original-family norms; Lemma H2', in particular the covariance-continuation sentence
-against EM:812-816 and the creation radius at EM:653-656.
+against EM:258-262 and EM:812-816, and the creation radius at EM:653-656.
 
 ## Step 3. (TH) of row 1268, read at the source (written 2026-11-20T14:14Z by date -u)
 
@@ -200,3 +201,47 @@ So (TH) holds with a = 3^(-1/2) A_1, as row 1268 wrote, when each frame's thresh
 theta; against the other frame's log theta' the constant is a = 3^(-1/2) 2^(-p_0) A_1. Either is a fixed positive
 number. (TH) leaves the input list of Theorem FCT' as READ plus Lemma TH. The identification of EM's frame entry with
 g^(-2) is the one reading left; EM's delta(theta) and CA-I's delta_m are the same function of it.
+
+## Step 4. State after this row, labels, and what stays open (written 2026-11-20T14:15Z by date -u)
+
+**4.1 The scaffold comparison at pins (the (FI) -> (FC) -> (FC-1) line of the one-cutoff carry).**
+
+| Input | Before this row | After this row |
+|---|---|---|
+| (H2) cross-admission (row 1267) | assumed | ARGUED: Lemma H2', PROVED GIVEN readings (R3)-(R5), row 1267 2.4's READ list, and connectedness and isometry-invariance of the absolute core (not found stated) |
+| (H3) total-form list comparison (row 1267) | ARGUED, open condition "f'' admitted" | PROVED GIVEN (R1)-(R5): Proposition H3', in the small-difference regime max d_i < min(mu_slot, (E_0 - B_N)/4) |
+| (H5) | K s_* (1 + C_x C_A) Omega <= 1/2 | (H5') K s_* Omega <= 1/2 suffices (Corollary FC-chain') |
+| Proposition FC-chain (row 1267) | PROVED GIVEN (H1)-(H5) | Corollary FC-chain': PROVED GIVEN Proposition H3', Lemma H2', (H1), (H4) with nu_k <= mu/2, (H5'); a bootstrap keeps every u_i in the regime of H3' |
+| (TH) (row 1268) | ARGUED (unit conversion) | READ at CA-I I:1012-1014, I:4172-4175, I:29104-29110, with Lemma TH (elementary); one reading left: EM's frame entry is g^(-2) |
+| (U) test cubes (row 1268) | OPEN | OPEN; row 1280 is on it |
+| (E0)-(E6), the supplier's expansion (row 1268) | readings of CMP 116 via the account | unchanged; CMP 116 is not on this machine |
+| (H1) EM's one-step inputs on both frames | premise | unchanged (the account's premises) |
+
+**4.2 The rest of the gap chain (unchanged by this row).** The infrared seed at the base datum (the crux; Step 1);
+Theorem 9.1's hypotheses (a)-(e) on every edge, with (e) = `9.1:prop-blind-site-expansions` OUTSTANDING in the account
+(its route, III:16638-16780, repeats Balaban CMP 116 Section 2 with island-blind lengths, point by point: volume
+factors, domain sums, tree composition, the sites (P) and (L), hull and collar; it cannot be rebuilt here without CMP
+116); Lemma N2's reading behind (V9) (row 1275; check requested there); (DET)'s inputs as recorded; the account's
+premises; existence of the continuum theory (T0).
+
+**4.3 What this row does not do.** It does not prove the mass gap, offers no mechanism for the band, and screens no
+route family (Step 1 says why). It reads EM and CA-I only at the lines cited; it did not re-check Theorem FCT' or row
+1267's Lemmas A, Z, AX. No numeric run was made (nothing here is numeric), so the numeric lock was not needed. No
+subagent. No file other than this one was written in the repository; the sources were fetched into a scratch folder
+outside it.
+
+**4.4 Check request (cross-provider, one reading).** Proposition H3' (2.2 (a)-(c)): the use of (R2) for the chosen
+localisations h_i, and the reading that input (4) bounds outputs by the original-family load; Lemma H2' (2.3): the
+covariance continuation against EM:251-273 and EM:653-656; Corollary FC-chain' (2.4): the bootstrap and (H5'); Lemma TH
+(Step 3). Points most likely to fail: whether EM's "admitted" in input (4) carries a condition beyond input (3) and the
+marked slot (EM states admission in prose across EM:500-716), and whether the marked slot radius mu_slot is a fixed
+positive constant (EM:718-719 says the constants of the inputs are uniform; the radius is not printed).
+
+**4.5 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: YM4_EM (c7fef8b21b58)
+and the complete account CA-I, CA-III (31a47c543775). Tadeusz Balaban: the expansion and thresholds those texts rest on
+(CMP 109, 116, 119, 122). The lane: rows 1233, 1255, 1256, 1260, 1267, 1268, 1275 and their checks (the carry);
+rows 1072-1074 (Proposition CA-FAIL, used in Step 1); row 1218 (the reading of the published A, B and Zeng texts by
+Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford, Singha Roy, and by Zeng Chunping), weighed in Step 1 and
+supplying no input here.
+
+RESULT: Row 1278 (Claude Opus 5.5 max, Mac mini worker 3, 13:45Z-14:17Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed (a lattice gap of Wilson SU(2) at one window coupling, where the glueball correlation length is about one lattice spacing and every published rigorous method stops roughly ten times lower in beta, Proposition CA-FAIL ruling out uniform-boundary criteria) stays OPEN with no route off the record (Step 1, ARGUED; no screen run). Worked item: the unowned inputs (H2) and (H3) of row 1267's Proposition FC-chain (the pin-route scaffold comparison of the one-cutoff carry), and (TH) of row 1268. READ in Sussman and Alpoge's YM4_EM (c7fef8b21b58) and CA-I (31a47c543775), with Claude and Codex as authors of their text, after Balaban. PROVED GIVEN five readings (R1)-(R5) of EM: Proposition H3', the total-form list comparison, by building the comparison list from near-optimal regular localisations of the ORIGINAL totals, which are admitted when every difference is below min(mu_slot, (E_0 - B_N)/4); this also removes row 1267's factor (1 + C_x C_A). ARGUED: Lemma H2', cross-admission (covariance continues by the identity theorem on the absolute core; connectedness not found stated). PROVED GIVEN those: Corollary FC-chain', a bootstrap that keeps every u_i in that regime, with (H5) weakened to K s_* Omega <= 1/2. READ, with the elementary Lemma TH: (TH) holds with a = 3^(-1/2) A_1 (CA-I I:1012-1014, I:4172-4175, I:29104-29110). OPEN: (U) (row 1280), the CMP 116 readings (E0)-(E6), 9.1:prop-blind-site-expansions (its route needs CMP 116 Section 2), Lemma N2's reading behind (V9), (DET)'s inputs, the account's premises, the infrared seed, the mass gap. Output library/gap-mini-solve-ao-opus.md.

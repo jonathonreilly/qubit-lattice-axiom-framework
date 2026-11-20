@@ -228,7 +228,8 @@ other islands are the same. So the set of (2.17) factors of the term X' near X_a
 The argument uses only that the decomposition of unity is placed on the complement of Omega_k^(~4), not the meaning of
 the layer indices ~4 and ~-6.
 
-**3.8 Result for H-C6a. PROVED GIVEN the cited Balaban displays (TI, 3.1, 3.6, 3.7).** For two admissible families
+**3.8 Result for H-C6a, first form (superseded in part by 3.8a-3.8b). PROVED GIVEN the cited Balaban displays (TI, 3.1,
+3.6, 3.7), except on the band cubes named in 3.8a.** For two admissible families
 X containing X', the top-level small-field function of O_(O,X) on the cubes near the islands of X minus X' is the product
 of the term X' function with further characteristic functions. So (*) holds, in the corrected form
     chi_a^prep (the product of all top-level functions of O_(O,X) on the cubes near X_a) <= chi_a^step,
@@ -238,6 +239,39 @@ coupling profile reset, the members that read an island); the account's represen
 density in the form of Definition 8.6:def-island-representation; and Balaban's regrouping in (1.72), which holds up to
 his "equivalence" after the reversed Faddeev-Popov step (CMP 122b p. 378: "equivalent, but not equal").
 Standing: proved by Claude from Balaban's printed displays, read once on page images; not checked by another model.
+
+**3.8a Correction to 3.6-3.8 found on re-reading (12:29Z by date -u).** Balaban's layer index means "n layers out"
+(CMP 122b p. 384: S(Z) = Z'^(~10), "we add ten layers"; checked on a zoomed page image). Then Omega_k^(~4) is Omega_k with
+four layers added, so the old factor chi_k(Omega_k^(~4)) has cubes up to four layers inside the island's core
+Omega_k^c cap X_a. For such a cube Q the field U_(k,Q) of (2.16) reads B_k near Q, and in the old determining set (CMP 119
+(2.2), before (1.33)) that neighbourhood can contain the island's history shells Gamma_j, j < k. So on those cubes 3.6
+does not show that the old factor is the same function of V_k as the factor of the term X'. What 3.6 does show: the
+factors placed by the decomposition of 3.1 on (Omega_k^(~4))^c, and every factor whose cube has its determining
+neighbourhood inside Omega_k, are the same function in both terms. For the old factor on the band cubes, the
+identification with a factor built on the new determining set is Balaban's own step "which are combined with the
+function chi_k(Omega_k^(~4))" (CMP 122b p. 378), leading to the single front factor of (1.72) written for the new domain
+and the new background field. I did not prove that step. (The meaning of the layer index is not used anywhere else in
+this file; 3.10 holds under either meaning.)
+
+**3.8b Corollary H0 (H-C6a from the account's own definition). PROVED GIVEN the representation lemma that the account's
+Definition 8.6:def-island-representation already cites.** The Definition sets O_(O,X) := "the factor that stands
+outside the bracket of [CMP 122b, (1.70)-(1.72)] for the term (O, X)". In (1.72) the only factor outside the bracket
+{ sum over n >= 0 and {X_1, ..., X_n} of prod_j T'_k(X_j) exp sum_Y V(Y, U_k) } is
+chi_k((Omega_k cap (Y_1^c)^(~2) cap ... cap (Y_m^c)^(~2))^(~4)) (sum T''_k(Z_k)) exp A'_k prod_i chi_k^c(Y_i^(~-6)) chi_(k,Lambda_i)
+chi_i delta_(G_i)(V'_k) T'_k(Y_i), with Omega_k "the new k-th domain defined by the determining set of the configuration
+U_k". It depends on the outer datum (Z_k, {Y_i}) and not on the island family. Hence O_(O,X) = O_(O,X') for any two
+admissible families, and (8.6:eq-prefactor-monotone-a) holds with equality. QED
+So the lemma is true as soon as the representation lemma is, and the step (*) is not needed. The analysis of 3.2-3.7 is
+kept because it locates the content: the account's (*) names the wrong objects (3.10, Remark P), and the true content
+is Balaban's "combined with" step, which sits inside the representation lemma.
+
+**3.8c The layer convention, second source (12:32Z by date -u; READ on the CMP 119 p. 265 page image).** CMP 119
+(3.5): "Omega_(k+1) = (Q'^(~2)_(k+1) cup (B^(k+1)(P^1_(k+1))^c)^(~3))^c, hence (Omega^(~2)_(k+1))^c = Q'_(k+1) cup
+(B^(k+1)(P^1_(k+1))^c)^~". The complement of Omega^(~2) is two layers smaller than the complement of Omega, so
+Omega^(~2) is Omega with two layers added: the same "n layers out" convention as S(Z) = Z'^(~10), now for a small-field
+domain. So 3.8a stands as written: Omega_k^(~4) reaches four layers past Omega_k. (Balaban's domains carry built-in
+margins, e.g. the two and three layers in (3.5), so the band cubes of 3.8a need not be large-field cubes; whether their
+determining neighbourhoods meet the island's history shells is the question left open in 3.8a.)
 
 **3.9 Two facts used above, now read (CMP 119 pp. 254-255, page images).** (2.1): Omega_1 contains Lambda_1 contains
 Omega_2 contains ... contains Omega_k contains Lambda_k, so Lambda_k is contained in Omega_k and Omega_k^c in Lambda_k^c.
@@ -276,9 +310,10 @@ times further characteristic functions."
 | TI: (1.4) at j = k - 1 is the (2.17) factor (same field, cubes, threshold) | PROVED | CMP 122a p. 178, CMP 119 p. 257 |
 | P: the preparation's own top function chi_k^((N)) has threshold 3(1 - beta/2) eps_k eta^2 > eps_k eta^2, so (*) cannot be proved from it | PROVED | CMP 122a (1.24) |
 | 3.10: the account's named objects (1.3)-(1.4) leave the core cubes of X_a without a level-k factor, so its domination sentence fails as written | PROVED | CMP 122a p. 178, condition (ii); CMP 119 (2.1) |
-| BG: the (2.16) field on the cubes near X_a is the same function of V_k in the terms X and X' | PROVED GIVEN | CMP 122b (1.33)-(1.35), CMP 119 (2.1)-(2.2), (2.16) |
+| BG: the (2.16) field is the same function of V_k in the terms X and X', for the factors of the 3.1 decomposition and for cubes whose determining neighbourhood lies in Omega_k | PROVED GIVEN | CMP 122b (1.33)-(1.35), CMP 119 (2.1)-(2.2), (2.16) |
+| BG on the old factor's band cubes inside the core (3.8a) | OPEN here; it is Balaban's "combined with" step inside the representation lemma | CMP 122b p. 378 |
 | G: cube inclusion near X_a | PROVED GIVEN | 3.1 (the decomposition is placed on the complement of Omega_k^(~4)) |
-| (*) in corrected form, hence (8.6:eq-prefactor-monotone-a) | PROVED GIVEN | 3.1 (CMP 122b p. 378, (1.72)), BG, G, the account's other proof steps |
+| H0: O_(O,X) does not depend on X, so (8.6:eq-prefactor-monotone-a) holds with equality | PROVED GIVEN | the account's Definition 8.6:def-island-representation and its representation lemma; CMP 122b (1.72) |
 
 All of it: Claude Opus 5.5 from Balaban's printed pages, read once; checked by no other model. A check should re-read
 CMP 122b pp. 365, 377-379 and CMP 122a pp. 178-184 on the page images.
@@ -365,8 +400,8 @@ applies with no old pieces. QED
 supplies (*), and the age lemma becomes an implication of the clock rules the account quotes (birth (8.9:eq-age-lemma-1),
 quiet (8.9:eq-age-lemma-2), preparatory (8.9:eq-age-lemma-3), healing) and of (H1)-(H5). Balaban's containment claim
 ("S^(K_1+n_1)(Y) containing S^(K_1+n_1)(X)") is not needed. Not done here: a check of the account's remaining proof
-lines after (*) (CA-II:112100 on), and of the birth rule (8.9:eq-age-lemma-1), which the account takes from CMP 122b
-(1.81) and its discussion. Isolation in (H2) is Lemma ISO (4.6).
+lines after (*) (CA-II:112100 on). The birth rule (8.9:eq-age-lemma-1), which the account takes from CMP 122b (1.81),
+is proved in 4.9 with C_S = 4. Isolation in (H2) is Lemma ISO (4.6).
 
 **4.6 Lemma ISO (drop steps are isolated). PROVED GIVEN CMP 119 (2.5)-(2.6) (read on the page image, p. 255) and the
 account's Ř_k = R(min over i <= k of x_i) (CA-II:109689).** CMP 119 (2.5): "R_j is the smallest number of the form L^r
@@ -399,6 +434,27 @@ for (H4)'s "last N levels" reading: Balaban's single-domain bound (CMP 122b p. 3
 after the domain first fits a cube of side 64 M R, which is the reading "(i) on each of the last N levels"; under a
 reading in which every earlier region of the history must have fitted, a region created large would never heal,
 against his finite K.
+
+**4.9 Lemma B (the birth rule) and Lemma PR (the preparatory bound). PROVED GIVEN (H1)-(H5), L >= 9 (written 12:30Z by
+date -u).** The account takes both from Balaban's sentences "as stated"; the size argument of Theorem J proves them.
+(B) A region Z born at level j with s_j(Z) = D cells has K_init(Z) = Phi_j(Z) <= 2 log_L(D + 1) + R_j + 4, which is
+(8.9:eq-age-lemma-1) with C_S = 4 (its d'_j(Z) is Balaban's linear size in the same cells).
+Proof. Along the quiet continuation two steps map a size s to at most s/L + 44 (one of any two steps scales, (H2)), so
+after 2u steps the size is at most D/L^u + 44 L/(L - 1) <= D/L^u + 49.5. With u = max(0, ceil(log_L(D/36.4))), which is at
+most log_L(D + 1) + 1, the size is at most 85.9; as in step (3) of Theorem J, at most two more steps bring it to at most
+34 just after a scaling step, and by Lemma ST it stays at most 56. So after t <= 2u + 2 <= 2 log_L(D + 1) + 4 steps, the
+N = R_j levels that follow are levels where (i) holds and no new large field is created (they are after the birth level
+j), and (i), (ii) hold at level j + t + R_j. QED
+(PR) In the preparatory case (a component Z_0 that satisfies (i), (ii) at level n, with a new large field introduced in
+the preparatory operations; account (8.9:eq-age-lemma-3), Balaban "hence K = R_(j+1) for Z"), Z = S(Z_0) has
+Phi_(n+1)(Z) <= R_(n+1).
+Proof. Z_0 satisfies (ii) with N >= 3, so its sizes were at most 100 at three consecutive levels and, by Lemma ST, the
+sizes of Z and of all its quiet images are at most 56. The N = R_(n+1) levels after n + 1 then satisfy (i) with no new
+large field, so (i) and (ii) hold at level n + 1 + R_(n+1). QED (Only the upper bound is proved; the account uses only
+that.)
+With B, PR, Theorem J and the quiet rule (which is the definition of Phi), the age lemma rests, beyond (H1)-(H5), only on
+its healing rule (the class of components on which R acts is the class with Phi = 0), which is Balaban's definition of
+that class (CMP 122a p. 177) read as the account reads it.
 
 ## Step 5. Third item: the step (*) of 8.8:lem-target-independence (written 2026-11-20, 12:21Z by date -u)
 
@@ -442,13 +498,14 @@ at one coupling), was not attacked head-on: every idea I had was on the record w
 ARGUED). The one unowned item of the ultraviolet carry, `9.1:prop-blind-site-expansions`, needs Balaban CMP 116, which
 is not in the papers folder and which Project Euclid refused behind a bot check; it was set aside (Step 1.2).
 
-**6.2 What was closed (three steps marked (*) in Sussman and Alpoge's account, all owner none in the registry).**
+**6.2 What was closed (three lemmas incomplete at a step (*) in Sussman and Alpoge's account, all owner none in the
+registry).**
 
 | Registry row, label | Result | Label | Rests on |
 |---|---|---|---|
-| H-C6a, `8.6:lem-prefactor-monotone` (CA-II:102730) | (*) holds in corrected form: on a healed island Balaban's prefactor carries a (2.17) factor on every cube (CMP 122b p. 378 decomposition, CMP 122a p. 184), and on the island the determining set is level k (CMP 122b (1.33)); so (8.6:eq-prefactor-monotone-a) follows | PROVED GIVEN | Balaban's displays read on page images; the account's other proof steps |
+| H-C6a, `8.6:lem-prefactor-monotone` (CA-II:102730) | (8.6:eq-prefactor-monotone-a) holds with equality: by the account's own Definition, O_(O,X) is the factor outside the bracket of CMP 122b (1.72), which does not depend on the island family (Corollary H0); the step (*) is not needed. The finer comparison (3.4-3.7) is proved except on the old factor's band cubes inside the island core, which is Balaban's "combined with" step (3.8a) | PROVED GIVEN | the representation lemma the account's Definition cites; CMP 122b (1.72), read on the page image |
 | H-C6a, same | Correction: the account names the wrong object ("CMP 122a (1.3)-(1.4)"); with that object the domination sentence fails on the island's core cubes (3.10); the preparation's own top function has the weaker threshold 3(1 - beta/2) eps_k eta^2 (Remark P); the threshold comparison it asks for is an identity (Proposition TI) | PROVED | CMP 122a pp. 178-184, CMP 119 p. 257 |
-| H-C7c, `8.9:lem-age-lemma` (CA-II:112000) | (*) = the join bound (8.9:eq-age-lemma-4) holds for every n_1 >= 2, by a size argument (Theorem J with Lemmas ST, ISO), without Balaban's unproved containment claim | PROVED GIVEN | (H1)-(H5): S, sizes, conditions (i)-(ii), the clock, read from CMP 122a p. 177, CMP 122b pp. 384-387, CMP 119 (2.5)-(2.6), and the account's definitions |
+| H-C7c, `8.9:lem-age-lemma` (CA-II:112000) | (*) = the join bound (8.9:eq-age-lemma-4) holds for every n_1 >= 2, by a size argument (Theorem J with Lemmas ST, ISO), without Balaban's unproved containment claim; the birth rule (C_S = 4) and the preparatory bound also follow (Lemmas B, PR) | PROVED GIVEN | (H1)-(H5): S, sizes, conditions (i)-(ii), the clock, read from CMP 122a p. 177, CMP 122b pp. 384-387, CMP 119 (2.5)-(2.6), and the account's definitions |
 | H-C7b, `8.8:lem-target-independence` (CA-II:109661) | (*) for the objects the proof reads: delta'_k and N_0 are functions of (x_i)_(i<=k), L, M and fixed constants (Lemma TI8) | PROVED GIVEN | CMP 122a pp. 179, 183; CMP 119 (2.5); the account's Ř |
 
 The age lemma is also a standing hypothesis (a) of `9.1:thm-last-lattice-comparison`, which the gap lane's one-cutoff
@@ -457,8 +514,8 @@ carry reads (row 1233 Lemma 3.5). Its other hypotheses stay as recorded there, s
 
 **6.3 Not done, and why.** No cross-provider check. The account's proof lines outside the (*) steps were not
 re-checked (they were read). For H-C6a the account's representation lemma and Balaban's regrouping in (1.72) ("equivalent,
-but not equal" after the reversed Faddeev-Popov step) are inputs, not checked. For H-C7c the birth rule (8.9:eq-age-lemma-1)
-is used as the account states it. The broad sentence of the 8.8 (*) ("each object read by the k-th step") was checked
+but not equal" after the reversed Faddeev-Popov step, and his "combined with" step on the band cubes, 3.8a) are
+inputs, not checked. For H-C7c the healing rule is used as the account states it. The broad sentence of the 8.8 (*) ("each object read by the k-th step") was checked
 only for the objects listed. H-C6b (`8.6:lem-healed-islands-unread`) and H-C7a (`8.7:lem-translation-covariance`) were
 read, not closed: their (*) steps are reviews of every rule of a step and of the account's history framework.
 
@@ -469,5 +526,14 @@ here. The lane's earlier rows cited in Step 0. The bot-check stop on CMP 116 fol
 
 **6.5 Check request (for the lead).** One line-by-line check by gpt-6-astra of Steps 3, 4 and 5, re-reading on the page
 images CMP 122a pp. 177-184, CMP 122b pp. 365, 377-379, 384-387, 390, and CMP 119 pp. 254-257. Points most likely to
-fail: (BG) and (G) in Step 3 (determining set and cube coverage near the island); (H4)-(H5) in Step 4 (the reading of
+fail: Corollary H0's reading of (1.72) (that the front factor is outside the island bracket) and 3.8a in Step 3; (H4)-(H5) in Step 4 (the reading of
 condition (ii) as "the last N levels" and the join's parameter N = R_(n+1)); Lemma ISO's use of CMP 119 (2.6).
+
+## Status log
+
+- 11:38Z file created; 12:17Z first date -u read after Steps 0-4 (headings corrected, see the note at the top);
+  12:21Z Step 5; 12:25Z Step 6; 12:29Z correction 3.8a and Corollary H0; 12:30Z Lemmas B and PR; 12:32Z note 3.8c (all by date -u).
+- No numeric run. No subagent. Memory gate not needed. Scratch folders under /tmp only (account text, page images);
+  nothing from them is committed.
+
+RESULT: Row 1264 (Claude Opus 5.5 max, Mac mini worker 3, 11:38Z-12:33Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing on the chain is disproved; the infrared base datum ((N-phys), or (SL) at one coupling) stays OPEN with no route off the record (ARGUED, Step 1), and the carry's unowned `9.1:prop-blind-site-expansions` is blocked here (CMP 116 behind a Project Euclid bot check). Closed instead, in Sussman and Alpoge's complete account (with Claude and Codex as authors of its text; after Balaban CMP 119, 122): H-C7c `8.9:lem-age-lemma`, whose (*) join bound (8.9:eq-age-lemma-4) is PROVED GIVEN stated readings (H1)-(H5) of Balaban's S, sizes, conditions (i)-(ii) and clock, for every n_1 >= 2, by a size argument (Theorem J, Lemmas ST, ISO) that avoids Balaban's unproved containment claim, together with the birth rule (C_S = 4) and the preparatory bound (Lemmas B, PR); the age lemma is also a standing hypothesis of the gap lane's one-cutoff carry input `9.1:thm-last-lattice-comparison`. H-C6a `8.6:lem-prefactor-monotone` holds with equality GIVEN the representation lemma its Definition already cites (Corollary H0: the factor outside the island bracket of CMP 122b (1.72) does not depend on the island family); the account's (*) names the wrong objects (PROVED: with CMP 122a (1.3)-(1.4) the domination fails on the island core, Proposition TI makes the threshold comparison an identity, and the preparation's own top threshold is 3(1 - beta/2) eps_k eta^2); the finer comparison leaves Balaban's "combined with" step on the old factor's band cubes OPEN (3.8a). H-C7b `8.8:lem-target-independence`: (*) PROVED GIVEN CMP 122a pp. 179, 183 for delta'_k and N_0 (Lemma TI8). OPEN: the mass gap and its infrared datum; the account's representation lemma; H-C6b and H-C7a (read, not closed); a cross-provider check of Steps 3-5. Output library/gap-mini-solve-aj-opus.md.

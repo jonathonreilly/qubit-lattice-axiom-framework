@@ -29,7 +29,7 @@ What the record says the gap needs (each item cited, none re-proved here):
   (row 1179 Theorem BP; check row 1183 "main chain HOLDS AFTER CORRECTION"). (N-phys): there are a physical side L
   and j_0 such that for every cutoff j >= j_0 some integer u_j with 3 <= u_j <= n_j/K has
   s_{+,j}(u_j; n_j^3) = Tr_{H_+} U_j^{u_j} - 1 <= 1/2, with K = 512 explicit (check row 1187, item (3): "row 1161
-  already gives K = 512").
+  already gives K = 512"; check row 1183 link (1): the premise is K = 512, 4 | n, n >= 2^70).
 - (N-phys) holds iff every fine coupling beta_j has a finite one-cube seed size nu(beta_j) and
   limsup_j a_j nu(beta_j) < infinity (row 1180, checked HOLDS in row 1187). So (N-phys) is a uniform lattice gap
   for centre-neutral states at arbitrarily weak coupling plus a lower bound of asymptotic-scaling type.
@@ -59,7 +59,7 @@ So I choose bounded work with a named consumer, in this order:
 - Step B (producer side, the crux): one attack on (N-phys), not a screening. Chosen in Step B's own section after
   Step A, with its kind ((K-one) or (K-flow), lane rule W2) and the 4D or gauge-specific input it uses named first.
 
-Status: Step A done 05:48Z (Section 3). Step B in progress.
+Status: Step A done 05:48Z (Section 3). Step B done 05:55Z (Section 4): no attack started, reasons given. Section 5 (what is left, and a process note) written 05:56Z. RESULT line at the end.
 
 ## 3. Step A: the checked chain of rows 916-917 takes (N-phys) as its input (05:48Z)
 
@@ -96,8 +96,13 @@ and the inputs of row 1179 5.0 ((TM-tw), (S), Theorem S-w, Corollary EV, (L), `g
 Lemma E), and the account's statements READ in row 916 Step 5.** Let S be a volume-first limit at g with defining
 sequence (K_j, beta_j, nu_j) (CA L1690, L1893), and assume (N-phys) along (K_j, beta_j): one physical side L with
 4 | L/a_j for all large j (for example L a multiple of 4 in units with a_0 = 1, since a_j = L_b^(-K_j) with an odd
-blocking factor L_b). Then ker H = C Omega in H(S) and spec(H) lies in {0} union [M_*, infinity), with the cutoff-free
-M_* of row 1179 Theorem BP (ii) as corrected in check 1183 (common rate 2 log(1/q_*)/L, q_* = 5041 x 2^(-18)).
+blocking factor L_b). Then ker H = C Omega in H(S) and spec(H) lies in {0} union [M_*, infinity), with a cutoff-free rate: in the form
+checked by check 1183 (its N-JW (c, d) after correction; premise K = 512, 4 | n_j, n_j >= 2^70),
+M_* = (2/L) log(2^18/5041) > 7.9/L; row 1179 Theorem BP (ii) writes M_* = (2/L) log(1/(40328 eps)).
+
+Uniformity. To cover every volume-first limit at g, read (N-phys) in the uniformity of (SEED-FP) (row 916 Step 1):
+one side L and K_0 such that the bound holds at every first-passage datum (K, beta) with K >= K_0. For one given S,
+(N-phys) along its own defining sequence suffices.
 
 Proof. Step 1. Each nu_j is a limit state of periodic symmetric tori (N_i, N_i) at the cutoff j, with no seed
 (row 916 Lemma C (i)-(iii), checked in row 917). Step 2. By Theorem BP (i), (N-phys) gives (SEED-any-phys) at every
@@ -122,3 +127,70 @@ there is right, given the restriction to V_A.
 **Consequence for the lane (PROVED GIVEN the same inputs).** For SU(2) along the account's trajectory, the
 Jaffe-Witten gap clause on the tr F^2 sector is implied by (N-phys) alone, beside the account's premises. Nothing
 else on the gap side is open.
+
+## 4. Step B, part 1: what any proof of (N-phys) must contain (ARGUED from checked statements; 05:54Z)
+
+**Self-similarity of the band (ARGUED; each link is a checked statement).**
+
+1. (N-phys) along the trajectory implies, at every large cutoff j, a centre-neutral lattice gap of the bare Wilson
+   theory at the FIXED coupling beta_j on every periodic cube of side at least n_j (row 1179 P-ev (a)).
+2. Conversely, a seed at one cutoff's window implies (N-phys) given (UNIV-K) (row 916 (ONE-K), checked row 917).
+   (UNIV-K) is a statement about the ultraviolet (the account's finite-horizon universality at n = 0); it is OPEN but
+   needs no infrared input (rows 924-925 reduce it to (MAPCONV), (VAC-ID), (DENS-K) B1-B2, (CLASS)).
+3. The seed at a fixed coupling beta_0 cannot sit at a side where the running coupling is small (first passage;
+   row 1180 seed-size form; row 1215 (5), levels coalesce at fixed spatial size; A's Theorem 7.59, row 1218).
+   So its cube has side of order exp(c beta_0) lattice units at least, and the estimate is an infinite-volume
+   statement about one lattice theory with no small parameter.
+
+So, modulo an ultraviolet statement, the crux is the lattice mass gap of SU(2) Wilson at ONE fixed coupling in the
+account's window. Balaban's renormalisation group, and the account's, map weak coupling to weak coupling: they
+stop at a threshold g_0 and hand on SU(2) at coupling g_0 on a coarser lattice, which is the same problem at the
+fixed coupling 4/g_0^2. GOAL.md forbids a computed certificate, so the estimate at that coupling must come from a
+structure valid at all couplings (a positivity, a monotonicity or convexity in the coupling, an exact identity or
+duality), not from a finite check.
+
+**The structural families, each on file with its failure (cited, not re-derived):**
+
+| Family valid at every coupling | Selective for SU(2)? | Where it stops on file |
+|---|---|---|
+| Correlation inequalities, association, FKG, Ginibre | would be | FKG fails for plaquette traces (row 1213 Lemma FKG-NO); Hopf frustration (row 1188 Lemma HF); gauge port of the 2D positivity step fails three ways (row 1084) |
+| Positive dual or random-surface representation | would be | adjoint moments positive only when each link lies in at most three plaquettes (row 1213 Lemma PAR); 4D links lie in six; dual-gas positivity FAILS (check 1209, E193) |
+| Monotonicity or convexity in the coupling (coupling integral, Feynman-Hellmann, thermal flow) | no by itself | reads the gap at every smaller coupling, (ANOM) of row 931; rows 1190, 1198 |
+| Exact identities: loop equations, sector Fourier analysis, Pfaffian transfer | partly (splitting term) | volume blind (rows 754-767, Proposition VB); sector identities give the reduction, not the bound (rows 697, 731, 1161) |
+| Curvature, Bakry-Emery, orbit-space geometry, Gribov region | partly | magnetic energy not convex (row 1032 B8); horizon condition has no consumer (B9); method 31 |
+| Stiffness iteration with a bracket gain (the 2D O(N) step) | yes | dimension count on a 3D slice (row 1188 Lemma PC; row 1193 Lemma PC-c); colour coherence lost under pin suprema (rows 1011, 1016) |
+
+I found no structure outside this table that holds at every coupling, is selective, and gives a bound. I did not
+start an attack that would end at a row of this table; by row 998 9.5 and FINISH "Is it worth doing?" such an attack
+is waste.
+
+Correction (05:55Z) to a plan written at 05:54Z. I had marked the splitting term of the SU(2) loop equations as the
+one entry not closed on file. It is closed: row 754 (`gap-loop-eq-opus.md` Lemma 1.2, 5.3) shows the splitting
+terms make the winding difference equation non-contracting (theta_m >= 1 for m >= 4 at every beta), Proposition VB
+gives volume blindness of every local constraint set, and rows 755-767 (`gap-loop-pos-astra.md`,
+`gap-loop-grow-astra.md`, Theorem O) show positive width for every fixed-radius and sublogarithmic certificate, while
+full finite-volume Ward data determine the Wilson measure. So no part 2 is run on loop equations.
+
+## 5. What is left, and a process note (05:56Z)
+
+**State of the gap side after Section 3 (PROVED GIVEN checked statements, same provider; needs a cross-provider
+check).** The Jaffe-Witten gap clause on the account's tr F^2 sector is implied by (N-phys) beside the account's
+premises (Theorem E-N). Lemma A0 removes the one point that row 1219 left to confirm: the account's observables are
+gauge invariant, hence centre-blind, so the even-sector consumer of row 1179 reads them. A short cross-provider check
+of Section 3 (Lemma A0, Theorem E-N, its six-item table) would close it. Nothing else on the gap side is open.
+
+**What stays open.** (N-phys) (the infrared crux); the account's premises (the T0 chain, CA L1748-1751); (UNIV-K)
+only if the lane wants the one-cutoff form (ONE-K).
+
+**Process note for the lead (not a proof claim).**
+
+1. Section 4 gives a structural reason, from checked statements, why plain-brief crux rows keep landing on the map:
+   modulo (UNIV-K) the crux is the lattice gap of SU(2) Wilson at one fixed coupling with a seed side of order
+   exp(c beta_0), and with no computed certificate allowed (GOAL.md) it must come from a structure valid at every
+   coupling. A filter in place of row 1002's plausibility test (withdrawn as a price, `parts/gap.md` lead rules) would
+   ask each new crux row to name such a structure that is not in the table of Section 4, before any work.
+2. Open items on the gap path that need no infrared input: (UNIV-K) through the sub-hypotheses named by row 924
+   ((MAPCONV), (VAC-ID), (DENS-K) B1-B2, (CLASS)); it is in neither `library/open-registry.md` nor
+   `library/t0-tree.md` at this pin (grep, 05:56Z), and no row has worked on it since row 925 (2026-11-14). It would
+   turn the crux into one statement at one coupling window; it would not supply that statement.
+3. This row spent no tokens on a screening. It ran 05:29Z-05:58Z (date -u).

@@ -9,7 +9,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN. Numerics guide only.
 
 ## Status
 
-Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): in progress.
+Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): done 2026-11-20T14:01Z. Step 3 (statements and proofs): in progress.
 
 ## Step 0. Record read (statements about the record, not evidence; written 2026-11-20T13:48Z by date -u)
 
@@ -75,3 +75,55 @@ frames cannot share test cubes; then the comparison needs a cube-change estimate
 **Plan.** Step 2: read the account's conditions on R (Definition 4.14:def-block-size-conditions, CA-I L45636-45915)
 and the places where the one-step theorem and EM read R. Step 3: state a common test-cube sequence and prove that it
 meets every condition in both frames. Step 4: what changes in Theorem FCT' and the carry. Step 5: labels, RESULT.
+
+## Step 2. Where the test-cube size enters the unmarked total (READ; written 2026-11-20T14:01Z by date -u)
+
+Sources: Sussman and Alpoge's complete account at 31a47c543775 (CA-I) and YM4_EM at c7fef8b21b58 (credit Ethan Sussman
+and Levent Alpoge, with Claude and Codex as authors of their text; the construction is Balaban's), fetched by URL into
+a scratch folder outside the repository; Balaban, CMP 119 (1988) 243-285, the owner's copy, read as page images of
+pp. 246-247 and 265-267. I:n and EM:n are TeX lines.
+
+**2.1 The account's cube size is a function of the run's running minimum.** `4.15:not-cube-sizes` (I:49745-49770):
+x-check_j := min_(i<=j) x_i, R-check_j is the least power L^b with L^b >= (log x-check_j)^r, "Wherever Balaban's size
+parameter R_j occurs, we read R_j := R-check_j", and the waiting depth is N_k := R-check_k. Stage 9 of the order of
+choice (I:1702-1705) says the same for every level-indexed auxiliary quantity: it is "determined at each level from
+x_0, ..., x_k, evaluated at x-check_k". The frozen scaffold sets every coupling-dependent choice at depth r to its value
+at theta_r = X + c_0 r (III:70175-70230, read in row 1260 2.1). So on the pin run the own-threshold frame uses
+R(x-check_k) and the frozen frame uses R(theta_(n-k)). Since theta_(n-i) decreases in i and |x_i - theta_(n-i)| is at
+most of order theta_(n-i)^(1/2) (log theta_(n-i))^(p_0) (row 1260 2.1), |x-check_k - theta_(n-k)| is at most of the same
+order at theta_(n-k).
+
+**2.2 In EM the cube size enters the unmarked chain only through the cut.** The age gate M R-check_j <= L^(m+1-j)
+(EM:364-372, EM:525-531) selects aged remainders for the full list only: "A family that fails this age test stays
+outside the regular list. The unmarked list uses only its own regular outputs, from levels 1, ..., k" (EM:533-536).
+The other uses of R-check in EM are one-sided floors (torus periods P_i >= 2 L^11 M R-check_i, EM:724-732; the size
+condition EM:476-481), which each frame meets with its own R. The unmarked total is formed from "the fixed all-small-
+field kernel ... It uses the given fibre density, gauge weight and fluctuation cut" (EM:544-547), the cut being "a fixed
+Borel restriction in the real free variables" (EM:614-616). The account's cut is Balaban's (CA-I 4.35 (C)(b),
+I:157457-157600, read in row 1267 4.1: "the decompositions of unity of [B-CMP119, Section 3]"). The waiting depth
+N_k = R-check_k, the index k_1 and the localization domains S_i (I:56700-56735) belong to the R-operations on
+large-field regions, which the all-small-field kernel does not contain.
+
+**2.3 Balaban's all-small-field tests are cube tests with cube-dependent references.** CMP 119 (3.2), p. 265: the
+test on each L^2 M_2 R_(k+1)-cube box' of the partition is sup over p in box'~ of |U_(k+1,box')(dp) - 1| <
+eps_(k+1) (L^(-1) eta)^2, where U_(k+1,box') is a configuration built from the new block field on box'~4 (its form at
+the first step is CMP 119 (1.2), p. 246: U_(1,box')(V) = U(B_1(box'~4), M(Q_1^(s*) V)), built on a minimal determining
+set). CMP 119 (3.3), p. 265: the test on each such cube is sup over bonds b in (box'~2)^(k)* of
+|V_k(b) (V^(k)_box'(b))^(-1) - 1| < 2 delta_k, with the cube reference V^(k)_box' = M^k(U_(k+1,box')) (3.4). With
+P_(k+1) and Q_(k+1) empty, the all-small-field cut is the product of these two tests over all cubes of the
+L^2 M_2 R_(k+1) partition (and of the soft axial truncation). So the cut depends on the cube size twice: through the
+partition and through the references. Row 1268 7.7 found this; it is confirmed here.
+
+**2.4 Balaban's own comparison of references across cubes (the model for what is needed).** CMP 119 (3.6)-(3.9),
+pp. 266: to show that the previous step's tests chi_k(box) are implied on Omega~_(k+1), Balaban compares the old cube
+reference U_(k,box) with the new cube reference U_(k+1,box') for box inside box', writes their ratio through a field
+H_(k,box) and bounds it, by "the exponential decay property (190) [15]" (CMP 102), as
+|H_(k,box)| <= B_3 (4 delta_k + exp(-delta 2 M_2 R_k) 30 d^2 L^2 B_3 (1 + beta_0) eps_k) < eps_k/10 on box~ (3.7).
+So a test read on one cube's reference is controlled by the test read on a containing cube's reference, with a constant
+that does not depend on the cube sizes, up to a boundary-layer term suppressed by exp(-c R). CMP 119 (3.13),
+p. 267: every cube reference is within (4dL)^2 (1 + beta_0) B_3 eps_k of the global minimizer V^(k) on box'~.
+
+**2.5 Consequence (READ, with the arithmetic of 3.1 below).** (U) of row 1268 is a real condition: in the windows where
+R(x-check_k) differs from R(theta_(n-k)) the two frames' all-small-field cuts are products over different partitions,
+with different reference configurations. Outside the windows the two frames use one partition and one family of
+references, and (U) holds.

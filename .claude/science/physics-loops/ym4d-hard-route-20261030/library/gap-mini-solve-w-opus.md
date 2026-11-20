@@ -91,3 +91,131 @@ in scope and can close:
 
 Neither item supplies the seed (part (B)); the RESULT will say so.
 
+## Step 2. Proposition UNI: a uniform local dynamics gap forces a trivial limit (written 07:47Z by date -u)
+
+Kind: a kill of a route class (no seed). It proves row 1229's Claim A for jump dynamics, which row 1229 left ARGUED
+on two RECALLED inputs. The covariance bound is the standard implication "spectral gap of a local dynamics gives
+exponential decay of correlations" (Holley; Stroock and Zegarlinski; Martinelli's lectures on Glauber dynamics;
+RECALLED as sources, not used), rebuilt here for gauge fields with explicit constants. The continuum reading with a
+fixed block size is also B's Theorem 66 read with n_k fixed (Bhattacharjee, Bhattacharya, Lockwood and Romanov, One
+Cube Estimate, row 1218; unchecked there); the proof below does not use B.
+
+**Setting.** Lambda is a finite periodic lattice in four dimensions, E its links, U = (U_e) in SU(2)^E, and mu the
+Wilson measure at any coupling (any finite-range Gibbs measure on SU(2)^E with plaquette interactions works the same
+way). Distance on links: dist(e, e') is the graph distance in the graph on E where two links are adjacent when they
+lie in a common plaquette. For B a set of links, Nhat(B) := {e : dist(e, B) <= 1}. A *block family* is a finite list
+Bfam of link sets with diam(B) <= b for each B. For B in Bfam let P_B f := mu(f | U_(E\B)), the heat-bath update of B
+(a self-adjoint projection on L^2(mu) and a Markov operator). The generator is L := sum over B in Bfam of (P_B - I),
+P_t := exp(t L). Put rho := b + 2 and Delta := max over B in Bfam of #{B' in Bfam : B' meets Nhat(B)}.
+
+Let Acal be a subspace of L^2(mu) that contains the constants and is mapped into itself by every P_B (for example the
+gauge-invariant functions, or the centre-neutral ones; both are preserved because mu and the conditioning are
+invariant under gauge transformations and under link-wise central multiplications). *Poincare on Acal with constant
+gamma > 0* means gamma Var(g) <= Ecal(g) := sum over B of mu((g - P_B g)^2) for all g in Acal.
+
+A bounded function f is *supported in* S, a set of links, if f depends on U_S only.
+
+**Proposition UNI (a), lattice form. PROVED.** Assume Poincare on Acal with constant gamma. Let f be bounded and
+supported in S_f, let g in Acal be bounded and supported in S_g, and let d := dist(S_f, S_g) >= b + rho. Then
+
+    abs(Cov_mu(f, g)) <= (1 + 2 abs(S_f) abs(S_g)) ||f||_inf ||g||_inf exp(-kappa (d - b)),
+    kappa := min(1, gamma/(e^2 Delta))/rho.
+
+For the single-link heat bath in four dimensions b = 0, rho = 2, Delta = 19 (a link and the 18 links that share one of
+its six plaquettes), so kappa = min(1, gamma/(19 e^2))/2. Constants do not depend on Lambda or on the coupling.
+
+*Proof.* Step (i), a restricted dynamics that leaves f fixed. Let Bfam' := {B in Bfam : B does not meet S_f},
+L' := sum over Bfam' of (P_B - I), P'_t := exp(t L'). For B in Bfam', f is measurable in U_(E\B), so
+P_B(f h) = f P_B h for bounded h; hence L'(f h) = f L' h and, since L' is bounded on L^inf (finite volume), the
+exponential series gives P'_t(f h) = f P'_t h. Every P_B preserves mu, so mu(L' F) = 0 and mu(P'_t F) = mu(F). With
+h = g: mu(f g) = mu(P'_t(f g)) = mu(f P'_t g). Since also mu(P_t g) = mu(g),
+
+    Cov(f, g) = mu(f (P'_t g - P_t g)) + mu((f - mu f)(P_t g - mu g)).                                    (2.1)
+
+Step (ii), the spectral term. g in Acal and P_t preserves Acal; Poincare on Acal gives
+||P_t g - mu g||_2 <= exp(-gamma t) ||g - mu g||_2 (the derivative of ||P_t g - mu g||_2^2 is -2 Ecal(P_t g)
+<= -2 gamma ||P_t g - mu g||_2^2). So the second term of (2.1) is at most ||f||_inf ||g||_inf exp(-gamma t).
+
+Step (iii), finite speed. Duhamel: P'_t g - P_t g = - integral over s in [0, t] of P_(t-s) (L - L') P'_s g ds, and
+P_(t-s) is a contraction on L^inf, so
+
+    ||P'_t g - P_t g||_inf <= integral over [0, t] of sum over B in Bfam \ Bfam' of ||(P_B - I) P'_s g||_inf ds.   (2.2)
+
+Represent P'_s by independent rate-one Poisson clocks, one for each B in Bfam': for a realisation omega with rings at
+blocks B_1, ..., B_K at times tau_1 < ... < tau_K in [0, s], P'_s g = E_omega[h_omega] with
+h_omega := P_(B_1) P_(B_2) ... P_(B_K) g. If h is supported in S, then P_B h is supported in (S \ B) union (Nhat(B) \ B),
+because the conditional law of U_B given U_(E\B) depends only on the links sharing a plaquette with B; and P_B h = h
+when B does not meet S. So, applying the operators from the inside out (latest ring first), the support of h_omega
+grows only through rings at blocks that meet the current support, and each such block adds links of Nhat(B), all
+within distance rho of the block it touches. Hence, if h_omega depends on a link at distance at least D from S_g,
+there is a chain of rings at times s > sigma_1 > ... > sigma_m > 0 at blocks C_1, ..., C_m with C_1 meeting S_g,
+C_k meeting Nhat(C_(k-1)), and m >= D/rho. The number of block sequences (C_1, ..., C_m) of this kind is at most
+abs(S_g) Delta^m (at most abs(S_g) Delta choices for C_1, as #{B containing a given link} <= Delta, then at most Delta
+each). For one sequence, the expected number of ring tuples at strictly decreasing times is the volume s^m/m! of the
+simplex (factorial-moment density one for each Poisson process, also when blocks repeat). So
+
+    P_omega(h_omega depends on some link at distance >= D from S_g) <= abs(S_g) (Delta s)^m/m!,  m = ceil(D/rho).
+
+A block B in Bfam \ Bfam' meets S_f, so all its links are at distance >= d - b from S_g. Since (P_B - I) h = 0 when h
+does not depend on U_B, and abs((P_B - I) h) <= 2 ||h||_inf <= 2 ||g||_inf, with D = d - b and
+#(Bfam \ Bfam') <= abs(S_f) Delta:
+
+    sum over B in Bfam \ Bfam' of ||(P_B - I) P'_s g||_inf <= 2 ||g||_inf abs(S_f) abs(S_g) Delta (Delta s)^m/m!.
+
+Put into (2.2): ||P'_t g - P_t g||_inf <= 2 ||g||_inf abs(S_f) abs(S_g) (Delta t)^(m+1)/(m+1)!.
+
+Step (iv), choice of t. (x)^(m+1)/(m+1)! <= (e x/(m+1))^(m+1). Take t := (m+1)/(e^2 Delta). Then the finite-speed
+term is at most 2 abs(S_f) abs(S_g) ||f||_inf ||g||_inf exp(-(m+1)), and the spectral term is at most
+||f||_inf ||g||_inf exp(-gamma (m+1)/(e^2 Delta)). Both exponents are at least min(1, gamma/(e^2 Delta)) (m+1), and
+m + 1 >= (d - b)/rho. QED
+
+**Proposition UNI (b), continuum form. PROVED GIVEN (a) and the stated normalisation.** Let (beta_j, a_j), a_j -> 0,
+be a trajectory, and let the Wilson measures mu_j on a family of tori (or any infinite-volume limit of them) satisfy
+Poincare on Acal for some block family of fixed lattice diameter <= b, with constants gamma_j >= gamma_0 > 0 for
+all j and all tori. Let F_j be bounded and supported in a set of links of physical diameter at most R inside a region A,
+and G_j in Acal supported likewise in a region B, with physical distance r > 0 between A and B, and assume the
+polynomial normalisation ||F_j||_inf ||G_j||_inf <= C a_j^(-k) for some k (this covers lattice tr F^2 densities
+and their smeared, renormalised versions). Then Cov_(mu_j)(F_j, G_j) -> 0, and in fact
+
+    abs(Cov_(mu_j)(F_j, G_j)) <= C' a_j^(-k-8) exp(-kappa_0 (r/a_j - b - 1)),  kappa_0 = min(1, gamma_0/(e^2 Delta))/rho.
+
+*Proof.* Links of a common plaquette have midpoints within sup-distance 1, so dist(e, e') >= r/a_j - 1 for e in A,
+e' in B; the supports have at most C (R/a_j)^4 links each; apply (a), and pass to infinite-volume limits for fixed
+local F_j, G_j since the bound is uniform in the torus. QED
+
+**Corollary UNI-1 (the kill). PROVED GIVEN (b) and the OS reconstruction on file.** Under the hypotheses of (b) the
+continuum limit is trivial on separated tests: for every positive-time test F of the matched algebra,
+||F - <F> Omega||^2 = Cov(Theta Fbar, F) is a limit of covariances of observables at physical distance >= 2 t_0 > 0,
+so it is 0, and the reconstructed Hilbert space is C Omega. So NT1 (GOAL.md) fails. Hence on any trajectory that
+satisfies NT1, no block heat bath of bounded lattice diameter has a Poincare constant bounded below uniformly in volume
+and in j, on any invariant algebra that contains the matched observables. Quantitatively: if one normalised separated
+covariance of matched observables stays above delta > 0 at physical distance r, then
+
+    gamma_j <= e^2 Delta rho a_j (log(C' a_j^(-k-8)/delta)) / (r - (b + 1) a_j) = O(a_j log(1/a_j)).
+
+**What this kills and what it does not.**
+
+- Killed (PROVED for jump dynamics): every route whose engine is a volume- and coupling-uniform Poincare or
+  log-Sobolev inequality for a bounded-range heat bath (single link, plaquette blocks, cubes of fixed lattice side),
+  in particular B's Corollary 74 and A's cube inequalities (Theorems B and 9.14) read along a weak-coupling
+  trajectory with a fixed cube side (row 1218: these are fixed strong-coupling domains; UNI says they cannot be
+  continued uniformly). The curvature theorems (A's Theorem A, B's Theorem 5) fall under the Langevin case below.
+- Not killed: dynamics whose blocks grow like 1/a_j (B's Theorems 45, 66, 84 with n_k a_k <= ell). For those,
+  (a) gives a lattice rate of order gamma/(e^2 Delta rho) with Delta of order n^4 and rho of order n, which is the
+  scale of B's own m_* = 16 varpi/(625 e^2 ell). They are the crux in another form (row 1218, row 1220 Lemma NULL).
+- Curvature (Langevin) forms, row 1229 Claim A's first case: ARGUED, not proved here. The same proof works once the
+  Langevin semigroup on SU(2)^E has a finite-speed bound sup over U of abs(grad_e P_t g) <= ||grad g|| abs(S_g)
+  (C beta t)^D/D! for links e at distance D from S_g (a Lieb-Robinson bound with speed proportional to the
+  plaquette coupling). With it the lattice rate is of order kappa_curv/(C beta_j), the physical mass at least
+  c kappa_curv/(beta_j a_j), which still diverges since beta_j a_j -> 0. The missing piece is that bound; I did not
+  write it.
+
+**Rule 0a.** The covariance bound is a standard theorem for spin systems (sources above). In the lane, the same
+conclusion is row 1229 Claim A (ARGUED, RECALLED inputs) and B's Theorem 66 with fixed n (row 1218, unchecked). I
+found no file in `library/` that writes the proof (grep for "finite speed", "Lieb-Robinson", "trivial continuum",
+"prove too much" in `library/gap-*.md`: hits are row 1032 B2, which is the exact Lieb-Robinson cone of the transfer
+step, not of a heat bath; row 1229 Claim A; and row 1224's Lemma 6.2, a finite-speed estimate for B's chain at one
+cube size used in another argument). So the proof is new to the lane; the statement is not new in the literature.
+
+Step 2 done.
+

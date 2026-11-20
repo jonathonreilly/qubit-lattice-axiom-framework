@@ -73,7 +73,7 @@ their factual claims about earlier rows are checked in Step 5.
 
 Positive claim A (queue row) = S9 with S12 and S15. Positive claim B = S20 with S21.
 
-## Step 2. Positive claim A: cyclicity of spatial plaquette histories (done 10:20Z)
+## Step 2. Positive claim A: cyclicity of spatial plaquette histories (done 10:04Z)
 
 Claim A, as the RESULT line states it: at every n >= 4 and beta > 0, the closed span of
 the words in T and the spatial M_{w_p} applied to psi is H_+ (L 117, L 191). The proof
@@ -177,6 +177,238 @@ in A_s, with each new function a polynomial in the links, hence smooth for the n
 of (9).
 
 **Verdict on claim A: HOLDS** (one wording repair at L175). At fixed n >= 4 and every
-beta > 0, ψ is cyclic for H_+ under T and the spatial plaquette multipliers. The
+beta > 0, psi is cyclic for H_+ under T and the spatial plaquette multipliers. The
 statement is qualitative. It says nothing about depth, norms or uniformity in n or beta
 (the author says so at L191).
+
+## Step 3. Positive claim B: fixed-depth slab and the detector D_* (done 10:06Z)
+
+Claim B (L280, L306-311): a depth m_*, independent of n >= 4 and beta > 0, such that
+bounded functions of (spatial plaquette traces on m_*+1 slices, one temporal mean per cut)
+prepare a dense subspace of H_+ from psi. Then D_*(t) > 0, D_*(t)^{1/t} -> r_+ and
+D_*(t+l)/D_*(t) -> r_+^l.
+
+**L282 HOLDS.** T T = DC D^2 CD, so adjacent half weights give the full interior weight.
+Products are separately weakly continuous, so L_i L_j is in L_{i+j}. Inserting
+D^{-1}(X_0) D^{-1}(X_1) exp((gamma-beta) 3n^3 wbar) (bounded at fixed n) times a scalar
+gives C_gamma exactly in L_1. Its eigenvalues prod c_d(gamma) -> 1 and it is a
+contraction, so C_gamma -> I strongly and I is in L_1.
+
+**(18) (L284-292) HOLDS.** The kernel of M_{e^{-i sqrt(gamma) F}} C_gamma M_{e^{i sqrt(gamma) F}}
+is K_gamma(X,Y) e^{i sqrt(gamma)(F(Y)-F(X))}. Write Y_e = exp(xi_e/sqrt(gamma)) X_e, with
+xi_e independent and symmetric, |xi_e| = sqrt(gamma) theta_e. The radial law
+r^2 e^{-r^2/2} gives xi_e -> N(0, I_3). The curve exp(t n) X has unit speed, so
+sqrt(gamma)(F(Y)-F(X)) = sum_e xi_e . grad_e F + O(|xi|^2/sqrt(gamma)) uniformly at fixed n.
+The limit is E exp(i sum xi_e . grad_e F) = exp(-Gamma(F,F)/2). The depth is
+d + 1 + d = 2d+1.
+
+**(19) (L294-302) HOLDS.** Gamma(F,F) = sum_{i,j} a_i a_j Gamma(f_i,f_j). For a simple loop,
+Gamma(f_i,f_i) = p_i(1-f_i^2), from the cyclic-rotation gradient. Multiplying by the
+diagonal correction (depth d) gives depth 3d+1. Conflict count for an edge (i,j): at most
+2(Delta-1) edges share an endpoint, and at most 2 Delta^2 edges touch a neighbour of i or j.
+So 2 Delta(Delta+1)+1 colours suffice, and each class is an induced matching. On one
+matching with a_i = 1, a_j = -h_ij, the cross terms between unmatched vertices of the
+matching vanish: the matching is induced, so those loops share no link and their Gamma is
+0. Exponentials of linear forms span a unital, conjugation-closed, point-separating
+algebra. Uniform limits, then bounded pointwise limits (strong convergence of
+multipliers), stay in the weakly closed space L_{d'}.
+
+**L304 HOLDS.** First pass: Delta = 12 (4 edges x 3 other spatial faces), S <= 313,
+d' = 313. The fused traces are w(P)w(Q) + Gamma(w(P),w(Q)): a single shared edge, by (2)
+with the orientation that cancels it. Second pass: at most 4 faces and 48 fused loops use a
+link, every member has length <= 6, so Delta <= 306 <= 312. S <= 195,313 and
+m_* <= 313 + 195,313 x 940 = 183,594,533. The bound is finite, absolute, and independent
+of n and beta. The second pass contains Gamma(w(AB), w(C)) = 2(w(ABC) - w(AB)w(C)), so all
+octant data of S12 are Borel functions of the tuple. S12 then puts every bounded
+invariant multiplier in L_{m_*}. Mazur (weak closure of a subspace = norm closure) gives
+norm density of the finite slab preparations.
+
+**S21 (L306-311) HOLDS.** The combined kernel is a Gaussian kernel in all readings
+(spatial bandwidth sigma, temporal-mean bandwidth (n^{-3}/m_*)^{1/2}). Its Fourier
+measure G is a nondegenerate Gaussian with full support, so
+D_*(t) = int <v_s^perp, U^t v_s^perp> dG(s) with ||v_s|| <= 1. A top excited vector
+orthogonal to v_s for G-a.e. s is orthogonal for all s (continuity in s). Then it is
+orthogonal for every bounded function of the readings (Stone-Weierstrass on the compact
+reading cube, then dominated convergence), so it is 0 by the density just proved. Hence
+c r_+^t <= D_*(t) <= r_+^t. U is compact on H_+, so the next eigenvalue is < r_+, and
+D_*(t+l)/D_*(t) -> r_+^l. The temporal factor lies in [e^{-2/n^3}, 1], so each
+expectation moves by at most 2n^{-3} and the difference by at most 4n^{-3}. The term-by-term
+comparison of (12) is uniform in m, so it applies to the single m_* term.
+
+**S22 (L313) HOLDS.** p_gamma/p_beta = e^{-(gamma-beta)(1-cos theta)} z_beta/z_gamma <= z_beta/z_gamma,
+with equality at theta = 0, and z_b is of order b^{-3/2} by the two quadratic bounds on
+1-cos.
+
+**Verdict on claim B: HOLDS.** The depth is uniform. The norms are not (S22, and the factors
+D^{-1} of size up to e^{3 beta n^3/2}). The author states both, so the claim is not
+overstated. "Detects the exact spectral edge" is a finite-(n, beta) statement. Its
+physical slab width m_* a -> 0, with m_* about 1.8 x 10^8 by the stated bounds.
+
+## Step 4. Every other statement (done 10:08Z)
+
+**S13 (L123) HOLDS.** The cited text says this. Outline L326-327: sources
+O_i = sum_p f_i(x_p) a_p at barycentres. Outline L1688: centre x + a c_P, with
+c_P = (e_mu + e_nu)/2. CA-I L429-431 and L462-466: weight c(x(p)) at the barycentre.
+I read these at 31a47c543775, fetched into a scratch folder. Distinct barycentres are at
+distance >= a/sqrt 2 > a/2, so a bump of radius < a/4 sees one face.
+
+**S14 (L125-146), (6)-(7) HOLDS.** k_m is the characteristic function of
+N(0, sigma_m^2 I). The reflected slab has the same insertion operator (T is real
+symmetric), so E[conj F_s(X) F_s(Y)] = <v_s, U^t v_s>, with ||v_s|| <= ||psi|| = 1.
+The independent copy gives int |<psi, v_s>|^2 dG, exactly the vacuum part. Nonnegativity
+and D(t) <= r_+^t follow from U <= r_+ on psi-perp in H_+. The lower bound c r_+^t
+follows from the cyclicity S9 (continuity in s, then Stone-Weierstrass on the reading
+cube). r_+ lies in (0,1): U is compact, positive and injective (C has eigenvalues
+c_d > 0), with a simple top. (The t = 0 value equals the total mass of the spectral
+measure, by the Markov property at the shared slice; this is used at L217.)
+
+**S16 (L197-229), (12)-(14) HOLDS given row 1231 (2)-(5).** Row 1235 checked those
+inputs: HOLDS. I re-read row 1231 (2)-(5), lines 21-65. With xi = beta(1-w) and
+sigma_m^2 = s beta^2/d_m, k_m = exp(-sS/2). Per colour, Z_{p,c} ~ N(0, v_n), so
+Var(|Z_p|^2/2) = 3v_n^2/2 and Cov(|Z_p|^2/2, |Z_q|^2/2) = 3P(p,q)^2/2. The mirror partner
+of slice -l sits at distance t+2l, which gives both Gaussian means of S. The four-reading
+comparison holds: clip at A log beta (sup (A log beta)^4, Lipschitz O((log beta)^{7/2})).
+Row 1231 (2) with b = beta^gamma then errs by O((log beta)^4 beta^{-gamma/2}), so
+gamma > 2 eta suffices, and exponential moments remove the clip. Var_W S <= Var_G S +
+O(beta^{-eta}) <= C/n^3 + O(beta^{-eta}). The second-order Taylor bound with
+e^{-xi} <= 1 for S >= 0 gives (s^2/8) Var S. (13): from row 1231 (4),
+k_n(t) = n^{-3} sum_{q != 0} (qhat_1^2 + qhat_2^2) e^{-t omega}/(2 sinh omega) >= 0 and
+<= C n^{-4} sum_l l^3 e^{-ctl/n} <= C t^{-4}, also for t > n since e^{-c lambda} <=
+C lambda^{-4}. v_n -> 1/2: trace 3 over six planes. (14): the angular average of
+k_1^2+k_2^2 is 2|k|^2/3, and int r^3 e^{-rt} dr = 6/t^4 gives t^4 k -> 1/pi^2. So
+t^8 D -> e^{-3s/8} (3s/(2 pi^4)) sum_m 2^{-m} = e^{-3s/8} 3s/(2 pi^4). The remainder
+beta^{-eta} + n^{-3} = o(t^{-8}) needs eta > 8 delta and n >= e^{beta/B_0}. Both hold.
+
+**S17 (L231-237), (15) HOLDS** under the same inputs. D(n) >= e^{-aA n} nu([0, aA]) and
+na = L. The monotone ratio is log-convexity of t -> int lambda^t d mu (Cauchy-Schwarz).
+
+**S18 (L243-274), (16)-(17) HOLDS.** Y has plaquette angle 1/b^2 on 12-faces and 0
+elsewhere. A b x b square in a rising run carries flux b^2 (1/b^2) = 1. About V/4 such
+squares fit, and each edge lies on <= 2b of them. Contractible squares are flip
+invariant. The telescoped triangle inequality gives 1 <= sum theta; Cauchy-Schwarz on 4bu
+terms and the multiplicity give (17). The numerator: integrate the final gauges from the
+leaves of a spanning tree (z^{V-1}, independent of X_{u-1}), then the slices backwards
+(z^{3V} each). The diagonal: temporal angles <= 3/sqrt(beta), interior plaquette angles
+<= 4/sqrt(beta) + 1/b^2, cap volume >= c beta^{-3/2} per variable, z_{beta/2} <=
+C beta^{-3/2}. With b = floor(kappa sqrt(beta)/u): beta/(b^2 u) >= u/kappa^2 and
+beta/b^4 <= 16u^4/(kappa^4 beta) -> 0. The exponent is <= -uV(c_1/(2 kappa^2) - C_3 -
+o(1)) + (3/2) log beta + log 8. V >= e^{3 beta/B_0} absorbs the log. kappa is absolute.
+
+**S19 (L276) HOLDS.** c_- g g <= K <= c_+ g g forces c_-/c_+ <= z. On the scaled 2 x 2
+block [[1,z],[z,1]], d/d eps log((z+e^eps)/(1+z e^eps)) at 0 is (1-z)/(1+z). The
+passage to the continuous kernel by narrow bumps is brief but standard (continuity of
+the kernel on a compact space).
+
+**S23 (L319-336), (20)-(22) HOLDS given row 1161 (19).** Row 1161 L265-271 states
+(19): beta >= 1, M >= c n^3, at least (1/2) binom(M,k) neutral excited levels with
+-log(lambda_i/lambda_0) <= Ck. Row 1162 checked it: HOLDS, with energies independent of
+beta. (21): (1/2) e^{-Clu} >= (2e^C)^{-lu}. (22): g = sqrt(K(X,X)) has ||g||^2 = Tr_+ U^u
+(continuous positive-definite kernel on a compact space). K >= z_u g (x) g pointwise and
+<g, U^u g> <= ||g||^2, so z_u <= 1/Tr. Tr_+ U^u >= binom(M,l) Lambda^{-lu} for every
+0 <= l <= M, so (1+Lambda^{-u})^M <= (M+1) Tr_+ U^u.
+
+**S24 (L340-344), (23) HOLDS; typo.** lambda chi = D^2 C chi. The log D^2 Hessian is
+>= -16 beta sum|v_e|^2: at most 4 edges per face, at most 4 faces per link, then
+Cauchy-Schwarz. The log C chi Hessian is mean plus variance, so >= -beta sum|v_e|^2. The
+paired increments +-v give cosh >= 1, and the cap probability is >= c. Typo: L344 ends
+"Independence proves (21)"; it means (23).
+
+**S25 (L348-354), (24) HOLDS; one line supplied.** "(23) gives R psi <= L_J psi" needs
+C_J C_Jbar chi = C_Jbar C_J chi >= c^{|J|} C_Jbar chi. This holds because C_J and
+C_Jbar commute and C_Jbar preserves positivity. Then
+R psi = lambda^{-1} D C_Jbar chi <= c^{-|J|} lambda^{-1} D C chi = c^{-|J|} psi. The
+weighted Schur bound is as stated. R commutes with J-multipliers.
+
+**S26 (L356-362), (25) HOLDS.** V_gamma is one step with the insertion
+exp((gamma-beta) |J| wbar_J) times a scalar. It tends strongly to R, so R lies in L_1(J).
+The phases on J commute with D and C_Jbar, and the outer R^d commute with them. So each
+stage carries R^{d'}, and the degree bounds 12 and 312 are unchanged. Faces, fused loops
+and trihedra at vertices of B lie in J. A rectangular box has H^1 = 0, so closed signs
+are coboundaries.
+
+**S27 (L364-373), (26) HOLDS.** U <= R and U >= tau on ran P_tau give
+<w, R^{-1} w> <= ||w||^2/tau by the variational formula. With y = (1-x/L)^b:
+1-(1-y)^{m_*} <= m_* y, and x(1-x/L)^{2b} <= L/(2b+1). Monomials of degree j >= m_*
+lie in L_{m_*}(J) L_{j-m_*}(J). L371: finite rank plus Mazur in a finite direct sum.
+L373: m_* a^{(delta-alpha)/2} e^{aA/2} -> 0 and m_* a^{1-delta} -> 0.
+
+**S28 (L377) HOLDS.** K is continuous and >= k_0 > 0 on the compact neutral quotient.
+So u(X)v(Y)/K(X,Y) is bounded and is an L^2 limit of finite sums of products; multiplying
+by K keeps Hilbert-Schmidt convergence. Finite rank operators are weakly dense, and
+L_{2m_*+1} is a weakly closed linear space.
+
+**S30 (L388-400) HOLDS** as an implication from (27) and the stated matching hypothesis.
+On psi-perp, U^{s+l b} <= r_+^{lb} U^s. The spectral contradiction for A < -log q/h is
+correct. Totality then kills 1_{[0,A]}(H) on the vacuum complement.
+
+**S29 (L379-386, L402) OPEN, consistent with the body.** The innermost limit in (27) is
+r_+^{b_j} by S21. No statement of the file proves (27), and none claims to.
+
+## Step 5. Cited earlier rows; is the main comparison a restatement? (done 10:10Z)
+
+**Cited rows, read where a step depends on them.**
+
+- Row 1231 (2)-(5) (`gap-solve26-astra62.md` L21-65), the input of S16-S17. Read.
+  Its check, row 1235, gives HOLDS. The use in (12) matches the statements. The
+  four-reading clip is shown in Step 4.
+- Row 1161 (19) (`gap-solve9-astra62.md` L265-271), the input of S23. Read. Its check,
+  row 1162, gives HOLDS ("energies Ck independent of beta"). (20) restates it with
+  k -> l.
+- Row 1236 (6)-(10) (L96-134), cited at L34 for the marked multiplier and "the ordering of
+  the marked ratios". Credit precision: row 1236 (6) has the marked kernel
+  (w - p_beta) dC_beta and c'_d >= 0 (from row 1149 (16)), which gives v_d >= v_1 = p_beta.
+  It does not have the strict order v_{d+1} > v_d in d that S3 needs. Row 1246 proves
+  that order itself at L34. No step depends on the citation.
+- Row 1171 (`gap-solve14-astra62.md` L23): "contractible loop words of length at most
+  18" is accurate. The centre-cochain step at L115 is reproved in the file.
+- Row 1178 (`gap-solve18-astra62.md` L124-140): the L121 description is accurate
+  (traces of based products of two or three incident plaquettes, length <= 12, n >= 5;
+  strict loss for single-time individual plaquette traces). The file reproves the
+  null-set step for its smaller selection (S12).
+- Lemma F2 of `gap-target-max.md` (L253) is the two-face identity, as L94 says.
+- Row 1207 Theorem 4.2, cited at L15 as computing "the electric double commutator for a
+  sum of magnetic terms". Credit precision: check row 1208 found that exact display
+  (4.8) FAILS by a sign, (1/2)[[-Delta,S],S] = -sum|N|^2. The citation should carry that
+  correction. Row 1246's own double commutator (S5) has the correct sign
+  (+2 Gamma for [[e^{h Delta}, M_f], M_g]/h), and no step depends on row 1207.
+- Row 1151 L174 and L352 (one-step extensive cross ratio for a frustrated endpoint), cited at
+  L241. (16) extends it to u = o(beta^{1/4}) steps and vanishing action.
+- Not opened (GUIDE only, no step depends on them): the PR files at L3, and the external
+  proposals of row 1218 at L7.
+
+**Is the main comparison a restatement?** I read "main comparison" as the comparison of
+the Wilson law with the free Gaussian, (12)-(15), as in row 1235's use of the phrase.
+
+- **(12)-(15): a restatement in substance of row 1231 (3)-(6), not a new estimate.** It
+  uses the same covariance law Cov_W(X_p, X_q) = (3/2) P_cyl(p,q)^2 + O(beta^{-eta})
+  (row 1231 (3)), the same kernel (row 1231 (4)) and the same limit 1/pi^2 (row 1231 (5)).
+  It puts them into a Gaussian kernel of the readings. The leading term of D(t) is
+  s e^{-3s/8} times the slab average of row 1231's single-plaquette transform. Row 1231 (6)
+  gives t^8 int e^{-t E} d mu -> 3/(2 pi^4) and puts the spectral weight at lattice
+  energies of order 1/t. Hence the weight on bounded physical energies vanishes, which is
+  (15). The file says as much at L229 ("It agrees with the free two-curvature threshold
+  seen by a single bare plaquette") and credits row 1231 at L207. What is new is the
+  statistic: (6) sees every neutral eigenspace at finite cutoff (S14, S21). The
+  weak-coupling evaluation of that statistic adds no Wilson estimate.
+- **(16) and (22): extensions, not restatements.** That a Birkhoff/Hopf endpoint
+  contraction is not volume-uniform is already on file as a reading:
+  `gap-crux-skeleton-max.md` Lemma B2 (an upper bound kappa <= e^{4 beta N_b});
+  `gap-fr-opus.md` L99; `gap-mini-free-fable.md` L222 and L379 ("found again; diameter
+  grows with the volume", 21 files). Row 1151 L352 proves an extensive log cross ratio at
+  one step for a frustrated endpoint. New in row 1246: the lower bound (16) at u steps
+  between two vanishing-action fields, and (22) at physical block time,
+  z_u <= (Tr_+ U^u)^{-1}. The trace lower bound inside (22) restates row 1161 L308
+  (log(1+s(u)) >= c' M e^{-Cu}). The step z_u <= 1/Tr is elementary and new here. The
+  reading at L276 (S19) is the known obstruction.
+- **(4), cyclicity of plaquette histories: not a restatement.** No match in
+  `library/open-core.md` (grep "cyclic", "histor"), and none in the FINISH rows besides
+  1246 and 1253. The library has no earlier "is cyclic" or "cyclic vector" claim for
+  plaquette histories. Rows 1171 and 1178 reconstruct the slice from single-time Wilson
+  loops of length <= 18 and <= 12. Row 1178 shows that single-time individual plaquette
+  traces lose part of H_+. Row 1246 replaces the longer loops by time histories, through
+  the double commutator with T. The fixed-depth form (S20) is new too. Consistency with
+  Sussman-Alpoge: outline L581-586 and L31858-31869 say that the action-density field
+  reconstructs only its own cyclic sector, in the continuum. Row 1246 shows the
+  finite-cutoff cyclic space is all of H_+. This does not contradict them: at a fixed
+  smooth source the single-face isolation of S13 is lost, and (4) carries no uniformity
+  (L123, L191).

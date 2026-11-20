@@ -114,3 +114,54 @@ expansion (Mayer expansion, the decomposition chi = chi_(Y_0) sum_P (-1)^|P| chi
 decoupling, and a one-term bound with the factor exp(-(1/2) gamma_2 T^2 |P|)) for a term whose large-field set is
 empty. If it does, (E1)-(E3) become readings of an available Balaban paper; if not, they need a rebuild. Step 3 decides
 this from the owner's copy of CMP 119.
+
+## Step 3. Where the cut expansion of the regular step actually lives, and two routes that fail (written 2026-11-20T16:49Z by date -u)
+
+**3.1 CMP 119 defers to CMP 116 (READ, owner's copy of Balaban CMP 119, OCR text, pages 33-37 and the references).**
+CMP 119 is Balaban, "Convergent renormalization expansions for lattice gauge theories", Commun. Math. Phys. 119, 243-285
+(1988). Its references are [I] = CMP 109 (RG approach I, small-field effective actions) and [II] = CMP 116 (RG approach
+II, "Cluster expansions", 1-22). For the expectation values of the step it says: "To construct their cluster
+expansions we repeat all the considerations of Sect. 3.7 [I], with minor changes ... We describe here briefly these
+changes and additions only" (p. 275), and "The final step ... is the exponentiated cluster expansion of Sect. 7 [I], or
+rather its appropriate generalization ... In each integral we apply the Mayer expansion (1.7.1)" (p. 277). So CMP 119
+prints the changes for its boundary layers and new terms, and cites the cluster expansion itself. CMP 109's contents end
+at Section 5 (its p. 249 table of contents), so the cited cluster-expansion sections and formulas are those of the
+sequel CMP 116 (the OCR prints the citation keys as "[I]" and "(1.7.1)"; I did not resolve the key on a page image).
+Either way, the Mayer expansion, the decomposition of the cut and the one-term bound are not printed in CMP 119 or CMP
+109. Consequence: (E1)-(E3) for the regular step cannot be read from Balaban's papers on hand.
+
+**3.2 The cut expansion is part of an open node of the T0 tree with an owner (READ; rule 0a).** `library/t0-tree.md`
+L205 lists "R1 small-field family step (owner `b109`) | CMP 109 Theorem 3 plus CMP 116 refinement: S1-S12 ... activity
+budgets and final family closure ... P1-P21 are pieces, not the full theorem", OPEN. `library/b109.md` L138-139 records
+that "Local Gaussian integration and cutoff estimates | 116 (2.14)-(2.17), (2.31), Lemma 3" and "Mayer expansion,
+connected logarithm, union filing | 116 Section 2" are taken as the account reads them, with only the finite
+combinatorics ported (P8). `library/lrb.md` (frozen) proves CA-I 4.4 "under ... the CMP 116 (2.14) setting", whose
+bounds "are taken as the account reads them" (lrb change log, item 8). So the carry's (CE) and (E0)-(E5) are not a
+gap-specific blocker: they are the same CMP 116 Section 2 content that the whole hard-core chain reads through R1.
+By rule 0a I do not rebuild CMP 116 Section 2 here; it belongs to R1's owner. The gap carry should cite R1 for these
+inputs, so that one rebuild serves both.
+
+**3.3 Route that fails: the cut difference through threshold-free totals (ARGUED, elementary).** Idea: the full step
+integral over all fluctuation fields does not depend on the threshold, so the two unmarked totals differ by the
+difference of the two large-field parts, each of which Balaban's large-field analysis makes small. It fails at the
+one-step level that (FC-1) uses: at a common unmarked input list f the integrand is defined only on the small-field
+domain of the previous step (the list's members are analytic there and nowhere else), so "the full integral with input
+f" does not exist; the threshold-free object is the whole density with its large-field structure, and comparing frames
+there is (FI) itself, which row 1260 2.4 already found out of reach by calibration.
+
+**3.4 Route that fails: an ultralocal two-cut bound (ARGUED, proof sketched only; fails at the presentation).** If the
+step were an integral against a product measure over cubes, with the cut a product of indicators of each cube's own
+variables, then the cut only replaces each cube measure mu_c by its normalized restriction mu_c^T, and the ultralocal
+expansion of `library/ultralocal_cluster_expansion.md` (after Dimock's Appendix B, Theorem 27, crediting Balaban) gives
+a localized logarithm whose activities are multilinear in the cube measures. Two cuts change each cube measure by
+total variation at most 2 P(N_c >= T_lo), so the two logarithms differ by that amount per cube with the same decay
+(telescoping cube by cube, then row 1268's Lemma TL). Written out, this would prove the two-cut comparison in the
+ultralocal case; I did not write it out, because it has no consumer: it fails for the actual step: the reference Gaussian of the step (precision tau_0 H_A + H_G) is not a product over cubes,
+and a cut on the white-noise array xi (B = C^(1/2) xi) is a different cut from Balaban's cut on B, so its output would
+again have to be compared with the account's. Making the actual cut ultralocal is exactly the decoupling of CMP 116
+Section 2 ((2.5)-(2.8): conditioning, whitening, decoupling in s), which is R1's content.
+
+**3.5 Outcome of Steps 2-3.** The cut half (E0)-(E5) and (CE) stay OPEN as readings; their status is now precise: they
+are CMP 116 Section 2 content, not printed in CA-I (2.2-2.3), CMP 109 or CMP 119 (3.1), and filed in the T0 tree under
+R1 (3.2). This corrects row 1294 Step 5's remark that the account's printed machine could supply them (2.4). What is
+left for this row: the margin reading (M) of row 1294 Step 4, which needs only EM (Step 4 below).

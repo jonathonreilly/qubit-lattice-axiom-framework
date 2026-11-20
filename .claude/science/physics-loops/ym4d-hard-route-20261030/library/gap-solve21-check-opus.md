@@ -308,3 +308,27 @@ int_{E<-R} e^{-E} drho_n <= 4 e^{-(L-1)R}, so 2 sinh E e^{iP.x} is uniformly int
 coefficients pass to the limit; mu_f has no atom at E = infinity. The coefficients vanish off the finite overlap set,
 so int_{E>0} 2 sinh E dmu_f(E, dP) has a trigonometric-polynomial density; for a 23-plaquette the overlapping translates
 are 0, +-e_2, +-e_3 (shared 3-links and 2-links), and the coefficients are real and even. Correct.
+
+## Step 6. The exclusion of axial plaquette packets (36) (done 2026-11-20T01:53Z, date -u)
+
+**S56-S57, L403-420, (36): HOLDS.** Checked each step.
+- Local bound: on u < E <= 2u the PL5 carrier gives |P_2|, |P_3| <= 2u/kappa (Haar area <= C u^2 in normalised
+  measure), and 1 <= 2 sinh E/(2 sinh u) there; (32), applied to the nonnegative Borel function
+  phi(P_1) 1{|P_2|,|P_3| <= 2u/kappa}, gives int_{u<E<=2u} phi dmu_f <= (2u)^{-1} b^2 K_A^b C u^2 int phi deta/(2 pi).
+  Dyadic summation gives the same with u -> eps on (0, eps].
+- Spectral measure of Phi_z: [tau_{x e_1} f]_0 = U_1^x [f]_0, so dmu_{Phi_z} = |sum_x z_x e^{i x eta}|^2 dmu_f, and the
+  normalised Haar integral of that weight is sum |z_x|^2.
+- Numerator: the multiplier of B^(k) is e^{-kE} sin^2(k eta/2), which vanishes on E = 0 (there P = 0 by PL5) and at
+  E = infinity. Layer cake on (0, 1]: int_{(0,1]} e^{-kE} dm = e^{-k} m(1) + int_0^1 k e^{-ks} m(s) ds with
+  m(s) <= C b^2 K_A^b s sum|z_x|^2, so <= e^{-k} m(1) + C b^2 K_A^b k^{-1} sum |z_x|^2; the part E > 1 is
+  <= e^{-k} times its mass. Total <= C k^{-1} sum|z_x|^2 + e^{-k} ||Phi_z||^2 (b = 4; the fundamental reading has degree
+  1 <= ceil(A sqrt beta) per link and |f| <= 2, so (30) applies to it too).
+- Denominator: ||Phi_z||^2 = nu(|sum z_x tau_{x e_1} f|^2) (time-zero, theta_0 fixes it). On each periodic four-cube,
+  condition on all links but one edge of each plaquette of one parity of x; no plaquette contains two selected edges;
+  conditional variance >= c_0 = 1/4 (oscillatory reading, row 1161 L273-281) or >= c(1 + 6 beta)^{-2} (fundamental,
+  row 1161 Gram bound L237-246); centering constants do not change conditional variances; a fixed finite coefficient list
+  passes to the limit. So ||Phi_z||^2 >= c sum|z_x|^2, resp. c (1 + beta)^{-2} sum|z_x|^2. Dividing gives (36).
+
+**S58, L422: HOLDS.** With a_j k_j -> h > 0 and k_j -> infinity, (36) tends to 0 < q_0 for the oscillatory span at any
+beta_j >= 1, and for the fundamental span when (1 + beta_j)^2 = o(k_j). The statement is limited to one fixed transverse
+plaquette at one time, as the file says; it does not touch vectors prepared with transverse smearing or positive times.

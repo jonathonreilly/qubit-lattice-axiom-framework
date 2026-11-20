@@ -7,9 +7,9 @@ Queue row 1229 of `FINISH.md`. Started 2026-11-20T06:04Z on the Mac mini Claude 
 
 Labels: PROVED (a complete written argument here or in a cited, checked source), ARGUED (an argument with a named gap), GUIDE (heuristic or numeric), OPEN.
 
-## Step 0. Reading (in progress)
+## Step 0. Reading (done 06:40Z)
 
-Reading FINISH.md (rules, efficiency, RESULT lines of the gap rows), `parts/gap.md`, `library/prior/gap-onebound-read-sol.md`, `library/open-core.md`.
+Reading FINISH.md (rules, efficiency, RESULT lines of the gap rows), `parts/gap.md`, `library/prior/gap-onebound-read-sol.md`, `library/open-core.md` (it lists hard-core items only; no gap-path entry, grep 06:50Z).
 
 Sources read (06:04Z-06:40Z): `GOAL.md`; `FINISH.md` L1-84, L299-356 and the RESULT lines of rows 916-917, 924-925,
 1007, 1009-1011, 1014, 1016, 1020, 1025, 1029, 1139-1140, 1179-1180, 1183, 1188, 1193, 1200, 1212-1232;
@@ -148,3 +148,43 @@ Proposition EQ moves the problem to the skeleton law).
 So the curvature row of row 1225's table is closed as an attack route in every form I can state: uniform forms prove
 too much (Claim A), the window form needs a computed certificate, and the multiscale forms end at a gap statement or
 a false supremum. No attack started. Step 2 done 07:35Z.
+
+Precision on the conversion above: I read row 1218's "beta_W = N_c^2 beta" with A's weight exp(beta Re tr U_p), so
+beta_W = 2 beta in the normalisation S = beta sum_p (1 - (1/2) tr U_p). I did not re-read A's normalisation.
+
+## Step 3. What is left, and a note for the lead (07:35Z-07:45Z)
+
+**The reduction I checked for an in-scope smaller statement.** (N-phys) follows from (ONE-K) and (UNIV-K) (row 916,
+checked 917). (UNIV-K) is open in (MAPCONV), (VAC-ID), (DENS-K) B1-B2 and (CLASS) (row 924, check 925). I read row 924
+L95-245. (CLASS) asks that the account's tuning proof (Proposition rts-bounded-UV-tuning, YM4_1400.tex L94131-94184)
+use only bounds that survive linear interpolation of two runs' maps (R5's |r_j| + ||f_j|| <= C e_j, and ||T_j|| <= q).
+Norm bounds are convex, so this is a short line-by-line check, but two points need the text: R5's e_j is built on each
+run's own frame a_j, and the frames differ by O(lambda_0^j) (row 924 Observation 3.1). The account text is not on this
+machine (row 924 read it as LOCAL:ym4d-lead/sa1400), so I did not fetch it for this row. (MAPCONV) is the core of the
+regular part and needs the account's renormalisation maps in full; it is not a session item. Neither reduction moves
+the seed itself, which is the crux.
+
+**State after this row.**
+
+- OPEN: (N-phys), that is, modulo (UNIV-K), a uniform-in-coupling mechanism that gives a finite mixing length for SU(2)
+  Wilson at one fixed weak coupling (Step 1.1); (UNIV-K) in its four sub-items; the account's premises (T0 chain).
+- Nothing on the gap path was closed or killed by this row.
+
+**Note for the lead (process, not a proof claim).**
+
+1. This row confirms row 1225's judgement on a different axis. Row 1225 tabulated structures valid at every coupling.
+   This row asked which inputs of the one working band-crossing (OpenAI's 2D Proposition 2.1, with its positivity half)
+   have a 4D carrier. None has: no rigid group preserving each plaquette term has a non-trivial localisation (Lemma
+   CEN+), boundary-only twists die by the 3D-slice count (Lemma PC), the 1-form twist group is Z_2, and positivity
+   fails. The one selective, volume-uniform object (orbit-space curvature) cannot be coupling-uniform without
+   proving too much (Claim A, ARGUED), and at the window it needs a computed certificate (u about 0.5).
+2. A crux row adds value only if it names a carrier for one of these inputs that is not in the Step 1.2 table, or a
+   band-crossing mechanism that is not a twist, positivity or curvature argument. I found neither.
+3. The in-scope reduction (UNIV-K) is unowned since row 925. Its sub-item (CLASS) is a short check of L94131-94184 for
+   convexity under interpolation, best run where the account text is (the lead's sa1400 copy). It would turn the crux
+   into one window seed; it would not supply the seed.
+
+Lemma LS (07:05Z) was withdrawn at 07:12Z as vacuous; see Step 1.2. No numeric run was made (none was needed; the
+memory check was not run). Ran 06:04Z-07:45Z (date -u).
+
+RESULT: Row 1229 (Claude Opus 5.5 max, Mac mini worker 3, 06:04Z-07:45Z; author only, checked by no one; no numeric run). The mass gap is NOT proved and nothing is disproved; (N-phys), (UNIV-K) and the account's premises stay OPEN. ARGUED from checked statements: modulo (UNIV-K) the crux is a 4D analogue of OpenAI's 2D Proposition 2.1 (a lossy mixing length at one fixed weak coupling, carried to finer cutoffs by the RG, rows 1010, 916-917, 1180, 1225), and none of that proof's inputs has a 4D carrier: no rigid group preserving each plaquette term localises non-trivially (CEN+), boundary twists fail the 3D-slice count (PC, PC-c), the 1-form twist group is Z_2, the positivity half fails (FKG-NO, HF, row 1084). ARGUED (Claim A, on RECALLED and unchecked inputs): a curvature bound Ric + Hess S >= kappa uniform in volume and coupling would make the continuum limit trivial, so the curvature route can work only at one coupling of order-one correlation length, where it needs a computed certificate (hand arithmetic: character ratio u = I_2/I_1 = 0.479 at beta 2.3 and 0.520 at 2.6, against about 0.045 at the hand-proved strong-coupling edge). Lemma LS was withdrawn as vacuous. No new PROVED statement. Output library/gap-mini-solve-t-opus.md.

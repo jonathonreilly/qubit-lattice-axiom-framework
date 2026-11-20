@@ -130,8 +130,12 @@ n_x -> lambda_x n_x maps g_b to conj(lambda_x) g_b lambda_y, so only the holonom
 E_g[n_x conj(n_y)] is a quaternion; its norm is gauge invariant. The same setting with a general orthogonal
 4 x 4 matrix R_b in place of left multiplication is the two-sided case.
 
-### 3.2 Lemma U (the unnormalized comparison; PROVED; the method is Brydges, Frohlich and Seiler's, RECALLED as
-the source of the method, rebuilt here)
+### 3.2 Lemma U (the unnormalized comparison; PROVED; FOUND AGAIN, not new)
+
+Match on file, found after writing the proof: Proposition LG of row 1016 (`gap-global-reform-max.md` L330-345),
+the same loop series with its verdict "free energies only"; check row 1113 (`gap-descent-first-case-check-opus.md`
+C3) holds a loop bound of the same kind. The method is
+Brydges, Frohlich and Seiler's (RECALLED). I keep the short proof because Lemma E reads its notation.
 
 For every finite multigraph, all J_b >= 0 and all orthogonal R_b: 0 < Z_R(J) <= Z_1(J). For all sites x, y and
 indices i, k: abs( Z_R E_R[(n_x)_i (n_y)_k] ) <= Z_1 E_1[(n_x)_1 (n_y)_1] = (1/4) Z_1 E_1[<n_x, n_y>].
@@ -211,3 +215,54 @@ h = 1 it is phi''(4) with phi = log Phi and phi'' = 1 - A^2 - 3A/R, A = I_2/I_1.
 absolute value, and has the other sign. A frustrated loop shares its frustration among its bonds, and this
 couples their energies. So (N-tw) of row 1194 cannot be reached by a domination principle. The neutral
 response of a twisted sheet is carried by the frustration itself. This agrees with row 1194 5.3, way 2.
+
+### 3.7 Exact quadrature on a cycle, and Remark S: the comparison reads the shape of the weight (GUIDE; ARGUED)
+
+On a cycle the twist is one holonomy h, at angle theta from 1. Put w = n_x conj(n_y) for the chord (x, y). The
+rest of the cycle gives w a zonal density P(<w, 1>), and the chord has the weight exp(J_c <w, h>). Then (M) for
+the chord reads m(theta) <= m(0), with m(theta) the mean of <w, h>. A latitude sphere of S^3 has a uniform
+height coordinate (Archimedes), so m(theta) is a two-dimensional integral. Criterion written first: a violation
+is m(theta) - m(0) > 1e-9. Runs under the numeric lock, free memory 56 percent.
+
+1. Linear weights, triangle (P is the convolution of two linear weights, P(c) = Phi(sqrt(J_1^2 + J_2^2 + 2 J_1 J_2
+   c))): J_1, J_2 in {0.3, 1, 3, 10}, J_c in {0.1, 1, 3, 10, 30}, 40 angles. 3200 comparisons, no violation; the
+   largest m(theta) - m(0) was -4.5e-8.
+2. A hard cap, P = 1 on {c >= a} and 0 below: violations. For a = 0.5, theta = 0.8, J_c = 20: m(theta) = 0.9363
+   against m(0) = 0.9261. Four more cases have the same sign.
+3. A soft wall, log P(c) = K min(c - a, 0), continuous and non-decreasing: violations for K = 5, 20, 80, of size
+   5e-3 to 1e-2 at the same parameters.
+4. A linear part added, log P(c) = b c + 40 min(c - 0.5, 0), at theta = 0.8, J_c = 20: violation for b = 0 and
+   b = 1; none for b = 3 and b = 10. Power weights ((1 + c)/2)^p, p = 50 and 200: no violation in four cases.
+
+**Proposition S (the comparison fails for a hard cap; PROVED, as an asymptotic statement).** Two sites x, y and
+two bonds. The first bond has the weight 1 on {<w, 1> >= a} and 0 elsewhere, with -1 < a < 1 and alpha = arccos a.
+The second has the weight exp(J <w, h>), h at angle theta from 1, 0 < theta < alpha. Then there is J_0(a, theta)
+such that m(theta) > m(0) for every J >= J_0. So the analogue of (M) fails for this pair of weights.
+
+Proof. Put s = 1 - <w, h>, on [0, 2]. Under the uniform measure s has the density rho(s) = (2/pi) sqrt(s (2 - s)),
+and given s the point w is uniform on a two-sphere of angular radius r = arccos(1 - s) about h. Let q_theta(s) be
+the fraction of that sphere inside the cap, s_1 = 1 - cos(alpha - theta) and s_0 = 1 - a, so s_1 < s_0. Then
+q_theta = 1 on [0, s_1], because the sphere stays inside the cap. For s in (s_1, s_0] the sphere contains points at
+angular distance theta + r > alpha from 1, so q_theta(s) < 1; by continuity 1 - q_theta >= eta > 0 on a closed
+interval [s', s''] inside (s_1, s_0). For theta = 0 the fraction is q_0 = 1 on [0, s_0] and 0 above. Let E be the
+mean for the density rho e^(-J s)/Z on [0, 2], and mu = E[s]. For a weight q with values in [0, 1], the mean of
+s under q rho e^(-J s) is E[s q]/E[q], and mu - E[s q]/E[q] = E[(s - mu)(1 - q)]/E[q]. Take J so large that
+mu < s_1 and E[q_0] >= 1/2 (mu tends to 0 and E[q_0] to 1 as J grows). Then (s - mu)(1 - q_theta) >= 0 on [0, 2],
+E[q_theta] <= 1, s - mu <= 2 and rho <= 2/pi, so
+  mu - E_theta[s] >= (s' - s_1) eta (min of rho on [s', s'']) (s'' - s') e^(-J s'')/Z,
+  mu - E_0[s] <= 2 . 2 . (2/pi) e^(-J s_0)/(J Z).
+The quotient of the first bound by the second grows like J e^(J (s_0 - s'')). So E_theta[s] < E_0[s] for large J,
+and m = 1 - E[s]. QED.
+
+**Remark S (GUIDE for the soft walls; ARGUED).** The runs of items 3 and 4 show the same failure for continuous
+non-decreasing weights that are flat near alignment, and no failure once the linear part is strong enough. The
+mechanism is in the proof above: for 0 < theta < alpha the wall is nearer to h on one side, so it cuts more of
+the low part of the Gaussian tail around h. A linear weight has no wall: it lowers the mean by focusing along
+the geodesic from 1 to h. So a proof of (N1) in the linear class has to read the shape of the weight. This is
+the kind of constraint that Proposition V puts on the neutral half; here it appears in the charged comparison.
+The flat-topped weights of items 2 to 4 are not known to have non-negative character coefficients, so they do
+not test the reflection-positive class.
+
+Not on file under the words I searched (`grep` over `library/gap-*.md`: "one-sided" with "diamagnetic", "flat-
+topped", "cap weight"): Lemma E, the guide runs for the one-sided form, Remark S. The two-sided normalized form
+is refuted on file (method 36, rows 1139, 1140), and the unnormalized form is on file (3.2).

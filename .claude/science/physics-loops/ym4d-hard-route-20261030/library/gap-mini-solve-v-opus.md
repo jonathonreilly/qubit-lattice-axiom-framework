@@ -17,10 +17,11 @@ GUIDE, OPEN. No numeric run is a proof step.
 - 2026-11-20T08:55Z (date -u) Section 3 (the line-spin model at one coupling; Proposition LS) written.
 - 2026-11-20T08:56Z (date -u) Section 3 corrected (hypothesis K >= 1 added; GUIDE check of (c)-(d) recorded, arithmetic slip fixed).
 - 2026-11-20T08:57Z (date -u) Sections 4 (residual count, found again) and 5 (summary) written.
+- 2026-11-20T08:59Z (date -u) re-read of Sections 3-5 done (wording and anchor fixes); RESULT line written.
 
 ## 1. Reading log and where the problem stands (reading only; no new claim)
 
-Read at this pin (56e523e38): GOAL.md in full; FINISH.md L1-84 and L299-351 (rules, joining, efficiency, rules) and
+Read at this pin (56e523e38): GOAL.md in full; FINISH.md L1-84 and L299-351 (how we work, joining, working efficiently, rules) and
 row 1234 (this row) in full; the RESULT parts of rows 1222-1238; `parts/gap.md` L1-104 (state of attack, routes 1-36,
 lead rules); `library/prior/gap-onebound-read-sol.md` (row 1218) in full; the plan and closing sections of the sibling
 Opus rows 1228 (s), 1229 (t), 1233 (u), 1237 (w) and the opening of 1238 (x).
@@ -38,8 +39,8 @@ Where the problem stands on file (cited, not re-derived; every item is author-la
    ((ONE-K) in corrected one-cutoff form), with remaining inputs (EDGE), (DET)'s (ID-a), (ID-b), (I-loc), and the
    account's own OUTSTANDING `9.1:prop-blind-site-expansions` (check row 1242 queued).
 4. The infrared crux. The one-cutoff seed is the lattice gap of Wilson SU(2) at one coupling in the account's window, with
-   an explicit finite-volume neutral trace bound (row 1225 Section 4; row 1233 Section 4). Twenty-five plain-brief rows
-   (1188-1238) found no engine that crosses the band of order-one coupling; the screening tables are rows 1189, 1194,
+   an explicit finite-volume neutral trace bound (row 1225 Section 4; row 1233 Section 4). About two dozen plain-brief
+   rows (1188-1238, letters a to x) found no engine that crosses the band of order-one coupling; the screening tables are rows 1189, 1194,
    1199, 1225, 1229 (Step 1.2), 1237 (Step 1.2), and the route registry of `parts/gap.md` (methods 1-36).
 5. Published work on the same target (row 1218): A (Bhattacharjee et al., One Bound at One Scale) gives a full-trace
    thermal window criterion with a proved ascent at fixed coupling, stronger than (N-phys); B (One Cube Estimate) gives
@@ -121,9 +122,10 @@ and s(u; n^3) := Tr U^u - 1 for the vacuum-normalised time transfer U on the spa
 (d) nu(eps) >= (K/eps)(3 log(K/eps) + 6.9).
 
 (e) Along any trajectory a_j -> 0 at fixed m: a_j nu(m a_j) >= (K/m)(3 log(K/(m a_j)) + 6.9) -> infinity. So
-    condition (a) of row 1180 Step 2.1 (a finite seed size at every coupling) holds at every j, condition (b)
-    (limsup_j a_j nu_j < infinity) fails, and (N-phys) fails at every physical side L, although the physical gap
-    is exactly m at every cutoff.
+    the analogue of condition (a) of row 1180 Step 2.1 (a finite seed size at every coupling) holds at every j, the
+    analogue of condition (b) (limsup_j a_j nu_j < infinity) fails, and the analogue of (N-phys) fails at every
+    physical side L, although the physical gap is exactly m at every cutoff. (Row 1180's nu also asks 4 | n and
+    n >= 2^70; adding these side conditions changes none of (c)-(e) except the explicit constant in (c).)
 
 Proof. (a) Spins of type mu meet only spins of the same type on the same line, so the weight factorises over lines.
 In the time direction, the n^3 time-parallel lines give the transfer factor C_a tensored n^3 times; the
@@ -138,7 +140,7 @@ sum_(d>=3) d^2 exp[-(eps u/3)(d^2 - 1)] <= e^(-eps u) sum_(d>=3) d^2 e^(-(d^2 - 
 4.1 n^3 e^(-eps u) <= log(3/2) = 0.405..., that is when eps u >= log(10.12 n^3). With u = floor(n/K) >= n/K - 1 it is
 enough that eps(n/K - 1) >= max(3, 2.315 + 3 log n). Put n = (K/eps) z and w = log(K/eps) >= 0. For z >= 4w + 12:
 z - eps >= 4w + 11 >= 3, and 4w + 11 >= 2.315 + 3w + 3 log z holds at z = 4w + 12 because w + 8.685 >= 3 log(4w + 12)
-for all w >= 0 (equality fails at w = 0: 8.685 > 7.46; the left side grows at rate 1, the right at rate
+for all w >= 0 (at w = 0 it holds strictly, 8.685 > 7.46; the left side grows at rate 1, the right at rate
 12/(4w + 12) <= 1). For larger z the left side z - eps grows at rate 1 and the right side 2.315 + 3 log n at rate
 3/z < 1, so the inequality persists. Finally u = floor(n/K) >= 3 since n >= 12 K/eps >= 12 K.
 (d) By (a), (b) and Bernoulli's inequality, s(u; n^3) >= n^3 (Z_line(u) - 1) >= 4 n^3 e^(-eps u). If s <= 1/2 for
@@ -160,15 +162,17 @@ here.)
    a finite seed. So the line-spin model does not bind a one-cutoff seed; it binds only the passage from seeds at
    every coupling to (N-phys), that is condition (b).
 2. In the one-cutoff route (row 1233 Proposition 3.7) that passage is the carry, whose input is the account's
-   summable two-cutoff increments of the stop part. The line-spin family violates exactly that input: its doubling
-   defect at a fixed physical torus grows like (L/a)^3 e^(-mL), as in row 1135. So in the one-cutoff route the
+   summable two-cutoff increments of the stop part. The line-spin family has no such increments: at a fixed physical
+   size its torus excess D (row 1135) and its doubling defect Phi = 32 n^3 [2 log Z_line(n) - log Z_line(2n)]
+   >= 32 n^3 log Z_line(n) both grow like (L/a)^3 e^(-mL) with n = L/a. So in the one-cutoff route the
    ultraviolet count is the account's, and the infrared input is condition (a) at ONE coupling: the seed of one
    lattice theory. In the all-cutoff route condition (b) must be supplied for Wilson SU(2) by an ultraviolet
    argument of the same kind.
 3. Consequence for the wording of rows 1225, 1233 and 1238: "the seed at one coupling, equivalently the lattice gap
    there" is exact only up to the fixed-coupling count, i.e. modulo (NS-gap) of row 700 (`gap-seed-limit.md` L234;
    open since rows 697 and 720 L309: whether a uniform gap forces a seed at one coupling). The line-spin model satisfies (NS-gap)'s conclusion at
-   every fixed coupling (its D_a(n) = 4 n^3 log Z_line(n) <= 16.4 n^3 e^(-eps n) -> 0), so it is not a counterexample
+   every fixed coupling (its D_a(n) = 4 n^3 log Z_line(n) <= 16.4 n^3 e^(-eps n) for eps n >= 3, which tends to 0),
+   so it is not a counterexample
    to (NS-gap); none is known to me.
 
 **Grep note (rule 0a).** The general mechanism, a multiplicity d_j -> infinity at fixed physical energy, is on file:
@@ -216,8 +220,10 @@ band of order-one coupling is on file or was found here (Section 2.2), in agreem
    condition (a) even with an exact uniform physical gap.
 2. ARGUED (Section 3, Reading): the count obstruction of row 1135 is an ultraviolet one (light levels per physical
    volume growing like a^(-3)); the one-cutoff route of row 1233 pays it through the account's summable two-cutoff
-   increments (which the line-spin family violates), so its infrared input is condition (a) at ONE coupling; the
-   all-cutoff route needs condition (b) from an ultraviolet argument of the same kind.
+   increments (the line-spin family has none: its torus excess and its doubling defect at a fixed physical size
+   both grow like (L/a)^3, e.g. Phi >= 32 n^3 log Z_line(n) >= 32 (L/a)^3 log(1 + 4 e^(-mL)) with n = L/a), so its
+   infrared input is condition (a) at ONE coupling; the all-cutoff route needs condition (b) from an ultraviolet
+   argument of the same kind.
 3. Wording correction (ARGUED): rows 1225, 1233 and 1238 write "the seed at one coupling, equivalently the lattice
    gap there"; this holds modulo (NS-gap) of row 700 (whether a uniform gap forces a seed at one coupling), which
    stays OPEN (Section 4).
@@ -243,3 +249,5 @@ as authors of their text. I used them only as cited readings; no new reading of 
 
 No subagent was used. Sources fetched: the complete account's part III at commit 31a47c543775 (for the statement of
 `9.1:prop-blind-site-expansions`, CA-III 16560-16680), into a scratch folder outside the repository.
+
+RESULT: Row 1234 (Claude Opus 5.5 max, Mac mini worker 1, 08:14Z-08:59Z by date -u; author only, checked by no one; one GUIDE arithmetic run of about one second under the numeric lock; no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing on the chain is disproved; the infrared crux, the one-cube seed of Wilson SU(2) at one coupling in the account's window (a uniform lattice gap plus a fixed-coupling count), stays OPEN, and no band-crossing engine beyond those on file was found (ARGUED, Section 2). PROVED by hand (Proposition LS): in the line-spin comparison model of row 1135 (local, hypercubic, reflection positive, simple vacuum, exact physical gap m at every cutoff) every coupling has a finite seed, with (K/eps)(3 log(K/eps) + 6.9) <= nu(eps) <= (K/eps)(4 log(K/eps) + 12), eps = m a, while the seed size in physical units diverges like (3K/m) log(1/(m a)) and (N-phys) fails at every side; so condition (b) of row 1180 (asymptotic scaling of the seed size) is independent of condition (a) even with an exact uniform gap. ARGUED: row 1135's count obstruction is ultraviolet (light levels per physical volume growing like a^(-3)); the one-cutoff route of row 1233 pays it through the account's summable increments, so its infrared input is condition (a) at one coupling; the wording "equivalently the lattice gap" of rows 1225, 1233, 1238 holds modulo (NS-gap) of row 700, which stays OPEN (found again: the gap plus reflection positivity give only the m_0/64 threshold of Corollary Z2). OPEN: (N-phys); the one-coupling seed; (NS-gap); row 1233's inputs (EDGE), (DET) (ID-a), (ID-b), (I-loc) and the account's outstanding 9.1:prop-blind-site-expansions; the account's premises. Output library/gap-mini-solve-v-opus.md.

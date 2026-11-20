@@ -19,6 +19,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T05:01Z Section 3 opened: check of A's Theorem D chain; Lemmas 11.4-11.6 and Proposition 11.7 HOLD.
 - 2026-11-20T05:03Z 3.3 written: Theorem 11.8, Lemmas G.1-G.2, Theorem G.4 and the finite-volume half of Theorem D HOLD.
 - 2026-11-20T05:06Z 3.4 written: Lemma 6.2, Theorem 6.3, Corollary 6.4, Proposition 2.1, Theorem B HOLD; A's (M) to gap chain checked end to end.
+- 2026-11-20T05:08Z Sections 4-6 written (consequences, crux outcome, recommendation).
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -215,3 +216,63 @@ candidate for a port, and A's archive already formalises some of its arithmetic 
 "a form of mass generation at the physical scale and it is not proved here" (p. 87). Theorem B's continuum limit is
 taken infinite volume first at each cutoff; a construction that takes the cutoff first on a torus of fixed physical
 side needs A's Section 7 hypotheses (W), (U) (not checked here).
+
+### 3.5 One precision of wording (not a failure)
+
+Theorem B's statement (A p. 2) asks for BP(n_k, varpi) "on all large tori", and statement (D) (A p. 6) leaves the
+tori implicit. The proof of Theorem B uses only an infinite set of even tori L >= 2 n_k + 4 (Corollary 6.4), and
+Theorem D supplies BP only on tori with d_k | L, L >= 2 m d_k; A's Theorem D says so ("every continuum limit as in
+Theorem B along the tori with d_k | L"). So (D) should be read "on infinitely many even tori", with the continuum
+limits built along them. This changes no conclusion.
+
+## 4. What the check gives the lane (ARGUED unless marked)
+
+1. **A second checked consumer, of a different kind.** The lane's consumer of row 1161 takes the periodic neutral
+   trace (N-phys) to the gap. A's chain (Section 3, PROVED as a check, one reading) takes the finite-box slab bound
+   (M_{d_k, m}(c)), c < 1/2, uniform along the tuning, to the gap of every volume-first continuum limit.
+2. **It fits the lane's own target.** The lane's target (GAP) is stated on a volume-first limit: each nu_j is a
+   limit point of periodic symmetric tori l = 2 L^m at fixed spacing (\`gap-flux-exercise.md\` L80, L93, from
+   the account at L1690, L1726, as read by row 731; not re-read here). A's Theorem B uses exactly this order (torus
+   limit at fixed spacing, then the continuum). Theorem D needs d_k | (torus side); choosing d_k as a divisor of
+   2 L^m for all large m (for example d_k a power of L, with (2 d_k - 1) a_k <= l) makes the account's tori admissible.
+   Theorem B gives the gap on the whole gauge-invariant Hilbert space, so in particular on the cyclic sector of
+   tr(F^2) in (GAP). The canonical-component clause becomes void, since BP makes the torus limit cluster.
+3. **What (M) is, in the lane's terms.** (M_{d,m}(c)) is uniform over EVERY exterior configuration and every fat box
+   shape: a strong-spatial-mixing statement at the physical scale (A Proposition 11.11: (M*_w(c)) gives exponential
+   decay under every boundary condition). The lane's (N-phys) and row 1211's (17) are periodic statements with no
+   worst case. So (M) is a sufficient finite-box input for the uniform physical transfer gap that (17) is used for
+   (A Corollary 6.4 then Theorem B), but it is not weaker than the lane's inputs: it adds the worst case over
+   boundary conditions. The lane's method-36 lesson (worst case over a THIN layer's background is false at weak
+   coupling) does not refute it, because A restricts to fat boxes; A found the same thin-strip failure in two
+   dimensions (Proposition H.17) and proved the fat-box form there (Theorem H.8). In four dimensions neither a proof
+   nor a refutation of the fat-box worst case is on file. OPEN.
+4. **Where the selective content sits.** Every step of A's chain after (M) is blind (Hilbert-space geometry); A's
+   Proposition H.4 shows the step loses nothing at the massless point. So, as for (N-phys), the whole difficulty is
+   one estimate at the physical scale that must fail for the massless comparison (A Section 12: (D) "fails in the
+   Coulomb phase of the abelian theory"). The check does not shorten the crux; it gives the crux a second,
+   checked, Lean-friendly consumer.
+
+## 5. The attack on the crux itself: outcome
+
+I did not find a selective one-scale mechanism. The registry check of Section 2 found every mechanism I could name
+already on file with a verdict; my one new choice (the massless borderline of A's slab criterion) turned out to be A's
+own Proposition H.4. So this row proves nothing new about (N-phys), (M) in four dimensions, (W), (BS) or the
+continuum datum. Mass gap NOT proved; nothing disproved.
+
+What I can state about the remaining difficulty, in A's form (ARGUED): a proof of (M_{d_k, m}(c)) along the tuning
+must (i) hold for fat boxes of physical size between about l and m l/2, (ii) hold for every boundary condition, (iii)
+beat the massless value 1/2 by a margin 1 - 2c with m - 1 >= 148/(1 - 2c)^4 (so a small margin forces very flat boxes:
+1 - 2c = 0.5 needs m >= 2369), and (iv) use the non-abelian structure at the physical scale, since the Coulomb phase
+of compact U(1) violates it (A Section 12; A Proposition H.4 for the Gaussian chain).
+
+## 6. Recommendation to the lead (process; not a proof claim)
+
+- A cross-provider check of Section 3 is cheap: A pp. 8-9 (Proposition 2.1), 15-17 (Definition 6.1, Lemma 6.2,
+  Theorem 6.3, Corollary 6.4, Theorem B), 87-92 (Section 11), 124-127 (Appendix G). It would make A's chain the
+  lane's second checked consumer. A port into \`library/\` (rule 2) is then short, since nothing in it is
+  specific to SU(2).
+- This is the eighteenth plain-brief "solve" row (rows 1188-1225) to end at the same wall. Each such row costs
+  roughly $10-15. A row that takes ONE precise question with a consumer has done better: for example (a) a kill test
+  of A's fat-box worst case in four dimensions (can an exterior configuration create a boundary soft mode that
+  correlates Q- and Q+ through a face?), (b) a check of A's Section 7 hypotheses (W), (U) against the account's
+  construction order, (c) a check of A's full-thermal ascent (Theorem 7.56 and Theorem F).

@@ -149,3 +149,76 @@ Phi_B(a) = 2 g(a) - g(2a) >= g(a) >= 0 because S(2a; B) <= S(a; B). QED
   constant times the diameter); no reflection positivity (only (2.1) and, for the left side of (2.3), the trace formula).
 - The bound is uniform over (C, C'), so it bounds every average of Q, not only the periodic one. This is how it avoids
   row 975's Lemma META: a metastable set would make Q large on a set of slices, and (W) forbids that for every boundary.
+
+## 3. Consequences at one coupling (written 2026-11-20T11:01Z by date -u)
+
+**3.1 The four-point form (PROVED, same proof).** Under the hypotheses of Lemma WS, for all slice values D, D', E, E',
+    abs( log K_a(D,E) - log K_a(D,E') - log K_a(D',E) + log K_a(D',E') ) <= 6 pi beta abs(B) tau_a,                    (3.1)
+tau_a = (sqrt(delta)/(1 - sqrt(delta))) (8R + 6) abs(B) exp(-eps (t_L - R)), t_L = floor(a/2), for every a >= 2R + 3
+(a >= 2R + 2 if a is even) and every spatial box B = (b_1, b_2, b_3) with all b_i >= R + 4. (Steps 2-5 with E -> E' in
+place of C -> C', and D, D' in place of the two bottoms; the slice has 3 abs(B) links and abs(B_Lambda_a) = (8R+6) abs(B)
+for any B; for odd a the middle slice t_L = (a-1)/2 is in Lambda_a° iff a >= 2R + 3, and d(L, B_Lambda_a) >= t_L - R.)
+So K_a(D, E) = exp(u(D) + v(E) + eta(D, E)) with sup abs(eta) <= 6 pi beta abs(B) tau_a: the slab kernel is within a
+uniformly small multiplicative error of rank one.
+
+**3.2 Corollary WS1 (the seed at one coupling, explicit side; PROVED GIVEN Lemma WS and Theorem SH of row 705, checked by
+row 707).** Let (W) hold at (R, 1/4) at beta (the lane's delta_4; eps = ln 2/(R+2)). Put
+    n_0(R, beta) = (R + 2) * max{ 200, 100 + 5.78 ln(max(1, beta)) + 40.4 ln(R + 2) }.
+Then for every even n >= n_0: Phi_B(n) <= 6.05 x 10^(-4) < log(1 + 1/1650) for B = (2n)^3, which is the seed in free
+energies at ratio r = 2 (`gap-seed-shape.md` L178: "if 2 F(a, b, b, b) - F(2a, b, b, b) <= log(1 + t(r)), the conclusions
+of Theorem SH hold", t(2) = 1/1650); and S(n; (2n)^3) <= e^(6.05e-4) - 1 < 1/1650.
+Proof. By (2.3) with M = 2n and 1/(1 - sqrt(delta)) = 2 it suffices that
+0.34657 n/(R+2) >= ln(3.988 x 10^6) + ln beta + ln(8R + 6) + 6 ln n (3.988e6 = 2 * 6 pi * 64 / 6.05e-4). Write n = A(R+2) and
+use 8R + 6 <= 8(R+2): the right side is at most 17.28 + ln beta + 7 ln(R+2) + 6 ln A. For A >= 200, 6 ln A <= 0.17329 A
+(true at A = 200: 31.79 <= 34.66, and A/2 * 0.34657 - 6 ln A increases for A >= 35). So A >= 99.71 + 5.771 ln beta +
+40.40 ln(R+2) suffices. Also n >= 200(R+2) >= 2R + 2 and 2n >= R + 4. QED
+Example (arithmetic only): R = 10, beta = 2.5 gives A = 205.7, n_0 = 2469; at n = 2470 the two sides are 71.34 >= 67.44.
+The side is of order R log R; by Proposition B of row 691, R + 2 >= (1/2) ln(1/delta) xi, so it is of order xi log xi.
+
+**3.3 Corollary WS2 (the one-cutoff datum (SEED-L) of (ONE-K); PROVED GIVEN Lemma WS).** Let (W) hold at (R, delta) at
+beta, L >= 2, N >= max(2R + 3, R + 4). Then
+    0 <= Phi_L(N) := L^4 F(N,N,N,N) - F(LN,LN,LN,LN) <= 12 pi beta (8R+6) (L^4 + L^5 + L^6 + L^7) N^6 (sqrt(delta)/(1-sqrt(delta))) e^(-eps (floor(N/2) - R)).   (3.2)
+Proof. (a) One direction, L slabs. For a box B and a >= 2R + 3 cut the torus (La) x B at the L slices C_0, ..., C_(L-1)
+(times 0, a, ..., (L-1)a). As in (2.1), Z(a x B)^L / Z(La x B) = E[Q_L] with Q_L = product over i of
+K_a(C_i, C_i)/K_a(C_i, C_(i+1)) (indices mod L) under the torus law. Fix a reference slice D_*; by (3.1),
+log K_a(D, E) = log K_a(D, D_*) + log K_a(D_*, E) - log K_a(D_*, D_*) + eta(D, E) with abs(eta) <= 6 pi beta abs(B) tau_a.
+In log Q_L = sum_i [log K_a(C_i, C_i) - log K_a(C_i, C_(i+1))] the terms log K_a(C_i, D_*) cancel inside each bracket and
+the terms log K_a(D_*, C_i) - log K_a(D_*, C_(i+1)) cancel around the cycle. So abs(log Q_L) <= 2L sup abs(eta) and
+    L F(a, B) - F(La, B) <= 12 pi beta L abs(B) tau_a.                                                                 (3.3)
+(b) Four directions. By the symmetry of the Wilson measure under permutations of directions,
+Phi_L(N) = sum over mu = 1..4 of L^(4-mu) [L F(B'_(mu-1)) - F(B'_mu)], where B'_mu has sides LN in the first mu directions
+and N in the others; the mu-th bracket is (3.3) with a = N in direction mu and abs(B) = L^(mu-1) N^3. All torus sides are
+at least N >= R + 4. Summing, sum_mu L^(4-mu) * 12 pi beta L * (8R+6) (L^(mu-1) N^3)^2 = 12 pi beta (8R+6) N^6 sum_mu L^(3+mu).
+The lower bound is Hoelder (reflection positivity), as recorded at `gap-target-max.md` L78. QED
+For the lane's data (L odd, L >= 25, threshold Phi_L <= 0.131 L, `gap-target-max.md` L70, L78) and delta = 1/4 the same
+arithmetic as in 3.2 gives (SEED-L) at beta for every N >= 1 + (R+2) * max{200, 49.0 + 34.7 ln L + 5.78 ln(max(1,beta)) +
+40.4 ln(R+2)} (for L = 25: 160.7 + ...; constants rounded up from 48.91 and 34.62). [Arithmetic: with sqrt(delta) e^(eps R) <= 1 the right side of (3.2) is at most
+2 * 12.51 pi beta (8R+6) L^7 N^6 e^(-eps (N-1)/2) for L >= 25; require this <= 0.131 L.]
+
+**3.4 What this changes in the chain (ARGUED from cited statements; no new estimate).** Row 913 (`gap-target-max.md` L78)
+writes (SEED-L) as Phi_L(beta) = 6 (LN)^4 times the integral over [0, beta] of the finite-size shift of one plaquette mean
+(the (PATH) form of row 861), so every proof of (SEED-L) through that identity must control all couplings b <= beta,
+the band included; row R-b does exactly that in the Dobrushin regime beta < 2/9. Corollary WS2 reaches (SEED-L) at beta
+from a hypothesis at beta alone. So the chain now reads, for one cutoff K_0 of the account's family:
+    (W) at (R, delta) at each beta in W_(K_0)(g)  --WS2-->  (SEED-L) at the data of cutoff K_0 for N >= N_0(R, delta, beta, L)
+      --(ONE-K), needs (UNIV-K) [OPEN] with (L^4+1) E(K_0) below the margin-->  (SEED-L) at all K >= K_0
+      --Lemma FL (row 837, ARGUED)-->  (SEED-FP)  --rows 916-917, 1179, 1225 (Theorem E-N, check 1232)-->  the gap clause.
+The selective content is entirely in (W) at one weak coupling at scale R of the order of the correlation length; Lemma WS
+adds none (it holds for every compact fibre). This is the gauge analogue of the place of OpenAI's Proposition 2.1 (ii) in
+the 2D O(3) proof (row 1007 L201: "0 <= 4 log Z_b(n, w) - log Z_b(2n, 2w) <= C(1 + b + n + w)^p e^(-c min(n, w)/X(b))",
+stated there uniformly for bond strengths in [0, b]); the shape "polynomial factor times e^(-c n/X)" is theirs. I did not
+read how they derive (ii) (row 1007 read pp. 1-9 only). A 4D version uniform over plaquette coupling fields meets Lemma
+SHEET (row 996, check 997; scope: unbounded side-face couplings, `gap-checkerboard-singlet-astra.md` L718); Lemma WS needs
+no uniformity over couplings, only over boundary values.
+
+**3.5 What Lemma WS does not give (PROVED where marked).**
+- (PROVED, from (2.3) and Proposition B of row 691.) Not (N-phys) directly. If (W) held at every cutoff j at (R_j, delta)
+  with R_j a_j <= l (uniform in physical units), Corollary WS1 gives a seed only at n_j a_j >= c R_j a_j ln R_j, and
+  R_j + 2 >= (1/2) ln(1/delta) xi_j (Proposition B), so the physical seed size grows like xi ln(xi/a_j). The loss is the
+  factor M^6 = abs(B)^2 in lattice units: one abs(B) from the 3 abs(B) swaps, one from abs(B_Lambda) in Theorem W (A).
+  Even a strong-mixing bound (influence decaying from the changed links) would leave one abs(B) and the same logarithm. So
+  the route from mixing to (N-phys) at a fixed physical size needs either the carry (UNIV-K) from one cutoff, as above,
+  or a multiplicative mixing bound whose per-site error is in physical normalisation. The latter is named here, not
+  attacked.
+- Not selective, not the band: (W) at a weak coupling with R ~ xi is as hard as before. Lemma WS only says that this one
+  hypothesis at one coupling is enough for the chain's one-cutoff datum, with no other coupling involved.

@@ -10,6 +10,10 @@ Started 2026-11-20T14:59Z (date -u) on the Mac mini, worktree pinned at commit 5
 
 - 14:59Z: file created; reading GOAL.md, FINISH.md rules, `parts/gap.md`, the RESULT lines of the
   earlier mini-solve rows, and `library/prior/gap-onebound-read-sol.md` (row 1218).
+- 18:20Z: Steps 0-3 written. Step 1: no route to the seed off the record (ARGUED), so the row works carry inputs.
+  Step 2: item B reduced (Lemma CC), item A not closed. Step 3: Lemma OP (PROVED given the unchecked convex Laplace
+  theorem of `library/convex-laplace-tree-decay.md`), Proposition PE' and Corollary PE2 (PROVED GIVEN readings, most
+  of them now read in CMP 119; Lemma MC ARGUED). Next: Step 4, labels and RESULT.
 
 ## Step 0. Record read (statements about the record, not evidence; written 2026-11-20T15:55Z by date -u)
 
@@ -274,3 +278,67 @@ exponentially. So (U) of row 1268 closes by the parity route GIVEN Proposition P
 3.3 and Lemma MC), without (U-dom). Moreover the drift itself improves: summing |f| <= C theta^(-1) polylog along the
 scaffold theta_r = X + c_0 r gives |x_k - theta_(n-k)| <= C (log theta)^(q+1), so the windows of row 1280's Lemma W
 have polylog width (ARGUED: it needs the account's run to be driven by f alone, row 1260 2.1).
+
+**3.5 The readings of 3.3 at the source (READ, Balaban CMP 119 pp. 247-250, owner's copy, OCR text; written
+2026-11-20T18:10Z by date -u).**
+- (Coord): "we remove the delta-functions under the integral solving the equations (Q A')(c) = 0 ... The equation
+  determines the variable A'(b_0(c)) as a linear function of the remaining variables A'(b), b in B(c_-) u B(c_+),
+  b != b_0(c). We denote this function by C, and we denote by A the integration variables restricted to bonds
+  Omega_1* = Omega_1 \ {b_0(c)}" (p. 249). So the free variables are a fixed set of bonds, and C is local (it reads
+  the two blocks of c). READ.
+- (Par): the integrand after the scaling is exp(-(1/2)<A, Delta A> - V(g_0 C A)) times the Jacobian factor (the
+  "Tr log" term of (1.14)) and the characteristic functions (p. 249, (1.15)-(1.16)); V collects "the remaining terms
+  of the order higher than 2", a function of g_0 C A; and "we expand in (1.14) around the critical point, so the
+  potentially dangerous linear term (1/g_0) <., A> vanishes on the domain of integration" (p. 250). Section 3 repeats
+  this at step k (p. 267). READ; the locality of the Jacobian term is not checked here.
+- (Sym) and test coverage: the tests of (1.8) are read on (box'~2)*, "the set of all bonds with at least one end-point
+  belonging to box'~2, except the bonds b_0(c)" (p. 247), and "the linearizing transformation is different from the
+  identity only on bonds {b_0(c)}, hence the characteristic function ... is unchanged under the transformation"
+  (p. 249). Every free bond has an end-point in some box'~2 (the cubes box' partition the lattice), so every free
+  variable is tested. In the fluctuation chart the test of bond b reads |exp(i g A(b)) h_b - 1| < 2 delta_0 with
+  h_b = U_1(b) U_(1,box')(b)^(-1) (global critical point against the cube reference), a ball centred at
+  -(1/g) log h_b; at the trivial datum h_b = 1. READ.
+- (Conv), uniform convexity: "It is a minimum of (1.12), with a strictly positive second order differential" (p. 248),
+  with the volume-free lower bound coming from Balaban's propagator bounds (CMP 99b, 109). CITED, not re-read here.
+So of the readings of 3.3 only (Conv)'s uniformity, the locality of the Jacobian term and (EM-b) are not read at the
+source in this row; Theorem CL is unchecked; Lemma MC is ARGUED.
+
+**3.6 Corollary PE2 (the two-loop form of the coefficient at the trivial datum). PROVED GIVEN the inputs of 3.3.**
+*Exact evenness.* In the setting of Lemma OP, G(v, s) = G(v, -s) for every v and s: substitute xi -> -xi, which
+preserves K(0), Psi and S_e and changes the sign of each R_x. So every odd-order s-derivative of G vanishes at s = 0
+for every v. Taylor's formula to fourth order along s = t lambda 1, with Theorem CL for |beta| + 4 derivatives and the
+tree-length bound tau(beta, x, y, z, w) >= (tau(beta) + d(z_0,x) + d(z_0,y) + d(z_0,z) + d(z_0,w))/5, gives
+    D_v^beta G_1 = D_v^beta G_0 - (lambda^2/2) D_v^beta Var_(v,0)(R) + O(lambda^4 e^(-mu tau(beta)/5)),
+where Var_(v,0) is the variance in the even model at v and R = sum_x R_x. The same interpolation applied to the even
+non-Gaussian part g^2 T_4 + g^4 T_6 + ... (first order, then second order) and to the cut (tails) replaces the even
+model by the Gaussian model at level k in the first term and in Var_(v,0), at cost O(g^4 polylog) and tails; mixed
+terms of first order in R vanish (odd against even). Hence, with lambda = g = x_k^(-1/2):
+    f_(k+1) = kappa_2(k) / x_k + O(x_k^(-1) N_k) + O(x_k^(-2) (log theta_k)^q) + tails,
+    kappa_2(k) := the second moment of the Hessian kernel at v = 0 of  <T_4>_(G,v) - (1/2) Var_(G,v)(R_3),
+with <.>_(G,v) the level-k Gaussian reference at datum v, R_3 the cubic part of the action's odd part, T_4 the quartic
+action term plus the order-g^2 Haar and chart terms; the term O(x^(-1) N_k) is the inherited list's fluctuation
+response (its odd part is O(g N_k), entering at second order; its even part O(g^2 N_k) at first order). kappa_2(k)
+is a Gaussian expectation of explicit polynomials: it depends on the level k through Balaban's level-k Gaussian
+structure and not on any coupling. This is the first bullet of row 1280 4.6, now with a proof route that reads no
+localised expansion. What (B3+) of row 680 still needs (row 1280 4.6): level convergence (L-inf), kappa_2(k) ->
+kappa_2 geometrically (ARGUED there; at the trivial datum it is a statement about Balaban's linear block-averaging
+Gaussians for three abelian copies, a Fourier computation not done here), and EM's own bound N_k = O(delta(theta_k)),
+which makes the list term O(x^(-3/2) polylog), summable.
+
+**3.7 Lemma MC: the steps of a proof (ARGUED; each step named so that a checker can redo it).** Single translated
+balls first (a bond tested by several cubes has a cell that is an intersection of translates; the same steps apply
+with a partition of its wall). (1) Freeze the cut by a wall diffeomorphism: with phi smooth, 0 on |eta| <= r/2, 1 on
+|eta| >= 3r/4, |grad phi| <= C/r (r = delta/g the cell radius in the variables xi), Phi_v(eta)_c := eta_c +
+phi(eta_c) h_c(v) maps K_c(0) onto K_c(v) when |h_c| |grad phi| < 1, so I(v) = int_(K(0)) e^(-S - W) with
+W(eta; v) := S(Phi_v(eta); v) - S(eta; v) - log det D Phi_v(eta); every term of W carries a factor phi(eta_c), so W is
+supported in the union of the shells {|eta_c| >= r/2}. (2) Interpolate S + u W, u in [0, 1]: G(v) - G~(v) =
+int_0^1 <W>_(v,u) du, and each D_v^beta of it is a sum of cumulants with W (or a v-derivative of W) in one slot.
+(3) Theorem CL's proof (its Steps 3-5: covariance with decay, cumulant splitting, Hoelder with moments) bounds such a
+cumulant with the slot holding W measured in L^p; on the shell, ||W 1_shell||_(L^p) <= ||W||_(sup on shell)
+P(|eta_c| >= r/2)^(1/p). (4) The measure has Hessian at least gamma on the convex cut, so the law of each |eta_c| has
+Gaussian concentration about a mean of order g polylog (the linear term vanishes at the minimiser), giving
+P(|eta_c| >= r/2) <= C exp(-gamma r^2/16). (5) Each v-derivative of h_c is of order 1/g in these variables (CMP 119
+(3.13): the shift is O(eps_k) per unit curvature of the datum, in the variables g xi), and |grad S| <= C r on the
+shell. Result: |D_v^beta (G - G~)| <= C (log theta)^q theta^(|beta|/2) exp(-gamma (A_1/A_0)^2 (log theta)^(2 p_0)/(4p))
+e^(-mu tau(beta)), which is the wall bound used in 3.3 (i) and (iv). What keeps it ARGUED: Theorem CL is unchecked and
+step (3) re-uses its proof, not its statement.

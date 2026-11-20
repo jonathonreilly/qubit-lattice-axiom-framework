@@ -120,7 +120,7 @@ wording of (VAC-ID) ("-Ecal_(K,S), summed with the label weights") mixes the two
 belongs to (VAC-ID). (ARGUED from the READ lines; this is a reading of row 924's split, not a new estimate.)
 
 **2.4 Status of the input that (V1) uses (READ L84156-84204, L940-972, L84317-84324, L86260-86313).**
-- Statement 3.4 (L84159-84176), the common companion: for each frame and weight prefix, one family on the infinite
+- Statement 3.4 (L84159-84204), the common companion: for each frame and weight prefix, one family on the infinite
   level-j lattice for E^(j) and one for R^(j), agreeing with the torus term on every lift of a domain that is
   nonwrapping with its margin, for every admissible (l, K'), with the same bounds and cube-translation covariance;
   b_j depends only on the frame and weights through level j-1. The account: "This compatibility is an input to the
@@ -166,10 +166,10 @@ length(A) + 2 indices; hence length(A) + 2 >= n/2 - 2w. The projection is 1-Lips
 >= n/2 - 2w - 2. Take tau shortest. QED
 
 This is the account's floor (L84317-84318) with c = 1/2 in cube units. With w = 0 it applies to the "sufficient
-margin" of Statement 3.4 (L84163-84165: a lift inside a rectangle with sides less than half the torus side).
+margin" of Statement 3.4 (L84166-84168: a lift inside a rectangle with sides less than half the torus side).
 
 **Inputs of Lemma VAC (all are statements of the account; none is proved here).**
-- (I1) Statement 3.4 (L84159-84176): for each level, companion families on the infinite lattice for E^(j+1) and
+- (I1) Statement 3.4 (L84159-84204): for each level, companion families on the infinite lattice for E^(j+1) and
   R^(j+1), covariant under the translations preserving pi_(j+1), equal to the torus terms on every lift of a domain
   that lies in a rectangle with sides less than half the torus side, on every admissible torus of the run; the
   coefficients x_j, b_j are the same on T and T'.
@@ -197,7 +197,7 @@ coefficients are equal (common x_j, (I1)) and every count on T' is L^4 times the
 block structure lifted). They cancel in Phi^vac.
 
 (2) Pointing. Write the local sum of level j as sum over roots z of sum over X containing z of r(X, z), with
-r(X, z) = E^(j+1)(X, 1, z) + R^(j+1)(X, 1)/|X|, |X| the number of roots of X (the pointing of L102653-102654 and of
+r(X, z) = E^(j+1)(X, 1, z) + R^(j+1)(X, 1)/|X|, |X| the number of roots of X (the pointing of L102657-102658 and of
 L85944-85945). By (I2), |r(X, z)| <= 2 E_0 e^(-kappa d(X)). Fix the threshold D = (n_(j+1)(T)/2 - 2)/M, the same on
 both tori, and split each sum into a short part (d(X) < D) and a long part.
 
@@ -232,13 +232,13 @@ account books the Gaussian local numbers of RF61, hence whether (I4) is a second
 their constants enter Q_K, i.e. (DENS-K) B1-B2. (iv) RF62, the size of the divergent vacuum sum: not needed, since the
 common part cancels exactly in Phi^vac.
 
-**3.1 Addendum: (I4) is not needed (READ L126172-126196, written 10:04Z by date -u).** The account's vacuum accounting
+**3.1 Addendum: (I4) is not needed (READ L126179-126198, written 10:04Z by date -u).** The account's vacuum accounting
 (eq. comparison-capsule-CP1) defines E = E_(K) with steps e_k = n_k + sum_X [ sum_{z in X} E^(k+1)(X, P_o, z)
 + R^(k+1)(X, P_o) ], P_o = (1, 0), where n_k is "the assigned field-independent step number" (Gaussian scaling
 -3|X_k| log tau/2 on the non-pivot bonds, Haar and gauge-fixing counts included), and: "The family in (CP1) contains
 the unnormalized local Gaussian numbers ... Those numbers must not also be added to n_k." So the Gaussian local numbers
 of RF61 are booked inside the E-family, whose lifts (I1) covers. Lemma VAC therefore rests on (I1)-(I3) only. The same
-chapter opens (L126163-126170): "The interacting estimates themselves remain hypotheses"; this does not change the
+chapter opens (L126169-126172): "The interacting estimates themselves remain hypotheses"; this does not change the
 status of (I1)-(I3) as recorded in 2.4.
 
 **3.2 Lemma VAC adds no premise to (UNIV-K) (READ L94112-94128; written 10:04Z by date -u).** Row 924's regular part
@@ -257,3 +257,48 @@ and sum_K exp(-c A_0 (log(c_0 K))^(p0)) converges. This settles B1's arithmetic 
 bare-level component shifts the unit-scale action by a marginal term of relative size O(e^(-c p_0(g_0))) per unit cell)
 stays ARGUED as in row 924, and B1 stays OPEN.
 
+**3.4 Prior work on the same lines (credit; grep at 10:06Z by date -u).** grep of `library/`, `FINISH.md` and
+`QUEUE_DONE.md` for the account lines 102645-102671 and for VAC-ID:
+- Row 986 (`library/gap-detlemma-read-opus.md` Step 3 parts 3-4, Claude Opus 5.5 high) READ L102525-102671 and CP1
+  before this row, and classified the account's comparison as "conditional criterion, PROVED as an implication there;
+  its application to the actual vacuum constant rests on RF61". It did not connect this to (VAC-ID) of row 924.
+  Refinement here: by CP1 (which row 986 also quotes) the Gaussian local numbers sit inside the E-family, so the
+  application rests on Statement 3.4 together with the class bounds; of RF61 only its lift clause and its domain bound
+  are used, and both are clauses of Statement 3.4 and R17 for that family. RF61's determinant bound and first-step
+  sign are not used (they size the common divergent part, which cancels).
+- Rows 987-990 (`gap-det-fable.md`, checks `gap-det-check-opus.md`, `gap-det-check-astra.md`, and row 990 (I-loc))
+  built the repository's own route to the Gaussian part, (DET), as an implication from (I-loc), R, W, with (ID-a),
+  (ID-b) open. That is an independent path for the Gaussian piece; Lemma VAC is the account's path for the whole
+  vacuum constant. Row 1233 used (DET) in its chapter-9 route.
+- No file connects (VAC-ID) to Statement 3.4 or to R5's line L94127-94128. `library/open-core.md` has no gap entry.
+So what is new here is bookkeeping plus a hand rebuild: (VAC-ID) is implied by inputs that the regular part of
+(UNIV-K) already reads (3.2), with the deduction written out (Lemmas VF, VAC). The comparison itself is the account's.
+
+## Step 4. State after this row, and a note for the lead (written 10:06Z by date -u)
+
+| Item | Before this row | After this row |
+|---|---|---|
+| (N-phys), the seed at one coupling (part B) | OPEN, no engine on file | OPEN; eight more candidate ideas screened in Step 1.2, each on file or dead with a stated reason; no attack started |
+| (UNIV-K) sub-item (VAC-ID) (row 924) | OPEN as an account statement | Not a separate item: Lemma VAC (PROVED GIVEN Statement 3.4, R17, the step-constant lemma) gives row 924 Lemma 5.1's conclusion, and these inputs are already read by the regular part through R5 (L94127-94128) |
+| (DENS-K) B1 arithmetic (row 924: exponent not read) | exponent not read | exponent of p_0 exceeds 8 (READ L1120, L62001, L68218, L72948), so the arithmetic premise holds; B1's power count stays ARGUED, B1 OPEN |
+| (UNIV-K) as a whole | OPEN in (M1)-(M3), (VAC-ID), (DENS-K) B1-B2, edge matching | OPEN in (M1)-(M3), (DENS-K) B1-B2, edge matching; all of it also reads the account's Statement 3.4 (an open input of the account) |
+
+Labels used in this file. PROVED: Lemma VF. PROVED GIVEN named account inputs: Lemma VAC and its consequences 1-2
+(Step 3). READ (quoted or paraphrased with lines): 2.1, 2.3, 2.4, 3.1, 3.2, 3.3. ARGUED: Step 1 (judgement and the
+screening table), 2.3's reading of row 924's split, consequence 3 of Step 3. GUIDE: none. No numeric run was made; no
+subagent was used. The account copy (YM4_1400.tex at 2bc0658f91d2) stays in a scratch folder outside the repository.
+Checked by no one.
+
+**Note for the lead (process; not a proof claim).**
+1. Row 924's table line for (VAC-ID) can be replaced by: "implied by Statement 3.4, R17 and the step-constant lemma
+   (row 1248 Lemma VAC), which the regular part already reads". A cross-provider check of Lemmas VF and VAC is the
+   natural next step; they are short.
+2. Statement 3.4 (YM4_1400 L84159-84204) is now the one account input shared by the regular part (R5) and the vacuum
+   part of (UNIV-K). The account sketches a conditional supply rule for it by translation averaging (eq. flow-RF34a,
+   L84206-84236), given "the finite-cover identity for the total and the actual filing of lifted walks". The authors'
+   overview counts it among their open boxes, under extensions (`library/prior/sa-boxes.md` L89, L98), and
+   `library/t0-tree.md` Section 5 has no node for it. Whether the T0 chain reads it is not settled here.
+3. This is again an Opus plain-brief row that found no attack on the seed (part B). Its new content is on the carry.
+
+
+RESULT: Row 1248 (Claude Opus 5.5 max, Mac mini worker 2, 09:31Z-10:07Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed (N-phys) stays OPEN with no engine found (Step 1: eight further ideas screened, each on file or dead for a stated reason). Attacked instead: (VAC-ID) of the ultraviolet carry (UNIV-K). READ in Sussman and Alpoge's YM4_1400 at 2bc0658f91d2 (with Claude and Codex as authors of its text): the account proves the two-torus comparison of its actual vacuum constants (L102645-102670) from its common companion, Statement 3.4 (L84159-84204, an open input of the account), and books the Gaussian local numbers inside the E-family (CP1, L126196-126198); the same Statement 3.4 makes the coupling sequence torus-independent in the regular part (L94127-94128). PROVED by hand: Lemma VF (a domain that fits in no box of sides below half the torus side has tree length at least n/2 - 2 cubes). PROVED GIVEN Statement 3.4, the class bounds R17 and the step-constant lemma: Lemma VAC, |Phi^vac| <= 4 E_0 C_1 r_0 L^4 sum_j n_j^4 e^(-delta(n_j/2 - 2)) uniformly in K, which is row 924 Lemma 5.1's conclusion; so (VAC-ID) adds no premise beyond those the regular part of (UNIV-K) already reads, and it leaves the open list. READ: the exponent of p_0 exceeds 8 (L1120, L62001, L68218), so (DENS-K) B1's arithmetic premise holds; B1's power count stays ARGUED. Credit: rows 986-990 read the same account lines and built (DET) for the Gaussian part. OPEN: (N-phys); (UNIV-K) in (M1)-(M3), (DENS-K) B1-B2, edge matching and the account's Statement 3.4; the account's premises. Output library/gap-mini-solve-ab-opus.md.

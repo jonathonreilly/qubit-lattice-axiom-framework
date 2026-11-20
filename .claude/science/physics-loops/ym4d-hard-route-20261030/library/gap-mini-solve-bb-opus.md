@@ -83,3 +83,58 @@ So (READ): `9.10:thm-last-lattice-comparison` and its incomplete inputs (`9.10:l
 `9.10:thm-refiled-lipschitz`) are off the gap carry; they serve the account's geometric rate. Row 1233's phrase
 "hypothesis (iv) ... supplied by 9.10" (its 3b-3c) should be read with this in mind; its 3d already uses 9.1. Step 1's
 item is withdrawn. The carry's only chapter-9 outstanding input stays (e), which row 1309 works on.
+
+## Step 3. New item: premise (P4) and (E0) of row 1299 (plan; 18:30Z by date -u)
+
+After Step 2 the carry's open inputs are (row 1299 5.1, 4.7-4.8): the blind-site expansion (row 1309, concurrent),
+(V9)/(DET)'s normalisation (row 1296), (M) (a supplier choice, row 1299 5.1), and the premises (P1)-(P5) of row 1299
+4.8, among them **(P4): the constant conditions (UM14), (UM19), (UM23), (UM26') of Sussman and Alpoge's outline in one
+order of choice, together with q > p_0**, on which row 1299's (E0) (4.7, ARGUED) rests. Rule 0a: neither (P4) nor
+(E0) is attacked by any FINISH row (row 1299 lists them OPEN, not attacked); open-core.md has no entry.
+
+Moves: the carry's cut half of (FC-1) (row 1268 Theorem FCT', row 1299 4.8). Success: (E0) becomes READ/PROVED and
+(P4) becomes PROVED from stated constants, so the cut half rests on (P1)-(P3), (P5) only. Failure: the exact pair of
+conditions that cannot hold together, which would break row 1299's Lemma TL-SA as used.
+
+Sources to read: the outline `YM4_sketch_500.tex` at 31a47c543775, L14276-14811 (the regular-gas chapter) and
+L13893-14272 (the Gaussian comparison theorem, FG1-FG12); CA-I L4150-4190 (cut radius and fluctuation domain).
+
+## Step 4. The exponents p_0, p_1, q in the account, against row 1299's (E0) (READ; 18:50Z by date -u)
+
+Sources: CA-I (`theorem_0_complete_account_raw_I.tex` at 31a47c543775, 166,711 lines), fetched by URL into a scratch
+folder; Balaban, CMP 119 (1988), the owner's copy (outside git), pp. 268 and 276 read as page images in a scratch
+folder. Credit: Sussman and Alpoge (Claude and Codex as authors of their text); Balaban.
+
+**4.1 READ.**
+- CA-I Stage 0 (L1349-1366): "p_0 in N, free upward, with p_0 >= 5r [CMP119] and the floor p_0 >= (d+5)r_0+8r+3";
+  "p_1, a window, under three kinds of condition: 2p_1-(d+5)r_0 > p_0 [CMP122b]; **p_1 < p_0 [CMP122a]**; finitely
+  many lower bounds on p_0-p_1 by numbers at most 4r+1"; "With p_1 := p_0-4r-1 ... p_0-p_1 = 4r+1"; "q := q_0 = q_1,
+  free upward, with floors such as q >= p_0+7r+1 and q >= 3p_0+3r+1". The same window is repeated at L1866-1874 and
+  L2017-2019.
+- CA-I L29104-29117 (4.7): p_0(g') = A_0 (log g'^(-2))^(p_0); eps_m := g_m p_0(g_m); delta_m := (A_1/A_0) eps_m =
+  A_1 (log g_m^(-2))^(p_0) g_m, "the threshold of [CMP119 (3.16)]"; "The complex box of [CMP119 (3.43)] is printed
+  there as |A| < C_1 p_1(g_k), with A the fluctuation variable ... a smaller power of the logarithm in p_1(.) than in
+  p_0(.) only improves the bound C_1^fl delta_m." CA-I L29124-29126: "q - p_0 >= 3r+2 > 0".
+- CA-I 4.3 (L4166-4180): the two extra conditions of the small-field step are C_1 g' p_1(g') <= eps^I_1 and "the
+  cutoff radius (A_1/A_0) p_0(g) ... exceeds the constant of [CMP116 (2.31)]"; "When g = g_k, this radius is the
+  quantity delta_k/g_k of [CMP119]". No condition compares the cutoff radius with the box radius C_1 p_1(g).
+- CMP 119 p. 268, (3.16): the decomposition of unity on Omega_(k+1) minus one layer uses chi({sup_b |A_k(b)| <
+  delta_k}) and its complement, cubewise: a cut of the fluctuation field at delta_k.
+- CMP 119 p. 276, (3.43): the terms of the expansion whose localization domains are not inside Lambda_(k+1) are analytic
+  on U~^c_(k+1)(Y, (1+beta) alpha~_0, (1+beta) alpha~_1) x {A : supp A in Y cap Lambda^((k)*)_(k+1), |A| < C_1 p_1(g_k)}.
+
+**4.2 Consequence for row 1299 4.7 (PROVED from 4.1, elementary).** In the account's choice, p_1 < p_0 < q. Row
+1299 4.7 needs the cut threshold b (of order A_1 (log)^(p_0) in chart units) to lie inside the box where the step's
+potentials are holomorphic, and writes "provided q > p_0 (equivalently p_1 > p_0; not checked)". The two conditions
+are not equivalent in the account: q > p_0 holds (q >= 3p_0+3r+1), while p_1 > p_0 is false (p_1 = p_0-4r-1). Which
+one (E0) needs depends on which box the carry's cut lives in:
+- if the box is the lane's ci-form radius R = l^q (row 1299 4.7), (E0)'s containment b_hi < R holds above a floor,
+  READ from the account's q >= 3p_0+3r+1;
+- if the box is CMP 119's (3.43), |A| < C_1 p_1(g_k) (row 1268's own wording of (E0): "inside the fluctuation domain
+  [B-CMP119 (3.43)]"), then for small g the cut radius A_1 (log g^(-2))^(p_0) exceeds C_1 (log g^(-2))^(p_1)
+  (their ratio is (A_1/C_1)(log g^(-2))^(4r+1) -> infinity), and (E0) **as row 1268 words it FAILS** for the account's
+  parameters.
+So (E0) is not settled by row 1299 4.7: its "equivalently" is wrong, and the reading must say which box holds the
+step's potentials on the whole cut region. Next (Step 5): read how Balaban and the account treat fluctuations with
+C_1 p_1(g_k) <= |A| < delta_k/g_k inside the cut, and what box SA's (UM1) "declared complex fluctuation boxes" are
+in the carry's presentation.

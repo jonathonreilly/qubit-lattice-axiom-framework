@@ -41,7 +41,7 @@ What the record fixes (each item cites where it is proved or checked; none is re
 
 ## Step 1. How best to attack it (judgement, ARGUED; written 2026-11-20T13:52Z by date -u)
 
-**The seed.** I re-derived, before reading the screening tables, about a dozen routes to the infrared input: center
+**The seed.** I derived about a dozen routes to the infrared input and checked each against the screening tables: center
 vortex recursions, the 't Hooft electric-magnetic Fourier duality, abelian projection, the small-volume zero-mode
 spectrum as a start for a flow, a strong-coupling expansion at the scale where the running coupling is of order one,
 Durhuus-Frohlich layers with the posted 2D O(4) theorem, path coupling, Bakry-Emery, positivity of dual spin foams,
@@ -96,8 +96,9 @@ order at theta_(n-k).
 **2.2 In EM the cube size enters the unmarked chain only through the cut.** The age gate M R-check_j <= L^(m+1-j)
 (EM:364-372, EM:525-531) selects aged remainders for the full list only: "A family that fails this age test stays
 outside the regular list. The unmarked list uses only its own regular outputs, from levels 1, ..., k" (EM:533-536).
-The other uses of R-check in EM are one-sided floors (torus periods P_i >= 2 L^11 M R-check_i, EM:724-732; the size
-condition EM:476-481), which each frame meets with its own R. The unmarked total is formed from "the fixed all-small-
+The other uses of R-check in EM are numerical conditions that each frame meets with its own R: a floor on the torus
+periods, P_i >= 2 L^11 M R-check_i (EM:724-732), and a geometric margin that uses R-check_m <= L (log theta_m)^r
+(EM:470-483). The unmarked total is formed from "the fixed all-small-
 field kernel ... It uses the given fibre density, gauge weight and fluctuation cut" (EM:544-547), the cut being "a fixed
 Borel restriction in the real free variables" (EM:614-616). The account's cut is Balaban's (CA-I 4.35 (C)(b),
 I:157457-157600, read in row 1267 4.1: "the decompositions of unity of [B-CMP119, Section 3]"). The waiting depth
@@ -130,6 +131,9 @@ references, and (U) holds.
 
 ## Step 3. The windows, and a sandwich comparison that removes (U) (written 2026-11-20T14:05Z by date -u)
 
+The plan of Step 1 (one common test-cube sequence for both frames) is dropped: it would change the account's own runs
+(clause (0) reads R-check of its own couplings, 2.1; the pins are defined on the scaffold's choices, row 1260 2.1),
+and the account proves its statements for its own R rule only. Instead the two cube families are compared directly.
 Notation as in rows 1260, 1267, 1268. Pin run of length n; level k; frozen entry phi_k := theta_(n-k) = X + c_0 (n - k);
 own entry y_k := x-check_k. Drift hypothesis (DR), from row 1260 2.1 (III:69015-69017): |y_k - phi_k| <= D(phi_k) with
 D(y) := C_D y^(1/2) (log y)^(p_0), for every level k up to first passage. R(y) := least L^b (b >= 0) with
@@ -349,6 +353,16 @@ integrates to zero for every s. So the localized activities keep only terms with
 (P4) reduces to the statement that the supplier's localization is linear in the integrand with centred decoupled
 Gaussians; EM states its input as "one prescribed convergent localization" (EM:629-640), and row 1268 2.4-2.5 read the
 account's transcription of Balaban's CMP 116 expansion (I:58716-58717, I:108483-108600) as linear in the integrand. CMP 116 itself is not on this machine.
+READ for this row (written 2026-11-20T14:26Z by date -u): the account's written-out first step of that expansion at a
+large-field stage (I:108483-108507) is "the centred Gaussian with precision A_ss", the Mayer expansion [CMP 116 (2.1)]
+over sets of elements e^(v_e) - 1, the decomposition [CMP 116 (2.3)] of the cut into kept and complementary bond
+indicators of |phi(b)| < T_j, and "conditioning ..., whitening by C_s^(1/2), and decoupling in s of the walks of C_s",
+which "are algebra and Fubini's theorem"; the regular step's ingredient list (I:58700-58730) names the same objects
+(the cut factors chi^(k) and the signs of (2.3) "are products over bonds"; d mu_0; the Mayer, polymer and cluster sums).
+Each of these operations commutes with the global flip of all integration variables (conditioning a centred Gaussian
+on centred variables gives a conditional mean linear in them, which flips with them), and the bond indicators read
+|phi(b)| or |V(b) V_ref(b)^(-1) - 1|, which are even at the trivial datum. So (P4) is supported by the account's own
+description of the supplier's expansion; it is still a reading, not a proof.
 
 **4.5 Consequences (PROVED GIVEN (PE) and the drift recursion of row 1260 2.1).**
 (a) READ (CA-III III:68970-68995, III:55782-55790): the account's drift recursion is zeta_(r) = zeta_(r+1) + b_(r) - c_0
@@ -381,9 +395,11 @@ equal to the weights, so there is no frame mismatch):
 - the inherited unmarked list enters through its fluctuation response, which starts at second order (parity, 4.3),
   so its contribution is O(g_k^2 N_k), and with EM's own bound N_k = O(delta(theta_k)) (EM:667-684) it is
   O(x_k^(-3/2) polylog), summable along a run;
-- level convergence (L-inf): at the trivial datum Balaban's Gaussian structure at level k converges as k grows (his
-  propagators at scale k involve a_k = a (1 - L^(-2))/(1 - L^(-2k)), recalled, not re-read here), so kappa_2(k) = kappa_2 +
-  O(L^(-2k)) and the account's one-loop numbers beta^0_k have partial sums within 2 c_2 (the account's constant) of k c_0 (III:68989-68993).
+- level convergence (L-inf): at the trivial datum the step's Gaussian structure at level k (the second variation of
+  A(U_k(V)) under the block constraints, with Balaban's k-step minimal configurations) converges geometrically as k
+  grows. This is recalled by analogy with block-spin Gaussians in scalar renormalization (constants of the form
+  a (1 - L^(-2))/(1 - L^(-2k))), and is not read in Balaban's gauge papers here; granting it, kappa_2(k) = kappa_2 +
+  O(L^(-c k)) and the account's one-loop numbers beta^0_k have partial sums within 2 c_2 (the account's constant) of k c_0 (III:68989-68993).
 Granting these, b_(k+1) = beta^0_(k+1) + kappa_2/x_k + r_(k+1) with sum_k |r_k| bounded uniformly in the run, the marked
 remainder q being summable already (EM:1367, kappa_0 >= 10). Lemma 2L's proof uses only partial sums for the upper
 bound and the lower bound on b_k for sum (c_0 - b_k)_+/x_(k-1) = O(1), which the one-loop Cesaro bound and the summable
@@ -412,7 +428,7 @@ numeric run; no subagent.
 | Corollary U: the two frames' cuts in sandwich form, shadow counts m_U = (L + 2 + 8 M/M_2)^4 | PROVED GIVEN (U-dom) | 3.3, Lemma W (a) |
 | Theorem U: (FC-1) along the pin runs at every level without (U); summable, tends to 0 as X grows | PROVED GIVEN (U-dom), (E+) and the hypotheses of row 1268's Theorem FCT' other than (U) | Lemma W, Lemma SW, Corollary U, row 1268 |
 | Lemma P: exact cancellation of the odd part in a symmetric integral | PROVED, elementary | symmetry of the measure and the cut |
-| Proposition PE: the unmarked coefficient is O(theta^(-1) polylog) + Gaussian tail (no half-loop term), in place of EM's O(theta^(-1/2) polylog) | ARGUED, given (P1)-(P4) | Lemma P, parity rule 4.3 |
+| Proposition PE: the unmarked coefficient is O(theta^(-1) polylog) + Gaussian tail (no half-loop term), in place of EM's O(theta^(-1/2) polylog) | ARGUED, given (P1)-(P4); (P3) at P_o and (P4) supported by READ text (CMP 119 p. 249; CA-I I:108483-108507, I:58700-58730) | Lemma P, parity rule 4.3 |
 | 4.5 (a)-(c): with (PE), polylog drift, (U) closed with no (U-dom), better margins in rows 1260 and 1268 | PROVED GIVEN (PE) (the drift recursion and the Cesaro bound READ in CA-III) | Lemma W, Proposition W2 |
 | 4.6: (B3+) of row 680 (Route Z's next statement) from the parity mechanism, level convergence (L-inf) and the list response | ARGUED | 4.3-4.4, EM:667-684, III:68989-68993, row 680 Lemma 2L |
 
@@ -424,6 +440,8 @@ not attacked here); the supplier readings (E0)-(E6), (E+) and either (U-dom) or 
 CMP 116, which is not on this machine, and CMP 119/102 as cited; (TH); row 1267's (H2)-(H3) (EM states admission
 descriptively; not worked here); the 9.1 hypothesis (e) `9.1:prop-blind-site-expansions` (outstanding in the account,
 CA-III L16559); (DET)'s inputs; the account's premises. (U) leaves the list.
+Route Z (row 680): its "one exact next statement" (B3+) has, after 4.6, an ARGUED mechanism (parity at the trivial
+datum, level convergence, list response of order x^(-3/2)); not proved.
 
 **5.3 What a checker should redo first.** (1) Lemma W (a)-(b) and the condition on X, against row 1260 2.1's drift and
 CA-I I:49745-49770. (2) 2.2: whether anything else in EM's unmarked step reads R-check (grep EM for R-check: lines 286,
@@ -434,7 +452,9 @@ the counts. (4) Whether (U-dom) holds at all at the threshold delta_k = (A_1/A_0
 delta_k, not eps_k (3.3's last paragraph). (5) Lemma P, and the parity rule of 4.3 against EM:544-575 and CMP 119
 (3.15)-(3.17): every non-Gaussian factor a function of g b with the prefactor g^(-2) on the action; whether the chart
 density, the soft gauge weight, the pivot links and the inherited list obey it; and whether the cut's asymmetry at the
-trivial datum is confined to the edge of the cut domain.
+trivial datum is confined to the edge of the cut domain. (6) 4.6: whether the order-g^2 part of the step at the
+trivial datum depends only on the level-k Gaussian structure and the current weight, and the level convergence (L-inf)
+against Balaban's k-step minimal configurations and propagators (CMP 95, 96, 109, 119; not read here).
 
 **5.4 The infrared seed.** Not attacked (Step 1): no route off the lane's map was found, and the carry does not make
 the seed easier. Nothing in this row bears on (N-phys), (W), (SL)/(RR), or on the continuum datum.
@@ -444,3 +464,5 @@ c7fef8b21b58, with Claude and Codex as authors of their text; Balaban, CMP 102 (
 copies read as page images, the construction being Balaban's throughout; rows 1256, 1260, 1267, 1268 of this lane
 (Claude Opus 5.5, Mac mini worker 2) for the carry this row extends; row 1218's reading (Codex) of Bhattacharjee,
 Bhattacharya, Lockwood, Romanov, Sessford and Singha Roy, and of Zeng, used only to place the seed (Step 0).
+
+RESULT: Row 1280 (Claude Opus 5.5 max, Mac mini worker 2, 13:35Z-14:26Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys), (SL)/(RR)) stays OPEN and was not attacked (a dozen re-derived routes all on the lane's map; Step 1). Worked item: (U) of row 1268, the test-cube input of the one-cutoff carry on the pin route. READ in Sussman and Alpoge's CA-I/III (31a47c543775) and YM4_EM (c7fef8b21b58), with Claude and Codex as authors of their text, and in Balaban's CMP 119 and CMP 102 (owner's copies, page images): the account reads Balaban's R_j at the running minimum of the run's own couplings while the scaffold reads theta_r, and in EM the cube size enters the unmarked total only through Balaban's all-small-field cube tests, whose references are cube-dependent, so (U) is a real condition. PROVED: Lemma W (windows: one jump each, R differs by one factor L, at most 2 D(2 Y_b)/c_0 + 1 levels per jump point); Proposition W2 (the account's envelope cannot bound the windows uniformly in n; any y^(-1/2-delta) bound can); Lemma SW (sandwich comparison of two cuts, given the supplier-structure hypothesis (E+)); Corollary U (given (U-dom)); Theorem U: (FC-1) along the pin runs at every level without (U), summable and tending to 0 as the scaffold floor grows, GIVEN (U-dom), (E+) and row 1268's other hypotheses, so (U) leaves the carry's input list. ARGUED: (U-dom), mutual domination of Balaban's R- and LR-cube references up to o(delta_k) (mechanism CMP 102 (190), CMP 119 (3.6)-(3.9); the crude (3.13) bound is not enough). PROVED: Lemma P (exact cancellation of the odd part of a symmetric integral). ARGUED, new on the record as far as grepped: Proposition PE, the parity envelope |f_(k+1)| <= C theta^(-1) polylog + Gaussian tail (a Balaban step has no half-loop term), given (P1)-(P4), of which (P3) at the trivial datum and (P4) are supported by Balaban's CMP 119 p. 249 and the account's own description of the CMP 116 expansion (centred Gaussian, Mayer and cut identities, conditioning, whitening, decoupling); with it the drift becomes polylog and (U) closes a second way without (U-dom); and 4.6, the same mechanism with level convergence gives Route Z's flow law (B3+) of row 680. OPEN: the seed and the mass gap; (U-dom) or (P1)-(P4); (E0)-(E6), (E+), (TH) against Balaban's CMP 116 (not on this machine); row 1267's (H2)-(H3); 9.1:prop-blind-site-expansions; (DET)'s inputs; the account's premises. Output library/gap-mini-solve-ap-opus.md.

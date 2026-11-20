@@ -10,7 +10,10 @@ worker; a relay copies the file.
 Labels: PROVED (written argument, checkable by hand), ARGUED (argument with a named
 gap), GUIDE (heuristic or numeric guide, never a proof step), OPEN.
 
-## Step 0. Orientation (written 2026-11-20T12:05Z by date -u)
+Correction note (12:18Z by date -u): the step headings first carried clock times that I had guessed, not read; they
+were later than the real time. They are replaced by "before 12:17Z by date -u". Times below come from date -u.
+
+## Step 0. Orientation (written 2026-11-20, before 12:17Z by date -u)
 
 **Read for this row.** GOAL.md; FINISH.md L1-84, L299-352 and row 1264; `library/prior/gap-onebound-read-sol.md`
 (row 1218) in full; `parts/gap.md` L1-104; the RESULT lines of the gap-mini-solve rows a-ag (rows 1188-1258); row 1258
@@ -38,7 +41,7 @@ Sussman and Levent Alpoge, with Claude and Codex as authors of their text, after
 **Running beside this row (files not visible at this pin):** row 1259 (`gap-mini-solve-ah-opus`, worker 1; its file
 holds only a header at this pin) and row 1260 (worker 2, (FI) at pins). Overlap with row 1259 cannot be checked here.
 
-## Step 1. How to attack it, and the item chosen (written 2026-11-20T12:40Z by date -u)
+## Step 1. How to attack it, and the item chosen (written 2026-11-20, before 12:17Z by date -u)
 
 **1.1 The crux (judgement, ARGUED; no new screen).** The open core is the base datum: (SL) of row 1258 at one coupling,
 or (N-phys) at every cutoff. Either is a lattice gap of Wilson SU(2) with a volume-uniform count at order-one coupling,
@@ -77,7 +80,7 @@ is an implication of its cited inputs. Failure: an explicit configuration on one
 characteristic function is 1 and the step's is 0; then (8.6:eq-prefactor-monotone-a) fails as stated and the lemma
 needs a different comparison. Either outcome changes the registry row.
 
-## Step 2. The two characteristic functions, read (written 2026-11-20T12:55Z by date -u; READ unless marked)
+## Step 2. The two characteristic functions, read (written 2026-11-20, before 12:17Z by date -u; READ unless marked)
 
 Sources: Balaban CMP 119 (1988) 243-285 and CMP 122 (1989) 175-202 ("122a"), read from the page images of the legal
 copies in the papers folder (the OCR layer is garbled in formulas). Credit: Tadeusz Balaban.
@@ -138,7 +141,7 @@ Step 3). After the preparation, a first-class component Z carries at the top lev
 Whether such cubes exist in a healed island, and which step function the term X' carries on them, is a question of
 the geometry of the island representation. That is Step 3.
 
-## Step 3. The island representation in Balaban's text, and the step (*) (written 2026-11-20T13:25Z by date -u)
+## Step 3. The island representation in Balaban's text, and the step (*) (written 2026-11-20, before 12:17Z by date -u)
 
 **3.1 READ: what a healed island carries (CMP 122b pp. 377-379, page images).** Before the last decomposition the R
 operation has the form (1.70): (1.1) = chi_k chi_(k,Lambda) delta_(G_0)(V'_k) chi exp A'_k(...) chi_(h,1/2) int dB ...
@@ -176,14 +179,16 @@ Scope: this remark shows that the account's (*) cannot be proved by comparing (1
 that the lemma is false, because the healed term carries more than chi_k^((N)) (3.1).
 
 **3.4 Corollary H (the step (*) of 8.6:lem-prefactor-monotone). PROVED GIVEN 3.1 and premise (BG) below.**
-In the term (O, X) the top-level small-field function on the cubes of an island X_a is the product of
-chi_k(X_a^(~-6)) (a product of (2.17) factors over the cubes of X_a^(~-6), which contains X_a) with the old
-chi_k(Omega_k^(~4)) on the cubes where that is present. In the term (O, X') the step's own function on the cubes of X_a
+In the term (O, X) every cube of the region of an island X_a carries a (2.17) factor: the old chi_k(Omega_k^(~4)) on
+the cubes of Omega_k^(~4), and the factor chosen in the decomposition 1 = chi_k((Omega_k^(~4))^c) + chi_k^c(...) on the
+other cubes of the component, since Balaban introduces that decomposition exactly on (Omega_k^(~4))^c "in components of
+Z" (3.1) and a first-class component takes the small-field branch. Balaban writes the result as chi_k(X_i^(~-6))
+"combined with the function chi_k(Omega_k^(~4))"; this description does not depend on the meaning of the layer index. In the term (O, X') the step's own function on the cubes of X_a
 is the (2.17) factor on each cube. Under (BG) each (2.17) factor is the same function of V_k in both terms, so
     chi_a^prep = chi_a^step * (other characteristic functions) <= chi_a^step      pointwise,
 which is (*). The rest of the account's proof (CA-II:102818-102830: products over islands, positivity of the other
 three factors) then gives (8.6:eq-prefactor-monotone-a).
-Premise (BG), OPEN here: on every cube Q of X_a^(~-6), the field U_(k,Q)(V_k) of (2.16) in the term (O, X) (built on
+Premise (BG), OPEN here: on every cube Q of the region of X_a, the field U_(k,Q)(V_k) of (2.16) in the term (O, X) (built on
 Balaban's new determining set after R, CMP 122b p. 377: "the new determining set B_k") equals the field of the term
 (O, X') (built on the determining set of a region with no island at X_a). The account assumes the same thing off X_a
 ("the characteristic functions they carry coincide off the regions X_a", CA-II:102795-102797) and its companion lemma
@@ -209,22 +214,24 @@ region Lambda_k of a history with no large field there, where the determining se
 on Omega_k, CMP 122a (1.13)); and off X_a^(~-6) the two terms have the same outer datum O, hence the same live
 components with the same admissible subsequences (Definition 8.6:def-island-representation, outer data). The field
 U_(k,Q)(V_k) = U(B_k(Q^(~4)), M(Q_k^(s*) V_k)) of (2.16) depends only on B_k near Q and on V_k. Hence on every cube Q of
-X_a^(~-6) it is the same function of V_k in the two terms. QED
+the region of X_a it is the same function of V_k in the two terms. QED
 
-**3.7 The cube inclusion (G). PROVED (geometry), with Balaban's layer convention.** Write H_X for a history whose
-class component at X_a is healed (term X) and H_X' for one with no large field at X_a (term X'), with the same outer
-datum and the same other islands. Near X_a, Omega_k^c is contained in X_a in H_X (X_a is a connected component of
-Lambda_k^c and Omega_k^c is contained in Lambda_k^c because Lambda_k is contained in Omega_k). Let Q be a cube of
-Omega'_k^(~4) (history H_X') near X_a that is not a cube of X_a^(~-6). Then Q is more than six layers from X_a and at
-least four layers from every other part of Omega_k^c, so Q is a cube of Omega_k^(~4) in H_X. So every cube on which the
-term X' carries a (2.17) factor near X_a carries the same factor in the term X (by 3.6), either from chi_k(X_a^(~-6)) or
-from the old chi_k(Omega_k^(~4)). Layers are counted in the same cubes for the shrinking ~4 and the enlargement ~-6;
-this is Balaban's convention as I read it, not checked against a definition in CMP 119.
+**3.7 The cube inclusion (G). PROVED (from 3.1).** Write H_X for a history whose class component at X_a is healed
+(term X) and H_X' for one with no large field at X_a (term X'), with the same outer datum and the same other islands.
+Near X_a, Omega_k^c is contained in X_a in H_X (X_a is a connected component of Lambda_k^c, and Omega_k^c is contained
+in Lambda_k^c because Lambda_k is contained in Omega_k, CMP 119 (2.1)). In the term X, every cube near X_a either lies in
+Omega_k^(~4), where the old chi_k(Omega_k^(~4)) stands, or in (Omega_k^(~4))^c inside the component's region, where the
+decomposition of 3.1 put the small-field factor. So the term X carries a (2.17) factor on every cube near X_a, and by
+3.6 it is the same function as the factor that the term X' carries on any of those cubes. Cubes whose status is fixed
+by another component (a live one, or another island) are treated alike in both terms, since the outer datum and the
+other islands are the same. So the set of (2.17) factors of the term X' near X_a is a subset of those of the term X.
+The argument uses only that the decomposition of unity is placed on the complement of Omega_k^(~4), not the meaning of
+the layer indices ~4 and ~-6.
 
 **3.8 Result for H-C6a. PROVED GIVEN the cited Balaban displays (TI, 3.1, 3.6, 3.7).** For two admissible families
 X containing X', the top-level small-field function of O_(O,X) on the cubes near the islands of X minus X' is the product
 of the term X' function with further characteristic functions. So (*) holds, in the corrected form
-    chi_a^prep (the product of all top-level functions of O_(O,X) on the cubes of X_a^(~-6)) <= chi_a^step,
+    chi_a^prep (the product of all top-level functions of O_(O,X) on the cubes near X_a) <= chi_a^step,
 and with it the account's (8.6:eq-prefactor-monotone-a), since its other steps (CA-II:102758-102800 and 102818-102830)
 compare factors that are equal. Not checked here: those other steps of the account's proof (the completed action, the
 coupling profile reset, the members that read an island); the account's representation lemma that puts the prepared
@@ -250,11 +257,12 @@ cited displays.** The lemma says that for X the top-level functions on X_a "are 
   the first is 1 and the second is 0. So the sentence "wherever the preparation's characteristic function on such a
   cube equals 1, so does the step's" fails for the objects it names.
 The displayed inequality (8.6:eq-prefactor-monotone-a) is not affected: Balaban's prefactor on a healed island also
-carries chi_k(X_a^(~-6)) (3.1), which covers every cube of X_a, and with it 3.8 holds. Suggested replacement for the
+carries the small-field factor of the decomposition of 3.1 on every cube of (Omega_k^(~4))^c in the component, so a
+(2.17) factor stands on every cube of X_a, and with it 3.8 holds. Suggested replacement for the
 sentence (unproved wording, for the lead): "For X these characteristic functions are chi_k(X_a^(~-6)) of [CMP 122b,
 p. 378], combined with chi_k(Omega_k^(~4)) [CMP 122a, p. 184]; on X_a the determining set is level k by [CMP 122b,
-(1.33)]; they are the factors of [CMP 119, (2.17)] on a set of cubes containing those of X_a, possibly times further
-characteristic functions."
+(1.33)]; together they are the factors of [CMP 119, (2.17)] on every cube of X_a and of its neighbourhood, possibly
+times further characteristic functions."
 
 **3.11 Status of H-C6a after this row.**
 
@@ -264,13 +272,13 @@ characteristic functions."
 | P: the preparation's own top function chi_k^((N)) has threshold 3(1 - beta/2) eps_k eta^2 > eps_k eta^2, so (*) cannot be proved from it | PROVED | CMP 122a (1.24) |
 | 3.10: the account's named objects (1.3)-(1.4) leave the core cubes of X_a without a level-k factor, so its domination sentence fails as written | PROVED | CMP 122a p. 178, condition (ii); CMP 119 (2.1) |
 | BG: the (2.16) field on the cubes of X_a^(~-6) is the same function of V_k in the terms X and X' | PROVED GIVEN | CMP 122b (1.33)-(1.35), CMP 119 (2.1)-(2.2), (2.16) |
-| G: cube inclusion near X_a | PROVED GIVEN | Balaban's layer convention (read, not checked against a definition) |
+| G: cube inclusion near X_a | PROVED GIVEN | 3.1 (the decomposition is placed on the complement of Omega_k^(~4)) |
 | (*) in corrected form, hence (8.6:eq-prefactor-monotone-a) | PROVED GIVEN | 3.1 (CMP 122b p. 378, (1.72)), BG, G, the account's other proof steps |
 
 All of it: Claude Opus 5.5 from Balaban's printed pages, read once; checked by no other model. A check should re-read
 CMP 122b pp. 365, 377-379 and CMP 122a pp. 178-184 on the page images.
 
-## Step 4. Second item: the step (*) of the age lemma (written 2026-11-20T14:30Z by date -u)
+## Step 4. Second item: the step (*) of the age lemma (written 2026-11-20, before 12:17Z by date -u)
 
 **4.0 Why this item.** `8.9:lem-age-lemma` (CA-II:112000-112100) is "Stated; proof incomplete at the step marked (*)",
 and (*) is the join bound (8.9:eq-age-lemma-4) (CA-II:111979), "taken by statement from [CMP 122b, Section 1]". The
@@ -298,10 +306,8 @@ claim is not proved there. The proof below does not use it; it uses only sizes.
 - (H2) Size. Let s_m(A) be the side, in level-m cells (cubes of side M R_m), of the smallest cube containing A. Then
   s_(m+1)(S(A)) <= rho_m s_m(A) + 22, with rho_m = 1/L at a scaling step and rho_m = 1 at a step where Balaban's number
   R drops (the level-(m+1) cell is then no larger than the level-m cell). No two consecutive steps are drop steps.
-  The size bound is the cover (one extra cell per side) plus ten layers per side. Isolation is ARGUED, not read: R_m is
-  a power of L fixed by a slowly varying function of x_m = g_m^(-2) (CMP 119 (2.5)), so it cannot drop at two consecutive
-  levels while x_m is large; Balaban's own square-root bound (CMP 122b p. 385: "for some steps we do not gain the
-  scaling factor") is of the same kind. L >= 9 (the account's floors make L far larger).
+  The size bound is the cover (one extra cell per side) plus ten layers per side. L >= 9 (the account's floors make
+  L far larger). Isolation is Lemma ISO below.
 - (H3) Condition (i) at level m: contained in a cube of side 100 level-m cells, i.e. s_m <= 100 (CMP 122a p. 177).
 - (H4) Condition (ii) at level m with parameter N: at each of the N levels m' with m - N < m' <= m, the image of the
   component satisfies (i) at level m', and no new large-field region is created inside it at level m' (CMP 122a p. 177:
@@ -353,3 +359,49 @@ quiet (8.9:eq-age-lemma-2), preparatory (8.9:eq-age-lemma-3), healing) and of (H
 ("S^(K_1+n_1)(Y) containing S^(K_1+n_1)(X)") is not needed. Not done here: a check of the account's remaining proof
 lines after (*) (CA-II:112100 on), and of the birth rule (8.9:eq-age-lemma-1), which the account takes from CMP 122b
 (1.81) and its discussion; isolation in (H2) is ARGUED, not read from a definition.
+
+**4.6 Lemma ISO (drop steps are isolated). PROVED GIVEN CMP 119 (2.5)-(2.6) (read on the page image, p. 255) and the
+account's Ř_k = R(min over i <= k of x_i) (CA-II:109689).** CMP 119 (2.5): "R_j is the smallest number of the form L^r
+such that R_j >= (log g_j^(-2))^r" (r a fixed exponent). CMP 119 (2.6), first inequality with n = m + 1:
+g_(m+1) <= (1 + g_m^2 beta')^(1/2) g_m, so x_(m+1) >= x_m / (1 + beta'/x_m) >= x_m - beta' for x = g^(-2). Hence the
+running minimum X_m = min over i <= m of x_i obeys X_(m+2) >= X_m - 2 beta'. Two drops in a row would need
+Ř_(m+2) = Ř_m / L^2, i.e. (log X_(m+2))^r <= L^(a-2) < L^(a-1) < (log X_m)^r for Ř_m = L^a, so
+(log X_m / log X_(m+2))^r > L. But if X_m >= max(4 beta', 2e), then 2 beta'/X_m <= 1/2, so log(X_m/(X_m - 2 beta')) = -log(1 - 2 beta'/X_m) <= 4 beta'/X_m,
+and log(X_m - 2 beta') >= log(X_m/2) >= 1; hence
+    (log X_m / log(X_m - 2 beta'))^r <= (1 + 4 beta'/X_m)^r <= exp(4 r beta'/X_m),
+which is below L when X_m > 4 r beta' / log L. So no two consecutive steps are drop steps as long as
+X_m >= max(4 beta', 2e, 4 r beta'/log L + 1) along the run; the run has X_m >= g_U^(-2) with g_U small. QED
+
+## Step 5. Third item: the step (*) of 8.8:lem-target-independence (written 2026-11-20, 12:21Z by date -u)
+
+**5.0 Item.** `8.8:lem-target-independence` (CA-II:109661-109712), "Stated; proof incomplete at the step marked (*)";
+registry row H-C7b (owner none, OPEN; tree node "R9 witness analytic inputs"). Rule 0a: no FINISH row and no
+`library/open-core.md` entry names it. The proof treats g_k, Ř_k, eps_k, delta_k explicitly and says: "Fourth, by the
+step marked (*), delta'_k and the per-scale integers N_0 are defined from (g_j)_(j<=k) and the partitions". So the open
+content of (*), as the proof uses it, is two definitions.
+Moves: H-C7b. Success: the two objects are shown to be functions of (x_i)_(i<=k), the fixed constants and the
+partitions. Failure: one of them reads the target coupling or the stopping level.
+
+**5.1 READ (CMP 122a, page images).** p. 183: "where delta'_j = g_j A_1 p_1(g_j), p_1(g_j) = (log g_j^(-2))^(p_1), and
+p_1 < p_0". p. 179: "Take the smallest positive integer N_0 such that L^(-N_0+1) M R_(k-N_0+1) = M. It is easy to see that
+either there is exactly one such integer, or there are two."
+
+**5.2 Lemma TI8 (the (*) of 8.8, for the objects the proof reads). PROVED GIVEN 5.1, CMP 119 (2.5) and the account's
+Ř_j = R(min over i <= j of x_i).**
+(a) delta'_k = g_k A_1 (log g_k^(-2))^(p_1) is a function of x_k = g_k^(-2) and of the fixed constants A_1, p_1.
+(b) Write R_j = L^(a_j) (R_j is a power of L by (2.5)). Then L^(-N_0+1) R_(k-N_0+1) = 1 (that is, = M/M) iff
+a_(k-N_0+1) = N_0 - 1. Put f(n) := a_(k-n+1) - (n - 1) for 1 <= n <= k. Then f(1) = a_k >= 0, and
+f(n+1) - f(n) = (a_(k-n) - a_(k-n+1)) - 1 lies in {-1, 0}, because R drops by at most one factor L per step
+(CA-II, Definition 8.6:not-local-run: "Ř_(j+1) >= L^(-1) Ř_j") and does not increase (Ř is a running-minimum function).
+So f is non-increasing with steps 0 or -1; if f(k) <= 0, that is a_1 <= k - 1, then f takes the value 0, and N_0, the
+least n with f(n) = 0, exists and is a function of (a_j)_(j<=k), hence of (x_i)_(i<=k) and L. The value 0 is taken at
+one n, or at two consecutive n when a drop step sits there; by Lemma ISO (4.6) drops are isolated, so never at three.
+This is Balaban's "either there is exactly one such integer, or there are two".
+(c) Neither definition reads the target coupling g, the stopping level K(x_0, g) - m, or the constant E of rho_0.
+So, together with the account's own treatment of g_k, Ř_k, eps_k and delta_k (CA-II:109686-109692, read), every object
+in the lemma's list is a function of (x_0, the bare count) and k, which is what the proof needs from (*). QED
+
+**5.3 Scope.** The sentence marked (*) also says, more broadly, that "each object read by the k-th step" is so defined.
+I checked only the objects the lemma lists and the proof uses. The condition a_1 <= k - 1 in (b) holds at every level
+where Balaban's preparation is used (it needs N > N_0, CMP 122a p. 179); at earlier levels N_0 is not read. Standing:
+proved by Claude, unchecked.

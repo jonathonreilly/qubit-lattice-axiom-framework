@@ -283,6 +283,13 @@ time). With the bi-invariant triangle inequality, delta <= sum_p d_p, d_p = d(U_
 Cauchy-Schwarz, sum_p (1 - cos d_p) >= (2/pi^2) sum_p d_p^2 >= (2/pi^2) (sum_p d_p)^2 / (L_1 L_2). The 4D form sums
 L^2 slices per orientation, six orientations. QED
 
+**Not new (found in the final rule-0a grep).** Lemma CE is the untwisted case of the peeling identity and norm bound
+checked in row 791 (`gap-ext-check-opus.md` L62-66: "its boundary word is [g_mu, g_nu] ... standard non-abelian
+Stokes, lasso form"; ||[g_mu, g_nu] - (-1)^k I|| <= sum_j ||eta_j U_(p_j) - I||; ||I - V||^2 = 2(1 - tr V/2)), from
+rows 783 and 788 (`gap-cf-check-opus.md` L18), after Balaban CMP 99 Lemma 1 (row 1038 Lemma LAD,
+`gap-collapse-frame.md` 4.2). Their norm form gives the sharper constant: the slice action is at least
+2 sin^2(delta/2) / (L_1 L_2), which is at least (2/pi^2) delta^2 / (L_1 L_2).
+
 **Small angles (reading of Lemma CC with CE).** For slice holonomies turning by angles theta_1, theta_2 about axes
 at angle phi, Lemma CC gives delta = arccos(1 - 2 s^2) >= 2 s with s = sin(theta_1/2) sin(theta_2/2) sin(phi)
 (arccos(1 - 2s^2) = 2 arcsin s). So the cost is at least (8/pi^2) beta s^2 per slice orientation in 4D, about
@@ -362,8 +369,12 @@ its zero-point energy confines the motion along the valley. This is the precise 
 which have no U(1) analogue, reach the neutral half". Credit: B. Simon, "Some quantum operators with discrete
 spectrum but classically continuous spectrum", Ann. Phys. 146 (1983) 209 (method; RECALLED, not re-read);
 M. Luscher, Nucl. Phys. B219 (1983) 233, and P. van Baal and J. Koller (the small-volume effective Hamiltonian;
-RECALLED). On file only as a belief (row 998 I33; row 1003 item 14) and as the virial ratio of row 1128
-(`gap-council-rg-fable.md` L208-209); Lemma S is not on file (grep for Simon and for discrete spectrum).
+RECALLED). **On file as a recalled statement, not as a written proof** (found in the final rule-0a grep): row 669
+(`gap-skeleton-max.md` L76 and lesson (c) L81: "valleys closed by zero-point energy"); row 670
+(`gap-skeleton-max-b.md` L105-110, (K4): "The operator -Delta + sum_{i<j} |c_i x c_j|^2 on R^9 still has discrete
+spectrum", with Simon listed as "FROM MEMORY ONLY", L397); row 1158 (`gap-paths-fable.md` L105); row 998 I33;
+row 1003 item 14; the virial ratio of row 1128 (`gap-council-rg-fable.md` L208-209). New here: the written hand
+proof, the explicit bound K >= sum_i |y_i|, and Lemma S_n below.
 
 **What it does not give (PROVED from (d)).** The dimensionless gap is z = kappa g(L)^(2/3), which tends to 0 as
 L tends to 0. (N-phys) needs m L of order 10^4 at a fixed large physical size (`gap-mini-neutral-fable.md` 2.4).
@@ -405,7 +416,11 @@ h_(s(l)) h_(t(l))^-1 = exp((lambda(t(l)) - lambda(s(l))) n). QED
 On a contractible block the gauge-invariant content of an abelian field is its field strength; only the holonomies
 of non-contractible loops of the whole torus play the role of the y_i. So a block lift must act on field strength.
 
-### Way B: lift through the field strength. FAILS at weak coupling (RECALLED, physics; sign on file).
+### Way B: lift through the field strength. FAILS at weak coupling (RECALLED, physics; ON FILE as row 1193).
+
+On file: row 1193 (`gap-mini-solve-d-fable.md` L82) screened "zero-point closing of flat valleys (Simon's x^2 y^2,
+Luscher's toron Hamiltonian) as a volume-uniform operator inequality": "it bounds H below, not E_1 - E_0; in a
+background field the spin term reverses the sign". Way B is that entry; the paragraph below only spells it out.
 
 The block version of Lemma S's zero-point energy is the one-loop energy of the transverse (charged) modes in a
 constant abelian field strength B along n. Savvidy (1977) computed it: at small B it is negative relative to B = 0
@@ -453,10 +468,12 @@ domain wall, and the domain size is fitted, not derived (RECALLED).
 
 The commutator energy plays two opposite roles. (i) Inside one periodic block it is a confining potential for the
 zero modes, and quantum fluctuation transverse to every axis lifts the valley (Lemma S, Lemma S_n): a neutral gap
-kappa g(l)^(2/3)/l. (ii) Between blocks it is a junction cost that aligns axes: with beta large, an axis change of
-angle delta costs at least (2/pi^2) beta delta^2 per slice orientation (Lemma CE), so at weak block coupling
-low-action fields keep one axis over long distances, and there (Lemma DOM) the axis-parallel modes are U(1)
-photons. A neutral gap at large size needs axis changes to be frequent, that is fluctuation to beat the junction
+kappa g(l)^(2/3)/l. (ii) Between blocks it is a junction cost that aligns axes. The proof of Lemma CE works for
+any lattice rectangle R (a disc): if the holonomy around its boundary has angle delta, the plaquettes of R cost at
+least (2/pi^2) beta delta^2 / |R|; a rectangle that crosses blocks turning about different axes has such a
+boundary holonomy, and on a 4D block the cost summed over parallel rectangles is scale free. So at weak block
+coupling (beta large) low-action fields keep one axis over long distances, and there (Lemma DOM) the axis-parallel
+modes are U(1) photons. A neutral gap at large size needs axis changes to be frequent, that is fluctuation to beat the junction
 cost: the coarse theory must be disordered, which is the strong-coupling side of the band. The owner's picture is
 the right picture of the confined vacuum (it is the domain picture), but its directional ingredient, the
 commutator, is by itself a force for order at weak coupling and a force for a gap only inside a periodic block.
@@ -469,7 +486,12 @@ band; D puts the domain size in by hand.
 
 ## Step 7. A fact test for directional mechanisms, the GUIDE run, and the verdict
 
-### Fact test GG (commutators present, axes ordered, neutral half fails)
+### Fact test GG (commutators present, axes ordered, neutral half fails). ON FILE: row 669 and row 1004 Lemma GG.
+
+Found in the final rule-0a grep: this is the "third test" of row 669 (`gap-skeleton-max.md` L77-80: "SU(2) +
+adjoint Higgs ... no gap, photon, the field selects a U(1)"; "a proof must fail when an adjoint Higgs field is
+added"), and its end point at kappa = infinity is row 1004 Lemma GG (`gap-outside-box-max.md` 6.2, PROVED there,
+checked by no one). The paragraph below restates it; the only addition is the reading through Lemma DOM.
 
 Lattice SU(2) with a unit adjoint field phi_x in S^2 (in su(2)) and weight beta sum_p (1/2) tr U_p +
 kappa sum_l <phi_(s(l)), Ad(U_l) phi_(t(l))>. In unitary gauge phi_x = n. At kappa = infinity the second term
@@ -481,8 +503,8 @@ commutator of Steps 2-5 and the transverse lift, and is believed to keep the mas
 Coulomb phase; on file as BELIEF in row 1017, `gap-compact-rigidity-max.md` L94). By Lemma DOM the photon is the
 axis-parallel direction of the ordered axis. **Use:** a proof of the neutral half that uses the SU(2) commutators but
 whose steps also hold when an adjoint field orders the axes is wrong. The directional idea must enter through the
-absence of axis order, not through the commutator alone. This sharpens Lemma PT of row 998 (a product with a free
-factor) to a free subgroup selected by order.
+absence of axis order, not through the commutator alone. Row 669 drew the same lesson ("the proof cannot use the
+group alone; it must use the dynamics of the pure gauge measure").
 
 ### GUIDE run (not a proof step)
 
@@ -505,7 +527,8 @@ than only the flux half?
    half-turns is 't Hooft's twisted box m = (1, 1, 1), Fact T in all three planes, the flux half, shared with Q_8
    (Corollary CC1). On file as Fact T and Route T.
 3. Every other non-commuting junction is curvature (Corollary CC2). Its energy is the quartic, scale-free
-   commutator energy, a lower bound for every lattice field (Lemma CE). Kinematically it acts inside the neutral
+   commutator energy, a lower bound for every lattice field (Lemma CE; on file as the untwisted case of the row 791
+   peeling identity and norm bound). Kinematically it acts inside the neutral
    sector only through intertwiners at junction sites, which U(1) lacks; one axis on two groupings already fails to
    commute there (Proposition PT2). PROVED.
 4. Dynamically, yes in one periodic block: two or more non-commuting directions confine the zero modes, and the
@@ -516,20 +539,26 @@ than only the flux half?
 5. In a tiling, the same commutator energy is a junction cost that aligns axes at weak coupling, and in an aligned
    region the axis-parallel modes are exactly U(1) at quadratic order (Lemma DOM, PROVED; Lemma GA kills the block
    form of Simon's inequality, PROVED). A neutral gap at large size needs disorder of block axes at the band scale,
-   (TILE-dis), which is the wall (W)/(N-phys) in another form. Four ways stop there (Step 6). Fact test GG says
-   any directional proof must use the absence of axis order.
+   (TILE-dis), which is the wall (W)/(N-phys) in another form. Four ways stop there (Step 6). The adjoint-Higgs
+   test (row 669 "third test", row 1004 Lemma GG; read here through Lemma DOM) says any directional proof must
+   use the absence of axis order.
 
 **Mass gap: NOT proved. Nothing disproved.** (N-phys), (W), the continuum datum and (TILE-dis) stay OPEN. No
 statement of the T0 chain or of the gap chain changes status.
 
-**New against the record (greps in Step 1 and in Steps 5-7):** Lemmas DR, J (several-axis form of row 1013's corner
-graph), CC with Corollaries CC1-CC2, PT, PT1, PT2, CE, SS, S, S_n, GA, DOM, the role inversion and fact test GG.
-All are elementary; their value is to close the owner's idea as a route with the reason, and to place the
-directional mechanism exactly: inside one periodic block it works (Lemma S), across blocks it needs disorder.
-Not new: Fact T, Route T, the small-volume g^(2/3) value (row 998 I33, row 1128 virial ratio), the paramagnetic
-sign (row 1244 table), the RG reading (row 1249), Lemma DOM's consequence at Gaussian order for K_3 (row 1241:
-"at Gaussian order K_3 is massless", which Lemma DOM explains in general: commutator effects around a one-axis
-background start at third order).
+**New against the record (greps in Step 1 and a final grep before this verdict):** Lemma DR (the axes of turned
+sub-blocks are gauge), Lemma J (several-axis form of row 1013's corner graph, at group level), Lemma CC with
+Corollary CC2 (central only for perpendicular half-turns), Propositions PT, PT1, PT2 (projected rotations commute;
+the residue sits on intertwiners at junctions), Lemma GA, the written proofs of Lemmas S and S_n (the statement for
+three directions was on file only from memory), the lattice form of Lemma DOM (standard background-field splitting,
+used at one loop in row 1244 L200-206), and the role inversion as a synthesis. All are elementary. Their value is to
+close the owner's idea as a route with the reason, and to place the directional mechanism exactly: inside one
+periodic block it works (Lemma S), across blocks it needs disorder.
+**Not new:** Fact T and Route T (Corollary CC1); Lemma CE (row 791 peeling identity and norm bound, rows 783, 788);
+the small-volume mechanism and its g^(2/3) value (rows 669, 670, 998, 1003, 1128, 1158); Way B (row 1193); the
+adjoint-Higgs test (row 669 third test, row 1004 Lemma GG); the paramagnetic sign (row 1244 table); the RG reading
+(row 1249); Lemma DOM's consequence for K_3 (row 1241: "at Gaussian order K_3 is massless", which Lemma DOM explains
+in general: around a one-axis background, commutator effects start at third order).
 
 **Suggested check (one reader of the other provider, line by line):** Lemmas J, DR, CC, PT, PT2 (b), CE, S (a)-(c),
 S_n, GA, DOM; the GG reduction at kappa = infinity. Moves: (N-phys) only as a closed route; no consumer reads
@@ -546,4 +575,4 @@ block renormalization that Way C refers to, cited and not used in any proof here
 1016, 1017, 1046, 1128, 1132, 1161, 1179, 1188, 1194, 1200, 1201, 1228, 1241, 1244, 1249 as cited. The owner's
 three-axis idea is the starting point of every step.
 
-RESULT: Row 1273 (Claude Opus 5.5 max, Mac mini worker 2, 12:27Z-12:52Z; author only, checked by no one). Mass gap NOT proved, nothing disproved; (N-phys), (W), the continuum datum stay OPEN. The owner's multi-direction blocks, taken literally: PROVED by hand that the axes of turned sub-blocks are pure gauge (Lemma DR, via junction invariants Lemma J) and that gauge-projected rotations at distinct sites commute for all axes (PT); that a junction commutator is central only for perpendicular half-turns (Lemma CC), which gives 't Hooft's m = (1,1,1) twisted box, the flux half, on file as Fact T and Route T; that every other junction is curvature with a scale-free quartic cost bounding the Wilson action of every field (Lemma CE) and acting on the neutral sector only through intertwiners at junctions, which U(1) lacks (PT2); and, in the reduced zero-mode model, that two or more non-commuting directions give a discrete spectrum and a neutral gap kappa g^(2/3)/L while one direction gives none (Simon's method, Lemmas S and S_n). So the commutators do reach the neutral half, but only inside one periodic block, with z -> 0 at small L. In a tiling the same commutator energy aligns axes at weak coupling and one-axis regions are U(1) in their parallel modes (Lemma DOM; Lemma GA kills a block form of Simon's bound); the route stops at (TILE-dis), disorder of block axes at the band scale, which is the wall in another form (four ways tried). New fact test GG: an adjoint field that orders the axes keeps every commutator and the massless photon. Output library/gap-owner-threeaxis-opus.md.
+RESULT: Row 1273 (Claude Opus 5.5 max, Mac mini worker 2, 12:27Z-12:55Z by date -u; author only, checked by no one). Mass gap NOT proved, nothing disproved; (N-phys), (W), the continuum datum stay OPEN. The owner's multi-direction blocks, taken literally: PROVED by hand that the axes of turned sub-blocks are pure gauge (Lemma DR, via the several-axis junction invariants of Lemma J) and that gauge-projected rotations at distinct sites commute for all axes (Proposition PT); that a junction commutator is central only for perpendicular half-turns (Lemma CC), which gives 't Hooft's m = (1,1,1) twisted box, the flux half (on file: Fact T, Route T); that every other junction is curvature, whose action cost is the commutator bound already on file (rows 783/788/791 peeling identity), and which acts on the neutral sector only through intertwiners at junctions, which U(1) lacks, with one axis on two groupings already non-commuting (Proposition PT2); and a written proof (Simon's method) that in the reduced zero-mode model two or more non-commuting directions give a discrete spectrum and a neutral gap kappa g^(2/3)/L, one direction none (Lemmas S, S_n; the statement was on file only from memory, rows 669, 670). So the commutators reach the neutral half only inside one periodic block, with z -> 0 at small L. In a tiling the same commutator energy aligns axes at weak coupling and one-axis regions are U(1) in their parallel modes (Lemma DOM, lattice form of the background splitting; Lemma GA kills a block form of Simon's bound; the field-strength form fails by the spin sign, on file as row 1193); the route stops at (TILE-dis), disorder of block axes at the band scale, the wall in another form (four ways). The adjoint-Higgs test (row 669, row 1004 Lemma GG) binds any directional proof. Output library/gap-owner-threeaxis-opus.md.

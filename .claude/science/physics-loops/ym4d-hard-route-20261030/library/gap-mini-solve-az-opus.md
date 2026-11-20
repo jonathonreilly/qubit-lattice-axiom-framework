@@ -181,3 +181,51 @@ use at (P). That budget is the account's mechanism for values; it is not asserte
 older preparatory cells. So the young case is a gap in the outstanding proposition's stated scope, consistently
 marked by the account, and not an error of its text.
 
+## Step 4. The reading (H-par') at (T), and a correction to row 1309 (written 18:08Z by date -u)
+
+**4.1 What the account's site (T) does with a unit's read set (READ).** (1) A response map R_p(t, sigma) is attached to
+Balaban's localisation datum p = (square, Y_0); "the amplitude t multiplies the shift piece, which is the product of
+chi-hat_square with the response"; and "eta_p <= 1 denotes the decay factor between the block square and the set S_v"
+(5.2:def-sites-units, CA-II L5300-5333). (2) Type-four units (older B^(j), B'^(j), chain terms on live arrested
+pieces) are read through their orbit datum, holomorphic over the chart G_eps(S_v) of gauge rotations on the read set,
+whose radius at each live law site s is eps_k(s) = e(s) - sum_(k'<k) eta_(k')(s) >= (3/4) e(s) (CA-II L25200-25217); the
+rotation u rides with t, and the riding-rotation lemma gives |d_t F(0)| <= N eta_p^(1/2) / w_L (CA-II L5869-5900,
+L6684-6705). Inner-class law sites lie in Z_(k-N_k), deep inside the large-field region (CA-II L5340-5345), and the
+allowances eta_(k')(s) are reserved there too. (3) The second stage is Balaban's cluster expansion [CMP116 (2.1)-(2.41)]
+on potentials V(Y, ., B) of the form [CMP116 (1.42)-(1.43)]; an output with localisation domain X is bounded by a
+constant times e^(-kappa d(X)) (5.2:lem-second-stage-activities, CA-II L6902-6960).
+
+**4.2 Correction to row 1309 Step 7.2 (ARGUED; it weakens a claim of that row).** Row 1309 said that Theorem RL-T holds
+under (H-par') "by the same proof: (T1)-(T6) use the localisation domain only". That is too quick. Under (H-par') the
+read set of a re-indexed blind store is S_v = Y, so by 4.1 (1)-(2) its dependence on the amplitude t_square of a
+response block decays only like eta_p(square, Y)^(1/2), that is, in dist(square, Y). A first-stage potential that
+links the store to square is localised, in the plain machine, on A(Y) together with square and a connection, whose
+plain length needs decay in dist(square, A(Y)). When a response block is nearer to an island part of Y than to A(Y)
+(blocks are at least 3 R - 4 cubes from islands by the moat, lem-island-geometry (a), but nothing bounds their distance
+to A(Y) by their distance to Y), the plain first-stage bound cannot be applied by statement. What the inputs do give is
+e^(-kappa d°(Y)) eta_p(square, Y)^(1/2), and with W excused
+d°(A(Y) union square union (Y cap W)) <= d°(Y) + dist(square, Y) + 1,
+because every island part of the connected Y touches Y minus W, which lies in A(Y) (Lemma A1). So the output is
+correct only in the island-blind format, filed with the island part. Hence:
+
+**Proposition H (ARGUED, replaces row 1309's (H-par') claim).** The reduction of row 1309 (re-index at A(Y), take the
+plain (T) statements by statement, re-file) is valid at (T) under
+- (RS) the shifted configuration of the T-step, the rotation u included, is unchanged on the islands of the blind
+  inputs: equivalently (H-par) with (U-loc) of row 1309;
+and without (RS) it needs, in place of the plain first-stage bound, its island-blind form
+- (FS°) for a blind store with read set Y and active domain A(Y), the first-stage elements that link it to response
+  blocks square_1, ..., square_n obey the plain first-stage bound with each eta_p(square_i, A(Y)) replaced by
+  eta_p(square_i, Y) and the output's tree length replaced by d°,
+after which the second stage (Balaban's cluster expansion, CMP 116 Section 2) can still be taken by statement for
+potentials indexed at their active domains, since islands carry no integration variable at (T) (lem-island-geometry
+(d1)) and the parameter principle (4.24:prf-exterior-independence) covers non-integrated shared slots.
+
+Evidence on (RS): the shift piece is supported on blocks (4.1 (1)), which supports (RS) for the shift; but the account
+reserves rotation allowances at inner-class law sites deep inside large-field regions (4.1 (2)), so it does not assume
+(RS) for the rotation. (FS°) is a statement about the proof of the account's first-stage lemma, not about Balaban's
+cluster expansion, so it is a much smaller rerun than the account's route (which reruns CMP 116 Section 2).
+
+**4.3 What Steps 3-4 change in row 1309's table.** Theorem RL-T and RL-L: PROVED GIVEN (H-fmt), (RS) (in place of
+(H-par')), (TH), (F_RL); or GIVEN (H-fmt), (FS°), (TH), (F_RL). Theorem RL-P: extended to stores at most r_*(j) levels
+younger than the shell (Corollary Y1'); the younger stores stay OPEN (Step 3). (H-par') alone is not enough (4.2).
+

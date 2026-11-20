@@ -16,13 +16,14 @@ How we work, Joining, Working efficiently, Rules; the RESULT lines of rows 1180-
 row 1256 (`gap-mini-solve-af-opus.md`, Steps 1, 3, 4); row 1258 (`gap-mini-solve-ag-opus.md` 4.1, 6).
 - Beside the account's premises, the Jaffe-Witten gap on the account's tr F^2 sector reads one infrared input: (N-phys)
   (rows 1161, 1179, 1225; check 1232), or, on the one-cutoff carry of row 1233 (check 1242; rows 1255, 1256), a seed at
-  one base datum. Row 1258 states the base seed in its weakest proved-sufficient form, (SL) or (RR) at one cutoff's
+  one base datum. Row 1258 gives a sufficient one-coupling form of the base seed, (SL) or (RR) at one cutoff's
   couplings, at slab thickness of a few tens of correlation lengths.
 - Every route family for that infrared seed found by about eighty plain-brief rows is on file with a first failing step
   (`parts/gap.md` methods 19-36, route registry RA-RG; screening tables of rows 1189, 1194, 1199, 1237, 1256). Row 998 9.5
   asks for no further fresh-framing exercise. Proposition CA-FAIL (row 1072, check 1074: HOLDS AFTER CORRECTION) refutes
   full-specification strong mixing in the window; (SL) conditions on two slices only, so CA-FAIL does not bind it as
-  stated (a pinned single slice leaves the next layer of spatial links free, so no pinned 3D O(4) layer appears).
+  stated (ARGUED: at slab thickness 2 or more the spatial links between the two pinned slices are free, so no pinned
+  3D O(4) layer of CA-FAIL's kind appears).
 - The one-cutoff carry on the pin route (row 1256 Proposition PIN, Lemma OFF) reads, beside the base seed: (FI) at pins
   (clause (0)'s Balaban flow from the pin a_K reaches the reference coupling X after K steps, as the tuned run does),
   the 9.1 hypotheses (a)-(e) at u = 0 with (e) = `9.1:prop-blind-site-expansions` OUTSTANDING in the account, (DET)'s
@@ -75,8 +76,8 @@ two (III:55767-55768) and assumes the identity where it uses it (1.1). So (FI) i
 two exact rewritings of one bare datum, with different auxiliary data, assign the same effective coupling. Exact
 agreement is not to be expected (the coupling of a Balaban representation is the coefficient of the Wilson term beside
 remainders that depend on the auxiliary data). What the carry needs is less: Lemma OFF and Proposition PIN of row 1256
-need only a defect bound |x_K(a_K) - X| <= varpi with varpi bounded uniformly in K (row 1256 3.4 Remark 2: the offsets
-become 1 <= delta <= ceil((B^sharp + c_5 + varpi)/lambda^sharp)).
+need less than exact agreement: a defect bound with varpi bounded uniformly in K, read at every level of the run up to
+its first passage (Step 3, Lemma OFF': the first-passage depth of a_K then stays within a bounded distance of K).
 
 **1.4 A route that avoids a step-by-step comparison (idea, to be tested in Step 2).** Both frames describe the same bare
 datum, so they have the same Schwinger functions at the reference scale. If an account theorem expresses one physical
@@ -98,7 +99,7 @@ theta_r(X)" (III:70559-70562). The pins a_n = theta_n - zeta_*^n(0) are defined 
 (v-a) says so in its own words: "the n-step recursion from x_0 = a_n (with infinite-lattice coefficients and the
 coupling-dependent choices fixed in terms of X) ... ends at x_n = X exactly" (I:2836-2838). The frozen run's coupling at
 depth r differs from theta_r by the shift zeta_(r), and along a tuned run |zeta_(r)| <= |w| + 2c_2 + sum_(u<r) iota_u,
-with the drift sum of order theta_r^(1/2) (log theta_r)^(p_0) (III:69020-69030, (c) and (9.13:eq-canonical-scaffold-2)).
+with the drift sum of order theta_r^(1/2) (log theta_r)^(p_0) (III:69015-69017, (c), and III:69052-69054, (9.13:eq-canonical-scaffold-2)).
 So at depth r the two frames evaluate the coupling-dependent choices at couplings whose inverse squares differ by up to
 order theta_r^(1/2) polylog. (FI) at pins says these two runs from the same bare datum a_K reach the same coupling at
 depth 0.
@@ -113,19 +114,23 @@ scaffold comparison has to apply to the depth-(n+1) scaffold at the bare data a_
 data in the window of a_(n+1), so a continuity or bootstrap argument along w is needed" (III:55650-55654; "Stated; proof
 incomplete"); the first half of the uniqueness corollary as used in `9.13:prop-limit-member` (III:70718-70723,
 III:71075-71081). A grep of CA-I, CA-II and CA-III at 31a47c543775 for "scaffold comparison", "cross-scaffold" and
-"varpi(g)" finds no labelled statement of it and no proof; every hit is a use. (CA-I's "scaffold" in chapter 4.21 and
-CA-II's `5.1:def-source-free-scaffold`, `5.5:not-one-scaffold` are the machine's geometric scaffold, a different object.)
+"varpi(g)" finds no labelled statement of this own-threshold comparison and no proof of it; every hit on it is a use.
+Two further hits use the words otherwise: III:18576 ("the flat scaffold comparison of this chapter", a flat-field
+statement about group-valued factors in chapter 9.1) and II:134127 ("The scaffold comparison in all zones", listed as an
+assumption of a chapter 8 proposition, with its own ceiling on gamma, II:134149; I did not identify its object). (CA-I's
+"scaffold" in chapter 4.21 and CA-II's `5.1:def-source-free-scaffold`, `5.5:not-one-scaffold` and the "frozen scaffold of
+the stage" at II:39298 are the machine's geometric scaffold, a different object.)
 Theorem 3.1 clause (0) lists among "Not asserted": "a sign of x_k - x_(k+1) at a single step ... monotonicity of a tuned
 bare coupling ... regularity of beta_j in the couplings" (I:2552-2556).
 So: **(FI) at pins with a bounded defect is the account's unstated "scaffold comparison" at the pins**, and row 1256's
 (FI-W) is the same comparison on the window. The account's Theorem 3.1 (v-c)(2) (I:2865-2868), the window inclusion and
 the identification of first-passage limits, rests on it through `9.8:cor-subsequential-limits`.
 
-**2.3 What the carry needs from it (PROVED from row 1256).** Lemma OFF and Proposition PIN need only
-(SC-pin) |x^own_K(a_K) - X| <= varpi for every K >= K_0, with varpi bounded uniformly in K;
-then by row 1256 3.4 Remark 2 and Lemma OFF the pin a_K first-passes at a depth K + delta with
-1 <= delta <= ceil((B^sharp + c_5 + varpi)/lambda^sharp). (The proof of Lemma OFF uses x_K(a_K) only through the window
-X - varpi <= x_K <= X + varpi and clause (0)'s two-sided flow bound.) The account's own bound varpi <= 1 would do.
+**2.3 What the carry needs from it (PROVED in Step 3 from row 1256).** Lemma OFF and Proposition PIN need only
+(SC-pin) |x^own_k(a_n) - x^Theta at level k| <= varpi_n at every level k <= min(n, K(a_n, g)), for every n >= K_0,
+with varpi_n bounded uniformly in n. Then Lemma OFF' (Step 3) puts the first-passage depth K(a_n, g) within a bounded
+distance of n, which is what Corollary OFF-1 of row 1256 uses. A bound at the last level alone does not suffice: the
+lower bound on the first-passage depth reads the intermediate levels. The account's own bound varpi(g) <= 1 would do.
 
 **2.4 A route that fails: calibration by the two-point witness (PROVED, elementary).** Idea of Step 1.4: both runs from
 a_K carry the same bare datum, so the same Schwinger functions; a theorem expressing a reference-scale correlation as an
@@ -229,27 +234,35 @@ clause (0) from a_n. Then |x^own_k(a_n) - x^Theta_(n-k)| <= varpi_n := e^Lambda 
 This is the account's scaffold comparison at the pins, with an explicit modulus. The same proof on the window, with
 run A the Theta_X-run from a_n - w, gives it for |w| <= varrho_2/2 wherever (G1)-(G5) hold there.
 
-**Lemma OFF' (PROVED GIVEN Corollary SC-pin with varpi_n <= B^sharp and the pairwise increment bound of the pin run).**
-Put D' := ceil((B^sharp + 2c_2 + varpi_n)/lambda). Then the first-passage depth K_0(n) := K(a_n, g) satisfies
-n - D' <= K_0(n) <= n.
-*Proof.* Upper bound: if the own-threshold run of a_n reached level n without passing, Corollary SC-pin at level n would
-give x^own_n <= X + varpi_n <= X + B^sharp, a passage at level n; so K_0(n) <= n. Lower bound: suppose K_0 := K_0(n)
-<= n - D' - 1. Corollary SC-pin applies at level K_0 (K_0 <= min(n, K_0)), and the pairwise bound with (i, j) = (K_0, n)
-gives x^own_(K_0) >= x^Theta_(n-K_0) - varpi_n >= X + lambda (n - K_0) - 2c_2 - varpi_n >= X + lambda (D' + 1) - 2c_2 -
-varpi_n > X + B^sharp, which contradicts the passage at K_0. QED
+**Lemma OFF' (PROVED GIVEN Corollary SC-pin, the pairwise increment bound of the pin run, and clause (0)).**
+Put D' := ceil((B^sharp + 2c_2 + varpi_n)/lambda) and D'' := ceil(max(0, varpi_n + c_5 - B^sharp)/lambda^sharp). Then
+the first-passage depth K_0(n) := K(a_n, g) satisfies n - D' <= K_0(n) <= n + D''; if varpi_n + c_5 <= B^sharp, then
+K_0(n) <= n.
+*Proof.* Upper bound. Suppose K_0 := K_0(n) > n. Then the own-threshold run of a_n reaches level n without passing, so
+min(n, K_0) = n and Corollary SC-pin at level n gives x^own_n <= x^Theta_(0) + varpi_n = X + varpi_n. If D'' = 0, then
+varpi_n <= B^sharp - c_5 <= B^sharp, so level n is a passage, a contradiction; hence K_0 <= n. If D'' >= 1 and
+K_0 >= n + D'', clause (0)'s flow bound, valid for n <= n + D'' <= K_0, gives
+x^own_(n+D'') <= x^own_n - lambda^sharp D'' + c_5 <= X + varpi_n + c_5 - lambda^sharp D'' <= X + B^sharp,
+a passage at level n + D'', so K_0 <= n + D''. Lower bound. Suppose K_0 <= n - D' - 1. Corollary SC-pin applies at level
+K_0 (K_0 <= min(n, K_0)), and the pairwise bound with (i, j) = (K_0, n) gives
+x^own_(K_0) >= x^Theta_(n-K_0) - varpi_n >= X + lambda (n - K_0) - 2c_2 - varpi_n >= X + lambda (D' + 1) - 2c_2 - varpi_n
+> X + B^sharp, which contradicts the passage at K_0. QED
+The offset delta_n := n - K_0(n) lies in {-D'', ..., D'}. In Corollary OFF-1 of row 1256 the pin datum read with reference
+length L^(K_0(n)) has torus exponent m_0 + delta_n, so m_0 >= D'' plus the account's torus floor keeps every reading
+admissible; the pigeonhole then runs over this finite set.
 
 **Correction to row 1256 (self-correction, same model; not an independent check).** Row 1256's Lemma OFF took clause
 (0)'s flow bound at levels up to n, but clause (0) gives it only for 0 <= i <= j <= K, K the first passage (I:2533-2543,
 III:68709-68712). Under exact (FI) at every level the bound up to n holds with the pin run's constants, so its offset
-bound becomes D_* = ceil((B^sharp + 2c_2)/lambda) (the case varpi_n = 0 of Lemma OFF'), not ceil((B^sharp + c_5)/
-lambda^sharp). Corollary OFF-1 is unchanged: the pigeonhole runs over {0, ..., D'}.
+bound becomes D_* = ceil((B^sharp + 2c_2)/lambda) (the case varpi_n = 0 of Lemma OFF', where D'' = 0 when
+c_5 <= B^sharp), not ceil((B^sharp + c_5)/lambda^sharp). Corollary OFF-1 is otherwise unchanged.
 
 **3.3 What this changes in the one-cutoff carry (PROVED from 3.2 and row 1256).**
 - On the pin route (row 1256 Proposition PIN with Lemma OFF and Corollary OFF-1), (FI) at pins is replaced by
-  Corollary SC-pin with any modulus varpi_n <= B^sharp uniform in n; by Lemma GR that holds once (G1)-(G5) hold along
-  the pin runs, and (G1), (G2), (G4) are per-frame statements the account and EM already state for one frame. **The
-  one new input is (FC) along the pin runs, with sum_k eta_k <= B^sharp/4 (say) uniformly in n.** No (MON) is needed on
-  the pin route (row 1256 4.2).
+  Corollary SC-pin with any modulus varpi_n bounded uniformly in n (Lemma OFF'); by Lemma GR that holds once (G1)-(G5)
+  hold along the pin runs, and (G1), (G2), (G4) are per-frame statements the account (as its tuned-family hypothesis)
+  and EM state for one frame. **The one new input is (FC) along the pin runs, with sum_k eta_k bounded uniformly in n.**
+  No (MON) is needed on the pin route (row 1256 4.2).
 - The account's own uses of the scaffold comparison (2.2: Theorem 3.1 (v-c)(2), `9.8:cor-subsequential-limits` (a),
   `9.8:rem-increment-bound` step (*), `9.13:prop-limit-member`) read the same statement on windows; Lemma GR reduces
   each of them to (FC) on the window runs, with varpi = e^Lambda M in place of the undefined varpi(g).
@@ -284,7 +297,7 @@ greps show.
 | Lemma GR: (G1)-(G5) imply |x^Theta - x^own| <= e^Lambda sum_k (eta_k + 2 eps'_k) at every level up to min(n, first passage) | PROVED (discrete Gronwall), as an implication | (G1), (G2), (G4) per-frame statements (account: tuned-family hypothesis `9.9:def-tuned-hypotheses`, Remark `9.9:rem-curvature-scope` (3); EM Theorem `em:thm-coefficient-envelope`, Corollary `em:cor-coefficient-slopes`); (G3) = (FC) OPEN |
 | Sizes: Lambda <= C (X - 2c_2)^(-1/2) (log X)^(p_0), sum eps'_k = O(X^(-(kappa_0-6)/2)) uniformly in n | PROVED, elementary, given the account's sizes e_k, v_k and the pairwise increment bound | III:55780-55800, III:57249-57253 |
 | Corollary SC-pin (the scaffold comparison at the pins, modulus e^Lambda M) | PROVED GIVEN (G1)-(G5) along the pin runs | Lemma GR |
-| Lemma OFF' (pins first-pass at depth n - D' <= K_0(n) <= n, D' = ceil((B^sharp + 2c_2 + varpi_n)/lambda)) | PROVED GIVEN Corollary SC-pin with varpi_n <= B^sharp and the pin run's pairwise increment bound | |
+| Lemma OFF' (the first-passage depth of a_n satisfies n - D' <= K_0(n) <= n + D'', D' = ceil((B^sharp + 2c_2 + varpi_n)/lambda), D'' = ceil(max(0, varpi_n + c_5 - B^sharp)/lambda^sharp)) | PROVED GIVEN Corollary SC-pin, the pin run's pairwise increment bound and clause (0)'s flow bound | III:57249-57253, I:2533-2543 |
 | Correction to row 1256 Lemma OFF (clause (0)'s flow bound is used beyond the first passage; with exact (FI) the offset is ceil((B^sharp + 2c_2)/lambda)) | PROVED (self-correction, same model) | I:2533-2543 |
 | 3.3: on the pin route (FI) is replaced by (FC) along the pin runs; (MON) is not needed there | PROVED from Lemma GR, Lemma OFF', row 1256 | |
 | 3.3: what (FC) is and why it is a statement about Balaban's step itself | ARGUED; the size readings are GUIDE | EM L504 |
@@ -316,3 +329,41 @@ group's text; nothing goes outward without the owner.
 No numeric run. No subagent. Sources fetched by URL into a scratch folder outside the repository; nothing fetched is
 committed.
 
+## Step 5. Where the frame enters one step: the shape of (FC) (written 2026-11-20T11:42Z by date -u; READ, then GUIDE)
+
+**5.1 READ (YM4_EM at c7fef8b21b58).** EM's actual step is
+E_(k+1)[x_k, f](W) = log integral K_(k,theta_k)(W, dV) exp(-x_k A(U_k(V)) + S_f(U_k(V))) + x_k A(U_(k+1)(W)) - S_f(U_(k+1)(W))
+(em:eq-actual-step, EM L560-568), where K_(k,theta_k) "is the fixed all-small-field kernel on M(V) = W. It uses the
+given fibre density, gauge weight and fluctuation cut" (EM L544-546). The action weight enters the Gaussian part only
+through tau_k = x_k/theta_k, by the exact rewrite (em:eq-frozen-gaussian-rewrite, EM L584-588) and the scalar multipliers
+tau_k^(-d/2), tau_k^(d_g/2); the first belongs to the field-independent scalar v_(k+1), which "has zero curvature
+coefficient" (EM L575-577). EM's one-step inputs hold "the lists and all discrete choices ... fixed throughout each such
+domain", the cut is "a fixed Borel restriction in the real free variables", "invariance of an arbitrary gauge-fixing
+weight is not assumed", and "the creation radius is c_e varepsilon(theta_k) ... where varepsilon is the supplied real
+curvature threshold" (EM L611-655). EM's introduction: "the actual one-step theorem [is a premise] of this manuscript"
+(EM L166-168), and companions are required to agree "for the same frame and weights" (EM L253-254).
+
+**5.2 What (FC) therefore compares (ARGUED from 5.1).** At fixed weights w and inherited list, the two frames phi^A
+and w (self-calibrated) change four things in one step: (i) the sharp fluctuation cut, at the threshold of theta_k or of
+w_k; (ii) the relative gauge weight, which on a cut that is not gauge invariant does not integrate out; (iii) discrete
+choices (partitions, lists) where they depend on the frame; (iv) the creation radius (this changes only the bounds: a
+curvature coefficient of one analytic family does not depend on the radius at which it is read). The Gaussian-number
+part b^0 and the tau-multipliers do not contribute to the curvature coefficient beyond what 5.1 already separates.
+So (FC) splits into a **cut-comparison estimate** for the all-small-field kernel (items (i), (ii)) and a **partition
+matching** at the steps where a frame-dependent discrete choice differs between theta_k and w_k (item (iii)).
+
+**5.3 GUIDE (no proof).** Along tuned runs |theta_k - w_k| is at most of order theta_k^(1/2) polylog (2.1), a relative
+change of order theta_k^(-1/2) polylog in the threshold. If the cut sits at a Gaussian-tail threshold of polylogarithmic
+size, the fluctuations between the two cuts carry a weight that decays faster than any power of theta_k, and their
+curvature coefficient, read at EM's extraction cost of order theta_k (log theta_k)^(-2q) (proof of EM Theorem
+`em:thm-coefficient-envelope`, EM L1385-1390), would still be summable in k. A discrete choice that jumps between theta_k
+and w_k is a separate matter; its count along a run is not bounded by anything read here. Neither statement is proved.
+This is a pointer for a row that attacks (FC), not an input.
+
+**5.4 Stop.** (FI) was reduced twice: to the weaker (SC-pin) with any bounded modulus (2.3, Lemma OFF'), then to the
+one-step (FC) (Lemma GR). One route to (SC-pin) was attacked and fails at its first step (2.4). By the stop rule
+(FINISH How we work, item 4) the row ends here and reports (FC) as the named open statement.
+
+Status: complete (Steps 0-5 and RESULT, appended step by step).
+
+RESULT: Row 1260 (Claude Opus 5.5 max, Mac mini worker 2, 11:17Z-11:44Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys), (SL)/(RR) of row 1258) stays OPEN and was not attacked (no session-sized route off the record). Worked item: (FI) of the one-cutoff carry (row 1256), which no row had attacked. READ in Sussman and Alpoge's complete account at 31a47c543775 (with Claude and Codex as authors of its text; after Balaban): (FI) compares two runs from one bare datum, the own-threshold run of clause (0) and the run on the frozen scaffold theta_r = X + c_0 r whose couplings drift from the scaffold by up to order theta_r^(1/2) polylog; the account uses exactly this comparison under the name "the scaffold comparison" (|x^own - x^Theta| <= varpi(g) <= 1 at every level) in Theorem 3.1 (v-c)(2) via 9.8:cor-subsequential-limits (a), in 9.8:rem-increment-bound (*) and in 9.13:prop-limit-member, but states and proves it nowhere in CA-I to III, and their newer YM4_RT and YM4_EM (c7fef8b21b58) treat one frame at a time ("First passage is defined separately for the self-calibrated trajectory"). PROVED (elementary): calibration by the account's two-point witness theorem cannot bound the defect (relative error 1/4 fixes x only within a factor 2.6). PROVED as an implication (Lemma GR, discrete Gronwall): the scaffold comparison holds with modulus e^Lambda sum_k (eta_k + 2 eps'_k), Lambda = O(X^(-1/2) polylog) uniformly in the cutoff, given the per-frame coefficient bounds (the account's tuned-family hypothesis 9.9:def-tuned-hypotheses, or EM Theorem em:thm-coefficient-envelope and Corollary em:cor-coefficient-slopes) and one new one-step input (FC): forming the unmarked coefficient on the frozen frame or on the run's own frame, at the same weights, changes it by eta_k with sum_k eta_k bounded. PROVED GIVEN that (Corollary SC-pin, Lemma OFF'): the first-passage depth of the pin a_n lies between n - ceil((B^sharp + 2c_2 + varpi)/lambda) and n + ceil(max(0, varpi + c_5 - B^sharp)/lambda^sharp), so on the pin route (FI) is replaced by (FC) and (MON) is not needed; this also corrects row 1256's Lemma OFF, which used clause (0)'s flow bound beyond the first passage. GUIDE: (FC) splits into a cut-comparison estimate for EM's all-small-field kernel and a partition matching. OPEN: (FC); the infrared seed; the 9.1 hypothesis (e); (DET)'s inputs; (V9) at pins; the account's premises; the mass gap. Output library/gap-mini-solve-ai-opus.md.

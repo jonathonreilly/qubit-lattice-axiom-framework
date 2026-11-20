@@ -122,3 +122,126 @@ at most C_2 (hM)^2, and (7) gives [1 + D/k + log(2 + R(F))]^2 >= c/(C_2 (hM)^2).
 continuum state can come no closer than q_0 (hM)^2/pi + O((hM)^4) to q_0, so the hypothesis needs C_1 >= 1/pi; the
 file's "c depends on the constant in the approximation" covers this. The sentence "Boosting to weak coupling changes
 momentum and energy together" (L235) is commentary, not a step.
+
+## Step 3. The strict strip bound (8) and what it rests on: (3)-(7) (done 2026-11-20T01:41Z, date -u)
+
+Sources read: outline lines 3190-3440 (setting, PL1-PL7 and the proof of PL5; fetched by raw URL at commit
+31a47c543775 into a scratch folder), `ph1.md` L43 (import LG1) and L84-131 (Lemma 2, the port of PL4-PL5),
+`lg1.md` status lines 475, 485 (frozen; no Outstanding step; not refereed as a whole part).
+
+**Premise of S3-S7 (GUIDE L46).** The state is a translation-invariant measure on the infinite lattice with
+reflection positivity on the closed side of every coordinate mirror x_mu = c, c in Z/2, and every diagonal mirror
+x_mu +- x_lambda = c, c in Z (outline L3201-3214; reflections act by pullback without complex conjugation). For periodic
+Wilson DLR states this is LG1 (`ph1.md` L43), frozen in `lg1.md`; PL4 and PL5 for such laws are PH1 Lemma 2. The file
+states the premise correctly and the outline's warning that a torus law lifted periodically is outside the domain
+(outline L3204-3205). So "PROVED (from PL5)" means proved by hand from a ported, frozen import, which is how the lane
+uses LG1 elsewhere. No objection.
+
+**S3, L48-61, (3), (4): HOLDS.**
+- PL5 (outline L3311-3318) is cosh E + cos eta >= 2, i.e. 2 sinh^2(E/2) >= 2 sin^2(eta/2), i.e.
+  E >= 2 arsinh|sin(eta/2)| = g(|eta|); kappa = (2/pi) log(1 + sqrt 2) = 2 arsinh(1)/pi as the file writes.
+- Multiplier of B^(k): e^{-kE} |1 - e^{ik eta}|^2/4 = e^{-kE} sin^2(k eta/2) <= e^{-k g(|eta|)} sin^2(x/2) with
+  x = arccos(cos(k eta)) in [0, pi], x <= k|eta|; g is increasing on [0, pi], so g(|eta|) >= g(x/k), giving (3).
+  The kernel of T (E = infinity) gives 0.
+- Expansion: sin(t/2) = t/2 - t^3/48 + O(t^5), arsinh u = u - u^3/6 + O(u^5), so g(t) = t - t^3/12 + O(t^5); hence
+  k g(x/k) = x - x^3/(12 k^2) + O(k^-4) uniformly on [0, pi]. The log-derivative is cot(x/2) - g'(x/k) with
+  g'(t) = 1 - t^2/4 + O(t^4), and d/dx cot(x/2) = -1 at pi/2, so every maximiser is pi/2 + O(k^-2); the value is
+  log q_0 + (pi/2)^3/(12 k^2) + O(k^-4) = log q_0 + pi^3/(96 k^2) + O(k^-4). (4) is correct. b_k >= q_0 because
+  arsinh u <= u and sin s <= s give g(t) <= t.
+
+**S4, L63-71, (5): HOLDS.** Write the multiplier as e^{-k g(|eta|)} sin^2(k eta/2) e^{-k(E - g)} with E - g >= 0 by PL5.
+On x = k|eta| <= pi: log(e^{-x} sin^2(x/2)) has second derivative -(1/2) csc^2(x/2) <= -1/2 and zero derivative at
+x_0, so it is <= log q_0 - (x - x_0)^2/4; with k g(x/k) >= x - pi^3/(12 k^2) - O(k^-4) the multiplier is
+<= q_0 e^{C/k^2} e^{-Z}, Z = (x - x_0)^2/4 + k(E - g). On x > pi: |eta| > pi/k, so kE >= k g(pi/k) = pi - O(k^-2) and
+the multiplier is <= e^{-pi + C/k^2} <= q_0 (1 - c_1) for k >= K, since e^{-pi} = 0.0432 < q_0 = 0.1039. Integrating,
+q_0(1 - d) <= <v, B v> gives e^{C/k^2} int_{x<=pi} (1 - e^{-Z}) dmu + (c_1 + e^{C/k^2} - 1) mu{x > pi}
+<= d + (e^{C/k^2} - 1), and 1 - e^{-Z} >= (1 - e^{-1}) min(1, Z) >= (1 - e^{-1}) min(1, (x-x_0)^2 + k(E-g))/4. This is (5).
+
+**S5, L75-92, (6): HOLDS.** With F supported in 0 <= x_1 <= D: theta_0 F has the same x_1-range, tau_{-D} theta_0 F has
+-D <= x_1 <= 0, and L_F = theta_1 tau_{-D} theta_0 F has 0 <= x_1 <= D, so both L_F and F are on the closed positive side
+of x_1 = 0. By PL4 in direction 1 with s = w - D >= 0:
+<[L_F]_1, S^{w-D} [F]_1>_1 = nu(conj(theta_1 L_F) tau_{(w-D) e_1} F) = nu(conj(tau_{-D} theta_0 F) tau_{(w-D) e_1} F)
+= nu(conj(theta_0 F) tau_{w e_1} F) (translation invariance) = <Phi, U^w Phi>_0 (PL4 in direction 0). Every exponent
+w_0 + 2kj, 0 <= j <= m, is >= D, so the polynomial transfers term by term to <[L_F]_1, S^{w_0-D}(1 - S^{2k})^m 2^{-m} [F]_1>_1,
+and s^{w_0-D}(1 - s^{2k})^m lies in [0, 1] on spec S in [0, 1]. Hence (6).
+
+**S6, L94-99, (7): HOLDS.** Checked each step: d = (1 - <B>/q_0)_+ <= gamma because b_k >= q_0 and gamma >= k^-2; on
+x <= pi, (x - x_0)^2 <= (pi^2/4) min(1, (x - x_0)^2), so int_{x<=pi} (x - x_0)^2 dmu <= C gamma and mu{x > pi} <= C gamma;
+w_0 = 4k ceil(D/(4k)) >= D is a multiple of 4k, so e^{i w_0 eta} = 1 and (1 - e^{2ik eta})/2 = 1 at k eta = +-pi/2; the
+two Lipschitz bounds and |z^m - 1| <= m|z - 1| on the unit disc give |int phi dmu - 1| <= (w_0/k + m) (C gamma)^{1/2}
++ 2 C gamma <= C(1 + w_0/k + m) gamma^{1/2} for gamma <= 1; with m = ceil(log_2(2 + 2R)), (6) gives
+|int phi dmu| <= R/(2 + 2R) < 1/2. Since w_0/k <= D/k + 4 and m <= C log(2 + R), (7) follows (gamma > 1 is trivial
+with c <= 1).
+
+**S7, L101-107, (8): HOLDS.** For F reading only spatial bonds in the slice x_0 = 0, theta_0 F = F (pullback fixes these
+bonds with their orientation), so ||Phi||^2 = nu(|F|^2); ||[F]_1||^2 = nu(conj(theta_1 F) F) <= ||F||_2^2 by Cauchy-Schwarz
+and reflection invariance (outline L3263-3270; PH1 Lemma 2 "||[F]|| <= ||F||_2"), and likewise ||[L_F]_1|| <= ||F||_2.
+So R(F) <= 1. Then (7) with D <= Ak gives ratio <= b_k (1 + k^-2 - c/(1 + A + log 3)^2), and b_k -> q_0 by (4), with
+(1 + A + log 3) <= (1 + log 3)(1 + A). The constants of (5)-(7) are numerical and depend on the state only through
+PL4-PL5, so the supremum over F and over states (any coupling) is legitimate. The tail sentence (R(F) >= exp(c''/sqrt
+gamma) for fixed D/k) is (7) solved for R. Scope as stated: local F (finitely many bonds) at time zero in a strip of
+lattice width D <= Ak; the bound says nothing about vectors outside the closed span of such F (the file says so, L109,
+L140, and proves at S14 that this span cannot be total).
+
+## Step 4. The Wilson contact identities (21), (26) and their first consequences (22), (23), (27) (done 2026-11-20T01:44Z, date -u)
+
+Sources read: outline GL3-GL7 (L2205-2311: c_l, the ratio bounds GL4, the finite-band series GL5 for
+f-hat = C^{-1} M_f C on smooth functions, its formal adjoint, GL6 C f-hat = M_f C, GL7, and "operators acting on
+disjoint variable sets commute"); row 1161 `gap-solve9-astra62.md` L229-311 (Gram bound, (18), the band proof of
+(20), c_0 = 1/4); row 1162's verdicts on these: S20, S21 (18), S23 (c_0), S24 (20) all HOLD
+(`gap-solve9-check-opus.md` verdict table).
+
+**S28-S29, L239-246, (21): HOLDS.** Setting as in row 1161: T = DCD/lambda on a periodic spatial cube, D a bounded
+strictly positive multiplication (so D^{-1} is bounded at fixed volume), C = tensor product of the one-link
+convolutions with c_l > 0 (GL3), psi > 0 the simple top eigenvector, v = D psi, D^{-1} psi = C v/lambda.
+- Inverse form: sup_z (2 Re<u, z> - <z, DCD z>) with y = Dz equals ||C^{-1/2} D^{-1} u||^2, so
+  <T^{-1/2} f psi, T^{-1/2} g psi> = lambda <C^{-1/2} D^{-1} f psi, C^{-1/2} D^{-1} g psi>
+  = lambda^{-1} <C^{-1/2} f C v, C^{-1/2} g C v>, as the file writes (f, D commute).
+- Boundedness: on the links of f, the block (in -> out) of C^{-1/2} f C has weight r_out^{-1/2} r_in
+  = r_in^{1/2} (r_in/r_out)^{1/2}; the degree shift is bounded, the ratio is polynomial by GL4, r_in^{1/2} decays
+  factorially, and the exterior factor is C_ext^{1/2}. So C^{-1/2} f C is bounded on the fixed cube; in particular
+  f psi is in the form domain of T^{-1}.
+- Identity: for finite Peter-Weyl sums w, w', <C^{-1/2} f C w, C^{-1/2} g C w'> = <w, C f C^{-1} g C w'>, and with
+  C = C_A x C_B x C_ext, C f C^{-1} g C = (C_A f) x (g C_B) x C_ext = g C f. Both sides are continuous in (w, w')
+  (bounded operators), so the identity extends to v: the mixed form is lambda^{-1} <v, g C f v>
+  = lambda^{-1} <f v, C g v> (all objects real) = <f psi, T g psi>. Subtracting a constant from f or g keeps
+  C f C^{-1} g C = g C f. Gauge invariance is only needed to stay in the physical space (C commutes with gauge action).
+  (21) is an exact finite-cube identity.
+
+**S30, L248-253, (22): HOLDS.** 23-plaquettes at different x_1 have disjoint links, so (21) with f = f_0, g = f_x gives
+<u_0, (T^{-1} - T) V^x u_0> = 0 for x != 0 mod n. On Z/n the measure eta -> int 2 sinh E dmu(E, eta) therefore has
+Fourier coefficients d_{beta,n} delta_{x,0}, hence is the constant d_{beta,n}/n. Integrability of e^E is the domain
+statement above; T is injective (c_l > 0, D invertible), so there is no atom at E = infinity; E >= 0 since T <= 1.
+
+**S31, L255-260, (23): HOLDS.** g_p = T_d(W_p) (Chebyshev) has degree <= d in each of the four links and |f| <= 2, so
+(20) gives d_{beta,n} <= <u_0, T^{-1} u_0> <= C_A^4. Gram bound: selecting one edge on each plaquette of one parity of
+x, no action plaquette (spatial or temporal) contains two selected edges (a plaquette spans one unit of x_1), the
+readings of the other parity are measurable for the conditioning, and the selected readings are conditionally
+independent with conditional variance >= c_0 (row 1161 L273-281, S23 of row 1162); total variance and the long-cylinder
+limit (trace-class positive transfer, simple top eigenvalue) give ||sum z_x u_x||^2 >= (c_0/2) sum |z_x|^2. With
+z_x = e^{-i x eta}/n the vector is the projection of u_0 on V = e^{i eta}, so mu_eta(total) >= c_0/(2n), while
+mu_eta(E > E_*) <= (C_A^4/n)/(2 sinh E_*) = c_0/(4n) for E_* = arsinh(2 C_A^4/c_0). Centering and the simple vacuum
+remove E = 0. Correct as stated, including eta = 0.
+
+**S38-S39, L293-300, (26): HOLDS.** Checked each step.
+- T A_f = f T on smooth functions: T A_f phi = lambda^{-1} D C f-hat D phi = lambda^{-1} D f C D phi (GL6) = f T phi;
+  D^{+-1} = exp(smooth) preserve smooth functions; psi is smooth (lambda psi = DCD psi, smooth kernel of C). So
+  T A_f psi = f psi and, by injectivity, T^{-1} f psi = A_f psi in L^2.
+- A_f^dagger = D f-hat^dagger D^{-1} is the formal adjoint on smooth functions (GL5 adjoint series); for smooth chi,
+  <chi, A_f^dagger T phi> = <T A_f chi, phi> = <chi, T f phi>, so A_f^dagger T = T f on smooth functions and
+  T f psi = A_f^dagger psi.
+- Commutation: factors of D from plaquettes not meeting S_f do not depend on the S_f variables and cancel, so
+  A_f = D_f^{-1} f-hat D_f with D_f the product over plaquettes meeting S_f; likewise for g. If no spatial plaquette meets
+  both sets, D_g does not depend on S_f variables and D_f not on S_g variables (a spectator of f lying in S_g would put a
+  plaquette in both sets), f-hat^dagger and g-hat act on disjoint variables, and shared spectators are parameters. So
+  A_f^dagger A_g = A_g A_f^dagger on smooth functions, and
+  <A_f psi, A_g psi> = <psi, A_f^dagger A_g psi> = <psi, A_g A_f^dagger psi> = <A_g^dagger psi, A_f^dagger psi>
+  = <T g psi, T f psi>, real. (26) holds. Sanity check: with D = 1 both sides of (26) equal <f><g>.
+
+**S40, L302-306, (27): HOLDS.** A spatial plaquette meets links of two parallel 23-planes only if their x_1 differ by at
+most one, so by (26) the coefficients of int 2 sinh(2E) dmu at displacement x vanish for x not in {0, +-1} (n >= 4).
+The two remaining coefficients are real and equal by reality and reflection x -> -x with translation invariance;
+Fourier inversion on Z/n gives n int 2 sinh(2E) dmu_eta = a + 2b cos eta. e^{2E} is integrable since
+||T^{-1} u_0|| = ||A_f psi|| < infinity. d_{beta,n} > 0 since psi > 0 a.e. makes f psi != 0 and the vacuum is simple.
+Since 2 sinh E cosh E = sinh 2E and n int 2 sinh E dmu_eta = d_{beta,n} by (22), the mean of cosh E under the stated
+probability measure is (a + 2b cos eta)/(2 d_{beta,n}). Correct.

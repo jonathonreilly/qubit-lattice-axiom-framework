@@ -48,3 +48,10 @@ State of the lane taken as given (not re-derived):
    this with proofs, not by reading alone: for (B)'s weak-coupling theorem the answer is no, and the reason is
    exact (Lemma NULL below).
 2. Which open statement with a consumer is attacked? Chosen in Section 3, after Section 2.
+
+---- (end of the Fable 5.2 text; Opus 5.5 continues below) ----
+
+- 2026-11-20T04:19Z (date -u): Opus 5.5 took over the row. Re-read FINISH.md rule sections (L1-84, L299-356), GOAL.md, row 1220,
+  `library/prior/gap-onebound-read-sol.md` in full, `parts/gap.md` L1-104, RESULT parts of rows 1199-1219, and row 1215's
+  straight-transport paragraphs (`gap-solve23-astra62.md` L445-474). Fable's Lemma NULL (named in Section 1, never written)
+  is rebuilt below from these sources; its exact text is lost, so Section 2 is Opus's own statement and proof.

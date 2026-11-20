@@ -7,12 +7,18 @@ Queue row 1195. Worker: Claude Fable 5.2, max effort, Mac mini worker 3, pinned 
 
 Labels used below: PROVED (every step written here or in a cited library file), ARGUED (an argument with a named missing step), GUIDE (heuristic or numeric, not a proof step), OPEN.
 
-Status of this file: in progress. Sections are appended one step at a time.
+Status of this file: finished at 01:09Z (RESULT line at the end). Sections were appended one step at a time.
 
 ## 0. Log
 
 - 00:03Z. File created. Reading FINISH.md (rules, row 1195), GOAL.md, `parts/gap.md`, and the earlier gap-mini results.
 - 00:25Z. Read in full: GOAL.md; FINISH.md L1-84 and L299-356 (rules); row 1195; `parts/gap.md` (all 322 lines); `library/gap-council-brief.md`; `library/gap-council-synthesis.md`; the FINISH RESULT lines of rows 1177-1196. Not read: the other 460 `library/gap-*` files (searched by grep when a statement is used).
+
+- 00:35Z. Step 1 written (Section 2): how to attack; five ideas screened and found on file.
+- 00:55Z. Step 2 written (Section 3): the attack on the start bound at an abelian pin. Read for it: `library/prior/gap-o4-pinned-cell-read-opus.md` L57-200; `library/gap-pinned-cell-gauge-max.md` L127-262, L294-320, L438-512; `library/gap-crux-restate.md` L29-80, L86-231; `library/gap-mini-free-fable.md` L376-435.
+- 01:03Z. Subsection 3.6 rewritten (a shorter proof that covers every cell; the first version is withdrawn).
+- 01:07Z. Step 3 written (Section 4): verdict.
+- 01:09Z. Search for the new statements in `library/open-core.md` and the FINISH rows; RESULT line.
 
 ## 1. Repo search: where the lane stands (what I rely on, by row)
 
@@ -68,7 +74,7 @@ Target (S1'): there is a constant C such that, for every box cell c, every b > 0
 
 Notation is row 1011's (`library/gap-pinned-cell-gauge-max.md` 3.1): F_c is the pinned free energy, a is a fixed unit imaginary quaternion, w_p the plaquette weights. For U(1), (S1') holds with C = 1 by one line (row 1011 3.2).
 
-Repo match: (S1') with C = 1, in Hessian form, is the statement that row 1011 4.4 leaves OPEN ("H_c(1; a theta) <= b times the classical action of the harmonic extension ... is OPEN; it is not a one-line bound"); `library/gap-boundary-q.md` L56 repeats it as open; check 1014 names the unproved route "omega = 1 minimises F_int". I found no row that attacks it. It is the base bound (M2) of a stiffness iteration, restricted to abelian pins. Kind of result sought: proof of a step the lane leaves open.
+Repo match: (S1') with C = 1, in Hessian form, is the statement that row 1011 4.4 leaves OPEN ("H_c(1; a theta) <= b times the classical action of the harmonic extension ... is OPEN; it is not a one-line bound"); `library/gap-boundary-q.md` L56 repeats it as open; check 1014 names the unproved route "omega = 1 minimises F_int". FINISH rows 1011, 1014 and 1016 list "the Schrodinger-functional bound at the trivial pin" as still OPEN. `library/open-core.md` has no entry for it (grep for trivial pin, abelian pin, start bound: no match). I found no row that attacks it. For Lemma F2 and (HM) below, a grep of `library/`, `library/prior/`, `library/open-core.md` and FINISH.md for diagonal phase, diagonal marginal and the integration of the off-diagonal variables gave no match; the substance of (HM) is (N2) of row 1011 7.4. It is the base bound (M2) of a stiffness iteration, restricted to abelian pins. Kind of result sought: proof of a step the lane leaves open.
 
 What (S1') would and would not give. It would be a first size-uniform non-perturbative bound on a Schrodinger-functional stiffness. It would not move (W): abelian pins are not closed under conditioning on cell boundaries, so it has no consumer on file (row 1011 7.1). I attacked it because it is the smallest statement in which the mass-like term has to cancel.
 
@@ -84,7 +90,7 @@ Identify a with i, so that C_a := span{1, a} is a copy of the complex numbers, a
   t_p = Re[ D_1 D_2 conj(D_3) conj(D_4) ] - Re[ D_1 D_2 W_3 conj(W_4) ] - Re[ W_1 conj(W_2) conj(D_3) conj(D_4) ] + Re[ W_1 conj(W_2) W_3 conj(W_4) ]
         + Re[ D_1 W_2 D_3 conj(W_4) ] + Re[ D_1 W_2 conj(W_3) conj(D_4) ] + Re[ W_1 conj(D_2) D_3 conj(W_4) ] + Re[ W_1 conj(D_2) conj(W_3) conj(D_4) ].
 
-Proof. (a) is the volume element of S^3 in these coordinates. (b): a j = - j a gives the first identity; the others follow by multiplying out. (c): e^(a lambda_x) W j e^(-a lambda_y) = e^(a lambda_x) W e^(a lambda_y) j by (b). (d): by (b), U_1 U_2 = (D_1 D_2 - W_1 conj(W_2)) + (D_1 W_2 + W_1 conj(D_2)) j and U_3^(-1) U_4^(-1) = (conj(D_3) conj(D_4) - W_3 conj(W_4)) - (conj(D_3) W_4 + W_3 D_4) j; the real part of the product is Re[A C - B conj(E)] with these four entries. Hand check of the signs: U_1 = U_2 = j, U_3 = U_4 = 1 gives U_p = -1 and the third monomial gives -1; U_3 = U_4 = j gives U_p = (-j)(-j) = -1 and the second monomial gives -1; the six other pairs of j's and the case of four j's give +1 from monomials 5, 6, 7, 8 and 4. QED
+Proof. (a) is the volume element of S^3 in these coordinates. (b): a j = - j a gives the first identity; the others follow by multiplying out. (c): e^(a lambda_x) W j e^(-a lambda_y) = e^(a lambda_x) W e^(a lambda_y) j by (b). (d): by (b), U_1 U_2 = (D_1 D_2 - W_1 conj(W_2)) + (D_1 W_2 + W_1 conj(D_2)) j and U_3^(-1) U_4^(-1) = (conj(D_3) conj(D_4) - W_3 conj(W_4)) - (conj(D_3) W_4 + W_3 D_4) j; the real part of the product is Re[A C - B conj(E)] with these four entries. Hand check of the signs: U_1 = U_2 = j, U_3 = U_4 = 1 gives U_p = -1 and the third monomial gives -1; U_3 = U_4 = j gives U_p = (-j)(-j) = -1 and the second monomial gives -1; the four other pairs of j's and the case of four j's give +1 from monomials 8, 7, 6, 5 (pairs 13, 14, 23, 24) and 4. QED
 
 Two monomials carry a minus sign. This is the sign pattern of rows 1188 (Lemma HF) and 1190.
 
@@ -170,3 +176,46 @@ where Z_XY(K; gamma) is the partition function of the XY model on the bond graph
 Proof. Every bond is Re(q_i^(-1) L_ij q_j e^(a alpha_ij)) with L = V across the cut and 1 elsewhere. The substitution q -> g q, V -> g V g^(-1) shows that the q-integral is a class function of V; by the Weyl integration formula take V = e^(a psi). By Lemma F1 (b), q_i^(-1) e^(a psi) q_j = (conj(D_i) D_j e^(a psi) + W_i conj(W_j) e^(-a psi)) + (...) j, so the bond is cos(phi_i) cos(phi_j) cos(chi_j - chi_i + alpha + psi) + sin(phi_i) sin(phi_j) cos(vartheta'_j - vartheta'_i + alpha - psi) with vartheta' = - vartheta. QED
 
 Meaning. The two circles of each link carry the flux of the interior plaquette with opposite signs. An abelian flux psi_0 through the interior plaquette is a shift of psi that helps one circle and costs the other. This is the frame obstruction of row 1011 (Lemma FR) at its smallest scale, in one exact formula. For this cell (S1') with C = 1 is one inequality between explicit integrals; I did not decide it.
+
+### 3.7 Two remarks found on the way (small)
+
+Remark F6 (PROVED; a shortcut that is not available). The plaquette function (U_1, U_2, U_3, U_4) -> t(U_1 U_2 U_3^(-1) U_4^(-1)) is not a positive-definite function on the product group SU(2)^4. A positive-definite function F on a group satisfies F(gamma^(-1)) = conj F(gamma). Here, with quaternion units i, j, k: F(i, j, k, 1) = t(i j k^(-1)) = t(k (-k)) = 1, and F(i^(-1), j^(-1), k^(-1), 1) = t((-i)(-j) k) = t(k k) = -1. So "Z_c is positive definite in the pins, hence maximal at the trivial pin" does not follow from the product of plaquette weights, as it does for an abelian group. The route "omega = 1 minimises F_c", named unproved by check 1014 (`library/gap-boundary-q.md` L56), stays unproved; I did not prove it another way.
+
+Remark F7 (reading; ARGUED). For a half-space cell in the axial gauge along the normal direction, the pinned free energy at an abelian pin is minus the logarithm of the vacuum wave functional of the transfer operator at the abelian configuration e^(a theta), up to the pin plaquettes. In this form (S1') says: the SU(2) vacuum wave functional, on abelian configurations, is at least the C-th power of the free-photon one. I found no handle on it.
+
+## 4. Verdict of this row (step 3; written 01:07Z)
+
+### 4.1 The attack on (S1')
+
+Not proved. No counterexample. Stop by the rule of three ways (How we work, item 11), on one named statement:
+
+(HM) of 3.4: after a U(1)-invariant soft frame weight, the response of the off-diagonal link variables to a co-exact shift of the diagonal phases is bounded by C b times the curl energy of the shift, uniformly in the cell size.
+
+Why each way failed.
+
+1. Jensen through the diagonal marginal in the Wilson ensemble (3.2, 3.3): exact U(1) invariance removes the cost of exact shifts, but in four dimensions the diagonal phases of a nearly flat SU(2) field in a random gauge lie near a set of codimension one per site (f wedge f = 0), so a co-exact shift pays a mass term with coefficient of order b. ARGUED, not proved.
+2. The same with a soft covariant frame (3.4): the mass term has coefficient of order one, and its cancellation is the transversality of the response of the off-diagonal variables with a bounded kernel. That is known only where the account's small-field analysis holds, and it is false as a pin-uniform statement (row 1011 Proposition B'). No tool at order-one effective coupling.
+3. Shifts by the local flux (3.5): the potential returns at second order through the bracket term of row 1011 Proposition A.
+
+Common reason, in one sentence: a first-moment comparison cannot see the cancellation between the seagull term and the current variance, and for pins the only exact Ward identities are those of gauge transformations (row 1011 Proposition W), so the cancellation is a statement about a response kernel, not about a symmetry.
+
+What stands: Lemma F1 (d) (the plaquette in Hopf coordinates, with signs), Lemma F2 (Jensen through the exactly U(1)-invariant diagonal marginal, at most every first-moment bound of its kind), Lemma F3 (soft frame weight as a quenched adjoint sigma model; in substance row 1013 C7), Proposition F4 (the trivial bound b cl_0, equal to b cl exactly when the interior sites lie on a line; all 2D cells), Lemma F5 (exact two-circle formula for one interior plaquette: the two circles carry its flux with opposite signs), Remark F6. All PROVED by hand here, checked by no one, none selective, none with a consumer on the gap path.
+
+### 4.2 Value for the wall
+
+None directly. (S1') is a start bound at abelian pins. Abelian pins are not closed under conditioning, so even a proof of (HM) would not start an iteration (row 1011 7.1), and the lane's proved engine (Theorem S) reads periodic tori, not pinned cells. The row confirms, by one more independent derivation, the lane's reading: the 2D mechanism has no 4D gauge form because the gauge theory has no rigid frame, a pin-uniform class is false in 4D, and every gauge-invariant observable is neutral.
+
+I do not propose a proof row on (HM) or on the inequality of Lemma F5: neither has a consumer.
+
+### 4.3 Conditions of the run
+
+- No numeric run. At 01:03Z memory_pressure reported 42 percent free, below the 50 percent gate, so the sign checks of Lemma F1 (d) were done by hand (thirteen test configurations, seven of them listed in its proof). No statement here rests on a computed value.
+- No outside search. Sources read: this folder only (files named in Sections 0 to 2). The OpenAI O(4) text was read only through row 1009's reading note.
+- No subagent. No file other than this one was edited.
+- Times in this file are from `date -u` at the moment of writing.
+
+### 4.4 Open after this row
+
+(HM); (S1') with C = 1 for the cell of Lemma F5; "the trivial pin maximises Z_c" for a general cell; and, unchanged: (N-phys), the continuum datum, (BS), (W), any selective inequality at order-one effective coupling, the Jaffe-Witten mass gap.
+
+RESULT: Row 1195 (Claude Fable 5.2 max, Mac mini worker 3, 00:03Z-01:09Z, plain brief; author only, checked by no one; no numeric run, memory was below the 50 percent gate; no outside search). The mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved. Attack chosen: the one statement in which the mass-like term of the 2D stiffness mechanism has to cancel, the start bound at an abelian pin (S1'), which FINISH rows 1011, 1014 and 1016 list as OPEN ("the Schrodinger-functional bound at the trivial pin"). It is NOT proved; stopped after three written ways at one named bound (HM), a size-uniform bound on the response of the off-diagonal link variables to a co-exact shift of the diagonal phases; (HM) is (N2) of row 1011 in exact form and has no consumer on the gap path. PROVED by hand, small, none selective: Lemma F1 (the plaquette in Hopf coordinates, eight monomials with signs); Lemma F2 (a Jensen bound through the exactly U(1)-invariant marginal of the diagonal phases; it is free on exact shifts and at most every first-moment bound of its kind); Lemma F3 (a soft covariant frame weight as a quenched adjoint sigma model; in substance row 1013 C7); Proposition F4 (the trivial bound b cl_0 at every abelian pin, equal to the classical bound exactly when the interior sites lie on one line, and for 2D cells); Lemma F5 (exact formula for the cell with one interior plaquette: two XY models that carry its flux with opposite signs); Remark F6 (the plaquette weight is not positive definite on the product group of its links, so "the trivial pin maximises Z_c" has no one-line proof). ARGUED: in four dimensions the bound of Lemma F2 is of mass form in the Wilson ensemble (the diagonal phases of a nearly flat field obey f wedge f = 0). Five further ideas were screened and are on file (Section 2.2). OPEN: (HM); (S1') with C = 1 for the cell of Lemma F5; and, unchanged, (N-phys), the continuum datum, (BS), (W), a selective inequality at order-one effective coupling, the Jaffe-Witten mass gap. Output library/gap-mini-solve-f-fable.md.

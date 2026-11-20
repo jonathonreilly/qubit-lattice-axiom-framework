@@ -105,3 +105,55 @@ Semiclassical value (RECALLED arithmetic of 3.1): kappa = 2^(11/3), about 12.7. 
 
 (X) is a twist-only statement. By the council synthesis 2c (row 1134), a twist-only tool reaches at most the flux half, and the lane's present target (N-phys) is the neutral half. For the neutral half the flat directions of the periodic sector are the abelian holonomies, and the one-loop effect on them is of scalar type (a flat background has no spin term). So the index reading gives no gain there. I found no neutral analogue.
 
+
+## Step 4. Continuation by Claude Opus 5.5 max (from 2026-11-20T04:12Z, date -u)
+
+Handover. Steps 0-3 above are the earlier run of this row (Claude Fable 5.2 max, Mac mini worker 2, pinned at 3c181a68c). That run ended at the account's Fable weekly limit (FINISH row 1200, lead note 04:20Z) and wrote no RESULT line. Its text is kept as written. Only the lead and lease lines were replaced, as the row's lead note asks. This continuation is pinned at 3065cacc7 on `claude/ym4d-hard-route`.
+
+Read for this continuation (no proof work before this list was done): `GOAL.md` in full; `FINISH.md` L1-84, L299-351 and row 1200; `parts/gap.md` L1-104 and L311-322 (the exact price); `library/gap-mini-branch-fable.md` L300-361 ((N-phys), Theorem BP); the RESULT lines of rows 1180, 1184, 1188-1202, 1211, 1215, 1217 and the briefs of rows 1203-1225; `library/gap-council-rg-fable.md` L195-232 (the virial attack (VIR)); the CA-full index of Sussman and Alpoge for "mass gap" and "clustering" (two statements, CA-III 103479 and 108223; both are consumers of a gap or of clustering for the O(4) clause, not producers).
+
+Plan of this continuation, one step per response, each appended when done:
+
+- Step 5. Where Step 3 stopped ("I found no neutral analogue"): classify the observables whose asymptotic-freedom sign is an index, and decide whether one of them is centre-neutral. Grep each candidate against the record first.
+- Step 6. One rigorous lattice statement that the Step 3 reading needs and does not have (the minimum of the crossed-twist action), proved or corrected by hand.
+- Step 7. One attack on the neutral half itself, chosen after Step 5, worked to its first failing step.
+- Step 8. Results table and the RESULT line.
+
+## Step 5. Which weights carry an index engine, and is one of them centre-neutral (ARGUED; one new reading)
+
+Grep before work: "topological susceptib", "theta-depend", "theta vacu", "instanton number", "Braam", "per doubling" in `library/gap-*.md` and `parts/gap.md`. Matches: the measured value L14 of `gap-measured-assumptions-opus.md` L126 (a number, no engine); the rule for way II of `gap-skeleton-max.md` L165 ((RGI): a non-perturbative coupling q with q(2l) >= q(l) + c q(l)^2, and "q = exp(-f_m/2) is proportional to g(l)^2 at small l and is constant for U(1)"); (MON) and (MON') of row 859 (`gap-brainstorm-max.md` L613, L655). No file uses the instanton-number sectors as an engine. Nothing below is a proof step.
+
+### 5.1 The mechanism of Step 3.1 in general form (RECALLED)
+
+Credit: 't Hooft (1976); Brown, Carlitz and Lee (1977); Nielsen (1981); Hughes (1981); Atiyah, Hitchin and Singer (1978) for the moduli dimension. Let A be a self-dual SU(2) connection of topological charge Q > 0. Then:
+
+- The non-zero spectrum of the gauge fluctuation operator with ghosts is that of two adjoint covariant scalar Laplacians (orbital part, a determinant of scalar type).
+- The zero modes number 8Q = 4NQ with N = 2 (the moduli dimension). Each gives one factor L/a (spin part, an index).
+- The weight of the sector relative to Q = 0 at scale L is exp(-8 pi^2 Q/g_0^2) (L/a)^(8Q) (L/a)^(-2Q/3) x (finite) = exp(-8 pi^2 Q/g^2(L)) x (finite), with 8 pi^2/g^2(L) = 8 pi^2/g_0^2 - (22/3) log(L/a).
+
+The spin part is a finite count only when the minimum of the sector is self-dual and Q is not zero. For a covariantly constant field that is not self-dual the spin part is an infinite sum over Landau levels, of the same kind as the orbital part. At Q = 0 the minima are flat. Their zero modes (the torons) have index 0 and occur also for U(1). This is Step 3.5 in general form.
+
+### 5.2 The two families of index weights
+
+A weight has an index engine when it is the weight of a topological sector whose minimum is self-dual. On the lattice torus there are two families.
+
+(a) The 't Hooft twist sectors Z^(n). The twist fixes Q modulo 1; the crossed twist (1,1) gives Q in Z + 1/2 and the margin of Step 3.3. Each twist ratio is a signed sum of electric flux traces (Step 3.3, row 859). This is the flux half.
+
+(b) The integer-charge sectors of the periodic torus, Z_Q/Z_0, or the theta function Z(theta)/Z(0) = sum over Q of e^(i theta Q) Z_Q/Z_0. The topological density q(x) is a gauge-invariant local function of the plaquettes near x. A centre transformation of the links that cross a hyperplane leaves every plaquette unchanged, so Q is centre-neutral. So family (b) is a centre-neutral weight with an index engine. On the symmetric torus the first self-dual sector is Q = 2 (Braam and van Baal, 1989: no charge-one instanton on T^4); its moduli have dimension 16 and its weight runs like exp(-16 pi^2/g^2(L)), a factor 2^(44/3) per doubling at one loop. Step 3.5 said "I found no neutral analogue". That is corrected here: (b) is one.
+
+Lattice caveat. For the Wilson action Q is not defined on every configuration. Luscher's geometric charge (1982) is an integer on admissible fields (every plaquette near 1). Exact sectors need an action that excludes the other fields. So (b) is a statement about such an action, or about a non-canonical lattice charge.
+
+### 5.3 Why (b) does not reach (N-phys)
+
+1. One channel. The weights of (b) read the law of Q only, that is, the zero-momentum part of the pseudoscalar density. (N-phys) bounds the trace of all centre-neutral levels.
+2. Products bind it. Take SU(2) times a free photon with no topology. Its weights Z_Q/Z_0 are those of the SU(2) factor, and its neutral excited trace is unbounded (row 929, Theorem A1: log(1 + S_ev(a; (24a)^3)) > 31 for the free photon at every a). So no statement about the weights of (b) alone implies (N-phys). This is Lemma PT and Proposition NP of the lane (rows 998, 1003).
+3. The exit. A route through (b) still needs, at the end of the flow, a one-scale criterion "dense topology at scale L gives the neutral bound at scale K L". That is a (K-one) statement. It is false for the product of item 2, and it has to separate the Wilson trajectory from K7 if Q is defined there.
+
+### 5.4 What 5.1-5.3 say about the neutral half (ARGUED)
+
+At weak coupling a weight with no index engine changes by a relative amount of order g^2(L) per doubling. Examples: the small-box gap 4.1167 g^(2/3)/L of Luscher and van Baal (row 998 I33), whose relative change per doubling is (2/3) b_0 g^2 log 2 to leading order; the excess free energy, of order log(1/g^2(L)). An index weight changes by a fixed factor per doubling. So:
+
+- An engine for the twist ratio may lose up to a factor 2^(11/3) per doubling and still carry (X) (Step 3.3).
+- An engine for any centre-neutral quantity other than the weights of (b) must lose less than c g^2(L) per doubling at every scale from first passage on. This is the rule (RGI) of `gap-skeleton-max.md` L165, now with the reason: the neutral half has no index weight except (b), and (b) is one channel.
+
+So the classification gives two engines with a robust margin. One is the flux half. The other is the theta channel, which products bind. The neutral half has no engine with a margin; a proof must be sharp at order g^2, or must start at the exit of the band. This sharpens Step 3.5. It does not move (N-phys).

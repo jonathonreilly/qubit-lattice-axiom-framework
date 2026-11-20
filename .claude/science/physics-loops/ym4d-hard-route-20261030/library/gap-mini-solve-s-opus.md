@@ -112,17 +112,19 @@ charged because the side faces and the plate are one connected pinned component,
 is a derivative of the Wilson free energy in a direction that changes the gauge orbit of the pin. It also has the
 2D engine's free start bound (M3) in the form (ii), and the bracket (M6): plate spins are quaternion spins under
 left multiplication, so Proposition W of row 1011 applies to rotations of the ring plate spins about a second
-axis. This corrects row 1016 8.2 item 1 and 8.7 ("(R-a), (R-b), (R-c) together: no candidate") and row 1202's table
-line 41 ("a class of pins that is closed under conditioning carries no rigid group"): a plate gives all three.
+axis. This adds a candidate to row 1016 8.2 item 1 and 8.7 ("(R-a), (R-b), (R-c) together: no candidate", stated
+there as "not found in the ten families"). It also narrows row 1202's table line 41 ("a class of pins that is closed
+under conditioning carries no rigid group"): that holds if every cell of the tiling must lie in the class; P_b needs
+only the cells that carry the twist, and the cells away from the plate are not in P_b.
 
 **Where P_b fails (ARGUED; the scaling is a computation, not a theorem).** The 2D engine needs the twist cost to be
 additive over the tiling and scale invariant: in 2D the cell Dirichlet energies of a smooth twist add up to the
 square's, and a twist of angle theta costs order theta^2 at every side. In P_b neither holds for any normalisation.
 
 1. The free bound (ii) is a three-dimensional Dirichlet energy on the plate. A twist whose junction values vary by
-   theta has D_3 of order theta^2 R. So the bound grows with R. In this normalisation compact U(1) also has a
-   stiffness ratio H_c / (b D_3) that falls like (log R)/R (point 2), so a small ratio is not selective and
-   cannot feed the 2D engine's step (M8) from small stiffness to decay.
+   theta has D_3 of order theta^2 R. So the bound grows with R. In this normalisation Gaussian U(1) also has a
+   small stiffness ratio, H_c / (b D_3) <= C (1 + log R)/R (Proposition P5 (a) below), so a small ratio is not
+   selective and cannot feed the 2D engine's step (M8) from small stiffness to decay.
 2. The true response sees only the junction (Lemma P2 (i)), a 2-dimensional surface of codimension 2 in the cell.
    For Gaussian U(1) the gauge-invariant change of the pin is a boundary flux d_E u on the strip of side-face
    plaquettes along E, and the minimal Maxwell action with that boundary flux is of order b theta^2 log R
@@ -201,4 +203,31 @@ not proved: P5 proves the size of the cancellation, not the absence of another i
 For SU(2) the same fully pinned wall plaquettes enter H_(c') with the factor t_p of the ring field, so the excess is
 there whenever the ring plaquettes are near 1 (weak coupling). It is not a lower bound on H_(c') for SU(2): the
 interior part of an SU(2) cell response has no sign.
+
+## Step 4. The plate obstruction does not depend on the dimension (07:10Z)
+
+A check of Step 2's dimension count. I first expected the plate class to be additive in d = 3 (the plate is then
+2-dimensional, and its free bound (ii) is a scale-invariant 2D Dirichlet energy). It is not. ARGUED below by the
+classical (tree-level) count; the 4D case is the theorem P5.
+
+**Squeezing (ARGUED, classical U(1) count, every d >= 2).** Let the plate twist change the holonomy across a cell of
+side R by theta, with the top of the cell pinned. The response field is an electric field of size theta/R^2 over the
+whole height, with energy b theta^2 R^(d-4). After a tiling into cells of side R' = R/L, a bottom cell has its top on a
+ring at height R', pinned inside the cell, and a holonomy change theta/L across it. Its field is
+(theta/L)/R'^2 = L theta/R^2, L times stronger, over a layer that is 1/L of the height. The L^(d-1) bottom cells
+together carry L^(d-3) b theta^2 R'^(d-4) = L b theta^2 R^(d-4): L times the response of the whole cell, in every d.
+In the 2D engine no squeezing occurs: the twist rotates every spin, ring spins included, so each cell sees the
+local gradient and the cell energies add up.
+
+**The dichotomy (ARGUED).** To avoid squeezing, the extension of the twist must rotate the rings above the plate
+consistently. The only rigid maps there are gauge transformations G = e^(u~ a) applied at all heights. They make the
+top and bottom of each bottom cell consistent, but they rotate the side rings of the cells by a non-constant G,
+which is the twist of rough pins of Proposition B (row 1011), with its mass-like cost. So a plate twist is either
+squeezed (non-additive by a factor L, Proposition P5 for 4D U(1)) or applied to rough pins (Proposition B). The 2D
+engine needs a rigid group that acts on all integrated variables, and pure lattice gauge theory has none in any
+dimension (Lemma CEN+ of row 1016).
+
+Correction to Step 2. The remark there on the dimension count of form symmetries stands as a reading about bulk
+symmetries. It does not single out d = 4 for the plate class: the plate class fails in every dimension, by the
+squeezing above, and in 4D by P5.
 

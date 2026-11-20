@@ -9,7 +9,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN. Numerics guide only.
 
 ## Status
 
-Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): done 2026-11-20T14:01Z. Step 3 (statements and proofs): done 14:06Z. Step 3b ((U-dom) from Balaban's decay estimate): done 2026-11-20T14:08Z, stays ARGUED. Step 4: (H2)-(H3) set aside (EM states admission informally; only an ARGUED reading is possible). Step 4 became the parity envelope (PE): written 2026-11-20T14:16Z. Step 5 (state, labels, RESULT): in progress.
+Step 0 (reading the folder rules and the earlier work): done 2026-11-20T13:48Z (date -u). Step 1 (choice of attack): done 2026-11-20T13:52Z. Step 2 (reading the account's test-cube rule): done 2026-11-20T14:01Z. Step 3 (statements and proofs): done (time in the Step 3 header). Step 3b ((U-dom) from Balaban's decay estimate): done 2026-11-20T14:08Z, stays ARGUED. Step 4: (H2)-(H3) set aside (EM states admission informally; only an ARGUED reading is possible). Step 4 became the parity envelope (PE): written 2026-11-20T14:16Z. Step 5 (state, labels, RESULT): done 2026-11-20T14:22Z. Item finished; RESULT at the end.
 
 ## Step 0. Record read (statements about the record, not evidence; written 2026-11-20T13:48Z by date -u)
 
@@ -193,7 +193,7 @@ the data region; the derivative bound CMP 102 (190) (p. 308: the derivative of t
 decays like exp(-delta_0 d(y, y')/8)) is the tool for that boundary effect. (U-dom) with Delta of order eps_k, from
 (3.13) alone, would NOT suffice: the shifted thresholds T - Delta would be negative.
 
-**3.4 Lemma SW (sandwich comparison of two cuts; PROVED, given its hypotheses; restated 14:25Z after a self-check
+**3.4 Lemma SW (sandwich comparison of two cuts; PROVED, given its hypotheses; restated after a self-check
 found that the first version's proof did not treat elements whose selected unit is already a complement unit of the
 base datum).** Setting of row 1268 3.1 and 7.4, with one base expansion: frame psi's kernel in its own presentation,
 family a, base cut chi_+ := prod_v 1[N_v < T_v + Delta] (Delta := Delta_k), polymer gas with data t, activities
@@ -300,7 +300,7 @@ int mu chi e^(Q_e - Q_o); average the two. Then cosh >= 1, log y <= y - 1, and c
 So a term of first order in the odd part never reaches the logarithm: the odd part enters at second order only.
 
 **4.3 Why this applies to the step at the trivial datum (ARGUED).** In the fluctuation integral of the step
-(EM:544-575; CMP 119 (3.15)-(1.14) form), write the fluctuation in normalized variables b with a centred Gaussian
+(EM:544-575; the form of CMP 119 (1.14) and (3.15)), write the fluctuation in normalized variables b with a centred Gaussian
 reference (the background is Balaban's minimal configuration on the fibre, CMP 119 (3.10), so the action has no
 linear term in b; EM:550-556 identifies the chart's origin with it). Every
 non-Gaussian factor is a function of g b and of the background, with the action carrying the prefactor g^(-2): the
@@ -310,9 +310,15 @@ parity of the degree in b. Differentiating twice in the background at P_o does n
 symmetric Gaussian and a cut symmetric under b -> -b, every term of odd degree in b integrates to zero (Lemma P is the
 global form of this), so the first non-Gaussian contribution to the Hessian at P_o is of order g^2 = 1/theta_k, times
 powers of the cut radius (log theta_k)^(p_0). The cut: at the trivial datum Balaban's cube references are trivial, so
-his tests read |V_k(b) - 1| up to the chart's nonlinearity; that nonlinearity and the background derivatives of the
-cut move only the edge of the cut domain, where |g b| is of the order of the threshold, so they cost Gaussian-tail
-terms exp(-c (log theta_k)^(2 p_0)), as in row 1268's Lemma TL. Inherited list members are counterterm-subtracted
+his tests (3.3) read |V'_k(b) - 1| = |exp(i A'_k(b)) - 1|, which for SU(2) depends on |A'_k(b)| only; the tests are
+read on bonds b in (box'~2)^*, which by (1.9) exclude the bonds b_0(c) on which his linearizing change of variables
+differs from the identity, so "the characteristic function ... is unchanged under the transformation" (CMP 119 p. 249,
+OCR text, first step; Section 3 repeats the construction); and the tests (3.2) read only the block field, trivial at
+the trivial datum. So at P_o the cut is symmetric under b -> -b in the linearized chart (READ, as far as CMP 119's text
+goes). The background derivatives of the cut at P_o move only the edge of the cut domain, where |g b| is of the order
+of the threshold, so they cost Gaussian-tail terms exp(-c (log theta_k)^(2 p_0)), as in row 1268's Lemma TL. The
+integrand after the scaling A' = g A is exp(-(1/2) <A, C* Delta C A> + P^(k)(g, U, A)) (CMP 119 p. 267), with P^(k)
+collecting g^(-2) times the action beyond second order and the measure and Jacobian terms, all functions of g A. Inherited list members are counterterm-subtracted
 (EM:538-541), so they enter through their fluctuation response, which starts at second order by the same parity.
 
 **4.4 Proposition PE (the parity envelope; ARGUED, with the inputs a proof needs).** Under
@@ -334,9 +340,24 @@ read here (EM states the theta^(-1/2) envelope only), and the lane's record name
 (`library/gap-skeleton-final.md` L350; row 680) but not this envelope (grep of `library/` for "odd cumulant",
 "odd moments", "parity" in this sense: no match on the coefficient envelope).
 
+**4.4' Why (P4) is plausible for a Balaban-type expansion (ARGUED).** The localized expansion decouples through the
+covariance: activities are s-contour integrals (Cauchy formulas in the decoupling parameters) of integrals of the
+integrand against the Gaussians mu_(C(s)), which are centred for every real and complex s; no derivative of the cut in
+b is taken. Writing each local factor e^(Q_x) = e^(Q^e_x) cosh Q^o_x + e^(Q^e_x) sinh Q^o_x (even plus odd) and
+expanding the product over a polymer, a term with an odd number of sinh factors is odd in b on a symmetric domain and
+integrates to zero for every s. So the localized activities keep only terms with an even number of odd factors, and
+(P4) reduces to the statement that the supplier's localization is linear in the integrand with centred decoupled
+Gaussians; EM states its input as "one prescribed convergent localization" (EM:629-640), and row 1268 2.4-2.5 read the
+account's transcription of Balaban's CMP 116 expansion (I:58716-58717, I:108483-108600) as linear in the integrand. CMP 116 itself is not on this machine.
+
 **4.5 Consequences (PROVED GIVEN (PE) and the drift recursion of row 1260 2.1).**
-(a) If in addition sum_u |b^0_u - c_0| is bounded (the account's constant c_2 covers this term), the drift of the
-frozen and own runs from the scaffold is at most C'(log theta)^(q+1): the sum of the improved envelope.
+(a) READ (CA-III III:68970-68995, III:55782-55790): the account's drift recursion is zeta_(r) = zeta_(r+1) + b_(r) - c_0
+with b_(r) = beta^0 + f + q and |f + q| <= iota_u := C_beta e_(u+1) + v_(u+1), where e(g) = 2 E^* tau + E^* exp(-gamma_2
+T(g)^2/4), tau = 2 g A_1 (log g^(-2))^(p_0)/eps_1, so e is of order g polylog: the account's per-level drift is the EM
+envelope. The partial sums of beta^0_l - c_0 are bounded by 2 c_2 (the account's one-loop Cesaro-defect theorem,
+III:68989-68993). So with (PE) in place of the envelope, iota_u becomes C theta_u^(-1) polylog plus tails, and the drift
+of the frozen and own runs from the scaffold is at most C'(log theta)^(q+1) plus constants: polylog, not
+theta^(1/2) polylog.
 (b) With drift D'(y) = C'(log y)^(q+1), Lemma W (b) gives windows of at most 2 D'(2 Y_b)/c_0 + 1 levels, and the
 envelope (PE) bounds eta_k at a window level by 2 C theta_k^(-1) (log theta_k)^q + 2K exp(-c (log theta_k)^(2 p_0)).
 The window total is then at most C'' sum_b (log Y_b)^(2q+1)/Y_b plus a tail sum, finite, independent of n, and tending
@@ -345,3 +366,81 @@ to 0 as X grows (Proposition W2's criterion with kappa(y) = y^(-1) polylog). So 
 (c) Row 1268's numbers improve: the frame entries differ by polylog, so Lemma RS's vertex is of order
 theta^(-2) polylog instead of theta^(-3/2) polylog; the sizes of row 1260 (Lambda, the tube (G4)) improve likewise.
 (d) (PE) does not give (2L): it bounds f, it does not identify a second coefficient with a summable remainder.
+
+**4.6 The same mechanism gives the two-loop flow law (B3+) that Route Z waits for (ARGUED; written 2026-11-20T14:24Z by date
+-u).** Row 680 (`library/gap-zf-box-s.md` L290-L297, L332) names as "the one exact next statement" of Route Z the flow
+law (B3+, one-sided): c_0 - C_3/x_(k-1) - |r_k| <= b_k <= c_0 + c_1/x_(k-1) + |r_k| with sum_k |r_k| <= R_Sigma, for
+every run and every step before first passage; its Lemma 2L turns it into (2L), a(beta) <= C_2 beta^p e^(-c beta).
+Row 680 and its check 696 found that the account's bound |f_j| <= C x^(-1/2) polylog is not summable and that the
+account has no two-loop form. The parity mechanism of 4.3 refines the expansion of f for the own-threshold run (frame
+equal to the weights, so there is no frame mismatch):
+- the step's own fluctuation integral at the trivial datum has only even powers of g = x_(k)^(-1/2) (4.3), so its
+  contribution to f_(k+1) is kappa_2(k)/x_k + O(x_k^(-2) polylog) + tails, where kappa_2(k) is the order-g^2 (two-loop) part
+  of the Hessian at P_o computed with the step's Gaussian structure at level k; it does not depend on the earlier
+  weights z_0, ..., z_(k-1);
+- the inherited unmarked list enters through its fluctuation response, which starts at second order (parity, 4.3),
+  so its contribution is O(g_k^2 N_k), and with EM's own bound N_k = O(delta(theta_k)) (EM:667-684) it is
+  O(x_k^(-3/2) polylog), summable along a run;
+- level convergence (L-inf): at the trivial datum Balaban's Gaussian structure at level k converges as k grows (his
+  propagators at scale k involve a_k = a (1 - L^(-2))/(1 - L^(-2k)), recalled, not re-read here), so kappa_2(k) = kappa_2 +
+  O(L^(-2k)) and the account's one-loop numbers beta^0_k have partial sums within 2 c_2 (the account's constant) of k c_0 (III:68989-68993).
+Granting these, b_(k+1) = beta^0_(k+1) + kappa_2/x_k + r_(k+1) with sum_k |r_k| bounded uniformly in the run, the marked
+remainder q being summable already (EM:1367, kappa_0 >= 10). Lemma 2L's proof uses only partial sums for the upper
+bound and the lower bound on b_k for sum (c_0 - b_k)_+/x_(k-1) = O(1), which the one-loop Cesaro bound and the summable
+r_k supply if the beta^0_k converge (L-inf). So (B3+), two-sided, with c_1 = kappa_2, would follow. Expected value (GUIDE,
+row 680): c_1 (log L)/c_0^2 = 51/121 for SU(2). Labels: the parity statements are those of 4.4 (ARGUED, inputs
+(P1)-(P4)); (L-inf) is ARGUED from recalled structure; the bookkeeping from them to (B3+) is elementary. A check should
+start with whether the order-g^2 term of the step at the trivial datum is really independent of the history (it reads
+only the level-k Gaussian structure and the current weight) and whether any odd-in-b factor of the step escapes the
+parity rule (pivot links, the completed fluctuation logarithm, the soft gauge truncation).
+
+## Step 5. Labels, state of the carry, checks to redo (written 2026-11-20T14:19Z by date -u)
+
+**5.1 Labels of this row's statements.** Author only (Claude Opus 5.5 max, Mac mini worker 2); checked by no one; no
+numeric run; no subagent.
+
+| Statement | Label | Rests on |
+|---|---|---|
+| 2.1: the account reads Balaban's R_j as R-check_j = least power of L >= (log min_(i<=j) x_i)^r; the scaffold freezes it at theta_r | READ | CA-I I:49745-49770, I:1702-1705; III:70175-70230 (row 1260) |
+| 2.2: in EM the cube size enters the unmarked total only through the all-small-field cut (the age gate selects aged remainders for the full list only) | READ | EM:364-372, EM:525-547, EM:612-616, EM:724-732 |
+| 2.3: Balaban's all-small-field tests are cube tests on L^2 M_2 R_(k+1)-cubes with cube-dependent references | READ (page images) | CMP 119 (1.1)-(1.8) pp. 246-247, (3.2)-(3.4) p. 265 |
+| Lemma W: window structure (one jump per window, R differs by one factor L, at most 2 D(2 Y_b)/c_0 + 1 levels per jump point) | PROVED, elementary | drift hypothesis (DR) of row 1260 |
+| Proposition W2: the envelope route cannot bound the windows uniformly in n (order (log n)^(2 p_0)); any bound y^(-1/2-delta) can | PROVED, arithmetic | Lemma W, EM:1365 |
+| (U-dom): the two cube families dominate each other up to Delta = o(T) | ARGUED (mechanism: CMP 102 (190), CMP 119 (3.6)-(3.9); not proved) | Balaban's variational theory |
+| Lemma SW: sandwich comparison of two cuts | PROVED GIVEN (E+) | Lemma TL* of row 1268 |
+| (E+) from (E3) and the base complements | ARGUED (supplier structure, kind of (E4), (E6)) | row 1268 (E1)-(E6) |
+| Corollary U: the two frames' cuts in sandwich form, shadow counts m_U = (L + 2 + 8 M/M_2)^4 | PROVED GIVEN (U-dom) | 3.3, Lemma W (a) |
+| Theorem U: (FC-1) along the pin runs at every level without (U); summable, tends to 0 as X grows | PROVED GIVEN (U-dom), (E+) and the hypotheses of row 1268's Theorem FCT' other than (U) | Lemma W, Lemma SW, Corollary U, row 1268 |
+| Lemma P: exact cancellation of the odd part in a symmetric integral | PROVED, elementary | symmetry of the measure and the cut |
+| Proposition PE: the unmarked coefficient is O(theta^(-1) polylog) + Gaussian tail (no half-loop term), in place of EM's O(theta^(-1/2) polylog) | ARGUED, given (P1)-(P4) | Lemma P, parity rule 4.3 |
+| 4.5 (a)-(c): with (PE), polylog drift, (U) closed with no (U-dom), better margins in rows 1260 and 1268 | PROVED GIVEN (PE) (the drift recursion and the Cesaro bound READ in CA-III) | Lemma W, Proposition W2 |
+| 4.6: (B3+) of row 680 (Route Z's next statement) from the parity mechanism, level convergence (L-inf) and the list response | ARGUED | 4.3-4.4, EM:667-684, III:68989-68993, row 680 Lemma 2L |
+
+**5.2 The one-cutoff carry on the pin route after this row.** The chain is row 1256 (pins, Proposition PIN, Lemma OFF),
+row 1260 (Lemma GR: scaffold comparison from (FC)), row 1267 (Proposition FC-chain: (FC) from (FC-1)), row 1268
+(Theorem FCT': (FC-1) given the supplier's expansion (E0)-(E6), (TH) and (U)), and this row (Theorem U: (U) not needed
+given (U-dom) and (E+); or, by 4.5 (b), given (PE)). Inputs still open: the infrared seed at the base datum (the crux;
+not attacked here); the supplier readings (E0)-(E6), (E+) and either (U-dom) or (P1)-(P4), all against Balaban's
+CMP 116, which is not on this machine, and CMP 119/102 as cited; (TH); row 1267's (H2)-(H3) (EM states admission
+descriptively; not worked here); the 9.1 hypothesis (e) `9.1:prop-blind-site-expansions` (outstanding in the account,
+CA-III L16559); (DET)'s inputs; the account's premises. (U) leaves the list.
+
+**5.3 What a checker should redo first.** (1) Lemma W (a)-(b) and the condition on X, against row 1260 2.1's drift and
+CA-I I:49745-49770. (2) 2.2: whether anything else in EM's unmarked step reads R-check (grep EM for R-check: lines 286,
+366-372, 452-494, 527, 724-732 were read), and whether the account's actual all-small-field kernel reads any other
+level quantity that is a step function of x-check_k (CA-I Stage 9, I:1702-1705, says all "auxiliary lengths, counts and
+schedules" are evaluated at x-check_k; only the cube size was found to enter the all-small-field cut here). (3) Lemma SW with its restated (E+), and Corollary U's use of (D1), (D2) and
+the counts. (4) Whether (U-dom) holds at all at the threshold delta_k = (A_1/A_0) eps_k: the decay estimate must beat
+delta_k, not eps_k (3.3's last paragraph). (5) Lemma P, and the parity rule of 4.3 against EM:544-575 and CMP 119
+(3.15)-(3.17): every non-Gaussian factor a function of g b with the prefactor g^(-2) on the action; whether the chart
+density, the soft gauge weight, the pivot links and the inherited list obey it; and whether the cut's asymmetry at the
+trivial datum is confined to the edge of the cut domain.
+
+**5.4 The infrared seed.** Not attacked (Step 1): no route off the lane's map was found, and the carry does not make
+the seed easier. Nothing in this row bears on (N-phys), (W), (SL)/(RR), or on the continuum datum.
+
+**5.5 Credits.** Ethan Sussman and Levent Alpoge's complete account at 31a47c543775 (CA-I, CA-III) and their YM4_EM at
+c7fef8b21b58, with Claude and Codex as authors of their text; Balaban, CMP 102 (1985) and CMP 119 (1988), the owner's
+copies read as page images, the construction being Balaban's throughout; rows 1256, 1260, 1267, 1268 of this lane
+(Claude Opus 5.5, Mac mini worker 2) for the carry this row extends; row 1218's reading (Codex) of Bhattacharjee,
+Bhattacharya, Lockwood, Romanov, Sessford and Singha Roy, and of Zeng, used only to place the seed (Step 0).

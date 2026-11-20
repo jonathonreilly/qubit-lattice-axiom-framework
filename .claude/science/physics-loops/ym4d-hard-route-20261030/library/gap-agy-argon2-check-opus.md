@@ -60,19 +60,19 @@ On file (each read at this commit):
 - The Doob (ground-state) chain P = psi^{-1} U psi of the transfer, with pi = psi^2 dx and density p_t: row 1161, `library/gap-solve9-astra62.md` L17. Also row 807, `library/gap-block-astra.md` (B6), L178-183, and row 738, `library/gap-means-astra.md` L627-631.
 - F = D C D on the gauge-invariant space, h = D psi, lambda = <h, C h>, and "the vacuum equation gives D^{-1} psi = C h / lambda": row 1161 L248. With D = M and h = w_0 this is (2.3) word for word.
 - The quadratic form of (2.5), <f, P_0 f>_pi = <M psi_0 f, C_E(M psi_0 f)> / lambda_0: row 1205, `library/gap-agy-solve-argon.md` Theorem 2.1(2), L76, L82-84.
-- Smoothness and positivity of psi_0: row 1180 L232-233; row 807 L170-174.
+- Smoothness and positivity of psi_0: row 1180 L234-235; row 807 L170-174.
 
 New in row 1207: the names w_0, h_0 and the operator form of row 1205's quadratic form. Nothing else.
 
 **The volume-penalty question (the row's main question).** Answer: no. The Doob representation does not remove the volume penalty of row 1180 Lemma R4, for three reasons.
 
-(a) Theorem 2.1 is an exact identity. It estimates nothing, so it can neither carry nor remove a loss. The loss of Lemma R4 belongs to one bound: lambda_k(F) <= ||D||^2 lambda_k(C), with lambda_0 <= 4 ||D||^2 exp(-2 c_4 n^3) (row 1180 L208-226; it HOLDS by row 1187). Row 1180 names its first failing step at L168-169: "the comparison trace does not carry the vacuum energy of F". The Doob form carries the vacuum energy exactly, but only through the unknown w_0 = M psi_0, that is, through psi_0 and lambda_0. The difficulty moves into w_0. It is not solved.
+(a) Theorem 2.1 is an exact identity. It estimates nothing, so it can neither carry nor remove a loss. The loss of Lemma R4 belongs to one bound: lambda_k(F) <= ||D||^2 lambda_k(C), with lambda_0 <= 4 ||D||^2 exp(-2 c_4 n^3) (row 1180 L208-226; it HOLDS by row 1187). Row 1180 names its first failing step at L167-168: "the comparison trace does not carry the vacuum energy of F". The Doob form carries the vacuum energy exactly, but only through the unknown w_0 = M psi_0, that is, through psi_0 and lambda_0. The difficulty moves into w_0. It is not solved.
 
 (b) **(P) The penalty factor is inside the Doob kernel.** From (2.3), (C_E w_0)(U) = lambda_0 w_0(U) / M(U)^2. Put this in (2.6):
 
     K_0(U, V) = (M(U)^2 / lambda_0) * C_E(U, V) * (w_0(V) / w_0(U)).
 
-So the density of the Doob kernel against the electric kernel is (M(U)^2/lambda_0) (w_0(V)/w_0(U)). On the diagonal V = U it equals M(U)^2/lambda_0. At the flat configuration (all links 1) this is ||M||_inf^2 / lambda_0 >= exp(2 c_4 n^3)/4, by Lemma R4. At the configuration with every spatial plaquette equal to -1 it is exp(-3 beta n^3)/lambda_0. That configuration exists for even n: U_(x,1) = 1, U_(x,2) = (-1)^(x_1), U_(x,3) = (-1)^(x_1 + x_2). Hence any comparison of the Doob chain with the electric chain C_E that is uniform in U loses exactly the factor of Lemma R4. A comparison that is not uniform needs pointwise control of w_0(V)/w_0(U), that is, of psi_0. This is a two-line consequence of the file's own (2.4).
+So the density of the Doob kernel against the electric kernel is (M(U)^2/lambda_0) (w_0(V)/w_0(U)). On the diagonal V = U it equals M(U)^2/lambda_0. At the flat configuration (all links 1) this is ||M||_inf^2 / lambda_0 >= exp(2 c_4 n^3)/4, by Lemma R4. At the configuration with every spatial plaquette equal to -1 it is exp(-3 beta n^3)/lambda_0. That configuration exists for even n: U_(x,1) = 1, U_(x,2) = (-1)^(x_1), U_(x,3) = (-1)^(x_1 + x_2). Hence any comparison of the Doob chain with the electric chain C_E that is uniform in U loses at least the factor of Lemma R4. A comparison that is not uniform needs pointwise control of w_0(V)/w_0(U), that is, of psi_0. This is a two-line consequence of the file's own (2.4).
 
 (c) The bounds the file derives from the representation, (2.13) and (2.19), still contain lambda_0. (2.19) is also an expectation under a law built from psi_0 (Step 3). The record already says the exact vacuum subtraction is the Doob chain and that what is missing is an estimate on it: row 962, `library/gap-constraints-max.md` L110, item 16 ("the vacuum is subtracted exactly (lambda_0^a)", FORCED-M; "the Doob chain and (LSI-J) are the exact subtraction"). Row 934 (VAC-SUB) and row 738 (M5-G) state such estimates. Both stay OPEN.
 
@@ -80,8 +80,8 @@ What would count as removing the penalty: a bound on s_+(u; n), or on a neutral 
 
 **Step 2 addendum (prior record found after the text above).** All of Theorem 2.1 is already row 863, and so is the answer to the penalty question.
 
-- Row 863, `library/gap-crux-skeleton-max.md` L108-110, I1 (slice chain): "Write T = e^(-V/2) K e^(-V/2) ... With g := e^(-V/2) Omega one has K g = lambda_0 e^(V) g and P(U, dU') = K(U, U') g(U') dU' / (K g)(U). So the slice chain is the product kernel K tilted by g at the arrival point (a Doob transform)." With e^(-V/2) = M, K = C_E (projected) and g = w_0, this is (2.3), (2.5) and (2.6) of row 1207, symbol for symbol. Row 879 (gpt-6-astra) checked row 863 and records no failure for I1.
-- Row 895, `library/gap-glue-max.md` L218, Stop 2 ("comparison with the free kernel; PROVED limit"): "P(U, dU') = K(U, U') g(U') dU'/(K g)(U), g = e^(-V/2) Omega (I1) ... Any comparison of the Dirichlet forms of P and K through the oscillation of g (Holley-Stroock), or of cross-ratios (Hopf, B2), has an extensive exponent: log g is a sum over the box. So it gives m_ev at least exp(-c |B|) and nothing at the seed size." This is point (b) above, in general form. Row 896 checked row 895.
+- Row 863, `library/gap-crux-skeleton-max.md` L108-110, I1 (slice chain): "Write T = e^(-V/2) K e^(-V/2) ... With g := e^(-V/2) Omega one has K g = lambda_0 e^(V) g and P(U, dU') = K(U, U') g(U') dU' / (K g)(U). So the slice chain is the product kernel K tilted by g at the arrival point (a Doob transform)." With e^(-V/2) = M, K = C_E (projected) and g = w_0, this is (2.3), (2.5) and (2.6) of row 1207, symbol for symbol. Row 879 (Codex astra xhigh) checked row 863: I1 HOLDS and I2 HOLDS (`library/gap-crux-skeleton-check-astra.md` L230, L235), and B2 HOLDS AFTER CORRECTION.
+- Row 895, `library/gap-glue-max.md` L218, Stop 2 ("comparison with the free kernel; PROVED limit"): "P(U, dU') = K(U, U') g(U') dU'/(K g)(U), g = e^(-V/2) Omega (I1) ... Any comparison of the Dirichlet forms of P and K through the oscillation of g (Holley-Stroock), or of cross-ratios (Hopf, B2), has an extensive exponent: log g is a sum over the box. So it gives m_ev at least exp(-c |B|) and nothing at the seed size." This is point (b) above, in general form. Row 896 checked row 895 as a whole: "FAILS as written overall", and its RESULT does not name Stop 2. Point (P) above rederives the part used here from (2.4), so this verdict does not rest on row 895. Row 896's check (`library/gap-glue-check-astra.md` L45) also describes the soft route's ground-state transform with a minorization, lambda/lambda_0 <= 1 - exp(-2 beta n_s). That exponent also grows with the volume. I did not read that file myself.
 
 So the row's question was answered on 2026-11-13, by rows 863 and 895: the Doob form is the exact vacuum subtraction, and every known comparison through it has an extensive exponent. Row 1207 neither cites nor improves on this. Final verdict for T2.1: HOLDS. Already on file (row 863 I1; also rows 1161 L17 and L248, 807, 738, 1205). Trivial. Its claim to remove the Lemma R4 penalty FAILS: the penalty sits inside the kernel (row 895 Stop 2; (P) above).
 
@@ -131,7 +131,7 @@ Conventions are those of row 1034 (`library/gap-sym-reg.md` L35-44). SU(2) is th
 - Correct forces. Differentiate beta Re(U_(l_mu) U_(l_nu)^(-1) X) in U_(l_mu), and beta Re(U_(l_nu) U_(l_mu)^(-1) X^(-1)) in U_(l_nu). This gives N^(p-)_(l_mu) = beta Ad(U_(l_mu)) Im(Z) and N^(p-)_(l_nu) = beta Ad(U_(l_nu)) Im(Z^(-1)) = -beta Ad(U_(l_nu)) Im(Z). (3.2) has Z' := X U_(l_nu)^(-1) U_(l_mu) in place of Z. The proof (L188) uses one form of A^- for l_mu and a different one for l_nu. Only the second is correct. Its last step claims U_(l_mu)^(-1) U_(l_nu) X^(-1) is "conjugate to" U_(l_mu)^(-1) X^(-1) U_(l_nu) "by U_(l_nu)". That is false: conjugating the second by U_(l_nu) gives U_(l_nu) U_(l_mu)^(-1) X^(-1). Even true conjugacy would rotate Im, not keep it.
 - Counterexample to (3.2) and (3.3): U_(l_mu) = 1, U_(l_nu) = i, U_Ptilde = j, U_Qtilde = 1. Then X = -j, Z = (-i)(-j) = k and Z' = (-j)(-i) = -k. Direct differentiation of A^- = beta Re(j i e^(-eps e_a)) gives N^(p-)_(l_mu) = beta k. (3.2) gives -beta k. Take n_(z - e_mu) = k, n_(z - e_nu) = i and any n_z. Using Ad(i) k = -k, the left side of (3.3) is beta (k - i) . k = beta. The right side of (3.3) is beta (k - i) . (-k) = -beta.
 - Correction. Replace Im(U_Ptilde^(-1) U_Qtilde U_(l_nu)^(-1) U_(l_mu)) by Im(U_(l_nu)^(-1) U_Ptilde^(-1) U_Qtilde U_(l_mu)) = Im(Z_(mu nu)) in (3.2), (3.3), (3.4), (3.6), and in the proof of 3.2. With that change I rederived (3.3), (3.4) and (3.6) line by line, including the integration by parts in (U_(l_mu), U_(l_nu)) for (3.6). They hold. W^(2) is a function of (U_(l_mu), U_(l_nu), U_ext). Its U_(l_alpha)-dependence through A^0_(in,mu nu), which reaches l_mu and l_nu through the backward plaquettes p^-_(kappa mu) and p^-_(kappa nu), sits inside the total derivative R_(l_alpha,a)(e^(A_rest) W_alpha^a). So the derivation is right.
-- Why n_z cancels. The gauge generator at z is G_a = sum_out e_a . R_l - sum_in (Ad(U_l) e_a) . R_l (row 1034 L77-80). It annihilates every plaquette. A backward plaquette has no outgoing link at z, so G_a A^- = 0 reads sum over alpha in {mu, nu} of (Ad(U_(l_alpha)) e_a) . N^(p-)_(l_alpha) = 0. Contract with n_z^a. That is the whole content of (3.3)'s cancellation. It is the plaquette-by-plaquette form of the STAR proof, so it is trivial and on file in substance. New in row 1207: the decomposition (3.4) by plaquette type, and the marginal (3.6).
+- Why n_z cancels. The gauge generator at z is G_a = sum_out e_a . R_l - sum_in (Ad(U_l) e_a) . R_l (row 1034 L76-79). It annihilates every plaquette. A backward plaquette has no outgoing link at z, so G_a A^- = 0 reads sum over alpha in {mu, nu} of (Ad(U_(l_alpha)) e_a) . N^(p-)_(l_alpha) = 0. Contract with n_z^a. That is the whole content of (3.3)'s cancellation. It is the plaquette-by-plaquette form of the STAR proof, so it is trivial and on file in substance. New in row 1207: the decomposition (3.4) by plaquette type, and the marginal (3.6).
 
 **T3.2: HOLDS as stated. It is Lemma PRIV's elimination applied to the backward corner link: new as an instance, elementary.** One hypothesis must be added, below.
 
@@ -181,11 +181,11 @@ Section 3 overall: no statement moves Lemma O1. Rows 1034 and 1205 already hold 
 | T2.2 | on file in substance: rows 863 B3, 738 (M5-G), 1205 Thm 2.1(2); law of total variance; trivial |
 | T2.3 | first equality = definition of s_+(2; n) (row 863 I2 form); inequality = restriction of a trace; trivial |
 | T2.4 | (2.15)-(2.17) on file: row 863 I1, B2 (cross-ratio free of V); (2.18)-(2.19) new in form, elementary |
-| T3.1 | wrong as written; after correction the n_z cancellation is gauge invariance at z (row 1034 STAR proof, L77-80); (3.4) and (3.6) new in form |
+| T3.1 | wrong as written; after correction the n_z cancellation is gauge invariance at z (row 1034 STAR proof, L76-79); (3.4) and (3.6) new in form |
 | T3.2 | new instance of row 1034's method (A2) and Lemma PRIV; elementary; constraint only |
 | T3.3 | new in form, empty (follows from row 1205 (3.7)) |
 | T4.1 | new instance of row 1205 Thm 3.3; trivial |
-| T4.2 | new in form; standard; two of five displays wrong |
+| T4.2 | new in form; standard; three of six displays wrong ((4.8), L279, (4.10)) |
 
 ### Step 6 (done 2026-11-20T01:33Z, date -u). Numeric guide (GUIDE only; no verdict rests on it)
 
@@ -206,10 +206,48 @@ Sources: the RESULT lines of rows 1188, 1189, 1190 and 1196, and the verdict hea
 |---|---|---|
 | Crux moved ((N-phys), Lemma O1, (BS), (W)) | none | none |
 | PROVED statements that fail as written | 0 of 23 | 3 of 11 items: T3.1 (plaquette formula, (3.2), (3.3)); T4.2 ((4.8), L279, (4.10)); Table 5.1's PROVED label. T4.1 needs a sign fix |
-| False headline claims | none in the RESULT lines that row 1196 refuted as PROVED | five: penalty of Lemma R4 removed; "without volume loss"; psi_0, lambda_0, M cancel from the bound; chi-square bound "equivalent" to (N-phys); ker L_mu "finite-dimensional" |
+| False headline claims | none among their PROVED statements; row 1196's FAILs hit ARGUED route deductions | five: penalty of Lemma R4 removed; "without volume loss"; psi_0, lambda_0, M cancel from the bound; chi-square bound "equivalent" to (N-phys); ker L_mu "finite-dimensional" |
 | Record check before claiming new | yes; each lists its on-file matches (row 1190: 17 attacks screened, "the chi-square form" flagged as a restatement with no consumer) | no; Section 2 is row 863 I1, B2, I2 and row 895 Stop 2, none cited; Theorem 2.4's chi-square form is the restatement row 1190 flagged |
 | New, correct, non-trivial content | Lemma PC (theorem-grade form of an ARGUED count), A7, A8 (pin-uniform Mermin-Wagner step, power-law bound), the Z_cube sum | (2.18)-(2.19) and T3.2: correct and new in form, but elementary, and neither has a consumer |
 | Label discipline | PROVED / ARGUED / OPEN used as defined | a heuristic table labelled PROVED; a conditional clause (T4.1) inside a PROVED theorem |
 
-Rating: row 1207 is below each of rows 1188-1190 on correctness, calibration and value, and ahead only on speed and length. Its correct material is the ground-state calculus already on file, restated with confident claims of novelty. One clear strength: the Section 2 algebra is clean and every identity in it is right. As a second data point after row 1205: no check of row 1205 (row 1206) exists at this commit, so I cannot say whether the error rate is stable across the two Argon sessions.
+Rating: row 1207 is below each of rows 1188-1190 on correctness, calibration and value, and ahead only on speed. Its correct material is the ground-state calculus already on file, restated with confident claims of novelty. One clear strength: the Section 2 algebra is clean and every identity in it is right. As a second data point after row 1205: no check of row 1205 (row 1206) exists at this commit, so I cannot say whether the error rate is stable across the two Argon sessions.
 
+### Step 8 (done 2026-11-20T01:35Z, date -u). Verdicts, ranked defects, RESULT
+
+Provenance: Claude Opus 5.5 max, Mac mini worker 3, commit `beea72f25`. One cross-provider check of row 1207 (gemini-4-argon-high), by hand. Not an audit. It grants no status. The numeric run of Step 6 guides only.
+
+| Statement (row 1207) | Verdict | New / on file / trivial / wrong |
+|---|---|---|
+| T2.1 (1)-(3), (2.1)-(2.6) | HOLDS | on file (row 863 I1, L108-110; rows 1161 L17, L248; 807; 738; 1205); trivial |
+| T2.1 claim: removes the volume penalty of row 1180 Lemma R4 | FAILS | wrong: the R4 factor is the diagonal density M(U)^2/lambda_0 of the Doob kernel against C_E (Step 2 (P)); row 895 Stop 2 has this |
+| T2.2 (2.7)-(2.9) | HOLDS | on file in substance (rows 863 B3, 738, 1205); trivial |
+| T2.3 (2.11)-(2.13) | HOLDS | trivial (definition of s_+(2; n), plus restriction of a trace) |
+| T2.3 claims "without volume loss", "eliminating psi_0" | FAIL | wrong: nothing is estimated, and lambda_0 stays in both sides |
+| T2.4 (2.14)-(2.19) | HOLDS | (2.15)-(2.17) on file (row 863 I1, B2); (2.18)-(2.19) new in form, elementary |
+| T2.4 / L324 claims: the bound is free of psi_0, lambda_0, M, and "equivalent" to (N-phys) | FAIL | wrong: the law contains psi_0. Converse false: two-state chain, s = 1/4, chi^2 = 20/9 |
+| T3.1 (1)-(3), L169, (3.2)-(3.6) | FAILS as written; HOLDS AFTER CORRECTION | wrong transcription of row 1205 (3.5). Replace by Z = U_(l_nu)^(-1) U_Ptilde^(-1) U_Qtilde U_(l_mu). The n_z cancellation is gauge invariance at z (row 1034 L76-79); (3.4), (3.6) new in form |
+| T3.2 (1)-(3) | HOLDS (add: Omega a product in U_Ptilde, as in Lemma PRIV) | new instance of row 1034 (A2) and Lemma PRIV; elementary; excludes no frame |
+| T3.3 (1)-(2) | HOLDS, empty | follows from row 1205 (3.7) alone; the claim at L45 of a finite-dimensional ker L_mu FAILS (infinite family given) |
+| T4.1 | HOLDS AFTER CORRECTION (sign of (4.2); last clause PROVED GIVEN an unproved lower bound) | new instance of row 1205 Thm 3.3; trivial |
+| T4.2 (4.6), (4.7), (4.9) | HOLD | standard |
+| T4.2 (4.8) | FAILS (sign: (1/2)[[-Delta, S], S] = -sum_e N_e . N_e) | wrong |
+| T4.2 display L279 | FAILS for every beta > 0 | wrong |
+| T4.2 (4.10) | FAILS as derived (holds iff E_pi[sum_e N_e . N_e] = 12 E_pi[S^2], unproved) | wrong derivation; correct identity in Step 5 |
+| Table 5.1 "PROVED" | FAILS as a label; GUIDE | unproved assertions |
+| Section 1.1 PROVED GIVEN | HOLDS as a citation (add (P1)-(P3), row 1183) | on file (rows 1161/1162, 1179/1183) |
+
+Ranked defects (what each breaks):
+
+1. The main claim, that the Doob form removes the Lemma R4 penalty, is false. The penalty is the kernel's own diagonal density. Rows 863 and 895 had recorded this, so the strategy of the file (1.2 item 1, 5.3 item 1) starts from a known dead end.
+2. "Equivalent" (L324) is false. (2.19) is sufficient only, and it loses a factor near 4 at small s.
+3. The bound (2.19) is not free of the vacuum. Its law is the vacuum's two-slice law.
+4. T3.1 has the wrong backward plaquette (not gauge invariant). Every displayed formula of 3.1 is wrong as written. The corrected forms are given.
+5. T4.2: (4.8) has the wrong sign, L279 is false, and (4.10) is mis-derived.
+6. T3.3 is empty, and its kernel claim is false.
+7. Table 5.1 is labelled PROVED but contains no proofs.
+8. T2.3's descriptive claims are unsupported.
+9. T4.1 has a sign error, and its last clause is conditional.
+10. Section 1.1 omits (P1)-(P3).
+
+RESULT: Row 1208 (Claude Opus 5.5 max, Mac mini worker 3, cross-provider check of row 1207 gemini-4-argon-high, by hand, not an audit; numeric run guide only): Theorems 2.1-2.4 HOLD as identities and inequalities but are the ground-state (Doob) calculus already on file (row 863 I1, B2, I2; row 895 Stop 2; rows 1161, 807, 738, 1205, 1190) and estimate nothing; the claim that the Doob representation removes row 1180 Lemma R4's volume penalty FAILS (the R4 factor is the Doob kernel's own diagonal density M(U)^2/lambda_0), and so do "without volume loss", "psi_0/lambda_0/M cancel from the bound" and the "equivalence" of (2.19) with (N-phys) (two-state counterexample, s = 1/4, chi^2 = 20/9); Theorem 3.1 FAILS as written (non-gauge-invariant backward plaquette; explicit counterexamples) and HOLDS AFTER CORRECTION with Z = U_(l_nu)^(-1) U_Ptilde^(-1) U_Qtilde U_(l_mu), its n_z cancellation being gauge invariance at z; Theorem 3.2 HOLDS (Lemma PRIV's method on the backward corner link, new instance, elementary); Theorem 3.3 HOLDS but is empty, and its finite-dimensional-kernel claim FAILS; Theorem 4.1 HOLDS AFTER CORRECTION (sign; last clause conditional); Theorem 4.2's (4.6), (4.7), (4.9) HOLD, while (4.8) (sign), the display at L279 (false for every beta > 0) and (4.10) (mis-derived) FAIL; the Table 5.1 PROVED label FAILS (GUIDE); Section 1.1 HOLDS as a citation. Nothing in row 1207 moves (N-phys), Lemma O1, (BS) or (W), which stay OPEN with the continuum datum and the mass gap. Rating against the plain-brief rows 1188-1190 (checked in row 1196: 23 proved statements, 0 FAIL): row 1207 rates below each of them on correctness (3 of 11 PROVED items fail as written, plus 5 false headline claims), on calibration (no record check; on-file results claimed as new) and on value (no new non-trivial statement with a consumer); it is faster (18 min against 51-59 min). Output library/gap-agy-argon2-check-opus.md.

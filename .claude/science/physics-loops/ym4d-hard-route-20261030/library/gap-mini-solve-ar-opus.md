@@ -12,7 +12,7 @@ OPEN (not established).
 
 ## 0. Status of this file
 
-Step 1 done (briefing read and digested, Section 1). Next: Section 2, the choice of attack.
+Step 2 done (Section 2: judgement and choice, written 2026-11-20 by date -u). Next: Section 3.
 
 ## 1. Briefing digest (what this row starts from)
 
@@ -44,3 +44,49 @@ fresh, fresh2). Nothing below is new; it fixes the starting point.
    spacing, and every published rigorous method stops roughly ten times lower in beta; Proposition CA-FAIL
    rules out criteria uniform over boundary data.
 5. Owner direction for this row: horsepower on the crux; a plain brief ("solve the problem").
+
+## 2. How best to attack it (judgement; ARGUED unless cited)
+
+**2.1 Where the problem stands.** By the record (Section 1, items 1-4), and modulo the open inputs of the
+one-cutoff carry, the Jaffe-Witten gap for SU(2) needs one infrared input: a seed of Wilson SU(2) at one weak
+coupling, that is, a uniform gap of the periodic cubes plus a count of light states (row 1259, Corollary CD1),
+at a size of many correlation lengths. In the form (N-phys) with K = 512 this is a pressure bound deep in the
+confined phase (row 1284 Step 0, item 2). It is the lattice mass-gap problem at one coupling. No hand method in
+the lane or in the literature read here reaches it.
+
+**2.2 What the 2D proofs show, and why the port stops (GUIDE, from rows 1009-1016, 1072-1074, 1140, 1243-1249).**
+The posted 2D O(N) proofs (OpenAI; Ding, Huang and Yang; unrefereed) reach the one-coupling statement by a
+bound that holds at every coupling, with a non-optimal exponential rate. They get it from a stiffness
+iteration whose gain is a tadpole (the curvature of the target sphere), proved uniformly over pins and
+strengths. In 4D gauge theory three facts on file block the port:
+(a) the class "uniform over pins" does not close: two pinned slices make a 3D O(4) magnet (Proposition CA-FAIL,
+rows 1072-1074), and coupling fields make critical members (Lemma SHEET, row 996);
+(b) the gauge theory has no rigid non-abelian twist on its integration variables (CEN+, row 1016; Lemma DR,
+row 1273);
+(c) the 4D one-loop gain is a two-propagator bubble whose sign comes from the paramagnetic spin term; one-sided
+tools (Jensen with a flow of bounded strength) keep only the screening part (row 1244 Proposition 2.3; row 1249).
+In my own terms, (c) is this: in -log(Z(B)/Z(0)) the anti-screening part is minus half a variance of the
+spin coupling, a second cumulant, and Jensen drops every cumulant beyond the first. A flow can restore it only
+if the flow is long-range, which is an RG step through the band.
+
+**2.3 Decision.** A further screen of mechanisms is named waste on file (row 998 9.5; rows 1228-1284 screened
+about sixty families with none off the record). I checked eight more names against the record before deciding
+(Yamazaki-Yonekura reduction and adiabatic continuity: Route T, rows 842, 862; spectral independence, entropy
+factorisation and localisation schemes: `gap-mini-solve-o-fable.md` L55 with `prior/gap-lit-tiltcov.md` Step 3,
+"each is an engine; its local input at block scale is a one-scale seed of kind (K-one)"; Bakry-Emery and Polchinski
+flow: method 31; Gribov region: the screen table of `gap-mini-solve-am-opus.md` L32; the Kogut-Susskind ground-state
+transform: row 1281, Lemma V; Nielsen-Olesen and gluon paramagnetism: row 1244; the count half (TR): row 1259). All are on
+file. So I do not run another screen.
+
+I also tested whether the count half is free given the gap (a counterexample or a proof would settle row 1259's
+open sentence "the implication uniform gap implies a seed itself stays OPEN"). Result, ARGUED: neither direction
+is reachable by soft tools. (i) A proof needs the low-lying states to be particle-like: RP, locality and a gap on
+every box shape give nothing per unit volume, because a chessboard or doubling bound always reintroduces the
+Casimir term t c(Y) of a smaller box (Section 3.0 below writes this out). (ii) A counterexample needs exponentially
+many states at bounded energy above a unique gapped vacuum; the known sources of such counts (subsystem
+symmetries, fracton and topological sectors) come with degenerate vacua, so they lose the uniform gap. I record
+this and stop there.
+
+**Item chosen for the rest of this row.** The infrared seed stays OPEN here. I spend the row on a closable input of
+the critical path that no row owns and whose sources are reachable from this machine, and I name it in Section 3
+after a rule-0a check against the parallel rows 1284 and 1293.

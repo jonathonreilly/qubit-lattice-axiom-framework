@@ -25,7 +25,7 @@ gpt-6.2-astra max author run. By hand; no numeric run is a step of any verdict.
 
 (Each step appends its result below as it completes.)
 
-### Step 1 (done 2026-11-20T07:0xZ): inventory
+### Step 1 (done about 2026-11-20T06:55Z): inventory
 
 Checked file: `library/gap-solve26-astra62.md`, 472 lines, as at commit 0b36dd3d0. Its header says
 checkout `a8687ae94`; the file is unchanged in content as far as this check reads it.
@@ -328,3 +328,105 @@ conditionally in their account.
   repo-search hits of L3, the CA-I lines cited at L5, row 1141 (2) cited at L461, row 1171 cited at L468.
 
 First failing step in Step 6: none.
+
+### Step 7: is the main comparison a restatement of an earlier row?
+
+Searches run: `grep` of open-core.md (564 lines) for mass gap / heat trace / heat bath / cube relaxation /
+B-local: no match; FINISH rows for B-local / heat bath / cube relaxation: no row owns this; earlier gap files
+for open-box comparisons, transported curvature, varpi, finite-speed arguments; then the matches read below.
+
+**Main comparison (2) and (9): not a restatement; an extension of row 1151 (24) by the same method.**
+Row 1151 (24) (`gap-solve5-astra62.md` L302-L317, checked HOLDS in `gap-solve5-check-opus.md` 9.3) already
+compares translation-averaged Lipschitz tests of l plaquette radii at arbitrary, lattice-dependent offsets
+with independent open-box Gaussians, by the entropy bound C V Delta_b and Gaussian concentration. The new
+parts are: (1), which couples the open boxes to one periodic free Gaussian PZ, so that offsets in different
+boxes are compared with the correct free covariance; the extension to every even period M >= n; and in (8)-(9)
+transported colour vectors with l^1 weight r^2, tests invariant under separate rotations, uniform in
+displacements. The proofs reuse row 1151's steps; the file credits row 1151 and Sourav Chatterjee.
+
+Other comparisons, statement by statement:
+- (3)-(6): the logarithmic-coupling, growing-box version of row 1215 (14)-(15) (`gap-solve23-astra62.md`
+  L240-L265), which used a diagonal sequence beta_j chosen by convergence on a fixed box. Not a restatement.
+- (12)-(13): the reflection argument of row 1222 (20) (`gap-solve24-astra62.md` L309-L330, elementary
+  plaquettes, constant 20 per axis), extended to observables of growing width; credited at L137.
+- (14): row 1163 (27) (`gap-solve10-astra62.md` L361-L370) gives a count of c d^{-3} neutral levels at
+  physical scale d, conditional on (SD-cyl-CA). (14) is unconditional but at lattice scale r = beta^delta.
+  Not a restatement; credited at L76.
+- (25), (26), (30): the partition trace and the product-bin bound are row 1227 (19)-(20); (30)'s winding step
+  is row 1227 (22) with Z = the packet array. New inputs: (22)-(24), (29). Credited at L265, L313.
+- (40): extends row 1227 (25)-(26) (see Step 4); acknowledged at L391.
+- L344 upper bound: restates row 1204 (3) (`gap-solve21-astra62.md` L48-L60), as the file says. The Wilson
+  lower bound (33) is new.
+- **(36), the propagation estimate behind claim D: restates a checked published argument that the file does
+  not credit.** Row 1224 (`gap-mini-solve-q-fable.md` L199-L210) checked, HOLDS, Lemma 6.2 (finite speed
+  of the cube chain) and Theorem 6.3 / Corollary 6.4 (BP(n, varpi) gives static correlation decay at lattice
+  rate varpi/(e^2 q_n n) >= 16 varpi/(625 e^2 n)) of A = Bhattacharjee, Bhattacharya, Lockwood, Romanov,
+  Sessford and Singha Roy, "One Bound at One Scale" (Preprints.org 202611.1282 v1); B's Theorem 66 carries
+  the same constant (row 1218 L145-L148). (36) is that mechanism in continuous time with Poisson clocks. What
+  is new in (35) is its conjunction with the Wilson power law K_mag(s) ~ s^{-8} from (9)-(11). This turns into
+  a proof, for cube sides m <= C_0 beta^delta and without assuming non-triviality, the ARGUED Claim A of
+  row 1229 (`gap-mini-solve-t-opus.md` L120-L130: bounded-block BP along the trajectory would force an
+  infinite continuum gap). Rows 1224 and 1229 were queued 03:53Z and 05:27Z, close to row 1231's 05:41Z start;
+  they may not have been visible to its author. Correction (wording, not mathematics): credit A's Lemma 6.2
+  and Theorem 6.3 at L375-L385.
+
+### Step 8: verdicts and result
+
+Provenance: Claude Opus 5.5 max, Mac mini worker 3, commit 0b36dd3d0, one line-by-line reading by hand,
+2026-11-20T06:49Z-07:15Z (date -u). One reading by the other provider; not an audit, no status granted. No
+numeric run was made. Every verdict below is an implication from the inputs named in Steps 2-7.
+
+| statement | lines | verdict |
+|---|---|---|
+| (1) box curl rank count | L21-L26 | HOLDS |
+| (2) Wilson vs one periodic Gaussian | L30-L36 | HOLDS (input: row 1151 (24), checked HOLDS) |
+| (3) plaquette covariance | L40-L46 | HOLDS |
+| (4)-(6) cylinder kernel, scaling, t^-8 band | L48-L72 | HOLDS |
+| (7)-(8) packet, good-box linearization | L78-L93 | HOLDS |
+| (9) transported-curvature comparison | L95-L107 | HOLDS |
+| (10)-(11) Gaussian limit, K(s,y), reflection average | L111-L127 | HOLDS |
+| (12)-(13) 6^3 frame bound | L129-L150 | HOLDS |
+| **(14) neutral bands (claim A)** | L152-L161 | **HOLDS** |
+| (15) thermal lower bound | L163-L167 | HOLDS |
+| (16)-(19) two-link term, small balls, restriction | L173-L210 | HOLDS (input: row 1211 (6), re-derived) |
+| L212, (20)-(21) | L212-L226 | HOLD |
+| (22)-(26) normalized radial reading and traces | L232-L276 | HOLD (inputs: row 1145 (1)-(2), row 1227 (19)-(20), re-derived) |
+| (27) | L278-L282 | HOLDS |
+| (28); L295 | L284-L295 | HOLD given (PL3) (and ergodicity for L295), as labelled |
+| (29) | L299-L309 | HOLDS |
+| **(30) packets plus windings (claim B)** | L311-L318 | **HOLDS** (input: row 1227 (22)) |
+| (31)-(33) | L322-L342 | HOLD |
+| L344 | L344 | HOLDS given (PL5), as labelled; upper bound is row 1204 (3) |
+| (34) | L346-L351 | HOLDS |
+| **(35) cube relaxation (claim D)** | L357-L365, L387 | **HOLDS** |
+| torus correlation K_mag | L367-L373 | HOLDS |
+| (36) propagation estimate | L375-L385 | HOLDS; wording correction: credit A's Lemma 6.2, Theorem 6.3 (Step 7) |
+| (37)-(39) | L393-L432 | HOLD |
+| **(40) complete fixed patch (claim C)** | L434-L440 | **HOLDS** |
+| grid and windings extension | L442-L444 | HOLDS |
+| (41) | L446-L455 | HOLDS |
+| Gaussian cylinder test | L459 | HOLDS |
+| (42) identity; OPEN remainder | L463-L470 | identity HOLDS; OPEN label correct |
+| GUIDE / OPEN statements | L3-L15, L76, L171, L230, L355, L391, L461 | labels honest; none used as a proof step |
+
+First failing step: none. Statements FAILS: none. HOLDS AFTER CORRECTION: none in the mathematics.
+
+Defects (ranked by what they break; none breaks a consumer):
+1. L375-L385: (36) is the finite-speed and decay-from-one-cube argument of Deep Bhattacharjee, Ushashi
+   Bhattacharya, James Montgomery Lockwood, Tristan Romanov, Ikailo John Sessford and Sanjeevan Singha Roy
+   ("One Bound at One Scale", Lemma 6.2, Theorem 6.3; checked HOLDS in row 1224), in continuous time. Add the
+   credit. Nothing else changes.
+
+Restatement: the main comparison (2)/(9) is not a restatement. It extends row 1151 (24) by the same method,
+adding the periodic coupling (1) and transported vector packets. (36) restates a checked published argument
+(defect 1). The upper half of L344 restates row 1204 (3), as the file says. The trace steps reuse row 1227 (19),
+(20) and (22) with new inputs.
+
+Scope, which the checked file states itself: (14) counts ultraviolet states (physical energy ~ n/(rL) -> infinity).
+(30) and (40) bound the weight seen by particular observation subspaces: normalized radial readings plus
+windings, and complete patches of fixed lattice side covering a vanishing fraction of the bonds. (35) excludes
+a uniform cube-dynamics rate only for cube sides <= C_0 beta^delta, not at a fixed physical cube size. None of
+the four bounds the complementary trace in (42). The neutral heat trace at a fixed physical side, and with it
+the Jaffe-Witten mass gap, stay open.
+
+RESULT: Row 1235 check of row 1231 (Claude Opus 5.5 max, by hand, first failing step none): all four positive claims HOLD: (14) neutral bands at shrinking physical wavelength, the observed-weight bounds (30) and (40), and the cube-relaxation size (35). Every other numbered statement HOLDS; (28) and L295 hold given (PL3), L344 given (PL5), as labelled. One wording correction: (36) restates the checked Lemma 6.2 and Theorem 6.3 of Bhattacharjee et al., "One Bound at One Scale", and needs that credit. The main comparison (2)/(9) extends row 1151 (24); it is not a restatement. OPEN: the complementary neutral heat trace in (42) at a fixed physical side, hence the mass gap.

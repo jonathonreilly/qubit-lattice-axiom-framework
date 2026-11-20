@@ -162,3 +162,146 @@ What must be checked (Step 4): (R1) the geometry of A(Y) and of the filing; (R2)
 (R3) that the plain statement may be applied to inputs that depend on non-integrated fields outside their index
 domain (island fields), i.e. which property of localisation the plain expansion reads; (R4) clause (a) and (c);
 (R5) the levels (output read at k+1 with W_(k+1)); (R6) the corollary on the marked sub-sum and the tolerance lemma.
+
+## Step 4. The (T) part by re-localisation (written 17:28Z by date -u)
+
+Conventions are the account's (CA-I 4.21:not-cubes-cells-probes, L62735-62800; CA-III 9.1:not-cubes-strips,
+L15209-15300; 9.1 format, L15889-15936). Level-m cubes are the closed M-cubes of pi_m, lengths in level-m units.
+D_m = finite unions of level-m cubes that are wall-connected ("two consecutive cubes have a common wall"). d_m(X) =
+least length of a tree graph contained in X that meets every cube of X. d_(m,W)(Y) = least length of a tree graph
+contained in Y that meets every cube of Y not contained in W, and 0 if Y is in W. W = W_m is a union of level-m cubes;
+islands are its touch-components and are pairwise non-touching. d°_m(Y) = d_(m,W_m)(Y) for Y in D^I_m. For a set S,
+cl_m(S) is the union of the level-m cubes that meet S. k_d, c_d = 2 3^d, C_fib = 2 e^(2 k_d) as in
+(9.1:eq-cubes-strips-2).
+
+**Definition RL (active domain).** Let Y be a level-m union of cubes with Y not contained in W. Choose once and for all
+a tree graph tau_Y contained in Y, meeting every cube of Y not contained in W, with |tau_Y| = d_(m,W)(Y) (a minimiser
+exists: the relevant tree graphs are finite unions of segments in a compact set, and the account takes the minimum in
+(9.1:eq-cubes-strips-1)). Put A(Y) := cl_m(tau_Y).
+
+**Lemma A1 (active domain). PROVED.** For Y as above:
+(i) tau_Y is contained in A(Y), and tau_Y meets every cube of A(Y);
+(ii) A(Y) is in D_m, and d_m(A(Y)) <= d_(m,W)(Y);
+(iii) every cube of Y not contained in W is a cube of A(Y);
+(iv) every cube of A(Y) touches or equals a cube of Y.
+Proof. (i) Each point of tau_Y lies in a closed cube, and that cube meets tau_Y, so it is in A(Y). The second claim
+is the definition of cl_m. (ii) A(Y) is finite, since tau_Y is compact. Wall-connectedness: for a point p put S(p) :=
+the set of cubes containing p. S(p) is the set of cubes prod_i [n_i, n_i + 1] with n_i in {floor(p_i) - 1, floor(p_i)}
+if p_i is an integer and n_i = floor(p_i) otherwise; it is a box of 2^j cubes, j the number of integer coordinates, so
+it is wall-connected. For p on tau_Y every cube of S(p) meets tau_Y, so S(p) is in A(Y). A cube not containing p has
+positive distance from p, and there are finitely many cubes near p; hence p has a neighbourhood U_p such that S(q) is
+contained in S(p) for every q in U_p. So the map p -> (the wall-component of A(Y) containing S(p)) is locally
+constant on tau_Y. A tree graph is connected, so the map is constant. Every cube of A(Y) meets tau_Y in some p and so
+lies in S(p). Hence A(Y) is one wall-component, and A(Y) is in D_m. By (i), tau_Y is a tree graph contained in A(Y)
+meeting every cube of A(Y), so d_m(A(Y)) <= |tau_Y| = d_(m,W)(Y). (iii) tau_Y meets every such cube. (iv) A cube Q of
+A(Y) contains a point p of tau_Y, which lies in Y, hence in some cube Q' of Y; Q and Q' share p. QED.
+
+Remark. A(Y) need not be contained in Y; the cubes of A(Y) outside Y touch Y. Membership in D_m needs nothing else.
+
+**Lemma A2 (filing of a re-localised output). PROVED.** Let X^a be in D_m and let P be a union of islands of W, each
+meeting or touching X^a. Put X := X^a union P. Then fil_m(X) minus W = X^a minus W, and
+d°_m(fil_m(X)) <= d_m(X^a).
+Proof. fil_m adds islands, which lie in W, and P lies in W, so fil_m(X) minus W = X^a minus W. A tree graph tau of
+length d_m(X^a) contained in X^a and meeting every cube of X^a is contained in fil_m(X) and meets every cube of
+fil_m(X) not contained in W, since each such cube is a cube of X^a. QED.
+Remark (applies equally to the account's own filing). Islands are touch-components, and two cubes of an island may
+touch only at a corner, so X^a union P, and the account's fil_l(X) of L15905-15907, may fail to be wall-connected.
+The account asserts fil_l(X) in D^I_l (L15907, and Lemma 9.1:lem-blind-counts (v)) without this check. Nothing below
+uses wall-connectedness of a filed domain: the bound of Lemma A2 is a statement about d_(m,W), whose definition does
+not need it. A repair, if a consumer needs D^I in the wall sense, is to define islands as wall-components; I did not
+check the consumers for this.
+
+**Lemma A3 (activity of the re-localised family). PROVED GIVEN 9.1:lem-blind-counts (i).** Let F = {F(Y)} be a blind
+store of level m in format with N°_m[F] < infinity at rate r, and let kappa >= 0 with r >= kappa + k_d + 2. For A in
+D_m put F'(A) := sum of F(Y) over the blind Y with Y not in W and A(Y) = A. Then
+  (a) per domain: |F'(A)| <= c_d C_fib N°_m[F] e^(-kappa d_m(A));
+  (b) anchored: for every cube Delta with dist_m(Delta, W) >= 1,
+      sum over A containing Delta of e^(kappa d_m(A)) |F'(A)| <= 3^d C_fib N°_m[F].
+Proof. (a) For each Y with A(Y) = A, Lemma A1 (ii) gives d°(Y) >= d(A), and Lemma A1 (iii) gives a cube of A not in W
+contained in Y (Y minus W is non-empty because Y is blind and not in W). So
+  |F'(A)| <= N° sum_(Y: A(Y)=A) e^(-r d°(Y)) <= N° e^(-kappa d(A)) e^(-d(A)) sum_(Y: A(Y)=A) e^(-(r-kappa-1) d°(Y))
+          <= N° e^(-kappa d(A)) e^(-d(A)) sum_(Delta' in A, not in W) sum_(Y in D^I, Y contains Delta') e^(-(r-kappa-1) d°(Y))
+          <= N° e^(-kappa d(A)) e^(-d(A)) N_m(A) C_fib,
+by lem-blind-counts (i) with lambda_0 = r - kappa - 1 >= k_d + 1. By (g1) of 4.21:lem-tree-length-facts,
+N_m(A) <= c_d (d(A) + 1), and (x + 1) e^(-x) <= 1 for x >= 0. (b) If A(Y) contains Delta then tau_Y meets Delta in a
+point p, and p lies in a cube Delta' of Y. Delta' touches or equals Delta, so there are at most 3^d choices of Delta',
+and Delta' is not contained in W, since otherwise p would lie in W and Delta would touch W. Then
+  sum_(A contains Delta) e^(kappa d(A)) |F'(A)| <= N° sum_(Y: A(Y) contains Delta) e^(kappa d°(Y) - r d°(Y))
+          <= N° sum_(Delta') sum_(Y contains Delta') e^(-(k_d+2) d°(Y)) <= 3^d C_fib N°. QED.
+Both constants are at most the account's K°(d) = C_fib sup_(y>=1) y^d e^(-(y-3)) >= C_fib d^d e^(3-d) (= C_fib 256/e for
+d = 4, which exceeds 3^4 = 81) for (b), and within a factor 2 of it for (a) (c_d = 162 at d = 4).
+
+**The two readings the theorem uses (ARGUED; each is a statement about the plain site, not checked against Balaban's
+text, which is not readable on this machine).**
+- (H-fmt) Every condition that the plain site statement at (T) places on an input potential indexed by a plain domain
+  A is either linear in the potential (a structural form, an analyticity domain given by conditions on the
+  configuration cube by cube, gauge invariance, reality) or a bound on its modulus on that domain by a constant times
+  e^(-kappa d(A)), where the constant enters the site's thresholds monotonically (the activity constant). Support:
+  CA-II L6977-6987 (F1 of Step 3.1: the potentials enter only as Mayer factors and the estimates read them "only
+  through eps_2 ... and monotonically so"); L3712-3714 (the radii fix |tau(Y)| by e^(-(1-3 delta) kappa d_k(Y)));
+  L3721 ("These steps use only the form [CMP116 (1.42)] and the bounds [(1.43), (1.36)]").
+- (H-par) The plain site statement at (T) holds verbatim when an input potential V(A) depends, besides the configuration
+  on A, analytically and with the same bounds uniformly, on the configuration in a set P(A) that is a union of islands,
+  provided the site integrates, decouples and shifts no variable in P(A) and the gauge invariance of V(A) is joint with
+  the configuration on P(A); each output then depends in addition only on the configuration in the P(A) of the
+  potentials it reads. Support: CA-II L3546-3548 (5.2:lem-complex-fluctuation: the outputs are analytic "in every
+  parameter on which the V depend analytically with the bounds above"); CA-II L5285-5299 (5.2:def-sites-units (b):
+  fourth-class units, which are the stored B, B' and chain terms, are invariant "jointly with its live exterior
+  slots, ... and not ... as a function of its own configuration alone", after CMP119 (2.41)(iii)); CA-II L6995-6997
+  (F2: an output reads only the potentials whose domains it contains); CA-III 9.1:lem-island-geometry (a), (d1)
+  (L15489-15500, L15535-15540: no island meets Lambda_(m+1), the decoupling region Y_0 or the fluctuation support, and
+  every decoupling cube, fluctuation cube and walk origin is at least 3 R_m - 4 cubes from W_m); the shift pieces are
+  products with chi-hat_square, supported on blocks of the site (CA-II L5323-5326). The account's own route uses the
+  same principle (CA-III L16752-16755: "a Mayer link between two terms that overlap only inside an island is declared a
+  non-link, since the two terms share no integration variable there. This is the device of [CMP122b]").
+
+**Theorem RL-T (the (T) part of 9.1:prop-blind-site-expansions). PROVED GIVEN (H-fmt), (H-par), the plain site
+statements at (T) as the account takes them, and the floor (F_RL): kappa >= 8 (k_d + 2).** Consider the T-step from
+level k to k+1. Let the inputs be the plain inputs of the site together with island-blind stores of levels l <= k, read
+at level k (W = W_k), each blind store F of rate r_F in {9/8 kappa, kappa_out}. Then:
+(T1) Re-index: for each blind store read at level k, take Y_k := fil_k(cl_k Y), tau := tau_(Y_k) and A := A(Y_k). Let
+     V^m(A) be the sum of all blind stores with active domain A, and V^u the plain input family. Blind stores with
+     Y_k in W contain no variable of the site and are carried unchanged (they are read by no output).
+(T2) V = V^u + V^m is an input family of the plain site: V^m satisfies the plain per-domain bound at rate kappa with
+     activity constant c_d C_fib N°[F] (Lemma A3 (a)), and its anchored activity at every cell of the site is at most
+     3^d C_fib N°[F] <= K°(d) N°[F] (Lemma A3 (b)), which is the account's last clause of the proposition.
+(T3) Outputs. Let t_lambda be the outputs of the plain site at the potential V^u + lambda V^m. The outputs that read no
+     island-blind input are t_0, the outputs of the site without blind inputs: clause (a). The outputs that read an
+     island-blind input are t_1 - t_0, the marked sub-sum of the corollary on the marked sub-sum with V^m as the marked
+     potential; at plain output domain X^a they obey that corollary's bound, and t_1 obeys the cluster-expansion
+     lemma's bound with the plain output factor e^(-rho d_(k+1)(X^a)), rho the site's rate (kappa_out at the T-site,
+     9.1:lem-fresh-rate (ii), (vi)).
+(T4) Filing. An output at X^a depends, besides the configuration on X^a, only on the configuration in the union P of
+     the islands of the blind stores it reads (H-par). Each such island touches or meets A(Y_k), and A(Y_k) lies in X^a
+     (F2), so cl_(k+1)(P) touches or meets X^a; by 9.1:lem-island-geometry (e), cl_(k+1)(P) lies in W_(k+1) (W^-_(k+1)
+     at the T-step). File the output at X := fil_(k+1)(X^a union cl_(k+1)(P)). Lemma A2 at level k+1 gives
+     d°_(k+1)(X) <= d_(k+1)(X^a), so e^(-rho d_(k+1)(X^a)) <= e^(-rho d°_(k+1)(X)): clause (b) at (T), with the
+     site's constants and rates, in the cluster-expansion lemma, the marked sub-sum and clauses (ii), (vi) of
+     9.1:lem-fresh-rate.
+(T5) Clause (c). An output that reads a blind store has X^a containing A(Y_k), which contains a cube of Y_k off W
+     touching an island (Y_k is connected, and islands do not touch each other); that cube is at least 3 R_k - 5 >= 22
+     cubes from Omega_(k+1) by lem-island-geometry (a), so X^a is not contained in Lambda_(k+1). Hence no such output is
+     a member of a family whose domains lie in Lambda_(k+1). (The other alternative of (c), domains "off
+     (Z union Y_iota)^boxplus", is the account's definition of those families; I read it, not proved it.)
+(T6) The tolerance lemma concerns the operators of the site, not its potentials, and is unchanged.
+Proof. (T1)-(T2): Lemma A1 at level k applied to Y_k; Lemma A3 with kappa the plain input rate and r = r_F; the margin
+r_F - kappa >= k_d + 2 holds for r_F = kappa_out >= 2 (c + 1) kappa (9.1:lem-fresh-rate (3)) once kappa >= k_d + 2,
+and for r_F = 9/8 kappa by (F_RL). Reading at level k only improves the weight (9.1:lem-blind-counts (v):
+d°_k(Y) <= d°_l(Y)). The integrand is unchanged, since sum_A V^m(A) = sum of the blind stores. The integration
+variables of the site that lie in Y_k lie in cubes of Y_k off W (lem-island-geometry (a), (d1)), hence in A(Y_k)
+(Lemma A1 (iii)); the rest of Y_k is island configuration, a parameter in the sense of (H-par). The conditions of
+(H-fmt) that are linear pass to the sum V^m(A); the modulus bound is Lemma A3 (a). (T3): the marked sub-sum corollary
+and the cluster-expansion lemma, taken by statement under (H-par). (T4): Lemma A2. (T5), (T6): as stated. QED.
+
+Note on (F_RL). The account's own last clause of the proposition (anchored relative activity at most K°(d) times the
+sup-norm) uses 9.1:lem-blind-counts (ii), which needs lambda >= k_d + 2 between the store's rate and the activity
+weight, so the same margin is implicit there. The listed floors on kappa (CA-III L608-624) include (F_sigma)°:
+sigma_* >= k_d + 4 with sigma_* in {beta kappa, kappa/(4 c#)}; if sigma_* = kappa/(4 c#) and c# >= 2, this implies
+(F_RL). (F_RL) reads d only, so it can be imposed with the other floors on kappa.
+
+**What this changes (ARGUED).** The account's route reruns CMP 116 Section 2 with relative lengths at five points.
+Theorem RL-T does not rerun it: it applies the plain expansion by statement to a regrouped family, and moves the island
+volume out of the length by choosing where each blind term is indexed. The route's points (i) volume factors, (ii)
+domain sums, (iii) tree composition and the junction re-routing become unnecessary at (T): every polymer, walk and
+junction of the plain expansion lives on plain domains and is paid in the plain length, which dominates the blind
+length after filing (Lemma A2). The cost is the two readings (H-fmt), (H-par) and the floor (F_RL).

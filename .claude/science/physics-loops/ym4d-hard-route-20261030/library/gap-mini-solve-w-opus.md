@@ -250,3 +250,145 @@ row 1229 Step 2).
 
 Step 2 done.
 
+## Step 3. (CLASS) of (UNIV-K): HOLDS in a corrected form; two clauses of (MAPCONV) hold exactly (written 07:55Z)
+
+Kind: closure of one sub-item of the ultraviolet carry (part (A) of Step 1.1); no seed. Source: YM4_1400.tex of the
+Sussman-Alpoge repository (Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text), fetched
+by URL at commit 2bc0658f91d2, where the file was added; it has 136637 lines, the count row 924 gives for the lead's
+sa1400 copy, so the line numbers below are row 924's. Lines READ: 94030-94200 (fixed presentation, frame, weights,
+recursion, bounds, Proposition rts-bounded-UV-tuning and its proof), 93440-93600 (spaces, transport, adapted norm,
+Gaussian data), 93600-93640 (formation bounds), 93700-93770 and 93800-93860 (relative box, profile slope, backward
+contraction), 59306-59350 (the transported pointing (hit:actual-transferred-pointing)).
+
+**What row 924 asked.** (CLASS): along the segment of maps M^B_j + s'(M^A_j - M^B_j), s' in [0, 1], the bounds R5
+and ||T_j|| <= q hold, so that the tuning proposition R6 (Proposition rts-bounded-UV-tuning, L94131-94184) holds
+along the segment with constants independent of the horizon. Run A is d's regular trajectory from step 1, run B that
+of pi d from step 0, relabelled so that step j of both acts on the same lattice; N = K - 1; same endpoint X.
+
+**What R6's proof reads (READ, L94146-94184 with L93700-93860).** (i) the forward profile bound
+||h_(j+1)||_(j+1,*) <= q H_* + B_n + C e_j <= H_*, which reads the one-step contraction (hrt:one-step-contraction),
+||n_j||_(j+1,*) <= B_n and ||f_j|| <= C e_j; (ii) the profile-coupling slope, which reads ||D_h f_j|| <= C e_j and
+||d_x f_j|| <= C k_j; (iii) the backward map (Phi x)_j = a_j + zeta + sum over l >= j of r_l, whose contraction reads
+abs(d_x r_l) <= C k_l and ||D_h r_l|| <= C e_l with the slope, and whose position in the relative box
+{x : abs(x_j - a_j) <= delta a_j} (L93714) reads only the size of sum over l >= j of abs(r_l), compared with
+delta a_j/2 (L93826-93834); (iv) holomorphy of the maps on enlarged domains, and the ceiling (rts:profile-ceiling).
+
+**Observation 3.1 (the frames differ by a bounded, summable amount). PROVED from (rts:frozen-frame) and
+(hrt:Gaussian-data).** With b^A_l = b_(l+1) and b^B_l = b_l, a^A_j - a^B_j = sum over l = j..N-1 of
+(b_(l+1) - b_l) = b_N - b_j, so abs(a^A_j - a^B_j) <= B_b (lambda_b^N + lambda_b^j) <= 2 B_b lambda_b^j.
+
+**Lemma 3.2 (the transport and the adapted norms are the same for the two runs). READ, with one ARGUED step.**
+T_(i,k) is "the physical transport of (hit:actual-transferred-pointing), with no new Gaussian integration" (L93487-
+93490), and that formula (L59343-59346) is R(w) = sum over old anchors z of theta_y(xi z) r_z(B_xi(w)): tent
+weights with xi = L^(i-k) and the classical field map from scale k to scale i. Both depend only on the blocking
+between the two scales, on the fixed radius and rate "at every scale" (L93453-93456) and on the torus. ARGUED (the
+classical map B_xi was not traced to its definition): neither depends on the depth below scale i or on the coupling
+frame. So T^A_j = T^B_j on the common lattice, the spaces B_j and their norms coincide, and the adapted norm
+(hrt:adapted-norm) (L93549-93555), built from T and the common N, is the same for both runs. If the ARGUED step
+failed, Lemma 3.4 below covers the case sum over j of ||T^A_j - T^B_j|| <= tau.
+
+**Proposition 3.3 ((CLASS), corrected form). PROVED from the READ lines and Lemma 3.2.** Keep the REAL frame of run B
+fixed, a_j := a^B_j (cutoffs, fluctuation scaling and weights e_j, k_j are read from it), and write the interpolated
+recursion as
+
+    x_(j+1) = x_j - b^B_j - rtilde_j(s'),     rtilde_j(s') := s' (b^A_j - b^B_j) + (1 - s') r^B_j + s' r^A_j,
+    h_(j+1) = T_j h_j + n_j(s') + f_j(s'),     n_j(s') := (1 - s') n^B_j + s' n^A_j,  f_j(s') likewise,
+
+for s' in U_eps := {s' complex : dist(s', [0, 1]) < eps}. Then, after a floor increase that depends only on delta,
+B_b, lambda_b, eps and the constants of R5, the conclusions of Proposition rts-bounded-UV-tuning hold for every s' in
+U_eps, with constants independent of N; the tuned trajectory is jointly holomorphic in (H, zeta, s'); at s' = 0 it is
+run B, and at s' = 1 it is run A.
+
+*Proof.* Domains: by Observation 3.1 and a >= c X_0, the relative box of half-width delta a^B_j/2 around a^B_j lies
+in both runs' enlarged coupling domains once 2 B_b <= delta c X_0/4; the profile balls are the same (Lemma 3.2). On
+this common domain, for s' in U_eps, abs(1 - s') + abs(s') <= 1 + 2 eps, so each bound of (rts:derivative-bounds) for
+the convex parts of rtilde_j, f_j(s') holds with C replaced by (1 + 2 eps) C (1 + C'/X_0): the weights of the two
+frames satisfy e(a^A_j) <= (1 + C'/X_0) e(a^B_j) and the same for k, since the frames differ by at most 2 B_b and
+e(t) = (log t)^m/t. Also ||n_j(s')||_(j+1,*) <= (1 + 2 eps) B_n, and T_j is the common transport, so
+(hrt:one-step-contraction) holds verbatim. The extra term s'(b^A_j - b^B_j) is a constant in (x, h): it changes no
+derivative, does not enter the profile equation, and adds at most (1 + eps) 2 B_b/(1 - lambda_b) to
+sum over l >= j of abs(rtilde_l). So (i) and (ii) hold as in L94149-94163 with H_* chosen from (rts:profile-ceiling)
+with (1 + 2 eps) B_n; (iii) holds since the backward correction is at most
+abs(zeta) + C(1 + (log a_j)^(m+1)) + 4 B_b/(1 - lambda_b), which is below delta a_j/2 after the floor increase
+(L93826-93834 with a larger constant), and the contraction constant is unchanged (L93847-93854). The fixed-point
+iteration is locally normally convergent in (H, zeta, s'), since every map is affine in s' and holomorphic in (x, h);
+this gives joint holomorphy. At s' = 1 the coupling recursion reads x_(j+1) = x_j - b^A_j - r^A_j, run A's own; run
+A's tuned trajectory lies in its own box, hence (Observation 3.1) in the box used here, so by uniqueness it is the
+s' = 1 trajectory. QED
+
+*Why the correction.* Row 924's form interpolates the frame as well. Then either the frame is complex for
+non-real s' (the account freezes real frames, L94071-94080 and L93604-93606), or R5's first bound
+abs(r_j) <= C e_j fails for the interpolated remainder at small j, because abs(b^A_j - b^B_j) is of order lambda_b^j,
+not of order e_j. Proposition 3.3 avoids both by keeping B's real frame and moving the increment difference into the
+remainder; R6's proof needs only the summability of that constant term.
+
+**Lemma 3.4 (if the transports differ). PROVED.** If T^A_j = T^B_j failed but sum over j of
+||T^A_j - T^B_j||_(B_j -> B_(j+1)) <= tau with tau independent of K, put E_j := (1 - s')(T^B_j - T^A_j). Expanding the
+product, ||prod over i = j..j+n-1 of (T^A_i + E_i)|| <= C_T lambda^n prod over i of (1 + C_T ||E_i||/lambda)
+<= C_T exp((1 + eps) C_T tau/lambda) lambda^n. So the interpolated transports satisfy (hrt:transport-bound) with
+C_T' = C_T exp((1 + eps) C_T tau/lambda), the adapted norm (hrt:adapted-norm) built from them gives
+(hrt:one-step-contraction) with C_T', and Proposition 3.3 holds with H_* chosen from C_T'.
+
+**Consequence for (MAPCONV).** Row 924's (MAPCONV) had four clauses: b and r, then T, n and f, then the
+equivalence of the adapted norms. By Lemma 3.2 the transport clause and the norm clause hold exactly (T^A = T^B,
+identical adapted norms; ARGUED in one step as stated). By R10 (L94530-94545, read in row 924) the b clause holds:
+abs(b^A_j - b^B_j) <= 2 B_b lambda_b^j. What is left of (MAPCONV) is:
+
+    (MAPCONV-F) on the common domain, sup abs(r^A_j - r^B_j) + ||n^A_j - n^B_j|| + sup ||f^A_j - f^B_j|| <= C lambda_0^j,
+
+the convergence in depth of the Gaussian pointing and of the formation remainders between consecutive depths and
+frames. OPEN: the account proves the analogue only for the scalar coefficients b_j, m_j. READ at L61186-61215
+(lcf:Gaussian-weight-jet): it identifies m_j = (11/(3 pi^2)) log L + O(L^(-sigma j)) through Proposition
+agc-actual-anisotropic-increment, while the zero-readout remainder q_(j,e) of the pointing's weight jet is only bounded,
+||q_(j,e)|| <= C abs(e), with no decay in j. So the n clause is not in the account either. Not attacked further here.
+
+**Status of (UNIV-K) after this step.** Open sub-items: (MAPCONV-F); (VAC-ID); (DENS-K) B1 and B2. (CLASS) is closed in
+the form of Proposition 3.3, which is the form Proposition 4.4 of row 924 needs: its s'-derivative solves R11 with
+sigma_j = -(b^A_j - b^B_j) - (r^A_j - r^B_j), exactly the derivative of rtilde_j. As Step 1 says, (UNIV-K) is the carry
+only; it supplies no seed.
+
+## Step 4. A block-size bound, the state after this row, and the result (written 07:57Z by date -u)
+
+**Corollary UNI-3 (cube dynamics need cubes of nearly physical size). PROVED GIVEN Proposition UNI (a), (b).** Take
+the cube heat bath of One Cube Estimate (B's Definition 62: all cubes x + [0, n)^4 of the torus, each updated at rate
+one, so that B's form is n^(-4) times the form Ecal of Step 2 and BP(n, varpi) is Poincare with gamma = n^4 varpi).
+For these blocks b <= 4n + 1, rho <= 4n + 3 and Delta <= (2n + 3)^4, so (a) gives a lattice rate at least
+kappa >= min(1, n^4 varpi/(e^2 (2n + 3)^4))/(4n + 3), which is at least varpi/(e^2 5^4 n) for n >= 3 and varpi <= 1.
+So if BP(n_j, varpi_0) holds along a trajectory and some normalised separated covariance of matched observables stays
+above delta > 0 at physical distance r, then, with the normalisation of (b),
+
+    n_j a_j >= varpi_0 r/(625 e^2 log(C' a_j^(-k-8)/delta)) (1 - o(1)),
+
+so n_j a_j may tend to 0 at most like 1/log(1/a_j). In words: the cube side of any BP criterion must be within a
+logarithm of the physical scale. B's Theorems 45, 66 and 84 take n_k a_k <= ell with ell physical, and this is the
+other side of that choice. (The rate here is of the same order as B's m_* = 16 varpi/(625 e^2 ell); the proof is
+independent of B.)
+
+**State after this row.**
+
+| Item | Before | After this row |
+|---|---|---|
+| (N-phys), the seed at the band (part (B) of Step 1.1) | OPEN, no attack on file | OPEN; no carrier or engine found beyond the record (Step 1.2) |
+| Row 1229 Claim A: coupling-uniform dynamics or curvature gaps prove too much | ARGUED, RECALLED inputs | PROVED: Proposition UNI (a)-(c), Corollaries UNI-1, UNI-2; with the necessary rate gamma_j = O(a_j log(1/a_j)) and Corollary UNI-3 |
+| (UNIV-K) sub-item (CLASS) | ARGUED (row 924) | PROVED in corrected form, Proposition 3.3 (real frame of run B kept; increment difference moved into the remainder) |
+| (UNIV-K) sub-item (MAPCONV) | OPEN (row 924) | transport and norm clauses hold exactly (Lemma 3.2, one ARGUED step); b clause by the account's R10; left: (MAPCONV-F), OPEN |
+| (UNIV-K) sub-items (VAC-ID), (DENS-K) B1, B2 | OPEN | OPEN, not attacked |
+
+**Note for the lead (process; not a proof claim).**
+
+1. This is the fifth Opus row in a row on the plain brief (rows 1212, 1219, 1225, 1229 and this one) to find no attack
+   on the seed. Step 1.2 adds the dilute-defect-gas kind (Gopfert-Mack) to row 1229's table with its 4D status, and
+   I found no other kind of engine.
+2. Checks wanted (other provider): Proposition UNI (a) and (c), and Proposition 3.3 with Lemma 3.2. The ARGUED step of
+   Lemma 3.2 (the classical map B_xi of (hit:actual-transferred-pointing) does not read the depth below the old scale)
+   needs the definition of B_xi traced in the account; Lemma 3.4 makes Proposition 3.3 independent of it, given a
+   summable transport difference.
+3. For the account text on a Mini worker: YM4_1400.tex at the Sussman-Alpoge commit 2bc0658f91d2 (raw GitHub URL,
+   repository root) has 136637 lines and reproduces the line numbers of row 924; at their HEAD the file is under YM4/.
+4. (MAPCONV-F) is the core of the regular part of (UNIV-K): the account proves depth convergence at rate lambda_0^j
+   for the scalar increments b_j, m_j only ("The actual comparison proves", L94539-94545); the full Gaussian pointing
+   n_j and the formation remainders r_j, f_j need the same convergence between consecutive depths and frames.
+
+No numeric run was made. No subagent was used. Inputs read are listed in Steps 0 and 3.
+
+RESULT: Row 1237 (Claude Opus 5.5 max, Mac mini worker 2, 07:19Z-07:57Z by date -u; author only, checked by no one; no numeric run). The mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing in the chain is disproved; (N-phys), the seed at the band, stays OPEN with no carrier or engine found beyond the record (Step 1.2 adds the dilute-defect-gas kind, Gopfert-Mack, with its 4D status). PROVED by hand: Proposition UNI (a) a volume-uniform Poincare constant gamma for any bounded-range heat bath of a lattice gauge measure gives covariance decay at lattice rate min(1, gamma/(e^2 Delta))/(b + 2) (single link: Delta = 19); (b)-(c) and Corollaries UNI-1, UNI-2: along a trajectory, a coupling-uniform Poincare constant or Bakry-Emery bound Ric + Hess V >= kappa (Helffer-Sjostrand formula with a Combes-Thomas conjugation) makes every separated correlation vanish, so NT1 fails; this proves row 1229's Claim A and gives the necessary rate gamma_j = O(a_j log(1/a_j)); Corollary UNI-3: a BP cube criterion needs cube side n_j a_j at least of order 1/log(1/a_j). PROVED from the account (YM4_1400.tex, Sussman and Alpoge with Claude and Codex): (CLASS) of (UNIV-K) in a corrected form (Proposition 3.3: keep run B's real frame, move the increment difference b_N - b_j into the remainder); the transport and norm clauses of (MAPCONV) hold exactly (Lemma 3.2, one ARGUED step; Lemma 3.4 covers a summable difference). OPEN: (N-phys); (UNIV-K) in (MAPCONV-F), (VAC-ID), (DENS-K) B1-B2; the account's premises (T0 chain). Output library/gap-mini-solve-w-opus.md.

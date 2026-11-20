@@ -12,7 +12,7 @@ Labels: PROVED (written argument, checkable by hand), ARGUED (argument with a na
 
 Step 0: file created. Reading the brief, FINISH.md rules, `parts/gap.md`, the RESULT lines of the earlier gap rows and `library/prior/gap-onebound-read-sol.md`.
 
-## Step 0. Where the lane stands (record, not evidence; read 06:20Z-06:40Z)
+## Step 0. Where the lane stands (record, not evidence; written 06:24Z)
 
 Read: `GOAL.md`; `FINISH.md` L1-84, L299-360 and row 1228; RESULT lines of rows 1188-1225 (mini-solve a-r) and of
 rows 1222, 1227, 1230; `library/gap-mini-branch-fable.md` L296-360 ((N-phys) and Theorem BP); `parts/gap.md` L1-60;
@@ -58,7 +58,7 @@ Why either answer helps. If (Q-SF) holds, the 2D flow has a 4D gauge form with a
 and the next step is the variance gain (row 1011 (N3)). If it fails, the failure shows whether the obstruction is
 the location of the twist (pins) or the interior non-abelian field, which sharpens row 1011 (N1)-(N3).
 
-## Step 2. The plate class: what holds and where it fails (07:05Z-07:40Z)
+## Step 2. The plate class: what holds and where it fails
 
 Notation of row 1011 3.1 (quaternions, t = Re, s = Im, w_p the tiling weights, strengths |beta_p| <= b). A cell is
 c = {0, ..., R}^4 with coordinates (x_0; x_1, x_2, x_3). Its **plate** is the bottom face F_0 = {x_0 = 0}; its
@@ -149,4 +149,56 @@ lane's sentence "U(1) has the twist with zero gain, SU(2) has the bracket with n
 closed under conditioning YES (for the twisted cells), twist locally a symmetry YES, free classical start bound YES
 in the plate normalisation, but that normalisation is not scale invariant, and the scale-invariant response is
 not additive. The 2D engine has no 4D form in P_b. (W), (N-phys) and the gap are not moved.
+
+## Step 3. The non-additivity is exact in the comparison model (07:04Z)
+
+This step turns failure points 2-3 of Step 2 into a theorem for Gaussian (non-compact) U(1), the model the
+lane uses to test selectivity. Its free energy is quadratic in the pins, so the response is classical.
+
+Setting. Cell c = {0, ..., R}^4, plate F_0, junction E, as in Step 2; tiling of c into L^4 cells c' of side R' = R/L.
+The twist is the U(1) rotation of the junction pins by e^(i eps u(x)) with u(x) = theta x_1/R on E. In additive
+notation A for the U(1) potential, the Gaussian weight is exp(-(b/2) sum_p w_p (dA)_p^2). For pin data p_0 put
+E_c(p_0) = min over interior A of sum_p w_p (dA)_p^2. Then F_c(eps) = (b/2) E_c(eps-shifted pins) + const, so
+H_c(u) = b E_c(shift data of u), where the shift data are u(x) on the junction temporal links and 0 on all other
+boundary links. (Write the interior field as the minimiser plus a fluctuation; the cross term vanishes.)
+
+**Proposition P5 (PROVED, Gaussian U(1)).** There is an absolute constant C such that for every R >= 2 and every
+L >= 2 dividing R:
+(a) H_c(u) <= C b theta^2 (1 + log R);
+(b) for the tiling and the extension u~(x) = theta x_1/R on all of F_0, the bottom cells of Lemma P3 satisfy
+    sum over c' meeting F_0 of H_(c')(u~ on the junction of c') >= (L - 1) b theta^2;
+(c) hence, in Lemma P3, Var(sum of J_(c')) = sum E[H_(c')] - H_c >= (L - 1) b theta^2 - C b theta^2 (1 + log R).
+
+Proof. (b) The fully pinned plaquettes of a cell enter E_(c') with their fixed values, so E_(c') is at least their
+weighted sum. On a wall {x_2 = j R'} inside c (1 <= j <= L - 1) the plaquettes (x; 1, 0) with x_0 = 0 have the links:
+plate link (shift 0), junction pins of the two cells at x and x + e_1 (shifts u~(x), u~(x + e_1)), the link at height 1
+(a ring link, shift 0). Each is fully pinned in both cells beside the wall, with weight 1/2 in each, and its shift
+flux is u~(x + e_1) - u~(x) = theta/R. There are at least R^2 of them per wall (x_1 in 0..R-1, x_3 in 0..R), and L - 1
+walls in direction 2 (the same again in direction 3, not needed). Sum: at least (L - 1) R^2 (theta/R)^2.
+(a) Gauge-transform the shift data by lambda = -u~ on the sites of F_0 and 0 elsewhere (A_l -> A_l + lambda(tail) -
+lambda(head); a change of the interior variables; E_c is gauge invariant). The junction shifts cancel, and the new data
+are theta/R on every 1-link of F_0, junction 1-links included, and 0 on every other boundary link. Competitor:
+A_(x,1) = (theta/R) phi(x_0, x_2, x_3) on every 1-link, all other interior
+links 0, with phi = 1 on x_0 = 0, phi = 0 at x_0 >= 1 on the side faces x_2 in {0, R} or x_3 in {0, R}, and on the top.
+Then (dA)_p is non-zero only for p = (x; 1, m), m in {0, 2, 3}, where it is (theta/R) times a lattice difference of phi,
+so E_c <= (theta/R)^2 R D(phi), with D the 3D lattice Dirichlet energy of phi on {0..R}^3. Take
+phi = psi(x_0, d_2) psi(x_0, d_3) (1 - x_0/R), with d_i the lattice distance to the nearer i-face and
+psi(t, s) = (2/pi) arctan(s/t) for t >= 1, psi(0, s) = 1. On the quarter-plane lattice {0 <= t, s <= R} the angular
+function has |grad psi| <= C'/(1 + t + s) away from the corner link, so its Dirichlet sum is at most C''(1 + log R);
+each psi(., d_i) is constant along one more coordinate (length R) and is used on two faces; |psi| <= 1 gives
+|grad(fg)|^2 <= 2(|grad f|^2 + |grad g|^2); the factor (1 - x_0/R) adds at most C R. So D(phi) <= C R (1 + log R) and
+E_c <= C theta^2 (1 + log R). (c) is Lemma P3 with (a), (b). QED
+
+**What P5 says.** With the twist normalised by its scale-invariant size (the U(1) response, of order b theta^2
+up to log R), the cells of a tiling carry at least (L - 1)/(C (1 + log R)) times the response of the whole cell.
+The excess sits on the plate walls that the tiling creates (codimension 1 in the plate, like the true junction),
+and the variance must remove it. In the 2D engine the matching excess is the ring bonds, a fraction O(1/R) of the
+twist energy. So an induction of the 2D form in P_b must bound a variance of order L b theta^2 from below to an
+accuracy finer than its gain delta theta^2, a relative accuracy delta/(b L); the 2D engine works with relative
+errors B^(-N) against delta/h and needs L >= B^(10J) (row 1009, (3.50)-(3.53)). That this cannot be met is ARGUED,
+not proved: P5 proves the size of the cancellation, not the absence of another inequality.
+
+For SU(2) the same fully pinned wall plaquettes enter H_(c') with the factor t_p of the ring field, so the excess is
+there whenever the ring plaquettes are near 1 (weak coupling). It is not a lower bound on H_(c') for SU(2): the
+interior part of an SU(2) cell response has no sign.
 

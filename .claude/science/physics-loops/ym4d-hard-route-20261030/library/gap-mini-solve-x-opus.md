@@ -43,17 +43,18 @@ with a finite seed (rows 1225, 1229, 1237 Step 1.1).
 
 **1.2 Part (B), the seed.** I tried, before reading further, to name a band-crossing engine of a kind not in the
 tables of rows 1229 (Step 1.2), 1237 (Step 1.2) and the screening tables of rows 1189, 1194, 1199. Each candidate I
-could name maps to a row on file:
+could name maps to a row on file, or (where marked) to a strong-coupling restriction that I recall or judge, without
+a proof here:
 
 | Candidate | Where on file |
 |---|---|
-| level derivative of the seed size in beta (a K-flow bound d log nu/d beta <= C, consistent with asymptotic scaling) | (VIR), rows 708-711, 895, 934, 1128: needs kappa about 7 on the band |
-| remnant global colour symmetry of a complete gauge (Landau, Coulomb, tree) as the rigid group of the 2D stiffness engine | frames, rows 1041, 1045, 1141; typical-field frame repair reads first-passage data (rows 1013, 1016 7.4) |
+| level derivative of the seed size in beta (a K-flow bound d log nu/d beta <= C, consistent with asymptotic scaling) | (VIR), the Feynman-Hellmann level flow: row 1128 attack 3 and row 1200 Step 7 (`library/gap-mini-solve-j-fable.md` L191-212): needs kappa of about 7 on the band, the value of a massive level; virial rows 710, 715, 725 (`gap-vir-sc*`) |
+| remnant global colour symmetry of a complete gauge (Landau, Coulomb, tree) as the rigid group of the 2D stiffness engine | frame rows 1041 (collapse frame), 1045 (Coulomb frame), 1141 (tree frame); a typical-field repair with a colour frame "would read first-passage data" (row 1011 7.4 (N1)-(N3), `parts/gap.md` L100) |
 | confinement (string tension) implies the neutral gap | not true blind: a decoupled massless neutral factor keeps the area law; product tests of Lemma PT, Proposition NP |
-| Schwinger-Dyson (loop) equations, whose splitting terms are the non-abelian part | master-loop contractions work at strong coupling only (Chatterjee; Basu-Ganguly; row 1199 table, random surfaces) |
-| electric-basis (spin network) energy counting, glueball as closed flux | strong coupling only; at weak coupling the basis is not diagonal (rows 1132, 1215) |
-| a positive dual for the heat-kernel action | crosscap and 6j signs (method 35, rows 737, 744, 878) |
-| finite subgroup 2I at the window | frozen-group comparison cases (rows 884, 998); not frozen at beta 2.3-2.6 |
+| Schwinger-Dyson (loop) equations, whose splitting terms are the non-abelian part | RECALLED, not re-read: master-loop contraction arguments (Chatterjee; Basu and Ganguly) are strong-coupling results; surface and loop-soup forms are in the row 1199 table and method 35 |
+| electric-basis (spin network) energy counting, glueball as closed flux | judgement: a strong-coupling picture, since at weak coupling the magnetic term mixes the basis; Peter-Weyl structure on file in rows 1132, 1215 |
+| a positive dual for the heat-kernel action | crosscap and Frobenius-Schur signs are on file (method 35; rows 737, 744, 878; `parts/gap.md` L69); 6j-symbol signs RECALLED |
+| finite subgroup 2I at the window | frozen-group comparison cases (rows 884, 998); the 2I test binds only on intervals reaching about beta 5.7 (`library/gap-assume-opus.md` L397) |
 
 So I do not claim an attack on (B), and I do not screen further (row 998 9.5).
 
@@ -82,8 +83,8 @@ Source: YM4_1400.tex of the Sussman-Alpoge repository (Ethan Sussman and Levent 
 authors of their text), fetched by URL at commit 2bc0658f91d2 into a new scratch folder; 136637 lines, the numbering of
 rows 924 and 1237. "L n" is line n. Lines READ: 94030-94135 (fixed presentation, frame, recursion, derivative bounds),
 93420-93620 (spaces, transport, adapted norm, Gaussian data), 93230-93420 (anisotropic Gaussian comparison and its
-proposition), 61150-61225 (Gaussian weight jet), 60540-60640 (buffered formation), 57920-57945 (Taylor convergence
-statement), 55995-56030 (nested physical step), 2236-2275 (Technical statement B3).
+proposition), 61150-61225 (Gaussian weight jet), 60540-60640 (buffered formation), 92900-93003 (Taylor convergence
+statement and proof), 57920-58060 (homogeneous irrelevant transport, plain-mean rows), 55995-56030 (nested physical step), 2236-2275 (Technical statement B3).
 
 **2.1 What run A and run B differ in.** Row 1237 relabels so that step j of both runs acts on the same lattice. Then
 run A's step j is the step of depth j+1 of its own run and run B's is the step of depth j. So the n clause of
@@ -92,7 +93,7 @@ are the same for the formation remainder at the common frame, plus a frame diffe
 2 B_b lambda_b^j (row 1237 Observation 3.1) times the frame derivative.
 
 **2.2 Depth comparisons the account does prove (READ).**
-- (ach:weighted-Taylor-step), Proposition ach-Taylor-convergence (L57938 ff.): for m = 2, 3, 4,
+- (ach:weighted-Taylor-step), Proposition ach-Taylor-convergence (L92927-92940): for m = 2, 3, 4,
   ||T_(j+1,m) - T_(j,m)||_(m, s_sigma) <= C_sigma L^(-sigma j), where T_(j,m) = D_B^m S_j(0) is the m-th Taylor
   coefficient of the actual classical action at the TRIVIAL FLAT reference, in a rooted exponential kernel norm.
 - (agc:jet-Lipschitz) (L93341-93356): the Gaussian polarization Pi_j satisfies
@@ -190,8 +191,87 @@ What they say on the cutoff comparison (READ):
   proposition above and horizon-uniform constants in EM (L1738, L1864).
 
 So no text of the account, old or new, states (MAPCONV-F) or the zero-source comparison that (UNIV-K) needs; the
-newest texts make the two-cutoff comparison an explicit hypothesis. Credit: Ethan Sussman and Levent Alpoge, with
+newest texts make the two-cutoff comparison an explicit hypothesis.
+
+Pointer for re-locating row 1233 (READ, 08:37Z by date -u). CA-III's continuum uniqueness theorem, with its two-cutoff
+hypothesis (row 1233 R-a, R-d), has no counterpart in YM4_1400 by name: the four occurrences of "uniqueness theorem" in
+YM4_1400 (L11713, L12922, L118389, L121778) are a PDE uniqueness for minimisers, a "real uniqueness theorem" for the
+same, Stone's theorem, and a reconstruction-class uniqueness; none of "last-lattice comparison", "partition closeness",
+"transition defect", "defect summability" or "Schwinger increments" occurs in YM4_1400. In the current texts the
+two-cutoff comparison appears only as YM4_SI's conditional proposition above. Credit: Ethan Sussman and Levent Alpoge, with
 Claude and Codex as authors of their text.
 
 Status of Step 2: (MAPCONV-F) OPEN, stated as (M1)-(M3); not in any account text, old or new; not attacked
 further. Next: Step 3.
+
+## Step 3. A one-sided form of (UNIV-K), and why it does not remove the matched-level comparison (written 08:35Z by date -u)
+
+Rule 0a: a grep of `library/gap-univk-opus.md`, `library/gap-univk-check-astra.md`, `library/gap-chain-ce-opus.md` and
+`library/gap-chain-ce-check-astra.md` for "one-sided", "upper bound only", "only an upper", "one direction" finds nothing.
+Notation of row 924 Step 1: F_d(T) = log Z_(K,T,beta), Phi(d) = L^4 F_d(T_ell) - F_d(T_(L ell)), pi the predecessor map,
+E(K_0) = sum over K > K_0 of eps_K.
+
+**Lemma 3.1 (only the upper increments are used). PROVED.** Replace clause (ii) of (UNIV-K) by
+
+    (UNIV-K+)   Phi(d) - Phi(pi d) <= (L^4 + 1) eps_K   for every first-passage datum d of cutoff K > K_0,
+
+with clause (i) (pi defined on every datum) unchanged and sum eps_K < infinity. Then the conclusion of (ONE-K) holds
+as stated in row 924 Step 1, and Lemma 5.2 of row 924 holds with (UNIV-K+) for P.
+Proof. For d of cutoff K >= K_0, sum the inequality along d, pi d, ..., pi^(K-K_0-1) d:
+Phi(d) <= Phi(pi^(K-K_0) d) + (L^4 + 1) sum over k = K_0+1..K of eps_k <= Phi(pi^(K-K_0) d) + (L^4 + 1) E(K_0).
+If every datum d_0 of cutoff K_0 has Phi(d_0) <= phi_* - (L^4 + 1) E(K_0), then Phi(d) <= phi_*. Row 924's proof of
+Lemma 5.2 uses P(d) <= P(pi^(K-K_0) d) + (L^4+1) E(K_0) only. QED
+
+**Lemma 3.2 (the two-torus form of (UNIV-K+)). PROVED.** For one datum d, (UNIV-K+) holds iff there is a real c_d with
+
+    F_d(T_ell) - F_(pi d)(T_ell) <= c_d vol(T_ell) + eps_K   and   F_d(T_(L ell)) - F_(pi d)(T_(L ell)) >= c_d vol(T_(L ell)) - eps_K.
+
+Proof. Put u, w, v as in row 924 Lemma 1.1. If both inequalities hold, L^4 u - w = L^4 (u - c v) - (w - c L^4 v)
+<= (L^4 + 1) eps_K. Conversely take c_d = (u + w)/((L^4 + 1) v); then u - c_d v = (L^4 u - w)/(L^4 + 1) <= eps_K and
+w - c_d L^4 v = -(L^4 u - w)/(L^4 + 1) >= -eps_K. QED
+
+So the carry needs an UPPER comparison of the free energies of d and pi d on the small torus and a LOWER comparison on
+the large torus, with one common extensive constant. In the density language of row 924 Statement 6.3, it is enough that
+rho~^d <= e^(c_d vol + delta_K) rho~^(pi d) on T_ell and rho~^d >= e^(c_d vol - delta_K) rho~^(pi d) on T_(L ell).
+
+**Remark 3.3 (why this does not by itself avoid (DENS-K)). ARGUED.** One might hope to get the lower comparison on the
+large torus free, by dropping the complementary (large-field) histories of d, which are non-negative measures (row 924
+R30, clause (vii)), and the upper comparison on the small torus from a one-cutoff upper bound for the history sum (the
+account's YM4_RT Proposition rt:prop-history-upper, L2483). This fails at the common constant c_d. By row 924 Finding
+6.2, the large-field contribution to F_d is extensive, with a density that does not tend to zero in K (the expected
+number of bare-level components per unit cell grows with K). Dropping it on T_(L ell) but keeping it on T_ell makes
+the two sides differ by about L^4 vol(T_ell) times that density, which is not summable. So the large-field histories
+must still be matched on both tori with one constant, level by level: (DENS-K) B1-B2 in one-sided form. Lemma 3.1
+halves the statement; it does not change which comparison is needed.
+
+## Step 4. State after this row, and a note for the lead (written 08:37Z by date -u)
+
+| Item | Before this row | After this row |
+|---|---|---|
+| (N-phys), the seed at one coupling | OPEN, no engine on file | OPEN; seven candidate engines named in Step 1.2, each on file or RECALLED as strong-coupling only; no attack started |
+| (UNIV-K) sub-item (MAPCONV-F) | OPEN, one statement (row 1237 Step 3) | OPEN, split into (M1)-(M3) (Step 2.4); stated in no account text, old or new (2.2-2.3, 2.7); (M1) is out of reach of the account's own method, whose Taylor convergence is per order with a degrading exponent (2.8) |
+| (UNIV-K) as a whole | OPEN in (MAPCONV), (VAC-ID), (DENS-K) B1-B2 | OPEN in (M1)-(M3), (VAC-ID), (DENS-K) B1-B2; the one-sided form (UNIV-K+) suffices for (ONE-K) (Lemmas 3.1-3.2, PROVED), but does not remove the matched large-field comparison (Remark 3.3, ARGUED) |
+| Which text the gap chain reads | not recorded in the gap rows | YM4_1400 for the continuum datum (rows 916, 1225) and for the regular part of (UNIV-K) (rows 924, 1237), as for the T0 approach (row 608); row 1233 reads CA-III, which upstream moved to YM4/Old on 2026-11-09 (2.6-2.7) |
+
+Labels used in this file: PROVED: Lemmas 3.1, 3.2. ARGUED: Step 1 judgement, 2.4, the rate remark 2.5, Remark 3.3.
+READ (quoted or paraphrased with lines): 2.1-2.3, 2.6-2.8. GUIDE: none. No numeric run was made; no subagent was used.
+Scratch downloads (YM4_1400.tex at 2bc0658f91d2; CA-I, II, III at 31a47c543775; nine YM4 submanuscripts at
+c7fef8b21b58; two GitHub API listings) stay outside the repository.
+
+**Note for the lead (process; not a proof claim).**
+
+1. (MAPCONV-F) is not a session item: it is three depth-convergence theorems, (M1)-(M3). The account's technique for
+   the polarization (subtract the two depth formulas factor by factor) and for the Taylor triple (real per-volume mesh
+   comparison, then a per-order interpolation) stops at fixed arity; (M1) needs an all-arity local estimate.
+2. Row 1233's conclusions about chapter 9 concern CA-III, now under YM4/Old upstream. YM4_1400 has no counterpart of
+   that chapter's continuum uniqueness theorem by name (2.7 pointer), and the newest submanuscript YM4_SI states the
+   two-cutoff comparison as a hypothesis (Proposition si:prop-cutoff-comparison). Re-locate before the gap chain uses it.
+3. GOAL.md's method section still names CA-I, II, III as the T0 chain; row 608 moved the T0 approach to YM4_1400. I did
+   not edit GOAL.md; the lead may want one sentence there.
+4. YM4_CL (the account's newest scalar continuum construction) and YM4_RT (trajectory and partition stability) are
+   not read by any gap row. The gap chain's continuum datum (row 916) and the vacuum and history parts of (UNIV-K) will
+   need them when the chain is re-based on the current texts.
+5. This is again an Opus plain-brief row that found no attack on the seed. Its new content is a map of the
+   ultraviolet carry against the account's current texts, and the one-sided form of (UNIV-K).
+
+RESULT: Row 1238 (Claude Opus 5.5 max, Mac mini worker 2, 07:59Z-08:39Z by date -u; author only, checked by no one; no numeric run, no subagent). The mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; (N-phys), the seed at one coupling, stays OPEN with no engine found off the record (Step 1.2). Attacked instead: the (UNIV-K) sub-item (MAPCONV-F). READ in the Sussman-Alpoge account (with Claude and Codex as authors of its text): YM4_1400 proves depth convergence only for the classical Taylor coefficients of orders 2-4 at the flat reference, the Gaussian polarization and the scalar increments b_j, m_j; no account text (YM4_1400, CA-I to III, nine submanuscripts at c7fef8b21b58) states (MAPCONV-F), which needs three theorems (M1 classical background map to all orders in a local analytic norm, M2 full Gaussian pointing, M3 formation map), and the account's method gives each Taylor order its own rate with a degrading exponent. PROVED by hand: Lemmas 3.1-3.2, (ONE-K) needs only the one-sided increments Phi(d) - Phi(pi d) <= (L^4+1) eps_K, equivalently an upper free-energy comparison on the small torus and a lower one on the large torus with one extensive constant; ARGUED (Remark 3.3): this does not avoid the matched large-field comparison (DENS-K). READ bookkeeping: the gap chain and the regular part of (UNIV-K) read YM4_1400, like the T0 approach of row 608, while row 1233 reads CA-III, which upstream moved to YM4/Old; the newest submanuscript YM4_SI makes the two-cutoff comparison a hypothesis; YM4_CL and YM4_RT are unread by the gap lane. OPEN: (N-phys); (UNIV-K) in (M1)-(M3), (VAC-ID), (DENS-K) B1-B2; the account's premises. Output library/gap-mini-solve-x-opus.md.

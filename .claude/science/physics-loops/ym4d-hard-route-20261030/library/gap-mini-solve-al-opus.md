@@ -57,7 +57,7 @@ decompositions of unity (which variables, which thresholds, which units) and the
 term. Step 3: state (FC-T) in the account's notation. Step 4: prove it, or name the first failing step. Step 5: labels,
 state of the carry, RESULT.
 
-## Step 2. How the thresholds enter the account's step (READ; partial, written 2026-11-20T13:06Z by date -u)
+## Step 2. How the thresholds enter the account's step (READ; begun 2026-11-20T13:06Z by date -u)
 
 Source: Sussman and Alpoge, complete account CA-I at 31a47c543775 (`theorem_0_complete_account_raw_I.tex`, 166711
 lines), fetched by URL into a scratch folder outside the repository; I:n is a TeX line. Credit Ethan Sussman and Levent
@@ -202,7 +202,7 @@ y_* := exp((2/alpha)^(1/(2 p_0 - 1))) and Y(r) := (X + c_0 r)/3. Then
 S(X) is finite and independent of n, and S(X) <= 9/(c_0 X) once X >= 3 y_*. (Corrected in Step 4: an earlier line here
 read 3/(c_0 X) and omitted X >= 3.)
 
-**3.5 Theorem FCT (PROVED given (G), (E0)-(E5) at every step with uniform constants, and (TH) below).** (FC-T) of row
+**3.5 Theorem FCT (PROVED given (G), (E0)-(E5) at every step with uniform constants, and (TH) below; superseded by Theorem FCT' of Step 7, since (G) fails for the account's representation, Step 6).** (FC-T) of row
 1267 holds along the pin runs with nu_k of 3.3 and sum_(k<n) nu_k <= (2/eps) C_post Nbar S(X), uniformly in n, and the
 bound tends to 0 as X tends to infinity. With row 1267's Proposition FC-chain (given its (H1)-(H3), (H5)) the unmarked
 coefficients of the two frames satisfy sum_k eta_k <= 2 C_x (2/eps) C_post Nbar S(X).
@@ -386,7 +386,10 @@ variables U(y, x) from each block centre y to the points x of its block, inserte
 1 = prod_y prod_(x in B(y), x != y) int du(x) z^(-1) chi(|U^u(y,x) - 1| < eps_0) exp(-g_0^(-2) [1 - Re tr U^u(y,x)])
 (corrected from the page image at the time stamp of Step 7: the truncation is at eps_0, not at a fixed constant),
 followed by the Faddeev-Popov procedure, which leaves the weight exp(-g_0^(-2) G(P_1, U)) with
-G(P_1, U) = sum_y sum_(x != y) [1 - Re tr U(y, x)] (1.6)-(1.7). Balaban remarks (paraphrased by the lead, 2026-11-20) that this form is chosen to keep Euclidean invariance, and that a delta-function gauge fixing of the contour variables, averaged over the lattice symmetries, would be an alternative. The restrictions on the approximate fluctuation field are introduced after this,
+G(P_1, U) = sum_y sum_(x != y) [1 - Re tr U(y, x)] (1.6)-(1.7). Balaban: "The main point in introducing it in the form
+(1.5) is to preserve the Euclidean invariance, but this can be done also with the gauge fixing defined by the delta-functions
+of the contour variables ... and we average over the Euclidean transformations of the lattice ... so it can be an
+alternative to the above definition." The restrictions on the approximate fluctuation field are introduced after this,
 on the configuration itself ("UU_(box)^(-1), where U_(box) is taken in the axial gauge"). At step k (Section 3, p. 265)
 "we introduce the axial gauge fixing as in (1.5), with V_k, eps_k, g_k instead of U, eps_0, g_0", then the
 decomposition (3.3) restricting approximate fluctuation fields, then the fluctuation field and the decomposition (3.16).

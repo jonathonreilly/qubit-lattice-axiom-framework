@@ -128,3 +128,70 @@ open-box comparison credited there to Sourav Chatterjee's weak-coupling free-ene
 Scope of claim A (agrees with the file's own RESULT): the bands sit at lattice energy ~1/r with
 r = floor(beta^delta), i.e. physical energy ~ n/(rL) -> infinity. (14) is a count of ultraviolet states; it
 bears on no low-energy question and on no mass gap. First failing step: none.
+
+### Step 3: claim B, the joint observation bound (30), with its inputs (16)-(26), (29)
+
+Cited inputs read: row 1145 (`gap-solve2-astra62.md` L19-L30: (1) I_d/I_1 <= exp[-(d-1)/(1+6 beta)] by the
+Riccati comparison R_k' = 1 - (2k+1)R_k/s - R_k^2 against its positive root e^{-arsinh((k+1/2)/s)};
+(2) ||p-1||_inf <= sum_{d>=2} d^2 e^{-(d-1)m/b_beta}); both re-derived here, HOLD. Row 1211
+(`gap-solve22-astra62.md` L76-L92: (6), the marked-slab bound from the periodic marked moment by repeating
+the marks on a circle of length b, ||A||^b <= Tr A^b <= ||A||^{b-1} Tr A, and factoring each step at
+C_J^{1/2}); re-derived, HOLDS. Row 1227 (`gap-solve25-astra62.md` L225-L253: (19) partition trace,
+(20) product-bin bound, (22) windings); re-derived, HOLD.
+
+- **(16) L173-L179. HOLDS.** The coordinate-ordered paths take their 1-steps on the root line, so no path
+  uses a marked 1-link (third coordinate differs from the anchor's). The spacing-4 subgrid makes the pairs
+  plaquette-disjoint. Note for (23): the plaquettes at p - e_2 and p + e_2, which carry G^(1), G^(2), lie in
+  the neighbouring columns y -/+ e_2, not in column y.
+- **(17) L181-L189. HOLDS.** Good pair: the unshared-face targets are within sqrt(2K/beta) of the witness,
+  g_* within 3 sqrt(2K/beta) of 1; on the product of beta^{-1/2} caps every incident deficit is O((K+1)/beta);
+  normalizer <= C beta^{-3} from the two unshared faces, cap mass >= c beta^{-3/2} each, so the conditional
+  law dominates a_K times the uniform cap product. Under the cap law the nine products (Im h)_j (Im k~)_l are
+  orthogonal (cap reflection symmetry kills every term with a scalar coordinate), orthogonal to all
+  one-variable terms, with coefficient -Im(e_j g_* e_l); at g_* = 1 the sum over j,l of the squared e'-component
+  of e_j x e_l is sum_j |e' x e_j|^2 = 2. Var >= a_K inf_c E_cap(...-c)^2 gives (17).
+- **(18) L191-L196. HOLDS.** |xi.(G-G')| <= 2 b_0 |xi| <= 1/2 on |xi| <= 1/(4 b_0); Fejer kernel
+  sinc^2(y/2) = Int_{-1}^{1}(1-|t|)e^{ity}dt; the condition sqrt3/L_0 <= 1/(4 b_0) holds for L_0 = 8(R+b_0).
+- **(19) L198-L210. HOLDS.** Bad exterior: each bad pair has an incident face of deficit > K/beta for every
+  completion, faces disjoint between pairs, so beta sum_D d > Km/2; row 1211 (6) gives
+  exp[-alpha K m/2 + 11 m log C_0]. Good exterior: pointwise kernel domination by (18). The neutral-trace
+  factor 8 holds: Tr(A Pi_+) <= Tr A for A >= 0 and a projection Pi_+, and Tr(T^u Pi_+) >= Tr(T^u)/8 since each
+  twisted integral is >= 0.
+- **(20)-(21) L214-L226. HOLD.** At r = n/16, R_n = n^{1/8}/sqrt beta: (R_n + C sqrt beta/r) sqrt(beta/r)
+  = O(n^{-3/8}); four independent small balls give n^{-9/2} per anchor, n^{-3/2} after the union.
+  (21): <P psi, T P psi> >= lambda_0 (1 - 2p) by positivity of T on (1-P) psi.
+- **(22) L232-L237. HOLDS.** Marked 3-links at heights of parity y_1 + y_2: parallel 3-links in one face sit
+  in adjacent columns at one height (opposite parities), collinear ones never share a face, temporal faces
+  meet one slice. Each stem has >= c r marked links, so row 1145 (2) gives deviation C e^{-cr/(1+6 beta)} per
+  column, C r^2 columns.
+- **(23) L239-L247. HOLDS.** Upper: one-link adjoint multiplier e^{-2/(1+6 beta)} per straight 3-link,
+  E|B_y|^2 <= C(1+beta)/r. Lower: with selected columns four apart, B_y for a selected column carries only the
+  shared-face terms of its own pairs, so selected B_y are conditionally independent; covariance >= c/(r beta);
+  (18) with beta/sqrt r -> 0 gives P(|B_y| >= a/sqrt(r beta)) >= 1/2; E 2^{-X} <= (3/4)^j gives the
+  binomial tail 2^{j/4}(3/4)^j; bad exteriors cost e^{-cr^3}.
+- **(24) L249-L257. HOLDS.** |sinc x| <= (1+cx^2)^{-1/2} (c < 1/3 near 0, compactness on [0,2], 1/|x| beyond);
+  concavity of t -> log(1+ct|xi|^2) with t_y <= lambda^2, sum t_y = 3 gives (1+c lambda^2|xi|^2)^{-3/(2 lambda^2)};
+  Taylor gives C lambda^2 |xi|^4 e^{-c|xi|^2} for |xi| <= lambda^{-1/4}, using sum d_y^4 <= 3 lambda^2; so
+  sup|f-g| <= C lambda^2. Gaussian tail by the two-set split and sinh(x)/x <= e^{x^2/6}. Integrating
+  min{g + C lambda^2, Ce^{-c|z|^2}} with radius sqrt(C'|log lambda|) gives (24).
+- **(25)-(26) L259-L276. HOLD.** For u >= 1 the time-0 slice is in the exterior of the time-u stems, so each
+  good bin contributes <= (1+eta_n) Int_A h_lambda; the bad bin contributes <= ||U 1_B||^2 = ||U 1_B U|| for
+  u >= 2. (26) is row 1227 (20) with a two-sided reference: ratio of densities to g on |z| <= J is within
+  1 +/- C(lambda^2 + eta_n)/min g; u >= 2 is needed so that no temporal face meets both stem arrays.
+- **(29) L299-L309. HOLDS.** Joint conditional density <= prod (1+eta) h_lambda; total mass
+  [1 + C(beta^2 r^{-1}(1+log r)^{3/2} + r^2 e^{-cr/(1+beta)})]^m = 1 + o(1) iff n^3 r^{-4} polylog -> 0,
+  i.e. alpha > 3/4; the whole-array bad bin costs <= m C e^{-cr^2} by U 1_{union} U <= sum U 1_{B_i} U.
+- **(30) L311-L318. HOLDS (claim B).** The residue rule (base-coordinate sum = 2i mod 6, edges not wrapping in
+  their own direction) is plaquette-disjoint on even n: parallel edges in a face differ in sum by 1 or 1-n
+  (odd); perpendicular edges at one corner have residues 2i != 2j; the far pair has equal sums unless exactly
+  one base step wraps, and then the edge based at x+e_j in direction i wraps in its own direction and is not
+  selected; an edge and its turn partner differ by an odd amount. Each edge lies on one straight line, so
+  the 3n^2 holonomies are conditionally independent and near Haar (eps_n <= C n^2 e^{-cn/(1+beta)}). The
+  private edges avoid every cell, so Y is in their exterior, and row 1227 (20) gives
+  T_{Y,W}(u) <= (1+O(eps_n)) T_Y(u) = 1 + o(1) by (29).
+
+Scope of claim B: (30) is an upper bound on the thermal weight carried by one observation subspace. The
+radial readings are normalized by sqrt(3/S_r), which removes their scale; the windings were already
+negligible alone (row 1227 (22)). (30) bounds nothing outside that subspace, which the file states at
+L318 and L463-L470. New relative to row 1227: (22)-(25) and (29); the winding step is row 1227 (20), (22)
+applied with Z = the packet array. First failing step: none.

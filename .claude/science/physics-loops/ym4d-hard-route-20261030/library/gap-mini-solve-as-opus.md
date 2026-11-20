@@ -8,7 +8,7 @@ Research-stage working state. Labels: PROVED, ARGUED, GUIDE, OPEN, as the row as
 
 ## Status
 
-Steps 0-1 done; Step 2 (reading the step) done, written 2026-11-20T15:18Z (date -u); Step 1 written 2026-11-20T15:10Z (date -u). Step 3 (Theorem PE) written 2026-11-20T15:21Z (date -u). Step 4 (inputs checked factor by factor) written 2026-11-20T15:24Z (date -u). Next: Step 5, consequences for the carry and Route Z, labels, RESULT.
+Steps 0-1 done; Step 2 (reading the step) done, written 2026-11-20T15:18Z (date -u); Step 1 written 2026-11-20T15:10Z (date -u). Step 3 (Theorem PE) written 2026-11-20T15:21Z (date -u). Step 4 (inputs checked factor by factor) written 2026-11-20T15:24Z (date -u). Step 5 (consequences) written 2026-11-20T15:26Z (date -u). Step 6 (labels, open list, RESULT) written 2026-11-20T15:27Z (date -u). Done.
 
 ## Repo search (rule "Repo first")
 
@@ -285,3 +285,115 @@ decay of C(s) and the tail of the cut gives (H-an). This is a statement about th
 account's one-step theorem), not proved here. (H-tail) is the case P = 0 of the same expansion; its size is EM's term
 K exp(-c theta delta(theta)^2) in (em:eq-rs-formation) (READ: EM:682-683).
 
+## Step 5. Consequences for the one-cutoff carry and for Route Z (written 2026-11-20T15:26Z by date -u)
+
+Throughout, "given PE" means given the inputs of Theorem PE ((S), (S-chart), (H-flip), (H-an), (H-tail)) at every
+level of the runs concerned, with r = c_* rho^(-3) as in 3.7, so that |f_(k+1)| and ||F^u_(k+1)|| are at most
+e_PE(theta_k) := C theta_k^(-1) (log theta_k)^(6 p_0) + C exp(-c A_1^2 (log theta_k)^(2 p_0)).
+
+**5.1 Drift (PROVED GIVEN PE, the account's drift recursion as read in row 1280 4.5 (a) (CA-III III:68970-68995) and
+finiteness of the marked sum).** The account writes the drift of a run from its scaffold as the partial sums of
+b_(r) - c_0 with b_(r) = beta^0 + f + q. The partial sums of beta^0_l - c_0 are at most 2 c_2 (the account's one-loop
+Cesaro-defect theorem, III:68989-68993, as read in row 1280). Along a run theta_l is about X + c_0 l, so
+sum_l e_PE(theta_l) <= (C/c_0) (log theta_n)^(6 p_0 + 1)/(6 p_0 + 1) + C' + (tail sum, finite). The marked terms obey
+|q_(k+1)| <= C theta_k^(-(kappa_0 - 4)/2) (log theta_k)^(-2q) (EM:1366); their sum is finite when kappa_0 > 6 (EM requires
+only kappa_0 > 4, EM:383; the account's value of kappa_0 is not read here). So, when kappa_0 > 6, the drift is at most
+D'(theta) := C'' (log theta)^(6 p_0 + 1), polylog, in place of the account's theta^(1/2) (log theta)^(p_0).
+
+**5.2 (U) without (U-dom) (PROVED GIVEN PE and kappa_0 > 6; this is row 1280 4.5 (b) with q = 6 p_0).** With the drift
+D' of 5.1, Lemma W of row 1280 applies for X large (D'(2 Y_b) is polylog while the gaps between jump points grow faster
+than any power), each jump point Y_b carries at most 2 D'(2 Y_b)/c_0 + 1 window levels, and at a window level the per-level
+defect of row 1260's scaffold comparison is at most twice the one-frame coefficient bound, 2 e_PE(Y_b/2). Since
+Y_b = exp(L^(b/r)) grows doubly exponentially, sum_b (2 D'(2 Y_b)/c_0 + 1) 2 e_PE(Y_b/2) is finite and tends to 0 as X
+grows. So (U) leaves the carry's input list without (U-dom) and without row 1280's (E+) at the windows.
+
+**5.3 Corollary FC-s (the smooth part of the one-step frame comparison; PROVED GIVEN (S), (S-chart), (H-flip) and
+(H-an') below).** (H-an'): (H-an) holds jointly for complex h with |h| < r and complex tau with |tau - 1| < sigma_*,
+with ||F(h, tau)|| <= K_a, F holomorphic in both (EM already has holomorphy in the weights, EM:1347-1349).
+Two frames theta, theta' at one level, with the same weight x: by (S-chart) their steps differ only through the
+chart scale h = theta^(-1/2) against h' = theta'^(-1/2), the relative weight tau = x/theta against tau' = x/theta' (the
+Gaussian reference in the free variables is the physical Hessian, the same for both), the cut radius, and the cube
+partition. At one cut Omega, F(h, tau) = F(0, tau) + h^2 a_2(tau) + R_4(h, tau) with F(0, tau) the h = 0 value
+(a tail for every tau, by (H-tail)), ||a_2(tau)|| <= K_a/r^2 and ||R_4|| <= K_a (h/r)^4/(1 - (h/r)^2) (evenness and
+Cauchy in h), and ||a_2(tau) - a_2(tau')|| <= (2 K_a/(r^2 sigma_*)) |tau - tau'| for |tau - 1|, |tau' - 1| <= sigma_*/2
+(Cauchy in tau). Hence, with |zeta| := |theta - theta'|,
+    ||F(h, tau) - F(h', tau')|| <= K_a [ |h^2 - h'^2|/r^2 + (2 h'^2/(r^2 sigma_*)) |tau - tau'| + 2 (h/r)^4/(1 - (h/r)^2) ]
+                                 + tails
+                               <= C rho^6 |zeta|/theta^2 + C rho^12/theta^2 + tails,
+using |h^2 - h'^2| = |zeta|/(theta theta') and |tau - tau'| = x |zeta|/(theta theta'). With the account's drift
+|zeta| <= C theta^(1/2) (log theta)^(p_0) this is O(theta^(-3/2) polylog); with the drift of 5.1 it is O(theta^(-2) polylog).
+Either way it is summable along a pin run. The cut-radius part of the comparison is a cut comparison at one scale
+(row 1268's Lemma TL*, Gaussian tails) and the partition part is the windows (5.2). So the one-step comparison (FC-1)
+of row 1267 splits into a smooth part bounded here, a cut part with tails, and the windows. Without evenness the same
+argument gives only K_a |h - h'|/(r - h) = O(theta^(-1) polylog), not summable: this is the size obstruction of
+row 1267 3.3, and evenness is what removes it. Row 1268 reached O(theta^(-3/2) polylog) for the gauge weight by
+rescaling the gauge parameters (Lemma RS); here the rescaling is built into the chart scale.
+
+**5.4 Route Z's flow law (B3+) (ARGUED; not used above).** Evenness gives f_(k+1) = kappa_2(k) theta_k^(-1) +
+O(theta_k^(-2) rho^12) + tails with kappa_2(k) := (1/2) d^2/dh^2 b(F(h))|_(h=0). Cauchy gives only
+|kappa_2(k)| <= C_x K_a rho^6/c_*^2, which grows like (log theta)^(6 p_0). At h = 0 the cut enters only through Gaussian tails,
+so kappa_2(k) is a second-order Gaussian moment of the step's vertices (the two-loop number of level k) plus tails; a
+bound on it uniform in rho, (H-2), would give (B3+) of row 680 with a constant c_1, given also the level convergence
+(L-inf) of row 1280 4.6. With only the Cauchy bound, (B3+) holds with c_1 replaced by C (log x)^(6 p_0), and Lemma 2L
+of row 680 then gives a(beta) <= exp(C (log beta)^(6 p_0 + 1)) e^(-c beta) in place of C_2 beta^p e^(-c beta); whether
+Theorem HM-s of row 680 accepts that factor is not checked here.
+
+## Step 6. Labels, state of the carry, checks to redo, credits (written 2026-11-20T15:27Z by date -u)
+
+**6.1 Labels.** Author only (Claude Opus 5.5 max, Mac mini worker 2); checked by no one; no numeric run; no subagent.
+
+| Statement | Label | Rests on |
+|---|---|---|
+| Lemma 3.3: functions of the configuration with an inverse-square coupling or none are invariant under (h, B) -> (-h, -B) | PROVED, elementary | none |
+| Lemma 3.4: even holomorphic u, \|u\| <= M on \|h\| < r, gives \|u(h) - u(0)\| <= M (h/r)^2/(1 - (h/r)^2) | PROVED, elementary | Cauchy estimates |
+| Lemma 3.5: the step's localized output is even in the scale h | PROVED GIVEN (S), (H-flip) | Lemma 3.3 |
+| Theorem PE: \|f_(k+1)\| and \|\|F^u_(k+1)\|\| at most K_a (g/r)^2/(1 - (g/r)^2) plus the h = 0 tail | PROVED GIVEN (S), (H-flip), (H-an), (H-tail) | Lemmas 3.4, 3.5; EM's coefficient map |
+| 3.7: r = c_* rho^(-3), so \|f_(k+1)\| <= C theta_k^(-1) (log theta_k)^(6 p_0) + tails | ARGUED ((H-an) at that radius) | per-piece size of P on the cut |
+| 4.1: (S) holds for Balaban's all-small-field step | READ | CMP 119 pp. 247, 267-268 (page images); EM:544-606 |
+| (S-chart): the account's frame chart is Phi(W, theta^(-1/2) B) | READ in Balaban (A'_k = g_k A_k); a reading for the account | CMP 119 p. 267; EM:502-506 |
+| 4.2: (H-flip) | ARGUED | account's transcription of CMP 116 (CA-I I:108483-108507, I:58700-58730, via row 1280); EM:643-647 |
+| 4.3: Theorem PE for a cut that is even only up to a thin shell, with an extra tail eta | PROVED GIVEN row 1280's Lemma SW and (E+) | Lemma 3.4 |
+| 4.4 Lemma AS: SU(2) path-product tests and their flips differ by C s^3/(\|Z_+\| + \|Z_-\|) | PROVED, elementary | BCH, ad-invariance |
+| 5.1: drift of a run from its scaffold at most C (log theta)^(6 p_0 + 1) | PROVED GIVEN PE, the drift recursion (READ in row 1280), kappa_0 > 6 | Theorem PE |
+| 5.2: (U) leaves the carry without (U-dom) | PROVED GIVEN PE, kappa_0 > 6 | row 1280 Lemma W, 4.5 (b) |
+| 5.3 Corollary FC-s: smooth part of (FC-1) at most C rho^6 \|zeta\|/theta^2 + C rho^12/theta^2 + tails, summable | PROVED GIVEN (S), (S-chart), (H-flip), (H-an') | Theorem PE's analytic family |
+| 5.4: (B3+) of row 680 with c_1 = C (log x)^(6 p_0), or a constant given (H-2) and (L-inf) | ARGUED | Theorem PE |
+
+**6.2 What is new against the record.** Grep of `library/`, `parts/` and `FINISH.md` (run at the end of this row) for
+"joint flip", "chart scale", "even in h", "evenness", "Cauchy estimate for even", "half-loop", "two-loop-accurate":
+"joint flip" matches only `gap-solve22-check-opus.md` L81, L97 (transfer-kernel flips, another subject); "evenness" matches
+30 files, on character sums, cosine, slab transforms and the curl form of a second variation (`parts/hard-core--mapped.md`
+L430), none on evenness in the fluctuation scale; "half-loop" and "two-loop-accurate" match only rows 1280 and 1267. Row 1280 (this worker's thread) had the
+parity idea degree by degree with Lemma P (ARGUED, inputs (P1)-(P4)); row 1267 3.3 named "two-loop-accurate envelopes" as
+one of two ways past the size obstruction (GUIDE); row 1268 Lemma RS gave the gauge-weight part of the frame comparison
+at O(theta^(-3/2) polylog). New here: the exact joint-flip symmetry of the full one-step integral with frozen cut
+(Lemma 3.3), the analytic interpolation in the chart scale with the even Cauchy estimate (Theorem PE, family and
+coefficient forms), Lemma AS, and Corollary FC-s (the smooth part of (FC-1) from the same analytic family). The
+underlying fact, that perturbation theory for the effective coupling is a series in g^2, is standard; what is used here
+is an identity of the non-perturbative step itself, so no expansion or Taylor remainder is needed.
+
+**6.3 The one-cutoff carry on the pin route after this row.** Chain: row 1256 (pins), row 1260 (Lemma GR), row 1267
+(Proposition FC-chain), row 1268 (Theorem FCT'), row 1280 (Theorem U), and this row (Theorem PE: (U) without (U-dom),
+5.2; the smooth part of (FC-1), 5.3). Open inputs: the supplier statements (H-an) or (H-an') and (H-flip), against
+Balaban's CMP 116 (not on this machine) and the account's one-step theorem; (S-chart) for the account's chart; the
+account's kappa_0 > 6 (for 5.1-5.2); the cut part of (FC-1) (row 1268 Lemma TL* with (E0)-(E6), (TH)); row 1267's
+(H2)-(H3) (row 1278); `9.1:prop-blind-site-expansions`; (V9) (check 1288: reading N2 FAILS); (DET)'s inputs; the
+account's premises. Not attacked: the infrared seed ((N-phys), (SL)/(RR)), which remains the crux; nothing in this row
+bears on it.
+
+**6.4 What a checker should redo first.** (1) 3.1 and 4.1: that every factor of the actual step has the form of Lemma
+3.3, in particular the weight shift, the precision of the soft gauge weight (theta or x; either works), the pivot links,
+the Jacobians, and that P(0, .) = 0 needs exact criticality of the background for the part of the exponent with the
+inverse-square coupling. (2) (H-flip) against the supplier's localization: conditional means, any contour shift that
+depends on the background (it must flip with the data). (3) 3.7: whether the supplier's estimates use only per-piece
+smallness, the Gaussian decay of C(s) and the cut's tail, so that they hold for complex |h| < c_* rho^(-3). (4) 5.3: the
+arithmetic, and that by (S-chart) the Gaussian reference in the free variables is the same for both frames. (5) 5.1:
+the reading of the drift recursion and the account's value of kappa_0.
+
+**6.5 Credits.** Ethan Sussman and Levent Alpoge, YM4_EM at c7fef8b21b58 and the complete account at 31a47c543775 (as
+read in rows 1260-1280), with Claude and Codex as authors of their text; T. Balaban, CMP 119 (1988) 243-285 (the
+owner's copy, page images), the construction being Balaban's throughout; rows 1256, 1260, 1267, 1268, 1280 of this
+lane (Claude Opus 5.5, Mac mini worker 2) for the carry this row extends; row 680 (Route Z); row 1218's reading (Codex)
+for the placement of the seed.
+
+RESULT: Row 1293 (Claude Opus 5.5 max, Mac mini worker 2, 15:02Z-15:27Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys), (SL)/(RR)) stays OPEN and was not attacked (no route off the lane's map). Worked item: row 1280's parity envelope (PE) for the one-cutoff carry. PROVED (elementary): Lemma 3.3 (every factor of a Balaban step that is a function of the configuration, with an inverse-square coupling or none, is invariant under the joint flip (h, B) -> (-h, -B) of fluctuation scale and free variables), Lemma 3.4 (even Cauchy estimate), Lemma AS (SU(2) path-product tests are even up to a shell of width C s^3/|Z|). PROVED GIVEN (S), (H-flip), (H-an), (H-tail): Theorem PE, the unmarked coefficient f_(k+1) and the whole unmarked residual family F^u_(k+1) of the account's step (YM4_EM) are at most K_a (g/r)^2/(1 - (g/r)^2) plus a Gaussian tail, so with the ARGUED radius r = c_* rho^(-3) they are O(theta^(-1) (log theta)^(6 p_0)) in place of EM's O(theta^(-1/2) (log theta)^(p_0)): a Balaban step has no half-loop term. READ (Balaban CMP 119 (3.15)-(3.16), pp. 247, 267-268): the all-small-field step has a centred Gaussian, an exactly even cut on the free variables, and every other factor of the form of Lemma 3.3. Consequences: PROVED GIVEN PE and kappa_0 > 6, polylog drift of the runs from the scaffold and (U) without (U-dom); PROVED GIVEN (S), (S-chart), (H-flip), (H-an'), Corollary FC-s, the smooth part of the frame comparison (FC-1) is O(rho^6 |zeta|/theta^2 + rho^12/theta^2), summable even with the account's drift (evenness removes row 1267's size obstruction); ARGUED, Route Z's (B3+) with a polylog c_1. OPEN: (H-an)/(H-an') and (H-flip) against Balaban's CMP 116 (not on this machine), (S-chart) and kappa_0 in the account, the cut part of (FC-1) ((E0)-(E6), (TH)), (H2)-(H3), 9.1:prop-blind-site-expansions, (V9), (DET)'s inputs, the account's premises, the infrared seed and the mass gap. Output library/gap-mini-solve-as-opus.md.

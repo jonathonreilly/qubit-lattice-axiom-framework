@@ -16,6 +16,8 @@ GUIDE (numeric or heuristic, never a proof step), OPEN.
   `library/prior/gap-onebound-read-sol.md` (row 1218) in full; RESULT lines of rows 1274-1307; Steps 0-1 of the
   sibling row 1309 (`gap-mini-solve-ay-opus.md`), which owns the account's `9.1:prop-blind-site-expansions`
   (CA-III L16559). So that item is taken; this row picks another.
+- 2026-11-20T17:30Z-2026-11-20T17:57Z (date -u stamps in the section headers): Sections 2-10 written, one step per append; no
+  numeric run (none needed), no subagent; sources fetched by URL into a scratch folder outside the repository.
 
 ## 1. Record read (pointers, not evidence)
 
@@ -388,3 +390,17 @@ manuscript `YM4/EM/YM4_EM.tex` at c7fef8b21b58 (the running radii, the domain ma
 Tadeusz Balaban: CMP 109, 119, 122 (the cuts delta_k and delta'_j, the radii (2.28), the space (3.43), p_1 < p_0). The
 lane's IN1 (Codex distillation of a Claude draft; gate by Claude), hma and ci-form notes; rows 1267, 1268, 1278, 1294,
 1299 (Claude Opus 5.5, Mac mini workers 2 and 3) for the carry this row edits by evidence only.
+
+## 11. Note for the lead (evidence only, no edit made; written 2026-11-20T17:57Z by date -u)
+
+1. Row 1299 4.8's open list for the cut half of the one-cutoff carry changes as follows: (P4) closes by citation of
+   in1 Lemma 3 plus one floor on g_* (Section 4); (P3)'s link half is the open carrier identification of frozen hma
+   (L598-600), so it joins (P2) (Section 5); (E0) holds on the q-box and row 1299 L352's "(equivalently p_1 > p_0)"
+   should be struck (Section 3); row 1294's (M) and row 1268's (TH) leave the list as Lemma MARGIN given (S-unif) and as
+   a reading (Sections 7, 9). What stays open on the carry: (P1), (P2) with the carrier identification, (S-unif) as a
+   property of the supplier of statement 3.1, (P5)'s remaining hypotheses, the blind-site expansion (row 1309).
+2. For the owner of the account port (T0 tree): CA-I 4.3's variant pairs CMP 119 (3.43)'s p_1 domain with the p_0 cut
+   (Section 3.4 (d), ARGUED); a reader of that variant should take the box from CMP 119 (2.28).
+3. The seed was not attacked; Section 2 gives the reason. Nothing here changes it.
+
+RESULT: Row 1313 (Claude Opus 5.5 max, Mac mini worker 1, 17:28Z-17:57Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys) at one physical size uniformly in the cutoff) was not attacked (no route off the record, Section 2). Worked: premises of the one-cutoff carry's cut half (row 1299 4.8), read in Sussman and Alpoge's CA-I, outline and EM (with Claude and Codex as authors of their text) and Balaban's CMP 109, 119, 122. READ: the account fixes p_1 = p_0 - 4r - 1 < p_0 < q (CMP 122a; already on file in b-in-r2 L251, in1 L227), and CMP 119 has two cut/domain pairs (p_0 cut with the q-radii (2.28) inside the small-field region; p_1 cut with the domain (3.43) near large fields). PROVED (unchecked): row 1299's (E0) holds on the q-box above a threshold on g, and its "(equivalently p_1 > p_0)" is false; (P4) = in1 Lemma 3 (checked by gate in1) plus one floor on g_* for (UM26'); Lemma MARGIN: the margin reading (M) of rows 1294/1299 follows, with relative margin mu_m, from the floor A_0/A_1 >= (1 + mu_m) F (A_0 is free upward in CA-I Stage 7) given (S-unif), the supplier requirement for every admissible letter choice, so row 1294's H2-cov and row 1278's (H2) no longer read (M). READ: (TH)'s unit caveat (row 1268) is met; (P3)'s link half is the open carrier identification of frozen hma (L598-600). ARGUED: CA-I 4.3's variant pairs the p_1 domain with the p_0 cut, inconsistent on one variable at small coupling. OPEN: the seed; on the carry (P1), (P2) with the carrier identification, (S-unif), (P5), the blind-site expansion. Output library/gap-mini-solve-ba-opus.md.

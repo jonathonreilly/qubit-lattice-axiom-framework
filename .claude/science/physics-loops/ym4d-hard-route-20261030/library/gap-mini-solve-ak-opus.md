@@ -249,3 +249,152 @@ either the frame enters the interacting integral only through events of Gaussian
 envelopes (a residual of size theta^(-1) and a drift of size log theta would give theta^(-2) log theta, summable; GUIDE:
 these are the perturbative sizes, not proved). Step 4 shows the first alternative for the gauge weight, exactly.
 
+## Step 4. What is left of (FC-1): only the small-field thresholds (written 2026-11-20T12:09Z by date -u)
+
+**4.1 READ.** CA-I Proposition `4.35:prop-gauge-fixing` (I:157457-157600; index status CITED: parts (A), (B) are Balaban's
+CMP 99 Theorem 2 and CMP 102 Theorem 1; part (C) is proved in the account). (C)(b): Balaban's representation of the step
+"is written in the axial gauge [B-CMP119, (1.5)]; it uses the exponential gauge-fixing term of [B-CMP109, (1.5), (2.11)]
+together with its normalisation; it uses the decompositions of unity of [B-CMP119, Section 3], refined by the additional
+thresholds at the creation of large-field regions; the integrand of each piece is averaged over gauge transformations
+wherever a representative after a reversed Faddeev-Popov step is read". The account's reason that (b) holds: "the
+Faddeev-Popov Jacobian of the axial gauge on trees is 1, and ... the exponential gauge-fixing term ..., with its
+normalisation, is an exact rewriting of the same integral" (I:157620-157627). (C)(ii): the total integrals "do not depend
+on the axial gauge inside T, on the form G of the exponential gauge fixing, or on the representatives chosen at the
+reversed Faddeev-Popov steps". The step T itself is the push-forward M_* (C)(b). RT:533-579 charges one truncated Haar
+normalizer z(x_(j-1)) = int chi(U) exp(-x_(j-1)(1 - tr U/2)) dU per noncentral site gauge (RT Lemma `rt:lem-haar-normalizer`,
+RT:497-531), at the frame's weight in the self-calibrated convention.
+
+**4.2 Lemma AX (exact normalization of a soft axial gauge weight; PROVED, elementary).** Let S be a finite set of fine
+sites, S_c a subset of fixed sites, S_nc = S \ S_c. Let T be a set of fine links with exactly one link l_y = (p(y), y) in
+T for each y in S_nc, such that following parents y -> p(y) from any y in S_nc reaches S_c (no cycles). Let
+G_res = (u : S -> SU(2), u = 1 on S_c) act on link configurations by (V^u)_(x,y) = u_x V_(x,y) u_y^(-1), with product
+normalized Haar measure du on S_nc. Let mu be a finite positive measure on configurations (for example a fibre measure of
+M) with mu(V^u in .) = mu(.) for all u in G_res; let F be mu-integrable and G_res-invariant; let 0 <= chi <= 1 be Borel;
+let w >= 0 be Borel on SU(2) with z := int w dU in (0, infinity). Put
+    pi_w[chi](V) := int du chi(V^u) prod_(y in S_nc) w((V^u)_(l_y))/z.
+Then (i) int du prod_(y in S_nc) w((V^u)_(l_y))/z = 1 for every V, so 0 <= pi_w[chi] <= 1;
+(ii) int mu(dV) F(V) chi(V) prod_(y in S_nc) w(V_(l_y))/z = int mu(dV) F(V) pi_w[chi](V);
+(iii) if chi is G_res-invariant, pi_w[chi] = chi, and the left side of (ii) equals int mu F chi, whatever w is.
+*Proof.* (i) Order S_nc so that every site comes after its parent (by the length of its parent chain). Integrate the site
+variables in the reverse order. When u_y is integrated, all children of y have already been integrated, so u_y occurs
+only in the factor w(u_(p(y)) V_(l_y) u_y^(-1)), with u_(p(y)) = 1 if p(y) is in S_c. For fixed a = u_(p(y)) V_(l_y),
+the map u -> a u^(-1) preserves normalized Haar measure (inversion and left translation do), so this integral is z.
+After |S_nc| such steps the integral is z^|S_nc|; divide. (ii) For each fixed u in G_res, substitute V -> V^u in the
+left side: mu is invariant and F(V^u) = F(V), so the left side equals int mu(dV) F(V) chi(V^u) prod w((V^u)_(l_y))/z.
+Average over u (Fubini; the integrand is bounded by |F| times a nonnegative product with u-integral 1 by (i)). (iii) If
+chi(V^u) = chi(V), then pi_w[chi] = chi by (i). QED
+Consequence: the precision and the truncation of a soft axial weight w_theta(U) = chi_theta(U) exp(-theta(1 - tr U/2)),
+normalized by its own z(theta), both frame dependent, drop out exactly from every integral of a gauge-invariant integrand
+over an invariant cut. This is the mechanism behind the account's 4.35 (C)(b) for the axial device, proved here without
+citation; for Balaban's exponential (Landau-type) term of CMP 109 (2.11) the exactness is the account's cited claim.
+
+**4.3 Proposition SPLIT (PROVED, an identity given the kernel form (K)).** Hypothesis (K): at step k the frame-theta
+kernel is K_(k,theta)(W, dV) = c_theta mu_W(dV) chi_theta(V) prod_(y in S_nc) w_theta(V_(l_y))/z(theta), with mu_W the
+G_res-invariant fibre measure (product Haar disintegrated along M; G_res preserves the fibres by CA-I 4.35 (C)(a) with
+u-bar = 1), c_theta > 0 not depending on W, 0 <= chi_theta <= 1 the all-small-field characteristic function of the frame
+(its decomposition of unity), and w_theta any soft axial weight with normalizer z(theta). Assume Phi(V) = -x_k A(U_k(V)) +
+S_f(U_k(V)) is G_res-invariant (gauge covariance of U_k and invariance of A and S_f, EM:551-554). Then by (3.5) and
+Lemma AX (ii), for two frames phi, psi at the same weight and list,
+    T(E^phi_(k+1)[f]) - T(E^psi_(k+1)[f]) = log < pi_phi / pi_psi >_psi + const,   pi_theta := pi_(w_theta)[chi_theta],   (4.1)
+where <.>_psi is the expectation in the probability measure proportional to mu_W(dV) e^(Phi(V)) pi_psi(V) on the fibre of
+W. If the cuts are gauge invariant (for example curvature conditions on plaquettes), pi_theta = chi_theta and the right
+side is log < chi_phi / chi_psi >_psi; if moreover the thresholds are nested, chi_phi <= chi_psi (the stricter cut of the
+larger frame entry), it is log P_psi(V passes the cut of phi), the logarithm of the probability, in the psi
+all-small-field measure, that no local variable lies between the two thresholds.
+*Proof.* Insert (K) into (3.5); the factors c_theta are constants; apply Lemma AX (ii) to each frame with F = e^Phi and
+chi = chi_theta; then log int mu e^Phi pi_phi - log int mu e^Phi pi_psi = log < pi_phi/pi_psi >_psi (on the set where
+pi_psi > 0, which carries the psi-measure). The special cases follow from Lemma AX (iii) and chi_phi chi_psi = chi_phi. QED
+
+**4.4 The full-measure reading (PROVED from CA-I 4.35 (C)(b)).** The step is the push-forward M_* of the previous full
+measure, and the decomposition of unity is exact, so the full level-(k+1) measure (all small-field and large-field
+pieces together) is the push-forward of the bare Wilson measure: it is the same for every frame. A frame changes only
+(1) presentations (Gaussian references, coordinates, gauge devices), which are exact rewritings (Lemma A, Lemma AX, CA-I
+4.35 (C)), and (2) the thresholds of the decomposition of unity, that is, which part of the one measure is booked as
+all-small-field. So, at the same weights, **(FC) is a statement about moving mass across the small-field thresholds**:
+on a small-field outer datum W, rho^(phi,small)(W) - rho^(psi,small)(W) = rho^(psi,large)(W) - rho^(phi,large)(W).
+
+**4.5 What stays open: (FC-T), a two-threshold tail comparison (OPEN; GUIDE for the size).** (FC-1) of Step 3 holds with
+summable nu_k if the totals log < pi_phi/pi_psi >_psi of (4.1), along the pin runs (phi = canonical scaffold,
+psi = own weights), admit coherent localizations with |||.|||_(k+1) <= nu_k and sum_k nu_k bounded uniformly in n.
+GUIDE: the two thresholds differ in relative size by |phi_k - psi_k|/(2 theta_k), at most of order
+theta_k^(-1/2) polylog; a variable between them lies at a distance of order the threshold, (log theta_k)^(p_0) standard
+deviations, from its Gaussian centre, so each local term should weigh about exp(-c theta_k delta(theta_k)^2) =
+exp(-c A_1^2 (log theta_k)^(2 p_0)), which decays faster than any power of theta_k when 2 p_0 > 1 (the condition EM:873-876
+already imposes). That is the size of the failure term of EM (eq-rs-formation). A proof needs the supplier's one-step
+localization (Balaban's cluster expansion with the cut), applied to the ratio of two cuts; it is not in EM, RT or GI. If
+the supplier's theorem is stated as "cut integral = cut-free analytic expansion + cut corrections of |||.||| at most
+K exp(-c theta delta^2)", with the cut-free part depending on the kernel only through presentations that Lemma AX and
+CA-I 4.35 (C) show to be exact, then (FC-T) follows with nu_k <= 2K exp(-c min(phi_k, psi_k) delta(min)^2) (ARGUED, not
+checked against the supplier's text). Relation to the record: this is the one-step, outer-small-field instance of the
+large-field rarity question that FINISH.md "State of our route" names as the most likely place for the route to fail; the
+full-law form is not needed here, only the per-step suppression at a small-field outer datum.
+
+## Step 5. Record check, labels, state after this row (written 2026-11-20T12:11Z by date -u)
+
+**5.1 Record check (rule 0a).** Greps of `library/*.md`, `library/open-core.md`, `parts/*.md` and FINISH.md for "frame
+independen", "Gaussian number", "soft gauge", "gauge weight", "site gauge", "4.35:prop-gauge-fixing", "decomposition(s) of
+unity", "(FC)", "frame change", "frame comparison", "relative gauge normal", "one-loop data", "independent of the initial
+weight". Matches and what they hold:
+- Row 1256 (`gap-mini-solve-af-opus.md` L303-311) quotes the account's hypothesis (b) of `9.13:cor-coupling-shift`
+  (x_k a function of (Lambda_n, x_0, k) only) and calls the two-frame comparison construction-level; not attacked there.
+- Row 1260 (`gap-mini-solve-ai-opus.md`) named (FC) and split it (GUIDE) into a cut comparison and a partition matching.
+- Rows 941-951 use the symbol (FC) for a different statement (a one-step Fisher-information contraction, row 941). Name
+  collision only; this row's (FC) is row 1260's (G3).
+- `b109.md`, `a3-balaban.md`, `b99*.md`, `descent*.md`: the hard core's readings of Balaban's gauge fixing (constraint
+  straightening, axial bounds); none states the exact normalization of a soft axial weight against a cut (Lemma AX) or the
+  frame independence of the Gaussian total (Lemma A). `port-map.md` has no port of CA-I 4.35 (C); `uses-old.md` L264 lists
+  4.35 for its hypothesis (B) only.
+- RT:725-727 takes "the actual one-loop data are independent of the initial weight" as an input; Lemma A proves the frame
+  independence of the Gaussian total from GI's relative gauge theorem.
+So Lemma A, Lemma Z, Proposition FC-chain, Proposition SPLIT and the reduction of (FC) to (FC-T) are new against the
+record as far as these greps show. Lemma AX is new as a written proof; the fact for the axial device is the account's
+stated reason in CA-I 4.35 (C)(b) ("the Faddeev-Popov Jacobian of the axial gauge on trees is 1"), so it is a rebuild of a
+step the account cites, not a new fact.
+
+**5.2 Labels.**
+
+| Statement | Label | Rests on |
+|---|---|---|
+| Four-dimensional SU(2) Yang-Mills has a mass gap (Jaffe and Witten) | OPEN; not proved, nothing disproved | |
+| The infrared seed ((N-phys); (SL)/(RR) of row 1258) | OPEN; not attacked (0.3) | |
+| 0.2: B's Corollary 166 (Bhattacharjee et al.) controls straight-path variables made near-Haar by ultraviolet noise, so it is blind | GUIDE (a reading, not a proof) | row 1218 |
+| 1.3 (1.3a)-(1.3b): (FC) splits into the Gaussian-number difference plus the coefficient of a residual difference on the absolute core; separate bounds sum to order n^(1/2) | PROVED, elementary | EM:1191-1204, 1338-1390 |
+| Lemma A: the Gaussian normalizer's background dependence, the totals of N_(k+1) and the Gaussian number b^0_(k+1) do not depend on the frame | PROVED given (A1) and GI's standing hypotheses | GI Theorem `gi:thm-relative-gauge`, GI:627-630, EM:694-700, 1202-1204 |
+| Lemma Z: Gaussian mismatch and Gaussian-normalizer differences have zero vacuum-subtracted totals; counterterms differ by the residual coefficients only | PROVED | EM:1326-1335, Lemma A |
+| 2.4: the unmarked chain reads no frame-dependent partition; row 1260's partition matching is not needed for (FC) | READ | EM:176-178, 364-380, 506-510, 524-536, 653-656 |
+| Proposition FC-chain: (H1)-(H5) give sum_k eta_k <= 2 C_x sum_k nu_k | PROVED, an implication | (H3) ARGUED from EM input (4); (H2) cross-admission assumed |
+| Corollary FC: with Lemma GR of row 1260, the scaffold comparison at the pins holds with bounded modulus if sum_k nu_k is bounded | PROVED GIVEN (H1)-(H5) along the pin runs | row 1260 Lemma GR, Lemma OFF' |
+| 3.3: bounds through the account's envelopes alone give nu_k of order theta_k^(-1) (log theta_k)^(2 p_0), whose sum diverges like (log n)^(1 + 2 p_0) | PROVED, arithmetic (shows soft bounds cannot close (FC)) | EM:1365, III:69015-69017 |
+| Lemma AX: a soft axial weight normalized by its own z is exact against gauge-invariant integrands; with a cut it acts through pi_w[chi] | PROVED, elementary | Haar invariance only |
+| Proposition SPLIT (4.1): at fixed weights and list the frame enters only through the cut-pass probabilities, log < pi_phi/pi_psi >_psi | PROVED, an identity given the kernel form (K) | (K) from CA-I 4.35 (C)(b) (cited by the account from Balaban CMP 109, 119) and RT:533-579; READ, not checked against Balaban |
+| 4.4: the full level-(k+1) measure is frame independent; a frame changes only presentations (exact) and the small-field thresholds | PROVED from CA-I 4.35 (C)(b) | account, cited part |
+| (FC-T): the two-threshold tail comparison, |||log < pi_phi/pi_psi >_psi||| <= nu_k summable along the pin runs | OPEN; size GUIDE exp(-c A_1^2 (log theta_k)^(2 p_0)) | supplier's one-step localization (Balaban's cluster expansion with the cut) |
+
+**5.3 The one-cutoff carry on the pin route after this row.** Row 1260 left (FC) as the input replacing (FI). After this
+row: the Gaussian number, the Gaussian mismatch and normalizer families, the gauge weight (precision and truncation) and
+the partitions are proved not to move the unmarked coefficient at fixed weights (Lemmas A, Z, AX, 2.4); the chain from
+one-step to all levels is Proposition FC-chain. What (FC) still reads: (FC-T), a statement that moving the small-field
+thresholds by a relative amount of order theta^(-1/2) polylog changes the all-small-field total by a summable, localized
+amount; the bookkeeping hypotheses (H2) cross-admission and (H3) the total form of EM's input (4); the kernel form (K).
+The other inputs of the carry are unchanged (row 1260 4.3): the base seed (OPEN, the infrared crux), the 9.1 hypothesis
+(e) (OUTSTANDING in the account), (DET)'s inputs, (V9) at pins, the account's premises. Nothing here touches the T0 chain.
+
+**5.4 What would change the plan.** If the supplier's one-step theorem (account chapter 4, Balaban CMP 109/116/119) is
+found to state its failure term as a bound on cut corrections relative to a cut-free analytic expansion, (FC-T) follows
+as in 4.5 and (FI) at pins leaves the input list (with (H2), (H3)). If instead the actual characteristic functions sit at
+order-one thresholds for some variable (not in the Gaussian tail), (FC-T) fails as GUIDE'd and the pin route needs a
+different matching (for example, row 1260 4.4: read the tuned family instead of first-passage data). A row that reads
+CA-I chapter 4's decomposition of unity (thresholds, which variables, which units) decides between the two.
+
+**5.5 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the complete account at
+31a47c543775 (CA-I Proposition 4.35, cited by them from Balaban) and the component manuscripts YM4_EM, YM4_GI, YM4_RT at
+c7fef8b21b58 (the two chains and their coefficient readout, the relative gauge normalizer, the action-gauge splitting,
+the truncated Haar normalizer, the presentation matching on one frame). Tadeusz Balaban: the renormalization group and its
+gauge fixing (CMP 99, 102, 109, 116, 119, 122 as the account cites them). The lane's rows 1233, 1255, 1256, 1260 for the
+one-cutoff carry; row 1218 (gpt-6.1-sol) for the published-work reading; Bhattacharjee, Bhattacharya, Lockwood, Romanov
+(B) for Corollary 166. Checked by no one; a cross-provider check of Lemma A, Proposition FC-chain, Lemma AX and
+Proposition SPLIT is the natural next step.
+
+No numeric run (none was needed). No subagent. Sources fetched by URL into a scratch folder outside the repository;
+nothing fetched is committed.
+

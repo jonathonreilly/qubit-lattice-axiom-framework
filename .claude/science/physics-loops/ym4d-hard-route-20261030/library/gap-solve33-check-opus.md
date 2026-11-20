@@ -426,3 +426,94 @@ $e^{c(p-1)^3\beta n^3}$. The two statements are consistent and different.
 checks of rows 1151, 1155, 1246 and 1283 record these as HOLDS (`gap-solve5-check-opus.md` L558, L562;
 `gap-solve7-check-opus.md` L464; `gap-solve28-check-opus.md` L48; `gap-solve32-check-opus.md` L528). Those checks are by
 the same provider as this one, so they are not an independent confirmation.
+
+## Step 8 (written 2026-11-20T16:25Z): verdict table, defects, result
+
+Every `**PROVED**` paragraph of `gap-solve33-astra62.md` (61, found with `grep -n '^\*\*PROVED'`) has one row.
+
+| S | Line | Statement | Verdict |
+|---|---|---|---|
+| S1 | L25 | $P=R^*R$; equal nonzero spectra of $K,P$; symmetries intertwine | HOLDS (restates row 941 (A7); add credit) |
+| S2 | L27-L42 | (1) variance splitting; (2) Hermite series on $\omega$ | HOLDS |
+| S3 | L44-L50 | (3) total-gradient bound $\int\|\nabla h\|^2d\omega\le4\beta\delta$ (positive claim 1) | HOLDS |
+| S4 | L56-L61 | (4) radial readings against the slow band; $K$-band version | HOLDS |
+| S5 | L63-L67 | half-coupling kernel bound $\|P_{\exp(\beta A_e/2)}\|\le C_0$ | HOLDS |
+| S6 | L69-L73 | (5) mass of a slow state on the exceptional set | HOLDS |
+| S7 | L75 | proof of (4) ($\chi^2$ of radial Gaussians, mixture) | HOLDS |
+| S8 | L77 | (4) for all functions of forest links | HOLDS |
+| S9 | L81 | single-probe words have dense vacuum span | HOLDS (given row 1246 (4)) |
+| S10 | L83-L92 | (6); $l_d$ strictly decreasing | HOLDS |
+| S11 | L94 | algebra contains $L_e$, $C$, $M_v^2$, $V$ | HOLDS |
+| S12 | L96-L102 | (7) plaquette multipliers by sign averaging | HOLDS |
+| S13 | L104 | cyclicity of the transformed vacuum | HOLDS |
+| S14 | L110 | noise threshold $\tau\ge1/(4\beta)$ for positivity | HOLDS |
+| S15 | L112-L118 | (8); positivity at or above threshold | HOLDS |
+| S16 | L120 | failure below threshold | HOLDS |
+| S17 | L122 | rank one iff the complement is a forest; $2n^3+1$ pins minimum | HOLDS |
+| S18 | L124-L129 | (9) pinned-density ratio $=(\mathrm{Tr}T^j)^2/\mathrm{Tr}T^{2j}$ | HOLDS |
+| S19 | L135-L143 | (10) a fixed patch has vanishing overlap with the slow band | HOLDS (implication from rows 1151, 1231) |
+| S20 | L145-L154 | gauge average and the variables $D$ | HOLDS |
+| S21 | L156-L161 | (11) tail of $\|D\|$ under $\|f\|^2\nu$ | HOLDS |
+| S22 | L163 | $\|{\bf1}_EU^2{\bf1}_E\|\le Ce^{-cu}$ | HOLDS |
+| S23 | L165 | precompactness; clipping error | HOLDS |
+| S24 | L167 | moments of readings converge to the Gaussian curl | HOLDS |
+| S25 | L169 | tiling, good boxes, linearization | HOLDS |
+| S26 | L171 | entropy comparison; extension to based loops | HOLDS (extension argued in two sentences; re-traced) |
+| S27 | L173 | decorrelation in the Gaussian law | HOLDS |
+| S28 | L175-L180 | conclusion of (10) | HOLDS |
+| S29 | L188-L193 | (12) coupling change by a radial mark | HOLDS |
+| S30 | L195-L200 | no $L^2$ mark for $\tau\ge1/(4\kappa)$ | HOLDS |
+| S31 | L202-L206 | sign pattern, $k=2n^3+2n^2$, forest complement | HOLDS |
+| S32 | L208-L217 | $\mathbb E[L^2\mid\text{spatial}]=1$; (13) | HOLDS |
+| S33 | L219-L228 | (14) deletion amplitude $H=e^{-\beta k}z_\beta^r/I_\beta$ | HOLDS |
+| S34 | L234-L245 | (15) first versus higher moments | HOLDS |
+| S35 | L247 | first-moment bound | HOLDS |
+| S36 | L249-L262 | (16) orbit-distance lower bound | HOLDS |
+| S37 | L264-L272 | (17) localized history | HOLDS |
+| S38 | L274 | Haar-preserving insertion | HOLDS |
+| S39 | L276 | typical input boxes | HOLDS |
+| S40 | L278-L292 | cost and payoff; lower bound of (15); neutral trace | HOLDS |
+| S41 | L294 | lower rate $c(p-1)^3$ | HOLDS |
+| S42 | L298-L303 | (18) curvature controls orbit distance | HOLDS |
+| S43 | L305-L317 | random gauge construction | HOLDS |
+| S44 | L319 | sum of path errors | HOLDS |
+| S45 | L321-L325 | (19) collar estimate | HOLDS |
+| S46 | L327 | $Q$ is the open-slab law | HOLDS |
+| S47 | L329-L334 | (20) collar exponential moment | HOLDS |
+| S48 | L336-L344 | (21) critical tilt | HOLDS |
+| S49 | L346-L360 | (22) cubic onset of higher moments (positive claim 2) | HOLDS |
+| S50 | L362-L366 | (23) better first derivative | HOLDS |
+| S51 | L368-L374 | (24) relative truncation at the first moment (positive claim 3) | HOLDS |
+| S52 | L376 | smaller cap, error $O(1/A_\beta)$ | HOLDS |
+| S53 | L388 | $\|J(u)\|\le Cuv_3[\beta^{1/3}+\log(1+\beta)]$ | HOLDS |
+| S54 | L390 | $K^u$ not positive for irrational or small $u$ | HOLDS |
+| S55 | L392-L398 | (26) conjugate diagonal $\ge e^{-\beta m}$ | HOLDS |
+| S56 | L400-L404 | $F$ entire, growth $e^{C\sqrt{1+\|c\|}}$ | HOLDS |
+| S57 | L406 | $F$ nonconstant | HOLDS |
+| S58 | L408 | $F$ has a zero off $[-1,1]$ | HOLDS |
+| S59 | L410 | holomorphic Gram map | HOLDS |
+| S60 | L412 | continuation; order $uk$ | HOLDS |
+| S61 | L416-L423 | (27) signed interpolation | HOLDS |
+
+Labelled OPEN and GUIDE text: L52 (the implication HOLDS; the Poincare bound is OPEN), L106, L131, L182, L230, L425 are
+correctly labelled; the threshold cited at L425 matches A-B**. GUIDE L7, L17, L19-L23, L171 (Sussman-Alpoge
+citations, setup) and L380-L386 ((25) endpoints) HOLD; L3-L5 and L186 not re-checked (not load-bearing).
+
+**Defects.** None breaks a statement. Two notes, ranked:
+1. L25 restates row 941 (A7) ($P_0=B^*B$, `gap-lsivac-max.md` L141-L149) without crediting row 941; row 947 is
+   credited. Citation addition only.
+2. L169-L171 extend row 1151 (24) from plaquette radii to four-component based loops in box frames in two sentences. I
+   re-traced the extension (the density bound in row 1151's proof is on full tree-gauge coordinates, and the readings
+   are invariant under the common root conjugation), and it holds. A written lemma would make (10) easier to reuse.
+
+**Restatement question.** The main comparison (the thermal ratio as one-period against two-period deletion first
+moments, (9), (14), (25), (27)) restates row 1151 (26) and (28), Theorem ZD-c and A-B**; row 1290 says so at L129,
+L186 and L423. The deleted-tilt estimates (15), (21)-(24), the noise threshold with minimum pin count, (12) with its
+converse, the positivity loss L390 and the total-gradient bound (3) are not in earlier rows (step 7b).
+
+**What this check does not show.** It is one reading by one model, not an audit. No numeric run was made: no step
+needed one, so memory was not sampled. The positive claims are lattice statements; none bounds the order-one quantity
+$J(1)$ that A-B** needs, none gives the Poincare bound of L52, and the continuum construction and the mass gap stay
+OPEN, as row 1290 itself states.
+
+RESULT: Row 1297 (Claude Opus 5.5 max, Mac mini worker, cross-provider check of row 1290 gpt-6.2-astra, started 16:01Z, last step at 16:25Z): all 61 PROVED statements of `library/gap-solve33-astra62.md` HOLD (0 HOLDS AFTER CORRECTION, 0 FAILS), including the three positive claims: the total-gradient bound (3) L44-L50, the cubic onset (22) L346-L360 and the relative truncation (24) L368-L374, which are new in the lane by grep; one credit addition (row 941 (A7) at L25); the main comparison (thermal ratio via deletion first moments) restates row 1151 (26)/(28), Theorem ZD-c and A-B**, as row 1290 discloses; OPEN: the Poincare bound of L52, the order-one thermal bound $J(1)\le y_0V(s)/(2(96T_0)^3)$, the continuum construction and the mass gap.

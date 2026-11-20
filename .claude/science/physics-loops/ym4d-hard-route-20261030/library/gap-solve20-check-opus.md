@@ -250,3 +250,80 @@ by (35) and monotonicity.
 **Step 3 verdict.** Block B: 12 statements and 7 dependencies, all HOLD; no correction needed. The criterion is an
 exact reformulation: (37) moves the seed to the order-one ratio p(u)^2/p(2u) of an exponentially rare event (32) in the
 gapped comparison model; nothing in block B bounds that ratio.
+
+## Step 4. Block C: the obstruction (44)-(50) (L659-743), with dependencies
+
+Read in full: checked file L567-745. Dependencies checked first (block D items used by C):
+
+**C0a. Spectral inequality after (16), L272-278. HOLDS.** Cov <= <B(0)B(t)>_th; with U^t = Pi + R, R >= 0:
+Tr(B Pi B Pi) = <Omega, B Omega>^2 = 0, Tr(B Pi B R) <= ||R|| <= Tr R, Tr(BRBR) = ||R^{1/2} B R^{1/2}||_HS^2 <= (Tr R)^2, and
+Tr U^{2t} >= 1; so Cov -> 1/4 forces 2 Tr R + (Tr R)^2 >= 1/4 - o(1), Tr R >= 0.118 > 1/20. lambda >= e^{-12 beta n^3},
+D(3) <= e^{36 beta n^3} (weights in [e^{-2 beta}, 1], 6n^3 faces per step), Tr R <= rho^{t-3} D(3).
+
+**C0b. (40) and its slab machinery, L569-592. HOLDS.** Loomis-Whitney by Shearer (sum_i H(X_{!=i}) >= 3 H(X)),
+prod p_i >= (|W|/D)^3, partial lines carry two boundary edges each, AM-GM, min_i D/N_i = M^3: |dW| >= c|W|^{3/4}. On each
+elementary square the crossings of dH have bad endpoints at sup distance <= 1, hence one component, even count: closed
+cochain per component; |c_B| <= 8|B| < M^3 forces zero periods (every parallel line carries the period); primitives sum
+to H or H^c. Moment bound: (14) with one factor 8 for any collection, e^x - 1 <= x e^x, theta j^{4/3} <= (j/2) log(1/q) for
+j <= M^3/16 and c_0 small. Union over ~ e^{c_1 n^3 log beta} slabs; overlapping slabs agree for large M.
+
+Block C proper:
+
+**C1. (44)-(45), L663-672 with proof L674-694. HOLDS.** w_c has nonnegative character coefficients, so W_y is of positive
+type, analytic, strictly increasing. Counting: some direction carries >= k/2 stiff faces (each face counts in two
+directions); retained axial faces give exactly z_b or z_B each (seam signs absorbed by Haar); 3V axial faces, <= 3V/ell lost
+roots; with ell >= log B and b = (log B)^2: b^{(9/2)V/ell} = e^{o(V)} and (B/b)^{(9/2)V/ell} <= e^{(9/2)V}. Pattern bound
+e^{CV} b^{-(9/2)V} (B/b)^{-3k/4} against the pure lower bounds e^{-CV} b^{-(9/2)V} and y^{6V} e^{-CV} B^{-(9/2)V}: at
+y = delta (B/b)^{3/4} the ratio for k >= (3/2)V is <= 2^{6V} e^{2CV} delta^{(3/2)V}; at y = D (B/b)^{3/4} the ratio for
+6V - k >= (3/2)V is <= 2^{6V} e^{2CV} D^{-(3/2)V}. Labels are conditionally independent given the field with posterior
+h_y(U_p); covariance of two labels = covariance of the two readings; h_y depends on x(U_p), which spatial flips preserve
+(a spatial face holds 0 or 2 flipped links). Normalized minimum weight e^{-2b}/(1+y_*) and log(1+y_*) <= log B = sqrt b give
+D(3) <= e^{C b n^3}; C0a with t ~ e^{c_1 n^3 log B} gives (45); u m_+ -> 0 gives D_0(u) >= 2 - o(1).
+
+**C2. (46), L680-688. HOLDS.** Unequal directional counts on a period-four pattern differ by multiples of V/4^4, so the
+maximum exceeds the mean k/2 by >= V/(4 x 4^4). Equal counts: if no stiff face met a broad face across an edge in a
+distinct plane, the six faces through every edge would share a label (coplanar pairs via a third plane), and the
+edge-adjacency graph of faces is connected, so the pattern would be pure. Period four puts a broad axial face at least
+every four steps in the common column, so the chain has <= 4 links. Chain variables (root, plaquette increments) are a
+product-Haar change of variables; the short root X enters the selected nonaxial stiff face once (the opposite nu-edge
+and the two rho-links lie in other columns) and no other retained face (increments do not contain X; separation > 12);
+integrating X gives one extra z_B per selected strip, >= cV strips. Geometric mean of the pure bounds: y^k cancels and
+the ratio is <= exp(CV + 9V log log B - (3/2) eta V log B). The face-label chessboard step (labels in a mirror plane are
+shared boundary variables with positive weight) is the cited AM6 argument as used for (14); I accept it as cited.
+Opposite pure tiles cannot touch (shared faces). y_* location: mean stiff fraction is monotone in log y (derivative =
+variance / 6V), equals 1/2 + O(q) at y_*, and is < 1/4 + o(1) resp. > 3/4 - o(1) at the two binomial endpoints.
+
+**C3. (47), L699-704. HOLDS.** log(1 + y_*)/b = O(1/log B). Upper: Haar density of U_p <= C b^{3/2} and
+int e^{-p(B-b)(1-x)} d sigma ~ C_p B^{-3/2}. Lower: in the ordinary ensemble E(1 - x(U_p)) <= C/b, so the (26) cap argument
+around +I alone gives density >= c b^{3/2} on the B^{-1/2} cap. With y_* ~ L_B^{3/4}: ||h||_p ~ L_B^{3/4 - 3/(2p)}, -> 0 iff p < 2.
+
+**C4. (48), L706-722. HOLDS.** G - 1 = sum_S A_S >= 0. sup A_S <= y_*^{j-1} sup E[h(U_{p_1}) | xi] <= C y_*^j L_B^{-3/2}. The six
+opposite parallel edges lie in pairwise disjoint plaquette sets (displacements +-nu differ by graph distance two), so
+successive integration gives E A_S <= (C y_* L_B^{-3/2})^j and E A_S^p <= C_p L_B^{(3/4)[(j-2)(p-2) - 2]}; all exponents with
+j <= 6 are negative iff p < 5/2, and the maximum for p >= 5/2 is j = 6: 3p - 15/2. Lower: P(all six faces within B^{-1/2} of +I)
+>= c L_B^{-9} (six conditionally independent tilts, each good with probability near one by the (35) first-moment bounds in the
+ordinary ensemble); given xi this event has probability <= C L_B^{-3/2}, so P(alignment) >= c L_B^{-15/2}; on alignment the
+tilt strength is >= 5b, the density is >= c b^{3/2} on the B^{-1/2} cap about S_1 where all six stiff factors are O(1) times
+y_*, so A_all >= c y_*^6 L_B^{-3/2} ~ L_B^3. Kernel TV: q_new >= q_old/G gives TV <= 1 - 1/G <= G - 1.
+
+**C5. (49), L727-732. HOLDS.** g >= 1/2 iff (B-b)(1-x) <= log y_*; the ball radius ~ sqrt(log y_*/B) is o(b^{-1/2}) because
+log y_* <= log B = sqrt b and b^{3/2} = (log B)^3 << B; inside/outside split with 1 - cos theta >= 2 theta^2/pi^2 gives the upper
+bound C_p L_B^{-3/2} ((log y_*)^{3/2} + 1); |Cov| <= E g^2 -> 0.
+
+**C6. (50), L734-739. HOLDS.** W_y >= w_b gives >= 0. Broad-dominant slabs: pure-stiff and mixed volume <= C sum |B'|^{4/3}
+(C0b), expected O(q) per slab volume, exceptional events e^{-c n^3 log B} = o(q) since n >= log B; Markov at level C sqrt q leaves
+>= 1/3 of the neutral raw integral with stiff fraction <= C sqrt q; a fixed set of j stiff faces weighs <= y_*^j Z_b
+(w_B <= w_b, also at signed faces); binomial sum gives H_2(C sqrt q) + C sqrt q log y_* = o(1) per face since
+sqrt q log y_* ~ B^{-c_0/2} log B. Ordinary vs neutral within factor 8: Tr(G F^v) <= Tr F^v for F >= 0, G unitary.
+
+**C7. Physical time and relative entropies, L741-743. HOLDS.** log D(w) in [0, C b n^3] for w >= 3 (D nonincreasing in w),
+so the per-plaquette pressure gap moves by O(b/u + b/v_*) = o(1) for b = o(n). D(P_b || P_W) = log(Z_W/Z_b) - E_b sum log(1+h)
+<= log(Z_W/Z_b). Reverse: convexity in the stiff coupling (log-Laplace in B') between B/2 (bounded since
+y_*(B/2b)^{-3/4} = O(1)) and B gives B E sum_stiff (1 - eps x) <= CV; log(1+h) = H_2(g) + g log h (verified); E sum g_p = E j;
+so D(P_W || P_b)/(6V) = (1/2) log y_* + O(1). d_x log W_y = b + (B-b) g verified.
+
+**Step 4 verdict.** Block C: 7 statements and 2 dependencies, all HOLD; no correction needed. Scope as the file states:
+(45) is an eigenvalue of a deformed isotropic analytic action whose single-face, one-link, pressure and
+relative-entropy distances to Wilson at coupling b all vanish (47)-(50), while its detector is rejected by Wilson (49).
+It refutes transferring a spectral bound between actions by those closeness measures; it says nothing about Wilson's
+own neutral levels.

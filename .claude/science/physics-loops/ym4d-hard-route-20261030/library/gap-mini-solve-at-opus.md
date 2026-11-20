@@ -7,6 +7,7 @@ Started 2026-11-20T15:42Z (date -u). Claude Opus 5.5 max, Mac mini worker 2. Res
 
 ## Status (updated in place)
 
+- Step 5 (state of the carry after this row) written 2026-11-20T16:18Z.
 - Step 4 (H2' covariance clause: margin (M), no connectedness) written 2026-11-20T16:15Z.
 - Step 3 (Lemma SYM: (H-flip) removed) written 2026-11-20T16:09Z.
 - Step 2 ((S-chart)) written 2026-11-20T16:06Z.
@@ -69,6 +70,8 @@ Plan, one item per step, each appended before the next:
 - Step 3: the core clause of Lemma H2' (row 1278 2.3; row 1284 item B left it OPEN): whether covariance of a
   psi-formed member needs connectedness of the data domain at all, read against EM's own covariance argument.
 - Step 4: chosen after Step 3 from (V9), (DET)'s normalisation, kappa_0, by what the sources decide.
+(Plan as executed: Step 3 became Lemma SYM on (H-flip), found while reading row 1293's Theorem PE; the H2' clause
+moved to Step 4; Step 5 records the carry's state; Step 6 attempts the cut half of (FC-1).)
 Moves: the one-cutoff carry on the pin route (rows 1233, 1256-1293). Success removes named inputs from row 1293's list;
 failure names the first step that does not close. Neither changes the seed.
 
@@ -245,3 +248,28 @@ condition s(1 + D_*) <= eps_step (EM L863-868) holds on |h| <= c_* rho^(-3) abov
 c_* rho^(-2)/a_(*,0)). So (H-an) and (H-an') are the one-step theorem on the h-extended parameter domain: a supplier
 premise of exactly EM's kind (EM inputs 1-3 on "the requested field, coupling and remainder parameter domains"), with
 the h-disc added. ARGUED, as in row 1293 3.7; no upgrade to PROVED is claimed.
+
+## Step 5. The one-cutoff carry after this row (written 2026-11-20T16:18Z by date -u)
+
+Chain (unchanged): row 1256 (pins) -> row 1260 (Lemma GR) -> row 1267 (Proposition FC-chain) -> row 1268 (Theorem
+FCT') -> row 1280 (Theorem U) -> row 1293 (Theorem PE, Corollary FC-s) -> this row. Status of each input of row 1293 6.3:
+
+| Input | Before this row | After this row |
+|---|---|---|
+| (S-chart) | "a reading for the account" | leaves the list: Lemma SC (PROVED, integrand) + CA-I L149163-149171 and EM L502-505 (READ); its localisation part is (H-an) (Step 2) |
+| (H-flip) | ARGUED from the account's transcription; CMP 116 not on this machine | leaves the list: Lemma SYM (PROVED); for a shell-even cut, replaced by the one-scale cut comparison D that row 1293 4.3 already needed (Step 3) |
+| (H-an), (H-an') | ARGUED (row 1293 3.7) | OPEN, unchanged in label; now a supplier premise of EM's own kind on the h-extended parameter domain (EM L882-885 and L863-868, Step 4.5), and it may be met by ANY regular localisation family of the totals (Step 3.4) |
+| (S) | READ for Balaban's step (row 1293 4.1) | READ; for the account's integrand also by Lemma SC (Step 2) |
+| (H-tail) | READ (row 1293 4.5, EM L682-683) | unchanged; note that EM's formation bound carries the term K delta(theta) beside the tail, so reading the h = 0 value as the tail alone is a reading of where that term comes from |
+| kappa_0 > 6 | "the account's value is not read" | OPEN: EM states kappa_0 > 4 as a hypothesis on the creation norms of inherited remainders (EM L383-385, L1351-1366) and leaves those norms to the supplier (EM L119-121, L166-169); not decidable from EM |
+| (H2) cross-admission | ARGUED, clause "connectedness of the core" OPEN (rows 1278, 1284) | PROVED GIVEN row 1278's readings (R3)-(R5), row 1267's READ list and the margin reading (M) (Proposition H2-cov, Step 4); no connectedness needed |
+| (H3) | PROVED GIVEN (R1)-(R5) (row 1278) | unchanged |
+| cut part of (FC-1): (E0)-(E6), (TH) | (E1)-(E3) READ for the account's large-field stages only; (TH) READ (row 1278) | unchanged. The account prints its expansion machine with one-term bounds and holomorphy for the large-field stages (CA-I 4.22, L80618-80700; 4.24, L108354-108610); for the regular step it cites CMP 116 (CA-I L58700-58760). Applying the printed machine to the regular step is possible in principle (the regular step has no arrested components) but was not checked here |
+| 9.1:prop-blind-site-expansions | "Proof outstanding" in the account (CA-III L16558-16560) | unchanged; its route needs CMP 116 Section 2 (CA-III L16663-16700) |
+| (V9) | OPEN (check 1288: reading N2 FAILS) | unchanged, not worked |
+| (DET)'s normalisation | exact torus independence of the whole E_0 OPEN (rows 993-994) | unchanged, not worked |
+| the account's premises; the infrared seed | OPEN | unchanged; the seed was not attacked |
+
+So the smooth half of the carry (Theorem PE, its drift consequences 5.1-5.2 and Corollary FC-s) now rests on (S) and
+(H-tail) (read), (H-an)/(H-an') (a supplier premise of EM's kind) and, for 5.1-5.2, kappa_0 > 6 (a supplier premise).
+No input of the smooth half needs a reading of CMP 116 any more. The cut half still does, through (E0)-(E6).

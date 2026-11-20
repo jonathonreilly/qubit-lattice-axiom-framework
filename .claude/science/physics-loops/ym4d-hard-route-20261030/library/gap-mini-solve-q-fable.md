@@ -28,6 +28,8 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T05:21Z 7.4 amended before reading any d = 4 value: beta 2.6 d-scan made primary.
 - 2026-11-20T05:27Z 7.5 written: batch 1 results (run 05:19:02Z-05:25:42Z by the log's date -u stamps, under the lock); batch 2 started 05:26Z.
 - 2026-11-20T05:31Z 7.6 written: Lemma NC (classical symmetry breaking at the pi-flux face), PROVED by hand.
+- 2026-11-20T06:06Z 7.7 written: batch 2 results (run 05:26:00Z-06:05:27Z by the log's date -u stamps, under the lock) and verdicts.
+- 2026-11-20T06:07Z 7.8 criteria fixed for batch 3 (replicas at beta 2.6 and 2.8, d = 8) before it runs.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -509,3 +511,46 @@ orbits of the global SU(2), as in row 950's one-step estimate (5.1). It does not
 the readings M(R-) and M(R+) point the same way, and the constant d >= 314 is crude (the edge count is generous);
 the GUIDE runs of 7.5 suggest alignment and symmetry breaking at d = 3, 4 already. It says nothing about the
 tuning regime, where d grows at fixed physical size and the bulk is not classical.
+
+### 7.7 Batch 2 results and verdicts (GUIDE; run 05:26:00Z-06:05:27Z by the log's date -u stamps, under the lock)
+
+| beta | d (w = 2d - 1) | omega | sweeps | P1: r (SE) | <abs(M-)^2>/N^2, <abs(M+)^2>/N^2 | P2: r | unstaggered: r |
+|---|---|---|---|---|---|---|---|
+| 2.6 | 5 | pi-flux | 500 + 2000 | **0.659 (0.044)** | 0.0172, 0.0247 | 0.074 | 0.001 |
+| 2.6 | 6 | pi-flux | 500 + 2000 | 0.459 (0.072) | 0.0170, 0.0273 | 0.114 | 0.040 |
+| 2.6 | 6 | trivial | 500 + 2000 | 0.014 (0.014) | 0.0001, 0.0001 | 0.003 | 0.003 |
+| 2.6 | 7 | pi-flux | 500 + 1500 | 0.335 (0.072) | 0.0175, 0.0214 | 0.015 | -0.024 |
+| 2.6 | 8 | pi-flux | 500 + 1500 | **0.776 (0.036)** | 0.0178, 0.0189 | 0.101 | 0.079 |
+| 4.0 | 5 | pi-flux | 500 + 2000 | **0.849 (0.018)** | | 0.379 | 0.166 |
+| 4.0 | 6 | pi-flux | 500 + 2000 | **0.869 (0.020)** | | 0.432 | 0.147 |
+| 6.0 | 3 | pi-flux | 500 + 2000 | **0.835 (0.014)** | | 0.415 | 0.134 |
+| 6.0 | 4 | pi-flux | 500 + 2000 | **0.907 (0.014)** | | 0.519 | 0.195 |
+
+N = number of direction-1, 2 face links in the region, 2 d w^2 (810, 1452, 2366, 3600 for d = 5..8).
+
+Verdicts against the criteria fixed in 7.4 before the run:
+- beta 4.0 (d = 3..6) and beta 6.0 (d = 3, 4): criterion (a) of 7.4 holds: r >= 1/2 + 3 SE at every d, and r does
+  not fall from d = 3 to d = 6 (0.727, 0.886, 0.849, 0.869). GUIDE: at these couplings (M_{d,m}(c)) fails for every
+  c < 1/2 on every box tried, and the face order is long-range on these sizes. These are small physical boxes.
+- beta 2.6, the physical regime (d = 5..8, 2.5 to 4 bulk correlation lengths across Q0): by the amended criteria of
+  7.4 the scan is INCONCLUSIVE. Criterion (a) fails (d = 6 and d = 7 are below 1/2 + 3 SE); criterion (b) fails
+  (d = 8 is 0.776, far above 1/2). Single points d = 5 and d = 8 pass the 3-SE test. The spread between d = 5 and d = 8
+  (0.34 to 0.78) is much larger than the jackknife errors, so those errors miss a slow mode; the d = 8 point alone is
+  not a reliable refutation.
+- Post hoc observation (not a criterion fixed in advance): at beta 2.6 the within-region order parameter
+  <abs(M-)^2>/N^2 stays at 0.017-0.018 from d = 5 to d = 8. A region's squared magnetisation that grows like N^2 is the
+  signature of order inside each region of up to 8 x 15 x 15 face sites (for short-range order it would fall like 1/N).
+  The noisy quantity is the RELATIVE orientation of the Q- and Q+ regions. That fits a face layer near its own
+  ordering transition (row 950 put it near beta 2.45), with slow relative-orientation dynamics.
+
+### 7.8 Batch 3: replicas in the physical regime (criteria fixed before the run)
+
+Purpose: resolve the beta 2.6 scan with an error that does not rely on the jackknife (7.7 shows it misses a slow mode).
+Points: pi-flux, P1, d = 8 (w = 15), 500 + 2000 sweeps, cold start, three independent replicas each at beta 2.6
+(seeds 801-803) and beta 2.8 (seeds 811-813). At beta 2.8, two-loop scaling from Teper's beta 2.6 value gives
+a m_0++ near 0.30 (estimate, not a measurement), about 2 bulk correlation lengths across Q0 (width 7).
+Per replica: r as before, plus the integrated autocorrelation time of the per-sweep dot product M- . M+.
+Combined: r_bar = mean over the three replicas, err = (replica standard deviation)/sqrt(3).
+Criteria, for each beta: (a) r_bar - 3 err > 1/2: (M_{8,m}(c)) FAILS at that beta for every c < 1/2 (GUIDE), at a box of
+2-4 bulk correlation lengths; (b) r_bar + 3 err < 1/2: this reading does not refute (M) there; (c) otherwise
+inconclusive. The batch-2 point (beta 2.6, d = 8: 0.776) is reported beside the new replicas but not pooled.

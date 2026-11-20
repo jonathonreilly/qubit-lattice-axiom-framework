@@ -14,6 +14,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T04:39Z started (date -u); file created as the first write of this run.
 - 2026-11-20T04:41Z Section 1 written (sources read: FINISH rule sections L52-73, L299-350; GOAL.md; parts/gap.md L1-104;
   library/prior/gap-onebound-read-sol.md in full; RESULT lines of rows 1204, 1211, 1215, 1218, 1220).
+- 2026-11-20T04:56Z Section 2 written: attack judgement after a registry grep of about 90 candidate terms; choice made.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -45,3 +46,45 @@ hard-core lane and works on the gap clause only. Its present reduction (cited, n
 
 So every route on file ends at ONE kind of statement: an estimate at one physical scale, uniform in the cutoff, along
 the weak-coupling trajectory, that fails for massless comparison models (free photon, Villain U(1) at weak coupling).
+
+## 2. How best to attack it (judgement, with the registry evidence)
+
+**Registry check first (lane rule 0a).** Before choosing, I grepped about 90 candidate terms over
+\`library/gap-*.md\`, \`library/prior/gap-*.md\` and \`parts/gap.md\` (file counts at pin 4260d44bd). Almost every
+mechanism I could name is on file, with a verdict:
+
+| Candidate I considered | Files | Where the verdict is |
+|---|---|---|
+| Orbit-space curvature (Singer, Feynman; O'Neill gain; Lott's weighted Ricci tensor) | 24 / 13 / 7 | idea 27 \`gap-brainstorm-max.md\` L309; idea 18 \`gap-brainstorm2-max.md\` L165, L223, G2 L257; F1 \`gap-afield-a-max.md\` L336 |
+| Thin twisted torus, centre-stabilised small circle (Tanizaki-Unsal) | 19 + 5 | Route T, row 842 Theorem S1 (\`gap-s1-opus.md\`), Lemma PE false as printed (FINISH L939); I5, I6 \`gap-outside-box-max.md\` L138, L187 |
+| Area law (charged decay) gives the neutral gap | 4 | dead in the class: \`gap-measured-vectors-max.md\` L144 (row 1065: a critical end point inside a confined phase) |
+| Thermal route: trace anomaly, interaction measure, Stefan-Boltzmann subtraction | 19 | (ANOM), (RATE)_mu, row 931 \`gap-direction-max.md\` L186-232 (the seed is an integrated interaction measure) |
+| Small-volume toron dynamics (Luscher, van Baal) as the selective start | 52 / 40 / 46 | row 1215 (levels coalesce at fixed spatial size); the start is selective but no engine carries it (row 998 6b) |
+| Langevin / Bakry-Emery / Polchinski / BBD / spectral independence | many | rows 957, 968, 821; method 31 in \`parts/gap.md\` |
+| Knabe, detectability, martingale finite-size criteria | 24 | rows 1013-1016, 1186; B's BP family (row 1218) |
+| Stochastic quantization (Chevyrev, Hairer), gradient flow | 18 / 14 | on file, no gap mechanism |
+
+Terms with zero hits: "NSVZ", "Cho decomposition", "Kac-Rice", "Weyl law", "Birman-Schwinger", "Fefferman-Phong",
+"Kirkwood", "Witsenhausen", "Lancaster", "Kolmogorov-Rozanov". The eigenvalue-counting tools (Weyl, CLR,
+Lieb-Thirring, Fefferman-Phong) bound a trace with an error that is extensive in the volume; (N-phys) needs the trace
+to precision 1/2, so they cannot replace the gap half (ARGUED; same reason as row 1211 L330: "the known pressure
+estimate gives only a bound per spatial site").
+
+**Judgement (ARGUED).**
+
+1. The reduction on file is complete and checked: the Jaffe-Witten gap follows from the continuum datum of T0 and one
+   one-scale estimate, (N-phys) (row 1161; check 1162), or from any of its stronger published relatives (A's
+   (A-B*), A's (A-M), B's BP; row 1218).
+2. Every such estimate is a statement at ONE physical scale in the crossover band, uniform in the cutoff. Every
+   proof method on file is either blind (it also holds for a massless comparison model, so it cannot give a gap) or
+   not uniform in the cutoff (strong-coupling methods stop near beta_W = 0.36-0.43; rows 1065, 1218).
+3. So the only attack that can succeed must bring a NEW selective fact at the physical scale. I did not find one.
+   Seventeen plain-brief rows before this one (rows 1188-1223) reached the same point.
+
+**Choice for this row.** I do not repeat a blind search. I take the one new object of the brief, the published
+one-scale criteria of row 1218, and settle one exact question about them that no row has settled: **where does each
+criterion sit relative to the massless comparison, and by how much must a selective input beat it?** For A's slab
+criterion (A-M) this is a sharp computation: I show below that the massless Gaussian field sits EXACTLY at A's
+threshold 1/2 in the flat-box limit. That locates the whole selective content of (A-M) in its aspect clause, and it
+gives the exact margin that any proof of (A-M) must supply at the physical scale. The work is short, exact and
+checkable. It does not move (N-phys); I say so in the RESULT line.

@@ -398,3 +398,24 @@ Proposition SPLIT is the natural next step.
 No numeric run (none was needed). No subagent. Sources fetched by URL into a scratch folder outside the repository;
 nothing fetched is committed.
 
+**5.6 Check of the reduction against CA-I's own order of choices (READ, written 2026-11-20T12:12Z by date -u).** CA-I I:3591-3609
+(the order of one step k -> k+1 of clause (0)): "The number beta_(k+1) is its Z^4 coefficient ..., read off the Gaussian
+normalizer and the term of the fluctuation integral. Both terms contain only g_k, the cutoff function and the
+propagators of step k, and the effective action at level k"; and, after x_(k+1) is set, "Then the cube size of step k+1
+is fixed, and then the thresholds of the decompositions of unity with which step k+1 opens". So, in the account's own
+words, the frame (here g_k of the own-threshold run, theta_k on the scaffold) enters one increment through exactly three
+things: the Gaussian normalizer (frame-free coefficient by Lemma A), the propagators (a presentation of the same
+integral; Lemma AX and CA-I 4.35 (C) for the gauge devices), and the cutoff function with its test cubes and thresholds.
+The cube sizes M_1, M_2, M are fixed auxiliary parameters (I:1164-1167); a coupling-dependent size, if "the cube size of
+step k+1" (I:3608) is one, is a choice inside the cutoff function. Hence (FC-T) must cover a change of thresholds and,
+possibly, of test-cube geometry. A form that covers both (stated for a row that attacks it; OPEN): **(FC-T, sandwich
+form)** for every frame entry theta and every outer small-field datum, the all-small-field cut chi_theta of step k lies
+between 1[every local fluctuation variable <= a_- delta(theta)] and 1[every local fluctuation variable <= a_+ delta(theta)],
+measured on the axial representative, with fixed 0 < a_- <= a_+; then two frames with |phi_k - psi_k| <= theta_k/2 cut
+differently only on events where some local variable exceeds (a_-/2) delta(theta_k), and the localized total of (4.1)
+has |||.||| at most K exp(-c a_-^2 theta_k delta(theta_k)^2) (GUIDE for the size; the localization is the supplier's).
+
+
+Status: complete (Steps 0-5 and RESULT, appended step by step).
+
+RESULT: Row 1267 (Claude Opus 5.5 max, Mac mini worker 2, 11:47Z-12:12Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys), (SL)/(RR) of row 1258) stays OPEN and was not attacked (no session-sized route off the record). Worked item: (FC) of row 1260, the one open input that replaces (FI) on the pin route of the one-cutoff carry (frozen-scaffold frame versus the run's own frame at the same weights). READ in Sussman and Alpoge's YM4_EM, YM4_GI, YM4_RT (c7fef8b21b58) and CA-I (31a47c543775), with Claude and Codex as authors of their text, after Balaban. PROVED (Lemma A, from GI's relative gauge theorem): the Gaussian normalizer's background dependence, the normalized Gaussian totals and the Gaussian number b^0 do not depend on the frame. PROVED (Lemma Z): the Gaussian mismatch and normalizer families have zero vacuum-subtracted totals in any frame comparison, so their pointed loads (which would sum to a divergence) do not enter. READ: the unmarked chain reads no frame-dependent partition, so row 1260's partition matching is not needed. PROVED as an implication (Proposition FC-chain): from a one-step kernel comparison (FC-1) with loads nu_k, plus cross-admission and the total form of EM's list comparison, sum_k eta_k <= 2 C_x sum_k nu_k; with row 1260's Lemma GR this gives the scaffold comparison at the pins with a bounded modulus. PROVED (arithmetic): bounds through the account's envelopes alone give nu_k ~ theta_k^(-1) polylog, whose sum diverges, so (FC) cannot be closed by soft bounds. PROVED (Lemma AX, elementary; rebuilds the axial-tree Faddeev-Popov fact that CA-I 4.35 (C)(b) cites): a soft axial gauge weight normalized by its own z is exact against gauge-invariant integrands, so the frame's gauge-weight precision and truncation drop out; PROVED (Proposition SPLIT, identity given the kernel form): at fixed weights and list the frame enters only through the small-field cut, as log <pi_phi/pi_psi>_psi. So (FC) is reduced to (FC-T): moving the small-field thresholds (and possibly test-cube sizes) by a relative amount theta^(-1/2) polylog changes the localized all-small-field total by a summable amount (GUIDE size exp(-c (log theta)^(2 p_0))). OPEN: (FC-T) (needs the supplier's one-step localization; a reading of CA-I chapter 4's decompositions of unity decides it), the bookkeeping hypotheses (H2), (H3), the infrared seed, the 9.1 hypothesis (e), (DET)'s inputs, (V9) at pins, the account's premises, the mass gap. Output library/gap-mini-solve-ak-opus.md.

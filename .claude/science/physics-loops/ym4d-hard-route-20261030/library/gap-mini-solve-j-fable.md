@@ -1,5 +1,5 @@
-lead: anthropic/claude-fable-5-2/max mac-mini-worker
-lease_until: 2026-11-20T15:11Z
+lead: anthropic/claude-opus-5-5/max mac-mini-worker
+lease_until: 2026-11-20T16:12Z
 
 # gap-mini-solve-j-fable (queue row 1200)
 

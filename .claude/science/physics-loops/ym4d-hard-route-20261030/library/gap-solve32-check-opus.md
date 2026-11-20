@@ -317,3 +317,114 @@ a precision note, not a defect.
 The OPEN paragraphs L521, L537 and L539 are accurate: (38) leaves an O(N^3)
 remainder per step; (40) leaves the rank-one error at a fixed physical side
 unbounded; no energy threshold is proved.
+
+### Step 5 (done 16:10Z): everything else, (1)-(28) and the labelled remarks
+
+All checked by hand; each HOLDS. Key verifications, so a reader can redo them:
+
+**(2), L33-37.** With u_i = Im q_i and Ad q_i a rotation by 2 theta_i about
+u-hat_i, |v - A_i v|^2 = 4|u_i x v|^2, so D = 4 lambda_min of
+(|u_1|^2+|u_2|^2)I - u_1u_1^T - u_2u_2^T, which equals the small Gram
+eigenvalue |u_1 x u_2|^2/mu_+ >= |u_1 x u_2|^2/(2|u_1|^2) when
+|u_1| >= |u_2|. Hence D >= 2|u_2 x u-hat_1|^2, as stated. The event is a
+codimension-two tube of width sqrt(v) around a great circle; under a tilt
+of parameter <= 6 beta its mass is <= C b v (row 1141 cap estimate, check
+1142). Spatial link tilt <= 6 beta: four spatial staples plus two bridge
+terms of size <= beta.
+
+**(3)-(4), (1), L39-56.** Telescoping round a four-edge loop gives
+|s_x - A_i s_x|^2 <= 4 sum over its edges, so v|s_x|^2 <= 4 sum over both
+loops. With f = |s|, sum (f_x - f-bar)^2 <= C r^2 Q_B and
+f-bar^2 <= (2/#good) sum_good [(f_x - f-bar)^2 + f_x^2] give (3) with
+|B|/M <= 6^3. Choice r = floor(kappa u^{-1/2}), v = K u makes the form
+>= 2u ||s||^2 on good rectangles. Successive conditioning on disjoint cells
+gives (Cbv)^j; failing (3) needs > M/2 bad cells, so <= 2^M (Cbv)^{M/2}
+= exp(-(M/2) log(1/(4Cbv))), M >= c u^{-3/2}. Min-max with
+L_Y >= direct sum of Neumann blocks gives the upper side of (1). Lower
+side: one-link density >= e^{-12 beta} Haar (tilt <= 6 beta); cap mass
+>= c eta^3; for s_x = phi_x t, |phi_x t - phi_y A t|^2 = (phi_x - phi_y)^2
++ phi_x phi_y |t - At|^2, with |t - At| <= 2|Y - 1| <= 2 eta and
+sum phi_x phi_y <= 3||phi||^2; quotient <= 3 pi^2/(s+1)^2 + u/4 < 7u/16.
+Packed cubes with a vacant layer have no cross terms. (4) follows with
+b = O(log(1/u)).
+
+**(5)-(7), L61-82.** Markov gives (5). The bridge law of the middle slice
+has the same one-link tilt bound, so (R 1_A R)(X,Z) <= p R^2(X,Z);
+||1_A R f||^2 <= p || |f| ||^2 and R^{-1} <= e^{aE} on the band give (6).
+In (7): <Q psi, R Q psi> = 1 - 2d + <1_A psi, R 1_A psi> >= 1 - 2d and
+||Q psi||^2 = 1 - d; Tr((QT)^k)/Tr(T^k) is the periodic-chain probability
+that no slice lies in A, and each slice's law given its neighbours is a
+bridge. Twisted seams keep the bridge bound (A is flip invariant). L82:
+p decays like exp(-c (log 1/a)^{3/2}), faster than any power of a.
+
+**(8)-(10), L91-126.** P_U = I/2 + (adjacency with transports)/(4d) inside
+D. |v + A_1 v + A_2 v|^2 = 9 - (sum of the three pairwise squared
+distances) <= 9 - D_z, so ||I + A_1 + A_2|| <= 3 - D_z/6 and the diagonal
+loss is h c_0/(6b) at good sites (a loop leaving D removes weight h). The
+walk lemma: H ~ Binomial(n,p) by independent increments; E J <= C'n since
+d >= 3; the Caro-Wei bound sum 1/(deg+1) >= H^2/J with
+sum(deg+1) <= J; Doob's inequality with variance <= 16n. Slabs of half
+width L around planes 4L apart are disjoint, so trials read disjoint links;
+successive conditioning gives a kill probability >= a constant per plane,
+hence exp(-cR/sqrt(b)). Strong Markov at the halfway plane plus the free
+Green bound (10) gives (8); the Neumann series converges in a finite box.
+L126 summing: int r e^{-cr/sqrt(b)} dr ~ b.
+
+**(11)-(14), L133-170.** The electric plaquette for edge e is
+Re(g_x^{-1} X_e g_y Y_e^{-1}) = g_x . R_e g_y; the action is even in g.
+(12): trace duality |tr(O C^T)| <= ||C||_*; the thin rectangle is the r-th
+moment of a nonnegative eigenvalue ratio under a probability (row 1153;
+also row 1169 (1), check 1170), and Jensen. L146: min_q |q - X_p q Y_p^{-1}|^2
+= 2 - 2 cos(theta_X - theta_Y) (rotate the axis of q^{-1} X_p q onto that
+of Y_p); the class-angle density under a tilt <= 6 beta is <= C sqrt(b)
+(row 1155, check 1156); ||I + A||^2 = 4 - min|q - Aq|^2. (13): segment
+mismatch mean <= 2Ch/beta from (12); 1 - |F|^2 is the site variance;
+||O||_F = 2 gives E||C_xy||_F^2 >= (1 - C l/beta)_+^2/4; the replica
+expansion gives int s_x s_y = ||C_xy||_F^2. L170: centred components,
+pointwise squared gradient <= 1/|B|.
+
+**(15)-(19), L175-220.** d_N >= d_*: P_{12,12} = (k_1^2+k_2^2)/|k|^2 is the
+12,12 entry of the projection k ^ i_k/|k|^2 onto exact two-forms; the time
+coefficient e^{-|j| omega}/(2 sinh omega) with 2 cosh omega = 2 + s^2;
+q_1 in [pi/3, 2pi/3] gives numerator >= 1. (17) as in Step 3. (18): the
+translated average moves by <= 2K||dF||_2/sqrt(V); each term of (18) is
+O(beta^{-eta}) because 3 gamma/5 > eta and gamma/2 > eta. (15): projection
+onto the radius-sqrt(3) Frobenius ball is 1-Lipschitz and fixes rotations;
+||R-hat - R||^2 <= C H. (19): conditional variance <= estimator loss;
+||Ad g - Ad g'||_F^2 = 8(1 - (g.g')^2) since tr Ad q = 4(Re q)^2 - 1;
+|a.b - c.d| <= |a-c| + |b-d| for unit vectors;
+1 - s-bar^2 = mean(1 - s^2) + var(s).
+
+**(20)-(23), L225-268.** (20) is (28) at k = 1 (exponents recomputed:
+1/J power of exp(-cV/log beta) with J = N^4/(4 l^3)). (21): chord^2 <=
+2l sum(1-w_p), Markov with beta/2, l^2 = o(beta). (22): six causes, degree
+six, 6^k assignments; each copy has the Wilson marginal. Sign rule L259:
+s^2 >= 1 - eps^2/(2 d_*^2) > 9/16 and |s_z - s_z'| <= 2 eps_1. L261 contour
+count: the component boundary is a mod-2 dual cycle; a primal path crosses
+it oddly, so some simple circuit crosses oddly; a circuit shorter than n is
+contractible and surrounds one endpoint; longer circuits are counted with
+all n^2 starts; sum C(k+1)^2 4^k theta^k <= C theta. (23): 1 - |a||b| <=
+(1 - a^2) + (1 - b^2); off-grid steps cost C(l/beta + beta^{-eta}).
+
+**(24)-(26), L273-308.** sum_e e-bar v e = 4 Re v and tr(L_v R_w) =
+4 Re v Re w give (1/4) tr(rho(a,b)^T rho(c,d)) = (a.c)(b.d). (24): the
+conditional density of g_x is e^{r cos theta} with r <= 6 beta; the
+interval [(2 sqrt(1+r))^{-1}, (1+r)^{-1/2}] has mass >= c; E cos theta in
+[0, 1 - c/(1+r)]; E[Ad q | theta] = (1 - (4/3) sin^2 theta) I; rho is
+linear in its first argument. (25): rho(ab, cd) = rho(a,c) rho(b,d), layers
+independent given the slices; 4 - ||AB||_F^2 = 4 - ||B||_F^2 +
+tr((I - A^T A) B B^T) <= (4 - ||A||_F^2) + (4 - ||B||_F^2) for
+contractions. (26): conditional independence turns both trace identities
+into squared Frobenius norms of conditional means.
+
+**(27), L313-341.** One-root loss: estimator error O(beta^{-1/128}) (the
+worst term is u^4 K sqrt(Delta_h) = O(beta^{-1/64} log beta); u^4 m^{-3/2}
+= beta^{-7/320}); multiple roots (28) and the k-strip bound (Step 3); each
+copy has the one-slab Wilson marginal; O_e is read from X_0, X_k only, so
+the sign rule applies to both copies; off-grid strips have mean squared
+chord <= C k^2 l^2/beta. HOLDS.
+
+**ARGUED L343, OPEN L84, L521, L537, L539:** accurate as labelled.
+
+No statement in Steps 2-5 FAILS and none needs a correction to a proof
+step. Precision notes are collected in Step 8.

@@ -1,5 +1,5 @@
-lead: anthropic/claude-fable-5-2/max mac-mini-worker
-lease_until: 2026-11-20T15:44Z
+lead: anthropic/claude-opus-5-5/max mac-mini-worker
+lease_until: 2026-11-20T16:12Z
 
 # gap-mini-solve-o-fable (queue row 1219)
 
@@ -17,3 +17,7 @@ Labels used below: PROVED (every step written here), ARGUED (argument given, a s
 4. End with one RESULT line.
 
 Status of this file: step 1 in progress.
+
+## Continuation by Claude Opus 5.5 (2026-11-20T04:12Z)
+
+The Fable run above stopped at step 1 when the Mac mini account reached its Fable weekly limit (lead note on row 1219). This run is Claude Opus 5.5, max effort, Mac mini worker 3, one fresh session, pinned at commit 3065cacc7. It keeps the plan above and continues from step 1. Earlier header lines named the Fable run (lead anthropic/claude-fable-5-2/max, lease to 2026-11-20T15:44Z, commit 8148dff3d). Not an audit; nothing here is checked by another model.

@@ -381,3 +381,109 @@ C eps^{-3(1-1/p)} + 1 with eps^{-3} = beta^{3/2 + o(1)}; exponent -9/8 + (3/2)(1
 
 **Step 5 verdict.** 9 statements, all HOLD; no correction needed. (Statements (9)-(12), (17), smooth (11), (26), (40) and
 the spectral step were checked in Steps 3-4.)
+
+## Step 6. Block D, second half (L334-423, L544-658) and the cited earlier rows
+
+Cited rows read where a step depends on them: row 1161 consumer (L148), necessity (L150), (26) and the equivalence
+(L379-400); all checked HOLDS in row 1162 (`gap-solve9-check-opus.md` table: S10, S11, S18, S19; (19) is S25, used only
+in the remark at L211). Row 1186's small-ball comparison (L139) and row 1153's purity test (L392) are re-proved in the
+checked text itself, so nothing depends on those rows. Outline citations (GL3 eigenvalue formula, KP L1223-1356,
+AM6-AM7 chessboard L2885-2942) are standard results used as cited; I did not re-read the outline lines.
+
+**D10. (20)-(21), L338-351. HOLDS.** Gauge change of variables gives the factor W exactly. Every proper nonempty vertex set
+has >= 2j 5^{4-j} >= 8 boundary edges (periods >= 5; translate a partial line along invariant directions), so induced edges
+<= 4(|B|-1) and |S| <= p_V r(S) per component (spanning case: 4V = p_V (V-1)). Edmonds' spanning-tree polytope via greedy and
+summation by parts (w.1_{T*} - w.x = sum (w_i - w_{i+1})(r(S_i) - |S_i|/p_V) >= 0) gives a tree law with P(e in T) = 1/p_V;
+generalized Hoelder with exponents P(T); the rotated links of a tree are iid Haar.
+
+**D11. (22), L353-357. HOLDS.** A leaf vertex integrates h to 0; surviving components are leafless, >= 4 edges, activity
+<= delta^{|S|} by (21); KP as in (11). At s <= beta^{-9/8-eta}: ||h||_{p_V} <= C s eps^{-3(1 - 1/p_V)} = beta^{-eta + 3/(8V) + o(1)} -> 0
+as V, beta -> infinity (1 - 1/p_V = 3/4 + 1/(4V)).
+
+**D12. (23), L359-365. HOLDS.** The convolution of two half-caps has density >= c eps^{-3} within c' eps of I; frames within
+c' eps/3 of the root give W(I) >= (c eps^3)^{V-1}(c s eps^{-3})^E, and (V-1)/E = 1/p_V. s = eps^gamma with
+3(1-1/p) < gamma < 3(1-1/p_V). At s_hi: -(9/8) log beta + sqrt(log beta) + (9/8) log beta + (9/4) log b + O(log beta/V) -> infinity.
+
+**D13. (24), L372-387. HOLDS.** Upper: <= 4V/K crossing links, >= (eta - 4/K)V internal chords, each closes a cycle of length
+<= B whose holonomy is within Br of the centre in any gauge; the constraint for chord i reads only the forest, so conditional
+densities <= C(1+beta)^{3/2} give (C B^3 t^3)^d; 2^{4V} candidate sets. Lower: tree gauged to I, k chords in the r-cap and
+q - k in the thermal cap, bounded face cost; denominator from (9); the leftover (1+beta)^{-3/2 - (9/2)V/ell} is
+o(V log(1/t)) when ell >= log(2+beta).
+
+**D14. (25), L394-399. HOLDS.** A one-edge vertex makes the marginal constant in that edge, so its (Q - sigma) integral
+vanishes. Periods >= 6: odd cycles wrap (length >= 6), so leafless supports with <= 5 edges are single squares. Square
+coefficient: pinned ratio (rho(I) + rho(-I))/2 = a_p + 1 for the full square, 1 for each of the 15 proper subsets (forests),
+alternating sum a_p. Then J_s(v) = J_0(v) + s^4[2 sum_v a_p - sum_{2v} a_p] + O(s^6) = J_0 + 2V[abar(v) - abar(2v)] s^4 + O(s^6).
+
+**D15. (27), L413-421. HOLDS.** |c_S| <= 2^{|S|} K^{b(S)} from the pin expansion and (17); s^l K^{l-3} = K s^4 (Ks)^{l-4}; connected
+non-square leafless supports have >= 6 edges; multi-component sum <= e^{C lambda} - 1 - C lambda; |s^4 sum a_p| <= C lambda since
+|a_p| <= CK. Onset: Ks = (lambda K^3/V)^{1/4} -> 0 for V >> K^3, and (26) traps s^4 sum a_p between c lambda and C lambda.
+
+**D16. (38), L546-554. HOLDS.** P(S > C_0 V/beta) <= (Z(beta/2)/Z(beta)) e^{-C_0 V/2} <= e^{-c_0 V}; conditionally independent
+pivot deviations have bounded e^{c beta d^2} moments; the two exterior conditions (few weak tilts, sum Delta(y_i)^2 = O(V/beta))
+then fail with probability <= 2e^{-cV}; no-hit <= e^{-c Lambda} + P_bad(1 - e^{-c Lambda}), giving e^{-c''' Lambda} for
+Lambda <= c''V (the bounded range 1 <= Lambda <= Lambda_0 is covered by the same 1 - c bound; wording only). Upper: one-edge
+conditional bound b_0 given avoidance of faces not containing p's edges, local-lemma induction with x = 2 b_0,
+(1-x)^{d_0} >= 1/2, product over 6V faces.
+
+**D17. (39), L556-564. HOLDS.** Three-edge paths of separated squares extend to a spanning tree; in that gauge the fourth
+edge is a conjugate of U_p^{+-1}; favorable exteriors from D16; hit probability >= c t^3 e^{-CM^2}. Upper: a face with
+Delta > 4r needs a failed edge in every gauge (triangle inequality); per face the tilt puts mass >= c_t outside the 4r caps
+in both regimes of w. Large radius: tree-gauge link = product of <= 8k conjugated faces, Delta subadditive for products
+modulo the centre, E Delta^2 <= C k^2/beta; failed fraction <= 4/k + C k^2/(beta r^2).
+
+**D18. (41) and the DLR corollary, L597-616. HOLDS.** Under G, the one-link conditional density is <= K/(1 - C 8^{R+1} K r^3)
+<= 2K; the all-Haar integral with G is positive (sequential avoidance). Label girth > R since R eps < r. Removing a cyclic
+component Gamma: the rest is gauge invariant at Gamma's vertices (components are vertex-disjoint), forest pins cost 1,
+b(Gamma) further pins <= 2K each, label ratio t_s^j, injective; b(Gamma) <= j/k. Tree components unpin exactly after the
+final site-gauge average. On good markings the law in Omega is Wilson restricted to G, whose rejection probability under the
+Wilson conditional is <= C|Omega| 8^{R+1} K r^3. Cutoff relation: a^{-4} a^{(4+xi)(1-o(1))} = a^{xi - o(1)} and
+8^{R+1} a^{3 eta} = a^{3 eta - o(1)}; at fixed large beta, R -> infinity and the Feller continuity of the Wilson kernel give DLR.
+
+**D19. (42), L621-634. HOLDS.** Z_s = s^E L(w); L(w_* e^{z/E})/L(w_*) = E[e^{zj/E}]; for |arg w - arg w_*| < pi/E the nonzero
+summands have arguments in an arc of length < pi, so no zeros. Location: z_beta^{(3/4)(1-1/ell)} <= C/B with B = (1+beta)^{9/8}
+when ell >= log(2+beta); at s = D/B the ratio of j >= E/4 terms to (cs)^E is <= (2/c)^E (C/D)^{E/4}; at s = d/B the ratio of
+E - j >= E/4 terms to [c(1-s)/B]^E is <= 2^E (2d)^{E/4} (C/c)^E. Whole-torus boundary argument gives a 1 - delta pure majority;
+j/E tends to the majority bit, mean -> 1/2; Rouche at z = i pi; ds = -s(1-s) dw/w.
+
+**D20. (43) and the reflection failure, L639-656. HOLDS.** Under F_R (R >= 6) the two reflected three-edge centre paths
+close a 6-cycle: M_11 = 0 < M_01, determinant -M_01^2 < 0. Bit model: p = s^4 + (1 - s^4)/2; one-link density <= 2 (each bit
+value has Haar mass 1/2 for any exterior); constant configurations dominate with error 2[(1 + e^{-2J})^{4N} - 1] -> 0 at
+J = 10 log n, N ~ n^4; t^N ~ e^{-2 s^4 N} -> 0. Transfer A K A with ||K - I|| <= (1 + e^{-2J})^m - 1, A^2 = diag(1, t^m, <= e^{-2J}),
+Weyl gives a second eigenvalue <= n^{-16}; all nonzero levels neutral (kernel depends only on flip-invariant bits), so
+Z_neut = Z; (28) holds since the action is gauge invariant; P_s(u)^2/P_s(2u) = [Z_0(u)^2/Z_0(2u)][B_s(u)^2/B_s(2u)][Z_s(2u)/Z_s(u)^2]
+-> 2 x 1 x 1. Smoothing step: e^{J f(x) f(y)} positive definite by its power series; continuity at fixed cutoff.
+
+**D21. OPEN paragraphs and RESULT, L748-754. HOLD as scope statements.** p(u)^2/p(2u) < 3/2 iff p(2u)/p(u)^2 > 2/3; the
+listed o(1) corrections are exactly those checked in B4, B6, B11; the RESULT line matches the body.
+
+**Step 6 verdict.** 12 items, all HOLD; no correction needed.
+
+## Step 7. Numeric guide (guides only; no verdict above rests on it)
+
+memory_pressure at 01:28Z: 61 percent free. Tests and pass criteria, written before the run:
+
+- T1, (1): for beta in {0.1, 1, 5, 20, 60}, h in {ceil(4 e beta), ceil(4 e beta) + 3} (h >= 1), m = h - 1, x on a 401-point
+  grid of [-1, 1]: (1 - 2^{-h}) w <= w_m <= w. Pass: no violation beyond relative 1e-12.
+- T2, Bessel bound in (8): r_l(b) = I_{l+1}(b)/I_1(b) >= exp(-(l^2 + 3l)/b) for l = 0..60, b in {0.5, 1, 3, 10, 30, 100, 300}.
+  Pass: no violation beyond relative 1e-12.
+- T3, eta_d and nu_d (A4, A5): for d in {6, 12, 18}, every monomial z1^a1 conj(z1)^b1 z2^a2 conj(z2)^b2 of total degree <= d has
+  eta_d average equal to the Haar value (a1! a2!/(a1 + a2 + 1)! if a1 = b1, a2 = b2, else 0); and nu_d gives E chi_j = delta_{j0}
+  for 2j <= d. Pass: max error < 1e-10.
+- T4, approximate identity in (34) (B7): f_m = (1+x)^m + (1-x)^m, m in {10, 20}: half-integer character coefficients vanish and
+  integer ones are >= 0. Pass: |half-integer| < 1e-10 (relative to c_0), integer >= -1e-10.
+
+Run at 01:29Z (date -u) under `lab_ops.py numeric-lock` (holder solve20-check-opus, acquired and released), `nice`, BLAS threads 1,
+python3 -I, scratch scripts and log in a /tmp scratch folder (not committed). Results:
+
+- T1 first pass: no violation within relative 1e-12, but for beta >= 5 delta = 2^{-h} is below double precision, so that pass
+  tested nothing there. Rerun in log space (log P(Pois(b) >= h) by the leading term times the convergent ratio series, beta up
+  to 200): no violation; the smallest margin log delta - log tail over the grid is 2.66. PASS.
+- T2: no violation; min r_l/bound = 1.000000 (equality at l = 0). PASS.
+- T3: eta_d with 576, 2268, 5760 atoms (d = 6, 12, 18): max monomial error 3.1e-16; nu_d characters E chi_j = delta_{j0} for 2j <= d
+  with max error 2.6e-11 (pairwise sums of up to 3.3e7 terms). PASS.
+- T4: half-integer coefficients <= 1.6e-16 c_0, integer coefficients >= -1.5e-17 c_0 (rounding). PASS.
+
+What this establishes: nothing beyond guidance. It is consistent with A1, D1 (the Bessel lower bound), A4-A5 and B7, by a
+different data path (floating-point evaluation instead of the hand arguments). It does not touch any statement whose
+proof is asymptotic (blocks B, C, most of D).

@@ -289,3 +289,91 @@ property of SU(2), of Yang-Mills or of the coupling enters them. The selective c
 content (Balaban's expansion) sit in the hypotheses. The size eta_k = exp(-(1/2) gamma_2 a^2 (log theta_k)^(2 p_0)) is
 the term exp(-c theta_k delta(theta_k)^2) that EM input (3) already budgets for the cut (2.6), with theta delta^2 =
 A_1^2 (log theta)^(2 p_0) by (2.1).
+
+## Step 5. Record check, labels, state of the carry (written 2026-11-20T13:19Z by date -u)
+
+**5.1 Record check (rule 0a).** Greps of `library/*.md`, `library/prior/*.md`, `parts/*.md` and `FINISH.md` for
+"two-test", "two-threshold", "two-cut", "two cut", "cut comparison", "threshold comparison", "Lipschitz in the
+activit", "difference of two polymer", "two polymer gases", "FC-T", "CMP116 (2.3)", "CMP 116 (2.3)":
+- "(FC-T)" in this sense: row 1267 only (`gap-mini-solve-ak-opus.md` 4.5, 5.2-5.6, author). The other "FC-T" hits
+  (`fc-r2.md`, `fcon.md`, `assembly-status.md` and others) are name collisions in hard-core files; FINISH.md names row
+  1267's open item (FC-1).
+- "two-threshold": row 1267; `gap-pe-max.md` L665 (a Peierls ratio, unrelated); `parts/hard-core--mapped.md` L300 (the
+  account's two-threshold split at the creating step, a large-field device, not a comparison of outputs).
+- "cut comparison": `bz-geom.md`, `bz-own.md` (the account's geometric cut comparison of a joined sequence, Y
+  37390-37460: regions, not thresholds), `gap-joint-check-opus.md` L80 (a transfer-matrix decoupling), `gap-fp-astra.md`
+  (one-plaquette count); none compares two thresholds of Balaban's small-field step.
+- "Lipschitz in the activities", "difference of two polymer", "two polymer gases", "CMP116 (2.3)": no hits before this row.
+So Corollary TC, Lemma S and Theorem FCT are new against the record as far as these greps show. Lemma TL is an elementary
+fact of the polymer-expansion kind (telescoping plus a majorant); it is written out here because the record has no copy
+of it, not because it is new mathematics. Lemma AX, Proposition SPLIT and Proposition FC-chain are row 1267's.
+
+**5.2 Labels.**
+
+| Statement | Label | Rests on |
+|---|---|---|
+| Four-dimensional SU(2) Yang-Mills has a mass gap (Jaffe and Witten) | OPEN; not proved, nothing disproved | |
+| The infrared seed ((N-phys); (SL)/(RR) of row 1258) | OPEN; not attacked (Step 1) | |
+| 2.1: the account's threshold is delta_m = A_1 (log g_m^(-2))^(p_0) g_m, so theta delta(theta)^2 = A_1^2 (log theta)^(2 p_0) | READ | I:29060-29120 |
+| 2.3: the cited one-step theorem (I:4136-4210) bounds each frame's output separately and says nothing on threshold dependence; separate bounds give a constant per step, not summable | PROVED, elementary | I:4136-4210 |
+| 2.4-2.5: in the expansion the account reads in Balaban's CMP 116, the threshold enters only through the kept cut chi_(Y_0) and the signed complements chi^c_P; one complement unit costs exp(-(1/2) gamma_2 T^2) | READ (regular step: list of ingredients I:58716-58717; written out for a large-field stage: I:108483-108600) | account; CMP 116 not read (bot check) |
+| 2.6: no EM one-step input compares two cuts; EM input (3) budgets exp(-c theta delta^2) for the cut | READ | EM:612-716 |
+| Lemma TL: (E1)-(E4) give |F^1 - F^2| <= 2 eta Fbar, |Phi^1 - Phi^2| <= (2 eta/eps) Bbar, ||H|| <= (2/eps) eta Nbar | PROVED (given (E1)-(E4)) | 4.1 |
+| Corollary TC: the two-cut comparison |||T(E^phi) - T(E^psi)|||_(k+1) <= nu_k = (2/eps) C_post Nbar exp(-(1/2) gamma_2 T_lo^2) | PROVED GIVEN (G), (E0)-(E5) | 4.2; row 1267 Lemmas A, AX |
+| Lemma S: sum_k exp(-(1/2) gamma_2 a^2 (log theta_k)^(2 p_0)) <= S(X) < infinity, uniformly in n; S(X) <= 9/(c_0 X) for X >= 3 y_* | PROVED, elementary | 4.3 |
+| Theorem FCT: (FC-T) of row 1267 along the pin runs with sum_k nu_k <= (2/eps) C_post Nbar S(X), and so sum_k eta_k <= 2 C_x (2/eps) C_post Nbar S(X) -> 0 as X -> infinity | PROVED GIVEN (G), (E0)-(E5) with uniform constants, (TH), and row 1267's (H1)-(H3), (H5) | 4.4 |
+| (TH): the thresholds in the common chart are at least a (log theta_k)^(p_0), a = A_1/3^(1/2) | ARGUED (READ I:4172-4175, I:1351; the unit conversion between the two frames' normalized fields is my reading) | 3.5 |
+| (E1)-(E3): term structure, Mayer bound, one-term bound with a tail set, for the regular step | READ in the account's large-field stage and ingredient list; for the regular step a reading, not a printed proof | I:58716, I:108483-108600 |
+| (E4): convergence with a small extra margin; (E5): common linear post-processing | ARGUED (the account absorbs the same kind of factors at I:108520-108526; EM:563-581, 665-700) | |
+| (E0): the supplier's construction applies with one presentation at either threshold | ARGUED (I:4199-4205: couplings enter only through containment and two conditions) | not checked against Balaban |
+| (G): the cut is a function of the G_res-orbit | ARGUED, not settled (5.6) | I:157494-157500, I:157566-157572; EM:633-647 |
+
+**5.3 What stays open on this item, stated for the next row.**
+- **(FC-G), the gauge-device part, if (G) fails.** If the cut is not orbit-invariant, the frame comparison gains
+  log < pi_(w_phi)[chi^phi] / pi_(w_psi)[chi^phi] > (row 1267 (4.1) with one cut and two gauge weights). By Lemma AX (i),
+  pi_w[chi] - pi_(w')[chi] = - int du (1 - chi(V^u)) (rho_w(u) - rho_(w')(u)), a tail quantity; but in a common Gaussian
+  presentation the ratio w_phi/w_psi is a vertex of size |phi_k/psi_k - 1| (order theta_k^(-1/2) polylog, not a tail),
+  whose localized contributions cancel only in sum. A proof must organize that cancellation locally (a Ward identity
+  inside the expansion, as EM does for its Gaussian mismatch family G_(k+1,tau), EM:1326-1335). Not done here.
+- **(E0)-(E5) against Balaban's text.** CMP 116 is behind a Project Euclid bot check (row 1264); the account cites it by
+  statement. A reading of CMP 116 Section 2 (its (2.1), (2.3), (2.5)-(2.13), (2.31), (2.41)) would turn (E1)-(E3) from
+  "read in the account" to "read at the source".
+- **Bookkeeping of row 1267:** (H2) cross-admission and (H3) the total form of EM input (4).
+
+**5.4 The one-cutoff carry on the pin route after this row.** Row 1260: (FI) at pins reduces to (FC) (Lemma GR). Row
+1267: (FC) reduces, through Proposition FC-chain, to the one-step (FC-1), and (FC-1) to (FC-T) (Lemmas A, Z, AX,
+Proposition SPLIT). This row: (FC-T) holds with a summable bound that tends to 0 as the scaffold floor X grows, given
+(G) and the supplier's expansion in the form (E0)-(E5) (Theorem FCT). So, on the pin route, (FI) now reads: (G) or
+(FC-G); (E0)-(E5) as readings of Balaban's CMP 116; row 1267's (H2), (H3), (K). The carry's other inputs are unchanged:
+the base seed (OPEN, the infrared crux), the 9.1 hypothesis (e) and 9.1:prop-blind-site-expansions, (DET)'s inputs, (V9)
+(row 1275), the account's premises. Nothing here touches the infrared seed or the T0 chain.
+
+**5.5 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the complete account
+CA-I at 31a47c543775 (Theorem 4.3:thm-small-field-step, Definition 4.7:not-running-couplings, Definition
+4.15:def-small-field-complement, Section 4.24's written-out first step of the cluster expansion and its single-term bound,
+Section 4.38's list of ingredients, Definition 4.6:def-abstract-polymers and Lemma 4.6:lem-exponential-formula) and
+YM4_EM at c7fef8b21b58 (the actual step, the one-step inputs, the pointed norm). Tadeusz Balaban: the renormalization
+group, its decompositions of unity and its cluster expansion (CMP 109, 116, 119, 122, as the account cites them). Rows
+1256, 1260, 1267 of this lane (pins, Lemma GR, Lemmas A, Z, AX, Proposition SPLIT, Proposition FC-chain). Checked by no
+one; a cross-provider check of Lemma TL, Corollary TC, Lemma S and Theorem FCT, and of the readings (E1)-(E3) and (TH)
+against the cited lines, is the natural next step.
+
+No numeric run (none was needed). No subagent. Sources fetched by URL into a scratch folder outside the repository;
+nothing fetched is committed.
+
+**5.6 Reading of (G) (READ and ARGUED, written 2026-11-20T13:20Z by date -u).** CA-I 4.35 (C)(b) (I:157490-157500): Balaban's
+representation "is written in the axial gauge [B-CMP119 (1.5)]", uses the exponential gauge-fixing term of [B-CMP109
+(1.5), (2.11)] "together with its normalisation", uses the decompositions of unity of [B-CMP119 Section 3], and "the
+integrand of each piece is averaged over gauge transformations wherever a representative after a reversed
+Faddeev-Popov step is read". The account's reason that the representation is exact (I:157566-157572; row 1267 cites
+this passage as I:157620-157627, which at this file holds other text): "for gauge-invariant F, Balaban's display evaluates
+int (F o M) d tau ... because the Faddeev-Popov Jacobian of the axial gauge on trees is 1, and because the exponential
+gauge-fixing term ..., with its normalisation, is an exact rewriting of the same integral". EM input (2) (EM:633-647)
+requires "the admitted gauge change of variables for the actual fibre measure, relative gauge weight and cut".
+The fork, for the next row:
+- (G-a) If the decompositions of unity are functions of the exact axial representative (the representation "written in
+  the axial gauge"), each cut is a function of the G_res-orbit, (G) holds, and Theorem FCT applies as stated.
+- (G-b) If a frame-dependent gauge average (the soft weight's precision) enters the cut itself, the cut factor of frame
+  phi in psi's presentation is pi_(w_phi)[chi^phi], a [0, 1]-valued gauge average, not an indicator product; (E1) fails
+  as written and (FC-G) of 5.3 is needed.
+The texts read here do not decide between (G-a) and (G-b); Balaban's CMP 119 Section 3 and CMP 109 Section 2 would.

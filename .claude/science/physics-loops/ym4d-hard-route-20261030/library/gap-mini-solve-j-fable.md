@@ -32,3 +32,22 @@ What this reading fixes for the present row (all on file, nothing new):
 2. Eight plain-brief rows screened about 100 route candidates and found each one on the lane's map. This row does not screen again.
 3. The one mechanism that crosses the band in a comparable model is the 2D pinned-cell stiffness iteration. Its gauge ports stop at the same place each time: a link translation has no cost form that is a curl form in a rough non-abelian field (rows 1011, 1013, 1016, 1188, 1193, 1197).
 
+## Step 2. Candidates derived in this row and their matches on file (GUIDE; no new route)
+
+Each line is: the idea as I derived it, then the place where the lane already holds it. Every match was found by `grep -n` in `library/gap-*.md`, `parts/gap.md` or the FINISH rows before the idea was worked. Nothing in this step is new.
+
+| Idea derived here | Where it stops | On file |
+|---|---|---|
+| Stiffness of a pinned 4D cell to an abelian boundary twist as the monotone of a 2D-type iteration | no curl-form cost in a rough field; pin supremum forgets colour coherence | rows 1011 (Propositions B, B'), 1013 (Lemma WN), 1016 (Theorem BH) |
+| Two-sided torus action on each link, with corner defects | the corner defects of a constant-curl twist grow with the box | row 1013 C1, row 1193 Lemma PC-c |
+| The start ("blind") bound is itself the sign of asymptotic freedom; a charged scalar gives the opposite sign | no mechanism for a size-uniform upper bound of a twist response | row 1051 (`gap-direction3-max.md` 5.3: (BDD-Delta), (BL), (BL-c), (L1); L554-560 names the diamagnetic inequality of Brydges, Frohlich and Seiler) |
+| The exact variational form of the response with field-dependent extensions (score of a non-constant field, Bochner term) | needs a field-built frame whose Jacobian cancels the frame defect | row 1128 (NL-gen), row 1034 (STAR, PRIV), row 1141 (OPEN item) |
+| Adapted (time-ordered) frames have unit Jacobian | frames decohere with depth; bound of order beta^(2/3) L | row 1051 (Lemma RM, RM-TREE; attempt 2 of 5.3) |
+| Heat-kernel Hessian bounds in the time direction (Hamilton's matrix Harnack inequality on a compact group) as a pin-uniform blind bound for the electric part | it is the ambient convexity of the one-step kernel; the magnetic Hessian in lab directions is not a curl form | row 941 (exponential family, Hess Lambda), rows 944, 950 ((SC) and its guide-level failure) |
+| Araki-Lieb-Thirring comparison of Tr T^L with a classical (dimensionally reduced) partition function | loses the vacuum normalization; extensive | rows 913, 1180 (Lemma R4), `gap-constraints-max.md` B6 |
+| The non-central family Z(K), K a commutator of two constant colour twists, as a path from the periodic to the centre-twisted torus | the response at K = 1 is of area order | row 1013 C2, row 1051 Lemma K4 |
+| (BDD-Delta) from monotonicity of the excess free energy in each side | only the volume-order bound e(2L) <= 16 e(L) follows | Lemma E of row 1217; Lemma ADD of row 1018 |
+| Charged-to-neutral conversion in a twisted 2D O(4) sheet | frustrated abelian examples keep neutral order with charged decay | rows 1115, 1139, 1194 ((SING), method 36) |
+
+Reading of the table (ARGUED, same as rows 1051 and 1197): in the 2D engine the start bound is free and each mode lowers the stiffness. In 4D the response to a background field has two one-loop parts of opposite sign (orbital and spin; Nielsen 1981, Hughes 1981). So an induction that carries only upper bounds on cell stiffness has no sign for the orbital part. This is the reason the direct ports stop, and it is on file.
+

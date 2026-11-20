@@ -138,3 +138,47 @@ So (E0) is not settled by row 1299 4.7: its "equivalently" is wrong, and the rea
 step's potentials on the whole cut region. Next (Step 5): read how Balaban and the account treat fluctuations with
 C_1 p_1(g_k) <= |A| < delta_k/g_k inside the cut, and what box SA's (UM1) "declared complex fluctuation boxes" are
 in the carry's presentation.
+
+## Step 5. Which box holds the cut: the two p_1's (READ; 19:10Z by date -u)
+
+**5.1 READ (Balaban; owner's copies, page images and text extractions in a scratch folder).**
+- CMP 119 p. 250, (1.18): the first cut is chi({sup_b |A(b)| < g_0^(-1) delta_0}) on the scaled fluctuation A
+  (U = exp(i g_0 A) U_1), so in chart units the cut is at g^(-1) delta = A_1 (log g^(-2))^(p_0). p. 247 (text): "We
+  assume that the constant A_0 is much larger than A_1."
+- CMP 119 p. 259, (2.28): the analyticity radii of the effective-action terms are alpha_(0,j) = g_j C_0 (log
+  g_j^(-2))^(q_0), alpha_(1,j) = g_j C_1 (log g_j^(-2))^(q_1), "where q_0, q_1 are integers greater than 1, C_0, C_1
+  are sufficiently large positive numbers".
+- CMP 119 p. 265, (3.3) (text extraction): the decomposition "restricting the approximate fluctuation fields" uses
+  delta_k = g_k (A_1/A_0) p_0(g_k): CMP 119's chi'_k cut is at the p_0 scale.
+- CMP 119 p. 268, (3.16): the cut of the fluctuation field A_k at delta_k (p_0 scale), on Omega_(k+1) minus one layer.
+- CMP 119 p. 276, (3.43): the remaining terms are analytic on U~^c_(k+1)(Y, (1+beta) alpha~_0, (1+beta) alpha~_1) x
+  {A : supp A in Y cap Lambda^((k)*)_(k+1), |A| < C_1 p_1(g_k)}. No definition of p_1(.) was found in CMP 119's text
+  extraction (searched for p1, its OCR variants, and the pages of (1.18), (2.28), (3.3), (3.16), (3.43)).
+- CMP 122a p. 183, (1.27): "delta'_j = g_j A_1 p_1(g_j), p_1(g_j) = (log g_j^(-2))^(p_1) and p_1 < p_0; other
+  conditions on p_1 will be formulated later", for its cut chi'_j of the approximate fluctuation field at 2 delta'_j.
+  CMP 122b (text): "2p_1 - (d+5) r_0 > p_0" and a bond with |B(b)| >= g_j^(-1) ... A_1 p_1(g_j).
+- The account (CA-I L9788): "A second function of the coupling, the function p_1(.) of [B-CMP119], distinct from the
+  degree function p_0(.)"; Stage 0 (L1353-1363) gives one exponent p_1 with p_1 < p_0 citing CMP 122a; 4.4 (L9965-9972)
+  takes the fluctuation polydisc D = {|A|, |A_k| < C_1^fl p_1(g_k)}; 4.29 (L149146-149149) bounds the "second region"
+  by C_II C_1^(3.43) delta_k, i.e. uses g_k p_1(g_k) <= delta_k (A_1 = 1 normalisation aside), which needs p_1 <= p_0.
+
+**5.2 What follows (PROVED from 5.1, elementary; the reading of CMP 119's p_1 is OPEN).** In chart units the regular
+step integrates the fluctuation over the cut region {|A| < A_1 (log g^(-2))^(p_0)} (CMP 119 (1.18), (3.3), (3.16)).
+Its potentials are claimed analytic on {|A| < C_1 p_1(g_k)} ((3.43)). Exactly one of two readings holds.
+- (R+) CMP 119's p_1(.) is a function with exponent above p_0 (for instance one tied to q_1 of (2.28)). Then the cut
+  region lies inside the box above a floor in log g^(-2), and row 1268's (E0) ("inside the fluctuation domain
+  [CMP119 (3.43)]") holds for every threshold of the form c delta_k with c bounded, above a floor.
+- (R-) CMP 119's p_1 is the account's p_1 = p_0 - 4r - 1 (CMP 122a's). Then for small g the cut region is NOT inside
+  the box: at |A| = (C_1 (log g^(-2))^(p_1), A_1 (log g^(-2))^(p_0)) the step's remaining terms are not known to be
+  analytic, the ratio of radii being (A_1/C_1)(log g^(-2))^(4r+1). Row 1268's (E0) fails as worded, and so does the
+  account's own second part of 4.3:thm-small-field-step, which takes both "the fluctuation domain of [CMP119 (3.43)]"
+  and "the cutoff radius (A_1/A_0) p_0(g)" together (L4176-4178), unless a further cut at the p_1 scale is in force.
+Under (R-) a further cut is in fact in force in Balaban's large-field papers: CMP 122a's chi'_j cuts the approximate
+fluctuation at 2 delta'_j = 2 g_j A_1 p_1(g_j), inside a C_1 p_1 box when C_1 > 2 A_1; and the account's (I4)
+(CA-I L148994-148997) records "|A_k| <= p_1(g_k) on supp chi'_k". So under (R-) the active cut of the regular gas is
+the p_1-scale cut, and the carry's two-frame thresholds must be read at delta'_k, not at delta_k as row 1268 2.1 reads
+them.
+
+Either way row 1299 4.7's sentence "provided q > p_0 (equivalently p_1 > p_0)" is wrong as an equivalence: in the
+account q > p_0 holds and p_1 > p_0 fails. Which reading is right needs CMP 116 (paper II, where Balaban's p_1(.) for
+the fluctuation box is presumably introduced), which is not on this machine (row 1264: Project Euclid bot check).

@@ -32,3 +32,48 @@ What the record fixes (statements about the record, not evidence; each is cited 
    coupling fields false), Proposition CA-FAIL (pinned-slice classes contain ordered members).
 4. In-flight at this pin: aq (row 1284: (U-dom), H2' connectedness), as (row 1293, done: (PE)), at (row 1294, just
    started), au (row 1295, queued), owner tiling rows 1285-1287, Codex rows 1288, 1290.
+
+## Step 1: how best to attack it (written 2026-11-20T16:35Z by date -u; judgement, ARGUED)
+
+**The crux.** Modulo the ultraviolet carry, the Jaffe-Witten gap reads one lattice input, (N-phys), equivalently a
+seed at one coupling in the window (a uniform cube gap plus the count (TR) of row 1259). Every proof of it must
+contain a selective step at order-one coupling: a step that fails for compact U(1), the free photon, products with a
+massless factor and frozen finite groups (parts/gap.md test table), and that is not a supremum over pins, tilts or
+coupling fields (Theorem D2, Lemma SHEET, Proposition CA-FAIL).
+
+**Screen (rule 0a).** Before reading the tables I re-derived the routes below; each has a match on file with its
+first failing step, so none is attacked here.
+
+| Route I re-derived | Match on file | First failing step there |
+|---|---|---|
+| Sharpness of the transition (OSSS, Aizenman-Barsky-Fernandez) | rows on FKG-NO, HF (row 1084) | no monotone (FKG) structure for SU(2) Wilson |
+| Bourgain-Gamburd / Lubotzky-Phillips-Sarnak spectral gap of Hecke operators on SU(2) | `gap-brainstorm-max.md` item 12, `gap-brainstorm2-max.md` item 13; commutator line rows 778-795 | the commutator contraction and density flattening hold for the binary icosahedral group too (row 789 binding test); transport test (TR-F) open |
+| Orbit-space curvature (Singer, Feynman), Bakry-Emery, Witten Laplacian | rows 1229, 1237 (Proposition UNI), 1251 (Zeng) | a coupling-uniform curvature makes the limit trivial; (TUN) is the gap |
+| Small-volume valley confinement (Simon's x^2 y^2, Luscher's zero modes) and tilings | rows 1273, 1279, 1285-1287 | tiling carries free energies, not gaps; L m = kappa g^(2/3) is small at weak coupling |
+| Migdal-Kadanoff decimation inequalities (Tomboulis 2007) | rows 799, 800, 1025, 1029 | one open inequality (TB)_n; gives the flux half only (Lemma FAC), off the path of (W) |
+| Semiclassical confinement on R^3 x S^1 (Unsal and others), Polyakov mechanism, Gopfert-Mack | rows 1237, `gap-afield-*`, `gap-global-reform-max.md` | different theory; adiabatic continuity not a theorem |
+| Spin-network / electric basis with 6j recoupling | rows 1076, 1081, `gap-descent-sign*.md` | recalled coefficient formula, GUIDE only; no sign at order one |
+| Third law (no residual entropy) from a uniform gap, i.e. "uniform gap implies (TR)" | row 1259 Step 2 point 4, row 1291 | OPEN with no counterexample; needs a light-state count that no blind tool gives |
+| 2D O(N) pinned-cell engine ported to 4D | rows 1007-1016, 1228, 1229 | fails in the class of all pins (B, B'), and at a trivially pinned plate (P5) |
+
+Verdict (ARGUED): no route to the seed off the record, in agreement with rows 998, 1219, 1278, 1284. A further
+screen is waste by row 998 9.5.
+
+**What I work instead.** The rule "only closures count" points to an unowned open input whose closure is decidable
+with sources on hand. Check 1288 (gpt-6.2-astra, `gap-uv-batch7-check-astra.md` Section 7) lists what the one-cutoff
+carry still needs: (1) the seed and count; (2) the Section 9.1 inputs, including the blind-site expansion (needs
+Balaban CMP 116, paywalled: stop by FINISH Rules); (3) a consistent physical normalization and its two-torus price
+(reading N2 of row 1275 FAILS there); (4) the across-frame comparison (rows 1278, 1280, 1284 hold its parts); (5)
+scope. Item 3 needs no CMP 116 and, by grep of FINISH.md and `library/open-core.md` for "physical normalization",
+"N2", "V9" and "normalisation identity", is held by no row at this pin (hits: rows 1275, 1288 and row 1291's RESULT,
+which names it as missing and does not take it).
+
+Moves: the one-cutoff carry's item 3 (check 1288 7.3). Success: (V9) holds on its strong reading, so the physical
+two-torus price is bounded by summable edge terms, and the carry's list loses item 3. Failure: the exact place where
+the account's Section 9.1 representatives cannot be the physical bare constants, which then is a correction to the
+carry route. It does not touch the seed; nobody should count it as progress on the crux.
+
+**Plan.** Step 2: read the account's normalization passages that check 1288 cites (CA-II L140873-140926,
+CA-III L11832-12058, L17396-17447, L18136-18302) and rows 1255, 1275 (Proposition V9). Step 3: prove the identity
+that attaches Section 9.1's arrays to the physical bare densities, or find where it fails. Step 4: labels, RESULT.
+If row 1294 or 1295 claims the same item first, I switch to the check of A's thermal ascent (Theorem F).

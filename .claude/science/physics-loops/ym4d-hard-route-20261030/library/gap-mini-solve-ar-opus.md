@@ -12,7 +12,7 @@ OPEN (not established).
 
 ## 0. Status of this file
 
-All steps done; RESULT at the end (2026-11-20T15:40Z by date -u). Checked by no one. No numeric run, no subagent.
+All steps done; RESULT at the end (2026-11-20T15:41Z by date -u). Checked by no one. No numeric run, no subagent.
 
 ## 1. Briefing digest (what this row starts from)
 
@@ -203,7 +203,7 @@ inputs are blocked here or are not session-sized: (E0)-(E6), (E+) and `9.1:prop-
 CMP 116, which is not on this machine (check 1288 records the publisher's subscription page); (V9) needs an identity
 attaching the account's chosen section 9.1 masses to the physical bare densities, which check 1288 shows the account
 does not supply (its counterexample to row 1275's reading N2; check 1288 section 7 item 3); (DET)'s open inputs are
-pr-lay W (an import of the hard-core lane, `pr-lay.md` section 2) and the normalisation (r4) (rows 993-994). So I took
+pr-lay W (an import of `pr-lay.md`, its section 2) and the normalisation (r4) (rows 993-994). So I took
 no carry input, to avoid a duplicate attack, and spent the row on the two seed-side questions of Section 3.0 and 3.1.
 
 ## 4. Status
@@ -224,13 +224,13 @@ the lane's notes: Ethan Sussman and Levent Alpoge's complete account (with Claud
 after Balaban (CMP 89-122); Bhattacharjee, Bhattacharya, Lockwood, Romanov, Sessford and Singha Roy (preprint
 202611.1282 and Hexagon 2610.00341v7) and Zeng (Hexagon 2611.00543, 2611.00492), as read in row 1218; the posted 2D
 O(N) proofs of OpenAI and of Ding, Huang and Yang (arXiv:2611.04908), as read in rows 1007-1012; Osterwalder and
-Seiler for reflection positivity of lattice gauge theories; Nielsen and Hughes for the one-loop paramagnetic split
+Seiler for reflection positivity of lattice gauge theories (recalled); Nielsen and Hughes for the one-loop paramagnetic split
 (as recalled in row 1244). No source was read directly in this row.
 
 **For the lead.** This row adds no closure on the critical path. Its use is negative and bounded: the count half
 cannot be made to decay by tiling bounds (Lemma CR), and the paramagnetic sign is not by itself the missing tool
 (Lemma PV), because the logarithm lives at all scales up to L and no 4D consumer reads a stiffness. Both are found
-again in substance. The recommendation of row 998 9.5 stands; on this evidence, further plain-brief seed rows by this
-model family are unlikely to add closures until a new engine or a new source appears.
+again in substance. The recommendation of row 998 9.5 stands. My judgement (ARGUED): on this evidence, further plain-brief seed rows
+by this model family are unlikely to add closures until a new engine or a new source appears.
 
-RESULT: Row 1291 (Claude Opus 5.5 max, Mac mini worker 3, 14:55Z-15:40Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed (uniform cube gap plus the count at one weak coupling, equivalently (N-phys)) stays OPEN with no route off the record (eight more names checked against the record, all on file), and no carry input was taken because rows 1284 and 1293 hold (U-dom), the H2' connectedness clause and (PE) while the rest need CMP 116 or the account's missing normalisation identity (check 1288); PROVED, elementary, found again in substance: Lemma CR (Delta(t, X) = t c(X) + g(t; X), and any tiling bound on the thermal pressure carries the Casimir term t c(Y)/abs(Y) >= (t/y) sigma_3(y), so the count cannot be made to decay by reflection-positive tiling) and Lemma PV (F'' = -<S''> - Var(S'), with Var(S') >= N Var(V_0) by reflection positivity, a rigorous anti-screening-sign upper bound on a stiffness that drops the logarithm from scales T to L and has no 4D consumer); OPEN: the seed, "uniform cube gap implies a seed" in the class, the carry inputs listed in check 1288, the mass gap. Output library/gap-mini-solve-ar-opus.md.
+RESULT: Row 1291 (Claude Opus 5.5 max, Mac mini worker 3, 14:55Z-15:41Z by date -u; author only, checked by no one; no numeric run, no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed (uniform cube gap plus the count at one weak coupling, equivalently (N-phys)) stays OPEN with no route off the record (eight more names checked against the record, all on file), and no carry input was taken because rows 1284 and 1293 hold (U-dom), the H2' connectedness clause and (PE) while the rest need CMP 116 or the account's missing normalisation identity (check 1288); PROVED, elementary, found again in substance: Lemma CR (Delta(t, X) = t c(X) + g(t; X) with c >= 0, and any tiling bound on the thermal pressure carries the Casimir term t c(Y)/abs(Y) >= (t/y) sigma_3(y); ARGUED from it: reflection-positive tiling cannot make the count decay) and Lemma PV (F'' = -<S''> - Var(S'), with Var(S') >= N Var(V_0) by reflection positivity, a rigorous anti-screening-sign upper bound on a stiffness that drops the logarithm from scales T to L and has no 4D consumer); OPEN: the seed, "uniform cube gap implies a seed" in the class, the carry inputs listed in check 1288, the mass gap. Output library/gap-mini-solve-ar-opus.md.

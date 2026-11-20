@@ -141,14 +141,17 @@ k_2 k_1 = the same with -u x v. So <k_1 k_2, k_2 k_1> = |k_1 k_2|^2 - 2 |u x v|^
 tr[k_1, k_2] = x^2 + y^2 + z^2 - xyz - 2 (x = tr k_1, y = tr k_2, z = tr k_1 k_2) is the same fact in the
 invariants of Lemma J. QED
 
-**Corollary CC1 (the dream at half-turns is the flux half, on file).** In reading (R3) on a 3-torus, take the
-links of direction i equal to i sigma_i (half-turns about three perpendicular axes; with U = 1 elsewhere this needs
-a cut, as in the toron of `gap-council-geom-fable.md` L28). Every plaquette of the (i, j) plane has holonomy
-[i sigma_i, i sigma_j] = -1. Up to a central field this is the flat connection of 't Hooft's twisted 3-torus with
-twist in all three planes, m = (1, 1, 1): the three holonomies pairwise anticommute, the flat connection is
-isolated, with no zero modes. This is Fact T (`gap-crux-restate.md` L53) in all three planes, and the twisted box of
-Route T (rows 678-687, `gap-ac-lat.md`; row 1003 item 14: "in a twisted box no zero modes and a gap of order 1/L").
-It reaches the flux half only, and the frozen group Q_8 = {+-1, +-i sigma_k} has it too (check of row 1003,
+**Corollary CC1 (the dream at half-turns is the flux half, on file).** In reading (R3) on a 3-torus, the constant
+field U = i sigma_i on every link of direction i has every (i, j) plaquette equal to [i sigma_i, i sigma_j] = -1: in
+the untwisted theory the constant three-axis half-turn field has the largest Wilson action there is. The flat form
+puts each half-turn on one Dirac sheet: U = i sigma_i on the i-links of one slice x_i = 0, U = 1 on all other links
+(the toron of `gap-council-geom-fable.md` L28, there for two directions). The cycle holonomies are i sigma_1,
+i sigma_2, i sigma_3, pairwise anticommuting; every plaquette is +1 except the (i, j) plaquettes at
+(x_i, x_j) = (0, 0), which are -1. With 't Hooft's twist in all three planes (those plaquettes enter the action
+multiplied by -1) the field is flat: it is the flat connection of the twisted 3-torus with m = (1, 1, 1), isolated,
+with no zero modes. This is Fact T (`gap-crux-restate.md` L53) in all three planes, and the twisted box of Route T
+(rows 678-687, `gap-ac-lat.md`; row 1003 item 14: "in a twisted box no zero modes and a gap of order 1/L"). It
+reaches the flux half only, and the frozen group Q_8 = {+-1, +-i sigma_k} has it too (check of row 1003,
 `gap-crux-exercise4-check-opus.md` L251-305), so it is not selective for the flux half either.
 
 **Corollary CC2 (every other non-commuting junction is curvature).** If the relative rotations at a junction do
@@ -345,7 +348,7 @@ infinity. The form domain of -(1/2) Delta + W embeds compactly in L^2 (Rellich: 
 bounded in H^1 and uniformly small outside large balls). By min-max the n-th eigenvalue of K is at least half the
 n-th eigenvalue of -(1/2) Delta + W, which tends to infinity; so K has compact resolvent.
 (c) V is a polynomial, locally bounded, so exp(-tK) is positivity improving (Feynman-Kac); by the Perron-Frobenius
-theorem for such semigroups (Reed-Simon IV, XIII.44) E_0 is simple with a positive eigenvector. K commutes with the
+theorem for such semigroups (Reed and Simon, volume IV, chapter XIII; RECALLED) E_0 is simple with a positive eigenvector. K commutes with the
 simultaneous rotation of the y_i (Delta and V are invariant), so the unique ground state is invariant. On the
 invariant subspace the next eigenvalue is at least E_1 > E_0.
 (d) The dilation c = g^(2/3) y maps g^2 (-(1/2) Delta_c) to g^(2/3) (-(1/2) Delta_y) and (1/(2g^2)) V(c) to
@@ -367,3 +370,180 @@ L tends to 0. (N-phys) needs m L of order 10^4 at a fixed large physical size (`
 Lemma S lives where g(L) is small, that is below the band; it does not cross it. This is the lane's standing
 remark "z tends to 0 at small L" (row 998 I33), now with the mechanism proved in the reduced model. The lattice
 reduction (Born-Oppenheimer control of the non-constant modes) is not done here and stays RECALLED.
+
+### Lemma S_n (any number n >= 2 of directions; the owner's "2 or 4, not just 3"). PROVED.
+
+For y_1, ..., y_n in R^3 and K_n = -(1/2) Delta + (1/2) sum over i < j of |y_i x y_j|^2 on L^2(R^(3n)):
+K_n >= sqrt((n - 1)/2) (|y_1| + ... + |y_n|), so (b)-(d) of Lemma S hold for every n >= 2, with the same exponent
+g^(2/3). For n = 1 the potential is zero and there is no confinement. *Proof.* Split K_n into the n(n - 1) ordered
+pairs, K_ij = (1/(n-1)) (-(1/2) Delta_(y_j)) + (1/4) |y_i x y_j|^2. The operator -(a/2) Delta + (b/2) y^T M y with
+a = 1/(n-1), b = 1/2 has two oscillator directions of frequency sqrt(ab) |y_i| and one free direction, so it is at
+least sqrt(ab) |y_i| = |y_i| / sqrt(2(n-1)). Each i is the first index of n - 1 pairs. QED (n = 3 gives Lemma S (a).)
+
+So the directional statement is exact at one block: two non-commuting directions are enough to confine the
+zero modes, one is not. The number of pieces only changes the constant.
+
+## Step 6. Tiling: can combinations of blocks carry the one-block mechanism to the size (N-phys) needs?
+
+**Target of the step (TILE).** Tile a periodic box of side L = N l (lattice units n = L/a) by N^3 spatial blocks
+of side l. (N-phys) at L would follow if the neutral low-energy states of the big box were controlled block by
+block by a lift of the Lemma S type, with a constant that does not depend on N or on the cutoff. I attack (TILE) in
+four ways. Each stops; the stopping points agree.
+
+### Way A: a block form of Simon's inequality. KILLED (Lemma GA, PROVED).
+
+Lemma S rests on K >= sum_i |y_i|: the transverse frequency grows with the amplitude of the constant mode. In a
+block that is not periodic the constant mode is not gauge invariant.
+
+**Lemma GA.** Let B be a block (a contractible set of sites), n an axis and lambda any real function on the sites
+of B. The abelian field U_l = exp((lambda(t(l)) - lambda(s(l))) n) on the links of B has amplitude as large as one
+likes, and is a gauge transformation of U = 1 (h_x = exp(-lambda(x) n)). So every gauge-invariant quantity on B
+(every Wilson loop, the action, the spectrum of the covariant fluctuation operator) takes its value at U = 1.
+Hence no inequality "transverse frequency >= local amplitude" holds on a block. *Proof.* (1^h)_l =
+h_(s(l)) h_(t(l))^-1 = exp((lambda(t(l)) - lambda(s(l))) n). QED
+
+On a contractible block the gauge-invariant content of an abelian field is its field strength; only the holonomies
+of non-contractible loops of the whole torus play the role of the y_i. So a block lift must act on field strength.
+
+### Way B: lift through the field strength. FAILS at weak coupling (RECALLED, physics; sign on file).
+
+The block version of Lemma S's zero-point energy is the one-loop energy of the transverse (charged) modes in a
+constant abelian field strength B along n. Savvidy (1977) computed it: at small B it is negative relative to B = 0
+(the logarithm has the asymptotic-freedom sign), and Nielsen and Olesen (1978) found the charged spin-aligned mode
+of the lowest Landau level unstable (energy squared -gB + k^2). So the transverse zero-point energy does not lift
+the abelian valley in the field-strength direction; it lowers it (colour paramagnetism: Nielsen 1981, Hughes 1981;
+on file in `gap-council-conf-fable.md` L159-160 and row 1244 `gap-mini-solve-aa-opus.md` L74, which cites row 1011 L496 and row 1195 (HM)). The sign that makes
+Lemma S work (an orbital zero-point energy of holonomy-massive modes) is overturned by the spin term once the
+background is curvature. Not attempted as a proof: it is a one-loop statement and a lower bound needs the opposite
+sign.
+
+### Way C: the tiling as a block renormalization step. REDUCES to the band (ARGUED, on file).
+
+The blocks' holonomies are coarse link variables, and "neighbouring blocks turning about different axes" is the
+coarse plaquette (Lemma CE at the coarse scale). The law of the coarse links is, to leading order, Wilson's at the
+block coupling g(l) (Balaban's block-spin construction; Sussman and Alpoge's account carries it across all
+ultraviolet scales). So (TILE) at block size l is the original problem for the coarse theory at coupling g(l). It
+gains only if g(l) is past the band, which is the lane's wall (W) and (N-phys) (rows 998, 1161, 1179), and the
+standing finding that the frontier statement (S-V) is again an RG step through the band (row 1249).
+
+### Way D: domain models (random axes per block). The neutral directions are reached only at junctions.
+
+The physics models built literally from "neighbouring pieces turn about different axes" are the domain models
+(Step 2, literature identification). One structural fact explains where their neutral mass comes from.
+
+**Lemma DOM (one axis is U(1) in its parallel directions). PROVED.** Let the background be abelian along one axis
+n on a region: U_l = exp(alpha_l n). Write a fluctuation as U_l = exp(alpha_l n) exp(eps_l n + eps_l^perp),
+eps_l^perp orthogonal to n. Then the second-order expansion of the Wilson action is block diagonal: its parallel
+block is the compact-U(1) Hessian (beta/2) sum_p cos((d alpha)_p) ((d eps)_p)^2, and its transverse block carries
+all the non-abelian structure; there are no mixed terms. *Proof.* With eps^perp = 0 all factors commute and
+(1/2) tr U_p = cos((d alpha)_p + (d eps)_p), whose second-order term is the stated one. A mixed term is a sum of
+(1/2) tr(B_0 (a n) B_1 X B_2) with B_i in the one-parameter group of n and X orthogonal to n. Since n commutes with
+the B_i and B X B^-1 is again orthogonal to n, it equals (a/2) tr(n X' e^(psi n)) with X' orthogonal to n. As
+quaternions, n X' = n x X' is pure and orthogonal to n, so tr(n X' cos psi) = 0 and tr(n X' n sin psi) = 0 (the
+real part of (n x X') n is -<n x X', n> = 0). The first-order term in eps^perp vanishes the same way. QED
+
+The continuum form is the same two lines: [n, a_par n] = 0, so the axis-parallel fluctuation sees only partial
+derivatives. **Reading:** inside one domain the commutators reach only the charged (transverse) directions; the
+axis-parallel neutral directions are exactly those of U(1). They can be reached only where the axis changes, at
+junctions between domains, and the change costs the scale-free energy of Lemma CE, about beta delta^2 per plane.
+In the domain models of Kalloniatis and Nedelko the neutral mass comes from a boundary condition imposed at the
+domain wall, and the domain size is fitted, not derived (RECALLED).
+
+### The role inversion (ARGUED; the main finding of Step 6)
+
+The commutator energy plays two opposite roles. (i) Inside one periodic block it is a confining potential for the
+zero modes, and quantum fluctuation transverse to every axis lifts the valley (Lemma S, Lemma S_n): a neutral gap
+kappa g(l)^(2/3)/l. (ii) Between blocks it is a junction cost that aligns axes: with beta large, an axis change of
+angle delta costs at least (2/pi^2) beta delta^2 per slice orientation (Lemma CE), so at weak block coupling
+low-action fields keep one axis over long distances, and there (Lemma DOM) the axis-parallel modes are U(1)
+photons. A neutral gap at large size needs axis changes to be frequent, that is fluctuation to beat the junction
+cost: the coarse theory must be disordered, which is the strong-coupling side of the band. The owner's picture is
+the right picture of the confined vacuum (it is the domain picture), but its directional ingredient, the
+commutator, is by itself a force for order at weak coupling and a force for a gap only inside a periodic block.
+
+**First failing step of the tiling route (OPEN, not new).** (TILE-dis): at some block size l along the trajectory,
+the axes of neighbouring blocks are disordered with a margin uniform in the cutoff. This is a disorder statement for
+the coarse theory at the band scale. It is the lane's wall in another form ((W), (N-phys); rows 998, 1161, 1179,
+1249). Attacked four ways above: A killed by Lemma GA; B has the wrong sign (paramagnetism); C reduces to the
+band; D puts the domain size in by hand.
+
+## Step 7. A fact test for directional mechanisms, the GUIDE run, and the verdict
+
+### Fact test GG (commutators present, axes ordered, neutral half fails)
+
+Lattice SU(2) with a unit adjoint field phi_x in S^2 (in su(2)) and weight beta sum_p (1/2) tr U_p +
+kappa sum_l <phi_(s(l)), Ad(U_l) phi_(t(l))>. In unitary gauge phi_x = n. At kappa = infinity the second term
+forces Ad(U_l) n = n, that is U_l = exp(alpha_l n), and the model is exactly compact U(1) with action
+beta sum_p (1 - cos (d alpha)_p) (PROVED, two lines: the stabilizer of n under Ad is the one-parameter group of n).
+Compact U(1) has a Coulomb phase with a massless photon at large beta (Guth 1980; Frohlich and Spencer 1982;
+RECALLED, the lane's standing U(1) test). At large finite kappa the model keeps the whole SU(2) group, every
+commutator of Steps 2-5 and the transverse lift, and is believed to keep the massless photon (the Georgi-Glashow
+Coulomb phase; on file as BELIEF in row 1017, `gap-compact-rigidity-max.md` L94). By Lemma DOM the photon is the
+axis-parallel direction of the ordered axis. **Use:** a proof of the neutral half that uses the SU(2) commutators but
+whose steps also hold when an adjoint field orders the axes is wrong. The directional idea must enter through the
+absence of axis order, not through the commutator alone. This sharpens Lemma PT of row 998 (a product with a free
+factor) to a free subgroup selected by order.
+
+### GUIDE run (not a proof step)
+
+Run at 12:49Z-12:50Z under `python3 scripts/lab_ops.py numeric-lock` (acquired and released; free memory 50
+percent by `memory_pressure`; one process, BLAS threads 1, peak RSS 33 MB; script in a scratch folder outside the
+repository). Results: Lemma CC formula, maximum error 9.2e-16 over 20000 random pairs; Lemma CE, smallest ratio of
+action to bound 1.11 over 3200 random fields on periodic planes 1x1, 2x2, 2x3, 4x4 at four field scales (the bound
+holds in every sample); Lemma DOM, on a 2x2 periodic plane at a random abelian background, mixed
+parallel-transverse Hessian entries and first-order transverse terms 0.0 by central differences. These agree with
+the hand proofs and prove nothing.
+
+### Verdict
+
+**The owner's question, answered.** Do the commutators of multi-direction blocks reach the neutral half rather
+than only the flux half?
+
+1. Read literally (pieces of the lattice, each turned about its own axis), no: the axes are pure gauge (Lemma DR),
+   and after the gauge projection rotations at distinct sites commute for all axes (Proposition PT). PROVED.
+2. At half-turns about perpendicular axes, the commutator is central (Lemma CC): the three-axis dream at
+   half-turns is 't Hooft's twisted box m = (1, 1, 1), Fact T in all three planes, the flux half, shared with Q_8
+   (Corollary CC1). On file as Fact T and Route T.
+3. Every other non-commuting junction is curvature (Corollary CC2). Its energy is the quartic, scale-free
+   commutator energy, a lower bound for every lattice field (Lemma CE). Kinematically it acts inside the neutral
+   sector only through intertwiners at junction sites, which U(1) lacks; one axis on two groupings already fails to
+   commute there (Proposition PT2). PROVED.
+4. Dynamically, yes in one periodic block: two or more non-commuting directions confine the zero modes, and the
+   gauge-invariant constant-mode spectrum is discrete with gap kappa g^(2/3)/L; one direction does not (Lemmas S,
+   S_n, PROVED in the reduced model; the lattice reduction is Luscher's, RECALLED). This is the exact sense in
+   which "the commutators, which have no U(1) analogue, reach the neutral half". It gives z = kappa g(L)^(2/3),
+   which tends to 0 at small L, so it does not reach (N-phys).
+5. In a tiling, the same commutator energy is a junction cost that aligns axes at weak coupling, and in an aligned
+   region the axis-parallel modes are exactly U(1) at quadratic order (Lemma DOM, PROVED; Lemma GA kills the block
+   form of Simon's inequality, PROVED). A neutral gap at large size needs disorder of block axes at the band scale,
+   (TILE-dis), which is the wall (W)/(N-phys) in another form. Four ways stop there (Step 6). Fact test GG says
+   any directional proof must use the absence of axis order.
+
+**Mass gap: NOT proved. Nothing disproved.** (N-phys), (W), the continuum datum and (TILE-dis) stay OPEN. No
+statement of the T0 chain or of the gap chain changes status.
+
+**New against the record (greps in Step 1 and in Steps 5-7):** Lemmas DR, J (several-axis form of row 1013's corner
+graph), CC with Corollaries CC1-CC2, PT, PT1, PT2, CE, SS, S, S_n, GA, DOM, the role inversion and fact test GG.
+All are elementary; their value is to close the owner's idea as a route with the reason, and to place the
+directional mechanism exactly: inside one periodic block it works (Lemma S), across blocks it needs disorder.
+Not new: Fact T, Route T, the small-volume g^(2/3) value (row 998 I33, row 1128 virial ratio), the paramagnetic
+sign (row 1244 table), the RG reading (row 1249), Lemma DOM's consequence at Gaussian order for K_3 (row 1241:
+"at Gaussian order K_3 is massless", which Lemma DOM explains in general: commutator effects around a one-axis
+background start at third order).
+
+**Suggested check (one reader of the other provider, line by line):** Lemmas J, DR, CC, PT, PT2 (b), CE, S (a)-(c),
+S_n, GA, DOM; the GG reduction at kappa = infinity. Moves: (N-phys) only as a closed route; no consumer reads
+these lemmas yet.
+
+**Credits.** B. Simon (1983) for the method of Lemma S; M. Luscher (1983), P. van Baal and J. Koller for the
+small-volume effective Hamiltonian; G. 't Hooft for twists and flux; G. K. Savvidy (1977), N. K. Nielsen and
+P. Olesen (1978), J. Ambjorn and P. Olesen (1980), N. K. Nielsen (1981), R. J. Hughes (1981), H. Leutwyler
+(1980-81), A. C. Kalloniatis and S. N. Nedelko (from 2001) for the physics of chromomagnetic domains (all
+RECALLED, none re-read here); A. Guth (1980), J. Frohlich and T. Spencer (1982) for the U(1) Coulomb phase
+(RECALLED); J. Kogut and L. Susskind for the Hamiltonian lattice form; R. Penrose and J. Baez for spin networks
+(RECALLED); T. Balaban and Ethan Sussman and Levent Alpoge (with Claude and Codex as authors of their text) for the
+block renormalization that Way C refers to, cited and not used in any proof here; the lane's rows 998, 1003, 1013,
+1016, 1017, 1046, 1128, 1132, 1161, 1179, 1188, 1194, 1200, 1201, 1228, 1241, 1244, 1249 as cited. The owner's
+three-axis idea is the starting point of every step.
+
+RESULT: Row 1273 (Claude Opus 5.5 max, Mac mini worker 2, 12:27Z-12:52Z; author only, checked by no one). Mass gap NOT proved, nothing disproved; (N-phys), (W), the continuum datum stay OPEN. The owner's multi-direction blocks, taken literally: PROVED by hand that the axes of turned sub-blocks are pure gauge (Lemma DR, via junction invariants Lemma J) and that gauge-projected rotations at distinct sites commute for all axes (PT); that a junction commutator is central only for perpendicular half-turns (Lemma CC), which gives 't Hooft's m = (1,1,1) twisted box, the flux half, on file as Fact T and Route T; that every other junction is curvature with a scale-free quartic cost bounding the Wilson action of every field (Lemma CE) and acting on the neutral sector only through intertwiners at junctions, which U(1) lacks (PT2); and, in the reduced zero-mode model, that two or more non-commuting directions give a discrete spectrum and a neutral gap kappa g^(2/3)/L while one direction gives none (Simon's method, Lemmas S and S_n). So the commutators do reach the neutral half, but only inside one periodic block, with z -> 0 at small L. In a tiling the same commutator energy aligns axes at weak coupling and one-axis regions are U(1) in their parallel modes (Lemma DOM; Lemma GA kills a block form of Simon's bound); the route stops at (TILE-dis), disorder of block axes at the band scale, which is the wall in another form (four ways tried). New fact test GG: an adjoint field that orders the axes keeps every commutator and the massless photon. Output library/gap-owner-threeaxis-opus.md.

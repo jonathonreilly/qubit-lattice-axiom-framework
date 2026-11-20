@@ -5,6 +5,7 @@ lease_until: 2026-11-20T22:22Z
 
 Provenance: Claude Opus 5.5 (max reasoning), Mac mini Claude worker 1, branch claude/ym4d-hard-route pinned at
 df7bac204. Started 2026-11-20T10:22Z (date -u). No subagents. Labels: PROVED, ARGUED, GUIDE, OPEN.
+Status: complete at 11:11Z (date -u); RESULT line at the end. Author only; checked by no one.
 
 
 ## 1. How to attack it (judgement; written 2026-11-20T10:55Z by date -u)
@@ -301,6 +302,8 @@ theta = 0 and centre flux sheets are cheap in the confined phase), so I expect n
 | 4.2 (SL), not (W), is the natural weak-coupling form | GUIDE | heuristic count |
 | 4.3 quantifiers compatible with (ONE-K) | ARGUED | form of eps_K, OPEN |
 | 4.4 Ising-cylinder run | GUIDE | none |
+| Proposition RR (6): (i) doubling and blow-up defects bounded by eta_*; (ii) eta_* <= 6 pi beta abs(B) tau_*; (iii) tau_*(2t) <= e^(2 eta_*(t)) - 1 | PROVED | definitions only |
+| 6: (6.1) at one physical size for all large cutoffs gives (SEED-L) at all cutoffs without (UNIV-K) | PROVED as implication; adds no weaker condition | Lemma FL for (SEED-FP) |
 | 4.5 metastability caution | GUIDE | recalled physics |
 
 **5.2 Comparison with the published one-scale hypotheses (row 1218's reading; I did not re-read the sources).**
@@ -335,3 +338,45 @@ edge matching, the account's Statement 3.4); and the one-coupling datum, now in 
 (SL) (or (W)) at the couplings of one cutoff, at slab thickness N of a few tens of correlation lengths, with total
 variation below about 10^(-3)/(beta L^3 N^3) uniformly over boundary slices. No engine for that one-coupling estimate is
 known (Section 1); this file only shows that it is enough, with no other coupling involved.
+
+## 6. The cross-ratio form (RR) of the one-coupling datum (written 2026-11-20T11:11Z by date -u)
+
+**Definition.** For t >= 1 and a box B put
+    eta_*(t, B; beta) = sup over slice values D, D', E, E' of abs( log K_t(D,E) - log K_t(D,E') - log K_t(D',E) + log K_t(D',E') ).
+(RR) at (t, B, h) means eta_*(t, B; beta) <= h: the slab kernel of thickness t is within a factor e^(+-h) of a product
+u(D) v(E), uniformly in both boundary slices.
+
+**Proposition RR (PROVED; Claude Opus 5.5, checked by no one).** For every beta > 0, t >= 1, L >= 2 and boxes B:
+- (i) Phi_B(t) <= eta_*(t, B); L F(t, B) - F(Lt, B) <= 2L eta_*(t, B); and for the symmetric blow-up of 3.3,
+  Phi_L(N) <= 2 (L^4 eta_*(N, B_1) + L^3 eta_*(N, B_2) + L^2 eta_*(N, B_3) + L eta_*(N, B_4)), B_mu as in 4.1.
+- (ii) eta_*(a, B) <= 6 pi beta abs(B) tau_*(a, B) for a >= 3 (Lemma WS').
+- (iii) tau_*(2t, B) <= exp(2 eta_*(t, B)) - 1.
+Proof. (i) log Q(C, C') of Step 1 is the four-point expression with (D, E, D', E') = (C, C, C', C'), so Phi_B(t) =
+log E[Q] <= eta_*. In 3.3 (a), abs(eta(D, E)) <= eta_* for the reference form, so abs(log Q_L) <= 2L eta_*; the
+four-direction sum of 3.3 (b) weights the mu-th bracket by L^(4-mu), giving 2 L^(5-mu) eta_*(N, B_mu). (ii) is Lemma WS'.
+(iii) In the slab of thickness 2t with middle slice L at time t, the law of L given (D, E) has density
+p_D(L) proportional to K_t(D, L) K_t(L, E). Fix L_*. Then K_t(D', L)/K_t(D, L) = [K_t(D', L_*)/K_t(D, L_*)] e^(chi(L)) with
+chi a four-point expression, abs(chi) <= eta_*(t, B). So p_D'(L) = c e^(chi(L)) p_D(L) with c = 1/E_(p_D)[e^chi] in
+[e^(-eta_*), e^(eta_*)], hence p_D'/p_D lies in [e^(-2 eta_*), e^(2 eta_*)] and the total variation, the integral of
+p_D (p_D'/p_D - 1)_+, is at most e^(2 eta_*) - 1. The bound is uniform in E. QED
+
+**What it says.** (SL) and (RR) are the same condition up to doubling the thickness and the factor 6 pi beta abs(B):
+uniform slab mixing in total variation is uniform multiplicative closeness of the slab kernel to rank one. The
+one-cutoff datum (SEED-L), Phi_L(N) <= 0.131 L, follows from (RR) with
+    L^3 eta_*(N, B_1) + L^2 eta_*(N, B_2) + L eta_*(N, B_3) + eta_*(N, B_4) <= 0.065,                       (6.1)
+a requirement with no volume factor; the volume enters only through the size of eta_* itself. The seed itself is the
+average form: Phi_B(t) = log E[Q] averages exp(four-point expression) over the periodic law, while eta_* takes the
+supremum. So (RR) is the uniform version of the seed, and Lemma WS says (W) gives it at one coupling.
+
+**A direct sufficient condition (PROVED as an implication; ARGUED as to the chain).** If for one physical size ell and
+all large cutoffs j the bound (6.1) holds at N_j = ell/a_j, then (SEED-L) holds at every large cutoff with no use of
+(UNIV-K), and Lemma FL gives (SEED-FP) at the size 6^(k_1) L ell. This adds no weaker sufficient condition: (SEED-L) at all
+cutoffs was already sufficient and (6.1) implies it. Its only merit is its form, a uniform multiplicative bound on one
+slab kernel, which is the kind of output a renormalisation-group bound on effective actions gives. Whether eta_* stays
+bounded at fixed physical thickness as a_j -> 0 is the question; the total-variation route of Lemma WS bounds it by
+6 pi beta abs(B) tau_*, extensive in lattice units, which is why Lemma WS alone needs the one-cutoff carry (3.5). The
+expected size (GUIDE): rough boundary slices excite lattice-scale modes that decay within a few slices, and the modes
+that cross a slab of physical thickness ell carry a factor e^(-m ell) per physical cell, so eta_* should be of order
+(ell/xi)^3 e^(-m ell) plus terms exponentially small in N. No part of this expectation is proved.
+
+RESULT: Row 1258 (Claude Opus 5.5 max, Mac mini worker 1, 10:22Z-11:11Z by date -u; author only, checked by no one; one GUIDE run of under one second under the numeric lock; no subagent): the Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved, and no engine for the band is offered; worked item: the missing link from the lane's one-scale boundary-uniform form C3 to its seed. PROVED GIVEN Theorem W (A) of row 691 (check 693): Lemma WS, the Dobrushin-Shlosman hypothesis (W) at (R, delta) at ONE coupling beta bounds the periodic doubling defect, log(1 + S(a; M^3)) <= Phi_B(a) <= 6 pi beta (8R+6) M^6 e^(-eps a/2)/(1 - sqrt(delta)), so the seed (Theorem SH, r = 2) holds at every even n >= (R+2) max(200, 100 + 5.78 ln beta + 40.4 ln(R+2)) for delta = 1/4, and the one-cutoff datum (SEED-L) of (ONE-K), L^4 F(N^4) - F((LN)^4) <= 0.131 L, holds for N of order (R+2)(161 + 40.4 ln(R+2)) at L = 25, using no other coupling (row R-b and the (PATH) form integrate over all couplings below beta). PROVED with no hypothesis: Lemma WS' and Proposition RR, the doubling and blow-up defects are bounded by the uniform four-point cross-ratio eta_* of the slab transfer kernel, eta_* <= 6 pi beta abs(B) tau_* and tau_*(2t) <= e^(2 eta_*(t)) - 1, where tau_* is the uniform total-variation dependence of a slab's middle slice on one boundary slice; so (SL) or (RR) at one cutoff's couplings, then (ONE-K) with (UNIV-K), Lemma FL (check 848) and Theorem E-N, give the gap clause. ARGUED: this does not give (N-phys) directly (a logarithmic loss in physical units), and (SL), not (W), is the natural weak-coupling form (GUIDE heuristic). OPEN: the one-coupling estimate (SL)/(RR) at weak coupling at a slab thickness of a few tens of correlation lengths (the band), (UNIV-K), the account's premises, the mass gap. Output library/gap-mini-solve-ag-opus.md.

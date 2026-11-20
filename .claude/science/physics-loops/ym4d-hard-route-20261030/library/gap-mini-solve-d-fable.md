@@ -32,15 +32,28 @@ GUIDE (numeric or heuristic evidence, never a proof step), OPEN.
   wording corrections (three classification claims softened, the setting of 3.6 restricted to the torus, two anchors).
   The numeric sanity run still waits for memory.
 - 00:48Z. Repo search for the one new statement done (Section 0).
+- 00:53Z. The numeric sanity run ran at 00:51:54Z, when memory first read 50 percent free (3.7): no violation. Section 0
+  corrected after a second grep (rows 1016, 1031, 1056, 1068, 846 also name the corner terms; none holds the count).
+  Finished.
+- 00:54Z. A last grep, file by file, found the d = 4 spectrum of the corner Laplacian in the check of row 1013 by Opus
+  (row 1015, `gap-invent-selective-check.md` L157-161). Credited in Section 0, in step 1 of the proof, in Section 4 and
+  in the RESULT line. The count (PCc2) and Corollary PC-c2 are not in that file.
 
 ## 0. Repo search (for Lemma PC-c and Corollary PC-c2, the only statements this row calls new)
 
 - This folder: `grep` for "corner graph", "link-end", "K_(2,2,2,2)", "corner twist", "family inequality" in
-  `library/gap-*.md`, `library/prior/`, `parts/gap.md`, `library/open-core.md` and the `FINISH.md` rows. Hits: rows 1013
-  (`gap-invent-selective-max.md`, the corner graph, Lemma WN, C1), 1015 (its check, item 13), 1020, 1051 with its two
-  checks (`gap-direction3-max.md` L265, L456: a count on pin space, not on corners; `gap-direction3-check-astra.md` L433:
-  "C1 in corner form ... retain their prior open standing"). `library/open-core.md` has no hit. No file holds the corner
-  count or a corner form of the family inequality.
+  `library/gap-*.md`, `library/prior/`, `parts/gap.md`, `library/open-core.md` and the `FINISH.md` rows. Hits, all read at
+  the lines that hold the terms: row 1013 (`gap-invent-selective-max.md`: the corner graph, Lemma WN, C1) with its
+  checks (`gap-invent-selective-check-astra.md` item 13; `gap-invent-selective-check.md` L157-161, row 1015, which holds
+  the Laplacian spectrum 0, 6 (four times), 8 (three times) of K_(2,2,2,2), so step 1 of Lemma PC-c is on file for
+  d = 4); row 1016
+  (`gap-global-reform-max.md` L539-545: for conjugation fields, equal at the two ends of a link, the cost form is a
+  Dirichlet form on the lattice of links, not scale invariant in d = 4) with its checks (row 1020 and the astra
+  check); row 1051 with its two checks (`gap-direction3-max.md` L265, L456: a count on pin space, not on corners;
+  `gap-direction3-check-astra.md` L433: "C1 in corner form ... retain their prior open standing"; row 1056); row 1068
+  (`gap-ir-first-astra.md` L544, Lemma WN restated); rows 846 and 1031 (the graph K_(2,2,2,2) in another role);
+  `parts/gap.md`. `library/open-core.md` has no hit. No file holds the corner count or a corner form of the family
+  inequality.
 - Other branches: a bare blob-less fetch of `main` and of PR #10114 into a scratch folder under /tmp, then `git grep`
   for the same terms on the 72 ym4d and mass-gap `.md` files of `main` and on the 5 files `MASS_GAP*.md`, `RTARGET.md`,
   `PROOF.md` of the `ym4d-proof` folder of PR #10114. No hit. The other PR branches were not searched.
@@ -206,7 +219,9 @@ Proof. Work on the space V of complex link-end fields with (f, g) = sum_a f(a) g
    and M the matching that exchanges the two link-ends of each axis, the adjacency matrix is J - 1 - M and the degree is
    2d - 2, so Lap = (2d - 1) + M - J. Constants: eigenvalue 0. Fields with M v = -v (then J v = 0): eigenvalue 2d - 2,
    multiplicity d. Fields with M v = v and J v = 0: eigenvalue 2d, multiplicity d - 1. That is all 2d dimensions. Let P
-   be the projection on the fields with sum zero at every site. On the range of P, Lap >= 2d - 2.
+   be the projection on the fields with sum zero at every site. On the range of P, Lap >= 2d - 2. (For d = 4 this
+   spectrum, 0, 6 four times, 8 three times, is in the check of row 1013 by Claude Opus 5.5, row 1015,
+   `gap-invent-selective-check.md` L157-161. The step here is the same computation for every d.)
 2. The pairing. Let rho = sum_i f_i f_i^*, a non-negative matrix with entries rho_ab = sum_i f_i(a) f_i(b)-bar. Define
    the matrix H by H_ba = theta(a -> b)/(2i) and H_ab = -theta(a -> b)/(2i) for each corner a -> b, and 0 otherwise. H is
    Hermitian. tr(rho H) = sum over corners of (theta/(2i)) (rho_ab - rho_ba) = sum over corners of theta Im(rho_ab) =
@@ -252,6 +267,8 @@ Proof. Work on the space V of complex link-end fields with (f, g) = sum_a f(a) g
   check of row 1013 stands for those). It concerns the flux half only: the corner twists of C1 and C2 aim at the
   centre twist, and (N-phys) is not a twist response. The constant in (PCc2) depends on the normalization of S;
   the form of (PCc2) does not. At a site of a free boundary the corner graph is smaller and the constant changes.
+  The lemma holds for every family in the full space of link-end fields, so also for families in a subspace, such
+  as the conjugation fields of row 1016 (`gap-global-reform-max.md` L539-545), whose own cost form couples the sites.
 - **Verdict on C1 as a band crossing.** FAILS in the form in which it was proposed, by Lemma PC-c: the cost form has
   a spectral gap 2d - 2 above the gauge directions, so every family pays for its bracket at the site where it makes it.
   In the spin model the same graph is the lattice and the gap is 0; that is where the logarithm comes from.
@@ -333,17 +350,33 @@ identity" (item 13 of the check of row 1013).
 
 ### 3.7 Numeric sanity run (GUIDE; not a proof step)
 
-SANITY-RUN-STATUS: pending at 00:45Z. The script (`solve-d-fable-1193/check_pcc.py` in a scratch folder under /tmp, plain
-numpy) computes the spectrum of the corner Laplacian and the corner resistance for d = 2, 3, 4, 5 and tests (PCc2) on
-20,000 random families per dimension. It waits for 50 percent free memory under the numeric lock; memory was 39 to
-48 percent free from 00:31Z on. The proofs of Section 3 do not use it.
+Run once, 2026-11-20T00:51:54Z to 00:51:57Z (`date -u` in the log), under the numeric lock (holder
+`solve-d-fable-1193`, status "acquired" confirmed in the log, released after the run), plain numpy, one thread. Memory
+free read 35 to 49 percent from 00:31Z to 00:51Z, so the job waited; it started at the first reading of 50 percent.
+Script and log are in a scratch folder under /tmp (`solve-d-fable-1193/check_pcc.py`, `check_pcc.log`). The corner
+orientations are drawn at random; the lemma holds for every orientation. A run can only refute a formula. A search
+that finds no violation proves nothing.
+
+| d | link-ends, corners | spectrum of the corner Laplacian | resistance of a corner | (2d - 1)/(2 d (d - 1)) | smallest ||T||_HS^2 / (lambda^2 abs(theta)^2) in 20,000 random families | bound 8 (2d - 2)^2 |
+|---|---|---|---|---|---|---|
+| 2 | 4, 4 | 0, 2 (twice), 4 | 0.750000 | 3/4 | 65.23 | 32 |
+| 3 | 6, 12 | 0, 4 (3 times), 6 (twice) | 0.416667 | 5/12 | 267.66 | 128 |
+| 4 | 8, 24 | 0, 6 (4 times), 8 (3 times) | 0.291667 | 7/24 | 634.44 | 288 |
+| 5 | 10, 40 | 0, 8 (5 times), 10 (4 times) | 0.225000 | 9/40 | 1095.02 | 512 |
+
+What the run was to test, fixed before it ran (the script prints each quantity next to its predicted value): the
+spectrum is 0, 2d - 2 (d times), 2d (d - 1 times); the resistance equals (n - 1)/m, n link-ends and m corners; no
+family falls below the bound. All three hold. The smallest ratios sit a
+little above twice the bound, as the hand check 3.4 suggests (64 against 32 in d = 2). The true constant is not
+determined here.
 
 ## 4. State at the end of this row
 
 **PROVED here (by hand; checked by no one).**
 - Lemma PC-c (3.2). For every family of two-axis link-end translations whose bracket is lambda times a co-closed
   one-axis corner twist theta, modulo exact twists, the cost ||T||_HS^2 is at least 8 (2d - 2)^2 lambda^2 |theta|^2.
-  With it: the corner Laplacian of a site has the eigenvalues 0, 2d - 2 (d times), 2d (d - 1 times); a corner has
+  With it: the corner Laplacian of a site has the eigenvalues 0, 2d - 2 (d times), 2d (d - 1 times) (on file for
+  d = 4, row 1015); a corner has
   effective resistance (2d - 1)/(2 d (d - 1)); the corner form of the family inequality returns at best a site-local
   bound, weaker than the trivial one at every coupling if its constant is the K_rot of the 2D proposition, and of
   the order of the area (at best 51 K_rot t^2 A in d = 4) on the non-central sheet path of C2.
@@ -357,11 +390,12 @@ numpy) computes the spectrum of the corner Laplacian and the corner resistance f
 two dimensions the rotation-invariant half comes from positivity, not from the twist; the gauge form of that step
 fails at its first line). Both restate, in my words, what the record holds.
 
-**GUIDE.** The screening of 1.2; the hand check 3.4; the numeric sanity run of 3.7, if it ran.
+**GUIDE.** The screening of 1.2; the hand checks 3.4; the numeric sanity run 3.7.
 
 **Not new, by my own grep.** Everything in Sections 1 and 2. Lemma PC-c is the proved form of row 1013's ARGUED
 verdict on C1 (`gap-invent-selective-max.md` L166, L191), which two cross-provider checks had left open for want of
-the written count. It is the corner analogue of Lemma PC of row 1188.
+the written count. It is the corner analogue of Lemma PC of row 1188. The spectrum of the corner Laplacian for d = 4
+is row 1015's (`gap-invent-selective-check.md` L157-161).
 
 **OPEN, unchanged.** (FS), which is (SEED); (N-phys); the continuum datum of the T0 chain; (BS); (W); the
 Jaffe-Witten gap. This row gives no proof and no disproof of the mass gap.
@@ -380,7 +414,7 @@ four O(4) sheets on a 2D base with an on-site plaquette term), with P4-MIX OPEN 
 corner model of row 1189 with a one-plaquette fibre, a transitive symmetry). I have no mechanism for either row and
 do not recommend one.
 
-CLOSING-LINE: written 2026-11-20T00:48Z (`date -u`); wall clock from 2026-11-19T23:54Z. No subagent. Files written: this
-file only (scratch under /tmp aside). The numeric sanity run of 3.7 was still waiting for memory at this time.
+Finished 2026-11-20T00:54Z (`date -u`); wall clock from 2026-11-19T23:54Z. One numeric run of about 3 s (GUIDE). No
+subagent. Files written: this file only (scratch under /tmp aside).
 
-RESULT: no proof and no disproof of the 4D SU(2) mass gap; (FS) = (SEED), (N-phys), the continuum datum, (BS), (W) and the Jaffe-Witten gap stay OPEN. Claude Fable 5.2 max, Mac mini worker 1; author only, checked by no one. A fourth plain-brief screening (ten candidates, each grepped) found no route off the lane's map. Reading (ARGUED; on file in parts, rows 1009, 1076-1086): in the posted 2D O(4) proof the bracket gives only the charged half, and the rotation-invariant half comes from a positivity structure (abelian conditional ferromagnets with association) followed by the coupling integral; the gauge form of the coupling integral is Theorem D (f), the gauge port of the positivity step failed three ways in row 1084, and (N-phys) lives in that half. PROVED by hand: Lemma PC-c (for every family of link-end translations whose bracket is lambda times a co-closed one-axis corner twist theta, the Gram cost ||T||_HS^2 is at least 8 (2d - 2)^2 lambda^2 |theta|^2, because the corner Laplacian of a site, the graph K_(d x 2), has a gap 2d - 2 above the gauge directions); Remark 3.5 (the exact second-order response to any corner twist at zero twist is a sum of one-site forms); Corollary PC-c2 (in every corner-twisted measure, any pins, strengths up to beta, an inequality of the 2D family form holds with the constant 2 beta/(2d - 2)^2 and is a corollary of the bound with no bracket, R <= 4 beta |theta|^2; on the sheet of C2 it is of the order of the area). So candidate C1 of row 1013, left open by the checks of rows 1013 and 1051 because its count was never written, FAILS as a band crossing in the form proposed; this is the flux half only, and other fourth-order identities are not excluded. Numeric sanity run: pending (memory below the 50 percent rule). Output library/gap-mini-solve-d-fable.md.
+RESULT: no proof and no disproof of the 4D SU(2) mass gap; (FS) = (SEED), (N-phys), the continuum datum, (BS), (W) and the Jaffe-Witten gap stay OPEN. Claude Fable 5.2 max, Mac mini worker 1; author only, checked by no one. A fourth plain-brief screening (ten candidates, each grepped) found no route off the lane's map. Reading (ARGUED; on file in parts, rows 1009, 1076-1086): in the posted 2D O(4) proof the bracket gives only the charged half, and the rotation-invariant half comes from a positivity structure (abelian conditional ferromagnets with association) followed by the coupling integral; the gauge form of the coupling integral is Theorem D (f), the gauge port of the positivity step failed three ways in row 1084, and (N-phys) lives in that half. PROVED by hand: Lemma PC-c (for every family of link-end translations whose bracket is lambda times a co-closed one-axis corner twist theta, the Gram cost ||T||_HS^2 is at least 8 (2d - 2)^2 lambda^2 |theta|^2, because the corner Laplacian of a site, the graph K_(d x 2), has a gap 2d - 2 above the gauge directions; its spectrum for d = 4 is on file, row 1015); Remark 3.5 (the exact second-order response to any corner twist at zero twist is a sum of one-site forms); Corollary PC-c2 (in every corner-twisted measure, any pins, strengths up to beta, an inequality of the 2D family form holds with the constant 2 beta/(2d - 2)^2 and is a corollary of the bound with no bracket, R <= 4 beta |theta|^2; on the sheet of C2 it is of the order of the area). So candidate C1 of row 1013, left open by the checks of rows 1013 and 1051 because its count was never written, FAILS as a band crossing in the form proposed; this is the flux half only, and other fourth-order identities are not excluded. GUIDE: one numeric sanity run (d = 2 to 5, 20,000 random families each), no violation. Output library/gap-mini-solve-d-fable.md.

@@ -26,6 +26,7 @@ Labels: PROVED, ARGUED, GUIDE, OPEN as the brief asks. A numeric run is never a 
 - 2026-11-20T05:20Z 7.3 written: A's own statement of this open point (pp. 96-99, 105) recorded; batch 1 running under the lock (started 05:19Z).
 - 2026-11-20T05:20Z 7.4 opened: batch 2 criteria fixed (d-dependence at beta 4.0 and 6.0) after seeing only the d = 3 rows of batch 1.
 - 2026-11-20T05:21Z 7.4 amended before reading any d = 4 value: beta 2.6 d-scan made primary.
+- 2026-11-20T05:27Z 7.5 written: batch 1 results (run 05:19:02Z-05:25:42Z by the log's date -u stamps, under the lock); batch 2 started 05:26Z.
 
 ## 1. What the target is, and where the lane stands (read, not re-derived)
 
@@ -433,3 +434,36 @@ confinement disorders the centre-twisted face at the physical scale;
 (b) confinement disorders: r falls with d to below 1/2 - 3 SE at d = 8: the face order is cut off near the physical
 scale, as A expects; the refutation then holds only for small physical boxes;
 (c) otherwise inconclusive. The beta 4.0 (d = 5, 6) and beta 6.0 (d = 3, 4) points stay as fixed in 7.4.
+
+### 7.5 Batch 1 results (GUIDE; run 05:19:02Z-05:25:42Z by the log's own date -u stamps, under the numeric lock, 57-59 percent memory free)
+
+Code checks first (same lock, before the batch): quaternion product against 2 x 2 matrices (error 1e-16); the
+single-link sampler against the exact mean of a under sqrt(1 - a^2) e^(alpha a) at alpha = 0.5, 1.9, 2.1, 6, 20
+(200,000 draws each; deviations 0.6, 1.3, 1.1, -0.2, 0.3 SE); the staple sum against a direct change of the total
+action for one link move (-2.3039139870525 both ways). Speed 9 ms per sweep at d = 3, 23 ms at d = 4.
+
+| beta | d (w = 2d - 1) | omega | start | P1: r (SE) | <abs(M-)^2>, <abs(M+)^2> | P2: r | unstaggered: r |
+|---|---|---|---|---|---|---|---|
+| 2.6 | 3 | pi-flux | cold | 0.406 (0.046) | 393, 618 | 0.096 | -0.004 |
+| 3.0 | 3 | pi-flux | cold | 0.516 (0.038) | 494, 833 | 0.127 | 0.042 |
+| 4.0 | 3 | pi-flux | cold | **0.727 (0.026)** | 788, 1294 | 0.279 | 0.089 |
+| 3.0 | 3 | trivial | cold | -0.012 (0.013) | 17, 19 | -0.013 | -0.006 |
+| 2.6 | 4 | pi-flux | cold | 0.538 (0.056) | 2362, 3986 | 0.042 | -0.021 |
+| 3.0 | 4 | pi-flux | cold | **0.689 (0.050)** | 4875, 7309 | 0.160 | 0.014 |
+| 4.0 | 4 | pi-flux | cold | **0.886 (0.013)** | 8239, 11554 | 0.330 | 0.130 |
+| 3.0 | 4 | trivial | cold | -0.009 (0.010) | 49, 52 | 0.008 | 0.043 |
+| 3.0 | 4 | pi-flux | hot | 0.612 (0.054) | 4610, 6241 | 0.155 | 0.105 |
+
+Against the criteria of 7.2 (bold = r >= 1/2 + 3 SE):
+- (M_{d,m}(c)) FAILS for every c < 1/2 at beta 4.0 with d = 3 and d = 4, and at beta 3.0 with d = 4 (cold start;
+  the hot start gives 0.612 (0.054), 1 combined SE from the cold value, and alone does not pass 3 SE). GUIDE.
+- The trend predicted by the mechanism holds: at pi-flux r rises with beta at each d, and it rises with d at each beta
+  (d = 3 to 4: +0.13, +0.17, +0.16). The trivial-omega control stays at zero within 1 SE, and the order-parameter
+  scale <abs(M)^2> is 20 to 150 times larger at pi-flux than at trivial omega.
+- The secondary patterns carry much less signal (P2 at most 0.33, unstaggered at most 0.13), so the correlation sits
+  in row 950's predicted staggered pattern. The asymmetry <abs(M+)^2> > <abs(M-)^2> comes from A's convention
+  V(Q) = links based in Q: the lower faces in axis 0 are pinned by the exterior, the upper ones are not.
+
+What this shows and does not show. At beta 3.0-4.0 a box with d = 3, 4 is far below the bulk correlation length, so
+these are small physical boxes; there the failure of (M) is a fact about the pinned face, not about confinement. The
+regime of A's tuning (boxes of several correlation lengths) is tested only by the beta 2.6 scan of batch 2.

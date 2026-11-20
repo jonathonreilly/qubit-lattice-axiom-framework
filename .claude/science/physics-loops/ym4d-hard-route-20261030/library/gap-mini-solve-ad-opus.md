@@ -12,6 +12,8 @@ Provenance: Claude Opus 5.5 (max reasoning), Mac mini worker 1, pinned at commit
 - 09:52Z (date -u): reading done (GOAL.md; FINISH.md Joining, Working efficiently, Rules; row 1251 in full; RESULT lines of rows
   1222-1250; `parts/gap.md` L1-104; `library/prior/gap-onebound-read-sol.md` in full; row 1180 Steps 1-2; row 700
   Section 6; row 1244 (sibling, running) Step 1). Section 1 written.
+- 10:09Z (date -u): Section 2 written (Zeng's Part II read in full; Lemmas Z1-Z3, Corollary Z2'). Next: Section 3.
+- 10:14Z (date -u): Lemma Z4 (Remark B.15), Section 3 and the RESULT line written.
 
 ## 1. How best to attack it (judgement; ARGUED; every input cited)
 
@@ -96,9 +98,11 @@ is minimized by functions of s alone"; (iii) the one-dimensional two-well Mucken
 stated, a Laplace computation). I find two steps that the hypotheses do not carry.
 - Step (ii) tensorizes one-bond Poincare constants over blocks that interact. Tensorization holds for product
   measures; for an interacting Gibbs measure the joint constant can be smaller than every conditional one by a
-  factor of the system size (any ferromagnetic ring of SU(2) spins at coupling kappa: each one-site conditional law
-  is a von Mises-Fisher law with constant at least c min(1, kappa), while the averaged rotation mode
-  f = n^(-1) sum_i g(u_i) has Dirichlet form of order 1/n and variance of order one). (TUN) bounds Psi_p and its
+  factor of the system size (a standard example, sketched, not used as a proof step: a ferromagnetic ring of n SU(2) spins at coupling kappa
+  much larger than n; each
+  one-site conditional law is a von Mises-Fisher law on S^3, whose Poincare constant is at least some c_0 > 0 for every
+  concentration; the global rotation is an exact symmetry, so f = n^(-1) sum_i g(u_i) has variance close to Var_Haar(g),
+  of order one, while its Dirichlet form is at most sup|grad g|^2/n; so the joint constant is O(1/n)). (TUN) bounds Psi_p and its
   y-derivatives, not the Poincare constants of the fibre measures dnu_s, so nothing in (TUN) or (COH) supplies step (ii).
 - (TUN) describes a tube around one loop. The lower half of (13.4) is a statement about all of the configuration
   space Omega_p. A lower bound on a Poincare constant needs every bottleneck of mu_p, not one: a tube statement gives
@@ -181,9 +185,13 @@ integral of (f_s^2 + f_t^2). The tube {abs(t - t_0) < kappa^(-1/2)} around a min
 satisfies the separation S = kappa Phi(s) + Psi with Psi = kappa chi(t) <= sup |chi''|/2 bounded there. The measure is a
 product, so its Poincare constant is the smaller of the two one-dimensional ones, and by Lemma 13.1 for chi it is at
 most C kappa exp(-kappa Delta') = o(kappa exp(-kappa Delta)). So an analysis on one tube can give an upper bound but not
-the lower half of (13.4); a second bottleneck off the tube decides. (Zeng's (TUN) asks in addition for bounded
-y-derivatives of Psi in a uniformly bi-Lipschitz chart; in this toy that holds only on the shrinking tube, which is
-the point of Corollary Z2'.)
+the lower half of (13.4); a second bottleneck off the tube decides. (Correction, 10:09Z by date -u: in this toy (TUN)'s bounded
+y-derivatives of Psi hold in the rescaled coordinate y = kappa^(1/2)(t - t_0), whose chart is not uniformly
+bi-Lipschitz, and fail in the unscaled chart, where the second y-derivative of Psi is kappa chi''. The same tension sits
+in Zeng's proof: its fibres concentrate at scale kappa^(-1/2) (Lemma 12.1 uses phi = y/sqrt(lambda), lambda = kappa_N r_b),
+while (TUN) asks for bounded y-derivatives and a uniformly bi-Lipschitz chart at once. ARGUED: a tube on which both
+clauses hold has fibre measures that are not concentrated in y, so it cannot carry a measure whose one-bond laws
+concentrate; Corollary Z2' is the proved form of this point.)
 
 **Lemma Z3 (fixed classical barriers give the wrong power of the cutoff; PROVED, algebra).** Let
 beta_N = beta_bar + 2 b_0 log(1/a_N) and rho_N = C_N exp(-beta_N S_cl) with S_cl > 0 fixed and C_N in [C_-, C_+],
@@ -197,6 +205,26 @@ fixed classical one. Prior record: the instanton weight exp(-8 pi^2/g^2(L)) with
 (`gap-mini-solve-j-fable.md` L132); the fixed-barrier filter in this form is not on file (grep `12 pi^2/11`,
 `2 b_0 S`: no hits).
 
+**Lemma Z4 (Zeng's "computable certificate for (MG)" certifies nothing; PROVED, elementary; written 10:14Z by
+date -u).** Remark B.15 (p. 57, read from the rendered page) states, "for free (Gaussian) models", the equivalence
+(exists eps_0 > 0: rho_p((0, eps_0)) = 0 for all p) iff (exists V_0, delta > 0: sup_p alpha_V^(p) <= 1 - delta for all
+V >= V_0), with eps_0 = -log(1 - delta)/V_0 and alpha_V^(p) := (G_p(2V) - G_p(V)^2)/(1 - G_p(V)^2). The remark does not
+define G_p; read it, as its left side suggests, as the normalized autocorrelation G_p(V) = integral of exp(-V lambda)
+d rho_p(lambda) with rho_p a probability measure on [0, infinity). Any reading with 0 <= G_p(2V) <= G_p(V) <= 1 gives
+the same conclusion.
+(a) For every such G and V > 0 with G(V) < 1: 0 <= alpha_V <= G(V)/(1 + G(V)) <= 1/2. Proof: G(2V) >= G(V)^2 by
+Cauchy-Schwarz, and G(2V) <= G(V) because exp(-2V lambda) <= exp(-V lambda); so G(2V) - G(V)^2 <= G(V)(1 - G(V)), and
+1 - G(V)^2 = (1 - G(V))(1 + G(V)). QED
+(b) So the right side of the equivalence holds with delta = 1/2 for every family, gapped or not, and the printed
+eps_0 = log 2 / V_0 would then be a gap for every model and every V_0 > 0. Concretely, rho_p = delta_(1/p) (the
+zero-momentum mode of a free field of mass 1/p on a fixed torus, a Gaussian model) has alpha_V^(p) = 0 for all V and p,
+while no eps_0 > 0 has rho_p((0, eps_0)) = 0 for all p. The direction "<=" of Remark B.15 is false as printed; the
+direction "=>" is true (alpha_V <= exp(-2 V eps_0)/(1 - exp(-2 V eps_0)) under a gap eps_0, plus the atom at 0). The
+quantity alpha_V measures the departure of G from one exponential (it vanishes for a Markov semigroup with one rate),
+not the size of the rate. Contrast: the lane's two-time form (Q) of row 1204 (as restated in row 1218 L59-72) reads the
+mass through the relativistic dispersion (a spatial shift and a time step together), which is why it is a valid gap
+criterion and alpha_V is not.
+
 **2.6 Novelty and use (grep at this pin).** `grep -i -E "tensoriz|Muckenhoupt|Eyring" library/*.md` hits nine other
 files (rows on LSI tensorization, Lemma CUT of `gap-oddgap-max.md`, the brainstorm lists); none of them names Zeng,
 and no file reads Zeng's Proposition 13.4 or Lemma B.1. Prior work for Lemma Z2: **Lemma TYP** of
@@ -208,3 +236,38 @@ convexity of log Z (exp(t - |E|/16) instead of a Chebyshev bound). Its use again
 future semiclassical row (wells, tubes, tunnelling) must say how its set carries the measure of a lattice with |E|
 links; by Lemma Z2 a set on which the action is o(|E|) carries mass at most exp(-|E|/16 + o(|E|)).
 
+## 3. Outcome of this row, and what stays open (written 10:14Z by date -u)
+
+**3.1 Verdicts.**
+
+| Statement | Label | Where |
+|---|---|---|
+| The crux, modulo the account, is a seed at one coupling in the band; no known kind of proof reaches it | ARGUED (cited) | Section 1 |
+| Zeng's Part II gives no mechanism to port; its (TUN) is, by Zeng's Remarks 11.2 and 14.3, the gap itself | READ | 2.1, 2.4 |
+| The written proof of Proposition 13.4 has two unsupported steps (tensorization over interacting blocks; global lower bound from one tube) | ARGUED | 2.2 |
+| Lemma Z2: a Wilson SU(2) Gibbs measure puts mass at most exp(t - abs(E)/16) where the action is at most t (kappa c >= 3/16) | PROVED | 2.5 |
+| Corollary Z2': under the Section 12 reading (mu_p proportional to exp(-S)), the tube of (TUN) has mass at most exp(kappa_N M + C_0 - abs(E_p)/16), so the lower half of (13.4) is not proved | PROVED given that reading | 2.5 |
+| Lemma Z1: a one-tube analysis cannot give a lower bound on a Poincare constant | PROVED | 2.5 |
+| Lemma Z3: a fixed classical barrier gives a physical rate a_N^(2 b_0 S_cl - 1); only S_cl = 12 pi^2/11 is finite; the instanton gives a_N^(19/3) | PROVED | 2.5 |
+| Lemma Z4: alpha_V <= 1/2 for every spectral measure, so Zeng's Remark B.15 criterion ("<=" direction) is false as printed | PROVED | 2.5 |
+
+**3.2 What this row did not do.** It did not attack (N-phys) or the one-coupling seed directly: Section 1 found no
+route beyond the record, and the sibling rows 1244, 1248 and 1249 (running at this pin) hold the open (K-flow)
+questions. It did not check Zeng's Part I, the C492 paper, or B's Theorem 45 hypothesis (B-D); for B-D I found no
+quick refutation (with physical cube sides much larger than the correlation length the response to one exterior link
+may stay local, so a supremum over exteriors need not fail; ARGUED, not written out). No numeric run was made (memory
+56 percent free; none was needed). No subagent.
+
+**3.3 What stays open.** (N-phys); the seed at one coupling in the band; (NS-gap) of row 700; the inputs of rows 1233
+and 1241 ((EDGE), the 9.1 comparison's hypotheses, the (DET)-side items); the account's premises on the T0 chain; the
+continuum datum. The mass gap of four-dimensional SU(2) Yang-Mills is not proved here, and nothing on the lane's chain
+is disproved.
+
+**3.4 For the lead.** (i) With Section 2, every published 4D proposal read by row 1218 (A, B, C) is now classed: A's
+seed is the lane's seed; B's ascent is circular at weak coupling (row 1220) and B-BP is a hypothesis of the size of the
+gap; C's mechanism is unproved and its certificate (Remark B.15) is vacuous (Lemma Z4). No published mechanism is left
+to port. (ii) Lemma Z2 is a filter for any future semiclassical row: a set where the action is o(abs(E)) carries
+mass exp(-abs(E)/16 + o(abs(E))); Lemma Z3 is a filter for any tunnelling row: a fixed barrier gives the wrong power of
+the cutoff. (iii) A cross-provider check of Lemmas Z2, Z3, Z4 and Corollary Z2' is short (each proof is a few lines).
+
+RESULT: Row 1251 (Claude Opus 5.5 max, Mac mini worker 1, 09:35Z-10:14Z by date -u; author only, checked by no one; no numeric run, no subagent): the mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing on the chain is disproved; (N-phys), the one-coupling seed and (NS-gap) stay OPEN. Worked item: Zeng's tunnelling package (Hexagon 2611.00543v1, Part II and Appendix B.1, read in full), the last published 4D weak-coupling mechanism not yet tested. READ: its hypothesis (TUN) is the gap by Zeng's own Remarks 11.2 and 14.3, and (SPEC) is a tautology for the log-generator form (Lemma B.1). PROVED by hand: Lemma Z2 (a Wilson SU(2) Gibbs measure gives mass at most exp(t - |E|/16) to {S <= t}, by a one-link identity and convexity of log Z; same method as the hard-core lane's Lemma TYP, with an exponential tail), hence Corollary Z2' (under the Section 12 reading the tube of (TUN) has mass at most exp(kappa_N M + C_0 - |E_p|/16), so the lower half of Proposition 13.4, which Theorem 14.1 uses, is not proved); Lemma Z1 (one tube gives no Poincare lower bound); Lemma Z3 (a fixed classical barrier gives a physical rate a^(2 b_0 S_cl - 1): finite only at S_cl = 12 pi^2/11, which Zeng's kappa_* imposes by definition; the instanton gives a^(19/3)); Lemma Z4 (alpha_V <= G(V)/(1 + G(V)) <= 1/2 for every spectral measure, so Zeng's Remark B.15 "computable certificate for (MG)" is false in its "<=" direction). ARGUED: the tensorization step of Proposition 13.4 is unsupported. So no published mechanism remains to port. OPEN: (N-phys), the seed at one coupling, (NS-gap), the account's premises. Output library/gap-mini-solve-ad-opus.md.

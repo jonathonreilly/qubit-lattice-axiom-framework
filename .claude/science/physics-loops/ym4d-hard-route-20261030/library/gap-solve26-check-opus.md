@@ -195,3 +195,83 @@ radial readings are normalized by sqrt(3/S_r), which removes their scale; the wi
 negligible alone (row 1227 (22)). (30) bounds nothing outside that subspace, which the file states at
 L318 and L463-L470. New relative to row 1227: (22)-(25) and (29); the winding step is row 1227 (20), (22)
 applied with Z = the packet array. First failing step: none.
+
+### Step 4: claim C, the complete fixed patch (40), with (37)-(39), the grid and winding extensions (L442-L444)
+
+Cited input re-used: row 1211 (6) (Step 3). Compared with row 1227 (25)-(26) (`gap-solve25-astra62.md`
+L287-L311), see the restatement note at the end of this step.
+
+- **(37) L395-L403. HOLDS.** The filling H_i (dH_i = C_i) has bounded size; in the good-box gauge the
+  conjugating transports are within O_Q(b^{-7/2}) of 1, and on {rescaled distances <= H} the rescaled log of
+  the product equals the signed sum of rescaled imaginary parts up to O_Q(H^2/sqrt beta); the linear sums obey
+  the proof of (9) (fixed coefficients, bounded l^1 norm). The law of z is invariant under a common rotation
+  at each root (root gauge at times 0 and u separately), so rotation-averaged tests suffice. Two-time
+  spatial-spatial cross covariance: the numerator involves spatial components of k^ only, so it is
+  n^{-3} sum_{q != 0} e^{iqx} N(q) e^{-u omega}/(2 sinh omega), bounded by C n^{-3} sum |q| e^{-cu|q|} -> 0
+  uniformly in n and x as u -> infinity. Nondegeneracy: d*P_inf H = d*H = sum a_i C_i, whose coefficient on the
+  i-th non-tree edge is a_i, so <H, P_inf H> >= ||a||^2/||d*||^2.
+- **(38) L405-L413. HOLDS.** Change of variables from non-tree edges to h is a two-sided translation (Haar
+  preserving). Scaled derivatives of F_o of order s are O(beta^{1-s/2}); at a maximum the Hessian bound and
+  nu_beta(unit scaled ball) >= c give sup rho_o <= C_Q; |grad F|^2 <= 2 C_Q (max F - F) along the gradient
+  geodesic; so every scaled derivative of rho_o is a polynomial in (max F - F)^{1/2} times e^{-(max F - F)},
+  bounded. Lower bound: p_beta -> Gaussian locally uniformly (weak limit (37) plus equicontinuity), so
+  p_beta(1) >= c; E rho_o(1) <= c/2 + C_Q P(rho_o(1) >= c/2); on that event max F - F(1) <= log(2C_Q/c), then
+  Taylor along a shortest geodesic. For u >= 2 no face meets non-tree edges of both slices, so the joint
+  conditional density factorizes and k_{beta,u} has bounded derivatives.
+- **(39) L415-L432. HOLDS.** d_beta(h,1)^2 <= C_Q beta sum_{p in Q}(1-w) (bi-invariant metric, bounded
+  filling), so row 1211 (6) gives ||U 1_{D_j} U|| <= C_Q e^{-c_Q j^2}. For a non-invariant f the two-time
+  form equals that of its root-conjugation average, which is supported on the conjugation-invariant D_j and
+  has smaller norm, so the rare-event bound holds on every unit vector of the unreduced frame. The shell
+  trace splits exactly over F (+) (F-perp within L^2(D_j)): dim F <= C(2+j)^D t^{-D}; on F-perp the return is
+  E_o[conj(m_0) m_u] with m = <f, rho_o/p_beta>, bounded by E|m_0|^2 (Cauchy-Schwarz, stationarity), and
+  Bessel with the Taylor remainder |rho_o - pi_o| <= C t^s gives C t^{2s} Int_{D_j} p_beta^{-1} dnu_beta.
+  The choice t = e^{-eps(2+j)^2}/4, D eps < c_Q/2, 2 s eps > C_Q + 1 closes both sums.
+- **(40) L434-L440. HOLDS (claim C).** On the ball the partition sums converge to Int k(h,h)/p(h) dnu (k, p
+  continuous, p bounded below); for u_n -> infinity this tends to P(|G_Q| < J); shells j >= J cost
+  sum C e^{-cj^2}; the trace is >= 1 (vacuum). Second clause: with u_n = ceil(1/e_n), u_n e_n <= 2, so the
+  weight of (0, e_n] is <= e^2 (Tr - 1) -> 0.
+- **Grid and windings, L442-L444. HOLD.** Equal-time cross entries between patches at separation ~ n/v:
+  the time-integrated symbol is continuous on the torus (O(|q|) at 0), a trigonometric polynomial
+  approximation has vanishing coefficients at separations outside its finite support mod n. Windings: same
+  product-bin step as (30), with O(v(D_0+2)) excluded axial coordinates per direction. The diagonal choice
+  v_n = j on [N_j, N_{j+1}) with excess <= 1/j and N_j >= j^4 is valid; no rate is claimed, and none follows.
+
+Scope and restatement (for the row's question): the conclusion "all L^2 readings of a fixed microscopic
+patch have vanishing weight at bounded physical energy" is already in row 1227 (26) (L304-L309), for an
+infinite-volume state, given (PL3) of Sussman and Alpoge and a time-translation reconstruction, with a
+factor [C(1+beta)^{3/2}]^p. (40) is an extension, not a restatement: it holds on the finite spatial cube
+used by the thermal seed, without (PL3), and for every u_n -> infinity (row 1227 (25) needs
+t >> (1+beta)^{3p/4}). It concerns a patch of fixed lattice side; the grid version covers a vanishing
+fraction O(v_n^6/n^3) of the bonds. It bounds nothing about the complementary trace in (42), as the file
+says. First failing step: none.
+
+### Step 5: claim D, cube relaxation (35), with (36) and the torus correlation (L367-L373)
+
+Cited input read: row 1218 (`prior/gap-onebound-read-sol.md` L127-L161, L185-L195): BP(n, varpi) is
+varpi Var f <= n^{-4} sum_x mu|f - P_x f|^2 on real gauge-invariant f, i.e. A = n^{-4} sum_x (I - P_x) >= varpi
+on mean-zero gauge-invariant functions; B-BP allows cube sides n_k up to l/a_k on an infinite set of even
+tori R >= 2 n_k + 4; B-local is ||K^t (f - mu f)|| <= (1 - varpi n^4/R^4)^t ||f - mu f|| for f supported in a
+box of side <= R/2. The file's m, N are row 1218's n, R. The file's two hypotheses match these.
+
+- **Torus correlation L367-L373. HOLDS.** The periodic time Green's function is
+  [e^{-t omega} + e^{-(N-t) omega}]/[(1 - e^{-N omega}) 2 sinh omega]; N omega >= c on q != 0 and N omega -> infinity at
+  fixed rescaled momentum (N >> r), so the limit is K(s,0) of (11), including s = 0. Substituting k' = sk,
+  s^4 D(s,0) -> |phi^(0)|^2/pi^2 > 0 (L111 chooses Int phi > 0), so K(s,0) ~ a_1 D^2 ~ s^{-8}.
+- **(36) L375-L385. HOLDS.** <f,g> = <S_tau f, g> + Int_0^tau <A S_t f, g> dt. First term <= e^{-varpi tau}||f||^2
+  under either hypothesis (for B-local, S_t = e^{-tN^4/m^4} sum_j (tN^4/m^4)^j K^j/j!). Second term: only cubes
+  meeting supp g count (<= C m^4 (1+b)^3 of them); P_x h depends only on (supp h \ V_x) and the links sharing a
+  face with V_x, so a realization without a chain of cubes (consecutive bases within m+3) from supp f to V_x
+  leaves V_x unread and (I - P_x) kills it; the number of chains of length k is
+  <= C m^4 (1+b)^3 (C m^4)^{k-1}, each with expected (t/m^4)^k/k! ordered ring tuples (factorial moments of
+  Poisson clocks, repeated labels included); bridging the temporal gap floor(sr) < N/3 needs
+  k >= c_1 s b; for t <= tau = eps s b, (C eps s b)^k/k! <= e^{-csb}. ||f||_inf <= 1 holds since F_r in [0,1].
+- **(35) L357-L365, L387. HOLDS (claim D).** For b = r/m >= 1/C_0 the second term of (36) is
+  <= C e^{-cs} < K_mag(s)/4 for large fixed s; the cutoff limit then gives
+  limsup varpi b <= (eps s)^{-1} log(C K(0)/K(s)) = O(log s / s) for every large s, so varpi r/m -> 0. The tori
+  can be taken large enough for beta <= B log N because B-BP and B-local quantify over an infinite set of
+  tori at each cutoff.
+
+Scope of claim D: it constrains only cube sides m <= C_0 beta^delta, a slowly growing number of lattice
+units. B-BP allows cube sides up to a fixed physical length l/a_k, and (35) says nothing there; the file
+says this at L387. It is a necessary condition on the auxiliary dynamics, not a statement about the
+physical transfer. First failing step: none.

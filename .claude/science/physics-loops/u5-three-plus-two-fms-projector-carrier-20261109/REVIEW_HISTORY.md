@@ -2,7 +2,7 @@
 
 ## 1. Author-Side Mutation Testing Record
 
-Eleven load-bearing mutations were executed against [`scripts/frontier_u5_three_plus_two_fms_projector_carrier.py`](../../../../scripts/frontier_u5_three_plus_two_fms_projector_carrier.py); all eleven failed closed with `exit=1` (`AssertionError`):
+Sixteen load-bearing mutations were executed against [`scripts/frontier_u5_three_plus_two_fms_projector_carrier.py`](../../../../scripts/frontier_u5_three_plus_two_fms_projector_carrier.py); all sixteen failed closed with `exit=1` (`AssertionError`):
 
 | Mutation ID | Target Check Family | Mutation Applied | Result |
 |---|---|---|---|
@@ -17,12 +17,17 @@ Eleven load-bearing mutations were executed against [`scripts/frontier_u5_three_
 | `M9_pinch_commutator_sign` | Theorem 7(3) noncommuting pinch identity | Changed anticommutator $D_A X + X D_A$ to commutator $D_A X - X D_A$ | Killed (`exit=1`, `AssertionError: Theorem 7(3) universal noncommuting pinch-commutator identity`) |
 | `M10_coherent_su2_fms_defect` | Theorem 8(2) $K$-copy coherent $SU(2)$ defect | Changed $(K+1)/K^3$ to $(K+2)/K^3$ | Killed (`exit=1`, `AssertionError: Theorem 8(2) K=1 coherent SU(2) FMS defects`) |
 | `M11_coherent_det_transport_defect` | Theorem 8(2) $K$-copy determinant transport defect | Changed $(3K+2)/K^3$ to $(3K+1)/K^3$ | Killed (`exit=1`, `AssertionError: Theorem 8(2) K=1 coherent determinant transport defect`) |
+| `M12_quantum_car_q4_ratio` | Theorem 9(2) quantum CAR fourth-moment hierarchy | Changed $\mathcal{Q}_4$ from $7/30$ to $1/4$ | Killed (`exit=1`, `AssertionError: Theorem 9(1)-(2) exact quantum CAR moments`) |
+| `M13_lambda4_car_p3_trace` | Theorem 9(3) single-copy $\Lambda^4\mathbb{C}^5$ $3+2$ projector | Changed $\operatorname{Tr}_{M_5}(P_3^{\mathrm{CAR}})$ from $3 I$ to $2 I$ | Killed (`exit=1`, `AssertionError: Theorem 9(3) single-copy K=1 exact 3+2 CAR projector`) |
+| `M14_k_copy_car_d32_law` | Theorem 10(2) $K$-copy CAR $3+2$ scaling | Changed $12(K+2)/K^3$ to $12(K+1)/K^3$ | Killed (`exit=1`, `AssertionError: Theorem 10 K=1 5-mode CAR 3+2 coherent scaling`) |
+| `M15_exterior_tr4_sign` | Theorem 11(1) exterior-power fourth-moment trace | Flipped sign of $-3\operatorname{Tr}(A^4)$ to $+3\operatorname{Tr}(A^4)$ on $\Lambda^2,\Lambda^3$ | Killed (`exit=1`, `AssertionError: Theorem 11(1) exterior-power trace identities`) |
+| `M16_chiral_multiplet_ranks` | Theorem 11(3) chiral generation bidegree projectors | Changed $\Lambda^2\mathbb{C}^5$ bidegree ranks from $(3,6,1)$ to $(3,5,2)$ | Killed (`exit=1`, `AssertionError: Theorem 11(3) bidegree projectors`) |
 
 ## 2. Reported Author-Side Subagent Mathematical Review
 
-The author reports that a read-only referee subagent (`ebe84222-d51f-411e-8dc2-b4573909f63b`) was invoked across Milestone 01 (Theorems 1–5) and Milestone 02 (Theorems 6–8) to verify all theorem statements, equations and signs, the runner implementation, and conformance with `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md`:
+The author reports that a read-only referee subagent (`ebe84222-d51f-411e-8dc2-b4573909f63b`) was invoked across Milestone 01 (Theorems 1–5), Milestone 02 (Theorems 6–8), and Milestone 03 (Theorems 9–11) to verify all theorem statements, equations and signs, the runner implementation, and conformance with `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md`:
 
-- **Reported mathematical verification:** The author-side subagent reported from first principles that all eight theorem statements, equations, coefficients, signs, dimensions, and all 43 runner checks are mathematically exact.
+- **Reported mathematical verification:** The author-side subagent reported from first principles that all eleven theorem statements, equations, coefficients, signs, dimensions, and all 52 runner checks are mathematically exact.
 - **Proof and prose findings resolved:**
   1. Corrected a canceling double-sign step in the intermediate CAR manipulation of the proof of Theorem 2(2) ($c_j^\dagger c_j c_k = -\delta_{jk} c_j + c_k c_j^\dagger c_j \implies N c_k = c_k(N - I) \implies (5I - N)c_k = c_k(6I - N)$).
   2. Replaced a leftover scratch sentence in the proof of Theorem 5(2) with clean deductive sign-counting prose.

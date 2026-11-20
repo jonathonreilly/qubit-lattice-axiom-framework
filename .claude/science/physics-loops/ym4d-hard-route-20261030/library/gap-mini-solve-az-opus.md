@@ -229,3 +229,103 @@ cluster expansion, so it is a much smaller rerun than the account's route (which
 (H-par')), (TH), (F_RL); or GIVEN (H-fmt), (FS°), (TH), (F_RL). Theorem RL-P: extended to stores at most r_*(j) levels
 younger than the shell (Corollary Y1'); the younger stores stay OPEN (Step 3). (H-par') alone is not enough (4.2).
 
+## Step 5. Where islands actually enter the site (T): the first stage, its weight W, and the filing (written 18:13Z by date -u)
+
+**5.1 The first-stage lemma is stated for every unit (READ).** 5.2:lem-first-stage-bound (CA-II L6530-6600): "Let
+v = (j, S_v, f_v) be a unit at one of the three expansion sites"; Balaban's piece is
+v_p = [prod over Delta in Y_0 minus S-bar_v of int_0^1 ds(Delta) d/ds(Delta)] d/dt at t=0 of f_v(R_p(t, s)),
+and, if R_p stays in the unit's domain D_v on the disc |t| < rho_A with |f_v o R_p - f_v(1)| <= N(v), then
+|v_p| <= 2 w^-1 eta_p^(1/2) e^(-(kappa_1 - 1) m(p)) N(v) for row-4 units (eta_p in place of eta_p^(1/2) for rows
+1-3, 5, boundary). The proof is two Cauchy estimates, one in t and one per decoupling parameter (L6606-6665): "Nothing
+in its proof depends on the site or on the term" (L6739-6740). So an island-blind store enters the first stage BY
+STATEMENT as a unit whose read set is its whole filed domain Y, provided its analyticity domain contains the response
+map on the disc and its orbit datum lives on Y (part of the reading (H-fmt) of row 1309; the containment is supplied at
+(T) "by the homogeneous containment lemma", L6670-6676). The rotation of island law sites is then inside the unit's
+own orbit datum, at the price eta_p(square, Y)^(1/2): no (RS), (U-loc) or (H-par') is used.
+
+**5.2 The resummed potentials and the second stage (READ, then ARGUED).** The pieces are resummed into "V(Y) ... the
+localised term collecting the pieces v_p with localisation domain Y_0 = Y" (CA-II L6742-6744), with
+|V(Y)| <= C_A' W e^(-(1 - 2 delta) kappa d(Y)), W := sup_Delta sum_(v: S_v meets Delta) 4 w^-1 N(v) e^((1 - delta/2) kappa d(S-bar_v))
+(5.2:eq-first-stage-bound-6, -a, L6749-6764). The weight e^((1 - delta/2) kappa d(S-bar_v)) in W, and m(p) counting only
+the cells of Y_0 outside S-bar_v, show that a piece's localisation domain Y_0 contains the unit's exempt hull S-bar_v.
+So a potential built from a blind store contains that store's islands. (Correction, same session: a first version of
+this item read the region "Y_0 inside Lambda_(m+1) of the decoupling lemma" of lem-island-geometry (d1) as this Y_0 and
+concluded that the second stage never meets an island. That was a misreading: (d1)'s Y_0 is the region of the site's
+decoupling cubes, "the region of the site expansion at (T)" of lem-blind-domination (b); the first-stage lemma's Y_0 is
+a per-piece localisation domain.) What (d1) does give: every decoupling cube and every cube carrying fluctuation field
+at T_(m+1) is off the islands. Hence a potential V(Y) depends on the integration variable (the fluctuation field on the
+free bonds of Lambda_(m+1)) only on Y minus W, which lies in the active domain A(Y) (Lemma A1 of row 1309), and on the
+island configuration only as a field that the second stage neither integrates nor decouples.
+
+**5.3 What is left at (T) (ARGUED).** The corrected route for the (T) part of 9.1:prop-blind-site-expansions:
+1. First stage BY STATEMENT, with each blind store a unit whose read set is its whole filed domain (5.1), given (H-fmt).
+2. (W°) the resummation (5.2:eq-first-stage-bound-6) with W replaced by
+   W° := sup over site cells Delta of sum_(v: S_v meets Delta) 4 w^-1 N(v) e^((1 - delta/2) kappa d°(S-bar_v))
+   and d(Y) by d°(Y). The site cells are off the islands, so W° is the anchored relative activity of the proposition's
+   last clause, bounded through 9.1:lem-blind-counts (ii) (PROVED in the account) by K°(d) times the sup norm. The
+   one-scale resummation itself (the sum over square, geometric in eta_p at rate delta_1 M per M-cube, and the factor
+   e^(-(kappa_1-1)) per cell of Y_0 minus S-bar_v, L6781-6790) adds only blocks and cells of the site, off the islands,
+   and d°(Y_0) <= d°(S-bar_v) + |Y_0 minus S-bar_v| + c holds as for d; so (W°) holds by the resummation's own proof.
+   I have not read that proof (the account gives its structure only), so (W°) is ARGUED.
+3. Re-index each potential V(Y) at A(Y): by 5.2 its integration variables lie in A(Y); d(A(Y)) <= d°(Y) (Lemma A1);
+   the multiplicity of Y over one A(Y) is Lemma A3 of row 1309. Take the second stage (Balaban's cluster expansion,
+   CMP 116 Section 2, as the account states it at (T)) BY STATEMENT, the island configuration being a parameter (the
+   account's parameter principle 4.24:prf-exterior-independence).
+4. (Fil) file each output that reads a blind store with that store's islands, length d° (Lemma A2 of row 1309).
+One reading is inside step 3: the second stage's hypothesis that potentials are "gauge invariant" (CA-II L6917) must be read, for a potential that keeps island fields as parameters, in the joint sense of 5.2:def-sites-units (b) (invariance jointly with those fields), as for the account's own row-4 units; I count this under (H-fmt).
+So the (T) part reduces to (H-fmt), (W°), (TH), (F_RL) and the plain statements. This replaces Step 4's Proposition H:
+(RS), (U-loc) and (H-par') are no longer needed, because the rotation and shift on island law sites are inside the
+first-stage lemma's own bound (at the price eta_p(square, Y)^(1/2)), and re-indexing happens after the first stage, on
+potentials, not before it on stores. The same holds at (L) with its own first-stage clause (iii) and resummation.
+
+**5.4 Consequence for the young stores at (P) (ARGUED).** The same first-stage lemma serves (P) (it is stated for the
+three sites). At (P) the integrated rim cells can lie in a young store's island (Step 3.2), and the two-slot Moebius
+sum runs over "the weak A_j-cubes q meeting S" (CA-II L13079-13081). With S = Y for a young blind store this sum
+includes island rim cubes, and its cost (1 + 1/r_A)^|Q| is not paid by d° (Step 3.3). So at (P), unlike (T), the
+islands of young stores do meet the expansion's own cells, and the young case remains OPEN as stated in Step 3.3.
+
+## Step 6. Labels, what a checker should redo, credits (written 18:14Z by date -u)
+
+**6.1 Labels.** Everything below is by Claude Opus 5.5 (this row), checked by no other model. No numeric run, no
+subagent.
+
+| Statement | Label | Where |
+|---|---|---|
+| Site (P) integrates the rim field A_j and the variable B_j; boundary terms much younger than the shell read A_j; the account pays this by the two-slot Moebius expansion over weak cubes meeting the read set | READ | 2.1-2.2 |
+| (d3) of lem-island-geometry covers only stores no younger than the shell, and lem-blind-domination (b) admits at (P) only "a collar cell of scale at least the level of the store" | READ | 2.3, 3.4 |
+| The "class assignment" (d3) points to is 9.1:def-resolved-members (two-run classes, Z_own contains the preparatory integrations of healed components); it governs differences, not one-run sizes | READ (located by search; the account does not name it) | 2.5 |
+| Lemma Y1: a blind store at most r_*(j) levels younger than the shell has no island cube on the shell, r_*(j) = max{r : 5 L^r + 2 <= 3 R_(j+1)} | PROVED (given lem-island-geometry (b), (c1), (e) and condition (ii) of CMP 122a as (d3)'s proof reads it) | 3, Lemma Y1 |
+| Corollary Y1': row 1309's Theorem RL-P extends to those stores | PROVED GIVEN RL-P's hypotheses (unchecked row 1309) | 3 |
+| Lemma Y1 cannot reach all young stores: the account bounds strip-to-shell distances only below, and its regime has ages of order N_0(g) | ARGUED | 3.2 |
+| Keeping a young store's islands in its read set at (P) costs (1 + 1/r_A)^Q over island rim cubes, not paid by d°; the young case needs (Y-a), (Y-b) or (Y-c) | ARGUED | 3.3 |
+| The (P) part for stores more than r_*(j) levels younger than the shell | OPEN | 3.3 |
+| Row 1309 Step 7.2's claim that RL-T holds under (H-par') "by the same proof" | WITHDRAWN (too quick: under (H-par') the response decays only to the read set) | 4.2 |
+| The first-stage lemma 5.2:lem-first-stage-bound is stated for every unit and proved by two Cauchy estimates, so blind stores enter it by statement with their whole filed domain as read set | READ | 5.1 |
+| A potential V(Y) contains its unit's exempt hull; its dependence on the integration variable lies off the islands, inside A(Y) | READ (structure of W and m(p)) and ARGUED (the containment Y_0 contains S-bar_v is inferred, not quoted) | 5.2 |
+| The (T) part of 9.1:prop-blind-site-expansions reduces to (H-fmt), (W°), (TH), (F_RL) and the plain statements, with no (RS), (U-loc), (H-par') | ARGUED ((W°) by the one-scale resummation's own proof, which I did not read) | 5.3 |
+| The infrared seed; the Jaffe-Witten mass gap | OPEN; not attacked | 1 |
+
+**6.2 What a checker should redo (most valuable first).**
+1. 5.2: confirm from Balaban's CMP 109 (3.7) and CMP 116 (1.10), (1.23) (or the account's resummation text) that a
+   piece's localisation domain Y_0 contains the unit's exempt hull S-bar_v, and that the second stage reads a
+   potential's integration variables only on its decoupling cells.
+2. (W°): read the one-scale resummation behind C_A (CA-II L6742-6790 and the constant's "own place") and check that it
+   holds with d° for blind units, the site cells being off the islands.
+3. Lemma Y1's arithmetic (the 5 L^r - 1 reach of a level-l fattening in level-(j+1) cubes) and its Case 1.
+4. 3.2-3.3: whether the account's large-field rules force strip-to-shell distances at old scales to stay below
+   L^(l-j-1) (which would close the young case by Lemma Y1), or exhibit a history where a young island covers an old
+   shell cube.
+
+**6.3 What this row changes, if a check holds it.** For T0 node F56 (`library/chain-ca.md` L208) and hypothesis (e) of
+9.1:thm-last-lattice-comparison on the gap carry: the (T) and (L) parts no longer rest on the reading (H-par') or on
+(U-loc), but on (H-fmt) and a d°-form of one resummation; the (P) part covers stores up to r_*(j) levels younger than
+the shell; the remaining young case is a gap of the account's own stated scope, with three named ways to close it. No
+other input of the carry and nothing about the seed changes.
+
+**6.4 Credits.** Ethan Sussman and Levent Alpoge, with Claude and Codex as authors of their text: the complete account
+CA-II and CA-III at 31a47c543775 (the sites and units, the first-stage lemma and its resummation, the two-slot
+preparatory proposition, the island geometry, the blind counts and domination lemmas, the outstanding proposition and
+its route). Tadeusz Balaban: the renormalisation-group expansions that the account transcribes (CMP 109, 116, 119,
+122a, 122b). Row 1309 of this lane (Lemmas A1-A3, Theorems RL-T, RL-L, RL-P). Bhattacharjee, Bhattacharya, Lockwood,
+Romanov, Sessford and Singha Roy (row 1218's paper A) were read through row 1218's digest and not used here.
+

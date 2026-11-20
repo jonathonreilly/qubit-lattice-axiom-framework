@@ -103,3 +103,73 @@ What this step shows (GUIDE, my reading): in the reduced zero-mode model, weak-c
 **HOLDS.** One link: the conditional density is a translate of p_s(u) proportional to exp(s Re u), 0 <= s <= 6 beta. With Haar (2/pi) sin^2 theta d theta and chi_d = sin(d theta)/sin theta, int e^(s Re U) chi_d dU = I_(d-1)(s) - I_(d+1)(s) = (2d/s) I_d(s); dividing by d and by Z = (2/s) I_1(s) gives the multiplier I_d(s)/I_1(s) (the normalized (GL3) of Sussman-Alpoge). Riccati: from I_k' = I_(k+1) + (k/s) I_k and I_(k+1)' = I_k - ((k+1)/s) I_(k+1), R_k = I_(k+1)/I_k obeys R_k' = 1 - (2k+1) R_k/s - R_k^2. Its positive root is u_k = exp(-arsinh((k + 1/2)/s)), increasing in s. Near 0, R_k ~ s/(2k+2) < s/(2k+1) ~ u_k; at a first contact R_k' = 0 while u_k' > 0, which contradicts contact from below. arsinh x >= x/(1+x) (compare derivatives: (1+x)^2 >= sqrt(1+x^2)), and (k + 1/2)/(s + k + 1/2) >= 1/(1+s) for k >= 1/2. So R_k <= e^(-1/(1+s)) and I_d/I_1 <= e^(-(d-1)/(1+6 beta)). Path: each selected factor contributes its scalar multiplier times a fixed unitary (inversion keeps the central density), so ||E pi_d(B)|| <= e^(-(d-1)m/b_beta); Fourier inversion gives |p - 1| <= sum_(d>=2) d^2 ||E pi_d(B)|| = eta(m/b_beta), absolutely convergent for m > 0. The tiling note's denser colouring (every fine line, Step 4) is new relative to `gap-solve2-astra62.md`, which separates parallel coarse lines by h; it is checked above.
 
 **Line 11, the consumer: HOLDS.** It matches `gap-mini-neutral-fable.md` 35-55: (N-phys), s_j(u_j; n_j) <= 1/2 for some 3 <= u_j <= n_j/K, 4 | n_j, explicit K = 512, multiplicities counted. The reduced-model thermal tests in the note use the same time L/512.
+
+### Step 5. Everything else, and the reading against rows 1273 and 1279
+
+**Remaining PROVED paragraphs.**
+- Line 58 (independent blocks): **HOLDS.** With a singlet in each block the gap is exactly kappa_r g^(2/3)/l. With only the simultaneous projection, two blocks in charged states can couple to a singlet, so equality is not claimed. Correct.
+- Line 99, heat-trace finiteness: **HOLDS.** K_r >= -Delta/2 (V >= 0) and K_r >= s_r sum|y_i| give 2K_r >= -Delta/2 + s_r sum|y_i|. Neumann bracketing on unit cubes, the potential replaced by its cube infimum, and a convergent sum of e^(-tau inf W) (cube counts grow polynomially, W >= s_r|y|) give a finite trace; min-max transfers it to K_r.
+- Line 101, t -> 0 continuity: **HOLDS** (checked in Step 2).
+- Line 15, independence of disjoint pairs with disjoint stems in the product-Haar limit: **HOLDS.**
+
+**Corrections (wording and scope; no step fails).**
+1. **RESULT line 209, "all straight segment transports": HOLDS AFTER CORRECTION.** (2) and (7) are proved for the segments of one fixed partition of every coordinate line into length-h pieces starting at multiples of h (line 19), with the m-colouring tied to that partition. A straight segment with another offset is not a function of Z = (X, B): it reads selected bonds one by one. The union of all offsets is not covered at once, since then every bond is an end bond of some segment. Correct wording: "all segment transports of one fixed length-h partition of every coordinate line".
+2. **Line 48, cutoff scope: HOLDS as an implication; input can be weakened.** The note takes beta_j = O(log n) "given" Sussman-Alpoge's first-passage drift and mesh. Per `sa-index`, outline 6854 (running inverse couplings) is marked assumed and RF25 (20787-20797) proved conditionally, so along their trajectory the input is conditional. The argument needs less: delta <= 2 M eta <= C n^2 e^(-x) with x >= (l/(8L)) n/(1 + 6 beta_j) - 1, so beta_j <= c (l/L) n/log n with c small enough already gives delta -> 0. Any trajectory with logarithmic growth qualifies.
+3. Line 81: "qquad" should be "\qquad" (typesetting only). Line 170: "second derivative -1" is per unit beta.
+
+**GUIDE citations, spot-checked.** Line 7: `gap-crux2-astra62.md` 45-104 does prove that two plaquettes pin every axis with conditional probability at least 1/2 ((4) there). Line 9: via `sa-index`, outline 588-599 (spectral support example and gap requirement), 778-779 (scalar gap scope, named open), 31871-31882, 32487-32490 (gap a separate requirement) say what the note says. CA-I 2705-2710 was not re-read: the CA TeX is not in this checkout. It agrees with check 1279 and with `gap-solve2-astra62.md` L13. Lines 23 and 46: GL3 (outline 2210-2231) and GL8 (2315-2335) are indexed as proved in detail. Line 28: `gap-solve9-astra62.md` (23)-(24) does hold an all-coordinate-line colouring for full windings, so the note's colouring is a segment version of it, as credited. Line 117: `gap-glue-max.md` 122 is Lemma G3. Line 201: `gap-crux-exercise3-max.md` 540 is the product-with-massless-factor device (rows 708, 998). Registry: no "tiling" or "directional" row in `open-registry.md` or `open-core.md` (grep), as line 5 says.
+
+**Against row 1273 and check 1279.**
+- *Alignment.* Row 1273 argued that in a tiling the commutator energy aligns the block axes at weak coupling, so the mechanism switches off. Check 1279 found that inference FAILS. The note's (3)-(4) and the tree theorem settle the reduced-model version, and in the opposite direction: weak-coupling sewing locks whole tuples across blocks (c_x = c_y) but does not align the vectors inside one tuple. So the Simon mechanism does not switch off. It survives as the zero-mode gap of the whole box, kappa_r g^(2/3)/L. Row 1273's "switches off" is wrong in this model; its "z -> 0 at weak coupling" is right, since L Delta = kappa_r g^(2/3).
+- *(TILE-dis).* Check 1279 (line 109) named the gauge-invariant quantity 1 - tr[H_B, P H_C P^(-1)]/2 and noted row 1273 gave it no law. The note's line 15 gives the law on the physical mesh: product Haar in the limit, mean 3/4, Pr(D >= 1/4) >= 2/7 (given beta_j growth as above). So "disorder of block axes" in this bare-transport reading is true. By (2) its centred part carries no low energy. So in its natural reading (TILE-dis) holds and gives nothing. This confirms 1279's verdict that no link from (TILE-dis) to the neutral thermal bound exists, and shows that this reading cannot supply one.
+- *Statistics do not fix spectra.* Check 1279's decoupled massless spectator (line 113) and the note's comparison operators (lines 201-205) are the same product device. The note realises it inside the actual Wilson slice, with exact Wilson histories of all directional data.
+- *GA and DOM.* The note uses neither. (8)-(11) use only gauge-invariant holonomies, consistent with 1279's correction of GA (no growth bound in a raw gauge potential).
+- *Adjoint-Higgs test (row 1273, 1279 line 117).* The adjoint sewing (8) sees only Ad U and has the Z_2^E symmetry; its 3M soft levels are the free Z_2 plaquette signs. This fits 1279's point that a pure-gauge argument must use structure (here the fundamental plaquette signs) that adjoint-only couplings lose.
+
+### Step 6. What this means for the owner's tiling question
+
+The question (row 1285): does a tiling or other combination of multi-direction blocks carry the single-block neutral gap to the physical box, at the couplings the lane needs? With the note checked, the record stands as follows. Labels are mine.
+
+1. **Reduced zero-mode model, any connected sewing at weak coupling: no carry (PROVED, Step 2).** Stiff springs, and also a tree with moving frames and Gauss's law, make N^3 blocks of side l act as one block of side L = N l. The singlet gap tends to kappa_r g^(2/3)/L, not kappa_r g^(2/3)/l. The non-commuting directions survive (tuples lock, they do not align), so the owner's mechanism is not killed. It is rescaled to the whole box. The dimensionless gap L m = kappa_r g^(2/3) is the same small number as for one block, and the limit is not uniform in N.
+2. **The thermal test cannot be passed in that regime (PROVED arithmetic plus the consumer's statement).** (N-phys) needs at least L m >= 512 log 2, about 355, for the first neutral level alone; the dilute-gas guide in `gap-mini-neutral-fable.md` puts it near 10^4. The reduced model gives L m = kappa_r g^(2/3), and it is justified only at small g. So in the regime where the reduced tiling is valid, it fails (N-phys) by a wide margin. Stiff sewing even fails the test at times L/512 when kappa_r g^(2/3) < 512 log 2 (line 101).
+3. **One-block theorem plus positive coupling decides nothing (PROVED, lines 99-101).** At the same local coupling and quartic operator, the independent array passes the test and the stiff array fails it. Any carry argument must use more than the one-block gap and the sign of the joining energy.
+4. **Other combinations are worse, or are not Yang-Mills (PROVED, Step 3).** Cyclic sewing through adjoint frames has at least 3N^3 neutral levels at energy O(g^(8/3)/l). This is an artifact of adjoint-only coupling (free Z_2 plaquette signs). A tiling that keeps the fundamental plaquette signs escapes this counterexample, and no estimate for one exists on file.
+5. **In the Wilson theory, the literal directional data carry no low energy (PROVED given beta_j growth, Step 4).** Transports along straight segments of physical length l, in all three directions and on every fine line (one fixed partition into length-h pieces), tend to independent Haar given the rest of the slice. Their commutators are maximally disordered (mean 3/4). By (2) and (7) they add nothing, up to O(delta^2), to the neutral thermal trace beyond the remaining fine fields. Even exact knowledge of all their time histories leaves the neutral spectrum undetermined (lines 201-205).
+6. **What is left is the original problem (OPEN).** The remaining estimate, (Theta_X - 1) + J <= 1/2 with a margin, uniform in the cutoff, is the full neutral excited trace up to a factor 1 + O(delta^2). It is (N-phys) itself. The note does not reduce it.
+
+**Plain answer.** In every model where an estimate exists, a tiling of multi-direction blocks does not carry the one-block neutral gap to the physical box. In the reduced zero-mode model the tiling just becomes the big box's own zero-mode problem, whose gap vanishes in physical units at weak coupling. The adjoint version has a volume's worth of soft neutral states. In Wilson theory the bare directional transports are ultraviolet noise. Nothing here disproves a mass gap, and nothing excludes a directional argument built on smoothed fields that keeps the fundamental plaquette signs. Such an argument would have to prove (N-phys) itself, and the checked note gives no estimate toward it. **Moves:** this closes the tiling question on the reduced-model and bare-transport routes (no carry). The directional idea leaves (N-phys), (W) and the mass gap where rows 1273 and 1279 left them.
+
+### Step 7. Verdicts
+
+Provenance: Claude Opus 5.5, max effort, Mac mini Claude worker 2, at a725fa855; one cross-provider hand check of gpt-6.2-astra's row 1286; not an audit, grants no status. No numeric run was used. Finished 2026-11-20T14:56Z (date -u).
+
+| Statement (lines of `gap-owner-tiling-astra62.md`) | Verdict |
+|---|---|
+| Commutator D = 2\|u x v\|^2, mean -> 3/4, Pr(D >= 1/4) >= 2/7 (15) | HOLDS (given delta -> 0) |
+| Colouring of every fine line, at most one selected bond per plaquette (19-21) | HOLDS |
+| Conditional law (1) (23-27), with `gap-solve2-astra62.md` (1)-(2) | HOLDS |
+| Low-energy bound (2) (30-46) | HOLDS |
+| Cutoff and scope, delta -> 0 (48) | HOLDS as an implication from beta_j growth; conditional in Sussman-Alpoge; beta_j <= c n/log n suffices |
+| Independent and product-of-singlets arrays (54-58) | HOLDS |
+| Common-frame gap (3) = kappa_r g^(2/3)/L (60-65) | HOLDS |
+| Stiff limit (4), fixed graph (67-72) | HOLDS |
+| Decomposition (5) (74-83) | HOLDS (typo "qquad") |
+| Confinement (6) (85-91) | HOLDS |
+| Spectral limit, both bounds (93-95) | HOLDS |
+| No fixed fraction of the block gap (97) | HOLDS |
+| Opposite answers to the thermal test (99-101) | HOLDS |
+| Trace sandwich (7) (107-124) | HOLDS |
+| J > 0 at finite cutoff (126) | HOLDS |
+| Remaining estimate (128) | correctly OPEN; it equals the full neutral excited trace up to 1 + O(delta^2), so it is (N-phys) itself |
+| Ground energy (9) (136-145, 161-168) | HOLDS |
+| Holonomy bound (10) (146-151) | HOLDS |
+| Walk bound (11) (153-159) | HOLDS |
+| Wilson Hessian at a -I link (170) | HOLDS (second derivative -beta) |
+| Tree with dynamical links and Gauss law, gap -> kappa_r/N (172-176) | HOLDS; at fixed N, not uniform in N |
+| At least 3M soft neutral levels (12) (178-191) | HOLDS; N-uniform; O(t^(-3/2)) at alpha = sigma/(2t) |
+| Thermal failure of adjoint sewing (193-197) | HOLDS; does not transfer to Wilson, as the note says |
+| Same O-histories, extra soft neutral level (199-205) | HOLDS |
+| RESULT "all straight segment transports" (209) | HOLDS AFTER CORRECTION: one fixed length-h partition of every line |
+| Any statement | FAILS: none found |
+
+RESULT: Cross-provider hand check (Claude Opus 5.5 max) of row 1286 (gpt-6.2-astra, `gap-owner-tiling-astra62.md`): every PROVED statement HOLDS, none FAILS. Tree and stiff sewing of N^3 reduced blocks, with or without dynamical frames and Gauss's law, gives a singlet gap asymptotic to kappa_r g^(2/3)/(N l) = kappa_r g^(2/3)/L at fixed N as g -> 0; this is not uniform in N, and no fixed fraction of the one-block gap survives. Cyclic adjoint sewing has at least 3N^3 soft centre-neutral levels by (12), uniformly in N; this is an artifact of adjoint-only coupling and does not transfer to Wilson. The Wilson bounds (1), (2), (7) hold given beta_j = o(n/log n). Two scope corrections: the RESULT's "all straight segment transports" means one fixed length-h partition, and the beta_j input is conditional in Sussman-Alpoge but can be weakened. For the owner's question: tiling does not carry the one-block neutral gap to the physical box in any model with an estimate. The reduced tiling becomes one box of side L with L m = kappa_r g^(2/3), small at weak coupling, while (N-phys) needs L m >= 512 log 2. Bare directional transports carry no low energy. OPEN: the remaining Wilson estimate (Theta_X - 1) + J <= 1/2, which is (N-phys) itself; (W); the continuum construction; the Jaffe-Witten mass gap.

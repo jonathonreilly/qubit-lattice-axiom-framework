@@ -25,8 +25,9 @@ by integration in beta); `library/gap-ymcons-opus.md` L134, L300-326 (row 975: L
   criterion at one cutoff (their Proposition 8.1 (a)), then carried by the renormalisation group (rows 1009-1010, reading).
 - The lane's only one-scale form that is uniform over boundary values is C3, the Dobrushin-Shlosman block hypothesis (W)
   of row 691 (`gap-crux-restate.md` L72). Theorem W (row 691, check 693: no statement fails) turns (W) at one coupling into
-  uniqueness and covariance decay AT THAT COUPLING. It does not give the seed: the file says "The gap does not follow from
-  anything in this file" (L170) and its decay is weak mixing only (L141). The lane's one derivation of the seed from a
+  uniqueness and covariance decay AT THAT COUPLING (its (A)-(C), L91-99). It states no seed and no bound on a doubling
+  defect, and its decay is weak mixing only (L141). (Its sentence "The gap does not follow from anything in this file",
+  L170, refers to (W) being unproved for SU(2), not to what (W) implies.) The lane's one derivation of the seed from a
   mixing condition, row R-b (`gap-vmf-lip.md` Section 4), integrates d F / d beta from beta = 0 and so needs the mixing
   condition at EVERY coupling s <= beta (it is the Dobrushin regime beta < 2/9). Row 975 Lemma VOL: a gap alone misses the
   seed by a volume factor; Lemma META: each metastable set adds about 1 to S.
@@ -202,7 +203,7 @@ the band included; row R-b does exactly that in the Dobrushin regime beta < 2/9.
 from a hypothesis at beta alone. So the chain now reads, for one cutoff K_0 of the account's family:
     (W) at (R, delta) at each beta in W_(K_0)(g)  --WS2-->  (SEED-L) at the data of cutoff K_0 for N >= N_0(R, delta, beta, L)
       --(ONE-K), needs (UNIV-K) [OPEN] with (L^4+1) E(K_0) below the margin-->  (SEED-L) at all K >= K_0
-      --Lemma FL (row 837, ARGUED)-->  (SEED-FP)  --rows 916-917, 1179, 1225 (Theorem E-N, check 1232)-->  the gap clause.
+      --Lemma FL (row 837; HOLDS per check row 848, applied with phi' between phi_* and (L/2) log(13/10))-->  (SEED-FP)  --rows 916-917, 1179, 1225 (Theorem E-N, check 1232)-->  the gap clause.
 The selective content is entirely in (W) at one weak coupling at scale R of the order of the correlation length; Lemma WS
 adds none (it holds for every compact fibre). This is the gauge analogue of the place of OpenAI's Proposition 2.1 (ii) in
 the 2D O(3) proof (row 1007 L201: "0 <= 4 log Z_b(n, w) - log Z_b(2n, 2w) <= C(1 + b + n + w)^p e^(-c min(n, w)/X(b))",
@@ -211,9 +212,9 @@ read how they derive (ii) (row 1007 read pp. 1-9 only). A 4D version uniform ove
 SHEET (row 996, check 997; scope: unbounded side-face couplings, `gap-checkerboard-singlet-astra.md` L718); Lemma WS needs
 no uniformity over couplings, only over boundary values.
 
-**3.5 What Lemma WS does not give (PROVED where marked).**
-- (PROVED, from (2.3) and Proposition B of row 691.) Not (N-phys) directly. If (W) held at every cutoff j at (R_j, delta)
-  with R_j a_j <= l (uniform in physical units), Corollary WS1 gives a seed only at n_j a_j >= c R_j a_j ln R_j, and
+**3.5 What Lemma WS does not give (ARGUED; the arithmetic is PROVED).**
+- Not (N-phys) directly. If (W) held at every cutoff j at (R_j, delta)
+  with R_j a_j <= l (uniform in physical units), the side that Corollary WS1 guarantees is n_j a_j >= c R_j a_j ln R_j, and
   R_j + 2 >= (1/2) ln(1/delta) xi_j (Proposition B), so the physical seed size grows like xi ln(xi/a_j). The loss is the
   factor M^6 = abs(B)^2 in lattice units: one abs(B) from the 3 abs(B) swaps, one from abs(B_Lambda) in Theorem W (A).
   Even a strong-mixing bound (influence decaying from the changed links) would leave one abs(B) and the same logarithm. So
@@ -222,3 +223,115 @@ no uniformity over couplings, only over boundary values.
   attacked.
 - Not selective, not the band: (W) at a weak coupling with R ~ xi is as hard as before. Lemma WS only says that this one
   hypothesis at one coupling is enough for the chain's one-cutoff datum, with no other coupling involved.
+
+## 4. The hypothesis the proof really uses, and a guide check (written 2026-11-20T11:05Z by date -u)
+
+**4.1 (SL), slab weak mixing (definition).** For a slab Lambda_a with spatial box B (all sides >= 1, periodic), put
+    tau_*(a, B; beta) = sup over slice values D, D', E of TV( law of the middle slice L under gamma_a(. | D, E),
+                                                             law of L under gamma_a(. | D', E) ),
+L the slice at time floor(a/2). (SL) at (a, B, t) means tau_*(a, B; beta) <= t.
+
+**Lemma WS' (PROVED; no hypothesis beyond the definitions; Claude Opus 5.5, checked by no one).** For every beta > 0,
+a >= 3 and B,
+    sup over D, D', E, E' of abs(log K_a(D,E) - log K_a(D,E') - log K_a(D',E) + log K_a(D',E')) <= 6 pi beta abs(B) tau_*(a, B; beta),
+hence Phi_B(a) <= 6 pi beta abs(B) tau_*(a, B; beta) and, for L >= 2, L F(a, B) - F(La, B) <= 12 pi beta L abs(B) tau_*(a, B; beta).
+Proof. Steps 2, 3, 4 and 6 of Section 2 and 3.3 (a) use nothing else: Step 5 was the only place where (W) entered, to
+bound tau_* by (sqrt(delta)/(1 - sqrt(delta))) (8R+6) abs(B) e^(-eps (floor(a/2) - R)). QED
+So Lemma WS = Lemma WS' + [Theorem W (A) gives (SL)]. The one-coupling datum of the chain needs only
+    (SL) at the four slab geometries of 3.3 (b) with 12 pi beta L^4 N^3 (tau_*(N, B_1) + ... + tau_*(N, B_4)) <= 0.131 L,   (4.1)
+B_mu the box with mu - 1 sides LN and 4 - mu sides N (abs(B_mu) = L^(mu-1) N^3; each bracket of 3.3 (b) contributes
+L^(4-mu) * 12 pi beta L abs(B_mu) tau_* = 12 pi beta L^4 N^3 tau_*). I.e. the middle slice of a slab of thickness N is
+independent of one boundary slice up to a total variation of about 3.5 x 10^(-3)/(beta L^3 N^3), uniformly over all
+boundary values. That is a statement at ONE coupling about ONE finite slab family.
+
+**4.2 Why (SL), not (W), is the natural form at weak coupling (GUIDE: a heuristic count, no proof).** (W) is a Hamming
+criterion: k_z counts the links that disagree under a coupling after one boundary link changes, and needs
+sum of k_z <= delta N_R ~ delta R^4. For continuous spins at large beta, inside the correlation length the field
+responds to a boundary change like a massless field: a link at distance r is shifted by about r^(-2) while its
+conditional spread is about beta^(-1/2), so it disagrees with probability about min(1, beta^(1/2) r^(-2)). The count
+k_z is then of order beta^(1/2) xi^2 (if beta^(1/2) < xi^2), and summing over the about R^3 boundary links of a direction
+asks R >~ beta^(1/2) xi^2 / delta, much more than xi. (SL) asks only that a whole slice at distance a/2 >> xi from the
+changed boundary forget it, which a mass gap with a per-site influence e^(-r/xi) gives at a ~ 2 xi (6 ln N + ln beta)
+(GUIDE: tau_* ~ abs(B) e^(-a/(2 xi)) and beta abs(B) tau_* small). So the chain's one-coupling datum is better stated as (SL) than as (W); Lemma WS' makes that form sufficient.
+I have not checked the heuristic against the lane's own (W) estimates (`gap-ds-gauge.md` Section 4, Proposition B),
+which bound R from below by xi and say nothing above.
+
+**4.3 Quantifiers with (ONE-K) (ARGUED from the cited statements).** Row 916's (ONE-K) fixes g, L, ell and needs, at
+ONE cutoff K_0, Phi(d_0) <= phi_* - (L^4 + 1) E(K_0), with E(K_0) = sum over K > K_0 of eps_K from (UNIV-K); row 916
+(`gap-chain-ce-opus.md` L326-331, L372: ARGUED there) expects eps_K <= C L^4 ell^4 q_2^K on the regular part, so K_0 >~ c log ell suffices for
+the margin. If (SL) holds with a physical rate (tau_* ~ abs(B) e^(-N/(2 xi_K)), xi_K the correlation length in lattice
+units at cutoff K), then (4.1) at N = ell/a_(K_0) needs ell >~ 12 xi_phys ln(ell/a_(K_0)) + 12 xi_phys ln L (GUIDE arithmetic),
+i.e. K_0 <~ ell/(12 xi_phys ln L). For large ell the window c log ell <~ K_0 <~ ell/(12 xi_phys ln L) is not empty, so the
+logarithmic loss of 3.5 does not break the order of choices. This depends on the form of eps_K, which is OPEN with
+(UNIV-K).
+
+**4.4 GUIDE check of the proof's structure (exact arithmetic on a toy, not a proof step).** Under the numeric lock
+(11:04Z-11:05Z, 54 percent memory free, under one second of compute, script kept in a /tmp scratch folder, not
+committed) I computed, for the 2D Ising model on a cylinder (ring of M = 6 spins, time periodic, transfer matrix with
+half spatial weights, so Z(a) = Tr K_a exactly), Phi_B(a), the exact sup of abs(log Q), and the exact tau_* (maximum over
+all D, D', E of the TV of the middle-slice law), for beta = 0.3 and 0.5 and even a = 4, ..., 16. The Ising form of (2.2)
+replaces 2 pi beta by e^(4 beta) - 1 (one temporal bond per top spin; osc f / inf f). Pass criterion written first:
+sup abs(log Q) <= M (e^(4 beta) - 1) tau_* and Phi_B(a) <= sup abs(log Q) in every case. Result: 14 of 14 pass, the largest
+ratio sup abs(log Q) / bound is 0.166. At beta = 0.3, tau_* falls from 0.38 (a = 4) to 0.0081 (a = 16) and Phi_B from 0.19
+to 7.1e-5; at beta = 0.5 (short-range order on this ring) tau_* stays 0.69-0.90 and Phi_B stays 0.55-0.71: no seed and no
+(SL), consistent with the lemma (a large tau_* allows a large Phi_B). What the run cannot show: anything about SU(2) or about large boxes.
+
+**4.5 A caution: (SL) can need a larger scale than the seed (GUIDE, RECALLED physics, no proof).** (SL) and (W) are
+suprema over boundary values; the seed is a periodic (typical) statement. In a model with a metastable phase the two
+scales separate. Example: the 2D Ising model at low temperature in a small field h > 0 has one Gibbs state, and on the
+periodic torus the metastable minus phase costs about h M per slice, so the seed holds once the slice is large; but a minus
+bottom slice under a plus top slice carries a minus layer into the slab up to the droplet scale of order sigma/h, so
+tau_*(a) is near 1 until a >> sigma/h. So (SL) is in general strictly stronger than the seed, and its scale is set by the
+worst boundary value. For SU(2) Wilson at zero temperature I know of no metastable phase (the vacuum is unique at
+theta = 0 and centre flux sheets are cheap in the confined phase), so I expect no such separation there (GUIDE).
+
+## 5. Status, comparison with published work, credits, check request (written 2026-11-20T11:07Z by date -u)
+
+**5.1 Statements of this file.**
+
+| Statement | Label | Depends on |
+|---|---|---|
+| Lemma WS' (four-point slab bound from (SL); Phi_B, one-direction L-fold defect) | PROVED | nothing beyond the definitions |
+| Lemma WS ((W) at one coupling bounds Phi_B(a) by C beta R M^6 e^(-eps a/2)) | PROVED GIVEN | Theorem W (A), row 691, check 693 |
+| (3.1) four-point form; uniform multiplicative near-rank-one of the slab kernel | PROVED GIVEN | same |
+| Corollary WS1 (seed at r = 2 for even n >= n_0(R, beta), delta = 1/4) | PROVED GIVEN | Lemma WS; Theorem SH and the free-energy seed, row 705, check 707 |
+| Corollary WS2 ((SEED-L) bound (3.2) for the symmetric L-fold blow-up at one coupling) | PROVED GIVEN | Lemma WS; RP for the lower bound |
+| 3.4 the chain reads (W) or (SL) at one cutoff's couplings, then (ONE-K) | ARGUED | (UNIV-K) OPEN; Lemma FL (row 837, check 848 HOLDS); rows 916-917, 1179, 1225 |
+| 3.5 no direct (N-phys) from WS (logarithmic loss in physical units) | ARGUED (arithmetic PROVED) | Proposition B of row 691 |
+| 4.2 (SL), not (W), is the natural weak-coupling form | GUIDE | heuristic count |
+| 4.3 quantifiers compatible with (ONE-K) | ARGUED | form of eps_K, OPEN |
+| 4.4 Ising-cylinder run | GUIDE | none |
+| 4.5 metastability caution | GUIDE | recalled physics |
+
+**5.2 Comparison with the published one-scale hypotheses (row 1218's reading; I did not re-read the sources).**
+- Bhattacharjee et al., One Bound at One Scale, slab hypothesis (A-M) (row 1218, `prior/gap-onebound-read-sol.md` L119-126): sup over exteriors of the
+  MAXIMAL CORRELATION between the two outer regions of a three-slab box, middle integrated out, below c < 1/2; consumer
+  their BP and continuum-gap theorems. (SL): sup over boundary slices of the TOTAL VARIATION of the middle slice under a
+  change of ONE boundary slice, below about 10^(-3)/(beta L^3 N^3); consumer the lane's (SEED-L)/seed and (ONE-K). Different
+  quantity, different smallness (fixed c against volume-scaled), different consumer. Their full-thermal seed (A-B*)
+  is a periodic (C1-type) statement; Lemma WS gives seeds of this doubling type from a boundary-uniform hypothesis.
+- One Cube Estimate (B), D(n, alpha) (row 1218, same file L163-174): Wasserstein boundary influence in a forest gauge; B-BP: cube
+  dynamics. Neither is a trace or doubling statement; Lemma WS is about the periodic doubling defect.
+- OpenAI, 2D O(3) continuum paper, Proposition 2.1 (ii) (row 1007 L201): the 2D doubling defect bound, of the same shape as
+  (2.3)/(3.2). Their bound is stated uniformly over bond strengths in [0, b]; Lemma WS needs no coupling uniformity.
+
+**5.3 Credits.** Theorem W and (W): Claude Fable 5.2 (row 691), checked by Claude Opus 5.5 (row 693); its weighted-block
+shape is credited there to Dobrushin and Shlosman (1985). D-shape, Theorem SH, the free-energy seed thresholds: row 705
+(checked 707). (ONE-K), (UNIV-K), (SEED-L): rows 913, 916 (Claude Opus 5.5), check 917 (gpt-6-astra), resting on Sussman
+and Alpoge's complete account (with Claude and Codex as authors of its text) for the tori T_ell, the windows W_K(g) and
+the regular-part rate. The doubling-defect shape in 2D: OpenAI, The canonical massive continuum limit of the
+two-dimensional O(3) model (2026), Proposition 2.1 (ii), as read by row 1007. The swap-and-shield argument of Section 2
+(telescoping boundary values one link at a time, and passing the influence through a middle slice in the interior where
+weak mixing applies) is mine as far as the lane's files show; telescoping over boundary changes is a standard device in
+the Dobrushin-Shlosman literature (RECALLED, not read here).
+
+**5.4 Check request (for the lead to queue if wanted).** A cross-provider line-by-line check of Section 2 Steps 1-6 (the
+one-plaquette claim of Step 3 and the bound abs(h_theta) <= pi; the factorisation of Step 4; the Lambda_a° and B_Lambda
+counts of Step 5 against `gap-ds-gauge.md` L28, L85-99, L115-141), of 3.1 for odd a, of 3.3 (the cyclic cancellation and
+the four-direction telescoping), of the arithmetic of 3.2 and 3.3, and of Lemma WS'. Verdict per statement.
+
+**5.5 What stays OPEN.** The mass gap. In the chain: (UNIV-K) (rows 924, 1237, 1238, 1248: (M1)-(M3), (DENS-K) B1-B2,
+edge matching, the account's Statement 3.4); and the one-coupling datum, now in the form
+(SL) (or (W)) at the couplings of one cutoff, at slab thickness N of a few tens of correlation lengths, with total
+variation below about 10^(-3)/(beta L^3 N^3) uniformly over boundary slices. No engine for that one-coupling estimate is
+known (Section 1); this file only shows that it is enough, with no other coupling involved.

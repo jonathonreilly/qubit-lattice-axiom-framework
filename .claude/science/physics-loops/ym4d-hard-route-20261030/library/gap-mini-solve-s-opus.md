@@ -29,3 +29,32 @@ rows 1222, 1227, 1230; `library/gap-mini-branch-fable.md` L296-360 ((N-phys) and
 4. Consequence for this row: no new screening. One precise question is chosen in Step 1, grepped against the record,
    and attacked to a proof or a counterexample.
 
+## Step 1. How best to attack it (06:50Z)
+
+**Judgement (ARGUED).** Every route on file ends at one kind of step: a selective inequality carried through the
+band, where the running coupling is of order one. The only selective multiscale monotone in the literature is the
+pinned-cell stiffness flow of OpenAI's 2D O(4) paper (row 1007 7.3; rows 1009-1016 read and port it). It works because
+its twist is a global symmetry, so it acts on every pin, rough or not, and its direct cost is classical (row 1011
+(M2)-(M3)). In 4D pure gauge theory the port fails at exactly that point: a twist applied to a rough pin has a
+pin supremum that forgets colour coherence (row 1011 Proposition B, B'; row 1016 Theorem BH), there is no hidden
+symmetry (Lemma CEN+), and any colour frame costs the non-abelian part of the pin (Lemma FR).
+
+**The precise question of this row.** Proposition B concerns twists applied to the rough pins themselves. A cell of
+a tiling has rough pins on its faces, but the twist need not live there. Put it on one face that is smooth: the
+bottom face of a slab-shaped cell, pinned to a fixed abelian (here trivial) configuration, as in the
+Schrodinger functional of Luscher, Narayanan, Weisz and Wolff. All other faces carry arbitrary pins. Then:
+
+(Q-SF) Is the class of such cells closed under conditioning on the cell boundaries of a tiling, and does its
+stiffness for a constant bottom twist have the two properties the 2D flow needs: a twist that is locally a
+symmetry, and a start bound by dropping the covariance that is classical and uniform over the other pins?
+
+Grep before work (06:45Z): `one smooth face`, `abelian bottom`, `smooth bottom`, `other faces arbitrary`,
+`twist on one face`, `remaining faces` over `library/gap-*.md`: no hit on this class. Nearest on file: row 1011 4.7 (ii)
+(all-abelian pins, not closed under conditioning); row 1195 (S1') (all-abelian pins); row 1202 (slab between two
+trivially pinned plates, no tiling); row 1016 Lemma GT (Jacobian-one transports along curves). `library/open-core.md`
+has no gap-lane entry for it.
+
+Why either answer helps. If (Q-SF) holds, the 2D flow has a 4D gauge form with a class closed under conditioning,
+and the next step is the variance gain (row 1011 (N3)). If it fails, the failure shows whether the obstruction is
+the location of the twist (pins) or the interior non-abelian field, which sharpens row 1011 (N1)-(N3).
+

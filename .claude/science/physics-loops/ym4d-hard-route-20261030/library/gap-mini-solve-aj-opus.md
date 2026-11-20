@@ -269,3 +269,87 @@ characteristic functions."
 
 All of it: Claude Opus 5.5 from Balaban's printed pages, read once; checked by no other model. A check should re-read
 CMP 122b pp. 365, 377-379 and CMP 122a pp. 178-184 on the page images.
+
+## Step 4. Second item: the step (*) of the age lemma (written 2026-11-20T14:30Z by date -u)
+
+**4.0 Why this item.** `8.9:lem-age-lemma` (CA-II:112000-112100) is "Stated; proof incomplete at the step marked (*)",
+and (*) is the join bound (8.9:eq-age-lemma-4) (CA-II:111979), "taken by statement from [CMP 122b, Section 1]". The
+lemma is on two chains: registry row H-C7c (owner none, OPEN; T0 tree node "R9 witness analytic inputs"), and the gap
+lane's one-cutoff carry, whose input `9.1:thm-last-lattice-comparison` lists "the age lemma" among its standing
+hypotheses (a) (row 1233 Lemma 3.5, III:17940-17948). Rule 0a: no FINISH row, no `library/open-core.md` entry
+(grep `age lemma`, `age-lemma`, `8.9:`). The rest of the account's proof (birth, quiet step, preparatory refresh, the
+three groups after (*)) is complete given (*) and the clock rules it quotes.
+Moves: H-C7c, and hypothesis (a) of the carry's 9.1 input (one of its named items). Success: (*) proved from stated
+readings of Balaban's definitions. Failure: a join whose clock exceeds the bound.
+
+**4.1 The bound to prove (CA-II:111967-111983).** A level-(n+1) component W' is the join of p >= 0 old pieces
+S(W_1), ..., S(W_p) and q >= 0 new regions X_1, ..., X_q, with p + q >= 2 or p = 0. With E_(n+1) = n_1 + R_(n+1) + 2
+(R = Balaban's number at that level, written R-check in the account),
+    Phi_(n+1)(W') <= max{ max_i (Phi_n(W_i) - 1), max_l K_init(X_l) } + (p + q - 1) E_(n+1).          (8.9:eq-age-lemma-4)
+Balaban's own two-domain step (CMP 122b pp. 386-387, read in the OCR): "The domain S^(K_1)(X) satisfies the conditions
+(i), (ii) ... applying n_1 times the operation S to the last domain, where n_1 is a rather small number, e.g. n_1 < 10,
+we obtain the domain S^(K_1+n_1)(Y) containing S^(K_1+n_1)(X) ... and that K <= K_2 + n_1 + R_(j+1)". The containment
+claim is not proved there. The proof below does not use it; it uses only sizes.
+
+**4.2 Hypotheses (readings of Balaban's definitions and the account's, stated so that a checker can test each).**
+- (H1) S. For a level-m domain A, S(A) is the cover of A by level-(m+1) cells with ten layers of level-(m+1) cells
+  added (account CA-II:111912-111913; CMP 122a p. 177 "Each renormalization step adds at least ten layers"). So
+  S(A) contains A (as a point set), S(A cup B) = S(A) cup S(B), and S(A), S(B) meet when A and B touch.
+- (H2) Size. Let s_m(A) be the side, in level-m cells (cubes of side M R_m), of the smallest cube containing A. Then
+  s_(m+1)(S(A)) <= rho_m s_m(A) + 22, with rho_m = 1/L at a scaling step and rho_m = 1 at a step where Balaban's number
+  R drops (the level-(m+1) cell is then no larger than the level-m cell). No two consecutive steps are drop steps.
+  The size bound is the cover (one extra cell per side) plus ten layers per side. Isolation is ARGUED, not read: R_m is
+  a power of L fixed by a slowly varying function of x_m = g_m^(-2) (CMP 119 (2.5)), so it cannot drop at two consecutive
+  levels while x_m is large; Balaban's own square-root bound (CMP 122b p. 385: "for some steps we do not gain the
+  scaling factor") is of the same kind. L >= 9 (the account's floors make L far larger).
+- (H3) Condition (i) at level m: contained in a cube of side 100 level-m cells, i.e. s_m <= 100 (CMP 122a p. 177).
+- (H4) Condition (ii) at level m with parameter N: at each of the N levels m' with m - N < m' <= m, the image of the
+  component satisfies (i) at level m', and no new large-field region is created inside it at level m' (CMP 122a p. 177:
+  "in the preceding N renormalization steps no new large field regions were created inside this component, and the
+  previous regions contained in it satisfy the condition (i) on the corresponding scales").
+- (H5) Clock. Phi_m(W) is the least K >= 0 such that S^K(W), at level m + K, satisfies (i) and (ii) with the clock's
+  parameter, along the quiet continuation (no new large field inside). For a component formed at level n + 1 by a join
+  the parameter is N = R_(n+1) (Balaban: "for a domain Z created at level j ... with N = R_j"; his join bound adds
+  R_(j+1)); for a piece S(W_i) entering the join its index iota_i is its own clock at level n + 1 (Phi_n(W_i) - 1 by the
+  quiet rule, or its event value). R_m >= 9 at every level of the run (the account's (9.1:eq-island-geometry-b)).
+
+**4.3 Lemma ST (stable sizes). PROVED given (H2), L >= 9.** If a domain evolves by S and at some level m_0 that follows
+a scaling step its size is at most 34, then its size is at most 56 at every later level. If its size is at most 100 at
+three consecutive levels, then from the last of them on its size is at most 56.
+Proof. After a scaling step from size s <= 56: s/9 + 22 <= 28.3 <= 34. After a drop step from size s <= 34:
+s + 22 <= 56. By isolation a drop step is always preceded by a scaling step, so the level before a drop has size at
+most 34; induction over the steps gives the first claim. For the second: of the two steps between three consecutive
+levels at least one is a scaling step; the size after it is at most 100/9 + 22 <= 34, and the first claim applies. QED
+
+**4.4 Theorem J (the join bound). PROVED given (H1)-(H5), L >= 9.** Put T := max{ max_i iota_i, max_l K_init(X_l) }
+and m := p + q. Then
+    Phi_(n+1)(W') <= T + R_(n+1) + 2 u_m + 2,     u_m := ceil( log_9 (1.57 m) ).                          (J)
+Consequently (8.9:eq-age-lemma-4) holds for every n_1 >= 2.
+Proof. (1) Pieces. For an old piece, its image at level n + 1 + iota_i satisfies (i) and (ii) with N >= 9, so by
+(H4) its sizes were at most 100 at the last N >= 3 levels; by Lemma ST its size is at most 56 from then on along the
+quiet continuation, in particular at level n + 1 + T (T >= iota_i). The same holds for S^T(X_l) since T >= K_init(X_l).
+(2) The union. By (H1), S^T(W') is the union of the images S^(T+1)(W_i) and S^T(X_l), and it is connected because W' is
+and S preserves touching. A connected union of m sets, each inside a cube of side 56, lies in a cube of side at most
+57 m - 1 (chain the sets along a spanning tree). (3) Shrinking. Between two consecutive levels at least one of any two
+steps is a scaling step (H2). Two steps map a size s to at most s/9 + 44 (scaling then drop) or s/9 + 24.5 (drop then
+scaling). After 2u steps the size is at most (57 m)/9^u + 49.5. With u = u_m, 57 m / 9^u <= 36.4, so the size before
+the next scaling step is at most 36.4 + 49.5 + 22 = 107.9, and after that scaling step at most 107.9/9 + 22 <= 34. So
+within t <= 2 u_m + 2 steps after level n + 1 + T the union reaches size at most 34 just after a scaling step, and by
+Lemma ST all its later sizes are at most 56 <= 100. (4) Window. Let K* = T + t + R_(n+1). At the R_(n+1) levels before
+and including n + 1 + K* the union has size at most 56, so (i) holds there, and no new large field is created there:
+the continuation is quiet, and these levels are after n + 1, the birth level of the X_l. So (i) and (ii) with
+N = R_(n+1) hold at level n + 1 + K*, and Phi_(n+1)(W') <= K* <= T + R_(n+1) + 2 u_m + 2.
+(5) Comparison with (8.9:eq-age-lemma-4). Its right side is T + (m - 1)(n_1 + R_(n+1) + 2). For m = 2, u_2 = 1 and (J)
+gives T + R_(n+1) + 4 <= T + n_1 + R_(n+1) + 2 when n_1 >= 2. For m >= 3, (m - 1)(n_1 + R + 2) - R >= (m - 2) 9 + 4(m - 1)
+= 13 m - 22 >= 17, while 2 u_m + 2 <= 2 log_9(1.57 m) + 4 <= 13 m - 22 for every m >= 3 (equality is far at m = 3,
+5.4 against 17, and the left side grows like log m). For p = 0 (a birth from q >= 2 new regions) the same proof
+applies with no old pieces. QED
+
+**4.5 What this gives (ARGUED from the account's proof, CA-II:112023-112100+, read).** The account's proof of
+`8.9:lem-age-lemma` uses (8.9:eq-age-lemma-4) only at the two places marked, with Balaban's n_1 as an unspecified
+"rather small number". Fixing n_1 := 2 in the charge E(Z) = n_1 + R_(j(Z)) + 2 (so E(Z) = R_(j(Z)) + 4), Theorem J
+supplies (*), and the age lemma becomes an implication of the clock rules the account quotes (birth (8.9:eq-age-lemma-1),
+quiet (8.9:eq-age-lemma-2), preparatory (8.9:eq-age-lemma-3), healing) and of (H1)-(H5). Balaban's containment claim
+("S^(K_1+n_1)(Y) containing S^(K_1+n_1)(X)") is not needed. Not done here: a check of the account's remaining proof
+lines after (*) (CA-II:112100 on), and of the birth rule (8.9:eq-age-lemma-1), which the account takes from CMP 122b
+(1.81) and its discussion; isolation in (H2) is ARGUED, not read from a definition.

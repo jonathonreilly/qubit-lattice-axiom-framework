@@ -7,6 +7,7 @@ Started 2026-11-20T15:42Z (date -u). Claude Opus 5.5 max, Mac mini worker 2. Res
 
 ## Status (updated in place)
 
+- Step 4 (H2' covariance clause: margin (M), no connectedness) written 2026-11-20T16:15Z.
 - Step 3 (Lemma SYM: (H-flip) removed) written 2026-11-20T16:09Z.
 - Step 2 ((S-chart)) written 2026-11-20T16:06Z.
 - Step 0 (record read) and Step 1 (judgement and plan) written 2026-11-20T16:01Z (date -u). Work steps follow.
@@ -157,11 +158,12 @@ for some localisation, not necessarily the prescribed one). Put F_s(h) := (F(h) 
 (c) In general, total F_s(h) = total F(h) - D(h)/2, where D(h) := log I_Omega(h) - log I_(-Omega)(h) is the one-scale
     cut comparison between Omega and -Omega at the same h.
 *Proof.* (a) Each property is linear or convex in the family; the disc is symmetric under h -> -h. (b), (c): for real
-h the total of F(-h) is log I_Omega(-h) - ... = log I_(-Omega)(h) - ... by (E), with the same scalar, N and G (they do
-not depend on h: N and G are the Gaussian families of the frame, and the scalar is h-free up to the h^N of Lemma SC,
-which is even if N is even and in any case cancels in every difference of totals at one h). So the total of F_s(h)
-is total F(h) - D(h)/2 for real h; both sides are holomorphic in h on the disc, so the identity holds on it (identity
-theorem in the single variable h, on a disc). If Omega = -Omega then D = 0. The branch of each logarithm is fixed at
+h the total of F(-h) is log I_Omega(-h) - c = log I_(-Omega)(h) - c by (E), with the same h-free c (the separated
+scalar, N and G: N and G are h-free families by row 1293 3.1, and the h-family is written with the normalized
+Gaussian mu_W in B, so no power of h enters it; the h^N of Lemma SC relates only the value at h = g to the actual
+integral). The identity total F_s(h) = total F(h) - D(h)/2 with D(h) := total F(h) - total F(-h) is algebra; the content
+is that for real h, D(h) = log I_Omega(h) - log I_(-Omega)(h). If Omega = -Omega, D vanishes for real h, hence on the
+disc (identity theorem for the holomorphic function D of one variable). The branch of each logarithm is fixed at
 h = 0, where P(0, B) = 0 and I_Omega(0) > 0. QED
 
 **3.3 Corollary PE' (Theorem PE without (H-flip); PROVED GIVEN (S), (H-an) for some localisation family, (H-tail)).**
@@ -187,3 +189,59 @@ Corollary FC-s) is not covered by that route.
 replaces it, and for a shell-even cut it is replaced by the one-scale cut comparison D, which row 1293 4.3 already
 needed. (H-an)/(H-an') stay OPEN but are now open as existence statements for some localisation, not as readings of
 CMP 116.
+
+## Step 4. The core clause of Lemma H2' (cross-admission): what it really needs (written 2026-11-20T16:15Z by date -u)
+
+**4.0 The clause.** Row 1278 2.3 argued cross-admission (H2) by continuing a psi-formed member's covariance identity
+P_(rz)(G; rW) = P_z(G; W) from its creation class to the whole absolute core "by the identity theorem", and asked for
+connectedness of the core (not found stated). Row 1284 2.1 weakened this to real paths from each datum to the creation
+class and left the path on large tori OPEN.
+
+**4.1 How EM proves covariance (READ).** EM does not continue covariance over the data. At each real datum W of "the
+admitted real common covariance class" it changes variables B -> O_(r,W) B (EM L742-748; the orthogonal map with
+V'(rW, O_(r,W) B) = r V'(W, B), EM L643-647), which transports the cut, the response, the measure factors and the point.
+This is pointwise in W. What it needs from the INHERITED members is stated at EM L647-653: "There is an open real
+fluctuation ball on which all inherited backgrounds have their required covariance ... The earlier backgrounds used by
+the actual step also have to lie in their own covariance classes throughout the retained real cut." The identity
+theorem is used only for PARAMETERS ("On a connected complex parameter domain a covariance identity of holomorphic
+terms continues from an open full-dimensional real slice", EM L748-751), and parameter domains are products of discs.
+
+**4.2 Proposition H2-cov (the covariance clause of cross-admission; PROVED GIVEN (M) below).** Let (M) be the
+statement: the supplier's requirement of EM L652-653 holds with a fixed relative margin mu_m > 0, that is, for every
+frame and step, the earlier backgrounds produced by the real cut enlarged by the factor 1 + mu_m still lie in the
+inherited members' covariance classes. Let phi, psi be two frames at one step k with |theta^phi_j - theta^psi_j| <=
+Z_j for j <= k (the drift of row 1293 5.1 or the account's), and let the floor be so high that
+delta(theta - Z)/delta(theta) <= 1 + mu_m for all theta above it. Then every psi-formed member read by the phi-step has
+its covariance at every background the phi-step uses, so EM's change of variables gives the covariance of the phi-step's
+output with psi-formed inputs, with no connectedness of any data domain.
+*Proof.* delta(y) = A_1 y^(-1/2) (log y)^(p_0) is decreasing for y > e^(2 p_0) (EM L333-345), so the phi-cut is at most
+the psi-cut times delta(theta^psi - Z)/delta(theta^psi) <= 1 + mu_m, at every level read; the created covariance radii
+c_e eps(theta) have the same form (EM L653-656), so the same ratio bounds them. By (M) applied to the psi-frame, the
+backgrounds of the enlarged psi-cut, which contain those of the phi-cut, lie in the psi-members' covariance classes.
+Then EM L742-748 applies verbatim. QED
+With Z = C theta^(1/2) (log theta)^(p_0) (the account's drift) the ratio is 1 + O(theta^(-1/2) polylog), so any fixed
+mu_m > 0 is enough above a floor. (M) is a margin statement of the same kind as EM's other margins (its target radii
+enlarged by 1 + beta_s, EM L507-509; "c_e is fixed by the domain margin", EM L656); it is ARGUED as a reading, not
+found stated with that wording.
+
+**4.3 Remark (the continuation route is the wrong tool; ARGUED, the topological input recalled, not read).** For SU(2),
+Luscher's charge (CMP 85 (1982), recalled) is an integer, constant on connected sets of lattice fields whose plaquettes
+are all within a small fixed distance of 1. A smooth charge-one connection of scale R, transported onto a lattice of
+spacing 1, has plaquette defects of order R^(-2); on tori of side large against R it lies in any core that bounds
+plaquette defects by a fixed multiple of R^(-2), while the trivial field has charge zero. So "the core is connected"
+fails on large tori whenever the core's defect bound is below Luscher's constant, and a continuation over the data could
+at most work sector by sector, which needs connectedness of curvature sublevel sets inside a sector (OPEN, and not
+needed after 4.2).
+
+**4.4 Effect.** Lemma H2' of row 1278 loses its geometric clause: (H2) is PROVED GIVEN the readings (R3)-(R5) of row
+1278, row 1267's READ list of where the frame enters, and the margin reading (M). Row 1284's open path clause (its 2.1)
+is not needed.
+
+**4.5 A note on (H-an), from the same reading.** EM states the principle that row 1293 3.7 needed: "The fixed-domain
+step and its normally convergent expansion give joint holomorphy with the new parameters" (EM L882-885). With Lemma SC
+(Step 2) the chart scale h is a parameter that enters the integrand holomorphically, and on the cut the per-piece size
+of the non-Gaussian part is at most C |h| rho^3, while the field size in physical units is |h| rho, so EM's smallness
+condition s(1 + D_*) <= eps_step (EM L863-868) holds on |h| <= c_* rho^(-3) above a floor (s = |h| rho/a_(*,0) <=
+c_* rho^(-2)/a_(*,0)). So (H-an) and (H-an') are the one-step theorem on the h-extended parameter domain: a supplier
+premise of exactly EM's kind (EM inputs 1-3 on "the requested field, coupling and remainder parameter domains"), with
+the h-disc added. ARGUED, as in row 1293 3.7; no upgrade to PROVED is claimed.

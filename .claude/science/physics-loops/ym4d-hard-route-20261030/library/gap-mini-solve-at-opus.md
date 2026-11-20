@@ -7,6 +7,7 @@ Started 2026-11-20T15:42Z (date -u). Claude Opus 5.5 max, Mac mini worker 2. Res
 
 ## Status (updated in place)
 
+- Step 3 (Lemma SYM: (H-flip) removed) written 2026-11-20T16:09Z.
 - Step 2 ((S-chart)) written 2026-11-20T16:06Z.
 - Step 0 (record read) and Step 1 (judgement and plan) written 2026-11-20T16:01Z (date -u). Work steps follow.
 
@@ -120,3 +121,69 @@ integrand as functions on the fibre is carried along by it; this last sentence i
 **Verdict.** (S-chart) leaves row 1293's input list: PROVED for the integrand (Lemma SC) and READ for the account's
 coordinates (2.1). Its localisation part is (H-an). Rows that use (S-chart) (row 1293 5.3, Corollary FC-s) now rest on
 (S), (H-flip) and (H-an') only.
+
+## Step 3. (H-flip) leaves the input list: symmetrise the localisation (written 2026-11-20T16:09Z by date -u)
+
+Rule 0a: grep of `FINISH.md`, `library/open-core.md` and `library/*.md` for "symmetris", "symmetriz", "even part",
+"F(h) + F(-h)", "(H-flip)": "(H-flip)" occurs in FINISH.md once (row 1293's RESULT) and in the files of rows 1280,
+1284 (as P4) and 1293; "even part" occurs in row 1293 4.3, where it is formed WITH (H-flip). The ten library files that
+mention symmetrisation and localisation together treat propagators, averages and trace norms (a2-curved, carrier-adopt,
+conditional-normalization, fc-r2, gap-conv-in-law-check-opus; b98p5*, b99, cr-prem only by spelling). No match for
+symmetrising a localisation in the fluctuation scale. `library/open-core.md` has no (H-flip) entry.
+
+**3.0 Why this matters.** (H-flip) is one of the three inputs of Theorem PE (row 1293) that must be read against
+Balaban's CMP 116, which is not on this machine. Row 1293 4.2 ARGUED it from the account's transcription. Here it is
+removed: every consumer reads only physical totals, and the total is exactly even in h, so the even part of ANY
+localisation family can be used.
+
+**3.1 Two facts on file.**
+- (T) Consumers read totals only. The coefficient readout b_j is linear and "unchanged ... by changing coherent
+  localizations of the same physical total" (EM L1202-1204, proof L1218-1219: "two coherent localizations of the same
+  total give the same kernel"). The comparison norm |||T|||_j of row 1267 3.1 is the infimum of ||H||_(j,kappa;a_*)
+  over regular pointed families H whose total is T + const. Regular families form complex linear spaces (EM L215-218),
+  and covariance, companions and the readout are linear (EM L251-273). Row 1293 uses Theorem PE only through f_(k+1)
+  (5.1, 5.2) and through |||.||| (5.3).
+- (E) The total is even in h. With (S)(a)-(c) of row 1293 (centred Gaussian, cut Omega, integrand P with
+  P(-h, -B; W) = P(h, B; W) by its Lemma 3.3; for the account's integrand this is Lemma SC of Step 2), put
+  I_Omega(h; W) := int mu_W(dB) 1_Omega(B) exp P(h, B; W). The change of variables B -> -B (measure preserving for mu_W)
+  gives, for real h, I_Omega(-h; W) = I_(-Omega)(h; W). In particular I_Omega(-h) = I_Omega(h) when Omega = -Omega.
+
+**3.2 Lemma SYM (PROVED, elementary).** Let F(h), |h| < r, be any family of regular pointed families on the absolute
+core, holomorphic in h, real for real h, with ||F(h)|| <= K_a, meeting the hypotheses of em:prop-companion-coefficient
+uniformly in h, and with total log I_Omega(h; W) - (scalar) - N - G at every real h and real datum W (that is, (H-an)
+for some localisation, not necessarily the prescribed one). Put F_s(h) := (F(h) + F(-h))/2. Then:
+(a) F_s is holomorphic and even in h, real for real h, ||F_s(h)|| <= K_a, and meets the same hypotheses (linearity).
+(b) If Omega = -Omega, the total of F_s(h) equals the total of F(h) for every |h| < r.
+(c) In general, total F_s(h) = total F(h) - D(h)/2, where D(h) := log I_Omega(h) - log I_(-Omega)(h) is the one-scale
+    cut comparison between Omega and -Omega at the same h.
+*Proof.* (a) Each property is linear or convex in the family; the disc is symmetric under h -> -h. (b), (c): for real
+h the total of F(-h) is log I_Omega(-h) - ... = log I_(-Omega)(h) - ... by (E), with the same scalar, N and G (they do
+not depend on h: N and G are the Gaussian families of the frame, and the scalar is h-free up to the h^N of Lemma SC,
+which is even if N is even and in any case cancels in every difference of totals at one h). So the total of F_s(h)
+is total F(h) - D(h)/2 for real h; both sides are holomorphic in h on the disc, so the identity holds on it (identity
+theorem in the single variable h, on a disc). If Omega = -Omega then D = 0. The branch of each logarithm is fixed at
+h = 0, where P(0, B) = 0 and I_Omega(0) > 0. QED
+
+**3.3 Corollary PE' (Theorem PE without (H-flip); PROVED GIVEN (S), (H-an) for some localisation family, (H-tail)).**
+With F as in 3.2 and Omega = -Omega (Balaban's cut, row 1293 4.1): the coefficient f_(k+1) = b(F_s(g)) by (T), and by
+the even Cauchy estimate (row 1293 Lemma 3.4) applied to F_s,
+    |||T(F^u_(k+1)) - T(F_s(0))||| <= ||F_s(g) - F_s(0)|| <= K_a (g/r)^2/(1 - (g/r)^2),
+with T(F_s(0)) the h = 0 total, a Gaussian tail by (H-tail). For a cut that is even only up to a thin shell (row 1293
+4.3, Lemma AS), the same bound holds with the extra term |||D(g)|||/2 + |||D(0)|||/2, and D is a cut comparison at one
+scale: exactly the input that row 1293 4.3 calls eta (Lemma SW with (E+) of row 1280), now needed WITHOUT (H-flip).
+So Theorem PE and its consequences 5.1-5.2 of row 1293 hold with (H-flip) deleted from their inputs; Corollary FC-s
+(5.3) holds with (H-flip) deleted, applying 3.2 to the two-variable family F(h, tau) (the symmetrisation is in h only;
+tau is untouched).
+
+**3.4 What (H-an) now asks.** By (T), (H-an) and (H-an') need not be statements about the supplier's prescribed
+localisation: ANY holomorphic family of regular localisations of the h-family's totals with the stated bounds will do,
+provided at h = g its total is the actual step total on every compatible torus (then f_(k+1) = b(F(g)) by (T)). So
+(H-an) is a statement that can be met by a localisation we build ourselves (for example from the ultralocal cluster
+expansion already in `library/ultralocal_cluster_expansion.md`, after a decoupling of the Gaussian), with no reading of
+CMP 116. It is still OPEN here. Row 1284 attacks the coefficient part of (PE) by a global route; the family part (for
+Corollary FC-s) is not covered by that route.
+
+**Verdict.** (H-flip) is removed from the carry's input list (Lemma SYM, PROVED); for an exactly even cut nothing
+replaces it, and for a shell-even cut it is replaced by the one-scale cut comparison D, which row 1293 4.3 already
+needed. (H-an)/(H-an') stay OPEN but are now open as existence statements for some localisation, not as readings of
+CMP 116.

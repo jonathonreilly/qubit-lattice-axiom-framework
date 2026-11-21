@@ -21,6 +21,8 @@ attempt on the same problem; this row does not read it.
 - 2026-11-21T07:34Z (date -u): Section 3 written (Proposition TOP, Corollary TOP1, Lemma FR, the three cases).
 - 2026-11-21T07:35Z (date -u): criteria of the guide run written (Section 5); numeric lock acquired (holder row1360-fable,
   memory free 66 percent by memory_pressure).
+- 2026-11-21T07:39Z (date -u): guide run done and lock released; results in 5.3 (C0, C1 passed; C2 failed marginally at
+  one step, reported).
 
 ## 1. How best to attack it (decision, written 2026-11-21T07:31Z, date -u)
 
@@ -334,4 +336,38 @@ four successive one-plaquette ratios, each measured forward and backward).
 - Result: the thin test "passes" at beta = 2.3 if R_1 >= 0.996, and "fails at guide level" if R_1 plus three
   standard errors is below 0.99. The same for R_2.
 - What the run cannot show: a bound. It cannot replace Lemma T at order one.
+
+**5.3 Results (run 2026-11-21T07:39Z, date -u; one job at a time under the numeric lock, plain numpy heat bath, script and log in a
+scratch folder outside the repository; total run time about 3 minutes, peak memory 40 MB).**
+
+| Quantity | Lattice, sweeps | Value |
+|---|---|---|
+| C0 self-test | | 6e-17 (product), 7e-14 (staple): passed |
+| C1 mean plaquette, beta = 2.3 | 6^4, 300 + 1500 | 0.6040 +- 0.0006: passed |
+| R_1 = <exp(-2 beta q_p)>, beta = 2.3 | 6^4, all plaquettes | 0.3382 +- 0.0023 |
+| R_1, beta = 1.0 | 4^4, 300 + 3000 | 0.99288 +- 0.00055 |
+| R_1, beta = 0.5 | 4^4, 300 + 3000 | 1.00016 +- 0.00024 |
+| stack 2 x 2, beta = 2.3, forward ratios | 4^4, 500 + 8000 each | 0.313(19), 0.451(37), 0.422(28), 0.773(46) |
+| the same, backward ratios (inverse steps) | | 3.23(13), 2.42(13), 1.99(9), 1.45(7) |
+| C2 forward times backward | | 1.01, 1.09, 0.84, 1.12 |
+| R_2, product of the forward ratios | | 0.046 |
+| R_2, inverse product of the backward ratios | | 0.044 |
+
+**5.4 Reading (GUIDE).**
+
+- C2 failed at the third step by a small amount (0.84 against the preset window 1 +- 0.15; the statistical
+  error of that product is about 0.07). Averages of exponentials are biased low on short runs. I report the
+  failure and did not rerun. The two estimates of R_2 agree (0.046 and 0.044), and the conclusion below does
+  not depend on a factor of two.
+- At beta = 2.3 the thin test fails at guide level for B = 1 and for B = 2: R_1 = 0.338 and R_2 about 0.045,
+  against the required 0.996. So also at a coupling of order one, where (BS*) was meant to be decided by a
+  computation, the coarse model of row 1345 is not in (10*), for the block sides tested.
+- The fourth step of the stack costs least (0.77): the stack of 2 x 2 has as many monopole cubes (8) as the
+  stack of three. This is the perimeter effect of a thin 't Hooft loop.
+- At beta = 1.0 the value 0.9929 is below 0.9961 by about six standard errors, and it agrees with the leading
+  term 1 - 32 (beta/4)^6 = 0.9922 of the strong-coupling series (four cubes through the plaquette, each with the
+  sheet weight 4 (beta/4)^6 of check 1357 L101). At beta = 0.5 the value is one within errors (series: 0.99988).
+  So the true ratio crosses the bound of Lemma D1 near beta = 0.9 (GUIDE; by the series, 32 (beta/4)^6 = 2/513
+  at beta = 0.89). This is far below the bulk crossover. In the pivot variables the class (10*) is a class of
+  bare strong coupling and nothing else.
 

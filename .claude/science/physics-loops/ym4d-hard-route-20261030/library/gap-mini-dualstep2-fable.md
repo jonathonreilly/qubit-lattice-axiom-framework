@@ -13,6 +13,8 @@ attempt on the same problem; this row does not read it.
   Rules), the queue row 1360. Next: the RESULT lines of rows 1351, 1354, 1356, 1357, then `parts/gap.md`.
 - 07:05Z (date -u): read row 1354 (`library/gap-mini-nphys-fable.md`, whole): classes (10), (10*), Lemma B0,
   Proposition B, Corollary B1, Theorem E, the open step (BS*) of its 6.1 and the three stops of its 6.2.
+- 07:17Z (date -u): read check row 1357 (verdict paragraphs on Theorem E, (BS*), the packet Fourier transform) and
+  the RESULT lines of rows 1332, 1340, 1341, 1345, 1348, 1351, 1352, 1353, 1355, 1356. Row 1358 not read.
 
 ## 0. Plan (to be replaced by the real plan after the reading step)
 

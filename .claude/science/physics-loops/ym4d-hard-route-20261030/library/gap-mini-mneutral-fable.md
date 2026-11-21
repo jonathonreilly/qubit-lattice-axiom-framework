@@ -11,11 +11,13 @@ checked by anyone else.
 ## 0. Status log (times from `date -u` in the command that wrote the line)
 
 - 2026-11-21T06:14Z: file created (save protocol). Nothing read yet beyond the queue row, GOAL.md and my navigation notes.
-- 06:32Z: read the row, GOAL.md, the rule sections of FINISH.md, row 1353's file in full, the sibling file of row 1354, parts/gap.md L8-104, Theorem ZD-c, Identity I1, row 1168 (19)-(21), the route tables of rows 1180 and 1184; registry grep run; Section 1 written.
+- 06:32Z: read the row, GOAL.md, the rule sections of FINISH.md, row 1353's file in full, the sibling file of row 1354, parts/gap.md L8-104, Theorem ZD-c, Identity I1, row 1165 (19)-(21), the route tables of rows 1180 and 1184; registry grep run; Section 1 written.
 - 06:42Z: Sections 2 and 3 written (Lemma M1, Corollary M2, choice of attack). Next: Way 1, transport with comparison of all eigenvalues.
 - 06:47Z: Section 4 written (Way 1: Proposition TR, Corollaries TR1 and TR2, Lemma UVC; supplier absent). Next: Way 2, coding.
 - 06:50Z: Lemma VOL (4.7) and Section 5 written (Way 2: Proposition COD via row 1165 (19); supplier absent). Next: Way 3, the Wilson transfer operator with discrete time.
 - 06:52Z: one-second guide check of Proposition TR on one link run under the numeric lock (pass); 4.8 (Lemma GAUSS, guide record) and Section 6 written (Way 3: Lemma JF, no count from the jump form).
+- 06:54Z: Section 7 written (verdict, the statement (REG-vac), fact tests, notes for the lead). Next: re-read of every PROVED item, then the RESULT line.
+- 06:56Z: every PROVED item re-read; corrections made (site count 2^211 not 2^270; u_j = max(2 w_j, 3); tests of 4.6 and 7.3 relabelled as implications; z^+ remark marked ARGUED; row numbers 1165/1166, 682, 913, 1207 corrected; 4.8 moved into place; the digest of row 915 cited). RESULT line written. The numeric lock was released in the same command as the run (its `date -u` printed 06:50Z); no other run.
 
 ## 1. Repo search and inputs (written 06:32Z, `date -u`)
 
@@ -60,7 +62,7 @@ Two items had no match and are used below.
 - Lipschitz transport with comparison of ALL eigenvalues (E. Milman's observation). `grep` for "Milman": 3 files,
   all saying "not tried" (`gap-transport-check.md` L183, row 682; `gap-afield-a-max.md` L188 and L341, row 1031,
   item F6: "not tried, needs a bounded perturbation; blind"; `gap-target-max.md` L156, row 913). "Caffarelli", "Brenier",
-  "curvature-dimension": 0 files. Section 3 takes this route, because it is the one tool I know that gives the
+  "curvature-dimension": 0 files. Section 4 takes this route, because it is the one tool I know that gives the
   gap and the count together, in the law of the model, with no supremum over boundary values.
 
 Credits. K. Wilson (the action and the transfer operator); K. Osterwalder and E. Seiler, M. Luscher (transfer
@@ -105,8 +107,8 @@ For B = P_0 T^w: sigma = s(2w). So, for one box, one integer w >= 1 and one tole
 
 - (i) the rank-one test at tolerance delta holds at the time w if and only if s(2w) <= delta^2/(1 - delta^2). For
   delta = 2/5 this is s(2w) <= 4/21. Row 1353, Corollary BT2 (i), has the weaker bound 4/9.
-- (ii) Hence (M-neutral) gives (N-phys) with u_j = 2 w_j and the margin 4/21 in place of 1/2, with no loss in the
-  time. In the other direction, s(u) <= 1/2 gives s(3u) <= 1/8 < 4/21, so the test holds at any integer time
+- (ii) Hence (M-neutral) gives (N-phys) with u_j = max(2 w_j, 3) and the margin 4/21 in place of 1/2, with no loss
+  in the time (s does not increase with the time). In the other direction, s(u) <= 1/2 gives s(3u) <= 1/8 < 4/21, so the test holds at any integer time
   w >= 3u/2.
 - (iii) The threshold of the test is 1/sqrt 2. If the test holds at a time w with a tolerance delta < 1/sqrt 2,
   then q := delta^2/(1 - delta^2) < 1, the neutral gap obeys x_1^(2w) <= q, and the test at tolerance 2/5 holds at
@@ -116,7 +118,7 @@ For B = P_0 T^w: sigma = s(2w). So, for one box, one integer w >= 1 and one tole
 - (iv) The test is a statement about two numbers. With Z_+(t) = Tr (P_0 T^t): the test at tolerance delta holds
   at w if and only if lambda_0^(2w) >= (1 - delta^2) Z_+(2w). So a proof needs an upper bound U >= Z_+(2w) and a
   lower bound <phi, P_0 T^w phi> >= l for one unit vector phi, with l^2 >= (1 - delta^2) U. For delta = 2/5 the two
-  bounds together may lose the factor 25/21 in total, on a lattice of 2 w n^3 >= 2^270 sites.
+  bounds together may lose the factor 25/21 in total, on a lattice of 2 w n^3 >= 2^211 sites (n >= 2^70 in (N-phys)).
 
 Item (iv) is the two-period form on file (Lemma TP of row 1342) with a trial vector in place of the second
 period; row 1165 (19) uses the square root of the slice marginal as the trial vector. I state it because it fixes
@@ -127,8 +129,8 @@ the choice of attack in Section 3.
 1. What the record says. (M-neutral) is the crux of the gap lane. Rows 1180, 1184 and 1353 list about 25 routes
    with their first failing steps, and rows 1188-1259 found that further blind lists return items on file. The
    forms I derived again in this session are all in the table of Section 1. So this row does not make a list.
-2. What kind of statement it is. By Corollary M2 (iv) the test compares two partition functions of more than
-   2^270 sites up to a total factor 25/21. A bound that loses any fixed factor per site, or per unit of
+2. What kind of statement it is. By Corollary M2 (iv) the test compares two partition functions of at least
+   2^211 sites up to a total factor 25/21. A bound that loses any fixed factor per site, or per unit of
    boundary, is useless. This is on file as Proposition FR of row 1332 (tolerance of order 1/volume per site)
    and as Lemma R4 of row 1180 (an operator comparison on L^2 of Haar measure loses the vacuum energy). A proof
    must therefore use a relation that is exact at rank one. I know three kinds.
@@ -157,10 +159,15 @@ On file before this section. Transport maps for functional inequalities: route B
 (`gap-skeleton-max.md` L366-369, L401: a trivializing map along the coupling for the four-dimensional measure;
 verdict there "pointwise (T) fails in a solvable model; (T-avg) is the conclusion"); row 682
 (`gap-transport-check.md` L183: the Lipschitz results of Kim and Milman and of Mikulincer and Shenfeld "not
-tried"); item F6 of row 1031. Moser's map onto the vacuum law and a minorization in those coordinates: statement
+tried"); item F6 of row 1031; the literature digest of row 915 (`library/prior/gap-lit-transport.md` L36-44:
+the theorems of Shenfeld and of Mikulincer and Shenfeld, quoted, with the verdict that a lattice use, for that row's targets (VIR-log) and (SUPER-D), "would also need a
+separate transfer-operator argument that converts transport control into a level-versus-vacuum magnetic-action
+bound"). Moser's map
+onto the vacuum law and a minorization in those coordinates: statement
 (A) of row 1132 (`gap-council-op-astra.md`, "Choice of coordinates" and "First statement (A)"), with a consumer for
 the gap. Vacuum log-Sobolev and hypercontractivity: rows 940, 941. What I did not find: a map onto the vacuum
-law of a slice used for ALL eigenvalues, which gives the count. That is this section.
+law of a slice used for ALL eigenvalues, which gives the count. That is this section: a transfer-operator
+argument of the kind the digest of row 915 found missing (there for another target), for continuous time.
 
 ### 4.1 Proposition TR (PROVED; the observation is E. Milman's, for contracting maps)
 
@@ -248,8 +255,8 @@ Proof. The hypothesis is b_j L_j^2 (log n_j + 1.49) <= t_j <= n_j/1024. By (i), 
 6144 (log n_j + 1.49)/n_j. QED
 
 So on a trajectory where the gap of the box of one physical side L stays bounded in units of 1/L as the cutoff
-is removed (z^+(L) finite; every massive or massless continuum theory has this), the route through TR1 fails
-for late j. The reason is in (ii): the reference counts the lattice modes, 3 n_j^3 of them, and the true count
+is removed (z^+(L) finite), the route through TR1 fails for late j. (ARGUED: a continuum theory with any
+neutral state of finite energy in the box has z^+(L) finite.) The reason is in (ii): the reference counts the lattice modes, 3 n_j^3 of them, and the true count
 is physical. A reference with a physical count is needed.
 
 ### 4.5 Corollary TR2 (PROVED from Proposition TR; a reference with a physical count)
@@ -277,14 +284,17 @@ call the hypothesis (GLUE-LIP). It is the lane's glue lemma in transport form (r
 
 ### 4.6 Supplier, tests, and the first failing step
 
-- Tests (PROVED from Corollary TR1 (i)). The hypothesis fails where it must. A model whose box has a gap of order
-  1/n (compact U(1) at weak coupling, or a product with a massless factor, restricted to functions of that
-  factor) admits no map with L^2 = o(n). So the hypothesis is selective through its constant only. It is of the
+- Tests (PROVED as an implication from Proposition TR; that the comparison models have a box gap of order 1/n
+  is the lane's test input, not proved here). The hypothesis fails where it must. A model whose box has a gap
+  of order 1/n (compact U(1) at weak coupling, or a product with a massless factor, restricted to functions of
+  that factor) admits no map with L^2 = o(n). So the hypothesis is selective through its constant only. It is of the
   kind (K-one) of lead rule W2: a property of the measure at one scale with a number in it.
-- Supplier (from memory, NOT read in this session; the lane's notes are row 669 L368-369 and row 682 L183).
-  The known Lipschitz maps come from convexity: Caffarelli (a uniformly log-concave target on a Euclidean
-  space), Kim and Milman (the heat flow), Mikulincer and Shenfeld, and Shenfeld (the Polchinski flow under the
-  multiscale Bakry-Emery condition). On file for the vacuum measure: the pointwise curvature condition fails
+- Supplier. The known Lipschitz maps come from convexity. Quoted in the digest of row 915
+  (`library/prior/gap-lit-transport.md` L36-42, read there, not re-read by me): Shenfeld (a map from the
+  Gaussian free field with Lipschitz constant exp(-(1/2) integral of the lower Hessian bounds of the
+  renormalized potentials along the Polchinski flow)); Mikulincer and Shenfeld, Theorem 1.1 (kappa-log-concave
+  targets on a Euclidean space). Recalled from memory, not read: Caffarelli (a uniformly log-concave target),
+  Kim and Milman (the heat flow). The digest's verdict for lattice SU(2) is "no direct application". On file for the vacuum measure: the pointwise curvature condition fails
   above beta = 1, the mid-slice form above 2, the both-neighbours form above 3/2 (row 941), and the multiscale
   form did not close at the window (rows 957, 968). So no convexity supplier reaches a coupling of order one.
 - The vacuum measure is not explicit. Row 941 gives log Omega = -V/2 + Lambda(beta x) - const with Lambda convex
@@ -311,6 +321,36 @@ exp(-c beta n^3) with c of order one (such slices exist for even n; their weight
 estimate in the time direction). So L >= exp(c beta/9 - C): a map from Haar measure has a Lipschitz constant
 that grows exponentially in the bare coupling. Together with Lemma UVC this makes Corollary TR1 a tool for one
 coupling of order one. Along the trajectory the reference must be local in scale, as in Corollary TR2.
+
+### 4.8 Two controls of Way 1 (added 06:52Z, `date -u`)
+
+**Lemma GAUSS (PROVED; the hypothesis of Corollary TR2 holds with L = 1 for a free massive field).** On a finite
+periodic lattice let H = (1/2) sum of pi_x^2 + (1/2) <phi, A phi> with A = -Laplacian + m^2, m > 0. Its vacuum
+measure is the Gaussian measure with covariance Sigma = (1/2) A^(-1/2). Cut the lattice into blocks and let A_ref
+be A without the bonds that join different blocks. Then A >= A_ref >= m^2, so A^(1/2) >= A_ref^(1/2) and
+Sigma <= Sigma_ref = (1/2) A_ref^(-1/2) (the square root is operator monotone and the inverse reverses the
+order). The reference measure is the product of the vacuum measures of the blocks. The linear map
+S = Sigma^(1/2) Sigma_ref^(-1/2) sends it to the vacuum measure of H, and
+norm(S)^2 = norm(Sigma_ref^(-1/2) Sigma Sigma_ref^(-1/2)) <= 1. So S is a contraction, and Proposition TR gives
+kappa_k(H) >= kappa_k(sum of the block Hamiltonians) for every k. QED
+
+So the hypothesis is not empty: for a free field with a mass the gluing map is a contraction, the block gap is
+at least m, and the block count is physical. For m = 0 the constant mode of a block has no gap and the count
+of the reference is infinite, as it must be. For the gauge theory the same construction drops the plaquettes
+that join the cubes. There the map cannot be a contraction: by Proposition TR its constant satisfies
+L^2 >= eps_1/(E_1 - E_0), and for cubes that are small against the correlation length the gap eps_1 of a cube is
+far above the gap of the box (ARGUED: eps_1 is a cavity gap of the order of the inverse side, or the gap
+3/(2b) of a link that lies in no plaquette of V_c).
+
+**GUIDE (one link; a control of the normalizations of 4.2 and 4.3, not a proof).** For one copy of the
+three-sphere, nu proportional to exp(b x) dA, and the radial monotone map S, I computed the first ten
+eigenvalues kappa_k of the form of nu on class functions and the Lipschitz constant L. Criterion written before
+the run: kappa_k L^2/(k(k + 2)) >= 1 for k = 1, ..., 10. Result: the minimum over k is 1.43 at b = 0.5 (L = 1.195),
+6.96 at b = 2.3 (L = 2.630) and 130 at b = 5 (L = 11.25). No violation. The value of L agrees with the hand
+formula L^3 = 2 I_1(b) e^b/b at the antipode (2.63 at b = 2.3). The run took one second under the numeric lock
+(holder row1356-mneutral, acquired and released; memory 66 percent free), plain floating point, script
+`tr_check.py` kept in the worker's scratch folder, not in the repository. It can refute a normalization. It
+proves nothing.
 
 ## 5. Way 2: a coding by independent variables, fed to the Hellinger test (written 06:50Z, `date -u`)
 
@@ -375,34 +415,6 @@ links l of A of Prob(R_l > r).
   It is a statement in the law of the model and it is not finite. It implies the mixing statements that method
   34 could not supply.
 
-### 4.8 Two controls of Way 1 (added 06:52Z, `date -u`)
-
-**Lemma GAUSS (PROVED; the hypothesis of Corollary TR2 holds with L = 1 for a free massive field).** On a finite
-periodic lattice let H = (1/2) sum of pi_x^2 + (1/2) <phi, A phi> with A = -Laplacian + m^2, m > 0. Its vacuum
-measure is the Gaussian measure with covariance Sigma = (1/2) A^(-1/2). Cut the lattice into blocks and let A_ref
-be A without the bonds that join different blocks. Then A >= A_ref >= m^2, so A^(1/2) >= A_ref^(1/2) and
-Sigma <= Sigma_ref = (1/2) A_ref^(-1/2) (the square root is operator monotone and the inverse reverses the
-order). The reference measure is the product of the vacuum measures of the blocks. The linear map
-S = Sigma^(1/2) Sigma_ref^(-1/2) sends it to the vacuum measure of H, and
-norm(S)^2 = norm(Sigma_ref^(-1/2) Sigma Sigma_ref^(-1/2)) <= 1. So S is a contraction, and Proposition TR gives
-kappa_k(H) >= kappa_k(sum of the block Hamiltonians) for every k. QED
-
-So the hypothesis is not empty: for a free field with a mass the gluing map is a contraction, the block gap is
-at least m, and the block count is physical. For m = 0 the constant mode of a block has no gap and the count
-of the reference is infinite, as it must be. For the gauge theory the same construction drops the plaquettes
-that join the cubes. There the map cannot be a contraction: by Proposition TR its constant satisfies
-L^2 >= eps_1/(E_1 - E_0), and the small-volume gap eps_1 of a cube is far above the gap of the box.
-
-**GUIDE (one link; a control of the normalizations of 4.2 and 4.3, not a proof).** For one copy of the
-three-sphere, nu proportional to exp(b x) dA, and the radial monotone map S, I computed the first ten
-eigenvalues kappa_k of the form of nu on class functions and the Lipschitz constant L. Criterion written before
-the run: kappa_k L^2/(k(k + 2)) >= 1 for k = 1, ..., 10. Result: the minimum over k is 1.43 at b = 0.5 (L = 1.195),
-6.96 at b = 2.3 (L = 2.630) and 130 at b = 5 (L = 11.25). No violation. The value of L agrees with the hand
-formula L^3 = 2 I_1(b) e^b/b at the antipode (2.63 at b = 2.3). The run took one second under the numeric lock
-(holder row1356-mneutral, acquired and released; memory 66 percent free), plain floating point, script
-`tr_check.py` kept in the worker's scratch folder, not in the repository. It can refute a normalization. It
-proves nothing.
-
 ## 6. Way 3: the same comparison for the Wilson transfer operator (written 06:52Z, `date -u`)
 
 (M-neutral) is about the Wilson operator, which has discrete time. Setting W: T = M C M on the Gamma-invariant
@@ -441,8 +453,9 @@ torus excess (BDD-Delta) beside the gap in units of the inverse side.
 
 ### 6.3 Why Way 1 does not transfer to discrete time (ARGUED; each inequality is on file)
 
-- C is a mixture of heat kernels: c_j = integral of e^(-(d^2 - 1) tau/2) against a probability measure in tau,
-  by the Hartman-Watson law (on file: `gap-tu-retry.md` L477). So 1 - C <= (mean of tau/2)(-Laplacian) on each
+- C is a mixture of heat kernels: c_j = integral of e^(-(d^2 - 1) tau/2) against a probability measure in tau.
+  This follows from the identity of Hartman and Watson, I_nu(r)/I_0(r) = integral of e^(-nu^2 t/2) eta_r(dt)
+  (recalled, not rebuilt here; the lane uses the same law at `gap-tu-retry.md` L477). So 1 - C <= (mean of tau/2)(-Laplacian) on each
   link. This bounds the jump form from ABOVE by the gradient form. The comparison of Way 1 needs it from below,
   and from below it holds only on low modes.
 - Between T = e^(-V/2) e^(-K) e^(-V/2) and e^(-(K+V)) the known relations are the Golden-Thompson inequality and
@@ -451,3 +464,73 @@ torus excess (BDD-Delta) beside the gap in units of the inverse side.
 - First failing step of Way 3. A comparison between the Wilson operator and a generator with continuous time
   that is tight at the vacuum. I found none. Without it Way 1 proves the test for Setting H only, and for the
   Wilson operator the three ways give the gap alone, through hypotheses of the kind (A).
+
+## 7. Verdict (written 06:54Z, `date -u`)
+
+(M-neutral) is NOT proved in this row. No counterexample is built and nothing in the chain is disproved.
+
+### 7.1 The three ways and where each stops
+
+| Way | Consumer (proved here unless a row is named) | Reaches | First failing step |
+|---|---|---|---|
+| 1, transport map (Section 4) | Proposition TR; Corollary TR1 (Haar reference); Corollary TR2 (product of block vacua) | gap and count together, for the lattice theory with continuous time | a Lipschitz bound uniform in the volume for one equivariant map onto the vacuum measure, at one coupling of order one, (LIP); or (GLUE-LIP) along the trajectory |
+| 2, coding (Section 5) | Proposition COD, through the Hellinger test of row 1165 (19) | the neutral seed for the Wilson operator | a coding of the periodic law with summable tails at one coupling of order one, (COD) |
+| 3, jump form (Section 6) | Lemma JF, a case of statement (A) of row 1132 | the gap of the Wilson operator; no count (6.2) | the minorization (A); and a tie between discrete and continuous time that is tight at the vacuum |
+
+### 7.2 The one statement where they stop
+
+(REG-vac), OPEN. At one coupling of order one, the vacuum of the periodic box is regular in the law of the
+model, uniformly in the volume, in one of the forms (LIP), (COD), (A). Along the trajectory the form must be
+local in scale: (GLUE-LIP), or a coding whose tails fall like the third power of the scale ratio in the
+ultraviolet (5.2), because a reference that counts lattice modes fails for late cutoffs (Lemma UVC, Lemma VOL).
+
+Each form is a statement of the kind (K-one) of lead rule W2, with a number in it. None is finite. None follows
+from anything on file. Each is at least as strong as the conclusion it serves: (LIP) gives every eigenvalue of
+the box, (COD) gives total-variation mixing of full slices, (A) gives the gap. So this row has not reduced
+(M-neutral). It has written the consumers of the comparison tools that work in the ground-state representation,
+and for each it has found that the supplier is missing.
+
+### 7.3 Fact tests of the hypotheses (lead rule W2; which statement each test binds)
+
+| Test | (LIP) with Corollary TR1 | (COD) | (A) and Lemma JF |
+|---|---|---|---|
+| compact U(1) at weak coupling, or a product with a massless factor | fails, as it must: a box gap at most c/n forces L^2 >= 6 n/(b c) (PROVED as an implication from TR1 (i)) | fails, as it must: the seed fails at every size (test table, `parts/gap.md` L281-283) | fails: row 1132, "Abelian and product comparisons" |
+| a weight with a first-order point (Proposition V, `gap-crux-fp.md` L356) | fails at the point (ARGUED: two vacua give a gap that is exponentially small in the cross-section) | fails (ARGUED, same reason) | fails (row 1132, "First-order comparison", ARGUED there) |
+| all late cutoffs at one physical size | Haar reference excluded (Lemma UVC, PROVED; Lemma VOL, PROVED with an ARGUED size); block reference not excluded | one exponential rate in lattice units excluded (ARGUED, 5.2) | not tested here |
+| free massive field | holds with L = 1 in the block form (Lemma GAUSS, PROVED) | not tested | not tested |
+
+No test separates Wilson SU(2) at the window from the comparison models before the hypothesis is proved. The
+hypotheses are selective only through their constants.
+
+### 7.4 What this row adds, in order of use
+
+1. Corollary M2: the rank-one test at tolerance delta is exactly s(2w) <= delta^2/(1 - delta^2). At 2/5 the bound is
+   4/21, not 4/9. The threshold of the test is 1/sqrt 2: below it the test gives a gap and, after a fixed
+   multiple of the time, the tolerance 2/5; at 1/sqrt 2 a projection of rank two passes. So a block step may be
+   judged at any fixed tolerance below 0.7.
+2. Proposition TR with Corollaries TR1 and TR2: the first tool on file that gives the count and the gap
+   together from one hypothesis in the law of the model. It is proved for continuous time. Lemma GAUSS shows
+   that its block form holds with constant 1 for a free massive field.
+3. Lemma UVC and Lemma VOL: what such a hypothesis must look like along the trajectory.
+4. Proposition COD: a coding is a sufficient supplier for the Hellinger test of row 1165.
+5. 6.2: a minorization or a jump-form comparison cannot give the count; for the Wilson operator the count
+   needs the engine or a new statement.
+
+### 7.5 For the lead
+
+- I would not queue a search for a Lipschitz map or a coding at the window: the known suppliers are convexity
+  (dead above beta = 1 to 2 by rows 941, 957, 968) and one-link couplings (dead above about 1). A new supplier
+  would be a new mechanism, and none is in sight. This agrees with row 998 9.5.
+- If a row ever has a candidate map or coupling, Sections 4 and 5 are its consumers, with explicit constants.
+- A check of this file can be short: Lemma M1 and Corollary M2 (half a page); Proposition TR, Corollaries TR1,
+  TR2, Lemmas UVC, VOL, GAUSS (min-max and elementary estimates); Proposition COD (a coupling of three copies);
+  Lemma JF and the example of 6.2. The items from memory are marked: the transport literature in 4.6, the
+  Hartman-Watson identity in 6.3, the ground-state facts of 4.2 (textbook, in outline).
+- The one-link guide run is recorded in 4.8. No other numeric run was made.
+
+### 7.6 What stays open
+
+(M-neutral), which is (N-phys) by Corollary M2; (REG-vac) in any of its forms; a tie between the Wilson operator
+and a generator with continuous time that is tight at the vacuum; the carry to late cutoffs; the mass gap.
+
+RESULT: Row 1356 (Claude Fable 5.2 max, Mac mini Claude worker 1; author only, checked by no one; one guide run of one second under the numeric lock; 06:14Z to 06:56Z by date -u). NOT solved: (M-neutral) is not proved, no counterexample is built, and nothing in the chain is disproved. PROVED here (by hand, unchecked): Lemma M1 and Corollary M2 (the rank-one test at tolerance delta holds at the time w if and only if s(2w) <= delta^2/(1 - delta^2), so the bound at 2/5 is 4/21 where row 1353 had 4/9; (M-neutral) gives (N-phys) with no loss in the time; the threshold of the test is 1/sqrt 2, below it the test gives a gap and after a fixed multiple of the time the tolerance 2/5, at it a projection of rank two passes); Proposition TR with Corollaries TR1 and TR2 (a map onto the vacuum measure with a Lipschitz constant L gives every eigenvalue of the box Hamiltonian above the vacuum, at least the reference eigenvalue over L^2, hence the gap and the count together and the test at times t >= b L^2 (log n + 1.49); proved for the lattice theory with continuous time; block form with the product of the block vacua as reference); Lemma UVC and Lemma VOL (a Haar reference cannot serve all late cutoffs at one physical size; any map from Haar measure has L^d >= 1/essinf of the density); Lemma GAUSS (for a free massive field the block gluing map is a contraction); Proposition COD (a coding of the periodic Wilson law by independent variables with slice defect at most 1/4096 at radius below t/2 gives the neutral seed at u = 2t, through row 1165 (19)); Lemma JF with the example of 6.2 (for the Wilson operator, which has discrete time, the same comparison is a case of statement (A) of row 1132 and gives the gap only; no minorization or jump-form comparison can bound the excited trace). ARGUED: a proof must use a relation that is exact at rank one, of three kinds (the engine, an expansion into an end class, a comparison in the ground-state representation); this row took the third kind in three ways and each stops at a missing supplier, a regularity statement for the vacuum in the law of the model at a coupling of order one, uniform in the volume ((REG-vac): a Lipschitz map (LIP) or (GLUE-LIP), a coding (COD), or the minorization (A)); each form is of the kind (K-one), none is finite, each is at least as strong as what it serves; the known suppliers are convexity (dead above beta 1 to 2 by rows 941, 957, 968) and one-link couplings (dead above about 1). GUIDE: on one link the eigenvalue comparison holds with room (minimum ratio 1.43, 6.96, 130 at b = 0.5, 2.3, 5). Found on file before work and not re-proved: every other form of the target that I derived (table of Section 1), among them the Hellinger test of row 1165 and the gap-plus-count form of Theorem ZD-c. OPEN: (M-neutral), which is (N-phys); (REG-vac) in any form; a tie between the Wilson operator and a generator with continuous time that is tight at the vacuum; the carry to late cutoffs; the mass gap. Output library/gap-mini-mneutral-fable.md.

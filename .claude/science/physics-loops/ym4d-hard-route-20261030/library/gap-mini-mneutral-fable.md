@@ -14,6 +14,8 @@ checked by anyone else.
 - 06:32Z: read the row, GOAL.md, the rule sections of FINISH.md, row 1353's file in full, the sibling file of row 1354, parts/gap.md L8-104, Theorem ZD-c, Identity I1, row 1168 (19)-(21), the route tables of rows 1180 and 1184; registry grep run; Section 1 written.
 - 06:42Z: Sections 2 and 3 written (Lemma M1, Corollary M2, choice of attack). Next: Way 1, transport with comparison of all eigenvalues.
 - 06:47Z: Section 4 written (Way 1: Proposition TR, Corollaries TR1 and TR2, Lemma UVC; supplier absent). Next: Way 2, coding.
+- 06:50Z: Lemma VOL (4.7) and Section 5 written (Way 2: Proposition COD via row 1165 (19); supplier absent). Next: Way 3, the Wilson transfer operator with discrete time.
+- 06:52Z: one-second guide check of Proposition TR on one link run under the numeric lock (pass); 4.8 (Lemma GAUSS, guide record) and Section 6 written (Way 3: Lemma JF, no count from the jump form).
 
 ## 1. Repo search and inputs (written 06:32Z, `date -u`)
 
@@ -291,3 +293,161 @@ call the hypothesis (GLUE-LIP). It is the lane's glue lemma in transport form (r
   measure at one coupling of order one; or (GLUE-LIP) along the trajectory. Neither is a finite statement, and
   neither is implied by anything on file. With it, Setting H would have the test. Setting H is not the Wilson
   transfer operator; Section 6 treats that difference.
+
+### 4.7 Lemma VOL (PROVED; a floor for the Lipschitz constant of any map from Haar measure)
+
+Let X be a compact connected Riemannian manifold of dimension d with normalized volume dA, nu a probability
+measure with full support, and S: X -> X Lipschitz with constant L and S_* dA = nu. Then S is onto, and
+L^d >= vol(C)/nu(C) for every Borel set C with nu(C) > 0. In particular L >= 1, and
+L^d >= 1/(essential infimum of d nu/dA).
+
+Proof. S(X) is compact and nu(S(X)) = 1, so S(X) contains the support of nu, which is X. For a Borel set C,
+C = S(S^(-1) C), and a map with Lipschitz constant L multiplies d-dimensional volume by at most L^d. So
+vol(C) <= L^d vol(S^(-1) C) = L^d nu(C). QED
+
+Reading (ARGUED; the size is an estimate, not a proof). For the vacuum measure of a box, d = 9 n^3, and the
+density Omega^2 at the slices whose plaquettes are all near -1 is smaller than its mean by a factor
+exp(-c beta n^3) with c of order one (such slices exist for even n; their weight can be bounded by the chessboard
+estimate in the time direction). So L >= exp(c beta/9 - C): a map from Haar measure has a Lipschitz constant
+that grows exponentially in the bare coupling. Together with Lemma UVC this makes Corollary TR1 a tool for one
+coupling of order one. Along the trajectory the reference must be local in scale, as in Corollary TR2.
+
+## 5. Way 2: a coding by independent variables, fed to the Hellinger test (written 06:50Z, `date -u`)
+
+On file before this section. The consumer: row 1165 (19), `gap-solve11-astra62.md` L283-292 (check row 1166, S1:
+HOLDS). It reads: on the ordinary periodic Wilson cylinder of even period u = 2t, let P_G be the law of the two
+opposite slices, each taken modulo gauge and modulo the eight centre flips, rho_G its marginal, and
+d_G = norm(sqrt(dP_G) - sqrt(d(rho_G x rho_G))) in L^2. Then 1 + s(u) <= (h_8 - d_G)^(-2) with
+h_8 = 2 x 8^(-1/4)/(1 + 8^(-1/2)) = 0.8786..., so d_G < 1/32 gives s(u) <= 1/2. Couplings and disagreement
+percolation: 21 lane files name them, all for conditions uniform in the boundary values; criteria in the law
+for pinned cells are method 34 (`parts/gap.md`, rows 1115-1122). What I did not find: the statement that a coding
+of the periodic law gives the test. `grep` for "finitary" and "factor of i.i.d": 0 files; "coding radius": 2 files.
+
+### 5.1 Proposition COD (PROVED; the method is standard, van den Berg and Steif, Spinka)
+
+Let Lambda be the torus (Z/u) x (Z/n)^3 with u = 2t, V its sites, and mu the periodic Wilson measure on its
+links. A coding of mu is a family xi = (xi_v), v in V, of independent random variables and a measurable map F
+with F(xi) distributed as mu. For a set A of links and r >= 0 let N_r(A) be the set of sites within lattice
+distance r of an end of a link of A. Let xi' be an independent copy of xi and let xi^(A,r) equal xi on N_r(A) and
+xi' elsewhere. The resampling defect is
+
+    delta(A, r) = Prob( F(xi) and F(xi^(A,r)) differ on some link of A ).
+
+- (a) If A and B are sets of links with N_r(A) and N_r(B) disjoint, the total variation distance between the
+  law of (U_A, U_B) under mu and the product of its two marginals is at most delta(A, r) + delta(B, r).
+- (b) Let A and B be the sets of spatial links at the times 0 and t, and r = ceil(t/2) - 1. If
+  delta(A, r) <= 1/4096 and delta(B, r) <= 1/4096, then d_G <= 1/32, and row 1165 (19) gives
+  1 + s(2t) <= (0.8786 - 0.0313)^(-2) < 1.40, so s(2t) <= 1/2: the neutral seed of (N-phys) at u = 2t when
+  2t <= n/512, and by Corollary M2 (ii) the rank-one test at tolerance 2/5 at the time 3t.
+
+Proof. (a) Take three independent copies xi, xi', xi''. Put eta = xi on N_r(A) and xi' elsewhere, and zeta = xi
+on N_r(B) and xi'' elsewhere. The two neighbourhoods are disjoint and the variables are independent over the
+sites, so eta and zeta are independent and each has the law of xi. Hence (F(eta)_A, F(zeta)_B) has the product
+of the marginals as its law. It differs from (F(xi)_A, F(xi)_B) with probability at most
+delta(A, r) + delta(B, r). (b) The two time neighbourhoods are disjoint because 2r < t on a circle of length 2t.
+By (a) the total variation distance is at most 1/2048. The quotients by gauge and centre act on each slice
+separately, so they do not increase it. For probability densities p, q: the integral of sqrt(pq) is at least
+the integral of min(p, q) = 1 - TV, so d^2 = 2 (1 - integral of sqrt(pq)) <= 2 TV <= 1/1024. Then row 1165 (19)
+with H = G. QED
+
+If F has coding radii R_l (F(xi)_l is fixed by xi on N_(R_l)(l)), then delta(A, r) is at most the sum over the
+links l of A of Prob(R_l > r).
+
+### 5.2 Supplier, and the first failing step
+
+- At beta = 0 the links are independent and delta = 0. At small beta a coding with exponential tails follows
+  from the heat-bath dynamics run from the past with a bounding chain, in the Dobrushin range (ARGUED; the
+  method is that of Propp and Wilson and of Haggstrom and Steif; I did not write it). That range ends below
+  about beta = 1 (the hand ceilings of the lane, `gap-status-1113.md` L31, L65, L110-112). Nothing new comes out of
+  it: the seed is on file there.
+- At a coupling of order one a coding needs a coupling of two copies that agree, link by link, outside a
+  disagreement set with summable tails, in the law of the model. The single-link conditional laws under two
+  different staples are far apart in total variation at beta = 2.3 (the staple sum has norm up to 6 beta), so
+  the percolation of disagreement is not subcritical by any one-link bound. Block versions are suprema over
+  surroundings, and those fail above the threshold of Frohlich, Simon and Spencer (Proposition CA-FAIL,
+  `gap-bridge-exercise-opus.md` L337, row 1072; layer form above 1.0109, `gap-status-1113.md` L112) or are not finite within the budget
+  (Lemma DIM-B, `gap-blockstep-fable.md` L276, row 1340).
+- Along the trajectory the tails must also be right in the ultraviolet: with n_j^3 links in a slice at a fixed
+  physical time t, the sum of the tails is small only if Prob(R_l > r) falls at least like (a_j/r)^3 between
+  the lattice scale and the physical scale. A coding with one exponential rate in lattice units fails for late
+  j, for the same reason as Lemma UVC.
+- First failing step of Way 2. A coding of the periodic law with summable tails at one coupling of order one.
+  It is a statement in the law of the model and it is not finite. It implies the mixing statements that method
+  34 could not supply.
+
+### 4.8 Two controls of Way 1 (added 06:52Z, `date -u`)
+
+**Lemma GAUSS (PROVED; the hypothesis of Corollary TR2 holds with L = 1 for a free massive field).** On a finite
+periodic lattice let H = (1/2) sum of pi_x^2 + (1/2) <phi, A phi> with A = -Laplacian + m^2, m > 0. Its vacuum
+measure is the Gaussian measure with covariance Sigma = (1/2) A^(-1/2). Cut the lattice into blocks and let A_ref
+be A without the bonds that join different blocks. Then A >= A_ref >= m^2, so A^(1/2) >= A_ref^(1/2) and
+Sigma <= Sigma_ref = (1/2) A_ref^(-1/2) (the square root is operator monotone and the inverse reverses the
+order). The reference measure is the product of the vacuum measures of the blocks. The linear map
+S = Sigma^(1/2) Sigma_ref^(-1/2) sends it to the vacuum measure of H, and
+norm(S)^2 = norm(Sigma_ref^(-1/2) Sigma Sigma_ref^(-1/2)) <= 1. So S is a contraction, and Proposition TR gives
+kappa_k(H) >= kappa_k(sum of the block Hamiltonians) for every k. QED
+
+So the hypothesis is not empty: for a free field with a mass the gluing map is a contraction, the block gap is
+at least m, and the block count is physical. For m = 0 the constant mode of a block has no gap and the count
+of the reference is infinite, as it must be. For the gauge theory the same construction drops the plaquettes
+that join the cubes. There the map cannot be a contraction: by Proposition TR its constant satisfies
+L^2 >= eps_1/(E_1 - E_0), and the small-volume gap eps_1 of a cube is far above the gap of the box.
+
+**GUIDE (one link; a control of the normalizations of 4.2 and 4.3, not a proof).** For one copy of the
+three-sphere, nu proportional to exp(b x) dA, and the radial monotone map S, I computed the first ten
+eigenvalues kappa_k of the form of nu on class functions and the Lipschitz constant L. Criterion written before
+the run: kappa_k L^2/(k(k + 2)) >= 1 for k = 1, ..., 10. Result: the minimum over k is 1.43 at b = 0.5 (L = 1.195),
+6.96 at b = 2.3 (L = 2.630) and 130 at b = 5 (L = 11.25). No violation. The value of L agrees with the hand
+formula L^3 = 2 I_1(b) e^b/b at the antipode (2.63 at b = 2.3). The run took one second under the numeric lock
+(holder row1356-mneutral, acquired and released; memory 66 percent free), plain floating point, script
+`tr_check.py` kept in the worker's scratch folder, not in the repository. It can refute a normalization. It
+proves nothing.
+
+## 6. Way 3: the same comparison for the Wilson transfer operator (written 06:52Z, `date -u`)
+
+(M-neutral) is about the Wilson operator, which has discrete time. Setting W: T = M C M on the Gamma-invariant
+functions of L^2(dA), M the multiplication by exp((beta/2) sum of x_p over the spatial plaquettes), C the product
+over the links of the convolution with the density e^(beta x)/A(beta), with eigenvalue
+c_j = I_(2j+1)(beta)/I_1(beta) on spin j (the form T = M C_E P M of row 1132; outline GL3-GL4). Omega is the
+vacuum, nu = Omega^2 dA, P f = T(Omega f)/(lambda_0 Omega) the vacuum chain, and
+pi(dA, dB) = Omega(A) K_1(A, B) Omega(B) dA dB/lambda_0 its edge measure, with both marginals nu. Then
+<f, (1 - P) f> in L^2(nu) equals (1/2) integral of (f(A) - f(B))^2 pi(dA, dB), and the eigenvalues of 1 - P on the
+invariant functions are 1 - x_k.
+
+### 6.1 Lemma JF (PROVED from Proposition TR; a case of statement (A) of row 1132)
+
+Let E(A, dB) be the kernel of C. Let S: X -> X be measurable and Gamma-equivariant with S_* dA = nu, and let L be
+such that the image of the measure dA E(A, dB) under S x S is at most L^2 pi on the complement of the diagonal.
+Let 1 = e_0 > e_1 >= e_2 >= ... be the eigenvalues of C on the invariant functions. Then 1 - x_k >= (1 - e_k)/L^2
+for every k. In particular x_1 <= 1 - (1 - c_*)/L^2 with c_* = (I_2(beta)/I_1(beta))^4, the largest e_k with k >= 1
+(four links of spin 1/2, as in Corollary TR1 (i)).
+
+Proof. For f in L^2(nu): <f o S, (1 - C) f o S> in L^2(dA) is (1/2) the integral of (f(A) - f(B))^2 against the
+image measure, and the integrand vanishes on the diagonal. So it is at most L^2 <f, (1 - P) f>. Proposition TR
+with these two bounded forms. QED
+
+In the coordinates S^(-1) the hypothesis says that the one-step transition density of the vacuum chain
+dominates L^(-2) times the electric step. Statement (A) of row 1132 is this with k steps, commutator kicks in
+place of C and one more kernel; its consumer for (Z-UNB) is proved there. So Lemma JF adds no new hypothesis.
+
+### 6.2 The jump form gives no count (PROVED by an example)
+
+Take nu = dA, S the identity and P' = L^(-2) C + (1 - L^(-2)) Id with L > 1. P' is a positive Markov operator,
+symmetric for dA, and it satisfies the hypothesis of Lemma JF with equality. Its eigenvalues are
+1 - (1 - e_k)/L^2 >= 1 - L^(-2) for all k, so Tr P'^(2w) is infinite for every w. So no hypothesis of the kind of
+Lemma JF, and no minorization of the kind (A), can by itself bound the excited trace. For the Wilson operator
+the count has to come from another statement. On file it comes from the engine: Theorem ZD-c needs the bounded
+torus excess (BDD-Delta) beside the gap in units of the inverse side.
+
+### 6.3 Why Way 1 does not transfer to discrete time (ARGUED; each inequality is on file)
+
+- C is a mixture of heat kernels: c_j = integral of e^(-(d^2 - 1) tau/2) against a probability measure in tau,
+  by the Hartman-Watson law (on file: `gap-tu-retry.md` L477). So 1 - C <= (mean of tau/2)(-Laplacian) on each
+  link. This bounds the jump form from ABOVE by the gradient form. The comparison of Way 1 needs it from below,
+  and from below it holds only on low modes.
+- Between T = e^(-V/2) e^(-K) e^(-V/2) and e^(-(K+V)) the known relations are the Golden-Thompson inequality and
+  Araki's log-majorization. They bound products of the top eigenvalues of T from below. They give no upper
+  bound on the ratios x_k. On file: `gap-constraints-max.md` B6; Lemma R4 of row 1180.
+- First failing step of Way 3. A comparison between the Wilson operator and a generator with continuous time
+  that is tight at the vacuum. I found none. Without it Way 1 proves the test for Setting H only, and for the
+  Wilson operator the three ways give the gap alone, through hypotheses of the kind (A).

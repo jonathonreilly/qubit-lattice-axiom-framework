@@ -23,6 +23,17 @@ attempt on the same problem; this row does not read it.
   memory free 66 percent by memory_pressure).
 - 2026-11-21T07:39Z (date -u): guide run done and lock released; results in 5.3 (C0, C1 passed; C2 failed marginally at
   one step, reported).
+- 2026-11-21T07:44Z (date -u): cross-branch search done (main, PR #10114: no hit); Section 4 written (the corrected open
+  step, three attempts at a thick map, Proposition EP).
+
+## Repo search
+
+- This folder: the registry grep of Section 1 ("Rule 0a"), run before the attack.
+- origin/main and PR #10114 (branch claude/ym4d-proof-draft), by a bare blob-less depth-1 fetch into a scratch
+  folder, 2026-11-21T07:44Z (date -u): the 67 `.md` files of main with "ym4d" in the path (25 of them contain "Wilson") and the
+  21 mass-gap files of PR #10114 (`MASS_GAP_*`, `RTARGET`, `PROOF` and files with "gap" in the name) have no hit
+  for: "t Hooft loop", "thin monopole", "signed packet", "packet sign", "electric sheet", "centre sheet",
+  "center sheet", "vortex free energy", "thick vort", "Mack". PRs #10133, #10134, #10141, #10144 were not searched.
 
 ## 1. How best to attack it (decision, written 2026-11-21T07:31Z, date -u)
 
@@ -74,7 +85,7 @@ Claude Fable 5.2 (row 1354) for Theorem E and the packet Fourier transform. The 
 
 - For a sign pattern tau in C^2(Lambda; F_2), one sign for each fine plaquette, put
   Z[tau] = integral of prod_p exp(beta (-1)^(tau_p) q(U_p)) dU. Z[0] is the periodic Wilson mass.
-- Blocks of side B as in row 1345 L20-28. The coarse torus Lambda' has v sites, 4v links, 6v plaquettes and
+- Blocks of side B as in row 1345 L18-28. The coarse torus Lambda' has v sites, 4v links, 6v plaquettes and
   4v three-cubes. The packet S_B(P) of a coarse plaquette P is the set of the B^2 fine plaquettes at its two
   cuts. For tau' in C^2(Lambda'; F_2) let i(tau') be the fine pattern that equals tau'_P on S_B(P) and 0 off the
   packets. Put Z'[tau'] = Z[i(tau')]. These are the "signed packet" masses of row 1345 L73-79.
@@ -82,7 +93,7 @@ Claude Fable 5.2 (row 1354) for Theorem E and the packet Fourier transform. The 
 
 Facts on file:
 
-- (F1) Z'[tau' + d xi'] = Z'[tau'] for every coarse link pattern xi' (row 1345 L91; check 1357 L95).
+- (F1) Z'[tau' + d xi'] = Z'[tau'] for every coarse link pattern xi' (row 1345 L89; check 1357 L95).
 - (F2) Z'[tau'] = integral over a_B(dy, d rho) of E_t exp(sum_P (-1)^(tau'_P) J'_P(y, rho) (dt)_P) (row 1345
   (2), (3)). So tau' changes the sign of the coefficient J'_P and nothing else.
 - (F3) For every tau and every set D of fine plaquettes that share a coordinate direction, the mass with the
@@ -109,7 +120,7 @@ the property: it is enough that the array (a_P alpha_P(x), a_P beta_P(x))_P unde
 the joint law that (cosh J'_P, sinh J'_P)_P has under a_B. This is the reading of row 1354 4.4 and 6.2 item 1.
 A representation that matches only the eight (or 64) twisted masses does not have it and is not covered.
 
-**2.3 Lemma D1 (the class side; PROVED GIVEN the deletion induction of row 1351 L130 in the dual form of Theorem
+**2.3 Lemma D1 (the class side; PROVED GIVEN the deletion induction of row 1351 L134 in the dual form of Theorem
 E, checked in rows 1352 and 1357 L45).** For every model M of (10*) and every coarse plaquette P_0,
 
     511/513 <= Per(M^(1_{P_0})) / Per(M) <= 513/511.
@@ -119,7 +130,7 @@ For a pattern tau' with n nonzero entries the ratio Per(M^(tau'))/Per(M) lies be
 Proof. For a set D of coarse plaquettes let Q_D be the sum, over cycles S inside D and sets X inside D disjoint
 from S, of E[prod_S beta_P prod_X h_P], h_P = alpha_P - 1. Then Per(M) = prod a_P times Q_T, T the set of all
 plaquettes. The deletion induction says: for every D and every P in D, Q_(D minus P) > 0 and
-|Q_D / Q_(D minus P) - 1| <= 1/512. (Row 1351 L130 proves this for the class (10) at |s| <= 2; Theorem E's proof
+|Q_D / Q_(D minus P) - 1| <= 1/512. (Row 1351 L134 proves this for the class (10) at |s| <= 2; Theorem E's proof
 is the same induction for primal cycles; I use s = 1 and the trivial character.) The terms of Q_T that do not use
 P_0 are the terms of Q_(T minus P_0). They do not contain beta_{P_0}. So Q_(T minus P_0) is the same number for M
 and for M^(1_{P_0}). Both models satisfy the hypotheses. So both values of Q_T lie within the factor 1 +- 1/512
@@ -316,9 +327,92 @@ moments" such a sector does not exist (Lemma FR and case (c)). So the chain "cen
 moment test on the centre weights" is closed in both directions. This does not touch the neutral target or the
 gap clause. It removes one route to them.
 
+## 4. What a landing in a dual class must be: a thick centre variable (written 2026-11-21T07:44Z, date -u)
+
+**4.1 The open step, corrected (OPEN).** (BS-thick): there are a block side B and, for every late cutoff, a model
+M of an end class with the conclusions of Theorem E, and a scalar K, such that K times the mass of the class h of
+M is the Wilson twisted mass Z_h, for the eight temporal twists at the two periods, with the common-cover rule.
+By Theorem N the centre variable of M is not the pivot sign of row 1345: M is not a re-expression of that coarse
+model in other environment variables. This replaces (BS*) of row 1354 6.1, which left the map open and suggested
+the map of row 1345.
+
+**4.2 Why the variable must be thick (ARGUED from Lemmas D1 and T; the numbers are GUIDE).** In a model of (10*)
+the change of the sign of the odd part of one plaquette weight changes the mass by less than 0.4 percent, and a
+product of such changes over a closed surface that is not exact is the twist. In the Wilson theory the operation
+with this second property that acts on the fine plaquettes of one packet costs a factor 0.66 or less for
+beta >= 59 (Lemma T), and about 0.34 for one plaquette at beta = 2.3 (5.3). The cost sits on the rim of the
+packet, on the monopole cubes, and it does not decrease with the block side. An operation without a rim cost
+must change the angular variables in a region of the size at which the centre flux spreads without cost. That
+is the confinement scale. So the coarse plaquette variable of a dual landing reads the angular field in a whole
+block. On file, objects of this kind are the vortex containers of Mack and Petkova (rows 1025 and 1029,
+`library/gap-cr-tomboulis-max.md`) and the twisted boxes of 't Hooft (rows 720 and 1179); idea G18 of row 859
+already says "the thick w_2 needs a multiscale definition".
+
+**4.3 Attempts at an exact thick map, and where each stops.**
+
+1. *Coarse SU(2) links with a centre-covariant kernel (decimation along straight paths, or an averaging kernel).*
+   Let k(V | U) be a probability kernel from fine fields to coarse link fields V with
+   k(V | (-1)^(i_1 xi') U) = k((-1)^(xi') V | U) for every coarse link pattern xi', where i_1 xi' flips the
+   whole bundle of each link with xi'_E = 1. Put rho'_tau(V) = integral of prod_p e^(beta (-1)^(tau_p) q_p) k(V | U) dU.
+   Then (PROVED, one substitution, using d i_1 = i d'): the integral of rho'_tau over V is Z[tau], and
+   rho'_(i d' xi')(V) = rho'_0((-1)^(xi') V). So the centre of a coarse link acts on the fine theory through the
+   thin bundle flip again. The Fourier transform of rho'_0 in the coarse link signs gives, for each loop pattern,
+   the sum of the sheet weights over all sheets with that boundary. It does not give the weight of one closed
+   sheet. Those are defined only when the coarse weight is a product of plaquette functions, and an exact map
+   does not produce such a product. Stops at: the locality of the coarse weight, which is a mixing statement at
+   the scale B.
+2. *Sum the thin monopoles first.* The cosh-packet model W_B of row 1345 (9) is a positive local product, and
+   by Proposition TOP it is the sum of all class masses up to eps_B. Its class fractions and its two-volume
+   free energy are the open items that row 1345 L105 names. Nothing new here.
+3. *A polymer end class in place of (10*).* A thick map can at best produce small non-local terms. The end
+   theorem survives them (4.4). Then a landing is a convergent polymer representation of the eight masses with
+   common local terms at the two periods. For a fixed pair of tori the existence of such a representation is
+   close to the conclusion itself; the content is in a construction that a finite computation can certify. The
+   suppliers on file are strong coupling (rows 701, 785) and block statements uniform over boundary values, which
+   the frame test of row 1277 exposes at beta >= 2.5 (GUIDE there). Stops at: a block statement in the law of the
+   model at a coupling of order one, as in rows 1340 and 1356.
+
+**4.4 Proposition EP (the end theorem for abstract polymers; PROVED GIVEN the deletion induction and the tail
+estimate of row 1351 L134-136, which use nothing else).** On T_t = (t, m, m, m), min(t, m) >= 16,
+j_0 = floor(min(t, m)/8), v = t m^3. A polymer is a set gamma of plaquettes that is connected for the adjacency of
+row 1351 (a common link or a common three-cube; a closed neighbourhood has at most 41 plaquettes per plaquette).
+It has a real activity rho(gamma) and a class [gamma] in H_2(T_t; F_2). Assume:
+
+- (P) for every plaquette p, the sum over gamma containing p of |rho(gamma)| (2 e^(41/256))^|gamma| is at
+  most 1/512;
+- (L) a polymer with fewer than j_0 plaquettes has class zero, and the polymers of T_2t with fewer than j_0
+  plaquettes are exactly the two lifts of those of T_t, with the same activities;
+- for each twist h the mass is Z^h(T_t) = K_t times the sum, over families of pairwise non-adjacent polymers,
+  of the product of chi_h([gamma]) rho(gamma), with K_2t = K_t^2.
+
+Then the 64 masses Z^h(T_t) are positive and within the factor e^(2 tau) of each other, tau = (12 v/256) 2^(-j_0),
+and |2 log Z(T_t) - log Z(T_2t)| <= (48 v/256) 2^(-j_0) for Z = Z^0 and for the mean over the eight temporal
+twists.
+
+Proof. Mark each polymer with s^|gamma|. For a set D of plaquettes let Q_D(s) be the sum over families inside D.
+For p in D, Q_D = Q_(D minus p) + sum over gamma containing p of chi rho(gamma) s^|gamma| Q_(D minus N(gamma)),
+with N(gamma) the closed neighbourhood, of at most 41 |gamma| plaquettes. If every one-plaquette deletion ratio on
+smaller sets has modulus at least e^(-1/256), then |Q_(D minus N(gamma))/Q_(D minus p)| <= e^(41 |gamma|/256). With
+(P), for |s| <= 2, |Q_D/Q_(D minus p) - 1| <= 1/512, and |log| < 1/256. This closes the induction, and
+|log Q_T| <= 6v/256 on |s| <= 2. The coefficients of log Q_T have connected supports. Below the degree j_0 they do
+not depend on the character and repeat once per lift, by (L). Cauchy's estimate bounds the rest at s = 1 by tau.
+The mean of positive numbers within e^(+-tau) of a common value is within the same factor. QED
+
+Remarks. (1) The classes (10) and (10*) are the cases where rho(gamma) is the sum of the coefficients of the
+connected pairs with support gamma; their bound (12) gives (P). (2) Lemma D1 has no analogue here: an abstract
+polymer model has no plaquette sign to flip. So Theorem N does not exclude a landing in the class of
+Proposition EP. (3) The class is open under small changes of the activities in the norm of (P). (4) I did not
+re-derive the constant of the Cauchy tail; it is that of row 1351 L136, checked in row 1352.
+
+**4.5 What a thick step must use (on file; cited, not re-derived).** It must fail for compact U(1) at large
+coupling and for Z_2 at large coupling (row 1353 Section 6; check 1355 corrects the scope: the centre-sign map
+needs a central involution). It must integrate the angular variables of a block of the size of several
+correlation lengths (row 1354 6.3: about 6^4 sites at beta = 2.3 for the constant 1/40). Sections 2 and 3 add:
+no part of it can be done on centre variables alone.
+
 ## 5. Guide run at a coupling of order one: the thin test at beta = 2.3 (criteria written 2026-11-21T07:35Z, date -u, before the run)
 
-(Section 4 follows below; this section was started first because its criteria must precede the run.)
+(The criteria of this section were written before Section 4, because they must precede the run.)
 
 **5.1 What is tested (GUIDE only; a Monte Carlo is never a proof step).** Theorem N is proved for beta >= 59.
 (BS*) of row 1354 is meant at a coupling of order one, with a block side of a few units. The same necessary

@@ -15,6 +15,7 @@ Started 2026-11-21T05:12Z (from `date -u`). Written section by section; each sec
 - 06:00Z: further matches found while working (row 1145: anisotropic seed, near-Haar straight transports (3), unprojected transfer (17); rows 1060-1061: frozen two-skeleton arrays) and added to Section 1; Sections 3 and 4 written.
 - 06:02Z: Section 5 written (a second end class, with no centre coherence; proof by the deletion induction).
 - 06:05Z: Section 6 written (the rank-one form of the target, the state of each route, what stays open).
+- 06:08Z: every PROVED item re-read; three wordings corrected (3.3: the face modes beyond the one of (16) are a reading, not a bound; the cell statements are not written and their sufficiency is not proved; 4.2: the pairs with two shared eliminated columns are now covered). RESULT line written. No numeric run was made, so the numeric lock was not taken. Run window 05:12Z to 06:10Z, both from `date -u`.
 
 ## 1. Repo search and inputs
 
@@ -172,8 +173,10 @@ is the neutral seed at the time 2w for the cross-section n^3. It is not a weaker
   function of what surrounds it, is then the mark, and the marks of a tiling come in sixteen kinds (cells that
   are thin in a subset of the four directions). The smallness of each mark in L^p of a product reference is a
   statement of the kind of Corollary BT1 for an open cell: a seed for that cell, in the law of independent
-  neighbours. I did not write these sixteen statements. They are finite and in-law, and they are not suprema
-  over boundary values.
+  neighbours. Such statements are finite and in-law, and they are not suprema over boundary values. I did not
+  write them, and I did not prove that a finite list of them suffices: the dependence of a corridor on one
+  neighbour alone is of order one and has to go into that neighbour's reference law, and I did not carry that
+  bookkeeping through the sixteen kinds.
 - GUIDE (sizing; uses the measured masses recorded in `gap-trajtest-opus.md` L157, Teper hep-th/9812187: a m =
   1.216(23) at beta 2.3 and 0.51(3) at beta 2.6). The tolerance of row 1351 (15) is eps = 2^(-14). With
   s(2w) at least e^(-2 a m w), the test needs w >= (14 log 2)/(a m): about 8 lattice units at beta 2.3 and 19 at
@@ -240,8 +243,12 @@ and X is not zero. The two terms of the trace in which one factor acts on the co
 Consequences (PROVED from the lemma by continuity, on an open set of the frozen links).
 
 - The factor that one eliminated column leaves behind is not a product of functions of single neighbour columns.
-  Two columns of the other parity that share an eliminated neighbour are coupled. Every column of the other
-  parity shares eliminated neighbours with eight others (transverse distance 2 or sqrt(2)). So, given all links
+  Two columns of the other parity that share an eliminated neighbour are coupled. The formula of the lemma holds
+  at every configuration with Y = 0, for any two of the four neighbours, and two tangent spaces of the
+  three-sphere always contain vectors a, b with a . b not zero. A pair at transverse distance 2 shares one
+  eliminated column. A pair at distance sqrt(2) shares two; with the pair at 1 and I and the other two
+  neighbours of each shared column at -1 and -I, both columns have Y = 0 and their two terms are equal and add.
+  Every column of the other parity shares eliminated neighbours with eight others. So, given all links
   that are not of direction 1, the second colour of the same direction is one connected system in two transverse
   dimensions and time. It is not a family of independent chains, and (17) with the ratio R does not apply to it.
 - The size at this configuration is beta^2/4 at equal times: 1.32 at beta = 2.3, against the bare coupling 2.3
@@ -423,7 +430,7 @@ identity as the map, exactly when the seed holds. Three consequences (ARGUED):
 | Land the short factors of row 1351 in its class (23)-(24) | Section 4: count (58 percent of the plaquette factors stay raw); Lemma 4.2 (the first colour couples the columns of the second at order beta^2/4) | the second colour; after it, a connected net in three dimensions |
 | Any landing in a product-reference class at the window | Section 3: the bond test at a time cut is the seed (Lemma BT, Corollary BT1; on file as Identity I1); box tests are seeds of open cells (ARGUED); cells exceed 16^4 sites at beta 2.3 (GUIDE) | the seeds of the cells; no finite statement within the budget by a method on file |
 | The opened angular integral, row 1351 (20) | read only: by (18)-(19) it equals the neutral mass up to a factor near 1, with the centre sums done; the angular measure is the Wilson measure itself | the same inequality as (N-phys) |
-| A second end class for block-link chains | Theorem END-D, proved | none (it is an end, not a step) |
+| A second end class for block-link chains | Theorem END-D (PROVED here, unchecked) | none (it is an end, not a step) |
 | Ideas considered and found on file before any work (Section 1 table) | frozen line nets (row 1145), anisotropic seed (row 1145), frozen two-skeleton (rows 1060-1061), fixed block side on the tail (row 1345) | each is an exact or near-exact reformulation; none supplies a contraction |
 
 ### 6.3 What stays open, in one statement
@@ -457,3 +464,5 @@ What a proof must contain, from the record and this row (ARGUED; the tests are t
 - The check of this file can be short: Lemma BT, Corollaries BT1 and BT2 (one page of linear algebra plus the
   quoted transfer facts), Lemmas 4.1 and 4.2 (a count and one covariance), Theorem END-D (a standard expansion,
   six steps). The ARGUED and GUIDE items are marked and carry no weight in the chain.
+
+RESULT: Row 1353 (Claude Fable 5.2 max, Mac mini Claude worker 1; author only, checked by no one; no numeric run; 05:12Z to 06:10Z by date -u). NOT solved: no block step carries the Wilson trajectory, or the Wilson weight at any coupling of order one, into a neutral end class; no impossibility is proved; nothing in the chain is disproved. PROVED here (by hand, unchecked): Lemma BT with Corollaries BT1 and BT2 (for a cut along time, the bond test of a product-reference class with tolerance eps holds if and only if, up to the factor (1 - eps)^(-2), the neutral thermal sum at twice the bond length is at most eps^2; so (N-phys) is, up to a factor 4 in the time, the statement that the neutral transfer kernel is within 2/5 of a rank-one kernel in Hilbert-Schmidt norm; this is Identity I1 of gap-compress-opus.md with an arbitrary reference law and constant); Lemma 4.1 (after the first colour of row 1351's strip elimination 7/2 of the 6 plaquettes per site stay raw Wilson factors) and Lemma 4.2 (the eliminated colour couples the columns of the second colour, at order beta^2/4 at equal times and with no fixed range in time), so the strip route stops at the second colour; Theorem END-D (a second end class, with no centre coherence: every interaction of SU(2) link variables with norm N_kappa at most kappa/32 has abs(2 log Z_+(T) - log Z_+(2T)) at most 4 v e^(-kappa j_0/4), j_0 = min(T, m) - 1). ARGUED: a landing in any product-reference class proves the seeds of its cells on the way, so it is not a smaller statement than the seed; exact maps leave the rank-one distance unchanged. GUIDE: such cells exceed 16^4 sites at beta 2.3. Found on file before work and not re-proved: frozen line nets and the anisotropic seed (row 1145), the fixed block side on the tail (row 1345), frozen two-skeleton arrays (rows 1060-1061). OPEN: (M-neutral) of 6.3, which is (N-phys) up to the choice of times; a selective step that reads first-passage data and fails for compact U(1); the mass gap. Output library/gap-mini-neutral-step-fable.md.

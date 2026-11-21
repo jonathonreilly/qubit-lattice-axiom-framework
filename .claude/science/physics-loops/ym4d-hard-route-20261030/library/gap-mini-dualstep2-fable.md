@@ -24,7 +24,12 @@ attempt on the same problem; this row does not read it.
 - 2026-11-21T07:39Z (date -u): guide run done and lock released; results in 5.3 (C0, C1 passed; C2 failed marginally at
   one step, reported).
 - 2026-11-21T07:44Z (date -u): cross-branch search done (main, PR #10114: no hit); Section 4 written (the corrected open
-  step, three attempts at a thick map, Proposition EP).
+  step, attempts at a thick map, Proposition EP).
+- 2026-11-21T07:48Z (date -u): line anchors of rows 1345 and 1351 corrected from `grep -n`; 4.6, Sections 6 and 7 written.
+- 2026-11-21T07:49Z (date -u): 3.5 added (quantitative form of Lemma FR, sketched).
+- 2026-11-21T07:50Z (date -u): 4.3 item 4 added (the collar); Not done completed.
+- 2026-11-21T07:51Z (date -u): hand arithmetic of Lemma A, Lemma T and Remark N1 confirmed with exact Bessel values (one second,
+  under the numeric lock, memory free 64 percent): 0.6574 at 59, 1.0144 at 58, 6 sqrt(u) = 0.830 at 245.
 
 ## Repo search
 
@@ -73,7 +78,7 @@ dual class or on (BS*). Nearest statements on file, used and credited below: row
 check row 1347, Claude Opus 5.5: HOLD); row 1354 6.2 item 1 and check 1357 L87-97 (the packet Fourier transform;
 "Uniform near-independence of arbitrary packet signs would need control of the sum of the Fourier errors"; the
 check corrects row 1354's "classical cost" by row 1345's bound). Neither row draws the conclusion of Theorem N.
-Not searched: origin/main and the open PR branches (see Section 7, "Not done").
+origin/main and PR #10114 were searched after the attack (see "Repo search" above): no hit.
 
 ## 2. Theorem N: the packet-sign masses of Wilson are not the masses of a model of (10*) (written 2026-11-21T07:32Z, date -u)
 
@@ -184,7 +189,8 @@ Numbers. With Lemma A, x = e^((sqrt 3/2) beta)/A(beta) <= e^(-0.1339746 beta) be
 At beta = 59: e^(-7.9045) = 3.6906e-4, 59^(3/2) = 453.19, so x <= 0.6842 and 3 x^4 <= 0.6573. The function
 e^(-0.134 beta) beta^(3/2) decreases for beta > 11.2, and the constant of Lemma A increases with beta. So the
 bound holds for all beta >= 59. (At beta = 58 the same arithmetic gives 1.014; the threshold of this method is
-between 58 and 59.) QED
+between 58 and 59. GUIDE arithmetic with the exact Bessel value of A: the bound 3 x^4 passes 511/513 at beta = 46.9;
+the constant of Lemma A is 3.24 times smaller than the true one.) QED
 
 **2.6 Theorem N (PROVED GIVEN Lemma D1, Lemma T and (F1)-(F3)).** Let beta >= 59. Let B >= 1 be any block side
 and Lambda any torus that the tiling of row 1345 admits. Then for every coarse plaquette P_0
@@ -314,10 +320,34 @@ the order eps_B for each cube.
   plaquette rule is closed and is not a coboundary of link functions. Under the product law such an event
   has probability at most (1 - p)^(number of independent cubes) with p > 0 the defect probability of one cube.
   So the density of mu is not a small perturbation of a constant: it carries a weight of order e^(const v)
-  (ARGUED; I did not write a quantitative version of Lemma FR). The Wilson theory itself is of this kind with
+  (ARGUED; the quantitative form of Lemma FR is sketched in 3.5). The Wilson theory itself is of this kind with
   B = 1: x is the SO(3) link, w_P(x; 0) + w_P(x; 1) = 2 cosh(beta q_P), and closure of sign q_P comes from the
   Bianchi identity where all plaquettes are close to the identity. No end theorem on file covers it, and it is
   the problem itself.
+
+**3.5 A quantitative form of Lemma FR (ARGUED: the steps are written, the constants are not fixed).** (FR-q): in
+the setting of Lemma FR assume only that d sigma differs from zero on each three-cube with probability at most
+p. Then there are link functions g_E and constants c_P with P(sigma_P differs from c_P + sum_E g_E(x_E)) <= C p
+for every plaquette, with an absolute constant C, and c is closed when (6C + 1) p < 1.
+
+Steps. (i) The cube equation holds outside probability p. With an independent copy y_E of x_E, the two
+functions F = sigma_P(x_E, a) + sigma_P(y_E, a) and G = sigma_P'(x_E, b) + sigma_P'(y_E, b) differ with
+probability at most 2p. (ii) For fixed (x_E, y_E) let f be the probability over a that F = 1. Since a and b are
+independent, P(F differs from G) >= min(f, 1 - f). So with phi = 1[f > 1/2] the function F differs from
+phi(x_E, y_E) with probability at most 2p. (iii) By Markov's inequality one value y_0 serves the six plaquettes
+through E at once, with the error 2p replaced by 14p. So each sigma_P is a function of x_E plus a function of
+the other three links, outside probability 14p, and the functions of x_E for the six plaquettes agree up to
+constants. (iv) Repeat for the four links of P; each step picks a good base point by Markov and multiplies the
+error by a constant. (v) On a cube, the sum of the six approximants is d c, a constant; it is zero outside
+probability (6C + 1) p, so it is zero.
+
+Use. With (FR-q), case (b) of 3.4 extends from the exact product law to every environment whose marginal on
+the links of one cube is comparable with the product law: the class of the sign rule is then constant outside a
+small probability, and one class mass dominates. The comparison of the cube marginal with the product law in
+the class (10) is the missing written step (it needs the deletion bounds with the cube variables held fixed).
+Together with Theorem N this would give: no model in the format of row 1351 whose total plaquette weights are
+close to constants represents, with its packet signs, a theory that is in alternative I at a late cutoff. OPEN
+as a written theorem. Row 1354 Proposition B is the case of the class (10).
 
 **Conclusion of Sections 2 and 3.** For a confining Wilson theory at a late cutoff, the coarse model of row 1345
 lies in neither end class, in any representation that keeps its centre variable: not in (10*) (Theorem N), and
@@ -372,6 +402,19 @@ already says "the thick w_2 needs a multiscale definition".
    the frame test of row 1277 exposes at beta >= 2.5 (GUIDE there). Stops at: a block statement in the law of the
    model at a coupling of order one, as in rows 1340 and 1356.
 
+4. *Hide the rim.* The rim cost of a packet disappears if the plaquette factors are deleted in a collar N of
+   the coarse dual one-skeleton: with free links in N the monopole lines of any pattern tau' cost nothing, and
+   the intersection parity of a closed fine sheet outside N with a dual plaquette minus its collar is a
+   homology invariant. A bounding coarse sheet then needs a fine sheet that links a tube of N, of area of the
+   order of the square of the collar width, and such sheets are rare in a confining theory when the collar is
+   wider than the correlation length (ARGUED; the strong-coupling series shows it at small beta). But this is
+   the Wilson theory with the collar deleted, a different theory. Restoring the collar multiplies each mass by
+   a factor that is exponential in the length of the network, and no statement on file compares the
+   two-period defects of the two theories. The closed, rim-free flips are the twists themselves, and inside
+   a region with fixed boundary field they are the vortex containers of Mack and Petkova. Stops at: a coarse
+   centre variable with a cheap flip exists only for closed surfaces, that is, for classes. This is
+   Proposition TOP again.
+
 **4.4 Proposition EP (the end theorem for abstract polymers; PROVED GIVEN the deletion induction and the tail
 estimate of row 1351 L134-136, which use nothing else).** On T_t = (t, m, m, m), min(t, m) >= 16,
 j_0 = floor(min(t, m)/8), v = t m^3. A polymer is a set gamma of plaquettes that is connected for the adjacency of
@@ -399,7 +442,8 @@ not depend on the character and repeat once per lift, by (L). Cauchy's estimate 
 The mean of positive numbers within e^(+-tau) of a common value is within the same factor. QED
 
 Remarks. (1) The classes (10) and (10*) are the cases where rho(gamma) is the sum of the coefficients of the
-connected pairs with support gamma; their bound (12) gives (P). (2) Lemma D1 has no analogue here: an abstract
+connected pairs with support gamma; their bound (12) gives (P). So Wilson at beta <= 1/46 is in the class (row
+1354 3.2 item 2), and a confining theory can reach it. (2) Lemma D1 has no analogue here: an abstract
 polymer model has no plaquette sign to flip. So Theorem N does not exclude a landing in the class of
 Proposition EP. (3) The class is open under small changes of the activities in the norm of (P). (4) I did not
 re-derive the constant of the Cauchy tail; it is that of row 1351 L136, checked in row 1352.
@@ -409,6 +453,18 @@ coupling and for Z_2 at large coupling (row 1353 Section 6; check 1355 corrects 
 needs a central involution). It must integrate the angular variables of a block of the size of several
 correlation lengths (row 1354 6.3: about 6^4 sites at beta = 2.3 for the constant 1/40). Sections 2 and 3 add:
 no part of it can be done on centre variables alone.
+
+**4.6 Remark (the failure is not special to weak coupling; ARGUED from the leading order of the strong-coupling
+series, GUIDE for the numbers).** For a stack of B x B plaquettes the series gives
+1 - Z'[1_{P_0}]/Z'[0] = 32 B (beta/4)^6 at leading order: the rim has 4B monopole cubes, each cube boundary has
+the sheet weight 4 (beta/4)^6 (check 1357 L101), and the factor 2 comes from the Fourier inversion. For B = 1
+this is the value that the run of Section 5 confirms at beta = 1.0 and 0.5. So a thin 't Hooft loop has a
+perimeter law at small beta too, with the rate mu(beta) = 8 (beta/4)^6 for each unit of rim, and the bound of
+Lemma D1 fails as soon as 32 B (beta/4)^6 exceeds 2/513. At beta = 1/46 this needs B above 4.7e9, so the remark has
+no practical weight there. Its meaning is structural: under the map of row 1345 the class (10*) is not kept at
+any coupling. The coarse centre always flows to the frozen form of Proposition TOP, and the free centre of (10*)
+is the transient of small beta and small B. (A proof inside the hand range needs the convergent expansion for
+the logarithm of the ratio; I did not write it.)
 
 ## 5. Guide run at a coupling of order one: the thin test at beta = 2.3 (criteria written 2026-11-21T07:35Z, date -u, before the run)
 
@@ -464,4 +520,87 @@ scratch folder outside the repository; total run time about 3 minutes, peak memo
   So the true ratio crosses the bound of Lemma D1 near beta = 0.9 (GUIDE; by the series, 32 (beta/4)^6 = 2/513
   at beta = 0.89). This is far below the bulk crossover. In the pivot variables the class (10*) is a class of
   bare strong coupling and nothing else.
+
+## 6. The first failing step (written 2026-11-21T07:48Z, date -u)
+
+**6.1 The step (OPEN).** (BS-thick) of 4.1, or in the form that Proposition EP admits: for every late cutoff, a
+polymer representation of the eight temporal twisted masses of Wilson on the two tori, at one physical coarse
+mesh, with the bound (P), the lift rule (L) and K_2t = K_t^2. It gives the neutral and the periodic two-period
+bounds together. It is at least as strong as (N-phys), which the gap clause needs.
+
+**6.2 Four ways tried here, and where each stops.**
+
+1. *The centre-sign map of row 1345 into (10*), with any representation of the environment.* Refuted for
+   beta >= 59 (Theorem N), for beta >= 245 from checked statements alone (Remark N1), and at guide level at
+   beta = 2.3 and 1.0 (Section 5). Stops at: the rim of a thin packet (Lemma T).
+2. *The same map into any local-moment class on the centre weights.* At late cutoffs the centre sector is frozen
+   with a free class (Proposition TOP). The format of row 1351 holds a frozen centre only with a fixed class
+   (Lemma FR, exact case; Proposition B of row 1354 for the class (10)), or with an environment far from a
+   product law (3.4 (c)). Stops at: the environment, which is the whole problem.
+3. *A thick map.* A centre-covariant kernel to coarse SU(2) links reproduces the thin bundle flip (4.3 item 1).
+   It gives twisted coarse densities and no sheet weights, and the coarse weight is not a product of plaquette
+   functions. A polymer end class accepts non-local terms (Proposition EP), and then the landing is a block
+   statement in the law of the model at a coupling of order one. Stops at: the same statement as rows 1340, 1353,
+   1354 and 1356.
+4. *A coarse centre variable without a rim* (4.3 item 4). It exists after the action is deleted in a collar
+   of the dual one-skeleton, which changes the theory, or for closed surfaces only, which are the classes.
+
+**6.3 What would reopen the dual route.** (a) An exact map whose coarse centre variable costs no rim: none is on
+file, and 4.3 item 1 shows that a centre-covariant kernel alone does not give one. (b) A proof that the polymer
+activities of a blocked Wilson theory obey (P) at one coupling above the strong-coupling range. This is a
+finite-coupling block statement; it must fail for compact U(1) at large coupling (row 1353).
+
+## 7. Summary
+
+**Solved?** No. The block step is not built. (N-phys) and the mass gap are not proved. No statement of the
+chain is disproved. One proposed route is closed with proofs.
+
+**PROVED here (by hand; checked by no one).**
+
+- Lemma A: A(beta) >= (4/(3 pi)) (3/(2 beta))^(3/2) e^(-3/2) (2 - 3/(2 beta))^(1/2) e^beta for beta >= 3/2.
+- Lemma T (given the signed deletion bound (7) of row 1345): a sign pattern with one monopole cube has
+  Z[tau] <= 3 (e^(sqrt 3 beta/2)/A(beta))^4 Z[0], which is at most 0.658 Z[0] for beta >= 59.
+- Lemma D1 (given the deletion induction of row 1351 and Theorem E): in a model of (10*) a change of sign of
+  one plaquette's odd part changes the periodic mass by a factor between 511/513 and 513/511.
+- Theorem N: for beta >= 59 and every block side, no model of (10*) represents the Wilson theory with its
+  packet signs. So no re-expression of the coarse model of row 1345 in other environment variables lies in
+  (10*). Remark N1: the same for beta >= 245 from statements that rows 1347, 1352 and 1357 checked.
+- Proposition TOP and Corollary TOP1 (given (8) of row 1345): for 6 sqrt(u_beta) < 1 the weight of a coarse
+  electric sheet of row 1345 is 2^(r - 6v) 64 X_c up to 2^(r - 6v) eps_B Z[0], with c the homology class of the
+  sheet. Every bounding sheet weighs as much as the empty one, up to (1 +- eps_B)/(1 -+ eps_B).
+- Lemma FR: on independent link variables a plaquette-local rule with values in F_2 that is closed almost
+  surely is a constant closed cochain plus a coboundary of link functions. Its class is constant.
+- 4.3 item 1: for a centre-covariant kernel the coarse sign flip is the thin bundle flip of the fine theory.
+- Proposition EP (given row 1351 L134-136): the end theorem of rows 1351 and 1354 for abstract polymers with the
+  hypotheses (P) and (L).
+
+**ARGUED here.** 3.4 (c): a frozen centre with a free class needs an environment far from a product law (no
+quantitative form of Lemma FR was written). 4.2: a landing in a dual class needs a thick centre variable. 4.6:
+the class (10*) is not kept by the map of row 1345 at any coupling.
+
+**GUIDE.** Section 5: at beta = 2.3 the one-plaquette ratio is 0.338 +- 0.002 and the ratio for a 2 x 2 stack is
+about 0.045, against the 0.996 that (10*) needs; at beta = 1.0 the ratio is 0.9929 +- 0.0006. One preset control
+(C2) failed by a small amount at one step and is reported in 5.4.
+
+**OPEN.** (BS-thick) in any form; a quantitative Lemma FR; Lemma T at a coupling of order one; (N-phys); the
+mass gap.
+
+**Not done.** Row 1358 and its file were not read. `parts/gap.md` (130 KB) was not read; I worked from the RESULT
+lines of rows 1332 to 1357 and from the files of rows 1345, 1351, 1354 and checks 1347, 1357. PRs #10133, #10134, #10141, #10144 were not searched. I read
+no published paper in this row; Mack and Petkova, 't Hooft and Tomboulis and Yaffe are cited through the rows
+that read them. I did not re-derive the constants of row 1351's cluster bound (12) or of its Cauchy tail. The
+proofs of Section 2 to 4 are unchecked.
+
+**For the lead (proposals; no other file was edited).**
+
+1. Do not queue (BS*) for the map of row 1345. Theorem N and Proposition TOP close it in both end classes.
+2. A check of this row needs: Lemma T (four steps, with row 1345 L73 and L81), Lemma D1 (one paragraph, with row
+   1351 L134), Proposition TOP (the count of row 1345 (9)), Lemma FR (elementary), Proposition EP.
+3. Lemma T also improves the range of (8) and (9) of row 1345: with the geodesic distance and four faces for
+   each cube the factor for one disjoint-face cube is 3 e^(sqrt 3 beta/2)/A(beta), which is below one for
+   beta >= 66 (hand constant of Lemma A; 54.8 with the exact A), where the on-file form needs 6 sqrt(u_beta) < 1,
+   that is beta >= 213.5 with the exact A. (ARGUED: among h cubes at least
+   h/4 choose the same coordinate direction for their four faces. Not written out, not needed on the tail.)
+4. If a dual end class is kept as a target, use the polymer form of Proposition EP, which a thick map could
+   meet, and state the block step as a statement in the law of the model.
 

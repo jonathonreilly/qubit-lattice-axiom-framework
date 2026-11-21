@@ -188,3 +188,83 @@ maps do the centre sums exactly and uniformly on the tail, and they leave the an
 class (10*) is the class of a different variable: the centre sign of an SU(2)-valued block link, whose two
 values have nearly equal weight (row 1353 Section 5, Theorem END-D).
 
+## Step 3. Which coarse variable has rare sheets, and what the step then is (written 2026-11-21T07:26Z, date -u)
+
+Also read for this step: `library/gap-finishline-opus.md` (row 837) 1.1 to 1.6 (the account's density at first
+passage, READ there from Sussman and Alpoge); `library/gap-solve2-astra62.md` (row 1145) Section 1, statements
+only; `library/gap-blockstep-astra62.md` (row 1341) L19-40.
+
+**3.1 Block-link kernels (definition; the lemma is PROVED, elementary).** Keep the tiling of row 1345 and its
+bundles: b(E) is the set of fine links that cross the face of the coarse link E. For a sign array sigma on
+the coarse links, U^sigma is U with the bundle b(E) multiplied by sigma_E, and V^sigma is the coarse field
+with V_E multiplied by sigma_E. A block-link kernel is a probability density k(V | U) for a coarse field V
+in SU(2)^(coarse links), with respect to Haar measure, measurable in the fine field U, with
+
+- (K1) the integral of k(V | U) dV is 1 for every U;
+- (K2) k(V | U^sigma) = k(V^sigma | U) for every sigma (centre covariance).
+
+Examples: V_E = the straight transport along one line (row 1145); V_E = a normalized average of transports
+that cross the face once (the averaging of Balaban that the account uses); either one with a heat-kernel
+factor in place of the delta function (the pins of rows 861 and 1340, moved to block links).
+
+**Lemma KER.** Put rho^tau(V) = integral of k(V | U) w_tau(U) dU, with w_tau the Wilson weight with the packet
+signs tau. Then: (a) the integral of rho^tau(V) dV is Z_tau, for every tau; so the map is mass-preserving and
+exact for every twist. (b) rho^(tau d sigma)(V) = rho^tau(V^sigma). (c) For tau = 1: rho(V^sigma)/rho(V) is the
+conditional mean, given V, of exp(-2 sum of X_P over the coarse plaquettes with (d sigma)_P = -1), where
+X_P = beta times the sum of q_p over the packet. In particular the unconditional mean of
+exp(-2 sum_{P containing E} X_P) under the Wilson law is exactly 1.
+
+Proof. (a) Fubini and (K1). (b) w_(tau d sigma)(U) = w_tau(U^sigma) pointwise (this is (F2) before
+integration); substitute U -> U^sigma, which preserves Haar measure, and use (K2). (c) is (b) written with
+the joint law k(V | U) w(U) dU dV / Z; the last claim is (F2) for tau = d sigma. QED
+
+So the centre sign of a block link has the coupling of (c): the conditional cost of the thin flip, given
+the coarse field. In the centre-sign map of row 1345 the whole fine environment is kept, the cost is
+pointwise, and it is of order B^2 beta (row 1345 L34). In a block-link image the cost is averaged over the
+fine field given V. The class (10*), and Theorem END-D of row 1353, are classes for this second variable.
+
+**3.2 Free signs are cheap, and they are not the content (READ and ARGUED).** For straight transports the
+sign is free at every coupling and for every compact group: given all links off the lines, the links of a
+line are independent, and the transport of h steps converges in density to Haar (row 1145 Section 1, PROVED
+there; the mechanism is the perimeter law of Simon and Yaffe). Row 1145 also records what fails: the
+straight grid keeps no spectral information (its L51), because the field off the lines carries the
+correlations. So a block-link image with small windows of one link is available for the asking. What a
+landing in END-D needs beyond that is the decay of the windows with their size, at one rate, on both tori
+with the same local rules: N_kappa(f) <= kappa/32 (row 1353 5.1). For an image
+rho(V) = E[ prod_E k_E(V_E | U) ] the windows are the cumulants, in the law of the fine field, of the local
+factors k_E. So the content of the step is a mixing statement for the fine law, with a rate, uniform in
+the cutoff, at one physical mesh. A product with a massless factor, and compact U(1) at large coupling,
+have free straight signs and no such decay.
+
+**3.3 The account's block field is on the locked side (READ in row 837 1.2 and 1.3; not re-read in the
+account).** At first passage the account gives the density rho_K of its block field V_K on the unit
+lattice: the Wilson action of a background field at the coupling x_K >= gamma^(-2), local terms, and
+large-field regions with weight e^(-c p_0(g)) per component. This is a block-link image in the sense of 3.1
+(K2 holds for an average of transports; I did not check the account's exact averaging against (K2)). Its
+signs are locked: a flip of one block link leaves the small-field region. So a block-link chain from the
+account's class to END-D is the continuation of the account's own renormalization through the range where
+its hypothesis g_k <= gamma fails (row 837 1.1, from the account's citation of Balaban's stability theorem),
+down to couplings where the block field is nearly Haar. Row 1332 6.3 and 6.4 say this in the words "one
+block step at an effective coupling of order one", and count the steps.
+
+**3.4 The step, corrected (OPEN).** (BS-BL) There are a block-link kernel that reads a bounded neighbourhood
+and one physical coarse mesh such that, for every late datum, the images on the two tori have the form
+c^v prod_W (1 + f_W) with the same local rules and N_kappa(f) <= kappa/32. By Lemma KER and Theorem END-D this
+gives the neutral and the periodic two-period bounds and alternative I. It replaces (BS*) of row 1354 6.1,
+whose natural reading (the centre-sign map into (10*)) is excluded on the tail by Step 2. I do not claim
+that (BS-BL) is necessary for (N-phys): the consumer needs the two masses only (row 1353 6.1), and a
+landing in a class with decaying windows is a stronger statement than a gap of the periodic transfer
+operators (ARGUED: it gives the tree decay of all cumulants of the coarse field, for supports that no
+hyperplane separates as well).
+
+**3.5 Remark on END-D (PROVED by inspection of row 1353's proof; small).** Theorem END-D is stated for
+windows that are boxes, with size = the number of sites of the box. Cumulants of a block-link image decay
+in the tree length of their support, not in the volume of its bounding box (three coarse plaquettes at
+mutual distance r have tree length about 2r and a bounding box with about r^2 sites or more). The proof
+of END-D holds word for word when a window is any connected set of links that meets at most
+min(T, m) - 2 sites, with size(W) = the number of sites it meets, and the twist function of a window taken
+from its bounding box: Step 2 uses only that a window has at most 4 size(W) links; Step 5 uses only that a
+connected family of windows of total size k lies in one embedded box, and that the twist functions of two
+boxes that contain a window differ on it by end signs (both have the same plaquette products on the
+smaller box, and a box is simply connected). I use END-D in this form in 3.4.
+

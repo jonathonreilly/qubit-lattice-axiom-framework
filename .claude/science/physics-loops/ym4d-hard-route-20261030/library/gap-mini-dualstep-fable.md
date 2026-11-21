@@ -439,7 +439,13 @@ cutoff; a perimeter law for the thin Z_2 monopole loop at every coupling (it wou
 from the tail to every beta at large B; not needed for the trajectory; ARGUED: the map tau -> Z_tau is
 reflection positive at planes through sites, so by the chessboard estimate the law follows from the strict
 positivity of the pressure deficits of finitely many periodic frustrated sign patterns, which I did not
-prove at intermediate beta); (N-phys); the mass gap.
+prove at intermediate beta. One attempt, not written out: for the pattern with all (1,2)-plaquettes of every
+second time slice negative, the mass is Tr[(S_+ S_-)^(n/2)] with S_- the transfer operator conjugated by a
+link flip; the deletion bound (7) of row 1345 controls the sign of each slice sum at the rate log A(beta),
+but the frustration at small beta is a product of two plaquette biases and one temporal correlation, of
+order beta^6, which the deletion bound does not see. First failing step: a positive lower bound on the
+covariance of a plaquette with its time translate, an inequality of the second Griffiths type, which is
+not on file for SU(2)); (N-phys); the mass gap.
 
 **Not done.** I did not read the outputs of rows 1356 and 1357 (not on disk at this pin). I did not re-read
 the account of Sussman and Alpoge; statements about it come from rows 837 and 1345. I did not re-derive the

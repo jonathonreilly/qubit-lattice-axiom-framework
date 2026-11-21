@@ -12,6 +12,7 @@ checked by anyone else.
 
 - 2026-11-21T06:14Z: file created (save protocol). Nothing read yet beyond the queue row, GOAL.md and my navigation notes.
 - 06:32Z: read the row, GOAL.md, the rule sections of FINISH.md, row 1353's file in full, the sibling file of row 1354, parts/gap.md L8-104, Theorem ZD-c, Identity I1, row 1168 (19)-(21), the route tables of rows 1180 and 1184; registry grep run; Section 1 written.
+- 06:42Z: Sections 2 and 3 written (Lemma M1, Corollary M2, choice of attack). Next: Way 1, transport with comparison of all eigenvalues.
 
 ## 1. Repo search and inputs (written 06:32Z, `date -u`)
 
@@ -66,3 +67,83 @@ L. Mirsky and C. Eckart, G. Young (singular value inequalities); E. Milman (eige
 contracting maps), L. Caffarelli, Y.-H. Kim and E. Milman, D. Mikulincer and Y. Shenfeld (Lipschitz transport
 maps); M. Luscher (trivializing maps). In this lane: gpt-6.2-astra (rows 1161, 1165: the neutral consumer and the
 Hellinger test); Claude Opus 5.5 (Identity I1); Claude Fable 5.2 (rows 1180, 1184, 1342, 1353).
+
+## 2. The target with its sharp constant (written 06:42Z, `date -u`)
+
+Notation as in row 1353, 6.1: n^3 is the spatial box, T the Wilson transfer operator on L^2 of the slice
+configurations (Haar measure, gauge-invariant functions), P_0 the mean of the eight centre translations,
+lambda_0 the vacuum eigenvalue, x_a = lambda_a/lambda_0 the relative neutral eigenvalues (a >= 1), and
+s(u) = sum over a >= 1 of x_a^u. Norms of operators are Hilbert-Schmidt norms.
+
+(M-neutral), from row 1353 6.3: there are an admissible L and, for all late j, an integer w_j <= n_j/1024, a unit
+vector phi_j and c_j > 0 with norm(P_0 T_j^(w_j)/c_j - |phi_j><phi_j|) <= 2/5.
+
+### 2.1 Lemma M1 (the exact distance to rank one; PROVED, elementary)
+
+Let B be a positive semi-definite Hilbert-Schmidt operator, B not 0, with eigenvalues mu_0 >= mu_1 >= ... >= 0, and
+put sigma = sum over i >= 1 of (mu_i/mu_0)^2. Then
+
+    min over c > 0 and over operators Q of rank one with norm(Q) = 1 of norm(B/c - Q)^2  =  sigma/(1 + sigma).
+
+The minimum is attained at Q = the projection on a top eigenvector and c = Tr B^2/mu_0. Equivalently
+
+    sup over unit vectors phi of <phi, B phi>^2 / Tr B^2  =  1/(1 + sigma).
+
+Proof. For Q of rank one with Hilbert-Schmidt norm 1 the trace norm of Q is 1, so abs(Tr Q* B) <= mu_0. With
+t = 1/c: norm(tB - Q)^2 = t^2 Tr B^2 - 2 t Re Tr Q* B + 1 >= t^2 Tr B^2 - 2 t mu_0 + 1 >= 1 - mu_0^2/Tr B^2, and
+Tr B^2 = mu_0^2 (1 + sigma). Both inequalities are equalities for Q = |phi_0><phi_0| and t = mu_0/Tr B^2. For the
+second display take Q = |phi><phi|: the minimum over t of norm(tB - Q)^2 is 1 - <phi, B phi>^2/Tr B^2. QED
+
+This is the case k = 1 of the theorem of C. Eckart and G. Young, with the free scale c added.
+
+### 2.2 Corollary M2 (PROVED from Lemma M1)
+
+For B = P_0 T^w: sigma = s(2w). So, for one box, one integer w >= 1 and one tolerance delta in (0, 1):
+
+- (i) the rank-one test at tolerance delta holds at the time w if and only if s(2w) <= delta^2/(1 - delta^2). For
+  delta = 2/5 this is s(2w) <= 4/21. Row 1353, Corollary BT2 (i), has the weaker bound 4/9.
+- (ii) Hence (M-neutral) gives (N-phys) with u_j = 2 w_j and the margin 4/21 in place of 1/2, with no loss in the
+  time. In the other direction, s(u) <= 1/2 gives s(3u) <= 1/8 < 4/21, so the test holds at any integer time
+  w >= 3u/2.
+- (iii) The threshold of the test is 1/sqrt 2. If the test holds at a time w with a tolerance delta < 1/sqrt 2,
+  then q := delta^2/(1 - delta^2) < 1, the neutral gap obeys x_1^(2w) <= q, and the test at tolerance 2/5 holds at
+  every time k w with q^k <= 4/21, because s(2kw) <= s(2w)^k (a sum of non-negative terms; Lemma N1 of row 1184).
+  At delta = 1/sqrt 2 the test proves nothing in the class of positive operators: a projection of rank two has
+  sigma = 1 and distance exactly 1/sqrt 2 from rank one, and it has no gap.
+- (iv) The test is a statement about two numbers. With Z_+(t) = Tr (P_0 T^t): the test at tolerance delta holds
+  at w if and only if lambda_0^(2w) >= (1 - delta^2) Z_+(2w). So a proof needs an upper bound U >= Z_+(2w) and a
+  lower bound <phi, P_0 T^w phi> >= l for one unit vector phi, with l^2 >= (1 - delta^2) U. For delta = 2/5 the two
+  bounds together may lose the factor 25/21 in total, on a lattice of 2 w n^3 >= 2^270 sites.
+
+Item (iv) is the two-period form on file (Lemma TP of row 1342) with a trial vector in place of the second
+period; row 1165 (19) uses the square root of the slice marginal as the trial vector. I state it because it fixes
+the choice of attack in Section 3.
+
+## 3. How best to attack it (written 06:42Z, `date -u`; ARGUED, except where a proof is cited)
+
+1. What the record says. (M-neutral) is the crux of the gap lane. Rows 1180, 1184 and 1353 list about 25 routes
+   with their first failing steps, and rows 1188-1259 found that further blind lists return items on file. The
+   forms I derived again in this session are all in the table of Section 1. So this row does not make a list.
+2. What kind of statement it is. By Corollary M2 (iv) the test compares two partition functions of more than
+   2^270 sites up to a total factor 25/21. A bound that loses any fixed factor per site, or per unit of
+   boundary, is useless. This is on file as Proposition FR of row 1332 (tolerance of order 1/volume per site)
+   and as Lemma R4 of row 1180 (an operator comparison on L^2 of Haar measure loses the vacuum energy). A proof
+   must therefore use a relation that is exact at rank one. I know three kinds.
+   - (a) Convexity and reflection positivity of the masses themselves. This is the engine (Theorem S, Theorem
+     ZD-c). It needs a seed, and (M-neutral) is the seed.
+   - (b) A convergent expansion whose leading term is the same on both sides. This is the chain of block steps
+     into an end class (rows 1332-1353). Its open step is the block step at order-one coupling.
+   - (c) A comparison made in the ground-state representation, where the vacuum is the constant function on both
+     sides and no vacuum energy appears. Two tools of this kind exist: comparison of Dirichlet forms under a map
+     (a transport map), and a coupling of the two slices (total variation). Both are statements in the law of
+     the model, with no supremum over boundary values.
+3. Choice. Kinds (a) and (b) are owned by the chain rows and by row 1353. Kind (c) has one executed consumer on
+   file, the Hellinger test of row 1165 (19)-(21), and one consumer for the gap alone, statement (A) of row 1132
+   (a minorization in Moser coordinates). The transport tool that gives all eigenvalues, hence the count and the
+   gap together, is recorded as "not tried" (Section 1). So I attack through (c), in three ways:
+   - Way 1 (Section 4): a Lipschitz transport map and the comparison of all eigenvalues.
+   - Way 2 (Section 5): a coding of the periodic law by independent variables, fed to the test of row 1165.
+   - Way 3 (Section 6): the same comparison for the Wilson transfer operator itself, which has discrete time.
+   For each I prove the consumer and then look for the supplier. Each section ends with its first failing step.
+4. What would count as success. A supplier that is a finite statement, or a statement that the account's
+   first-passage data can be shown to satisfy. Anything else is a restatement of the crux, and I say so.

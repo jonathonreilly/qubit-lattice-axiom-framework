@@ -321,6 +321,8 @@ Proof. The proof of Theorem ZD, with every constant uniform in j. From (PHYS-SEE
 
 **Lead note on Theorem ZD-c (2026-11-21, no proof).** Theorem ZD-c puts no condition on the coupling along the trajectory. Three later reductions to its two-stage seed need one: rows 1325, 1330 and 1334 use estimates that hold only for beta_0 at most beta_j at most B_0 log(L/a_j), some also with beta_j tending to infinity (checks 1327, 1333, 1336). Any use of ZD-c through such an estimate must state that range for the trajectory. An asymptotic-freedom trajectory meets it.
 
+**Lead note on which seed the gap needs (2026-11-21, no proof).** By row 1342, checked with corrections by row 1349, the periodic two-period test of Theorem ZD-c is (N-phys) plus eventual finite branch I over admissible sizes; either branch gives (G_ev-phys), which suffices for the matched gap clause. A route to the gap may therefore target (N-phys), the neutral twist-averaged seed, instead of the full periodic bound.
+
 **Corollary Z4 (a dichotomy in the plain gap variable; PROVED GIVEN Theorem ZD).** Let D(a) <= D_0 for all a >= a_0. Then either b m(b^3) < 256 D_0 + 29.64 for every multiple b >= 4 a_0 of 4, or there are N and c > 0 with m(L^3) >= c/N for every L >= 2N, so that L m(L^3) grows at least linearly. The gap of the cube in units of its inverse side cannot stay above 256 D_0 + 29.64 without growing for ever. In particular, at a coupling with no seed and bounded D (the critical coupling beta* of Theorem CRIT of row 708, if D is bounded there), every periodic cube of side b has a level within (256 D_0 + 29.64)/b of its ground state.
 Proof. If (C_b) holds for one such b, Theorem ZD gives (A), and Corollary S3' gives the gap. QED
 

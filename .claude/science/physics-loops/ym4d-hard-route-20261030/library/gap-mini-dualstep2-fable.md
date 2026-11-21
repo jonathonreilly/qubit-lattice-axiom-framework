@@ -18,6 +18,9 @@ attempt on the same problem; this row does not read it.
 - 2026-11-21T07:31Z (date -u): read row 1345 L5-110 (maps (1)-(3), bounds (4)-(9)), row 1351 L106-152 (class (10), the
   deletion induction, obstruction (13)), check row 1347 RESULT and its lines on (7), (8). Section 1 written.
 - 2026-11-21T07:32Z (date -u): Section 2 written (Lemma D1, Lemma A, Lemma T, Theorem N).
+- 2026-11-21T07:34Z (date -u): Section 3 written (Proposition TOP, Corollary TOP1, Lemma FR, the three cases).
+- 2026-11-21T07:35Z (date -u): criteria of the guide run written (Section 5); numeric lock acquired (holder row1360-fable,
+  memory free 66 percent by memory_pressure).
 
 ## 1. How best to attack it (decision, written 2026-11-21T07:31Z, date -u)
 
@@ -209,4 +212,126 @@ statements that rows 1347, 1352 and 1357 have checked, plus Lemma A.
 5. At beta <= 1/46 Wilson is in (10*) with B = 1 (row 1354 3.2 item 2), and the test is passed there:
    1 - Z[1_p]/Z[0] is of order beta^6. So the test separates the two regimes, and the threshold of the true
    ratio lies between.
+
+## 3. The coarse centre sector at late cutoffs is topological (written 2026-11-21T07:34Z, date -u)
+
+**3.1 Sheet weights.** Keep 2.1. For a set S' of coarse plaquettes put
+
+    W_B(S') = 2^(-6v) sum over all tau' of (-1)^(<tau', S'>) Z'[tau'].
+
+Facts (PROVED; the first two are finite Fourier analysis on F_2^(6v) with (F1), the third is check 1357 L89-93):
+(a) W_B(S') = 0 unless S' is a cycle; (b) Z'[tau'] = sum over cycles S' of (-1)^(<tau', S'>) W_B(S');
+(c) W_B(S') = integral over a_B of prod_P cosh J'_P prod_{P in S'} tanh J'_P. So W_B(S') is the weight of the
+coarse electric sheet S' in the reading of row 1354 4.4, after the environment is integrated. If a model M
+represents the theory with its packet signs (2.2), then W_B(S') = K prod a_P E[prod_{S'} beta_P prod_{off S'} alpha_P].
+
+Let C = im d' (dimension r = 3v - 3) and H^2 = ker d'/C (64 classes). By (F1), Z'[tau'] is one number Z_h on each
+closed class h. For a class c in H_2(Lambda'; F_2) put X_c = (1/64) sum over h of (-1)^(<h, c>) Z_h. For c with
+temporal components only this is the transform that gives the electric sector traces of row 1354 2.4 (there
+over the eight temporal twists).
+
+**3.2 Proposition TOP (PROVED GIVEN (F4); the estimate is that of row 1345 (9), read for one sheet).** Let
+6 sqrt(u_beta) < 1 and eps_B = 64 [(1 + q_B)^(4v) - 1]. For every coarse cycle S', with c its homology class,
+
+    | W_B(S') - 2^(r - 6v) 64 X_c |  <=  2^(r - 6v) eps_B Z[0].
+
+Proof. Split the sum over tau' into closed and not closed patterns. The closed patterns are the 64 cosets h + C,
+each of 2^r elements. For a closed tau' and a cycle S' the pairing <tau', S'> depends only on the classes. So the
+closed part is 2^(-6v) 2^r sum_h (-1)^(<h, c>) Z_h. For the rest: a nonzero syndrome m = d' tau' with k cubes has
+64 times 2^r preimages; there are at most (4v choose k) such syndromes; and Z'[tau'] <= q_B^k Z[0] by (F4). The
+sum over k >= 1 is 2^(-6v) 2^r 64 [(1 + q_B)^(4v) - 1] Z[0]. QED
+
+**Corollary TOP1 (bounding sheets are not rare; PROVED).** Since 64 X_0 = sum_h Z_h >= Z[0], for every set V' of
+coarse cubes
+
+    (1 - eps_B)/(1 + eps_B)  <=  W_B(boundary of V') / W_B(empty)  <=  (1 + eps_B)/(1 - eps_B).
+
+For a cycle of class c the ratio W_B(S')/W_B(empty) is X_c/X_0 up to the same relative error in numerator and
+denominator. At fixed coarse volumes eps_B tends to zero on the first-passage tail (row 1345 L103: v q_B -> 0,
+with B = L^K or with one fixed large B).
+
+**Reading (PROVED statements in words).** At late cutoffs the coarse centre model of row 1345 has no local
+content. The weight of a coarse electric sheet is a function of its homology class. Every bounding sheet, of any
+size and shape, weighs as much as the empty sheet. In the magnetic picture this says: Z'[tau'] vanishes (to
+eps_B) unless tau' is closed, and then it is the class mass Z_h. The only numbers that the centre sector carries
+are the 64 class masses of each torus, which are the twisted masses. Alternative I is the statement that
+wrapping sheets are rare (X_c small against X_0). The class (10*) asks that *local* sheets are rare, by the
+factor u^6 for the boundary of one cube. They have relative weight one. This is Theorem N again, now for all
+bounding sheets, in the range of (F4).
+
+**3.3 Lemma FR (a frozen closed rule on independent links has a fixed class; PROVED, elementary).** Let Lambda'
+be a four-dimensional torus with all sides at least 3. Let the link variables x_E be independent, with any
+laws. For every plaquette P let sigma_P be a measurable function of the four link variables of P with values in
+F_2. Assume that d sigma(x) = 0 on every three-cube, for almost every x. Then there are link functions g_E of
+x_E alone and a constant closed cochain c with
+
+    sigma_P(x) = c_P + sum over the four links E of P of g_E(x_E)      for almost every x.
+
+So the cohomology class of sigma(x) is the constant class of c.
+
+Proof. Fix a link E and two plaquettes P, P' through E that lie in one three-cube. In that cube E lies in the
+faces P and P' only, and P and P' share no other link. Write a for the other three links of P and b for those of
+P'. The cube equation reads sigma_P(x_E, a) + sigma_P'(x_E, b) = R, where R does not depend on x_E. Write it for
+two independent copies x_E and y_E and add: sigma_P(x_E, a) + sigma_P(y_E, a) = sigma_P'(x_E, b) + sigma_P'(y_E, b)
+almost everywhere. The left side does not depend on b and the right side not on a, and a and b are independent.
+So both sides equal one function phi(x_E, y_E) almost everywhere (fix a good b). Fix a good y_E:
+sigma_P(x_E, a) = phi(x_E, y_E) + sigma_P(y_E, a). So sigma_P is a function of x_E plus a function of a. This
+holds for each of the four links of P, and a function on a product that splits off each coordinate in this way
+is a sum of four one-variable functions and a constant (induction on the coordinates). The same phi serves P and
+P', so the one-variable parts of P and P' at E differ by a constant. The six plaquettes through E are joined by
+the relation "in one three-cube" (two of them are in one cube exactly when they lie in different planes, and
+any two are joined through a third). So one function g_E serves all six, and the constants go into c_P. Then
+d sigma = d c, so c is closed, and sigma = c + d g has the class of c. QED
+
+**3.4 The three cases for the format of row 1351 (the first two PROVED, the third ARGUED).** The format: independent
+link variables x, positive weights w_P(x; z) on each plaquette that read the four links of P, centre curvature z
+summed over C. Put b_P = (w_P(x; 0) - w_P(x; 1))/(w_P(x; 0) + w_P(x; 1)), in (-1, 1), and let mu be the positive
+measure with the density prod_P (w_P(x; 0) + w_P(x; 1)) against the product law. Then the sheet weights of the
+model are the mu-integrals of prod_{P in S'} b_P. Let the model represent the Wilson theory with its packet
+signs at a late cutoff. By Corollary TOP1 the mu-mean of the product of b_P over the six faces of any cube is at
+least (1 - eps_B)/(1 + eps_B). So under mu the field b is frozen and its sign field is closed, up to mu-mass of
+the order eps_B for each cube.
+
+- (a) The centre is nearly free: b small in the sense of (10*). Excluded by Theorem N (PROVED).
+- (b) The centre is frozen and the environment is the product law itself (all w_P(x; 0) + w_P(x; 1) constant),
+  with exact closure. Then Lemma FR applies to sigma = sign b: the class is fixed, one class mass is positive
+  and the other 63 vanish. This is alternative II in its extreme form (PROVED). For an environment close to the
+  product law in the sense of (10) the same conclusion is Proposition B of row 1354 (one heavy class).
+- (c) The centre is frozen, the class is free. Then mu must give almost all its mass to configurations where a
+  plaquette rule is closed and is not a coboundary of link functions. Under the product law such an event
+  has probability at most (1 - p)^(number of independent cubes) with p > 0 the defect probability of one cube.
+  So the density of mu is not a small perturbation of a constant: it carries a weight of order e^(const v)
+  (ARGUED; I did not write a quantitative version of Lemma FR). The Wilson theory itself is of this kind with
+  B = 1: x is the SO(3) link, w_P(x; 0) + w_P(x; 1) = 2 cosh(beta q_P), and closure of sign q_P comes from the
+  Bianchi identity where all plaquettes are close to the identity. No end theorem on file covers it, and it is
+  the problem itself.
+
+**Conclusion of Sections 2 and 3.** For a confining Wilson theory at a late cutoff, the coarse model of row 1345
+lies in neither end class, in any representation that keeps its centre variable: not in (10*) (Theorem N), and
+not in (10), which fixes one heavy class (row 1354 Proposition B; obstruction (13) of row 1351). Its centre
+sector is frozen with a free class. In the format "independent links, plaquette-local weights, small local
+moments" such a sector does not exist (Lemma FR and case (c)). So the chain "centre-sign map, then a local
+moment test on the centre weights" is closed in both directions. This does not touch the neutral target or the
+gap clause. It removes one route to them.
+
+## 5. Guide run at a coupling of order one: the thin test at beta = 2.3 (criteria written 2026-11-21T07:35Z, date -u, before the run)
+
+(Section 4 follows below; this section was started first because its criteria must precede the run.)
+
+**5.1 What is tested (GUIDE only; a Monte Carlo is never a proof step).** Theorem N is proved for beta >= 59.
+(BS*) of row 1354 is meant at a coupling of order one, with a block side of a few units. The same necessary
+condition applies there: a model of (10*) that represents the theory with its packet signs needs
+Z'[1_{P_0}]/Z'[0] >= 511/513 = 0.9961 (Lemma D1). The run estimates this ratio at beta = 2.3 for B = 1 (one
+plaquette, R_1 = <exp(-2 beta q_p)>) and for B = 2 (a stack of 2 x 2 parallel plaquettes, R_2, as a product of
+four successive one-plaquette ratios, each measured forward and backward).
+
+**5.2 Criteria, fixed before the run.**
+
+- Control C0: the script's self-test (quaternion product against 2 x 2 matrices; the staple against the change
+  of the signed action) must agree to 1e-10.
+- Control C1: the mean plaquette at beta = 2.3 on 6^4 must be 0.602 +- 0.004 (the published value is 0.6024).
+- Control C2: for each of the four steps the forward ratio times the backward ratio must be 1 within 0.15.
+- Result: the thin test "passes" at beta = 2.3 if R_1 >= 0.996, and "fails at guide level" if R_1 plus three
+  standard errors is below 0.99. The same for R_2.
+- What the run cannot show: a bound. It cannot replace Lemma T at order one.
 

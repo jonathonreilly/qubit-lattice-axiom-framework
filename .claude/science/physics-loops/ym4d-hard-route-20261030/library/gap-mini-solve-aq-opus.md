@@ -1,0 +1,457 @@
+lead: anthropic/claude-opus-5-5/max mac-mini-worker
+lease_until: 2026-11-21T02:59Z
+
+# gap-mini-solve-aq-opus: four-dimensional SU(2) Yang-Mills mass gap (row 1284)
+
+Started 2026-11-20T14:59Z (date -u) on the Mac mini, worktree pinned at commit 5b1df13cc
+(branch claude/ym4d-hard-route). Labels: PROVED, ARGUED, GUIDE, OPEN, per the row brief.
+
+## 0. Status log (updated in place)
+
+- 14:59Z: file created; reading GOAL.md, FINISH.md rules, `parts/gap.md`, the RESULT lines of the
+  earlier mini-solve rows, and `library/prior/gap-onebound-read-sol.md` (row 1218).
+- (before 15:52Z): Steps 0-3 written. Step 1: no route to the seed off the record (ARGUED), so the row works carry inputs.
+  Step 2: item B reduced (Lemma CC), item A not closed. Step 3: Lemma OP (PROVED given the unchecked convex Laplace
+  theorem of `library/convex-laplace-tree-decay.md`), Proposition PE' and Corollary PE2 (PROVED GIVEN readings, most
+  of them now read in CMP 119; Lemma MC ARGUED). Next: Step 4, labels and RESULT.
+- 15:55Z: Step 5 (Lemma SF) added before the RESULT line; it replaces the ARGUED Lemma MC for the Hessian. 15:52Z: Corollary AS (3.8) and Step 4 written; RESULT line at the end. File complete for this row. Correction: the step times first written in this file (15:55Z to 19:10Z) were my estimates, not readings of date -u, and were wrong; date -u gave 14:59Z at the start and 15:52Z when the RESULT line was appended.
+
+## Step 0. Record read (statements about the record, not evidence; written before 15:52Z; step time not taken)
+
+Read: `GOAL.md` in full; `FINISH.md` L1-84 and L299-349; this item's row (L1365, row 1284); the RESULT lines of
+rows 1189-1291 (the mini-solve series, the owner's tiling rows 1285-1287, rows 1281, 1283); `parts/gap.md` L1-104
+and the route registry L223-267; `library/prior/gap-onebound-read-sol.md` (row 1218) in full;
+`library/gap-crux-restate.md` L1-60; `library/gap-crux-exercise3-max.md` L100-160 (row 998's precise form of the
+wall); Steps 0-3 of `library/gap-mini-solve-ap-opus.md` (row 1280) and Steps 1-2 of
+`library/gap-mini-solve-ao-opus.md` (row 1278); CA-III L16540-16700 (`9.1:prop-blind-site-expansions`, fetched by
+URL at Sussman-Alpoge commit 31a47c543775 into a scratch folder outside the repository).
+
+What the record fixes (each item cites where it is proved or checked; none is re-derived here):
+
+1. Modulo the ultraviolet carry, the gap clause reads one lattice input, (N-phys) of row 1161 (Theorem BP, row 1179,
+   check 1183; rows 1225, 1233): at one physical side, uniformly in the cutoff, the periodic centre-neutral excited
+   trace of the spatial cube at a time u <= n/K is at most 1/2. With K = 512 (row 1161) this needs a box of at
+   least 512 log 2 times the inverse gap (check 1287). Equivalent forms: (W), (PHYS-SEED), (SEED) at one coupling
+   with a carry, (SL) at one weak coupling (rows 998, 1258, 1277), and a lower bound of asymptotic-scaling type on
+   the deconfinement coupling (rows 1180, 1184, check 1187).
+2. In thermodynamic words (my paraphrase of item 1, GUIDE): log(1 + s) is the excess free energy of the thermal
+   torus over the vacuum, so (N-phys) says the pressure at temperature 1/(u a) on a cube of side K u a is below
+   log(3/2) / K^3 in units of T^4. That is a statement deep in the confined phase (at about a quarter of the
+   deconfinement temperature, by Monte Carlo lore), not near any small parameter.
+3. Every engine on file is blind, its seed sits in the band, and the one selective proved fact (asymptotic freedom at
+   small coupling) has no carrier through the band (row 998 6b; `parts/gap.md` "Hardest open obligation").
+   The all-coupling template (the posted 2D O(N) proofs) needs closure of a class uniform over pins and strengths;
+   in 4D that class contains ordered members (Proposition CA-FAIL, rows 1072-1074: two pinned slices make a 3D O(4)
+   magnet above beta about 1.01) and critical members (Lemma SHEET, row 996: K7 is an annealed Wilson model).
+4. Row 1218's sources: A's ascent is conditional on its own seed (stronger than (N-phys)); B's Corollary 166 is
+   non-selective (B's own Remark 155; row 1219); Zeng's routes are conditional.
+5. Rows 1255-1280 worked the inputs of the one-cutoff carry. What remains there (row 1280 RESULT): (U-dom) or
+   (P1)-(P4); (E0)-(E6), (E+) against Balaban's CMP 116 (not on this machine); `9.1:prop-blind-site-expansions`
+   ("Proof outstanding" in the account, CA-III L16558-16560; its route repeats CMP 116 Section 2 with island-blind
+   lengths, CA-III L16663-16700); (DET)'s inputs (rows 987-994); the account's premises.
+
+## Step 1. How best to attack it (judgement, ARGUED; written before 15:52Z; step time not taken)
+
+**The seed.** Modulo the carry, the problem is a lattice gap of Wilson SU(2) at one coupling, with a box of several
+hundred correlation lengths (Step 0, items 1-2). I re-derived these routes (after reading the RESULT lines of Step 0, so not blind), then
+grepped each (rule 0a); every one has a match on file with its first failing step:
+- continuity in beta from the strong-coupling seed, closed by a bound on how fast a level can fall: rows 708, 978,
+  1281 ((LEV) is false as an operator inequality; it needs a "bounded excess" of the first level, which is the crux).
+  My variant: the volume-robust thermal form d/dbeta log(1 + s) = (thermal action deficit) with a Gronwall bound
+  "deficit <= K log(1 + s)" is equivalent to (LEV) with K proportional to u, so it adds nothing (checked by the
+  one-level example: deficit / log(1 + s) = u |dm/dbeta|).
+- a bootstrap through local excitations (Lieb-Robinson bounds for the Kogut-Susskind Hamiltonian, isolated
+  one-particle band): rows 1113, 1213 and `library/gap-outside-box-max.md`; my rough estimate (GUIDE) of what it gives is an
+  excess bound of order m^(-4) in lattice units, so the gap would close at finite beta in the bootstrap; it fails
+  quantitatively unless the excess is linear in m, which is (LEV) again.
+- vortex and electric-flux free energies, twist eaters (Fact T): `library/gap-crux-restate.md` (TUBE'),
+  `library/gap-cr-tomboulis-max.md` and its check (Tomboulis 2007 and the Ito-Seiler critique).
+- Migdal-Kadanoff and hierarchical bounds: route RG, retired (row 998 7.4: "the departing step is the crux").
+- B's ascent (H2)/(S) with C_B = 1 + O(g_k^2): the product over scales grows like a power of log(1/a) unless the
+  O(g^2) term has a selective sign; this is a (K-flow) statement with no supplier (row 998 6b).
+- Bakry-Emery for the Doob-transformed ground-state diffusion: needs the ground state; a coupling-uniform curvature
+  would make the limit trivial (row 1237 Proposition UNI).
+- gapless comparison models with asymptotic freedom (Georgi-Glashow, adjoint matter, products with a photon): on
+  file (rows 1285, `library/gap-afield-b-max.md`, `library/gap-global-reform-max.md`).
+- dimensional reduction to the posted 2D O(4) theorem, abelian projection, Gribov-Zwanziger, anomaly matching
+  (theta = pi), Weinberg-Witten: on file or give no lower bound on the spectrum (anomalies and Weinberg-Witten allow a
+  free Maxwell infrared and a trivially gapped one alike).
+Verdict (ARGUED): I have no route to the seed that is off the record, and the record (row 998 9.5) says a further
+screen is waste. I do not attack the seed in this row.
+
+**What I do instead (the rule "only closures count").** The record leaves two kinds of items: the seed (no engine),
+and inputs of the one-cutoff carry, most of which read Balaban's CMP 116 (not on this machine). Two carry inputs are
+unowned at this pin and can be worked with sources on hand (rule 0a: grep of FINISH.md and `library/open-core.md` for
+"(U-dom)", "H2'", "absolute core", "cross-admission": hits only in rows 1267, 1268, 1278, 1280, as OPEN or ARGUED):
+- **Item A: (U-dom) of row 1280 (3.3),** ARGUED there; the input of Theorem U (row 1280 3.6) at the window levels.
+  Sources: Balaban CMP 102 (Theorem 1 and (190)) and CMP 119 ((1.2), (3.2)-(3.13)), both in the owner's papers folder.
+- **Item B: the connectedness clause of Lemma H2' (row 1278 2.3),** "connectedness and isometry-invariance of the
+  absolute core (not found stated)". Source: YM4_EM at c7fef8b21b58 (fetched by URL to a scratch folder).
+
+Moves: the one-cutoff carry on the pin route (row 1233 Proposition 3.7; rows 1267, 1268, 1278, 1280). Success on A:
+(U) leaves the carry's list with only (E+) and the supplier readings left at the window levels. Success on B: Lemma
+H2' becomes PROVED GIVEN readings with no geometric gap. Failure: the first step that does not close, named.
+Neither item changes the seed; this is said plainly so that nobody counts it as progress on the crux.
+
+**Plan (as first written; it changed after Step 2, see 2.3).** Step 2: item B (short). Step 3: item A, reading CMP 102
+Theorem 1, (190) and CMP 119 (3.6)-(3.9). Step 4: labels, state, RESULT. What was done: items A and B in Step 2,
+then the parity route to (U) in Steps 3 and 5, which makes item A unnecessary for (U).
+
+## Step 2. Items B and A examined (written before 15:52Z; step time not taken)
+
+Sources read for this step: YM4_EM at c7fef8b21b58 L185-275 (cores, norm, block map, covariance), L495-520 (frames
+and radii), L600-720 (the one-step inputs); Balaban CMP 119 OCR pp. 264-267 ((3.1)-(3.14)); CMP 102 OCR pp. 278-279
+(Theorem 1) and pp. 305-308 (Section G, analyticity and the derivative bound). Credit: Sussman and Alpoge with Claude
+and Codex as authors of EM; Balaban for CMP 102 and 119.
+
+**2.1 Item B, the geometric clause of Lemma H2' (row 1278 2.3).**
+
+*Lemma CC (covariance continues along paths; PROVED, elementary).* Let O be an open subset of a finite-dimensional
+real space of data, D: O -> C real-analytic, and gamma: [0, 1] -> O continuous with D = 0 on a neighbourhood of
+gamma(0). Then D = 0 on a neighbourhood of gamma(1).
+*Proof.* Let T be the set of t in [0, 1] such that D vanishes on a neighbourhood of gamma(t). T is open by definition
+and contains 0. If t_n in T increase to t*, every derivative of D vanishes at gamma(t_n), hence by continuity of the
+derivatives at gamma(t*); D is real-analytic at gamma(t*), so its Taylor series there is 0 and D = 0 near gamma(t*).
+So T is closed, T = [0, 1]. QED
+Applied with D(W) = P_(rz)(G; rW) - P_z(G; W) (EM L258-262) on the real slice of the member's core (each torus is
+finite-dimensional; D is real-analytic there because G is holomorphic on the core and the sum over X converges in the
+norm of EM (2.x) by the stated entropy bound): covariance at a datum W of the phi-class follows once W is joined to
+the psi-creation class by a path of real data inside the member's core. Row 1278 asked for connectedness of the whole
+complex core; Lemma CC needs only such a path, so the clause is weaker than stated there.
+
+*The path (OPEN here, with the reason).* On a box with l^2-small curvature, Lemma U (`library/lattice-uhlenbeck.md`,
+checked 2026-11-02) gives a gauge with sup |a| <= C_U ||theta||, and the path t -> e^(i t a) keeps every plaquette
+defect below C ||theta|| (first order t (da) plus O(t^2 |a|^2)). The covariance classes of EM are max-norm classes on
+whole tori of side up to the compatible volumes. There the only gauge with |a| small that I can build has |a| of
+order r N (r the max curvature, N the side), and the commutator term of the straight path is then of order (r N)^2,
+which is not below the core radius once N exceeds r^(-1/2). I did not find a global path argument, so the clause is
+reduced (to "every datum of the phi-class is joined to the psi-class by real data inside the core") and not closed.
+Remark (ARGUED): the cleaner repair is in the account's own terms: covariance of a member is derived by the change of
+variables of EM input 2 (orthogonal O_(r,W), transported cut and response) wherever the member's construction is
+defined, so the creation radius can be stated as the member's whole real domain; that is a statement for the account
+to make, not a lemma.
+
+**2.2 Item A, (U-dom) of row 1280 (3.3).** CMP 119's cube reference is a minimal configuration on a finite data region
+(U_(k+1, box') = U(B(box'~4), M(Q^(s*) V)), (1.2), (3.4)). (U-dom) compares the references of two nested cubes built
+from one block field. That is a comparison of two minimisers with the SAME data on different DOMAINS (free boundary at
+the smaller domain's edge). What CMP 102 supplies is a comparison in the DATA at a fixed domain: Section G proves that
+U_k(V) is analytic in V and that dU_k/dB decays like the propagator (the derivative bound (190), p. 308, read by row
+1280), and CMP 119 (3.6)-(3.7) uses exactly that form: the old and new cube references are written as one minimiser at
+two data that differ by at most 4 delta_k in the bulk and O(eps_k) on a boundary layer. For two domains I found no way
+to write the larger domain's minimiser as the smaller domain's minimiser at modified data: the larger problem has
+action on plaquettes outside the smaller domain, so its restriction is not a minimiser of the smaller problem for any
+data. A proof needs the linearised problem on the smaller domain with natural boundary conditions and an inverse with
+exponential decay (Balaban's propagator theory with boundaries, CMP 99b), plus existence along an interpolation.
+That is the same stop as row 1280 3.8. NOT closed here; (U-dom) stays ARGUED.
+
+**2.3 What this step changes.** Item B: the clause of Lemma H2' is weakened from connectedness of the complex core
+to the existence of real paths (Lemma CC, PROVED); the path on large tori is OPEN. Item A: no change. Both items are
+inputs of the one-cutoff carry, not of the seed. Next (Step 3): a route to row 1280's parity envelope (Proposition
+PE) that does not read the supplier's localised expansion, by applying row 1280's Lemma P to the global step integral
+at the trivial datum, if EM's coefficient can be read from the global total.
+
+## Step 3 (plan, written before 15:52Z; step time not taken): the parity envelope without the localised expansion
+
+**What EM fixes (READ, EM L1170-1260, `em:prop-companion-coefficient`).** The coefficient b_j(E) is the second spatial
+moment of the companion kernel, which the proof identifies with "the limit of the physical torus Hessian kernels" at
+P_o, and b_j "is unchanged ... by changing coherent localizations of the same physical total". So the coefficient
+f_(k+1) = b_(k+1)(F^u_(k+1)) is a function of the physical total of the unmarked interacting part alone, and the
+unmarked total is formed from the all-small-field kernel (EM L544-547, read by row 1280 2.2).
+
+**Idea (ARGUED; to be proved in Step 3).** Row 1280's Proposition PE needs (P4), the parity covariance of the
+supplier's localised expansion (CMP 116, not on this machine). The Hessian kernel of the GLOBAL total at P_o can be
+bounded without any localisation:
+1. At data V near P_o the all-small-field step integral is I(V) = int dB rho(g B) chi_V(B) exp(Q(B; V)), and every
+   factor depends on (g, B) only through g B, except the prefactor g^(-2) of the Wilson action. So the degree-n part
+   of Q in B carries g^(n-2) (action) or g^n (Haar density, chart, inherited members): odd degree goes with odd power.
+   The linear term of the action vanishes at the constrained minimiser for every V.
+2. At V = 1 the Gaussian reference and the cut are symmetric under B -> -B (row 1280 4.3, from CMP 119 p. 249).
+3. On the cut the measure nu_t proportional to rho chi exp(Q_2 + Q_even + t Q_odd) is log-concave for t in [0, 1]
+   (Hessian at least the coercive constrained Hessian minus C delta, delta the cut radius in g B), so by the
+   Helffer-Sjostrand representation with a Combes-Thomas bound (the tool of row 1237 Proposition UNI and row 1249
+   Lemma CT) covariances of local functions decay exponentially, uniformly in the torus.
+4. Then <O>_(nu_1) = int_0^1 Cov_(nu_t)(O, Q_odd) dt = O(g) for every local odd O, so each odd contribution to the
+   Hessian kernel enters at order g^2; the even ones beyond the Gaussian are O(g^2) directly; the V-derivatives of the
+   cut sit at the threshold and cost Gaussian tails. Hence the kernel's deviation from the one-loop kernel is
+   O(g^2 polylog) with exponential decay, and its second moment gives |f_(k+1)| <= C theta_k^(-1) polylog + tails.
+To be checked before it counts: whether every fluctuation variable is bounded by the cut (bonds b_0(c) excluded from
+the tests, CMP 119 (1.9)), so that log-concavity holds on the whole fibre; the exact form of the chart and fibre
+density at V near 1; and that the unmarked total is exactly log I(V) minus the Gaussian normaliser and the scalar.
+
+## Step 3. The parity envelope without the supplier's localised expansion (written before 15:52Z; step time not taken)
+
+Rule 0a: "parity envelope" is in row 1280 only (Proposition PE, ARGUED, inputs (P1)-(P4)); "half-loop" only there; the
+convex Laplace theorem used below is `library/convex-laplace-tree-decay.md` (hard-core lane, "Status: proved here. Not
+reviewed."; no FINISH row cites it, so it is UNCHECKED). Nothing below is a statement about the seed.
+
+**3.0 The tool (CITED, unchecked).** Setting of `library/convex-laplace-tree-decay.md`: variables xi = (xi_c) on cells
+c of a metric space X of uniform growth (G(kappa) := sup_x sum_y e^(-kappa d(x,y)) finite); cells K_c open convex
+neighbourhoods of 0, independent of the parameters; convex barriers Psi_c (Psi_c = 0 and K_c the whole space allowed);
+parameters p in an open set P of a product of spaces over points of X; S smooth on K x P with
+(H1) D_xi^2 S >= gamma, (H2) |D_xi^alpha D_p^beta S| <= C_(a,b) e^(-mu tau(alpha, beta)) for a >= 2,
+(H3) the same at xi = 0 for a <= 1 (gradient need not vanish), tau the tree length. **Theorem CL:** with
+G(p) := -log int_K e^(-S - Psi), for |beta| = b >= 1, |D_p^beta G(p)| <= C'_b e^(-mu'_b tau(beta)), constants
+depending only on gamma, mu, m, sup D_c, G(.), and the C_(a,c) with a + c <= b + 2; none on the size of X. Its
+Remark 1: the cut must not depend on the parameters.
+
+**3.1 Lemma OP (odd perturbations enter at second order). PROVED given Theorem CL.** Assume, besides the setting of
+3.0 for the parameters p = (v, s) with v in an open set V and s in (-lambda, lambda)^X (s_x located at x; the open range contains s = 0):
+(a) every cell is symmetric, K_c = -K_c, and every Psi_c is even;
+(b) S(xi; v, s) = S_e(xi; v) + sum_x s_x R_x(xi; v), with S_e(-xi; v) = S_e(xi; v) and R_x(-xi; v) = -R_x(xi; v) for
+    every v and x;
+(c) (H1)-(H3) hold for S on K x V x (-lambda, lambda)^X with constants gamma, mu, C_(a,b) (lambda enters them only through
+    (H1), which asks D_xi^2 S_e - lambda ||sum_x |D_xi^2 R_x| || >= gamma).
+Put G_1(v) := G(v, lambda 1) (the full model) and G_0(v) := G(v, 0) (the even model). Then for |beta| = b >= 1,
+    |D_v^beta G_1(v) - D_v^beta G_0(v)| <= (lambda^2 / 2) C'_(b+2) G(mu'_(b+2)/3)^2 e^(-mu'_(b+2) tau(beta)/3).
+*Proof.* (1) At s = 0 the density e^(-S_e(.; v) - Psi) on K is even in xi for every v, by (a)-(b), and each R_x(.; v)
+is odd, so D_(s_x) G(v, 0) = <R_x>_(v, 0) = 0 for every v in V. Hence every v-derivative of D_(s_x) G(., 0) is 0.
+(2) Taylor's formula along s = t lambda 1, t in [0, 1], with integral remainder:
+G(v, lambda 1) - G(v, 0) = lambda sum_x D_(s_x) G(v, 0) + lambda^2 int_0^1 (1 - t) sum_(x,y) D_(s_x) D_(s_y) G(v, t lambda 1) dt.
+The first sum vanishes with all its v-derivatives by (1). (Differentiation under the integral and in v is allowed:
+the sums over x, y converge absolutely with all v-derivatives by the bound below.)
+(3) By Theorem CL with beta' = (beta, x, y), |D_v^beta D_(s_x) D_(s_y) G| <= C'_(b+2) e^(-mu'_(b+2) tau(beta, x, y)).
+Fix a point z_0 of beta. The tree on beta and x, y contains a tree on beta and paths from z_0 to x and to y, so
+tau(beta, x, y) >= max(tau(beta), d(z_0, x), d(z_0, y)) >= (tau(beta) + d(z_0, x) + d(z_0, y))/3. Summing,
+sum_(x,y) e^(-mu' tau(beta, x, y)) <= e^(-mu' tau(beta)/3) G(mu'/3)^2. With int_0^1 (1 - t) dt = 1/2 this gives
+the claim. QED
+*Remark (what is not used).* No expansion of either measure is needed: the first-order cancellation is exact (step
+(1)), the second-order term is a derivative of G and Theorem CL bounds it. This is the global form of row 1280's
+Lemma P; it replaces that proposal's input (P4) (covariance of a localised expansion under b -> -b).
+
+**3.2 Lemma MC (a moving cut costs only its wall). ARGUED, with the estimate stated.** Let the cut be a product of cells
+K_c(v) = K_c(0) + h_c(v) (translates), and let nu_v be the probability measure proportional to e^(-S(.; v)) on the
+frozen cut K(0). Put I(v) := int_(K(v)) e^(-S(xi; v)) d xi and I~(v) := int_(K(0)) e^(-S(xi; v)) d xi. Write
+1_(K(v)) = prod_c (1_(K_c(0)) + w_c) with w_c := 1_(K_c(v)) - 1_(K_c(0)), supported in the shell of width |h_c(v)|
+at the wall of K_c(0). Expanding the product gives I(v)/I~(v) = sum over sets Y of cells of an expectation of
+prod_(c in Y) w_c, a polymer gas whose activities are wall masses. If the wall mass of every cell under nu_v (and under
+its shells) is at most eta_w uniformly, and the covariances of nu_v decay as in Theorem CL (C), then log(I/I~) and
+its v-derivatives are of size eta_w times the derivatives of the h_c, with tree decay. In the application below the
+cells are balls of radius delta/g in the variables xi, the Gaussian reference has variance of order 1, so
+eta_w <= exp(-c (delta/g)^2) = exp(-c (log theta)^(2 p_0)) up to polylog factors, and each v-derivative of h_c costs at
+most a factor of order 1/g = theta^(1/2) (the shift is O(eps) in the variables g xi, CMP 119 (3.13)); so the wall
+part of the coefficient is at most C theta^(b/2) exp(-c (log theta)^(2 p_0)), b = 2, which tends to 0 faster than any
+power of theta when 2 p_0 > 1. Not proved here: the polymer-gas bound for the shells (a cluster expansion with
+activities eta_w; standard in form, but it is a bound I state and do not write out). This is row 1280's (P3) made
+quantitative; it is NOT the step that needed CMP 116.
+
+**3.3 Proposition PE' (the parity envelope at the trivial datum). PROVED GIVEN Lemma OP, Lemma MC and the readings
+(Par), (Sym), (Coord), (Conv), (EM-b) below.** Readings (each with its source and status):
+- (Coord) The all-small-field step integral at data V near P_o is an integral over a FIXED set of real free variables
+  xi (Balaban's linearised chart: CMP 119 (1.9)-(1.10) and p. 249, the bonds b_0(c) determined by the constraint, the
+  rest free; EM L611-616, "a fixed Borel restriction in the real free variables"), with v := (1/i) log V entering
+  through the chart, the background U(v) and the cube references. READ in part (row 1280 4.3; EM).
+- (Par) In these variables S(xi; v) = -log(density) is g^(-2) A(U(v) e^(i g xi)) plus terms that depend on (g, xi) only
+  through g xi (Haar density, chart Jacobian, soft gauge weight, fibre density, inherited members); its linear term in
+  xi vanishes at every v (U(v) is the constrained minimiser). Hence its odd part in xi at each v is
+  g R(xi; v), with R a sum of local terms of degree 3, 5, ... in xi, whose derivatives on the cut are bounded by powers
+  of the cut radius delta/g = (log theta)^(p_0); and its even part is the Gaussian form (1/2)<xi, M(v) xi> plus terms of
+  size g^2 times powers of delta/g. READ (CMP 119 p. 267: "exp(-1/2 <A, C* Delta^(k) C A> + P^(k)(g, U, A))", P^(k)
+  a function of g A; row 1280 4.3), the locality of the terms ASSUMED as in EM's inputs.
+- (Sym) At v = 0 the cut is a product of symmetric convex cells (balls |exp(i g xi_b) - 1| < 2 delta_k on the tested
+  bonds, the cube tests on the block field are trivial, the soft axial truncation is even). READ (CMP 119 p. 249,
+  row 1280 4.3).
+- (Conv) (H1)-(H3) of 3.0 hold on K(0) for v near 0, with gamma a fixed fraction of the lower bound of Balaban's
+  constrained fluctuation Hessian (CMP 99b, 109 propagator bounds) and C_(a,b) polynomial in (log theta); every free
+  variable lies in a tested cell, so that the non-Gaussian Hessians are at most C delta on the cut. ASSUMED (the
+  same kind of input as the hard-core lane's (H1)-(H3) "in the chart of Text 5.1", `parts/hard-core--mapped.md`
+  L136, there for the lane's own kernel).
+- (EM-b) f_(k+1) = b_(k+1)(F^u_(k+1)) is the second moment of the Hessian kernel at P_o of the physical total of the
+  unmarked interacting part, which is -G(v) + log Z_ref(v) minus the Gaussian mismatch (scalar coefficient zero,
+  EM L687-700) and a field-independent scalar; the inherited members are counterterm-subtracted (EM L538-541).
+  READ (EM `em:prop-companion-coefficient`, L1172-1250: "unchanged ... by changing coherent localizations of the same
+  physical total").
+*Conclusion.* |f_(k+1)| <= C g_k^2 (log theta_k)^q + C theta_k exp(-c (log theta_k)^(2 p_0)), with C, c, q fixed by
+the constants of the readings, uniformly in the torus and in the infinite-lattice companion.
+*Proof.* (i) Lemma MC: the coefficient of -log I differs from that of -log I~ (frozen cut K(0)) by the wall term.
+(ii) Lemma OP with lambda = g on -log I~: by (Sym), (Par), (Conv) its hypotheses (a)-(c) hold, R = sum_x R_x by
+locality; so the Hessian kernel of -log I~ differs from that of the even model by at most C g^2 polylog e^(-mu'' |u|)
+at separation u. (iii) The even model differs from the Gaussian model (1/2)<xi, M(v) xi> on K(0) by even terms of size
+g^2 polylog: interpolate them with located parameters t_x in (0, 1) and apply Theorem CL to D_v^beta D_(t_x) G (first
+order, no cancellation needed); the kernel changes by at most C g^2 polylog e^(-mu''|u|). (iv) The Gaussian model on
+K(0) differs from the Gaussian model without cut by the Gaussian mass outside K(0), at most exp(-c (delta/g)^2) per
+cell, with its v-derivatives (same estimate as Lemma MC). (v) The Gaussian model without cut is the reference
+normaliser up to the mismatch family, whose coefficient is zero (EM L687-700). (vi) The second moment
+sum_u u_mu u_nu (kernel difference)(u) is at most C sum_u |u|^2 e^(-mu''|u|) times the bounds of (ii)-(iv). QED
+
+**3.4 Consequence for the carry (PROVED from 3.3 and row 1280's Proposition W2).** Row 1280 3.2: any window bound
+eta_k <= kappa(theta_k) with sum_b D(2 Y_b) kappa(Y_b/2) finite closes the windows uniformly in n. With 3.3 the
+per-level coefficient error is kappa(y) = C y^(-1) (log y)^q + tails, and even with the account's drift
+D(y) = C_D y^(1/2) (log y)^(p_0), sum_b Y_b^(1/2) Y_b^(-1) polylog(Y_b) is finite because Y_b = exp(L^(b/r)) grows doubly
+exponentially. So (U) of row 1268 closes by the parity route GIVEN Proposition PE' (that is, given the readings of
+3.3 and Lemma MC), without (U-dom). Moreover the drift itself improves: summing |f| <= C theta^(-1) polylog along the
+scaffold theta_r = X + c_0 r gives |x_k - theta_(n-k)| <= C (log theta)^(q+1), so the windows of row 1280's Lemma W
+have polylog width (ARGUED: it needs the account's run to be driven by f alone, row 1260 2.1).
+
+**3.5 The readings of 3.3 at the source (READ, Balaban CMP 119 pp. 247-250, owner's copy, OCR text; written
+before 15:52Z; step time not taken).**
+- (Coord): "we remove the delta-functions under the integral solving the equations (Q A')(c) = 0 ... The equation
+  determines the variable A'(b_0(c)) as a linear function of the remaining variables A'(b), b in B(c_-) u B(c_+),
+  b != b_0(c). We denote this function by C, and we denote by A the integration variables restricted to bonds
+  Omega_1* = Omega_1 \ {b_0(c)}" (p. 249). So the free variables are a fixed set of bonds, and C is local (it reads
+  the two blocks of c). READ.
+- (Par): the integrand after the scaling is exp(-(1/2)<A, Delta A> - V(g_0 C A)) times the Jacobian factor (the
+  "Tr log" term of (1.14)) and the characteristic functions (p. 249, (1.15)-(1.16)); V collects "the remaining terms
+  of the order higher than 2", a function of g_0 C A; and "we expand in (1.14) around the critical point, so the
+  potentially dangerous linear term (1/g_0) <., A> vanishes on the domain of integration" (p. 250). Section 3 repeats
+  this at step k (p. 267). READ; the locality of the Jacobian term is not checked here.
+- (Sym) and test coverage: the tests of (1.8) are read on (box'~2)*, "the set of all bonds with at least one end-point
+  belonging to box'~2, except the bonds b_0(c)" (p. 247), and "the linearizing transformation is different from the
+  identity only on bonds {b_0(c)}, hence the characteristic function ... is unchanged under the transformation"
+  (p. 249). Every free bond has an end-point in some box'~2 (the cubes box' partition the lattice), so every free
+  variable is tested. In the fluctuation chart the test of bond b reads |exp(i g A(b)) h_b - 1| < 2 delta_0 with
+  h_b = U_1(b) U_(1,box')(b)^(-1) (global critical point against the cube reference), a ball centred at
+  -(1/g) log h_b; at the trivial datum h_b = 1. READ.
+- (Conv), uniform convexity: "It is a minimum of (1.12), with a strictly positive second order differential" (p. 248),
+  with the volume-free lower bound coming from Balaban's propagator bounds (CMP 99b, 109). CITED, not re-read here.
+So of the readings of 3.3 only (Conv)'s uniformity, the locality of the Jacobian term and (EM-b) are not read at the
+source in this row; Theorem CL is unchecked; Lemma MC is ARGUED.
+
+**3.6 Corollary PE2 (the two-loop form of the coefficient at the trivial datum). PROVED GIVEN the inputs of 3.3.**
+*Exact evenness.* In the setting of Lemma OP, G(v, s) = G(v, -s) for every v and s: substitute xi -> -xi, which
+preserves K(0), Psi and S_e and changes the sign of each R_x. So every odd-order s-derivative of G vanishes at s = 0
+for every v. Taylor's formula to fourth order along s = t lambda 1, with Theorem CL for |beta| + 4 derivatives and the
+tree-length bound tau(beta, x, y, z, w) >= (tau(beta) + d(z_0,x) + d(z_0,y) + d(z_0,z) + d(z_0,w))/5, gives
+    D_v^beta G_1 = D_v^beta G_0 - (lambda^2/2) D_v^beta Var_(v,0)(R) + O(lambda^4 e^(-mu tau(beta)/5)),
+where Var_(v,0) is the variance in the even model at v and R = sum_x R_x. The same interpolation applied to the even
+non-Gaussian part g^2 T_4 + g^4 T_6 + ... (first order, then second order) and to the cut (tails) replaces the even
+model by the Gaussian model at level k in the first term and in Var_(v,0), at cost O(g^4 polylog) and tails; mixed
+terms of first order in R vanish (odd against even). Hence, with lambda = g = x_k^(-1/2):
+    f_(k+1) = kappa_2(k) / x_k + O(x_k^(-1) N_k) + O(x_k^(-2) (log theta_k)^q) + tails,
+    kappa_2(k) := the second moment of the Hessian kernel at v = 0 of  <T_4>_(G,v) - (1/2) Var_(G,v)(R_3),
+with <.>_(G,v) the level-k Gaussian reference at datum v, R_3 the cubic part of the action's odd part, T_4 the quartic
+action term plus the order-g^2 Haar and chart terms; the term O(x^(-1) N_k) is the inherited list's fluctuation
+response (its odd part is O(g N_k), entering at second order; its even part O(g^2 N_k) at first order). kappa_2(k)
+is a Gaussian expectation of explicit polynomials: it depends on the level k through Balaban's level-k Gaussian
+structure and not on any coupling. This is the first bullet of row 1280 4.6, now with a proof route that reads no
+localised expansion. What (B3+) of row 680 still needs (row 1280 4.6): level convergence (L-inf), kappa_2(k) ->
+kappa_2 geometrically (ARGUED there; at the trivial datum it is a statement about Balaban's linear block-averaging
+Gaussians for three abelian copies, a Fourier computation not done here), and EM's own bound N_k = O(delta(theta_k)),
+which makes the list term O(x^(-3/2) polylog), summable.
+
+**3.7 Lemma MC: the steps of a proof (ARGUED; each step named so that a checker can redo it).** Single translated
+balls first (a bond tested by several cubes has a cell that is an intersection of translates; the same steps apply
+with a partition of its wall). (1) Freeze the cut by a wall diffeomorphism: with phi smooth, 0 on |eta| <= r/2, 1 on
+|eta| >= 3r/4, |grad phi| <= C/r (r = delta/g the cell radius in the variables xi), Phi_v(eta)_c := eta_c +
+phi(eta_c) h_c(v) maps K_c(0) onto K_c(v) when |h_c| |grad phi| < 1, so I(v) = int_(K(0)) e^(-S - W) with
+W(eta; v) := S(Phi_v(eta); v) - S(eta; v) - log det D Phi_v(eta); every term of W carries a factor phi(eta_c), so W is
+supported in the union of the shells {|eta_c| >= r/2}. (2) Interpolate S + u W, u in [0, 1]: G(v) - G~(v) =
+int_0^1 <W>_(v,u) du, and each D_v^beta of it is a sum of cumulants with W (or a v-derivative of W) in one slot.
+(3) Theorem CL's proof (its Steps 3-5: covariance with decay, cumulant splitting, Hoelder with moments) bounds such a
+cumulant with the slot holding W measured in L^p; on the shell, ||W 1_shell||_(L^p) <= ||W||_(sup on shell)
+P(|eta_c| >= r/2)^(1/p). (4) The measure has Hessian at least gamma on the convex cut, so the law of each |eta_c| has
+Gaussian concentration about a mean of order g polylog (the linear term vanishes at the minimiser), giving
+P(|eta_c| >= r/2) <= C exp(-gamma r^2/16). (5) Each v-derivative of h_c is of order 1/g in these variables (CMP 119
+(3.13): the shift is O(eps_k) per unit curvature of the datum, in the variables g xi), and |grad S| <= C r on the
+shell. Result: |D_v^beta (G - G~)| <= C (log theta)^q theta^(|beta|/2) exp(-gamma (A_1/A_0)^2 (log theta)^(2 p_0)/(4p))
+e^(-mu tau(beta)), which is the wall bound used in 3.3 (i) and (iv). What keeps it ARGUED: Theorem CL is unchecked and
+step (3) re-uses its proof, not its statement.
+
+**3.8 Corollary AS (asymptotic scaling of the account's runs up to polynomial factors). PROVED GIVEN Corollary PE2 and
+the statements of the account listed in the proof.** Setting of row 680 Section 5 (account, Sussman and Alpoge with
+Claude and Codex): x_0 = beta, x_k = x_(k-1) - b_k, K(beta, g) = min{k : x_k <= g^(-2) + B_sharp}, a(beta) =
+L^(-K(beta, g)); and the account's split b_(r) = beta^0 + f + q (CA-III L68975-68980, READ). Inputs:
+(i) the one-loop Cesaro-defect theorem, sum_(l=i+1)^j beta^0_l = (j - i) c_0 + s_i - s_j with |s_i| <= c_2
+    (CA-III L68989-68993, READ; it bounds partial sums only, not the individual beta^0_l - c_0);
+(ii) Corollary PE2 along the own-threshold run (frame equal to the weights): f_k = e_k / x_(k-1) + rho_k with
+    |e_k| <= E and sum_k |rho_k| <= R_1 uniformly in the run (the list term O(x^(-3/2) polylog) uses EM's
+    N_k = O(delta(theta_k)), EM L667-684);
+(iii) the marked remainders are summable, sum_k |q_k| <= R_2 (EM L1367 with kappa_0 >= 10, as read by row 1280);
+(iv) x_min := g^(-2) + B_sharp - 2 c_0 - C > 0 (row 680's condition, with the margin below).
+Conclusion: with c := (log L)/c_0 and p := 2 E (log L)/c_0^2,
+    C^(-1) beta^(-p) e^(-c beta) <= a(beta) <= C beta^p e^(-c beta)     for all beta >= g^(-2) + B_sharp.
+*Proof.* Summing the steps, beta - x_K = K c_0 + (s_0 - s_K) + sum_(k<=K) e_k/x_(k-1) + sum_(k<=K) (rho_k + q_k), so
+|K c_0 - beta + x_K| <= 2 c_2 + E sum_(k<=K) 1/x_(k-1) + R_1 + R_2. For the sum: by (i)-(iii), for m >= 1,
+x_(k-1) - x_(k-1+m) = sum_(l=k)^(k+m-1) b_l >= m c_0 - 2 c_2 - R_1 - R_2 - E m / x_min. Choose the margin so that
+E/x_min <= c_0/4; then x_(k-1) >= x_K + (K - k + 1) c_0/2 when K - k + 1 >= m_0 := ceil(4 (2 c_2 + R_1 + R_2)/c_0),
+and x_(k-1) > x_min for the at most m_0 remaining k. Hence sum_(k<=K) 1/x_(k-1) <= m_0/x_min +
+(2/c_0) sum_(m>=1, m <= K) 1/(2 x_min/c_0 + m) <= C_4 + (2/c_0) log(1 + K c_0/(2 x_min)), and K <= 2 beta/c_0 + m_0
+by the same lower bound on the steps. So |K - beta/c_0| <= (2E/c_0^2) log beta + C_5, and a(beta) = L^(-K) gives both
+bounds. QED
+*Standing.* Row 680 (Theorem HM-s, node Z5 of Route Z) needs only the upper bound with some finite p; row 680 and its
+check 696 recorded that the account's envelope allows a(beta) to differ from beta^p e^(-c beta) by exp(O(beta^(1/2)
+polylog)), so (2L) was "a new open input under Z0". Corollary AS supplies (2L) in its weak two-sided form, with an
+exponent p that is a bound, not the two-loop value 51/121; the sharp exponent needs (L-inf) of row 1280 4.6. Same
+method, same inputs: the account's run deviations obey sum_(u<r) iota_u = O(E log theta), so the drift of
+row 1260 2.1 becomes logarithmic (ARGUED only in the sense that iota_u is read as |f + q| as in CA-III L68980-68982).
+
+## Step 4. Labels, state after this row, what a checker should redo (written before 15:52Z; step time not taken)
+
+| Statement | Label | Rests on |
+|---|---|---|
+| Step 1: no route to the seed off the record; the seed was not attacked | ARGUED | Step 0 items 1-3; rule 0a greps of Step 1 |
+| Lemma CC (covariance continues along real paths in the analyticity domain) | PROVED (elementary) | identity theorem for real-analytic functions |
+| Item B: Lemma H2''s clause reduced to a real path inside the member's core; the path on large tori | reduction PROVED; path OPEN | Lemma CC; Lemma U (boxes only) |
+| Item A: (U-dom) of row 1280 | OPEN (not closed; same stop as row 1280 3.8) | CMP 102 Section G is a data comparison, (U-dom) a domain comparison |
+| Theorem CL (tree decay for convex integrals with a fixed convex cut) | CITED, unchecked | `library/convex-laplace-tree-decay.md` |
+| Lemma OP (odd perturbations enter at second order, with tree decay) | PROVED given Theorem CL | 3.1 |
+| Exact evenness G(v, s) = G(v, -s) and the fourth-order form | PROVED given Theorem CL | 3.6 |
+| Lemma MC (a moving product cut costs only its wall) | ARGUED in general (3.7); for |beta| <= 2, which is all the coefficient reads, PROVED GIVEN as Lemma SF (Step 5) | Lemma SF: transport formula, wall density, CMP 102 (190), (C) of Theorem CL, the cited marginal theorem |
+| Proposition PE' (|f_(k+1)| <= C theta^(-1) polylog + tails at the trivial datum) | PROVED GIVEN Lemma OP, Lemma MC, readings (Coord), (Par), (Sym) [READ, CMP 119 pp. 247-250, 267], (Conv) [cited: Balaban's propagator bounds; Jacobian locality not checked], (EM-b) [READ, EM L1172-1250] | 3.3, 3.5 |
+| Corollary PE2 (f_(k+1) = kappa_2(k)/x_k + summable, kappa_2(k) a level-k Gaussian expectation) | PROVED GIVEN the inputs of PE' and EM's N_k = O(delta(theta_k)) | 3.6 |
+| 3.4: (U) of row 1268 closes by the size route of row 1280's Proposition W2, without (U-dom) | PROVED GIVEN PE' (for both frames) and row 1280's Lemma W, Proposition W2 | 3.4 |
+| Corollary AS (C^(-1) beta^(-p) e^(-c beta) <= a(beta) <= C beta^p e^(-c beta), c = log L / c_0) | PROVED GIVEN PE2, the account's one-loop Cesaro-defect theorem (CA-III L68989-68993, READ), EM's summable marked remainders | 3.8 |
+| Logarithmic drift of the account's runs and windows of logarithmic width | ARGUED | 3.4, 3.8 |
+| (B3+) with the sharp two-loop coefficient | OPEN: needs (L-inf) of row 1280 4.6 | 3.6 |
+| The infrared seed ((N-phys), (W), (SL)) and the Jaffe-Witten gap | OPEN, not attacked | Step 1 |
+
+**What changes on the carry's list (row 1280 RESULT).** (U) leaves the list a second way: by Proposition PE', given
+its readings, Lemma MC and the unchecked Theorem CL; row 1280's (P4) (covariance of the supplier's localised expansion,
+which reads CMP 116) is no longer needed for the parity envelope. Row 680's (2L) is supplied in its weak two-sided form
+(Corollary AS) under the same inputs plus the account's own Cesaro theorem. Not changed: (E0)-(E6), (E+),
+`9.1:prop-blind-site-expansions`, (DET)'s inputs, (U-dom), Lemma H2''s path on large tori, the account's premises.
+
+**What a checker should redo first.** (1) Lemma OP: step (1) needs the even model to be symmetric for EVERY v (fixed
+symmetric cut, even barrier), not only at v = 0; check that the frozen cut of Lemma MC gives exactly that. (2) The
+reading (Par): that every factor of Balaban's integrand other than the Wilson action depends on (g, xi) only through
+g xi (CMP 119 (1.14)-(1.16) and p. 267), in particular the Jacobian of the linearising transformation and the soft
+gauge weight. (3) Lemma MC's step (3): that Theorem CL's cumulant bounds survive with one slot measured in L^p on a
+shell. (4) Corollary AS: the bound on sum 1/x_(k-1) uses only the Cesaro defect, not a lower bound on each b_k.
+(5) Theorem CL itself (unchecked in the library).
+
+**Not done.** No numeric run; no subagent; the seed was not attacked; (L-inf) was not computed; CMP 116 was not read
+(not on this machine); the account's (Conv)-type statement for Balaban's kernel was not located.
+
+
+## Step 5 (continuation, started 15:55Z by date -u). Lemma MC for the two derivatives the coefficient reads
+
+The coefficient reads only the Hessian at P_o, so Lemma MC is needed for |beta| <= 2 only. For that case the wall
+terms can be written out by the transport formula, with no re-use of Theorem CL's proof beyond its covariance bound.
+
+**Lemma SF (surface terms of moving ball cuts; PROVED GIVEN (Conv), the derivative bound CMP 102 (190), Theorem CL's
+covariance bound (C), and the marginal theorem cited below).** Cells K_c(v) = {xi_c : |xi_c - h_c(v)| <= rho},
+rho = r = delta/g (closed balls in R^m, m = 3), h_c(0) = 0; Z(v) := int prod_c 1_(K_c(v))(xi_c) e^(-S(xi; v)) d xi with
+gamma <= D_xi^2 S <= Lambda on the cut. Let p_c(.; v) be the marginal density of xi_c under nu_v (density proportional
+to prod_c 1_(K_c(v)) e^(-S)).
+(a) Transport formula: D_(v_b) log Z = <-D_(v_b) S>_(nu_v) + sum_c int_(dK_c(v)) (n . D_(v_b) h_c) p_c d sigma
+    (each cell's wall moves with normal velocity n . D_(v_b) h_c; integrating e^(-S) over the other variables gives
+    Z p_c on the wall). Differentiating once more gives D_(v_b') D_(v_b) log Z at v = 0 as the frozen-cut Hessian
+    <-D^2 S> + Cov(D_(v_b) S, D_(v_b') S) plus surface terms, each an integral over one wall dK_c of
+    p_c times one of: n . D^2 h_c; (n . D_(v_b) h_c)(n . D_(v_b') h_c') (two walls, c' != c, with the joint wall
+    density); (n . D h_c) E[D_(v_b') S - <D_(v_b') S> | xi_c]; (n . D h_c) D_(v_b') log p_c.
+(b) Wall density: the conditional law of xi_c given the other variables is strongly log-concave on the ball with
+    Hessian in [gamma, Lambda]; its mode y* lies within C |xi near c| of 0 (first-order condition, the linear term of S
+    vanishing at xi = 0 up to the odd part), and the density is at most 2 (Lambda/(2 pi))^(m/2) exp(-gamma
+    |sigma - y*|^2 / 2) at sigma; averaging over the neighbours with their sub-Gaussian tails (nu_v has Hessian at
+    least gamma, so every Lipschitz function has Gaussian concentration; Bakry-Emery/Herbst, valid on convex domains)
+    gives p_c(sigma) <= C exp(-gamma r^2 / 16) on the wall |sigma| = r. Two walls: the same bound for each, so the
+    joint wall density carries exp(-gamma r^2 / 8).
+(c) Velocities: h_c(v) = (1/g) log(U(b_c) U_box'(b_c)^(-1)) (global background against cube reference on the tested
+    bond), both analytic in the datum with derivatives decaying like exp(-delta_0 d/8) (CMP 102 (190), Section G), so
+    |D_(v_b) h_c| <= (C/g) e^(-mu d(b, c)) and |D^2 h_c| <= (C/g) e^(-mu (d(b,c) + d(b',c))/2).
+(d) Conditional expectations: E[X | xi_c] - <X> for X = D_(v_b') S is bounded on the wall by C (1 + r) e^(-mu' d(b', c))
+    by (C) applied to the conditional measure (Theorem CL Step 3), and D_(v_b') log p_c is bounded the same way by
+    (a) applied to the marginal.
+Summing over c with the uniform growth of X: the surface part of the Hessian kernel at (b, b') is at most
+C r^(m+2) g^(-2) exp(-gamma r^2 / 16) e^(-mu'' d(b, b')), uniformly in the torus. With r = 2 (A_1/A_0)(log theta)^(p_0) and
+g^(-2) = theta, this is the wall bound of 3.2 and 3.7, with an explicit exponent. The same formula with the radius
+moving instead of the centre (rho from r to infinity, velocity 1, integrated in rho) gives step (iv) of 3.3, the
+Gaussian model with and without the cut.
+*Cited input.* The marginal theorem (Brascamp and Lieb, 1976: a marginal of a measure with density e^(-S) on a convex
+set, D^2 S >= gamma, has a density e^(-V) on the projected convex set with D^2 V >= gamma) is used in (b) and (d) in its
+conditional form; it is published and not rebuilt here (CITED, unchecked).
+*Label.* Lemma SF is PROVED GIVEN (Conv) with the upper bound Lambda, CMP 102 (190), (C) of Theorem CL (unchecked),
+and the cited marginal theorem; the mode bound in (b) is elementary but written in one line (a checker should expand
+it). It replaces the ARGUED Lemma MC for |beta| <= 2, which is all that Proposition PE', Corollary PE2 and
+Corollary AS use.
+
+RESULT: Row 1284 (Claude Opus 5.5 max, Mac mini worker 1, 14:59Z-15:55Z by date -u; author only, checked by no one; no numeric run, no subagent). The Jaffe-Witten mass gap of four-dimensional SU(2) Yang-Mills is NOT proved and nothing is disproved; the infrared seed ((N-phys), (W), (SL)) stays OPEN and was not attacked (Step 1, ARGUED: every route re-derived here, including continuity in beta in thermal form and a Lieb-Robinson bootstrap, is on file with its failing step). Worked instead: inputs of the one-cutoff carry, with Sussman and Alpoge's account (Claude and Codex as authors of its text; YM4_EM at c7fef8b21b58, CA-III at 31a47c543775) and Balaban's CMP 119 and 102 (owner's copies). PROVED: Lemma CC (covariance continues along real paths), which weakens the open clause of row 1278's Lemma H2' to a path condition (still OPEN on large tori); Lemma OP and exact evenness (given the unchecked convex Laplace theorem of `library/convex-laplace-tree-decay.md`): an odd perturbation of a symmetric uniformly convex integral changes every parameter derivative of the free energy only at second order, with tree decay. PROVED GIVEN Lemma OP, Lemma SF (a moving ball cut costs only wall terms of size exp(-c (log theta)^(2 p_0)) in the Hessian; PROVED GIVEN the same inputs and the cited Brascamp-Lieb marginal theorem; it replaces the ARGUED Lemma MC) and readings of CMP 119 pp. 247-250, 267 and EM L1172-1250 (uniform convexity cited from Balaban's propagator bounds): Proposition PE', |f_(k+1)| <= C theta^(-1) polylog + tails at the trivial datum, which is row 1280's parity envelope without its input (P4) on CMP 116; Corollary PE2, f_(k+1) = kappa_2(k)/x_k + summable, kappa_2(k) a level-k Gaussian expectation; hence (U) of row 1268 closes without (U-dom), and Corollary AS, C^(-1) beta^(-p) e^(-c beta) <= a(beta) <= C beta^p e^(-c beta) with c = (log L)/c_0, the weak two-sided form of row 680's (2L), using the account's one-loop Cesaro theorem (CA-III L68989-68993). OPEN: the seed and the gap; (U-dom); (L-inf) for the sharp two-loop exponent; Theorem CL's check; (E0)-(E6), (E+), `9.1:prop-blind-site-expansions`, (DET)'s inputs, the account's premises. Output library/gap-mini-solve-aq-opus.md.

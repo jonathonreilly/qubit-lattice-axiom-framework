@@ -1,0 +1,16 @@
+### start 00:39Z mem_free=67: python3 x_abelian.py
+N'=2 L=3 k=1: n=26.478637 increment=20.478637 ratio=nan D2Y_k=40.957274
+N'=2 L=3 k=2: n=39.628832 increment=13.150195 ratio=0.6421 D2Y_k=67.257664
+N'=2 L=3 k=3: n=42.101187 increment=2.472355 ratio=0.1880 D2Y_k=72.202373
+N'=2 L=3 k=4: n=42.402047 increment=0.300860 ratio=0.1217 D2Y_k=72.804093
+N'=2 L=3 k=5: n=42.435882 increment=0.033835 ratio=0.1125 D2Y_k=72.871764
+N'=2 L=3 k=6: n=42.439647 increment=0.003765 ratio=0.1113 D2Y_k=72.879295
+N'=2 L=3 k=7: n=42.440066 increment=0.000418 ratio=0.1111 D2Y_k=72.880132
+N'=4 L=3 k=1: n=20.363025 increment=14.363025 ratio=nan D2Y_k=28.726051
+N'=4 L=3 k=2: n=27.934648 increment=7.571622 ratio=0.5272 D2Y_k=43.869295
+N'=4 L=3 k=3: n=29.249115 increment=1.314467 ratio=0.1736 D2Y_k=46.498230
+N'=4 L=3 k=4: n=29.406334 increment=0.157220 ratio=0.1196 D2Y_k=46.812669
+N'=4 L=3 k=5: n=29.423973 increment=0.017639 ratio=0.1122 D2Y_k=46.847947
+N'=4 L=3 k=6: n=29.425936 increment=0.001962 ratio=0.1112 D2Y_k=46.851871
+N'=4 L=3 k=7: n=29.426154 increment=0.000218 ratio=0.1111 D2Y_k=46.852307
+### end 00:40Z exit=0

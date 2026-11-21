@@ -1,0 +1,8 @@
+P1 worst of 8 k E[1-u] = 6.0785 (need >= 1)
+P2 worst ratio tail / floor = 149.3468 (need >= 1)
+P3 worst ratio = 1291.5139 (need >= 1)
+P4 0.13/(0.13+0.334) = 0.2802; 1/(2 sqrt2 e) = 0.1301; 16 pi^-2.5 (2/pi^2)^1.5 = 0.08343 vs 1/12 = 0.08333
+L=3 x_K=50.0 T=0.5: K_0 = 74.9; lower bound on log(nq) at K_0 = 7.3
+L=5 x_K=100.0 T=0.1: K_0 = 11.3; lower bound on log(nq) at K_0 = 12.2
+L=61 x_K=400.0 T=0.02: K_0 = 4.4; lower bound on log(nq) at K_0 = 17.0
+RESULT PASS

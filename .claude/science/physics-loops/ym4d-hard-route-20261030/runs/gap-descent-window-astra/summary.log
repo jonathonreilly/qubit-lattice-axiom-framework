@@ -1,0 +1,66 @@
+{
+  "grade": "GUIDE",
+  "criterion": "absolute cutoff change <= 1e-4",
+  "E180": {
+    "complete_points": 35,
+    "max_other_sector_over_candidate": [
+      0.8055083634230953,
+      2.6,
+      0.0,
+      1
+    ],
+    "max_recorded_residual": 1.6546594991620811e-13,
+    "window_winning_sectors": [
+      0
+    ]
+  },
+  "E200": {
+    "complete_points": 20,
+    "max_other_sector_over_candidate": [
+      0.8054825253572726,
+      2.6,
+      0.0,
+      1
+    ],
+    "max_recorded_residual": 3.525376693879526e-10,
+    "window_winning_sectors": [
+      0
+    ]
+  },
+  "minimum_window_difference": [
+    0.09264573987013547,
+    2.5,
+    8
+  ],
+  "leakage_brackets": [
+    {
+      "n": 2,
+      "bracket": [
+        3.9723587036132812,
+        3.9723663330078125
+      ]
+    },
+    {
+      "n": 3,
+      "bracket": [
+        3.592376708984375,
+        3.5923843383789062
+      ]
+    }
+  ],
+  "leakage_max_window_disagreement": 3.197442310920451e-14,
+  "zero_charge_controls": [
+    {
+      "cutoff": 180,
+      "cube_gap": 3.4414665412338064,
+      "reduced_gap": 3.441399732399102,
+      "difference": 6.680883470444599e-05
+    },
+    {
+      "cutoff": 200,
+      "cube_gap": 3.441415393465132,
+      "reduced_gap": 3.441399732399102,
+      "difference": 1.566106603023698e-05
+    }
+  ]
+}

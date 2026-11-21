@@ -1,0 +1,8 @@
+|M|=24 |c|=28 |A|=28 |C|=40 |S0|=92 distinct=92
+links=184, links not in exactly 2 plaquettes: 0
+F=92 E=184 V=93 chi=1
+connected: True
+one cycle around every vertex: True
+Haar integral of prod x_p over S0 = -2^-183 ; equals -2^-183: True
+control, cube surface: 1/1024 (expect 1/1024)
+K3 split M | A+C: E0[prod_M]=0 E0[prod_(A+C)]=0 ; Cov_0 = -2^-183

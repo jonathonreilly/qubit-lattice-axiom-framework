@@ -1,0 +1,29 @@
+POINT 6 2.5 [0.9665805529469562, 0.9665805529470664] [5.634263583000575, 36.511697832997015]
+POINT 6 2.6 [0.8489005434381642, 0.8489005434381358] [4.922746125004778, 36.40397537499666]
+POINT 6 3.0 [0.38742778234583675, 0.38742778234578523] [4.939242708001984, 62.230698708001]
+POINT 6 3.5 [-0.0602763161192712, -0.06027631611944528] [4.9772478329978185, 69.76190725000197]
+POINT 6 3.25 [0.1385172562137278, 0.13851725621376154] [5.025617292005336, 36.387127166002756]
+POINT 6 3.375 [0.032246870083529444, 0.03224687008319904] [4.9684487499980605, 36.22616575000575]
+POINT 6 3.4375 [-0.015772625482824765, -0.015772625482984637] [4.994888208006159, 36.83304945800046]
+POINT 6 3.40625 [0.007800916984788131, 0.007800916984685102] [5.05911187500169, 36.45921212500252]
+POINT 6 3.421875 [-0.004095417236531063, -0.004095417236648302] [5.024748749994615, 36.56201949999377]
+POINT 6 3.4140625 [0.0018254165887228169, 0.0018254165886695262] [5.028506750000815, 36.299755207997805]
+POINT 6 3.41796875 [-0.0011418412322363736, -0.0011418412322719007] [5.007320166005229, 36.468673167000816]
+POINT 6 3.416015625 [0.00034007837421157205, 0.00033780720423237653] [5.01315008399979, 36.421179582997866]
+POINT 6 3.4169921875 [-0.0004013088718970437, -0.00040130887204270493] [5.038065250002546, 36.33223937499861]
+POINT 6 3.41650390625 [-3.072209512566815e-05, -3.072209515408986e-05] [5.078666791996511, 36.31123583300359]
+POINT 6 3.416259765625 [0.000154651429884467, 0.00015465142978854374] [4.9803230420002365, 36.33087629099464]
+POINT 6 3.4163818359375 [6.195798973251954e-05, 6.195798966501798e-05] [4.993704374996014, 36.26076958300109]
+Traceback (most recent call last):
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 51, in main
+    x=pair(n,mid);record['bisection'].append(x)
+      ^^^^^^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/sweep.py", line 25, in pair
+    with (HERE/(stem+'.log')).open('w') as log:subprocess.run(cmd,stdout=log,stderr=subprocess.STDOUT,check=True)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/local/bin/python3', '.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/leakage.py', '--n', '6', '--beta', '3.41644287109375', '--cutoff', '14', '18', '44', '--output', '.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/n6_b3.41644287109375_A14_D18_Q44.json']' returned non-zero exit status 1.

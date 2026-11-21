@@ -1,0 +1,41 @@
+First failing step: none
+
+# PH1 gate (pass 3): `library/ph1.md`
+
+Referee: Claude Opus 5.5, fresh session, 2026-11-05. One line-by-line reading of `library/ph1.md` (596 lines). I also read `ym4-assembly.md` §§0, 4–5 (PH1, SR1, CL1, RO1, WR1 entries), `gates/cluster-check.md` whole, `library/cluster-port.md` §8, `sr1.md` (definitions, Theorem 1, change log), and `cl1.md` (definitions, imports, Lemmas 1–3, 5, 8, Theorem 9, change log). SA = `scratchpad/sa/ym4.tex`. No computation was used.
+
+## Findings
+
+1. **Line 52 (CL1 import) and line 439 (Lemma 8, "Use the converging sequence specified in CL1").** Wording. CL1 Theorem 9(1) gives convergence along one subsequence, with the evaluating state ρ_j named apart from the centering state ν_j. CL1 also defines "volume-first" through ρ_j ∈ 𝒢^tor. PH1 uses the self-centred case ρ_j = ν_j ∈ 𝒢_{a_j,β_j}, and its definition (line 32) assumes σ exists along the given sequence. This is not a gap: 𝒢^tor ⊂ 𝒢 (CL1 Lemma 1), and CL1 Lemma 2 proves convergence for arbitrary states in 𝒢, because it uses only the SR1 bounds. Not fatal. Repair: write "CL1 Theorem 9(1) with ρ_j = ν_j ∈ 𝒢: along a subsequence ...; PH1 works along any sequence on which σ exists."
+
+2. **Lines 73 and 80 (clauses 3 and 5): interface for RO1 and WR1.** Lemma 9 builds each component's time-reflection Hilbert space and its H. Clause 3 does not list the tangential unitary translations, the other coordinate pictures, or the cube cone H ≥ |P_j| for a component. Line 52 says "Its cone is not needed for PH1." RO1 (H-P, ro1 line 80) and WR1 (H3, wr1 line 40) read these properties per component. They hold: CL1 Theorem 9(3)–(4) admits any integrating states ρ_j ∈ 𝒢, and its Lemmas 5 and 8 use only the moment limit, the bounds (4) and the mirrors. PH1 Lemma 8 gives all of these for the realizing pair (ρ_j, ν_j). So this is not a defect in PH1's own claims. Repairable: add one sentence to clause 3, "by CL1 Theorem 9(3)–(4) applied to the realizing pair, each component carries the H2 Hilbert structure and the cube cone."
+
+3. **Line 131 (Lemma 2, diagonal mirror).** Cosmetic. "θ_{R+1}τ_{d_+} = θ_R" is the identity of point maps. Under the pullback convention of line 15, the function identity is θ_R τ_{−d_+} = θ_{R+1}. Either way, ⟨G, T_+G⟩ = ν(\overline{θ_{R+1}H}H) with H = τ_{d_+}G above the mirror at R+1, so T_+ ≥ 0. Not fatal. Repair: add "as point maps".
+
+4. **Line 548 (Lemma 10).** Cosmetic. In "C_1(R_0)", R_0 is a support radius of f_0. In Lemma 8, R_0 is the half-side of the enclosing cube. Rename one of them. Not fatal.
+
+## Steps checked (each holds as written)
+
+- **Lemma 2.** Form bound ‖[F]‖ ≤ ‖F‖_∞; symmetry of normal translation; iterated Cauchy–Schwarz; T_μ ≥ 0 from the bond mirror at −1/2 (ν(\overline{θ_0F}τ_eF) = ν(\overline{θ_{−1/2}F}F)). Lemma 2.1: L holomorphic and odd, |Im L| < π/2; the bounds 1 and cosh(sπ/2); |cos(u+iv)|² ≥ sinh²v; Fatou; radial value π/2 off z = 1; both identities for tan φ and |1+ζ²|² − 4|ζ|² checked by expansion. So {φ > π/4} = {|1+z|² < 4|z|}, and only z = 1 is excluded on the circle. In the diagonal step, B and F_0 lie on the side x_μ+x_λ ≥ R. Both displacements are 2Re_μ + kd_+ + ld_−. The pairing gives ⟨B′, p(T_+)p̄(V_−)F_0′⟩, so (3) holds with C_0 = ‖B′‖‖F_0′‖. (4): the disc condition is equivalent to cosh E + cos η ≥ 2, then E ≥ 2 arsinh sin(|η|/2) ≥ κ_PL|η|, by concavity on [0, π] with endpoint value 2 log(1+√2).
+- **Lemma 3.** T^s → Π; UΠ = Π from (4); mean ergodic step; θ is a positive involution on L²(𝓘_μ), hence the identity; 𝓘_μ = 𝓘 by the intertwining; (6).
+- **Lemma 4.** b_m; Σ|z_m|b_m = b(0) − b(π/2) = 8; z_m = cos(mπ/2) − (−1)^m gives the three-shift formula for q; q = 0 on |u| ≤ π/4; Ψ(1) = 0. Poisson bound: the ±π/2 pair average is ≥ 1/s, and the π term is ≤ (1−t²)/(s+√2t). Hence Ψ ≥ c_Ψ tanh x, and 0 ≤ Ψ ≤ 8. g(−s,w) = g(s,w) and g(s,−w) = \overline{g(s,w)}. K(w) = ⟨Φ, Ψ(T^{2r})U^wΦ⟩. In picture λ: ‖Φ^λ_{θ_λA}‖² ≤ 𝒩_r(A), since θ_λ ∈ Γ_16. q(2rη′_μ) ≠ 0 forces |η′_μ| > π/(8r), which gives (10). Shell count 24k²+2; at most 64r³ interior points; the j² sum is bounded by the integral; Σ|K| ≤ Cr³𝒩. Fourier uniqueness on 𝕋³ and positivity give (11).
+- **Lemma 5.** No filtered mass at η = 0, so no mass at {0 < E < ∞, η = 0}. coth u ≤ 1 + 1/u; shell volume 24u²du; the integrals 2/(nκ)³ and 1/(nκ)² give C[(r/n)³ + (r/n)²]. Parity split: 𝒩(A_±) ≤ 𝒩(A), and the factor 2 comes from positivity of D_n. Cube identity ν(\overline Aτ_yB) = ⟨Φ_{θA}, T^nU^{y⊥}Φ_B⟩ checked. (13): |y|_∞ ≥ |y|_2/2, so r/n ≤ 4ra/|y|_2 ≤ 1/2. Closedness of the RP class and of the ergodic class.
+- **Lemma 6.** Countable rational algebra-lattice D; Borel representatives stay 𝓗-measurable because 𝒩_μ ⊂ 𝓗; one null set; Riesz; coordinate embedding gives Borel measurability; monotone class; a.s. uniqueness.
+- **Lemma 7.** 𝒢 is nonempty, compact and convex. Invariant densities preserve DLR: the translated approximant misses W and has the same L¹ error. ν^ω ∈ 𝒢 a.s. (15) and the variance argument give ergodicity of ν^ω. Ergodic ⇔ extreme. Uniqueness of D_ν follows by iterated far translations under PL3, uniformly over states, then Stone–Weierstrass.
+- **Lemma 8.** Partition bound (16): singleton blocks are one-point differences, larger blocks are cumulants (S3). (17) holds by telescoping. Every term in 𝒩_{r_j}(F_j) is a 2k-moment with separation min(δ, 2ε). LG1 gives reflection-covariant centering. So (18) holds for pure ρ, uniformly; r_ja_j ≤ R_0 + a_j. Order of choice: v_q first, v_2 last, and each step separates the new tuple from the fixed union; this matches the nested limit (20) (gate A2). λ_j → λ along the full sequence. Support points are realized by pure states. Continuity and separation of the evaluations. Inheritance of all symmetries, RP and bounds. (19) and (20). Uniqueness via compact images and full support.
+- **Lemma 9.** Positivity, symmetry, uniform bound on ‖[τ_sF]‖, contraction, strong continuity, injectivity of T_1, H = −log T_1, (PV3). (21) uses (19) uniformly in ξ and σ_ξ(θF̄) = \overline{σ_ξ(F)}. Isometry, density and closed range. Surjectivity: V separates points, and f_{Fτ_tG} → f_Ff_G uniformly, so the closure is an algebra; Stone–Weierstrass. Per component, (21) gives P_0 = |Ω⟩⟨Ω|. Dimension count.
+- **Lemma 10.** d_j is plaquette-independent by LG1. ρ_jZ_j(f) = c_jR_j(f) exactly; R_j(f) → ∫f with error 2a_j‖∇f‖_∞ per cube; 𝔠_ξ is real and continuous, and ∫𝔠_ξ dλ = σ(f_0) = 0. SR1 H1 applies to σ_ξ directly, as a limit of form (7) with ρ_j, ν_j ∈ 𝒢 (SR1 Theorem 1(4), last sentence). Diagonal-flat RP: θf̄ ⊗ g is flat on the cross diagonals. The two completions coincide. Isometries: σ̃_ξ = σ_ξ∘h satisfies (19)–(20), so uniqueness gives π_h; π_h is the identity for translations and W_4.
+
+**Componentwise scope.** Every per-component claim uses that component's own input. Clustering (19) and the rank-one P_0 come from the pure-state realization of each ξ. Growth uses SR1 H1 applied to the component's own all-state limit. RP and W_4 invariance pass per component. No averaged hierarchy stands in for a component input. Full O(4) is not claimed per component; clause 3 defers it to RO1.
+
+**Vacuum per component.** Lemma 9's last paragraph applies (21) to the single component and gets ker H_{σ_ξ} = ℂΩ. Correct.
+
+**Against the assembly entry.** Clauses 1–5 match `ym4-assembly.md` §5 PH1(a) (1)–(5). PH1 also states the SR1(3)–(4) growth import, which the assembly's (b) "SR1 (all-state bounds S3)" understates. The text says so at line 581.
+
+**SA readings confirmed.** L3195–3260: mirror families x_μ = c with c ∈ ½ℤ, x_μ ± x_λ = c with c ∈ ℤ; PL1–PL3 with the same rate and constant scope. L31143: "a centering state ν_j ∈ 𝒢_j is fixed". L31425–31450: PV4 is "Under (PV1)–(PV3)", and that section "does not derive them". Y3 L77468ff is the clustering estimate, and L78224ff is the zero-energy/component space. Both match the text's description.
+
+## Verdict
+
+PH1 is a correct conditional implication from LG1, SR1 (S3 plus (3)–(4)) and CL1. All five clauses are proved at the scope stated. The four findings are wording, attribution or cosmetic. None breaks a statement. Finding 2 should be fixed in clause 3, because RO1 and WR1 read the cube cone per component.
+
+Checked line by line by Claude (fresh session).

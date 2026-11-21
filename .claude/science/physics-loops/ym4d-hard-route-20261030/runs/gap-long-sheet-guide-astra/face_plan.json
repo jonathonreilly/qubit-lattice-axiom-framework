@@ -1,0 +1,454 @@
+{
+  "phase": "face",
+  "label": "GUIDE",
+  "chains": [
+    {
+      "tag": "face_L128_T4_b2.4_k0_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11310000,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11311009,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0.24_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11312018,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0.24_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11313027,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k1.2_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11314036,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k1.2_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11315045,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k2.4_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11316054,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k2.4_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11317063,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11318072,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11319081,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0.24_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11320090,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0.24_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11321099,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k1.2_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11322108,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k1.2_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11323117,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k2.4_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11324126,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k2.4_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11325135,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ]
+    }
+  ]
+}

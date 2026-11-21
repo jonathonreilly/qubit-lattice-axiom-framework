@@ -1,0 +1,13 @@
+selftest su2 S0e: n_obs 36, max rel. error of directional derivative 1.58e-09 PASS
+selftest su2 S0o: n_obs 8, max rel. error of directional derivative 9.91e-10 PASS
+selftest su2 S1e-re: n_obs 24, max rel. error of directional derivative 1.43e-09 PASS
+selftest su2 S1e-im: n_obs 24, max rel. error of directional derivative 7.48e-10 PASS
+selftest su2 S1o-re: n_obs 2, max rel. error of directional derivative 3.95e-10 PASS
+selftest su2 S1o-im: n_obs 2, max rel. error of directional derivative 1.56e-09 PASS
+selftest u1 U0c: n_obs 27, max rel. error of directional derivative 3.16e-10 PASS
+selftest u1 U0s: n_obs 24, max rel. error of directional derivative 2.30e-10 PASS
+selftest u1 U1c-re: n_obs 24, max rel. error of directional derivative 2.50e-10 PASS
+selftest u1 U1c-im: n_obs 24, max rel. error of directional derivative 3.12e-10 PASS
+selftest u1 U1s-re: n_obs 24, max rel. error of directional derivative 5.27e-10 PASS
+selftest u1 U1s-im: n_obs 24, max rel. error of directional derivative 2.49e-10 PASS
+selftest u1 U0w: n_obs 4, max rel. error of directional derivative 2.33e-10 PASS

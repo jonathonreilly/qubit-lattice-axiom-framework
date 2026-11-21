@@ -1,0 +1,45 @@
+C1, C2, C3: {'C1': True, 'C2': True, 'C3': True} elapsed 0.0 s
+config (L, n, k, r, t, X): quotient Q, Q L^k, Gamma, Q / (284 L^-k Gamma^2), 
+  (3, 2, 1, 1, 1, 2): Q = 7.67995, Q L^k = 23.040, Gamma = 1.000, ratio to bound 0.228; elapsed 0.0 s
+  (3, 2, 1, 1, 1, 3): Q = 15.46042, Q L^k = 46.381, Gamma = 1.000, ratio to bound 0.492; elapsed 0.0 s
+  (3, 2, 1, 1, 1, 4): Q = 15.46042, Q L^k = 46.381, Gamma = 1.000, ratio to bound 0.492; elapsed 0.0 s
+  (3, 2, 1, 1, 2, 5): Q = 15.55820, Q L^k = 46.675, Gamma = 1.000, ratio to bound 0.525; elapsed 0.0 s
+  (3, 2, 1, 1, 2, 3): Q = 7.77604, Q L^k = 23.328, Gamma = 1.000, ratio to bound 0.244; elapsed 0.0 s
+  (5, 2, 1, 1, 1, 2): Q = 4.60398, Q L^k = 23.020, Gamma = 1.000, ratio to bound 0.151; elapsed 0.0 s
+  (5, 2, 1, 1, 1, 4): Q = 7.95909, Q L^k = 39.795, Gamma = 1.000, ratio to bound 0.263; elapsed 0.0 s
+  (7, 2, 1, 1, 1, 2): Q = 3.23114, Q L^k = 22.618, Gamma = 1.000, ratio to bound 0.125; elapsed 0.0 s
+  (9, 2, 1, 1, 1, 3): Q = 3.84703, Q L^k = 34.623, Gamma = 1.000, ratio to bound 0.175; elapsed 0.0 s
+  (3, 3, 1, 1, 1, 2): Q = 8.06632, Q L^k = 24.199, Gamma = 1.000, ratio to bound 0.135; elapsed 0.0 s
+  (3, 3, 1, 1, 1, 4): Q = 15.50370, Q L^k = 46.511, Gamma = 1.000, ratio to bound 0.271; elapsed 0.0 s
+  (3, 3, 2, 1, 1, 2): Q = 6.27169, Q L^k = 56.445, Gamma = 2.698, ratio to bound 0.213; elapsed 0.0 s
+  (3, 3, 2, 1, 2, 3): Q = 6.29289, Q L^k = 56.636, Gamma = 2.684, ratio to bound 0.230; elapsed 0.0 s
+  (3, 3, 2, 2, 2, 3): Q = 8.06215, Q L^k = 72.559, Gamma = 9.936, ratio to bound 0.234; elapsed 0.0 s
+  (5, 3, 2, 1, 1, 2): Q = 2.68430, Q L^k = 67.107, Gamma = 2.365, ratio to bound 0.147; elapsed 0.0 s
+  (5, 3, 2, 2, 1, 2): Q = 4.47355, Q L^k = 111.839, Gamma = 8.487, ratio to bound 0.149; elapsed 0.0 s
+  (7, 3, 2, 1, 1, 2): Q = 1.46745, Q L^k = 71.905, Gamma = 2.254, ratio to bound 0.123; elapsed 0.0 s
+  (7, 3, 2, 3, 1, 2): Q = 3.25951, Q L^k = 159.716, Gamma = 29.850, ratio to bound 0.125; elapsed 0.0 s
+  (3, 4, 3, 1, 1, 2): Q = 5.70520, Q L^k = 154.040, Gamma = 6.889, ratio to bound 0.211; elapsed 0.0 s
+  (5, 4, 3, 1, 1, 2): Q = 1.92051, Q L^k = 240.063, Gamma = 5.479, ratio to bound 0.147; elapsed 0.1 s
+  (4, 2, 1, 1, 1, 2): Q = 5.84794, Q L^k = 23.392, Gamma = 1.000, ratio to bound 0.183; elapsed 0.1 s
+  (4, 2, 1, 1, 1, 3): Q = 10.68403, Q L^k = 42.736, Gamma = 1.000, ratio to bound 0.342; elapsed 0.1 s
+  (4, 3, 2, 1, 1, 2): Q = 3.94120, Q L^k = 63.059, Gamma = 2.473, ratio to bound 0.174; elapsed 0.1 s
+  (4, 3, 2, 1, 1, 3): Q = 6.93798, Q L^k = 111.008, Gamma = 2.473, ratio to bound 0.308; elapsed 0.1 s
+C7 L=3 n=2 depth 1: max constraint 5.99e-16, max curl 0.00e+00, quotient 15.4604197465, 1D 15.4604197465
+C7 L=3 n=3 depth 2: max constraint 5.76e-14, max curl 0.00e+00, quotient 6.2716886362, 1D 6.2716886362
+C8 L=3: c_1D = 5.65852, quotient of the mode = 7.67995, ratio 1.357
+C8 L=5: c_1D = 3.75574, quotient of the mode = 4.60398, ratio 1.226
+C8 L=7: c_1D = 2.76783, quotient of the mode = 3.23114, ratio 1.167
+C8 L=9: c_1D = 2.18909, quotient of the mode = 2.47863, ratio 1.132
+C9 L=3: c_1D = 3.47535, quotient of the mode = 6.27169, ratio 1.805, c_1D L^2 = 31.28
+C9 L=5: c_1D = 1.63193, quotient of the mode = 2.68430, ratio 1.645, c_1D L^2 = 40.80
+C9 L=7: c_1D = 0.96804, quotient of the mode = 1.46745, ratio 1.516, c_1D L^2 = 47.43
+C1 PASS
+C2 PASS
+C3 PASS
+C4 PASS
+C5 PASS
+C6 PASS
+C7 PASS
+C8 PASS
+C9 PASS
+elapsed 0.5 s; max RSS 0.091 GB

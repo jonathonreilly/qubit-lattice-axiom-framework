@@ -1,0 +1,27 @@
+C1 h=0.3: var=0.32741798 formula=0.32741798 relerr=4.0e-11; 2Var-Q=-1.94106476 formula=-1.94106476 relerr=1.2e-12
+C1 h=1.0: var=0.27593834 formula=0.27593834 relerr=3.4e-11; 2Var-Q=-1.44812332 formula=-1.44812332 relerr=1.3e-11
+C1 h=3.0: var=0.10114677 formula=0.10114677 relerr=8.2e-12; 2Var-Q=-0.17935822 formula=-0.17935822 relerr=8.3e-11
+C1 h=10.0: var=0.00999999 formula=0.00999999 relerr=9.7e-15; 2Var-Q=-0.00000165 formula=-0.00000165 relerr=1.2e-08
+C2d a=1.0 t=0.0: kap_direct=0.79599838 kap_formula=0.79599838 relerr=1.1e-15 a^2/4=0.2500 M5/M3=0.931999
+C2d a=1.0 t=0.05: kap_direct=0.87913470 kap_formula=0.87913470 relerr=6.3e-16 a^2/4=0.2500 M5/M3=0.959712
+C2d a=1.0 t=0.09: kap_direct=0.97141662 kap_formula=0.97141662 relerr=6.9e-16 a^2/4=0.2500 M5/M3=0.990472
+C2b a=1.0 phi=-0.7: P G=-0.604367777 tanh=-0.604367777 abserr=1.1e-16
+C2b a=1.0 phi=-0.2: P G=-0.197375320 tanh=-0.197375320 abserr=5.6e-17
+C2b a=1.0 phi=0.0: P G=0.000000000 tanh=0.000000000 abserr=0.0e+00
+C2b a=1.0 phi=0.3: P G=0.291312612 tanh=0.291312612 abserr=0.0e+00
+C2b a=1.0 phi=1.1: P G=0.800499022 tanh=0.800499022 abserr=1.1e-16
+C2d a=3.0 t=0.0: kap_direct=3.95920703 kap_formula=3.95920703 relerr=1.3e-15 a^2/4=2.2500 M5/M3=0.813304
+C2d a=3.0 t=0.05: kap_direct=4.90992900 kap_formula=4.90992900 relerr=0.0e+00 a^2/4=2.2500 M5/M3=0.848516
+C2d a=3.0 t=0.09: kap_direct=7.29510189 kap_formula=7.29510189 relerr=1.2e-16 a^2/4=2.2500 M5/M3=0.936856
+C2b a=3.0 phi=-0.7: P G=-0.970451937 tanh=-0.970451937 abserr=0.0e+00
+C2b a=3.0 phi=-0.2: P G=-0.537049567 tanh=-0.537049567 abserr=1.1e-16
+C2b a=3.0 phi=0.0: P G=0.000000000 tanh=0.000000000 abserr=0.0e+00
+C2b a=3.0 phi=0.3: P G=0.716297870 tanh=0.716297870 abserr=1.1e-16
+C2b a=3.0 phi=1.1: P G=0.997282960 tanh=0.997282960 abserr=1.1e-16
+C3 a=1.0 c=0.1 p=0.8: D=0.01667260 MM=0.01667260 relerr=4.9e-10
+C3 a=3.0 c=0.1 p=0.8: D=0.09779870 MM=0.09779870 relerr=2.1e-08
+C3 a=3.0 c=0.3 p=0.95: D=0.41338989 MM=0.41338986 relerr=8.3e-08
+C3 a=6.0 c=0.1 p=0.6: D=0.01838257 MM=0.01838257 relerr=2.8e-07
+peak RSS MB 162.840576
+ALL CRITERIA PASS
+exit 0

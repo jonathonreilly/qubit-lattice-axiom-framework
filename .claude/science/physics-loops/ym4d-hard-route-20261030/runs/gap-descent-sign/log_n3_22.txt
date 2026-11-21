@@ -1,0 +1,5 @@
+# model n3 2Jmax 22 dim 3246 interior |[X12,X23]| max 1.04e-14 asym 1.2e-14 spec(X12) [-0.9914,0.9914]
+W bM  8.00 m_inf 1.8788395546 m2_inf 2.469262 min_bL[m-m_inf] +1.419e-02 at bL 1000  last(bL=1000) +1.419e-02
+H bM  8.00 m(t=0) 1.8788395546 min step dm +1.418e-02 at t 0.0->0.002  min(n1-n0) +1.2679e+00 at t 1.5  n0(0) 6.5754 n1(0) 13.7008
+W bM 12.00 m_inf 1.8948680320 m2_inf 2.490447 min_bL[m-m_inf] +2.127e-02 at bL 1000  last(bL=1000) +2.127e-02
+H bM 12.00 m(t=0) 1.8948680320 min step dm +2.126e-02 at t 0.0->0.002  min(n1-n0) +1.2684e+00 at t 1.5  n0(0) 10.5735 n1(0) 21.2805

@@ -1,0 +1,5 @@
+sin coupling: sigma = 0.52181, min (second difference / eta^2 - sigma) = 0.39144, control margin = -0.10856
+quartic: sigma = 0.91667, min (second difference / eta^2 - sigma) = 1.22491, control margin = 0.72491
+exp tilt: sigma = 1.11920, min (second difference / eta^2 - sigma) = 0.21710, control margin = -0.28290
+M1 PASS
+M2 PASS

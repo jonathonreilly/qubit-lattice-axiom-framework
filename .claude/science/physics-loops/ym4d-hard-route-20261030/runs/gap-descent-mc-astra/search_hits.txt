@@ -1,0 +1,3 @@
+origin/main:docs/C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPPORT_NOTE_2026-05-10_numconv.md:124:Kennedy-Pendleton, and the listed SU(3) thermodynamics benchmark papers.
+origin/main:docs/EXACT_TIER_PATH_INTEGRAL_BOUNDED_NOTE_2026-05-07_exact.md:169:   subgroup sweeps per link. Kennedy-Pendleton SU(2) sampler with
+origin/main:docs/HIGGS_MASS_WILSON_LOOP_SPECTROSCOPY_BOUNDED_NOTE_2026-05-10_higgsH3.md:365:  119, 387. SU(N) pseudo-heat-bath via SU(2) subgroup sweeps.

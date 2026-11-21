@@ -1,0 +1,5 @@
+beta 0.5 3x4^3: <x_p> = 0.12371 +- 0.00023; u + 4u^5 = 0.12383
+free wall crossing links: mean a0 = -0.0005 (Haar 0), mean a0^2 = 0.2532 (Haar 0.25)
+free box 4x3^3: weighted plaquettes = 0.5311, number with c=1: 360
+       32.27 real        31.78 user         0.08 sys
+            59244544  maximum resident set size

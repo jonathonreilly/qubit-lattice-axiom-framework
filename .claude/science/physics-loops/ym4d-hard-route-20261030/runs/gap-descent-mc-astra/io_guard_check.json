@@ -1,0 +1,36 @@
+{
+  "production_source_sha256": "25abc72085f2685c52fc62f595a8047a238f99acb89acc7d3acd1a78a9dee569",
+  "guarded_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+  "production_source_unchanged": true,
+  "cases": [
+    {
+      "model": "finite",
+      "matching_hashes": {
+        ".f32": "e4d6f87223e417f7f60162a55249019a25e26152eb56c915077e50c8fc591875",
+        ".cfg": "fbc3c7d5d0d35130fcad9679d1c8d41858dde6cd49f7e8b44baa43f31c3b2ca8",
+        ".therm.csv": "08fdcc6e35a1ce4581f4e1fb2c116bfaff47410a90a0628d8bf65042cb157fe7"
+      }
+    },
+    {
+      "model": "anchor",
+      "matching_hashes": {
+        ".f32": "9aa979765ac8d95ff033e6a0fe9d034903dfbf868ba66a2a4a5f227b0f3c58f4",
+        ".cfg": "dd2d57e2cc4fddf27b1fd400c3316a6fa242ad1fcb5a6f68c2cf407aea07a197",
+        ".therm.csv": "99ee2b5574ab78046a3b77c2a320940b3a3bd5532dbb1e14fb890e59e7965949",
+        ".spin.f32": "40cd7e8c86da676242509d9485022a688c4a84a10aa275fc98b7011930d1ff47"
+      }
+    }
+  ],
+  "expected_failures": [
+    {
+      "case": "spin_open",
+      "exit_code": 1,
+      "message": "spin output open failed"
+    },
+    {
+      "case": "cfg_open",
+      "exit_code": 1,
+      "message": "configuration open failed"
+    }
+  ]
+}

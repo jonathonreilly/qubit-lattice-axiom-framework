@@ -1,0 +1,14 @@
+levels ready
+projectors ready 0.2 s
+j=0: P theta resid 1.22e-15; B1 3.95e-14; C-B1 3.73e-14; B4 8.27e-14; rms f 1.8857e-03
+j=0: far difference n=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] mean |d|=[8.076e-04 2.938e-04 1.510e-04 2.919e-05 1.166e-05 3.936e-06 3.847e-07
+ 1.006e-07 5.410e-08 1.163e-08]; rate 1.318
+j=0: K1 ratio by n [(1, np.float64(0.00067)), (2, np.float64(0.00013)), (3, np.float64(6e-05)), (4, np.float64(2e-05)), (5, np.float64(1e-05)), (6, np.float64(0.0)), (7, np.float64(0.0)), (8, np.float64(0.0)), (9, np.float64(0.0)), (10, np.float64(0.0)), (11, np.float64(0.0)), (12, np.float64(0.0)), (13, np.float64(0.0)), (14, np.float64(0.0)), (15, np.float64(0.0)), (16, np.float64(0.0)), (17, np.float64(0.0)), (18, np.float64(0.0)), (19, np.float64(0.0)), (20, np.float64(0.0))]
+j=1: P theta resid 9.71e-17; B1 2.25e-13; C-B1 1.41e-13; B4 6.36e-13; rms f 2.4159e-05
+j=1: far difference n=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] mean |d|=[1.769e-05 4.718e-06 1.993e-06 5.137e-07 3.528e-07 1.389e-07 2.982e-08
+ 1.039e-08 8.069e-10 6.194e-10]; rate 1.158
+j=1: K1 ratio by n [(1, np.float64(0.0)), (2, np.float64(0.0)), (3, np.float64(0.0)), (4, np.float64(0.0)), (5, np.float64(0.0)), (6, np.float64(0.0))]
+two steps on H_3: level-0 piece +1.3803e-06, level-1 piece -1.2698e-07, sum +1.2533e-06, Phi[P_1] +1.2533e-06
+B1 PASS B2 PASS B3 PASS B4 PASS
+controls: C-B1 1.4130308610766874e-13 C-B2 0.0
+peak RSS bytes 360906752

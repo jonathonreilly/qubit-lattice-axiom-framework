@@ -1,0 +1,14 @@
+d=2 N=5: reps 12, reals 48, random slice loss 6.3356e-01
+   start 0: loss 1.6813e-13, ratio to random 2.654e-13, iters 89, 1s
+   start 1: loss 2.7822e-14, ratio to random 4.391e-14, iters 53, 1s
+   start 2: loss 1.0792e-14, ratio to random 1.703e-14, iters 39, 0s
+   start 3: loss 8.2845e-15, ratio to random 1.308e-14, iters 34, 0s
+d=2 N=5: best ratio 1.308e-14
+d=3 N=3: reps 13, reals 156, random slice loss 5.0072e+00
+   start 0: loss 2.8530e+00, ratio to random 5.698e-01, iters 45, 4s
+   start 1: loss 2.8530e+00, ratio to random 5.698e-01, iters 52, 5s
+   start 2: loss 2.7513e+00, ratio to random 5.495e-01, iters 42, 4s
+   start 3: loss 2.8530e+00, ratio to random 5.698e-01, iters 51, 5s
+d=3 N=3: best ratio 5.495e-01
+d=3 N=5: reps 62, reals 744, random slice loss 5.2324e+00
+exit 143

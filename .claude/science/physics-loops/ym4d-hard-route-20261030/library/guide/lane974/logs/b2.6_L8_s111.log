@@ -1,0 +1,46 @@
+traj974 L=8 Nt=32 beta=2.6 ntherm=300 nmeas=2000 nsep=2 seed=111 ape=6,16 tag=b2.6_L8_s111
+[    0.0s] therm 0 plaq 0.44393
+[    2.4s] therm 100 plaq 0.67086
+[    4.8s] therm 200 plaq 0.67141
+[    7.3s rss 63MB] meas 0 plaq 0.66947
+[   12.6s rss 72MB] meas 50 plaq 0.66707
+[   17.9s rss 74MB] meas 100 plaq 0.66835
+[   23.1s rss 77MB] meas 150 plaq 0.67048
+[   28.4s rss 101MB] meas 200 plaq 0.67257
+[   33.7s rss 101MB] meas 250 plaq 0.66861
+[   39.0s rss 105MB] meas 300 plaq 0.67084
+[   44.3s rss 105MB] meas 350 plaq 0.67110
+[   49.6s rss 105MB] meas 400 plaq 0.66718
+[   54.9s rss 105MB] meas 450 plaq 0.66986
+[   60.2s rss 105MB] meas 500 plaq 0.66861
+[   65.5s rss 105MB] meas 550 plaq 0.66972
+[   70.8s rss 105MB] meas 600 plaq 0.66892
+[   76.1s rss 105MB] meas 650 plaq 0.67113
+[   81.4s rss 105MB] meas 700 plaq 0.67016
+[   86.6s rss 105MB] meas 750 plaq 0.66981
+[   91.9s rss 105MB] meas 800 plaq 0.67059
+[   97.2s rss 105MB] meas 850 plaq 0.67017
+[  102.5s rss 105MB] meas 900 plaq 0.66956
+[  107.8s rss 105MB] meas 950 plaq 0.67093
+[  113.1s rss 105MB] meas 1000 plaq 0.66980
+[  118.3s rss 105MB] meas 1050 plaq 0.66820
+[  123.9s rss 105MB] meas 1100 plaq 0.66888
+[  129.2s rss 105MB] meas 1150 plaq 0.66896
+[  134.6s rss 105MB] meas 1200 plaq 0.66884
+[  139.9s rss 105MB] meas 1250 plaq 0.67129
+[  145.2s rss 105MB] meas 1300 plaq 0.67165
+[  150.6s rss 105MB] meas 1350 plaq 0.66961
+[  156.0s rss 107MB] meas 1400 plaq 0.67042
+[  161.3s rss 107MB] meas 1450 plaq 0.67141
+[  166.6s rss 111MB] meas 1500 plaq 0.66860
+[  172.0s rss 113MB] meas 1550 plaq 0.66978
+[  177.4s rss 113MB] meas 1600 plaq 0.67028
+[  182.8s rss 116MB] meas 1650 plaq 0.66991
+[  188.1s rss 116MB] meas 1700 plaq 0.66697
+[  193.5s rss 116MB] meas 1750 plaq 0.66897
+[  198.9s rss 116MB] meas 1800 plaq 0.67045
+[  204.3s rss 118MB] meas 1850 plaq 0.66917
+[  209.7s rss 118MB] meas 1900 plaq 0.66962
+[  215.0s rss 118MB] meas 1950 plaq 0.67156
+[  220.3s rss 118MB] meas 1999 plaq 0.67241
+done 220.3s plaq mean 0.67009 +- 0.00003

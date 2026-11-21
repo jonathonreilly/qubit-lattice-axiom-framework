@@ -1,0 +1,29 @@
+START spp_4_4_2.3 free=61% 17:47:16
+END spp_4_4_2.3 rc=0 rss=57MB 17:48:06 0 tracebacks
+START spp_4_6_2.3 free=58% 17:48:06
+END spp_4_6_2.3 rc=0 rss=60MB 17:49:21 0 tracebacks
+START spp_6_6_2.3 free=58% 17:49:21
+END spp_6_6_2.3 rc=0 rss=62MB 17:50:53 0 tracebacks
+START spp_4_4_2.5 free=59% 17:50:53
+END spp_4_4_2.5 rc=0 rss=57MB 17:51:43 0 tracebacks
+START spp_4_6_2.5 free=59% 17:51:43
+END spp_4_6_2.5 rc=0 rss=60MB 17:52:59 0 tracebacks
+START spp_6_6_2.5 free=60% 17:52:59
+END spp_6_6_2.5 rc=0 rss=63MB 17:54:30 0 tracebacks
+START fwspec_4x4x4_2.3 free=59% 17:54:30
+END fwspec_4x4x4_2.3 rc=0 rss=58MB 17:54:45 0 tracebacks
+START fwspec_8x4x4_2.3 free=61% 17:54:45
+END fwspec_8x4x4_2.3 rc=0 rss=60MB 17:55:08 0 tracebacks
+START fwspec_8x8x4_2.3 free=59% 17:55:08
+END fwspec_8x8x4_2.3 rc=0 rss=63MB 17:55:53 0 tracebacks
+START fwspec_8x8x8_2.3 free=62% 17:55:53
+END fwspec_8x8x8_2.3 rc=0 rss=70MB 17:57:19 0 tracebacks
+START fwspec_4x4x4_2.5 free=61% 17:57:19
+END fwspec_4x4x4_2.5 rc=0 rss=58MB 17:57:34 0 tracebacks
+START fwspec_8x4x4_2.5 free=61% 17:57:34
+END fwspec_8x4x4_2.5 rc=0 rss=60MB 17:57:58 0 tracebacks
+START fwspec_8x8x4_2.5 free=61% 17:57:58
+END fwspec_8x8x4_2.5 rc=0 rss=64MB 17:58:44 0 tracebacks
+START fwspec_8x8x8_2.5 free=61% 17:58:44
+END fwspec_8x8x8_2.5 rc=0 rss=69MB 18:00:10 0 tracebacks
+QUEUE DONE

@@ -1,0 +1,7 @@
+L=3 PC sheet      seed 1 start Ratio_C 0.843 best Ratio_C 1.0000 Ratio_A 1.0000 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 9 evals 48 3.1s
+L=3 PC star       seed 1 start Ratio_C 0.011 best Ratio_C 0.4949 Ratio_A 0.4949 w1 1.943 rhs_c 3.9264 min|m| 0.006 nrough 79 evals 309 19.8s
+L=3 PC flat       seed 1 start Ratio_C 0.002 best Ratio_C 0.8102 Ratio_A 0.8102 w1 0.027 rhs_c 0.0332 min|m| 1.000 nrough 45 evals 320 20.5s
+L=3 PC overall best Ratio_C 1.0000
+L=5 PC star       seed 1 start Ratio_C 0.019 best Ratio_C 1.3994 Ratio_A 1.3994 w1 2.000 rhs_c 1.4290 min|m| 0.000 nrough 211 evals 311 23.9s
+L=5 PC flat       seed 1 start Ratio_C 0.000 best Ratio_C 0.8696 Ratio_A 0.8696 w1 0.359 rhs_c 0.4130 min|m| 1.000 nrough 755 evals 317 24.4s
+L=5 PC overall best Ratio_C 1.3994

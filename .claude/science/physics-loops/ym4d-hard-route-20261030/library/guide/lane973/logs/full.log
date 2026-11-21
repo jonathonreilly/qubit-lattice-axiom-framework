@@ -1,0 +1,37 @@
+17:57:06Z start I_int05_b2.4_L8
+17:57:52Z end I_int05_b2.4_L8 rc=0
+17:57:52Z start I_int05_b2.4_L12
+18:00:42Z end I_int05_b2.4_L12 rc=0
+18:00:42Z start F_xy_b2.4_L8
+18:03:14Z end F_xy_b2.4_L8 rc=0
+18:03:14Z start F_zt90_b2.4_L8
+18:05:46Z end F_zt90_b2.4_L8 rc=0
+18:05:46Z start F_zt45_b2.4_L8
+18:08:19Z end F_zt45_b2.4_L8 rc=0
+18:08:19Z start F_xy_b2.4_L16
+18:17:40Z end F_xy_b2.4_L16 rc=0
+18:17:40Z start F_zt90_b2.4_L16
+18:27:01Z end F_zt90_b2.4_L16 rc=0
+18:27:01Z start F_zt45_b2.4_L16
+18:36:23Z end F_zt45_b2.4_L16 rc=0
+18:36:23Z start F_xy_b2.4_L12
+18:41:36Z end F_xy_b2.4_L12 rc=0
+18:41:36Z start F_zt90_b2.4_L12
+18:46:50Z end F_zt90_b2.4_L12 rc=0
+18:46:50Z start F_zt45_b2.4_L12
+18:52:03Z end F_zt45_b2.4_L12 rc=0
+18:52:03Z start F_xy_b2.4_L10
+18:55:54Z end F_xy_b2.4_L10 rc=0
+18:55:54Z start F_zt90_b2.4_L10
+18:59:45Z end F_zt90_b2.4_L10 rc=0
+18:59:45Z start F_zt45_b2.4_L10
+19:03:36Z end F_zt45_b2.4_L10 rc=0
+19:03:36Z start F_xy_b2.4_L14
+19:10:56Z end F_xy_b2.4_L14 rc=0
+19:10:56Z start F_zt90_b2.4_L14
+19:18:14Z end F_zt90_b2.4_L14 rc=0
+19:18:14Z start F_zt45_b2.4_L14
+19:25:33Z end F_zt45_b2.4_L14 rc=0
+19:25:33Z start K3_zt45_b2.4_L16_hot
+19:34:53Z end K3_zt45_b2.4_L16_hot rc=0
+19:34:53Z BATCH DONE

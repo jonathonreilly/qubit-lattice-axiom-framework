@@ -1,0 +1,5 @@
+L 3: R0T0 5.0e-18 const 2.2e-16 lin 8.9e-16 sum eta 3.4e-01 R1T1 2.2e-01 | L|grad zeta| 2.018 L|eta| 1.682 L^2|grad eta| 3.029 sup|zeta| 1.224 l1 row zeta 1.449 l1 row eta*L 2.705
+L 5: R0T0 2.2e-16 const 4.4e-16 lin 1.8e-15 sum eta 1.8e-01 R1T1 9.6e-02 | L|grad zeta| 2.058 L|eta| 1.709 L^2|grad eta| 4.570 sup|zeta| 1.290 l1 row zeta 1.581 l1 row eta*L 2.773
+L 7: R0T0 2.2e-16 const 4.4e-16 lin 1.8e-15 sum eta 1.2e-01 R1T1 8.9e-02 | L|grad zeta| 2.225 L|eta| 1.628 L^2|grad eta| 5.900 sup|zeta| 1.323 l1 row zeta 1.646 l1 row eta*L 2.967
+L 9: R0T0 1.1e-16 const 3.3e-16 lin 3.6e-15 sum eta 8.8e-02 R1T1 1.1e-01 | L|grad zeta| 2.252 L|eta| 1.600 L^2|grad eta| 7.109 sup|zeta| 1.342 l1 row zeta 1.685 l1 row eta*L 3.025
+L 21: R0T0 3.3e-16 const 6.7e-16 lin 1.4e-14 sum eta 3.9e-02 R1T1 1.4e-01 | L|grad zeta| 2.576 L|eta| 1.764 L^2|grad eta| 13.589 sup|zeta| 1.384 l1 row zeta 1.768 l1 row eta*L 3.476

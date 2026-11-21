@@ -1,0 +1,17 @@
+{
+  "args": [
+    "/tmp/sa-gap-descent-mc-astra.C6QR8N/o4_control",
+    "128",
+    "2.4",
+    "22141707",
+    "1",
+    "4096",
+    "8192",
+    "/tmp/sa-gap-descent-mc-astra.C6QR8N/o4_L128_b2.4_c1.csv"
+  ],
+  "seconds": 87.5046530000036,
+  "sha256": "47f7dc6eec520f4f619a89e96368d894675067cc2f477d296df58d15e093bc3d",
+  "archive_sha256": "2c1e832280425f257e43448e57b4fef5474192e618ff68bc962cd0f4e3623a92",
+  "source_sha256": "5e401af2f5c5994aa3e25f048ce8a1d72ded0dc0ba5a1cc0166ffa60e80d9f57",
+  "su2_sha256": "25abc72085f2685c52fc62f595a8047a238f99acb89acc7d3acd1a78a9dee569"
+}

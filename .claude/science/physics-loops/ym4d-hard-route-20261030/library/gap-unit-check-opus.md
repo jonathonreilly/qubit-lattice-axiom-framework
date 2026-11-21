@@ -1,0 +1,158 @@
+lead: anthropic/claude-opus-5-5/max mac-mini-worker
+lease_until: 2026-11-15T13:45Z
+
+# gap-unit-check-opus: line-by-line check of row 988 (`library/gap-unit-max.md`)
+
+Queue row 991 (`FINISH.md` line 1069). Check item, no new attack. Worker: Claude Opus 5.5 max, Mac mini worker 3. Started 2026-11-15T01:45Z at pinned commit d0d88c388. Author of the checked file: Claude Fable 5.2 max (row 988). This check is a different model on the same text; it is not an independent derivation of the lane's results except where a step below is re-derived by a different argument, and each such step says so.
+
+Marks: HOLDS, HOLDS AFTER CORRECTION, FAILS, each with the line of `library/gap-unit-max.md` it refers to.
+
+## Plan (at most eight steps; one per response, each appended before the next)
+
+1. Read `FINISH.md` rules (efficiency, build on published work) and `library/gap-unit-max.md` in full; record the exact statements to be checked with their line numbers. Grep `library/open-core.md` and FINISH rows for overlap.
+2. Check Identity G (S = 0 at beta_t = 0 for every beta_s; X as a beta_t integral).
+3. Check Lemma ORD (S(t; B) has a zero of order 4t at beta = 0).
+4. Check Lemma FLOOR (sector form).
+5. Check the consequence in 7.1.
+6. Check the Schwarz form of the Route Z transport, and write out the Borel-Caratheodory step (zeta_n := Z/Z(beta = 0), zeta_n(0) = 1, log|zeta_n| <= c |beta| Vol on D' gives |log zeta_n| <= C Vol on D).
+7. Verdict table, corrections, what stays open; RESULT line.
+
+## Status
+
+- 2026-11-15T01:45Z: Step 1 in progress.
+- Step 1 written (below).
+- 2026-11-15T01:57Z: Steps 2-7 written; all steps of the plan are done (plan steps 5 and 6 swapped, see Step 4). The lease above may be released.
+
+## Step 1. Sources, statements under check, overlap
+
+**Read.** `GOAL.md` in full; `FINISH.md` lines 1-84, 299-356 (Joining, Working efficiently, Rules) and rows 988, 991, 992 (lines 1066-1070); `library/gap-unit-max.md` in full (369 lines); `library/gap-crux-restate.md` Section 1 (L29-46), 3.1 Theorem D (L90-116), 3.4 setting and Lemmas K, X, E, Theorem S (L170-201); `library/gap-hcphys-max.md` 4.2 (L131-163) for S, X, U; `library/gap-skeleton-max-b.md` L299-308 (Theorem LP, Lemma HM, Corollary 4), L347-358 (Theorem Z), L460-463 (Theorem ZB).
+
+**Statements under check** (line numbers of `library/gap-unit-max.md`):
+
+| Item | Lines | Claimed mark in the file |
+|---|---|---|
+| Identity G (a), (b) and proof | 199-209 | PROVED by hand, not checked |
+| Lemma FLOOR and its use (17.04, pi, pi/2) | 174-186 | PROVED (one line) |
+| Lemma ORD and proof | 286-296 | PROVED given two RECALLED facts, not checked |
+| Schwarz form of the transport | 298-300 | PROVED (classical) |
+| Consequence in 7.1 (zero-freeness gives (SEED)) | 302-310 | ARGUED; Borel-Caratheodory step not written |
+| Borel-Caratheodory step asked by N1 | 350-352 | to be written here |
+
+Definitions used (from `gap-crux-restate.md` Section 1 and 3.1): Z(n) = int exp(-beta A) dU on the torus with sides n = (n_1, ..., n_4), A = sum over plaquettes of (1 - (1/2) tr U_p), F = log Z; (TM): Z(n) = Tr T^(n_mu), T positive trace class with simple top eigenvalue; S(k; B) = sum over i >= 1 of (lambda_i/lambda_0)^k; Phi(n) = 16 F(n^4) - F((2n)^4); Theorem D (b) proof: 1 + S(n; B_2) <= Z(n, 2n, 2n, 2n)^2 / Z((2n)^4).
+
+**Overlap (rule 0a).** `library/open-core.md`: no line names Identity G, Lemma ORD, Lemma FLOOR, the Schwarz form or this Borel-Caratheodory step (its one hit for "Borel", L231, is Borel component-locality, unrelated). `library/l17c.md`: no hit. `FINISH.md`: these names occur only in rows 988 (the source), 991 (this row) and 992 (the reading N4, a different item). Prior uses of Borel-Caratheodory in the lane: Theorem Z step 3 (`gap-skeleton-max-b.md` L355), Theorem ZB (L463), and row 681's repair (Lemma S: a Harnack chain and Borel-Caratheodory, after its defect Z1: no bounded domain satisfies (TUBE)). Steps 5.2 and 6 (item 8) compare with these. This row is a check, not an attack, so rule 0a does not stop it.
+
+## Step 2. Identity G (`gap-unit-max.md` L197-213): HOLDS (reading note on abar_t)
+
+**Setting checked (L199-200).** B is a periodic spatial box with |B| sites, B x t the periodic torus with t >= 1 time steps. Each of the |B| t sites carries three temporal plaquettes (0, i), so A_t has 3 |B| t terms: correct. The transfer operator in temporal gauge is T(beta_t) = e^(-V/2) K_(beta_t) e^(-V/2) on gauge-invariant functions of the spatial links, V = beta_s A_3, A_3 the spatial action of one slice (3 |B| plaquettes). K_beta has kernel prod over links l of exp(-beta (1 - (1/2) tr(U_l U'_l^(-1)))), averaged over the gauge group of the slice (the integral over the temporal links). This is (TM) of `gap-crux-restate.md` L33 with two couplings; nothing in that construction uses beta_t = beta_s.
+
+**(a) HOLDS.** At beta_t = 0 the temporal links occur in no factor, so each integrates to 1. The spatial links at different times then occur in disjoint factors exp(-beta_s A_3(U(tau))), so Z(B x t) = Z_3(B)^t with Z_3(B) = int exp(-beta_s A_3) dU > 0. In operator form: K_0 has kernel 1, so K_0 = P_0, the projection on constants (Haar probability measure), and T(0) = |psi><psi| with psi = e^(-V/2), a gauge-invariant function. So T(0) has rank one, lambda_0 = ||psi||^2 = Z_3(B), lambda_i = 0 for i >= 1, and S(t; B) = 0 for every t >= 1.
+
+**(b) HOLDS, with this reading:** abar_t(s) := <A_t>_(s) / (3 |B| t), the expectation of A_t at temporal coupling s, divided by the number of temporal plaquettes. ("Mean" must include the average over the three orientations: when the sides of B differ, the three orientations need not have the same expectation. With this reading the identity holds for every box.) Derivation, written out:
+1. X(t; B) = log(1 + S(t; B)) = log Z(B x t) - t log lambda_0, since Z(B x t) = Tr T^t = lambda_0^t (1 + S(t; B)).
+2. log Z(B x t) is real analytic in s = beta_t (a finite-dimensional integral of an entire integrand, Z > 0), and d log Z(B x t)/ds = -<A_t>_(s) = -3 |B| t abar_t(s).
+3. lambda_0(s) is real analytic on a neighbourhood of [0, infinity). Input (RECALLED, classical; Kato, analytic perturbation of an isolated simple eigenvalue): s -> T(s) is holomorphic in operator norm (the kernel is entire in s and bounded on compact sets of s, on a probability space), and lambda_0(s) is isolated and simple. Simplicity: for s > 0 the gauge-averaged kernel is at least e^(-2 s (number of links)) > 0 (Jentzsch); at s = 0 by (a). For s >= 0 the class function exp((s/2) tr g) has non-negative character coefficients (2 I_(2j+1)(s)/s >= 0), so T(s) >= 0 and lambda_0 = ||T(s)||.
+4. abar_inf(s) := lim over t of abar_t(s) exists and equals -(1/(3 |B|)) d log lambda_0/ds. Proof: f_t(s) := (1/t) log Z(B x t) is convex in s (log of a Laplace transform) and f_t -> log lambda_0 pointwise, because S(t; B) <= S(1; B) r_1^(t-1) -> 0. For convex differentiable f_t with differentiable pointwise limit f: for h > 0, (f_t(s) - f_t(s - h))/h <= f_t'(s) <= (f_t(s + h) - f_t(s))/h; let t -> infinity, then h -> 0. This is used at interior points s > 0 only, where s - h > 0 for small h. The value at s = 0 is not needed: step 5 integrates over (0, beta_t], the integrand is bounded (0 <= abar <= 2), and X is continuous at s = 0. The file's proof gives exactly this argument in one sentence (L208-209).
+5. So dX/ds = -3 |B| t abar_t(s) + 3 |B| t abar_inf(s) on [0, beta_t], X is C^1 there, and X(t; B)(beta_s, 0) = 0 by (a). Integrating gives (b).
+
+**What it does not show.** Nothing about the sign or size of abar_inf - abar_t. The file says so (Route 2, L215-229). The remark at L211-213 (the path keeps beta_s fixed; it differs from Theorem D (f)) is correct as a description. **Precision:** Identity G is proved for the anisotropic Wilson weight. "The spatial coupling never leaves the unit value" (L211) is right if it means that beta_s stays at its end-point value. If it means the unit-scale effective weight of (EX), Identity G is not shown there: the effective weight has no single temporal coupling to switch off, and (EX) is stated for the isotropic family.
+
+Verdict: **Identity G HOLDS** (L202-209), with the reading of abar_t above. The two inputs are classical and named: Kato's analytic perturbation theorem and Jentzsch's theorem (both RECALLED, as in (TM)).
+
+## Step 3. Lemma ORD (`gap-unit-max.md` L286-296): HOLDS (two notes; recalled fact (ii) replaced by an explicit bound)
+
+Statement (L287-290): SU(2) Wilson, periodic box B with all sides >= 4, t >= 1: S(t; B) is analytic in beta near 0 with a zero of order >= 4t; the same in beta_t at fixed real beta_s. Checked line by line.
+
+1. **Character expansion (L291-292).** With Haar probability measure, dg = (2/pi) sin^2(theta) d(theta), and (1/pi) int_0^pi e^(beta cos theta) cos(k theta) d(theta) = I_k(beta), the coefficient of chi_j in e^(beta cos theta) = e^((beta/2) tr g) is I_(2j) - I_(2j+2) = (2j+1) 2 I_(2j+1)(beta)/beta. So convolution with the one-link kernel e^(-beta) e^((beta/2) tr g) acts on the spin-j matrix coefficients as the scalar e^(-beta) 2 I_(2j+1)(beta)/beta = c(beta) rho_j(beta), with c(beta) = e^(-beta) 2 I_1(beta)/beta and rho_j = I_(2j+1)/I_1. Since I_n(z) = (z/2)^n/n! (1 + O(z^2)), rho_j has a zero of order exactly 2j at 0: correct. **Note 1 (normalisation, harmless):** the file writes K_beta = sum_R rho_R P_R and drops the scalar c(beta)^(number of links). That scalar is analytic, equals 1 at 0, and has no zero for |beta| < j_(1,1) = 3.83 (zeros of I_1 lie on the imaginary axis, I_1(iy) = i J_1(y)). It cancels in every ratio lambda_i/lambda_0, so S(t; B) is unchanged. With the scalar kept, the identity reads K_beta - c(beta)^(#links) P_0 = beta^4 N(beta).
+2. **Gauss's law (L292-293).** P_R maps gauge-invariant functions to zero unless, at each site x, the tensor product of the spins of the links at x contains the trivial representation. A site with exactly one non-trivial link fails this (V_j, j >= 1/2, has no invariant vector). So every site touched by supp R has at least two links of supp R; a finite graph with all degrees >= 2 contains a cycle: correct.
+3. **Cycle length >= 4 (L293).** A cycle on the periodic box either lifts to a closed cycle of Z^3, which is bipartite with girth 4, or its lift has a non-zero displacement that is a multiple of a side, so its length is at least that side >= 4: correct. (With sides >= 3 the bound would be 3, so the hypothesis "sides >= 4" is the right one.) Hence the order of rho_R = sum over l of 2 j_l >= |supp R| >= 4.
+4. **Analyticity of N in trace norm (L294); replaces RECALLED fact (ii).** For |beta| <= 1: |I_n(beta)| <= (|beta|/2)^n e^(1/4)/n! and |I_1(beta)| >= (|beta|/2)(1 - 0.14), so |rho_j(beta)| <= 1.5 (|beta|/2)^(2j)/(2j+1)!. ||P_R||_1 <= prod over l of (2j_l + 1)^2. So sum over R of |rho_R(beta)| ||P_R||_1 <= prod over l of (1 + sum over n >= 2 of 1.5 n^2 (|beta|/2)^(n-1)/n!) < infinity, uniformly on |beta| <= 1. Each term rho_R(beta)/beta^4 with R allowed is analytic on |beta| <= 1 and, by the maximum principle, bounded there by its maximum on |beta| = 1. So N(beta) = sum over allowed R != 0 of (rho_R(beta)/beta^4) P_R converges uniformly in trace norm and is analytic on |beta| < 1. The radius is box-dependent through the number of links only in the size of the bound, not in its existence; Lemma ORD claims nothing uniform.
+5. **Rank-one part (L295).** T_0 := A P_0 A with A = e^(-beta A_3/2) (multiplication operator; **Note 2:** the file writes "integral e^(-beta V)", with V here the unscaled spatial action of one slice, whereas Route 2 at L200 used V for beta_s times it; harmless clash of notation). T_0 = |A1><A1|, eigenvalue Z_3(beta) = int e^(-beta A_3) dU, entire with Z_3(0) = 1, so non-zero on a (box-dependent) disc. T_0 (1 - Pi_0) = 0 for Pi_0 = |A1><A1|/Z_3: correct.
+6. **T' = O(beta^4) in trace norm (L296).** T = T_0 + beta^4 M, M = c^(#links) A N A analytic in trace norm. The Riesz projection Pi(beta) = (1/2 pi i) closed integral over |z - Z_3(beta)| = 1/2 of (z - T)^(-1) dz is analytic near 0, and Pi - Pi_0 = (1/2 pi i) closed integral of (z - T)^(-1) beta^4 M (z - T_0)^(-1) dz has trace norm O(beta^4). So T' = T(1 - Pi) = T_0 (Pi_0 - Pi) + beta^4 M (1 - Pi) has ||T'||_1 = O(beta^4): correct.
+7. **Order 4t (L296).** S(t) = Tr T'^t / lambda_0^t (Pi commutes with T; T' acts on the range of 1 - Pi with the eigenvalues lambda_i, i >= 1). |Tr T'^t| <= ||T'||_1^t = O(beta^(4t)), and lambda_0 = Z_3 + O(beta^4) is non-zero near 0. Tr T'^t is analytic, so S(t) is analytic with a zero of order >= 4t: correct. The order is exactly 4t whenever the spin-1/2 plaquette loop gives an eigenvalue of order (beta/4)^4 (expected; not needed).
+8. **The beta_t clause (L289-290).** At fixed real beta_s, A = e^(-beta_s A_3/2) is fixed and T_0 has the fixed eigenvalue Z_3(beta_s) > 0; steps 4-7 run in beta_t unchanged: correct.
+
+The use in 7.1 (L304): G_n := 2 log Z(n, 2n, 2n, 2n) - log Z((2n)^4) = 2 X(n; (2n)^3) - X(2n; (2n)^3), checked from Z(n, 2n, 2n, 2n) = lambda_0^n (1 + S(n)) and Z((2n)^4) = lambda_0^(2n) (1 + S(2n)). X(k) = log(1 + S(k)) has a zero of order >= 4k, so G_n has a zero of order >= 4n at 0, for n >= 2 (sides 2n >= 4): correct.
+
+Verdict: **Lemma ORD HOLDS** (L286-296), with Notes 1-2 (normalisation scalar dropped, notation V). RECALLED fact (i) (Kato: analytic perturbation of an isolated simple eigenvalue and its Riesz projection) stays a classical input. RECALLED fact (ii) is not needed: item 4 gives the trace-norm analyticity from the character expansion directly.
+
+## Step 4. Lemma FLOOR (`gap-unit-max.md` L174-186): HOLDS
+
+Statement (L174-177): T >= 0 trace class with simple top eigenvalue; the trace runs over a T-invariant subspace H' that holds the top eigenvector; if H' holds an eigenvector of level E (eigenvalue lambda_0 e^(-E)) other than the ground state, then S(a) >= e^(-aE). Proof (L178): S(a) is a sum of non-negative terms (lambda_i/lambda_0)^a over the eigenvectors in H' other than the ground state, and one term is e^(-aE). Correct. It is the sector form of r_1^k <= S(k; B) (`gap-crux-restate.md` L45) and of Theorem D (c) read backwards. Simplicity of the top eigenvalue is used only to define S relative to one ground state.
+
+Numbers (L176-177), checked by hand and by a one-line evaluation (arithmetic only, not a proof step): with E = m((2n)^3) and a = n, s < 1/5041 gives e^(-nm) < 1/5041, so n m > log 5041 = 2 log 71 = 8.5254 > 8.52, and side times gap = 2nm > 17.05 > 17.04: correct. The same formula at threshold 1/1650 gives 2 log 1650 = 14.82, which matches "14.8" of row 712 P1 quoted at L273.
+
+Use (L180-186). Arithmetic: untwisted level 2 pi/side with side 2n gives nE = pi and e^(-pi) = 0.0432 > 0.04; twisted level pi/side gives nE = pi/2 and e^(-pi/2) = 0.2079 > 0.2: correct. The two level positions are RECALLED (small-box perturbation theory, twist-eaters) and marked so in the file; this check does not verify them. The remark that Lemma X needs a < b (L185-186) is correct (`gap-crux-restate.md` L182: the bound (b - a) kappa(b) <= g(a, b) is for a < b, and Lemma E, Theorem S, Corollary S3 use a <= b/2). "17.04 against pi" (L184) compares 17.04 with side times gap = pi in the twisted box (2 pi untwisted); the reading is right, and in both cases the perturbative value lies below the floor.
+
+Verdict: **Lemma FLOOR HOLDS** (L174-178); the numbers at L176-177 and L181-183 are correct.
+
+Order change: the consequence in 7.1 uses the Schwarz form and the Borel-Caratheodory step, so Step 5 below checks those and Step 6 checks the consequence.
+
+## Step 5. Schwarz form (`gap-unit-max.md` L298-300): HOLDS; Borel-Caratheodory step (N1, L350-352): written out, HOLDS
+
+### 5.1 Schwarz form
+
+Statement: D simply connected, 0 in D, phi: D -> unit disc conformal with phi(0) = 0, h analytic on D, |h| <= M, zero of order N at 0; then |h| <= M |phi|^N on D. Proof check: phi exists by the Riemann mapping theorem when D is not all of C (**precision:** the statement needs D != C; in every use here D is bounded). H := h o phi^(-1) is analytic on the unit disc, |H| <= M, and has a zero of order >= N at 0, because phi^(-1) is conformal with phi^(-1)(0) = 0 and (phi^(-1))'(0) != 0. H(w)/w^N is analytic (removable singularity); on |w| <= r < 1 the maximum principle gives |H(w)/w^N| <= M/r^N; let r -> 1. So |H(w)| <= M |w|^N, i.e. |h(z)| <= M |phi(z)|^N. The proof holds verbatim for a zero of order at least N. Note log(1/|phi(z)|) = g_D(z, 0), the Green function of D with pole at 0, so the bound reads |h(z)| <= M exp(-N g_D(z, 0)). **HOLDS** (classical Schwarz lemma composed with the Riemann map).
+
+### 5.2 Borel-Caratheodory step, written out
+
+**Lemma BC (PROVED here; same inequality as row 681, `gap-zero-transport-check.md` L66, used on a fixed compact subdomain, so no shape condition is needed).** Let D' be a simply connected domain with 0 in D', and D a domain with 0 in D whose closure is a compact subset of D'. Let zeta be analytic and zero-free on D', zeta(0) = 1, with log|zeta(beta)| <= c |beta| V on D' for constants c, V > 0. Let f := log zeta be the branch on D' with f(0) = 0 (it exists because D' is simply connected and zeta has no zero). Then |f| <= C V on the closure of D, with C = c R_1 3^m, where delta := (1/2) dist(closure D, C \ D') (delta := 1 if D' = C), R_1 := max over closure D of |beta|, plus delta, and m is the number of discs in a cover of closure D by open discs of radius delta/4 with centres in closure D, one of them centred at 0. C depends on c, D and D' only, not on V or zeta.
+
+Proof.
+1. *Inequality (Borel-Caratheodory).* If g is analytic on a neighbourhood of the closed disc |z - z_0| <= R, then for |z - z_0| <= r < R: |g(z)| <= (2r/(R - r)) A + ((R + r)/(R - r)) |g(z_0)|, where A = max over |w - z_0| = R of Re g(w). Derivation: put k(w) := g(z_0 + R w) - g(z_0) on the unit disc; k(0) = 0 and Re k <= A' := A - Re g(z_0) on the closed disc; A' >= 0 because Re k has mean 0 on the circle. If A' = 0 then Re k = 0, so k = 0. If A' > 0, q := k/(2A' - k) satisfies |q| <= 1 (since |2A' - k|^2 - |k|^2 = 4A'(A' - Re k) >= 0) and q(0) = 0, so |q(w)| <= |w| by Schwarz, and |k| = 2A'|q|/|1 + q| <= 2A'|w|/(1 - |w|). At |w| <= r/R: |g(z) - g(z_0)| <= 2r(A - Re g(z_0))/(R - r); add |g(z_0)| and use -Re g(z_0) <= |g(z_0)|. The bound holds for every real A.
+2. *Chain.* Cover closure D by m open discs B_i of radius delta/4 with centres w_i in closure D, w_1 = 0. The graph "B_i meets B_j" is connected: otherwise two disjoint open unions of discs would split the connected set closure D, each part holding a centre. Adjacent centres satisfy |w_i - w_j| < delta/2. For each i, the closed disc of radius R = delta about w_i lies in D' (as 2 delta <= dist(closure D, C \ D')), and on it Re f = log|zeta| <= c (|w_i| + delta) V <= c R_1 V.
+3. *Induction.* Step 1 with R = delta, r = delta/2 gives, for |z - w_i| <= delta/2: |f(z)| <= 2 c R_1 V + 3 |f(w_i)|. Along a path of at most m - 1 edges from w_1 = 0 (where f = 0): |f(w_k)| <= C_k V with C_1 = 0, C_(k+1) = 2 c R_1 + 3 C_k, so C_k <= c R_1 (3^(k-1) - 1). Every z in closure D lies in some B_i, at distance < delta/4 from w_i, so |f(z)| <= 2 c R_1 V + 3 c R_1 (3^(m-1) - 1) V <= c R_1 3^m V. QED
+
+**The hypothesis log|zeta_n| <= c |beta| Vol is a fact, not an assumption, for the Wilson torus.** With Haar probability measure Z(beta = 0) = 1, so zeta_n = Z. A torus with Vol sites has 6 Vol plaquettes, each with 0 <= 1 - (1/2) tr U_p <= 2, so |Z(beta)| <= int exp(-Re(beta) A) dU <= exp(12 Vol max(0, -Re beta)) <= exp(12 Vol |beta|). So c = 12 on all of C.
+
+**Application (N1).** For Z_1 = Z(n, 2n, 2n, 2n) (Vol = 8 n^4) and Z_2 = Z((2n)^4) (Vol = 16 n^4), both zero-free on D': |log Z_i| <= 12 R_1 3^m Vol_i on closure D, so the branch G_n := 2 log Z_1 - log Z_2 (with G_n(0) = 0) obeys |G_n| <= 32 x 12 R_1 3^m n^4 =: C n^4 on closure D, with C free of n. This is the line "|G_n| <= C n^4 on a smaller D" of L305, now proved, for every D as in Lemma BC.
+
+**Comparison with the lane.** Theorem Z and Theorem ZB (`gap-zero-transport.md` L68, L95) take the same inequality on one disc given by (TUBE); row 681 found (TUBE) holds for no bounded domain (defect Z1) and replaced it by Lemma S, a Harnack chain that controls the bound up to the boundary of D under (TUBE'). Lemma BC needs no shape condition because it stops at a fixed compact subdomain; the price is a constant that depends on D. That is enough for 7.1, where D is fixed and only n grows.
+
+Verdict: **Schwarz form HOLDS** (L298-300; needs D != C). **Borel-Caratheodory step HOLDS** as Lemma BC above, with C = 12 R_1 3^m per unit volume, given that closure D is compact in D'.
+
+## Step 6. The consequence in 7.1 (`gap-unit-max.md` L302-310): HOLDS AFTER CORRECTION (precisions only; the implication is now proved)
+
+Line by line.
+
+1. **L303, G_n = 2 X(n; (2n)^3) - X(2n; (2n)^3).** Checked in Step 3 from Z(n, 2n, 2n, 2n) = lambda_0^n (1 + S(n)) and Z((2n)^4) = lambda_0^(2n) (1 + S(2n)) for the transfer operator of B_2 = (2n)^3: correct.
+2. **L303-304, 1 + S(n; (2n)^3) <= exp(G_n) for real beta.** exp(G_n) = (1 + S(n))^2/(1 + S(2n)), and S(2n) <= S(n) because 0 <= r_i < 1. So exp(G_n) >= 1 + S(n): correct for real beta > 0, where (TM) gives T >= 0. (It is the first line of Theorem D (b), `gap-crux-restate.md` L102.) Only beta > 0 is used.
+3. **L304, zero of order >= 4n.** Lemma ORD (Step 3) on the box (2n)^3 needs 2n >= 4, so n >= 2. **Precision 1:** n >= 2.
+4. **L304-305, |G_n| <= C n^4 on a smaller D.** Lemma BC (Step 5.2) with c = 12. **Precision 2:** "a smaller D" must be a bounded simply connected domain with 0 in D and closure D compact in D', for example D_r := psi(|w| < r) with psi the Riemann map of the unit disc onto D', psi(0) = 0, and r < 1 (if D' = C, a disc). C = 384 R_1 3^m depends on D and D' only. The zero-freeness must hold for every n >= 2 on the same D'. The branch of G_n is the one with G_n(0) = 0; its germ at 0 is 2 log(1 + S(n)) - log(1 + S(2n)), so it has the zero of item 3.
+5. **L305, G_n(beta) <= C n^4 |phi_D(beta)|^(4n).** Schwarz form (Step 5.1) with h = G_n, M = C n^4, N = 4n: |G_n| <= C n^4 |phi_D|^(4n) on D. **Precision 3:** at real beta > 0 in D the branch equals the real G_n when [0, beta] lies in D' (continue along the segment, where Z_1, Z_2 > 0). In general it may differ from the real value by 2 pi i k, k an integer. The inequality is unaffected: the real G_n(beta) = Re(branch) <= |branch|.
+6. **L306-307, (SEED) at every real beta in D.** With q := |phi_D(beta)| < 1: S(n; (2n)^3) <= exp(C n^4 q^(4n)) - 1 < 1/5041 for all n >= n_0(beta), where n_0 depends on beta (through q) and on D (through C). **Precision 4:** (SEED) holds at fixed real beta > 0 in D for n >= n_0(beta); n_0(beta) is not uniform as beta approaches the boundary of D, and no uniformity in beta (the cutoff) is claimed or given. Then Theorem S gives a gap of the dyadic cubes at that fixed beta.
+7. **L307-308, Green function in place of kappa_0 times harmonic measure; Corollary 4 in the limit r_0 -> 0.** |phi_D(beta)|^(4n) = exp(-4n g_D(beta, 0)): correct. The limit statement is a remark, not used: with kappa_0 = 4 log(1/(c r_0)) and omega_(r_0) the harmonic measure of |beta| = r_0 in D minus the disc, g_D(beta, 0) = log(1/|beta|) + h(beta) with h harmonic gives omega_(r_0)(beta) = g_D(beta, 0)/(log(1/r_0) + h(0)) (1 + o(1)), so kappa_0 omega_(r_0) -> 4 g_D(beta, 0). Consistent (ARGUED, as in the file).
+8. **L306-307, "with no strong-coupling expansion (SC) and no bound (BD) as separate hypotheses".** True against Corollary 4 of `gap-skeleton-max-b.md` (L304-307), which the file cites. **Precision 5 (novelty):** against the later Theorem Z and Theorem ZB (`gap-zero-transport.md` L57-68, L90-95), (BD) is not new: they already assume only (SC) and zero-freeness, and derive the bound by Borel-Caratheodory. What 7.1 removes relative to them is (SC), replaced by Lemma ORD (the anchor is the order-4n zero at the point 0, not a bound on the circle |beta| = r_0), and the shape condition ((TUBE) or (TUBE') of row 681), replaced by a fixed compact subdomain at fixed beta. That is a real simplification for periodic tori: (SC) is still OPEN as a written proof with constants (`gap-skeleton-max-b.md` L492, N2).
+9. **L308-309, does not revive Route Z on periodic tori.** Correct reading of `gap-skeleton-max-b.md` L456 (the zero-free tube of periodic tori has half-width at most 11/(12 pi) in the scaling region). The Green function of a strip of half-width w decays like exp(-pi x/(2w)) along the axis (map the strip to the half-plane by exp(pi z/(2w))), the same rate as the harmonic measure of Lemma HM, so the Green-function form gives the same lattice mass of order a(beta)^2 and nothing in physical units.
+10. **L309-310, free-wall boxes not checked.** A statement of what was not done; it is N3, not this item.
+
+Verdict: **the consequence in 7.1 HOLDS AFTER CORRECTION.** With Lemma BC written out, it is an implication, proved here given Lemma ORD, Lemma BC, the Schwarz form and the first line of Theorem D (b): if Z(n, 2n, 2n, 2n) and Z((2n)^4) have no zero, for every n >= 2, on one simply connected domain D' that holds 0, then for every bounded simply connected D with 0 in D and closure D in D', and every real beta > 0 in D, X(n; (2n)^3)(beta) <= G_n(beta) <= C(D, D') n^4 |phi_D(beta)|^(4n), so (SEED) holds at that beta for all n >= n_0(beta). Precisions 1-5 are needed for the statement to be exact; none changes its content. The file's mark ARGUED (L302, L338) can be raised to PROVED, unchecked by another provider. The hypothesis (zero-freeness, n-uniform, on periodic tori) stays OPEN, and by item 9 it would not give a gap in physical units.
+
+## Appendix to Steps 2-6: two small items outside the row's list (short; same file)
+
+- **One-link influence bound, L216-219 (marked PROVED, not checked).** The one-link factor e^(-s(1 - (1/2) tr)) lies in [e^(-2s), 1], so changing one link changes the integrand of the gauge average by a factor in [e^(-2s), e^(2s)] pointwise in the gauge, hence the kernel and its normalising integral by factors in the same interval, and the normalised one-step density by a factor in [e^(-4s), e^(4s)]: HOLDS for the one-step kernel. The file's next sentence (the law can change on all links through nu_0) is a correct statement of what the bound does not give.
+- **Two-level monotonicity, L223-225 (marked PROVED).** For A^2 = diag(1, e^(-v)) and e^(-tau C) with C = (1/2)[[1, -1], [-1, 1]]: det = e^(-v) e^(-tau) and tr = (1/2)(1 + e^(-tau))(1 + e^(-v)), so det/tr^2 = [e^(-v)/(1 + e^(-v))^2][4 e^(-tau)/(1 + e^(-tau))^2], the displayed formula. det/tr^2 = rho/(1 + rho)^2 with rho = lambda_1/lambda_0 is increasing in rho on (0, 1], and 4 e^(-tau)/(1 + e^(-tau))^2 = 1/cosh^2(tau/2) decreases in tau, so rho decreases: HOLDS for this two-state model. The general non-monotonicity claim at L223-225 stays ARGUED, as marked.
+
+## Step 7. Verdicts, corrections, what stays open
+
+Provenance: Claude Opus 5.5, max effort, Mac mini worker 3, pinned commit d0d88c388, 2026-11-15T01:45Z-01:57Z. One reading by a different model from the author (Claude Fable 5.2). Not an audit, not human review, not an independent derivation except where a step is re-derived by another argument (Lemma ORD item 4; Lemma BC). No numeric job and no numeric lock: one python3 one-line arithmetic evaluation of five constants (Step 4), each also checkable by hand; memory free was 71 percent. No subagent.
+
+| Item | Lines of `gap-unit-max.md` | Verdict | Correction or note |
+|---|---|---|---|
+| Identity G (a) | 202-203, 206-207 | **HOLDS** | none |
+| Identity G (b) | 204-205, 207-209 | **HOLDS** | abar_t is the expectation of A_t divided by 3 abs(B) t (the three orientations may differ when the sides differ); "unit value" (L211) means the end-point beta_s, not the effective weight of (EX) |
+| Lemma ORD | 286-296 | **HOLDS** | the scalar c(beta)^(#links) is dropped from K_beta (cancels in S); V is used with two meanings (L200, L295); RECALLED fact (ii) replaced by the explicit trace-norm bound of Step 3 item 4; RECALLED fact (i) (Kato) stays |
+| Lemma FLOOR | 174-178 (numbers 176-177, 181-183) | **HOLDS** | numbers correct; level positions at L180-183 are RECALLED and not checked here |
+| Schwarz form | 298-300 | **HOLDS** | needs D != C (D bounded in every use) |
+| Borel-Caratheodory step (N1) | 305, 350-352 | **HOLDS**, written out as Lemma BC (Step 5.2) | needs closure D compact in D'; constant 12 R_1 3^m per unit volume; the bound log abs(Z) <= 12 Vol abs(beta) is a fact for the Wilson torus |
+| Consequence in 7.1 | 302-310 | **HOLDS AFTER CORRECTION** | n >= 2; D bounded, simply connected, 0 in D, closure D in D'; real beta > 0; (SEED) at fixed beta for n >= n_0(beta) only; branch equals the real G_n only up to 2 pi i k (inequality unaffected); against Theorem Z / ZB of `gap-zero-transport.md`, what is new is the removal of (SC) and of the shape condition, not of (BD). Mark ARGUED (L302, L338) can be raised to PROVED, not yet checked by another provider |
+| One-link bound (appendix; outside the list) | 216-219 | HOLDS | one-step kernel only |
+| Two-level monotonicity (appendix; outside the list) | 223-225 | HOLDS | for the displayed two-state model |
+
+No item FAILS. No line of the file is wrong in content; the corrections are precisions of hypotheses and one statement of novelty.
+
+**What stays open (unchanged by this check).** The hypothesis of 7.1: zero-freeness of Z(n, 2n, 2n, 2n) and Z((2n)^4), for every n, on one simply connected domain that holds 0 and the real interval of interest. By `gap-skeleton-max-b.md` L456 and Step 6 item 9, on periodic tori it would give a lattice mass of order a(beta)^2 and so no gap in physical units. Whether Lemma ORD holds for boxes with free walls (N3 of row 988). Everything row 988 marks OPEN: (UNIT), (U1), (U2), (HC-phys), (SEED-phys), the temporal seed of Route 2 (i), (NOCRIT) on the beta_t path, and the exclusion of a gapless branch beyond first passage.
+
+**For the lead (evidence only; this file edits nothing else).** If the lead adopts these verdicts, `gap-unit-max.md` 8.2 rows "Identity G", "Lemma ORD" and "Zero-freeness of two torus families gives (SEED)" can carry "checked line by line by Claude Opus 5.5 (row 991), first failing step none; precisions in `library/gap-unit-check-opus.md` Step 6". The gpt-6-astra check named in row 991 is held and would be the cross-provider reading.
+
+RESULT: Row 991 (Claude Opus 5.5 max, Mac mini worker 3; line-by-line check of row 988, written by Claude Fable 5.2; one reading by a different model, not an audit; no numeric job): Identity G HOLDS (abar_t read as the per-plaquette mean over all 3|B|t temporal plaquettes); Lemma ORD HOLDS (dropped normalisation scalar and a notation clash noted; its recalled trace-class fact replaced by an explicit character-expansion bound); Lemma FLOOR HOLDS (17.04, pi, pi/2 numbers correct); the Schwarz form HOLDS (D != C); the Borel-Caratheodory step is written out as Lemma BC (|log zeta_n| <= 12 R_1 3^m Vol on any D with compact closure in D') and HOLDS; the consequence in 7.1 HOLDS AFTER CORRECTION (n >= 2, D bounded simply connected inside D', real beta > 0, (SEED) at fixed beta only for n >= n_0(beta); its novelty over Theorem Z/ZB is dropping (SC) and the shape condition, not (BD)) and is now a proved implication, unchecked by another provider. No item FAILS. Open: the n-uniform zero-freeness hypothesis on periodic tori (which by the lane's tube-width result would not give a physical gap), Lemma ORD on free-wall boxes (N3), and all items row 988 marks OPEN.

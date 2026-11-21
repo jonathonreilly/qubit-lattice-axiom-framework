@@ -1,0 +1,1 @@
+max doubled spin 3: 3256 Gram pairs, worst error 1.29e-14, negative coefficients seen 20788

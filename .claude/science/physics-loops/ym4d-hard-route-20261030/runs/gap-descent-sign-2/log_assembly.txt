@@ -1,0 +1,2 @@
+arcs (1,3): einsum 2.219693712113e+00  brute 2.219693712113e+00  rel diff 2.0e-16
+arcs (2,2): einsum 5.722135019644e-01  brute 5.722135019644e-01  rel diff 3.9e-16

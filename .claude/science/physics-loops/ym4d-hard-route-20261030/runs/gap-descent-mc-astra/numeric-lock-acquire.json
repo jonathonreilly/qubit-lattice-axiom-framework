@@ -1,0 +1,11 @@
+{
+  "lock": {
+    "expires_at": "2026-11-17T10:44:11.421871+00:00",
+    "holder_id": "gap-descent-mc-astra-16c93871f",
+    "owner": "gap-descent-mc-astra-16c93871f",
+    "pid": 34987,
+    "purpose": "row 1101 serial SU2 GUIDE Monte Carlo",
+    "started_at": "2026-11-17T07:44:11.421871+00:00"
+  },
+  "status": "acquired"
+}

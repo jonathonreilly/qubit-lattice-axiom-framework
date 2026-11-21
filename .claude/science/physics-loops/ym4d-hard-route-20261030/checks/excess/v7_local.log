@@ -1,0 +1,9 @@
+abelian L 3 white amp 0.03: worst excess T -4.491e+00 max ratio T 0.0135 worst excess I -1.956e+00 ratio I 0.0332
+abelian L 3 smooth amp 0.2: worst excess T -2.189e+00 max ratio T 0.2108 worst excess I -5.576e-01 ratio I 0.4304
+abelian L 5 white amp 0.01: worst excess T -4.897e+00 max ratio T 0.0032 worst excess I -1.945e+00 ratio I 0.0072
+nonabelian L 3 white amp 0.04: worst excess T -1.082e+01 max ratio T 0.0114 worst excess I -4.801e+00 ratio I 0.0257
+nonabelian L 3 white amp 0.02: worst excess T -5.421e+00 max ratio T 0.0114 worst excess I -2.403e+00 ratio I 0.0255
+nonabelian L 3 white amp 0.01: worst excess T -2.712e+00 max ratio T 0.0115 worst excess I -1.202e+00 ratio I 0.0255
+nonabelian L 3 smooth amp 0.2: worst excess T -4.196e+00 max ratio T 0.1745 worst excess I -1.224e+00 ratio I 0.3804
+nonabelian L 3 smooth amp 0.1: worst excess T -2.054e+00 max ratio T 0.1802 worst excess I -5.959e-01 ratio I 0.3895
+nonabelian L 3 smooth amp 0.05: worst excess T -1.021e+00 max ratio T 0.1822 worst excess I -2.986e-01 ratio I 0.3919

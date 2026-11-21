@@ -1,0 +1,54 @@
+{
+  "source_sha256": "25abc72085f2685c52fc62f595a8047a238f99acb89acc7d3acd1a78a9dee569",
+  "purpose": "Matched published beta=2.5 16^4 control; added after inspecting 8^4/12^4 isotropic controls",
+  "jobs": [
+    {
+      "L": 16,
+      "beta": 2.5,
+      "beta_L": 2.5,
+      "beta_T": 2.5,
+      "face": false,
+      "mult": 1,
+      "chain": 0,
+      "hot": false,
+      "burn": 2048,
+      "n": 2048,
+      "stride": 4,
+      "seed": 31010000,
+      "role": "matched_volume_isotropic_control"
+    },
+    {
+      "L": 16,
+      "beta": 2.5,
+      "beta_L": 2.5,
+      "beta_T": 2.5,
+      "face": false,
+      "mult": 1,
+      "chain": 1,
+      "hot": true,
+      "burn": 2048,
+      "n": 2048,
+      "stride": 4,
+      "seed": 31010131,
+      "role": "matched_volume_isotropic_control"
+    }
+  ],
+  "repair_jobs": [
+    {
+      "L": 12,
+      "beta": 2.5,
+      "beta_L": 5.0,
+      "beta_T": 2.5,
+      "face": false,
+      "mult": 2,
+      "chain": 0,
+      "hot": false,
+      "burn": 2048,
+      "n": 2048,
+      "stride": 4,
+      "seed": 11027074,
+      "serial_reproduction": true,
+      "role": "serial_reproduction_after_pause_handoff"
+    }
+  ]
+}

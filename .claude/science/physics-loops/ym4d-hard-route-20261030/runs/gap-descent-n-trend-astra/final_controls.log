@@ -1,0 +1,2 @@
+MEMORY_START_GATE 85 percent free
+{"grade": "controls only", "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]", "platform": "macOS-26.6.2-arm64-arm-64bit", "priority": 20, "threads": {"OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "VECLIB_MAXIMUM_THREADS": "1", "NUMEXPR_NUM_THREADS": "1", "BLIS_NUM_THREADS": "1"}, "threadpools": [], "versions": {"numpy": "2.4.1", "scipy": "1.17.0", "numba": "0.65.1"}, "window_control_delta": 0.0, "peak_RSS_bytes": 1972518912}

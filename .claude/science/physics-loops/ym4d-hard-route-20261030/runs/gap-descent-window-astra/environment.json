@@ -1,0 +1,17 @@
+{
+  "python": "3.12.8",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "numba": "0.65.1"
+  },
+  "threads": 1,
+  "nice": 10,
+  "RSS_cap_bytes": 2000000000,
+  "initial_memory_free_percent": 86,
+  "download_directory": "/tmp/sa-gap-descent-window-astra.PKRugA",
+  "numeric_lock_holder": "gap-descent-window-astra-05298f1c7",
+  "note": "GUIDE computations; no rigorous tail enclosure. The first E200 build was stopped by the RSS guard; successful retry used less memory.",
+  "numeric_lock_released_utc": "2026-11-17 06:05Z"
+}

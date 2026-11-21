@@ -1,0 +1,61 @@
+16:54:13Z start K1_xy_b2.6_L8
+16:54:53Z end K1_xy_b2.6_L8 rc=0
+16:54:53Z start S_xy_b2.4_L8
+16:55:34Z end S_xy_b2.4_L8 rc=0
+16:55:34Z start S_zt90_b2.4_L8
+16:56:15Z end S_zt90_b2.4_L8 rc=0
+16:56:15Z start S_zt45_b2.4_L8
+16:56:57Z end S_zt45_b2.4_L8 rc=0
+16:56:57Z start S_xt90_b2.4_L8
+16:57:38Z end S_xt90_b2.4_L8 rc=0
+16:57:38Z start S_xyyz_b2.4_L8
+16:58:20Z end S_xyyz_b2.4_L8 rc=0
+16:58:20Z start S_xyyzt90_b2.4_L8
+16:59:01Z end S_xyyzt90_b2.4_L8 rc=0
+16:59:01Z start S_int05_b2.4_L8
+17:08:26Z screen killed (interp hang at kappa ~ 0); sampler patched; relaunch as screen2.sh skipping finished runs
+17:08:29Z start S_int05_b2.4_L8
+17:09:12Z end S_int05_b2.4_L8 rc=0
+17:09:12Z start S_xy_b2.4_L12
+17:12:00Z end S_xy_b2.4_L12 rc=0
+17:12:00Z start S_zt90_b2.4_L12
+17:14:48Z end S_zt90_b2.4_L12 rc=0
+17:14:48Z start S_zt45_b2.4_L12
+17:17:41Z end S_zt45_b2.4_L12 rc=0
+17:17:41Z start S_xt90_b2.4_L12
+17:20:41Z end S_xt90_b2.4_L12 rc=0
+17:20:41Z start S_xyyz_b2.4_L12
+17:23:40Z end S_xyyz_b2.4_L12 rc=0
+17:23:40Z start S_xyyzt90_b2.4_L12
+17:26:41Z end S_xyyzt90_b2.4_L12 rc=0
+17:26:41Z start S_int05_b2.4_L12
+17:29:44Z end S_int05_b2.4_L12 rc=0
+17:29:44Z start S_xy_b2.3_L8
+17:30:30Z end S_xy_b2.3_L8 rc=0
+17:30:30Z start S_zt90_b2.3_L8
+17:31:16Z end S_zt90_b2.3_L8 rc=0
+17:31:16Z start S_zt45_b2.3_L8
+17:32:02Z end S_zt45_b2.3_L8 rc=0
+17:32:02Z start S_xt90_b2.3_L8
+17:32:47Z end S_xt90_b2.3_L8 rc=0
+17:32:47Z start S_xyyz_b2.3_L8
+17:33:33Z end S_xyyz_b2.3_L8 rc=0
+17:33:33Z start S_xyyzt90_b2.3_L8
+17:34:19Z end S_xyyzt90_b2.3_L8 rc=0
+17:34:19Z start S_int05_b2.3_L8
+17:35:04Z end S_int05_b2.3_L8 rc=0
+17:35:04Z start S_xy_b2.3_L12
+17:38:18Z end S_xy_b2.3_L12 rc=0
+17:38:18Z start S_zt90_b2.3_L12
+17:41:25Z end S_zt90_b2.3_L12 rc=0
+17:41:25Z start S_zt45_b2.3_L12
+17:44:36Z end S_zt45_b2.3_L12 rc=0
+17:44:36Z start S_xt90_b2.3_L12
+17:47:46Z end S_xt90_b2.3_L12 rc=0
+17:47:46Z start S_xyyz_b2.3_L12
+17:50:52Z end S_xyyz_b2.3_L12 rc=0
+17:50:52Z start S_xyyzt90_b2.3_L12
+17:53:58Z end S_xyyzt90_b2.3_L12 rc=0
+17:53:58Z start S_int05_b2.3_L12
+17:57:05Z end S_int05_b2.3_L12 rc=0
+17:57:05Z BATCH DONE

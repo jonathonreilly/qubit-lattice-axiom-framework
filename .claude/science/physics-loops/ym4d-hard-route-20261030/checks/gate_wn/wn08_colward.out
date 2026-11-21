@@ -1,0 +1,6 @@
+isotropic: K_comp 0.0001540924 vs 0.0001540924; K_vert 0.0003346488 vs 0.0003346488
+trial 0: K_comp_col -0.940963, K_vert_col 0.941452, total 0.0004887412, rel change 2.87e-12
+trial 1: K_comp_col 0.287837, K_vert_col -0.287348, total 0.0004887412, rel change 3.46e-11
+trial 2: K_comp_col 0.568757, K_vert_col -0.568269, total 0.0004887412, rel change 2.15e-11
+trial 3: K_comp_col 1.313853, K_vert_col -1.313365, total 0.0004887412, rel change 1.26e-11
+exit 0

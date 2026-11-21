@@ -1,0 +1,2 @@
+literal {2: np.float64(1.562), 4: np.float64(2.443), 8: np.float64(4.309)} ratios 1.564 1.763
+fan mode L = 16 {'A': 2.959, 'Y/Om': 1.057, 'vertex<0.125': 0.183, 'edges<0.125': 0.572, 'vertex<0.25': 0.462, 'edges<0.25': 0.832, 'vertex<0.5': 0.805, 'edges<0.5': 0.964}

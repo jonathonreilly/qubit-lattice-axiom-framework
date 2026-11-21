@@ -1,0 +1,68 @@
+{
+  "tag": "gh_L192_b2.5_k4_c1",
+  "model": "gh",
+  "L": 192,
+  "T": 4,
+  "beta": 2.5,
+  "coupling": 10.0,
+  "seed": 11145315,
+  "hot": 1,
+  "burn": 1024,
+  "samples": 2048,
+  "stride": 1,
+  "started": "2026-11-17T13:12:08.996311+00:00",
+  "argv": [
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+    "gh",
+    "192",
+    "4",
+    "2.5",
+    "10.0",
+    "11145315",
+    "1",
+    "1024",
+    "2048",
+    "1",
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1"
+  ],
+  "memory_free_pct": 86,
+  "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+  "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+  "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+  "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+  "predecessor_reaped": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "pid": 76682,
+  "exit_code": 0,
+  "ended": "2026-11-17T13:13:33.944611+00:00",
+  "seconds": 84.94835145799152,
+  "reaped": true,
+  "records": [
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.f32",
+      "bytes": 15728640,
+      "sha256": "ff484f0d82bb570f838dfb38d5eed57cfc59fec335d53e1e435cf1e639f39e08"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.csv",
+      "bytes": 120377,
+      "sha256": "76f2b777d87a9d738696c56c830e2db006a99d3b42040b49ff9caa61cdcfeb34"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.therm.csv",
+      "bytes": 2029,
+      "sha256": "ece9f1bb2b71a3cab52c42cc539dcc8b196e29afc591a9451744a648e69b3fe1"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.cfg",
+      "bytes": 4718592,
+      "sha256": "8f969d7234b6d302f02bed041928a0730d12272f6ee0e0d26242234402375ea3"
+    }
+  ]
+}

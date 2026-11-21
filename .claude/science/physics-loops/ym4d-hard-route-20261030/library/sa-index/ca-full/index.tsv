@@ -1,0 +1,1648 @@
+file	line	kind	label	status	title
+ca_I.tex	559	lemma	1.1:lem-invariance	PROVED	Gauge transformations, lattice isometries, the hypercubic group and reflections; invariance of the Wilson measure
+ca_I.tex	1258	lemma	2.3:lem-choice-shapes	PROVED	Choice by shapes: in a table of admissible shape the letters can be chosen one after another; adjoining a block
+ca_I.tex	1818	lemma	2.4:lem-stage-zero-data	PROVED	Stage-0 data exist; the lower bounds on $L$ are finitely many and read Stage-0 numbers only; the constant $L_0(N)$
+ca_I.tex	1958	lemma	2.4:lem-no-cycle	PROVED	The order of choice has no cycle and is one-sided (no caps)
+ca_I.tex	2239	proposition	2.4:prop-m-freeness	INCOMPLETE	$M$-freeness of the random-walk constants. Stated; proof incomplete at the step marked $(\ast)$ in Chapter~\ref{ch:5}
+ca_I.tex	2271	proposition	2.4:prop-order-consistent	PROVED	The conditions of Theorem~0 can be met
+ca_I.tex	3249	corollary	3.6:cor-short-distance-uniqueness	PROVED	Short-distance uniqueness of the infinite-volume theory at given renormalised coupling
+ca_I.tex	3533	theorem	4.1:thm-clause-zero	PROVED	Clause (0) of Theorem~0: the coupling flow
+ca_I.tex	3636	lemma	4.2:lem-first-passage	PROVED	First-passage arithmetic
+ca_I.tex	3901	lemma	4.2:lem-one-loop	CITED	{the one-loop coefficient and the finite part of the one-loop law; \cite[(1.22), Theorem~3]{B-CMP109}, \cite[(2.41)]{B-CMP116}}
+ca_I.tex	4031	lemma	4.2:lem-unmarked	INCOMPLETE	Bounds on the unmarked part of the increment. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	4136	theorem	4.3:thm-small-field-step	CITED	Ba{\l}aban's one-step small-field renormalization theorem, cited by statement, in the family form in which this book uses it; {\cite[Theorem~3]{B-CMP109}}
+ca_I.tex	4209	theorem	4.3:thm-uv-stability	CITED	Ba{\l}aban's ultraviolet stability theorem {\cite[Theorem~1]{B-CMP122b}}
+ca_I.tex	4908	lemma		PROVED	
+ca_I.tex	5218	lemma	4.4:lem-vertex-formula	PROVED	The vertex formula for interpolated functionals
+ca_I.tex	5910	lemma	4.4:lem-form-coercivity	PROVED	Coercivity of the form on the polydisc
+ca_I.tex	6219	lemma	4.4:lem-cell-resolvent	PROVED	Cell-resolvent expansion of the compressed resolvents
+ca_I.tex	6646	lemma	4.4:lem-cell-coercivity	PROVED	Near-part coercivity on one cell
+ca_I.tex	6959	lemma	4.4:lem-local-coercivity	PROVED	Coercivity of the localised quadratic form
+ca_I.tex	7162	corollary	4.4:cor-localised-covariance	PROVED	The localised covariance inverts the localised form
+ca_I.tex	7827	corollary	4.4:cor-polymer-base-form	PROVED	The symmetric base form on a polymer
+ca_I.tex	8110	proposition	4.4:prop-local-real-base	OUTSTANDING	The local real base of a polymer. Proof outstanding
+ca_I.tex	8912	proposition	4.4:prop-rule-properties	PROVED	Properties of the walk-expansion rule
+ca_I.tex	9355	theorem	4.4:thm-uniform-agreement	PROVED	Locality of the rule and agreement on uniform regions
+ca_I.tex	9476	lemma	4.4:lem-interior-sufficiency	PROVED	Interior sufficiency of the whole-lattice setting
+ca_I.tex	9615	corollary	4.4:cor-localised-independence	PROVED	Independence of the localised terms from the small-field region
+ca_I.tex	9794	corollary	4.4:cor-potential-agreement	PROVED	Agreement of the localised potentials inside the small-field region
+ca_I.tex	10224	lemma	4.4:lem-radii-ratio	PROVED	Ratio of radii along the coupling flow
+ca_I.tex	10350	lemma	4.4:lem-current-remainder	PROVED	The quadratic remainder in the current and its Lipschitz bound
+ca_I.tex	10504	lemma	4.4:lem-twist-stability	PROVED	Stability of the layered spaces under the twist
+ca_I.tex	11137	proposition	4.4:prop-equivariant-retraction	CITED	An equivariant smooth retraction onto the gauge group; classical, cited by statement
+ca_I.tex	11531	corollary	4.4:cor-gluing-cubes	PROVED	Gluing on cubes covered by sub-cubes of fixed side
+ca_I.tex	12103	lemma	4.4:lem-collar-avoidance	PROVED	The new small-field region avoids old large-field collars
+ca_I.tex	12277	corollary	4.4:cor-interior-cluster-terms	PROVED	Interior cluster-expansion terms are unchanged by conditioning
+ca_I.tex	12358	corollary	4.4:cor-interior-large-field	PROVED	Interior large-field terms of the $s$-expectation are unchanged by conditioning
+ca_I.tex	12428	corollary	4.4:cor-covariance-local-pieces	PROVED	Local pieces of the conditioned covariance, its root and resolvents
+ca_I.tex	13402	lemma	4.5:lem-kernel-algebra	PROVED	Algebra of exponentially decaying kernels
+ca_I.tex	13680	lemma	4.5:lem-free-current-operators	PROVED	The operators with the current as a free variable
+ca_I.tex	13980	lemma	4.5:lem-nonlinear-correction	PROVED	The nonlinear correction to the linearising map at free current
+ca_I.tex	14083	lemma	4.5:lem-curvature-remainder	PROVED	Locality and size of the curvature remainder in the current
+ca_I.tex	14266	lemma	4.5:lem-gradient-bound	PROVED	Quadratic bound on the gradient of the higher-order functional
+ca_I.tex	14496	theorem	4.5:thm-chart-existence	PROVED	Existence, uniqueness and analyticity of the response chart
+ca_I.tex	14711	lemma	4.5:prf-chart-linear-bounds	PRINTED	Linear bounds on the background potential and the current correction
+ca_I.tex	14803	lemma	4.5:prf-chart-variation-decay	PROVED	First variation of the chart and its exponential decay
+ca_I.tex	14992	lemma	4.5:prf-chart-covariance	PROVED	Gauge covariance and reality of the chart on the orbit class
+ca_I.tex	15105	lemma	4.5:prf-chart-constants	PROVED	Uniformity of the chart constants
+ca_I.tex	15165	lemma	4.5:prf-complex-lipschitz	PROVED	Lipschitz dependence on the background in complex directions
+ca_I.tex	15265	proposition	4.5:prf-chart-walk-localisation	PROVED	Walk expansions of the chart and localisation in the decoupling parameters
+ca_I.tex	15469	lemma	4.5:lem-ward-identities	PROVED	Ward identities under nonlinear gauge variations
+ca_I.tex	15544	lemma	4.5:lem-true-pair-reduction	PROVED	Reduction to Ba{\l}aban's operators at a true pair
+ca_I.tex	15669	proposition	4.5:prf-diagonal-exactness	PROVED	Exactness of the chart on the diagonal
+ca_I.tex	16019	lemma	4.5:lem-uniform-increment	INCOMPLETE	Reproduction of condition (iv) under a twist with a depth-free constant. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	16992	proposition	4.5:prop-glued-window	PROVED	The glued window background lies in the orbit class
+ca_I.tex	17519	lemma	4.5:lem-literal-frame	PROVED	The literal frame: axial data, frame maps and base-one response
+ca_I.tex	17828	lemma	4.5:prf-base-change	PROVED	Change of base by the identity theorem
+ca_I.tex	18477	lemma	4.5:lem-fine-axial-frame	PROVED	The fine axial frame and its bounds from fine curvature alone
+ca_I.tex	19267	lemma	4.5:lem-window-minimiser	PROVED	The window chart reproduces the whole-lattice minimiser
+ca_I.tex	19578	theorem	4.5:thm-operator-bounds	PROVED	Operator bounds at free current
+ca_I.tex	20757	lemma	4.6:lem-polymer-gas	PROVED	The polymer-gas representation of the bracket
+ca_I.tex	21544	lemma	4.6:lem-tree-cubes	PROVED	Cubes met by a tree graph
+ca_I.tex	21643	lemma	4.6:lem-serpentine-path	PROVED	A serpentine path through a box of cubes
+ca_I.tex	21689	lemma	4.6:lem-connected-families	PROVED	Touch-connected families of cubes through a cube
+ca_I.tex	21733	lemma	4.6:lem-anchored-domains	PROVED	Anchored interaction domains and their weighted sum
+ca_I.tex	21849	lemma	4.6:lem-polymer-count	PROVED	Polymers whose core contains a given cube
+ca_I.tex	21957	lemma	4.6:lem-exponential-formula	PROVED	The exponential formula for compatible families
+ca_I.tex	22069	lemma	4.6:lem-spanning-tree-bound	PROVED	The connected coefficient is bounded by spanning trees
+ca_I.tex	22172	lemma	4.6:lem-rooted-tree-majorant	PROVED	The rooted-tree majorant under a summability condition
+ca_I.tex	22397	lemma	4.6:prf-activity-summation	PROVED	The activity bound: splitting the decay and summation
+ca_I.tex	22645	proposition	4.6:prop-logarithm-convergence	PROVED	Convergence and tree decay of the logarithm
+ca_I.tex	22860	proposition	4.6:prop-large-field-bound	PROVED	Representation and bound of the large-field terms
+ca_I.tex	24239	lemma	4.6:lem-averaging-locality	CITED	Block-locality of the averaging operations; {\cite[(58)--(63), (77)--(81), (88)--(92), (124)--(125); p.~26, p.~31]{B-CMP98}}
+ca_I.tex	24753	lemma	4.6:lem-membership-tests	PROVED	Membership and level tests at radius zero
+ca_I.tex	24847	lemma	4.6:lem-sequence-reach	PROVED	The local sequence reads only the triple enlargement
+ca_I.tex	24932	lemma	4.6:lem-matrix-algebra	PROVED	Inverses and constrained-inversion blocks of equal matrices
+ca_I.tex	25017	proposition	4.6:prop-generator-equality	PROVED	Equal local sequences give equal generators
+ca_I.tex	25367	lemma	4.6:lem-commutator-identity	PROVED	The commutator identity with the local projection
+ca_I.tex	25572	corollary	4.6:cor-two-substitutions	PROVED	Completeness of the two substitutions in the commutator identity
+ca_I.tex	25733	lemma	4.6:lem-inner-seam	PROVED	Level agreement near an inner seam
+ca_I.tex	25913	lemma	4.6:lem-seam-double-count	PROVED	rescaled profiles double-count at every seam
+ca_I.tex	26354	lemma	4.6:lem-inserted-shell	PROVED	The bump of an inserted cube on its outer shell
+ca_I.tex	26494	proposition	4.6:prop-gluing-example	PROVED	An example of an admissible gluing rule
+ca_I.tex	26698	lemma	4.6:lem-gluing-window	PROVED	Gluing rules read the nest within two top blocks
+ca_I.tex	26787	lemma	4.6:lem-reading-table	PROVED	The reading table of the primitives
+ca_I.tex	27033	lemma	4.6:lem-word-locality	PROVED	Locality of letters implies locality of words
+ca_I.tex	27231	lemma	4.6:lem-closure-local	PROVED	The closure of the local primitives is local
+ca_I.tex	27321	lemma	4.6:lem-formal-expansions	PROVED	The formal expansions contain only local letters
+ca_I.tex	27704	lemma	4.6:lem-anchor-constituents	PROVED	Anchors and inserted cubes as constituents of words
+ca_I.tex	27833	lemma	4.6:lem-surgery-surcharge	PROVED	The reading surcharge of the surgeries
+ca_I.tex	28015	theorem	4.6:thm-expansion-locality	PROVED	Locality of the background-field random-walk expansions
+ca_I.tex	28317	corollary	4.6:cor-operator-words	PROVED	Locality inherited by words in the expanded operators
+ca_I.tex	28410	proposition	4.6:prop-radius-zero-counterexample	PROVED	A counterexample at reading radius zero: equal traces, different admissible words
+ca_I.tex	28570	corollary	4.6:cor-common-region-cancel	PROVED	Cancellation of words localized in the common region
+ca_I.tex	28763	lemma	4.6:lem-window-placement	PROVED	Placement of the enlarged reading window under the scale floor
+ca_I.tex	29688	lemma	4.7:lem-radii-comparison	PROVED	Comparability of radii across a level gap
+ca_I.tex	29828	lemma	4.7:lem-total-field	PROVED	Size of the total field across a level gap
+ca_I.tex	30044	lemma	4.7:eq-small-factor-1	PROVED	Bounds on the small factor
+ca_I.tex	30329	lemma	4.7:lem-potential-splitting	PROVED	Linear splitting of the potentials by family
+ca_I.tex	30408	lemma	4.7:prf-linearity-degree	PROVED	Linearity and degree one in the sup constant
+ca_I.tex	30622	lemma	4.7:prf-unit-share	PROVED	The share of a family of unit sup
+ca_I.tex	30757	lemma	4.7:prf-lemma-four-gaps	PROVED	Ba{\l}aban's Lemma~4 at every level gap
+ca_I.tex	31163	lemma	4.7:prf-fifth-order	PROVED	The fifth-order remainder and the small factor
+ca_I.tex	31304	lemma	4.7:prf-fundamental-share	PROVED	Fundamental-case share and counterterm leftovers
+ca_I.tex	31437	lemma	4.7:prf-simple-share	PROVED	Simple-case share and restriction to an old level
+ca_I.tex	31677	lemma	4.7:prf-level-summation	PROVED	Summation over old levels and the remainder share
+ca_I.tex	32000	corollary	4.7:cor-kernel-power-bound	PROVED	Power bound for large-field-descended kernels at every level
+ca_I.tex	32226	proposition	4.7:prop-beta-extraction	PROVED	The large-field part of the beta coefficient by Cauchy extraction
+ca_I.tex	32412	proposition	4.7:prop-coupling-increment	PROVED	The large-field part of the coupling increment
+ca_I.tex	33240	lemma	4.8:lem-class-properties	PROVED	Elementary properties of the one-power class
+ca_I.tex	33276	theorem	4.8:thm-restriction-units	PROVED	Restriction across levels as a change of units
+ca_I.tex	33399	corollary	4.8:cor-inclusion-sentences	PROVED	The inclusion sentences on the one-power class
+ca_I.tex	33602	lemma	4.8:prf-near-case-labels	PROVED	Near case: the tower clause at every label
+ca_I.tex	33839	proposition	4.8:prop-far-case	PROVED	Far case: small perturbations stay in the class
+ca_I.tex	34058	proposition	4.8:prop-small-pairs	PROVED	Small pairs and true backgrounds lie in the class
+ca_I.tex	34241	proposition	4.8:prop-class-reproduction	PROVED	Reproduction of the one-power class under one step
+ca_I.tex	34429	lemma	4.8:lem-top-layer-bound	PROVED	The perturbation bound on the top layer
+ca_I.tex	34548	lemma	4.8:lem-layerwise-bound	PROVED	the layerwise perturbation bound for straddling sources
+ca_I.tex	35144	theorem	4.9:thm-minimal-orbit	CITED	Ba{\l}aban's minimal-orbit theorem with cube gauge {\cite[Theorem~1, (7)--(9), p.~279]{B-CMP102b}}
+ca_I.tex	35201	proposition	4.9:prop-cube-gauge-regular	CITED	Ba{\l}aban's cube gauge for regular fields {\cite[Proposition~6, (1.135)--(1.136)]{B-CMP99a}}
+ca_I.tex	35448	lemma	4.9:lem-restriction-monotone	PROVED	Restriction and monotonicity of the condition
+ca_I.tex	35500	lemma	4.9:lem-level-change	PROVED	Change of level lowers the radius
+ca_I.tex	35541	lemma	4.9:lem-gauge-invariance	PROVED	Invariance under group-valued gauge maps
+ca_I.tex	35578	lemma	4.9:lem-identity-field	PROVED	The identity field satisfies the condition
+ca_I.tex	35602	lemma	4.9:lem-holonomy-bound	PROVED	Holonomy bound from the cube gauge
+ca_I.tex	35654	corollary	4.9:cor-gluing-smaller-cubes	PROVED	Passage to smaller cubes by gluing
+ca_I.tex	35753	lemma	4.9:lem-cube-prolongation	PROVED	Prolonging a cube within partition cubes
+ca_I.tex	35842	lemma	4.9:lem-unitary-moves	PROVED	Four moves of the unitary factor
+ca_I.tex	36076	proposition	4.9:prop-gauge-transport	PROVED	The step transports the gauge condition
+ca_I.tex	36382	lemma	4.9:lem-seed-cube-gauge	PROVED	Cube gauge from regularity on a collar
+ca_I.tex	36501	proposition	4.9:prop-real-backgrounds	PROVED	Real backgrounds satisfy the ambient gauge condition
+ca_I.tex	36806	corollary	4.9:cor-printed-pairs	PROVED	Gauge condition for the printed pairs
+ca_I.tex	36944	lemma	4.9:lem-flat-ring	PROVED	A flat field winding around a hole
+ca_I.tex	37111	proposition	4.9:prop-ambient-condition	PROVED	Ambient versus inner cube gauge conditions
+ca_I.tex	37400	corollary	4.9:cor-single-gauge-domain	PROVED	A single gauge on small localisation domains
+ca_I.tex	37567	proposition	4.9:prop-large-field-cubes	PROVED	Cube conditions inside the large-field spaces
+ca_I.tex	37902	lemma	4.9:lem-thin-cube-gradient	PROVED	One step reproduces the thin-cube gradient bound
+ca_I.tex	38430	lemma	4.10:lem-averaged-data	PROVED	Holomorphy of the averaged data along a tower
+ca_I.tex	38859	lemma	4.10:lem-principal-logarithm	PROVED	The principal logarithm of a matrix
+ca_I.tex	38997	lemma	4.10:lem-data-parametrisation	PROVED	Local holomorphic parametrisation of data by potentials
+ca_I.tex	39087	proposition	4.10:prop-continuation-open	PROVED	The continuation is holomorphic on an open domain
+ca_I.tex	39170	theorem	4.10:thm-existence-set	PROVED	Openness of the existence set and holomorphy
+ca_I.tex	39280	corollary	4.10:cor-representative-analyticity	PROVED	Analyticity at complex one-power representatives
+ca_I.tex	39495	corollary	4.10:cor-orbit-extension	PROVED	The gauge-orbit extension of the continuation
+ca_I.tex	39732	lemma	4.10:lem-nongauge-openness	PROVED	Openness of the non-gauge regularity clauses
+ca_I.tex	39767	lemma	4.10:lem-gauge-openness	PROVED	Openness of the gauge condition below $\pi$
+ca_I.tex	39874	proposition	4.10:prop-gauge-openness-large	OUTSTANDING	Openness of the gauge condition beyond $\pi$. Proof outstanding
+ca_I.tex	39933	proposition	4.10:prop-tower-clause-open	PROVED	Openness of the tower clause near representatives
+ca_I.tex	40037	lemma	4.10:lem-triple-pair-map	PROVED	Openness of the triple-to-pair map
+ca_I.tex	40089	corollary	4.10:cor-class-openness	PROVED	Openness of the one-power class and its gauge saturation
+ca_I.tex	40862	proposition	4.11:prop-straddling-clause	INCOMPLETE	The constrained-minimiser clause at straddling sources. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	40893	lemma	4.11:lem-radii-comparable	PROVED	Comparability of the radii along the coupling flow
+ca_I.tex	40960	corollary	4.11:cor-level-transfer	PROVED	The level-transfer inequality for schedule factors
+ca_I.tex	41020	lemma	4.11:lem-real-points	PROVED	Real points: augmented and plain classes agree
+ca_I.tex	41107	lemma	4.11:lem-cauchy-families	PROVED	Cauchy families over a fixed $G$-valued factor
+ca_I.tex	41183	lemma	4.11:lem-transfer	PROVED	The transfer lemma: the $G$-valued factor on the real slice
+ca_I.tex	41266	lemma	4.11:lem-twist-heredity	PROVED	Heredity of the clause under the twist
+ca_I.tex	41411	lemma	4.11:lem-restriction-heredity	PROVED	Restriction of the clause across levels and widths
+ca_I.tex	41501	proposition	4.11:prop-natural-witness	PROVED	The natural witness of the substituted pair
+ca_I.tex	41650	lemma	4.11:lem-curvature-member	PROVED	The target's curvature bound read from the source clause
+ca_I.tex	41729	proposition	4.11:prop-substitution-heredity	PROVED	Heredity of the clause under substitution
+ca_I.tex	41816	lemma	4.11:lem-idempotence	PROVED	Idempotence of the constrained minimiser at equal index
+ca_I.tex	41976	lemma	4.11:lem-composite-heredity	PROVED	Heredity of the clause under large-field composites
+ca_I.tex	42068	theorem	4.11:thm-clause-reproduction	PROVED	Reproduction of the $G$-valued-factor clause by the step
+ca_I.tex	42198	proposition	4.11:prop-one-layer-clause	PROVED	The clause up to a constant factor inside one layer
+ca_I.tex	42354	proposition	4.11:prop-perturbative-clause	INCOMPLETE	The clause with a perturbative correction. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	43690	lemma	4.12:lem-monotone-paths	PROVED	Holonomies along two monotone paths
+ca_I.tex	43787	lemma	4.12:lem-axial-gauge	PROVED	The axial gauge of a box
+ca_I.tex	43867	lemma	4.12:lem-perturbed-plaquettes	PROVED	Plaquettes of a left-perturbed configuration
+ca_I.tex	43997	lemma	4.12:lem-minimiser-covariance	PROVED	Gauge covariance of the constrained minimiser
+ca_I.tex	44067	lemma	4.12:lem-gain-arithmetic	PROVED	An arithmetic bound on the gain factors
+ca_I.tex	44127	proposition	4.12:prop-reblocking-inside	INCOMPLETE	The re-blocking step inside admissible boxes. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	44320	lemma	4.12:prf-above-slot-level	PROVED	Points at or above the slot level
+ca_I.tex	44423	lemma	4.12:prf-below-slot-level	PROVED	Points below the slot level: direct expansion
+ca_I.tex	44756	lemma	4.12:prf-uniform-constants	PROVED	Conclusion and uniformity of the constants
+ca_I.tex	44803	corollary	4.12:cor-real-factor-slots	INCOMPLETE	Real-factor slot bounds inside admissible boxes
+ca_I.tex	45085	proposition	4.12:prop-reblocking-outside	OUTSTANDING	The re-blocking step outside admissible boxes. Proof outstanding
+ca_I.tex	45162	lemma	4.13:lem-minimizer-unique	OUTSTANDING	{Uniqueness and locality of the constrained minimizer, completing Ba{\l}aban's Lemma~4 of \cite{B-CMP109}. Proof outstanding}
+ca_I.tex	45203	lemma	4.13:lem-own-constant	OUTSTANDING	The gauge condition at the small pairs' and real-background pairs' own curvature constant, reproduced by one step. Proof outstanding
+ca_I.tex	45557	proposition	4.14:prop-prepared-data-admissible	PRINTED	Admissibility of the prepared large-field data; printed without proof in {\cite[pp.~178--179]{B-CMP122a}}
+ca_I.tex	46035	theorem	4.14:thm-operator-theorem	PROVED	The operator theorem at free current
+ca_I.tex	46173	lemma	4.14:lem-reading-hulls	PROVED	Reading hulls of second-cover boxes
+ca_I.tex	46511	lemma	4.14:lem-symmetry-covariance	PROVED	Symmetric cell weights and lattice-symmetry covariance
+ca_I.tex	46800	lemma	4.14:lem-local-balls	PROVED	Local balls at cut-off radius $M/2L$
+ca_I.tex	46952	lemma	4.14:lem-unit-lattice-operators	PROVED	Unit-lattice operators at complex configurations
+ca_I.tex	47253	lemma	4.14:prf-form-walk-expansion	PRINTED	Walk expansion of the form and base-point bound
+ca_I.tex	47686	lemma	4.14:prf-positivity-inversion	PROVED	Positivity, sector bound and inversion of the block
+ca_I.tex	47895	lemma	4.14:prf-block-identities	PROVED	Block identities, resummed expansions and uniformity
+ca_I.tex	48263	lemma	4.14:lem-small-boxes	PROVED	Small boxes in unions of grid cubes
+ca_I.tex	48337	lemma	4.14:lem-hull-cube	PROVED	The hull of a second-cover box in one cube
+ca_I.tex	48479	lemma	4.14:lem-gauge-family	PROVED	The printed gauge family of the hull's cube
+ca_I.tex	48867	lemma	4.14:lem-integer-power-bound	PROVED	The auxiliary integer's power against the block count
+ca_I.tex	48993	lemma	4.14:lem-top-power-bound	PROVED	The top power against every lower level
+ca_I.tex	49120	corollary	4.14:cor-hull-gauge-value	PROVED	The gauge constants on a hull
+ca_I.tex	49236	proposition	4.14:prop-second-gauge-clause	PROVED	The second gauge clause on admissible nests
+ca_I.tex	49949	lemma	4.15:lem-subdivision-independence	PROVED	Components do not depend on the subdivision
+ca_I.tex	50618	lemma	4.15:lem-cube-sizes-monotone	PROVED	The cube sizes do not increase
+ca_I.tex	50680	lemma	4.15:lem-component-properties	PROVED	Elementary properties of components
+ca_I.tex	50778	lemma	4.15:lem-enlargement-connected	PROVED	Enlargement and hull preserve connectedness
+ca_I.tex	50859	lemma	4.15:lem-replacement-maps	PROVED	Boxing and components under replacement maps
+ca_I.tex	50988	proposition	4.15:prop-one-step-components	PROVED	Components of the large-field region after one step
+ca_I.tex	51129	proposition	4.15:prop-pure-histories	PROVED	Creation cubes along histories without large-field actions
+ca_I.tex	51178	lemma	4.15:lem-waiting-rule	PROVED	The waiting rule
+ca_I.tex	51242	lemma	4.15:lem-action-level	PROVED	Large-field actions occur only above the cube size
+ca_I.tex	51364	corollary	4.15:cor-first-action	PROVED	No action at or below the cube size; the first action
+ca_I.tex	51845	proposition	4.15:prop-creation-cube	PROVED	Every top large-field component contains a creation cube
+ca_I.tex	52670	proposition	4.16:prop-lowest-level-regularity	PROVED	Lowest-level regularity of the initial data
+ca_I.tex	52880	lemma	4.16:prf-cube-fitting	PROVED	Fitting a class cube into one box
+ca_I.tex	53021	lemma	4.16:prf-boundary-factors	PROVED	Boundary factors in the weighted bounds
+ca_I.tex	53445	theorem	4.17:thm-transfer-seam	CITED	The transfer at the seam: Ba{\l}aban's one-step lemmas re-obtained at step $k+1$ on the layered cover of \cite{B-CMP119}
+ca_I.tex	53550	lemma	4.17:lem-seam	PROVED	The seam lemma for the one family of cells at all traces
+ca_I.tex	54495	proposition	4.18:prop-profile-independence	PROVED	Independence of the stage integrals from the choice of profiles
+ca_I.tex	54619	corollary		PROVED	The stage integrals of the family are those of its companion
+ca_I.tex	54687	lemma	4.18:lem-weight-difference	PROVED	Support and size of the weight-difference term
+ca_I.tex	54985	theorem	4.18:thm-preparatory-boundary	PROVED	Bounds on the boundary terms of the preparatory integrations
+ca_I.tex	55477	lemma	4.18:lem-older-window	PROVED	The window length of an older step against the current cell parameter
+ca_I.tex	55608	lemma	4.18:lem-graded-count	PROVED	The graded count of older members made of $M$-cubes
+ca_I.tex	55796	proposition	4.18:prop-graded-excess	PROVED	The graded excess bound in the large-field estimates
+ca_I.tex	56123	theorem	4.18:thm-action-domain	PROVED	The domain of the plaquette-action excess in the large-field bounds
+ca_I.tex	56342	lemma	4.19:lem-flow-bounds	PROVED	Two-sided flow bounds from per-step bounds
+ca_I.tex	56419	proposition	4.19:prop-clause-zero	PROVED	Clause (0) concluded
+ca_I.tex	56530	proposition	4.19:prop-containment	PROVED	Containment: Ba{\l}aban's one coupling hypothesis holds along the flow
+ca_I.tex	56568	corollary	4.19:cor-windows	PROVED	Coupling windows at fixed depth and subsequential limit couplings
+ca_I.tex	57162	lemma	4.38:lem-round-up-touch	PROVED	Rounding up to coarser cubes, then touching
+ca_I.tex	57552	lemma	4.38:lem-tree-lengths	PROVED	Tree lengths on the torus equal lifted tree lengths
+ca_I.tex	57669	lemma	4.38:lem-growth-factorise	PROVED	Growth recursions factorise over non-touching components
+ca_I.tex	57779	lemma	4.38:lem-coupling-profile	PROVED	Properties of the coupling profile
+ca_I.tex	58047	lemma	4.38:lem-profile-telescopes	PROVED	The choice of coupling profile moves no total
+ca_I.tex	58187	theorem	4.38:thm-torus-independence	PROVED	Torus-independence of the localized terms
+ca_I.tex	58416	lemma	4.38:prf-proof-non-wrapping	PROVED	Torus-independence of the non-wrapping localized terms
+ca_I.tex	58732	lemma	4.38:prf-polarisation-limit	PROVED	Infinite-volume limit of the polarisation tensor
+ca_I.tex	58990	lemma	4.38:prf-increment-site-free	PROVED	The coupling increment does not depend on the site
+ca_I.tex	59088	lemma	4.38:prf-label-inherited	PROVED	Label-independence: inherited terms and the nesting chain
+ca_I.tex	59320	lemma	4.38:prf-label-remainder	PROVED	Label-independence: the remainder series and its catalogues
+ca_I.tex	59617	lemma	4.38:lem-range-empty-trace	PROVED	The second-group range is the set of empty trace
+ca_I.tex	59793	lemma	4.38:prf-label-activities	PROVED	Label-independence: activities read on the one-cell enlargement
+ca_I.tex	60103	lemma	4.38:prf-label-boundary	PROVED	Label-independence: boundary terms and large-field operations
+ca_I.tex	60672	corollary	4.38:cor-volume-families	PROVED	Volume-consistent families are propagated by the step
+ca_I.tex	60810	corollary	4.38:cor-step-count	PROVED	The number of steps does not depend on the torus
+ca_I.tex	61095	theorem	4.20:thm-representation	PROVED	The inductive representation of the effective densities (clause (i-a)), with the bounds for boundary terms beside live regions and the constants clause
+ca_I.tex	61212	proposition	4.21:prop-relative-machine	PROVED	The relative small-field machine: after each step every stored boundary-type term carries a label domain and a finite set of live pockets, with the format conditions on support, bound, scaffold-reading and anchoring
+ca_I.tex	61352	proposition	4.21:prop-label-volume-sums	PROVED	Volume sums on labels and the life of wrapped terms
+ca_I.tex	61579	corollary	4.21:cor-stored-term-bound	PROVED	Stored boundary terms in Ba{\l}aban's relative length
+ca_I.tex	62007	proposition	4.21:prop-majorant-structure	PROVED	Every step reads a stored term through one supremum
+ca_I.tex	62245	proposition	4.21:prop-link-containment	PROVED	The link map stays in the stored domain
+ca_I.tex	62519	proposition	4.21:prop-base-point-profile	PROVED	Base-point profile of the carried gauge map
+ca_I.tex	62856	corollary	4.21:cor-radius-loss	PROVED	Radius loss at one reading of the response
+ca_I.tex	62999	lemma	4.21:lem-tree-length-facts	PROVED	Elementary facts on tree lengths and packings
+ca_I.tex	63128	lemma	4.21:lem-orbit-transfer	PROVED	Transfer of orbit data through the decoupling expansion
+ca_I.tex	63275	lemma	4.21:lem-skeleton	PROVED	Relative tree length as the length of a skeleton
+ca_I.tex	63971	lemma	4.21:lem-cell-block-sums	PROVED	Sums over cells and blocks against the scaled distance
+ca_I.tex	64572	lemma	4.21:lem-base-below-level	PROVED	Base levels never exceed current levels
+ca_I.tex	65063	lemma	4.21:lem-probe-live-region	PROVED	What a probe meeting a live second-class region meets
+ca_I.tex	65146	lemma	4.21:lem-window-probe	PROVED	What a window probe meets
+ca_I.tex	65220	lemma	4.21:lem-terms-cease	CITED	Stored terms cease at a completed large-field operation; {\cite[p.~369, p.~377]{B-CMP122b}}
+ca_I.tex	65289	lemma	4.21:lem-format-class	PROVED	The format class and its confined and top old terms
+ca_I.tex	65787	lemma	4.21:lem-grain-block-sum	PROVED	The blocks around one grain member sum to a constant
+ca_I.tex	66226	lemma	4.21:lem-per-cube-bounds	PROVED	Per-cube bounds for the format class
+ca_I.tex	66541	corollary	4.21:cor-per-cube-constant	PROVED	The per-cube constant of the format class
+ca_I.tex	66635	lemma	4.21:lem-window-bounds	PROVED	Bounds at a window point and a window block
+ca_I.tex	66935	lemma	4.21:lem-fine-incidences	PROVED	Fine incidences pass through grain-fine cubes
+ca_I.tex	67080	lemma	4.21:lem-fine-count	PROVED	Fine incidences at window blocks counted once
+ca_I.tex	67496	lemma	4.21:lem-old-block-depth	PROVED	No finer terms at an old block, and its depth
+ca_I.tex	67655	lemma	4.21:lem-old-block-total	PROVED	The total weight at an old block
+ca_I.tex	68486	corollary	4.21:cor-near-group-weight	PROVED	Near-group block weight under the inherited-datum hypothesis
+ca_I.tex	68563	lemma	4.21:lem-block-raise	PROVED	The raise read by a block
+ca_I.tex	68697	lemma	4.21:lem-datum-depth-shares	PROVED	Depth-paid shares of the inherited datum
+ca_I.tex	69232	lemma	4.21:lem-position-sums	PROVED	Position-weighted sums over blocks and rim cubes
+ca_I.tex	69342	lemma	4.21:lem-near-group-sum	PROVED	The near groups' sum over blocks
+ca_I.tex	69594	proposition	4.21:prop-group-totals	PROVED	The group totals in sum form
+ca_I.tex	69816	lemma	4.21:prf-one-anchor-sums	PROVED	Sums at one anchor and the first total
+ca_I.tex	70537	lemma	4.21:lem-machine-differences	PROVED	Differences of two machines on one scaffold
+ca_I.tex	70615	proposition	4.21:prop-small-coupling	PROVED	The coupling conditions hold at small coupling
+ca_I.tex	70911	theorem	4.21:thm-format-invariance	PROVED	Invariance of the relative small-field format
+ca_I.tex	71177	lemma	4.21:lem-cover-overlap	PROVED	Bounded overlap of the block cover
+ca_I.tex	71529	lemma	4.21:lem-source-anchored-sums	PROVED	Summation over source-anchored families
+ca_I.tex	71813	corollary	4.21:cor-localisation-length	PROVED	The relative length in Ba{\l}aban's localisation passage
+ca_I.tex	71994	lemma	4.21:lem-probe-mass	PROVED	The mass read at one probe
+ca_I.tex	72373	lemma	4.21:lem-exempted-set	PROVED	Decoupled operators are blind to the exempted set
+ca_I.tex	72900	lemma	4.21:lem-first-stage-expansion	PROVED	The sourced first-stage expansion at one link
+ca_I.tex	72988	lemma	4.21:lem-wrapped-holomorphy	PROVED	Holomorphy of wrapped terms at every link
+ca_I.tex	73826	theorem	4.21:thm-format-propagation	PROVED	Propagation of the complex relative format from step to step
+ca_I.tex	73914	lemma	4.21:lem-wrapped-cube-bound	PROVED	Per-cube bound on stored wrapped terms
+ca_I.tex	74067	proposition	4.21:prop-fluctuation-site	PROVED	The relative machine at the fluctuation integral
+ca_I.tex	74427	lemma	4.21:lem-grain-properties	PROVED	The grain partition: levels, neighbours and hulls
+ca_I.tex	74706	lemma	4.21:lem-grain-resummation	PROVED	Resummation of the decoupling expansion by grains
+ca_I.tex	75220	lemma	4.21:lem-coupling-interval	PROVED	The admissible couplings at the preparation site form an interval
+ca_I.tex	75377	lemma	4.21:prf-block-sum-proof	PROVED	The block sum in clause (c) of the relative machine at the preparation site
+ca_I.tex	75576	lemma	4.21:prf-old-anchor-proof	PROVED	The relative machine at the preparation site: old anchors
+ca_I.tex	76126	lemma	4.21:prf-term-sums-proof	PROVED	Proof of the preparation proposition: sums over terms and hull totals
+ca_I.tex	76527	lemma	4.21:lem-deep-unit-sum	PROVED	The sum of deep units at a core
+ca_I.tex	76690	lemma	4.21:lem-wrapped-mass	PROVED	Wrapped mass over one top-level cube
+ca_I.tex	76827	proposition	4.21:prop-large-field-site	PROVED	The relative machine at the large-field site
+ca_I.tex	76989	lemma	4.21:prf-pieces-proof	PROVED	The large-field-site proposition: the pieces
+ca_I.tex	77396	proposition	4.21:prop-birth-site	PROVED	The relative machine at the birth of new boundary terms
+ca_I.tex	77657	lemma	4.22:lem-polar-decomposition	PROVED	Polar decomposition, identity principle and convexity in the complexified group
+ca_I.tex	78454	proposition	4.22:prop-rotated-variables	PROVED	The variables the presentation rotates
+ca_I.tex	78872	lemma	4.22:lem-lineage	PROVED	The radius is lowered only along a term's lineage
+ca_I.tex	79691	proposition	4.22:prop-holomorphic-extension	PROVED	Holomorphic extension of stored terms in the rotation variables
+ca_I.tex	79936	lemma	4.22:lem-orbit-datum-properties	PROVED	Uniqueness, equivariance and Cauchy bounds for orbit data
+ca_I.tex	80178	lemma	4.22:lem-cluster-manifold	PROVED	The cluster expansion with a complex-manifold parameter
+ca_I.tex	80241	lemma	4.22:lem-cauchy-riding	PROVED	Cauchy estimate with a riding rotation
+ca_I.tex	80341	lemma	4.22:lem-no-shrink	PROVED	No shrinking of the chart on a polydisc
+ca_I.tex	80455	lemma	4.22:lem-joint-polydisc	PROVED	The joint polydisc with shares of the margin
+ca_I.tex	80552	lemma	4.22:lem-rotated-mean-field	PROVED	The rotated mean field stays in the widened box
+ca_I.tex	80618	lemma	4.22:lem-one-term-bound	PROVED	The one-term bound on the widened box
+ca_I.tex	80765	theorem	4.22:thm-fluctuation-orbit-data	PROVED	Orbit data for terms created by the fluctuation integral
+ca_I.tex	81182	lemma	4.22:lem-lifted-cutoff	PROVED	Holomorphy, invariance and smallness of the lifted cut-off terms
+ca_I.tex	81352	corollary	4.22:cor-cutoff-coordinate	PROVED	The orbit datum at a cut-off coordinate
+ca_I.tex	81446	lemma	4.22:lem-cutoff-large-field	PROVED	The cut-off coordinates at a large-field stage
+ca_I.tex	81771	lemma	4.22:lem-weak-collar	PROVED	the arrested collar variable is a weak coordinate
+ca_I.tex	82061	lemma	4.22:lem-frame-lemma	PROVED	The frame lemma: increments, orbit datum and closing
+ca_I.tex	82281	lemma	4.22:prf-frame-proof-tent	PROVED	Proof of the frame lemma: exponential estimates and tent differences
+ca_I.tex	82522	lemma	4.22:prf-frame-proof-logarithm	PROVED	Proof of the frame lemma: the logarithm of a triple product
+ca_I.tex	83145	corollary	4.22:cor-profile-class	PROVED	The profile class and the cost of a gauge map in it
+ca_I.tex	83472	lemma	4.22:lem-profile-logarithm	PROVED	Profile of the logarithm of a product of exponentials
+ca_I.tex	84503	lemma	4.22:lem-kept-oscillation	PROVED	Oscillation of the kept terms on the orbit chart
+ca_I.tex	85183	proposition	4.22:prop-gaussian-oscillation	PROVED	Oscillation of the kept Gaussian form under rotation
+ca_I.tex	86021	lemma	4.22:lem-foreign-domain-membership	PROVED	The shifted family stays in a kept term's domain at a foreign region
+ca_I.tex	86220	lemma	4.22:lem-probe-summand	PROVED	Kept terms add one summand to the probe functional
+ca_I.tex	86305	lemma	4.22:lem-kept-holomorphy	PROVED	Holomorphy of the kept terms along all later sites
+ca_I.tex	86763	proposition	4.22:prop-fluctuation-site	PROVED	Kept terms at a fluctuation site
+ca_I.tex	87031	proposition	4.22:prop-preparatory-stage	PROVED	Kept terms at a preparatory stage
+ca_I.tex	87328	proposition	4.22:prop-stage-totals	INCOMPLETE	Contribution of the kept terms to the stage totals. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	87631	proposition	4.22:prop-foreign-operation	PROVED	Kept terms at a large-field operation on a foreign component
+ca_I.tex	87762	proposition	4.22:prop-own-healing	PROVED	Kept terms at the healing of their own component
+ca_I.tex	88187	corollary	4.22:cor-fixed-number-entry	PROVED	Kept terms enter every later bound through one fixed number. Stated; the proof below is incomplete at the step marked $(\ast)$
+ca_I.tex	88581	lemma	4.22:lem-axialising-map	PROVED	The axialising gauge map at a site
+ca_I.tex	89007	corollary	4.22:cor-preparatory-chart	PROVED	One preparatory stage on the orbit chart
+ca_I.tex	89151	lemma	4.22:lem-majorant-transfer	PROVED	Transfer of majorant bounds to the orbit chart
+ca_I.tex	89359	corollary	4.22:cor-older-law-sites	PROVED	Older law sites through a fluctuation site
+ca_I.tex	89801	lemma	4.22:lem-site-order	PROVED	The order of sites within a step is well founded
+ca_I.tex	90469	corollary	4.22:cor-chain-terms-holomorphic	PROVED	Chain terms as holomorphic functions of the complex slot
+ca_I.tex	90562	lemma	4.22:lem-orbit-lemma	PROVED	The orbit lemma on a connected parameter manifold
+ca_I.tex	90701	corollary	4.22:cor-bracket-increment	PROVED	Increment of a bracket along the orbit
+ca_I.tex	90906	lemma	4.22:lem-law-site-rule	PROVED	Each argument is rotated at its own law site
+ca_I.tex	90939	proposition	4.22:prop-presentation-radius	PROVED	A presentation lowers only the chart radius; closure under the large-field operation
+ca_I.tex	91558	lemma	4.22:lem-shared-margin	PROVED	One margin per presentation serves every piece
+ca_I.tex	91761	lemma	4.22:lem-law-site	PROVED	The law-site lemma: positions, distances and far debits
+ca_I.tex	92101	lemma	4.22:prf-law-site-debits	PROVED	Proof of the law-site lemma: the far debits
+ca_I.tex	92401	lemma	4.22:lem-current-localisation	PROVED	Localisation of the current beyond the cut
+ca_I.tex	92638	theorem	4.22:thm-budget-closes	PROVED	The radius budget closes uniformly in all scales
+ca_I.tex	93829	theorem	4.23:thm-tube-statement	PROVED	The tube statement for a treated large-field component
+ca_I.tex	94448	lemma	4.23:lem-linearised-minimiser	PROVED	The linearised localised minimiser map
+ca_I.tex	94604	theorem	4.23:thm-form-theorem	PROVED	The form theorem: bound, variation, sign
+ca_I.tex	94755	lemma	4.23:lem-minimiser-scope	PROVED	The localised minimiser lemma at both sets
+ca_I.tex	94846	lemma	4.23:lem-bidisc-sizes	PROVED	Auxiliary sizes on the coupling-free bidisc
+ca_I.tex	95088	lemma	4.23:lem-shell-count-bound	PROVED	The quadratic form and the shallow-shell count
+ca_I.tex	95195	lemma	4.23:prf-kernel-disc	PROVED	Variation of the form: the kernel disc
+ca_I.tex	95367	lemma	4.23:prf-data-ray	PROVED	Variation of the form: the data ray
+ca_I.tex	95451	lemma	4.23:prf-monotone-hull	PROVED	Monotone hull of the variation bound
+ca_I.tex	95589	lemma	4.23:prf-trivial-splitting	PROVED	The form at the trivial splitting
+ca_I.tex	96066	lemma	4.23:lem-filing-domains	PROVED	Filing domains: the component and its rim
+ca_I.tex	96280	theorem	4.23:thm-oscillation-theorem	PROVED	The oscillation theorem for the resummed density
+ca_I.tex	96415	lemma	4.23:lem-rim-lemma	PROVED	The rim lemma
+ca_I.tex	96605	lemma	4.23:lem-paired-tube-points	PROVED	Curvature and regularity at paired tube points
+ca_I.tex	96671	proposition	4.23:prop-pointed-depth-decay	PROVED	Depth decay of deep pointed units
+ca_I.tex	96814	lemma	4.23:lem-unit-oscillation	PROVED	Total oscillation of one unit. Stated; the proof below is incomplete at the step marked $(\ast)$
+ca_I.tex	97144	lemma	4.23:lem-plain-cell-sum	PROVED	The cell sum for plain units
+ca_I.tex	97291	lemma	4.23:lem-wrapped-cell-sum	PROVED	The cell sum for wrapped units
+ca_I.tex	97753	lemma	4.23:lem-tube-regularity	PROVED	Regularity of tube points on coarse boxes
+ca_I.tex	97877	lemma	4.23:lem-copies-lemma	PROVED	The copies lemma
+ca_I.tex	98075	lemma	4.23:lem-boundary-oscillation	PROVED	Oscillation of the localised boundary terms
+ca_I.tex	98177	lemma	4.23:lem-plaquette-units	PROVED	Plaquette units of the boundary terms
+ca_I.tex	98466	lemma	4.23:lem-nested-regions	PROVED	The nested-region lemma
+ca_I.tex	98657	proposition	4.23:prf-right-member	PROVED	Oscillation theorem: the explicit right member
+ca_I.tex	98798	lemma	4.23:prf-density-invariance	PROVED	Oscillation theorem: holomorphy, bound and gauge invariance
+ca_I.tex	98855	lemma	4.23:prf-degree-constant	PROVED	Oscillation theorem: degree and constant
+ca_I.tex	99118	lemma	4.23:prf-depth-decay	PROVED	Oscillation theorem: depth decay and independence
+ca_I.tex	99244	lemma	4.23:lem-constant-order	PROVED	the size-bound constant is fixed before the leaf count
+ca_I.tex	99406	corollary	4.23:cor-collar-payment	PROVED	The depth polynomial paid additively by the region's own collar
+ca_I.tex	99920	lemma	4.23:prf-halves-merged-order	PROVED	The two halves of the tube statement: inputs and merged order
+ca_I.tex	100278	lemma	4.24:lem-adjoint-norm	PROVED	Norm of the adjoint action
+ca_I.tex	100328	lemma	4.24:lem-group-distance	PROVED	A subadditive distance to the identity in the group
+ca_I.tex	100406	lemma	4.24:lem-rotation-trace	PROVED	The trace of an adjoint rotation
+ca_I.tex	100850	lemma	4.24:lem-colour-scalars	PROVED	Trivial-pair factors are colour scalars
+ca_I.tex	100934	proposition	4.24:prop-density-invariance	PROVED	Gauge invariance of walk-term densities
+ca_I.tex	101039	corollary		PROVED	Computation of a walk-term density in any gauge
+ca_I.tex	101085	proposition	4.24:prop-factorwise-bounds	PROVED	Factorwise kernel bounds in cube gauges
+ca_I.tex	101223	proposition	4.24:prop-product-form	PROVED	Product form of a walk term with transition defects
+ca_I.tex	101486	lemma	4.24:lem-transition-defects	PROVED	Smallness of transition defects on overlaps
+ca_I.tex	101579	lemma	4.24:lem-residual-loop	PROVED	The residual element as a Wilson loop
+ca_I.tex	101754	proposition	4.24:prop-density-difference	PROVED	Difference of a walk-term density from its trivial value
+ca_I.tex	102026	proposition	4.24:prop-field-dependence	PROVED	Walk-term field dependence under the holonomy hypothesis
+ca_I.tex	102460	proposition	4.24:prop-flat-holonomy	PROVED	A flat background with non-central holonomy
+ca_I.tex	102609	lemma	4.24:lem-loop-holonomy	PROVED	Loop holonomy bounded by plaquette holonomies
+ca_I.tex	102701	lemma	4.24:lem-plaquette-holonomy	PROVED	The holonomy of one plaquette in a cube gauge
+ca_I.tex	102828	corollary	4.24:cor-flux-reduction	PROVED	Reduction of the holonomy hypothesis to a flux bound
+ca_I.tex	103230	lemma	4.24:lem-component-separation	PROVED	Separation of components and cells meeting one component
+ca_I.tex	103460	lemma	4.24:lem-kernel-polarisation	PROVED	Polarisation of a bond kernel
+ca_I.tex	104684	theorem	4.24:thm-survivor-block-expansion	PROVED	Normalisation and cluster expansion at the survivors' block
+ca_I.tex	104921	lemma	4.24:lem-principal-blocks	PROVED	Principal blocks: what restricts and what does not
+ca_I.tex	105063	lemma	4.24:lem-block-coercivity	PROVED	Coercivity of the survivors' block
+ca_I.tex	105207	lemma	4.24:lem-log-resolvent	PROVED	The logarithm of the block as a half-line resolvent integral
+ca_I.tex	105513	lemma	4.24:lem-conditioning-marginal	PROVED	Conditional and marginal precision of a Gaussian
+ca_I.tex	105692	lemma	4.24:prf-region-walk-expansion	PROVED	The walk expansion on unions of whole components
+ca_I.tex	105897	lemma	4.24:prf-block-conditioned	PROVED	The survivors' block as a conditioned precision
+ca_I.tex	105992	lemma	4.24:prf-single-determinant	PROVED	The only determinant of the stage
+ca_I.tex	106091	lemma	4.24:prf-bond-densities	PROVED	The normalisation as a sum of bond densities
+ca_I.tex	106219	lemma	4.24:prf-block-walk-expansion	PROVED	Termwise walk expansion of the block resolvent
+ca_I.tex	106317	lemma	4.24:prf-hulls-anchors	PROVED	Hulls, filing, anchors and holomorphy of the densities
+ca_I.tex	106456	lemma	4.24:prf-constant-unchanged	PROVED	The normalisation constant is unchanged
+ca_I.tex	106533	proposition	4.24:prop-norm-conversion	OUTSTANDING	Conversion of per-rate bounds to the stage norm. Proof outstanding
+ca_I.tex	106589	lemma	4.24:prf-field-dependence	INCOMPLETE	Field dependence of the densities in cube gauges. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	107073	proposition	4.24:prop-holonomy-bound	OUTSTANDING	Holonomy bound for walks across several cubes; proof outstanding
+ca_I.tex	107197	lemma	4.24:prf-halfline-integrability	PROVED	Termwise integrability on the half-line
+ca_I.tex	107301	lemma	4.24:prf-no-new-condition	PROVED	No new condition on the parameters
+ca_I.tex	107383	lemma	4.24:prf-elimination-factors	PROVED	Elimination factors carried by the arrested components
+ca_I.tex	107516	lemma	4.24:prf-normalisation-conclusion	PROVED	Conclusion of the block normalisation
+ca_I.tex	107792	lemma	4.24:lem-covariance-root	PROVED	Square root of the block covariance
+ca_I.tex	107894	lemma	4.24:lem-cube-extraction-bound	PROVED	The Cauchy bound per extracted cube
+ca_I.tex	107971	lemma	4.24:prf-gaussian-inputs	PROVED	Gaussian inputs at the block: conditioning, absorption and covariance bounds
+ca_I.tex	108115	lemma	4.24:prf-normalisation-ratios	PROVED	Decoupling, reference numbers and normalisation ratios
+ca_I.tex	108354	lemma	4.24:prf-counted-once	PROVED	Each term of the exponent counted once
+ca_I.tex	108507	lemma	4.24:prf-single-term	PROVED	Bound on a single term of the expansion
+ca_I.tex	108616	lemma	4.24:lem-cross-cell	PROVED	Anchored sum of cross weights at a survivor cell
+ca_I.tex	108789	lemma	4.24:lem-packing-count	PROVED	Packing count of separated components at a point
+ca_I.tex	109053	lemma	4.24:prf-uniform-totals	PROVED	Totals uniform in the number of arrested components
+ca_I.tex	109224	lemma	4.24:prf-holomorphy-locality	PROVED	Holomorphy, locality and the pointwise stage constant
+ca_I.tex	109371	lemma	4.24:prf-exterior-independence	PROVED	Independence of the Gaussian objects from exterior data
+ca_I.tex	109505	lemma	4.24:prf-member-majorants	PROVED	Exterior-free majorants of the members, by kind
+ca_I.tex	109830	lemma	4.24:prf-constant-uniformity	PROVED	Constants free of volume, age and component count
+ca_I.tex	110553	lemma	4.25:lem-word-length-distance	PROVED	A word-length distance on the complexified group
+ca_I.tex	110662	lemma	4.25:lem-piece-cut-off	PROVED	The cut-off of a piece: plateau, support, slope
+ca_I.tex	110806	lemma	4.25:lem-gaussian-pieces	INCOMPLETE	Gaussian pieces: domain, invariance and continuation. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	111188	lemma	4.25:lem-piece-oscillation	INCOMPLETE	Oscillation of a Gaussian piece under small moves. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	111391	lemma	4.25:lem-current-partner	PROVED	The current partner of a difference of layers
+ca_I.tex	111489	lemma	4.25:lem-cut-layer-partner	PROVED	The current partner of a cut layer. Stated; the proof below is incomplete at the step marked $(\ast)$
+ca_I.tex	111940	lemma	4.25:lem-domination-old-blocks	PROVED	Domination of old blocks by current blocks
+ca_I.tex	112046	lemma	4.25:lem-increment-bound	PROVED	Increment bound at tube and far sites
+ca_I.tex	112743	lemma	4.25:lem-reading-rotation	PROVED	The reading rotation, per link and layer
+ca_I.tex	112949	corollary	4.25:cor-oscillation-datum	PROVED	The oscillation datum at later presentations
+ca_I.tex	113108	lemma	4.25:lem-pile-bound	PROVED	Piece geometry and the pile bound
+ca_I.tex	113302	proposition	4.25:prop-conversion-old-factors	PROVED	Conversion of old polylogarithmic factors
+ca_I.tex	113538	lemma	4.25:lem-response-cube-geometry	PROVED	Geometry of a response cube
+ca_I.tex	113786	lemma	4.25:lem-entered-class	PROVED	The class entered at a response cube
+ca_I.tex	113946	corollary	4.25:cor-three-cases	PROVED	Three cases at a response cube
+ca_I.tex	114205	lemma	4.25:lem-cell-count	PROVED	The cell count at a response cube
+ca_I.tex	114432	proposition	4.25:prop-response-cube-conversion	PROVED	Conversion at a response cube
+ca_I.tex	114520	proposition	4.25:prop-anchored-block-sum	PROVED	Anchored block sum of the pieces
+ca_I.tex	114658	lemma	4.25:lem-non-deep-pieces	INCOMPLETE	Non-deep pieces are small. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	114764	lemma	4.25:lem-deep-oscillation	PROVED	Oscillation of deep pieces
+ca_I.tex	114978	lemma	4.25:lem-norm-bound	PROVED	The norm bound at non-deep large-field sites
+ca_I.tex	115062	proposition	4.25:prop-dissolution	INCOMPLETE	Dissolution of the arrested region. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	115350	theorem	4.25:thm-frozen-collar-weight	PROVED	Frozen Gaussian collar weight of an arrested region
+ca_I.tex	116140	lemma	4.26:lem-older-pieces-domain	PROVED	The domain statements at points of older live pieces
+ca_I.tex	117492	lemma	4.26:lem-family-consumption	PROVED	Room consumed by the proof family, point by point
+ca_I.tex	117791	lemma	4.26:lem-cube-count	PROVED	The cover-cube count and its bound
+ca_I.tex	117931	lemma	4.26:lem-summation	PROVED	The summation lemma, near groups included
+ca_I.tex	118332	lemma	4.26:lem-lifted-counts	PROVED	Counts on lifted sets paid by the lifted shells
+ca_I.tex	118552	corollary	4.26:cor-summation-lifted	PROVED	The summation lemma on lifted sets of older pieces
+ca_I.tex	118762	lemma	4.26:prf-expansion-small-terms	PROVED	The stage expansion: small terms away from their cube
+ca_I.tex	119813	theorem	4.26:thm-inherited-expansion	PROVED	The expansion on the inherited domain
+ca_I.tex	120111	lemma	4.26:prf-inherited-constituents	PROVED	The inherited-domain expansion: the constituents
+ca_I.tex	120337	lemma	4.26:prf-inherited-comparison	PROVED	Proof of the inherited-domain expansion: comparison with Ba{\l}aban's clauses
+ca_I.tex	120581	lemma	4.26:lem-near-box-geometry	PROVED	Geometry of a near pair's box
+ca_I.tex	120920	proposition	4.26:prop-near-pairs-outside	PROVED	Near pairs at locations outside the run
+ca_I.tex	121175	lemma	4.26:prf-near-pair-chain	PROVED	Proof for near pairs: the chain from the box-level entry
+ca_I.tex	121531	lemma	4.26:lem-near-remainders	PROVED	The remainder pieces of a near pair
+ca_I.tex	121900	lemma	4.26:lem-original-level-strata	PROVED	The strata of the original-level function are thick
+ca_I.tex	122333	lemma	4.26:lem-junction-boxes	PROVED	Junction boxes and the cost of the added structures
+ca_I.tex	122596	lemma	4.26:lem-regrouping-exact	PROVED	Re-grouping the small-term pieces leaves every total unchanged
+ca_I.tex	122717	lemma	4.26:lem-graded-box-geometry	PROVED	Geometry and unit conversion for graded-cover boxes
+ca_I.tex	122848	proposition	4.26:prop-near-pair-graded	PROVED	Near pairs on the graded cover at untouched clauses
+ca_I.tex	123176	lemma	4.26:lem-cover-lifted-uses	PROVED	Further uses of the cover on lifted sets
+ca_I.tex	123469	theorem	4.26:thm-near-pair-lifted	PROVED	Near pairs meeting the lifted points of a live arrest
+ca_I.tex	123584	lemma	4.26:lem-room-table	PROVED	Room over the source and the schedule for newborn terms
+ca_I.tex	123738	corollary	4.26:cor-inherited-room	PROVED	Positive room of the inherited domain over the source
+ca_I.tex	124033	corollary	4.26:cor-summed-term-bound	PROVED	Bound on the summed term at real exterior data
+ca_I.tex	124108	corollary	4.26:cor-extra-parameter	PROVED	A further holomorphic parameter under two hypotheses
+ca_I.tex	124189	proposition	4.26:prop-source-image	PROVED	The image of the source lies in the inherited domain
+ca_I.tex	124882	lemma	4.26:lem-smallness-reduction	PROVED	Summed smallness from the earlier condition at a constant factor
+ca_I.tex	125394	lemma	4.26:lem-retained-levels	PROVED	Levels and weights of retained structures
+ca_I.tex	125926	lemma	4.26:lem-analyticity-membership	PROVED	The stage space lies in the analyticity domain at every age
+ca_I.tex	126052	lemma	4.26:lem-weight-bound	PROVED	A trajectory-free bound on the weight at one density
+ca_I.tex	126310	lemma	4.26:prf-level-comparison	PROVED	Earlier levels against one density
+ca_I.tex	126635	proposition	4.26:prop-maximum-uses	PROVED	Every use of the maximum is a membership or a one-variable supremum
+ca_I.tex	126889	proposition	4.26:prop-falling-trajectory	PROVED	The density-indexed maximum on a falling trajectory
+ca_I.tex	127191	lemma	4.26:lem-unit-ordering	PROVED	Ordering of the three units and conversion to the shell unit
+ca_I.tex	127864	lemma	4.26:lem-lower-bracket	PROVED	The bracket at a lower level
+ca_I.tex	128044	lemma	4.26:lem-enclosing-tube	PROVED	One-step tube in the frozen unit for an enclosing run
+ca_I.tex	128485	lemma	4.26:prf-nested-criticality	PROVED	Nested criticality under composite block averages
+ca_I.tex	128768	lemma	4.26:prf-plaquette-current-entries	PROVED	Plaquette and current entries of the frozen background
+ca_I.tex	128962	lemma	4.26:prf-source-inclusions	PROVED	Inclusion of the source in the stage spaces, and the increments
+ca_I.tex	129158	lemma	4.26:prf-junction-nesting	PROVED	Nesting of the retained structures at junction boxes
+ca_I.tex	130055	lemma	4.26:lem-tree-product	PROVED	The relative gauge element as a tree product
+ca_I.tex	130257	lemma	4.26:lem-exponential-products	PROVED	Majorant bounds for products of exponentials
+ca_I.tex	130363	lemma	4.26:lem-straight-part-flux	PROVED	The comb pairing as straight part plus flux
+ca_I.tex	130500	lemma	4.26:lem-coarse-curl	PROVED	The coarse curl of the linearised average
+ca_I.tex	130623	proposition	4.26:prop-one-step-averaging	PROVED	The one-step averaging estimate
+ca_I.tex	131188	corollary	4.26:cor-tree-product-bound	PROVED	The tree products near the identity
+ca_I.tex	131633	lemma	4.27:lem-t-step-layer	INCOMPLETE	The $\mathbf{T}$-step layer in a background field. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	132086	lemma	4.27:lem-arrest-timing	PROVED	Timing, nesting and bands of arrests
+ca_I.tex	132358	proposition	4.27:prop-permanent-deficit	PROVED	The permanent deficit on an arrested piece
+ca_I.tex	132608	lemma	4.27:lem-factor-positivity	PROVED	Positivity of the arrested factors
+ca_I.tex	132675	lemma	4.27:lem-frozen-room	PROVED	Room of frozen domains over arrested spaces
+ca_I.tex	132878	lemma	4.27:lem-weights-heredity	INCOMPLETE	Weights, the dated size parameter and heredity; stated; proof incomplete at the steps marked $(\ast)$
+ca_I.tex	133224	lemma	4.27:prf-weight-bounds	PROVED	The weight and size-parameter bounds
+ca_I.tex	133424	lemma	4.27:lem-determining-set-order	PROVED	The time order of determining sets
+ca_I.tex	133876	lemma	4.27:prf-direct-entries	PROVED	Heredity of the direct entries
+ca_I.tex	134006	lemma	4.27:lem-nested-cubes	PROVED	The nested-cube lemma
+ca_I.tex	134184	lemma	4.27:prf-stage-move-cubes	INCOMPLETE	Cube families under a stage move. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	134547	lemma	4.27:prf-cube-clause-heredity	PROVED	The cube clause under $\mathbf{T}$-steps and completion
+ca_I.tex	134745	lemma	4.27:prf-raw-stratum	PROVED	Heredity on the raw stratum
+ca_I.tex	134978	lemma	4.27:prf-held-raw-points	PROVED	The current bound at held raw points
+ca_I.tex	135143	lemma	4.27:prf-density-increase	INCOMPLETE	Current thresholds across an increase of density. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	135466	lemma	4.27:prf-unheld-raw-points	PROVED	Unheld raw points within one density. Stated; the proof below is incomplete at the step marked $(\ast)$
+ca_I.tex	135723	lemma	4.27:lem-current-probe	INCOMPLETE	The one-point current probe
+ca_I.tex	135841	proposition	4.27:prop-nonincreasing-thresholds	PROVED	Hereditary current thresholds are the non-increasing ones
+ca_I.tex	136192	lemma	4.27:prf-index-zero-margin	INCOMPLETE	No index-zero margin on source domains. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	136490	lemma	4.27:prf-ambient-inclusion	INCOMPLETE	Inclusion of the ambient domain at size $\gamma_0^{(k)}$. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	136809	lemma	4.27:lem-real-minimiser	INCOMPLETE	The real minimiser lies in arrested spaces. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	137089	lemma	4.27:lem-live-piece-increments	PROVED	Later increments at a live piece
+ca_I.tex	137320	lemma	4.27:lem-interrupted-terms	PROVED	Terms of an interrupted change of variables
+ca_I.tex	137628	theorem	4.27:thm-arrest-theorem	INCOMPLETE	The arrest theorem. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	138156	lemma	4.27:prf-room-regular-zones	PROVED	Room, spend and ratio outside dissolving pieces
+ca_I.tex	138348	lemma	4.27:prf-room-dissolving	PROVED	Room, spend and ratio at dissolving pieces
+ca_I.tex	138485	lemma	4.27:prf-newborn-continuation	INCOMPLETE	Newborn terms, space inclusions and continuation of stored domains. Stated; proof incomplete at the steps marked $(\ast)$
+ca_I.tex	138933	proposition	4.27:prop-live-piece-bounds	INCOMPLETE	Bounds of later steps on live arrested pieces. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	141190	lemma	4.27:lem-allowance-sum	PROVED	Boundedness of the summed allowances
+ca_I.tex	141265	lemma	4.27:lem-left-factor-algebra	PROVED	Local algebra of a left exponential factor at unit spacing
+ca_I.tex	141509	lemma	4.27:lem-level-zero-ratios	PROVED	Coupling ratios, distances and absorption at level zero
+ca_I.tex	141727	lemma	4.27:lem-collar-displacement	PROVED	Displacement of the collar quantities by one operation
+ca_I.tex	142149	lemma	4.27:prf-displacement-averaging	PROVED	Collar displacement at the averaging step and the completion site
+ca_I.tex	142592	lemma	4.27:lem-real-point-collar	PROVED	The real configuration lies deep inside the collar clause
+ca_I.tex	142813	theorem	4.27:thm-collar-allowance	PROVED	Each operation stays within its collar allowance
+ca_I.tex	142936	theorem	4.27:thm-collar-rigidity	PROVED	Rigidity of the arrest theorem on the never-averaged collar
+ca_I.tex	143719	lemma	4.28:lem-cutting-strata	PROVED	Strata and widths of the cutting level
+ca_I.tex	144038	lemma	4.28:lem-lifted-thresholds	PROVED	Thresholds at lifted points, with running factor at most one half
+ca_I.tex	144305	lemma	4.28:lem-box-lemma	PROVED	The box lemma at lifted points: scales, conversion and rooms
+ca_I.tex	144670	proposition	4.28:prop-near-pair-box	PROVED	The box construction at near pairs meeting lifted points
+ca_I.tex	144962	proposition	4.28:prop-kernel-membership	PROVED	Kernel membership and anchored sums on the refined cover
+ca_I.tex	145472	lemma	4.28:lem-old-region-distance	PROVED	distance from an old region's lifted set to the integration regions
+ca_I.tex	145676	lemma	4.28:lem-refined-count	PROVED	Counting the refined cubes along the current preparation
+ca_I.tex	145837	lemma	4.28:lem-near-pair-sums	PROVED	Sums over near pairs at lifted points. Stated; the proof below is incomplete at the step marked $(\ast)$
+ca_I.tex	146051	proposition	4.28:prop-core-freezing	PROVED	The core-freezing step
+ca_I.tex	146538	proposition	4.29:prop-native-cover	PROVED	The native-scale cover and its partition of unity
+ca_I.tex	147394	lemma	4.29:lem-localisation-exact	PROVED	Exactness of the cube-by-cube localisation on the collared domain
+ca_I.tex	147680	lemma	4.29:lem-collar-staircase	PROVED	The collar staircase, decay at observation points and induced sources
+ca_I.tex	147917	lemma	4.29:lem-collar-sources	PROVED	Summation of finer sources over the collar
+ca_I.tex	148365	lemma	4.29:lem-radius-conversion	PROVED	Conversion of weighted radii to a native scale
+ca_I.tex	148454	proposition	4.29:prop-complex-hypothesis	PROVED	The complex hypothesis at a cover cube
+ca_I.tex	148788	proposition	4.29:prop-window-minimiser	PROVED	The minimiser as a native-scale configuration on the window
+ca_I.tex	149223	lemma	4.29:lem-far-field-paths	PROVED	Path-length bounds in the far field
+ca_I.tex	149731	lemma	4.29:lem-scale-thresholds	PROVED	Thresholds across scales and the window rim
+ca_I.tex	150094	lemma	4.29:lem-interpolated-field-bounds	PROVED	Membership and decay bounds for the interpolated field
+ca_I.tex	150341	proposition	4.29:prop-near-field-scope	PROVED	The near field and the cubes beside the fluctuation support
+ca_I.tex	150889	corollary	4.29:cor-boundary-label	PROVED	Label dependence of boundary pieces born at a cover cube
+ca_I.tex	151575	corollary	4.29:cor-cubewise-analysis	PROVED	The small-field analysis at each cover cube at its native scale
+ca_I.tex	152408	lemma	4.30:lem-no-two-sided-point	INCOMPLETE	No lattice point on both boundaries of a stratum. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	152459	lemma	4.30:lem-interface-levels	PROVED	Two consecutive levels at each interface point
+ca_I.tex	152568	lemma	4.30:lem-coarse-faces	PROVED	Interface points lie on coarse faces
+ca_I.tex	152659	lemma	4.30:lem-coth-comparison	PROVED	The hyperbolic cotangent comparison
+ca_I.tex	153110	corollary	4.30:cor-attached-objects	PROVED	The bound for bonds and plaquettes attached to cells
+ca_I.tex	153174	proposition	4.30:prop-frames-instance	PROVED	The cell-counting bound on the stratified frames of the induction
+ca_I.tex	153354	lemma	4.30:prf-bond-constant	PROVED	The width condition and the bond-sum constant on the frames
+ca_I.tex	154681	proposition	4.31:prop-fixed-depth-convergence	PROVED	Convergence at fixed depth with uniform analyticity on a tube
+ca_I.tex	154865	lemma	4.31:lem-cutoff-free-windows	PROVED	Cutoff-free coupling windows and summable scale majorants
+ca_I.tex	155039	lemma	4.31:lem-window-characteristic	PROVED	The small-field characteristic functions equal one on the window
+ca_I.tex	155098	lemma	4.31:lem-charts-gluing	PROVED	Holomorphic charts on the tube and their gluing
+ca_I.tex	155242	lemma	4.31:lem-background-membership	PROVED	Membership of the complex background field in the analyticity space
+ca_I.tex	155514	lemma	4.31:lem-terrace-averages	PROVED	Terrace averages of a small complex field
+ca_I.tex	155642	lemma	4.31:prf-marginal-cube-gauge	PROVED	Complex marginal bound: cube gauge and constant subtraction
+ca_I.tex	155855	lemma	4.31:prf-marginal-minimiser-path	PROVED	Complex marginal bound: minimiser path and Cauchy remainder
+ca_I.tex	156260	lemma	4.31:lem-two-constants	PROVED	The two-constants estimate on the disc
+ca_I.tex	156342	lemma	4.31:prf-tube-analyticity	PROVED	Fixed-depth convergence: uniform analyticity on the tube
+ca_I.tex	156520	lemma	4.31:prf-couplings-densities	PROVED	Fixed-depth convergence: couplings and densities as measures
+ca_I.tex	156677	lemma	4.31:prf-normal-families	PROVED	Fixed-depth convergence: normal families and the limit lower bound
+ca_I.tex	156837	proposition	4.32:prop-positivity-dichotomy	OUTSTANDING	Positivity dichotomy of the large-field operations. Proof outstanding
+ca_I.tex	157028	theorem	4.33:thm-stability	PROVED	Integrated stability (clause (i-b)) and equality of integrals (clause (i-c))
+ca_I.tex	157263	lemma	4.34:lem-sourced-exactness	PROVED	Exactness of the step under complex sources
+ca_I.tex	157457	proposition	4.35:prop-gauge-fixing	CITED	Gauge fixing inside the step: the three devices, Ba{\l}aban's gauge-fixing theorem and the axial-gauge minimal configuration cited by statement, and independence of the total integrals from the devices
+ca_I.tex	157682	lemma	4.36:lem-eigenangle-inequalities	PROVED	Elementary inequalities for eigen-angles, traces and norms
+ca_I.tex	158407	lemma	4.36:lem-transport-arithmetic	PROVED	Arithmetic of the transport factors
+ca_I.tex	158452	lemma	4.36:lem-log-comparison	PROVED	Comparison of powers of logarithms under a bounded shift
+ca_I.tex	158518	proposition	4.36:prop-transport-every-l	INCOMPLETE	Transport bounds for every $L$ under a coupling ceiling. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	158844	lemma	4.36:lem-one-link-partition	PROVED	The one-link partition number at $SU(N)$
+ca_I.tex	159123	lemma	4.36:lem-label-energy	PROVED	The energy constant of a label; polymer-sum and bond-count bounds
+ca_I.tex	159272	theorem	4.36:thm-never-large-exponent	PROVED	The exponent of the never-large term and label corrections at $SU(N)$
+ca_I.tex	159511	corollary	4.36:cor-density-constants	PROVED	The density constants $E_{-}$ and $E_{+}$ at $SU(N)$
+ca_I.tex	159778	lemma	4.36:lem-haar-small-sets	PROVED	Haar measure of small balls and small-action sets
+ca_I.tex	159953	lemma	4.36:lem-mode-bound	PROVED	The mode bound for a log-density along one link
+ca_I.tex	160325	lemma	4.36:lem-derivative-rescaling	PROVED	Second directional derivatives scale with the squared norm
+ca_I.tex	160392	lemma	4.36:lem-plaquette-action	PROVED	The complexified plaquette action: holomorphy, increment and size
+ca_I.tex	160549	lemma	4.36:lem-cauchy-bound	PROVED	The Cauchy bound for a second derivative
+ca_I.tex	160587	lemma	4.36:lem-broken-paths	PROVED	Short broken paths stay in the small-field window
+ca_I.tex	161275	lemma	4.36:lem-one-link-curvature	PROVED	Curvature of the conditional exponent along one link at $SU(N)$
+ca_I.tex	162089	lemma	4.36:lem-anti-concentration	PROVED	Anti-concentration: cancellation of the coupling powers at every $N$
+ca_I.tex	162145	theorem	4.36:thm-plaquette-lower-bound	PROVED	lower and anti-concentration bounds for the averaged plaquette at $\mathrm{SU}(N)$
+ca_I.tex	162632	corollary	4.36:cor-plaquette-constants	PROVED	The upper plaquette constant and the values of the lower constants
+ca_I.tex	163946	lemma	4.36:lem-threshold-floors	PROVED	The auxiliary thresholds as floors on the inverse coupling
+ca_I.tex	164404	lemma	4.36:prf-regular-absorption	PROVED	The regular-term bound absorbed into a fraction of the inverse coupling
+ca_I.tex	164703	lemma	4.36:lem-coupling-powers	PROVED	Summability of coupling powers along the flow
+ca_I.tex	164963	lemma	4.36:prf-operation-absorption	PROVED	The operation-term bound absorbed into a unit
+ca_I.tex	165121	lemma	4.36:lem-arrest-per-cube	PROVED	One arrest per cube per level
+ca_I.tex	165179	proposition	4.36:prop-frozen-sum	PROVED	The frozen boundary terms at a fixed polymer
+ca_I.tex	165335	lemma	4.36:lem-long-or-recent	PROVED	A boundary polymer near a far block is long or recent
+ca_I.tex	165411	theorem	4.36:thm-boundary-bound	PROVED	Second-derivative bound for the boundary terms at $SU(N)$
+ca_I.tex	165771	lemma	4.36:prf-boundary-absorption	PROVED	The boundary-term bound in two distance classes
+ca_I.tex	166079	corollary	4.36:cor-near-curvature	PROVED	The curvature constant of the near part at $SU(N)$
+ca_I.tex	166227	proposition	4.36:prop-coupling-ceiling	PROVED	A coupling ceiling implying every floor
+ca_I.tex	166454	lemma	4.36:lem-monotone-substitution	PROVED	Monotone substitution for two-scale coupling ratios
+ca_II.tex	2791	theorem	5.1:thm-correlation-theorem	PROVED	The correlation theorem
+ca_II.tex	2974	lemma	5.2:lem-disc-bounds	PROVED	Bounds for a bounded analytic function on a disc
+ca_II.tex	3023	lemma	5.2:lem-polydisc-gradient	PROVED	The $\ell^1$ gradient bound on a polydisc
+ca_II.tex	3089	lemma	5.2:lem-two-constants	PROVED	A two-constants bound on the half disc
+ca_II.tex	3161	lemma	5.2:lem-fluctuation-potential	PROVED	The fluctuation potential on the ball of histories
+ca_II.tex	3521	lemma	5.2:lem-complex-fluctuation	PROVED	The fluctuation integral at a complex Gaussian parameter
+ca_II.tex	3799	proposition	5.2:prop-complex-factor-step	PROVED	The step with a complex factor near one
+ca_II.tex	3926	proposition	5.2:prop-box-comb-gauge	CITED	Box representation, trivial-point containment and the comb gauge; {\cite[(3.18), (3.25), (3.26), (3.32), Lemma~4, pp.~276--277, (4.18)]{B-CMP109}}; {\cite[(2.28), (3.68)]{B-CMP119}}
+ca_II.tex	4333	lemma	5.2:lem-polydisc-containment	PROVED	A polydisc inside the analyticity space
+ca_II.tex	4403	lemma	5.2:lem-coefficient-total	PROVED	The extracted coefficient depends on the total only
+ca_II.tex	4600	lemma	5.2:lem-extraction-cost	PROVED	Extraction costs the inverse square of the radius
+ca_II.tex	4729	lemma	5.2:lem-marginal-bound	PROVED	The marginal bound on a domain's own box
+ca_II.tex	4852	lemma	5.2:lem-pointed-irrelevance	PROVED	Irrelevance of a renormalised pointed group
+ca_II.tex	5043	lemma	5.2:lem-complex-weights	PROVED	Complex plaquette weights in the expansions
+ca_II.tex	5181	lemma	5.2:lem-weight-freezing	PROVED	Freezing the weight at one plaquette
+ca_II.tex	5336	proposition	5.2:prop-three-sites	PROVED	The three expansion sites and their disc radii
+ca_II.tex	6035	lemma	5.2:lem-half-disc-containment	PROVED	Containment on the half disc outside the small-field region
+ca_II.tex	6530	lemma	5.2:lem-first-stage-bound	PROVED	The first-stage bound by two contour integrals
+ca_II.tex	6902	lemma	5.2:lem-second-stage-activities	PROVED	The second stage sees activities only
+ca_II.tex	7105	proposition	5.2:prop-unit-table	PROVED	The table of units and their sizes
+ca_II.tex	7403	lemma	5.2:lem-cut-groups	PROVED	Cut groups at the boundary of the large-field region
+ca_II.tex	8269	corollary	5.2:cor-sourced-preparatory	PROVED	The first stage inside the integral and the sourced preparatory step
+ca_II.tex	8922	lemma	5.2:lem-random-walk-bounds	CITED	Random-walk bounds for the conditioned covariances {\cite[Theorem~3.15]{B-CMP99b}}
+ca_II.tex	8990	corollary	5.2:eq-random-walk-bounds-2	PROVED	
+ca_II.tex	9105	lemma	5.2:lem-covariance-identities	PROVED	Block averages and five covariance identities
+ca_II.tex	9288	lemma	5.2:lem-difference-inverse	PROVED	Inverting the block difference map
+ca_II.tex	9371	lemma	5.2:lem-almost-invariance	PROVED	Almost-invariance of the fluctuation form
+ca_II.tex	9503	corollary	5.2:cor-constrained-invariance	PROVED	Gauge invariance on the constraint space
+ca_II.tex	9578	lemma	5.2:lem-unipotent-map	PROVED	The unipotent map between the two constraints
+ca_II.tex	9717	proposition	5.2:prop-form-positivity	PROVED	Positivity of the constrained fluctuation form
+ca_II.tex	10009	corollary	5.2:cor-kernel-decay	PROVED	Kernel decay of the fluctuation form
+ca_II.tex	10104	lemma	5.2:lem-covariance-root	PROVED	Square root of the conditioned covariance
+ca_II.tex	10188	corollary	5.2:cor-true-pair-positivity	PROVED	Positivity and decay at every true pair
+ca_II.tex	10602	lemma	5.2:lem-response-containment	PROVED	Homogeneous containment of the response map
+ca_II.tex	10944	lemma	5.2:lem-complex-localisation	PROVED	Complex localisation of the effective action
+ca_II.tex	11484	lemma	5.2:lem-refined-factorisation	PROVED	Factorisation of the refined step over components
+ca_II.tex	11733	lemma	5.2:lem-conditional-mean	PROVED	Conditional mean of the rim datum
+ca_II.tex	12024	theorem	5.2:thm-rim-filing	PROVED	Filing of rim-dependent boundary terms
+ca_II.tex	12253	lemma	5.2:lem-tilted-bound	PROVED	The boundary-term bound with the rim tilt
+ca_II.tex	12417	corollary	5.2:cor-created-bound-induction	PROVED	The created-term bound at every step
+ca_II.tex	12600	proposition	5.2:prop-rim-payment	PROVED	Payment of the refined rim and the modified cover
+ca_II.tex	12909	proposition	5.2:prop-two-slot-preparation	PROVED	Preparatory integrations with both bracket slots
+ca_II.tex	13285	lemma	5.2:lem-animal-resummation	PROVED	Resummation of preparatory animals over grain members
+ca_II.tex	13933	corollary	5.2:cor-response-dilation	PROVED	The all-blocks response dilation
+ca_II.tex	14242	proposition	5.2:prop-difference-smallness	PROVED	Smallness of the difference family
+ca_II.tex	14396	lemma	5.2:lem-sourced-modulus	PROVED	Modulus bound for the sourced large-field operation
+ca_II.tex	14940	lemma	5.2:lem-frozen-cell-mass	PROVED	The weighted mass of frozen cells
+ca_II.tex	15206	proposition	5.2:prop-sourced-large-field-step	PROVED	The large-field step at complex sources
+ca_II.tex	15497	proposition	5.2:prf-resummation-input	PROVED	The boundary-term input at the resummation site
+ca_II.tex	15979	lemma	5.2:lem-wilson-remainders	CITED	Localised remainders of the expanded Wilson actions {\cite[(1.11), (1.23), (1.27), (1.31), (1.47)--(1.49), pp.~374--375]{B-CMP122b}}
+ca_II.tex	16224	lemma	5.2:lem-value-unit-filing	PROVED	Filing of the value units
+ca_II.tex	16399	lemma	5.2:lem-exterior-collar-bound	PROVED	The collar bound for exterior value units
+ca_II.tex	16900	lemma	5.2:lem-resummation-window	PROVED	The resummation window is non-empty
+ca_II.tex	17076	lemma	5.2:lem-current-label-anchors	PROVED	Anchors lie in the current label
+ca_II.tex	17758	lemma	5.2:lem-plain-exterior-sum	PROVED	The exterior-piece sum for plain units
+ca_II.tex	17996	corollary	5.2:cor-unit-volume-sum	PROVED	The volume sum of one unit's pieces
+ca_II.tex	18138	lemma	5.2:lem-carrier-domain	PROVED	The carrier stays within its prescribed domain
+ca_II.tex	18379	lemma	5.2:lem-short-box-cubes	PROVED	Regular cubes around a short box
+ca_II.tex	18464	corollary	5.2:cor-decoupled-carrier	PROVED	The decoupled carrier stays admissible on the core
+ca_II.tex	18555	lemma	5.2:lem-carrier-regularity	PROVED	Regularity of the carrier on a short box
+ca_II.tex	18723	lemma	5.2:lem-local-gauge-bound	PROVED	Second-order bound in a local gauge
+ca_II.tex	18943	lemma	5.2:lem-smoothed-core-bound	PROVED	The smoothed core bound at intermediate scale
+ca_II.tex	19371	proposition	5.2:prop-carrier-value-bound	PROVED	Holomorphy and the value bound on the carrier
+ca_II.tex	19488	proposition	5.2:prop-deep-unit-gain	PROVED	The depth gain for deep pointed units
+ca_II.tex	19632	lemma	5.2:lem-column-sum-pointed	PROVED	The column sum of pointed sizes per cell
+ca_II.tex	20216	lemma	5.2:lem-exposed-geometry	PROVED	Geometry of exposed units: collar, zones and admissible cube
+ca_II.tex	20368	lemma	5.2:lem-exposed-zone-bound	PROVED	Bounds for exposed units at every zone
+ca_II.tex	20632	lemma	5.2:lem-carrier-exterior	PROVED	The carrier bound for exterior pointed units
+ca_II.tex	21512	lemma	5.2:lem-exposed-column	PROVED	The column bound per cell for exposed units
+ca_II.tex	21950	lemma	5.2:lem-piece-source-cell	PROVED	A non-vanishing piece is tied to a source cell
+ca_II.tex	22084	lemma	5.2:lem-exempt-star	PROVED	The exempt star of a cell
+ca_II.tex	22204	lemma	5.2:lem-shell-block-sum	PROVED	The block sum in shells around a family of cells
+ca_II.tex	22353	lemma	5.2:lem-touching-block	PROVED	A touching block contains the base point in its interior
+ca_II.tex	22408	corollary	5.2:cor-proximity-comparison	PROVED	Comparison of the two block-proximity distances
+ca_II.tex	22445	lemma	5.2:lem-support-block-sum	PROVED	The block sum at the support scale
+ca_II.tex	22529	theorem	5.2:thm-rooted-sum	PROVED	The source-rooted sum over families of cut cells
+ca_II.tex	22686	lemma	5.2:lem-rim-mass	PROVED	Rim mass of the compact pointed units
+ca_II.tex	22863	corollary	5.2:cor-anchor-sum	PROVED	The sum of pointed pieces behind one coarse anchor
+ca_II.tex	23252	lemma	5.2:lem-plain-fine-units	PROVED	Plain units finer than a cell and the window weights
+ca_II.tex	23491	lemma	5.2:lem-plain-mass-cell	PROVED	Plain mass meeting one cell
+ca_II.tex	23615	lemma	5.2:lem-deep-sum	PROVED	The deep sum over the core
+ca_II.tex	23749	lemma	5.2:lem-shallow-sum	PROVED	The shallow sum off the core
+ca_II.tex	24028	lemma	5.2:lem-exterior-pieces	PROVED	Pieces of units whose label leaves the large-field region
+ca_II.tex	24863	corollary	5.2:cor-strip-cell-sum	PROVED	Exterior pieces at a strip cell sum to at most one
+ca_II.tex	25480	proposition	5.2:prf-induction-order	PROVED	Order of the joint induction and its conclusion
+ca_II.tex	25687	lemma	5.2:lem-decay-fraction	PROVED	Admissible decay fractions and the doubled output rate
+ca_II.tex	25944	lemma	5.2:lem-enlargement-fractions	PROVED	Enlargement by one quarter against Ba{\l}aban's one fifth
+ca_II.tex	26201	lemma	5.3:lem-driven-flow	PROVED	The driven flow of the running shift
+ca_II.tex	26326	lemma	5.3:lem-coupling-shift	PROVED	Position of the coupling shift in one step
+ca_II.tex	26415	lemma	5.3:lem-wilson-source	PROVED	Source part of the Wilson action
+ca_II.tex	27042	theorem	5.14:thm-one-loop-law	PROVED	Exact one-loop law of the construction's running coupling
+ca_II.tex	27595	lemma	5.14:lem-depth-separation	PROVED	Logarithmic tie between separation and witness depth
+ca_II.tex	27680	corollary	5.14:cor-separation-one-loop	PROVED	One-loop law of the coupling at separation $\mathsf{d}$
+ca_II.tex	27792	corollary	5.14:cor-physical-charge	PROVED	Fixed-factor one-loop bounds for the physical charge
+ca_II.tex	27977	corollary	5.14:cor-the-one-loop-law-for-the-cou	PROVED	The one-loop law for the coupling of the two-point display
+ca_II.tex	28131	corollary	5.14:cor-the-charge-read-off-the-two	PROVED	The charge read off the two-point function runs at the one-loop rate within a fixed factor
+ca_II.tex	29166	lemma	5.4:lem-carrier-in-zone	PROVED	A unit's carrier stays inside its own zone set
+ca_II.tex	29291	lemma	5.4:lem-cells-carrier	PROVED	Cells against a carrier
+ca_II.tex	29476	lemma	5.4:lem-neighbourhood-star	PROVED	The radius-one neighbourhood of a cell lies in either star
+ca_II.tex	29561	lemma	5.4:lem-star-exit-length	PROVED	Length from exit of the star
+ca_II.tex	29617	lemma	5.4:lem-met-cell-length	PROVED	Length of a long unit at a met cell
+ca_II.tex	29694	lemma	5.4:lem-shell-series	PROVED	The shell series
+ca_II.tex	29776	proposition	5.4:prop-per-cube-transport	PROVED	The per-cube transport
+ca_II.tex	29879	corollary	5.4:cor-current-level-bound	PROVED	The long-unit bound at a cell of the current level
+ca_II.tex	29927	corollary	5.4:cor-general-cell-bound	PROVED	The long-unit bound at a general cell, level by level
+ca_II.tex	30204	proposition	5.4:prop-per-cell-transport	PROVED	The per-cell transport
+ca_II.tex	30530	lemma	5.4:lem-weighted-columns	PROVED	Weighted filing columns
+ca_II.tex	30574	lemma	5.4:lem-met-filed-equivalence	PROVED	Met-indexed and filed per-cell bounds are one statement
+ca_II.tex	30699	lemma	5.4:lem-boundary-belt	PROVED	The belt at a cell beside the treated class
+ca_II.tex	30814	lemma	5.4:lem-poly-exp-sup	PROVED	Polynomial against exponential
+ca_II.tex	30857	theorem	5.4:thm-finer-zone-sum	PROVED	Summation of boundary terms at finer zones
+ca_II.tex	31032	lemma	5.4:lem-rim-trunk	PROVED	Rim and trunk of a long unit off the treated class
+ca_II.tex	31132	lemma	5.4:lem-collar	PROVED	The collar lemma for foreign and sibling windows
+ca_II.tex	31207	corollary	5.4:eq-collar-1	PROVED	Absorption of a window weight by one collar factor
+ca_II.tex	31252	lemma	5.4:lem-two-cauchy	PROVED	Two Cauchy estimates for interpolated derivatives
+ca_II.tex	31391	proposition	5.4:prop-long-piece-size	PROVED	The analytic size bound for long pieces
+ca_II.tex	31469	corollary	5.4:cor-long-unit-sums	PROVED	Long units in the boundary-term sums
+ca_II.tex	31827	proposition	5.4:prf-off-class-piece-sum	PROVED	The pointed-piece sum for long units off the treated class
+ca_II.tex	32159	lemma	5.4:lem-own-windows	PROVED	Own windows of live arrests
+ca_II.tex	32298	proposition	5.4:prop-own-window-weights	PROVED	Own-window weights paid by the unit's own length
+ca_II.tex	32666	lemma	5.4:lem-bundle-frame	PROVED	The bundle frame for long units off the treated class
+ca_II.tex	32850	lemma	5.4:lem-rim-mass	PROVED	Rim mass of long units, all levels at once
+ca_II.tex	32935	lemma	5.4:lem-window-placement	PROVED	Placing the window weight
+ca_II.tex	33051	theorem	5.4:thm-bundle-sum	PROVED	The bundle sum for long units off the treated class
+ca_II.tex	33150	corollary		PROVED	Conversion of the bundle sum into the small factor
+ca_II.tex	33179	corollary		PROVED	Label reading for long units off the treated class
+ca_II.tex	33529	theorem	5.4:thm-touch-label-sum	PROVED	The label sum with attachments under the touch reading
+ca_II.tex	33773	proposition	5.4:prop-anchor-route	PROVED	Long units anchored at their own scale
+ca_II.tex	35258	lemma	5.5:lem-weight	PROVED	The weight lemma
+ca_II.tex	37907	theorem	5.5:thm-family-closure	PROVED	Closure of the two-cutoff comparison family under the listed moves
+ca_II.tex	38830	corollary	5.5:cor-closure-hypotheses-met	PROVED	The cited closure hypotheses hold on the production closure
+ca_II.tex	39374	lemma	5.5:lem-input-margin	PROVED	The margin condition on the input at a term
+ca_II.tex	39436	theorem	5.5:thm-own-level-membership	PROVED	Own-level membership at every block
+ca_II.tex	41095	theorem	5.5:thm-closure-theorem	PROVED	Minimality, containment and finiteness of the production closure
+ca_II.tex	41456	lemma	5.5:lem-pair-bounds	PROVED	Pair bounds on the production closure
+ca_II.tex	41886	proposition	5.5:prop-difference-linear	PROVED	The difference number as a monotone linear functional
+ca_II.tex	42311	theorem	5.5:thm-difference-recursion	PROVED	The recursion for difference sizes on the larger closure
+ca_II.tex	42928	lemma	5.5:lem-correction-support	PROVED	Support of the correction form and its distance
+ca_II.tex	43885	theorem	5.5:thm-membership-remainder	PROVED	Membership, holomorphy and bound of the remainder
+ca_II.tex	44335	corollary	5.5:cor-thin-layers	PROVED	Membership of thin layers on the box field
+ca_II.tex	44941	lemma	5.6:lem-cauchy-factor	PROVED	An elementary inequality for the Cauchy factor
+ca_II.tex	45008	lemma	5.6:lem-cauchy-estimates	PROVED	Cauchy estimates for mixed first derivatives on a polydisc
+ca_II.tex	45154	lemma	5.6:lem-weight	PROVED	The weight lemma
+ca_II.tex	45479	lemma	5.6:lem-tree-length-adjunction	PROVED	Tree lengths under adjunction of cells
+ca_II.tex	45645	lemma	5.6:lem-rooted-sets	PROVED	Counting rooted connected sets of cells
+ca_II.tex	45703	lemma	5.6:lem-tree-cells	PROVED	Cells met by a tree graph
+ca_II.tex	46131	proposition	5.6:prop-polydisc-holomorphy	PROVED	Holomorphy of localised terms on the decoupling polydisc
+ca_II.tex	46896	proposition	5.6:prop-localized-field	CITED	Analyticity of the localized field in the decoupling parameters {\cite[\S1, (1.17)--(1.21)]{B-CMP116}}
+ca_II.tex	47124	lemma	5.6:lem-open-polydisc	PROVED	From the closed to the open polydisc of the same radius
+ca_II.tex	47179	theorem	5.6:thm-full-polydisc	PROVED	Analyticity of the cluster-expansion terms on the full decoupling polydisc
+ca_II.tex	47603	corollary	5.6:cor-weight-hypothesis	PROVED	The weight lemma's hypothesis and bound for the cluster-expansion terms
+ca_II.tex	48764	lemma	5.6:lem-open-polydisc-bis	PROVED	From the closed to the open polydisc without loss of radius
+ca_II.tex	48806	lemma	5.6:lem-nested-composition	PROVED	Nested composition of polydisc-analytic maps
+ca_II.tex	48988	lemma	5.6:lem-composition-variant	PROVED	Nested composition with the range condition on the composite
+ca_II.tex	49117	theorem	5.6:thm-link-holomorphy	PROVED	Holomorphy of the link pieces in the decoupling parameters
+ca_II.tex	49229	corollary	5.6:cor-link-weight	PROVED	The weight lemma for the link pieces
+ca_II.tex	49471	lemma	5.7:lem-one-lattice-vanishing	INCOMPLETE	Vanishing of all two-cutoff differences on one lattice. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	49544	lemma	5.7:lem-two-map-interpolation	PROVED	Interpolation between two analytic maps
+ca_II.tex	49844	lemma	5.7:lem-three-quarter-rate	PROVED	Majorants at three quarters of the kernel rate
+ca_II.tex	50158	proposition	5.7:prop-response-zeroth-order	PROVED	The two-cutoff response statement at zeroth order
+ca_II.tex	50819	lemma	5.7:lem-native-loop-closeness	PROVED	Closeness of native loops and plaquettes at real data
+ca_II.tex	51042	lemma	5.7:lem-datum-reduction	PROVED	Reduction of the finer averaged datum to one lattice
+ca_II.tex	51174	corollary	5.7:cor-chart-data-control	PROVED	Linear control of the children's chart data
+ca_II.tex	51433	proposition	5.7:prop-dilated-action-family	PROVED	Two-cutoff difference of the dilated action family
+ca_II.tex	51721	theorem	5.7:thm-remainder-value	PROVED	The two-cutoff value of the remainder without dilation
+ca_II.tex	51880	lemma	5.7:lem-flat-profile	PROVED	The flat profile at five eighths of the rate
+ca_II.tex	51981	lemma	5.7:lem-flat-energy-bound	PROVED	The flat energy-difference bound
+ca_II.tex	52107	proposition	5.7:prop-critical-layer-closeness	PROVED	Layer closeness at critical parents
+ca_II.tex	52399	proposition	5.7:prop-rippled-layer-closeness	OUTSTANDING	Linear layer closeness at rippled parents; proof outstanding
+ca_II.tex	52496	proposition	5.7:prop-fractional-layer-closeness	PROVED	Layer closeness at real rippled parents with a fractional power
+ca_II.tex	52852	lemma	5.7:lem-comb-dilation-bounds	PROVED	Bounds for the comb dilation on one lattice
+ca_II.tex	53088	theorem	5.7:thm-low-order-variation	PROVED	The low-order variation bound at the second cube size
+ca_II.tex	53184	proposition	5.7:prop-relative-variation	PROVED	The relative form of the variation bound
+ca_II.tex	53369	lemma	5.7:lem-axial-gauge-cubes	PROVED	Axial gauge on the cubes of Ba{\l}aban's configuration spaces
+ca_II.tex	53446	corollary	5.7:cor-boundary-membership	PROVED	The boundary hypothesis as a membership clause
+ca_II.tex	53823	lemma	5.8:lem-kernel-difference	PROVED	Linearised difference of the two kernels
+ca_II.tex	53938	proposition	5.8:prop-rate-window	PROVED	Sharp rate window for transported mismatches
+ca_II.tex	54464	proposition	5.8:prop-local-decay	CITED	Ba{\l}aban's local decay of propagators and projections {\cite[(3.42)--(3.45), (3.48), (3.49), Theorems~3.1, 3.3, (3.132)--(3.133)]{B-CMP99b}}, {\cite[(71), (73)]{B-CMP102b}}
+ca_II.tex	54662	lemma	5.8:lem-weighted-calculus	PROVED	Weighted calculus: products spend no decay rate
+ca_II.tex	54803	lemma	5.8:lem-averaging-correction	PROVED	Local analyticity of the nonlinear averaging correction
+ca_II.tex	54874	lemma	5.8:lem-weighted-chart	PROVED	The chart in weighted norms
+ca_II.tex	55095	lemma	5.8:lem-critical-size	PROVED	Critical-point size at a tempered profile
+ca_II.tex	55218	lemma	5.8:lem-critical-stability	PROVED	Weighted stability of the critical point
+ca_II.tex	55448	lemma	5.8:lem-gauge-component	PROVED	Gauge component of the critical point
+ca_II.tex	55584	lemma	5.8:lem-projection-lipschitz	PROVED	Lipschitz dependence of the gauge projection
+ca_II.tex	55765	lemma	5.8:lem-projection-nesting	PROVED	Nesting of fine and coarse gauge projections
+ca_II.tex	55882	theorem	5.8:thm-response-comparison	PROVED	Two-cutoff comparison of responses at tempered profiles
+ca_II.tex	56285	corollary	5.8:cor-comparison-forms	PROVED	Response comparison in local, uniform and framed forms
+ca_II.tex	56411	corollary	5.8:cor-cut-move	PROVED	Increment bound for a move by a cut response
+ca_II.tex	56605	corollary	5.8:cor-multiplier-comparison	PROVED	Two-cutoff comparison of the multipliers
+ca_II.tex	56800	lemma	5.8:lem-local-slot	PROVED	Moves with the local second slot remain entries
+ca_II.tex	57204	corollary	5.8:cor-contour-size	PROVED	Natural size of the cut response on the contour
+ca_II.tex	57426	lemma	5.8:lem-one-cutoff-sizes	PROVED	One-cutoff sizes of the layers and far datum
+ca_II.tex	57711	lemma	5.8:lem-energy-difference	PROVED	The flat energy-difference bound
+ca_II.tex	58123	corollary	5.8:cor-three-member	PROVED	The three-member comparison at the flat profile
+ca_II.tex	58206	corollary	5.8:cor-mismatch-response	PROVED	The local mismatch factor in the zeroth-order response
+ca_II.tex	58369	corollary	5.8:cor-complex-ancestors	PROVED	Absolute mismatch bound at complex ancestor parameters
+ca_II.tex	58490	proposition	5.8:prop-off-vertex	PROVED	The bound off the natural decoupling vertices
+ca_II.tex	59137	theorem	5.9:thm-low-order-variation	PROVED	The low-order variation bound at the second cube size
+ca_II.tex	59574	proposition	5.10:prop-m-freeness	PROVED	$M$-freeness of the random-walk constants, companion of the bounds for old terms beside a new region
+ca_II.tex	59926	proposition	5.12:prop-subsequential-limits	PROVED	Subsequential continuum limits of the Schwinger functions
+ca_II.tex	60089	lemma	5.12:lem-limit-positivity	PROVED	Reflection positivity of the limits at disjoint supports
+ca_II.tex	60180	proposition	5.13:prop-sun-correlation	PROVED	The correlation theorem for $\mathrm{SU}(N)$, $N\ge3$
+ca_II.tex	60440	lemma	6.1:lem-reflection-positivity	PROVED	Reflection positivity of the lattice measure
+ca_II.tex	60634	corollary	6.1:cor-reflection-form	PROVED	The reflection form is positive semidefinite
+ca_II.tex	61119	lemma	6.2:lem-chessboard-value	PROVED	Positivity of the chessboard value
+ca_II.tex	61205	lemma	6.2:lem-chessboard-estimate	PROVED	The chessboard estimate for complex cell observables
+ca_II.tex	61417	lemma	6.2:lem-support-placement	PROVED	Placing the supports inside cells by translation
+ca_II.tex	61517	lemma	6.2:lem-periodised-weight	PROVED	The periodised weight and its class
+ca_II.tex	61874	lemma	6.2:lem-domain-diameter	PROVED	Diameter of an enlarged localisation domain
+ca_II.tex	62030	lemma	6.2:lem-tree-sum	PROVED	Anchor count and tree-graph sum with threshold
+ca_II.tex	62127	lemma	6.2:lem-ultraviolet-bound	PROVED	The ultraviolet bound for separated ball sources
+ca_II.tex	62293	lemma	6.2:lem-face-estimate	PROVED	The bound on domains meeting a cell face
+ca_II.tex	62398	lemma	6.2:lem-bounded-logarithm	PROVED	The logarithm of a bounded holomorphic function
+ca_II.tex	62497	lemma	6.2:lem-chessboard-inequality	PROVED	The chessboard inequality with bulk and face terms
+ca_II.tex	62645	proposition	6.2:prop-cell-covariance	PROVED	The bound under cell covariance
+ca_II.tex	63836	corollary	6.3:cor-volume-free-constant	PROVED	The per-ball volume-free bound in unit-lattice units
+ca_II.tex	63964	theorem	6.4:thm-per-ball-bound	PROVED	The per-ball volume-free bound
+ca_II.tex	64702	proposition	7.1:prop-torus-limits	PROVED	Fixed-torus limits along first passage
+ca_II.tex	65243	proposition	7.2:prop-torus-reflection	PROVED	Reflection positivity of the torus Schwinger functions
+ca_II.tex	65361	corollary	7.2:cor-reflection-form	PROVED	The reflection form and its Cauchy--Schwarz inequality
+ca_II.tex	65424	theorem	7.3:thm-tuned-family	PROVED	Convergence of the curvature Schwinger functions along the tuned family on a fixed torus (clause (ii-$\mathbb{T}$-a))
+ca_II.tex	65470	lemma	7.3:lem-first-passage-offsets	OUTSTANDING	Non-convergence of the first-passage offsets. Proof outstanding
+ca_II.tex	65661	lemma	7.4:lem-torus-transport	PROVED	Transport of compactly supported test functions to the torus
+ca_II.tex	65844	lemma	7.4:lem-lattice-symmetries	PROVED	Lattice symmetries of the curvature cumulants
+ca_II.tex	65929	lemma	7.4:lem-half-space	PROVED	Half-space observables depend only on an open slab
+ca_II.tex	66048	lemma	7.4:lem-translation-modulus	PROVED	The translation modulus in the sharp norm
+ca_II.tex	66209	lemma	7.4:lem-linearity	PROVED	Linearity in the test function
+ca_II.tex	66412	theorem	7.4:thm-infinite-volume	PROVED	The infinite-volume theorem
+ca_II.tex	66677	lemma	7.4:prf-equicontinuity	PROVED	Equicontinuity and existence of the limits
+ca_II.tex	67014	lemma	7.5:prf-limit-distributions	PROVED	The limits as distributions off the diagonals
+ca_II.tex	67131	lemma	7.5:prf-exact-invariance	PROVED	Exact invariance under translations and signed permutations
+ca_II.tex	67312	lemma	7.6:prf-centred-positivity	PROVED	Reflection positivity of the centred limit
+ca_II.tex	67528	lemma	7.7:prf-reconstructed-space	PROVED	The reconstructed space and bounds uniform in time
+ca_II.tex	68570	proposition	8.1:prop-correlation-witness-depth	PROVED	The correlation theorem at the witness depth
+ca_II.tex	69079	lemma	8.1:lem-spanning-split	PROVED	Splitting off the spanning local terms
+ca_II.tex	69301	lemma	8.1:lem-invariant-facts	PROVED	Invariant-theoretic facts for $\mathfrak{su}(N)$
+ca_II.tex	69457	lemma	8.1:lem-gaussian-squares	PROVED	Covariance of two sums of Gaussian squares
+ca_II.tex	69516	lemma	8.1:lem-free-curvature-covariance	PROVED	The free lattice curvature covariance
+ca_II.tex	69682	lemma	8.1:lem-kernel-positivity	PROVED	The Gaussian two-point covariance and positivity of the kernel
+ca_II.tex	69849	lemma	8.1:lem-background-tower	PROVED	The background covariance as an orthogonal tower
+ca_II.tex	69925	lemma	8.1:lem-kernel-bounds	PROVED	Upper and lower bounds and marginal scaling of the kernel
+ca_II.tex	70154	lemma	8.1:lem-moment-free-decay	PROVED	Decay of a moment-free quadratic form against a distant square
+ca_II.tex	70305	lemma	8.1:lem-history-decomposition	PROVED	A linear positive history decomposition
+ca_II.tex	70413	lemma	8.1:lem-total-covariance	PROVED	The total covariance formula over histories
+ca_II.tex	70501	lemma	8.1:lem-running-normalisation	PROVED	The running normalisation at the witness level
+ca_II.tex	70598	proposition	8.1:prop-logarithmic-derivative	PROVED	Structure of the first logarithmic derivative of a history term
+ca_II.tex	70983	lemma	8.1:lem-mixed-derivative-locality	PROVED	Locality of the mixed second derivative
+ca_II.tex	71279	theorem	8.1:thm-two-point-witness	PROVED	The two-point witness theorem
+ca_II.tex	71567	lemma	8.1:lem-healed-label-covariance	PROVED	Covariance against a deep healed label
+ca_II.tex	71671	lemma	8.1:lem-bad-event	PROVED	The bad-history event and its annealed mass
+ca_II.tex	72642	lemma	8.1:prf-local-remainder	PROVED	The spanning local remainder
+ca_II.tex	72821	lemma	8.1:prf-extraction-remainder	PROVED	The Gaussian-extraction remainder
+ca_II.tex	73529	corollary	8.1:cor-two-sided-bounds	PROVED	Two-sided two-point bounds and non-triviality
+ca_II.tex	74201	lemma	8.2:lem-flat-background	PROVED	Gauge-invariant observables near a flat background
+ca_II.tex	74322	lemma	8.2:lem-conditional-step	PROVED	The small-field step with an inserted observable
+ca_II.tex	74667	lemma	8.2:lem-box-exponent	PROVED	Analytic form and parity splitting of the box exponent
+ca_II.tex	75164	lemma	8.2:lem-fluctuation-positivity	PROVED	Positivity of the fluctuation form
+ca_II.tex	75214	lemma	8.2:lem-curvature-contraction	PROVED	Contraction of curvature by the background fields
+ca_II.tex	75635	lemma	8.2:lem-coupling-comparison	PROVED	Comparison of couplings along a segment
+ca_II.tex	75707	lemma	8.2:lem-laplace-parity	PROVED	Laplace extraction with parity on a nearly symmetric window
+ca_II.tex	75967	lemma	8.2:lem-laplace-covariance	PROVED	Laplace extraction for a tilted covariance
+ca_II.tex	77279	proposition	8.2:prop-gaussian-extraction	PROVED	The Gaussian extraction
+ca_II.tex	77861	corollary	8.2:cor-second-moment	PROVED	Conditional second moment of the plaquette observable
+ca_II.tex	77989	corollary	8.2:cor-pair-covariance	PROVED	Two-point covariance averaged over joint translates
+ca_II.tex	78435	lemma	8.2:lem-clean-complement	PROVED	Weight of the complement of the clean event
+ca_II.tex	78625	corollary	8.2:cor-witness-block	PROVED	The one-point witness under the block law
+ca_II.tex	78822	corollary	8.2:cor-witness-true	PROVED	The one-point witness in the true measure
+ca_II.tex	78890	corollary	8.2:cor-admissible-depths	PROVED	Admissible box sizes and extraction depths
+ca_II.tex	80286	lemma	8.3:lem-read-set	PROVED	The read set of the inserted observable
+ca_II.tex	80424	lemma	8.3:lem-box-law-mixture	PROVED	The branch expectation as a mixture of box laws
+ca_II.tex	80584	lemma	8.3:lem-weighted-inverse-decay	PROVED	Exponential weights, decay of inverses and Schur complements
+ca_II.tex	80752	lemma	8.3:lem-retraction-wall	PROVED	Smooth retraction and convex wall for a convex body
+ca_II.tex	80959	lemma	8.3:lem-flow-invariance	PROVED	Hamiltonian flow preserves the Gibbs measure
+ca_II.tex	81024	lemma	8.3:lem-synchronous-coupling	PROVED	Synchronous coupling of two Hamiltonian flows
+ca_II.tex	81161	proposition	8.3:prop-lipschitz-stability	PROVED	Exterior-uniform Lipschitz stability of windowed Gibbs measures
+ca_II.tex	81493	theorem	8.3:thm-density-bound	PROVED	Two-sided density bound on the read set
+ca_II.tex	81645	corollary	8.3:cor-mixture-covariances	PROVED	Expectations and covariances under mixtures
+ca_II.tex	81753	corollary	8.3:cor-box-exponent-choice	PROVED	Choice of box exponent and removal of perturbations
+ca_II.tex	81804	corollary	8.3:cor-subgaussian-tails	PROVED	Sub-Gaussian tails of linear functionals
+ca_II.tex	81863	lemma	8.3:lem-exterior-force-locality	PROVED	Polymer format implies locality of the exterior force
+ca_II.tex	82029	lemma	8.3:lem-localisation-hypotheses	PROVED	Hypotheses of box localisation and their verification
+ca_II.tex	82496	theorem	8.3:thm-box-localisation	PROVED	Box localisation under the six hypotheses
+ca_II.tex	82711	theorem	8.3:thm-sourced-step-localisation	PROVED	Localisation of the sourced step
+ca_II.tex	83175	lemma	8.3:lem-inverse-comparison	PROVED	Comparison of inverses of exponentially local forms
+ca_II.tex	83289	corollary	8.3:cor-extracted-covariance	PROVED	The extracted covariance as Ba{\l}aban's fluctuation covariance
+ca_II.tex	83869	lemma	8.3:lem-correlation-decay	PROVED	Exponential decay of correlations in the class
+ca_II.tex	84357	lemma	8.3:lem-principal-blocks	PROVED	Principal blocks, Schur complements and interpolations
+ca_II.tex	84493	lemma	8.3:lem-boundary-profile	PROVED	Boundary profile of the coupling observable
+ca_II.tex	84687	theorem	8.3:thm-decoupling-localisation	PROVED	Box localisation by decoupling interpolation
+ca_II.tex	84897	corollary	8.3:eq-decoupling-localisation-7	PROVED	Gradient form of box localisation
+ca_II.tex	84948	proposition	8.3:prop-class-membership	PROVED	The step on a clean history lies in the class
+ca_II.tex	85403	corollary	8.3:cor-interpolation-localisation	PROVED	Localisation of the sourced step by interpolation
+ca_II.tex	85845	theorem	8.4:thm-minimiser-analyticity	CITED	{Ba{\l}aban's analyticity of the minimiser in the data, with derivative decay; \cite[Theorem~1, Proposition~9, (190)]{B-CMP102b}}
+ca_II.tex	86343	lemma	8.4:lem-elementary-facts	PROVED	Three elementary facts on holomorphic functions and matrix exponentials
+ca_II.tex	86550	lemma	8.4:lem-zone-zero-invisible	PROVED	Deep zone-0 data are invisible to the minimiser
+ca_II.tex	86658	lemma	8.4:lem-base-regularity	PROVED	The restricted regularity hypothesis holds for the base data
+ca_II.tex	86772	lemma	8.4:lem-far-member	PROVED	The far-member lemma
+ca_II.tex	87398	corollary	8.4:cor-plaquette-traces	PROVED	Plaquette traces of the responding background
+ca_II.tex	87752	corollary	8.4:cor-frozen-coupling	PROVED	The frozen-coupling member at live regions
+ca_II.tex	87976	corollary	8.4:cor-generic-far-members	PROVED	Generic far members: extension and summed gradient bound
+ca_II.tex	88192	proposition	8.4:prop-small-piece	INCOMPLETE	The small-piece statement. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	89551	lemma	8.5:lem-constant-flux-forms	PROVED	Constant-flux forms of gauge-invariant localised terms
+ca_II.tex	89844	lemma	8.5:lem-invariant-forms-scalar	PROVED	Hyperoctahedral-invariant forms on two-forms are scalar
+ca_II.tex	90072	lemma	8.5:lem-block-sum-scalar	PROVED	Covariance makes block-summed constant-flux forms scalar
+ca_II.tex	90351	lemma	8.5:lem-affine-first-variation	PROVED	Affine solutions of the constrained first-variation equations
+ca_II.tex	90425	proposition	8.5:prop-row-sum-identity	INCOMPLETE	The constant row-sum identity of the minimiser kernel. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	90729	lemma	8.5:lem-radius-tails	PROVED	Radius tails of the majorant masses
+ca_II.tex	91539	proposition	8.5:prop-zero-block-mean	INCOMPLETE	Zero block mean of the marked residual form. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	91991	lemma	8.5:lem-covariance-upper	PROVED	Upper bound of the background covariance on the separated range
+ca_II.tex	92233	lemma	8.5:lem-covariance-difference	PROVED	Cell-scale difference bound for the background covariance
+ca_II.tex	92538	lemma	8.5:lem-covariance-growth	PROVED	Growth of the background covariance in the explicit scale
+ca_II.tex	92656	lemma	8.5:lem-wick-identity	PROVED	The Wick identity for the marked covariance
+ca_II.tex	92722	proposition	8.5:prop-profile-defect	PROVED	The source-profile defect
+ca_II.tex	92836	lemma	8.5:lem-corrected-weight	PROVED	The profile-corrected weight and its tail
+ca_II.tex	93196	theorem	8.5:thm-room-lemma	INCOMPLETE	The second-derivative room lemma. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	93890	corollary	8.5:cor-room-witness-unit	INCOMPLETE	The room in the two-point witness's unit, free of the coupling; stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	94225	proposition	8.5:prop-remainder-covariance	PROVED	Covariance of the remainder column, small in the running coupling
+ca_II.tex	94916	lemma	8.5:lem-response-decomposition	PROVED	Decomposition of the first-order irrelevant response
+ca_II.tex	94991	lemma	8.5:lem-unit-sum	PROVED	The unit-sum bound at one renormalisation step
+ca_II.tex	95257	lemma	8.5:lem-direct-potentials	PROVED	The marked-sum bound with directly given potentials
+ca_II.tex	95372	lemma	8.5:lem-source-quadratic	PROVED	Quadratic smallness of the source dependence
+ca_II.tex	95776	corollary	8.5:cor-source-derivative	PROVED	Derivative bounds free of the source radius
+ca_II.tex	95996	lemma	8.5:lem-background-regularity	PROVED	Regularity, regular gauge and nesting of critical backgrounds
+ca_II.tex	96141	lemma	8.5:lem-vacuum-subtraction	PROVED	Vacuum subtraction at the field's own amplitude
+ca_II.tex	96252	lemma	8.5:lem-core-estimate	PROVED	The core estimate on a critical background
+ca_II.tex	96610	theorem	8.5:thm-shortened-bound	PROVED	Bound on the shortened irrelevant response
+ca_II.tex	96824	lemma	8.5:lem-long-constituents	PROVED	The long constituents outside the kept set
+ca_II.tex	97016	proposition	8.5:prop-readings-shortened	PROVED	Every reading evaluates the shortened functional
+ca_II.tex	97254	proposition	8.5:prop-reading-sup	PROVED	One sup bound for every reading
+ca_II.tex	97327	lemma	8.5:lem-insertion-sup	PROVED	Sup bound on the main curvature insertion
+ca_II.tex	97563	theorem	8.5:thm-averaged-extraction	PROVED	The averaged second-order extraction estimate
+ca_II.tex	97867	corollary	8.5:cor-joint-sup	PROVED	Joint sup bound on insertion and irrelevant response
+ca_II.tex	97932	corollary	8.5:cor-pointwise-form	PROVED	The pointwise form for every top field
+ca_II.tex	97968	corollary	8.5:cor-unit-constant	PROVED	The original form with unit constant
+ca_II.tex	98122	lemma	8.5:lem-remainder-level-sum	PROVED	The irrelevant remainder as a sum over levels
+ca_II.tex	98402	lemma	8.5:lem-unit-sum-bound	PROVED	The unit-sum bound for a marked family
+ca_II.tex	98551	lemma	8.5:lem-direct-potentials-bis	PROVED	Marked potentials given directly
+ca_II.tex	98649	proposition	8.5:prop-local-source-split	PROVED	Splitting the sourced terms on shrinking radii
+ca_II.tex	99005	lemma	8.5:lem-source-quadratic-bis	PROVED	Quadratic smallness of the source-dependent part
+ca_II.tex	99208	corollary	8.5:cor-source-derivative-bis	PROVED	The first source derivative on shrinking radii
+ca_II.tex	99751	lemma	8.5:lem-minimiser-regular	PROVED	Minimisers of small-curvature data are regular
+ca_II.tex	99815	lemma	8.5:lem-single-terms	PROVED	Single terms on small real backgrounds
+ca_II.tex	99906	lemma	8.5:lem-renormalised-groups	PROVED	Renormalised groups on small real backgrounds
+ca_II.tex	100105	lemma	8.5:lem-regular-extension	PROVED	The regular extension lemma
+ca_II.tex	100323	lemma	8.5:lem-counting-bound	PROVED	The counting bound near a support
+ca_II.tex	100465	theorem	8.5:thm-remainder-sup	PROVED	The sup-norm bound on the irrelevant remainder
+ca_II.tex	100897	theorem	8.5:thm-remainder-sup-shrinking	PROVED	The sup-norm bound on shrinking radii
+ca_II.tex	101034	corollary	8.5:cor-natural-size	PROVED	The natural-size bound on the window
+ca_II.tex	101106	lemma	8.5:lem-branch-comparison	PROVED	Comparison with the branch reading of the remainder
+ca_II.tex	101316	lemma	8.5:lem-covariance-sup	PROVED	Covariances bounded by sup norms
+ca_II.tex	101467	theorem	8.5:thm-second-order-extraction	PROVED	The second-order extraction estimate
+ca_II.tex	101601	corollary	8.5:cor-irrelevant-small	PROVED	The irrelevant term against the main term
+ca_II.tex	101695	corollary	8.5:cor-one-step-towers	PROVED	The estimate on towers of one-step laws
+ca_II.tex	101789	corollary	8.5:cor-weak-bounds	PROVED	Weak sup, oscillation and truncation bounds
+ca_II.tex	101940	theorem	8.5:thm-exponent-floor	PROVED	The second-order estimate under an exponent floor
+ca_II.tex	102098	corollary	8.5:cor-array-argument	PROVED	The array argument from the sup-norm bound
+ca_II.tex	102357	corollary	8.5:cor-irrelevant-decay	PROVED	Decay of the irrelevant term at polylogarithmic room
+ca_II.tex	102730	lemma	8.6:lem-prefactor-monotone	INCOMPLETE	Monotonicity of the common prefactor under island removal. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	103301	lemma	8.6:lem-reserve-island-bound	PROVED	The reserve form of the island operation bound
+ca_II.tex	103387	lemma	8.6:lem-healed-islands-unread	INCOMPLETE	Later steps do not read earlier healed islands. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	103585	lemma	8.6:lem-coupling-comparison	PROVED	Coupling comparison and summability of the healing factors
+ca_II.tex	103722	lemma	8.6:lem-healed-removal	PROVED	Removal domination for a healed island
+ca_II.tex	104108	lemma	8.6:lem-hard-core-gas	PROVED	One-point, conditional and joint bounds in a positive hard-core gas
+ca_II.tex	104465	lemma	8.6:lem-mass-conservation	PROVED	Conservation of mass along the history tree
+ca_II.tex	104598	lemma	8.6:lem-annealed-removal	PROVED	Annealing and conditioning of the removal bound
+ca_II.tex	104763	theorem	8.6:thm-block-bound-healed	PROVED	The large-field block bound, healed part
+ca_II.tex	105068	corollary	8.6:cor-healed-rarity	PROVED	Rarity of healed islands near a cell, without sector restriction
+ca_II.tex	105266	proposition	8.6:prop-live-healed-part	PROVED	The healed part of the live event
+ca_II.tex	105368	proposition	8.6:prop-live-removal	OUTSTANDING	Removal domination for a live component. Proof outstanding
+ca_II.tex	105508	proposition	8.6:prop-terminal-live	PROVED	The terminal live member
+ca_II.tex	105620	theorem	8.6:thm-block-bound-live	PROVED	The large-field block bound, live part
+ca_II.tex	106171	proposition	8.6:prop-creation-rarity	OUTSTANDING	Conditional rarity of simultaneous creations. Proof outstanding
+ca_II.tex	106291	lemma	8.6:lem-peeling	PROVED	Peeling creations level by level
+ca_II.tex	106353	lemma	8.6:lem-blob-chains	PROVED	Reaching cells through chains of creation blobs
+ca_II.tex	106444	theorem	8.6:thm-young-two-cell	PROVED	Young labels and two-cell decay from the creation bound
+ca_II.tex	106655	corollary	8.6:cor-young-witness-bounds	PROVED	Young-member bounds for the witness events
+ca_II.tex	106818	lemma	8.6:lem-survival-bound	OUTSTANDING	Survival bound for long-lived creations. Proof outstanding
+ca_II.tex	106878	proposition	8.6:prop-exponential-moment	PROVED	Reduction of creation rarity to a local exponential moment
+ca_II.tex	107315	lemma	8.7:lem-creation-in-live	PROVED	A creation event lies in the live-cell events it meets
+ca_II.tex	107371	lemma	8.7:lem-first-moment	PROVED	First-moment bound for an extensive mark
+ca_II.tex	107738	lemma	8.7:lem-translation-covariance	INCOMPLETE	Translation covariance of the label histories. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	107908	theorem	8.7:thm-young-block-rarity	PROVED	Rarity of young large-field blocks
+ca_II.tex	108221	corollary	8.7:cor-young-member	PROVED	The young-member bound at the witness depth
+ca_II.tex	108298	lemma	8.7:lem-translation-average	PROVED	Translation averages suffice for the witness
+ca_II.tex	108696	lemma	8.7:lem-chessboard-torus	PROVED	Reflection positivity and the chessboard estimate on any torus
+ca_II.tex	108960	lemma	8.7:lem-resampling-kernel	INCOMPLETE	The renormalisation operation as a resampling kernel. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	109366	lemma	8.8:lem-graded-rarity	PROVED	Graded rarity in creation and field form, reduced to live cells
+ca_II.tex	109467	lemma	8.8:lem-grading-bounded	PROVED	Boundedness of the grading on tested cubes
+ca_II.tex	109661	lemma	8.8:lem-target-independence	INCOMPLETE	Independence of the steps from the target coupling. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	109702	lemma	8.8:lem-retargeting	PROVED	Re-targeting a member to an attainable level
+ca_II.tex	109859	lemma	8.8:lem-stability-exponent	PROVED	Logarithmic growth of the global stability exponent
+ca_II.tex	110102	lemma	8.8:lem-induction-base	PROVED	Base case: volume scale or coupling room
+ca_II.tex	110257	corollary	8.8:cor-flat-reserve	PROVED	The flat reserve at the volume scale
+ca_II.tex	110430	theorem	8.8:thm-live-cell-rarity	PROVED	Rarity of live cells at every admissible depth
+ca_II.tex	110854	corollary	8.8:cor-young-block-rarity	PROVED	Rarity of young large-field blocks
+ca_II.tex	111004	lemma	8.8:lem-healed-rim-location	PROVED	Location of the healed rim segment
+ca_II.tex	111228	proposition	8.8:prop-healed-rim-bound	PROVED	The healed-rim bound without excess
+ca_II.tex	112000	lemma	8.9:lem-age-lemma	INCOMPLETE	The age lemma. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	112174	lemma	8.9:lem-age-lemma-correlation	PROVED	The age lemma on the correlation theorem's clock
+ca_II.tex	112466	lemma	8.9:lem-age-payment	PROVED	The age-payment inequality under a coupling ceiling
+ca_II.tex	112595	theorem	8.9:thm-live-age-decay	PROVED	Decay in age of live large-field regions
+ca_II.tex	113036	proposition	8.9:prop-healed-old-region	PROVED	The healed old-region bound
+ca_II.tex	113739	lemma	8.10:lem-cube-fullness	PROVED	Fullness of closed-cube complexes
+ca_II.tex	113816	lemma	8.10:lem-steps-cells	PROVED	Lattice steps and cell distance
+ca_II.tex	114054	lemma	8.10:lem-homotopy-moves	PROVED	Transports under homotopy moves
+ca_II.tex	114125	lemma	8.10:lem-pure-gauge	PROVED	Flat fields on simply connected complexes are pure gauge
+ca_II.tex	114166	lemma	8.10:lem-prescribed-holonomy	PROVED	Flat field with prescribed holonomy
+ca_II.tex	114214	lemma	8.10:lem-stokes-rectangle	PROVED	Lattice Stokes bound for a rectangle
+ca_II.tex	114295	lemma	8.10:lem-ladder-identity	PROVED	The ladder identity
+ca_II.tex	114871	lemma	8.10:lem-collar-plaquettes	PROVED	Decomposition of the collar plaquettes
+ca_II.tex	115205	lemma	8.10:lem-margined-competitor	PROVED	The good set places a margined competitor in every window
+ca_II.tex	115307	lemma	8.10:lem-hull-boundary	PROVED	Structure of the hull's boundary
+ca_II.tex	115843	lemma	8.10:lem-linear-filling	PROVED	The linear filling problem
+ca_II.tex	115922	lemma	8.10:lem-obstruction-ranks	PROVED	Ranks and cohomological descriptions of the obstruction groups
+ca_II.tex	116169	lemma	8.10:lem-gauge-filling	PROVED	Filling from a small relative gauge
+ca_II.tex	116243	lemma	8.10:lem-collar-gauge	PROVED	Small relative gauge from a flat collar
+ca_II.tex	116311	lemma	8.10:lem-comb-gauge	PROVED	Comb gauge on a box
+ca_II.tex	116397	lemma	8.10:lem-box-filling	PROVED	Rough filling of a box from face data
+ca_II.tex	116646	theorem	8.10:thm-quantitative-filling	PROVED	Quantitative filling of unlinked and box hulls from a nearly flat collar
+ca_II.tex	116944	lemma	8.10:lem-flat-filling	PROVED	Exact flat filling of unlinked hulls, openness and counts
+ca_II.tex	117285	lemma	8.10:lem-flux-bound	PROVED	Flux bound for margined fillings
+ca_II.tex	117592	proposition	8.10:prop-window-lower-bound	OUTSTANDING	The window-constrained Laplace lower bound; proof outstanding
+ca_II.tex	117653	lemma	8.10:lem-competitor-kernel	PROVED	The Laplace kernel around a margined competitor
+ca_II.tex	117753	proposition	8.10:prop-old-member	INCOMPLETE	The old-member statement. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	117934	lemma	8.10:lem-hull-sizes	PROVED	Sizes of the hull complexes
+ca_II.tex	118060	lemma	8.10:lem-budget-inequality	PROVED	The budget inequality
+ca_II.tex	118319	proposition	8.10:prop-non-fillable	INCOMPLETE	Non-fillable exteriors with flat collar. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	118455	proposition	8.10:prop-obstruction-instances	PROVED	Instances from a non-zero obstruction group
+ca_II.tex	118632	proposition	8.10:prop-hollow-shell	PROVED	The hollow-shell instance
+ca_II.tex	118948	corollary	8.10:cor-domination-failure	PROVED	Failure of the domination on the curvature-defined good set
+ca_II.tex	119186	proposition	8.10:prop-hole-law-typicality	OUTSTANDING	Typicality of fillable exteriors under the hole law. Proof outstanding
+ca_II.tex	119744	lemma	8.11:lem-energy-below-support	PROVED	Energy bounds below the support value
+ca_II.tex	119918	lemma	8.11:lem-good-thresholds	PROVED	Abundance of good thresholds
+ca_II.tex	120082	lemma	8.11:lem-release-squeeze	PROVED	Release and squeeze at the constrained minimiser
+ca_II.tex	120559	lemma	8.11:lem-relative-projection	PROVED	Relative Hodge projection on a box
+ca_II.tex	120641	lemma	8.11:lem-torus-reflection	PROVED	Reflection onto the doubled torus
+ca_II.tex	120731	lemma	8.11:lem-torus-kernel	PROVED	Derivative bounds for the torus Green's function
+ca_II.tex	120924	corollary	8.11:cor-projection-kernels	PROVED	Decay of the relative Hodge projection kernels
+ca_II.tex	121082	lemma	8.11:lem-axial-homotopy	PROVED	The axial homotopy operator
+ca_II.tex	121273	proposition	8.11:prop-trace-representation	PROVED	Trace representation with nonabelian defects
+ca_II.tex	121794	lemma	8.11:lem-system-geometry	PROVED	Geometry of the explicit path--surface system
+ca_II.tex	122046	lemma	8.11:lem-nonabelian-defects	PROVED	Nonabelian defects in the axial gauge
+ca_II.tex	122323	theorem	8.11:thm-deep-curvature	PROVED	Curvature bound deep inside the hole
+ca_II.tex	122895	lemma	8.11:lem-clamped-block	PROVED	Block curvature bound in the clamped layer
+ca_II.tex	122938	lemma	8.11:lem-signed-averaging	CITED	{The signed block-averaging identity; \cite[(45)--(49)]{B-CMP98}}
+ca_II.tex	123009	lemma	8.11:lem-kernel-variation	PROVED	Variation of the projection kernel
+ca_II.tex	123070	lemma	8.11:lem-weighted-flux	PROVED	Weighted flux through a block region
+ca_II.tex	123243	theorem	8.11:thm-deep-curvature-blocks	PROVED	The deep curvature bound through block data
+ca_II.tex	123532	corollary	8.11:cor-logarithmic-bound	PROVED	Logarithmic bound beyond twice the clamp width
+ca_II.tex	123671	corollary	8.11:cor-no-young-windows	PROVED	The bound without young windows
+ca_II.tex	123750	corollary	8.11:cor-scale-jump	PROVED	Young windows inactive under a scale jump
+ca_II.tex	123859	corollary	8.11:cor-small-heights	PROVED	The bound at small reading heights
+ca_II.tex	124034	corollary	8.11:cor-arbitrary-extent	PROVED	Box holes of arbitrary extent
+ca_II.tex	124111	proposition	8.11:prop-two-sided-profile	MODEL	Model: two-sided logarithmic profile behind the clamp
+ca_II.tex	124555	corollary	8.11:cor-threshold-existence	PROVED	A good threshold for every exterior
+ca_II.tex	125400	proposition	8.12:prop-old-region-moments	PROVED	Old live regions enter only through first and second slot moments
+ca_II.tex	126359	proposition	8.12:prop-weak-torus-rarity	PROVED	Rarity of never-healed old regions on weakly coupled tori
+ca_II.tex	126643	corollary	8.12:cor-weak-torus-witness	PROVED	The age series and the two-point witness on weakly coupled tori
+ca_II.tex	126839	proposition	8.12:prop-depth-floor-rarity	INCOMPLETE	Rarity of never-healed old regions above a volume-dependent depth floor. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	127030	corollary	8.12:cor-finite-volume-witness	PROVED	The two-point witness in finite volume
+ca_II.tex	127294	proposition	8.12:prop-uniform-old-rarity	OUTSTANDING	Volume-uniform rarity of never-healed old regions. Proof outstanding
+ca_II.tex	127906	lemma	8.13:lem-opposite-bonds	MODEL	Model: no adjacent opposite tight bonds
+ca_II.tex	127998	lemma	8.13:lem-floating-runs	MODEL	Model: no floating tight runs
+ca_II.tex	128106	lemma	8.13:lem-hanging-runs	MODEL	Model: hanging young runs and full columns
+ca_II.tex	128195	lemma	8.13:lem-tent-poles-concave	MODEL	Model: lower tent poles are laterally concave
+ca_II.tex	128271	lemma	8.13:lem-anchored-runs	MODEL	Model: anchored young runs sit on tip columns
+ca_II.tex	128439	lemma	8.13:lem-anchored-down-run	MODEL	Model: no anchored young down-run
+ca_II.tex	128513	lemma	8.13:lem-tight-census	MODEL	Model: census of young-tight bonds
+ca_II.tex	128656	lemma	8.13:lem-kink-pull-sign	MODEL	Model: the kink pulls upward near the tip
+ca_II.tex	128788	lemma	8.13:lem-kink-pull-decay	MODEL	Model: decay of the kink's pull
+ca_II.tex	128888	lemma	8.13:lem-tip-pull-bound	MODEL	Model: two-sided pull bound near the tip
+ca_II.tex	129063	lemma	8.13:lem-cool-band	MODEL	Model: the band is cool away from the tips
+ca_II.tex	129155	corollary	8.13:cor-hot-box	MODEL	Model: the hot box
+ca_II.tex	129344	lemma	8.13:lem-variational-inequality	MODEL	Model: the variational inequality
+ca_II.tex	129602	lemma	8.13:lem-clipping-lipschitz	MODEL	Model: clipping preserves the tangential Lipschitz bound
+ca_II.tex	129688	lemma	8.13:lem-competitor-energy	MODEL	Model: feasibility and energy of the competitor
+ca_II.tex	129779	lemma	8.13:lem-energy-budget	MODEL	Model: the local energy budget
+ca_II.tex	129958	lemma	8.13:lem-segment-cost	MODEL	Model: a transported segment costs cubic energy
+ca_II.tex	130037	corollary	8.13:cor-no-full-column	MODEL	Model: no young-full column
+ca_II.tex	130145	corollary	8.13:cor-short-needle	MODEL	Model: the tip needle is short
+ca_II.tex	130262	lemma	8.13:lem-cap-continuity	MODEL	Model: continuity of the minimiser in the cap
+ca_II.tex	130359	proposition	8.13:prop-no-hanging-pole	MODEL	Model: no hanging young pole
+ca_II.tex	130537	theorem	8.13:thm-inactivity	MODEL	Model: inactivity at full band width
+ca_II.tex	130630	corollary	8.13:cor-depth-log-bound	MODEL	Model: logarithmic bound at depth two clamp-widths
+ca_II.tex	130716	corollary	8.13:cor-inactivity-blocks	MODEL	Model: inactivity read in the block variables
+ca_II.tex	131200	lemma	8.14:lem-poisson-identities	MODEL	Model: Poisson operator identities, uniform in lateral size
+ca_II.tex	131405	lemma	8.14:lem-innovations-identity	MODEL	Model: the innovations identity
+ca_II.tex	131615	theorem	8.14:thm-exit-value	MODEL	Model: the exit-value theorem
+ca_II.tex	131898	theorem	8.14:prf-concavity-absorption	MODEL	Model: concavity, absorption and exactness
+ca_II.tex	132216	corollary	8.14:cor-stopping-height	MODEL	Model: monotone increments and a stopping height
+ca_II.tex	132385	lemma	8.14:lem-exit-pull	MODEL	Model: exit pull from exit-row curvature
+ca_II.tex	132812	lemma	8.14:lem-one-row-ceiling	MODEL	Model: the one-row ceiling
+ca_II.tex	133279	lemma	8.14:lem-charge-energy	MODEL	Model: concavity defect as multiplier-charge energy
+ca_II.tex	133440	corollary	8.14:cor-charged-decay	MODEL	Model: geometric decay on the charged class
+ca_II.tex	133631	lemma	8.14:lem-kernel-square-sum	PROVED	Square-summability of the iterated Poisson kernel
+ca_II.tex	133729	theorem	8.14:thm-collar-exactness	MODEL	Model: exactness beyond a collar
+ca_II.tex	133843	corollary	8.14:cor-over-pull-small	MODEL	Model: smallness of the exit over-pull
+ca_II.tex	134110	proposition	8.14:prop-admissible-centres	PROVED	Truncated minimisers as admissible sandwich centres
+ca_II.tex	134299	corollary	8.14:cor-negative-room	PROVED	The fibrewise sandwich under negative room
+ca_II.tex	134694	lemma	8.15:lem-band-optimality	MODEL	Model: the optimality system inside the capped band
+ca_II.tex	134862	proposition	8.15:prop-multiplier-convexity	MODEL	Model: convexity of the multiplier norm in the height
+ca_II.tex	135165	lemma	8.15:lem-translation-potentials	PROVED	Gauge-invariant translation potentials
+ca_II.tex	135322	lemma	8.15:lem-multiplier-mass	PROVED	Multiplier mass and oscillation bounded by the excess
+ca_II.tex	135586	lemma	8.15:lem-relative-one-forms	PROVED	Relative 1-forms bounded by their exterior derivative
+ca_II.tex	135692	lemma	8.15:lem-averaged-field	PROVED	The averaged field is close to a harmonic form
+ca_II.tex	135814	lemma	8.15:lem-harmonic-decay	PROVED	Interior decay for lattice-harmonic functions
+ca_II.tex	135924	lemma	8.15:lem-excess-decay	PROVED	One-step decay of the hybrid excess
+ca_II.tex	136053	theorem	8.15:thm-epsilon-regularity	MODEL	Model: $\varepsilon$-regularity of capped lattice fields
+ca_II.tex	136285	corollary	8.15:cor-cube-inactivity	MODEL	Model: inactivity of a whole cube under small excess
+ca_II.tex	136579	theorem	8.16:thm-slab-inactivity	MODEL	Model: exact inactivity away from the slab faces
+ca_II.tex	136787	corollary	8.16:cor-slab-exit	MODEL	Model: exit, no cascade and stopping in the slab
+ca_II.tex	136999	theorem	8.16:thm-active-sliver	PROVED	The exponentially thin active sliver
+ca_II.tex	137164	corollary	8.16:cor-front-stopping	PROVED	Stopping of the front under a weak tangential bound
+ca_II.tex	137457	lemma	8.16:lem-axial-defects	PROVED	$\mathrm{SU}(2)$ fields in axial gauge satisfy the defect bounds
+ca_II.tex	137583	theorem	8.16:thm-gauge-regularity	PROVED	$\varepsilon$-regularity for plaquette-capped $\mathrm{SU}(2)$ fields
+ca_II.tex	138066	lemma	8.16:lem-load-identity	MODEL	Model: the load identity for block-slaved fields
+ca_II.tex	138133	theorem	8.16:thm-block-regularity	PROVED	$\varepsilon$-regularity for block-slaved fields
+ca_II.tex	138568	lemma	8.17:lem-window-set-closure	PROVED	Closure of the open window set
+ca_II.tex	138608	lemma	8.17:lem-first-order-minimiser	PROVED	First-order conditions at a constrained minimiser
+ca_II.tex	138688	theorem	8.17:thm-model-short-move	MODEL	Model: lower bound by a short move
+ca_II.tex	138830	proposition	8.17:prop-opening-constant-duality	PROVED	Duality criterion for the opening constant
+ca_II.tex	138922	corollary	8.17:cor-model-radii	MODEL	Model: short-move radii from the opening constant
+ca_II.tex	139000	corollary	8.17:cor-model-isoperimetric	MODEL	Model: the opening constant as an isoperimetric constant
+ca_II.tex	139111	proposition	8.17:prop-model-loss-sharp	MODEL	Model: the per-coordinate loss cannot be removed
+ca_II.tex	139258	corollary	8.17:cor-model-top-step	MODEL	Model: the top step in the plaquette instance
+ca_II.tex	139585	lemma	8.17:lem-crude-short-move	PROVED	The crude short-move device
+ca_II.tex	139828	corollary	8.17:cor-top-step-crude	PROVED	The top step from the crude short move
+ca_II.tex	139957	proposition	8.17:prop-short-move-construction	PROVED	The short move from first-order descent directions
+ca_II.tex	140128	lemma	8.17:lem-flat-square-rates	PROVED	Rates forced by a coherently tight flat square
+ca_II.tex	140228	lemma	8.17:lem-subzone-summation	PROVED	Summation of bond charges over the sub-zones
+ca_II.tex	140277	proposition	8.17:prop-per-seed-budget	PROVED	The per-seed budget: coupling ceiling and rate range
+ca_II.tex	140721	corollary	8.17:cor-top-step-rate-range	PROVED	The top step for regions with rates in range
+ca_II.tex	140818	proposition	8.17:prop-deep-coherent-top-step	OUTSTANDING	The top step for deep regions with coherent tight sets; proof outstanding
+ca_II.tex	140995	lemma	8.22:lem-trace-subadditivity	PROVED	Trace sub-additivity of mirror-periodic partition functions
+ca_II.tex	141276	lemma	8.22:lem-vacuum-energy-density	PROVED	Torus-independence of the vacuum-energy density
+ca_II.tex	141540	theorem	8.22:thm-volume-transfer	PROVED	The volume-transfer bound for connected functions
+ca_II.tex	141854	lemma	8.22:lem-signed-translates	PROVED	Averaging over signed translates
+ca_II.tex	141994	corollary	8.22:cor-short-distance-volume	PROVED	Short-distance volume independence of the two-point function
+ca_II.tex	142316	corollary	8.22:cor-transfer-depth-floor	PROVED	The volume-transfer coupling ceiling and depth floor
+ca_II.tex	142607	corollary	8.22:cor-reference-torus-kernel	PROVED	The kernel read on the reference torus
+ca_II.tex	143099	lemma	8.18:lem-run-prolongation	PROVED	Prolonging the run on the same lattice
+ca_II.tex	143297	lemma	8.18:lem-horizon-cases	PROVED	Tori below and beyond the volume horizon
+ca_II.tex	143483	lemma	8.18:lem-age-reserve-bound	PROVED	Un-normalised age-and-reserve bound at the last lattice
+ca_II.tex	143738	lemma	8.18:lem-region-fate	PROVED	The fate of an old live region
+ca_II.tex	143819	lemma	8.18:lem-probability-conversion	PROVED	Conversion to probabilities at the last lattice
+ca_II.tex	144036	proposition	8.18:prop-never-healed-slices	PROVED	Never-healed age slices below the horizon
+ca_II.tex	144137	corollary	8.18:cor-never-healed-series	PROVED	The never-healed age series below the horizon
+ca_II.tex	144214	lemma	8.18:lem-healed-slices	PROVED	Healed-later age slices of the prolonged run
+ca_II.tex	144336	proposition	8.18:prop-age-antecedent	PROVED	The age antecedent below the horizon
+ca_II.tex	144388	proposition	8.18:prop-witness-below-horizon	PROVED	Clause (iv) on tori below the horizon
+ca_II.tex	144516	lemma	8.18:lem-depth-floor	PROVED	The depth floor pays the volume factor
+ca_II.tex	144562	proposition	8.18:prop-polylog-floor	PROVED	Terminal-live slices under the polylogarithmic floor
+ca_II.tex	144653	proposition	8.18:prop-linear-floor	PROVED	Terminal-live slices under the linear floor
+ca_II.tex	144797	proposition	8.18:prop-witness-beyond-horizon	PROVED	Clause (iv) beyond the volume horizon
+ca_II.tex	144922	theorem	8.18:thm-torus-witness	PROVED	The two-point witness on every torus
+ca_II.tex	145173	lemma	8.21:lem-source	OUTSTANDING	The source lemma (live marked slots and the annealed shadow of the smeared source); Proof outstanding
+ca_II.tex	145224	lemma	8.21:lem-flat-shell	OUTSTANDING	The flat shell bound (input of the alternative bookkeeping only). Proof outstanding
+ca_II.tex	145312	corollary	8.21:cor-consequences-torus	PROVED	Consequences of the two-point display on every torus: two-sided bounds, positivity, and the four properties of every finite-volume limit
+ca_III.tex	2166	lemma	9.1:lem-glued-minimisers	PROVED	Ambient regularity and the pair law for glued minimisers
+ca_III.tex	2655	proposition	9.1:prop-hull-step	PROVED	The correlation step read through leaf hulls
+ca_III.tex	2943	lemma	9.1:lem-hull-exactness	PROVED	Exactness and analyticity of hull reads
+ca_III.tex	3053	lemma	9.1:lem-fresh-rate	PROVED	The fresh rate at the small-field site for every potential
+ca_III.tex	3355	lemma	9.1:lem-bracket-margins	PROVED	Brackets at the large-field site keep their margins
+ca_III.tex	3668	lemma	9.1:lem-strip-geometry	PROVED	Geometry of the strips
+ca_III.tex	3870	theorem	9.1:thm-strip-resummation	PROVED	The strip resummation
+ca_III.tex	4053	corollary	9.1:cor-refiled-smallness	PROVED	Smallness of the re-filed values at maximal strip width
+ca_III.tex	4177	lemma	9.1:lem-column-bound	PROVED	From value units to domains: a column bound off the large-field region
+ca_III.tex	4284	proposition	9.1:prop-value-cell-constants	PROVED	Bounds on the value and cell constants
+ca_III.tex	4514	lemma	9.1:lem-strip-combinatorics	PROVED	Ba{\l}aban's combinatorics under the strip translation
+ca_III.tex	4792	corollary	9.1:cor-strip-modulus	PROVED	The modulus bound under strips
+ca_III.tex	4972	corollary	9.1:cor-run-differences	PROVED	Differences of two runs on one scaffold
+ca_III.tex	5194	lemma	9.1:lem-radii-slowness	PROVED	Slowness of the local radii across zones
+ca_III.tex	5491	lemma	9.1:lem-stage-room	PROVED	Each stage returns a room
+ca_III.tex	5626	lemma	9.1:lem-schedule-room	PROVED	The schedule of tables returns a room
+ca_III.tex	5904	proposition	9.1:prop-dilation-failure	PROVED	Failure of uniform dilation fractions on deep layers
+ca_III.tex	6030	lemma	9.1:lem-box-response-lipschitz	PROVED	Local Lipschitz bound for the box response
+ca_III.tex	6191	lemma	9.1:lem-slice-displacement	PROVED	Slice displacement
+ca_III.tex	6520	theorem	9.1:thm-preliminary-reads	PROVED	Reads land in rooms at the preliminary site
+ca_III.tex	6724	proposition	9.1:prop-site-reads	PROVED	Reads at the small-field, large-field and box sites
+ca_III.tex	6866	lemma	9.1:lem-share-law	PROVED	The share law at common cells
+ca_III.tex	7094	lemma	9.1:lem-damping-depth	PROVED	Damping beats depth
+ca_III.tex	7182	corollary	9.1:cor-tolerance-rooms	PROVED	Two-cutoff tolerance in rooms
+ca_III.tex	7481	proposition	9.1:prop-single-scale-leaves	PROVED	Single-scale leaves: the old polydisc lies in the admissible data
+ca_III.tex	7929	lemma	9.1:lem-site-blind-slice	PROVED	The site-blind slice lemma
+ca_III.tex	8047	lemma	9.1:lem-top-source-decay	PROVED	Decay of a profile sourced at the top levels
+ca_III.tex	8243	lemma	9.1:lem-noncritical-displacement	PROVED	Slice displacement between non-critical points
+ca_III.tex	8380	lemma	9.1:lem-small-field-accommodation	PROVED	Accommodation at the small-field site
+ca_III.tex	8571	lemma	9.1:lem-untouched-region	PROVED	The untouched region and the middle shells
+ca_III.tex	8918	lemma	9.1:lem-untouched-accommodation	PROVED	Accommodation on the untouched region
+ca_III.tex	9227	lemma	9.1:lem-link-bound	PROVED	Link-by-link bound over the root seed
+ca_III.tex	9458	lemma	9.1:lem-chain-slices	PROVED	Slices of chain objects on the three regions
+ca_III.tex	10281	lemma	9.1:lem-graded-thresholds	PROVED	Graded thresholds exceed the top-level unit
+ca_III.tex	10431	lemma	9.1:lem-root-slice	PROVED	The root seed's slice in the graded region
+ca_III.tex	10492	lemma	9.1:lem-top-rotations	PROVED	Top-level rotations are small in the graded region
+ca_III.tex	10716	lemma	9.1:lem-weighted-unit	PROVED	The last-stage table against a leaf's weighted unit
+ca_III.tex	10901	lemma	9.1:lem-frames-drop	PROVED	Frames drop out of the block averages
+ca_III.tex	11152	lemma	9.1:lem-split-rotation	PROVED	Splitting the rotation in the graded region
+ca_III.tex	11373	proposition	9.1:prop-graded-slice	PROVED	The graded-region slice bound
+ca_III.tex	11592	theorem	9.1:thm-slice-theorem	PROVED	The slice theorem at every site
+ca_III.tex	12602	lemma	9.1:lem-zone-split	PROVED	Zone split of the two-run differences at the fluctuation step
+ca_III.tex	13337	lemma	9.1:lem-per-cell-domination	PROVED	Per-cell domination of the resolved boundary members
+ca_III.tex	13621	lemma	9.1:lem-resolved-interpolation	PROVED	Interpolation with resolved boundary terms and the age of live components
+ca_III.tex	13837	theorem	9.1:thm-fluctuation-boundary-bound	PROVED	Zone-by-zone two-run bound for boundary terms of the fluctuation step
+ca_III.tex	14058	proposition	9.1:prop-large-field-boundary	PROVED	Two-run bound for boundary terms of the large-field step
+ca_III.tex	14285	proposition	9.1:prop-load-elimination	PROVED	Elimination of the boundary-term loads
+ca_III.tex	14590	lemma	9.1:lem-apriori-loads	PROVED	A priori bound on the loads and the unit dial radius
+ca_III.tex	14721	corollary	9.1:cor-envelope-corollary	PROVED	The envelope bound without a boundary-term hypothesis
+ca_III.tex	15478	lemma	9.1:lem-island-geometry	PROVED	Moat and position of the islands around live strips
+ca_III.tex	15938	lemma	9.1:lem-blind-counts	PROVED	Domain counts in the island-blind length
+ca_III.tex	16060	lemma	9.1:lem-blind-resummation	PROVED	The large-field resummation with island-blind units
+ca_III.tex	16417	proposition	9.1:prop-blind-boundary-production	PROVED	Large-field boundary terms with island-blind domains
+ca_III.tex	16559	proposition	9.1:prop-blind-site-expansions	OUTSTANDING	Site expansions with island-blind inputs. Proof outstanding
+ca_III.tex	16801	lemma	9.1:lem-blind-domination	PROVED	Per-cell domination for island-blind stores
+ca_III.tex	16906	lemma	9.1:lem-blind-interpolation	PROVED	Interpolation with island-blind boundary terms
+ca_III.tex	16981	theorem	9.1:thm-blind-fluctuation-bound	PROVED	Zone-by-zone bound for fluctuation outputs reading island-blind units
+ca_III.tex	17138	lemma	9.1:lem-load-envelope	PROVED	The envelope of the loads
+ca_III.tex	17381	lemma	9.1:lem-aligned-terms	PROVED	Comparison of aligned terms at common ramps
+ca_III.tex	17631	lemma	9.1:lem-ramp-comparison	PROVED	The ramp comparison and unaligned common labels
+ca_III.tex	17786	lemma	9.1:lem-unpaired-labels	PROVED	The old unpaired labels
+ca_III.tex	17912	theorem	9.1:thm-last-lattice-comparison	PROVED	The two-cutoff comparison of terms at the last lattice
+ca_III.tex	18136	corollary	9.1:cor-sourced-integrals	PROVED	The normalised sourced integrals of the two runs
+ca_III.tex	18854	lemma		PROVED	Criticality of the chart centre and the root, and the tables on the core
+ca_III.tex	19220	lemma	9.1:lem-centre-representative	PROVED	Distance of the centre's representative from the real data
+ca_III.tex	19377	lemma	9.1:lem-core-gauge	PROVED	A real common block gauge on the core
+ca_III.tex	19716	lemma	9.1:lem-data-increments	PROVED	Data increments of the read objects against the seed
+ca_III.tex	19812	corollary	9.1:cor-seed-rotation	PROVED	Every read object as a small rotation of the seed
+ca_III.tex	19955	lemma	9.1:lem-pointwise-moves	PROVED	Pointwise moves of the table members from cellwise increments
+ca_III.tex	20094	lemma	9.1:lem-smeared-increment	PROVED	The smeared increment on the core, the tower cells and far cells
+ca_III.tex	20364	lemma		PROVED	The conditions near the core are ceilings
+ca_III.tex	20425	proposition	9.1:prop-core-leaf-slices	PROVED	Slices of the read objects on leaves meeting the core
+ca_III.tex	22183	lemma	9.1:lem-nonlinear-interpolation	PROVED	Non-linear natural interpolation under the natural-vertex hypothesis
+ca_III.tex	22387	theorem	9.1:thm-tube-theorem	PROVED	The tube theorem at every site
+ca_III.tex	22839	lemma	9.1:lem-leftover-schedule	PROVED	Schedule bound for later reads of a left-over term
+ca_III.tex	23137	lemma	9.1:lem-domain-inclusion	PROVED	Inclusion of the table domain in the inherited domain
+ca_III.tex	23530	lemma	9.1:lem-share-law-bis	PROVED	The share law independent of the site
+ca_III.tex	23789	lemma	9.1:lem-layer-depth-decay	PROVED	Decay in depth of the distance to the layer strata
+ca_III.tex	23873	corollary	9.1:cor-tube-landing	PROVED	Tube landing and the share-phase bound at every site
+ca_III.tex	24046	proposition	9.1:prop-delivered-tube	PROVED	The delivered tube contains the loaded tube
+ca_III.tex	24867	lemma	9.2:lem-witness-partition	PROVED	Partition of uses by witness, and the age forced at a reader
+ca_III.tex	25091	lemma	9.2:lem-presence-healed	PROVED	Presence of own-witness uses inside the healed components
+ca_III.tex	25163	lemma	9.2:lem-leaf-pile	PROVED	The per-cell pile of first-group leaves over all levels
+ca_III.tex	25267	theorem	9.2:thm-carry	INCOMPLETE	The carry lemma. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	25476	lemma	9.2:prf-interpolation-budget	PROVED	Inner decay: the auxiliary interpolation and its budget
+ca_III.tex	25550	lemma	9.2:prf-lump-term	PROVED	Inner decay: the lump term by one age split
+ca_III.tex	26156	proposition	9.2:prop-boundary-term-variation	INCOMPLETE	Zone-resolved variation of the first-group boundary terms. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	26384	proposition	9.2:prop-rest-term-tail	INCOMPLETE	The tail of the rest terms above a threshold zone. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	26424	lemma	9.2:lem-aligned-parts	INCOMPLETE	Aligned parts of nested leaves and the unmatched term. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	27286	lemma	9.2:lem-ten-layer-collars	PROVED	The ten-layer collars of the current sets
+ca_III.tex	27563	lemma	9.2:lem-anchors	PROVED	Anchors of surviving stored boundary terms
+ca_III.tex	27871	proposition	9.2:prop-response-factor	INCOMPLETE	The per-unit response factor at the step. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	28238	theorem	9.2:thm-pile-bound	PROVED	The pile bound for stored boundary terms
+ca_III.tex	28384	lemma	9.2:lem-nested-distances	PROVED	Additivity of sup-norm distances across nested sets
+ca_III.tex	28465	corollary	9.2:eq-nested-distances-b	PROVED	Distances across the nested current sets
+ca_III.tex	28496	lemma	9.2:lem-size-side	PROVED	The size side: tree length across collars
+ca_III.tex	28563	lemma	9.2:lem-frozen-inclusions	PROVED	Frozen inclusions of re-made strata
+ca_III.tex	28779	lemma	9.2:lem-thin-levels	PROVED	Which levels can be thin
+ca_III.tex	28968	lemma	9.2:lem-response-side	PROVED	The response side: scaled distance across collars
+ca_III.tex	29117	lemma	9.2:lem-combined-exponent	PROVED	Combined size and response exponent
+ca_III.tex	29376	lemma	9.2:lem-window-balance	PROVED	The per-window balance
+ca_III.tex	29733	lemma	9.2:lem-window-robustness	PROVED	Robustness of the counting to window placement
+ca_III.tex	30136	lemma	9.2:lem-weak-anchor	PROVED	The weakly anchored case
+ca_III.tex	30514	lemma	9.2:lem-read-set	PROVED	Read sets of cells meeting the domain
+ca_III.tex	30605	lemma	9.2:lem-shell-lemma	PROVED	Block reach and the shell lemma
+ca_III.tex	30811	proposition	9.2:prop-old-term-weight	PROVED	Geometric weight of old boundary terms
+ca_III.tex	31249	lemma	9.2:lem-age-weight-comparison	PROVED	Corrected age weight against the geometric weight
+ca_III.tex	31486	lemma	9.2:lem-one-sided-conditions	PROVED	One-sidedness of the conditions on the coupling
+ca_III.tex	31902	lemma	9.2:lem-linear-size-properties	PROVED	Elementary properties of the linear size
+ca_III.tex	32326	proposition	9.2:prop-history-summation	PROVED	Summation over admissible histories at a cost per cell
+ca_III.tex	32417	proposition	9.2:prop-modulus-majorant	OUTSTANDING	The history-wise modulus majorant. Proof outstanding
+ca_III.tex	32589	lemma	9.2:lem-creation-deposit	PROVED	The creation deposit in linear-size form
+ca_III.tex	32774	lemma	9.2:lem-comparison-product	PROVED	The comparison product of a history
+ca_III.tex	32918	lemma	9.2:lem-live-levels	PROVED	Live levels and the per-level charge floor
+ca_III.tex	33030	lemma	9.2:lem-linear-size-vanishing	PROVED	Where the linear size vanishes
+ca_III.tex	33089	lemma	9.2:lem-linear-size-lower	INCOMPLETE	Linear size at least one for constructed regions; part~(2): stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	33205	proposition	9.2:prop-prepayment-induction	PROVED	The pre-payment induction at a given charge constant
+ca_III.tex	33647	lemma	9.2:lem-lineage-unrolling	PROVED	Unrolling the pre-payment numbers along a lineage
+ca_III.tex	33735	corollary	9.2:cor-fundamental-inequality	PROVED	The fundamental inequality in cell units
+ca_III.tex	33876	lemma	9.2:lem-coupling-ceiling	PROVED	The conditions reduce to one coupling ceiling
+ca_III.tex	34033	theorem	9.2:thm-geometric-forgetting	PROVED	Geometric forgetting of old regions
+ca_III.tex	34199	corollary	9.2:cor-forgetting-summed	PROVED	Geometric forgetting summed over ages
+ca_III.tex	34385	lemma	9.2:lem-holomorphic-disc-bound	PROVED	A difference bound for bounded holomorphic functions on a disc
+ca_III.tex	34429	corollary	9.2:cor-old-age-smallness	PROVED	Geometric smallness of the old-age part of the final integral
+ca_III.tex	34540	proposition	9.2:prop-remainder-truncation	PROVED	Truncation of the remainder to histories of recent first index
+ca_III.tex	34844	lemma	9.3:lem-chain-lift	PROVED	The chain lift through one averaging step
+ca_III.tex	34964	lemma	9.3:lem-current-defect	PROVED	The face-mean multiplier and the current defect
+ca_III.tex	35166	lemma	9.3:lem-gauge-fixing	PROVED	Gauge fixing under a divergence-form current bound
+ca_III.tex	35335	lemma	9.3:prf-averaged-gauge	PROVED	The averaged minimiser in the gauge-fixed slice
+ca_III.tex	35425	lemma	9.3:lem-stability-equation	PROVED	The stability equation for the averaged minimiser
+ca_III.tex	35577	proposition	9.3:prop-second-variation	PRINTED	Ba{\l}aban's second-variation and data-response bounds; printed without proof in {\cite[(189)--(190), p.~308]{B-CMP102b}}
+ca_III.tex	35626	theorem	9.3:thm-stationarity-minimisers	PROVED	Index stationarity of the minimal configurations
+ca_III.tex	35798	corollary	9.3:cor-stationarity-level-data	PROVED	Stationarity of level data, curvature and action
+ca_III.tex	35993	lemma		PROVED	Analyticity of the perfect action on the tube
+ca_III.tex	36016	lemma	9.3:lem-two-constants	PROVED	A two-constants lemma on the disc
+ca_III.tex	36084	theorem	9.3:thm-stationarity-jets	PROVED	Stationarity of the perfect action's jets
+ca_III.tex	36447	lemma	9.3:lem-one-step-data	PROVED	One-step data as functionals of the jets
+ca_III.tex	36545	lemma	9.3:lem-kernel-calculus	PROVED	Calculus of exponentially decaying kernels
+ca_III.tex	36675	theorem	9.3:thm-stationarity-covariance	PROVED	Stationarity of the fluctuation covariance
+ca_III.tex	36809	theorem	9.3:thm-one-loop-convergence	PROVED	Convergence of the one-loop coefficients and offsets
+ca_III.tex	36939	lemma	9.3:lem-refinement	PROVED	Refinement of the determining set
+ca_III.tex	37002	lemma	9.3:lem-response-decay	PROVED	Decay of the response to local data
+ca_III.tex	37365	proposition	9.3:prop-propagator-stationarity	OUTSTANDING	Weak stationarity of the fine-lattice propagators. Proof outstanding
+ca_III.tex	37667	proposition	9.5:prop-the-two-cutoff-smallness-of-the-kept-fac	OUTSTANDING	The two-cutoff smallness, at the current depth, of the two factors kept un-integrated inside a thrown-back region, on the enlarged class, under one ceiling. Proof outstanding
+ca_III.tex	37716	proposition	9.5:prop-the-mixed-first-generation-bound	OUTSTANDING	The mixed-size counting estimate. Proof outstanding
+ca_III.tex	38809	lemma	9.5:lem-majorant-containment	OUTSTANDING	Single-lattice containment of the lettered majorant. Proof outstanding
+ca_III.tex	39009	lemma	9.5:lem-cutoff-majorant	PROVED	Slow twice-differentiable majorant of the lettered cut-off
+ca_III.tex	39127	lemma	9.5:lem-run-points	PROVED	Points of a run are presented pairs over entries
+ca_III.tex	39240	lemma	9.5:lem-single-step	PROVED	The single lettered step meets the comparison hypotheses
+ca_III.tex	39352	lemma	9.5:lem-response-rows	PROVED	Response-type rows meet the comparison hypotheses
+ca_III.tex	39469	theorem	9.5:thm-lettered-comparison	INCOMPLETE	Comparison bounds for lettered links. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	39709	lemma	9.5:lem-boundary-price	PROVED	The boundary price off the full-level region
+ca_III.tex	39797	proposition	9.5:prop-weak-presentation	INCOMPLETE	Comparison bounds for weakly presented pairs. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	39845	lemma	9.5:lem-capped-index	PROVED	Slowness of the box-capped index
+ca_III.tex	39966	lemma	9.5:lem-ambient-substitution	PROVED	Substitution into ambient units on the whole box
+ca_III.tex	40083	proposition	9.5:prop-reading-decay	PROVED	Reading decay in ambient units
+ca_III.tex	40182	lemma	9.5:lem-no-accumulation	PROVED	No accumulation of total variation along a run
+ca_III.tex	40374	lemma	9.5:lem-chain-yardstick	PROVED	The yardstick after one step and along a chain
+ca_III.tex	40529	proposition	9.5:prop-complex-letters	PROVED	Complex strip letters at the cost of a square root
+ca_III.tex	40673	theorem	9.5:thm-mismatch-law	PROVED	The pointwise mismatch law on read cells
+ca_III.tex	41446	theorem	9.5:thm-kept-difference-layers	PROVED	Layer-by-layer smallness of the kept-factor difference
+ca_III.tex	41550	lemma	9.5:lem-disc-contraction	PROVED	Schwarz contraction on a disc of radius above one
+ca_III.tex	41582	lemma	9.5:lem-polydisc-vertices	PROVED	Vertex values against a polydisc bound
+ca_III.tex	41650	lemma	9.5:lem-sup-recursion	PROVED	A supremum recursion without compounding
+ca_III.tex	42025	lemma	9.5:lem-layer-store-bounds	PROVED	Exactness, support and values of the layered difference
+ca_III.tex	42298	lemma	9.5:lem-dilation-disc	PROVED	The dilation disc of a deep term
+ca_III.tex	42573	lemma	9.5:lem-family-mark-sums	PROVED	Tuple sums of the family marks
+ca_III.tex	42716	lemma	9.5:lem-chain-terms	PROVED	Chain terms of the current step are not deep
+ca_III.tex	42887	lemma	9.5:lem-reading-mark-sums	PROVED	Tuple sums of the reading marks
+ca_III.tex	43107	theorem	9.5:thm-production-bound	PROVED	The production bound, layer by layer
+ca_III.tex	43501	lemma	9.5:lem-pointed-sums	PROVED	Pointed cell sums linear in size constants
+ca_III.tex	43702	proposition	9.5:prop-remainder-difference	OUTSTANDING	Two-run difference of field-independent remainder terms. Proof outstanding
+ca_III.tex	43766	proposition	9.5:prop-constituent-bounds	PROVED	Bounds on the constituents of the production defect
+ca_III.tex	44303	lemma	9.5:lem-site-bound	PROVED	Site-independent bound of a piece by the oscillation
+ca_III.tex	44362	lemma	9.5:lem-kept-reading-mark	PROVED	The reading mark of a kept factor at later sites
+ca_III.tex	44509	proposition	9.5:prop-kept-later-sites	PROVED	The kept factors at later sites, layer by layer
+ca_III.tex	44736	lemma	9.5:lem-kept-support-age	PROVED	Support implies age for the kept marks
+ca_III.tex	44899	proposition	9.5:prop-kept-elimination	PROVED	Elimination of the kept factors under one coupling ceiling
+ca_III.tex	45129	corollary	9.5:cor-current-depth	PROVED	Smallness of the kept factors at the current depth
+ca_III.tex	45316	corollary	9.5:cor-enlarged-reads	PROVED	The comparison on the enlarged class of paired reads
+ca_III.tex	45454	lemma	9.5:lem-vertex-pairs-only	PROVED	Two-run bounds are read only at vertex pairs
+ca_III.tex	45549	proposition	9.5:prop-one-run-weight	PROVED	One-run bound on the kept weight at later sites
+ca_III.tex	45664	corollary	9.5:cor-kept-gaussian	PROVED	The Gaussian factor kept by a live arrested region
+ca_III.tex	46212	lemma	9.5:lem-zone-gap	PROVED	The gap between zones is automatic
+ca_III.tex	46260	lemma	9.5:lem-cells-tiling	PROVED	Cells tile the torus, graded by level
+ca_III.tex	46354	lemma	9.5:lem-zone-crossing	PROVED	Crossing a zone costs one cube size
+ca_III.tex	46400	lemma	9.5:lem-small-balls	PROVED	Cells meeting a small scaled ball
+ca_III.tex	46484	lemma	9.5:lem-graph-nets	PROVED	Diameter and nets of a graph
+ca_III.tex	46575	proposition	9.5:prop-cells-near-graph	PROVED	Cells near a graph against its scaled length
+ca_III.tex	46657	lemma	9.5:lem-connected-families	PROVED	Touch-connected families of cells and their count
+ca_III.tex	46727	proposition	9.5:prop-families-reach	PROVED	Families of cells within scaled reach
+ca_III.tex	46785	lemma	9.5:lem-common-point	PROVED	Common point, separation and tree length
+ca_III.tex	46934	lemma	9.5:lem-entropy-sum	PROVED	The entropy sum over mixed-size families
+ca_III.tex	47143	lemma	9.5:lem-shell-lemma	PROVED	The shell lemma for mixed-size boxes
+ca_III.tex	47338	lemma	9.5:lem-refinement-lengthens	PROVED	Refinements only lengthen scaled distances
+ca_III.tex	47397	lemma	9.5:lem-short-segments	PROVED	Short physical segments have short scaled length
+ca_III.tex	47592	lemma	9.5:lem-tether	PROVED	Influence sets lie near every connecting graph
+ca_III.tex	47713	proposition	9.5:prop-mixed-counting	PROVED	The mixed-size counting bound
+ca_III.tex	47927	theorem	9.5:thm-moebius-decoupling	PROVED	M\"obius decoupling for mixed-size cells
+ca_III.tex	48184	theorem	9.5:thm-interpolated-operators	PROVED	Interpolated box operators for mixed-size cells
+ca_III.tex	48393	lemma	9.5:lem-two-cutoff-metric	PROVED	One partition and one metric for two cutoffs
+ca_III.tex	48470	corollary	9.5:cor-two-cutoff-difference	PROVED	Two-cutoff difference of M\"obius pieces
+ca_III.tex	48661	corollary	9.5:cor-joint-bond-sets	PROVED	The two-cutoff bound on joint bond sets
+ca_III.tex	48726	corollary	9.5:cor-decoupling-dichotomy	PROVED	Ba{\l}aban's decoupling dichotomy on multi-scale sets
+ca_III.tex	49289	lemma	9.5:lem-relaxed-heredity	PROVED	Sandwich, heredity and stability of the relaxed class
+ca_III.tex	49515	lemma	9.5:lem-relaxed-domains-open	PROVED	The relaxed domains are open and gauge-invariant
+ca_III.tex	49635	lemma	9.5:lem-cutoff-difference	PROVED	Covariant difference of a cut-off form
+ca_III.tex	49696	lemma	9.5:lem-perturbed-plaquette	PROVED	Curvature of a perturbed plaquette
+ca_III.tex	49808	lemma	9.5:lem-cube-gauge-perturbation	PROVED	Perturbing a real field inside a cube gauge
+ca_III.tex	49898	lemma	9.5:lem-hull-geometry	PROVED	Geometry of the hull
+ca_III.tex	50057	lemma	9.5:lem-hull-chart	PROVED	The chart on the hull
+ca_III.tex	50285	theorem	9.5:thm-cutoff-continuation	PROVED	The cut-off continuation of every datum
+ca_III.tex	50787	lemma	9.5:lem-ambient-closure	PROVED	Closure of the ambient-centre clause along the run
+ca_III.tex	50990	lemma	9.5:lem-regauged-centres	PROVED	The ambient-centre clause at re-gauged centres
+ca_III.tex	51504	corollary	9.5:cor-unit-changed-class	PROVED	The unit-changed class under the wider-collar table
+ca_III.tex	51696	corollary	9.5:cor-domain-inclusion	PROVED	The two-cutoff domain inclusion
+ca_III.tex	51764	corollary	9.5:cor-frozen-tube-points	PROVED	Tube points over the frozen region
+ca_III.tex	51821	lemma	9.6:lem-maximum-principle	PROVED	A maximum principle for coupled scale-indexed inequalities
+ca_III.tex	51909	lemma	9.6:lem-chain-structure	PROVED	Well-definedness and structure of the comparison chain
+ca_III.tex	51956	proposition	9.6:prop-two-run-estimate	PROVED	The two-run estimate with the power-law floor
+ca_III.tex	52290	proposition	9.6:prop-depth-zero-match	PROVED	Matching the two runs at depth zero
+ca_III.tex	52465	lemma	9.6:lem-pointwise-shift	PROVED	Pointwise comparison of the running shifts under a common source
+ca_III.tex	52535	lemma	9.6:lem-torus-free-offset	PROVED	The match at depth zero and torus-free offsets
+ca_III.tex	52695	lemma	9.6:lem-maximum-principle-slack	PROVED	Maximum principle for coupled inequalities with a margin
+ca_III.tex	52740	theorem	9.7:thm-uniqueness	PROVED	Uniqueness up to one real parameter, the renormalised coupling at the reference length (clause (v) of Theorem~0, as this chapter proves it)
+ca_III.tex	53189	lemma	9.8:lem-exponent-localisation	PROVED	Localisation of the difference of boundary exponents
+ca_III.tex	53471	lemma	9.8:lem-derivative-closeness	PROVED	From partition functions to mixed source derivatives
+ca_III.tex	53583	lemma	9.8:lem-schwinger-increments	PROVED	Increments of the Schwinger functions between consecutive cutoffs
+ca_III.tex	53784	theorem	9.8:thm-uniqueness-theorem	PROVED	The uniqueness theorem
+ca_III.tex	54156	corollary	9.8:cor-subsequential-limits	OUTSTANDING	First-passage offsets and the identification of subsequential limits. Proof outstanding
+ca_III.tex	54394	lemma	9.8:lem-tuned-two-sided	PROVED	Two-sided two-point bounds at tuned coupling
+ca_III.tex	54549	lemma	9.8:lem-dilation-covariance	PROVED	One-step dilation covariance at a cluster value of the increments
+ca_III.tex	54657	lemma	9.8:lem-increment-convergence	PROVED	Convergence of the tuned increments
+ca_III.tex	54816	corollary	9.8:cor-one-loop-slope	PROVED	The limit increment is the one-loop slope
+ca_III.tex	54868	corollary	9.8:cor-exact-covariance	PROVED	Exact covariance of the tuned family under blocking
+ca_III.tex	54919	lemma	9.8:lem-two-factor-comparison	PROVED	Comparison of two blocking factors on one lattice
+ca_III.tex	55067	lemma	9.8:lem-scale-ratio	PROVED	Boundedness of the ratio of lattice scales
+ca_III.tex	55187	lemma	9.8:lem-no-invariant-germ	PROVED	No germ is invariant under a dilation
+ca_III.tex	55474	corollary	9.8:cor-one-germ	PROVED	One germ and injective labelling of limit sets
+ca_III.tex	56333	proposition	9.9:prop-remainder-derivative	OUTSTANDING	Bare-offset derivative of the witness remainder. Proof outstanding
+ca_III.tex	56631	theorem	9.9:thm-coupling-convergence	PROVED	The running coupling converges at each depth
+ca_III.tex	57243	theorem	9.9:thm-nondegenerate-calibration	PROVED	Non-degenerate calibration by the two-point witness
+ca_III.tex	57594	corollary	9.9:cor-physical-calibration	PROVED	Physical calibration near the tuned point
+ca_III.tex	57753	theorem	9.9:thm-differentiated-witness	PROVED	The witness differentiated in the bare coupling
+ca_III.tex	58928	proposition	9.9:prop-sufficient-conditions	PROVED	Two sufficient conditions for the derivative bound
+ca_III.tex	59538	lemma	9.10:lem-unfiled-range	PROVED	Bounded level range of unfiled remnant shares
+ca_III.tex	59878	lemma	9.10:prf-step-frozen-flow	PROVED	Induction step: frozen integral and flow
+ca_III.tex	60601	corollary	9.10:cor-scaffold-inputs	PROVED	Uniqueness inputs on the prescribed scaffold
+ca_III.tex	60826	theorem	9.10:thm-refiled-lipschitz	INCOMPLETE	Re-filed one-lattice Lipschitz step. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	61063	theorem	9.10:thm-lipschitz-kernel	INCOMPLETE	Kernel form of the re-filed Lipschitz step. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	61277	lemma	9.10:lem-second-difference	PROVED	Second difference with re-filed remnant marks
+ca_III.tex	61506	corollary	9.10:cor-two-slot-bounds	PROVED	Two-slot bounds with finite-range remnant load
+ca_III.tex	61671	corollary	9.10:cor-three-slot-bounds	PROVED	Three-slot hybrid bounds for the re-filed run
+ca_III.tex	61782	proposition	9.10:prop-transplant	PROVED	Cross-cutoff transplant of re-filed lists
+ca_III.tex	61923	proposition	9.10:prop-source-bounds	INCOMPLETE	Geometric source bounds for the re-filed run. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	62180	lemma		PROVED	The summation inequality for \textup{(b$''$)}, and \textup{(b$''$)} as a ceiling on $g$
+ca_III.tex	62309	proposition	9.10:prop-geometric-envelopes	PROVED	Geometric envelopes for the re-filed run
+ca_III.tex	62898	lemma	9.10:lem-load-envelope	INCOMPLETE	Finite-range envelope of last-lattice loads. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	63125	lemma	9.10:lem-objective-test-rest	PROVED	Objective, test and remainder estimates
+ca_III.tex	63225	theorem	9.10:thm-last-lattice-comparison	INCOMPLETE	Geometric last-lattice comparison for the re-filed run. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	63353	corollary	9.10:eq-last-lattice-comparison-2	PROVED	Comparison of the normalised partition functions
+ca_III.tex	63383	corollary	9.10:eq-last-lattice-comparison-3	PROVED	Comparison of the logarithmic derivatives at the origin
+ca_III.tex	63431	lemma	9.10:lem-vacuum-localisation	PROVED	Localisation of the vacuum-energy difference
+ca_III.tex	63536	theorem	9.10:thm-exponential-rate	PROVED	Exponential rate for the renormalised-coupling family
+ca_III.tex	63786	corollary	9.10:cor-refiled-bilipschitz	PROVED	The bi-Lipschitz lemma for the re-filed run
+ca_III.tex	65059	proposition	9.11:prop-source-families	INCOMPLETE	Hatted source families with geometric envelope. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	65149	lemma	9.11:lem-refiled-shares	PROVED	Re-filed shares add nothing to the source families
+ca_III.tex	65358	lemma	9.11:lem-ceilings-ladder	PROVED	The coupling ceilings hold along the ladder
+ca_III.tex	65551	lemma	9.11:lem-maximum-principle	PROVED	A maximum principle for non-negative inequality systems
+ca_III.tex	65662	lemma	9.11:lem-chain-bounds	PROVED	Well-definedness of the chain and competitor bounds
+ca_III.tex	65827	theorem	9.11:thm-geometric-envelope	INCOMPLETE	Geometric envelope for two-run differences of hatted runs. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	66067	lemma	9.11:prf-envelope-sums	PROVED	The envelope and its geometric, band and window sums
+ca_III.tex	66637	proposition	9.11:prop-no-geometric-envelope	PROVED	Un-decayed rows admit no pure geometric envelope
+ca_III.tex	67028	corollary	9.11:cor-consecutive-couplings	PROVED	Geometric closeness of consecutive tuned hatted couplings
+ca_III.tex	67255	lemma	9.12:lem-defect-summability	PROVED	Summability of the transition defects and the depth floor
+ca_III.tex	67295	lemma	9.12:lem-bi-lipschitz	PROVED	The bi-Lipschitz lemma
+ca_III.tex	67764	corollary	9.12:cor-same-limit	PROVED	Equal reference-scale coupling gives the same continuum limit
+ca_III.tex	68135	lemma	9.13:lem-torus-dilation	PROVED	The $L$-adic dilation between tori
+ca_III.tex	68266	lemma	9.13:lem-partition-entire	PROVED	Entirety and positivity of the partition function
+ca_III.tex	68399	lemma	9.13:lem-transport	PROVED	Transport of test functions to the torus
+ca_III.tex	68448	lemma	9.13:lem-change-of-units	PROVED	The change-of-units identity
+ca_III.tex	68697	corollary	9.13:cor-coupling-shift	PROVED	The coupling shift between two readings
+ca_III.tex	68855	lemma	9.13:lem-limit-member	OUTSTANDING	The limit-member identification. Proof outstanding
+ca_III.tex	69084	lemma	9.13:lem-re-rooting	PROVED	Re-rooting on the canonical scaffold
+ca_III.tex	69264	lemma	9.13:lem-depth-convergence	PROVED	Convergence of the depth-$s$ data along the tuned family
+ca_III.tex	69553	theorem	9.13:thm-limit-member	PROVED	The limit-member identification
+ca_III.tex	70035	corollary	9.13:cor-intermediate-couplings	PROVED	Convergence of intermediate couplings and composition of unit changes
+ca_III.tex	70270	lemma	9.13:lem-change-of-units-bis	PROVED	The change-of-units identity
+ca_III.tex	70354	lemma	9.13:lem-frozen-coupling	PROVED	Convergence of the frozen coupling at fixed depth
+ca_III.tex	70645	proposition	9.13:prop-limit-member	PROVED	The limit-member identification
+ca_III.tex	71341	proposition	9.14:prop-sun-uniqueness	OUTSTANDING	The uniqueness theorem for $\mathrm{SU}(N)$, $N\ge3$. Proof outstanding
+ca_III.tex	71825	lemma	9.98:lem-tuned-depth-offset	PROVED	Bounded offset between tuned and first-passage depths
+ca_III.tex	72033	theorem	9.98:thm-short-distance-uniqueness	PROVED	Short-distance uniqueness given the renormalised coupling
+ca_III.tex	72218	lemma	9.98:lem-run-prolongation	PROVED	Run prolongation to the strong reference coupling
+ca_III.tex	72470	lemma	9.98:lem-tuned-member	PROVED	The tuned member read at $\gamma_{\star}$
+ca_III.tex	72708	proposition	9.98:prop-transfer-three-sources	PROVED	The volume-transfer bound for three sources
+ca_III.tex	73002	lemma	9.98:lem-trilinear-averaging	PROVED	The trilinear averaging lemma
+ca_III.tex	73208	corollary	9.98:cor-separation-gain-three	PROVED	The separation gain for three sources
+ca_III.tex	73315	proposition	9.98:prop-transfer-inequality	PROVED	The transfer inequality at $\gamma_{\star}$
+ca_III.tex	73431	lemma	9.98:lem-reference-torus-limit	PROVED	The cutoff limit on the reference torus
+ca_III.tex	74320	proposition	9.98:prop-two-point-law	PROVED	The two-point law at every short separation
+ca_III.tex	74764	lemma	9.98:lem-frame-depth-comparison	PROVED	Comparison of the two frames' depths
+ca_III.tex	75157	theorem	9.98:thm-exact-dilates	PROVED	Weak-coupling limit sets as exact dilates
+ca_III.tex	75316	corollary	9.98:cor-reduction-compact-window	PROVED	Reduction to one compact window of couplings
+ca_III.tex	76104	lemma	10.1:lem-integration-by-parts	PROVED	Integration by parts for the sourced measure
+ca_III.tex	76201	lemma	10.1:lem-displacement-divergence	PROVED	The displacement derivation: covariance and divergence
+ca_III.tex	76512	theorem	10.1:thm-rotational-identity	PROVED	The rotational Ward identity
+ca_III.tex	76982	lemma	10.1:lem-orbital-remainder	PROVED	Orbital remainder: exact difference plus cubic term
+ca_III.tex	77243	corollary	10.1:cor-sharp-identity	PROVED	The sharp form of the rotational identity
+ca_III.tex	77366	proposition	10.1:prop-classical-limit	PROVED	The classical limit of the breaking term
+ca_III.tex	77776	lemma	10.1:lem-parity-rule	PROVED	The parity rule for hyperoctahedral tensors
+ca_III.tex	77841	proposition	10.1:prop-dimension-six	PROVED	The dimension-six classification
+ca_III.tex	78191	proposition	10.1:prop-antisymmetric-channel	INCOMPLETE	The antisymmetric channel at dimension six. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	78332	corollary	10.1:cor-breaking-scalar	PROVED	The unique rotation-breaking scalar of dimension six
+ca_III.tex	78390	proposition	10.1:prop-strain-dependence	PROVED	First-order covariant functionals depend only on strain
+ca_III.tex	78497	lemma	10.1:lem-double-subtraction	PROVED	Double subtraction for rotation-weighted vector densities
+ca_III.tex	78849	lemma	10.1:lem-unit-shell-bound	PROVED	Unit-sphere shell bound blind to source positions
+ca_III.tex	79094	proposition	10.1:prop-rotation-defect-two-three	PROVED	Rotation defect of two- and three-point functions
+ca_III.tex	79695	proposition	10.1:prop-rotation-defect-all	PROVED	Rotation defect of every $n$-point function
+ca_III.tex	79837	proposition	10.1:prop-torus-not-invariant	PROVED	No local rotation invariance on the torus
+ca_III.tex	79903	corollary		PROVED	The torus test
+ca_III.tex	80195	proposition	10.2:prop-vector-channel	PROVED	The vector-channel statement: the $x$-weighted orbital remainder is irrelevant in the limit (conservation of the lattice stress tensor in the limit)
+ca_III.tex	80573	lemma	10.3:lem-divergence-identity	PROVED	Divergence form of vector-typed quadratic forms
+ca_III.tex	80998	lemma	10.3:lem-kernel-decay	PROVED	Decay of the second-variation kernel
+ca_III.tex	81287	lemma	10.3:lem-nonabelian-completion	PROVED	Non-abelian completion
+ca_III.tex	81363	lemma	10.3:lem-relocalisation	PROVED	Re-localisation of a frozen vector family
+ca_III.tex	81690	lemma	10.3:lem-relocalisation-extended	PROVED	Re-localisation on extended backgrounds
+ca_III.tex	81774	lemma	10.3:lem-bare-unit	PROVED	Bounds on the bare vector unit
+ca_III.tex	81880	proposition	10.3:prop-reanchoring	PROVED	Re-anchoring the source classes at each level
+ca_III.tex	81980	lemma	10.3:lem-own-level-freezing	PROVED	Own-level freezing to second order
+ca_III.tex	82097	proposition	10.3:prop-summation-by-parts	PROVED	Summation by parts at the level of birth
+ca_III.tex	82268	proposition	10.3:prop-output-decomposition	PROVED	Decomposition of a local output at its pin
+ca_III.tex	82586	lemma	10.3:lem-unit-table	PROVED	The vector units and their sizes per cell
+ca_III.tex	82940	lemma	10.3:lem-vector-rim	INCOMPLETE	The rim lemma for the vector part. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	83273	lemma	10.3:lem-vector-refiling	PROVED	Re-filing of the vector remnants
+ca_III.tex	83405	lemma	10.3:lem-vector-run-decay	OUTSTANDING	Geometric decay of the frozen vector run
+ca_III.tex	83615	lemma	10.3:lem-source-variation	INCOMPLETE	The load of a variation of the source
+ca_III.tex	83784	lemma	10.3:lem-mixed-derivative	PROVED	The mixed-derivative bound on the source gradient
+ca_III.tex	83938	lemma	10.3:lem-defect-families	PROVED	Defect families with geometrically growing sources
+ca_III.tex	84418	corollary	10.3:cor-vector-channel	PROVED	The vector-channel statement from the vector package
+ca_III.tex	84680	lemma	10.3:lem-core-geometry	PROVED	Geometry of an inner-collar core
+ca_III.tex	84993	lemma	10.3:lem-never-deep	PROVED	Inner-collar cores are never deep
+ca_III.tex	85347	lemma	10.3:lem-core-radius	PROVED	Radius, support and halo of an inner-collar core
+ca_III.tex	85570	lemma	10.3:lem-certified-cube	PROVED	Admissible cubes around the read box
+ca_III.tex	85688	lemma	10.3:lem-consumer-domain	PROVED	The consumer's domain lies in every piece's domain
+ca_III.tex	85940	lemma	10.3:lem-box-regularity	PROVED	Regularity of the chain on the read box
+ca_III.tex	86084	lemma	10.3:lem-core-size-bound	PROVED	Holomorphy and size of the dialled core
+ca_III.tex	86350	lemma	10.3:lem-star-contains-box	PROVED	The anchor cell's star contains the read box
+ca_III.tex	86450	lemma	10.3:lem-amplitude-one-reading	PROVED	Amplitude-one reading astride the boundary
+ca_III.tex	87462	lemma	10.3:prf-proof-halo-anchor	PROVED	Anchoring at a cube of the halo
+ca_III.tex	87652	proposition	10.3:prf-proof-per-cell	PROVED	The per-cell bound for vector cores
+ca_III.tex	87936	proposition	10.3:prf-proof-collar-sum	PROVED	The sum over a collar cell
+ca_III.tex	88474	lemma	10.3:lem-first-link-deformation	PROVED	Curvature bounds cover the first-link deformation
+ca_III.tex	88568	lemma	10.3:lem-real-values-unchanged	PROVED	Real values unchanged on a box astride the boundary
+ca_III.tex	88703	proposition	10.3:prop-cores-extended	PROVED	Inner-collar cores under the extended correlation theorem
+ca_III.tex	89318	lemma	10.3:lem-scale-reading-factor	PROVED	The scale-reading factor lowers only coupling ceilings
+ca_III.tex	89822	lemma	10.4:lem-rotation-field	PROVED	The rotation field acting on a weighted plaquette sum
+ca_III.tex	89919	lemma	10.4:lem-null-directions	PROVED	Null directions and the strain-smeared slot terms
+ca_III.tex	90082	lemma	10.4:lem-diagonal-stress	PROVED	The diagonal lattice stress tensor as a plaquette weight
+ca_III.tex	90240	lemma	10.4:lem-hypercubic-decomposition	PROVED	Hypercubic decomposition of symmetric tensors
+ca_III.tex	90552	lemma	10.4:lem-coefficient-bounds	PROVED	Bounds on the typed marginal coefficient
+ca_III.tex	90670	lemma	10.4:lem-typed-irrelevance	PROVED	Irrelevance after one typed counterterm
+ca_III.tex	90795	lemma	10.4:lem-off-diagonal-vertex	PROVED	Bounds for the off-diagonal tensor vertex
+ca_III.tex	91051	theorem	10.4:thm-insertion-correlation	PROVED	The stress-tensor-insertion correlation theorem
+ca_III.tex	91162	corollary	10.4:cor-tensor-correlation-decay	PROVED	Decay of the tensor correlation under normalisation decay
+ca_III.tex	91500	proposition	10.4:prop-vertex-response	INCOMPLETE	Response of one step to the tensor vertex; Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	91761	lemma	10.4:lem-typed-slot-kernel	PROVED	The fluctuation kernel for typed slots
+ca_III.tex	91849	corollary	10.4:cor-pure-recursion-tangent	PROVED	Tangent of the pure recursion in a typed direction
+ca_III.tex	91997	proposition	10.4:prop-typed-step	INCOMPLETE	The typed step with a marginal tensor slot. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	92103	lemma	10.4:lem-typed-refiling	INCOMPLETE	Re-filing of typed marginal families. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	92241	lemma	10.4:lem-forward-transport	PROVED	Forward transport of the tangent rows
+ca_III.tex	92648	proposition	10.4:prf-sourced-format	PROVED	The sourced format of the local tangent run
+ca_III.tex	92856	proposition	10.4:prf-tensor-torus-bound	PROVED	The torus bound for the tensor insertion
+ca_III.tex	93054	lemma	10.4:lem-normalisation-decay	PROVED	From the one-loop inequality to normalisation decay
+ca_III.tex	93266	lemma	10.4:lem-terminal-matching	PROVED	Terminal matching for linear recursions
+ca_III.tex	93439	lemma	10.4:lem-trading-coefficient	PROVED	The trading coefficient in absolute units
+ca_III.tex	93591	corollary	10.4:cor-symmetric-tensor-bound	PROVED	The bound for the full symmetric-tensor source
+ca_III.tex	93798	theorem	10.5:thm-reduction	INCOMPLETE	The reduction theorem. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	94006	corollary	10.5:cor-vector-channel	PROVED	The vector-channel statement from the diagonal channel
+ca_III.tex	94392	lemma	10.5:lem-no-diagonal-strain	PROVED	Own-coordinate-free cutoffs have no diagonal strain
+ca_III.tex	94572	theorem	10.5:thm-reduction-without-shell	INCOMPLETE	Reduction without a shell term
+ca_III.tex	94636	corollary	10.5:cor-invariance-cutoffs	PROVED	$O(4)$ invariance with own-coordinate-free cutoffs
+ca_III.tex	95336	lemma	10.6:lem-constant-fields	PROVED	Reproduction and criticality of constant abelian fields
+ca_III.tex	95473	lemma	10.6:lem-second-moment	PROVED	Second moments read on constant curvature fields
+ca_III.tex	95692	lemma	10.6:lem-gradient-terms-drop	PROVED	Terms linear in a vertex gradient drop
+ca_III.tex	95771	lemma	10.6:lem-half-trace	PROVED	The one-loop number as a half trace
+ca_III.tex	96229	proposition	10.6:prop-truncated-ring	PROVED	Second Taylor coefficients in the truncated ring
+ca_III.tex	96372	lemma	10.6:lem-background-generators	PROVED	The generators on a constant background
+ca_III.tex	96659	lemma	10.6:lem-uniform-majorant	PROVED	Analyticity in the flux and a uniform majorant
+ca_III.tex	96793	lemma	10.6:lem-trace-unique	PROVED	Uniqueness of the trace on gauge-invariant forms
+ca_III.tex	96844	lemma	10.6:lem-one-step-identities	PROVED	The one-step propagator and its algebraic identities
+ca_III.tex	97099	lemma	10.6:lem-gaussian-tower	PROVED	The Gaussian tower
+ca_III.tex	97224	lemma	10.6:lem-representation-covariance	PROVED	The background-field propagator as a conditional covariance
+ca_III.tex	97317	proposition	10.6:prop-bare-trace	PROVED	The partial sums as one bare-lattice trace
+ca_III.tex	97537	lemma	10.6:lem-regulator-change	PROVED	Change of infrared regulator at bounded cost
+ca_III.tex	97675	proposition	10.6:prop-regulator-admissible	PROVED	Admissible regulator and bounded block-mass term
+ca_III.tex	97815	lemma	10.6:lem-functional-calculus	PROVED	Second-order magnetic functional calculus on the lattice
+ca_III.tex	97972	lemma	10.6:lem-proper-time	PROVED	The proper-time regulator and the heat integral
+ca_III.tex	98099	lemma	10.6:lem-zero-momentum-symbols	PROVED	First-order symbols at zero momentum
+ca_III.tex	98237	lemma	10.6:lem-heat-asymptotics	PROVED	Gaussian asymptotics of lattice heat integrals
+ca_III.tex	98325	lemma	10.6:lem-heat-coefficient	PROVED	The large-time heat coefficient
+ca_III.tex	98620	theorem	10.6:thm-one-loop-drift	PROVED	Linear drift of the cut-free one-loop sums
+ca_III.tex	98784	corollary	10.6:cor-one-loop-number	PROVED	Identification and bound of the one-loop number
+ca_III.tex	98896	lemma	10.6:lem-sourced-expansion	PROVED	The cluster expansion with quadratic and linear sources
+ca_III.tex	99026	lemma	10.6:lem-gradient-drop-cut	PROVED	Gradient terms drop under the cut measure
+ca_III.tex	99136	lemma	10.6:lem-cutoff-cost	PROVED	The cost of the sharp field cutoff
+ca_III.tex	99355	lemma	10.6:lem-cutoff-sum	PROVED	Summability of the cutoff corrections
+ca_III.tex	99429	corollary	10.6:cor-anisotropy-inequality	PROVED	The one-loop anisotropy inequality with $\kappa = 1$
+ca_III.tex	99495	corollary	10.6:cor-normalisation-decay	INCOMPLETE	Two-sided decay of the tensor normalisation; stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	99799	lemma	10.7:lem-lattice-stabiliser	PROVED	The stabiliser of the half-offset lattices
+ca_III.tex	99869	corollary	10.7:cor-no-block-transport	PROVED	No transport of block observables under non-hypercubic rotations
+ca_III.tex	99935	proposition	10.7:prop-single-symbol-identity	PROVED	The single-symbol rotation identity is empty
+ca_III.tex	99974	proposition	10.7:prop-probe-isotropy	PROVED	The product identity as isotropy of probes
+ca_III.tex	100025	lemma	10.7:lem-abelian-covariance-positive	PROVED	Positivity of the free abelian covariance
+ca_III.tex	100167	lemma	10.7:lem-abelian-invariance	PROVED	Euclidean invariance in law of the free abelian field
+ca_III.tex	100213	lemma	10.7:lem-field-strength-covariance	PROVED	Covariance of the smeared free field strengths
+ca_III.tex	100287	lemma	10.7:lem-field-strength-kernel	PROVED	The field-strength kernel of the free abelian field
+ca_III.tex	100390	proposition	10.7:prop-isotropy-fails-hypercubic	PROVED	Failure of probe isotropy under a quarter turn
+ca_III.tex	100469	proposition	10.7:prop-isotropy-fails-generic	PROVED	Failure of probe isotropy under a non-hypercubic rotation
+ca_III.tex	100545	proposition	10.7:prop-hypercubic-configurations	PROVED	Hypercubic rotations as maps of configurations
+ca_III.tex	100631	lemma	10.7:lem-plaquette-expansion	PROVED	Classical expansion of the plaquette density
+ca_III.tex	100843	lemma	10.7:lem-class-stability	PROVED	Rotation stability of the hypothesis classes
+ca_III.tex	100967	lemma	10.7:lem-half-space-motions	PROVED	Euclidean motions preserving the half-space
+ca_III.tex	101005	lemma	10.7:lem-reflected-separations	PROVED	Reflected separations grow under forward time translation
+ca_III.tex	101154	lemma	10.7:lem-telescoping-estimate	PROVED	Telescoping estimate for moved entries
+ca_III.tex	101282	proposition	10.7:prop-reflection-form	PROVED	Positivity of the reflection form and the Hilbert space
+ca_III.tex	101602	lemma	10.7:lem-hypotheses-reduction	PROVED	The forms used follow from the stated hypotheses
+ca_III.tex	101698	lemma	10.7:lem-joint-cumulants	PROVED	Joint cumulants of bounded variables
+ca_III.tex	101826	lemma	10.7:lem-cumulant-derivative	PROVED	The moment--cumulant derivative lemma
+ca_III.tex	101940	corollary	10.7:cor-connected-form	PROVED	From the product form to the connected form of the rotational Ward identity
+ca_III.tex	102029	lemma	10.7:lem-periodic-lift	PROVED	The periodic lift preserves norms and separations
+ca_III.tex	102161	lemma	10.7:lem-finite-cutoff-structure	PROVED	Finite-cutoff correlation functions and their rotation derivative
+ca_III.tex	102248	lemma	10.7:lem-finite-cutoff-invariance	PROVED	Exact hyperoctahedral invariance at finite cutoff
+ca_III.tex	102292	lemma	10.7:lem-equicontinuity	PROVED	The equicontinuity estimate
+ca_III.tex	102384	lemma	10.7:lem-simultaneous-convergence	PROVED	Simultaneous subsequential convergence from the torus bound
+ca_III.tex	102493	lemma	10.7:lem-orthogonal-continuity	PROVED	Uniform continuity of the correlation functions on the orthogonal group
+ca_III.tex	102574	lemma	10.7:lem-rotated-continuity	PROVED	Continuity of rotated test functions
+ca_III.tex	102603	lemma	10.7:lem-rotated-differentiability	PROVED	Differentiability of rotated test functions
+ca_III.tex	102647	lemma	10.7:lem-rotated-generator	PROVED	Rotated separated classes and the rotated generator
+ca_III.tex	102704	lemma	10.7:lem-limit-differentiability	PROVED	Differentiability of the limit along one-parameter groups
+ca_III.tex	102805	lemma	10.7:lem-derivative-convergence	PROVED	Convergence of the finite-cutoff rotation derivative
+ca_III.tex	102870	lemma	10.7:lem-exponential-onto	PROVED	Surjectivity of the exponential map of the rotation group
+ca_III.tex	102926	lemma	10.7:lem-orthogonal-invariance	PROVED	From special orthogonal to orthogonal invariance
+ca_III.tex	102963	lemma	10.7:lem-finite-order-elements	PROVED	Finite-order elements of a one-parameter group
+ca_III.tex	102995	proposition	10.7:prop-boundary-independence	PROVED	Cut-off independence of the boundary term
+ca_III.tex	103043	proposition	10.7:prop-anomaly-vanishes	PROVED	The infrared decay hypothesis forces the anomaly to vanish
+ca_III.tex	103077	proposition	10.7:prop-orbit-constancy-pointwise	PROVED	Constancy along rotation orbits, pointwise proof
+ca_III.tex	103136	proposition	10.7:prop-orbit-constancy-integrated	PROVED	Constancy along rotation orbits, integrated proof
+ca_III.tex	103260	proposition	10.7:prop-density-extension	PROVED	Extension of invariance from smooth to continuously differentiable tuples
+ca_III.tex	103327	theorem	10.7:thm-conclusion-step	PROVED	The conclusion step
+ca_III.tex	103479	corollary	10.7:cor-clustering-dichotomy	PROVED	The dichotomy for the far-sphere flux hypothesis
+ca_III.tex	103624	corollary	10.7:cor-full-sequence	PROVED	Invariance along the full sequence
+ca_III.tex	103760	lemma	10.7:lem-renormalised-identity	PROVED	Robustness under a renormalised rotational Ward identity
+ca_III.tex	103849	lemma	10.7:lem-annulus-transfer	PROVED	The transfer lemma for small scalar annulus terms
+ca_III.tex	103980	lemma	10.7:lem-antisymmetric-irreducible	PROVED	Irreducibility of the antisymmetric square under the hyperoctahedral group
+ca_III.tex	104079	lemma	10.7:lem-plane-rotations-generate	PROVED	Coordinate-plane rotations generate the rotation group
+ca_III.tex	104165	lemma	10.7:lem-exponential-estimates	PROVED	Exponential estimates and the product formula
+ca_III.tex	104248	lemma	10.7:lem-one-parameter-subgroup	PROVED	One-parameter subgroups of infinite closed subgroups
+ca_III.tex	104342	lemma	10.7:lem-tangent-space	PROVED	The tangent space of a closed subgroup
+ca_III.tex	104376	theorem	10.7:thm-generation-density	PROVED	The hyperoctahedral group and one rotation of infinite order generate the orthogonal group
+ca_III.tex	104441	proposition	10.7:prop-rotation-subgroup-caveat	PROVED	The rotation subgroup of the hyperoctahedral group does not suffice
+ca_III.tex	104590	lemma	10.7:lem-fixed-group	PROVED	The fixed group of a bounded separated functional
+ca_III.tex	104722	corollary	10.7:cor-fixed-group-limit	PROVED	The fixed group of a subsequential limit
+ca_III.tex	105044	lemma	10.7:lem-one-generator	PROVED	One generator suffices
+ca_III.tex	105309	proposition	10.7:prop-anomaly-flux	PROVED	The rotational anomaly as a boundary flux of the annulus functional
+ca_III.tex	105730	theorem	10.7:thm-quasi-free-reflection	PROVED	Quasi-free fields positive for the geometric reflection are rotation invariant
+ca_III.tex	105969	corollary	10.7:cor-quasi-free-mixtures	PROVED	Mixtures of quasi-free solutions and the standard reflection
+ca_III.tex	106138	theorem	10.7:thm-quasi-free-boxes	PROVED	Quasi-free fields on periodic boxes converge to the invariant limit
+ca_III.tex	106298	theorem	10.7:thm-uniform-mixtures	PROVED	The anomaly vanishes exactly for uniform mixtures
+ca_III.tex	106589	proposition	10.7:prop-flux-counterexample	PROVED	A hypercubic counter-example without the flux identity
+ca_III.tex	106993	lemma	10.7:lem-plane-regrouping	PROVED	Regrouping the divergence term by plaquette planes
+ca_III.tex	107070	lemma	10.7:lem-divergence-weights	PROVED	Bounds on the radial divergence weights
+ca_III.tex	107267	proposition	10.7:prop-divergence-vanishes	PROVED	The divergence term vanishes in the limit
+ca_III.tex	107741	proposition	10.7:prop-slab-bound	PROVED	Reflection-positivity bound for slab correlations
+ca_III.tex	107823	lemma	10.7:lem-cluster-polynomial	PROVED	Cumulants as covariances with a cluster polynomial
+ca_III.tex	107922	lemma	10.7:lem-far-geometry	PROVED	Slab geometry for far stress-tensor cubes
+ca_III.tex	108026	theorem	10.7:thm-infrared-reduction	PROVED	The infrared hypothesis from scalar reflected decay
+ca_III.tex	108223	proposition	10.7:prop-clustering-mass-gap	PROVED	Scalar reflected decay from clustering or a mass gap
+ca_III.tex	108374	corollary	10.7:cor-slow-decay	PROVED	A non-zero anomaly forces slow decay
+ca_III.tex	109037	lemma	10.8:lem-pointwise-implies	PROVED	Pointwise decay implies the far-sphere flux hypothesis
+ca_III.tex	109238	proposition	10.8:prop-threshold-sharpness	OUTSTANDING	Sharpness of the $|x|^{-4}$ threshold: a free-field counter-model. Proof outstanding
+ca_III.tex	109425	lemma	10.8:lem-shell-identification	PROVED	Identification of the two shell functionals in the limit
+ca_III.tex	109529	lemma	10.8:lem-test-classes	PROVED	Test classes and the sharp norm of a rotation derivative
+ca_III.tex	109633	lemma	10.8:lem-smooth-tuples	PROVED	The far-sphere flux hypothesis implies the rate-free form on smooth tuples
+ca_III.tex	109827	lemma	10.8:lem-limiting-flux	PROVED	Cut-off independence of the limiting flux
+ca_III.tex	109986	lemma	10.8:lem-flux-continuity	PROVED	$C^2$-continuity of the limiting flux
+ca_III.tex	110125	proposition	10.8:prop-mollified-extension	PROVED	Extension to $C^r$ tuples by mollification
+ca_III.tex	110274	corollary	10.8:cor-forms-equivalence	PROVED	Equivalence of the two forms under ultraviolet bounds

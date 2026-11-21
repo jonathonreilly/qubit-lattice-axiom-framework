@@ -1,0 +1,9 @@
+[D] m=0.001 done; running max R1=1.4935 at (0.001, 16, 32, 64, 64, np.float64(0.0009381028941149813)); max R2=0.00094 at (0.001, 16, 32, 64, 64, np.float64(1.493534257376621))
+[D] m=0.01 done; running max R1=1.4935 at (0.001, 16, 32, 64, 64, np.float64(0.0009381028941149813)); max R2=0.00094 at (0.001, 16, 32, 64, 64, np.float64(1.493534257376621))
+[D] m=0.1 done; running max R1=1.4935 at (0.001, 16, 32, 64, 64, np.float64(0.0009381028941149813)); max R2=0.00094 at (0.001, 16, 32, 64, 64, np.float64(1.493534257376621))
+[D] m=0.3 done; running max R1=1.4935 at (0.001, 16, 32, 64, 64, np.float64(0.0009381028941149813)); max R2=0.00094 at (0.001, 16, 32, 64, 64, np.float64(1.493534257376621))
+[D] m=1.0 done; running max R1=1.4935 at (0.001, 16, 32, 64, 64, np.float64(0.0009381028941149813)); max R2=0.00094 at (0.001, 16, 32, 64, 64, np.float64(1.493534257376621))
+RESULT D: sup R1 = b p/g = 1.49353 at (m,a,b,c,d,R2)=(0.001, 16, 32, 64, 64, np.float64(0.0009381028941149813))
+RESULT D: sup R2 = a delta_e/g = 0.00094 at (m,a,b,c,d,R1)=(0.001, 16, 32, 64, 64, np.float64(1.493534257376621))
+RESULT D: max of floor(2b/a) * a delta_e/(b p) = 0.00251 at (0.001, 16, 32, 64, 64) (Theorem W2 says < 1)
+nice python3 guide_scan.py $M  1.50s user 0.02s system 99% cpu 1.526 total

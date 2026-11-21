@@ -1,0 +1,12 @@
+start 10:30:28Z System-wide memory free percentage: 71%
+tw L4 done 10:31:02Z
+tw L6 done 10:31:46Z
+tw L8 done 10:33:47Z
+tw L10 done 10:35:30Z
+tw L12 done 10:38:18Z
+BATCH3a done 10:38:18Z System-wide memory free percentage: 70%
+xyyz b2.3 L4 done 10:38:25Z
+xyyz b2.3 L8 done 10:38:49Z
+xyyz b2.6 L4 done 10:38:56Z
+xyyz b2.6 L8 done 10:39:19Z
+pi L4 done 10:39:27Z

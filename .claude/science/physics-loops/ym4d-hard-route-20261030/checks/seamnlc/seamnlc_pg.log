@@ -1,0 +1,5 @@
+{'B': 3, 'Ms': [3, 3, 2, 2], 'max|Q_path h|': 0.0, "rel|d T1 Q H - T2 d' Q H|": 0.0, "rel|Q_path Hc - d'psi|": 0.0, 'rel|d hc - d Hc|': 0.0, 'L2 ratio |h|/|H| (random)': np.float64(0.997956), 'L4 ratio |h|/|H| (random)': 0.997209, 'RSS_GB': 0.035}
+{'B': 5, 'Ms': [3, 2, 2, 2], 'max|Q_path h|': 0.0, "rel|d T1 Q H - T2 d' Q H|": 0.0, "rel|Q_path Hc - d'psi|": 0.0, 'rel|d hc - d Hc|': 0.0, 'L2 ratio |h|/|H| (random)': np.float64(1.000043), 'L4 ratio |h|/|H| (random)': 1.000247, 'RSS_GB': 0.041}
+{'B': 7, 'Ms': [2, 2, 2, 2], 'max|Q_path h|': 0.0, "rel|d T1 Q H - T2 d' Q H|": 0.0, "rel|Q_path Hc - d'psi|": 0.0, 'rel|d hc - d Hc|': 0.0, 'L2 ratio |h|/|H| (random)': np.float64(0.999826), 'L4 ratio |h|/|H| (random)': 0.999816, 'RSS_GB': 0.054}
+{'B': 9, 'Ms': [2, 2, 2, 1], 'max|Q_path h|': 0.0, "rel|d T1 Q H - T2 d' Q H|": 0.0, "rel|Q_path Hc - d'psi|": 0.0, 'rel|d hc - d Hc|': 0.0, 'L2 ratio |h|/|H| (random)': np.float64(0.999914), 'L4 ratio |h|/|H| (random)': 0.999922, 'RSS_GB': 0.059}
+done 0.2 s

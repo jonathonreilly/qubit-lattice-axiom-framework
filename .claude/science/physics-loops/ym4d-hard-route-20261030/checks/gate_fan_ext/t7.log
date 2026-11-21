@@ -1,0 +1,2 @@
+balanced fan, leaves 1 and 4: kappa 15.937 Euclid Lip 3.992
+{'1': np.float64(1.0), "('lip', 1)": np.float64(1.0), '2': np.float64(6.854), "('lip', 2)": np.float64(2.618), '3': np.float64(17.489), "('lip', 3)": np.float64(4.182), '4': np.float64(32.948), "('lip', 4)": np.float64(5.74)}

@@ -1,0 +1,15 @@
+d 2: window nonzero check K0 8.24e-05
+ constant flux f 0.0982: max|m| 1.388e-17
+ d 2 amp 0.8: f 0.4884 max|m|/f^2 0.0125 (C)/f^2 0.0015 picard its 6 final 2.87e-15 first 2.98e-03 | fU 0.1110 fU L^2/f 2.045 excess(norm) 6.4027e+00 I 1.8476e+01 ratio 0.3465 (exc-2I)/(fE) -8.863 E 7.0567e+00 I_fine/I 0.0679
+ d 2 amp 0.4: f 0.1870 max|m|/f^2 0.0107 (C)/f^2 0.0011 picard its 4 final 3.93e-13 first 3.75e-04 | fU 0.0326 fU L^2/f 1.569 excess(norm) 5.4572e-01 I 1.7335e+00 ratio 0.3148 (exc-2I)/(fE) -13.558 E 1.1525e+00 I_fine/I 0.0596
+ d 2 amp 0.2: f 0.0833 max|m|/f^2 0.0075 (C)/f^2 0.0010 picard its 4 final 1.31e-14 first 5.19e-05 | fU 0.0126 fU L^2/f 1.366 excess(norm) 6.4214e-02 I 2.2197e-01 ratio 0.2893 (exc-2I)/(fE) -18.647 E 2.4441e-01 I_fine/I 0.0540
+d 3: window nonzero check K0 7.48e-07
+ constant flux f 0.0982: max|m| 1.388e-17
+ d 3 amp 0.8: f 1.0666 max|m|/f^2 0.0175 (C)/f^2 0.0358 picard its 9 final 2.25e-13 first 1.99e-02 | fU 0.3533 fU L^2/f 2.981 excess(norm) 4.3561e+02 I 1.4195e+03 ratio 0.3069 (exc-2I)/(fE) -5.389 E 4.1811e+02 I_fine/I 0.2510
+ d 3 amp 0.4: f 0.4724 max|m|/f^2 0.0169 (C)/f^2 0.0385 picard its 6 final 6.37e-13 first 3.77e-03 | fU 0.0959 fU L^2/f 1.826 excess(norm) 4.4111e+01 I 1.7279e+02 ratio 0.2553 (exc-2I)/(fE) -7.279 E 8.7668e+01 I_fine/I 0.1753
+ d 3 amp 0.2: f 0.2376 max|m|/f^2 0.0121 (C)/f^2 0.0337 picard its 5 final 1.79e-13 first 6.84e-04 | fU 0.0375 fU L^2/f 1.419 excess(norm) 6.7699e+00 I 2.9937e+01 ratio 0.2261 (exc-2I)/(fE) -10.852 E 2.0591e+01 I_fine/I 0.1416
+d 4: window nonzero check K0 6.79e-09
+ constant flux f 0.3927: max|m| 5.551e-17
+ d 4 amp 0.8: f 1.5339 max|m|/f^2 0.0238 (C)/f^2 0.0626 picard its 40 final 1.81e-03 first 5.59e-02 | fU 1.2115 fU L^2/f 7.108 excess(norm) 1.9643e+03 I 5.7203e+03 ratio 0.3434 (exc-2I)/(fE) -7.495 E 8.2434e+02 I_fine/I 1.4232
+ d 4 amp 0.4: f 0.8341 max|m|/f^2 0.0150 (C)/f^2 0.0439 picard its 9 final 4.30e-13 first 1.05e-02 | fU 0.3087 fU L^2/f 3.331 excess(norm) 3.8932e+02 I 1.3676e+03 ratio 0.2847 (exc-2I)/(fE) -13.138 E 2.1405e+02 I_fine/I 0.8355
+ d 4 amp 0.2: f 0.4183 max|m|/f^2 0.0147 (C)/f^2 0.0416 picard its 7 final 2.00e-13 first 2.57e-03 | fU 0.1558 fU L^2/f 3.351 excess(norm) 9.2980e+01 I 3.3707e+02 ratio 0.2758 (exc-2I)/(fE) -25.742 E 5.3966e+01 I_fine/I 0.7439

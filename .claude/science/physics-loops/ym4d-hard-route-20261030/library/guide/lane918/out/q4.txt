@@ -1,0 +1,14 @@
+spp_4_4_2.3 scripts/split.py 4 4 4 4 2.3 0 8 30 400 811
+spp_4_6_2.3 scripts/split.py 4 6 6 6 2.3 0 8 30 300 812
+spp_6_6_2.3 scripts/split.py 6 6 6 6 2.3 0 8 30 250 813
+spp_4_4_2.5 scripts/split.py 4 4 4 4 2.5 0 8 30 400 811
+spp_4_6_2.5 scripts/split.py 4 6 6 6 2.5 0 8 30 300 812
+spp_6_6_2.5 scripts/split.py 6 6 6 6 2.5 0 8 30 250 813
+fwspec_4x4x4_2.3 scripts/spec.py 16 4 2.3 100 400 774 6 1 4 4
+fwspec_8x4x4_2.3 scripts/spec.py 16 8 2.3 100 400 778 6 1 4 4
+fwspec_8x8x4_2.3 scripts/spec.py 16 8 2.3 100 400 778 6 1 8 4
+fwspec_8x8x8_2.3 scripts/spec.py 16 8 2.3 100 400 778 6 1 8 8
+fwspec_4x4x4_2.5 scripts/spec.py 16 4 2.5 100 400 774 6 1 4 4
+fwspec_8x4x4_2.5 scripts/spec.py 16 8 2.5 100 400 778 6 1 4 4
+fwspec_8x8x4_2.5 scripts/spec.py 16 8 2.5 100 400 778 6 1 8 4
+fwspec_8x8x8_2.5 scripts/spec.py 16 8 2.5 100 400 778 6 1 8 8

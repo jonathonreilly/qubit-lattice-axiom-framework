@@ -1,0 +1,63 @@
+bM 2.0 bT 0.0  l0 0.583612
+   i 1 lam_i/lam_0 0.036432 swap +1.00 centre -1.000 l_i-l_0 +0.969456
+   i 2 lam_i/lam_0 0.033955 swap -1.00 centre -1.000 l_i-l_0 +0.263887
+   i 3 lam_i/lam_0 0.001239 swap +1.00 centre +1.000 l_i-l_0 +2.734107
+   i 4 lam_i/lam_0 0.000320 swap -1.00 centre +1.000 l_i-l_0 +1.454186
+   i 5 lam_i/lam_0 0.000319 swap +1.00 centre +1.000 l_i-l_0 +1.432606
+   i 6 lam_i/lam_0 0.000012 swap +1.00 centre -1.000 l_i-l_0 +7.325794
+bM 3.0 bT 0.0  l0 1.855737
+   i 1 lam_i/lam_0 0.114843 swap +1.00 centre -1.000 l_i-l_0 +1.647504
+   i 2 lam_i/lam_0 0.093201 swap -1.00 centre -1.000 l_i-l_0 -0.036053
+   i 3 lam_i/lam_0 0.010851 swap +1.00 centre +1.000 l_i-l_0 +2.311874
+   i 4 lam_i/lam_0 0.003461 swap -1.00 centre +1.000 l_i-l_0 +2.204788
+   i 5 lam_i/lam_0 0.003375 swap +1.00 centre +1.000 l_i-l_0 +2.017636
+   i 6 lam_i/lam_0 0.000397 swap +1.00 centre -1.000 l_i-l_0 +5.944553
+bM 4.0 bT 0.0  l0 3.668167
+   i 1 lam_i/lam_0 0.222476 swap +1.00 centre -1.000 l_i-l_0 +1.842772
+   i 2 lam_i/lam_0 0.152253 swap -1.00 centre -1.000 l_i-l_0 -0.511918
+   i 3 lam_i/lam_0 0.035854 swap +1.00 centre +1.000 l_i-l_0 +2.003971
+   i 4 lam_i/lam_0 0.013472 swap -1.00 centre +1.000 l_i-l_0 +2.258531
+   i 5 lam_i/lam_0 0.012315 swap +1.00 centre +1.000 l_i-l_0 +1.659116
+   i 6 lam_i/lam_0 0.003006 swap +1.00 centre -1.000 l_i-l_0 +4.704657
+bM 6.0 bT 0.0  l0 7.830889
+   i 1 lam_i/lam_0 0.448824 swap +1.00 centre -1.000 l_i-l_0 +1.138248
+   i 2 lam_i/lam_0 0.223084 swap -1.00 centre -1.000 l_i-l_0 -1.226542
+   i 3 lam_i/lam_0 0.127432 swap +1.00 centre +1.000 l_i-l_0 +1.666326
+   i 4 lam_i/lam_0 0.054380 swap -1.00 centre +1.000 l_i-l_0 +1.056847
+   i 5 lam_i/lam_0 0.039039 swap +1.00 centre +1.000 l_i-l_0 -0.371371
+   i 6 lam_i/lam_0 0.025706 swap +1.00 centre -1.000 l_i-l_0 +2.832498
+bM 8.0 bT 0.0  l0 11.658055
+   i 1 lam_i/lam_0 0.634895 swap +1.00 centre -1.000 l_i-l_0 +0.117992
+   i 2 lam_i/lam_0 0.246935 swap -1.00 centre -1.000 l_i-l_0 -1.291761
+   i 3 lam_i/lam_0 0.246122 swap +1.00 centre +1.000 l_i-l_0 +1.161431
+   i 4 lam_i/lam_0 0.103482 swap -1.00 centre +1.000 l_i-l_0 -0.271993
+   i 5 lam_i/lam_0 0.075846 swap +1.00 centre -1.000 l_i-l_0 +1.665747
+   i 6 lam_i/lam_0 0.056708 swap +1.00 centre +1.000 l_i-l_0 -1.500548
+bM 8.5 bT 0.0  l0 12.493752
+   i 1 lam_i/lam_0 0.673365 swap +1.00 centre -1.000 l_i-l_0 -0.100851
+   i 2 lam_i/lam_0 0.275814 swap +1.00 centre +1.000 l_i-l_0 +1.061773
+   i 3 lam_i/lam_0 0.249106 swap -1.00 centre -1.000 l_i-l_0 -1.223163
+   i 4 lam_i/lam_0 0.114758 swap -1.00 centre +1.000 l_i-l_0 -0.521509
+   i 5 lam_i/lam_0 0.091545 swap +1.00 centre -1.000 l_i-l_0 +1.472990
+   i 6 lam_i/lam_0 0.059171 swap +1.00 centre +1.000 l_i-l_0 -1.568658
+bM 10.0 bT 0.0  l0 14.667900
+   i 1 lam_i/lam_0 0.770861 swap +1.00 centre -1.000 l_i-l_0 -0.610771
+   i 2 lam_i/lam_0 0.358292 swap +1.00 centre +1.000 l_i-l_0 +0.956844
+   i 3 lam_i/lam_0 0.250906 swap -1.00 centre -1.000 l_i-l_0 -0.880672
+   i 4 lam_i/lam_0 0.144251 swap -1.00 centre +1.000 l_i-l_0 -1.029152
+   i 5 lam_i/lam_0 0.142451 swap +1.00 centre -1.000 l_i-l_0 +1.122242
+   i 6 lam_i/lam_0 0.063445 swap +1.00 centre +1.000 l_i-l_0 -1.340484
+bM 12.0 bT 0.0  l0 16.805893
+   i 1 lam_i/lam_0 0.864445 swap +1.00 centre -1.000 l_i-l_0 -0.929559
+   i 2 lam_i/lam_0 0.444211 swap +1.00 centre +1.000 l_i-l_0 +1.386670
+   i 3 lam_i/lam_0 0.247134 swap -1.00 centre -1.000 l_i-l_0 -0.225875
+   i 4 lam_i/lam_0 0.211189 swap +1.00 centre -1.000 l_i-l_0 +1.158316
+   i 5 lam_i/lam_0 0.172905 swap -1.00 centre +1.000 l_i-l_0 -1.188587
+   i 6 lam_i/lam_0 0.083563 swap +1.00 centre +1.000 l_i-l_0 +1.438578
+bM 16.0 bT 0.0  l0 19.104982
+   i 1 lam_i/lam_0 0.960474 swap +1.00 centre -1.000 l_i-l_0 -0.700166
+   i 2 lam_i/lam_0 0.522000 swap +1.00 centre +1.000 l_i-l_0 +3.736228
+   i 3 lam_i/lam_0 0.319377 swap +1.00 centre -1.000 l_i-l_0 +2.454378
+   i 4 lam_i/lam_0 0.232189 swap -1.00 centre -1.000 l_i-l_0 +1.094278
+   i 5 lam_i/lam_0 0.200883 swap -1.00 centre +1.000 l_i-l_0 -0.437162
+   i 6 lam_i/lam_0 0.161781 swap +1.00 centre +1.000 l_i-l_0 +2.501571

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/tmp/sa-gap-descent-mc-astra.C6QR8N/sa_ym4.tex",
+    "source": "31a47c543775/YM4_sketch_500.tex",
+    "bytes": 1989151,
+    "sha256": "d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f"
+  },
+  {
+    "path": "/tmp/sa-gap-descent-mc-astra.C6QR8N/sa_ca_I.tex",
+    "source": "31a47c543775/theorem_0_complete_account_raw_I.tex",
+    "bytes": 10554720,
+    "sha256": "4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93"
+  },
+  {
+    "path": "/tmp/sa-gap-mc-teper.MmabnV/paper.pdf",
+    "source": "hep-th/9812187",
+    "bytes": 256292,
+    "sha256": "a64947270cd94477bd7887e03ed1bf9ad5bdab10c0800f46a07710edf4d1e4db"
+  },
+  {
+    "path": "/tmp/sa-gap-mc-lucini.L7IJIa/paper.pdf",
+    "source": "hep-lat/0103027",
+    "bytes": 351699,
+    "sha256": "21722811baf690422fdacf21e5b88ac441f0fcb4b5f8f5767468b23e4889e70f"
+  },
+  {
+    "path": "/tmp/sa-gap-mc-wenger.uF14lB/paper.pdf",
+    "source": "hep-lat/0404008",
+    "bytes": 373882,
+    "sha256": "0478c29654169028c2c48ca878cf8602440d852b320e00b45673e850ed53e915"
+  },
+  {
+    "path": "/tmp/sa-gap-mc-o4.ihBG2b/paper.pdf",
+    "source": "2308.14628",
+    "bytes": 397029,
+    "sha256": "a090fb630dfd1addd2cc473e6b07be7494f43b56400b862903098be958b4e919"
+  },
+  {
+    "path": "/tmp/sa-gap-mc-skala.tN0gPq/paper.pdf",
+    "source": "hep-lat/9812020",
+    "bytes": 215561,
+    "sha256": "f93ada1678863f7d96e4536e64cd4ff39dff62c4c52260b510310ea7ddaea4ee"
+  }
+]

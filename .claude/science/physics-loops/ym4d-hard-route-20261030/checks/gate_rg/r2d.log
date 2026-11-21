@@ -1,0 +1,5 @@
+R2d Np 12 f 0.0273: largest sup distance with block norm above 1e-03: none
+R2d Np 12 f 0.0273: largest sup distance with block norm above 1e-05: 2
+R2d Np 12 f 0.0273: largest sup distance with block norm above 1e-08: 3
+R2d largest block norm by distance: 1.42e-04 1.43e-04 1.07e-04 2.76e-06 0.00e+00 0.00e+00 0.00e+00 (16.6s)
+R2 PASS

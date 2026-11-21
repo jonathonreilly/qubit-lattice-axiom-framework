@@ -1,0 +1,356 @@
+lead: anthropic/claude-opus-5-5/high mac-mini-worker
+lease_until: 2026-11-15T04:51Z
+
+# gap-tiesearch-opus (FINISH row 973): GUIDE refutation test of box-uniform (TILT-COV-sup) at beta 2.3 and 2.4
+
+Started 2026-11-14T16:51Z on Mac mini worker 2, pinned at a250c7f59. GUIDE level only: a run guides or refutes; it proves nothing.
+
+## Plan (at most eight steps)
+
+1. Read row 970 (library/gap-direction2-max.md sec. 3.4, 3.5, 4 A1, 7a), Lemma SUB, rows 950/952 runs and code (library/guide/lane952/, lane970/).
+2. Write the criteria (REFUTED / NOT REFUTED) in this file before any run.
+3. Set up library/guide/lane973/ by reusing lane952/lane970 code; dry-run small sizes.
+4. Control: reproduce one beta 2.6 value of row 950/970 within 5 percent.
+5. beta 2.4: tie-mode variance on sides 8..16, frozen slices incl. reduced-symmetry ones (as row 952).
+6. beta 2.3: same.
+7. Analysis: per-step growth factors vs 1.25; verdict per beta.
+8. RESULT line.
+
+## 1. Repo search, duplicate check, inputs (step 1; READ, no new claim)
+
+Repo search (this folder; branches not searched beyond this checkout): the statement under test is row 970's box-uniform
+(TILT-COV-sup) (`library/gap-direction2-max.md`, Sections 3.4, 3.5, 4 A1, 7a). Prior GUIDE data on frozen slices:
+row 950 (`library/gap-sc-max.md` 5.5-5.8; Claude Fable 5.2) and row 952 (`library/gap-sg2test-opus.md` Sections 1-5;
+Claude Opus 5.5), code `library/guide/lane952/sg2lab.py` (row 952) and `library/guide/lane970/twoslice_tilt.py` (row 970).
+Duplicate check: `library/open-core.md` has no entry for (TILT-COV-sup); among FINISH rows only 968, 970 (which state and
+refute it in the upper window), 971 (literature, reading only), 972 (check of row 970) and this row name it. Row 974 tests
+attack A2 (the trajectory form), a different statement. No other row runs this test. Credit: all code reused here is
+rows 952 and 970's; the slice families and the lemma are theirs.
+
+What is known before this row (GUIDE, quoted from the files above):
+- Lemma SUB (row 970, 3.4, PROVED there, check pending in row 972): for s in (0, 1/beta), u in M, z orthogonal to the gauge
+  orbit of u, kbar_(s,0) >= Var_(pi_(beta u))(<z, w>)/(s'^2 |z|^2). pi_(beta u) is the one-step law of slice 1 of the
+  temporal-gauge slab with slice 0 frozen at u. At the mid-slice s' = 1/(2 beta): kbar_(s,0) >= 4 beta^2 lambda, where
+  lambda = Var(X_a) is the lag-0 (temporal-gauge, no frame average) second moment of a unit-normalised tie-mode amplitude
+  X_a = sum_l eps_l E_l^a / sqrt(#links in the pattern) in one colour a, E_l = Im(w_l u_l^*).
+- u_xy (row 950, 5.7), tie mode (pi,pi,0), (1,-1,0): beta 2.3: 2.03, 2.55, 2.51, 2.46 at L = 4, 6, 8, 10 (saturates);
+  beta 2.4: 2.74, 8.00, 7.57 at L = 4, 8, 12 (saturates); beta 2.5: 3.56, 16.42, 42.73; beta 2.6: 4.19, 11.34, 22.62, 41.59, 64.87.
+- u_phi (z-twist, phi = pi/2; row 952, 3.2), colour 3: beta 2.3 temporal-gauge raw moment 2.58, 3.16, 2.70 at L = 4, 6, 8
+  (no growth); beta 2.45: 5.96, 11.8, 24.8 (growth, ratio 4.2 from L = 4 to 8). u_xyyz (mode xyz): beta 2.3 lambda_max 1.32, 1.43
+  at L = 4, 8 (no order); beta 2.6: 3.5 -> 13.3.
+- Not yet run anywhere: beta 2.4 on any slice other than u_xy; any slice on sides above 12 at beta 2.3-2.4; x-twist,
+  twisted u_xyyz, interpolations at beta 2.3-2.4.
+
+## 2. Criteria (written 16:53Z UTC, BEFORE any run of this row)
+
+Object. The SU(2) Wilson half-space slab of row 952 (`sg2lab.py`): temporal gauge, slices t = 0..T, T = 6, slice 0 frozen at
+the slice u, spatial torus of side L, slice T at half spatial weight. Observable for slice u and colour a:
+lambda_a(L) := E[X_a^2] at lag 0 (no frame chain), X_a the tie-mode amplitude of the slice's named mode (`--mode xy`:
+eps = (-1)^(x+y)(1, -1, 0), norm sqrt(2 L^3); `--mode xyz`: eps = (-1)^(x+y+z)(1, -1, 1), norm sqrt(3 L^3)). The raw moment is the
+variance because E[X_a] = 0 by symmetry at every slice used (u_xy, u_xyyz: global colour rotations fix the slice;
+twisted slices: the U(1) of row 952 1.4(b) for colours 1, 2 and the reflection S of 1.4(c) for colour 3); the run also
+reports the mean, which must be within 3 standard errors of 0, else the slice is reported with the connected value.
+The reported value per slice is lambda(L) = max over the colours that the slice's symmetry makes equivalent-or-singled-out
+(u_xy, u_xyyz: colour mean lambda_star; twisted slices: colour 3). Errors: 8 blocks (sg2lab's blocks_mean).
+Sides: L = 8, 10, 12, 14, 16 (a "step of the side" is L -> L + 2). Per-step growth factor
+  g := (lambda(16)/lambda(8))^(1/4),  with error from the two block errors (propagated linearly).
+Decision rules, per beta, over the slices searched:
+- REFUTED (GUIDE) at beta: some slice has g - 2 sigma_g > 1.25, and no single step L -> L + 2 on 8..16 shows a decrease by more
+  than 2 standard errors. (Row 970's criterion. Volume law gives (10/8)^3 = 1.95 down to (16/14)^3 = 1.49 per step;
+  a critical L^(2 - eta) law gives about 1.41 on average over 8..16; so both refute.)
+- NOT REFUTED at beta: every slice searched has g + 2 sigma_g <= 1.25. This means only that the slices tried on sides
+  8 to 16 show no growth faster than 1.25 per step; it establishes no bound, says nothing about other slices, other modes,
+  t > 0, slabs thicker than T = 6, or sides above 16. (A search that finds nothing does not prove a bound.)
+- Otherwise INCONCLUSIVE at that beta (named slice and numbers).
+Screening (to choose slices for the full sweep, not a verdict): L = 8 and 12 at beta 2.4 and 2.3 for each candidate; a slice
+goes to the full sweep 8..16 if lambda(12)/lambda(8) > 1.2 at either beta, and u_xy and the z-twist go in any case at beta 2.4
+(the slice families that order closest to the window, rows 950, 952).
+Slices (reduced symmetry, as in row 952): u_xy (control family), z-twist u_phi at phi = pi/2 and pi/4, x-twist at pi/2,
+u_xyyz (mode xyz), twisted u_xyyz at pi/2 (mode xyz, colour 3), interpolation u_xy -> u_pi at s = 0.5 (mode xy).
+Controls (must pass, else the batch is reported as failed and decides nothing):
+- (K1) row 950 reproduction: u_xy, beta 2.6, L = 8, lambda_star within 5 percent of 22.62 (row 950; row 952 batch 1 and row 970 7a
+  reproduced it within 2 percent).
+- (K2) u = 1, beta 2.3, L = 4: per-component variance of E within 3 percent of 0.160 (rows 944, 950, 952).
+- (K3) equilibration at the largest side: at L = 16 the hot and cold starts agree within 15 percent for the slice that decides
+  the verdict at each beta, else that point is reported as not equilibrated.
+Resources: one job at a time under the numeric lock, nice, OMP/BLAS threads 1, RSS guard 2 GB (the brief says 3 GB; I use the
+stricter FINISH value), start only at >= 50 percent memory free.
+
+## 3. Code and first control (step 3)
+
+Code: `library/guide/lane973/tielab.py` = row 952's `lane952/sg2lab.py` (Claude Opus 5.5, row 952) with three additions
+for this row: an RSS guard (exit above 2 GB), `--noproxy` (skips the proxies Y of row 952, not used here), progress lines.
+No change to the sampler or the observables. Lock: holder `gap-tiesearch-973`, acquired 16:53Z, 71 percent memory free.
+- (K2) u = 1, beta 2.3, L = 4, 200 + 1500 sweeps: per-component variance 0.1599 +- 0.0008 against 0.160: **PASS**.
+- Speed: about 34 ms per sweep at L = 16 (T = 6), so a side-16 point of 3000 + 12000 sweeps costs about 9 minutes.
+- Batch S (screen) + (K1) launched 16:54Z: `lane973/screen.sh`, log `lane973/logs/screen.log`, JSON per run in `logs/`.
+  K1: u_xy, beta 2.6, L = 8, 1500 + 6000. Screen: beta 2.4 then 2.3; L = 8 (1500 + 6000) and 12 (2000 + 8000);
+  slices xy, z-twist pi/2 and pi/4, x-twist pi/2, xyyz (mode xyz), twisted xyyz pi/2 (mode xyz), interp s = 0.5. Cold starts.
+
+- (K1) u_xy, beta 2.6, L = 8, 1500 + 6000 sweeps, cold: lambda_star = 22.92 +- 0.77 against row 950's 22.62 (1.3 percent): **PASS**.
+  Note on the mean rule of Section 2: at beta 2.6 the colour frame drifts slowly, so the per-colour moments are 34.7, 10.4, 23.7
+  and colour 1 has a mean 12 standard errors from 0 in this run. This is a slow global rotation, not a non-zero true mean
+  (the slab law at u_xy is exactly invariant under constant colour rotations, so E[X_a] = 0 and the three colour variances are
+  equal). For u_xy and u_xyyz I therefore read the colour mean lambda_star = E|X|^2/3, which is rotation invariant and equals the
+  per-colour variance exactly; the mean rule is applied only to colour 3 of the twisted slices (this reading was fixed after K1 was read, while the screen ran, before any screen result was read).
+
+- Code fix at 17:08Z (before any L = 12 or beta 2.3 screen point ran): the interpolation slice (s = 0.5) hung in thermalization.
+  Cause: the Kennedy-Pendleton sampler of row 952 never accepts when a staple is exactly 0 (it occurs at the cold start of
+  this slice). Fix in `tielab.py` kp_a0: for kappa < 0.5, the exact rejection sampler "a0 from the Haar marginal, accept with
+  probability exp(kappa (a0 - 1))". Check: means of a0 at kappa = 0, 0.2, 3.0 are 0.0010, 0.0492, 0.5678 against the exact
+  0, 0.0499, 0.5679 (400,000 draws, errors about 0.0008). Runs before the fix (K1, and the six L = 8 points at beta 2.4 below) used
+  the old sampler; both samplers are exact for kappa > 0, so they are kept. The batch resumed as `screen2.sh` (skips finished runs).
+- Screen, beta 2.4, L = 8 (1500 + 6000 sweeps; colour moments c1/c2/c3, mean/error per colour, lambda_star = colour mean):
+  u_xy 7.45/5.95/7.20, lambda_star 6.87 +- 0.98 (row 950: 8.00); z-twist pi/2 colour 3: 12.07 +- 2.50 (mean/err 0.3);
+  z-twist pi/4 colour 3: 7.08 +- 1.58; x-twist pi/2 colour 3: 8.82 +- 1.67 (mean/err -3.3: slow tunnelling between the two tied
+  states, so the raw moment is noisy, see below); u_xyyz and twisted u_xyyz: see the table of Section 4.
+  Reading rule for a colour-3 mean beyond 3 errors (stated at 17:08Z, after seeing the x-twist number): the exact symmetry S
+  makes the true mean 0, so the raw moment remains the estimator of the variance; a large sample mean means the run did not
+  tunnel often enough, and that point is flagged "under-sampled" rather than replaced by the connected value (which would
+  remove exactly the tie being looked for). This replaces the "connected value" clause of Section 2.
+
+## 4. Screen results (step 4; GUIDE)
+
+**4.1 beta 2.4** (runs 16:54Z to 17:29Z; L = 8: 1500 + 6000 sweeps, L = 12: 2000 + 8000; cold start; errors from 8 blocks).
+Value read: lambda_star (colour mean) for u_xy and u_xyyz; colour 3 for the twisted slices (with lambda_star in brackets).
+
+| slice (mode) | lambda, L = 8 | lambda, L = 12 | ratio 12/8 | screen rule (> 1.2) |
+|---|---|---|---|---|
+| u_xy (xy) | 6.87 +- 0.98 | 6.07 +- 1.01 | 0.88 | no growth (row 950: 8.00, 7.57) |
+| z-twist pi/2, colour 3 (xy) | 12.07 +- 2.50 [6.40] | 8.79 +- 2.03 [6.27] | 0.73 | no growth |
+| z-twist pi/4, colour 3 (xy) | 7.08 +- 1.58 [6.43] | 8.83 +- 1.85 [9.60] | 1.25 (lambda_star 1.49) | passes the screen (noisy) |
+| x-twist pi/2, colour 3 (xy) | 8.82 +- 1.67 [5.52] | 8.18 +- 2.88 [5.82] | 0.93 | no growth |
+| u_xyyz (xyz) | 2.01 +- 0.19 | 1.87 +- 0.20 | 0.93 | no growth |
+| twisted u_xyyz pi/2, colour 3 (xyz) | 2.50 +- 0.55 [1.81] | 2.19 +- 0.30 [1.90] | 0.88 | no growth |
+| interp s = 0.5 (xy) | 0.85 +- 0.10 [0.57] | 1.00 +- 0.09 [0.63] | 1.18 | named mode small; but see 4.2 |
+
+Mean rule: colour-3 means within 3 errors except z-twist pi/4 at L = 12 (4.3 errors) and x-twist at L = 8 (3.3): flagged
+under-sampled (slow tunnelling between the tied states), as fixed at 17:08Z.
+
+**4.2 A flag that is not a tie (interp slice).** The colour-averaged raw structure factor's top eigenvalue at k = (pi, pi, 0)
+(over polarisations) is 5.05 at L = 8 and 16.75 at L = 12 (ratio 3.3, the volume ratio 3.375), on a polarisation other than
+the named mode. This is a RAW moment: the interp slice is fixed only by the colour U(1) exp(alpha k), so the colour-3 mean of E
+need not vanish, and a non-zero staggered mean of E gives |<E_k>|^2 of order L^3 trivially. A mean is not a variance and
+does not enter Lemma SUB. At 17:30Z I added to `tielab.py` the connected structure factor (sample-mean field subtracted;
+outputs `lambda_max_k_conn`, `mean_part_at_kmax`); the interp points at beta 2.4 are re-run with it after the beta 2.3 screen
+(rule, fixed now: if the connected value at L = 12 over L = 8 is > 1.2, the interp slice joins the full sweep on its
+connected top eigenvalue; the orthogonality of that mode to the gauge orbit would then be an open caveat).
+
+**4.3 Plan of the full sweep at beta 2.4 (fixed 17:31Z, before it runs; `lane973/full24.sh`, log `logs/full.log`).**
+Slices: u_xy and z-twist pi/2 (mandatory by Section 2), z-twist pi/4 (passed the screen). Sides 8, 16 first, then 12, 10, 14;
+3000 thermalisation sweeps; 24000, 20000, 16000, 14000, 12000 measured sweeps at L = 8, 10, 12, 14, 16; cold start, seed 11.
+K3: z-twist pi/4 at L = 16 from a hot start (seed 12). Before the sweep: the interp slice at L = 8, 12 with the connected
+structure factor (4.2). The rules of Section 2 decide; g uses lambda(16)/lambda(8) of these long runs only (the screen
+values are not pooled in).
+
+**4.4 beta 2.3 screen** (runs 17:29Z to about 17:56Z; same lengths; the connected values exist from the runs started after 17:30Z).
+
+| slice (mode) | lambda, L = 8 | lambda, L = 12 | ratio 12/8 | screen rule (> 1.2) |
+|---|---|---|---|---|
+| u_xy (xy) | 2.66 +- 0.20 | 2.71 +- 0.17 | 1.02 | no growth (row 950: 2.51 at L = 8, 2.46 at L = 10) |
+| z-twist pi/2, colour 3 | 3.25 +- 0.21 [2.25] | 2.33 +- 0.34 [1.93] | 0.72 | no growth |
+| z-twist pi/4, colour 3 | 2.55 +- 0.17 [2.30] | 2.82 +- 0.38 [2.44] | 1.11 | no growth |
+| x-twist pi/2, colour 3 | 2.59 +- 0.33 [2.33] | 2.55 +- 0.34 [2.26] | 0.98 | no growth |
+| u_xyyz (xyz) | 1.26 +- 0.08 | 1.10 +- 0.04 | 0.87 | no growth |
+| twisted u_xyyz pi/2, colour 3 (xyz) | 1.32 +- 0.10 [1.14] | 1.04 +- 0.08 [1.11] | 0.79 | no growth |
+| interp s = 0.5 (xy) | 0.68 +- 0.07 [0.50] | 0.75 +- 0.05 [0.53] | 1.10 | no growth; connected top eigenvalue 0.54 -> 0.53 |
+
+Interp at beta 2.3, L = 8, with the connected structure factor: raw top eigenvalue 4.18 at (pi, pi, 0), of which the mean part
+is 3.96; the connected top eigenvalue is 0.54. So the flag of 4.2 is a non-zero mean field (a deterministic staggered
+response of slice 1 to this slice), not a fluctuation, and it does not enter Lemma SUB. (beta 2.4 re-run with the connected
+value: in the full batch.) On every other slice the mean part is at most 0.18, as the symmetries require.
+
+**4.5 Plan at beta 2.3 (fixed 17:51Z, before it runs; `lane973/full23.sh`, chained after the beta 2.4 batch).** No slice passed
+the screen at 2.3. To give the verdict on sides 8 to 16 as Section 2 asks, the three xy-mode slices with the largest values
+(u_xy, z-twist pi/4, z-twist pi/2) run at L = 8, 16, 12 (24000, 12000, 16000 measured sweeps, seed 21), and K3 is u_xy at L = 16
+from a hot start. u_xyyz and its twist (values about half, falling) and x-twist (flat) are not continued; the verdict at 2.3
+covers the slices of the screen at sides 8, 12 and these three at 16.
+
+**4.6 Interp slice resolved (connected structure factor).** Connected top eigenvalue over all k and polarisations:
+beta 2.4: 0.60 (L = 8), 0.64 (L = 12); beta 2.3: 0.54, 0.53. The raw values 5.08 -> 16.83 (2.4) and 4.18 -> 13.53 (2.3) are
+mean parts 4.87 -> 16.62 and 3.96 -> 13.32, which scale as L^3: a non-random staggered mean of slice 1, not a variance. The
+interp slice does not join the full sweep (rule of 4.2: connected ratio 1.07 at 2.4, below 1.2).
+Screen conclusion: at beta 2.3 no slice grows from L = 8 to 12; at beta 2.4 only z-twist pi/4 passed (ratio 1.25, with
+errors of about 20 percent); all go to the sweep as planned in 4.3 and 4.5.
+
+## 5. Full sweep (step 5; GUIDE)
+
+**5.1 beta 2.4, raw log lines as they arrive** (value read: lambda_star for u_xy; colour 3 for the twists, lambda_star in brackets).
+- L = 8 (3000 + 24000): u_xy 7.54 +- 0.36; z-twist pi/2 9.63 +- 1.14 [5.27]; z-twist pi/4 6.13 +- 0.79 [6.28]. Means within 2.4 errors.
+
+- L = 16 (3000 + 12000): u_xy 7.41 +- 0.72 (so lambda(16)/lambda(8) = 0.98 for u_xy; RSS 0.14 GB, 560 s).
+- L = 16: z-twist pi/4 colour 3: 7.05 +- 1.72 [6.46] (ratio 16/8: 1.15); z-twist pi/2 colour 3: **17.04 +- 5.61** [9.10]
+  (ratio 16/8: 1.77; colour-1 mean 3.3 errors from 0, colour-3 error 33 percent: few tunnelling events between the tied states).
+- Interim per-step factors g = (lambda(16)/lambda(8))^(1/4), sigma_g = g (r_8 + r_16)/4 with r the relative errors:
+  u_xy 0.996 +- 0.036 (g + 2 sigma = 1.07: not refuted on this slice); z-twist pi/4 1.036 +- 0.096 (g + 2 sigma = 1.23 <= 1.25: not
+  refuted on this slice, barely); z-twist pi/2 1.153 +- 0.130 (between: INCONCLUSIVE on one chain).
+- Added at 18:36Z, before any of them ran, because z-twist pi/2 now decides the verdict at 2.4 (`full24b.sh`, chained after
+  the beta 2.3 batch): K3 for this slice (L = 16 hot, seed 31; the zt45 hot run of 4.3 stays as planned), two more cold chains at
+  L = 16 (seeds 32, 33), one more at L = 8 (seed 32). Pooling rule: the colour-3 value at a side is the plain mean of the
+  independent chains' values, error sqrt(sum err^2)/n; g is recomputed from the pooled values; K3 compares the hot chain with
+  the mean of the cold ones (within 15 percent, else "not equilibrated").
+
+- L = 12 (3000 + 16000): u_xy **12.69 +- 1.40** (connected 10.48); z-twist pi/4 colour 3 10.12 +- 3.39 [8.56]; z-twist pi/2 colour 3
+  9.41 +- 2.45 [7.09]. Warning: u_xy at L = 12 is 12.69 +- 1.40 in this chain against 6.07 +- 1.01 in the screen chain (seed 1)
+  and 7.57 in row 950, and above both L = 8 (7.54) and L = 16 (7.41). Two chains of the same point differ by 4 combined block
+  errors, so at beta 2.4 the 8-block errors understate the true error: the colour-frame mode has an autocorrelation time
+  comparable to the run. Every beta-2.4 number here must be read with this in mind; the verdict at 2.4 uses chain-to-chain
+  spread where replicas exist (Section 6).
+
+- Added at 18:52Z, before it runs (`full24c.sh`, chained after F24b): u_xy at beta 2.4, two more chains at L = 8 and two at
+  L = 16 (seeds 32, 33), pooled by the rule of the z-twist replicas; the error of a pooled value is then the larger of the
+  propagated block error and the chain-to-chain standard error of the mean.
+
+- L = 10 (3000 + 20000): u_xy 8.54 +- 0.73; z-twist pi/4 colour 3 8.55 +- 1.23 [7.11]; z-twist pi/2 colour 3 7.92 +- 1.72 [5.02].
+
+- L = 14 (3000 + 14000): u_xy 7.06 +- 0.85; z-twist pi/2 colour 3 13.20 +- 2.60 [7.21].
+  z-twist pi/2 colour 3 so far, L = 8, 10, 12, 14, 16 (one chain each): 9.63, 7.92, 9.41, 13.20, 17.04. Slow rise above L = 12 or
+  noise; the replicas decide.
+
+- L = 14: z-twist pi/4 colour 3 6.29 +- 0.60 [8.33].
+- **(K3) z-twist pi/4, L = 16, hot start (seed 12): colour 3 14.39 +- 2.60 [10.91] against the cold chain's 7.05 +- 1.72: factor 2.0,
+  K3 FAILS.** The L = 16 point of this slice is not equilibrated on 3000 + 12000 sweeps (or the block errors understate the error,
+  as for u_xy at L = 12). So the interim "not refuted, barely" for z-twist pi/4 is withdrawn.
+- Added at 19:35Z, before it runs (`full24d.sh`, after F24c): z-twist pi/4, two more cold chains at L = 16 (seeds 32, 33)
+  and one at L = 8 (seed 32); pooled with the hot chain by the replica rule (error = max of propagated block error and chain spread).
+  Numeric lock refreshed (6 h).
+
+**5.2 beta 2.3, raw log lines.**
+- L = 8 (3000 + 24000): u_xy 2.53 +- 0.15 (row 950: 2.51); z-twist pi/4 colour 3 2.36 +- 0.21 [2.20]; z-twist pi/2 colour 3 2.49 +- 0.25
+  [1.89]. Block errors 6 to 10 percent; the two chains of u_xy at L = 8 (screen 2.66 +- 0.20, this 2.53) agree.
+
+- L = 16 (3000 + 12000): u_xy 2.88 +- 0.16; z-twist pi/4 colour 3 2.78 +- 0.25 [2.58]; z-twist pi/2 colour 3 2.46 +- 0.32 [2.44].
+  Interim g (16 vs 8): u_xy 1.033 +- 0.030 (g + 2 sigma 1.09); z-twist pi/4 1.042 +- 0.047 (1.14); z-twist pi/2 0.997 +- 0.057 (1.11).
+  All below 1.25 with 2 sigma, pending K3 (u_xy hot at L = 16) and L = 12.
+
+- L = 12 (3000 + 16000): u_xy 2.38 +- 0.11; z-twist pi/4 colour 3 2.90 +- 0.24 [2.55]; z-twist pi/2 colour 3 2.48 +- 0.23 [2.39].
+- **(K3) u_xy, L = 16, hot start (seed 22): 2.23 +- 0.15 against the cold chain's 2.88 +- 0.16: ratio 0.77, K3 FAILS the 15 percent
+  rule** (the chains differ by 3 combined block errors). So at beta 2.3 too the 8-block errors understate the error at L = 16
+  (or 3000 sweeps do not equilibrate). Both chains lie at or below the L = 8 value, so the failure is of precision, not of
+  direction.
+
+**5.3 beta 2.3 analysis (rules of Section 2; replica rule of 5.1 for u_xy at L = 16).**
+
+| slice | L = 8 | L = 10 | L = 12 | L = 14 | L = 16 | g = (16/8)^(1/4) | g + 2 sigma_g |
+|---|---|---|---|---|---|---|---|
+| u_xy (lambda_star) | 2.53 +- 0.15 | (row 950: 2.46) | 2.38 +- 0.11 | | pooled 2.56 +- 0.33 (cold 2.88, hot 2.23) | 1.003 +- 0.047 | 1.10 |
+| u_xy, worst chain only | 2.53 +- 0.15 | | | | 2.88 +- 0.16 | 1.033 +- 0.030 | 1.09 |
+| z-twist pi/4, colour 3 | 2.36 +- 0.21 | | 2.90 +- 0.24 | | 2.78 +- 0.25 | 1.042 +- 0.047 | 1.14 |
+| z-twist pi/2, colour 3 | 2.49 +- 0.25 | | 2.48 +- 0.23 | | 2.46 +- 0.32 | 0.997 +- 0.057 | 1.11 |
+| x-twist pi/2, u_xyyz, twisted u_xyyz, interp (screen, L = 8 and 12 only) | | | | | | (12/8)^(1/2) = 0.99, 0.94, 0.89, 1.05 | not run at 16 |
+
+Sides 10 and 14 were not run at 2.3 (plan 4.5); the steps are 8 -> 12 -> 16. No step decreases or increases beyond the
+spread of the chains. **Verdict at beta 2.3: NOT REFUTED** by the rule of Section 2 on the three slices taken to L = 16, also on
+the worst single chain; the four slices screened only on 8 and 12 show no growth either (per-step factors 0.89 to 1.05 over
+two steps). Size of what survives: lambda about 2.4 to 2.9 on every slice and side, so by Lemma SUB at the mid-slice
+kbar_(s,0) >= 4 beta^2 lambda, about 51 to 61 at beta 2.3 (zero-field value 2 beta^2 = 10.6), in line with row 970's 53.
+What this does NOT establish: any bound. It covers 7 slices, their named modes, t = 0 only, slab thickness 6, sides up to 16;
+K3 failed at 23 percent, so the L = 16 values carry about 15 percent errors, not the 6 percent of the blocks.
+
+**5.4 beta 2.4 replicas, raw log lines.**
+- z-twist pi/2, L = 16, colour 3: hot (K3, seed 31) 9.79 +- 1.47 [6.49]; cold seed 32 9.36 +- 2.12 [8.49]; (cold seed 11: 17.04 +- 5.61).
+  K3: hot 9.79 against the mean of the cold chains so far (17.04 + 9.36)/2 = 13.2: ratio 0.74, outside 15 percent; against seed 32
+  alone, 5 percent. The seed-11 value is the high one.
+
+- z-twist pi/2: cold seed 33, L = 16: 8.12 +- 1.86 [6.13]; cold seed 32, L = 8: 7.88 +- 1.08 [4.79].
+  Colour 3 chains: L = 8: 9.63, 7.88; L = 16: 17.04 (seed 11), 9.79 (hot), 9.36, 8.12. K3 now: hot 9.79 against the cold mean 11.51:
+  ratio 0.85, at the 15 percent edge (passes by 0.1 percent). The pooled analysis is in Section 6.
+
+- u_xy replicas: L = 8 seeds 32, 33: 8.11, 7.27; L = 16 seeds 32, 33: 10.73, 12.58 (cold seed 11: 7.41). Pooled (script
+  `lane973/analyze.py`, rule of 5.1): L = 8 7.64 +- 0.25, L = 16 10.24 +- 1.51 (chain spread dominates); g = 1.076 +- 0.048,
+  g + 2 sigma = 1.17. So u_xy at beta 2.4 rises by about 1.3 from L = 8 to 16 (row 950 read "saturation, about 8" from one chain
+  at L = 8 and 12); the rise is below the 1.25-per-step criterion.
+
+- z-twist pi/4 replicas: L = 16 seeds 32, 33: 10.24, 19.79; L = 8 seed 32: 9.27. Pooled: L = 8 7.70 +- 1.57 (6.13, 9.27); L = 16
+  12.87 +- 2.75 (7.05, 14.39 hot, 10.24, 19.79); g = 1.137 +- 0.119, g + 2 sigma = 1.375, g - 2 sigma = 0.899: **INCONCLUSIVE**.
+- Last extension, fixed at 22:02Z before it runs (`full24e.sh`): z-twist pi/4 at beta 2.4, 4 more chains at L = 8 (seeds 33-36)
+  and 6 more at L = 16 (seeds 34-39), same lengths. **Stop rule:** the verdict at 2.4 is taken from all chains after this batch by the
+  rules of Section 2 and the pooling of 5.1; no further runs are added whatever the outcome (no optional stopping).
+
+## 6. Reading (step 7; written while the last batch runs; the beta 2.4 verdict is filled in 6.3 after it)
+
+**6.1 What the runs show at beta 2.3 (GUIDE).** On every slice tried, including the two flat colour twists that turn the
+frame order into a gauge-inequivalent Ising tie (row 952, 1.4), the lag-0 tie-mode variance stays at 2.2 to 2.9 from L = 8 to
+16. No slice of reduced symmetry orders at 2.3 on these sides. Row 970's A1 refutation does not extend to beta 2.3 on this
+search, and the constant that survives through Lemma SUB is kbar_(s,0) >= about 51 to 61 at the mid-slice (5 to 6 times
+the zero-field value 10.6), as row 970 estimated (53).
+
+**6.2 What the runs show at beta 2.4 (GUIDE).** All three slices taken to L = 16 rise from L = 8 to 16 by factors 1.3 (u_xy), 1.3
+(z-twist pi/2) and 1.4 (z-twist pi/4; final pooled values, 6.4), with chain-to-chain spreads of 20 to 40 percent at L = 16. Per step of 2
+that is 1.06 to 1.09, below the 1.25 of the criterion but not flat. Sides 10 to 14 are single chains and scatter (u_xy: 8.5,
+12.7, 7.1), so the shape of the rise (logarithmic, a slow power, or a crossover to order above L = 16) is not resolved.
+Row 950's "saturation at about 8" at u_xy rested on one chain each at L = 8, 12; with replicas the L = 16 value is 10.2 +- 1.5.
+Reading: beta 2.4 lies close to the boundary-ordering point that rows 950 and 952 placed near 2.45; the correlation length
+of the colour mode in the boundary layer is comparable to the box. A criterion of 1.25 per step cannot separate "large but
+finite" from "slowly diverging" here. Size through Lemma SUB at the mid-slice: kbar_(s,0) >= 4 beta^2 lambda = 23.0 lambda,
+so at least about 236 (u_xy), 255 (z-twist pi/2) and 255 (z-twist pi/4) at L = 16, against the zero-field 2 beta^2 = 11.5: 20 times larger, and
+not shown to be box-uniform.
+
+**6.3 Limits (both betas).** (i) t = 0 only (Lemma SUB); row 970's 7a found that coupling slices strengthens the order at 2.6,
+so t > 0 could be worse, not tested here. (ii) Slab thickness T = 6, cold starts except K3, 3000 thermalisation sweeps; K3
+failed the 15 percent rule at 2.3 (u_xy) and at 2.4 for z-twist pi/4, and passed at the edge for z-twist pi/2: block errors
+understate the errors at L = 16, so the verdicts use chain spreads where replicas exist and single chains elsewhere.
+(iii) Named modes only; the connected structure factor over all k (available for runs after 17:30Z) agrees with the named
+mode on every slice except interp, whose named mode is not its soft mode (its connected top eigenvalue is flat, 0.5 to 0.6).
+(iv) The identification of the observable with Var_(pi_(beta u))(<z, w>), z orthogonal to the gauge orbit, is row 970's (3.4,
+3.5); its check is row 972. For the twisted slices the colour-3 tie mode is gauge-invariant data (row 952, 1.4(b)-(d)), so
+these also bear on the quotient form of row 970 Section 5, at lag 0 only (no frame average run here). Since the lagged
+value decreases in the lag to the frame-averaged variance (row 952, 1.2, PROVED there), a lag-0 value that does not grow
+bounds the frame-averaged one too; a growing lag-0 value would not by itself refute the quotient form.
+(v) A search that finds no growth proves no bound; "not refuted" is only that.
+
+- Progress 22:33Z: L = 8 chains done (7.40, 8.56, 7.39, 9.09); L = 16 seed 34: 4.96. L = 16 runs now take about 13 minutes (10 before); the load average is checked below the 6.3 table.
+- 22:36Z: memory free fell to 48 percent (load average 21-27 over the previous 15 minutes from processes outside this lane;
+  the numeric lock is held by this lane). The running job (L = 16 seed 35) was left to finish. The driver was replaced by
+  `full24f.sh`, which starts each remaining run (L = 16 seeds 36-39) only at >= 50 percent free and logs any wait. Same runs,
+  same stop rule.
+
+- 22:38Z: L = 16 seed 35: 16.32. Pooled now: L = 8 7.97 +- 0.50 (6 chains), L = 16 12.12 +- 2.32 (6 chains); g = 1.110 +- 0.070, g + 2 sigma = 1.251 (INCONCLUSIVE by 0.001). Seeds 36-39 wait for >= 50 percent memory free (47 percent at 22:38Z).
+- 23:04Z: L = 16 seeds 36, 37: 8.78, 10.02 (memory 62-65 percent free at their starts). Seeds 38, 39 running.
+**6.4 beta 2.4: final pooled analysis** (`lane973/analyze.py`, output `lane973/logs/analyze_final.txt`, run 23:28Z after the stop rule
+of 5.4; lock released 23:29Z). Pooled value = mean over independent chains; error = max(propagated block error, chain-to-chain
+standard error).
+
+| slice (value) | L = 8 (chains) | L = 10 | L = 12 | L = 14 | L = 16 (chains) | g = (16/8)^(1/4) | g + 2 sigma | g - 2 sigma |
+|---|---|---|---|---|---|---|---|---|
+| u_xy (lambda_star) | 7.64 +- 0.25 (3) | 8.54 +- 0.73 | 12.69 +- 1.40 | 7.06 +- 0.85 | 10.24 +- 1.51 (3) | 1.076 +- 0.048 | 1.173 | 0.979 |
+| z-twist pi/2 (colour 3) | 8.76 +- 0.87 (2) | 7.92 +- 1.72 | 9.41 +- 2.45 | 13.20 +- 2.60 | 11.08 +- 2.02 (4, one hot) | 1.060 +- 0.075 | 1.210 | 0.911 |
+| z-twist pi/4 (colour 3) | 7.97 +- 0.50 (6) | 8.55 +- 1.23 | 10.12 +- 3.39 | 6.29 +- 0.60 | 11.06 +- 1.49 (10, one hot) | 1.085 +- 0.053 | 1.192 | 0.978 |
+| x-twist pi/2, u_xyyz, twisted u_xyyz, interp (screen, L = 8 and 12) | | | | | | (12/8)^(1/2) = 0.96, 0.96, 0.94, 1.04 (interp connected) | not run at 16 | |
+
+L = 16 chains of z-twist pi/4: 7.05, 14.39 (hot), 10.24, 19.79, 4.96, 16.32, 8.78, 10.02, 12.78, 6.29: the K3 failure of 5.1 was one
+draw of a wide distribution (the hot value lies inside the cold spread 5.0 to 19.8). Sides 10, 12, 14 are single chains and are
+not used in g (Section 2 uses the end points); they scatter within the spread of the L = 16 chains.
+**Verdict at beta 2.4: NOT REFUTED** by the rule of Section 2 on the three slices taken to L = 16 (g + 2 sigma = 1.17, 1.21, 1.19, all
+<= 1.25); the four slices screened on 8 and 12 show no growth. Not a strong pass: every central g is above 1 (1.06 to 1.09 per
+step, i.e. a rise of 1.3 to 1.4 from L = 8 to 16), the margins are 0.04 to 0.08, and before the last batch z-twist pi/4 was
+INCONCLUSIVE (g + 2 sigma 1.375 with 4 chains, 1.251 with 6). The stop rule was fixed before that batch, so the verdict is
+the rule's, but a reader should weigh it as "growth slower than 1.25 per step on sides 8 to 16, not absence of growth".
+
+## 7. Status (step 7)
+
+| Statement | Where | Status |
+|---|---|---|
+| Criteria (REFUTED / NOT REFUTED / INCONCLUSIVE on g = (lambda(16)/lambda(8))^(1/4) against 1.25, 2 sigma) written before any run | 2 | written 16:51Z; two amendments recorded with times, each before the data it governs (mean rule 17:08Z; replica and pooling rules 18:36Z, 18:52Z, 19:35Z; stop rule 22:02Z) |
+| Controls: K1 (row 950's 22.62 at beta 2.6, L = 8): 22.92 +- 0.77, PASS; K2 (0.160): 0.1599, PASS; K3 hot/cold at L = 16: FAIL at 2.3 (u_xy, 23 percent) and for z-twist pi/4 at 2.4 single chains; resolved by replicas at 2.4, not at 2.3 | 3, 5 | GUIDE |
+| Code fix: Kennedy-Pendleton hang at zero staple (row 952's sampler), exact small-kappa sampler added | 3 | checked against exact means |
+| Interp slice: volume growth of the raw structure factor is a non-zero mean (connected value flat 0.5-0.6) | 4.2, 4.6 | GUIDE |
+| beta 2.3: NOT REFUTED (g + 2 sigma 1.10, 1.11, 1.14 on u_xy, z-twist pi/2, z-twist pi/4; 4 more slices flat on 8-12); lambda 2.2 to 2.9; kbar_(s,0) >= about 51 to 61 by Lemma SUB | 5.3, 6.1 | GUIDE |
+| beta 2.4: NOT REFUTED, narrowly (g + 2 sigma 1.17, 1.21, 1.19; central g 1.06 to 1.09 > 1); lambda about 10 to 11 at L = 16; kbar_(s,0) >= about 236 to 255 | 6.4, 6.2 | GUIDE |
+| Box-uniform (TILT-COV-sup) at beta 2.3, 2.4 | | OPEN (a search that finds nothing proves no bound) |
+
+## 8. Result (step 8)
+
+For the lead. (1) Row 970's A1 refutation (beta 2.5, 2.6) does not extend to beta 2.3 or 2.4 on this search: 7 frozen slices of
+reduced symmetry (u_xy, z-twists pi/2 and pi/4, x-twist, u_xyyz, twisted u_xyyz, interpolation), sides 8 to 16, t = 0. (2) At 2.3
+the tie-mode variance is flat (2.2 to 2.9) on every slice; the surviving constant is 5 to 6 times the zero-field value. (3) At 2.4
+it rises slowly on all three slices taken to L = 16 (about 1.3 to 1.4 from L = 8 to 16), below the criterion, with chain-to-chain
+spreads of 30 to 40 percent at L = 16. Row 950's "saturation at 8" at u_xy does not hold up with replicas (10.2 +- 1.5 at L = 16).
+Whether 2.4 saturates or orders above L = 16 is not decided: a proof aimed at a box-uniform constant at 2.4 would be working
+at the edge of the boundary-ordering point near 2.45 that rows 950 and 952 found. (4) If the lead wants to sharpen 2.4: sides
+20 and 24 with at least 6 chains each (about 25 and 45 minutes per chain on this machine), or a t > 0 version with row 970's
+two-slice code; not done here (out of the row's scope).
+Credit: slab code, slice families and the tie-mode observables are row 952's (`lane952/sg2lab.py`); Lemma SUB and the
+criterion are row 970's; the reference values are row 950's.
+
+RESULT: row 973 (GUIDE, Claude Opus 5.5 high, Mac mini; unchecked): box-uniform (TILT-COV-sup) is NOT REFUTED at beta 2.3 (lag-0 tie-mode variance flat at 2.2-2.9 on 7 frozen slices; on the 3 slices taken to L = 16, per-step factor g = 1.003, 0.996, 1.042, each with g + 2 sigma <= 1.14) and NOT REFUTED, narrowly, at beta 2.4 (pooled L = 8 -> 16: u_xy 7.64 -> 10.24, z-twist pi/2 8.76 -> 11.08, z-twist pi/4 7.97 -> 11.06; g = 1.076, 1.060, 1.085, g + 2 sigma = 1.17, 1.21, 1.19 against 1.25); controls K1, K2 pass, K3 failed at 2.3 (23 percent); a box-uniform bound at 2.3-2.4 stays OPEN, and whether 2.4 saturates or orders above L = 16 is undecided.

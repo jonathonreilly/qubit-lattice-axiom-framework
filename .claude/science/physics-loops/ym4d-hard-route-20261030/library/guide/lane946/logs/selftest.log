@@ -1,0 +1,10 @@
+[    0.0s rss     54MB] quaternion algebra ok
+[    0.0s rss     57MB] staples and colouring ok on box (links 513, colours 12)
+[    0.0s rss     57MB] staples and colouring ok on plaq (links 36, colours 5)
+[    0.0s rss     57MB] staples and colouring ok on cube (links 92, colours 6)
+[    0.0s rss     57MB] u1 conditional mean ok
+[    0.0s rss     58MB] transported slices ok (timelike plaquettes; invariant under gauge maps off slice K)
+[    0.0s rss     59MB] loop gradients ok (finite differences, |grad_l Re W|^2 = 1 - Re W^2)
+[    0.0s rss     59MB] den() sq2 and zm agree with explicit gradient sums
+[    0.1s rss     93MB] sampler E X0 = I2/I1 ok
+[    0.1s rss     93MB] SELFTEST PASSED

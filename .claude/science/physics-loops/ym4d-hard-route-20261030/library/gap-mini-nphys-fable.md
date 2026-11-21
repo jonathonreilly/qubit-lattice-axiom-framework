@@ -160,9 +160,11 @@ exact with one K, and Corollary B1 applies to it as soon as its weights satisfy 
    coupling. It is not the landing class of a confining theory. The step that row 1351 leaves open, and that
    the queue gives to row 1353 with this class as its candidate, is then expected to be false for Wilson
    SU(2) as long as the maps are twist-wise exact. The stable form inherits Lemma B0 (2.7 below).
-4. (PROVED, elementary.) A class in which a confining theory can land must have all eight class masses
-   M_{c(h)} within a factor close to one of each other. Then Z_+ and Z^0 agree up to that factor at both
-   periods, and the neutral two-period bound and the periodic one are the same statement up to that factor.
+4. (PROVED, elementary; "confining at the torus" means alternative I there: Tr_e T^u is small against
+   Tr_0 T^u for every e != 0.) Then every Z^h, a signed sum of the eight sector traces, is within a factor
+   close to one of Tr_0 T^u. So a class in which such a theory lands by a twist-wise exact map must have all
+   eight class masses M_{c(h)} nearly equal. Z_+ and Z^0 agree up to that factor at both periods, and the
+   neutral two-period bound and the periodic one are the same statement up to that factor.
    So for a confining theory the neutral target does not open a landing class that the periodic target
    lacks. The landing class is centre-disordered. The one such class with an end theorem on file is the
    strong-coupling class (row 785 Theorem DOB, row 701).

@@ -28,6 +28,17 @@ confining theory can reach. Row 1354 proposed the class (10*) of its Theorem E.
 Not on disk at this pin: the outputs of rows 1356 and 1357 (running). The checks 1352 and 1355 are read in their
 RESULT lines only.
 
+**Repo search.** This checkout has the branch claude/ym4d-hard-route only; origin/main and the open PR
+branches are not refs here, so the search is this folder. Searched with `grep -l -i` over `library/*.md` and
+`parts/*.md`, then read at the hits named in each step: "sheet" (270 files), "monopole" (51), "Mack" (84),
+"Tomboulis" (85), "Chatterjee" (87), "'t Hooft loop" or "disorder operator" (15), "polymer" (197),
+"Kotecky" (38), "decimat" (54), "Simon-Yaffe" or "Doeblin" (about 40 lines), "perimeter law" (27),
+"exactly one link" and "plaquette cover" (Lemma LF of `gap-seed23-opus.md`, used by row 1341), "0.3609" and
+"1.0109" (the hand ceilings, rows 836 and 839). Four objects that I was about to rebuild were found on file
+and are cited, not rebuilt: the end class for block links (Theorem END-D, row 1353), the plaquette cover and
+its exact integration (row 1341), the near-Haar law of straight transports (row 1145), and the single-link
+Doeblin bound (rows 859 and 1248).
+
 ## Step 1. How best to attack it (written 2026-11-21T07:03Z, date -u)
 
 Also read for this step: `library/gap-mini-neutral-step-fable.md` (row 1353) Sections 2, 3, 5 and 6; the RESULT
@@ -46,7 +57,7 @@ line of its check (row 1355).
   are local and explicit; row 1353 2.3: no class is carried by any map on file.
 - The step. Open in every row. Row 1354 6.1 states it as (BS*). The single-link Doeblin bound (Simon and
   Yaffe) gives a perimeter law at every coupling and for every compact group; it is not selective
-  (`gap-mini-solve-ab-opus.md` L52, `gap-brainstorm-max.md` L312).
+  (row 1248, `gap-mini-solve-ab-opus.md` L52; row 859, `gap-brainstorm-max.md` L312).
 
 **1.2 The plan.** The queue row names a target class, (10*). Before any step is attacked, one question decides
 which map can have that target: what are the electric sheet weights of the Wilson image under the maps on file?
@@ -148,9 +159,10 @@ W(S) = E[ prod_{p in S} beta_p prod_{p not in S} alpha_p ] of its expansion, eve
 
     | W(S) | <= 31^(-|S|) W(empty),      and W(empty) > 0.
 
-Proof. Write alpha_p = 1 + h_p and c(S, X) = E[prod_S beta_p prod_X h_p] for X disjoint from S. Row 1351 proves
-|c(S, X)| <= u^|S| eps^|X| (u = 1/40, eps = 1/4096), and c factors over sets that are not adjacent (adjacent:
-a common link or a common three-cube; a closed neighbourhood has at most 41 plaquettes). Put
+Proof. Write alpha_p = 1 + h_p and c(S, X) = E[prod_S beta_p prod_X h_p] for X disjoint from S. The Hoelder
+step of row 1351 L124, as the proof of Theorem E uses it, gives |c(S, X)| <= u^|S| eps^|X| (u = 1/40,
+eps = 1/4096), and c factors over sets that are not adjacent (adjacent: a common link or a common
+three-cube; a closed neighbourhood has at most 41 plaquettes). Put
 Xi_D = sum over X in D of c(empty, X), so W(empty) = Xi for D = all plaquettes. The deletion induction of row
 1351 L134, run with no surfaces, gives Xi_D > 0 and Xi_(D minus p)/Xi_D <= e^(1/256). Now fix S. For X disjoint
 from S let X_1 be the part of X in the components of S union X that meet S, and X_2 the rest. Then
@@ -236,9 +248,9 @@ there; the mechanism is the perimeter law of Simon and Yaffe). Row 1145 also rec
 straight grid keeps no spectral information (its L51), because the field off the lines carries the
 correlations. So a block-link image with small windows of one link is available for the asking. What a
 landing in END-D needs beyond that is the decay of the windows with their size, at one rate, on both tori
-with the same local rules: N_kappa(f) <= kappa/32 (row 1353 5.1). For an image
-rho(V) = E[ prod_E k_E(V_E | U) ] the windows are the cumulants, in the law of the fine field, of the local
-factors k_E. So the content of the step is a mixing statement for the fine law, with a rate, uniform in
+with the same local rules: N_kappa(f) <= kappa/32 (row 1353 5.1). For a product kernel the image is
+rho(V) = Z E[ prod_E k_E(V_E | U) ], with the mean in the Wilson law of U, and the windows are the cumulants,
+in that law, of the local factors k_E. So the content of the step is a mixing statement for the fine law, with a rate, uniform in
 the cutoff, at one physical mesh. A product with a massless factor, and compact U(1) at large coupling,
 have free straight signs and no such decay.
 
@@ -268,11 +280,12 @@ windows that are boxes, with size = the number of sites of the box. Cumulants of
 in the tree length of their support, not in the volume of its bounding box (three coarse plaquettes at
 mutual distance r have tree length about 2r and a bounding box with about r^2 sites or more). The proof
 of END-D holds word for word when a window is any connected set of links that meets at most
-min(T, m) - 2 sites, with size(W) = the number of sites it meets, and the twist function of a window taken
-from its bounding box: Step 2 uses only that a window has at most 4 size(W) links; Step 5 uses only that a
-connected family of windows of total size k lies in one embedded box, and that the twist functions of two
-boxes that contain a window differ on it by end signs (both have the same plaquette products on the
-smaller box, and a box is simply connected). I use END-D in this form in 3.4.
+min(T, m) - 2 sites, with size(W) = the number of sites it meets. Such a set projects to an arc in each
+coordinate, so it has a smallest box, and the twist function of the window is taken from that box. Step 2
+uses only that a window has at most 4 size(W) links. Step 5 uses only that a connected family of windows of
+total size k lies in one embedded box, and that the twist function of that box differs from the twist
+function of the smallest box of each window by end signs on the window (the two have the same plaquette
+products on the smaller box, and a box is simply connected). I use END-D in this form in 3.4.
 
 ## Step 4. The step attacked three ways, and where each stops (written 2026-11-21T07:28Z, date -u)
 
@@ -423,7 +436,10 @@ not checked), the arithmetic instance of 2.3.
 **OPEN.** (BS-BL) of 3.4 at any coupling above the hand range (0.3609 by row 836); equivalently in kind
 the in-law mixing statement of 4.1, (DS-W) of row 691, (M-neutral) of row 1353; its form uniform in the
 cutoff; a perimeter law for the thin Z_2 monopole loop at every coupling (it would extend Proposition THIN
-from the tail to every beta at large B; not needed for the trajectory); (N-phys); the mass gap.
+from the tail to every beta at large B; not needed for the trajectory; ARGUED: the map tau -> Z_tau is
+reflection positive at planes through sites, so by the chessboard estimate the law follows from the strict
+positivity of the pressure deficits of finitely many periodic frustrated sign patterns, which I did not
+prove at intermediate beta); (N-phys); the mass gap.
 
 **Not done.** I did not read the outputs of rows 1356 and 1357 (not on disk at this pin). I did not re-read
 the account of Sussman and Alpoge; statements about it come from rows 837 and 1345. I did not re-derive the
@@ -431,3 +447,5 @@ constants of rows 1345 and 1351. I did not search origin/main or the open PR bra
 such refs). I ran no numeric job. I read no published paper in this row; the published results named
 (Mack and Petkova, Simon and Yaffe, 't Hooft, Bhanot and Creutz, Halliday and Schwimmer) are recalled.
 
+
+RESULT: Row 1358 (Claude Fable 5.2 max, Mac mini worker 2; author only, checked by no one; no numeric job, arithmetic only). NOT solved: the carry of the Wilson trajectory into an end class is not proved, (N-phys) and the mass gap are not proved, no finite computation is specified, and no impossibility is proved. Main finding, PROVED GIVEN row 1345 (7)-(9) and row 1351 (12) (both checked, rows 1347 and 1352): the centre-sign block maps on file cannot land in the Fourier-dual class (10*) on the cutoff tail. Lemma SW: the coarse sheet weights are the Fourier coefficients of the signed-packet masses, and a sheet that bounds a volume V has relative weight E_mu[prod over the cubes of V of (d tau)_c] in the positive law mu(tau) = Z_tau/sum Z. Proposition THIN: for 6 sqrt(u_beta) below 1 and eta = 64[(1 + q_B)^(4v) - 1], every sheet that bounds has weight at least (1 - 2 eta) W(empty), and every cycle carries the Fourier transform of the 64 twisted masses up to 2 eta (instance beta 300, B 190, coarse torus 16^4: eta 0.0077; eta tends to 0 uniformly on the tail). Lemma RS: in (10*) and in its moment form every nonempty cycle has weight at most 31^(-area) W(empty). Corollary 2.6: sign-pointwise changes of the environment keep all sheet weights, so no chain of them, and no larger block side, brings the image of row 1345's map into (10*). So the image of a confining theory under these maps is a topological sheet gas (sheets that bound are free; the classes carry everything), its landing class is row 1345 (11), and what stays is the Wilson integral itself. Also PROVED: Lemma KER (a centre-covariant block-link kernel keeps every signed-packet mass; the coupling of a block-link sign is the conditional thin-flip cost; the mean of exp(-2 sum over the packets around one coarse link) is exactly 1); Theorem END-D of row 1353 holds for windows that are connected sets (by inspection); at B = 1 every sheet weight is at most (tanh beta)^area W(empty). ARGUED: (10*) and END-D are classes of block-link signs; free signs hold for every compact group (straight transports, row 1145), and the content of a landing is a mixing statement with a rate at one physical mesh, the corrected step (BS-BL); the account's block field at first passage is on the locked side, so the block-link chain is the continuation of its renormalization past the ceiling; none of the four pairings of a coarse variable with an end class now on file turns the seed into a smaller statement. Corrections to row 1354 (same worker): its reading of the monopole cost in 6.2 item 1 was wrong for this map, its target (BS*) with (10*) is excluded on the tail, and its 6.2 item 2 (the chessboard cost I_2/I_1 per plaquette and the ceiling 0.8) is withdrawn. First failing step, three ways (Step 4): the in-law mixing of the fine field at the physical scale, on file as (DS-W) of row 691, the step of row 1332 6.5 and (M-neutral) of row 1353. OPEN: (BS-BL) at any coupling above the hand range 0.3609, its form uniform in the cutoff, a perimeter law for the thin Z_2 monopole loop at every coupling, (N-phys), the mass gap. Output library/gap-mini-dualstep-fable.md.

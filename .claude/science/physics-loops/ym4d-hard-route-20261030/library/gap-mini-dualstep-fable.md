@@ -330,3 +330,104 @@ that transition. Above it the central variables are locked, the 64 class weights
 of confinement, and they are properties of the angular field at the physical scale. First-passage data
 are on that side.
 
+## Step 5. Corrections to row 1354, and notes for the lead (written 2026-11-21T07:32Z, date -u)
+
+Row 1354 (`library/gap-mini-nphys-fable.md`) is an earlier row of this worker. Three of its statements need
+a correction. Its PROVED statements (Lemma B0, Proposition B, Corollaries B1 and B2, Theorem E, Lemmas SST0
+and SST1) are not affected; their check is row 1357.
+
+1. **6.2 item 1 (reading).** It called the cost of a coarse centre monopole "a thick-monopole free energy"
+   that "classically ... is of order beta and does not depend on B". For the map of row 1345 the monopole
+   is thin: a line of B frustrated fine cubes. Its cost grows like B times the length on the tail (row
+   1345 (8)). The formula of that item (the sheet weight is a Fourier coefficient of the signed-packet
+   masses) is right and is Lemma SW here.
+2. **4.4 and 6.1 (target).** They proposed that the sheets of row 1345's representation can be rare after
+   the angular environment is integrated, and stated the step (BS*) with (10*) or its moment form as the
+   end class. Proposition THIN and Corollary 2.6 exclude this on the tail for the centre-sign maps. The
+   class (10*) is a class for the sign of a block link (Step 3), and the step is (BS-BL).
+3. **6.2 item 2 (ARGUED there; withdrawn).** It said that the chessboard norms of sinh(beta q) and
+   cosh(beta q) are 2 I_2(beta)/beta and 2 I_1(beta)/beta, that a sheet therefore "costs at most
+   t(beta) = I_2/I_1 per plaquette, for every beta", and that the expansion converges for beta below about
+   0.8. The first step is not valid. The product over all plaquettes of ONE orientation is a product of
+   two-dimensional sums, with those leading coefficients. But no chessboard estimate bounds a product over
+   all six orientations by these norms. Test with the empty sheet (ARGUED; small beta, where the
+   strong-coupling expansion converges): the bound would give W(empty) <= A(beta)^(6v) (1 + o(1))^(6v), with
+   A = 2 I_1(beta)/beta, on large tori; but W(empty) = A^(6v) exp(36 v x_1^6 + ...), x_1 = I_3/I_1 > 0, because a
+   cube with its six faces in the spin-one representation has the positive weight 9 x_1^6 and there are 4v
+   cubes. What Hoelder's inequality over the six orientations gives is a bound with sixth-moment norms,
+   |W(S)| <= norm_6(sinh(beta q))^|S| norm_6(cosh(beta q))^(6v - |S|) up to the two-dimensional corrections,
+   which is the form of (10*) and has no factorization. What holds pointwise at B = 1 is
+   |W(S)| <= (tanh beta)^|S| W(empty) (PROVED: W(S)/W(empty) is the mean of prod_{p in S} tanh(beta q_p) in
+   the even model, and |tanh(beta q_p)| <= tanh beta); with it the centre sum converges uniformly in the
+   angular field only for tanh beta below about 1/5, beta below about 0.2 (the comparison of Mack and
+   Petkova; ARGUED here, not written out). The ceiling 0.8 has no proof on file.
+
+**For the lead (proposals; no file other than this one was edited).**
+
+1. A landing of the centre-sign maps in (10*) should not be queued: it is excluded on the tail (Step 2).
+   The check of Step 2 needs row 1345 L73-103 with its check (row 1347 L148-170) and row 1351 L124-134:
+   Lemma SW, Proposition THIN, Lemma RS, Corollary 2.6. Step 3 adds Lemma KER (five lines) and the remark
+   3.5 on END-D.
+2. The four pairings of a coarse variable with an end class are now each on file with their first failing
+   step: thin signs into the coherent class (10) (alternative II; row 1354); thin signs into (10*)
+   (excluded on the tail; this row); thin signs into the class with free classes, row 1345 (11) (the
+   Wilson integral itself is left; rows 1345 and 1353); block links into END-D or (10*) (a mixing
+   statement with a rate; rows 1145, 1353 and Step 3). In each one the centre part is done exactly or is
+   group-blind, and the open part is the same integral over the angular field at the physical scale. So
+   the chain of Proposition CH is sound and does not shrink the problem: no pairing on file turns the
+   seed into a smaller statement. I would reopen this line only for a block map that comes with a named
+   mechanism of contraction at a coupling of order one, which is the reopen condition of route RA in
+   `parts/gap.md`.
+3. The remark 4.2 may be useful as a filter: a row that works with central variables alone (signs,
+   packets, classes) can reach rare sheets only where thin Z_2 monopoles are dense; on the trajectory
+   they are suppressed, and the centre is locked at every block side.
+
+## Step 6. Summary (written 2026-11-21T07:32Z, date -u)
+
+**Solved?** No. The carry of the trajectory into an end class is not proved. (N-phys) and the mass gap are
+not proved. No finite computation is specified. No step of the chain is disproved, and no impossibility of
+the mass gap route is proved.
+
+**PROVED here (by hand; author only; given the named statements of rows 1345 and 1351, both checked by
+Claude Opus 5.5 in rows 1347 and 1352, and the proof structure of Theorem E of row 1354, whose check is row
+1357).**
+
+- Lemma SW: the sheet weights of the coarse centre representation are the Fourier coefficients of the
+  signed-packet masses; for a sheet that bounds a volume V the relative weight is the mean of the product
+  of (d tau)_c over the cubes of V in the positive law mu(tau) = Z_tau / sum Z ((a), (b) are row 1354 6.2
+  item 1).
+- Proposition THIN: on the tail (6 sqrt(u_beta) < 1, eta = 64[(1 + q_B)^(4v) - 1] small) every sheet that
+  bounds has weight at least (1 - 2 eta) W(empty), and the weight of every cycle is the Fourier transform of
+  the 64 twisted masses up to 2 eta. Instance: beta = 300, B = 190, a coarse torus 16^4, eta = 0.0077.
+- Lemma RS: in the class (10*), and in its moment form, every nonempty cycle has |W(S)| <= 31^(-|S|) W(empty).
+- Corollary 2.6: no chain of sign-pointwise changes carries the image of the centre-sign map of row 1345
+  into (10*) on the tail; a larger block side does not help.
+- Lemma KER: a centre-covariant block-link kernel gives a map that keeps every signed-packet mass; the
+  coupling of a block-link sign is the conditional thin-flip cost given the coarse field; the unconditional
+  mean of exp(-2 sum_{P containing E} X_P) is 1.
+- Remark 3.5: Theorem END-D of row 1353 holds with windows that are connected sets (by inspection of its
+  proof).
+- Step 5 item 3: at B = 1, |W(S)| <= (tanh beta)^|S| W(empty) for every beta.
+
+**ARGUED here.** 2.7 and 3.2 to 3.4: for the centre-sign maps the confining landing class is row 1345 (11)
+and the open part is the Wilson integral itself; (10*) and END-D are classes of block-link signs; free
+signs are available for every compact group, and the content of a landing is a mixing statement with a
+rate; the account's block field at first passage is on the locked side, so the block-link chain is the
+continuation of its renormalization past the ceiling. Step 5 item 2 for the lead: no pairing on file
+shrinks the seed.
+
+**GUIDE.** 2.4 (the thin 't Hooft loop reading; the image of a confining theory is a topological sheet
+gas), 4.2 (the monopole condensation of the even model as the limit of central methods; recalled physics,
+not checked), the arithmetic instance of 2.3.
+
+**OPEN.** (BS-BL) of 3.4 at any coupling above the hand range (0.3609 by row 836); equivalently in kind
+the in-law mixing statement of 4.1, (DS-W) of row 691, (M-neutral) of row 1353; its form uniform in the
+cutoff; a perimeter law for the thin Z_2 monopole loop at every coupling (it would extend Proposition THIN
+from the tail to every beta at large B; not needed for the trajectory); (N-phys); the mass gap.
+
+**Not done.** I did not read the outputs of rows 1356 and 1357 (not on disk at this pin). I did not re-read
+the account of Sussman and Alpoge; statements about it come from rows 837 and 1345. I did not re-derive the
+constants of rows 1345 and 1351. I did not search origin/main or the open PR branches (this checkout has no
+such refs). I ran no numeric job. I read no published paper in this row; the published results named
+(Mack and Petkova, Simon and Yaffe, 't Hooft, Bhanot and Creutz, Halliday and Schwimmer) are recalled.
+

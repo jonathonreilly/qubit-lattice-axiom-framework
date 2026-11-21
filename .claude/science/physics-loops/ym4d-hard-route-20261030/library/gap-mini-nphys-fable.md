@@ -159,8 +159,7 @@ exact with one K, and Corollary B1 applies to it as soon as its weights satisfy 
    of a theory with a gapped neutral sector and deconfined centre flux, such as Z_2 gauge theory at large
    coupling. It is not the landing class of a confining theory. The step that row 1351 leaves open, and that
    the queue gives to row 1353 with this class as its candidate, is then expected to be false for Wilson
-   SU(2) as long as the maps are twist-wise exact. I did not check that (23)-(24) inherit Lemma B0; the
-   proof of (24) is the same expansion with windows (row 1351 L321-330), so I expect it (ARGUED).
+   SU(2) as long as the maps are twist-wise exact. The stable form inherits Lemma B0 (2.7 below).
 4. (PROVED, elementary.) A class in which a confining theory can land must have all eight class masses
    M_{c(h)} within a factor close to one of each other. Then Z_+ and Z^0 agree up to that factor at both
    periods, and the neutral two-period bound and the periodic one are the same statement up to that factor.
@@ -172,4 +171,83 @@ What this step does not show: that Wilson SU(2) confines (that is the belief use
 outside the twist-wise exact kind can reach the class (a map that preserves only the mean over the twists is
 not covered).
 
-## Step 3. (in progress)
+**2.7 The stable class (23)-(24) (added 2026-11-21T06:15Z, date -u; PROVED GIVEN row 1351's proof of (24), L321-330).**
+Row 1351's proof of (24) is the expansion of (11) with window factors. Its text uses the same four properties
+of the character: "Closure and coefficients, including a character of the three periods, factor on distinct
+components", and a connected term of degree below j_0 "fits in a lifted box". A window factor reads the
+curvature only inside its own component. The windows have length at most half the period, so the lifted box
+does not wrap in time. So Lemma B0 holds in the class (23) for all 64 characters with
+tau' = 2 v e^(-theta j_0) in place of tau, and Proposition B and Corollary B1 hold with
+delta' = e^tau' (e^tau' - 1). I read L321-336 for this and did not re-derive the constants.
+
+## Step 3. The dual class: where a confining theory can land (written 2026-11-21T06:15Z, date -u)
+
+**3.1 Statement.** Keep the setting of 2.1, with one change of the hypothesis. Write the two plaquette weights
+as a_p (alpha_p(x) + beta_p(x) (-1)^(z_p)), that is alpha_p = (w_p(0) + w_p(1))/(2 a_p) and
+beta_p = (w_p(0) - w_p(1))/(2 a_p). Assume, under the product reference, on every plaquette
+
+    (10*)    || alpha_p - 1 ||_6 <= 1/4096,      || beta_p ||_6 <= 1/40.
+
+In the exact Wilson form of 2.5, alpha_p = cosh J_p / a_p and beta_p = sinh J_p / a_p. So (10*) says that the
+centre couplings J_p(y) are small, where (10) says that they are large and positive.
+
+**Theorem E (PROVED GIVEN row 1351's proof of (11), L124-136, read with primal surfaces).** In the class
+(10*) on T_t = (t, m, m, m), min(t, m) >= 16, with tau = (12 v/256) 2^(-j_0):
+
+- (a) the eight twisted masses Z^h (the masses of the eight classes with zero spatial periods) are positive
+  and lie within the factor e^(2 tau) of each other;
+- (b) the neutral mass and the periodic mass Z^0 both obey the two-period bound of (11):
+  |2 log Z(T_t) - log Z(T_2t)| <= (48 v/256) 2^(-j_0), for Z = Z_+ and for Z = Z^0;
+- (c) so a model with a twist-wise exact representation in the class is in alternative I: for e != 0 the
+  sector trace Tr_e T^u is at most e^tau (e^tau - 1) times Tr_0 T^u.
+
+Proof. Fourier transform on F_2. Let V be the space of closed cochains with zero spatial periods,
+V = d C^1 + span(S_1, S_2, S_3), with S_i the three temporal stacks. For fixed x,
+
+    2^(-dim V) sum over z in V of prod_p (alpha_p + beta_p (-1)^(z_p))
+        = sum over S in V-perp of prod_{p in S} beta_p prod_{p not in S} alpha_p,
+
+because the sum over z in V of (-1)^(<S, z>) is |V| if S is orthogonal to V and zero if not. Here S runs
+over sets of plaquettes. S is orthogonal to d C^1 exactly when its boundary is zero (every link lies in an
+even number of plaquettes of S). A cycle S is orthogonal to S_i exactly when its homology class has no
+component on the two-torus of the plane (0, i). For one fixed twist h the same computation on the coset
+d C^1 + S h gives the sum over all cycles S of chi_h([S]) times the same product, where chi_h is the
+character of H_2(T_t; F_2) that pairs with the class c(h).
+
+Now write alpha_p = 1 + h_p and expand the factors alpha_p outside S on sets X disjoint from S. The
+coefficient of a pair (S, X) is E[prod_S beta_p prod_X h_p]. This is the expansion of row 1351 with the
+closed dual surface F replaced by the primal cycle S, v_p by beta_p, and the character of the periods of F
+by a character of the homology class of S. Each step of row 1351's proof holds for it. The Hoelder bound
+u^|S| eps^|X| uses only that a link is read by at most six plaquette functions; beta_p may have either sign,
+and the bounds are absolute. A minimal nonempty cycle through a plaquette has at most 5^(k-1) forms at area
+k, because a link lies in six plaquettes; it has area at least 6 by the same projection argument (the
+lattice of primal plaquettes and links is the dual picture of the lattice of dual plaquettes and
+three-cubes). Components joined by a common link or a common three-cube have independent reads and separate
+closure equations. A cycle inside a box that does not wrap is a boundary, so every character is one on it.
+The time cover doubles the coefficients of degree below j_0. Each sum is real and positive at s = 1.
+So Lemma B0 holds here for all 64 characters omega of H_2: |log Q^omega - Lambda| <= tau.
+
+(a) Z^h is the scalar prod a_p times Q^(chi_h). (b) Z^0 is the case h = 0, and Z_+ is the mean of the eight;
+the two-period bound for each is the last paragraph of row 1351's proof of (11). (c) Tr_e T^u is the mean
+over h of (-1)^(h.e) Z^h, and for e != 0 the common part e^Lambda cancels, as in Proposition B. QED
+
+I did not re-derive row 1351's constants. Theorem E has the same standing as (11): it rests on that proof,
+whose check (row 1352) is not on file at this pin.
+
+**3.2 Reading (ARGUED).**
+
+1. (10) and (10*) are the two sides of 't Hooft's alternative in one framework. In (10) the centre curvature
+   is ordered, the closed surfaces of the expansion are the rare frustrated ones, every nonzero class is
+   suppressed (Proposition B), the periodic test fails and the neutral test passes. In (10*) the centre
+   curvature is disordered, the surfaces are those of the strong-coupling expansion, all classes weigh the
+   same, and the periodic and the neutral tests pass together.
+2. Plain Wilson is in (10*) for small beta: there alpha_p = cosh(beta q) and beta_p = sinh(beta q) with
+   |q| <= 1, so (10*) holds for beta <= 1/46 (cosh(1/46) - 1 < 1/4096, sinh(1/46) < 1/40). This is inside
+   the range of the strong-coupling seeds already on file (row 785, 9 beta/2 < 1), so it adds no range.
+3. In the representation of row 1345 the Wilson trajectory at a late cutoff is in neither class. By row 1345
+   (3), J_P (dt)_P is beta times the sum of the B^2 plaquette traces of the packet, which is of order
+   B^2 beta, so (10*) fails; and the sign of J_P(y) alone is not coherent under the reference, so (10) fails
+   (row 1351 L142-146). The centre signs carry no free energy of their own there. Everything is in the
+   angular environment, which no step on file integrates at an effective coupling of order one.
+
+## Step 4. (in progress)

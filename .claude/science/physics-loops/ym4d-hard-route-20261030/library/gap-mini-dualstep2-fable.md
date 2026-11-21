@@ -7,6 +7,12 @@ Worker: Claude Fable 5.2 (max), Mac mini worker 1, one session, pinned at commit
 Research-stage working state. Nothing here is a public claim. Row 1358 (`gap-mini-dualstep-fable`) is the sibling
 attempt on the same problem; this row does not read it.
 
+**In brief.** Not solved. The row tests the proposal of row 1354 (land in the dual class (10*) through the
+centre-sign map of row 1345) by an invariant, the Wilson masses with a sign on one packet. The proposal fails at
+every late cutoff and every block side (Theorem N, Proposition TOP). At late cutoffs the coarse centre sector is
+topological: it carries the 64 class masses and nothing local. A dual landing needs block links (Theorem END-D
+of row 1353), and no exact map on file produces them with local normalizers.
+
 ## Status log
 
 - 2026-11-21T07:05Z (date -u): file created. Read so far: GOAL.md, FINISH.md rule sections (How we work, Working efficiently,
@@ -30,6 +36,10 @@ attempt on the same problem; this row does not read it.
 - 2026-11-21T07:50Z (date -u): 4.3 item 4 added (the collar); Not done completed.
 - 2026-11-21T07:51Z (date -u): hand arithmetic of Lemma A, Lemma T and Remark N1 confirmed with exact Bessel values (one second,
   under the numeric lock, memory free 64 percent): 0.6574 at 59, 1.0144 at 58, 6 sqrt(u) = 0.830 at 245.
+- 2026-11-21T07:53Z (date -u): found on file after writing 4.4: Theorem END-D of row 1353 (my own earlier row) is the thick end
+  class; 4.1, 4.3, 4.4, 6.1 and Section 7 now cite it and mark Proposition EP as a restatement.
+- 2026-11-21T07:55Z (date -u): addendum to 4.3 item 1 (decimation: perimeter bound; the mass is one scalar).
+- 2026-11-21T07:56Z (date -u): proofread of Sections 6 and 7; "In brief" and the RESULT line written.
 
 ## Repo search
 
@@ -366,6 +376,14 @@ By Theorem N the centre variable of M is not the pivot sign of row 1345: M is no
 model in other environment variables. This replaces (BS*) of row 1354 6.1, which left the map open and suggested
 the map of row 1345.
 
+On file, the end class of this kind is Theorem END-D of row 1353 (`library/gap-mini-neutral-step-fable.md`
+L268-390; check row 1355, L71 of its file: HOLDS): window functions of coarse SU(2) links with a Haar reference and
+the norm N_kappa <= kappa/32. Row 1353 wrote there that a centre bit split off at fixed fine field fits the coherent
+classes, and that a chain of SU(2) block links with a nearly Haar law needs END-D. Sections 2 and 3 prove the
+first half of that remark for the dual class: the centre bit of row 1345 cannot carry (10*). So (BS-thick) is
+the open landing in END-D that row 1353 records (its 5.3: "An end class is where a chain stops, not how it gets
+there"). It is not a new statement.
+
 **4.2 Why the variable must be thick (ARGUED from Lemmas D1 and T; the numbers are GUIDE).** In a model of (10*)
 the change of the sign of the odd part of one plaquette weight changes the mass by less than 0.4 percent, and a
 product of such changes over a closed surface that is not exact is the twist. In the Wilson theory the operation
@@ -391,11 +409,26 @@ already says "the thick w_2 needs a multiscale definition".
    sheet. Those are defined only when the coarse weight is a product of plaquette functions, and an exact map
    does not produce such a product. Stops at: the locality of the coarse weight, which is a mixing statement at
    the scale B.
+   Addendum for decimation along straight lines (the first paragraph PROVED, the reading ARGUED). The
+   Fourier coefficients of the coarse density are the expectations, in the fine theory, of the spin networks on
+   the coarse one-skeleton. For the fundamental loop of a coarse plaquette there is a perimeter bound at every
+   coupling: |<tr W>| <= 2 r^(4B - 8), r = I_2(6 beta)/I_1(6 beta) < 1. Proof: take the links of the loop that are
+   not at a corner; no two of them lie in one plaquette. Given all other links they are independent, and the
+   conditional mean of one of them is c W with W in SU(2) and 0 <= c = I_2(beta k)/I_1(beta k) <= r, where k <= 6
+   is the norm of the sum of its staples. The trace of a product of such means is at most 2 times the product
+   of the numbers c. QED. Since 1 - r is about 1/(4 beta), the bound is about 2 e^(-B/beta), and B grows like a
+   power of e^beta on the trajectory. So at late cutoffs the decimated density is close to Haar measure for a
+   reason that has nothing to do with confinement: thin Wilson lines have a self-energy. The premise "nearly
+   Haar block links" of END-D is then met trivially, and the whole mass sits in the one scalar K = Z[0], which
+   is not a product of local scalars with the lift rule. The end theorem needs K_2t = K_t^2 (check 1352), and
+   for this map that equation is the seed itself. This mirrors Proposition TOP: the exact maps on file move the
+   content into numbers (class masses there, one scalar here) and leave no local structure behind.
 2. *Sum the thin monopoles first.* The cosh-packet model W_B of row 1345 (9) is a positive local product, and
    by Proposition TOP it is the sum of all class masses up to eps_B. Its class fractions and its two-volume
    free energy are the open items that row 1345 L105 names. Nothing new here.
 3. *A polymer end class in place of (10*).* A thick map can at best produce small non-local terms. The end
-   theorem survives them (4.4). Then a landing is a convergent polymer representation of the eight masses with
+   theorem survives them: Theorem END-D of row 1353 allows windows of every size with an exponential weight
+   (4.4 restates it for activities). Then a landing is a convergent polymer representation of the eight masses with
    common local terms at the two periods. For a fixed pair of tori the existence of such a representation is
    close to the conclusion itself; the content is in a construction that a finite computation can certify. The
    suppliers on file are strong coupling (rows 701, 785) and block statements uniform over boundary values, which
@@ -416,7 +449,7 @@ already says "the thick w_2 needs a multiscale definition".
    Proposition TOP again.
 
 **4.4 Proposition EP (the end theorem for abstract polymers; PROVED GIVEN the deletion induction and the tail
-estimate of row 1351 L134-136, which use nothing else).** On T_t = (t, m, m, m), min(t, m) >= 16,
+estimate of row 1351 L134-136, which use nothing else; a restatement, see the note after the proof).** On T_t = (t, m, m, m), min(t, m) >= 16,
 j_0 = floor(min(t, m)/8), v = t m^3. A polymer is a set gamma of plaquettes that is connected for the adjacency of
 row 1351 (a common link or a common three-cube; a closed neighbourhood has at most 41 plaquettes per plaquette).
 It has a real activity rho(gamma) and a class [gamma] in H_2(T_t; F_2). Assume:
@@ -440,6 +473,12 @@ smaller sets has modulus at least e^(-1/256), then |Q_(D minus N(gamma))/Q_(D mi
 |log Q_T| <= 6v/256 on |s| <= 2. The coefficients of log Q_T have connected supports. Below the degree j_0 they do
 not depend on the character and repeat once per lift, by (L). Cauchy's estimate bounds the rest at s = 1 by tau.
 The mean of positive numbers within e^(+-tau) of a common value is within the same factor. QED
+
+Note (rule 0a; found after this subsection was written). Theorem END-D of row 1353 is this theorem for window
+functions of coarse SU(2) links, with its own constants (N_kappa <= kappa/32, tail v e^(-kappa j_0/4) for each
+twist), proved by the same deletion induction and checked by row 1355. Proposition EP adds only the statement at
+the level of activities, which shows that the classes of rows 1351 and 1354 and END-D are cases of one theorem,
+and the bound for all 64 characters. It is bookkeeping, not a new end class.
 
 Remarks. (1) The classes (10) and (10*) are the cases where rho(gamma) is the sum of the coefficients of the
 connected pairs with support gamma; their bound (12) gives (P). So Wilson at beta <= 1/46 is in the class (row
@@ -523,8 +562,8 @@ scratch folder outside the repository; total run time about 3 minutes, peak memo
 
 ## 6. The first failing step (written 2026-11-21T07:48Z, date -u)
 
-**6.1 The step (OPEN).** (BS-thick) of 4.1, or in the form that Proposition EP admits: for every late cutoff, a
-polymer representation of the eight temporal twisted masses of Wilson on the two tori, at one physical coarse
+**6.1 The step (OPEN; on file since row 1353 as the landing in END-D).** (BS-thick) of 4.1, or in the form that
+Proposition EP admits: for every late cutoff, a polymer representation of the eight temporal twisted masses of Wilson on the two tori, at one physical coarse
 mesh, with the bound (P), the lift rule (L) and K_2t = K_t^2. It gives the neutral and the periodic two-period
 bounds together. It is at least as strong as (N-phys), which the gap clause needs.
 
@@ -538,8 +577,9 @@ bounds together. It is at least as strong as (N-phys), which the gap clause need
    (Lemma FR, exact case; Proposition B of row 1354 for the class (10)), or with an environment far from a
    product law (3.4 (c)). Stops at: the environment, which is the whole problem.
 3. *A thick map.* A centre-covariant kernel to coarse SU(2) links reproduces the thin bundle flip (4.3 item 1).
-   It gives twisted coarse densities and no sheet weights, and the coarse weight is not a product of plaquette
-   functions. A polymer end class accepts non-local terms (Proposition EP), and then the landing is a block
+   With thin lines the coarse density is close to Haar measure because of the perimeter law, and the mass is
+   one non-local scalar (4.3 item 1, addendum). Such a kernel gives twisted coarse densities and no sheet
+   weights, and the coarse weight is not a product of plaquette functions. A polymer end class accepts non-local terms (Proposition EP), and then the landing is a block
    statement in the law of the model at a coupling of order one. Stops at: the same statement as rows 1340, 1353,
    1354 and 1356.
 4. *A coarse centre variable without a rim* (4.3 item 4). It exists after the action is deleted in a collar
@@ -571,11 +611,14 @@ chain is disproved. One proposed route is closed with proofs.
 - Lemma FR: on independent link variables a plaquette-local rule with values in F_2 that is closed almost
   surely is a constant closed cochain plus a coboundary of link functions. Its class is constant.
 - 4.3 item 1: for a centre-covariant kernel the coarse sign flip is the thin bundle flip of the fine theory.
+  Its addendum: the perimeter bound |<tr W>| <= 2 (I_2(6 beta)/I_1(6 beta))^(4B - 8) for the loop of a coarse
+  plaquette, at every coupling.
 - Proposition EP (given row 1351 L134-136): the end theorem of rows 1351 and 1354 for abstract polymers with the
-  hypotheses (P) and (L).
+  hypotheses (P) and (L). It restates Theorem END-D of row 1353 at the level of activities (bookkeeping).
 
-**ARGUED here.** 3.4 (c): a frozen centre with a free class needs an environment far from a product law (no
-quantitative form of Lemma FR was written). 4.2: a landing in a dual class needs a thick centre variable. 4.6:
+**ARGUED here.** 4.3 item 1, addendum: the decimated density is close to Haar measure at late cutoffs for a trivial
+reason, and its only content is the scalar Z[0]. 3.4 (c) and 3.5: a frozen centre with a free class needs an
+environment far from a product law (the quantitative form of Lemma FR is sketched, not proved). 4.2: a landing in a dual class needs a thick centre variable. 4.6:
 the class (10*) is not kept by the map of row 1345 at any coupling.
 
 **GUIDE.** Section 5: at beta = 2.3 the one-plaquette ratio is 0.338 +- 0.002 and the ratio for a 2 x 2 stack is
@@ -586,14 +629,15 @@ about 0.045, against the 0.996 that (10*) needs; at beta = 1.0 the ratio is 0.99
 mass gap.
 
 **Not done.** Row 1358 and its file were not read. `parts/gap.md` (130 KB) was not read; I worked from the RESULT
-lines of rows 1332 to 1357 and from the files of rows 1345, 1351, 1354 and checks 1347, 1357. PRs #10133, #10134, #10141, #10144 were not searched. I read
-no published paper in this row; Mack and Petkova, 't Hooft and Tomboulis and Yaffe are cited through the rows
+lines of rows 1332 to 1357 and from the files of rows 1345, 1351, 1353, 1354 and checks 1347, 1357. PRs #10133,
+#10134, #10141, #10144 were not searched. I read no published paper in this row; Mack and Petkova, 't Hooft and Tomboulis and Yaffe are cited through the rows
 that read them. I did not re-derive the constants of row 1351's cluster bound (12) or of its Cauchy tail. The
 proofs of Section 2 to 4 are unchecked.
 
 **For the lead (proposals; no other file was edited).**
 
-1. Do not queue (BS*) for the map of row 1345. Theorem N and Proposition TOP close it in both end classes.
+1. Do not queue (BS*) for the map of row 1345. Theorem N and Proposition TOP close the class (10*) for that map;
+   row 1354 Proposition B had closed the class (10) for a confining theory.
 2. A check of this row needs: Lemma T (four steps, with row 1345 L73 and L81), Lemma D1 (one paragraph, with row
    1351 L134), Proposition TOP (the count of row 1345 (9)), Lemma FR (elementary), Proposition EP.
 3. Lemma T also improves the range of (8) and (9) of row 1345: with the geodesic distance and four faces for
@@ -601,6 +645,7 @@ proofs of Section 2 to 4 are unchecked.
    beta >= 66 (hand constant of Lemma A; 54.8 with the exact A), where the on-file form needs 6 sqrt(u_beta) < 1,
    that is beta >= 213.5 with the exact A. (ARGUED: among h cubes at least
    h/4 choose the same coordinate direction for their four faces. Not written out, not needed on the tail.)
-4. If a dual end class is kept as a target, use the polymer form of Proposition EP, which a thick map could
-   meet, and state the block step as a statement in the law of the model.
+4. If a dual end class is kept as a target, use Theorem END-D of row 1353 (or its activity form, Proposition
+   EP), which a block-link map could meet, and state the block step as a statement in the law of the model.
 
+RESULT: Row 1360 (Claude Fable 5.2 max, Mac mini worker 1; author only, checked by no one; 07:05Z to 07:56Z by date -u; two guide runs under the numeric lock, about 3 minutes and 1 second, no large computation; row 1358 not read). NOT solved: no block step from the Wilson trajectory into an end class that a confining theory can reach is built; (N-phys) and the mass gap are not proved; nothing in the chain is disproved. Main finding, PROVED GIVEN (7), (8) of row 1345 and the deletion induction of row 1351 with Theorem E of row 1354 (checked by rows 1347, 1352, 1357): the dual class (10*) cannot be reached through the centre-sign block map of row 1345. Theorem N: for beta >= 59 (beta >= 245 from checked statements alone) and every block side, the Wilson mass with a sign on one packet is at most 0.658 times the plain mass (Lemma T, new and unchecked: one thin monopole cube costs the factor 3 (e^(sqrt 3 beta/2)/A(beta))^4), while every model of (10*) has this ratio at least 511/513 (Lemma D1); so no representation of that coarse model in other environment variables lies in (10*), and the hope of row 1354 4.4 (rare sheets after the angular integration, by cancellation) is false at every late cutoff. Proposition TOP: at late cutoffs the weight of a coarse electric sheet depends only on its homology class, up to 64 [(1 + q_B)^(4v) - 1]; every bounding sheet weighs as much as the empty sheet; the centre sector carries the 64 class masses and nothing local. Lemma FR: on independent links a closed plaquette-local sign rule has a fixed class, so the format of row 1351 holds a frozen centre only with one heavy class (alternative II) or with an environment far from a product law. Also PROVED: a perimeter bound which shows that decimation to coarse SU(2) links gives a density close to Haar measure with the whole mass in one non-local scalar; Proposition EP, an activity-level restatement of Theorem END-D of row 1353. GUIDE: at beta = 2.3 the one-packet ratio is 0.338(2) for B = 1 and about 0.045 for B = 2, against the required 0.996; it is 0.9929(6) at beta = 1.0; one preset control failed by a small amount and is reported. ARGUED: a dual landing needs a thick centre variable, that is a block-link chain into END-D; the class (10*) is not kept by the map of row 1345 at any coupling. First failing step, four ways (6.2): a block statement in the law of the model at a coupling of order one. OPEN: (BS-thick), which is the landing in END-D that row 1353 left open; a quantitative Lemma FR; Lemma T at a coupling of order one; (N-phys); the mass gap. Output library/gap-mini-dualstep2-fable.md.

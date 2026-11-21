@@ -28,3 +28,37 @@ confining theory can reach. Row 1354 proposed the class (10*) of its Theorem E.
 Not on disk at this pin: the outputs of rows 1356 and 1357 (running). The checks 1352 and 1355 are read in their
 RESULT lines only.
 
+## Step 1. How best to attack it (written 2026-11-21T07:03Z, date -u)
+
+Also read for this step: `library/gap-mini-neutral-step-fable.md` (row 1353) Sections 2, 3, 5 and 6; the RESULT
+line of its check (row 1355).
+
+**1.1 What is on file for each leg (READ; rule 0a).**
+
+- End classes. Coherent centre weights with a product reference: row 1345 (11)-(12) (periodic mass), row 1351
+  (10)-(11) and (23)-(24) (neutral mass; an alternative-II class by row 1354). The Fourier-dual class (10*): row
+  1354 Theorem E. Block links with a nearly Haar law and windows of any range: row 1353 Theorem END-D. END-D
+  gives the two-period bound for each of the eight twisted masses, so it is an alternative-I class, and it is
+  the natural home of (10*): a plaquette weight with a small odd part and a nearly constant even part is one
+  window. Dobrushin ends: row 785 Theorem DOB, row 1340 Lemma END-RAY.
+- Exact maps. The 2^4 cube map (row 1341), the centre-sign map (row 1345), the gluing and the strip elimination
+  (row 1351), noise steps with pins (rows 861, 1340). Row 1353 2.2: Proposition CH is vacuous without maps that
+  are local and explicit; row 1353 2.3: no class is carried by any map on file.
+- The step. Open in every row. Row 1354 6.1 states it as (BS*). The single-link Doeblin bound (Simon and
+  Yaffe) gives a perimeter law at every coupling and for every compact group; it is not selective
+  (`gap-mini-solve-ab-opus.md` L52, `gap-brainstorm-max.md` L312).
+
+**1.2 The plan.** The queue row names a target class, (10*). Before any step is attacked, one question decides
+which map can have that target: what are the electric sheet weights of the Wilson image under the maps on file?
+Row 1354 left this open. Its 4.4 said that the sheets "can be rare only after the angular environment is
+integrated, by cancellation of the signs", and its 6.2 item 1 read the cost of a coarse centre monopole as a
+thick-monopole free energy of order beta. Step 2 answers the question with a proof. The answer changes the
+target, so it comes first.
+
+After that the plan is: (Step 3) say which coarse variable has rare sheets and what the step then is, as one
+statement in the law of the fine model; (Step 4 on) attack that statement.
+
+**1.3 What I do not expect (GUIDE).** A proof of the step at a coupling of order one. Every row since 998 ends
+at the same place, and the tools on file that reach order one are blind to the group. I state this before the
+work so that the labels below are read against it.
+

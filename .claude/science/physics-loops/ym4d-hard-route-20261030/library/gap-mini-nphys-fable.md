@@ -259,10 +259,11 @@ enlargement of row 1351 (8) (READ at L88-93, not re-derived): there the mass wit
 Y^h = Z^h + sum over nonzero cosets of lambda^(t k) Z^(b, h), with 0 <= Z^(b, h) <= Z^0, so Z^h <= Y^h and
 Y^0 <= (1 + eps_0) Z^0 with eps_0 = (1 + lambda^t)^(N+3) - 1.
 
-**4.2 Corollary B2 (a rigorous instance; PROVED GIVEN Proposition B and Theorem E).** Let beta <= 1/46. On a
-torus where tau is small enough that e^tau (e^tau - 1) < e^(-2 tau), the Wilson model has no twist-wise exact
-representation in the class (10). Reason: by 3.2 item 2 and Theorem E (a) its twisted masses agree within
-e^(2 tau); by Proposition B a representation in (10) would make them differ by the factor delta. The same
+**4.2 Corollary B2 (a rigorous instance; PROVED GIVEN Proposition B and Theorem E).** Let beta <= 1/46, and
+let the fine torus have all sides at least 16, with its own tau. The Wilson model has no twist-wise exact
+representation in the class (10) on a coarse torus whose delta is below e^(-2 tau). Reason: by 3.2 item 2
+and Theorem E (a) its twisted masses agree within e^(2 tau); by Proposition B a representation in (10)
+would make them differ by the factor delta. The same
 holds at every coupling and torus where the periodic thermal sum S_per(u) is below 6 and delta is below
 1/49, by Corollary B1 (c) (then 8/(1 + 7 delta) - 1 > 6). So at a coupling with a periodic seed at some size,
 the class (10) is closed to twist-wise exact maps on every larger torus on which the engine keeps S_per
@@ -277,7 +278,7 @@ e^beta.
 
 **4.3 What a twist-wise exact chain proves (ARGUED from 2.4, 3.1 and 4.2).** The eight twisted masses at the
 two periods are invariants of such a chain. An end class with a hand proof must give the neutral two-period
-bound for every member. The two classes on file with such a proof, (10) and (10*), each fix the alternative:
+bound for every member. The two classes with such a proof, (10) of row 1351 and (10*) of this file, each fix the alternative:
 II and I. So a chain of this kind cannot prove (N-phys) and leave the branch open. For a confining theory
 it must land in a class of the kind (10*), and then it proves the periodic bound as well. The neutral target
 of row 1342 remains correct as logic: the gap clause needs (N-phys) only. It does not make the landing easier.
@@ -309,4 +310,183 @@ V, and for each of the four cosets with the character. One run of seconds under 
    the character, for all six periods. Theorem E needs the same lines read with links in place of
    three-cubes.
 
-## Step 5. (in progress)
+## Step 5. The soft stratified model: the open item of row 1342 (written 2026-11-21T06:26Z, date -u)
+
+Why here. Step 4.3 says the neutral target does not ease the landing. The other way to ease the target is
+to drop the count and keep a gap only. Row 1342 showed with ST_q that this is wrong in the class of Theorem
+S, and left open whether a strictly positive kernel repairs it ("a soft version", its 4.5; check 1349 lists
+it as OPEN). This step answers that item for the natural soft model. Rule 0a: `grep -i` for "soft version",
+"order by disorder", "unpaired" in `library/*.md` finds only row 1342 and its check.
+
+**5.1 The model.** SST_q(eps), 0 < eps < 1: q-state spins on the sites of a four-dimensional torus, weight
+eps^(U(sigma)), where U is the number of plaquettes that are not paired (row 1342 4.1). At eps = 0 it is
+ST_q. The weight is a product over plaquettes of a strictly positive function of four spins. The model is
+local and hypercubic.
+
+**Lemma SST0 (reflection positivity; PROVED).** SST_q(eps) is reflection positive at mirrors through sites
+and at mirrors that bisect links.
+Proof. Site mirror: every plaquette lies on one closed side, so the weight is a product F(left) F(right)
+with the mirror spins shared (the positive weight of a plaquette inside the mirror is split into two square
+roots). Link mirror, in the direction mu: a crossing plaquette has the corners a, c
+on the left and b, d on the right, with the mu-bonds (a, b) and (c, d). Its weight is
+eps + (1 - eps) 1[paired], and
+1[paired] = 1[a = c] 1[b = d] + sum over k != l of 1[a = k, c = l] 1[b = k, d = l].
+(The first term is the case that both nu-bonds are satisfied. The second is the case that both mu-bonds are
+satisfied and the nu-bonds are not; the two cases are disjoint.) Each term is a function of the left pair
+times the same function of the mirrored right pair, with a positive coefficient. Products of such sums are
+again such sums. QED
+
+So the transfer matrix of a box is symmetric, entrywise positive and positive semi-definite, and the model
+has every property of the class of Theorem S that row 1342 4.4 (a) lists, with a strictly positive kernel.
+
+**Lemma SST1 (the cheapest excitations; (a) to (d) PROVED by counting; the enumeration of 5.3 agrees).**
+Take a stratified ground state sigma(x) = xi(x_mu) and change the spins on a set R of sites. The cost is the
+number of plaquettes that are no longer paired.
+
+- (a) A plaquette with exactly one changed corner is not paired. So one changed site costs 24, in every
+  ground state and for each of the q - 1 new values.
+- (b) Two changed sites at the ends of a bond cost 36 if the two sites had equal spins before and get equal
+  spins after, and 42 if not. (They share six plaquettes. In the first case each of the six has its two
+  bonds parallel to the pair satisfied before and after.)
+- (c) The two sites of a bond in a direction nu != mu always had equal spins. The two sites of a bond in the
+  direction mu had equal spins exactly when the two layers are equal.
+- (d) Let R not wrap the torus. Then the cost is at least 4 times the sum, over the six plane orientations,
+  of the number of planes of that orientation that meet R. So a set R of cost at most 41 is one site, or two
+  sites on one coordinate line; and then it is one site (24) or a pair of (b) with cost 36.
+- (e) (Enumeration only, q = 3, side 4.) Two changed sites on a diagonal of a plaquette cost 46 or 47. Three
+  changed sites that are connected through plaquettes cost at least 48. A straight line of k equal changes
+  costs 12 k + 12, a 2 x 2 square 52, a 2^4 block 96 (hand counts in the constant ground state).
+
+Proof of (a). Let the plaquette be paired through its nu-bonds, and change the corner x to a. The nu-bond at
+x is now unsatisfied. For the mu-bonds to be satisfied, a must equal the spin at x + mu, and the opposite
+mu-bond must be satisfied; with the old nu-bonds this gives old(x) = old(x + mu) = a, against a != old(x).
+(b) and (c) are direct.
+(d) Take a plane that meets R, and in it the site x of R that is lowest in the second coordinate and, among
+those, lowest in the first. The plaquette of this plane with x as its upper right corner has no other corner
+in R, so it is not paired, by (a). The three other extreme sites give three more plaquettes, with the site
+of R at a different corner each time. Different planes give different plaquettes. If R has two values of a
+coordinate kappa, the three orientations that do not contain kappa have at least two planes each, so the cost
+is at least 4 (3 . 2 + 3) = 36. If R has two values in each of two coordinates, five orientations have at
+least two planes, and the cost is at least 44. If R lies on a line and has k sites, the cost is at least
+12 k + 12, which is 48 for k = 3. Two sites of a line that are not neighbours share no plaquette and cost
+48. QED
+
+**5.2 Reading (ARGUED: a low-temperature expansion around each ground state, not written as a proof; the
+ground states are infinitely degenerate at eps = 0, so a proof needs a restricted-ensemble argument that I
+did not write).**
+
+1. By Lemma SST1 (d), through the order eps^41 the only excitations are single sites, with the same count in
+   every ground state, and the pairs of (b), (c) with cost 36. So an interface of cross-section A between
+   two adjacent layers carries the factor exp(K A) if the layers are equal and 1 if not, with
+   K = (q - 1) eps^36 + O(eps^42). Equal layers are favoured. This is order by disorder.
+2. So the entropy of the layer patterns does not survive. Row 1342 4.5 argued that the balance of its (c)
+   "would persist whenever that entropy is positive"; in SST_q the entropy is lifted at the order eps^36.
+3. Two ranges of the side n. For K n^3 well below one the model behaves like ST_q: the vacuum branch has the
+   eigenvalue ratio about q over each of the about q^n static layer patterns of each space direction, so
+   the gap is about log q and no shape with a space side longer than the time has a seed. For K n^3 well
+   above one the q constant states dominate and are degenerate up to exp(- K n^3): the full transfer matrix
+   has no uniform gap, and the sector invariant under the permutations of the q values has a seed.
+4. Consequences. (i) SST_q is not a strictly positive counterexample to "a uniform gap on all cubes gives a
+   seed": it loses the premise at large sides. That statement stays OPEN for strictly positive kernels, as
+   row 1342 left it. (ii) No theorem of the class can give a seed from a gap with a size that depends on
+   the gap alone: with the gap near log q the first seed size of SST_q is of the order eps^(-12). A size
+   bound must depend on the positivity constant of the kernel. (iii) For Wilson the positivity constant of
+   one plaquette is e^(-2 beta), so a bound of this kind could not hold the seed size fixed in physical
+   units, where the side grows like e^(2.69 beta) (one loop). This agrees with Proposition LS of row 1234:
+   the bounded seed size is a separate clause.
+
+**5.3 Guide run (exact, small, no proof step).** On the torus 4^4 with q = 3, all sets of at most three
+changed sites that contain a fixed site and are connected through plaquettes, with all new values, in three
+ground states (constant; layers 0,1,2,1; layers 0,0,1,2). Lowest costs and the number of rooted
+configurations: size one 24 (2, 2, 2); size two 36 (16, 12, 14), then 42 (16, 20, 18), then 47 or 46; size
+three 48 (24, 18, 18). The counts 16, 12, 14 are 2 (q - 1) times the number of directions with an equal
+neighbour: 8, 6, 7. One run of seconds under the numeric lock (memory free 66 percent); scratch file
+outside the repository.
+
+## Step 6. The first failing step, three ways (written 2026-11-21T06:29Z, date -u)
+
+**6.1 The step, as one statement (OPEN).** (BS*) There are a block side B, a coupling above the hand range,
+and a twist-wise exact representation of the Wilson masses of the tori (Bt, Bm, Bm, Bm) and (2Bt, Bm, Bm, Bm)
+as the masses of one model on the coarse tori whose electric sheets are rare: a model of 3.1, or of its
+moment form (4.4), with the common-cover rule of row 1351. By Theorem E this gives the periodic and the
+neutral two-period bounds at that coupling. The statement for the trajectory needs (BS*) for every late
+cutoff with one margin, at one physical coarse mesh. This is the block step of row 1332 6.5 with the end
+class corrected by Steps 2 and 3. Rows 1340, 1341, 1345, 1348 and 1351 attacked it and left it open.
+
+**6.2 Three ways tried here, and where each stops.**
+
+1. *Centre signs alone (the map of row 1345, read in the dual variable).* The coarse sheet weight is the
+   integral over the environment of prod cosh J'_P times prod over the sheet of tanh J'_P, and by Fourier
+   inversion it is 2^(-P') times the sum over the sign patterns tau' of the coarse packets of
+   (prod_{S'} tau') Z_(tau'), with Z_(tau') > 0 the Wilson mass with signed packets (row 1345 L73). (PROVED,
+   elementary; the same computation as in Theorem E.) So rare sheets mean that the mass is nearly
+   independent of the packet signs. For closed patterns this is exact. For patterns with coarse centre
+   monopoles it is the vanishing of a thick-monopole free energy at the scale B. Classically that free
+   energy is of order beta and does not depend on B (the action is scale invariant in four dimensions), so
+   no bound comes from the action; it is a statement about the measure at the scale B. And this half
+   controls the flux sectors only: the two-period defect of the untwisted mass Z^0, which is the neutral
+   content, is not touched by any centre computation. Stops at: the integral over the angular environment.
+2. *Positive bounds on the unblocked sheets.* For free links the chessboard norm of sinh(beta q) is
+   2 I_2(beta)/beta and that of cosh(beta q) is 2 I_1(beta)/beta (ARGUED: the product over all plaquettes
+   of one orientation is a product of two-dimensional torus sums, whose leading coefficients are these).
+   So a sheet costs at most t(beta) = I_2(beta)/I_1(beta) per plaquette, for every beta, and this is sharp
+   for simple surfaces. The expansion then converges while t times the surface entropy is below one. With
+   the count of five continuations at a link this is t < 1/5, beta below about 0.8, the order of the
+   ceilings already on file (`parts/gap.md` test table: 1/3, 2/3, 0.775, 1.0109; I did not check which
+   family each ceiling belongs to). At beta = 2.3, t is 0.48. A bound in absolute value cannot do better, since simple sheets have exactly this
+   weight; the true string tension is far below -log t there because of signed terms. Stops at: the
+   lesson of method 35.
+3. *Integrate one colour, then test (row 1351's strip elimination).* The elimination is exact and its tail
+   is summable. Along the trajectory it is uniform in the cutoff because the one-step ratio is
+   R = e^(2 beta) and the one-loop slope beta/log n = 11/(3 pi^2) = 0.3715 is below 1/2 (row 1351 L212). For
+   the next colour the generated factors add an oscillation of order 2 beta for each of the four plaquettes
+   that the link shares with eliminated columns, so the worst-case ratio is of order e^(10 beta), and
+   10 x 0.3715 is above one. (GUIDE arithmetic; row 1351 states the obstruction without the number.) A
+   bound in the law of the model is needed from the second colour on. Stops at: the same place as rows
+   1340 and 1351.
+
+**6.3 What a finite computation could certify (ARGUED).** Nothing found in this row. After Steps 2 to 4 the
+hypothesis of a block-step theorem is a bound on signed coarse sheet moments after the angular integration,
+at a block side of several correlation lengths (GUIDE: sigma B^2 above about 3.7 for the constant 1/40 of
+(10*), that is B about 6 at beta = 2.3). That is an integral over a block of about 6^4 sites. Row 1341's
+enclosure covers eight links.
+
+## Step 7. Summary
+
+**Solved?** No. The mass gap is not proved. (N-phys) is not proved. No step of the chain is disproved.
+
+**PROVED here, given row 1351's expansion (author-labelled PROVED by gpt-6.2-astra; its check, row 1352, was
+not on file at this pin; I verified only that each step is indifferent to the character, not the constants).**
+
+- Lemma B0, Proposition B, 2.7: in the neutral end class (10) of row 1351, and in its stable form (23)-(24),
+  every nonzero class of centre curvature has relative mass at most e^tau (e^tau - 1).
+- Corollary B1, Remark R: a twist-wise exact carry of Wilson into that class gives vanishing electric flux
+  free energies and S_per(u) >= 8/(1 + 7 delta) - 1 at that torus. The class is an alternative-II class.
+- Theorem E: the Fourier-dual class (10*) has the same end theorem with the surfaces of the strong-coupling
+  expansion; there all twisted masses agree, and the periodic and neutral two-period bounds hold together.
+- Corollary B2: Wilson at beta <= 1/46, and at any coupling and torus with S_per below 6, has no twist-wise
+  exact representation in (10).
+
+**PROVED here, elementary.** Lemma SST0 (the soft stratified model is reflection positive, with a strictly
+positive kernel). Lemma SST1 (its excitations of cost at most 41 are single sites, cost 24, and pairs with
+equal spins before and after, cost 36).
+
+**ARGUED here.** 2.6 and 4.3: for a confining theory the neutral target opens no landing class that the
+periodic target lacks; the candidate of rows 1351 and 1353 is expected to be unreachable for Wilson SU(2).
+4.4: the end theorem holds in a moment form that admits signed weights. 5.2: the soft stratified model
+orders by disorder at the order eps^36; it behaves like ST_q below a side of the order eps^(-12) and loses
+the uniform gap above it, so it is not a strictly positive counterexample, and a seed size cannot be bounded
+by the gap alone.
+
+**GUIDE.** The belief that Wilson SU(2) is in alternative I at every torus where the neutral seed holds; the
+sizes in 2.3, 2.6 and 6.3; two exact enumerations of seconds each (4.5, 5.3).
+
+**OPEN.** (BS*) of 6.1 at any coupling above the hand range; its form uniform in the cutoff; the base of the
+chain with numbers; whether alternative II can be excluded for Wilson by proof; "a uniform gap on all cubes
+gives a seed" for strictly positive kernels; (N-phys); the mass gap.
+
+**Not done.** I did not read the output of row 1353 or the check of row 1351. I did not re-derive row 1351's
+constants. I did not search origin/main or the open PR branches (this checkout has no such refs). I read no
+published paper; the two cited theorems of 4.2 are recalled.
+
+RESULT: Row 1354 (Claude Fable 5.2 max, Mac mini worker 2; author only, checked by no one; two exact guide enumerations of seconds each under the numeric lock, no large computation). NOT solved: the mass gap and (N-phys) are not proved, and no finite computation is specified. Main finding, PROVED GIVEN row 1351's expansion (unchecked at this pin): the neutral end class (10) of row 1351, and its stable form (23)-(24), is an alternative-II class. Every nonzero class of centre curvature has relative mass at most e^tau (e^tau - 1) (Lemma B0 for all 64 characters, Proposition B), so a twist-wise exact carry of Wilson into it makes the eight twisted masses unequal by that factor, the electric flux free energies vanish, and the periodic thermal sum is at least 8/(1 + 7 delta) - 1 at that torus (Corollary B1, Remark R). The maps of rows 1345 and 1351 are twist-wise exact (read, not re-derived). So the landing that row 1351 leaves open, and that row 1353 has as its candidate, would prove that SU(2) does not confine at the seed torus; it is excluded at beta <= 1/46 and wherever a periodic seed holds (Corollary B2), and is expected false on the trajectory (GUIDE: confinement). Theorem E: the Fourier-dual class (10*) (small centre couplings; the closed surfaces are the electric sheets of the strong-coupling expansion) has the same end theorem by the same proof, with all twisted masses equal and the periodic and neutral two-period bounds together. ARGUED: for a confining theory the neutral target opens no landing class that the periodic one lacks; the object that must be rare on the coarse lattice is the electric sheet, and its weight is a Fourier coefficient of the positive signed-packet masses. Also: Lemma SST0 and SST1 (PROVED) and their reading (ARGUED) answer the open item of row 1342: the soft stratified model is reflection positive with a strictly positive kernel, orders by disorder at order eps^36, behaves like ST_q below a side of order eps^(-12) and loses the uniform gap above it, so it is not a strictly positive counterexample. First failing step, three ways (6.2): one block step at a coupling above the hand range into a class of the kind (10*). OPEN: that step, its form uniform in the cutoff, the exclusion of alternative II for Wilson by proof, (N-phys), the mass gap. Output library/gap-mini-nphys-fable.md.

@@ -12,6 +12,8 @@ Pinned at commit 767a6b4e5 of claude/ym4d-hard-route. Started 2026-11-21T11:35Z 
 - 11:36Z (date -u): read GOAL.md, FINISH.md L1-90 and L299-358 (rules), the queue row, the RESULT lines of rows 1340-1362, gap-phys-seed.md L296-326 (Theorems ZD, ZD-c, the two lead notes), row 1356 Sections 1-3 (Lemma M1, Corollary M2), row 1353 Sections 2 and 6 ((N-phys), Corollary BT2, (M-neutral)).
 - 11:53Z (date -u): read `parts/gap.md` L1-104, the RESULT lines of rows 1318-1339; ran two registry greps (72 terms; counts in Section 1.2). Section 1 written.
 - 12:06Z (date -u): literature probe (arXiv API, three queries, newest first): no record that proves a lattice SU(2) gap at a coupling of order one; every listed paper with a lane entry is already read (Section 2.4). Sections 2 and 3 written.
+- 12:11Z (date -u): patched four citations after `grep -n` (row 1180's split is not gap/count; (ES-1) is row 748); Section 3.6 written.
+- 12:13Z (date -u): exact integer count for the soft ST_q droplets (numeric lock taken as holder row1363-fable, released; memory 66 percent free); Section 3.6 corrected: the leading pattern-dependent term is the two-site droplet across layers (36 against 42), not the ABA/ABC term I first wrote.
 
 ## 1. Inputs, repo search, and the statement in plain terms (written 11:53Z, `date -u`)
 
@@ -66,9 +68,10 @@ L186-232, "(ANOM)").
 ### 2.1 The three legs, and where the statement lives
 
 1. Ultraviolet leg. The account carries the late bare data to first-passage data. On file this leg ends at an
-   effective lattice theory with an inverse coupling above 5 and no upper value (check 1331, quoted in row 1332,
-   Lemma N). At that coupling the correlation length is far above one lattice unit of the effective theory. So the
-   ultraviolet leg does not reach a regime where an expansion around a product measure converges.
+   effective lattice theory with an inverse coupling above 5 and no upper value (the RESULT line of row 1332,
+   Lemma N, quoting check 1331; I did not read the check). GUIDE: at such a coupling the correlation length is far
+   above one lattice unit (asymptotic scaling from the Teper values quoted in row 974). So the ultraviolet leg does
+   not reach a regime where an expansion around a product measure converges.
 2. Infrared leg. The engine (Theorem S, Theorem ZD-c; row 1161 for the neutral form) carries a seed at one physical
    size to every larger size. By 1.3 the neutral seed sits at a size near 10^4 correlation lengths.
 3. The band between them. This is a statement about one lattice theory at a coupling of order one, robust under
@@ -78,8 +81,8 @@ L186-232, "(ANOM)").
 ### 2.2 The two halves, each in its weakest form on file
 
 (M-neutral) is equivalent, for one box, to two statements that carry no small number (Theorem ZD (D) and Theorem
-ZD-c, `library/gap-phys-seed.md` L296-320, row 720; neutral forms: Lemma G5 of row 895, `library/gap-glue-max.md`
-L188, and the split (a)/(b) of row 1180, `library/gap-mini-neutral-fable.md` L112). In the words of this row:
+ZD-c, `library/gap-phys-seed.md` L296-320, row 720, with "What Attempt 1 gives" at L328-338; the neutral form with
+a crude count is Lemma G5 of row 895, `library/gap-glue-max.md` L188). In the words of this row:
 
 - (G) the gap half: the neutral gap of the cube, in units of the inverse side, is unbounded along the sizes
   ((Z-UNB)). Compact U(1) at weak coupling fails it. The stratified model ST_q of row 1342 has it.
@@ -159,8 +162,9 @@ Proof: log Z((2n)^3; u) <= 8 log Z(n^3; u) by (a) three times, and P = log Z + u
 
 (c) Reading. The thermal free energy is subadditive in the volume only up to the Casimir term u C(n), which has
 the wrong sign for a bound: positivity bounds C(n) from below (by zero), and a crude count needs it from above,
-C(n) <= c/n. That upper bound is the statement (ES-1) of rows 748-753, which row 753 found is not bounded by
-even thermal sums (`gap-es1-astra.md`). First failing step: an upper bound for the doubling Casimir defect.
+C(n) <= c/n. The vacuum-energy defect under doubling is the object of (ES-1), row 748 (`gap-es1-astra.md`): a
+linear bound for it by the even thermal sum is refuted there at size three (its (10), L298-306), and the general
+bound stays open (L474-481). First failing step: an upper bound for the doubling Casimir defect.
 
 (d) The same in the symmetric geometry: with f(L) := log Z(L^4)/L^4, positivity gives f(2L) <= f(L), and
 f(L) - f(infinity) = sum over k >= 0 of [f(2^k L) - f(2^(k+1) L)], a sum of non-negative terms. (BDD-Delta) says
@@ -171,11 +175,12 @@ f(L) - f(2L) of the order L^(-3).
 ### 3.3 The count from the gap and an ultraviolet count (fails by arithmetic)
 
 A count is available at short times from the lattice itself, or from the ultraviolet leg at the first-passage
-scale u_0: log(1 + s(u_0; L^3)) <= c (L/u_0)^3 (a Stefan-Boltzmann bound, c of order one). Lemma GC then needs
-m (2w - u_0) >= c (L/u_0)^3 with L >= 1024 w. Since u_0 < 2w this forces m (2w) >= c 512^3 (2w/u_0)^3, so
-(2w)^2 <= m u_0^3/(c 512^3) < u_0^2 when m u_0 < 1: no solution. The count must be taken at a time comparable to
-2w, where it is an infrared statement. So the gap and ultraviolet data do not give the count. This agrees with
-row 1259 (Lemma CD: the count is a low-temperature thermal bound) and with Lemma UVC of row 1356.
+scale u_0: log(1 + s(u_0; L^3)) <= c (L/u_0)^3 (a Stefan-Boltzmann bound, c of order one). Lemma GC then applies
+only if m (2w - u_0) >= c (L/u_0)^3 with L >= 1024 w. Since u_0 < 2w this asks m (2w) >= c 512^3 (2w/u_0)^3, so
+(2w)^2 <= m u_0^3/(c 512^3), which is below u_0^2 when m u_0 < c 512^3: no admissible time. The count must be
+taken at a time comparable to 2w, where it is an infrared statement. So this route from the gap and ultraviolet
+data gives no count (ARGUED: the bound fails, the statement is not refuted). This agrees with row 1259 (Lemma CD:
+the count is a low-temperature thermal bound) and with Lemma UVC of row 1356.
 
 ### 3.4 The thermal sign (the count half as a monotone)
 
@@ -201,9 +206,9 @@ Let z(L) = L m(L) for the neutral gap of the cube. Two sign statements:
 
 - (MONO-z): m(2L) >= m(L)/2. "Doubling the box at most halves the gap." Free massless fields satisfy it with
   equality, massive theories satisfy it, and the small-volume Wilson theory satisfies it (z of the order
-  g(L)^(2/3), growing by asymptotic freedom; Luscher's small-volume expansion, RECALLED). It fails where the
-  larger box has a tunnelling mode that the smaller lacks (two coexisting phases). It gives z bounded below by
-  its first-passage value, which is not (Z-UNB).
+  g(L)^(2/3), growing by asymptotic freedom; M. Luscher's small-volume expansion, RECALLED, not re-derived). ARGUED:
+  it fails where the larger box has a tunnelling mode that the smaller lacks (two coexisting phases, splitting
+  exponentially small in the volume). It gives z bounded below by its first-passage value, which is not (Z-UNB).
 - Strict growth: z(2L) >= (1 + eta) z(L) while z is below the engine threshold of Corollary Z4. This is
   (Z-UNB) with a rate. In the ultraviolet it is asymptotic freedom (d z/d log L = kappa z^4 at leading order,
   from z = c g^(2/3) and the one-loop flow; arithmetic). It is (MON') of row 859 and (DRIFT) of row 975 in the
@@ -213,4 +218,55 @@ Soft proof: none for either. A lower bound for the gap of the larger box from th
 consequence of positivity (the same remark as in 3.4: the two boxes have no common transfer operator), and
 (MONO-z) is false at a first-order point of a positive, local, reflection-positive model. First failing step:
 any lower bound for m(2L) in terms of data of the box L.
+
+### 3.6 The open question of row 1342: does a uniform gap with finite energy force the count? (ARGUED; added 12:11Z, `date -u`)
+
+Row 1342 (`library/gap-seed-audit-fable.md` L379-390) leaves open whether a strictly positive kernel with a uniform
+gap on the cubes must have a seed, and whether a soft version of ST_q keeps its strata. If the answer were yes for
+Wilson by a soft argument, the count half would be free and the target would be the gap alone. I tried to build a
+strictly positive model with a uniform gap and no seed, and to see why the attempts fail. Nothing here is proved.
+
+- Independent pieces. A product of independent massive chains along the lattice lines, or of independent massive
+  layers, has a uniform gap and a count that is polynomial in the side, so it has a seed at large size (arithmetic:
+  Tr T^a/lambda_0^a = (1 + (q-1) r^a)^(b^3) for Potts chains with ratio r). Independent ORDERED layers have
+  exponentially many near-vacua and no uniform gap.
+- Protected strata. A degeneracy among exponentially many layer patterns survives fluctuations only if a symmetry
+  protects it. The symmetries that do this are subsystem symmetries (one independent element per coordinate
+  hyperplane; the site model with the four-spin plaquette interaction has them). But such a symmetry acts on every
+  direction at once, time included, so the protected patterns are degenerate VACUA of the transfer operator, not
+  strata at a gap: there is no uniform gap on the full space, and in the symmetric sector the count is normal. The
+  hard constraint of ST_q does something a symmetry does not: it lets one direction be stratified only if the
+  others are not, and that exclusion is what turns the strata of the space directions into excited states.
+- Unprotected strata: the soft version of ST_q. Give each unpaired plaquette the weight eps in (0, 1), in four
+  dimensions. Around a configuration stratified along one direction, with layer colours xi(t), I counted the
+  unpaired plaquettes of the smallest droplets (exact integer count on a periodic 4^4 torus with layer colours
+  A, A, B, C; a script of 40 lines, run for one second under the numeric lock at 66 percent free memory, 12:13Z by
+  `date -u`; the script is not kept in the repository; the three leading numbers are also derived by hand below):
+  - one flipped site: 24 unpaired plaquettes, for every colour and every pattern of the neighbouring layers;
+  - two flipped sites inside one layer, same new colour: 36, for every pattern of the neighbouring layers;
+  - two flipped sites on a bond ACROSS two layers, same new colour: 36 if the two layers have the same colour,
+    42 if they differ (also 42 for two different new colours, and for the swap of the two colours);
+  - a 2 x 2 block: 52 inside one layer, 52 across two equal layers, 62 across two different layers.
+  Hand count for the bond across two layers. Each of the two sites lies in 12 plaquettes of planes inside its
+  layer, all unpaired (one unsatisfied bond in each direction): 24. Each lies in 6 plaquettes that reach the far
+  neighbouring layer, all unpaired: 12. The 6 plaquettes that contain both sites have both bonds inside the layers
+  unsatisfied, so they are paired exactly when both bonds across the layers are satisfied: the flipped pair is
+  (same new colour), and the unflipped pair is satisfied exactly when the two layers have the same colour. So 36
+  or 42.
+  Reading (ARGUED: the low-eps droplet expansion is not proved to converge). The first term of the fluctuation
+  free energy that sees the pattern is of order eps^36: each pair of adjacent layers of EQUAL colour gains
+  (q - 1)(eps^36 - eps^42) per transverse site. So the layers are coupled ferromagnetically with a strength
+  proportional to the transverse volume, the constant pattern is selected, and on boxes with
+  (transverse volume) x eps^36 above 1 the soft model is an ordered q-state model with q phases. The strata are
+  gone, the pattern entropy is zero, and the q constant slices tunnel at a rate exponentially small in the box:
+  the uniform gap on the full space is lost with the strata. (On smaller boxes the strata of ST_q are still there.
+  In two dimensions the picture differs: a rectangular droplet of any size costs eps^4, so the expansion is not
+  dilute.) This answers the item "A soft version" of row 1342 (L385-389) at the ARGUED level, with the opposite
+  sign to the guess there: the balance of its (c) does not persist, because the surviving patterns have zero
+  entropy.
+
+So each attempt loses either the gap or the strata. This supports the conjecture that finite energy with a uniform
+gap gives a crude count, and proves nothing. Two limits of its use, even if it were proved: finite-energy
+constants are in lattice units, so on the trajectory the bound would have to be scale invariant; and it leaves the
+gap half, which is the selective one. OPEN, as in row 1342.
 

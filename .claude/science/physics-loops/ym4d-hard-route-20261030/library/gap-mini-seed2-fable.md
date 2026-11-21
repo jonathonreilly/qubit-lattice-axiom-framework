@@ -27,3 +27,20 @@ Notation (row 1353, 2.1 and 6.1; row 1356, Section 2). The spatial box is the pe
 
 Reading in thermal terms (on file: Lemma Z, Lemma Z', Proposition Delta, rows 1180 and 1184; not new). The number log(1 + s(u)) is the volume n^3 times the thermal pressure of the neutral sector at the temperature 1/u, in units of that temperature. A free gas of three massless vector particles has pressure (pi^2/15) T^4, so it gives log(1 + s) about 0.66 (n/u)^3, at least 0.66 x 512^3. (N-phys) asks for log(3/2) = 0.405. For a massive particle of mass m the one-particle term is n^3 (m/(2 pi u))^(3/2) e^(-m u); at n = 512 u it is below 1/2 once m u is at least about 22, so the physical side is L at least about 1.1 x 10^4/m (my arithmetic, GUIDE). So the seed is a low-temperature statement far above the correlation length. It is not a statement at the scale where the running coupling is small.
 
+## 2. Screening against the file (written 11:53Z, date -u; ARGUED, no proof)
+
+I listed the routes I would take from first principles and looked each one up before any derivation. Every one has a match, so none is attacked again here.
+
+| Route (my words) | Match on file | State there |
+|---|---|---|
+| Stiffness iteration with a commutator gain (the posted 2D O(4) mechanism of OpenAI), ported to 4D | rows 1009-1016, 1228; `library/prior/gap-o4-pinned-cell-read-opus.md` | closed: the gauge field has no non-gauge symmetric twist; the class of all pins is not closed in 4D (Theorem D2, Lemma SHEET) |
+| Loop equations with positivity (bootstrap of Anderson and Kruczenski, Kazakov and Zheng) as a certified order-one input | rows 754-762, 1326, 1331 | a fixed-radius certificate cannot see the finite-size shift (Theorem O of row 760; Remark OS) |
+| Thin twisted torus, fractional instantons (Tanizaki and Unsal; 't Hooft; van Baal) | Route T, rows 678-687, 842, 862 | a gap proved in a window of base sizes at weak coupling; no carry to the cube |
+| Thermal form, rotated frames, Casimir energy | Lemma Z, Z', Proposition Delta; rows 1180, 1184 | equivalent forms of the target |
+| Ground-state representation, Lipschitz transport, coding, Poincare inequality of the 4D measure | row 1356; rows 941, 957, 968; Proposition UNI of row 1237 | each needs a regularity statement at order-one coupling |
+| Centre decomposition SU(2) = Z_2 x SO(3) (Mack and Petkova), thick vortices | rows 1345, 1351, 1354, 1358, 1360 | thin signs are locked on the tail; the step is (BS-thick) or (BS-BL) |
+| Twist ratios and the zero-mode count (margin 2^(11/3)), theta sectors | rows 731, 1200 | an engine for the flux half only |
+| Verified computation of the seed | rows 1326, 1331, 1332 | no finite sufficient statement on file |
+
+What the screening leaves. The band has no small parameter, and every class-wide tool is bound by a comparison model. The registry of `parts/gap.md` (L223-256) lists reopen conditions. Section 3 picks one of them.
+

@@ -250,4 +250,63 @@ whose check (row 1352) is not on file at this pin.
    (row 1351 L142-146). The centre signs carry no free energy of their own there. Everything is in the
    angular environment, which no step on file integrates at an effective coupling of order one.
 
-## Step 4. (in progress)
+## Step 4. Consequences, a rigorous instance, and one guide check (written 2026-11-21T06:21Z, date -u)
+
+**4.1 Remark R (one-sided transport is enough; PROVED, elementary).** Corollary B1 needs less than equality.
+Assume Z^h(T_u) <= K M_{c(h)} for h != 0 and Z^0(T_u) >= K M_0/(1 + eps_0). Then Z^h <= delta (1 + eps_0) Z^0,
+and (b), (c) of Corollary B1 hold with delta (1 + eps_0) in place of delta. This covers the positive
+enlargement of row 1351 (8) (READ at L88-93, not re-derived): there the mass with the temporal twist h is
+Y^h = Z^h + sum over nonzero cosets of lambda^(t k) Z^(b, h), with 0 <= Z^(b, h) <= Z^0, so Z^h <= Y^h and
+Y^0 <= (1 + eps_0) Z^0 with eps_0 = (1 + lambda^t)^(N+3) - 1.
+
+**4.2 Corollary B2 (a rigorous instance; PROVED GIVEN Proposition B and Theorem E).** Let beta <= 1/46. On a
+torus where tau is small enough that e^tau (e^tau - 1) < e^(-2 tau), the Wilson model has no twist-wise exact
+representation in the class (10). Reason: by 3.2 item 2 and Theorem E (a) its twisted masses agree within
+e^(2 tau); by Proposition B a representation in (10) would make them differ by the factor delta. The same
+holds at every coupling and torus where the periodic thermal sum S_per(u) is below 6 and delta is below
+1/49, by Corollary B1 (c) (then 8/(1 + 7 delta) - 1 > 6). So at a coupling with a periodic seed at some size,
+the class (10) is closed to twist-wise exact maps on every larger torus on which the engine keeps S_per
+small (rows 697, 705, 731; for the shape u = n/512 see check 1349 L80). The periodic programme of rows 1323
+to 1339 and a landing in (10) exclude each other.
+
+Published context (recalled, not re-read, unchecked): alternative I is a theorem for Wilson SU(2) at small
+beta (Osterwalder and Seiler, area law). Alternative II in the form of a non-decaying Polyakov-loop
+correlation is a theorem at high temperature, beta above a multiple of the time extent (Borgs and Seiler,
+CMP 91, 1983). Neither covers the seed torus of the trajectory, where the time extent grows like a power of
+e^beta.
+
+**4.3 What a twist-wise exact chain proves (ARGUED from 2.4, 3.1 and 4.2).** The eight twisted masses at the
+two periods are invariants of such a chain. An end class with a hand proof must give the neutral two-period
+bound for every member. The two classes on file with such a proof, (10) and (10*), each fix the alternative:
+II and I. So a chain of this kind cannot prove (N-phys) and leave the branch open. For a confining theory
+it must land in a class of the kind (10*), and then it proves the periodic bound as well. The neutral target
+of row 1342 remains correct as logic: the gap clause needs (N-phys) only. It does not make the landing easier.
+
+**4.4 The same end theorem, the other variable (ARGUED).** Row 1351's end theorem is the right theorem for a
+confining theory when it is applied to the Fourier-dual centre variable. In words: the object that must be
+rare on the coarse lattice is the electric centre sheet (the cycle S of 3.1, the surface of the
+strong-coupling expansion), not the frustrated magnetic surface F. The weight of a sheet is the product of
+beta_p = sinh J_p / a_p. In row 1345's representation |tanh J_P| is close to one at every late cutoff, so the
+sheets are not rare pointwise. They can be rare only after the angular environment is integrated, by
+cancellation of the signs of sinh J_P. Row 1351's proof uses the hypothesis (10) only through the moment
+bound |E[prod_F v_p prod_X h_p]| <= u^|F| eps^|X| and the independence of distant reads. So a class defined
+by that moment bound for the pairs (S, X), in place of the norm bound (10*), has the same end theorem and
+admits signed weights (ARGUED; I did not write this variant out). This matches the lesson of method 35 in
+`parts/gap.md`: a proof must cancel before it bounds.
+
+**4.5 Guide check (exact, small, no proof step).** The identity at the start of the proof of Theorem E was
+checked with exact fractions on the three-dimensional torus 2 x 2 x 2 (24 plaquettes, dim d C^1 = 14, two
+stacks, dim V = 16, random rational alpha_p in [0.5, 1.5] and beta_p in [-0.45, 0.45]): both sides agree for
+V, and for each of the four cosets with the character. One run of seconds under the numeric lock (memory free
+68 percent at the start); the script is a scratch file outside the repository.
+
+**4.6 For the lead (proposals; no file other than this one was edited).**
+
+1. Tell row 1353: by Corollary B1 a landing in the class of row 1351 is a proof of alternative II at the seed
+   torus, which the belief in confinement excludes; the candidate with the opposite alternative is (10*) of
+   3.1, with the same proof.
+2. A check of Lemma B0 needs only row 1351 L124-136 and L321-330: confirm that each step is indifferent to
+   the character, for all six periods. Theorem E needs the same lines read with links in place of
+   three-cubes.
+
+## Step 5. (in progress)

@@ -14,6 +14,9 @@ Pinned at commit 767a6b4e5 of claude/ym4d-hard-route. Started 2026-11-21T11:35Z 
 - 12:06Z (date -u): literature probe (arXiv API, three queries, newest first): no record that proves a lattice SU(2) gap at a coupling of order one; every listed paper with a lane entry is already read (Section 2.4). Sections 2 and 3 written.
 - 12:11Z (date -u): patched four citations after `grep -n` (row 1180's split is not gap/count; (ES-1) is row 748); Section 3.6 written.
 - 12:13Z (date -u): exact integer count for the soft ST_q droplets (numeric lock taken as holder row1363-fable, released; memory 66 percent free); Section 3.6 corrected: the leading pattern-dependent term is the two-site droplet across layers (36 against 42), not the ABA/ABC term I first wrote.
+- 12:15Z (date -u): Section 4 (verdict) written.
+- 12:17Z (date -u): re-read of the PROVED items; three wording corrections (the lane's D is the whole sum, not its first term; (MONO-Delta) is stated along the coupling; (MON') and (DRIFT)_c are siblings in other variables). RESULT line written.
+- 12:18Z (date -u): droplet coefficient made exact ((q - 1) eps^36 against (q - 2) eps^42); end time of the RESULT line set from this stamp. Finished.
 
 ## 1. Inputs, repo search, and the statement in plain terms (written 11:53Z, `date -u`)
 
@@ -81,7 +84,7 @@ L186-232, "(ANOM)").
 ### 2.2 The two halves, each in its weakest form on file
 
 (M-neutral) is equivalent, for one box, to two statements that carry no small number (Theorem ZD (D) and Theorem
-ZD-c, `library/gap-phys-seed.md` L296-320, row 720, with "What Attempt 1 gives" at L328-338; the neutral form with
+ZD-c, `library/gap-phys-seed.md` L296-320, row 720, with "What Attempt 1 gives" at L329-340; the neutral form with
 a crude count is Lemma G5 of row 895, `library/gap-glue-max.md` L188). In the words of this row:
 
 - (G) the gap half: the neutral gap of the cube, in units of the inverse side, is unbounded along the sizes
@@ -148,10 +151,11 @@ Then (M-neutral) holds at 2w = L/512 if m L (1/512 - 1/2048) >= K + 1.66, that i
 K may be any number that does not grow along the late cutoffs; it only moves the size. This is Lemma G5 of row 895
 and Theorem ZD (D) of row 720 in the notation of (M-neutral); I claim nothing new in it.
 
-### 3.2 What positivity alone gives for the count (PROVED; on file as Lemma A and (ES-1))
+### 3.2 What positivity alone gives for the count (PROVED; on file as Lemma A, Theorem D (a) and (ES-1))
 
 (a) For a positive trace-class operator, Tr T^(2k) <= (Tr T^k)^2. So doubling one period gives
-Z(.., 2n, ..) <= Z(.., n, ..)^2 (Lemma A, `library/gap-es1-astra.md` L37). Letting the time go to infinity:
+Z(.., 2n, ..) <= Z(.., n, ..)^2 (Lemma A and Theorem D (a) of row 697, `library/gap-crux-restate.md` L37, L101).
+Letting the time go to infinity:
 E_0(2n, n_2, n_3) >= 2 E_0(n, n_2, n_3). The vacuum energy is superadditive under doubling a period.
 
 (b) Hence, for a cube and one time u:
@@ -167,10 +171,10 @@ linear bound for it by the even thermal sum is refuted there at size three (its 
 bound stays open (L474-481). First failing step: an upper bound for the doubling Casimir defect.
 
 (d) The same in the symmetric geometry: with f(L) := log Z(L^4)/L^4, positivity gives f(2L) <= f(L), and
-f(L) - f(infinity) = sum over k >= 0 of [f(2^k L) - f(2^(k+1) L)], a sum of non-negative terms. (BDD-Delta) says
-that the k = 0 term is at most D_0/(16 L^4). Positivity gives the sign of each term and no rate. The crude count
-is therefore not a soft statement: ST_q satisfies every inequality of this subsection and has
-f(L) - f(2L) of the order L^(-3).
+f(L) - f(infinity) = sum over k >= 0 of [f(2^k L) - f(2^(k+1) L)], a sum of non-negative terms. The lane's
+D(L) is L^4 (f(L) - f(infinity)) (`gap-phys-seed.md` L247, L365), so (BDD-Delta) says that the whole sum is at
+most D_0/L^4. Positivity gives the sign of each term and no rate. The crude count is therefore not a soft
+statement: ST_q satisfies every inequality of this subsection and has D(L) of the order L (row 1342, Theorem ST).
 
 ### 3.3 The count from the gap and an ultraviolet count (fails by arithmetic)
 
@@ -190,8 +194,9 @@ the sign statement
     (A)   P(2u; (2n)^3) <= P(u; n^3)   for all sizes above the first-passage size,
 
 which says that the pressure in units of T^4 does not grow towards the infrared. In the continuum it is
-"energy density at least three times the pressure". It is the thermal sibling of (MONO-Delta) and it is
-(ANOM)/(RATE) of row 931. Tests: free fields satisfy (A) with equality; a massive theory satisfies it; compact
+"energy density at least three times the pressure". It is the sign form of (RATE) of row 931 (identity (ANOM),
+`gap-direction-max.md` L147, L212). Its sibling for the symmetric torus is (MONO-Delta) of row 720, which is
+stated along the coupling at a fixed number of sites. Tests: free fields satisfy (A) with equality; a massive theory satisfies it; compact
 U(1) satisfies it (GUIDE: scale invariance), so (A) is not the selective half. Soft proof: none. The inequality
 compares two partition functions on a torus and on its dilated copy, and positivity of the transfer operators
 relates only tori with a common period lattice (3.2 (a)). A class proof is excluded for a second reason (RECALLED
@@ -211,20 +216,22 @@ Let z(L) = L m(L) for the neutral gap of the cube. Two sign statements:
   exponentially small in the volume). It gives z bounded below by its first-passage value, which is not (Z-UNB).
 - Strict growth: z(2L) >= (1 + eta) z(L) while z is below the engine threshold of Corollary Z4. This is
   (Z-UNB) with a rate. In the ultraviolet it is asymptotic freedom (d z/d log L = kappa z^4 at leading order,
-  from z = c g^(2/3) and the one-loop flow; arithmetic). It is (MON') of row 859 and (DRIFT) of row 975 in the
-  gap variable, and the entry "No infrared fixed point" of `gap-measured-vectors-max.md` L433.
+  from z = c g^(2/3) and the one-loop flow; arithmetic). It has the form of (MON') of row 859 (a one-sided
+  step-scaling inequality for a twisted-box coupling) and of (DRIFT)_c of row 975 (for the Renyi-2 entropy), here
+  in the gap variable. It is the entry "No infrared fixed point" of `gap-measured-vectors-max.md` L433.
 
 Soft proof: none for either. A lower bound for the gap of the larger box from the smaller one is not a
 consequence of positivity (the same remark as in 3.4: the two boxes have no common transfer operator), and
 (MONO-z) is false at a first-order point of a positive, local, reflection-positive model. First failing step:
 any lower bound for m(2L) in terms of data of the box L.
 
-### 3.6 The open question of row 1342: does a uniform gap with finite energy force the count? (ARGUED; added 12:11Z, `date -u`)
+### 3.6 The open question of row 1342: does a uniform gap with finite energy force the count? (ARGUED, with one exact count; added 12:11Z, `date -u`)
 
 Row 1342 (`library/gap-seed-audit-fable.md` L379-390) leaves open whether a strictly positive kernel with a uniform
 gap on the cubes must have a seed, and whether a soft version of ST_q keeps its strata. If the answer were yes for
 Wilson by a soft argument, the count half would be free and the target would be the gap alone. I tried to build a
-strictly positive model with a uniform gap and no seed, and to see why the attempts fail. Nothing here is proved.
+strictly positive model with a uniform gap and no seed, and to see why the attempts fail. Nothing here is proved,
+except the integer counts in the third item.
 
 - Independent pieces. A product of independent massive chains along the lattice lines, or of independent massive
   layers, has a uniform gap and a count that is polynomial in the side, so it has a seed at large size (arithmetic:
@@ -233,8 +240,9 @@ strictly positive model with a uniform gap and no seed, and to see why the attem
 - Protected strata. A degeneracy among exponentially many layer patterns survives fluctuations only if a symmetry
   protects it. The symmetries that do this are subsystem symmetries (one independent element per coordinate
   hyperplane; the site model with the four-spin plaquette interaction has them). But such a symmetry acts on every
-  direction at once, time included, so the protected patterns are degenerate VACUA of the transfer operator, not
-  strata at a gap: there is no uniform gap on the full space, and in the symmetric sector the count is normal. The
+  direction at once, time included, so in the ordered regime the protected patterns are degenerate VACUA of the
+  transfer operator, not strata at a gap: there is no uniform gap on the full space, and in the symmetric sector
+  the count is normal (in the disordered regime there is no degeneracy at all). The
   hard constraint of ST_q does something a symmetry does not: it lets one direction be stratified only if the
   others are not, and that exclusion is what turns the strata of the space directions into excited states.
 - Unprotected strata: the soft version of ST_q. Give each unpaired plaquette the weight eps in (0, 1), in four
@@ -254,19 +262,87 @@ strictly positive model with a uniform gap and no seed, and to see why the attem
   (same new colour), and the unflipped pair is satisfied exactly when the two layers have the same colour. So 36
   or 42.
   Reading (ARGUED: the low-eps droplet expansion is not proved to converge). The first term of the fluctuation
-  free energy that sees the pattern is of order eps^36: each pair of adjacent layers of EQUAL colour gains
-  (q - 1)(eps^36 - eps^42) per transverse site. So the layers are coupled ferromagnetically with a strength
+  free energy that sees the pattern is of order eps^36: below it there are only the single flips (24, blind to
+  the pattern), and at 36 the pairs inside a layer are blind too. For a bond across two layers there are q - 1
+  droplets of weight eps^36 if the layers are equal, against q - 2 droplets of weight eps^42 if they differ
+  (the two missing colours are single flips). So each pair of adjacent layers of EQUAL colour gains
+  (q - 1) eps^36 - (q - 2) eps^42 per transverse site. So the layers are coupled ferromagnetically with a strength
   proportional to the transverse volume, the constant pattern is selected, and on boxes with
   (transverse volume) x eps^36 above 1 the soft model is an ordered q-state model with q phases. The strata are
   gone, the pattern entropy is zero, and the q constant slices tunnel at a rate exponentially small in the box:
   the uniform gap on the full space is lost with the strata. (On smaller boxes the strata of ST_q are still there.
   In two dimensions the picture differs: a rectangular droplet of any size costs eps^4, so the expansion is not
-  dilute.) This answers the item "A soft version" of row 1342 (L385-389) at the ARGUED level, with the opposite
-  sign to the guess there: the balance of its (c) does not persist, because the surviving patterns have zero
-  entropy.
+  dilute.) This treats the item "A soft version" of row 1342 (L385-389) at the ARGUED level. Row 1342 says that
+  the balance of its (c) persists if the surviving patterns have positive entropy, and did not find which
+  patterns survive. Here the surviving pattern is the constant one, with zero entropy, so the condition fails.
 
 So each attempt loses either the gap or the strata. This supports the conjecture that finite energy with a uniform
 gap gives a crude count, and proves nothing. Two limits of its use, even if it were proved: finite-energy
 constants are in lattice units, so on the trajectory the bound would have to be scale invariant; and it leaves the
 gap half, which is the selective one. OPEN, as in row 1342.
 
+## 4. Verdict (written 12:15Z, `date -u`)
+
+### 4.1 What was done
+
+1. I read the statement, its consumer and the routes on file (Section 1), and checked 72 mechanism names against
+   the lane before choosing. Every mechanism I could name is on file.
+2. I chose the one kind of hand proof that needs no small number: a sign statement, started at first passage,
+   proved softly (Section 2.5). For each half of the statement I wrote the weakest sign statement and looked for a
+   soft proof (Sections 3.2 to 3.5). There is none: each needs a comparison between a torus and its dilated copy,
+   and positivity of the transfer operators compares only tori with a common period lattice. Each statement is on
+   file under another name or in a sibling variable ((ES-1), (MONO-Delta), (ANOM)/(RATE), (MON'), (DRIFT)_c); I add
+   no new statement to that list.
+3. I took up the one question that row 1342 left open on the count half (Section 3.6): for the soft version of
+   ST_q the strata do not survive (exact droplet counts 24, 36, 42; ARGUED reading), so no strictly positive
+   counterexample to "uniform gap with finite energy gives a crude count" comes from that family.
+
+### 4.2 What is proved, argued, open
+
+- PROVED here (elementary, unchecked): Lemma GC (3.1) and the inequalities of 3.2 (a), (b). Both are on file in
+  substance (Lemma G5 of row 895; Lemma A and Theorem D (a) of row 697). The exact integer counts of 3.6.
+- ARGUED: 3.3 (no count from the gap and ultraviolet data by Lemma GC), 3.4 and 3.5 (no soft proof of the thermal
+  sign, of (MONO-z) or of strict growth of z), 3.6 (independent pieces have a normal count; subsystem symmetries
+  give degenerate vacua, not strata at a gap; the soft ST_q orders).
+- GUIDE: the numbers of 1.3.
+- RECALLED, not checked: the non-monotone thermal coefficient of the three-dimensional O(N) model (3.4), the
+  small-volume gap law of M. Luscher (3.5).
+- OPEN: (M-neutral) for the Wilson trajectory, in both halves: the gap half (Z-UNB), which is the selective one,
+  and the count half (BDD-Delta). No block step, no regularity statement for the vacuum, no finite computation.
+  No impossibility is proved. Nothing in the chain is disproved.
+
+### 4.3 First failing step, in one sentence
+
+Any lower bound for the neutral gap of the box of side 2L, in units of 1/(2L), in terms of data of the box of side
+L at a coupling of order one: the statement that z(L) = L m(L) keeps growing between its first-passage value
+(of order one, where asymptotic freedom gives the sign) and the engine threshold (256 D_0 + 29.64, Corollary Z4).
+This has the form of (MON') of row 859 and (DRIFT)_c of row 975, in the gap variable. It must fail for compact U(1), where z is
+constant, and along the path from Wilson SU(2) to compact U(1) through the fixed-length adjoint Higgs model
+(item A16 of row 1017), which stays inside the class. So it must use that the theory has no matter field.
+
+### 4.4 For the lead
+
+- The two halves are not equally hard to state. The count half asks for any constant at one aspect ratio, and
+  its only counterexample in the class (ST_q) needs a hard constraint (3.6). The gap half carries all the
+  selectivity. A row on the seed can be asked which half it attacks.
+- The sign statements have no soft proof (3.2 to 3.5). I would not queue another search for one. What is left is
+  a quantitative crossing of the band: a block step with checked numbers, or a new inequality that reads the
+  field content.
+- If Section 3.6 is worth a check, it is short: the three counts 24, 36, 42 by hand, and the reading that equal
+  adjacent layers are favoured at order eps^36. Its only consumer is the remark of row 1342 on strictly positive
+  kernels; it does not move the seed.
+- This row took the numeric lock once (holder row1363-fable, one second) and released it.
+
+### 4.5 Credits
+
+K. Wilson (action, transfer operator); K. Osterwalder and E. Seiler, M. Luscher (transfer operator, reflection
+positivity, small-volume expansion); T. Balaban; E. Sussman and L. Alpoge with Claude and Codex as authors of
+their text (the account and its first-passage data; read here only through the lane's rows); G. 't Hooft
+(twists, flux sectors); M. Teper (glueball masses quoted through row 974); S. Sachdev (the thermal coefficient of
+the O(N) model, recalled). In this lane, by the rows that hold them (the model of each row is in its FINISH
+line): row 697 (Lemma A, Theorem D), row 708 ((CAS)), row 720 (Theorems ZD and ZD-c, (MONO-Delta)), row 748
+((ES-1)), row 859 ((MON')), row 895 (Lemma G5), row 931 ((ANOM), (RATE)), row 975 ((DRIFT)), row 1017 (item A16),
+row 1161 (the neutral consumer), row 1259 (Lemma CD), row 1342 (ST_q and its open items), rows 1353 and 1356
+(Corollary BT2, Lemma M1, Corollary M2).
+
+RESULT: Row 1363 (Claude Fable 5.2 max, Mac mini Claude worker 1; author only, checked by no one; one exact integer count of one second under the numeric lock, no other computation; 11:35Z to 12:18Z by date -u). NOT solved: (M-neutral), equivalently s(2w) at most 4/21 for the late Wilson data, is not proved; no block step, no vacuum regularity statement and no finite verified computation is supplied; no impossibility is proved; nothing in the chain is disproved. Attack: the statement was split into its two halves with no small number, the gap half (Z-UNB) and the count half (BDD-Delta) (Theorem ZD-c of row 720, Lemma G5 of row 895), and for each half the weakest sign statement that asymptotic freedom starts at first passage was tested for a soft proof (positivity of the transfer operators, hypercubic symmetry). PROVED here (elementary, unchecked, on file in substance): Lemma GC (a neutral gap m and any count K at the time L/2048 of one box give (M-neutral) at that box when m L is at least 683 (K + 1.66)); the inequality P(u; (2n)^3) at most 8 P(u; n^3) + u C(n) with the doubling Casimir defect C(n) at least 0, so positivity gives the sign of the Casimir term and no bound for it. ARGUED: none of the sign statements (the thermal sign "energy density at least three times the pressure", m(2L) at least m(L)/2, strict growth of z(L) = L m(L)) has a soft proof, because each compares a torus with its dilated copy and positivity relates only tori with a common period lattice; each is on file in another variable ((ES-1), (MONO-Delta), (ANOM)/(RATE), (MON'), (DRIFT)_c). New, on the open item "a soft version" of row 1342: in the stratified model with weight eps per unpaired plaquette, a two-site droplet across two layers has 36 unpaired plaquettes when the layers have equal colour and 42 when they differ (exact count, also by hand; one site 24, two sites in a layer 36), so at order eps^36 the layers align, the strata do not survive on large boxes, and the soft model is an ordered q-state model without a uniform gap on the full space (ARGUED reading); so that family gives no strictly positive counterexample to "uniform gap with finite energy gives a crude count". First failing step: any lower bound for the neutral gap of the box of side 2L in terms of data of the box of side L at a coupling of order one, that is the growth of z(L) from its first-passage value to the engine threshold 256 D_0 + 29.64; it must fail for compact U(1) and along the adjoint-Higgs path to it, so it must use the absence of matter. OPEN: (M-neutral) and (N-phys) in both halves, the mass gap. Output library/gap-mini-seed-fable.md.

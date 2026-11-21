@@ -125,6 +125,11 @@ its class, and the closed arrays of the class h have the mass |C| Z_h; a mean un
 conditioned on closed arrays differ by at most 2 mu(not closed) for a function of modulus at most 1. (d) is
 row 1345 L103. QED
 
+Instance (arithmetic only, with I_1(beta) = e^beta (2 pi beta)^(-1/2) (1 - 3/(8 beta) + ...)): at beta = 300,
+u_beta = 3.8 x 10^(-4) and 6 sqrt(u_beta) = 0.116; with B = 190, q_B = 4.6 x 10^(-10); on a coarse torus 16^4
+(v = 65536), eta = 0.0077. So the hypothesis is not empty, and it needs a large bare coupling: 6 sqrt(u_beta)
+is below 1 only for beta above about 215.
+
 **2.4 Reading (the identities are PROVED above; the physics words are GUIDE).** An array tau with
 d tau = -1 on a coarse cube puts a line of B frustrated fine cubes on the triple crossing of that cube. So
 Z_tau/Z_0 is the expectation of a thin Z_2 monopole loop, the 't Hooft loop, drawn along the coarse dual
@@ -137,7 +142,8 @@ equal) their weight is near zero. So the image of a confining theory under the c
 topological sheet gas: the weight of a sheet depends on its homology class only, up to 2 eta.
 
 **2.5 Lemma RS (in the class (10*) every sheet is rare; PROVED GIVEN row 1351's bound (12) and deletion
-induction, in the form that Theorem E of row 1354 uses).** In a model of the class (10*), with the sheet weights
+induction, in the form that Theorem E of row 1354 uses; the proof uses the moment bound and the factorization
+only, so it holds for the moment form of row 1354 4.4 as well).** In a model of the class (10*), with the sheet weights
 W(S) = E[ prod_{p in S} beta_p prod_{p not in S} alpha_p ] of its expansion, every nonempty cycle S has
 
     | W(S) | <= 31^(-|S|) W(empty),      and W(empty) > 0.
@@ -267,4 +273,60 @@ from its bounding box: Step 2 uses only that a window has at most 4 size(W) link
 connected family of windows of total size k lies in one embedded box, and that the twist functions of two
 boxes that contain a window differ on it by end signs (both have the same plaquette products on the
 smaller box, and a box is simply connected). I use END-D in this form in 3.4.
+
+## Step 4. The step attacked three ways, and where each stops (written 2026-11-21T07:28Z, date -u)
+
+The statement is (BS-BL) of 3.4, or any landing of the trajectory in an end class that a confining theory
+can reach. Each way below is a pairing of a coarse variable with an end class.
+
+**Way 1: centre signs of thin packets (the maps of rows 1345 and 1351), into (10*).** Refuted on the tail
+by Step 2: the sheets that bound are free (Proposition THIN), every model of (10*) has rare sheets (Lemma
+RS), and sign-pointwise changes keep the sheet weights (Corollary 2.6). Into the class with locked signs
+and free classes, row 1345 (11): the centre sums are exact and uniform on the tail (row 1345 (5), (10)),
+and what is left is the Wilson integral on an event of probability 1 - p_T. Stops at: the angular integral,
+unchanged. (New here: the exclusion of (10*); the rest is rows 1345 and 1354.)
+
+**Way 2: straight block links, into END-D.** By Lemma KER the map is exact for every twist. The norm half
+of the landing holds at every coupling and for every compact group: given the rest, a transport of h steps
+is nearly Haar (row 1145 Section 1). The decay half fails without an input: the windows of the image are
+cumulants of functions of the field off the lines (3.2), and the straight grid keeps no spectral
+information (row 1145 L51). The same construction applies to compact U(1) at large coupling and to a
+product with a massless factor, where no landing in END-D exists, because END-D gives the periodic seed
+(row 1353 5.2, 5.3) and those models have none (`parts/gap.md` test table). Stops at: the mixing of the
+fine field at the physical mesh, with a rate. (READ and ARGUED; nothing here is new except the statement
+through Lemma KER.)
+
+**Way 3: averaged block links, one more step past first passage; or one exact step on the plaquette
+cover.** The account's block field at first passage is an averaged block link on the locked side (3.3).
+Its step theorem has the hypothesis g_k <= gamma (row 837 1.1); the number of further steps to a coupling
+of order one is at least 7 e-folds of length (row 1332 6.4), each at a coupling above the ceiling. The one
+exact step on file that removes every raw plaquette is the integration on the plaquette cover (row 1341
+L19-31, with Lemma LF of the Opus lane): it leaves six-staple factors A(beta |v_1 + ... + v_6|)/A(beta)^6 on
+the other links, it does not lower the coupling (the factor is of the order e^(beta |sum of staples|)), and
+row 1341 finds that its residual is not in a class closed under a next step (its L31, and the obstructions
+(24), (27)). Stops at: a class with bounds on both sides of one step at a coupling of order one. This is
+row 1332 6.5 and row 1340's first failing step; the finite statement of one such step is far above 10^15
+exact operations by every sizing on file (rows 1326, 1340, 1353 3.3).
+
+**4.1 The first failing step, as one statement (OPEN; not new).** For the Wilson trajectory at one
+physical mesh: the law of the fine field mixes with one exponential rate, uniformly in the late cutoffs, in
+the form that an end class reads (decaying windows of a block-link image; or the two masses of a cell with
+its surroundings in law). In the block-link form it is (BS-BL). On file it is the open hypothesis (DS-W) of
+row 691 in its in-law forms, the step of row 1332 6.5, and (M-neutral) of row 1353 6.3 when only the two
+masses are asked. I found no way to it that is not on file, and no finite statement of it inside the
+budget. I prove no impossibility.
+
+**4.2 Why the centre does not help above the monopole scale (GUIDE, with the identities of Step 2).** At
+B = 1 the law mu of 2.2 (c) is the law of independent plaquette signs with the fields beta q_p(U), where U
+is drawn from the model with the even weights cosh(beta q_p). Lemma SW (c) then reads: the weight of a
+sheet that bounds a volume V is the mean parity of the thin Z_2 monopoles in V. For small beta the
+monopoles are dense and nearly independent, the parities are unbiased, the sheets are rare, and Wilson is
+in (10*) (row 1354 3.2, beta <= 1/46 by proof). On the tail the monopoles are suppressed (F4), and the
+sheets that bound are free at every block side. Between the two regimes the even model is believed to
+have a bulk transition where its Z_2 monopoles condense (recalled from the physics literature on SO(3)
+and mixed actions, Bhanot and Creutz, Halliday and Schwimmer; not checked, no proof step). So an exact
+reformulation through central variables alone can show rare sheets only on the strong-coupling side of
+that transition. Above it the central variables are locked, the 64 class weights carry the whole content
+of confinement, and they are properties of the angular field at the physical scale. First-passage data
+are on that side.
 

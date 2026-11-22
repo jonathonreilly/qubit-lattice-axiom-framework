@@ -60,3 +60,4 @@ given (P1)-(P4), (H2), (TOT)).
   replaces the supremum by a typical field in the gain step itself (row 1379 (a)); Ding-Huang-Yang is typical in an
   auxiliary environment and selective through the extra intensity N - 2 (row 1379 (b)).
 
+- 05:23Z grep of 46 mechanism terms over the gap files (all on file except 'charge-2'); read results of rows 1141, 1171, 1175, 1177, 1197, 1244; `prior/gap-2don-proofs-read-opus.md` L118-156 (OpenAI's one-annulus engine); `gap-invent-selective-max.md` L99-150 (C1-C8, Lemma WN). Next: kill verdict on C1 and the astra check items 12-17.

@@ -31,6 +31,7 @@ Status log (times by date -u in the same command):
 - 2026-11-22T05:57Z file created with the plan. Nothing proved yet.
 - 06:09Z Section 1 written: sources, registry grep, design. Identity next.
 - 06:10Z Section 2 written: Proposition LIFT, three explicit lifts, Lemma THIN, lab-frame reduction (PROVED, unchecked). (BUB) forms and tests next.
+- 06:18Z Section 3 written: three forms of (BUB), free-field control (run 1 void by a script bug, run 2 passes), Theorem U1 (literal form holds for compact U(1): not selective), Lemma THIN consequences. Weak coupling and Balaban next.
 
 ## 1. Sources read, registry matches, and the design (written 06:09Z by date -u)
 
@@ -202,3 +203,106 @@ not have it at a pinned face (Theorem BD); (iii) in the background-field sense o
 not a move of the block field but a second derivative of the effective action along the classical minimiser.
 So the frame-free content of "the cost of a block move" is the one-link Fisher information J (and one more
 number of the site form). Section 3 states (BUB) in this form.
+
+## 3. (BUB) in three exact forms; the U(1) test decides the literal form (written 06:18Z by date -u)
+
+### 3.1 The reference, and three forms
+
+The row words (BUB) as "variance term minus the excess of the lift cost over the classical curl form >= c > 0".
+By (LIFT-1) this is the same as "cost of the block move under nu <= reference - c". The statement depends on
+the reference. For the one-link move the candidates are these.
+
+- Free blocked form. C_lin is the linear map of link angles that the block map gives at U = 1 (for the
+  decimation D: the sum of the two angles). Q_C(t) = min{ |d t~|^2 : C_lin t~ = t } and q_C = Q_C(e_c) for one
+  coarse link. The minimiser is the **harmonic lift**. For the identity map q = 2(d-1). rho_C = q_C / (2(d-1)).
+- By (2.1) the free value of J for SU(2) Wilson is (beta/4) 2(d-1), so the classical value of the coarse cost is
+  J_cl = (beta/4) q_C. (For compact U(1) with A = beta sum cos F_p: J(mu) = 2(d-1) beta xbar and J_cl = beta q_C.)
+
+  (BUB-lit)   J(nu_beta) <= (beta/4) q_C - c.            Reference: the bare classical form. The row's wording.
+  (BUB-d)     J(nu_beta) <= rho_C J(mu_beta) - c.        Reference: the fine cost, with its plaquette tadpole, times the free ratio.
+  (BUB-lev)   J(nu^(k+1)) <= J(nu^(k)) - c for every level k >= k_0 with J(nu^(k)) >= j_0.   Reference: the level before.
+
+nu^(k) is the law after k block steps of one fixed kind. In d = 4 the free blocked form of an averaging map
+tends to a fixed form (classical scale invariance), so (BUB-lev) needs no free ratio.
+
+### 3.2 Control numbers for the free field (GUIDE grade: floating point, not a proof)
+
+Script `/tmp/row1383/run/gauss_block.py` and `gauss_block2.py` (scratch, not in git), run under the numeric lock
+(holder row1383-fable, acquired 06:12Z, released 06:16Z; 61-65 percent memory free). It computes
+Q^(m)_cc = mean over coarse momenta of the diagonal of (C G C^*)^(-1) for the free U(1) field (G = (d* d + 1e-9)^(-1)),
+for the decimation of ratio m and for a covariant averaging map of ratio m (the coarse variable is the mean
+over the m^(d-1) transverse displacements u of: canonical path to y + u, m straight steps, path back).
+Criteria written before the run: (a) m = 1 gives 2(d-1); (b) decimation: Q <= 2(d-1)/m (Gaussian form of Lemma
+THIN); (c) the averaging coefficients map gradients to coarse gradients to 1e-10.
+
+**Run 1 was wrong and is void.** The criteria passed, but the output contradicted a hand bound: for the
+decimation of ratio 2 each of the 2(d-1) coarse plaquettes at c carries flux 1 through 4 fine plaquettes, so
+q_D >= 2(d-1)/4 = 1.5 in d = 4; run 1 gave 0.28. The Fourier form of d* d was transposed (it annihilated the
+conjugate of a gradient). Run 2 has the corrected form, an assertion that it annihilates gradients, and the
+hand bound as criterion (b'). All criteria pass. One case of run 1 (d = 5, n = 16) passed the 2 GB limit before
+the script stopped itself (2,335 MB); run 2 does not contain it (largest 1,308 MB).
+
+| d | map | m = 1 | m = 2 | m = 4 | note |
+|---|---|---|---|---|---|
+| 4 | decimation | 6 | 2.1227 (coarse sides 4, 6, 8 agree to 4 digits) | 0.898 | <= 6/m; tends to 0 |
+| 4 | averaging | 6 | 8.27 - 8.30 | 6.77 (coarse side 6), 7.09 (side 4) | stays of order one |
+| 5 | decimation | 8 | 3.08 | 1.40 (side 3) | tends to 0 |
+| 5 | averaging | 8 | 19.5 - 19.8 | 36.9 (side 3) | grows about 2 per doubling |
+
+So q_D = 2.1227 and rho_D = 0.3538 in d = 4. The run shows what the classical scaling says: for an averaging
+map the free one-link cost is scale invariant in four dimensions and grows in five; for the decimation it falls
+in every dimension.
+
+### 3.3 Theorem U1: the literal form holds for compact U(1) at every coupling (PROVED, unchecked)
+
+Setting: compact U(1), A = beta sum_p cos F_p, F = d theta, any d >= 2, the torus of 2.1. C is a homomorphism
+block map (an integer matrix, for instance the decimation of any ratio m). A block move is a real constant
+field t on the coarse links; a lift is a real constant field t~ with C t~ = t.
+
+**Statement.** For every beta > 0, every t and every lift t~:
+
+  cost_nu(t) = beta xbar |d t~|^2 - E Var( beta sum_p (d t~)_p sin F_p | C theta ).                            (3.1)
+
+Hence cost_nu(t) <= xbar beta Q_C(t), and with the harmonic lift
+
+  (variance term) - (excess over the classical curl form) = beta Q_C(t) - cost_nu(t) >= beta (1 - xbar) Q_C(t)
+                                                          >= (xbar / (4(d-1))) Q_C(t).                           (3.2)
+
+Proof. The constant field t~ is C-related to t and has divergence zero. Psi = sum_l t~_l d_l A = - beta sum_p
+(d t~)_p sin F_p. By (LIFT-2), E[Psi^2] = - E[t~ Psi] = beta sum_p (d t~)_p^2 E cos F_p = beta xbar |d t~|^2. (LIFT-1)
+gives (3.1). The variance is >= 0, so cost_nu(t) <= beta xbar |d t~|^2 for every lift; take the harmonic one. The
+excess of the lift cost over the classical form beta |d t~|^2 is - beta (1 - xbar) |d t~|^2. For the last bound:
+E[(d_l A)^2] = beta sum over p containing l of E cos F_p = 2(d-1) beta xbar, and (d_l A)^2 <= 2(d-1) beta^2 sum over
+p containing l of sin^2 F_p, so E sin^2 F_p >= xbar / (2(d-1) beta); and 1 - cos F >= (1/2) sin^2 F. QED
+
+**Reading.** In compact U(1) the "tadpole" of the harmonic lift is negative: it is the plaquette tadpole
+- beta (1 - xbar), of order - 1/4 in d = 4 at weak coupling (ARGUED: free equipartition, E F_p^2 = 1/(2 beta)).
+The row's sentence "(U1): both terms vanish for the harmonic lift" is true for the non-compact Gaussian field
+only. For the compact model (BUB-lit) HOLDS at every coupling and in every dimension, with
+c = beta (1 - xbar) q_C > 0. So **(BUB-lit) is not selective. It is a statement about the plaquette tadpole.**
+(BUB-d) removes this tadpole: by (3.1) compact U(1) obeys it with c = 0 at every coupling, and the true margin is
+the variance of the harmonic lift, which is the variance of beta sum (d t~)_p (sin F_p - F_p) given C theta, because the
+linear part beta <d* d t~, theta> is a function of C theta for the harmonic lift (Lagrange condition). It is of order
+1/beta at weak coupling (ARGUED). So (BUB-d) with one c > 0 for all large beta fails for U(1), as a test wants.
+
+### 3.4 SU(2) in the window: the literal form holds for the same reason (GUIDE grade)
+
+For the decimation D, Lemma THIN gives J(nu_beta) <= (3/4) beta xbar in d = 4. The reference is (beta/4) q_D. So
+(BUB-lit) holds with c >= (beta/4)(q_D - 3 xbar) whenever xbar < q_D/3 = 0.7076. The plaquette of SU(2) Wilson is
+about 0.602 at beta = 2.3 and 0.670 at beta = 2.6 (published Monte Carlo values, RECALLED; Section 7 measures
+them again). Then c >= 0.18 at 2.3 and c >= 0.07 at 2.6. This is not a proof: the two inputs are a
+floating-point number (q_D) and a Monte Carlo number (xbar <= 0.7076 for beta <= 2.6; xbar is increasing in beta,
+and the only hand bound I have is xbar <= 4 beta/(4 beta + 1), from Lemma NAB's inequality of row 1018, which is 0.91).
+The mechanism is the plaquette tadpole, as in U(1). No bubble is needed and no bracket is used.
+
+### 3.5 The decimation and the level form: no consumer (PROVED from Lemma THIN, given one massless model)
+
+By Lemma THIN, for the decimation J(nu^(k)) <= J(mu)/2^k in every model whose action has no term with two
+collinear links: SU(2) and compact U(1) in every dimension, Wilson or Villain weights, with site matter. So:
+- "J(nu^(K)) <= j_0 at some level K" holds in massless models (GIVEN the U(1) theorem as the lane holds it, I28).
+  No statement "small one-link Fisher information of the decimated law gives the seed" can be true.
+- (BUB-lev) for the decimation is not selective: the levels fall to zero in every model.
+For an averaging map the free field keeps J of order beta at every level in d = 4 (3.2), so there (BUB-lev)
+is false for the free photon. I have no exact statement for an averaging map at finite coupling: its lifts are
+not divergence-free fields of one link (the paths of different coarse links share fine links), and only the
+kernel lift (2.2) is explicit.

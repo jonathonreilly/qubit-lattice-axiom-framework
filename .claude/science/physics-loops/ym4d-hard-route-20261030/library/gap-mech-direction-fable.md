@@ -3,7 +3,8 @@ lease_until: 2026-11-22T17:05Z
 
 # gap-mech-direction-fable (row 1380): direction for the mechanism programme
 
-Status: IN PROGRESS. Worker pinned at commit 95f5d4e1a, branch claude/ym4d-hard-route. No commit, no push (relay copies).
+Status: DONE 2026-11-22T05:52Z (date -u). Worker pinned at commit 95f5d4e1a, branch claude/ym4d-hard-route. No commit, no push (relay
+copies). Reading order: 3.1 (judgement), 4.4-4.5 (the proved result), 5 (next rows), 6 (report).
 Started 2026-11-22T05:05Z (date -u).
 
 ## 0. Plan and status log
@@ -33,6 +34,8 @@ Status log (each line stamped by date -u in the command that wrote it):
 - 05:41Z Section 3 written: mechanisms M-A to M-F with first statements, tests and verdicts; judgement 3.1. Next: Section 4, Theorem C1 with proofs.
 - 05:42Z Section 4 written: the pick (class A1), Lemma SP, Lemma BR, Theorem C1, Lemma PIN. Next: a control run of the constants, then Section 5.
 - 05:49Z Re-read of Section 3 found one overclaim (A2: 'kappa bounded by b alone' does not follow from Lemma H); corrected with Lemma H' (4.7) and rows 1026, 1034 (found by grep 'conserved current'). Control run 4.8 PASS. Next: Section 5 and the report.
+- 05:52Z Sections 5 (three next rows) and 6 (report) written; two citations corrected (row 1145 (22)-(24); row 1058 removed). Next: re-read of every PROVED item and cited line, then the RESULT line.
+- 05:52Z re-read of the PROVED items against the text: two wording repairs (Lemma H last line; the elementary bound cites Corollary WN2). RESULT written.
 
 ## 1. Inputs read, the target, and the constraints a mechanism must meet
 
@@ -84,7 +87,7 @@ Every mechanism I wrote down before reading was on file. Matches, so that the ne
 | Layer of time-like links as a 3D O(4) model in an SO(4) background | C5 row 1013; rows 1139, 1140 | uniform form false far above the window; typical form OPEN |
 | Remnant colour symmetry of a complete gauge as the rigid group | rows 1041, 1045, 1141; `gap-mini-solve-x-opus.md` L52 | frames; blocked |
 | Adjoint-Higgs Coulomb phase and five dimensions as tests | A16 `gap-compact-rigidity-max.md` L94; row 1011 Section 6 | tests on file (belief grade for A16) |
-| Thermal shift integrated along the coupling | row 1145 (24); (MONO-Delta) `gap-phys-seed.md` L355 | restates the seed at each coupling |
+| Thermal shift integrated along the coupling | row 1145 (22)-(24) and its Section 9; (MONO-Delta) `gap-phys-seed.md` L355 | restates the seed at each coupling |
 | Exact stiffness as direct term minus the best Bogoliubov ratio | row 1244 Lemma 2.1 (F'' = D_K - V_K) | identity; no test flow with the logarithm |
 | Soft Bianchi constraint, plaquette angles | Identity CUBE, Lemma SOFT row 1016 | no consumer |
 | Lab-frame link-end moves, corner twists | C1, Lemma WN row 1013; astra check items 12-13 | **exclusion not established; the fourth-order family identity never written** |
@@ -127,7 +130,8 @@ softness of move i) and kappa = max_i rho_i / min_i rho_i. Then
 Proof. alpha_i gamma_j = (alpha_i gamma_i)^(1/2) (alpha_j gamma_j)^(1/2) (rho_i/rho_j)^(1/2)
 >= kappa^(-1/2) (alpha_i gamma_i)^(1/2) (alpha_j gamma_j)^(1/2), and the same for alpha_j gamma_i. Sum over i, j:
 the left side is at least kappa^(-1/2) (sum_i (alpha_i gamma_i)^(1/2))^2. By (2.1), |S_i|_2 <= (alpha_i gamma_i)^(1/2),
-so the sum is at least sum_i |S_i|_2 >= |Q|_2. Last, |Q|_2 = lambda |h~|_2 >= lambda |[h]|_2. QED
+so sum_i (alpha_i gamma_i)^(1/2) >= sum_i |S_i|_2 >= |Q|_2. Last, |Q|_2 = lambda |h~|_2 >= lambda |[h]|_2, and the
+right side of (2.2) is at least B times the sum. QED
 
 **Reading.** The engine beats the elementary bound only through a hierarchy of softness: moves whose amplitude
 is large against their cost, with ratios spread over many scales. In 2D the moves are spin rotations by a
@@ -249,14 +253,15 @@ every pinned cell, so their brackets are again exact symmetries and reach no twi
 - (U1): the abelian class is mapped into itself with c = 0. (5D): b grows. (AH): a clause of A must exclude
   long-range order of an adjoint section.
 - (NE): a class with a proved step is not the seed. But I cannot write a class. The account controls block
-  actions only while g_k <= gamma (rows 1012, 1058); Proposition NP and Lemma PT bind classes read through
+  actions only while g_k <= gamma (row 1012); Proposition NP and Lemma PT bind classes read through
   finitely many numbers (lead rule W2); Lemma AFF binds one-sample criteria (lead rule CL).
 - Verdict: this is where the problem is. No first exact statement is available to me. Not picked.
 
 ### M-E. Statements that restate the seed (not mechanisms, by the rule)
 
 - The thermal shift along the coupling: log(1 + s_(n, beta)(t)) = int_0^beta d beta' [E^(t) - E^(infinity)](sum_p
-  x_p), since the transfer operator has rank one at beta = 0. On file: row 1145 (24), (MONO-Delta). The path stays
+  x_p), since the transfer operator has rank one at beta = 0. On file: row 1145 (22)-(24) with the derivative
+  identity of its Section 9; (MONO-Delta), `gap-phys-seed.md` L355. The path stays
   at lattice temperature 1/t; with t = 2 w_j this is below the deconfinement point at every beta' <= beta_j. A
   bound on the integrand at each beta' is the seed at each coupling. EQUIVALENT in kind; no progress.
 - The whole-face conditional likelihood at physical time (rows 1367-1377): where the seed chain stopped.
@@ -380,7 +385,7 @@ Last, Q~ = lambda h + (removable), so |Q~|_2 >= lambda |[h]|_2. Insert (I) and (
 **What it says.** Whatever the constants K and B of a port of OpenAI's Proposition 2.2 to corners are, and
 whatever family is used (any number of modes, any supports, any scales), the bound for a twist class [h] is at
 least a fixed multiple of |[h]|_2^2. The elementary bound is also a multiple of |[h]|_2^2 (at most 4 beta
-|[h]|_2^2 by the direct term of Lemma WN's proof; beta xbar |[h]|_2^2 under the hypothesis of Lemma WN (iii)).
+|[h]|_2^2 by the direct term of Lemma WN's proof; at most beta xbar |h|_2^2 under the hypotheses of Corollary WN2).
 |[h]|_2^2 is a sum of site-local terms. So the route can change the constant and nothing else: no logarithm, no
 dependence on the size of the cell, in any dimension. In the language of Lemma H the softness of every reduced
 move lies between fixed numbers. This is the exact form of row 1013's sentence "the family inequality is a
@@ -435,7 +440,7 @@ alpha_i^(1/2) (2 alpha_i^(1/2)) sum_c |f_j(v(c))| |u_j(c)| <= 2 alpha_i D^(1/2) 
 alpha_i gamma_j, by the Cauchy-Schwarz inequality and (c). The inner sum is symmetric in i and j, so it is at most
 (2 D^(1/2)/m) min(alpha_i gamma_j, alpha_j gamma_i). QED
 
-Reading. (a) and (b) hold in 2D with D = 4. (MASS) fails there, because constants are free: that is the global
+Reading. (a) and (b) hold in 2D with D at most 4. (MASS) fails there, because constants are free: that is the global
 symmetry. A local symmetry removes the free part site by site (Lemma BR) and leaves a field with (MASS) (Lemma SP,
 m^2 = 6). Theorem C1 is this lemma for corners, with better constants. For a covariant frame the mass is the
 least covariant energy of an adjoint section per unit norm (row 1141 (2), in units of the stiffness).
@@ -468,3 +473,96 @@ Theorem BD of row 1034):
 
 The step from "no soft family in the classes tried" to "no global continuous symmetry with local field-dependent
 generators exists" is not proved (astra check of row 1016, L207). It is the open classification behind M-A.
+
+## 5. Task (4): the next three rows, each with its decisive outcome
+
+Each row opens with "Moves:" as the rules ask. Models follow the owner's split; the lead decides.
+
+**Row 1. `gap-mech-direction-check-astra62` (cross-provider check; gpt-6.2-astra max).**
+Moves: the standing of C1, the last unwritten item of the 2D port, and the judgement 3.1 that no mechanism with
+an exact first lemma is live for (M-neutral).
+Task: check line by line Section 2 (Lemma H), Section 4 (Lemmas SP, BR, PIN, H'; Theorem C1) and the verdict
+lines of Section 3. Test first: (a) that (2.2) is the form of OpenAI's Proposition 2.2 in the primary text
+(pp. 5-8; I used the lane's digest only); (b) the (5D) verdict on M-C; (c) "false as posed given rho > 0" in M-B;
+(d) each (NE) line.
+Decisive outcome: C1 is closed, and `parts/gap.md` records the 2D port with no open first lemma for the neutral
+target; or the first failing line reopens it.
+
+**Row 2. `gap-selective-5d-sweep-opus` (reading and short proofs; Claude Opus 5.5 high).**
+Moves: the selectivity test of row 1378. The (U1) test lets ultraviolet facts through (M-C; row 1141 (2)).
+Task: for every positive selective statement on the record (row 1141 (2) and (8); Lemma NAB of row 1018; Lemma FR
+of row 1011; Identity CUBE and Lemma SOFT of row 1016; Corollary WN2's rho; Proposition LF and Theorem BD of row
+1034; M-C here; any other in the registry of `parts/gap.md`), say in one line whether its proof uses d = 4
+through a scale-free sum, and whether the statement holds verbatim for SU(2) in five dimensions at weak coupling
+and with an adjoint Higgs factor. No new attack.
+Decisive outcome: the list of selective facts that survive (5D). If the list is empty, the lane holds no
+selective fact that sees the scale, the programme has only M-D, and the lead adds (5D) to the selectivity test.
+If one survives, it is the seed of a mechanism and gets the next proof row.
+
+**Row 3. `gap-short-step-variance-fable` (direction and first statement of M-D; Claude Fable 5.2 high, then a
+cross-check).**
+Moves: M-D, the only form of the engine left (dressed moves), which has no exact first statement.
+Start from: row 1018 (the short step in three forms, O1 and (DEC)), row 1244 (Lemma 2.1, the split F'' = D_K - V_K
+and Proposition 2.3), rows 1026 and 1034 ((SYM), Theorem BD), and Section 4 here.
+Task: for one explicit gauge-covariant block map of ratio 2 and one explicit lift of a block move, write the exact
+identity "cost of the block move under the blocked law = cost of the lift under the Wilson law minus the mean
+conditional variance, given the block field, of the lift's divergence term" (the variance decomposition; the
+second term is the bubble, the excess of the first over the classical curl form is the tadpole of Remark TAD).
+State the one-step inequality (BUB): bubble minus tadpole >= c > 0. Run (U1) (both terms vanish for the harmonic
+lift), (5D) and (AH). Compare at weak coupling with the Ward-Takahashi identification of the marginal term
+that row 1012 quotes from Balaban CMP 109. Then a GUIDE run in the window (beta = 2.3 to 2.6, ratio 2), with the
+pass and fail criteria written first.
+Decisive outcome: (i) the sign of (BUB) in the window. If the measured gain is not positive with margin at some
+coupling, this form of the short step is dead and M-D has no engine form. (ii) If it is positive, (BUB) is one
+inequality between two means of the Wilson law at each coupling: a (K-one) number at every b, read on typical
+fields, selective by construction. Then the lead knows the exact statement the mass gap needs from the band, and
+the owner can decide whether a hand proof or a formal computation is the route. I expect (ii), and I do not see
+a hand proof.
+
+**Lead-level items (no row).** (1) After Row 1, mark C1 closed in `parts/gap.md` and note that C2 serves the flux
+half only. (2) Add (5D) to the selectivity test. (3) The small lemma rho > 0 (astra item 15 of row 1013's check)
+would make C2 false as posed; it is a number in the band at intermediate coupling and I would not queue it.
+
+## 6. Report
+
+**Kind of result.** A direction row. One proved negative result on a quantified class (the row's "equally good
+result"), a judgement, and three rows. No step of the gap chain is proved. Nothing here is checked by another
+model. The control run is GUIDE only.
+
+**PROVED by hand in this session (unchecked).**
+- Lemma H (Section 2): in any engine inequality of the form (2.2) the gain over the elementary bound is at most
+  the square root of the spread of the softness alpha_i/gamma_i of the moves.
+- Lemma H' (4.7): if the move fields obey |f|_2^2 <= gamma/m^2, the gain is at most 2 D^(1/2)/m, for every family.
+- Lemma SP (4.2): the corner graph K_(2,2,2,2) has Laplacian eigenvalues 0, 6, 8.
+- Lemma BR (4.3): the bracket of a link-end field is the bracket of its reduced field plus a removable field.
+- Theorem C1 (4.4): for lab-frame link-end moves, every bound of the form (2.2), with any constants K, B and any
+  family, is at least ((72/7) K + (3/2) B) |[h]|_2^2, and |[h]|_2^2 is a sum of site-local terms. No gain in scale.
+- Lemma PIN (4.5): the bracket classes of bulk lab-frame moves contain no pin twist except gauge changes of the
+  pin, whose cost is zero.
+So candidate C1 of row 1013 is closed without writing its fourth-order identity. It was the item its astra check
+reopened.
+
+**ARGUED (not proved).** Remark TAD; the (U1) and (5D) verdicts on M-C; the cap for class A2 from row 1141 (2);
+the reading in 4.9 (a local symmetry has no soft modes); the remark on collective coordinates in M-F.
+
+**Judgement (Section 3.1).** No mechanism with an exact first lemma is live for (M-neutral). The 2D engines need
+soft symmetric moves. A gauge theory has only local continuous symmetries, for which every parameter is free and
+the rest is stiff. What is left is a renormalization step in the band with dressed moves (M-D), which the two 2D
+papers do not need and do not supply.
+
+**Equivalence rule.** No statement proposed here is claimed to be a sufficient condition for the seed. The (NE)
+lines say where I could not show non-equivalence (M-A's consumer is unwritten; M-B's conclusion is the flux half).
+M-E lists the statements that restate the seed.
+
+**Not done.** I did not re-read OpenAI's Proposition 2.2 in the primary text (digest only). I did not read rows
+1026, 1027, 1034 in full (their RESULT lines and the first lines of `gap-sym-reg.md`). I did not repeat the
+cross-branch search (row 1379 ran it for this programme). No literature search beyond row 1379. M-D has no
+statement. The lemma rho > 0 is open.
+
+**Credits.** OpenAI (the O(n), O(3), O(4) papers: the engine, Proposition 2.2, the form (2.2)); Ding, Huang and
+Yang (arXiv:2611.04908); Balaban; Sussman and Alpoge with Claude and Codex (the account); Durhuus and Frohlich
+(the layer picture, as on file); the lane's rows by Claude Fable, Claude Opus, gpt-6.2-astra and gpt-6-luna named
+at each use: 1011, 1013 (corner formalism, Lemma WN, C1, C2), 1016 (CEN+, MC), 1018, 1026, 1034 ((SYM), BD), 1139,
+1141 ((2), (9)-(13)), 1197 ((GC)), 1244 (tadpole against bubble), 1379 (literature).
+
+RESULT: Row 1380 (Claude Fable 5.2 high, Mac mini worker 1; author, checked by no one; one 1-second control run, GUIDE only; no subagents). Direction for the mechanism programme. (1) Mechanisms: six families listed with first exact statement, tests and verdict (Section 3); judgement: no mechanism with an exact first lemma is live for (M-neutral). The 2D engines need soft symmetric moves; a gauge theory has only local continuous symmetries, whose parameters are all free and whose remainder is stiff. (2)-(3) Picked the one unwritten item of the 2D port, candidate C1 of row 1013 (lab-frame corner twists), and closed it: PROVED by hand, unchecked: Lemma H (the gain of any engine inequality of OpenAI's form is at most the square root of the spread of softness), Lemma H' (a mass m in the cost form caps the gain at 2 D^(1/2)/m), Lemma SP (corner graph K_(2,2,2,2): eigenvalues 0, 6, 8), Lemma BR, Theorem C1 (every bound of that form is at least ((72/7) K + (3/2) B) times a site-local class norm: no gain in scale, for any family and any constants), Lemma PIN (bulk brackets reach no pin twist except gauge changes of the pin). The fourth-order corner identity need not be written. C2 serves the flux half only and is false as posed if rho > 0 (open). The typical-face layer statement passes the U(1) test and fails the five-dimensional test (ARGUED), so the selectivity test should include five dimensions. (4) Next rows: the cross-provider check of this file; a sweep of the record's selective facts against the five-dimensional and adjoint-Higgs tests; the short step as one conditional-variance inequality (BUB) with its sign test in the window. OPEN: every form of the seed, (M-neutral), (W); a first exact statement for the band step with dressed moves (M-D); class A2 for general field-dependent moves and (SYM) for site frames (rows 1034, 1141); rho > 0; the primary text of OpenAI's Proposition 2.2 was not re-read (digest only).

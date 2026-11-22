@@ -2,7 +2,7 @@
 
 ## Repo search
 
-Searched before any derivation with `git -C /Users/jonreilly/Projects/Physics grep -n -i -E ... -- '*.md' '*.tex' | head`; refs were `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in each command.
+Searched before any derivation with `git grep (in the repository checkout) -n -i -E ... -- '*.md' '*.tex' | head`; refs were `origin/main`, `pr/10114`, `pr/10133`, `pr/10134`, and `pr/10141` in each command.
 
 - Terms `typical.{0,24}background|average[d]? background|background.{0,24}average|supremum.{0,24}background`: hits included `origin/main:research/ym4d/library/out-pi.md:380` (Balaban averaged backgrounds), `pr/10114:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md:2515` and repeated snapshots (explicitly “Abelian, flat background, direct ... average”; hence a comparator, not a non-Abelian mechanism), and `pr/10114:.../TSE55.md:494` (“relative O(|curvature(V)|) = O(g_i) on typical backgrounds”; the surrounding claim is an RG estimate for the existence proof, not a proved mass-gap mechanism). Other refs returned duplicate paths because the PR refs share these files.
 - Terms `typical.{0,12}field|typical.{0,12}background|background.{0,12}typical`: `pr/10114:.../agents/ym4d-existence/EXISTENCE.md:4260-4262` says the typical coarse-field size is `≍ g`, while an `(MOM_4)` averaging estimate replaces a displayed supremum form. This is an existence-route estimate; it does not establish the mass gap or show the whole proof closes under the typical-field restriction. `pr/10114:.../agents/ym4d-proof/AUDIT.md:90,138,147` says typical-field-only Ward bounds leave an infrared covariance, and identifies that covariance as the likely point where an IR-freeness claim fails. This is directly relevant evidence of a limitation, not a mechanism.
@@ -105,7 +105,7 @@ A search result for **“Mass Gap of Four-Dimensional Lattice Yang–Mills Theor
 
 #### Outline access note
 
-The index search located the outline’s lines 1379–1386 as the free-curvature calculation and its interacting comparison obligation; these lines are not FINISH row 1379 and are unrelated to this literature-row task. The user-specified outline file `/Users/jonreilly/sa/YM4_sketch_500.tex` was absent at the supplied path (the `/Users/jonreilly/sa` directory does not exist in this environment), so I did not read its lines. No CA-I/II/III lines were needed to evaluate the O(4) and DHY sources. This access limitation is reported rather than inferred away.
+The index search located the outline’s lines 1379–1386 as the free-curvature calculation and its interacting comparison obligation; these lines are not FINISH row 1379 and are unrelated to this literature-row task. The user-specified outline file (the outline file named in the run header, outside this checkout) was absent at the supplied path (that folder is not on this machine), so I did not read its lines. No CA-I/II/III lines were needed to evaluate the O(4) and DHY sources. This access limitation is reported rather than inferred away.
 
 
 RESULT: Found two 2D spin-model mechanisms (O(4) sharp-mass with worst-case pinned stiffness then typical-law comparison; DHY with a typical loop environment); found no post-2026-11-15 qualifying gauge result or new OpenAI math folders; did not read the absent SA outline/CA files or the pre-cutoff one-cube proof.

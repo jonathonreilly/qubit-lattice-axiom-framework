@@ -177,3 +177,184 @@ seed strength: it gives the spectral half of the wall outright. Nothing on file 
 coupling above the high-temperature range. In the inventory's terms: uniform in n by its wording, no proved
 reach on the trajectory, does not see the scale. Not picked.
 
+- 07:06Z Sections 1, 2 and 2.1 to 2.3 written. Two arXiv abstracts fetched into a scratch folder (Austing and
+  Wheater; Krauth and Staudacher). Next: the decision and the quantified negative (Section 3).
+
+## 3. Decision: no route on file reaches (M-neutral). The quantified negative
+
+**Decision.** I pick no fact for an attack. Of the two survivors that check 1384 named, F2 fails the group
+test (Lemma GRP) and has no reach, and F3's statement (A) is a target of seed strength with no proved reach.
+The one statement that is uniform in n, (SV-Z), lies on the small-box side, where there is no seed. Every
+other proved statement with content in the band is lattice-local, an identity or a negative.
+
+**Proposition NEG (the logic is elementary; each input is a cited row; nothing here is a theorem about all
+possible proofs).** Let F be the proved statements of the inventory (F1 to F7) and the entries that row 1382
+swept, as corrected by check 1384. Split F by domain:
+
+- F_uv: F1 and what the account proves. Content at physical sides L <= L_gamma.
+- F_fix: F2. Proved at a fixed lattice side or for n^2 = o(beta) (row 1143, RESULT). On the trajectory
+  beta_j <= B_0 log n_j, so for late j no lattice (n_j, beta_j) at any physical L is in its domain.
+- F_ht: the proved range of (A), beta <= 1/48. Below the trajectory's couplings.
+- F_loc: F4. Lattice-local and selective.
+- F_id: F5, F6, F7. Identities, tests and negatives.
+
+Then:
+
+(a) Domain. For L > L_gamma and late j, the members of F with content at (n_j, beta_j) lie in F_loc and F_id.
+(b) Blindness. Every member of F_loc holds for SU(2) in five dimensions at the same coupling, with changed
+    local counts (check 1384, item by item). Every member of F_id holds for every compact group or is a
+    negative. So a derivation of the seed test at a lattice (n, beta) from F_loc and F_id, by steps that are
+    themselves valid in five dimensions, gives the same test for SU(2) in five dimensions at that beta.
+    Under the premise (P5) that SU(2) in five dimensions has no seed at beta >= beta_5 (belief grade on
+    file: row 1011 Section 6), no such derivation exists at beta >= beta_5.
+(c) Small boxes. For L <= L_gamma the account has content, but the seed fails there: at a fixed lattice by
+    (R1) (PROVED, rows 1143 and 1144, for the periodic test; Lemma FLOOR), and uniformly in the cutoff by the
+    small-volume picture I33 (BELIEF). For the neutral test at a fixed lattice the file has I33 only; see
+    Remark STAB below.
+
+Conclusion. A proof of (M-neutral) that starts from the file needs at least one statement outside F that
+(i) has content at some L > L_gamma for all late cutoffs, and (ii) uses the dimension four in a way that no
+local count gives. The candidates on file for that statement are all OPEN and all name the same step:
+(K-flow) (row 998), M-D with its level form (rows 1380, 1383), the infrared carry (A2) of row 1332, (VIR_K)
+with Theorem TR (row 708), (NOCRIT) with a rate (rows 709, 978), (LEV_K) (row 708).
+
+**Class covered.** Conjunctions of proved statements on file, combined by inferences that hold in five
+dimensions. **Not covered:** a new statement; an inference that uses d = 4 through a sum over scales (that is
+what a mechanism is); the premise (P5) itself.
+
+**How wide the uncovered band is (numbers on file; the one-loop conversion is GUIDE).** Every first-passage
+coupling is above 5 (check 1331). The window is 2.3 to 2.6. At the one-loop rate, 3 pi^2/11 = 2.69 per unit
+of beta, the couplings from 5 down to 2.6 are 6.5 e-folds of scale, 9.3 doublings; the true first-passage
+coupling 4/gamma^2 is far larger. The file's only proved carry of a seed along the coupling is Lemma CLIMB
+of row 1332: at most 8.7e-9/n^4 in total, below 1e-12 at the window size (HOLDS in check 1335 as a bound for
+the specified estimate). So the proved cover of the band is a fraction below 1e-12.
+
+**Remark STAB (a filter that follows from (R1); the periodic form is PROVED GIVEN row 1143 (10); the neutral
+form is at belief grade, one attempt failed).** Let H(n, beta) be any hypothesis that implies the seed test on the lattice (n, beta). Then
+for each n the set of beta with H(n, beta) is bounded above: by K n^2/15 for the periodic test (row 1143
+(10)). So a hypothesis that stays true when beta grows at fixed n is false on every large lattice. A first
+lemma of a mechanism must contain an upper bound on an inverse coupling at the box scale. Roughness bounds,
+small-field statements and plaquette concentration improve with beta and cannot be that hypothesis alone.
+The account gives upper bounds on the running inverse coupling only while it is at least 1/gamma^2.
+Neutral form: NOT proved here. Row 1143 (10) rules out the periodic seed for n^2 = o(beta) "even if there
+is a positive gap inside the neutral sector" (its Section 5, last line). For the neutral test at a fixed
+lattice the file has the belief I33 only (neutral gap times side of order beta^(-1/3)). I tried the thin
+trial vector F = P_1^2 - <P_1^2>, P_1 a straight Polyakov line, with row 1143's ribbon bound
+<|P_1(1) - P_1(0)|^2> <= 2 K n/beta. It FAILS: in the cube vacuum the holonomy radius is of order
+beta^(-1/3) (I33), so the variance of P_1^2 is of order beta^(-4/3), and the quotient grows like
+n beta^(1/3). The ribbon bound is dominated by the ultraviolet noise of the thin line, not by the constant
+mode. A proof needs a line averaged over the transverse positions and a lower bound on the variance of
+its square in the vacuum. That is open, and I did not attempt it: the filter (t4) below uses the periodic
+form, and for the neutral test it is at belief grade.
+
+**Blind candidates of this session that are on file (so that the next row does not redo them).**
+
+| What I derived before reading | On file at | Standing there |
+|---|---|---|
+| The seed as a curve in the (log n, beta) plane; a carry with slack in the exponent suffices | row 1332 Theorem T, (A2) and (A3); check 1335 | PROVED GIVEN (A1), (A2), (A3); (A2) OPEN |
+| Transport of the thermal sum along beta at a fixed box, from a bound on the beta-derivative of each level (Hellmann-Feynman; the thermal trace anomaly) | (VIR_K) and Theorem TR, row 708 (`gap-mid-max.md` Section 4); (SUM-RULE); M-E of row 1380; row 998 item 16 | three ways failed; blocked-equivalent (registry RB) |
+| Monotone doubling defect along the scale; a c-theorem on the torus | (MONO-Delta), `gap-phys-seed.md` L355; row 1143 (13) at fixed lattice | OPEN; false for the ordered Ising model as a class statement (`gap-phys-seed.md` L371-373) |
+| Migdal-Kadanoff or hierarchical step as a template (the curvature gain of a convolution on S^3 times the classical factor 2^(d-4)) | Proposition G1 (row 1128); row 1025 (Tomboulis's line: Proposition BR, Lemma FAC, Proposition SIGN, Identity MOV) | bond moving has no sign on the twist quotient; the line reads the flux half only |
+| A seed on a thin twisted torus and continuation in its width | `gap-ac-lat.md`; rows on twisted boxes (35 files) | Lemma FLOOR; I add in Section 4, test (t2), that the twisted thin gap is present in five dimensions too (ARGUED) |
+| A consumer for a small mean one-link Fisher information of a blocked law | open item of row 1383; lead rule CL (Lemma AFF, Example PROD); Lemma PT | a one-sample mean is not sufficient without a uniqueness clause; see Remark FI in Section 4 |
+
+- 07:12Z Section 3 written. Read rows 924, 925 ((UNIV-K)) and the RESULT of row 1025. Next: Section 4, the
+  kind of new input, then the rows.
+
+## 4. What kind of new input is needed
+
+### 4.1 The exact place
+
+Theorem T of row 1332 (HOLDS in check 1335) has three hypotheses beside one finite inequality: (A1) the
+ultraviolet carry, (A2) the infrared carry, (A3) their rate fit. (A1) is on the side where the account's
+tools work. (A2) is the band. The new input is an engine for (A2), or for a step of the same content in a
+renormalized variable ((K-flow)). In one line:
+
+  (STEP) for every coupling b at or above a window value b_w: a seed on the box of side N at the coupling b
+  gives a seed on a box of side at most 2N at the coupling b + delta, with one delta > (log 2)/4.0 = 0.173.
+
+The one-loop value is delta = (11/(3 pi^2)) log 2 = 0.2575 (GUIDE; the slack 4.0 against 2.69 is row 1332's
+(A3) at one loop). (STEP) above the first-passage coupling follows from the seed (row 1332, consistency
+remark), so there it is equivalent to the target and proposing it again is no progress. I do not propose it.
+I use it to say what an engine must deliver.
+
+### 4.2 Remark PAIR: apply the five-dimensional test to the step, not to each fact (ARGUED)
+
+Row 1382 asked each selective fact to see the dimension, and found none (check 1384 found F2). A mechanism
+need not contain such a fact. Asymptotic freedom itself is a pair:
+
+- a gain per scale that reads the group and not the dimension (for example Proposition G1 of row 1128: the
+  convolution of two class weights on S^3 loses stiffness by a curvature term; zero for U(1));
+- a carry between scales that reads the dimension and not the group: the classical factor 2^(d-4) on the
+  inverse coupling (check 1384: "the classical constant-field twist scaling also sees the dimension and is
+  shared by an abelian field").
+
+Together: x(2L) = 2^(d-4) x(L) - g_G. In d = 4 the gains add up to a logarithm. In d = 5 the inverse coupling
+doubles and no gain accumulates. For U(1) g_G = 0. So the pair passes both tests and neither member does.
+The Migdal-Kadanoff recursion is this pair made exact on a hierarchical lattice. On the true lattice the
+carry (bond moving) is not exact and has no sign on the quantities the chain reads (row 1025, Proposition
+SIGN and Identity MOV). **So the missing object is the carry, not the gain.** The lane holds several proved
+local gains (G1, NAB, FR, row 1141 (2), (8)) and one exact carry identity (Proposition LIFT of row 1383). It
+holds no inequality that passes a local gain through an exact carry at a coupling of order one.
+
+### 4.3 Requirements on an engine, each with its source
+
+| # | Requirement | Source |
+|---|---|---|
+| (a) | Content at L > L_gamma for all late cutoffs: an all-coupling statement on bare lattices, or a step in a renormalized variable that starts from first-passage data | Proposition NEG (a); lead rule W2 |
+| (b) | Uses d = 4 through the exact classical factor of a carry over all scales of the band, not through local counts | Remark PAIR; rows 1382, 1384 |
+| (c) | Zero gain for compact U(1); fails at a named line for frozen Q_8 and 2T, for a product with a massless factor, for the adjoint Higgs | rows 1141, 1378, 1380; `parts/gap.md` test table |
+| (d) | Group test: the same statement makes sense, and is believed, for SU(3). It may not rest on dim G = 3 | Lemma GRP (new here) |
+| (e) | Its hypothesis fails when beta grows at a fixed lattice: it contains an upper bound on an inverse coupling at the box scale | Remark STAB; row 1143 (10); Lemma FLOOR |
+| (f) | Reads typical Wilson fields. No supremum over pins, tilts, coupling fields or backgrounds | rows 977, 996, 1011, 1014, 1139 |
+| (g) | If it is an engine of the 2D kind: a family of moves with a spread of softness (Lemma H). Not lab-frame moves (Theorem C1). Not pin-measurable site frames (Theorem BD) | rows 1034, 1380, 1381 |
+| (h) | Rate: a gain per doubling of at least 0.173 in beta, at every coupling of the band | row 1332 (A3), GUIDE |
+| (i) | If it ends in a statement about a blocked law: a quasi-locality clause for the blocked specification, not only a mean | Remark FI below; lead rule CL; row 1332 Proposition CH |
+
+**Remark FI (elementary; PROVED here by a three-line example, unchecked; of the kind of Example PROD of rule
+CL and of the two-level models of row 1332).** "A small one-link Fisher information gives a seed" is false
+in the class of gauge-invariant hypercubic families with a reflection-positive transfer matrix in every
+direction, even with the supremum of the score in place of its mean. Example: Z(Lambda) = c_1^|Lambda|
+Z_(beta_1)(Lambda) + c_2^|Lambda| Z_(beta_2)(Lambda), two Wilson SU(2) models at small couplings beta_1 not
+equal to beta_2, with c_1, c_2 chosen so that the two bulk free energies agree. This is the gauge field with
+one global label. Its transfer matrix in each direction is the direct sum of the two, so it is reflection
+positive. Its law on a torus is a mixture with density f = sum of a_i exp(beta_i S). The score of a link is
+sum of w_i(U) beta_i grad_l S with weights w_i in [0, 1] of sum 1, so its norm is at most 6 max(beta_1,
+beta_2) at every configuration. The two top eigenvalues differ by a factor that tends to 1 as the box grows
+(each model has a gap, so the finite-size corrections of its free energy are exponentially small). Both
+block vacua are centre-neutral. So the neutral thermal sum at the test time tends to at least 1 and the
+seed fails at every large size. Consequence for row 1383's
+open item: a consumer for the level form of M-D must take a clause that excludes a global label, that is,
+quasi-locality of the blocked specification. In Dobrushin's form that clause is a supremum over fields of
+mixed second derivatives of the blocked action. The end-class form on file is row 1332 Proposition CH.
+
+### 4.4 The three kinds of input that could meet (a) to (i), and my judgement
+
+- **K-I, an exact positivity or monotonicity theorem for the carry.** A proof that an exact block step of
+  ratio 2 moves a named typical-field stiffness by the classical factor at most, so that a proved local gain
+  survives. It is the gauge analogue of the 2D bracket identity. Nothing on file or in the literature read
+  (rows 1012, 1379) has this form. The nearest objects: Proposition LIFT with (BUB) (row 1383; the literal
+  form is not selective, the level form has no statement for an averaging map); Tomboulis's bracket (row
+  1025; no sign).
+- **K-II, a rigorous renormalization step at an effective coupling of order one.** Balaban's method without
+  a small coupling. This is the core of the open problem. No tool on file.
+- **K-III, a verified computation.** Row 1326 (check 1331): no statement on file is both finite and
+  sufficient, and the cost of the smallest instance is out of reach. It needs (A1) and (A2) first.
+
+I found no candidate of kind K-I in this session. Every statement I derived blind is on file (table of
+Section 3). I judge the programme to have no first lemma to attack in the band.
+
+### 4.5 Five cheap tests to run on any future candidate before a proof row (the filter)
+
+- (t1) Compact U(1), d = 4, weak coupling: the gain must be zero at a named line.
+- (t2) SU(2), d = 5, weak coupling, applied to the step (Remark PAIR). Example of a failure (ARGUED): a
+  seed on a thin torus with a centre twist in its two short directions. The twist leaves no constant mode,
+  so the lowest level is of order pi over the short side at tree level. The same holds on a twisted
+  two-torus times R^3 in five dimensions. So the twisted gap is kinematic, and all selectivity would have
+  to come from the continuation in the width, which is the band again.
+- (t3) Group test, SU(3) (Lemma GRP).
+- (t4) Remark STAB: let beta grow at a fixed lattice. If the hypothesis survives, the candidate is dead
+  (PROVED GIVEN row 1143 (10) for the periodic test; belief grade for the neutral test).
+- (t5) Equivalence (rule of 2026-11-22): above the first-passage coupling (STEP) is the target. A candidate
+  must name the method that proves it, not the statement.
+

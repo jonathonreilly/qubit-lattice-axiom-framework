@@ -32,6 +32,7 @@ Status log (each line stamped by date -u in the command that wrote it):
 - 05:36Z Sections 1.3 and 2 written (Lemma H). Next: Section 3, the mechanisms with first statements and tests.
 - 05:41Z Section 3 written: mechanisms M-A to M-F with first statements, tests and verdicts; judgement 3.1. Next: Section 4, Theorem C1 with proofs.
 - 05:42Z Section 4 written: the pick (class A1), Lemma SP, Lemma BR, Theorem C1, Lemma PIN. Next: a control run of the constants, then Section 5.
+- 05:49Z Re-read of Section 3 found one overclaim (A2: 'kappa bounded by b alone' does not follow from Lemma H); corrected with Lemma H' (4.7) and rows 1026, 1034 (found by grep 'conserved current'). Control run 4.8 PASS. Next: Section 5 and the report.
 
 ## 1. Inputs read, the target, and the constraints a mechanism must meet
 
@@ -162,11 +163,15 @@ under the Wilson law) or supremum. (NE) is the rule of 2026-11-22.
     bound. **Closed in Section 4 (Theorem C1, Lemma PIN): the softness has no spread; no pin twist is reached.**
   - A2, covariant one-colour moves along a field-built axis (C7, C8 of row 1013; (N1)). Reads typical. On file:
     row 1141 (2), (9)-(13): on typical Wilson cells in the window every adjoint section has covariant energy at
-    least c/(1 + b + ...) per unit norm and every tree transport has a mass-like defect. In the language of
-    Section 2: softness at most (1 + b)/c, so kappa is bounded by a function of b alone and by Lemma H the gain
-    is bounded independently of the cell (GIVEN row 1141 (2), unchecked, and given that the port has the form
-    (2.2); ARGUED for the second point). Open on the record: "a general field-dependent frame whose Jacobian
-    cancels the signed defect" (row 1141).
+    least c/(1 + b + (log R)^(1/2)) per unit norm, and every tree transport has a mass-like defect. Rows 1026 and
+    1034 (Claude Fable, unchecked) hold the exact criterion: a curl bound needs a conserved current j - d of a
+    local frame ((SYM)); link frames have it and change no bound (Proposition LF); for every pin-measurable
+    site frame the cost of a boundary rotation is not a curl form off reducible pins (Theorem BD). In the
+    language of Section 2 a mass m in the cost form caps the gain at a multiple of 1/m (Lemma H' in 4.7). With
+    row 1141 (2) the cap is of order (1 + b + (log R)^(1/2))^(1/2): it does not depend on the family, but row
+    1141's bound lets it grow like (log R)^(1/4), so this alone does not close A2 (GIVEN row 1141 (2), unchecked;
+    that the engine's cost for a section is its covariant energy is ARGUED). Open on the record: "a general
+    field-dependent frame whose Jacobian cancels the signed defect" (row 1141), and (SYM) for site frames.
   - A3, dressed moves: a translation of a block-scale mode together with the response of the finer modes. This
     is row 1244's conclusion ("a 4D step of the Jensen kind must carry the fluctuation response of an RG step").
     Remark TAD below says why. No exact statement exists outside the account's small-field region.
@@ -175,8 +180,8 @@ under the Wilson law) or supremum. (NE) is the rule of 2026-11-22.
 - (NE): the engine's output is a twist cost of a pinned cell. I cannot show that a pin-twist bound is not
   equivalent to the seed, because no consumer from a pin-twist bound to (M-neutral) is written (row 1141 names
   this gap as (L3)).
-- Verdict: A1 dead (PROVED here). A2 blocked in the window by row 1141. A3 is the only form left, and it is not
-  a one-scale statement: it is M-D below.
+- Verdict: A1 dead (PROVED here). A2 blocked for pin twists by Theorem BD of row 1034 and in the window by row
+  1141, not closed as a class. A3 is not a one-scale statement: it is M-D below.
 
 **Remark TAD (why undressed moves are never soft on typical fields; ARGUED, the content is rows 1011 7.3, 1141 (2)
 and 1244).** Let lambda be a Lie-algebra field of one colour in the smoothest available gauge of a typical
@@ -413,6 +418,53 @@ here it is.
 | Class of moves | Standing | By |
 |---|---|---|
 | A1 lab-frame link-end moves, any family, any port of the form (2.2) | CLOSED: no gain in scale; no pin twist reached | Theorem C1, Lemma PIN (PROVED here, unchecked) |
-| A2 one-colour covariant moves along sections or tree transports | blocked in the window | row 1141 (2), (9)-(13) (PROVED by gpt-6.2-astra, unchecked) with Lemma H |
-| A2 general field-dependent moves with Jacobian one | open as a class; Remark TAD argues the first-order cost is mass-like | row 1141's open item |
+| A2 one-colour covariant moves along site frames, sections or tree transports | blocked: no curl form for a pin-measurable site frame at a pinned face; mass-like defects in the window; gain capped by Lemma H' | row 1034 Theorem BD, Corollary P (Claude Fable, unchecked); row 1141 (2), (9)-(13) (gpt-6.2-astra, unchecked) |
+| A2 general field-dependent moves with Jacobian one | open as a class; (SYM) for site frames NOT DECIDED (row 1034); Remark TAD argues the first-order cost is mass-like | rows 1034, 1141 |
 | A3 dressed moves | not a one-scale statement; needs block actions in the band | row 1244; M-D |
+
+### 4.7 Lemma H' (a mass in the cost form caps the gain; PROVED, unchecked)
+
+Setting of Section 2. Assume in addition: (a) each cell c has a vertex v(c) with |S_i(c)| <= |f_i(v(c))| |u_i(c)|,
+and each vertex is v(c) for at most D cells; (b) |u_i(c)| <= 2 |f_i|_inf for every cell; (c) (MASS) the move fields
+satisfy |f_i|_2^2 <= gamma_i / m^2 for one m > 0. Then
+
+  sum over i, j of min(alpha_i gamma_j, alpha_j gamma_i) >= (m / (2 D^(1/2))) |Q|_2^2,   so   Y >= (m B / (2 D^(1/2))) |[h]|_2^2.
+
+Proof. |Q|_2^2 <= sum over i, j of sum_c |S_i(c)| |S_j(c)|. By (a) and (b) the inner sum is at most
+alpha_i^(1/2) (2 alpha_i^(1/2)) sum_c |f_j(v(c))| |u_j(c)| <= 2 alpha_i D^(1/2) |f_j|_2 gamma_j^(1/2) <= (2 D^(1/2)/m)
+alpha_i gamma_j, by the Cauchy-Schwarz inequality and (c). The inner sum is symmetric in i and j, so it is at most
+(2 D^(1/2)/m) min(alpha_i gamma_j, alpha_j gamma_i). QED
+
+Reading. (a) and (b) hold in 2D with D = 4. (MASS) fails there, because constants are free: that is the global
+symmetry. A local symmetry removes the free part site by site (Lemma BR) and leaves a field with (MASS) (Lemma SP,
+m^2 = 6). Theorem C1 is this lemma for corners, with better constants. For a covariant frame the mass is the
+least covariant energy of an adjoint section per unit norm (row 1141 (2), in units of the stiffness).
+Lemma H (Section 2) is the weaker statement that needs no mass.
+
+### 4.8 Control run (GUIDE only; it decides nothing)
+
+Run 2026-11-22 under the numeric lock (holder row1380-fable, acquired and released; 62 percent memory free
+before the run; 1 second; 34 MB). Script and output are in the scratch folder of this session, not in git.
+Pass criteria written in the script before the run: (a) the eigenvalues of the Laplacian of K_(2,2,2,2) are
+0, 6 (x4), 8 (x3); (b) the identity of Lemma BR to 1e-10 relative, and g = 0 on pinned link-ends; (c) (I) and
+(II) of Theorem C1 on random families (1 to 6 sites, 1 to 5 modes, amplitudes spread over four decades, large
+gauge parts, sparse supports, pinned link-ends with probability 0, 0.2 or 0.5).
+Result: PASS. (a) 0, 6, 6, 6, 6, 8, 8, 8. (b) largest relative defect 2.7e-16; g on pinned ends 3.5e-17.
+(c) 3,956 families; the largest ratio of the two sides was 0.209 for (I) and 0.062 for (II) (both must be at
+most 1). So the constants 2/3 and 7/72 are not sharp. The run cannot prove the inequalities; the proofs are 4.2
+to 4.4.
+
+### 4.9 Where Section 4 sits against rows 1026 and 1034
+
+Rows 1026 and 1034 treat covariant frames: the cost of a frame move is a curl form if and only if a current
+j - d is conserved with a local potential ((SYM), Proposition CURL). Section 4 treats the remaining case that
+their check left open, the lab-frame class of row 1013, where the moving group is the gauge group itself with
+link-end parameters. The common reading (ARGUED; the proved parts are Theorem C1, Lemma PIN, and Proposition LF,
+Theorem BD of row 1034):
+
+  a soft family of undressed moves is the local form of a continuous symmetry that is global and not local.
+  The Wilson measure has local continuous symmetries (the gauge group; the staple rotations of Lemma MC), and
+  for them every parameter is exactly free and the rest is uniformly stiff. A local symmetry has no soft modes.
+
+The step from "no soft family in the classes tried" to "no global continuous symmetry with local field-dependent
+generators exists" is not proved (astra check of row 1016, L207). It is the open classification behind M-A.

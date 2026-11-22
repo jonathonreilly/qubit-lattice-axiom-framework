@@ -61,3 +61,4 @@ given (P1)-(P4), (H2), (TOT)).
   auxiliary environment and selective through the extra intensity N - 2 (row 1379 (b)).
 
 - 05:23Z grep of 46 mechanism terms over the gap files (all on file except 'charge-2'); read results of rows 1141, 1171, 1175, 1177, 1197, 1244; `prior/gap-2don-proofs-read-opus.md` L118-156 (OpenAI's one-annulus engine); `gap-invent-selective-max.md` L99-150 (C1-C8, Lemma WN). Next: kill verdict on C1 and the astra check items 12-17.
+- 05:33Z read: C1's kill verdict (`gap-invent-selective-max.md` L152-232) and astra check items 11-18 (`gap-invent-selective-check-astra.md` L50-75): C1 and C2 are open again, the fourth-order family identity was never written. Checked 14 more terms (remnant symmetry, Coulomb confinement: rows 1041, 1045, 1141 and `gap-mini-solve-x-opus.md` L52 hold the frame readings). Next: where the seed chain stopped (rows 1375-1377).

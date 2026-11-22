@@ -149,19 +149,19 @@ rows 1332 and 1335 (RESULT parts, for Theorem T), `library/gap-mech-direction2-f
 | C2 transport along beta | (VIR_K), Theorem TR, row 708 (`gap-mid-max.md` Section 4) | a matrix-element bound, open in the band |
 | Thermal and Casimir form (1.1); the beta-integral of the plaquette shift | `gap-loop-eq-opus.md` (Lemma 3.1; delta = 48 a^4 times the integrated shift); Remark RAD of row 1390; row 1283 (7) | identities; no bound at order-one coupling |
 | Route COVER, Lemma COV (a), (b): swap sectors are covering tori, with the order | row 1131 (`gap-council-prob-astra.md` L26, L68: two sheets, Z_tau = Z(B'), Z_0 = Z(B)^2); sheared tori and Lemma SHIFT (row 962, `gap-constraints-max.md` L185-198, 7.4); Lemma FR and I9 of row 1066 (`gap-outside-box-max.md` L113-120, L190) | row 1131: odd winding has probability tending to 1 on the fine trajectory, its bound carries no information; row 1066: "the same operators T_B, read on sectors"; "changes a constant, not the crux" |
-| COV (e), the spacetime group of the box as a source of sectors | `gap-mini-solve-k-fable.md` L52, L72 (row 1190 item 3) | identities on file; "does the bracket of this group give a gain" left unanswered. See 3.2 |
+| COV (e), the spacetime group of the box as a source of sectors | row 1201 (`gap-mini-solve-k-fable.md` L52, L68-76: candidate 11, its Lemma G1); row 962 Lemma SHIFT; row 1190 item 3 | row 1201 posed the question "does the bracket of this group give a gain" and answered it: no stiffness (ARGUED), "the free Maxwell field passes every step", "nothing here reads the group SU(2)". See 3.2 |
 | C4 Lee-Yang in plaquette or centre-breaking fields | I17 of row 1066, B9 of row 669 ((LY), (M6)), `gap-brainstorm2-max.md` items 7, 40 | not selective; fails |
 | C6 loop equations and bootstrap certificates | `gap-loop-eq-opus.md`: SU(2) loop equations in Ward form; Proposition VB (volume blindness) | local loop equations with reflection positivity cannot bound the finite-size shifts |
 | C7 Bakry-Emery under submersions, O'Neill, Singer | F1 of `gap-afield-a-max.md` L336, L377 (Lott, math/0211065); idea 18 of `gap-brainstorm2-max.md` L223; row 957 | a ceiling; curvature fails at typical fields at beta 2.3; requirement (f) of row 1386 forbids a worst case |
 | C8 thin twisted torus, Higgs axis | `gap-ac-lat.md`; example under (t2) of row 1386; I17 (fundamental Higgs) | the twisted gap is kinematic; the continuation in the width is the band |
 
-**3.2 The one question the file left open that the blind route touches** (row 1190 item 3: does the
-non-abelian symmetry group of the box give a gain?). Answer by the filter, ARGUED: no. Every inequality of
-Lemma COV, and every inequality among partition functions of flat tori glued by a lattice symmetry or a
-replica permutation that follows from positivity of the transfer matrices, holds for every
-reflection-positive hypercubic law, compact U(1) at weak coupling included. So it fails (t1) at its first
-line: it has no line where the group enters. It also fails requirement (b): its only dimension input is the
-index 2^(d/2) of a similarity step. I do not keep it.
+**3.2 The symmetry group of the box (correction).** I first wrote that row 1190 item 3 left open whether
+the non-abelian symmetry group of the box gives a gain. That was wrong: the line I read (L52 of
+`gap-mini-solve-k-fable.md`) is row 1201's table of candidates, and row 1201 answers the question in its own
+Section 3 (no stiffness; the free Maxwell field passes every step). The same verdict holds for the replica
+swap of Lemma COV, by the same argument: every such inequality follows from positivity of the transfer
+matrices and holds for every reflection-positive hypercubic law. It fails (t1) at its first line and
+requirement (b). I do not keep it.
 
 **3.3 Requirement (b) and Remark PAIR against the blind pass.** My blind table agrees with Remark PAIR: C3
 is the only class with both inputs, and it stops where row 1386 says, at a carry with a sign. The blind pass
@@ -198,8 +198,8 @@ Route COVER is on file (row 1131, row 962, row 1066). The alternate C7 is on fil
 Correction recorded: Section 2.1 (c) first printed "x/(1+x) <= r". That bound is wrong; 2.1 (c) now carries
 the corrected bound. Nothing else used it.
 
-**4.3 Remark TORNEG (elementary; PROVED here, unchecked). An answer to the question left open at row 1190
-item 3 (`gap-mini-solve-k-fable.md` L52: does the symmetry group of the box give a gain?).**
+**4.3 Remark TORNEG (elementary; PROVED here, unchecked; ON FILE in substance: row 1201, Lemma G1 and its
+verdict "the free Maxwell field passes every step"). It only adds an explicit number for a scalar.**
 Let H be these properties of a lattice law on Z^4: invariance under the hypercubic group and translations,
 reflection positivity for every site and link reflection, and a positive self-adjoint transfer matrix on
 every slice. Every inequality among partition functions of quotient tori, glued by any lattice symmetry or
@@ -211,6 +211,7 @@ the box of side n whose sector inequalities all hold and whose seed fails at tha
 inequalities of the box group contain no gain: a gain needs an input that this scalar does not have.
 Limits: this is a statement about derivations from H alone. It says nothing about a derivation that adds a
 Wilson-specific input. It does not use the gauge group and is of the same kind as Lemma FR of row 1066.
+It is not a new result: row 1201 reached the same verdict with the free Maxwell field.
 
 **4.4 What Phase 1 to 3 establish together.** A fourth blind direction pass (after rows 1380, 1386, 1390)
 derived nine classes of crossing from the target alone. Each is on file with a first failing step. The
@@ -221,8 +222,7 @@ order one. I have no candidate for it. Nothing here moves (M-neutral).
 
 **Row 1. `gap-band-fresh-check-astra62` (cross-provider check of this file; short).**
 Check, in order: (i) each line of the tables in 3.1 and 3.4: is the blind item really the cited on-file
-item, and is the finding quoted right; (ii) Remark TORNEG (4.3), including whether row 1190 item 3 asked a
-different question; (iii) the corrected bound in 4.2; (iv) the claims (F1), (F2) of 1.2 against Proposition CH
+item, and is the finding quoted right; (ii) Remark TORNEG (4.3) against row 1201 Section 3; (iii) the corrected bound in 4.2; (iv) the claims (F1), (F2) of 1.2 against Proposition CH
 and Corollary S3.
 Decisive outcomes: if one blind item is not on file, that item is the candidate, and it goes through the
 filter (t1) to (t5) before any proof row. If all lines hold, four blind passes (rows 1380, 1386, 1390, 1402)
@@ -247,11 +247,13 @@ carries.
 - **Verdict.** No new band direction. The first-principles pass produced nine classes of crossing and one
   route with an exact first lemma (COVER). All are on file, each with its first failing step. Route COVER is a
   rewriting of the seed and fails the filter. (M-neutral) is not moved; nothing on file is disproved.
-- **PROVED here (elementary, unchecked):** the bound x/(1+x+x^2) <= r <= x of 4.2; Remark TORNEG (4.3).
+- **PROVED here (elementary, unchecked):** the bound x/(1+x+x^2) <= r <= x of 4.2; Remark TORNEG (4.3), which
+  is on file in substance (row 1201).
 - **ARGUED:** all of Section 1; 3.2; 3.3.
-- **Error of mine, corrected in place:** the first lower bound in Lemma COV (c).
+- **Errors of mine, corrected in place:** the first lower bound in Lemma COV (c); the claim that row 1190
+  item 3 left a question open (row 1201 answered it; found on re-reading the cited lines).
 - **Read:** GOAL.md; FINISH.md lines 1-84, 299-362; rows 1402 and 1367 in full; RESULT parts of rows 1379 to
-  1399 and 1401, of rows 1332, 1335, 1197; `gap-mech-direction2-fable.md` L267-370;
+  1399 and 1401, of rows 1131, 1197, 1201, 1332, 1335; `gap-mini-solve-k-fable.md` L48-76; `gap-mech-direction2-fable.md` L267-370;
   `gap-mech-direction-fable.md` L271-294; grep hits quoted in Section 3.
 - **Not read:** Balaban's papers and the account (no step here uses them); rows 1128 to 1378 except through
   the grep hits and RESULT parts named above; the full text of the on-file matches (I read the matching
@@ -261,15 +263,16 @@ carries.
   notes, read at the start, name some on-file items (Theorem T, (VIR_K), row 1025); Section 1.4 marks them.
 - **Credits.** Tadeusz Balaban, and Ethan Sussman and Levent Alpoge (with Claude and Codex as authors of
   their text), for the ultraviolet control that Section 1.2 presupposes. Rows of this lane as cited:
-  1128 (Remark PAIR's reading), 1131, 962, 1066, 1190, 1197, 1002, 1332, 1380 to 1401. Jian Ding, Huang and
+  1128 (Remark PAIR's reading), 1131, 962, 1066, 1190, 1197, 1201, 1002, 1332, 1380 to 1401. Ding, Huang and
   Yang (arXiv:2611.04908) and OpenAI's O(n) papers, through rows 1379 and 1197 only. John Lott
-  (math/0211065), recalled, not re-read. Vladimir Kazakov and Zechuan Zheng (the SU(2) loop-equation
-  bootstrap), recalled, not re-read. The Tomboulis-Yaffe inequality and the critical endpoint of the mixed
+  (math/0211065), recalled, not re-read. Kazakov and Zheng (the SU(2) loop-equation bootstrap), recalled,
+  not re-read. The Tomboulis-Yaffe inequality and the critical endpoint of the mixed
   action are recalled physics, belief grade.
 
 Step log, continued:
 
 - 17:31Z Sections 1, 2 on disk (blind). 17:38Z Section 3 (comparison). 17:41Z Section 4.
 - 17:41Z Sections 5, 6 and the RESULT line written.
+- 17:42Z correction pass: row 1201 attribution fixed in 3.1, 3.2, 4.3, 5, 6 and the RESULT line; author names in the credits reduced to what the file supports.
 
-RESULT: Row 1402 (Claude Fable 5.2 high, Mac mini worker 1, 16:47Z to 17:41Z by date -u; author only, checked by no one; no numeric run, no subagents). No new band direction: (M-neutral) is not moved and nothing is disproved. Phase 1 (blind): the target read as a thermal and a replica statement; three necessary tests (five dimensions, compact U(1), the mixed-action endpoint); nine classes of crossing; one route with an exact first lemma (COVER: the neutral seed as disorder of the replica swap, its sectors being covering tori). Phase 2: every blind item is on file with a first failing step (tables 3.1, 3.4: Remark PAIR and the filter of row 1386, Theorem T and Proposition CH of row 1332, rows 1131, 962, 1066 for the covering tori, row 1197 for the Ding-Huang-Yang port, row 1002 for the flow monotones, gap-loop-eq-opus for loop-equation certificates, row 957 and F1 of gap-afield-a-max for the curvature class). Phase 3: no route kept; route COVER is a rewriting of the seed (PROVED, elementary: x/(1+x+x^2) <= r <= x) and fails (t1), (t2) and requirement (b); Remark TORNEG (PROVED, elementary) answers the question left open at row 1190 item 3: sector inequalities of the box group hold for a free scalar of mass 1/n, whose seed fails, so they contain no gain. One error of mine corrected in place (first lower bound of Lemma COV (c)). OPEN: an exact carry with a sign at a coupling of order one (K-I) or a block step there (K-II); (A1), (A2); the seed; the mass gap. Next rows: a cross-provider check of this file; no band attack row, the Fable slot to gap-univk-rar on (A1).
+RESULT: Row 1402 (Claude Fable 5.2 high, Mac mini worker 1, 16:47Z to 17:42Z by date -u; author only, checked by no one; no numeric run, no subagents). No new band direction: (M-neutral) is not moved and nothing is disproved. Phase 1 (blind): the target read as a thermal and a replica statement; three necessary tests (five dimensions, compact U(1), the mixed-action endpoint); nine classes of crossing; one route with an exact first lemma (COVER: the neutral seed as disorder of the replica swap, its sectors being covering tori). Phase 2: every blind item is on file with a first failing step (tables 3.1, 3.4: Remark PAIR and the filter of row 1386, Theorem T and Proposition CH of row 1332, rows 1131, 962, 1066, 1201 for the covering tori and the box group, row 1197 for the Ding-Huang-Yang port, row 1002 for the flow monotones, gap-loop-eq-opus for loop-equation certificates, row 957 and F1 of gap-afield-a-max for the curvature class). Phase 3: no route kept; route COVER is a rewriting of the seed (PROVED, elementary: x/(1+x+x^2) <= r <= x) and fails (t1), (t2) and requirement (b); Remark TORNEG (PROVED, elementary: sector inequalities of the box group hold for a free scalar of mass 1/n, whose seed fails) repeats the verdict of row 1201 and is not new. Two errors of mine corrected in place (the first lower bound of Lemma COV (c); a wrong claim that row 1190 item 3 left a question open). OPEN: an exact carry with a sign at a coupling of order one (K-I) or a block step there (K-II); (A1), (A2); the seed; the mass gap. Next rows: a cross-provider check of this file; no band attack row, the Fable slot to gap-univk-rar on (A1).

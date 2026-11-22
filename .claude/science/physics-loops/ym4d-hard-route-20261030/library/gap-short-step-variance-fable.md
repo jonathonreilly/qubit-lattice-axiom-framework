@@ -34,6 +34,7 @@ Status log (times by date -u in the same command):
 - 06:18Z Section 3 written: three forms of (BUB), free-field control (run 1 void by a script bug, run 2 passes), Theorem U1 (literal form holds for compact U(1): not selective), Lemma THIN consequences. Weak coupling and Balaban next.
 - 06:20Z Section 7.1 written (design and criteria of the SU(2) GUIDE run) before the batch starts. Batch launched in the background under the lock.
 - 06:22Z Sections 4-6 written (tests in five dimensions and with an adjoint Higgs field; Balaban comparison, ARGUED; Lemma BOG PROVED; what a proof needs; equivalence). Batch still running.
+- 06:33Z SU(2) batch done (06:20Z-06:32Z by its log): all controls pass; (BUB-lit) and (BUB-d) POSITIVE at six couplings; D levels near 0.35. Section 7.2 and the U(1) criteria 7.3 written; U(1) run next.
 
 ## 1. Sources read, registry matches, and the design (written 06:09Z by date -u)
 
@@ -479,3 +480,50 @@ Readings, with R = J(nu)/J(mu) and s its standard error (40 samples, treated as 
 - Trend: D(beta) = rho_D J(mu) - J(nu) at beta = 4, 8, 16. If it levels at a positive number, the first step has a
   non-abelian one-loop gain (U(1) has D to 0 by 3.3); if it levels at a negative number, the tadpole wins there.
 What the run cannot do: prove a sign; say anything about an averaging map, a second level, or five dimensions.
+
+### 7.2 Result of the SU(2) batch (GUIDE only; written 06:33Z by date -u)
+
+Batch 06:20:47Z to 06:32:52Z by the log's own `date -u` stamps, six couplings, about 121 s and at most 63 MB each,
+63-64 percent memory free; the lock was released by the exit trap ("released"). Log: `/tmp/row1383/run/batch.log`.
+
+Controls: all pass at every coupling. (C1) measured E[(N_l^a)^2] / ((3/2) beta xbar) = 0.9987, 0.9995, 1.0020, 0.9994,
+0.9977, 0.9973. (C2) E[N_l1 . N_l2] = -0.001(6), 0.005(7), 0.004(8), -0.004(14), -0.02(3), -0.11(7), each within 2
+standard errors of 0; E[Psi^2] / (J(mu)/2) = 0.999, 1.003, 1.000, 0.997, 0.992, 0.993. (C3) constraint defect and unit
+defect print as 0.000000. (C4) the readings at 15 and at 30 conditional sweeps agree within one standard error at
+every coupling. (C5) xbar(2.3) = 0.6030(5).
+
+| beta | xbar | J(mu) = (3/2) beta xbar | J(nu), spread lift | J(nu), first-link lift | R = J(nu)/J(mu) | 0.3538/xbar | D = rho_D J(mu) - J(nu) |
+|---|---|---|---|---|---|---|---|
+| 2.3 | 0.6030(5) | 2.080 | 0.2330(41) | 0.2390(72) | 0.1120(20) | 0.587 | 0.503(4) |
+| 2.45 | 0.6418(5) | 2.359 | 0.4001(44) | 0.4060(71) | 0.1696(19) | 0.551 | 0.434(4) |
+| 2.6 | 0.6701(4) | 2.614 | 0.5246(37) | 0.5223(82) | 0.2007(14) | 0.528 | 0.400(4) |
+| 4.0 | 0.7998(2) | 4.799 | 1.3512(70) | 1.333(14) | 0.2816(15) | 0.442 | 0.347(7) |
+| 8.0 | 0.9037(1) | 10.845 | 3.490(20) | 3.463(34) | 0.3218(18) | 0.391 | 0.347(20) |
+| 16.0 | 0.95263(5) | 22.863 | 7.724(34) | 7.694(63) | 0.3378(15) | 0.371 | 0.365(34) |
+
+Readings by the criteria of 7.1.
+- **(BUB-lit): POSITIVE at all six couplings** (R is below 0.3538/xbar by more than 20 standard errors everywhere).
+- **(BUB-d): POSITIVE at all six couplings.** In the window R = 0.11 to 0.20 against rho_D = 0.354: the one-link
+  cost of the decimated law is a third to a half of the dressed classical value.
+- Trend: R rises to the free ratio 0.354 as beta grows, as it must, and **D levels near 0.35** (0.347(7), 0.347(20),
+  0.365(34) at beta = 4, 8, 16). So at the first decimation step the variance term exceeds the non-abelian excess of
+  the lift cost by about 0.35 per colour at weak coupling, and by 0.40 to 0.50 in the window. For scale: the
+  one-loop running alone would give 0.2575 x q_D/4 = 0.14 per step (Section 5); the rest is specific to the map.
+What this does not show. It is a Monte Carlo result on one lattice size, with errors that treat the 40 samples
+as independent. It concerns the decimation, whose level form is not selective (3.5). It says nothing about a
+second level or an averaging map. Whether the level 0.35 is non-abelian is tested next against compact U(1).
+
+### 7.3 Compact U(1) comparison: design and criteria (written 06:33Z by date -u, before the run)
+
+Same estimator for compact U(1) Wilson on 8^4 with the decimation (script `/tmp/row1383/run/dec_mc_u1.py`, von
+Mises heat bath, conditional pair update theta_l1 = g, theta_l2 = V - g). J(mu) = 6 beta xbar. Couplings 1.05, 1.5, 2,
+4, 8, 16 from a cold start (all in the Coulomb phase; 1.05 is close to the transition and may be metastable).
+Controls: J_link/J(mu) within 1.5 percent of 1; E[Psi^2]/(J(mu)/2) within 3 percent of 1; E[N_l1 N_l2] = 0 within 3
+standard errors; the constraint is kept; half-time and full-time readings agree within 3 standard errors.
+Check of Theorem U1: D >= 0 at every coupling (a negative D beyond 3 standard errors means an error in the
+theorem or in the code).
+Reading: SU(2)'s D levels near 0.35. The one-step dressed form is **selective at weak coupling** if D of U(1)
+is below 0.12 at beta = 8 and at beta = 16 and falls with beta; it is **not selective** if D of U(1) stays above
+0.2 at beta = 8 and 16. In between: undecided. At the couplings 1.05 to 2 the reading is only the size of D
+against SU(2)'s 0.40 to 0.50 in the window: if U(1) has a D of the same order there, a positive (BUB-d) in the
+window does not separate SU(2) from a massless theory.

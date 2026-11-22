@@ -5,7 +5,8 @@ lease_until: 2026-11-22T18:51Z
 
 Worker: Claude Fable 5.2 (model id claude-fable-5-2), Mac mini worker 1, single session, no subagents.
 Pinned commit: 5c9ae786d on `claude/ym4d-hard-route`. File created 2026-11-22T06:51Z (date -u).
-Status: IN PROGRESS. Nothing below is checked by a second agent. Each step is appended as it is finished.
+Status: DONE 2026-11-22T07:17Z (date -u). Nothing below is checked by a second agent. No commit, no push (relay
+copies). Reading order: Section 3 (decision and negative), 2.2 (Lemma GRP), 4 (the new input), 5 (rows), 6 (report).
 
 ## 0. Plan (written before any derivation)
 
@@ -57,9 +58,10 @@ side and all late cutoffs. It is not uniform in the volume at one cutoff: that f
 
 **Three facts on file that fix where the target sits (none is mine).**
 
-- (R1) No seed in a small box. Row 1143 (7) and (10), checked by row 1144: at fixed lattice side n all seven
-  charged bottom energies are at most of order n/beta, and a seed needs n^2 at least about 15 beta/K. Lemma
-  FLOOR of row 988 (HOLDS AFTER CORRECTION in its check): no seed with side times gap below 17.04.
+- (R1) No periodic seed in a small box. Row 1143 (7) and (10), checked by row 1144: at fixed lattice side n
+  all seven charged bottom energies are at most of order n/beta, and a periodic seed needs n^2 at least
+  about 15 beta/K. Lemma FLOOR of row 988 (HOLDS AFTER CORRECTION in its check): no seed with side times gap
+  below 17.04. For the neutral test in a small box the file has the belief I33 only (Remark STAB).
 - (R2) The account reaches a physical size only while the running coupling is at most gamma (row 1012, as
   quoted in row 1380 M-D; `parts/gap.md` L46-48: "the one selective fact that is provable today, asymptotic
   freedom at small coupling, has no engine that carries it across the band").
@@ -80,7 +82,7 @@ of physical sides L for which that statement has content. Verdicts are mine (ARG
 |---|---|---|---|---|---|
 | F1 | The one-loop step of the account on Balaban's renormalization group (Sussman and Alpoge with Claude and Codex; Balaban) | flow, weak coupling | yes, by construction | L at most L_gamma (running coupling at most gamma) | yes: the logarithm exists only in d = 4; shared classical part with U(1) (check 1384) |
 | F2 | Row 1143 (1)-(6), (11)-(13): Z of every periodic or one-plane-twisted torus against the four-holonomy integral J_4(s), of order s^(-3) log s; twist cost (3/2) log beta + log log beta + O_n(1) (gpt-6.2-astra; checked by row 1144; survivor named by check 1384) | fixed lattice, beta to infinity | no as proved: the remainder is extensive in the fine sites (row 1143 L108, OPEN there). Only through F1: Section 2.1 | none as proved; with F1, L at most L_gamma | yes: dt/t at D = 4, integrable at D = 5. Section 2.2: the borderline is the coincidence D = 2N/(N - 1) at N = 2; four-dimensional SU(3) has no such logarithm |
-| F3 | Row 1132: the Haar-commutator multiplier q_G = 1/4 for SU(2), 1 for U(1), and statement (A) (gpt-6.2-astra; (A) OPEN; margin named by check 1384) | (A) is a (K-one) statement in Moser coordinates | (A) is uniform by its wording, and it is OPEN | proved only at beta at most 1/48 (row 1135), by a high-temperature argument that works in five dimensions (check 1384, 8e) | no. q_G is one number of the group. (A) at a physical time implies (Z-UNB): it is a target of seed strength, not a fact |
+| F3 | Row 1132: the Haar-commutator multiplier q_G = 1/4 for SU(2), 1 for U(1), and statement (A) (gpt-6.2-astra; (A) OPEN; margin named by check 1384) | (A) is a (K-one) statement in Moser coordinates | (A) is uniform by its wording, and it is OPEN | uniformly in the box, proved only at beta at most 1/48 (row 1135), by a high-temperature argument that works in five dimensions (check 1384, 8e); at larger beta only at a box-dependent time (row 1132) | no. q_G is one number of the group. (A) at a physical time implies (Z-UNB): it is a target of seed strength, not a fact |
 | F4 | Local selective facts: row 1141 (2), (8), (9)-(13); Lemmas NAB, FR, FR+; CUBE, SOFT; WN2; LF; BD; G1 (rows 1011-1034) | lattice-local, typical fields | yes, trivially: they read cells of a fixed lattice size | they say nothing at the scale L (lengths are lattice units) | no: verbatim in five dimensions (row 1382 as corrected by check 1384) |
 | F5 | Row 1380: Lemmas H, H', SP, BR, PIN, Theorem C1 (Claude Fable; check 1381 HOLDS AFTER CORRECTION) | negative, any scale | yes | all L | they exclude lab-frame engines; no positive content |
 | F6 | Row 1383: Proposition LIFT, Lemma THIN, Theorem U1, Lemma BOG (Claude Fable; check 1385 running) | identities, one block step | yes (identities) | all L | no: the literal (BUB) holds for U(1) (Theorem U1); the level form is OPEN and has no consumer |
@@ -171,8 +173,9 @@ with the convergence theorem, which is what the consequence rests on.)
 (A) asks, at one physical time t and for all boxes and late cutoffs, that the two-slice law in Moser
 coordinates dominates p times a kernel followed by an independent Haar commutator on every link. Its consumer
 is proved in row 1132: norm at most 1 - 3p/4 on the mean-zero space, so (Z-UNB). The margin is selective
-(q_G = 1/4 against 1). But (A) is known only at beta <= 1/48 (row 1135), by a high-temperature argument that
-check 1384 (8e) transfers to five dimensions at 24 beta < 1. On the trajectory (A) is of the kind (K-one) at
+(q_G = 1/4 against 1). But uniformly in the box (A) is known only at beta <= 1/48 (row 1135), by a
+high-temperature argument that check 1384 (8e) transfers to five dimensions at 24 beta < 1. With the full
+Wilson slab it holds at a time that depends on the box (row 1132, RESULT). On the trajectory (A) is of the kind (K-one) at
 seed strength: it gives the spectral half of the wall outright. Nothing on file bounds p from below at any
 coupling above the high-temperature range. In the inventory's terms: uniform in n by its wording, no proved
 reach on the trajectory, does not see the scale. Not picked.
@@ -216,7 +219,7 @@ Conclusion. A proof of (M-neutral) that starts from the file needs at least one 
 (i) has content at some L > L_gamma for all late cutoffs, and (ii) uses the dimension four in a way that no
 local count gives. The candidates on file for that statement are all OPEN and all name the same step:
 (K-flow) (row 998), M-D with its level form (rows 1380, 1383), the infrared carry (A2) of row 1332, (VIR_K)
-with Theorem TR (row 708), (NOCRIT) with a rate (rows 709, 978), (LEV_K) (row 708).
+with Theorem TR (row 708), (NOCRIT) with a rate (rows 708, 709, 978), (LEV_K) (row 708).
 
 **Class covered.** Conjunctions of proved statements on file, combined by inferences that hold in five
 dimensions. **Not covered:** a new statement; an inference that uses d = 4 through a sum over scales (that is
@@ -278,13 +281,16 @@ The one-loop value is delta = (11/(3 pi^2)) log 2 = 0.2575 (GUIDE; the slack 4.0
 remark), so there it is equivalent to the target and proposing it again is no progress. I do not propose it.
 I use it to say what an engine must deliver.
 
-### 4.2 Remark PAIR: apply the five-dimensional test to the step, not to each fact (ARGUED)
+### 4.2 Remark PAIR: apply the five-dimensional test to the step, not to each fact (ARGUED; the reading is row 1128's)
 
 Row 1382 asked each selective fact to see the dimension, and found none (check 1384 found F2). A mechanism
 need not contain such a fact. Asymptotic freedom itself is a pair:
 
-- a gain per scale that reads the group and not the dimension (for example Proposition G1 of row 1128: the
-  convolution of two class weights on S^3 loses stiffness by a curvature term; zero for U(1));
+- a gain per scale that reads the group and not the dimension (for example Proposition G1 of row 1128,
+  Claude Fable: the stiffness of the convolution of two class weights on S^3 is s/2 minus a constant, of
+  which Ricci/12 = 1/6 is curvature and vanishes on the circle; row 1128 3.2 already reads it as "stay,
+  minus a constant per doubling" in the marginal dimension; for the Wilson profile part of the constant is
+  group-blind, 3/8 against 1/8 on the circle);
 - a carry between scales that reads the dimension and not the group: the classical factor 2^(d-4) on the
   inverse coupling (check 1384: "the classical constant-field twist scaling also sees the dimension and is
   shared by an abelian field").
@@ -303,7 +309,7 @@ holds no inequality that passes a local gain through an exact carry at a couplin
 |---|---|---|
 | (a) | Content at L > L_gamma for all late cutoffs: an all-coupling statement on bare lattices, or a step in a renormalized variable that starts from first-passage data | Proposition NEG (a); lead rule W2 |
 | (b) | Uses d = 4 through the exact classical factor of a carry over all scales of the band, not through local counts | Remark PAIR; rows 1382, 1384 |
-| (c) | Zero gain for compact U(1); fails at a named line for frozen Q_8 and 2T, for a product with a massless factor, for the adjoint Higgs | rows 1141, 1378, 1380; `parts/gap.md` test table |
+| (c) | Zero gain for compact U(1); fails at a named line for frozen Q_8 and 2T, for a product with a massless factor, for the adjoint Higgs, and at the K7 endpoint (the lane's belief-grade gapless comparison in the fundamental-adjoint family of SU(2) actions) | rows 1141, 1378, 1380; `parts/gap.md` L28-30 and its test table (L287) |
 | (d) | Group test: the same statement makes sense, and is believed, for SU(3). It may not rest on dim G = 3 | Lemma GRP (new here) |
 | (e) | Its hypothesis fails when beta grows at a fixed lattice: it contains an upper bound on an inverse coupling at the box scale | Remark STAB; row 1143 (10); Lemma FLOOR |
 | (f) | Reads typical Wilson fields. No supremum over pins, tilts, coupling fields or backgrounds | rows 977, 996, 1011, 1014, 1139 |
@@ -341,8 +347,8 @@ mixed second derivatives of the blocked action. The end-class form on file is ro
 - **K-III, a verified computation.** Row 1326 (check 1331): no statement on file is both finite and
   sufficient, and the cost of the smallest instance is out of reach. It needs (A1) and (A2) first.
 
-I found no candidate of kind K-I in this session. Every statement I derived blind is on file (table of
-Section 3). I judge the programme to have no first lemma to attack in the band.
+I found no candidate of kind K-I in this session. Every sufficient or step statement that I derived blind
+is on file (table of Section 3). I judge the programme to have no first lemma to attack in the band.
 
 ### 4.5 Five cheap tests to run on any future candidate before a proof row (the filter)
 
@@ -358,3 +364,103 @@ Section 3). I judge the programme to have no first lemma to attack in the band.
 - (t5) Equivalence (rule of 2026-11-22): above the first-passage coupling (STEP) is the target. A candidate
   must name the method that proves it, not the statement.
 
+- 07:16Z Section 4 written. One error of mine found on re-reading and corrected in place: the neutral form of
+  Remark STAB (the thin Polyakov-line trial vector fails; the text now records the failure). (R1) reworded to
+  the periodic seed. Next: the rows, the report, the RESULT line.
+
+## 5. What the programme does next, and the next two rows
+
+**Recommendation to the lead (a judgement; the owner decides pace and priorities).**
+
+1. Record the negative of Section 3 in `parts/gap.md`: no proved statement on file has content in the band
+   for late cutoffs except lattice-local facts, identities and negatives; F2 is struck as a mechanism seed
+   (Lemma GRP); (A) of row 1132 is a target.
+2. Queue no further attack row on the band until a candidate passes the filter (t1) to (t5) of 4.5 and names
+   its carry (requirement (b)). The reopen condition is an input of kind K-I or K-II of 4.4.
+3. Put the freed capacity where the account's tools work and where the result is needed twice: the
+   ultraviolet carry (A1) = (UNIV-K) in rate form. It is one of the three hypotheses of Theorem T, and it is
+   also the uniqueness of the continuum limit at a fixed physical size, which the existence target does not
+   yet have (T0 is stated along a sequence). Its open inputs are named on file: (MAPCONV), (VAC-ID),
+   (DENS-K), (CLASS) (row 924, check 925).
+
+**Row 1. `gap-mech-direction2-check-astra62` (cross-provider check; gpt-6.2-astra).**
+Moves: the standing of the two survivors of check 1384 and the negative of Section 3.
+Task: check this file. Test first, in this order: (i) Lemma GRP: the stratum count near a central tuple for
+SU(3) in four dimensions, including the lower strata, and whether the convergence theorem of Austing and
+Wheater gives order s^(-8) with no logarithm for the compact integral; (ii) Proposition NEG (a) and (b), item
+by item against check 1384; (iii) Remark FI (the two-coupling mixture: reflection positivity, the score
+bound, the near-degenerate top eigenvalues); (iv) Remark PAIR against rows 1128 and 1025; (v) the
+non-equivalence and the tests of (SV-Z); (vi) the periodic form of Remark STAB.
+Decisive outcome: F2 is struck as a mechanism seed and the negative stands with its class; or the first
+failing line names a proved statement with content in the band, which then gets the next proof row.
+
+**Row 2. `gap-univk-rate-fable` (direction and first proofs on (A1); Claude Fable 5.2 high, then medium).**
+Moves: hypothesis (A1) of Theorem T (row 1332), and the uniqueness of the continuum limit at a fixed
+physical size.
+Start from: rows 924 and 925 ((UNIV-K) holds exactly when the changes of Phi between a datum and its
+predecessor are summable; regular part at most C ell^4 q^K GIVEN (MAPCONV), (CLASS) and matched endpoints;
+vacuum part GIVEN (VAC-ID)); row 1332 4.4 (the rate form that Theorem T reads); the account's linear system
+and vacuum criterion at the lines row 924 cites.
+Task: decide which of (MAPCONV), (VAC-ID), (DENS-K), (CLASS) the account proves, sketches or assumes (rules
+9 and 10: quote the passages), and prove the first one that it does not prove. State the rate form with the
+dependence on ell written out.
+Decisive outcome: (A1) in rate form as an implication from statements the account proves, which closes one
+of the three hypotheses of Theorem T; or the first input that fails, with the explicit failure. In the
+second case Theorem T has two open hypotheses that no tool on file reaches, and the lead can tell the owner
+that the gap chain is parked on both sides.
+
+**Not queued, with the reason.**
+- A port of (SV-Z): no consumer (Section 2.1).
+- A proof row on (STEP), (A2), (VIR_K) or the level form of (BUB): no engine; (STEP) above first passage is
+  the target (rule Equivalent is not progress).
+- A sweep of the selective facts against the group test: useful only if an attack on the band is queued.
+- The neutral form of Remark STAB: a fixed-lattice fact with no consumer beyond the filter.
+
+## 6. Report
+
+**Kind of result.** A direction row with a negative verdict. No step of the gap chain is proved. Nothing
+here is checked by another model. No numeric run was made (none was needed; no lock was taken).
+
+**Verdicts.**
+- Facts on file that carry to a statement uniform in n at a physical side L: only the pair F1 with F2, as
+  the small-volume statement (SV-Z), at L <= L_gamma. It is selective, not equivalent to the seed, and on the
+  side where there is no seed. Not picked.
+- F2 (row 1143 (2), (6)), the five-dimensional survivor of check 1384: fails the group test. Its logarithm
+  is the coincidence 4 = 2N/(N - 1) at N = 2 (Lemma GRP).
+- F3 (row 1132): the margin is one number of the group; (A) is a target of seed strength.
+- No route on file reaches (M-neutral) (Proposition NEG, with its class and its premise (P5)).
+- The missing object is an exact carry with a sign at a coupling of order one, not a local gain (Remark
+  PAIR). In the chain's terms it is (A2) of Theorem T.
+
+**PROVED here (elementary, unchecked).** Remark FI: in the class of gauge-invariant hypercubic families with
+reflection-positive transfer matrices, a uniformly small one-link score does not give a seed (two-coupling
+mixture). The logic of Proposition NEG from its cited inputs.
+
+**ARGUED here.** Lemma GRP's stratum count for SU(N) (its consequence for SU(3) in four dimensions rests on
+the published convergence theorem); the derivation sketch of (SV-Z) and its tests; Remark PAIR; test (t2) on
+twisted thin tori; the width of the band at one loop.
+
+**Failed here.** A variational proof that the neutral seed fails at a fixed lattice as beta grows (thin
+Polyakov line; Remark STAB).
+
+**Equivalence rule.** I propose no sufficient condition. (STEP) is written only to state what an engine must
+deliver, and Section 4.1 says where it is the target.
+
+**Not done.** `gap-short-step-variance-fable.md`, `gap-selective-5d-sweep-opus.md`,
+`gap-mech-direction-check-astra62.md` and `prior/gap-mech-lit-luna.md` were read in their RESULT lines only.
+Rows 708, 709, 1025, 1128 and `gap-ac-lat.md` were read in RESULT lines or by grep only. The cross-branch
+search was not repeated (rows 1379 and 1384 ran it for this programme). The Austing-Wheater and
+Krauth-Staudacher papers were read in their abstracts only. Check 1385 of row 1383 was running; I did not
+wait for it.
+
+**Credits.** Balaban; Sussman and Alpoge with Claude and Codex (the account; first-passage data; the flow).
+Luscher; Koller and van Baal (small volume, as recalled on file). Krauth and Staudacher; Austing and Wheater
+(the convergence threshold of the matrix integrals). OpenAI; Ding, Huang and Yang (the 2D proofs). Tomboulis;
+Ito; Migdal and Kadanoff (as on file in row 1025). The lane's rows, by gpt-6.2-astra, Claude Fable, Claude
+Opus and gpt-6-luna, named at each use: 708, 924, 925, 978, 988, 998, 1011, 1025, 1128, 1132, 1135, 1141,
+1143, 1144, 1326, 1331, 1332, 1335, 1342, 1349, 1356, 1359, 1367, 1379 to 1385.
+
+- 07:17Z Sections 5 and 6 written; citations re-read against the rows (three wording corrections: (NOCRIT)
+  rows, the range of (A), the credit of Remark PAIR to row 1128). RESULT written.
+
+RESULT: Row 1386 (Claude Fable 5.2 high, Mac mini worker 1; author, checked by no one; no numeric run, no subagents). Direction row with a negative verdict: no route on file reaches (M-neutral). Inventory (Section 2): the only statement that carries to a form uniform in n at a physical side L is the pair of the account's one-loop step with row 1143's toron integral, as the small-volume statement (SV-Z) at L at most L_gamma; it is selective and not equivalent to the seed, but it lies where no seed exists and is a start value, not a step; not picked. Lemma GRP (count ARGUED; threshold is Austing and Wheater's theorem, abstract read): the borderline logarithm of row 1143, the five-dimensional survivor of check 1384, occurs at D = 2N/(N - 1), that is at D = 4 for SU(2) only; four-dimensional SU(3) has none and behaves there as five-dimensional SU(2); so the survivor fails a group test and is struck as a mechanism seed. Statement (A) of row 1132 is a target of seed strength, proved uniformly in the box only at beta at most 1/48. Proposition NEG (elementary logic from cited rows, under the belief-grade premise that five-dimensional SU(2) has no seed at weak coupling): every proved statement on file with content in the band at late cutoffs is lattice-local, an identity or a negative, and holds in five dimensions, so no conjunction of them by dimension-blind inference gives the seed; the proved cover of the band is Lemma CLIMB's 1e-12 in beta against at least 9 doublings at one loop (GUIDE). PROVED here, unchecked: Remark FI (a uniformly small one-link score does not give a seed in the class of reflection-positive gauge-invariant hypercubic families: two-coupling mixture), so a consumer of the level form of (BUB) needs a quasi-locality clause. ARGUED: Remark PAIR (credited to row 1128: a mechanism is a group-reading local gain times a dimension-reading exact carry; the lane has gains and lacks a carry with a sign at a coupling of order one), the requirements (a) to (i) and the filter (t1) to (t5) for any future candidate, including the new group test and the growing-beta test. FAILED here: a variational proof that the neutral seed fails at a fixed lattice as beta grows (thin Polyakov line). New input needed: an exact carry with a sign for a typical-field stiffness (kind K-I), or a renormalization step at an effective coupling of order one (K-II); in the chain's terms an engine for (A2) of Theorem T (row 1332); none found, and every sufficient or step statement that I derived blind in this session is on file (table of Section 3). Next rows proposed: the cross-check of this file (Lemma GRP first); a row on the ultraviolet carry (A1) = (UNIV-K) in rate form, where the account's tools work, with no further attack row on the band until a candidate passes the filter. OPEN: (M-neutral), the seed, (A1), (A2), the carry, the neutral form of Remark STAB, the premise on five dimensions, the mass gap.

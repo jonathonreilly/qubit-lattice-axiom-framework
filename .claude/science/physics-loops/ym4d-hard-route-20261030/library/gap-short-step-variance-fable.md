@@ -35,13 +35,15 @@ Status log (times by date -u in the same command):
 - 06:20Z Section 7.1 written (design and criteria of the SU(2) GUIDE run) before the batch starts. Batch launched in the background under the lock.
 - 06:22Z Sections 4-6 written (tests in five dimensions and with an adjoint Higgs field; Balaban comparison, ARGUED; Lemma BOG PROVED; what a proof needs; equivalence). Batch still running.
 - 06:33Z SU(2) batch done (06:20Z-06:32Z by its log): all controls pass; (BUB-lit) and (BUB-d) POSITIVE at six couplings; D levels near 0.35. Section 7.2 and the U(1) criteria 7.3 written; U(1) run next.
+- 06:48Z U(1) batch done (06:33Z-06:47Z by its log): controls pass, Theorem U1's D >= 0 holds, D falls to 0. Sections 7.4, 7.5 and 8 (report, RESULT) written. Re-read of the PROVED items next.
+- 06:49Z Re-read of the PROVED items done: four wording repairs (the two-number clause marked ARGUED; a proof line for "not a curl form"; "onto" in Theorem U1; "class-level" in 3.5). Finished.
 
 ## 1. Sources read, registry matches, and the design (written 06:09Z by date -u)
 
 Credits. The split "response = direct term minus variance" is Lemma FLOW of row 1018 (Claude Fable 5.2,
 `gap-short-step-max.md` L217-231). Its Gaussian form with the best flow is Lemma 2.1 of row 1244 (Claude Opus 5.5,
 `gap-mini-solve-aa-opus.md` L115-142), which also says where the one-loop running sits (Proposition 2.3). The
-corner formalism and Lemma WN are row 1013's (`gap-invent-selective-max.md` L101-102). (SYM), Proposition LF and
+corner formalism and Lemma WN are row 1013's (`gap-invent-selective-max.md` L101-102 and L136). (SYM), Proposition LF and
 Theorem BD are rows 1026 and 1034. The quotation of Balaban, Commun. Math. Phys. 109 (1987), (0.18)-(0.22) and
 p. 258, is row 1012's (`prior/gap-gauge-stiffness-read-opus.md` L109-115). Block maps with staples are Swendsen's;
 the averaging block map and the background minimiser are Balaban's. The row itself was proposed by row 1380.
@@ -60,7 +62,7 @@ Step 3 ((S-V)). **Read by RESULT line and headings only:** rows 1026, 1034. **No
 | "blocked law", "block move" | 4, 2 | rows 1290/1297 ("straight blocked law", another object); no cost identity |
 | "one-link Fisher", "Monte Carlo renormalization", "harmonic lift" | 0 | not on file |
 | "MCRG", "Swendsen" | 1, 2 | literature notes only |
-| "Fisher information" | 19 | (FC), Theorem BR of rows 940/941 (heat-flow contraction of Fisher information; another object); row 1371/1374 (Fisher bound of chord coordinates given all other links) |
+| "Fisher information" | 19 | (FC), Theorem BR (`gap-fc-max.md`; row 941 `gap-lsivac-max.md`: heat-flow contraction of Fisher information; another object); rows 1371, 1375 (Fisher bound of chord coordinates given all other links) |
 | "step scaling" | 22 | killed as a seed supplier in `gap-phys-seed.md` Part 2 (row 720) and `gap-mid-max.md`; a ratio of sizes, not a block law |
 | "(S-V)" | 6 | row 1243: an explicit flow whose direct term is below the abelian value; OPEN |
 | "straight transport" | 20 | row 1145 (near-Haar straight transports, a sup-norm class), rows 1353-1360 |
@@ -196,10 +198,15 @@ delta_ab kappa(c, c') when they agree. So
 The cost of a lab-frame block move is site-local for every gauge-invariant law. This is Lemma WN of row 1013,
 applied to nu; with rotations at both ends of the links the form lives on the 8 link-ends at a site, and for
 d = 4 lattice symmetry leaves two numbers (the form is zero on constants by the Gauss law, and the other two
-isotypic parts under the hyperoctahedral group, of dimensions 3 and 4, are irreducible). I use one number, J(nu).
+isotypic parts under the hyperoctahedral group, of dimensions 3 and 4, are irreducible; this clause is ARGUED in
+these two lines and not used). I use one number, J(nu).
 
-Consequence for the wording of the row. **For a lab-frame block move there is no curl form on either side of
-the identity.** A curl form in d theta exists (i) for an abelian group, where Ad is trivial and the cross terms
+The site-local form is not a curl form unless J(nu) = 0. Proof: take theta = d lambda with lambda the indicator of
+one coarse site y. Then theta = 1 on the d links with tail y and theta = -1 on the d links with head y, whose tails
+are d distinct sites. The cost is a non-negative term at y plus d J(nu). A curl form is zero on d lambda. QED
+
+Consequence for the wording of the row. **For a lab-frame block move the cost under the blocked law is not a curl
+form, and the cost of a lab-frame lift is not one either (Lemma WN of row 1013).** A curl form in d theta exists (i) for an abelian group, where Ad is trivial and the cross terms
 survive; (ii) for a frame move, where rows 1026 and 1034 bind: the cost is a curl form only if the current
 j - d is conserved ((SYM)); link frames have it with zero gain (Proposition LF), pin-measurable site frames do
 not have it at a pinned face (Theorem BD); (iii) in the background-field sense of Balaban (Section 5), which is
@@ -259,7 +266,7 @@ in every dimension.
 ### 3.3 Theorem U1: the literal form holds for compact U(1) at every coupling (PROVED, unchecked)
 
 Setting: compact U(1), A = beta sum_p cos F_p, F = d theta, any d >= 2, the torus of 2.1. C is a homomorphism
-block map (an integer matrix, for instance the decimation of any ratio m). A block move is a real constant
+block map (an integer matrix that is onto as a real map, for instance the decimation of any ratio m). A block move is a real constant
 field t on the coarse links; a lift is a real constant field t~ with C t~ = t.
 
 **Statement.** For every beta > 0, every t and every lift t~:
@@ -303,7 +310,8 @@ The mechanism is the plaquette tadpole, as in U(1). No bubble is needed and no b
 By Lemma THIN, for the decimation J(nu^(k)) <= J(mu)/2^k in every model whose action has no term with two
 collinear links: SU(2) and compact U(1) in every dimension, Wilson or Villain weights, with site matter. So:
 - "J(nu^(K)) <= j_0 at some level K" holds in massless models (GIVEN the U(1) theorem as the lane holds it, I28).
-  No statement "small one-link Fisher information of the decimated law gives the seed" can be true.
+  No class-level statement "small one-link Fisher information of the decimated law gives the seed" (one whose
+  hypotheses compact U(1) also meets) can be true.
 - (BUB-lev) for the decimation is not selective: the levels fall to zero in every model.
 For an averaging map the free field keeps J of order beta at every level in d = 4 (3.2), so there (BUB-lev)
 is false for the free photon. I have no exact statement for an averaging map at finite coupling: its lifts are
@@ -527,3 +535,127 @@ is below 0.12 at beta = 8 and at beta = 16 and falls with beta; it is **not sele
 0.2 at beta = 8 and 16. In between: undecided. At the couplings 1.05 to 2 the reading is only the size of D
 against SU(2)'s 0.40 to 0.50 in the window: if U(1) has a D of the same order there, a positive (BUB-d) in the
 window does not separate SU(2) from a massless theory.
+
+### 7.4 Result of the compact U(1) comparison (GUIDE only; written 06:48Z by date -u)
+
+Batch 06:33:47Z to 06:47:23Z by the log's own stamps, 200 samples per coupling, 136 s each, 62-65 percent memory
+free; lock released by the exit trap and confirmed free. Log: `/tmp/row1383/run/batch_u1.log`. (My time estimate
+was a factor 2 low, so the foreground call passed its limit and the batch finished in the background.)
+
+Controls: all pass. J_link/J(mu) between 0.9999 and 1.0009; E[Psi^2]/(J(mu)/2) between 0.997 and 1.002; E[N_l1 N_l2]
+within 1.2 standard errors of 0; constraint defect 9e-16; half-time and full-time readings agree within one
+standard error. Check of Theorem U1: D >= 0 at every coupling within errors. PASS.
+
+| beta | xbar | J(mu) = 6 beta xbar | J(nu) | R | D = rho_D J(mu) - J(nu) | beta (1 - xbar) |
+|---|---|---|---|---|---|---|
+| 1.05 | 0.6912(4) | 4.354 | 1.3002(56) | 0.2986(13) | 0.240(6) | 0.324 |
+| 1.5 | 0.8124(2) | 7.312 | 2.530(10) | 0.3460(14) | 0.057(10) | 0.281 |
+| 2.0 | 0.8649(1) | 10.379 | 3.638(15) | 0.3506(15) | 0.034(15) | 0.270 |
+| 4.0 | 0.93532(5) | 22.448 | 7.913(32) | 0.3525(14) | 0.029(32) | 0.259 |
+| 8.0 | 0.96824(3) | 46.475 | 16.394(63) | 0.3528(14) | 0.048(63) | 0.254 |
+| 16.0 | 0.98425(1) | 94.488 | 33.43(15) | 0.3538(15) | 0.00(15) | 0.252 |
+
+Readings.
+- R tends to 0.3538 = rho_D. This checks the free-field number of 3.2 by an independent method (a Monte Carlo of
+  the compact model against a Fourier sum), to three digits.
+- beta (1 - xbar) tends to 1/4: the margin of the literal form in U(1) (Theorem U1), as argued in 3.3.
+- **By the criterion of 7.3 as written:** the central values at beta = 8 and 16 (0.05 and 0.00) are below 0.12, but
+  the errors there (0.06 and 0.15) do not resolve 0.12; strictly the criterion is met at beta = 8 against the
+  "not selective" level 0.2 by 2.4 standard errors and is UNDECIDED at beta = 16. I set the couplings badly: the
+  absolute error grows with J(mu).
+- **Comparison at equal J(mu), not written before the run:** U(1) at beta = 2 (J(mu) = 10.4) has D = 0.034(15) and
+  SU(2) at beta = 8 (J(mu) = 10.8) has D = 0.347(20); U(1) at beta = 4 (22.4) has 0.029(32) and SU(2) at beta = 16 (22.9)
+  has 0.365(34). The differences are 0.31(3) and 0.34(5). So at weak coupling the one-step dressed margin of
+  SU(2) is a non-abelian constant near 0.35, and that of U(1) is consistent with the 1/beta fall of 3.3.
+- **Near the transition** U(1) at beta = 1.05 (Coulomb side from a cold start; possibly metastable) has D = 0.240(6)
+  and R = 0.299. SU(2) in the window has D = 0.40 to 0.50 and R = 0.11 to 0.20. Both are positive and of the same
+  order. So a positive (BUB-d) at an order-one coupling does not separate SU(2) from a massless theory in kind;
+  only its size does, and no threshold for the size is known.
+
+### 7.5 What the two runs establish together (GUIDE grade)
+
+1. The sign of (BUB) in the window, for the decimation of ratio 2: positive in the literal and in the dressed
+   form, by 20 to 100 standard errors.
+2. The literal form is positive for compact U(1) as well (Theorem U1; margin 0.25 to 0.32 measured).
+3. The dressed form has a non-abelian margin at weak coupling: SU(2) levels near 0.35, U(1) falls to 0.
+4. Nothing on an averaging map, on a second level, or on five dimensions.
+
+## 8. Report (written 06:48Z by date -u)
+
+**Kind of result.** A direction row with one exact identity, two short theorems that decide the row's literal
+statement, and a GUIDE run. No step of the gap chain is proved. Nothing here is checked by another model.
+
+**PROVED by hand in this session (unchecked).**
+- Proposition LIFT (2.2): for every block map (deterministic or with a kernel) and every lift, the score of the
+  blocked law along a block move is the conditional mean, given the block field, of the divergence of the lift;
+  cost under the blocked law = cost of the lift under the Wilson law - mean conditional variance; the cost of the
+  lift is a direct term. Corollary: every lift gives an upper bound that never loses.
+- Three explicit lifts for the block map S_alpha (2.3) and Lemma THIN: for the straight-path decimation of ratio
+  m, J(nu) <= J(mu)/m in every model whose action has no term with two collinear links.
+- Lab-frame block moves have a site-local cost under every gauge-invariant law (2.4; Lemma WN of row 1013 applied
+  to the blocked law). It is not a curl form unless J = 0; the frame-free content is the one-link Fisher information J.
+- Theorem U1 (3.3): compact U(1) obeys the row's literal inequality at every coupling and in every dimension,
+  with margin beta (1 - xbar) Q_C(t) >= (xbar/(4(d-1))) Q_C(t), by the plaquette tadpole alone; and it obeys the
+  dressed form with c = 0.
+- Lemma BOG (6.1): a lower bound on the variance term by a vertical field is the gain of a better lift, and all
+  its terms are means of explicit local functions under the Wilson law.
+
+**ARGUED (not proved).** The margin of the dressed form in U(1) is of order 1/beta (3.3; supported by 7.4). The
+five-dimensional and adjoint-Higgs verdicts on the dressed and level forms (Section 4). All of Section 5 (the
+dictionary with Balaban's formulas; (BUB-lev) at weak coupling as a corollary-shaped statement of the account;
+one block step holds one momentum shell). The two-number structure of the site form (2.4) is argued by
+representation theory in two lines.
+
+**GUIDE (floating point or Monte Carlo; proves nothing).** q_D = 2.1227, rho_D = 0.3538 and the table of 3.2
+(after a void first run, script bug found by a hand bound). SU(2), decimation of ratio 2, 8^4: R = J(nu)/J(mu) =
+0.112(2), 0.170(2), 0.201(1) at beta = 2.3, 2.45, 2.6; D = rho_D J(mu) - J(nu) = 0.50, 0.43, 0.40 there and 0.35 at
+beta = 4, 8, 16. Compact U(1): D = 0.24 at beta = 1.05 and 0.03 to 0.06 from beta = 1.5 on.
+
+**Verdicts on the row's questions.**
+1. *The identity.* Written and proved (Proposition LIFT), with the explicit block map S_alpha and explicit lifts.
+2. *(BUB) as worded* (reference: the classical curl form; called (BUB-lit) here). For a lab-frame move there is
+   no curl form; in the frame-free reading it is J(nu) <= (beta/4) q_C - c. In the window it is TRUE at GUIDE grade
+   (Lemma THIN with xbar < 0.7076, and the direct measurement). **It is not selective: Theorem U1 proves it for
+   compact U(1) at every coupling, in four and in five dimensions.** Its mechanism is the plaquette tadpole. The
+   row's test line "(U1): both terms vanish for the harmonic lift" holds for the Gaussian field only. As a gap
+   mechanism this form is dead.
+3. *The dressed one-step form (BUB-d).* POSITIVE in the window at GUIDE grade, with a non-abelian margin near
+   0.35 at weak coupling that U(1) does not have. But compact U(1) obeys it with c = 0 at every coupling (PROVED)
+   and with a margin of the same order near its transition (GUIDE); it is expected to hold in five dimensions as
+   in four (ARGUED); it has no consumer; and a proof at a coupling in the window is a (K-one) number (6.2).
+4. *The level form (BUB-lev).* For the decimation it is not selective and "J small" has no consumer (Lemma THIN,
+   PROVED given one massless model). For an averaging map it passes the three tests, it is the exact first
+   statement of M-D, at weak coupling it is a corollary-shaped statement of the account (ARGUED), and in the band
+   it is open with no proof route found.
+5. *Weak-coupling comparison.* Balaban's lift is the harmonic lift and his identities fix the form of the
+   marginal term, not the sign of its change. The universal coefficient is the one-step drop of J only after the
+   classical transient of the map has died; Balaban names the first step apart.
+6. *Equivalence.* (BUB-lit) and (BUB-d) are not equivalent to the seed and do not imply it. For (BUB-lev) with an
+   averaging map **I cannot show non-equivalence to the seed, and I cannot show that it implies the seed**: no
+   consumer from a small one-link Fisher information to the seed exists on file or here.
+
+**What a proof would need (6.2).** For any one-step form in the window: an explicit lift of finite range and
+rigorous bounds on finitely many local means of the Wilson law at beta from 2.3 to 2.6. That is a formal
+computation, not a hand proof; even the literal form needs xbar(2.6) <= 0.7076. For the level form: a class of
+blocked laws that is kept by an averaging step, with a consumer; this is M-D, unchanged.
+
+**For the lead.** (i) M-D now has an exact first statement, and its one-step versions are decided as mechanisms:
+the literal one is a tadpole fact, the dressed one is a number without a consumer. I would not queue a further
+row on a one-step (BUB). (ii) The one open item with content is a consumer: does a small one-link Fisher
+information of an AVERAGED blocked law give the seed? It is false for the decimation. Without it (BUB-lev) cannot
+be told apart from the seed. (iii) If a cross-check is wanted, the claims to test first are Theorem U1, Lemma
+THIN, and the sentence "no curl form for lab-frame block moves".
+
+**Not done.** No averaging map at finite coupling (its lifts are not explicit; only the kernel lift (2.2)). No
+second level. No five-dimensional or adjoint-Higgs run. No one-loop computation of the constant 0.35. Balaban's
+paper was not re-read (row 1012's quotation). Rows 1026 and 1034 were read by RESULT line only. No cross-branch
+search beyond row 1379's (as in row 1380). The Monte Carlo errors treat samples as independent; one lattice size.
+
+**Credits.** Balaban (block averaging, the background minimiser, the effective action (0.22), CMP 109 and 99);
+Swendsen (block maps with staples); Sussman and Alpoge with Claude and Codex (the account); Kennedy and Pendleton,
+Creutz (heat bath); the lane's rows: 1018 (Lemma FLOW, Lemma ADD, Lemma NAB; Claude Fable), 1244 (Lemma 2.1,
+Proposition 2.3; Claude Opus), 1013 (Lemma WN, corner formalism; Claude Fable), 1026 and 1034 ((SYM), LF, BD;
+Claude Fable), 1012 (the Balaban quotation; Claude Opus), 1243 ((S-V); Claude Opus), 1025 (the number 0.2575),
+1380 (the proposal of this row).
+
+RESULT: Row 1383 (Claude Fable 5.2 high, Mac mini worker 1; author, checked by no one; three numeric runs under the lock, GUIDE only; no subagents). The short step is written as one exact conditional-variance identity, and its one-step inequality (BUB) is decided as a mechanism: not selective. PROVED by hand, unchecked: Proposition LIFT (cost of a block move under the blocked law = cost of any lift under the Wilson law minus the mean conditional variance of the lift's divergence given the block field; every lift is a bound that never loses); explicit lifts for the block map S_alpha and Lemma THIN (straight-path decimation of ratio m has one-link Fisher information J(nu) <= J(mu)/m in every model, so it is rough in U(1) and in five dimensions too); lab-frame block moves have a site-local cost under every gauge-invariant law, so no curl form exists for them; Theorem U1 (compact U(1) obeys the row's literal (BUB) at every coupling and in every dimension, margin beta(1 - xbar) Q, by the plaquette tadpole; the test "both terms vanish" holds for the Gaussian field only); Lemma BOG (a variance lower bound is a better lift, with Wilson means of local functions as its terms). GUIDE (Monte Carlo, 8^4, decimation of ratio 2): the sign of (BUB) in the window is positive in the literal and in the dressed form, J(nu)/J(mu) = 0.112(2), 0.170(2), 0.201(1) at beta = 2.3, 2.45, 2.6 against the free ratio 0.354; the dressed margin levels near 0.35 at weak coupling for SU(2) and falls to 0 for compact U(1), but U(1) has a margin of the same order (0.24) near its transition. Verdicts: the literal form is a tadpole fact and dead as a gap mechanism; the dressed one-step form is a number at each coupling with no consumer, and a proof in the window would be a formal computation of local Wilson means; the level form with an averaging map is the exact first statement of M-D, holds at weak coupling only as the account's own statement (ARGUED) and is open in the band. Equivalence: the one-step forms are not equivalent to the seed and do not imply it; for the level form I cannot show non-equivalence and cannot show that it implies the seed (no consumer from small J to the seed; false for the decimation). OPEN: the seed, (M-neutral), (W); a consumer for small one-link Fisher information of an averaged blocked law; any exact statement for an averaging map at finite coupling; the five-dimensional and adjoint-Higgs runs; the one-loop value of the constant 0.35.

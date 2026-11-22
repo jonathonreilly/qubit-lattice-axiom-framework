@@ -30,6 +30,8 @@ Status log (each line stamped by date -u in the command that wrote it):
 - 05:23Z grep of 46 mechanism terms over the gap files (all on file except 'charge-2'); read results of rows 1141, 1171, 1175, 1177, 1197, 1244; `prior/gap-2don-proofs-read-opus.md` L118-156 (OpenAI's one-annulus engine); `gap-invent-selective-max.md` L99-150 (C1-C8, Lemma WN). Next: kill verdict on C1 and the astra check items 12-17.
 - 05:33Z read: C1's kill verdict (`gap-invent-selective-max.md` L152-232) and astra check items 11-18 (`gap-invent-selective-check-astra.md` L50-75): C1 and C2 are open again, the fourth-order family identity was never written. Checked 14 more terms (remnant symmetry, Coulomb confinement: rows 1041, 1045, 1141 and `gap-mini-solve-x-opus.md` L52 hold the frame readings). Next: where the seed chain stopped (rows 1375-1377).
 - 05:36Z Sections 1.3 and 2 written (Lemma H). Next: Section 3, the mechanisms with first statements and tests.
+- 05:41Z Section 3 written: mechanisms M-A to M-F with first statements, tests and verdicts; judgement 3.1. Next: Section 4, Theorem C1 with proofs.
+- 05:42Z Section 4 written: the pick (class A1), Lemma SP, Lemma BR, Theorem C1, Lemma PIN. Next: a control run of the constants, then Section 5.
 
 ## 1. Inputs read, the target, and the constraints a mechanism must meet
 
@@ -141,3 +143,276 @@ frames give soft covariant moves only where the frame defect is small (Lemma FR 
 first-order bounds with bounded flows see screening (row 1244); a ball has no free collective coordinate
 (row 1197 (GC)). Section 4 adds the exact form for lab-frame moves: there the softness has no spread at all.
 
+
+## 3. Task (1): the mechanisms, each with its first exact statement, its tests and my verdict
+
+Tests used in every row. (U1) compact U(1), d = 4, weak coupling: massless (the row's test). I add two tests that
+are on file and that the U(1) test alone does not replace: (5D) SU(2) in five dimensions at weak coupling
+(massless, belief grade; row 1011 Section 6); (AH) SU(2) with an adjoint Higgs field in its Coulomb phase
+(massless, belief grade; item A16 of row 1017). Reason: a statement about the ultraviolet roughness of typical
+SU(2) fields passes (U1) and still holds in (5D), so it cannot be a gap mechanism. "Reads" says typical (means
+under the Wilson law) or supremum. (NE) is the rule of 2026-11-22.
+
+### M-A. The 2D-type engine (trivial moves, brackets, fourth-order bound)
+
+- First exact statement: (SOFT) of Section 2 for a named class of moves, with the pin twist of an annulus or a cell
+  as target; then the port of OpenAI's Proposition 2.2 in the form (2.2).
+- Three classes of moves.
+  - A1, lab-frame link-end moves (C1 of row 1013). Reads: typical under Lemma WN, supremum under the elementary
+    bound. **Closed in Section 4 (Theorem C1, Lemma PIN): the softness has no spread; no pin twist is reached.**
+  - A2, covariant one-colour moves along a field-built axis (C7, C8 of row 1013; (N1)). Reads typical. On file:
+    row 1141 (2), (9)-(13): on typical Wilson cells in the window every adjoint section has covariant energy at
+    least c/(1 + b + ...) per unit norm and every tree transport has a mass-like defect. In the language of
+    Section 2: softness at most (1 + b)/c, so kappa is bounded by a function of b alone and by Lemma H the gain
+    is bounded independently of the cell (GIVEN row 1141 (2), unchecked, and given that the port has the form
+    (2.2); ARGUED for the second point). Open on the record: "a general field-dependent frame whose Jacobian
+    cancels the signed defect" (row 1141).
+  - A3, dressed moves: a translation of a block-scale mode together with the response of the finer modes. This
+    is row 1244's conclusion ("a 4D step of the Jensen kind must carry the fluctuation response of an RG step").
+    Remark TAD below says why. No exact statement exists outside the account's small-field region.
+- (U1): one generator, all brackets vanish, no gain. Passes. (5D): the cost of a constant-field twist is not
+  scale-free, no logarithm. Passes. (AH): not tested.
+- (NE): the engine's output is a twist cost of a pinned cell. I cannot show that a pin-twist bound is not
+  equivalent to the seed, because no consumer from a pin-twist bound to (M-neutral) is written (row 1141 names
+  this gap as (L3)).
+- Verdict: A1 dead (PROVED here). A2 blocked in the window by row 1141. A3 is the only form left, and it is not
+  a one-scale statement: it is M-D below.
+
+**Remark TAD (why undressed moves are never soft on typical fields; ARGUED, the content is rows 1011 7.3, 1141 (2)
+and 1244).** Let lambda be a Lie-algebra field of one colour in the smoothest available gauge of a typical
+configuration U = e^a, wavelength r. Its second-order cost is the gradient term beta |d lambda|^2, of order
+beta |lambda|^2 / r^2, plus beta |[a, lambda]|^2. The second term has mean of order beta <|a_l|^2> |lambda|^2 =
+c |lambda|^2 with c of order one in lattice units at every beta (the fluctuation of one link is of order
+beta^(-1/2)). This is the tadpole. Gauge invariance cancels it against a second-order term (the bubble), not at
+first order. So for r above beta^(1/2) the first-order cost of every undressed one-colour move is mass-like, the
+softness is bounded by a constant of order one, and (SOFT) fails. In the 2D model the move is a symmetry made
+local, its cost is exactly the gradient term, and there is no tadpole. This is the same statement as "log S =
+(1/2) log b" in row 1011 7.3. Lemma MC of row 1016 (exact rotations of a link about its staple, the generators of
+overrelaxation) gives moves of zero cost that are not gauge; they keep the action pointwise and the measure of
+every pinned cell, so their brackets are again exact symmetries and reach no twist.
+
+### M-B. The non-central path to the centre twist (C2 of row 1013)
+
+- First exact statement: on the periodic box of side n, Z(t) = the partition function with g_t = exp(t c) inserted
+  at one corner of each plaquette of a co-closed sheet; wanted - Z''(t) <= delta_n Z(t) on [0, pi] with delta_n
+  to 0. Then Z(pi)/Z(0) >= 1 - pi^2 delta_n / 2 (OpenAI's integration from the maximum).
+- Reads: second derivatives of a free energy along a path of twisted laws; no supremum over pins.
+- Consumer: the flux half only (rows 1175, 1177: given the neutral bound, (W) is equivalent to a small
+  elementary twist cost). **It does not serve (M-neutral).**
+- (U1): Z(t) is the partition function with flux t through one plane; - Z''(0)/Z(0) is of order beta. No gain.
+  Passes.
+- Standing: by Corollary WN2 of row 1013 (HOLDS in the astra check), - Z''(0)/Z(0) = beta rho n^2 for the sheet
+  of n^2 plaquettes, rho = xbar - (beta/3) E(1 - x^2), and the lab-frame smearing is the same function of t. So
+  the first statement is FALSE at t = 0 as soon as rho > 0. By the Schwinger-Dyson equation of one link, rho =
+  (beta/3) times the sum over the five other plaquettes at a link of E[y_p . y_p'] (row 1013 writes this as a
+  same-link field-strength correlation). rho > 0 is open on file (astra item 15); it holds if E(1 - x) <
+  3/(3 + 2 beta).
+- (NE): the conclusion at t = pi is the flux half, which with (N-phys) is equivalent to (W) (row 1175). I cannot
+  show the hypothesis is not equivalent to it.
+- Verdict: not live for the target. For the flux half it is false as posed given rho > 0.
+
+### M-C. Locality of the one-step kernel on typical faces (the layer; C5 of row 1013, row 1139's open item)
+
+- Object: K(A, A') = int prod_x dg_x exp(beta sum over space links l = (x, y) of (1/2) tr(g_x A'_l g_y^(-1)
+  A_l^(-1))), the kernel of the kinetic part of the transfer operator between the slices A and A'. It is the
+  partition function of a 3D O(4) model in the SO(4) background (A, A').
+- Exact identity (elementary): the mixed second derivative of log K in two link directions of A' is the layer
+  covariance of the two forces. So decay of layer covariances is quasi-locality of log K.
+- First exact statement (LAY-cov): there are C and ell(b) with E | Cov_layer(f_x, h_y | A, A') | <= C exp(- |x - y|
+  / ell(b)) for local functions of g near x and y, the mean taken over the Wilson law of two neighbouring slices.
+- Reads: typical faces (the Wilson law of the pair of slices). Not a supremum.
+- Why it could be selective: in U(1) the layer is a 3D XY model in the background A' - A. It keeps the exact global
+  symmetry theta to theta + const in EVERY background, so at weak coupling it has a Goldstone mode and power-law
+  covariances; then log K = - (beta/2) |(A' - A)^T|^2 up to corrections, with the dipole kernel of the transverse
+  projection (ARGUED). For SU(2) the background (A, A') has trivial stabiliser on typical slices, the layer has no
+  continuous symmetry, and by row 1141 (2) its fluctuation operator at a maximiser has a mass of order one.
+- (U1): passes in this argued form. **(5D): fails as a gap mechanism: the mass comes from the roughness of thin
+  links, which is the same in five dimensions at weak coupling.** So (LAY-cov) is true or false together in 4D
+  and 5D and cannot separate a gapped theory from a massless one.
+- (NE): not equivalent to the seed (it does not see the scale).
+- Consumer: none. The Durhuus-Frohlich comparison needs the background-uniform form, which is false far above the
+  window (rows 1139, 1140).
+- Verdict: a true-looking selective fact about Gauss's law (colour-electric flux is not conserved on typical
+  fields, so the instantaneous Coulomb kernel is short-ranged at the lattice scale), with no consumer and no
+  information on the gap. Not picked.
+
+### M-D. A flow statement through the band (K-flow) with dressed moves
+
+- What it would say: for a class A(b) of laws on block fields, defined by typical-field properties and containing
+  Wilson's first-passage data at b = 4/gamma^2, one block step maps A(b) into A(b - c) for every b >= b_0, and
+  A(b_0) has a seed.
+- (U1): the abelian class is mapped into itself with c = 0. (5D): b grows. (AH): a clause of A must exclude
+  long-range order of an adjoint section.
+- (NE): a class with a proved step is not the seed. But I cannot write a class. The account controls block
+  actions only while g_k <= gamma (rows 1012, 1058); Proposition NP and Lemma PT bind classes read through
+  finitely many numbers (lead rule W2); Lemma AFF binds one-sample criteria (lead rule CL).
+- Verdict: this is where the problem is. No first exact statement is available to me. Not picked.
+
+### M-E. Statements that restate the seed (not mechanisms, by the rule)
+
+- The thermal shift along the coupling: log(1 + s_(n, beta)(t)) = int_0^beta d beta' [E^(t) - E^(infinity)](sum_p
+  x_p), since the transfer operator has rank one at beta = 0. On file: row 1145 (24), (MONO-Delta). The path stays
+  at lattice temperature 1/t; with t = 2 w_j this is below the deconfinement point at every beta' <= beta_j. A
+  bound on the integrand at each beta' is the seed at each coupling. EQUIVALENT in kind; no progress.
+- The whole-face conditional likelihood at physical time (rows 1367-1377): where the seed chain stopped.
+- Typical-pin mixing of a cell at one scale: by lead rule CL a two-sample mean with a small constant is one-scale
+  mixing of the class.
+
+### M-F. The Ding-Huang-Yang port
+
+- Standing: row 1197 (GC): a ball of gauge field has no collective coordinate with a scale-free law. I add one
+  remark (ARGUED): the collective coordinates of a gauge field with an exactly known law are the gauge frame
+  (Haar, but invisible to invariant functions) and the centre flux sectors of a torus (discrete). Neither gives
+  a good-box event of probability bounded below at every scale.
+- Verdict: dead for the target as far as the record goes.
+
+### 3.1 Judgement
+
+1. **No mechanism with an exact first lemma is live for the neutral target (M-neutral).** The two items that the
+   record left open in the 2D port are C1 and C2. C1 is closed in Section 4. C2 serves the flux half only and is
+   false as posed when rho > 0.
+2. The 2D proofs use symmetric soft moves. In 4D SU(2) every undressed move has a mass-like first-order cost on
+   typical fields (Remark TAD, Theorem C1, row 1141). The gain can only come from dressed moves, which is a
+   renormalization step in the band (M-D). The two 2D papers do not have this problem and give no tool for it.
+3. The (U1) test alone lets ultraviolet facts through (M-C). The (5D) test should be part of the selectivity test.
+
+## 4. Tasks (2) and (3): the pick, its first lemma, and the attack. Result: C1 is closed (Theorem C1, Lemma PIN)
+
+**The pick.** M-A, class A1: the corner-twist engine with lab-frame link-end moves. It is the one item of the 2D
+port that the record left open with an unwritten first lemma ("the fourth-order family identity was never
+written", astra check of row 1013, item 13). Its first lemma is (SOFT) for this class: a family of link-end
+fields whose brackets give lambda times a twist class with lambda growing against the cost.
+- What it reads: with free sites, means under the Wilson law (Lemma WN (iii) of row 1013); without them, the
+  elementary bound, which is uniform over pins. So the class has both readings.
+- Which statement would consume it: the analogue of OpenAI's Proposition 3.1 (a vanishing twist cost of a pinned
+  annulus), then a mixing bound for pinned cells. No statement of the chain 1342-1359 consumes a pin-twist bound
+  today (row 1141's open step (L3)). So even a success would have needed a second lemma.
+- Outcome: the first lemma is FALSE in the strongest sense. The proof needs no fourth-order identity.
+
+Everything in this section is PROVED by hand by Claude Fable 5.2 in this session and checked by no one. Lemma WN
+(i)-(ii), which I use only for the definitions, is row 1013's and holds in its astra check.
+
+### 4.1 Setting
+
+A periodic lattice Z^4/(n Z)^4, n >= 3. A set of pinned links; the other links are integrated with Haar
+measure. (A pinned cell is the case where all links outside a box are pinned.) A link-end is a pair e = (l, x)
+with x an end of l. V_x is the set of the 8 link-ends at x. Two link-ends at x are opposite if their links have
+the same direction. A corner at x is an ordered pair c = (e -> e') of non-opposite link-ends at x, one for each
+plaquette through x, oriented as the plaquette: there are 24 corners at x, one for each unordered non-opposite
+pair. The corner graph Gamma_x has vertex set V_x and one edge for each corner. It is K_(2,2,2,2) (row 1013 4.1).
+
+For a complex function f on link-ends put (delta f)_c = f_e' - f_e, gamma(f) = |delta f|_2^2 = the sum over corners
+of |f_e' - f_e|^2, alpha(f) = the largest |f_e|^2, kappa_x(f) = the mean of f over V_x, r = f - kappa (the
+reduced field), |r|_x^2 = the sum over V_x of |r_e|^2. The bracket of f is the real corner field
+
+  S(f)_c = Im(conj(f_e) f_e').
+
+(With F_e = f^1_e a + f^2_e b, f = f^1 + i f^2 and [a, b] = c: [F_e, F_e'] = S(f)_c c. So row 1013's corner
+bracket B = (1/2)[F_e, F_e'] is (1/2) S(f)_c c.) A real corner field is removable if it is delta G with G a real
+function on link-ends that vanishes on the ends of pinned links: by Lemma WN (i)-(ii) the translation by G is a
+change of Haar variables and the twisted partition function does not change. For a real corner field h,
+|[h]|_2 is the least value of |h + delta G|_2 over such G. Since delta and the pinning condition act inside each
+V_x, |[h]|_2^2 is a sum over sites of a function of the restriction of h to the corners at that site.
+
+### 4.2 Lemma SP (spectrum of the corner graph)
+
+The Laplacian of Gamma_x has eigenvalues 0 (once), 6 (four times), 8 (three times). Hence for every complex f
+
+  6 |r|_x^2 <= the sum over corners at x of |f_e' - f_e|^2 <= 8 |r|_x^2.
+
+Proof. The adjacency matrix is A = J - 1 - M, with J the all-ones matrix and M the matching of opposite
+link-ends. On constants A = 8 - 1 - 1 = 6. On the functions with sum 0 that are even under M (dimension 3),
+J = 0 and M = 1, so A = -2. On the functions that are odd under M (dimension 4), J = 0 and M = -1, so A = 0.
+The Laplacian is 6 - A. Apply it to the real and imaginary parts of f; r is the part orthogonal to constants. QED
+
+### 4.3 Lemma BR (the bracket modulo removable fields)
+
+For every complex f that vanishes on pinned link-ends, S(f) = S(r) + delta g with g_e = Im(conj(kappa_x) r_e) for
+e in V_x. The field g is real and vanishes on pinned link-ends. Further
+
+  the sum over corners at x of |S(r)_c|^2 <= (1/2) |r|_x^4.
+
+Proof. conj(f_e) f_e' = |kappa|^2 + conj(kappa) r_e' + conj(r_e) kappa + conj(r_e) r_e'. The imaginary part of the
+third term is - Im(conj(kappa) r_e). So S(f)_c = g_e' - g_e + S(r)_c. At a pinned link-end f_e = 0, so r_e =
+- kappa_x and g_e = Im(- |kappa_x|^2) = 0. For the bound, |S(r)_c| <= |r_e| |r_e'|, and the sum over unordered
+pairs of |r_e|^2 |r_e'|^2 is at most (1/2) (sum over V_x of |r_e|^2)^2. QED
+
+In words: the free part of a link-end field at a site, its mean kappa_x, is a gauge rotation. It can be as
+large as one likes at no cost, and its bracket with anything is removable. Only the reduced field r makes a
+bracket, and r is controlled by the cost (Lemma SP). Amplitude and cost are the same thing on the corner graph.
+
+### 4.4 Theorem C1 (the corner engine has no gain)
+
+Let f_1, ..., f_M be complex functions on link-ends that vanish on pinned link-ends. Put alpha_i = alpha(f_i),
+gamma_i = gamma(f_i), Q = sum_i S(f_i), Q~ = sum_i S(r_i), T = sum_i (delta f_i) (x) conj(delta f_i). Then
+
+  (I)  |Q~|_2^2 <= (2/3) sum over i, j of min(alpha_i gamma_j, alpha_j gamma_i),
+  (II) |Q~|_2^2 <= (7/72) |T|_HS^2,
+
+and Q - Q~ is removable. Consequently, let any inequality of the form (2.2),
+
+  R(Q, conj Q) <= K |T|_HS^2 + B sum over i, j of min(alpha_i gamma_j, alpha_j gamma_i),   K >= 0, B >= 0,
+
+be used with a family for which Q = lambda h + (removable), lambda > 0, h a real corner field. The bound that it
+gives for the response of h, Y = (right side)/lambda^2, satisfies
+
+  Y >= ((72/7) K + (3/2) B) |[h]|_2^2.
+
+Proof. By Lemma BR, Q - Q~ = delta(sum_i g_i) is removable. At a site x, by the triangle inequality and Lemma BR,
+the l^2 norm of Q~ over the corners at x is at most 2^(-1/2) sum_i |r_i|_x^2. So
+
+  |Q~|_2^2 <= (1/2) sum_x (sum_i |r_i|_x^2)^2 = (1/2) sum over i, j of sum_x |r_i|_x^2 |r_j|_x^2.            (4.1)
+
+(I): |r_i|_x^2 <= the sum over V_x of |f_(i,e)|^2 <= 8 alpha_i, because subtracting the mean lowers the l^2 norm.
+By Lemma SP, sum_x |r_j|_x^2 <= gamma_j / 6. So sum_x |r_i|_x^2 |r_j|_x^2 <= (4/3) alpha_i gamma_j, and the same
+with i and j exchanged; insert the smaller one in (4.1).
+(II): T is positive semi-definite. Dropping the blocks between different sites lowers the Hilbert-Schmidt norm:
+|T|_HS^2 >= sum_x |T_x|_HS^2. T_x has rank at most 7, the rank of delta on V_x, so |T_x|_HS^2 >= (tr T_x)^2/7, and
+tr T_x = the sum over i of the cost of f_i at x >= 6 sum_i |r_i|_x^2 by Lemma SP. So |T|_HS^2 >= (36/7) sum_x
+(sum_i |r_i|_x^2)^2 >= (72/7) |Q~|_2^2 by (4.1).
+Last, Q~ = lambda h + (removable), so |Q~|_2 >= lambda |[h]|_2. Insert (I) and (II) in the right side. QED
+
+**What it says.** Whatever the constants K and B of a port of OpenAI's Proposition 2.2 to corners are, and
+whatever family is used (any number of modes, any supports, any scales), the bound for a twist class [h] is at
+least a fixed multiple of |[h]|_2^2. The elementary bound is also a multiple of |[h]|_2^2 (at most 4 beta
+|[h]|_2^2 by the direct term of Lemma WN's proof; beta xbar |[h]|_2^2 under the hypothesis of Lemma WN (iii)).
+|[h]|_2^2 is a sum of site-local terms. So the route can change the constant and nothing else: no logarithm, no
+dependence on the size of the cell, in any dimension. In the language of Lemma H the softness of every reduced
+move lies between fixed numbers. This is the exact form of row 1013's sentence "the family inequality is a
+one-site statement", which its check could not accept as a deduction. The fourth-order identity need not be
+written.
+
+**What it does not say.** It is a statement about the bounds this route can produce. It does not bound the
+true response from below. (At t = 0 and for corners at distinct free sites the true response is beta rho |theta|_2^2
+by Corollary WN2 of row 1013, also site-local.)
+
+### 4.5 Lemma PIN (no pin twist is a bracket class)
+
+Let G be a real function on the ends of pinned links, extended by 0 to the other link-ends, and h = delta G: the
+corner field of the pin twist u_l -> exp(G_(l,x) c) u_l exp(- G_(l,y) c). Suppose lambda h = sum_i S(f_i) + delta G'
+with lambda not 0, and f_i, G' vanishing on pinned link-ends. Then G is constant on the pinned link-ends at each
+site. So the twist is a gauge transformation of the pinned links by exp(phi_x c), and Z(twisted pin) = Z(pin).
+
+Proof. Let c = (e -> e') be a corner at x with e or e' pinned. Then S(f_i)_c = Im(conj(f_(i,e)) f_(i,e')) = 0.
+So lambda (G_e' - G_e) + G'_e' - G'_e = 0. If both are pinned, G_e = G_e'. If e is pinned and e' is not, G'_e' =
+lambda G_e. Take two pinned link-ends e_1, e_2 at x. If they are not opposite, G is equal on them. If they are
+opposite, any third link-end e_3 at x is opposite to neither; if e_3 is pinned, G_(e_1) = G_(e_3) = G_(e_2); if
+not, lambda G_(e_1) = G'_(e_3) = lambda G_(e_2). So G = phi_x on the pinned link-ends at x. Put phi = 0 at the
+sites without pinned link-ends. The gauge transformation by exp(phi_x c) maps the pinned links to the twisted
+pinned links, keeps every plaquette trace, and is a change of Haar variables on the integrated links. QED
+
+**What it says.** The consumer of the 2D engine reads the twist of the pinned boundary of an annulus. In the
+corner class the brackets of bulk moves reach only those pin twists that are gauge transformations, whose cost is
+zero already (Lemma TWIST of row 1013). The abelian boundary field of the Schrodinger functional, with a
+transverse part, is never reached. This is the gauge form of "a gauge cell that is a ball has no free collective
+coordinate" (row 1197): in the spin model the relative rotation of the inner and outer pins is not removable,
+here it is.
+
+### 4.6 Standing of M-A after this section
+
+| Class of moves | Standing | By |
+|---|---|---|
+| A1 lab-frame link-end moves, any family, any port of the form (2.2) | CLOSED: no gain in scale; no pin twist reached | Theorem C1, Lemma PIN (PROVED here, unchecked) |
+| A2 one-colour covariant moves along sections or tree transports | blocked in the window | row 1141 (2), (9)-(13) (PROVED by gpt-6.2-astra, unchecked) with Lemma H |
+| A2 general field-dependent moves with Jacobian one | open as a class; Remark TAD argues the first-order cost is mass-like | row 1141's open item |
+| A3 dressed moves | not a one-scale statement; needs block actions in the band | row 1244; M-D |

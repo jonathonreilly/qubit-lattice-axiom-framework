@@ -32,6 +32,8 @@ Status log (times by date -u in the same command):
 - 06:09Z Section 1 written: sources, registry grep, design. Identity next.
 - 06:10Z Section 2 written: Proposition LIFT, three explicit lifts, Lemma THIN, lab-frame reduction (PROVED, unchecked). (BUB) forms and tests next.
 - 06:18Z Section 3 written: three forms of (BUB), free-field control (run 1 void by a script bug, run 2 passes), Theorem U1 (literal form holds for compact U(1): not selective), Lemma THIN consequences. Weak coupling and Balaban next.
+- 06:20Z Section 7.1 written (design and criteria of the SU(2) GUIDE run) before the batch starts. Batch launched in the background under the lock.
+- 06:22Z Sections 4-6 written (tests in five dimensions and with an adjoint Higgs field; Balaban comparison, ARGUED; Lemma BOG PROVED; what a proof needs; equivalence). Batch still running.
 
 ## 1. Sources read, registry matches, and the design (written 06:09Z by date -u)
 
@@ -306,3 +308,174 @@ For an averaging map the free field keeps J of order beta at every level in d = 
 is false for the free photon. I have no exact statement for an averaging map at finite coupling: its lifts are
 not divergence-free fields of one link (the paths of different coarse links share fine links), and only the
 kernel lift (2.2) is explicit.
+
+## 4. The other tests: five dimensions, adjoint Higgs (written 06:22Z by date -u)
+
+Each line says what was proved and what is only argued.
+
+- **(5D), literal form.** Proposition LIFT, Lemma THIN and Theorem U1 do not use the dimension. So (BUB-lit)
+  holds for compact U(1) in five dimensions at every coupling (PROVED), and for SU(2) in five dimensions with the
+  decimation whenever xbar < q_D/4 = 0.769 (q_D = 3.08 in d = 5, Section 3.2; from Lemma THIN, GUIDE grade for
+  the number). By row 1380's rule, a fact that holds verbatim in five dimensions is ultraviolet. The literal form
+  is the plaquette tadpole.
+- **(5D), dressed one-step form.** No exact statement. The dimension enters (BUB-d) only through the free ratio
+  rho_C, which is the classical scaling of the map (averaging: between 0.8 and 1.4 per step in d = 4 and between
+  1.9 and 2.4 in d = 5 by Section 3.2). After rho_C is taken out, what is left at weak coupling is a one-loop number of one
+  momentum shell. Such a number exists in d = 4 and d = 5 alike (ARGUED; not computed). So I expect (BUB-d) to
+  be true or false together in four and five dimensions at weak coupling. It does not see the scale.
+- **(5D), level form.** For an averaging map in d = 5 the free value of J doubles at each level (3.2). So
+  (BUB-lev) is false in five dimensions at weak coupling (ARGUED from the free field). This is the only form in
+  which the dimension four enters: the free ratio tends to 1, so drops of order one per level are not covered by
+  a classical growth.
+- **(AH), SU(2) with an adjoint Higgs field on the sites.** The hopping term of a site field holds one link per
+  term. So Lemma THIN holds verbatim with J(mu) the full one-link cost: the decimated law has J to 0 at every
+  coupling, also in the Coulomb phase. The literal form is again decided by one-link tadpoles. For an averaging
+  map the level form must fail in the Coulomb phase if the photon is there (BELIEF grade, as item A16 of row
+  1017): the photon keeps a stiffness. So a proof of (BUB-lev) for pure SU(2) must use a property that the Higgs
+  model lacks; this is the clause "no long-range order of an adjoint section" that row 1380 put into M-D.
+
+Test summary.
+
+| Form | compact U(1), d = 4 | SU(2), d = 5 | adjoint Higgs | verdict |
+|---|---|---|---|---|
+| (BUB-lit) | HOLDS at every beta (Theorem U1, PROVED) | holds while xbar < 0.769 (decimation; GUIDE number) | not run; set by one-link tadpoles | not selective: a tadpole fact |
+| (BUB-d), one step | holds with c = 0 at every beta (PROVED); margin tends to 0 at weak coupling (ARGUED) | expected as in d = 4 (ARGUED) | not run | selective against U(1) only at weak coupling; does not see the scale |
+| (BUB-lev), averaging map | false for the free photon (GUIDE numbers 3.2) | false at weak coupling (ARGUED) | false in the Coulomb phase (BELIEF) | passes the three tests; it is a statement about all levels |
+| (BUB-lev), decimation | levels fall to 0 (Lemma THIN, PROVED) | same | same | not selective |
+
+## 5. Weak coupling: the comparison with Balaban's identification of the marginal term (ARGUED; written 06:22Z by date -u)
+
+Source: Balaban, Commun. Math. Phys. 109 (1987), as quoted by row 1012 (`prior/gap-gauge-stiffness-read-opus.md`
+L109-115): A_k(g_k, V) = (1/g_k^2) A(U_k(V)) + E_k(U_k(V)) (0.22), with U_k(V) the minimiser of the action among the
+fields with k-fold block average V; 1/g_1^2 = 1/g_0^2 - beta_1(g_0) (0.18) and 1/g_(k+1)^2 = 1/g_k^2 + beta_(k+1)(g_k)
+(0.20), signs as printed; "gauge invariance ... identifies the action A(U_k), through a set of Ward-Takahashi
+identities, as ... the marginal variable"; valid for small fields while every g_k <= gamma. I did not re-read the
+paper. Nothing in this section is proved.
+
+The dictionary with Section 2.
+
+1. **Balaban's lift is the harmonic lift.** U_k(V) is the non-linear form of the minimiser t~ of 3.1. The first
+   term of (0.22) is the classical form of the harmonic lift with the running coefficient 1/g_k^2. For a
+   constant-coefficient block move W, (LIFT-2) on the coarse side gives cost_nu(W) = E_nu[- W W A_k]. With (0.22):
+
+     J(nu^(k)) = (1/g_k^2) h_k + e_k,   h_k = E[- W W (A o U_k)],   e_k = E[- W W (E_k o U_k)].
+
+   h_k is the mean Hessian of the classical action at the minimiser; e_k is of order one if the bounds on E_k
+   carry to two derivatives (Balaban's analyticity in the field gives this on the small-field set; not derived
+   here, and the large-field regions are not treated here).
+2. **One step.** J(nu^(k+1)) - J(nu^(k)) = [1/g_(k+1)^2 - 1/g_k^2] h_(k+1) + (1/g_k^2)(h_(k+1) - h_k) + (e_(k+1) - e_k). The
+   first term is the running: for SU(2), beta = 4/g^2 falls by (11/(3 pi^2)) log 2 = 0.2575 per doubling at one
+   loop (RECALLED; the lane has this number in row 1025). The second term is the classical transient of the map
+   times a LARGE factor: for the averaging map of 3.2 the free value goes 6, 8.3, 6.8, so at the first steps the
+   change of J is of order beta and has no fixed sign. The third term is a change of one-loop constants.
+   Balaban's own formulas name the first step apart ((0.18) against (0.20)).
+3. **So the universal coefficient is the one-step drop of J only at levels where h_k and e_k have converged.**
+   At the first step from the Wilson action it is one summand among map-dependent terms. This is why no
+   one-step statement about the Wilson law itself can be "asymptotic freedom" in exact form, and why (BUB-d)
+   needs the factor rho_C and still keeps map-dependent constants.
+4. **(BUB-lev) at weak coupling is the account's own statement.** GIVEN Balaban's Theorems 1 and 2 as the
+   account ports them (every g_k <= gamma), the convergence of h_k and e_k, and small large-field terms, an
+   averaging map has J(nu^(k+1)) <= J(nu^(k)) - c for k >= k_0, with c near 0.2575 times the limit of h_k. Not derived
+   here; it would be a corollary of the small-field expansion, and it gives nothing new where the account works.
+   In the band (g_k of order one) the expansion stops, and (BUB-lev) there is M-D of row 1380, unchanged.
+5. **What the Ward identities do, in the language of Section 2.** Gauge invariance of the blocked law gives the
+   FORM of the cost: site-local for lab-frame moves, zero on constants (the Gauss law), two numbers per law
+   (2.4). Balaban's identities do the same for the effective action: they say the marginal term is the gauge
+   invariant action; its coefficient comes from the perturbative computation. In neither place does gauge
+   invariance give the sign of the change of the coefficient. This agrees with rows 1243 and 1244.
+6. **Where row 1244's logarithm sits in block form.** Row 1244 (Proposition 2.3) shows that a bounded flow loses
+   the logarithm of the bubble, because the best flow K_* = -(1/2) G M_1 grows like 1/lambda on the infrared modes.
+   Given the block field of an averaging map, the fluctuation has a mass of the order of the block scale (ARGUED;
+   it is Balaban's regularity of the propagators with the averaging constraint, CMP 99, on the small-field set).
+   So in one block step the conditional bubble is one momentum shell, its size is of order log 2 and not a
+   logarithm of the box, and the best correction of a lift is bounded and local. In Lemma H's language (row
+   1380) one step has no spread of softness and a gain of order one; the logarithm is the number of levels.
+   This is the positive content of M-D, and it is ARGUED only.
+
+## 6. What a proof would need; the equivalence question (written 06:22Z by date -u)
+
+### 6.1 Lemma BOG: a lower bound on the variance term is a better lift (PROVED, unchecked)
+
+Deterministic block map C, a lift W~ of W with Psi = W~ A + div W~, and a **vertical** field Z on X (dC(Z) = 0),
+with D_Z = Z A + div Z. Then
+
+  (i)   E[D_Z | V] = 0 and E[Z g | V] = - E[g D_Z | V] for every smooth g;
+  (ii)  E[Z Psi | V] = E[W~ D_Z | V];
+  (iii) E Var(Psi | V) >= (E[W~ D_Z])^2 / E[D_Z^2],  and  E[D_Z^2] = - E[Z D_Z].
+
+Proof. (i) For smooth f on Y, Z(f o C) = 0, so E[f(V) Z g] = E[Z(f(V) g)] = - E[f(V) g D_Z]; g = 1 gives the first
+claim. (ii) [Z, W~] is C-related to [0, W] = 0, so it is vertical and its divergence Z Psi - W~ D_Z has conditional
+mean zero by (i). (iii) By (i), Cov(Psi, D_Z | V) = E[Psi D_Z | V] = - E[Z Psi | V] = - E[W~ D_Z | V]. The
+Cauchy-Schwarz inequality, first given V and then for the mean, gives (E[W~ D_Z])^2 <= E Var(Psi | V) E Var(D_Z | V)
+<= E Var(Psi | V) E[D_Z^2]. The last identity is (LIFT-2) for Z. QED
+
+Reading. The right side of (iii) is what the lift W~ - s Z gains at the best s. So **every lower bound of this
+kind on the bubble is an upper bound on J(nu) by an explicit lift, and its three terms are means of explicit local
+functions under the Wilson law** (direct terms, by (LIFT-2)). This is Lemma 2.1 of row 1244 (direct term minus
+the best Bogoliubov ratio) without the Gaussian model, in block form. Lemma THIN is the case W~ = first-link
+lift, Z = the difference of the two transported link moves.
+
+### 6.2 What a proof of a one-step form in the window would need
+
+1. An explicit lift of finite range (for the decimation: the transported harmonic lift, or the spread lift
+   corrected by a few vertical fields on the links next to the coarse line).
+2. Its cost, which is a finite combination of means of local functions of the Wilson law at the coupling (small
+   loops with insertions). Example: Lemma THIN needs none; (BUB-lit) through Lemma THIN needs the one number
+   xbar(beta) <= 0.7076.
+3. Rigorous upper bounds on these means at beta from 2.3 to 2.6. No expansion reaches these couplings, so this
+   is a (K-one) number: a formal computation in the sense of `GOAL.md`, not a hand proof. I know no inequality
+   that gives xbar(2.6) <= 0.7076 by hand (the bound from Lemma NAB of row 1018 gives 0.91).
+So even the trivial form (BUB-lit) has no hand proof in the window. The obstruction is not the bubble. It is
+that a one-step statement at an order-one coupling is a number.
+
+### 6.3 The rule "Equivalent is not progress"
+
+- (BUB-lit) is not equivalent to the seed and does not imply it: it holds in compact U(1) (Theorem U1).
+- (BUB-d), one step, is not equivalent to the seed and does not imply it: it is one number at one lattice scale,
+  compact U(1) obeys it with c = 0 at every coupling, and the blocked law is not a Wilson law, so the step does
+  not repeat. It has no consumer.
+- (BUB-lev) for an averaging map, at every level through the band, would give J(nu^(K)) <= j_0 at some level K. **I
+  cannot show that this is not equivalent to the seed, and I cannot show that it implies the seed.** What small
+  J gives by a standard route: the relative entropy of the blocked law with respect to the product Haar measure
+  is at most 3 J per coarse link (Bakry-Emery for SU(2) with the metric of 2.1, where the Ricci curvature is
+  1/2, and tensorisation; RECALLED, not rebuilt). That bounds the law of a bounded window (Pinsker). It gives no
+  decay at long distance and no thermal count. For the decimation the implication is false (3.5). For an
+  averaging map a consumer "J small gives the seed" is not on file (grep: "one-link Fisher" 0 files) and I did
+  not find one.
+- By Lemma ADD of row 1018 a step statement with a fixed drop restates its end point in steps unless an
+  identity proves the step. Here the identity exists (Proposition LIFT) and its mechanism slot is Lemma BOG.
+  The slot is filled by a number at each level, not by a sign: Section 6.2. In the band nothing fixes these
+  numbers. So (BUB-lev) is M-D with an exact first statement and without a proof route; it is not progress on the
+  seed in the sense of the rule.
+
+## 7. GUIDE run: the one-link Fisher information of the decimated SU(2) law (criteria written 06:20Z by date -u, before the batch)
+
+### 7.1 Design and criteria (fixed before the batch; a smoke test on 4^4 and a 2.5 s timing run on 8^4 were made first)
+
+- Model: SU(2) Wilson on 8^4, periodic. Block map: the decimation D of ratio 2 (kappa = infinity). Lift: the
+  spread lift Psi = (N_l1 + N_l2 carried to the coarse site)/2 of 2.3 (c), and the first-link lift N_l1 as a second
+  estimator.
+- Estimator: J(nu) = E[Psi(U_a) Psi(U_b)] per colour, with U_a, U_b two runs of the conditional heat bath started
+  from the same Wilson configuration U and keeping V = C(U): the pair (U_l1, U_l2) of each coarse link is updated
+  as g, g^(-1) V with the exact conditional weight; all other links by the usual heat bath. This is
+  E[(E[Psi | V])^2] = J(nu) once the two runs are independent given V (Proposition LIFT).
+- Schedule: 300 sweeps from a cold start, then 40 samples, 10 sweeps apart; 30 conditional sweeps for each
+  replica, with a reading at 15. Couplings: 2.3, 2.45, 2.6 (the window) and 4, 8, 16 (trend to weak coupling).
+- Script `/tmp/row1383/run/dec_mc.py` (scratch, not in git); plain numpy, quaternion links; under the numeric
+  lock (holder row1383-fable), BLAS threads 1, nice, RSS guard 2 GB.
+
+Controls (if one fails at a coupling, that coupling's result is void):
+- (C1) the exact identity (2.1): the measured E[(N_l^a)^2] over all links equals (3/2) beta xbar within 1.5 percent.
+- (C2) Lemma THIN's identities on the same configurations: E[N_l1 . N_l2] = 0 within 3 standard errors, and
+  E[Psi^2] = J(mu)/2 within 3 percent.
+- (C3) the conditional update keeps V (defect below 1e-9) and unit quaternions.
+- (C4) plateau: the estimate at 15 conditional sweeps and at 30 agree within 3 standard errors of the latter
+  (else the replicas are not yet independent given V and the value is only an upper bound).
+- (C5) xbar at beta = 2.3 within 0.006 of 0.602 (published value, RECALLED).
+
+Readings, with R = J(nu)/J(mu) and s its standard error (40 samples, treated as independent; a GUIDE only):
+- (BUB-lit) is POSITIVE at a coupling if R < 0.3538/xbar - 3 s.
+- (BUB-d) is POSITIVE if R < 0.3538 - 3 s, NEGATIVE if R > 0.3538 + 3 s, UNDECIDED otherwise.
+- Trend: D(beta) = rho_D J(mu) - J(nu) at beta = 4, 8, 16. If it levels at a positive number, the first step has a
+  non-abelian one-loop gain (U(1) has D to 0 by 3.3); if it levels at a negative number, the tadpole wins there.
+What the run cannot do: prove a sign; say anything about an averaging map, a second level, or five dimensions.

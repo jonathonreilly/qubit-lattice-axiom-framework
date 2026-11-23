@@ -141,3 +141,181 @@ that statement. I see three types (SKETCHED):
 Questions that Phase 2 must answer: (Q-a) which obstruction of rows 1434, 1438, 1439 falls with the heat-kernel
 weight; (Q-b) what the lane did with heat-kernel, Villain, mixed and constrained actions and with other block maps;
 (Q-c) whether item 5 is on file.
+
+## 2. Phase 2: the passes, read against the action and the block map
+
+Read for this section: the RESULT lines of rows 1379-1381, 1386, 1387, 1390, 1393, 1396, 1401, 1402, 1407, 1409,
+1411, 1434, 1436, 1438-1441 in full; the heads of rows 1330, 1340, 1383, 1418, 1431; parts of the files of rows
+1434, 1436, 1438, 1439. I did not re-derive their proofs. Each "depends on" entry below is my reading of the stated
+proof, labelled.
+
+### 2.1 Phase 1 against the file
+
+| Phase 1 item | Where it already sits | Verdict there |
+|---|---|---|
+| Supplier types (S-mech), (S-comp) | K-I, K-II, K-III of `library/gap-mech-direction2-fable.md` 4.4 (row 1386) | none found |
+| Heat-kernel weight as an auxiliary | idea 17 of `library/gap-brainstorm2-max.md` L164, L222, L306; b1 of `library/gap-crux-exercise2-max.md` L260; A1 of `library/gap-crux-exercise-r858-max.md` L243; 1g of `library/gap-wall-assume-max.md` L55 | "nothing at order one"; "adds exact structure, not known to remove (S-ir)"; "COSMETIC" |
+| The engine does not need Wilson | A1 of `library/gap-crux-exercise-r858-max.md` L243 (I6: any reflection-positive, axis-symmetric weight) | on file |
+| Wilson has no exact heat factor | row 1434 (3), check 1436 | PROVED there, checked |
+| Durhuus-Froehlich with the 2D O(4) theorems (item 5) | method 36 of `parts/gap.md` L70; rows 1139, 1140; `library/gap-mini-solve-h-fable.md` L54 | **dead in the uniform form**: the comparison needs decay uniform over backgrounds, and a period-four background orders the layer at large b |
+| Positive dual for a heat-kernel weight | `library/gap-mini-solve-x-opus.md` L56; rows 737, 744, 878 | signs from crosscaps and 6j symbols |
+
+So Phase 1 produced nothing that is new to the file. Its item 5 is withdrawn. Its item 3 is on file as cosmetic.
+
+### 2.2 The obstructions of the nine passes, by what they depend on
+
+W = depends on the Wilson weight. S = depends on straight-product (or slice) blocking. A = holds for every
+reflection-positive single-plaquette weight with the same proof idea. The last column is my reading (SKETCHED unless
+marked).
+
+| Row (check) | Obstruction | Depends on |
+|---|---|---|
+| 1380 (1381) | Theorem C1: lab-frame link-end moves have a site-local cost in every bound of OpenAI's form (2.2); corner graph K_(2,2,2,2) | A: the cost form is a quadratic form of any smooth weight; the constants (72/7) K + (3/2) B change |
+| 1386 (1387) | Proposition NEG: every proved band statement on file is lattice-local, an identity or a negative, and holds in five dimensions. Lemma GRP: the borderline logarithm sits at D = 2N/(N-1) | A: NEG is logic over the file; GRP is a continuum toron integral, no lattice weight in it |
+| 1390 (1393) | Lemma CW (degree d - 4 of the classical weight); REF and MKO (bond moving, log-majorization); NOSIGN | A: REF needs only positive type. CW is classical. Check 1393 found the closure of the grid class FAILS |
+| 1396 (1401) | Inequality (1) undecided; USE (no transport, no rate, no entry); Lemma KER (the Wilson kernel difference changes sign near beta 4) | **W for Lemma KER** (a Bessel fact). USE is A. With a heat-kernel time weight, time coarsening is exact (semigroup), and the trace comparison is Araki-Lieb-Thirring; NOSIGN still applies to the quotient |
+| 1402 (1407) | COVER is a rewriting of the seed; TORNEG | A |
+| 1409 (1411) | Lott's weighted-fibre transport fails on a regular fibre by (4 beta/N) sin(t/2); second obstruction beta above N^2/(4(d-1)) | **W in the number, S in the map** (two-link product). For Villain U(1) the hypothesis holds class by class (Gaussian fibres are translates) and gives nothing, as the O'Neill term is zero. Other maps "need a separate test" (row 1409's own words) |
+| 1434 (1436) | No exact independent heat factor on a straight-product coarse link: factorial lower bound on all-spin loops | **W, by check 1436's own argument**; S only in the statement. See Proposition VIL below: with the Villain weight the factor exists and gives nothing |
+| 1438 (1440) | (11)-(12): any invertible slice channel leaves the neutral spectrum unchanged. (5)-(6): the residual is not site reflection positive through a kept slice | A (row 1438 L176: "works for any time-ho[mogeneous]" law); S in the sense of slice-wise observation |
+| 1439 (1441) | Independent thinned commutator factors exist only for p up to about e^(-12 beta); they fix no coupling sign (9) | A in kind: Lemma 2 holds for "any central probability N" and reads the weight through its log oscillation on one link (12 beta for Wilson; six times log(K(1)/K(-1)) for a heat kernel). The number is W |
+| 1418-1437 | signed finite facts on bare Wilson blocks; check 1431: the sign depends on the reference | W in the numbers (Bessel coefficients); A in the conclusion of check 1431 |
+
+Count. Of the nine passes, three have an obstruction that a heat-kernel weight removes or changes in kind (1396
+Lemma KER, 1409's number, 1434). None of the three removals gives a gain: 1396's USE holds for every weight; 1409's
+hypothesis is then met by U(1) with zero curvature term; 1434 is Proposition VIL. The other six do not see the weight.
+Straight-product blocking enters 1409, 1434 and 1439 as the chosen map. No pass tested Balaban's averaging map at a
+coupling of order one, and no pass could: no one has an estimate for it there (K-II of row 1386).
+
+### 2.3 Proposition VIL: the heat-factor class is realised exactly by a massless model
+
+This answers question (Q-a) for row 1434, and it is the one statement of this row that I did not find on file
+(grep of `library/open-core.md`, of the four candidate files, and of the FINISH rows for "Villain" with "heat factor"
+or "heat kernel": no match but this row).
+
+**Setting.** A finite periodic lattice (Z/N)^d with link set E and plaquette set P. Cochains over R, d from 1-forms to
+2-forms, K = ker d. The Villain law at coupling beta > 0 has the density, with respect to Haar measure on the
+torus T^E = (R/2 pi Z)^E,
+
+  f(theta) = sum over n in Z^P of exp( -(beta/2) || d theta - 2 pi n ||^2 ),
+
+computed on any lift of theta (a change of lift by 2 pi m shifts n by dm). Let k_s be the wrapped Gaussian of
+variance s on the circle. It is the heat kernel of U(1) at time s.
+
+**Proposition VIL (PROVED by hand here, unchecked).** Let 0 < tau <= 1/(4 d beta). Then
+
+(a) f/Z = (product over links of k_tau) * nu, with nu a probability measure on T^E. In words: a Villain field is
+    theta' + xi, with theta' of law nu and xi independent of theta', independent over links, each of law k_tau.
+(b) For every block size b >= 1, the straight sums Theta_e = sum of theta over the b fine links of the coarse edge e
+    have the law (product over coarse edges of k_(b tau)) * nu_b, with nu_b the law of the straight sums of theta'.
+    So the pushed-forward law has an exact independent heat factor of time b tau on every coarse link, with a
+    positive residual, at every coupling, every block size and every dimension.
+(c) If a law on G^E, G a compact group, has independent central heat factors of time tau on all links with a
+    positive residual, then its straight products of b links have independent central heat factors of time b tau.
+(d) In d = 4 at large beta the Villain model has no gap (Froehlich and Spencer, CMP 83, 1982, `unchecked`, lane
+    anchor `library/prior/gap-lit-vmf-tor.md` L52). So the first lemma of row 1434's candidate, in the strongest
+    form (every link, every scale, a time that does not shrink), does not imply a gap, and implies nothing that
+    separates a massive from a massless model.
+
+Proof. (a) Fix n. Write 2 pi n = d y_n + r_n with r_n orthogonal to the image of d and y_n in the orthogonal
+complement of K. Then ||dx - 2 pi n||^2 = ||d(x - y_n)||^2 + ||r_n||^2 for x in R^E. So
+g_n(x) := exp(-(beta/2)||dx - 2 pi n||^2) is constant along K and, on the complement, is a constant times the
+density of the Gaussian N(y_n, (beta A)^(-1)), A the restriction of d*d to the complement. A is positive definite,
+and A <= 4d: d*d and dd* commute, their product is zero, and their sum is the lattice Laplacian on 1-forms, whose
+symbol sum_mu (2 - 2 cos k_mu) is at most 4d. So (beta A)^(-1) - tau is non-negative, and
+N(y_n, (beta A)^(-1)) = N(0, tau) * N(y_n, (beta A)^(-1) - tau) on the complement (the second factor may be
+degenerate; it is a positive measure). Along K a constant is the convolution of a Gaussian with a constant. So
+g_n = G_tau * h_n, with G_tau the density of N(0, tau Id) on R^E and h_n a positive measure. The sum F = sum_n g_n
+converges and is 2 pi Z^E-periodic, so H = sum_n h_n is a positive, locally finite, periodic measure with
+F = G_tau * H. For a periodic measure H, (G * H)(x) is the torus convolution of the wrapped G with H on one period.
+The wrapped G_tau is the product of the k_tau. Divide by Z. (b) The coarse edges use disjoint fine links, so the
+sums of xi over them are independent, each of law k_(b tau), and independent of theta'. (c) Write the links of one
+coarse edge as U'_1 xi_1, ..., U'_b xi_b. Then the product is U'_1 ... U'_b times the product of the conjugates of
+the xi_i by later U'. A central law is invariant under conjugation, so given U' the conjugates are independent
+with the same laws, and their product has the heat law of time b tau, independent of U'. Distinct coarse edges use
+disjoint links. (d) is the citation. QED
+
+Remarks. (i) The bound 1/(4 d beta) is 1/(16 beta) in four dimensions. It is the inverse of the largest precision
+of the Gaussian, so it is sharp for this proof. (ii) Whether the SU(2) heat-kernel plaquette law has such a factor
+on its fine links is OPEN, and by (d) it does not matter for the band. (iii) What the consumer of a heat factor
+needs, and U(1) lacks, is a statement on the residual: that it is again a law of the same kind at a weaker coupling.
+For Villain U(1) the residual is a mixture of Gaussians with covariance (beta A)^(-1) - tau, long-ranged. So the open
+content of row 1434's candidate was never the factor. It was the carry, K-I of row 1386. (iv) The same reading
+applies to row 1439: Lemma 2 there gives thinned factors for any central noise at every coupling, and (9) shows
+that they fix no sign.
+
+**Answer to (Q-a).** The heat-kernel weight removes the obstruction of row 1434 (ARGUED by check 1436; for U(1)
+PROVED by VIL (a), (b)) and removes nothing else that matters. The class it reopens is realised by a massless
+model. The obstructions of rows 1438 and 1439 do not depend on the weight.
+
+### 2.4 Inventory: what the lane already did with other actions and other block maps
+
+Other actions (file counts by `grep -l -i -F` over `library/gap-*.md` and `library/prior/gap-*.md`: Villain 183,
+Kogut 41, adjoint action 37, positive plaquette 32, Bhanot 29, Manton 11, heat-kernel action 9):
+
+| Action or weight | Where | What was done | Verdict on file |
+|---|---|---|---|
+| Heat kernel on SU(2) | `library/gap-brainstorm2-max.md` L164, L222, L306 (row 876, idea 17) | semigroup fusion needs a link in two active plaquettes; in 4D it lies in six | "nothing at order one" |
+| Heat kernel, Manton, mixed | `library/gap-crux-exercise-r858-max.md` L243 (A1) | the engine keeps any reflection-positive axis-symmetric weight; the account must be re-run | free for the engine, not for the account |
+| Heat kernel; weight with no Z_2 monopoles; mixed | `library/gap-crux-exercise2-max.md` L260 (b1), L334 (R4) | exact structure listed; conditional Griffiths inequalities for the centre part | "neither is known to remove (S-ir)" |
+| Villain, heat kernel, Manton | `library/gap-wall-assume-max.md` L55 (1g) | the flat layer stays an O(4) ferromagnet of positive type | COSMETIC |
+| Heat kernel as plaquette Brownian motions under Bianchi | `library/gap-mini-solve-c-fable.md` L133 (15) | Identity MIX, Remark POL of row 996 | no consumer |
+| Positive dual for a heat-kernel weight | `library/gap-mini-solve-x-opus.md` L56 | crosscap and Frobenius-Schur signs | signs |
+| Heat kernel against row 1434 | `library/gap-mech-candidate-check-opus.md` L147-151 (check 1436) | the factorial tail is a property of the bare Wilson weight | ARGUED; no proof row |
+| Mixed fundamental-adjoint (K7) | rows 708, 995, 996; `library/gap-mid-max.md` L48; Identity MIX | Wilson with annealed Gaussian plaquette couplings; the end point as a kill test | a test, not a route |
+| May the lane choose its weight? (UNIV-FP) | row 904, `library/gap-univfp-opus.md` L207 | read the account's universality proposition (YM4_1400 L94368-94386) | **does not follow**: fixed ball of small-field profiles, one frozen endpoint, normalized laws on one volume, no large-field histories, no vacuum factors |
+| Villain U(1), Gaussian Model G | rows 930, 1388 Proposition B, `library/prior/gap-lit-vmf-tor.md` L52 | the comparison case of the filter | used as a test |
+| Continuous time (Kogut-Susskind) | row 1356 Proposition TR, Lemma JF; I14 of `library/gap-outside-box-max.md` L153; Identity HAM1 of row 1016 | the transport comparison holds with continuous time; the Wilson operator gives the gap only | supplier (REG-vac) missing in both |
+| Fundamental or adjoint Higgs | I10, I11 of `library/gap-outside-box-max.md` L146-147 | seed in the Higgs regime; Lemma GG | no carry to kappa = 0 |
+| Refined family above a strong-coupling base | V4 of `library/gap-wall-vectors-max.md` L146; Proposition PF of row 1332 | exactly consistent fine measures | only the base lattice's translations |
+| A warning | `library/gap-means-astra.md` L780 | "Do not replace fixed SU(2) by ... a heat-kernel action ... without an exact comparison" | rule |
+
+Other block maps (file counts: decimation 76, Migdal-Kadanoff 43, majority 22, bond moving 19, gradient flow 16,
+smearing 16, Balaban averaging 2):
+
+| Block map | Where | Verdict on file |
+|---|---|---|
+| Migdal-Kadanoff decimation with interpolation (Tomboulis) | rows 1025, 1029; `library/gap-cr-tomboulis-max.md` | group-blind; (TB)_n has no sign |
+| Hierarchical flow | `parts/gap.md` L237, L257 (rows 859, 876, 878) | group-blind; retired |
+| One-direction bond moving, grid changes | row 1390 REF, MKO, NOSIGN; check 1393 | no sign on the top quotient |
+| Geometric time coarsening | rows 1396, 1401 | no transport, no rate, no entry |
+| Straight-path decimation, two-link product | rows 1383 (LIFT, THIN, U1), 1409 (Lott), 1434, 1439 | rough in U(1) and 5D too; transport fails; no heat factor; no sign |
+| Slice channels (kept even slices) | row 1438 | spectrum unchanged; residual not reflection positive |
+| Soft pinned block step, Dobrushin block kernels | rows 861, 1340 (Theorem TL, DC-B, BL, BS), 1341-1352 | reduces to a one-block statement of seed strength |
+| Site-tensor fusion, computer-assisted | rows 1418-1437 | rank and error rule out the carry; signs depend on the reference |
+| Gradient flow, smearing | rows 720, 1002, 1005 ((K-flow)) | a renamed coupling |
+| Balaban's averaging map | the existence chain only | no estimate at order-one coupling (K-II) |
+
+**Answer to (Q-b).** Every other action that I named in Phase 1 was considered on file, each time at the level of a
+table entry, and each time with the same verdict: exact structure, no gain at order-one coupling. One row tested
+the freedom itself (row 904) and found that the account does not give it. No other action was ever carried into a
+proof row, and I find no reason on file or in Phase 1 to do so now. The block maps on file cover every map with an
+exact formula. The one map with estimates, Balaban's, has them only at small coupling.
+
+## 3. Does the chain from (M-neutral) to the gap, and the seed, survive a change of action?
+
+Take a new single-plaquette weight w on SU(2): a continuous, strictly positive class function with w(U) = w(U^-1)
+and non-negative character coefficients, the same on all plaquettes. Example: the heat kernel.
+
+| Link of the chain | Reads the weight through | Survives? | To re-prove |
+|---|---|---|---|
+| Transfer operator (TM), (TM-c): `library/gap-crux-restate.md` Section 1; `library/gap-transfer.md` (rows 667, 671) | positivity of the kernel (non-negative coefficients), strict positivity (simple top eigenvalue), centre symmetry of a class function | yes (ARGUED on file: A1/I6 of row 858, b1 of row 878; not written out) | `gap-transfer.md` for w: N.1-N.7, (8b), trace class. Routine |
+| Lemma A, Theorem S, Corollaries (the engine), row 697 | (TM), (TM-c), the symmetry of Z under axis exchange | yes, word for word | nothing but the inputs |
+| Theorem L3, Propositions P, P' (`library/gap-seed-limit.md`) | Lemma FE (a bound exp(12 beta Gamma) on density ratios), (TR), hypercubic symmetry | yes with the constant exp(6 Gamma osc(log w)); fails for a weight with hard constraints | Lemma FE's constant |
+| Neutral sector: rows 1161, 1179, 1342, 1349 (Pfaffian seed, branch, Theorem O, Proposition C) | centre flips, twisted tori, and in places Wilson numbers (row 1161 (19): a count of low neutral levels) | the structure yes; each numeric statement no | every display with a number in beta: SKETCHED, I did not audit them line by line |
+| Rank-one test: rows 1353, 1356 (M1, M2), checks 1355, 1359 | nothing (operator facts) | yes | nothing |
+| Continuum datum: (P1)-(P4), (H2), (TOT) | the existence chain for the same family of lattice laws | **no** | the whole account for w, or a theorem that the continuum state is the same. Row 904: the account's universality does not give it |
+| The seed (M-neutral) itself | everything | it becomes the same statement for w's trajectory | all of it. By 2.2 and VIL no step gets easier in kind |
+
+So (PROVED as bookkeeping from the cited rows; the numeric audit of the neutral rows is SKETCHED): the engine and
+the rank-one test survive any such weight unchanged. The limit-state theorems survive with new constants. The
+continuum inputs do not survive: they cost the existence chain again, or a bridge theorem that nobody has (a
+full-measure comparison of two bare weights that differ on large fields, on several tori, uniform in the cutoff;
+row 904's "missing"). The seed survives as an open statement of the same strength.
+
+One more point decides the question. At the physical scale the law is the block-effective law of the bare family.
+The bare weight enters it only through irrelevant terms, which the ultraviolet carry (A1) = (UNIV-K) must bound in
+any case. So if (A1) held in rate form, two bare weights would give the same window problem. If (A1) does not
+hold, the lane cannot use any bare weight. In both cases the choice of bare weight does not change the band.
+(ARGUED; this is the physical content of universality, and rows 1391-1422 show that (A1) is open in the account's
+own terms: check 1422 FAILS for the complete native pair.)

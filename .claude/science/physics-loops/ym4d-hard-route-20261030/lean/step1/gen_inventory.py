@@ -62,7 +62,7 @@ theorem split0 (leaf : Nat → Nat) (rest : List Step) (cs : List Nat) :
   have h := split leaf rest cs [0]
   have e : ([0].map (pruned leaf (cs.map Step.corner ++ rest))).sum
       = pruned leaf (cs.map Step.corner ++ rest) 0 + 0 := rfl
-  omega
+  rw [← h, e, Nat.add_zero]
 
 theorem total_of_pieces (leaf : Nat → Nat) (vals : List Nat)
     (h : starts.map (pruned leaf restLit) = vals) : pruned leaf (steps 8) 0 = vals.sum :=

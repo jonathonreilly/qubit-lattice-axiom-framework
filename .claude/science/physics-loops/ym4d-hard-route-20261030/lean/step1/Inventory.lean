@@ -23,7 +23,12 @@ def pw : Nat → List Nat
 
 /-- Singlet multiplicity of `k` fundamentals of SU(2) by the weight count:
 multiplicity of weight 0 minus multiplicity of weight 2 in `(z + 1/z)^k`. -/
-def singlet (k : Nat) : Nat := (pw k).getD k 0 - (pw k).getD (k + 2) 0
+def nth : List Nat → Nat → Nat
+  | [], _ => 0
+  | a :: _, 0 => a
+  | _ :: l, k + 1 => nth l k
+
+def singlet (k : Nat) : Nat := nth (pw k) k - nth (pw k) (k + 2)
 
 /-- The weight used at a node of degree `k`: `Cat(k/2)` for even `k <= 6`, else 0. -/
 def w : Nat → Nat
@@ -85,6 +90,11 @@ def iter {α : Type} (f : α → α) : Nat → α → α
   | 0, a => a
   | k + 1, a => iter f k (f a)
 
+def nthI : List Int → Nat → Int
+  | [], _ => 0
+  | a :: _, 0 => a
+  | _ :: l, k + 1 => nthI l k
+
 def D (N : Nat) : Int :=
   let n := 6 * N + 1
   let p0 : List Int := fit n [1]
@@ -92,7 +102,7 @@ def D (N : Nat) : Int :=
   let p2 := iter (mulOneMinus n (N + 2)) 6 p1
   let p3 := iter (divOneMinus n 1) 6 p2
   let p4 := iter (divOneMinus n 2) 5 p3
-  p4.getD (6 * N) 0
+  nthI p4 (6 * N)
 
 /-- Division is the inverse of multiplication on a test series (sanity of the two helpers). -/
 theorem div_mul_sanity :
@@ -205,14 +215,14 @@ theorem sum_map_add (f g : Nat → Nat) : ∀ l : List Nat,
   | a :: l => by
       have h := sum_map_add f g l
       show f a + g a + (l.map fun d => f d + g d).sum = f a + (l.map f).sum + (g a + (l.map g).sum)
-      omega
+      rw [h, Nat.add_add_add_comm]
 
 theorem sum_append_nat : ∀ l₁ l₂ : List Nat, (l₁ ++ l₂).sum = l₁.sum + l₂.sum
-  | [], l₂ => by show l₂.sum = 0 + l₂.sum; omega
+  | [], l₂ => by show l₂.sum = 0 + l₂.sum; rw [Nat.zero_add]
   | a :: l₁, l₂ => by
       have h := sum_append_nat l₁ l₂
       show a + (l₁ ++ l₂).sum = a + l₁.sum + l₂.sum
-      omega
+      rw [h, Nat.add_assoc]
 
 theorem map_map_nat (f : Nat → Nat) (g : Nat → Nat) : ∀ l : List Nat,
     (l.map g).map f = l.map (fun d => f (g d))
@@ -684,7 +694,7 @@ theorem split0 (leaf : Nat → Nat) (rest : List Step) (cs : List Nat) :
   have h := split leaf rest cs [0]
   have e : ([0].map (pruned leaf (cs.map Step.corner ++ rest))).sum
       = pruned leaf (cs.map Step.corner ++ rest) 0 + 0 := rfl
-  omega
+  rw [← h, e, Nat.add_zero]
 
 theorem total_of_pieces (leaf : Nat → Nat) (vals : List Nat)
     (h : starts.map (pruned leaf restLit) = vals) : pruned leaf (steps 8) 0 = vals.sum :=

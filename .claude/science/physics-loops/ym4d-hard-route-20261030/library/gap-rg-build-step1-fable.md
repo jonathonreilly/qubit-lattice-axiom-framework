@@ -111,3 +111,12 @@ The generator `gen_inventory.py` (with `inventory_head.lean.txt` and `values.txt
 ```
 
 So nothing beyond `propext` and `Quot.sound`. They enter through `omega` (in `split`, `sum_map_add`) and through core library instances used by `decide`; no `Classical.choice`, no `Lean.ofReduceBool`, no `sorryAx`.
+
+## Step 3 log: the cube evaluator, first measurements (file `Surface.lean`, not final yet)
+
+- The evaluator builds the link-end factors from the face list and sums over the 24 corner indices. In the kernel: `cube_haarSum` (= 256 = 2^8), `cube_value` (2^(-28) accepted), the C1, C3, C4a fixtures each check in about 2.4 s and 1.13 GB when run alone.
+- One theorem over all 64 face orientations did not finish in 30 s (same cache growth as in step 1); it is being split into 64 theorems. A check over all 4,096 link-sign assignments took 12 s and 3.9 GB, above the 2 GB rule; it is being replaced by a parity statement.
+- **Finding (by `#eval`, compiled evaluator, guidance only until the kernel theorems below): the cube does not test the pairing sign.** With `eps` replaced by its absolute value, and also with `delta delta` used for every link whatever the directions, the cube gives 256 for all 64 orientations, the same as the correct rule. Reason: at each vertex three link ends form a triangle on three indices, an odd number of `eps` factors gives 0 and two give `sum eps_ab^2 = 2` in every arrangement that occurs. So on an orientable sheet a wrong sign in the same-direction rule is invisible, and "an incorrect twist sign must fail" needs either the centre twist on a face (C4a) or a non-orientable sheet.
+- Repair of the fixture: the hemicube (the cube modulo the antipode: 4 vertices, the 6 links of K_4, the 3 Hamiltonian four-cycles as faces; a projective plane, V - E + F = 1). Hand value of the Haar integral, by fixing the three links at vertex 0 to the identity (A = U_12, B = U_23, C = U_13):
+  int tr(AB) tr(C B^-1) tr(A^-1 C) = (1/2) int tr(AC) tr(A^-1 C) = (1/4) int tr(C^2) = (1/4) int (chi_1 - 1) = -1/4,
+  using int U_ij (U^-1)_kl = delta_il delta_jk / 2 twice. So the integer sum must be -(1/4) 2^6 = -16: the Frobenius-Schur sign -1 of the fundamental representation times d^V. This is the fixture for the pairing sign.

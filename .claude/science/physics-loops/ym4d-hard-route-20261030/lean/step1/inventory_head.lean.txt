@@ -1,0 +1,245 @@
+import Init
+
+/-!
+Row 1428 (a): the N = 1 four-dimensional link inventory of row 1418
+(`library/gap-rg-step-sizing-astra62.md`), checked by kernel evaluation.
+Only `import Init`; no mathlib, no `native_decide`.
+-/
+
+namespace Step1
+
+/-! ## Link inventory: 1, 15, 30, 5 and D_1 = 51 -/
+
+/-- Coefficientwise sum of two coefficient lists. -/
+def addL : List Nat → List Nat → List Nat
+  | [], q => q
+  | p, [] => p
+  | a :: p, b :: q => (a + b) :: addL p q
+
+/-- `pw k` lists the coefficients of `(1 + z^2)^k = z^k (z + 1/z)^k`. -/
+def pw : Nat → List Nat
+  | 0 => [1]
+  | k + 1 => addL (pw k) (0 :: 0 :: pw k)
+
+/-- Singlet multiplicity of `k` fundamentals of SU(2) by the weight count:
+multiplicity of weight 0 minus multiplicity of weight 2 in `(z + 1/z)^k`. -/
+def singlet (k : Nat) : Nat := (pw k).getD k 0 - (pw k).getD (k + 2) 0
+
+/-- The weight used at a node of degree `k`: `Cat(k/2)` for even `k <= 6`, else 0. -/
+def w : Nat → Nat
+  | 0 => 1
+  | 2 => 1
+  | 4 => 2
+  | 6 => 5
+  | _ => 0
+
+/-- Pascal's rule. -/
+def choose : Nat → Nat → Nat
+  | _, 0 => 1
+  | 0, _ + 1 => 0
+  | n + 1, k + 1 => choose n k + choose n (k + 1)
+
+/-- Number of set bits among the lowest `n` bits. -/
+def popc : Nat → Nat → Nat
+  | 0, _ => 0
+  | n + 1, m => m % 2 + popc n (m / 2)
+
+theorem singlet_table : (List.range 7).map singlet = [1, 0, 1, 0, 2, 0, 5] := by decide
+theorem w_is_singlet : (List.range 7).map w = (List.range 7).map singlet := by decide
+theorem link_counts :
+    [0, 2, 4, 6].map (fun k => choose 6 k * singlet k) = [1, 15, 30, 5] := by decide
+theorem link_total_by_occupancy :
+    ([0, 1, 2, 3, 4, 5, 6].map (fun k => choose 6 k * singlet k)).sum = 51 := by decide
+/-- Direct enumeration of the 64 six-bit occupation patterns of a link. -/
+theorem link_total_by_patterns :
+    ((List.range 64).map (fun m => singlet (popc 6 m))).sum = 51 := by decide
+
+/-! ### The generating function of row 1418
+
+`D_N = [z^(6N)] (1 - z^(N+1))^6 (1 - z^(N+2))^6 / ((1 - z)^6 (1 - z^2)^5)`,
+evaluated by integer power series truncated at degree `6N`. -/
+
+/-- Truncate or pad to exactly `n` coefficients. -/
+def fit : Nat → List Int → List Int
+  | 0, _ => []
+  | n + 1, [] => 0 :: fit n []
+  | n + 1, a :: p => a :: fit n p
+
+def addI : List Int → List Int → List Int
+  | [], q => q
+  | p, [] => p
+  | a :: p, b :: q => (a + b) :: addI p q
+
+def shift (m : Nat) (p : List Int) : List Int := List.replicate m 0 ++ p
+
+/-- Multiply by `1 - z^m`, truncated to `n` coefficients. -/
+def mulOneMinus (n m : Nat) (p : List Int) : List Int :=
+  fit n (addI p ((shift m p).map (fun a => -a)))
+
+/-- Divide by `1 - z^m` (`m >= 1`), truncated to `n` coefficients:
+the sum of the shifts by `0, m, 2m, ...`. -/
+def divOneMinus (n m : Nat) (p : List Int) : List Int :=
+  (List.range n).foldl (fun acc j => fit n (addI acc (shift (j * m) p))) (fit n [])
+
+def iter {α : Type} (f : α → α) : Nat → α → α
+  | 0, a => a
+  | k + 1, a => iter f k (f a)
+
+def D (N : Nat) : Int :=
+  let n := 6 * N + 1
+  let p0 : List Int := fit n [1]
+  let p1 := iter (mulOneMinus n (N + 1)) 6 p0
+  let p2 := iter (mulOneMinus n (N + 2)) 6 p1
+  let p3 := iter (divOneMinus n 1) 6 p2
+  let p4 := iter (divOneMinus n 2) 5 p3
+  p4.getD (6 * N) 0
+
+/-- Division is the inverse of multiplication on a test series (sanity of the two helpers). -/
+theorem div_mul_sanity :
+    divOneMinus 9 2 (mulOneMinus 9 2 [3, -1, 4, 1, -5, 9, 2, -6, 5]) = [3, -1, 4, 1, -5, 9, 2, -6, 5] := by
+  decide
+theorem D_one : D 1 = 51 := by decide +kernel
+theorem D_two : D 2 = 977 := by decide +kernel
+
+/-! ## Site slots: the vertex figure K_{2,2,2,2}
+
+Nodes `0..7` are the eight link ends at a site; the antipode of `i` is `i ^^^ 1`.
+The 24 corners are the pairs `i < j` with `j ≠ i ^^^ 1`.  A degree vector is one
+natural number in base 8 (every degree is at most 6).  Everything is written for
+`n` nodes so that the same code runs on the octahedron K_{2,2,2} (`n = 6`). -/
+
+def corners (n : Nat) : List (Nat × Nat) :=
+  (List.range n).flatMap fun i =>
+    ((List.range n).filter fun j => decide (i < j) && (j != i ^^^ 1)).map fun j => (i, j)
+
+theorem corners_card : (corners 8).length = 24 := by decide
+theorem corners_degree_six :
+    (List.range 8).map (fun v => ((corners 8).filter fun e => e.1 == v || e.2 == v).length)
+      = [6, 6, 6, 6, 6, 6, 6, 6] := by decide
+
+def cornerConst (e : Nat × Nat) : Nat := 8 ^ e.1 + 8 ^ e.2
+
+/-- Product of `w` over the lowest `n` base-8 digits. -/
+def wt : Nat → Nat → Nat
+  | 0, _ => 1
+  | n + 1, d => w (d % 8) * wt n (d / 8)
+
+/-- 1 if the lowest `n` base-8 digits are all even, else 0. -/
+def evenAll : Nat → Nat → Nat
+  | 0, _ => 1
+  | n + 1, d => (if d % 2 = 0 then 1 else 0) * evenAll n (d / 8)
+
+/-- The definition: sum over ALL subsets of the given corners of `leaf (degree vector)`. -/
+def brute (leaf : Nat → Nat) : List Nat → Nat → Nat
+  | [], d => leaf d
+  | c :: cs, d => brute leaf cs d + brute leaf cs (d + c)
+
+/-- A step of the pruned enumeration. -/
+inductive Step where
+  | corner (c : Nat)
+  | check (i : Nat)
+  deriving DecidableEq, Repr
+
+/-- Corners in lexicographic order; after the block of corners `(i, _)` every corner at
+node `i` is decided (those `(h, i)` with `h < i` came earlier), so its parity is tested. -/
+def steps (n : Nat) : List Step :=
+  (List.range n).flatMap fun i =>
+    (((corners n).filter fun e => e.1 == i).map fun e => Step.corner (cornerConst e)) ++ [Step.check i]
+
+/-- Same sum as `brute`, abandoning a branch once a completed node has odd degree
+(both `wt n` and `evenAll n` vanish there). -/
+def pruned (leaf : Nat → Nat) : List Step → Nat → Nat
+  | [], d => leaf d
+  | .corner c :: cs, d => pruned leaf cs d + pruned leaf cs (d + c)
+  | .check i :: cs, d => if (d / 8 ^ i) % 2 = 1 then 0 else pruned leaf cs d
+
+/-- `pruned` with the accumulator forced to a numeral at every step.  The kernel then
+keeps the degree vector as a literal (measured: 5 times faster, 3 times less memory). -/
+def prunedS (leaf : Nat → Nat) : List Step → Nat → Nat
+  | [], d => leaf d
+  | .corner c :: cs, d =>
+      match d + c with
+      | 0 => prunedS leaf cs d + prunedS leaf cs 0
+      | e + 1 => prunedS leaf cs d + prunedS leaf cs (e + 1)
+  | .check i :: cs, d => if (d / 8 ^ i) % 2 = 1 then 0 else prunedS leaf cs d
+
+theorem prunedS_eq (leaf : Nat → Nat) : ∀ (cs : List Step) (d : Nat),
+    prunedS leaf cs d = pruned leaf cs d
+  | [], _ => rfl
+  | .corner c :: cs, d => by
+      have h1 := prunedS_eq leaf cs d
+      have h2 := prunedS_eq leaf cs (d + c)
+      show (match d + c with
+        | 0 => prunedS leaf cs d + prunedS leaf cs 0
+        | e + 1 => prunedS leaf cs d + prunedS leaf cs (e + 1)) = pruned leaf cs d + pruned leaf cs (d + c)
+      rw [← h1, ← h2]
+      generalize d + c = x
+      cases x <;> rfl
+  | .check i :: cs, d => by
+      have h1 := prunedS_eq leaf cs d
+      show (if (d / 8 ^ i) % 2 = 1 then 0 else prunedS leaf cs d)
+        = (if (d / 8 ^ i) % 2 = 1 then 0 else pruned leaf cs d)
+      rw [h1]
+
+/-! ### The pruning agrees with the all-subsets definition on the octahedron K_{2,2,2}
+
+12 corners, 4,096 subsets, `2^(12-6+1) = 128` even subgraphs. -/
+
+theorem octahedron_even :
+    brute (evenAll 6) ((corners 6).map cornerConst) 0 = 128 := by decide +kernel
+theorem octahedron_even_pruned :
+    prunedS (evenAll 6) (steps 6) 0 = 128 := by decide +kernel
+theorem octahedron_slots_agree :
+    brute (wt 6) ((corners 6).map cornerConst) 0 = prunedS (wt 6) (steps 6) 0 := by decide +kernel
+
+/-! ### Splitting the sum by the pattern at node 0 -/
+
+/-- All subset sums of the given constants, starting from the list `ds`. -/
+def expand : List Nat → List Nat → List Nat
+  | [], ds => ds
+  | c :: cs, ds => expand cs (ds ++ ds.map (· + c))
+
+theorem sum_map_add (f g : Nat → Nat) : ∀ l : List Nat,
+    (l.map fun d => f d + g d).sum = (l.map f).sum + (l.map g).sum
+  | [] => rfl
+  | a :: l => by
+      have h := sum_map_add f g l
+      show f a + g a + (l.map fun d => f d + g d).sum = f a + (l.map f).sum + (g a + (l.map g).sum)
+      omega
+
+theorem sum_append_nat : ∀ l₁ l₂ : List Nat, (l₁ ++ l₂).sum = l₁.sum + l₂.sum
+  | [], l₂ => by show l₂.sum = 0 + l₂.sum; omega
+  | a :: l₁, l₂ => by
+      have h := sum_append_nat l₁ l₂
+      show a + (l₁ ++ l₂).sum = a + l₁.sum + l₂.sum
+      omega
+
+theorem map_map_nat (f : Nat → Nat) (g : Nat → Nat) : ∀ l : List Nat,
+    (l.map g).map f = l.map (fun d => f (g d))
+  | [] => rfl
+  | a :: l => by
+      show f (g a) :: (l.map g).map f = f (g a) :: l.map (fun d => f (g d))
+      rw [map_map_nat f g l]
+
+theorem map_append_nat (f : Nat → Nat) : ∀ l₁ l₂ : List Nat,
+    (l₁ ++ l₂).map f = l₁.map f ++ l₂.map f
+  | [], _ => rfl
+  | a :: l₁, l₂ => by
+      show f a :: (l₁ ++ l₂).map f = f a :: (l₁.map f ++ l₂.map f)
+      rw [map_append_nat f l₁ l₂]
+
+/-- The sum over the first block of corners, written as a sum over start vectors. -/
+theorem split (leaf : Nat → Nat) (rest : List Step) : ∀ (cs : List Nat) (ds : List Nat),
+    (ds.map (pruned leaf (cs.map Step.corner ++ rest))).sum
+      = ((expand cs ds).map (pruned leaf rest)).sum
+  | [], _ => rfl
+  | c :: cs, ds => by
+      have ih := split leaf rest cs (ds ++ ds.map (· + c))
+      show (ds.map fun d => pruned leaf (cs.map Step.corner ++ rest) d
+              + pruned leaf (cs.map Step.corner ++ rest) (d + c)).sum
+          = ((expand cs (ds ++ ds.map (· + c))).map (pruned leaf rest)).sum
+      rw [← ih, sum_map_add, map_append_nat, sum_append_nat, map_map_nat]
+
+theorem map_cons_eq {f : Nat → Nat} {a v : Nat} {l vs : List Nat}
+    (h1 : f a = v) (h2 : l.map f = vs) : (a :: l).map f = v :: vs := by
+  subst h1; subst h2; rfl

@@ -247,3 +247,53 @@ once V >= 2 |log q_a| H_c(k)/E_+ + O(1); then |log(Z_G/Z~)| = V b on that torus,
 class either, on volumes of order H_c(k) (of order k when the R_i are bounded). Row 1413's own text lists the old-charge
 matching as its second next row (L151), so the file is consistent; only the one-line summary misleads.
 - 2026-11-23T04:12Z (date -u): Sections 6-7 written.
+
+## 8. Verdict
+
+**Row 1413: HOLDS AFTER CORRECTION.** No mathematical line fails. Every display (1)-(7), the split, the Schwarz step, the
+labelwise check, the log-series step, both ranges, the chessboard check of the mixture, the root (6), the rate (7) on the
+geometric family and the consequence for check 1405 were re-derived by hand from the account's lines (Sections 2-7). The
+corrections are in the hypotheses named and in the one-line summary.
+
+Decisive outcomes.
+1. **The conditional volume-range rate holds**: on each run and each torus with Gamma V <= min{|log q_a| H_c(a_0),
+   k |log theta_chi|} - D, in particular Gamma V_large <= D = (1/2) log(1/e_w), |log(Z_G^c/Z~^c)| <= 4 C_0' sqrt(e_w),
+   conditional on the antecedents of Corollary 9.2:cor-old-age-smallness **in the proof-level form** (A_y) (see D-b), the
+   two outstanding items (i), (ii) of Section 3, hypothesis (e) of III 17945-17947 for second-class strips, the ramp
+   lemma's inputs (III 17643-17654) and the endpoint bounds A, B. For fixed (m_0, w) the range holds for all large n; it is
+   not uniform in the side.
+2. **The tile model shows that the printed bounds are insufficient for uniform (RAR)**: all printed inequalities hold, the
+   log cost per site is >= (1/2) log(1+b) on both tori with V of order k, and no r_K = o(1) follows. The mechanism is that
+   the unaligned class is priced by one degree-one multiplier per label (III 17762-17774, Y 130315-130318). The model has
+   identical runs, so it says nothing against the carry itself (P1); it depends on the terminal definition of "aligned"
+   (P2), which is the operative one.
+
+Defects, ranked by what each breaks (at most ten):
+
+| # | Line of row 1413 | Defect | What it breaks |
+|---|---|---|---|
+| D-b | L43-58, L80 | (1) uses the per-history surplus y_h of the PROOF of Theorem 9.2:thm-geometric-forgetting (III 34140-34183), not its statement (eq-geometric-forgetting-a), which keeps only q^(a+1). Name it as a hypothesis (A_y). | The whole positive result: with the statement alone the old labels cost e^(Gamma V) q_a^(a_0) >= e^(Gamma V) q_a sqrt(eps), and the range (3) shrinks to nothing (row 1413 L80 last sentence concedes this for the coarse multiplier). |
+| D-f | FINISH RESULT of row 1413 | "the alignment condition ... is the unpriced piece" omits the old class, which is equally unpriced on unrestricted sides: check 1397's private-label example survives (1) on V >= 2|log q_a| H_c(k)/E_+ (Section 7). | Direction of the next rows if read from the summary; the file's own L150-151 lists both. |
+| D-a | L60, L35 | The account's second outstanding item "the nesting clause of the majorant hypothesis used in the proof of Theorem 9.2:thm-geometric-forgetting" (III 75848-75849, 111260-111261) is not listed among the hypotheses of (1). | Completeness of the conditional statement only. |
+| D-c | L39 | The volume-floor form of the reserve argument is the outline's own case (3) (O 23350-23358); credited only for the mark. | Credit only. |
+| D-e | L62 | The moduli form is bounded by A^sharp (III 17467), not A_c = e^(E_+^sharp V). | Nothing (absorbed in C_0' e^(Gamma V)). |
+| D-d | L41 | The native qualifier "alive at the stop" (III 11952, 17829) is dropped; automatic by the removal clause (III 13832, 14137). Inherited from the account's own Lemma on unpaired labels. | Nothing. |
+
+Not re-read (not load-bearing for any verdict): CA-II 106171-106192, 106818-106846, 127294-127323; Y 130128-130136,
+130251-130270; III 12081-12097, 31730-31805; the repository-search table at L5-12 of row 1413.
+No numeric run was needed (hand checks only); no new statement is claimed here beyond the corrections, and the D-f example
+is check 1397's example re-scaled.
+
+Process: checker Claude Opus 5.5 (high), a different provider from the author (gpt-6.2-astra max); the derivations above
+are a separate hand derivation from the account's lines, not a re-run of the author's text. Sources: Ethan Sussman and
+Levent Alpoge's account (part III local, `YM4_1400.tex` local, outline fetched by raw URL at 31a47c543775 into
+/tmp/chk1419_src), with Claude and Codex as authors of their text.
+- 2026-11-23T04:12Z (date -u): Section 8 and RESULT written; check finished.
+
+RESULT: Check 1419 of row 1413 — HOLDS AFTER CORRECTION, no line fails. The conditional volume-range rate holds
+(|log(Z_G/Z~)| <= 4 C_0' sqrt(e_w) on both runs and tori when Gamma V_large <= (1/2) log(1/e_w)), but only under the
+proof-level history-wise surplus of the geometric-forgetting theorem (D-b), plus the account's outstanding modulus
+majorant and its nesting clause (D-a). The tile model is right: the printed bounds do not imply uniform (RAR), because the
+unaligned class has one degree-one multiplier per label. Correction D-f: the old class is equally unpriced on unrestricted
+sides, not only the alignment condition. Open: Wilson (RAR) on all sides, both for old labels and for young common
+unaligned labels.

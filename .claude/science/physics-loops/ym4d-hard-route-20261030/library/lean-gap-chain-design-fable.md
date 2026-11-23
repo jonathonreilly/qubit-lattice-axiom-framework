@@ -79,3 +79,47 @@ Reading of the table for the design (my own, **sketched**): the chain splits at 
   the release only through the definition of the finite Wilson law and of `IsInfiniteVolumeLimit`.
 
 The size and the hardest step are decided by (W). Sections 2-3 inventory what exists for each half.
+
+## 2. Inventory of the release (read from the source; nothing built or run)
+
+Paths are relative to the release root `YM4 Lean/` at 3932084a9b82. `Y/C/` abbreviates `YangMills/Construction/`.
+All declarations below are marked **read**: I opened the file and the lines quoted. I did not check their proofs.
+The release separates statements from proofs: a file `X.lean` defines a `Prop` named `...Statement`, and a file
+`XProof.lean` proves it. I cite the statement files. Toolchain `leanprover/lean4:v4.33.1`; Mathlib at
+0df444a360ea (confirmed in `.lake/packages/mathlib`); four libraries `YangMills`, `Formulation`, `Challenge`,
+`Reconstruction` (`lakefile.toml`).
+
+### 2.1 The Wilson transfer operator on a spatial slice: EXISTS
+
+File `Y/C/TransferOperators/` (147 files, 19,568 lines). Namespace `YangMills.Construction.TransferOperators`.
+
+| Object of the chain | Declaration | File, line | What it is |
+|---|---|---|---|
+| The periodic box | `structure CubicPeriodSublattice` (fields `side : ℕ`, `one_le_side`, `lattice : InfiniteLattice.PeriodSublattice 1`, `periods_eq`) | `CubicToriAndProductsOfOperatorsOnPowersOfG.lean` 8-12 | The cubic torus of integer side at spacing 1. It exists iff side >= 3 (`GibbsHaarKernels.CubicPeriodSublatticeIffThreeLe`, `PeriodicStatesHaarMeasureCubicLatticesAndIntegralOperators.lean` 31-33). |
+| Slice links, sites, faces | `Γ.LinkOrbits μ`, `Γ.VertexOrbits μ`, `Γ.FaceOrbits μ` (finite types) | `TransferOperatorOfACubicTorus.lean` 30-32 | Orbits of slice links under the periods inside the slice normal to the axis μ. So every axis can be time. |
+| L^2 of the slice | `abbrev Γ.SliceL2 μ := HaarL2 (Γ.LinkOrbits μ)`; `abbrev HaarL2 ι := Lp ℂ 2 (haarPi ι)` | same file 208; `Y/C/Matrices/FunctionsAndOperatorsOfSeveralVariablesOnG.lean` 17 | A Mathlib `Lp` space over product Haar on SU(2)^links. It carries Mathlib's inner product. All link functions, not only gauge-invariant ones. |
+| Gauge action and projection | `Γ.gaugeRep g`, `Γ.gaugeProjection μ` | same file 213-225 | Defined by `Classical.epsilon` of a predicate; the properties are `GaugeRepProperties` (`FactsOfTheOperatorsOfACubicTorus.lean` 20-44): unitary representation, the projection is symmetric, idempotent, with range the invariant vectors. |
+| Slice energy factor | `Γ.sliceEnergy β u`, `Γ.boltzmannMultiplier μ β` | same file 204-207, 226-232 | Multiplication by exp(-β Σ_faces (1 - ½ tr U_p)) on the slice. |
+| Time-link factor | `linkProductKernel β u u'`, `linkProductOperator β B`, `sqrtLinkOperator β B` | `BondKernelAndLayerEnergy.lean` 9-11; `SquareRootOfTheBondKernel.lean` 25 | The one-bond heat-type kernel between two slices and its positive square root. |
+| **T** | `def Γ.transfer μ β : Γ.SliceL2 μ →L[ℂ] Γ.SliceL2 μ := (halfTransfer ∘ boltzmannMultiplier ∘ halfTransfer)`, `halfTransfer := sqrtLinkOperator ∘ gaugeProjection` | `TransferOperatorOfACubicTorus.lean` 233-239 | T = P_G K^(1/2) e^(-V) K^(1/2) P_G. This is the lane's T = M C M up to which factor is in the middle (see the note below). |
+| T is positive, symmetric, trace class | `structure Γ.TransferProperties μ β` (`transfer_nonneg`, `transfer_symm`, `transfer_traceClass`, `half_hilbertSchmidt`, `transfer_eq_sandwich`, `entry_summable`) inside `CubicTorusOperators.Statement` (for every β > 0, Γ, μ) | `FactsOfTheOperatorsOfACubicTorus.lean` 78-98, 131-136 | The spectral input of Lemma M1: T >= 0, self-adjoint, trace class. |
+| Hilbert–Schmidt, trace | `IsHilbertSchmidtPW T := Summable (k ↦ ‖T (peterWeylVec k)‖^2)`, `IsTraceClassPW`, `TraceSummablePW`, `tracePW T := ∑' k, peterWeylEntry T k k` | `Y/C/Matrices/HilbertSchmidtOperatorsTraceClassAndTraceOnG.lean` 8-16 | Predicates and a trace in the Peter–Weyl basis `peterWeylVec`. **No Hilbert–Schmidt norm as a number is defined.** |
+| Z = Tr T^n | `Γ.PartitionFunctionEqTrace μ β := TraceSummablePW (T ^ Γ.side) ∧ partitionFunction β = tracePW (T ^ Γ.side)`; `CubicPartitionFunctionTraceStatement` | `ObjectsOfAnInsertionOfContractionsBetweenLayers.lean` 53-55; `NormaliserOfACubicTorusIsATrace.lean` 6-7 | The trace formula, **only for time length equal to the side** (the 4D torus is cubic). |
+| Product over layers | `Γ.BoltzmannWeightEqProdSlices μ β` | same Objects file 44-52 | The Wilson weight of the torus as a product over time layers in a temporal transport. |
+| Operator insertions | `Γ.ExpShiftIntegralEqTrace`, `interleavedProd`, `ContractionInsertionStatement` | Objects file 100-107; `InsertionOfContractionsBetweenLayers.lean` 9-27 | Tr of T interleaved with block operators equals a torus integral. This is the pattern of the lane's (TM-tw) proofs, for contractions on blocks. |
+| Kernel operators on SU(2)^J | `Schatten.kernelOp`, `HasKernel`, `GibbsHaarKernels.ContinuousKernelCompAndUniqueness` | `Y/C/HilbertSpace/SchattenTraceKernels.lean` 10-14; `PeriodicStates...IntegralOperators.lean` 46-58 | Composition of continuous kernels, uniqueness of the kernel. |
+
+Notes (**read**, with my reading marked).
+
+- "Twisted" in this folder (`TwistedActionOnAPowerOfG.lean`) means a gauge action with separate source and target
+  maps. It is not a centre twist. I found no centre twist, flux sector or Z_2 object in the file names of this
+  folder (search of the names for `centre`, `center`, `flux`, `sector`: see 2.2).
+- The lane's T acts on gauge-invariant functions and is written M C M (`gap-mini-mneutral-fable.md` L420). The
+  release's T acts on all of L^2 and carries P_G on both sides, so it is zero off the invariant subspace. The two
+  agree on the invariant subspace up to the placement of the square roots: release K^(1/2) e^(-V) K^(1/2), lane
+  e^(-V/2) K e^(-V/2). The non-zero spectra agree (AB and BA). **sketched**: the eigenvalues x_a and the sums
+  s(u) of the chain are the same for both forms; the unit vector φ of the rank-one test differs by a fixed map.
+  The Lean statement of (M-neutral-all) in Section 4 uses the release's form.
+- The trace formula is only at time length = side. The chain needs Tr(P T^t) for other t (t = n/2 in N3, 2w in
+  M2 (iv)) and for twisted boundary conditions. As statements about T alone these need no torus: s(u) is a sum
+  over the spectrum of T. The torus enters only in the lane's proofs of N3-N6.

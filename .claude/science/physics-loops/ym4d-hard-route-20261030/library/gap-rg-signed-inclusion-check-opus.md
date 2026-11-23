@@ -97,3 +97,55 @@ Verdict: HOLDS. Re-derived by hand.
 - Forest. An internal edge e = (x, x + in nu) lies in two plaquettes per transverse axis mu; both endpoints have the same x_mu, so exactly one of the two leaves B: d - 1 mixed plaquettes. In 4D at most three fundamentals on e; the Haar invariant space of at most three spin-1/2 has dimension 0 or 1. By Lemma FOREST the Wilson marginal on a forest is product Haar. So no four-strand interior operator in a forest reading. Correct.
 - (3). Gauge-fix a spanning forest to 1; the remaining edge of cyclic component i carries the holonomy h_i; mu_B is invariant under gauges constant on each component, so the joint law of (h_i) is invariant under independent conjugations. Schur gives integral of rho_j(g h g^-1) dg = chi_j(h)/(2j+1) I. Hence (3), with all Wilson dependence in scalars multiplying the fixed commuting projectors prod_i Pi_(i j_i). Any two such operators commute. In a component with one independent cycle all closed walks at a base vertex are powers of one generator. Correct.
 - The row's own limitation (line 152) is accurate: the obstruction covers the interior-dependent channel operators only; a fixed exterior contraction may still carry noncommuting recoupling projectors, and two independent cycles in one component are not covered.
+
+## Step 9. Exact recomputation (scratch `/tmp/w2-check1423/code`, not committed)
+
+Run under `lab_ops.py numeric-lock` (holder w2-check1423, released), memory free 67 percent. All numbers claimed below are exact rationals or integer counts, or rational enclosures from positive series with a geometric tail bound. No Lean replay exists; these are a second data path, not a kernel check.
+
+- `s1.py` (exact Fractions, 33 checks, all PASS): r_4 = 1/5, r_3 >= 5/21, r_2 <= 21/68, b >= 136/157 at beta = 2; r_3 <= 513/2048, r_2 >= 2048/6657; the upper bound 2/(1024/513 + 2048/6657) = 1138347/1311232 = 0.86815... < 87/100; b' > 6331/20000 > 5/16; 15/(64 sqrt 2) > 5/32 (as 480^2 > 2 * 320^2); u_+ - u_- > 5/8192; 136/157 > 6/7; (6/7)^3/4 = 54/343 > (5/8)^4; 2^20 (5/8192) = 640; 320(5/8)^15 = 0.27756 > 1/4; 5^16 = 152587890625 > 2^37 = 137438953472; (513/256)^2/8 < 2/3; e^2 < 8; the coefficient identity a_(k+1) 4(k+1)(k+2) = a_k for k < 40 (it holds for all k by the formula); counts 15, 45/32, 70 = 54 + 16, 153, 51, N_p = 24, 1920; ||Y||^2 = 5u^8/2 and saving 3u^8/2 = 3b^6/32.
+- `s1b.py` (independent data path: Bessel power series in exact rationals with geometric tail): b(2) in [0.866254853444623, same to 1e-97] and b(513/256) = 0.867525103455284 (width 2e-98). Both satisfy 136/157 <= b < 87/100 and b > 6/7. Rational lower bound u_+ - u_- >= 6.83e-4 > 5/8192 = 6.10e-4. Rational lower bound 2^16(u_+^16 - u_-^16) >= 0.8108, against the row's 640(5/8)^15 = 0.5551. So the bounds in (2) hold with margin.
+- `s2.py` (exact sympy rationals): builds Inv(V^(x)m) from singlet pairings on the occupied slots, lets slot permutations act, solves for the commutant and tests whether it is commutative.
+  - d = 4, opposite-pair swaps only: 32 even patterns, 51 states, commutant commutative on every pattern. Confirms the 51-state claim and the 4D commutation.
+  - d = 5, opposite-pair swaps only: 128 patterns, 323 states, 41 patterns with a noncommutative commutant (first: four singletons +2, +3, +4, +5). So the 5D claim needs isotropy.
+  - d = 5, full signed-permutation stabilizer of the pattern: 0 noncommutative patterns. Confirms the row's 5D claim as stated (line 82 imposes the full symmetry).
+- `s3b.py` (exact): unit overlaps of the three pairings of four spin-1/2 are 1/2, 1/2, -1/2; the swap of slots +-2 maps p = (+2,+3)(-2,+4) exactly to q = (+2,+4)(-2,+3).
+
+## Verdicts
+
+| Statement (row 1421 lines) | Verdict |
+|---|---|
+| First-pair minor Y, saving 3b^6/32, exterior-square sum 45b^6/32, U(1) zero (32-57) | HOLDS |
+| Bounds 136/157 <= b < 87/100 on [2, 513/256] (59-66) | HOLDS (exact rerun; series enclosure agrees) |
+| Dimension count k = 2, 3; 54 + 16; 153 b^6/16 (68) | HOLDS |
+| Commutation of reflection-invariant reductions, 51 states, 5D with eight slots (72-82) | HOLDS (exact commutant check); wording defect D4 |
+| Identity (1) by plaquette classification; K_4 corner states (86-98) | HOLDS |
+| z_B > 2^(-24) (96) | HOLDS |
+| Table of responses (100-107) | arithmetic HOLDS; interpretation corrected in D1 |
+| Bound (2) and its arithmetic (109-125) | HOLDS (exact rerun, margin 0.81 vs 0.555); force limited, D3 |
+| Mixed-plaquette formula, forest reading, (3) and one-cycle reduction (127-152) | HOLDS |
+
+Overall: **HOLDS.** First failing line in the mathematics: none. One correction is needed in the FINISH summary of row 1421 (D1), and the scope of "drift fails" must be read as in D2.
+
+## Defects, ranked by what each breaks
+
+- **D1 (breaks the row-1421 summary in FINISH, not the note).** The FINISH result says the exposed triangle has "resolved response sqrt 2 in 4D and 2 in 5D, exactly the classical factor". In 4D the classical factor is 1, not sqrt 2. The correct statement: the per-copy response is 1 in every dimension, so the decrement against the classical factor 2^(d-4) is zero in 4D (note line 107). The "resolved Euclidean response" 2^((d-3)/2) counts copies in one chosen norm. It is not a coupling, and it meets 2^(d-4) only at d = 5. It is no test of drift.
+- **D2 (scope of the drift verdict).** Identity (1) holds for every exact regrouping of the block. The out/out corner plaquettes join four blocks and are not integrated by the 2^4 contraction, so they must keep their bare weights. So (1) shows that a chart which keeps these coordinates cannot see a running there. It says nothing about the dynamics of the Wilson block. The note states this limit (lines 125, 156). The decisive outcome below keeps it.
+- **D3 (force of (2)).** The bound is correct, but the ceiling 1/4 comes from no stated requirement (the note says so at line 125). As a guide only (floating point), the corner-subspace norm of R_B/z_B at beta = 2 is (1 + 4u^2 + 3s^2)^8 = 3.175^8, about 1.0 x 10^4. The forced radius is therefore a relative radius of about 3 x 10^(-5). So (2) excludes only a chart that asks for an absolute radius below 1/4 in the unscaled norm.
+- **D4 (wording, line 78 last sentence).** "The conclusion holds with arbitrary spectator spins at the other legs" is true only for spectator patterns that are invariant under the reflections used. Fixing, for example, spin 1/2 on the corner (+2,+3) selects the column p alone. That reduction is u^4 P, which is not in the class, and it does not commute with u^4 Q. The note already excludes "a single asymmetric exterior column" (line 72), so no conclusion changes.
+- **D5 (minor, line 100).** "including when all other plaquette spins in the block are summed" means the internal spins. The exterior labels other than the triangle are fixed to vacuum. No conclusion changes.
+
+No defect breaks a consumer statement. The exterior-square saving improves a norm estimate only. The note says this (line 48), and no later row uses it as a carry.
+
+## Decisive outcome
+
+1. **Is the one-link mechanism excluded as a four-dimensional carry?** Yes, for the classes the note states, and checked here:
+   - the commutator of any two reflection-invariant one-link reductions is zero on every fixed half-spin pattern in 4D (all 51 states, exact);
+   - a uniform debit on the resolved raw triangle coordinates contradicts (1);
+   - interior channel operators commute when each component has at most one independent cycle, by (3).
+   
+   Three things are not excluded: asymmetric exterior contractions (single columns), charts that integrate or redistribute the inter-block corner plaquettes, and charts that depend on beta or rescale the norm (D2, D3).
+2. **Was the two-cycle reading the right next test?** Yes, as the next interior test. By (3), two independent cycles in one component is the smallest interior reading outside the obstruction, and the test is cheap. It was not the only open route. The note itself names the asymmetric exterior contraction (line 152) and redistribution across blocks (line 156). Row 1424 has since rejected the single-strand two-cycle reading (an exact axis-swap cancellation), and row 1425 found the two-strand ring to have the wrong sign (its check, row 1429, is pending). Recommendation, not proved: by (1), no exact regrouping can show running on the corner coordinates. So after the exterior-response search of row 1430, the next test should be a chart that integrates the out/out corner plaquettes between neighbouring blocks, carrying its mixed boundary interactions (row 1341 (25)-(27)).
+
+## Provenance and limits
+
+Checked line by line by Claude Opus 5.5 at high effort. This is one reading of a gpt-6.2-astra max text, not an audit. Hand re-derivations cover every displayed statement. Scratch scripts are in `/tmp/w2-check1423/code` (s1.py, s1b.py, s2.py, s3b.py) and are not committed. They use exact rationals and integers. They are not Lean-replayed, so they are a second data path, not a proof step. Lines 7-17 of the note (its outline and main-branch citations) were not re-read against their sources.

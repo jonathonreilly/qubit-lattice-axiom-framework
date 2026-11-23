@@ -329,3 +329,414 @@ I have not found this shorter route on file. Search: `grep -l -i -E "log-convex|
 `library/gap-os-equiv.md`, `gap-mini-branch-fable.md`, `gap-seed-limit.md`, `prior/sa-ym4-lean-inputs-opus.md`
 and `open-core.md` (run in the next step; result recorded there). The device itself is classical (it is the
 proof of Lemma A2 of `gap-os-equiv.md`, row 668), so the claim is only about its use against the release.
+- Registry search for 3.1 (run after writing it): `log-convex` occurs in `gap-os-equiv.md` only (Lemma A2, L73,
+  used at 3.3 L178). It does not occur in `gap-mini-branch-fable.md`, `gap-seed-limit.md`, rows 1449/1450's
+  files or `open-core.md`. `open-core.md` has no line on (M-neutral), (EC-ν) or link mirrors. So the device is
+  the lane's Lemma A2; its use with the release's `ReflectionMomentsLogConvex` in place of a site-mirror datum
+  is not on file.
+
+## 4. The Lean statements (item (2) of the row)
+
+Status of this section: **design text, not compiled**. Identifiers of the release are the ones read in Section 2
+(file and line given there). Identifiers marked NEW are to be defined in the new library. A build row must
+expect small type errors (coercions, implicit arguments, `NeZero` instances). Proposed library name:
+`GapChain`, one `lean_lib` in a separate lake project that `require`s the release at 3932084a9b82 by path and
+Mathlib at the same pin. No file of the release is edited or copied.
+
+### 4.1 New definitions for the hypothesis
+
+```lean
+import YangMills.Construction.TransferOperators.FactsOfTheOperatorsOfACubicTorus
+import Formulation.FixedObservableContinuum
+open YangMills YangMills.Construction YangMills.Construction.TransferOperators
+open YangMills.Construction.SpinHarmonics YangMills.Construction.Matrices
+open scoped InnerProductSpace NNReal
+
+namespace GapChain
+
+/-- NEW. Hilbert–Schmidt bound without a basis: the sum of ‖A e_i‖² over every finite
+orthonormal family is at most δ². Equivalent to ‖A‖_HS ≤ δ, and to nothing weaker. -/
+def HSNormLE {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
+    (A : H →L[ℂ] H) (δ : ℝ) : Prop :=
+  ∀ (n : ℕ) (e : Fin n → H), Orthonormal ℂ e → ∑ i, ‖A (e i)‖ ^ 2 ≤ δ ^ 2
+
+/-- NEW. The rank-one projector |φ⟩⟨φ|. -/
+def ketBra {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] (φ : H) : H →L[ℂ] H :=
+  (innerSL ℂ φ).smulRight φ
+
+/-- NEW. The centre element −1 of SU(2). -/
+def centreElt : ComplexMatrix2.specialUnitary := ⟨-1, by sorry⟩   -- membership: 2 lines
+
+namespace CubicPeriodSublattice
+variable (Γ : CubicPeriodSublattice) (μ : Fin 4)
+
+/-- NEW. The sign field of the centre translation in the spatial direction ν: −1 on the slice
+links of axis ν whose source has ν-coordinate ≡ 0 mod side, +1 elsewhere. -/
+def centreSign (ν : Fin 4) (e : Γ.LinkOrbits μ) : ComplexMatrix2.specialUnitary :=
+  open Classical in
+  if (linkRep e).axis = ν ∧ Γ.coordResidues ((linkRep e).source : InfiniteLattice.LatticePoint 1) ν = 0
+  then centreElt else 1
+
+/-- NEW. The predicate of the centre translation C_ν, in the release's own style
+(compare `IsGaugeRep`, `TransferOperatorOfACubicTorus.lean` 209-212). -/
+def IsCentreTranslation (ν : Fin 4) (T : Γ.SliceL2 μ →L[ℂ] Γ.SliceL2 μ) : Prop :=
+  ∀ φ : Γ.SliceL2 μ, (T φ : (Γ.LinkOrbits μ → ComplexMatrix2.specialUnitary) → ℂ)
+    =ᵐ[ComplexMatrix2.haarPi (Γ.LinkOrbits μ)]
+    fun u => (φ : (Γ.LinkOrbits μ → ComplexMatrix2.specialUnitary) → ℂ)
+      (fun e => Γ.centreSign μ ν e * u e)
+
+def centreTranslation (ν : Fin 4) : Γ.SliceL2 μ →L[ℂ] Γ.SliceL2 μ :=
+  Classical.epsilon (Γ.IsCentreTranslation μ ν)
+
+/-- NEW. The electric-neutral projection P₀: the mean over the eight centre translations
+of the slice normal to μ, written as a product of three commuting projections. -/
+def neutralProj : Γ.SliceL2 μ →L[ℂ] Γ.SliceL2 μ :=
+  ((Finset.univ.erase μ).toList.map fun ν => (1 / 2 : ℂ) • (1 + Γ.centreTranslation μ ν)).prod
+
+/-- NEW. The rank-one test of (M-neutral) on one cube at one coupling:
+there are 1 ≤ w ≤ side/1024, a unit vector φ and c > 0 with
+‖c⁻¹ P₀ T^w − |φ⟩⟨φ|‖_HS ≤ 2/5. -/
+def NeutralRankOneTest (β : ℝ) : Prop :=
+  ∃ (w : ℕ) (φ : Γ.SliceL2 μ) (c : ℝ), 1 ≤ w ∧ 1024 * w ≤ Γ.side ∧ ‖φ‖ = 1 ∧ 0 < c ∧
+    HSNormLE (((c⁻¹ : ℝ) : ℂ) • (Γ.neutralProj μ * Γ.transfer μ β ^ w) - ketBra φ) (2 / 5)
+
+end CubicPeriodSublattice
+```
+
+Faithfulness points of 4.1 (each one is a place where a wrong definition would make the theorem empty or false).
+
+1. `HSNormLE` is basis-free on purpose. A definition by `∑'` over `peterWeylVec` returns 0 for a
+   non-summable family in Lean, which would make the test true for a non-Hilbert–Schmidt operator; and it
+   would be the Hilbert–Schmidt norm only if `peterWeylVec` is complete, which I did not find stated (2.3).
+2. `centreTranslation` is an `epsilon` of a predicate. It means C_ν only if an operator with the predicate
+   exists. Existence is the first lemma to prove (measure preservation: `HaarPiInvariance`, 2.2). The release
+   has the same pattern and proves existence in `GaugeRepProperties.rep_formula`.
+3. `centreSign` reads a representative `linkRep e`. The axis and the residue of the source do not depend on the
+   representative (`coordResidues` is constant on orbits; `linkOrbit` keeps the axis). Two lemmas.
+4. Different planes x_ν = r give centre translations that differ by a gauge transformation with values ±1. On
+   gauge-invariant vectors they agree. T carries P_G on both sides (2.1), so P₀ T^w does not depend on r. Lemma.
+5. The release's T is K^(1/2) e^(-V) K^(1/2) between gauge projections, the lane's is e^(-V/2) K e^(-V/2). The
+   spectra agree off zero. The lane's test and this test are equivalent by Corollary M2 (i): both say
+   s(2w) ≤ 4/21, and s reads only the non-zero neutral spectrum. **sketched**; this equivalence needs M2 in both
+   forms and is a lemma of the list (L1.4 below), not an assumption.
+6. Time axis. The hypothesis is stated with one axis μ. All four give the same statement by the hypercubic
+   symmetry of the cube. The theorem below uses `TimeAxis.timeIdx`, the axis of the release's continuum form.
+
+### 4.2 The hypothesis (M-neutral-all) and its form along the extracted cutoffs
+
+```lean
+open Formulation in
+/-- NEW. β_K at the least-root coupling of the release, at every cutoff K
+(`renormalizedBareCoupling`, `Formulation/ReferenceCoupling.lean` 162). -/
+def betaAt (L M K : ℕ) (g₀ : ℝ) : ℝ := (renormalizedBareCoupling L M K g₀ ^ 2)⁻¹
+
+/-- NEW. (M-neutral-all), check 1453 L101-105, word for word: one physical side ℓ ∈ 4ℕ, and for
+every late cutoff K the rank-one test on the cube of ℓ·L^K sites at the coupling β_K. -/
+def MNeutralAll (L M : ℕ) (g₀ : ℝ) (ℓ : ℕ) : Prop :=
+  0 < ℓ ∧ 4 ∣ ℓ ∧ ∃ K₀ : ℕ, ∀ K : ℕ, K₀ ≤ K →
+    ∀ Γ : CubicPeriodSublattice, Γ.side = ℓ * L ^ K →
+      Γ.NeutralRankOneTest ReflectionPositivity.TimeAxis.timeIdx (betaAt L M K g₀)
+
+/-- NEW. (M-neutral-Lean): the same on infinitely many cutoffs of a given sequence K. This is all
+the theorem uses (check 1450 L62; row 1449 L124). -/
+def MNeutralAlong (L M : ℕ) (g₀ : ℝ) (ℓ : ℕ) (K : ℕ → ℕ+) : Prop :=
+  0 < ℓ ∧ 4 ∣ ℓ ∧ ∃ᶠ j in Filter.atTop,
+    ∀ Γ : CubicPeriodSublattice, Γ.side = ℓ * L ^ (K j : ℕ) →
+      Γ.NeutralRankOneTest ReflectionPositivity.TimeAxis.timeIdx (betaAt L M (K j) g₀)
+
+theorem MNeutralAll.along {L M : ℕ} {g₀ : ℝ} {ℓ : ℕ} (h : MNeutralAll L M g₀ ℓ)
+    {K : ℕ → ℕ+} (hK : StrictMono K) : MNeutralAlong L M g₀ ℓ K := by
+  sorry   -- StrictMono K gives K j ≥ K₀ eventually; 10 lines
+```
+
+Notes. (a) `∀ Γ` with a given side: any two such Γ have the same period group, so this is one cube. (b) The
+hypothesis does not mention the proof's subsequence, the flow, or BND. (c) The side ℓ·L^K is at least 3, so Γ
+exists (`CubicPeriodSublatticeIffThreeLe`). (d) The lane's range condition n ≥ 2^70 of the explicit
+finite-aspect theorem holds for late K; the theorem's proof takes it from `∃ᶠ` and K → ∞.
+
+### 4.3 The conclusion: unique vacuum and mass gap of the constructed mixture
+
+```lean
+open SeparatedTuples ReflectionPositivity.TupleForm HilbertSpaceBasics
+open ReflectionPositivity.Reconstruction LimitTheorem
+
+/-- NEW. Mass gap m of the functional σ on separated tuples, in semigroup form on the release's
+reconstructed Hilbert space: the form is positive, the reconstruction exists, and the time
+semigroup contracts at rate m on the orthogonal complement of the vacuum. -/
+def HasMassGap (σ : TupleFunctional) (m : ℝ) : Prop :=
+  ∃ hσ : IsPosSemidef (reflectionForm σ), HasReconstruction σ hσ ∧
+    ∀ ψ : PhysicalSpace σ hσ, ⟪vacuum σ hσ, ψ⟫_ℂ = 0 →
+      ∀ t : ℝ≥0, ‖timeShift σ hσ t ψ‖ ≤ Real.exp (-m * t) * ‖ψ‖
+
+/-- NEW. Unique vacuum: every vector fixed by the time semigroup is a multiple of the vacuum. -/
+def HasUniqueVacuum (σ : TupleFunctional) : Prop :=
+  ∃ hσ : IsPosSemidef (reflectionForm σ), HasReconstruction σ hσ ∧
+    ∀ ψ : PhysicalSpace σ hσ, (∀ t : ℝ≥0, timeShift σ hσ t ψ = ψ) → ∃ c : ℂ, ψ = c • vacuum σ hσ
+
+theorem HasMassGap.uniqueVacuum {σ : TupleFunctional} {m : ℝ} (hm : 0 < m)
+    (h : HasMassGap σ m) : HasUniqueVacuum σ := by
+  sorry   -- ψ − ⟪Ω,ψ⟫Ω is fixed and orthogonal to Ω, so its norm is ≤ e^(−mt) times itself; 25 lines
+```
+
+Faithfulness points of 4.3.
+
+1. `HasReconstruction σ hσ` is inside the conclusion because `timeShift` is an `epsilon`
+   (`ReconstructionOfAFunctional.lean` 42-43). Without it the bound would be about an arbitrary operator family.
+2. The semigroup form with rate m is the statement spec(H) ⊂ {0} ∪ [m, ∞) with ker H = ℂΩ (Lemma E of
+   `gap-os-equiv.md`, (E1) and (E3)). The spectral form in the release's words is a corollary to add later:
+   `opKernel (pairHamiltonian σ hσ) = ℂ ∙ vacuum σ hσ` (the shape of `ComponentReconstruction.kernel_eq`), and
+   the support of the energy spectral measure outside (0, m). With `ZeroEnergyIsL2` it gives that the canonical
+   decomposition has one point: `ENat.card A.space = 1` (2.5). **sketched**.
+3. The Hilbert space is the completion of the positive-time span of separated **tensors** (C^1 tuples in the
+   release's `SepTuple`). For the larger space of all flat positive-time Schwartz sequences of `Challenge.lean`
+   the gap needs the density of the tensors (check 1450 L35; the release's optional
+   `Reconstruction/MinkowskiSpace/VectorsOfSmoothSequencesAreTotalInTheClosedSubspace.lean`, by name). That is a
+   second theorem (4.6), not part of the first one.
+4. "In the tr F² sector" is built into σ = `centredOf S`: S is the limit of centred smeared plaquette
+   energies only.
+
+### 4.4 The interface (EC-ν) and the two halves
+
+```lean
+open InfiniteLattice
+
+/-- NEW. The reflected, time-shifted, truncated two-point function of a positive-time
+combination Z in the lattice state ν, at the time shift t (continuum units). `refl` is the
+time reflection of tests and `shiftT t` the time translation; `Z.terms` lists (coefficient,
+tuple). The mirror convention is the open point U1' of 3.1. -/
+def latticeU {a : ℝ} (ν : MeasureTheory.Measure (GaugeField a)) (Z : PositiveSpan) (t : ℝ) : ℝ :=
+  sorry   -- finite double sum of `centeredMoment ν (refl X ++ shiftT t Y)` minus |Σ c_k centeredMoment ν X_k|²
+
+/-- NEW. (EC-ν): exponential time clustering of the lattice states at one physical rate. -/
+def ExpClusters (L : ℕ) (K : ℕ → ℕ+)
+    (ν : ∀ j, MeasureTheory.Measure (GaugeField (PeriodicLattice.meshSize L (K j : ℤ))))
+    (m : ℝ) : Prop :=
+  ∀ Z : PositiveSpan, ∃ᶠ j in Filter.atTop, ∃ C : ℝ, ∀ n : ℕ,
+    latticeU (ν j) Z ((2 * n + 1) * PeriodicLattice.meshSize L (K j : ℤ)) ≤
+      C * Real.exp (-m * ((2 * n + 1) * PeriodicLattice.meshSize L (K j : ℤ)))
+
+/-- NEW. The clauses of `FixedObservableContinuumWith` that the chain reads, for named witnesses. -/
+structure Inputs (L M : ℕ) (g₀ : ℝ) (K : ℕ → ℕ+)
+    (ν : ∀ j, MeasureTheory.Measure (GaugeField (PeriodicLattice.meshSize L (K j : ℤ))))
+    (S : CumulantFamily) : Prop where
+  strictMono : StrictMono K
+  beta_pos : ∀ j, 0 < betaAt L M (K j) g₀
+  isLimit : ∀ j, IsInfiniteVolumeLimit L (K j) (betaAt L M (K j) g₀) (ν j)
+  moments : ∀ n (X : TestSpaces.SepTupleOfCard n),
+    Filter.Tendsto (fun j => InfiniteLattice.centeredMoment (ν j) X.1) Filter.atTop
+      (nhds (TestSpaces.centredOfCumulants S ⟨n, X⟩ : ℂ))
+  mixture : ∃ (D : SystemsWithFiveBounds.LimitConstants) (T : ConfigSpace.FlatSequence),
+    D.Valid ∧ SystemsWithFiveBounds.HasSchwingerSequence (centredOf S) T ∧
+    SystemsWithFiveBounds.SatisfiesGrowth T D.schwartzOrder D.schwartzPrefactor D.schwartzBase D.schwartzExp ∧
+    ConfigSpace.IsEuclidInvariant T ∧ ConfigSpace.IsOSPositive T ∧
+    ConfigSpace.IsPermSymmetric T ∧ ConfigSpace.IsReflectionReal T
+
+/-- Upper half (U). Soft. Reads the release's limit and reconstruction. -/
+theorem massGap_of_expClusters {L M : ℕ} {g₀ : ℝ} {K ν S} (hL : 3 ≤ L)
+    (h : Inputs L M g₀ K ν S) {m : ℝ} (hm : 0 < m) (hc : ExpClusters L K ν m) :
+    HasMassGap (centredOf S) m := by
+  sorry
+
+/-- Lower half (W). Lattice only. Reads the release through `transfer`, `IsInfiniteVolumeLimit`
+and the finite Wilson measure. -/
+theorem expClusters_of_mNeutral {L M : ℕ} {g₀ : ℝ} {K ν S} (hL : Odd L) (hL3 : 3 ≤ L)
+    (h : Inputs L M g₀ K ν S) {ℓ : ℕ} (hs : MNeutralAlong L M g₀ ℓ K) :
+    ExpClusters L K ν ((2 / ℓ) * Real.log (2 ^ 18 / 5041)) := by
+  sorry
+```
+
+### 4.5 The conditional theorem
+
+```lean
+/-- The conditional gap theorem for named witnesses. -/
+theorem massGap_of_mNeutral {L M : ℕ} {g₀ : ℝ} {K ν S} (hL : Odd L) (hL3 : 3 ≤ L)
+    (h : Inputs L M g₀ K ν S) {ℓ : ℕ} (hs : MNeutralAlong L M g₀ ℓ K) :
+    HasMassGap (centredOf S) ((2 / ℓ) * Real.log (2 ^ 18 / 5041)) ∧ HasUniqueVacuum (centredOf S) := by
+  sorry   -- the two halves of 4.4, and HasMassGap.uniqueVacuum; rate positive since 2^18 > 5041
+
+/-- The packaged statement: the release's fixed-observable continuum limit, with one more clause
+for the same witnesses. For every admissible L, M, g₀ there are witnesses of
+`FixedObservableContinuum L M g₀` such that (M-neutral-all) at any side ℓ gives a unique vacuum
+and the mass gap (2/ℓ) log(2^18/5041) of the constructed mixture. -/
+def FixedObservableContinuumWithGap (L M : ℕ) (g₀ : ℝ) : Prop :=
+  ∃ (K : ℕ → ℕ+) (ν : ∀ j, MeasureTheory.Measure (GaugeField (PeriodicLattice.meshSize L (K j : ℤ))))
+    (S : CumulantFamily),
+    Inputs L M g₀ K ν S ∧
+    -- (here: the remaining clauses of `FixedObservableContinuum L M g₀` for the same K, ν, S, quoted
+    --  from `Formulation/FixedObservableContinuum.lean` 26-55, so that S is identified as their limit)
+    ∀ ℓ : ℕ, MNeutralAll L M g₀ ℓ →
+      HasMassGap (centredOf S) ((2 / ℓ) * Real.log (2 ^ 18 / 5041)) ∧ HasUniqueVacuum (centredOf S)
+
+theorem su2_fixed_observable_gap_of_mNeutral :
+    FixedObservableLimit FixedObservableContinuumWithGap := by
+  sorry   -- obtain the witnesses from `su2_fixed_observable_continuum_limit`; apply `massGap_of_mNeutral`
+```
+
+Reading of the packaged statement, in words. Sussman and Alpoge's theorem gives, for every large odd L, some M
+and δ, and for every g₀ in (0, δ), a cutoff sequence K_j, infinite-volume lattice states ν_j and a continuum
+limit S. The new clause says: for these same K_j, ν_j, S, if for some ℓ ∈ 4ℕ the rank-one test holds on the cube
+of ℓ L^K sites at the least-root coupling for every late K, then the Hilbert space reconstructed from S has a
+unique vacuum and its Hamiltonian has no spectrum in (0, (2/ℓ) log(2^18/5041)).
+
+Points a reader of the statement must check (they decide whether the theorem says what the lane means).
+
+1. `FixedObservableLimit` puts `∀ g₀ ∈ Ioo 0 δ` outside the witnesses, so ℓ may depend on g₀. That is the
+   lane's statement (check 1453 L101: "a fixed 0 < g₀ < δ").
+2. The witnesses are existential. The clause is proved for **every** tuple of witnesses (4.5, first theorem),
+   so nothing depends on which S the release's proof picked.
+3. Vacuity. The implication is true and empty if (M-neutral-all) is false. The Lean theorem does not say the
+   hypothesis is consistent. That is the open seed (rows 1353-1367), and no formalization of this chain touches it.
+4. The trusted base is the release's: `propext`, `Classical.choice`, `Quot.sound` (row 1455 replays it). The
+   new library adds no axiom and no `native_decide`: the numerical steps are the inequalities 2^18 > 5041,
+   (3/4)^3 < 1/2 and a few like them, all by `norm_num`.
+
+### 4.6 The same conclusion on the public statement's Hilbert space (second theorem, **sketched**)
+
+For `S : WilsonOS.Family` of `Challenge.lean`, with `Admissible`, `pairing`, `translate` as there (L150-166):
+
+```lean
+/-- NEW. Mass gap of a Schwinger family in the vocabulary of `Challenge.lean` alone. -/
+def WilsonOS.HasMassGap (S : WilsonOS.Family) (m : ℝ) : Prop :=
+  ∀ Φ, WilsonOS.Admissible Φ → ∀ t : ℝ, 0 ≤ t →
+    (WilsonOS.pairing S Φ (fun n => WilsonOS.translate (t • Pi.single 3 1) (Φ n))).re
+        - ‖∑ᶠ n, S n (Φ n)‖ ^ 2
+      ≤ Real.exp (-m * t) * ((WilsonOS.pairing S Φ Φ).re - ‖∑ᶠ n, S n (Φ n)‖ ^ 2)
+```
+
+This is <ψ, e^(-tH) ψ> ≤ e^(-mt) ‖ψ‖² for ψ = Φ − <Ω, Φ>Ω, on all admissible flat sequences. It can be read by
+a person who knows only `Challenge.lean`. It needs: (a) the identification of the public S with the internal
+`centredOf S` on tensors (the release proves it inside `WilsonSubsequence.lean` 14-67); (b) density of tensors
+in the flat positive-time tests for the form (check 1450 L35). Proposed as the last stage, because it adds no
+mathematics of the gap.
+
+## 5. Lemmas to formalize, in dependency order (item (3) of the row)
+
+Sizes are lines of Lean including proofs. Every size is **guessed**. Calibration, counted from the release:
+its `TransferOperators` folder (cubic trace formula, insertions, Peter–Weyl) is 19,568 lines; its
+`ReflectionPositiveLimits` (reconstruction of a functional, clustering in time) is 7,535; `HilbertSpaces` 10,362;
+`SpectralTheory` 17,051; `InfiniteLattice` 94,933. The hand notes behind the lower half are short: `gap-transfer.md`
+279 lines, `gap-transfer-twisted.md` 140 lines. The column "math" says where the hand proof is and who checked it.
+
+### 5.1 Upper half (U): (EC-ν) gives the gap. Soft.
+
+| # | Lemma | Depends on | Size | Math |
+|---|---|---|---|---|
+| U0 | `Inputs` from any witnesses of `FixedObservableContinuumWith P L M g₀` (β_j > 0 from `IsLeast`; the rest is projection) | release | 60 | none |
+| U1 | The form of `centredOf S` is positive and `HasReconstruction` holds, from the `mixture` clause (find the release's theorem from `IsOSPositive T` and `HasSchwingerSequence` to `IsPosSemidef (reflectionForm σ)`, and from `ContractionHypotheses` to `HasReconstruction`) | U0 | 100-400 | release's; **risk R1** below |
+| U2 | ν_j is a shift-invariant periodic Gibbs state with link-mirror positivity (`IsInfiniteVolumeLimit` to `periodicGibbsSet`, then `PeriodicGibbsReflectionTransfer`) | U0 | 150 | release's |
+| U3 | `latticeU (ν j) Z t` at t = (2n+1) a_j is the n-th reflected moment of one function of `upperAlgebra` (products of centred `smearedEnergy`; reflection of tests against reflection of fields; the mirror at a_j/2 with A shifted up by a_j) | U2 | 400-700 | 3.1 U1, U1'; **sketched** |
+| U4 | Sequence lemma: non-negative, log-convex with forward zeros, m_n ≤ C q^n gives m_(n+1) ≤ q m_n | Mathlib | 80 | Lemma A2 of row 668 in scalar form |
+| U5 | (R_j) passes to the limit on the dense set {(2r+1) L^(-k)} (L odd), then to all 0 ≤ s ≤ t by continuity of t ↦ ‖timeShift t ψ‖ | U1, U3, U4 | 300 | Lemma DT (row 1449, check 1450) |
+| U6 | Density: the bound on ψ = posClass Z − <Ω, Z>Ω extends to the complement of the vacuum; `massGap_of_expClusters` | U5 | 150 | 3.1 U3 |
+| U7 | `HasMassGap.uniqueVacuum`; later the spectral forms and `ENat.card A.space = 1` | U6 | 25, later 300 | Lemma E of row 668 |
+
+Total (U): about 1,300 to 2,200 lines.
+
+### 5.2 Lower half (W): (M-neutral-all) gives (EC-ν). Lattice only.
+
+| # | Lemma | Depends on | Size | Math |
+|---|---|---|---|---|
+| W1 | Lemma M1 in the direction used: `HSNormLE (c⁻¹ • B − ketBra φ) δ`, B ≥ 0 Hilbert–Schmidt, δ < 1 gives (1 − δ²) Tr B² ≤ ‖B‖² | Mathlib | 200 | row 1356 2.1, check 1359. No eigenvector needed for this direction. |
+| W2 | Spectral toolkit for a positive trace-class operator on `HaarL2`: eigenvalue family with multiplicity, Tr T^a = Σ λ_i^a, top eigenvalue = ‖T‖, joint eigenvectors with commuting unitary involutions; Lemma A (Tr T^(jb) ≤ (Tr T^b)^j, convexity of a ↦ log Tr T^a); sums of real powers Σ x_i^s | Mathlib; release `tracePW`, `TransferProperties` | 1,200-2,000 | standard; not in Mathlib at this pin (2.3) |
+| W3 | Rectangular tori with twists on a direct finite model (sites ZMod N_0 × ... × ZMod N_3, sides ≥ 3): sign fields s^(e,m), Z^(e,m); independence of the place of the stacks; Z^(σk)(σn) = Z^k(n) for the 24 permutations | Mathlib; release Haar on SU(2) | 1,500-2,500 | `gap-transfer-twisted.md` 1.4, 3.5 (row 1004, check 1008) |
+| W4 | (TM-tw): T_(B,m) = P M_m C_E M_m P on the box B, positive, trace class, strictly positive kernel; C^e commute with it; Z^(e+m)(a, B) = Tr(T_(B,m)^a C^e) for every a ≥ 3 and every one of the four directions as time; (F1), (S1)-(S3) | W2, W3; release `sqrtLinkOperator`, `linkProductKernel`, `kernelOp`, `TwistedActionOperators` (all generic in the finite link set) | 5,000-9,000 | Theorem TW-T (row 1004, check 1008); `gap-flux-exercise.md` 3.1 C2 |
+| W5 | Abstract Theorem S: for a symmetric positive W(a, b) = Tr T_b^a, Lemmas K, X, E, E', Theorem S, Corollary S3' | W2 (Lemma A only) | 600-1,000 | `gap-crux-restate.md` 3.4 (row 697; checks 698, 699). No gauge theory. |
+| W6 | Finite algebra on Z_2^6: the three sector sets (Proposition CL (b)), the Pfaffian weight, Lemma W, Theorem S-w, Corollary EV | W4, W5 | 500-900 | `gap-flux-exercise.md` 8.3-8.4 (row 731, check 732). Facts on 64 elements by kernel `decide`. |
+| W7 | Explicit finite-aspect theorem, K = 512: on a cube with 4 ∣ n, n ≥ 2^70, s(u) ≤ 1/2 for some 3 ≤ u ≤ n/512 gives S_κ(n/2; n³) < 2^(-18) | W2, W4, W6 | 1,500-3,000 | `gap-solve9-astra62.md` L213-227 with its (3), (4), (5), (8), (9) (row 1161, check 1162) |
+| W8 | Corollary M2 and Theorem BP (i): the rank-one test gives s(2w) ≤ 4/21, then s(u) ≤ 1/2 at u = max(3, 2w) ≤ n/512, then the κ-seed with N = n/2; the release's T against the lane's T (4.1 point 5); independence of the plane (4.1 point 4) | W1, W2, W7 | 400 | row 1356 2.2; row 1179 Section 6; check 1450 L56 |
+| W9 | Torus expectations of slab functions as traces with an inserted operator k_F; the cylinder state; Lemma T and Theorem L1 of (L); Lemma CB, MX, L1-ev; Theorem EV-L (c), (d) for bounded continuous centre-blind local functions; axis exchange of the periodic state | W2, W4 | 3,000-5,000 | `gap-transfer.md` Section 8, `gap-seed-limit.md` (row 700; checks 703, 723), `gap-flux-exercise.md` 8.2 (check 732) |
+| W10 | Bridge to the release: its tori of side 2 L^(m+K) at spacing L^(-K) (`PeriodicLattice.wilsonGibbsMeasure`, `liftedWilsonMeasure`) against the finite model at spacing 1; centred smeared energies are bounded continuous centre-blind local functions; weak limits keep the clustering bound; lattice steps to physical time | W9; release | 1,000-2,000 | check 1450 L27-36 (with the Borel step dropped: 3.1) |
+| W11 | Proposition P-ev (a), (b) with the constants (5041, 71, 2^(-18), M_* = (2/ℓ) log(2^18/5041)); `expClusters_of_mNeutral` | W6, W8, W9, W10 | 300 | row 1179 5.2; check 1450 L56-62 |
+
+Total (W): about 15,000 to 26,000 lines. Whole chain: about 16,000 to 28,000 lines, of the order of 5 to 8
+percent of the release's `YangMills/Construction` tree as sampled above. **guessed**.
+
+### 5.3 The hardest step
+
+**W7, the explicit finite-aspect theorem, is the hardest step.** Reasons.
+
+1. It is the only node whose hand proof is a long chain of numerical inequalities (2^(-169), 160 h, 2^(-59),
+   2^(-47), 2^(-19)) inside one file of the solve chain, with one check (1162). Every other node of (W) is a
+   structural statement checked twice or more.
+2. It reads all 64 twists in more than one time frame at once (misaligned coefficients "in that frame"), so it
+   needs W3 and W4 complete in all four directions, with the crossing of twisted traces.
+3. It differentiates spectral sums in a real exponent (sums of x^s for s in [1/2, 3/2], bounds on −x log x). So it
+   needs eigenvalue families with multiplicity (W2 in full), not only traces of integer powers.
+4. If a formalization finds a real gap anywhere in the chain, this is the most likely place. A found gap would be
+   a result about the lane's chain, not only about its Lean form.
+
+**W4 is the largest step**, and the place where the release helps most. Its Haar, Peter–Weyl, kernel-operator
+and trace machinery is generic in the finite set of links (2.1). Its layer decomposition and trace formula are
+stated for cubic tori of the infinite-lattice quotient formalism and cannot be reused as statements. The proofs
+(`CycleOfKernelsIsATraceProof.lean` 391 lines, `ExactEliminationOfAnOutermostLayerProof.lean` 544 lines,
+`ConfigurationsOfACubicTorusByLayersProof.lean` 269 lines) are the template.
+
+Risks of the design itself (each one is **guessed** until a build row tests it).
+
+- **R1.** The exported `mixture` clause may not give `HasReconstruction (centredOf S)` by a theorem of the release
+  that is public. Inside their proof it is available (`hAss.limit.conditions.reconstruction`, 2.6), but the step
+  before it is `private`. Fallback: put `ReconstructionConditions (centredOf S)` into `Inputs` as a field, and
+  supply it by re-proving the last two theorems of the release with one more conjunct in a new file (about 200
+  lines that follow their proof text line by line; a question of credit and licence for the lead; the release's
+  README shows no licence line in a grep for `licen`).
+- **R2.** The mirror bookkeeping of U3 (U1' of 3.1): site reflection of tests, link-mirror positivity of states.
+- **R3.** `Inputs.moments` is stated for `SepTupleOfCard n`, which are C¹ compactly supported separated tuples.
+  The tuples θX_k ++ τ_t X_l must be shown to be of this type, uniformly in the bookkeeping of `PositiveSpan`.
+- **R4.** The two torus formalisms (2.4). W10 may cost more than estimated.
+- **R5.** `HSNormLE` against `IsHilbertSchmidtPW`: W1 needs the trace of B² in the Peter–Weyl basis, hence
+  completeness of `peterWeylVec`. If the release does not state it, it is Peter–Weyl for SU(2)^J (about 500
+  lines more, or a route through `Schatten.kernelOp` kernels: ‖B‖²_HS = ∫∫ |kernel|²).
+
+## 6. What can be stated and checked first (item (4) of the row)
+
+Order chosen so that each stage ends in a kernel-checked artefact that stands alone, and so that the cheap
+stages test the risky interfaces before the expensive ones start.
+
+**Stage 0. The statement file, with `sorry` in the proofs only.** Sections 4.1-4.5 in one file `GapChain/Statement.lean`
+(about 150 lines), compiled against the release. Definitions carry no `sorry` except `latticeU` (which must be
+written out in this stage) and the two-line membership proof of `centreElt`. Decisive content: the statement
+type-checks against their declarations, and `#print axioms` on `su2_fixed_observable_gap_of_mNeutral` shows
+`sorryAx` plus the release's three axioms and nothing else. This stage settles R3 and half of R1 (whether the
+needed names are public). It needs the replay build of row 1455 to be finished, because Lean must load the
+release's `.olean` files. It is the place for the faithfulness reading: the points of 4.1, 4.3 and 4.5 are a
+checklist for the cross-provider reader.
+
+**Stage 1. Three small closed pieces, independent of each other.**
+- U4 (sequence lemma), Mathlib only, about 80 lines.
+- W1 (Lemma M1, one direction), Mathlib only, about 200 lines.
+- W5 (abstract Theorem S with Lemmas K, X, E, E', S3'), Mathlib only once Lemma A is taken as a hypothesis on
+  W (submultiplicative and log-convex in each argument), about 600-1,000 lines. This is the lane's main
+  theorem of row 697 in kernel-checked form, with the constant 5041. It is also the piece of the chain that a
+  reader outside the lane can check most easily.
+
+**Stage 2. The upper half (U) complete: `massGap_of_expClusters` with no `sorry`.** About 1,300-2,200 lines.
+Result: a kernel-checked theorem on the release's own objects, "if the infinite-volume lattice states of the
+construction cluster exponentially in time at one physical rate on the tr F² observables, the continuum limit
+has a unique vacuum and a mass gap at that rate". It is the standard criterion, and to my reading of rows 1449
+and 1453 the release does not contain it (no statement with a rate, 2.5). It settles R1 and R2. After it, the
+gap of the Lean continuum theory is reduced in Lean, not only by hand, to one lattice statement (EC-ν).
+
+**Stage 3. The lower half in the order W2, W3, W4, W6, W9, W10, W11 with the κ-seed as hypothesis.**
+Intermediate theorem: `expClusters_of_kappaSeed` (hypothesis S_κ(n/2; n³) < 2^(-18) on the cubes n = ℓ L^K_j). It
+leaves out W1, W7, W8.
+
+**Stage 4. W7 and W8.** The theorem of 4.5 with no `sorry`.
+
+**Stage 5.** The spectral corollaries of U7 and the `Challenge.lean` form of 4.6.
+
+What not to do first: W7. It is the hardest and needs nearly all of the rest.
+
+## 7. Open points, and what this note does not show
+
+- Nothing here was compiled. Every Lean block is a design. Names of the release are quoted from files I
+  opened; types of composite expressions (coercions `ℕ+ → ℕ → ℤ`, `PositiveSpan` internals, the exact form of
+  `TimeAxis.timeIdx`) are not verified.
+- The shorter route of 3.1 (link mirrors and log-convexity instead of the site-mirror datum, Statement (3) and
+  Lemma FE) is my proposal. It is **sketched**, by me only, and checked by no one. If it fails at U3, the fallback
+  is the chain as on file (add Lemma FE, Lemma RPc, Theorem L3-ev and Statements (1), (3), (5): about 3,000 to
+  4,000 lines more, **guessed**).
+- The sizes are guesses with the stated calibration. I did not measure how long any piece takes to write or build.
+- I read the lane's lattice statements (Theorem S, S-w, EV-L, TW-T 1.1-1.4, the explicit finite-aspect theorem) for
+  their structure. I did not re-check their proofs.
+- The seed (M-neutral-all) stays open. A complete formalization of this chain proves an implication only.
+- Row 1455 (replay) was running while I read. I read source files only. I did not touch the build.

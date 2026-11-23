@@ -8,9 +8,16 @@ Started 2026-11-23T20:35Z (date -u), pinned at commit 27a186f3d, branch claude/y
 ## 0. Status log
 
 - 2026-11-23T20:35Z: file opened; reading FINISH.md rules, GOAL.md and row 1442.
-- Plan: Phase 1 (Section 1, written before any row after 1378 is opened), Phase 2 (Sections 2-3: the passes, the
-  inventory of other actions and block maps), Section 4 (does the chain survive a change of action), Section 5
-  (decision and the next two rows). Labels: PROVED, SKETCHED, GUESSED, ON FILE (with the anchor).
+- 2026-11-23T20:46Z: Section 1 (Phase 1) written before any row after 1378 was opened.
+- 2026-11-23T20:51Z: Sections 2.1-2.3 written (the passes; Proposition VIL).
+- 2026-11-23T20:53Z: Sections 2.4 and 3 written (inventory; survival of the chain).
+- 2026-11-23T20:54Z: Sections 4 and 5 written (decision; next two rows).
+- 2026-11-23T20:55Z: anchors verified by grep, PROVED items re-read, RESULT written. No numeric run, no subagent, no
+  network fetch. Files written: this one only.
+- Plan as carried out: Phase 1 (Section 1, written before any row after 1378 was opened), Phase 2 (Section 2: the
+  passes, Proposition VIL, the inventory of other actions and block maps), Section 3 (does the chain survive a
+  change of action), Section 4 (decision), Section 5 (the next two rows), Section 6 (labels and RESULT).
+  Labels: PROVED, SKETCHED, ARGUED, GUESSED, ON FILE (with the anchor).
 
 Moves: the open item is the mass-gap clause (a later target of `GOAL.md`), through the seed (M-neutral) of row 1367.
 If the review finds a level that a change would unblock, the next row attacks there. If not, the band stops and the
@@ -62,14 +69,14 @@ Reading of the table (SKETCHED). Only three results reach every coupling with a 
 Durhuus-Froehlich and the 2D O(N) proofs. The first needs the Villain weight, and it is abelian. This is the one
 published precedent where the choice of action decided a proof. Its mechanism is an exact positive dual
 representation. For SU(2) the dual weights carry signs that come from the group integrals, not from the plaquette
-coefficients (ON FILE: the negative projective-plane term, `library/gap-means-max.md` Section 2.4, row 737). So the
+coefficients (ON FILE: the negative projective-plane term, `library/gap-means-max.md` L78, row 737). So the
 precedent does not transfer by a change of plaquette weight. The second is lossy by one dimension. The third is the
 only selective mechanism at order-one coupling, and it is not a gauge result.
 
 ### 1.3 Judgement by level
 
 **The action.** Within reflection-positive single-plaquette weights on SU(2) links, a change of action cannot be
-the source of the mechanism. Reason (PROVED as a scoping statement, three lines): every property of a central
+the source of the mechanism. Reason (PROVED as logic; the list of shared properties is by inspection): every property of a central
 positive-type weight that the heat-kernel weight on SU(2) shares with the Villain weight on U(1) (positivity of all
 character coefficients, the convolution semigroup, coefficients exp(-t C_j) quadratic in the dual variable, a
 transfer operator exp(-V/2) exp(t Delta) exp(-V/2) with continuous time, analyticity) holds in a massless model. A
@@ -206,14 +213,14 @@ variance s on the circle. It is the heat kernel of U(1) at time s.
 
 (a) f/Z = (product over links of k_tau) * nu, with nu a probability measure on T^E. In words: a Villain field is
     theta' + xi, with theta' of law nu and xi independent of theta', independent over links, each of law k_tau.
-(b) For every block size b >= 1, the straight sums Theta_e = sum of theta over the b fine links of the coarse edge e
+(b) For every block size b >= 1 that divides N, the straight sums Theta_e = sum of theta over the b fine links of the coarse edge e
     have the law (product over coarse edges of k_(b tau)) * nu_b, with nu_b the law of the straight sums of theta'.
     So the pushed-forward law has an exact independent heat factor of time b tau on every coarse link, with a
     positive residual, at every coupling, every block size and every dimension.
 (c) If a law on G^E, G a compact group, has independent central heat factors of time tau on all links with a
     positive residual, then its straight products of b links have independent central heat factors of time b tau.
-(d) In d = 4 at large beta the Villain model has no gap (Froehlich and Spencer, CMP 83, 1982, `unchecked`, lane
-    anchor `library/prior/gap-lit-vmf-tor.md` L52). So the first lemma of row 1434's candidate, in the strongest
+(d) In d = 4 at large beta the Villain model is in a massless phase (Froehlich and Spencer, CMP 83, 1982; Guth
+    for the perimeter law; both `unchecked`, recalled; lane anchor `library/prior/gap-lit-vmf-tor.md` L52). So the first lemma of row 1434's candidate, in the strongest
     form (every link, every scale, a time that does not shrink), does not imply a gap, and implies nothing that
     separates a massive from a massless model.
 
@@ -319,3 +326,102 @@ any case. So if (A1) held in rate form, two bare weights would give the same win
 hold, the lane cannot use any bare weight. In both cases the choice of bare weight does not change the band.
 (ARGUED; this is the physical content of universality, and rows 1391-1422 show that (A1) is open in the account's
 own terms: check 1422 FAILS for the complete native pair.)
+
+## 4. Decision
+
+### 4.1 The owner's two questions, answered
+
+**"Maybe NOT use Wilson?" No.** Four reasons, each with its evidence.
+
+1. The band is a property of the target ((F-a), (F-b) of 1.1). Every reflection-positive action with the
+   Yang-Mills scaling limit has it. SKETCHED, standard.
+2. The mechanism must separate SU(2) from U(1). A single-plaquette weight cannot do that: each exact property of
+   the SU(2) heat kernel that could serve is shared by the Villain weight, and the Villain model is massless at weak
+   coupling in four dimensions. Proposition VIL makes this exact for the one class where a pass was stopped by the
+   Wilson weight (row 1434): there the Villain model has the wanted factor on every link, at every scale. PROVED
+   here, unchecked.
+3. Six of the nine passes do not read the weight. The three that do (1396, 1409, 1434) lose an obstruction under a
+   heat-kernel weight and gain nothing (2.2). SKETCHED from the rows' stated proofs.
+4. The cost is the existence chain. The account is written for Wilson, and its own universality proposition does
+   not let the lane change the weight (row 904). The engine would survive; the continuum inputs (P1)-(P4), (H2),
+   (TOT) would not (Section 3). On file.
+
+The lane had this option on file five times since row 876 and marked it cosmetic each time (2.4). That verdict
+stands, now with a proof for the heat-factor class.
+
+**"Do we need to go further back up the attack?" The levels above the seed are sound, and none of them is the
+wall.** The chain from (M-neutral) to the gap is a correct consumer and survives. The block map is a tool. The
+action is cosmetic. What is missing is one kind of input, the same in every pass since row 1380: an exact carry with
+a sign for a typical-field quantity (K-I), or a renormalization step at an effective coupling of order one (K-II).
+That input is not a level of this lane's design. It is the open problem. No published work supplies it for a gauge
+model, and the two published instances in spin models (OpenAI; Ding, Huang and Yang) were ported and stop at a
+named step (rows 1009-1018, 1197, 1380).
+
+### 4.2 Stop on the band
+
+**Decision: stop attack and direction rows on the band.** Reason: the search has converged. Four blind first
+phases (rows 1402, 1434, 1438, 1439) and this one produced only items that were on file or that closed a class
+with no selectivity. Three direction rows before this one (1386, 1390, 1402) reached the same recommendation.
+The two estimates that check 1407 kept open do not change it: the relative winding comparison of row 1131 is
+algebraically the defect bound (it fails (t5), `library/gap-band-fresh-check-astra62.md` L107), and (GC) of row 1197 is an argument with no
+neutral consumer. The typical-field shell estimate of row 1388 has no consumer (check 1389).
+
+This row adds the one direction that the earlier stops had not closed: the level of the action.
+
+What a stop does not say. It does not say that (M-neutral) is false or that the route is wrong. Nothing in the
+chain was disproved by any pass. It says that the lane has no first lemma to attack.
+
+**Reopen on any one of these (triggers).**
+
+- (R1) A published proof, for a non-abelian gauge model in three or four dimensions, of any inequality at
+  order-one coupling that fails for compact U(1). The OpenAI Yang-Mills write-up is the first place to look when it
+  appears.
+- (R2) A candidate that passes (t1) to (t5) of `library/gap-mech-direction2-fable.md` 4.5 and states its carry, not
+  only its gain (Remark PAIR). After VIL, add one test: **(t6) the Villain test.** If the first lemma is an exact
+  identity of the law (a factor, a mixture, a dual form), check it in Villain U(1) in four dimensions before any
+  proof row. If it holds there, the lemma is not the mechanism, whatever the Wilson weight does to it.
+- (R3) (A1) proved in rate form. Then a verified computation at the window (K-III) has a statement to prove. It
+  still needs (A2).
+
+### 4.3 Bookkeeping that the stop exposes (for the lead; I edit no other file)
+
+`library/open-registry.md`, `library/t0-tree.md` and `library/open-core.md` have no line for (M-neutral) or
+(N-phys) (grep at this pin: no match). Rule 0f asks for one. One registry row would hold the gap clause's state:
+"(M-neutral), row 1367; consumer chain rows 1342, 1349, 1356, 1359; extra inputs (P1)-(P4), (H2), (TOT); band
+stopped at row 1442 with triggers (R1)-(R3)". Then a later lane starts from that row and not from a new blind pass.
+
+## 5. The next two rows
+
+**Row 1, `gap-mech-direction3-check-astra62` (cross-provider check of this file).** Order: Proposition VIL (a)
+to (d) line by line, with the bound A <= 4d, the periodic convolution step and the conjugation step of (c); then
+the table of 2.2, entry by entry against the rows' proofs, first the three W entries and the two SKETCHED claims
+(Villain fibres under Lott's hypothesis; Araki-Lieb-Thirring for a heat-kernel time weight); then the table of
+Section 3, with the numeric displays of rows 1161 and 1179 that I did not audit. Decisive outcome: if VIL holds and
+no W entry hides a gain that passes (t1), the question of the action is closed on the record and the band stop
+stands with test (t6). If an entry FAILS in the direction of a gain, that entry is the next proof row.
+
+**Row 2, off the band: the two-cutoff comparison (A1), at the proof row that check 1422 named** ("the one-family
+change of read for the ordinary stored strip at a common datum"). It is the account's own outstanding statement
+(`library/open-registry.md` L60, CA-III 37667, "Proof outstanding"), so it is proof work of the kind `GOAL.md`
+allows. It is also what decides, in the other direction, whether any bare weight can be used at all (Section 3,
+last paragraph), and it is trigger (R3). Decisive outcome: the per-cell bound of check 1422 proved, or a native
+violation found. I have not read that part of the account in this row; the lead should confirm with
+`library/port-map.md` that the statement sits on the T0 chain before queuing it. If it does not, the capacity goes
+to the first open hard-core obligation of the T0 chain instead, and that is the lead's choice, not mine.
+
+A standing item, not a row: a weekly literature scan for (R1) by the bulk reader, as row 1379 did.
+
+## 6. Summary of labels
+
+- PROVED here by hand, unchecked: Proposition VIL (a), (b), (c); (d) given the cited massless phase. The two-line
+  remark that the Wilson weight has no heat factor is row 1434 (3), checked by row 1436, not mine.
+- SKETCHED: (F-a) to (F-c); the dependence table 2.2; the numeric audit column of Section 3; the two claims on
+  Villain fibres and on Araki-Lieb-Thirring.
+- ARGUED: that the ultraviolet carry (A1) makes the bare weight irrelevant to the window problem.
+- GUESSED: that the Ricci gain of the SU(2) heat kernel is cancelled at one loop (the measured fact is on file).
+- ON FILE, not new: every Phase 1 item (table 2.1), the inventory 2.4, the stop recommendation (rows 1386, 1390,
+  1402).
+- Not done: no proof of the rows read was re-derived; the neutral rows 1161 and 1179 were not audited for Wilson
+  numbers; the account was not opened; no literature was fetched (all literature statements are recalled).
+
+RESULT: Row 1442 (Claude Fable 5.2 high, Mac mini worker 1; author only, checked by no one; no numeric run). Direction review with a negative verdict and a stop. (1) Level: neither the lattice action, nor the blocking map, nor the reduction (M-neutral), nor the outline of the route is the wall; the band is a property of the target, and the missing piece is one input kind, K-I or K-II of row 1386. Keep Wilson. (2) Of the nine passes, six obstructions do not read the weight; three (1396 Lemma KER, 1409's number, 1434) are Wilson-specific and their removal gives no gain. PROVED here, unchecked: Proposition VIL (for Villain U(1), every coupling, dimension and block size, the law is independent heat noise of time up to 1/(4 d beta) on every link convolved with a positive residual, the same holds for straight-product coarse links with time b tau, and the model is massless at weak coupling in d = 4; so the heat-factor class of row 1434 is realised exactly by a massless model and is not a mechanism under any weight). Inventory: other weights were tabled five times as cosmetic and never reached a proof row; row 904 shows the account does not let the lane change its weight. (3) Under a change of weight the engine and the rank-one test survive unchanged, the limit-state theorems survive with new constants, the continuum inputs (P1)-(P4), (H2), (TOT) do not (the existence chain or a missing bridge theorem), and the seed stays an open statement of the same strength. (4) Decision: stop attack and direction rows on the band, with reopen triggers (R1)-(R3) and a new filter test (t6), the Villain test. Next rows: a cross-provider check of this file (VIL first), and off the band the two-cutoff comparison (A1) at the proof row named by check 1422, if the lead confirms it is on the T0 chain. OPEN: (M-neutral), (A1), (A2), a carry with a sign at order-one coupling, the mass gap.

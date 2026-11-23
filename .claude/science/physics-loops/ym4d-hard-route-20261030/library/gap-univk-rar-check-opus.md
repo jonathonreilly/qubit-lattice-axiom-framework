@@ -17,7 +17,7 @@ mixed chessboard inequality, masses (5), root (6), lower bound (7), "every print
 the per-edge bound of check 1405; (G) verdict table, at most ten defects, RESULT.
 
 - 2026-11-23T04:03Z: file created; reading row 1413.
-- 2026-11-23T04:10Z: read row 1413 in full (151 lines) and CA-III 34425-34538 (Corollary 9.2:cor-old-age-smallness and proof).
+- (clock not read; between 04:03Z and 2026-11-23T04:10Z): read row 1413 in full (151 lines) and CA-III 34425-34538 (Corollary 9.2:cor-old-age-smallness and proof).
 
 ## 1. Sources re-read (anchors by `grep -n` / `sed -n` on the local files)
 
@@ -40,7 +40,7 @@ the per-edge bound of check 1405; (G) verdict table, at most ten defects, RESULT
   L34140-34183: E^[C_0](h) = E^[C](h) exp(-c_a sum_anc sqrt(d) M^d R_n^(d+1) |Z|) (eq-geometric-forgetting-3, C = C_0 + c_a),
   x_h = D I E^[C] <= exp(-2 p_0(g_(k-a))) (eq-..-4), and only then the coarse floor y_h <= q^(a+1) (eq-..-5, from
   #anc >= a+1 and each term >= 1, Lemma 9.2:lem-live-levels (b), (c)).
-- 2026-11-23T04:18Z: sources for (1) read.
+- (clock not read; between 04:03Z and 2026-11-23T04:10Z): sources for (1) read.
 
 ## 2. The disjoint split (row 1413 L41)
 
@@ -98,4 +98,152 @@ of Theorem 9.2:thm-geometric-forgetting", proof outstanding; and, for the full c
 9.1:prop-blind-site-expansions for labels with a live second-class strip (III 17945-17947, hypothesis (e)). Row 1413
 names (i) and (iii) but not (ii). **Defect D-a (minor, citation):** the nesting clause (ii) is a separate outstanding item
 in the account's list and is an input of (1) through the theorem's proof; it should be listed.
-- 2026-11-23T04:27Z: Section 3 written.
+- (clock not read; between 04:03Z and 2026-11-23T04:10Z): Section 3 written.
+
+## 4. The relative estimate (2), the range (3), the simpler range and the log-series step (row 1413 L64-82)
+
+Sources re-read: III 17640-17672 (Lemma 9.1:lem-ramp-comparison, H^m_nc = common, not aligned, first index > n_c) and
+its proof L17756-17784: moves (m2), (m4) multiply the H^m_nc terms by mu, |mu| <= (4 C_chi^sharp theta_chi^k)^(-1), and
+the disc estimate gives sum_(H^m_nc) ||tau_h^m|| <= 4 C_chi^sharp theta_chi^k M^m (the separate estimate; the combined
+form (9.1:eq-ramp-comparison-1) carries C_test with 80 C_chi N_w^4); III 21068-21079: A = e^(E_+^sharp N_w^4),
+B = e^(C^w_low N_w^4); III 53485-53490 hypothesis (b): P_0, Q_0 >= 1/B at each run's real centre; III 18115-18120:
+A^sharp carries e^(E_+^(sharp sharp) N_w^4); III 53901-53904: Pi_n <= C n^(-(kappa_0-4)/2) (log n)^(c_3); III 17941-17942:
+index condition theta_chi <= rho.
+
+(2). Z~^c - Z_G^c = sum_(O_a0) tau_h^c(V_w) + sum_(U_y) tau_h^c(V_w) by Section 2. The first sum is bounded by (1);
+U_y is a subset of H^c_nc, so the second is at most sum_(H^c_nc) ||tau_h^c|| <= 4 C^sharp theta^k M^c. Divide by
+|Z~^c| >= B^(-1). Every constant (2 A_c B, 4 C^sharp M^c B) is e^(O(V)) with g, w, L fixed, so one pair (C_0', Gamma)
+serves both runs and both tori. **(2) HOLDS** (no mixed interpolation, no positivity used, as row 1413 says).
+
+(3). If Gamma V <= min{|log q_a| H_c(a_0), k |log theta_chi|} - D with D = (1/2) log(1/eps), each of e^(Gamma V) q_a^(H_c)
+and e^(Gamma V) theta^k is at most e^(-D) = sqrt(eps); the right side of (2) is at most 2 C_0' sqrt(eps), below 1/2
+eventually; |Log(1 - z)| <= sum |z|^n / n <= |z|/(1 - |z|) <= 2|z| for |z| <= 1/2. So |log(Z_G/Z~)| <= 4 C_0' sqrt(eps).
+**HOLDS.** This is stronger than the extensive form C V (q_a^(a_0) + delta) asked by check 1397 (no factor V), on the range.
+Positivity: if Z~^c is real (it is >= 1/B > 0 at the real centre) and Z_G^c is real, Z_G/Z~ lies in the real interval
+[1/2, 3/2]: **HOLDS.**
+
+Simpler range Gamma V_large <= D. H_c(a_0) >= 2M^4(a_0 + 1) - 1 >= 2 a_0 + 1, so q_a^(H_c(a_0)) <= q_a (q_a^(a_0))^2 <= eps,
+i.e. |log q_a| H_c(a_0) >= 2D; theta_chi^k <= rho^k <= eps gives k |log theta_chi| >= 2D. Then each member of the min minus
+D is >= D >= Gamma V_large >= Gamma V on both tori. Only R >= 1 is used, so it holds on B's own lengths. **HOLDS.**
+Envelope example: at fixed w, rho^k is exponentially small and Pi_n <= C n^(-p) (log n)^(c_3) with p = (kappa_0 - 4)/2,
+so D >= (p/2) log n - (c_3/2) log log n - O(1) and V_large <= [p/(2 Gamma) - eta] log n is covered eventually. **HOLDS**
+(needs kappa_0 > 4; the later "kappa_0 > 8" of L124 is a different statement, V sqrt(eps) -> 0 at V of order n, and is
+consistent with this one).
+
+Young unaligned class alone: e^(Gamma V) theta^k <= rho^(k/2) <= sqrt(eps) when Gamma V <= k log(sqrt(rho)/theta_chi) (> 0
+since theta_chi <= rho < 1). **HOLDS.** The after-cut variant assumes an extensive floor e^(-D_o V) on Z_(not O)/Z~; it is
+stated as an assumption, not proved. **HOLDS as a conditional.**
+
+Size of the range (a fact the reader should keep): the volume range of (3) is logarithmic in the cutoff index n at
+fixed stop depth, V_large = O(log n), while the native tori of the account have V = N_w^4 = (2 L^(m_0 + w))^4, fixed in n
+for fixed (m_0, w). So for each fixed geometry the range is met for all large n; it is NOT met by a family with V of
+order k, which is exactly the family of the tile model (Section 5). The two halves of row 1413 are consistent.
+- (clock not read; between 04:03Z and 2026-11-23T04:10Z): Section 4 written.
+
+## 5. The positive tile model (4)-(7) (row 1413 L84-126)
+
+Sources re-read for the printed bounds the model must meet: III (9.1:eq-aligned-terms-3) L17461-17468 (moduli form,
+|mu|^(m_a(h)), |mu| <= q_a^(-a)); III L17756-17774 and Y 130310-130322 (the common unaligned labels born above n_c are
+multiplied by ONE mu per label, "The sum for this class is linear in mu", radius (4 C_chi^sharp theta_chi^k)^(-1));
+III L17640-17672 (combined C_test form); III L21068-21079 (A, B); the definition of varpi via slot thresholds near
+III L17680-17692 (not used by the model, which sets the flag).
+
+Partition and masses (5). Labels = subsets S of the V tiles; w(empty) = 1, w(S) = d_k b^|S|. Sum over nonempty S of
+b^|S| = (1+b)^V - 1, so Z~ = 1 + d_k((1+b)^V - 1) = 1 - d_k + d_k(1+b)^V and Z_G = 1. **HOLDS.** Recursion check
+U_(v+1) = (1+b) U_v + d_k b, U_0 = 0, gives U_v = d_k((1+b)^v - 1): (1+b) d_k((1+b)^v - 1) + d_k b = d_k((1+b)^(v+1) - 1).
+**HOLDS** (an independent derivation of (5)).
+
+Printed bounds, item by item (d_k = d_0 theta^k, 0 < d_0 <= min{1, 4 C^sharp}, log(1+2b) below the upper density):
+- upper: Z~ <= (1+b)^V <= e^(E_+ V) since d_k <= 1; lower: Z~ >= Z_G = 1 >= e^(-C_low V). HOLDS.
+- unaligned move disc: for |mu| <= (4 C^sharp theta^k)^(-1), |mu| d_k <= d_0/(4C^sharp) <= 1, so
+  1 + |mu| d_k((1+b)^V - 1) <= (1+b)^V; the separate estimate d_k((1+b)^V - 1) <= 4 C^sharp theta^k (1+b)^V. HOLDS.
+  Combined form: C_test >= 18 e C^sharp theta^(-1) >= 4 C^sharp, so it holds too.
+- age forms: every component has age 0, so m_a = 0 for a >= 1 and every old sum is 0; at a = 0 the radius is 1 and the
+  moduli sum is Z~. Low-index (unpaired) labels: none. HOLDS. The "doubling" remark (2b per occupied cell) only covers a
+  factor 2 per component; HOLDS.
+- per-cell large-field suppression: the stop-level coupling is the fixed g, so the native per-cell factor at level k is a
+  fixed number; b may be taken below it before k and V are chosen. HOLDS (row 1413's sentence "a fixed extra charge per
+  occupied terminal cell can likewise be paid by reducing b").
+- both runs equal, both ramps constant, aligned part = empty label only: recent, test and shell costs vanish. HOLDS.
+So every printed inequality that row 1413 lists holds in the model. The only freedom used is the one the account leaves:
+the unaligned class is priced by one degree-one multiplier per label (III L17762-17774, Y 130315-130318), not per
+component or per tile. That is the precise reason the model works.
+
+Mixed chessboard inequality. nu = [(1 - d_k) delta_empty + d_k (1+b)^V Bern(p)^(x V)] / Z~, p = b/(1+b) (check:
+d_k(1+b)^V p^|S| (1-p)^(V-|S|) = d_k b^|S|, and at S empty the two parts add to 1). For nonnegative tile functions f_t,
+each component i of the mixture is a product law, so nu_i(prod_t f_t) = prod_t a_(i,t) with a_(i,t) = nu_i(f_t) one-site,
+and nu_i(prod_s theta_s f_t) = a_(i,t)^V. Hölder with V exponents over the two-point mixing law pi:
+sum_i pi_i prod_t a_(i,t) <= prod_t (sum_i pi_i a_(i,t)^V)^(1/V). **HOLDS** (also for indicators and tile-dependent f_t).
+PART (Z_G/Z~ = nu(S empty)) and TILE (bad set = union of the reflected occupation events) hold by construction.
+
+Root (6): nu(S = all)^(1/V) = (d_k b^V / Z~)^(1/V) = [b/(1+b)] (1 + (1 - d_k)/(d_k (1+b)^V))^(-1/V). **HOLDS.**
+Rate (7): |log(Z_G/Z~)| = log Z~ >= log(d_k (1+b)^V) = V log(1+b) - k|log theta| - |log d_0|. **HOLDS.**
+Geometric family: V_small = first (2 L^(m_0+w))^4 >= 2(k|log theta| + |log d_0|)/log(1+b); then V_small and L^4 V_small
+are Theta(k), (7) >= (1/2) log(1+b) per site on both, and (6) -> b/(1+b) (since d_k(1+b)^V >= (1+b)^(V/2) -> infinity).
+**HOLDS.** With kappa_0 > 8, V sqrt(eps) ~ n^(1 - p/2) (log n)^(c_3/2) -> 0 (p = (kappa_0-4)/2 > 2) and V theta^k -> 0:
+**HOLDS**; so a floor stated in eps (V sqrt(eps) <= 1/2) does not restore the inference, while the sum of the disseminated
+roots, V b/(1+b), diverges. **HOLDS.**
+
+Marked polynomial 1 + mu U_V with zero -1/U_V -> 0: HOLDS (a zero-free interpolation in mu would need input beyond the
+printed disc).
+
+Two precisions (not defects):
+(P1) The model's runs are identical, so the quantity the carry needs, log(Z~^B/Z~^A), is exactly 0 while (RAR) fails.
+The model refutes the implication "printed bounds => (RAR)", and also shows (RAR) is not necessary for the carry; it
+says nothing against the carry itself. Row 1413 says this ("The failed conclusion in (7) is RAR", L126).
+(P2) The model depends on the terminal definition of "aligned" (III 11939-11946, with varpi <= 1/80). The account also
+glosses "aligned" by first index alone (III 53462-53464; and III 26427 uses j >= k_* for nested sequences). Under the
+index-only reading the class U_y is empty, every nonempty S of the model is aligned, and the model is no longer a
+model of the printed bounds. The ramp lemma (III 17640-17642, H^m_nc) and Y 130310-130322 charge U_y explicitly, so
+the terminal definition is the operative one and row 1413's reading is right; the account is internally inconsistent
+on this word, and row 1413 records that (L134).
+
+Verdict on the decisive question: **the tile model does show that the printed bounds are insufficient for uniform (RAR)**
+(no r_K = o(1) follows on unrestricted sides). HOLDS.
+- 2026-11-23T04:10Z (date -u): Section 5 written.
+
+## 6. "What a chessboard proof would have to count" and the alignment readings (row 1413 L128-134)
+
+Theorem C and PART / TILE / PROD are row 1395's (`gap-univk-log.md` L128-149, checked by 1397 at
+`gap-univk-log-check-astra62.md` L34-38).
+- Incidence count. If every contributing history of the all-tiles event has m_a0(h) >= N/J, the moduli form at real
+  r < q_a^(-H_c(a_0)) gives sum ||tau|| <= A r^(-N/J), so the disseminated probability is <= C e^(Gamma V) q_a^(H_c N/J),
+  and with V = vN the N-th root is <= max(1, C) e^(Gamma v) q_a^(H_c/J). **HOLDS.** "J <= 2M^4 suffices for the
+  rate q_a^(a_0)": 2M^4(a_0+1) - 1 >= J a_0 when J <= 2M^4. **HOLDS.** Distinct live components at the stop have disjoint
+  lineages (regions only grow until healed, III 11951; a component at level n lies in one component at n+1), so the
+  per-component factors multiply, as the native corollary already uses; the caution "count each paid cell once" is right.
+- Reflecting two-point mixture (mass s = sqrt(eps)/2 on all-occupied, 1 - s on all-empty): -log(1 - s) <= 2s and the
+  root is s^(1/N) -> 1; it satisfies (CB) by the Hölder argument of Section 5. **HOLDS**: the root test is strictly
+  stronger than (RAR).
+- Outline anchors re-read in a scratch copy (`YM4_sketch_500.tex` at 31a47c543775, fetched by raw URL): O 23350-23358 does
+  keep the mark c_a-bar = 2 c_a M^4 per live level in the two-term age bound; O 23250-23265 is Theorem 4.13 under D3;
+  O 5288-5308 says "Higher mixed bounds require an appropriate majorant for the history event on which all marked uses
+  occur; they do not acquire a product of rarity factors from holomorphy alone". **HOLD.** CA-II 106171-106192,
+  106818-106846, 127294-127323 and Y 130128-130136, 130251-130270: **not re-read** (not load-bearing for any verdict here).
+- Alignment readings III 26424-26438 (nested sequences, j >= k_*), 53460-53467 (index-only gloss), 11939-11949 (terminal,
+  with varpi): **HOLD** as quoted; see (P2) of Section 5.
+
+**Defect D-c (credit, minor).** The same outline paragraph (O 23350-23358, cases (1)-(3)) already states the
+volume-floor form of the reserve argument: on a torus with ell > ell_V(g) "the torus satisfies the same bound at those
+levels at which c_a-bar (K' - k + 1) >= B(x_K') |T^(K')|", i.e. the summed per-level mark pays the e^(B V) volume factor
+only on a volume range, and uniformity in the side is left to Lemma 4.15 (tiles, windows, triggers). Row 1413's range (3)
+is the two-cutoff, stop-mass analogue of that case (3); the file credits O 23350-23358 for the mark but not for this
+structure. The result is still correct; the credit should say "the volume-range form is the outline's case (3)".
+
+## 7. Consequence for the per-edge bound of check 1405 (row 1413 L136-144)
+
+Check 1405 (`gap-univk-pos2-check-astra62.md` L40-44) adds |log(Z~^m / F^m)| <= C V r_K for each run m, with F^m = Z_G^m on
+identical good labels. Row 1413's (2)-(3) give |log(Z~^m/Z_G^m)| <= 4 C_0' sqrt(eps) for m = A, B on each torus in the range,
+so the term 2 C V r_K may be replaced by 8 C_0' sqrt(eps) (a fortiori O(V sqrt(eps))). **HOLDS** under (3) at both runs and
+both tori of each edge used. "On unrestricted volumes the printed estimates allow (7) even when the other three costs
+vanish": the tile model has B_rec = d_test = s^m = 0. **HOLDS.** The remark on Theorem T* (floors at each edge, no seed from
+a volume window) is a correct reading.
+
+**Defect D-f (summary wording, moderate).** Row 1413's FINISH RESULT says "the alignment condition varpi(h) at most 1/80
+on young common labels is the unpriced piece". The old class is equally unpriced on unrestricted sides. Check 1397's
+private-label example survives the stronger reserve (1): give run B one private label of age k and mass e^(V b) - 1,
+b <= E_+/2 fixed. The moduli form at the improved radius needs 1 + q_a^(-H_c(k)) (e^(V b) - 1) <= e^(E_+ V), which holds
+once V >= 2 |log q_a| H_c(k)/E_+ + O(1); then |log(Z_G/Z~)| = V b on that torus, so no r_K = o(1) follows for the old
+class either, on volumes of order H_c(k) (of order k when the R_i are bounded). Row 1413's own text lists the old-charge
+matching as its second next row (L151), so the file is consistent; only the one-line summary misleads.
+- 2026-11-23T04:12Z (date -u): Sections 6-7 written.

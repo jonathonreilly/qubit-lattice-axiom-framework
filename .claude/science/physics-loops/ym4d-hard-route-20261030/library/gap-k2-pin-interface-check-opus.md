@@ -22,7 +22,7 @@ Credit: Balaban, Kotecky-Preiss, Sussman-Alpoge (with Claude and Codex), gpt-6.2
 
 ## Repo search
 
-The two rows checked here are the only treatments of these objects. `grep` of `library/open-core.md` and the FINISH rows for "interface-decide", "nonlinear-pin", "529/2048", "108900" and "Cartan stripe" finds only rows 1489-1493 and the two notes under check. This file is a check, not a new statement, so rule 0a has nothing to stop. Inputs read: row 1485 (`gap-k2-wilson-interface-astra62.md`) (1), (2), (6)-(13); row 1348 (`gap-blockstep3-astra62.md`) (13).
+The two rows checked here are the only treatments of these objects. `grep` of `library/open-core.md` and the FINISH rows for "interface-decide", "nonlinear-pin", "529/2048", "108900" and "Cartan stripe" finds no match in `open-core.md` and only FINISH rows 1480 and 1489-1493 (the rows under check, this row and their follow-ups). This file is a check, not a new statement, so rule 0a has nothing to stop. Inputs read: row 1485 (`gap-k2-wilson-interface-astra62.md`) (1), (2), (6)-(13); row 1348 (`gap-blockstep3-astra62.md`) (13).
 
 ## (A) Row 1489, `gap-k2-interface-decide-astra62.md`: verdict HOLDS
 
@@ -78,3 +78,64 @@ Provenance: Claude Opus 5.5, high effort, commit e52329569, one reading by anoth
 
 **What (A) does not show.** The decision at beta = 23/10 stays open, as the note says: 529/2048 < R <= 7 - ... The finite compression at the explicit cutoff d > 2^228 is not computable, so row 1493's route (bound the finite forms without materializing them, or sharpen C) is the live one. (T2) is a lower check only.
 
+## (B) Row 1490, `gap-k2-nonlinear-pin-astra62.md`: verdict HOLDS
+
+Provenance: Claude Opus 5.5, high effort, commit e52329569, one reading by another provider. Not an audit. Every step was redone by hand, and the margins were recomputed by hand (the note's own rational check is not a proof step; no Lean). First failing step: none. Wording notes N4-N6 below change no claim. Inputs read: row 1480 lines 100-175 (phase, the 384 contours = 16 offsets x 24 axis orders, stripe field (4), Gaussian mean 2u = alpha t).
+
+**B1. Full stationary equation. HOLDS.**
+- Tree representative redone from 1480's potential -I u eps_y xi_2. Direction-1 crossing log: -Iu eps_y + (-Iu eps_{y+1} xi_2) - (-Iu eps_y xi_2) = I eps_y (2 xi_2 - 1) v/2. Direction-2 crossing log: 2Iu eps = I eps v. Internal links are 1.
+- Within the stripe, the energy per block is 8(1 - cos v) + a(1 - cos(v - t)) + 0. The direction-1 pin costs zero because M_1 = cos(v/2) > 0 is aligned with V = 1. Its maximum 8 cos v + a cos(v - t) = |8 + a e^{it}| is attained at v = arg(8 + a e^{it}). This gives N_a(t) = 8 + a - sqrt(64 + a^2 + 16 a cos t), and the stationarity relation 8 sin v + a sin(v - t) = 0. For |t| < pi/2, v lies between 0 and t.
+- Cartan variations, pin: d|M| = Re(M-bar M') = 0, and -Re(M' V-bar) = (Qz) eps sin(v - t), from Re(I e^{I theta}) = -sin theta. Aligned pins (directions 1, 3, 4) have zero differential.
+- Offset legs: translation by 2e_2 preserves eps, so they cancel. With offsets uniform on {0,1}^4, each middle step hits each fine direction-2 link once with weight 1/16, total 1/8.
+- Cartan variations, Wilson, redone from theta_p = z_1(m) + z_2(m + e_1) - z_1(m + e_2) - z_2(m). The even-layer direction-2 link gets +sin(eps_y v) from the plaquette at n - e_1. The odd-layer link gets -sin(-eps_y v) from the plaquette at n. The direction-1 terms cancel because the angle is independent of n_2.
+- Sum: [sin v + (a/8) sin(v - t)] sum eps z_2 = 0. Transverse directions: S is invariant under global Ad_I, which fixes background and source and negates the transverse colours. So dS[z_perp] = -dS[z_perp] = 0. Checked.
+
+**B2. Coordinates at a = 1, |t| <= arcsin(1/4). HOLDS.** The coarse (1,2) plaquette is e^{-2I eps t}, with chord 2|sin t| <= 1/2. tan v = sin t/(8 + cos t) <= 0.25/8.9375 = 0.02797 < 1/35. s_0 = 8|sin v| <= 8/35. q <= (64/1225)/(31/16) = 0.0270 < 1/36. q + s_0 = 0.2564 < 13/50. At a critical point the Hessian is gauge invariant: differentiate dS_W[gamma(W)] = 0 along z, and use dS = 0. Checked.
+
+**B3. Internal curl >= 4A^2. HOLDS.** In characters of Z_2^4, the gradient of chi_S is -2 chi_{S\{j}} in each direction j in S. The complement of the gradients is sum_{j in S} w_j = 0. On plaquette (i,j) the curl is +-2(w_i - w_j) when i, j are both in S, and 0 when j is not in S. Squared ratio 16|S|/8 = 2|S| >= 4. Singletons vanish. Orthogonal across S because S\{i,j} differ. Checked.
+
+**B4. Pin paths. HOLDS.** Root-edge use probability: (1/16) sum_k C(3,k)/(k+1) = 15/64. Other edges need two set bits, so <= 1/4 (example: (1/16)(11/12) for eta = {1}). This gives ||L|| <= (2 + 1/sqrt 8)A = 2.354 A <= 12/5 A. ||c||_2 = C_mu/sqrt 8. Mean-zero internal sums: the edge weights depend on |eta| only, so they are a gradient of f(|xi|). The unit mu-field is the gradient of xi_mu. Both are orthogonal to b. Checked.
+
+**B5. Wilson Hessian (1). HOLDS.**
+- d^2(e^{sX_1}...e^{sX_4}) = -|T|^2 + 2 sum_{i<j} X_i x X_j. The scalar part is cos v |T|^2, and the rest is <= |sin v| |2 sum X_i x X_j|.
+- With sum Z = 0: sum_{i<j} Z_i x Z_j = (Z_1 + Z_2) x (Z_2 + Z_3), and the norm identity is verified by expansion. Mixed part: (1/4) sum (5 - 2i) Z_i x T, times 2, gives (3Z_1 + Z_2 - Z_3 - 3Z_4) x T/2, with sqrt(20)/2 = sqrt 5.
+- s + 5s^2 <= 8/245, and cos v - 1/4 > 7/10.
+- Counting: each direction-1 crossing link is in 2 curved plaquettes, each direction-2 link in 1. This gives the penalty (1/15) C_1^2 + (1/30)(C_2^2 + A^2). Checked.
+
+**B6. Pin Hessian, direction 1 (2). HOLDS.** The Hessian of |M| - <M,V> at M = rV is |P_{V-perp} M'|^2/r. |R_z - 1| = 2 sin(|u|/2) <= |u|. ||e|| <= (C_1/sqrt 8 + KA)/70. |m + e|^2 >= (9/10)|m|^2 - 9|e|^2. 18/(4900 * 8) = 4.6e-4 < 1/2000, and 18 (5.76)/4900 = 0.0212 < 1/40. Checked.
+
+**B7. Pin Hessian, direction 2 (3). HOLDS.** M = R is a unit quaternion and M' = mR, so D^2|M| gives |m|^2. D phi[M''] = <R - V, M''> = -q mean|T|^2 - mean<V, Y R>, with |<V, YR>| <= s_0 |Y| and |Y| <= 2|c|L + L^2 (one crossing). Constants: (13/50)(5.76) = 1.498 < 3/2. (13/50)(2)(12/5)/(14/5) = 0.446 < 9/20. AM-GM (9/20)CA <= C^2/16 + 81A^2/100. Total 1/288 + 18/288 = 19/288, and 3/2 + 81/100 = 231/100. Checked.
+
+**B8. Crossing control (4). HOLDS.** The transports in Y were redone: the third link enters as R_z R_{z'}^-1 e^{-sc'}. Each internal edge lies in 3 faces (one per transverse direction), so the internal terms are <= 6A^2. P != 1 only on direction-1 faces with nu = 2, where P = e^{+-Iv}, a rotation by 2v, so the error is <= 2|sin v| C_1. On the 3-cube, |grad chi_S|^2/|chi_S|^2 = 2|S| >= 2. Then C^2 (1219/1225) <= 8B^2 + 1.5F^2 + 9A^2, giving C^2 <= 8.04B^2 + 1.51F^2 + 9.05A^2 <= 8.1B^2 + 2F^2 + 10A^2. Checked.
+
+**B9. Full Hessian and 1/108900. HOLDS.**
+- A^2 coefficient: 4 - 1/30 - 1/40 - 2.31 = 1.632 >= 8/5. C_1: 1/15 + 1/2000 < 1/10. C_2: 143/1440 < 1/10. B_1 has 9/10, and B_2..B_4 have 1.
+- Then H >= 1.6A^2 + 0.7F^2 + 0.9B^2 - 0.1C^2 >= 0.5A^2 + 0.48F^2 + 0.009B^2 + 0.01C^2.
+- Reconstruction: |psi_n| <= 2||b||_{block} gives sum psi^2 <= 64A^2. Degree 8 gives a gauge part <= 32A, so ||z|| <= 33 sqrt(A^2 + C^2). lambda = 1/(100 * 1089) = 1/108900.
+- Every constant is local to one block or one face, so the bound is independent of volume and holonomy. Checked.
+
+**B10. Neighbourhood (6). HOLDS.** |M_c| >= cos(1/70) - 1/4 > 1/2. Third-derivative terms 24 + 6 + 1 + 1 = 32 (x 10^3 a), and Wilson 4^3. Incidence 6 + 8 = 14. rho = lambda/(28 * 32000) = 1/97,574,400,000 (108900 x 896000). The Hessian stays >= lambda/2, so integrating twice gives (6), with dS(0) = 0. Plaquette chord <= |v| + 4 rho < 1/2. Checked.
+
+**B11. Any fixed a > 0 near t = 0. HOLDS.** At t = 0, (5) gives ||dz||^2 + ||Qz||^2 >= lambda ||z||^2, hence ||dz||^2 + a||Qz||^2 >= min(1,a) lambda ||z||^2. The t-derivative is <= 100a per pin (|dV/dt| = 1, |D^2 M| <= 100). The choice of r_a gives a Hessian >= lambda_a/2 on the convex product. The stripe is interior (|Y_e| <= |v| <= |t| <= r_a/2). A strictly convex function with an interior critical point has a unique minimum. Checked.
+
+**B12. Local background term and 19 h^4/(729x). HOLDS.**
+- sqrt((1 + cos 2t)/2) = cos t, and n_a(1) = 0. So the six-plaquette sum is N_a(t), and the d_a sum is G_a - N_a.
+- G_a = 4 alpha^2 t^2 + (a/2)(1 - alpha)^2 t^2 = 4a t^2/(8 + a), redone.
+- Expansion: 65 + 16 cos t = 81 - 8t^2 + (2/3)t^4 - ..., so sqrt = 9 - 4t^2/9 + (27 - 8)t^4/729. Hence G_1 - N_1 = 19 t^4/729 + O(t^6). Cross-check: the t^4 term of 1480's Delta_1 is (8 + 4096)/(6561 * 24) = 0.026063 = 19/729.
+- (7): G - N has no constant or t^2 term, so P_x is unchanged and z~ = e^{-x(G-N)}(1 + z) - 1. Then x z~(h/sqrt x) = x[(1 - 19h^4/(729x) + O(x^-2))(1 + 19h^4/(729x) + o(1/x)) - 1] -> 0. Checked. The scope, fixed h and fixed volume, is stated correctly in the note.
+
+**B13. Restricted integral limit. HOLDS.** h(kappa)/h(kappa r) lies in [h(kappa), 1], and (1/x) log h(kappa) -> 0 at fixed a. The upper bound comes from (6), and the lower bound from a small ball. Checked.
+
+**Wording notes (no claim changes).**
+- N4. (1) says "keeping the single-face square terms". Some curved odd-layer (1,2) plaquettes (n_2 odd) cross two faces. Their |T|^2 is dropped, but their penalty is counted, because the 2C_1^2 + C_2^2 + A^2 count runs over all curved plaquettes. The bound is correct; the note should say so.
+- N5. The third derivative of |M| is <= 3/r^2. The note's 6/r^2 is a safe over-estimate.
+- N6. "Proved for all colours and all allowed torus sizes" holds on the tree slice with root (coarse) gauges not quotiented. Those are not symmetries here, because V is fixed. Correct as stated.
+
+**What (B) does not show (as the note says).** It gives no KP bound on the full integration domain, which outside the product of radius ~1e-11 is open. It gives no uniform-in-h bound, no fluctuation determinant, and no background response to local source changes (rows 1492 and later). The neighbourhood radius rho = 1.0e-11 is tiny. Row 1492 must cover the rest of the domain by a separate large-deviation or KP argument, so the value of (6) for the activity estimate is local.
+
+## Verdicts
+
+- (A) Row 1489: **HOLDS.** First failing step none. The four Lean theorems state exactly the rational inequalities the text uses. The remaining elementary hand inequalities were rechecked. The open status stays: 529/2048 + 4 2^-2024 < R <= 7 - (2966/495) 2^-822.
+- (B) Row 1490: **HOLDS.** First failing step none. Stationarity, uniqueness on the stated neighbourhood, Hessian >= 1/108900 (volume independent), the minimum 8 + a - sqrt(64 + a^2 + 16a cos t) and the 19 h^4/(729x) cancellation are all confirmed.
+
+No numeric job was run (memory 38 percent free, below the 50 percent bar). Credit: Tadeusz Balaban (gauge-fixed variational method, background fields), Kotecky-Preiss (the activity criterion that rows 1480 and 1492 test), Ethan Sussman and Levent Alpoge with Claude and Codex as authors of their text (outline, complete account, contour-kernel construction adapted in Q2), and gpt-6.2-astra (rows 1489-1490, the work checked here).

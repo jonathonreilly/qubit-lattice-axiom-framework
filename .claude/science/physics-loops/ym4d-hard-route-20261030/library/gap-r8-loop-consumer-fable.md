@@ -6,7 +6,7 @@ lease_until: 2026-11-25T07:39Z
 Started 2026-11-24T19:39Z (date -u), pinned at commit f7171e34d, branch claude/ym4d-hard-route.
 Worker: Claude Fable 5.2, high effort, Mac mini worker 1. No subagents. Nothing committed.
 
-Status of this file: in progress. Each step is appended when it ends. Labels: **proved** (argument
+Status of this file: finished (see the last lines). Each step was appended when it ended. Labels: **proved** (argument
 written here in full), **read** (taken from a named source, lines given, not re-derived), **sketched**,
 **guessed**.
 
@@ -75,10 +75,16 @@ job was started. Everything below is by hand.
 
 ### 1.4 What is on file already on this question (read; cited, not redone)
 
-- Proposition VB (row 754): local loop equations with positivity do not see the volume. Theorem O (row 760,
-  check 762) and Remark OS (row 1326): a local certificate proves a seed only if a torus of the size of its
-  patch has a seed. Precision: (KER) needs about 3e-10 on the plaquette (row 1326, M3) and the weight to
-  1.9e-10 (row 1332, 5.2). So the two torus criteria are closed for bounded loops on file. I add nothing.
+- Proposition VB (row 754; check `library/gap-loop-eq-check.md`: holds after correction, as a statement on
+  the diameter of the feasible set): constraints in a ball of radius r hold on every torus of side at least
+  2r + 3. Corollary 5.2 there (holds after correction): the torus criteria are integrals over the coupling of
+  a two-volume difference of plaquette means. Theorem O (row 760, check 762) and Remark OS (row 1326; check
+  1331, `library/gap-verified-compute-sizing-check-astra.md` Section 3: holds after correction as a
+  disjunction): a pointwise local certificate of radius r proves (KER) for a box only if n^4 > a b^3/8 or the
+  torus of side n = 2r + 4 passes the same test. Check 1331 also says: the stronger reading "the patch must
+  be as large as a seed box" FAILS, and the 3e-10 is an average over the coupling of a two-volume
+  difference. The same check file on row 754 says: "required radius about a/2" FAILS and "positivity cannot
+  repair the method" FAILS (neither follows). I use these results in their corrected scope only (3.3).
 - Lemma 3.1 of row 754: reflection positivity turns one correlation into a lower bound for a thermal sum.
   That is a necessary condition for a gap, not a sufficient one.
 - Theorem EP-NO (row 754): no Griffiths or Ginibre inequality over plaquette monomials holds for SU(2).
@@ -187,11 +193,12 @@ with K convex, is true only if K with the windows holds at most one state on loo
 symmetric reflection-positive Gibbs states of Wilson at beta, the certified windows hold on all of K. Then
 the theorem has no hypothesis: it is uniqueness plus decay at beta, outright. If K is cut out by finitely
 many loop equations, the theorem needs **(UNIQ-LE): the positive symmetric solution of the SU(2) loop
-equations at beta = 23/10 with short loops in the windows is unique.** Row 754 (Proposition CR and its
-reading) has the state of that: the homogeneous loop map has sup-norm ratio 2 beta at one passage and at
-least 1 at four passages at every beta, positivity does not bound differences of two solutions, and a
-weighted contraction at order-one coupling is OPEN there. Windows on short loops do not change the ratio for
-long loops. So (UNIQ-LE) is the open uniqueness problem in loop variables, not a smaller one.
+equations at beta = 23/10 with short loops in the windows is unique.** Row 754, Proposition CR (its check:
+holds) has the state of that: the raw homogeneous loop map has sup-norm ratio 2 beta at one passage and at
+least 1 at four passages at every beta, so it does not contract. Row 754 also claimed that positivity cannot
+repair this; its check says that claim FAILS (it does not follow). So whether positivity with windows gives
+(UNIQ-LE) is open, with no method on file. Windows on short loops do not change the raw ratio for long
+loops. (UNIQ-LE) is the uniqueness problem in loop variables, not a smaller one (argued).
 
 This is the exact form of the clause in (R8), "the theorem must fail for the first-order test model". At a
 first-order point the two phases and their mixtures obey the same loop equations, and a window wider than
@@ -225,15 +232,17 @@ does not depend on e', and D W_C = 0. D is linear and continuous in sup norm. QE
 - V_4 holds 100 plaquettes with no link in common: plane (1,2), lower corner (a, b, c, d) with a, b in
   {0, 2} and c, d in {0, ..., 4}. Under Haar measure their holonomies are independent with mean 0. So the
   2^100 products over subsets are orthogonal gauge-invariant functions of V_4. 2^100 is about 1.3e30.
-- Example outside Span_16: F = x_p x_q with p at the corner (0,0,0,0) and q at (2,2,4,4). Their sites are at
-  l1-distance at least 10, and D F is not 0. By Lemma LEN, F is in Span_N only for N at least 22.
+- Example outside Span_16: F = x_p x_q with p at the corner (0,0,0,0) and q at (2,2,4,4). The sites (0,0,0,0) of p
+  and (3,3,4,4) of q are at l1-distance 14, and D F is not 0 for a link of p at the first site and a link of
+  q at the second. By Lemma LEN, F is in Span_N only for N at least 28.
 - Two gauge-invariant laws of the closed cube with the same loops of length at most 16 and different E[F]:
   the densities 1 + eps G and 1 - eps G against Haar, G the part of F orthogonal to Span_16 in L^2(Haar),
   eps = 1/sup|G|. They differ on F by 2 eps ||G||^2. (These are laws of a cube, not Gibbs states. For states
   use Corollary M1.)
 
-So an exact in-law statistic of the cube of side R with its boundary needs loops up to length 8 (R + 2) + 2,
-which is 50 at R = 4 (opposite corners at l1-distance 4 (R + 2)). Length 16 reads sets of l1-diameter 8.
+So a statistic of the cube of side R with its boundary that depends jointly on two far boundary links needs
+loops of length at least 2 (4R + 2), which is 36 at R = 4 (normal links at opposite corners have end sites at
+l1-distance 4R + 2). Length 16 reads sets of l1-diameter 8.
 
 ### 3.2 Precision (trivial bound proved; the example is sketched)
 
@@ -254,9 +263,9 @@ exactly. Nothing does it for a block statistic such as a transport norm or a tot
 |---|---|---|---|
 | (W) at side 4 | none suffices: not an in-law statement (Lemma A) | none | proved |
 | the floor of Corollary GF | 4 (the plaquette), lower bound only | any; delta floor scales with the bound | proved; wrong direction |
-| an in-law statistic of the closed cube of side 4 | 50 for exact support; 22 already for one product of two plaquettes | not polynomial, so no finite precision by itself | proved (LEN); no consumer theorem for an in-law form (row 1122, J3) |
+| an in-law statistic of the closed cube of side 4 | 36 for joint dependence on far boundary links; 28 already for one product of two plaquettes of V_4 | not polynomial, so no finite precision by itself | proved (LEN); no consumer theorem for an in-law form (row 1122, J3) |
 | (AN), row 845 | unbounded: (AN1) has every number m of jumps; one jump for a block of closed l1-diameter D needs 2D + 2 | not polynomial (transport fields) | proved from the definition |
-| (KER), (PUR-io), rank-one test | patch as large as a seed box: n = 2r + 4 at least 12 at beta 2.2986 in the guide model, larger on the trajectory | about 3e-10 on the plaquette; 1.9e-10 on the weight | read: rows 754, 760, 1326, 1332 |
+| (KER), (PUR-io), rank-one test | the constraint ball must fit both tori: 2r + 3 at most the short side | see 3.5: coupling-averaged width at most tau/(12 a |B| beta), about 1.6e-10 at the smallest guide pair | read with the corrections of checks 762, 1331; the arithmetic of 3.5 is mine |
 
 ### 3.4 The one reduction with a stated loss that I can prove: a free-energy bound (new here, small)
 
@@ -290,3 +299,144 @@ It is not a consumer for a gap. (SP-ext) of row 845 is a space-time bound along 
 number k_g is a supremum over good exteriors, which no loop data bound (Lemma A again). So no build row
 follows. Not found on file: grep of library/ for "free energy" with "bootstrap" or "loop equation" on one
 line gives two files, neither with this statement.
+
+### 3.5 The torus criterion (KER) with its loss (arithmetic proved; inputs read)
+
+Identity (elementary: d/ds log Z = 6 |torus| ubar and Z(0) = 1; it is the form that row 1326, M3 uses):
+for B = b^3, Phi_B(a; beta) = 2 log Z(a x B) - log Z(2a x B) is 12 a b^3 times the integral over [0, beta]
+of the difference of the mean plaquettes of the tori a x B and 2a x B.
+
+Statement. Suppose that for each s in [0, beta] a certificate of radius r bounds the plaquette in an
+interval of width w(s), valid for every functional in the constraint class, and that both tori have all
+sides at least 2r + 3. Then Phi_B(a; beta) is at most 12 a b^3 times the integral of w.
+
+Proof. Both torus states are in the class (Proposition VB), so their plaquettes differ by at most w(s). QED
+
+Numbers. At the smallest guide pair of row 1326 (a = 10, b = 20, beta 2.2986, slack tau = 3.6e-4, all guide
+values) the loss factor 12 a b^3 beta is 2.2e6, so the mean width must be at most 1.6e-10. Relative width
+1e-3 is an absolute width of 1e-3 ubar(s), near 6e-4 at the top and about 3e-4 in the mean over [0, beta]
+(guide values of ubar). It proves Phi at most about 6e2, against 3.6e-4 needed: short by a factor above 1e6. The ball
+must fit the short side: 2r + 3 at most 10 gives r at most 3, so the loops are short (l1-diameter at most 6),
+not long. By the disjunction of check 1331, a class width near 1e-10 at radius r needs the tori of side
+2r + 3 and above to agree to that width. Whether they do at r = 3 is a Wilson number that nothing on file
+bounds. I expect not (guessed: finite-size shifts at side 9 are far above 1e-10).
+
+So (KER) is the one criterion on file that reads loop windows in form. It is fragile in the sense of row
+1332, 5.3: an in-law criterion that needs the data to a relative accuracy of 1/volume.
+
+## 4. Decision of trigger (R8) (Step 4)
+
+**Question of the row.** Does any finite-size criterion on file reduce, exactly or with a stated loss, to
+finitely many loop expectations at fixed precision?
+
+**Answer: no at fixed precision. (R8) is not met. One criterion, (KER), reduces in form with a stated loss
+that is out of reach by a factor above 1e6; the other three do not reduce.**
+
+| Criterion | Reduces to bounded loops? | Reason | Grade |
+|---|---|---|---|
+| (W), row 691 | No, at no length and no precision | The hypothesis is a supremum over boundary values of the specification (Lemma A). Loop data give only the floor of Corollary GF | proved |
+| (AN), row 845 | No | Infinitely many moments, of functions that are not polynomials; the Peierls form needs k_g, a supremum over good exteriors. Its one-time bad-event weight alone does reduce, through Lemma FE | proved from the definitions; Remark CB sketched |
+| (KER) of Theorem T, row 1332 | Yes in form, with a loss of 12 a |B| beta (3.5); no at width 1e-3 | Needs a coupling-averaged width near 1.6e-10 at the smallest guide pair, a factor above 1e6 below the row's width, on a class that holds every torus of side at least 2r + 3. And Theorem T has three open hypotheses beside (KER) | read (rows 754, 1326, 1332 with checks 762, 1331); arithmetic proved in 3.5 |
+| Rank-one test and (PUR-io), rows 1373, 1461 | No at any fixed width | Sixteen torus masses on n = l b^K sites a side, K unbounded: the loss 12 a |B| beta grows without bound along the trajectory | read; argued |
+
+**The general form (Corollary M2, proved).** A consumer of certified loop windows that ends in decay must
+contain a uniqueness theorem: either uniqueness of the symmetric Gibbs state at beta = 23/10 outright, or
+(UNIQ-LE). So (R8) can be met in two ways only.
+
+- (a) An in-law finite criterion with a polynomial hypothesis and a proof that uses the specification. The
+  Ising model has one, the Simon-Lieb inequality (recalled; named on file in `library/gap-crux-fp.md` line 139
+  and rows 1072, 1073). Its proof uses correlation inequalities. For SU(2) plaquette monomials these fail
+  (Theorem EP-NO, row 754). No such criterion for a non-abelian gauge theory is on file.
+- (b) (UNIQ-LE) with a rate. Open; the raw contraction fails (Proposition CR of row 754), and no weighted
+  or positivity-based form is on file.
+
+**First build row.** None. No consumer exists, so no certificate is specified.
+
+**What the bootstrap can certify that some statement on file reads (for the record):**
+1. A lower bound on u_P(23/10), read by Corollary GF: (W) at side 4 needs delta at least (81/125) u_P.
+   Necessary direction only.
+2. Two-sided bounds on the free-energy density, read by a chessboard norm (Lemma FE, Remark CB). One
+   component of (SP-ext), not a gap.
+3. A bound on the jump of any loop of length at most 16 between two symmetric reflection-positive Gibbs
+   states at 23/10: at most the window width. This bounds a latent heat. It is not uniqueness.
+None of the three moves (PUR-io).
+
+**Answers to the row's sub-questions.**
+- (L16): refuted as a reduction (Section 2). The truth of (W) at (23/10, 4) is open (guessed false).
+- Length and precision needed: Section 3.3. For (W): none suffices. For an in-law cube statistic: length 36
+  at side 4 for far pairs, and no polynomial form. For (KER): a constraint ball that fits the short side and
+  a coupling-averaged width near 1.6e-10 (3.5).
+- A counting argument: Section 3.1 (2^100 against 6e16). Two states with the same windows and different
+  criterion value: Corollary M1.
+
+## 5. The next two rows and their decisive outcomes (Step 5)
+
+**Row 1, `gap-r8-loop-consumer-check-astra62` (cross-provider check of this file; gpt-6.2-astra max).**
+Order: (i) Lemma GF and Corollary GF: the six plaquettes at z, the map h, the witness f, the count
+2 (R-1)^3, the DLR step. (ii) Proposition M and Corollary M2: is "every bootstrap condition is convex in the
+state" complete, and does M2 follow. (iii) Lemma LEN and the two counts of 3.1. (iv) Lemma FE, and whether
+the plain periodic torus obeys the constraint set of Proposition VB. (v) Try to break Section 4: name one
+sufficient criterion for decay, published or on file, whose hypothesis is finitely many polynomial
+inequalities on expectations in the infinite-volume state, with a proof that uses no correlation inequality.
+Decisive outcome: if (i)-(iv) hold and (v) finds none, the lead records (R8) as closed for the four criteria,
+keeps it as a trigger in the form of Section 4 (a) or (b), and builds no bootstrap certificate. If (v) names
+a criterion, its certificate is the build row that row 1498 asked for.
+
+**Row 2, `gap-r8-inlaw-criterion-lit-luna` (one bounded reading row; gpt-6-luna high; start only if Row 1
+confirms Section 4).** Search and read for form (a) only: a finite criterion for exponential decay or a
+spectral gap whose hypothesis is in-law and polynomial, proved from reflection positivity or the DLR
+equations alone. Read in full: Dobrushin and Shlosman 1985 and 1987 (not read in full by anyone here, by
+`library/prior/gap-fullread-1.md` line 3), Martinelli and Olivieri, and the bootstrap papers after
+arXiv 2404.16925 that claim a bound on a mass, a gap or a string tension (for example the gap bootstrap for
+quantum spin systems of Nancarrow and Xin; recalled, not read; my recollection is that it bounds a gap from
+above, which is the necessary direction of Lemma 3.1 of row 754). Decisive outcome: one published criterion
+of form (a) that holds for a non-abelian gauge specification reopens (R8) with that criterion as the
+consumer and its certificate as the build row. None found closes (R8) on the literature as well, and the
+band waits on (R1)-(R7) and (R9) of row 1496.
+
+I propose no attack row. Deciding (W) at (23/10, 4) by estimates for the 796 other boundary links would
+change no decision: side 4 has no role, and (W) at a large side is (INF-L) of row 1122, which has no tool.
+
+## 6. Standing, credit, what was not done
+
+Proved here (by hand, one author, checked by no one): Lemma A; Lemma GF and Corollary GF; Proposition M with
+Corollaries M1, M2; Lemma LEN and the counts of 3.1; Lemma FE given certificates; the statement of 3.5. Sketched: Remark CB; the
+precision example of 3.2; the torus clause of Lemma FE. Guessed: (W) is false at (23/10, 4); the sizes of
+the other 796 link costs. Read, not re-derived: Theorem W and its hypothesis (row 691, checked by row 693);
+Lemma GM and the link counts (row 1122); Proposition VB, Proposition CR, Lemma 3.1, Theorem EP-NO (row 754,
+with the verdict table of its check `library/gap-loop-eq-check.md` lines 50-62 and its RESULT line; I did
+not read the check's arguments); Theorem O and Remark OS (rows 760, 762, 1326, with Section 3 of check 1331); Condition (AN), Theorem AG, Proposition PB
+(row 845); Theorem T and Proposition FR (row 1332); what the bootstrap papers state (digests of rows 688,
+689 and `library/prior/gap-fullread-1.md`).
+
+New against the record, as far as my greps show (`library/open-core.md`: no hit for "bootstrap", "(W)",
+"DS-W"; FINISH rows found for "Kazakov": 688, 689, 711, 714, 754, 755, 760, 761, 770, 1496-1498): Lemma GF
+with its corollary, Proposition M in this use, Lemma LEN with its count, Lemma FE with Remark CB. Each is
+elementary. None is claimed as new mathematics; Proposition M is the standard fact that a mixture of two
+distinct invariant states does not cluster.
+
+Credit. Kazakov and Zheng for the SU(2) loop bootstrap and the single-trace closure; Anderson and Kruczenski
+for the bootstrap method; Makeenko and Migdal for the loop equations; Dobrushin and Shlosman for the shape of
+criterion (W) (rebuilt as Theorem W by Claude Fable 5.2, row 691); Frohlich, Israel, Lieb and Simon for the
+chessboard estimate and Osterwalder and Seiler for reflection positivity of the Wilson action; Simon and
+Lieb for the ferromagnetic finite-size criterion; van Enter and Shlosman for the first-order test model;
+Balaban for the multiscale method that sets the band's weak side; Ethan Sussman and Levent Alpoge, with
+Claude and Codex as authors of their text, for the YM4 account and Lean release that the target chain
+(PUR-io) rests on. Rows used: 691, 693 (Claude Fable 5.2, Claude Opus 5.5), 754 (Claude Opus 5.5), 760 and
+767 (gpt-6-astra), 762 and 773 (Claude Opus 5.5), 845 (Claude Opus 5.5), 1122, 1326, 1332, 1496
+(Claude Fable 5.2), 1373 and 1461 (gpt-6.2-astra), the digests of gpt-6-luna.
+
+Not done. No numeric run (memory at 40 percent free, below the rule) and no Lean. I did not open the two
+bootstrap papers or the Sussman-Alpoge repository in this row: the question is about criteria on file, and
+the account has no finite-size criterion at order-one coupling (row 1464: its step needs g^-2 above
+(2^51 L)^100). I did not re-read the proofs of Theorem W, Theorem AG or Proposition VB. I did not estimate
+the edge and layer link costs at side 4. Nothing here is checked by another model. No file other than this
+one was edited, and nothing was committed.
+
+Correction during the run: my first draft of 1.4, 3.3 and Section 4 cited two statements of rows 754 and
+1326 in a form that their checks reject ("a patch as large as a seed box", "positivity cannot repair the
+contraction"). I then read the two check files and rewrote those passages; 3.5 was added at that point.
+
+Finished 2026-11-24T20:00Z (date -u). The row ran from 19:39Z.
+
+RESULT: Row 1498 (Claude Fable 5.2 high, Mac mini worker 1; author only, checked by no one; no numeric run because memory was at 40 percent free, no Lean, nothing committed). Decision of trigger (R8): NOT MET. No finite-size criterion on file reduces to finitely many loop expectations at fixed precision. The first lemma (L16) is refuted as a reduction: the hypothesis of (W) is a supremum over boundary values of the specification and reads no expectation in the Wilson state (Lemma A, proved), so loop data bound it from below only. Proved here: Lemma GF and Corollary GF (new, the complement of Lemma GM of row 1122): (W) at (R, delta) needs delta >= 12 (R-1)^3 u_P/(R (R+1)^3), which is (81/125) u_P at side 4, about 0.39 with the guide value of the plaquette; Proposition M with Corollaries M1, M2: every bootstrap condition is convex in the state, a convex class whose members all cluster has one member, so a consumer of loop windows must contain a uniqueness theorem (outright, or (UNIQ-LE) for the loop equations), and a mixture with the Haar state gives two states in the same windows with and without clustering; Lemma LEN with counts: loops of length at most 16 read sets of l1-diameter 8, fewer than 6e16 of them lie in the closed cube of side 4 against 2^100 orthogonal invariant functions of the cube, and joint dependence on far boundary links needs length 36; Lemma FE: certified plaquette windows on a coupling grid give the free-energy density to fixed precision, the one reduction with no further loss, which feeds a one-time chessboard weight only (Remark CB, sketched). Read, with the corrections of checks 762 and 1331: (KER) of Theorem T reduces in form with loss 12 a |B| beta, so it needs a coupling-averaged width near 1.6e-10 at the smallest guide pair against about 3e-4 offered; (AN) of row 845 has infinitely many non-polynomial moments; the rank-one test and (PUR-io) read torus masses at unbounded size. No build row. Open: the truth of (W) at (23/10, 4) (guessed false: the other 796 boundary links per direction must cost below 0.39 each); (UNIQ-LE); (PUR-io) is not moved. Next rows: the cross-provider check of this file (decisive: confirms closure of (R8) for the four criteria, or names a criterion with a polynomial in-law hypothesis, whose certificate is then the build row); then one bounded literature row for such a criterion proved from reflection positivity or the DLR equations alone (decisive: one found reopens (R8), none closes it on the literature too). Output library/gap-r8-loop-consumer-fable.md.

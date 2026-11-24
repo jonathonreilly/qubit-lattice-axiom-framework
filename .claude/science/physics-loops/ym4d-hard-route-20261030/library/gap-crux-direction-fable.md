@@ -29,11 +29,16 @@ Status log (times from `date -u` in the same command):
 - 2026-11-24T12:49Z file created, row and GOAL.md read.
 - 2026-11-24T13:06Z Phase 1 written (Section 1), before reading any lane row after 1142.
 - 2026-11-24T13:14Z Phase 2 written (Section 2): the wall named; Phase 1 attack ORB is the lane's (VIR_K), not progress. Phase 3 turns to the Lean flow.
+- 2026-11-24T13:25Z Phase 3 written (Section 3): attack LD on the Lean block map; Lemma LD-1, Lemma SE, Theorem LOSS proved by hand; LD reduces to K-I. Section 4: next two rows. Re-read of the PROVED items is next.
+- 2026-11-24T13:27Z Re-read of every PROVED item done (LD-1, LD-2, SE (a)-(d), LOSS, RANGE re-derived line by line; `axisPath` checked in the release; one number corrected: epsilon at most 2.53e-6). RESULT line written. Finished.
 
 ## 1. Phase 1: from the target and published work only
 
 Written before any lane row after 1142 was read. The only post-1142 text read is the row itself and the target
-statement (M-neutral-all), `library/sa-ym4-lean-trajectory-check-astra62.md` L101-107.
+statement (M-neutral-all), `library/sa-ym4-lean-trajectory-check-astra62.md` L96-112 (the statement and the lines
+around it). Limit of the blindness: my navigation notes from earlier rows of this lane were in context from the
+start. They name Theorem T (row 1332), (N-phys), the filter of row 1386 and the verdict of row 1442 in one line
+each. So Phase 1 is independent of the row files and RESULT lines after 1142, not of those one-line pointers.
 
 ### 1.1 The target in three equal forms
 
@@ -208,3 +213,189 @@ The Lean release works on a scale path with an exact block map. No attack row ha
 1449-1458 are port readings, and the mechanism rows 1380-1439 predate them. Row 1383 left open "an exact
 statement for an averaging map at finite coupling" and check 1385 recorded that the level form "is a candidate
 statistic only". The Lean flow is such a map with a statement. Phase 3 takes this as the attack.
+
+## 3. Phase 3: attack LD (carry the band on the Lean release's own block map)
+
+**Attack LD.** The Lean release blocks the Wilson density exactly, by a soft kernel, and controls the result
+above a floor. Continue that exact flow below the floor to a strong-coupling end class (the consumer is
+Proposition CH of row 1332). **First lemma (LD-loc):** below the floor the block step still returns a local
+density whose local stiffness is comparable to its readout.
+
+Not on file: `kernelImage` and `contourMean` occur only in the port readings (rows 1451, 1454, 1456); no attack
+row uses them (grep of `library/`, `library/prior/`; row 1456 L21 records the same search of FINISH.md and
+`open-core.md`). Thin-line self-energy as a fact is on file (Simon-Yaffe one-link randomization, rows 1132-1138;
+`gap-mini-dualstep2-fable.md` L421); its use on the Lean kernel is not.
+
+Source read (read only, release 3932084a9b82): `YangMills/Construction/ClusterExpansionOfAStep/LumpsOnATorus.lean`
+L52-79 (`partitionFn`, `bondKernel`, `averagedKernel`, `kernelImage`);
+`HoleBesideASecondHole/CutsLumpsBasesAndContours.lean` L76-104 (`IsBaseChoice`, `contourPath`, `allContours`,
+`usedContours`, `contourMean`); `HoleBesideASecondHole/BlocksOfTheLevels.lean` L210-215 (`axisPath_eq_flows`: an axis
+path is one straight run per axis, in the order $\pi(0),\dots,\pi(3)$); `TotalDensitiesGiveASystem/TopStatementDefs.lean` L12-18
+(`IsUnitMeshStepParameters`: coupling = 1, side odd, **side at least 2^40**, threshold in (0,1)). Credit for every
+object in this section: Sussman and Alpoge (with Claude and Codex), YM4 Lean release.
+
+### 3.1 The objects
+
+A fine field $W$ on the torus of side $mL$, a coarse field $V$ on the torus of side $m$, $L$ the block side.
+For a coarse bond $c=(y,\mu)$ and a base choice $b$, a contour $e=(\xi,\pi)$, $\xi$ in the centred cube of side
+$L$, $\pi\in S_4$, is the lattice path: axis path (axes in the order $\pi$) from $b(y)$ to centre$(y)+\xi$, then
+$L$ steps in direction $\mu$, then the reverse axis path from centre$(y+\hat\mu)+\xi$ to $b(y+\hat\mu)$. The contour
+mean is $\bar W_b(c)=|E|^{-1}\sum_{e\in E}\mathrm{hol}_W(e)\in\mathbb H$, $E$ the used contours. The kernel is
+
+$$
+K_b(W,V)=\prod_c\frac{\exp\big(x\,\mathrm{Re}(\bar W_b(c)V(c)^{-1})\big)}{\mathcal Z(x\|\bar W_b(c)\|)},\qquad
+\mathcal Z(s)=\int_{SU(2)}e^{s\,\mathrm{Re}\,g}dg,\qquad
+D'(V)=\int D(W)\,\frac1{|\mathcal B(W)|}\sum_{b\in\mathcal B(W)}K_b(W,V)\,dW .
+$$
+
+The **plain kernel** $K^{pl}$ is the case of one base choice (all bases at cell centres) and all $N=24L^4$
+contours. It equals the release's kernel wherever no hot lump is near (my reading of `usedContours` and
+`IsBaseChoice`; not checked beyond the quoted lines). The results below are proved for the plain kernel.
+
+### 3.2 Lemma LD-1 (exact step identity). PROVED
+
+Let $D\ge0$ be integrable, $x>0$, $D'(V)>0$, $X$ a map from coarse bonds to $\mathrm{Im}\,\mathbb H$, and
+$V_\varepsilon(c)=e^{\varepsilon X(c)}V(c)$. Let "post" be the law of $(W,b)$ with density proportional to
+$D(W)|\mathcal B(W)|^{-1}K_b(W,V)$. Put $q_b(c)=\bar W_b(c)V(c)^{-1}$, $\xi_b(c)=\mathrm{Im}\,q_b(c)$,
+$m_V(c)=\mathbb E_{post}\mathrm{Re}\,q_b(c)$. Then
+
+$$
+-\frac{d^2}{d\varepsilon^2}\Big|_0\log D'(V_\varepsilon)
+= x\sum_c|X(c)|^2\,m_V(c)\;-\;x^2\,\mathrm{Var}_{post}\Big(\sum_c\langle\xi_b(c),X(c)\rangle\Big).\qquad\text{(LD-1)}
+$$
+
+*Proof.* Only the numerators depend on $V$. For a quaternion $q$ and imaginary $X$:
+$\frac d{d\varepsilon}\mathrm{Re}(qe^{-\varepsilon X})|_0=-\mathrm{Re}(qX)=\langle\mathrm{Im}\,q,X\rangle$ and
+$\frac{d^2}{d\varepsilon^2}\mathrm{Re}(qe^{-\varepsilon X})|_0=\mathrm{Re}(qX^2)=-|X|^2\mathrm{Re}\,q$. So
+$\ell_b(\varepsilon)=\log K_b(W,V_\varepsilon)$ has $\ell_b'(0)=x\sum_c\langle\xi_b(c),X(c)\rangle$ and
+$\ell_b''(0)=-x\sum_c|X(c)|^2\mathrm{Re}\,q_b(c)$. For a mixture, $(\log\int e^{\ell})''=\mathbb E_{post}[\ell'']
++\mathrm{Var}_{post}(\ell')$; differentiation under the integral is allowed because the domain is compact and
+$|\ell'|\le x\sum_c|X(c)|$. $\square$
+
+**Corollary LD-2 (the kernel caps the local stiffness). PROVED.** For every $D\ge0$, every coupling, every $V$:
+
+$$
+-\frac{d^2}{d\varepsilon^2}\Big|_0\log D'(V_\varepsilon)\le x\sum_c|X(c)|^2\,\mathbb E_{post}\|\bar W_b(c)\| .
+$$
+
+**Remark LD-3 (the readout; SKETCHED, the Lean statement of `nextCoupling` was read only through row 1456
+L50).** At $V=\mathbf 1$ the off-diagonal Hessian kernel of $\log D'$ is $x^2\mathrm{Cov}_{post}(\xi(c),\xi(c'))$,
+so the readout is $x'=(x^2/2)\sum_z z_0^2\,\mathrm{Cov}_{post}(\xi^a(0,e_1),\xi^a(z,e_1))$: the next coupling is a
+second moment of the posterior covariance of the block means given a trivial coarse field. This has the form of
+Proposition LIFT of row 1383 (a mean minus a conditional variance), now for an averaging map. It is blind to the group; a sign for it at order-one coupling is K-I.
+
+### 3.3 Lemma SE (self-energy of two thin lines). PROVED
+
+Let $t$ have the density proportional to $e^{\kappa t}(1-t^2)^{1/2}$ on $[-1,1]$ and $A(\kappa)=\mathbb E\,t$.
+
+(a) $A(\kappa)\le1-\dfrac3{2\kappa+3}$ and $A$ is increasing. *Proof.* $\frac d{dt}(1-t^2)^{3/2}=-3t(1-t^2)^{1/2}$,
+so by parts $\mathbb E\,t=\frac\kappa3\mathbb E(1-t^2)\le\frac{2\kappa}3\mathbb E(1-t)$, hence
+$\mathbb E\,t\le\frac{2\kappa}{2\kappa+3}$. $A'=\mathrm{Var}(t)\ge0$. $\square$
+
+(b) Under the Wilson law at $\beta$ (any torus, any twist of signs on plaquettes), let a closed lattice word,
+after free reduction, contain a set $S$ of links, each exactly once, no two of them in a common plaquette. Then
+$|\mathbb E\,\mathrm{Re}\,\mathrm{hol}|\le A(6\beta)^{|S|}\le\exp\!\big(-|S|/(4\beta+1)\big)$.
+*Proof.* Given all links outside $S$, the links of $S$ are independent, and $U_\ell$ has the density proportional to
+$\exp(\beta\,\mathrm{Re}(U_\ell M_\ell))$ with $M_\ell$ the sum of the six staples, $\|M_\ell\|\le6$. Its mean is
+$A(\beta\|M_\ell\|)$ times a unit quaternion. The holonomy is multilinear in the links of $S$, so its conditional
+mean is the same product with each $U_\ell$ replaced by its mean; the quaternion norm is multiplicative. $\square$
+
+(c) **Plain contour mean.** For every coarse bond $c$, $\;\mathbb E_\beta\|\bar W^{pl}(c)\|^2\le\dfrac7L+e^{-2L/(4\beta+1)}$.
+*Proof.* $\|\bar W\|^2=N^{-2}\sum_{e,e'}\mathrm{Re}(\mathrm{hol}(e)\overline{\mathrm{hol}(e')})$. Call a pair
+generic if all components of $\xi,\xi'$ transverse to $\mu$ are non-zero and $|\xi_i-\xi'_i|\ge2$ for one
+transverse $i$. The non-generic fraction is at most $6/L+27/L^3\le7/L$ (for $L\ge6$). For a generic pair the reduced loop
+contains $L$ links of the line through $\xi_\perp$ and $L$ links of the line through $\xi'_\perp$, each once:
+the straight segment, or, when $\mu$ is last in $\pi$, the segment from offset 0 to offset $L$ after the leg's
+backtracking cancels. A leg moves in direction $\mu$ at a transverse position whose components are 0 or those of
+its own $\xi$; it meets a generic line only in the case just described. Collinear links share no plaquette, and
+lines at transverse distance at least 2 share none. Apply (b) with $|S|=2L$. $\square$
+
+(d) **Posterior version.** Let post be the law of $W$ proportional to $w_\beta(W)K^{pl}_x(W,V)$, any $V$. Then
+$\mathbb E_{post}\|\bar W^{pl}(c)\|^2\le\dfrac7L+e^{-2L/(4\beta+1)}+e^{\eta}-1$, $\;\eta=256\,x/L^3$.
+*Proof.* Fix a generic pair and its set $S$ (two lines). A contour of any bond meets a given generic line only
+if its three coordinates transverse to $\mu$ equal the line's (as a straight segment, or as a leg with $\mu$
+last): a fraction at most $L^{-3}$ per line, so at most $4L^{-3}$ is a safe count for the two lines. At most 16 bonds have contours in the two cells of $S$. So a change
+of the links of $S$ moves each $\bar W(c')$ by at most $8L^{-3}$ in norm, each numerator exponent by at most
+$8xL^{-3}$ and each $\log\mathcal Z$ by at most $8xL^{-3}$ ($|(\log\mathcal Z)'|\le1$): in total the kernel
+changes by a factor in $[e^{-\eta},e^{\eta}]$. Given the links outside $S$, the posterior law of the links of $S$
+has a density in $[e^{-\eta},e^{\eta}]$ against the Wilson conditional law, so a function bounded by 1 has a
+mean within $e^\eta-1$ of its Wilson conditional mean. Sum as in (c). $\square$
+
+### 3.4 Theorem LOSS (the plain Lean step loses the coarse field below $x\approx\sqrt L$). PROVED
+
+Let $D_1^{pl}(V)=\int w_\beta(W)K^{pl}_x(W,V)dW$ on any torus, and
+$\epsilon^2:=7/L+e^{-2L/(4\beta+1)}+e^{256x/L^3}-1$. Then for every $V$ and $X$:
+
+$$
+-\frac{d^2}{d\varepsilon^2}\Big|_0\log D_1^{pl}(V_\varepsilon)\le x\,\epsilon\sum_c|X(c)|^2 .
+$$
+
+*Proof.* Corollary LD-2, Jensen, Lemma SE (d). $\square$
+
+Numbers at the release's smallest side $L=2^{40}$, for $\beta\le10^9$ and $x\le10^9$:
+$\epsilon\le2.53\cdot10^{-6}$ ($7/L=6.37\cdot10^{-12}$; the other two terms are below $10^{-24}$). So for $x=\beta\le3.9\cdot10^5$ the blocked action $-\log D_1^{pl}$ has Hessian at
+most the identity at **every** coarse field. A Wilson density at inverse coupling $x'$ has single-bond Hessian
+$6x'$ at the trivial field.
+
+**Corollary RANGE (PROVED given its hypothesis).** Let the Hessian form of $-\log D_1^{pl}$ at $V=\mathbf 1$ have
+the symbol $\hat Q_{11}(k_0,0,0,0)\ge x'k_0^2-Mk_0^4$ at some torus momentum with $k_0^2=x'/(2M)$. Then
+$M\ge x'^2/(4x\epsilon)$. *Proof.* LOSS gives $\hat Q_{11}\le x\epsilon$ at every momentum; evaluate. $\square$
+So if the readout continued the asymptotic-freedom line $x'\approx x-c_0$ at $x\le3.9\cdot10^5$, the blocked
+action would have a squared range $M/x'\ge1/(4\epsilon)\approx10^5$ in coarse units: it is not a local action at
+the coarse scale with order-one constants.
+
+**What this decides.**
+
+1. (LD-loc) is **REFUTED for the plain kernel at the first step** in the range $x=\beta\le\sqrt L/3$: the step
+   returns local stiffness at most 1, at couplings where the physical coupling at scale $L$ is still weak
+   ($\beta-c_0$ with $c_0=\tfrac{11}{3\pi^2}\log L\approx10.3$). The cause is the linear self-energy of thin
+   transporters of length $L$, the same for U(1). It is not disorder of the theory.
+2. For the release's adapted kernel (hot lumps, moved bases, filtered contours) and for later levels the same
+   statement is SKETCHED only: the adaptation removes contours and does not thicken them; at later levels the
+   one-link conditional law is no longer explicit.
+3. Consequence for the lane's plan: the Lean flow cannot be the vehicle of the band, in any form. Its block side
+   is at least $2^{40}$ by hypothesis, so one step spans the whole band, and below $x\approx\sqrt L$ its output is
+   not a carrier of the coupling. Theorem T's transfer to the Lean datum (row 1456) stays valid as a statement on
+   the first-passage set; a band step (K-II) needs a different map, with transporter self-energy bounded: block
+   side at most of order $x$, so side 2 or 3 at order-one coupling. GUESSED: the release's floor is at least of
+   order $\sqrt L$; not read in the release.
+4. With a small-block soft map, LD-1 still holds and Remark LD-3 gives the step as a posterior second moment.
+   The first lemma then reads: $(x^2/2)\sum_z z_0^2\mathrm{Cov}_{post}\le x-c$ at order-one $x$. That is K-I. So
+   **attack LD reduces to the common wall.** It is not progress on (M-neutral-all).
+
+### 3.5 Verdict of the row
+
+- No attack was found that avoids the common wall. My Phase 1 attack (ORB) is the lane's (VIR_K). My Phase 3
+  attack (LD) is new as an object, its first lemma is refuted for the release's map in a stated range, and with
+  a repaired map it is K-I.
+- What is proved here: Lemma LD-1, Corollary LD-2, Lemma SE (a)-(d), Theorem LOSS, Corollary RANGE. All by
+  hand, unchecked. No numeric run: memory free was 39 percent (`memory_pressure`, 13:22Z), below the 50 percent
+  rule.
+- What is argued: Remark PATH (2.1): a coupling-path proof must read the Wilson SU(2) weight through a number;
+  only scale-path attacks at a late cutoff are not excluded structurally. This is not a proof that every attack
+  hits the wall.
+- Open, unchanged: K-I or K-II for a small-block map; (A1); (M-neutral-all); the gap.
+
+## 4. Next two rows
+
+1. **`gap-crux-direction-fable-check-astra62`** (cross-provider check, read only). Check Theorem LOSS first:
+   Lemma SE (c) (the genericity count and the claim that legs do not meet a generic line), Lemma SE (d) (the
+   count of contours through a line and the factor 256), LD-1. Then read `usedContours`, `IsBaseChoice` and
+   `hotLumps` in the release and decide whether LOSS holds for the release's kernel on cold configurations.
+   Decisive outcome: HOLDS, or the first failing line. If SE (c) fails for the release's kernel, item 3 of 3.4
+   falls back to "not shown".
+2. **`lean-step-side-read-opus`** (read only, no proof). In the release, list every lemma of
+   `ClusterExpansionOfAStep` and `TotalDensitiesGiveASystem` that consumes `side_ge` or `side_gt`, with the
+   inequality each one needs, and the place where the coupling ceiling of the calibration is chosen after the
+   side. Decisive outcome, one of two: (a) an explicit floor $H(L)$ and the smallest admissible side, so that
+   the band $[\,\text{order one},H\,]$ has numbers for the first time (row 1326 found "the datum has no numbers")
+   and the sizing of K-III can be redone on them; or (b) the side bound is structural (lump geometry) and the
+   release gives no small-block step, so K-II must be built from Balaban's averaging map. Either result fixes
+   which map a K-II row may use. No attack row on the band is proposed: none found here passes the filter of
+   row 1386, and row 1442's reopen triggers (R1)-(R3) stand.
+
+## 5. Result
+
+Finished 2026-11-24T13:27Z (`date -u`). Author only, checked by no one. No numeric run (memory free 39 percent, below the rule).
+
+RESULT: Row 1460 (Claude Fable 5.2 high, Mac mini worker 1; author only, unchecked; hand proofs, no numeric run, release read only). No attack was found that avoids the common wall; (M-neutral-all) is not moved. Phase 1 (before reading rows after 1142): the target as a thermal statement; any proof must supply a no-stalling statement (NS) on a compact band of order-one couplings, from an exact non-abelian inequality, a signed identity or a verified computation; named attack ORB with first lemma (VIR-H) (an excitation lowers the magnetic term by at most kappa/2 times its energy). Phase 2: every Phase 1 item is on file ((K-one)/(K-flow), K-I to K-III, Theorem T, Proposition V); (VIR-H) is (VIR_K) of row 708, so ORB is equivalent to a closed line. Remark PATH (ARGUED): coupling-path carries must read the Wilson SU(2) weight through a number (Proposition V, N-test); only scale-path attacks at a late cutoff are not excluded structurally. Phase 3, attack LD (carry the band on the Lean release's own exact block map; not on file): PROVED by hand, Lemma LD-1 (the blocked log-Hessian is x times the posterior mean of Re(contour mean) minus x^2 times a posterior variance), Corollary LD-2 (the kernel caps the local stiffness), Lemma SE (the squared plain contour mean has Wilson and posterior mean at most 7/L + exp(-2L/(4 beta+1)) + exp(256x/L^3) - 1, from the self-energy of thin transporters), Theorem LOSS (for the plain kernel at the first step the blocked action has Hessian at most x epsilon at every coarse field; at L = 2^40 at most the identity for x = beta up to 3.9e5), Corollary RANGE. So the first lemma (LD-loc) is refuted for the plain kernel in that range, the Lean flow is not a vehicle for the band (block side at least 2^40 by hypothesis), and with a small-block map LD is K-I: it reduces to the common wall. SKETCHED only: the same for the release's adapted kernel and for later levels. Open: K-I or K-II for a small-block map, (A1), the seed, the mass gap. Next rows: (1) cross-provider check, Theorem LOSS first, and whether it holds for the adapted kernel on cold configurations; (2) `lean-step-side-read-opus`, a read-only list of what consumes the side bound and where the coupling ceiling is chosen: either an explicit floor H(L) (numbers for the band) or "the side bound is structural". Credit: Balaban; Sussman and Alpoge with Claude and Codex (every Lean object used); Simon and Yaffe for one-link randomization.

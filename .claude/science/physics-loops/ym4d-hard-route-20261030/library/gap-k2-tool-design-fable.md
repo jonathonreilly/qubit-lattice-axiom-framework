@@ -26,3 +26,5 @@ Status log (one line per step, times from date -u):
 
 - 2026-11-24T14:04Z file created, plan written.
 - 14:04Z read FINISH rules, GOAL.md, rows 1326, 1332, 1386, 1442, 1460-1467 (RESULT text). Target = (M-io-exists); missing input = K-II (or K-I local); release floor above 2^2800 (row 1464, unchecked); LOSS for the plain kernel (row 1460, check 1463).
+- 14:04Z read rows 1418-1437 (RESULT text): tensor-network step sized and rejected by cost and by filter (1418); one-link and two-cycle signed terms cancel or are tiny (1421-1431); Lean kernel replays exist (lean/glue, lean/ring, lean/haar); heat-factor class closed (1434).
+- 14:05Z read row 1386 4.1-4.5 (STEP, Remark PAIR, requirements (a)-(i), K-I/K-II/K-III, t1-t5), row 1442 4.2 (t6), row 1332 Section 6 (Proposition CH, END, steps OPEN), row 1460 Sections 2-3 (LD-1, LD-2, LD-3, SE, LOSS, RANGE).

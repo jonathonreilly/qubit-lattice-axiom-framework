@@ -99,3 +99,9 @@ Under the dictionary of Step 2, a Wilson TorusData at fixed beta needs, for ever
 5. **logConvex**: no work, by `weight_logConvex` (Step 5).
 6. **The gap** of the Lean `BoxSpectrum` is the gap on the whole gauge-invariant space, flux sectors included (as in the hand Theorem S). Any consumer that wants the neutral-sector gap only (row 1356's P_0) uses the same spectrum with fewer entries; Theorem S applies to it only if the restricted spectra still satisfy `cross`; that is not shown anywhere I read (a sector projection in the time direction is not obviously the image of one in a space direction under the axis exchange), so as it stands the TorusData route gives the full gap, not a sector gap. No Stage 1 statement claims otherwise.
 
+## Step 5. Builds
+
+**Independent rebuild of Stage 1** (22:39:37Z start, after memory_pressure read 52 percent free; numeric lock held by opus-1503-worker2): `lake build` in the scratch project, LEAN_NUM_THREADS=2, nice 10: rc 0, "Build completed successfully (3258 jobs)", wall 730.6 s (the machine was shared with another Lean build), maximum RSS 1,839,742,976 bytes. Every `#print axioms` line of the three modules reads `[propext, Classical.choice, Quot.sound]` (the same 49 lines as RECEIPT.md). Lake printed "manifest out of date: git url of dependency 'mathlib' changed" (the replay's manifest records a different URL form for the same rev 0df444a360ea); no update was run, and nothing was rebuilt in the packages. Log: `/tmp/opus-1503-check.K2ISLt/logs/build.log`.
+
+**Consumer, run 1** (22:51:47Z): elaboration errors in my own file only (a `HasSum.mul` overload, `_` placeholders in two `positivity` terms, `norm_num` not closing (1/2)^648 < 1/5041, a parenthesis in the W1 statement). `u4_instance` compiled with the three standard axioms. Fixed; run 2 below.
+

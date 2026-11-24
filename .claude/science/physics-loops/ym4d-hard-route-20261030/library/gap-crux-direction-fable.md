@@ -28,6 +28,7 @@ Status log (times from `date -u` in the same command):
 
 - 2026-11-24T12:49Z file created, row and GOAL.md read.
 - 2026-11-24T13:06Z Phase 1 written (Section 1), before reading any lane row after 1142.
+- 2026-11-24T13:14Z Phase 2 written (Section 2): the wall named; Phase 1 attack ORB is the lane's (VIR_K), not progress. Phase 3 turns to the Lean flow.
 
 ## 1. Phase 1: from the target and published work only
 
@@ -153,3 +154,57 @@ Ranking by "how many unproved ideas are missing" and "can the first lemma be dec
 > First lemma: (VIR-H) for the lowest neutral excitation at one size, or a decisive obstruction to it.
 
 Honest prior: I expect Phase 2 to show that (VIR-H) is on file and that ORB meets the lane's wall.
+
+## 2. Phase 2: the record, the common wall, and my Phase 1 attack against it
+
+Read: `parts/gap.md` L4-104 (state of attack); the RESULT parts of rows 1143, 1161, 1177, 1283, 1315, 1323, 1326,
+1330-1332, 1335, 1339, 1340, 1342, 1356, 1363, 1377, 1380, 1381, 1383, 1385-1389, 1402, 1418, 1421, 1425, 1430,
+1434, 1436, 1438-1443, 1445, 1449, 1451, 1454, 1456, 1457; `gap-mech-direction2-fable.md` 4.4. Not read: the other
+solve rows and the row files (RESULT lines only), so the statements below about "all solve rows" rest on this
+sample of about 45 rows and on the lane's own digests.
+
+### 2.1 The common wall
+
+In the lane's words (`parts/gap.md` L31-33, L43-45): "on each doubling of the box, between the last small box and
+the first good box, a certain free energy shrinks by a fixed factor"; "every engine found is blind, so its seed
+sits in the band; the one selective fact that is provable today, asymptotic freedom at small coupling, has no
+engine that carries it across the band".
+
+In the sample, every solve row follows one pattern: an exact rewriting of the neutral thermal trace (a comparison
+integral, a cut, a noise factor, a cover, a pin, a predictor), a proof that the rewriting is exact or loses
+$o(1)$, and then a stop at a comparison that needs order-one accuracy at a physical size (rows 1323 (30), 1330
+(30), 1339, 1377: "the whole-face term at physical time"). The mechanism rows 1380-1439 each closed a class by
+showing that it holds for U(1), for 5D, or for Villain U(1), or that it is an exact re-encoding with zero gain
+(row 1438 (12)). Row 1386 names the missing input: **K-I** (an exact carry with a sign for a typical-field
+stiffness), **K-II** (a renormalization step at order-one effective coupling), **K-III** (a verified computation,
+priced out by rows 1326 and 1418).
+
+This is statement (NS) of 1.2. My Phase 1 analysis found nothing that the lane does not have:
+
+| Phase 1 item | Already on file |
+|---|---|
+| (F2) thermal reading | row 1402 Phase 1; row 1363 ("energy density at least three times the pressure") |
+| (S3)/(NS), the three sources | (K-one)/(K-flow), `parts/gap.md` L46-49; K-I, K-II, K-III, `gap-mech-direction2-fable.md` L339-348 |
+| table of stalled models | U(1), frozen groups, K7, products: `parts/gap.md` L27-29; five dimensions and the N-test: `gap-assume-opus.md` L145; a published-theorem version of K7: Proposition V with van Enter-Shlosman, `gap-crux-fp.md` L264, L287 |
+| (Q) qualitative band | Theorem T, `gap-shrink-box-fable.md` (row 1332, check 1335); (SEED-L) with ONE-K |
+| (VIR-H) | (VIR_K), Theorem TR, (VIR-log), `gap-mid-max.md` L52-58, L120, L172 (row 708); idea 46 / G8 (NOCRIT-HF), `gap-brainstorm-max.md` L334, L484, L619 ("no tool") |
+| attack ORB | method 31 of `parts/gap.md` (rows 957, 968); `gap-mini-solve-d-fable.md` L83 ("no consumer above beta about 1/8") |
+| local inequality + exact transport + certified recursion | row 1025 (Tomboulis), rows 1418-1432 (signed tensor steps), row 1326 |
+
+**Verdict on Phase 1.** Attack ORB with first lemma (VIR-H) is the lane's (VIR_K) in Hamiltonian words. It is
+equivalent to a closed line and is not progress. One sharpening is worth keeping, because it sorts the record:
+
+**Remark PATH (ARGUED, from on-file tests).** Attacks split by the path along which they carry a seed.
+- *Coupling paths* (transport in the bare $\beta$ at a fixed lattice: (VIR_K), (NOCRIT), (A2) of Theorem T,
+  Tomboulis, continuity methods). The conclusion of such a carry is false at a coexistence point. Proposition V
+  (a theorem, given van Enter-Shlosman) and the N-test (a belief: Wilson SU(N), N at least 5) show that
+  coexistence occurs for weights with every structural property of the Wilson SU(2) weight. So a coupling-path
+  proof must read the Wilson SU(2) weight through a number. No structural proof exists.
+- *Scale paths* (transport in the scale at a late cutoff, from first-passage data: K-I, K-II). No model with the
+  same local structure is known to stall, because all such weights have one continuum limit. The only tests are
+  changes of group, dimension or content. This is the only kind where a structural proof is not excluded.
+
+The Lean release works on a scale path with an exact block map. No attack row has used its flow objects: rows
+1449-1458 are port readings, and the mechanism rows 1380-1439 predate them. Row 1383 left open "an exact
+statement for an averaging map at finite coupling" and check 1385 recorded that the level form "is a candidate
+statistic only". The Lean flow is such a map with a statement. Phase 3 takes this as the attack.

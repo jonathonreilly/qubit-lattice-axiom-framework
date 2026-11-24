@@ -105,3 +105,5 @@ Under the dictionary of Step 2, a Wilson TorusData at fixed beta needs, for ever
 
 **Consumer, run 1** (22:51:47Z): elaboration errors in my own file only (a `HasSum.mul` overload, `_` placeholders in two `positivity` terms, `norm_num` not closing (1/2)^648 < 1/5041, a parenthesis in the W1 statement). `u4_instance` compiled with the three standard axioms. Fixed; run 2 below.
 
+**Consumer, run 2** (23:08:42Z, 53 percent free at start; 244 s wall, 2.03 GB max RSS): `weight_logConvex` and `TorusData.mk'` kernel-checked with `[propext, Classical.choice, Quot.sound]`; so the redundancy of the `logConvex` field is now a checked theorem, not only a hand remark. Remaining errors, all in my tunnelling example and the W1 instance (a rewrite that hit the inner power, `linarith` on 2^-648, a namespace `InnerProductSpace.rankOne_apply`). Fixed; run 3 queued for the memory floor.
+

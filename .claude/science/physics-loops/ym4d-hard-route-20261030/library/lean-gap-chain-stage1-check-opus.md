@@ -107,3 +107,267 @@ Under the dictionary of Step 2, a Wilson TorusData at fixed beta needs, for ever
 
 **Consumer, run 2** (23:08:42Z, 53 percent free at start; 244 s wall, 2.03 GB max RSS): `weight_logConvex` and `TorusData.mk'` kernel-checked with `[propext, Classical.choice, Quot.sound]`; so the redundancy of the `logConvex` field is now a checked theorem, not only a hand remark. Remaining errors, all in my tunnelling example and the W1 instance (a rewrite that hit the inner power, `linarith` on 2^-648, a namespace `InnerProductSpace.rankOne_apply`). Fixed; run 3 queued for the memory floor.
 
+**Consumer, run 3** (23:41:46Z, 50 percent free at start; numeric lock acquired and released): rc 0, wall 354.7 s, maximum RSS 1,745,141,760 bytes; two linter warnings (unused variable, unused simp argument), no errors. Verbatim axiom output:
+
+```text
+'Check1503.weight_logConvex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.TorusData.mk'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.tunnelTorus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.tunnel_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.tunnel_seed_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.tunnel_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.tunnel_theoremS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.tunnel_gap13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.tunnel_phi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.u4_instance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Check1503.w1_instance' depends on axioms: [propext, Classical.choice, Quot.sound]
+```
+
+Source scan of the consumer: no `sorry`, `admit`, `native_decide`, `implemented_by` or `axiom` declaration. SHA-256 of `Check/Consumer.lean` (217 lines): `cc79d1c9cc2266b30300455b8d4035111b71cf07de8cc0369528d15bfc645e85`. The full file is in the appendix so the check can be replayed without the scratch folder. Trusted base: Lean 4.33.1 kernel (commit 819816b2e0a3) with the pinned Mathlib 0df444a360ea; exact rational arithmetic by `norm_num`; no compiled evaluator.
+
+What the build establishes (kernel-checked):
+
+- **Non-vacuity of W5.** `tunnelTorus` is a TorusData (all four fields proved) whose seed at N = 3 is 2^(-648), strictly between 0 and 1/5041. `theoremS` applies for every k, `corollaryS3'` applies at the non-dyadic side 13, the rate `seedRate 3` is the finite positive real log(2^648/5041)/3, and `phi 3 <= 19/100000`, so `seed_of_phi` is non-vacuous too. The hypotheses are consistent and the conclusions are not vacuous (not the ⊤ case).
+- **Redundancy of `TorusData.logConvex`.** `weight_logConvex` proves it for every BoxSpectrum, and `TorusData.mk'` builds a TorusData without it.
+- **Non-vacuity of U4 and W1.** Satisfied instances (m_n = 2^-n; B = 1 on ℂ with φ = 1, c = 1, δ = 0).
+
+Limits of the non-vacuity check. The example is a two-level toy, not the Wilson model: its gap grows like L^3 and its weights are not extensive. It shows that the hypotheses can all hold together and that the theorems then apply; it says nothing about whether the Wilson seed holds. That the Wilson data satisfies the fields is the hand argument of Steps 2 and 6, not a Lean fact.
+
+## Verdict
+
+**FAITHFUL AND NON-VACUOUS.**
+
+- U4 (`sequenceLemma`, `sequenceLemma_of_bound`): states Lemma A2 of row 668 in scalar form, for every index; no stronger hypothesis.
+- W1 (`lemmaM1`, `lemmaM1_hsSq`): states the forward direction of Lemma M1 of row 1356 (check 1359): the test at tolerance δ gives (1 - δ²) Tr B² <= ‖B‖²_op = mu_0²; no stronger hypothesis. Design-text correction only: in the design's W1 row (`lean-gap-chain-design-fable.md` L648) ‖B‖ must be the operator norm (with the HS norm the statement is trivial); the Lean file already uses the operator norm.
+- W5 (`TheoremS.lean`): Lemmas K, X, E, E', Theorem S, Corollary S3' (row 699 correction) and the 19/100000 pressure threshold are stated as in row 697 section 3.4 with checks 698-699. Fields: `cross` and `lower` are exactly the hand assumptions; `top_pos`, `nonneg` exact; `le_one` and `atThree` are weaker than the hand setting (no simplicity of the top eigenvalue, Tr T^3 finite in place of trace class); `logConvex` is redundant (kernel-checked here). No field is stronger than the hand proof needs, and none can fail for SU(2) Wilson at any beta > 0 under the dictionary of Step 2 (spectra of the transfer operators of rectangular slices, excited eigenvalues with multiplicity).
+- No field needs to change. Optional simplification: drop `logConvex` from TorusData (or keep it and use `TorusData.mk'`).
+
+Open, and not claimed by row 1459: the instantiation on the Wilson data (rectangular transfer operators, which the YM4 Lean library of Sussman and Alpoge (with Claude and Codex) does not supply; an eigenvalue sequence via a compact spectral theorem; the axis exchange and the Jensen bound in Lean), and the physical seed (SEED).
+
+Credits. The YM4 Lean library and the complete account: Ethan Sussman and Levent Alpoge, with Claude and Codex. The Lean files checked here: gpt-6.2-astra (row 1459). Hand proofs: Claude Opus 5.5 (row 668, Lemma A2), Claude Fable 5.2 (row 697 Theorem S with Lemmas K, X, E; row 1356 Lemma M1), gpt-6-astra (row 699, Lemma E' and Corollary S3'), checks rows 698, 699, 1359. Design: row 1457 (Claude Fable 5.2), check row 1458 (gpt-6.2-astra).
+
+Provenance of this check: Claude Opus 5.5, high, Mac mini worker 2, one session, no subagents. Lean runs: one Stage 1 rebuild and three consumer runs, all after memory_pressure read 50 percent free or more, under the numeric lock. Ended 23:47Z (date -u).
+
+## Appendix: `Check/Consumer.lean` (as built in run 3)
+
+```lean
+import GapChain.SequenceLemma
+import GapChain.LemmaM1
+import GapChain.TheoremS
+
+/-!
+# Row 1503 check consumer (Claude Opus 5.5, high)
+
+A. `TorusData.logConvex` follows from the `BoxSpectrum` fields (redundant field).
+B. An explicit `TorusData` (a two-level tunnelling model, Z(n) = 1 + 2^(-n₁n₂n₃n₄))
+   with a positive seed below 1/5041, to which `theoremS` and `corollaryS3'` apply.
+C. Satisfiable instances of the hypotheses of U4 (`sequenceLemma_of_bound`) and W1 (`lemmaM1`).
+-/
+
+open Filter Topology GapChain
+
+namespace Check1503
+
+/-! ## A. log-convexity of the weight is automatic -/
+
+theorem weight_logConvex (B : BoxSpectrum) {a : ℕ} (ha : 3 ≤ a) :
+    B.weight (a + 1) ^ 2 ≤ B.weight a * B.weight (a + 2) := by
+  have hA : HasSum (fun i => B.ratio i ^ a) (B.thermal a) := (B.summable ha).hasSum
+  have hX : HasSum (fun i => B.ratio i ^ (a + 1)) (B.thermal (a + 1)) :=
+    (B.summable (by omega : 3 ≤ a + 1)).hasSum
+  have hC : HasSum (fun i => B.ratio i ^ (a + 2)) (B.thermal (a + 2)) :=
+    (B.summable (by omega : 3 ≤ a + 2)).hasSum
+  have hcs : B.thermal (a + 1) ^ 2 ≤ B.thermal a * B.thermal (a + 2) := by
+    refine le_of_tendsto_of_tendsto' (hX.tendsto_sum_nat.pow 2)
+      (hA.tendsto_sum_nat.mul hC.tendsto_sum_nat) (fun n => ?_)
+    have h := Finset.sum_mul_sq_le_sq_mul_sq (Finset.range n) (fun i => Real.sqrt (B.ratio i) ^ a)
+      (fun i => Real.sqrt (B.ratio i) ^ (a + 2))
+    have e1 : ∀ i, Real.sqrt (B.ratio i) ^ a * Real.sqrt (B.ratio i) ^ (a + 2) =
+        B.ratio i ^ (a + 1) := by
+      intro i
+      rw [← pow_add, show a + (a + 2) = 2 * (a + 1) by ring, pow_mul, Real.sq_sqrt (B.nonneg i)]
+    have e2 : ∀ k i, (Real.sqrt (B.ratio i) ^ k) ^ 2 = B.ratio i ^ k := by
+      intro k i
+      rw [← pow_mul, mul_comm, pow_mul, Real.sq_sqrt (B.nonneg i)]
+    simpa only [e1, e2] using h
+  have ham : 2 * B.thermal (a + 1) ≤ B.thermal a + B.thermal (a + 2) := by
+    refine hasSum_le (fun i => ?_) (hX.mul_left 2) (hA.add hC)
+    have hr := B.nonneg i
+    have h0 : 0 ≤ B.ratio i ^ a * (1 - B.ratio i) ^ 2 := mul_nonneg (pow_nonneg hr a) (sq_nonneg _)
+    have e1 : B.ratio i ^ (a + 1) = B.ratio i ^ a * B.ratio i := pow_succ _ _
+    have e2 : B.ratio i ^ (a + 2) = B.ratio i ^ a * B.ratio i * B.ratio i := by
+      rw [pow_succ, pow_succ]
+    simp only [e1, e2]
+    nlinarith [h0]
+  have hA0 := B.thermal_nonneg a
+  have hC0 := B.thermal_nonneg (a + 2)
+  have hsq : (1 + B.thermal (a + 1)) ^ 2 ≤ (1 + B.thermal a) * (1 + B.thermal (a + 2)) := by
+    nlinarith [hcs, ham]
+  unfold BoxSpectrum.weight
+  have ht : 0 ≤ B.top ^ a * B.top ^ (a + 2) := by have := B.top_pos; positivity
+  calc (B.top ^ (a + 1) * (1 + B.thermal (a + 1))) ^ 2
+      = (B.top ^ a * B.top ^ (a + 2)) * (1 + B.thermal (a + 1)) ^ 2 := by ring
+    _ ≤ (B.top ^ a * B.top ^ (a + 2)) * ((1 + B.thermal a) * (1 + B.thermal (a + 2))) :=
+        mul_le_mul_of_nonneg_left hsq ht
+    _ = B.top ^ a * (1 + B.thermal a) * (B.top ^ (a + 2) * (1 + B.thermal (a + 2))) := by ring
+
+/-- So a `TorusData` can be built from `spectrum`, `cross` and `lower` alone. -/
+def TorusData.mk' (spectrum : Box → BoxSpectrum)
+    (cross : ∀ R : Box, R.Valid → ∀ i a b, 3 ≤ a → 3 ≤ b →
+      (spectrum (R.replace i b)).weight a = (spectrum (R.replace i a)).weight b)
+    (lower : ∀ R : Box, R.Valid → ∀ i, ∃ d : ℝ, ∀ a b : ℕ, 3 ≤ a → 3 ≤ b →
+      d * a * b ≤ Real.log ((spectrum (R.replace i b)).weight a)) : TorusData where
+  spectrum := spectrum
+  cross := cross
+  logConvex := fun R _ a ha => weight_logConvex (spectrum R) ha
+  lower := lower
+
+/-! ## B. An explicit TorusData with a positive seed -/
+
+/-- One excited level with relative eigenvalue 2^(-xyz); top eigenvalue 1. -/
+noncomputable def tunnelSpec (R : Box) : BoxSpectrum where
+  top := 1
+  top_pos := one_pos
+  ratio i := if i = 0 then (1 / 2 : ℝ) ^ (R.x * R.y * R.z) else 0
+  nonneg i := by split_ifs <;> positivity
+  le_one i := by
+    split_ifs
+    · exact pow_le_one₀ (by norm_num) (by norm_num)
+    · norm_num
+  atThree := (hasSum_single 0 (fun j hj => by simp [hj])).summable
+
+theorem tunnel_thermal (R : Box) {a : ℕ} (ha : 1 ≤ a) :
+    (tunnelSpec R).thermal a = (1 / 2 : ℝ) ^ (R.x * R.y * R.z * a) := by
+  unfold BoxSpectrum.thermal
+  rw [(hasSum_single 0 (fun j hj => by
+      simp [tunnelSpec, hj, zero_pow (show a ≠ 0 by omega)])).tsum_eq]
+  simp [tunnelSpec, pow_mul]
+
+theorem tunnel_weight (R : Box) {a : ℕ} (ha : 1 ≤ a) :
+    (tunnelSpec R).weight a = 1 + (1 / 2 : ℝ) ^ (R.x * R.y * R.z * a) := by
+  unfold BoxSpectrum.weight
+  rw [tunnel_thermal R ha]
+  simp [tunnelSpec]
+
+noncomputable def tunnelTorus : TorusData where
+  spectrum := tunnelSpec
+  cross := by
+    intro R _ i a b ha hb
+    rw [tunnel_weight _ (by omega), tunnel_weight _ (by omega)]
+    have key : (R.replace i b).x * (R.replace i b).y * (R.replace i b).z * a =
+        (R.replace i a).x * (R.replace i a).y * (R.replace i a).z * b := by
+      cases i <;> simp only [Box.replace] <;> ring
+    rw [key]
+  logConvex := by
+    intro R _ a ha
+    rw [tunnel_weight _ (by omega), tunnel_weight _ (by omega), tunnel_weight _ (by omega)]
+    generalize R.x * R.y * R.z = V
+    rw [pow_mul, pow_mul, pow_mul]
+    have hu : (0 : ℝ) ≤ (1 / 2 : ℝ) ^ V := by positivity
+    generalize (1 / 2 : ℝ) ^ V = u at hu ⊢
+    have e1 : u ^ (a + 1) = u ^ a * u := pow_succ _ _
+    have e2 : u ^ (a + 2) = u ^ a * u * u := by rw [pow_succ, pow_succ]
+    rw [e1, e2]
+    have h0 : 0 ≤ u ^ a * (1 - u) ^ 2 := mul_nonneg (pow_nonneg hu a) (sq_nonneg _)
+    have h1 : 0 ≤ u ^ a := pow_nonneg hu a
+    nlinarith [h0, mul_nonneg h1 hu, mul_nonneg (mul_nonneg h1 hu) hu]
+  lower := by
+    intro R _ i
+    refine ⟨0, fun a b ha hb => ?_⟩
+    rw [tunnel_weight _ (by omega), zero_mul, zero_mul]
+    exact Real.log_nonneg (le_add_of_nonneg_right (by positivity))
+
+theorem tunnel_seed : tunnelTorus.seed 3 = (1 / 2 : ℝ) ^ 648 := by
+  show (tunnelSpec (cube (2 * 3))).thermal 3 = _
+  rw [tunnel_thermal _ (by norm_num)]
+  rfl
+
+theorem tunnel_seed_pos : 0 < tunnelTorus.seed 3 := by rw [tunnel_seed]; positivity
+
+theorem half_pow_648 : (1 / 2 : ℝ) ^ 648 ≤ 1 / 8192 := by
+  calc (1 / 2 : ℝ) ^ 648 ≤ (1 / 2 : ℝ) ^ 13 :=
+        pow_le_pow_of_le_one (by norm_num) (by norm_num) (by norm_num)
+    _ = 1 / 8192 := by norm_num
+
+theorem tunnel_seed_small : tunnelTorus.seed 3 < 1 / 5041 := by
+  rw [tunnel_seed]; exact lt_of_le_of_lt half_pow_648 (by norm_num)
+
+/-- The rate is a finite positive real: log(2^648/5041)/3. -/
+theorem tunnel_rate :
+    tunnelTorus.seedRate 3 = ((Real.log (1 / (5041 * (1 / 2 : ℝ) ^ 648)) / 3 : ℝ) : EReal) ∧
+      0 < Real.log (1 / (5041 * (1 / 2 : ℝ) ^ 648)) / 3 := by
+  constructor
+  · unfold TorusData.seedRate
+    rw [tunnel_seed, if_neg (by positivity)]
+    norm_num
+  · apply div_pos _ (by norm_num)
+    apply Real.log_pos
+    rw [one_div, one_lt_inv₀ (by positivity)]
+    exact lt_of_le_of_lt (mul_le_mul_of_nonneg_left half_pow_648 (by norm_num)) (by norm_num)
+
+/-- Theorem S applied: dyadic thermal bound and gap. -/
+theorem tunnel_theoremS (k : ℕ) :
+    tunnelTorus.seed (2 ^ k * 3) ≤ (5041 * tunnelTorus.seed 3) ^ (2 ^ k) / 5041 ∧
+      tunnelTorus.seedRate 3 ≤ (tunnelTorus.spectrum (cube (2 * (2 ^ k * 3)))).gap :=
+  tunnelTorus.theoremS (by norm_num) tunnel_seed_small k
+
+/-- Corollary S3' applied: every cube of side L ≥ 6, here at the non-dyadic side 13. -/
+theorem tunnel_gap13 : tunnelTorus.seedRate 3 ≤ (tunnelTorus.spectrum (cube 13)).gap :=
+  tunnelTorus.corollaryS3' (by norm_num) tunnel_seed_small (by norm_num)
+
+/-- The pressure alternative is also non-vacuous here: Φ(3) ≤ 19/100000. -/
+theorem tunnel_phi : tunnelTorus.phi 3 ≤ 19 / 100000 := by
+  unfold TorusData.phi
+  show 16 * Real.log ((tunnelSpec (cube 3)).weight 3) -
+      Real.log ((tunnelSpec (cube (2 * 3))).weight (2 * 3)) ≤ _
+  rw [tunnel_weight _ (by norm_num), tunnel_weight _ (by norm_num)]
+  have h1 : Real.log (1 + (1 / 2 : ℝ) ^ ((cube 3).x * (cube 3).y * (cube 3).z * 3))
+      ≤ (1 / 2 : ℝ) ^ 81 := by
+    have := Real.log_le_sub_one_of_pos (by positivity :
+      (0 : ℝ) < 1 + (1 / 2 : ℝ) ^ ((cube 3).x * (cube 3).y * (cube 3).z * 3))
+    have e : (cube 3).x * (cube 3).y * (cube 3).z * 3 = 81 := rfl
+    rw [e] at this ⊢
+    linarith
+  have h2 : 0 ≤ Real.log (1 + (1 / 2 : ℝ) ^ ((cube (2 * 3)).x * (cube (2 * 3)).y *
+      (cube (2 * 3)).z * (2 * 3))) :=
+    Real.log_nonneg (le_add_of_nonneg_right (by positivity))
+  have h3 : (16 : ℝ) * (1 / 2 : ℝ) ^ 81 ≤ 19 / 100000 := by norm_num
+  linarith
+
+/-! ## C. U4 and W1 hypotheses are satisfiable -/
+
+theorem u4_instance (n : ℕ) : (1 / 2 : ℝ) ^ (n + 1) ≤ 1 / 2 * (1 / 2 : ℝ) ^ n :=
+  sequenceLemma_of_bound (m := fun n => (1 / 2 : ℝ) ^ n) (C := 1) (by norm_num)
+    (fun n => by positivity)
+    (fun n => le_of_eq (by ring))
+    (fun j => by simp) n
+
+noncomputable def bU : HilbertBasis Unit ℂ ℂ := (OrthonormalBasis.singleton Unit ℂ).toHilbertBasis
+
+/-- On ℂ, B = 1, φ = 1, c = 1: the test holds at δ = 0 and M1 gives 1 ≤ 1. -/
+theorem w1_instance :
+    (1 - (0 : ℝ) ^ 2) * (∑' i, (inner ℂ (bU i) ((1 : ℂ →L[ℂ] ℂ) ((1 : ℂ →L[ℂ] ℂ) (bU i)))).re)
+      ≤ ‖(1 : ℂ →L[ℂ] ℂ)‖ ^ 2 := by
+  refine lemmaM1 bU 1 ContinuousLinearMap.isPositive_one Summable.of_finite (φ := 1) (by simp)
+    (c := 1) (δ := 0) one_pos ?_
+  intro n v _
+  have hz : ∀ x : ℂ, x - ketBra (1 : ℂ) x = 0 := fun x => by
+    simp [ketBra, InnerProductSpace.rankOne_apply]
+  simp [hz]
+
+end Check1503
+
+#print axioms Check1503.weight_logConvex
+#print axioms Check1503.TorusData.mk'
+#print axioms Check1503.tunnelTorus
+#print axioms Check1503.tunnel_seed
+#print axioms Check1503.tunnel_seed_small
+#print axioms Check1503.tunnel_rate
+#print axioms Check1503.tunnel_theoremS
+#print axioms Check1503.tunnel_gap13
+#print axioms Check1503.tunnel_phi
+#print axioms Check1503.u4_instance
+#print axioms Check1503.w1_instance
+```
+
+RESULT: FAITHFUL AND NON-VACUOUS. Row 1459 U4, W1 and W5 state their hand sources (rows 668, 1356/1359, 697-699 with the S3' correction); no TorusData/BoxSpectrum field is stronger than the hand proofs or false for Wilson data; logConvex is redundant (kernel-checked); an explicit TorusData with seed 2^-648 satisfies all fields and theoremS, corollaryS3' (L = 13) and seed_of_phi apply, all with only propext, Classical.choice, Quot.sound. Open: the Wilson instantiation (rectangular transfer operators, eigenvalue sequences, axis exchange, Jensen bound in Lean) and the physical seed.

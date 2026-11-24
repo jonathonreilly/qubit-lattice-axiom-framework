@@ -3,7 +3,7 @@ lease_until: 2026-11-25T03:38Z
 
 # gap-k2-signed-readout-fable (queue row 1479)
 
-Status: IN PROGRESS. Started 2026-11-24T15:38Z (date -u). Pinned at commit 490b37e88.
+Status: DONE (see Section 10). Started 2026-11-24T15:38Z, finished 2026-11-24T15:51Z (date -u). Pinned at commit 490b37e88. Author only, by hand, unchecked by the other model. No numerics, no Lean.
 
 ## 0. Plan
 
@@ -328,3 +328,107 @@ So the statement that a chain needs is:
 and the tube of step k is centred at x_k S_k plus the one-loop term, not at a Wilson shape. The first steps
 (k = 0, 1, 2) are finite computations. The tail needs a rate for S_k and the continuity of b. By Theorem SL
 and Section 5 the margin is not large: the persistent value 0.2575 equals a quartic shift gamma of 0.11.
+
+## 7. The computation that is left (specified, not run; gap in the sense of GOAL.md)
+
+Not run: memory was 37 to 39 percent free at 15:38Z, 15:46Z, 15:48Z and 15:50Z (rule: 50 percent). No code
+was written.
+
+**Statement.** For a in {1/4, 1, 4}: the numbers b(S_W; a), b(R_a S_W; a), and the coefficient of the form I
+of Remark RS in the one-loop image of S_W, each with an error bound of 0.005.
+
+**Method.**
+1. Bloch form. For a coarse momentum q the unit cell has 64 fine links, 49 after the tree gauge. H_0(q) is a
+   Hermitian 49 x 49 matrix for each colour. Its entries are polynomials in exp(i q_mu) with rational
+   coefficients of denominator 384 (the contour weights) times a.
+2. Background. beta = eps on the bonds of direction 2 with the profile cos(p y_1), colour k; alpha = Abar beta.
+   For the form I use the polarisation e_2 + e_3.
+3. Vertices. Plaquettes: the formula of Section 5. Pin: with m in R^4 the quaternion M_c and v = V(c),
+   the second variation of T_c is (<dm, dm> - <mhat, dm>^2)/abs(M_c) + <mhat - v, d^2 m>, and d m, d^2 m are
+   means over the 384 contours of ordered products with one or two insertions.
+4. b = (3/2) gbar - 3/16 + (C2) + (C3) + (P), each a sum over q of traces of products of H_0(q)^(-1) and
+   H_0(q + p)^(-1) with the vertices; take the p^2 coefficient by differentiating the vertices at p = 0 (the
+   integrand is analytic and periodic in q, since H_0 has a gap), or by p = 2 pi/N_1 with N_1 = 16, 24, 32, 48
+   and an extrapolation in p^2 for a GUIDE.
+5. For b(R_a S_W; a) the shape is nonlocal with exponential decay; its cubic and quartic vertices come from
+   the tree expansion of the minimizer. This is larger and is sized only after step 4 is run.
+
+**Cost (GUESSED).** GUIDE run: under one hour on one thread and under 2 GB (matrices of side at most 2048
+with the plane wave in one direction and Bloch momenta in three). Certificate: a lower bound for the least
+eigenvalue of H_0(q) on the zone (a grid with a Lipschitz bound, interval arithmetic), then the trapezoid
+rule for analytic periodic integrands with its explicit error. About 16^4 momenta times 49^3 interval
+operations times ten products is 1e11 operations. By the measure of the design note 5.3 that is about 100
+Lean rows by `decide`, or one external certificate with a Lean checker. Not small, not out of reach.
+
+## 8. Verdict for row 1479 (step 4)
+
+Recall the two outcomes the row asks for.
+
+**Outcome 1 (b >= b_min > 0 and abs(x' - x + b) <= K/x with 2K/b_min <= 100): NOT reached.**
+- b(S_W; a) is reduced to the six parts of Section 5. Three are exact: their sum (3/2) gbar - 3/16 lies in
+  [0.516, 0.5625]. The other three are a specified lattice computation. The sign of b(S_W; a) is not proved.
+- K is not bounded. Proposition L is proved at a fixed torus only. A bound K/x uniform in the torus is the
+  two-loop term plus the remainder of the small-field and large-field expansion. That is row 1480 (integrated
+  activities) and component T1. Corollary SL3 gives one necessary condition: K >= (25/8) A on a family with
+  adjoint spread A.
+
+**Outcome 2 (an admissible centre with a nonpositive limiting decrement): PROVED for the plaquette family,
+given Proposition L** (Corollary SL1). The centre is x (s_p + gamma s_p^2) with gamma >= gamma_0(a)
+= max(0, b(S_W; a))/(5 gbar(a)); in other words a fundamental-adjoint Wilson action with
+beta_A/x <= -(3/4) gamma_0. With the guess b(S_W) in [0.5, 1.2] this is gamma_0 in [0.2, 0.5]. So uniform
+strict drift is false on the family of all positive analytic single-plaquette centres. It can hold only on
+the slab of Corollary SL2.
+
+**What changes for the tool.**
+1. The centre of a step is not a Wilson shape (Corollary L1). It is x_k R_a^k S_W plus a one-loop term.
+2. The decrement is not universal step by step. It is affine in the quartic coefficient with slope
+   -5 gbar, between -5/2 and -75/32 (Theorem SL). The persistent value 0.2575 is worth a quartic shift of 0.11.
+3. The first-step decrement is dominated by tadpoles that the abelian model has too (Section 6). The
+   selective statement is (DR-orbit).
+4. Q2 with corner bases has no reflection covariance; the one-loop readout may have a second coefficient
+   (Remark RS, OPEN).
+5. Two lines on file to correct: design note 4.5 (t1) for the Wilson U(1) action, and "b comes from the
+   non-abelian terms" (parts (N1) and (Z) are abelian).
+
+Marks. PROVED (by hand, author only, unchecked by the other model): the second-order form of T_c;
+Proposition L, Corollaries L1 (first three sentences) and L2 on a fixed torus; Lemma AB; Lemma G; Theorem SL
+and Corollaries SL1 to SL3 given Proposition L; the plaquette variation formula; parts (N1), (C1), (Z); the
+two displayed terms of b_U(1). SKETCHED: the norm statement of L1; Proposition FP; the universal sum.
+GUESSED: the range of b(S_W; a); the costs of Section 7. Recalled from the literature, not re-read: the
+factor 5 pi^2/11, the shift 3/4, the ratio 19.82, the U(1) total 1/4, the Hasenfratz-Niedermayer saddle form.
+
+Credit: Tadeusz Balaban (the scheme and the one-loop law); Ethan Sussman and Levent Alpoge, with Claude and
+Codex (the normalized contour kernel, `nextCoupling`, RF10); P. Hasenfratz and F. Niedermayer (the classical
+saddle-point block map); rows 1468 to 1472 (the map, Proposition GA, the tree gauge and the conditioned
+variance bound 1/2, which Lemma G sharpens from below).
+
+## 9. The next two rows and their decisive outcomes (step 5)
+
+1. **`gap-k2-oneloop-number` (computation, GUIDE first; needs 50 percent free memory).** Run Section 7,
+   steps 1 to 4, at a = 1/4, 1, 4: the numbers b(S_W; a), the three unevaluated parts (C2), (C3), (P)
+   separately, and the coefficient of I. Check the code on two exact facts of this note: the part (Z) = -3/16
+   and the slope -5 gbar with gbar in [15/32, 1/2]. Decisive outcomes: (a) b(S_W; a) > 0.26 and the
+   coefficient of I is 0 within the error: Q2 stays the tool map, and the certificate of Section 7 is the
+   next Lean item; (b) the coefficient of I is not 0: Q2 with corner bases is dropped for a map with
+   reflections (side 3, centred bases), because the readout is then not one number; (c) b(S_W; a) <= 0 at
+   every a tried: the first step moves the wrong way and the chain needs another kernel strength or map.
+2. **`gap-k2-classical-orbit` (proof row).** For the classical map R_a of Q2 (S maps to the minimum over W
+   of S(W) + a T(W, V)): prove that R_a contracts a neighbourhood of the orbit of S_W in a norm that
+   controls the cubic and quartic vertices, with an explicit rate, so that S_* = lim R_a^k S_W exists; then
+   Proposition FP with the continuity of b. Decisive outcomes: (a) a rate theta < 1 and a k_0 with
+   abs(b(S_k; a) - 0.2575) <= 0.12 for k >= k_0: (DR-orbit) holds in the tail with delta_0 = 0.13 at one
+   loop, and the finite list k < k_0 goes to row 1; (b) no fixed shape in a quasi-local class (for instance
+   the corner base of the 2^k block makes the range of S_k grow): the centres of (K2-STEP) do not exist for
+   Q2 and the design changes.
+
+## 10. Result
+
+RESULT: Outcome 1 of the row is not reached: b(S_W; a) = (3/2) gbar(a) - 3/16 + (three lattice sums not
+evaluated), with the exact part in [0.516, 0.5625] and its sign not proved; K is open and waits on row 1480.
+Outcome 2 is proved on a fixed torus (Proposition L): the limiting decrement is affine in the quartic
+coefficient of a plaquette centre with slope -5 gbar in [-5/2, -75/32] (Theorem SL), so the centres
+x (s_p + gamma s_p^2) with gamma >= max(0, b(S_W; a))/(5 gbar) have a nonpositive limiting decrement, and
+uniform strict drift fails on the plaquette (fundamental-adjoint) family. Also proved: the image centre is
+x R_a S, not a Wilson shape; the first-step decrement has abelian tadpole parts, so it is not selective. Open:
+the three lattice sums (Section 7; no numerics were run, memory stayed below 50 percent free), the reflection
+coefficient of Remark RS, the uniformity in the torus, K, and (DR-orbit) with Proposition FP.

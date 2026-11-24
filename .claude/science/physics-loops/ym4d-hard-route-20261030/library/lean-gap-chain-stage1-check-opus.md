@@ -76,3 +76,26 @@ Gap between W1 and its consumer (not a faithfulness defect; it is design row W8)
 
 **Verdict W1: FAITHFUL** (the one direction the design asked for).
 
+## Step 4. Non-vacuity: consumer file (written; build pending at 21:17Z)
+
+Scratch project `/tmp/opus-1503-check.K2ISLt/proj` (Lean 4.33.1, the committed lakefile and toolchain, the replay's `lake-manifest.json` renamed to gapchain, `.lake/packages` symlinked read-only to the replay's packages, as in the RECEIPT). The copied GapChain sources have the SHA-256 values listed in RECEIPT.md (checked: identical). Consumer: `Check/Consumer.lean`. Contents:
+
+- **A. `weight_logConvex`**: for every BoxSpectrum B and a >= 3, weight(a+1)^2 <= weight(a) weight(a+2) (Cauchy-Schwarz on partial sums with sqrt(r_i)^a, sqrt(r_i)^(a+2), passed to the limit, plus pointwise 2 r^(a+1) <= r^a + r^(a+2)). Hence `TorusData.mk'` builds a TorusData from `spectrum`, `cross`, `lower` alone.
+- **B. An explicit TorusData** (`tunnelTorus`): every box R has top 1 and one excited ratio 2^(-xyz); weight_R(a) = 1 + 2^(-a x y z), i.e. Z(n) = 1 + 2^(-n1 n2 n3 n4), symmetric in all four sides (a two-level tunnelling model, T_R = diag(1, 2^(-xyz))). cross: exponent identity a (R[i:=b] volume) = b (R[i:=a] volume); logConvex: u^a (1-u)^2 >= 0; lower: d = 0 (log of a number >= 1). Seed: s = seed 3 = 2^(-648) > 0, < 1/5041. Applied: `theoremS` for every k, `corollaryS3'` at the non-dyadic side L = 13, and `seedRate 3` = log(2^648/5041)/3 > 0 finite (so the conclusion is a genuine finite positive bound, not the ⊤ case). Also `phi 3 <= 19/100000`, so the pressure alternative is non-vacuous too. Cross-check by hand: the true gap of cube L is L^3 log 2 >= 216 log 2 ~ 149.7, above seedRate = (648 log 2 - log 5041)/3 ~ 146.9. Consistent.
+- **C.** U4 at m_n = 2^(-n), q = 1/2, C = 1; W1 on H = ℂ with B = 1, phi = 1, c = 1, delta = 0 (the test holds since c^-1 B - |phi><phi| = 0).
+
+Memory: `memory_pressure` reported 39 then 36 percent free (five lean processes of another build running), below the 50 percent floor of the row; the build waits for the floor.
+
+Note on W1 notation (added while waiting). Row 1356 section 2 says "Norms of operators are Hilbert-Schmidt norms", and the design row W1 writes the conclusion as "(1 - δ²) Tr B² <= ‖B‖²". Read with ‖B‖ as the Hilbert-Schmidt norm that conclusion would be trivial ((1 - δ²) Tr B² <= Tr B²). The Lean `‖B‖` is the operator norm of `H →L[ℂ] H`, which is mu_0 for B >= 0, so the Lean statement is the meaningful one that Lemma M1 gives. The design text should say "operator norm" there; the Lean file is right.
+
+## Step 6. What instantiating TorusData on the Wilson data needs (for the next rows; not a faithfulness defect)
+
+Under the dictionary of Step 2, a Wilson TorusData at fixed beta needs, for every box R = (x, y, z) with sides >= 3 (not only cubes):
+
+1. **Rectangular transfer operators.** `cube_enlarge` passes through the non-cubic boxes (L, 2a, 2a) and (L, L, 2a), and `log_seed_le_phi` through (2n, n, n) and (2n, 2n, n), so `spectrum` must be the spectrum of T on rectangular slices. The release's transfer operator is `CubicPeriodSublattice.transfer` (cubic slices only), and Z = Tr T^t is in the release only at t = side (design file L246, L250: "Rectangular tori ... ABSENT"). Hand source: Lemma 1.1 of `library/gap-seed-check.md` (row 698). This is design rows W3/W10 and risk R4, already on file; Stage 1 does not change it.
+2. **An eigenvalue sequence with multiplicity** (`ratio`, top counted once) for each such T: needs the spectral theorem for compact positive operators, absent from the release and Mathlib (design L247). Equivalently one may build `BoxSpectrum` from any enumeration of the nonzero spectrum; zeros pad.
+3. **cross**: Z(a; R[i:=b]) = Z(b; R[i:=a]), the exchange of the time axis with axis i on a rectangular torus. Hand: one line (axis permutation preserves the plaquette set and the product Haar measure); not in the release for rectangular tori.
+4. **lower**: Jensen, d = -6 beta (product of the spectator sides). One line by hand; needs log Z >= E_Haar(-beta A).
+5. **logConvex**: no work, by `weight_logConvex` (Step 5).
+6. **The gap** of the Lean `BoxSpectrum` is the gap on the whole gauge-invariant space, flux sectors included (as in the hand Theorem S). Any consumer that wants the neutral-sector gap only (row 1356's P_0) uses the same spectrum with fewer entries; Theorem S applies to it only if the restricted spectra still satisfy `cross`; that is not shown anywhere I read (a sector projection in the time direction is not obviously the image of one in a space direction under the axis exchange), so as it stands the TorusData route gives the full gap, not a sector gap. No Stage 1 statement claims otherwise.
+

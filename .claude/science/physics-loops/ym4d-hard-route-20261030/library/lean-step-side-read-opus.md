@@ -15,3 +15,13 @@ Source: Sussman-Alpoge YM4 Lean release at `~/ym4d-papers/sa-ym4-lean-full`, com
 
 ## Results (written step by step)
 
+### Step 1. The hypotheses (release 3932084a9b82fc79466b4a2faad9ec032b637445, confirmed by `git rev-parse HEAD` in the read-only copy)
+
+All paths below are relative to the release root.
+
+- `YangMills/Construction/TotalDensitiesGiveASystem/TopStatementDefs.lean:12-18`, `structure IsUnitMeshStepParameters (ℓ : TorusLumps.StepParameters)`:
+  `coupling_eq_one : ℓ.coupling = 1`; `side_odd : Odd ℓ.side`; `side_ge : 2 ^ 40 ≤ ℓ.side`; `one_le_baseDepth : 1 ≤ ℓ.baseDepth`; `side_gt : 11 * 2 ^ 12 * ℓ.baseDepth < ℓ.side`; `threshold_mem : ℓ.threshold ∈ Ioo 0 1`.
+- `YangMills/Construction/ClusterExpansionOfAStep/LumpsOnATorus.lean:11-27`, `structure StepParameters`: fields `coupling, side, grid, baseDepth, threshold, κ, κ₁, rt, n₁, E, E₃, derivBound, n₀, y₁, B`. Note: `coupling` here is a lattice-unit (mesh) parameter, set to 1 by `coupling_eq_one`; it is not beta.
+- `YangMills/Construction/ClusterExpansionOfAStep/EffectiveDensityOfAStep.lean:211-230`, `structure StepParameters.Admissible`: `a_ge : 1 ≤ coupling`, `L_odd`, `L_ge : 2 ^ 16 ≤ side`, `κ ≤ 1/8`, `depth_lt : 11 * 2 ^ 12 * baseDepth < side`, `n₀_ge : 4096 ≤ n₀`, `y₁_ge : 1 ≤ y₁`, `range_ge : 2 ^ 16 ≤ clusterRange y₁`, positivity of the rest.
+- So the step-level cluster expansion asks only side >= 2^16 (plus side > 11*2^12*baseDepth = 45056*baseDepth). The 2^40 appears in the top-level structure. Step 2 finds who reads 2^40.
+

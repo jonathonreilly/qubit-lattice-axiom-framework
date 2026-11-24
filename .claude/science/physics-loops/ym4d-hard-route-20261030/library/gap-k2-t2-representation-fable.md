@@ -96,7 +96,7 @@ For a block step the coarse field is a field in the bulk, and there (C4) stands 
 ## 2. Step 2: six candidates tried in this row, each with the line where it stops (written 2026-11-24T15:25Z, date -u)
 
 Each candidate is a representation with a possible check. For each: what holds, what is PROVED here, the
-match on file, and the stop. None survives. Two small lemmas are proved on the way (FIB, NG).
+match on file, and the stop. None survives. One small lemma is new as far as my grep shows (NG); Lemma FIB is repeated from the file.
 
 ### 2.1 Typical-field cube criterion (contraction only on good boundary values, bad ones paid by weights)
 
@@ -118,9 +118,12 @@ candidate is an attack equivalent to a closed one. I did not write a second form
 Idea. H = sum over links of (1 - E_l), E_l the conditional expectation given the other links, is a sum of
 projections with the constants as its kernel. A local gap of the patch operators above a threshold that
 tends to zero with the patch size gives a gap of H (Knabe; Gosset and Mozgunov; Lemm and Mozgunov; recalled).
-A threshold that tends to zero would tolerate slow modes at a boundary. That is weaker than uniform mixing.
+A threshold that tends to zero would tolerate slow modes at a boundary (ARGUED). That is weaker than uniform
+mixing.
 
-**Lemma FIB (the local gap is an infimum over exteriors). PROVED here, six lines.** Let mu have a continuous
+**Lemma FIB (the local gap is an infimum over exteriors). ON FILE: `gap-glue-max.md` lines 241-242 (operators
+that commute with the exterior functions are decomposable; norms and spectra are fibre suprema) and
+`gap-gc-check-opus.md` line 90. Repeated here in the form used, with an elementary proof.** Let mu have a continuous
 positive density on G^L, Lambda a set of links, tau the configuration off Lambda, gamma_tau the conditional
 law on Lambda, H_Lambda = sum over l in Lambda of (1 - E_l), and H^tau the same operator for gamma_tau. Let
 g(tau) be the least value of <h, H^tau h> / Var_tau(h). Then the gap of H_Lambda above its kernel equals the
@@ -140,7 +143,7 @@ advantage, the decaying threshold, is real: a boundary value with slow modes of 
 It stops at (b): the quantity is the spectral gap of a Markov operator on SU(2)^n with n in the thousands,
 uniformly in a continuum of exteriors, and no method evaluates it. Match on file: row 750 (GC1 to GC4; the
 full-L2 form is refuted at weak coupling by the gauge corner, the gauge-invariant form PA_g is open with an
-every-boundary premise). No new statement beyond Lemma FIB.
+every-boundary premise). No new statement: Lemma FIB is on file too.
 
 ### 2.3 The noise map in field space (an exact map on the same lattice)
 
@@ -160,8 +163,8 @@ grad u>, because grad_m u = 2 Hess Phi(grad_l Phi, .) in the factor m. So
 
     d/dt u = Delta u - 2 <grad Phi, grad u> - 2 abs(grad grad_l Phi)^2 - 2 Ric_l(grad_l Phi, grad_l Phi).
 
-The unit 3-sphere has Ric = 2 g, so d/dt u <= Delta u - 2 <grad Phi, grad u> - 4 u. Phi_t is smooth for t > 0
-and the manifold is compact. At a maximum point of u in the fields the first two terms are at most zero. So
+The unit 3-sphere has Ric = 2 g, so d/dt u <= Delta u - 2 <grad Phi, grad u> - 4 u. Phi_t is smooth for t >= 0
+(the Wilson density is smooth and positive) and the manifold is compact. At a maximum point of u in the fields the first two terms are at most zero. So
 the maximum of u decays at the rate 4. For the Wilson rule grad_l Phi_0 is x times the tangential part of
 W_l S_l, S_l the sum of the six staples, of norm at most 6. On the circle Ric = 0. QED
 
@@ -174,9 +177,11 @@ mixture of two Wilson models with a global label has a small one-link score at e
 (ii) What an end class needs is the mixed second derivatives. For a(t) = sup over fields of the row sum of
 abs(grad_l grad_m Phi_t) the equation of the Hessian gives a Riccati inequality of the form a' <= 2 a^2 - 4 a
 + (terms in the one-link gradient). SKETCHED: I did not carry every curvature term. It closes only from
-a(0) below about 2, and the Wilson rule has a(0) = 24 x at the worst field. So the bound holds for x below
-about 1/12 and blows up at t about 1/(48 x) otherwise. This is the Bakry-Emery hand range. (iii) For large t
-the constrained system of N_t is the measure itself, so the step moves no difficulty (Remark END). Relatives
+a(0) below about 2. For the Wilson rule a(0) is at least 6 x (the diagonal term at a field with six
+plaquettes at -1, see 2.4) and at most 24 x (six plaquettes, eighteen neighbours). So the bound closes for x
+below 1/12, cannot close for x above 1/3, and at larger x it blows up at a time of order 1/x. This is the
+Bakry-Emery hand range. (iii) For large t the constrained system of N_t is the measure itself, so the step
+moves no difficulty (Remark END). Relatives
 on file: the soft pin step of rows 861 and 1340; Proposition VIL of row 1442 (heat noise is group-blind as a
 factorization). Lemma NG itself was not found on file (grep for matrix Harnack, Li-Yau, Riccati, heat flow).
 
@@ -210,7 +215,176 @@ evaluated.
 ### 2.6 Migdal-Kadanoff as the exact map
 
 It is exact and finite on a hierarchical lattice, and (a) and (b) hold there with a check of a few Bessel
-ratios. It fails (t1): in four dimensions the recursion flows to strong coupling for U(1) at every coupling,
+ratios. It fails (t1): in four dimensions the recursion flows to strong coupling for U(1) at every coupling
+(recalled),
 and compact U(1) is massless at weak coupling on Z^4. So every bridge from Z^4 to the hierarchical lattice
 must fail for U(1) at a named line, and none on file does (row 770: Tomboulis's interpolation is not a proof).
 
+## 3. Step 3: the scoped negative, with sizes (written 2026-11-24T15:27Z, date -u)
+
+### 3.1 Every sufficient finite statement on file is of one of three kinds
+
+- (K-small) a small number at the scale of the statement: the expansions of rows 1471 and 1353, one-link and
+  block Dobrushin, convexity. Ceilings: 0.0087, 2/9, 0.3609, 1/3 (2.4), 1/4.
+- (K-sup) a supremum over boundary values of a finite region: (W) of row 691, PA_g of row 750, every local-gap
+  form (Lemma FIB). Truth at 2.3 unknown.
+- (K-law) an in-law number of a finite region: (AN) of row 845, the rank-one test and the purity on a finite
+  torus (rows 1353 to 1359), the product defect of 2.5.
+
+I found no fourth kind in this row, and rows 735, 770 and 1116 found none in the literature. This is an
+inventory, not a theorem.
+
+### 3.2 The size of one check at readout 2.3 (all lattice numbers GUIDE)
+
+Correlation length: about one lattice unit at beta 2.3 (`gap-verified-compute-sizing-fable.md` line 290: the
+published values put m a = 4.1 at four lattice units, and its smallest test torus at about 4 x 8^3).
+
+| Kind | Region the statement needs | What must be evaluated | Best exact method on file | Cost |
+|---|---|---|---|---|
+| (K-sup), (W) | a cube of side R with 8 R^3 k <= delta R^4 roughly, k the mean response to one changed boundary link; k of order 1 gives R at least 8 (GUESSED) | a transport cost between two laws on about 23,000 links, uniformly over boundary values in a space of dimension about 3 x 10^4 | none above eight links (rows 1341, 1344) | not bounded by any method on file |
+| (K-law), purity or rank-one test | a torus of about 4 x 8^3 (row 1326 5.1) | two or more partition functions with a small absolute error in the logarithm (row 1326: 3.6e-4 at its window instance) | exact contraction | at least 2^(2 x 256 + 1), about 10^154 (Lemma DIM, row 1326) |
+| (K-law), (AN) | blocks larger than the correlation length (row 845 Section 5 (4)) | mixed moments of block responses along the stationary chain | none | not sized on file; not smaller than the line above |
+| (K-small) | one plaquette to one 2^4 block | Bessel ratios, small tables | hand, or seconds of exact arithmetic | fits a Lean row; false at 2.3 |
+
+What exact evaluation reaches today: one 2^4 block (rows 1425 and 1429: character sums to spin order 42 in at
+most 149 s for one coefficient; row 1341: an eight-link enclosure in 6.5e14 gates).
+
+**The mismatch.** A statement of kind (K-sup) or (K-law) needs a region of side about 4 to 8 at readout 2.3.
+Exact evaluation reaches side 2. The cost of exact contraction grows like 2^(2 L^3). A Q2 step does not
+close the mismatch (ARGUED): one step halves the correlation length, but the image rule is known only through
+the constrained system on fine regions of the same physical size, and computing it to the accuracy of the
+class is again a number of kind (K-sup) or (K-law) at the fine scale.
+
+**Answer to the sizing question of the row.** For every representation I can name, one step's check at beta
+about 2.3 does not fit exact Lean kernel checking (`decide`, `norm_num`), and it does not fit exact rational
+computation on a 16 GB machine: the smallest in-law instance is about 10^154 operations, and the worst-case
+instance has no method. The only checks that fit a Lean row are of kind (K-small), and they are false at 2.3.
+
+### 3.3 T2 against (a), (b), (c), candidate by candidate
+
+| Candidate | (a) closure or end | (b) finite check of known cost | (c) filter | State |
+|---|---|---|---|---|
+| (W) on cubes as an end class at readout 2.3 (Remark END) | yes, given (W): Theorem W of row 691; the step to the sixteen masses is OPEN as a written proof (3.5) | finite in principle (a strict inequality of continuous functions on a compact set); no bound on the cost | passes as a criterion (Remark SOUND); carries no mechanism | fails (b) |
+| Local gap (2.2), pair norm (row 750) | yes in the gauge-invariant form, conditionally (GC4) | same as above (Lemma FIB) | same | fails (b) |
+| (AN) and weights (2.1, row 845) | yes, given (AN): Theorem AG | in-law; (SP-ext) open; no evaluation | fails for Villain U(1) at a named step (Theorem UA there) | fails (b) |
+| Purity or product defect on finite regions (2.5) | not proved in the space directions | 10^154 at least | passes as a criterion | fails (a) and (b) |
+| Noise map with the gradient class (2.3) | closed with no small number (Lemma NG), but the class is not an end class (Remark FI) | trivial | gain zero for U(1), blind to the dimension | fails (a) |
+| Convexity with curvature (2.4) | closed by Schur complements | Fourier arithmetic | empty for U(1) | empty above x = 1/3 |
+| Migdal-Kadanoff (2.6) | exact on the hierarchical lattice only | Bessel ratios | fails (t1) | fails (c) |
+| Tubes of local rules with a typical-field norm (row 1468 4.2) | not proved; no method | not defined | passes | as in row 1468: no first lemma |
+
+**Verdict. T2 is NOT solved.** No representation named here or on file meets (a), (b) and (c) with a check
+that can be run. Each candidate fails at a different clause, and the three that are sound criteria fail at
+the same one: the evaluation of a number of a region several correlation lengths wide, with no small
+parameter.
+
+### 3.4 Is there an obstruction? What is proved and what is not
+
+No obstruction to the existence of a T2 representation is proved here. I do not believe one exists as a
+theorem: (W) at readout 2.3 may be a true statement, and a true strict inequality on a compact set has a
+finite proof in principle. What holds for stated classes:
+
+- Classes whose check is of kind (K-small) in a variable on file (plaquette activities, one-link or block
+  influence, Hessian plus curvature): empty at 2.3. PROVED for convexity (2.4: x below 1/3); on file for the
+  others. For the expansion in the plaquette activity the published strong-coupling series puts the
+  crossover near its radius (GUIDE, recalled), so no better counting of polymers will reach u = 0.51.
+- Classes whose check is exact contraction: excluded by Lemma DIM of row 1326 (10^154), on file.
+- Classes whose check is a supremum over boundary values: no method, and expected false a little above 2.3
+  (row 950, GUIDE). Not refuted by CA-FAIL (1.4).
+- Linear classes (convex in the density): excluded by Remark FI of row 1386, on file.
+
+So the negative is by cost for the sound criteria and by closure for the cheap ones, as row 1468 5.2 to 5.4
+said for its five representations. This row extends that verdict to six more candidates and adds no new
+kind. It does not show that the list of kinds is complete.
+
+**What would reopen T2 (proposed triggers, to add to (R1) to (R3) of row 1442).**
+- (R4) A rigorous method, not sampling, that bounds an in-law number of a block of side 4 or more at cost
+  polynomial in the block volume. Bootstrap bounds on one-point functions are of this type (Kazakov and
+  Zheng, recalled from row 770), but Theorem O with Remark OS of row 1326 says that a certificate of decay
+  needs a patch as large as a seed box.
+- (R5) An exact self-similar map whose constrained system is a product over blocks. The exact 2^4 cube map
+  of row 1341 has a product constrained system and is not self-similar (check 1346). A map with both
+  properties would make every step a one-block computation.
+- (R6) A second small number at readout 2.3 after an exact change of variables (means (m2) of row 735).
+  The numbers at hand there: u = 0.51, the higher character ratios 0.19, 0.056, 0.014 (recalled Bessel
+  values, not recomputed), and e^(-m) of about 0.25 to 0.37 for the decay over one lattice unit, which is
+  known only from numerics.
+
+### 3.5 An open written step, named so that nobody assumes it
+
+If (W) or (AN) were ever evaluated at readout 2.3, the chain still needs: covariance decay with constants free
+of the torus, on the sixteen twisted tori, gives purity at least 457/625. Sketch: change one link of a time
+slice at a time; each change of the log of a mass ratio is the log of a ratio of expectations of a bounded
+local positive function under two boundary values at distance of order the time side; sum over the m^3 links
+of the slice. SKETCHED, not written. Relatives on file: Theorem END-K2 of row 1471 (for the expansion class),
+Lemma BT and Corollaries BT1, BT2 of row 1353. This is not a row to queue now: it has no supplier.
+
+## 4. The next two rows, and their decisive outcomes
+
+**Row 1, cross-provider check of this file.** In order: Lemma NG (the Bochner identity on a product of
+spheres, the term <grad Phi, grad u>, the maximum principle, the factor 1 for U(1)); the one-line Hessian of
+2.4 and the bound x below 1/3; Lemma FIB as repeated; the reading of CA-FAIL in 1.4 against row 1468 (C4);
+the claims that 2.1, 2.2 and 2.5 are covered by rows 845, 750 and 1353 to 1359; the table of 3.2 against rows
+1326 and 1418. Decisive outcome: HOLDS, HOLDS AFTER CORRECTION, or FAILS at the first wrong line. If the
+checker names a representation of means (m2) or (m4) that is not on file, that is the next proof row. If it
+finds that one of the six candidates is not covered by the row I cite, that candidate reopens.
+
+**Row 2, `gap-k2-cube-response-guide` (GUIDE run; decides whether the worst-case kind is false at 2.3).**
+Wilson SU(2) at beta 2.2, 2.3, 2.5 in cubes of side R = 4, 6, 8 with fixed boundary values: (i) typical
+boundary values drawn from a larger torus, (ii) the pinned pi-flux face of row 950, (iii) all boundary links
+equal to 1. Measure the response to one changed boundary link by two coupled heat-bath copies with common
+random numbers: the mean number of plaquettes of the cube whose traces differ by more than a tolerance,
+against R. Decisive outcome, one of two: (a) at some boundary value the response per boundary link grows
+like R^2 or exceeds R/8 at R = 8 for beta 2.3: then (W), PA_g and every local-gap form are false at the
+readout where the chain needs them (GUIDE grade), the worst-case kind is closed on the record, and only
+in-law criteria remain; (b) the response stays below R/8 at all three boundary values: then (W) at 2.3 stays
+a possible true statement with no method, and nothing is closed. The run cannot prove (W). Cost: minutes
+(row 936 measured about 13 ms per sweep at 3,500 sites; recalled from the worker's notes). It needs 50 percent free memory; this session had 37 to 40.
+
+Not proposed: a proof row on T2. There is no first lemma for it. The row that can still lower the count of
+certified steps is `gap-k2-entry-hand-radius`, already named by row 1471.
+
+## 5. Summary of labels, repo search, credits
+
+| Item | Label |
+|---|---|
+| Remark SOUND (a sound finite criterion passes the filter as a criterion; the filter tests the proof of (a)) | PROVED, one line |
+| Remark END (a criterion of type (W) at readout 2.3 is an end class; a step is not needed there) | ARGUED from rows 691 and 1471 |
+| 1.4: CA-FAIL does not refute (W) on cubes | READ; agrees with row 1326 4.1 |
+| Lemma FIB | ON FILE (`gap-glue-max.md` 241-242), repeated with proof |
+| Lemma NG (one-link gradient of the noise-map rule decays like e^(-2t); factor 1 for U(1)) | PROVED here by hand, unchecked; not found on file |
+| Riccati bound for the Hessian row sum under the noise map | SKETCHED |
+| 2.4: Hess Phi + Ric positive at every field only for x below 1/3 | PROVED, one line |
+| 2.1, 2.2, 2.5, 2.6 | covered by rows 845, 750, 1353 to 1359, 770; no new statement |
+| Sizes of 3.2 | GUIDE and GUESSED as marked; costs from rows 1326, 1341, 1418, 1425 |
+| Verdict of 3.3; triggers (R4) to (R6) | the verdict is an inventory of failures, not a theorem; the triggers are proposals |
+| A T2 representation; an obstruction to one; (W) or (AN) at readout 2.3; the step of 3.5; T1; (BASE-K2); the seed; the mass gap | OPEN |
+
+Repo search (rule 0a, and "before you call a statement new"). `library/open-core.md`: no hit for chessboard,
+Knabe, frustration-free, weak mixing, Brascamp, Pechersky, Lyapunov, direct integral, Riccati (grep counts
+all zero). FINISH rows and `library/`: the hits are the rows cited in Sections 1 and 2. Not searched: main,
+PR #10114 and the other PR branches (row 1468 Section 9 searched them for the block step two hours before
+this row and found no step at order-one coupling). The Sussman-Alpoge repository was not opened in this row:
+the question is at order-one coupling, where the release has no statement (rows 1464, 1470); I relied on
+those reads.
+
+Credits. T. Balaban: the small-field and large-field scheme that the weak part needs. E. T. Tomboulis: the
+Migdal-Kadanoff interpolation (with the objection of Ito and Seiler). R. Kotecky and D. Preiss: the expansion
+criterion of the end class. E. Sussman and L. Alpoge, with Claude and Codex as authors of their text: the
+contour mean and the kernel that Q2 copies, and the release whose floor rows 1464 and 1470 read. R. Dobrushin
+and S. Shlosman: the cube criterion; Dobrushin and Pechersky; Hairer and Mattingly: weights for bad states.
+Knabe; Gosset and Mozgunov; Lemm and Mozgunov: local-gap thresholds. Bakry and Emery; Brascamp and Lieb;
+Bochner; Li and Yau; Hamilton: the curvature calculus of 2.3 and 2.4. Finner: the inequality named in 2.5.
+Frohlich, Simon and Spencer: the order used by CA-FAIL. In the lane: Claude Opus 5.5 (rows 845, 1072, 1470),
+Codex gpt-6-astra (row 750), Claude Fable 5.2 (rows 691, 1326, 1386, 1442, 1468, 1471), Codex gpt-6-luna (row
+1116). Everything recalled from the literature in this row is marked recalled and was not re-read.
+
+Not done in this row: no numeric job (free memory 37 to 40 percent, below the 50 percent rule); no Lean; no
+code; no commit or push; the files of rows 1460, 1461 and 1466 were not opened; the Riccati inequality of 2.3
+was not derived in full.
+
+Status: done 2026-11-24T15:28Z (date -u), author only (Claude Fable 5.2 high, Mac mini worker 1), unchecked.
+
+## 6. Result
+
+RESULT: Row 1474 (Claude Fable 5.2 high, Mac mini worker 1; author only, checked by no one; hand arguments, no numeric run because free memory stayed at 37 to 40 percent, no Lean, no code, nothing committed). T2 is NOT solved, and no obstruction to its existence is proved. (1) Exact form: for the stretch from readout 2.3 to the end class a block step is not needed where an end criterion holds (Remark END), so T2 there is a finite criterion for decay at readout 2.3 that can be evaluated; a sound criterion passes the filter (t1) to (t6) by itself, and the filter tests the proof of its sufficiency (Remark SOUND). (2) Six candidates tried, none survives: the typical-field cube criterion with weights (covered by row 845, Theorems AG and LW, open (SP-ext)); the local-gap form of Knabe for the heat-bath generator (a worst-case criterion over exteriors by Lemma FIB, which is on file in `gap-glue-max.md`; covered by row 750); the noise map e^(t Delta) in field space (exact, same lattice, keeps the sixteen masses; Lemma NG, PROVED here and not found on file: the supremum of the one-link gradient of the rule decays like e^(-2t) with no small number, by the Ricci curvature 2 of SU(2), factor 1 for U(1); but a small one-link gradient is not an end class by Remark FI of row 1386, and the Hessian obeys a Riccati bound that closes only in the hand range, SKETCHED); convexity with curvature (closed by Schur complements, empty for x above 1/3, PROVED in one line); the L2 product defect of block tensors (the rank-one test of rows 1353 to 1359 in space; in-law cost); Migdal-Kadanoff (fails (t1)). (3) Sizes at beta about 2.3 (GUIDE): every sound criterion is a supremum over boundary values or an in-law number of a region of side about 4 to 8, exact evaluation reaches side 2, the smallest in-law instance costs at least 10^154 operations (Lemma DIM of row 1326) and the worst-case instance (a cube of side about 8, 23,000 links) has no method; so one step's check fits neither Lean kernel checking by `decide` or `norm_num` nor exact rational computation on 16 GB; only checks with a small number fit, and they are false at 2.3. (4) Correction to the record: CA-FAIL refutes strong mixing over all volumes, not the cube criterion (W) of row 691; (W) at 2.3 may be true and has no method (agrees with row 1326 4.1; row 1468 (C4) stands for block steps as argued). OPEN: a T2 representation, (W) or (AN) at readout 2.3, the written step from covariance decay on the sixteen tori to purity, T1, (BASE-K2), the seed, the mass gap. Proposed triggers: (R4) a rigorous in-law method of polynomial cost that is not sampling, (R5) an exact self-similar map with a product constrained system, (R6) a second small number at readout 2.3. Next rows: a cross-provider check of this file (Lemma NG first); `gap-k2-cube-response-guide`, a GUIDE run of the boundary response in cubes of side 4 to 8 at beta 2.2 to 2.5 (growth like R^2 at the pi-flux face closes the worst-case kind at 2.3 on the record; a bounded response closes nothing); no proof row on T2 is proposed.

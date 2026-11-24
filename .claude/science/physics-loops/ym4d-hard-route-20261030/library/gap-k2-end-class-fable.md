@@ -4,7 +4,7 @@ lease_until: 2026-11-25T02:37Z
 # gap-k2-end-class-fable (row 1471): the end class (END-K2) with numbers
 
 Started 2026-11-24T14:37Z (date -u), Mac mini worker 1, Claude Fable 5.2 medium, pinned at bf0e5e0ec.
-Status of this file: IN PROGRESS. Nothing below is checked by a second party.
+Status of this file: COMPLETE for row 1471 (sections 0 to 9). Nothing below is checked by a second party.
 
 ## 0. Plan (written first, per the save protocol)
 
@@ -411,3 +411,100 @@ criterion is sup_l [sum_{X contains l} (e^(sup abs Psi_X) - 1) e^((2 alpha_f + r
 and the image norm is at most 72 alpha_f/lambda. Not written out; the constants are about 40 times worse than
 the typed count of Theorem EN. This is the form a chain needs, since after a certified step the density is
 not a Wilson weight.
+
+## 6. Step 6: the count of entry steps, the repo search, credits
+
+### 6.1 How many certified entry steps (GUIDE; uses row 1468 5.1, not derived here)
+
+Row 1468 5.1 gives, as GUIDE, the fundamental character coefficient under one step of side 2: c -> about c^4,
+0.51 (beta 2.3), 0.07, 2e-5. In terms of an effective Wilson coupling 4c: 2.3, 0.28, about 1e-4. Against the
+numbers of this file:
+
+| After | Effective coupling | Against the entry (5.3) | Against the class directly (a Wilson rule c'(1 - Re V_p) has weighted norm 12 e^(4r) c'/(1 + 2 theta x)) |
+|---|---|---|---|
+| 0 steps | 2.3 | far outside | far outside |
+| 1 step | 0.28 | 32 times the ceiling 0.0087 of the method; 11,000 times beta_E of E1 | 0.28: norm 9.9 at r = 0.7; outside by 1,800 |
+| 2 steps | about 1e-4 | 4 times beta_E of E1 (ratio 1); equal to beta_E of E3 (ratio 0.09), marginal; inside E2 | norm 0.0035 at r = 0.7 against eps_E = 0.0054: inside, by a factor 1.5 only |
+
+**Count: two certified entry steps** (2.3 to about 0.28, and 0.28 to about 1e-4), then the hand end: either
+the class directly (margin 1.5, GUIDE) or one hand Q2 step of weak strength in the tube form of 5.3 (SKETCHED).
+The first certified step is an order-one step (no method on file, row 1468 5.4). The second starts at 0.28,
+which is 1.3 times the on-file hand range 2/9 of the one-link criterion (rows 785, 861, 1340) and 32 times
+the ceiling of the expansion used here. So the count is 2 with this file's constants, and it becomes 1 if a
+hand theorem for the tube form of the entry reaches a fine coupling of 0.3.
+Limits of this count: c -> c^4 is a leading-order rule for the plaquette coefficient, not derived for Q2 at
+kappa = a x; after a step the density is not a Wilson weight; nothing bounds the other terms of the image.
+
+### 6.2 Repo search (rule "Repo first") and prior statements
+
+- This folder: Section 2 (no statement of (END-K2) for a rule in a weighted norm; relatives listed there).
+- origin/main, bare depth-1 blobless fetch into a scratch folder under /tmp, grep of its 67 ym4d text files
+  for Kotecky, polymer expansion, strong-coupling expansion, Osterwalder: hits in research/ym4d/gates/ag1-gate.md
+  L54 (a Kotecky-Preiss induction, Lemma 3, in the existence chain), library/tp1.md L154 and L627, the
+  registry and the assembly. All are small-field steps of the existence chain. No end class, no purity, no
+  twisted masses. PR branches were not searched in this row (row 1468 Section 9 searched PR #10114 for block
+  steps at order-one coupling and found none).
+- The Sussman-Alpoge repository was not read in this row. Their text enters through row 1468 only (the
+  contour mean and the bond kernel, of which Q2 is the small-side form).
+
+### 6.3 Credits
+
+Osterwalder and Seiler: the strong-coupling expansion of lattice gauge theory, of which Theorems END-K2 and EN
+are abstract forms. Kotecky and Preiss: the convergence criterion (cited theorem). Balaban: the block
+averaging programme and the large-field requirement that the weighted norm of row 1468 answers (cited through
+row 1468; nothing of his is ported here). Sussman and Alpoge, with Claude and Codex as authors of their text:
+the contour mean and the bond kernel (`kernelImage`, `contourMean`) that define Q2. On file: Theorem END-D
+(row 1353), Theorem E (row 1354), Theorem BS (row 1340), the design and Lemma TW (row 1468), Fact PUR (rows
+1373, 1461), Theorem 1 of `gap-seed-sc.md` (row 701).
+
+## 7. The next two rows, and their decisive outcomes
+
+**Row 1, `gap-k2-end-class-check` (cross-provider, line by line).** In order: Lemma KP-F (the rooted-sum
+induction; the use of the Kotecky-Preiss theorem with the two functions and the ghost polymer); 4.2 (a)-(c)
+(C_z as a centre gauge map on a set of extent below m/2; independence on one period); Theorem END-K2 Step 3
+(the two-to-one cover for norm(C) < v/2, including the case v > m) and Step 5; Lemma W; the counts of 5.1
+(72 links, 8, 15, 15, 432) by a short enumeration; Theorem EN (the coarse set X(C), items (1)-(5)); the
+arithmetic of 4.4 and 5.3. Decisive outcome: HOLDS, HOLDS AFTER CORRECTION with each repair, or FAILS at the
+first wrong line. If Step 3 fails, v_E changes; if a count fails, beta_E changes; if 4.2 (a) fails, the rule
+class needs full gauge invariance stated on the cover. The check also needs row 1469's verdict on Lemma TW.
+
+**Row 2, `gap-k2-entry-hand-radius` (proof row; decides the count 2 or 1).** Statement: the tube form of
+Theorem EN (5.3, last paragraph) for a fine rule within a stated radius of the Wilson rule at coupling up to
+0.3, with a strength kappa of the author's choice, by a method with a larger radius than (CR): a Dobrushin
+condition for the fine system given the coarse field (the one-link criterion reaches 2/9 without the
+kernel; the kernel adds at most kappa per coarse bond on 72 links), with the image rule from the
+Dobrushin-Shlosman or Bertini-Cirillo-Olivieri construction, or the typed count with a character expansion.
+Decisive outcome, one of two: (a) a radius of at least 0.3 with a stated tube: then the entry needs ONE
+certified order-one step from 2.3, and the tube of that step's target is known; (b) the radius stays below
+0.05: then two certified steps are needed, the second at 0.28 with no hand method, and the entry is as far
+as T2 of row 1468.
+
+Optional third row (small Lean row): the constants of 4.4 and 5.3 and the algebra of Theorem END-K2 Step 5 as
+rational inequalities (with rational bounds for the exponentials), in the same file as C1 of row 1468.
+
+## 8. Summary of labels
+
+| Item | Label |
+|---|---|
+| Lemma W (the weighted norm gives supremum bounds at a smaller rate, factor M) | PROVED here, unchecked |
+| Lemma KP-F (expansion for function-valued elements under (CR)) | PROVED here given the published Kotecky-Preiss theorem (cited, not re-derived) |
+| 4.2 (rules on twisted tori; twist-blind activities off the time wrap) | PROVED here, unchecked |
+| Theorem END-K2, with eps_E = alpha e^(-alpha)/M and (E-v) | PROVED here given Lemma KP-F, unchecked |
+| Table 4.4 (eps_E = 0.0104, v_E(m) = 24 log m + 25 at r = 1, theta x <= 2.3; least v = 165 at m = 512 v) | hand arithmetic, unchecked |
+| Counts of 5.1 (72, 8, 15, 15, 432) | PROVED by hand, unchecked; no enumeration run |
+| Theorem EN and Corollary EN-K2 (entry of the Wilson weight) | PROVED here given Lemma KP-F and Lemma TW (row 1468, unchecked) |
+| beta_E = 1/40000 at kappa = beta; 1e-4 at kappa = 9e-6; 0.002 at kappa = 3e-15; ceiling 0.0087 | hand arithmetic, unchecked |
+| Tube version of the entry | SKETCHED |
+| The count "two certified entry steps" | GUIDE (from row 1468's c -> c^4) |
+| "A factor 100 at most from better counts" | GUESSED |
+| The port of Theorem E, END-D, BS | not a port: E and BS have other classes; END-D is the window form and fails for bond-counted sizes at (D1) |
+
+Numeric jobs: none run. Free memory was 38 percent at the one reading in this row and "System-wide memory free percentage: 40%" at the end
+(read by memory_pressure in this step), below the 50 percent rule. All numbers are by hand. No code was
+written or committed. This file is the only file written.
+
+Finished 2026-11-24T14:51Z (date -u, read in this step).
+
+## 9. Result
+
+RESULT: Row 1471 (Claude Fable 5.2 medium, Mac mini worker 1; author only, checked by no one; hand proofs and hand arithmetic, no numeric run because free memory was 38 percent, no Lean, no code). (END-K2) is PROVED with numbers, given the published Kotecky-Preiss theorem: for the weighted norm of row 1468 4.2 (size = number of bonds; only translation covariance and centre gauge invariance are used), with alpha, t > 0 and q = r - 2 alpha - t > 0, eps_E = alpha e^(-alpha)/M, M = sup_n (1 + 3 theta x n) e^(-q n), every family that realizes a rule of norm at most eps_E on the sixteen twisted tori has log(purity) >= -3 eta - 16 alpha m^3 v e^(-t v/2), so purity >= 457/625 at eta <= 1/100 and v >= v_E(m) = (4/t)(3 log m + log(64 alpha/(0.283 e t))); at r = 1, theta x <= 2.3: eps_E = 0.0104, v_E(m) = 24 log m + 25, least time side 165 at the shape m = 512 v of Theorem K2; the eight twisted masses are equal up to exp(2 eta + 8 alpha m^3 tau e^(-t v/2)). The weighted norm does give the supremum bounds (Lemma W: factor 1 + 3 theta x size(X), paid by part of the rate), so no repair is needed; eps_E is of order r^2/(35 theta x), and the class is a small-coupling class only for x of order one. Theorem END-D of row 1353 is the window form of the same theorem and does not apply to bond-counted sizes; Theorems E and BS are for other classes and were not ported. Entry, PROVED given Lemma TW of row 1468 (unchecked): Theorem EN, one Q2 step maps the Wilson weight into the class when 21A + 15B <= a_p and 432A + 15B <= a_c with a_c/lambda <= eps_E; beta_E = 1/40000 at strength kappa = beta (r = 0.7, eps_E = 0.0054), 1e-4 at kappa = 9e-6, 0.002 at kappa = 3e-15, and the method's ceiling is 0.0087 at every strength; at strength 0 the entry is the purity statement itself, so the step moves no difficulty. Count (GUIDE, from row 1468's c -> c^4): a Q2 chain needs TWO certified entry steps from beta about 2.3 (to about 0.28, then to about 1e-4), and one if a hand tube theorem for the entry reaches 0.3. OPEN: the check of this file and of Lemma TW; the tube form of the entry (SKETCHED); both certified steps (no method, as in row 1468); (BASE-K2), T1, T2, the seed, the mass gap. Next rows: a cross-provider line-by-line check of this file; gap-k2-entry-hand-radius (a hand radius of at least 0.3 for the tube entry makes the count one, below 0.05 leaves it at two).

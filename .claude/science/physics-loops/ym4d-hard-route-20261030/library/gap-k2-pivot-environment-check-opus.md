@@ -183,3 +183,76 @@ near 1/2, as in Fact PUR of row 1468 3.1 with s near 1.
   conditioning on the pivots"; the direct computation conditional on V, as here, is the valid route; the
   law of (U, h, s, l, r, b) is unchanged by the R integration, since that integration is a constant.)
 
+## 6. Is the pure Wilson family really outside the counterexample? (1475 line 171)
+
+**Outside the construction: yes. Outside the conclusion: not proved; that is the open consumer itself.**
+
+- Construction. The Wilson family starts at Q_e = 0, and its blocked matrices (1348 lines 13-28) are
+  built from open-box Wilson laws and relative Haar links. It has no environment variable with an exact
+  symmetry like F that commutes with the transfer operator and keeps the matrix spectrum visible. So the
+  member of 1475 is not in that family, and neither failure in 1475 (conditional mixing, purity) is
+  shown for Wilson. 1475's scope sentence is correct.
+- Conclusion. The purity obstruction uses only the sixteen masses (section 4). So for ANY starting
+  member X and ANY chain of mass-preserving steps, entry into END-K2 with eta <= 1/100 implies that X's
+  own purity at the fine sizes satisfies P_X >= 457/625. For Wilson at beta = 23/10 this is (PUR-io) of
+  row 1468 3.1 at those sizes, which by Fact PUR gives the seed. Row 1471 lines 394-400 already says
+  the same thing for the strength-zero entry ("the purity statement itself"). The point is not new; I
+  cite it.
+- What is proved for Wilson does not separate the two cases. At fixed m the Wilson neutral transfer
+  operator has a strictly positive kernel, so by Jentzsch's theorem its top eigenvalue is simple, and
+  P_W(v) -> 1 as v -> infinity. **The member of 1475 has the same property**: its kernel L is strictly
+  positive, and its F-odd top eigenvalue lies strictly below the F-even one at each fixed m. The two
+  differ only in whether the neutral gap is uniform in m at the aspect ratio m = 512 v, i.e. in the
+  mass-gap question. Physics expectation, not evidence: at beta = 2.3 with time side v >= 165 the SU(2)
+  Wilson theory is deep in the confined, zero-temperature regime with a unique vacuum, so P_W is
+  expected near 1. No proved statement on file gives this.
+- Consequence for a proof on the narrower family (GUIDE). Any such proof has to use a property of
+  Wilson that fails for an ordered environment: uniform-in-m non-degeneracy of the neutral top
+  eigenvalue, or a local criterion that implies it. 1475's next row 1 (interface transmission, row-sum
+  criterion < 1) does reject the member of 1475: its same-plane interface reads have pairwise
+  correlation >= 371/432, so seven exits give a row sum above 1. So the guessed criterion is aimed at the
+  right property. Turning a passed test into a mass bound is still row 2 (gluing).
+
+## 7. Verdict
+
+**HOLDS.** No line is wrong. No repair is needed. Four reading notes, none of which changes a claim:
+
+1. The 13/432 bound for a contractible separator covers both sites. It counts k crossed bonds where
+   k/2 would do, so it has a factor 2 to spare (section 2).
+2. The twist-compatibility paragraph (1475 line 150) is correct but not used. The refutation needs only
+   the sixteen numbers, because END-K2 (b) applies to any realizing family (section 4).
+3. "The 1/100 wrap budget fails" is shorthand. The rigorous form is: eta <= 1/100 and (E-v) give, by
+   END-K2 (b), P >= 457/625 > 41/81. A bulk-pressure fit delta and the wrap error eta are different
+   quantities (section 4).
+4. In the robustness step, compute the covariance directly, conditional on the pivots V, with
+   |E[f~ | V]| <= 2b. That route is valid, and it gives 371/432 - 4b - 4b^2 > 5/6 (section 5).
+
+| Claim (1475) | Lines | Verdict |
+|---|---|---|
+| member of 1348 line 30, sizes (2) at B = 2, gauge covariance | 21-60 | HOLDS |
+| 0 < p < 1, edge integral sqrt(A) e^{J eta}, read (2) | 25-58 | HOLDS |
+| w_e > 22, FK closed-edge bound 12^-k | 64-70 | HOLDS |
+| conditional covariance >= 371/432 > 5/6, down to pivots | 72-98 | HOLDS |
+| Z_F^z <= d Z^z, d = (16/9) m v 4^-m <= 1/9 | 100-112 | HOLDS |
+| transfer kernel, traces with C_z and F | 114-136 | HOLDS |
+| P <= (1+d^2)/2 <= 41/81 < 457/625 | 138-146 | HOLDS |
+| mass invariance with twists; forest remark | 150-152 | HOLDS (twist part not needed) |
+| delta > 1/6, delta > 1/10, relaxed-set distance exact | 154-163 | HOLDS |
+| continuous-law robustness, covariance > 5/6 | 165-169 | HOLDS |
+| Wilson family outside | 171 | outside the construction; the conclusion for Wilson is (PUR-io), open |
+
+Provenance: checker Claude Opus 5.5 high (Anthropic). The author was gpt-6.2-astra max (OpenAI), so
+the provider differs. My derivations are by hand. For the FK coupling, the Peierls counts and the
+trace inequality they follow the author's route, because these steps are short and standard. They are
+not an independent derivation in the sense of the working rules. The arithmetic was redone exactly by
+hand. No numeric run (39 percent free memory). No Lean.
+
+Credits: Tadeusz Balaban (the block-average structure behind 1348's pivot); Roland Kotecky and David
+Preiss (the polymer theorem behind END-K2 via Lemma KP-F of row 1471); Ethan Sussman and Levent Alpoge,
+with Claude and Codex (the two-slice transfer GL8, outline 2313-2335; the positivity argument AM2,
+2775-2795; the mass-versus-law distinction, outline 394-416, revision 31a47c543775). The Fortuin-
+Kasteleyn / Edwards-Sokal coupling and the Peierls contour count are classical tools used by 1475.
+
+Finished 2026-11-24T16:06Z (date -u).
+
+RESULT: Row 1484 (Claude Opus 5.5 high, cross-provider check of row 1475, by hand, no numerics, no Lean): HOLDS. The beta = 23/10 member belongs to row 1348's iterable class (line 30, sizes (2) at B = 2). Its conditional edge-matrix covariance is at least 371/432 > 5/6 at every separation, down to the pivots. Its purity is at most (1+d^2)/2 <= 41/81 < 457/625 on m = 512 v, even v >= 4. The sixteen masses are invariant under the pivot, centre-sign and Q2 steps; the refutation needs only those numbers, so twist compatibility, though true, is not used. delta > 1/6 and delta > 1/10 hold. Continuous-law robustness holds (eps = 2^-64, radii 1/32 and 13, covariance > 5/6). Four reading notes; no repair. The pure Wilson family is outside the construction but not provably outside the conclusion. For Wilson, entry by any mass-preserving chain is equivalent to (PUR-io) at the starting sizes, as row 1471 already noted. Finite-m Perron-Frobenius does not separate the cases, because the member of 1475 has it too. Open: uniform-in-m non-degeneracy of the Wilson neutral vacuum (the consumer itself), and 1475's next rows (interface transmission, which correctly rejects the member, and gluing).

@@ -86,3 +86,327 @@ Four facts are new since then, and they fix the frame of this design:
    against the coupling. So a band step has block side at most of order the coupling.
 
 - 14:20Z (date -u) Sections 1 and 2 written. Next: Section 3, the consumer in exact form and the map.
+
+## 3. The tool, part 1: the consumer in exact form and the block map
+
+### 3.1 The consumer: sixteen masses
+
+Fix the release witnesses (odd block factor b, calibration level g_0) as in check 1453. Fix a side l that is a
+multiple of 1024. At cutoff K put n = l b^K and u = n/512 (this is 2w of row 1461). T is the Wilson transfer
+operator at beta_K on the spatial torus of side n, P_0 the projector on the centre-neutral gauge-invariant
+states, C_z (z in Z_2^3) the centre translations. Put
+
+    Z^z(v) = Tr(C_z T^v),   Z_+(v) = (1/8) sum_z Z^z(v) = Tr(P_0 T^v),   P_K = Z_+(2u) / Z_+(u)^2.
+
+Z^z(v) is the Wilson partition function on the torus n^3 x v with the temporal twist z (the lane's flux
+formalism, `gap-flux-exercise.md` 3.0-3.1). So P_K is a function of sixteen masses: two tori, eight twists.
+
+**Fact PUR (on file: rows 1373, 1461; check 1465; the proof is three lines, repeated here). PROVED.**
+P_K >= 457/625 implies s_K(u) <= 4/21, the seed of (M-io-exists) at this K.
+
+Proof. Let r_i in [0, 1] be the ratios of the neutral eigenvalues to the vacuum eigenvalue, s = sum of r_i^u
+over i > 0. Then P_K = (1 + sum r_i^(2u)) / (1 + s)^2, and sum r_i^(2u) <= min(s, s^2). So P_K <= 1/(1 + s),
+which gives s <= 168/457 < 1. Also P_K <= (1 + s^2)/(1 + s)^2. This function decreases on [0, 1] and equals
+457/625 at s = 4/21. QED
+
+So the consumer is: **(PUR-io) P_K >= 457/625 at infinitely many K, for one l and one g_0.** By rows 1461, 1462
+and 1465 this gives a gapped calibrated limit with rate at least (2/l) log(2^18/5041).
+
+Twisted fields. For the twist z and time side v, the field space F^z(n, v) is the set of link fields W on
+(Z/n)^3 x Z with W(x + v e_0, mu) = (C_z W)(x, mu). Here C_z multiplies by -1 the links (x, i) with z_i = 1 and
+x_i = 0. The measure is Haar on one period. A density on the twisted torus is a function on F^z(n, v).
+
+### 3.2 The block map Q2
+
+**Definition (the map; a small-side, plain form of the release's kernel; credit Sussman and Alpoge with Claude
+and Codex for `kernelImage`, `contourMean` and the bond kernel).** Block side 2. The fine lattice has even
+sides. The coarse site y is the fine site 2y (corner bases, one base choice). For a coarse bond c = (y, mu)
+and a pair e = (xi, pi), xi in {0,1}^4, pi a permutation of the four axes, the contour of e is the lattice
+path: the axis path from 2y to 2y + xi (axes in the order pi), then two steps in direction mu, then the
+reverse axis path from 2y + 2 e_mu + xi to 2y + 2 e_mu. The contour mean is the quaternion
+
+    M_c(W) = (1/384) sum over the 16 x 24 pairs e of hol_W(e),   norm(M_c) <= 1.
+
+For a strength kappa > 0 the kernel and the image of a density D are
+
+    K_kappa(W, V) = prod over coarse bonds c of exp(kappa Re(M_c(W) V(c)^(-1))) / Zc(kappa norm(M_c(W))),
+    Zc(t) = integral over SU(2) of exp(t Re g) dg,
+    (Q2_kappa D)(V) = integral of D(W) K_kappa(W, V) dW.
+
+This is the plain kernel of row 1460 3.1 at L = 2 with corner bases in place of cell centres. The release's
+own kernel has odd side, centred bases and field-dependent base choices; its hypotheses ask for side at least
+2^40 (row 1464). Nothing below needs the release's theorems for Q2. Side 3 with centred bases is the same
+design with 81 sites to a block; I choose side 2 because the cost of every finite part grows with the block.
+
+Why this map (each line is a requirement, with its source):
+
+- Exact and defined at every fine field: the kernel is a probability density in V for every W. A hard
+  delta map on a normalized mean is not defined where the mean vanishes.
+- Self-similar: hypercubic lattice to hypercubic lattice. The exact 2^4 cube map of row 1341 is not
+  self-similar (check 1346: a retained link keeps all six plaquettes).
+- Bounded transporter self-energy: Theorem LOSS of row 1460 needs L at most of order the coupling. A
+  straight product of two links (decimation) is also short, but iterated decimation is a thin line of
+  length 2^k after k steps, which is the LOSS case again. Iterated averaging makes tubes whose width grows
+  with their length. SKETCHED (the Gaussian computation of Proposition GA below is the abelian form).
+- Kernel strength: by Corollary LD-2 of row 1460, the image has Hessian at most kappa at every coarse field.
+  So a step that returns a coupling x' needs kappa at least of order x'. I take kappa_k = a x_k with one
+  constant a (the release takes a = 1 at unit mesh).
+
+**Lemma TW (twist-wise exact carry). PROVED here by hand, unchecked.** Let n and v be even, at least 4. For W
+in F^z(n, v) define C'_z on coarse fields as C_z on the lattice of side n/2. Then M_c(C_z W) = M_c(W) for every
+coarse bond c, except M_c(C_z W) = - M_c(W) when c = (y, i) with z_i = 1 and y_i = 0. Hence
+K_kappa(C_z W, C'_z V) = K_kappa(W, V), the map Q2_kappa sends densities on F^z(n, v) to densities on
+F^z(n/2, v/2), and it keeps the mass: the integral of Q2_kappa D over one coarse period equals the integral of
+D over one fine period. The same holds on the periodic tori.
+
+Proof. Fix i with z_i = 1. C_z changes the sign of hol_W(e) by (-1)^N, N the number of traversals by e of
+links (x, i) with x_i = 0. Case mu = i. The first leg uses the i-link at x_i = 2 y_i if and only if xi_i = 1.
+The straight part uses the i-links at x_i = 2 y_i + xi_i and 2 y_i + xi_i + 1. The last leg uses the i-link at
+x_i = 2 y_i + 2 if and only if xi_i = 1. If y_i = 0: for xi_i = 0 the straight part uses x_i = 0 once; for
+xi_i = 1 the first leg uses it once and nothing else does. So N = 1 for all 384 contours. If 2 y_i = n - 2:
+for xi_i = 1 the straight part uses the link at x_i = n = 0 and the last leg uses the link at x_i = 0 again, so
+N = 2; for xi_i = 0, N = 0. For other y_i no link at x_i = 0 occurs. Case mu different from i. Only the legs
+move in direction i. Both use the i-link at x_i = 2 y_i, if and only if xi_i = 1. So N is 0 or 2. This gives
+the sign rule. The kernel depends on W and V through Re(M_c V(c)^(-1)) and norm(M_c), which the joint sign
+change keeps. So the kernel is well defined on one period of the twisted torus, and it is a probability
+density in V for each W. Fubini gives the masses. QED
+
+Remarks. (i) The lemma uses that the slab of C_z lies on a block boundary. (ii) The release's `kernelImage`
+on tori with sides divisible by b carries the sixteen masses in the same way if its contours stay in the two
+cells of their bond and its hot lumps are functions of plaquettes. SKETCHED: I did not read `usedContours`
+and `IsBaseChoice` line by line for this; row 1457 records that the release has no twisted or rectangular
+tori. (iii) The image of a reflection-positive density under Q2 is not reflection positive in general (the
+contours of a bond that crosses a mirror are not mirror images of themselves). The chain does not need it: it
+reads the sixteen masses only.
+
+### 3.3 Theorem K2 (soundness of a chain to (PUR-io)). PROVED here (one line, the form of Proposition CH)
+
+Let l = 512 * 2^N * v_E with integers N >= 0 and v_E >= 4. Level k, 0 <= k <= N, has the tori of spatial side
+l_k = l / 2^k and time sides v_k = l_k/512 and 2 v_k, with the eight twists. A level-k family is a choice of a
+positive integrable density on each of the sixteen twisted tori of level k. Let C_0, ..., C_N be sets of
+families, C_k of level k, and kappa_0, ..., kappa_(N-1) positive numbers. Assume:
+
+- (BASE-K2) for infinitely many K, the family obtained from the Wilson weights at beta_K on the sixteen tori
+  of side n = l b^K by K steps of the release's `kernelImage` lies in C_0;
+- (STEP_k) Q2 with strength kappa_k, applied to each of the sixteen densities, maps C_k into C_(k+1);
+- (END) every family in C_N has purity at least 457/625.
+
+Then (PUR-io) holds, hence (M-io-exists). If (BASE-K2) holds for every late K, then (M-neutral-all) holds.
+
+Proof. Every map keeps each of the sixteen masses (the release's kernel is a probability kernel; Lemma TW and
+Remark (ii) for the twists). The purity is a function of the masses. QED
+
+What Theorem K2 does not give. As a bare existence statement it is equivalent to the target: take for C_k
+the orbit of the Wilson data. So its content is in how the classes are defined. A class must be given by
+bounds that do not name the orbit, and each inclusion must be provable at one scale. Section 4 states this.
+
+- 14:26Z (date -u) Section 3 written (consumer, Q2, Lemma TW, Theorem K2). Next: Section 4, the carried class
+  and the one-step statement.
+
+## 4. The tool, part 2: what is carried, and the exact statement of one step
+
+### 4.1 Requirements on a class (each with its source)
+
+| # | Requirement | Source |
+|---|---|---|
+| (C1) | Torus-free. A member is a local rule that gives the density on all sixteen tori (and on larger ones), with one constant per site. Then the purity can be read at the end. | Theorem K2; Proposition CH |
+| (C2) | Quasi-local: the rule has summable range. This excludes a global label. | Remark FI of row 1386; requirement (i) there |
+| (C3) | Not an alternative-II class: at the end the eight twisted masses are equal up to small factors. The end class is of the kind (10*) or END-D, not (10) or (11). | row 1354, Corollary B1 and Theorem E; row 1353 |
+| (C4) | Typical-field form above the hand range: no unweighted supremum over all coarse fields. | CA-FAIL (row 1072: uniform mixing over boundary values fails above beta = 1.0109); row 950 (GUIDE: at a pi-flux slice the colour direction orders from beta about 2.45 up); requirement (f) of row 1386 |
+| (C5) | Narrow near the crossover: the class excludes every local SU(2) density with two vacua or no gap. By numerics (Bhanot and Creutz, GUIDE) the Wilson axis near beta 2.2 is at a distance of order one in the adjoint coupling from the end of a first-order line. | row 1128 1.4 item 4; `parts/gap.md` test table (K7); Proposition V of `gap-crux-fp.md` (van Enter and Shlosman) |
+| (C6) | One scale: an inclusion names no cutoff and no torus side. | rule "Equivalent is not progress"; filter (t5) |
+
+Why (C4) binds this map too (ARGUED). Take the coarse field with every plaquette equal to -1 (staggered
+signs). The fine fields that Q2 maps near it carry flux pi through every 2 x 2 fine square. A uniform abelian
+field with plaquette angle pi/4 in a colour direction n does this for every n in S^2, at the same Wilson
+energy. So at this coarse field the fine system has a continuous family of low states, and its value of
+-log(Q2 D) is set by a fine-lattice minimization, not by the readout x'. A centre of Wilson form with a
+bounded radius in the supremum norm cannot hold as x grows, and decay of correlations of the fine system
+given such a coarse field is not expected. Balaban's large-field regions are the weak-coupling form of this
+requirement.
+
+### 4.2 Definitions (the template; the norm is a design choice, GUESSED adequate)
+
+A **local rule** is a family Phi = (Phi_X), X the finite connected sets of bonds of Z^4, each Phi_X a
+continuous gauge-invariant function of the SU(2) field on X, covariant under the hypercubic group with
+translations. For x >= 1, r > 0 and a weight constant theta in (0, 1]:
+
+    norm(Phi)_(x,r) = sup over bonds c of the sum over X containing c of
+                      e^(r size(X)) sup over fields V of abs(Phi_X(V)) / (1 + theta x E_X(V)),
+    E_X(V) = sum over the plaquettes p inside X of (1 - Re V_p).
+
+A family (of level k) **realizes** Phi with site constant e and wrap error eta if on each of its sixteen tori,
+of shortest side s, abs(log D(V) + e size(T) + sum over X of diameter below s/2 of Phi_X(V)) <= eta for every
+V. The **tube** Tube(Phi*, rho; eta) is the set of families that realize some Phi with
+norm(Phi - Phi*)_(x,r) <= rho, with wrap error at most eta. The **readout** x(Phi) is the coefficient of the
+transverse k^2 term of the Hessian of Phi at the trivial field (the release's `nextCoupling`; Remark LD-3 of
+row 1460).
+
+The weight 1 + theta x E_X is the cheapest way I see to meet (C4): the bound is tight on regular fields and
+loose in proportion to the local action on rough fields. It is not Balaban's class and not the release's. A
+split into small-field and large-field regions with separate bounds is the alternative. I did not test
+either against a step.
+
+### 4.3 The one-step statement
+
+**(K2-STEP) for the band.** There are a strength ratio a > 0, numbers delta_0 > 0 and r > 0, and for every
+step k of the band a centre Phi*_k with readout x_k, a radius rho_k and a wrap error eta_k, such that Q2 with
+strength a x_k maps Tube(Phi*_k, rho_k; eta_k) into Tube(Phi*_(k+1), rho_(k+1); eta_(k+1)), with
+
+- (DR) the sign: x_(k+1) <= x_k - delta_0;
+- (TR) the contraction: rho_(k+1) <= rho_bar(x_(k+1)), a fixed profile that stays inside the margin of (C5)
+  and below the end threshold;
+- (WR) eta_(k+1) <= eta_k + size(T) e^(-r s/8) on each torus T of shortest side s.
+
+The chain starts at the release's window, x_0 in [H, W_*], and stops at the first N with
+norm(Phi*_N) + rho_N <= eps_E.
+
+**(END-K2).** There are eps_E > 0 and a function v_E(m) = O(log m) such that every family that realizes a rule
+of norm at most eps_E on tori of spatial side m and time sides v, 2v with v >= v_E(m), with wrap error at most
+1/100, has purity at least 457/625. SKETCHED: a polymer expansion of the sixteen masses; the site constant
+cancels in the purity; the terms that wrap the time direction are at most m^3 e^(-c v). Relatives on file:
+Theorem E of row 1354 for (10*), Theorem END-D of row 1353, Theorem BS of row 1340. No constants are computed
+here. Not checked: that the weighted norm at x of order one gives the supremum bounds those theorems use.
+
+With (BASE-K2) in the form "the release's level-K family lies in Tube(Phi*_0, rho_0; eta_0) for infinitely
+many K", Theorem K2 gives (PUR-io).
+
+**What a proof of one step consists of.** For a rule Phi and a coarse field V, the fine system with weight
+exp(-Phi(W)) K(W, V) is the constrained system. log(Q2 D)(V) is its free energy. Lemma LD-1 of row 1460 gives
+its second derivative in V as a posterior mean minus a posterior variance. Two obligations:
+
+- (CM_k) mixing of the constrained system, with a rate and a constant, for every rule in the tube and every
+  coarse field in a regular set, and a bound on the weight of the fields outside it. This gives the existence
+  and the range of the image rule (the scheme of Haller and Kennedy and of Bertini, Cirillo and Olivieri; for
+  weak coupling the scheme of Balaban). It is the contraction (TR).
+- (EN_k) an enclosure of the new centre, with (DR). In the weak part this is the one-loop computation. In the
+  order-one part it is a number.
+
+### 4.4 The abelian control of the map
+
+**Proposition GA (Gaussian model; PROVED here by an elementary Fourier computation, unchecked).** Let A be a
+real field on the bonds of Z^d with the weight exp(-(x/2) sum over plaquettes of (dA)_p^2). Let Q be the
+linear form of the contour mean of Q2 (the sum of A along each contour, averaged), and let the kernel be
+exp(-(kappa/2) sum over coarse bonds of (A'(c) - (QA)(c))^2). Then the image is Gaussian and gauge invariant,
+and the transverse part of its Hessian has the symbol 2^(d-4) x p^2 (1 + o(1)) as p tends to 0, for every
+kappa > 0. So the readout is x' = 2^(d-4) x: x' = x in four dimensions, x' = 2x in five.
+
+Proof. Q(d lambda) = d'(lambda at the base points), because every contour runs from 2y to 2y + 2 e_mu. So the
+image is gauge invariant. On transverse fields the image has the Hessian (1/kappa + C_Q)^(-1), C_Q the
+covariance of QA. For a fine plane wave a_nu e^(ik.x) the two legs of a contour cancel up to O(abs(k)) and the
+straight part gives 2 a_mu e^(2ik.y)(1 + O(abs(k))). So the symbol of Q is 2 + O(abs(k)) at small k and is
+bounded at the alias momenta p/2 + pi m, m not 0, where the fine transverse covariance 1/(x khat^2) is
+bounded. The coarse lattice has 2^(-d) of the sites. So C_Q(p) = 2^(-d) 4 (x (p/2)^2)^(-1) + O(1)
+= 2^(4-d)/(x p^2) + O(1) on transverse fields, and the Hessian is 2^(d-4) x p^2 (1 + O(p^2 (1 + x/kappa))).
+QED
+
+Reading. The classical factor of Remark PAIR (row 1386) is exact for this map, and the abelian readout does
+not move in four dimensions. So for Q2 every drift is a non-Gaussian effect. For SU(2) at weak coupling the
+drift is the one-loop term: x' = x - (11/(3 pi^2)) log 2 + O(1/x) = x - 0.2575 + O(1/x). SKETCHED for Q2: the
+coefficient is the release's `oneLoopShift` at side 2, and I did not compute it for this map.
+
+### 4.5 The filter (t1) to (t6), and one more
+
+| Test | Result for (K2-STEP) | Line that decides |
+|---|---|---|
+| (t1) compact U(1), d = 4, weak coupling | (DR) fails | Proposition GA: the Gaussian part gives x' = x. The remainder is monopole loops with weight e^(-c x). By Guth and by Frohlich and Spencer the model is massless at weak coupling, so (K2-STEP) with (END-K2) is false there. In the weak-coupling proof of (DR) the gain is the term with two structure constants; it is zero for an abelian group. |
+| (t6) Villain U(1) | (DR) fails, same line | The two exact identities of the step (the masses, Lemma TW; Lemma LD-1) hold for Villain U(1) and for every model. So neither is the mechanism. The mechanism is the inequality (DR). |
+| (t2) SU(2), d = 5 | (DR) fails | Proposition GA: x' = 2x - c at weak coupling. The step is the pair of Remark PAIR: a carry with the exact factor 2^(d-4) and a gain per step. |
+| (t3) SU(3) | same statement; one-loop gain (11 N^2/(12 pi^2)) log 2 = 0.579 at N = 3, in the account's normalization x = 2N/g^2 | nothing rests on dim G = 3 |
+| (t4) beta grows at a fixed lattice | passes | a step is at one scale; a larger bare coupling means more steps |
+| (t5) equivalence | not equivalent, and not proved | The conjunction over the band implies the seed. The seed does not give the locality of the intermediate images. But (t5) also asks for the method: Section 5 finds a method for the weak part only above the release's floor, and none for the order-one part. |
+| K7 and Proposition V | binds the radius | (C5): the tube must exclude the mixed-action coexistence line and the deep-well weights of van Enter and Shlosman |
+
+So the statement passes the selectivity tests, as any statement about the true flow does. It fails the last
+clause of (t5) on the order-one part. That is the wall, restated at one scale.
+- 14:27Z (date -u) Section 4 written (requirements (C1)-(C6), the tube template, (K2-STEP), (END-K2), Proposition GA, the filter). Next: Section 5, sizing.
+
+## 5. Sizing
+
+### 5.1 The three parts of the band, and the count of steps
+
+x is the inverse coupling in the release's normalization (x = beta at the bare level). One Q2 step lowers x
+by 0.2575 at one loop (SKETCHED for this map, 4.4).
+
+| Part | Range of x | Steps of side 2 | What must prove (K2-STEP) there |
+|---|---|---|---|
+| Base | bare to the window [H, W_*] | K steps of the release, side b | the release (exists, Lean); (BASE-K2) on rectangular and twisted tori is a port item, OPEN |
+| Weak part | from the window down to a floor x_pert | (x_0 - x_pert)/0.2575, at least 3.88 * 2^2800 if the window is as row 1464 reads it | ONE theorem, uniform in x. The steps cannot be listed. |
+| Order-one part | from x_pert down to about 2.3 | about 3.88 (x_pert - 2.3): 30 at x_pert = 10, 110 at 30, 380 at 100, 3900 at 1000 | one certificate for each step, or a second uniform theorem |
+| Entry to the end | from about 2.3 to norm at most eps_E | 2 to 3 (the fundamental coefficient goes about as c to c^4 a step: 0.51, 0.07, 2e-5; GUIDE) | one certificate each |
+| End | below eps_E | none | (END-K2), by hand |
+
+The counts are GUIDE: they use the one-loop drift, and no upper bound on the drift of a Q2 step is proved.
+
+**The floor decides the count.** The only weak-coupling step theorem on file is the release's. Its floor is
+above (2^51 L)^100 at side L, and its clause `floorMin` is at least 2^1600 at every side (row 1464, unchecked;
+the growth comes from clusterRange x = ceiling of x^(1/100)). With that floor the order-one part has more
+than 2^1600 steps. So a step-by-step certificate is excluded by count alone, whatever one step costs. A K-II
+tool therefore needs, first, a weak-coupling step with a floor of human size. I call this component T1.
+
+What floor could T1 reach (GUESSED)? A small-field expansion needs rough plaquettes to be rare in a block.
+In the Wilson law the plaquette energy 1 - Re U_p has mean about 3/(4 beta), and the chance of a value above
+1/2 is of order e^(-beta). A 2^4 block has 96 plaquettes. A polymer bound needs this chance to beat a
+combinatorial constant of the order e^10 to e^50 in four dimensions. So x_pert of 30 to 100 is the best
+case, with computed constants. A hand proof with Balaban's or the release's style of constants would give
+much more. So the order-one part has 100 to 400 steps in the best case.
+
+### 5.2 The finite part of one order-one step, by representation
+
+| Representation | The finite part | Cost on file | Source |
+|---|---|---|---|
+| Site tensors (Oeckl-Pfeiffer; Ebel-Kennedy-Rychkov) | fusion of 16 sites | bond rank at least 67 at beta 2 for error 1/4; a dense site is 13 PB; one fusion above 1e27 operations; the rank-128 trial fails its own error test | row 1418, check 1420 |
+| Enclosure of a block integral | the free energy of the constrained block, uniform in its surroundings | eight links of a 2^4 cube, error 2^(-24), beta up to 7/3: 6.5e14 rational gates. A Q2 block has 64 links, tied to 8 coarse bonds and to its neighbours. No method on file goes beyond eight links. | rows 1341, 1344 |
+| Block Dobrushin criterion (B-pin) | a supremum of a block law over its surroundings | one link reaches 2/9; no rigorous method above 0.3609; the block needs side about 3 to 10 at the window (GUIDE) | row 1340, check 1346 |
+| Loop-equation or positivity certificate | a patch of loops | the patch is as large as a seed box | row 1326, Theorem O with Remark OS |
+| Character sums on one 2^4 block | one signed coefficient | spin order 42, eight producers, at most 149 s each; a coefficient, not a step | rows 1425, 1429 |
+
+No row gives a closed class at order-one coupling. Each sizes one piece of one step.
+
+### 5.3 What the Lean kernel can check
+
+Measured on the Mac mini (lead's replays): `lean/glue` 3 s; `lean/ring` 1,289 s and 1.36 GB for 584 theorems
+by `decide`, for arithmetic that the exact-rational producers of row 1425 ran in at most 149 s each;
+`lean/haar` 6,822 s for 429 modules. So one Lean row holds about two hours of kernel time, and the kernel is
+about ten times slower than exact-rational Python on this kind of table (one data point). At an assumed
+1e6 rational gates a second in Python (GUESSED), a Lean row holds about 1e9 gates.
+
+- The eight-link enclosure (6.5e14 gates) is about 1e5 to 1e6 Lean rows. It is the smallest piece of a
+  step on file.
+- So no finite part of an order-one step can be a `decide` or `norm_num` check. With `native_decide` (not
+  allowed) the eight-link piece alone would be days.
+- What does fit: the constants of hand theorems (the end thresholds, Bessel-ratio bounds), small
+  combinatorial tables (the sign rule of Lemma TW), the algebra of Fact PUR.
+
+### 5.4 Verdict of the sizing
+
+| Component | Kind | State |
+|---|---|---|
+| T0, (BASE-K2) | port of the release's bounds to rectangular and twisted tori; its class inside a tube | OPEN; analysis and Lean engineering; size not estimated |
+| T1, weak part with a floor of human size and side 2 or 3 | analysis (Balaban's method with explicit constants) | OPEN; nothing on file; the release's floor is above 2^1600 by its structure |
+| T2, order-one part | 100 to 400 certified steps in the best case | NO METHOD: no closed class, and the smallest piece of one step is 1e5 Lean rows |
+| T3, (END-K2) with numbers | hand proof, small Lean arithmetic | buildable; relatives on file |
+
+The computation is not the bottleneck that a larger machine removes. T1 is not a computation. T2 has no
+representation in which a step is a finite statement of a known cost.
+
+## 6. Is there an obstruction? (task item 4)
+
+No obstruction to the existence of a step is proved here, and none is on file. I believe (K2-STEP) in a
+typical-field form is true for SU(2) (belief, not evidence). What can be said for stated classes:
+
+- (O-a) Step-by-step certificates with the release as the weak part: excluded by count (5.1). GUIDE, because
+  the count uses the one-loop drift.
+- (O-b) Classes with an unweighted supremum over coarse fields, and steps proved by mixing that is uniform
+  over all coarse fields: excluded above the hand range. The boundary-uniform form is CA-FAIL (row 1072, a
+  theorem given Frohlich, Simon and Spencer, above beta 1.0109). For the soft ties of Q2 the same is ARGUED
+  only (4.1) with GUIDE support (row 950). I did not prove it for Q2.
+- (O-c) Certificates of the five kinds of 5.2: excluded by cost for the kernel, and for the first, second and
+  fourth kind for any machine on file.
+- (O-d) Exact identities of the step as mechanism: excluded by (t6). Lemma TW and Lemma LD-1 hold for every
+  group and every dimension, and Proposition GA shows the abelian readout is exactly marginal.
+
+What is left open by these: a typical-field class with a hand proof of (CM) and (DR) on the order-one part.
+That is K-II in the sense of row 1386, "Balaban's method without a small coupling", and by Remark PAIR its
+selective half is an inequality of kind K-I. This row does not supply it.
+- 14:29Z (date -u) Sections 5 and 6 written (sizing by part and by representation, kernel budget, verdict, obstructions for stated classes). Next: Section 7, the first buildable component; Section 8, next rows.

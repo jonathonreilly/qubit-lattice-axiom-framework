@@ -88,3 +88,67 @@ All arithmetic in Part A was done by hand. Memory free was 37 percent at 17:06Z 
 - m <= n <= p: projections P_S at sites outside the partner face act trivially on the partner (links of a face have both ends in that face), so they move across; P at sites of I = F cap theta F commutes with theta (theta fixes those sites) and is an L^2 projection, so b(PG, (1-P)G) = E[PG (1-P) theta G] = 0 and b(G,G) >= b(P_{I minus r} G, P_{I minus r} G) >= b(P_I G, P_I G). The probe family is the same for p, n, m because the inward variance of f equals the outward variance of f o J (by (5)). Cauchy-Schwarz for b turns the two-probe supremum into a one-probe supremum. Agrees.
 - o_1 <= m: the outward face x_mu = 1 lies in the closed + half, the inward face x_mu = 0 in the closed - half; Cov = b(G_+, theta G_-) <= sqrt(b(G_+,G_+) b(theta G_-, theta G_-)), and after full central gauge averaging (legitimate for this mixed pair, since its inward root o is outside the outward face) each self-pairing is a fully averaged perpendicular pairing, at most m times the variance. Agrees.
 
+**B4. Resolved-plaquette trial, row sum one (lines 81-89). HOLDS.** Each single summand of (1) is a_0 d_0 + a^t R(v) d, with coefficient matrix a d^t; normalized left Gram a a^t/|a|^2; h(a) = a_1^2/|a|^2 - 1/3 has mean zero. Any two distinct central links form a forest and are independent Haar under the gauge-invariant Wilson law, so the face sums have variance 12 s^2 and perpendicular positive faces share four edges: correlation 1/3, three such faces, row sum 1. The author correctly says this probe is a function of the twelve separate summands, not of Q_i, so it does not refute (6).
+
+**B5. Reference comparison (7) and the upper bound 7 - (2966/495) 2^-822 (lines 92-115). HOLDS.**
+- Removed counts, recounted. Perpendicular pair (faces x_mu = 1, x_nu = 1): a central plaquette avoids the face x_mu = 1 iff its plane omits mu and x_mu = 0, so exactly one of the 24 avoids both faces: 23. Each neighbour box: 24 - 6 = 18 plaquettes touch its face (avoiding needs plane without the normal direction and the far layer: 3 x 2 = 6), two boxes 36. Selected crossings 2 x 12 = 24. Other six interfaces: faces x_mu = 0 and x_nu = 0 meet the read central edges in one square each (4 + 4); the four faces x_lambda = 0, 1 (lambda not mu, nu) meet them in two squares sharing one edge (7 each). 23 + 36 + 24 + 36 = 119. The same count holds for the inward and mixed perpendicular pairs by the coordinate reversals that preserve the star. Opposite pair: 24 + 36 + 24 + 6 x 8 = 132.
+- Reference coefficients: under nu the read links are independent Haar. The outward field is symmetric in the twelve edges (B i.i.d. Haar), so in the Hoeffding (ANOVA) decomposition the shared fraction at order k is C(4,k)/C(12,k) <= 1/3. For an inward face, proper subsets of the shared square are forests, rooted vertex gauges act transitively on them, so only the order-four component on the full square survives, giving 1/C(12,4) = 1/495. Opposite faces read disjoint sets: 0.
+- Transfer: Var_mu(f +- g) >= a Var_nu(f +- g) >= a(1 - rho_nu)(Var_nu f + Var_nu g) >= (a/b)(1 - rho_nu)(Var_mu f + Var_mu g); the smaller sign gives rho_mu <= 1 - (a/b)(1 - rho_nu), a/b = e^{-2 beta N}. Agrees.
+- Constants: e < 11/4 so e^2 < 8 and e^{-y} > 2^{-3y/2}; 3 beta 119 = 821.1 and 3 beta 132 = 910.8, so e^{-2 beta 119} > 2^-822 and e^{-2 beta 132} > 2^-911. With o_1 <= m: R <= 3(1 - (2/3)eps) + 4(1 - (494/495)eps) = 7 - (990 + 1976)/495 eps = 7 - (2966/495) eps, eps = 2^-822. Agrees.
+
+**B6. Lower bound 49/225 (lines 118-154). HOLDS.**
+- Phi_i = E[R_i | internal links, all r_s]: the pivot u_* enters only through e^{u_*^t Q_i u_*} (no corner plaquettes), so E[S_cut | ...] = M(Q_i); T_i is a function of Q_i. So Phi_i is a probe of Q_i.
+- T_i = sum q(A_e) q(B_e) from E_v q(X v Y v^-1) = q(X) q(Y). Under gauges at the face vertices, q(A_e), q(B_e) become h.a, h.b with the same relative gauge h = g_s^-1 g_t; relative gauges of two distinct edges are independent (two edges form a forest), which suffices for variances. E[R_i | gauge orbit] = sum c_e/4 - S_cut/4 = 0, so Var R_i = sum_e E[(1 + 2c^2)/24 - c^2/16] = sum_e E(2 + c^2)/48 <= 3/4. Agrees.
+- Y on the shared square: mean 0, Var 4(1/8 - 1/16) = 1/4; shared-edge covariance 3c/24 - c/16 = c/16; E[S_cut Y] = 0; so E[Phi_i Y] = c_bar/4. Phi_i lives on the closed + half of theta (mu <-> nu) and theta Phi_i = Phi_j; Y is theta-fixed; Cauchy-Schwarz for b gives E[Phi_i Phi_j] >= (c_bar/4)^2/(1/4) = c_bar^2/4. Agrees.
+- c_bar >= r_1(beta): reflection through x_nu = 1/2 (nu tangential to the selected crossing plaquette) maps the star to itself (C +- 2e_nu exchange, the other boxes have x_nu in {0,1}); the nu-bonds through the plane form a matching; Z(t)/z(t) is a sum of nonnegative squares times products of r_j(t), each nondecreasing (I_{k+1}/I_k is the mean of x under e^{tx}(1-x^2)^{k-1/2}). Agrees with 1348 line 249, checked HOLDS in 1350.
+- r_1 = beta/(4 + beta I_3/I_2) from I_1 - I_3 = (4/beta) I_2; I_3/I_2 < beta/6 termwise (1/(l+3) <= 1/3); at beta = 23/10: (23/10)(600/2929) = 1380/2929, and 20700 > 20503. (Floating estimate as guide only: r_1(2.3) is about 0.479.)
+- rho >= (c_bar^2/4)/(3/4) = c_bar^2/3 > (7/15)^2/3 = 49/675, three positive partners: 3p > 49/225. With m >= o_1 > 2^-2024 the stated 49/225 + 4 2^-2024 < R follows. Agrees.
+- Nondegeneracy (Q = +-12 beta I gives Phi = +-9) and the limitation bound < 1/3 for this family: read, consistent.
+
+**B7. Positive opposite-face correlation and (13) (lines 203-230). HOLDS.**
+- Probe B_i(0) = 1/h_1(Q_i); its conditional field on both opposite faces is F = z_2/L(A) (J-invariant and central-gauge invariant, so the inward projection does nothing). E B_i(0)^2 <= Z_i(-1)/Z = 1 by the checkerboard sign flip of the eight crossing links (reverses the twelve crossing traces, touches no other plaquette).
+- Reflection through x_mu = 1/2: the star is symmetric (C +- 2e_mu exchange). Slice edges: 7 three-cubes x 12 + 6 neighbours x 4 crossings at that layer = 108; one midplane plaquette per slice edge (inside a box, or a single-cut plaquette of an interface lambda not mu); (312 - 108)/2 = 102 per half, so inf Psi/sup Psi >= e^{-204 beta}.
+- l = Cf (the crossing kernel and the midplane kernel are the same normalized one-link convolution on the twelve central face edges); 0 < f, l <= K = e^{24 beta} (z_2 >= 1 by Jensen); <f, q_sq> >= r_1 (1348 line 249: character = 2q, pairing >= 2 r_1), C q_sq = r_1^4 q_sq, ||q_sq||^2 = 1/4, hence ||a - l||^2 >= r_1^10/(1/4) = 4 r_1^10. <U, Cg> = integral Psi (a - l)^2/(a l) >= 4 inf Psi r_1^10/K^2; <g, Cg> <= K^2; Cauchy-Schwarz for C and <Psi, C Psi> <= sup Psi^2 give covariance >= 16 r_1^20 (inf Psi/sup Psi)^2/K^6; rescaled variance <= z^24 <= e^{24 beta}. Exponent 408 + 144 + 24 = 576. Agrees.
+- Rational: r_1 > 1/4 and e^{-576 beta} > 2^{-864 beta} = 2^-1987.2, so 16 r_1^20 e^{-576 beta} > 2^{4 - 40 - 1987.2} = 2^-2023.2 > 2^-2024. Agrees.
+
+**B8. Arm bound J > 6/5 and delta > 1/12 (line 205). HOLDS.** J = integral f L/integral L since integral L = z_2 z(beta)^12; 1348 (17) J >= 1 + 24 r_1^6 (HOLDS in 1350; valid for beta <= 7/3, and 23/10 < 7/3); 24 (7/15)^6 > 1/5 iff 120 x 7^6 = 14 117 880 > 15^6 = 11 390 625. If |log L - c| <= delta then J <= e^{2 delta}; log(6/5) > (1/5)(5/6) = 1/6, so delta > 1/12 > 1/100. The 3 delta log-purity transfer (line 207) is the triangle inequality on three masses. Agrees.
+
+**B9. Certificate margins (lines 232-241). HOLDS.** 1348 (13): e^{beta q} = P_beta(q)(1 + R), 0 <= R <= 13 2^-20, valid for 0 <= beta <= 7/3 (HOLDS in 1350), so the per-plaquette density ratio is within 1 + 13 2^-20 and D <= (1 + 13 2^-20)^312 <= (1 - 4056 2^-20)^-1; 251 x 4056 = 1 018 056 < 2^20 = 1 048 576 gives D < 251/250. Upper margin: 7 - (250/251)(7 - 122/125) = 7 - 1506/251 = 1, strict because D < 251/250. Lower margin: 7 - (251/250)(7 - 257/251) = 7 - 1500/250 = 1, strict likewise. The affine-span remark (maximal correlation of span{1,f} and span{1,g} is |corr(f,g)|) makes the comparison valid for fixed trials. Agrees. The scope remark (an upper certificate needs all probes, a moment matrix of chosen probes only bounds the supremum from below) is correct.
+
+**Not checked in detail (outside the row's list):** the eigenvalue reduction for mixed pairs (line 62, read and plausible; Q's with equal spectra are SO(4)-conjugate and left times right unit quaternions give SO(4)); the one-face sufficient test (11) (lines 165-183); the spectral partition-function trial (12) (lines 185-201). None of the listed numbers depends on them.
+
+**Verdict B: HOLDS.** No wrong line found in any listed item. The row's own status is correct: R lies in (49/225 + 4 2^-2024, 7 - (2966/495) 2^-822], an interval containing 1, so the transmission test at beta = 23/10 is undecided; the upper side is the hard one (supremum over all probes), and the gap between 49/225 and 1 is wide.
+
+## Remark for row 1490 (my observation, proved by one inequality)
+
+On the stripe, the per-block Gaussian action is G_*(t) = 4a t^2/(8+a) (at a = 1, (4/9) t^2), and the nonlinear stripe minimum is N(t) = 8 + a - sqrt(64 + a^2 + 16 a cos t) = (4/9) t^2 - (19/729) t^4 + ... at a = 1. The rate in (6) is Delta_a(t) = G_* - [Wilson + pin at the Gaussian mean] <= G_* - N(t), because N is a minimum over the same one-parameter family. So a centre that carries x N(t) per block removes the whole lower bound (6) on this ray, not only its t^4 term, and row 1480's counterexample says nothing about that centre. This agrees with the author's statement that the nonlinear centre is open. It is only the stripe ansatz: transverse colour directions and other coarse fields are untested (row 1490's own task).
+
+## Summary of verdicts
+
+| Item | Lines | Verdict |
+|---|---|---|
+| A1 two period-two fields, 384 contours | 21-23 | HOLDS |
+| A2 integrated Wilson vertices (L, 9/3/3, 6 det C, Cov expansion) | 31-74 | HOLDS |
+| A3 compact pinned law representation | 76-91 | HOLDS |
+| A4 normalized fine-block activity (1)-(3), KP self-term, weight | 93-135 | HOLDS |
+| A5 staggered Cartan source (4), mean 2u = a t/(8+a), rate (5), (6) | 137-176 | HOLDS |
+| A6 vacuum and curvature extraction (7) | 178-206 | HOLDS (two-derivative domination sketched; orders checked) |
+| A7 integrated quartic (8), 19/729 | 208-234 | HOLDS |
+| A8 violation (9), hot (10), free energy (11), external bond e^5 - 1, next-row formula | 236-276 | HOLDS |
+| B1 eight conditional laws, 352 and 312 | 13-31 | HOLDS |
+| B2 conventions (3)-(5) | 34-62 | HOLDS (eigenvalue reduction read, not rebuilt) |
+| B3 ordering (6), four outward rows | 65-79 | HOLDS |
+| B4 resolved-plaquette trial sum one | 81-89 | HOLDS |
+| B5 reference comparison (7), counts 119/132, 7 - (2966/495) 2^-822 | 92-115 | HOLDS |
+| B6 lower bound 49/225, r_1 > 7/15 | 118-162 | HOLDS |
+| B7 opposite-face positivity, (13), counts 108 and 102 | 203-230 | HOLDS |
+| B8 J > 6/5, delta > 1/12 | 205-207 | HOLDS |
+| B9 margins 122/125, 257/251, D < 251/250 | 232-241 | HOLDS |
+
+Row 1480: HOLDS. Row 1485: HOLDS. No correction needed in either. Defects found: none that break a stated claim.
+
+Provenance and independence: Claude Opus 5.5 (high) checking gpt-6.2-astra (max) rows, so cross-provider. Every listed constant was rederived by hand from the definitions; no script was run (memory free 37 percent at 17:06Z, below the 50 percent rule), no Lean, no numerics as evidence (one floating value of r_1(2.3), about 0.479, is labelled as a guide). A1 duplicates row 1478 Step 1, which was also Claude Opus, so A1 confirms row 1480 cross-provider but adds no provider independence to row 1478. The cited inputs 1348 (13), (17) and line 249 were taken from 1348 with the check 1350 (HOLDS), not rebuilt here.
+
+What stays open: (A) the integrated activity bound about a nonlinear constrained classical centre (rows 1490-1491); (B) the row sum R at beta = 23/10, which lies in (49/225 + 4 2^-2024, 7 - (2966/495) 2^-822] (row 1489).
+
+Credit: Tadeusz Balaban for the small-field and large-field renormalization group and the block-spin structure; Roman Kotecky and David Preiss for the polymer criterion; Ethan Sussman and Levent Alpoge, with Claude and Codex, for the outline, the complete account and the contour-kernel construction behind Q2. The two checked rows are by gpt-6.2-astra (Codex). This check grants no status and is not an audit.

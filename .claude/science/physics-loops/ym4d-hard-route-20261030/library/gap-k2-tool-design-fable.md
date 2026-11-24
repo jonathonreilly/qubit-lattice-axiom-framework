@@ -30,6 +30,15 @@ Status log (one line per step, times from date -u):
 - 14:05Z read row 1386 4.1-4.5 (STEP, Remark PAIR, requirements (a)-(i), K-I/K-II/K-III, t1-t5), row 1442 4.2 (t6), row 1332 Section 6 (Proposition CH, END, steps OPEN), row 1460 Sections 2-3 (LD-1, LD-2, LD-3, SE, LOSS, RANGE).
 - 14:12Z read (M-io) in check 1465 Step 7 and the first lemma of row 1461 (seed = s_K(2w) <= 4/21 on n = l b^K, w = n/1024; implied by purity P >= 457/625). Next: rows 1449-1458 RESULT lines for (BASE).
 - 14:19Z registry grep done (open-core.md has no line for K-II, block step, end class). On file and read (RESULT text): rows 1340-1354 (block steps for Proposition CH: Theorem TL/BS and (B-pin), the 2^4 cube map, the centre-sign map, strip elimination, end classes (11), (10), (10*), END-D), row 1128 1.2-1.4 (Haller-Kennedy, Bertini-Cirillo-Olivieri; stiffness upper bounds pass a block step for every group), rows 1449-1458 (release port), prior/sa-ym4-lean-flow-vs-ca-opus.md L36-66.
+- 14:20Z (date -u) Sections 1 and 2 written. Next: Section 3, the consumer in exact form and the map.
+- 14:26Z (date -u) Section 3 written (consumer, Q2, Lemma TW, Theorem K2). Next: Section 4, the carried class
+  and the one-step statement.
+- 14:27Z (date -u) Section 4 written (requirements (C1)-(C6), the tube template, (K2-STEP), (END-K2), Proposition GA, the filter). Next: Section 5, sizing.
+- 14:29Z (date -u) Sections 5 and 6 written (sizing by part and by representation, kernel budget, verdict, obstructions for stated classes). Next: Section 7, the first buildable component; Section 8, next rows.
+- 14:30Z (date -u) Sections 7, 8, 9 written. Next: re-read of the PROVED items, the label summary and the RESULT line.
+- 14:31Z (date -u) re-read of the PROVED items: four repairs in place (Theorem K2 now says it rests on Remark (ii); the slab position for odd cells; the count of C1 item 2; the (C4) paragraph now names the global colour rotation, not a gauge orbit).
+- 14:32Z (date -u) Sections 10 and 11 written; RESULT line in place.
+- 14:32Z (date -u) finished. Final section order: 1 search and sources, 2 on file, 3 consumer and map, 4 class and step, 5 sizing, 6 obstructions, 7 first component, 8 next rows, 9 repo search result, 10 labels, 11 result.
 
 ## 1. Repo search and sources
 
@@ -84,8 +93,6 @@ Four facts are new since then, and they fix the frame of this design:
 3. The window is not near order one: H is above 2^2800 (row 1464, unchecked). So the band has a long weak part.
 4. Theorem LOSS (row 1460, check 1463): thin transporters of length L lose the coarse field when L is large
    against the coupling. So a band step has block side at most of order the coupling.
-
-- 14:20Z (date -u) Sections 1 and 2 written. Next: Section 3, the consumer in exact form and the map.
 
 ## 3. The tool, part 1: the consumer in exact form and the block map
 
@@ -173,13 +180,14 @@ density in V for each W. Fubini gives the masses. QED
 
 Remarks. (i) The lemma uses that the slab of C_z lies on a block boundary. (ii) The release's `kernelImage`
 on tori with sides divisible by b carries the sixteen masses in the same way if its contours stay in the two
-cells of their bond and its hot lumps are functions of plaquettes. SKETCHED: I did not read `usedContours`
-and `IsBaseChoice` line by line for this; row 1457 records that the release has no twisted or rectangular
+cells of their bond, its hot lumps are functions of plaquettes, and the slab of C_z is put on a cell
+boundary at each level (a translation of the torus; the centred cells of odd side have their boundaries off
+the origin). SKETCHED: I did not read `usedContours` and `IsBaseChoice` line by line for this; row 1457 records that the release has no twisted or rectangular
 tori. (iii) The image of a reflection-positive density under Q2 is not reflection positive in general (the
 contours of a bond that crosses a mirror are not mirror images of themselves). The chain does not need it: it
 reads the sixteen masses only.
 
-### 3.3 Theorem K2 (soundness of a chain to (PUR-io)). PROVED here (one line, the form of Proposition CH)
+### 3.3 Theorem K2 (soundness of a chain to (PUR-io)). PROVED here given Remark (ii) of 3.2 for the release's kernel (one line, the form of Proposition CH)
 
 Let l = 512 * 2^N * v_E with integers N >= 0 and v_E >= 4. Level k, 0 <= k <= N, has the tori of spatial side
 l_k = l / 2^k and time sides v_k = l_k/512 and 2 v_k, with the eight twists. A level-k family is a choice of a
@@ -200,9 +208,6 @@ What Theorem K2 does not give. As a bare existence statement it is equivalent to
 the orbit of the Wilson data. So its content is in how the classes are defined. A class must be given by
 bounds that do not name the orbit, and each inclusion must be provable at one scale. Section 4 states this.
 
-- 14:26Z (date -u) Section 3 written (consumer, Q2, Lemma TW, Theorem K2). Next: Section 4, the carried class
-  and the one-step statement.
-
 ## 4. The tool, part 2: what is carried, and the exact statement of one step
 
 ### 4.1 Requirements on a class (each with its source)
@@ -219,10 +224,14 @@ bounds that do not name the orbit, and each inclusion must be provable at one sc
 Why (C4) binds this map too (ARGUED). Take the coarse field with every plaquette equal to -1 (staggered
 signs). The fine fields that Q2 maps near it carry flux pi through every 2 x 2 fine square. A uniform abelian
 field with plaquette angle pi/4 in a colour direction n does this for every n in S^2, at the same Wilson
-energy. So at this coarse field the fine system has a continuous family of low states, and its value of
--log(Q2 D) is set by a fine-lattice minimization, not by the readout x'. A centre of Wilson form with a
-bounded radius in the supremum norm cannot hold as x grows, and decay of correlations of the fine system
-given such a coarse field is not expected. Balaban's large-field regions are the weak-coupling form of this
+energy. These states are related by a constant colour rotation. It fixes a central coarse field, so it is a
+global symmetry of the constrained system, and the coarse links tie the colour frames of the base points.
+So the colour direction of the flux is a spin with a global SO(3) symmetry and a stiffness of order x. In
+four dimensions such a spin orders at large stiffness, with slow modes. Then the value of -log(Q2 D) at this
+field is set by a fine-lattice minimization, not by the readout x'; a centre of Wilson form with a bounded
+radius in the supremum norm cannot hold as x grows; and decay of correlations of the fine system given such
+a coarse field is not expected. This is the soft-tie form of the ordering that row 950 saw at a frozen
+pi-flux slice. Balaban's large-field regions are the weak-coupling form of this
 requirement.
 
 ### 4.2 Definitions (the template; the norm is a design choice, GUESSED adequate)
@@ -309,7 +318,7 @@ coefficient is the release's `oneLoopShift` at side 2, and I did not compute it 
 
 | Test | Result for (K2-STEP) | Line that decides |
 |---|---|---|
-| (t1) compact U(1), d = 4, weak coupling | (DR) fails | Proposition GA: the Gaussian part gives x' = x. The remainder is monopole loops with weight e^(-c x). By Guth and by Frohlich and Spencer the model is massless at weak coupling, so (K2-STEP) with (END-K2) is false there. In the weak-coupling proof of (DR) the gain is the term with two structure constants; it is zero for an abelian group. |
+| (t1) compact U(1), d = 4, weak coupling | (DR) fails | Proposition GA: the Gaussian part gives x' = x. The remainder is monopole loops with weight e^(-c x). By Guth and by Frohlich and Spencer (recalled, not re-read here) the model is massless at weak coupling, so the conclusion of the chain, a mass gap, is false there. In the weak-coupling proof of (DR) the gain is the term with two structure constants; it is zero for an abelian group. |
 | (t6) Villain U(1) | (DR) fails, same line | The two exact identities of the step (the masses, Lemma TW; Lemma LD-1) hold for Villain U(1) and for every model. So neither is the mechanism. The mechanism is the inequality (DR). |
 | (t2) SU(2), d = 5 | (DR) fails | Proposition GA: x' = 2x - c at weak coupling. The step is the pair of Remark PAIR: a carry with the exact factor 2^(d-4) and a gain per step. |
 | (t3) SU(3) | same statement; one-loop gain (11 N^2/(12 pi^2)) log 2 = 0.579 at N = 3, in the account's normalization x = 2N/g^2 | nothing rests on dim G = 3 |
@@ -319,7 +328,6 @@ coefficient is the release's `oneLoopShift` at side 2, and I did not compute it 
 
 So the statement passes the selectivity tests, as any statement about the true flow does. It fails the last
 clause of (t5) on the order-one part. That is the wall, restated at one scale.
-- 14:27Z (date -u) Section 4 written (requirements (C1)-(C6), the tube template, (K2-STEP), (END-K2), Proposition GA, the filter). Next: Section 5, sizing.
 
 ## 5. Sizing
 
@@ -409,4 +417,105 @@ typical-field form is true for SU(2) (belief, not evidence). What can be said fo
 What is left open by these: a typical-field class with a hand proof of (CM) and (DR) on the order-one part.
 That is K-II in the sense of row 1386, "Balaban's method without a small coupling", and by Remark PAIR its
 selective half is an inequality of kind K-I. This row does not supply it.
-- 14:29Z (date -u) Sections 5 and 6 written (sizing by part and by representation, kernel budget, verdict, obstructions for stated classes). Next: Section 7, the first buildable component; Section 8, next rows.
+
+## 7. The first buildable component (task item 3)
+
+No component of the order-one part fits a Lean row (5.3), and none has a method (5.4). So the first buildable
+component cannot test the wall. I name what is buildable, in the order of what each decides.
+
+**C1, one Lean row (small; a true part of the chain): `K2Chain`.** Contents:
+
+1. Fact PUR as algebra over an ordered field: for s >= 0 and 0 <= c <= min(s, s^2), 625 (1 + c) >= 457 (1 + s)^2
+   implies 21 s <= 4. The proof is two polynomial facts: 625 >= 457 (1 + s), and
+   168 s^2 - 914 s + 168 = (21 s - 4)(8 s - 42) >= 0 with 8 s - 42 < 0.
+2. The sign rule of Lemma TW by `decide`: on the fine torus of side 8, for the 4 bond directions mu, the 4
+   slab directions i (the case i = mu included), the 4 values of y_i, the 16 offsets and the 24 axis orders
+   (24,576 contours of at most 10 steps), the number of traversals of the slab x_i = 0 is odd exactly when
+   mu = i and y_i = 0.
+3. Theorem K2 as an abstract statement (masses kept by each map; purity a function of the masses).
+
+Decisive outcome: all cases of item 2 pass, and then Q2 as defined carries the sixteen masses; or one contour
+fails, and then the contour family changes before anything else is built on it. Cost: seconds of kernel time
+for item 2; items 1 and 3 need an ordered field (Mathlib, as in the release's toolchain, or rationals in
+core). Standing: it makes the consumer side of the tool formal. It does not move the wall.
+
+**C2, one hand-proof row: (END-K2) with numbers.** eps_E and v_E(m) for the purity on the sixteen tori, for
+rules in the norm of 4.2 at x of order one, from Theorem E of row 1354 or Theorem END-D of row 1353, plus the
+entry of the Wilson weight at beta below a stated beta_E after one Q2 step with a stated strength. Decisive
+outcome: an explicit end class that the Q2 chain can land in, with the largest beta_E that the hand methods
+give (the hand range on file stops between 2/9 and 1.0109). It tells how many certified entry steps T2 needs.
+
+**C3, one reading row: the floor of T1.** See Row 2 of Section 8. This is the component that decides whether
+a K-II tool by step certificates stays on the list at all.
+
+**C4, one GUIDE run (optional): (CM) at typical coarse fields.** Wilson SU(2) at beta 2.3 to 4 on a torus of
+side 12 or 16, one Q2 draw of the coarse field with kappa = beta, two replicas of the fine field given that
+coarse field, the decay length of a gauge-invariant overlap between the replicas. It can refute the
+typical-field form of (CM) for this map and this strength (a decay length that grows with beta at fixed
+kappa/beta). It cannot prove (CM). I expect it to pass, so I rank it last.
+
+I did not build C1 in this row: the brief says to commit no code, and the row is the design.
+
+Own check of Lemma TW by enumeration: NOT run. Free memory was 40 percent (`memory_pressure`, read in this
+step), below the 50 percent rule for a numeric job, so the lemma stands on the hand proof of 3.2 until C1 or
+a checker runs the count.
+
+## 8. The next two rows, and their decisive outcomes
+
+**Row 1, `gap-k2-tool-design-check-astra62` (cross-provider check of this file).** In order: Lemma TW, case
+by case, and Remark (ii) against the release's `usedContours`, `IsBaseChoice` and `hotLumps` (do the contours
+of a bond stay in its two cells, and is the set of base choices unchanged by C_z); Theorem K2 and Fact PUR;
+Proposition GA (the symbol of Q, the alias sum, the gauge quotient); the counts of 5.1 and the claim of 5.2
+that no row on file gives a closed class at order-one coupling; the (C4) argument of 4.1. Decisive outcome:
+HOLDS, HOLDS AFTER CORRECTION with each repair, or FAILS at the first wrong line. If TW or GA fails, the map
+changes. If the checker finds a closed class or a step method on file that 5.2 missed, that is the next
+proof row.
+
+**Row 2, `gap-k2-floor-sizing` (read only; decides whether K-II by step certificates stays on the list).**
+Question: at what inverse coupling X does a weak-coupling block step with explicit constants close, when the
+block side is small or is a power 2^m built by iterating Q2? Read the release's ledger of floor clauses (row
+1464, Steps 3 to 6, with check 1467) and Balaban's large-field conditions (CMP 109, 116, 119, 122). For each
+clause that binds the floor, give the smallest x at which it holds if the exponent 1/100 of `clusterRange`
+and the constants are chosen again, and say whether the clause is structural. Decisive outcome, one of two:
+(a) a number X at most 100 with the list of clauses: then the order-one part has at most 400 steps, and a
+proof-design row for T1 is justified; (b) X at least 10^4, or a structural reason: then a K-II tool by step
+certificates is closed on the record by count, and the band stays stopped under row 1442 with its triggers
+(R1) to (R3).
+
+Not proposed: a row on T2. There is no first lemma for it. Optional third row: the Lean row C1.
+
+## 9. Repo search result (rule "Repo first")
+
+Bare blob-less fetch of main and of PR #10114 into a scratch folder under /tmp, grep of the 67 ym4d text
+files of main and of 28 files of PR #10114 chosen by name (mass gap, block, step, soft-hard, target), for:
+order-one coupling, Haller, finite-size condition, constrained system, block side 2, Kadanoff, Tomboulis.
+Main: no hit. PR #10114: three hits, all in `checks/review_massgap_block_literature.md` (lines 114, 120, 168);
+line 168 records for "continuum, crossover, exact RG" that "No usable theorem was validated". So the other
+target has no block step at order-one coupling either. PRs #10133, #10134, #10141, #10144 were not searched.
+
+## 10. Summary of labels
+
+| Item | Label |
+|---|---|
+| Fact PUR (purity gives the seed) | PROVED; on file (rows 1373, 1461, check 1465); repeated |
+| Lemma TW (Q2 carries the sixteen masses, twist by twist) | PROVED here by hand, unchecked; own enumeration not run |
+| Theorem K2 (soundness of the chain to (PUR-io)) | PROVED here given Remark (ii) of 3.2 |
+| Remark (ii) (the release's kernel on rectangular and twisted tori) | SKETCHED |
+| Proposition GA (the abelian readout of Q2 is x' = 2^(d-4) x) | PROVED here for the Gaussian model, unchecked |
+| One-loop drift 0.2575 for Q2; bounded self-energy of iterated averaging | SKETCHED |
+| (END-K2) | SKETCHED; relatives on file, no constants |
+| The weighted norm of 4.2 as an adequate class | GUESSED |
+| (C4) for the soft ties of Q2 | ARGUED, with GUIDE support from row 950 |
+| Step counts of 5.1; the best-case floor 30 to 100; the kernel budget 1e9 gates a row | GUIDE and GUESSED, as marked there |
+| Obstructions (O-a) to (O-d) | (O-a) GUIDE; (O-b) theorem for hard boundary values (CA-FAIL), ARGUED for Q2; (O-c) from on-file costs; (O-d) PROVED (TW, LD-1 and GA are group-blind) |
+| (BASE-K2), T1, T2, (CM) and (DR) on the order-one part, the seed, the mass gap | OPEN |
+
+What this row adds to the file: the consumer of a block chain in the form of sixteen masses with (PUR-io);
+a named self-similar exact map with its twist-wise carry; the abelian control of that map; the one-step
+statement with its three clauses; the split of the band into a weak part that needs one uniform theorem and
+an order-one part that needs certificates; and the count that makes the floor of the weak part the first
+thing to size. What it does not add: any step, any class shown closed, any method for the order-one part.
+
+## 11. Result
+
+RESULT: Row 1468 (Claude Fable 5.2 high, Mac mini worker 1; author only, checked by no one; hand arguments, no numeric run because free memory stayed at 38 to 47 percent, no Lean, no code committed). The K-II tool is designed as a specification and is NOT buildable today. (1) Design: the map Q2 (block side 2, corner bases, the Sussman-Alpoge contour mean over 384 contours a bond, von Mises-Fisher kernel of strength a x); PROVED by hand: Lemma TW (Q2 carries each of the sixteen twisted masses exactly), Theorem K2 (given the same for the release's kernel, SKETCHED: (BASE-K2) + (STEP_k) + (END) give purity at least 457/625 at infinitely many least roots, hence (M-io-exists)), Proposition GA (for the Gaussian abelian model the readout of Q2 is exactly x' = 2^(d-4) x at every strength, so in four dimensions every drift is non-Gaussian and the abelian step is marginal; five dimensions doubles). One step must satisfy (K2-STEP): a tube of local rules around a computed centre maps into the next tube with (DR) x' at most x - delta_0, (TR) a bounded radius inside the K7 margin, (WR) bounded wrap error; carried: a torus-free quasi-local rule in a field-weighted norm (GUESSED adequate), with requirements (C1) to (C6); U(1), Villain U(1) and 5D fail at (DR), and the exact identities of the step (TW, LD-1) are group-blind, so they pass (t6) as non-mechanisms. (2) Sizing: the band splits into a weak part that needs ONE uniform theorem (the release's floor is above 2^1600, so step certificates there are excluded by count, GUIDE), an order-one part of 100 to 400 steps in the best case (GUESSED floor 30 to 100), and an end; the smallest piece of one order-one step on file (the eight-link enclosure, 6.5e14 gates) is about 1e5 to 1e6 Lean rows, so no finite part of an order-one step is a `decide` or `norm_num` check, and no representation on file gives a closed class there. (3) First buildable component: the Lean row `K2Chain` (Fact PUR algebra, the 24,576-contour sign rule of Lemma TW by `decide`, Theorem K2 abstractly), decisive only for the map's exact carry; it does not test the wall. (4) No obstruction to the existence of a step is proved; excluded for stated classes: step certificates above the release's floor (count), unweighted suprema over coarse fields (CA-FAIL for hard boundary values; ARGUED for Q2's soft ties: a central pi-flux coarse field leaves a global colour rotation and an ordering spin), the five certificate kinds of 5.2 (cost), exact identities as mechanism. Open: (BASE-K2) on rectangular twisted tori, T1 (a weak-coupling step with a floor of human size), T2 (the order-one part: no method, no first lemma), (END-K2) with numbers, the seed, the mass gap. Next rows: a cross-provider check of this file (TW, K2 with Remark (ii), GA, the counts); `gap-k2-floor-sizing` (the smallest floor of a small-block weak-coupling step: at most 100 keeps K-II alive with at most 400 certified steps, at least 10^4 or structural closes K-II by step certificates on the record).

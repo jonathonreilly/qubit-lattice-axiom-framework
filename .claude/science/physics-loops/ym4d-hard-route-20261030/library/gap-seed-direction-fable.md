@@ -207,25 +207,36 @@ telescopes whatever the order of the roots.) So a bound for the integrand on the
 for the difference between two seeds with the same number of sites: side l b^j at depth K - j, and side
 l b^(j+1) at depth K - j - 1.
 
-### 3.2 Where the weight sits (argued; guide for the sizes)
+### 3.2 Where the weight sits: one root interval (the identity is proved; the bound on its first term is read)
 
-- The strong end is free. For j near K the lattice sits at a coupling of order one or below with a time of
-  l b^K / 512 sites. Any positive lattice rate there gives a term that is doubly exponentially small in K
-  against the prefactor b^(4K). Row 708 has this as the strong-coupling seed with time log_2 of the side
-  (Corollary TR1). No scaling is needed there, and input (c) is correct for these intervals.
-- The weight is at small j. There each bracket is of the size of the seed quantity itself. The terms are
-  ordered the wrong way for a carry: the bracket bounds the seed of the smaller, hotter box (side l b^j) by
-  the seed of the larger, colder box (side l b^(j+1)). Smallness in the cold box says nothing about the
-  hot box.
+Cut the sum of 3.1 after j = 0:
+
+    Lam_K(l) = Lam_(K-1)(l b) + integral of R_u over the last root interval, from beta_(K-1) to beta_K.
+
+- The first term is a seed-type quantity at one fixed coupling, beta_(K-1), on a box that is b times larger
+  and b times colder than the seed box of side l at depth K - 1. The lane's fixed-coupling volume theorems
+  are the tools that bound it by that seed (Theorem SH of row 705 and Proposition Delta of row 708, as
+  quoted in `gap-mid-max.md` 4.3; read there, not re-derived, and I did not check their constants at the
+  aspect 512; guide for the size: of order b^3 times the b-th power of the seed value). No integral over couplings is needed
+  for it. So **input (c) is not needed below the last root interval**: where a seed is known one depth
+  earlier, the rates on all lower coupling intervals are already used, at fixed coupling.
+- All the weight is in the second term: the transport over one root interval on a fixed lattice, from the
+  cold box (side l b at depth K - 1) to the seed box (side l at depth K). The thermal sum must rise there,
+  from about the b-th power of the seed value to the seed value. The lemma has to bound that rise. This is
+  one "step" of row 708 4.5.
+- Without a seed one depth earlier the same cut can be made at any earlier root, and the first term is then
+  a seed-type quantity at an order-one or strong coupling. At strong coupling it is proved (row 708,
+  Corollary TR1; the end class of rows 1471, 1473). In the band it is the gap of the bare lattice model,
+  which is open (Section 5).
 
 ### 3.3 The forced form of the first lemma is relative, and it is (VIR_K) (read: row 708 4.2-4.5; the step from Section 2 is argued)
 
-By 3.2 a lemma for the top intervals must bound R_u(t) by a number of the size of the thermal sum at the
-same coupling. An absolute bound (a prefactor times a rate factor, as (4)) can do that only if its rate is
+By 3.2 a lemma for the last root interval must bound R_u(t) by a number of the size of the thermal sum at
+the same coupling. An absolute bound (a prefactor times a rate factor, as (4)) can do that only if its rate is
 the physical rate at that coupling and its prefactor has the scaling of 2.3. A physical rate at the
 coupling t on this lattice is the gap of the box of side l a(t)/a(beta_K) >= l. That is the seed at a
-larger side, the target again (the seed may choose its side). So an absolute bound is circular on the top
-intervals, with or without scaling.
+larger side, the target again (the seed may choose its side). So an absolute bound is circular on the last
+root interval, with or without scaling.
 
 The only form that is not circular is a relative one: a bound for the response by the thermal sum at the
 same coupling, which a continuity argument along t can close. That is exactly hypothesis (VIR_K) of row
@@ -245,6 +256,21 @@ identity that produces the ratio", the trace anomaly, and "the lattice has no di
 1380 marks the line blocked-equivalent (registry RB); row 1496 4.1 repeats the verdict. Row 1511's objects
 do not change this: (3) and (4) are absolute bounds at lattice resolution, and by 2.3 an absolute bound
 needs the forced scaling before it can even be finite.
+
+**The continuity argument with an absolute bound, done once (argued; elementary calculus).** Take the rate
+from the seed at the same coupling, which is not circular: while y(t) = log(1 + s(u; t)) stays below eps on
+the last root interval, the box has the lattice gap E_1 >= (1/u) log(1/y), and I grant the same number as
+the covariance rate on all large cubes (the best case). A scaled absolute bound then reads
+y' <= Q (y)^c with Q = 12 u n^3 A = (12 l^4 / 512) C_A, where C_A = A b^(4K) is its scaled constant in
+reference units, and c <= 1 is its exponent factor (1/2 in (4)). Start: y is about eps^b at beta_(K-1).
+
+- c < 1: the inequality allows y to reach eps after a coupling length eps^(1-c) / ((1-c) Q). The root
+  interval has length of order one. So nothing is proved.
+- c = 1: y <= y_0 e^(Q s) over an interval of length s. This stays below eps only if
+  (b - 1) log(1/eps) >= Q s, that is C_A <= (512 (b - 1) / (12 s)) log(1/eps) / l^4. With log(1/eps) of
+  order m l / 512 (guide) this is C_A of order m / l^3 at most: the per-plaquette prefactor must be as small
+  as one mass spread over the box. A constant from ultraviolet stability is of order one per unit of
+  reference volume. So the bound that closes is again a relative one.
 
 ### 3.4 The two places where a first lemma could sit, and why neither is a row
 
@@ -340,8 +366,9 @@ closed (W) for R <= 10.
   below. For the layer set L_x, the completed arrays before and after differ by centre gauges at x and at
   its outward neighbours; the mixed plaquettes are invariant, so every function of them has the same mean.
   (ii) Row 1511's anchored path gives c_z - 1 >= the total variation distance of two tilts of one path
-  law pi. For the pair z = g, -g and pi = Haar this distance is m_beta, which is 0.745 at 23/10 (guide; row
-  1511 proves m > 20/27). On all 600 layer links of one direction that is at most about 447, below 554.
+  law pi. For the pair z = g, -g and pi = Haar this distance is m_beta, which is about 0.755 at 23/10 (guide: the
+  ratio of the two hand series of row 1511, 1.5836/2.0978; row 1511 proves m > 20/27). On all 600 layer
+  links of one direction that gives about 453, below 554.
   The distance can be larger for a path law with two modes, and smaller for a concentrated one; I have no
   proved lower bound for the supremum over the boundary. A kill would need the second shell (neighbouring
   anchored paths) and the 196 normals at vertices on several faces, each with a proved lower bound for a
@@ -362,7 +389,7 @@ leaves open, the first lemma is a closed line or a carry without a source:
 | Input | What it is, exactly | First lemma | Standing |
 |---|---|---|---|
 | (b) cancellation between the signed seam responses | At most a factor 2 in -log P (Lemma B, proved); twists have positive weights | none | Not an input. |
-| (c) rates integrated over coupling intervals, absolute prefactors | Correct and free on the strong end (3.2). On the top intervals it fails: a terminal interval with its own rate must shrink like b^(-4K) (Proposition WIN (i), proved from row 1511's rate bound); on a window of fixed width it fails given (RB-win) (not proved) | none | Closed by row 1511 with WIN, up to (RB-win). |
+| (c) rates integrated over coupling intervals, absolute prefactors | Not needed below the last root interval: given a seed one depth earlier, the fixed-coupling volume theorems give that part (3.2). On the last interval it fails: a terminal interval with its own rate must shrink like b^(-4K) (Proposition WIN (i), proved from row 1511's rate bound); on a window of fixed width it fails given (RB-win) (not proved) | none | Closed by row 1511 with WIN, up to (RB-win). |
 | (a) scaling of the action insertion | Forced (WIN). Integrated with no decay factor it is (UV-TS): ultraviolet, bounded and not small (2.4). With the decay factor it must be relative | (VIR_K) on an order-one window, or (VIR-top) at weak coupling | (VIR_K): closed line, row 708, registry RB. (VIR-top): a weak-coupling carry with no consumer, standing of T1. |
 | (d) in-law carry (PC, REV) | Not reached by the obstruction: its consumer is a rate, (RATE-io), with any prefactor (4.1) | (FL) | A carry at order one with no source; the source is T2 of row 1474, closed. Rows 1512, 1513 are on it. |
 | Criterion (3) at side four | A finite test with a supremum over boundary values | the excess sum below 554 | No method either way, no consumer (Section 5). |

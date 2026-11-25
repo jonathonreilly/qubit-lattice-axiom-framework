@@ -11,6 +11,7 @@ below are not yet checked by another model. Nothing here is a status claim.
 - 2026-11-25T05:37Z start. File created. Plan below.
 - 2026-11-25T05:38Z read: row 1520, FINISH rule sections, GOAL.md, check 1516 in full (section (v) = statement (*), consumer, separation example), row 1517 in full (CONJ, VOL, TR2, COLD, FLOOR, 6.1).
 - 2026-11-25T05:45Z Sections 1-2 written: Theorem EQ (the existence form of (*) contains kappa = 0 at period u, which is the target in integrated form; (*) forces the purity bound at every bare coupling on the way). Registry: TWO-PER at open-registry L1020; R11 L1018.
+- 2026-11-25T05:49Z Sections 2.3-2.4, 3, 4 written: Proposition H (integral of h is at least J(u, beta_K) - o(1)), Lemma Q, Lemma DY, Proposition F (frame of row 1517 applies; selective form bound reappears), Corollary FLOOR-2. Memory 38 percent free: no numeric job.
 
 ## Plan
 
@@ -115,3 +116,187 @@ integral of dJ/dt. (c) The first arrow is (b), the second is (a) with v_e = u. U
 Not found on file under the words "front", "kappa = 0", "positive variation", "seam majorant" + "two-period"
 (grep in Section 7). Item 2 is implicit in row 1515 (E2); I do not call 2.1 new mathematics. It is the
 decision the row asks for.
+
+### 2.3 Proposition H: the error term carries the whole target (proved; elementary)
+
+Let (*) hold on [t_0, t_1) along v(t) = v_e exp(integral of kappa), kappa >= 0 continuous, v(t_1) <= u,
+h >= 0 continuous. Then
+
+    integral of h over [t_0, t_1]  >=  J(u, t_1) - J(v_e, t_0).
+
+With the row's entrance (t_0 = 1/25600, v_e = ceil(log_2 n), n >= 256 even):
+J(v_e, t_0) <= 0.0202 ceil(log_2 n)/n, which tends to 0 as K grows (n = l b^K).
+
+Proof. The consumer inequality J(u, t_1) <= J(v(t_1), t_1) <= J(v_e, t_0) + integral of h, read as a lower bound
+for the integral of h. The entrance value: row 708, proof of Corollary TR1 (`gap-mid-max.md` L156),
+g(t_0; b^3; beta_0) <= 0.0101 t_0/b for the full trace, and J <= 2 G <= 2 G_full. QED
+
+Consequences (proved from H and 2.1).
+
+1. **The relative term buys at most J(v_e, t_0).** The schedule kappa = 0 at the period u needs
+   integral of h = (PV), which under (MON_u) is J(u, t_1) - J(u, t_0) <= J(u, t_1). Every other schedule from
+   the row's entrance needs at least J(u, t_1) - 0.0202 ceil(log_2 n)/n. So under (MON_u) no schedule lowers
+   the needed error budget by more than 7.4 x 10^(-4), and by an amount that tends to 0 with K. Without
+   (MON_u) a schedule can only help by avoiding oscillations of J(u, .) in t.
+2. **Homogeneous (*) from the row's entrance is the wrong statement.** With h = 0 it gives
+   J(u, beta_K) <= 0.0202 ceil(log_2 n)/n. So at fixed l it can hold at infinitely many K only if the purity
+   of the fixed physical box tends to 1 along them. (Guide: a box of physical side l at physical temperature
+   512/l has purity below 1 in the limit when its physical gap stays bounded; row 1511's calibrated
+   obstruction (i) bounds a uniform covariance rate in physical units, which is close to this but is not
+   the box gap; I do not claim a refutation.) If the purity does tend to 1, (PUR-io) holds outright.
+3. So from the row's entrance (*) is an **absolute** statement in substance: a seam majorant h whose
+   integral is the target value itself, up to o(1). The word "relative" applies only to the choice of path.
+   Row 1515 3.3 ("the forced form is relative") was struck by check 1516; the replacement (*) is relative in
+   form and absolute in budget.
+
+### 2.4 The homogeneous form needs a warm entrance, and is then again the target (argued; one gap named)
+
+A homogeneous statement (h = 0) can be true only from an entrance with J(v_e, t_e) =: c_e >= J(u, beta_K).
+It then says: there is a non-decreasing path from (v_e, t_e) to a point (v, beta_K), v <= u, along which J
+does not increase. If J(v, .) is non-decreasing in t for every v in [v_e, u] (MON), the level curve
+v_c(t) of J at the level c_e is non-decreasing, and it is such a path exactly when J(u, beta_K) <= c_e. So
+under (MON) the homogeneous existence statement is the target with the constant c_e. Gap: the level curve
+gives a continuous kappa only if J is C^1 in both variables; at non-integer v the t-derivative of J is not on
+file (row 708 Lemma 4.1 gives joint continuity of G and dG/dv only). I did not close this gap, because the
+direction that matters, "(*) implies the target at every coupling on the way" (2.1 (a)), needs nothing.
+
+## 3. Algebra of the two-period weights (written after Section 2)
+
+Setting: one box, one coupling t at which the neutral levels are differentiable (input (RK) of row 710, read
+in row 1517 2.1), one real v >= 4. p_i = p_i(v), P = sum_j p_j^2 = e^(-J(v, t)) the purity,
+w_i = V_i - kappa E_i.
+
+### 3.1 Lemma Q (proved)
+
+(a) p_i(2v) = p_i(v)^2 / P. So homogeneous (*) at (v, t) is
+
+        sum over i >= 1 of q_i w_i <= 0,   q_i := p_i (1 - p_i/P),
+
+    and (VIR_kappa) at (v, t) is the same with p_i in place of q_i.
+(b) If s(v) <= 1 then q_i >= 0 for every i >= 1.
+(c) If J(v, t) <= j then (2 - e^j) p_i <= q_i <= p_i for every i >= 1. For j = 0.158 (the value
+    J_0 + B/2 of the consumer's path) the factor is above 0.82.
+(d) (LEV_kappa), that is w_i <= 0 for every i >= 1, implies homogeneous (*) at every (v, t) with s(v) <= 1.
+    Without s(v) <= 1 it does not: two excited levels with r_1^v = 1, r_2^v = 1/2, w_1 = -1, w_2 = 0 give
+    p_1(v) = 2/5 < p_1(2v) = 4/9, so <w>_v = -2/5 > <w>_2v = -4/9.
+
+Proof. (a) p_i(2v) = r_i^(2v)/(1 + s(2v)) = p_i(v)^2 (1 + s(v))^2/(1 + s(2v)), and
+P = (1 + s(2v))/(1 + s(v))^2. <w>_v - <w>_2v = sum_(i>=1) w_i (p_i(v) - p_i(2v)) because w_0 = 0.
+(b) s <= 1 means p_0 >= 1/2. For i >= 1, p_i <= 1 - p_0 <= 1/2 <= p_0. x(1 - x) increases on [0, 1/2], so
+p_i (1 - p_i) <= (1 - p_0) p_0 <= p_0^2, that is p_i <= p_0^2 + p_i^2 <= P. (c) p_i <= 1 - p_0 = s/(1 + s),
+and G <= J (Lemma B of row 1515) gives s <= e^j - 1, so p_i <= 1 - e^(-j). P >= e^(-j). So
+p_i/P <= e^j - 1. (d) from (a), (b); the example: weights 1, 1, 1/2 give p_1(v) = 1/(5/2), and squared
+weights 1, 1, 1/4 give p_1(2v) = 1/(9/4). QED
+
+### 3.2 Lemma DY (the thermal sum is a dyadic superposition of two-period functions; proved)
+
+For every real v >= 4 and every t:  G(v, t) = sum over k >= 0 of 2^(-k-1) J(2^k v, t).
+Consequence: if homogeneous (*) holds on [t_0, t_1) along each of the characteristics 2^k v(t), k >= 0, of one
+schedule kappa, then G(v(t), t) <= G(v_0, t_0) on [t_0, t_1]: the conclusion of Theorem TR of row 708 for the
+neutral trace. With errors h_k on the k-th characteristic the bound is
+G(v(t), t) <= G(v_0, t_0) + sum_k 2^(-k-1) integral of h_k.
+
+Proof. sum over k < m of 2^(-k-1) (2 G(2^k v) - G(2^(k+1) v)) = G(v) - 2^(-m) G(2^m v), and
+0 <= G(2^m v) <= G(v). The consumer on the k-th characteristic gives J(2^k v(t), t) <= J(2^k v_0, t_0) +
+integral of h_k; multiply by 2^(-k-1) and sum (all terms are non-negative and the series converge). QED
+
+Reading. (i) (*) on the dyadic ladder of one schedule is **stronger** than the transport conclusion of
+(VIR_kappa) on its base characteristic. (ii) On one characteristic the two are incomparable for one fixed
+kappa (check 1516's three-level example: coefficients 8 w_1 + w_2 against 7 w_1 + w_2; by Lemma Q (a) these
+are 73 p and 73 q up to rounding of the common factor: q_1/p_1 = 1 - (8/73)(5329/4161) = 0.8595,
+q_2/p_2 = 0.9824). (iii) The separation lives in the margin of Lemma Q (c): the two tests weigh the same
+levels with weights that differ by a factor between 0.82 and 1 on the consumer's path.
+
+### 3.3 Proposition F: (*) in the frame of row 1517 (proved in the setting of Lemma CONJ)
+
+Setting of Lemma CONJ (row 1517 2.1, `gap-r11-tool-design-fable.md` L66-86), on the neutral space:
+That = T/lambda_0, Phi(r) = r log(1/r), D_A = That' - [A, That] for bounded A. Put, for real v >= 4,
+
+    rho_v := That^(v-1)/Tr That^v,    sigma_v := rho_v - rho_2v,
+
+and let rho_v^+, sigma_v^+ be their parts on the orthogonal complement of the vacuum vector. Then, at a
+coupling where the neutral levels are differentiable:
+
+(a) dJ/dt = 2v Tr(sigma_v D_A) for every bounded A, and -v dJ/dv = 2v Tr(sigma_v Phi(That)). So
+
+        (*) at (v, t)   <=>   Tr( sigma_v^+ (D_A - kappa Phi(That)) ) <= h/(2v),
+        (VIR_kappa) at (v, t)   <=>   Tr( rho_v^+ (D_A - kappa Phi(That)) ) <= 0.
+
+(b) sigma_v^+ and rho_v^+ are functions of That. If s(v) <= 1 then sigma_v^+ >= 0, and if J(v, t) <= j then
+    (2 - e^j) rho_v^+ <= sigma_v^+ <= rho_v^+.
+(c) rho_v = sum over k >= 0 of sigma_(2^k v) (norm convergent on the complement of the vacuum).
+(d) If the form inequality Re <phi, D_A phi> <= kappa <phi, Phi(That) phi> holds for one A and all phi
+    orthogonal to the vacuum, then homogeneous (*) holds at every (v, t) with s(v) <= 1.
+
+Proof. (a) In the eigenbasis, Tr(rho_v D_A) = sum_i r_i^(v-1) <psi_i, D_A psi_i>/Tr That^v
+= sum_i r_i^(v-1) r_i'/Tr That^v (Lemma CONJ (a)) = sum_i p_i(v) V_i, using r_i' = V_i r_i. So
+Tr(sigma_v D_A) = <V>_v - <V>_2v = (dJ/dt)/(2v). Tr(rho_v Phi(That)) = sum_i p_i(v) E_i = Ebar_v. The vacuum
+contributes 0 to both forms: r_0 = 1 for all t, so <psi_0, D_A psi_0> = r_0' = 0, and Phi(1) = 0.
+(b) sigma_v = f(That) with f(r) = r^(v-1)/Tr That^v - r^(2v-1)/Tr That^2v, and f(r_i) = q_i/r_i for i >= 1;
+Lemma Q (b), (c). (c) the telescoping of Lemma DY at operator level; rho_(2^m v)^+ tends to 0 in norm.
+(d) sigma_v^+ is a non-negative combination of the projections on the excited eigenvectors, by (b). QED
+
+**The row's three questions on the frame.**
+
+1. *Is (*) a form bound for a generator class?* Yes, in exactly the sense in which (VIR_kappa) is one: it is
+   the form D_A - kappa Phi(That) evaluated in one positive operator, sigma_v^+ in place of rho_v^+. The
+   generator classes of table 2.2 of row 1517 do not depend on the operator in which the form is tested. So
+   the table is unchanged: A = 0 (Way 1), norm and locality (Way 2), quasi-adiabatic (needs the gap),
+   vacuum transport fields (route B1 with (T), (T-avg)), all A ((LEV_kappa), which implies (*) by (d)).
+2. *Does the selective form bound of row 1517 6.1 reappear?* Yes, word for word, with "the cold thermal
+   states rho_v^+" replaced by "the cold two-period operators sigma_v^+". It is not a weaker demand: on the
+   consumer's path 0.82 rho_v^+ <= sigma_v^+ <= rho_v^+, the two operators commute, and by (c) the cone
+   generated by the sigma contains the rho. A method that proved the bound for sigma_v^+ and not for rho_v^+
+   would have to resolve single levels inside that margin; that is knowledge of the eigenvectors, the case
+   Lemma CONJ (c) calls equivalent.
+3. *The floor*: Section 4.
+
+## 4. The floor for (*) (written after Section 3)
+
+### 4.1 Corollary FLOOR-2 (proved; the contrapositive of the consumer, with the cold refinement)
+
+Let a model have a positive transfer operator on a box and a projection P_0 that commutes with it and keeps
+the vacuum (P_0 = 1 is allowed), with the regularity of row 708 Lemma 4.1 for the projected trace. Let
+s_0 < s_1, an integer u >= v_e >= 4, and eta >= 0 with J(v_e, s_0) <= eta and J(u, s_1) > eta + B/2. Then
+for every admissible pair (kappa, h) and every eps > 0 there is s in [s_0, s_1) with
+
+    J(v(s), s) <= eta + B/2 + eps   and   D_t^+ J(v(s), s) > 2 kappa(s) v(s) (Ebar_v - Ebar_2v) + h(s).
+
+In words: on the way the two-period inequality fails at a point where the box n^3 x v(s) is still pure.
+
+Proof. Put Psi(s) = J(v(s), s) - integral of h over [s_0, s], continuous, Psi(s_0) <= eta. If (*) held at
+every s with Psi(s) < eta + eps, then Psi <= eta on [s_0, s_1]: otherwise let s' be the infimum of the s
+with Psi(s) > eta; Psi(s') = eta, so Psi < eta + eps on a right neighbourhood of s', where (*) makes Psi
+non-increasing (the argument in the proof of Theorem TR), against the choice of s'. Psi(s_1) <= eta gives
+J(u, s_1) <= J(v(s_1), s_1) <= eta + B/2, against the hypothesis. So (*) fails at some s with
+Psi(s) < eta + eps, where J(v(s), s) < eta + eps + B/2. QED
+
+### 4.2 Where it applies (the model facts are recalled or read, as marked)
+
+- **Ising member of row 705 4.1** (four-dimensional Ising, P_0 = 1). Read, proved there for each fixed box:
+  as the coupling grows, lambda_1/lambda_0 tends to 1 and all other ratios to 0. So J(u, .) tends to
+  2 log 2 - log 2 = log 2 = 0.693 > B/2 + eta for every u and every box. Entrance at small coupling:
+  recalled (high-temperature expansion), constants not computed. So FLOOR-2 applies on every box: (*)
+  fails for every schedule and every error within the budget, at a pure point, before the purity reaches
+  about 0.855. The member kappa = 0 fails in the plain form: the positive variation of J(u, .) exceeds B/2.
+- **Ising with the spin-flip-even projection as P_0** (not the class member; added because (*) is a
+  neutral statement). In a fixed box at large coupling the odd partner of the vacuum is projected out and
+  J tends to 0. So the two-phase region is not a ceiling for the neutral purity. The floor then sits at the
+  critical coupling only (guide: there the even gap of the box n^3 is of order 1/n and u = n/512, so the
+  box is hot). The same holds for Z_2 gauge theory at large beta with the centre-neutral projection: the
+  seven flux partners (row 705 4.1, last line) are projected out.
+- **Compact U(1)** (recalled, as in row 708 L58 and row 1517 4.2: a seed at strong coupling; no gap at weak
+  coupling, Guth; Frohlich and Spencer). Guide for the size: photon levels 2 pi abs(k)/n at u = n/512 have
+  u E = 2 pi abs(k)/512, so the box is hot and J is large. FLOOR-2 then applies across the transition.
+- **K7** (the mixed-action weight on its first-order line, row 708 L48; recalled). Two coexisting phases
+  that no centre symmetry exchanges: purity near 1/2 on large boxes at coexistence. FLOOR-2 applies. So no
+  proof of (*) can use the group, the centre, the twists, reflection positivity or the class lemmas only;
+  this is the same test as for (VIR_K).
+
+**At which step.** The consumer has one analytic step, (*) itself. FLOOR-2 says it fails at a pure point of
+the path inside the crossing interval. In the frame of Section 3 the failing line is the form bound for D_A
+tested in sigma_v^+ (Proposition F (a)); for the member kappa = 0 it is the seam majorant: the positive part
+of 12 u n^3 (x_u - x_2u) has integral above B/2. This is Corollary FLOOR of row 1517 with rho replaced by
+sigma, and with one difference: the neutral projection removes the symmetry-related two-phase ceiling
+(second and third bullets), so for (*) the Ising-type failure is located at the critical window, not in the
+whole ordered phase.

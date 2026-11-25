@@ -1,3 +1,5 @@
+-rw-r--r--@    1 jonBridger  staff   39177 Nov 25 00:56 gap-twoperiod-solve-fable.1795586175.gap-twoperiod-solve-fable.md
+-rw-r--r--@    1 jonBridger  staff   22589 Nov 25 00:53 gap-twoperiod-solve-fable.latest.gap-twoperiod-solve-fable.md
 lead: anthropic/claude-fable-5-2/high mac-mini-worker
 lease_until: 2026-11-25T17:37Z
 

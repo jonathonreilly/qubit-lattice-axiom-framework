@@ -11,6 +11,7 @@ Not checked by another model. Research-stage working state; nothing here is a pu
 - 2026-11-25T05:03Z: file created. Plan below. Nothing proved yet.
 - 2026-11-25T05:04Z: read the row, FINISH rule sections, GOAL.md, row 708 Sections 1-5 (`gap-mid-max.md` L21-216), row 710 Sections 2-4, 6-9 (`gap-vir-sc.md`), row 1515 in full (`gap-seed-direction-fable.md`), registry lines R10-R12, W-CUBE-23. Section 1 written.
 - 2026-11-25T05:21Z: Section 2 written. First candidate (a conjugated operator inequality with the vacuum transport as generator) derived blind, then found on file: route B1 of row 669, row 913 3d, row 1356 Ways 1 and 3. Not presented as new. Memory 37 percent free: no numeric job in this row.
+- 2026-11-25T05:25Z: Sections 3 and 4 written (the trace-anomaly clause needs a volume term; Proposition TR2: restarted transport, any constant C in K <= C log L, cold boxes only; Corollary FLOOR).
 
 ## 0. Plan
 
@@ -102,4 +103,129 @@ I derived the vector-field row blind in this session (the level velocity equals 
 transport field averaged in the kinetic measure of the level) and then found it at the anchors above. It is
 the lane's B1. I do not present it as a step. This is the fourth record of that return (row 913 3d.2 counts
 three).
+
+## 3. The trace-anomaly clause of (R11): a single box cannot carry it (written 2026-11-25T05:25Z)
+
+### 3.1 Proposition VOL (proved as a chain rule; the scaling hypothesis is a definition, not a lattice fact)
+
+"Trace anomaly with relative error of order one" must mean a scaling law for the box levels. Write it exactly:
+
+    (SCAL)  E_i(s; b) = a(s) eps_i(b a(s))   for the levels of the cube b^3, with a > 0 decreasing and C^1 in s,
+            and eps_i C^1 in the physical side L = b a(s).
+
+Under (SCAL), with kappa(s) := -a'(s)/a(s) > 0 and sigma_i := (d log eps_i / d log L)(b a(s)):
+
+    (V1)  -(d/ds) log E_i(s; b) = kappa(s) (1 + sigma_i).
+    (V2)  With G a function of (t a(s), b a(s)) and b read as a real variable:
+          dG/ds = -kappa (t dG/dt + b dG/db).
+
+Proof. log E_i = log a + log eps_i(b a); d/ds log eps_i(b a(s)) = sigma_i a'/a. (V2): G = sum-type function of
+the products t E_i = (t a) eps_i(b a). QED
+
+Reading (argued; the sizes are guide values).
+- The ratio (action deficit)/(energy) of a level is kappa (1 + sigma_i). It is **not** the same for all levels
+  of one box. Examples: a massive particle at rest in a large box, sigma about 0; one unit of momentum,
+  sigma = -(2 pi/L)^2/eps^2 in (-1, 0); a pair of torelons in the neutral sector, sigma about 1; the levels of
+  a small box, eps proportional to 1/L up to logarithms, sigma about -1 (the level in lattice units depends on
+  b only, and its velocity vanishes to leading order).
+- So no identity on one box with one coefficient can "produce the ratio". The exact scaling statement has
+  three variables, (V2). On the lattice b is an integer, and the discrete form of (V2) compares the box b at s
+  with the box b' at s': one block step. That is the statement of row 708 4.5 (L184), the Q2 chain and (CAS)
+  (row 708 L64-67, 5.2). All are closed lines.
+- For the consumer the volume term has a sign: (VIR_K) with K = kappa holds under (SCAL) if and only if
+  dG/db >= 0 (V2), and (LEV_K) holds with K = kappa (1 + sup sigma_i). So a single-box tool must prove two
+  things at once: a bound for kappa (the lattice beta function, read from the box, is bounded away from
+  zero; row 708 L176), and a bound for the volume slopes. At a transition the first one fails: kappa is the
+  logarithmic derivative of the correlation length.
+- The published lattice sum rules (Michael; Rothe; Karsch's anisotropy coefficients) are the
+  Hellmann-Feynman identity plus (SCAL); so I recall them, and row 711's digest read abstracts only
+  (`prior/gap-vir-lit.md` L23-33). They assume the scaling law. They do not supply it.
+
+Verdict on the clause "a lattice identity that plays the part of the trace anomaly": on one box it does not
+exist in the form the trigger names; on two boxes it is a block step at order-one coupling, a closed line. This
+is row 708 4.5 with the reason made explicit ((V1): the level-dependent slope). Not a new line.
+
+## 4. The consumer accepts more than (VIR-log): restarted transport (written 2026-11-25T05:25Z)
+
+### 4.1 Proposition TR2 (proved given the inputs listed; one author, unchecked)
+
+Inputs, read as statements and not re-derived: Theorem TR (row 708, `gap-mid-max.md` L120-132); the start in
+the proof of Corollary TR1 (L156: for beta_0 <= 1/25600, g(t_0; 256^3; beta_0) < 3.7 x 10^(-4), t_0 = 8); from
+`gap-seed-shape.md` (row 705, checked by Claude Opus 5.5, row 707): the line "r = 2, two stages" (L138:
+S(a; (2a)^3) <= 1/1650 gives S(a; (4a)^3) <= 0.0396), Theorem SH (i) for the pair (a, (4a)^3) with j = 2 and
+K_SH = 22.2 (L89-99; these constants are the ones used in the proof of TR1), and Lemma E' in the form used in
+the proof of SH (ii) (L107): for an integer L >= 2^k 4a, g(2^k a; L^3) <= (L/(3 2^k a))^3 log(1 + s_k), with
+s_k := S(2^k a; (2^k 4a)^3).
+
+**Statement.** Let 0 < beta_0 <= 1/25600 < beta_1 and C >= 1. Assume
+
+    (VIR-Clog)  there is L_0 such that for every even L >= L_0 there is a continuous K_L on [beta_0, beta_1]
+                with 0 <= K_L <= C log L and (VIR_(K_L)) on the cube L^3 for every s in [beta_0, beta_1) and
+                every real t in [4, L/2].
+
+Then for every s in [beta_0, beta_1] there is an even L with S(L/2; L^3; s) < 5.1 x 10^(-4) < 1/1650. So the
+conclusions of Corollary TR1 hold at every such s (seed, gap of all large cubes).
+
+**Proof.** Put delta := 1/(2C) and eps_0 := 5.05 x 10^(-4).
+
+Step. Let sigma in [beta_0, beta_1) and let a >= 4 be an integer with S(a; (2a)^3; sigma) < 5.1 x 10^(-4). Then
+for every sigma' in [sigma, min(sigma + delta, beta_1)] there is an even L with S(L/2; L^3; sigma') < 5.1 x 10^(-4),
+and L/2 >= 4.
+- By the two-stage line, s_0 := S(a; (4a)^3; sigma) <= 0.0396, and theta := 22.2 x 0.0396 < 0.88. By SH (i),
+  s_k <= theta^(2^k)/22.2 for every k >= 0.
+- Put A := 2^k a and L := 4 A^2 (even, L >= 16 A > 2^k 4a). By Lemma E', at the integer time A >= 4:
+  G(A; L^3; sigma) = g(A; L^3; sigma) <= (4A/3)^3 theta^(2^k)/22.2. The right side is (64/27) a^3 8^k theta^(2^k)/22.2,
+  which tends to 0 as k grows. Fix k so large that it is at most eps_0 and L >= L_0.
+- Theorem TR on the cube L^3, on [sigma, sigma'], with t_0 = A and K = K_L. Its factor is
+  E(sigma'') <= exp(delta C log L) = L^(1/2) = 2A for sigma'' in [sigma, sigma']. So the times it reads lie in
+  [A, 2A^2] = [A, L/2], inside [4, L/2]. It gives G(A E(sigma''); L^3; sigma'') <= eps_0.
+- G is non-increasing in t and L/2 >= A E(sigma''). So G(L/2; L^3; sigma'') <= eps_0 and
+  S(L/2; L^3; sigma'') <= e^(eps_0) - 1 < 5.1 x 10^(-4). L/2 = 2A^2 is an integer >= 4.
+
+Start. At beta_0, G is non-increasing in t and 8 <= 128, so S(128; 256^3; beta_0) < e^(3.7 x 10^(-4)) - 1 <
+5.1 x 10^(-4). This is the hypothesis of the Step with a = 128.
+
+Induction. sigma_0 = beta_0, sigma_(j+1) = min(sigma_j + delta, beta_1). The Step at sigma_j, with a the half
+side of the cube found for sigma_j, covers [sigma_j, sigma_(j+1)]. After at most 2C (beta_1 - beta_0) + 1 steps
+the interval is covered. QED
+
+**Remark COLD (proved).** The hypothesis is needed only on cold boxes: (VIR_(K_L)) at the pairs (t, s) with
+G(t; L^3; s) < 10^(-3). Proof: in Theorem TR put phi(s) = G(t_0 E(s); s), continuous, phi(sigma) <= eps_0. If
+phi exceeded eps_0 somewhere, let s* be the last point before it with phi <= eps_0 on [sigma, s*]; phi(s*) =
+eps_0 < 10^(-3), so by continuity (VIR) holds along the curve on a right neighbourhood of s*, where the proof of
+TR makes phi non-increasing; a contradiction. (Remark CH of row 708 already restricts to the curve.)
+
+**What TR2 changes.** Row 708's (VIR-log) and trigger (R11) ask for an integral of K below
+log(b/(2 ceil(log_2 b))) on the whole interval, "K growing more slowly than log n". TR2 accepts
+**K <= C log L with any constant C**, on cold boxes only. The price is the size of the cube: the half side
+goes from a to about 2 (2^k a)^2 at each of about 2C (beta_1 - beta_0) steps. I did not find the restart on file
+(grep "restart", "interleav", "any constant", "sub-interval" in `gap-mid-max.md`, `gap-mid-check.md`,
+`gap-vir-sc.md`, `gap-seed-direction-fable.md`: no hit; (DEF_K), L162, says "at most c log b" with no
+statement on c). It is a consumer-side weakening. It does not make the tool: a growth of K like (log L)^p
+with p > 1 is not covered (the steps delta_j then shrink too fast), and the failure modes of row 708 L174
+(K like b at a critical point or with two phases) are far above both thresholds.
+
+### 4.2 Corollary FLOOR (the step where any tool fails for the Ising member and for compact U(1))
+
+Proved given TR2 and, for each named model, the two recalled facts in brackets.
+
+Let a model of the class have the start of TR2 at one coupling s_0 and no seed at s_1 > s_0 (no even L with
+S(L/2; L^3; s_1) < 5.1 x 10^(-4)). Then (VIR-Clog) fails on [s_0, s_1] for every C: for every C and every L_0
+there are an even L >= L_0, a coupling s in [s_0, s_1) and a real time t in [4, L/2] with
+G(t; L^3; s) < 10^(-3) and
+
+    D_s G(t; L^3; s) > - C log L * t (dG/dt)(t; L^3; s).
+
+(If not, the constant K_L = C log L would serve in TR2 with Remark COLD.) In words: somewhere on the way the
+thermal sum of a cold cube rises faster than at the logarithmic rate C log L, for cubes of unbounded side.
+- Ising member of row 708 4.4 (`gap-seed-shape.md` 4.1) [a seed at small J by the high-temperature
+  expansion; none at large J, two phases; both recalled as in row 708]. The cold cube whose sum rises is the
+  one in which the tunnel splitting appears (row 708 L174: K_b like b).
+- Compact U(1) [strong-coupling seed; no gap at weak coupling: Guth; Frohlich and Spencer; recalled as in
+  row 708 L58]. The constants of the start differ from 1/25600 and are not computed here.
+
+So for every tool the failing step is its last inequality, read on one cold cube at one coupling inside the
+crossing interval. In the frame of Section 2 that inequality is the form bound for D_A: for a vector-field
+generator it is the strain bound, and the strain of every vacuum transport on some cold cube exceeds
+(C/2) log L in the kinetic measure of the thermal state.
 

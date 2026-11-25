@@ -3,7 +3,7 @@ lease_until: 2026-11-25T16:32Z
 
 # gap-seed-direction-fable (queue row 1515): direction for the physical seed after rows 1510 and 1511
 
-Status: IN PROGRESS. Research-stage working state; nothing here is a public claim. Unchecked.
+Status: FINISHED (see Section 8). Research-stage working state; nothing here is a public claim. Unchecked.
 Pinned at commit c4db00930 on branch claude/ym4d-hard-route. Started 2026-11-25T04:32Z (date -u).
 
 ## 0. Plan (written first, per the save protocol of the row)
@@ -40,7 +40,7 @@ Steps, each appended as its own section when done:
 - 2026-11-25T04:51Z Section 4 written (input (d): obstruction does not reach it; source missing).
 - 2026-11-25T04:52Z Section 5 written (criterion (3): no consumer, no method; two hand probes).
 - 2026-11-25T04:52Z Section 6 written (verdict of the third kind, triggers (R11), (R12), next two rows).
-<!-- LOG-MARKER -->
+- 2026-11-25T04:58Z 3.2 rewritten (one root interval), continuity paragraph added to 3.3, m_beta number corrected in 5.3; cross-branch search done; Sections 7-8 written. Re-read of the proved items done: Lemma B, WIN, 3.1, 3.2 recomputed, no further change. Finished.
 
 ## 1. The target and the two results, in the form used below (read; nothing new here)
 
@@ -439,4 +439,64 @@ Decisive outcome: proved, and Proposition WIN (ii) is a theorem on the covered s
 closed as a theorem; refuted or stuck, and it names the first bound of the release that is not uniform
 in the level. The direction verdict of 6.1 does not depend on this row, so the lead may skip it.
 
-<!-- APPEND-MARKER -->
+## 7. Repo search, labels, credits, what was not done
+
+Written 2026-11-25T04:58Z (date -u).
+
+### 7.1 Repo search
+
+- Local, `FINISH.md`, `library/open-core.md` and `library/gap-*.md`: the names (RATE-io), (VIR-top), (UV-TS),
+  (RB-win) and the two inequalities of Lemma B in that form: no hit. "rate form": 8 rows, 20 files ((A1) in
+  rate form, trigger (R3)). "relative bound": 3 rows, 24 files. "integral method": 3 files
+  (`gap-mid-max.md`, `gap-phys-seed.md` and one inventory). `library/open-core.md` has no entry for the seed,
+  the purity or the transport along the coupling.
+- The lower half of Lemma B is in the proof of Fact PUR (`gap-k2-tool-design-fable.md` L111-118: P <= 1/(1 + s)).
+  The upper half is one line. I call neither new.
+- The home of Sections 2-3 is row 708 (`gap-mid-max.md` Section 4), checked in `gap-mid-check.md` ("no numbered
+  statement fails"; Lemma 4.1, 4.2 hold after correction).
+- Cross-branch (bare blob-less fetch in my /tmp scratch folder): the 83 mass-gap `.md` files of main and
+  the 12 `MASS_GAP*.md` files of PR 10114, pattern "integral method, trace anomaly, interaction measure,
+  seam majorant/response/bound, relative transport/bound, VIR_K, thermal sum is bounded". Main: 19 files,
+  all landed copies of the lane's own notes of the row-708 family (`gap-mid-max.md`, `gap-mid-check.md`,
+  `gap-vir-sc.md`, `gap-phys-seed.md`, `prior/gap-vir-lit.md` and others) and one soft-kernel note on
+  regional estimates. PR 10114: no hit. PRs 10133, 10134, 10141, 10144 were not searched in this row.
+- Sussman-Alpoge (with Claude and Codex): not searched again. Row 1511's search stands (outline 4638-4641:
+  a mass gap "requires a separate spectral estimate"; CA-I 2699-2713 lists the gap among the omissions).
+  This row uses the release only through rows 1461 and 1511.
+
+### 7.2 Labels
+
+- **Proved here** (one author, checked by no one): Lemma B; the inequality of Proposition WIN and its case
+  (i), which rests on row 1511's rate bound (unchecked; check 1514 is running); the relabelling 3.1 and the
+  cut of 3.2 (identities).
+- **Read**, not re-derived: everything cited from rows 705, 708, 1461, 1468, 1496, 1510, 1511 and
+  `gap-os-equiv.md` (5).
+- **Argued or sketched**: the readings in 2.3 and 2.4; 3.2 (the bound on the first term); 3.3 with its
+  continuity paragraph; 3.4; 4.1; 4.3; Section 5.
+- **Guessed**: (RB-win) is true; no certificate of feasible size exists for criterion (3); no relative
+  bound is on file outside row 708.
+- **Guide numbers only**: m l of order 1e4; 0.755 and 453 in 5.3; the sizes in 2.4 and 3.2.
+
+### 7.3 Not done
+
+- No numeric run: `memory_pressure` read 36 percent free, below the 50 percent rule. Nothing here needed
+  one. No Lean.
+- (RB-win) is not proved. Criterion (3) at side four is not decided.
+- I did not read Theorem SH (row 705) or `gap-os-equiv.md` (5) in full, only their statements as quoted.
+  The checks of rows 1510 and 1511 (rows 1513, 1514) were not on file at the pinned commit.
+- This is a direction row. It claims no progress on (PUR-io).
+
+### 7.4 Credit
+
+Sussman and Alpoge, with Claude and Codex, for the release, the calibration and the outline. Balaban for
+the block method. Row 1511 (gpt-6.2-astra) for bound (1), criterion (3), bound (4), the rate bound and the
+calibrated obstruction, and for naming the three seam inputs. Row 708 (Claude Fable 5.2) for Lemma 4.1,
+Theorem TR, (VIR_K), (DEF_K), (VIR-log) and the verdict on the lattice trace anomaly; its check
+`gap-mid-check.md`. Rows 705, 1461 and 1468 with checks 1462, 1465; rows 1474, 1496, 1510. Dobrushin and
+Shlosman for the block criterion. Engels, Fingberg, Karsch, Miller and Weber, and Boyd and others, for the
+integral method (recalled). Michael and Rothe for the lattice action sum rules (row 711's reading list).
+
+## 8. Result
+
+RESULT: Row 1515 (Claude Fable 5.2 high, Mac mini worker 1; author only, checked by no one; no numeric run because memory was at 36 percent free, no Lean, nothing committed). Outcome of the third kind: no attack row exists on present knowledge; (PUR-io) is not moved. Decided for the four inputs that row 1511's calibrated obstruction leaves open. (b) Cancellation between seam responses is not an input: log(1 + s(u)) <= -log P <= 2 log(1 + s(u)) (Lemma B, proved). (c) Rates on separate coupling intervals with absolute prefactors fail on the last root interval: a terminal interval with its own rate must shrink like b^(-4K) (Proposition WIN (i), proved from row 1511's rate bound, itself unchecked); on a window of fixed width this needs the rate bound at non-root couplings, (RB-win), not proved. Below the last root interval (c) is not needed, because Lam_K(l) = Lam_(K-1)(l b) + the integral over one root interval (identity). (a) Scaling of the action insertion is forced; integrated alone it is boundedness of the thermal sum in the cutoff (UV-TS), ultraviolet and not small; to carry smallness it must be a relative bound, which is (VIR_K) of row 708 (closed line, registry RB), or its weak-coupling form (VIR-top), a carry with no consumer. (d) The in-law carry of row 1510 is not reached by the obstruction, since its consumer is a rate with any prefactor (RATE-io); it stops at its source, T2 of row 1474, and at (FL). Criterion (3) at side four has no method in either direction and no consumer, so row 1511's second row is not recommended. Open: (RB-win); (3) at side four; every closed line named. Triggers added: (R11) a relative transport bound at one order-one coupling; (R12) a carry from an order-one bare coupling to the release floor. Next: a cross-provider check of this file; then, held and optional, a short proof row for (RB-win); no attack or build row.
+

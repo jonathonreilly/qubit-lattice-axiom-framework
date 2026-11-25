@@ -1,3 +1,5 @@
+-rw-r--r--@    1 jonBridger  staff   28684 Nov 25 01:24 gap-r11-thermal-solve-fable.1795587843.gap-r11-thermal-solve-fable.md
+-rw-r--r--@    1 jonBridger  staff   28684 Nov 25 01:23 gap-r11-thermal-solve-fable.latest.gap-r11-thermal-solve-fable.md
 lead: anthropic/claude-fable-5-2/medium mac-mini-worker
 lease_until: 2026-11-25T18:09Z
 

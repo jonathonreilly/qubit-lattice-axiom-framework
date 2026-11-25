@@ -12,6 +12,8 @@ below are not yet checked by another model. Nothing here is a status claim.
 - 2026-11-25T05:38Z read: row 1520, FINISH rule sections, GOAL.md, check 1516 in full (section (v) = statement (*), consumer, separation example), row 1517 in full (CONJ, VOL, TR2, COLD, FLOOR, 6.1).
 - 2026-11-25T05:45Z Sections 1-2 written: Theorem EQ (the existence form of (*) contains kappa = 0 at period u, which is the target in integrated form; (*) forces the purity bound at every bare coupling on the way). Registry: TWO-PER at open-registry L1020; R11 L1018.
 - 2026-11-25T05:49Z Sections 2.3-2.4, 3, 4 written: Proposition H (integral of h is at least J(u, beta_K) - o(1)), Lemma Q, Lemma DY, Proposition F (frame of row 1517 applies; selective form bound reappears), Corollary FLOOR-2. Memory 38 percent free: no numeric job.
+- 2026-11-25T05:54Z registry grep and cross-branch search done (Section 7.1). Two wording fixes in 2.2 and 3.2 (exact arithmetic of the three-level example; citation for beta_K unbounded). Sections 5-8 follow.
+- 2026-11-25T05:54Z Sections 5-7 written (integer-period forms, verdict EQUIVALENT, registry change, next two rows, search, labels). Re-read of the proved items done: two wording fixes (Lemma Q (d) example with a simple vacuum; 6.1 item 3). Section 8 written. Finished.
 
 ## Plan
 
@@ -97,13 +99,18 @@ integral of dJ/dt. (c) The first arrow is (b), the second is (a) with v_e = u. U
    the statement E(u) is exactly J(u, beta_K) - J(u, t_0) <= B/2: the purity bound with the constant B/2 in
    place of B (up to 7.4 x 10^(-4)). Without (MON_u) it is at least as strong. I cannot prove (MON_u) for
    Wilson SU(2) (it is "the box n^3 x u heats up when the coupling grows"; a plaquette comparison between two
-   tori; guide: true in the scaling picture; no Griffiths inequality is on file for SU(2)). The row's rule
+   tori; no Griffiths inequality is on file for SU(2)). Guide, used in no proof: in the scaling picture
+   J(u, t) is about (l x)^3 e^(-c x) up to a constant, with x >= 1 the ratio of the correlation lengths at
+   beta_K and at t and c = m l/512; this is monotone in t on the scaling range when c >= 3, that is for
+   l >= 1536/m, and it has an interior maximum when c < 3. The target may choose l, so (MON_u) is expected
+   for the large l that the target would use. It is false for a weight with a bulk transition (K7). The row's rule
    "equivalent is not progress" applies either way: a proof of E(u) is a proof of the target with B/2, and
    under (MON_u) the converse holds too.
 4. **(*) is stronger than (PUR-io) in one respect that matters.** By (a), E(v_e) at the cutoff K gives the
    purity bound J(u, t) <= J(v_e, t_0) + B/2 < B for the fixed lattice n^3 x u at **every bare coupling** t in
    [1/25600, beta_K], not only at the calibrated root. (PUR-io) asks it at beta_K only. Letting K run through
-   the infinite set (beta_K is unbounded; row 1511's calibration, read), E gives: at every bare coupling
+   the infinite set (beta_K = B_K + O(1) with B_K = s K + O(log(1 + K)), s > 0: row 1461,
+   `gap-crux-direction-astra62.md`, displays (1)-(2), read), E gives: at every bare coupling
    t >= 1/25600, infinitely many lattices n^3 x n/512 have neutral purity above 457/625. That is a neutral
    seed of the bare Wilson lattice at every coupling, a statement of the kind of (NOCRIT) (row 708 5.1; the
    analogous remark for (R11') is in row 1517 6.1, L288-291). Row 1496 4.1 (as quoted in row 1515 1.5,
@@ -178,7 +185,8 @@ w_i = V_i - kappa E_i.
     J_0 + B/2 of the consumer's path) the factor is above 0.82.
 (d) (LEV_kappa), that is w_i <= 0 for every i >= 1, implies homogeneous (*) at every (v, t) with s(v) <= 1.
     Without s(v) <= 1 it does not: two excited levels with r_1^v = 1, r_2^v = 1/2, w_1 = -1, w_2 = 0 give
-    p_1(v) = 2/5 < p_1(2v) = 4/9, so <w>_v = -2/5 > <w>_2v = -4/9.
+    p_1(v) = 2/5 < p_1(2v) = 4/9, so <w>_v = -2/5 > <w>_2v = -4/9. (With a simple vacuum take r_1^v
+    slightly below 1; the strict inequality persists by continuity.)
 
 Proof. (a) p_i(2v) = r_i^(2v)/(1 + s(2v)) = p_i(v)^2 (1 + s(v))^2/(1 + s(2v)), and
 P = (1 + s(2v))/(1 + s(v))^2. <w>_v - <w>_2v = sum_(i>=1) w_i (p_i(v) - p_i(2v)) because w_0 = 0.
@@ -203,8 +211,8 @@ integral of h_k; multiply by 2^(-k-1) and sum (all terms are non-negative and th
 Reading. (i) (*) on the dyadic ladder of one schedule is **stronger** than the transport conclusion of
 (VIR_kappa) on its base characteristic. (ii) On one characteristic the two are incomparable for one fixed
 kappa (check 1516's three-level example: coefficients 8 w_1 + w_2 against 7 w_1 + w_2; by Lemma Q (a) these
-are 73 p and 73 q up to rounding of the common factor: q_1/p_1 = 1 - (8/73)(5329/4161) = 0.8595,
-q_2/p_2 = 0.9824). (iii) The separation lives in the margin of Lemma Q (c): the two tests weigh the same
+are p = (8, 1)/73 and q = (392, 56)/4161 = (56/4161)(7, 1), with q_1/p_1 = 49/57 = 0.8596 and
+q_2/p_2 = 56/57 = 0.9825; hand arithmetic, 4161 = 73 x 57). (iii) The separation lives in the margin of Lemma Q (c): the two tests weigh the same
 levels with weights that differ by a factor between 0.82 and 1 on the consumer's path.
 
 ### 3.3 Proposition F: (*) in the frame of row 1517 (proved in the setting of Lemma CONJ)
@@ -300,3 +308,177 @@ of 12 u n^3 (x_u - x_2u) has integral above B/2. This is Corollary FLOOR of row 
 sigma, and with one difference: the neutral projection removes the symmetry-related two-phase ceiling
 (second and third bullets), so for (*) the Ising-type failure is located at the critical window, not in the
 whole ordered phase.
+
+## 5. The integer-period forms (the row asks for one; written after Section 4)
+
+### 5.1 The finite-period test of check 1516 (verified by hand; HOLDS)
+
+For integer v >= 2 at one coupling:
+0 <= log [ Z_+(v) Z_+(2v) / (Z_+(v+1) Z_+(2v-1)) ] <= Ebar_v - Ebar_2v.
+Proof (two lines, as in check 1516 L78). The vacuum cancels (v + 2v = (v+1) + (2v-1)), so the logarithm is
+[G(v) - G(v+1)] - [G(2v-1) - G(2v)] = integral of Ebar over [v, v+1] minus integral of Ebar over [2v-1, 2v].
+Ebar_w is non-increasing in w and v + 1 <= 2v - 1. QED
+It is a pointwise sufficient test for the right side of (*). It does not transport.
+
+### 5.2 Lemma ST (integer staircase; proved; an identity)
+
+Let 4 <= v_0 < v_1 < ... < v_m be integers and t_0 < t_1 < ... < t_m couplings. Then
+
+    J(v_m, t_m) - J(v_0, t_0) = sum over j < m of [ rise_j - drop_j ],
+    rise_j := integral over [t_j, t_(j+1)] of 12 v_j n^3 (x_(v_j) - x_(2 v_j)) dt,
+    drop_j := J(v_j, t_(j+1)) - J(v_(j+1), t_(j+1)) >= 0.
+
+For unit steps, drop_j = log [ Z_+(v)^2 Z_+(2v+2) / (Z_+(v+1)^2 Z_+(2v)) ] at v = v_j, t = t_(j+1).
+Proof. Telescoping; rise_j = J(v_j, t_(j+1)) - J(v_j, t_j) because J(v_j, .) is analytic; the drop is
+non-negative because J is non-increasing in v. QED
+
+Reading. (i) The consumer needs no real characteristic and no non-integer period: the integer-period
+statement "sum of (rise_j - drop_j)_+ <= B/2 along one staircase from (v_0, t_0) to (u, beta_K)" gives
+J(u, beta_K) <= J(v_0, t_0) + B/2. This removes the regularity question that check 1516 leaves ("transport
+still requires control along the real characteristic"). (ii) It is no first lemma: by the identity the sum
+of all (rise_j - drop_j) is the target quantity itself, whatever the staircase. The staircase with no step
+(v = u throughout, entered at (u, t_0)) is the member kappa = 0 of Theorem EQ. (iii) A step-wise form with
+content is "rise_j <= drop_j", that is J(v_j + 1, t_(j+1)) <= J(v_j, t_j): the purity does not fall when one
+time layer is added and the coupling moves by t_(j+1) - t_j. By Proposition H it can hold on a whole
+staircase only from a warm entrance, and then it is the pointwise relative statement of Section 3 in
+finite-difference form.
+
+## 6. Verdict, registry change, next two rows
+
+### 6.1 Decisive outcome: EQUIVALENT (an explicit reduction; no proof of (*), no refutation of (*))
+
+(*) with the row's entrance and budgets splits into two parts, and each is a line already on file.
+
+1. **Budget part = the seam majorant of row 1515 (E2) = the target.** Proposition H: the error h must carry
+   J(u, beta_K) up to 0.0202 ceil(log_2 n)/n. Theorem EQ: the schedule kappa = 0 at the period u (entered at
+   (u, t_0), which the same strong-coupling estimate supplies) turns (*) into "the positive part of
+   12 u n^3 (x_u - x_2u) has integral at most B/2 on [1/25600, beta_K]". Under (MON_u) that is exactly
+   J(u, beta_K) - J(u, t_0) <= B/2, the target with B/2 for B. Without (MON_u) it is stronger. For every
+   schedule, (*) gives the purity bound at every bare coupling on the way, so it is a member of the line
+   "integration along beta at a fixed lattice", which row 1496 4.1 (`gap-k2-direction-checkpoint-fable.md`
+   L126: "Equivalent to a closed line. The integrand is the target at each coupling.") and row 1380's
+   table already close.
+2. **Relative part = trigger (R11) in the frame of row 1517, with sigma_v^+ for rho_v^+.** Proposition F:
+   (*) at a point is the form D_A - kappa Phi(That) tested in the positive operator sigma_v^+, and
+   0.82 rho_v^+ <= sigma_v^+ <= rho_v^+ on the consumer's path. The generator table of row 1517 2.2 is
+   unchanged, (LEV_kappa) implies both, the selective form bound of row 1517 6.1 is the missing component of
+   both, and the floor is the same (FLOOR-2), with the one difference that the neutral projection removes
+   symmetry-related phase coexistence.
+3. **The separation of check 1516 stands, and does not change the verdict.** For one fixed kappa and h = 0
+   the two pointwise inequalities are incomparable (I re-did the arithmetic of the three-level example,
+   3.2). The separation sits inside the factor 0.82 to 1 of Lemma Q (c). In existence form each statement
+   is its own endpoint bound (J(u, beta_K) for (*), G(u, beta_K) for the neutral (VIR_kappa)), and the two
+   endpoint bounds agree up to the factor 2 of Lemma B; on the dyadic ladder (*) implies the conclusion of
+   (VIR_kappa) (Lemma DY).
+
+Not shown: that (*) fails for Wilson SU(2). Nothing here refutes it; it is true along some path if the
+target is true with B/2 and J(u, .) does not oscillate. Not shown: (MON_u). Not closed: the t-regularity of
+J at non-integer periods (named in 2.4; avoided by Lemma ST).
+
+Equivalence statement, as the lead's rule asks: I cannot show that (*) is weaker than the target, and I
+show that it is at least as strong (2.1 (a)), and exactly as strong under (MON_u) with the constant B/2
+(2.1 (c)). So TWO-PER is not progress in the sense of the rule, in any of its forms.
+
+### 6.2 Registry change proposed (for the lead; I did not edit the registry)
+
+- TWO-PER (`open-registry.md` L1020): replace "open; no proof for Wilson" by "equivalent (row 1520,
+  unchecked): budget part = seam majorant (E2) of row 1515 = the target at every bare coupling; relative
+  part = (R11) tested in sigma_v^+; merged under R11". Keep "separated from (VIR_K)" with the addition "for
+  one fixed kappa and h = 0 only".
+- R11 (L1018): the sentence "one of two candidate relative inputs; the other is TWO-PER" becomes "TWO-PER is
+  the same form bound tested in a comparable operator (row 1520 Proposition F)".
+- One fact worth a registry note: every input of the kind "a bound along beta on one fixed lattice from
+  the strong-coupling entrance" implies the neutral purity bound of that lattice at every bare coupling
+  below beta_K (2.1 (a) for (*); row 1517 6.1 for (R11')). So that family cannot be weaker than a bare
+  statement in the band, whatever the integrand.
+
+### 6.3 The next two rows and their decisive outcomes
+
+I propose no attack row on (*).
+
+**Row 1, `gap-twoperiod-solve-fable-check-astra62` (cross-provider check of this file; gpt-6.2-astra).**
+Order: (i) Theorem EQ (a)-(c), and first of all whether the consumer of check 1516 (v) accepts the entrance
+(u, t_0) and the schedule kappa = 0, as 2.2 item 1 claims from that check's own text; (ii) Proposition H;
+(iii) Lemma Q with the arithmetic of the three-level example; (iv) Lemma DY; (v) Proposition F (the two
+trace formulas, in the setting of Lemma CONJ, and the claim that the generator table is unchanged);
+(vi) Corollary FLOOR-2 and the four model bullets (which facts are proved, which recalled); (vii) Lemma ST;
+(viii) whether the t-derivative of J at non-integer periods can be bounded (it would make 2.4 exact).
+Decisive outcome: HOLDS, and the registry changes as in 6.2 (TWO-PER merged under R11); or FAILS at a named
+line, and TWO-PER stays open as written. If (i) fails because the consumer needs v_0 = ceil(log_2 n) for a
+reason I did not see, the fallback is Proposition H plus 2.1 (a), which do not use the entrance (u, t_0).
+
+**Row 2, `gap-purity-monotone-decide` (only if the lead wants the equivalence without a hypothesis; Claude
+Fable 5.2 medium or gpt-6.2-astra; I rank it low).** Decide (MON_u) for Wilson SU(2): x_u >= x_2u for the
+neutral mass-weighted mean plaquette on n^3 x u against n^3 x 2u, on [1/25600, beta_K], for u = n/512 and
+large l. Decisive outcome: PROVED, and then (PUR-io) with B/2 at one cutoff is equivalent to the member
+kappa = 0 of (*), and (PUR-io) at beta_K implies the neutral purity of the same lattice at every smaller
+bare coupling (the target is then at least as strong as a bare statement in the band; this binds trigger
+(R12) from the other side); or REFUTED at a named coupling and size by an exact argument (strong-coupling
+expansion or a small exact case), and then every fixed-lattice transport is strictly stronger than the
+target and the family is retired with that reason; or OPEN with the first failing step (I expect this:
+it is a sign statement for SU(2) with no correlation inequality on file). Either decisive outcome changes
+a registry line and no outcome supplies a method for the seed. The lead may skip it.
+
+## 7. Repo search, labels, credits, what was not done
+
+### 7.1 Repo search
+
+- Local, before calling anything new: `library/open-core.md` has no hit for "two-period", "TWO-PER",
+  "positive variation", "purity ... monotone in the coupling", "plaquette monotone", "dyadic superposition".
+  `library/open-registry.md`: TWO-PER L1020, R11 L1018, R12 L1019. `FINISH.md`: "two-period" occurs in 15
+  rows (1149, 1151, 1328, 1330, 1333, 1337, 1342, 1349, 1354, 1362, 1370, 1462, 1475, 1511, 1520); I printed
+  the context of each: all use the word for the purity Z_+(2u)/Z_+(u)^2 as a target or for a two-period
+  defect, none states (*), Theorem EQ, Proposition H, Lemma Q, Lemma DY or Lemma ST. The sentence "the
+  integrand is the target at each coupling" is on file (row 1496 4.1, L126); Theorem EQ is its exact form
+  for (*). "sigma_v", "rho_v - rho_2v" in `library/gap-*.md`: no file but this one.
+- Cross-branch (bare blob-less depth-1 fetch in my own scratch folder /tmp/ym4d-row1520-scratch): pattern
+  "TWO-PER, two-period transport / relative / response, purity transport, seam majorant, difference of the
+  mean energies, x_u - x_2u, positive variation of J" on the 83 mass-gap `.md` files of main
+  (`research/mass-gap/`) and on the 4 files `MASS_GAP*.md`, `RTARGET.md` of PR 10114: no hit. PRs 10133,
+  10134, 10141, 10144 were not searched by me; check 1516 searched all five refs for the two-period
+  relative bound and reports no hit (its L5).
+- Sussman-Alpoge (with Claude and Codex): not searched again in this row. Check 1516 L10 records that the
+  outline and CA-I to CA-III at 31a47c543775 hold no statement on purity or transport along the coupling
+  (outline 588-599, 4638-4641, 31871-31882; CA-I 2699-2713). No statement of theirs is used in a proof
+  here. The calibrated roots beta_K come from their release through rows 1451, 1453, 1461 (read).
+
+### 7.2 Labels
+
+- **Proved here** (one author, checked by no one, all elementary): Theorem EQ; Proposition H; Lemma Q;
+  Lemma DY; Proposition F (in the setting of Lemma CONJ of row 1517, at couplings where the neutral levels
+  are differentiable); Corollary FLOOR-2 (the model bullets rest on the facts marked there); the test of
+  5.1; Lemma ST.
+- **Read**, not re-derived: the statement (*), its consumer and the entrance (check 1516 (v)); Theorem TR,
+  Lemma 4.1, Lemma 4.2, the start of Corollary TR1 (row 708; checked by Claude Opus 5.5, row 709), in the
+  neutral form asserted by check 1516 (iii); Lemma B (row 1515, confirmed by check 1516 (i)); Lemma CONJ
+  and table 2.2 (row 1517, unchecked, check 1519 pending); the Ising member (row 705 4.1); the calibration
+  (row 1461 (1)-(2)); row 1496 4.1.
+- **Argued**: 2.2 item 3 beyond the sandwich; 2.3 consequence 2 (no refutation claimed); 2.4.
+- **Guessed**: that (MON_u) holds for Wilson SU(2) at the sizes the target uses.
+- **Guide only**: the scaling-picture remark on (MON_u); the sizes in the model bullets of 4.2.
+- **Recalled**: high-temperature seed of the Ising member; Guth, Frohlich and Spencer for compact U(1);
+  the first-order line of the mixed action (Bhanot and Creutz), all as in rows 705, 708, 1517.
+
+### 7.3 Not done
+
+- (*) is not proved and not refuted for Wilson SU(2). (PUR-io), the seed and the gap are not moved.
+- (MON_u) is not decided. The t-derivative of J at non-integer periods is not bounded (gap named in 2.4).
+- For the row's entrance v_0 = ceil(log_2 n) I did not construct the steep ramp to the period u (it needs
+  that bound); Theorem EQ (b) uses the entrance (u, t_0), Proposition H and EQ (a) use any entrance.
+- No numeric run (memory read 38 percent free; nothing here needed one). No Lean. No commit, no push.
+- The start constants for the Ising member and for compact U(1) were not computed.
+
+### 7.4 Credit
+
+gpt-6.2-astra (check 1516) for (*), its consumer, the entrance, the integer-period test and the
+three-level separation. Row 708 (Claude Fable 5.2 max) for Theorem TR, (VIR_K), (LEV_K), Corollary TR1;
+check 709 (Claude Opus 5.5). Rows 1511 (gpt-6.2-astra) and 1515 for (E2), the seam majorant family and
+Lemma B; row 1496 for the line "integration along beta at a fixed lattice". Row 1517 for Lemma CONJ, the
+generator table and Corollary FLOOR. Row 705 for the Ising member; row 1461 for the calibration. Kato and
+Rellich for analytic perturbation theory. Guth; Frohlich and Spencer; Bhanot and Creutz (recalled).
+Sussman and Alpoge, with Claude and Codex, for the release and the account; Balaban for the block method;
+neither is used in a proof here.
+
+## 8. Result
+
+RESULT: Row 1520 (Claude Fable 5.2 high, Mac mini worker 1; author only, checked by no one; no numeric run because memory was at 38 percent free and nothing needed one, no Lean, nothing committed). Decisive outcome: EQUIVALENT. (*) is not proved and not refuted for Wilson SU(2); it reduces to two lines already on file. Proved by hand, all elementary: Theorem EQ (for every schedule, (*) gives the purity bound J(u, t) <= J_entrance + B/2 of the fixed lattice at every bare coupling t in [1/25600, beta_K], not only at the root; the schedule kappa = 0 at the period u, entered at (u, t_0) by the same strong-coupling estimate, turns (*) into "the positive part of 12 u n^3 (x_u - x_2u) has integral at most B/2", the coupling integral (E2) of row 1515; under the monotonicity (MON_u): x_u >= x_2u, that is exactly the target with B/2 for B); Proposition H (in every case the error term must carry the target value: integral of h >= J(u, beta_K) - 0.0202 ceil(log_2 n)/n, so from the cold entrance (*) is an absolute seam-majorant statement and its relative term buys at most 7.4 x 10^(-4); homogeneous (*) from that entrance would force the purity to 1); Lemma Q (homogeneous (*) is sum q_i w_i <= 0 with q_i = p_i (1 - p_i/P), non-negative when s <= 1 and within a factor 0.82 to 1 of the thermal weights on the consumer's path; (LEV_kappa) implies it there); Lemma DY (G(v) = sum 2^(-k-1) J(2^k v), so (*) on the dyadic ladder implies the conclusion of (VIR_kappa)); Proposition F (the frame of row 1517 applies: (*) is the form D_A - kappa Phi(That) tested in the positive operator sigma_v^+ = (rho_v - rho_2v)^+, with 0.82 rho_v^+ <= sigma_v^+ <= rho_v^+; the generator table is unchanged and the selective form bound of row 1517 6.1 reappears word for word); Corollary FLOOR-2 ((*) fails for every schedule and error within budget at a point where the box is still pure, across any coupling interval that ends in an impure box: the Ising member, compact U(1) and the mixed action given recalled facts; the neutral projection removes symmetry-related coexistence, so there the failure sits at the critical window); Lemma ST (an integer staircase identity that removes the real characteristic from the consumer and is the target in sum). Check 1516's separation from (VIR_K) stands for one fixed kappa with h = 0 and does not change the verdict. Open: (PUR-io), the seed, the gap; (MON_u); the t-regularity of J at non-integer periods. Proposed: merge registry line TWO-PER under R11 as equivalent after a check. Next: a cross-provider check of this file (Theorem EQ and the entrance (u, t_0) first); then, optional and low, a row that decides (MON_u).

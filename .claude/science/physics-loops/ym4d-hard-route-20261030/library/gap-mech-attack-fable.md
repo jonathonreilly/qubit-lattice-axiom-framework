@@ -25,6 +25,8 @@ started unless this changes; work is by hand.
 
 - 20:13Z Section 1 written (frame; nothing new in it).
 
+- 20:28Z Section 2 written: eight approaches, each searched on file; seven are on file, T7 is not.
+
 <!-- LOG-END -->
 
 ## 1. The frame used in this row
@@ -70,4 +72,39 @@ The first term is the spatial action insertion, the second the temporal one. The
 relative bound: the action insertion of a low neutral level exceeds that of the vacuum by at most kappa times
 its excitation energy, with kappa below about 4.0 (one loop: 2.69). In continuum words: the trace anomaly as an
 inequality. Free photons have kappa = 0. Nothing in this row proves it at a coupling of order one.
+
+
+## 2. Approaches tested in this row, each against the file
+
+Each line was derived from first principles here and then searched in `library/gap-*.md`, `parts/gap.md`,
+`library/open-core.md` and the FINISH rows (`grep -l -i -F`). "Stops" names the first step with no proof.
+
+| # | Approach | Why it could be selective | Where it stops | On file |
+|---|---|---|---|---|
+| T1 | The centre twist as a discrete stiffness (vortex free energy), carried through scales | A twisted sector of SU(2) has classical action 0 (constant transition functions i sigma_1, i sigma_2). A flux sector of U(1) costs 2 pi^2 beta k^2 at every size in d = 4 | A discrete twist has no Hessian. The best case gives the flux half (string tension), not the neutral gap: a confined theory with a decoupled massless neutral field has all twist ratios near 1 | Lemma CEN and Corollary CEN2 (row 1011, `gap-pinned-cell-gauge-max.md` 4.3); row 1025 ("the flux half at one coupling, not the seed"); (T-vor) of row 1018 |
+| T2 | A soft abelian twist about a colour frame, with the bracket (paramagnetic) gain | The bracket is zero for U(1); the shell sum is a logarithm only in d = 4 | A bound by a rigid link map is first order (Jensen). By gauge averaging the cost of a fixed-colour rotation depends on the potential, not on its curl. The gain is second order and needs a Ward cancellation in law | Proposition SEAG and (N1)-(N3) (row 1011, 4.4 and 7.4); Theorem C1 (row 1380); Lemma PRIV and Theorem BD (row 1034); (PARA-COVAR) of row 1526, which check 1527 rejects as a reduction |
+| T3 | The time-independent gauge group as a non-abelian exact symmetry of the temporal-gauge chain. Its twist is the temporal link, and it has a bracket | The symmetry is non-abelian for SU(2) only | The direct cost of the twist is the covariant Laplacian of the slice field, not a classical form (the same mass-like term as SEAG). Small stiffness of this twist is the Gauss-law half (static adjoint sources are heavy), not the neutral gap | Proposition A and SEAG cover the Hessian; the reading as a chain symmetry is not on file under this name (grep "Polyakov-loop effective": 1 file). No new statement results |
+| T4 | Transport along the coupling from a base seed (Theorem T) | Base reads the group; transport reads the dimension (1.2) | The relative bound of 1.3 at a coupling of order one | row 708 (VIR_K), (VIR-log); rows 1515-1523 (TR2, (ABS-band), (*)); registry RB |
+| T5 | Double positivity: Z_+(v; beta) is a Laplace transform in beta and a Gram form in the two halves of the time circle | none by itself | Remark SAND below: the two bounds differ by an extensive term | Lemma SQ (row 1522), Lemma CLIMB (row 1332) |
+| T6 | A fundamental Higgs field of fixed length as an infrared regulator; transport in the hopping parameter | For U(1) the path meets the Higgs-Coulomb line | The corner of the plane at weak gauge coupling | R5 and b5 (i) of `gap-crux-exercise2-max.md` L264, L336; I10 of `gap-outside-box-max.md` L146 |
+| T7 | Make the replica swap an inner twist of a connected group: Sp(2) with a unit 5-vector field | Section 3 | Section 3.3: the same corner as T6 | The swap as the outer twist of Pin(4): `gap-laptop-solve3-fable.md` L135-139; route COVER of `gap-band-fresh-fable.md` L110-192. The Sp(2) form: not found (grep "Sp(2)", "SO(5)", "outer automorphism": 0 files) |
+| T8 | A finite computation at the base | reads the Wilson weight | cost | rows 1326, 1332 (COST, SURF) |
+
+**Remark SAND (PROVED, three lines; no gain).** Put G(beta, beta') = Tr(P_0 T_beta^u T_beta'^u). It is the
+neutral partition function of the torus n^3 x 2u with the coupling beta on one half of the time circle and
+beta' on the other. So G is a Laplace transform of a positive measure in (beta, beta'), and log G is jointly
+convex. G is symmetric (cyclicity of the trace). It is also the Hilbert-Schmidt inner product of P_0 T_beta^u
+and P_0 T_beta'^u. Hence, with bbar = (beta + beta')/2,
+
+    Z_+(2u; bbar) <= G(beta, beta') <= ( Z_+(2u; beta) Z_+(2u; beta') )^(1/2).
+
+The left bound is convexity at the midpoint of (beta, beta') and (beta', beta). The right bound is
+Cauchy-Schwarz. The two sides differ by (beta - beta')^2/8 times the variance of the action, which is of the
+order of the volume. So the sandwich moves a seed only over coupling intervals of length volume^(-1/2). This
+is Lemma SQ and Lemma CLIMB again.
+
+**GUIDE for 1.2 (continuum dispersion, two polarizations, no zero modes; not a proof step).** For a free
+massless vector field the swap is a reflection in the replica rotation group O(2), so the purity is the
+ratio of the charge-conjugation twist: P = product over modes of tanh(u omega/2). At u = n/512 this gives
+log P = -(512^3) pi^2/24, about -5.5e7, at every size. SU(2) has no replica rotation.
 

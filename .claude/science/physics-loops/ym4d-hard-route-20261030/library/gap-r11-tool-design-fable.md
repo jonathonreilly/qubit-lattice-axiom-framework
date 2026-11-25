@@ -12,6 +12,7 @@ Not checked by another model. Research-stage working state; nothing here is a pu
 - 2026-11-25T05:04Z: read the row, FINISH rule sections, GOAL.md, row 708 Sections 1-5 (`gap-mid-max.md` L21-216), row 710 Sections 2-4, 6-9 (`gap-vir-sc.md`), row 1515 in full (`gap-seed-direction-fable.md`), registry lines R10-R12, W-CUBE-23. Section 1 written.
 - 2026-11-25T05:21Z: Section 2 written. First candidate (a conjugated operator inequality with the vacuum transport as generator) derived blind, then found on file: route B1 of row 669, row 913 3d, row 1356 Ways 1 and 3. Not presented as new. Memory 37 percent free: no numeric job in this row.
 - 2026-11-25T05:25Z: Sections 3 and 4 written (the trace-anomaly clause needs a volume term; Proposition TR2: restarted transport, any constant C in K <= C log L, cold boxes only; Corollary FLOOR).
+- 2026-11-25T05:28Z: re-read of the proved items done (Lemma CONJ, Proposition VOL, Proposition TR2 against Theorem SH, the table line r = 4 and Lemma E2 remark (i), Remark COLD, Corollary FLOOR): one wording fix (real part in CONJ (b)), one anchor added. Cross-branch search done. Sections 5-8 written. Finished.
 
 ## 0. Plan
 
@@ -71,7 +72,7 @@ Put That = T/lambda_0, so 0 <= That <= 1, and Phi(r) = r log(1/r) on [0, 1]. For
     D_A := That' - [A, That],   That' = T'/lambda_0 - (lambda_0'/lambda_0) That.
 
 (a) For every analytic branch (r, psi) of That, |psi| = 1, and every bounded A: r' = <psi, D_A psi>.
-(b) If for one A the form inequality <phi, D_A phi> <= K <phi, Phi(That) phi> holds for all phi, then every
+(b) If for one A the form inequality Re <phi, D_A phi> <= K <phi, Phi(That) phi> holds for all phi, then every
     branch has r' <= K r log(1/r), that is -E' <= K E for E = -log r. This is (LEV_K) at s.
 (c) Let psi_0, ..., psi_n be eigenvectors at s with distinct eigenvalues r_0 > ... > r_n. Put
     A_n := sum over i != j <= n of |psi_i> <psi_i, That' psi_j> <psi_j| / (r_j - r_i). Then A_n is bounded and
@@ -153,8 +154,8 @@ Inputs, read as statements and not re-derived: Theorem TR (row 708, `gap-mid-max
 the proof of Corollary TR1 (L156: for beta_0 <= 1/25600, g(t_0; 256^3; beta_0) < 3.7 x 10^(-4), t_0 = 8); from
 `gap-seed-shape.md` (row 705, checked by Claude Opus 5.5, row 707): the line "r = 2, two stages" (L138:
 S(a; (2a)^3) <= 1/1650 gives S(a; (4a)^3) <= 0.0396), Theorem SH (i) for the pair (a, (4a)^3) with j = 2 and
-K_SH = 22.2 (L89-99; these constants are the ones used in the proof of TR1), and Lemma E' in the form used in
-the proof of SH (ii) (L107): for an integer L >= 2^k 4a, g(2^k a; L^3) <= (L/(3 2^k a))^3 log(1 + s_k), with
+K_SH = 22.2 (L89-99; table line r = 4, step (2, 2, 3), threshold 1/25, L123; the constants used in the proof of TR1), and Lemma E' in the form used in
+the proof of SH (ii) (L108; Lemma E2 remark (i), L70): for an integer L >= 2^k 4a, g(2^k a; L^3) <= (L/(3 2^k a))^3 log(1 + s_k), with
 s_k := S(2^k a; (2^k 4a)^3).
 
 **Statement.** Let 0 < beta_0 <= 1/25600 < beta_1 and C >= 1. Assume
@@ -229,3 +230,155 @@ crossing interval. In the frame of Section 2 that inequality is the form bound f
 generator it is the strain bound, and the strain of every vacuum transport on some cold cube exceeds
 (C/2) log L in the kinetic measure of the thermal state.
 
+## 5. The design requirements of the row, one by one (written 2026-11-25T05:28Z)
+
+1. **Exact output and consumer.** Output, in the weakest form the consumer accepts (Section 4):
+
+       (R11')  There are C and L_0 such that for every even L >= L_0, every s in [1/25600, beta_1) and every
+               real t in [4, L/2] with G(t; L^3; s) < 10^(-3):
+               D_s G(t; L^3; s) <= - C log L * t (dG/dt)(t; L^3; s).
+
+   At integer t and outside a countable set of couplings (row 708 Lemma 4.2) the left side is
+   6 t L^3 (abar_(inf) - abar_t), the shift of the mean plaquette action between infinite and finite time, and
+   the right side is C log L times t times the thermal mean of the energy. Consumer: Proposition TR2 with
+   Remark COLD (this file), then Theorem TR, Corollary TR1 and Theorem SH (rows 708, 705). (R11') on
+   [1/25600, beta_1] gives the seed at every coupling up to beta_1.
+2. **Not one of the three failed ways, not (BAND-sc), not a closed line.** Not met. By Lemma CONJ a single-box
+   method is a class of generators with a form bound. Every class I could state is on file (table 2.2): A = 0
+   is Way 1; norm and locality bounds are Way 2; the vector fields are route B1 with (T) (supremum over
+   fields: no proof, a large-field problem) and (T-avg) (the conclusion in differential form); the
+   quasi-adiabatic generator needs the gap. Way 3 (convexity) has no generator and is refuted by the Ising
+   member. (BAND-sc) is the form bound for A = 0 on the lowest band at small s. Two more methods that are not
+   conjugations by construction, with their lines:
+   - complex couplings: if the thermal sum S(t; L^3; .) is analytic with positive real part on a disc of
+     radius rho about s, then abs(dS/ds) <= 2 S/rho (Harnack's inequality for a positive harmonic function),
+     a relative bound with no gap in it. With TR2 the radius may shrink like 1/(t E_1 log L). This is Route Z
+     in the dominance form (rows 670, 677, 680: `gap-skeleton-max-b.md` L302-330, `gap-skeleton-final.md`
+     L356). The width that perturbation theory gives is m/abs(B), which is Way 2 again. (Argued; I did not
+     write the Harnack step as a lemma, because its hypothesis has no source.)
+   - two boxes: Section 3; a block step at order-one coupling.
+3. **Where it fails for the Ising member and for compact U(1).** Corollary FLOOR: for each of them the output
+   inequality itself fails on some cold cube inside the crossing interval, by more than any C log L. Inside a
+   tool the failing line is the form bound for D_A. No generator class in table 2.2 has a form bound whose
+   proof reads the group; that is why none of them is a tool.
+4. **Build.** No first component of a tool was built. Built instead, on the consumer side: Proposition TR2 and
+   Remark COLD (the output may lose a factor C log L, any C, and is needed on cold cubes only); and two
+   statements that close parts of the trigger: Lemma CONJ with table 2.2, Proposition VOL.
+
+## 6. Decisive outcome, triggers, next two rows (written 2026-11-25T05:28Z)
+
+### 6.1 Outcome: of the third kind
+
+**The first component that could not be built is the selective form bound**: a class of generators A for the
+cube L^3 and a proof, which reads the Wilson weight and the group, of
+
+    Re <phi, (That' - [A, That]) phi> <= C log L <phi, Phi(That) phi>
+
+on a set of phi that contains the cold thermal states, in a norm that is neither a supremum over all fields
+(closed: (T), (HS-sup), kind (W)) nor the eigenvectors themselves (equivalent: (T-avg), Lemma CONJ (c)). In
+the words of row 669 (L107, L111): a bound on the strain of the vacuum transport on a set that the flow does
+not leave, with exceptional sets; "the same large-field problem as in the existence proof, moved to the
+infrared". I found no first lemma of that theory at order-one coupling that is not (W), (TILT-COV-sup) or (FL)
+of row 1510.
+
+No obstruction theorem over all tools is claimed. What is proved is narrower: the frame (CONJ), the
+restart (TR2, COLD), the floor at a transition (FLOOR, given recalled facts), and the chain rule (VOL). The
+statement "every generator class is on file" is a judgment over the classes in table 2.2.
+
+Equivalence, as the lead's rule asks: (R11') on [1/25600, beta_1] implies the seed of bare Wilson at every
+coupling up to beta_1, which is (NOCRIT) up to beta_1 (row 708 5.1). I cannot show that it is weaker than
+that, and I cannot show the converse. So (R11') is at least as strong as a closed target on the bare lattice,
+and it stays a trigger, not a row.
+
+### 6.2 Change proposed to trigger (R11) (for the lead; I did not edit the registry)
+
+Replace "K growing more slowly than log n" by "K at most C log n for one constant C, on cold cubes
+(G below 10^(-3)) only" if check Row 1 below confirms TR2. Add to its last clause: "an identity on one box
+cannot play the part of the trace anomaly ((V1): the ratio depends on the level through its volume slope); a
+two-box identity is a block step". The clause "by a method that fails for Ising and compact U(1)" has the
+exact form of Corollary FLOOR.
+
+### 6.3 The next two rows and their decisive outcomes
+
+I propose no attack row and no build row.
+
+**Row 1, `gap-r11-tool-design-fable-check-astra62` (cross-provider check of this file; gpt-6.2-astra).** Order:
+(i) Proposition TR2: the two-stage line, Theorem SH (i) at r = 4 with step (2, 2, 3) and K = 22.2, Lemma E' in
+three directions from the side 2^k 4a to L = 4 (2^k a)^2, the time range [A, L/2], the factor L^(1/2), the
+start at 256^3, the count of steps; (ii) Remark COLD; (iii) Corollary FLOOR: which class lemmas the Ising
+member and compact U(1) really satisfy, and the start constants for U(1); (iv) Lemma CONJ and whether a
+generator class outside table 2.2 exists; (v) Proposition VOL and whether the lane holds a single-box
+identity that it rules out. Decisive outcome: TR2 HOLDS, and the registry wording of (R11) changes as in 6.2;
+or FAILS at a named line, and (R11) keeps the wording of row 1515. If (iv) names a class, that class is the
+next design row.
+
+**Row 2, `gap-r11-coldrate-guide` (a guide run, not a proof step; Opus or Codex runner under the numeric
+lock; only if the lead wants a kill test of (R11') itself).** Measure the two sides of (R11') at integer
+times for Wilson SU(2) on cubes L = 8, 12, 16 at beta = 2.2, 2.3, 2.4: the plaquette shift
+6 t L^3 (abar_inf - abar_t), with abar_inf from the longest time, against t times the thermal energy from the
+ratio Z(t+1)/Z(t) by a coupling-integration or snake method. Written pass and fail before the run: the ratio
+K_L of the two sides, with its statistical error, stays below 6 log L at every point (pass, consistent with
+the scaling value near 3.3 of row 708 L158); or it grows faster than log L between L = 8 and 16 at fixed
+t E_1 (fail: (R11') is in doubt and (R11) is retired). A pass proves nothing and moves no node. I rank it
+low: the cold condition G < 10^(-3) needs times that are costly at these sizes, and no outcome supplies a
+method. The lead may skip it.
+
+## 7. Repo search, labels, credits, what was not done (written 2026-11-25T05:28Z)
+
+### 7.1 Repo search
+
+- Local (`FINISH.md`, `library/open-core.md`, `library/gap-*.md`, `library/prior/gap-*.md`): "Lipschitz
+  transport" 6 files, "transport map" 13, "Kim-Milman" 4, "quasi-adiabatic" 2, "HS-sup" 11, "virial
+  identity/theorem" 11, "vacuum transport" 0, "conformal vector/Killing" 1 (unrelated). The hits that bind
+  this file are cited in table 2.2. `library/open-core.md` has no entry for (VIR), the trace anomaly or the
+  transport along the coupling. "restart", "interleav", "any constant", "sub-interval" in the row-708 family
+  (`gap-mid-max.md`, `gap-mid-check.md`, `gap-vir-sc.md`, `gap-vir-sc-check.md`, `gap-phys-seed.md`,
+  `gap-skeleton-final.md`, `gap-crux-fp.md`, `gap-seed-direction-fable.md`) and "VIR ... restart" in
+  `FINISH.md`: no hit. So TR2 is not on file under these words; it is elementary and I do not call it new.
+- Cross-branch (bare blob-less fetch in my own /tmp scratch folder): pattern "VIR-log, VIR_K, relative
+  transport, restarted transport, adiabatic gauge, volume slope, trace anomaly, lattice beta function,
+  LEV_K" on the 83 mass-gap `.md` files of main and on 7 files of PR 10114 (`MASS_GAP*.md`, `RTARGET.md`).
+  Main: 16 files, all landed copies of this lane's notes (the row-708 family and `ROWS.md`). PR 10114: no
+  hit. PRs 10133, 10134, 10141, 10144 were not searched.
+- Sussman-Alpoge (with Claude and Codex): not searched again in this row. Rows 708, 710, 711, 1511 and 1515
+  record that the account and the outline hold no statement on the gap or on a coupling derivative of
+  levels (outline 4638-4641; CA-I 2699-2713). No statement of theirs is used in a proof here.
+
+### 7.2 Labels
+
+- **Proved here** (one author, checked by no one): Lemma CONJ (first-order perturbation theory; not new);
+  Proposition VOL (a chain rule under the hypothesis (SCAL), which is a definition and not a lattice fact);
+  Proposition TR2 and Remark COLD, given the statements read in rows 705 and 708; Corollary FLOOR, given TR2
+  and the recalled facts in its brackets.
+- **Read**, not re-derived: Theorem TR, Remark CH, Corollary TR1 and its start, Lemma 4.1, Lemma 4.2 (row
+  708; checked by Claude Opus 5.5, row 709); Theorem SH, the table of thresholds, Lemma E2 with remark (i)
+  (row 705; checked by Claude Opus 5.5, row 707); Theorem U and (RK) (row 710; checked, row 715); everything
+  cited from rows 669, 677, 680, 913, 1356, 1510, 1511, 1515.
+- **Argued**: the reading under Proposition VOL; the Harnack remark in Section 5; "what TR2 changes".
+- **Guessed**: that no generator class outside table 2.2 has a provable form bound; that (R11') is true.
+- **Guide numbers only**: the slopes sigma_i in 3.1; the value 3.3 and the bound 6 log L in Row 2.
+
+### 7.3 Not done
+
+- No tool was designed and no component of a tool was built. (PUR-io), the seed and the gap are not moved.
+- No numeric run (memory read 37 percent free; nothing here needed one). No Lean.
+- The start constants of Corollary FLOOR for compact U(1) and for the Ising member were not computed.
+- I did not read the proofs of Theorem SH, Lemma E2 or Theorem TR again line by line; I used their
+  statements and the checks on file.
+- The checks of rows 1510 and 1515 (rows 1513, 1516) were not on file at the pinned commit.
+
+### 7.4 Credit
+
+Row 708 (Claude Fable 5.2 max) for Theorem TR, Corollary TR1, (VIR_K), (LEV_K), (DEF_K), (VIR-log) and the
+verdict on the lattice trace anomaly; check row 709 (Claude Opus 5.5). Row 705 (Claude Fable 5.2 medium) for
+Theorem SH and Lemma E2; Codex gpt-6-astra (row 699) for Lemma E'. Row 710 for Theorem U and (BAND-sc).
+Row 669 (route B1, (T), (T-avg)), rows 913 and 1356 (the transport forms; E. Milman's observation on
+contracting maps, as credited there), rows 670, 677, 680 (Route Z, (HS-sup), dominance form). Row 1511
+(gpt-6.2-astra) and row 1515 for the reduction to (R11). Kato and Rellich for analytic perturbation theory.
+Harnack. Michael, Rothe and Karsch for the lattice sum rules (recalled; abstracts read in row 711). Guth;
+Frohlich and Spencer (recalled). Sussman and Alpoge, with Claude and Codex, for the account and the outline;
+Balaban for the block method; neither is used in a proof here.
+
+## 8. Result
+
+RESULT: Row 1517 (Claude Fable 5.2 high, Mac mini worker 1; author only, checked by no one; no numeric run, no Lean, nothing committed). Outcome of the third kind: no tool for (R11) was designed and no component of one was built; (PUR-io), the seed and the gap are not moved. Proved by hand: Lemma CONJ (every single-box relative bound is a generator A with a form bound for That' - [A, That]; with all A allowed it is (LEV_K) itself); Proposition TR2 with Remark COLD (restarting Theorem TR on cubes of growing side, with Theorem SH and Lemma E' as read, the consumer accepts K at most C log L for any one constant C, and only on cold cubes with G below 10^(-3); not found on file, elementary); Corollary FLOOR (given TR2 and recalled facts: in the Ising member and in compact U(1) the output inequality fails on some cold cube inside the crossing interval by more than any C log L); Proposition VOL (under an exact scaling law the ratio of action deficit to energy of a level is kappa (1 + volume slope), so no identity on one box plays the part of the trace anomaly, and a two-box identity is a block step, a closed line). Found again, not new: the one candidate I derived blind (conjugation by the vacuum transport, level velocity = strain in the kinetic measure) is route B1 of row 669 with (T) and (T-avg), also rows 913 and 1356; the complex-coupling (Harnack) form is Route Z. Every generator class I could state is one of row 708's ways, B1, or needs the gap (a judgment over a table, not a theorem). First component that could not be built: a selective form bound for a class of generators on cold thermal states, in a norm that is neither a supremum over fields nor the eigenvectors; in row 669's words a transport theory with exceptional sets at order-one coupling. Open: (R11') (the exact output, Section 5), at least as strong as the seed of bare Wilson on the interval; whether it is weaker is not shown. Proposed: reword trigger (R11) to "K at most C log n, any C, cold cubes" after a check. Next: a cross-provider check of this file (TR2 first); then, optional and low, a guide measurement of the cold rate K_L on cubes 8 to 16.

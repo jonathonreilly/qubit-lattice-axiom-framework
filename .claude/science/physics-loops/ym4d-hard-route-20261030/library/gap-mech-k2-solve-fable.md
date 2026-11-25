@@ -61,3 +61,4 @@ I derived each candidate before searching. Every one is on file. None is claimed
 Reading of the table (mine): candidates 1, 2 are one route (sheets). Candidates 5, 6, 8 are one fact (no
 frame). Candidates 3, 4 are the wall in two variables. Candidate 7 is the flux half.
 - 21:35Z: Sections 1-2 written (reading record; table of eight blind candidates, all on file).
+- 21:37Z: read gap-sing-direction-fable.md 4.2-4.3 (row 1115): the face is stiffer than the anchor at guide grade (one-loop stiffness about 2.7 b at beta_T = 2.4), so its rate is far outside Theorem T's budget (A3); my candidate remark that Theorem T's slack reopens Way B of row 1108 is REFUTED at guide grade by row 1115. Next: the thin twisted torus base (row 669 B14, gap-ac-lat.md).

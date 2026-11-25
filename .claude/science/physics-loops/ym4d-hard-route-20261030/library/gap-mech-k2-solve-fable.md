@@ -21,3 +21,5 @@ party unless a check is named.
 - 2026-11-25T21:12Z: file created, plan written. Nothing read yet beyond the queue row.
 - 21:12Z: read FINISH rule sections (L1-84, L299-360), GOAL.md, queue row 1542, RESULT parts of rows 1528-1541.
 - 21:12Z: read RESULT parts of rows 1468-1500 (the earlier K-II tool attempt, checkpoint 1496, check 1497).
+- 21:19Z: read gap-k2-tool-design-fable.md 3.1, 4.3-4.5 (seed, (K2-STEP), GA, filter). First candidate under test: the 2+2 split (4D gauge theory as a 2D gauged sigma model on B with target the 2D connections on A), compared with 2D O(4) by a Durhuus-Froehlich type inequality. Registry grep next.
+- 21:19Z: the 2+2 candidate is ON FILE: sheets / transverse lattice (rows 1103-1114, GH2, P4, BR-2; prior/gap-gauged-sigma-read-luna.md Section 4), worst-case layer comparison refuted (rows 1139-1140). Not pursued as new. Reading Theorem T (row 1332) for the rate budget.

@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/qubit_lattice_ball_capacity_exceeds_spherical_entropy_bound_2026_11_27.py
+runner_sha256: d088beac4c910c940641d05aafe4216e5b57325feb554c42dbcde6593658315c
+input_fingerprint_sha256: 4a193921e92f0b3cd365c68622cacec750ee4a8223216d48d0e8aa11670ec6f9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.93
+status: ok
+----- stdout -----
+Note SHA256: fe4147b60e53ff3a271c1d449d466522929e27c9f2ea7a82a4653b07b5711179
+Exact checks: qubit-lattice ball capacity versus the spherical entropy bound.
+PASS: ln 2 > 69/100: partial sum to k=6 equals 1327/1920 > 69/100
+PASS: ln 2 < 7/10 (tail bound at K=6), so a mutated constant 7/10 is rejected
+PASS: Dalzell identity x^4(1-x)^4 = (1+x^2)(x^6-4x^5+5x^4-4x^2+4) - 4
+PASS: integral_0^1 of the quotient polynomial is exactly 22/7
+PASS: Machin identity (5+i)^4 (239-i) = 114244 (1+i)
+PASS: certified pi bracket has width < 1e-15 and sits inside (333/106, 22/7)
+PASS: certified ln 2 bracket has width < 1e-20 and sits inside (69/100, 7/10)
+PASS: hand counts N(1) = 7 and N(2) = 1+6+12+8+6 = 33
+PASS: column count equals brute-force count for R = 1..12
+PASS: boundary-site count equals brute-force count for R = 1..10
+N(R) at R = 1..10: [7, 33, 123, 257, 515, 925, 1419, 2109, 3071, 4169]
+N(R) at R = 20, 40, 80, 160: [33401, 267761, 2143641, 17155325]
+PASS: Theorem 1(i): N(R) >= (2m+1)^3, 3m^2 <= R^2, for R = 1..160
+PASS: Theorem 1(ii) step: (8/7)^2 * 3 < 4, so 8/7 < 2/sqrt(3)
+PASS: Theorem 1(ii): 2m+1 > R and N(R) > R^3 for R = 7..160
+PASS: Theorem 1(ii) needs a lower limit: 2m+1 <= R exactly at R = 1, 3, 5 within 1..160
+PASS: Theorem 2 step: (R+1) <= (8/7) R for R >= 7
+PASS: Theorem 2 step: (69/100)*6 = 207/50 > (22/7)(64/49) = 1408/343
+PASS: Control: the same step fails with constant 5 in place of 6
+PASS: Theorem 2 instances, lambda^2 = 1: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 for R = 7..160
+PASS: Theorem 2 instances, lambda^2 = 2: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 for R = 12..160
+PASS: Theorem 2 instances, lambda^2 = 4: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 for R = 24..160
+PASS: Theorem 2 instances, lambda^2 = 10: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 for R = 60..160
+NOTE: lambda^2 = 100: threshold 600 > 160, so no instance in R = 1..160; spot instances at R = 600 and 1000 instead
+PASS: Theorem 2 spot instances, lambda^2 = 100: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 at R = 600, 1000
+PASS: Theorem 2 instances, lambda^2 = 9/4: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 for R = 14..160
+PASS: Theorem 2 instances, lambda^2 = 1/3: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 for R = 7..160
+Minimal R with N(R) ln 2 > pi lambda^2 (R+1)^2 (certified brackets):
+PASS: lambda^2=1: minimal crossover R=3, no re-crossing up to 160, and R_min <= Theorem 2 threshold 7
+PASS: lambda^2=2: minimal crossover R=4, no re-crossing up to 160, and R_min <= Theorem 2 threshold 12
+PASS: lambda^2=4: minimal crossover R=6, no re-crossing up to 160, and R_min <= Theorem 2 threshold 24
+PASS: lambda^2=10: minimal crossover R=13, no re-crossing up to 160, and R_min <= Theorem 2 threshold 60
+PASS: lambda^2=100: minimal crossover R=111, no re-crossing up to 160, and R_min <= Theorem 2 threshold 600
+PASS: refinement condition r=10, a=1/2: floor(r/a)=20 >= max(7, 6a^2)
+PASS: refinement condition r=10, a=1/10: floor(r/a)=100 >= max(7, 6a^2)
+PASS: refinement condition r=100, a=1: floor(r/a)=100 >= max(7, 6a^2)
+PASS: refinement condition r=100, a=1/2: floor(r/a)=200 >= max(7, 6a^2)
+PASS: refinement condition r=100, a=1/10: floor(r/a)=1000 >= max(7, 6a^2)
+PASS: refinement condition r=100, a=3/2: floor(r/a)=66 >= max(7, 6a^2)
+PASS: refinement condition r=100, a=2: floor(r/a)=50 >= max(7, 6a^2)
+PASS: refinement condition r=1000, a=1: floor(r/a)=1000 >= max(7, 6a^2)
+PASS: refinement condition r=1000, a=1/2: floor(r/a)=2000 >= max(7, 6a^2)
+PASS: refinement condition r=1000, a=1/10: floor(r/a)=10000 >= max(7, 6a^2)
+PASS: refinement condition r=1000, a=3/2: floor(r/a)=666 >= max(7, 6a^2)
+PASS: refinement condition r=1000, a=2: floor(r/a)=500 >= max(7, 6a^2)
+PASS: lambda=1, R=10: N ln2 - pi (R+1)^2 > 0 (log of the dimension excess, nats)
+  R=10: N=4169, certified lower bound of N ln2 - pi(R+1)^2, rounded down to 0.001: 2509.597 nats
+PASS: lambda=1, R=20: N ln2 - pi (R+1)^2 > 0 (log of the dimension excess, nats)
+  R=20: N=33401, certified lower bound of N ln2 - pi(R+1)^2, rounded down to 0.001: 21766.366 nats
+PASS: lambda=1, R=40: N ln2 - pi (R+1)^2 > 0 (log of the dimension excess, nats)
+  R=40: N=267761, certified lower bound of N ln2 - pi(R+1)^2, rounded down to 0.001: 180316.764 nats
+PASS: Control: threshold (1/2) lambda^2 is false; at lambda^2=100, R=50, N ln2 < pi lambda^2 (R+1)^2
+PASS: Control: with only boundary sites counted, lambda^2=4 never exceeds for R = 7..60
+Boundary-site counts at R = 10, 20, 40, 60: [978, 4026, 16418, 37146]
+TOTAL PASS: 46
+
+----- stderr -----
+

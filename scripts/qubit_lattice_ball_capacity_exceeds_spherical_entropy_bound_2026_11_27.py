@@ -229,6 +229,13 @@ def main() -> None:
             ok = all(Q(69, 100) * N[R] > Q(22, 7) * lam2 * (R + 1) ** 2 for R in rng)
             check(f"Theorem 2 instances, lambda^2 = {lam2}: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 "
                   f"for R = {start}..{RMAX}", ok)
+        else:
+            print(f"NOTE: lambda^2 = {lam2}: threshold {start} > {RMAX}, so no instance in R = 1..{RMAX}; "
+                  f"spot instances at R = {start} and {start + 400} instead")
+            spots = (start, start + 400)
+            ok = all(Q(69, 100) * ball_count(R) > Q(22, 7) * lam2 * (R + 1) ** 2 for R in spots)
+            check(f"Theorem 2 spot instances, lambda^2 = {lam2}: (69/100) N(R) > (22/7) lambda^2 (R+1)^2 "
+                  f"at R = {spots[0]}, {spots[1]}", ok)
 
     # --- Exact minimal crossover table ----------------------------------
     print("Minimal R with N(R) ln 2 > pi lambda^2 (R+1)^2 (certified brackets):")
@@ -260,7 +267,9 @@ def main() -> None:
     for R in (10, 20, 40):
         gap_lo = N[R] * ln2_lo - pi_hi * (R + 1) ** 2
         check(f"lambda=1, R={R}: N ln2 - pi (R+1)^2 > 0 (log of the dimension excess, nats)", gap_lo > 0)
-        print(f"  R={R}: N={N[R]}, certified lower bound of N ln2 - pi(R+1)^2 = {float(gap_lo):.3f} nats")
+        floor_milli = (gap_lo * 1000).numerator // (gap_lo * 1000).denominator
+        print(f"  R={R}: N={N[R]}, certified lower bound of N ln2 - pi(R+1)^2, rounded down to 0.001: "
+              f"{floor_milli // 1000}.{floor_milli % 1000:03d} nats")
 
     # --- Controls that fail when the statement is perturbed -------------
     lam2 = Q(100)

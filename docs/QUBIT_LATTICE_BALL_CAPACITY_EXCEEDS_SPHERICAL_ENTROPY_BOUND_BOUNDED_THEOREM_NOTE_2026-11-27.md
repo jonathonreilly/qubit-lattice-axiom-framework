@@ -128,7 +128,7 @@ So refining the lattice at fixed physical size makes the excess larger, as $(r/a
 
 ## 6. The comparator and where it comes from
 
-The spherical entropy bound $S_{\rm matter} \le A/4$ (Planck units) is due to Susskind (1995), from the generalized second law applied to collapse of a shell onto a system. Bousso (2002, Sec. II.C) states its conditions: an asymptotic structure that permits black holes, an approximately spherical metric near the system, and a system stable on a time scale much greater than $A^{1/2}$. His footnote adds that the argument assumes the shell can be brought in without radiating or ejecting mass. Bousso (1999) proposed the covariant entropy bound, on light-sheets, and showed that it implies a spacelike bound for regions whose future-directed light-sheet has no boundary other than the surface (the spacelike projection theorem).
+The spherical entropy bound $S_{\rm matter} \le A/4$ (Planck units) is due to Susskind (1995), from the generalized second law applied to collapse of a shell onto a system. Bousso (2002, Sec. II.C) states its conditions: an asymptotic structure that permits black holes, an approximately spherical metric near the system, and a system stable on a time scale much greater than $A^{1/2}$. His footnote adds that the argument assumes the shell can be brought in without radiating or ejecting mass. Bousso (1999) proposed the covariant entropy bound, on light-sheets, and showed that it implies a spacelike bound (the spacelike projection theorem). That theorem needs a closed surface with a future-directed light-sheet $L$ that has no boundary other than the surface, and a spatial region $V$ contained in the causal past $J^-(L)$ of that light-sheet.
 
 Role here: comparator only. The repo does not derive any of these bounds. `docs/AXIOM_FIRST_BEKENSTEIN_BOUND_THEOREM_NOTE_2026-05-01.md` records that its former entropy-bound inference was withdrawn and that the area bound is "a conditional external target". Theorems 1 and 2 do not assume the bound. They compare a number to it.
 
@@ -139,11 +139,11 @@ Role here: comparator only. The repo does not derive any of these bounds. `docs/
 \frac{M}{2^{N(R)}} < \exp\!\Big(\tfrac{22}{7}\lambda^2(R+1)^2 - \tfrac{69}{100}R^3\Big).
 ```
 
-*Proof.* The uniform mixture $\frac1M\sum_j \omega_{\psi_j}$ lies in $\mathcal{K}$ by convexity. Its density matrix has eigenvalue $1/M$ with multiplicity $M$, so its entropy is $\ln M \le s$. Theorem 2's chain gives $s < \tfrac{22}{7}\lambda^2(R+1)^2 < \tfrac{69}{100}R^3 < N(R)\ln 2$. $\square$
+*Proof.* The uniform mixture $\frac1M\sum_j \omega_{\psi_j}$ lies in $\mathcal{K}$ by convexity. Its density matrix has eigenvalue $1/M$ with multiplicity $M$, so its entropy is $\ln M \le s$. Only closure under uniform mixtures is used, not full convexity. Theorem 2's chain gives $s < \tfrac{22}{7}\lambda^2(R+1)^2 < \tfrac{69}{100}R^3 < N(R)\ln 2$. $\square$
 
 This is 't Hooft's counting statement $e^S = \mathcal{N}$ (1993, eqs. (2)–(3)) made exact on this lattice. A set of states defined by an upper bound on a mean energy, $\{\omega : \omega(H) \le E\}$, is convex, so the corollary applies to it.
 
-**Proposed necessary condition (for the owner of the TOE assembly skeleton; not adopted here).** The skeleton (`TOE_ASSEMBLY.md` on PR #10139) lists the open input "refinement together with collapse" (alias GR2-ii) for its general-relativity part. If that part keeps H-tensor and also yields the spherical entropy bound for balls, then by Corollary 4 a candidate mechanism must name the convex set of states that it admits in $B_R$ without horizon formation, and must show that this set has at most $e^{\pi r^2/l_P^2}$ mutually orthogonal pure states. Corollary 3 shows that refinement at fixed radius makes the required reduction stronger. The alternatives are to give up H-tensor for gravitating regions, or to give up the spherical bound as a target. Whether to state this condition is that owner's decision.
+**Proposed necessary condition (for the owner of the TOE assembly skeleton; not adopted here).** The skeleton (`TOE_ASSEMBLY.md` on PR #10139) lists the open input "refinement together with collapse" (alias GR2-ii) for its general-relativity part. Suppose that part keeps H-tensor, and that it admits a family $\mathcal{K}$ of horizon-free states in $B_R$ with two properties: (i) $\mathcal{K}$ contains the uniform mixtures of its members, for example because it is convex; and (ii) the von Neumann entropy of every member of $\mathcal{K}$ obeys the spherical bound $S \le \pi r^2/l_P^2$. Then by Corollary 4 a candidate mechanism must name $\mathcal{K}$ and must show that it has at most $e^{\pi r^2/l_P^2}$ mutually orthogonal pure states. Both premises are needed. Without (i) there is a counterexample: the set of all pure states has zero entropy in each member, yet it contains a full orthonormal basis. Premise (ii) reads the imported bound as a bound on the von Neumann entropy of each admitted state. That reading is an identification, not derived here. Corollary 3 shows that refinement at fixed radius makes the required reduction stronger. The alternatives are to give up H-tensor for gravitating regions, or to give up the spherical bound as a target. Whether to state this condition is that owner's decision.
 
 ## 8. Literature and credit
 
@@ -174,7 +174,8 @@ All PASS decisions use exact integers and `fractions.Fraction`.
 - The rational constants: $\ln 2 > 69/100$ from the partial sum; $\ln 2 < 7/10$ from the tail bound $1/((K+1)2^K)$, so a mutated constant $7/10$ is rejected; the polynomial identity behind $\pi < 22/7$ and the exact integral $22/7$; the Gaussian-integer form of Machin's formula, $(5+i)^4(239-i) = 114244(1+i)$, and alternating-series brackets that give $\pi$ to better than $10^{-15}$.
 - $N(R)$ two ways: a column count with exact integer square roots, and a brute-force triple loop for $R \le 12$. Hand counts $N(1) = 7$ and $N(2) = 1+6+12+8+6 = 33$.
 - Theorem 1 for every $R \le 160$, and the exact set $\{1,3,5\}$ where part 2 fails.
-- Each rational step of Theorem 2, and the theorem's inequality on $R \in [\max(7,\lceil 6\lambda^2\rceil), 160]$ for seven rational values of $\lambda^2$.
+- Each rational step of Theorem 2, and the theorem's inequality on $R \in [\max(7,\lceil 6\lambda^2\rceil), 160]$ for six of seven rational values of $\lambda^2$. For $\lambda^2 = 100$ the threshold 600 exceeds 160, so that range is empty; the runner says so and checks the inequality instead at the spot values $R = 600$ and $R = 1000$.
+- The three printed entropy gaps of Corollary 4 at $\lambda = 1$ ($R = 10, 20, 40$): each is a certified lower bound, printed rounded down to 0.001.
 - The crossover table of section 4, with every $R \le 160$ decided by the certified brackets.
 - The conditions of Corollary 3 on a grid of rational $r$ and $a$ ($l_P = 1$).
 
@@ -186,7 +187,7 @@ All PASS decisions use exact integers and `fractions.Fraction`.
 
 **Independent path.** The brute-force recount and the hand counts do not share the column-count code. The proofs in sections 2–5 are by hand and do not depend on the runner.
 
-Lemma A and Corollary 4 are standard finite-dimensional facts with complete proofs above. The runner does not check them; a floating-point check would prove nothing.
+Lemma A and the mixture argument of Corollary 4 are standard finite-dimensional facts with complete proofs above. The runner does not check them; a floating-point check would prove nothing. It checks only the numerical gaps of Corollary 4.
 
 ## 11. Boundary of the claim
 

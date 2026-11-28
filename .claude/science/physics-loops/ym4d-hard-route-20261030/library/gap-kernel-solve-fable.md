@@ -84,3 +84,33 @@ Meaning. (T-B) says: for every Z, for infinitely many j, the lattice theory at �
 Remark (interface, ARGUED). (T-B) is stronger than a gap of the limit. Weak convergence of spectral measures allows lattice mass below m that goes to zero with j. A weaker input, "for every Z and ε: for infinitely many j and all n, U_j(Z, t_n) <= C exp(-m t_n) + ε", also gives the limit gap by the same log-convexity step.
 
 Section 2 written at 2026-11-28T10:23:29Z (date -u).
+
+## 3. Two more exact forms of (E1), and what the seed says physically
+
+**Proposition 3.1 (overlap form). PROVED under RA1-RA3.** Let τ(ω, η) be the kernel of T^w and ρ(ω, ω') = ∫ τ(ω, η) τ(η, ω') dη the kernel of T^(2w). ρ(ω, ω') is the partition function of the slab of height 2w with the bottom slice fixed to ω and the top slice fixed to ω'. Let π_1(ω) = ρ(ω, ω)/Z(2w); this is the law of one slice of the periodic torus N^3 x 2w. Let
+
+    κ(ω, ω') = ρ(ω, ω')^2 / ( ρ(ω, ω) ρ(ω', ω') ).
+
+Then 0 < κ <= 1, κ is the squared cosine of the angle between the vectors τ(ω, .) and τ(ω', .) in L^2, and
+
+    1 / R(2w) = Z(4w) / Z(2w)^2 = E[ κ(ω, ω') ],   ω and ω' independent with law π_1.
+
+Proof. Z(2w) = ∫ ρ(ω, ω) dω and Z(4w) = ∫∫ ρ(ω, ω')^2 dω dω'. Divide. κ <= 1 is the Cauchy-Schwarz inequality for ρ(ω, ω') = <τ(ω, .), τ(ω', .)>. QED
+So (E1) is: E[1 - κ] <= 4/29. In words: take two independent typical slices of the 2w-periodic system. Use them as the two walls of a slab of height 2w. The free-energy cost of unequal walls against equal walls, -log κ = 2 F(ω, ω') - F(ω, ω) - F(ω', ω'), must be small for the whole N^3 wall, in the mean. The boundary data are typical, not worst-case.
+
+**Lemma 3.2 (crossed channel). PROVED under RA2 for each axis.** Z(N^3 x n) is symmetric in the four sides. So Z(N^3 x n) = Tr (T'_n)^N, where T'_n is the transfer operator of the slice N x N x n along a long axis. Let E'(n) = -log ||T'_n|| and Θ'_n = Tr (T'_n)^N / ||T'_n||^N - 1 >= 0 (N is even). Then
+
+    log R(2w) = N [ E'(4w) - 2 E'(2w) ] + 2 log(1 + Θ'_(2w)) - log(1 + Θ'_(4w)).
+
+Proof. Write log Z(N^3 x n) = -N E'(n) + log(1 + Θ'_n) for n = 2w and n = 4w. QED
+Meaning (ARGUED). When the slab tails Θ' are small, (E1) says: the ground energy of the periodic slab of thickness 4w is larger than two times the ground energy of the slab of thickness 2w by at most 0.148/N. This is a bound on the Casimir energy of the periodic slab: at most about 1.4 x 10^(-10) / w^3 per unit area (N = 1024 w).
+
+**Size of the seed (ARGUED, ideal-gas estimate, guide only).** Let t = 2w a be the physical time and ℓ = N a >= 512 t the physical side.
+- Free massless field with two polarizations: log(1 + Θ) is about (π^2/45) (ℓ/t)^3 >= 2.9 x 10^7. The seed fails by seven orders of magnitude in the exponent.
+- One scalar particle of mass m: Θ is about ℓ^3 m^2 K_2(m t) / (2 π^2 t) = 512^3 (m t)^2 K_2(m t)/(2 π^2). This is below 0.16 only for m t >= 22.5. So ℓ >= 512 x 22.5 / m, about 1.15 x 10^4 / m.
+- Small physical volume (Lüscher, Nucl. Phys. B219 (1983) 233): the neutral gap is of order g(ℓ)^(2/3)/ℓ. Then (gap) x t is of order g^(2/3)/512. The seed fails.
+So (T-A) can hold only at a physical side of about 10^4 correlation lengths. It is a statement about the deep infrared, at a fixed physical size, uniform in the cutoff. The factor 10^4 comes from the constants 512 and 1024 of the consumer, not from physics.
+
+**Thermal reading (ARGUED).** Θ(n) + 1 = Tr T^n / λ_0^n is the thermal partition function at temperature 1/(n a) with the vacuum energy removed. (E1) says that the Rényi-2 entropy of the thermal state, log R = -log Tr ρ_th^2, is at most 0.148 in a box with (ℓ T)^3 >= 512^3. So the seed is a bound on the entropy density: s_2(T) <= 1.1 x 10^(-9) T^3. A massless phase has s_2 of order T^3.
+
+Section 3 written at 2026-11-28T10:26:20Z (date -u).

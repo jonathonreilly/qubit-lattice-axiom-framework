@@ -1,0 +1,166 @@
+ca_I.tex	2239	proposition	2.4:prop-m-freeness	INCOMPLETE	$M$-freeness of the random-walk constants. Stated; proof incomplete at the step marked $(\ast)$ in Chapter~\ref{ch:5}
+ca_I.tex	3901	lemma	4.2:lem-one-loop	CITED	{the one-loop coefficient and the finite part of the one-loop law; \cite[(1.22), Theorem~3]{B-CMP109}, \cite[(2.41)]{B-CMP116}}
+ca_I.tex	4031	lemma	4.2:lem-unmarked	INCOMPLETE	Bounds on the unmarked part of the increment. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	4136	theorem	4.3:thm-small-field-step	CITED	Ba{\l}aban's one-step small-field renormalization theorem, cited by statement, in the family form in which this book uses it; {\cite[Theorem~3]{B-CMP109}}
+ca_I.tex	4209	theorem	4.3:thm-uv-stability	CITED	Ba{\l}aban's ultraviolet stability theorem {\cite[Theorem~1]{B-CMP122b}}
+ca_I.tex	8110	proposition	4.4:prop-local-real-base	OUTSTANDING	The local real base of a polymer. Proof outstanding
+ca_I.tex	11137	proposition	4.4:prop-equivariant-retraction	CITED	An equivariant smooth retraction onto the gauge group; classical, cited by statement
+ca_I.tex	14711	lemma	4.5:prf-chart-linear-bounds	PRINTED	Linear bounds on the background potential and the current correction
+ca_I.tex	16019	lemma	4.5:lem-uniform-increment	INCOMPLETE	Reproduction of condition (iv) under a twist with a depth-free constant. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	24239	lemma	4.6:lem-averaging-locality	CITED	Block-locality of the averaging operations; {\cite[(58)--(63), (77)--(81), (88)--(92), (124)--(125); p.~26, p.~31]{B-CMP98}}
+ca_I.tex	35144	theorem	4.9:thm-minimal-orbit	CITED	Ba{\l}aban's minimal-orbit theorem with cube gauge {\cite[Theorem~1, (7)--(9), p.~279]{B-CMP102b}}
+ca_I.tex	35201	proposition	4.9:prop-cube-gauge-regular	CITED	Ba{\l}aban's cube gauge for regular fields {\cite[Proposition~6, (1.135)--(1.136)]{B-CMP99a}}
+ca_I.tex	39874	proposition	4.10:prop-gauge-openness-large	OUTSTANDING	Openness of the gauge condition beyond $\pi$. Proof outstanding
+ca_I.tex	40862	proposition	4.11:prop-straddling-clause	INCOMPLETE	The constrained-minimiser clause at straddling sources. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	42354	proposition	4.11:prop-perturbative-clause	INCOMPLETE	The clause with a perturbative correction. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	44127	proposition	4.12:prop-reblocking-inside	INCOMPLETE	The re-blocking step inside admissible boxes. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	44803	corollary	4.12:cor-real-factor-slots	INCOMPLETE	Real-factor slot bounds inside admissible boxes
+ca_I.tex	45085	proposition	4.12:prop-reblocking-outside	OUTSTANDING	The re-blocking step outside admissible boxes. Proof outstanding
+ca_I.tex	45162	lemma	4.13:lem-minimizer-unique	OUTSTANDING	{Uniqueness and locality of the constrained minimizer, completing Ba{\l}aban's Lemma~4 of \cite{B-CMP109}. Proof outstanding}
+ca_I.tex	45203	lemma	4.13:lem-own-constant	OUTSTANDING	The gauge condition at the small pairs' and real-background pairs' own curvature constant, reproduced by one step. Proof outstanding
+ca_I.tex	45557	proposition	4.14:prop-prepared-data-admissible	PRINTED	Admissibility of the prepared large-field data; printed without proof in {\cite[pp.~178--179]{B-CMP122a}}
+ca_I.tex	47253	lemma	4.14:prf-form-walk-expansion	PRINTED	Walk expansion of the form and base-point bound
+ca_I.tex	53445	theorem	4.17:thm-transfer-seam	CITED	The transfer at the seam: Ba{\l}aban's one-step lemmas re-obtained at step $k+1$ on the layered cover of \cite{B-CMP119}
+ca_I.tex	65220	lemma	4.21:lem-terms-cease	CITED	Stored terms cease at a completed large-field operation; {\cite[p.~369, p.~377]{B-CMP122b}}
+ca_I.tex	87328	proposition	4.22:prop-stage-totals	INCOMPLETE	Contribution of the kept terms to the stage totals. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	106533	proposition	4.24:prop-norm-conversion	OUTSTANDING	Conversion of per-rate bounds to the stage norm. Proof outstanding
+ca_I.tex	106589	lemma	4.24:prf-field-dependence	INCOMPLETE	Field dependence of the densities in cube gauges. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	107073	proposition	4.24:prop-holonomy-bound	OUTSTANDING	Holonomy bound for walks across several cubes; proof outstanding
+ca_I.tex	110806	lemma	4.25:lem-gaussian-pieces	INCOMPLETE	Gaussian pieces: domain, invariance and continuation. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	111188	lemma	4.25:lem-piece-oscillation	INCOMPLETE	Oscillation of a Gaussian piece under small moves. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	114658	lemma	4.25:lem-non-deep-pieces	INCOMPLETE	Non-deep pieces are small. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	115062	proposition	4.25:prop-dissolution	INCOMPLETE	Dissolution of the arrested region. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	131633	lemma	4.27:lem-t-step-layer	INCOMPLETE	The $\mathbf{T}$-step layer in a background field. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	132878	lemma	4.27:lem-weights-heredity	INCOMPLETE	Weights, the dated size parameter and heredity; stated; proof incomplete at the steps marked $(\ast)$
+ca_I.tex	134184	lemma	4.27:prf-stage-move-cubes	INCOMPLETE	Cube families under a stage move. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	135143	lemma	4.27:prf-density-increase	INCOMPLETE	Current thresholds across an increase of density. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	135723	lemma	4.27:lem-current-probe	INCOMPLETE	The one-point current probe
+ca_I.tex	136192	lemma	4.27:prf-index-zero-margin	INCOMPLETE	No index-zero margin on source domains. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	136490	lemma	4.27:prf-ambient-inclusion	INCOMPLETE	Inclusion of the ambient domain at size $\gamma_0^{(k)}$. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	136809	lemma	4.27:lem-real-minimiser	INCOMPLETE	The real minimiser lies in arrested spaces. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	137628	theorem	4.27:thm-arrest-theorem	INCOMPLETE	The arrest theorem. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	138485	lemma	4.27:prf-newborn-continuation	INCOMPLETE	Newborn terms, space inclusions and continuation of stored domains. Stated; proof incomplete at the steps marked $(\ast)$
+ca_I.tex	138933	proposition	4.27:prop-live-piece-bounds	INCOMPLETE	Bounds of later steps on live arrested pieces. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	152408	lemma	4.30:lem-no-two-sided-point	INCOMPLETE	No lattice point on both boundaries of a stratum. Stated; proof incomplete at the step marked $(\ast)$
+ca_I.tex	156837	proposition	4.32:prop-positivity-dichotomy	OUTSTANDING	Positivity dichotomy of the large-field operations. Proof outstanding
+ca_I.tex	157457	proposition	4.35:prop-gauge-fixing	CITED	Gauge fixing inside the step: the three devices, Ba{\l}aban's gauge-fixing theorem and the axial-gauge minimal configuration cited by statement, and independence of the total integrals from the devices
+ca_I.tex	158518	proposition	4.36:prop-transport-every-l	INCOMPLETE	Transport bounds for every $L$ under a coupling ceiling. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	3926	proposition	5.2:prop-box-comb-gauge	CITED	Box representation, trivial-point containment and the comb gauge; {\cite[(3.18), (3.25), (3.26), (3.32), Lemma~4, pp.~276--277, (4.18)]{B-CMP109}}; {\cite[(2.28), (3.68)]{B-CMP119}}
+ca_II.tex	8922	lemma	5.2:lem-random-walk-bounds	CITED	Random-walk bounds for the conditioned covariances {\cite[Theorem~3.15]{B-CMP99b}}
+ca_II.tex	15979	lemma	5.2:lem-wilson-remainders	CITED	Localised remainders of the expanded Wilson actions {\cite[(1.11), (1.23), (1.27), (1.31), (1.47)--(1.49), pp.~374--375]{B-CMP122b}}
+ca_II.tex	46896	proposition	5.6:prop-localized-field	CITED	Analyticity of the localized field in the decoupling parameters {\cite[\S1, (1.17)--(1.21)]{B-CMP116}}
+ca_II.tex	49471	lemma	5.7:lem-one-lattice-vanishing	INCOMPLETE	Vanishing of all two-cutoff differences on one lattice. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	52399	proposition	5.7:prop-rippled-layer-closeness	OUTSTANDING	Linear layer closeness at rippled parents; proof outstanding
+ca_II.tex	54464	proposition	5.8:prop-local-decay	CITED	Ba{\l}aban's local decay of propagators and projections {\cite[(3.42)--(3.45), (3.48), (3.49), Theorems~3.1, 3.3, (3.132)--(3.133)]{B-CMP99b}}, {\cite[(71), (73)]{B-CMP102b}}
+ca_II.tex	65470	lemma	7.3:lem-first-passage-offsets	OUTSTANDING	Non-convergence of the first-passage offsets. Proof outstanding
+ca_II.tex	85845	theorem	8.4:thm-minimiser-analyticity	CITED	{Ba{\l}aban's analyticity of the minimiser in the data, with derivative decay; \cite[Theorem~1, Proposition~9, (190)]{B-CMP102b}}
+ca_II.tex	88192	proposition	8.4:prop-small-piece	INCOMPLETE	The small-piece statement. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	90425	proposition	8.5:prop-row-sum-identity	INCOMPLETE	The constant row-sum identity of the minimiser kernel. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	91539	proposition	8.5:prop-zero-block-mean	INCOMPLETE	Zero block mean of the marked residual form. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	93196	theorem	8.5:thm-room-lemma	INCOMPLETE	The second-derivative room lemma. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	93890	corollary	8.5:cor-room-witness-unit	INCOMPLETE	The room in the two-point witness's unit, free of the coupling; stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	102730	lemma	8.6:lem-prefactor-monotone	INCOMPLETE	Monotonicity of the common prefactor under island removal. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	103387	lemma	8.6:lem-healed-islands-unread	INCOMPLETE	Later steps do not read earlier healed islands. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	105368	proposition	8.6:prop-live-removal	OUTSTANDING	Removal domination for a live component. Proof outstanding
+ca_II.tex	106171	proposition	8.6:prop-creation-rarity	OUTSTANDING	Conditional rarity of simultaneous creations. Proof outstanding
+ca_II.tex	106818	lemma	8.6:lem-survival-bound	OUTSTANDING	Survival bound for long-lived creations. Proof outstanding
+ca_II.tex	107738	lemma	8.7:lem-translation-covariance	INCOMPLETE	Translation covariance of the label histories. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	108960	lemma	8.7:lem-resampling-kernel	INCOMPLETE	The renormalisation operation as a resampling kernel. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	109661	lemma	8.8:lem-target-independence	INCOMPLETE	Independence of the steps from the target coupling. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	112000	lemma	8.9:lem-age-lemma	INCOMPLETE	The age lemma. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	117592	proposition	8.10:prop-window-lower-bound	OUTSTANDING	The window-constrained Laplace lower bound; proof outstanding
+ca_II.tex	117753	proposition	8.10:prop-old-member	INCOMPLETE	The old-member statement. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	118319	proposition	8.10:prop-non-fillable	INCOMPLETE	Non-fillable exteriors with flat collar. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	119186	proposition	8.10:prop-hole-law-typicality	OUTSTANDING	Typicality of fillable exteriors under the hole law. Proof outstanding
+ca_II.tex	122938	lemma	8.11:lem-signed-averaging	CITED	{The signed block-averaging identity; \cite[(45)--(49)]{B-CMP98}}
+ca_II.tex	124111	proposition	8.11:prop-two-sided-profile	MODEL	Model: two-sided logarithmic profile behind the clamp
+ca_II.tex	126839	proposition	8.12:prop-depth-floor-rarity	INCOMPLETE	Rarity of never-healed old regions above a volume-dependent depth floor. Stated; proof incomplete at the step marked $(\ast)$
+ca_II.tex	127294	proposition	8.12:prop-uniform-old-rarity	OUTSTANDING	Volume-uniform rarity of never-healed old regions. Proof outstanding
+ca_II.tex	127906	lemma	8.13:lem-opposite-bonds	MODEL	Model: no adjacent opposite tight bonds
+ca_II.tex	127998	lemma	8.13:lem-floating-runs	MODEL	Model: no floating tight runs
+ca_II.tex	128106	lemma	8.13:lem-hanging-runs	MODEL	Model: hanging young runs and full columns
+ca_II.tex	128195	lemma	8.13:lem-tent-poles-concave	MODEL	Model: lower tent poles are laterally concave
+ca_II.tex	128271	lemma	8.13:lem-anchored-runs	MODEL	Model: anchored young runs sit on tip columns
+ca_II.tex	128439	lemma	8.13:lem-anchored-down-run	MODEL	Model: no anchored young down-run
+ca_II.tex	128513	lemma	8.13:lem-tight-census	MODEL	Model: census of young-tight bonds
+ca_II.tex	128656	lemma	8.13:lem-kink-pull-sign	MODEL	Model: the kink pulls upward near the tip
+ca_II.tex	128788	lemma	8.13:lem-kink-pull-decay	MODEL	Model: decay of the kink's pull
+ca_II.tex	128888	lemma	8.13:lem-tip-pull-bound	MODEL	Model: two-sided pull bound near the tip
+ca_II.tex	129063	lemma	8.13:lem-cool-band	MODEL	Model: the band is cool away from the tips
+ca_II.tex	129155	corollary	8.13:cor-hot-box	MODEL	Model: the hot box
+ca_II.tex	129344	lemma	8.13:lem-variational-inequality	MODEL	Model: the variational inequality
+ca_II.tex	129602	lemma	8.13:lem-clipping-lipschitz	MODEL	Model: clipping preserves the tangential Lipschitz bound
+ca_II.tex	129688	lemma	8.13:lem-competitor-energy	MODEL	Model: feasibility and energy of the competitor
+ca_II.tex	129779	lemma	8.13:lem-energy-budget	MODEL	Model: the local energy budget
+ca_II.tex	129958	lemma	8.13:lem-segment-cost	MODEL	Model: a transported segment costs cubic energy
+ca_II.tex	130037	corollary	8.13:cor-no-full-column	MODEL	Model: no young-full column
+ca_II.tex	130145	corollary	8.13:cor-short-needle	MODEL	Model: the tip needle is short
+ca_II.tex	130262	lemma	8.13:lem-cap-continuity	MODEL	Model: continuity of the minimiser in the cap
+ca_II.tex	130359	proposition	8.13:prop-no-hanging-pole	MODEL	Model: no hanging young pole
+ca_II.tex	130537	theorem	8.13:thm-inactivity	MODEL	Model: inactivity at full band width
+ca_II.tex	130630	corollary	8.13:cor-depth-log-bound	MODEL	Model: logarithmic bound at depth two clamp-widths
+ca_II.tex	130716	corollary	8.13:cor-inactivity-blocks	MODEL	Model: inactivity read in the block variables
+ca_II.tex	131200	lemma	8.14:lem-poisson-identities	MODEL	Model: Poisson operator identities, uniform in lateral size
+ca_II.tex	131405	lemma	8.14:lem-innovations-identity	MODEL	Model: the innovations identity
+ca_II.tex	131615	theorem	8.14:thm-exit-value	MODEL	Model: the exit-value theorem
+ca_II.tex	131898	theorem	8.14:prf-concavity-absorption	MODEL	Model: concavity, absorption and exactness
+ca_II.tex	132216	corollary	8.14:cor-stopping-height	MODEL	Model: monotone increments and a stopping height
+ca_II.tex	132385	lemma	8.14:lem-exit-pull	MODEL	Model: exit pull from exit-row curvature
+ca_II.tex	132812	lemma	8.14:lem-one-row-ceiling	MODEL	Model: the one-row ceiling
+ca_II.tex	133279	lemma	8.14:lem-charge-energy	MODEL	Model: concavity defect as multiplier-charge energy
+ca_II.tex	133440	corollary	8.14:cor-charged-decay	MODEL	Model: geometric decay on the charged class
+ca_II.tex	133729	theorem	8.14:thm-collar-exactness	MODEL	Model: exactness beyond a collar
+ca_II.tex	133843	corollary	8.14:cor-over-pull-small	MODEL	Model: smallness of the exit over-pull
+ca_II.tex	134694	lemma	8.15:lem-band-optimality	MODEL	Model: the optimality system inside the capped band
+ca_II.tex	134862	proposition	8.15:prop-multiplier-convexity	MODEL	Model: convexity of the multiplier norm in the height
+ca_II.tex	136053	theorem	8.15:thm-epsilon-regularity	MODEL	Model: $\varepsilon$-regularity of capped lattice fields
+ca_II.tex	136285	corollary	8.15:cor-cube-inactivity	MODEL	Model: inactivity of a whole cube under small excess
+ca_II.tex	136579	theorem	8.16:thm-slab-inactivity	MODEL	Model: exact inactivity away from the slab faces
+ca_II.tex	136787	corollary	8.16:cor-slab-exit	MODEL	Model: exit, no cascade and stopping in the slab
+ca_II.tex	138066	lemma	8.16:lem-load-identity	MODEL	Model: the load identity for block-slaved fields
+ca_II.tex	138688	theorem	8.17:thm-model-short-move	MODEL	Model: lower bound by a short move
+ca_II.tex	138922	corollary	8.17:cor-model-radii	MODEL	Model: short-move radii from the opening constant
+ca_II.tex	139000	corollary	8.17:cor-model-isoperimetric	MODEL	Model: the opening constant as an isoperimetric constant
+ca_II.tex	139111	proposition	8.17:prop-model-loss-sharp	MODEL	Model: the per-coordinate loss cannot be removed
+ca_II.tex	139258	corollary	8.17:cor-model-top-step	MODEL	Model: the top step in the plaquette instance
+ca_II.tex	140818	proposition	8.17:prop-deep-coherent-top-step	OUTSTANDING	The top step for deep regions with coherent tight sets; proof outstanding
+ca_II.tex	145173	lemma	8.21:lem-source	OUTSTANDING	The source lemma (live marked slots and the annealed shadow of the smeared source); Proof outstanding
+ca_II.tex	145224	lemma	8.21:lem-flat-shell	OUTSTANDING	The flat shell bound (input of the alternative bookkeeping only). Proof outstanding
+ca_III.tex	16559	proposition	9.1:prop-blind-site-expansions	OUTSTANDING	Site expansions with island-blind inputs. Proof outstanding
+ca_III.tex	25267	theorem	9.2:thm-carry	INCOMPLETE	The carry lemma. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	26156	proposition	9.2:prop-boundary-term-variation	INCOMPLETE	Zone-resolved variation of the first-group boundary terms. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	26384	proposition	9.2:prop-rest-term-tail	INCOMPLETE	The tail of the rest terms above a threshold zone. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	26424	lemma	9.2:lem-aligned-parts	INCOMPLETE	Aligned parts of nested leaves and the unmatched term. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	27871	proposition	9.2:prop-response-factor	INCOMPLETE	The per-unit response factor at the step. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	32417	proposition	9.2:prop-modulus-majorant	OUTSTANDING	The history-wise modulus majorant. Proof outstanding
+ca_III.tex	33089	lemma	9.2:lem-linear-size-lower	INCOMPLETE	Linear size at least one for constructed regions; part~(2): stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	35577	proposition	9.3:prop-second-variation	PRINTED	Ba{\l}aban's second-variation and data-response bounds; printed without proof in {\cite[(189)--(190), p.~308]{B-CMP102b}}
+ca_III.tex	37365	proposition	9.3:prop-propagator-stationarity	OUTSTANDING	Weak stationarity of the fine-lattice propagators. Proof outstanding
+ca_III.tex	37667	proposition	9.5:prop-the-two-cutoff-smallness-of-the-kept-fac	OUTSTANDING	The two-cutoff smallness, at the current depth, of the two factors kept un-integrated inside a thrown-back region, on the enlarged class, under one ceiling. Proof outstanding
+ca_III.tex	37716	proposition	9.5:prop-the-mixed-first-generation-bound	OUTSTANDING	The mixed-size counting estimate. Proof outstanding
+ca_III.tex	38809	lemma	9.5:lem-majorant-containment	OUTSTANDING	Single-lattice containment of the lettered majorant. Proof outstanding
+ca_III.tex	39469	theorem	9.5:thm-lettered-comparison	INCOMPLETE	Comparison bounds for lettered links. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	39797	proposition	9.5:prop-weak-presentation	INCOMPLETE	Comparison bounds for weakly presented pairs. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	43702	proposition	9.5:prop-remainder-difference	OUTSTANDING	Two-run difference of field-independent remainder terms. Proof outstanding
+ca_III.tex	54156	corollary	9.8:cor-subsequential-limits	OUTSTANDING	First-passage offsets and the identification of subsequential limits. Proof outstanding
+ca_III.tex	56333	proposition	9.9:prop-remainder-derivative	OUTSTANDING	Bare-offset derivative of the witness remainder. Proof outstanding
+ca_III.tex	60826	theorem	9.10:thm-refiled-lipschitz	INCOMPLETE	Re-filed one-lattice Lipschitz step. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	61063	theorem	9.10:thm-lipschitz-kernel	INCOMPLETE	Kernel form of the re-filed Lipschitz step. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	61923	proposition	9.10:prop-source-bounds	INCOMPLETE	Geometric source bounds for the re-filed run. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	62898	lemma	9.10:lem-load-envelope	INCOMPLETE	Finite-range envelope of last-lattice loads. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	63225	theorem	9.10:thm-last-lattice-comparison	INCOMPLETE	Geometric last-lattice comparison for the re-filed run. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	65059	proposition	9.11:prop-source-families	INCOMPLETE	Hatted source families with geometric envelope. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	65827	theorem	9.11:thm-geometric-envelope	INCOMPLETE	Geometric envelope for two-run differences of hatted runs. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	68855	lemma	9.13:lem-limit-member	OUTSTANDING	The limit-member identification. Proof outstanding
+ca_III.tex	71341	proposition	9.14:prop-sun-uniqueness	OUTSTANDING	The uniqueness theorem for $\mathrm{SU}(N)$, $N\ge3$. Proof outstanding
+ca_III.tex	78191	proposition	10.1:prop-antisymmetric-channel	INCOMPLETE	The antisymmetric channel at dimension six. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	82940	lemma	10.3:lem-vector-rim	INCOMPLETE	The rim lemma for the vector part. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	83405	lemma	10.3:lem-vector-run-decay	OUTSTANDING	Geometric decay of the frozen vector run
+ca_III.tex	83615	lemma	10.3:lem-source-variation	INCOMPLETE	The load of a variation of the source
+ca_III.tex	91500	proposition	10.4:prop-vertex-response	INCOMPLETE	Response of one step to the tensor vertex; Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	91997	proposition	10.4:prop-typed-step	INCOMPLETE	The typed step with a marginal tensor slot. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	92103	lemma	10.4:lem-typed-refiling	INCOMPLETE	Re-filing of typed marginal families. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	93798	theorem	10.5:thm-reduction	INCOMPLETE	The reduction theorem. Stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	94572	theorem	10.5:thm-reduction-without-shell	INCOMPLETE	Reduction without a shell term
+ca_III.tex	99495	corollary	10.6:cor-normalisation-decay	INCOMPLETE	Two-sided decay of the tensor normalisation; stated; proof incomplete at the step marked $(\ast)$
+ca_III.tex	109238	proposition	10.8:prop-threshold-sharpness	OUTSTANDING	Sharpness of the $|x|^{-4}$ threshold: a free-field counter-model. Proof outstanding

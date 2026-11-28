@@ -1,0 +1,6 @@
+seed s0 = 2.719e-13, threshold 1/B = 3.429e-04, promised gap >= 1.0478, m_B = 1.00
+(40, 40, 40) vac A g = 2.719e-13 
+(80, 40, 40) vac A g = 5.438e-13 ratio 2.000e+00
+(80, 80, 40) vac A g = 1.088e-12 ratio 2.000e+00
+(80, 80, 80) vac B g = 1.055e-03 ratio 9.703e+08
+min FW2 defect (must be >= 0): 0.6931 ; max defect/(a c d) (must be <= D_B = 21.693): 13.9172

@@ -1,0 +1,4 @@
+beta=0.676: t/4=0.04147  max tau on S_1 (field free) = 0.25040
+beta=0.676: max L (n=6, F0=0) = 0.04163  ratio to t/4 = 1.0039  30*beta*maxL = 0.8443
+beta=0.735: t/4=0.04494  max tau on S_1 (field free) = 0.25049
+beta=0.735: max L (n=6, F0=0) = 0.04518  ratio to t/4 = 1.0053  30*beta*maxL = 0.9961

@@ -1,0 +1,19 @@
+{
+  "kind": "saved-record bookkeeping, no proof or new numerical run",
+  "status": "passed",
+  "heat_pairs": 78,
+  "bisection_steps_per_n": {
+    "4": 16,
+    "5": 16,
+    "6": 16
+  },
+  "wilson_points": 32,
+  "file_counts": {
+    ".json": 180,
+    ".log": 190,
+    ".py": 13
+  },
+  "total_bytes": 774479,
+  "head": "bc343b5d672fd4f07c66ec39247981322f110f18",
+  "branch": "work/gap-descent-n-trend-astra"
+}

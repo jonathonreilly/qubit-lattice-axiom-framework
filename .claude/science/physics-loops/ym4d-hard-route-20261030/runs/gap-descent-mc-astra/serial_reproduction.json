@@ -1,0 +1,12 @@
+{
+  "tag": "L12_b2.5_2_c0",
+  "reason": "Controller/sampler handoff race overlapped the original with beta=2.5 control analysis",
+  "original_receipt": "handoff_overlap/L12_b2.5_2_c0.json",
+  "same_seed": true,
+  "independent_replication": false,
+  "raw_sha256": "afed2b047dd4f2826b305825162534ac8ced084d69602eeb68cdd0f38e057e9e",
+  "other_matching_hashes": {
+    ".cfg": "aaa855c13355e12c47e370f2a112284d5281d6f85e0f30c5d2c732461f357632",
+    ".therm.csv": "03426466f7e077411975d0ed8a3c9c86b532ddee654493b17fc306566391a463"
+  }
+}

@@ -1,0 +1,8 @@
+R     mean 153.832440 err 0.031576 tau_int 0.9 block_len 312 ok
+Gp1   mean 3.514844 err 0.007229 tau_int 1.0 block_len 312 ok
+tau   mean 0.750988 err 0.000061 tau_int 0.5 block_len 312 ok
+a0sq  mean 0.251356 err 0.002070 tau_int 7.1 block_len 312 ok
+plaq  mean 0.617324 (n=500)
+halves R: 153.80175 +- 0.04488 | 153.86313 +- 0.04461  diff/sigma 0.97
+IRB  Ghat^e(p1) = 0.87871 +- 0.00181  <=  1/(2 beta E(p1)) = 2.85589 : holds
+xi2nd 16.7605 err 0.0191  (xi/S = 1.048)

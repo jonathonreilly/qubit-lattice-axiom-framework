@@ -1,0 +1,18 @@
+DEC2: MC of int exp(b v.(rho+rho')) dv vs omega(b sqrt(2+2t))
+  b=0.5 t=+0.3943 MC=1.08957 omega=1.08971
+  b=2.0 t=-0.1921 MC=2.05866 omega=2.05722
+  b=2.5 t=+0.0081 MC=3.66019 omega=3.65727
+U(1) analogue: circle average of exp(b v.(rho+rho')) vs I0(2b|cos(d/2)|)
+  b=1.0 d=0.7 quad=2.09726501 I0=2.09726501
+  b=3.0 d=2.5 quad=2.11610323 I0=2.11610323
+DEC6: V''(-1) by finite differences vs -b^4/48
+  b=0.7 V''(-1+2e-3)~-0.005001  -b^4/48=-0.005002
+  b=2.0 V''(-1+2e-3)~-0.332668  -b^4/48=-0.333333
+NA1/NA4: E[y1y2y3y4] and Cov(F,G) under exp(k Re(q1 q2 q3^-1 q4^-1))
+  k=1.0 MC E[y1y2y3y4]=0.00144 exact 0.00145; E[y1y3]=-0.00007 E[y1y2y3]=+0.00004; Cov(F,G)=-0.00129
+  k=2.0 MC E[y1y2y3y4]=0.00491 exact 0.00495; E[y1y3]=-0.00020 E[y1y2y3]=-0.00005; Cov(F,G)=-0.00429
+  k=4.0 MC E[y1y2y3y4]=0.01258 exact 0.01266; E[y1y3]=-0.00050 E[y1y2y3]=-0.00000; Cov(F,G)=-0.01465
+  y(q)-y(q^-1) max: 0.0
+  (q i q^-1)_i - y max: 1.1102230246251565e-16
+P4-LIFT: Re(q1 q2 q3^-1 q4^-1) at (1,i,j,k) and after common left mult by i
+   -1.0 1.0

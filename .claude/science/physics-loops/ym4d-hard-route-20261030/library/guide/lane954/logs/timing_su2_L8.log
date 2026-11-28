@@ -1,0 +1,20 @@
+[    0.0s rss    33MB] group=su2 L=8 K=10 m=0 Nt=22 beta=2.3 ntherm=3 nsep=2 nmeas=6 nor=2
+[    0.0s rss    33MB] thermalised, 4.7 ms per sweep
+[    0.1s rss    57MB] meas 1/6: sweep 9 ms/meas, measure 60 ms/meas
+[    0.2s rss    58MB] meas 2/6: sweep 9 ms/meas, measure 59 ms/meas
+[    0.3s rss    82MB] meas 3/6: sweep 9 ms/meas, measure 59 ms/meas
+[    0.4s rss    82MB] meas 4/6: sweep 9 ms/meas, measure 60 ms/meas
+[    0.4s rss    82MB] meas 5/6: sweep 9 ms/meas, measure 60 ms/meas
+[    0.5s rss    82MB] meas 6/6: sweep 9 ms/meas, measure 60 ms/meas
+{"args": {"lib": "/tmp/lane954/build/liblgt954.dylib", "group": "su2", "L": 8, "K": 10, "m": 0, "beta": 2.3, "ntherm": 3, "nsep": 2, "nmeas": 6, "nor": 2, "seed": 954, "out": null, "tmax": 1000000000.0, "extra_t": 6}, "nmeas": 6, "Nt": 22, "stats_mean": [0.6036170338348437, 0.6080520800225805, 0.4562220271693597, 0.03834382476687171, 0.003356276825902268, 5.5542041324467724e-05], "stats_err": [0.003244308369734533, 0.006874201300075521, 0.006782840775319516, 0.0069027599951443945, 0.001191374898294972, 2.975109031274078e-05], "lag1_trace_m2": {"S0e": -0.37933668688143735, "S0o": -0.5600418012404627, "S1e": -0.10666021216411792, "S1o": -0.5540163020086878}, "ms_per_sweep": 4.684428373972575, "ms_per_meas": 59.57976977030436, "peak_rss_mb": 82.788352, "wall_s": 0.545612096786499}
+  gap plaq0  Eeff(tau) 4.456+-2.305 -2.546+-2.064 0.872+-1.691 0.514+-2.002 -0.311+-5.712 -0.955+-2.366
+  gap wind   Eeff(tau) 1.857+-0.105 0.779+-0.770 0.172+-1.345 2.774+-2.497 -3.382+-2.791 -0.532+-0.506
+  S0e  top 0.33668 +- 0.11772 (bias-corrected 0.00870); max single 0.13348
+  S0o  top 0.09996 +- 0.04571 (bias-corrected 0.04147); max single 0.04198
+  S1e  top 0.19055 +- 0.04195 (bias-corrected 0.08320); max single 0.13534
+  S1o  top 0.04880 +- 0.00478 (bias-corrected 0.04653); max single 0.04734
+  extra pair t=6: S0e  top 0.40745 +- 0.12748 (bias-corrected 0.11736)
+  extra pair t=6: S0o  top 0.10026 +- 0.03867 (bias-corrected 0.02194)
+  extra pair t=6: S1e  top 0.17561 +- 0.04659 (bias-corrected 0.08900)
+  extra pair t=6: S1o  top 0.05644 +- 0.01005 (bias-corrected 0.05440)
+[    0.5s rss    83MB] done

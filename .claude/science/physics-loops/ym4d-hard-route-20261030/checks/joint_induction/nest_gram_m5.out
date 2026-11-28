@@ -1,0 +1,4 @@
+regression, chunked assembly: l0=2 m=2 lam 0.21500 (first run 0.21500)
+l0=2 m=5: rows per period 5590, lam 0.21472, t=65s
+G1 at m=4 to 5: PASS
+peak RSS bytes 1732575232

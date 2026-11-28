@@ -1,0 +1,559 @@
+lead: anthropic/claude-fable-5-2/max mac-mini-worker
+lease_until: 2026-11-20T09:12Z
+
+# New attack vectors from the measured-physics assumptions file (FINISH row 1065)
+
+Provenance: Claude Fable 5.2, max effort, Mac mini worker 2. Two sessions. Session 1 was pinned at commit 50e1952db and wrote steps 1 to 7.8; a power cut stopped it (lead note in row 1065). Session 2 started 2026-11-19T21:12Z (date -u), pinned at commit 6a3a26b93, and continues from step 7.8; its text starts at the heading "Session 2". Research-stage working state. This file grants no status. No part of it is checked by another model.
+
+Item: queue row 1065, `gap-measured-vectors-max`. Inputs read first: `library/gap-measured-assumptions-opus.md` (row 1063), then `library/prior/gap-measured-read-luna.md` (row 1064). Read only to avoid redoing work: `parts/gap.md`, `library/gap-wall-vectors-max.md` (row 1053) and its two checks.
+
+Marks used: PROVED, ARGUED, OPEN, FAILS. A measured result may guide or refute. It never proves.
+
+## Plan (eight steps, one step per response, each appended before the next)
+
+1. Read row 1063's file in full. Record its top fifteen assumptions and each place where the measured mechanism disagrees with the lane's route.
+2. Read row 1064's file in full. Record what it adds or contests.
+3. Read `parts/gap.md`, row 1053 and its checks, only to list what is already on file (vectors, kill tests, open-core entries). Write the no-duplicate grep results.
+4. Task (1): for each top-fifteen assumption and each disagreement, say whether it gives a new attack vector.
+5. Tasks (2) and (3): for each vector, the exact statement, consumer, change, source and cheapest kill test; then run the kill tests on file.
+6. Task (4): rank the survivors by change divided by cost.
+7. Task (5): for the top one or two, invent the mechanism, write the first lemma and try it by hand, or build the counterexample.
+8. Task (6): one complete brief per surviving vector, then the RESULT line.
+
+## Step log
+
+(Each step below is appended when it is done. Nothing is written here ahead of the work.)
+
+## Step 1: row 1063's file, read in full (736 lines)
+
+Source: `library/gap-measured-assumptions-opus.md` (Claude Opus 5.5 high, unchecked). Credit for every item of this step: that file and the sources it names (Athenodorou and Teper 2106.00364; Engels, Fingberg, Weber; Fingberg, Heller, Karsch; Lautrup and Nauenberg; Creutz; Bhanot and Creutz; Mathur and Gavai; Datta and Gavai; Lucini, Teper, Wenger; Luscher and Weisz; Bali and others; Kovacs and Tomboulis; de Forcrand and D'Elia).
+
+**1.1 The ranking that exists.** Row 1063 does not rank fifteen assumptions. It ranks five bundles (its L389-401), which hold nine assumption IDs. It then names one lower-rank item (a10) and three "most expensive to be wrong" (e4, e5, e6), and its Elon pass lists the method-only requirements that can be deleted at a price. Row 1065 was queued before row 1063 ended, so "top fifteen" is filled here by this stated rule: the nine ranked IDs in rank order, then the Elon-pass deletable items not yet listed, then the expensive ones. This rule is mine.
+
+| Rank | ID | Assumption (row 1063 wording, shortened) | What the measured record says (row 1063) |
+|---|---|---|---|
+| 1 | c2 | The band is the order-one bare coupling of the Wilson action | Gap scale meets the cutoff at beta 2.2-2.4 (L2, L5). The band [2.3, 2.6] is above the crossover (peak at 2.1-2.2, T-BAND guide run) and already scales |
+| 2 | b3 | The Wilson plaquette action | Habit. Universality (BELIEF e6) says other actions give the same continuum |
+| 3 | c4 | Strong-coupling tools reach the band | Contradicted as a guide: leading strong coupling misses sigma a^2 by 5.4x and m a by 2.4x at beta 2.30 (L9) |
+| 4 | e4 | No bulk transition on the SU(2) Wilson axis at T = 0 | Strongly supported, not a theorem |
+| 5 | c6 | A finite-volume criterion with small boxes at band couplings | Boxes of side below 1/(T_c a) are deconfined: side 4 at beta 2.3, 8 at 2.5, 11 at 2.6, 14 at 2.7 (L3, C8) |
+| 6 | c10 | Small-lattice numerics guide the lane | Same contradiction (C8) |
+| 7 | b6 | Periodic torus, then thermodynamic limit | Same contradiction at small sizes (C8) |
+| 8 | d2 | Deconfined models are counterexamples to gap tools | Contradicted (recalled): spatial screening masses persist when the flux tube melts |
+| 9 | e10 | The gap is caused by confinement | One scale with sigma (C1), but the gap is the weaker property (3.1h) |
+| 10 | b2 | Lattice regularisation at the joining scale | The crossover features are lattice features. The lattice is needed only as an ultraviolet regulator |
+| 11 | c7 | One inequality proves it all | BELIEF test only (adjoint-blind tools against the K7 end point, which is CONTESTED) |
+| 12 | d6 | "It was tried" as a discard reason | A failed search rules out nothing |
+| 13 | a10 | theta = 0 left implicit | chi is measured non-zero (L14); theta = pi cannot be trivially gapped (anomaly, recalled) |
+| 14 | e5 | Asymptotic freedom holds non-perturbatively | Supported (L7, L8, E6); not contradicted |
+| 15 | e6 | Universality of nearby actions | Supported (L8); not contradicted |
+
+**1.2 Places where the measured mechanism and the lane's route differ (from row 1063 steps 3, 5, 6, 9).**
+
+- D1. The lane's wall (W) is stronger than the Clay gap in four ways (row 1052, quoted by row 1063 5.0): bare Wilson action; every lattice of the sequence; periodic all-sector cubes, hence the flux half; a bounded Casimir free energy. The measured mechanism says the gap is the weaker property (3.1h, C6, 6b).
+- D2. The measured gap is a 0++ plaquette-type correlator decay (L1, L2, b10). The lane's (W) reads the transfer gap of the periodic cube in all sectors.
+- D3. The firm mechanism is the confining flux tube with universal string behaviour (L11-L13, T7). Every gauge-invariant measured form of it is a confinement quantity (6b). Vortex, monopole, Gribov and K7 end-point readings are CONTESTED.
+- D4. Continuum ratios hold from correlation length 1.5 lattice spacings (C5). The lane's seed sits at box sizes of about 20 correlation lengths (row 720, quoted in M3).
+- D5. The uncovered region is two to four factor-2 blockings at fixed physics (C10), each at order-one coupling.
+- D6. Confined boxes need side at least 1/(T_c a) (C8). Smaller periodic boxes show the deconfined theory, which still has a spatial gap (d2, recalled).
+- D7. Nothing singular happens at the gap scale in the continuum (b2). The band's difficulty is "no small parameter in a regime that already scales" (5.1 reading 1).
+- D8. SU(2), SU(3) and large N agree within 20 percent (C7, S4): 1/N is a measured small parameter the lane does not use (d3 leaves "a small parameter in another variable" open).
+
+**1.3 Row 1063's own verdict.** No new route: M1-M9 are each held by another FINISH row or dead (its step 7). No filter corrected. Its 9.5 says another measured-physics exercise on this wall mainly finds the lane's map again. This row must therefore produce vectors that M1-M9 do not contain, or report that none survives.
+
+Left for step 2: row 1064's reading.
+
+## Step 2: row 1064's reading, read in full (85 lines)
+
+Source: `library/prior/gap-measured-read-luna.md` (gpt-6-luna, a literature digest, no proof, unchecked). It says its repository search could not be done (index and registry absent in its checkout).
+
+**2.1 What it adds to row 1063's record (all MEASURED unless marked; guides only).**
+
+- Scale at coarser couplings (Teper 1998 review, hep-th/9812187): a sqrt(sigma) = 0.69(5) at beta 2.0, 0.2686(21) at 2.4, 0.1834(26) at 2.5, 0.0636(12) at 2.85. Row 1063 had no value below 2.2986. So the lattice at beta 2.0 has a sqrt(sigma) about 0.69, and one factor-2 coarsening of the beta 2.3 lattice (0.368 to 0.74) lands near beta 2.0.
+- The crossover peak (Engels and Scheideler, hep-lat/9610019): pseudo-specific-heat peak at beta_co = 2.23(2) for L at least 8, height C_V = 1.685(10), "not an ordinary phase transition". This agrees with T-BAND of row 1063 (peak 2.1-2.2 on 8^4).
+- Closed-string correction (Lucini and Teper, PRD 64, 105019): torelon energy a m_l = a^2 sigma L - c_L pi/(3L) with c_L = 0.98(4), SU(2), beta 2.55, strings longer than 1 fm. Open-string term (Luscher and Weisz 2002): -pi/(12 r), SU(3).
+- Second continuum determinations: SU(2) 0++ = 3.74(12) (Teper), 3.78(7) (Lucini, Teper, Wenger 2004), 3.781(23) (Athenodorou and Teper 2021). The three agree.
+- Mixed action (Bhanot and Creutz 1981): triple point near (beta_F, beta_A) = (0.55, 2.34), end point near (1.57, 0.78). Row 1063 marks the end point CONTESTED (Mathur and Gavai; Datta and Gavai). Row 1064 does not contest it. I keep CONTESTED.
+- T_c/sqrt(sigma) scales over beta 2.30-2.75 although T_c and sqrt(sigma) separately do not (Fingberg, Heller, Karsch).
+- Large N: N = infinity scalar 3.307(53) (2004) against 3.072(14) (2021). Smooth 1/N^2 fits in both.
+
+**2.2 What it marks CONTESTED.** Centre vortices (projection dependent), abelian monopoles and the dual superconductor (maximal abelian gauge), Landau-gauge propagators and the Gribov region (gauge dependent). A vector in this file whose only support is one of these is marked CONTESTED-ONLY.
+
+**2.3 What is firm in both records (used as guides in step 4).** F1: the lightest state is the 0++ glueball, with m = 3.78 sqrt(sigma). F2: a finite string tension with the bosonic-string corrections in both the open and the closed geometry. F3: T_c/sqrt(sigma) about 0.70, second order for SU(2), in the 3D Ising class. F4: no bulk transition on the Wilson axis, a smooth peak at beta about 2.2. F5: ratio scaling from correlation length about 1.5. F6: smooth dependence on N.
+
+Left for step 3: the lane's files, read only to list what is already on file.
+
+## Step 3: what the lane already holds (read only to avoid redoing work)
+
+Read in full: `parts/gap.md` (261 lines) and `library/gap-wall-vectors-max.md` (row 1053, 387 lines). Read in part: `library/gap-wall-vectors-check-astra.md` L335-492 (the verdicts on V1-V5). The same-provider check `gap-wall-vectors-check-opus.md` was read only through its summary in `parts/gap.md` L152.
+
+**3.1 What binds this row.**
+
+- The wall is (W): a bound (L_0, D_0) of (BDD-Delta) and a physical size L at least 4 L_0 with z^-(L) > 256 D_0 + 30 (`parts/gap.md` L21-23). The price: (W) iff (BDD-Delta) and (Z-UNB); (W) follows from (CAS) with theta < 1 (L257-259).
+- Two kinds of input (L47-50): (K-one), a property at one scale in the band; (K-flow), a statement that reads first-passage data and is carried through the band by a step that fails for U(1), frozen groups and products with a massless factor. For (K-flow) the lane has constraints and no refutation device (L246-248).
+- Route registry (L172-181): RA contraction of D, RB sign in beta, RC one-scale number, RD dichotomy, RE sector engines, RF functional inequalities, RG hierarchical comparison, LC level convexity. None near closure.
+- Row 1053: V1 (2+2 anisotropic face, Orland's anchor) FAILS as a route; V2 (parametric seed near the anchor) and V4 (infrared measure first) are OPEN uncompleted proposals after the gpt-6-astra check; V3 FAILS; V5 (frozen Pin(2)) is a GUIDE-grade test.
+- Row 1052: Lemma FLUX-W ((W) forces the flux energies above the gap) and the target T_JW-lat (no flux clause). Check 1054: the swap "loses the one-box reduction until a finite-size criterion for T_JW-lat exists".
+- Row 1063's M1-M9: flux tube (rows 1025, 1052), vortex free energy (row 1018 (T-vor)), counted blockings ((CAS), row 708), a join away from the Wilson axis ((UNIV-FP)), area law to gap (dead), seed below the crossover (ceilings), effective string theory (no consumer), large N (off the path), misframing (none).
+
+**3.2 Keyword count over `library/` and `parts/` (files that contain the word; done before any vector is named).** sharpness 46; Simon-Lieb 20; Borgs 39; Dobrushin 127; Aizenman 26; Duminil 15; Griffiths 41; Ginibre 42; Higgs 60; Fradkin 13; complementarity 2; Polyakov loop 29; torelon 20; toron 43; Koller 12; femto 2; step-scaling 31; Schrodinger functional 12; Tomboulis-Yaffe 34; 't Hooft loop 14; duality 100; large N 49; Makeenko 14; Eguchi 4; Hagedorn 4; random current 9; spin foam 9; Debye 9; screening mass 4 (three of them rows 1063, 1065); dimensional reduction 4; Svetitsky 1 (a not-read list); Bachas 1; gluelump 2; effective string 2; path coupling 1 (a search-term list); Ollivier 4.
+
+**3.3 Specific places found (so they are not redone).**
+
+- Higgs complementarity: `gap-assume-opus.md` item 77 ("every path to the pure theory at large beta crosses the order-one region at zero hopping. Removal needs a uniform rate"); `gap-wall-assumptions-opus.md` I29, N12.
+- Femto-universe and the order of limits: `gap-brainstorm-max.md` idea 36 (merged into G7); `gap-kurt-max.md` L170.
+- Free-wall boxes: Route W with crux (W-ENG) and the variant W' (`gap-next3-max.md` L281, L294; rows 858, 900).
+- Schrodinger-functional coupling: `prior/gap-gauge-stiffness-read-opus.md` L67, L179 ("nothing rigorous is known about it beyond the classical minimum"; "no monotonicity in L").
+- A rigorous four-to-three dimensional reduction at high temperature: "NOT in the lane" (`prior/gap-outside-read-opus.md` L51); `prior/gap-3dmix-read-opus.md` L211 searched for it.
+- Hagedorn growth at the seed temperature: `gap-assume-opus.md` item 52 (a GUIDE).
+- Transport and coarse curvature (Dobrushin, Wu, Ollivier): `gap-brainstorm-max.md` L91 (row 787 reading).
+- Orbit-space curvature, Singer, Mondal: `prior/gap-crux-lit-2.md` L154; row 1032 B8.
+
+Left for step 4: name candidate vectors from the fifteen assumptions and D1-D8, each with a grep of `library/open-core.md` and the FINISH rows.
+
+## Step 4a: candidates that the measured record suggests at once, each grepped before it was named
+
+Rule 0a grep for every line: `library/open-core.md` (0 hits for each word below), FINISH.md rows, and `library/`, `parts/`. "Found" means the idea is on file with the place named. None of these is attacked here.
+
+| Candidate (measured source) | Grep words | Result |
+|---|---|---|
+| Centre-stabilised small circle, deformed Yang-Mills, continuity in the circle size (d2, e10, b6) | Unsal; deformed; adiabatic continuity | Found: rows 1004, 1005 (`gap-outside-box-max.md` L431, `prior/gap-outside-read-opus.md` L103-152), row 858 (`gap-crux-exercise-r858-max.md` L326: "the passage from thin n to n = a ... a conjecture"), `gap-skeleton-max.md` L371 |
+| Rigorous 3D compact U(1) gap as a selective input (Gopfert and Mack) | Gopfert | Found: 19 files, 9 FINISH lines (row 1004 brief) |
+| Binary icosahedral group as a finite twin of SU(2) in the band (c6, c10) | icosahedral | Found: `gap-brainstorm2-max.md` G13 and Top 3; 28 FINISH lines |
+| The critical slab as a test: a tool must use the long sides (C8, L3) | SMALL-BOX; Borgs | Found: test K6 "Critical slab" (`gap-crux-exercise2-max.md` L430); SMALL-BOX (`gap-tiltproof-max.md` L100) |
+| Free-wall boxes, no flux sector (D1, b6) | Route W; W-ENG | Found: rows 858, 900, `gap-next3-max.md` C1; a counterexample to (W-ENG) from positivity and axis exchange alone is in FINISH |
+| Fundamental Higgs field as an infrared regulator, complementarity (d2) | complementarity; Fradkin | Found: `gap-assume-opus.md` item 77 ("Removal needs a uniform rate") |
+| Hot phase: spatial gap at fixed N_t and large beta (d2) | screening mass; dimensional reduction | Not attacked on file; FAILS at once: at fixed N_t and beta to infinity it contains the 3D Yang-Mills gap at weak 3D coupling (the magnetic mass), which is the same wall in three dimensions (ARGUED, standard dimensional reduction, recalled). Rows 988, 992 met the 3D mixing input already |
+| Large N as the small parameter (D8, S4) | large N; Eguchi | Found as M8 of row 1063, off the path. Measured addition (recalled, not re-read): Wilson SU(N) has a first-order bulk transition for N at least 5 (Lucini and Teper 2001), so e4 is false at large N; it binds fixed-coupling tools only, as K7 does |
+| Loop equations with positivity (a bootstrap at order one) | Makeenko; loop-eq | Found: `gap-loop-eq-opus.md`, `prior/gap-crux-lit-nonab.md` L166 |
+| Step-scaling or Schrodinger-functional coupling as the carried quantity (D5, D7) | step-scaling; Schrodinger functional | Found: row 859; `prior/gap-gauge-stiffness-read-opus.md` L67, L179 |
+| Sharpness of the deconfinement transition by Ising-type inequalities for the centre (L3) | sharpness; Simon-Lieb; Griffiths | Found in form: (UNIV-FP) item with "an unfrustrated Z_2 theory with Griffiths inequalities" (row 900), Mack-Petkova (row 1018). It gives the flux half at best |
+| Concavity of the static potential and of the Polyakov-loop free energy (Bachas; Borgs and Seiler) | Bachas | Found: `gap-brainstorm2-max.md` L470. Reflection positivity gives upper bounds on masses only (checked by hand here: log W_L(R) is midpoint convex in R, so the torelon energy is at most every finite-distance slope) |
+
+Reading: every candidate that comes straight from the physics literature of the measured record is on file. This agrees with row 1063 step 7. The rest of step 4 (next block) looks for vectors that come from the numbers and from the places D1-D8, not from the literature list.
+
+## Step 4b: candidates derived here from the measured numbers, and where each was found on file
+
+These came from my own derivations, not from the literature list. Each was derived first and grepped second. All five are on file. I record the derivation in one line so that the match can be checked.
+
+| Candidate (derivation in one line) | Measured support | Found on file |
+|---|---|---|
+| A bounded logarithmic derivative: -d(m a)/d beta is the action excess of the lightest state (Hellmann-Feynman), so "action excess at most C times mass" gives m(beta) >= m(beta_0) exp(-C (beta - beta_0)) | From L2 of row 1063: -d log(a m_G)/d beta = 2.44, 3.43, 3.11, 2.99, 3.14 on the five intervals from beta 2.2986 to 2.70 (computed here by hand from the table; a guide); one-loop value 3 pi^2/11 = 2.69 | `gap-brainstorm-max.md` idea 46 and G8, crux (NOCRIT-HF); `gap-ladder-max.md` A3, crux (SUM-RULE); `gap-vir-sc.md` (VIR_K), (LEV_K) |
+| A positive finite-size plaquette shift: d D(n; beta)/d beta = 6 n^4 (P_n - P_inf), so "P_n >= P_inf" makes D non-decreasing in beta at fixed n, and on a halving sequence of spacings D^+(2L) <= D^+(L), which gives (BDD-Delta) from one start value | Positive interaction measure eps - 3p in SU(2) thermodynamics (recalled, not re-read) | (MONO-Delta), Lemma DIL, Proposition MB, Corollary MB1 (`gap-phys-seed.md` L344-384, row 720); route RB. The lane also records that the Griffiths-Ginibre identification argument is wrong and that (MONO-Delta) fails for the ordered Ising model |
+| A two-torelon bound: by reflection in a transverse plane, <(P_x P_y)(0) (P_x P_y)(t)> >= G(t)^2, so the centre-even gap of a geometry with a short periodic side is at most twice the flux energy | Torelon energies sigma L - pi/(3L) (row 1064) | `gap-brainstorm2-max.md` Top 2 (L470) and its grep words "two-torelon", "transverse reflection positivity" |
+| Area law gives the gap | One scale (C1) | Row 1063 M5, dead. Added here: it is false in the class, because a liquid-gas end point inside a confined phase keeps the area law and has a massless scalar (belief-grade for K7; the same reason as the w_p test) |
+| The two banks nearly meet in physical units: Schrodinger-functional perturbation theory is quantitatively valid up to box side about 0.6/T_c (recalled: Luscher, Sommer, Weisz and Wolff), and the Wilson lattice is inside the proved strong-coupling range (beta <= 1.0109) at spacing about 0.84/T_c | a sqrt(sigma) = 0.69 at beta 2.0 (row 1064); my extrapolation to beta 1.0 uses leading strong coupling (a guide of low quality) | In form: C10 of row 1063, (CAS) "on a bounded range", (UNIV-FP). The factor is not on file; it is a guide and moves nothing, because the blocked action at that spacing is not Wilson's |
+
+Reading after 4a and 4b: the lane's map contains the measured mechanism, the literature of the record, and the first consequences one can derive from the numbers. A new vector has to be a new mathematical object. Step 4c names the ones I could build, and says plainly where I could not.
+
+## Step 4c: task (1), item by item
+
+"Found" = on file with the place (steps 3, 4a, 4b). "New object" = not found by the greps named; it is written out in step 5. A blank vector column means no vector.
+
+### The fifteen assumptions (ranking of step 1.1)
+
+| Rank | ID | Does the measured verdict give a new vector? |
+|---|---|---|
+| 1 | c2 band in bare Wilson coupling | No. Join at an RG effective action: (UNIV-FP), V4 of row 1053 (OPEN proposal), no mechanism. Row 1063's own reading closes the hope that the band is an artefact |
+| 2 | b3 Wilson action | No. Action choice is (UNIV-FP); positive-plaquette and no-monopole weights are row 900 item 2. One new object tried: W6 (a gap for almost every action of a family) |
+| 3 | c4 strong coupling reaches the band | No. Counted blockings = (CAS), route RA; seed below the crossover = M6, ceilings |
+| 4 | e4 no bulk transition | No route. One new object: W2 (what convexity alone gives for almost every beta). One test note: W7 (the Wilson axis has a bulk transition for SU(N), N at least 5, recalled) |
+| 5 | c6 small-box criterion | No. Test K6 "critical slab"; SMALL-BOX; the seed needs about 40 correlation lengths (`gap-phys-seed.md` L432) |
+| 6 | c10 small-lattice numerics | No vector (a caution for guides, on file) |
+| 7 | b6 periodic torus | No. Free walls = Route W; twisted = Theorem TW-T. One new object: W1 (the flux ladder across widths) |
+| 8 | d2 deconfined models as tests | One vector, W3 (the hot phase as a target); it FAILS in step 5. Not used as a test by the lane |
+| 9 | e10 gap through confinement | No. T_JW-lat (row 1052); area law to gap is false in the class (step 4b) |
+| 10 | b2 lattice at the joining scale | No. V4 of row 1053; continuum-first in a small box is `gap-brainstorm-max.md` idea 36 |
+| 11 | c7 one inequality | No vector |
+| 12 | d6 "it was tried" | No vector |
+| 13 | a10 theta = 0 | No vector toward the theta = 0 gap (row 838 item 72) |
+| 14 | e5 asymptotic freedom beyond perturbation theory | No vector. Its use as a carrier is (SUM-RULE), (NOCRIT-HF), on file |
+| 15 | e6 universality | No vector beyond (UNIV-FP) |
+
+### The eight places where mechanism and route differ (step 1.2)
+
+| Place | New vector? |
+|---|---|
+| D1 (W) stronger than the Clay gap in four ways | No. T_JW-lat, FLUX-W, Route W |
+| D2 measured object is one 0++ correlator | One object tried, W4 (enclosure of the first excited level from a trial state); a renaming, FAILS |
+| D3 flux tube firm, the rest CONTESTED | W1 follows the firm mechanism (the sign of the Luscher term). Vortex, monopole and Gribov lines are CONTESTED-ONLY and get no vector here; (T-vor) and (TB)_n are on file |
+| D4 scaling from correlation length 1.5 | No. It supports (SUM-RULE) as a guide (step 4b) |
+| D5 two to four blockings | No. (CAS) |
+| D6 box side at least 1/(T_c a); hot boxes keep a spatial gap | W3 (FAILS); W5 (the critical slab as an anchor; no consumer) |
+| D7 nothing singular at the gap scale in the continuum | No vector |
+| D8 smooth in N | W7 (a test note), no route |
+
+So task (1) gives seven objects, W1 to W7. None is a new route across the wall on its face. Step 5 states each exactly and runs the kill tests.
+
+## Step 5: tasks (2) and (3). Each object stated, then killed or kept
+
+Kill sheet used: K1 Lemma PT (product with a massless factor), K2 Proposition NP, K3 Theorem D2, K4 Lemma SHEET, K5 compact U(1), K6 frozen Q_8 and 2T, K7 five dimensions, Lemma CEN+, Lemma WN, and the spec check S0-S4 (S0: does it rename an open statement; S1 selective; S2 a rate; S3 reads the whole state space; S4 not uniform over fields), in the form of `library/gap-invent-selective-max.md` L52-63 as row 1053 quotes it. A pass is no support.
+
+Notation for W1. Periodic lattice with sides (n_1, n_2, n_3, n_4). C_mu is the centre flip of all mu-links that cross one hyperplane. T_4 is the transfer operator along direction 4 on the slice n_1 n_2 n_3; it commutes with C_1. Z_+ and Z_- are the traces of T_4^(n_4) over the sectors C_1 = +1 and C_1 = -1. Then Z_+ + Z_- = Z and Z_+ - Z_- = Z^tw, the partition function with a twist in the (1,4) plane. E(n_1) = log(lambda_0^+/lambda_0^-) is the flux energy of the slice.
+
+### W1. The flux ladder across widths (source: D3, the sign of the Luscher term; b6)
+
+- **Statement (SIG-MONO).** For Wilson SU(2) in dimension 4 and every width L in the confined range, E(2L) >= 2 E(L). Equivalent form (Lemma R1, step 7): the long flux tube has non-negative excess Renyi-2 entropy per unit length at inverse temperature L.
+- **Consumer.** With one width L_1 where E(L_1) > 0, it gives L E(L) >= (L^2/L_1) E(L_1) on the widths 2^k L_1: the flux half of (Z-UNB) for slices that are doubled in the flux direction only.
+- **What it changes.** The flux half would need one size, not a rate. It would not need the vortex containers of (T-vor) or the inequality (TB)_n.
+- **Source and measurements.** D3; the closed-string correction c_L = 0.98(4) of Lucini and Teper (row 1064) gives E(2L) - 2E(L) = pi/(2L) > 0 in the free-string form. Firm as a sign in the measured range (strings longer than 1 fm).
+- **Cheapest kill tests.** (a) Is the finite form true in a solvable Wilson model? (b) Does the consumer reach the cube? (c) K1.
+- **Kill pass.** (a) The finite form (FIN), Z_-/Z_+ at (2 n_1, n_4) at most the square of Z_-/Z_+ at (n_1, n_4), is FALSE for two-dimensional Wilson SU(2) at small beta and large area (Counterexample R3, step 7, PROVED by hand). So (FIN) does not follow from positivity and axis exchange, which the two-dimensional model has. In the four-dimensional model with decoupled sheets (FIN) holds at large area, by the position entropy of the sheet (step 7, R4). The sign is therefore dynamics, not structure. (b) The consumer does not reach the cube: nothing controls the flux energy when the two transverse sides double. (c) K1: it reads the centre-odd factor only, so by Lemma FAC of row 1025 its conclusion is a flux statement, never the seed. K5: in two dimensions and for abelian groups at strong coupling the asymptotic form holds with equality or by positivity, so it is blind (S1 fails). S0: it is a part of the flux half of (Z-UNB) with a sign in place of a rate; the sign itself has no mechanism.
+- **Verdict.** FAILS as a vector to the gap (flux half only, blind, consumer incomplete). Kept: Lemma R1 and Lemma R2 (exact identities, PROVED in step 7) and Counterexample R3.
+
+### W2. What convexity alone gives for almost every coupling (source: e4)
+
+- **Statement.** The pressure f is convex in beta and -12 <= f' <= 0. So the second derivative of f is a positive measure of total mass at most 12 on (0, infinity). Its atoms are at most countably many (the first-order points). Its absolutely continuous density chi satisfies: the set of beta with chi(beta) > K has Lebesgue measure at most 12/K.
+- **Consumer.** None on the path of (W). Off the path: e4 ("no bulk transition") in the form "bounded specific heat" of row 996.
+- **What it changes.** Nothing for the gap. It says that a bulk critical point costs measure: a divergent specific heat is confined to a null set, with an explicit Chebyshev bound around it.
+- **Source.** e4; the measured peak of Engels and Scheideler (finite, row 1064).
+- **Cheapest kill test.** K5: does compact U(1) pass? Yes. The statement holds for every lattice model with a bounded action, so it cannot separate anything (S1 fails). A finite specific heat does not give a gap: the Coulomb phase has a finite one (plaquette correlations fall like distance^(-8), summable in four dimensions; recalled Gaussian value, ARGUED).
+- **Verdict.** PROVED (three lines: monotone f', total variation at most 12, Chebyshev) and FAILS as a vector (blind, no consumer). Not found on file (grep "Alexandrov", "almost every beta": 0 and 5 unrelated). It does not identify chi with the truncated correlation sum of an infinite-volume state; that step is not done.
+
+### W3. The hot phase as the target (source: d2, D6)
+
+- **Statement.** For fixed N_t and all beta above the deconfinement coupling of the slab, each pure phase of Wilson SU(2) on Z^3 x Z_(N_t) has exponential clustering of gauge-invariant local observables in the three long directions.
+- **Consumer.** None toward (W) or T_JW-lat: it is a theorem about thermal states above T_c.
+- **Cheapest kill test.** Is it easier? At fixed N_t and beta to infinity the three-dimensional gauge coupling is beta N_t to infinity, and the magnetic sector is three-dimensional Yang-Mills near its continuum limit. Its gap is as open as the four-dimensional one (ARGUED; standard dimensional reduction, recalled; the lane found no rigorous four-to-three reduction, `prior/gap-outside-read-opus.md` L51).
+- **A further block, from the measured record.** A route by continuity in the slab width from the hot side to zero temperature crosses the width 1/T_c, where SU(2) has a second-order point (L3). So the periodic slab family cannot carry a gap from hot to cold. This is test K6 of the lane read as a block on a path.
+- **Verdict.** FAILS (S0: it renames the three-dimensional wall; no consumer). The three-dimensional mechanism of Karabali, Kim and Nair is on file as a GUIDE only (`prior/gap-crux-lit-nonab.md` L197, Nair arXiv:2608.10133: "regularization issues prevent a general proof").
+
+### W4. Enclosure of the first excited level from a trial state (source: D2, b10)
+
+- **Statement.** Let psi be a smeared-plaquette trial vector orthogonal to the vacuum, eta its Rayleigh quotient for the transfer operator, eps^2 its variance, and nu a bound for the spectrum on the orthogonal complement of the vacuum and of psi, with nu < eta. Then lambda_1 <= eta + eps^2/(eta - nu) (Temple's inequality, recalled).
+- **Measured support.** Large overlaps of smeared operators with the lightest state (recalled lore; not in rows 1063, 1064).
+- **Cheapest kill test.** S0: the input nu is a bound on the spectrum of the transfer operator on a subspace of codimension two. That is a gap statement of the same kind as the target. Also, reflection positivity makes every measured effective mass an upper bound for the gap, so no measured correlator bounds the gap from below.
+- **Verdict.** FAILS (S0, a renaming). Grep "Temple", "Kato-Temple": 0 files, so this failure was not on file.
+
+### W5. The critical slab as an anchor (source: L3, D6)
+
+- **Statement.** In continuum SU(2) on R^3 x S^1 of circumference L slightly above L_c = 1/T_c, the lightest state is the torelon with E(L) to 0 as L falls to L_c, and by the two-torelon bound the centre-even gap is at most 2 E(L). So t = (L - L_c)/L_c is a small parameter inside the theory, with the three-dimensional Ising field theory as the effective description (BELIEF: Svetitsky and Yaffe universality; measured class, L3).
+- **Consumer.** None. A small parameter near L_c describes a regime with a small gap. It gives no bound at L = infinity, and the path to L = infinity is the confined phase itself.
+- **Kill.** S0 for the route. As a test it is K6 of the lane ("critical slab", `gap-crux-exercise2-max.md` L430).
+- **Verdict.** FAILS as a vector; found again as a test.
+
+### W6. A gap for almost every action of a family (source: b3, e6, K7)
+
+- **Statement.** In a finite-parameter family of reflection-positive plaquette weights that contains Wilson's, the set of parameters where the infinite-volume lattice theory has no gap is Lebesgue-null.
+- **Consumer.** The Clay target needs one regularisation, so a generic member would do, given a carry to the continuum for that member (the account treats Wilson only: (UNIV-FP)).
+- **Cheapest kill test.** Name the first lemma. The only soft tool that gives almost-everywhere statements in a coupling is convexity (W2), and W2 is blind. No analytic structure in the parameters is known beyond convexity of the pressure. The carry to the continuum is at couplings tending to infinity, where "almost every" gives no uniformity.
+- **Verdict.** FAILS (no mechanism; first lemma blind; the consumer needs (UNIV-FP)).
+
+### W7. A test note: the bulk transition of Wilson SU(N) at large N (source: e4, D8)
+
+- **Statement (BELIEF, measured, recalled and not re-read: Lucini and Teper 2001; Campostrini).** Wilson SU(N) in four dimensions has a first-order bulk transition on the Wilson axis for N at least 5. So a fixed-coupling tool (T_fix, or uniqueness of the infinite-volume state at one coupling) whose hypothesis reads only "compact simple group, Wilson weight, four dimensions" and is uniform in N is refuted at that coupling.
+- **What it adds.** K7 and w_p change the weight. This test keeps Wilson's weight and changes N. It does not bind T_W tools (their couplings tend to infinity, on the weak side). It is belief-grade.
+- **On file?** `gap-phys-seed.md` L378 uses "SU(N) for N >= 5" for (MONO-Delta). As a line of the test table it is not on file (grep "bulk transition": 17 files, none in the table of `parts/gap.md`).
+- **Verdict.** Not a vector. A GUIDE-grade line for the test table, at the lead's choice.
+
+### Summary of the kill pass
+
+| Object | Kind | First failing test | Mark |
+|---|---|---|---|
+| W1 flux ladder | flux-half inequality | finite form false (R3); blind; consumer stops at the cube | FAILS as a vector; identities PROVED |
+| W2 almost-every-beta specific heat | soft lemma | K5 (blind), no consumer | PROVED, FAILS as a vector |
+| W3 hot phase | changed target | S0 (three-dimensional wall); blocked at 1/T_c | FAILS |
+| W4 enclosure | (K-one) | S0 | FAILS |
+| W5 critical slab anchor | parametric regime | no consumer; is K6 | FAILS |
+| W6 generic action | changed target | no mechanism | FAILS |
+| W7 large-N bulk transition | test | - | GUIDE-grade test line |
+
+No object is marked CONTESTED-ONLY, because none rests on the vortex, monopole, Gribov or end-point readings. Those readings gave no vector here: their gauge-invariant forms, (T-vor) and (TB)_n, are on file.
+
+## Step 6: task (4), ranking
+
+No object of step 5 survives as a vector to the gap. So the ranking is of the pieces that are kept, by what each would change divided by the cost to find out.
+
+| Rank | Piece | What it would change | Cost to find out | Kind |
+|---|---|---|---|---|
+| 1 | W1, Lemmas R1, R2 and the open sign (SIG-MONO) | It turns the flux half on doubled widths into a sign: the excess Renyi-2 entropy of a long flux tube. The measured Luscher term gives that sign (firm on strings longer than 1 fm). It cannot give the seed (K1), and it stops before the cube | Done here for the identities (step 7). The sign has no mechanism; no row is proposed | exact identity; flux half; blind |
+| 2 | W7, the large-N bulk transition as a test line | One more line in the test table for fixed-coupling tools, on the Wilson weight itself | A lead edit after a reading row confirms the source | test, GUIDE grade |
+| 3 | W2, the almost-every-beta bound | Nothing on the path of (W). It bounds the measure of couplings with a large specific heat | Done (step 7.3) | soft lemma, blind |
+
+**What the measured record weighs on statements already on file (guides; they move no status).** These are numbers the lead can use when ranking rows that exist. Each was computed here by hand from the tables quoted in rows 1063 and 1064.
+
+| On-file statement | Measured guide | Reading |
+|---|---|---|
+| (SUM-RULE), `gap-ladder-max.md` A3: -E_j' <= c E_j + c', "c near c_AF" | -d log(a sqrt(sigma))/d beta = 3.25(4), 3.41(4), 3.51(3), 3.35(3), 3.11(3) on the five intervals from beta 2.2986 to 2.70; for a m_G: 2.44(24), 3.43(27), 3.11(15), 2.99(13), 3.14(13). One loop: 3 pi^2/11 = 2.69. Two loops at beta 2.5: 2.52 | The constant must be at least 3.5 in the band, 30 percent above one loop. A form with c within 25 percent of c_AF is refuted there for the string scale (guide-grade refutation). The ratio is bounded and has its maximum near beta 2.47 |
+| Which half binds at the seed size | L m_G = 30 at L = 7.9/sqrt(sigma). L E_flux(L) = sigma L^2 - pi/3 = 30 at L = 5.6/sqrt(sigma) | At the size where the engine's 30 is reached, the glue half is the binding one. The flux half is reached 1.4 times earlier in size. Found in part: `gap-next3-max.md` L290 ("The glue half had one row") |
+| (MONO-Delta), `gap-phys-seed.md` L351 | The slab analogue, eps - 3p > 0, is measured positive in SU(2) (recalled, not re-read) | Supports the sign as a guide. The symmetric-torus plaquette shift is below the errors of the data in rows 1063 and 1064 (8^4 at beta 2.3: 0.60226(26) against 0.6022) |
+| Test K6 "critical slab" | beta_c(N_t = 4) = 2.2985(6); 1/(T_c a) = 3.8, 5.9, 7.8, 10.6 at beta 2.30, 2.43, 2.51, 2.60 | A tool that reads the specification through windows smaller than these sides has the same input on the critical slab. This is the lane's K6 with the measured sides |
+| Frozen 2T as a test "at order one" | Freezing couplings (recalled, not re-read: Petcher and Weingarten): about 2.2 for 2T, 3.2 for 2O, 5.8 for 2I | In the band [2.3, 2.6] only Q_8 and 2T are frozen; 2T by a margin of about 0.1. 2O and 2I are twins of SU(2) there, not tests (found: `gap-brainstorm2-max.md` G13) |
+
+## Step 7: task (5), hand work on the top piece (W1), and the short proof of W2
+
+Rule 0a before the attempt. `library/open-core.md`: no hit for "Renyi", "excess entropy", "flux ladder", "superadditiv" of flux energies, "E(2L)". FINISH rows: the flux half is held by rows 1018 ((T-vor)), 1025 ((TB)_n) and 1052 (FLUX-W). None states or attacks the doubling of the width. `library/`: "Renyi" occurs for chi-square information between slices (`gap-direction-max.md` L346, `gap-ladder-max.md` L135), not for sector traces; "concavity of flux energies" is named once as an idea (`gap-crux-exercise2-max.md` L382), with no statement. I proceed, and I do not attack (T-vor), (TB)_n or (Z-UNB).
+
+### 7.1 Setting and the three facts used
+
+Wilson SU(2) on the periodic lattice with sides (n_1, n_2, n_3, n_4), all at least 3; the anisotropic Wilson weights are allowed. Notation as in step 5.
+
+- (F1) T_4 is a positive trace-class operator, and it commutes with the centre flip C_1. This is the lane's (E2) with the flux sectors of Theorem R (row 744); used as given.
+- (F2) Tr(T_4^(n_4) C_1) = Z^tw, the integral with the sign of the coupling reversed on the (1,4) plaquettes of one column (one value of (x_1, x_4), all (x_2, x_3)). So 0 < Z^tw <= Z, and Z_+ = (Z + Z^tw)/2, Z_- = (Z - Z^tw)/2. Used as given ('t Hooft 1979; lane: Theorem TW-T, row 1004).
+- (F3) The reversed column is symmetric under the exchange of the axes 1 and 4. So Z^tw = Tr(T_1^(n_1) C_4), where T_1 is the transfer operator along direction 1 on the slice (n_2, n_3, n_4). Hence Z_+ and Z_- are also the traces of T_1^(n_1) over the sectors C_4 = +1 and C_4 = -1.
+
+### 7.2 Lemma R1 (the Renyi ladder; PROVED)
+
+**Statement.** (a) For both signs, Z_s(2 n_1, n_4) <= Z_s(n_1, n_4)^2. Put R_s(n_1, n_4) := log(Z_s(n_1, n_4)^2 / Z_s(2 n_1, n_4)) >= 0. It is the Renyi-2 entropy of the state T_1^(n_1)/Tr on the sector C_4 = s.
+(b) log(Z_-/Z_+)(2 n_1, n_4) = 2 log(Z_-/Z_+)(n_1, n_4) - (R_-(n_1, n_4) - R_+(n_1, n_4)).
+(c) Let lambda_0^s(n_1) be the top eigenvalue of T_4 on the sector C_1 = s of the slice (n_1, n_2, n_3), and rho_s(n_1) := 2 log lambda_0^s(n_1) - log lambda_0^s(2 n_1). Then rho_s >= 0, R_s/n_4 tends to rho_s as n_4 grows, and E(2 n_1) - 2 E(n_1) = rho_-(n_1) - rho_+(n_1).
+
+**Proof.** (a) By (F3), Z_s(n_1, n_4) is the trace of A = T_1^(n_1) restricted to an invariant sector, and A >= 0. For a positive trace-class operator Tr A^2 <= (Tr A)^2, and Tr A^2/(Tr A)^2 = Tr(rho^2) with rho = A/Tr A. (b) is algebra. (c) In the 4-channel Z_s(n_1, n_4) = sum of the n_4-th powers of the eigenvalues of T_4 on the sector, so (1/n_4) log Z_s(n_1, n_4) tends to log lambda_0^s(n_1); the same with 2 n_1. So R_s/n_4 tends to rho_s, which is at least 0 by (a). E(n_1) = log lambda_0^+(n_1) - log lambda_0^-(n_1) by definition; subtract. QED
+
+**Reading.** (SIG-MONO) at the width n_1 is the statement rho_-(n_1) >= rho_+(n_1): the doubling defect of the top eigenvalue is larger in the flux sector than in the vacuum sector. rho_+ is the doubling defect of the vacuum energy of the slice. rho_- - rho_+ is the excess Renyi-2 entropy per unit length of a long flux tube at inverse temperature n_1.
+
+### 7.3 Lemma R2 (twist-ratio form; PROVED)
+
+Put t = Z^tw/Z in (0, 1]. Then Z_-/Z_+ = (1 - t)/(1 + t) = exp(-2 artanh t). So the finite form (FIN) of step 5 holds at (n_1, n_4) if and only if artanh t(2 n_1, n_4) >= 2 artanh t(n_1, n_4), that is t(2 n_1, n_4) >= 2 t/(1 + t^2) with t = t(n_1, n_4). Proof: with t = tanh a, (1 - t)/(1 + t) = e^(-2a) and tanh 2a = 2t/(1 + t^2). QED
+
+### 7.4 Counterexample R3: (FIN) is false for two-dimensional Wilson SU(2) (PROVED)
+
+On the two-dimensional torus with A = n_1 n_4 plaquettes, the character expansion gives (recalled, standard; the lane uses it at `gap-phys-seed.md` L369): Z = sum over j in {0, 1/2, 1, ...} of c_j^A and Z^tw = sum of (-1)^(2j) c_j^A, with c_j = (2/beta) I_(2j+1)(beta), up to a common factor. So Z_+ = sum over integer j, Z_- = sum over half-odd j, and both depend on A only.
+
+Put v = c_1/c_0 = I_3/I_1 and w = c_(3/2)/c_(1/2) = I_4/I_2, and q_A = Z_+/c_0^A = 1 + v^A + ..., p_A = Z_-/c_(1/2)^A = 1 + w^A + .... (FIN) reads p_(2A) q_A^2 <= q_(2A) p_A^2. As A grows, p_(2A) q_A^2 - q_(2A) p_A^2 = 2 (v^A - w^A) + O(v^(2A) + w^(2A)). So (FIN) fails for all large A when v > w.
+
+v > w holds for small beta: I_n(beta) = (beta/2)^n/n! (1 + O(beta^2)), so v = beta^2/24 (1 + O(beta^2)) and w = beta^2/48 (1 + O(beta^2)). At beta = 2, by the series I_n(2) = sum over k of 1/(k! (k + n)!) summed by hand to six terms: I_1 = 1.590636, I_2 = 0.688948, I_3 = 0.212740, I_4 = 0.050728, so v = 0.13374 > w = 0.07363. QED
+
+Reading. In two dimensions the energies are exactly additive, E(n_1) = n_1 log(c_0/c_(1/2)) and rho_- = rho_+ = 0. The finite form still fails, because the vacuum sector has the lighter first excitation (v > w) and so more Renyi entropy at the same temperature. The two-dimensional model has positivity and axis exchange. So (FIN) is not a consequence of those two.
+
+### 7.5 Remark R4: decoupled sheets in four dimensions (PROVED at leading order in u^A; the remainder bound is not written)
+
+Take the anisotropic Wilson weight with coupling beta on the (1,4) plaquettes and 0 on the others. Then Z = (Z_2D)^N and Z^tw = (Z^tw_2D)^N with N = n_2 n_3, so t = x^N with x the two-dimensional twist ratio. With u = c_(1/2)/c_0: 1 - x = 2 u^A p_A/q_A (1 + O(u^A)), hence Z_-/Z_+ = N u^A (p_A/q_A)(1 + O(N u^A)). So the ratio of the two sides of (FIN) is (1/N)(1 + O(v^A) + O(N u^A)). For N >= 2 and A large, (FIN) holds. The factor 1/N is the position entropy of the sheet. So the sign of the finite form is decided by a competition between the position entropy of the flux sheet and the spectra of the two sectors. The energies are again additive: rho_- = rho_+.
+
+### 7.6 A toy in the abstract class (PROVED)
+
+On the four points (s, y), s = +1 or -1, y = 1 or 2, let T have the kernel (1/2)(K_e(y, y') + s s' K_o(y, y')) with K_e = [[3/4, 1/4], [1/4, 3/4]] and K_o = [[1/5, 1/5], [1/5, 1/5]]. All entries are non-negative, T is symmetric, it commutes with the flip of s, and its eigenvalues are 1 and 1/2 on even functions and 2/5 and 0 on odd functions. Then Tr_odd T^k/Tr_even T^k = (2/5)^k/(1 + 2^(-k)), which is 4/15 at k = 1 and 16/125 at k = 2, and 16/125 > (4/15)^2 = 16/225. So the square law fails for a positive, positivity-preserving operator with a Z_2 symmetry.
+
+### 7.7 The mechanism behind the measured sign, and the verdict
+
+- In the free-string form E(L) = sigma L - pi (d - 2)/(6L), so E(2L) - 2E(L) = pi (d - 2)/(4L) = pi/(2L) for d = 4. In the language of Lemma R1 this is the Renyi-2 entropy rate of the two transverse modes of the tube. A bulk excitation that the tube excludes would lower it (ARGUED; no rigorous model built).
+- (SIG-MONO), in the form rho_- >= rho_+, is OPEN for Wilson SU(2) in four dimensions. It holds with equality in two dimensions and for decoupled sheets, for every compact group with a centre flip. So it is blind.
+- First step that fails for a proof: the comparison of the top-eigenvalue doubling defects of two symmetry sectors of one transfer operator. Positivity and axis exchange give each defect a sign (Lemma R1 (a)) and give no order between them (R3, 7.6).
+- Verdict: W1 FAILS as a vector to the gap. I stopped after R4. Not done: a remainder bound in R4; any statement for the isotropic model; the cube.
+
+### 7.8 W2, the proof (PROVED; blind; no consumer)
+
+f is convex in beta (Lemma DIL of row 720 quotes it; it is a limit along doublings of the convex functions F(n)/abs(n)). For every torus, F'(n)/abs(n) = -<A>/abs(n) lies in [-12, 0], because there are six plaquettes per site and 0 <= 1 - x_p <= 2. So f' is non-decreasing with values in [-12, 0] where it exists, and the Stieltjes measure df' has total mass at most 12. Its atoms are countable. Write df' = chi d beta + singular part; then the integral of chi is at most 12, and by Chebyshev's inequality the set where chi > K has measure at most 12/K. On an interval the mass is 6 (P(beta_2+) - P(beta_1-)), with P the infinite-volume mean plaquette. QED
+
+Not shown: that chi(beta) is the sum of truncated plaquette correlations of an infinite-volume state. Compact U(1) and every model with a bounded action satisfy the same statement.
+
+# Session 2 (continues from step 7.8; pinned at 6a3a26b93)
+
+Session 1 ended at step 7.8. Steps 1 to 7 above are kept as written. The lane moved by rows 1066 to 1181 between the two pins, so step 8 is split. Each part is appended when it is done.
+
+- 8a. What rows 1066 to 1181 changed for the objects W1 to W7 and for the wall. Grep first, read only the statements.
+- 8b. Task (1) again, only for the places where the measured mechanism disagrees with the lane's route as it stands now.
+- 8c. Hand work on any object that 8b adds, or the counterexample.
+- 8d. Task (6): the briefs, then the RESULT line.
+
+**Session 2 in plain words (written last).** The measured record gives no new way across the wall; that was also the verdict of session 1 and of row 1063. One thing it does give is a reading of the lane's own results. Measured physics says a mass gap does not need confinement. The lane's checked statements now say the same: the gap of local observables follows from one statement about the flux-free states of a periodic box, called (N) here (rows 1161, 731 and their checks), together with the continuum inputs that every form of the wall needs. The second open item of the queue, the branch selection of row 1179, is a confinement statement. It is needed for the stronger wall (W) and for nothing in the chain to the gap. Steps 8b and 8c give the chain with every link cited, write the one link that was not written, and give a hand estimate of how large the box in (N) must be. Step 8d gives two short briefs.
+
+## Step 8a: what rows 1066 to 1181 changed (read at 6a3a26b93)
+
+Read: the 61 lines added to `parts/gap.md` between the two pins (lead records of rows 1066 to 1175); FINISH rows 1177 to 1181 in full; `library/gap-solve16-astra62.md` (row 1175) L17-65, L233-255, L302-340; `library/gap-solve9-astra62.md` (row 1161) L83-193; `library/gap-flux-exercise.md` (row 731) L500-520, L620-634, L690; `library/gap-crux-restate.md` (row 697) L15-22, L234-250; `library/gap-skeleton-max.md` (run 1) L258-278.
+
+**8a.1 The wall as it stands now.** The gpt-6.2-astra chain (rows 1143 to 1177; checked line by line by Claude Opus 5.5 through row 1173) reduced (W) to two open inputs. Credit: that chain, and the rows it builds on (697, 720, 731).
+
+- (N) The one-cube physical neutral upper bound: on one admissible physical cube, for all fine cutoffs, the excited trace of the centre-invariant periodic states at period floor(n/K) is at most 1/2 (row 1161, "One periodic cube suffices"; K = 512 by its L215, used again in row 1175). Held by row 1180.
+- (B) The Wilson branch selection: given (N), (W) holds if and only if, at each fine fixed bare coupling, the elementary twist cost -log(Z_14/Z_0) on the symmetric torus N^4 is o(N^2/log N) along a sequence (row 1175 (6); row 1161 (13) had o(N)). Row 1177 gives a planar tension form. Held by row 1179. Row 1181 holds (W) by any method; row 1178 continues the chain.
+- Every positive result of the chain is non-selective (lead's words in rows 1179 to 1181).
+
+**8a.2 Correction to session 1, step 7 (Lemmas R1 and R2 are prior work of this branch).** Session 1 wrote that "Renyi" occurs on file only for information between slices. That is wrong. `library/gap-skeleton-max.md` E.1 (run 1; quoted by row 697, `gap-crux-restate.md` L17) has Lemma 4, "doubling identities": (D-plane) r(2 l_3) = r(l_3)^2 exp(R(T_even, l_3) - R(T_odd, l_3)), with R the Renyi entropy of order two, and r = tanh(f_m/2). That is Lemma R1 (b) and Lemma R2 of step 7. Lemma R1 (a) is Theorem F (a), (b) of row 697. E.3 of the same file already names the open object: "an upper bound for R(T_m, l) - R(T, l)", and says that proving it "is the gap again". So W1 named nothing new in its identities. Credit for them: run 1 (`gap-skeleton-max.md`, Claude Fable 5.2 max) and row 697.
+
+What stays from step 7 as not found on file (grep "I_3/I_1", "c_1/c_0", "v > w" near "twist": the hits are other objects): Counterexample R3 (the squaring form fails for two-dimensional Wilson SU(2) at small beta and large area, because the even sector has the lighter first excitation), Remark R4 (decoupled sheets: the factor 1/N from the position of the sheet) and the four-point toy 7.6. They say that the sign of R(T_even) - R(T_odd) is not given by positivity and axis exchange. They move no status.
+
+**8a.3 W1's consumer after the chain.** Row 1175 (6) needs far less than (SIG-MONO): a twist cost that is not of area order with a logarithm to spare. (SIG-MONO) is a statement on slices doubled in the flux direction only, so it still does not reach the symmetric torus. No change of verdict: W1 FAILS as a vector.
+
+**8a.4 Uses of session 1 by later rows.** Three files cite this file: check 1144 (`gap-solve-check-opus.md` L24, a provenance spot-check of L131), row 1103 (`gap-face-exercise-fable.md` L858, the (SUM-RULE) slopes of step 6) and row 1143 (`gap-solve-astra62.md` L119, provenance). None uses a statement of this file as a proof step.
+
+**8a.5 W7 and W2.** The test table of `parts/gap.md` has no line for the bulk transition of Wilson SU(N) at large N (grep "bulk transition", "N >= 5" in `parts/gap.md`: no hit). W2 is cited nowhere. No change.
+
+## Step 8b: task (1) again, for the route as it stands now
+
+Measured side: steps 1 and 2 (rows 1063, 1064). Lane side: the files named in 8a. The hand estimates are mine and are guides.
+
+### 8b.1 Where the measured mechanism meets the present route
+
+| Place | The route now | The measured record | New vector? |
+|---|---|---|---|
+| N1 | The queue names two open inputs for "the Jaffe-Witten gap, which this lane reduces to (W)": (N) and (B) (rows 1177 to 1181) | e10, d2, D1: the gap is the weaker property; a flux clause is a confinement statement | No. Found on file: the gap target needs (N) only (8b.2). What is not on file is the consequence for the queue |
+| N2 | (N) is stated on "one admissible physical cube" at period n/512 | Glueball gas with m = 3.78 sqrt(sigma), T_c = 0.70 sqrt(sigma): that form can hold only for L sqrt(sigma) at least about 2.9 x 10^3 (8b.3) | No. A sizing guide for row 1180 |
+| N3 | (B): twist cost o(N^2/log N) at each fine bare coupling | Confined boxes have twist ratios near 1 (reading row 734, `prior/gap-twist-data.md`: one temporal twist past 5 correlation lengths, no four-torus table). The measured branch is the periodic one | No. Guide only; row 1179 holds (B) |
+| N4 | Alternative II of row 1161 (9): electric flux light, neutral sector gapped | Not seen for SU(2) at any coupling. It is the frozen phase of Z_2, Q_8, 2T (skeleton 13.17, Proposition Z2), and adjoint-Higgs phases (recalled) | No. It says what (B) excludes: a gapped phase with broken centre symmetry |
+| N5 | (N) reads the whole centre-invariant sector of the cube (row 1175 (29): a spectator state defeats it and no local Wilson observable sees it) | D2: the measured gap is the decay of one 0++ correlator | No. A criterion on the cyclic sector of local functions alone is method 34 (rows 1115 to 1122) and (DS-W) |
+
+### 8b.2 N1 in full: the gap target needs the neutral input only (found on file; each link cited)
+
+Chain, all at each fine cutoff j, with one physical side L and one margin:
+
+1. (N) gives the Pfaffian (kappa) seed S_kappa(n/2; n^3) < 2^(-18) < 1/5041 in both alternatives. Source: row 1161, `gap-solve9-astra62.md` L99-105 ("a flux-independent seed for the local sector", (7)), L111-148 ((9), (10), consumer) and L213-227 (K = 512, n at least 2^70). Checked line by line by Claude Opus 5.5 (row 1162): HOLDS.
+2. The same file, L377-401, gives forms with no short period: the uniform Pfaffian seed exists at some size if and only if S^+_ev(L) = limsup_j s_j(n/2; n) tends to 0 on growing dyadic sizes (or is bounded with lower limit 0; or is bounded with z^-_+(L) unbounded). Its words: "These equivalences are for the local finite-volume seed. Adding (13) at the cutoff couplings gives the periodic wall."
+3. The kappa seed at one size gives S_kappa(D/2; L^3) at most q^(2^k)/71 on all larger cubes and a gap m_0 = log(1/q)/N of the kappa transfer operator. So (G_ev) holds. Source: Theorem S-w and Corollary EV, row 731, `gap-flux-exercise.md` L507-519. Checked by gpt-6-astra (row 732; skeleton 13.16).
+4. (G_ev) gives, for every limit of periodic symmetric tori, exponential clustering at rate m_0 on the centre-blind local functions, in four directions. Source: Theorem EV-L (d), same file L135-147. Checked by row 732. No flux sector enters.
+5. Clustering on a total set gives the operator bound at that cutoff (A2, redone in check 1054, `gap-flux-w-check-opus.md` L205-209). The physical rate is 2 log(1/q)/L, the same for all j. This is the corrected T_JW-lat of check 1054 on the sector of the centre-blind functions.
+6. Proposition P' (row 700) with T0's datum, (H2) and (TOT) gives the continuum gap (check 1054 L237-246). The same three inputs are needed after (W); "None of (i)-(iii) distinguishes T_JW-lat from (W)" (L255).
+
+Not written on file: step 5 for the sub-space generated by the centre-blind functions (row 731 L18, L465: "I did not rewrite those proofs"). Check 1054 redid A2 for a total set of local functions. The link for the centre-blind class is written in 8c.1 (Lemma A-e), from `gap-os-equiv.md` Statement (3). Mark for the chain as a whole: ARGUED from checked links.
+
+**Where the queue differs.** `parts/gap.md` L109-110 says that the consumer "the gap" means a proof of (W). Its obligation list reaches (G_ev) only through (EV-STEP), which is open (L121). It has no line for the implication of link 1, from (N) to the kappa seed. Rows 1177 to 1181 name (B) beside (N) as open quantities for the gap.
+
+**Reading.** (B) enters none of the six links. It decides only which of the two alternatives of row 1161 (9) holds, that is, whether the stronger periodic wall (W) holds too. (W) implies (N) at larger sizes (row 1161 L150, "necessity over physical sizes"), so a proof of (W) proves (N), and a proof of (B) alone proves no gap. The sentence of skeleton 13.16, "For SU(2) the believed physics makes every seed a confinement statement", is out of date for the kappa seed since row 1161: the kappa seed follows from a neutral trace in both alternatives.
+
+**This agrees with the measured record.** Row 1063 ranks e10 ("the gap is caused by confinement") among its bundles and reads the gap as the weaker property. The lane's own checked statements now say the same in exact form. Row 1052 asked for "a finite-size criterion for T_JW-lat" (check 1054). Row 1161 L377-401 is such a criterion: S^+_ev(L) tends to 0.
+
+**What it does not show.** (N) is OPEN. For SU(2) the physics behind (N) is still confinement in the thermal direction (8b.3: the hot box must be below T_c), so confinement leaves the logic of the gap chain, not the physics of its one open input. (N) asks more than the gap of local functions (N5).
+
+### 8b.3 N2: the size of the cube in (N) (GUIDE; hand estimate; belief-grade model)
+
+(N) at K = 512 bounds the excited neutral trace at time tau = L/512, that is at temperature T = 512/L in the volume L^3.
+
+- Model: free scalar glueballs of mass m, Boltzmann weights, lightest species only. Then log(1 + s) is at least z_1 = L^3 (m/(2 pi tau))^(3/2) e^(-m tau) (1 + 15/(8 m tau)) = K^3 g(x), with x = m tau and g(x) = (x/(2 pi))^(3/2) e^(-x) (1 + 15/(8x)).
+- s at most 1/2 needs K^3 g(x) at most log(3/2) = 0.405. K^3 = 134 217 728, so g(x) at most 3.02 x 10^(-9).
+- By hand: g(21.5) = 6.330 x 4.599 x 10^(-10) x 1.087 = 3.17 x 10^(-9); g(21.6) = 6.374 x 4.161 x 10^(-10) x 1.087 = 2.88 x 10^(-9). So x is at least about 21.55.
+- With m = 3.781(23) sqrt(sigma) (Athenodorou and Teper, row 1063 L1): L sqrt(sigma) = 512 x 21.55/3.78 = 2.9 x 10^3, and T = 0.175 sqrt(sigma) = 0.25 T_c (T_c/sqrt(sigma) = 0.69(2), Fingberg, Heller and Karsch, and 0.7091(36), Lucini, Teper and Wenger: row 1063 L3; I use 0.70).
+- Below L = 512/T_c = 730/sqrt(sigma) the short side is below 1/T_c and the trace is that of the gluon plasma: log(1 + s) is about (pi^2/15) K^3 = 8.8 x 10^7 by the Stefan-Boltzmann value (recalled). (N) fails there by that margin (belief).
+- At beta = 2.5 (a sqrt(sigma) = 0.1834, row 1064) the side 2.9 x 10^3/sqrt(sigma) is about 16 000 lattice sites. The explicit test asks for n at least 2^70 in any case (check 1162). So no lattice run can guide (N) in the K = 512 form.
+- The aspect-two forms of row 1161 L377-401 do not have this size: s(n/2; n) for one species is 8 g(x) with x = m L/2, below 1/5041 from x about 11.6, that is L sqrt(sigma) about 6. This is the old seed size (step 6: "L m_G = 30 at L = 7.9/sqrt(sigma)").
+
+Reading: the one-cube form with the short period is a statement on the pressure of the confined phase at a quarter of T_c in a box of about 3000 string lengths. The aspect-two forms are statements at about 20 correlation lengths, on several sizes. They are equivalent as existence statements over sizes (row 1161). A numerical guide can only reach the aspect-two forms.
+
+### 8b.4 Sources for the two guides (abstracts read in session 2 through the arXiv API; bodies not read)
+
+- For (N). Caselle, Nada and Panero, arXiv:1505.01106: "a high-precision lattice calculation of the equation of state in the confining phase of SU(2) Yang-Mills theory ... described very well by a gas of massive, non-interacting glueballs, provided one assumes an exponentially growing Hagedorn spectrum". This is the measured form of the object of (N). On file: `prior/gap-hcrate-read-opus.md`, `prior/gap-seed-lit.md`. At a quarter of T_c the Hagedorn tower does not matter (my reading of the model, not of the paper), so 8b.3 keeps one species. Meyer, arXiv:0905.4229, has the same for SU(3) between 0.7 T_c and T_c (not on file).
+- For (B). De Forcrand and von Smekal, arXiv:hep-lat/0107018: free energies of the sectors of fixed electric flux from 't Hooft loops of maximal size; "The confinement of electric fluxes in the low temperature phase and their condensation in the high temperature phase are demonstrated." Kovacs and Tomboulis, arXiv:hep-lat/0002004: "the excitation probability for a sufficiently thick vortex in the vacuum tends to unity". Both on file (`prior/gap-twist-data.md`, row 734). They put Wilson SU(2) in alternative I of row 1161 (9). A measurement proves nothing.
+- For W7. Lucini, Teper and Wenger, arXiv:hep-lat/0502003, abstract: "the bulk phase transition, which bounds the range of our large-N calculations on the strong coupling side, and within whose hysteresis some of our larger-N calculations are performed". The abstract supports a first-order bulk transition at larger N on the Wilson axis. The threshold "N at least 5" of step 5 stays recalled; the body was not read.
+
+### 8b.5 Further candidates toward (N), derived from the measured record and then grepped
+
+(N) is held by row 1180, so none of these was attacked. Each was derived first and searched second. All are on file.
+
+| Candidate (one line) | Measured source | Found on file |
+|---|---|---|
+| A rate in the trace anomaly: eps - 3p >= kappa p at low temperature gives p/T^4 <= C T^kappa, which is (N) in thermodynamic form; a conformal gas has kappa = 0 | Confined-phase pressure is a glueball gas (Caselle, Nada and Panero); eps - 3p > 0 | `gap-ladder-max.md` L188-193 (row 978): the thermodynamic form of the contraction rate, "alpha <= ... 2 T eps/p"; (MONO-Delta) and route RB; Q4 of `gap-phys-seed.md` L195 |
+| No infrared fixed point: the box coupling z(L) = L m_+(L) has a step function above the identity at every value | Step-scaling studies see none (recalled) | Branch G2 of row 998 (`gap-crux-exercise3-max.md` L316); (CAS), route RA; `gap-brainstorm-max.md` L659 ((MON'), a one-sided step-scaling inequality) |
+| A count of neutral states by closed loops (Hagedorn growth) below the Hagedorn temperature | Closed-string spectrum in the confined pressure | `gap-assume-opus.md` item 52: "A state-count bound for SU(2) at the seed temperature; OPEN" |
+| No critical point at finite beta, then a carry to the continuum | F4, no bulk transition | (NOCRIT), 40 files; the carry is set-aside method 23 |
+| A hand-checkable finite-block uniqueness condition where the measured correlation length is below one lattice spacing (m a about 1.4 at beta 2.3, if the continuum ratio 3.78 is used with a sqrt(sigma) = 0.368) | L2, C5 | (DS-W), row 691; Theorem D2 and Lemma SHEET refute the forms uniform over boundary data; proved range beta <= 1/18 to 1/48 (rows 707 to 715, 1135) |
+| A twisted small box, where the gap is perturbative and no toron valley exists, grown through 1/Lambda | Femto-universe lore (recalled) | `gap-brainstorm-max.md` idea 36 (L409); arXiv:2505.10396 in `gap-skeleton-max.md` L441 |
+
+### 8b.6 Verdict of the second pass
+
+The measured record gives no new vector at the present frontier. It gives one consequence for the queue (N1: the gap target has one open selective input, (N), and (B) is off its path), one sizing guide (N2) and no new test. The kept test note W7 is unchanged.
+
+## Step 8c: hand work on N1. The unwritten link, and the chain as one statement
+
+Rule 0a before the attempt. `library/open-core.md`: no entry for "EV-L", "centre-blind", "G_ev", "T_JW", "kappa seed", "Pfaffian" (grep: 0 hits). FINISH: rows 731 and 732 hold Theorem EV-L, Theorem S-w and Corollary EV; rows 1052 to 1055 hold T_JW-lat; rows 1161 and 1162 hold the Pfaffian seed from (N). No row holds the link below (row 731 L18 and L465 say it was not rewritten). Rows 1178 to 1181 hold (W), (B) and (N); nothing below attacks them.
+
+### 8c.1 Lemma A-e (the centre-blind sector has the gap of the even sector; PROVED from the cited statements)
+
+Setting, at one cutoff. 𝔄 is the class of local functions that are invariant under centre-valued gauge transformations (row 731 C1). V_𝔄 is the set of functions of 𝔄 with time range in [0, infinity). L_i tends to infinity, and (G_ev) holds along L_i with rate m_0 (Theorem EV-L (d), hypothesis). nu is a limit point on 𝔄 of the periodic symmetric tori (L_i)^4. It exists along a subsequence (`gap-seed-limit.md` Theorem L3 (a); check 732 L157: the compactness does not use the whole-space hypothesis).
+
+**Statement.** Put b(F, G) = nu(conj(Theta F) G) for F, G in V_𝔄, with Theta the time reflection, and tau_t the time translation, t = 0, 1, 2, .... Then (V_𝔄, b, tau, 1) is a time-reflection datum with (P1), (P2), (P3) of `gap-os-equiv.md` S.2, and its transfer operator T satisfies ||T^t psi|| <= e^(-m_0 t) ||psi|| for every psi orthogonal to the vacuum. So the vacuum is the only invariant vector and spec(T restricted to the complement) lies in [-e^(-m_0), e^(-m_0)].
+
+**Proof.** (i) The class. A centre-valued gauge transformation composed with a translation, with a reflection, or with complex conjugation is again one. So 𝔄 is closed under products, conjugation, translations and Theta, and tau_t maps V_𝔄 into itself.
+(ii) (P1). Each periodic torus state is reflection positive at a site mirror for functions supported on one side (`gap-transfer.md` Section 1; used in Theorem L3 (c)). For F in V_𝔄 and large i the support of F lies in the positive half of (L_i)^4, so the torus value of conj(Theta F) F is non-negative, and so is its limit.
+(iii) (P2) and (P3). The torus states are invariant under time translations, and Theta tau_t = tau_(-t) Theta. So b(F, tau_t G) = b(tau_t F, G) in the limit, as in the proof of Theorem L3 (e). Also |b(tau_t F, tau_t F)| <= ||F||^2 in the sup norm.
+(iv) Decay. Let F in V_𝔄 have time range [a, b], a >= 0, and let t >= 1. conj(Theta F) is in 𝔄 with time range [-b, -a]; tau_t F is in 𝔄 with time range [a + t, b + t]. They are separated by d = t + 2a >= 1 in the time direction. nu(conj(Theta F)) = conj(nu(F)), because the torus states are invariant under the time reflection. Theorem EV-L (d) gives u(F, F; t) = nu(conj(Theta F) tau_t F) - |nu(F)|^2 <= ||F||^2 e^(-m_0 d) <= ||F||^2 e^(-m_0 t). This is (X_m^C) of `gap-os-equiv.md` Statement (3) with C = V_𝔄, C_F = ||F||^2, t_F = 1, m = m_0.
+(v) V_𝔄 is the whole space of the datum, so it is total. Statement (3b) and Lemma E (E1), (E3) there give the claim. QED
+
+Remark. The same holds inside the datum of all local functions: by Statement (3a) the bound holds on the closed span K_𝔄 of the vectors Q[F], F in V_𝔄, and T maps K_𝔄 into itself. That is hypothesis (H1) of Statement (5) with the sector S = K_𝔄. So nothing in Proposition P' changes when the class of observables has its lattice versions in 𝔄. Every function of the plaquette traces is in 𝔄 (row 731 C1), so the lattice versions of tr(F^2) are.
+
+Inputs: Theorem EV-L (d) (row 731; check 732 HOLDS), `gap-os-equiv.md` Statement (3) (checked, HOLDS, per `gap-seed-limit.md` L204 item (3)), reflection positivity and invariance of the periodic torus states (`gap-transfer.md`, checked in rows 698, 699). The lemma is new text only; its content is the sentence of row 731 L465 ("read with the functions of 𝔄 in place of all local functions").
+
+### 8c.2 Corollary N-JW (ARGUED: an assembly of checked statements; the continuum inputs are open)
+
+**Statement.** Let a_j tend to 0 along the trajectory and let L be one admissible physical side. Assume (N): for all large j, s_j(u) <= 1/2 for an integer u with 3 <= u <= n/512, on the periodic cube of side n = L/a_j, with 4 dividing n and n at least 2^70. Then:
+
+- (a) for all large j, S_kappa(n/2; n^3) < 2^(-18) (row 1161 L213-227; check 1162);
+- (b) for all large j and every integer side L' >= n, with D = 2^k n, k >= 0, such that D <= L' < 2D: S_kappa(D/2; L'^3) <= q^(2^k)/71, where q = 5041 S_kappa(n/2; n^3) < 5041 x 2^(-18) < 1/52, and the even sector of L'^3 has gap at least m_0 = 2 log(1/q)/n per lattice step (Theorem S-w with N = n/2, Corollary EV; check 732);
+- (c) for all large j, every limit point on 𝔄 of periodic symmetric tori of sides tending to infinity has the datum of Lemma A-e with rate m_0. In physical units the rate is M_* = 2 log(1/q)/L > 7.9/L, the same for all j;
+- (d) given a continuum datum with (P1)-(P4), a class C of observables with lattice versions in V_𝔄, (H2) for C and (TOT), the continuum datum has a unique vacuum and spec(H) in {0} union [M_*, infinity) (Statement (5a)-(5c); Proposition P' with (H1) from (c)).
+
+No statement about a flux sector, a twist ratio or the branch of row 1161 (9) is used.
+
+**Hypothesis ledger.** (N): OPEN, row 1180. The continuum datum, (H2), (TOT): the T0 chain, open; the same as after (W) (check 1054 L247-255). The side condition of `gap-seed-limit.md` L204 item (5) is not needed in its dyadic form, because Corollary EV covers every integer side L' >= n (check 732 L317). Whether T0's lattice states are limits of periodic symmetric tori is the same question as after (W) (check 1054, item (iii)). Arithmetic used: 5041 x 52 = 262 132 < 262 144 = 2^18, so 5041 x 2^(-18) < 1/52; log 52 > 3.95.
+
+**Equivalent neutral inputs (row 1161 L377-401, checked).** In place of (N) at one cube: S^+_ev(L) tends to 0 on growing dyadic sizes; or it is bounded with lower limit 0; or it is bounded and z^-_+(L) is unbounded. Each is a statement on the centre-invariant periodic states at aspect two.
+
+### 8c.3 Kill pass on the corollary (the sheet of step 5)
+
+- S0 (renaming). As a vector it is not new: the implication is in row 1161 L105 and L401 and in skeleton 13.16. It FAILS as a new vector. It stands as a statement of what the lane has proved.
+- Compact U(1) at weak coupling: (N) is false there (a photon gas: log(1 + s) is of order K^3 pi^2/45; recalled). The corollary is silent. Consistent.
+- Frozen Q_8 and 2T at large beta: the neutral sector is gapped and the electric flux is light, which is alternative II. (N) holds on large cubes (argued by me, not proved: of order n^3 excitations, each with weight e^(-c beta n/512); for Z_2 the full and kappa seeds at N = 3 are skeleton 13.17, Proposition Z2, itself argued). The corollary then gives the local gap, and the local gap is believed true there (row 731, third corrected filter). Consistent. These models bind (B), not the corollary.
+- Lemma PT (product with a massless factor): (N) reads the full neutral trace, so it is false for the product. Consistent.
+- Row 1175 (29) (spectator signs): (N) is false for the product, and every Wilson path marginal is unchanged. So (N) is sufficient and not necessary for the gap of the Wilson local functions. This is place N5.
+- Five dimensions at weak coupling: (N) is false (Coulomb phase; belief). Silent.
+
+### 8c.4 What failed, and what is left
+
+- Failed: to find, from the measured record, a statement toward (N) that is not on file. The measured content of (N) is the pressure of the confined phase (8b.3). Its on-file forms are (CAS), route RB ((MONO-Delta)) and the real form (24) of row 1145.
+- Left open: (N), with row 1180. (B), with row 1179, for the periodic wall only. The continuum inputs of (d).
+- Not done: a second-model check of Lemma A-e and of the assembly. A reading of the proofs of rows 1161 L111-148 beyond the statements and the two verdict lines of check 1162.
+
+## Step 8d: task (6), the briefs, and the result
+
+### 8d.1 What survives, and its ranking (task (4) for session 2)
+
+No object of either session survives as a new vector to the gap. Three items are left for the lead, ranked by what each changes divided by its cost.
+
+| Rank | Item | What it changes | Cost to find out |
+|---|---|---|---|
+| 1 | Brief C1: a check of the neutral-only chain (8b.2, 8c.1, 8c.2) | The statement of the crux of the gap target: one open selective input, (N) or S^+_ev(L) to 0. Row 1179's subject, (B), then bears on the periodic wall (W) only | One check row by another provider. No proof row |
+| 2 | The sizing guide N2 (8b.3) | Which form of (N) a numeric guide can reach: the aspect-two forms at about 20 correlation lengths. The K = 512 form cannot be guided | Done |
+| 3 | Brief C2: W7 as a line of the test table | One test line for fixed-coupling tools that are uniform in N | One reading of one paper, then a lead edit |
+
+### 8d.2 Brief C1 (complete; a check row)
+
+- **Name.** `gap-neutral-only-check`. Output `library/gap-neutral-only-check-<model>.md`.
+- **Moves.** The Formulation section of `parts/gap.md` and skeleton 13.16 (the sentence "every seed a confinement statement"); the standing of row 1179 against the Jaffe-Witten target.
+- **Provider.** Not Claude Fable: Lemma A-e and the assembly are by Claude Fable 5.2 max. gpt-6.2-astra wrote row 1161, and Claude Opus 5.5 checked it, so Opus can check 8c and astra can check the use made of rows 731 and 1161.
+- **Statements to check, in order.** (1) 8b.2, links 1 to 6, each against its cited lines. (2) Lemma A-e, steps (i) to (v). (3) Corollary N-JW (a) to (d) and its ledger. (4) The sentence "no statement about a flux sector, a twist ratio or the branch of row 1161 (9) is used".
+- **Open with them.** `gap-solve9-astra62.md` L42-150, L213-227, L377-401 and the verdicts of `gap-solve9-check-opus.md`; `gap-flux-exercise.md` L125-147, L449-465, L500-519 and `gap-flux-exercise-check.md` L115-160, L256-322; `gap-os-equiv.md` S.2, Statement (3), Statement (5); `gap-seed-limit.md` L112-206; `gap-flux-w-check-opus.md` Step 5.
+- **Test first.** (a) Do S_kappa of row 1161 and S_w of Theorem S-w have the same shape and the same vacuum normalisation (time n/2 on n^3; N = n/2)? (b) Lemma A-e (ii): reflection positivity for functions that touch the mirror hyperplane. (c) Lemma A-e (iv): the separation d = t + 2a, and the use of Theorem EV-L (d) for the pair conj(Theta F), tau_t F. (d) Does Statement (5) accept the sub-datum on V_𝔄, or the sector K_𝔄, as (H1)? (e) Does any link read a flux sector or a twist ratio? One such line kills the reading. (f) Does Proposition P' use anything of (W) beyond the rate?
+- **Verdicts.** HOLDS, HOLDS AFTER CORRECTION or FAILS per statement, with the line.
+- **If it holds.** A lead edit, no new row. In `parts/gap.md`: the sentence "Consumer 'the gap' means a proof of (W)" (L109-110) becomes "a proof of (N), or of (W)"; the obligation list gets the line "gap: (N), or S^+_ev(L) to 0 on growing dyadic sizes -> kappa seed -> (G_ev) -> the gap (rows 1161, 731, Lemma A-e)"; (W) is stated as that plus (B). Row 1179's result then changes (W) and the confinement clause, not the gap target. Rows 1178 and 1181 keep (W); a proof of (W) still proves (N).
+- **If it fails.** The failing link is one exact statement. It goes to `library/open-core.md` under its own name.
+- **What this brief does not ask.** A proof of (N), of (B) or of (W).
+
+### 8d.3 Brief C2 (complete; a reading, then a lead edit)
+
+- **Name.** `gap-bulk-n-read`. A reading row (gpt-6-luna), output `library/prior/gap-bulk-n-read-luna.md`.
+- **Question.** For the Wilson action of SU(N) in four dimensions, from which N on is the strong-to-weak-coupling ("bulk") transition first order, at which coupling, and with what evidence (hysteresis, latent heat)? Sources to open: Lucini, Teper and Wenger, arXiv:hep-lat/0502003 (the abstract names the bulk transition and its hysteresis) and arXiv:hep-lat/0307017; Lucini and Teper, arXiv:hep-lat/0103027; Campostrini (recalled, no identifier). Give each number with page and table. Mark everything GUIDE.
+- **Then.** If the reading confirms a first-order bulk transition for some N on the Wilson axis, the lead adds one line to the test table of `parts/gap.md`: a fixed-coupling statement whose hypothesis reads only "compact simple group, Wilson weight, four dimensions" and is uniform in N is refuted at that coupling (belief grade). It does not bind tools that work along the trajectory.
+- **Cheapest kill.** The reading finds a crossover only. Then W7 is dropped.
+
+### 8d.4 Where no brief is given, and why
+
+- (N): held by row 1180. (B): held by row 1179. (W): rows 1178, 1181. Not attacked here (rule 0a).
+- (SIG-MONO) of step 7: OPEN, blind, no mechanism; its identities are prior work (8a.2). No row.
+- W2 to W6: FAIL (step 5). No row.
+- A reading row for the guides of 8b.3: not needed. The sources are on file (8b.4).
+
+### 8d.5 Marks of this file, both sessions
+
+| Statement | Mark | Check |
+|---|---|---|
+| W1 as a vector | FAILS | - |
+| Lemma R1, Lemma R2 (step 7) | PROVED; prior work of run 1 (`gap-skeleton-max.md` E.1) and row 697 (8a.2) | none here |
+| Counterexample R3, Remark R4 (leading order), toy 7.6 | PROVED by hand | none |
+| (SIG-MONO) for four-dimensional Wilson SU(2) | OPEN | - |
+| W2 (almost-every-beta bound) | PROVED; FAILS as a vector | none |
+| W3, W4, W5, W6 | FAIL | - |
+| W7 | GUIDE-grade test note; threshold in N recalled | abstract only |
+| N1: the gap target needs (N) only | Found on file (rows 731, 1161; checks 732, 1162, 1054); the chain as a whole ARGUED | none of the whole |
+| Lemma A-e | PROVED from cited checked statements | none |
+| Corollary N-JW | ARGUED (assembly); (N) and the continuum inputs OPEN | none |
+| N2: size of the cube in (N) at K = 512 | GUIDE (belief-grade model, measured inputs) | none |
+
+### 8d.6 Credit
+
+Measured record: Athenodorou and Teper; Teper; Lucini, Teper and Wenger; Lucini and Teper; Fingberg, Heller and Karsch; Engels, Fingberg and Weber; Engels and Scheideler; Luscher and Weisz; Caselle, Nada and Panero; Meyer; de Forcrand and von Smekal; Kovacs and Tomboulis; Bhanot and Creutz; as digested by row 1063 (Claude Opus 5.5) and row 1064 (gpt-6-luna). Lane: the gpt-6.2-astra chain, rows 1143 to 1177, above all row 1161 (the Pfaffian seed from one neutral trace) and its check by Claude Opus 5.5 (row 1162); row 731 (Claude Fable 5.2: Theorem EV-L, Theorem S-w, Corollary EV, the kappa set) and its check by gpt-6-astra (row 732); row 700 (`gap-seed-limit.md`) and row 668 (`gap-os-equiv.md`); row 697 (Theorem F) and run 1 (`gap-skeleton-max.md`, Lemma 4); rows 1052 to 1055 (T_JW-lat and its checks). 't Hooft for the twist sectors and the electric-magnetic alternative. Sussman and Alpoge (with Claude and Codex as authors of their text) for the account that the lane's trajectory, transfer construction and tr(F^2) sector come from; no line of their repository was opened in this row. Balaban for the multiscale trajectory behind it.
+
+### 8d.7 Not done in this row
+
+- No numeric run was started (none was needed; memory pressure was not read).
+- No part of `parts/gap.md`, FINISH or any other file was edited.
+- The proofs inside rows 1161, 731 and 700 were read at the statements and the cited lines, not line by line.
+- Session 1's recalled items stay recalled: the Luscher-Sommer-Weisz-Wolff range (step 4b), the freezing couplings of the binary groups (step 6), eps - 3p > 0 (step 6).
+
+RESULT: Row 1065, two sessions, Claude Fable 5.2 max, checked by no one. No new attack vector from the measured-physics file survives: W1 to W6 FAIL (W1's identities are prior work of run 1 and row 697; its two-dimensional counterexample R3 and W2 are PROVED by hand and blind), W7 is a GUIDE-grade test line, and a second pass at the present frontier adds none. Found on file and assembled: the gap target needs only the neutral input (N), or over sizes S^+_ev(L) to 0, besides the continuum inputs that (W) needs too, by rows 1161/1162, 731/732 and check 1054, with the unwritten link written here as Lemma A-e (PROVED from cited checked statements) and the chain as Corollary N-JW (ARGUED); the Wilson branch selection (B) of row 1179 enters no link and decides only the periodic wall (W). GUIDE: (N) at K = 512 can hold only on cubes of side about 2.9 x 10^3/sqrt(sigma), at a quarter of T_c; the aspect-two forms sit at about 20 correlation lengths. Briefs: C1 (a cross-provider check of the neutral-only chain, then a lead edit of the crux) and C2 (a reading for W7). OPEN: (N), (B), (W), (SIG-MONO), the continuum inputs of Proposition P', and any second-model check of this file.

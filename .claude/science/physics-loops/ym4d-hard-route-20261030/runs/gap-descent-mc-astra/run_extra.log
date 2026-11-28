@@ -1,0 +1,39 @@
+{
+  "lock": {
+    "expires_at": "2026-11-17T13:44:05.780570+00:00",
+    "holder_id": "gap-descent-mc-astra-16c93871f",
+    "owner": "gap-descent-mc-astra-16c93871f",
+    "pid": 67574,
+    "purpose": "row 1101 serial SU2 GUIDE Monte Carlo",
+    "started_at": "2026-11-17T10:44:05.780570+00:00"
+  },
+  "status": "refreshed"
+}
+2026-11-17T10:44:05.786499+00:00 L12_b2.5_2_c0 START
+L12_b2.5_2_c0 DONE
+{
+  "lock": {
+    "expires_at": "2026-11-17T13:46:41.157810+00:00",
+    "holder_id": "gap-descent-mc-astra-16c93871f",
+    "owner": "gap-descent-mc-astra-16c93871f",
+    "pid": 67903,
+    "purpose": "row 1101 serial SU2 GUIDE Monte Carlo",
+    "started_at": "2026-11-17T10:46:41.157810+00:00"
+  },
+  "status": "refreshed"
+}
+2026-11-17T10:46:41.164164+00:00 L16_b2.5_1_c0 START
+L16_b2.5_1_c0 DONE
+{
+  "lock": {
+    "expires_at": "2026-11-17T13:54:58.409658+00:00",
+    "holder_id": "gap-descent-mc-astra-16c93871f",
+    "owner": "gap-descent-mc-astra-16c93871f",
+    "pid": 68298,
+    "purpose": "row 1101 serial SU2 GUIDE Monte Carlo",
+    "started_at": "2026-11-17T10:54:58.409658+00:00"
+  },
+  "status": "refreshed"
+}
+2026-11-17T10:54:58.415929+00:00 L16_b2.5_1_c1 START
+L16_b2.5_1_c1 DONE

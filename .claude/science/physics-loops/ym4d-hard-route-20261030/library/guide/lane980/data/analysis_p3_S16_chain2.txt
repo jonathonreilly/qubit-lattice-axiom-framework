@@ -1,0 +1,19 @@
+== P3 S16 seed1604
+R0    mean 36.397338 err 2.000579 tau_int 11.1 block_len 312 ok
+q0    mean 0.242566 err 0.006579 tau_int 11.0 block_len 312 ok
+R4    mean 154.667099 err 0.066576 tau_int 0.7 block_len 312 ok
+G0p1  mean 0.879241 err 0.017462 tau_int 1.8 block_len 312 ok
+tau   mean 0.751369 err 0.000150 tau_int 0.5 block_len 312 ok
+plaq  mean 0.624742 (n=500)
+halves R0: 35.76790 +- 1.75956 | 37.02677 +- 3.73411  diff/sigma 0.30
+IRB  Ghat^0(p1) = 0.87924 +- 0.01746  <=  1/(2 beta E(p1)) = 2.85589 : holds
+== P3 S16 pooled 1603+1604
+R0    mean 36.536117 err 1.390303 tau_int 12.7 block_len 312 ok
+q0    mean 0.243028 err 0.004587 tau_int 12.6 block_len 312 ok
+R4    mean 154.599037 err 0.065496 tau_int 0.7 block_len 312 ok
+G0p1  mean 0.882861 err 0.011028 tau_int 1.8 block_len 312 ok
+tau   mean 0.751472 err 0.000103 tau_int 0.5 block_len 312 ok
+plaq  mean 0.624745 (n=1000)
+halves R0: 39.12207 +- 2.00909 | 34.22772 +- 3.36592  diff/sigma -1.25
+halves R0: 35.76790 +- 1.75956 | 37.02677 +- 3.73411  diff/sigma 0.30
+IRB  Ghat^0(p1) = 0.88286 +- 0.01103  <=  1/(2 beta E(p1)) = 2.85589 : holds

@@ -1,0 +1,84 @@
+{
+  "tag": "face_L128_T6_b2.4_k0.24_c0",
+  "model": "face",
+  "L": 128,
+  "T": 6,
+  "beta": 2.4,
+  "coupling": 0.24,
+  "seed": 11320090,
+  "hot": 0,
+  "burn": 512,
+  "samples": 1024,
+  "stride": 1,
+  "binary": "face_sheets",
+  "source": "face_sheets.cpp",
+  "channels": [
+    "E1",
+    "E8",
+    "E32",
+    "E64",
+    "plaquette"
+  ],
+  "lengths": [
+    1,
+    8,
+    32,
+    64
+  ],
+  "started": "2026-11-17T13:55:53.335772+00:00",
+  "argv": [
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+    "face",
+    "128",
+    "6",
+    "2.4",
+    "0.24",
+    "11320090",
+    "0",
+    "512",
+    "1024",
+    "1",
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0"
+  ],
+  "memory_free_pct": 86,
+  "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+  "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+  "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+  "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+  "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+  "predecessor_reaped": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "pid": 78421,
+  "exit_code": 0,
+  "ended": "2026-11-17T14:02:04.879918+00:00",
+  "seconds": 371.53890933300136,
+  "reaped": true,
+  "records": [
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.f32",
+      "bytes": 5242880,
+      "sha256": "1835af9cdb437ffe276b8c65ff0b5d2c58509e3d23b2b3e21096f820e257317d"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.csv",
+      "bytes": 59067,
+      "sha256": "b76081db0af4bac7fc863b0bc62ed9a2a0619c214854c362b4ea3dc5cf9b026a"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.therm.csv",
+      "bytes": 1006,
+      "sha256": "8e2d6b945b4d243f371d4a54e0229bbc00a83e01dddbdb9fd28265bc2db16d84"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.cfg",
+      "bytes": 37748736,
+      "sha256": "c31e056bd5fe50aeba563e59c13b3704e06e50bfb872b4917af9295dcd4c8359"
+    }
+  ]
+}

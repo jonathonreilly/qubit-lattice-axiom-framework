@@ -1,0 +1,22 @@
+{
+  "grade": "GUIDE",
+  "exponential": "scaled Taylor, final Poisson term below 1e-20",
+  "basis": "/tmp/sa-gap-descent-window-astra.PKRugA/sym_E200_safe",
+  "results": [
+    {
+      "beta": 2.6,
+      "multiplier": -1.0,
+      "beta_L": 0.0,
+      "sector": 0,
+      "eigenvalues": [
+        1.9493556125490176e-05,
+        6.241706704890021e-07,
+        2.009637383872044e-08
+      ],
+      "residual": 3.58617700888734e-16,
+      "solver_tolerance": 3e-11
+    }
+  ],
+  "seconds": 17.15837991599983,
+  "peak_RSS_bytes": 946028544
+}

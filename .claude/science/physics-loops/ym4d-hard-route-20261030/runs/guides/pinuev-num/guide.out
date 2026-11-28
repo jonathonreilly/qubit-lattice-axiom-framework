@@ -1,0 +1,11 @@
+wall check kappa=0.5: <|s|> uniform 0.4244, with transverse field 0.4218
+wall check kappa=2.5: <|s|> uniform 0.4244, with transverse field 0.3756
+L=24 beta=2.50 energy/bond=0.6805
+  swap clusters: bond density 0.836, largest/vol 0.976, P(x<->x+L/2) 0.952
+  sign clusters (one replica, first coordinate): bond density 0.497, largest/vol 0.560, P(x<->x+L/2) 0.3762
+L=48 beta=2.50 energy/bond=0.6754
+  swap clusters: bond density 0.847, largest/vol 0.974, P(x<->x+L/2) 0.949
+  sign clusters (one replica, first coordinate): bond density 0.419, largest/vol 0.341, P(x<->x+L/2) 0.1155
+L=48 beta=2.30 energy/bond=0.6425
+  swap clusters: bond density 0.785, largest/vol 0.953, P(x<->x+L/2) 0.908
+  sign clusters (one replica, first coordinate): bond density 0.399, largest/vol 0.258, P(x<->x+L/2) 0.0891

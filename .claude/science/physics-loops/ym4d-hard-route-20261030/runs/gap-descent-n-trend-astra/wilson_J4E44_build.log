@@ -1,0 +1,15 @@
+MEMORY_START_GATE 86 percent free
+BASIS 4 44 689478
+VERTICES 237 norm error 6.661338147750939e-16
+FACE 0 nnz 923592 asym 6.106226635438361e-16
+FACE 1 nnz 923592 asym 6.106226635438361e-16
+FACE 2 nnz 923592 asym 6.106226635438361e-16
+FACE 3 nnz 2410082 asym 4.440892098500626e-16
+FACE 4 nnz 2410082 asym 4.440892098500626e-16
+FACE 5 nnz 2410082 asym 4.440892098500626e-16
+FACE 6 nnz 2410082 asym 4.440892098500626e-16
+FACE 7 nnz 2410082 asym 4.440892098500626e-16
+FACE 8 nnz 2410082 asym 4.440892098500626e-16
+FACE 9 nnz 2410082 asym 4.440892098500626e-16
+FACE 10 nnz 2410082 asym 4.440892098500626e-16
+BUILT {'J': 4, 'E': 44, 'N': 689478, 'nnz': 22051432, 'faces': [{'face': 0, 'nnz': 923592, 'asymmetry': 6.106226635438361e-16}, {'face': 1, 'nnz': 923592, 'asymmetry': 6.106226635438361e-16}, {'face': 2, 'nnz': 923592, 'asymmetry': 6.106226635438361e-16}, {'face': 3, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}, {'face': 4, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}, {'face': 5, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}, {'face': 6, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}, {'face': 7, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}, {'face': 8, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}, {'face': 9, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}, {'face': 10, 'nnz': 2410082, 'asymmetry': 4.440892098500626e-16}], 'intertwiner_norm_error': 6.661338147750939e-16, 'seconds': 18.57184537500143, 'peak_RSS_bytes': 1349304320}

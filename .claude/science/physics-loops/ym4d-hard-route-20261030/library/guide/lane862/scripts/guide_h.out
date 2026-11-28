@@ -1,0 +1,10 @@
+GUIDE run, row 862. Criteria written before the run:
+ (1) D1F D0F = 0; (2) least eig of D0F^T D0F = mu_n; least eig of D1F^T D1F on ker D0F^T >= mu_n;
+ (3) H2: least eig of sum_p w_p |D_1 Z|^2 on the constrained space >= mu_n/2;
+ (4) H4: sym part of e^psi (Q/4) e^-psi at a = a_n has least eig >= mu_n/8 - 4.68 (cosh a_n - 1) > 0;
+ (5) H1: Hessian of G at 0 equals L^T L/4; |third directional derivative of G| <= |b|^3 at random points.
+n=2 M=4 T=3: dim=384 mu_n=2.000000 | (1) max|D1F D0F|=0.0e+00 | (2) eig D0^TD0=2.000000, eig D1^TD1|transverse=2.000000 | (3) least eig=1.127017 vs mu_n/2=1.000000 | (4) a_n=0.11541: least eig sym=0.280581 vs bound 0.218800; a_crit=1.3170, arccosh(1+mu_n/2)=1.3170
+n=2 M=6 T=4: dim=792 mu_n=2.000000 | (1) max|D1F D0F|=0.0e+00 | (2) eig D0^TD0=2.000000, eig D1^TD1|transverse=2.000000 | (3) least eig=1.145898 vs mu_n/2=1.000000 | (4) a_n=0.11541: least eig sym=0.285517 vs bound 0.218800; a_crit=1.3170, arccosh(1+mu_n/2)=1.3170
+n=3 M=4 T=3: dim=864 mu_n=1.000000 | (1) max|D1F D0F|=0.0e+00 | (2) eig D0^TD0=1.000000, eig D1^TD1|transverse=1.000000 | (3) least eig=0.567270 vs mu_n/2=0.500000 | (4) a_n=0.08163: least eig sym=0.141206 vs bound 0.109400; a_crit=0.9624, arccosh(1+mu_n/2)=0.9624
+(5) max |Hess G(0) - L^T L/4| = 2.09e-08
+(5) max over 4000 random points of |d^3/dt^3 G(x + t b)|, |b| = 1: 0.5540 (bound 1)

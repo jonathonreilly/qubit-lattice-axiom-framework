@@ -1,0 +1,35 @@
+== a_2 on the window [2.3, 2.6] ==
+beta=2.3: a2=0.479279 (>0.4: True); 1/(4/b+I3/I2)=0.479279; I3/I2=0.3473 <= b/6=0.3833: True; a2^4=0.052766 > 1/256=0.003906
+beta=2.45: a2=0.500422 (>0.4: True); 1/(4/b+I3/I2)=0.500422; I3/I2=0.3657 <= b/6=0.4083: True; a2^4=0.062711 > 1/256=0.003906
+beta=2.6: a2=0.520342 (>0.4: True); 1/(4/b+I3/I2)=0.520342; I3/I2=0.3834 <= b/6=0.4333: True; a2^4=0.073309 > 1/256=0.003906
+== a_d <= (13/20)^(d-1) for beta in (0, 2.6], d = 2..40 (grid) ==
+max of a_d / (13/20)^(d-1) on the grid: 0.800526 (<= 1 expected)
+== twelve-step sum ==
+beta=2.3: sum_d d^4 a_d^12 = 2.351e-03  vs 16/65 = 0.2462
+beta=2.6: sum_d d^4 a_d^12 = 6.304e-03  vs 16/65 = 0.2462
+(13/20)^12 = 5.688009e-03, 1/81 = 1.234568e-02; 16*(13/20)^12 = 0.0910 <= 16/81 = 0.1975
+== smallest k with (1 - Delta) h^{*k} >= 0 (single link; GUIDE, not claimed in the note) ==
+beta=2.3: first k with positive single-link deconvolution: 4 (min 0.2169)
+beta=2.3: k=12 min = 0.997649
+beta=2.6: first k with positive single-link deconvolution: 5 (min 0.4151)
+beta=2.6: k=12 min = 0.993697
+== one-step bracket 1 + 3 b x - b^2 (1 - x^2) ==
+beta=0.2000: min over [-1,1] = 0.40000; value at -1 = 0.40000
+beta=0.3333: min over [-1,1] = 0.00000; value at -1 = 0.00000
+beta=0.3400: min over [-1,1] = -0.02000; value at -1 = -0.02000
+beta=2.3000: min over [-1,1] = -6.54000; value at -1 = -5.90000
+== commutator law: Monte Carlo E chi_j([a,b]) vs 1/d, and density normalization ==
+d=2: MC E chi = 0.4968  vs 1/d = 0.5000
+d=3: MC E chi = 0.3290  vs 1/d = 0.3333
+d=4: MC E chi = 0.2427  vs 1/d = 0.2500
+d=5: MC E chi = 0.1956  vs 1/d = 0.2000
+integral of commutator density against Haar = 1.000000 (1 expected)
+== (1 - Delta_e) M at U_e = -I, other links I: M = exp(2 beta x) in x = tr(U_e)/2 ==
+beta=0.1000: (1 - Delta)M / M = 0.40000, 1 - 6 beta = 0.40000
+beta=0.1667: (1 - Delta)M / M = 0.00000, 1 - 6 beta = 0.00000
+beta=0.2000: (1 - Delta)M / M = -0.20000, 1 - 6 beta = -0.20000
+beta=2.3000: (1 - Delta)M / M = -12.80000, 1 - 6 beta = -12.80000
+radial Laplacian check at theta=2.842: finite difference 1.136100 vs formula 1.136099
+== Chebyshev numbers for the disjoint-plaquette bound at beta = 2.3, eta = 0.99 ==
+N=10000: b=0.04833, e_N=1.7123e-01, p <= 2.0661e-01
+N=1000000: b=0.04833, e_N=1.7123e-03, p <= 1.7153e-03

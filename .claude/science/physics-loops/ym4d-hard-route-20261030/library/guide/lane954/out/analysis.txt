@@ -1,0 +1,98 @@
+
+=== su2 beta 2.3
+L | nmeas | sector tops (raw +- err; bias-corr) | R_J^top (sector) | C4 extra-pair top of that sector | E_wind | floor 1/(2 beta E_wind) | E_plaq(0), E_plaq(1) | E c_p
+4 | 1200 | S0e 0.1595+-0.0055 (0.1576); S0o 0.5665+-0.0172 (0.5660); S1e 0.1197+-0.0022 (0.1194); S1o 0.1016+-0.0011 (0.1016) | 0.5665+-0.0172 (S0o) | 0.5739+-0.0199 | 0.3326+-0.0077 | 0.654+-0.015 | 2.026+-0.056, 1.262+-0.270 | 0.6055
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.2031, E M^2 0.05847, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.260 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +0.6, S0o -0.3, S1e +0.1, S1o -1.6
+6 | 1200 | S0e 0.1504+-0.0049 (0.1488); S0o 0.1353+-0.0027 (0.1351); S1e 0.1342+-0.0022 (0.1340); S1o 0.0813+-0.0011 (0.0812) | 0.1504+-0.0049 (S0e) | 0.1732+-0.0106 | 0.6522+-0.0205 | 0.333+-0.010 | 2.056+-0.042, 1.734+-0.258 | 0.6035
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0916, E M^2 0.01285, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.076 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e -1.9, S0o +1.1, S1e +0.3, S1o +1.0
+8 | 1200 | S0e 0.1696+-0.0061 (0.1683); S0o 0.0574+-0.0016 (0.0572); S1e 0.1461+-0.0025 (0.1459); S1o 0.0519+-0.0006 (0.0518) | 0.1696+-0.0061 (S0e) | 0.1595+-0.0054 | 1.1995+-0.1287 | 0.181+-0.019 | 2.082+-0.048, 1.162+-0.180 | 0.6021
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0563, E M^2 0.00490, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.040 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +1.2, S0o -0.6, S1e +1.2, S1o -0.1
+10 | 1200 | S0e 0.1708+-0.0081 (0.1696); S0o 0.0382+-0.0011 (0.0380); S1e 0.1460+-0.0017 (0.1458); S1o 0.0368+-0.0004 (0.0368) | 0.1708+-0.0081 (S0e) | 0.1566+-0.0060 | 1.4809+-0.4245 | 0.147+-0.042 | 2.150+-0.078, 1.426+-0.229 | 0.6021
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0420, E M^2 0.00272, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.059 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +1.4, S0o +0.8, S1e -0.5, S1o -0.4
+12 | 1200 | S0e 0.1638+-0.0080 (0.1625); S0o 0.0294+-0.0008 (0.0292); S1e 0.1500+-0.0019 (0.1498); S1o 0.0294+-0.0004 (0.0293) | 0.1638+-0.0080 (S0e) | 0.1575+-0.0057 | 1.1402+-1.2689 | 0.191+-0.212 | 2.043+-0.053, 1.265+-0.164 | 0.6023
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0338, E M^2 0.00179, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.011 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +0.6, S0o -1.1, S1e +1.2, S1o +0.8
+  fit R_J^top ~ L^kappa over L >= 6: kappa = 0.162 +- 0.077 (chi2 3.7/2)
+  R(L_max) - R(6) = +0.0134 +- 0.0094
+  sector S0e: kappa = 0.162 +- 0.077 (chi2 3.7/2); values L6 0.1504, L8 0.1696, L10 0.1708, L12 0.1638
+  sector S0o: kappa = -2.263 +- 0.045 (chi2 52.9/2); values L6 0.1353, L8 0.0574, L10 0.0382, L12 0.0294
+  sector S1e: kappa = 0.146 +- 0.029 (chi2 3.8/2); values L6 0.1342, L8 0.1461, L10 0.1460, L12 0.1500
+  sector S1o: kappa = -1.480 +- 0.025 (chi2 7.8/2); values L6 0.0813, L8 0.0519, L10 0.0368, L12 0.0294
+  S3 on the 4^3 box: R_J^top - 3 err = 0.515 exceeds R*_a for a in [30, 40, 60]
+  S3 on the 6^3 box: R_J^top - 3 err = 0.136 exceeds R*_a for a in []
+  S3 on the 8^3 box: R_J^top - 3 err = 0.151 exceeds R*_a for a in []
+  S3 on the 10^3 box: R_J^top - 3 err = 0.146 exceeds R*_a for a in []
+  S3 on the 12^3 box: R_J^top - 3 err = 0.140 exceeds R*_a for a in []
+
+=== su2 beta 2.6
+L | nmeas | sector tops (raw +- err; bias-corr) | R_J^top (sector) | C4 extra-pair top of that sector | E_wind | floor 1/(2 beta E_wind) | E_plaq(0), E_plaq(1) | E c_p
+4 | 1200 | S0e 0.1221+-0.0056 (0.1196); S0o 1.5419+-0.0565 (1.5402); S1e 0.0933+-0.0015 (0.0931); S1o 0.0885+-0.0012 (0.0885) | 1.5419+-0.0565 (S0o) | 1.4636+-0.0548 | 0.1318+-0.0029 | 1.459+-0.032 | 2.901+-0.078, 2.268+-1.325 | 0.6710
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.2969, E M^2 0.11348, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.417 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +0.7, S0o +1.0, S1e -1.4, S1o -0.6
+6 | 1200 | S0e 0.1147+-0.0045 (0.1135); S0o 0.6396+-0.0244 (0.6387); S1e 0.1057+-0.0019 (0.1055); S1o 0.0832+-0.0014 (0.0832) | 0.6396+-0.0244 (S0o) | 0.6664+-0.0271 | 0.1358+-0.0044 | 1.416+-0.045 | 2.819+-0.144, 2.597+-1.842 | 0.6706
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.1659, E M^2 0.03786, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.309 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +1.1, S0o -0.7, S1e +2.3, S1o +0.5
+8 | 1200 | S0e 0.1072+-0.0032 (0.1057); S0o 0.2464+-0.0076 (0.2462); S1e 0.1076+-0.0019 (0.1073); S1o 0.0654+-0.0009 (0.0654) | 0.2464+-0.0076 (S0o) | 0.2461+-0.0060 | 0.1520+-0.0034 | 1.265+-0.029 | 2.723+-0.085, 2.176+-0.715 | 0.6702
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0944, E M^2 0.01313, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.176 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e -1.0, S0o +0.0, S1e +0.5, S1o +1.9
+10 | 1200 | S0e 0.1118+-0.0047 (0.1104); S0o 0.1084+-0.0041 (0.1082); S1e 0.1080+-0.0026 (0.1077); S1o 0.0474+-0.0006 (0.0474) | 0.1118+-0.0047 (S0e) | 0.1135+-0.0042 | 0.1651+-0.0056 | 1.165+-0.040 | 2.751+-0.087, 2.151+-0.930 | 0.6696
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0599, E M^2 0.00547, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.105 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e -0.3, S0o +0.1, S1e -0.3, S1o +1.4
+12 | 1200 | S0e 0.1179+-0.0054 (0.1165); S0o 0.0555+-0.0016 (0.0554); S1e 0.1130+-0.0020 (0.1128); S1o 0.0359+-0.0006 (0.0359) | 0.1179+-0.0054 (S0e) | 0.1134+-0.0045 | 0.1683+-0.0119 | 1.143+-0.081 | 2.763+-0.133, 1.156+-0.391 | 0.6702
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0411, E M^2 0.00264, Binder U = 1 - E M^4/(3 (E M^2)^2) = 0.035 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +0.6, S0o +0.8, S1e +1.1, S1o +1.2
+14 | 1200 | S0e 0.1170+-0.0062 (0.1157); S0o 0.0311+-0.0007 (0.0310); S1e 0.1085+-0.0016 (0.1083); S1o 0.0281+-0.0003 (0.0281) | 0.1170+-0.0062 (S0e) | 0.1212+-0.0057 | 0.2381+-0.0284 | 0.808+-0.096 | 2.776+-0.097, nan+-0.000 | 0.6699
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0306, E M^2 0.00149, Binder U = 1 - E M^4/(3 (E M^2)^2) = -0.015 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e -0.5, S0o -1.9, S1e -0.7, S1o +0.4
+16 | 800 | S0e 0.1182+-0.0059 (0.1165); S0o 0.0239+-0.0008 (0.0238); S1e 0.1057+-0.0023 (0.1054); S1o 0.0227+-0.0004 (0.0226) | 0.1182+-0.0059 (S0e) | 0.1098+-0.0052 | 0.2950+-0.1086 | 0.652+-0.240 | 2.860+-0.151, nan+-0.000 | 0.6698
+     spatial Polyakov loop (mean over a slice, one direction): E|M| 0.0257, E M^2 0.00104, Binder U = 1 - E M^4/(3 (E M^2)^2) = -0.042 (2/3 ordered, 0 Gaussian)
+     C4 (central K' vs extra K), deviation in combined errors: S0e +1.1, S0o +0.8, S1e -1.0, S1o -0.4
+  fit R_J^top ~ L^kappa over L >= 6: kappa = -1.813 +- 0.052 (chi2 306.4/4)
+  R(L_max) - R(6) = -0.5214 +- 0.0251
+  sector S0e: kappa = 0.068 +- 0.052 (chi2 3.8/4); values L6 0.1147, L8 0.1072, L10 0.1118, L12 0.1179, L14 0.1170, L16 0.1182
+  sector S0o: kappa = -3.501 +- 0.041 (chi2 28.2/4); values L6 0.6396, L8 0.2464, L10 0.1084, L12 0.0555, L14 0.0311, L16 0.0239
+  sector S1e: kappa = 0.024 +- 0.022 (chi2 7.7/4); values L6 0.1057, L8 0.1076, L10 0.1080, L12 0.1130, L14 0.1085, L16 0.1057
+  sector S1o: kappa = -1.379 +- 0.019 (chi2 74.2/4); values L6 0.0832, L8 0.0654, L10 0.0474, L12 0.0359, L14 0.0281, L16 0.0227
+  S3 on the 4^3 box: R_J^top - 3 err = 1.372 exceeds R*_a for a in [30, 40, 60, 100, 200]
+  S3 on the 6^3 box: R_J^top - 3 err = 0.567 exceeds R*_a for a in [30, 40, 60]
+  S3 on the 8^3 box: R_J^top - 3 err = 0.224 exceeds R*_a for a in [30]
+  S3 on the 10^3 box: R_J^top - 3 err = 0.098 exceeds R*_a for a in []
+  S3 on the 12^3 box: R_J^top - 3 err = 0.102 exceeds R*_a for a in []
+  S3 on the 14^3 box: R_J^top - 3 err = 0.098 exceeds R*_a for a in []
+  S3 on the 16^3 box: R_J^top - 3 err = 0.101 exceeds R*_a for a in []
+
+=== u1 beta 1.5
+L | nmeas | sector tops (raw +- err; bias-corr) | R_J^top (sector) | C4 extra-pair top of that sector | E_wind | floor 1/(2 beta E_wind) | E_plaq(0), E_plaq(1) | E c_p
+4 | 800 | U0c 0.2288+-0.0105 (0.2255); U0s 0.4123+-0.0350 (0.4029); U1c 0.1749+-0.0039 (0.1744); U1s 0.3714+-0.0069 (0.3702); U0w 4.3252+-0.1331 (4.1721) | 4.3252+-0.1331 (U0w) | 4.4580+-0.1393 | 0.1067+-0.0027 | 3.124+-0.080 | 4.197+-0.562, nan+-1.125 | 0.8144
+     C4 (central K' vs extra K), deviation in combined errors: U0c +1.5, U0s +0.3, U1c -0.9, U1s -2.0, U0w -0.7
+     U1s-B (space-like fields only, the transverse photon): 0.2675 +- 0.0050 (error scaled from U1s); free photon 0.2440; ratio 1.096
+     photon: E_B(kmin) tau=0,1,2: 1.359+-0.008, 1.411+-0.048, 1.496+-0.220; free omega_min 1.3170; free 1/c 0.2440; U1s/free 1.522
+6 | 800 | U0c 0.2131+-0.0075 (0.2100); U0s 0.4258+-0.0178 (0.4185); U1c 0.1956+-0.0033 (0.1950); U1s 0.4143+-0.0059 (0.4059); U0w 4.4493+-0.1540 (4.4095) | 4.4493+-0.1540 (U0w) | 4.4826+-0.1690 | 0.0692+-0.0013 | 4.819+-0.090 | 3.862+-0.438, 1.394+-1.565 | 0.8124
+     C4 (central K' vs extra K), deviation in combined errors: U0c -0.2, U0s +1.7, U1c +0.6, U1s -0.7, U0w -0.1
+     U1s-B (space-like fields only, the transverse photon): 0.4136 +- 0.0059 (error scaled from U1s); free photon 0.4120; ratio 1.004
+     photon: E_B(kmin) tau=0,1,2: 1.009+-0.008, 0.936+-0.018, 1.040+-0.045; free omega_min 0.9624; free 1/c 0.4120; U1s/free 1.006
+8 | 800 | U0c 0.2020+-0.0076 (0.1986); U0s 0.4022+-0.0249 (0.3935); U1c 0.2033+-0.0028 (0.2028); U1s 0.5247+-0.0115 (0.5207); U0w 3.9717+-0.1409 (3.8887) | 3.9717+-0.1409 (U0w) | 4.0419+-0.1199 | 0.0543+-0.0007 | 6.136+-0.074 | 3.773+-0.432, 1.210+-2.042 | 0.8122
+     C4 (central K' vs extra K), deviation in combined errors: U0c +0.2, U0s -0.2, U1c +0.5, U1s -1.3, U0w -0.4
+     U1s-B (space-like fields only, the transverse photon): 0.5229 +- 0.0115 (error scaled from U1s); free photon 0.5993; ratio 0.872
+     photon: E_B(kmin) tau=0,1,2: 0.807+-0.004, 0.758+-0.011, 0.721+-0.026; free omega_min 0.7478; free 1/c 0.5993; U1s/free 0.876
+10 | 800 | U0c 0.2131+-0.0128 (0.2102); U0s 0.3941+-0.0212 (0.3798); U1c 0.2004+-0.0040 (0.1998); U1s 0.6102+-0.0153 (0.6043); U0w 3.3116+-0.1201 (3.2800) | 3.3116+-0.1201 (U0w) | 3.3123+-0.1069 | 0.0465+-0.0012 | 7.163+-0.189 | 4.265+-0.464, nan+-1.490 | 0.8124
+     C4 (central K' vs extra K), deviation in combined errors: U0c -0.6, U0s -1.8, U1c -0.4, U1s +0.1, U0w -0.0
+     U1s-B (space-like fields only, the transverse photon): 0.6093 +- 0.0153 (error scaled from U1s); free photon 0.7957; ratio 0.766
+     photon: E_B(kmin) tau=0,1,2: 0.691+-0.004, 0.609+-0.009, 0.572+-0.016; free omega_min 0.6086; free 1/c 0.7957; U1s/free 0.767
+12 | 800 | U0c 0.2293+-0.0131 (0.2261); U0s 0.4162+-0.0291 (0.4039); U1c 0.2147+-0.0043 (0.2141); U1s 0.6687+-0.0155 (0.6626); U0w 2.7327+-0.1019 (2.7029) | 2.7327+-0.1019 (U0w) | 2.5433+-0.1110 | 0.0377+-0.0008 | 8.838+-0.184 | 3.647+-0.232, nan+-0.000 | 0.8127
+     C4 (central K' vs extra K), deviation in combined errors: U0c +0.5, U0s +0.7, U1c +1.6, U1s -0.7, U0w +1.3
+     U1s-B (space-like fields only, the transverse photon): 0.6678 +- 0.0155 (error scaled from U1s); free photon 0.9970; ratio 0.670
+     photon: E_B(kmin) tau=0,1,2: 0.588+-0.005, 0.512+-0.007, 0.517+-0.013; free omega_min 0.5120; free 1/c 0.9970; U1s/free 0.671
+  fit R_J^top ~ L^kappa over L >= 6: kappa = -0.692 +- 0.069 (chi2 4.8/2)
+  R(L_max) - R(6) = -1.7165 +- 0.1846
+  U1s-B (transverse photon) over all L: kappa = 0.842 +- 0.024 (chi2 26.4/3)
+  U1s-B over L >= 6: kappa = 0.711 +- 0.036 (chi2 2.6/2)
+  sector U0c: kappa = 0.068 +- 0.087 (chi2 3.0/2); values L6 0.2131, L8 0.2020, L10 0.2131, L12 0.2293
+  sector U0s: kappa = -0.081 +- 0.101 (chi2 0.8/2); values L6 0.4258, L8 0.4022, L10 0.3941, L12 0.4162
+  sector U1c: kappa = 0.109 +- 0.035 (chi2 3.5/2); values L6 0.1956, L8 0.2033, L10 0.2004, L12 0.2147
+  sector U1s: kappa = 0.711 +- 0.036 (chi2 2.8/2); values L6 0.4143, L8 0.5247, L10 0.6102, L12 0.6687
+  sector U0w: kappa = -0.692 +- 0.069 (chi2 4.8/2); values L6 4.4493, L8 3.9717, L10 3.3116, L12 2.7327

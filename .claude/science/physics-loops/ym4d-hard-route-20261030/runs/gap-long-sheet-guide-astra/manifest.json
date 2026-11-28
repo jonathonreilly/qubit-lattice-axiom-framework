@@ -1,0 +1,5112 @@
+{
+  "completed": "2026-11-17T14:40:47.825339+00:00",
+  "source_commit": "2b67c749cc219d0051de7b26c2a62c77c3948266",
+  "source_main": "8b11ae2bb95e641494fe75ed83d108ee712fa3a9",
+  "scratch": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO",
+  "chains": [
+    {
+      "tag": "gh_L128_b2.3_k-1_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": -1,
+      "seed": 11110000,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:43:13.707349+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.3",
+        "-1",
+        "11110000",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c0"
+      ],
+      "memory_free_pct": 83,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75212,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:43:32.205389+00:00",
+      "seconds": 18.497729082999285,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c0.f32",
+          "bytes": 10485760,
+          "sha256": "bbe4f79acf60e99c54c4b6b3c6b5f222e72ecd41f49541256fa4a63fa674519c"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c0.csv",
+          "bytes": 118122,
+          "sha256": "39f868e2946ce32a5d37f7707dff374eb00a691b22cb6c6588ab9425cb21b632",
+          "small_copy": "gh_L128_b2.3_k-1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c0.therm.csv",
+          "bytes": 1990,
+          "sha256": "75be903c5ec0ff5a30ffaffa2b454a248fb1d59b3c7a6cb6ef2792c8adf8fb6f",
+          "small_copy": "gh_L128_b2.3_k-1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c0.cfg",
+          "bytes": 1048576,
+          "sha256": "bbddafd911fd5ce921dd76fc8166d441bdef8c0d693d7393c857c8033ec1239b"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 2916352
+    },
+    {
+      "tag": "gh_L128_b2.3_k-1_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": -1,
+      "seed": 11111009,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:43:32.246044+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.3",
+        "-1",
+        "11111009",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c1"
+      ],
+      "memory_free_pct": 84,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75234,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:43:50.691813+00:00",
+      "seconds": 18.445565332993283,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c1.f32",
+          "bytes": 10485760,
+          "sha256": "86668e0518557fe7e8e5a11e3cdb6263eab9ff572e31fa25d897c860ecba7499"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c1.csv",
+          "bytes": 118174,
+          "sha256": "0c0e670586379c263a58d2b2ab4276323fa86d4a1b451e0c2fd24333781285bd",
+          "small_copy": "gh_L128_b2.3_k-1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c1.therm.csv",
+          "bytes": 1985,
+          "sha256": "1f2d8bff3fbfb76535ba96ba1e5d748198e55481896264b093da66c813dbfe7c",
+          "small_copy": "gh_L128_b2.3_k-1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k-1_c1.cfg",
+          "bytes": 1048576,
+          "sha256": "617abd2ad39d524997c2def5b3ae15b5dbc2a84826012cd862b64abb8d35f500"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 2916352
+    },
+    {
+      "tag": "gh_L128_b2.3_k1_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 2.3,
+      "seed": 11112018,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:43:50.732999+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.3",
+        "2.3",
+        "11112018",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75255,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:44:30.246523+00:00",
+      "seconds": 39.513356499999645,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c0.f32",
+          "bytes": 10485760,
+          "sha256": "014e2e3610c1132e77a39bf22d8a805a06999d4808a5c5f12e4f5c40023c350e"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c0.csv",
+          "bytes": 120425,
+          "sha256": "8b134a5c887f926833f71402c71aa1be25bc8d6db64eba95ef7dd10be866ac3d",
+          "small_copy": "gh_L128_b2.3_k1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c0.therm.csv",
+          "bytes": 2017,
+          "sha256": "24039a2c602298746cc006cb621dc8681b338ba9cf76da9f4a9cb1f774a64a74",
+          "small_copy": "gh_L128_b2.3_k1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "becf699b4fcb3f8e085f92d133b0dc4cf9e3fe9f4fac0414ae674898d713d939"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.3_k1_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 2.3,
+      "seed": 11113027,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:44:30.281886+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.3",
+        "2.3",
+        "11113027",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75289,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:45:08.776982+00:00",
+      "seconds": 38.49507670800085,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c1.f32",
+          "bytes": 10485760,
+          "sha256": "a4353cd7ddd0b323b57d115012e8e7ed575d90fab3b0a8cceb1916fe3a20505e"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c1.csv",
+          "bytes": 120380,
+          "sha256": "d20f6923581bc78be9da9e66b322e7f3ff17cb98fb754a7cf8759f2d29a8dc0a",
+          "small_copy": "gh_L128_b2.3_k1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c1.therm.csv",
+          "bytes": 2030,
+          "sha256": "b418936db5fe66414cc25104dfb8dd71991d421326775ed5896c20e6fbe3eda6",
+          "small_copy": "gh_L128_b2.3_k1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k1_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "d84031587a607fa199a8f74253b2c1088ffd960c923fccb1b6340ff097871e6f"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.3_k4_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 9.2,
+      "seed": 11114036,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:45:08.812831+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.3",
+        "9.2",
+        "11114036",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75330,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:45:46.754707+00:00",
+      "seconds": 37.94184829200094,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c0.f32",
+          "bytes": 10485760,
+          "sha256": "807e9925de4e122c9585a320524b7be871f311dbcb85a7c238e454c36c920d0e"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c0.csv",
+          "bytes": 120377,
+          "sha256": "698903a5976cc6bbb2eac55ec0449cf5fd72b12a28dc7dc0202f09ff073fed7e",
+          "small_copy": "gh_L128_b2.3_k4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c0.therm.csv",
+          "bytes": 2028,
+          "sha256": "9fbeec2653cf194198f99d507087f2be12851f5d6def7f8f1b4572b46468944c",
+          "small_copy": "gh_L128_b2.3_k4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "445ead41200272e24bc26cee47f77ba1a63eaf70f90ebeff93dbafdbad4943a1"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.3_k4_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 9.2,
+      "seed": 11115045,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:45:46.789886+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.3",
+        "9.2",
+        "11115045",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75339,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:46:24.788644+00:00",
+      "seconds": 37.99870608300262,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c1.f32",
+          "bytes": 10485760,
+          "sha256": "28ddfa23deb6ac11105db4df63707f3fa3a19175df512f489760d7f0f1e74bb0"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c1.csv",
+          "bytes": 120415,
+          "sha256": "d6ceff45789197c755922b5f3ad2e857ea99e0044bae6f9c0c0fd8106e32567f",
+          "small_copy": "gh_L128_b2.3_k4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c1.therm.csv",
+          "bytes": 2026,
+          "sha256": "b6eafe687cf4c4c1af71a1153ffdc2da143d97421fe17d1f6c0b661796557add",
+          "small_copy": "gh_L128_b2.3_k4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.3_k4_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "d0586093b884f8638029c7266f08fe4d227da678d09a4fd8438b3a296fe862f8"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L192_b2.3_k-1_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": -1,
+      "seed": 11116054,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:46:24.823548+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.3",
+        "-1",
+        "11116054",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75382,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:47:03.376821+00:00",
+      "seconds": 38.55329787499795,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c0.f32",
+          "bytes": 15728640,
+          "sha256": "97a8da2e133bb5997af3d44242d2c164a138a084e5734cf3cc80be703e4df3d3"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c0.csv",
+          "bytes": 118114,
+          "sha256": "6a2d6ddfb47171983851c123fa109672ab41c9cf9d5c335004cce863e8bac8a6",
+          "small_copy": "gh_L192_b2.3_k-1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c0.therm.csv",
+          "bytes": 1993,
+          "sha256": "45f84c402edf6edd36e152b3c6563011edfa1d2afb075dd5748cc0d5d47b8ba4",
+          "small_copy": "gh_L192_b2.3_k-1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c0.cfg",
+          "bytes": 2359296,
+          "sha256": "cbce549879380e84bca02c18fdd7def88c9adf7cf3efd79688f62d47f96a08aa"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 4571136
+    },
+    {
+      "tag": "gh_L192_b2.3_k-1_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": -1,
+      "seed": 11117063,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:47:03.413972+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.3",
+        "-1",
+        "11117063",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c1"
+      ],
+      "memory_free_pct": 85,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75434,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:47:41.930624+00:00",
+      "seconds": 38.516684208996594,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c1.f32",
+          "bytes": 15728640,
+          "sha256": "7bcd99cd92c7409ef405582cd510640c64ef0869db9952ca39f54ea798dc7abc"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c1.csv",
+          "bytes": 118116,
+          "sha256": "bc338854ab88a271ae358c3e0b5595700022359411f245a6388c799060cfc49a",
+          "small_copy": "gh_L192_b2.3_k-1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c1.therm.csv",
+          "bytes": 1990,
+          "sha256": "46642536b24a05e6d3b3bc692625b744074103b9b05ed1428a7a961b8fc093d3",
+          "small_copy": "gh_L192_b2.3_k-1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k-1_c1.cfg",
+          "bytes": 2359296,
+          "sha256": "fa48391d087e79fab6cb44c1c06deef64d4474267ecd5df14061e65f5ad4f417"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 4571136
+    },
+    {
+      "tag": "gh_L192_b2.3_k1_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 2.3,
+      "seed": 11118072,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:47:41.968527+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.3",
+        "2.3",
+        "11118072",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75470,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:49:07.879345+00:00",
+      "seconds": 85.91096470800403,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c0.f32",
+          "bytes": 15728640,
+          "sha256": "2660a8ee0a592582ae484e55a9c711ed9580f5d3cd005b659d70fe4891d34b98"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c0.csv",
+          "bytes": 120330,
+          "sha256": "58a7ae6aeb17433e9cf111524747c8a687b662001ee4e2240be4406d6015696b",
+          "small_copy": "gh_L192_b2.3_k1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c0.therm.csv",
+          "bytes": 2028,
+          "sha256": "afd938fd913398c6a54fdc5754c68e66808bb63aa3f07529a2bdd541b766af88",
+          "small_copy": "gh_L192_b2.3_k1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c0.cfg",
+          "bytes": 4718592,
+          "sha256": "c6e0365c05ff3fe5835428b1a411b0cfb67e14d6c596d03c6b499879a8cfb726"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.3_k1_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 2.3,
+      "seed": 11119081,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:49:07.917828+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.3",
+        "2.3",
+        "11119081",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c1"
+      ],
+      "memory_free_pct": 85,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75541,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:50:33.962353+00:00",
+      "seconds": 86.04464266600553,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c1.f32",
+          "bytes": 15728640,
+          "sha256": "a2a8af43199f06385cfc333a3f4c75716fb2933976ce49896cc89db36f0d5939"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c1.csv",
+          "bytes": 120311,
+          "sha256": "366847cd9735dcdd6b8ca938ea069ca0f4b139e163a752577b42b2c94dc7f431",
+          "small_copy": "gh_L192_b2.3_k1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c1.therm.csv",
+          "bytes": 2021,
+          "sha256": "528d77bbc56de87a8f79f90b309b3fd8e4397682aa03c9465409b881b4ad8078",
+          "small_copy": "gh_L192_b2.3_k1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k1_c1.cfg",
+          "bytes": 4718592,
+          "sha256": "a5cb61c55764fb83a692b77514b4ba9620a58ee5b8154a9a5f461987d76e7bf8"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.3_k4_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 9.2,
+      "seed": 11120090,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:50:34.000076+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.3",
+        "9.2",
+        "11120090",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75582,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:51:59.231560+00:00",
+      "seconds": 85.21621895799763,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c0.f32",
+          "bytes": 15728640,
+          "sha256": "3302cf58738c5475078e16d24c40abf0bd31e8449a0882f1a1bafc197950ecaa"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c0.csv",
+          "bytes": 120337,
+          "sha256": "2f3d2c5cfffe98d1ba1c93d7a66df5bbc4d4a130229e6415966f7b98dce5bb6b",
+          "small_copy": "gh_L192_b2.3_k4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c0.therm.csv",
+          "bytes": 2026,
+          "sha256": "125eef898bc0244d6263bc0a3ca84654b023fffd262f2698731a48e6373bfcf5",
+          "small_copy": "gh_L192_b2.3_k4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c0.cfg",
+          "bytes": 4718592,
+          "sha256": "82442e76407758b4c217b52d0ed2b72a96c294a8d4a9ba7ccb2d1d8de9eb9e5e"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.3_k4_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.3,
+      "coupling": 9.2,
+      "seed": 11121099,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:51:59.269197+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.3",
+        "9.2",
+        "11121099",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75664,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:53:24.666478+00:00",
+      "seconds": 85.3962269170006,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c1.f32",
+          "bytes": 15728640,
+          "sha256": "99d0b368d8badb45806344729170a63e573f975dae2c76442944e4490ed86b02"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c1.csv",
+          "bytes": 120342,
+          "sha256": "74964e44865d51949fd302730ce2301a1c2b1db881b623131252bfa362626b91",
+          "small_copy": "gh_L192_b2.3_k4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c1.therm.csv",
+          "bytes": 2024,
+          "sha256": "4c55cc71507c796929a7bdfa0c08f4283fe401f7d18abad1dba85f484adef987",
+          "small_copy": "gh_L192_b2.3_k4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.3_k4_c1.cfg",
+          "bytes": 4718592,
+          "sha256": "c13b0f7f746ab7fddee60abde981069551a49d2868aff5a56d70890becb0cac8"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L128_b2.4_k-1_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": -1,
+      "seed": 11122108,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:53:24.704380+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.4",
+        "-1",
+        "11122108",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75725,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:53:41.797681+00:00",
+      "seconds": 17.09320299999672,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c0.f32",
+          "bytes": 10485760,
+          "sha256": "3225cd6297623ff03f6249071d24f7fba7aca73587f9dc12fd35ce17018a5c64"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c0.csv",
+          "bytes": 118112,
+          "sha256": "5b5da00aea8f3408530d028993336342a6eb862af9eca9b9a1cdd8cd3b367844",
+          "small_copy": "gh_L128_b2.4_k-1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c0.therm.csv",
+          "bytes": 1991,
+          "sha256": "5ef28e2bdc7d58b6b476462493bf97560cc3b302e523afed6d9c836002962eeb",
+          "small_copy": "gh_L128_b2.4_k-1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c0.cfg",
+          "bytes": 1048576,
+          "sha256": "a3f1817e77917fffeb67d542527ed4023ce3c599f661c36f508f7d987abea3ac"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 2916352
+    },
+    {
+      "tag": "gh_L128_b2.4_k-1_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": -1,
+      "seed": 11123117,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:53:41.832207+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.4",
+        "-1",
+        "11123117",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75728,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:53:58.933678+00:00",
+      "seconds": 17.10139287498896,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c1.f32",
+          "bytes": 10485760,
+          "sha256": "a433d32f0fded94da030a788a82deeddd3e9b08004e6ac1509e7d767418ebf59"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c1.csv",
+          "bytes": 118072,
+          "sha256": "af5d802fa4a23eec0a24f1d5b04ac9df622d7214327e039f9d9438a50d83157e",
+          "small_copy": "gh_L128_b2.4_k-1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c1.therm.csv",
+          "bytes": 1987,
+          "sha256": "31799ebf8cf875b9395d5fe7361cd4f6d1b073e8242cb2ec69bda18c1f568e4f",
+          "small_copy": "gh_L128_b2.4_k-1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k-1_c1.cfg",
+          "bytes": 1048576,
+          "sha256": "7974d561d065ea6b33e0bbd106c9f21fd5eeb9aab5a813b3f129904a547fbe2a"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 2916352
+    },
+    {
+      "tag": "gh_L128_b2.4_k1_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11124126,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:53:58.968730+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.4",
+        "2.4",
+        "11124126",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75735,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:54:36.969551+00:00",
+      "seconds": 38.00068337499397,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c0.f32",
+          "bytes": 10485760,
+          "sha256": "54022cd061356dd7efc568d19b7aa0233db8c85a296bf409ae6d1a230dca25af"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c0.csv",
+          "bytes": 120367,
+          "sha256": "027c724f36c9f62cd16a616638a1a97d75444594ebd25e5c503ef8992af901ca",
+          "small_copy": "gh_L128_b2.4_k1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c0.therm.csv",
+          "bytes": 2022,
+          "sha256": "48715d88cc57eec01b7076eb8418eabd2432ede3d8636171e9f7630ccbbbc448",
+          "small_copy": "gh_L128_b2.4_k1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "f8051c9c1fd30fec26828e1428d71f1c65a9c3695051e0dadb2c394b45a88890"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3948544
+    },
+    {
+      "tag": "gh_L128_b2.4_k1_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11125135,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:54:37.004492+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.4",
+        "2.4",
+        "11125135",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75779,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:55:15.031589+00:00",
+      "seconds": 38.02694766600325,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c1.f32",
+          "bytes": 10485760,
+          "sha256": "5c53e38e1fa999008eba6bacb39daace4d966e0a171b744adf379797dcc9785d"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c1.csv",
+          "bytes": 120302,
+          "sha256": "946a4759fb099130883f615084ea38c7b6d168be53ad22f344d6e2a11a85fb50",
+          "small_copy": "gh_L128_b2.4_k1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c1.therm.csv",
+          "bytes": 2025,
+          "sha256": "3ce43cb2eb7fb14a42126d6342dd26f7abcd72b77453536e62a5642f5696f856",
+          "small_copy": "gh_L128_b2.4_k1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k1_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "939a8c69b6c2673a7311ee112f827dd13cabbe98e7df96363b0f217917e63bc4"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.4_k4_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 9.6,
+      "seed": 11126144,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:55:15.066203+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.4",
+        "9.6",
+        "11126144",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75809,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:55:52.815227+00:00",
+      "seconds": 37.74888887500856,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c0.f32",
+          "bytes": 10485760,
+          "sha256": "f6aa726ec565b0fdae8aae7ff1b76648db2b7c95d41819e066cb2cdc94561f7b"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c0.csv",
+          "bytes": 120352,
+          "sha256": "509212fa49fb855e11e28cfdfb3a4658bd87531c47f185fb3badfc2feffa7225",
+          "small_copy": "gh_L128_b2.4_k4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c0.therm.csv",
+          "bytes": 2034,
+          "sha256": "55abd8f94dda68f7d2d9cae733ad5148140446454b2c25d9aae6030cd5ae65f4",
+          "small_copy": "gh_L128_b2.4_k4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "86cd41fbe7887d0d81a91bde33afdfb0a6357f42a09c02bf3081c9507475d3f8"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.4_k4_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 9.6,
+      "seed": 11127153,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:55:52.850228+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.4",
+        "9.6",
+        "11127153",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75821,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:56:30.590821+00:00",
+      "seconds": 37.74041641700023,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c1.f32",
+          "bytes": 10485760,
+          "sha256": "55f12c2921efb33852bfd3fe810ee691b78eb6a3d0252bfa3379a8851a1400cb"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c1.csv",
+          "bytes": 120333,
+          "sha256": "1595918a93318f1e9df9e4da25c872acf5b74f32536ff86a97a7d66d5a333a3a",
+          "small_copy": "gh_L128_b2.4_k4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c1.therm.csv",
+          "bytes": 2022,
+          "sha256": "8042d3d668e113c9caf5049f750c66efa91bcb2c26e9fb8ad86b4979891b0f59",
+          "small_copy": "gh_L128_b2.4_k4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.4_k4_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "87206aa17f2419b2790f13e0f21608e47b2a6dd2cdabee68280cdeb0e413b456"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L192_b2.4_k-1_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": -1,
+      "seed": 11128162,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:56:30.625472+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.4",
+        "-1",
+        "11128162",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75853,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:57:09.119630+00:00",
+      "seconds": 38.494077875002404,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c0.f32",
+          "bytes": 15728640,
+          "sha256": "a0546f66dcb3a87998d04af0784b24831302994b10bc29b48d28e7e88722c7a8"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c0.csv",
+          "bytes": 118082,
+          "sha256": "42e1c04f6978eb7c4df09c94b133063f5d34043e14368a42729a54f0a78cae37",
+          "small_copy": "gh_L192_b2.4_k-1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c0.therm.csv",
+          "bytes": 1989,
+          "sha256": "b6ce61377f6846d724554a5fc4304cfd91b8ba58a24a8493d41e13abfef57d10",
+          "small_copy": "gh_L192_b2.4_k-1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c0.cfg",
+          "bytes": 2359296,
+          "sha256": "f62cee4fbe4a070f52d3af4fc8546f43428f0f633781986724b22a27fd920263"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 4571136
+    },
+    {
+      "tag": "gh_L192_b2.4_k-1_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": -1,
+      "seed": 11129171,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:57:09.156835+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.4",
+        "-1",
+        "11129171",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75927,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:57:47.592857+00:00",
+      "seconds": 38.43587075000687,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.f32",
+          "bytes": 15728640,
+          "sha256": "f56cab20cf4efb17dd31aacbae59c9ca208c78a79d34b00ecd8ac044117b8c54"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.csv",
+          "bytes": 118108,
+          "sha256": "19088cb85e46e500dc8ce610e9b56ae01cfc6b420c6d9d24c1e33e6607e51aa0",
+          "small_copy": "gh_L192_b2.4_k-1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.therm.csv",
+          "bytes": 1996,
+          "sha256": "05302d269efaf1abedf9642f5b37219a513da301b80df5d97cbcfcfa3a9a3813",
+          "small_copy": "gh_L192_b2.4_k-1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.cfg",
+          "bytes": 2359296,
+          "sha256": "83fa08a93a313b26c864a3b5769e860c09d50d5940230841021b7e1a5a0392ad"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 4571136
+    },
+    {
+      "tag": "gh_L192_b2.4_k1_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11130180,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:57:47.630750+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.4",
+        "2.4",
+        "11130180",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c0"
+      ],
+      "memory_free_pct": 85,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 75939,
+      "exit_code": 0,
+      "ended": "2026-11-17T12:59:13.289295+00:00",
+      "seconds": 85.65838095798972,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c0.f32",
+          "bytes": 15728640,
+          "sha256": "99ffb638fdc829faec1c83a069c852f29cdd706bdee04a15416c0c5c706c9e3b"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c0.csv",
+          "bytes": 120415,
+          "sha256": "57401f7da70f2f40d9041b3d099c88947da9297258adfe6673419728b2d635a9",
+          "small_copy": "gh_L192_b2.4_k1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c0.therm.csv",
+          "bytes": 2024,
+          "sha256": "4d2430f546605073d81f9564c941e31950f67c9d77c1ddf41b29a86ede06cf26",
+          "small_copy": "gh_L192_b2.4_k1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c0.cfg",
+          "bytes": 4718592,
+          "sha256": "8adf3419aa16f5bffe1bc34ad242c0d0a01878ca8da0d09c3a75cc9891ab3b2d"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.4_k1_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11131189,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T12:59:13.327475+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.4",
+        "2.4",
+        "11131189",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76000,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:00:39.185739+00:00",
+      "seconds": 85.85814199999731,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c1.f32",
+          "bytes": 15728640,
+          "sha256": "98e0328c36c4aa44c13828424ef3efd9a1d3e20fe598bbb803f096e5d5c74e14"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c1.csv",
+          "bytes": 120401,
+          "sha256": "9eb3af67a59b328dfcd497542f72c97c179958c155f14dac6e6a3a7afaed9d29",
+          "small_copy": "gh_L192_b2.4_k1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c1.therm.csv",
+          "bytes": 2015,
+          "sha256": "5f62ad084b48cee815a219013928f763bf74c7f3328584775b0588e39e8bf623",
+          "small_copy": "gh_L192_b2.4_k1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k1_c1.cfg",
+          "bytes": 4718592,
+          "sha256": "7e280eeaa0437001be354eb4fa17953292f3d04d42960d4e757377d0d6be68e6"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6930432
+    },
+    {
+      "tag": "gh_L192_b2.4_k4_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 9.6,
+      "seed": 11132198,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:00:39.225217+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.4",
+        "9.6",
+        "11132198",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76052,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:02:04.479290+00:00",
+      "seconds": 85.2539617500006,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c0.f32",
+          "bytes": 15728640,
+          "sha256": "eb6981949466051150e7448f966dcc261794393a382bb51bb7bbad6f7d18a168"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c0.csv",
+          "bytes": 120333,
+          "sha256": "26646ee2546ddcbb75c1847386654b8b17f13aad3a145d70ccead9024db229e4",
+          "small_copy": "gh_L192_b2.4_k4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c0.therm.csv",
+          "bytes": 2023,
+          "sha256": "5a94ce02dad7fc6a8b8ea90ab8c456291a8b6d6098d1e539e3d4d5b542525e88",
+          "small_copy": "gh_L192_b2.4_k4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c0.cfg",
+          "bytes": 4718592,
+          "sha256": "2f8926130479c929a0889ce192460aa80c7e3105c79074f3efbed350fc55c21d"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.4_k4_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 9.6,
+      "seed": 11133207,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:02:04.517467+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.4",
+        "9.6",
+        "11133207",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c1"
+      ],
+      "memory_free_pct": 85,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76139,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:03:29.652944+00:00",
+      "seconds": 85.13533033299609,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c1.f32",
+          "bytes": 15728640,
+          "sha256": "63300cb1381509e73429af672a7d1a7327ba9ed98adc2bcb24ae0d8f954ea7b3"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c1.csv",
+          "bytes": 120411,
+          "sha256": "f7349daaa13b1bda85698659f462edb376a1ac4fdfe33dd3cf66bcc0ad4bdd71",
+          "small_copy": "gh_L192_b2.4_k4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c1.therm.csv",
+          "bytes": 2021,
+          "sha256": "895d406c0d63c9549fa8a75be07c1e6cc032083f066ef9f862c8042aa9edf726",
+          "small_copy": "gh_L192_b2.4_k4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k4_c1.cfg",
+          "bytes": 4718592,
+          "sha256": "952386269ba5bf968ae822842857e7c20c10b8b8b55b120d6582cf74fe8a444a"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L128_b2.5_k-1_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": -1,
+      "seed": 11134216,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:03:29.691988+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.5",
+        "-1",
+        "11134216",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76201,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:03:46.755335+00:00",
+      "seconds": 17.063242292002542,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c0.f32",
+          "bytes": 10485760,
+          "sha256": "2a9641d07b4caf29b96768eccc7ba026821ddf81de8afd32dd8740a4e5ecf28e"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c0.csv",
+          "bytes": 118141,
+          "sha256": "514ea5e7d6f4b0197f4815e3542d1c68cd1095eb37e070e6e04c37fb23e16732",
+          "small_copy": "gh_L128_b2.5_k-1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c0.therm.csv",
+          "bytes": 1995,
+          "sha256": "6eec34a0cdc2932ba8e9d245e02a4156e56709104a8d8141c296b3fe4f5a39fe",
+          "small_copy": "gh_L128_b2.5_k-1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c0.cfg",
+          "bytes": 1048576,
+          "sha256": "b6635bc1510ba269c06587f15244858a7489a329f78d5f4324d799eae1ab3889"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 2916352
+    },
+    {
+      "tag": "gh_L128_b2.5_k-1_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": -1,
+      "seed": 11135225,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:03:46.790585+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.5",
+        "-1",
+        "11135225",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76206,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:04:03.839533+00:00",
+      "seconds": 17.04884229200252,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c1.f32",
+          "bytes": 10485760,
+          "sha256": "12b7e8cd30dae34eec09cb4b68ab3198a6747ce9bc06e70d16ce98e386b0ef46"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c1.csv",
+          "bytes": 118170,
+          "sha256": "395e9683d61d72e9acaa384742066a1df8d147fadb7d7f84de6e15fb4122fe38",
+          "small_copy": "gh_L128_b2.5_k-1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c1.therm.csv",
+          "bytes": 1989,
+          "sha256": "666687a390b1797873d63b1acfb0599d15663ce966af285b5337366d524d5e48",
+          "small_copy": "gh_L128_b2.5_k-1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k-1_c1.cfg",
+          "bytes": 1048576,
+          "sha256": "03386efbd7225663320088e48a57ac758f671afdc3d53a1599056b78df91044d"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 2916352
+    },
+    {
+      "tag": "gh_L128_b2.5_k1_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 2.5,
+      "seed": 11136234,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:04:03.875636+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.5",
+        "2.5",
+        "11136234",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c0"
+      ],
+      "memory_free_pct": 85,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76213,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:04:41.812016+00:00",
+      "seconds": 37.93622854199202,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c0.f32",
+          "bytes": 10485760,
+          "sha256": "b97e1f0bd40d1cc983ab253eee26c099fd8c5ed15ff74103d4baaa9017a77075"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c0.csv",
+          "bytes": 120371,
+          "sha256": "bcbdf614b56190448fc6842c500246f7964a43451c1dc02a7066c1fa1bb67b7e",
+          "small_copy": "gh_L128_b2.5_k1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c0.therm.csv",
+          "bytes": 2032,
+          "sha256": "977852aa3ce2102456f6c94d1990eacf232f70c5195609d4d261626de8159231",
+          "small_copy": "gh_L128_b2.5_k1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "9c1c026e61d500be3b1a1e953041ebc6c95507da7ec1d734b4dccb50a2d1cca4"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.5_k1_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 2.5,
+      "seed": 11137243,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:04:41.847525+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.5",
+        "2.5",
+        "11137243",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76241,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:05:19.801320+00:00",
+      "seconds": 37.95366354100406,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c1.f32",
+          "bytes": 10485760,
+          "sha256": "685f93fccf559ca410c572ce54eaf33cf4b9213c286b04d7b2a6c522e1d17c58"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c1.csv",
+          "bytes": 120352,
+          "sha256": "9fc3272f9af3e2cf6a4124d8e153742834675701db7d9e6f5413a2444728f6cf",
+          "small_copy": "gh_L128_b2.5_k1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c1.therm.csv",
+          "bytes": 2034,
+          "sha256": "34d6f3d1424bd01bf36bf86627854321ed6c289f00941bb6da7a72dc6a821839",
+          "small_copy": "gh_L128_b2.5_k1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k1_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "2f53a294d790eff237ce2abb815d79a929eb979ef8344a93af059fcfddd3c6ff"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.5_k4_c0",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 10.0,
+      "seed": 11138252,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:05:19.836530+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.5",
+        "10.0",
+        "11138252",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76288,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:05:57.672853+00:00",
+      "seconds": 37.83618479198776,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c0.f32",
+          "bytes": 10485760,
+          "sha256": "53b57afeac636404ae0dd2f7fd805ae24a652fd68433c384acfae5c4824aedaf"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c0.csv",
+          "bytes": 120347,
+          "sha256": "0095c3b2b262941ecefb3dcdebab45c21dae29a47fc3a3ebe9fa92e18e60104e",
+          "small_copy": "gh_L128_b2.5_k4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c0.therm.csv",
+          "bytes": 2024,
+          "sha256": "94f4a1817e3a7a3638b8005d56235ec5bee0c4f3100783d5c1d5440d2a1d5e02",
+          "small_copy": "gh_L128_b2.5_k4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "1364558cbda20422709a502514b00c18deae4f376f18ff86c3ed24eaadb59e9b"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "gh_L128_b2.5_k4_c1",
+      "model": "gh",
+      "L": 128,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 10.0,
+      "seed": 11139261,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:05:57.710754+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "128",
+        "4",
+        "2.5",
+        "10.0",
+        "11139261",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76311,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:06:35.630021+00:00",
+      "seconds": 37.919106417000876,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c1.f32",
+          "bytes": 10485760,
+          "sha256": "2107087be9ba8100640d8325f1286f9b25169d1ab8edaa154c7e36097d3292c8"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c1.csv",
+          "bytes": 120390,
+          "sha256": "5433e0470a18dfcba979eb2ad169a7d2027b39da4faa692e7346cddcb13e1819",
+          "small_copy": "gh_L128_b2.5_k4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c1.therm.csv",
+          "bytes": 2033,
+          "sha256": "4fae218370cc12d2c558bb20152b9a7bc7eab4ece9a61fbcf65d29fa531c8ffc",
+          "small_copy": "gh_L128_b2.5_k4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L128_b2.5_k4_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "83a3a598c69a4d2f2ab51f7cde77adda3b027a4dfd1e5e0234a81cbe610d6e2c"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3948544
+    },
+    {
+      "tag": "gh_L192_b2.5_k-1_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": -1,
+      "seed": 11140270,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:06:35.665297+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.5",
+        "-1",
+        "11140270",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76392,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:07:14.091124+00:00",
+      "seconds": 38.4257129579928,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c0.f32",
+          "bytes": 15728640,
+          "sha256": "51ea3caa3839a8cb4342a7115f4c6412d6b132efdc9b49aac5fe03256221459a"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c0.csv",
+          "bytes": 118089,
+          "sha256": "b5be2bbc98100d21992e4661bb15f5df7757b9c79ccb80e7cf8492c72b59469a",
+          "small_copy": "gh_L192_b2.5_k-1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c0.therm.csv",
+          "bytes": 1987,
+          "sha256": "b01826ad92df3e086a9c660c30c369b16e95c14a835c7e0567fbb7f11c49ae4e",
+          "small_copy": "gh_L192_b2.5_k-1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c0.cfg",
+          "bytes": 2359296,
+          "sha256": "3dba506d93f66dc45f9b30ea332ceae0a34f93891f4a9f8faacebe88a660b1be"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 4571136
+    },
+    {
+      "tag": "gh_L192_b2.5_k-1_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": -1,
+      "seed": 11141279,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:07:14.128622+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.5",
+        "-1",
+        "11141279",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76463,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:07:52.544089+00:00",
+      "seconds": 38.4260947080038,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c1.f32",
+          "bytes": 15728640,
+          "sha256": "0b11829bbebb99521355c590f3b4262722eba5f4910bef997a6a2f0734ab7730"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c1.csv",
+          "bytes": 118151,
+          "sha256": "dad6baaf5b5c4dc1246af8bcfe9639e69bbff49caac1ec4abf3c1ccb51b62ec2",
+          "small_copy": "gh_L192_b2.5_k-1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c1.therm.csv",
+          "bytes": 1993,
+          "sha256": "c9128a7c65e2aca002313683a1368a71f1180b44d9336d1b8c9935d12a2ebf1e",
+          "small_copy": "gh_L192_b2.5_k-1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k-1_c1.cfg",
+          "bytes": 2359296,
+          "sha256": "795bdcb08b081c1414570cbbb84fac67d0ef00320381ea6b811f44a717eb84af"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 4571136
+    },
+    {
+      "tag": "gh_L192_b2.5_k1_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 2.5,
+      "seed": 11142288,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:07:52.581650+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.5",
+        "2.5",
+        "11142288",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76477,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:09:18.125995+00:00",
+      "seconds": 85.54544724999869,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c0.f32",
+          "bytes": 15728640,
+          "sha256": "63001c99f15f60917103c35643f0ec46a5fca628c2aff84e4f518568f2382e6d"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c0.csv",
+          "bytes": 120392,
+          "sha256": "7a7127a79b1b98f3f2bd432519c5ab937f2a26a78a588db0df72552dcf3a9109",
+          "small_copy": "gh_L192_b2.5_k1_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c0.therm.csv",
+          "bytes": 2022,
+          "sha256": "b73622c0837b7b73962c70f569e8545734a678338dde34feb52412d08225c6d0",
+          "small_copy": "gh_L192_b2.5_k1_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c0.cfg",
+          "bytes": 4718592,
+          "sha256": "e3e3e000cf93fed42a386043cc41c7e0ac3f93a60416a9bc091478cc9fd388fd"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.5_k1_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 2.5,
+      "seed": 11143297,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:09:18.166195+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.5",
+        "2.5",
+        "11143297",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76542,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:10:43.896317+00:00",
+      "seconds": 85.73014712501026,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c1.f32",
+          "bytes": 15728640,
+          "sha256": "d97e972b10b6dd4512a74031c993dfc573099f569f4a56b3bba254ddf6bdb6f5"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c1.csv",
+          "bytes": 120347,
+          "sha256": "825d2392a6b9ad8efcba45716618fc1423f8f5ab8ebf710271eb7b2c2070231f",
+          "small_copy": "gh_L192_b2.5_k1_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c1.therm.csv",
+          "bytes": 2029,
+          "sha256": "8c7ae7ad9dd981bb589736a40bcbd726128444fb11dee03962acf4eb95321918",
+          "small_copy": "gh_L192_b2.5_k1_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k1_c1.cfg",
+          "bytes": 4718592,
+          "sha256": "e759a0eb2faaf6c86f8223f6c3e3be353fc982f09024cb1c927290cb775e0e15"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.5_k4_c0",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 10.0,
+      "seed": 11144306,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:10:43.934753+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.5",
+        "10.0",
+        "11144306",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76590,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:12:08.958114+00:00",
+      "seconds": 85.02339712499816,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c0.f32",
+          "bytes": 15728640,
+          "sha256": "42e51303f4adaa64c85b34ac4eff14e66df3f6eafc2f811cc13cd3ede8dacce0"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c0.csv",
+          "bytes": 120366,
+          "sha256": "f9321b45d7c3070ed76b134af550e727a9172d9469607b52af4d8cfb8905a3f2",
+          "small_copy": "gh_L192_b2.5_k4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c0.therm.csv",
+          "bytes": 2042,
+          "sha256": "177a83a756430025648df60dbb438810c2d404189a039aad42652bcd1bd0e46f",
+          "small_copy": "gh_L192_b2.5_k4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c0.cfg",
+          "bytes": 4718592,
+          "sha256": "8c02866618b05104aeeb4e22161a75868c4133d4e72d1f313f96714ff646925c"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "gh_L192_b2.5_k4_c1",
+      "model": "gh",
+      "L": 192,
+      "T": 4,
+      "beta": 2.5,
+      "coupling": 10.0,
+      "seed": 11145315,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:12:08.996311+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "gh",
+        "192",
+        "4",
+        "2.5",
+        "10.0",
+        "11145315",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76682,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:13:33.944611+00:00",
+      "seconds": 84.94835145799152,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.f32",
+          "bytes": 15728640,
+          "sha256": "ff484f0d82bb570f838dfb38d5eed57cfc59fec335d53e1e435cf1e639f39e08"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.csv",
+          "bytes": 120377,
+          "sha256": "76f2b777d87a9d738696c56c830e2db006a99d3b42040b49ff9caa61cdcfeb34",
+          "small_copy": "gh_L192_b2.5_k4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.therm.csv",
+          "bytes": 2029,
+          "sha256": "ece9f1bb2b71a3cab52c42cc539dcc8b196e29afc591a9451744a648e69b3fe1",
+          "small_copy": "gh_L192_b2.5_k4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.5_k4_c1.cfg",
+          "bytes": 4718592,
+          "sha256": "8f969d7234b6d302f02bed041928a0730d12272f6ee0e0d26242234402375ea3"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 6946816
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.024_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.024,
+      "seed": 11210000,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:18:07.543530+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "0.024",
+        "11210000",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0"
+      ],
+      "memory_free_pct": 85,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76900,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:18:42.581009+00:00",
+      "seconds": 35.037243167011184,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.f32",
+          "bytes": 10485760,
+          "sha256": "97bbb565b6db10aee3d83a3e07e9db859be2042e04594f45c07cfb978c2f1de3"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.csv",
+          "bytes": 118156,
+          "sha256": "bd19e85322130a1ec313a583486fd345745d8a74c4ed6110004938f1d6dc5ad3",
+          "small_copy": "p4_L128_T4_b2.4_k0.024_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.therm.csv",
+          "bytes": 1988,
+          "sha256": "41687753d0dcdca10883b91bdfe982abc8d1ea1a31d240500d2158b1e67f8574",
+          "small_copy": "p4_L128_T4_b2.4_k0.024_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "eea21b89b5f29b9a87c5472a416b7902adf6b3b3bb577ef7e1a1bf94cb6e5533"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3948544
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.024_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.024,
+      "seed": 11211009,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:18:42.615704+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "0.024",
+        "11211009",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76923,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:19:17.908959+00:00",
+      "seconds": 35.29322545800824,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c1.f32",
+          "bytes": 10485760,
+          "sha256": "7bee36b13759a64a4333a5e7720f75e6984956b7b3d7e39f82be0411b4db32ad"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c1.csv",
+          "bytes": 118133,
+          "sha256": "7fbcd03891b2e29c90947c23429a574f835fa0f40ea1d573241b4d0c144409b9",
+          "small_copy": "p4_L128_T4_b2.4_k0.024_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c1.therm.csv",
+          "bytes": 1989,
+          "sha256": "3730d32fb8c925d100a7fe0c7b25e612a21d276f66fb635369fc61621666e005",
+          "small_copy": "p4_L128_T4_b2.4_k0.024_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "bc941881aee35327e8c98e3f3f0c6a503ccb42cdb5191ddadb4fcd9d03b2d128"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.24_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11212018,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:19:17.944537+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "0.24",
+        "11212018",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76948,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:19:53.305428+00:00",
+      "seconds": 35.360856832994614,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c0.f32",
+          "bytes": 10485760,
+          "sha256": "0d7c7337c8b92373a84e95565d20cf29d9a0442701098db8fd2158b411f1ed4d"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c0.csv",
+          "bytes": 118080,
+          "sha256": "120d292e2b43ae178c1d25f2977a058c25b5ef075b945ab8fe55202a43d753f7",
+          "small_copy": "p4_L128_T4_b2.4_k0.24_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c0.therm.csv",
+          "bytes": 1990,
+          "sha256": "b77209f90523589a98efde5443f27264f7f3c10f0db42e7b88e1d31ba450339e",
+          "small_copy": "p4_L128_T4_b2.4_k0.24_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "96ef8bb9061c39b374c398167051627917b38acd9b0a0b3c2b6b84daa3880000"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.24_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11213027,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:19:53.340251+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "0.24",
+        "11213027",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76958,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:20:28.766174+00:00",
+      "seconds": 35.425896457993076,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c1.f32",
+          "bytes": 10485760,
+          "sha256": "caddda2faf01b429ce8967dd25eb93718255dbda877b0d3764bb0863eb3fa83e"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c1.csv",
+          "bytes": 118091,
+          "sha256": "a3a1ef68c5f5ecf487965c6df5fcfd6da2172e6438f801d9fe51c1e5aa0dbc5b",
+          "small_copy": "p4_L128_T4_b2.4_k0.24_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c1.therm.csv",
+          "bytes": 1990,
+          "sha256": "8bce836aed7a18f45ba3fa6cb101238ef19c56e2cb172fa7835b16a728c2084c",
+          "small_copy": "p4_L128_T4_b2.4_k0.24_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.24_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "6dfd427d3e99ca1331b079c9cc26191425206a5cb2fcd503fe66646017b125a4"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k1.2_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11214036,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:20:28.801430+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "1.2",
+        "11214036",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 76986,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:21:04.221033+00:00",
+      "seconds": 35.41956829201081,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c0.f32",
+          "bytes": 10485760,
+          "sha256": "b0d2a2c4b7f2aa8297975b48b61f789c159cf885e037dc82242c931a702da935"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c0.csv",
+          "bytes": 118165,
+          "sha256": "72b824f8bee22759c29e3aa213693e35a3abf60fbfb9895d1a8c644639ef068e",
+          "small_copy": "p4_L128_T4_b2.4_k1.2_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c0.therm.csv",
+          "bytes": 1987,
+          "sha256": "eb2b721f81aca1031091d253faeb27ac0babf25dd42a2fe935a47abac2c0d4f5",
+          "small_copy": "p4_L128_T4_b2.4_k1.2_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "1c788915e332e4eba0b58aa7eebab8cfb476eafe846c646287d2919a04b860b1"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k1.2_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11215045,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:21:04.256332+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "1.2",
+        "11215045",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c1"
+      ],
+      "memory_free_pct": 85,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77004,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:21:39.698616+00:00",
+      "seconds": 35.44224525000027,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c1.f32",
+          "bytes": 10485760,
+          "sha256": "3b29a1afc21c475c360ec41160b6db8308f477f7b8f7b17a3c9be4d6bbe983dc"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c1.csv",
+          "bytes": 118169,
+          "sha256": "9791ef5f40ffa0d568a48679d26c84e75ba409cd1bb94d5c7970b4b648625df7",
+          "small_copy": "p4_L128_T4_b2.4_k1.2_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c1.therm.csv",
+          "bytes": 1987,
+          "sha256": "4a7e840308d8513b494b0cd48c062f4140ddfc9bfb5c9a3048ecc8aba592897e",
+          "small_copy": "p4_L128_T4_b2.4_k1.2_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k1.2_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "f9b8c4fddc3b499c08eedd572ac1344f393d87e7503d29b0eabb87f35047aa8c"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k2.4_c0",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11216054,
+      "hot": 0,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:21:39.733549+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "2.4",
+        "11216054",
+        "0",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77035,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:22:15.179992+00:00",
+      "seconds": 35.44639520801138,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c0.f32",
+          "bytes": 10485760,
+          "sha256": "e43d1b0e525c6fe0c0f508c856cfce2896dd66e58a6b40aa69bbbe5a0c0a7912"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c0.csv",
+          "bytes": 118146,
+          "sha256": "113293f0253169b0b049de459a03d8d14a2a5ce247cc6b25ca3cb71b229aa666",
+          "small_copy": "p4_L128_T4_b2.4_k2.4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c0.therm.csv",
+          "bytes": 1991,
+          "sha256": "aaab8aad36f7dd4cc5f03cd4277a0d141be6d69c3b43fc73db9bd673a7405aab",
+          "small_copy": "p4_L128_T4_b2.4_k2.4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c0.cfg",
+          "bytes": 2097152,
+          "sha256": "10d02ad48131b1b4cf4d6706439af7c4987594dce7ecf2ae4e4e48674cabf21a"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k2.4_c1",
+      "model": "p4",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11217063,
+      "hot": 1,
+      "burn": 1024,
+      "samples": 2048,
+      "stride": 1,
+      "started": "2026-11-17T13:22:15.214530+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+        "p4",
+        "128",
+        "4",
+        "2.4",
+        "2.4",
+        "11217063",
+        "1",
+        "1024",
+        "2048",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+      "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77105,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:22:50.634765+00:00",
+      "seconds": 35.42022512499534,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c1.f32",
+          "bytes": 10485760,
+          "sha256": "68f9645490ca7386fd328dc9c14c2e6b67ec69c35673d7a77b30da6df08ad490"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c1.csv",
+          "bytes": 118098,
+          "sha256": "69b6be14df5704ada6021e5baac33b1a6724f1ff95f6c97d6d614490c3faeb32",
+          "small_copy": "p4_L128_T4_b2.4_k2.4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c1.therm.csv",
+          "bytes": 1992,
+          "sha256": "4bad0d21c7850b8007a53a644aed5e99777ba2fdfa60c3ae66f905ba23352183",
+          "small_copy": "p4_L128_T4_b2.4_k2.4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k2.4_c1.cfg",
+          "bytes": 2097152,
+          "sha256": "173652f9ffa9f9cef5491bfc6b378c25bfbc49892037ed49eacfb5572b70f5b2"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 3964928
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11310000,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:24:17.498322+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "0",
+        "11310000",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77175,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:26:36.749649+00:00",
+      "seconds": 139.25056175001373,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c0.f32",
+          "bytes": 5242880,
+          "sha256": "682bb69c7cfe82ec1f826a00b1b5eb0429ea6440598e23acee5d92dfc723e77e"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c0.csv",
+          "bytes": 59070,
+          "sha256": "dcd66d889e82b4b2582a2ab8cea24417144790a7510d01c6801551209ded9ecf",
+          "small_copy": "face_L128_T4_b2.4_k0_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c0.therm.csv",
+          "bytes": 1001,
+          "sha256": "a1398a5e4663347ca0e4c9cb797d68d78640b98274499588763ac523865abdd2",
+          "small_copy": "face_L128_T4_b2.4_k0_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c0.cfg",
+          "bytes": 16777216,
+          "sha256": "c8d46e319b811dbea8b63b169c693020f87cb7bd2ca4dfbe376bab6f566da151"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18677760
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11311009,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:26:36.788563+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "0",
+        "11311009",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77245,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:28:56.054599+00:00",
+      "seconds": 139.26580541599833,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c1.f32",
+          "bytes": 5242880,
+          "sha256": "bce76122246a90c3db5febb5eabcfc01ddbfedfddb862d5d730c95a20e2ac832"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c1.csv",
+          "bytes": 59084,
+          "sha256": "7c8b50d7ead06af38a9841e8e8b3a8e71905258e566d60e1f07358889a46ac2e",
+          "small_copy": "face_L128_T4_b2.4_k0_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c1.therm.csv",
+          "bytes": 1001,
+          "sha256": "11130aaa95e1298acb667f86c8d51b97dc4c767dda8599bb38b9f5e2a6c9d12a",
+          "small_copy": "face_L128_T4_b2.4_k0_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0_c1.cfg",
+          "bytes": 16777216,
+          "sha256": "6088907b90a2c97c0e75918911429626b1205e7f2a9d8bebc6b525ffd96a587f"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18661376
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0.24_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11312018,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:28:56.092945+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "0.24",
+        "11312018",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77374,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:31:39.941612+00:00",
+      "seconds": 163.84845008300908,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c0.f32",
+          "bytes": 5242880,
+          "sha256": "c521815f1c8eec0a85a8d67b184eff5b3416b0699aab219803cccf3e79e50fb3"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c0.csv",
+          "bytes": 59069,
+          "sha256": "4d5faa9822ed94d47bba8dd0e13a96910d462eea01027f433461f3bfb3eebfaf",
+          "small_copy": "face_L128_T4_b2.4_k0.24_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c0.therm.csv",
+          "bytes": 1003,
+          "sha256": "1e46c75ce009c839dc5c7bba15262508f16f6b9c5b88d7399bac95e6746d44a1",
+          "small_copy": "face_L128_T4_b2.4_k0.24_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c0.cfg",
+          "bytes": 16777216,
+          "sha256": "f786596141a6fdb72117710f8ed1033f6028eff483e07bf0de201e6e0f932f80"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18661376
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0.24_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11313027,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:31:39.979925+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "0.24",
+        "11313027",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77451,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:34:24.580011+00:00",
+      "seconds": 164.59984633300337,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c1.f32",
+          "bytes": 5242880,
+          "sha256": "6517806e1553c39c80cdd492448a5c781cb7cf63cbd6b0148355c8e1647d00a7"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c1.csv",
+          "bytes": 59090,
+          "sha256": "b95dfc1ec0a1ceb31847c7b793cdc9eae1679450ca1f0edbeff924d9631d11c4",
+          "small_copy": "face_L128_T4_b2.4_k0.24_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c1.therm.csv",
+          "bytes": 1007,
+          "sha256": "a0b19f3fb2b6b35f3d16eaf5f6dfd898c1846c981418388857b1e5a8efd68a6b",
+          "small_copy": "face_L128_T4_b2.4_k0.24_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k0.24_c1.cfg",
+          "bytes": 16777216,
+          "sha256": "470879fe7fa9bca36170b3c3cbee625c9cc18593e2edef3bdbc1d3baa409e406"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18661376
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k1.2_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11314036,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:34:24.618870+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "1.2",
+        "11314036",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77591,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:37:08.967877+00:00",
+      "seconds": 164.34877566600335,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c0.f32",
+          "bytes": 5242880,
+          "sha256": "c7e425838438fbd81c349f9b8ce302ef06b74ef4e3a8b4704d4c59d601cbb337"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c0.csv",
+          "bytes": 59045,
+          "sha256": "f30a99ecb9a27e204ff3beefc29586aa17f5586523cfb661d7da6c9c7d8e34e1",
+          "small_copy": "face_L128_T4_b2.4_k1.2_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c0.therm.csv",
+          "bytes": 1007,
+          "sha256": "9c45bc0bdbd2d1f0d813963cea442ee1c933f26073fa2e26c5f027443b6e2c15",
+          "small_copy": "face_L128_T4_b2.4_k1.2_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c0.cfg",
+          "bytes": 16777216,
+          "sha256": "1616271d4dd24573098eb089ba9e4d745308394ce259fc6b056e5ab666874318"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18661376
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k1.2_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11315045,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:37:09.006495+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "1.2",
+        "11315045",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77699,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:39:53.557478+00:00",
+      "seconds": 164.4788360419916,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c1.f32",
+          "bytes": 5242880,
+          "sha256": "7c4ec5c0cca234bf664f37d312fac19bb443a8a679102f5a8bda7666e9b87395"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c1.csv",
+          "bytes": 59094,
+          "sha256": "6ca46f76e5a873c25ebce36956aaa304362d42bd0a55b495fd8e87ce624c66ee",
+          "small_copy": "face_L128_T4_b2.4_k1.2_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c1.therm.csv",
+          "bytes": 1007,
+          "sha256": "6fd75e32d874a0aa4c014905671bed7676c8e712dedb4dd7f3d6a2dad96b559d",
+          "small_copy": "face_L128_T4_b2.4_k1.2_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k1.2_c1.cfg",
+          "bytes": 16777216,
+          "sha256": "cc398047b41f3ee141d3ea81fdcabd72a360c346a77264d9537b2752fd228d3b"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18661376
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k2.4_c0",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11316054,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:39:53.596663+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "2.4",
+        "11316054",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77791,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:42:38.005055+00:00",
+      "seconds": 164.40600395799265,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c0.f32",
+          "bytes": 5242880,
+          "sha256": "77f967e60387ed3db30e2c32faa1cce84fddb423da9ceb1900e1b757a1aa4788"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c0.csv",
+          "bytes": 59036,
+          "sha256": "130f7273d0a47a8b8ea752fd895daf5bd61b79f968d32e98805472d1740b37c9",
+          "small_copy": "face_L128_T4_b2.4_k2.4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c0.therm.csv",
+          "bytes": 1004,
+          "sha256": "d2efbbed1abcd17cab9ddeebff1c8a50330d67f5d7401275df8d23811c2edae1",
+          "small_copy": "face_L128_T4_b2.4_k2.4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c0.cfg",
+          "bytes": 16777216,
+          "sha256": "8fb12ec8bd1281f8e743ad5affd3d037910c4e2e52f2962d40165c37c17c3084"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18644992
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k2.4_c1",
+      "model": "face",
+      "L": 128,
+      "T": 4,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11317063,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:42:38.043901+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "4",
+        "2.4",
+        "2.4",
+        "11317063",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 77924,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:45:22.311075+00:00",
+      "seconds": 164.2647466250055,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c1.f32",
+          "bytes": 5242880,
+          "sha256": "83069a7bb85c251915f47263d89259867f4c930d04bc056ea8dd6a63330b872c"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c1.csv",
+          "bytes": 59062,
+          "sha256": "3aca1aad3cfbd69868d6820184d3db1c3dd8a8d86f955db05ca4feef23663db4",
+          "small_copy": "face_L128_T4_b2.4_k2.4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c1.therm.csv",
+          "bytes": 1005,
+          "sha256": "2a03c1773448eaa690c15e813719246a6749add97622b09bc2dd1112fda3df7b",
+          "small_copy": "face_L128_T4_b2.4_k2.4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T4_b2.4_k2.4_c1.cfg",
+          "bytes": 16777216,
+          "sha256": "5ef72b7412b6f7585ba5e78ab3f7a87c4f19d59c3358de412c69d99955161167"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 18661376
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11318072,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:45:22.350199+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "0",
+        "11318072",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 78022,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:50:37.890901+00:00",
+      "seconds": 315.5362153340102,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c0.f32",
+          "bytes": 5242880,
+          "sha256": "ee1a8c091549d5f9a905bcdd2f50cd405cf694582c7c707a42d939a5668b1c8d"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c0.csv",
+          "bytes": 59057,
+          "sha256": "aba62daee916fc33d85cce7711722cbbc95720f77cb7fd302ca0c5417f34ee9c",
+          "small_copy": "face_L128_T6_b2.4_k0_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c0.therm.csv",
+          "bytes": 1006,
+          "sha256": "f5c2dc31b3f7fb527165901b4ac968bba0191f43250771cc4dfe741880b9dfd8",
+          "small_copy": "face_L128_T6_b2.4_k0_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c0.cfg",
+          "bytes": 37748736,
+          "sha256": "9431c65bdf074eb6c522dc186d1a39aa5905f1b21e1d91b2c4a83d5265f3de56"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39632896
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0,
+      "seed": 11319081,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:50:37.936690+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "0",
+        "11319081",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 78225,
+      "exit_code": 0,
+      "ended": "2026-11-17T13:55:53.289734+00:00",
+      "seconds": 315.3485622090084,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c1.f32",
+          "bytes": 5242880,
+          "sha256": "39e521e55669de222354d6027084f42e87842327924574775f02d1d5bd1b98eb"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c1.csv",
+          "bytes": 59067,
+          "sha256": "c1193d9468c6771f4733327bfb6aeb2bc24251ad89f06f3600f2b45ca5faaba6",
+          "small_copy": "face_L128_T6_b2.4_k0_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c1.therm.csv",
+          "bytes": 1010,
+          "sha256": "8ce18e653f89d1eb8f3db76a0069e95424ffc35176add4b5a7d9cc63b1f2adcb",
+          "small_copy": "face_L128_T6_b2.4_k0_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0_c1.cfg",
+          "bytes": 37748736,
+          "sha256": "e9014df0c5dd0d22922b526b5d5b0ff864b1603d8d2d50e6c21875172a902bec"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39616512
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0.24_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11320090,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T13:55:53.335772+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "0.24",
+        "11320090",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 78421,
+      "exit_code": 0,
+      "ended": "2026-11-17T14:02:04.879918+00:00",
+      "seconds": 371.53890933300136,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.f32",
+          "bytes": 5242880,
+          "sha256": "1835af9cdb437ffe276b8c65ff0b5d2c58509e3d23b2b3e21096f820e257317d"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.csv",
+          "bytes": 59067,
+          "sha256": "b76081db0af4bac7fc863b0bc62ed9a2a0619c214854c362b4ea3dc5cf9b026a",
+          "small_copy": "face_L128_T6_b2.4_k0.24_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.therm.csv",
+          "bytes": 1006,
+          "sha256": "8e2d6b945b4d243f371d4a54e0229bbc00a83e01dddbdb9fd28265bc2db16d84",
+          "small_copy": "face_L128_T6_b2.4_k0.24_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c0.cfg",
+          "bytes": 37748736,
+          "sha256": "c31e056bd5fe50aeba563e59c13b3704e06e50bfb872b4917af9295dcd4c8359"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39616512
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0.24_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 0.24,
+      "seed": 11321099,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T14:02:04.927434+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "0.24",
+        "11321099",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c1"
+      ],
+      "memory_free_pct": 85,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 78709,
+      "exit_code": 0,
+      "ended": "2026-11-17T14:08:17.556889+00:00",
+      "seconds": 372.6291622080025,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c1.f32",
+          "bytes": 5242880,
+          "sha256": "72032e228dc06c177f9153d9f7655ebd6ef8113db4e2425dcea9d4edff4f5c2e"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c1.csv",
+          "bytes": 59072,
+          "sha256": "9f64e30b7f1af1d4d403aeb968b6ef5f1c1c8680f31f2cc91efddd85cee7e950",
+          "small_copy": "face_L128_T6_b2.4_k0.24_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c1.therm.csv",
+          "bytes": 1004,
+          "sha256": "8ad2fe53de43f906811aeb92606e60b7ea57c55db0779ca132de74f0216f58e6",
+          "small_copy": "face_L128_T6_b2.4_k0.24_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k0.24_c1.cfg",
+          "bytes": 37748736,
+          "sha256": "8f16efab2a0a8d20b7a0ce83e6da050d3579e7586845467eb0f34ca19add86be"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39632896
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k1.2_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11322108,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T14:08:17.603331+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "1.2",
+        "11322108",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 78946,
+      "exit_code": 0,
+      "ended": "2026-11-17T14:14:30.017513+00:00",
+      "seconds": 372.4094495419995,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c0.f32",
+          "bytes": 5242880,
+          "sha256": "21b36a2e287a3a2ced4b91498a5e25924ac0eaf4b3620b9c7eb1db0ae5916f70"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c0.csv",
+          "bytes": 59052,
+          "sha256": "741315d1c114dd88e912918209147608290b07b973029d255dde378bf6ef55c0",
+          "small_copy": "face_L128_T6_b2.4_k1.2_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c0.therm.csv",
+          "bytes": 1008,
+          "sha256": "a8f1531afd5f9773f9365ba620a856695fd6537f3b2379f5909be840fc74b9ef",
+          "small_copy": "face_L128_T6_b2.4_k1.2_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c0.cfg",
+          "bytes": 37748736,
+          "sha256": "3dd498ccda98e44cd8b55a1b4ae83f632b3ffd4c354606408477319b097d2228"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39632896
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k1.2_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 1.2,
+      "seed": 11323117,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T14:14:30.063908+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "1.2",
+        "11323117",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 79170,
+      "exit_code": 0,
+      "ended": "2026-11-17T14:20:43.780224+00:00",
+      "seconds": 373.71155037499557,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c1.f32",
+          "bytes": 5242880,
+          "sha256": "c83cda280a8d79a494297fb5b45ca02f5b8f174804e002d1efdc65cd1955d809"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c1.csv",
+          "bytes": 59073,
+          "sha256": "a9c19239ccd5dc783c83073389293c2007ae0850d23b94f66cb857be5daced93",
+          "small_copy": "face_L128_T6_b2.4_k1.2_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c1.therm.csv",
+          "bytes": 1003,
+          "sha256": "06b519e46b02e5ed6109353e83ce88fde02c90bfd2862d9e4b78f86552f3f373",
+          "small_copy": "face_L128_T6_b2.4_k1.2_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k1.2_c1.cfg",
+          "bytes": 37748736,
+          "sha256": "814ea89013d0c8a7740f78b8845b9ef381b2f0b60fdcb24dd1db39631d7720df"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39632896
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k2.4_c0",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11324126,
+      "hot": 0,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T14:20:43.828627+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "2.4",
+        "11324126",
+        "0",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c0"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 79410,
+      "exit_code": 0,
+      "ended": "2026-11-17T14:26:57.105837+00:00",
+      "seconds": 373.27246041699254,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c0.f32",
+          "bytes": 5242880,
+          "sha256": "3db795ebc39ad51ea698d2ec3c31d83b6097503331b60d69646487d88339c4bf"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c0.csv",
+          "bytes": 59065,
+          "sha256": "79a221284067e41a402afa3c7c603167de5bcc5d87c254b2835fd463bfc3c2e6",
+          "small_copy": "face_L128_T6_b2.4_k2.4_c0.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c0.therm.csv",
+          "bytes": 1002,
+          "sha256": "e3224587feb7a9e3e88a254bfcd990259d5ec09987f278957929696d24a6f711",
+          "small_copy": "face_L128_T6_b2.4_k2.4_c0.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c0.cfg",
+          "bytes": 37748736,
+          "sha256": "96efe0ebe7ff76671f14a95b06dd02503a321d2d83a3ec462467c9a70cfb7c71"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39632896
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k2.4_c1",
+      "model": "face",
+      "L": 128,
+      "T": 6,
+      "beta": 2.4,
+      "coupling": 2.4,
+      "seed": 11325135,
+      "hot": 1,
+      "burn": 512,
+      "samples": 1024,
+      "stride": 1,
+      "binary": "face_sheets",
+      "source": "face_sheets.cpp",
+      "channels": [
+        "E1",
+        "E8",
+        "E32",
+        "E64",
+        "plaquette"
+      ],
+      "lengths": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "started": "2026-11-17T14:26:57.153774+00:00",
+      "argv": [
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_sheets",
+        "face",
+        "128",
+        "6",
+        "2.4",
+        "2.4",
+        "11325135",
+        "1",
+        "512",
+        "1024",
+        "1",
+        "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c1"
+      ],
+      "memory_free_pct": 86,
+      "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "source_sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af",
+      "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+      "binary_sha256": "f377b3b5465fa9a24a206b01bb64793ace722557893608cef0c7489e36ade3a7",
+      "plan_sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0",
+      "predecessor_reaped": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "pid": 79673,
+      "exit_code": 0,
+      "ended": "2026-11-17T14:33:09.929087+00:00",
+      "seconds": 372.77058808300353,
+      "reaped": true,
+      "records": [
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c1.f32",
+          "bytes": 5242880,
+          "sha256": "1354eec37797d6b4353c4ebfa452b37ed82dd1646ba4ec9c8213ac667e979994"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c1.csv",
+          "bytes": 59066,
+          "sha256": "09fa85cd3648b254f78c844502d3bc91ebb17eb03a4bd426c52fe8bb7f2ed29d",
+          "small_copy": "face_L128_T6_b2.4_k2.4_c1.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c1.therm.csv",
+          "bytes": 999,
+          "sha256": "ef963a4536f883e6d28c51ea131e675c62a4a3bcffcf6ac8e51d37216c1b0811",
+          "small_copy": "face_L128_T6_b2.4_k2.4_c1.therm.csv"
+        },
+        {
+          "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/face_L128_T6_b2.4_k2.4_c1.cfg",
+          "bytes": 37748736,
+          "sha256": "4665e1233f879c0b41de0cdfb79f1c45dbe49f7d77f03109bd4c46b7655fee07"
+        }
+      ],
+      "nice": 20,
+      "peak_rss_bytes": 39632896
+    }
+  ],
+  "details": [
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.3_k-1.json",
+      "bytes": 225165,
+      "sha256": "bb7cd3f40377f93216742b759a26280c2ff5b4094d10139115249d6abcdc0434",
+      "small_copy": "analysis_gh_L128_b2.3_k-1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.3_k1.json",
+      "bytes": 245674,
+      "sha256": "417eae6d1d80935792c35a9b94a3e0e20f452568f977d89ba24f2f28b63affd4",
+      "small_copy": "analysis_gh_L128_b2.3_k1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.3_k4.json",
+      "bytes": 246939,
+      "sha256": "0f7802cc9de4ff458f45687fcfb0f6aa4d83edbcd6c04a6784a2586dacae7361",
+      "small_copy": "analysis_gh_L128_b2.3_k4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.3_k-1.json",
+      "bytes": 295445,
+      "sha256": "13eff837cb32fea233c362fd95563e242a4686b1df44efd6ac1fc4f5dc9d6756",
+      "small_copy": "analysis_gh_L192_b2.3_k-1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.3_k1.json",
+      "bytes": 336776,
+      "sha256": "a8ae0d78c344376c81b8daf095e2c03d230b1348090c033f34b00b8efd08cafc",
+      "small_copy": "analysis_gh_L192_b2.3_k1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.3_k4.json",
+      "bytes": 337161,
+      "sha256": "3f863eaba3692ec407cf71369e7a4d143f0ef288cf9adc9f803c24ea094ed4e8",
+      "small_copy": "analysis_gh_L192_b2.3_k4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.4_k-1.json",
+      "bytes": 225213,
+      "sha256": "18af82e5897a30295441ab7cb6ddf565e18bab4c2098b270db6d6f4738d6d2a6",
+      "small_copy": "analysis_gh_L128_b2.4_k-1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.4_k1.json",
+      "bytes": 245453,
+      "sha256": "c9db7beea2fe32f851f2ef636cf39cc2feadb162a57f9ff7fc3e2de9194ba78e",
+      "small_copy": "analysis_gh_L128_b2.4_k1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.4_k4.json",
+      "bytes": 247340,
+      "sha256": "f4755efedcab5d21c83c12308ce19ec8f94e1abe09be339e78391fe86c54c64a",
+      "small_copy": "analysis_gh_L128_b2.4_k4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.4_k-1.json",
+      "bytes": 295465,
+      "sha256": "3cb478472befa1910bda4913eb8e413aea4b46cc55b867daf33cfa84db0f9486",
+      "small_copy": "analysis_gh_L192_b2.4_k-1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.4_k1.json",
+      "bytes": 336300,
+      "sha256": "ca602e6f660e25895ecda2ad4a9ab07d6f64c21444b9601b0a0ab90ac1233cd3",
+      "small_copy": "analysis_gh_L192_b2.4_k1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.4_k4.json",
+      "bytes": 338921,
+      "sha256": "c5fd45554a5706c6188e039840733fc1d7faef02fdc46a519bba180b01129ac3",
+      "small_copy": "analysis_gh_L192_b2.4_k4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.5_k-1.json",
+      "bytes": 218267,
+      "sha256": "b3ce779435594ab95f1e0547d3b3270d994a8773c7c1da2d2b8fa67067118d4d",
+      "small_copy": "analysis_gh_L128_b2.5_k-1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.5_k1.json",
+      "bytes": 245443,
+      "sha256": "5827c792a5b3f797f8899df122344ae9a7f567a341aefa2e378cb76514b64c4a",
+      "small_copy": "analysis_gh_L128_b2.5_k1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L128_b2.5_k4.json",
+      "bytes": 246801,
+      "sha256": "27e97e180a09e258d63e902352656d666d7ce0e6d241f97bb90a7da21c247f9b",
+      "small_copy": "analysis_gh_L128_b2.5_k4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.5_k-1.json",
+      "bytes": 295222,
+      "sha256": "5b5daec5cf574629086f5d4941ed9cf9c2ca256bd8241de57c504ac003621ea9",
+      "small_copy": "analysis_gh_L192_b2.5_k-1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.5_k1.json",
+      "bytes": 336758,
+      "sha256": "051009f7cf69488ef34f58b6cfb5ecf4fb3967029f4d7da13f5d541310b34dfd",
+      "small_copy": "analysis_gh_L192_b2.5_k1.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_gh_L192_b2.5_k4.json",
+      "bytes": 337938,
+      "sha256": "b153a930c0c32efa5e7f1a9aa8f2125f8843072274cb4d75bbbb4c87fe59a386",
+      "small_copy": "analysis_gh_L192_b2.5_k4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_p4_L128_T4_b2.4_k0.024.json",
+      "bytes": 291019,
+      "sha256": "bed5a11c8debdee568f92d9c6a5a9e6b66206eea644e38c203ea1f1e8b75bd86",
+      "small_copy": "analysis_p4_L128_T4_b2.4_k0.024.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_p4_L128_T4_b2.4_k0.24.json",
+      "bytes": 284867,
+      "sha256": "6211c1dac1842ac80ef816e933784b6f8a25a7fee707ca079908a2152bb9a4a8",
+      "small_copy": "analysis_p4_L128_T4_b2.4_k0.24.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_p4_L128_T4_b2.4_k1.2.json",
+      "bytes": 270012,
+      "sha256": "94ab98e32af347cc0f6f6417026ea647d4bc2231890b2b0196d326232e142bba",
+      "small_copy": "analysis_p4_L128_T4_b2.4_k1.2.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_p4_L128_T4_b2.4_k2.4.json",
+      "bytes": 262350,
+      "sha256": "f0ed26c7014667625b50114c9920dc0f422c36242583986ee59b951418bc1495",
+      "small_copy": "analysis_p4_L128_T4_b2.4_k2.4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T4_b2.4_k0.json",
+      "bytes": 289708,
+      "sha256": "6de74b8496c7603869e49b7ff0419c7aaef194635fd251d80098a1175c95421b",
+      "small_copy": "analysis_face_L128_T4_b2.4_k0.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T4_b2.4_k0.24.json",
+      "bytes": 291992,
+      "sha256": "1211f74613f9deb3ff6fa1b39547186931629c6cb8dd39416ddd0c7c3ed1c41b",
+      "small_copy": "analysis_face_L128_T4_b2.4_k0.24.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T4_b2.4_k1.2.json",
+      "bytes": 277813,
+      "sha256": "5fc65b9a790e46a7dd60b1950fbe1e6f1e77145014d433f9ad44edd9385c6700",
+      "small_copy": "analysis_face_L128_T4_b2.4_k1.2.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T4_b2.4_k2.4.json",
+      "bytes": 265491,
+      "sha256": "030fe81de215f6bf6e80175dd26088144653a1d2b0e8daa241a5de978f221aa2",
+      "small_copy": "analysis_face_L128_T4_b2.4_k2.4.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T6_b2.4_k0.json",
+      "bytes": 297049,
+      "sha256": "2af9feb9c5b2ec05ec92790830991f4c79ff3c0a497130da9e67e54ea6fe27a6",
+      "small_copy": "analysis_face_L128_T6_b2.4_k0.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T6_b2.4_k0.24.json",
+      "bytes": 281176,
+      "sha256": "f424f929d8c9811e574d8dc3a6cacb47702ab66c45e33257338b65876b2b3854",
+      "small_copy": "analysis_face_L128_T6_b2.4_k0.24.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T6_b2.4_k1.2.json",
+      "bytes": 270915,
+      "sha256": "191846d6946886a5f830ae8eddb844013292f3af7d708fe405b91f1fae1e72e0",
+      "small_copy": "analysis_face_L128_T6_b2.4_k1.2.json"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/analysis_face_L128_T6_b2.4_k2.4.json",
+      "bytes": 259703,
+      "sha256": "9392c0379411944014bd7ff5d24e21eae9270851469fad71308d739e30223006",
+      "small_copy": "analysis_face_L128_T6_b2.4_k2.4.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sa_ym4.tex",
+      "bytes": 1989151,
+      "sha256": "d7f77d4da3eb23038250c52468a341281d9ba86b4af21d3371d208a2537d4b6f"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sa_ca_I.tex",
+      "bytes": 10554720,
+      "sha256": "4cb5cb5e0af8dbddbee207926621300350e018c6cf1d6567a753167ce10e6e93"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/automation_lock.py",
+      "bytes": 6008,
+      "sha256": "cfba59d6d9904909fe45225a5de7724d5afbdc0638ab7b416d86120feb856001"
+    },
+    {
+      "path": "/tmp/sa-gap-long-skala.YIk2wV/paper.pdf",
+      "bytes": 215561,
+      "sha256": "f93ada1678863f7d96e4536e64cd4ff39dff62c4c52260b510310ea7ddaea4ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-mc-astra/su2_guarded.cpp",
+      "bytes": 7899,
+      "sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-mc-astra/analyze.py",
+      "bytes": 14988,
+      "sha256": "f50c316e6280794b4d9512e77490bb381ab031f3a25730cdefc28772992cbc40"
+    },
+    {
+      "path": "scripts/lab_ops.py",
+      "bytes": 17054,
+      "sha256": "462b66455683bf6bb11bf1dd451e789ed4a298b6cf06c9109d693cc6ea1e1fd9"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/analyze.py",
+      "bytes": 8646,
+      "sha256": "db9718c43d7123e3c24907a13b625939cbf5a647ad520cfa90a1c2b8422cff70"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/analyze_gh_frozen.py",
+      "bytes": 8482,
+      "sha256": "92c7c241037620ad6d286ca1effe11646459c2f0f9c6625c6995734bd9197be8"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/analyze_p4_frozen.py",
+      "bytes": 8646,
+      "sha256": "db9718c43d7123e3c24907a13b625939cbf5a647ad520cfa90a1c2b8422cff70"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/batch.py",
+      "bytes": 4629,
+      "sha256": "3217b11ecd8c3497a804afd813ba4247a323633086a8ecb21258436874fe2874"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/package_records.py",
+      "bytes": 4325,
+      "sha256": "3cb226985ae9b54c9a8bbe248e81182b7072710e64368337e644c77a0e0f59b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/verify.py",
+      "bytes": 3543,
+      "sha256": "b2327496e0675579021099116afe4ce2d84a096becd5d434f5b150f9b03c6381"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "bytes": 8280,
+      "sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af"
+    },
+    {
+      "path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "bytes": 8213,
+      "sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3"
+    }
+  ],
+  "pilots": [
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_face.cfg",
+      "bytes": 37748736,
+      "sha256": "382a25387d7d7fa16a44a299d9eee183bff740733fd60dd6cf1b137676b02461",
+      "excluded": true
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_face.csv",
+      "bytes": 931,
+      "sha256": "793eb4329dd2ae67e0685a2597972166502cfa571aa46c1cc2a9cbb1a691c5a2",
+      "excluded": true
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_face.f32",
+      "bytes": 81920,
+      "sha256": "65c66aa79eafa694e069c92884c54121767201399553a7df8b6e5e34d86d18ad",
+      "excluded": true
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_face.therm.csv",
+      "bytes": 83,
+      "sha256": "eb3a4dacfa3496e34efd2f391876461d96c60273089fc09a8486083767abcddc",
+      "excluded": true
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_gh.cfg",
+      "bytes": 2097152,
+      "sha256": "39426737948fe38062cdd145f0adb7a335f38050e3fe94d98ef83fa82a09911c",
+      "excluded": true
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_gh.csv",
+      "bytes": 961,
+      "sha256": "5738186d3dfdbe0cd2e5510436b4db9aaa9bdcee12e7837e7f17b98790cf739e",
+      "excluded": true
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_gh.f32",
+      "bytes": 81920,
+      "sha256": "9e5a0edce991377fe1dc2ed27c53a9bd4344420be7cabd894f7bc24e0f07b220",
+      "excluded": true
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/pilot_gh.therm.csv",
+      "bytes": 83,
+      "sha256": "b0960fcc566536795a09194acf41538dae5fc2d6ec352d2ffbafc3424a0b61ee",
+      "excluded": true
+    }
+  ],
+  "phases": [
+    {
+      "phase": "gh",
+      "batch": {
+        "started": "2026-11-17T12:43:13.674904+00:00",
+        "ended": "2026-11-17T13:13:33.952481+00:00",
+        "chains": 36,
+        "all_reaped": true,
+        "controller_nice": 20
+      },
+      "analysis": {
+        "ended": "2026-11-17T13:14:33.637527+00:00",
+        "source_sha256": "92c7c241037620ad6d286ca1effe11646459c2f0f9c6625c6995734bd9197be8",
+        "shared_analysis_sha256": "f50c316e6280794b4d9512e77490bb381ab031f3a25730cdefc28772992cbc40",
+        "batch_sha256": "46a35a51931fa95ecbf3703283838ff6f3d3c2dcf8a507ad9db32dff48661a24",
+        "ensembles": 18,
+        "nice": 20
+      },
+      "verification": {
+        "ended": "2026-11-17T13:13:43.401064+00:00",
+        "path": "independent complex-matrix multiplication",
+        "records": [
+          {
+            "tag": "gh_L128_b2.3_k-1_c1",
+            "max_readout_error": 2.9477488561191478e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "617abd2ad39d524997c2def5b3ae15b5dbc2a84826012cd862b64abb8d35f500"
+          },
+          {
+            "tag": "gh_L128_b2.3_k1_c1",
+            "max_readout_error": 2.977642599155672e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "d84031587a607fa199a8f74253b2c1088ffd960c923fccb1b6340ff097871e6f"
+          },
+          {
+            "tag": "gh_L128_b2.3_k4_c1",
+            "max_readout_error": 2.9756177188922095e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "d0586093b884f8638029c7266f08fe4d227da678d09a4fd8438b3a296fe862f8"
+          },
+          {
+            "tag": "gh_L128_b2.4_k-1_c1",
+            "max_readout_error": 2.9499088616269376e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "7974d561d065ea6b33e0bbd106c9f21fd5eeb9aab5a813b3f129904a547fbe2a"
+          },
+          {
+            "tag": "gh_L128_b2.4_k1_c1",
+            "max_readout_error": 2.9793384093146358e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "939a8c69b6c2673a7311ee112f827dd13cabbe98e7df96363b0f217917e63bc4"
+          },
+          {
+            "tag": "gh_L128_b2.4_k4_c1",
+            "max_readout_error": 2.972674506551698e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "87206aa17f2419b2790f13e0f21608e47b2a6dd2cdabee68280cdeb0e413b456"
+          },
+          {
+            "tag": "gh_L128_b2.5_k-1_c1",
+            "max_readout_error": 2.963680423295756e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "03386efbd7225663320088e48a57ac758f671afdc3d53a1599056b78df91044d"
+          },
+          {
+            "tag": "gh_L128_b2.5_k1_c1",
+            "max_readout_error": 2.9783012278628007e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "2f53a294d790eff237ce2abb815d79a929eb979ef8344a93af059fcfddd3c6ff"
+          },
+          {
+            "tag": "gh_L128_b2.5_k4_c1",
+            "max_readout_error": 2.977712387775e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "83a3a598c69a4d2f2ab51f7cde77adda3b027a4dfd1e5e0234a81cbe610d6e2c"
+          }
+        ],
+        "scientific_status": "GUIDE only, no proof discharge"
+      }
+    },
+    {
+      "phase": "p4",
+      "batch": {
+        "started": "2026-11-17T13:18:07.514774+00:00",
+        "ended": "2026-11-17T13:22:50.640557+00:00",
+        "chains": 8,
+        "all_reaped": true,
+        "controller_nice": 20
+      },
+      "analysis": {
+        "ended": "2026-11-17T13:23:08.395122+00:00",
+        "source_sha256": "db9718c43d7123e3c24907a13b625939cbf5a647ad520cfa90a1c2b8422cff70",
+        "shared_analysis_sha256": "f50c316e6280794b4d9512e77490bb381ab031f3a25730cdefc28772992cbc40",
+        "batch_sha256": "3fc3a16674c7347b4579fc635f3720dccdcc11744d4b7723cdb692ae404a5ad6",
+        "ensembles": 4,
+        "nice": 20
+      },
+      "verification": {
+        "ended": "2026-11-17T13:23:00.112564+00:00",
+        "path": "independent complex-matrix multiplication",
+        "records": [
+          {
+            "tag": "p4_L128_T4_b2.4_k0.024_c1",
+            "max_readout_error": 2.9791183520089248e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "bc941881aee35327e8c98e3f3f0c6a503ccb42cdb5191ddadb4fcd9d03b2d128"
+          },
+          {
+            "tag": "p4_L128_T4_b2.4_k0.24_c1",
+            "max_readout_error": 2.9731222817019898e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "6dfd427d3e99ca1331b079c9cc26191425206a5cb2fcd503fe66646017b125a4"
+          },
+          {
+            "tag": "p4_L128_T4_b2.4_k1.2_c1",
+            "max_readout_error": 2.972421442315465e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "f9b8c4fddc3b499c08eedd572ac1344f393d87e7503d29b0eabb87f35047aa8c"
+          },
+          {
+            "tag": "p4_L128_T4_b2.4_k2.4_c1",
+            "max_readout_error": 2.9768363107862683e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "173652f9ffa9f9cef5491bfc6b378c25bfbc49892037ed49eacfb5572b70f5b2"
+          }
+        ],
+        "scientific_status": "GUIDE only, no proof discharge"
+      }
+    },
+    {
+      "phase": "face",
+      "batch": {
+        "started": "2026-11-17T13:24:17.470200+00:00",
+        "ended": "2026-11-17T14:33:09.947293+00:00",
+        "chains": 16,
+        "all_reaped": true,
+        "controller_nice": 20
+      },
+      "analysis": {
+        "ended": "2026-11-17T14:33:57.862009+00:00",
+        "source_sha256": "db9718c43d7123e3c24907a13b625939cbf5a647ad520cfa90a1c2b8422cff70",
+        "shared_analysis_sha256": "f50c316e6280794b4d9512e77490bb381ab031f3a25730cdefc28772992cbc40",
+        "batch_sha256": "8189a12313ade5c1076ffc3859620bf75544ca6c15a87a5e31facb8310d4917b",
+        "ensembles": 8,
+        "nice": 20
+      },
+      "verification": {
+        "ended": "2026-11-17T14:33:42.600528+00:00",
+        "path": "independent complex-matrix multiplication",
+        "records": [
+          {
+            "tag": "face_L128_T4_b2.4_k0_c1",
+            "max_readout_error": 2.9548593238892806e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "6088907b90a2c97c0e75918911429626b1205e7f2a9d8bebc6b525ffd96a587f"
+          },
+          {
+            "tag": "face_L128_T4_b2.4_k0.24_c1",
+            "max_readout_error": 2.9717251881500317e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "470879fe7fa9bca36170b3c3cbee625c9cc18593e2edef3bdbc1d3baa409e406"
+          },
+          {
+            "tag": "face_L128_T4_b2.4_k1.2_c1",
+            "max_readout_error": 2.9758606800989185e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "cc398047b41f3ee141d3ea81fdcabd72a360c346a77264d9537b2752fd228d3b"
+          },
+          {
+            "tag": "face_L128_T4_b2.4_k2.4_c1",
+            "max_readout_error": 2.9782389221466588e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "5ef72b7412b6f7585ba5e78ab3f7a87c4f19d59c3358de412c69d99955161167"
+          },
+          {
+            "tag": "face_L128_T6_b2.4_k0_c1",
+            "max_readout_error": 2.9666358036806173e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "e9014df0c5dd0d22922b526b5d5b0ff864b1603d8d2d50e6c21875172a902bec"
+          },
+          {
+            "tag": "face_L128_T6_b2.4_k0.24_c1",
+            "max_readout_error": 2.9711918259067716e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "8f16efab2a0a8d20b7a0ce83e6da050d3579e7586845467eb0f34ca19add86be"
+          },
+          {
+            "tag": "face_L128_T6_b2.4_k1.2_c1",
+            "max_readout_error": 2.9750392926963798e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "814ea89013d0c8a7740f78b8845b9ef381b2f0b60fdcb24dd1db39631d7720df"
+          },
+          {
+            "tag": "face_L128_T6_b2.4_k2.4_c1",
+            "max_readout_error": 2.9763768893964482e-08,
+            "max_norm_error": 6.661338147750939e-16,
+            "configuration_sha256": "4665e1233f879c0b41de0cdfb79f1c45dbe49f7d77f03109bd4c46b7655fee07"
+          }
+        ],
+        "scientific_status": "GUIDE only, no proof discharge"
+      }
+    }
+  ],
+  "production_serial": true,
+  "chains_count": 60,
+  "memory_free_min_pct": 83,
+  "peak_sampler_rss_bytes": 39632896,
+  "actual_nice_values": [
+    20
+  ],
+  "scientific_status": "GUIDE / OPEN only; no proof discharge or mass-gap claim"
+}

@@ -1,0 +1,17 @@
+RLIMIT_AS: current limit exceeds maximum limit; RSS self-check active
+RLIMIT_DATA: current limit exceeds maximum limit; RSS self-check active
+source: 25a86977f538eb6bb104f097c435b44fd42138b7
+arithmetic: exact fractions; two separately assembled systems
+L=3 M=12: exact equations/means/slopes/energy agree; p[0]=3072/7522955; E=4796157/7522955; local zero-mean patch has zero minimizer
+L=5 M=12: exact equations/means/slopes/energy agree; p[0]=5120/10066329; E=4194305/10066329; local zero-mean patch has zero minimizer
+L=7 M=12: exact equations/means/slopes/energy agree; p[0]=229376/515797425; E=157455151/515797425; local zero-mean patch has zero minimizer
+L=5 M=16: exact equations/means/slopes/energy agree; p[0]=81920/2576980377; E=1073741825/2576980377; local zero-mean patch has zero minimizer
+control mu=0, L=3 M=12: constant h, zero slopes and zero energy
+control mu=1, L=3 M=12: constant h, zero slopes and zero energy
+All registered exact scalar checks passed.
+per_element: fine differences match the interface interpolation exactly.
+per_site: the cyclic fine-site KKT equations and every constraint were checked.
+per_mode: no Fourier-mode exhaustion or nonlinear SU(2) calculation was run.
+per_block: all block means and every nonzero interface slope were checked.
+lattice_wide: four finite scalar rings only; arbitrary size is an analytic claim.
+peak RSS: 17186816 bytes; limit: 2147483648 bytes

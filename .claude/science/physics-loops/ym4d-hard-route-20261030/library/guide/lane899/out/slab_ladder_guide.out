@@ -1,0 +1,6 @@
+load 7.90 at start
+Traceback (most recent call last):
+  File "SCRATCH/lane899/scripts/slab_ladder_guide.py", line 30, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+exit 1

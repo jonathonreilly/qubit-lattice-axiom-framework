@@ -1,0 +1,7 @@
+{
+  "reason": "insufficient midpoint signal and unresolved shifted-fit acceptance; restart with eight APE steps and repaired fit criteria",
+  "interrupted_tag": "L12_b2.3_4_c0",
+  "raw_bytes": 4450944,
+  "scratch": "/tmp/sa-gap-descent-mc-astra.C6QR8N/pilot_v1",
+  "completed_chains": 10
+}

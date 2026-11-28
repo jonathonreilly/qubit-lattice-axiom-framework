@@ -1,0 +1,63 @@
+START tw_8_8_2.5 free=52% 17:09:53
+END tw_8_8_2.5 rc=0 rss=82MB 17:13:44 0 tracebacks
+START spec_16_8_2.3 free=48% 17:13:44
+END spec_16_8_2.3 rc=0 rss=70MB 17:15:37 0 tracebacks
+START spec_16_8_2.5 free=52% 17:15:37
+END spec_16_8_2.5 rc=0 rss=70MB 17:17:27 0 tracebacks
+START ti_2_4 free=49% 17:17:27
+END ti_2_4 rc=0 rss=55MB 17:17:52 0 tracebacks
+START ti_3_4 free=50% 17:17:52
+END ti_3_4 rc=0 rss=56MB 17:18:50 0 tracebacks
+START ti_4_4 free=51% 17:18:50
+END ti_4_4 rc=0 rss=56MB 17:19:20 0 tracebacks
+START ti_6_4 free=49% 17:19:20
+END ti_6_4 rc=0 rss=56MB 17:19:54 0 tracebacks
+START ti_8_4 free=47% 17:19:54
+END ti_8_4 rc=0 rss=56MB 17:20:31 0 tracebacks
+START ti_16_4 free=49% 17:20:31
+END ti_16_4 rc=0 rss=57MB 17:21:23 0 tracebacks
+START ti_2_6 free=50% 17:21:23
+END ti_2_6 rc=0 rss=56MB 17:21:58 0 tracebacks
+START ti_3_6 free=49% 17:21:58
+END ti_3_6 (finished under old queue)
+START ti_4_6 free=52% 17:23:11
+END ti_4_6 rc=0 rss=57MB 17:24:01 0 tracebacks
+START ti_16_6 free=68% 17:24:01
+END ti_16_6 rc=0 rss=61MB 17:26:14 0 tracebacks
+START fwti_2_2x2x2 free=72% 17:26:14
+END fwti_2_2x2x2 rc=0 rss=56MB 17:26:34 0 tracebacks
+START fwti_3_2x2x2 free=73% 17:26:34
+END fwti_3_2x2x2 rc=0 rss=56MB 17:27:24 0 tracebacks
+START fwti_4_2x2x2 free=73% 17:27:24
+END fwti_4_2x2x2 rc=0 rss=56MB 17:27:46 0 tracebacks
+START fwti_12_2x2x2 free=73% 17:27:46
+END fwti_12_2x2x2 rc=0 rss=56MB 17:28:10 0 tracebacks
+START fwti_2_4x2x2 free=76% 17:28:10
+END fwti_2_4x2x2 rc=0 rss=56MB 17:28:31 0 tracebacks
+START fwti_3_4x2x2 free=75% 17:28:31
+END fwti_3_4x2x2 rc=0 rss=56MB 17:29:22 0 tracebacks
+START fwti_4_4x2x2 free=76% 17:29:22
+END fwti_4_4x2x2 rc=0 rss=56MB 17:29:45 0 tracebacks
+START fwti_12_4x2x2 free=75% 17:29:45
+END fwti_12_4x2x2 rc=0 rss=56MB 17:30:11 0 tracebacks
+START fwti_2_4x4x2 free=75% 17:30:11
+END fwti_2_4x4x2 rc=0 rss=56MB 17:30:34 0 tracebacks
+START fwti_3_4x4x2 free=75% 17:30:34
+END fwti_3_4x4x2 rc=0 rss=56MB 17:31:29 0 tracebacks
+START fwti_4_4x4x2 free=75% 17:31:29
+END fwti_4_4x4x2 rc=0 rss=56MB 17:31:53 0 tracebacks
+START fwti_12_4x4x2 free=75% 17:31:53
+END fwti_12_4x4x2 rc=0 rss=57MB 17:32:26 0 tracebacks
+START fwti_2_4x4x4 free=75% 17:32:26
+END fwti_2_4x4x4 rc=0 rss=56MB 17:32:51 0 tracebacks
+START fwti_3_4x4x4 free=75% 17:32:51
+END fwti_3_4x4x4 rc=0 rss=56MB 17:33:47 0 tracebacks
+START fwti_4_4x4x4 free=75% 17:33:48
+END fwti_4_4x4x4 rc=0 rss=56MB 17:34:17 0 tracebacks
+START fwti_12_4x4x4 free=74% 17:34:17
+END fwti_12_4x4x4 rc=0 rss=57MB 17:35:01 0 tracebacks
+START fwti_2_3x3x3 free=70% 17:35:01
+END fwti_2_3x3x3 rc=0 rss=56MB 17:35:23 0 tracebacks
+START fwti_3_3x3x3 free=72% 17:35:23
+END fwti_3_3x3x3 rc=0 rss=56MB 17:36:16 0 tracebacks
+START fwti_4_3x3x3 free=73% 17:36:16

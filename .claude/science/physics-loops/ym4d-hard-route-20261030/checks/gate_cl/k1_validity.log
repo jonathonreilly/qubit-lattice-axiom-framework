@@ -1,0 +1,4 @@
+dense: constraint residual 2.6645352591003757e-15 stationarity 7.788214517745473e-14
+Fourier: curl constraint residual 1.1102230246251565e-15
+plaquette angles, dense vs Fourier: max diff 1.6050528961475408e-14 max 0.6012575026448287
+energies 26.478628654192303 26.478628654192228

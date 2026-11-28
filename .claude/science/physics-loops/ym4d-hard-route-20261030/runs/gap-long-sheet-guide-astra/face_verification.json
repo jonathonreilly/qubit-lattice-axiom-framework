@@ -1,0 +1,55 @@
+{
+  "ended": "2026-11-17T14:33:42.600528+00:00",
+  "path": "independent complex-matrix multiplication",
+  "records": [
+    {
+      "tag": "face_L128_T4_b2.4_k0_c1",
+      "max_readout_error": 2.9548593238892806e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "6088907b90a2c97c0e75918911429626b1205e7f2a9d8bebc6b525ffd96a587f"
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k0.24_c1",
+      "max_readout_error": 2.9717251881500317e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "470879fe7fa9bca36170b3c3cbee625c9cc18593e2edef3bdbc1d3baa409e406"
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k1.2_c1",
+      "max_readout_error": 2.9758606800989185e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "cc398047b41f3ee141d3ea81fdcabd72a360c346a77264d9537b2752fd228d3b"
+    },
+    {
+      "tag": "face_L128_T4_b2.4_k2.4_c1",
+      "max_readout_error": 2.9782389221466588e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "5ef72b7412b6f7585ba5e78ab3f7a87c4f19d59c3358de412c69d99955161167"
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0_c1",
+      "max_readout_error": 2.9666358036806173e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "e9014df0c5dd0d22922b526b5d5b0ff864b1603d8d2d50e6c21875172a902bec"
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k0.24_c1",
+      "max_readout_error": 2.9711918259067716e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "8f16efab2a0a8d20b7a0ce83e6da050d3579e7586845467eb0f34ca19add86be"
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k1.2_c1",
+      "max_readout_error": 2.9750392926963798e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "814ea89013d0c8a7740f78b8845b9ef381b2f0b60fdcb24dd1db39631d7720df"
+    },
+    {
+      "tag": "face_L128_T6_b2.4_k2.4_c1",
+      "max_readout_error": 2.9763768893964482e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "4665e1233f879c0b41de0cdfb79f1c45dbe49f7d77f03109bd4c46b7655fee07"
+    }
+  ],
+  "scientific_status": "GUIDE only, no proof discharge"
+}

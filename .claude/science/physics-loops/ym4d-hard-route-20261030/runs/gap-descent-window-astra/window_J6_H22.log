@@ -1,0 +1,51 @@
+VALUE {"beta": 2.6, "beta_T": 2.6, "beta_L": "infinity", "multiplier": 0.0, "gap": 2.2405305454326903, "eigenvalues": [8.383862200277016e-05, 8.920600268202826e-06, 7.20031922815516e-06], "residuals": [5.439766642858194e-15, 4.581784794863255e-15, 7.934756176292803e-16]}
+VALUE {"beta": 2.6, "beta_T": 2.6, "beta_L": 20.8, "multiplier": 8.0, "gap": 2.3332751824672964, "eigenvalues": [6.865214517148091e-05, 6.6577207563627335e-06, 5.126712558883591e-06], "residuals": [5.85414521012135e-16, 2.9429399687980024e-15, 2.9412883592279156e-13]}
+VALUE {"beta": 2.6, "beta_T": 2.6, "beta_L": 10.4, "multiplier": 4.0, "gap": 2.4126099458840007, "eigenvalues": [5.755747641690476e-05, 5.1560670668190294e-06, 3.7781427733490702e-06], "residuals": [5.008210614548211e-16, 2.1445386167209066e-15, 1.472832566082425e-13]}
+VALUE {"beta": 2.6, "beta_T": 2.6, "beta_L": 5.2, "multiplier": 2.0, "gap": 2.5583968319206276, "eigenvalues": [4.300006360344039e-05, 3.32944213496841e-06, 2.1688535507627205e-06], "residuals": [5.443476908819932e-16, 3.903279889013183e-16, 3.043209548559136e-13]}
+VALUE {"beta": 2.6, "beta_T": 2.6, "beta_L": 2.6, "multiplier": 1.0, "gap": 2.8693331429067372, "eigenvalues": [2.9593075247751345e-05, 1.6790148904889232e-06, 8.714765452744488e-07], "residuals": [5.44871929000038e-16, 4.2057933620781087e-16, 2.2584187715833546e-15]}
+VALUE {"beta": 2.3, "beta_T": 2.3, "beta_L": "infinity", "multiplier": 0.0, "gap": 2.1587404043353757, "eigenvalues": [0.0001253687279054185, 1.4476386634763378e-05, 1.126110372731618e-05], "residuals": [5.314554275009242e-15, 7.810330948000262e-16, 1.2244298108455685e-15]}
+Traceback (most recent call last):
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 206, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 205, in main
+    else:run(a.basis,a.betas,a.mults,a.output,a.transverse)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 190, in run
+    ev,U=eigsh(op,k=3,which='LA',tol=3e-11,ncv=16,v0=np.linspace(.9,1.1,len(rows)) if last is None else last)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1778, in eigsh
+    params.iterate()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 591, in iterate
+    self.workd[yslice] = self.OP(self.workd[xslice])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_interface.py", line 262, in matvec
+    y = self._matvec(x)
+        ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_interface.py", line 620, in _matvec
+    return self.__matvec_impl(x)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 188, in matvec
+    def matvec(x):return w*expm_multiply(V,w*x,traceA=-shift*len(rows))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_expm_multiply.py", line 207, in expm_multiply
+    X = _expm_multiply_simple(A, B, traceA=traceA)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_expm_multiply.py", line 277, in _expm_multiply_simple
+    return _expm_multiply_simple_core(A, B, t, mu, m_star, s, tol, balance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_expm_multiply.py", line 295, in _expm_multiply_simple_core
+    B = coeff * A.dot(B)
+                ^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_base.py", line 603, in dot
+    return self @ other
+           ~~~~~^~~~~~~
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_base.py", line 923, in __matmul__
+    return self._matmul_dispatch(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_base.py", line 808, in _matmul_dispatch
+    return self._matmul_vector(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 395, in _matmul_vector
+    fn(M, N, self.indptr, self.indices, self.data, other, result)
+KeyboardInterrupt

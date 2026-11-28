@@ -1,0 +1,15 @@
+# model gh 2Jmax 14 dim 932 interior |[X12,X23]| max 6.47e-15 asym 3.4e-15 spec(X12) [-0.9808,0.9808]
+W bM  2.30 m_inf 2.2807242616 m2_inf 2.280724 min_bL[m-m_inf] +1.284e-03 at bL 1000  last(bL=1000) +1.284e-03
+H bM  2.30 m(t=0) 2.2807242616 min step dm +1.450e-05 at t 14.0->20.0  min(n1-n0) +1.2219e-07 at t 20.0  n0(0) 0.3534 n1(0) 0.9956
+W bM  2.40 m_inf 2.2829867354 m2_inf 2.282987 min_bL[m-m_inf] +1.289e-03 at bL 1000  last(bL=1000) +1.289e-03
+H bM  2.40 m(t=0) 2.2829867354 min step dm +1.229e-05 at t 14.0->20.0  min(n1-n0) +1.0351e-07 at t 20.0  n0(0) 0.3931 n1(0) 1.0382
+W bM  2.60 m_inf 2.2950391478 m2_inf 2.295039 min_bL[m-m_inf] +1.320e-03 at bL 1000  last(bL=1000) +1.320e-03
+H bM  2.60 m(t=0) 2.2950391478 min step dm +7.978e-06 at t 14.0->20.0  min(n1-n0) +6.7214e-08 at t 20.0  n0(0) 0.4751 n1(0) 1.1357
+W bM  2.80 m_inf 2.3130155062 m2_inf 2.313016 min_bL[m-m_inf] +1.376e-03 at bL 1000  last(bL=1000) +1.376e-03
+H bM  2.80 m(t=0) 2.3130155062 min step dm +3.916e-06 at t 14.0->20.0  min(n1-n0) +3.2989e-08 at t 20.0  n0(0) 0.5592 n1(0) 1.2481
+W bM  3.00 m_inf 2.3333485794 m2_inf 2.333349 min_bL[m-m_inf] +1.453e-03 at bL 1000  last(bL=1000) +1.453e-03
+H bM  3.00 m(t=0) 2.3333485794 min step dm +1.894e-07 at t 14.0->20.0  min(n1-n0) +1.5960e-09 at t 20.0  n0(0) 0.6447 n1(0) 1.3727
+W bM  3.20 m_inf 2.3538090942 m2_inf 2.353809 min_bL[m-m_inf] +1.547e-03 at bL 1000  last(bL=1000) +1.547e-03
+H bM  3.20 m(t=0) 2.3538090942 min step dm -1.236e-02 at t 2.0->3.0  min(n1-n0) -1.5986e-02 at t 1.5  n0(0) 0.7310 n1(0) 1.5066
+W bM  3.50 m_inf 2.3822601309 m2_inf 2.382260 min_bL[m-m_inf] +1.710e-03 at bL 1000  last(bL=1000) +1.710e-03
+H bM  3.50 m(t=0) 2.3822601309 min step dm -2.786e-02 at t 2.0->3.0  min(n1-n0) -4.6501e-02 at t 1.5  n0(0) 0.8611 n1(0) 1.7185

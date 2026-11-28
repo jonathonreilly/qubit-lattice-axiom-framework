@@ -1,0 +1,17 @@
+sample 128 elapsed 23.5234
+sample 256 elapsed 32.736
+sample 384 elapsed 42.265
+sample 512 elapsed 51.4565
+sample 640 elapsed 60.5358
+sample 768 elapsed 70.1025
+sample 896 elapsed 77.2248
+sample 1024 elapsed 82.9623
+sample 1152 elapsed 89.043
+sample 1280 elapsed 94.2975
+sample 1408 elapsed 99.5521
+sample 1536 elapsed 104.81
+sample 1664 elapsed 110.069
+sample 1792 elapsed 115.346
+sample 1920 elapsed 120.596
+sample 2048 elapsed 125.855
+done elapsed 125.857

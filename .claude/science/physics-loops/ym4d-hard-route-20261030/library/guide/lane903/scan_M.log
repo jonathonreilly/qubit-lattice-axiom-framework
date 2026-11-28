@@ -1,0 +1,5 @@
+[M] m=0.0 done; running max R1=1.2632 at (0.0, 16, 32, 32, 128, np.float64(0.004395632729869015)); max R2=0.00440 at (0.0, 16, 32, 32, 128, np.float64(1.2632300873201203))
+RESULT M: sup R1 = b p/g = 1.26323 at (m,a,b,c,d,R2)=(0.0, 16, 32, 32, 128, np.float64(0.004395632729869015))
+RESULT M: sup R2 = a delta_e/g = 0.00440 at (m,a,b,c,d,R1)=(0.0, 16, 32, 32, 128, np.float64(1.2632300873201203))
+RESULT M: max of floor(2b/a) * a delta_e/(b p) = 0.01392 at (0.0, 16, 32, 32, 128) (Theorem W2 says < 1)
+nice python3 guide_scan.py $M  0.59s user 0.02s system 99% cpu 0.606 total

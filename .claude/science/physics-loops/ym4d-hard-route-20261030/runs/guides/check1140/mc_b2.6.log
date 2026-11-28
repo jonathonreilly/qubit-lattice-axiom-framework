@@ -1,0 +1,5 @@
+b=1.00  f(1)/f(j) by K^2 quadrature: 1.02699
+b=2.60  f(1)/f(j) by K^2 quadrature: 1.81421
+b=5.00  f(1)/f(j) by K^2 quadrature: 12.4956
+b=2.600 flat     MC E[s_x.s_y] = 0.52084 +- 0.00029  (40 batches x 100000 sweeps)
+b=2.600 twisted  MC E[s_x.s_y] = 0.52398 +- 0.00025  (40 batches x 100000 sweeps)

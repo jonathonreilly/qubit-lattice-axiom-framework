@@ -1,0 +1,8 @@
+{
+  "ended": "2026-11-17T13:23:08.395122+00:00",
+  "source_sha256": "db9718c43d7123e3c24907a13b625939cbf5a647ad520cfa90a1c2b8422cff70",
+  "shared_analysis_sha256": "f50c316e6280794b4d9512e77490bb381ab031f3a25730cdefc28772992cbc40",
+  "batch_sha256": "3fc3a16674c7347b4579fc635f3720dccdcc11744d4b7723cdb692ae404a5ad6",
+  "ensembles": 4,
+  "nice": 20
+}

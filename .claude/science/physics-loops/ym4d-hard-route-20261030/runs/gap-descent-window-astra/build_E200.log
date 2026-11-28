@@ -1,0 +1,29 @@
+FULL_BASIS 7120629
+SECTOR_SIZES [907780, 901543, 897671, 901543, 878023, 878023, 878023, 878023]
+Traceback (most recent call last):
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/symmetry.py", line 159, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/symmetry.py", line 157, in main
+    if a.action=='build':build_sym(a.J,a.H,a.E,a.basis)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/symmetry.py", line 126, in build_sym
+    save_npz(dest/f'sector{c}.npz',X);np.save(dest/f'rows{c}.npy',sectorrows)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_matrix_io.py", line 79, in save_npz
+    np.savez_compressed(file, **arrays_dict)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 753, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 786, in _savez
+    format.write_array(fid, val,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/lib/_format_impl.py", line 777, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/zipfile/__init__.py", line 1214, in write
+    data = self._compressor.compress(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-window-astra/cube.py", line 17, in <lambda>
+    signal.signal(signal.SIGALRM,lambda *_:base.memory_check());signal.setitimer(signal.ITIMER_REAL,1,1)
+                                           ^^^^^^^^^^^^^^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-sign-2-astra/recompute.py", line 33, in memory_check
+    raise MemoryError("2 GB RSS limit exceeded")
+MemoryError: 2 GB RSS limit exceeded

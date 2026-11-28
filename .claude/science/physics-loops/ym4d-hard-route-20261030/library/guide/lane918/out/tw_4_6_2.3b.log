@@ -1,0 +1,3 @@
+{"logrho_simp_improved": -0.7055897753413226, "err_simp_improved": 0.13565028068894086, "t": 4, "b": 6, "beta": 2.3, "ndir": 1, "ns": 17, "nth": 40, "nmeas": 600, "seed": 102, "nstack": 36, "logrho_trap": -0.6587049804736156, "err_trap": 0.14774768588471862, "logrho_simp": -0.6494668138706563, "err_simp": 0.14905500952578393, "logrho_bar": -0.6163991396826765, "err_bar": 0.10300168578466831, "sec": 141.7, "rho_bar": 0.539884992109006}
+      142.19 real       141.77 user         0.21 sys
+            81264640  maximum resident set size

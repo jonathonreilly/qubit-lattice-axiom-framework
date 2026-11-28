@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-17T14:42:26.228836+00:00",
+  "checks": {
+    "source_hashes_match": true,
+    "gh_analysis_source_matches": true,
+    "p4_analysis_source_matches": true,
+    "face_analysis_source_matches": true,
+    "sampler_sources_match": true,
+    "single_thread_env_recorded": true,
+    "all_production_exit_zero": true,
+    "all_repo_records_at_most_1MB": true,
+    "small_copies_match": true,
+    "detail_copies_match": true,
+    "syntax_compiles": true
+  },
+  "earlier_check_error": "KeyError: source_path; GH receipts predate that field and record the sheets.cpp hash. Fixed the read-only checker to use that default; no receipt rewritten."
+}

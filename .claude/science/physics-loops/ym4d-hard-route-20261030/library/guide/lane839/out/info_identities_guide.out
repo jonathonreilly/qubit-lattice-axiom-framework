@@ -1,0 +1,49 @@
+# Identities C1-C3 and Prop TB (C5), 2D Ising, J = global flip
+K=0.3000 w= 4 rowsum_err=4.4e-16 C1=3.0e-14 C2=7.3e-16 C3=9.5e-15 mu1=0.5140 mu-=0.5140 C5=True eta1=0.6005(mu-^t=0.5140) eta2=0.3112(mu-^t=0.2642) eta3=0.1600(mu-^t=0.1358) eta4=0.0823(mu-^t=0.0698)
+K=0.3000 w= 6 rowsum_err=8.9e-16 C1=1.2e-13 C2=4.1e-16 C3=6.8e-15 mu1=0.5272 mu-=0.5272 C5=True eta1=0.6933(mu-^t=0.5272) eta2=0.3765(mu-^t=0.2779) eta3=0.1991(mu-^t=0.1465) eta4=0.1050(mu-^t=0.0772)
+K=0.3000 w= 8 rowsum_err=7.8e-16 C1=3.8e-14 C2=2.7e-15 C3=6.1e-15 mu1=0.5300 mu-=0.5300 C5=True eta1=0.7591(mu-^t=0.5300) eta2=0.4263(mu-^t=0.2808) eta3=0.2278(mu-^t=0.1488) eta4=0.1209(mu-^t=0.0789)
+K=0.3000 w=10 rowsum_err=5.9e-15 C1=1.1e-13 C2=5.2e-16 C3=6.8e-16 mu1=0.5306 mu-=0.5306 C5=True eta1=0.8086(mu-^t=0.5306) eta2=0.4686(mu-^t=0.2815) eta3=0.2525(mu-^t=0.1494) eta4=0.1343(mu-^t=0.0793)
+K=0.4407 w= 4 rowsum_err=4.4e-16 C1=3.2e-15 C2=1.3e-15 C3=4.2e-15 mu1=0.8167 mu-=0.8167 C5=True eta1=0.8580(mu-^t=0.8167) eta2=0.7031(mu-^t=0.6670) eta3=0.5744(mu-^t=0.5447) eta4=0.4691(mu-^t=0.4448)
+K=0.4407 w= 6 rowsum_err=1.1e-15 C1=9.1e-15 C2=3.2e-15 C3=5.8e-15 mu1=0.8759 mu-=0.8759 C5=True eta1=0.9348(mu-^t=0.8759) eta2=0.8277(mu-^t=0.7672) eta3=0.7262(mu-^t=0.6719) eta4=0.6362(mu-^t=0.5885)
+K=0.4407 w= 8 rowsum_err=1.1e-15 C1=1.1e-14 C2=4.7e-15 C3=1.9e-15 mu1=0.9059 mu-=0.9059 C5=True eta1=0.9683(mu-^t=0.9059) eta2=0.8938(mu-^t=0.8206) eta3=0.8132(mu-^t=0.7434) eta4=0.7374(mu-^t=0.6735)
+K=0.4407 w=10 rowsum_err=6.9e-15 C1=4.4e-15 C2=2.4e-15 C3=2.3e-15 mu1=0.9242 mu-=0.9242 C5=True eta1=0.9842(mu-^t=0.9242) eta2=0.9325(mu-^t=0.8541) eta3=0.8685(mu-^t=0.7893) eta4=0.8045(mu-^t=0.7294)
+K=0.6000 w= 4 rowsum_err=3.3e-16 C1=1.2e-15 C2=3.4e-16 C3=7.9e-16 mu1=0.9624 mu-=0.9624 C5=True eta1=0.9698(mu-^t=0.9624) eta2=0.9338(mu-^t=0.9263) eta3=0.8988(mu-^t=0.8915) eta4=0.8650(mu-^t=0.8580)
+K=0.6000 w= 6 rowsum_err=6.7e-16 C1=7.1e-16 C2=2.9e-15 C3=5.0e-15 mu1=0.9910 mu-=0.9910 C5=True eta1=0.9949(mu-^t=0.9910) eta2=0.9864(mu-^t=0.9820) eta3=0.9775(mu-^t=0.9731) eta4=0.9687(mu-^t=0.9643)
+K=0.6000 w= 8 rowsum_err=1.3e-15 C1=7.7e-15 C2=4.3e-15 C3=1.9e-15 mu1=0.9976 mu-=0.9976 C5=True eta1=0.9991(mu-^t=0.9976) eta2=0.9970(mu-^t=0.9952) eta3=0.9947(mu-^t=0.9929) eta4=0.9924(mu-^t=0.9905)
+K=0.6000 w=10 rowsum_err=5.0e-15 C1=6.3e-14 C2=3.3e-14 C3=4.9e-15 mu1=0.9993 mu-=0.9993 C5=True eta1=0.9998(mu-^t=0.9993) eta2=0.9993(mu-^t=0.9987) eta3=0.9987(mu-^t=0.9980) eta4=0.9981(mu-^t=0.9974)
+# C4: 2D Lemma Z'' vs Lemma Z': g <= Phi/(rho-1) vs (2/rho)Phi
+K=0.3000 T0=3 rho=2 g=2.200012e-01 Z''=8.835965e-01 Z'=8.835965e-01 holds=True
+K=0.3000 T0=4 rho=2 g=1.270045e-01 Z''=5.327628e-01 Z'=5.327628e-01 holds=True
+K=0.3000 T0=5 rho=2 g=7.232379e-02 Z''=3.083418e-01 Z'=3.083418e-01 holds=True
+K=0.3000 T0=3 rho=3 g=3.245010e-01 Z''=1.039743e+00 Z'=1.386324e+00 holds=True
+K=0.4000 T0=3 rho=2 g=5.096543e-01 Z''=1.768531e+00 Z'=1.768531e+00 holds=True
+K=0.4000 T0=4 rho=2 g=4.570612e-01 Z''=1.644983e+00 Z'=1.644983e+00 holds=True
+K=0.4000 T0=5 rho=2 g=4.108923e-01 Z''=1.525737e+00 Z'=1.525737e+00 holds=True
+K=0.4000 T0=3 rho=3 g=7.354993e-01 Z''=2.297692e+00 Z'=3.063589e+00 holds=True
+K=0.4407 T0=3 rho=2 g=6.071790e-01 Z''=1.969313e+00 Z'=1.969313e+00 holds=True
+K=0.4407 T0=4 rho=2 g=5.952752e-01 Z''=1.945881e+00 Z'=1.945881e+00 holds=True
+K=0.4407 T0=5 rho=2 g=5.896750e-01 Z''=1.934895e+00 Z'=1.934895e+00 holds=True
+K=0.4407 T0=3 rho=3 g=8.414011e-01 Z''=2.617811e+00 Z'=3.490415e+00 holds=True
+# C6: t-layer Identity L: p(a) == identity, p <= (1/2)E|1-ratio|
+K=0.3 w=6 a=6 t=1 p=2.322456e-02 identity=2.322456e-02 bound=5.598995e-01 kappa_t=1.780e+01 ok=True
+K=0.3 w=6 a=6 t=3 p=2.322456e-02 identity=2.322456e-02 bound=1.168353e-01 kappa_t=6.143e-01 ok=True
+K=0.3 w=8 a=8 t=1 p=7.087447e-03 identity=7.087447e-03 bound=6.362638e-01 kappa_t=6.026e+01 ok=True
+K=0.3 w=8 a=8 t=4 p=7.087447e-03 identity=7.087447e-03 bound=6.403367e-02 kappa_t=3.703e-01 ok=True
+K=0.6 w=6 a=6 t=1 p=4.863708e-01 identity=4.863708e-01 bound=5.084368e-01 kappa_t=6.692e+02 ok=True
+K=0.6 w=6 a=6 t=3 p=4.863708e-01 identity=4.863708e-01 bound=4.981033e-01 kappa_t=6.608e+01 ok=True
+K=0.6 w=8 a=8 t=1 p=4.952266e-01 identity=4.952266e-01 bound=5.036218e-01 kappa_t=7.382e+03 ok=True
+K=0.6 w=8 a=8 t=4 p=4.952266e-01 identity=4.952266e-01 bound=4.995049e-01 kappa_t=2.017e+02 ok=True
+# Prop K: two-state chain with a rare slow mode
+eps=0.001 delta=0.01 n=10: S(2n)=0.8177  I_KL <= H(X0)=7.907e-03
+eps=1e-06 delta=0.01 n=10: S(2n)=0.8179  I_KL <= H(X0)=1.482e-05
+# Prop Q: tree-SDPI arithmetic against lattice order
+2D: beta_c=0.44069 tanh(beta_c)=0.41421; beta=0.5: lambda=0.46212 4lambda^2=0.8542 3lambda^2=0.6407
+3D: G_3=0.252731 (quad err 2.8e-10); beta=0.26 > G_3: m^2 >= 0.0280, odd weight >= m^4/4 = 1.9541e-04 (1/5041 = 1.9837e-04); lambda=0.25430 6lambda^2=0.3880 5lambda^2=0.3233
+3D: G_3=0.252731 (quad err 2.8e-10); beta=0.35 > G_3: m^2 >= 0.2779, odd weight >= m^4/4 = 1.9309e-02 (1/5041 = 1.9837e-04); lambda=0.33638 6lambda^2=0.6789 5lambda^2=0.5657
+# Prop TB2: O(N) layer at the flat background, FSS threshold N*G_3
+O(4) = SU(2) layer: N*G_3=1.01092; beta=1.5: m^2>=0.3261, 1-Z_anti/Z_per >= m^4/(2N^2)=3.3222e-03; beta=2.3: m^2>=0.5605, 1-Z_anti/Z_per >= m^4/(2N^2)=9.8164e-03; beta=2.6: m^2>=0.6112, 1-Z_anti/Z_per >= m^4/(2N^2)=1.1673e-02;
+O(2) = U(1) layer: N*G_3=0.50546; beta=1.5: m^2>=0.6630, 1-Z_anti/Z_per >= m^4/(2N^2)=5.4950e-02; beta=2.3: m^2>=0.7802, 1-Z_anti/Z_per >= m^4/(2N^2)=7.6096e-02; beta=2.6: m^2>=0.8056, 1-Z_anti/Z_per >= m^4/(2N^2)=8.1122e-02;
+csc^2 sum b=4: 5.000000 vs (b^2-1)/3=5.000000
+csc^2 sum b=6: 11.666667 vs (b^2-1)/3=11.666667
+csc^2 sum b=9: 26.666667 vs (b^2-1)/3=26.666667
+csc^2 sum b=16: 85.000000 vs (b^2-1)/3=85.000000

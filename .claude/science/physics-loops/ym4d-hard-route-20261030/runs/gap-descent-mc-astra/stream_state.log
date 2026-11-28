@@ -1,0 +1,2 @@
+initial_bool 1 is_open 0
+after_optional_write_fail 1

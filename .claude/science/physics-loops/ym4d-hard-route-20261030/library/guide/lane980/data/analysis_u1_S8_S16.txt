@@ -1,0 +1,18 @@
+== U1 S8_T16_seed811
+R     mean 57.159096 err 0.005016 tau_int 0.7 block_len 500 ok
+Gp1   mean 0.349566 err 0.001235 tau_int 0.8 block_len 500 ok
+tau   mean 0.920122 err 0.000060 tau_int 0.5 block_len 500 ok
+c0sq  mean 0.497535 err 0.003575 tau_int 4.3 block_len 500 ok
+plaq  mean 0.891446 (n=800)
+halves R: 57.15815 +- 0.00832 | 57.16004 +- 0.00619  diff/sigma 0.18
+IRB  Ghat^e(p1) = 0.17478 +- 0.00062  <=  1/(2 beta E(p1)) = 0.74222 : holds
+xi2nd 16.6562 err 0.0302  (xi/S = 2.082)
+== U1 S16_T32_seed1611
+R     mean 224.293560 err 0.021299 tau_int 1.9 block_len 250 ok
+Gp1   mean 1.034181 err 0.004188 tau_int 2.4 block_len 250 ok
+tau   mean 0.920098 err 0.000029 tau_int 0.5 block_len 250 ok
+c0sq  mean 0.516595 err 0.005491 tau_int 12.6 block_len 250 UNDER-SAMPLED
+plaq  mean 0.887645 (n=400)
+halves R: 224.32379 +- 0.03350 | 224.26333 +- 0.02368  diff/sigma -1.47
+IRB  Ghat^e(p1) = 0.51709 +- 0.00209  <=  1/(2 beta E(p1)) = 2.85589 : holds
+xi2nd 37.6566 err 0.0780  (xi/S = 2.354)

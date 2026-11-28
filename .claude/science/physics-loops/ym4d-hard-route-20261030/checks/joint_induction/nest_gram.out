@@ -1,0 +1,16 @@
+l0=1 m=1: rows per period 70, lam 0.22518, t=0s
+l0=1 m=2: rows per period 208, lam 0.21607, t=0s
+l0=1 m=3: rows per period 622, lam 0.21500, t=0s
+l0=1 m=4: rows per period 1864, lam 0.21481, t=2s
+l0=2 m=1: rows per period 70, lam 0.21607, t=0s
+l0=2 m=2: rows per period 208, lam 0.21500, t=0s
+l0=2 m=3: rows per period 622, lam 0.21481, t=0s
+l0=2 m=4: rows per period 1864, lam 0.21475, t=2s
+l0=3 m=1: rows per period 70, lam 0.21503, t=0s
+l0=3 m=2: rows per period 208, lam 0.21481, t=0s
+l0=3 m=3: rows per period 622, lam 0.21475, t=0s
+l0=3 m=4: rows per period 1864, lam 0.21472, t=2s
+control, no clearance: l0=2 m=2: rows 80, lam 0.21446
+control, no clearance: l0=2 m=3: rows 206, lam 0.21430
+G1 PASS G2 PASS G3 PASS
+peak RSS bytes 496386048

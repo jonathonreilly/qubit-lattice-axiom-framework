@@ -1,0 +1,10 @@
+pid 79410 nice 20 spins 1179648
+sample 128 elapsed 149.301
+sample 256 elapsed 181.283
+sample 384 elapsed 213.377
+sample 512 elapsed 245.34
+sample 640 elapsed 277.306
+sample 768 elapsed 309.27
+sample 896 elapsed 341.246
+sample 1024 elapsed 373.234
+done elapsed 373.266 peak_rss 39632896

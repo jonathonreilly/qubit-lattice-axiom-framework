@@ -1,0 +1,12 @@
+[    0.0s rss     70MB] photon exact: {'flux': 0.016335455133616467, 'mode1': 0.07179676972449096, 'mode2': 0.029437251522859406, 'mode1_closed_form': 0.07179676972449084, 'mode2_closed_form': 0.029437251522859413}
+[    1.6s rss    108MB] round 1/6: flux=0.01602 mode1=0.06833 mode2=0.02907
+[    2.5s rss    128MB] round 2/6: flux=0.01619 mode1=0.06833 mode2=0.02951
+[    3.3s rss    130MB] round 3/6: flux=0.01622 mode1=0.06965 mode2=0.02998
+[    4.2s rss    132MB] round 4/6: flux=0.01622 mode1=0.07015 mode2=0.02969
+[    5.0s rss    133MB] round 5/6: flux=0.01625 mode1=0.06994 mode2=0.02929
+[    5.9s rss    134MB] round 6/6: flux=0.01625 mode1=0.07067 mode2=0.02911
+[    5.9s rss    134MB] RESULT c1_photon_L4
+[    5.9s rss    134MB]   flux    R=0.016253 +- 4.9e-05  (num 0.06501, den 4, outer lag1 -0.22435566194432) exact=0.016335
+[    5.9s rss    134MB]   mode1   R=0.070673 +- 0.0015  (num 4.523, den 64, outer lag1 -0.11303827510020319) exact=0.071797
+[    5.9s rss    134MB]   mode2   R=0.029112 +- 0.00058  (num 7.453, den 256, outer lag1 -0.1720981845703287) exact=0.029437
+[    5.9s rss    134MB]   tau_inner {'c_p0': 0.4420596474044478, 'a_l0_x_c_p0': 0.4792231385835256}

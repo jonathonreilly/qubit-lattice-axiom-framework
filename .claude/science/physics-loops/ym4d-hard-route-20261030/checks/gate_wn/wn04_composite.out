@@ -1,0 +1,6 @@
+gradient check: 6.98498789 vs finite difference 6.98498791
+T=8: K_comp 0.39689, K_vert 0.21842, K_total 0.61531
+beta=64: composite beta^2<T> = 0.5907(0.0026); plain Gaussian potential 0.3810(0.0046); 26s
+beta=128: composite beta^2<T> = 0.5994(0.0038); plain Gaussian potential 0.3833(0.0068); 26s
+beta=256: composite beta^2<T> = 0.6004(0.0055); plain Gaussian potential 0.3951(0.0095); 26s
+exit 0

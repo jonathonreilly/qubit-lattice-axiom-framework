@@ -1,0 +1,10 @@
+WILSON_COMPLETE 4 44
+Traceback (most recent call last):
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/wilson_sweep.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/wilson_sweep.py", line 15, in main
+    subprocess.run([sys.executable,str(HERE/'wilson.py'),'build','--J',str(J),'--E',str(E),'--basis',str(dest)],stdout=log,stderr=subprocess.STDOUT,check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/local/bin/python3', '.claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-descent-n-trend-astra/wilson.py', 'build', '--J', '4', '--E', '48', '--basis', '/tmp/sa-gap-descent-n-trend-astra.VKVSv4/wilson_J4E48']' returned non-zero exit status 1.

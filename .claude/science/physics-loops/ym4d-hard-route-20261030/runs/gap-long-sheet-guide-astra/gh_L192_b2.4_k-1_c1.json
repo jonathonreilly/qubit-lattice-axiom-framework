@@ -1,0 +1,68 @@
+{
+  "tag": "gh_L192_b2.4_k-1_c1",
+  "model": "gh",
+  "L": 192,
+  "T": 4,
+  "beta": 2.4,
+  "coupling": -1,
+  "seed": 11129171,
+  "hot": 1,
+  "burn": 1024,
+  "samples": 2048,
+  "stride": 1,
+  "started": "2026-11-17T12:57:09.156835+00:00",
+  "argv": [
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+    "gh",
+    "192",
+    "4",
+    "2.4",
+    "-1",
+    "11129171",
+    "1",
+    "1024",
+    "2048",
+    "1",
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1"
+  ],
+  "memory_free_pct": 86,
+  "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+  "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+  "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+  "plan_sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b",
+  "predecessor_reaped": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "pid": 75927,
+  "exit_code": 0,
+  "ended": "2026-11-17T12:57:47.592857+00:00",
+  "seconds": 38.43587075000687,
+  "reaped": true,
+  "records": [
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.f32",
+      "bytes": 15728640,
+      "sha256": "f56cab20cf4efb17dd31aacbae59c9ca208c78a79d34b00ecd8ac044117b8c54"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.csv",
+      "bytes": 118108,
+      "sha256": "19088cb85e46e500dc8ce610e9b56ae01cfc6b420c6d9d24c1e33e6607e51aa0"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.therm.csv",
+      "bytes": 1996,
+      "sha256": "05302d269efaf1abedf9642f5b37219a513da301b80df5d97cbcfcfa3a9a3813"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/gh_L192_b2.4_k-1_c1.cfg",
+      "bytes": 2359296,
+      "sha256": "83fa08a93a313b26c864a3b5769e860c09d50d5940230841021b7e1a5a0392ad"
+    }
+  ]
+}

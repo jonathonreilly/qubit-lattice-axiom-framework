@@ -1,0 +1,5 @@
+traj974 L=8 Nt=32 beta=2.3 ntherm=20 nmeas=4 nsep=1 seed=2 ape=3,8 tag=smoke_b2.3_L8
+[    0.0s] therm 0 plaq 0.42221
+[    0.5s rss 48MB] meas 0 plaq 0.59679
+[    0.7s rss 51MB] meas 3 plaq 0.60060
+done 0.7s plaq mean 0.59901 +- 0.00080

@@ -1,0 +1,197 @@
+{
+  "scope": "Dimension bookkeeping only; no symmetry-reduced or tensor eigensolver implemented. Order 16 is the square automorphism group times longitudinal reflection; block bound is optimistic.",
+  "records": [
+    {
+      "J": 1,
+      "E": 40,
+      "full_dimension": 5177,
+      "optimistic_largest_block_lower_bound_order16": 324,
+      "ten_full_vectors_bytes": 414160,
+      "ten_vectors_of_that_block_bytes": 25920
+    },
+    {
+      "J": 1,
+      "E": 44,
+      "full_dimension": 5177,
+      "optimistic_largest_block_lower_bound_order16": 324,
+      "ten_full_vectors_bytes": 414160,
+      "ten_vectors_of_that_block_bytes": 25920
+    },
+    {
+      "J": 1,
+      "E": 48,
+      "full_dimension": 5177,
+      "optimistic_largest_block_lower_bound_order16": 324,
+      "ten_full_vectors_bytes": 414160,
+      "ten_vectors_of_that_block_bytes": 25920
+    },
+    {
+      "J": 1,
+      "E": 80,
+      "full_dimension": 5177,
+      "optimistic_largest_block_lower_bound_order16": 324,
+      "ten_full_vectors_bytes": 414160,
+      "ten_vectors_of_that_block_bytes": 25920
+    },
+    {
+      "J": 1,
+      "E": 100,
+      "full_dimension": 5177,
+      "optimistic_largest_block_lower_bound_order16": 324,
+      "ten_full_vectors_bytes": 414160,
+      "ten_vectors_of_that_block_bytes": 25920
+    },
+    {
+      "J": 1,
+      "E": 180,
+      "full_dimension": 5177,
+      "optimistic_largest_block_lower_bound_order16": 324,
+      "ten_full_vectors_bytes": 414160,
+      "ten_vectors_of_that_block_bytes": 25920
+    },
+    {
+      "J": 2,
+      "E": 40,
+      "full_dimension": 214218,
+      "optimistic_largest_block_lower_bound_order16": 13389,
+      "ten_full_vectors_bytes": 17137440,
+      "ten_vectors_of_that_block_bytes": 1071120
+    },
+    {
+      "J": 2,
+      "E": 44,
+      "full_dimension": 553986,
+      "optimistic_largest_block_lower_bound_order16": 34625,
+      "ten_full_vectors_bytes": 44318880,
+      "ten_vectors_of_that_block_bytes": 2770000
+    },
+    {
+      "J": 2,
+      "E": 48,
+      "full_dimension": 771434,
+      "optimistic_largest_block_lower_bound_order16": 48215,
+      "ten_full_vectors_bytes": 61714720,
+      "ten_vectors_of_that_block_bytes": 3857200
+    },
+    {
+      "J": 2,
+      "E": 80,
+      "full_dimension": 8057936,
+      "optimistic_largest_block_lower_bound_order16": 503621,
+      "ten_full_vectors_bytes": 644634880,
+      "ten_vectors_of_that_block_bytes": 40289680
+    },
+    {
+      "J": 2,
+      "E": 100,
+      "full_dimension": 8424461,
+      "optimistic_largest_block_lower_bound_order16": 526529,
+      "ten_full_vectors_bytes": 673956880,
+      "ten_vectors_of_that_block_bytes": 42122320
+    },
+    {
+      "J": 2,
+      "E": 180,
+      "full_dimension": 8424461,
+      "optimistic_largest_block_lower_bound_order16": 526529,
+      "ten_full_vectors_bytes": 673956880,
+      "ten_vectors_of_that_block_bytes": 42122320
+    },
+    {
+      "J": 3,
+      "E": 40,
+      "full_dimension": 252786,
+      "optimistic_largest_block_lower_bound_order16": 15800,
+      "ten_full_vectors_bytes": 20222880,
+      "ten_vectors_of_that_block_bytes": 1264000
+    },
+    {
+      "J": 3,
+      "E": 44,
+      "full_dimension": 688470,
+      "optimistic_largest_block_lower_bound_order16": 43030,
+      "ten_full_vectors_bytes": 55077600,
+      "ten_vectors_of_that_block_bytes": 3442400
+    },
+    {
+      "J": 3,
+      "E": 48,
+      "full_dimension": 1229570,
+      "optimistic_largest_block_lower_bound_order16": 76849,
+      "ten_full_vectors_bytes": 98365600,
+      "ten_vectors_of_that_block_bytes": 6147920
+    },
+    {
+      "J": 3,
+      "E": 80,
+      "full_dimension": 118525731,
+      "optimistic_largest_block_lower_bound_order16": 7407859,
+      "ten_full_vectors_bytes": 9482058480,
+      "ten_vectors_of_that_block_bytes": 592628720
+    },
+    {
+      "J": 3,
+      "E": 100,
+      "full_dimension": 638233218,
+      "optimistic_largest_block_lower_bound_order16": 39889577,
+      "ten_full_vectors_bytes": 51058657440,
+      "ten_vectors_of_that_block_bytes": 3191166160
+    },
+    {
+      "J": 3,
+      "E": 180,
+      "full_dimension": 2770335927,
+      "optimistic_largest_block_lower_bound_order16": 173145996,
+      "ten_full_vectors_bytes": 221626874160,
+      "ten_vectors_of_that_block_bytes": 13851679680
+    },
+    {
+      "J": 4,
+      "E": 40,
+      "full_dimension": 252798,
+      "optimistic_largest_block_lower_bound_order16": 15800,
+      "ten_full_vectors_bytes": 20223840,
+      "ten_vectors_of_that_block_bytes": 1264000
+    },
+    {
+      "J": 4,
+      "E": 44,
+      "full_dimension": 689478,
+      "optimistic_largest_block_lower_bound_order16": 43093,
+      "ten_full_vectors_bytes": 55158240,
+      "ten_vectors_of_that_block_bytes": 3447440
+    },
+    {
+      "J": 4,
+      "E": 48,
+      "full_dimension": 1233578,
+      "optimistic_largest_block_lower_bound_order16": 77099,
+      "ten_full_vectors_bytes": 98686240,
+      "ten_vectors_of_that_block_bytes": 6167920
+    },
+    {
+      "J": 4,
+      "E": 80,
+      "full_dimension": 159591505,
+      "optimistic_largest_block_lower_bound_order16": 9974470,
+      "ten_full_vectors_bytes": 12767320400,
+      "ten_vectors_of_that_block_bytes": 797957600
+    },
+    {
+      "J": 4,
+      "E": 100,
+      "full_dimension": 1471428971,
+      "optimistic_largest_block_lower_bound_order16": 91964311,
+      "ten_full_vectors_bytes": 117714317680,
+      "ten_vectors_of_that_block_bytes": 7357144880
+    },
+    {
+      "J": 4,
+      "E": 180,
+      "full_dimension": 164479074501,
+      "optimistic_largest_block_lower_bound_order16": 10279942157,
+      "ten_full_vectors_bytes": 13158325960080,
+      "ten_vectors_of_that_block_bytes": 822395372560
+    }
+  ]
+}

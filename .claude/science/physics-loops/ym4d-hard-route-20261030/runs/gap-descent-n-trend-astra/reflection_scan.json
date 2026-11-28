@@ -1,0 +1,25 @@
+{
+  "rejected_pending_recalculation": [
+    {
+      "stage": "grid",
+      "n": 6,
+      "beta": 0.5,
+      "A": 10,
+      "reflection_error": 3.177112760377465e-09
+    },
+    {
+      "stage": "grid",
+      "n": 6,
+      "beta": 1.0,
+      "A": 14,
+      "reflection_error": 1.992423579150193e-06
+    },
+    {
+      "stage": "bisection",
+      "n": 6,
+      "beta": 3.416015625,
+      "A": 14,
+      "reflection_error": 2.271169892598124e-06
+    }
+  ]
+}

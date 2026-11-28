@@ -1,0 +1,69 @@
+{
+  "tag": "p4_L128_T4_b2.4_k0.024_c0",
+  "model": "p4",
+  "L": 128,
+  "T": 4,
+  "beta": 2.4,
+  "coupling": 0.024,
+  "seed": 11210000,
+  "hot": 0,
+  "burn": 1024,
+  "samples": 2048,
+  "stride": 1,
+  "started": "2026-11-17T13:18:07.543530+00:00",
+  "argv": [
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/sheets",
+    "p4",
+    "128",
+    "4",
+    "2.4",
+    "0.024",
+    "11210000",
+    "0",
+    "1024",
+    "2048",
+    "1",
+    "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0"
+  ],
+  "memory_free_pct": 85,
+  "source_path": ".claude/science/physics-loops/ym4d-hard-route-20261030/runs/gap-long-sheet-guide-astra/sheets.cpp",
+  "source_sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3",
+  "shared_source_sha256": "8675dae3ffb59167132759b8ea62bb3e53ca4e96c826f7764fa335f1cb632962",
+  "binary_sha256": "bee7ed182900cc14e6e1f7a15414c7ea81a4def57d488df296a68dbf4d9b4180",
+  "plan_sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94",
+  "predecessor_reaped": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "pid": 76900,
+  "exit_code": 0,
+  "ended": "2026-11-17T13:18:42.581009+00:00",
+  "seconds": 35.037243167011184,
+  "reaped": true,
+  "records": [
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.f32",
+      "bytes": 10485760,
+      "sha256": "97bbb565b6db10aee3d83a3e07e9db859be2042e04594f45c07cfb978c2f1de3"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.csv",
+      "bytes": 118156,
+      "sha256": "bd19e85322130a1ec313a583486fd345745d8a74c4ed6110004938f1d6dc5ad3"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.therm.csv",
+      "bytes": 1988,
+      "sha256": "41687753d0dcdca10883b91bdfe982abc8d1ea1a31d240500d2158b1e67f8574"
+    },
+    {
+      "path": "/tmp/sa-gap-long-sheet-guide-astra.ioPBXO/p4_L128_T4_b2.4_k0.024_c0.cfg",
+      "bytes": 2097152,
+      "sha256": "eea21b89b5f29b9a87c5472a416b7902adf6b3b3bb577ef7e1a1bf94cb6e5533"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+b=2.600 flat     MC E[s_x.s_y] = 0.51987 +- 0.00027  (40 batches x 100000 sweeps)
+b=2.600 twisted  MC E[s_x.s_y] = 0.52304 +- 0.00025  (40 batches x 100000 sweeps)

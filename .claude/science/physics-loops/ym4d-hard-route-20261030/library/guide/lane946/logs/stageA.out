@@ -1,0 +1,13 @@
+== selftest start 08:11:52Z
+== selftest exit 0 08:11:52Z
+== exact_plaq_b2.3 start 08:11:52Z
+== exact_plaq_b2.3 exit 0 08:11:52Z
+== exact_plaq_b2.6 start 08:11:52Z
+== exact_plaq_b2.6 exit 0 08:11:53Z
+== c1_photon_L4 start 08:11:53Z
+== c1_photon_L4 exit 0 08:11:59Z
+== c2_plaq_b2.3 start 08:11:59Z
+== c2_plaq_b2.3 exit 0 08:12:39Z
+== timing_L4 start 08:12:39Z
+== timing_L4 exit 0 08:12:42Z
+== stageA done 08:12:42Z

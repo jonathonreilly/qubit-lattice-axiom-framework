@@ -1,0 +1,3 @@
+free ladder: max dev marginal = 4.337e-18 ; max dev joint = 1.084e-19 ; (P0,P1,a,b) cells not hit = 0
+periodic ladder: max dev of the factor = 1.110e-15
+c_j(f_0.9) = {'triv': 1.0, 'sign': 0.109113, 'std': 0.270529}  c_j(f_1.7) = {'triv': 1.0, 'sign': 0.356829, 'std': 0.540964}

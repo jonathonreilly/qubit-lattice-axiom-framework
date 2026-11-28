@@ -1,0 +1,1562 @@
+{
+  "created": "2026-11-17T14:44:39.688916+00:00",
+  "scope": "final report and packaged records; excludes this inventory itself",
+  "source_commit": "2b67c749cc219d0051de7b26c2a62c77c3948266",
+  "records": [
+    {
+      "path": "library/gap-long-sheet-guide-astra.md",
+      "bytes": 25166,
+      "sha256": "79d40fae7e822e8d7221e1aac6a0f07e967072c11e8f0096bcece9c4eb424e82"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/README.md",
+      "bytes": 4623,
+      "sha256": "ed158df6c9e8363cc2732fd1b4302998d44b184b933ca710cc260c48f9f442a5"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T4_b2.4_k0.24.json",
+      "bytes": 291992,
+      "sha256": "1211f74613f9deb3ff6fa1b39547186931629c6cb8dd39416ddd0c7c3ed1c41b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T4_b2.4_k0.json",
+      "bytes": 289708,
+      "sha256": "6de74b8496c7603869e49b7ff0419c7aaef194635fd251d80098a1175c95421b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T4_b2.4_k1.2.json",
+      "bytes": 277813,
+      "sha256": "5fc65b9a790e46a7dd60b1950fbe1e6f1e77145014d433f9ad44edd9385c6700"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T4_b2.4_k2.4.json",
+      "bytes": 265491,
+      "sha256": "030fe81de215f6bf6e80175dd26088144653a1d2b0e8daa241a5de978f221aa2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T6_b2.4_k0.24.json",
+      "bytes": 281176,
+      "sha256": "f424f929d8c9811e574d8dc3a6cacb47702ab66c45e33257338b65876b2b3854"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T6_b2.4_k0.json",
+      "bytes": 297049,
+      "sha256": "2af9feb9c5b2ec05ec92790830991f4c79ff3c0a497130da9e67e54ea6fe27a6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T6_b2.4_k1.2.json",
+      "bytes": 270915,
+      "sha256": "191846d6946886a5f830ae8eddb844013292f3af7d708fe405b91f1fae1e72e0"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_face_L128_T6_b2.4_k2.4.json",
+      "bytes": 259703,
+      "sha256": "9392c0379411944014bd7ff5d24e21eae9270851469fad71308d739e30223006"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.3_k-1.json",
+      "bytes": 225165,
+      "sha256": "bb7cd3f40377f93216742b759a26280c2ff5b4094d10139115249d6abcdc0434"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.3_k1.json",
+      "bytes": 245674,
+      "sha256": "417eae6d1d80935792c35a9b94a3e0e20f452568f977d89ba24f2f28b63affd4"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.3_k4.json",
+      "bytes": 246939,
+      "sha256": "0f7802cc9de4ff458f45687fcfb0f6aa4d83edbcd6c04a6784a2586dacae7361"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.4_k-1.json",
+      "bytes": 225213,
+      "sha256": "18af82e5897a30295441ab7cb6ddf565e18bab4c2098b270db6d6f4738d6d2a6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.4_k1.json",
+      "bytes": 245453,
+      "sha256": "c9db7beea2fe32f851f2ef636cf39cc2feadb162a57f9ff7fc3e2de9194ba78e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.4_k4.json",
+      "bytes": 247340,
+      "sha256": "f4755efedcab5d21c83c12308ce19ec8f94e1abe09be339e78391fe86c54c64a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.5_k-1.json",
+      "bytes": 218267,
+      "sha256": "b3ce779435594ab95f1e0547d3b3270d994a8773c7c1da2d2b8fa67067118d4d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.5_k1.json",
+      "bytes": 245443,
+      "sha256": "5827c792a5b3f797f8899df122344ae9a7f567a341aefa2e378cb76514b64c4a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L128_b2.5_k4.json",
+      "bytes": 246801,
+      "sha256": "27e97e180a09e258d63e902352656d666d7ce0e6d241f97bb90a7da21c247f9b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.3_k-1.json",
+      "bytes": 295445,
+      "sha256": "13eff837cb32fea233c362fd95563e242a4686b1df44efd6ac1fc4f5dc9d6756"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.3_k1.json",
+      "bytes": 336776,
+      "sha256": "a8ae0d78c344376c81b8daf095e2c03d230b1348090c033f34b00b8efd08cafc"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.3_k4.json",
+      "bytes": 337161,
+      "sha256": "3f863eaba3692ec407cf71369e7a4d143f0ef288cf9adc9f803c24ea094ed4e8"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.4_k-1.json",
+      "bytes": 295465,
+      "sha256": "3cb478472befa1910bda4913eb8e413aea4b46cc55b867daf33cfa84db0f9486"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.4_k1.json",
+      "bytes": 336300,
+      "sha256": "ca602e6f660e25895ecda2ad4a9ab07d6f64c21444b9601b0a0ab90ac1233cd3"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.4_k4.json",
+      "bytes": 338921,
+      "sha256": "c5fd45554a5706c6188e039840733fc1d7faef02fdc46a519bba180b01129ac3"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.5_k-1.json",
+      "bytes": 295222,
+      "sha256": "5b5daec5cf574629086f5d4941ed9cf9c2ca256bd8241de57c504ac003621ea9"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.5_k1.json",
+      "bytes": 336758,
+      "sha256": "051009f7cf69488ef34f58b6cfb5ecf4fb3967029f4d7da13f5d541310b34dfd"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_gh_L192_b2.5_k4.json",
+      "bytes": 337938,
+      "sha256": "b153a930c0c32efa5e7f1a9aa8f2125f8843072274cb4d75bbbb4c87fe59a386"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_p4_L128_T4_b2.4_k0.024.json",
+      "bytes": 291019,
+      "sha256": "bed5a11c8debdee568f92d9c6a5a9e6b66206eea644e38c203ea1f1e8b75bd86"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_p4_L128_T4_b2.4_k0.24.json",
+      "bytes": 284867,
+      "sha256": "6211c1dac1842ac80ef816e933784b6f8a25a7fee707ca079908a2152bb9a4a8"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_p4_L128_T4_b2.4_k1.2.json",
+      "bytes": 270012,
+      "sha256": "94ab98e32af347cc0f6f6417026ea647d4bc2231890b2b0196d326232e142bba"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analysis_p4_L128_T4_b2.4_k2.4.json",
+      "bytes": 262350,
+      "sha256": "f0ed26c7014667625b50114c9920dc0f422c36242583986ee59b951418bc1495"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analyze.py",
+      "bytes": 8646,
+      "sha256": "db9718c43d7123e3c24907a13b625939cbf5a647ad520cfa90a1c2b8422cff70"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analyze_gh_frozen.py",
+      "bytes": 8482,
+      "sha256": "92c7c241037620ad6d286ca1effe11646459c2f0f9c6625c6995734bd9197be8"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/analyze_p4_frozen.py",
+      "bytes": 8646,
+      "sha256": "db9718c43d7123e3c24907a13b625939cbf5a647ad520cfa90a1c2b8422cff70"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/batch.py",
+      "bytes": 4629,
+      "sha256": "3217b11ecd8c3497a804afd813ba4247a323633086a8ecb21258436874fe2874"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/environment.json",
+      "bytes": 638,
+      "sha256": "9d8446f2f076678ac2960d45f265539aab023eb6b8724f5fa7d1212c4aecaafb"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c0.csv",
+      "bytes": 59069,
+      "sha256": "4d5faa9822ed94d47bba8dd0e13a96910d462eea01027f433461f3bfb3eebfaf"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c0.json",
+      "bytes": 2434,
+      "sha256": "551dca8762ddacdec4095772c52a5469c88324e6154211f150cf7b9a76087497"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c0.log",
+      "bytes": 286,
+      "sha256": "6d19b44f8e03932dfb5f367932507be6c4122934f953ec75bb5de5468719f4c8"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c0.therm.csv",
+      "bytes": 1003,
+      "sha256": "1e46c75ce009c839dc5c7bba15262508f16f6b9c5b88d7399bac95e6746d44a1"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c1.csv",
+      "bytes": 59090,
+      "sha256": "b95dfc1ec0a1ceb31847c7b793cdc9eae1679450ca1f0edbeff924d9631d11c4"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c1.json",
+      "bytes": 2434,
+      "sha256": "f53cec0d00392e377f409b28cc85c74b92a1ca3852e874e2f4e5babd872dc500"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c1.log",
+      "bytes": 287,
+      "sha256": "1d5fcee277186fb5ca553ba8af581d5a0694342c06ad35e66a41cc462378f857"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0.24_c1.therm.csv",
+      "bytes": 1007,
+      "sha256": "a0b19f3fb2b6b35f3d16eaf5f6dfd898c1846c981418388857b1e5a8efd68a6b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c0.csv",
+      "bytes": 59070,
+      "sha256": "dcd66d889e82b4b2582a2ab8cea24417144790a7510d01c6801551209ded9ecf"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c0.json",
+      "bytes": 2410,
+      "sha256": "b9cb7d76665b76cb90ff7111cfef9a3eacfa54b690d7554bfd7bdf81ecd95058"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c0.log",
+      "bytes": 285,
+      "sha256": "5c427aa60b4bdff6e1d5e892a52bb24cf0d0d5ef4b5aadb76f0a11346f2e8f04"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c0.therm.csv",
+      "bytes": 1001,
+      "sha256": "a1398a5e4663347ca0e4c9cb797d68d78640b98274499588763ac523865abdd2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c1.csv",
+      "bytes": 59084,
+      "sha256": "7c8b50d7ead06af38a9841e8e8b3a8e71905258e566d60e1f07358889a46ac2e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c1.json",
+      "bytes": 2410,
+      "sha256": "fc55ed30a4d342ca741d4b3dc09a61202c41af88cbaef05172e83661867cbf87"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c1.log",
+      "bytes": 285,
+      "sha256": "0442b10b32f48c162c0cf28e6a373eb750a5b04aecb17463fa5e8a6403544b76"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k0_c1.therm.csv",
+      "bytes": 1001,
+      "sha256": "11130aaa95e1298acb667f86c8d51b97dc4c767dda8599bb38b9f5e2a6c9d12a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c0.csv",
+      "bytes": 59045,
+      "sha256": "f30a99ecb9a27e204ff3beefc29586aa17f5586523cfb661d7da6c9c7d8e34e1"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c0.json",
+      "bytes": 2426,
+      "sha256": "c6fc4562dcc00c52d1c8f268a7caa662bdf07c6eb06f50756f339a731f9e639a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c0.log",
+      "bytes": 287,
+      "sha256": "3e5f7ae5641039ef1cad89bdd8ab07f25896c0d7ac65068531c8f7f5905c306b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c0.therm.csv",
+      "bytes": 1007,
+      "sha256": "9c45bc0bdbd2d1f0d813963cea442ee1c933f26073fa2e26c5f027443b6e2c15"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c1.csv",
+      "bytes": 59094,
+      "sha256": "6ca46f76e5a873c25ebce36956aaa304362d42bd0a55b495fd8e87ce624c66ee"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c1.json",
+      "bytes": 2425,
+      "sha256": "5134a9383cfafb37cb37abebd9b6d5f5edac2186a9364185210dc8e6e9704c49"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c1.log",
+      "bytes": 285,
+      "sha256": "d0fbb425014f3505c4f8492cf939d13783ae872360767282b365f065a6ccf918"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k1.2_c1.therm.csv",
+      "bytes": 1007,
+      "sha256": "6fd75e32d874a0aa4c014905671bed7676c8e712dedb4dd7f3d6a2dad96b559d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c0.csv",
+      "bytes": 59036,
+      "sha256": "130f7273d0a47a8b8ea752fd895daf5bd61b79f968d32e98805472d1740b37c9"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c0.json",
+      "bytes": 2426,
+      "sha256": "d575c9f8635589863971ab4d167969d92a28fdd759ed536f2d1979e99d250111"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c0.log",
+      "bytes": 284,
+      "sha256": "c5c672440814ecf5e96d83e350c808d8e00daae8cdd38d17c2cb6f989d6d5bf2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c0.therm.csv",
+      "bytes": 1004,
+      "sha256": "d2efbbed1abcd17cab9ddeebff1c8a50330d67f5d7401275df8d23811c2edae1"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c1.csv",
+      "bytes": 59062,
+      "sha256": "3aca1aad3cfbd69868d6820184d3db1c3dd8a8d86f955db05ca4feef23663db4"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c1.json",
+      "bytes": 2425,
+      "sha256": "2cfd700fc15778b236e0e239cf7f798ecca413547d558514f2a9163ff8bb8e01"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c1.log",
+      "bytes": 287,
+      "sha256": "2c46a3944f4ede8f094156cbd615e94581829be3a2dcdcc4fba2d5f0335a778e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T4_b2.4_k2.4_c1.therm.csv",
+      "bytes": 1005,
+      "sha256": "2a03c1773448eaa690c15e813719246a6749add97622b09bc2dd1112fda3df7b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c0.csv",
+      "bytes": 59067,
+      "sha256": "b76081db0af4bac7fc863b0bc62ed9a2a0619c214854c362b4ea3dc5cf9b026a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c0.json",
+      "bytes": 2434,
+      "sha256": "cf76b279bae551a036a95b985d738fb7468f2c79e24d040662e5bb7e18050122"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c0.log",
+      "bytes": 286,
+      "sha256": "2fc8a822fbdeb05245595de34609bea249f1ae39df169c4de114c980bc33b667"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c0.therm.csv",
+      "bytes": 1006,
+      "sha256": "8e2d6b945b4d243f371d4a54e0229bbc00a83e01dddbdb9fd28265bc2db16d84"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c1.csv",
+      "bytes": 59072,
+      "sha256": "9f64e30b7f1af1d4d403aeb968b6ef5f1c1c8680f31f2cc91efddd85cee7e950"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c1.json",
+      "bytes": 2433,
+      "sha256": "e682d973fef084ee81bcbecd49b855ab3c1783525cab04632185aa1b46838f24"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c1.log",
+      "bytes": 287,
+      "sha256": "70b8449742f6de7cac6fbb99234c7ee21cad329a07f7c85c18e8a691e5fa49a2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0.24_c1.therm.csv",
+      "bytes": 1004,
+      "sha256": "8ad2fe53de43f906811aeb92606e60b7ea57c55db0779ca132de74f0216f58e6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c0.csv",
+      "bytes": 59057,
+      "sha256": "aba62daee916fc33d85cce7711722cbbc95720f77cb7fd302ca0c5417f34ee9c"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c0.json",
+      "bytes": 2409,
+      "sha256": "dea82db9bc8487b4640d3d41866542cbe4dc7b7b28d60a2cacd445f0773d2748"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c0.log",
+      "bytes": 285,
+      "sha256": "ecf056760cf725b3996623e388b14c70ba133c6d996c13808ee4985ae3c11d4d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c0.therm.csv",
+      "bytes": 1006,
+      "sha256": "f5c2dc31b3f7fb527165901b4ac968bba0191f43250771cc4dfe741880b9dfd8"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c1.csv",
+      "bytes": 59067,
+      "sha256": "c1193d9468c6771f4733327bfb6aeb2bc24251ad89f06f3600f2b45ca5faaba6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c1.json",
+      "bytes": 2409,
+      "sha256": "1da02a9dce6e74985801d6a2111b601b264d92c31f6137a077c6f7ef84158b7a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c1.log",
+      "bytes": 287,
+      "sha256": "7dd2bab64d6f8a5946bc22a6833503fd58905e525627903a156b216e449cedf5"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k0_c1.therm.csv",
+      "bytes": 1010,
+      "sha256": "8ce18e653f89d1eb8f3db76a0069e95424ffc35176add4b5a7d9cc63b1f2adcb"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c0.csv",
+      "bytes": 59052,
+      "sha256": "741315d1c114dd88e912918209147608290b07b973029d255dde378bf6ef55c0"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c0.json",
+      "bytes": 2425,
+      "sha256": "5344e759e7e6eab81d426946f5d8949bae103515180222f0a01a280f6ff1a308"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c0.log",
+      "bytes": 288,
+      "sha256": "bbf6b601bb1d1f772b30acd5b27f60ebfe494280ce52adab4fd87c807431aa1f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c0.therm.csv",
+      "bytes": 1008,
+      "sha256": "a8f1531afd5f9773f9365ba620a856695fd6537f3b2379f5909be840fc74b9ef"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c1.csv",
+      "bytes": 59073,
+      "sha256": "a9c19239ccd5dc783c83073389293c2007ae0850d23b94f66cb857be5daced93"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c1.json",
+      "bytes": 2426,
+      "sha256": "6bcf374331341c1ad42f588438189ba919ae7e5b8db855bf0a69bd1cd573f55e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c1.log",
+      "bytes": 288,
+      "sha256": "f3346e2ed700becf552da8f369533cc8e289fdd991c13d5fa93ad3dbea780dda"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k1.2_c1.therm.csv",
+      "bytes": 1003,
+      "sha256": "06b519e46b02e5ed6109353e83ce88fde02c90bfd2862d9e4b78f86552f3f373"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c0.csv",
+      "bytes": 59065,
+      "sha256": "79a221284067e41a402afa3c7c603167de5bcc5d87c254b2835fd463bfc3c2e6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c0.json",
+      "bytes": 2426,
+      "sha256": "a0ae1d5d2a469bcbbcda5ea90fb28b0d04982fbb8700699721874687cb971d41"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c0.log",
+      "bytes": 286,
+      "sha256": "7baf060648e07df4ec70e786577453badea1cfdd185699561dc0cc29380cc592"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c0.therm.csv",
+      "bytes": 1002,
+      "sha256": "e3224587feb7a9e3e88a254bfcd990259d5ec09987f278957929696d24a6f711"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c1.csv",
+      "bytes": 59066,
+      "sha256": "09fa85cd3648b254f78c844502d3bc91ebb17eb03a4bd426c52fe8bb7f2ed29d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c1.json",
+      "bytes": 2425,
+      "sha256": "415c5a3ba826c483d4591f74697e769fa1347204d34d8f0a0b7749faf4017678"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c1.log",
+      "bytes": 288,
+      "sha256": "3e72363ab5eaa6b8db05de84b101e62feaafc415c354b6e7a86ff8349b19079d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_L128_T6_b2.4_k2.4_c1.therm.csv",
+      "bytes": 999,
+      "sha256": "ef963a4536f883e6d28c51ea131e675c62a4a3bcffcf6ac8e51d37216c1b0811"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_analysis.log",
+      "bytes": 330,
+      "sha256": "5e27b27face0c3bae939da49ceb0c9f068e5de8c76fb2fca2f4b32b5d515622a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_analysis_receipt.json",
+      "bytes": 351,
+      "sha256": "ab5a26e9bbaa9a51ad348e9d0f6190249173b9b580f7af22d4d3d461c144dd41"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_batch.json",
+      "bytes": 162,
+      "sha256": "8189a12313ade5c1076ffc3859620bf75544ca6c15a87a5e31facb8310d4917b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_batch.log",
+      "bytes": 1671,
+      "sha256": "65d386a332449222a76d87e226c49c0337838bf28440f29ed1ac9cb58d6c25b5"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_plan.json",
+      "bytes": 7988,
+      "sha256": "d17b66e1726af06bd1e6ac4c7f1a23b59e71b80061b6dcaaa8849ad187f5bae0"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_sheets.cpp",
+      "bytes": 8280,
+      "sha256": "df80ad66b3276cd8d14e07ab69893554ab44ce6c8600e96d9f79fe4ea73881af"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_summary.json",
+      "bytes": 114286,
+      "sha256": "7ad91fe95ab0fb74448b93ee8c25eb48338231a0bafa54fc366e73955a0c4ccf"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_verification.json",
+      "bytes": 2179,
+      "sha256": "e7df392aa9bdcc44586e4bce1db418af69667b220c841059e45488966729022c"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/face_verification.log",
+      "bytes": 67,
+      "sha256": "78df162e6d7d20d30d391760bbbac40513bf8f46a2a21bf4820801718af73264"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c0.csv",
+      "bytes": 118122,
+      "sha256": "39f868e2946ce32a5d37f7707dff374eb00a691b22cb6c6588ab9425cb21b632"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c0.json",
+      "bytes": 2037,
+      "sha256": "2f8d7ffa0791253aa4acfca6d31406ca3b06e7de82efa4852dbadacb4e1baf94"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c0.log",
+      "bytes": 508,
+      "sha256": "e0bcd87e0e54ba043ee6dc65c8b050527c51931cd0c772705059d4314f97ce3e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c0.therm.csv",
+      "bytes": 1990,
+      "sha256": "75be903c5ec0ff5a30ffaffa2b454a248fb1d59b3c7a6cb6ef2792c8adf8fb6f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c1.csv",
+      "bytes": 118174,
+      "sha256": "0c0e670586379c263a58d2b2ab4276323fa86d4a1b451e0c2fd24333781285bd"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c1.json",
+      "bytes": 2037,
+      "sha256": "ae93baedcbcd9a344aa237d873d09fdc558cece90145ac98bb21a2e6a3df5c59"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c1.log",
+      "bytes": 506,
+      "sha256": "031a2b91957379194b87b483daf6cb07055909e06fec3850167a24d850afc4a4"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k-1_c1.therm.csv",
+      "bytes": 1985,
+      "sha256": "1f2d8bff3fbfb76535ba96ba1e5d748198e55481896264b093da66c813dbfe7c"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c0.csv",
+      "bytes": 120425,
+      "sha256": "8b134a5c887f926833f71402c71aa1be25bc8d6db64eba95ef7dd10be866ac3d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c0.json",
+      "bytes": 2033,
+      "sha256": "38c907e9134cf39498d8ad991f139181010591394c6aeef427adb53282038114"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c0.log",
+      "bytes": 509,
+      "sha256": "ad97a81c5668c2e056311c1794049def67099b4fce66dc60b214a8a743fb446a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c0.therm.csv",
+      "bytes": 2017,
+      "sha256": "24039a2c602298746cc006cb621dc8681b338ba9cf76da9f4a9cb1f774a64a74"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c1.csv",
+      "bytes": 120380,
+      "sha256": "d20f6923581bc78be9da9e66b322e7f3ff17cb98fb754a7cf8759f2d29a8dc0a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c1.json",
+      "bytes": 2032,
+      "sha256": "9a9f969a0be4f93f665f525c3abfde5fc2c44d824888f6f729cd291329930507"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c1.log",
+      "bytes": 507,
+      "sha256": "95c01da52078c7b95f586cbc035e0f53d35e2e8c0798df09349aecccb8837778"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k1_c1.therm.csv",
+      "bytes": 2030,
+      "sha256": "b418936db5fe66414cc25104dfb8dd71991d421326775ed5896c20e6fbe3eda6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c0.csv",
+      "bytes": 120377,
+      "sha256": "698903a5976cc6bbb2eac55ec0449cf5fd72b12a28dc7dc0202f09ff073fed7e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c0.json",
+      "bytes": 2032,
+      "sha256": "562715154126e07611b622a06691788f24292eee7f07ba30ac679019322b2e43"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c0.log",
+      "bytes": 509,
+      "sha256": "a355c67ca76e578e5525a0ad8d9f60ed04b6a4ca9e9418d171ff21396cca0d12"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c0.therm.csv",
+      "bytes": 2028,
+      "sha256": "9fbeec2653cf194198f99d507087f2be12851f5d6def7f8f1b4572b46468944c"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c1.csv",
+      "bytes": 120415,
+      "sha256": "d6ceff45789197c755922b5f3ad2e857ea99e0044bae6f9c0c0fd8106e32567f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c1.json",
+      "bytes": 2032,
+      "sha256": "c782a06e47ad0d49b2726d0c1655c022410cb1c872c6bcae888ed69f0b03d902"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c1.log",
+      "bytes": 507,
+      "sha256": "12e32eb45092f157380cc519bc76c80dc25ad7bb747b16212ed66589c13ad644"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.3_k4_c1.therm.csv",
+      "bytes": 2026,
+      "sha256": "b6eafe687cf4c4c1af71a1153ffdc2da143d97421fe17d1f6c0b661796557add"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c0.csv",
+      "bytes": 118112,
+      "sha256": "5b5da00aea8f3408530d028993336342a6eb862af9eca9b9a1cdd8cd3b367844"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c0.json",
+      "bytes": 2036,
+      "sha256": "a2dbc16029b4c1e186387993b9987eb5658005139b71f2ca41d4ce37c08f2726"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c0.log",
+      "bytes": 508,
+      "sha256": "c35291d5d6eaac3f348cbdfc6e7d05b111322d0b88446d642f721eb7b30b9641"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c0.therm.csv",
+      "bytes": 1991,
+      "sha256": "5ef28e2bdc7d58b6b476462493bf97560cc3b302e523afed6d9c836002962eeb"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c1.csv",
+      "bytes": 118072,
+      "sha256": "af5d802fa4a23eec0a24f1d5b04ac9df622d7214327e039f9d9438a50d83157e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c1.json",
+      "bytes": 2036,
+      "sha256": "babdfdb73e484c817a79c0aec13eec739afeb8e6ed7ef2698038dce17ca61023"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c1.log",
+      "bytes": 506,
+      "sha256": "59840a8ad8dad59e2de48a3f5bd885568c8988593baa58e4eaea2bcee44d9e93"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k-1_c1.therm.csv",
+      "bytes": 1987,
+      "sha256": "31799ebf8cf875b9395d5fe7361cd4f6d1b073e8242cb2ec69bda18c1f568e4f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c0.csv",
+      "bytes": 120367,
+      "sha256": "027c724f36c9f62cd16a616638a1a97d75444594ebd25e5c503ef8992af901ca"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c0.json",
+      "bytes": 2032,
+      "sha256": "ade9fdeb3b1e75e557b79f86900a3db27372a3fd0ab4711d6c4821ef465c4498"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c0.log",
+      "bytes": 508,
+      "sha256": "456bd4cb53384afe424b4b698eb41199938bc3e7856b8493cf8b61de2a2da405"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c0.therm.csv",
+      "bytes": 2022,
+      "sha256": "48715d88cc57eec01b7076eb8418eabd2432ede3d8636171e9f7630ccbbbc448"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c1.csv",
+      "bytes": 120302,
+      "sha256": "946a4759fb099130883f615084ea38c7b6d168be53ad22f344d6e2a11a85fb50"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c1.json",
+      "bytes": 2032,
+      "sha256": "95f9709ff049c571fc32bf136d73c20bc16453af3cfd4be3d88b48b1ce84f73f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c1.log",
+      "bytes": 509,
+      "sha256": "c51730e8b5f989102264868298087559ea0592b656e6bf0d20452419b62b8b94"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k1_c1.therm.csv",
+      "bytes": 2025,
+      "sha256": "3ce43cb2eb7fb14a42126d6342dd26f7abcd72b77453536e62a5642f5696f856"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c0.csv",
+      "bytes": 120352,
+      "sha256": "509212fa49fb855e11e28cfdfb3a4658bd87531c47f185fb3badfc2feffa7225"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c0.json",
+      "bytes": 2032,
+      "sha256": "c3a347e405346498cd888fcc124546f933d61fa351706c561289d1540f40708e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c0.log",
+      "bytes": 506,
+      "sha256": "338ca7f20389a7fbed625cc4982f577fcd54ab4ca7d35d01d7f3ba711b94e182"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c0.therm.csv",
+      "bytes": 2034,
+      "sha256": "55abd8f94dda68f7d2d9cae733ad5148140446454b2c25d9aae6030cd5ae65f4"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c1.csv",
+      "bytes": 120333,
+      "sha256": "1595918a93318f1e9df9e4da25c872acf5b74f32536ff86a97a7d66d5a333a3a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c1.json",
+      "bytes": 2032,
+      "sha256": "7c1d52026d77f2032abe4d2e30ec8002385a41ee3df852c79e3ea1737861ca6b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c1.log",
+      "bytes": 509,
+      "sha256": "a34ba998802b2de289f983270684c6727f296b0121e14d251ac19b035e869386"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.4_k4_c1.therm.csv",
+      "bytes": 2022,
+      "sha256": "8042d3d668e113c9caf5049f750c66efa91bcb2c26e9fb8ad86b4979891b0f59"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c0.csv",
+      "bytes": 118141,
+      "sha256": "514ea5e7d6f4b0197f4815e3542d1c68cd1095eb37e070e6e04c37fb23e16732"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c0.json",
+      "bytes": 2037,
+      "sha256": "027af5234fe280760447da32a21efce268607dcab7023ac7dbf3ebe348087880"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c0.log",
+      "bytes": 507,
+      "sha256": "a2fb6201fd6716b2ac343810b469d2d608efa55864225ca0da82be7e2cc1b92c"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c0.therm.csv",
+      "bytes": 1995,
+      "sha256": "6eec34a0cdc2932ba8e9d245e02a4156e56709104a8d8141c296b3fe4f5a39fe"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c1.csv",
+      "bytes": 118170,
+      "sha256": "395e9683d61d72e9acaa384742066a1df8d147fadb7d7f84de6e15fb4122fe38"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c1.json",
+      "bytes": 2036,
+      "sha256": "34a8518e75b81fc89c35e031861e792c255175613b0ed7619c00a9a431077fee"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c1.log",
+      "bytes": 508,
+      "sha256": "6313ac393d785571d07e9f8f8bd431d9dd7e642c009e427a86ac908728744f8a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k-1_c1.therm.csv",
+      "bytes": 1989,
+      "sha256": "666687a390b1797873d63b1acfb0599d15663ce966af285b5337366d524d5e48"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c0.csv",
+      "bytes": 120371,
+      "sha256": "bcbdf614b56190448fc6842c500246f7964a43451c1dc02a7066c1fa1bb67b7e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c0.json",
+      "bytes": 2032,
+      "sha256": "842a35f9defe9a9f619120bf6d9fa6035c928b32881c6e4752e632724a86ce7e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c0.log",
+      "bytes": 509,
+      "sha256": "6793f46eac5436ae867ba008a4b7c2eb07a028125f461c654df2d7112ced89ab"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c0.therm.csv",
+      "bytes": 2032,
+      "sha256": "977852aa3ce2102456f6c94d1990eacf232f70c5195609d4d261626de8159231"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c1.csv",
+      "bytes": 120352,
+      "sha256": "9fc3272f9af3e2cf6a4124d8e153742834675701db7d9e6f5413a2444728f6cf"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c1.json",
+      "bytes": 2032,
+      "sha256": "b298f686f08ce0ebef724c622a14e54c6362ffb7394a35bd3e37e9d3b48af557"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c1.log",
+      "bytes": 508,
+      "sha256": "33d733cc437845ff1fad491575a8d0b699a5f7a55bb08b2316aba513ad628357"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k1_c1.therm.csv",
+      "bytes": 2034,
+      "sha256": "34d6f3d1424bd01bf36bf86627854321ed6c289f00941bb6da7a72dc6a821839"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c0.csv",
+      "bytes": 120347,
+      "sha256": "0095c3b2b262941ecefb3dcdebab45c21dae29a47fc3a3ebe9fa92e18e60104e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c0.json",
+      "bytes": 2034,
+      "sha256": "2d98bb1f3c0e68f3c8d91b7ed5ad25e796601580d9e77ae2b5cbe471cccc58b6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c0.log",
+      "bytes": 507,
+      "sha256": "0f5e85e9556aadd91f56ea6b8a55a8a10ed371bf3b9d7c4e1fefc025babc3ed2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c0.therm.csv",
+      "bytes": 2024,
+      "sha256": "94f4a1817e3a7a3638b8005d56235ec5bee0c4f3100783d5c1d5440d2a1d5e02"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c1.csv",
+      "bytes": 120390,
+      "sha256": "5433e0470a18dfcba979eb2ad169a7d2027b39da4faa692e7346cddcb13e1819"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c1.json",
+      "bytes": 2035,
+      "sha256": "304b4ed98a962b9cd929b439566f2b6a1d9bc87d5d5ad0cef28e832926846514"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c1.log",
+      "bytes": 508,
+      "sha256": "891878ba1cdb71de71f70cc66ce8b079f7f57add7e0e3e21463ad509d1f27c38"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L128_b2.5_k4_c1.therm.csv",
+      "bytes": 2033,
+      "sha256": "4fae218370cc12d2c558bb20152b9a7bc7eab4ece9a61fbcf65d29fa531c8ffc"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c0.csv",
+      "bytes": 118114,
+      "sha256": "6a2d6ddfb47171983851c123fa109672ab41c9cf9d5c335004cce863e8bac8a6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c0.json",
+      "bytes": 2036,
+      "sha256": "ab757718a21aefaa6607b2b21260f8f02c424eb09e4706225fd33690e755b23a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c0.log",
+      "bytes": 504,
+      "sha256": "19b18d1827177c3fa0b1eff1079322b3565876d48501c422582c0e25b83b2e02"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c0.therm.csv",
+      "bytes": 1993,
+      "sha256": "45f84c402edf6edd36e152b3c6563011edfa1d2afb075dd5748cc0d5d47b8ba4"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c1.csv",
+      "bytes": 118116,
+      "sha256": "bc338854ab88a271ae358c3e0b5595700022359411f245a6388c799060cfc49a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c1.json",
+      "bytes": 2037,
+      "sha256": "2d3ff6d6f421cb67e689df877b7552568243f04109fc3bd4ef042c3087403666"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c1.log",
+      "bytes": 509,
+      "sha256": "97976a99356ebfdb862096bc2aeaf7742e5da9ce9bf7b010062e012204af7935"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k-1_c1.therm.csv",
+      "bytes": 1990,
+      "sha256": "46642536b24a05e6d3b3bc692625b744074103b9b05ed1428a7a961b8fc093d3"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c0.csv",
+      "bytes": 120330,
+      "sha256": "58a7ae6aeb17433e9cf111524747c8a687b662001ee4e2240be4406d6015696b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c0.json",
+      "bytes": 2032,
+      "sha256": "f8cbec144bbe6c1994f696f5a39df0c740192b441ecb0ad7463504755a94959a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c0.log",
+      "bytes": 507,
+      "sha256": "9f0e9af04eb5e396b718e53cff10b56c3bc0ab2fb73f5d1b63220f1336cc5014"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c0.therm.csv",
+      "bytes": 2028,
+      "sha256": "afd938fd913398c6a54fdc5754c68e66808bb63aa3f07529a2bdd541b766af88"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c1.csv",
+      "bytes": 120311,
+      "sha256": "366847cd9735dcdd6b8ca938ea069ca0f4b139e163a752577b42b2c94dc7f431"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c1.json",
+      "bytes": 2032,
+      "sha256": "b31376b955ca61dc765882944d969934ecc32145f335d63c7393f7d33d3b20d7"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c1.log",
+      "bytes": 507,
+      "sha256": "1ed650135dbb5fadd576723913c4eb045e8f9f010083d9252c0c0d9906b281db"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k1_c1.therm.csv",
+      "bytes": 2021,
+      "sha256": "528d77bbc56de87a8f79f90b309b3fd8e4397682aa03c9465409b881b4ad8078"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c0.csv",
+      "bytes": 120337,
+      "sha256": "2f3d2c5cfffe98d1ba1c93d7a66df5bbc4d4a130229e6415966f7b98dce5bb6b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c0.json",
+      "bytes": 2032,
+      "sha256": "3767c48b4b9cafc4bd24f52637aa52fffc640f13f9a4598094898757a36c8b38"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c0.log",
+      "bytes": 504,
+      "sha256": "94de235bd67a0eca7bafb56711a67bfc213450c86a4b86670b0f2d43d56a1d1a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c0.therm.csv",
+      "bytes": 2026,
+      "sha256": "125eef898bc0244d6263bc0a3ca84654b023fffd262f2698731a48e6373bfcf5"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c1.csv",
+      "bytes": 120342,
+      "sha256": "74964e44865d51949fd302730ce2301a1c2b1db881b623131252bfa362626b91"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c1.json",
+      "bytes": 2031,
+      "sha256": "363056c356cc5ce2e1b5467f9dc7f931e3be6bfaa1cf3b050a3a8c462e743f2d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c1.log",
+      "bytes": 506,
+      "sha256": "d19e6008be5993c9e5f5ead2acd7a46c2513b533ee4408c08a73e0bf16f677e3"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.3_k4_c1.therm.csv",
+      "bytes": 2024,
+      "sha256": "4c55cc71507c796929a7bdfa0c08f4283fe401f7d18abad1dba85f484adef987"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c0.csv",
+      "bytes": 118082,
+      "sha256": "42e1c04f6978eb7c4df09c94b133063f5d34043e14368a42729a54f0a78cae37"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c0.json",
+      "bytes": 2037,
+      "sha256": "49c7d214a394b58a944240e511b3b03d1b2f8c0c767d431bd64bdb3efaba3fab"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c0.log",
+      "bytes": 506,
+      "sha256": "5419b0a4b62916d4499046aa74c25edcc500aeb9b421773f6281a70cf2f1aa47"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c0.therm.csv",
+      "bytes": 1989,
+      "sha256": "b6ce61377f6846d724554a5fc4304cfd91b8ba58a24a8493d41e13abfef57d10"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c1.csv",
+      "bytes": 118108,
+      "sha256": "19088cb85e46e500dc8ce610e9b56ae01cfc6b420c6d9d24c1e33e6607e51aa0"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c1.json",
+      "bytes": 2036,
+      "sha256": "b487461852cd6f348aff495eb2d842477925e2d0d90f3930be569dd578ba6c35"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c1.log",
+      "bytes": 509,
+      "sha256": "963709f034335ab55efb38c23fdad02080a657aa47ab484b896ba70c958b898f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k-1_c1.therm.csv",
+      "bytes": 1996,
+      "sha256": "05302d269efaf1abedf9642f5b37219a513da301b80df5d97cbcfcfa3a9a3813"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c0.csv",
+      "bytes": 120415,
+      "sha256": "57401f7da70f2f40d9041b3d099c88947da9297258adfe6673419728b2d635a9"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c0.json",
+      "bytes": 2032,
+      "sha256": "de4fbeaea882e02de413a243cc2a957d953a972a61486c32a9b2bd70d2db23e9"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c0.log",
+      "bytes": 507,
+      "sha256": "8e9fad7e5d396b8c2281e86be1d5a7baa83e936ed67406ef72bc3234b7029d22"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c0.therm.csv",
+      "bytes": 2024,
+      "sha256": "4d2430f546605073d81f9564c941e31950f67c9d77c1ddf41b29a86ede06cf26"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c1.csv",
+      "bytes": 120401,
+      "sha256": "9eb3af67a59b328dfcd497542f72c97c179958c155f14dac6e6a3a7afaed9d29"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c1.json",
+      "bytes": 2032,
+      "sha256": "56ff5157fdb5537e5c8b3548daf45dd7133f254c890386e95d13d071904351fe"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c1.log",
+      "bytes": 507,
+      "sha256": "f70a3c3fb5d59e51c550fc81c5b1c9be8e6dbe4529f1d60c657764ecc32c61aa"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k1_c1.therm.csv",
+      "bytes": 2015,
+      "sha256": "5f62ad084b48cee815a219013928f763bf74c7f3328584775b0588e39e8bf623"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c0.csv",
+      "bytes": 120333,
+      "sha256": "26646ee2546ddcbb75c1847386654b8b17f13aad3a145d70ccead9024db229e4"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c0.json",
+      "bytes": 2031,
+      "sha256": "ad0fcbebfe33f96f7a78082159090143b1f3f6879e8f955f79f1b60c24dda7bb"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c0.log",
+      "bytes": 505,
+      "sha256": "3165da402d2dd7d13b33996890b0a193f84c69583a1f41b74a4eed4eb0344614"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c0.therm.csv",
+      "bytes": 2023,
+      "sha256": "5a94ce02dad7fc6a8b8ea90ab8c456291a8b6d6098d1e539e3d4d5b542525e88"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c1.csv",
+      "bytes": 120411,
+      "sha256": "f7349daaa13b1bda85698659f462edb376a1ac4fdfe33dd3cf66bcc0ad4bdd71"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c1.json",
+      "bytes": 2032,
+      "sha256": "0e486d0a3e3441a38289375fc7f9c1350f2e65155208c9d1a693d1cc0c16e6aa"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c1.log",
+      "bytes": 507,
+      "sha256": "bd1662f01b5fe59a9b238500faaf702dfde69223e0ee3fa0b534aa478f00ba6e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.4_k4_c1.therm.csv",
+      "bytes": 2021,
+      "sha256": "895d406c0d63c9549fa8a75be07c1e6cc032083f066ef9f862c8042aa9edf726"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c0.csv",
+      "bytes": 118089,
+      "sha256": "b5be2bbc98100d21992e4661bb15f5df7757b9c79ccb80e7cf8492c72b59469a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c0.json",
+      "bytes": 2035,
+      "sha256": "1f18ffaead7409823efd60fb6939a45d3829e98ab697e1bc7bbd6d18df0c3e9d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c0.log",
+      "bytes": 509,
+      "sha256": "a030ad57647fff417c78f01d7b7c58e0de1af5b2d87040886600b843b00f2865"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c0.therm.csv",
+      "bytes": 1987,
+      "sha256": "b01826ad92df3e086a9c660c30c369b16e95c14a835c7e0567fbb7f11c49ae4e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c1.csv",
+      "bytes": 118151,
+      "sha256": "dad6baaf5b5c4dc1246af8bcfe9639e69bbff49caac1ec4abf3c1ccb51b62ec2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c1.json",
+      "bytes": 2035,
+      "sha256": "dfe8e02605d9ae7cf76600e5e595f8cf46bf1be72b807b27fcfbe85d7652d02f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c1.log",
+      "bytes": 507,
+      "sha256": "0bba6e905aed2845f2f9188a9ae1e351b9cf137e7bf23e3ac1baec316158e58b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k-1_c1.therm.csv",
+      "bytes": 1993,
+      "sha256": "c9128a7c65e2aca002313683a1368a71f1180b44d9336d1b8c9935d12a2ebf1e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c0.csv",
+      "bytes": 120392,
+      "sha256": "7a7127a79b1b98f3f2bd432519c5ab937f2a26a78a588db0df72552dcf3a9109"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c0.json",
+      "bytes": 2032,
+      "sha256": "b1fc6713fba9e2af1da55afd0dbe296ad9a787213ed7b50d22dd36365f7890f2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c0.log",
+      "bytes": 508,
+      "sha256": "08b0b5a810af05f8516b1eb8b7609aa86686a41b3a980d28a491e0c4d4dccb0f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c0.therm.csv",
+      "bytes": 2022,
+      "sha256": "b73622c0837b7b73962c70f569e8545734a678338dde34feb52412d08225c6d0"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c1.csv",
+      "bytes": 120347,
+      "sha256": "825d2392a6b9ad8efcba45716618fc1423f8f5ab8ebf710271eb7b2c2070231f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c1.json",
+      "bytes": 2032,
+      "sha256": "3c7044de82f6a3144700838c17c8adc7f3c530b1d7228b56abd4e54d88749b84"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c1.log",
+      "bytes": 508,
+      "sha256": "ecb5ac39d4203a42182061315cfba4bbd3469d7d7ed637f1366bea4dfa064973"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k1_c1.therm.csv",
+      "bytes": 2029,
+      "sha256": "8c7ae7ad9dd981bb589736a40bcbd726128444fb11dee03962acf4eb95321918"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c0.csv",
+      "bytes": 120366,
+      "sha256": "f9321b45d7c3070ed76b134af550e727a9172d9469607b52af4d8cfb8905a3f2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c0.json",
+      "bytes": 2034,
+      "sha256": "319d33d219fe1512b7bbad58a9fb9815a3f7d7361da1fbf985f14ab8d193d314"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c0.log",
+      "bytes": 506,
+      "sha256": "07d1f7451d4e895286dbd9ed05ea4bce8c3fb3181eab0bfc57b695b940d9a901"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c0.therm.csv",
+      "bytes": 2042,
+      "sha256": "177a83a756430025648df60dbb438810c2d404189a039aad42652bcd1bd0e46f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c1.csv",
+      "bytes": 120377,
+      "sha256": "76f2b777d87a9d738696c56c830e2db006a99d3b42040b49ff9caa61cdcfeb34"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c1.json",
+      "bytes": 2034,
+      "sha256": "4dec71ad85e693add1809b53103cc5cf1a5ebac2de47d1a19c5202cd5dbf0b48"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c1.log",
+      "bytes": 502,
+      "sha256": "90a739e968f707c9b104b909aee9313cee490de48d7b4adcd7cb65104f32d879"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_L192_b2.5_k4_c1.therm.csv",
+      "bytes": 2029,
+      "sha256": "ece9f1bb2b71a3cab52c42cc539dcc8b196e29afc591a9451744a648e69b3fe1"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_analysis.log",
+      "bytes": 594,
+      "sha256": "0f7f5ce588aaec1effce76a2fa2f3645977d993a3666ed60362c90d407144e2d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_analysis_receipt.json",
+      "bytes": 352,
+      "sha256": "4882e1c6e80658e391247f1f4554916a2f115133610f8b0a84b221f90c9a9bca"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_batch.json",
+      "bytes": 162,
+      "sha256": "46a35a51931fa95ecbf3703283838ff6f3d3c2dcf8a507ad9db32dff48661a24"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_batch.log",
+      "bytes": 3258,
+      "sha256": "1955d974b0413fefadb775cb2fd509ac312c3a91895d9a537713c38ce5c01741"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_plan.json",
+      "bytes": 8773,
+      "sha256": "b1cae21cb76b73c87f1ef013df464a447e4d57a4ab350e25b4092238e2c8da1b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_summary.json",
+      "bytes": 156402,
+      "sha256": "7874858a46eb5ea9ed8a18446e88c08c5f057825a8db0e6ed890e6850c2010d7"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_verification.json",
+      "bytes": 2364,
+      "sha256": "9161e1f903e9a6880354e77115ef0d1955d4f43b474ca1e458f0e848ad30c639"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/gh_verification.log",
+      "bytes": 67,
+      "sha256": "cf982f13c88592f0c27b26adba7c3f6234ddc1030c4be1f5d9d8ad9ac2a93d35"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/lock_release.json",
+      "bytes": 43,
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/manifest.json",
+      "bytes": 179537,
+      "sha256": "9967b312272d9b1c68e5613eac1243e7281b50fe045ee2255041f83faac677e6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c0.csv",
+      "bytes": 118156,
+      "sha256": "bd19e85322130a1ec313a583486fd345745d8a74c4ed6110004938f1d6dc5ad3"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c0.json",
+      "bytes": 2233,
+      "sha256": "c30cbdd63014b001339cae257478e757fefd97c221af74d50b44ff2ddeee6f3e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c0.log",
+      "bytes": 505,
+      "sha256": "802aff80c518e3bd4d840fd3d9752485e3bf2d81b512fb92370ee464f6629573"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c0.therm.csv",
+      "bytes": 1988,
+      "sha256": "41687753d0dcdca10883b91bdfe982abc8d1ea1a31d240500d2158b1e67f8574"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c1.csv",
+      "bytes": 118133,
+      "sha256": "7fbcd03891b2e29c90947c23429a574f835fa0f40ea1d573241b4d0c144409b9"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c1.json",
+      "bytes": 2232,
+      "sha256": "b82d0f24ac51e05320c794166b5de662ed4dadc3abbe4718ed8d69064bfbb23f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c1.log",
+      "bytes": 506,
+      "sha256": "46e1d6721fde9c5d1d7f46536ee37c329ca8fea1de899695434b0aed3ad74378"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.024_c1.therm.csv",
+      "bytes": 1989,
+      "sha256": "3730d32fb8c925d100a7fe0c7b25e612a21d276f66fb635369fc61621666e005"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c0.csv",
+      "bytes": 118080,
+      "sha256": "120d292e2b43ae178c1d25f2977a058c25b5ef075b945ab8fe55202a43d753f7"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c0.json",
+      "bytes": 2225,
+      "sha256": "31a8b76c4caef15d02724d9738afebe58a4aa00b39f306b9c8c82904e9fb3ca7"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c0.log",
+      "bytes": 507,
+      "sha256": "82d4792be5acfda6590bfe3e08d775a085a7cebfebd1065b41b14ab5dffe071d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c0.therm.csv",
+      "bytes": 1990,
+      "sha256": "b77209f90523589a98efde5443f27264f7f3c10f0db42e7b88e1d31ba450339e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c1.csv",
+      "bytes": 118091,
+      "sha256": "a3a1ef68c5f5ecf487965c6df5fcfd6da2172e6438f801d9fe51c1e5aa0dbc5b"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c1.json",
+      "bytes": 2225,
+      "sha256": "4204586cc5289fce612dcf45e93975bf51422204219db5a885a3afc48c3c33cb"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c1.log",
+      "bytes": 508,
+      "sha256": "7a626e233f1f7e5cf0bca4039a3b0dc8a8c916ed71607d69eabd4034d22d5705"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k0.24_c1.therm.csv",
+      "bytes": 1990,
+      "sha256": "8bce836aed7a18f45ba3fa6cb101238ef19c56e2cb172fa7835b16a728c2084c"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c0.csv",
+      "bytes": 118165,
+      "sha256": "72b824f8bee22759c29e3aa213693e35a3abf60fbfb9895d1a8c644639ef068e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c0.json",
+      "bytes": 2216,
+      "sha256": "c34619e1ef0ced276ce282ecfcc70981cb415ae0ca55b3b387612ded15678728"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c0.log",
+      "bytes": 507,
+      "sha256": "ed85a2a7f9caac970880b7aa221e67dcaaa29e039f5a914179fd9ba13758e74c"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c0.therm.csv",
+      "bytes": 1987,
+      "sha256": "eb2b721f81aca1031091d253faeb27ac0babf25dd42a2fe935a47abac2c0d4f5"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c1.csv",
+      "bytes": 118169,
+      "sha256": "9791ef5f40ffa0d568a48679d26c84e75ba409cd1bb94d5c7970b4b648625df7"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c1.json",
+      "bytes": 2216,
+      "sha256": "a54bb0fc83b0a23f8dc34b896c0f23a2b585770a0e0beea81a7e60e381a87ced"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c1.log",
+      "bytes": 507,
+      "sha256": "6a10cf2f3356d544ac75f405ed55e138876da440fbfd43415f2af43cd92f6e46"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k1.2_c1.therm.csv",
+      "bytes": 1987,
+      "sha256": "4a7e840308d8513b494b0cd48c062f4140ddfc9bfb5c9a3048ecc8aba592897e"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c0.csv",
+      "bytes": 118146,
+      "sha256": "113293f0253169b0b049de459a03d8d14a2a5ce247cc6b25ca3cb71b229aa666"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c0.json",
+      "bytes": 2216,
+      "sha256": "a1d1277f7d06414ada5ab768d2b6284e8e93407246fee746469e91fb08ec9c3d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c0.log",
+      "bytes": 507,
+      "sha256": "92ec2564582cb92328f0d74b1ebf3a4f4e305ed301a421f49552ffb2ee167c91"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c0.therm.csv",
+      "bytes": 1991,
+      "sha256": "aaab8aad36f7dd4cc5f03cd4277a0d141be6d69c3b43fc73db9bd673a7405aab"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c1.csv",
+      "bytes": 118098,
+      "sha256": "69b6be14df5704ada6021e5baac33b1a6724f1ff95f6c97d6d614490c3faeb32"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c1.json",
+      "bytes": 2216,
+      "sha256": "efe14f00f89476c754d2acf734472ab95e3ef5f8aa5d1d38dac4a9846cdbce9d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c1.log",
+      "bytes": 506,
+      "sha256": "346d68f106720bbe51a34757013ac05f39eef929611e98e6432d3a72a9f7609f"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_L128_T4_b2.4_k2.4_c1.therm.csv",
+      "bytes": 1992,
+      "sha256": "4bad0d21c7850b8007a53a644aed5e99777ba2fdfa60c3ae66f905ba23352183"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_analysis.log",
+      "bytes": 161,
+      "sha256": "ebed174767e758bed7e0a1d0af4747f7a457d448eb8f57bf407bc02ad841b5e2"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_analysis_receipt.json",
+      "bytes": 351,
+      "sha256": "8185d62dc4e7e90f6d3fc32805cd2e9da994e95c6c599316c892c3817e9edf0d"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_batch.json",
+      "bytes": 161,
+      "sha256": "3fc3a16674c7347b4579fc635f3720dccdcc11744d4b7723cdb692ae404a5ad6"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_batch.log",
+      "bytes": 812,
+      "sha256": "bda58a26319a4f01a7422dd26248a7b30457e4792b099f1093f61ad361346bff"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_plan.json",
+      "bytes": 2046,
+      "sha256": "49cdf4db419b7af65929acb815579f323fa95b55a70d075746edc6e4b75f0c94"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_summary.json",
+      "bytes": 64905,
+      "sha256": "943d9e6030435ad71f2da93ea66298a0d3ad20fc6bb050869868cece434c5c13"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_verification.json",
+      "bytes": 1175,
+      "sha256": "f6851b694cbb854f8bc11f4e28ecde59c69695916e64af708e78f5c29b5fbcaf"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/p4_verification.log",
+      "bytes": 67,
+      "sha256": "e0b35295f737434493f92e7b95c82166fd4bbf955f3c7582ee883a84452d1b5a"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/package.log",
+      "bytes": 139,
+      "sha256": "cbcd07ef37397a0016e5944d49275ab477b48a62a10f0f1b04bc3ff279909487"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/package_records.py",
+      "bytes": 4325,
+      "sha256": "3cb226985ae9b54c9a8bbe248e81182b7072710e64368337e644c77a0e0f59b9"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/pilot_face.log",
+      "bytes": 71,
+      "sha256": "4fa7c24f7a5b5fcdbddd674ce2f7d7337db321ecb02a61d5c0263b18712463dc"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/pilot_gh.log",
+      "bytes": 69,
+      "sha256": "2d7937225427332361317c0596d364fc3f203c12cac33b4e11f1c7d278763435"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/record_checks.json",
+      "bytes": 662,
+      "sha256": "4dd659eff0bdd9eb7146933a8b9dc58f5d0204bf41a0aea0dec887b80b0fe0a8"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/sheets.cpp",
+      "bytes": 8213,
+      "sha256": "fc2653cf857a97e00dd7b158f9c659d84fda46fee150ab47a01a07c3c440f8a3"
+    },
+    {
+      "path": "runs/gap-long-sheet-guide-astra/verify.py",
+      "bytes": 3543,
+      "sha256": "b2327496e0675579021099116afe4ce2d84a096becd5d434f5b150f9b03c6381"
+    }
+  ]
+}

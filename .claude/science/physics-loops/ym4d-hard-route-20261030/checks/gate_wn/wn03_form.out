@@ -1,0 +1,43 @@
+F1 d=4 closed form vs direct, worst rel 1.07e-14 PASS
+F1 d=3 closed form vs direct, worst rel 1.55e-14 PASS
+F1 d=2 closed form vs direct, worst rel 1.43e-14 PASS
+F2 d=4 (3.4) vs direct colour contraction, worst rel 3.55e-14 PASS
+F2 d=3 (3.4) vs direct colour contraction, worst rel 4.93e-14 PASS
+F3 soft identity (3.6) at level 0 by finite difference, worst rel 8.31e-07 PASS
+F4 d=2 axial slice: |form| worst 4.89e-15 PASS
+--- axial slice in d=3: k3hat^2 * Z on v1 in S1^0, v2 in S2^0, v3 in Q, and the full form at finite k3
+  trial 0 eta=1e-01: max |k3^2 Z| restricted 1.390e+01; unrestricted 5.547e+01
+  trial 0 eta=1e-02: max |k3^2 Z| restricted 1.725e+01; unrestricted 6.574e+01
+  trial 0 eta=1e-03: max |k3^2 Z| restricted 1.769e+01; unrestricted 6.691e+01
+  trial 0 eta=1e-04: max |k3^2 Z| restricted 1.774e+01; unrestricted 6.703e+01
+  trial 1 eta=1e-01: max |k3^2 Z| restricted 6.303e+03; unrestricted 2.639e+04
+  trial 1 eta=1e-02: max |k3^2 Z| restricted 8.128e+02; unrestricted 3.911e+03
+  trial 1 eta=1e-03: max |k3^2 Z| restricted 7.659e+02; unrestricted 3.518e+03
+  trial 1 eta=1e-04: max |k3^2 Z| restricted 7.620e+02; unrestricted 3.482e+03
+  trial 2 eta=1e-01: max |k3^2 Z| restricted 6.789e+00; unrestricted 1.939e+03
+  trial 2 eta=1e-02: max |k3^2 Z| restricted 6.432e+00; unrestricted 1.973e+03
+  trial 2 eta=1e-03: max |k3^2 Z| restricted 6.328e+00; unrestricted 1.972e+03
+  trial 2 eta=1e-04: max |k3^2 Z| restricted 6.317e+00; unrestricted 1.972e+03
+--- axial slice in d=4: k3hat^2 * Z on v1 in S1^0, v2 in S2^0, v3 in Q, and the full form at finite k3
+  trial 0 eta=1e-01: max |k3^2 Z| restricted 3.723e+01; unrestricted 3.680e+01
+  trial 0 eta=1e-02: max |k3^2 Z| restricted 3.220e+01; unrestricted 3.316e+01
+  trial 0 eta=1e-03: max |k3^2 Z| restricted 3.169e+01; unrestricted 3.278e+01
+  trial 0 eta=1e-04: max |k3^2 Z| restricted 3.164e+01; unrestricted 3.274e+01
+  trial 1 eta=1e-01: max |k3^2 Z| restricted 3.142e+01; unrestricted 3.839e+02
+  trial 1 eta=1e-02: max |k3^2 Z| restricted 2.958e+01; unrestricted 3.403e+02
+  trial 1 eta=1e-03: max |k3^2 Z| restricted 2.932e+01; unrestricted 3.361e+02
+  trial 1 eta=1e-04: max |k3^2 Z| restricted 2.930e+01; unrestricted 3.357e+02
+  trial 2 eta=1e-01: max |k3^2 Z| restricted 1.926e+01; unrestricted 5.862e+01
+  trial 2 eta=1e-02: max |k3^2 Z| restricted 2.306e+01; unrestricted 7.106e+01
+  trial 2 eta=1e-03: max |k3^2 Z| restricted 2.350e+01; unrestricted 7.257e+01
+  trial 2 eta=1e-04: max |k3^2 Z| restricted 2.355e+01; unrestricted 7.272e+01
+--- F7 isotropic kernel
+  trial 0: (v,v) at isotropic v = 1.6e-16: displayed equation at this v carries no information
+  trial 0: min over Q, phi of residual / dist(Q,P_k) = 73.801 at residual 0.503, dist 0.007; typical size 12|sin k|/k^4 = 96.0; compare 12 k_perp/k^4 = 60.3
+  trial 1: (v,v) at isotropic v = 1.7e-16: displayed equation at this v carries no information
+  trial 1: min over Q, phi of residual / dist(Q,P_k) = 116.109 at residual 0.214, dist 0.002; typical size 12|sin k|/k^4 = 96.0; compare 12 k_perp/k^4 = 94.9
+  trial 2: (v,v) at isotropic v = 1.1e-16: displayed equation at this v carries no information
+  trial 2: min over Q, phi of residual / dist(Q,P_k) = 86.549 at residual 0.422, dist 0.005; typical size 12|sin k|/k^4 = 96.0; compare 12 k_perp/k^4 = 70.7
+  trial 3: (v,v) at isotropic v = 1.1e-16: displayed equation at this v carries no information
+  trial 3: min over Q, phi of residual / dist(Q,P_k) = 72.441 at residual 0.696, dist 0.010; typical size 12|sin k|/k^4 = 96.0; compare 12 k_perp/k^4 = 59.2
+exit 0

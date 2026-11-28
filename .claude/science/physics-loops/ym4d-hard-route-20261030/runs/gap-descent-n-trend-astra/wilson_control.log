@@ -1,0 +1,9 @@
+MEMORY_START_GATE 86 percent free
+BASIS 1 8 63
+FACE 0 nnz 32 asym 4.440892098500626e-16
+FACE 1 nnz 32 asym 4.440892098500626e-16
+FACE 2 nnz 84 asym 4.440892098500626e-16
+FACE 3 nnz 84 asym 4.440892098500626e-16
+FACE 4 nnz 84 asym 4.440892098500626e-16
+FACE 5 nnz 84 asym 4.440892098500626e-16
+{"grade": "GUIDE control", "frozen_top_dimension": 63, "cube_matrix_error": 0.0, "taylor_relative_error": 5.587411098486802e-16, "peak_RSS_bytes": 211173376}

@@ -1,0 +1,13 @@
+R1a,b L 5 a 0.01: parent 0.00e+00 count 12 rest 0.0e+00 action 0.0005999950 exact 0.0005999950 PASS
+R1a,b L 5 a 0.1: parent 0.00e+00 count 12 rest 0.0e+00 action 0.0599500167 exact 0.0599500167 PASS
+R1a,b L 5 a 0.19: parent 0.00e+00 count 12 rest 0.0e+00 action 0.2159491786 exact 0.2159491786 PASS
+R1c L 5 adjacent dir 2: parent 0.00e+00 PASS
+R1c L 5 adjacent dir 1: parent 0.00e+00 PASS
+R1d L 5 controls: one link 8.4800e-03, equal signs 1.6960e-02, off centre 7.1054e-19 FAIL
+R1a,b L 7 a 0.01: parent 1.16e-20 count 12 rest 0.0e+00 action 0.0005999950 exact 0.0005999950 PASS
+R1a,b L 7 a 0.1: parent 1.85e-19 count 12 rest 0.0e+00 action 0.0599500167 exact 0.0599500167 PASS
+R1a,b L 7 a 0.19: parent 2.77e-19 count 12 rest 0.0e+00 action 0.2159491786 exact 0.2159491786 PASS
+R1c L 7 adjacent dir 2: parent 1.85e-19 PASS
+R1c L 7 adjacent dir 1: parent 9.25e-20 PASS
+R1d L 7 controls: one link 6.2890e-03, equal signs 1.2578e-02, off centre 1.3872e-19 FAIL
+R1 FAIL

@@ -1,0 +1,24 @@
+L 3 m 1: rho 0.10000 box jump 0.10000 tent step 0.034456 box-tent 0.06554 frac>nu/10 0.667 rho L^m 0.30
+L 3 m 2: rho 0.10000 box jump 0.10000 tent step 0.011618 box-tent 0.08838 frac>nu/10 0.889 rho L^m 0.90
+L 3 m 3: rho 0.10000 box jump 0.10000 tent step 0.003888 box-tent 0.09611 frac>nu/10 0.889 rho L^m 2.70
+L 3 m 4: rho 0.10000 box jump 0.10000 tent step 0.001298 box-tent 0.09870 frac>nu/10 0.889 rho L^m 8.10
+L 3 m 5: rho 0.10000 box jump 0.10000 tent step 0.000433 box-tent 0.09957 frac>nu/10 0.893 rho L^m 24.30
+L 3 m 6: rho 0.10000 box jump 0.10000 tent step 0.000144 box-tent 0.09986 frac>nu/10 0.894 rho L^m 72.90
+R4a L 3: rho at m = 6 is 0.1000; nu/10 = 0.0100; claim REFUTED
+R4c L 3: scalar rho 0.00370370 against 0.00370370 PASS
+L 5 m 1: rho 0.10000 box jump 0.10000 tent step 0.020816 box-tent 0.07918 frac>nu/10 0.800 rho L^m 0.50
+L 5 m 2: rho 0.10000 box jump 0.10000 tent step 0.004198 box-tent 0.09580 frac>nu/10 0.880 rho L^m 2.50
+L 5 m 3: rho 0.10000 box jump 0.10000 tent step 0.000841 box-tent 0.09916 frac>nu/10 0.888 rho L^m 12.50
+L 5 m 4: rho 0.10000 box jump 0.10000 tent step 0.000168 box-tent 0.09983 frac>nu/10 0.894 rho L^m 62.50
+L 5 m 5: rho 0.10000 box jump 0.10000 tent step 0.000034 box-tent 0.09997 frac>nu/10 0.895 rho L^m 312.50
+L 5 m 6: rho 0.10000 box jump 0.10000 tent step 0.000007 box-tent 0.09999 frac>nu/10 0.895 rho L^m 1562.50
+R4a L 5: rho at m = 6 is 0.1000; nu/10 = 0.0100; claim REFUTED
+R4c L 5: scalar rho 0.00080000 against 0.00080000 PASS
+L 7 m 1: rho 0.10000 box jump 0.10000 tent step 0.014913 box-tent 0.08509 frac>nu/10 0.857 rho L^m 0.70
+L 7 m 2: rho 0.10000 box jump 0.10000 tent step 0.002144 box-tent 0.09786 frac>nu/10 0.878 rho L^m 4.90
+L 7 m 3: rho 0.10000 box jump 0.10000 tent step 0.000307 box-tent 0.09969 frac>nu/10 0.895 rho L^m 34.30
+L 7 m 4: rho 0.10000 box jump 0.10000 tent step 0.000044 box-tent 0.09996 frac>nu/10 0.895 rho L^m 240.10
+L 7 m 5: rho 0.10000 box jump 0.10000 tent step 0.000006 box-tent 0.09999 frac>nu/10 0.895 rho L^m 1680.70
+R4a L 7: rho at m = 5 is 0.1000; nu/10 = 0.0100; claim REFUTED
+R4c L 7: scalar rho 0.00029155 against 0.00029155 PASS
+R4c PASS

@@ -1,0 +1,65 @@
+Bessel series terms at x = 2.3 (nu = 1, 2): [1.15, 0.760437, 0.167613, 0.018472, 0.001221, 5.4e-05] [0.66125, 0.291501, 0.048189, 0.004249, 0.000234, 9e-06]
+beta=2.3
+  I_1..I_5: [2.0978, 1.005432, 0.349223, 0.094415, 0.020825]
+  A_1/2=I2/I1 0.479279  A_1=I3/I1 0.166471  A_3/2=I4/I1 0.045006  A_2=I5/I1 0.009927
+  one plaquette: c0=0.182890  <x>=I2/I1=0.479279  Var(x)=1-3A/beta-A^2=0.145145
+  T=MDM: lam0/c0^5=1.050158  gap E1=3.5643  r_1..r_4=['2.832e-02', '3.971e-04', '2.133e-06', '5.061e-09']
+  S(k) k=1..4: ['2.872e-02', '8.020e-04', '2.271e-05', '6.429e-07']  hand bound S(1)<= 3.0171e-02 (j<=1 terms only 3.0165e-02; crude lam0>=c0^5: 8.0314e-02)
+  Rayleigh lam0/c0^5 >= 1.048675 (true 1.050158)
+  TrT numeric 2.210521e-04  formula 2.210521e-04  basis orth err 2.2e-15
+  cube surface: Z/c0^6=1.048675  <x>_cube=0.493401  E[chi_1(U_f)]=0.531716  face-loop leading term of S(1;cube) 6 A^4 (1 + E chi_1 - (2<x>)^2) = 1.7664e-01
+beta=2.45
+  I_1..I_5: [2.405027, 1.203528, 0.440083, 0.125774, 0.029394]
+  A_1/2=I2/I1 0.500422  A_1=I3/I1 0.182985  A_3/2=I4/I1 0.052296  A_2=I5/I1 0.012222
+  one plaquette: c0=0.169419  <x>=I2/I1=0.500422  Var(x)=1-3A/beta-A^2=0.136816
+  T=MDM: lam0/c0^5=1.065298  gap E1=3.4718  r_1..r_4=['3.106e-02', '5.292e-04', '3.557e-06', '1.064e-08']
+  S(k) k=1..4: ['3.159e-02', '9.650e-04', '2.996e-05', '9.307e-07']  hand bound S(1)<= 3.3672e-02 (j<=1 terms only 3.3661e-02; crude lam0>=c0^5: 9.8954e-02)
+  Rayleigh lam0/c0^5 >= 1.063155 (true 1.065298)
+  TrT numeric 1.533881e-04  formula 1.533881e-04  basis orth err 2.2e-15
+  cube surface: Z/c0^6=1.063155  <x>_cube=0.516768  E[chi_1(U_f)]=0.588713  face-loop leading term of S(1;cube) 6 A^4 (1 + E chi_1 - (2<x>)^2) = 1.9585e-01
+beta=2.6
+  I_1..I_5: [2.755384, 1.433742, 0.549627, 0.165373, 0.040786]
+  A_1/2=I2/I1 0.520342  A_1=I3/I1 0.199474  A_3/2=I4/I1 0.060018  A_2=I5/I1 0.014802
+  one plaquette: c0=0.157425  <x>=I2/I1=0.520342  Var(x)=1-3A/beta-A^2=0.128849
+  T=MDM: lam0/c0^5=1.082929  gap E1=3.3990  r_1..r_4=['3.341e-02', '6.781e-04', '5.611e-06', '2.085e-08']
+  S(k) k=1..4: ['3.409e-02', '1.117e-03', '3.729e-05', '1.246e-06']  hand bound S(1)<= 3.6932e-02 (j<=1 terms only 3.6912e-02; crude lam0>=c0^5: 1.1985e-01)
+  Rayleigh lam0/c0^5 >= 1.079963 (true 1.082929)
+  TrT numeric 1.082742e-04  formula 1.082742e-04  basis orth err 2.2e-15
+  cube surface: Z/c0^6=1.079963  <x>_cube=0.538836  E[chi_1(U_f)]=0.646059  face-loop leading term of S(1;cube) 6 A^4 (1 + E chi_1 - (2<x>)^2) = 2.1319e-01
+beta=4.0
+  I_1..I_5: [9.759465, 6.422189, 3.337276, 1.416276, 0.504724]
+  A_1/2=I2/I1 0.658047  A_1=I3/I1 0.341953  A_3/2=I4/I1 0.145118  A_2=I5/I1 0.051716
+  one plaquette: c0=0.089375  <x>=I2/I1=0.658047  Var(x)=1-3A/beta-A^2=0.073438
+  T=MDM: lam0/c0^5=1.356423  gap E1=3.2412  r_1..r_4=['3.912e-02', '1.903e-03', '6.281e-05', '1.048e-06']
+  S(k) k=1..4: ['4.108e-02', '1.534e-03', '5.986e-05', '2.341e-06']  hand bound S(1)<= 5.4371e-02 (j<=1 terms only 5.3711e-02; crude lam0>=c0^5: 4.1215e-01)
+  Rayleigh lam0/c0^5 >= 1.339329 (true 1.356423)
+  TrT numeric 8.053254e-06  formula 8.053254e-06  basis orth err 2.2e-15
+  cube surface: Z/c0^6=1.339329  <x>_cube=0.688022  E[chi_1(U_f)]=1.139718  face-loop leading term of S(1;cube) 6 A^4 (1 + E chi_1 - (2<x>)^2) = 2.7701e-01
+beta=8.0
+  I_1..I_5: [399.873137, 327.595832, 236.075221, 150.539416, 85.535805]
+  A_1/2=I2/I1 0.819249  A_1=I3/I1 0.590375  A_3/2=I4/I1 0.376468  A_2=I5/I1 0.213907
+  one plaquette: c0=0.033536  <x>=I2/I1=0.819249  Var(x)=1-3A/beta-A^2=0.021612
+  T=MDM: lam0/c0^5=2.714075  gap E1=3.3990  r_1..r_4=['3.341e-02', '1.367e-03', '7.105e-05', '4.787e-06']
+  S(k) k=1..4: ['3.485e-02', '1.118e-03', '3.728e-05', '1.245e-06']  hand bound S(1)<= 6.4513e-02 (j<=1 terms only 4.8037e-02; crude lam0>=c0^5: 1.8087e+00)
+  Rayleigh lam0/c0^5 >= 2.638446 (true 2.714075)
+  TrT numeric 1.191327e-07  formula 1.191327e-07  basis orth err 2.2e-15
+  cube surface: Z/c0^6=2.638446  <x>_cube=0.843543  E[chi_1(U_f)]=1.910442  face-loop leading term of S(1;cube) 6 A^4 (1 + E chi_1 - (2<x>)^2) = 1.7347e-01
+beta=16.0
+  I_1..I_5: [865059.435855, 785313.798438, 668730.986245, 534539.678596, 401461.146947]
+  A_1/2=I2/I1 0.907815  A_1=I3/I1 0.773046  A_3/2=I4/I1 0.617922  A_2=I5/I1 0.464085
+  one plaquette: c0=0.012169  <x>=I2/I1=0.907815  Var(x)=1-3A/beta-A^2=0.005657
+  T=MDM: lam0/c0^5=6.583322  gap E1=3.4677  r_1..r_4=['3.119e-02', '1.062e-03', '3.964e-05', '1.633e-06']
+  S(k) k=1..4: ['3.229e-02', '9.738e-04', '3.034e-05', '9.462e-07']  hand bound S(1)<= 7.0118e-02 (j<=1 terms only 2.1054e-02; crude lam0>=c0^5: 5.7959e+00)
+  Rayleigh lam0/c0^5 >= 6.350616 (true 6.583322)
+  TrT numeric 1.813296e-09  formula 1.813296e-09  basis orth err 2.2e-14
+  cube surface: Z/c0^6=6.350616  <x>_cube=0.921813  E[chi_1(U_f)]=2.415138  face-loop leading term of S(1;cube) 6 A^4 (1 + E chi_1 - (2<x>)^2) = 6.5930e-02
+beta=32.0
+  I_1..I_5: [5502845511211.232, 5246980536900.152, 4846972944098.716, 4338173109881.6455, 3762429666628.304]
+  A_1/2=I2/I1 0.953503  A_1=I3/I1 0.880812  A_3/2=I4/I1 0.788351  A_2=I5/I1 0.683724
+  one plaquette: c0=0.004356  <x>=I2/I1=0.953503  Var(x)=1-3A/beta-A^2=0.001441
+  T=MDM: lam0/c0^5=17.307987  gap E1=3.4977  r_1..r_4=['3.027e-02', '9.546e-04', '3.140e-05', '1.079e-06']
+  S(k) k=1..4: ['3.125e-02', '9.169e-04', '2.772e-05', '8.391e-07']  hand bound S(1)<= 7.3101e-02 (j<=1 terms only 6.3428e-03; crude lam0>=c0^5: 1.6849e+01)
+  Rayleigh lam0/c0^5 >= 16.633020 (true 17.307987)
+  TrT numeric 2.797894e-11  formula 2.797894e-11  basis orth err 2.2e-14
+  cube surface: Z/c0^6=16.633020  <x>_cube=0.960921  E[chi_1(U_f)]=2.697536  face-loop leading term of S(1;cube) 6 A^4 (1 + E chi_1 - (2<x>)^2) = 2.0124e-02
+lattice oscillator limit of the one-plaquette gap: 2 arccosh(3) = 3.5255

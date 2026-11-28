@@ -1,0 +1,40 @@
+START sp_val_2_4x4x4_2.3 free=67% 17:36:52
+END sp_val_2_4x4x4_2.3 rc=0 rss=56MB 17:37:33 0 tracebacks
+START spfw_2_2x2x2_2.3 free=64% 17:37:33
+END spfw_2_2x2x2_2.3 rc=0 rss=56MB 17:37:56 0 tracebacks
+START spfw_4_2x2x2_2.3 free=62% 17:37:56
+END spfw_4_2x2x2_2.3 rc=0 rss=56MB 17:38:20 0 tracebacks
+START spfw_8_2x2x2_2.3 free=61% 17:38:20
+END spfw_8_2x2x2_2.3 rc=0 rss=56MB 17:38:46 0 tracebacks
+START spfw_2_4x2x2_2.3 free=63% 17:38:46
+END spfw_2_4x2x2_2.3 rc=0 rss=56MB 17:39:10 0 tracebacks
+START spfw_4_4x2x2_2.3 free=61% 17:39:10
+END spfw_4_4x2x2_2.3 rc=0 rss=56MB 17:39:36 0 tracebacks
+START spfw_8_4x2x2_2.3 free=57% 17:39:36
+END spfw_8_4x2x2_2.3 rc=0 rss=56MB 17:40:07 0 tracebacks
+START spfw_2_4x4x2_2.3 free=57% 17:40:07
+END spfw_2_4x4x2_2.3 rc=0 rss=56MB 17:40:33 0 tracebacks
+START spfw_4_4x4x2_2.3 free=58% 17:40:33
+END spfw_4_4x4x2_2.3 rc=0 rss=57MB 17:41:04 0 tracebacks
+START spfw_8_4x4x2_2.3 free=58% 17:41:04
+END spfw_8_4x4x2_2.3 rc=0 rss=58MB 17:41:42 0 tracebacks
+START spfw_2_4x4x4_2.3 free=59% 17:41:42
+END spfw_2_4x4x4_2.3 rc=0 rss=56MB 17:42:14 0 tracebacks
+START spfw_4_4x4x4_2.3 free=59% 17:42:14
+END spfw_4_4x4x4_2.3 rc=0 rss=58MB 17:42:53 0 tracebacks
+START spfw_8_4x4x4_2.3 free=60% 17:42:53
+END spfw_8_4x4x4_2.3 rc=0 rss=58MB 17:43:47 0 tracebacks
+START spfw_2_3x3x3_2.3 free=61% 17:43:47
+END spfw_2_3x3x3_2.3 rc=0 rss=56MB 17:44:12 0 tracebacks
+START spfw_4_3x3x3_2.3 free=58% 17:44:12
+END spfw_4_3x3x3_2.3 rc=0 rss=57MB 17:44:41 0 tracebacks
+START spfw_8_3x3x3_2.3 free=59% 17:44:41
+END spfw_8_3x3x3_2.3 rc=0 rss=57MB 17:45:17 0 tracebacks
+START spfw_2_6x3x3_2.3 free=57% 17:45:17
+END spfw_2_6x3x3_2.3 rc=0 rss=57MB 17:45:46 0 tracebacks
+START spfw_4_6x3x3_2.3 free=57% 17:45:46
+END spfw_4_6x3x3_2.3 rc=0 rss=57MB 17:46:22 0 tracebacks
+START spfw_8_6x3x3_2.3 free=59% 17:46:22
+END spfw_8_6x3x3_2.3 rc=0 rss=58MB 17:47:11 0 tracebacks
+START spfw_2_2x2x2_2.5 free=61% 17:47:11
+queue_split stopped after the 2.3 free-wall ladder

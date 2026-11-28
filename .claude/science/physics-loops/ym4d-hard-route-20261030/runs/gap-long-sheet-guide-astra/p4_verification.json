@@ -1,0 +1,31 @@
+{
+  "ended": "2026-11-17T13:23:00.112564+00:00",
+  "path": "independent complex-matrix multiplication",
+  "records": [
+    {
+      "tag": "p4_L128_T4_b2.4_k0.024_c1",
+      "max_readout_error": 2.9791183520089248e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "bc941881aee35327e8c98e3f3f0c6a503ccb42cdb5191ddadb4fcd9d03b2d128"
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k0.24_c1",
+      "max_readout_error": 2.9731222817019898e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "6dfd427d3e99ca1331b079c9cc26191425206a5cb2fcd503fe66646017b125a4"
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k1.2_c1",
+      "max_readout_error": 2.972421442315465e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "f9b8c4fddc3b499c08eedd572ac1344f393d87e7503d29b0eabb87f35047aa8c"
+    },
+    {
+      "tag": "p4_L128_T4_b2.4_k2.4_c1",
+      "max_readout_error": 2.9768363107862683e-08,
+      "max_norm_error": 6.661338147750939e-16,
+      "configuration_sha256": "173652f9ffa9f9cef5491bfc6b378c25bfbc49892037ed49eacfb5572b70f5b2"
+    }
+  ],
+  "scientific_status": "GUIDE only, no proof discharge"
+}

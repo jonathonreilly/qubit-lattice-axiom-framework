@@ -32,7 +32,37 @@ FINISH.md names this reproduction only in rows 1681 and 1691. Row 1681 (`library
 
 ## Builds (step 2)
 
-In progress. Order: SequenceLemma, LemmaM1, TheoremS, Wilson, Transfer, Trace, Stage0, Stage2, Stage3, Stage3b, Stage4, Final, Purity, PurIo, Offset (Assembly and Periodic are not imported by Offset and are not built).
+Order: SequenceLemma, LemmaM1, TheoremS, Wilson, Transfer, Trace, Stage0, Stage2, Stage3, Stage3b, Stage4, Final, Purity, PurIo, Offset (Assembly and Periodic are not imported by Offset and are not built). One `lake --no-cache build +GapChain.<M>:olean` per module, 17:02:39Z to 17:31:58Z. Every run exit 0, no kill (`watch.log`: 0 KILL lines; no `KILLED` file), and the watchdog stayed alive the whole time (heartbeat every 60 s, last before the end at 17:31:49Z; 331 samples).
+
+**Result: all 15 modules built from the committed sources.** Each log has exactly one `Built GapChain.<M>` line, for the target. No log has a `Built` line for Mathlib, YangMills, Formulation, Reconstruction, Batteries, Aesop, Qq, Plausible or ProofWidgets (count 0 in every log), so nothing of the release or Mathlib was recompiled. No log has an error. The Offset log shows `Built GapChain.Offset (157s)` and 14 `Replayed GapChain.*` lines (the modules built before).
+
+Measurements. Free % is at the start (memory_pressure). Wall is from `/usr/bin/time -l`. "time RSS" and "time fp" are that tool's maximum resident set size and peak memory footprint. The last three columns are from the watchdog samples over the run: peak of the summed footprint of the tree, peak of the summed RSS of the tree, and minimum free %.
+
+| Module | Free at start | Wall s | time RSS B | time fp B | Tree peak fp B | Tree peak RSS B | Min free |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| SequenceLemma | 72% | 26.72 | 2,981,232,640 | 192,044,920 | 550,385,992 | 3,341,451,264 | 71 |
+| LemmaM1 | 72% | 7.95 | 3,177,037,824 | 199,319,440 | 691,202,712 | 3,854,630,912 | 70 |
+| TheoremS | 72% | 5.91 | 3,389,784,064 | 200,023,904 | 904,494,200 | 3,863,592,960 | 69 |
+| Wilson | 70% | 6.52 | 3,398,156,288 | 205,217,656 | 598,597,064 | 3,668,115,456 | 68 |
+| Transfer | 70% | 5.09 | 3,464,069,120 | 202,973,096 | 730,341,624 | 4,031,823,872 | 68 |
+| Trace | 70% | 3.84 | 3,413,524,480 | 207,036,304 | 767,173,048 | 4,078,551,040 | 68 |
+| Stage0 | 69% | 167.27 | 6,858,817,536 | 478,273,616 | 1,738,012,256 | 6,953,910,272 | 55 |
+| Stage2 | 62% | 186.20 | 6,854,967,296 | 476,504,216 | 1,766,962,976 | 7,144,570,880 | 55 |
+| Stage3 | 62% | 279.11 | 6,786,908,160 | 496,590,904 | 4,461,133,568 | 7,332,036,608 | 48 |
+| Stage3b | 63% | 180.24 | 6,944,178,176 | 477,126,712 | 1,801,500,568 | 7,217,102,848 | 56 |
+| Stage4 | 63% | 189.75 | 6,902,939,648 | 480,239,720 | 2,268,428,352 | 7,187,873,792 | 55 |
+| Final | 62% | 170.71 | 6,905,643,008 | 479,486,080 | 1,729,640,416 | 7,298,367,488 | 55 |
+| Purity | 62% | 177.67 | 6,908,755,968 | 472,424,504 | 1,727,461,344 | 7,001,456,640 | 55 |
+| PurIo | 62% | 168.99 | 6,958,694,400 | 478,994,560 | 1,766,651,944 | 7,382,450,176 | 55 |
+| Offset | 62% | 182.99 | 6,911,492,096 | 488,972,464 | 1,788,557,424 | 7,120,814,080 | 55 |
+
+Peaks over all builds: tree footprint 4,461,133,568 B (Stage3, one sample at 17:14:06Z, as the module finished), below the 6,000,000,000 B cap; tree RSS 7,382,450,176 B (PurIo); minimum free 48 percent (the same Stage3 sample), above the 40 percent stop. Every other sample had at least 55 percent free. As in rows 1671 and 1681, the RSS is mostly clean mapped olean pages: RSS above 6.8 GB with a footprint of 1.7-1.8 GB.
+
+Olean SHA-256 of my build (not a byte reproduction of the author's artifacts; oleans embed paths, and none was required): Purity `fbe2e19a1340e06b56db059da0d967046211e41e0b847e44276ee5741bb30fb0`, PurIo `b616e1cd3361c9d8211aabb75265a3e8cfe2fce0644d7f6b1c8191b0eee9ccb6`, Offset `bd357c63806e885ef601b33d24b0202adfc08de2b4b96c5129585e1415d51219`.
+
+## Axiom check (step 3)
+
+In progress: Check.lean (SHA-256 `101c4bb76ba641abde8467b620bbe00c8db2c7d1de4369947555edcbeb8182a5`), importing GapChain.Offset.
 
 Note on the watchdog log. `~/.elan` resolves to `/Volumes/SANDISK SSD/Mac Storage/Developer/elan`, so the `ps` command name of each lean process contains a space and the sample log labels it `SANDISK:<pid>`. The tree walk uses pids, so these processes are in the sum (checked: during SequenceLemma the lean pid 90268 is in every sample, with its RSS and footprint). Build sequence script: `tools/seq.sh` (stops on a kill, on a dead watchdog, or on free memory below 50 percent for 20 min; waits for 50 percent free before each module). Started 17:02:39Z.
 

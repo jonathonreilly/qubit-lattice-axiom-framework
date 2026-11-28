@@ -189,3 +189,117 @@ and ∫_{R^3} exp(-c|y|) dy = 8 pi / c^3. (This is the Golden-Thompson-Symanzik 
 - **What reads the group:** omega = |x_i| is the commutator. It is zero for the twin.
 - **Twin test (crux card).** A U(1) theory with one charged scalar zero mode phi has V = (1/2)|x|^2 |phi|^2, and Steps 1-3 hold for it verbatim. So the inequality reads "the abelian direction has a charged partner", not "SU(2)". Pure SU(2) has the partner for free; pure U(1) has none. This is honest but it is a weaker reading of the group than the card asks: a neutral spectator does not spoil the step, and the step does not see the centre.
 - **How this differs from the lesson (S1).** The fact that carries the toy is an uncertainty inequality. It is not a discrete or rigid fact. It loses a constant factor in the energy (theta, and the dropped longitudinal term). That loss is harmless in the toy, because the toy has finitely many modes. Section 3 shows that the same loss is fatal on a lattice.
+
+**Reference check (between 2026-11-28T18:22Z and 18:28Z, INSPIRE API, titles and journals only; I read none of these papers in this session).** Confirmed to exist with the stated data: Lüscher, Nucl. Phys. B 219 (1983) 233; Lüscher and Münster, Nucl. Phys. B 232 (1984) 445; Simon, Ann. Phys. 146 (1983) 209. What I say about their content is from memory.
+
+**Guide computation (not a proof step).** Script `/tmp/toyfirst-fable-1697/x2y2.py`, run under the numeric lock at 67% memory free. It is the two-variable relative of the toy, H = -(1/2) Laplacian + (1/2) x^2 y^2 on [-R,R]^2, by finite differences, against the free twin on the same square.
+
+| R | E_0 | E_1 - E_0 | purity at s = 4 | purity at s = 8 | free twin at s = 4 | free twin at s = 8 |
+|---|---|---|---|---|---|---|
+| 3 | 0.5671 | 0.7093 | 0.795 | 0.986 | 0.509 | 0.866 |
+| 6 | 0.5540 | 0.6351 | 0.712 | 0.975 | 0.111 | 0.240 |
+| 12 | 0.5540 | 0.6349 | 0.711 | 0.975 | 0.025 | 0.052 |
+
+The run agrees with the theorem: the purity of the commutator model settles as R grows, and the twin's purity falls like R^(-2). The run proves nothing. The grid error is not bounded, and 260 eigenvalues were kept.
+
+### 2.5 A second toy that reads the dimension (cited, not rebuilt)
+
+The toy of 2.1 has no scale. The toy that has one is the Migdal-Kadanoff (MK) recursion. I name it because Part 3 needs it. I do not prove its theorem here.
+
+- **The model.** A positive class function f on the group stands for the effective plaquette weight. One step of scale b in dimension d is: convolve b^2 copies (decimation; the character coefficients c_j go to c_j^(b^2)), then take the pointwise power b^(d-2) (bond moving).
+- **The theorem (CITED by title; the papers exist on INSPIRE, I did not read them in this session, so their exact hypotheses are UNVERIFIED):** K. R. Ito, "Permanent quark confinement in four-dimensional hierarchical lattice gauge theories of Migdal-Kadanoff type", Phys. Rev. Lett. 55 (1985) 558; V. F. Müller and J. Schiemann, "Convergence of Migdal-Kadanoff iterations in nonabelian lattice gauge models", Commun. Math. Phys. 97 (1985) 605, and "Convergence of Migdal-Kadanoff iterations: a simple and general proof", Lett. Math. Phys. 15 (1988) 289. From memory: for a non-abelian compact group in d = 4 the iteration started at any coupling converges to the strong-coupling fixed point.
+- **What carries it (my computation, exact for the leading term of the SU(2) heat kernel).** Let theta in (0, pi) be the class angle and g_t(theta) = (theta/sin theta) exp(-theta^2/(4t)), the leading term of the heat kernel on SU(2) = S^3. Then g_t^p = (theta/sin theta)^(p-1) g_{t/p}. PROVED: theta/sin theta >= exp(theta^2/6) on (0, pi), because log(theta/sin theta) = sum_{k>=1} zeta(2k) theta^(2k) / (k pi^(2k)) has only nonnegative terms and the first is theta^2/6. So g_t^p / g_{t'} is nondecreasing in theta when 1/t' = p/t - 2(p-1)/3. The power is flatter than the Gaussian rule t/p predicts. With beta = 1/(2t), p = b^(d-2), and decimation t -> b^2 t, one step gives (ARGUED: the true heat kernel has image terms, and I did not prove that decimation keeps this order)
+
+      beta'  =  b^(d-4) beta  -  (b^(d-2) - 1) / (3 b^2).
+
+  - d = 4: beta' = beta - (b^2-1)/(3b^2). The coupling drops by a fixed amount at every step. The drop is the Van Vleck factor theta/sin theta, that is, the curvature of S^3.
+  - U(1), d = 4: the heat kernel on the circle has no such factor. The power of a Gaussian is a Gaussian, and beta' = beta up to image terms of order exp(-pi^2 beta). The step is void.
+  - SU(2), d = 5: beta' = b beta - ... grows. No flow to strong coupling from weak coupling.
+  - U(1), d = 3: beta' = beta/b. The coupling drops for the trivial reason.
+- **The object and the inequality of this toy:** the effective plaquette as a class function; the inequality theta/sin theta >= exp(theta^2/6), raised to the power b^(d-2) - 1. It reads the group (curvature) and the dimension (the exponent b^(d-4)).
+
+## 3. Part 3 (closed folder). The analogue for the Wilson SU(2) transfer
+
+Written from 2026-11-28T18:29Z (date -u). Notation: on a cube Γ of side n at coupling beta, let lambda_0 >= lambda_1 >= ... >= 0 be the eigenvalues of T on the neutral sector (range of P0), with multiplicity, and x_i = lambda_i / lambda_0 in [0,1]. Put D(v) = sum_i x_i^v = tr(P0 T^v)/lambda_0^v and tau(v) = D(v) - 1 when lambda_0 is simple. Then purity(u) = D(2u)/D(u)^2. `Purity.lean` lines 60-70 and 77-87 give this form (slots in [0,1], slot zero equal to 1, summable for v >= 2).
+
+Verdict first. **The carrying inequality of the toy of 2.1 has no analogue at the couplings of the crux card.** Sections 3.1-3.3 prove this in three forms. The second toy (2.5) has an analogue, written in 3.5; it is a known programme, and it dies at a named step. Section 3.4 holds one bookkeeping identity that respects lesson (S3).
+
+### 3.1 One family, two corners (Lemma NEC, PROVED)
+
+The Wilson transfer is one family in three parameters: side n, coupling beta, time u.
+
+- **Crux corner:** n = l L^k >= 2^70, beta = betaAt(k), u = n/512.
+- **Toy corner:** n fixed, beta to infinity, u of order beta^(1/3) (the scaling of 2.1: R of order g^(-2/3), energy unit g^(2/3)).
+
+**Lemma NEC (necessary and sufficient sizes).** Assume lambda_0 is simple.
+(i) If tau(u) <= 25/sqrt(457) - 1 = 0.16945..., then purity(u) >= 457/625.
+(ii) If purity(u) >= 457/625, then tau(u) <= 168/457, and u log(lambda_0/lambda_1) >= log(457/168) > 1. With u <= n/512: n (E_1 - E_0) > 512, where E_i = -log lambda_i.
+
+Proof. purity = (1 + tau(2u))/(1 + tau(u))^2 and 0 <= tau(2u) <= tau(u). So (1+tau)^(-2) <= purity <= (1+tau)^(-1). (i) follows from the left bound. For (ii), the right bound gives 1 + tau <= 625/457. One term of tau is x_1^u, so x_1^u <= 168/457. ∎
+
+**Consequence (ARGUED).** In the toy corner the target is false for SU(2) itself. At small coupling on the scale of the box, the neutral sector holds states with n (E_i - E_0) of order 4 pi (two gluons with opposite lowest momenta) and of order g^(2/3) (the constant modes of 2.1). Both are far below 512. So the toy mechanism lives exactly where purity at time n/512 fails. The number 512 is the line that shuts out every small-box mechanism. Free photons fail (ii) for the same reason, with n (E_1 - E_0) = 4 pi at every size.
+
+### 3.2 The toy proof, moved line by line (Proposition EMPTY, PROVED from the spectrum facts above)
+
+| Toy step | The same step for the Wilson transfer at one cutoff | What it gives |
+|---|---|---|
+| (a) fibre inequality | none needed: the configuration space SU(2)^links is compact | nothing |
+| (b) trace bound uniform in R | tr(P0 T^v) is finite for v >= 2, for every Γ and beta | true, no content |
+| (d) simple ground state, so tau(s) -> 0 | x_i in [0,1], sum x_i^2 finite, so D(v) -> m_0 and purity(u) -> 1/m_0 as u -> infinity, m_0 the multiplicity of x = 1 | true, no rate |
+
+**Proposition EMPTY.** For every cube Γ and every beta > 0, purity(Γ, beta, u) converges to 1/m_0 as u goes to infinity. Proof: dominated convergence in D(v) = sum x_i^v, with x_i^v <= x_i^2 for v >= 2. ∎
+
+The same holds for compact U(1) (ARGUED: its configuration space is compact too). So the toy proof moves to the lattice verbatim, and it proves a statement that is true, blind to the group, and silent on the rate. In the toy the rate constant delta came from Perron-Frobenius. That argument gives no number, and the crux is only the number: n (E_1 - E_0) > 512 at u = n/512.
+
+**Where the toy's uniformity went.** "Uniform in R" in the toy is "uniform in the coupling on the scale of the box, as that coupling goes to zero". For the lattice that is the limit of a small physical box. (PUR-io) asks for a large physical box. The two statements sit at opposite ends of one function. Define g_k(l) = n (E_1 - E_0) for n = l L^k at beta = betaAt(k). The toy describes g at its small end: g of order (coupling at the box scale)^(2/3) for SU(2), against (coupling)^2 for the twin (ARGUED, from Lüscher 1983 as I recall it). The crux needs g above 512 (and about 12,000 by the card's estimate). Between the two ends is the range where the coupling at the box scale is of order one. The toy gives nothing there.
+
+### 3.3 Proposition NO-A: a comparison proof needs an extensive quantity to absolute precision 80/n (PROVED)
+
+The toy bounds numerator and denominator separately: Z from above by a comparison operator, E_0 from above by a trial function. This is the route that lesson (S3) warns against. The cost can be stated exactly.
+
+**Proposition NO-A.** Let Z^+ >= tr(P0 T^u) and 0 < lambda^- <= lambda_0 be the two numbers that a proof controls. Suppose the proof concludes purity(u) >= 457/625 from one of the two toy routes: purity >= ((lambda^-)^u / Z^+)^2 (route (c)), or tau(u) <= Z^+/(lambda^-)^u - 1 and Lemma NEC (i) (route (d)). Then Z^+/(lambda^-)^u <= 25/sqrt(457). Hence, with E^+ = -(1/u) log Z^+ <= E_0 and E^- = -log lambda^- >= E_0:
+
+    E^- - E^+  <=  (1/u) log(25/sqrt(457))  =  0.15653.../u  =  80.14.../n   at u = n/512.
+
+Proof. Both routes need (Z^+/(lambda^-)^u)^(-2) >= 457/625. Take logarithms. E^+ <= E_0 because Z^+ >= lambda_0^u. ∎
+
+**What it means.** E_0 is the total vacuum energy of the cube. It is extensive, of order n^3. The proof must enclose it between two bounds that differ by at most 80.1/n, at n >= 2^70. An inequality that loses a fixed fraction of one mode's zero-point energy, as Step 1 of the toy does (the factor theta and the dropped longitudinal term), loses an amount of order n^3 (ARGUED: one such loss per mode). So no fibre inequality of the toy's kind, and no Golden-Thompson step, can enter a proof of (PUR-io) through routes (c) or (d). This is the purity form of [R]'s "why a single number fails": the cofactor there, the vacuum energy here, cannot be made small; it must cancel.
+
+### 3.4 Lemma RATIO: the form in which the main term cancels term by term (PROVED; bookkeeping, not a candidate)
+
+**Lemma RATIO.** Assume lambda_0 is simple. For integers v >= 2 put r(v) = tr(P0 T^(v+1)) / (lambda_0 tr(P0 T^v)) = D(v+1)/D(v). Then
+1. 0 < r(v) <= 1, r is nondecreasing in v, and r(v) -> 1.
+2. purity(u) = prod_{v=u}^{2u-1} r(v)^2 * prod_{v>=2u} r(v), for u >= 2.
+3. With q(v) = -log r(v) >= 0 (nonincreasing): log(1/purity(u)) = 2 sum_{v=u}^{2u-1} q(v) + sum_{v>=2u} q(v).
+4. Necessary for purity(u) >= 457/625: q(2u-1) <= log(625/457)/(2u) = 0.15653/u. Sufficient: 2 sum_{v>=u} q(v) <= log(625/457) = 0.31307...
+
+Proof. D is nonincreasing and tends to 1, so r <= 1 and prod_{v=u}^{V} r(v) = D(V+1)/D(u) -> 1/D(u). Then purity = D(2u)/D(u)^2 = (prod_{v>=u} r)^2 / prod_{v>=2u} r, which is item 2. r is nondecreasing because D(v) D(v+2) >= D(v+1)^2 (Cauchy-Schwarz on sum x_i^v). Item 4: all terms of item 3 are nonnegative, the 2u terms of the first sum are each at least q(2u-1), and the whole is at most 2 sum_{v>=u} q(v). ∎
+
+**Reading.** r(v) lambda_0 = Z(v+1)/Z(v) is the factor by which the neutral partition function grows when one time layer is added to a torus of time length v. Its limit is lambda_0. So purity is a statement about one sequence, Z(v+1)/Z(v) for v >= u, and about how fast it reaches its own limit. No vacuum energy has to be known. Item 4 says: at v = n/256 the growth factor must already equal its limit up to the factor exp(-80.1/n).
+
+**Twin test.** The lemma is an identity for any positive trace-class operator. It holds for U(1) verbatim. It reads nothing. I record it only because it is the form that (S3) asks for.
+
+### 3.5 The analogue of the second toy, its first lemma, and where it dies
+
+**Object.** The effective plaquette at scale r: the law rho_r of the class angle theta of the holonomy around a planar r × r loop, under the Wilson law at beta. It is a positive class function on SU(2). Its character coefficients are the Wilson loops in all representations, <chi_j(W_r)>/(2j+1). In the MK toy this object is the iterate f_K, and "strong coupling at the box scale" means that rho at the box scale is close to Haar measure on the integer-spin and half-integer-spin coefficients alike.
+
+**First lemma, toy level (PROVED in 2.5 for the model family g_t).** For all t > 0 and all integers p >= 2: g_t^p / g_{t'} is nondecreasing on (0, pi), where 1/t' = p/t - 2(p-1)/3. The constant 2/3 is 4 times the 1/6 of theta/sin theta >= exp(theta^2/6).
+
+**First lemma, native form (GUESSED; a target, not a result).** Let M_p f = f^p / ∫ f^p (bond moving) and let D_b be b^2-fold convolution. For every beta >= beta_*, every scale b^j with b^(j+1) <= n/2:
+
+    rho_{b^(j+1)} / ( M_{b^2} D_b rho_{b^j} )  is nondecreasing in theta on (0, pi).
+
+In words: the true holonomy law at scale b r is at least as disordered as the MK image of the true law at scale r. With the cited MK convergence theorem this would drive rho at the box scale to Haar.
+
+- **The step that reads the group and the dimension:** the Van Vleck factor inside M_p, with p = b^(d-2) = b^2 exactly cancelling the decimation b^2 in d = 4. Curvature of S^3 is the gain; the cancellation is the dimension.
+- **How it fails for weak four-dimensional compact U(1):** the native statement is false there, not void. The MK image of a U(1) law still flows to disorder (slowly, through the image terms). The true law does not: weak compact U(1) in four dimensions has a Coulomb phase (CITED from memory, UNVERIFIED in this session: A. Guth, Phys. Rev. D 21 (1980) 2291; J. Fröhlich and T. Spencer, Commun. Math. Phys. 83 (1982) 411). So no proof of the native lemma can be blind to the group. The toy-level lemma is void for U(1) (no factor theta/sin theta).
+- **Where it is likely to die:** at the comparison between the true law and its MK image. Bond moving is known to bound partition functions in one direction only. An order on holonomy laws needs a correlation inequality of Ginibre type for a non-abelian group, and none is known. This is the open step of Tomboulis's programme (E. T. Tomboulis, arXiv:0707.2179; criticism by K. R. Ito and E. Seiler, arXiv:0711.4930 and arXiv:0803.3019; all three exist on INSPIRE, content from memory).
+- **Pre-filter of the crux card.** (Q1) Two laws: the true law at scale b r, and the MK image of the true law at scale r. (Q2) The key step is needed at the scale where the effective coupling is of order one; nothing replaces the small parameter there except the unknown correlation inequality. By the card's rule this is a stop. (Q3) The sign is fixed by theta/sin theta > 1 (curvature of the group); for the U(1) twin the factor is 1; for five-dimensional SU(2) the exponent b^(d-4) > 1 reverses the flow; for three-dimensional compact U(1) the exponent b^(-1) gives the same sign as SU(2). (Q4) Not computed: no loss per scale exists until the comparison holds.
+
+**Status of 3.5:** not a new method (Tomboulis's programme, MK), no proved native lemma. I list it because the task asks for the analogous object. Phase 2 checks whether the folder holds it.
+
+### 3.6 The toy-first verdict for Part 3
+
+1. **Toy of 2.1 (commutator wall).** Proved in the toy. Its analogue at the crux corner does not exist: the target is false where the mechanism lives (3.1), the proof moves to a statement with no rate (3.2), and its kind of inequality cannot meet the precision 80/n that any separate bound needs (3.3).
+2. **Toy of 2.5 (MK).** The analogue exists as an object. Its first native lemma is the known open comparison. It stops at pre-filter question (Q2).
+3. **What the RH lessons add.** (S3) is now exact: Proposition NO-A and Lemma RATIO. (S1) is not met: neither toy is carried by a discrete fact. I looked for one (integer multiplicity of the top eigenvalue; forced multiplicities from a non-abelian symmetry, in the manner of a trace bound against a multiplicity) and found none that acts on the neutral sector: its symmetry group (translations, the cubic group, the centre) has irreducible representations of dimension at most 48 on the lattice (ARGUED), for SU(2) and U(1) alike.

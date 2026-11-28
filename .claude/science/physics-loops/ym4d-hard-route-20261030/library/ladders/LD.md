@@ -9,3 +9,5 @@ Target (row 1708, library/gap-largen-build-fable.md section 7): for 4D SU(N) Wil
 | LD3 | Decoupling of separated cubes | PROVED at every beta, no PS (unchecked) | 1717 | |
 | LD4 | (LD) at order-one beta | REDUCED (Theorem R, Lemma I, Corollary U of row 1717) to (GPU) | 1717 | |
 | LD5 = GPU | Planar uniqueness in a ball with free boundary: tracial w on loops in a cube with planar defect <= delta is eps-close to W_beta at the centre (quantitative); or exact uniqueness of the tracial solution of the planar equations on Z^4 (qualitative, enough for some N0) | in progress | 1720 | proof, checked; joint with PS |
+
+Correction from check 1715 (2026-11-28): (LD) as stated in row 1708 (planar centre W_beta, fixed tolerance) FAILS for all ranks even at strong coupling (PROVED counterexample at N = 2 and at small beta). The corrected target: loops centred at their finite-volume means, plus a separate bias bound |E tr U_l - W(l)| <= eps/2 uniform in interior, loop, rank and exterior, with N^2 >= 32 l0^2 log(4M)/(alpha eps^2). Check 1719 of row 1717 must test LD1-LD5 against this correction.

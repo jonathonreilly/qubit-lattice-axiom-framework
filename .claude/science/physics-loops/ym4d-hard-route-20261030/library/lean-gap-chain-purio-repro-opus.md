@@ -62,7 +62,7 @@ Olean SHA-256 of my build (not a byte reproduction of the author's artifacts; ol
 
 ## Axiom check (step 3)
 
-In progress: Check.lean (SHA-256 `101c4bb76ba641abde8467b620bbe00c8db2c7d1de4369947555edcbeb8182a5`), importing GapChain.Offset.
+Check.lean (SHA-256 `101c4bb76ba641abde8467b620bbe00c8db2c7d1de4369947555edcbeb8182a5`, file `/tmp/opus-purio-repro.hH2Aoo/check/Check.lean`) imports GapChain.Offset. It has: `#print axioms` for the five required theorems, the Stage 0 control `GapChain.su2_fixed_observable_gap_of_mNeutral`, and five extra ones; my own traversal `reach` (the code of row 1671, not `Lean.collectAxioms`: every constant reachable from type and value, plus constructors, recursor rules and inductive parents) on the five required theorems and the control; a module sweep that runs the same traversal from every constant declared in GapChain.Purity, GapChain.PurIo and GapChain.Offset and counts axiom declarations there; and `#check`/`#print` of the two top statements and the two definitions.
 
 Note on the watchdog log. `~/.elan` resolves to `/Volumes/SANDISK SSD/Mac Storage/Developer/elan`, so the `ps` command name of each lean process contains a space and the sample log labels it `SANDISK:<pid>`. The tree walk uses pids, so these processes are in the sum (checked: during SequenceLemma the lean pid 90268 is in every sample, with its RSS and footprint). Build sequence script: `tools/seq.sh` (stops on a kill, on a dead watchdog, or on free memory below 50 percent for 20 min; waits for 50 percent free before each module). Started 17:02:39Z.
 
@@ -70,3 +70,78 @@ Progress 17:06:23Z: SequenceLemma to Stage0 built, rc 0 each, no kill. Through S
 
 - Up-to-date check after the builds: `lake --no-cache build --no-build +GapChain.Offset:olean` exit 0, `All targets up-to-date (21150 jobs).` (17:33:04Z).
 - Check run 1 (`lake env lean Check.lean`, from 17:33:04Z) was still running at 17:42:56Z with no output yet (tree footprint 1.42 GB, RSS 6.0 GB, 55 percent free). The tool that started it would stop it at a 20-minute limit, so I stopped it myself (rc 143) and started run 2 detached with nohup at 17:43:09Z, under the same runner and watchdog. Run 1 printed nothing, so no result is taken from it.
+
+Run 2: `lake env lean Check.lean`, 17:43:09Z to 17:59:18Z, wall 968.64 s (234.67 s user; the rest was page faults on the mapped oleans, with the machine's file cache under load), `/usr/bin/time` maximum RSS 6,619,611,136 B and peak footprint 136,912,496 B (of the `lake` process it measures). Watchdog over the run: tree peak footprint 1,465,792,312 B, tree peak RSS 6,867,009,536 B, minimum free 53 percent, no kill. Exit code 1, from one error only: line 86, `#print GapChain.Purity.purity`, is a wrong name in my own script (the definition is `GapChain.purity`, declared in namespace GapChain before `namespace Purity`; the `#print GapChain.PurIo.passingCutoffs` output above it shows the right name). Lean goes on after an error, and every other line elaborated. This error has no effect on any axiom report.
+
+Verbatim output of run 2:
+
+```text
+'GapChain.Offset.su2_fixed_observable_gap_of_infinite_passing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GapChain.Purity.su2_fixed_observable_gap_of_purity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GapChain.PurIo.su2_fixed_observable_selection_on_records' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GapChain.PurIo.su2_fixed_observable_gap_of_passing_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GapChain.PurIo.su2_fixed_observable_cutoffs_at_fixed_offset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GapChain.su2_fixed_observable_gap_of_mNeutral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'GapChain.Final.su2_fixed_observable_gap_of_mNeutral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GapChain.Purity.massGap_of_purity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GapChain.Purity.neutralPhysicalSeed_of_purity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GapChain.PurIo.averageSlope_can_miss_infinite_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'YangMills.su2_fixed_observable_continuum_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+GapChain.Offset.su2_fixed_observable_gap_of_infinite_passing: 1 roots; reached 340556 constants (267453 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+GapChain.Purity.su2_fixed_observable_gap_of_purity: 1 roots; reached 340472 constants (267384 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+GapChain.PurIo.su2_fixed_observable_selection_on_records: 1 roots; reached 340463 constants (267376 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+GapChain.PurIo.su2_fixed_observable_gap_of_passing_blocks: 1 roots; reached 340468 constants (267380 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+GapChain.PurIo.su2_fixed_observable_cutoffs_at_fixed_offset: 1 roots; reached 338488 constants (265822 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+GapChain.su2_fixed_observable_gap_of_mNeutral: 1 roots; reached 338637 constants (265917 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: true
+module GapChain.Purity: 26 constants declared, 0 axiom declarations
+all constants of GapChain.Purity: 26 roots; reached 340716 constants (267392 theorems, 70 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+module GapChain.PurIo: 34 constants declared, 0 axiom declarations
+all constants of GapChain.PurIo: 34 roots; reached 340488 constants (267400 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+module GapChain.Offset: 106 constants declared, 0 axiom declarations
+all constants of GapChain.Offset: 106 roots; reached 340572 constants (267469 theorems, 67 opaque, 0 unsafe, 0 missing); axioms [propext,
+ Classical.choice,
+ Quot.sound]; sorryAx reached: false
+GapChain.Offset.su2_fixed_observable_gap_of_infinite_passing : YangMills.FixedObservableLimit fun L M g₀ =>
+  ∀ (ℓ : ℕ) (A : Set ℕ),
+    0 < ℓ →
+      1024 ∣ ℓ →
+        A.Infinite →
+          A ⊆ GapChain.PurIo.passingCutoffs L M g₀ ℓ →
+            ∃ K v ν S X₂ X₄,
+              (∀ (j : ℕ), ↑(K j) ∈ A) ∧
+                GapChain.FixedObservableWitnesses L M g₀ K v ν S X₂ X₄ ∧
+                  GapChain.HasMassGap (YangMills.Construction.LimitTheorem.centredOf S) (GapChain.gapRate ℓ) ∧
+                    GapChain.HasUniqueVacuum (YangMills.Construction.LimitTheorem.centredOf S)
+GapChain.Purity.su2_fixed_observable_gap_of_purity : YangMills.FixedObservableLimit fun L M g₀ =>
+  ∃ K v ν S X₂ X₄,
+    GapChain.FixedObservableWitnesses L M g₀ K v ν S X₂ X₄ ∧
+      ∀ (ℓ : ℕ),
+        GapChain.PurityAlong L M g₀ ℓ K →
+          GapChain.HasMassGap (YangMills.Construction.LimitTheorem.centredOf S) (GapChain.gapRate ℓ) ∧
+            GapChain.HasUniqueVacuum (YangMills.Construction.LimitTheorem.centredOf S)
+def GapChain.PurIo.passingCutoffs : ℕ → ℕ → ℝ → ℕ → Set ℕ :=
+fun L M g₀ ℓ =>
+  {k |
+    ∀ (Γ : YangMills.Construction.TransferOperators.CubicPeriodSublattice),
+      Γ.side = ℓ * L ^ k → 457 / 625 ≤ GapChain.purity Γ (GapChain.betaAt L M k g₀) (Γ.side / 512)}
+Check.lean:86:7: error(lean.unknownIdentifier): Unknown constant `GapChain.Purity.purity`
+```

@@ -48,6 +48,8 @@ The gate of row 1672 (`library/gap-direction9-fable.md` section 4, upheld by che
 3. is not equivalent to the seed, and the seed does not follow from it by lattice-local steps alone;
 4. has its first estimate written out, not named.
 
+**Campaign filter (added 2026-11-28 after check 1692).** A proposed input to the purity bound must meet the precise form of wish (Y4) in `library/gap-purity-rh-strategy-fable-check-astra62.md` section 4: the box and law fixed before the cutoffs are chosen; a signed estimate with its gain and loss and constants fixed before K, on the same selected cutoffs; the inequality that spends the gain within the budget log(625/457); and the group, dimension, strong-coupling and neutral-spectator tests stated there.
+
 A method is **new** for this campaign when it is not one of the method classes on file. The record of what was tried is `library/open-registry.md` (the one registry) and the attack files it cites; the earlier blind brainstorm passes are `library/gap-afield-a-max.md`, `gap-afield-b-max.md`, `gap-brainstorm-max.md`, `gap-brainstorm2-max.md`, `gap-newmath-*.md`, `gap-rh-tools-transfer-*.md`, `gap-kernel-solve-*.md`, and the direction rows `gap-direction*-fable.md`. Row 1672 records that rows 1386 to 1672 used one method (write candidates, then search the folder). This campaign uses different methods: mining how other hard problems fell, reading outside literature, and building tools.
 
 ## 4. Lanes of the campaign (owner direction of 2026-11-28)

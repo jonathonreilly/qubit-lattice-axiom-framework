@@ -24,7 +24,7 @@ could not confirm in this session carries UNVERIFIED.
   card section 3. Mark new or on file. [section 4]
 - Part 4. Rank the five best new candidates. First buildable component for the top three: an exact lemma.
   Reading list of at most fifteen papers with the question each read must answer. [section 5]
-- RESULT line. [section 6]
+- Labels, limits, credits [section 6]; RESULT line [section 7].
 
 Closed-folder rule for Parts 1 and 2: besides the crux card and the Lean files it cites, no file of this lane
 is read before section 4. Sections 1 to 3 are written from the crux card, the Lean statements and the
@@ -35,6 +35,12 @@ published literature only.
 - 2026-11-28T13:52Z: file created; crux card, GOAL.md, FINISH head and row 1686 read.
 - 2026-11-28T14:11Z: Lean statements read (Purity.lean in full; PurIo.lean; Stage0 definitions; Transfer
   L548-L666; Offset L701 statement). Section 1 written.
+- 2026-11-28T14:13Z: Part 1 written (28 problems, six engines).
+- 2026-11-28T14:23Z: Part 2 written (nine strategy types, seven candidates). One correction made while
+  writing: the twisted-tube statement does not pass the adjoint-scalar control (3.6).
+- 2026-11-28T14:31Z: Phase 2 written. All seven candidates are on file. Five unused patterns tested: void.
+- 2026-11-28T14:39Z: Part 4 written (no new entry in the ranking; lemmas B1-B3; reading list).
+- 2026-11-28T14:39Z: RESULT written. Status: complete.
 
 ## 1. The target in working notation (from the crux card and the Lean files only)
 
@@ -433,7 +439,8 @@ Every proof above that controls a system far from a perturbative regime uses one
 - E6 a perturbative start plus stability (cluster expansion, Peierls, quasi-adiabatic): P1, P2, P5, P15.
 
 I know of no rigorous proof of a dynamically generated mass in an asymptotically free bosonic lattice model
-that does not use E1, E2 or (for hierarchical models) both. For SU(2) in four dimensions: E2 is void (N = 2).
+that does not use E1, E2 or (for hierarchical models) both. (Corrected in section 4.1, row C7: the 2026
+proofs for the two-dimensional O(N) models, which I did not know in the closed phase, use E3.) For SU(2) in four dimensions: E2 is void (N = 2).
 E6 and E5 stop where the running coupling is of order one. So a new attack must supply a new instance of
 E1, E3 or E4. This is the sorting rule for Part 2: each strategy type names its engine.
 
@@ -518,7 +525,7 @@ Pf(k) = k₀·m in the definition of Z(e; m). In the language of P16 this is the
 SO(3) theory with the discrete theta term (O. Aharony, N. Seiberg, Y. Tachikawa, JHEP 08 (2013) 115).
 (iii) (ARGUED) Small-ℓ end. For ℓ → 0 on the trajectory, z_k → 0 for every k ≠ 0: twisted sectors with a
 twist-eating flat connection have no constant modes and lose a positive power of g(ℓ) against the untwisted
-sector, which has four constant-mode moduli; sectors with odd Pf lose exp(−4π²/g²(ℓ)), that is a factor
+sector, which has constant modes (torons); sectors with odd Pf lose exp(−4π²/g²(ℓ)), that is a factor
 (Λℓ)^{11/3} at one loop. So π_ℓ starts at the free-flux vertex and must end at the confined vertex.
 Reading step. In four dimensions the flux energies of a free Maxwell field on a symmetric torus are
 independent of ℓ (flux energy × ℓ is dimensionless only for d = 4). So for U(1) the flow is a fixed point
@@ -773,3 +780,187 @@ statements that the lane already holds: rows 708, 814, 858, 1195, 1386, 1553, th
 the thin twisted torus. It found five unused patterns and all five are void. This agrees with the outcome
 of row 1672 by a different method of search. It is still one model family reading one record: by the
 lane's own rule it is not an independent check of exhaustion (check 1443).
+
+## 5. Part 4. Ranking, buildable components, reading list
+
+### 5.1 The ranking has no new entry
+
+The brief asks for the five best new candidates. There is none: every candidate of section 3 is on file
+(4.1), and the five unused patterns are void (4.2). I do not fill the list with restatements.
+
+For the lead's use only, the on-file directions that this row met again, ordered by my judgement of the
+chance that a first link gives an instance of the gate (GUESSED; all chances are small):
+
+1. Route M of row 858 (C1): the sign of (D-beta) plus (AF-step). Reason for first place: it is the only
+   direction here whose first link is a single inequality between two mean actions, and the 2026
+   two-dimensional proofs show that an inequality of this shape ("asymptotic freedom as an inequality")
+   can be proved at every coupling when a commutator term is available (rows 1007, 1009). Its first link
+   needs (T-ineq), which is open. Test (g1): the sign statement is true for U(1); the reading is in the
+   constant c > 0 of (AF-step).
+2. The thin twisted torus (C5). It has a method up to a proved theorem at short width (the four-link chain
+   of 3.6). It fails (t2) and (g4): the statement is kinematic. It is a gate instance only under the
+   literal four clauses, and check 1675 already rejects that reading.
+3. The flux simplex (C2). No engine; exclusion statements only.
+4. The Z₂ fibre (C3). Frozen at β_K.
+5. Orbit-space convexity (C4). Strong coupling only.
+
+### 5.2 First buildable components
+
+The brief asks for an exact lemma for each of the top three. I give the three lemmas that this row proved
+by hand, with quantifiers and constants. Each is a rebuilt form of a statement on file. None is a gate
+instance. I state this plainly so that no row is opened on them as attacks.
+
+**B1 (for route M). The parity form of the local sign (PROVED here; the sector form is on file, the
+criterion in this form I did not find).** Take a finite torus with at least three sites in direction 1.
+Let Σ be the twist stack of the plane (1, 2): the plaquettes (x; 1, 2) with x₁ = x₂ = 0. Put the coupling
+β ≥ 0 on the plaquettes off Σ and s on those of Σ, G(s) = ∫ exp(β Σ_{p∉Σ} P_p + s Σ_{p∈Σ} P_p) dU, and
+R(s) = G(−s)/G(s) for s > 0. (The twist ratio z_k of the plane (1, 2) is R(β).) Let C be the set of
+direction-2 links from x₂ = 0 to x₂ = 1 in one slice x₁ = const, one for each (x₃, x₀). Then there is
+μ ≥ 0 on spin configurations j: C → {0, ½, 1, ...} with
+
+  G(±s) = Σ_j μ(j) (±1)^{F(j)} Π_{ℓ∈C} λ_{j_ℓ}(s),   F(j) = Σ_ℓ 2 j_ℓ,   λ_j(s) = (2/s) I_{2j+1}(s) > 0.
+
+With π_s the probability measure proportional to μ(j) Π_ℓ λ_{j_ℓ}(s) and D(j) = Σ_ℓ (d/ds) log λ_{j_ℓ}(s):
+ (i) R(s) = E_{π_s}[(−1)^F], so |R| ≤ 1;
+ (ii) (d/ds) log G(s) = E_{π_s}[D] ≥ 0;
+ (iii) R′(s) = Cov_{π_s}((−1)^F, D) = 2 p_e p_o (E_{π_s}[D | F even] − E_{π_s}[D | F odd]), with p_e, p_o the
+       masses of the two parity classes. So R′(s) ≤ 0 if and only if the odd class carries at least as
+       much of D as the even class.
+Proof. Write the torus integral as a trace with the transfer operator in direction 1 (as in
+`Transfer.lean`, with direction 1 in the role of time). One step is W^{1/2} K W^{1/2}, W > 0 a
+multiplication operator, K = Π ⊗_ℓ κ_ℓ, Π the gauge projection, κ_ℓ the convolution by exp(c_ℓ ½ tr(·)) on the
+link ℓ. Only the step from x₁ = 0 to x₁ = 1 contains s, and there c_ℓ = s exactly for ℓ ∈ C. Convolution by a
+class function commutes with left and right translations, so the κ_ℓ commute with Π and with each other,
+and κ_ℓ acts on the spin-j isotypic subspace of the link ℓ as the scalar λ_j(c_ℓ). Since χ_j(−g) = (−1)^{2j} χ_j(g),
+λ_j(−s) = (−1)^{2j} λ_j(s). With P_j the product of the isotypic projections on C, M = W^{1/2} T^{n₁−1} W^{1/2} ≥ 0
+and N = Π ⊗_{ℓ∉C} κ_ℓ(β) ≥ 0: G(±s) = Σ_j (±1)^{F(j)} Π_ℓ λ_{j_ℓ}(s) Tr(M N P_j), and μ(j) = Tr(M · N P_j) ≥ 0 because
+N P_j is a product of commuting positive operators. This gives (i). For (ii) and (iii) differentiate:
+(d/ds) log of the weight of j is D(j); and (d/ds) log λ_j = I_{2j+2}(s)/I_{2j+1}(s) + 2j/s ≥ 0 by the recurrence
+I′_ν = I_{ν+1} + (ν/s) I_ν. The covariance identity is the two-class computation
+p_e d_e − p_o d_o − (p_e − p_o)(p_e d_e + p_o d_o) = 2 p_e p_o (d_e − d_o). ∎
+Remarks. D is an increasing function of each j_ℓ (a known monotonicity of ν ↦ I′_ν/I_ν, not reproved here).
+What B1 shows: the open sign of (D-beta) is a statement about one probability measure on the fluxes
+through the cut. The inequality in (iii) is false for some laws on F ∈ {0, 1, 2}: for π = (0.1, 0.3, 0.6)
+and D = F the even class has mean 12/7 and the odd class has mean 1. So a proof must use a property of μ.
+At weak coupling the fluxes j_ℓ are of order √s with a wide spread, and the two class means differ by an
+exponentially small amount; the sign of that difference is the open point. Not equivalent to the seed: it
+is a sign with no rate, and the same statement holds for U(1) by Ginibre's inequality. So it is not a gate
+instance (clause 2).
+
+**B2 (for the thin twisted torus). Lemma TT1 of 3.6**, with λ_tw = 4 min(sin²(π/(2L₁)), sin²(π/(2L₂))),
+for all L₁, L₂ ≥ 2 and all long sides. A finite Fourier computation; it can be checked in Lean with the
+discrete Fourier transform on Z_{2L} (antiperiodic functions on Z_L are the odd-frequency functions on
+Z_{2L}). On file in content at `gap-ac-lat.md` L47-L52. Not equivalent to the seed: it is a statement about
+the quadratic form at one configuration. Not a gate instance: (t2), (g4).
+
+**B3 (for orbit-space convexity). Lemma OG of 3.4** in every dimension d: for gauge-invariant f,
+Γ₂(f) ≥ (Ric + Hess S)(∇f, ∇f) + Q_U(∇f) and Q_U ≥ (1/(2d)) Ric at every U with discrete stabiliser. At
+d = 4 the factor 1 + 1/8 is the 9/8 of row 814 (C4), checked in row 824. Possibly new, and of no use on
+the trajectory: the exact block formula Q_U(X) = ¼ Σ_ℓ Σ_b ⟨[X_ℓ, e_b], (s_U Δ_U^{−1} s_U*)_{ℓℓ} [X_ℓ, e_b]⟩; the
+value 0.37 at U = 1 for d = 4 (ARGUED from G(0,0) ≈ 0.1549); in d = 2 the same block grows like log n
+(ARGUED), so the orbit-space curvature gain is infrared-enhanced only in two dimensions. Not a gate
+instance: pointwise criteria stop at β of order 0.1 (row 812).
+
+### 5.3 A remark found on the way (PROVED; small; relevance: none for u = n/512)
+
+For time extent 1 write the temporal link at site x as g_x = x_x + i v_x·σ (scalar and vector part). The
+temporal plaquette is ½ tr(g_x U g_y⁻¹ U⁻¹) = x_x x_y + v_x · Ad(U) v_y. So the scalar parts couple
+ferromagnetically with no connection, and only the vector parts see the spatial field. At spatial
+coupling 0 the vector parts integrate out bond by bond:
+∫ dU exp(β ½ tr(g U h⁻¹ U⁻¹)) = e^{βxy} sinh(βab)/(βab) = e^{βxy} Σ_m (βab)^{2m}/(2m+1)!, a = √(1−x²), b = √(1−y²).
+Hence an exact mixture of ferromagnetic continuous-spin Ising models with site dilution:
+Z_k = Σ_{m: bonds → ℕ} Π_b β^{2m_b}/(2m_b+1)! ∫ Π_i (1−x_i²)^{M_i+½} dx_i exp(β Σ_b s_b^k x_i x_j), M_i = Σ_{b∋i} m_b.
+This is an instance of trigger (T-copy) of row 1553 (non-negative weights, ferromagnetic conditional model)
+in the corner of time extent 1 and no spatial plaquettes. It is the equal-slice case of Identity L of
+row 712 and of the third split of row 1553 step 17 ("it is quadratic only in temporal links given spatial
+links"). For time extent above 1 the two slices differ, the scalar and vector parts mix through U′U⁻¹, and
+the conditional sign model has fields and couplings of both signs. I found no way to carry it further.
+
+### 5.4 Reading list (eight items; each read must answer one question)
+
+Chosen by two rules: a proved crossing of an order-one coupling that the record marks "recalled, not
+re-read" (`gap-crux-exercise3-max.md` L221, item I36), or a source with zero or one file in the lane whose
+answer would change a row of the engine map or a test. Bibliographic data are from memory; check each
+before use (UNVERIFIED where marked).
+
+1. C. Kopper, J. Magnen, V. Rivasseau, "Mass generation in the large N Gross-Neveu model", CMP 169 (1995)
+   121-180. Question: in which single estimate is 1/N used to pass the scale where the coupling is of order
+   one, and is that estimate a convexity or positivity statement about the effective potential of the
+   auxiliary field that has a meaning at fixed N?
+2. K. Gawędzki, A. Kupiainen, "Continuum limit of the hierarchical O(N) non-linear σ-model", CMP 106 (1986)
+   533-550. Question: what is the invariant set of single-site densities through the crossover; is large N
+   used only for one quantitative inequality per step (then a certified computation at N = 4 is a defined
+   task); does the hierarchical O(2) model keep a massless phase (test (g1) for hierarchical engines)?
+3. A. Kupiainen, "On the 1/n expansion", CMP 73 (1980) 273-294. Question: is the mass bound uniform in β at
+   fixed N, or does the threshold N₀ grow with β? If it grows, at what rate against the correlation length?
+4. M. Lemm, A. Sandvik, L. Wang, Phys. Rev. Lett. 124 (2020) 177204, and N. Pomata, T.-C. Wei, Phys. Rev.
+   Lett. 124 (2020) 177203. Question: which boundary condition does the patch carry in the weighted
+   finite-size criterion, and does the proof use more than H² ≥ γH for a sum of local positive terms with
+   a common null vector? The Fokker-Planck operator of the lattice measure has that form; the record says
+   the worst-boundary patch gap fails above β = 1.0109 (row 1072), so the question is whether a free or
+   averaged boundary is admissible.
+5. M. Fannes, B. Nachtergaele, R. Werner, "Finitely correlated states on quantum spin chains", CMP 144
+   (1992) 443-490. Question: the theorem turns primitivity of a transfer map into a gap and clustering; is
+   there a checkable sufficient condition for primitivity that has a form for the Doob transform of the
+   Wilson transfer operator on the neutral sector? (Expected answer: no; the state space is infinite.)
+6. G. Dell'Antonio, D. Zwanziger, CMP 138 (1991) 291-299; D. Zwanziger, Nucl. Phys. B364 (1991) 127-161.
+   Question: do the bounds on the Gribov region give any inequality for a gauge-invariant quadratic form
+   (for example the kinetic form of the neutral transfer operator in Coulomb gauge), at every β, that is
+   void for U(1)? Then run (g4) on it.
+7. J. Fröhlich, G. Morchio, F. Strocchi, "Higgs phenomenon without symmetry breaking order parameter",
+   Nucl. Phys. B190 (1981) 553-582, and T. Kennedy, C. King, "Spontaneous symmetry breakdown in the abelian
+   Higgs model", CMP 104 (1986) 327-347 (UNVERIFIED pages). Question: is a massless phase proved for any
+   lattice gauge theory with an SU(2) factor and adjoint matter? If yes, test (g4) is a theorem and not a
+   belief. If no, record what is proved for the abelian case.
+8. P. Falco, "Kosterlitz-Thouless transition line for the two dimensional Coulomb gas", CMP 312 (2012)
+   559-609, and J. Dimock, T. Hurd, "Sine-Gordon revisited", Ann. Henri Poincaré 1 (2000) 499-541.
+   Question: is there a proved mass of the Kosterlitz-Thouless form exp(−c/√t) on the plasma side close to
+   the transition line? That would be a marginally relevant bosonic flow followed to strong coupling
+   with no large N and no hierarchy, a new row of the engine map. (My expectation: not proved. UNVERIFIED.)
+
+Not listed, because the lane holds readings: the two-dimensional O(N) proofs (rows 1007, 1009), Tomboulis
+and Yaffe, Mack and Petkova, Durhuus and Fröhlich, Göpfert and Mack, Bauerschmidt-Bodineau-Dagallier,
+Shen-Zhu-Zhu, Chatterjee, Tanizaki and Ünsal, the entropic theorems.
+
+## 6. Labels, limits, credits
+
+| Statement | Label |
+|---|---|
+| (F1)-(F4) of section 1 | PROVED here; on file (Lemma B of row 1515, Lemma 4.2 of row 708) |
+| The 28 entries of section 2 | CITED from memory; page numbers not checked against the sources in this session; items marked UNVERIFIED are so |
+| The six-engine rule (2.7) | ARGUED; corrected by the record in 4.1 (C7): the 2026 two-dimensional proofs are an instance of E3 |
+| (g7) | ARGUED; equal to (g4) on file |
+| Integral formula and conditional lemma of S1 | PROVED; on file (row 858) |
+| Facts (i), (ii) of S2 | PROVED; on file (`gap-flux-exercise.md`, `gap-kappa-order.md`) |
+| Fibre identity of S3 | PROVED; on file as a family (row 1553 step 17) |
+| Lemma OG (S4, B3) | PROVED; on file at d = 4 (rows 814, 824) |
+| Lemma TT1 (S6, B2) | PROVED; on file in content (`gap-ac-lat.md`) |
+| B1 (parity form) | PROVED; the remark that D is increasing uses a known Bessel monotonicity, not reproved |
+| Remark 5.3 | PROVED (a two-line computation) |
+| The loop equation of S8 | ARGUED; constants not rechecked |
+| Voids (V1)-(V5) | ARGUED |
+| Ranking 5.1 | GUESSED |
+| (PUR-io), the seed, (EXC), the gap | OPEN |
+
+Limits. No numeric run, no Lean run, no web search, no download. The references are from memory. Row
+1682's file was not read. In Phase 2 I opened the files listed at the head of section 4 and nothing else;
+"on file" verdicts for S5, S7, S8, S9 and C3 rest on quoted grep lines. A grep that finds nothing does not
+prove absence. The closed-folder phase was real for the folder, but the memory index of this worker lists
+earlier row titles, so some prior knowledge of the lane's vocabulary was present.
+
+Credits. Balaban; Sussman and Alpoge, with Claude and Codex as authors of their text (the account, the Lean
+release, the transfer operator and the purity consumer). OpenAI and Ding, Huang, Yang (the two-dimensional
+O(N) proofs, through rows 1007 and 1009). The lane's rows: 708 (transport along the coupling), 712
+(Identity L), 814 and 824 (the 9/8 gain), 858 ((D-beta), routes M and T), 1195 (Remark F6), 1386 ((SV-Z)),
+1553 (tests, engine map, triggers, copy splits), 1672 and check 1675 (the gate). All authors named in
+section 2 for their theorems.
+
+Provenance: Claude Fable 5.2 (claude-fable-5-2), high effort, Mac mini worker, one session, no subagents.
+Nothing committed, pushed or posted. One file written (this one), plus one memory note outside the
+repository.
+
+## 7. RESULT
+
+Finished 2026-11-28T14:39Z (date -u). Wall clock from 13:52Z. Memory pressure was not read: no numeric job was started.
+
+RESULT: Row 1686 (Claude Fable 5.2 high, Mac mini worker, one session; author only, checked by no one; no numeric run, no Lean run, no web search; references from memory). Strategy mining inside mathematical physics: 28 solved problems read for their decisive moves, sorted into six engines, mapped to nine strategy types for (PUR-io), compared with the record. Verdict: NO NEW CANDIDATE. All seven candidates written closed-folder are on file: the coupling-integral identity with the sign of (D-beta) and (AF-step) (rows 708, 858), the flux simplex and global forms (gap-flux-exercise, gap-kappa-order), the Z_2 fibre (row 1553 step 17), the orbit-curvature gain 1 + 1/(2d) = 9/8 (rows 814, 824; rederived here by Killing fields), the thin twisted torus (G7 of gap-brainstorm-max, gap-ac-lat; kinematic by (t2), and here also by (g4)), the adjoint-scalar control (= (g4)), and the engine rule (engine map of row 1553, which corrects my closed-phase claim through the 2026 two-dimensional O(N) proofs). New but negative: five patterns with no file in the lane (Aizenman-Wehr, Dyson lemma with box localisation, a discretely holomorphic observable, hidden order by a non-local unitary, the Nahm transform) are void for (PUR-io), each with its reason; bracketing and gluing bounds lose an extensive factor (Jensen gluing gives p >= exp(-c n^3)). Proved here, small, none a gate instance: B1 (the sign of the local (D-beta) is equivalent to: the odd-parity class of cut fluxes carries at least as much of an increasing additive function as the even class, under one positive measure); Lemma TT1 (twist gap 4 min sin^2(pi/2L_i), uniform in the long sides); Lemma OG in every dimension; an exact ferromagnetic mixture for time extent 1 at zero spatial coupling (5.3). Reading list: eight items with one question each, led by the three proved order-one crossings that the record marks recalled and not re-read (Kopper-Magnen-Rivasseau, Gawedzki-Kupiainen, Kupiainen). Open: (PUR-io), the seed, (EXC), the gap; the sign of (D-beta) for SU(2); (T-ineq), (T-copy), (T-dual).

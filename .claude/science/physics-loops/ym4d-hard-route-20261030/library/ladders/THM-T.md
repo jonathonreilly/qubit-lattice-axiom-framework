@@ -9,4 +9,4 @@ Check 1715 found the architecture of Theorem T incomplete. These are the missing
 | T3 | Bad regions, including the exterior collar, as a convergent expansion of the law (factorisation or conditional mixing across good regions; signed cutoff terms) | open | | |
 | T4 | The rank count N0 with every cost paid (reads per cube, loop letters, diameter factor) | open | | |
 | T5 | Transfer conclusion: floor-free clustering with translation-uniform constants gives a transfer gap | HOLDS AFTER CORRECTION (check 1715) | 1708, 1715 | done |
-| T6 | A planar connected-response object (limit of N^2 Cov, or a connected observable algebra) and its relation to (PS) | open | | needed by PS7 |
+| T6 | A planar connected-response object (limit of N^2 Cov, or a connected observable algebra) and its relation to (PS): named (RESP) by row 1722; Theorem T step 3 fails in a weak phase without it | open | | needed for a gap at fixed N |

@@ -8,6 +8,7 @@ Target (row 1708 section 7): at one order-one beta, a master field W_beta exists
 | PS2 | Tail lemma closing the truncation (reflection positivity or other) | OPEN in 4D; row-sum form needs 6 beta a^4 < 1; FALSE in the one-plaquette twin weak phase | 1716 | proof by hand, checked |
 | PS3 | First exact instance at small beta, matched to the strong-coupling expansion | done (unchecked): twin certificate at beta = 9/10; 4D W(p) = u + 4u^5 | 1716 | exact output |
 | PS4 | Certificate at an order-one beta, Lean-checked | open; cost about 1e14 rational operations at Lambda = 16, beyond direct Lean: needs a smarter certificate | | Lean kernel, axioms printed |
-| PS7 | Restate (PS) for the weak side (row 1716: as stated it fails in the twin weak phase): smaller perturbation class, other norm, or a modified action without a bulk transition | in progress | 1722; 1720 in part | statement that the twin does not refute |
+| PS7 | Restate (PS) for the weak side (row 1716: as stated it fails in the twin weak phase): smaller perturbation class, other norm, or a modified action without a bulk transition | done (unchecked): (PS') with centre equation (C); twin both phases PROVED | 1722 | check 1727 | statement that the twin does not refute |
 | PS5 | U(N) twin: the same certificate fails where U(N) is Coulomb (the SU(N) last term is the selective line) | open | | twin test |
 | PS6 = GPU | Joint rung with ladder LD (row 1717 Lemma I): planar uniqueness in a ball with free boundary; (PS) is its linear infinite-volume form | in progress | 1720 | see LD.md |
+| PS8 | (PS'_exact) or quantitative (PS') in 4D (positivity-certificate route) | in progress | 1720 | proof or certificate, checked |

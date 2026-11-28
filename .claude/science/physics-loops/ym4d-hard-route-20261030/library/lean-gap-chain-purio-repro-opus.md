@@ -32,7 +32,7 @@ FINISH.md names this reproduction only in rows 1681 and 1691. Row 1681 (`library
 
 ## Builds (step 2)
 
-Order: SequenceLemma, LemmaM1, TheoremS, Wilson, Transfer, Trace, Stage0, Stage2, Stage3, Stage3b, Stage4, Final, Purity, PurIo, Offset (Assembly and Periodic are not imported by Offset and are not built). One `lake --no-cache build +GapChain.<M>:olean` per module, 17:02:39Z to 17:31:58Z. Every run exit 0, no kill (`watch.log`: 0 KILL lines; no `KILLED` file), and the watchdog stayed alive the whole time (heartbeat every 60 s, last before the end at 17:31:49Z; 331 samples).
+Order: SequenceLemma, LemmaM1, TheoremS, Wilson, Transfer, Trace, Stage0, Stage2, Stage3, Stage3b, Stage4, Final, Purity, PurIo, Offset (Assembly and Periodic are not imported by Offset and are not built). One `lake --no-cache build +GapChain.<M>:olean` per module, 17:02:39Z to 17:31:58Z. Every run exit 0, no kill (`watch.log`: 0 KILL lines; no `KILLED` file), and the watchdog stayed alive the whole time (heartbeat every 60 s, last before the end at 17:31:49Z; 331 sample-log lines by then).
 
 **Result: all 15 modules built from the committed sources.** Each log has exactly one `Built GapChain.<M>` line, for the target. No log has a `Built` line for Mathlib, YangMills, Formulation, Reconstruction, Batteries, Aesop, Qq, Plausible or ProofWidgets (count 0 in every log), so nothing of the release or Mathlib was recompiled. No log has an error. The Offset log shows `Built GapChain.Offset (157s)` and 14 `Replayed GapChain.*` lines (the modules built before).
 
@@ -145,3 +145,42 @@ fun L M g₀ ℓ =>
       Γ.side = ℓ * L ^ k → 457 / 625 ≤ GapChain.purity Γ (GapChain.betaAt L M k g₀) (Γ.side / 512)}
 Check.lean:86:7: error(lean.unknownIdentifier): Unknown constant `GapChain.Purity.purity`
 ```
+
+Follow-up run 3 (my script fix only): `Check2.lean` (SHA-256 `575e40bc075608b020224375e0b711e79d995c4ced2b5cfa9dabe070b53b2f31`) imports GapChain.Offset and holds `#print GapChain.purity` and `#print axioms GapChain.purity`. 17:59:58Z to 18:02:34Z, wall 152.40 s, exit 0, no kill. Verbatim output:
+
+```text
+def GapChain.purity : YangMills.Construction.TransferOperators.CubicPeriodSublattice → ℝ → ℕ → ℝ :=
+fun Γ β u =>
+  have T := Γ.transfer YangMills.Construction.TimeAxis.timeIdx β;
+  have P₀ := GapChain.neutralProj Γ YangMills.Construction.TimeAxis.timeIdx;
+  (YangMills.Construction.SpinHarmonics.tracePW (P₀ * T ^ (2 * u)) /
+      YangMills.Construction.SpinHarmonics.tracePW (P₀ * T ^ u) ^ 2).re
+'GapChain.purity' depends on axioms: [propext, Classical.choice, Quot.sound]
+```
+
+This is the definition that row 1681 Part B read in the source (item 1), now printed by the kernel environment.
+
+## Verdict (2026-11-28T18:02:43Z, date -u)
+
+**REPRODUCED.** From the committed sources at 9cd49b2b2, in a new scratch project of my own with no reused local olean and the release fixture write-denied, Lake compiled each of the 15 modules from SequenceLemma to Offset once, and recompiled nothing of the release or Mathlib. The kernel accepted all of them. My `#print axioms` and my own traversal give:
+
+- `GapChain.Offset.su2_fixed_observable_gap_of_infinite_passing`: [propext, Classical.choice, Quot.sound]; traversal 340,556 constants, no `sorryAx`.
+- `GapChain.Purity.su2_fixed_observable_gap_of_purity`: [propext, Classical.choice, Quot.sound]; 340,472 constants, no `sorryAx`.
+- `GapChain.PurIo.su2_fixed_observable_selection_on_records`, `su2_fixed_observable_gap_of_passing_blocks`, `su2_fixed_observable_cutoffs_at_fixed_offset`: each [propext, Classical.choice, Quot.sound]; 340,463 / 340,468 / 338,488 constants, no `sorryAx`.
+- Every constant declared in Purity (26), PurIo (34) and Offset (106): the three axioms only, no `sorryAx`, 0 axiom declarations, 0 unsafe constants.
+- Control: Stage 0's `GapChain.su2_fixed_observable_gap_of_mNeutral` shows `sorryAx` in both `#print axioms` and the traversal, so the check can see a `sorry`.
+- The printed top statement of Offset is the statement quoted in row 1681 Part B item 2.
+
+Memory, under the lead's rule (tree footprint above 6 GB, or free below 40 percent, kills): no kill in 648 tree samples from 17:02:39Z to 18:02:34Z. Session peaks: tree footprint 4,461,133,568 B (end of Stage3), tree RSS 7,565,180,928 B (17:34:22Z, during check run 1), minimum free 48 percent (end of Stage3); every other sample had 53 percent free or more. Each build started at 62 percent free or more.
+
+What this does not cover. It is a kernel re-check of my own build, not a byte reproduction of the author's oleans (different paths). `lean4checker` was not run, so the check trusts the oleans of my build and of the release fixture, as `#print axioms` always does. The release itself was not rebuilt (by the brief). A reproduction says nothing about (PUR-io): it stays an unproved hypothesis, at the Offset theorem's own M and δ (row 1681 item 2).
+
+Deviations. (1) Check run 1 was stopped by me at about 10 min, because the tool that started it would have stopped it; it printed nothing, and run 2 was the same file, detached. (2) One wrong name in my own Check.lean (`GapChain.Purity.purity`) gave exit 1; run 3 printed the right constant. Neither changes an axiom report.
+
+Logs: `/tmp/opus-purio-repro.hH2Aoo/logs/` (`runs.log`, `watch.log`, `watch-samples.log`, `build-<M>.log`, `time-build-<M>.txt`, `preflight.log`, `uptodate.log`, `check2.log`, `time-check2.txt`, `check3.log`, `time-check3.txt`, `committed-sha256.txt`). Scripts: `tools/watch.sh`, `tools/run.sh`, `tools/seq.sh`, `tools/sb.sb`.
+
+## Credit
+
+The YM4 Lean release is by Ethan Sussman and Levent Alpoge, with Claude and Codex. gpt-6.2-astra max wrote Purity.lean, PurIo.lean and Offset.lean (rows 1676, 1678, 1679). The traversal code and project setup come from my rows 1671 and 1681. The footprint rule is the lead's ruling after row 1681.
+
+RESULT: REPRODUCED. Under the footprint cap (tree peak footprint 4.46 GB, minimum free 48 percent, no kill), a fresh sandboxed build compiled all 15 GapChain modules through Offset from the committed sources, with no release or Mathlib rebuild. `#print axioms` and my own traversal give [propext, Classical.choice, Quot.sound] with no sorryAx for Offset.su2_fixed_observable_gap_of_infinite_passing, Purity.su2_fixed_observable_gap_of_purity, the three PurIo theorems and every constant of the three modules. The Stage 0 control shows sorryAx. Open: (PUR-io) itself (the Wilson purity bound at infinitely many cutoffs, at the Offset theorem's M and δ); lean4checker was not run.

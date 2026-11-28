@@ -35,3 +35,5 @@ FINISH.md names this reproduction only in rows 1681 and 1691. Row 1681 (`library
 In progress. Order: SequenceLemma, LemmaM1, TheoremS, Wilson, Transfer, Trace, Stage0, Stage2, Stage3, Stage3b, Stage4, Final, Purity, PurIo, Offset (Assembly and Periodic are not imported by Offset and are not built).
 
 Note on the watchdog log. `~/.elan` resolves to `/Volumes/SANDISK SSD/Mac Storage/Developer/elan`, so the `ps` command name of each lean process contains a space and the sample log labels it `SANDISK:<pid>`. The tree walk uses pids, so these processes are in the sum (checked: during SequenceLemma the lean pid 90268 is in every sample, with its RSS and footprint). Build sequence script: `tools/seq.sh` (stops on a kill, on a dead watchdog, or on free memory below 50 percent for 20 min; waits for 50 percent free before each module). Started 17:02:39Z.
+
+Progress 17:06:23Z: SequenceLemma to Stage0 built, rc 0 each, no kill. Through Stage0 the watchdog samples give tree peak footprint 1,738,012,256 B, tree peak RSS 6,953,910,272 B, minimum free 55 percent. (Final table below when all modules are done.)

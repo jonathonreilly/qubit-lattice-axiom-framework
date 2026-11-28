@@ -9,4 +9,4 @@ One file per component. Each file holds the target, the rungs in order, and for 
 - Every rung that claims to read SU(2) passes the U(1) twin test of the crux card (library/gap-purity-crux-card.md section 3).
 - A refuted rung is kept, with its counterexample, and the ladder is rerouted, not dropped.
 
-Ladders: LD.md, PS.md, LOOPEQ.md, THM-T.md (the large-N gap, rows 1708-1722); CARRY.md (A1); RANK.md (candidate A of row 1707); LOCAL.md (candidate B of row 1707, for ExpClusters); LEAN.md (the Lean consumer).
+Ladders: LD.md, PS.md, LOOPEQ.md, THM-T.md, LANGEVIN.md (the large-N gap, rows 1708-1732); CARRY.md (A1); RANK.md (candidate A of row 1707); LOCAL.md (candidate B of row 1707, for ExpClusters); LEAN.md (the Lean consumer).

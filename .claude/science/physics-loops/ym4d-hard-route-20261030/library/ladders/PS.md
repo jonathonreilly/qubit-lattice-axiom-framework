@@ -9,3 +9,4 @@ Target (row 1708 section 7): at one order-one beta, a master field W_beta exists
 | PS3 | First exact instance at small beta, matched to the strong-coupling expansion | in progress | 1716 | exact output |
 | PS4 | Certificate at an order-one beta, Lean-checked | open | | Lean kernel, axioms printed |
 | PS5 | U(N) twin: the same certificate fails where U(N) is Coulomb (the SU(N) last term is the selective line) | open | | twin test |
+| PS6 = GPU | Joint rung with ladder LD (row 1717 Lemma I): planar uniqueness in a ball with free boundary; (PS) is its linear infinite-volume form | in progress | 1720 | see LD.md |

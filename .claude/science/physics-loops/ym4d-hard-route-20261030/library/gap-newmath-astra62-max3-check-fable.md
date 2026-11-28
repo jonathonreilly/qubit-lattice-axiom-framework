@@ -14,6 +14,14 @@ Plan: read the whole checked file once, then give a verdict per claim in the ord
 - 2026-11-28T04:30Z: file created; reading the checked file.
 - 04:31Z: read all 901 lines of the checked file (Stages 1-28). Next: look up the on-file inputs (rows 1468, 1553, 1145, 1143, 1227) and check claim 1.
 - (log) inputs read for claim 1: FINISH rows 1661, 1553, 1556, 1468; `gap-k2-tool-design-fable.md` 3.1 (L99-L120); `gap-mech-direction4-fable.md` 1.4-1.5 (L180-L196); `gap-solve-astra62.md` (1) and its proof (L25-L45); RESULT lines of checks 1144, 1384, rows 1227, 1642.
+- 04:36Z: Section 1 (claim 1) written. Next: claim 2, formula (37).
+- (log) inputs read for claims 2 and 3: FINISH rows 1072, 1077, 1108, 1115, 1145, 1146, 863, 1215, 1334 (RESULT text); `gap-bridge-exercise-opus.md` L74-L75, L380, L406-L420; `gap-solve2-astra62.md` L16-L30 (row 1145 (1), (2)).
+- 04:42Z: Sections 2-3 (claims 2, 3) written. Next: claim 4 (Stages 2-7, 16-19).
+- 04:46Z: Section 4 (claim 4) written. Next: claims 5 and 6 (Stages 21-24, 28).
+- 04:49Z: Sections 5-6 (claims 5, 6) written. Next: claim 7 (the OPEN statement and the gap to the isotropic point).
+- (log) inputs read for claim 7: `gap-mech-direction2-fable.md` L95-L121, L188-L190 (row 1386, statement (SV-Z)); `gap-direction8-astra62-check-opus.md` L95-L99; `gap-ladder-max.md` L65 (c_AF); RESULT text of rows 1198, 1066.
+- 04:52Z: Sections 7-9 written. Next: re-read of my own labels and anchors, then the RESULT line.
+- 04:54Z: re-read done (table pipes fixed, one sentence on rows 1215/1227 softened, log lines moved here); Section 10 with the RESULT line written. Item finished.
 
 ## 1. Claim 1: formula (30) and its selectivity
 
@@ -72,8 +80,6 @@ The checked file states 1-3 itself (L434, L440, L681). Its RESULT line "In the o
 - C2. L311 and L651: "the strict intermediate value still fails" is true and is not a test. The consumer reads only P >= 457/625.
 - C3. Stages 13-17: credit Luescher's small-volume Hamiltonian and row 1227.
 
-- 04:36Z: Section 1 (claim 1) written. Next: claim 2, formula (37).
-- (log) inputs read for claims 2 and 3: FINISH rows 1072, 1077, 1108, 1115, 1145, 1146, 863, 1215, 1334 (RESULT text); `gap-bridge-exercise-opus.md` L74-L75, L380, L406-L420; `gap-solve2-astra62.md` L16-L30 (row 1145 (1), (2)).
 
 ## 2. Claim 2: formula (37)
 
@@ -98,7 +104,7 @@ Not rechecked by me: the Laplace limit on the regular locus beyond the mode coun
 - **BR-2** (ON FILE; rows 1072, 1077, 1108, 1115). BR-2 lives on Z^2 x Z^2 with one plaquette orientation (type L) at infinity. Its face is a system of two-dimensional O(4) sheets coupled by the mixed and transverse plaquettes. Its face leg (FACE-SG) is open beyond the strip beta_T up to about Xi^(-2) (row 1108); its descent (MON-L) is a sign with no mechanism (row 1072 7.3, row 1108); the registry holds BR-2 as blocked-local at (SING) (row 1115).
   (37) freezes the three spatial orientations. Its face is a stack of three-dimensional O(4) layers, one per time step, that talk only through three winding angles. On this face the face statement is easy and is now proved: that is (37). So (37) is the analogue of BR-2's face leg on a different face. It is not (FACE-SG), and neither implies the other (ARGUED: different frozen sets, different surviving fields; (FACE-SG) keeps a two-dimensional non-abelian mass problem, (37) keeps three angles).
   The analogue of (MON-L) for this face is: P_(n,u)(beta_K, s) does not fall below 457/625 as s comes down from s_0(K) to beta_K. Its end point is the seed. So the descent is the seed or stronger. Rows 1072 and 1108 already judged this kind of statement ("a sign of d m/d beta_L ... false in the class"; "contains C_beta and has no mechanism").
-- **Is (37) on file?** My greps of FINISH.md for "magnetic coupling", "spatial coupling", "frozen spatial", "flat spatial", "large magnetic", "magnetic tail", "KS-ZONE" give rows 863, 881, 934, 1145-1147, 1334 and this row; none treats s -> infinity at fixed a. `library/open-core.md` has no hit. Row 1215 and row 1227 (10)-(15) treat a fixed cube with both couplings large. So (37), and (35)-(36) behind it, are new in the lane as far as I can see. Section 8 lists the greps.
+- **Is (37) on file?** My greps of FINISH.md for "magnetic coupling", "spatial coupling", "frozen spatial", "flat spatial", "large magnetic", "magnetic tail", "KS-ZONE" give rows 863, 881, 934, 1145-1147, 1334 and this row; none treats s -> infinity at fixed a. `library/open-core.md` has no hit. Row 1215 and row 1227 (10)-(15) treat a fixed spatial cube (I read their RESULT text only). So (37), and (35)-(36) behind it, are new in the lane as far as I can see. Section 8 lists the greps.
 - **Is (37) equivalent to the seed?** No. It is proved and the seed is open; and the seed at s = beta_K does not give the frozen purity either. (37) does not shorten the seed: the interval between s_0(K) and beta_K has no bound.
 
 ### 2.3 Selectivity of (37)
@@ -130,7 +136,6 @@ Scale check (ARGUED): a winding is a product of n links, each spread by s^(-1/2)
 
 What (38) does and does not say: it separates one observable's law. It gives no bound, either way, on the purity for s below a n^2. The file says this at L873.
 
-- 04:42Z: Sections 2-3 (claims 2, 3) written. Next: claim 4 (Stages 2-7, 16-19).
 
 ## 4. Claim 4: the affine path, (1)-(9), (22), (27), (28a), (29)
 
@@ -153,7 +158,6 @@ Consistency checks I ran by hand: (6) and (28a) at t_* (the lower bound (b_1 alp
 
 What these items give the seed: nothing, and the file does not claim otherwise. (28a) is a statement at |t| <= c/(beta_K log beta_K)^2, a strong-coupling corner in the three weak orientations. The counts (22), (29) show that P_K(t) is not analytic and bounded on a neighbourhood of [0, beta_K] of width above C/beta_K. This answers the question of check 1659 (cancellation of zeros) in the negative for bounded continuation and for exact double cancellation, on the affine path. Selectivity: every step is group-blind and dimension-blind (file L89, L139, L637); I agree.
 
-- 04:46Z: Section 4 (claim 4) written. Next: claims 5 and 6 (Stages 21-24, 28).
 
 ## 5. Claim 5: formula (34), with Stages 21 to 23 behind it
 
@@ -181,4 +185,112 @@ Verdict: **HOLDS** (first failing step: none found).
 
 The last sentence of L893 is the honest one: the two periods share every local limit, and the purity is a difference at a precision these limits do not reach.
 
-- 04:49Z: Sections 5-6 (claims 5, 6) written. Next: claim 7 (the OPEN statement and the gap to the isotropic point).
+
+## 7. Claim 7: the closing OPEN statement
+
+Verdict: **HOLDS.** No estimate in the file carries the sign to s = a = beta_K. The file's last paragraph (L895-L901) is accurate.
+
+### 7.1 Where each proved estimate lives
+
+| Item | Where it holds | What it says at s = a = beta_K, real |
+|---|---|---|
+| (1), (4), (28a) | complex t with abs(t) <= c/L^2, L of order beta_K log beta_K | nothing (the seed is at t = beta_K) |
+| (5), (6) | t_* = n^(-5) | nothing |
+| (8), (9), (22), (29) | zeros and poles in abs(t) <= C/beta_K, or abs(t) <= A n^3 log n/beta_K | no real bound; they exclude one method (bounded continuation, exact double divisibility) |
+| (27) | modified paths | nothing on the affine path |
+| (11)-(14) | s -> infinity, then a -> infinity, fixed n | nothing |
+| (15) | s = a, a -> infinity, fixed n, v >= 3 | the purity tends to 0 there; a fixed box, not the calibrated sequence |
+| (16)-(21), (25), (26), (30) | a -> infinity at fixed n with s = gamma n^3 a^2, then n -> infinity | nothing; at s = a the formal value is 0 (L434) |
+| (31), (34) | the same ordered regime | nothing |
+| Stage 22, (33), (39) | a = beta_K, s/a -> infinity, local laws | nothing at s = a; and local laws do not fix the purity |
+| (32) | s = a = beta_K, one local covariance | true at the point; no sign for the purity |
+| (35)-(37) | a = beta_K, s = infinity, and s >= s_0(K) | nothing |
+| (38) | a = beta_K, every s >= 0 | true at the point: the windings are not concentrated; no sign for the purity |
+
+### 7.2 The gap between (37) and the isotropic point, exactly
+
+Fix late K, a = beta_K, n = l b^K, u = n/512, and write P(s) for the neutral purity.
+
+1. Proved: P(s) > 457/625 for s <= c/(1 + beta_K) (ON FILE, row 1145) and for s >= s_0(K) ((37)).
+2. Not proved: any bound on s_0(K). Stage 10's limit is on a fixed lattice with constants C_n. (38) shows that the winding law has not arrived before s >> beta_K n^2.
+3. Not proved: any bound on P(s) for c/(1 + beta_K) < s < s_0(K). The seed is the one point s = beta_K of this interval.
+4. The exact link (ON FILE: row 1145 (24), row 1334 (22)): d/ds log P(s) = 6 n^3 u [x_2u(s) - x_u(s)], where x_v(s) is the mean of Re U_p over spatial plaquettes on the n^3 x v circle. So log P(beta_K) = log P(infinity) - 6 n^3 u int_(beta_K)^(infinity) [x_2u - x_u] ds. A carry from (37) needs this integral below 0.31/(6 n^3 u), over an unbounded range of s. No term of it is estimated in the file. The log of each Z_+(v; s) is convex in s; log P is a difference of two convex functions and has no sign from that.
+
+### 7.3 Why I expect no sign carry from (37) to exist (GUESSED, with the parts on file named)
+
+Tree-level dictionary (standard; recalled, not rebuilt): couplings (a, s) are a Wilson lattice with coupling beta_eff = sqrt(s a) and bare anisotropy a_t/a_s = sqrt(s/a). At a = beta_K fixed and s rising:
+
+- beta_eff rises, so the spatial spacing falls like exp(-c_AF beta_eff) (c_AF = 3 pi^2/11, ON FILE, `gap-ladder-max.md` L65). The physical side of the box falls by a fixed large factor when sqrt(s beta_K) - beta_K rises by a bounded amount, that is when s - beta_K is of order one.
+- the time side over the space side is sqrt(s/beta_K)/512. It stays near 1/512 until s is many times beta_K.
+
+So just above the isotropic point the box is small and hot. On a small box the neutral gap times the side tends to 0 like g(L)^(2/3) (ON FILE at belief grade: I33 of row 998, used by row 1386 at `gap-mech-direction2-fable.md` L113-L119, "it holds where the seed fails"). With aspect near 1/512 the purity is then small. The purity recovers only when the longer time side pays for the small gap: sqrt(s/beta_K) g^(2/3) of order 512, g^2 of order 1/sqrt(s beta_K). This is s of order (512 c)^3 beta_K^2, the parabolic scale of (26) and of the file's kappa threshold (512 tau_*)^3.
+
+Expected shape of P(s) at a = beta_K (GUESSED):
+
+- 0 <= s <= c/(1 + beta_K): above 457/625 (PROVED, row 1145).
+- up to s = beta_K: above, if and only if the band problem is solved; s = beta_K is the seed (OPEN).
+- from s - beta_K of order one to s of order (512 tau_*)^3 beta_K^2: BELOW 457/625 (GUESSED).
+- beyond: above (GUESSED up to s_0(K); PROVED from s_0(K) on).
+
+Proved support, all from the checked file, in the regime a >= a_0(n) on a fixed box: P(a, a) -> 0 by (15); P(a, kappa a^2) -> p_v(kappa/n^3), which at v = n/512 is below 457/625 for kappa below about (512 tau_*)^3 and above it beyond ((25), (26)); P(a, infinity) -> the purity of (12), above 457/625 ((14)). So on each fixed box that is large enough (n >= n_0(kappa)), at very weak coupling (a >= a_0(n, kappa)), the valley is a theorem. The seed asks that on the calibrated sequence the point s = a sits on the other side of the threshold. So (37) and the seed are on opposite banks of the valley.
+
+If this shape is right, then the statement "P does not fall below 457/625 as s comes down from s_0(K) to beta_K" is false for 4D SU(2) itself, and no monotone or one-signed carry from (37) can exist. The seeded tail is a small-volume zero-mode fact. The seed is a large-volume fact. Between them lies the crossover from small to large volume, which is the band problem of the lane ((K-II); row 1386's verdict on (SV-Z): "a start value of a flow, not a step").
+
+A second, model-level reason (ARGUED, from 2.3): 5D SU(2) and weak 4D U(1) under its centre are also seeded at both ends of the s-axis (strip: no step of row 1145's proof reads group or dimension, check 1146; frozen end: purity exactly 1). At s = a both are gapless (U(1): THM, Guth; Froehlich and Spencer; 5D: BELIEF). So in the comparison models the valley reaches s = a. An argument from the two ends that does not read the 4D SU(2) law in the middle proves a false statement there.
+
+### 7.4 A route the file does not try
+
+I see no route from (37) to the isotropic point, for the reason of 7.3. I state one lemma that the file's results suggest, and what it would and would not give.
+
+**(TAIL-kappa), GUESSED.** For kappa > (512 tau_*)^3, on the calibrated sequence, P_(n,u)(beta_K, kappa beta_K^2) > 457/625 at all late K. For kappa below, the reverse inequality.
+
+- What it would give: s_0(K) <= kappa beta_K^2 in (37), a bound with no power of n; and the valley as a theorem. It replaces "unbounded" in 7.2 item 2.
+- What it would not give: anything at s = beta_K. It lies on the small-box side. It is not progress on the seed and is not equivalent to it.
+- First unproved lemma, **(Z-MODE), GUESSED:** an n-uniform form of the tail bound of Stage 13 (L379), at a = beta_K, s = kappa beta_K^2. The file's bound has c_n of order 1/n^2 and row 1143's C_n (Q = n^2), and it is stated for the bare based windings. By (38) the bare windings are Haar-like whenever s << beta_K n^2, so the lemma cannot be about them. It must control the spatial mean of the comb-gauge link logarithms (the harmonic part of Stage 13's coordinates), with the nonconstant modes integrated: joint density of the three mean vectors on v slices within e^(+-C) of the chain of (17), uniformly in n. This is the anisotropic form of item (i) of (SV-Z) (row 1386 2.1; check of row 1642 at `gap-direction8-astra62-check-opus.md` L95-L99, which sizes it as a multi-row ultraviolet construction). The e^(+-C) precision is enough for a threshold statement with kappa far from (512 tau_*)^3 and not near it.
+- Selectivity of (TAIL-kappa): the same as (30) in 1.2. It reads the algebra and the dimension. It is a small-volume statement and fails (g5), (g6).
+
+I do not recommend a row on (TAIL-kappa): by 7.3 it ends on the wrong bank.
+
+## 8. Overall verdict and required corrections
+
+**Overall: every item marked PROVED in the checked file that the brief names HOLDS or HOLDS AFTER CORRECTION of wording. I found no failing step.** The file's outcome "(c), quantified obstructions" is right. Its second label, "a selective anisotropic Wilson law", does not pass the lane's tests. Nothing in the file moves (PUR-io), and the file says so.
+
+| Claim | Verdict |
+|---|---|
+| 1. (30), the three entries | HOLDS |
+| 1. "selective", "law-dependent" | HOLDS AFTER CORRECTION: fails (g1) with the consumer's projector, (g3), (g5), (g6); the difference is centre convention, Lie algebra and dimension (1.2) |
+| 1. usable by the consumer (PUR-io) | NO (1.3) |
+| 2. (37), with (11), (35), (36) | HOLDS; new in the lane as far as my greps show; not equivalent to the seed; the analogue of BR-2's face leg on another face, not (FACE-SG) itself; not selective (holds with purity 1 in 5D SU(2) and in U(1) under its centre) |
+| 3. (38), with the Bessel ratio bound | HOLDS |
+| 4. (1)-(9), (22), (27), (28a), (29) | HOLDS (one citation note) |
+| 5. (34), with (31), (32), Stages 22-23 | HOLDS AFTER CORRECTION of wording (C7) |
+| 6. (39) and the moments | HOLDS |
+| 7. the OPEN statement | HOLDS; the gap is 7.2; I expect a valley between (37) and the seed (7.3, GUESSED) |
+
+Required corrections (none changes a proof):
+
+- C1 (L651, L681, L897, L900): drop "selective" and "law-dependent" for (30), or add the facts of 1.2: with the consumer's projector weak 4D U(1) gives 1; the 5D entry is the exponent 1 - d/3; the limit is at physical size zero.
+- C2 (L311, L651): "the strict intermediate value fails" is not a test; the consumer reads P >= 457/625 only.
+- C3 (Stages 13-17): credit Luescher's small-volume Hamiltonian (and Koller and van Baal), and row 1227 for the one-vertex spectrum.
+- C4 (L843): keep "even n" and "a >= a_0" in the statement of (37); say that the release sides are even.
+- C5 (L863): say that s_0(K) has no bound in K and that the same tail statement holds, with purity 1, in 5D SU(2) and in U(1) under its centre.
+- C6 (L63): the bound rho_j <= exp(-(j-1)/(1 + alpha)) is from the proof of row 1145 (1), not its displayed statement.
+- C7 (L754, L900): "opposite sides of the seed inequality" -> "opposite sides of 457/625 for the anisotropic purity, in the regime a_j >= a_0(n_j)".
+- C8 (L884, L895): add the expectation of 7.3, marked as a guess: the interval between the tail and the isotropic point is not only unestimated; on a small hot box the inequality should fail.
+
+Labels of my own statements: the recomputations in 1.1, 2.1, 3, 4, 5, 6 are ARGUED re-derivations of steps whose proofs are in the checked file (I wrote no new complete proof). 1.2, 2.2, 2.3 are ARGUED from the file's proved lines. 7.3 and 7.4 are GUESSED, except the parts marked ON FILE or PROVED in the file. Nothing here is PROVED by me.
+
+Not done: no numeric run (none was needed; memory was not measured); no Lean; no cross-branch search (this is a check row and derives nothing new); rows 1143 (1), 1151 (21)-(24), 1227 (4)-(8), 1231 (1), 1375 (12) were taken as on file with their checks and not rechecked.
+
+## 9. Searches
+
+- FINISH.md by row number: 863, 1066, 1072, 1077, 1108, 1115, 1143-1146, 1198, 1215, 1227, 1334, 1384, 1386, 1468, 1553, 1556, 1642, 1661 (RESULT text; full rows for 1468, 1553, 1556, 1661).
+- FINISH.md and `library/open-core.md` by phrase, before calling (37) or my own remarks new: "magnetic coupling" (rows 863, 934, 1334), "spatial coupling" (881, 1145), "frozen spatial", "flat spatial", "large magnetic", "magnetic tail" (none before this row), "KS-ZONE" (863, 1145-1147), "BR-2" (rows 1072-1159 and later), "toron", "SV-Z" (1386, 1387, 1644), "not monotone" (611, 1049, 1198), "deconfin" (867-1198), "full centre", "whole centre", "entire centre", "K_gamma", "gamma n^3" (none). `library/open-core.md` has no hit for any of these.
+- The small-box remark of 7.3 is ON FILE at belief grade (row 1386, `gap-mech-direction2-fable.md` L113-L119, L190). The dictionary from (a, s) to (beta_eff, anisotropy), and the valley on the s-axis at a = beta_K, I did not find on file.
+
+
+## 10. Result
+
+Finished 2026-11-28T04:54Z (date -u). Author of this check: Claude Fable 5.2 high, Mac mini worker 1. One reading; not checked by anyone; hand arguments only; no numeric run; no Lean.
+
+RESULT: Row 1663 (Claude Fable 5.2 high, cross-provider check of row 1661, gpt-6.2-astra max): no item FAILS. (30) HOLDS as a formula (constants of (16)-(18), (20)-(21), (25)-(26) and the 5D and U(1) entries recomputed); its "selective" label HOLDS AFTER CORRECTION only: with the consumer's own projector (the full centre) weak 4D U(1) gives purity 1, the 5D entry is the exponent 1 - d/3 of n, the U(1) line also fires in gapped 3D compact U(1), and the limit sits at physical size zero, so it fails (g1), (g3), (g5), (g6) and is a statement of centre convention, Lie algebra and dimension; (PUR-io) cannot use the ordered limit (ratio s/a, order of limits, and value 0 at s = a). (37) HOLDS, with (11), (35), (36); it is new in the lane as far as my greps show, is not equivalent to the seed, is the analogue of BR-2's face leg on the magnetic face (not (FACE-SG)), and is not selective (purity 1 in 5D SU(2) and in U(1) under its centre). (38) HOLDS, including the Bessel ratio bound from the proof of row 1145 (1). (1)-(9), (22), (27), (28a), (29) HOLD. (34) HOLDS AFTER CORRECTION of wording (anisotropic class at a_j >= a_0(n_j), not "the seed inequality"). (39) and the moment claims HOLD. The OPEN statement HOLDS: no estimate reaches s = a = beta_K; s_0(K) has no bound; the link is the unestimated integral of 7.2. Mine, GUESSED: between the isotropic point and the tail (37) the box is small and hot, so the purity should lie below 457/625 from s - beta_K of order one up to s of order (512 tau_*)^3 beta_K^2 (a theorem on a fixed box at a >= a_0(n) by the file's (15), (25), (26)); so no sign carry from (37) exists, and (TAIL-kappa) with first lemma (Z-MODE) would only sharpen (37) on the wrong bank. Eight wording corrections C1-C8. Open as before: (PUR-io), the band, the mass gap.

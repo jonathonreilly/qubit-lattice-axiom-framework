@@ -5,7 +5,7 @@ lease_until: 2026-11-28T21:15:14Z
 
 Started 2026-11-28T09:15:14Z (date -u). Worker: Mac mini Claude worker 1, Claude Fable 5.2, max. Base commit 9a626d7f6. No commit, no push; the relay copies this file.
 
-Status: IN PROGRESS. Each section is written when its step is finished. The last section in the file is the current state.
+Status: COMPLETE at 2026-11-28T10:32:33Z (date -u). Outcome: clean negative with exact reductions. The RESULT line is the last line.
 
 ## 0. Scope, and one conflict in the instructions
 
@@ -63,7 +63,7 @@ Proof. Put y_i = (λ_i/λ_0)^n in [0, 1], y_0 = 1. Then Σ y_i^2 <= Σ y_i, so �
 
     (E1)   Z_β(N^3 x 2w)^2  <=  (29/25) Z_β(N^3 x 4w),
 
-then `NeutralRankOneTest` holds on side N at β. The same holds with Z^0 in place of Z (then RA3 and Lemma 2.1 are not needed: use the top neutral eigenvector and its eigenvalue).
+then `NeutralRankOneTest` holds on side N at β. The same holds with Z^0 in place of Z. Then RA3 and Lemma 2.1 are not needed: use T >= 0 (CITED, Lüscher 1977), the top neutral eigenvector as φ, and its eigenvalue to the power w as c.
 Proof. Lemma 2.3 with n = 2w gives Θ_0(2w) <= 29/25 - 1 = 4/25. Lemma 2.2 gives the test. QED
 So (T-A) follows from: there are ℓ > 0 with 4 | ℓ and K_0 such that for every K >= K_0 the inequality (E1) holds at β = β_K, N = ℓ L^K, for one w in [1, N/1024]. This is an inequality between two ordinary periodic Wilson partition functions. It has no operator norm, no eigenvector and no twist.
 
@@ -114,3 +114,97 @@ So (T-A) can hold only at a physical side of about 10^4 correlation lengths. It 
 **Thermal reading (ARGUED).** Θ(n) + 1 = Tr T^n / λ_0^n is the thermal partition function at temperature 1/(n a) with the vacuum energy removed. (E1) says that the Rényi-2 entropy of the thermal state, log R = -log Tr ρ_th^2, is at most 0.148 in a box with (ℓ T)^3 >= 512^3. So the seed is a bound on the entropy density: s_2(T) <= 1.1 x 10^(-9) T^3. A massless phase has s_2 of order T^3.
 
 Section 3 written at 2026-11-28T10:26:20Z (date -u).
+
+## 4. Candidates, and the six tests (g1)-(g6) of gap-mech-direction4-fable.md 1.5
+
+Rule used: a candidate is called an attack only if it passes all six tests. References in this section are recalled from memory and were not re-read in this session.
+
+Remark 4.0 (a second consumer for (T-B); CITED plus ARGUED). The Wilson theory is a Gibbs field on Z^4 with the compact spin space SU(2)^4 at each site and a finite-range interaction. The constructive criterion of Dobrushin and Shlosman ("Constructive criterion for the uniqueness of Gibbs field", in Statistical Physics and Dynamical Systems, Birkhäuser 1985) is stated for such spin spaces with the Wasserstein distance. If its condition holds on one cube of side B, the Gibbs state is unique and covariances of local functions decay at a rate of order 1/B. `ExpClusters` lets the constant C depend on Z and on j. So (T-B) follows from: (DS) there is C_0 such that for infinitely many j the Dobrushin-Shlosman condition holds for the Wilson specification at β_(K_j) on a cube of side B_j <= C_0 L^(K_j). ARGUED, not PROVED: I did not match the exact form of their decay statement to `latticeU`. (DS) needs no torus, no aspect ratio 512 and no twist. Its natural scale is a few correlation lengths, not 10^4. Its cost: the boundary data are worst-case.
+
+### 4.1 The candidates
+
+- **C1, the thermal forms.** F = (E1), or its integral form (Lemma 2.6), its overlap form (Proposition 3.1), its Casimir form (Lemma 3.2).
+- **C2, continuation in β.** F = "on the seed lattice, d log(E_1 - E_0)/dβ >= -c with c = 3 π^2/11 + (integrable error)". By the Hellmann-Feynman formula d(E_1 - E_0)/dβ is the excess of the action per time step in the first excited state. This is the lattice action sum rule (Michael, Nucl. Phys. B280 (1987) 13). Start at strong coupling and integrate.
+- **C3, comparison of each partition function with a coarser lattice.** Migdal-Kadanoff bond moving, chessboard bounds, Jensen bounds on Z(2w) and Z(4w) one by one (the method of Tomboulis, arXiv:0707.2179).
+- **C4, contraction at one block scale.** F = (DS) of Remark 4.0, to be reached by a renormalization group carry from β_K to an effective action at order-one coupling, and a convergent block expansion there (in the manner of Olivieri, J. Stat. Phys. 50 (1988) 1179).
+- **C5, curvature.** F = a Bakry-Emery lower bound for the lattice action or for the ground-state measure (Shen, Zhu and Zhu, Commun. Math. Phys. 400 (2023) 805, prove the gap this way at strong coupling).
+- **C6, start in a small box.** F = the Lüscher spectrum of the small torus (neutral levels of order g(ℓ)^(2/3)/ℓ, a non-abelian effect of the constant modes), carried to large ℓ by a step-scaling inequality "ℓ (E_1 - E_0) grows with ℓ".
+- **C7, change the model.** Centre-stabilized compactification (Ünsal and Yaffe, Phys. Rev. D 78 (2008) 065035): a small circle with a double-trace term, abelianization, a dilute gas of monopole-instantons, and the methods of Göpfert and Mack (Commun. Math. Phys. 82 (1982) 545) for the three-dimensional Coulomb gas.
+- **C8, kinematics.** Symmetry, anomaly matching, the a-theorem (Komargodski and Schwimmer, JHEP 12 (2011) 099), flux duality ('t Hooft, Nucl. Phys. B153 (1979) 141).
+
+### 4.2 Verdicts
+
+| | (g1) 4D U(1), large β | (g2) 5D SU(2), large β | (g3) gapped twins | (g4) massless factor | (g5) scale | (g6) consumer, carry, method |
+|---|---|---|---|---|---|---|
+| C1 | pass: F is false (photon gas, R is of order exp(10^7)) | pass on BELIEF | pass: F is true in each gapped twin at large size, no line fires | pass: PROVED, R of a product is the product of the R's | pass: N(β) is about 10^4 ξ(β); at a fixed lattice R grows like a power of β (ARGUED, Laplace asymptotics) | FAIL: equivalent to the seed up to a square (Lemma 2.5); no method |
+| C2 | pass: the bound fails at the transition near β = 1 | pass on BELIEF (bulk transition) | pass: the rate is bounded in 3D U(1) (Göpfert-Mack) | FAIL as written: reads one level; must be stated for the whole trace | pass | FAIL: the bound is the scaling law itself; equivalent |
+| C3 | FAIL: the 4D recursion also runs to strong coupling for U(1), so the method proves a false statement (the objection of Ito and Seiler, arXiv:0711.4930) | not needed | not needed | not needed | pass | FAIL: Proposition 4.3 below |
+| C4 | pass: (DS) is false (line: the photon propagator is not summable over a cube of any size) | pass on BELIEF (same line, gluon propagator) | pass: the line does not fire with a Debye mass (3D U(1)) or at small β | pass: (DS) is a property of the whole field; a massless factor breaks it | pass: B(β) is of order ξ(β); at a fixed cube (DS) fails for large β (ARGUED: the single-link coefficient is 18/6 = 3 > 1) | FAIL in part: the consumer exists (Remark 4.0), and (DS) is not the seed. The carry and the method at order-one coupling do not exist |
+| C5 | FAIL the pair (g1)+(g3): the convexity line fails at large β in every dimension and for every group, also in 3D U(1), which has a gap | same | FAIL | not needed | FAIL: no N(β) | FAIL |
+| C6 | pass: for U(1) the constant modes are free and ℓ (E_1 - E_0) does not grow | pass: in 5D the coupling at scale ℓ decreases | pass | pass if stated for all low levels | pass | FAIL: no consumer. The step from the small box to the seed size is the whole infrared problem |
+| C7 | pass | pass | pass | pass | pass | FAIL: it is a different measure. No carry to the Wilson action at β_K (it needs continuity in the circle size and in the deformation) |
+| C8 | pass by form | pass by form | pass | FAIL: the product with a massless factor has the same symmetries (Lemma ALG), and the a-theorem allows a massless infrared end (a free photon has a smaller a than the ultraviolet end) | FAIL: no N(β) | FAIL |
+
+No candidate passes the six tests. No candidate is an attack.
+
+**Proposition 4.3 (bulk precision). PROVED.** Let a method give numbers a_n <= log Z(N^3 x n) <= b_n for n = 2w and n = 4w. It proves (E1) only if 2 (b_(2w) - log Z(2w)) + (log Z(4w) - a_(4w)) <= 0.1484. So each bound must be correct to an absolute error of 0.15, on a quantity of order β N^3 w.
+Proof. (E1) is 2 log Z(2w) - log Z(4w) <= log(29/25). The method can only conclude it from 2 b_(2w) - a_(4w) <= log(29/25). Subtract the true value, which is >= 0 by Lemma 2.3. QED
+Use. A method with an error of η per site in log Z fails as soon as 8 N^3 w η > 0.15 (two tori of 2 N^3 w sites and one of 4 N^3 w sites). Every bound that moves or drops bonds has η > 0. The only methods that pass are those that give the same local expansion on both tori, so that the bulk term cancels exactly.
+
+Section 4 written at 2026-11-28T10:29:04Z (date -u).
+
+## 5. The negative result, for explicitly quantified families
+
+I found no proof of (T-A) or (T-B), and no attack that passes the six tests. This section states what is excluded, family by family. "Consumer" means any theorem that gives the gap for every model of the class K of Lemma ALG (reflection positivity, the centre, the exchange of the axes), such as the lane's chain.
+
+- **(N1) Group-blind arguments. PROVED from CITED results.** Family: every argument for the seed in which each step is true for all compact gauge groups with a Z_2 in the centre, at all β. Obstruction: the argument then proves the seed for U(1) in four dimensions at large β. The consumer then gives a gap. This contradicts the massless phase (Guth, Phys. Rev. D 21 (1980) 2291; Fröhlich and Spencer, Commun. Math. Phys. 83 (1982) 411; for the Villain action). The Migdal-Kadanoff recursion is in this family.
+- **(N2) Dimension-blind arguments. BELIEF only.** Family: every argument true for SU(2) in all dimensions d >= 4 at large β. Obstruction: no gap is expected in d = 5 at large β. I know no theorem.
+- **(N3) Sector-blind hypotheses. PROVED (this is Lemma ALG; on file).** Family: every hypothesis that reads only the SU(2) factor of a product. Proposition for the forms of this file: R, 1 + Θ and E[κ] are multiplicative under products, and a massless factor has R = +∞ or R of order exp(c (ℓ/t)^3). So the hypothesis must be a statement about the whole trace.
+- **(N4) Bulk-lossy methods. PROVED (Proposition 4.3).** Family: every method that bounds Z(N^3 x 2w) from above and Z(N^3 x 4w) from below with an error η > 0 per site. Obstruction: it needs 8 N^3 w η <= 0.15, and N >= 1024 w.
+- **(N5) One-level hypotheses. PROVED.** Family: every hypothesis of the form "E_1 - E_0 >= γ on side N" with no bound on the number of levels. Obstruction: Θ_0(2w) is a sum over all neutral levels. The bound Θ_0(2w) <= 4/25 needs, for every s > 0, that the number of neutral levels with E_i - E_0 <= s is at most (4/25) exp(2 w s). A gap alone gives only a factor times the trace tail at an earlier time w' < w: Θ_0(2w) <= exp(-2 (w - w') γ) Θ_0(2w'), where exp(-γ) is the largest ratio |λ_i|/λ_0 over neutral i ≠ 0. So a gap bound must come with a trace bound at one earlier time.
+  Proof of the last inequality. For neutral i ≠ 0, (λ_i/λ_0)^(2w) = (λ_i/λ_0)^(2w') (λ_i/λ_0)^(2(w - w')) <= (λ_i/λ_0)^(2w') exp(-2 (w - w') γ). Sum over i. QED
+- **(N6) Perturbative-range hypotheses. ARGUED.** Family: every hypothesis whose truth at coupling β is decided by the lattice measure on boxes of side r(β) with r(β) a(β) -> 0 (for example r <= β^k). Obstruction: on such boxes the renormalized coupling is small, the levels are those of the small-volume expansion, and the tail is of the size of a massless gas (Section 3). The hypothesis cannot see the scale 1/a(β) where the seed can first hold. I have no proof, because no rigorous small-volume expansion is at hand.
+- **(N7) Symmetry and anomaly arguments. PROVED from Lemma ALG plus BELIEF.** Family: every argument that uses only the global symmetries, their anomalies and monotone quantities of the a-theorem type. Obstruction: the product with a massless factor has the same symmetries (PROVED), and the adjoint-Higgs Coulomb phase has them too (BELIEF).
+
+What is left after (N1)-(N7) (ARGUED). A proof needs an input with these four properties together. (i) It is a statement about the whole field, with multiplicities. (ii) It lives at the scale of the correlation length, which is exp((3 π^2/11) β (1 + o(1))) lattice units. (iii) It is uniform in the cutoff. (iv) It is false for a free massless field. The known source of such an input is an expansion with a small parameter at that scale: strong coupling (Osterwalder and Seiler, Ann. Phys. 110 (1978) 440), a dilute gas of defects (Göpfert and Mack, for 3D U(1)), large N (Kopper, Magnen and Rivasseau, Commun. Math. Phys. 169 (1995) 121, for Gross-Neveu), or a hierarchical structure (Gawedzki and Kupiainen, Commun. Math. Phys. 106 (1986) 533). For the 4D SU(2) Wilson action at the scale of its correlation length I know no small parameter. This is the obstruction in one sentence.
+
+Section 5 written at 2026-11-28T10:31:44Z (date -u).
+
+## 6. The first open estimate, and its first step
+
+**The estimate (exact form).** For one ℓ > 0 with 4 | ℓ and one K_0, for all K >= K_0, with N = ℓ L^K, w = floor(N/1024) and β = β_K:
+
+    (E1)   Z_β(N^3 x 2w)^2  <=  (29/25) Z_β(N^3 x 4w).
+
+By Proposition 2.4 this gives `MNeutralAll L M g0 ℓ`, and the kernel gives the gap. By Lemma 2.5 it is equivalent to the seed up to a square in the constant. So it is a cleaner statement of the same open problem, not progress on it.
+
+**First step (written out).**
+1. Algebra: Lemmas 2.1-2.3 and Proposition 2.4 (PROVED above).
+2. Bulk cancellation. **Proposition 6.1 (PROVED).** Suppose that at coupling β there are numbers f, A and κ > 0 with | log Z_β(N^3 x n) - N^3 n f | <= A N^3 n exp(-κ n) for n = 2w and n = 4w. Then log R(2w) <= 8 A N^3 w exp(-2 κ w). So (E1) holds when 8 A N^3 w exp(-2 κ w) <= 0.1484.
+   Proof. log R = 2 log Z(2w) - log Z(4w). The terms N^3 n f cancel: 2 (2w) - 4w = 0. The remainders are at most 2 A N^3 (2w) exp(-2 κ w) + A N^3 (4w) exp(-4 κ w). QED
+   With N = 1024 w this needs 2 κ w >= log(8 A 1024^3 w^4 / 0.1484), that is 2 κ w >= 24.8 + log A + 4 log w.
+3. Strong-coupling part of the integral of Lemma 2.6 (CITED, constants not computed: Osterwalder and Seiler 1978; Seiler, Lecture Notes in Physics 159 (1982)). For β' <= β_sc the polymer expansion gives the hypothesis of Proposition 6.1 with κ of order log(1/β'), because a cluster that sees the period n has at least n plaquettes and all other clusters give the same amount per site on every torus. So the part of the integral over [0, β_sc] is negligible for large w, and (E1) is the bound
+
+        24 N^3 w ∫_(β_sc)^(β_K) [ ā_(4w)(β') - ā_(2w)(β') ] dβ'  <=  0.1484 - (negligible).
+
+4. Where it stops. For β' above β_sc no expansion is known. The integrand at β' is small only if the theory at β' has finite-size corrections of the form of Proposition 6.1 on the lattice fixed by β_K. That is the gap at β' again. I see no induction on β: the integrand at β' lives on the lattice of β_K, not on the lattice of β'.
+
+**The same estimate in local form (not equivalent to the seed; stronger).** (DS) of Remark 4.0, or the hypothesis of Proposition 6.1 with κ >= κ_0 / L^K for all K >= K_0. Both say: at the scale of the correlation length the theory has a contraction, uniformly in the cutoff. Their first step would be a renormalization group representation of both tori by one local effective action, so that the bulk cancels as in Proposition 6.1. Stability bounds of the form exp(-E_- |T|) <= Z <= exp(E_+ |T|) are not enough, by Proposition 4.3.
+
+**For the lead (I edited no other file).**
+- (E1) has no norm, no eigenvector and no twist. If it is not on file, Proposition 2.4 is a short Lean lemma on top of the trace facts of Stage 4, and the seed could then be stated with `Wilson.partition` only. Proposition 3.1 gives the same statement as a mean over two independent typical slices.
+- Remark 4.0: `ExpClusters` accepts any mixing criterion at one cutoff, because C can depend on j. A criterion at a few correlation lengths is enough for (T-B). The seed of (T-A) sits at about 10^4 correlation lengths because of the constants 512 and 1024.
+- Lemma 2.7, remark: `ExpClusters` is stronger than a gap of the limit. A weaker input with an additive ε is enough. This matters only if a later method gives the limit gap without the lattice gap.
+- Guide only, not a proof step: the integrand ā_(4w) - ā_(2w) of Lemma 2.6 is a difference of mean plaquettes on two tori. It can be measured.
+- Not done: no Lean was written or compiled; no numeric job was run; no source was fetched (all references are recalled, not re-read); novelty was not checked (closed folder).
+
+## 7. Labels
+
+- PROVED (under RA1-RA5): Lemmas 2.1, 2.2, 2.3, 2.5, 2.6; Propositions 2.4, 3.1, 4.3, 6.1; Lemma 3.2; items (N4), (N5); the product rule in (N3).
+- PROVED from CITED results: Lemma 2.7 in finite volume; (N1).
+- CITED: transfer operator and positivity (Lüscher 1977; Osterwalder and Seiler 1978); massless 4D U(1) (Guth 1980; Fröhlich and Spencer 1982); strong-coupling expansion; Dobrushin and Shlosman 1985; Lüscher 1983 (small volume).
+- ARGUED: the size 1.15 x 10^4 / m of the seed; the thermal and Casimir readings; Remark 4.0 as a consumer; (N6); the fixed-lattice growth of R; the infinite-volume form of Lemma 2.7.
+- BELIEF: 5D SU(2) at large β; the adjoint-Higgs Coulomb phase.
+- GUESSED: nothing is used as a step.
+
+RESULT: no proof of MNeutralAll or ExpClusters and no attack found (clean negative). PROVED, under the stated reading of the imported Lean names: the seed follows from one inequality between two periodic Wilson partition functions, (E1) Z(N^3 x 2w)^2 <= (29/25) Z(N^3 x 4w) with N = ℓ L^K, w = floor(N/1024), β = β_K (Proposition 2.4), with exact integral, overlap and crossed-channel forms (Lemmas 2.6, 3.2, Proposition 3.1), and ExpClusters is exactly a lattice spectral-support statement with no slack in C (Lemma 2.7). First open estimate: (E1) for all K >= K_0 at one ℓ; it is equivalent to the seed up to a square (Lemma 2.5), its first step (bulk cancellation, Proposition 6.1, and the strong-coupling part of the integral) is written, and it stops at every coupling above the strong-coupling radius. Obstruction, quantified in (N1)-(N7): group-blind, dimension-blind, sector-blind, bulk-lossy, one-level, perturbative-range and symmetry-only arguments cannot give the seed; no small parameter is known at the scale of the correlation length. Tests for the best candidate C4 (contraction at one block scale): (g1) pass, (g2) pass on belief, (g3) pass, (g4) pass, (g5) pass, (g6) fail (consumer exists, no carry, no method at order-one coupling); for C1 (thermal forms): (g1)-(g5) pass, (g6) fail (equivalent to the seed). Open: everything on the seed itself; novelty against the lane files was not checked (closed folder).

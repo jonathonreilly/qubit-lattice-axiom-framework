@@ -708,3 +708,68 @@ reads no dimension. No theorem links it to the spectrum of the transfer operator
 - C6 (3.0): the control test (g7) by the adjoint-scalar model.
 - C7 (2.7): the six-engine sorting rule: a new attack must name a new instance of E1, E3 or E4.
 - Not candidates (they die at the first link, recorded so that they are not retried): S5, S7, S8, S9.
+
+## 4. Part 3 (Phase 2, folder open). Comparison with the record
+
+Opened for this section: `library/gap-direction9-fable.md` (in full); `library/gap-mech-direction4-fable.md`
+L188-L196 (tests (g1)-(g6)), L245-L275 (engine map, triggers); `library/gap-mid-max.md` L98-L185 (row 708);
+`library/gap-crux-exercise-r858-max.md` L314, L328-L332 (row 858); `library/gap-crux-exercise2-max.md` L328;
+`library/gap-brainstorm-max.md` L482, L624-L632; `library/gap-mech-direction2-fable.md` L350-L364;
+FINISH rows 812, 814, 824, 1007, 1009, 1380 (brief and RESULT texts). Everything else below is a grep hit
+with the line quoted; a count is not a reading. `library/open-registry.md` (494 KB) and
+`library/open-core.md` have no line with any of the 37 keywords that I tried (names of methods and authors);
+the matches are in the `library/gap-*.md` files and FINISH rows.
+
+### 4.1 Verdict per candidate
+
+| # | Candidate of section 3 | Nearest file or row, with a phrase from it | What differs | Verdict |
+|---|---|---|---|---|
+| C1 | (MON-β), the integral formula for log z_k, monotonicity in the physical size, (CS≥) | Row 858, `gap-crux-exercise-r858-max.md` L328-L330: "The derivative identity (D-beta) (PROVED, one line)", "R falls with beta at fixed lattice size is R rises with the physical size", "For SU(2) it is OPEN". Row 708, `gap-mid-max.md` Section 4: Theorem TR, (VIR_K), (LEV_K), "(DEF_K): three ways that failed". `gap-crux-exercise2-max.md` L328: "(AF-step) ... R_(beta + c)(2n) >= R_beta(n)" | Nothing. My (F4) is Lemma 4.2 of row 708. My remark on positive definiteness is Remark F6 of row 1195 (`gap-mini-solve-f-fable.md` L182) | ON FILE |
+| C2 | Flux simplex, three gapped vertices, κ-weight = Σ_m Z(e = m; m), SO(3) with theta term, search for a monotone functional | `gap-flux-exercise.md` L101: "SU(2), SO(3)_+, SO(3)_- (sum over twists, without or with the sign of the Pontryagin square)"; `gap-brainstorm2-max.md` L186: "Three seeds are three global forms"; `gap-kappa-order.md` L94-L117 (frames, Gauss sum); `gap-mech-direction2-fable.md` L259: "a c-theorem on the torus | (MONO-Delta) ... OPEN; false for the ordered Ising model as a class statement"; `gap-mech-k2-solve-fable.md` L285: entropic theorems "Group-blind; needs Lorentz boosts" | Nothing | ON FILE |
+| C3 | Z₂ fibre identity and self-dual threshold | `gap-mech-direction4-fable.md` L273: "(T-copy) ... the Z_2 times SO(3) split of step 17, where the consumer's twists act on the Z_2 copy alone"; Mack and Petkova in 96 files | My one-line reason why the fibre is frozen at β_K (couplings β_K, or β_K × stack size after blocking) may or may not be written in step 17; I did not open it | ON FILE as a family; not an attack |
+| C4 | Lemma OG and the improved single-scale criterion | Row 814 Route C, checked line by line in row 824: "(C4) with 9/8", "the U(1) failure placed correctly (commuting gauge flows ...)"; `gap-brainstorm-max.md` L629: "the SU(2)-only mixed-Hessian reserve 9/8" | My constant 1 + 1/(2d) is 9/8 at d = 4: the same lemma by a second derivation (Killing fields, not read from row 814). Possibly not on file: the block formula with Δ_U^{-1} and the value 1.37 at U = 1. Of no use on the trajectory | ON FILE |
+| C5 | Twisted thin tube, Lemma TT1, statement (TT), four-link chain | `gap-brainstorm-max.md` L482: "G7 ... Adiabatic continuity in the geometry. Start on the thin twisted torus ... Crux (CONT-n)"; `gap-ac-lat.md` L47-L52 (the three periodicities and the Fourier proof); `gap-mech-direction2-fable.md` L355-L359: "the twisted gap is kinematic, and all selectivity would have to come from the continuation in the width, which is the band again"; (SV-Z), row 1386 | Nothing. My correction in 3.6 (true in the Coulomb control) is the same verdict by test (g4) in place of the five-dimensional test (t2) | ON FILE |
+| C6 | Control test (g7) | `gap-mech-direction4-fable.md` L191: "(g4) gapless members with an SU(2) factor ... the adjoint-Higgs Coulomb phase (BELIEF; parts/gap.md L287-288, row 1386 requirement (c))", with Lemma ALG | Nothing. (g7) is (g4). The adjoint-fermion control is on file in 12 files | ON FILE |
+| C7 | Six-engine sorting rule | `gap-mech-direction4-fable.md` L253-L262: "The engine map (every proved way to a gap at order-one or all couplings ...)", five engines; `gap-crux-exercise3-max.md` L221: "I36 Order-one crossings with a second small parameter 1/N: Kupiainen 1980 ..., Kopper, Magnen, Rivasseau 1995 ..., Gawedzki and Kupiainen 1986" | My list was written without the 2026 two-dimensional O(N) proofs (E-flow, E-dil of the map), which I did not know in the closed phase. Their move: a twist inequality with the commutator term that lowers a stiffness by (log l)/π per scale at every coupling (rows 1007, 1009). So engine E3 has one proved instance for an asymptotically free bosonic model, and my sentence in 2.7 ("I know of no rigorous proof ... that does not use E1, E2") is corrected by the record | ON FILE, and corrected |
+
+Dead types S5, S7, S8, S9: S5 is reason 4 of row 1672 ("A finite computation needs a carry in K first").
+S7: row 858, R3 of `gap-crux-exercise2-max.md` L332 ("The thick vortex as a trial vector ... The route stops
+here"). S8: Aizenman-Simon and loop equations in 15 files; the bootstrap has its own lane. S9: Gribov in 32
+files. I did not open these.
+
+### 4.2 Patterns of Part 1 with no file in the lane, each tested here
+
+Five patterns of section 2 have no match in `library/gap-*.md` or `library/prior/` (grep on author names and
+method names; a count, not a proof of absence). I tested each against (PUR-io). All five are void. This is
+the only new content of Phase 2. Labels: ARGUED unless marked.
+
+- (V1) Aizenman-Wehr (P13): a soft contradiction between a surface bound and a fluctuation bound for one
+  free-energy difference. Void. The fluctuation bound needs quenched disorder that couples linearly to the
+  order parameter. The Wilson law is annealed. The only disorder-like splitting is the Z₂ fibre of S3, and
+  it is frozen at β_K. The pure-system form of the argument is Mermin-Wagner-Pfister; for a centre twist it
+  needs a cheap spread-out twist, which is R3 of row 858 (dead).
+- (V2) Dyson's lemma and box localisation (P22). Void, by a reason that covers a class: bracketing methods
+  (drop positive terms across cell walls, or glue trial states) control quantities to leading extensive
+  order. Purity is of order one after an exact cancellation of an extensive ultraviolet part. PROVED
+  instance: the Jensen gluing bound of 3.7 gives p ≥ exp(−c n³). The operator form (a coarse transfer
+  operator below the fine one) is (AF-step) of `gap-crux-exercise2-max.md` L328, on file and open.
+- (V3) A discretely holomorphic observable plus a rigidity theorem (P19). Void. The exact local relations of
+  the Wilson law are the loop equations and the Bianchi identity; the order-times-disorder (dyonic) loop
+  has no exact linear relation beyond them that I can find. No characterisation theorem for massive
+  four-dimensional theories exists to finish the argument.
+- (V4) Hidden order made local by a non-local unitary (P16). Void as an engine: its gauge analogue is the
+  change of global form (C2, on file). It maps one infrared statement to another.
+- (V5) The Nahm transform on the four-torus. Void. It is exact on self-dual solutions and exchanges the
+  torus with its dual. It does not act on the Wilson measure.
+
+Also near-absent and void for the same reason as (V2): "coming down from infinity" (no file; P17: the group
+is compact, there is no damping term to exploit), Temple-type and Golden-Thompson-type bounds (1 and 9
+files; per mode they lose the factor exp(ω/2T), which is the whole effect at ω ≫ T).
+
+### 4.3 Outcome of Phase 2
+
+No candidate of this row is new. The mining method, run closed-folder from 28 solved problems, reproduced
+statements that the lane already holds: rows 708, 814, 858, 1195, 1386, 1553, the global-form reading, and
+the thin twisted torus. It found five unused patterns and all five are void. This agrees with the outcome
+of row 1672 by a different method of search. It is still one model family reading one record: by the
+lane's own rule it is not an independent check of exhaustion (check 1443).

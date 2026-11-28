@@ -14,7 +14,7 @@ Subject: `lean/gapchain/GapChain/Stage4.lean` and `lean/gapchain/RECEIPT-4.md`
 
 Reading check only; PR branches not searched. In the lane: `grep -c` of `neutralTail_of_rankOneAtTime`, `kappaSeed_of_neutralPhysicalSeed`, `FluxSpectrum` and `aligned_half_small` in `library/open-core.md` gives 0. In FINISH.md the two theorem names occur only in rows 1652, 1653, 1658 and 1668; the other two names do not occur. This report states no new mathematical statement.
 
-Sources read: `RECEIPT-4.md`; `Stage4.lean` L1-352 and L727-1397 (all statements; the proofs of W8, of the antilinear lemma, of the finite-aspect lemmas and of the assembly) and its `#print axioms` block; `Stage0.lean` L60-160; the statements in `Stage3.lean` that Stage 4 cites (named below); `LemmaM1.lean` L40-60; `Wilson.lean` L477-479; `library/gap-solve9-astra62.md` L205-227; the check files of rows 1653 and 1666. SHA-256 of `Stage4.lean` = `1c19a96e...a1d`, the same as in the receipt. I rely on the receipt for the kernel output; I did not reproduce it.
+Sources read: `RECEIPT-4.md`; `Stage4.lean` L1-352 and L727-1397 (L353-726, the geometric lemmas, only their declaration lines), plus a count of the `#print axioms` lines; `Stage0.lean` L60-160; the statements in `Stage3.lean` that Stage 4 cites (named below); `LemmaM1.lean` L40-60; `Wilson.lean` L477-479; `library/gap-solve9-astra62.md` L205-227; the check files of rows 1653 and 1666. SHA-256 of `Stage4.lean` = `1c19a96e...a1d`, the same as in the receipt. I rely on the receipt for the kernel output; I did not reproduce it.
 
 ## 0. Verdicts
 
@@ -72,7 +72,7 @@ Remark (not a defect): Stage 0's two `sorry` declarations stay. Stage 4 adds new
 
 ### 4.1 Conclusion
 
-`KappaSeedOnCube Γ β` with the Γ and β of the hypothesis (section 1). Stage 0 sets sides = N = n/2 on `TimeAxis.timeIdx` and n on the other three axes, and top = ‖Γ.transfer μt β‖. The proof proves `sides = boxSides (cube n) (n/2)` = ![n, n, n, n/2] by `fin_cases i <;> rfl`, so time is axis 3. It then uses `kappaWeight_eq_diagonal` (Σ over the eight diagonal sectors (m, m), checked in row 1666) and `sectorMoment` with the same top. The positivity clause is `boxNeutral_norm_pos` with `calibrated_cubicNorm` (‖neutral rectangular sector‖ = ‖release T‖). So the conclusion is the strict Pfaffian seed S_κ(n/2; n³) < 2⁻¹⁸ on the same cube at the same β.
+`KappaSeedOnCube Γ β`, same Γ and β as the hypothesis. The proof shows Stage 0's sides equal `boxSides (cube n) (n/2)` = ![n, n, n, n/2] (`fin_cases`), uses `kappaWeight_eq_diagonal` (the eight diagonal sectors, checked in row 1666) and the same top ‖Γ.transfer μt β‖, whose positivity comes from `boxNeutral_norm_pos` and `calibrated_cubicNorm`. So it is S_κ(n/2; n³) < 2⁻¹⁸ on the same cube.
 
 ### 4.2 The antilinear half-period map
 
@@ -85,7 +85,7 @@ The only caller, `misaligned_partner`, takes r from a `PositiveSlot` (r > 0) and
 I re-derived each by hand.
 
 - **k = ⌊n/2⁶⁹⌋** (`differenceStep`). 2⁶⁹ ≤ n gives k ≥ 1. n < 2⁶⁹(k+1) ≤ 2⁷⁰k because k ≥ 1. u + k + 2⁶⁸k ≤ n(2⁻⁹ + 2⁻⁶⁹ + 2⁻¹) < n. Also 2 ≤ n − k.
-- **Short moment 3/2.** `NeutralTailLE u (1/2)` gives X₀₀(u) ≤ 3/2. `sectorWeight_le_periodicNeutral` (two frame changes, `crossed_erasure` by `decide`, positivity of crossed sectors) gives every X_qm(u) ≤ 3/2. Lean uses only u ≥ 2. The seed's 3 ≤ u is stronger.
+- **Short moment 3/2.** X₀₀(u) ≤ 3/2 from the seed; `sectorWeight_le_periodicNeutral` (two frame changes, positivity) gives every X_qm(u) ≤ 3/2. Lean needs only u ≥ 2.
 - **Misaligned and tails.** (3/2)(3/4)^511 ≤ 2⁻¹⁶⁹, because (3/4)³ < 1/2 and 3·170 = 510 ≤ 511 (`short_ratio_at`). This needs 512u ≤ n. The neutral excess X₀₀(n) − 1 is at most the same bound.
 - **Second difference.** z^(n−k)(1 − z^k)² ≤ z^u ((z^k)^(2⁶⁷)(1 − z^k))² ≤ z^u 2⁻¹³⁴, by p z^p(1 − z) ≤ 1 − z^p with p = 2⁶⁷. This needs n − k ≥ u + 2·2⁶⁷k, from the budget. The sector sum is ≤ (3/2)2⁻¹³⁴ ≤ 2⁻¹³³. Fourier inversion over 8 characters gives 2⁻¹³⁰. Positivity at n ± k then gives |crossed misaligned drop| ≤ 2⁻¹³⁰ + 2·2⁻¹⁶⁹ ≤ 2⁻¹²⁹. A shear changes one value by at most 16 times that, and a path has at most 4 shears, two paths per comparison: 128·2⁻¹²⁹ = 2⁻¹²².
 - **2⁻¹²¹.** The magnetic drop Z_n(0,m) − Z_{n+k}(0,m) ≤ (X₀₀(n) − X₀₀(n+k)) + 2⁻¹²² ≤ 2⁻¹⁶⁹ + 2⁻¹²² ≤ 2⁻¹²¹ (`pureMag_upper`, using X₀₀(n+k) ≥ 1).
@@ -94,7 +94,7 @@ I re-derived each by hand.
 - **(3/2)(3/4)^255 ≤ 2⁻⁸⁴.** 3·85 = 255. It is applied at t = n/2 with (255+1)u ≤ n/2, which follows from 512u ≤ n.
 - **Sum.** S_κ ≤ 2⁻⁸⁴ + 7(2⁻²² + 2⁻⁸⁴) = (7/16 + 2⁻⁶³)·2⁻¹⁸ < 2⁻¹⁸.
 
-All of these follow from the Stage 0 hypotheses 4 ∣ n and 2⁷⁰ ≤ n and from the seed. No other numerical premise occurs.
+No other numerical premise occurs.
 
 ### 4.4 Comparison with row 1161, L213-227
 
@@ -106,12 +106,12 @@ Not checked: the proofs of the geometric lemmas and of the Stage 3 identities (t
 
 ## 5. Keyword counts (item 5)
 
-`grep -c -w` on `Stage4.lean` (1491 lines, comments included): `sorry` 0, `admit` 0, `axiom` 0, `native_decide` 0, `opaque` 0, `implemented_by` 0. Also 0: `unsafe`, `extern`, `macro`, `reduceBool`. There are 91 `theorem` lines and 91 `#print axioms` lines. Finite checks use `decide`. The receipt's axiom list for both public theorems is [propext, Classical.choice, Quot.sound]. That is the receipt's kernel output; I did not re-run it.
+`grep -c -w` on `Stage4.lean` (1491 lines, comments included): `sorry`, `admit`, `axiom`, `native_decide`, `opaque`, `implemented_by` all 0; also `unsafe`, `extern`, `macro`, `reduceBool` 0. 91 `theorem` lines, 91 `#print axioms` lines. The axiom list [propext, Classical.choice, Quot.sound] is the receipt's kernel output, not re-run.
 
 ## 6. For the lead
 
-1. W7 and W8 are discharged at the Stage 0 types, under new names in `GapChain.Stage4`. Stage 0 keeps its `sorry`. The open placeholders on the chain are now `expClusters_of_kappaSeed` (Stage 3, EV-L assembly) and the seed (M-neutral-all).
-2. The W7 proof follows its own route (integer second differences, no case split), not row 1161's. Section 4.3 checks its constants by hand. A standing text should cite Stage 4, not the row 1161 constants.
-3. No defect breaks a consumer.
+1. W7 and W8 are discharged at the Stage 0 types under `GapChain.Stage4` names. Still open on the chain: `expClusters_of_kappaSeed` (EV-L assembly) and the seed (M-neutral-all).
+2. W7 uses its own route (4.4); cite Stage 4 and 4.3 for its constants, not row 1161's.
+3. No defect found that breaks a consumer.
 
 RESULT row 1668 (Claude Opus 5.5 high, reading check of row 1658; no Lean run): items 1-4 HOLD and item 5 counts are all 0. Both Stage 4 theorems have Stage 0's types word for word, with no extra hypothesis. W8 bounds the Stage 0 neutral trace tracePW(neutralProj·Tᵃ)/‖T‖ᵃ − 1 at a = 2w and max(3, 2w), and M1 and the trace use one release eigenbasis. W7 gives S_κ(n/2; n³) < 2⁻¹⁸ on the same cube and β. J² = −1 is used only on eigenspaces with r > 0. Every constant (k = ⌊n/2⁶⁹⌋, 2⁻¹²¹, 2⁻⁴⁹, 2⁻²², 2⁻⁸⁴, final 2⁻⁸⁴ + 7(2⁻²² + 2⁻⁸⁴) < 2⁻¹⁸) follows by hand from 4 ∣ n, 2⁷⁰ ≤ n and 512u ≤ n. Open: Stage 3's EV-L assembly, the seed itself.
